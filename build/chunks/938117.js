@@ -17,8 +17,8 @@ var i = n(255367),
   h = n(636188),
   f = n(678916),
   b = n(981631),
-  _ = n(869783),
-  x = n(388032),
+  x = n(869783),
+  _ = n(388032),
   E = n(635968);
 
 function j(e) {
@@ -90,13 +90,13 @@ function O(e) {
     S(e), (0, g.FU)(e, v, {
       location: w.location
     }).then(() => A(null)).catch(() => {
-      A(x.intl.string(x.t.ejrSLS)), (0, g.FU)(null, v, {
+      A(_.intl.string(_.t.ejrSLS)), (0, g.FU)(null, v, {
         location: w.location
       })
     })
   };
   return P ? (0, i.jsxs)(l.xJW, {
-    title: x.intl.string(x.t.lZTUPj),
+    title: _.intl.string(_.t.lZTUPj),
     className: N,
     children: [null != y ? (0, i.jsx)(l.kzN, {
       className: E.videoBackgroundError,
@@ -124,7 +124,7 @@ function O(e) {
         return new Promise(async i => {
           try {
             let i = await (0, d.Ff)(e, f.xV.BACKGROUND);
-            B(i), (0, m.g5)(i, t.type === _.m.MP4, n), A(null)
+            B(i), (0, m.g5)(i, t.type === x.m.MP4, n), A(null)
           } catch (e) {
             A(e.message)
           }

@@ -17,8 +17,8 @@ var i = n(255367),
   h = n(556296),
   f = n(924557),
   b = n(435064),
-  _ = n(894694),
-  x = n(779618),
+  x = n(894694),
+  _ = n(779618),
   E = n(39604),
   j = n(442334),
   C = n(356659),
@@ -42,7 +42,7 @@ function A() {
     R = (0, a.e7)([b.Z], () => b.Z.getHardwareClassification()),
     D = (0, a.e7)([h.ZP], () => h.ZP.getKeybindForAction(O.kg4.SAVE_CLIP, !0)),
     Z = b.Z.isDecoupledGameClippingEnabled(),
-    w = (0, x.Z)(p.Z),
+    w = (0, _.Z)(p.Z),
     {
       showClipsHeaderEntrypoint: k
     } = f.NV.useExperiment({
@@ -151,7 +151,7 @@ function A() {
             scrollPosition: v.KQ.VoiceAndVideoScrollPositions.HARDWARE_ACCELERATION
           })
         })
-      }), R === _.x.BELOW_MINIMUM ? (0, i.jsx)(g.Z, {
+      }), R === x.x.BELOW_MINIMUM ? (0, i.jsx)(g.Z, {
         look: g.z.WARNING,
         className: I.formItem,
         children: T.intl.string(T.t.SIxrIC)

@@ -43,17 +43,17 @@ let m = (0, r.createContext)({
         product: f
       }
     }, [f, h]), {
-      redeemVirtualCurrency: _,
-      isSubmitting: x,
+      redeemVirtualCurrency: x,
+      isSubmitting: _,
       error: E
     } = (0, u.f)(), j = (0, r.useCallback)(e => {
-      _(t, n, n => {
+      x(t, n, n => {
         g({
           entitlements: n,
           skuId: t
         }), e()
       })
-    }, [t, n, _, g]);
+    }, [t, n, x, g]);
     return (0, i.jsx)(m.Provider, {
       value: {
         skuId: t,
@@ -61,7 +61,7 @@ let m = (0, r.createContext)({
         analyticsLocations: null != s ? s : [],
         orbProductContext: b,
         onRedeemVirtualCurrency: j,
-        isRedeeming: x,
+        isRedeeming: _,
         orbRedemptionError: E
       },
       children: p

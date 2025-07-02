@@ -1,6 +1,6 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => x
+  Z: () => _
 }), n(388685);
 var i = n(255367),
   r = n(73800),
@@ -36,7 +36,7 @@ function b(e) {
   return e
 }
 
-function _(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,12 +49,12 @@ function _(e, t) {
   }), e
 }
 
-function x(e) {
+function _(e) {
   let {
     onChange: t,
     onClose: n,
     color: s,
-    suggestedColors: x,
+    suggestedColors: _,
     disabled: E,
     label: j,
     colorPickerMiddle: C,
@@ -66,10 +66,10 @@ function x(e) {
   }, [O, C, D, R]), (0, i.jsx)(d.yRy, {
     targetElementRef: v,
     positionKey: Z,
-    renderPopout: e => (0, i.jsx)(d.Z$W, _(b({}, e), {
+    renderPopout: e => (0, i.jsx)(d.Z$W, x(b({}, e), {
       value: s,
       onChange: t,
-      suggestedColors: x,
+      suggestedColors: _,
       middle: C,
       footer: O,
       showEyeDropper: S
@@ -98,7 +98,7 @@ function x(e) {
         className: l()(f.colorSwatch, {
           [f.disabled]: E
         }),
-        children: [(0, i.jsx)(d.P3F, _(b({}, n), {
+        children: [(0, i.jsx)(d.P3F, x(b({}, n), {
           tabIndex: E ? -1 : 0,
           onClick: E ? p.dG4 : t,
           style: {

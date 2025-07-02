@@ -1,6 +1,6 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => _
+  Z: () => x
 }), n(388685), n(539854);
 var i = n(768433),
   r = n(710845),
@@ -28,7 +28,7 @@ let f = new r.Z("GuildBasicChannels");
 function b(e, t) {
   return null == e || e.type !== t.type || e.parent_id !== t.parent_id || u.Z.computeBasicPermissions(e) !== u.Z.computeBasicPermissions(t)
 }
-let _ = new class {
+let x = new class {
   async getAsync(e) {
     let t = performance.now(),
       [n, i] = await Promise.all([g.Z.basicChannels(e).getKvEntries(), g.Z.syncedBasicChannels(e).getKvEntries()]),

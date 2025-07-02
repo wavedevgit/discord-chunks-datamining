@@ -43,7 +43,7 @@ function f(e) {
   } = e, {
     isClaimed: f,
     isVerified: b,
-    hasEmail: _
+    hasEmail: x
   } = (0, o.cj)([u.default], () => {
     let e = u.default.getCurrentUser();
     return a()(null != e, "EmailNotice: currentUser cannot be undefined"), {
@@ -53,7 +53,7 @@ function f(e) {
     }
   });
 
-  function x() {
+  function _() {
     (0, c.ZDy)(async () => {
       let {
         default: e
@@ -76,14 +76,14 @@ function f(e) {
         }), (0, i.jsxs)(d.Z, {
           justify: d.Z.Justify.CENTER,
           className: p.content,
-          children: [f ? _ ? (0, i.jsx)(d.Z.Child, {
+          children: [f ? x ? (0, i.jsx)(d.Z.Child, {
             grow: 0,
             shrink: 0,
             children: (0, i.jsx)(m.Z, {})
           }) : (0, i.jsx)(c.zxk, {
             size: c.zxk.Sizes.MEDIUM,
             color: c.zxk.Colors.BRAND,
-            onClick: x,
+            onClick: _,
             children: g.intl.string(g.t.ydw5nZ)
           }) : (0, i.jsx)(d.Z.Child, {
             grow: 0,
@@ -101,13 +101,13 @@ function f(e) {
               },
               children: g.intl.string(g.t.fiNVio)
             })
-          }), f && _ ? (0, i.jsx)(d.Z.Child, {
+          }), f && x ? (0, i.jsx)(d.Z.Child, {
             grow: 0,
             shrink: 0,
             children: (0, i.jsx)(c.zxk, {
               color: c.zxk.Colors.PRIMARY,
               look: c.zxk.Looks.LINK,
-              onClick: x,
+              onClick: _,
               children: g.intl.string(g.t.Vm8akJ)
             })
           }) : null]

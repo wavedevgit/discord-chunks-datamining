@@ -20,8 +20,8 @@ var i = n(255367),
   h = n(239091),
   f = n(420660),
   b = n(468363),
-  _ = n(326255),
-  x = n(956221),
+  x = n(326255),
+  _ = n(956221),
   E = n(771173),
   j = n(385499),
   C = n(570908),
@@ -171,8 +171,8 @@ let et = K.ZP.getEnableHardwareAcceleration() ? g.Xo$ : g.qEK,
       className: h,
       role: f,
       "aria-posinset": b,
-      "aria-setsize": _,
-      listItemRef: x
+      "aria-setsize": x,
+      listItemRef: _
     } = e, E = ee(e, ["route", "selected", "icon", "iconClassName", "interactiveClassName", "text", "children", "locationState", "onClick", "className", "role", "aria-posinset", "aria-setsize", "listItemRef"]);
     return (0, i.jsx)(N.Z, {
       className: l()(Q.channel, {
@@ -184,8 +184,8 @@ let et = K.ZP.getEnableHardwareAcceleration() ? g.Xo$ : g.qEK,
         within: !0
       }, en),
       "aria-posinset": b,
-      "aria-setsize": _,
-      ref: x,
+      "aria-setsize": x,
+      ref: _,
       children: (0, i.jsx)(g.vjx, {
         as: "div",
         selected: n,
@@ -221,7 +221,7 @@ function eo(e) {
     selected: a = !1,
     user: u,
     activities: b,
-    applicationStream: x,
+    applicationStream: _,
     voiceChannel: A,
     isTyping: D,
     status: Z,
@@ -238,13 +238,13 @@ function eo(e) {
     user: u,
     size: g.EFr.SIZE_32,
     animateOnHover: !(a || K || eo)
-  }), ef = t.isMultiUserDM(), eb = t.isSystemDM(), e_ = (0, B.Q)(), ex = !ef && !eb && t.type === q.d4z.DM, eE = ex && (null == u ? void 0 : u.primaryGuild) != null, ej = (0, m.e7)([z.ZP], () => z.ZP.isChannelMuted(t.getGuildId(), t.id)), {
+  }), ef = t.isMultiUserDM(), eb = t.isSystemDM(), ex = (0, B.Q)(), e_ = !ef && !eb && t.type === q.d4z.DM, eE = e_ && (null == u ? void 0 : u.primaryGuild) != null, ej = (0, m.e7)([z.ZP], () => z.ZP.isChannelMuted(t.getGuildId(), t.id)), {
     ignored: eC,
     blocked: eO
   } = (0, m.cj)([F.Z], () => ({
     ignored: F.Z.isIgnored(t.getRecipientId()),
     blocked: F.Z.isBlocked(t.getRecipientId())
-  })), eS = ex && eC, ev = ex && eO, eT = (ej || eS || ev) && !(a || K), eN = (0, m.e7)([G.ZP], () => G.ZP.getMentionCount(t.id) > 0), eI = (0, T.ZP)(t), ey = (0, m.e7)([y.Z], () => y.Z.isFavorite(t.id)), eA = (0, L.L)("PrivateChannel"), eP = null != V && (a || K), eR = () => {
+  })), eS = e_ && eC, ev = e_ && eO, eT = (ej || eS || ev) && !(a || K), eN = (0, m.e7)([G.ZP], () => G.ZP.getMentionCount(t.id) > 0), eI = (0, T.ZP)(t), ey = (0, m.e7)([y.Z], () => y.Z.isFavorite(t.id)), eA = (0, L.L)("PrivateChannel"), eP = null != V && (a || K), eR = () => {
     ea(!0)
   }, eD = () => {
     ea(!1)
@@ -315,17 +315,17 @@ function eo(e) {
     children: X.intl.format(X.t.CxSA5O, {
       members: t.recipients.length + 1
     })
-  }) : (0, _.Z)({
+  }) : (0, x.Z)({
     activities: b,
     status: Z,
-    applicationStream: x,
+    applicationStream: _,
     voiceChannel: A
   }) ? (0, i.jsx)(E.Z, {
     location: "PrivateChannel",
     user: u,
     activities: b,
     voiceChannel: A,
-    applicationStream: x,
+    applicationStream: _,
     animateEmoji: K || eo,
     textClassName: Q.activityStatusText,
     iconClassName: eT ? Q.mutedIcon : void 0
@@ -397,7 +397,7 @@ function eo(e) {
           })
         }) : null, (0, i.jsxs)(g.vjx, {
           className: l()(Q.interactive, {
-            [Q.interactiveSystemDM]: e_ && eb,
+            [Q.interactiveSystemDM]: ex && eb,
             [Q.interactiveSelected]: a
           }),
           as: "div",
@@ -486,7 +486,7 @@ let ec = 12633 == n.j ? e => {
     }),
     {
       voiceChannel: g
-    } = (0, x.Z)({
+    } = (0, _.Z)({
       userId: c
     }),
     p = (0, D.K)({

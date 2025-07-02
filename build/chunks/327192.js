@@ -17,8 +17,8 @@ var i = n(255367),
   h = n(23551),
   f = n(468026),
   b = n(410030),
-  _ = n(726542),
-  x = n(122021),
+  x = n(726542),
+  _ = n(122021),
   E = n(275759),
   j = n(231757),
   C = n(888496),
@@ -99,7 +99,7 @@ let H = e => {
           color: "header-primary",
           children: s.guild.toString()
         }), (0, i.jsx)(u.eee, {
-          href: null == (n = _.Z.get(s.type)) || null == (t = n.getPlatformUserUrl) ? void 0 : t.call(n, s.account),
+          href: null == (n = x.Z.get(s.type)) || null == (t = n.getPlatformUserUrl) ? void 0 : t.call(n, s.account),
           children: (0, i.jsx)(u.Text, {
             variant: "text-xs/normal",
             color: "header-secondary",
@@ -132,8 +132,8 @@ function z(e) {
     [M, G] = r.useState(null),
     [z, Y] = r.useState(!1),
     [W, K] = r.useState([]),
-    q = (0, x.rR)(o.type),
-    X = _.Z.get(q);
+    q = (0, _.rR)(o.type),
+    X = x.Z.get(q);
   r.useEffect(() => {
     b(o.friendSync), S(o.visibility), N(o.metadataVisibility), y(o.showActivity)
   }, [o]);
@@ -154,7 +154,7 @@ function z(e) {
   }, [o]);
 
   function $() {
-    let e = _.Z.get(o.type),
+    let e = x.Z.get(o.type),
       t = U.intl.format(U.t.VgqIPj, {
         provider: e.name
       });
@@ -179,8 +179,8 @@ function z(e) {
     className: V.connection,
     children: [function(e) {
       var t;
-      let n = _.Z.get(e.type),
-        r = _.Z.get(q),
+      let n = x.Z.get(e.type),
+        r = x.Z.get(q),
         s = "1" === (null != (t = e.metadata) ? t : {})[B.PC.TWITTER_VERIFIED],
         l = null;
       return n.type === L.ABu.TWITTER && s && (l = (0, i.jsx)(u.ua7, {
@@ -288,7 +288,7 @@ function z(e) {
       let l = W.includes(e.id),
         a = U.intl.string(U.t.wzzjk5);
       if (null == r || 0 === r.length)
-        if (!0 !== _.Z.get(e.type).hasMetadata) return null;
+        if (!0 !== x.Z.get(e.type).hasMetadata) return null;
         else r = [(0, i.jsx)(u.IGR, {
           className: V.connectionMetadataUpsellTag,
           text: U.intl.string(U.t.y2b7CA)
@@ -342,7 +342,7 @@ function z(e) {
           platform: X.name
         })
       })
-    })), (null == (t = _.Z.get(o.type)) ? void 0 : t.hasMetadata) === !0 && (l = (0, i.jsx)(u.j7V, {
+    })), (null == (t = x.Z.get(o.type)) ? void 0 : t.hasMetadata) === !0 && (l = (0, i.jsx)(u.j7V, {
       className: V.connectionOptionSwitch,
       hideBorder: !0,
       value: 1 === T,
@@ -448,7 +448,7 @@ function Y() {
 }
 
 function W(e) {
-  let t = _.Z.get(e);
+  let t = x.Z.get(e);
   (0, j.Z)({
     platformType: t.type
   }), A.default.track(L.rMx.ACCOUNT_LINK_STEP, {
@@ -465,7 +465,7 @@ function K() {
       onComplete: W
     })
   }
-  let t = (0, x.fq)();
+  let t = (0, _.fq)();
   return (0, i.jsxs)("div", {
     className: V.connectionsContainer,
     children: [t.slice(0, 10).map(e => (0, i.jsx)(h.Z, {
@@ -519,7 +519,7 @@ function q(e) {
       note: U.intl.string(U.t.WenGZ2),
       children: U.intl.string(U.t["aoLS8/"])
     })
-  }) : r.filter(e => _.Z.isSupported(e.type)).map((e, t) => (0, i.jsx)(z, {
+  }) : r.filter(e => x.Z.isSupported(e.type)).map((e, t) => (0, i.jsx)(z, {
     theme: s,
     account: e,
     locale: l,

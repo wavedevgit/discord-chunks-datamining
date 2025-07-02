@@ -24,7 +24,7 @@ function b(e) {
     className: s,
     sectionTitle: m,
     forcedDivider: b = !1,
-    withTutorial: x = !1,
+    withTutorial: _ = !1,
     isTryItOutFlow: E = !1
   } = e, {
     analyticsLocations: j
@@ -37,7 +37,7 @@ function b(e) {
     analyticsLocations: j,
     isTryItOutFlow: E,
     guild: n
-  }), [j, E, n]), y = E || void 0 !== v ? null != v : (C ? S : O) != null, A = x ? a.gtL : a.zxk;
+  }), [j, E, n]), y = E || void 0 !== v ? null != v : (C ? S : O) != null, A = _ ? a.gtL : a.zxk;
   return (0, i.jsxs)(p.Z, {
     className: s,
     forcedDivider: b,
@@ -50,7 +50,7 @@ function b(e) {
         size: a.zxk.Sizes.SMALL,
         onClick: I,
         className: l()({
-          [f.buttonHighlighted]: x
+          [f.buttonHighlighted]: _
         }),
         children: h.intl.string(h.t.BVcYCw)
       }), y && (0, i.jsx)(a.zxk, {
@@ -63,12 +63,12 @@ function b(e) {
         },
         children: (0, c.ad)(t, n) ? h.intl.string(h.t.CHf9iI) : h.intl.string(h.t.OrokWl)
       })]
-    }), t.isStaff() && N && (0, i.jsx)(_, {
+    }), t.isStaff() && N && (0, i.jsx)(x, {
       user: t
     })]
   })
 }
-let _ = e => {
+let x = e => {
   let {
     user: t
   } = e;

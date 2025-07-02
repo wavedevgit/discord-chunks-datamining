@@ -1,6 +1,6 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => _
+  Z: () => x
 }), n(953529);
 var i = n(255367),
   r = n(73800),
@@ -17,13 +17,13 @@ var i = n(255367),
   h = n(981631),
   f = n(869783),
   b = n(888723);
-let _ = e => {
+let x = e => {
   let {
     name: t,
     title: n,
     description: s,
-    descriptionCta: _,
-    previewImage: x,
+    descriptionCta: x,
+    previewImage: _,
     videoUrl: E,
     shouldLoadVideo: j,
     index: C,
@@ -100,14 +100,14 @@ let _ = e => {
       color: "text-muted",
       className: b.description,
       children: s
-    }), null != _ && null != v && (0, i.jsx)(c.zxk, {
+    }), null != x && null != v && (0, i.jsx)(c.zxk, {
       look: c.iLD.OUTLINED,
       color: Z,
       className: l()(b.bentoBoxButton, D ? b.bentoBoxButtonWhite : b.bentoBoxButtonBrand),
       onClick: () => {
         w(), v()
       },
-      children: _
+      children: x
     })]
   }), M = () => (0, i.jsx)("div", {
     className: l()({
@@ -119,7 +119,7 @@ let _ = e => {
       playsInline: !0,
       preload: j ? "auto" : "none",
       muted: !0,
-      poster: x,
+      poster: _,
       loop: !0,
       className: l()({
         [b.largeBoxVideo]: N === p.y$.LARGE,

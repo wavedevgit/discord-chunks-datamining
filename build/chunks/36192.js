@@ -17,8 +17,8 @@ var i = n(255367),
   h = n(136097),
   f = n(266454),
   b = n(246946),
-  _ = n(594174),
-  x = n(460562),
+  x = n(594174),
+  _ = n(460562),
   E = n(823379),
   j = n(981631),
   C = n(921944),
@@ -31,7 +31,7 @@ function v() {
       otherSessions: n
     } = (0, h.h)(),
     s = (0, a.e7)([b.Z], () => b.Z.hidePersonalInformation),
-    l = (0, a.e7)([_.default], () => _.default.getCurrentUser()),
+    l = (0, a.e7)([x.default], () => x.default.getCurrentUser()),
     [u, g] = r.useState(!1);
   r.useEffect(() => {
     (0, f.Q3)(c.z.AUTH_SESSIONS_NEW, {
@@ -42,7 +42,7 @@ function v() {
       clearTimeout(e), (0, p.$Z)()
     }
   }, []);
-  let x = () => {
+  let _ = () => {
       o.tn.post({
         url: j.ANM.AUTH_SESSION_NOTIFICATIONS_DEBUG,
         rejectWithError: !0
@@ -125,7 +125,7 @@ function v() {
           return (0, i.jsx)(d.zxk, {
             size: d.zxk.Sizes.SMALL,
             color: d.zxk.Colors.PRIMARY,
-            onClick: x,
+            onClick: _,
             onMouseEnter: t,
             onMouseLeave: n,
             children: "Trigger Suspicious Sessions Notification"
@@ -145,8 +145,8 @@ function T(e) {
     checked: m,
     useChecks: g
   } = e, f = null != (a = null == (t = o.client_info) ? void 0 : t.location) ? a : null == (n = o.client_info) ? void 0 : n.ip, b = null == (r = o.client_info) ? void 0 : r.platform, {
-    text: _,
-    icon: x
+    text: x,
+    icon: _
   } = function(e) {
     switch (null == e ? void 0 : e.toLowerCase().trim()) {
       case null:
@@ -165,12 +165,12 @@ function T(e) {
           text: e, icon: d.pzj
         }
     }
-  }(null == (s = o.client_info) ? void 0 : s.os), j = c ? null : (0, h.p)(o.approx_last_used_time), C = [_, b].filter(E.lm), v = [f, j].filter(E.lm);
+  }(null == (s = o.client_info) ? void 0 : s.os), j = c ? null : (0, h.p)(o.approx_last_used_time), C = [x, b].filter(E.lm), v = [f, j].filter(E.lm);
   return (0, i.jsxs)("div", {
     className: l()(S.session, c ? S.currentSession : null),
     children: [(0, i.jsx)("div", {
       className: S.sessionIcon,
-      children: (0, i.jsx)(x, {
+      children: (0, i.jsx)(_, {
         size: "md",
         color: "currentColor"
       })
@@ -228,7 +228,7 @@ function N() {
     className: l()(S.session, S.legacySession),
     children: [(0, i.jsx)("div", {
       className: S.sessionIcon,
-      children: (0, i.jsx)(x.Z, {
+      children: (0, i.jsx)(_.Z, {
         width: "32",
         height: "32"
       })

@@ -17,11 +17,11 @@ var r = n(525654),
 function g() {
   var e, t, n, r, g;
   let p = window.GLOBAL_ENV.RELEASE_CHANNEL,
-    h = "415050",
-    f = "43ae64e06a19edb3773b4f0aa12a692503ff5da1".substring(0, 7),
+    h = "415061",
+    f = "00fec5d131b5d5d753158543f2ec77ce5ffba5bb".substring(0, 7),
     b = null === a.Z || void 0 === a.Z ? void 0 : a.Z.remoteApp.getVersion(),
-    _ = null === a.Z || void 0 === a.Z || null == (e = (t = a.Z.remoteApp).getBuildNumber) ? void 0 : e.call(t),
-    x = null === a.Z || void 0 === a.Z || null == (n = (r = a.Z.remoteApp).getAppArch) ? void 0 : n.call(r),
+    x = null === a.Z || void 0 === a.Z || null == (e = (t = a.Z.remoteApp).getBuildNumber) ? void 0 : e.call(t),
+    _ = null === a.Z || void 0 === a.Z || null == (n = (r = a.Z.remoteApp).getAppArch) ? void 0 : n.call(r),
     E = null == (g = o.C.getCurrentBuildOverride().overrides) ? void 0 : g.discord_web,
     j = function() {
       var e;
@@ -32,7 +32,7 @@ function g() {
       return t.includes("Windows 10") && void 0 !== l && l >= 22e3 && (t = t.replace("Windows 10", "Windows 11")), t.includes("OS X 10.15.7") && void 0 !== i && i >= 20 && (t = "macOS ".concat(i - 9)), "".concat(t, " (").concat(n, ")")
     }(),
     C = [p, h, "(".concat(f, ")")];
-  return null != b && (C.push("Host ".concat(b)), null != x && C.push(x.toLowerCase()), null != _ && C.push("(".concat(_, ")"))), C.push("Build Override: ".concat(null != E ? E.id : "N/A")), null != j && C.push(j), (0, i.jsx)(c.Z, {
+  return null != b && (C.push("Host ".concat(b)), null != _ && C.push(_.toLowerCase()), null != x && C.push("(".concat(x, ")"))), C.push("Build Override: ".concat(null != E ? E.id : "N/A")), null != j && C.push(j), (0, i.jsx)(c.Z, {
     copyValue: C.join(" "),
     text: u.intl.string(u.t["9Al4QU"]),
     "aria-label": !1,
@@ -85,11 +85,11 @@ function g() {
               className: m.line,
               variant: "text-xs/normal",
               color: "text-muted",
-              children: ["Host ", b, " ", null != x ? (0, i.jsxs)("span", {
+              children: ["Host ", b, " ", null != _ ? (0, i.jsxs)("span", {
                 className: m.appArch,
-                children: [x.toLowerCase(), " "]
-              }) : null, null != _ ? (0, i.jsxs)("span", {
-                children: ["(", _, ")"]
+                children: [_.toLowerCase(), " "]
+              }) : null, null != x ? (0, i.jsxs)("span", {
+                children: ["(", x, ")"]
               }) : null]
             }), " "]
           }) : null, null != j ? (0, i.jsx)(l.Text, {

@@ -18,7 +18,7 @@ var i = n(255367),
   f = n(388032),
   b = n(484671);
 
-function _(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -37,7 +37,7 @@ function _(e) {
   return e
 }
 
-function x(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -103,9 +103,9 @@ function N(e) {
     o.current = s
   });
   let [d, u] = r.useState(null != (n = null == (t = s.params) ? void 0 : t.channelId) ? n : void 0), m = r.useCallback(() => {
-    (0, l.ZDy)(async () => e => (0, i.jsx)(I, x(_({}, e), {
+    (0, l.ZDy)(async () => e => (0, i.jsx)(I, _(x({}, e), {
       onSelect: e => {
-        u(e), a.Z.setKeybind(x(_({}, o.current), {
+        u(e), a.Z.setKeybind(_(x({}, o.current), {
           params: {
             channelId: e
           }
@@ -140,8 +140,8 @@ function I(e) {
     transitionState: t,
     onClose: n,
     onSelect: a
-  } = e, c = r.useId(), _ = r.useRef(null), {
-    mouseFocusEnabled: x,
+  } = e, c = r.useId(), x = r.useRef(null), {
+    mouseFocusEnabled: _,
     enableMouseFocus: E,
     disableMouseFocus: O
   } = function() {
@@ -193,7 +193,7 @@ function I(e) {
   r.useEffect(() => {
     let {
       current: e
-    } = _;
+    } = x;
     null == e || e.isItemVisible(0, P, !0) || e.scrollToIndex({
       section: 0,
       row: P
@@ -256,7 +256,7 @@ function I(e) {
         innerId: c,
         innerRole: "listbox",
         "aria-label": f.intl.string(f.t["+N3fW1"]),
-        ref: _,
+        ref: x,
         sections: [D],
         renderRow: function(e) {
           let {
@@ -274,7 +274,7 @@ function I(e) {
             channel: r,
             category: s,
             focused: P === t,
-            onMouseEnter: () => x.current && R(t),
+            onMouseEnter: () => _.current && R(t),
             onClick: () => {
               a(r.id), n()
             },

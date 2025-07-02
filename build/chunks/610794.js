@@ -17,8 +17,8 @@ var i = n(255367),
   h = n(553795),
   f = n(63063),
   b = n(981631),
-  _ = n(856651),
-  x = n(388032),
+  x = n(856651),
+  _ = n(388032),
   E = n(6318);
 
 function j(e) {
@@ -54,16 +54,16 @@ function j(e) {
     case b.ABu.TIKTOK:
       C = (0, g.hf)(m, E.metadataItem)
   }
-  let O = (0, u.FI)(m[_.PC.CREATED_AT], h),
+  let O = (0, u.FI)(m[x.PC.CREATED_AT], h),
     S = null,
-    v = x.intl.string(x.t.wzzjk5);
+    v = _.intl.string(_.t.wzzjk5);
   return (null == C || 0 === C.length) && null == O && (S = (0, i.jsx)(a.Text, {
     variant: "text-xs/normal",
     color: "header-secondary",
-    children: x.intl.format(x.t.Up2ni4, {
+    children: _.intl.format(_.t.Up2ni4, {
       helpdeskUrl: f.Z.getArticleURL(b.BhN.CONNECTION_DETAILS)
     })
-  }, "label"), v = x.intl.string(x.t["LVh3//"])), l && (v = x.intl.string(x.t.i4jeWV)), (0, i.jsxs)("div", {
+  }, "label"), v = _.intl.string(_.t["LVh3//"])), l && (v = _.intl.string(_.t.i4jeWV)), (0, i.jsxs)("div", {
     className: E.metadataContainer,
     children: [S, null == C ? void 0 : C.map((e, t) => (0, i.jsxs)(i.Fragment, {
       children: [e, t < C.length - 1 ? (0, i.jsx)("span", {
@@ -74,7 +74,7 @@ function j(e) {
     }) : null, null != O ? (0, i.jsx)(a.Text, {
       variant: "text-xs/normal",
       color: "header-secondary",
-      children: x.intl.format(x.t["9rfonp"], {
+      children: _.intl.format(_.t["9rfonp"], {
         date: O
       })
     }, "member-since") : null, (0, i.jsx)(a.zxk, {
@@ -84,7 +84,7 @@ function j(e) {
       size: a.zxk.Sizes.MIN,
       submitting: c,
       disabled: l,
-      "aria-label": x.intl.string(x.t.sCkLYG),
+      "aria-label": _.intl.string(_.t.sCkLYG),
       onClick: l ? void 0 : j,
       children: v
     }, "refresh-button")]
@@ -101,7 +101,7 @@ function C(e) {
     g(t.visibility), h(t.metadataVisibility)
   }, [t]);
   let b = d.Z.get(t.type),
-    _ = !0 === b.hasMetadata;
+    x = !0 === b.hasMetadata;
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)("div", {
       className: E.activityRow,
@@ -132,12 +132,12 @@ function C(e) {
             variant: "text-md/semibold",
             color: "header-primary",
             children: b.name
-          }), _ && (0, i.jsx)(j, {
+          }), x && (0, i.jsx)(j, {
             account: t,
             refreshed: s.includes(t.id),
             handleRefresh: n
           })]
-        }), _ && (0, i.jsx)(a.j7V, {
+        }), x && (0, i.jsx)(a.j7V, {
           className: E.additionalDetailsSwitch,
           hideBorder: !0,
           disabled: 1 !== u || null == t.metadata,
@@ -158,7 +158,7 @@ function C(e) {
           children: (0, i.jsx)(a.Text, {
             variant: "text-md/normal",
             color: "header-secondary",
-            children: x.intl.string(x.t["3l78ws"])
+            children: _.intl.string(_.t["3l78ws"])
           })
         })]
       })]
@@ -180,7 +180,7 @@ function O() {
     children: [(0, i.jsx)(a.vwX, {
       tag: a.RB0.H5,
       className: E.title,
-      children: x.intl.string(x.t.aw0GVV)
+      children: _.intl.string(_.t.aw0GVV)
     }), t.map(e => (0, i.jsx)(C, {
       account: e,
       handleRefresh: c,

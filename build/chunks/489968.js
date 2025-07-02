@@ -17,8 +17,8 @@ var i = n(255367),
   h = n(981631),
   f = n(603571),
   b = n(388032),
-  _ = n(753514),
-  x = n(450890),
+  x = n(753514),
+  _ = n(450890),
   E = n(145133);
 let j = (0, r.Un)({
   createPromise: () => Promise.all([n.e("3589"), n.e("67544")]).then(n.bind(n, 894308)),
@@ -85,17 +85,17 @@ function C() {
       }) : r()
     };
   return (0, i.jsxs)("div", {
-    className: _.container,
+    className: x.container,
     children: [(0, i.jsx)("div", {
-      className: _.backgroundOverlay
+      className: x.backgroundOverlay
     }), (0, i.jsxs)("div", {
-      className: _.mainContent,
+      className: x.mainContent,
       children: [(0, i.jsx)("img", {
-        src: x,
+        src: _,
         alt: b.intl.string(f.default["7qZdOz"])
       }), (0, i.jsxs)(g.Z, {
         muted: !0,
-        className: _.playButton,
+        className: x.playButton,
         color: "white",
         disabled: t,
         onClick: C,
@@ -110,7 +110,7 @@ function C() {
         })]
       }), (0, i.jsx)(g.Z, {
         muted: !0,
-        className: _.resetButton,
+        className: x.resetButton,
         color: "white",
         disabled: t || !e,
         onClick: () => {
@@ -123,14 +123,14 @@ function C() {
         })
       })]
     }), (0, i.jsxs)("div", {
-      className: _.footer,
+      className: x.footer,
       children: [(0, i.jsx)(p.Z, {
-        className: _.availability,
+        className: x.availability,
         color: "always-white",
         variant: "text-xxs/medium",
         children: b.intl.string(f.default.eZleys)
       }), (0, i.jsx)("div", {
-        className: _.footerCenter,
+        className: x.footerCenter,
         children: (0, i.jsx)(g.Z, {
           muted: !0,
           color: "white",

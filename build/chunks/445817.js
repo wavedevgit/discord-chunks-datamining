@@ -1,6 +1,6 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => x
+  Z: () => _
 }), n(388685);
 var i = n(255367),
   r = n(73800),
@@ -17,16 +17,16 @@ var i = n(255367),
   h = n(981631),
   f = n(388032),
   b = n(959963);
-let _ = {
+let x = {
   width: 387,
   height: 218
 };
 
-function x(e) {
+function _(e) {
   let {
     previewEnabled: t,
     onEnablePreview: n,
-    onCancelPreview: x
+    onCancelPreview: _
   } = e, E = g.Z.getCameraComponent(), [j, C] = r.useState((0, c.P)(p.default.getCurrentUser())), O = r.useRef(!1), S = r.useRef(j), v = (0, o.O)(), T = (0, s.e7)([g.Z], () => g.Z.isVideoAvailable());
   return r.useEffect(() => () => {
     O.current && a.Z.wait(() => (0, d.Up)(S.current))
@@ -37,15 +37,15 @@ function x(e) {
         location: v.location
       }).catch(h.dG4)
     },
-    onCancelPreview: x,
+    onCancelPreview: _,
     renderCamera: e => t ? (0, i.jsx)("div", {
       className: b.cameraWrapper,
       children: (0, i.jsxs)("div", {
         className: b.camera,
         children: [(0, i.jsx)(E, {
           deviceId: e,
-          width: _.width,
-          height: _.height,
+          width: x.width,
+          height: x.height,
           disabled: !t
         }), (0, i.jsx)(m.S, {})]
       })

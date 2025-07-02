@@ -1,6 +1,6 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  q: () => x
+  q: () => _
 });
 var i = n(255367),
   r = n(73800),
@@ -25,7 +25,7 @@ function b(e) {
     count: n
   } = e, {
     analyticsLocations: u
-  } = (0, c.ZP)(), b = (0, s.e7)([g.default], () => g.default.getUser(t)), _ = p.ZP.getFormattedName(b), x = r.useCallback(() => {
+  } = (0, c.ZP)(), b = (0, s.e7)([g.default], () => g.default.getUser(t)), x = p.ZP.getFormattedName(b), _ = r.useCallback(() => {
     (0, d.Zn)(t)
   }, [t]), E = r.useCallback(() => (0, m.openUserProfileModal)({
     userId: t,
@@ -47,7 +47,7 @@ function b(e) {
         children: (0, i.jsx)(l.Text, {
           variant: "text-md/semibold",
           color: "interactive-active",
-          children: _
+          children: x
         })
       }), (0, i.jsx)(l.Text, {
         variant: "text-md/medium",
@@ -57,7 +57,7 @@ function b(e) {
         })
       })]
     }), (0, i.jsx)(l.P3F, {
-      onClick: x,
+      onClick: _,
       className: f.sectionIconContainer,
       children: (0, i.jsx)(l.XHJ, {
         size: "xs"
@@ -66,7 +66,7 @@ function b(e) {
   })
 }
 
-function _(e) {
+function x(e) {
   let {
     className: t,
     userId: n,
@@ -101,7 +101,7 @@ function _(e) {
   })
 }
 
-function x(e) {
+function _(e) {
   let {
     userId: t
   } = e, n = (0, u._)(t);
@@ -110,7 +110,7 @@ function x(e) {
       userId: t,
       count: n.length
     }), n.map((e, s) => (0, i.jsxs)(r.Fragment, {
-      children: [(0, i.jsx)(_, {
+      children: [(0, i.jsx)(x, {
         className: f.row,
         userId: t,
         index: s,

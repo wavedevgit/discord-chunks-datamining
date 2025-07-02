@@ -30,7 +30,7 @@ let g = (e, t) => (null == e ? void 0 : e.status) === c.Vq.EARNED ? u.intl.forma
       nameUnformatted: h,
       tenureReqNumMonths: f,
       hasWideArt: b
-    } = t, _ = u.intl.string(h), x = (0, o.q)(p, f), E = {
+    } = t, x = u.intl.string(h), _ = (0, o.q)(p, f), E = {
       "--custom-badge-glow-color": (0, a.rj)(t.glowColor, .5)
     };
     return (0, i.jsxs)("div", {
@@ -38,7 +38,7 @@ let g = (e, t) => (null == e ? void 0 : e.status) === c.Vq.EARNED ? u.intl.forma
       style: E,
       children: [(0, i.jsx)("div", {}), " ", (0, i.jsx)("img", {
         src: r,
-        alt: _,
+        alt: x,
         className: s()(m.badgeImage, {
           [m.upcomingBadge]: t.status === c.Vq.UPCOMING,
           [m.wide]: b
@@ -48,11 +48,11 @@ let g = (e, t) => (null == e ? void 0 : e.status) === c.Vq.EARNED ? u.intl.forma
         children: [(0, i.jsx)(l.xv, {
           variant: "text-lg/semibold",
           className: m.badgeText,
-          children: _
+          children: x
         }), (0, i.jsx)(l.xv, {
           variant: "text-md/normal",
           className: m.badgeText,
-          children: x
+          children: _
         }), (0, i.jsx)(l.xv, {
           variant: "text-xs/normal",
           children: g(t, n)

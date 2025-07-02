@@ -1,6 +1,6 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => x
+  Z: () => _
 }), n(388685), n(953529), n(35282), n(853839), n(570086), n(479048);
 var i = n(255367),
   r = n(73800),
@@ -50,7 +50,7 @@ let f = "Make sure you're only uploading text files!",
       })]
     })
   },
-  _ = () => ({
+  x = () => ({
     id: (0, a.Z)(),
     name: "New Profile Effect",
     config: {
@@ -58,11 +58,11 @@ let f = "Make sure you're only uploading text files!",
     }
   });
 
-function x() {
+function _() {
   let {
     profileEffects: e,
     upsertConfig: t
-  } = (0, g.n6)(), [n, s] = r.useState(), x = r.useRef(null), E = (0, o.Wu)([m.Z], () => m.Z.profileEffects), [j, C] = r.useState(""), O = r.useMemo(() => "" === j ? E : E.filter(e => {
+  } = (0, g.n6)(), [n, s] = r.useState(), _ = r.useRef(null), E = (0, o.Wu)([m.Z], () => m.Z.profileEffects), [j, C] = r.useState(""), O = r.useMemo(() => "" === j ? E : E.filter(e => {
     let t = j.toLowerCase();
     return e.config.title.toLowerCase().includes(t) || e.config.description.toLowerCase().includes(t)
   }), [j, E]), S = r.useCallback((e, n) => {
@@ -105,13 +105,13 @@ function x() {
             color: "always-white",
             children: "Import Shared Config"
           }), (0, i.jsx)(d.Z, {
-            ref: x,
+            ref: _,
             onChange: v,
             multiple: !1
           })]
         }), (0, i.jsx)(c.zxk, {
           onClick: () => {
-            t(_())
+            t(x())
           },
           children: "Create New Effect"
         })]

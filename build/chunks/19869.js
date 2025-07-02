@@ -17,8 +17,8 @@ var i = n(255367),
   h = n(317257),
   f = n(120786),
   b = n(775451),
-  _ = n(970815),
-  x = n(275388),
+  x = n(970815),
+  _ = n(275388),
   E = n(720463),
   j = n(931928),
   C = n(450272),
@@ -42,7 +42,7 @@ function N() {
     openIntroToOrbsClaimedCoachmark: e
   } = (0, m.l)({
     location: "VirtualCurrencyComponents"
-  }), [t, n] = r.useState(150), [g, p] = r.useState(150), [x, E] = r.useState(500), [j, T] = r.useState(h.b.DEFAULT), N = () => {
+  }), [t, n] = r.useState(150), [g, p] = r.useState(150), [_, E] = r.useState(500), [j, T] = r.useState(h.b.DEFAULT), N = () => {
     switch (j) {
       case h.b.DEFAULT:
         T(h.b.HIGHLIGHTED);
@@ -100,20 +100,20 @@ function N() {
       })]
     }), (0, i.jsxs)(C.E_, {
       label: "Balance Widget Pill",
-      children: [(0, i.jsx)(_.A4, {
+      children: [(0, i.jsx)(x.A4, {
         balance: 150,
         balanceWidgetMode: h.b.DEFAULT
-      }), (0, i.jsx)(_.A4, {
+      }), (0, i.jsx)(x.A4, {
         balance: 150,
         balanceWidgetMode: h.b.HIGHLIGHTED
-      }), (0, i.jsx)(_.A4, {
+      }), (0, i.jsx)(x.A4, {
         balance: 150,
         balanceWidgetMode: h.b.SELECTED
-      }), (0, i.jsx)(_.A4, {
+      }), (0, i.jsx)(x.A4, {
         balance: 0,
         balanceWidgetMode: h.b.DEFAULT,
         showNotificationBadge: !0
-      }), (0, i.jsx)(_.A4, {
+      }), (0, i.jsx)(x.A4, {
         balance: null,
         balanceWidgetMode: h.b.DEFAULT
       })]
@@ -135,7 +135,7 @@ function N() {
         children: "Set Balance"
       }), (0, i.jsx)("div", {
         className: v.interactivePillContainer,
-        children: (0, i.jsx)(_.A4, {
+        children: (0, i.jsx)(x.A4, {
           balance: g,
           balanceWidgetMode: j,
           onClick: () => N()
@@ -148,18 +148,18 @@ function N() {
         children: "Enter a number (loading time in milliseconds) and click Simulate Loading State to see the balance widget pill update:"
       }), (0, i.jsx)(l.FiK, {
         className: v.numberInput,
-        value: x,
+        value: _,
         onChange: e => E(e)
       }), (0, i.jsx)(s.zx, {
         onClick: () => {
           p(null), setTimeout(() => {
             p(t)
-          }, x)
+          }, _)
         },
         children: "Simulate Loading State"
       }), (0, i.jsx)("div", {
         className: v.interactivePillContainer,
-        children: (0, i.jsx)(_.A4, {
+        children: (0, i.jsx)(x.A4, {
           balance: g,
           balanceWidgetMode: j,
           onClick: () => N()
@@ -198,7 +198,7 @@ function I() {
         children: "The Orb Checkout Modal will open with the orb price of the product, if it exists"
       }), (0, i.jsx)(s.zx, {
         onClick: () => {
-          (0, x.q)({
+          (0, _.q)({
             skuId: e,
             onCheckoutSuccess: e => {
               let {

@@ -1,6 +1,6 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  V9: () => _,
+  V9: () => x,
   ek: () => b
 }), n(388685);
 var i = n(255367),
@@ -21,13 +21,13 @@ let b = {
     START: f.alignLeft,
     END: f.alignRight
   },
-  _ = e => {
+  x = e => {
     let {
       showNotificationBadge: t,
       ctaText: n,
       ctaOnClick: s,
-      anchorPillType: _,
-      analyticsPage: x,
+      anchorPillType: x,
+      analyticsPage: _,
       isCoachmarkEnabled: E = !0,
       linkText: j = h.intl.string(h.t.XRdyj4),
       cardAlignment: C = b.START,
@@ -47,12 +47,12 @@ let b = {
     }, [E, R]);
     let D = r.useCallback(() => {
         let e = !N;
-        e && null != x && (0, o.Y)({
-          pageType: x,
+        e && null != _ && (0, o.Y)({
+          pageType: _,
           sectionType: p.jXE.ORBS_BALANCE_MENU,
           ctaObject: p.qAy.OPEN_ORB_BALANCE_MENU_FROM_PILL
         }), T(e ? u.b.SELECTED : u.b.DEFAULT), I(e)
-      }, [N, x]),
+      }, [N, _]),
       Z = r.useCallback(() => {
         N && D()
       }, [N, D]),
@@ -64,7 +64,7 @@ let b = {
       }),
       children: [(0, i.jsx)(g.y, {
         pillRef: P,
-        anchorPillType: _,
+        anchorPillType: x,
         balance: S,
         balanceWidgetMode: R ? u.b.DEFAULT : v,
         onMouseDown: e => {
@@ -79,7 +79,7 @@ let b = {
         }),
         ref: w,
         children: (0, i.jsx)(m.L, {
-          analyticsPage: x,
+          analyticsPage: _,
           ctaText: n,
           ctaOnClick: () => {
             D(), s()
@@ -89,4 +89,4 @@ let b = {
       })]
     })
   };
-_.CardAlignment = b
+x.CardAlignment = b

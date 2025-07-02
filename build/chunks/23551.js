@@ -22,9 +22,9 @@ let h = e => {
     className: r,
     innerClassName: h,
     onConnect: f
-  } = e, b = (0, o.ZP)(), _ = c.Z.get((0, d.rR)(n));
+  } = e, b = (0, o.ZP)(), x = c.Z.get((0, d.rR)(n));
   return (0, i.jsx)(a.ua7, {
-    text: _.name,
+    text: x.name,
     children: e => {
       let {
         onMouseEnter: o,
@@ -40,7 +40,7 @@ let h = e => {
             type: "button",
             disabled: t,
             style: {
-              backgroundImage: "url('".concat((0, l.wj)(b) ? _.icon.darkSVG : _.icon.lightSVG, "')")
+              backgroundImage: "url('".concat((0, l.wj)(b) ? x.icon.darkSVG : x.icon.lightSVG, "')")
             },
             onClick: null != f ? f : () => (function(e) {
               let t = c.Z.get(e);
@@ -53,7 +53,7 @@ let h = e => {
                 platform_type: t.type
               })
             })(n),
-            "aria-label": _.name
+            "aria-label": x.name
           })
         })
       })

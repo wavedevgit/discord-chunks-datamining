@@ -17,8 +17,8 @@ var i = n(255367),
   h = n(65154),
   f = n(388032),
   b = n(979385),
-  _ = n(251574),
-  x = n(893354),
+  x = n(251574),
+  _ = n(893354),
   E = n(20493);
 let j = (0, g.hQ)();
 
@@ -71,7 +71,7 @@ function C() {
       },
       "aria-labelledby": j,
       children: (0, i.jsxs)("div", {
-        className: l()(b.sliderBar, b.microphone, b.inputSensitivityBar, _.bar),
+        className: l()(b.sliderBar, b.microphone, b.inputSensitivityBar, x.bar),
         children: [(0, i.jsx)("div", {
           className: l()(b.fill, b.inputSensitivityBarFill),
           style: {
@@ -103,7 +103,7 @@ function C() {
     className: b.sensitivity,
     children: [v && (0, i.jsx)(g.FG, {
       children: e => (0, i.jsxs)("div", {
-        className: l()(x.horizontal, E.marginBottom4),
+        className: l()(_.horizontal, E.marginBottom4),
         children: [(0, i.jsx)(u.vwX, {
           tag: u.RB0.H3,
           className: E.marginReset,

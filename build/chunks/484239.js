@@ -23,9 +23,9 @@ let d = e => {
     subtitle: h = "",
     descriptionCta: f = "",
     cardVariant: b,
-    subtitleClassName: _,
-    imageOverlayText: x
-  } = e, E = (0, a._)(b), j = null != x;
+    subtitleClassName: x,
+    imageOverlayText: _
+  } = e, E = (0, a._)(b), j = null != _;
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)("div", {
       className: s()(c.cover, c.below)
@@ -35,7 +35,7 @@ let d = e => {
       cardVariantStyleInfo: E,
       titleClassName: r,
       subtitle: h,
-      subtitleClassName: _
+      subtitleClassName: x
     }), null != u && (0, i.jsxs)("div", {
       className: s()(c.relative, {
         [c.cardImage]: !m
@@ -49,7 +49,7 @@ let d = e => {
         children: (0, i.jsx)(l.Text, {
           className: c.imageOverlayText,
           variant: "text-md/bold",
-          children: x
+          children: _
         })
       }) : null]
     }), null != p && (0, i.jsxs)("div", {

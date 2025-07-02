@@ -17,8 +17,8 @@ var i = n(255367),
   h = n(474936),
   f = n(388032),
   b = n(583532),
-  _ = n(982404),
-  x = n(299156);
+  x = n(982404),
+  _ = n(299156);
 
 function E(e) {
   let {
@@ -28,7 +28,7 @@ function E(e) {
     confettiCanvas: j,
     userWasChurned: C = !1,
     userDiscountOffer: O
-  } = e, S = (0, o.ZP)(), v = (0, l.wj)(S) ? _ : x, T = r.useRef(null), [N, I] = r.useState(!1), y = (0, g._)(t, h.Xh.PREMIUM_MONTH_TIER_2, O), A = (0, u.aS)(h.Xh.PREMIUM_MONTH_TIER_2, !1, !1, {
+  } = e, S = (0, o.ZP)(), v = (0, l.wj)(S) ? x : _, T = r.useRef(null), [N, I] = r.useState(!1), y = (0, g._)(t, h.Xh.PREMIUM_MONTH_TIER_2, O), A = (0, u.aS)(h.Xh.PREMIUM_MONTH_TIER_2, !1, !1, {
     currency: t.currency,
     paymentSourceId: t.paymentSourceId
   }), P = (0, m.T4)(A.amount, A.currency), R = (0, s.e7)([c.Z], () => c.Z.useReducedMotion);

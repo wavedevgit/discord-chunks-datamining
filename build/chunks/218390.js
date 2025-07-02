@@ -18,8 +18,8 @@ var i = n(255367),
   h = n(37234),
   f = n(821849),
   b = n(230711),
-  _ = n(497321),
-  x = n(634894),
+  x = n(497321),
+  _ = n(634894),
   E = n(410030),
   j = n(607070),
   C = n(100527),
@@ -339,10 +339,10 @@ let em = function() {
     E = (0, c.e7)([A.Z], () => A.Z.enabled),
     j = r.useRef(null),
     y = "PremiumManagementSettings";
-  (0, x.j)({
+  (0, _.j)({
     location: y + " auto on",
     autoTrackExposure: !0
-  }), (0, x.j)({
+  }), (0, _.j)({
     location: y + " auto off",
     autoTrackExposure: !1
   }), (0, H.B)(y);
@@ -353,7 +353,7 @@ let em = function() {
     })
   }, [b, E, e]);
   let [D, w] = r.useState(!1);
-  if (E) return (0, i.jsx)(_.Z, {});
+  if (E) return (0, i.jsx)(x.Z, {});
   if (e) return (0, i.jsx)(N.c8, {});
   let k = s && null !== n && l,
     L = u.fetched && u.isFractionalPremiumActive;

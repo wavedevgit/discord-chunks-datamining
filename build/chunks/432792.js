@@ -20,8 +20,8 @@ var i = n(255367),
   h = n(822857),
   f = n(622562),
   b = n(937860),
-  _ = n(921944),
-  x = n(973792),
+  x = n(921944),
+  _ = n(973792),
   E = n(447489),
   j = n(484885);
 let C = () => (0, p.Lk)(document.body.style.getPropertyValue("--custom-app-panels-height"), 56) + 8,
@@ -42,13 +42,13 @@ let C = () => (0, p.Lk)(document.body.style.getPropertyValue("--custom-app-panel
       let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "CLOSE";
       c || (0, u.Q3)(O[t], {
         forceTrack: !0,
-        dismissAction: "CTA_CLICK" === e ? _.L.TAKE_ACTION : _.L.USER_DISMISS,
-        groupName: _.R.VIRTUAL_CURRENCY_ONBOARDING
+        dismissAction: "CTA_CLICK" === e ? x.L.TAKE_ACTION : x.L.USER_DISMISS,
+        groupName: x.R.VIRTUAL_CURRENCY_ONBOARDING
       })
     }, [c, t]), [p, f] = r.useState(!1);
     return r.useEffect(() => {
       d ? p || ((0, m.kk)(o, {
-        groupName: _.R.VIRTUAL_CURRENCY_ONBOARDING
+        groupName: x.R.VIRTUAL_CURRENCY_ONBOARDING
       }), void 0 !== i && i(), f(!0)) : p && f(!1)
     }, [d, i, p, o]), {
       shouldShow: p,
@@ -61,18 +61,18 @@ let C = () => (0, p.Lk)(document.body.style.getPropertyValue("--custom-app-panel
     } = e, n = (0, s.e7)([c.Z], () => c.Z.useReducedMotion), r = void 0 !== t ? t.animated : j.Z, l = void 0 !== t ? t.static : E.Z;
     return n || null == r ? (0, i.jsx)("img", {
       src: l,
-      className: x.orbAsset,
+      className: _.orbAsset,
       alt: "Orb"
     }) : (0, i.jsxs)(d.Z, {
       autoPlay: !0,
       loop: !0,
-      className: x.orbAsset,
+      className: _.orbAsset,
       children: [(0, i.jsx)("source", {
         src: j.Z,
         type: "video/webm"
       }), (0, i.jsx)("img", {
         src: E.Z,
-        className: x.orbAsset,
+        className: _.orbAsset,
         alt: "Orb"
       })]
     })
@@ -94,13 +94,13 @@ let C = () => (0, p.Lk)(document.body.style.getPropertyValue("--custom-app-panel
       tryItText: r,
       onTryFeature: s,
       header: (0, i.jsx)(a.X6q, {
-        className: x.title,
+        className: _.title,
         variant: "heading-md/bold",
         children: t
       }),
       body: (0, i.jsx)(a.Text, {
         variant: "text-sm/medium",
-        className: x.description,
+        className: _.description,
         children: n
       }),
       position: d,
@@ -108,8 +108,8 @@ let C = () => (0, p.Lk)(document.body.style.getPropertyValue("--custom-app-panel
       hideDismissButton: !0,
       dismissIcon: (0, i.jsx)(b.s, {}),
       onDismissIconClick: o,
-      contentClassName: x.container,
-      pointerClassName: x.coachmarkPointer,
+      contentClassName: _.container,
+      pointerClassName: _.coachmarkPointer,
       tryItButtonColor: a.zxk.Colors.BRAND,
       art: (0, i.jsx)(v, {
         customIconSrcs: c
@@ -129,10 +129,10 @@ function N(e) {
     onGetTargetElementDimensions: m,
     spacing: g,
     position: p = "right"
-  } = e, [h, b] = r.useState("bottom" === d), [_, x] = r.useState(!0), [E, j] = r.useState(String(Date.now())), C = (0, o.Z)(), O = r.useCallback(e => {
+  } = e, [h, b] = r.useState("bottom" === d), [x, _] = r.useState(!0), [E, j] = r.useState(String(Date.now())), C = (0, o.Z)(), O = r.useCallback(e => {
     let n = t(e);
-    n !== _ && x(n)
-  }, [_, t]), S = c.current, v = r.useCallback(() => {
+    n !== x && _(n)
+  }, [x, t]), S = c.current, v = r.useCallback(() => {
     null != l && null != l.current && l.current.updateElementPosition()
   }, [l]);
   r.useEffect(() => (null != S && S.ownerDocument.addEventListener("scroll", v, !0), () => {
@@ -162,7 +162,7 @@ function N(e) {
     targetElementRef: c
   });
   let N = r.useMemo(() => u ? null != d ? d : "bottom" : h ? "top" : "bottom", [u, d, h]),
-    I = _ && !C,
+    I = x && !C,
     y = r.Children.map(s, e => r.cloneElement(e, {
       align: N
     }));

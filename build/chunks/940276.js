@@ -71,8 +71,8 @@ let f = function() {
     hasActivityRestrictedGuilds: c,
     onToggleAllActivityRestrictedGuilds: f,
     onToggleActivityRestrictedGuild: b,
-    isActivityRestricted: _,
-    numActivityRestrictedGuilds: x,
+    isActivityRestricted: x,
+    numActivityRestrictedGuilds: _,
     numTotalGuilds: E
   } = (0, d.F)(), j = (0, r.useId)();
   return (0, i.jsxs)("div", {
@@ -87,20 +87,20 @@ let f = function() {
           o.default.track(u.rMx.ACTIVITY_SHARING_SETTINGS_INTERACTED, {
             interaction: "search_cleared",
             sort_order: s,
-            activity_restricted_guild_count: x,
+            activity_restricted_guild_count: _,
             total_guild_count: E
           }), n("")
         },
         onFocus: () => o.default.track(u.rMx.ACTIVITY_SHARING_SETTINGS_INTERACTED, {
           interaction: "search_focused",
           sort_order: s,
-          activity_restricted_guild_count: x,
+          activity_restricted_guild_count: _,
           total_guild_count: E
         }),
         onBlur: () => o.default.track(u.rMx.ACTIVITY_SHARING_SETTINGS_INTERACTED, {
           interaction: "search_blurred",
           sort_order: s,
-          activity_restricted_guild_count: x,
+          activity_restricted_guild_count: _,
           total_guild_count: E
         }),
         placeholder: g.intl.string(g.t["H+nRY2"]),
@@ -132,7 +132,7 @@ let f = function() {
             o.default.track(u.rMx.ACTIVITY_SHARING_SETTINGS_INTERACTED, {
               interaction: "sort_order_changed",
               sort_order: e,
-              activity_restricted_guild_count: x,
+              activity_restricted_guild_count: _,
               total_guild_count: E
             }), a(e)
           },
@@ -165,7 +165,7 @@ let f = function() {
         })
       }), e.map(e => (0, i.jsx)(h, {
         guild: e,
-        isActivityRestricted: _(e.id),
+        isActivityRestricted: x(e.id),
         onToggleActivityRestrictedGuild: b
       }, e.id))]
     })]

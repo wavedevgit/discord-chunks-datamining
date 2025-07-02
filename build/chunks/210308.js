@@ -17,8 +17,8 @@ var i = n(255367),
   h = n(804413),
   f = n(787528),
   b = n(474936),
-  _ = n(981631),
-  x = n(921944),
+  x = n(981631),
+  _ = n(921944),
   E = n(46140),
   j = n(388032),
   C = n(669018);
@@ -29,7 +29,7 @@ function O(e) {
     targetElementRef: n
   } = e, r = (0, h.Z)(), m = (0, p.Z)({
     location: "TenureLevelUpCoachmark"
-  }), g = (0, c.Z)(e => e.isOpen), f = (0, s.e7)([u.Z], () => u.Z.getLayers().includes(_.S9g.USER_SETTINGS)), b = (0, d.Ws)({
+  }), g = (0, c.Z)(e => e.isOpen), f = (0, s.e7)([u.Z], () => u.Z.getLayers().includes(x.S9g.USER_SETTINGS)), b = (0, d.Ws)({
     location: E.dr.CONFLICT_CHECKS
   });
   return !m || null == r || g || f || !b ? null : (0, i.jsx)(o.Nq, {
@@ -72,11 +72,11 @@ function S(e) {
   } = e, o = b.Qh.indexOf(n), d = (0, f.J)(b.Qh[o > 0 ? o - 1 : o], {
     ambient: !0
   }), u = (0, r.useCallback)(() => {
-    s(x.L.TAKE_ACTION), l(), c.Z.setState({
+    s(_.L.TAKE_ACTION), l(), c.Z.setState({
       shouldRenderTenureLevelUp: !0
-    }), m.S.dispatch(_.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, {})
+    }), m.S.dispatch(x.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, {})
   }, [s, l]), p = (0, r.useCallback)(() => {
-    s(x.L.USER_DISMISS), l()
+    s(_.L.USER_DISMISS), l()
   }, [s, l]), h = b.vK[n];
   return (0, i.jsxs)("div", {
     className: C.contents,

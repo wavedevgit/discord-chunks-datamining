@@ -1,6 +1,6 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => _
+  Z: () => x
 }), n(388685);
 var i = n(255367),
   r = n(73800),
@@ -21,22 +21,22 @@ let h = (0, c.hQ)(),
   }),
   b = (0, c.hQ)();
 
-function _(e) {
+function x(e) {
   let {
     sectionTitle: t,
     errors: n,
     onBioChange: c,
     pendingBio: d,
-    placeholder: _,
-    currentBio: x,
+    placeholder: x,
+    currentBio: _,
     disabled: E = !1
-  } = e, [j, C] = r.useState(null != d ? d : x), [O, S] = r.useState((0, a.JM)(j)), v = r.useRef(!1);
+  } = e, [j, C] = r.useState(null != d ? d : _), [O, S] = r.useState((0, a.JM)(j)), v = r.useRef(!1);
   return r.useEffect(() => {
     if (void 0 === d) {
-      let e = (0, a.JM)(x);
-      C(x), S(e)
+      let e = (0, a.JM)(_);
+      C(_), S(e)
     }
-  }, [d, x]), (0, i.jsxs)(u.Z, {
+  }, [d, _]), (0, i.jsxs)(u.Z, {
     title: t,
     titleId: h,
     description: g.intl.string(g.t.Bbw6AQ),
@@ -51,7 +51,7 @@ function _(e) {
       onChange: function(e, t, n) {
         t !== j && (C(t), S(n), c(t))
       },
-      placeholder: _,
+      placeholder: x,
       channel: f,
       textValue: j,
       richValue: O,

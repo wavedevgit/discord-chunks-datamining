@@ -17,8 +17,8 @@ var i = n(255367),
   h = n(279837),
   f = n(952306),
   b = n(600164),
-  _ = n(690221),
-  x = n(332473),
+  x = n(690221),
+  _ = n(332473),
   E = n(303172),
   j = n(518560),
   C = n(921801),
@@ -144,7 +144,7 @@ class K extends r.PureComponent {
     return this.props.shouldRenderPomeloWarning ? (0, i.jsxs)(u.Wn, {
       className: H.accountWarningBodyText,
       messageType: u.QYI.WARNING,
-      children: [F.intl.format(F.t.pdYZys, {}), " ", "", (0, i.jsx)(_.Z, {
+      children: [F.intl.format(F.t.pdYZys, {}), " ", "", (0, i.jsx)(x.Z, {
         className: H.noticeTextButton,
         onClick: () => (0, E.Z)(G.Kq.USER_SETTINGS),
         children: F.intl.string(F.t.LhlgY2)
@@ -402,7 +402,7 @@ let q = () => {
     t = (0, c.e7)([T.Z], () => T.Z.getBackupCodes()),
     n = (0, c.e7)([N.Z], () => N.Z.hidePersonalInformation),
     r = (0, c.e7)([R.Z], () => R.Z.theme),
-    s = (0, x.b)(),
+    s = (0, _.b)(),
     l = (0, c.e7)([P.default], () => P.default.locale),
     a = (0, c.e7)([I.Z], () => I.Z.getSubsection()),
     {

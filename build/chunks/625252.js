@@ -1,6 +1,6 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => _
+  Z: () => x
 });
 var i = n(255367),
   r = n(73800),
@@ -18,7 +18,7 @@ var i = n(255367),
   f = n(31903),
   b = n(66094);
 
-function _() {
+function x() {
   let e = (0, l.wj)((0, c.ZP)()),
     t = r.useMemo(() => ({
       backgroundImage: "url(".concat("https://cdn.discordapp.com/assets/discovery/quests-wumpus-hikes-mountain-transparent-background.png", ")")

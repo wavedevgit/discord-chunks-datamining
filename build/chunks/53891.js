@@ -1,6 +1,6 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  ZP: () => x
+  ZP: () => _
 });
 var i = n(255367);
 n(73800);
@@ -48,7 +48,7 @@ function b(e) {
   })
 }
 
-function _(e) {
+function x(e) {
   function t(t) {
     var n;
     a.Z.dispatch({
@@ -78,7 +78,7 @@ function _(e) {
   })
 }
 
-function x(e) {
+function _(e) {
   let t = (0, r.e7)([d.Z], () => d.Z.getGuild(e.guildId)),
     n = (0, u.S3)(e.guildId);
   return null != t && (0, m.jq)(t) && null !== n ? "changed" === n ? (0, i.jsx)(b, {
@@ -86,7 +86,7 @@ function x(e) {
     onDismiss: e.onDismiss,
     targetElementRef: e.targetElementRef,
     children: e.children
-  }) : (0, i.jsx)(_, {
+  }) : (0, i.jsx)(x, {
     guild: t,
     onDismiss: e.onDismiss,
     targetElementRef: e.targetElementRef,

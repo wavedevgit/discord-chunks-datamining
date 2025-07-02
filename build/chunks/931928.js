@@ -1,6 +1,6 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  ED: () => _,
+  ED: () => x,
   fO: () => j,
   qp: () => C
 });
@@ -37,14 +37,14 @@ function b(e) {
   }
   return e
 }
-let _ = e => (0, i.jsx)(m.M4, b({
+let x = e => (0, i.jsx)(m.M4, b({
     titleText: f.intl.string(f.t.KnWRQU),
     descriptionText: f.intl.format(f.t["xYx+WV"], {
       quantity: 200
     }),
     ctaText: f.intl.string(f.t.v4HbPz)
   }, e)),
-  x = [g.Z5c.ME, g.Z5c.COLLECTIBLES_SHOP, g.Z5c.NITRO_HOME],
+  _ = [g.Z5c.ME, g.Z5c.COLLECTIBLES_SHOP, g.Z5c.NITRO_HOME],
   E = {
     position: "right",
     align: "bottom"
@@ -85,14 +85,14 @@ let _ = e => (0, i.jsx)(m.M4, b({
     }, [p]);
     let v = (0, s.TH)().pathname,
       T = r.useCallback(() => {
-        x.includes(v) || (0, c.uL)(g.Z5c.ME), o()
+        _.includes(v) || (0, c.uL)(g.Z5c.ME), o()
       }, [v, o]);
     return (0, i.jsx)(m.WS, (t = b({
       positionControlRef: C,
       targetElementRef: u,
       calculateVisibility: O,
       defaultCoachmarkAlign: E.align,
-      popoutElement: (0, i.jsx)(_, b({
+      popoutElement: (0, i.jsx)(x, b({
         onClose: a,
         onCtaClick: T
       }, f, E)),

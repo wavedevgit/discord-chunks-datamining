@@ -1,6 +1,6 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => _
+  Z: () => x
 });
 var i = n(255367);
 n(73800);
@@ -18,12 +18,12 @@ var r = n(399606),
   h = n(916723),
   f = n(388032),
   b = n(959810);
-let _ = () => {
+let x = () => {
   let e = (0, c.mq)(p.ne.ACTIVE),
     t = (0, o.c)(),
     n = (0, r.e7)([l.default], () => l.default.getCurrentUser()),
-    _ = (0, a.o)(f.intl.string(h.default["5RZ8Tk"]), f.intl.string(h.default.bmhCnJ)),
-    x = (0, a.o)(f.intl.string(h.default.XKnFFh), f.intl.string(h.default["68zfxM"])),
+    x = (0, a.o)(f.intl.string(h.default["5RZ8Tk"]), f.intl.string(h.default.bmhCnJ)),
+    _ = (0, a.o)(f.intl.string(h.default.XKnFFh), f.intl.string(h.default["68zfxM"])),
     E = (0, a.o)(f.intl.string(h.default["Rm/6a2"]), f.intl.string(h.default["1xPTwM"]));
   return void 0 === n ? null : (0, i.jsxs)("div", {
     className: b.container,
@@ -35,11 +35,11 @@ let _ = () => {
       children: [(0, i.jsx)(g.Z, {
         icon: s.eQA,
         header: f.intl.string(h.default["001l3t"]),
-        description: _
+        description: x
       }), (0, i.jsx)(g.Z, {
         icon: s.tEF,
         header: f.intl.string(h.default.yipAeH),
-        description: x
+        description: _
       }), (0, i.jsx)(g.Z, {
         icon: s.IkH,
         header: f.intl.string(h.default.hhOuMT),

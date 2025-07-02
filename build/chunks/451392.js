@@ -1,6 +1,6 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => _
+  Z: () => x
 });
 var i = n(255367);
 n(73800);
@@ -19,19 +19,19 @@ var r = n(120356),
   f = n(388032),
   b = n(732391);
 
-function _(e) {
+function x(e) {
   let {
     user: t,
     pendingAvatarSrc: n,
     pendingColors: r,
     onThemeColorsChange: l,
-    preventDisabled: _,
-    guildId: x,
+    preventDisabled: x,
+    guildId: _,
     className: E,
     showPremiumIcon: j = !0,
     showResetThemeButton: C = !1,
     forcedDivider: O
-  } = e, S = (0, u.ZP)(t.id, x), {
+  } = e, S = (0, u.ZP)(t.id, _), {
     primaryColor: v,
     secondaryColor: T
   } = (0, m.Z)({
@@ -39,14 +39,14 @@ function _(e) {
     displayProfile: S,
     pendingThemeColors: r,
     isPreview: !0
-  }), N = g.ZP.canUsePremiumProfileCustomization(t), I = null != n ? n : t.getAvatarURL(x, 80), y = (0, c.dQu)(o.Z.unsafe_rawColors.PRIMARY_530).hex(), A = (0, d.Cf)(I, y, !1);
+  }), N = g.ZP.canUsePremiumProfileCustomization(t), I = null != n ? n : t.getAvatarURL(_, 80), y = (0, c.dQu)(o.Z.unsafe_rawColors.PRIMARY_530).hex(), A = (0, d.Cf)(I, y, !1);
   if (null == v || null == T) return null;
   let P = e => {
     l(a()(e, null == S ? void 0 : S.themeColors) ? void 0 : e)
   };
   return (0, i.jsx)(h.Z, {
     title: f.intl.string(f.t.DMeO2d),
-    disabled: !N && !_,
+    disabled: !N && !x,
     className: s()(b.__invalid_profileThemesSection, E),
     showPremiumIcon: j,
     forcedDivider: O,
@@ -82,7 +82,7 @@ function _(e) {
             children: f.intl.string(f.t["8elvy8"])
           })
         })
-      }), C && null != x && (0, i.jsx)(c.zxk, {
+      }), C && null != _ && (0, i.jsx)(c.zxk, {
         className: b.resetButton,
         color: c.zxk.Colors.PRIMARY,
         look: c.zxk.Looks.LINK,

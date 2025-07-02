@@ -50,7 +50,7 @@ let c = "url(#gradient)",
       progressCircleStrokeSize: p = 2,
       progressCircleVariation: h,
       progressCircleStroke: f
-    } = e, b = 43 + p / 2, _ = 2 * Math.PI * b, [x, E] = r.useState(g);
+    } = e, b = 43 + p / 2, x = 2 * Math.PI * b, [_, E] = r.useState(g);
     r.useEffect(() => {
       let e = setTimeout(() => {
         E(t)
@@ -80,10 +80,10 @@ let c = "url(#gradient)",
           stroke: v,
           strokeWidth: p,
           strokeLinecap: "round",
-          strokeDasharray: "".concat(_, " ").concat(_),
+          strokeDasharray: "".concat(x, " ").concat(x),
           className: c,
           style: {
-            strokeDashoffset: (1 - x / 100) * _
+            strokeDashoffset: (1 - _ / 100) * x
           },
           r: "".concat(b),
           cx: "50%",

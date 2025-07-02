@@ -23,14 +23,14 @@ let g = e => {
     subscriptionTier: h,
     premiumModalAnalyticsLocation: f,
     giftMessage: b,
-    onClick: _
-  } = e, x = (0, o.ZP)(), E = h === d.Si.TIER_0 ? u.intl.string(u.t.rk4Uu7) : u.intl.string(u.t.Ve9Ge3);
+    onClick: x
+  } = e, _ = (0, o.ZP)(), E = h === d.Si.TIER_0 ? u.intl.string(u.t.rk4Uu7) : u.intl.string(u.t.Ve9Ge3);
   return (0, i.jsx)(c.Z, {
     isGift: !0,
     subscriptionTier: h,
     premiumModalAnalyticsLocation: f,
     giftMessage: b,
-    onClick: _,
+    onClick: x,
     children: e => {
       var o;
       let {
@@ -38,7 +38,7 @@ let g = e => {
       } = e;
       return (0, i.jsxs)(a.zxk, {
         innerClassName: m.innerGiftButton,
-        color: null != r ? r : (0, l.wj)(x) ? a.Ttl.WHITE : a.Ttl.BRAND,
+        color: null != r ? r : (0, l.wj)(_) ? a.Ttl.WHITE : a.Ttl.BRAND,
         look: null != g ? g : a.iLD.OUTLINED,
         className: s()(t, m.giftButton),
         onClick: c,

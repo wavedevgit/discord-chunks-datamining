@@ -18,12 +18,12 @@ var r = n(924628),
   h = n(893996),
   f = n(266132),
   b = n(726985),
-  _ = n(388032);
+  x = n(388032);
 
-function x() {
+function _() {
   return (0, i.jsxs)(h.Z, {
-    title: _.intl.string(_.t.WWaFn5),
-    description: _.intl.format(_.t["/6sFWV"], {
+    title: x.intl.string(x.t.WWaFn5),
+    description: x.intl.format(x.t["/6sFWV"], {
       helpArticle: (0, l.uV)()
     }),
     webSetting: b.s6.PRIVACY_AND_SAFETY_VOICE_SECURITY,
@@ -33,7 +33,7 @@ function x() {
 
 function E() {
   return (0, i.jsx)(h.Z, {
-    title: _.intl.string(_.t.BG7Qsb),
+    title: x.intl.string(x.t.BG7Qsb),
     webSetting: b.s6.PRIVACY_AND_SAFETY_RECEIVE_DISCORD_DATA_CATEGORY,
     children: (0, i.jsx)(c.Z, {})
   })
@@ -41,7 +41,7 @@ function E() {
 
 function j() {
   return (0, i.jsxs)(h.Z, {
-    title: _.intl.string(_.t.SRZyHh),
+    title: x.intl.string(x.t.SRZyHh),
     webSetting: b.s6.PRIVACY_AND_SAFETY_DISCORD_DATA_USAGE_CATEGORY,
     children: [(0, i.jsx)(g.Z, {}), (0, i.jsx)(m.Z, {}), (0, i.jsx)(u.Z, {}), (0, i.jsx)(d.Z, {})]
   })
@@ -51,7 +51,7 @@ function C() {
   return (0, s.ZP)(() => {
     (0, r.I)(), (0, a.A)()
   }), (0, i.jsxs)(o.N, {
-    header: _.intl.string(_.t.OAuOHB),
-    children: [(0, i.jsx)(j, {}), (0, i.jsx)(E, {}), (0, i.jsx)(x, {})]
+    header: x.intl.string(x.t.OAuOHB),
+    children: [(0, i.jsx)(j, {}), (0, i.jsx)(E, {}), (0, i.jsx)(_, {})]
   })
 }

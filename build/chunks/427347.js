@@ -1,6 +1,6 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => x
+  Z: () => _
 });
 var i = n(255367);
 n(73800);
@@ -19,19 +19,19 @@ var r = n(704215),
   f = n(388032),
   b = n(963748);
 
-function _(e) {
+function x(e) {
   let {
     dismissibleContent: t
   } = e, n = m.Z.useIsEligible(), u = (0, c.Nj)(t), {
-    analyticsLocations: _
-  } = (0, o.ZP)(a.Z.HOLIDAY_COACHMARK), x = e => {
+    analyticsLocations: x
+  } = (0, o.ZP)(a.Z.HOLIDAY_COACHMARK), _ = e => {
     (0, c.Q3)(r.z.HOLIDAY_COACHMARK_HALLOWEEN_2024, {
       dismissAction: e
     })
   }, E = () => {
     l.Z.open(p.oAB.NOTIFICATIONS, null, {
-      analyticsLocations: _
-    }), x(h.L.SECONDARY)
+      analyticsLocations: x
+    }), _(h.L.SECONDARY)
   };
   return n && !u ? (0, i.jsx)(d.ZP, {
     children: (0, i.jsxs)("div", {
@@ -68,7 +68,7 @@ function _(e) {
           })]
         }), (0, i.jsx)(s.P3F, {
           className: b.closeClickable,
-          onClick: () => x(h.L.USER_DISMISS),
+          onClick: () => _(h.L.USER_DISMISS),
           children: (0, i.jsx)(s.Dio, {
             color: "currentColor",
             size: "xs"
@@ -79,8 +79,8 @@ function _(e) {
   }) : null
 }
 
-function x() {
-  return null == u.Z.coachmarkDismissibleContent ? null : (0, i.jsx)(_, {
+function _() {
+  return null == u.Z.coachmarkDismissibleContent ? null : (0, i.jsx)(x, {
     dismissibleContent: u.Z.coachmarkDismissibleContent
   })
 }

@@ -18,8 +18,8 @@ var i = n(255367),
   h = n(51499),
   f = n(614277),
   b = n(626135),
-  _ = n(152521),
-  x = n(932563),
+  x = n(152521),
+  _ = n(932563),
   E = n(621490),
   j = n(257493),
   C = n(981631),
@@ -88,7 +88,7 @@ let I = {
     } = t;
     e === C.rMx.PAYMENT_FLOW_CANCELED && b.default.track(C.rMx.PAYMENT_FLOW_CANCELED, v({
       load_id: n,
-      application_id: (0, _.N)(i),
+      application_id: (0, x.N)(i),
       location: r,
       location_stack: r,
       sku_id: i,
@@ -114,7 +114,7 @@ let I = {
       var t, n;
       return v(T(v({
         load_id: i,
-        application_id: (0, _.N)(l),
+        application_id: (0, x.N)(l),
         location: o,
         location_stack: o,
         sku_id: l,
@@ -183,11 +183,11 @@ let I = {
       emitOrbCheckoutPaymentFlowEvent: p
     } = A(), {
       skuId: b,
-      onRedeemVirtualCurrency: _,
+      onRedeemVirtualCurrency: x,
       isRedeeming: O,
       orbRedemptionError: S,
       orbProductContext: v
-    } = (0, j.C)(), T = (0, x.cR)(), N = (0, r.useRef)(T);
+    } = (0, j.C)(), T = (0, _.cR)(), N = (0, r.useRef)(T);
     (0, l.ZP)(() => {
       p(C.rMx.PAYMENT_FLOW_LOADED)
     }), (0, r.useEffect)(() => {
@@ -196,10 +196,10 @@ let I = {
       null != S && null !== N.current && (p(C.rMx.PAYMENT_FLOW_FAILED, S), N.current = null)
     }, [S, p]);
     let I = (0, r.useCallback)(() => {
-      N.current = T, p(C.rMx.PAYMENT_FLOW_COMPLETED), _(() => {
+      N.current = T, p(C.rMx.PAYMENT_FLOW_COMPLETED), x(() => {
         u(m.A.COMPLETED), p(C.rMx.PAYMENT_FLOW_SUCCEEDED)
       })
-    }, [_, u, T, p]);
+    }, [x, u, T, p]);
     if (null == a || null == g) return (0, i.jsx)(s.$jN, {
       type: s.$jN.Type.WANDERING_CUBES
     });
@@ -259,7 +259,7 @@ let I = {
       e || a(C.rMx.PAYMENT_FLOW_CANCELED), await s.onClose()
     }, [s, a]);
     return (0, i.jsx)(p.PaymentModal, {
-      applicationId: (0, _.N)(t),
+      applicationId: (0, x.N)(t),
       transitionState: s.transitionState,
       analyticsDataOverride: o,
       onClose: c,
@@ -279,7 +279,7 @@ let I = {
       analyticsLocations: l = []
     } = e, a = N(e, ["skuId", "loadId", "onCheckoutSuccess", "analyticsSourceLocation", "analyticsLocations"]);
     return (0, i.jsx)(d.PaymentContextProvider, {
-      applicationId: (0, _.N)(t),
+      applicationId: (0, x.N)(t),
       activeSubscription: null,
       loadId: n,
       stepConfigs: D,

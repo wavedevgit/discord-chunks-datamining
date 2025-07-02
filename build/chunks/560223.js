@@ -1,6 +1,6 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => _
+  Z: () => x
 });
 var i = n(255367),
   r = n(73800),
@@ -42,13 +42,13 @@ let b = e => {
       })
     })
   },
-  _ = e => {
+  x = e => {
     let {
       className: t,
       variant: n,
       noBackground: s = !1,
-      leftAlignHeaders: _ = !1,
-      showAllPerksButton: x,
+      leftAlignHeaders: x = !1,
+      showAllPerksButton: _,
       headerClassname: E
     } = e, j = r.useRef(null), C = n === g.gM.WHATS_NEW, O = (0, u.x)();
     r.useEffect(() => {
@@ -77,29 +77,29 @@ let b = e => {
     return (0, i.jsxs)("div", {
       ref: j,
       className: l()(f.section, {
-        [f.centerAlignSection]: !_,
-        [f.leftAlignSection]: _
+        [f.centerAlignSection]: !x,
+        [f.leftAlignSection]: x
       }, t),
       children: [(0, i.jsx)(b, {
-        showAllPerksButton: x,
-        leftAlignHeaders: _,
+        showAllPerksButton: _,
+        leftAlignHeaders: x,
         title: S.title,
         headerClassname: E
       }), (0, i.jsx)(a.Text, {
         variant: "text-lg/normal",
         color: "header-primary",
         className: l()(f.subtitle, {
-          [f.subtitle]: null == x || _,
-          [f.subtitleWithButton]: null != x && !_,
-          [f.fullWidth]: C || _,
+          [f.subtitle]: null == _ || x,
+          [f.subtitleWithButton]: null != _ && !x,
+          [f.fullWidth]: C || x,
           [f.moreSubtitleMargin]: P,
-          [f.leftAlignSubtitle]: _,
-          [f.centerAlignSubtitle]: !_
+          [f.leftAlignSubtitle]: x,
+          [f.centerAlignSubtitle]: !x
         }),
         children: S.subtitle
-      }), !_ && null != x && (0, i.jsx)("div", {
+      }), !x && null != _ && (0, i.jsx)("div", {
         className: f.showAllPerksButtonCenter,
-        children: x
+        children: _
       }), (0, i.jsx)("div", {
         className: f.cardContainer,
         children: A.map((e, t) => {

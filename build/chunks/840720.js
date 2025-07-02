@@ -21,10 +21,10 @@ function m(e) {
     guildName: g,
     guildIcon: p,
     guildIconSize: h
-  } = e, f = r.useRef(null), [b, _] = r.useState(!1);
+  } = e, f = r.useRef(null), [b, x] = r.useState(!1);
   return r.useEffect(() => {
     let e = f.current;
-    null != e && null != e.offsetWidth && null != e.scrollWidth && _(e.offsetWidth < e.scrollWidth)
+    null != e && null != e.offsetWidth && null != e.scrollWidth && x(e.offsetWidth < e.scrollWidth)
   }, []), (0, i.jsxs)("div", {
     className: l()(u.container, t),
     children: [(0, i.jsxs)("div", {

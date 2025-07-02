@@ -32,13 +32,13 @@ function u() {
     } catch (e) {
       h(g)
     }
-  }, b = 0 !== p.length, [_, x] = (0, r.useState)(() => d[n](m, g)), E = _.map(e => u[e.id]).filter(Boolean);
+  }, b = 0 !== p.length, [x, _] = (0, r.useState)(() => d[n](m, g)), E = x.map(e => u[e.id]).filter(Boolean);
   return {
     guilds: "" === e ? E : E.filter(t => t.name.toLowerCase().includes(e.toLowerCase())),
     sortOrder: n,
     searchQuery: e,
     setSortOrder: e => {
-      x(d[e](m, g)), i(e)
+      _(d[e](m, g)), i(e)
     },
     setSearchQuery: t,
     onToggleActivityRestrictedGuild: e => {

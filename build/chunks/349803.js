@@ -22,8 +22,8 @@ let f = function(e) {
     isVisible: r,
     subscriptionTier: f,
     isApplicationHome: b,
-    isEligibleForBogoPromotion: _
-  } = e, x = null == (t = (0, d.N)()) ? void 0 : t.subscription_trial, E = (0, c.Ng)(), j = (0, c.Wp)(E, g.Si.TIER_2) ? g.Si.TIER_2 : void 0, C = (0, a.q_F)({
+    isEligibleForBogoPromotion: x
+  } = e, _ = null == (t = (0, d.N)()) ? void 0 : t.subscription_trial, E = (0, c.Ng)(), j = (0, c.Wp)(E, g.Si.TIER_2) ? g.Si.TIER_2 : void 0, C = (0, a.q_F)({
     transform: r ? "translateY(-100%)" : "translateY(0%)",
     opacity: +!!r,
     config: {
@@ -46,10 +46,10 @@ let f = function(e) {
         className: s()(h.button, {
           [h.subButton]: v
         }),
-        subscriptionTier: null != (n = null != f ? f : null == x ? void 0 : x.sku_id) ? n : j,
+        subscriptionTier: null != (n = null != f ? f : null == _ ? void 0 : _.sku_id) ? n : j,
         premiumModalAnalyticsLocation: O,
         isPersistentCTA: !0,
-        hasActivePromotion: _,
+        hasActivePromotion: x,
         shinyButtonClassName: v ? void 0 : h.tier2Gradient
       }), (0, i.jsx)(u.Z, {
         className: h.button,

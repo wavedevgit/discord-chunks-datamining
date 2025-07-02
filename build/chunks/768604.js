@@ -24,9 +24,9 @@ function b() {
     {
       goreContentGuilds: n,
       goreContentFriendDm: b,
-      goreContentNonFriendDm: _
+      goreContentNonFriendDm: x
     } = (0, d.K)(),
-    x = e => {
+    _ = e => {
       let t = Object.values(e);
       if ((0, o.Ks)() && t.includes(r.Q4.SHOW)) return void l.Z.showAgeVerificationGetStartedModal(a.cU.SENSITIVE_MEDIA_FILTER_SETTINGS);
       (0, c.Jr)(e)
@@ -57,7 +57,7 @@ function b() {
         look: s.qQH.CUSTOM,
         options: E,
         value: b,
-        onChange: e => x({
+        onChange: e => _({
           goreContentFriendDm: e
         }),
         renderOptionValue: e => {
@@ -78,8 +78,8 @@ function b() {
       }), (0, i.jsx)(s.q4e, {
         look: s.qQH.CUSTOM,
         options: E,
-        value: _,
-        onChange: e => x({
+        value: x,
+        onChange: e => _({
           goreContentNonFriendDm: e
         }),
         renderOptionValue: e => {
@@ -101,7 +101,7 @@ function b() {
         look: s.qQH.CUSTOM,
         options: j,
         value: n,
-        onChange: e => x({
+        onChange: e => _({
           goreContentGuilds: e
         }),
         isDisabled: !t,

@@ -17,8 +17,8 @@ var i = n(255367),
   h = n(639814),
   f = n(838436),
   b = n(51331),
-  _ = n(922628),
-  x = n(703115),
+  x = n(922628),
+  _ = n(703115),
   E = n(526761),
   j = n(726985),
   C = n(736530),
@@ -32,7 +32,7 @@ function v(e) {
   } = e, v = (0, h.c_)(), T = (0, g.q)(), N = p.h2.useSetting().includes(n), I = p.mX.useSetting(), y = p.zA.useSetting().includes(n), A = r.useCallback(e => {
     let i = (0, u.gl)();
     e ? i.delete(n) : i.add(n), p.zA.updateSetting(Array.from(i)), c.default.track(O.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
-      action: x.Y.RESTRICT_GUILD_MESSAGE_REQUEST_TOGGLE,
+      action: _.Y.RESTRICT_GUILD_MESSAGE_REQUEST_TOGGLE,
       ingress: t,
       guild_id: n
     })
@@ -48,7 +48,7 @@ function v(e) {
   function R(e, t) {
     var n;
     if ((0, m.SI)()) return void l.Z.showAgeVerificationGetStartedModal(a.cU.MESSAGE_REQUESTS_SETTINGS);
-    t ? A(e) : (n = !e, (0, _.V)({
+    t ? A(e) : (n = !e, (0, x.V)({
       header: S.intl.string(S.t.yAfu1t),
       body: S.intl.string(S.t["Ry2z7+"]),
       confirmText: S.intl.string(S.t.gm1Ven),

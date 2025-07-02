@@ -17,8 +17,8 @@ var i = n(255367),
   h = n(51331),
   f = n(726985),
   b = n(981631),
-  _ = n(388032),
-  x = n(296281);
+  x = n(388032),
+  _ = n(296281);
 
 function E(e) {
   let {
@@ -32,13 +32,13 @@ function E(e) {
     }
     let t = e.join(", "),
       r = n.length - 3;
-    return r > 0 ? _.intl.format(_.t.sHFdTk, {
+    return r > 0 ? x.intl.format(x.t.sHFdTk, {
       gameList: t,
       plusMoreHook: (e, t) => (0, i.jsx)(l.Text, {
         tag: "span",
         variant: "text-sm/medium",
         color: "text-muted",
-        children: _.intl.format(_.t["EADv+/"], {
+        children: x.intl.format(x.t["EADv+/"], {
           count: r
         })
       }, t)
@@ -89,13 +89,13 @@ function E(e) {
         }({}, e), {
           src: d,
           "aria-label": a,
-          className: x.icon
+          className: _.icon
         }))
       }, c))
     }
     let t = n.length - 3;
     return t > 0 && e.push((0, i.jsx)("div", {
-      className: x.moreIcon,
+      className: _.moreIcon,
       children: (0, i.jsx)(l.Text, {
         variant: "text-xs/medium",
         color: "text-default",
@@ -106,30 +106,30 @@ function E(e) {
     a.Z.open(b.oAB.AUTHORIZED_APPS)
   }, []);
   return (0, i.jsxs)("div", {
-    className: x.header,
+    className: _.header,
     children: [(0, i.jsxs)("div", {
-      className: x.gameNamesHeader,
+      className: _.gameNamesHeader,
       children: [(0, i.jsx)(l.Text, {
         variant: "text-md/normal",
         color: "header-primary",
         children: s
       }), (0, i.jsxs)(l.P3F, {
         onClick: u,
-        className: x.manageGamesLink,
+        className: _.manageGamesLink,
         children: [(0, i.jsx)(l.Text, {
           variant: "text-xs/normal",
           color: "interactive-normal",
-          children: _.intl.format(_.t.oYaYOT, {})
+          children: x.intl.format(x.t.oYaYOT, {})
         }), (0, i.jsx)(l.Fbu, {
           size: "xxs",
           color: l.TVs.colors.INTERACTIVE_NORMAL,
-          className: x.manageGamesChevron
+          className: _.manageGamesChevron
         })]
       })]
     }), (0, i.jsx)("div", {
-      className: x.divider
+      className: _.divider
     }), (0, i.jsx)("div", {
-      className: x.gameIcons,
+      className: _.gameIcons,
       children: c
     })]
   })
@@ -140,8 +140,8 @@ function j() {
   return (0, i.jsx)(p.U, {
     setting: f.s6.PRIVACY_AND_SAFETY_ALLOW_GAME_FRIEND_DMS,
     children: (0, i.jsx)(h.Z, {
-      title: _.intl.string(_.t.XpBObG),
-      note: _.intl.format(_.t.oZsHTE, {
+      title: x.intl.string(x.t.XpBObG),
+      note: x.intl.format(x.t.oZsHTE, {
         helpdeskArticle: c.Z.getArticleURL(b.BhN.SLAYER_GAME_FRIENDS)
       }),
       value: e,
@@ -154,20 +154,20 @@ function C() {
   let e = u.JG.useSetting(),
     t = e === s.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET ? s.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL : e,
     n = [{
-      name: _.intl.string(_.t.JIFnNz),
+      name: x.intl.string(x.t.JIFnNz),
       value: s.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL
     }, {
-      name: _.intl.string(_.t.rRdsk5),
+      name: x.intl.string(x.t.rRdsk5),
       value: s.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_USERS_WITH_GAME
     }, {
-      name: _.intl.string(_.t.AolKwM),
+      name: x.intl.string(x.t.AolKwM),
       value: s.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_NONE
     }];
   return (0, i.jsxs)(p.U, {
     setting: f.s6.PRIVACY_AND_SAFETY_IN_GAME_DMS,
     children: [(0, i.jsx)(p.H, {
-      header: _.intl.string(_.t["ms+TmZ"]),
-      description: _.intl.string(_.t["4NN4+/"])
+      header: x.intl.string(x.t["ms+TmZ"]),
+      description: x.intl.string(x.t["4NN4+/"])
     }), (0, i.jsx)(l.FXm, {
       value: t,
       options: n,
@@ -191,19 +191,19 @@ function O() {
       children: [(0, i.jsx)(E, {
         applications: t
       }), (0, i.jsx)(j, {}), (0, i.jsx)("div", {
-        className: x.divider
+        className: _.divider
       }), (0, i.jsx)(C, {})]
     }) : (0, i.jsxs)("div", {
-      className: x.emptyContainer,
+      className: _.emptyContainer,
       children: [(0, i.jsx)(l.Text, {
         variant: "text-md/medium",
         color: "header-primary",
-        className: x.noGamesConnectedText,
-        children: _.intl.string(_.t["+0U77e"])
+        className: _.noGamesConnectedText,
+        children: x.intl.string(x.t["+0U77e"])
       }), (0, i.jsx)(l.Text, {
         variant: "text-sm/normal",
         color: "text-muted",
-        children: _.intl.format(_.t.V8wClJ, {
+        children: x.intl.format(x.t.V8wClJ, {
           helpdeskArticle: c.Z.getArticleURL(b.BhN.SOCIAL_LAYER_CONNECTIONS)
         })
       })]

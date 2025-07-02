@@ -16,7 +16,7 @@ var i, r, s = n(255367),
   f = n(204227),
   b = n(283574);
 
-function _(e, t, n) {
+function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -25,14 +25,14 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function x(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), i.forEach(function(t) {
-      _(e, t, n[t])
+      x(e, t, n[t])
     })
   }
   return e
@@ -55,8 +55,8 @@ let j = new RegExp("https?://".concat(null != (i = window.GLOBAL_ENV.CDN_HOST) ?
 function C(e) {
   return "string" == typeof e.content ? e.content : v(e.content)
 }
-let O = E(x({}, d().defaultRules), {
-    heading: E(x({}, d().defaultRules.heading), {
+let O = E(_({}, d().defaultRules), {
+    heading: E(_({}, d().defaultRules.heading), {
       react(e, t, n) {
         let i = "h".concat(e.level);
         return (0, s.jsx)(m.Z, {
@@ -65,36 +65,36 @@ let O = E(x({}, d().defaultRules), {
         }, n.key)
       }
     }),
-    paragraph: E(x({}, d().defaultRules.paragraph), {
+    paragraph: E(_({}, d().defaultRules.paragraph), {
       react: (e, t, n) => (0, s.jsx)("div", {
         className: f.paragraph,
         children: t(e.content, n)
       }, n.key)
     }),
-    strong: E(x({}, d().defaultRules.strong), {
+    strong: E(_({}, d().defaultRules.strong), {
       order: 6
     }),
-    em: E(x({}, d().defaultRules.em), {
+    em: E(_({}, d().defaultRules.em), {
       order: 6
     }),
-    u: E(x({}, d().defaultRules.u), {
+    u: E(_({}, d().defaultRules.u), {
       order: 5
     }),
-    del: E(x({}, d().defaultRules.del), {
+    del: E(_({}, d().defaultRules.del), {
       order: 6
     }),
-    link: E(x({}, g.ZP, (0, h.Z)({
+    link: E(_({}, g.ZP, (0, h.Z)({
       enableBuildOverrides: !1
     })), {
       order: 6
     }),
-    blockQuote: E(x({}, d().defaultRules.blockQuote), {
+    blockQuote: E(_({}, d().defaultRules.blockQuote), {
       react: (e, t, n) => (0, s.jsx)("blockquote", {
         className: f.blockquote,
         children: C(e)
       }, n.key)
     }),
-    image: E(x({}, d().defaultRules.image), {
+    image: E(_({}, d().defaultRules.image), {
       order: 6,
       match(e, t, n) {
         let i = d().defaultRules.image;
@@ -107,14 +107,14 @@ let O = E(x({}, d().defaultRules), {
         return !1
       }
     }),
-    inlineCode: E(x({}, p.Z.RULES.inlineCode), {
+    inlineCode: E(_({}, p.Z.RULES.inlineCode), {
       order: 6,
       react: (e, t, n) => (0, s.jsx)("code", {
         className: f.codeInline,
         children: C(e)
       }, n.key)
     }),
-    codeBlock: E(x({}, d().defaultRules.codeBlock), {
+    codeBlock: E(_({}, d().defaultRules.codeBlock), {
       react(e, t, i) {
         let r = () => (0, s.jsx)("pre", {
           children: (0, s.jsx)("code", {
@@ -154,7 +154,7 @@ class T extends(r = l.PureComponent) {
       state: n,
       parser: i,
       output: r
-    } = this.props, l = r(i("".concat(t, "\n\n"), x({
+    } = this.props, l = r(i("".concat(t, "\n\n"), _({
       inline: !1
     }, n)));
     return (0, s.jsx)("div", {
@@ -163,7 +163,7 @@ class T extends(r = l.PureComponent) {
     })
   }
 }
-_(T, "rules", O), _(T, "defaultProps", {
+x(T, "rules", O), x(T, "defaultProps", {
   parser: S,
   output: v
 });

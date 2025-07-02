@@ -1,6 +1,6 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => _
+  Z: () => x
 }), n(388685);
 var i = n(255367),
   r = n(73800),
@@ -31,10 +31,10 @@ function b() {
   })
 }
 
-function _(e) {
+function x(e) {
   let {
     refreshStyles: t = !1
-  } = e, n = (0, a.e7)([d.Z], () => d.Z.supports(p.AN.VIDEO)), [s, u] = r.useState(!1), _ = (0, i.jsxs)(i.Fragment, {
+  } = e, n = (0, a.e7)([d.Z], () => d.Z.supports(p.AN.VIDEO)), [s, u] = r.useState(!1), x = (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(c.F, {
       setting: g.s6.VOICE_AND_VIDEO_VIDEO_CAMERA,
       children: (0, i.jsx)(m.Z, {
@@ -44,14 +44,14 @@ function _(e) {
       })
     }), !n && (0, i.jsx)(b, {})]
   });
-  return t ? _ : (0, i.jsxs)(i.Fragment, {
+  return t ? x : (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(o.y5t, {
       component: (0, i.jsx)(o.vwX, {
         tag: o.RB0.H1,
         className: f.marginBottom20,
         children: h.intl.string(h.t.LKzQSE)
       }),
-      children: _
+      children: x
     }), (0, i.jsx)(o.$i$, {
       className: l()(f.marginBottom40, f.marginTop40)
     })]

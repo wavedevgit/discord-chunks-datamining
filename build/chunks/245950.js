@@ -26,7 +26,7 @@ function p(e) {
   i.useEffect(() => {
     h && null != p && null == d.Z.getSubscriptionSettings(p.id) && b(p.id)
   }, [h, p, b]);
-  let _ = null == n ? void 0 : function(e) {
+  let x = null == n ? void 0 : function(e) {
     let {
       subscription: t
     } = e, n = s()(t.currentPeriodEnd).format("M/D/YY"), i = null != t.price ? (0, o.T4)(t.price, t.currency) : "", r = s()(t.createdAt).format("M/D/YY"), l = t.status === m.O0b.CANCELED, a = t.status === m.O0b.PAST_DUE, c = t.hasActiveTrial;
@@ -48,6 +48,6 @@ function p(e) {
     handleToggleExpanded: () => f(e => !e),
     listing: n,
     groupListing: r,
-    subscriptionInfo: _
+    subscriptionInfo: x
   }
 }

@@ -1,6 +1,6 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => _
+  Z: () => x
 }), n(388685);
 var i, r = n(442837),
   s = n(570140),
@@ -150,7 +150,7 @@ class b extends(i = r.ZP.PersistedStore) {
   }
 }
 c(b, "displayName", "ClickerGameStore"), c(b, "persistKey", "ClickerGameStore");
-let _ = new b(s.Z, {
+let x = new b(s.Z, {
   CLICKER_GAME_ADD_POINTS: function(e) {
     let {
       numPoints: t,

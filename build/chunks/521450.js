@@ -17,8 +17,8 @@ var i = n(255367),
   h = n(981631),
   f = n(930441),
   b = n(916723),
-  _ = n(388032),
-  x = n(128607),
+  x = n(388032),
+  _ = n(128607),
   E = n(20493);
 let j = () => {
   let e = p.Ex.useSetting(),
@@ -29,20 +29,20 @@ let j = () => {
   return r.useEffect(() => {
     null == n && (0, m.Y7)()
   }, [n]), (0, i.jsxs)("div", {
-    className: x.container,
+    className: _.container,
     children: [(0, i.jsx)(d.Text, {
       variant: "eyebrow",
       color: "text-muted",
-      children: _.intl.string(b.default.USIXU1)
+      children: x.intl.string(b.default.USIXU1)
     }), (0, i.jsx)(d.j7V, {
       className: l()(E.marginTop8, E.marginBottom20),
       value: e,
-      note: _.intl.string(b.default["5MdB3t"]),
+      note: x.intl.string(b.default["5MdB3t"]),
       hideBorder: !0,
       onChange: p.Ex.updateSetting,
-      children: _.intl.string(b.default.zkEceX)
+      children: x.intl.string(b.default.zkEceX)
     }), e ? (0, i.jsx)(d.Zbd, {
-      className: x.enableCard,
+      className: _.enableCard,
       type: d.Zbd.Types.CUSTOM,
       outline: !0,
       children: (0, i.jsxs)(o.k, {
@@ -51,7 +51,7 @@ let j = () => {
           children: (0, i.jsx)(d.Text, {
             variant: "text-sm/semibold",
             color: "text-default",
-            children: _.intl.string(b.default.xAVm7O)
+            children: x.intl.string(b.default.xAVm7O)
           })
         }), (0, i.jsx)(d.P3F, {
           children: (0, i.jsx)(a.rU, {
@@ -62,23 +62,23 @@ let j = () => {
                 scrollRestoration: !1
               }
             },
-            children: _.intl.string(b.default.cUIXFR)
+            children: x.intl.string(b.default.cUIXFR)
           })
         }), (0, i.jsx)(d.G2e, {
           icon: d.ZSh,
-          className: x.arrow,
+          className: _.arrow,
           disableColor: !0
         })]
       })
     }) : null, (0, i.jsx)(d.j7V, {
       className: l()(E.marginTop20, E.marginBottom20),
       value: !!t[f.$Z.FAMILY_CENTER_DIGEST],
-      note: _.intl.string(b.default["y34S4+"]),
+      note: x.intl.string(b.default["y34S4+"]),
       hideBorder: !0,
       onChange: function(e) {
         (0, m.pR)(f.$Z.FAMILY_CENTER_DIGEST, e)
       },
-      children: _.intl.string(b.default.irvJKS)
+      children: x.intl.string(b.default.irvJKS)
     })]
   })
 }

@@ -1,6 +1,6 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => _
+  Z: () => x
 }), n(388685);
 var i = n(255367),
   r = n(73800),
@@ -41,7 +41,7 @@ let p = {
     [d.gkr.HOUSE_2]: u.intl.string(u.t.VNPE6u),
     [d.gkr.HOUSE_3]: u.intl.string(u.t.KNfiTU)
   })[e];
-class _ extends r.Component {
+class x extends r.Component {
   render() {
     let {
       houseMembership: e,

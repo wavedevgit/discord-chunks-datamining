@@ -17,8 +17,8 @@ var i = n(255367),
   h = n(489495),
   f = n(189),
   b = n(662583),
-  _ = n(346537),
-  x = n(830318);
+  x = n(346537),
+  _ = n(830318);
 
 function E(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -153,7 +153,7 @@ let C = {
         children: [(0, i.jsxs)("div", {
           className: l()(b.col, b.preview),
           children: [(0, i.jsx)("img", {
-            src: N ? _ : x,
+            src: N ? x : _,
             alt: "",
             width: 450
           }), S && (0, i.jsx)(f.Z, {

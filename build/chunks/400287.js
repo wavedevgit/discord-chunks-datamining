@@ -1,6 +1,6 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => _
+  Z: () => x
 });
 var i = n(255367);
 n(73800);
@@ -19,15 +19,15 @@ var r = n(120356),
   f = n(388032),
   b = n(20493);
 
-function _() {
+function x() {
   let e = g.fq.useSetting(),
     t = g.eR.useSetting(),
     n = (0, d.V2)({
       location: "UserSettingsTextImages"
     }),
     r = g.R$.useSetting(),
-    _ = g.cC.useSetting(),
-    x = g.vF.useSetting(),
+    x = g.cC.useSetting(),
+    _ = g.vF.useSetting(),
     E = g.H1.useSetting(),
     j = g.ev.useSetting(),
     C = g.x4.useSetting(),
@@ -197,7 +197,7 @@ function _() {
           setting: p.s6.CHAT_THREADS_SPLIT_VIEW,
           children: (0, i.jsx)(l.j7V, {
             className: b.marginTop8,
-            value: x,
+            value: _,
             onChange: g.vF.updateSetting,
             children: f.intl.string(f.t.AInv5u)
           })
@@ -223,7 +223,7 @@ function _() {
             value: h.A2N.ALWAYS
           }],
           onChange: e => g.cC.updateSetting(e.value),
-          value: _
+          value: x
         })]
       })
     })]

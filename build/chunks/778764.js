@@ -17,8 +17,8 @@ var i = n(255367),
   h = n(365007),
   f = n(15980),
   b = n(755733),
-  _ = n(981631),
-  x = n(388032),
+  x = n(981631),
+  _ = n(388032),
   E = n(49149);
 
 function j(e) {
@@ -62,11 +62,11 @@ function O(e) {
   } = e, f = (0, c.Dt)(), [j, C] = r.useState(""), [O, S] = r.useState(!0), [v, T] = r.useState(b.x.INIT), [N, I] = r.useState(""), [y, A] = r.useState(null), P = async () => {
     let e;
     T(b.x.REGISTER);
-    let t = m.isPlatformEmbedded && p.ZP.supportsFeature(_.eRX.WEBAUTHN) ? p.ZP.webAuthnRegister(u) : s.Ue(JSON.parse(u)).then(e => JSON.stringify(e));
+    let t = m.isPlatformEmbedded && p.ZP.supportsFeature(x.eRX.WEBAUTHN) ? p.ZP.webAuthnRegister(u) : s.Ue(JSON.parse(u)).then(e => JSON.stringify(e));
     try {
       e = await t
     } catch (e) {
-      g.Z.captureException(e), A(x.intl.string(x.t.xSCvBQ)), T(b.x.INIT);
+      g.Z.captureException(e), A(_.intl.string(_.t.xSCvBQ)), T(b.x.INIT);
       return
     }
     I(e), T(b.x.NAME)
@@ -81,7 +81,7 @@ function O(e) {
       children: [(0, i.jsxs)(a.X6q, {
         id: f,
         variant: "heading-lg/semibold",
-        children: [v === b.x.INIT && x.intl.string(x.t.vrOCCg), v === b.x.REGISTER && x.intl.string(x.t.wePEBA), v === b.x.NAME && x.intl.string(x.t["cY/IOj"])]
+        children: [v === b.x.INIT && _.intl.string(_.t.vrOCCg), v === b.x.REGISTER && _.intl.string(_.t.wePEBA), v === b.x.NAME && _.intl.string(_.t["cY/IOj"])]
       }), (0, i.jsx)(a.olH, {
         onClick: l,
         className: E.modalCloseButton
@@ -108,13 +108,13 @@ function O(e) {
           }), (0, i.jsx)("div", {
             children: (0, i.jsx)(a.Text, {
               variant: "text-md/normal",
-              children: x.intl.string(x.t.Lh5vTU)
+              children: _.intl.string(_.t.Lh5vTU)
             })
           })]
         }), (0, i.jsx)(a.mzw, {
           children: (0, i.jsx)(a.zxk, {
             onClick: P,
-            children: x.intl.string(x.t.oibaQU)
+            children: _.intl.string(_.t.oibaQU)
           })
         })]
       }), (0, i.jsxs)(a.Mi4, {
@@ -130,7 +130,7 @@ function O(e) {
           }), (0, i.jsx)("div", {
             children: (0, i.jsx)(a.Text, {
               variant: "text-md/normal",
-              children: x.intl.string(x.t.aVMiX1)
+              children: _.intl.string(_.t.aVMiX1)
             })
           })]
         }), (0, i.jsx)(a.mzw, {
@@ -145,7 +145,7 @@ function O(e) {
             e.preventDefault(), (0, h.Sr)(j, o, N).then(async () => {
               await (0, d.Yn)(!1)
             }).then(() => l()).catch(() => {
-              A(x.intl.string(x.t.fEptJC)), T(b.x.INIT)
+              A(_.intl.string(_.t.fEptJC)), T(b.x.INIT)
             })
           },
           children: [(0, i.jsxs)(a.hzk, {
@@ -159,7 +159,7 @@ function O(e) {
             }), (0, i.jsxs)("div", {
               children: [(0, i.jsx)(a.Text, {
                 variant: "text-md/normal",
-                children: x.intl.string(x.t["Jzd+z8"])
+                children: _.intl.string(_.t["Jzd+z8"])
               }), (0, i.jsx)(a.oil, {
                 className: E.input,
                 value: j,
@@ -175,14 +175,14 @@ function O(e) {
             children: [(0, i.jsx)(a.zxk, {
               type: "submit",
               disabled: O,
-              children: x.intl.string(x.t["5dyZ1d"])
+              children: _.intl.string(_.t["5dyZ1d"])
             }), (0, i.jsx)(a.zxk, {
               look: a.zxk.Looks.LINK,
               color: a.zxk.Colors.PRIMARY,
               onClick: () => {
                 T(b.x.INIT)
               },
-              children: x.intl.string(x.t["13/7kZ"])
+              children: _.intl.string(_.t["13/7kZ"])
             })]
           })]
         })
@@ -199,11 +199,11 @@ function S(e) {
   return (0, i.jsxs)(a.v2r, {
     navId: "webauthn-credential-actions",
     onClose: o.Zy,
-    "aria-label": x.intl.string(x.t["+nrTbG"]),
+    "aria-label": _.intl.string(_.t["+nrTbG"]),
     onSelect: t,
     children: [(0, i.jsx)(a.sNh, {
       id: "webauthn-edit-credential-".concat(r.id),
-      label: x.intl.string(x.t.bt75u7),
+      label: _.intl.string(_.t.bt75u7),
       action: () => {
         (0, a.ZDy)(async () => {
           let {
@@ -216,7 +216,7 @@ function S(e) {
       }
     }), (0, i.jsx)(a.sNh, {
       id: "webauthn-delete-credential-".concat(r.id),
-      label: x.intl.string(x.t["+xgS+P"]),
+      label: _.intl.string(_.t["+xgS+P"]),
       color: "danger",
       action: () => {
         (0, h.cT)(r)
@@ -238,12 +238,12 @@ function v() {
   }, [t]);
   let [n, s] = r.useState(!1);
   return (0, i.jsxs)(a.hjN, {
-    title: x.intl.string(x.t.y7SXYW),
+    title: _.intl.string(_.t.y7SXYW),
     className: E.settings,
     children: [(0, i.jsx)(a.R94, {
       type: a.R94.Types.DESCRIPTION,
       className: E.description,
-      children: x.intl.string(x.t.TMukAA)
+      children: _.intl.string(_.t.TMukAA)
     }), e.length > 0 && (0, i.jsx)("div", {
       className: E.credentialList,
       children: e.map(e => (0, i.jsxs)("div", {
@@ -260,7 +260,7 @@ function v() {
               credential: e
             })))
           },
-          "aria-label": x.intl.string(x.t["+nrTbG"]),
+          "aria-label": _.intl.string(_.t["+nrTbG"]),
           innerClassName: E.credentialOptions,
           children: (0, i.jsx)(a.Huf, {
             size: "md",
@@ -283,7 +283,7 @@ function v() {
               challenge: n
             })))
           }).catch(e => {
-            e.message !== x.intl.string(x.t.N2yb9f) && g.Z.captureException(e)
+            e.message !== _.intl.string(_.t.N2yb9f) && g.Z.captureException(e)
           }).finally(() => {
             s(!1)
           })
@@ -291,7 +291,7 @@ function v() {
         submitting: n,
         disabled: !u.Ae,
         size: a.zxk.Sizes.SMALL,
-        children: x.intl.string(x.t.vrOCCg)
+        children: _.intl.string(_.t.vrOCCg)
       })
     })]
   })

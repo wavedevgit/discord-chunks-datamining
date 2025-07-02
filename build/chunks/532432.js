@@ -17,8 +17,8 @@ var i = n(255367),
   h = n(486324),
   f = n(485696),
   b = n(388032),
-  _ = n(24085);
-let x = [{
+  x = n(24085);
+let _ = [{
   name: "gif",
   extensions: ["gif"]
 }];
@@ -46,7 +46,7 @@ function E(e) {
     D(p.L.TAKE_ACTION), (0, m.$r)({
       uploadType: h.pC.AVATAR,
       analyticsSource: I,
-      filters: v ? x : void 0,
+      filters: v ? _ : void 0,
       guildId: C,
       isTryItOutFlow: v
     })
@@ -56,7 +56,7 @@ function E(e) {
     title: E,
     titleIcon: Z ? (0, i.jsx)(o.IGR, {
       text: b.intl.string(b.t.y2b7CA),
-      className: _.newBadge
+      className: x.newBadge
     }) : void 0,
     description: A ? b.intl.format(b.t.U4tZfX, {
       recentAvatarsLimit: f.iZ,
@@ -66,16 +66,16 @@ function E(e) {
     disabled: S,
     forcedDivider: T,
     children: (0, i.jsxs)("div", {
-      className: _.buttonsContainer,
+      className: x.buttonsContainer,
       children: [(0, i.jsx)(y, {
         className: l()({
-          [_.buttonHighlighted]: N
+          [x.buttonHighlighted]: N
         }),
         size: o.zxk.Sizes.SMALL,
         onClick: w,
         children: null != j ? j : b.intl.string(b.t["4OynCA"])
       }), t && (0, i.jsx)(o.zxk, {
-        className: _.removeButton,
+        className: x.removeButton,
         color: o.zxk.Colors.PRIMARY,
         look: o.zxk.Looks.LINK,
         size: o.zxk.Sizes.SMALL,

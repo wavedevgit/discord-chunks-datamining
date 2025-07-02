@@ -17,8 +17,8 @@ var i = n(255367),
   h = n(374649),
   f = n(431369),
   b = n(811334),
-  _ = n(55610),
-  x = n(311821),
+  x = n(55610),
+  _ = n(311821),
   E = n(42818),
   j = n(314884),
   C = n(509545),
@@ -64,7 +64,7 @@ function R(e) {
         className: P.cancelImage
       }), (0, i.jsx)("div", {
         children: a
-      }), (0, i.jsx)(_.Z, {
+      }), (0, i.jsx)(x.Z, {
         fromBoostCancelModal: !0
       })]
     }), t.isPurchasedExternally ? null : (0, i.jsxs)(o.mzw, {
@@ -103,7 +103,7 @@ function Z(e) {
     guildBoostSlotId: c,
     fractionalPremiumInfo: d,
     onBack: g,
-    onNext: _,
+    onNext: x,
     onClose: j
   } = e, [O, S] = r.useState(!1), [y, R] = r.useState(null), [Z, w] = r.useMemo(() => {
     try {
@@ -208,13 +208,13 @@ function Z(e) {
         disabled: O,
         onClick: async () => {
           try {
-            S(!0), R(null), await D(l, Z, M, c), _()
+            S(!0), R(null), await D(l, Z, M, c), x()
           } catch (e) {
             R(A.intl.string(A.t["5mlOCQ"])), S(!1)
           }
         },
         children: A.intl.string(A.t["/AS/gI"])
-      }), (0, i.jsx)(x.Z, {
+      }), (0, i.jsx)(_.Z, {
         onClick: g
       })]
     })]

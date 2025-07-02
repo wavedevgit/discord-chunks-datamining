@@ -17,13 +17,13 @@ var i = n(255367),
   h = n(853872),
   f = n(78839),
   b = n(783739),
-  _ = n(981631),
-  x = n(117527);
+  x = n(981631),
+  _ = n(117527);
 
 function E() {
   r.useEffect(() => {
     c.Z.wait(() => {
-      d.jg(), d.tZ(), (0, u.X8)(), (0, m.Y2)(null, null, _.JjL.DISCOVERY), (0, u.tH)(!0)
+      d.jg(), d.tZ(), (0, u.X8)(), (0, m.Y2)(null, null, x.JjL.DISCOVERY), (0, u.tH)(!0)
     })
   }, []);
   let {
@@ -34,17 +34,17 @@ function E() {
     premiumSubscription: f.ZP.getPremiumTypeSubscription()
   })), n = (0, g.V)(), s = (0, a.e7)([h.Z], () => h.Z.hasFetchedPaymentSources), E = (0, a.e7)([p.Z], () => p.Z.isFetchingCurrentUserAppliedBoosts);
   return e && n && s && !E ? (0, i.jsxs)("div", {
-    className: x.container,
+    className: _.container,
     children: [(0, i.jsx)("div", {
-      className: x.background
+      className: _.background
     }), (0, i.jsx)("div", {
-      className: x.content,
+      className: _.content,
       children: (0, i.jsx)(b.Z, {
         premiumSubscription: t
       })
     })]
   }) : (0, i.jsx)("div", {
-    className: l()(x.container, x.loading),
+    className: l()(_.container, _.loading),
     children: (0, i.jsx)(o.$jN, {})
   })
 }

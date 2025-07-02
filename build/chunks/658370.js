@@ -22,8 +22,8 @@ let b = e => {
   let n, {
       title: r,
       titleClassName: b = "",
-      buttonClassName: _ = "",
-      subtitle: x = "",
+      buttonClassName: x = "",
+      subtitle: _ = "",
       description: E = "",
       descriptionCta: j = "",
       isPremiumGetCta: C,
@@ -53,10 +53,10 @@ let b = e => {
       title: r,
       cardVariantStyleInfo: A,
       titleClassName: b,
-      subtitle: x,
+      subtitle: _,
       description: E
     }), C && (0, i.jsx)(u.Z, {
-      className: _,
+      className: x,
       look: l.zxk.Looks.BLANK,
       color: l.zxk.Colors.CUSTOM,
       subscriptionTier: p.Si.TIER_2,
@@ -65,7 +65,7 @@ let b = e => {
       },
       showGradient: !0
     }), 0 !== j.length && (null == (n = null == A ? void 0 : A.descriptionCta) ? void 0 : n.hideOnHoverComponent) !== !0 && null != O && (0, i.jsx)(l.zxk, {
-      className: _,
+      className: x,
       onClick: O,
       children: j
     })]

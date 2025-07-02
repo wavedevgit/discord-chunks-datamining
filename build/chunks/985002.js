@@ -12,7 +12,7 @@ function o(e) {
   let {
     onError: t,
     onSuccess: n
-  } = null != e ? e : {}, [o, c] = i.useState(!1), [d, u] = i.useState(!1), [m, g] = i.useState(!1), [p, h] = i.useState(!1), [f, b] = i.useState(!1), [_, x] = i.useState(!1), [E, j] = i.useState(!1), [C, O] = i.useState(!1), S = o || d || m || p || _ || C, v = i.useCallback(async e => {
+  } = null != e ? e : {}, [o, c] = i.useState(!1), [d, u] = i.useState(!1), [m, g] = i.useState(!1), [p, h] = i.useState(!1), [f, b] = i.useState(!1), [x, _] = i.useState(!1), [E, j] = i.useState(!1), [C, O] = i.useState(!1), S = o || d || m || p || x || C, v = i.useCallback(async e => {
     if (!S) {
       c(!0);
       try {
@@ -93,18 +93,18 @@ function o(e) {
     selectTeenUser: A,
     getLinkCode: y,
     requestLink: i.useCallback(async (e, i) => {
-      if (!_) {
-        x(!0);
+      if (!x) {
+        _(!0);
         try {
           await s.ZP.requestLink(e, i), null == n || n()
         } catch (n) {
           let e = new r.Hx(n);
           null == t || t(e)
         } finally {
-          x(!1)
+          _(!1)
         }
       }
-    }, [_, t, n]),
+    }, [x, t, n]),
     loadMore: i.useCallback(async e => {
       let n = l.Z.getActionsForDisplayType(e),
         i = n[n.length - 1],
@@ -128,7 +128,7 @@ function o(e) {
     isCancelLoading: p,
     isGetLinkCodeLoading: f,
     isSelectTeenUserLoading: E,
-    isRequestingLink: _,
+    isRequestingLink: x,
     isMoreLoading: C
   }
 }

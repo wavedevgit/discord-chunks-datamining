@@ -1,6 +1,6 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => _
+  Z: () => x
 }), n(388685);
 var i = n(255367);
 n(73800);
@@ -27,13 +27,13 @@ function b(e, t) {
     withCurrentVoiceChannel: !0
   }).map(e => e.id)]
 }
-let _ = s().throttle(function(e, t) {
+let x = s().throttle(function(e, t) {
   var r, s;
   let a, {
       channelPredicate: m = () => !0,
       guildPredicate: f = () => !0,
-      guildFeaturePredicate: _ = () => !1,
-      ensureChatIsVisible: x = () => !1,
+      guildFeaturePredicate: x = () => !1,
+      ensureChatIsVisible: _ = () => !1,
       withVoiceChannels: E = !1
     } = t,
     j = null != (r = o.Z.getState().guildId) ? r : h.ME,
@@ -50,8 +50,8 @@ let _ = s().throttle(function(e, t) {
     if (a = v[T], f(j))
       for (; null != a && "" !== a;) {
         if ("string" == typeof a) {
-          if (m(j, a)) return (0, p.K)(j, a, !1, x(j, a))
-        } else if ("object" == typeof a && _(a.resourceId, a.type)) return j !== d.Z.getGuildId() && (0, p.K)(j, null == (s = c.ZP.getDefaultChannel(j)) ? void 0 : s.id), (0, l.ZDy)(async () => {
+          if (m(j, a)) return (0, p.K)(j, a, !1, _(j, a))
+        } else if ("object" == typeof a && x(a.resourceId, a.type)) return j !== d.Z.getGuildId() && (0, p.K)(j, null == (s = c.ZP.getDefaultChannel(j)) ? void 0 : s.id), (0, l.ZDy)(async () => {
           let {
             default: e
           } = await Promise.all([n.e("42743"), n.e("22347"), n.e("56236"), n.e("7549")]).then(n.bind(n, 17671));

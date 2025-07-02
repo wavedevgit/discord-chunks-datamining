@@ -1,6 +1,6 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => x
+  Z: () => _
 });
 var i = n(255367),
   r = n(73800),
@@ -18,7 +18,7 @@ var i = n(255367),
   f = n(388032),
   b = n(20493);
 
-function _(e) {
+function x(e) {
   let {
     refreshStyles: t = !1
   } = e, n = (0, a.e7)([u.Z], () => u.Z.getExperimentalEncoders());
@@ -34,7 +34,7 @@ function _(e) {
   })
 }
 
-function x(e) {
+function _(e) {
   let {
     refreshStyles: t = !1
   } = e, {
@@ -43,8 +43,8 @@ function x(e) {
   } = (0, a.cj)([u.Z], () => ({
     openH264: u.Z.getOpenH264(),
     hardwareEncoding: u.Z.getHardwareEncoding()
-  })), x = r.useRef(null);
-  (0, m.Z)(x, p.KQ.VoiceAndVideoScrollPositions.HARDWARE_ACCELERATION);
+  })), _ = r.useRef(null);
+  (0, m.Z)(_, p.KQ.VoiceAndVideoScrollPositions.HARDWARE_ACCELERATION);
   let E = r.useCallback(e => {
       e ? c.Z.setHardwareEncoding(!0) : (0, o.h7j)(e => {
         var t, n;
@@ -104,7 +104,7 @@ function x(e) {
             style: {
               scrollMarginTop: "48px"
             },
-            containerRef: x,
+            containerRef: _,
             className: t ? null : l()(b.marginTop8, b.marginBottom20),
             value: s,
             onChange: E,
@@ -116,7 +116,7 @@ function x(e) {
             children: f.intl.string(f.t["Uz6L6+"])
           })]
         })
-      }), (0, i.jsx)(_, {
+      }), (0, i.jsx)(x, {
         refreshStyles: t
       })]
     });

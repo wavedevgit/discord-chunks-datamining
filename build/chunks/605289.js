@@ -23,13 +23,13 @@ let b = function(e) {
     smallGap: n
   } = e, r = t.countryCode, b = (0, l.e7)([o.default], () => o.default.locale);
   (0, u.U)(h.jXE.SETTINGS_PREMIUM_BANNER, r);
-  let _ = (0, l.e7)([c.ZP], () => c.ZP.getPremiumTypeSubscription()),
+  let x = (0, l.e7)([c.ZP], () => c.ZP.getPremiumTypeSubscription()),
     {
-      localizedPricingBannerHeader: x,
+      localizedPricingBannerHeader: _,
       localizedPricingBannerBody: E
     } = (0, d.vB)({
       localizedPricingPromo: t,
-      subscription: _,
+      subscription: x,
       userLocale: b
     }),
     j = r.toLowerCase() + "Banner";
@@ -43,7 +43,7 @@ let b = function(e) {
     }), (0, i.jsx)(a.X6q, {
       className: f.bannerHeading,
       variant: "heading-xl/semibold",
-      children: x
+      children: _
     }), (0, i.jsx)("div", {
       className: f.textContainer,
       children: (0, i.jsx)(a.Text, {

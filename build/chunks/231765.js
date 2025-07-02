@@ -17,8 +17,8 @@ var i = n(255367),
   h = n(955204),
   f = n(64078),
   b = n(351780),
-  _ = n(954794),
-  x = n(112843),
+  x = n(954794),
+  _ = n(112843),
   E = n(524484),
   j = n(981631),
   C = n(388032),
@@ -416,7 +416,7 @@ function G(e) {
   } = e, s = (0, l.cj)([b.Z], () => b.Z.getState()), [a, c] = r.useState({
     x: 0,
     y: 0
-  }), d = (0, x.Z)();
+  }), d = (0, _.Z)();
 
   function u(e, t, n, i) {
     return (null != t ? t : e) && (null != i ? i : n)
@@ -445,13 +445,13 @@ function G(e) {
         })
       }
     },
-    _ = e => {
+    x = e => {
       c({
         x: e.clientX,
         y: e.clientY
       })
     };
-  return r.useEffect(() => (window.addEventListener("mousemove", _), () => window.removeEventListener("mousemove", _)), []), (0, i.jsxs)(i.Fragment, {
+  return r.useEffect(() => (window.addEventListener("mousemove", x), () => window.removeEventListener("mousemove", x)), []), (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(o.X6q, {
       variant: "heading-lg/semibold",
       className: O.title,
@@ -486,7 +486,7 @@ let F = (e, t, n) => {
           setShowEnableAnimation: n
         });
       case 1:
-        return (0, i.jsx)(_.Z, {
+        return (0, i.jsx)(x.Z, {
           onBackClick: r(0)
         });
       default:

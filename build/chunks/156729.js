@@ -16,8 +16,8 @@ var i, r = n(255367),
   h = n(351402),
   f = n(823379),
   b = n(464179),
-  _ = n(211667),
-  x = n(244526),
+  x = n(211667),
+  _ = n(244526),
   E = n(388032),
   j = n(257646);
 
@@ -109,7 +109,7 @@ class T extends(i = s.PureComponent) {
         className: j.sectionHeader,
         variant: "text-sm/normal",
         children: E.intl.string(E.t.Fo2YPz)
-      }), (0, r.jsx)(_.Z, {
+      }), (0, r.jsx)(x.Z, {
         expirationDate: n,
         onCardInfoChange: this.handleExpirationDateUpdate,
         error: this.props.updateError
@@ -187,7 +187,7 @@ class T extends(i = s.PureComponent) {
         noValidate: !0,
         children: [this.renderError(), (0, r.jsxs)("div", {
           className: j.__invalid_paymentSection,
-          children: [(0, r.jsx)(x.Z, {
+          children: [(0, r.jsx)(_.Z, {
             paymentSource: e,
             isDefault: t,
             isForSubscription: s,

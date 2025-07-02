@@ -19,8 +19,8 @@ function g(e) {
     transitionState: h,
     onSuccess: f,
     onClose: b,
-    requirementsUpdated: _,
-    noSkip: x = !1
+    requirementsUpdated: x,
+    noSkip: _ = !1
   } = e, [E, j] = r.useState(""), [C, O] = r.useState(""), [S, v] = r.useState(""), [T, N] = r.useState(null), [I, y] = r.useState(null), A = (0, s.e7)([o.Z], () => o.Z.getErrors()), P = (0, s.e7)([o.Z], () => o.Z.getFormState()), R = r.useRef(null);
   async function D(e) {
     e.preventDefault(), (0, a.b9)();
@@ -56,8 +56,8 @@ function g(e) {
         color: "header-secondary",
         variant: "text-md/normal",
         className: m.subtitle,
-        children: _ ? u.intl.string(u.t["37iHbW"]) : u.intl.string(u.t.iOurYm)
-      }), !0 !== x && (0, i.jsx)(l.olH, {
+        children: x ? u.intl.string(u.t["37iHbW"]) : u.intl.string(u.t.iOurYm)
+      }), !0 !== _ && (0, i.jsx)(l.olH, {
         onClick: b,
         className: m.modalCloseButton
       })]
@@ -100,7 +100,7 @@ function g(e) {
           size: l.zxk.Sizes.MEDIUM,
           submitting: P === d.QZA.SUBMITTING,
           children: u.intl.string(u.t.i4jeWV)
-        }), !0 !== x && (0, i.jsx)(l.zxk, {
+        }), !0 !== _ && (0, i.jsx)(l.zxk, {
           className: m.cancel,
           look: l.zxk.Looks.LINK,
           color: l.zxk.Colors.PRIMARY,

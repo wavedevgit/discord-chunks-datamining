@@ -24,8 +24,8 @@ function b(e) {
     className: s
   } = e, {
     applicationId: b,
-    benefits: _,
-    description: x
+    benefits: x,
+    description: _
   } = n, E = r.useMemo(() => null == n.thumbnail ? null : (0, p.q)(b, n.thumbnail, 256), [b, n.thumbnail]), {
     data: j
   } = (0, d.X)(n.skuId), C = r.useMemo(() => {
@@ -54,15 +54,15 @@ function b(e) {
         })]
       }), t]
     }),
-    children: [!(0, g.Ew)(x) && (0, i.jsx)("div", {
+    children: [!(0, g.Ew)(_) && (0, i.jsx)("div", {
       className: f.description,
       children: (0, i.jsx)(h.Z, {
         variant: "text-sm/medium",
-        children: x
+        children: _
       })
-    }), null != _ && _.length > 0 && (0, i.jsx)("div", {
+    }), null != x && x.length > 0 && (0, i.jsx)("div", {
       className: f.benefits,
-      children: _.map(e => {
+      children: x.map(e => {
         let {
           id: t,
           name: n,

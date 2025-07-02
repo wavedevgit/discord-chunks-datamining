@@ -22,16 +22,16 @@ let h = () => {
     popoutAsset: h,
     title: f,
     body: b,
-    version: _,
-    revertTextColor: x
+    version: x,
+    revertTextColor: _
   } = (0, d.W)();
   return r.useEffect(() => {
     o.default.track(u.rMx.PREMIUM_UPSELL_VIEWED, {
       type: m.cd.COLLECTIBLES_PROFILE_SETTINGS_UPSELL,
       location_stack: e,
-      version: _
+      version: x
     })
-  }, [e, _]), (0, i.jsxs)("div", {
+  }, [e, x]), (0, i.jsxs)("div", {
     ref: t,
     className: p.container,
     style: {
@@ -50,12 +50,12 @@ let h = () => {
       className: p.mainColumn,
       children: [(0, i.jsx)(s.X6q, {
         variant: "heading-lg/extrabold",
-        color: x ? "redesign-button-overlay-text" : "currentColor",
+        color: _ ? "redesign-button-overlay-text" : "currentColor",
         className: p.title,
         children: f
       }), (0, i.jsx)(s.Text, {
         variant: "text-sm/normal",
-        color: x ? "redesign-button-overlay-text" : "currentColor",
+        color: _ ? "redesign-button-overlay-text" : "currentColor",
         children: b
       })]
     }), (0, i.jsx)(s.zxk, {
