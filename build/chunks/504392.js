@@ -1,6 +1,6 @@
 /** Chunk was on 44799 **/
 t.d(n, {
-  Z: () => N
+  Z: () => Z
 }), t(953529);
 var r = t(255367),
   i = t(73800),
@@ -11,8 +11,8 @@ var r = t(255367),
   c = t(984370),
   d = t(713081),
   u = t(905128),
-  p = t(639777),
-  m = t(27237),
+  m = t(639777),
+  p = t(27237),
   _ = t(51859),
   f = t(184478),
   x = t(877362),
@@ -23,9 +23,9 @@ var r = t(255367),
   j = t(93841),
   C = t(388032),
   E = t(782285);
-let Z = [h.Us.LEVEL, h.Us.PERK];
+let N = [h.Us.LEVEL, h.Us.PERK];
 
-function N(e) {
+function Z(e) {
   let {
     guildId: n,
     powerupSkuId: t
@@ -34,13 +34,13 @@ function N(e) {
     (0, d.Sn)(n), (0, d.Fm)(n)
   }, [n]), (0, g.Wj)(n);
   let o = (0, s.e7)([u.Z], () => u.Z.getStateForGuild(n)),
-    N = (0, p.Z)(n),
-    I = i.useRef(!1);
+    Z = (0, m.Z)(n),
+    O = i.useRef(!1);
   return (i.useEffect(() => {
     var e;
     if (null == t) return;
     let r = null == o || null == (e = o.allPowerups) ? void 0 : e[t];
-    null == r || I.current || ((0, v.KE)(n, r), I.current = !0)
+    null == r || O.current || ((0, v.KE)(n, r), O.current = !0)
   }, [n, t, null == o ? void 0 : o.allPowerups]), (null == o ? void 0 : o.powerupCatalog) == null) ? null : (0, r.jsxs)("div", {
     className: E.container,
     children: [(0, r.jsxs)(c.Z, {
@@ -57,7 +57,7 @@ function N(e) {
       className: E.contentContainer,
       children: [(0, r.jsx)(l.zJl, {
         className: E.powerupsContainer,
-        children: Z.map(e => {
+        children: N.map(e => {
           let t = o.powerupCatalog[e];
           if (null == t) return;
           let {
@@ -97,7 +97,7 @@ function N(e) {
               children: t.map((e, i) => {
                 switch (e.type) {
                   case h.Us.LEVEL:
-                    return (0, r.jsx)(m.ZP, {
+                    return (0, r.jsx)(p.ZP, {
                       guildId: n,
                       index: i,
                       powerup: e,
@@ -115,7 +115,7 @@ function N(e) {
         })
       }), (0, r.jsxs)("div", {
         className: E.sidebarContainer,
-        children: [N ? (0, r.jsx)(f.Z, {
+        children: [Z ? (0, r.jsx)(f.Z, {
           guildId: n
         }) : (0, r.jsx)(x.Z, {
           guildId: n

@@ -12,8 +12,8 @@ var i = t(793030),
   c = t(709054),
   d = t(884902),
   u = t(93841),
-  p = t(388032),
-  m = t(326319);
+  m = t(388032),
+  p = t(326319);
 
 function _(e) {
   let {
@@ -32,22 +32,22 @@ function _(e) {
     }
   }, [n]), b = (0, d.X7)(n.guildId, n.userId, x);
   return (0, r.jsx)(s.Z, {
-    className: m.systemMessageContainer,
-    contentClassName: m.systemMessageContent,
+    className: p.systemMessageContainer,
+    contentClassName: p.systemMessageContent,
     iconNode: (0, r.jsx)(a.$Eu, {
-      className: m.icon,
+      className: p.icon,
       color: "currentColor",
       size: "sm"
     }),
-    iconContainerClassName: m.iconContainer,
-    timestampClassName: m.timestamp,
+    iconContainerClassName: p.iconContainer,
+    timestampClassName: p.timestamp,
     timestamp: t,
     timestampFormat: "L",
     compact: !0,
     children: (0, r.jsxs)("span", {
-      className: m.boostMessage,
+      className: p.boostMessage,
       children: [(0, r.jsx)(a.PUh, {
-        className: m.boostMessageUser,
+        className: p.boostMessageUser,
         variant: "text-md/semibold",
         name: _,
         color: null != f ? f : void 0,
@@ -55,7 +55,7 @@ function _(e) {
       }), (0, r.jsx)(i.xv, {
         variant: "text-md/medium",
         lineClamp: 1,
-        children: p.intl.string(u.default.plwH8f)
+        children: m.intl.string(u.default.plwH8f)
       })]
     })
   })
