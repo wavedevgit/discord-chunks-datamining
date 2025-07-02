@@ -1,6 +1,6 @@
 /**
   Module ID: 56535
-  Original File Name: 32dd6951f30d3a3c
+  Original File Name: 3d2db89844a70bd5
 **/
 .emojiErrorItem__67954 {
     align-items: center;
@@ -432,9 +432,9 @@
 .aside__4d307 label {
     color: var(--text-secondary);
     display: block;
-    font-size: .875rem;
+    font-size: 14px;
     font-weight: 600;
-    line-height: 1.125rem;
+    line-height: 18px;
     padding-bottom: 8px
 }
 
@@ -514,7 +514,7 @@
 
 .heading__4d307 {
     font-weight: 500;
-    line-height: 2rem;
+    line-height: 32px;
     padding: 24px 240px 0 24px;
     position: absolute;
     text-align: center;
@@ -610,4 +610,4 @@
     width: 32px
 }
 
-/*# sourceMappingURL=32dd6951f30d3a3c.css.map*/
+/*# sourceMappingURL=3d2db89844a70bd5.css.map*/
