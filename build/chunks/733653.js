@@ -26,7 +26,9 @@ function m(e) {
       return (0, r.jsx)(o.Z, {
         title: t.title,
         href: t.url,
-        children: l
+        children: (0, r.jsx)("span", {
+          children: l
+        })
       });
     case "mention":
       switch (t.type) {

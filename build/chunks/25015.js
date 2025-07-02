@@ -30,14 +30,16 @@ function h(e, t) {
     allowDevLinks: C = !1,
     previewLinkTarget: w = !1,
     viewingChannelId: S
-  } = t, N = (0, i.p)(), E = o.d.useExperiment({
+  } = t, E = (0, i.p)(), N = o.d.useExperiment({
     location: "useMessageRenderedContent"
   }).enabled, Z = (0, p.o)({
     location: "useMessageRenderedContent"
   }), [R, T] = l.useState(!1), _ = l.useCallback(e => {
     e && T(!0)
   }, []);
-  return l.useMemo(() => {
+  return l.useEffect(() => {
+    T(!1)
+  }, [e.content]), l.useMemo(() => {
     if (null != e.customRenderedContent) return e.customRenderedContent;
     if (e.isUnsupported) return {
       content: g.intl.string(g.t.sWi5ER),
@@ -80,9 +82,9 @@ function h(e, t) {
       allowLinks: x,
       allowDevLinks: C,
       previewLinkTarget: w,
-      shouldFilterKeywords: N,
+      shouldFilterKeywords: E,
       viewingChannelId: S,
-      allowGameMentions: E
+      allowGameMentions: N
     })
-  }, [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, h, O, y, v, j, P, x, w, N, C, S, Z.enabled, E, R])
+  }, [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, h, O, y, v, j, P, x, w, E, C, S, Z.enabled, N, R])
 }
