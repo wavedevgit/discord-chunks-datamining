@@ -1,6 +1,6 @@
 /** Chunk was on 70675 **/
 t.d(n, {
-  Z: () => j
+  Z: () => h
 });
 var l = t(255367),
   i = t(73800),
@@ -15,10 +15,9 @@ var l = t(255367),
   Z = t(430824),
   b = t(496675),
   f = t(594174),
-  p = t(981631),
-  O = t(388032);
+  p = t(388032);
 
-function m(e) {
+function O(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
       l = Object.keys(t);
@@ -37,7 +36,7 @@ function m(e) {
   return e
 }
 
-function h(e, n) {
+function m(e, n) {
   return n = null != n ? n : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, n) {
     var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,33 +49,30 @@ function h(e, n) {
   }), e
 }
 
-function j(e, n, j) {
-  let P = i.useMemo(() => ({
+function h(e, n, h) {
+  let j = i.useMemo(() => ({
     [n]: [e.id]
   }), [n, e.id]);
-  (0, o.$)(P), (0, r.e7)([b.Z], () => b.Z.getGuildVersion(n), [n]);
-  let x = (0, r.e7)([g.Z], () => g.Z.getChannel(j)),
+  (0, o.$)(j), (0, r.e7)([b.Z], () => b.Z.getGuildVersion(n), [n]);
+  let P = (0, r.e7)([g.Z], () => g.Z.getChannel(h)),
     v = (0, r.e7)([Z.Z], () => Z.Z.getGuild(n), [n]),
-    _ = (0, r.e7)([f.default], () => f.default.getCurrentUser()),
-    y = (0, u.Z)(x, "Context Menu"),
-    N = (0, d.Xb)(x);
-  if ((null == _ ? void 0 : _.id) === e.id) return [y];
-  if (null == v || null == x || null == _) return [];
-  let E = N || x.ownerId === _.id && x.type === p.d4z.PRIVATE_THREAD;
-  return [E ? (0, l.jsx)(a.sNh, {
+    x = (0, r.e7)([f.default], () => f.default.getCurrentUser()),
+    _ = (0, u.Z)(P, "Context Menu"),
+    y = (0, d.yw)(null == P ? void 0 : P.id);
+  return (null == x ? void 0 : x.id) === e.id ? [_] : null == v || null == P || null == x ? [] : [y ? (0, l.jsx)(a.sNh, {
     id: "remove",
-    label: x.isForumPost() ? O.intl.formatToPlainString(O.t.v2KNNz, {
+    label: P.isForumPost() ? p.intl.formatToPlainString(p.t.v2KNNz, {
       user: e.username
-    }) : O.intl.formatToPlainString(O.t["27xWaW"], {
+    }) : p.intl.formatToPlainString(p.t["27xWaW"], {
       user: e.username
     }),
     color: "danger",
-    action: () => c.Z.removeMember(x, e.id, "Context Menu")
+    action: () => c.Z.removeMember(P.id, e.id, "Context Menu")
   }) : null, (0, s.BK)(e, v) ? (0, l.jsx)(a.sNh, {
     id: "kick",
-    label: E ? O.intl.formatToPlainString(O.t["1Ie87u"], {
+    label: y ? p.intl.formatToPlainString(p.t["1Ie87u"], {
       user: e.username
-    }) : O.intl.formatToPlainString(O.t["9l/iTU"], {
+    }) : p.intl.formatToPlainString(p.t["9l/iTU"], {
       user: e.username
     }),
     color: "danger",
@@ -84,16 +80,16 @@ function j(e, n, j) {
       let {
         default: n
       } = await t.e("5454").then(t.bind(t, 854360));
-      return t => (0, l.jsx)(n, h(m({}, t), {
+      return t => (0, l.jsx)(n, m(O({}, t), {
         guildId: v.id,
         user: e
       }))
     })
   }) : null, (0, s.mm)(e, v) ? (0, l.jsx)(a.sNh, {
     id: "ban",
-    label: E ? O.intl.formatToPlainString(O.t.i62APT, {
+    label: y ? p.intl.formatToPlainString(p.t.i62APT, {
       user: e.username
-    }) : O.intl.formatToPlainString(O.t.WnpUBg, {
+    }) : p.intl.formatToPlainString(p.t.WnpUBg, {
       user: e.username
     }),
     color: "danger",
@@ -101,7 +97,7 @@ function j(e, n, j) {
       let {
         default: n
       } = await t.e("43350").then(t.bind(t, 98746));
-      return t => (0, l.jsx)(n, h(m({}, t), {
+      return t => (0, l.jsx)(n, m(O({}, t), {
         guildId: v.id,
         user: e
       }))

@@ -4,20 +4,21 @@ n.d(t, {
   $R: () => w,
   C7: () => A,
   Ek: () => I,
-  Gu: () => U,
+  Gu: () => G,
   JQ: () => S,
   NE: () => E,
   RG: () => D,
   Xb: () => k,
   Xu: () => y,
-  Y: () => j,
+  Y: () => U,
   cD: () => O,
   ki: () => b,
   kn: () => P,
   tM: () => g,
   tc: () => R,
-  xl: () => L
-});
+  xl: () => L,
+  yw: () => j
+}), n(388685);
 var r = n(392711),
   i = n.n(r),
   a = n(149765),
@@ -148,14 +149,25 @@ function x(e, t) {
 }
 
 function k(e) {
-  return (0, o.e7)([_.Z], () => x(e, _.Z))
+  return (0, o.e7)([_.Z], () => M(e, [_.Z]))
 }
 
 function M(e) {
-  return x(e, _.Z)
+  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [_.Z],
+    [n] = t;
+  return x(e, n)
 }
 
 function j(e) {
+  return (0, o.e7)([f.Z, _.Z, d.default], () => {
+    let t = f.Z.getChannel(e);
+    if (null == t) return !1;
+    let n = d.default.getId();
+    return t.type === m.d4z.PRIVATE_THREAD && t.ownerId === n || M(t, [_.Z])
+  })
+}
+
+function U(e) {
   let t = (0, l.Z)(),
     n = (0, o.e7)([_.Z], () => _.Z.can(m.Plq.CONNECT, e)),
     r = w(e),
@@ -168,7 +180,7 @@ function j(e) {
   return !t && e.isVocalThread() && i && n && r
 }
 
-function U(e) {
+function G(e) {
   let t = k(e);
   return e.isLockedThread() && !t
 }
