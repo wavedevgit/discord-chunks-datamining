@@ -37,12 +37,12 @@ function v(e) {
     specMap: h,
     categoryTitle: O,
     userId: N
-  } = e, C = (0, u.e7)([f.Z], () => f.Z.getRoles(g.id)), v = R.Plq[o], D = null != (i = null == (t = h[v.toString()]) ? void 0 : t.title) ? i : (0, m.wt)(v), x = null != (a = null == (n = h[v.toString()]) ? void 0 : n.description) ? a : "", M = p._o.has(v), L = p.Qn.includes(o), U = T.length, j = (0, u.e7)([I.Z], () => I.Z.can(R.Plq.MANAGE_ROLES, g), [g]), P = l.useCallback(async e => {
+  } = e, C = (0, u.e7)([f.Z], () => f.Z.getRoles(g.id)), v = R.Plq[o], D = null != (i = null == (t = h[v.toString()]) ? void 0 : t.title) ? i : (0, m.wt)(v), x = null != (a = null == (n = h[v.toString()]) ? void 0 : n.description) ? a : "", L = p._o.has(v), M = p.Qn.includes(o), U = T.length, j = (0, u.e7)([I.Z], () => I.Z.can(R.Plq.MANAGE_ROLES, g), [g]), P = l.useCallback(async e => {
     j && (await A.Z.open(g.id, R.pNK.ROLES), await A.Z.selectRole(e))
   }, [j, g.id]);
   return (0, r.jsxs)("div", {
     className: s()(b.permissionItemContainer, {
-      [b.elevatedPermission]: M
+      [b.elevatedPermission]: L
     }),
     children: [(0, r.jsxs)("div", {
       className: b.permissionItemHeader,
@@ -58,7 +58,7 @@ function v(e) {
             variant: "text-xs/normal",
             color: "header-muted",
             children: O
-          }), M && (0, r.jsxs)(r.Fragment, {
+          }), L && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(E.Z, {
               height: 4,
               width: 4,
@@ -110,7 +110,7 @@ function v(e) {
                 }), t))
               }
             })]
-          }), !M && L && (0, r.jsxs)(r.Fragment, {
+          }), !L && M && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(E.Z, {
               height: 4,
               width: 4,
@@ -178,7 +178,7 @@ function x(e) {
     location: i,
     className: a,
     onNavigate: d
-  } = e, E = (0, u.e7)([h.default], () => h.default.getUser(t), [t]), _ = (0, u.e7)([g.Z], () => g.Z.getGuild(n), [n]), A = (0, u.e7)([T.ZP], () => T.ZP.getMember(n, t), [n, t]), f = (0, p.B2)(t, n, p.pd), I = Object.keys(f).length, x = l.useMemo(() => null != _ ? O.Z.getGuildPermissionSpecMap(_) : null, [_]), M = l.useMemo(() => null != _ ? O.Z.generateGuildPermissionSpec(_) : null, [_]), [L, U] = l.useState(""), [j, P] = l.useState(""), y = l.useMemo(() => o()(P, 300), []), w = l.useCallback(e => {
+  } = e, E = (0, u.e7)([h.default], () => h.default.getUser(t), [t]), _ = (0, u.e7)([g.Z], () => g.Z.getGuild(n), [n]), A = (0, u.e7)([T.ZP], () => T.ZP.getMember(n, t), [n, t]), f = (0, p.B2)(t, n, p.pd), I = Object.keys(f).length, x = l.useMemo(() => null != _ ? O.Z.getGuildPermissionSpecMap(_) : null, [_]), L = l.useMemo(() => null != _ ? O.Z.generateGuildPermissionSpec(_) : null, [_]), [M, U] = l.useState(""), [j, P] = l.useState(""), y = l.useMemo(() => o()(P, 300), []), w = l.useCallback(e => {
     U(e), y(e)
   }, [y]), G = l.useCallback(() => {
     U(""), P("")
@@ -189,7 +189,7 @@ function x(e) {
       children: S.intl.string(S.t.DEBGqK)
     });
     let e = [];
-    return null == M || M.forEach(n => {
+    return null == L || L.forEach(n => {
       n.permissions.forEach(l => {
         let i = l.flag,
           s = p.pd.find(e => R.Plq[e] === i);
@@ -221,7 +221,7 @@ function x(e) {
         }
       })
     }), e
-  }, [_, x, A, I, M, f, j, t]);
+  }, [_, x, A, I, L, f, j, t]);
   return null == E || null == A ? null : (0, r.jsxs)("div", {
     className: s()(C.container, a),
     children: [(0, r.jsx)(N.Z, {
@@ -236,7 +236,7 @@ function x(e) {
           className: b.permissionsItemContainer,
           children: [(0, r.jsx)(c.E1j, {
             className: b.searchBar,
-            query: L,
+            query: M,
             placeholder: S.intl.string(S.t["yD9+dH"]),
             onChange: w,
             onClear: G,

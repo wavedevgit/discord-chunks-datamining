@@ -87,7 +87,7 @@ function d(e) {
         if (D && !g) return void x(!1);
         v(h(t, d), d)
       }, [d]);
-      let M = r.useCallback(function() {
+      let L = r.useCallback(function() {
           let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0],
             n = null != A ? A(d) : d;
           n !== d && m({
@@ -95,10 +95,10 @@ function d(e) {
             index: n
           }), e && v(h(t, n), n)
         }, [h, d, A, m, t, v]),
-        L = r.useCallback(e => {
+        M = r.useCallback(e => {
           if (!R.current) return;
           if (a.includes(e.key) && !(e.shiftKey || e.altKey || e.metaKey || e.ctrlKey) && e.currentTarget === e.target) {
-            e.preventDefault(), e.stopPropagation(), M();
+            e.preventDefault(), e.stopPropagation(), L();
             return
           }
           let n = function(e) {
@@ -133,13 +133,13 @@ function d(e) {
                 }), null != E) return void E(d);
               null == r || r.click()
           }
-        }, [h, t, m, d, M, E]),
+        }, [h, t, m, d, L, E]),
         U = r.useCallback(() => {
           S || C(!0)
         }, [S]),
         j = r.useCallback(() => {
-          S || (T ? v(h(t, d), d) : M(!0))
-        }, [h, t, v, T, S, d, M]),
+          S || (T ? v(h(t, d), d) : L(!0))
+        }, [h, t, v, T, S, d, L]),
         P = r.useCallback(e => {
           e.currentTarget.contains(e.relatedTarget) || requestAnimationFrame(() => {
             if (null == u(o(h, t, d))) return void v(t);
@@ -157,9 +157,9 @@ function d(e) {
           role: "list",
           tabIndex: S && T ? -1 : 0,
           id: t,
-          onKeyDown: L,
+          onKeyDown: M,
           ref: y
-        }), [t, S, L, T]),
+        }), [t, S, M, T]),
         G = r.useCallback(e => {
           let {
             index: n

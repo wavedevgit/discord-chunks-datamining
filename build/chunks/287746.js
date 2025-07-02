@@ -135,7 +135,7 @@ function e5(e) {
   return e
 }
 
-function e6(e, t) {
+function e4(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -148,7 +148,7 @@ function e6(e, t) {
   }), e
 }
 
-function e4(e) {
+function e6(e) {
   e.preventDefault()
 }
 let e9 = /^\+(?!\w+):?(?!:)(\w+)?:?$/;
@@ -171,11 +171,11 @@ function te(e) {
     }
     return i
   }(e, ["isSidebar"]);
-  return t ? (0, r.jsx)("section", e6(e5({}, n), {
+  return t ? (0, r.jsx)("section", e4(e5({}, n), {
     role: "complementary"
   })) : (0, r.jsx)("main", e5({}, n))
 }
-let tt = i.forwardRef((e, t) => (0, r.jsx)(tn, e6(e5({}, e), {
+let tt = i.forwardRef((e, t) => (0, r.jsx)(tn, e4(e5({}, e), {
   ref: t
 })));
 tt.displayName = "ChannelTextAreaForm";
@@ -317,7 +317,7 @@ class tn extends i.PureComponent {
   }
   constructor(...e) {
     var t;
-    super(...e), t = this, e8(this, "isFirstChange", !0), e8(this, "editorRef", null), e8(this, "state", e6(e5({}, (0, B.eK)(eZ.Z.getDraft(this.props.channel.id, eZ.d.ChannelMessage))), {
+    super(...e), t = this, e8(this, "isFirstChange", !0), e8(this, "editorRef", null), e8(this, "state", e4(e5({}, (0, B.eK)(eZ.Z.getDraft(this.props.channel.id, eZ.d.ChannelMessage))), {
       contentWarningProps: null
     })), e8(this, "draftDidChange", function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : t.props,
@@ -754,7 +754,7 @@ class tr extends i.PureComponent {
                   showAutomodUserProfileChatBlocker: j
                 })) ? t : (0, r.jsxs)("form", {
                   ref: this.inputFormRef,
-                  onSubmit: e4,
+                  onSubmit: e6,
                   className: o()(e3.form, {
                     [e3.formWithLoadedChatInput]: !F
                   }),

@@ -114,8 +114,8 @@ var r = n(255367),
   e7 = n(918559),
   e8 = n(354459),
   e5 = n(921944),
-  e6 = n(440493),
-  e4 = n(157925),
+  e4 = n(440493),
+  e6 = n(157925),
   e9 = n(388032),
   te = n(100658);
 
@@ -362,7 +362,7 @@ class tl extends i.PureComponent {
         guildId: t
       }))
     }, {
-      onCloseCallback: () => V.Z.viewPrompt(e6.r.REAL_NAME_PROMPT, t),
+      onCloseCallback: () => V.Z.viewPrompt(e4.r.REAL_NAME_PROMPT, t),
       modalKey: "Guild Hub Real Name Modal"
     }), l && (0, m.ZDy)(async () => {
       let {
@@ -837,7 +837,7 @@ let to = (0, j.Z)(tl),
     }), i.useEffect(() => {
       var e, t, n;
       let r = (0, eg.s1)();
-      if ((null == r || null == (e = r.location) ? void 0 : e.state) === e4.Df) {
+      if ((null == r || null == (e = r.location) ? void 0 : e.state) === e6.Df) {
         let {
           channelId: e
         } = null != (n = (0, ep.Qj)(null == r || null == (t = r.location) ? void 0 : t.pathname)) ? n : {};

@@ -33,21 +33,21 @@ function S(e) {
     className: S,
     infoPanelClassName: C,
     style: b
-  } = e, v = (0, O.m)(n), D = (0, a.e7)([h.default], () => h.default.getUser(t), [t]), x = (0, a.e7)([I.ZP], () => I.ZP.getMember(n, t), [n, t]), [M, L] = l.useState(null == D || null == x), U = (0, c.Z)(x), j = l.useRef(null), {
+  } = e, v = (0, O.m)(n), D = (0, a.e7)([h.default], () => h.default.getUser(t), [t]), x = (0, a.e7)([I.ZP], () => I.ZP.getMember(n, t), [n, t]), [L, M] = l.useState(null == D || null == x), U = (0, c.Z)(x), j = l.useRef(null), {
     analyticsLocations: P
   } = (0, A.ZP)(_.Z.GUILD_MEMBER_MOD_VIEW), y = (0, T.ZP)(t, n), w = (0, d.ZP)();
   return (l.useEffect(() => {
     v || i()
   }, [v, i]), l.useEffect(() => {
-    null == U || null != x || M || i()
-  }, [M, x, i, U]), l.useEffect(() => {
-    null != D && null != x && L(!1)
+    null == U || null != x || L || i()
+  }, [L, x, i, U]), l.useEffect(() => {
+    null != D && null != x && M(!1)
   }, [D, x]), l.useEffect(() => {
     let e = null == x;
-    return !M && e && (j.current = window.setTimeout(i, 500)), () => {
+    return !L && e && (j.current = window.setTimeout(i, 500)), () => {
       null != j.current && window.clearTimeout(j.current)
     }
-  }, [M, x, i]), (0, E.$)({
+  }, [L, x, i]), (0, E.$)({
     [n]: [t]
   }), l.useEffect(() => {
     !async function() {
@@ -55,14 +55,14 @@ function S(e) {
         guildId: n,
         dispatchWait: !0
       })];
-      await Promise.all(e), L(!1)
+      await Promise.all(e), M(!1)
     }()
-  }, [n, t]), v) ? M || null == D || null == x ? (0, r.jsx)("div", {
+  }, [n, t]), v) ? L || null == D || null == x ? (0, r.jsx)("div", {
     className: s()(R.sidebarContainer, R.loadingContainer, S),
     style: b,
     children: (0, r.jsx)(o.$jN, {
       animated: !0,
-      type: M ? o.$jN.Type.SPINNING_CIRCLE : o.$jN.Type.CHASING_DOTS
+      type: L ? o.$jN.Type.SPINNING_CIRCLE : o.$jN.Type.CHASING_DOTS
     })
   }) : (0, r.jsx)(A.Gt, {
     value: P,

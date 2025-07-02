@@ -30,8 +30,8 @@ var r = n(255367),
   v = n(768119),
   D = n(944486),
   x = n(594174),
-  M = n(861262),
-  L = n(101695),
+  L = n(861262),
+  M = n(101695),
   U = n(683101),
   j = n(981631),
   P = n(388032),
@@ -127,7 +127,7 @@ function k(e) {
     focusedIndex: 0,
     setFocus: k,
     onSelect: F
-  }), B = v.Z.getQuery(i), V = (0, M.k)(i) === j.aib.FAVORITES, H = (0, d.nC)(null != (t = null == B ? void 0 : B.content) ? t : ""), K = D.map(e => {
+  }), B = v.Z.getQuery(i), V = (0, L.k)(i) === j.aib.FAVORITES, H = (0, d.nC)(null != (t = null == B ? void 0 : B.content) ? t : ""), K = D.map(e => {
     let {
       channel: t,
       results: n,
@@ -184,7 +184,7 @@ function k(e) {
           count: T
         })
       })]
-    }) : null, !p && !V && (0, r.jsx)(L.Z, {
+    }) : null, !p && !V && (0, r.jsx)(M.Z, {
       onPageChange: f,
       offset: O,
       totalCount: N,
@@ -238,8 +238,8 @@ function Z(e) {
     searchId: h,
     renderEmbeds: p,
     offset: v,
-    jumpToMessage: M,
-    listNavigator: L,
+    jumpToMessage: L,
+    listNavigator: M,
     favoriteSearch: P
   } = e, k = N.cC.useSetting(), Z = (0, T.p)(), z = l.useCallback(e => {
     if (e === D.Z.getChannelId()) return;
@@ -300,8 +300,8 @@ function Z(e) {
           pageResultsLength: a.length,
           result: e,
           index: n,
-          onJump: M,
-          listItemProps: L.getItemProps({
+          onJump: L,
+          listItemProps: M.getItemProps({
             index: n
           })
         }, "search-result-".concat(n))

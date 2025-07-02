@@ -12,8 +12,8 @@ var l = n(255367),
   u = n(430824),
   d = n(594174),
   x = n(236373),
-  m = n(230900),
-  g = n(405613),
+  g = n(230900),
+  m = n(405613),
   h = n(460838),
   v = n(388032),
   f = n(237466);
@@ -30,7 +30,7 @@ function p(e) {
     name: N,
     image: C,
     description: S
-  } = E, T = (0, i.e7)([c.Z], () => c.Z.getChannel(O), [O]), I = (0, i.e7)([u.Z], () => u.Z.getGuild(p), [p]), P = (0, m.cS)(E), Z = (0, i.e7)([d.default], () => null != j.creatorId ? d.default.getUser(j.creatorId) : d.default.getCurrentUser(), [j.creatorId]), w = (0, i.e7)([o.Z], () => o.Z.isLurking(p), [p]), D = (0, s.KS)(T, I);
+  } = E, T = (0, i.e7)([c.Z], () => c.Z.getChannel(O), [O]), I = (0, i.e7)([u.Z], () => u.Z.getGuild(p), [p]), P = (0, g.cS)(E), Z = (0, i.e7)([d.default], () => null != j.creatorId ? d.default.getUser(j.creatorId) : d.default.getCurrentUser(), [j.creatorId]), w = (0, i.e7)([o.Z], () => o.Z.isLurking(p), [p]), D = (0, s.KS)(T, I);
   return (0, l.jsxs)("div", {
     className: f.content,
     children: [(0, l.jsx)(h.Z, {
@@ -41,7 +41,7 @@ function p(e) {
       creator: Z,
       name: N,
       description: S,
-      imageSource: (n = (0, x.Gb)(j, p, y), null == C && null == n.image ? null : null != C && /^data:/.test(C) ? C : (0, g.Z)(n)),
+      imageSource: (n = (0, x.Gb)(j, p, y), null == C && null == n.image ? null : null != C && /^data:/.test(C) ? C : (0, m.Z)(n)),
       isActive: !1,
       isUserLurking: w,
       speakers: [],

@@ -32,7 +32,7 @@ var l = n(120356),
   D = n(388032),
   x = n(157092);
 
-function M(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -51,7 +51,7 @@ function M(e) {
   return e
 }
 
-function L(e, t) {
+function M(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -146,7 +146,7 @@ function j(e) {
   }(e, ["tag", "text", "disabled", "children", "onClick"]);
   return (0, r.jsx)(a.ua7, {
     text: n,
-    children: e => (0, r.jsx)(a.P3F, L(M({}, u, e), {
+    children: e => (0, r.jsx)(a.P3F, M(L({}, u, e), {
       tag: t,
       "aria-label": n,
       className: i()(x.bottomRowAction, {
@@ -211,7 +211,7 @@ function P(e) {
           let {
             default: e
           } = await n.e("36760").then(n.bind(n, 854360));
-          return n => (0, r.jsx)(e, L(M({}, n), {
+          return n => (0, r.jsx)(e, M(L({}, n), {
             location: v,
             guildId: i,
             user: t,
@@ -233,7 +233,7 @@ function P(e) {
           let {
             default: e
           } = await n.e("4114").then(n.bind(n, 98746));
-          return n => (0, r.jsx)(e, L(M({}, n), {
+          return n => (0, r.jsx)(e, M(L({}, n), {
             location: v,
             guildId: i,
             user: t,

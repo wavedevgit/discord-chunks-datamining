@@ -1,7 +1,7 @@
 /** Chunk was on 67042 **/
 n.d(t, {
-  mp: () => M,
-  tP: () => L,
+  mp: () => L,
+  tP: () => M,
   xO: () => b
 }), n(539854), n(953529);
 var r = n(255367),
@@ -57,7 +57,7 @@ function x(e, t) {
     }
   }, e)
 }
-class M extends l.PureComponent {
+class L extends l.PureComponent {
   render() {
     let {
       actionType: e,
@@ -97,7 +97,7 @@ class M extends l.PureComponent {
   }
 }
 
-function L(e) {
+function M(e) {
   let {
     log: t,
     guild: n,
@@ -190,7 +190,7 @@ function L(e) {
               return (o().isEqual(e.title, n.title) || g.push("title"), o().isEqual(e.description, n.description) || g.push("description"), 0 === A.length && 0 === m.length && 0 === T.length && 0 === f.length && 0 === g.length) ? null : (0, r.jsxs)("li", {
                 children: [(0, r.jsxs)("div", {
                   className: C.onboardingChangeLogItemTitle,
-                  children: [(0, r.jsx)(M, {
+                  children: [(0, r.jsx)(L, {
                     actionType: R.vB8.UPDATE,
                     targetType: t.targetType,
                     action: t.action
@@ -245,7 +245,7 @@ function L(e) {
                 return (0, r.jsxs)("li", {
                   children: [(0, r.jsxs)("div", {
                     className: C.onboardingChangeLogItemTitle,
-                    children: [(0, r.jsx)(M, {
+                    children: [(0, r.jsx)(L, {
                       actionType: R.vB8.CREATE,
                       targetType: t.targetType,
                       action: t.action
@@ -273,7 +273,7 @@ function L(e) {
               }), A.map(e => (0, r.jsx)("li", {
                 children: (0, r.jsxs)("div", {
                   className: C.onboardingChangeLogItemTitle,
-                  children: [(0, r.jsx)(M, {
+                  children: [(0, r.jsx)(L, {
                     actionType: R.vB8.DELETE,
                     targetType: t.targetType,
                     action: t.action
@@ -342,7 +342,7 @@ function L(e) {
                     children: [c.map(e => (0, r.jsx)("li", {
                       children: (0, r.jsxs)("div", {
                         className: C.onboardingChangeLogItemTitle,
-                        children: [(0, r.jsx)(M, {
+                        children: [(0, r.jsx)(L, {
                           actionType: R.vB8.CREATE,
                           targetType: s,
                           action: a
@@ -356,7 +356,7 @@ function L(e) {
                     }, e.channel_id)), d.map(e => (0, r.jsx)("li", {
                       children: (0, r.jsxs)("div", {
                         className: C.onboardingChangeLogItemTitle,
-                        children: [(0, r.jsx)(M, {
+                        children: [(0, r.jsx)(L, {
                           actionType: R.vB8.DELETE,
                           targetType: s,
                           action: a
@@ -382,7 +382,7 @@ function L(e) {
                     children: [c.map(e => (0, r.jsx)("li", {
                       children: (0, r.jsxs)("div", {
                         className: C.onboardingChangeLogItemTitle,
-                        children: [(0, r.jsx)(M, {
+                        children: [(0, r.jsx)(L, {
                           actionType: R.vB8.CREATE,
                           targetType: s,
                           action: a
@@ -396,7 +396,7 @@ function L(e) {
                     }, e.channel_id)), d.map(e => (0, r.jsx)("li", {
                       children: (0, r.jsxs)("div", {
                         className: C.onboardingChangeLogItemTitle,
-                        children: [(0, r.jsx)(M, {
+                        children: [(0, r.jsx)(L, {
                           actionType: R.vB8.DELETE,
                           targetType: s,
                           action: a
