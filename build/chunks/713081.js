@@ -43,7 +43,8 @@ function _(e, t) {
     return
   }
   let n = {
-    application_id: c.NO
+    application_id: c.NO,
+    guild_id: e
   };
   return (0, o.Kb)({
     url: u.ANM.STORE_PUBLISHED_LISTINGS_SKUS,
