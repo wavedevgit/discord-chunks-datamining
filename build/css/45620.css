@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: 2f030c71f8ca1f7c
+  Original File Name: b11c16095de4e65f
 **/
 .countDownWrapper_a1b7b8 {
     align-items: center;
@@ -98,31 +98,55 @@
     }
 }
 
-.pageWrapper__6db1d {
-    align-items: stretch;
+.page__6db1d {
     background-color: var(--background-base-low);
-    justify-content: center;
-    position: relative
-}
-
-.page__6db1d,.pageWrapper__6db1d {
     display: flex;
+    justify-content: center;
+    position: relative;
     width: 100%
 }
 
-.page__6db1d {
+.pageFilter__6db1d {
+    gap: 24px
+}
+
+.controls__6db1d {
+    display: flex;
+    height: 40px;
+    justify-content: right;
+    padding: 8px 0
+}
+
+.pageWrapper__6db1d {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: relative
+}
+
+.pageWrapperFilter__6db1d {
+    padding: 20px 26px
+}
+
+.inventory__6db1d {
     box-sizing: border-box;
+    display: flex;
     flex-direction: column;
     margin-bottom: 60px;
     max-width: 1124px;
-    padding: 0 32px 32px
+    width: 100%
 }
 
 @media (max-width:485px) {
-    .page__6db1d {
+    .inventory__6db1d {
         max-width: calc(485 + 16px);
         padding: 0 8px 32px
     }
+}
+
+.inventoryNoFilter__6db1d {
+    padding: 0 32px 32px
 }
 
 .pageFullscreen__6db1d {
@@ -137,7 +161,6 @@
 }
 
 .categoryWrapper__6db1d {
-    padding-top: 40px;
     position: relative
 }
 
@@ -165,7 +188,8 @@
 
 .shopScroll__6db1d {
     background-color: var(--background-base-low);
-    height: 100%
+    height: 100%;
+    overflow-y: auto
 }
 
 .itemTypeTitle__6db1d {
@@ -214,8 +238,14 @@
     animation-name: easterEggAnimationReverse__6db1d
 }
 
-.categories__6db1d>.categoryWrapper__6db1d {
+.categoriesNoFilter__6db1d {
     margin-top: 40px
+}
+
+.categories__6db1d {
+    display: flex;
+    flex-direction: column;
+    gap: 40px
 }
 
 .products__6db1d {
@@ -223,10 +253,6 @@
     grid-gap: 24px;
     grid-template-columns: repeat(auto-fill,minmax(246px,1fr));
     overflow: visible
-}
-
-.categories__6db1d>.categoryWrapper__6db1d~.categoryWrapper__6db1d {
-    margin-top: 80px
 }
 
 .categoriesWithPagination__6db1d {
@@ -242,7 +268,6 @@
     display: flex;
     justify-content: center;
     margin-bottom: 0;
-    margin-top: 40px;
     padding-top: 20px
 }
 
@@ -255,6 +280,22 @@
     margin-bottom: 24px;
     margin-top: 24px;
     padding: 32px
+}
+
+.filterBar__6db1d {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 76px;
+    width: 250px
+}
+
+.filterButton__6db1d {
+    align-items: center;
+    display: flex;
+    gap: 4px
 }
 
 @keyframes placeholderPulse__72fa0 {
@@ -916,6 +957,84 @@
 
 .theme-light .alternativeColor__6f029.minimalState__6f029 .colorSwatch__6f029 {
     border: 1px solid #d0d0d1
+}
+
+.filterBar__11877 {
+    background-color: var(--background-base-low);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-sm);
+    gap: 24px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 16px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content
+}
+
+.filterBar__11877,.filterCheckboxes__11877 {
+    display: flex;
+    flex-direction: column
+}
+
+.filterCheckboxes__11877 {
+    cursor: pointer;
+    gap: 4px
+}
+
+.checkbox__11877 {
+    width: 24px
+}
+
+.filterCheckbox__11877 {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    height: 24px;
+    justify-content: flex-start;
+    padding: 8px 0
+}
+
+.colorSwatches__11877 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.colorSwatchRow__11877 {
+    display: flex;
+    flex-direction: row;
+    gap: 8px
+}
+
+.themesSection__11877 {
+    flex-direction: column
+}
+
+.themeRow__11877,.themesSection__11877 {
+    display: flex;
+    gap: 8px
+}
+
+.theme__11877 {
+    align-items: center;
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    padding: 8px;
+    white-space: nowrap
+}
+
+.circle__11877 {
+    background-image: linear-gradient(180deg,transparent 0,rgba(0,0,0,.3));
+    border-radius: 50%;
+    cursor: pointer;
+    height: 36px;
+    width: 36px
 }
 
 .loadingContainer__08415 {
@@ -1672,4 +1791,4 @@
     cursor: pointer
 }
 
-/*# sourceMappingURL=2f030c71f8ca1f7c.css.map*/
+/*# sourceMappingURL=b11c16095de4e65f.css.map*/

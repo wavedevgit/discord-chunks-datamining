@@ -49,8 +49,8 @@ var r = n(255367),
   Y = n(981631),
   K = n(675654),
   q = n(474936),
-  Q = n(388032),
-  X = n(916723),
+  X = n(388032),
+  Q = n(916723),
   J = n(416350);
 
 function $(e) {
@@ -138,7 +138,7 @@ let en = e => {
         selected: t,
         route: Y.Z5c.FRIENDS,
         icon: f.iFz,
-        text: Q.intl.string(Q.t.TdEu5e),
+        text: X.intl.string(X.t.TdEu5e),
         onMouseEnter: () => {
           O(!0)
         },
@@ -181,7 +181,7 @@ let en = e => {
       selected: t,
       route: Y.Z5c.APPLICATION_LIBRARY,
       icon: f.vqy,
-      text: Q.intl.string(Q.t.cw57am)
+      text: X.intl.string(X.t.cw57am)
     }, i, l), {
       children: (0, r.jsx)(W.Z, {
         className: a()(J.downloadProgressCircle, {
@@ -208,7 +208,7 @@ let en = e => {
       selected: t,
       route: Y.Z5c.MESSAGE_REQUESTS,
       icon: f._XJ,
-      text: Q.intl.string(Q.t.e7GWjY),
+      text: X.intl.string(X.t.e7GWjY),
       onClick: l
     }, n), {
       children: (0, r.jsx)(ei, {})
@@ -217,7 +217,7 @@ let en = e => {
   ea = e => {
     let {
       selected: t
-    } = e, n = Q.intl.string(X.default.Rkdixs), l = (0, c.JA)("family-center"), [a, o] = i.useState(!0);
+    } = e, n = X.intl.string(Q.default.Rkdixs), l = (0, c.JA)("family-center"), [a, o] = i.useState(!0);
     return (0, r.jsx)(F.Qj, ee($({
       selected: t,
       route: Y.Z5c.FAMILY_CENTER,
@@ -249,7 +249,7 @@ let en = e => {
           return t => (0, r.jsx)(e, $({}, t))
         })
       },
-      "aria-label": Q.intl.string(Q.t.cpT0Cg)
+      "aria-label": X.intl.string(X.t.cpT0Cg)
     }) : i > 0 ? (0, r.jsx)("div", {
       className: J.familyCenterPendingBadge,
       children: (0, r.jsx)(f.mAB, {
@@ -262,7 +262,7 @@ let en = e => {
           visibleContent: t
         } = e;
         return t === p.z.FAMILY_CENTER_NEW_BADGE ? (0, r.jsx)(f.IGR, {
-          text: Q.intl.string(Q.t.y2b7CA),
+          text: X.intl.string(X.t.y2b7CA),
           color: E.Z.BG_BRAND
         }) : null
       }
@@ -295,7 +295,7 @@ let eu = i.memo(function(e) {
   } = e, g = i.useRef(null), m = i.useRef(null), b = i.useRef(null);
   return (0, r.jsxs)("nav", {
     className: J.privateChannels,
-    "aria-label": Q.intl.string(Q.t.ZH9aPz),
+    "aria-label": X.intl.string(X.t.ZH9aPz),
     children: [(0, r.jsx)(R.Z, {
       childRef: g,
       tutorialId: "direct-messages",
@@ -312,7 +312,7 @@ let eu = i.memo(function(e) {
           size: f.zxk.Sizes.SMALL,
           fullWidth: !0,
           onClick: es,
-          children: Q.intl.string(Q.t.LzcpeX)
+          children: X.intl.string(X.t.LzcpeX)
         })
       })
     }), (0, r.jsxs)(z.Z, ee($({}, e), {

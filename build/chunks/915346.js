@@ -10,8 +10,8 @@ async function l(e) {
     botId: n,
     analyticsLocations: l,
     customId: o,
-    referrerId: u,
-    commandOrigin: a
+    referrerId: a,
+    commandOrigin: u
   } = e, c = await i.Z.openPrivateChannel({
     recipientIds: n
   });
@@ -20,7 +20,7 @@ async function l(e) {
     channelId: c,
     analyticsLocations: l,
     customId: o,
-    referrerId: u,
-    commandOrigin: a
+    referrerId: a,
+    commandOrigin: u
   })
 }

@@ -71,8 +71,8 @@ let B = e => {
       }(e, ["selected", "route", "locationState"]);
     let K = (0, a.e7)([g.default], () => g.default.getCurrentUser()),
       q = (0, a.e7)([b.Z], () => b.Z.getPremiumTypeSubscription()),
-      Q = (0, O.Qo)(K, q),
-      X = (0, l.JA)("nitro"),
+      X = (0, O.Qo)(K, q),
+      Q = (0, l.JA)("nitro"),
       J = (0, N.N)(),
       $ = (0, S.Ng)(),
       ee = (0, I.W)(),
@@ -170,10 +170,10 @@ let B = e => {
       onClick: () => {
         ec === o.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL && eu(M.L.TAKE_ACTION), _.default.track(k.rMx.NITRO_TAB_VISITED, {
           badge_decorator: E,
-          has_premium: Q
+          has_premium: X
         }), null != ef && eg(M.L.USER_DISMISS)
       }
-    }, Y, X), H = H = {
+    }, Y, Q), H = H = {
       className: t,
       children: n
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(V, Object.getOwnPropertyDescriptors(H)) : (function(e, t) {

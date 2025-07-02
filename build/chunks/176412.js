@@ -1,14 +1,14 @@
 /** Chunk was on 23491 **/
 n.d(t, {
-  Bm: () => T,
-  P7: () => M,
-  X: () => D,
+  Bm: () => M,
+  P7: () => D,
+  X: () => T,
   ae: () => j
 });
 var i, r, l = n(73800),
   o = n(392711),
-  u = n.n(o),
-  a = n(442837),
+  a = n.n(o),
+  u = n(442837),
   c = n(25209),
   d = n(481060),
   s = n(2052),
@@ -58,7 +58,7 @@ let I = (i = function(e) {
   })(Object(r)).forEach(function(e) {
     Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(r, e))
   }), i),
-  S = u().pick((0, Z.Z)([E.Z.RULES, {
+  S = a().pick((0, Z.Z)([E.Z.RULES, {
     commandMention: I
   }, (0, m.Z)({
     enableBuildOverrides: !1,
@@ -66,14 +66,14 @@ let I = (i = function(e) {
   })]), ["commandMention", "customEmoji", "em", "emoji", "emoticon", "highlight", "inlineCode", "looseEm", "s", "strong", "text", "timestamp", "u", "spoiler"]),
   j = c.w4(S);
 
-function M(e) {
+function D(e) {
   let {
     context: t,
     application: n,
     location: i,
     sectionName: r,
     commandName: o,
-    autoDismissOnClick: u = !0,
+    autoDismissOnClick: a = !0,
     launchingComponentId: c,
     submitting: m = !1,
     fetchesApplication: E = !0,
@@ -82,12 +82,12 @@ function M(e) {
     context: t,
     applicationId: n.id,
     fetchesApplication: E
-  }), S = (0, _.Q)(I), j = (0, a.e7)([h.Z], () => h.Z.entrypoint()), M = l.useMemo(() => {
+  }), S = (0, _.Q)(I), j = (0, u.e7)([h.Z], () => h.Z.entrypoint()), D = l.useMemo(() => {
     var e, i, r;
     if ("channel" !== t.type) return null != (r = null == (e = n.bot) ? void 0 : e.id) ? r : null == (i = (0, y.If)(t, n.id).descriptor) ? void 0 : i.botId
-  }, [t, n.id, n.bot]), T = (0, p.w1)({
+  }, [t, n.id, n.bot]), M = (0, p.w1)({
     applicationId: n.id,
-    botUserIdForAppDM: M,
+    botUserIdForAppDM: D,
     embeddedActivitiesManager: f.Z,
     context: t,
     locationObject: O.location,
@@ -95,7 +95,7 @@ function M(e) {
       let {
         applicationId: t
       } = e;
-      u && g.yT(P.ti.ACTIVITY), (0, v.yw)(w.rMx.APP_LAUNCHER_ACTIVITY_ITEM_SELECTED, {
+      a && g.yT(P.ti.ACTIVITY), (0, v.yw)(w.rMx.APP_LAUNCHER_ACTIVITY_ITEM_SELECTED, {
         location: i,
         application_id: t,
         section_name: r,
@@ -109,16 +109,16 @@ function M(e) {
     source: j,
     fetchesApplication: E,
     onConfirmActivityLaunchChecksAlertOpen: Z
-  }), D = d.Ttl.BRAND, L = null != o ? o : A.intl.string(A.t.zKX8Nj);
-  return S === p.JS.JOIN ? (D = d.Ttl.GREEN, L = A.intl.string(A.t.d9PsMj)) : S !== p.JS.LEAVE || m || (D = d.Ttl.RED, L = A.intl.string(A.t["Hi1/aW"])), {
-    onActivityItemSelected: T,
+  }), T = d.Ttl.BRAND, L = null != o ? o : A.intl.string(A.t.zKX8Nj);
+  return S === p.JS.JOIN ? (T = d.Ttl.GREEN, L = A.intl.string(A.t.d9PsMj)) : S !== p.JS.LEAVE || m || (T = d.Ttl.RED, L = A.intl.string(A.t["Hi1/aW"])), {
+    onActivityItemSelected: M,
     activityAction: S,
-    buttonColor: D,
+    buttonColor: T,
     buttonText: L
   }
 }
 
-function T(e, t) {
+function M(e, t) {
   let n = h.Z.entrypoint(),
     i = l.useMemo(() => (0, o.debounce)((e, t) => {
       (0, v.yw)(w.rMx.APP_LAUNCHER_EMPTY_STATE_ENCOUNTERED, {
@@ -134,7 +134,7 @@ function T(e, t) {
   }, [e, t, n, i])
 }
 
-function D(e) {
+function T(e) {
   O.S.dispatchToLastSubscribed(w.CkL.OPEN_APP_LAUNCHER, {
     applicationId: e
   })

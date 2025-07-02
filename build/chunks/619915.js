@@ -9,8 +9,8 @@ var i = n(73800),
   r = n(442837),
   l = n(835473),
   o = n(158776),
-  u = n(594174),
-  a = n(823379),
+  a = n(594174),
+  u = n(823379),
   c = n(317381),
   d = n(16609);
 
@@ -38,9 +38,9 @@ function f(e, t) {
     c = new Set([]);
   for (let t of e)
     for (let e of t.userIds) c.add(e);
-  let d = (0, r.Wu)([u.default], () => {
+  let d = (0, r.Wu)([a.default], () => {
     let e = [];
-    for (let t of c) e.push(u.default.getUser(t));
+    for (let t of c) e.push(a.default.getUser(t));
     return e
   }, [c]);
   return i.useMemo(() => {
@@ -63,7 +63,7 @@ function f(e, t) {
         application: r,
         userParticipantAvatarUrls: l
       }
-    }).filter(a.lm)
+    }).filter(u.lm)
   }, [e, o, d, t])
 }
 

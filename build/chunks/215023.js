@@ -8,6 +8,7 @@ n.d(t, {
   J0: () => N,
   K8: () => P,
   RE: () => O,
+  Vh: () => M,
   Vt: () => L,
   ZS: () => f,
   a$: () => R,
@@ -20,6 +21,7 @@ n.d(t, {
   o8: () => D,
   pv: () => A,
   rL: () => _,
+  xg: () => j,
   yf: () => m
 }), n(388685), n(73800);
 var r = n(463570),
@@ -175,4 +177,8 @@ let L = {
     FRACTIONAL_PREMIUM: u.a.PREMIUM_TIER_2_3_DAY
   },
   x = new Set(Object.values(L)),
-  k = e => x.has(e)
+  k = e => x.has(e);
+var M = function(e) {
+  return e.AVATAR_DECORATIONS = "avatarDecorations", e.PROFILE_EFFECTS = "profileEffects", e.NAMEPLATES = "nameplates", e.BUNDLES = "bundles", e.ORBS_ELIGIBLE = "orbsEligible", e
+}({});
+let j = ["avatarDecorations", "profileEffects", "nameplates", "bundles", "orbsEligible"]

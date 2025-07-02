@@ -3,20 +3,20 @@
 n.d(t, {
   Kp: () => O,
   u9: () => C,
-  xV: () => S
+  xV: () => x
 }), n(413496), n(433524), n(35282), n(704826), n(539854), n(388685);
 var r = n(73800),
   l = n(114858),
-  a = n(442837),
-  i = n(607070),
+  i = n(442837),
+  a = n(607070),
   o = n(100527),
   s = n(906732),
   c = n(597688),
   u = n(328347),
   d = n(429368),
   p = n(410127),
-  f = n(237031),
-  g = n(956472),
+  g = n(237031),
+  f = n(956472),
   h = n(981631);
 let b = "".concat("#").concat("itemSkuId", "="),
   m = new RegExp("^".concat(b, "(\\d+)$")),
@@ -35,23 +35,23 @@ let b = "".concat("#").concat("itemSkuId", "="),
       analyticsLocations: n,
       analyticsSource: r,
       initialItemCardRef: l,
-      reducedMotion: a = !1,
-      tab: i
+      reducedMotion: i = !1,
+      tab: a
     } = e, o = c.Z.getProduct(t), s = c.Z.getCategoryForProduct(t);
     if (null != o && null != s) {
       var u;
       null == (u = l.current) || u.scrollIntoView({
-        behavior: a ? "instant" : "smooth",
+        behavior: i ? "instant" : "smooth",
         block: "center",
         inline: "center"
       });
       let e = o,
-        p = (0, g.oQ)({
+        p = (0, f.oQ)({
           product: o
         }),
         h = setTimeout(() => {
-          let a = document.getElementById("shop-item-".concat(e.skuId));
-          if (a !== document.activeElement && (null == a || a.focus()), null != o.variantGroupStoreListingId) {
+          let i = document.getElementById("shop-item-".concat(e.skuId));
+          if (i !== document.activeElement && (null == i || i.focus()), null != o.variantGroupStoreListingId) {
             let n = c.Z.getProductByStoreListingId(o.variantGroupStoreListingId);
             if (null != n) {
               var u;
@@ -59,13 +59,13 @@ let b = "".concat("#").concat("itemSkuId", "="),
               let r = null == (u = n.variants) ? void 0 : u.findIndex(e => e.skuId === t);
               null != r && r > -1 && (0, d.$)(n, r)
             }
-          }(0, f.T)({
+          }(0, g.T)({
             product: e,
             category: s,
             analyticsSource: r,
             analyticsLocations: n,
             returnRef: l,
-            tab: i,
+            tab: a,
             shouldCheckoutWithOrbs: p
           })
         }, 750 * (null != l.current));
@@ -78,19 +78,19 @@ let b = "".concat("#").concat("itemSkuId", "="),
       isFetchingCategories: t,
       isLayer: n,
       initialItemCardRef: c
-    } = e, d = (0, a.e7)([i.Z], () => i.Z.useReducedMotion), f = r.useRef(null), g = (0, l.TH)(), b = g.pathname === h.Z5c.COLLECTIBLES_SHOP ? o.Z.HOME_PAGE_SHOP_TAB : g.pathname === h.Z5c.COLLECTIBLES_SHOP_FULLSCREEN ? o.Z.COLLECTIBLES_SHOP_FULLSCREEN : o.Z.COLLECTIBLES_SHOP, {
+    } = e, d = (0, i.e7)([a.Z], () => a.Z.useReducedMotion), g = r.useRef(null), f = (0, l.TH)(), b = f.pathname === h.Z5c.COLLECTIBLES_SHOP ? o.Z.HOME_PAGE_SHOP_TAB : f.pathname === h.Z5c.COLLECTIBLES_SHOP_FULLSCREEN ? o.Z.COLLECTIBLES_SHOP_FULLSCREEN : o.Z.COLLECTIBLES_SHOP, {
       analyticsLocations: _
     } = (0, s.ZP)(b), C = (0, p.Z)();
     r.useEffect(() => {
       if (n) return;
-      let e = m.exec(g.hash);
-      null != e ? f.current = e[1] : f.current = null
-    }, [C, n, g.hash]);
-    let O = (0, a.e7)([u.Z], () => u.Z.initialProductSkuId);
+      let e = m.exec(f.hash);
+      null != e ? g.current = e[1] : g.current = null
+    }, [C, n, f.hash]);
+    let O = (0, i.e7)([u.Z], () => u.Z.initialProductSkuId);
     r.useEffect(() => {
       if (t) return;
       let e = null;
-      if (null != (e = n ? O : f.current)) {
+      if (null != (e = n ? O : g.current)) {
         let t = [],
           n = setTimeout(() => {
             let n = v({
@@ -109,10 +109,10 @@ let b = "".concat("#").concat("itemSkuId", "="),
       }
     }, [n, _, b, t, O, c, d, C])
   },
-  S = e => {
+  x = e => {
     let t = r.useRef({}),
-      n = (0, a.e7)([i.Z], () => i.Z.useReducedMotion),
-      l = (0, a.e7)([c.Z], () => c.Z.isFetchingCategories),
+      n = (0, i.e7)([a.Z], () => a.Z.useReducedMotion),
+      l = (0, i.e7)([c.Z], () => c.Z.isFetchingCategories),
       [o, s] = r.useState(null),
       u = r.useCallback((e, n) => {
         t.current[e] = n
@@ -122,7 +122,7 @@ let b = "".concat("#").concat("itemSkuId", "="),
           let l = t.current[r];
           null != l && (null == e || e.scrollIntoViewNode({
             node: l,
-            padding: 12,
+            padding: 48,
             animate: !n,
             shouldScrollToStart: !0
           }))

@@ -1,0 +1,1 @@
+{"id":"870289","type":"experiment","data":{"kind":"user","id":"2025-06_collectibles_browse","label":"Collectibles Browse Experiment","commonTriggerPoint":"l.$P.COLLECTIBLES_SHOP_OPEN","defaultConfig":{"collectiblesBrowseEnabled":false},"treatments":[{"id":1,"label":"Enable collectibles browse","config":{"collectiblesBrowseEnabled":false}}]},"fromModule":{"id":"45620"}}

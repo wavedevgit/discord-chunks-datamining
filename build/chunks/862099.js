@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Co: () => Q,
-  ZP: () => X,
+  Co: () => X,
+  ZP: () => Q,
   bZ: () => q,
   gt: () => B
 }), n(388685);
@@ -124,7 +124,7 @@ function V(e) {
       color: "currentColor",
       className: G.stageIcon
     }) : null,
-    children: (0, i.jsx)(Q, {
+    children: (0, i.jsx)(X, {
       channel: n,
       speakers: r,
       voiceType: 1
@@ -344,7 +344,7 @@ function K(e) {
       className: G.stageIcon
     }),
     topic: t.topic,
-    children: (0, i.jsx)(Q, {
+    children: (0, i.jsx)(X, {
       channel: n,
       speakers: r,
       voiceType: 2
@@ -353,7 +353,7 @@ function K(e) {
 }
 var q = ((r = {})[r.VOICE = 1] = "VOICE", r[r.STAGE = 2] = "STAGE", r[r.STUDY_ROOM = 3] = "STUDY_ROOM", r);
 
-function Q(e) {
+function X(e) {
   let {
     channel: t,
     speakers: n,
@@ -392,7 +392,7 @@ function Q(e) {
     })]
   })
 }
-let X = l.memo(function(e) {
+let Q = l.memo(function(e) {
   let {
     guild: t
   } = e, {

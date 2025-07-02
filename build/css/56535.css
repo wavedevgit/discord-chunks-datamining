@@ -1,6 +1,6 @@
 /**
   Module ID: 56535
-  Original File Name: 3d2db89844a70bd5
+  Original File Name: df77c39094ee271d
 **/
 .emojiErrorItem__67954 {
     align-items: center;
@@ -195,7 +195,7 @@
 
 .emptyState__43278 {
     height: 100%;
-    padding: 80px 0 24px 24px
+    padding: 80px 24px 24px
 }
 
 .dropZone__43278,.emptyState__43278 {
@@ -414,7 +414,7 @@
 
 .aside__4d307 {
     background-color: var(--background-surface-high);
-    border-top: 1px solid var(--border-subtle);
+    border-left: 1px solid var(--border-subtle);
     box-sizing: border-box;
     display: flex;
     flex: 0 0 240px;
@@ -610,4 +610,4 @@
     width: 32px
 }
 
-/*# sourceMappingURL=3d2db89844a70bd5.css.map*/
+/*# sourceMappingURL=df77c39094ee271d.css.map*/
