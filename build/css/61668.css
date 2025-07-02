@@ -1,6 +1,6 @@
 /**
   Module ID: 61668
-  Original File Name: 9cd03795c069d161
+  Original File Name: cfb4bb85cd28f028
 **/
 .wrapper__74bfa {
     align-items: center;
@@ -2906,8 +2906,8 @@ html .progress__61462 {
 }
 
 .grid__623de.hasThumbnail__623de {
-    grid-template-columns: auto -webkit-min-content;
-    grid-template-columns: auto min-content
+    grid-template-columns: minmax(0,1fr) -webkit-min-content;
+    grid-template-columns: minmax(0,1fr) min-content
 }
 
 .embedMargin__623de {
@@ -10384,4 +10384,4 @@ html .progress__61462 {
     width: 16px
 }
 
-/*# sourceMappingURL=9cd03795c069d161.css.map*/
+/*# sourceMappingURL=cfb4bb85cd28f028.css.map*/

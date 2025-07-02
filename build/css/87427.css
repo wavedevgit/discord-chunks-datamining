@@ -1,6 +1,6 @@
 /**
   Module ID: 87427
-  Original File Name: e859a7b62e6843a0
+  Original File Name: e552485a7581bbc7
 **/
 .loadingWrapper__5a143 {
     align-items: center;
@@ -137,8 +137,8 @@
 }
 
 .grid__623de.hasThumbnail__623de {
-    grid-template-columns: auto -webkit-min-content;
-    grid-template-columns: auto min-content
+    grid-template-columns: minmax(0,1fr) -webkit-min-content;
+    grid-template-columns: minmax(0,1fr) min-content
 }
 
 .embedMargin__623de {
@@ -988,4 +988,4 @@
     text-align: center
 }
 
-/*# sourceMappingURL=e859a7b62e6843a0.css.map*/
+/*# sourceMappingURL=e552485a7581bbc7.css.map*/
