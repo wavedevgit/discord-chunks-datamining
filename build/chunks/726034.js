@@ -139,7 +139,7 @@ function F(e) {
 function Z(e) {
   let {
     markAsDismissed: t
-  } = e;
+  } = e, n = (0, b.m)(w.p9.TIER_2);
   return (0, r.jsxs)("div", {
     className: x.coachmarkHeaderContainer,
     children: [(0, r.jsxs)("div", {
@@ -158,7 +158,7 @@ function Z(e) {
         className: x.subtitle,
         variant: "text-sm/medium",
         color: "text-muted",
-        children: L.intl.string(D.default.TRCE4u)
+        children: L.intl.string(n ? D.default.TRCE4u : D.default["UV/Vtr"])
       })]
     })]
   })
