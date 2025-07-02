@@ -1,0 +1,1 @@
+{"id":"532245","type":"experiment","data":{"kind":"user","id":"2025-07_nitro_tab_title_sub","commonTriggerPoint":"l.$P.CONNECTION_OPEN","label":"Nitro Tab Title (sub)","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Nitro Home","config":{"enabled":false}}]},"fromModule":{"id":"1272"}}
