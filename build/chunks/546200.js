@@ -1,30 +1,30 @@
 /** Chunk was on 56535 **/
 n.d(t, {
-  EmojiStudioModal: () => i
+  EmojiStudioModal: () => s
 });
 var r = n(255367);
 n(73800);
 var l = n(481060),
   a = n(375727),
-  s = n(205721);
-let i = e => {
+  i = n(205721);
+let s = e => {
   let {
     transitionState: t,
     userImage: n,
-    guildId: i
+    guildId: s
   } = e;
   return (0, r.jsx)(l.Y0X, {
     transitionState: t,
     size: l.CgR.DYNAMIC,
     fullscreenOnMobile: !1,
-    className: s.modalRoot,
+    className: i.modalRoot,
     parentComponent: "Modal",
     children: (0, r.jsx)(l.hzk, {
       scrollbarType: "none",
-      className: s.modalContent,
+      className: i.modalContent,
       children: (0, r.jsx)(a.I, {
         userImage: n,
-        guildId: i
+        guildId: s
       })
     })
   })

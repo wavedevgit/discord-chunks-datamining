@@ -5,16 +5,16 @@ n.d(t, {
 var r = n(255367),
   l = n(73800),
   a = n(481060),
-  s = n(327802),
-  i = n(372129),
+  i = n(327802),
+  s = n(372129),
   o = n(598117),
-  c = n(746622),
-  u = n(388032),
+  u = n(746622),
+  c = n(388032),
   d = n(162337);
 let h = e => {
     let {
       setImage: t
-    } = e, [n, i] = l.useState(null);
+    } = e, [n, s] = l.useState(null);
     return (0, r.jsx)("div", {
       className: d.emptyState,
       children: (0, r.jsxs)("div", {
@@ -25,17 +25,17 @@ let h = e => {
           className: d.imagePlusIcon
         }), (0, r.jsx)(a.Text, {
           variant: "text-md/medium",
-          children: u.intl.format(u.t["Ks2/3d"], {
-            selectFileHook: e => (0, r.jsx)(p, {
+          children: c.intl.format(c.t["Ks2/3d"], {
+            selectFileHook: (e, n) => (0, r.jsx)(p, {
               translatedContent: e,
               setUserImage: t
-            })
+            }, n)
           })
-        }), null !== n && (0, r.jsx)(c.H, {
+        }), null !== n && (0, r.jsx)(u.H, {
           error: o.ze.IMAGE_LOAD
-        }), (0, r.jsx)(s.X, {
+        }), (0, r.jsx)(i.X, {
           onSuccess: t,
-          onError: i
+          onError: s
         })]
       })
     })
@@ -51,7 +51,7 @@ let h = e => {
       },
       tag: "a",
       children: (0, r.jsxs)("label", {
-        children: [n, (0, r.jsx)(i.ZP, {
+        children: [n, (0, r.jsx)(s.ZP, {
           tabIndex: 0,
           onChange: (e, n, r) => (t({
             data: e,
