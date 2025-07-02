@@ -1,8 +1,8 @@
 /** Chunk was on 85831 **/
 t.d(n, {
   Tx: () => l,
-  d8: () => o,
-  nY: () => c,
+  d8: () => c,
+  nY: () => o,
   v6: () => i
 });
 var r = t(255367);
@@ -16,7 +16,7 @@ function l(e) {
   })
 }
 
-function o(e) {
+function c(e) {
   let {
     children: n
   } = e;
@@ -34,7 +34,7 @@ function i(e) {
   })
 }
 
-function c(e) {
+function o(e) {
   let {
     children: n
   } = e;

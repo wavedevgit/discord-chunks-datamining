@@ -14,8 +14,8 @@ var r = n(255367),
   p = n(213609),
   m = n(565138),
   f = n(267101),
-  _ = n(336197),
-  g = n(661824),
+  g = n(336197),
+  _ = n(661824),
   h = n(430824),
   b = n(626135),
   E = n(76535),
@@ -54,7 +54,7 @@ function j(e) {
         })
       }
       return e
-    }({}, (0, d.hH)(n))), await (0, _.Z)(x.Z5c.SERVER_SHOP(n))
+    }({}, (0, d.hH)(n))), await (0, g.Z)(x.Z5c.SERVER_SHOP(n))
   }, [n]);
   (0, p.Z)({
     type: o.ImpressionTypes.VIEW,
@@ -101,7 +101,7 @@ function j(e) {
       children: I.description
     }), (0, r.jsx)(u.LZC, {
       size: 16
-    }), (0, r.jsx)(g.Z, {}), (0, r.jsx)(u.LZC, {
+    }), (0, r.jsx)(_.Z, {}), (0, r.jsx)(u.LZC, {
       size: 16
     }), (0, r.jsxs)("div", {
       className: O.guildShopEmbedFooter,

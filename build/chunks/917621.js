@@ -14,8 +14,8 @@ var r = n(255367),
   p = n(237583),
   m = n(598077),
   f = n(63063),
-  _ = n(153066),
-  g = n(51144),
+  g = n(153066),
+  _ = n(51144),
   h = n(620662),
   b = n(994339),
   E = n(503438),
@@ -87,7 +87,7 @@ function S(e) {
     children: e => {
       var i;
       return (0, r.jsx)(o.ua7, {
-        text: null != (i = t.nick) ? i : g.ZP.getName(t.user),
+        text: null != (i = t.nick) ? i : _.ZP.getName(t.user),
         children: i => (0, r.jsx)(o.P3F, I(j({
           innerRef: p,
           className: v.partyMemberKnown
@@ -330,7 +330,7 @@ class T extends i.PureComponent {
     })) : u = (0, r.jsx)("img", {
       alt: "",
       src: t,
-      className: (0, _.l)(v, "artwork", this.getActionableMode())
+      className: (0, g.l)(v, "artwork", this.getActionableMode())
     });
     let d = null != i && null != u && null != i.assets && null != i.assets.large_text && "" !== i.assets.large_text && !s && (0, E.Z)(i) ? i.assets.large_text : null,
       p = null != d ? (0, r.jsx)(o.ua7, {
@@ -353,7 +353,7 @@ class T extends i.PureComponent {
       children: [(0, r.jsx)("div", {
         className: v.coverImageWrapper,
         children: (0, r.jsx)("div", {
-          className: a()((0, _.l)(v, "coverImage", this.getActionableMode()), null != u ? v.blurred : null),
+          className: a()((0, g.l)(v, "coverImage", this.getActionableMode()), null != u ? v.blurred : null),
           style: {
             backgroundImage: null != t ? "url('".concat(t, "')") : void 0
           }

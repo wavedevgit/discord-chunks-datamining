@@ -25,7 +25,7 @@ function f(e) {
   return (0, i.e7)([c.Z], () => {
     var e, n;
     return null != (n = null == (e = c.Z.getChannel(t.channel_id)) ? void 0 : e.isGroupDM()) && n
-  }) ? (0, r.jsx)(_, {
+  }) ? (0, r.jsx)(g, {
     message: t,
     usernameHook: l,
     compact: a,
@@ -43,20 +43,20 @@ function f(e) {
   })
 }
 
-function _(e) {
+function g(e) {
   let {
     message: t,
     usernameHook: i,
     compact: c
-  } = e, f = (0, u.ZP)(t), _ = i(f), g = (0, o.I3)("GdmNameChangeSystemMessage", t.channel_id), h = "" === t.content ? p.t.AI1ZZm : p.t.geP3ra;
+  } = e, f = (0, u.ZP)(t), g = i(f), _ = (0, o.I3)("GdmNameChangeSystemMessage", t.channel_id), h = "" === t.content ? p.t.AI1ZZm : p.t.geP3ra;
   return (0, r.jsx)(d.Z, {
     compact: c,
     className: m.channelNameChange,
     icon: n(819373),
     timestamp: t.timestamp,
-    children: g ? p.intl.format(h, {
+    children: _ ? p.intl.format(h, {
       username: f.nick,
-      usernameHook: _,
+      usernameHook: g,
       channelName: t.content,
       editGroupButton: (0, r.jsx)(l.Text, {
         tag: "span",
@@ -67,7 +67,7 @@ function _(e) {
       onEditGroup: () => (0, s.B)(t.channel_id, a.Z.GROUP_DM_SYSTEM_MESSAGE_NAME)
     }) : p.intl.format(p.t.oItgEx, {
       username: f.nick,
-      usernameHook: _,
+      usernameHook: g,
       channelName: t.content
     })
   })

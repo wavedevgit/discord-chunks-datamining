@@ -1,21 +1,21 @@
 /** Chunk was on 85831 **/
 t.d(n, {
-  r: () => g
+  r: () => m
 });
 var r = t(255367),
   l = t(73800),
-  o = t(481060),
+  c = t(481060),
   i = t(239091),
-  c = t(794295),
+  o = t(794295),
   a = t(782568),
-  u = t(364640),
-  s = t(124072),
+  s = t(364640),
+  u = t(124072),
   d = t(198620),
-  f = t(823379),
-  h = t(312539),
-  b = t(606629);
+  h = t(823379),
+  f = t(312539),
+  j = t(606629);
 
-function g(e) {
+function m(e) {
   let {
     type: n,
     value: t,
@@ -23,7 +23,7 @@ function g(e) {
   } = e;
   switch (n) {
     case "normal":
-      return (0, r.jsx)(c.Z, {
+      return (0, r.jsx)(o.Z, {
         title: t.title,
         href: t.url,
         children: l
@@ -34,52 +34,52 @@ function g(e) {
         case "message":
           let {
             value: {
-              guild_id: o,
+              guild_id: c,
               channel_id: i
             }
           } = t, a = "message_id" in t.value ? t.value.message_id : void 0;
-          return (0, r.jsx)(h.d, {
+          return (0, r.jsx)(f.d, {
             channelId: i,
-            guildId: o,
+            guildId: c,
             messageId: a
           });
         case "attachment":
           let {
             value: {
-              domain: u,
-              ephemeral: s,
+              domain: s,
+              ephemeral: u,
               channel_id: d,
-              attachment_id: b,
-              name: g
+              attachment_id: j,
+              name: m
             }
           } = t;
-          return (0, r.jsx)(_, {
-            domain: u,
-            ephemeral: s,
+          return (0, r.jsx)(p, {
+            domain: s,
+            ephemeral: u,
             channelId: d,
-            attachmentId: b,
-            name: g
+            attachmentId: j,
+            name: m
           });
         default:
-          (0, f.vE)(t)
+          (0, h.vE)(t)
       }
       break;
     default:
-      (0, f.vE)(n)
+      (0, h.vE)(n)
   }
 }
 
-function _(e) {
+function p(e) {
   let {
     domain: n,
-    ephemeral: c,
-    channelId: f,
-    attachmentId: h,
-    name: g
-  } = e, _ = "https://".concat(n, "/").concat(c ? "ephemeral-attachments" : "attachments", "/").concat(f, "/").concat(h, "/").concat(g), p = l.useCallback(async () => {
-    let e = await (0, d.B_)(_);
-    u.Z.trackLinkClicked(e), (0, a.Z)(e)
-  }, [_]), y = l.useCallback(e => {
+    ephemeral: o,
+    channelId: h,
+    attachmentId: f,
+    name: m
+  } = e, p = "https://".concat(n, "/").concat(o ? "ephemeral-attachments" : "attachments", "/").concat(h, "/").concat(f, "/").concat(m), g = l.useCallback(async () => {
+    let e = await (0, d.B_)(p);
+    s.Z.trackLinkClicked(e), (0, a.Z)(e)
+  }, [p]), v = l.useCallback(e => {
     (0, i.jW)(e, async () => {
       let {
         default: e
@@ -104,8 +104,8 @@ function _(e) {
           }
           return e
         }({}, n), l = l = {
-          attachmentUrl: _,
-          attachmentName: g
+          attachmentUrl: p,
+          attachmentName: m
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : (function(e, n) {
           var t = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -118,17 +118,17 @@ function _(e) {
         }), t))
       }
     })
-  }, [g, _]);
-  return (0, r.jsxs)(s.Z, {
+  }, [m, p]);
+  return (0, r.jsxs)(u.Z, {
     role: "link",
-    href: _,
-    onClick: p,
-    onContextMenu: y,
+    href: p,
+    onClick: g,
+    onContextMenu: v,
     className: "attachmentLink",
-    children: [(0, r.jsx)(o.Ujz, {
+    children: [(0, r.jsx)(c.Ujz, {
       size: "xs",
-      className: b.icon,
+      className: j.icon,
       color: "currentColor"
-    }), g]
+    }), m]
   })
 }

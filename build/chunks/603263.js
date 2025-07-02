@@ -2,11 +2,11 @@
 n.d(t, {
   Gn: () => y,
   Nz: () => m,
-  QQ: () => _,
+  QQ: () => g,
   QY: () => E,
   Vj: () => p,
   Vs: () => C,
-  j8: () => g,
+  j8: () => _,
   oO: () => f,
   qt: () => h,
   u$: () => b,
@@ -104,14 +104,14 @@ function f(e, t, n) {
   }), l)
 }
 
-function _(e) {
+function g(e) {
   r.Z.dispatch({
     type: "SEARCH_CLEAR_HISTORY",
     searchId: e
   })
 }
 
-function g(e, t) {
+function _(e, t) {
   null != e && r.Z.dispatch({
     type: "SEARCH_EDITOR_STATE_CHANGE",
     searchId: e,

@@ -14,8 +14,8 @@ var r = n(255367),
   p = n(442837),
   m = n(692547),
   f = n(481060),
-  _ = n(256638),
-  g = n(385499),
+  g = n(256638),
+  _ = n(385499),
   h = n(528011),
   b = n(533244),
   E = n(825829),
@@ -170,7 +170,7 @@ function G(e) {
     user: a,
     guildId: o,
     size: 12
-  }), _ = i.useRef(null);
+  }), g = i.useRef(null);
   return (0, r.jsx)(z, {
     compact: l,
     header: (0, r.jsxs)(i.Fragment, {
@@ -193,13 +193,13 @@ function G(e) {
             color: "text-default",
             children: R.intl.string(R.t.qlFrXV)
           }), (0, r.jsx)(O.Z, {
-            targetElementRef: _,
+            targetElementRef: g,
             user: a,
             guildId: o,
             channelId: n.channel_id,
             messageId: n.id,
             children: e => (0, r.jsxs)(f.P3F, D(L({
-              innerRef: _,
+              innerRef: g,
               className: k.alertsEnabledSubHeaderAvatarUsername
             }, e), {
               children: [(0, r.jsx)("div", D(L({}, p), {
@@ -242,14 +242,14 @@ function H(e) {
     joinAttempts: a,
     raidDatetime: o,
     dmsSent: u,
-    raidType: _,
-    resolvedReason: g
+    raidType: g,
+    resolvedReason: _
   } = (0, E.FL)(n), C = (0, p.e7)([j.Z], () => j.Z.getChannel(n.channel_id), [n.channel_id]), x = null != (t = null == C ? void 0 : C.guild_id) ? t : null, {
     shouldShowIncidentActions: v
   } = (0, h.mI)(x), O = (0, N.sR)(n.author.id, n.channel_id), I = i.useCallback(() => {
     let e = null == C ? void 0 : C.guild_id;
     null != e && (0, y.kW)(n.id, e)
-  }, [n.id, C]), S = _ === d.$.DM_RAID, T = S ? f.P4T : f.b6m;
+  }, [n.id, C]), S = g === d.$.DM_RAID, T = S ? f.P4T : f.b6m;
   return (0, r.jsx)(z, {
     compact: l,
     header: (0, r.jsxs)(i.Fragment, {
@@ -324,7 +324,7 @@ function H(e) {
           children: (0, r.jsx)(f.Text, {
             variant: "text-xs/medium",
             color: "text-link",
-            children: (0, E.ge)(g)
+            children: (0, E.ge)(_)
           })
         })
       })]
@@ -372,7 +372,7 @@ function V(e) {
       children: [(0, r.jsx)(f.zxk, {
         onClick: function() {
           null != a && null != c && (0, C.UE)(a, c, () => {
-            (0, _.c)(u), (0, C.T9)(a)
+            (0, g.c)(u), (0, C.T9)(a)
           })
         },
         color: f.zxk.Colors.LINK,
@@ -486,7 +486,7 @@ function W(e) {
               tag: "span",
               className: k.username,
               children: R.intl.string(R.t.hG1StL)
-            }), (0, r.jsx)(g.Z, {
+            }), (0, r.jsx)(_.Z, {
               type: Z.Hb.SYSTEM_DM,
               className: k.systemTag
             }), p && (0, r.jsx)(f.Text, {

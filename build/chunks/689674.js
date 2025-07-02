@@ -21,7 +21,7 @@ function d(e) {
     var e;
     let t = o.Z.getGuild(p.guild_id);
     return null != (e = null == t ? void 0 : t.hasFeature(u.oNc.COMMUNITY)) && e
-  }, [p.guild_id]), _ = (null == (t = d.messageReference) ? void 0 : t.guild_id) != null && null != d.webhookId && d.hasFlag(u.iLy.IS_CROSSPOST) && null != p.guild_id, g = p.type === i.d.GUILD_ANNOUNCEMENT && f, h = !d.hasFlag(u.iLy.EPHEMERAL) && (_ || g), b = _ && null != d.messageReference ? d.messageReference.message_id : d.id, E = _ && null != d.messageReference ? d.messageReference.channel_id : p.id, y = _ && (null == (n = d.messageReference) ? void 0 : n.guild_id) != null ? d.messageReference.guild_id : p.guild_id, C = r.useCallback(e => {
+  }, [p.guild_id]), g = (null == (t = d.messageReference) ? void 0 : t.guild_id) != null && null != d.webhookId && d.hasFlag(u.iLy.IS_CROSSPOST) && null != p.guild_id, _ = p.type === i.d.GUILD_ANNOUNCEMENT && f, h = !d.hasFlag(u.iLy.EPHEMERAL) && (g || _), b = g && null != d.messageReference ? d.messageReference.message_id : d.id, E = g && null != d.messageReference ? d.messageReference.channel_id : p.id, y = g && (null == (n = d.messageReference) ? void 0 : n.guild_id) != null ? d.messageReference.guild_id : p.guild_id, C = r.useCallback(e => {
     e ? c.Z.handleMessageBecameVisible({
       messageId: b,
       channelId: p.id,

@@ -1,38 +1,16 @@
-/** Chunk was on 85831 **/
+/** Chunk was on 87597 **/
 t.a(e, async function(e, r) {
   try {
     t.d(n, {
-      Q: () => i,
-      h: () => function* e(n) {
-        for (let t of n) switch (yield t, t.type) {
-          case "paragraph":
-          case "spoiler":
-          case "strikethrough":
-          case "underline":
-          case "italic":
-          case "bold":
-          case "quote":
-            yield* e(t.value);
-            break;
-          case "heading":
-          case "small":
-            yield* e(t.content);
-            break;
-          case "list":
-            for (let n of t.value.items) yield* e(n.content);
-            break;
-          case "link":
-            t.text && (yield* e(t.text))
-        }
-      }
+      Q: () => u
     });
-    var l = t(508866),
-      o = e([l]);
+    var o = t(508866),
+      i = e([o]);
 
-    function i(e, n) {
-      return JSON.parse((0, l.Qc)(e, n))
+    function u(e, n) {
+      return JSON.parse((0, o.Qc)(e, n))
     }
-    l = (o.then ? (await o)() : o)[0], r()
+    o = (i.then ? (await i)() : i)[0], r()
   } catch (e) {
     r(e)
   }

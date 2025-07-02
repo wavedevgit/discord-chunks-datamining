@@ -14,8 +14,8 @@ var r = n(255367),
   p = n(376484),
   m = n(362604),
   f = n(479110),
-  _ = n(413189),
-  g = n(710845),
+  g = n(413189),
+  _ = n(710845),
   h = n(387188),
   b = n(825829),
   E = n(623624),
@@ -68,8 +68,8 @@ var r = n(255367),
   ep = n(396252),
   em = n(522860),
   ef = n(600397),
-  e_ = n(73352),
-  eg = n(377499),
+  eg = n(73352),
+  e_ = n(377499),
   eh = n(857640),
   eb = n(614972),
   eE = n(701181),
@@ -185,7 +185,7 @@ let ek = Object.freeze({
         targetUser: s,
         actorUsernameHook: u,
         targetUsernameHook: d
-      }) : (0, r.jsx)(e_.Z, {
+      }) : (0, r.jsx)(eg.Z, {
         message: t,
         compact: i,
         otherUsername: c,
@@ -218,14 +218,14 @@ let ek = Object.freeze({
         targetUser: s,
         actorUsernameHook: c,
         targetUsernameHook: u
-      }) : null != s && s.id !== a.id ? (0, r.jsx)(eg.Z, {
+      }) : null != s && s.id !== a.id ? (0, r.jsx)(e_.Z, {
         message: t,
         channel: n,
         compact: i,
         usernameHook: c,
         otherUser: s,
         otherUsernameHook: u
-      }) : (0, r.jsx)(eg.Z, {
+      }) : (0, r.jsx)(e_.Z, {
         message: t,
         channel: n,
         usernameHook: c
@@ -239,7 +239,7 @@ let ek = Object.freeze({
       } = e, {
         id: o,
         author: s
-      } = t, u = D.default.getId(), d = t.getChannelId(), p = (0, l.e7)([M.Z], () => M.Z.isCallActive(d, o), [d, o]), m = (0, l.e7)([z.Z], () => z.Z.getVoiceState(eT.ME, u)), f = !p && null != t.call && !t.call.participants.includes(u), _ = p && (null == m || m.channelId !== d), g = i.useCallback(() => c.default.selectVoiceChannel(d), [d]), h = (0, et.l)({
+      } = t, u = D.default.getId(), d = t.getChannelId(), p = (0, l.e7)([M.Z], () => M.Z.isCallActive(d, o), [d, o]), m = (0, l.e7)([z.Z], () => z.Z.getVoiceState(eT.ME, u)), f = !p && null != t.call && !t.call.participants.includes(u), g = p && (null == m || m.channelId !== d), _ = i.useCallback(() => c.default.selectVoiceChannel(d), [d]), h = (0, et.l)({
         user: s,
         channelId: d,
         guildId: a.guild_id,
@@ -249,9 +249,9 @@ let ek = Object.freeze({
         compact: n,
         message: t,
         missed: f,
-        joinable: _,
+        joinable: g,
         usernameHook: h,
-        onClickJoinCall: g
+        onClickJoinCall: _
       })
     },
     [eT.uaV.CHANNEL_NAME_CHANGE]: function(e) {
@@ -377,12 +377,12 @@ let ek = Object.freeze({
           id: s
         },
         messageReference: c
-      } = t, d = t.getChannelId(), p = (0, l.e7)([G.Z], () => G.Z.findActivity(s, e => e.type === eT.IIU.PLAYING), [s]), m = (0, l.e7)([U.Z], () => null != c ? U.Z.getChannel(c.channel_id) : null, [c]), f = null == c ? void 0 : c.guild_id, _ = (0, et.l)({
+      } = t, d = t.getChannelId(), p = (0, l.e7)([G.Z], () => G.Z.findActivity(s, e => e.type === eT.IIU.PLAYING), [s]), m = (0, l.e7)([U.Z], () => null != c ? U.Z.getChannel(c.channel_id) : null, [c]), f = null == c ? void 0 : c.guild_id, g = (0, et.l)({
         user: o,
         channelId: d,
         guildId: a.guild_id,
         messageId: t.id
-      }), g = i.useCallback(() => {
+      }), _ = i.useCallback(() => {
         null != m && null != f && (0, u.iV)({
           streamType: eN.lo.GUILD,
           ownerId: s,
@@ -395,8 +395,8 @@ let ek = Object.freeze({
         compact: n,
         channel: m,
         playingActivity: p,
-        onJoinStream: g,
-        usernameHook: _
+        onJoinStream: _,
+        usernameHook: g
       }) : null
     },
     [eT.uaV.GUILD_DISCOVERY_DISQUALIFIED]: function(e) {
@@ -766,7 +766,7 @@ let ek = Object.freeze({
         channel: n,
         compact: i
       } = e;
-      return (0, r.jsx)(_.Z, {
+      return (0, r.jsx)(g.Z, {
         message: t,
         channel: n,
         compact: i
@@ -801,7 +801,7 @@ let ek = Object.freeze({
     } = t, o = ek[a];
     if (null == o) {
       var s;
-      return s = Error("unknown message type ".concat(t.type)), Y.Z.captureException(s), new g.Z("SystemMessage").error("", s), null
+      return s = Error("unknown message type ".concat(t.type)), Y.Z.captureException(s), new _.Z("SystemMessage").error("", s), null
     }
     return (0, r.jsx)($.ZP, {
       message: t,

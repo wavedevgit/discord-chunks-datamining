@@ -2,89 +2,89 @@
 t.a(e, async function(e, r) {
   try {
     t.r(n), t.d(n, {
-      default: () => I
+      default: () => Z
     });
     var l = t(255367),
-      o = t(73800),
+      c = t(73800),
       i = t(926302),
-      c = t(740442),
+      o = t(740442),
       a = t(481060),
-      u = t(460562),
-      s = t(960048),
+      s = t(460562),
+      u = t(960048),
       d = t(222082),
-      f = t(63681),
-      h = t(743965),
-      b = t(12781),
-      g = t(980426),
-      _ = t(659700),
-      p = t(733653),
-      y = t(249597),
-      m = t(312539),
-      j = t(325980),
-      v = t(472433),
-      x = t(701214),
+      h = t(63681),
+      f = t(743965),
+      j = t(12781),
+      m = t(980426),
+      p = t(659700),
+      g = t(733653),
+      v = t(249597),
+      b = t(312539),
+      x = t(325980),
+      y = t(472433),
+      O = t(701214),
       w = t(388032),
-      O = t(718905),
-      k = e([b, v, i]);
-    [b, v, i] = k.then ? (await k)() : k;
-    let Z = {
+      I = t(718905),
+      P = e([j, y, i]);
+    [j, y, i] = P.then ? (await P)() : P;
+    let C = {
       text: d.xv,
       paragraph: d.nv,
       empty: d.HY,
-      emoji: b.d,
-      link: p.r,
-      list: y.a,
-      listItem: y.H,
-      code: f.E,
-      code_block: h.d,
-      quote: j.p,
-      bold: g.d8,
-      italic: g.Tx,
-      underline: g.v6,
-      strikethrough: g.nY,
-      mention: m.p,
-      heading: _.X,
-      small: _.x,
-      spoiler: v.o,
-      timestamp: x.E
+      emoji: j.d,
+      link: g.r,
+      list: v.a,
+      listItem: v.H,
+      code: h.E,
+      code_block: f.d,
+      quote: x.p,
+      bold: m.d8,
+      italic: m.Tx,
+      underline: m.v6,
+      strikethrough: m.nY,
+      mention: b.p,
+      heading: p.X,
+      small: p.x,
+      spoiler: y.o,
+      timestamp: O.E
     };
 
-    function I(e) {
+    function Z(e) {
       let {
         content: n
       } = e;
-      return (0, l.jsx)(c.SV, {
+      return (0, l.jsx)(o.SV, {
         fallbackRender: e => {
           let {
             error: t
           } = e;
-          return (0, l.jsx)(P, {
+          return (0, l.jsx)(k, {
             content: n,
             error: t
           })
         },
         children: (0, l.jsx)(i.ZP, {
           content: n,
-          renderers: Z
+          renderers: C
         })
       })
     }
 
-    function P(e) {
+    function k(e) {
       let {
         content: n,
         error: t
       } = e;
-      return o.useEffect(() => {
-        s.Z.captureException(t)
+      return c.useEffect(() => {
+        u.Z.captureException(t)
       }, [t]), (0, l.jsxs)(l.Fragment, {
         children: [(0, l.jsx)("span", {
           children: n
         }), (0, l.jsxs)(a.Text, {
           variant: "text-md/normal",
           color: "text-danger",
-          className: O.errorMessage,
-          children: [(0, l.jsx)(u.Z, {
+          className: I.errorMessage,
+          children: [(0, l.jsx)(s.Z, {
             width: 16,
             height: 16
           }), w.intl.string(w.t.dpFK4O)]

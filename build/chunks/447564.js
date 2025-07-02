@@ -15,8 +15,8 @@ var r = n(255367),
   p = n(980463),
   m = n(576645),
   f = n(317951),
-  _ = n(63063),
-  g = n(937615),
+  g = n(63063),
+  _ = n(937615),
   h = n(82950),
   b = n(981631),
   E = n(388032),
@@ -74,8 +74,8 @@ function I(e) {
   let {
     channel: t
   } = e, n = (0, m.T$)(t), [a, u] = (0, i.useState)(!1), {
-    price: _,
-    fetchingPrice: g,
+    price: g,
+    fetchingPrice: _,
     error: h
   } = (0, m.R2)(f.FX), {
     entitlement: E,
@@ -103,11 +103,11 @@ function I(e) {
   return (0, r.jsx)(S, {
     channel: t,
     buttonState: N,
-    price: _,
+    price: g,
     onActionClick: () => {
       u(!0), (O ? j : I)()
     },
-    loading: g || !y
+    loading: _ || !y
   })
 }
 let S = e => {
@@ -156,7 +156,7 @@ let S = e => {
           color: "text-link",
           variant: "text-sm/normal",
           children: E.intl.format(E.t["1wV4qq"], {
-            helpCenterLink: _.Z.getArticleURL(b.BhN.HD_STREAMING_POTION)
+            helpCenterLink: g.Z.getArticleURL(b.BhN.HD_STREAMING_POTION)
           })
         }), (0, r.jsx)(o.Text, {
           color: "text-muted",
@@ -203,7 +203,7 @@ let S = e => {
       price: n,
       onActionClick: i
     } = e, l = E.intl.formatToPlainString(E.t.S9LAdX, {
-      price: (0, g.T4)(n.amount, n.currency)
+      price: (0, _.T4)(n.amount, n.currency)
     });
     if (3 === t || 4 === t) {
       let e = {

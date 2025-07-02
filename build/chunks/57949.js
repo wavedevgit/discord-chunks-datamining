@@ -16,7 +16,7 @@ function u(e) {
     guildProductListing: t,
     guildId: u,
     sourceAnalyticsLocations: d
-  } = e, p = !1, m = (0, i.Z)(), f = t.id, _ = () => {
+  } = e, p = !1, m = (0, i.Z)(), f = t.id, g = () => {
     p = !0
   };
   (0, l.ZDy)(async () => {
@@ -51,7 +51,7 @@ function u(e) {
           guildId: u
         },
         loadId: m,
-        onComplete: _
+        onComplete: g
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

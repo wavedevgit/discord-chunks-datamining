@@ -20,18 +20,18 @@ function f(e) {
     channel: n
   } = e, {
     isBlocked: f,
-    isIgnored: _
+    isIgnored: g
   } = (0, l.cj)([d.Z], () => ({
     isBlocked: d.Z.isBlockedForMessage(t),
     isIgnored: d.Z.isIgnoredForMessage(t)
-  }), [t]), g = (0, o.p)(), h = i.useMemo(() => ({
+  }), [t]), _ = (0, o.p)(), h = i.useMemo(() => ({
     [n.guild_id]: [t.author.id]
   }), [n.guild_id, t.author.id]);
   (0, a.$)(h);
   let b = i.useMemo(() => null != t.content && "" !== t.content ? (0, s.ZP)(t, {
     formatInline: !0,
-    shouldFilterKeywords: g
-  }).content : null, [t, g]);
+    shouldFilterKeywords: _
+  }).content : null, [t, _]);
   return (0, r.jsxs)("div", {
     className: m.threadMessageAccessory,
     children: [(0, r.jsx)("img", {
@@ -61,7 +61,7 @@ function f(e) {
             children: l
           }), s]
         })
-      }(t, b, f, _)
+      }(t, b, f, g)
     })]
   })
 }

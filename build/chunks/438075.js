@@ -23,8 +23,8 @@ function o(e) {
     isMessageSnapshot: p,
     renderThreadAccessory: m,
     renderSuppressEmbeds: f,
-    renderReactions: _,
-    forceAddReactions: g,
+    renderReactions: g,
+    forceAddReactions: _,
     disableComponentInteractivity: h,
     className: b
   } = e;
@@ -42,8 +42,8 @@ function o(e) {
       renderThreadAccessory: m,
       disableComponentInteractivity: h,
       renderSuppressEmbeds: f,
-      forceAddReactions: g || t.type === i.u.EMOJI_ADDED,
-      renderReactions: _
+      forceAddReactions: _ || t.type === i.u.EMOJI_ADDED,
+      renderReactions: g
     })
   })
 }

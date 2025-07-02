@@ -19,7 +19,7 @@ let p = e => {
     o.Z.dismissPublishBump(n), (0, s.Z)(t, n)
   }, [t, n]), f = i.useCallback(() => {
     o.Z.dismissPublishBump(n)
-  }, [n]), _ = i.useCallback(() => {
+  }, [n]), g = i.useCallback(() => {
     o.Z.permanentlyHidePublishBump(t)
   }, [t]);
   return p ? (0, r.jsxs)("div", {
@@ -54,7 +54,7 @@ let p = e => {
       className: d.hidePermanently,
       variant: "text-sm/normal",
       children: (0, r.jsx)(a.P3F, {
-        onClick: _,
+        onClick: g,
         children: u.intl.string(u.t.efSkDg)
       })
     })]

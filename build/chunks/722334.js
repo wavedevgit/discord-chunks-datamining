@@ -15,8 +15,8 @@ var i = n(120356),
   p = n(341907),
   m = n(46140),
   f = n(981631),
-  _ = n(388032),
-  g = n(355060),
+  g = n(388032),
+  _ = n(355060),
   h = n(87181);
 
 function b(e) {
@@ -24,9 +24,9 @@ function b(e) {
     questId: t
   } = e;
   return (0, r.jsx)("div", {
-    className: g.buttonContainer,
+    className: _.buttonContainer,
     children: (0, r.jsx)(o.zxk, {
-      className: g.button,
+      className: _.button,
       color: o.Ttl.BRAND,
       onClick: () => {
         (0, p.navigateToQuestHome)({
@@ -55,7 +55,7 @@ function b(e) {
           is_targeted: !1
         }, (0, c.mH)(u.jn.EXCLUDED_QUEST_EMBED)))
       },
-      children: _.intl.string(_.t.GURBQk)
+      children: g.intl.string(g.t.GURBQk)
     })
   })
 }
@@ -71,30 +71,30 @@ function E(e) {
     ref: e => {
       n.current = e
     },
-    className: l()(g.container, {
-      [g.wide]: "lg" === i,
-      [g.tall]: "lg" !== i
+    className: l()(_.container, {
+      [_.wide]: "lg" === i,
+      [_.tall]: "lg" !== i
     }),
     children: [(0, r.jsxs)("div", {
-      className: g.contentContainer,
+      className: _.contentContainer,
       children: [(0, r.jsx)(o.X6q, {
         variant: "lg" === i ? "heading-xl/bold" : "heading-lg/bold",
         color: "header-primary",
-        children: _.intl.string(_.t.vnP31d)
+        children: g.intl.string(g.t.vnP31d)
       }), (0, r.jsx)(o.Text, {
         variant: "lg" === i ? "text-sm/medium" : "text-xs/medium",
         color: "text-default",
-        className: g.__invalid_mobileWebCopy,
-        children: _.intl.string(_.t.nuWSYW)
+        className: _.__invalid_mobileWebCopy,
+        children: g.intl.string(g.t.nuWSYW)
       }), (0, r.jsx)(b, {
         questId: t
       })]
     }), (0, r.jsx)("div", {
-      className: g.imgContainer,
+      className: _.imgContainer,
       children: (0, r.jsx)("img", {
         src: h,
         alt: "",
-        className: g.missingQuestImage
+        className: _.missingQuestImage
       })
     })]
   })

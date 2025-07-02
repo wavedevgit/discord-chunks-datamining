@@ -14,8 +14,8 @@ var r = n(255367),
   p = n(39154),
   m = n(356264),
   f = n(628238),
-  _ = n(739566),
-  g = n(492593),
+  g = n(739566),
+  _ = n(492593),
   h = n(930282),
   b = n(464891),
   E = n(507418),
@@ -45,7 +45,7 @@ function F(e) {
     message: t,
     snapshot: n,
     index: u
-  } = e, p = i.useMemo(() => new d.r(t, n, u), [t, n, u]), f = (0, a.e7)([T.Z, R.default, w.Z, A.Z, P.Z, m.Z], () => p.getForwardInfo(T.Z, R.default, w.Z, A.Z, P.Z, m.Z).footerInfo, [p], o.Z), _ = i.useCallback(() => {
+  } = e, p = i.useMemo(() => new d.r(t, n, u), [t, n, u]), f = (0, a.e7)([T.Z, R.default, w.Z, A.Z, P.Z, m.Z], () => p.getForwardInfo(T.Z, R.default, w.Z, A.Z, P.Z, m.Z).footerInfo, [p], o.Z), g = i.useCallback(() => {
     var e, n;
     let r = T.Z.getChannel(t.channel_id),
       i = P.Z.getGuild(null == r ? void 0 : r.guild_id),
@@ -65,7 +65,7 @@ function F(e) {
   }, [t]);
   return null == f ? null : (0, r.jsxs)(c.P3F, {
     className: U.footerContainer,
-    onClick: _,
+    onClick: g,
     children: [null != f.originIconUrl ? (0, r.jsx)("img", {
       className: U.originIcon,
       src: f.originIconUrl,
@@ -89,7 +89,7 @@ function B(e) {
     channel: l,
     reportingUserId: a,
     reportedTimestamp: o
-  } = e, s = (0, _.JZ)(t.author, l), {
+  } = e, s = (0, g.JZ)(t.author, l), {
     onClickUsername: c,
     onClickAvatar: u,
     onPopoutRequestClose: d,
@@ -115,7 +115,7 @@ function B(e) {
       showAvatarPopout: a
     }
   }(t, l);
-  return (0, r.jsx)(g.Z, {
+  return (0, r.jsx)(_.Z, {
     childrenExecutedCommand: (0, r.jsx)(L.Z, {
       reportingUserId: a,
       guildId: l.guild_id,
@@ -164,20 +164,20 @@ function G(e) {
       m(e)
     }).catch(() => {})
   }, [null == s || null == (t = s.moderatorReport) ? void 0 : t.reported_user_id]);
-  let _ = i.useMemo(() => {
+  let g = i.useMemo(() => {
       var e;
       let t = (0, p.Z)(o, s);
       return null != d && (null == s || null == (e = s.moderatorReport) ? void 0 : e.reported_user_id) != null ? t.set("author", d) : t
     }, [o, s, d]),
-    g = I.RS.useSetting(),
+    _ = I.RS.useSetting(),
     h = I.NA.useSetting(),
     b = (0, a.e7)([N.Z], () => N.Z.isDeveloper),
-    E = (0, f.A)((null != (l = _.editedTimestamp) ? l : _.timestamp).valueOf()),
+    E = (0, f.A)((null != (l = g.editedTimestamp) ? l : g.timestamp).valueOf()),
     {
       content: y,
       hasSpoilerEmbeds: C
-    } = (0, x.Z)(_, {
-      hideSimpleEmbedContent: g && h,
+    } = (0, x.Z)(g, {
+      hideSimpleEmbedContent: _ && h,
       isInteracting: !1,
       formatInline: !1,
       allowList: E,
@@ -192,14 +192,14 @@ function G(e) {
     children: (0, r.jsxs)("div", {
       className: U.content,
       children: [(0, r.jsx)(B, {
-        mergedMessageRecord: _,
+        mergedMessageRecord: g,
         content: y,
         channel: O,
         reportingUserId: null == s || null == (n = s.moderatorReport) ? void 0 : n.reporting_user_id,
         reportedTimestamp: o.timestamp
       }), (0, v.Z)({
         channelMessageProps: {
-          message: _,
+          message: g,
           channel: O,
           compact: !1
         },

@@ -16,7 +16,7 @@ var r = n(255367),
   m = n(981631),
   g = n(388032),
   f = n(875231);
-let b = l.lazy(() => n.e("85831").then(n.bind(n, 120314)));
+let b = l.lazy(() => Promise.all([n.e("87597"), n.e("85831")]).then(n.bind(n, 120314)));
 
 function h(e, t) {
   let {

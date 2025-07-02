@@ -1,23 +1,23 @@
-/** Chunk was on 85831 **/
+/** Chunk was on 87597 **/
 t.a(e, async function(e, r) {
   try {
     t.d(n, {
-      Kq: () => a,
-      ZP: () => d
+      Kq: () => _,
+      ZP: () => a
     });
-    var l = t(255367),
-      o = t(31675),
-      i = t(73800),
-      c = e([o]);
-    o = (c.then ? (await c)() : c)[0];
-    let f = (0, i.createContext)(null);
+    var o = t(255367),
+      i = t(31675),
+      u = t(73800),
+      c = e([i]);
+    i = (c.then ? (await c)() : c)[0];
+    let d = (0, u.createContext)(null);
 
-    function a() {
-      return (0, i.useContext)(f)
+    function _() {
+      return (0, u.useContext)(d)
     }
-    let h = new Set(["bold", "italic", "underline", "strikethrough", "spoiler", "emoji", "timestamp", "mention", "link", "code", "code_block", "heading", "list", "quote", "small"]);
+    let s = new Set(["bold", "italic", "underline", "strikethrough", "spoiler", "emoji", "timestamp", "mention", "link", "code", "code_block", "heading", "list", "quote", "small"]);
 
-    function u({
+    function l({
       node: e,
       renderers: n,
       ...t
@@ -25,10 +25,10 @@ t.a(e, async function(e, r) {
       let r = n[e.type];
       if (! function(e, n) {
           if (null == e) throw Error(`Attempted to render "${n}" but no renderer was provided`)
-        }(r, e.type), Array.isArray(e.value)) return (0, l.jsx)(r, {
+        }(r, e.type), Array.isArray(e.value)) return (0, o.jsx)(r, {
         node: e,
         ...t,
-        children: (0, l.jsx)(s, {
+        children: (0, o.jsx)(f, {
           nodes: e.value,
           renderers: n
         })
@@ -38,61 +38,61 @@ t.a(e, async function(e, r) {
         case "timestamp":
         case "emoji":
         case "code_block":
-          return (0, l.jsx)(r, {
+          return (0, o.jsx)(r, {
             node: e,
             ...e.value,
             ...t
           });
         case "link": {
-          let o = e.value,
-            i = null;
-          if ("normal" === o.type) {
+          let i = e.value,
+            u = null;
+          if ("normal" === i.type) {
             let {
               value: {
                 text: e,
                 url: t
               }
-            } = o;
-            i = e ? (0, l.jsx)(s, {
+            } = i;
+            u = e ? (0, o.jsx)(f, {
               nodes: e,
               renderers: n
             }) : t
           }
-          return (0, l.jsx)(r, {
+          return (0, o.jsx)(r, {
             node: e,
             ...e.value,
             ...t,
-            children: i
+            children: u
           })
         }
         case "text":
         case "code":
-          return (0, l.jsx)(r, {
+          return (0, o.jsx)(r, {
             node: e,
             ...t,
             children: e.value
           });
         case "heading":
-          return (0, l.jsx)(r, {
+          return (0, o.jsx)(r, {
             node: e,
             level: e.value.level,
             ...t,
-            children: (0, l.jsx)(s, {
+            children: (0, o.jsx)(f, {
               nodes: e.value.content,
               renderers: n
             })
           });
         case "list": {
-          let o = n.listItem ?? "li";
-          return (0, l.jsx)(r, {
+          let i = n.listItem ?? "li";
+          return (0, o.jsx)(r, {
             node: e,
             ...e.value,
             ...t,
-            children: e.value.items.map((t, r) => (0, l.jsx)(o, {
+            children: e.value.items.map((t, r) => (0, o.jsx)(i, {
               node: t,
               siblings: e.value.items,
               index: r,
-              children: (0, l.jsx)(s, {
+              children: (0, o.jsx)(f, {
                 nodes: t.content,
                 renderers: n
               })
@@ -100,14 +100,14 @@ t.a(e, async function(e, r) {
           })
         }
         case "empty":
-          return (0, l.jsx)(r, {
+          return (0, o.jsx)(r, {
             ...t
           });
         case "small":
-          return (0, l.jsx)(r, {
+          return (0, o.jsx)(r, {
             node: e,
             ...t,
-            children: (0, l.jsx)(s, {
+            children: (0, o.jsx)(f, {
               nodes: e.value.content,
               renderers: n
             })
@@ -117,12 +117,12 @@ t.a(e, async function(e, r) {
       }
     }
 
-    function s({
+    function f({
       nodes: e,
       renderers: n
     }) {
-      return (0, l.jsx)(l.Fragment, {
-        children: e.map((t, r) => (0, l.jsx)(u, {
+      return (0, o.jsx)(o.Fragment, {
+        children: e.map((t, r) => (0, o.jsx)(l, {
           node: t,
           renderers: n,
           siblings: e,
@@ -131,18 +131,18 @@ t.a(e, async function(e, r) {
       })
     }
 
-    function d({
+    function a({
       content: e,
       renderers: n
     }) {
-      let t = (0, i.useMemo)(() => {
-          let e = Object.keys(n).filter(e => h.has(e));
+      let t = (0, u.useMemo)(() => {
+          let e = Object.keys(n).filter(e => s.has(e));
           return e.length > 0 ? e : null
         }, [n]),
-        r = (0, i.useMemo)(() => (0, o.Q)(e, t), [e, t]);
-      return (0, l.jsx)(f.Provider, {
+        r = (0, u.useMemo)(() => (0, i.Q)(e, t), [e, t]);
+      return (0, o.jsx)(d.Provider, {
         value: r,
-        children: (0, l.jsx)(s, {
+        children: (0, o.jsx)(f, {
           nodes: r,
           renderers: n
         })

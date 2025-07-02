@@ -1,16 +1,16 @@
-/** Chunk was on 85831 **/
+/** Chunk was on 87597 **/
 t.d(n, {
-  SV: () => i
+  SV: () => u
 });
 var r = t(73800);
-let l = (0, r.createContext)(null),
-  o = {
+let o = (0, r.createContext)(null),
+  i = {
     didCatch: !1,
     error: null
   };
-class i extends r.Component {
+class u extends r.Component {
   constructor(e) {
-    super(e), this.resetErrorBoundary = this.resetErrorBoundary.bind(this), this.state = o
+    super(e), this.resetErrorBoundary = this.resetErrorBoundary.bind(this), this.state = i
   }
   static getDerivedStateFromError(e) {
     return {
@@ -23,11 +23,11 @@ class i extends r.Component {
       error: e
     } = this.state;
     if (null !== e) {
-      for (var n, t, r = arguments.length, l = Array(r), i = 0; i < r; i++) l[i] = arguments[i];
+      for (var n, t, r = arguments.length, o = Array(r), u = 0; u < r; u++) o[u] = arguments[u];
       null == (n = (t = this.props).onReset) || n.call(t, {
-        args: l,
+        args: o,
         reason: "imperative-api"
-      }), this.setState(o)
+      }), this.setState(i)
     }
   }
   componentDidCatch(e, n) {
@@ -45,12 +45,12 @@ class i extends r.Component {
           n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [];
         return e.length !== n.length || e.some((e, t) => !Object.is(e, n[t]))
       }(e.resetKeys, r)) {
-      var l, i;
-      null == (l = (i = this.props).onReset) || l.call(i, {
+      var o, u;
+      null == (o = (u = this.props).onReset) || o.call(u, {
         next: r,
         prev: e.resetKeys,
         reason: "keys"
-      }), this.setState(o)
+      }), this.setState(i)
     }
   }
   render() {
@@ -58,27 +58,27 @@ class i extends r.Component {
       children: e,
       fallbackRender: n,
       FallbackComponent: t,
-      fallback: o
+      fallback: i
     } = this.props, {
-      didCatch: i,
+      didCatch: u,
       error: c
-    } = this.state, a = e;
-    if (i) {
+    } = this.state, _ = e;
+    if (u) {
       let e = {
         error: c,
         resetErrorBoundary: this.resetErrorBoundary
       };
-      if ("function" == typeof n) a = n(e);
-      else if (t) a = (0, r.createElement)(t, e);
-      else if (void 0 !== o) a = o;
+      if ("function" == typeof n) _ = n(e);
+      else if (t) _ = (0, r.createElement)(t, e);
+      else if (void 0 !== i) _ = i;
       else throw c
     }
-    return (0, r.createElement)(l.Provider, {
+    return (0, r.createElement)(o.Provider, {
       value: {
-        didCatch: i,
+        didCatch: u,
         error: c,
         resetErrorBoundary: this.resetErrorBoundary
       }
-    }, a)
+    }, _)
   }
 }

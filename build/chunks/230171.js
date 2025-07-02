@@ -15,8 +15,8 @@ var r = n(255367),
   p = n(906732),
   m = n(915346),
   f = n(783097),
-  _ = n(812236),
-  g = n(561308),
+  g = n(812236),
+  _ = n(561308),
   h = n(567409),
   b = n(706454),
   E = n(314897),
@@ -42,7 +42,7 @@ function R(e) {
     linkType: l,
     activityCustomId: a,
     activityReferrerId: s,
-    onView: g
+    onView: _
   } = e, {
     name: h,
     bot: b
@@ -61,7 +61,7 @@ function R(e) {
     instanceId: U,
     isCurrentlyInInstance: F,
     canLaunchInChannel: B
-  } = (0, j.c)(t.id), G = (0, u.Z)(), H = (0, _.ms)({
+  } = (0, j.c)(t.id), G = (0, u.Z)(), H = (0, g.ms)({
     context: {
       type: "contextless"
     },
@@ -117,7 +117,7 @@ function R(e) {
       linkType: l,
       referrerId: R,
       activityCustomId: a,
-      onView: g
+      onView: _
     }
   })
 }
@@ -185,7 +185,7 @@ function L(e) {
       guildId: c,
       activityText: w.intl.string(w.t["IJa+4+"])
     });
-    if (u.some(e => (0, g.ig)(e) === a.o.GLOBAL)) return (0, r.jsxs)(r.Fragment, {
+    if (u.some(e => (0, _.ig)(e) === a.o.GLOBAL)) return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(s.YqE, {
         size: "xxs",
         color: "currentColor"

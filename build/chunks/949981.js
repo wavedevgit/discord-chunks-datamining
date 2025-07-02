@@ -14,8 +14,8 @@ var r = n(255367),
   p = n(131704),
   m = n(592125),
   f = n(594174),
-  _ = n(823379),
-  g = n(358595),
+  g = n(823379),
+  _ = n(358595),
   h = n(981631),
   b = n(388032),
   E = n(273254);
@@ -44,7 +44,7 @@ function y(e) {
     }, I)
   }, [n, l, I, S, C, x]);
   if (null == j) {
-    if (null == n.channel) return (0, r.jsx)(g.Z, {});
+    if (null == n.channel) return (0, r.jsx)(_.Z, {});
     j = (0, p.jD)(n.channel), t = null != n.channel && null != n.channel.recipients ? n.channel.recipients : []
   } else {
     t = j.recipients.reduce((e, t) => {
@@ -55,7 +55,7 @@ function y(e) {
     S && null != e && t.push(e)
   }
   let N = j.name;
-  (null == N || "" === N) && (N = t.length > 0 ? t.filter(_.lm).map(e => e.username).join(", ") : b.intl.string(b.t.LJpTRE));
+  (null == N || "" === N) && (N = t.length > 0 ? t.filter(g.lm).map(e => e.username).join(", ") : b.intl.string(b.t.LJpTRE));
   let P = b.intl.string(b.t.XpeFYm),
     A = d.Z.Button.Colors.GREEN;
   S && (P = b.intl.string(b.t.cEnaW1), A = d.Z.Button.Colors.PRIMARY);
