@@ -14,9 +14,9 @@ var i = n(255367),
 function u(e) {
   let {
     onGoBack: t
-  } = e, n = (0, s.Wu)([a.ZP], () => {
+  } = e, n = (0, s.Wu)([a.Z], () => {
     var e, t;
-    return null != (t = null == (e = a.ZP.getActiveApplicationSubscriptions()) ? void 0 : e.slice().sort((e, t) => {
+    return null != (t = null == (e = a.Z.getActiveApplicationSubscriptions()) ? void 0 : e.slice().sort((e, t) => {
       var n, i, r, s;
       return (null != (r = null == (n = e.createdAt) ? void 0 : n.getTime()) ? r : e.currentPeriodStart.getTime()) - (null != (s = null == (i = t.createdAt) ? void 0 : i.getTime()) ? s : t.currentPeriodStart.getTime())
     })) ? t : []

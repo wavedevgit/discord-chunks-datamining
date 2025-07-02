@@ -1,7 +1,7 @@
 /** Chunk was on 74891 **/
 n.d(e, {
-  YG: () => _,
-  pV: () => P,
+  YG: () => P,
+  pV: () => _,
   rf: () => g
 });
 var i, r = n(255367);
@@ -21,7 +21,7 @@ var l = n(860911),
   b = n(299283),
   g = ((i = {})[i.AVAILABLE = 0] = "AVAILABLE", i[i.LOADING = 1] = "LOADING", i[i.UPCOMING_PLAN = 2] = "UPCOMING_PLAN", i[i.SUBSCRIBED = 3] = "SUBSCRIBED", i[i.UNAVAILABLE = 4] = "UNAVAILABLE", i);
 
-function P(t) {
+function _(t) {
   let {
     appId: e,
     className: n,
@@ -65,7 +65,7 @@ function P(t) {
   })
 }
 
-function _(t) {
+function P(t) {
   let {
     appId: e,
     className: n,
@@ -81,10 +81,10 @@ function _(t) {
       skuId: o.id,
       analyticsLocations: d
     })
-  }, g = (0, S.M)(o.id), P = o.type === O.epS.DURABLE && g, {
-    price: _
+  }, g = (0, S.M)(o.id), _ = o.type === O.epS.DURABLE && g, {
+    price: P
   } = o;
-  return null == _ ? null : P ? (0, r.jsx)(m, {
+  return null == P ? null : _ ? (0, r.jsx)(m, {
     className: n,
     children: I.intl.string(I.t["6cfuDg"])
   }) : (0, r.jsx)(y, {
@@ -97,7 +97,7 @@ function _(t) {
     children: (0, r.jsxs)("div", {
       className: b.btnContent,
       children: [u, I.intl.format(I.t.Xp5WTk, {
-        price: (0, f.T4)(_.amount, _.currency)
+        price: (0, f.T4)(P.amount, P.currency)
       })]
     })
   })

@@ -157,7 +157,7 @@ let L = () => {
       {
         analyticsLocations: G
       } = (0, g.ZP)(m.Z.PREMIUM_MARKETING_PLAN_COMPARISON),
-      F = (0, a.e7)([b.ZP], () => b.ZP.hasFetchedSubscriptions()),
+      F = (0, a.e7)([b.Z], () => b.Z.hasFetchedSubscriptions()),
       H = (0, h.V)(),
       z = "PlanComparisonTable";
     (0, d.j)({

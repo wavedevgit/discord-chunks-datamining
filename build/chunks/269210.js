@@ -27,8 +27,8 @@ function S(t) {
     onDetails: I,
     benefitItems: b,
     benefitsSummary: g,
-    subtitle: P,
-    maxBenefits: _ = f
+    subtitle: _,
+    maxBenefits: P = f
   } = t;
   return (0, i.jsx)(o.tE, {
     children: (0, i.jsxs)("div", {
@@ -64,7 +64,7 @@ function S(t) {
             onClick: t => {
               t.stopPropagation(), null == S || S()
             }
-          }) : null, P, null != e && "" !== e && (0, i.jsx)(s.x, {
+          }) : null, _, null != e && "" !== e && (0, i.jsx)(s.x, {
             className: d.description,
             color: "text-default",
             variant: "text-sm/medium",
@@ -90,12 +90,12 @@ function S(t) {
               color: "header-secondary",
               variant: "eyebrow",
               children: c.Z.Messages.STOREFRONT_BENEFITS_TITLE
-            }), b.length > _ ? (0, i.jsxs)(i.Fragment, {
-              children: [b.slice(0, _), (0, i.jsx)(s.x, {
+            }), b.length > P ? (0, i.jsxs)(i.Fragment, {
+              children: [b.slice(0, P), (0, i.jsx)(s.x, {
                 variant: "text-md/semibold",
                 color: "text-secondary",
                 children: c.Z.Messages.STOREFRONT_MORE_BENEFITS.format({
-                  count: b.length - _
+                  count: b.length - P
                 })
               })]
             }) : b]

@@ -25,8 +25,8 @@ var i = t(255367),
   E = t(669079),
   S = t(63063),
   v = t(74538),
-  P = t(987209),
-  Z = t(563132),
+  Z = t(987209),
+  P = t(563132),
   b = t(409813),
   I = t(107998),
   O = t(51499),
@@ -63,12 +63,12 @@ function F(e) {
     priceOptions: ei,
     isPremium: el,
     premiumBrandRefreshBackgroundClassName: er
-  } = (0, Z.JL)(), {
+  } = (0, P.JL)(), {
     isGift: es,
     giftRecipient: ea,
     giftMessage: eo,
     claimableRewards: eC
-  } = (0, P.wD)(), {
+  } = (0, Z.wD)(), {
     paymentModalBanner: ed
   } = (0, I.zb)(), ec = (0, p.a5)(ee), eu = (null == (n = (0, x.Z)()) ? void 0 : n.planSelectionBanner) != null, ep = es && ec && null != eC && eC.length > 0 && eu, ex = (0, w.m)(X, Q), {
     newPlans: eh
@@ -82,11 +82,11 @@ function F(e) {
     multiMonthPlans: ej ? eh : [],
     currentSubscription: q,
     defaultPlanId: et
-  }), [$, el, eh, q, ej, et]), ev = ey && eS.includes(k.Xh.PREMIUM_MONTH_TIER_2) ? k.Xh.PREMIUM_MONTH_TIER_2 : eS[0], eP = (0, a.e7)([y.Z], () => y.Z.get(ev)), eZ = [{
-    planId: null == eP ? void 0 : eP.id,
+  }), [$, el, eh, q, ej, et]), ev = ey && eS.includes(k.Xh.PREMIUM_MONTH_TIER_2) ? k.Xh.PREMIUM_MONTH_TIER_2 : eS[0], eZ = (0, a.e7)([y.Z], () => y.Z.get(ev)), eP = [{
+    planId: null == eZ ? void 0 : eZ.id,
     quantity: 1
   }], [eb, eI] = l.useState(eE), [eO, eT] = (0, u.ED)({
-    items: eZ,
+    items: eP,
     renewal: !1,
     preventFetch: !eE,
     applyEntitlements: !0,
@@ -109,7 +109,7 @@ function F(e) {
     ew = eE && null == eT,
     eA = eE && null != eT,
     eN = ew && null == q && !!eE && (null == eO ? void 0 : eO.subscriptionPeriodEnd) == null,
-    eR = !es && (null == eP ? void 0 : eP.skuId) === k.Si.TIER_2 && (null == em ? void 0 : em.referrer_id) != null,
+    eR = !es && (null == eZ ? void 0 : eZ.skuId) === k.Si.TIER_2 && (null == em ? void 0 : em.referrer_id) != null,
     eU = null;
   return (eU = null != ed ? ed : eR ? (0, i.jsx)(_.Z, {}) : (0, i.jsx)(m.Z, {}), eN) ? (0, i.jsx)(T.Z, {}) : (s()(null != en, "Step should be set"), s()(eS.length > 0, "Premium plan options should be set"), (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(A.P, {

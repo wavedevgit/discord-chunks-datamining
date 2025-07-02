@@ -50,7 +50,7 @@ function p(e) {
         emojiName: null == f || null == (i = f.emoji) ? void 0 : i.name,
         soundId: null == f || null == (l = f.sound) ? void 0 : l.id,
         onComplete: (e, t) => {
-          g = e, t && (_ = t, e.isSubscription && null == a.ZP.getPremiumSubscription(!1) && (0, c.H)(!0))
+          g = e, t && (_ = t, e.isSubscription && null == a.Z.getPremiumSubscription(!1) && (0, c.H)(!0))
         }
       }, n))
     }

@@ -261,9 +261,9 @@ function k(e) {
     onClose: l
   } = e;
   r.useEffect(() => {
-    O.ZP.hasFetchedSubscriptions() || (0, c.jg)()
+    O.Z.hasFetchedSubscriptions() || (0, c.jg)()
   }, []);
-  let d = (0, a.e7)([O.ZP], () => O.ZP.getPremiumTypeSubscription()),
+  let d = (0, a.e7)([O.Z], () => O.Z.getPremiumTypeSubscription()),
     p = (0, g.Z)(),
     [h, f] = r.useState(1),
     {

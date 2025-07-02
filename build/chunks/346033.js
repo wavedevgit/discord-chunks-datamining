@@ -61,7 +61,7 @@ let G = e => {
       [W, K] = r.useState(!1),
       [q, X] = r.useState(!1),
       [Q, J] = r.useState(!1),
-      $ = (0, a.e7)([b.ZP], () => b.ZP.getPremiumTypeSubscription()),
+      $ = (0, a.e7)([b.Z], () => b.Z.getPremiumTypeSubscription()),
       ee = null != $ ? (0, _.Af)($) : null,
       et = null != ee ? _.ZP.getSkuIdForPlan(ee.planId) : null,
       en = null !== et && et !== k.Si.TIER_2 ? k.Si.TIER_2 : null,

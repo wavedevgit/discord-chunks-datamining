@@ -59,7 +59,7 @@ let F = () => {
     [ee, et] = r.useState(!1),
     en = (0, j.rO)(),
     [ei, er] = r.useState(!1),
-    es = (0, a.e7)([_.ZP], () => _.ZP.getPremiumTypeSubscription()),
+    es = (0, a.e7)([_.Z], () => _.Z.getPremiumTypeSubscription()),
     el = null != es ? (0, C.Af)(es) : null,
     ea = null != el ? C.ZP.getSkuIdForPlan(el.planId) : null,
     eo = null !== ea && ea !== w.Si.TIER_2 ? w.Si.TIER_2 : null,

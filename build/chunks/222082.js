@@ -1,7 +1,7 @@
 /** Chunk was on 85831 **/
 t.d(n, {
-  HY: () => c,
-  nv: () => i,
+  HY: () => i,
+  nv: () => o,
   xv: () => l
 });
 var r = t(255367);
@@ -13,7 +13,7 @@ function l(e) {
   return n
 }
 
-function i(e) {
+function o(e) {
   let {
     siblings: n,
     index: t,
@@ -24,7 +24,7 @@ function i(e) {
   })
 }
 
-function c() {
+function i() {
   return (0, r.jsx)("p", {})
 }
 t(73800)

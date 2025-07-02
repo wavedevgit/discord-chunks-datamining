@@ -2,7 +2,7 @@
 t.a(e, async function(e, r) {
   try {
     t.d(n, {
-      Q: () => c,
+      Q: () => i,
       h: () => function* e(n) {
         for (let t of n) switch (yield t, t.type) {
           case "paragraph":
@@ -27,12 +27,12 @@ t.a(e, async function(e, r) {
       }
     });
     var l = t(508866),
-      i = e([l]);
+      o = e([l]);
 
-    function c(e, n) {
+    function i(e, n) {
       return JSON.parse((0, l.Qc)(e, n))
     }
-    l = (i.then ? (await i)() : i)[0], r()
+    l = (o.then ? (await o)() : o)[0], r()
   } catch (e) {
     r(e)
   }

@@ -44,7 +44,7 @@ let L = e => {
     } = e, {
       headingText: o,
       headingTop: c
-    } = V(), d = g.default.getCurrentUser(), m = (0, l.e7)([p.ZP], () => p.ZP.getPremiumTypeSubscription()), h = (0, O.N)(), f = (0, C.Ng)(), b = (0, C.Wp)(f, P.Si.TIER_2) ? P.Si.TIER_2 : void 0, x = null != m && m.status !== R.O0b.ACCOUNT_HOLD && m.hasAnyPremiumNitro, _ = (0, u.Z)(), j = (0, E.C)("nitro-home", d) && _.isFractionalPremiumActive && !x;
+    } = V(), d = g.default.getCurrentUser(), m = (0, l.e7)([p.Z], () => p.Z.getPremiumTypeSubscription()), h = (0, O.N)(), f = (0, C.Ng)(), b = (0, C.Wp)(f, P.Si.TIER_2) ? P.Si.TIER_2 : void 0, x = null != m && m.status !== R.O0b.ACCOUNT_HOLD && m.hasAnyPremiumNitro, _ = (0, u.Z)(), j = (0, E.C)("nitro-home", d) && _.isFractionalPremiumActive && !x;
     return (0, i.jsxs)("div", {
       className: s()(Z.container, r),
       "data-testid": "subscriber-nitro-home-hero-header",

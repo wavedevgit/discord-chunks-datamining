@@ -121,9 +121,9 @@ function T(e) {
       analyticsLocations: o
     } = (0, h.ZP)(p.Z.GUILD_BOOST_UNCANCELLATION_MODAL);
   r.useEffect(() => {
-    _.ZP.hasFetchedSubscriptions() || (0, d.jg)()
+    _.Z.hasFetchedSubscriptions() || (0, d.jg)()
   }, []);
-  let u = (0, a.e7)([_.ZP], () => _.ZP.getPremiumTypeSubscription()),
+  let u = (0, a.e7)([_.Z], () => _.Z.getPremiumTypeSubscription()),
     [m, g] = r.useState(1);
   if (null == u) t = (0, i.jsx)(c.hzk, {
     children: (0, i.jsx)(c.$jN, {})

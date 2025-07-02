@@ -1,6 +1,6 @@
 /** Chunk was on 85831 **/
 t.d(n, {
-  H: () => i,
+  H: () => o,
   a: () => l
 });
 var r = t(255367);
@@ -10,15 +10,15 @@ function l(e) {
     type: n,
     children: t,
     value: l,
-    items: i
+    items: o
   } = e;
   switch (n) {
     case "ordered":
-      let c = (l + i.length - 1).toString().length;
+      let i = (l + o.length - 1).toString().length;
       return (0, r.jsx)("ol", {
         start: l,
         style: {
-          "--totalCharacters": c
+          "--totalCharacters": i
         },
         children: t
       });
@@ -29,7 +29,7 @@ function l(e) {
   }
 }
 
-function i(e) {
+function o(e) {
   let {
     children: n
   } = e;

@@ -250,7 +250,7 @@ let A = () => (0, i.jsx)("div", {
       {
         analyticsLocations: C
       } = (0, g.ZP)(m.Z.PREMIUM_MARKETING_PLAN_COMPARISON),
-      S = (0, a.e7)([h.ZP], () => h.ZP.hasFetchedSubscriptions()),
+      S = (0, a.e7)([h.Z], () => h.Z.hasFetchedSubscriptions()),
       v = (0, p.V)(),
       T = "PlanComparisonTable";
     (0, d.j)({

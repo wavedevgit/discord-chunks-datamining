@@ -111,7 +111,7 @@ function R() {
 let P = () => !0;
 
 function w() {
-  return null != _.ZP.getPremiumTypeSubscription() && (v.userDiscountOffers = {}, v.userTrialOffers = {}, !0)
+  return null != _.Z.getPremiumTypeSubscription() && (v.userDiscountOffers = {}, v.userTrialOffers = {}, !0)
 }
 
 function D() {
@@ -132,7 +132,7 @@ function L() {
 }
 class x extends(r = i.ZP.PersistedStore) {
   initialize(e) {
-    v = null != e ? e : O, this.waitFor(u.default), this.syncWith([u.default], P), this.syncWith([_.ZP], w), this.syncWith([o.Z], L)
+    v = null != e ? e : O, this.waitFor(u.default), this.syncWith([u.default], P), this.syncWith([_.Z], w), this.syncWith([o.Z], L)
   }
   getUserTrialOffer(e) {
     if (null !== e) return v.userTrialOffers[e]
@@ -195,7 +195,7 @@ class x extends(r = i.ZP.PersistedStore) {
     let e = u.default.getCurrentUser();
     return (0, l.C)("user-offer-store", e) && d.Z.isFractionalPremiumActive({
       excludeReverseTrial: !0
-    }) && null == _.ZP.getPremiumTypeSubscription()
+    }) && null == _.Z.getPremiumTypeSubscription()
   }
   getReferrer(e) {
     var t;

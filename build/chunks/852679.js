@@ -30,7 +30,7 @@ async function p(e) {
     inPopout: I,
     applicationId: T,
     intent: S
-  } = e, A = I ? i.u1M : i.z1l, N = l.ZP.getPremiumTypeSubscription();
+  } = e, A = I ? i.u1M : i.z1l, N = l.Z.getPremiumTypeSubscription();
   if (null != N && N.isPurchasedExternally && null != N.paymentGateway) {
     null != g && g(), a.Z.show({
       title: f.intl.formatToPlainString(f.t.rTk9v7, {

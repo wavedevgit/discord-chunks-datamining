@@ -20,7 +20,7 @@ function p(e) {
     subscriptionTier: t,
     buttonTextOverride: n,
     defaultTextOverride: p
-  } = e, m = (0, r.e7)([o.default], () => o.default.getCurrentUser()), g = (0, r.e7)([s.ZP], () => s.ZP.getPremiumTypeSubscription()), {
+  } = e, m = (0, r.e7)([o.default], () => o.default.getCurrentUser()), g = (0, r.e7)([s.Z], () => s.Z.getPremiumTypeSubscription()), {
     fractionalState: E
   } = (0, i.Z)({
     forceFetch: !1

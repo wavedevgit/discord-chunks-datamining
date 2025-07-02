@@ -2,29 +2,29 @@
 t.a(e, async function(e, r) {
   try {
     t.d(n, {
-      o: () => d
+      o: () => s
     });
     var l = t(255367),
-      i = t(73800),
-      c = t(31675),
-      o = t(95398),
-      u = t(488968),
-      a = e([c]);
+      o = t(73800),
+      i = t(31675),
+      c = t(95398),
+      a = t(488968),
+      u = e([i]);
 
-    function d(e) {
+    function s(e) {
       let {
         children: n,
         node: t
-      } = e, r = i.useMemo(() => Array.from((0, c.h)([t])).some(e => "link" === e.type), [t]), a = (0, u.d)();
-      return i.useEffect(() => {
+      } = e, r = o.useMemo(() => Array.from((0, i.h)([t])).some(e => "link" === e.type), [t]), u = (0, a.d)();
+      return o.useEffect(() => {
         var e;
-        null == a || null == (e = a.setHasSpoilerEmbeds) || e.call(a, r)
-      }, [a, r]), (0, l.jsx)(o.ZP, {
-        type: o.ZP.Types.TEXT,
+        null == u || null == (e = u.setHasSpoilerEmbeds) || e.call(u, r)
+      }, [u, r]), (0, l.jsx)(c.ZP, {
+        type: c.ZP.Types.TEXT,
         children: () => n
       })
     }
-    c = (a.then ? (await a)() : a)[0], r()
+    i = (u.then ? (await u)() : u)[0], r()
   } catch (e) {
     r(e)
   }

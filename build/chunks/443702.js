@@ -86,8 +86,8 @@ class T extends r.PureComponent {
 }
 
 function N() {
-  let e = (0, s.cj)([E.default, b.Z, x.Z, f.default, h.Z, _.ZP], () => {
-    let e = _.ZP.getPremiumTypeSubscription(),
+  let e = (0, s.cj)([E.default, b.Z, x.Z, f.default, h.Z, _.Z], () => {
+    let e = _.Z.getPremiumTypeSubscription(),
       t = f.default.getCurrentUser();
     return null == t ? {
       shouldRenderBillingSettings: !1

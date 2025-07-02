@@ -26,8 +26,8 @@ var i = t(255367),
   E = t(710094),
   S = t(293858),
   v = t(183813),
-  P = t(614223),
-  Z = t(174827),
+  Z = t(614223),
+  P = t(174827),
   b = t(846464),
   I = t(184160),
   O = t(48175),
@@ -72,8 +72,8 @@ function U(e) {
     openInvoiceId: E,
     onSubscriptionConfirmation: S,
     renderPurchaseConfirmation: v,
-    postSuccessGuild: P,
-    followupSKUInfo: Z,
+    postSuccessGuild: Z,
+    followupSKUInfo: P,
     renderHeader: b,
     applicationId: I,
     guildId: O,
@@ -115,8 +115,8 @@ function U(e) {
     openInvoiceId: E,
     onSubscriptionConfirmation: S,
     renderPurchaseConfirmation: v,
-    postSuccessGuild: P,
-    followupSKUInfo: Z,
+    postSuccessGuild: Z,
+    followupSKUInfo: P,
     renderHeader: b,
     applicationId: I,
     guildId: O,
@@ -147,7 +147,7 @@ function k(e) {
     isGift: d,
     skuId: o,
     referralTrialOfferId: s
-  }), x = (0, P.Fv)(p), m = (0, c.id)(C, d, u);
+  }), x = (0, Z.Fv)(p), m = (0, c.id)(C, d, u);
   return (0, i.jsx)(L.J, (n = N({}, e), t = t = {
     breadcrumbSteps: R,
     onReturn: () => {
@@ -188,10 +188,10 @@ let B = [{
   }
 }, {
   key: j.h8.PLAN_SELECT,
-  renderStep: e => (0, i.jsx)(Z.x, N({}, e)),
+  renderStep: e => (0, i.jsx)(P.x, N({}, e)),
   options: {
     renderHeader: !0,
-    useBreadcrumbLabel: e => (0, P.Fv)(e) ? null : w.intl.string(w.t["r+SebW"]),
+    useBreadcrumbLabel: e => (0, Z.Fv)(e) ? null : w.intl.string(w.t["r+SebW"]),
     sectionHeaderText: () => w.intl.string(w.t.UKbp1N)
   }
 }, {
@@ -199,7 +199,7 @@ let B = [{
   renderStep: e => (0, i.jsx)(k, N({}, e)),
   options: {
     renderHeader: !0,
-    useBreadcrumbLabel: e => (0, P.Fv)(e) ? null : w.intl.string(w.t.Sb6wIy)
+    useBreadcrumbLabel: e => (0, Z.Fv)(e) ? null : w.intl.string(w.t.Sb6wIy)
   }
 }, {
   key: j.h8.AWAITING_PURCHASE_TOKEN_AUTH,
@@ -212,7 +212,7 @@ let B = [{
   renderStep: e => (0, i.jsx)(E.l, N({}, e)),
   options: {
     renderHeader: !0,
-    useBreadcrumbLabel: e => (0, P.Fv)(e) ? w.intl.string(w.t.UKbp1N) : w.intl.string(w.t.QBnNHh)
+    useBreadcrumbLabel: e => (0, Z.Fv)(e) ? w.intl.string(w.t.UKbp1N) : w.intl.string(w.t.QBnNHh)
   }
 }, {
   key: j.h8.CONFIRM,
@@ -227,7 +227,7 @@ let B = [{
 }];
 
 function H(e) {
-  let n = (0, r.e7)([p.ZP], () => p.ZP.getPremiumTypeSubscription()),
+  let n = (0, r.e7)([p.Z], () => p.Z.getPremiumTypeSubscription()),
     t = (0, d.Vi)() ? M.Xh.PREMIUM_MONTH_TIER_2 : void 0,
     {
       analyticsLocations: l

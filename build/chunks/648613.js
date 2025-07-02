@@ -88,7 +88,7 @@ function v(e) {
     paymentModalBanner: A,
     isGift: N,
     children: C
-  } = e, R = (0, i.e7)([d.default], () => d.default.getCurrentUser()), P = (0, i.e7)([f.ZP], () => f.ZP.getPremiumTypeSubscription()), {
+  } = e, R = (0, i.e7)([d.default], () => d.default.getCurrentUser()), P = (0, i.e7)([f.Z], () => f.Z.getPremiumTypeSubscription()), {
     analyticsLocations: w
   } = (0, s.ZP)(), D = (0, _.N)(), L = !N && null != D && null != m && p.nG[D.trial_id].skus.includes(m);
   return C({

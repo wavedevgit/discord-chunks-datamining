@@ -124,7 +124,7 @@ let w = e => {
         handleSubscribeModalClose: x,
         intent: j
       }), F(!1)
-    }, Q = E.ZP.getPremiumTypeSubscription(), J = (0, r.jsxs)("div", {
+    }, Q = E.Z.getPremiumTypeSubscription(), J = (0, r.jsxs)("div", {
       className: T.button,
       children: [M, null != S ? S : I.intl.string(I.t.gKmQ1N)]
     }), $ = (0, h.o)("GuildBoostingSubscribeButton", Z, H), ee = !1;

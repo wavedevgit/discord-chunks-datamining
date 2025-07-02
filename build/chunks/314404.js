@@ -417,7 +417,7 @@ function er(e) {
     paymentSources: o,
     shouldRenderUpdatedPaymentModal: s,
     isTrial: l
-  } = e, d = (0, c.e7)([b.ZP], () => b.ZP.getPremiumTypeSubscription()), {
+  } = e, d = (0, c.e7)([b.Z], () => b.Z.getPremiumTypeSubscription()), {
     step: f,
     selectedPlan: _
   } = (0, m.JL)(), {

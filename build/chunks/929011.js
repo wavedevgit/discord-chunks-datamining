@@ -24,8 +24,8 @@ async function S(t) {
     analyticsLocation: b,
     disableGuildSelector: g = !1
   } = t, {
-    promise: P,
-    resolve: _
+    promise: _,
+    resolve: P
   } = Promise.withResolvers();
   if ((0, d.KK)(o.flags) && !1 === g) {
     let {
@@ -49,7 +49,7 @@ async function S(t) {
     m = null;
   return null != y && ([m] = (0, c.E8)({
     groupSku: y,
-    SubscriptionStore: s.ZP,
+    SubscriptionStore: s.Z,
     SubscriptionPlanStore: a.Z,
     mapSubscriptionItems: c.ec,
     guildId: O
@@ -67,10 +67,10 @@ async function S(t) {
     analyticsSubscriptionType: f.NYc.APPLICATION,
     analyticsLocations: I,
     analyticsLocation: b,
-    onComplete: _,
+    onComplete: P,
     showBenefitsFirst: !1,
     forcesTransitionToGuild: !1
-  }), P
+  }), _
 }
 
 function O(t) {

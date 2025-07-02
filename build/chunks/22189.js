@@ -69,7 +69,7 @@ let ed = () => {
     analyticsLocations: e
   } = (0, d.ZP)(c.Z.PREMIUM_MARKETING_PERK_CARD), t = (0, o.ZP)(), n = (0, j.BU)(I.Uq / 1024, {
     useKibibytes: !0
-  }), i = (0, s.e7)([_.ZP], () => _.ZP.getPremiumTypeSubscription()), ec = null != i ? O.ZP.getPremiumPlanItem(i) : null, ed = (null != ec ? O.ZP.getSkuIdForPlan(ec.planId) : null) === I.Si.TIER_2, eu = x.default.getCurrentUser(), em = (0, O.I5)(eu, I.p9.TIER_2), eg = (0, O.I5)(eu, I.p9.TIER_0), ep = (0, m.Z)(b.Z), {
+  }), i = (0, s.e7)([_.Z], () => _.Z.getPremiumTypeSubscription()), ec = null != i ? O.ZP.getPremiumPlanItem(i) : null, ed = (null != ec ? O.ZP.getSkuIdForPlan(ec.planId) : null) === I.Si.TIER_2, eu = x.default.getCurrentUser(), em = (0, O.I5)(eu, I.p9.TIER_2), eg = (0, O.I5)(eu, I.p9.TIER_0), ep = (0, m.Z)(b.Z), {
     isFractionalPremiumActive: eh
   } = (0, u.Z)(), ef = null != i && i.hasPremiumAtLeast(I.p9.TIER_2), eb = (0, g.Nj)(l.z.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE), ex = (0, p.Z)({
     scrollPosition: P.Y_.TRY_IT_OUT,

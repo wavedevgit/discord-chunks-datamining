@@ -23,7 +23,7 @@ let b = function(e) {
     smallGap: n
   } = e, r = t.countryCode, b = (0, l.e7)([o.default], () => o.default.locale);
   (0, u.U)(h.jXE.SETTINGS_PREMIUM_BANNER, r);
-  let x = (0, l.e7)([c.ZP], () => c.ZP.getPremiumTypeSubscription()),
+  let x = (0, l.e7)([c.Z], () => c.Z.getPremiumTypeSubscription()),
     {
       localizedPricingBannerHeader: _,
       localizedPricingBannerBody: E

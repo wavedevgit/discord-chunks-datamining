@@ -109,7 +109,7 @@ function ec() {
     t = (0, L.t7)(),
     n = (0, L.lr)(),
     r = (0, E.ZP)(),
-    s = (0, c.e7)([R.ZP], () => R.ZP.getPremiumTypeSubscription()),
+    s = (0, c.e7)([R.Z], () => R.Z.getPremiumTypeSubscription()),
     a = (0, v.Z)(),
     o = (0, B.W)(),
     d = null !== s && null !== s.planIdFromItems;
@@ -327,8 +327,8 @@ let em = function() {
     {
       analyticsLocations: t
     } = (0, O.ZP)(C.Z.PREMIUM_SETTINGS),
-    n = (0, c.e7)([R.ZP], () => R.ZP.getPremiumTypeSubscription()),
-    s = (0, c.e7)([R.ZP], () => R.ZP.hasFetchedSubscriptions()),
+    n = (0, c.e7)([R.Z], () => R.Z.getPremiumTypeSubscription()),
+    s = (0, c.e7)([R.Z], () => R.Z.hasFetchedSubscriptions()),
     l = (0, T.V)(),
     [a, o] = r.useState(!0),
     u = (0, v.Z)({

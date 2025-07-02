@@ -181,9 +181,9 @@ function A(e) {
   } = (0, u.cj)([C.Z], () => ({
     trialOffer: n ? C.Z.getRelevantUserTrialOffer(t) : null,
     isResolving: !!n && C.Z.isResolving(t)
-  }), [n, t]), a = g.default.getCurrentUser(), o = (0, u.e7)([g.default], () => null != i && (0, y.I5)(void 0 !== a && i.user_id === a.id ? a : g.default.getUser(i.user_id))), s = (0, u.e7)([h.ZP], () => {
+  }), [n, t]), a = g.default.getCurrentUser(), o = (0, u.e7)([g.default], () => null != i && (0, y.I5)(void 0 !== a && i.user_id === a.id ? a : g.default.getUser(i.user_id))), s = (0, u.e7)([h.Z], () => {
     var e;
-    return o ? null == (e = h.ZP.getPremiumTypeSubscription()) ? void 0 : e.trialEndsAt : null
+    return o ? null == (e = h.Z.getPremiumTypeSubscription()) ? void 0 : e.trialEndsAt : null
   }), {
     analyticsLocations: d
   } = (0, f.ZP)(m.Z.SHARE_NITRO_EMBED);

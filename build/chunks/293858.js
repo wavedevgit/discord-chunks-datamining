@@ -30,10 +30,10 @@ function y(e) {
       renderPurchaseConfirmation: E,
       postSuccessGuild: S,
       followupSKUInfo: v,
-      continueSessionToInitialStep: P
+      continueSessionToInitialStep: Z
     } = e,
     {
-      activeSubscription: Z,
+      activeSubscription: P,
       paymentSources: b,
       paymentSourceId: I,
       selectedPlan: O,
@@ -75,7 +75,7 @@ function y(e) {
     null != K && null != K.reminderNotice && Y && (0, o.wH)(a.z.GIFTING_PROMOTION_REMINDER, K.dismissibleContentVersion, {
       dismissAction: g.L.INDIRECT_ACTION
     })
-  }, [K, Y]), n = null != E ? E(O, X, w) : null != P ? (0, i.jsx)(c.VY, {}) : R ? (0, i.jsx)(c.TB, {
+  }, [K, Y]), n = null != E ? E(O, X, w) : null != Z ? (0, i.jsx)(c.VY, {}) : R ? (0, i.jsx)(c.TB, {
     planId: O.id,
     onClose: X
   }) : A.current === O.id ? (0, i.jsx)(c.ZP, {
@@ -90,7 +90,7 @@ function y(e) {
     startingPremiumSubscriptionPlanId: A.current,
     planId: O.id,
     onClose: X,
-    isDowngrade: null != Z && (0, p.GY)(Z, O.id, r),
+    isDowngrade: null != P && (0, p.GY)(P, O.id, r),
     paymentSourceType: J,
     hideClose: z,
     startingFractionalPremiumEndsAt: N.current

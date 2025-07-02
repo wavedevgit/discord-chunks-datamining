@@ -1,6 +1,6 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  i: () => e6
+  i: () => e8
 }), n(539854), n(388685);
 var i = n(255367);
 n(73800);
@@ -135,15 +135,15 @@ let eJ = () => {
     }) : null
   },
   e3 = eD.Z,
-  e6 = e => {
+  e8 = e => {
     let {
       unseenGiftCount: t,
       showPrepaidPaymentPastDueWarning: j,
       impressionSource: N,
       numOfPendingFamilyRequests: R,
       isOverlaySupported: V,
-      isClipsBetaTagShowing: e6 = !1,
-      shouldMergeGameSettings: e8,
+      isClipsBetaTagShowing: e8 = !1,
+      shouldMergeGameSettings: e6,
       isKeywordFilteringEnabled: e2,
       isStaff: e5,
       isInappropriateConversationWarningEnabled: e4,
@@ -283,7 +283,7 @@ let eJ = () => {
         label: eK.intl.string(eK.t.URyqtL),
         ariaLabel: eK.intl.string(eK.t.URyqtL),
         element: eL.Z,
-        predicate: () => e8
+        predicate: () => e6
       },
       [eF.s6.GAMES_MY_GAMES]: {
         section: ez.oAB.GAMES,
@@ -605,9 +605,9 @@ let eJ = () => {
         searchableTitles: [eK.intl.string(eK.t.z2jK6e)],
         label: eK.intl.string(eK.t.z2jK6e),
         ariaLabel: eK.intl.string(eK.t.z2jK6e),
-        icon: e6 ? (0, i.jsx)(C.Z, {}) : void 0,
+        icon: e8 ? (0, i.jsx)(C.Z, {}) : void 0,
         element: O.Z,
-        predicate: () => !e8,
+        predicate: () => !e6,
         url: ez.Z5c.SETTINGS("clips")
       },
       [eF.s6.RESTRICTED_USERS]: {
@@ -1563,23 +1563,23 @@ let eJ = () => {
         label: eK.intl.string(eK.t.Cq98yM),
         ariaLabel: eK.intl.string(eK.t.Cq98yM),
         element: eo.Z,
-        predicate: () => !e8,
+        predicate: () => !e6,
         url: ez.Z5c.SETTINGS("activity-privacy")
       },
       [eF.s6.ACTIVITY_PRIVACY_STATUS]: {
-        section: e8 ? ez.oAB.GAMES : ez.oAB.ACTIVITY_PRIVACY,
+        section: e6 ? ez.oAB.GAMES : ez.oAB.ACTIVITY_PRIVACY,
         searchableTitles: [eK.intl.string(eK.t["8ka8lp"])],
-        parent: e8 ? eF.s6.GAMES_ACTIVITY_PRIVACY : eF.s6.ACTIVITY_PRIVACY
+        parent: e6 ? eF.s6.GAMES_ACTIVITY_PRIVACY : eF.s6.ACTIVITY_PRIVACY
       },
       [eF.s6.ACTIVITY_PRIVACY_RICH_PRESENCE]: {
-        section: e8 ? ez.oAB.GAMES : ez.oAB.ACTIVITY_PRIVACY,
+        section: e6 ? ez.oAB.GAMES : ez.oAB.ACTIVITY_PRIVACY,
         searchableTitles: [eK.intl.string(eK.t.VOszPD)],
-        parent: e8 ? eF.s6.GAMES_ACTIVITY_PRIVACY : eF.s6.ACTIVITY_PRIVACY
+        parent: e6 ? eF.s6.GAMES_ACTIVITY_PRIVACY : eF.s6.ACTIVITY_PRIVACY
       },
       [eF.s6.ACTIVITY_PRIVACY_TOS]: {
-        section: e8 ? ez.oAB.GAMES : ez.oAB.ACTIVITY_PRIVACY,
+        section: e6 ? ez.oAB.GAMES : ez.oAB.ACTIVITY_PRIVACY,
         searchableTitles: [eF.CF],
-        parent: e8 ? eF.s6.GAMES_ACTIVITY_PRIVACY : eF.s6.ACTIVITY_PRIVACY
+        parent: e6 ? eF.s6.GAMES_ACTIVITY_PRIVACY : eF.s6.ACTIVITY_PRIVACY
       },
       [eF.s6.ACTIVITY_PRIVACY_STATUS_DISPLAY]: {
         section: ez.oAB.ACTIVITY_PRIVACY,
@@ -1591,14 +1591,14 @@ let eJ = () => {
         searchableTitles: [eK.intl.string(eK.t.AVDyEh)],
         label: eK.intl.string(eK.t.AVDyEh),
         element: e_.Z,
-        predicate: () => !e8 && (0, ek.Jw)()
+        predicate: () => !e6 && (0, ek.Jw)()
       },
       [eF.s6.OVERLAY]: {
         section: ez.oAB.OVERLAY,
         searchableTitles: [eK.intl.string(eK.t["9cb1U1"]), eK.intl.string(eK.t.HcoRu7)],
         label: eK.intl.string(eK.t["9cb1U1"]),
         element: ev.Z,
-        predicate: () => !e8 && V
+        predicate: () => !e6 && V
       },
       [eF.s6.CHANGELOG]: {
         section: "changelog",

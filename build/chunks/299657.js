@@ -47,7 +47,7 @@ let B = function(e) {
       sourceAnalyticsLocations: s,
       analyticsLocations: B
     } = (0, h.ZP)(p.Z.PREMIUM_MARKETING),
-    M = (0, a.e7)([v.ZP], () => v.ZP.hasFetchedSubscriptions()),
+    M = (0, a.e7)([v.Z], () => v.Z.hasFetchedSubscriptions()),
     U = (0, a.e7)([S.default], () => S.default.getCurrentUser()),
     V = null == U ? void 0 : U.id,
     G = (0, R.N)(),

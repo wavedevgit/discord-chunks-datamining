@@ -111,8 +111,8 @@ var i = n(255367),
   e0 = n(998502),
   e1 = n(578817),
   e3 = n(870569),
-  e6 = n(345243),
-  e8 = n(115530),
+  e8 = n(345243),
+  e6 = n(115530),
   e2 = n(981631),
   e5 = n(215023),
   e4 = n(921944),
@@ -625,12 +625,12 @@ class to extends r.PureComponent {
       return null == e ? null : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
           className: te.panelTitleContainer,
-          children: (0, i.jsx)(e8.Z, {
+          children: (0, i.jsx)(e6.Z, {
             children: e$.ZP.getName(e)
           })
         }), (0, i.jsx)("div", {
           className: te.panelSubtextContainer,
-          children: (0, i.jsx)(e6.Z, {
+          children: (0, i.jsx)(e8.Z, {
             children: this.renderStatus()
           })
         })]
@@ -746,7 +746,7 @@ function td() {
       var e;
       return (0, Z.fD)() ? null == (e = D.C.getCurrentBuildOverride().overrides) ? void 0 : e.discord_web : null
     }),
-    T = (0, d.e7)([eF.ZP], () => eF.ZP.getPremiumTypeSubscription()),
+    T = (0, d.e7)([eF.Z], () => eF.Z.getPremiumTypeSubscription()),
     N = (0, d.e7)([eL.Z], () => eL.Z.getSpeakingWhileMuted()),
     I = (0, d.e7)([w.Z], () => w.Z.isFullscreenInContext()),
     P = (0, d.e7)([ek.Z], () => ek.Z.hasLayers()),

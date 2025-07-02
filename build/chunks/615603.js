@@ -145,7 +145,7 @@ let w = function(e) {
   let t, n, {
       guildBoostSlots: s
     } = e,
-    p = (0, o.e7)([_.ZP], () => _.ZP.getPremiumTypeSubscription()),
+    p = (0, o.e7)([_.Z], () => _.Z.getPremiumTypeSubscription()),
     h = (null == p ? void 0 : p.isPausedOrPausePending) === !0,
     {
       fractionalState: S

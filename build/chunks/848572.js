@@ -2,7 +2,7 @@
 t.d(n, {
   GG: () => E,
   Rw: () => O,
-  SI: () => P,
+  SI: () => j,
   Vq: () => f,
   a1: () => p,
   kG: () => _,
@@ -66,8 +66,8 @@ let p = e => (0, i.e7)([d.Z], () => {
 function E() {
   let e = (0, i.e7)([s.default], () => s.default.getCurrentUser()),
     n = (0, c.M5)(e, g.p9.TIER_2),
-    t = (0, i.e7)([o.ZP], () => {
-      let e = o.ZP.getPremiumSubscription();
+    t = (0, i.e7)([o.Z], () => {
+      let e = o.Z.getPremiumSubscription();
       return null != e && n ? e.premiumSince : null
     }, [n]),
     l = p(null == e ? void 0 : e.id);
@@ -76,7 +76,7 @@ function E() {
 let x = () => {
     let e = Object.values(g.vK),
       n = (0, i.e7)([s.default], () => s.default.getCurrentUser()),
-      t = (0, i.e7)([o.ZP], () => o.ZP.getPremiumTypeSubscription());
+      t = (0, i.e7)([o.Z], () => o.Z.getPremiumTypeSubscription());
     if (!(0, c.M5)(n, g.p9.TIER_2) || null == t || null == t.premiumSince) return null;
     let l = a()(),
       r = a()(t.premiumSince).add(1, "day"),
@@ -91,7 +91,7 @@ let x = () => {
   },
   N = () => {
     let e = _(),
-      n = (0, i.e7)([o.ZP], () => o.ZP.getPremiumTypeSubscription());
+      n = (0, i.e7)([o.Z], () => o.Z.getPremiumTypeSubscription());
     return null == e || null == n || null == n.premiumSince ? null : (0, u.RZ)(e, n.premiumSince)
   },
   T = () => {
@@ -108,7 +108,7 @@ let x = () => {
   },
   O = () => {
     let e = (0, i.e7)([s.default], () => s.default.getCurrentUser()),
-      n = P(null == e ? void 0 : e.id),
+      n = j(null == e ? void 0 : e.id),
       t = N(),
       l = T();
     return null != n ? b(v({}, n), {
@@ -116,7 +116,7 @@ let x = () => {
       status: "earned"
     }) : null != l ? l : null
   },
-  P = e => {
+  j = e => {
     let n = (0, m.l)(e);
     return null == n ? null : g.vK[n]
   }

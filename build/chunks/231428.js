@@ -203,7 +203,7 @@ function k(e) {
 
 function L(e) {
   let t = (0, u.e7)([E.Z], () => E.Z.getPayments()),
-    n = (0, u.e7)([C.ZP], () => C.ZP.getPremiumTypeSubscription()),
+    n = (0, u.e7)([C.Z], () => C.Z.getPremiumTypeSubscription()),
     i = s.useMemo(() => new Set(t.filter(k).map(e => {
       let {
         subscription: t

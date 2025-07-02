@@ -2,22 +2,22 @@
 t.a(e, async function(e, r) {
   try {
     t.d(n, {
-      Kq: () => u,
-      ZP: () => s
+      Kq: () => a,
+      ZP: () => d
     });
     var l = t(255367),
-      i = t(31675),
-      c = t(73800),
-      o = e([i]);
-    i = (o.then ? (await o)() : o)[0];
-    let f = (0, c.createContext)(null);
+      o = t(31675),
+      i = t(73800),
+      c = e([o]);
+    o = (c.then ? (await c)() : c)[0];
+    let f = (0, i.createContext)(null);
 
-    function u() {
-      return (0, c.useContext)(f)
+    function a() {
+      return (0, i.useContext)(f)
     }
-    let _ = new Set(["bold", "italic", "underline", "strikethrough", "spoiler", "emoji", "timestamp", "mention", "link", "code", "code_block", "heading", "list", "quote", "small"]);
+    let h = new Set(["bold", "italic", "underline", "strikethrough", "spoiler", "emoji", "timestamp", "mention", "link", "code", "code_block", "heading", "list", "quote", "small"]);
 
-    function a({
+    function u({
       node: e,
       renderers: n,
       ...t
@@ -28,7 +28,7 @@ t.a(e, async function(e, r) {
         }(r, e.type), Array.isArray(e.value)) return (0, l.jsx)(r, {
         node: e,
         ...t,
-        children: (0, l.jsx)(d, {
+        children: (0, l.jsx)(s, {
           nodes: e.value,
           renderers: n
         })
@@ -44,16 +44,16 @@ t.a(e, async function(e, r) {
             ...t
           });
         case "link": {
-          let i = e.value,
-            c = null;
-          if ("normal" === i.type) {
+          let o = e.value,
+            i = null;
+          if ("normal" === o.type) {
             let {
               value: {
                 text: e,
                 url: t
               }
-            } = i;
-            c = e ? (0, l.jsx)(d, {
+            } = o;
+            i = e ? (0, l.jsx)(s, {
               nodes: e,
               renderers: n
             }) : t
@@ -62,7 +62,7 @@ t.a(e, async function(e, r) {
             node: e,
             ...e.value,
             ...t,
-            children: c
+            children: i
           })
         }
         case "text":
@@ -77,22 +77,22 @@ t.a(e, async function(e, r) {
             node: e,
             level: e.value.level,
             ...t,
-            children: (0, l.jsx)(d, {
+            children: (0, l.jsx)(s, {
               nodes: e.value.content,
               renderers: n
             })
           });
         case "list": {
-          let i = n.listItem ?? "li";
+          let o = n.listItem ?? "li";
           return (0, l.jsx)(r, {
             node: e,
             ...e.value,
             ...t,
-            children: e.value.items.map((t, r) => (0, l.jsx)(i, {
+            children: e.value.items.map((t, r) => (0, l.jsx)(o, {
               node: t,
               siblings: e.value.items,
               index: r,
-              children: (0, l.jsx)(d, {
+              children: (0, l.jsx)(s, {
                 nodes: t.content,
                 renderers: n
               })
@@ -107,7 +107,7 @@ t.a(e, async function(e, r) {
           return (0, l.jsx)(r, {
             node: e,
             ...t,
-            children: (0, l.jsx)(d, {
+            children: (0, l.jsx)(s, {
               nodes: e.value.content,
               renderers: n
             })
@@ -117,12 +117,12 @@ t.a(e, async function(e, r) {
       }
     }
 
-    function d({
+    function s({
       nodes: e,
       renderers: n
     }) {
       return (0, l.jsx)(l.Fragment, {
-        children: e.map((t, r) => (0, l.jsx)(a, {
+        children: e.map((t, r) => (0, l.jsx)(u, {
           node: t,
           renderers: n,
           siblings: e,
@@ -131,18 +131,18 @@ t.a(e, async function(e, r) {
       })
     }
 
-    function s({
+    function d({
       content: e,
       renderers: n
     }) {
-      let t = (0, c.useMemo)(() => {
-          let e = Object.keys(n).filter(e => _.has(e));
+      let t = (0, i.useMemo)(() => {
+          let e = Object.keys(n).filter(e => h.has(e));
           return e.length > 0 ? e : null
         }, [n]),
-        r = (0, c.useMemo)(() => (0, i.Q)(e, t), [e, t]);
+        r = (0, i.useMemo)(() => (0, o.Q)(e, t), [e, t]);
       return (0, l.jsx)(f.Provider, {
         value: r,
-        children: (0, l.jsx)(d, {
+        children: (0, l.jsx)(s, {
           nodes: r,
           renderers: n
         })
