@@ -30,22 +30,22 @@ function C(e) {
     transitionState: d,
     updateAnalyticsState: h,
     refreshCategories: C
-  } = e, x = v();
-  O(x);
-  let S = (0, a.e7)([o.Z], () => o.Z.useReducedMotion),
+  } = e, S = v();
+  O(S);
+  let x = (0, a.e7)([o.Z], () => o.Z.useReducedMotion),
     {
       setCategoryRef: E,
       handleScrollToCategory: j
     } = (0, g.xV)(s.current),
     y = l.useCallback(async (e, t, r) => {
       h(e, t);
-      let l = r && !n && !S,
+      let l = r && !n && !x,
         a = t === i.T.ORB ? m.AW.ORBS : m.AW.CATALOG;
       await u(a, l), null != t && j(t)
-    }, [n, S, u, j, h]);
-  return null != x ? (0, r.jsx)(f.Z, {
+    }, [n, x, u, j, h]);
+  return null != S ? (0, r.jsx)(f.Z, {
     onRetry: C,
-    errorMessage: x,
+    errorMessage: S,
     errorOrigin: f.i.SHOP_PAGE
   }) : _.includes(t) ? (0, r.jsx)(b.Z, {
     isFullScreen: n,

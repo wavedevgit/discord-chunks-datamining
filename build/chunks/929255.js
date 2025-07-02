@@ -32,10 +32,10 @@ function _(e) {
   } = (0, p.h)({
     scrollerRef: n,
     sortedCategories: f
-  }), O = (0, c.F)("CollectiblesBrowse"), [x, S] = l.useState(O);
+  }), O = (0, c.F)("CollectiblesBrowse"), [S, x] = l.useState(O);
   return l.useEffect(() => {
-    O || S(!1)
-  }, [O, S]), (0, r.jsx)("div", {
+    O || x(!1)
+  }, [O, x]), (0, r.jsx)("div", {
     className: a()(b.pageWrapper, {
       [b.pageWrapperFilter]: O
     }),
@@ -51,12 +51,12 @@ function _(e) {
         children: [O && (0, r.jsx)("div", {
           className: b.controls,
           children: (0, r.jsx)(o.zxk, {
-            onClick: () => S(e => !e),
+            onClick: () => x(e => !e),
             look: o.iLD.OUTLINED,
             color: o.Ttl.TRANSPARENT,
             children: (0, r.jsxs)("div", {
               className: b.filterButton,
-              children: [h.intl.string(x ? h.t.fYtm6e : h.t.TeTYEx), (0, r.jsx)(o.gXV, {
+              children: [h.intl.string(S ? h.t.fYtm6e : h.t.TeTYEx), (0, r.jsx)(o.gXV, {
                 size: "xs",
                 color: "var(--button-outline-primary-text)"
               })]
@@ -78,7 +78,7 @@ function _(e) {
             handlePageChange: C
           })
         })]
-      }), x && (0, r.jsx)("aside", {
+      }), S && (0, r.jsx)("aside", {
         className: b.filterBar,
         children: (0, r.jsx)(d.Z, {})
       })]

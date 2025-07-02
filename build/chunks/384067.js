@@ -22,12 +22,12 @@ let b = e => {
     wideBannerBlock: b,
     handleTransition: m,
     tab: _
-  } = e, C = null == (t = u.Z.getCategoryByStoreListingId(b.categoryStoreListingId)) ? void 0 : t.skuId, v = l.useRef(null), O = l.useRef(null), [x, S] = l.useState();
+  } = e, C = null == (t = u.Z.getCategoryByStoreListingId(b.categoryStoreListingId)) ? void 0 : t.skuId, v = l.useRef(null), O = l.useRef(null), [S, x] = l.useState();
   l.useEffect(() => {
     let e = O.current;
     if (null == e) return;
     let t = () => {
-      e.naturalWidth > 0 && e.naturalHeight > 0 && S(1080 * (e.naturalHeight / e.naturalWidth))
+      e.naturalWidth > 0 && e.naturalHeight > 0 && x(1080 * (e.naturalHeight / e.naturalWidth))
     };
     return e.complete ? t() : e.onload = t, () => {
       e.onload = null
@@ -39,7 +39,7 @@ let b = e => {
     } = (0, d.E)(E, "home", "marketing wide banner"),
     y = b.bannerUrl;
   if (null == y) return null;
-  let P = _ === p.AW.ORBS;
+  let T = _ === p.AW.ORBS;
   return (0, r.jsx)(o.$, {
     innerRef: v,
     onChange: j,
@@ -47,27 +47,27 @@ let b = e => {
     children: (0, r.jsxs)("div", {
       ref: v,
       className: a()(h.row, h.between, h.bannerBlockContainer, h.centeredSection, {
-        [h.extraRounded]: P
+        [h.extraRounded]: T
       }),
       children: [(0, r.jsx)("div", {
         className: a()(h.wideBannerBackgroundImg, {
-          [h.extraRounded]: P
+          [h.extraRounded]: T
         }),
         children: (0, r.jsx)("img", {
           ref: O,
           src: y,
           alt: b.title,
           className: a()(h.wideBannerArt, {
-            [h.wideBannerArtOrbs]: P
+            [h.wideBannerArtOrbs]: T
           }),
           style: {
-            height: null != x ? "".concat(x, "px") : "auto"
+            height: null != S ? "".concat(S, "px") : "auto"
           }
         })
       }), (0, r.jsx)("div", {
         className: h.wideBannerContentContainer,
         style: {
-          maxHeight: null != x ? "".concat(x, "px") : "auto"
+          maxHeight: null != S ? "".concat(S, "px") : "auto"
         },
         children: (0, r.jsxs)("div", {
           className: h.wideBannerTextContainer,
@@ -75,16 +75,16 @@ let b = e => {
             style: {
               color: null != (n = b.bannerTextColor) ? n : "var(--header-primary)"
             },
-            className: P ? h.wideBannerOrbsHeading : void 0,
-            variant: P ? "heading-xl/bold" : "heading-lg/semibold",
+            className: T ? h.wideBannerOrbsHeading : void 0,
+            variant: T ? "heading-xl/bold" : "heading-lg/semibold",
             children: b.title
           }), (0, r.jsx)(s.Text, {
             style: {
               color: null != (i = b.bannerTextColor) ? i : "var(--text-muted)"
             },
             lineClamp: 2,
-            variant: P ? "text-md/medium" : "text-sm/medium",
-            children: P ? f.intl.format(f.t.SFFP7O, {
+            variant: T ? "text-md/medium" : "text-sm/medium",
+            children: T ? f.intl.format(f.t.SFFP7O, {
               helpdeskArticle: c.Z.getArticleURL(g.BhN.VIRTUAL_CURRENCY_LEARN_MORE)
             }) : b.body
           })]

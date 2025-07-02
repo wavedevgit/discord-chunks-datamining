@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  Z: () => k
+  Z: () => P
 }), n(388685);
 var r = n(255367),
   l = n(73800),
@@ -22,48 +22,48 @@ var r = n(255367),
   C = n(243126),
   v = n(38900),
   O = n(709999),
-  x = n(328626),
-  S = n(619899),
+  S = n(328626),
+  x = n(619899),
   E = n(215023),
   j = n(981631),
   y = n(388032),
-  P = n(806734);
-let k = e => {
+  T = n(806734);
+let P = e => {
   var t;
   let {
     isLoading: n,
     sortedSkuIds: i,
-    handleTransition: k,
-    numVisibleItems: T,
-    tab: L
-  } = e, I = (0, o.e7)([d.default], () => d.default.getCurrentUser()), B = h.ZP.canUseCollectibles(I), N = (0, _.s)("useShopHomeSorting") && L === E.AW.HOME, {
+    handleTransition: P,
+    numVisibleItems: k,
+    tab: I
+  } = e, L = (0, o.e7)([d.default], () => d.default.getCurrentUser()), B = h.ZP.canUseCollectibles(L), N = (0, _.s)("useShopHomeSorting") && I === E.AW.HOME, {
     sortType: w,
     setSortType: A,
-    sortedItems: Z,
-    sortOptions: R,
+    sortedItems: R,
+    sortOptions: Z,
     shuffleProducts: H,
     showRecommendationOption: M
-  } = (0, C.N)(i, B), D = (0, S.St)(Z), F = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), W = (0, o.e7)([p.Z], () => p.Z.isFocused()), V = !F && W, {
+  } = (0, C.N)(i, B), D = (0, x.St)(R), F = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), W = (0, o.e7)([p.Z], () => p.Z.isFocused()), V = !F && W, {
     animationPhase: U,
-    startAnimation: z
-  } = (0, x.y)(), G = (0, b.sp)(), q = null != (t = null == G ? void 0 : G.sessionId) ? t : "", Y = l.useRef(null), K = l.useCallback(e => {
-    z({
+    startAnimation: G
+  } = (0, S.y)(), z = (0, b.sp)(), Y = null != (t = null == z ? void 0 : z.sessionId) ? t : "", q = l.useRef(null), K = l.useCallback(e => {
+    G({
       isShuffling: !1,
       onOutroComplete: () => A(e)
     }), g.default.track(j.rMx.COLLECTIBLES_SHOP_FEED_SORT_CHANGED, {
-      page_session_id: q,
+      page_session_id: Y,
       sort_type: e
     })
-  }, [z, A, q]);
-  return null == I ? null : (0, r.jsxs)("div", {
-    className: a()(P.popularPicksSection, P.centeredSection),
+  }, [G, A, Y]);
+  return null == L ? null : (0, r.jsxs)("div", {
+    className: a()(T.popularPicksSection, T.centeredSection),
     children: [(0, r.jsxs)("div", {
-      className: P.blockHeader,
+      className: T.blockHeader,
       children: [(0, r.jsxs)("div", {
-        className: P.headerLeft,
+        className: T.headerLeft,
         children: [(0, r.jsx)(s.X6q, {
           variant: "heading-lg/semibold",
-          children: L === E.AW.ORBS ? y.intl.string(y.t.dFgeub) : y.intl.string(y.t.NSv5KS)
+          children: I === E.AW.ORBS ? y.intl.string(y.t.dFgeub) : y.intl.string(y.t.NSv5KS)
         }), M && (0, r.jsx)(s.ua7, {
           text: y.intl.string(y.t["3taPdn"]),
           position: "top",
@@ -89,7 +89,7 @@ let k = e => {
               return e
             }({}, e), n = n = {
               onClick: () => (0, c.Z)(f.Z.getArticleURL(j.BhN.DATA_USED_FOR_RECOMMENDED)),
-              className: P.informationIcon,
+              className: T.informationIcon,
               children: (0, r.jsx)(s.d3s, {
                 size: "sm"
               })
@@ -106,51 +106,51 @@ let k = e => {
           }
         })]
       }), (0, r.jsxs)("div", {
-        className: P.headerRight,
+        className: T.headerRight,
         children: [N && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(s.Text, {
             variant: "text-md/medium",
             children: y.intl.string(y.t.uaX709)
           }), (0, r.jsx)(s.PhF, {
-            options: R,
+            options: Z,
             select: K,
-            className: P.sortSelect,
+            className: T.sortSelect,
             isSelected: e => e === w,
             serialize: e => e
           })]
-        }), L === E.AW.HOME && (N ? (0, r.jsx)(s.zxk, {
+        }), I === E.AW.HOME && (N ? (0, r.jsx)(s.zxk, {
           color: s.Ttl.PRIMARY,
-          buttonRef: Y,
+          buttonRef: q,
           onClick: () => {
-            z({
+            G({
               isShuffling: !0,
               onOutroComplete: H,
-              returnRef: Y
+              returnRef: q
             }), g.default.track(j.rMx.COLLECTIBLES_SHOP_FEED_SHUFFLE_CLICKED, {
-              page_session_id: q
+              page_session_id: Y
             })
           },
-          disabled: U !== x.g.MOUNTED && U !== x.g.FINISHED,
+          disabled: U !== S.g.MOUNTED && U !== S.g.FINISHED,
           children: y.intl.string(y.t.X3tnc3)
         }) : (0, r.jsx)(s.zxk, {
           color: s.Ttl.PRIMARY,
           look: s.iLD.FILLED,
-          onClick: () => k("shop all top"),
+          onClick: () => P("shop all top"),
           children: y.intl.string(y.t.xFcotb)
         }))]
       })]
     }), (0, r.jsx)("div", {
-      className: P.feed,
+      className: T.feed,
       children: n ? (0, r.jsx)(r.Fragment, {
         children: [...Array(12)].map((e, t) => (0, r.jsx)(v.K, {}, t + 1))
-      }) : D.slice(0, T).map((e, t) => {
+      }) : D.slice(0, k).map((e, t) => {
         let n, l = m.Z.getCategoryForProduct(e.skuId);
         if (null == e || null == l) return null;
         if (V)
-          if (U === x.g.SHUFFLE_OUT) return (0, r.jsx)("div", {
-            className: P.shuffleOutro
+          if (U === S.g.SHUFFLE_OUT) return (0, r.jsx)("div", {
+            className: T.shuffleOutro
           }, "".concat(e.skuId, "-").concat(t));
-          else U === x.g.SORT_OUT ? n = P.sortChangedOutro : U === x.g.SHUFFLE_IN ? n = P.shuffleIntro : U === x.g.SORT_IN && (n = P.sortChangedIntro);
+          else U === S.g.SORT_OUT ? n = T.sortChangedOutro : U === S.g.SHUFFLE_IN ? n = T.shuffleIntro : U === S.g.SORT_IN && (n = T.sortChangedIntro);
         return (0, r.jsx)(b.k0, {
           newValue: {
             tilePosition: t,
@@ -160,8 +160,8 @@ let k = e => {
           children: (0, r.jsx)(O.Z, {
             product: e,
             category: l,
-            user: I,
-            tab: L,
+            user: L,
+            tab: I,
             className: n
           })
         }, null == e ? void 0 : e.skuId)

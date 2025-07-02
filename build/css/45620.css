@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: b11c16095de4e65f
+  Original File Name: 4259c62ec739a25d
 **/
 .countDownWrapper_a1b7b8 {
     align-items: center;
@@ -979,7 +979,6 @@
 }
 
 .filterCheckboxes__11877 {
-    cursor: pointer;
     gap: 4px
 }
 
@@ -989,6 +988,7 @@
 
 .filterCheckbox__11877 {
     align-items: center;
+    cursor: pointer;
     display: flex;
     gap: 8px;
     height: 24px;
@@ -1029,12 +1029,21 @@
     white-space: nowrap
 }
 
+.themeToggled__11877 {
+    background-color: var(--brand-500)
+}
+
 .circle__11877 {
     background-image: linear-gradient(180deg,transparent 0,rgba(0,0,0,.3));
     border-radius: 50%;
     cursor: pointer;
     height: 36px;
     width: 36px
+}
+
+.circleToggled__11877 {
+    outline: 2px solid var(--brand-500);
+    outline-offset: 1px
 }
 
 .loadingContainer__08415 {
@@ -1791,4 +1800,4 @@
     cursor: pointer
 }
 
-/*# sourceMappingURL=b11c16095de4e65f.css.map*/
+/*# sourceMappingURL=4259c62ec739a25d.css.map*/

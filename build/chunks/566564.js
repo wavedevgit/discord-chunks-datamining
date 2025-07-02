@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  Z: () => k
+  Z: () => P
 }), n(388685);
 var r = n(255367),
   l = n(73800),
@@ -22,12 +22,12 @@ var r = n(255367),
   C = n(580914),
   v = n(963278),
   O = n(921120),
-  x = n(384067),
-  S = n(215023),
+  S = n(384067),
+  x = n(215023),
   E = n(981631),
   j = n(388032),
   y = n(806734);
-let P = e => {
+let T = e => {
     var t;
     let {
       handleTransition: n,
@@ -38,7 +38,7 @@ let P = e => {
     } = e, {
       noCache: h,
       includeUnpublished: O
-    } = (0, b.Z)(), S = (0, u.sp)(), E = null != (t = null == S ? void 0 : S.sessionId) ? t : "";
+    } = (0, b.Z)(), x = (0, u.sp)(), E = null != (t = null == x ? void 0 : x.sessionId) ? t : "";
     l.useEffect(() => {
       (0, g.n)({
         sessionId: E,
@@ -51,9 +51,9 @@ let P = e => {
     }, [c]);
     let {
       isFetchingShopHome: j,
-      fetchShopHomeError: P,
-      shopBlocks: k,
-      refreshShopHome: T
+      fetchShopHomeError: T,
+      shopBlocks: P,
+      refreshShopHome: k
     } = (0, p.E)(c, {
       noCache: h,
       includeUnpublished: O,
@@ -63,11 +63,11 @@ let P = e => {
       sessionId: E,
       tab: c,
       isFullScreen: d
-    }), L = l.useCallback(() => {
-      T()
-    }, [T]);
+    }), I = l.useCallback(() => {
+      k()
+    }, [k]);
     if (l.useEffect(() => {
-        null != P || j || 0 === k.length || (0, g.n)({
+        null != T || j || 0 === P.length || (0, g.n)({
           sessionId: E,
           checkpoint: g.a.SHOP_RENDERED,
           tab: c,
@@ -75,12 +75,12 @@ let P = e => {
           unpublishedCategoriesShown: O,
           cacheDisabled: h
         })
-      }, [P, j, k.length, O, h, E, c, d]), null != P) return (0, r.jsx)(f.Z, {
-      onRetry: L,
+      }, [T, j, P.length, O, h, E, c, d]), null != T) return (0, r.jsx)(f.Z, {
+      onRetry: I,
       errorOrigin: f.i.SHOP_PAGE,
-      errorMessage: P.message
+      errorMessage: T.message
     });
-    if (j || 0 === k.length) return (0, r.jsxs)("div", {
+    if (j || 0 === P.length) return (0, r.jsxs)("div", {
       className: y.loadingContainer,
       children: [(0, r.jsx)(C.Z, {
         isLoading: j,
@@ -97,7 +97,7 @@ let P = e => {
         tab: c
       })]
     });
-    let I = (e, t) => {
+    let L = (e, t) => {
       if (null == e) return null;
       let l = null;
       switch (e.type) {
@@ -127,7 +127,7 @@ let P = e => {
           }, t);
           break;
         case o.z.WIDE_BANNER:
-          l = (0, r.jsx)(x.Z, {
+          l = (0, r.jsx)(S.Z, {
             handleTransition: n,
             wideBannerBlock: e,
             tab: c
@@ -151,23 +151,23 @@ let P = e => {
       }, t)
     };
     return (0, r.jsx)(r.Fragment, {
-      children: k.map((e, t) => I(e, t))
+      children: P.map((e, t) => L(e, t))
     })
   },
-  k = e => {
+  P = e => {
     let {
       isFullScreen: t,
       scrollerRef: n,
       handleTransition: i,
       tab: o,
       transitionState: p
-    } = e, g = (0, d.R)("CollectiblesFeedShop"), f = (0, h.R)(), b = (0, u.sp)(), [m, _] = l.useState(S.IV), [C, v] = l.useState(!1);
+    } = e, g = (0, d.R)("CollectiblesFeedShop"), f = (0, h.R)(), b = (0, u.sp)(), [m, _] = l.useState(x.IV), [C, v] = l.useState(!1);
     return l.useEffect(() => {
       if (null != n.current) {
         let e = () => {
             if (null == n.current) return;
             let e = n.current.getDistanceFromBottom();
-            m >= g ? v(e < 20) : e <= 200 && _(e => e + S.IV)
+            m >= g ? v(e < 20) : e <= 200 && _(e => e + x.IV)
           },
           t = n.current.getScrollerNode();
         return null == t || t.addEventListener("scroll", e), () => {
@@ -178,13 +178,13 @@ let P = e => {
       className: y.shop,
       children: [(0, r.jsxs)("div", {
         className: a()(y.content, y.mainContent),
-        children: [(0, r.jsx)(P, {
+        children: [(0, r.jsx)(T, {
           handleTransition: i,
           numVisibleItems: m,
           isFetchingCategories: f,
           tab: o,
           isFullScreen: t
-        }), o !== S.AW.CATALOG && m >= g && (0, r.jsxs)("div", {
+        }), o !== x.AW.CATALOG && m >= g && (0, r.jsxs)("div", {
           className: y.endOfFeed,
           children: [(0, r.jsx)(s.X6q, {
             variant: "heading-md/semibold",
@@ -195,7 +195,7 @@ let P = e => {
               i("shop all button", void 0, !0), c.default.track(E.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                 collectibles_shop_session_id: null == b ? void 0 : b.sessionId,
                 page_type: o,
-                page_category: o === S.AW.HOME || null == b ? void 0 : b.pageCategory,
+                page_category: o === x.AW.HOME || null == b ? void 0 : b.pageCategory,
                 cta_name: "shop the whole shop button"
               })
             },
@@ -209,13 +209,13 @@ let P = e => {
       }), !t && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(O.Z, {
           peaking: C,
-          transitioning: p === S.f7.OUT
+          transitioning: p === x.f7.OUT
         }), (0, r.jsx)(O.Z, {
           style: {
             left: 1850
           },
           peaking: C,
-          transitioning: p === S.f7.OUT
+          transitioning: p === x.f7.OUT
         })]
       })]
     })
