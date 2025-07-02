@@ -109,8 +109,8 @@ var i = n(255367),
   eJ = n(374023),
   e$ = n(51144),
   e0 = n(998502),
-  e1 = n(578817),
-  e3 = n(870569),
+  e3 = n(578817),
+  e1 = n(870569),
   e8 = n(345243),
   e6 = n(115530),
   e2 = n(981631),
@@ -490,7 +490,7 @@ class to extends r.PureComponent {
     }), tt(this, "handleOpenAccountSettings", () => {
       this.handleOpenSettings()
     }), tt(this, "handleOpenSettings", function() {
-      let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : (0, e1.Q)("Account").jumpToVoice && eB.Z.isConnected() ? e2.oAB.VOICE : e2.oAB.ACCOUNT,
+      let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : (0, e3.Q)("Account").jumpToVoice && eB.Z.isConnected() ? e2.oAB.VOICE : e2.oAB.ACCOUNT,
         t = arguments.length > 1 ? arguments[1] : void 0,
         n = arguments.length > 2 ? arguments[2] : void 0;
       x.Z.open(e, t, n)
@@ -856,7 +856,7 @@ function tu(e) {
     }) : h === u.z.SOUNDBOARD_VOLUME_EDUCATION ? () => (0, i.jsx)(em.Z, {
       markAsDismissed: b
     }) : h === u.z.PER_GUILD_COLLECTIBLES_CUSTOMIZATION_COACHMARK ? () => (0, i.jsx)(eh.Z, {}) : () => (0, i.jsx)(i.Fragment, {}),
-    children: () => (0, i.jsx)(e3.Z, ti(tn({
+    children: () => (0, i.jsx)(e1.Z, ti(tn({
       ref: d,
       tooltipText: null != t ? e9.intl.formatToPlainString(e9.t.Gzh6ZG, {
         webBuildOverride: t.id
@@ -960,7 +960,7 @@ function tm(e) {
       className: l()(te.micButtonParent, {
         [te.hasColorGlow]: en
       }),
-      children: [(0, i.jsx)(e3.Z, {
+      children: [(0, i.jsx)(e1.Z, {
         tooltipText: F,
         tooltipColor: m,
         tooltipForceOpen: g,
@@ -1049,7 +1049,7 @@ function tm(e) {
                   markAsDismissed: s,
                   onCTA: () => X(!0)
                 }));
-                let c = () => (0, i.jsx)(e3.Z, tn({
+                let c = () => (0, i.jsx)(e1.Z, tn({
                   ref: v,
                   plated: null != j,
                   tooltipForceOpen: J,
@@ -1127,7 +1127,7 @@ function tg(e) {
   }, [o, _]);
   return (0, i.jsx)(A.Gt, {
     value: _,
-    children: (0, i.jsx)(e3.Z, {
+    children: (0, i.jsx)(e1.Z, {
       plated: null != d,
       tooltipText: (0, k.Z)(t, n, s),
       onMouseEnter: h,
