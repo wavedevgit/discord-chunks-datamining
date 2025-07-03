@@ -26,8 +26,8 @@ var r = n(255367),
   y = n(823379),
   O = n(102172),
   Z = n(981631),
-  I = n(676462),
-  w = n(388032),
+  w = n(676462),
+  I = n(388032),
   N = n(152965);
 
 function T(e) {
@@ -105,7 +105,7 @@ function E(e) {
     className: s()(N.root, n),
     children: [(0, r.jsx)(a.E1j, {
       className: N.searchBar,
-      placeholder: w.intl.string(w.t["3jvv+/"]),
+      placeholder: I.intl.string(I.t["3jvv+/"]),
       query: u,
       size: a.E1j.Sizes.MEDIUM,
       onChange: e => l({
@@ -122,7 +122,7 @@ function E(e) {
         return (0, r.jsx)(a.Text, {
           variant: "text-xs/semibold",
           color: "text-muted",
-          children: w.intl.string(I.default.FZ9Fl5)
+          children: I.intl.string(w.default.FZ9Fl5)
         })
       },
       sections: [R.length],
@@ -152,11 +152,11 @@ function P() {
       className: N.emptyHeader,
       variant: "text-lg/medium",
       color: "header-primary",
-      children: w.intl.string(I.default.sWGfr6)
+      children: I.intl.string(w.default.sWGfr6)
     }), (0, r.jsx)(a.Text, {
       variant: "text-sm/medium",
       color: "text-secondary",
-      children: w.intl.string(I.default.nBRtt7)
+      children: I.intl.string(w.default.nBRtt7)
     })]
   })
 }

@@ -44,10 +44,10 @@ function C() {
     fps: y,
     sourceType: O,
     resolution: Z
-  }, I] = (0, h.E_)(), w = (0, m.Z)(), N = (0, l.e7)([a.default], () => a.default.getCurrentUser()), [T, E] = null != (e = (0, g.Z)(_.tI.PRESET_VIDEO)) ? e : [_.LY.RESOLUTION_720, _.ws.FPS_30], [P, R] = null != (t = (0, g.Z)(_.tI.PRESET_DOCUMENTS)) ? t : [_.LY.RESOLUTION_SOURCE, _.ws.FPS_15], [k, A] = null != (n = (0, g.Z)(C)) ? n : [Z, y], M = i.useMemo(() => C === _.tI.PRESET_VIDEO ? T : C === _.tI.PRESET_DOCUMENTS ? P : Z, [C, T, P, Z]), L = i.useMemo(() => C === _.tI.PRESET_VIDEO ? E : C === _.tI.PRESET_DOCUMENTS ? R : y, [C, E, R, y]), D = C === _.tI.PRESET_DOCUMENTS, B = p.Vf.map(e => {
+  }, w] = (0, h.E_)(), I = (0, m.Z)(), N = (0, l.e7)([a.default], () => a.default.getCurrentUser()), [T, E] = null != (e = (0, g.Z)(_.tI.PRESET_VIDEO)) ? e : [_.LY.RESOLUTION_720, _.ws.FPS_30], [P, R] = null != (t = (0, g.Z)(_.tI.PRESET_DOCUMENTS)) ? t : [_.LY.RESOLUTION_SOURCE, _.ws.FPS_15], [k, A] = null != (n = (0, g.Z)(C)) ? n : [Z, y], M = i.useMemo(() => C === _.tI.PRESET_VIDEO ? T : C === _.tI.PRESET_DOCUMENTS ? P : Z, [C, T, P, Z]), L = i.useMemo(() => C === _.tI.PRESET_VIDEO ? E : C === _.tI.PRESET_DOCUMENTS ? R : y, [C, E, R, y]), D = C === _.tI.PRESET_DOCUMENTS, B = p.Vf.map(e => {
     let {
       value: t
-    } = e, n = (0, c.Z)(C, t, _.ws.FPS_30, N, w);
+    } = e, n = (0, c.Z)(C, t, _.ws.FPS_30, N, I);
     return {
       value: t,
       name: (0, f.M)(t),
@@ -56,7 +56,7 @@ function C() {
       className: n ? void 0 : b.premiumOption
     }
   }), G = p.YX.map(e => {
-    let t = (0, c.Z)(C, _.LY.RESOLUTION_720, e, N, w);
+    let t = (0, c.Z)(C, _.LY.RESOLUTION_720, e, N, I);
     return {
       value: e,
       name: "".concat(e, "fps"),
@@ -73,7 +73,7 @@ function C() {
         isSelected: e => C === e,
         serialize: e => String(e),
         select: e => {
-          I({
+          w({
             type: "set_preset",
             preset: e
           })
@@ -102,13 +102,13 @@ function C() {
         disabled: D,
         value: M,
         onChange: e => !D && function(e) {
-          if (!(0, c.Z)(C, e, y, N, w)) return (0, x.E)({
+          if (!(0, c.Z)(C, e, y, N, I)) return (0, x.E)({
             analyticsLocation: o.Z.GO_LIVE_MODAL_SETTINGS_SELECTION
           });
-          I({
+          w({
             type: "set_resolution",
             resolution: e
-          }), e !== k && I({
+          }), e !== k && w({
             type: "set_preset",
             preset: _.tI.PRESET_CUSTOM
           })
@@ -123,13 +123,13 @@ function C() {
         value: L,
         look: "pill",
         onChange: e => !D && function(e) {
-          if (!(0, c.Z)(C, Z, e, N, w)) return (0, x.E)({
+          if (!(0, c.Z)(C, Z, e, N, I)) return (0, x.E)({
             analyticsLocation: o.Z.GO_LIVE_MODAL_SETTINGS_SELECTION
           });
-          I({
+          w({
             type: "set_fps",
             fps: e
-          }), e !== A && I({
+          }), e !== A && w({
             type: "set_preset",
             preset: _.tI.PRESET_CUSTOM
           })

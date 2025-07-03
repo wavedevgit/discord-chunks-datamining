@@ -28,8 +28,8 @@ var r = n(255367),
   y = n(358085),
   O = n(463727),
   Z = n(855403),
-  I = n(299570),
-  w = n(960861),
+  w = n(299570),
+  I = n(960861),
   N = n(59468),
   T = n(989941),
   E = n(39540),
@@ -76,7 +76,7 @@ function z(e) {
     enableGoLiveCaptureCard: l
   } = O.Z.useExperiment({
     location: "GoLive_Source_Select"
-  }), o = S.Z.supports(D.AN.GO_LIVE_HARDWARE), [a, m] = i.useState(null), [C, y] = i.useState(null), [I, w] = i.useState(null), T = null != I && I.length > 0, [E, R] = i.useState(c.vA.WINDOW), [A, U] = i.useState(!1), z = i.useRef(null), F = i.useRef(new u.Xp), H = (0, d.e7)([x.ZP], () => x.ZP.getRunningGames()), V = function(e, t, n) {
+  }), o = S.Z.supports(D.AN.GO_LIVE_HARDWARE), [a, m] = i.useState(null), [C, y] = i.useState(null), [w, I] = i.useState(null), T = null != w && w.length > 0, [E, R] = i.useState(c.vA.WINDOW), [A, U] = i.useState(!1), z = i.useRef(null), F = i.useRef(new u.Xp), H = (0, d.e7)([x.ZP], () => x.ZP.getRunningGames()), V = function(e, t, n) {
     let r = (0, j.Zy)({
       location: L.dr.STREAM_SOURCE_SELECT
     });
@@ -106,7 +106,7 @@ function z(e) {
         windowSources: n,
         cameraSources: r
       } = e;
-      m(t), y(n), w(r)
+      m(t), y(n), I(r)
     }), e.start(1e3, async () => {
       let {
         screenSources: e,
@@ -116,7 +116,7 @@ function z(e) {
         width: 176,
         height: 99
       });
-      m(e), y(t), w(n)
+      m(e), y(t), I(n)
     }), () => {
       e.stop()
     }
@@ -137,7 +137,7 @@ function z(e) {
       case c.vA.SCREEN:
         return a;
       case c.vA.CAMERA:
-        return I
+        return w
     }
   }(E);
   if (null == q) return !1 === J ? (0, r.jsxs)(f.Text, {
@@ -399,8 +399,8 @@ function Y(e) {
     lastPickerError: o
   } = (0, E.Z)(t, n);
   return i.useEffect(() => {
-    (0, y.isLinux)() || (0, y.isMac)() && a().satisfies(null === m.Z || void 0 === m.Z ? void 0 : m.Z.os.release, A.jR) ? (0, I.T)(l) : (0, I.t)()
-  }, [l]), s === w.Uc.Error ? (0, r.jsx)(f.Text, {
+    (0, y.isLinux)() || (0, y.isMac)() && a().satisfies(null === m.Z || void 0 === m.Z ? void 0 : m.Z.os.release, A.jR) ? (0, w.T)(l) : (0, w.t)()
+  }, [l]), s === I.Uc.Error ? (0, r.jsx)(f.Text, {
     className: G.errorMessage,
     variant: "text-md/normal",
     color: "text-danger",

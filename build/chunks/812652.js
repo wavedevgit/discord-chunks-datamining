@@ -69,8 +69,8 @@ function y(e) {
     onSelect: O
   } = e, [{
     notifyFriends: Z,
-    hidePreview: I,
-    muteStreamAudio: w,
+    hidePreview: w,
+    muteStreamAudio: I,
     preset: N,
     resolution: T,
     fps: E,
@@ -178,11 +178,11 @@ function y(e) {
       })]
     }), (0, r.jsx)(l.Clw, {}), (0, r.jsx)(l.S89, {
       id: "stream-option-mute",
-      checked: w,
+      checked: I,
       label: _.intl.string(g.default["b0+Ira"]),
       action: () => k({
         type: "set_mute_audio",
-        value: !w
+        value: !I
       })
     }), P === i.vA.CAMERA && (0, r.jsx)(l.sNh, {
       id: "device-audio-input",
@@ -215,11 +215,11 @@ function y(e) {
       label: _.intl.string(g.default.eYyK1t),
       children: [(0, r.jsx)(l.S89, {
         id: "stream-option-share-preview",
-        checked: I,
+        checked: w,
         label: _.intl.string(g.default.H3Qjqa),
         action: () => k({
           type: "set_hide_preview",
-          hidePreview: !I
+          hidePreview: !w
         })
       }), (0, r.jsx)(l.S89, {
         id: "stream-option-notify",

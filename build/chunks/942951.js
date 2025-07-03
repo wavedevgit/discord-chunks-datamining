@@ -1,4 +1,4 @@
-/** Chunk was on 58354 **/
+/** Chunk was on 81691 **/
 "use strict";
 r.d(t, {
   l: () => p
@@ -39,26 +39,26 @@ function p(e) {
     guildId: p,
     messageId: b,
     stopPropagation: v = !1,
-    ariaLabel: O
-  } = e, g = l.useRef(null), {
+    ariaLabel: g
+  } = e, h = l.useRef(null), {
     analyticsLocations: m
-  } = (0, u.ZP)(i.Z.USERNAME), y = (0, a.ZP)(p, null == t ? void 0 : t.id), h = l.useCallback(e => {
+  } = (0, u.ZP)(i.Z.USERNAME), O = (0, a.ZP)(p, null == t ? void 0 : t.id), w = l.useCallback(e => {
     let n = c.Z.getChannel(r);
     null != n && null != t && (0, d.Pv)(e, t, n)
   }, [t, r]);
   return l.useCallback(e => (l, i) => {
     let a = null == e ? void 0 : e.colorStrings,
-      c = y && null != a && null != a.primaryColor && null != a.secondaryColor,
+      c = O && null != a && null != a.primaryColor && null != a.secondaryColor,
       d = t => {
         var r, i;
         return (0, n.jsx)(o.rz2, (r = f({}, null != t ? t : {}), i = i = {
-          ref: g,
-          onContextMenu: h,
+          ref: h,
+          onContextMenu: w,
           name: (0, o.qgQ)(l),
           color: null == e ? void 0 : e.colorString,
           roleName: null == e ? void 0 : e.colorRoleName,
           roleColors: c ? a : null,
-          "aria-label": O
+          "aria-label": g
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var r = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -70,13 +70,13 @@ function p(e) {
           Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
         }), r))
       },
-      w = e => t => {
+      y = e => t => {
         v && null != t && t.stopPropagation(), e(t)
       };
     return (0, n.jsx)(u.Gt, {
       value: m,
       children: null != t ? (0, n.jsx)(s.Z, {
-        targetElementRef: g,
+        targetElementRef: h,
         user: t,
         guildId: p,
         channelId: r,
@@ -102,10 +102,10 @@ function p(e) {
             return l
           }(e, ["onClick"]);
           return d(f({
-            onClick: w(t)
+            onClick: y(t)
           }, r))
         }
       }) : d(void 0)
     }, i)
-  }, [m, t, r, p, b, h, v, O, y])
+  }, [m, t, r, p, b, w, v, g, O])
 }

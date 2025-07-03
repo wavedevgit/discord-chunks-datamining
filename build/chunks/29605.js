@@ -213,13 +213,13 @@ let H = d().throttle(f.OQ, 1e3),
       title: t,
       maxSlots: n,
       emojiCount: i
-    } = e;
+    } = e, l = Math.max(n - i, 0);
     return (0, r.jsxs)(g.vwX, {
       tag: g.RB0.H2,
       className: B.title,
       children: [t, (0, r.jsxs)("span", {
         children: [" — ", U.intl.format(U.t.sgL8sL, {
-          count: n - i
+          count: l
         })]
       })]
     })
