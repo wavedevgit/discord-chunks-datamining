@@ -174,9 +174,9 @@ let T = e => {
       headerId: R,
       guildId: M,
       onClose: A,
-      onComplete: D,
-      isPreview: L = !1
-    } = e, z = (0, C.N0)(M, null == S ? void 0 : S.guild, L), {
+      onComplete: L,
+      isPreview: D = !1
+    } = e, z = (0, C.N0)(M, null == S ? void 0 : S.guild, D), {
       guildProfile: q,
       fetchGuildProfile: Z
     } = (0, d.u)(M), B = (0, l.e7)([b.ZP, h.default], () => b.ZP.isMember(M, h.default.getId())), [U, H] = i.useState(!1);
@@ -225,7 +225,7 @@ let T = e => {
         hasInvalidTermsFormField: W.some(e => e.field_type === _.QJ.TERMS && !(0, O.OA)(e))
       }), [W]),
       ex = i.useMemo(() => {
-        if (null == D || eb) return !0;
+        if (null == L || eb) return !0;
         if (eu || (null == ed ? void 0 : ed.isStaff())) return !1;
         switch (null == z ? void 0 : z.verificationLevel) {
           case I.sFg.VERY_HIGH:
@@ -238,7 +238,7 @@ let T = e => {
           default:
             return !1
         }
-      }, [D, eb, eu, ed, null == z ? void 0 : z.verificationLevel, ep, eh]),
+      }, [L, eb, eu, ed, null == z ? void 0 : z.verificationLevel, ep, eh]),
       ej = (0, l.e7)([c.Z], () => c.Z.useReducedMotion),
       ev = i.useRef(null),
       e_ = function(e) {
@@ -279,7 +279,7 @@ let T = e => {
         return
       }
       try {
-        await (null == D ? void 0 : D((e = function(e) {
+        await (null == L ? void 0 : L((e = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -377,7 +377,7 @@ let T = e => {
                       guildName: z.name,
                       formState: W,
                       updateFormState: V,
-                      isPreview: L,
+                      isPreview: D,
                       useReducedMotion: ej,
                       hasManualFormFields: G,
                       disableVerification: eu
@@ -409,7 +409,6 @@ let T = e => {
                 return (0, r.jsxs)("div", {
                   className: F.footer,
                   children: [(0, r.jsx)(o.DY3, {
-                    color: o.FGA.NESTED,
                     shouldShow: ex && eb && G,
                     text: eg ? P.intl.string(P.t.PLNbh4) : P.intl.string(P.t.brWmV1),
                     children: (0, r.jsx)(o.zxk, {

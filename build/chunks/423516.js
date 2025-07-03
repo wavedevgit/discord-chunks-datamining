@@ -1,6 +1,6 @@
 /** Chunk was on 55697 **/
 n.d(t, {
-  Z: () => c
+  Z: () => u
 });
 var r = n(255367);
 n(73800);
@@ -9,18 +9,18 @@ var l = n(120356),
   o = n(481060),
   a = n(570928),
   s = n(388032),
-  u = n(593210);
-let c = function(e) {
+  c = n(593210);
+let u = function(e) {
   let {
     className: t,
     hasVideo: n,
     text: l,
-    hasConnectedChannel: c,
+    hasConnectedChannel: u,
     textVariant: d = "text-md/medium"
   } = e, f = n ? s.intl.string(s.t.IlHdW1) : s.intl.string(s.t.WsOisr);
   return (0, r.jsx)(a.Z, {
-    className: i()(t, u.hoverableStatus),
-    hoverText: c ? (0, r.jsx)(o.Text, {
+    className: i()(t, c.hoverableStatus),
+    hoverText: u ? (0, r.jsx)(o.Text, {
       variant: d,
       color: "currentColor",
       children: f

@@ -1,6 +1,6 @@
 /** Chunk was on 55697 **/
 n.d(t, {
-  Z: () => x
+  Z: () => N
 }), n(388685);
 var r = n(255367),
   l = n(73800),
@@ -8,8 +8,8 @@ var r = n(255367),
   o = n.n(i),
   a = n(481060),
   s = n(100527),
-  u = n(522651),
-  c = n(476221),
+  c = n(522651),
+  u = n(476221),
   d = n(873596),
   f = n(423516),
   h = n(981631),
@@ -37,17 +37,11 @@ function y(e) {
   return e
 }
 let O = {
-    [h.IE4.UNKNOWN]: a.ua7.Colors.BLACK,
-    [h.IE4.BAD]: a.ua7.Colors.RED,
-    [h.IE4.AVERAGE]: a.ua7.Colors.YELLOW,
-    [h.IE4.FINE]: a.ua7.Colors.GREEN
-  },
-  b = {
     [h.QKv.CONNECTED]: p.rtcConnectionStatusConnected,
     [h.QKv.CONNECTING]: p.rtcConnectionStatusConnecting,
     [h.QKv.ERROR]: p.rtcConnectionStatusError
   },
-  N = {
+  b = {
     [h.IE4.FINE]: p.rtcConnectionQualityFine,
     [h.IE4.AVERAGE]: p.rtcConnectionQualityAverage,
     [h.IE4.BAD]: p.rtcConnectionQualityBad,
@@ -71,7 +65,7 @@ class v extends l.PureComponent {
     } = this.props, {
       connectionStatus: l,
       connectionStatusText: i
-    } = c.Z.getStatus(t, e);
+    } = u.Z.getStatus(t, e);
     return this.renderPopoutTarget(e => {
       let {
         onClick: t
@@ -81,13 +75,13 @@ class v extends l.PureComponent {
         look: a.zxk.Looks.BLANK,
         size: a.zxk.Sizes.NONE,
         onClick: e => {
-          (0, u.v)(s.Z.RTC_PANEL, u.d.CONNECTION_STATUS), null == t || t(e)
+          (0, c.v)(s.Z.RTC_PANEL, c.d.CONNECTION_STATUS), null == t || t(e)
         },
         children: (0, r.jsx)(f.Z, {
           text: i,
           textVariant: this.props.connectionStatusTextVariant,
           hasVideo: this.props.hasVideo,
-          className: b[l],
+          className: O[l],
           hasConnectedChannel: null != n
         })
       })
@@ -100,26 +94,25 @@ class v extends l.PureComponent {
       lastPing: l,
       state: i,
       className: s,
-      children: u,
-      childrenAsSubtitle: c
+      children: c,
+      childrenAsSubtitle: u
     } = this.props;
     return i === h.hes.RTC_CONNECTED && (e = (0, r.jsx)(a.ua7, {
       text: t !== h.IE4.UNKNOWN && null != l ? "".concat(l.toFixed(0), " ms") : null,
-      color: O[t],
       children: e => (0, r.jsx)(m, y({
         quality: t,
-        smallPing: !c && n,
-        largePing: c
+        smallPing: !u && n,
+        largePing: u
       }, e))
     })), (0, r.jsxs)("div", {
       className: p.rtcConnectionStatusWrapper,
       children: [(0, r.jsxs)("div", {
-        className: o()(p.rtcConnectionStatus, N[t], s),
+        className: o()(p.rtcConnectionStatus, b[t], s),
         children: [e, (0, r.jsxs)("div", {
           className: p.labelWrapper,
-          children: [this.renderStatus(), c ? u : null]
+          children: [this.renderStatus(), u ? c : null]
         })]
-      }), c ? null : u]
+      }), u ? null : c]
     })
   }
   constructor(...e) {
@@ -174,4 +167,4 @@ function m(e) {
     })
   }, i))
 }
-let x = v
+let N = v

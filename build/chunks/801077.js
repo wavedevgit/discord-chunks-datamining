@@ -1,14 +1,14 @@
 /** Chunk was on 55697 **/
 n.d(t, {
-  Z: () => eu
+  Z: () => ec
 }), n(388685), n(539854);
 var r, l = n(392711),
   i = n.n(l),
   o = n(442837),
   a = n(570140),
   s = n(790920),
-  u = n(527805),
-  c = n(841784),
+  c = n(527805),
+  u = n(841784),
   d = n(503438),
   f = n(802856),
   h = n(420660),
@@ -17,9 +17,9 @@ var r, l = n(392711),
   y = n(710845),
   O = n(38618),
   b = n(656063),
-  N = n(761282),
-  v = n(752048),
-  m = n(789407),
+  v = n(761282),
+  m = n(752048),
+  N = n(789407),
   x = n(630186),
   E = n(250889),
   C = n(199902),
@@ -76,12 +76,12 @@ let B = !1,
   F = [],
   W = {},
   K = {},
-  Y = new Set,
-  H = new Set;
+  H = new Set,
+  Y = new Set;
 
 function Q() {
   let e = A.Z.getFriendIDs();
-  return new Set(T.Z.hasConsented(U.pjP.PERSONALIZATION) ? [...v.Z.getUserAffinities().map(e => e.otherUserId), ...e] : e)
+  return new Set(T.Z.hasConsented(U.pjP.PERSONALIZATION) ? [...m.Z.getUserAffinities().map(e => e.otherUserId), ...e] : e)
 }
 
 function z(e) {
@@ -105,11 +105,11 @@ function J(e) {
 }
 
 function q(e) {
-  H.has(e) || Y.add(e)
+  Y.has(e) || H.add(e)
 }
 
 function $(e) {
-  if ((0, d.Z)(e)) return m.r9;
+  if ((0, d.Z)(e)) return N.r9;
   let t = null != e.application_id ? g.Z.getApplication(e.application_id) : null;
   return null != t ? t : (0, f.Z)(e) ? X(e.name) : (0, h.Z)(e) && null != e.url ? J(e.url) : (null != e.application_id && q(e.application_id), t)
 }
@@ -129,7 +129,7 @@ function en(e, t, n) {
   var r, l, o, a, d, f;
   let h, p = w.default.getCurrentUser(),
     O = null != (r = null == p ? void 0 : p.nsfwAllowed) && r,
-    v = t.map(e => e.id),
+    m = t.map(e => e.id),
     T = t.filter(t => e.has(t.id)),
     A = !1,
     U = [],
@@ -148,21 +148,21 @@ function en(e, t, n) {
       }), null == f) continue;
     let h = (0, b.Z)(f);
     if (null == h) continue;
-    M = h === m.XB;
-    let v = function(e) {
+    M = h === N.XB;
+    let m = function(e) {
       let t = g.Z.getApplication(e);
       return null != t ? t : "string" != typeof e ? (new y.Z("NowPlayingViewStore").error("Unknown type for applicationId: ".concat(typeof e, ", value: ").concat(e), {
         tags: {
           source: "ACTIVITIES"
         }
-      }), null) : e === m.XB ? m.r9 : e.startsWith(E.H) ? X(e.slice(E.H.length)) : e.startsWith(x._) ? J(e.slice(x._.length)) : (q(e), null)
+      }), null) : e === N.XB ? N.r9 : e.startsWith(E.H) ? X(e.slice(E.H.length)) : e.startsWith(x._) ? J(e.slice(x._.length)) : (q(e), null)
     }(h);
-    if ((0, c.Z)(f)) {
+    if ((0, u.Z)(f)) {
       let t = (0, s.a)();
-      if ((0, u.ZP)({
+      if ((0, c.ZP)({
           activity: f,
           userId: e.id,
-          application: v,
+          application: m,
           channelId: null == (o = R.Z.getVoiceStateForUser(e.id)) ? void 0 : o.channelId,
           currentUser: p,
           isActivitiesEnabledForCurrentPlatform: t,
@@ -170,11 +170,11 @@ function en(e, t, n) {
           VoiceStateStore: R.Z,
           PermissionStore: _.Z,
           GuildStore: P.Z
-        }) !== u.Fw.CAN_JOIN) continue
+        }) !== c.Fw.CAN_JOIN) continue
     }
-    if (!N.JE(f) || null == v || k.has(v.id)) continue;
+    if (!v.JE(f) || null == m || k.has(m.id)) continue;
     let T = null != f ? $(f) : null;
-    (null == T || T.id !== v.id) && (f = null);
+    (null == T || T.id !== m.id) && (f = null);
     let Z = [];
     Z = null != f && null != f.party && null != f.party.id ? Array.from(null != (a = j.Z.getParty(f.party.id)) ? a : []).reduce((e, t) => {
       let n = w.default.getUser(t);
@@ -182,9 +182,9 @@ function en(e, t, n) {
     }, []) : t.filter(e => {
       let t = z(e.id),
         n = null != t ? $(t) : null;
-      return null != n && n.id === v.id
-    }), (Z = i().orderBy(Z, [et], ["desc"])).length !== t.length && (A = !0), k.add(v.id), U.push({
-      game: v,
+      return null != n && n.id === m.id
+    }), (Z = i().orderBy(Z, [et], ["desc"])).length !== t.length && (A = !0), k.add(m.id), U.push({
+      game: m,
       activity: f,
       activityUser: e,
       startedPlayingTime: null != (d = null == f || null == (l = f.timestamps) ? void 0 : l.start) ? d : null == f ? void 0 : f.created_at,
@@ -209,7 +209,7 @@ function en(e, t, n) {
           } = e;
           return w.default.getUser(t)
         }).filter(D.lm).orderBy([et], ["desc"]).value();
-      a.filter(e => !v.includes(e.id)).forEach(e => t.push(e)), B ? F.has(l) || (h = null) : (h = o, B = !0), F.add(l), V.add(n), G.push({
+      a.filter(e => !m.includes(e.id)).forEach(e => t.push(e)), B ? F.has(l) || (h = null) : (h = o, B = !0), F.add(l), V.add(n), G.push({
         channel: r,
         guild: o,
         members: a,
@@ -252,7 +252,7 @@ let ei = i().throttle(() => {
   ! function() {
     var e;
     if (el()) {
-      if (Y.clear(), F = (V = (function(e) {
+      if (H.clear(), F = (V = (function(e) {
           let t = Q(),
             n = en.bind(null, t);
           return i()(e).mapValues(n)
@@ -276,9 +276,9 @@ let ei = i().throttle(() => {
         })).map(e => ({
           type: U.GOo.USER,
           party: e
-        })), Y.size > 0) {
-        let e = Array.from(Y);
-        p.ZP.fetchApplications(e), e.forEach(e => H.add(e)), Y.clear()
+        })), H.size > 0) {
+        let e = Array.from(H);
+        p.ZP.fetchApplications(e), e.forEach(e => Y.add(e)), H.clear()
       }
       G = !0
     }
@@ -290,7 +290,7 @@ function eo() {
 }
 class ea extends(r = o.ZP.Store) {
   initialize() {
-    this.syncWith([w.default, g.Z, Z.Z, j.Z, R.Z, C.Z, A.Z, T.Z, v.Z], eo), this.waitFor(O.Z, P.Z, g.Z, w.default, v.Z)
+    this.syncWith([w.default, g.Z, Z.Z, j.Z, R.Z, C.Z, A.Z, T.Z, m.Z], eo), this.waitFor(O.Z, P.Z, g.Z, w.default, m.Z)
   }
   get currentActivityParties() {
     return V
@@ -308,7 +308,7 @@ class ea extends(r = o.ZP.Store) {
 k(ea, "displayName", "NowPlayingViewStore");
 let es = new ea(a.Z, {
     LOGOUT: function() {
-      B = !1, V = [], F = [], Y.clear()
+      B = !1, V = [], F = [], H.clear()
     },
     NOW_PLAYING_MOUNTED: function() {
       B = !0, ei()
@@ -317,4 +317,4 @@ let es = new ea(a.Z, {
       B = !1
     }
   }),
-  eu = es
+  ec = es

@@ -203,7 +203,7 @@ b.Background = e => {
     "aria-label": i,
     position: a,
     forceOpen: u,
-    color: u ? d.ua7.Colors.BRAND : d.ua7.Colors.BLACK,
+    color: u ? d.ua7.Colors.BRAND : d.ua7.Colors.PRIMARY,
     children: e => {
       let {
         onMouseEnter: a,

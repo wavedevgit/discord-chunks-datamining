@@ -8,8 +8,8 @@ var r = n(255367),
   o = n(442837),
   a = n(100527),
   s = n(906732),
-  u = n(213609),
-  c = n(675478),
+  c = n(213609),
+  u = n(675478),
   d = n(19780),
   f = n(709054),
   h = n(208049),
@@ -18,9 +18,9 @@ var r = n(255367),
   y = n(174470),
   O = n(549771),
   b = n(964398),
-  N = n(294206),
-  v = n(710111),
-  m = n(840558);
+  v = n(294206),
+  m = n(710111),
+  N = n(840558);
 
 function x(e) {
   let {
@@ -36,7 +36,7 @@ function x(e) {
     let [t, n] = (0, o.Wu)([p.Z], () => [p.Z.getSounds(), p.Z.getFavorites()]);
     return l.useMemo(() => {
       let r = [],
-        l = [...e, v.X8],
+        l = [...e, m.X8],
         i = (e, l) => {
           var i, o;
           for (let a of null != (o = null == (i = t.get(e)) ? void 0 : i.sort((e, t) => f.default.compare(e.soundId, t.soundId))) ? o : []) {
@@ -52,13 +52,13 @@ function x(e) {
     (0, g.GN)(e, n.id, R), j()
   }, [R, n.id, j]);
   l.useEffect(() => {
-    h.w(), c.DZ.loadIfNecessary()
+    h.w(), u.DZ.loadIfNecessary()
   }, []), l.useEffect(() => {
     0 === S.length && 0 === P.length && j()
   }, [S.length, P, j]), l.useEffect(() => () => {
     let e = _.current;
     C || null == e || D(e)
-  }, [C, D]), (0, u.Z)({
+  }, [C, D]), (0, c.Z)({
     type: i.ImpressionTypes.POPOUT,
     name: i.ImpressionNames.SOUNDBOARD_POPOUT,
     properties: {
@@ -82,9 +82,9 @@ function x(e) {
       let t = S[e];
       null != t && D(t)
     }, [S, D]),
-    L = l.useMemo(() => S.map(e => (0, r.jsx)(N.ZP, {
+    L = l.useMemo(() => S.map(e => (0, r.jsx)(v.ZP, {
       interactive: I,
-      className: m.soundButton,
+      className: N.soundButton,
       sound: e,
       focused: Z === e.soundId,
       channel: n

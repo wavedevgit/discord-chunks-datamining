@@ -136,7 +136,6 @@ let R = (0, j.Mg)(d.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
         }) : R ? N.intl.string(N.t["Y+V9go"]) : N.intl.formatToPlainString(N.t.UyDKl5, {
           levelName: (0, C.nW)(D)
         }),
-        color: h.ua7.Colors.BLACK,
         position: "top",
         delay: 200,
         hideOnClick: !0,
