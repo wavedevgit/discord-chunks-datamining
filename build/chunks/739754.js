@@ -97,13 +97,13 @@ let y = l.memo(function(e) {
   if (null == f) return null;
   let {
     text: y,
-    icon: v,
-    color: j
+    icon: j,
+    color: v
   } = f;
   return (0, r.jsx)(O, {
-    icon: v,
+    icon: j,
     text: y,
     className: n,
-    color: j
+    color: v
   })
 })

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(255367),
   r = n(73800),
-  l = n(481060),
-  a = n(43267),
+  a = n(481060),
+  l = n(43267),
   s = n(93687),
   c = n(785232);
 let o = r.memo(function(e) {
@@ -23,24 +23,24 @@ let o = r.memo(function(e) {
     var n, i, r = function(e, t) {
       if (null == e) return {};
       var n, i, r = {},
-        l = Object.keys(e);
-      for (i = 0; i < l.length; i++) n = l[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
+        a = Object.keys(e);
+      for (i = 0; i < a.length; i++) n = a[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
       return r
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+      var a = Object.getOwnPropertySymbols(e);
+      for (i = 0; i < a.length; i++) n = a[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
     }
     return r
   }(e, ["channel", "size", "facepileSizeOverride", "experimentLocation", "isTyping", "status", "className", "animated"]);
   let {
-    isFacepileEnabled: I
+    isFacepileEnabled: E
   } = s.Z.useExperiment({
     location: o
   }, {
     autoTrackExposure: !0
   });
-  return t.recipients.length >= 2 && I && null == t.icon ? (0, i.jsx)(c.Z, {
+  return t.recipients.length >= 2 && E && null == t.icon ? (0, i.jsx)(c.Z, {
     "aria-label": b["aria-label"],
     "aria-hidden": b["aria-hidden"],
     className: f,
@@ -48,11 +48,11 @@ let o = r.memo(function(e) {
     size: null != r ? r : n,
     isTyping: u,
     status: d
-  }) : (0, i.jsx)(l.qEK, {
+  }) : (0, i.jsx)(a.qEK, {
     "aria-hidden": b["aria-hidden"],
     "aria-label": b["aria-label"],
     className: f,
     size: n,
-    src: (0, a.x)(t, 80, p)
+    src: (0, l.x)(t, 80, p)
   })
 })

@@ -1,22 +1,23 @@
 /** Chunk was on 16120 **/
 n.d(t, {
-  Z: () => c
+  Z: () => s
 });
 var r = n(255367);
 n(73800);
 var l = n(442837),
   i = n(481060),
-  a = n(430824),
-  o = n(594174),
-  u = n(388032);
+  a = n(601964),
+  o = n(430824),
+  u = n(594174),
+  c = n(388032);
 
-function c(e, t) {
-  let c = (0, l.e7)([o.default], () => o.default.getCurrentUser()),
-    s = (0, l.e7)([a.Z], () => a.Z.getGuild(t));
-  return null == s || null == c || e.id === s.ownerId || e.bot || !s.isOwnerWithRequiredMfaLevel(c) ? null : (0, r.jsx)(i.sNh, {
+function s(e, t) {
+  let s = (0, l.e7)([u.default], () => u.default.getCurrentUser()),
+    d = (0, l.e7)([o.Z], () => o.Z.getGuild(t));
+  return null == d || null == s || e.id === d.ownerId || e.bot || !(0, a.yn)(d, s) ? null : (0, r.jsx)(i.sNh, {
     id: "transfer-ownership",
     color: "danger",
-    label: u.intl.string(u.t.Z5s7PD),
+    label: c.intl.string(c.t.Z5s7PD),
     action: () => (0, i.ZDy)(async () => {
       let {
         default: t
@@ -41,8 +42,8 @@ function c(e, t) {
           }
           return e
         }({}, n), i = i = {
-          guild: s,
-          fromUser: c,
+          guild: d,
+          fromUser: s,
           toUser: e
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var n = Object.keys(e);

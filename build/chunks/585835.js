@@ -30,8 +30,8 @@ function y(e) {
     imageSrc: C,
     iconBackgroundColor: N,
     iconClassName: I,
-    iconWrapperClassName: S,
-    details: E,
+    iconWrapperClassName: E,
+    details: S,
     integration: T,
     buttonText: w,
     buttonDisabled: P,
@@ -126,8 +126,8 @@ function y(e) {
         imageSrc: C,
         iconBackgroundColor: N,
         iconClassName: I,
-        iconWrapperClassName: S,
-        details: E,
+        iconWrapperClassName: E,
+        details: S,
         isPremium: K.length > 0
       }), (0, r.jsx)(p.Z.Child, {
         shrink: 0,

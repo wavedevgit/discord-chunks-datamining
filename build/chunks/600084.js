@@ -36,8 +36,8 @@ var r = n(255367),
   R = n(438306),
   k = n(544142),
   M = n(128557),
-  L = n(981631),
-  D = n(176505),
+  D = n(981631),
+  L = n(176505),
   U = n(388032),
   B = n(906667),
   F = n(20493);
@@ -76,15 +76,15 @@ function G(e) {
     canManageRoles: R,
     canReadMessageHistory: k
   } = (0, l.cj)([v.Z], () => ({
-    canManageRoles: v.Z.can(L.Plq.MANAGE_ROLES, p),
-    canReadMessageHistory: v.Z.can(L.Plq.READ_MESSAGE_HISTORY, p)
-  })), M = (0, l.e7)([b.Z], () => x === L.d4z.DM ? b.Z.getMutualGuilds(p.getRecipientId()) : null, [p, x]), {
+    canManageRoles: v.Z.can(D.Plq.MANAGE_ROLES, p),
+    canReadMessageHistory: v.Z.can(D.Plq.READ_MESSAGE_HISTORY, p)
+  })), M = (0, l.e7)([b.Z], () => x === D.d4z.DM ? b.Z.getMutualGuilds(p.getRecipientId()) : null, [p, x]), {
     systemDMRedesignEnabled: G
   } = g.Z.useExperiment({
     location: "bf1a4f_1"
   }, {
     autoTrackExposure: null != (t = p.isSystemDM()) && t
-  }), V = (0, u.Z)(null != (n = null == I ? void 0 : I.id) ? n : L.lds), {
+  }), V = (0, u.Z)(null != (n = null == I ? void 0 : I.id) ? n : D.lds), {
     authorizedAppToken: z,
     authorizedAppsFetchState: W
   } = (0, l.cj)([C.Z], () => {
@@ -97,7 +97,7 @@ function G(e) {
     location: "EmptyMessages"
   }).enabledDesktop;
   if (i.useEffect(() => {
-      x === L.d4z.DM && null == M && null != I && a.Z.wait(() => (0, _.Z)(p.getRecipientId(), I.getAvatarURL(null, 80), {
+      x === D.d4z.DM && null == M && null != I && a.Z.wait(() => (0, _.Z)(p.getRecipientId(), I.getAvatarURL(null, 80), {
         withMutualGuilds: !0
       }))
     }, [M, x, p, I]), i.useEffect(() => {
@@ -108,7 +108,7 @@ function G(e) {
     channel: p,
     children: U.intl.string(U.t.Rzvnio)
   });
-  if (x === L.d4z.DM) {
+  if (x === D.d4z.DM) {
     let e;
     return null != I && null != V ? null != z && (e = (0, r.jsxs)("div", {
       className: B.buttonContainer,
@@ -156,7 +156,7 @@ function G(e) {
         children: U.intl.string(U.t.M8Ao6O)
       })]
     });
-    else if (p.hasFlag(D.zZ.IS_JOIN_REQUEST_INTERVIEW_CHANNEL)) return (0, r.jsx)(P.Z, {
+    else if (p.hasFlag(L.zZ.IS_JOIN_REQUEST_INTERVIEW_CHANNEL)) return (0, r.jsx)(P.Z, {
     channel: p
   });
   else return (0, r.jsx)(T.Z, {

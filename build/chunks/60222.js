@@ -10,7 +10,7 @@ var r = t(442837),
 function c(e) {
   var a;
   let [t] = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [o.Z];
-  return !!(null == (a = t.getGuild(e)) ? void 0 : a.hasFeature(n.oNc.COMMUNITY))
+  return !!(null == (a = t.getGuild(e)) ? void 0 : a.features.has(n.oNc.COMMUNITY))
 }
 
 function i(e) {

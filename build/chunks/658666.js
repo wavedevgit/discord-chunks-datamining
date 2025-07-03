@@ -1,11 +1,11 @@
 /** Chunk was on 54408 **/
 let n;
 t.d(i, {
-  Z: () => G
+  Z: () => x
 }), t(388685), t(781311);
 var l, r = t(392711),
-  a = t.n(r),
-  s = t(442837),
+  s = t.n(r),
+  a = t(442837),
   u = t(570140),
   o = t(944163),
   c = t(246364),
@@ -101,11 +101,11 @@ function D() {
 }
 
 function y(e) {
-  return e.hasFeature(S.oNc.DISCOVERABLE) ? I.A.DISCOVERABLE : e.hasFeature(S.oNc.MEMBER_VERIFICATION_GATE_ENABLED) && e.hasFeature(S.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) ? I.A.APPLY : I.A.INVITE
+  return e.features.has(S.oNc.DISCOVERABLE) ? I.A.DISCOVERABLE : e.features.has(S.oNc.MEMBER_VERIFICATION_GATE_ENABLED) && e.features.has(S.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) ? I.A.APPLY : I.A.INVITE
 }
 
 function O(e, i) {
-  let t = e.hasFeature(S.oNc.MEMBER_VERIFICATION_GATE_ENABLED),
+  let t = e.features.has(S.oNc.MEMBER_VERIFICATION_GATE_ENABLED),
     n = e.ownerConfiguredContentLevel === S.V_K.AGE_RESTRICTED;
   switch (i) {
     case I.A.INVITE:
@@ -126,15 +126,15 @@ function O(e, i) {
 function P(e, i) {
   var t, n, l, r;
   let {
-    requireTerms: s,
+    requireTerms: a,
     termRules: u
   } = i;
-  if (e.hasFeature(S.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) || e.hasFeature(S.oNc.MEMBER_VERIFICATION_GATE_ENABLED) !== s) return !0;
+  if (e.features.has(S.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) || e.features.has(S.oNc.MEMBER_VERIFICATION_GATE_ENABLED) !== a) return !0;
   let o = null != (n = N()) ? n : [];
   if (o.length > 1) return !0;
   let d = null != (l = null == (t = o.find(e => (0, c.J)(e))) ? void 0 : t.values) ? l : [],
     E = null != (r = null == u ? void 0 : u.map(e => e.value.trim()).filter(e => "" !== e)) ? r : [];
-  return !a().isEqual(d, E)
+  return !s().isEqual(d, E)
 }
 
 function R() {
@@ -156,13 +156,13 @@ function R() {
       break;
     case I.A.APPLY:
       var l, r;
-      let s, u = N(),
+      let a, u = N(),
         {
           pendingVerificationFields: o
         } = n,
-        c = !e.hasFeature(S.oNc.MEMBER_VERIFICATION_GATE_ENABLED) || !e.hasFeature(S.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL);
-      s = null == u ? null != o : null != o && !a().isEqual(u, o), p = {
-        verificationDirty: c || s,
+        c = !e.features.has(S.oNc.MEMBER_VERIFICATION_GATE_ENABLED) || !e.features.has(S.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL);
+      a = null == u ? null != o : null != o && !s().isEqual(u, o), p = {
+        verificationDirty: c || a,
         guildDirty: i,
         profileDirty: (null == (l = d.Z.getProfile(e.id)) ? void 0 : l.visibility) !== (null == (r = E.Z.getGuildProfile()) ? void 0 : r.visibility),
         isAgeRestrictedDirty: t
@@ -195,7 +195,7 @@ function b(e) {
   if (i !== S.pNK.ACCESS) return j();
   let l = E.Z.getGuild();
   if (null == l) return !1;
-  let r = t === S.KsC.ACCESS_DISCOVERABLE && l.hasFeature(S.oNc.COMMUNITY) ? I.A.DISCOVERABLE : y(l);
+  let r = t === S.KsC.ACCESS_DISCOVERABLE && l.features.has(S.oNc.COMMUNITY) ? I.A.DISCOVERABLE : y(l);
   n = O(l, r), R()
 }
 
@@ -209,7 +209,7 @@ function V() {
     settingsView: A()
   }), R()
 }
-class F extends(l = s.ZP.Store) {
+class G extends(l = a.ZP.Store) {
   initialize() {
     this.waitFor(E.Z, o.Z, f.ZP), this.syncWith([E.Z, o.Z], () => {
       R()
@@ -225,8 +225,8 @@ class F extends(l = s.ZP.Store) {
     return p.guildDirty || p.verificationDirty || p.profileDirty || p.isAgeRestrictedDirty
   }
 }
-m(F, "displayName", "GuildSettingsJoinRulesStore");
-let G = new F(u.Z, {
+m(G, "displayName", "GuildSettingsJoinRulesStore");
+let x = new G(u.Z, {
   GUILD_SETTINGS_JOIN_RULES_INVITE_SET_PENDING_RULES: function(e) {
     let {
       guildId: i,

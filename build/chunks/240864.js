@@ -10,8 +10,8 @@ var u, r, l, i, c = n(442837),
   s = n(709054),
   E = ((r = {})[r.NOT_FETCHED = 0] = "NOT_FETCHED", r[r.FETCHING = 1] = "FETCHING", r[r.FETCHED = 2] = "FETCHED", r);
 let C = {},
-  _ = {},
   f = {},
+  _ = {},
   D = 10 * a.Z.Millis.MINUTE;
 
 function T(e) {
@@ -45,11 +45,11 @@ class G extends(u = c.ZP.Store) {
   }
   getGuildProductFetchState(e) {
     var t;
-    return null != (t = _[e]) ? t : 0
+    return null != (t = f[e]) ? t : 0
   }
   isGuildProductsCacheExpired(e) {
     var t;
-    return Date.now() - (null != (t = f[e]) ? t : 0) > D
+    return Date.now() - (null != (t = _[e]) ? t : 0) > D
   }
 }
 i = "GuildProductsStore", (l = "displayName") in G ? Object.defineProperty(G, l, {
@@ -60,7 +60,7 @@ i = "GuildProductsStore", (l = "displayName") in G ? Object.defineProperty(G, l,
 }) : G[l] = i;
 let p = new G(d.Z, {
   CONNECTION_OPEN: function() {
-    U.clear(), C = {}, _ = {}, f = {}
+    U.clear(), C = {}, f = {}, _ = {}
   },
   GUILD_PRODUCTS_FETCH: function(e) {
     let {
@@ -75,8 +75,8 @@ let p = new G(d.Z, {
       guildId: t,
       products: n
     } = e;
-    C[t] = 2, f[t] = Date.now(), n.forEach(e => {
-      U.set(e.id, e), _[e.id] = 2
+    C[t] = 2, _[t] = Date.now(), n.forEach(e => {
+      U.set(e.id, e), f[e.id] = 2
     })
   },
   GUILD_PRODUCTS_FETCH_FAILURE: function(e) {
@@ -107,19 +107,19 @@ let p = new G(d.Z, {
     let {
       productId: t
     } = e;
-    _[t] = 1
+    f[t] = 1
   },
   GUILD_PRODUCT_FETCH_SUCCESS: function(e) {
     let {
       product: t
     } = e;
-    _[t.id] = 2, U.set(t.id, t)
+    f[t.id] = 2, U.set(t.id, t)
   },
   GUILD_PRODUCT_FETCH_FAILURE: function(e) {
     let {
       productId: t,
       error: n
     } = e;
-    _[t] = 2, 404 === n.status && U.delete(t)
+    f[t] = 2, 404 === n.status && U.delete(t)
   }
 })

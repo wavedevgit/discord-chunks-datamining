@@ -20,8 +20,8 @@ var r = n(73800),
   _ = n(931261),
   A = n(540126),
   m = n(671098),
-  T = n(703656),
-  f = n(592125),
+  f = n(703656),
+  T = n(592125),
   g = n(324067),
   I = n(306680),
   h = n(709054),
@@ -75,14 +75,14 @@ function D(e, t) {
     channelId: e,
     readStateType: R.W.CHANNEL,
     messageId: I.ZP.lastMessageId(e)
-  }))), null != n && (0, T.uL)(O.Z5c.CHANNEL(e, n))
+  }))), null != n && (0, f.uL)(O.Z5c.CHANNEL(e, n))
 }
 
 function x(e, t, n, r) {
   let l = (0, E.Nj)(u.z.CHANNEL_BROWSER_NUX),
-    i = (0, o.cj)([f.Z], () => {
+    i = (0, o.cj)([T.Z], () => {
       let t = {},
-        n = f.Z.getMutableGuildChannelsForGuild(e);
+        n = T.Z.getMutableGuildChannelsForGuild(e);
       for (let e in n) {
         let {
           parent_id: l

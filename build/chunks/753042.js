@@ -15,8 +15,8 @@ var r = n(255367),
   _ = n(189432),
   A = n(776767),
   m = n(981631),
-  T = n(388032),
-  f = n(12740);
+  f = n(388032),
+  T = n(12740);
 
 function g(e) {
   let {
@@ -25,8 +25,8 @@ function g(e) {
   return (l.useEffect(() => {
     (0, o.zO)(t.guildId)
   }, [t.guildId]), null == n) ? null : (0, r.jsx)(s.xJW, {
-    title: T.intl.string(T.t["ldCE/v"]),
-    titleClassName: f.infoTitle,
+    title: f.intl.string(f.t["ldCE/v"]),
+    titleClassName: T.infoTitle,
     children: (0, r.jsxs)(A.WM, {
       children: [(0, r.jsx)(A._2, {
         icon: (0, r.jsx)(s.lZ8, {
@@ -37,7 +37,7 @@ function g(e) {
         name: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "text-default",
-          children: T.intl.string(T.t.nzGai4)
+          children: f.intl.string(f.t.nzGai4)
         }),
         description: g ? (0, r.jsx)(s.sV5, {
           size: "custom",
@@ -59,7 +59,7 @@ function g(e) {
         name: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "text-default",
-          children: T.intl.string(T.t["93hqlp"])
+          children: f.intl.string(f.t["93hqlp"])
         }),
         description: I === u.qc.AGREED ? (0, r.jsx)(s.sV5, {
           size: "custom",
@@ -82,7 +82,7 @@ function g(e) {
         name: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "text-default",
-          children: T.intl.string(T.t.SaDIpK)
+          children: f.intl.string(f.t.SaDIpK)
         }),
         description: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
@@ -94,12 +94,12 @@ function g(e) {
           guild: n,
           size: a.Vj.Sizes.SMOL,
           animate: !1,
-          className: f.guildIcon
+          className: T.guildIcon
         }),
         name: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "text-default",
-          children: T.intl.string(T.t["NQJ+WF"])
+          children: f.intl.string(f.t["NQJ+WF"])
         }),
         description: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
@@ -115,7 +115,7 @@ function g(e) {
         name: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "text-default",
-          children: T.intl.string(T.t["eJOq+f"])
+          children: f.intl.string(f.t["eJOq+f"])
         }),
         description: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",

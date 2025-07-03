@@ -15,8 +15,8 @@ var r = n(481060),
   f = n(323597),
   h = n(461535),
   g = n(438536),
-  b = n(251746),
-  v = n(193987),
+  v = n(251746),
+  b = n(193987),
   Z = n(933793),
   p = n(13736),
   m = n(732393),
@@ -28,25 +28,25 @@ let C = (0, a.Z)(function(e) {
   let {
     channel: t,
     onSelect: n
-  } = e, a = (0, c.Z)(t), o = (0, h.Z)(t), C = (0, O.Z)(t), E = (0, u.Z)(t), P = (0, v.Z)(t), N = (0, f.Z)(t), A = (0, s.Z)({
+  } = e, a = (0, c.Z)(t), o = (0, h.Z)(t), C = (0, O.Z)(t), E = (0, u.Z)(t), P = (0, b.Z)(t), N = (0, f.Z)(t), A = (0, s.Z)({
     id: t.id,
     label: y.intl.string(y.t.DQ797u)
-  }), T = (0, g.Z)(t, "Context Menu"), R = (0, Z.Z)(t), x = (0, _.Z)(t), S = (0, p.Z)(t), k = (0, m.Z)(t.id), M = (0, b.Z)(t), U = (0, j.Z)(t), I = (0, d.l)(t), w = (0, d.P)(t);
+  }), T = (0, g.Z)(t, "Context Menu"), x = (0, Z.Z)(t), R = (0, _.Z)(t), S = (0, p.Z)(t), k = (0, m.Z)(t.id), U = (0, v.Z)(t), M = (0, j.Z)(t), w = (0, d.l)(t), D = (0, d.P)(t);
   return (0, i.jsxs)(r.v2r, {
     navId: "thread-context",
     onClose: l.Zy,
     "aria-label": y.intl.string(y.t["1NBjqa"]),
     onSelect: n,
     children: [(0, i.jsxs)(r.kSQ, {
-      children: [o, I]
+      children: [o, w]
     }, "mark-as-read-or-favorite"), (0, i.jsxs)(r.kSQ, {
-      children: [T, M, E, P, S, k, a]
+      children: [T, U, E, P, S, k, a]
     }, "thread-actions"), (0, i.jsxs)(r.kSQ, {
-      children: [C, x]
+      children: [C, R]
     }, "notifications"), (0, i.jsx)(r.kSQ, {
-      children: w
+      children: D
     }), (0, i.jsxs)(r.kSQ, {
-      children: [U, R, N]
+      children: [M, x, N]
     }, "admin-actions"), (0, i.jsx)(r.kSQ, {
       children: A
     }, "developer-actions")]

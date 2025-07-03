@@ -24,10 +24,10 @@ var l = n(255367),
   _ = n(626135),
   y = n(709054),
   N = n(981631),
-  S = n(388032),
-  Z = n(455864);
+  Z = n(388032),
+  v = n(455864);
 
-function v(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -66,12 +66,12 @@ class O extends r.PureComponent {
         submitting: n,
         onClick: this.handleFollow,
         disabled: null == e || null == t,
-        children: S.intl.string(S.t["3aOv+v"])
+        children: Z.intl.string(Z.t["3aOv+v"])
       }), (0, l.jsx)(o.zxk, {
         look: o.zxk.Looks.LINK,
         color: o.zxk.Colors.PRIMARY,
         onClick: s,
-        children: S.intl.string(S.t["ETE/oK"])
+        children: Z.intl.string(Z.t["ETE/oK"])
       })]
     })
   }
@@ -89,7 +89,7 @@ class O extends r.PureComponent {
       } = e[t];
       return {
         value: t,
-        label: n.toString(),
+        label: n.name,
         guild: n
       }
     }), d = t.map(e => {
@@ -103,11 +103,11 @@ class O extends r.PureComponent {
         channel: t,
         category: n
       }
-    }), c = 0 === i.length, g = c ? S.intl.string(S.t["6b6QoK"]) : S.intl.string(S.t.Z0quyM);
+    }), c = 0 === i.length, g = c ? Z.intl.string(Z.t["6b6QoK"]) : Z.intl.string(Z.t.Z0quyM);
     return (0, l.jsxs)(r.Fragment, {
       children: [(0, l.jsx)(o.xJW, {
-        className: Z.bottomMargin,
-        title: S.intl.string(S.t.xFn72t),
+        className: v.bottomMargin,
+        title: Z.intl.string(Z.t.xFn72t),
         children: (0, l.jsx)(o.VcW, {
           value: n,
           options: i,
@@ -125,8 +125,8 @@ class O extends r.PureComponent {
           })(e)
         })
       }), (0, l.jsx)(o.xJW, {
-        className: Z.bottomMargin,
-        title: S.intl.string(S.t.PDn2fX),
+        className: v.bottomMargin,
+        title: Z.intl.string(Z.t.PDn2fX),
         children: (0, l.jsx)(o.VcW, {
           value: s,
           options: d,
@@ -140,14 +140,14 @@ class O extends r.PureComponent {
             return null != n && (0, l.jsx)(n, {
               size: "xs",
               color: "currentColor",
-              className: Z.icon
+              className: v.icon
             })
           })(e)
         })
       }), (0, l.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: c || null != a ? "text-danger" : "text-muted",
-        className: Z.bottomMargin,
+        className: v.bottomMargin,
         children: null != a ? a : g
       })]
     })
@@ -159,23 +159,23 @@ class O extends r.PureComponent {
       }
     } = this.props;
     return (0, l.jsxs)("div", {
-      className: Z.body,
+      className: v.body,
       children: [(0, l.jsx)(o.X6q, {
         variant: "heading-lg/semibold",
         id: this.state.headerId,
-        children: S.intl.string(S.t.mvPFbG)
+        children: Z.intl.string(Z.t.mvPFbG)
       }), (0, l.jsx)(o.Text, {
         color: "text-muted",
-        className: a()(Z.topMargin, {
-          [Z.formMargin]: !e
+        className: a()(v.topMargin, {
+          [v.formMargin]: !e
         }),
         variant: "text-sm/normal",
-        children: S.intl.string(S.t.kbpkxM)
+        children: Z.intl.string(Z.t.kbpkxM)
       }), e ? (0, l.jsx)(o.Text, {
-        className: a()(Z.formMargin, Z.topMargin),
+        className: a()(v.formMargin, v.topMargin),
         color: "text-danger",
         variant: "text-sm/normal",
-        children: S.intl.string(S.t["DrNm//"])
+        children: Z.intl.string(Z.t["DrNm//"])
       }) : null]
     })
   }
@@ -187,23 +187,23 @@ class O extends r.PureComponent {
       channel: r
     } = this.props, s = null != (e = (0, u.KS)(r)) ? e : o.MqZ;
     return (0, l.jsxs)(o.xBx, {
-      className: Z.header,
+      className: v.header,
       children: [(0, l.jsx)(m.Z, {
         guild: t,
         size: m.Z.Sizes.LARGE
       }), (0, l.jsx)("div", {
-        className: Z.channelContainer,
+        className: v.channelContainer,
         children: (0, l.jsxs)("div", {
-          className: Z.channel,
+          className: v.channel,
           children: [(0, l.jsx)(s, {
             size: "custom",
             color: "currentColor",
             width: 20,
             height: 20,
-            className: Z.channelIcon
+            className: v.channelIcon
           }), (0, l.jsx)(o.Text, {
             variant: "text-md/medium",
-            className: Z.channelName,
+            className: v.channelName,
             children: n
           })]
         })
@@ -219,7 +219,7 @@ class O extends r.PureComponent {
       "aria-labelledby": this.state.headerId,
       parentComponent: "FollowModal",
       children: [this.renderHeader(), (0, l.jsxs)(o.hzk, {
-        className: Z.content,
+        className: v.content,
         children: [this.renderBody(), this.renderForm()]
       }), (0, l.jsx)(o.mzw, {
         children: this.renderFooter()
@@ -227,7 +227,7 @@ class O extends r.PureComponent {
     })
   }
   constructor(e) {
-    super(e), v(this, "handleGuildSelect", e => {
+    super(e), S(this, "handleGuildSelect", e => {
       let {
         guilds: t
       } = this.props, {
@@ -238,11 +238,11 @@ class O extends r.PureComponent {
         selectedChannelId: r,
         channels: l
       })
-    }), v(this, "handleChannelSelect", e => {
+    }), S(this, "handleChannelSelect", e => {
       this.setState({
         selectedChannelId: e
       })
-    }), v(this, "handleFollow", () => {
+    }), S(this, "handleFollow", () => {
       let {
         channel: e,
         onClose: t
@@ -268,7 +268,7 @@ class O extends r.PureComponent {
               "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                 return Object.getOwnPropertyDescriptor(n, e).enumerable
               }))), l.forEach(function(t) {
-                v(e, t, n[t])
+                S(e, t, n[t])
               })
             }
             return e
@@ -276,10 +276,10 @@ class O extends r.PureComponent {
         })
       }).catch(e => {
         e.body.code === N.evJ.TOO_MANY_WEBHOOKS ? this.setState({
-          errorMessage: S.intl.string(S.t["1eZ4aG"]),
+          errorMessage: Z.intl.string(Z.t["1eZ4aG"]),
           submitting: !1
         }) : this.setState({
-          errorMessage: S.intl.string(S.t.LgwhuL),
+          errorMessage: Z.intl.string(Z.t.LgwhuL),
           submitting: !1
         })
       }))

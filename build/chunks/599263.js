@@ -44,8 +44,8 @@ function P(e) {
   }, [t, w]), M = (0, a.e7)([j.Z], () => j.Z.getGuild(t)), S = l.useMemo(() => null == M ? null : v.ZP.getGuildSplashURL({
     id: M.id,
     splash: M.splash
-  }), [M]), A = (0, f.N)(S), B = (0, a.e7)([C.ZP], () => C.ZP.getCurrentOnboardingStep(t)), [F, L] = l.useState(null != S ? null : "cover"), z = l.useCallback(e => {
-    L(B), b.Z.setUserOnboardingStep(t, e)
+  }), [M]), A = (0, f.N)(S), B = (0, a.e7)([C.ZP], () => C.ZP.getCurrentOnboardingStep(t)), [L, F] = l.useState(null != S ? null : "cover"), z = l.useCallback(e => {
+    F(B), b.Z.setUserOnboardingStep(t, e)
   }, [t, B]), U = (0, a.e7)([p.Z], () => p.Z.isFullServerPreview(t)), G = (0, a.e7)([C.ZP], () => C.ZP.getOnboardingStatus(t)), V = null != w && w.length > 0, q = l.useCallback(() => {
     (0, C.kp)(G) && D && V ? z(0) : R()
   }, [G, D, V, z, R]);
@@ -63,7 +63,7 @@ function P(e) {
         scale: 1,
         opacity: 1
       }
-    }, "cover" !== F && null !== F ? "animate-never" : "respect-motion-settings"),
+    }, "cover" !== L && null !== L ? "animate-never" : "respect-motion-settings"),
     W = C.ZP.shouldShowOnboarding(t),
     X = null == M;
   if (l.useEffect(() => {

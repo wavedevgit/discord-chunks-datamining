@@ -101,7 +101,7 @@ function H(e) {
         className: W.selectedIcon
       }), (0, r.jsx)("span", {
         className: W.ellipsisText,
-        children: i.toString()
+        children: i.name
       }), (0, r.jsx)(a.zxk, {
         className: W.changeButton,
         color: a.zxk.Colors.PRIMARY,

@@ -44,7 +44,7 @@ function C(e) {
     F = null != D && D.isGuildVocal(),
     B = null != D && D.isGuildStageVoice(),
     G = (0, f.yE)(null != (t = N.flags) ? t : 0, l.$.IS_GUEST_INVITE),
-    H = null != (C = null == T ? void 0 : T.hasFeature(b.oNc.HUB)) && C,
+    H = null != (C = null == T ? void 0 : T.features.has(b.oNc.HUB)) && C,
     V = null == T ? void 0 : T.id,
     {
       analyticsLocations: z
@@ -145,7 +145,7 @@ function C(e) {
         color: p.Z.Button.Colors.GREEN,
         children: F ? B ? E.intl.string(E.t["7vb2cX"]) : E.intl.string(E.t.gpqgam) : M ? E.intl.string(E.t.cEnaW1) : E.intl.string(E.t.XpeFYm)
       })]
-    }), T.hasFeature(b.oNc.HUB) && (0, r.jsxs)(r.Fragment, {
+    }), T.features.has(b.oNc.HUB) && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: y.separator
       }), (0, r.jsx)(a.Text, {

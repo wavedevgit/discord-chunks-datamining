@@ -27,7 +27,7 @@ function P(e) {
     analyticsLocations: h,
     context: w,
     icon: E
-  } = e, m = O.Z.getGuild(t), Z = b.default.getId(), D = (0, l.e7)([d.default], () => d.default.getUser(P)), N = (0, l.e7)([p.ZP], () => p.ZP.isGuestOrLurker(t, P), [t, P]);
+  } = e, Z = O.Z.getGuild(t), m = b.default.getId(), D = (0, l.e7)([d.default], () => d.default.getUser(P)), N = (0, l.e7)([p.ZP], () => p.ZP.isGuestOrLurker(t, P), [t, P]);
   (0, l.e7)([f.Z], () => f.Z.getGuildVersion(t), [t]);
   let S = i.useMemo(() => ({
     [t]: [P]
@@ -35,24 +35,24 @@ function P(e) {
   (0, c.$)(S);
   let _ = w === y.IlC.POPOUT,
     C = (0, u.Z)({
-      guild: m,
+      guild: Z,
       analyticsLocation: v
     }),
     I = (0, a.Aq)();
-  if (null == m || _) return null;
-  let k = Z === P && (f.Z.can(y.Plq.CHANGE_NICKNAME, m) || f.Z.can(y.Plq.MANAGE_NICKNAMES, m)),
-    x = Z === P,
-    A = f.Z.canManageUser(y.Plq.MANAGE_NICKNAMES, P, m);
+  if (null == Z || _) return null;
+  let k = m === P && (f.Z.can(y.Plq.CHANGE_NICKNAME, Z) || f.Z.can(y.Plq.MANAGE_NICKNAMES, Z)),
+    x = m === P,
+    A = f.Z.canManageUser(y.Plq.MANAGE_NICKNAMES, P, Z);
   if (!(k || A || x) || null == D || N) return null;
-  let G = m.hasFeature(y.oNc.HUB) ? g.intl.string(g.t["+MWrWl"]) : g.intl.string(g.t["PKQB/P"]),
-    L = x ? G : g.intl.string(g.t.dilOFx);
+  let G = Z.features.has(y.oNc.HUB) ? g.intl.string(g.t["+MWrWl"]) : g.intl.string(g.t["PKQB/P"]),
+    M = x ? G : g.intl.string(g.t.dilOFx);
   return (0, n.jsx)(o.sNh, {
     id: "change-nickname",
     label: (0, n.jsx)("div", {
       className: j.labelWrapper,
       children: (0, n.jsx)("span", {
         className: j.label,
-        children: L
+        children: M
       })
     }),
     icon: E,

@@ -20,7 +20,7 @@ function c(e) {
 }
 
 function u(e) {
-  return e.hasFeature(l.oNc.GUILD_TAGS)
+  return e.features.has(l.oNc.GUILD_TAGS)
 }
 
 function d(e, t) {

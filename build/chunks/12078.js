@@ -147,7 +147,7 @@ function C(e) {
     profile: n,
     onCustomBannerChange: l,
     canManageGuild: d
-  } = e, m = (0, a.e7)([u.Z], () => u.Z.getGuild(n.id)), g = null != (t = null == m ? void 0 : m.hasFeature(f.oNc.DISCOVERABLE)) && t, C = n.id, y = i.useCallback(e => () => {
+  } = e, m = (0, a.e7)([u.Z], () => u.Z.getGuild(n.id)), g = null != (t = null == m ? void 0 : m.features.has(f.oNc.DISCOVERABLE)) && t, C = n.id, y = i.useCallback(e => () => {
     p.Z.updateGuildProfile(C, {
       brandColorPrimary: e,
       customBanner: null

@@ -19,7 +19,7 @@ function p(e) {
     guild: p,
     onClose: m,
     hideColors: _
-  } = e, [g, y] = a.useState(p.verificationLevel), [x, h] = a.useState(null), f = p.hasFeature(d.oNc.COMMUNITY), j = (0, c.IF)(f, _).filter(e => !e.disabled), C = a.useCallback(async () => {
+  } = e, [g, y] = a.useState(p.verificationLevel), [x, h] = a.useState(null), f = p.features.has(d.oNc.COMMUNITY), j = (0, c.IF)(f, _).filter(e => !e.disabled), C = a.useCallback(async () => {
     null != x && h(null);
     try {
       await l.Z.saveGuild(p.id, {

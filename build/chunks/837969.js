@@ -30,8 +30,8 @@ function d(e) {
     setFocus: _,
     getNewFocusIndex: A,
     maintainFocusPosition: m = !0,
-    includeSetSizes: T = !0,
-    focusOnMount: f = !0,
+    includeSetSizes: f = !0,
+    focusOnMount: T = !0,
     enabled: g = !0,
     onDispatch: I
   } = e, h = r.useCallback((e, t) => {
@@ -59,8 +59,8 @@ function d(e) {
         setFocus: _ = c,
         getNewFocusIndex: A,
         dispatch: m,
-        maintainFocusPosition: T,
-        includeSetSizes: f,
+        maintainFocusPosition: f,
+        includeSetSizes: T,
         focusOnMount: g,
         enabled: I,
         makeId: h = s.qR,
@@ -138,8 +138,8 @@ function d(e) {
           S || C(!0)
         }, [S]),
         j = r.useCallback(() => {
-          S || (T ? v(h(t, d), d) : L(!0))
-        }, [h, t, v, T, S, d, L]),
+          S || (f ? v(h(t, d), d) : L(!0))
+        }, [h, t, v, f, S, d, L]),
         P = r.useCallback(e => {
           e.currentTarget.contains(e.relatedTarget) || requestAnimationFrame(() => {
             if (null == u(o(h, t, d))) return void v(t);
@@ -155,24 +155,24 @@ function d(e) {
       }, [j, U, P]);
       let w = r.useCallback(() => ({
           role: "list",
-          tabIndex: S && T ? -1 : 0,
+          tabIndex: S && f ? -1 : 0,
           id: t,
           onKeyDown: M,
           ref: y
-        }), [t, S, M, T]),
+        }), [t, S, M, f]),
         G = r.useCallback(e => {
           let {
             index: n
           } = e;
           return {
             role: "listitem",
-            "aria-setsize": f ? N.current : void 0,
-            "aria-posinset": f ? n + 1 : void 0,
+            "aria-setsize": T ? N.current : void 0,
+            "aria-posinset": T ? n + 1 : void 0,
             id: h(t, n),
-            tabIndex: T && n === d ? 0 : -1,
+            tabIndex: f && n === d ? 0 : -1,
             onFocus: b.get(null != p.current ? h(t, n) : n)
           }
-        }, [h, t, d, T, b, f]);
+        }, [h, t, d, f, b, T]);
       return r.useMemo(() => ({
         dispatch: m,
         getContainerProps: w,
@@ -187,8 +187,8 @@ function d(e) {
       setFocus: _,
       getNewFocusIndex: A,
       maintainFocusPosition: m,
-      includeSetSizes: T,
-      focusOnMount: f,
+      includeSetSizes: f,
+      focusOnMount: T,
       enabled: g
     })
 }

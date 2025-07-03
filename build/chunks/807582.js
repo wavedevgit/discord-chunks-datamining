@@ -20,7 +20,7 @@ let _ = e => {
       tooltipPosition: m = "left",
       onClick: b
     } = e,
-    v = f.hasFeature(_),
+    v = f.features.has(_),
     g = (0, l._p)(_);
   return (v ? (null != g && (i = d.intl.string(d.t.hUgjyM)), t = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.Z, {

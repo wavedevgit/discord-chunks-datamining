@@ -62,8 +62,8 @@ function x(e) {
     message: t,
     initialSelectedDestinations: x,
     forwardOptions: P,
-    onClose: L,
-    onRequestSent: T
+    onClose: T,
+    onRequestSent: L
   } = e, N = function(e, t) {
     if (null == e) return {};
     var n, l, r = function(e, t) {
@@ -104,8 +104,8 @@ function x(e) {
       messageId: Z,
       numDestinationChanges: U.current,
       numQueryChanges: H.current
-    }), L()
-  }, [j, Z, L]), et = r.useRef(null);
+    }), T()
+  }, [j, Z, T]), et = r.useRef(null);
   r.useEffect(() => {
     if ("" === B) {
       var e;
@@ -153,7 +153,7 @@ function x(e) {
             }))
           })
         })) return void R(!1);
-      d && (0, y.mc)(), null == T || T(), a && (await o.Z.fetchMessages({
+      d && (0, y.mc)(), null == L || L(), a && (await o.Z.fetchMessages({
         channelId: b[0]
       }), (0, c.Kh)(b[0], {
         openTextInVoiceIfVoiceChannel: !0
@@ -198,7 +198,7 @@ function x(e) {
         failedDestinations: A,
         forwardOptions: P
       })
-    }, [j, P, Z, t, T, en]),
+    }, [j, P, Z, t, L, en]),
     ei = r.useCallback(e => {
       er(W, {
         withMessage: e,

@@ -86,7 +86,7 @@ function k(e) {
   } = e;
   if (null == t || null == n) return;
   let r = (0, O._p)(t),
-    l = n.hasFeature(t);
+    l = n.features.has(t);
   if (null == r) return;
   let a = (0, O.nW)(r);
   return l ? P.intl.formatToPlainString(P.t.u3L3TU, {

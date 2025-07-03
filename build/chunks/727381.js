@@ -16,8 +16,8 @@ var l = n(120356),
   _ = n(477718),
   A = n(791176),
   m = n(908474),
-  T = n(467014),
-  f = n(388032),
+  f = n(467014),
+  T = n(388032),
   g = n(12740);
 
 function I() {
@@ -30,7 +30,7 @@ function I() {
         height: 16
       }), (0, r.jsx)(a.X6q, {
         variant: "heading-md/semibold",
-        children: f.intl.string(f.t.cf5lgo)
+        children: T.intl.string(T.t.cf5lgo)
       })]
     }), (0, r.jsx)("div", {
       children: (0, r.jsx)(a.M2$, {
@@ -48,7 +48,7 @@ function h(e) {
     guildId: n,
     location: l,
     className: c,
-    onNavigate: f
+    onNavigate: T
   } = e, h = (0, s.e7)([u.default], () => u.default.getUser(t), [t]), O = (0, s.e7)([o.ZP], () => o.ZP.getMember(n, t), [n, t]);
   return null == h || null == O ? null : (0, r.jsxs)("div", {
     className: i()(g.container, c),
@@ -56,12 +56,12 @@ function h(e) {
       className: g.innerContainer,
       children: [(0, r.jsx)(m.Z, {
         member: O
-      }), (0, r.jsx)(T.Z, {
+      }), (0, r.jsx)(f.Z, {
         userId: t,
         guildId: n
       }), (0, r.jsx)(A.Z, {
         member: O,
-        onNavigate: f
+        onNavigate: T
       }), (0, r.jsx)(E.Z, {
         member: O
       }), (0, r.jsx)(d.Z, {

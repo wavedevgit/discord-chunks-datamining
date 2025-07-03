@@ -56,8 +56,8 @@ function w(e) {
     user: t,
     currentUser: n,
     channel: w
-  } = e, R = __OVERLAY__, k = (0, m.ZP)(t.id), M = (0, c.ZP)(), L = i.useRef(Date.now()), {
-    analyticsLocations: D
+  } = e, R = __OVERLAY__, k = (0, m.ZP)(t.id), M = (0, c.ZP)(), D = i.useRef(Date.now()), {
+    analyticsLocations: L
   } = (0, d.ZP)(u.Z.USER_PROFILE_SIDEBAR), U = (0, h.ZB)({
     layout: "SIDEBAR",
     userId: t.id,
@@ -69,15 +69,15 @@ function w(e) {
     }
   }), V = e => {
     (0, b.openUserProfileModal)(A({
-      sourceAnalyticsLocations: D,
+      sourceAnalyticsLocations: L,
       hideRestrictedProfile: !0
     }, U, e))
   };
   return (0, r.jsx)(d.Gt, {
-    value: D,
+    value: L,
     children: (0, r.jsx)(h.Mt, {
       value: U,
-      openedAt: L.current,
+      openedAt: D.current,
       fetchStartedAt: null == k ? void 0 : k.fetchStartedAt,
       fetchEndedAt: null == k ? void 0 : k.fetchEndedAt,
       isLoaded: null == k ? void 0 : k.isLoaded,
@@ -150,7 +150,7 @@ function w(e) {
               onClick: () => {
                 V(), (0, f.pQ)(A({
                   action: "PRESS_VIEW_PROFILE",
-                  analyticsLocations: D
+                  analyticsLocations: L
                 }, U))
               },
               children: N.intl.string(N.t["+Xp3ho"])

@@ -1,4 +1,4 @@
-/** Chunk was on 42018 **/
+/** Chunk was on 12519 **/
 e.exports = {
   newBadgeRow: "newBadgeRow__46b5e",
   newBadge: "newBadge__46b5e"

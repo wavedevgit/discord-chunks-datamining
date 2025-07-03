@@ -1,6 +1,6 @@
 /** Chunk was on 95140 **/
 t.d(n, {
-  Gi: () => s,
+  Gi: () => c,
   YJ: () => d,
   zY: () => u
 });
@@ -10,25 +10,25 @@ var i = t(481060),
   a = t(489813),
   o = t(592286),
   r = t(388032),
-  c = t(667084);
+  s = t(667084);
 
-function s(e) {
+function c(e) {
   let {
     value: n,
     placeholder: t,
     onChange: a,
     disabled: r,
-    autofocus: c,
-    className: s
+    autofocus: s,
+    className: c
   } = e;
   return (0, l.jsx)(i.oil, {
-    inputClassName: s,
+    inputClassName: c,
     maxLength: o.tL,
     value: null != n ? n : "",
     placeholder: t,
     onChange: a,
     disabled: r,
-    autoFocus: c
+    autoFocus: s
   })
 }
 
@@ -39,7 +39,7 @@ function d(e) {
   return (0, l.jsx)(a.CA, {
     title: n.label,
     children: (0, l.jsx)(i.Kx8, {
-      className: c.disabledFieldBackground,
+      className: s.disabledFieldBackground,
       value: n.response,
       disabled: !0,
       autoFocus: !0,
@@ -56,7 +56,7 @@ function u(e) {
   } = e;
   return (0, l.jsx)(a.hK, {
     title: n.label,
-    children: (0, l.jsx)(s, {
+    children: (0, l.jsx)(c, {
       onChange: i,
       value: n.response,
       autofocus: t,

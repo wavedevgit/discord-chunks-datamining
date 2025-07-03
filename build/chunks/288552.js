@@ -11,13 +11,13 @@ let o = e => {
     text: t,
     icon: n,
     onClick: o,
-    ref: a
+    ref: s
   } = e;
   return (0, r.jsxs)(i.zxk, {
     className: l.button,
     innerClassName: l.buttonInner,
     onClick: o,
-    buttonRef: a,
+    buttonRef: s,
     children: [(0, r.jsx)(n, {
       color: "currentColor"
     }), (0, r.jsx)(i.Text, {

@@ -1,25 +1,25 @@
 /** Chunk was on 4811 **/
 n.d(t, {
-  Z: () => s
+  Z: () => a
 });
 var r = n(255367);
 n(73800);
 var i = n(120356),
   l = n.n(i),
   o = n(793030),
-  a = n(803595);
+  s = n(803595);
 
-function s() {
+function a() {
   let e = e => {
       let {
         className: t
       } = e;
       return (0, r.jsx)("div", {
-        className: l()(a.line, t)
+        className: l()(s.line, t)
       })
     },
     t = () => (0, r.jsx)("div", {
-      className: a.avatar
+      className: s.avatar
     }),
     n = () => (0, r.jsxs)(o.Kq, {
       direction: "horizontal",
@@ -28,11 +28,11 @@ function s() {
       children: [(0, r.jsx)(t, {}), (0, r.jsxs)(o.Kq, {
         gap: 4,
         children: [(0, r.jsx)(e, {
-          className: a.lineMedium
+          className: s.lineMedium
         }), (0, r.jsx)(e, {
-          className: a.lineShort
+          className: s.lineShort
         }), (0, r.jsx)(e, {
-          className: a.lineLong
+          className: s.lineLong
         })]
       })]
     });
@@ -44,7 +44,7 @@ function s() {
         paddingBottom: 8
       },
       children: (0, r.jsx)(e, {
-        className: a.lineShort
+        className: s.lineShort
       })
     }), Array.from({
       length: 15

@@ -78,8 +78,8 @@ function N(e, t, N, U, A) {
     {
       muted: L,
       deafened: V,
-      suppressed: F,
-      voiceChannelId: G
+      suppressed: G,
+      voiceChannelId: F
     } = (0, r.cj)([h.Z], () => {
       var n, l, i;
       let r = h.Z.getVoiceState(t, e.id);
@@ -103,9 +103,9 @@ function N(e, t, N, U, A) {
       targetUserId: e.id
     }),
     Y = (0, d.Z)(t, e.id),
-    z = null != G && null != N && m.Z.canWithPartialContext(p.Plq.VIEW_CHANNEL, {
-      channelId: G
-    }) && !D ? [(!q || q && !F) && m.Z.canWithPartialContext(p.Plq.MUTE_MEMBERS, {
+    z = null != F && null != N && m.Z.canWithPartialContext(p.Plq.VIEW_CHANNEL, {
+      channelId: F
+    }) && !D ? [(!q || q && !G) && m.Z.canWithPartialContext(p.Plq.MUTE_MEMBERS, {
       channelId: N
     }) ? (0, l.jsx)(a.S89, {
       id: "voice-mute",
@@ -115,7 +115,7 @@ function N(e, t, N, U, A) {
       action: () => {
         !1 === L && Q(P.jQ.MUTE), u.Z.setServerMute(t, e.id, !L)
       }
-    }, "voice-mute") : null, (!q || q && !F) && m.Z.canWithPartialContext(p.Plq.DEAFEN_MEMBERS, {
+    }, "voice-mute") : null, (!q || q && !G) && m.Z.canWithPartialContext(p.Plq.DEAFEN_MEMBERS, {
       channelId: N
     }) ? (0, l.jsx)(a.S89, {
       id: "voice-deafen",
@@ -141,7 +141,7 @@ function N(e, t, N, U, A) {
         (0, a.showToast)((0, a.createToast)(j.intl.string(j.t.epyCur), a.ToastType.FAILURE))
       }
     }, J = null, $ = null != w && m.Z.canManageUser(p.Plq.MODERATE_MEMBERS, e, w) && m.Z.canManageUser(p.Plq.KICK_MEMBERS, e, w) && m.Z.canManageUser(p.Plq.BAN_MEMBERS, e, w), X = null != w && (m.Z.canManageUser(p.Plq.MANAGE_GUILD, e, w) || m.Z.canManageUser(p.Plq.MANAGE_ROLES, e, w));
-  if (!B && null != w && null != K && null != K.joinedAt && ($ || X) && w.hasFeature(p.oNc.GUILD_ONBOARDING_EVER_ENABLED)) {
+  if (!B && null != w && null != K && null != K.joinedAt && ($ || X) && w.features.has(p.oNc.GUILD_ONBOARDING_EVER_ENABLED)) {
     var ee;
     J = (0, v.yE)(null != (ee = K.flags) ? ee : 0, M.q.BYPASSES_VERIFICATION) ? (0, l.jsx)(a.sNh, {
       id: "verify",

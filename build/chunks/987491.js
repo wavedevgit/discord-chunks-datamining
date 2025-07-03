@@ -106,7 +106,7 @@ function A(e) {
     })
   })
 }
-let M = l.memo(function(e) {
+let Z = l.memo(function(e) {
     let {
       joinRequest: t,
       user: n
@@ -160,7 +160,7 @@ let M = l.memo(function(e) {
       })]
     })
   }),
-  Z = l.memo(function(e) {
+  M = l.memo(function(e) {
     let {
       joinRequest: t,
       onSelect: i
@@ -219,7 +219,7 @@ let M = l.memo(function(e) {
         [y.selected]: (null == j ? void 0 : j.joinRequestId) === t.joinRequestId
       }),
       children: [(0, r.jsx)("td", {
-        children: (0, r.jsx)(M, {
+        children: (0, r.jsx)(Z, {
           joinRequest: t,
           user: h
         })
@@ -337,7 +337,7 @@ function D(e) {
             children: (0, r.jsx)(w, {
               status: n
             })
-          }) : u.map(e => (0, r.jsx)(Z, {
+          }) : u.map(e => (0, r.jsx)(M, {
             joinRequest: e,
             onSelect: () => h.Z.setSelectedGuildJoinRequest(t, e)
           }, e.joinRequestId))

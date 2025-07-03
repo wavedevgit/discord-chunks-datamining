@@ -22,7 +22,7 @@ function p(e) {
     buttonClassName: p
   } = e, {
     analyticsLocations: f
-  } = (0, s.ZP)(), h = t.hasFeature(c.oNc.BANNER), x = i.useCallback(e => {
+  } = (0, s.ZP)(), h = t.features.has(c.oNc.BANNER), x = i.useCallback(e => {
     let {
       imageUri: n,
       file: r

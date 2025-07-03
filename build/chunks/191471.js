@@ -1,19 +1,19 @@
-/** Chunk was on 50331 **/
+/** Chunk was on 21443 **/
 n.d(t, {
-  J: () => i
+  J: () => o
 });
 var r = n(255367);
 n(73800);
-var o = n(481060);
+var c = n(481060);
 
-function i(e) {
-  (0, o.ZDy)(async () => {
+function o(e) {
+  (0, c.ZDy)(async () => {
     let {
       default: t
     } = await n.e("9354").then(n.bind(n, 461533));
     return n => {
-      var o, i;
-      return (0, r.jsx)(t, (o = function(e) {
+      var c, o;
+      return (0, r.jsx)(t, (c = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -30,18 +30,18 @@ function i(e) {
           })
         }
         return e
-      }({}, n), i = i = {
+      }({}, n), o = o = {
         guildId: e
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(c, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(i)).forEach(function(e) {
-        Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(i, e))
-      }), o))
+      })(Object(o)).forEach(function(e) {
+        Object.defineProperty(c, e, Object.getOwnPropertyDescriptor(o, e))
+      }), c))
     }
   })
 }

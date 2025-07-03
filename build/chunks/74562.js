@@ -1,6 +1,6 @@
 /** Chunk was on 56236 **/
 t.d(n, {
-  Z: () => h
+  Z: () => f
 });
 var i = t(255367);
 t(73800);
@@ -15,24 +15,24 @@ var r = t(442837),
   g = t(388032),
   p = t(588477);
 
-function h(e) {
+function f(e) {
   let {
     guildId: n,
     onClose: t
   } = e, {
-    showHubEventsList: h
+    showHubEventsList: f
   } = c.Z.useExperiment({
     guildId: n,
     location: "6597ca_1"
   }, {
     autoTrackExposure: !1
-  }), f = (0, r.e7)([s.Z, u.Z], () => {
+  }), h = (0, r.e7)([s.Z, u.Z], () => {
     let e = s.Z.getGuild(n);
     return u.Z.can(d.Plq.MANAGE_ROLES, e)
   }, [n]), v = (0, r.e7)([s.Z], () => {
     let e = s.Z.getGuild(n);
-    return h && (null == e ? void 0 : e.hasFeature(d.oNc.HUB))
-  }, [n, h]);
+    return f && (null == e ? void 0 : e.features.has(d.oNc.HUB))
+  }, [n, f]);
   return (0, i.jsxs)("div", {
     className: p.container,
     children: [(0, i.jsx)(a.Z, {
@@ -56,7 +56,7 @@ function h(e) {
       variant: "text-sm/normal",
       className: p.subtitle,
       children: v ? g.intl.string(g.t["6hktHB"]) : g.intl.string(g.t["v/S/PD"])
-    }), f && (0, i.jsx)(l.Text, {
+    }), h && (0, i.jsx)(l.Text, {
       color: "header-secondary",
       variant: "text-sm/normal",
       className: p.roleTip,

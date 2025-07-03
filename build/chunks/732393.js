@@ -15,9 +15,9 @@ var r = n(442837),
   f = n(592125),
   h = n(710352),
   g = n(388032),
-  b = n(939852);
+  v = n(939852);
 
-function v(e) {
+function b(e) {
   let {
     tag: t
   } = e, {
@@ -27,7 +27,7 @@ function v(e) {
   } = t, d = (0, r.e7)([s.ZP], () => null != l ? s.ZP.getUsableCustomEmojiById(l) : null);
   return (0, i.jsxs)(i.Fragment, {
     children: [null != a || null != l ? (0, i.jsx)(o.Z, {
-      className: b.emoji,
+      className: v.emoji,
       emojiId: l,
       emojiName: a,
       animated: !!(null == d ? void 0 : d.animated)
@@ -40,13 +40,13 @@ function Z(e) {
     n = (0, c.C7)(t),
     o = (0, r.e7)([f.Z], () => f.Z.getChannel(null == t ? void 0 : t.parent_id), [t]),
     s = (0, u.Vm)(o),
-    b = (0, u.eV)(t),
-    Z = b.length >= h.Cn,
+    v = (0, u.eV)(t),
+    Z = v.length >= h.Cn,
     p = (0, c.$R)(t);
   if (null == t) return (0, a.Zy)(), null;
   if (!n || __OVERLAY__ || !t.isForumPost() || (null == s ? void 0 : s.length) === 0 || !p || t.isModeratorReportChannel()) return null;
   let m = e => {
-      let n = new Set(b);
+      let n = new Set(v);
       if (n.has(e)) n.delete(e);
       else {
         if (Z) return;
@@ -56,10 +56,10 @@ function Z(e) {
       d.Z.updateForumPostTags(t.id, i)
     },
     O = null == s ? void 0 : s.map(e => {
-      let t = b.includes(e);
+      let t = v.includes(e);
       return (0, i.jsx)(l.S89, {
         id: e.id,
-        label: (0, i.jsx)(v, {
+        label: (0, i.jsx)(b, {
           tag: e
         }),
         disabled: Z && !t,

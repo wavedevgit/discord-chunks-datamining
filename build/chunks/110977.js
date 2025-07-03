@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(120356),
   o = n.n(l),
-  a = n(481060),
-  s = n(593214),
+  s = n(481060),
+  a = n(593214),
   c = n(981631),
   u = n(388032),
   d = n(761168),
@@ -31,7 +31,7 @@ let g = i.memo(function(e) {
     let {
       favoriteAdded: e,
       clearFavoriteAdded: t
-    } = (0, s.up)();
+    } = (0, a.up)();
     return i.useEffect(() => {
       if (e) {
         let e = setTimeout(() => {
@@ -43,9 +43,9 @@ let g = i.memo(function(e) {
       }
     }, [e, t]), e
   }();
-  return (0, r.jsx)(a.ua7, {
+  return (0, r.jsx)(s.ua7, {
     forceOpen: l,
-    color: a.FGA.GREEN,
+    color: s.FGA.GREEN,
     hideOnClick: !0,
     spacing: 12,
     position: "right",

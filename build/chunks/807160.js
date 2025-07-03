@@ -177,7 +177,7 @@ function es(e) {
   } = e, i = (0, E.hO)(t, n, {
     requireCurrentGuild: !1
   }), l = (0, C.C)(i), a = (0, m.e7)([D.Z], () => D.Z.getGuild(t)), o = (null == i ? void 0 : i.role_id) != null && (null == i ? void 0 : i.attachments_count) === 0 ? W.intl.string(W.t.H11qcX) : l, c = s.useCallback(async () => {
-    (null == a ? void 0 : a.hasFeature(H.oNc.PRODUCTS_AVAILABLE_FOR_PURCHASE)) === !0 ? await (0, T.Z)(H.Z5c.GUILD_PRODUCT(t, n)) : await (0, T.Z)(H.Z5c.CHANNEL(t)), (0, p.xf)()
+    (null == a ? void 0 : a.features.has(H.oNc.PRODUCTS_AVAILABLE_FOR_PURCHASE)) ? await (0, T.Z)(H.Z5c.GUILD_PRODUCT(t, n)) : await (0, T.Z)(H.Z5c.CHANNEL(t)), (0, p.xf)()
   }, [a, t, n]);
   return (0, r.jsxs)(r.Fragment, {
     children: [null != o && (0, r.jsx)(er, {

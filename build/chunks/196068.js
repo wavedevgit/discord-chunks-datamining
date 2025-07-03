@@ -19,8 +19,8 @@ var r = n(255367),
   p = n(626135),
   S = n(74538),
   N = n(243778),
-  A = n(921944),
-  f = n(981631),
+  f = n(921944),
+  A = n(981631),
   m = n(474936),
   R = n(388032),
   g = n(134772);
@@ -62,8 +62,8 @@ let P = e => {
         }
         return e
       }({}, b), t = t = {
-        object: f.qAy.BUTTON_CTA,
-        objectType: f.Qqv.TIER_2
+        object: A.qAy.BUTTON_CTA,
+        objectType: A.Qqv.TIER_2
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -76,17 +76,17 @@ let P = e => {
       }), e)
     })
   }, [D, b]), U = i.useCallback(() => {
-    s.Z.open(f.oAB.INVENTORY), I.ZP.dismissOutboundPromotionNotice()
+    s.Z.open(A.oAB.INVENTORY), I.ZP.dismissOutboundPromotionNotice()
   }, []), M = i.useCallback(() => {
-    p.default.track(f.rMx.OUTBOUND_PROMOTION_NOTICE_CLICKED), y ? h() : U()
+    p.default.track(A.rMx.OUTBOUND_PROMOTION_NOTICE_CLICKED), y ? h() : U()
   }, [y, h, U]);
   if (null == n) return null;
   let v = e => (0, r.jsxs)(c.qXd, {
     color: c.DM8.PREMIUM_TIER_2,
     children: [(0, r.jsx)(c.RyX, {
-      noticeType: f.kVF.OUTBOUND_PROMOTION,
+      noticeType: A.kVF.OUTBOUND_PROMOTION,
       onClick: () => {
-        I.ZP.dismissOutboundPromotionNotice(), null !== e && e(A.L.USER_DISMISS)
+        I.ZP.dismissOutboundPromotionNotice(), null !== e && e(f.L.USER_DISMISS)
       }
     }), (0, r.jsx)(c.SrA, {
       size: "md",
@@ -99,9 +99,9 @@ let P = e => {
         onClick: U
       })]
     }) : R.intl.string(R.t["5JMiOj"]) : R.intl.string(R.t["Pzh+Gx"]), (0, r.jsx)(c.NoS, {
-      noticeType: f.kVF.OUTBOUND_PROMOTION,
+      noticeType: A.kVF.OUTBOUND_PROMOTION,
       onClick: () => {
-        M(), null !== e && e(A.L.TAKE_ACTION)
+        M(), null !== e && e(f.L.TAKE_ACTION)
       },
       children: y ? R.intl.string(R.t.pj0XBA) : R.intl.string(R.t.jVcuVV)
     })]
@@ -112,7 +112,7 @@ let P = e => {
     timeRecurringConfig: {
       cooldownDurationMs: 0
     },
-    groupName: A.R.NOTICE_BAR,
+    groupName: f.R.NOTICE_BAR,
     bypassAutoDismiss: !0,
     children: e => {
       let {

@@ -14,8 +14,8 @@ var r = t(442837),
   d = t(19780),
   g = t(594174),
   p = t(15274),
-  h = t(924301),
-  f = t(951539),
+  f = t(924301),
+  h = t(951539),
   v = t(146768),
   m = t(592126),
   j = t(236373),
@@ -45,7 +45,7 @@ function C(e) {
     entity_type: R,
     image: U,
     recurrence_rule: H
-  } = E, A = (0, y.DK)(E), z = (0, r.e7)([h.ZP], () => h.ZP.isInterestedInEventRecurrence(T, A), [T, A]), B = (0, r.e7)([o.Z], () => o.Z.isLurking(_), [_]), X = (0, r.e7)([a.Z], () => a.Z.getStageInstanceByChannel(D), [D]), J = (0, r.e7)([s.Z], () => s.Z.getChannel(D), [D]), V = (0, r.e7)([g.default], () => g.default.getUser(G), [G]), {
+  } = E, A = (0, y.DK)(E), z = (0, r.e7)([f.ZP], () => f.ZP.isInterestedInEventRecurrence(T, A), [T, A]), B = (0, r.e7)([o.Z], () => o.Z.isLurking(_), [_]), X = (0, r.e7)([a.Z], () => a.Z.getStageInstanceByChannel(D), [D]), J = (0, r.e7)([s.Z], () => s.Z.getChannel(D), [D]), V = (0, r.e7)([g.default], () => g.default.getUser(G), [G]), {
     speakers: q
   } = (0, v.Z)({
     id: D,
@@ -59,7 +59,7 @@ function C(e) {
       guildId: _,
       instance: X
     }
-  }), W = (0, r.e7)([d.Z], () => d.Z.getChannelId()), K = (0, h.xt)(E), F = W === D && null != W && K, Q = q.filter(e => e.type === c.Ui.VOICE), Y = Q.length, $ = (0, r.e7)([u.Z], () => u.Z.can(P.Plq.CONNECT, J), [J]), ee = (0, f.ZP)(E), {
+  }), W = (0, r.e7)([d.Z], () => d.Z.getChannelId()), K = (0, f.xt)(E), F = W === D && null != W && K, Q = q.filter(e => e.type === c.Ui.VOICE), Y = Q.length, $ = (0, r.e7)([u.Z], () => u.Z.can(P.Plq.CONNECT, J), [J]), ee = (0, h.ZP)(E), {
     isMember: en,
     guild: et
   } = (0, m.Z)(_, T), ei = (0, O.Z)({

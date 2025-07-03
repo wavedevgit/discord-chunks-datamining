@@ -1,13 +1,13 @@
 /** Chunk was on 78650 **/
 n.d(t, {
-  CM: () => b,
+  CM: () => v,
   UT: () => g,
   _Z: () => m,
   kj: () => f,
   oC: () => h,
   s3: () => Z,
   uA: () => p,
-  xh: () => v
+  xh: () => b
 }), n(388685);
 var i = n(524437),
   r = n(675478),
@@ -66,7 +66,7 @@ function g(e, t) {
   }, r.fy.INFREQUENT_USER_ACTION)
 }
 
-function b(e) {
+function v(e) {
   let t = o.default.fromTimestamp(Date.now());
   r.hW.updateAsync("favorites", n => {
     n.favoriteChannels[t] = i.aV.create({
@@ -78,7 +78,7 @@ function b(e) {
   }, r.fy.FREQUENT_USER_ACTION)
 }
 
-function v(e) {
+function b(e) {
   h(e)
 }
 

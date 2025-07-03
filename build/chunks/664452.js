@@ -1,6 +1,6 @@
 /** Chunk was on 61536 **/
 n.d(t, {
-  default: () => k
+  default: () => f
 }), n(388685);
 var i = n(255367),
   r = n(73800),
@@ -52,16 +52,16 @@ function b(e, t) {
   }), e
 }
 
-function k(e) {
+function f(e) {
   let {
     guildId: t,
     transitionState: n,
-    onClose: k,
-    analyticsData: f
-  } = e, N = (0, s.e7)([c.Z], () => c.Z.getGuild(t), [t]), T = !!(null == N ? void 0 : N.hasFeature(C.oNc.INVITES_DISABLED)), [O] = r.useState(!1), [y, E] = r.useState(j.Fl), S = (0, s.e7)([p.Z], () => p.Z.getGuildIncident(t)), I = (0, u.BT)(N), w = (0, h.SG)(S) || T, A = (0, h.sN)(S), [P, R] = r.useState(w), [z, D] = r.useState(A), [M, L] = r.useState(!1), Z = P !== w || z !== A || M, G = T && !I;
-  if (null == N) return k(), null;
+    onClose: f,
+    analyticsData: k
+  } = e, N = (0, s.e7)([c.Z], () => c.Z.getGuild(t), [t]), T = !!(null == N ? void 0 : N.features.has(C.oNc.INVITES_DISABLED)), [O] = r.useState(!1), [y, E] = r.useState(j.Fl), S = (0, s.e7)([p.Z], () => p.Z.getGuildIncident(t)), I = (0, u.BT)(N), w = (0, h.SG)(S) || T, A = (0, h.sN)(S), [P, R] = r.useState(w), [z, D] = r.useState(A), [M, L] = r.useState(!1), Z = P !== w || z !== A || M, G = T && !I;
+  if (null == N) return f(), null;
 
-  function F() {
+  function B() {
     R(e => !e)
   }
   return (0, i.jsxs)(a.Y0X, {
@@ -111,7 +111,7 @@ function k(e) {
             children: e => (0, i.jsx)("div", b(v({}, e), {
               children: (0, i.jsx)(a.rsf, {
                 className: g.toggle,
-                onChange: F,
+                onChange: B,
                 checked: P,
                 disabled: G
               })
@@ -149,7 +149,7 @@ function k(e) {
             source: e,
             alertType: n,
             messageId: r
-          } = f;
+          } = k;
           d.default.track(C.rMx.GUILD_RAID_INTERVENTION_STATE_CHANGE, {
             guild_id: t,
             source: e,
@@ -158,7 +158,7 @@ function k(e) {
             intervention_type_enabled: (0, h.sO)(P, z),
             intervention_type_disabled: (0, h.lk)(P, z),
             duration: 60 * y
-          }), k()
+          }), f()
         },
         color: a.zxk.Colors.BRAND,
         look: a.zxk.Looks.FILLED,
@@ -166,7 +166,7 @@ function k(e) {
         disabled: !Z,
         children: _.intl.string(_.t["pwm/z8"])
       }), (0, i.jsx)(a.zxk, {
-        onClick: k,
+        onClick: f,
         color: a.zxk.Colors.PRIMARY,
         look: a.zxk.Looks.LINK,
         disabled: O,

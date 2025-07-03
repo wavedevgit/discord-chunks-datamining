@@ -13,11 +13,11 @@ function o(e) {
     video: n,
     userCount: o
   } = e, {
-    limit: a
-  } = (0, i.Z)(t), s = -1, c = !1;
-  return t.userLimit > 0 && (s = t.userLimit), n && a > 0 && (c = s < 0 || a < s, s = s > 0 ? Math.min(s, a) : a), (0, r.jsx)(l.Z, {
+    limit: s
+  } = (0, i.Z)(t), a = -1, c = !1;
+  return t.userLimit > 0 && (a = t.userLimit), n && s > 0 && (c = a < 0 || s < a, a = a > 0 ? Math.min(a, s) : s), (0, r.jsx)(l.Z, {
     users: o,
-    total: s,
+    total: a,
     videoLimit: c
   })
 }

@@ -51,7 +51,7 @@ function b(e) {
     vanityURLUses: s,
     originalVanityURLCode: o,
     hasError: d
-  } = e, u = (null == t ? void 0 : t.hasFeature(g.oNc.VANITY_URL)) === !0, m = i.useCallback(() => {
+  } = e, u = (null == t ? void 0 : t.features.has(g.oNc.VANITY_URL)) === !0, m = i.useCallback(() => {
     (0, c.Gy)("")
   }, []), p = i.useCallback(e => {
     (0, c.Gy)(e.replace(/ /g, "-"))

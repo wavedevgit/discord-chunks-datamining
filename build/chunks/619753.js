@@ -15,8 +15,8 @@ var r = n(255367),
   _ = n(933557),
   A = n(471445),
   m = n(95398),
-  T = n(905405),
-  f = n(255269),
+  f = n(905405),
+  T = n(255269),
   g = n(937889),
   I = n(804063),
   h = n(703656),
@@ -78,8 +78,8 @@ function k(e) {
     scrollTo: _,
     searchResults: A,
     blockCount: m,
-    ignoreCount: T,
-    onPageChange: f,
+    ignoreCount: f,
+    onPageChange: T,
     onClick: g
   } = e, {
     offset: O,
@@ -162,7 +162,7 @@ function k(e) {
     }, z.getContainerProps(), q), {
       "aria-busy": p,
       children: K
-    })), m > 0 || T > 0 ? (0, r.jsxs)(o.P3F, {
+    })), m > 0 || f > 0 ? (0, r.jsxs)(o.P3F, {
       tag: "div",
       className: y.resultsBlocked,
       onClick: () => c.QY(i, !S),
@@ -170,22 +170,22 @@ function k(e) {
         className: y.resultsBlockedImage
       }), (0, r.jsx)("div", {
         className: y.__invalid_resultsBlockedText,
-        children: S ? m > 0 && T > 0 ? P.intl.formatToPlainString(P.t["OvJs9/"], {
-          count: m + T
+        children: S ? m > 0 && f > 0 ? P.intl.formatToPlainString(P.t["OvJs9/"], {
+          count: m + f
         }) : m > 0 ? P.intl.formatToPlainString(P.t["n/1QFR"], {
           count: m
         }) : P.intl.formatToPlainString(P.t.ypezTE, {
-          count: T
-        }) : m > 0 && T > 0 ? P.intl.formatToPlainString(P.t.EJHRcX, {
-          count: m + T
+          count: f
+        }) : m > 0 && f > 0 ? P.intl.formatToPlainString(P.t.EJHRcX, {
+          count: m + f
         }) : m > 0 ? P.intl.formatToPlainString(P.t.HTE8JC, {
           count: m
         }) : P.intl.formatToPlainString(P.t.e7f8r6, {
-          count: T
+          count: f
         })
       })]
     }) : null, !p && !V && (0, r.jsx)(M.Z, {
-      onPageChange: f,
+      onPageChange: T,
       offset: O,
       totalCount: N,
       pageSize: j.vpv
@@ -241,7 +241,7 @@ function Z(e) {
     jumpToMessage: L,
     listNavigator: M,
     favoriteSearch: P
-  } = e, k = N.cC.useSetting(), Z = (0, T.p)(), z = l.useCallback(e => {
+  } = e, k = N.cC.useSetting(), Z = (0, f.p)(), z = l.useCallback(e => {
     if (e === D.Z.getChannelId()) return;
     let t = R.Z.getChannel(e);
     null != t && C.Z.can(j.Plq.VIEW_CHANNEL, t) && (0, O.Kh)(t.id)
@@ -260,7 +260,7 @@ function Z(e) {
   }, []);
   let $ = [B, K, V].filter(e => null != e).join(", ");
   return (0, r.jsx)(m.aQ.Provider, {
-    value: (0, f.Z)(k, q),
+    value: (0, T.Z)(k, q),
     children: (0, r.jsxs)("ul", {
       role: "group",
       className: y.searchResultGroup,

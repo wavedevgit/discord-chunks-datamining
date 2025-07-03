@@ -55,7 +55,7 @@ function C(e) {
       enableStudyGroup: D
     } = (0, u.s)(e),
     k = R.length > 0,
-    M = D && !(null == e ? void 0 : e.hasFeature(I.oNc.HUB)),
+    M = D && !(null == e ? void 0 : e.features.has(I.oNc.HUB)),
     U = (0, c.Vm)(n);
   if (i.useEffect(() => {
       o.Z.getGuildEventsForCurrentUser(n)

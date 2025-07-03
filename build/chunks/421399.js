@@ -19,8 +19,8 @@ var r, i = n(255367),
   p = n(372900),
   S = n(172751),
   N = n(606318),
-  A = n(402235),
-  f = n(477734),
+  f = n(402235),
+  A = n(477734),
   m = n(670188),
   R = n(768581),
   g = n(585483),
@@ -101,7 +101,7 @@ function v(e) {
     colorString: Q,
     colorStrings: $,
     colorRoleName: ee
-  } = n, et = (0, s.e7)([E.Z], () => E.Z.roleStyle), en = "username" === et, er = (0, f.X$)(), ei = (0, A.ZP)(null != W ? W : K, n.authorId), el = (0, C.Z)(r), eo = l.useContext(u.d), ea = ei && (0, N.S2)(n), ec = en && ea;
+  } = n, et = (0, s.e7)([E.Z], () => E.Z.roleStyle), en = "username" === et, er = (0, A.X$)(), ei = (0, f.ZP)(null != W ? W : K, n.authorId), el = (0, C.Z)(r), eo = l.useContext(u.d), ea = ei && (0, N.S2)(n), ec = en && ea;
   l.useEffect(() => {
     if (null == z || !ec || null == eo) return;
     let {

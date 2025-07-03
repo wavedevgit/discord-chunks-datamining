@@ -24,7 +24,7 @@ function h(e) {
     buttonClassName: h
   } = e, {
     analyticsLocations: x
-  } = (0, s.ZP)(), b = t.hasFeature(m.oNc.INVITE_SPLASH), j = n && b, _ = i.useCallback(e => {
+  } = (0, s.ZP)(), b = t.features.has(m.oNc.INVITE_SPLASH), j = n && b, _ = i.useCallback(e => {
     c.Z.updateGuild({
       splash: e
     })

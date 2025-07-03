@@ -44,7 +44,7 @@ var i, r = n(512722),
   B = n(987650),
   G = n(388032);
 
-function F(e, t, n) {
+function H(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -53,14 +53,14 @@ function F(e, t, n) {
   }) : e[t] = n, e
 }
 
-function H(e) {
+function F(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), i.forEach(function(t) {
-      F(e, t, n[t])
+      H(e, t, n[t])
     })
   }
   return e
@@ -99,7 +99,7 @@ function ee(e) {
   let n = q.findIndex(t => t.id === e);
   if (-1 === n) return !1;
   let i = q[n];
-  clearTimeout(i.timerId), q = [...q], t === U._1z.DISMISSED ? q.splice(n, 1) : q[n] = Y(H({}, i), {
+  clearTimeout(i.timerId), q = [...q], t === U._1z.DISMISSED ? q.splice(n, 1) : q[n] = Y(F({}, i), {
     status: t
   })
 }
@@ -115,10 +115,10 @@ function en(e) {
 }
 
 function ei(e, t) {
-  let n = H({}, Q, t);
+  let n = F({}, Q, t);
   if (2 !== n.priority && !L.default.isInstanceFocused()) return null;
   let i = (0, l.Z)(),
-    r = H({
+    r = F({
       id: i,
       status: U._1z.ACTIVE,
       timerId: $(i, n.expirationExternallyManaged, n.duration),
@@ -156,7 +156,7 @@ class eo extends(i = s.ZP.Store) {
     return q
   }
 }
-F(eo, "displayName", "OverlayNotificationsStore");
+H(eo, "displayName", "OverlayNotificationsStore");
 let el = new eo(a.Z, {
   OVERLAY_UPDATE_NOTIFICATION_STATUS: function(e) {
     let {
@@ -195,7 +195,7 @@ let el = new eo(a.Z, {
       locked: t
     } = e;
     if (t) return !1;
-    q = q.map(e => e.status === U._1z.ACTIVE ? (clearTimeout(e.timerId), Y(H({}, e), {
+    q = q.map(e => e.status === U._1z.ACTIVE ? (clearTimeout(e.timerId), Y(F({}, e), {
       timerId: $(e.id, e.expirationExternallyManaged)
     })) : e)
   },

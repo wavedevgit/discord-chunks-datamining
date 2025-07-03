@@ -21,7 +21,7 @@ function g(e) {
     {
       needSubscriptionToAccess: g
     } = (0, d.Z)(e.id),
-    b = r.useCallback(() => {
+    v = r.useCallback(() => {
       f.Z.handleVoiceConnect({
         channel: e,
         connected: n,
@@ -32,6 +32,6 @@ function g(e) {
   return n || !t ? null : (0, i.jsx)(s.sNh, {
     id: "join-thread-voice",
     label: l ? h.intl.string(h.t["0D/6R0"]) : h.intl.string(h.t.My50nZ),
-    action: b
+    action: v
   })
 }

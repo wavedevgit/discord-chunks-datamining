@@ -1,1 +1,1 @@
-{"id":"557239","type":"experiment","data":{"kind":"user","id":"2024-09_friends_in_server","label":"Friends in Server","defaultConfig":{"guildFriendsEnabled":false},"treatments":[{"id":1,"label":"Enabled","config":{"guildFriendsEnabled":false}}]},"fromModule":{"id":"42018"}}
+{"id":"557239","type":"experiment","data":{"kind":"user","id":"2024-09_friends_in_server","label":"Friends in Server","defaultConfig":{"guildFriendsEnabled":false},"treatments":[{"id":1,"label":"Enabled","config":{"guildFriendsEnabled":false}}]},"fromModule":{"id":"12519"}}

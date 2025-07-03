@@ -44,6 +44,6 @@ function c(e) {
       autoTrackExposure: !0
     });
   if (null == e) return !1;
-  let o = e.hasFeature(a.oNc.COMMUNITY);
+  let o = e.features.has(a.oNc.COMMUNITY);
   return i && o && n
 }

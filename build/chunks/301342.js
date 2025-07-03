@@ -10,8 +10,8 @@ var r = n(255367),
   i = n(73800),
   l = n(120356),
   o = n.n(l),
-  a = n(91192),
-  s = n(442837),
+  s = n(91192),
+  a = n(442837),
   c = n(481060),
   u = n(211739),
   d = n(239091),
@@ -74,9 +74,9 @@ let I = i.memo(function(e) {
         hideIcon: N,
         children: w
       } = e,
-      Z = (0, s.e7)([_.ZP], () => _.ZP.isChannelMuted(l.getGuildId(), l.id)),
-      T = (0, s.e7)([g.Z], () => g.Z.isCollapsed(l.id)),
-      A = (0, s.e7)([b.Z], () => b.Z.can(v.Plq.MANAGE_CHANNELS, l));
+      Z = (0, a.e7)([_.ZP], () => _.ZP.isChannelMuted(l.getGuildId(), l.id)),
+      T = (0, a.e7)([g.Z], () => g.Z.isCollapsed(l.id)),
+      A = (0, a.e7)([b.Z], () => b.Z.can(v.Plq.MANAGE_CHANNELS, l));
     t = null != P ? I > P ? j.containerDragAfter : j.containerDragBefore : j.containerDefault;
     let R = i.useCallback(() => {
         T ? (0, u.mJ)(l.id) : (0, u.c4)(l.id)
@@ -109,7 +109,7 @@ let I = i.memo(function(e) {
           }))
         })
       }, [l]),
-      M = (0, a.JA)(l.id),
+      M = (0, s.JA)(l.id),
       {
         role: k,
         tabIndex: U
@@ -251,7 +251,7 @@ let I = i.memo(function(e) {
   w = i.memo(function(e) {
     let {
       category: t
-    } = e, n = (0, s.e7)([O.Z], () => O.Z.isVoiceCategoryCollapsed(t.guild.id)), l = i.useCallback(() => {
+    } = e, n = (0, a.e7)([O.Z], () => O.Z.isVoiceCategoryCollapsed(t.guild.id)), l = i.useCallback(() => {
       n ? (0, y.s)(t.guild.id) : (0, y.M)(t.guild.id)
     }, [t.guild.id, n]);
     return (0, r.jsxs)(c.zxk, {
@@ -274,7 +274,7 @@ let I = i.memo(function(e) {
     let {
       category: t,
       channel: n
-    } = e, i = (0, s.e7)([O.Z], () => O.Z.isVoiceCategoryCollapsed(t.guild.id));
+    } = e, i = (0, a.e7)([O.Z], () => O.Z.isVoiceCategoryCollapsed(t.guild.id));
     return i || null == n || n.record.type === v.d4z.GUILD_CATEGORY ? i ? (0, r.jsx)("li", {
       className: j.containerDefault,
       children: (0, r.jsx)("div", {

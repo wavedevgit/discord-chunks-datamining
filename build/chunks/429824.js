@@ -1,6 +1,6 @@
 /** Chunk was on 87154 **/
 r.d(t, {
-  Z: () => s
+  Z: () => b
 });
 var n = r(255367),
   i = r(73800),
@@ -8,19 +8,20 @@ var n = r(255367),
   o = r(528011),
   c = r(666657),
   a = r(533244),
-  u = r(388032);
+  u = r(981631),
+  s = r(388032);
 
-function s(e) {
+function b(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
     {
-      shouldShowIncidentActions: s,
-      isUnderLockdown: b,
-      incidentData: p
+      shouldShowIncidentActions: b,
+      isUnderLockdown: p,
+      incidentData: O
     } = (0, o.mI)(e.id),
-    O = i.useCallback(() => {
+    f = i.useCallback(() => {
       let t = {
         source: c.Zu.CONTEXT_MENU,
-        alertType: (0, a.T1)(p)
+        alertType: (0, a.T1)(O)
       };
       (0, l.ZDy)(async () => {
         let {
@@ -60,12 +61,12 @@ function s(e) {
           }), l))
         }
       })
-    }, [e.id, p]);
-  return e.isCommunity() && s ? (0, n.jsx)(l.sNh, {
+    }, [e.id, O]);
+  return e.features.has(u.oNc.COMMUNITY) && b ? (0, n.jsx)(l.sNh, {
     id: "server-lockdown",
-    label: b ? u.intl.string(u.t["+tSVi4"]) : u.intl.string(u.t.EPlEdn),
-    icon: t ? b ? l.d$P : l.mBM : void 0,
-    action: O,
+    label: p ? s.intl.string(s.t["+tSVi4"]) : s.intl.string(s.t.EPlEdn),
+    icon: t ? p ? l.d$P : l.mBM : void 0,
+    action: f,
     color: "danger"
   }) : null
 }

@@ -28,8 +28,8 @@ var l, r = n(255367),
   C = n(699516),
   x = n(594174),
   P = n(626135),
-  L = n(55935),
-  T = n(823379),
+  T = n(55935),
+  L = n(823379),
   N = n(51144),
   j = n(784384),
   Z = n(981631),
@@ -260,7 +260,7 @@ function Q(e) {
         }), (0, r.jsx)(f.Text, {
           variant: "text-xs/medium",
           color: "text-secondary",
-          children: (0, L.Xf)(c()(o))
+          children: (0, T.Xf)(c()(o))
         })]
       }) : null]
     })
@@ -331,7 +331,7 @@ function z(e) {
         channel: d
       }, E)) : u === m.h8.TEXT_CHANNEL || u === m.h8.VOICE_CHANNEL ? (0, r.jsx)(Q, k({
         channel: d
-      }, E)) : void(0, T.vE)(u)
+      }, E)) : void(0, L.vE)(u)
     }, [c, o, l, a, t, n, p]),
     b = i.useRef(null),
     y = (0, g.Z)("forward-modal", b);

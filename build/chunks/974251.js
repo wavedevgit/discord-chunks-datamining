@@ -36,8 +36,8 @@ var r = n(255367),
   R = n(951211),
   k = n(981631),
   M = n(356659),
-  L = n(921944),
-  D = n(388032),
+  D = n(921944),
+  L = n(388032),
   U = n(911777);
 
 function B(e) {
@@ -161,12 +161,12 @@ let H = i.memo(function(e) {
       positionKey: null != ea ? ea : "null",
       onRequestOpen: () => {
         ef && (0, _.Q3)(s.z.ACTIVITIES_CHAT_BUTTON_NUX_V2, {
-          dismissAction: L.L.TAKE_ACTION
+          dismissAction: D.L.TAKE_ACTION
         }), es("attachMenu")
       },
       onRequestClose: () => {
         (0, c.$sL)() || (ef && (0, _.Q3)(s.z.ACTIVITIES_CHAT_MENU_NEW_BADGE, {
-          dismissAction: L.L.TAKE_ACTION
+          dismissAction: D.L.TAKE_ACTION
         }), es(null))
       },
       renderPopout: e => {
@@ -200,7 +200,7 @@ let H = i.memo(function(e) {
         size: c.zxk.Sizes.NONE,
         className: o()(U.attachButton, H),
         innerClassName: U.attachButtonInner,
-        "aria-label": D.intl.string(D.t.d56gCQ),
+        "aria-label": L.intl.string(L.t.d56gCQ),
         onDoubleClick: ed ? () => {
           var e;
           return null == (e = K.current) ? void 0 : e.activateUploadDialogue()

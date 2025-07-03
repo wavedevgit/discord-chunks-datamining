@@ -47,7 +47,7 @@ let m = e => {
       renderComponent: () => (0, r.jsx)(a.Z, {
         guild: e
       }, "raid-alerts"),
-      enabled: !e.hasFeature(d.oNc.RAID_ALERTS_DISABLED)
+      enabled: !e.features.has(d.oNc.RAID_ALERTS_DISABLED)
     }, {
       renderComponent: () => (0, r.jsx)(o.Z, {
         title: u.intl.string(u.t.gOkFfH)

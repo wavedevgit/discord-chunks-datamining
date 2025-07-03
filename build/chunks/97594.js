@@ -14,8 +14,8 @@ var a = n(255367),
   d = n(254109),
   m = n(212459),
   g = n(730606),
-  y = n(860153),
-  f = n(981631),
+  f = n(860153),
+  y = n(981631),
   b = n(388032),
   O = n(269045);
 
@@ -44,8 +44,8 @@ function _(e) {
   }(e, ["onClose", "items", "startingIndex", "enabledContentHarmTypeFlags", "shouldHideMediaOptions", "transitionState"]);
   let [j, C] = r.useState(null != o ? o : 0), [T, E] = r.useState(!1), P = r.useRef(null);
   r.useEffect(() => {
-    if (null != t) return p.S.subscribe(f.CkL.MEDIA_MODAL_CLOSE, t), () => {
-      p.S.unsubscribe(f.CkL.MEDIA_MODAL_CLOSE, t)
+    if (null != t) return p.S.subscribe(y.CkL.MEDIA_MODAL_CLOSE, t), () => {
+      p.S.unsubscribe(y.CkL.MEDIA_MODAL_CLOSE, t)
     }
   }, [t]), r.useEffect(() => {
     var e, t;
@@ -71,7 +71,7 @@ function _(e) {
     }), [T, S]),
     w = n[j];
   return (0, a.jsx)(l.f6W, {
-    theme: f.BRd.MIDNIGHT,
+    theme: y.BRd.MIDNIGHT,
     children: e => {
       var r, o;
       return (0, a.jsx)(l.Y0X, (r = function(e) {
@@ -104,7 +104,7 @@ function _(e) {
         parentComponent: "MediaViewerModal",
         children: (0, a.jsxs)(m.z.Provider, {
           value: M,
-          children: [(0, a.jsx)(y.Z, {
+          children: [(0, a.jsx)(f.Z, {
             item: w,
             hideMediaOptions: h,
             onClose: t

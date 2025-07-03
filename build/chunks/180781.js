@@ -26,7 +26,7 @@ function b(t) {
   } = t, v = (0, r.e7)([u.Z], () => u.Z.getGuildId()), x = (0, r.e7)([s.Z], () => s.Z.getGuild(v)), {
     analyticsLocations: y
   } = (0, a.ZP)();
-  return null == x || x.hasFeature(d.oNc.ANIMATED_BANNER) || !b && x.hasFeature(d.oNc.BANNER) ? null : (0, o.jsxs)("div", {
+  return null == x || x.features.has(d.oNc.ANIMATED_BANNER) || !b && x.features.has(d.oNc.BANNER) ? null : (0, o.jsxs)("div", {
     className: p.container,
     children: [(0, o.jsx)(_.Z, {
       className: p.guildBoostingIcon

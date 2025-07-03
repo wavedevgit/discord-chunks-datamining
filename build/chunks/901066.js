@@ -1,6 +1,6 @@
 /** Chunk was on 9924 **/
 n.d(t, {
-  Z: () => Z
+  Z: () => M
 });
 var r = n(255367),
   l = n(73800),
@@ -239,7 +239,7 @@ function A(e) {
   })
 }
 
-function M(e) {
+function Z(e) {
   let {
     user: t,
     joinRequest: n
@@ -279,7 +279,7 @@ function M(e) {
   })
 }
 
-function Z(e) {
+function M(e) {
   let {
     guildId: t
   } = e, n = (0, j.L)({
@@ -320,7 +320,7 @@ function Z(e) {
             formFields: s,
             user: o,
             showRequirements: !1
-          }), (0, r.jsx)(M, {
+          }), (0, r.jsx)(Z, {
             guildId: t,
             user: o,
             joinRequest: n

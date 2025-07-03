@@ -118,7 +118,7 @@ function w() {
         null != e && ((0, c.xf)(), (0, h.Z)(e.id, m.Z.GUILD_POWERUPS_GUILD_SETTINGS_PREMIUM))
       }
     }), (0, r.jsx)(b.Z, {
-      tiers: (0, O.cP)(null != e && e.hasFeature(N.oNc.COMMUNITY) && e.maxStageVideoChannelUsers >= N.B9o),
+      tiers: (0, O.cP)(null != e && e.features.has(N.oNc.COMMUNITY) && e.maxStageVideoChannelUsers >= N.B9o),
       renderTier: P
     }), (0, r.jsx)("div", {
       className: E.divider

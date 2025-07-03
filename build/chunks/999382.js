@@ -165,7 +165,7 @@ function eb(e) {
   });
   else if (r === k.pNK.INTEGRATIONS || r === k.pNK.ROLES) {
     if (u = null, t !== e.section) return eK(e)
-  } else r === k.pNK.MEMBERS ? u = s.getEveryoneRoleId() : r === k.pNK.VANITY_URL ? (0, L.U5)(s.id) : r === k.pNK.SAFETY && O.Z.dispatch({
+  } else r === k.pNK.MEMBERS ? u = (0, S.lV)(s) : r === k.pNK.VANITY_URL ? (0, L.U5)(s.id) : r === k.pNK.SAFETY && O.Z.dispatch({
     type: "GUILD_SETTINGS_SAFETY_SET_SUBSECTION",
     subsection: null == i ? k.KsC.SAFETY_OVERVIEW : i
   })

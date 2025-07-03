@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(481060),
   o = n(626135),
-  a = n(288552),
-  s = n(981631),
+  s = n(288552),
+  a = n(981631),
   c = n(388032),
   u = n(413813);
 
@@ -16,7 +16,7 @@ function d(e) {
     type: t,
     onClick: n
   } = e, [d, p] = i.useState(!1), f = () => {
-    n(), o.default.track(s.rMx.INBOX_CHANNEL_ACKED, {
+    n(), o.default.track(a.rMx.INBOX_CHANNEL_ACKED, {
       marked_all_channels_as_read: !0,
       num_unread_channels_remaining: 0
     })
@@ -27,7 +27,7 @@ function d(e) {
     children: [d ? (0, r.jsx)(h, {
       confirm: f,
       cancel: () => p(!1)
-    }) : null, "bottom-floating" === t ? (0, r.jsx)(a.a, {
+    }) : null, "bottom-floating" === t ? (0, r.jsx)(s.a, {
       text: c.intl.string(c.t["8k+6QU"]),
       icon: l.W6s,
       onClick: g

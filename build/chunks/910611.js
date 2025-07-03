@@ -1,7 +1,7 @@
 /** Chunk was on 19577 **/
 n.d(t, {
   TS: () => F,
-  ud: () => L,
+  ud: () => D,
   v0: () => U
 }), n(388685);
 var r = n(255367),
@@ -125,7 +125,7 @@ function M(e) {
   }, o)
 }
 
-function L(e) {
+function D(e) {
   let {
     channel: t,
     channelName: n,
@@ -266,7 +266,7 @@ function L(e) {
         })]
       });
     case N.d4z.GUILD_DIRECTORY:
-      let E = (null == a ? void 0 : a.hasFeature(N.oNc.HUB)) ? A.intl.formatToPlainString(A.t.Dy2aho, {
+      let E = (null == a ? void 0 : a.features.has(N.oNc.HUB)) ? A.intl.formatToPlainString(A.t.Dy2aho, {
         guildName: n
       }) : n;
       return (0, r.jsxs)(i.Fragment, {
@@ -287,7 +287,7 @@ function L(e) {
       return null
   }
 }
-let D = e => {
+let L = e => {
   let {
     channel: t
   } = e, n = (0, a.e7)([x.default], () => x.default.getCurrentUser()), l = (0, a.e7)([x.default], () => x.default.getUser(t.getRecipientId())), o = (0, O.G)();
@@ -308,7 +308,7 @@ function U(e, t) {
   switch (e.type) {
     case N.d4z.DM:
       return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(D, {
+        children: [(0, r.jsx)(L, {
           channel: e
         }), (0, r.jsx)(E.Z, {
           channel: e

@@ -21,8 +21,8 @@ var i = n(873546),
   p = n(998502),
   S = n(665149),
   N = n(981631),
-  A = n(176505),
-  f = n(220705);
+  f = n(176505),
+  A = n(220705);
 
 function m(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -80,7 +80,7 @@ function P(e) {
     role: D,
     hideSearch: h,
     showDivider: U
-  } = e, M = null == a || (0, A.AB)(a) ? null : a, v = (0, l.e7)([I.Z], () => I.Z.isInChannel(M) || !1), k = (0, l.e7)([s.Z], () => null != M && s.Z.getParticipantsListOpen(M)), {
+  } = e, M = null == a || (0, f.AB)(a) ? null : a, v = (0, l.e7)([I.Z], () => I.Z.isInChannel(M) || !1), k = (0, l.e7)([s.Z], () => null != M && s.Z.getParticipantsListOpen(M)), {
     enabled: L,
     inInbox: Z
   } = d.Z.useExperiment({
@@ -98,9 +98,9 @@ function P(e) {
       let e = null != a && !h;
       return i.tq ? P : (0, r.jsxs)(r.Fragment, {
         children: [R, e ? (0, r.jsx)(E.Z, {
-          className: f.search
+          className: A.search
         }, null != T ? T : a) : null, U && (0, r.jsx)(S.ZP.Divider, {}), L && !Z ? (0, r.jsx)(_.Z, {}) : null, j && v && null != M && !k && c === N.d4z.GROUP_DM && (0, r.jsxs)("div", {
-          className: f.controlButtonWrapper,
+          className: A.controlButtonWrapper,
           children: [(0, r.jsx)(S.ZP.Divider, {}), (0, r.jsx)(O.Z, {
             onClick: () => o.Z.toggleParticipantsList(M, !k)
           })]

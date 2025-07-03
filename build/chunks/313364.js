@@ -40,7 +40,7 @@ function R(e) {
     analyticsLocations: l
   } = (0, d.ZP)(c.Z.GUILD_SETTINGS_MEMBERS_PAGE), R = (0, u.m)(t), Z = (0, a.e7)([h.ZP], () => h.ZP.getGuildSidebarState(t), [t]), D = i.useCallback(() => {
     p.Z.closeGuildSidebar(t)
-  }, [t]), k = !1 == !!(null == n ? void 0 : n.hasFeature(S.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), A = (0, a.e7)([b.Z], () => b.Z.getEstimatedMemberSearchCountByGuildId(t), [t]), L = i.useCallback(e => {
+  }, [t]), k = !1 == !!(null == n ? void 0 : n.features.has(S.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), A = (0, a.e7)([b.Z], () => b.Z.getEstimatedMemberSearchCountByGuildId(t), [t]), L = i.useCallback(e => {
     null != e && (0, f.openUserProfileModal)({
       userId: e.userId,
       guildId: e.guildId,

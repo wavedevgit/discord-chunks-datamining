@@ -40,8 +40,8 @@ var l = n(255367),
   L = n(158776),
   U = n(699516),
   V = n(626135),
-  F = n(971130),
-  B = n(51144),
+  B = n(971130),
+  F = n(51144),
   G = n(264229),
   z = n(601953),
   H = n(277364),
@@ -74,7 +74,7 @@ function $(e) {
 let {
   INVITE_OPTIONS_7_DAYS: ee,
   INVITE_OPTIONS_UNLIMITED: et
-} = F.ZP, en = {
+} = B.ZP, en = {
   max_age: ee.value,
   max_uses: et.value
 };
@@ -125,7 +125,7 @@ function ei(e) {
     onToggle: r,
     isSelected: s,
     disabled: a
-  } = e, o = B.ZP.useName(n), u = B.ZP.useUserTag(n, {
+  } = e, o = F.ZP.useName(n), u = F.ZP.useUserTag(n, {
     decoration: "never"
   }), [d, g] = (0, c.Wu)([U.Z, L.Z], () => [U.Z.getNickname(n.id), L.Z.getStatus(n.id)], [n]), m = i.useCallback(() => r(n.id), [r, n.id]), v = [u];
   A.ZP.isMember(t.id, n.id) && v.push(J.intl.string(J.t.u1sEf3));
@@ -207,8 +207,8 @@ function ea(e) {
     if (c > 0) return;
     let g = n[h];
     switch (g.type) {
-      case F.bm.FRIEND:
-      case F.bm.DM:
+      case B.bm.FRIEND:
+      case B.bm.DM:
         let m = g.item;
         return d = null != (i = s.includes(m.id)) && i, (0, l.jsx)(ei, {
           guild: t,
@@ -217,7 +217,7 @@ function ea(e) {
           onToggle: r,
           disabled: o
         }, m.id);
-      case F.bm.GROUP_DM:
+      case B.bm.GROUP_DM:
         let p = g.item;
         return d = null != (a = s.includes(p.id)) && a, (0, l.jsx)(er, {
           channel: p,
@@ -225,7 +225,7 @@ function ea(e) {
           onToggle: r,
           disabled: o
         }, p.id);
-      case F.bm.CHANNEL:
+      case B.bm.CHANNEL:
         let v = g.item;
         return d = null != (u = s.includes(v.id)) && u, (0, l.jsx)(es, {
           channel: v,
@@ -306,7 +306,7 @@ function eo(e) {
       guildId: r.id
     }),
     [A, R] = i.useState([]),
-    [U, B] = i.useState(""),
+    [U, F] = i.useState(""),
     {
       current: ee
     } = i.useRef($({}, en, null == C ? {} : {
@@ -331,8 +331,8 @@ function eo(e) {
       var t;
       null == (t = eh.current) || t.scrollTo({
         to: 0
-      }), B(e), (0, m.C)(e)
-    }, [B]),
+      }), F(e), (0, m.C)(e)
+    }, [F]),
     ep = i.useCallback(() => {
       em("")
     }, [em]),
@@ -457,8 +457,8 @@ function eo(e) {
           let l, i = eg[0],
             r = null != (n = k.Z.getSelectedInviteMetadata(e)) ? n : null;
           switch (e.type) {
-            case F.bm.FRIEND:
-            case F.bm.DM:
+            case B.bm.FRIEND:
+            case B.bm.DM:
               l = {
                 type: I.m.USER,
                 user: e.item,
@@ -467,7 +467,7 @@ function eo(e) {
                 suggested: r
               };
               break;
-            case F.bm.CHANNEL:
+            case B.bm.CHANNEL:
               l = {
                 type: I.m.CHANNEL,
                 channel: e.item,
@@ -476,7 +476,7 @@ function eo(e) {
                 suggested: r
               };
               break;
-            case F.bm.GROUP_DM:
+            case B.bm.GROUP_DM:
               l = {
                 type: I.m.GROUP_DM,
                 channel: e.item,

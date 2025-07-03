@@ -63,10 +63,10 @@ function O(e) {
     fromUser: O,
     onClose: g,
     transitionState: R
-  } = e, [I, y] = s.useState(!1), k = t.hasFeature(x.oNc.VERIFIED) || t.hasFeature(x.oNc.PARTNERED), v = k ? b.intl.string(b.t.wDkfrK) : null, S = k ? b.intl.format(b.t.A37vwM, {
+  } = e, [I, y] = s.useState(!1), k = t.features.has(x.oNc.VERIFIED) || t.features.has(x.oNc.PARTNERED), v = k ? b.intl.string(b.t.wDkfrK) : null, w = k ? b.intl.format(b.t.A37vwM, {
     ticketUrl: T()
-  }) : null, w = t.hasFeature(x.oNc.CREATOR_MONETIZABLE) || t.hasFeature(x.oNc.CREATOR_MONETIZABLE_PROVISIONAL);
-  async function P(e) {
+  }) : null, P = t.features.has(x.oNc.CREATOR_MONETIZABLE) || t.features.has(x.oNc.CREATOR_MONETIZABLE_PROVISIONAL);
+  async function S(e) {
     await u.Z.transferOwnership(t.id, m.id, h.X.EMAIL, e)
   }
   async function A() {
@@ -80,7 +80,7 @@ function O(e) {
           default: e
         } = await r.e("94566").then(r.bind(r, 965072));
         return t => (0, n.jsx)(e, j(N({}, t), {
-          onFormSubmit: P,
+          onFormSubmit: S,
           onResend: A,
           onSuccess: o.xf,
           headerText: b.intl.string(b.t.Z5s7PD),
@@ -122,7 +122,7 @@ function O(e) {
       }) : null, (0, n.jsx)(a.Text, {
         className: E.guildName,
         variant: "text-sm/bold",
-        children: t.toString()
+        children: t.name
       })]
     });
   return (0, n.jsx)(a.Y0X, {
@@ -183,7 +183,7 @@ function O(e) {
               size: a.EFr.SIZE_80
             })
           })]
-        }), w && (0, n.jsx)(a.R94, {
+        }), P && (0, n.jsx)(a.R94, {
           type: a.R94.Types.DESCRIPTION,
           className: E.roleSubscriptionText,
           children: b.intl.format(b.t.LAlucX, {
@@ -206,7 +206,7 @@ function O(e) {
         }), (0, n.jsx)(a.R94, {
           className: E.protectedText,
           type: a.R94.Types.DEFAULT,
-          children: S
+          children: w
         })]
       }), (0, n.jsxs)(a.mzw, {
         children: [(0, n.jsx)(a.zxk, {

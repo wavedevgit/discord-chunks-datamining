@@ -1,7 +1,7 @@
 /** Chunk was on 82265 **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => f
 });
 var r = n(255367);
 n(73800);
@@ -11,10 +11,11 @@ var i = n(442837),
   a = n(29605),
   o = n(345861),
   c = n(723047),
-  d = n(796814),
-  u = n(388032);
+  d = n(443106),
+  u = n(796814),
+  m = n(388032);
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -33,7 +34,7 @@ function m(e) {
   return e
 }
 
-function g(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -46,18 +47,18 @@ function g(e, t) {
   }), e
 }
 
-function p(e) {
+function f(e) {
   let {
     guild: t
-  } = e, p = (0, i.e7)([s.Z], () => s.Z.isUploadingEmoji()), f = (0, d.Z)(t.id), h = t.getMaxRoleSubscriptionEmojiSlots() - f.length, x = (0, c.mY)();
+  } = e, f = (0, i.e7)([s.Z], () => s.Z.isUploadingEmoji()), h = (0, u.Z)(t.id), x = (0, d.Z)(t) - h.length, b = (0, c.mY)();
   return (0, r.jsxs)(l.hjN, {
-    title: u.intl.string(u.t.LDT0Q0),
-    disabled: x,
+    title: m.intl.string(m.t.LDT0Q0),
+    disabled: b,
     children: [(0, r.jsx)(l.R94, {
       type: l.R94.Types.DESCRIPTION,
-      disabled: x,
-      children: u.intl.format(u.t.H9Jxp6, {
-        maxSlots: t.getMaxRoleSubscriptionEmojiSlots()
+      disabled: b,
+      children: m.intl.format(m.t.H9Jxp6, {
+        maxSlots: (0, d.Z)(t)
       })
     }), (0, r.jsx)(l.LZC, {
       size: 16
@@ -67,37 +68,37 @@ function p(e) {
           let {
             CreateEmojiWithRolesModal: l
           } = await n.e("9007").then(n.bind(n, 604623));
-          return n => (0, r.jsx)(l, g(m({}, n), {
+          return n => (0, r.jsx)(l, p(g({}, n), {
             data: e,
             file: i,
             guildId: t.id
           }))
         })
       },
-      buttonCTA: u.intl.string(u.t.AuPtoq),
-      submitting: p,
-      disabled: x || p || 0 === h
+      buttonCTA: m.intl.string(m.t.AuPtoq),
+      submitting: f,
+      disabled: b || f || 0 === x
     }), (0, r.jsx)(l.LZC, {
       size: 24
     }), (0, r.jsx)(a.L3, {
-      title: u.intl.string(u.t.lu1ZQ0),
-      maxSlots: t.getMaxRoleSubscriptionEmojiSlots(),
-      emojiCount: f.length
+      title: m.intl.string(m.t.lu1ZQ0),
+      maxSlots: (0, d.Z)(t),
+      emojiCount: h.length
     }), (0, r.jsx)(a.FT, {
       guild: t,
-      emojis: f,
+      emojis: h,
       onEdit: (e, t) => {
         (0, l.ZDy)(async () => {
           let {
             UpdateEmojiRolesModal: i
           } = await n.e("9007").then(n.bind(n, 604623));
-          return n => (0, r.jsx)(i, g(m({}, n), {
+          return n => (0, r.jsx)(i, p(g({}, n), {
             emoji: e,
             guildId: t
           }))
         })
       },
-      editingDisabled: x
+      editingDisabled: b
     })]
   })
 }

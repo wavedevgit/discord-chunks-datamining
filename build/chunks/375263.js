@@ -21,7 +21,7 @@ function h(e) {
   let {
     guild: t,
     canManageGuild: n
-  } = e, h = t.hasFeature(d.oNc.BANNER), x = t.hasFeature(d.oNc.ANIMATED_BANNER), b = h && n, {
+  } = e, h = t.features.has(d.oNc.BANNER), x = t.features.has(d.oNc.ANIMATED_BANNER), b = h && n, {
     analyticsLocations: j
   } = (0, s.ZP)(), _ = i.useCallback((e, n) => {
     (0, c.f4)(t, j, e, n)

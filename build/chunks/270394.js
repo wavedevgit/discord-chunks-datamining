@@ -26,8 +26,8 @@ var r = n(255367),
   C = n(664452),
   N = n(560114),
   I = n(699516),
-  S = n(594174),
-  E = n(630388),
+  E = n(594174),
+  S = n(630388),
   T = n(965638),
   w = n(757539),
   P = n(981631),
@@ -108,7 +108,7 @@ function U(e) {
         }), i && (0, r.jsx)(m.Text, {
           variant: "text-xs/normal",
           color: "header-secondary",
-          children: (0, O.F6)(n.channel, S.default, I.Z, !0)
+          children: (0, O.F6)(n.channel, E.default, I.Z, !0)
         })]
       })]
     }), (0, r.jsx)(y.Z, {
@@ -122,7 +122,7 @@ function U(e) {
           className: k.inviteCode,
           variant: "text-sm/normal",
           children: a ? "..." : n.code
-        }), !a && (0, E.yE)(null != (t = n.flags) ? t : 0, u.$.IS_APPLICATION_BYPASS) ? (0, r.jsxs)("div", {
+        }), !a && (0, S.yE)(null != (t = n.flags) ? t : 0, u.$.IS_APPLICATION_BYPASS) ? (0, r.jsxs)("div", {
           className: k.bypass,
           children: [(0, r.jsx)(m.Text, {
             className: k.text,
@@ -197,7 +197,7 @@ function W(e) {
         source: P.t4x.SETTINGS_INVITE
       })))
     },
-    [S, E] = i.useState(62),
+    [E, S] = i.useState(62),
     A = () => {
       let e = {
         source: _.Zu.GUILD_SETTINGS
@@ -304,7 +304,7 @@ function W(e) {
       }, "header");
       if (t === B.ACTIONS_V2) return (0, r.jsx)(w.Y, {
         hasInvites: v.length > 0,
-        setHeight: E,
+        setHeight: S,
         onShowDisableInvites: A,
         onShowInviteModal: I,
         hasInviteDisabledPermission: x,
@@ -325,7 +325,7 @@ function W(e) {
         }, e.code)
       }
     },
-    rowHeight: (e, t) => e === B.HEADER ? 64 : e === B.ACTIONS_V1 ? 109 : e === B.ACTIONS_V2 ? S : e === B.TABLE ? 0 === v.length && 0 === t && g ? 62 : 62 * (null != v[t]) : 0,
+    rowHeight: (e, t) => e === B.HEADER ? 64 : e === B.ACTIONS_V1 ? 109 : e === B.ACTIONS_V2 ? E : e === B.TABLE ? 0 === v.length && 0 === t && g ? 62 : 62 * (null != v[t]) : 0,
     sectionHeight: e => e === B.TABLE ? 0 !== v.length || g ? 28 : 240 : 0
   })
 }

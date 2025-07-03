@@ -5,8 +5,8 @@ t.d(i, {
 }), t(953529);
 var n, l = t(392711),
   r = t.n(l),
-  a = t(442837),
-  s = t(570140),
+  s = t(442837),
+  a = t(570140),
   u = t(246364);
 
 function o(e, i, t) {
@@ -23,7 +23,7 @@ let c = {
     formFields: []
   },
   d = {};
-class E extends(n = a.ZP.Store) {
+class E extends(n = s.ZP.Store) {
   get(e) {
     if (null != e) return d[e]
   }
@@ -33,7 +33,7 @@ class E extends(n = a.ZP.Store) {
   }
 }
 o(E, "displayName", "MemberVerificationFormStore");
-let f = new E(s.Z, {
+let f = new E(a.Z, {
   INVITE_ACCEPT_SUCCESS: function(e) {
     let {
       invite: i

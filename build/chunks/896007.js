@@ -73,7 +73,7 @@ function p(e) {
   }), t), N = [];
   N.push({
     section: g.HEADER,
-    label: "" !== c.toString() ? c.toString() : u.intl.string(u.t["154/bG"])
+    label: "" !== c.name ? c.name : u.intl.string(u.t["154/bG"])
   }), N.push(m(d.pNK.PROFILE, y)), N.push(m(d.pNK.TAG, y)), N.push(m(d.pNK.ENGAGEMENT, y)), N.push(m(d.pNK.BOOST_PERKS, y)), O && (N.push({
     section: g.DIVIDER
   }), N.push({
@@ -90,14 +90,14 @@ function p(e) {
     section: g.HEADER,
     label: u.intl.string(u.t.wF3KJy)
   }), N.push(m(d.pNK.INTEGRATIONS, y)), N.push(m(d.pNK.APP_DIRECTORY, y));
-  let I = !c.hasFeature(d.oNc.COMMUNITY) && ((0, l.Nb)(c.id) || (0, l.ze)(c.id));
+  let I = !c.features.has(d.oNc.COMMUNITY) && ((0, l.Nb)(c.id) || (0, l.ze)(c.id));
   (p || f || x || I) && (N.push({
     section: g.DIVIDER
   }), N.push({
     section: g.HEADER,
     label: u.intl.string(u.t["5tbTdX"])
   }), N.push(m(d.pNK.SAFETY, y)), N.push(m(d.pNK.MODERATION, y)), N.push(m(d.pNK.AUDIT_LOG, y)), N.push(m(d.pNK.BANS, y)), N.push(m(d.pNK.GUILD_AUTOMOD, y)));
-  let E = c.hasFeature(d.oNc.COMMUNITY) && j,
+  let E = c.features.has(d.oNc.COMMUNITY) && j,
     S = C();
   return (p || E || S) && (N.push({
     section: g.DIVIDER

@@ -21,8 +21,8 @@ var r, i = n(913527),
   p = n(605236),
   S = n(458725),
   N = n(915525),
-  A = n(353926),
-  f = n(594190),
+  f = n(353926),
+  A = n(594190),
   m = n(38618),
   R = n(569545),
   g = n(528011),
@@ -75,8 +75,8 @@ var r, i = n(913527),
   ep = n(580130),
   eS = n(695103),
   eN = n(358085),
-  eA = n(74538),
-  ef = n(922156),
+  ef = n(74538),
+  eA = n(922156),
   em = n(436181),
   eR = n(941128),
   eg = n(981631),
@@ -272,9 +272,9 @@ let eB = [eg.kVF.QUARANTINED, eg.kVF.AUTOMOD_QUARANTINED_USER_PROFILE, eg.kVF.VI
       }
     },
     [eg.kVF.DISPATCH_ERROR]: {
-      predicate: () => null != ef.Z.getLastError(),
+      predicate: () => null != eA.Z.getLastError(),
       metadata: () => ({
-        error: ef.Z.getLastError()
+        error: eA.Z.getLastError()
       })
     },
     [eg.kVF.DISPATCH_INSTALL_SCRIPT_PROGRESS]: {
@@ -304,7 +304,7 @@ let eB = [eg.kVF.QUARANTINED, eg.kVF.AUTOMOD_QUARANTINED_USER_PROFILE, eg.kVF.VI
           selectedGuildId: i,
           currentUser: l
         } = e;
-        return null != (r = null != i && null != l && !(null == (t = $.Z.getGuild(i)) ? void 0 : t.hasFeature(eg.oNc.GUILD_ONBOARDING)) && (null == (n = Q.ZP.getMember(i, l.id)) ? void 0 : n.isPending)) && r
+        return null != (r = null != i && null != l && !(null == (t = $.Z.getGuild(i)) ? void 0 : t.features.has(eg.oNc.GUILD_ONBOARDING)) && (null == (n = Q.ZP.getMember(i, l.id)) ? void 0 : n.isPending)) && r
       }
     },
     [eg.kVF.OUTBOUND_PROMOTION]: {
@@ -326,7 +326,7 @@ let eB = [eg.kVF.QUARANTINED, eg.kVF.AUTOMOD_QUARANTINED_USER_PROFILE, eg.kVF.VI
         let {
           currentUser: t
         } = e;
-        return eA.ZP.canRedeemPremiumPerks(t) && J.Z.getDetectedOffPlatformPremiumPerks().length > 0
+        return ef.ZP.canRedeemPremiumPerks(t) && J.Z.getDetectedOffPlatformPremiumPerks().length > 0
       },
       metadata: () => J.Z.getDetectedOffPlatformPremiumPerks()[0]
     },
@@ -372,7 +372,7 @@ let eB = [eg.kVF.QUARANTINED, eg.kVF.AUTOMOD_QUARANTINED_USER_PROFILE, eg.kVF.VI
       }
     },
     [eg.kVF.CONNECT_SPOTIFY]: {
-      predicate: () => !w.Z.hasConnectedAccount() && f.ZP.isObservedAppRunning(_.Z.get(eg.ABu.SPOTIFY).name) && !ew(eg.kVF.CONNECT_SPOTIFY)
+      predicate: () => !w.Z.hasConnectedAccount() && A.ZP.isObservedAppRunning(_.Z.get(eg.ABu.SPOTIFY).name) && !ew(eg.kVF.CONNECT_SPOTIFY)
     },
     [eg.kVF.WIN32_DEPRECATED_MESSAGE]: {
       predicate: () => (null === d.Z || void 0 === d.Z ? void 0 : d.Z.os.arch) === "ia32" && (null === d.Z || void 0 === d.Z ? void 0 : d.Z.process.platform) === "win32",
@@ -416,17 +416,17 @@ let eB = [eg.kVF.QUARANTINED, eg.kVF.AUTOMOD_QUARANTINED_USER_PROFILE, eg.kVF.VI
         let {
           premiumSubscription: t,
           currentUser: n
-        } = e, r = null != t ? l()(t.currentPeriodEnd).diff(l()().startOf("day"), "days") : 0, i = (null == t ? void 0 : t.canceledAt) != null && (null == t ? void 0 : t.status) === eg.O0b.CANCELED && 1 >= l()().diff(l()(t.canceledAt), "days"), o = null != t && l()(t.currentPeriodEnd).isBefore(l()()), a = null != t && t.status === eg.O0b.CANCELED && !o && r <= 7 && r >= 0 && (0, eA.M5)(n, eC.p9.TIER_2) && !i && !n.hasFreePremium() && !t.isPurchasedExternally;
+        } = e, r = null != t ? l()(t.currentPeriodEnd).diff(l()().startOf("day"), "days") : 0, i = (null == t ? void 0 : t.canceledAt) != null && (null == t ? void 0 : t.status) === eg.O0b.CANCELED && 1 >= l()().diff(l()(t.canceledAt), "days"), o = null != t && l()(t.currentPeriodEnd).isBefore(l()()), a = null != t && t.status === eg.O0b.CANCELED && !o && r <= 7 && r >= 0 && (0, ef.M5)(n, eC.p9.TIER_2) && !i && !n.hasFreePremium() && !t.isPurchasedExternally;
         return !ew(eg.kVF.PREMIUM_UNCANCEL) && a
       },
       metadata: e => {
         var t;
         let {
           premiumSubscription: n
-        } = e, r = null != n ? l()(n.currentPeriodEnd).diff(l()().startOf("day"), "days") : 0, i = null != n ? null == (t = (0, eA.Af)(n)) ? void 0 : t.planId : null;
+        } = e, r = null != n ? l()(n.currentPeriodEnd).diff(l()().startOf("day"), "days") : 0, i = null != n ? null == (t = (0, ef.Af)(n)) ? void 0 : t.planId : null;
         return {
           daysLeft: r,
-          premiumType: null != i ? eA.ZP.getPremiumType(i) : null,
+          premiumType: null != i ? ef.ZP.getPremiumType(i) : null,
           premiumSubscription: n
         }
       }
@@ -436,7 +436,7 @@ let eB = [eg.kVF.QUARANTINED, eg.kVF.AUTOMOD_QUARANTINED_USER_PROFILE, eg.kVF.VI
         let {
           premiumSubscription: t,
           currentUser: n
-        } = e, r = null != t ? l()(t.currentPeriodEnd).diff(l()().startOf("day"), "days") : 0, i = null != t ? l()(t.currentPeriodEnd).diff(l()(t.currentPeriodStart).startOf("day"), "days") : 0, o = null != t && l()(t.currentPeriodEnd).isBefore(l()()), a = ep.Z.applicationIdsFetched.has(eC.CL), c = ep.Z.getForApplication(eC.CL), s = null != t ? (0, eA.Af)(t) : null, u = null != s ? eA.ZP.getSkuIdForPlan(s.planId) : null, d = null != c && null != s && Array.from(c).filter(e => {
+        } = e, r = null != t ? l()(t.currentPeriodEnd).diff(l()().startOf("day"), "days") : 0, i = null != t ? l()(t.currentPeriodEnd).diff(l()(t.currentPeriodStart).startOf("day"), "days") : 0, o = null != t && l()(t.currentPeriodEnd).isBefore(l()()), a = ep.Z.applicationIdsFetched.has(eC.CL), c = ep.Z.getForApplication(eC.CL), s = null != t ? (0, ef.Af)(t) : null, u = null != s ? ef.ZP.getSkuIdForPlan(s.planId) : null, d = null != c && null != s && Array.from(c).filter(e => {
           let {
             skuId: t,
             consumed: n
@@ -449,10 +449,10 @@ let eB = [eg.kVF.QUARANTINED, eg.kVF.AUTOMOD_QUARANTINED_USER_PROFILE, eg.kVF.VI
         var t;
         let {
           premiumSubscription: n
-        } = e, r = null != n ? l()(n.currentPeriodEnd).diff(l()().startOf("day"), "days") : 0, i = null != n ? null == (t = (0, eA.Af)(n)) ? void 0 : t.planId : null;
+        } = e, r = null != n ? l()(n.currentPeriodEnd).diff(l()().startOf("day"), "days") : 0, i = null != n ? null == (t = (0, ef.Af)(n)) ? void 0 : t.planId : null;
         return {
           daysLeft: r,
-          premiumType: null != i ? eA.ZP.getPremiumType(i) : null,
+          premiumType: null != i ? ef.ZP.getPremiumType(i) : null,
           premiumSubscription: n
         }
       }
@@ -547,7 +547,7 @@ let eB = [eg.kVF.QUARANTINED, eg.kVF.AUTOMOD_QUARANTINED_USER_PROFILE, eg.kVF.VI
           dismissUntil: l()().toDate()
         } : {
           daysPastDue: t.status === eg.O0b.PAST_DUE ? l()().diff(t.currentPeriodStart, "days") : 0,
-          dismissUntil: (0, eA.lY)(t).expiresDate.toDate()
+          dismissUntil: (0, ef.lY)(t).expiresDate.toDate()
         }
       }
     },
@@ -559,7 +559,7 @@ let eB = [eg.kVF.QUARANTINED, eg.kVF.AUTOMOD_QUARANTINED_USER_PROFILE, eg.kVF.VI
         let {
           selectedGuildId: t
         } = e, n = null != t ? $.Z.getGuild(t) : null;
-        return null != t && null != y.Z.getMentionRaidDetected(t) && (null == n ? void 0 : n.hasFeature(eg.oNc.COMMUNITY)) && !ew(eg.kVF.AUTO_MODERATION_MENTION_RAID_DETECTION) || !1
+        return null != t && null != y.Z.getMentionRaidDetected(t) && (null == n ? void 0 : n.features.has(eg.oNc.COMMUNITY)) && !ew(eg.kVF.AUTO_MODERATION_MENTION_RAID_DETECTION) || !1
       },
       metadata: e => {
         let {
@@ -606,7 +606,7 @@ let eB = [eg.kVF.QUARANTINED, eg.kVF.AUTOMOD_QUARANTINED_USER_PROFILE, eg.kVF.VI
         let {
           currentUser: n
         } = e, r = null != (t = eO.Z.paymentSources) ? t : {};
-        return U.Z.getIsTargeted() && !(0, eA.I5)(n) && 0 !== Object.keys(r).length
+        return U.Z.getIsTargeted() && !(0, ef.I5)(n) && 0 !== Object.keys(r).length
       }
     },
     [eg.kVF.BLOCK_USER_FEEDBACK_NAGBAR]: {
@@ -697,7 +697,7 @@ function eY() {
 }
 class eK extends(r = o.ZP.Store) {
   initialize() {
-    this.syncWith([es.Z, er.Z, J.Z, eo.Z, L.Z, eT.Z, Y.Z, X.Z, W.Z, P.Z, x.Z, z.Z], eH), this.waitFor(ed.default, ea.Z, $.Z, Q.ZP, ei.Z, ee.Z, ec.Z, A.Z, eo.Z, eu.Z, w.Z, f.ZP, er.Z, ef.Z, em.Z, eS.Z, et.Z, eI.Z, eR.Z, J.Z, eO.Z, en.Z, L.Z, ep.Z, eT.Z, X.Z, D.Z, I.Z, j.Z, x.Z, z.Z)
+    this.syncWith([es.Z, er.Z, J.Z, eo.Z, L.Z, eT.Z, Y.Z, X.Z, W.Z, P.Z, x.Z, z.Z], eH), this.waitFor(ed.default, ea.Z, $.Z, Q.ZP, ei.Z, ee.Z, ec.Z, f.Z, eo.Z, eu.Z, w.Z, A.ZP, er.Z, eA.Z, em.Z, eS.Z, et.Z, eI.Z, eR.Z, J.Z, eO.Z, en.Z, L.Z, ep.Z, eT.Z, X.Z, D.Z, I.Z, j.Z, x.Z, z.Z)
   }
   hasNotice() {
     return null != eF && null != eF.type

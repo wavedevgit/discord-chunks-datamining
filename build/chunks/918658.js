@@ -20,8 +20,8 @@ var r = n(255367),
   p = n(914010),
   S = n(671533),
   N = n(259580),
-  A = n(358085),
-  f = n(962086),
+  f = n(358085),
+  A = n(962086),
   m = n(160404),
   R = n(889695),
   g = n(981631),
@@ -67,7 +67,7 @@ function M() {
     {
       viewingRoles: l,
       backNavigationSection: o,
-      isFullServerPreview: A,
+      isFullServerPreview: f,
       isServerShopPreview: M
     } = (0, a.cj)([m.Z], () => ({
       viewingRoles: null != t ? m.Z.getViewingRoles(t) : null,
@@ -94,7 +94,7 @@ function M() {
       let {
         backToSettings: n
       } = e;
-      null != t && (m.Z.isFullServerPreview(t) && (0, I.uL)(g.Z5c.CHANNEL(t)), d.ZP.shouldShowOnboarding(t) && (u.Z.finishOnboarding(t), (0, _.EI)(t)), (0, f.mL)(t), n && O.Z.open(t, o), o === g.pNK.ROLE_SUBSCRIPTIONS && (0, E.GN)(t))
+      null != t && (m.Z.isFullServerPreview(t) && (0, I.uL)(g.Z5c.CHANNEL(t)), d.ZP.shouldShowOnboarding(t) && (u.Z.finishOnboarding(t), (0, _.EI)(t)), (0, A.mL)(t), n && O.Z.open(t, o), o === g.pNK.ROLE_SUBSCRIPTIONS && (0, E.GN)(t))
     };
   return (0, r.jsxs)(s.qXd, {
     color: s.DM8.BRAND,
@@ -110,7 +110,7 @@ function M() {
         direction: S.Z.Directions.LEFT,
         className: D.backArrow
       }), v]
-    }), L && A ? (0, r.jsx)("div", {
+    }), L && f ? (0, r.jsx)("div", {
       className: D.noticeContents,
       children: (0, r.jsx)("div", {
         className: D.noticeText,
@@ -120,7 +120,7 @@ function M() {
       className: D.noticeContents,
       children: [(0, r.jsx)("div", {
         className: D.noticeText,
-        children: A ? b.intl.formatToPlainString(b.t["0PHahI"], {
+        children: f ? b.intl.formatToPlainString(b.t["0PHahI"], {
           numRoles: Object.keys(l).length
         }) : b.intl.formatToPlainString(b.t.vMlK8v, {
           numRoles: Object.keys(l).length
@@ -146,7 +146,7 @@ function M() {
             })]
           })
         }
-      }), A && (0, r.jsx)(s.DY3, {
+      }), f && (0, r.jsx)(s.DY3, {
         className: D.previewWarning,
         text: b.intl.string(b.t.mW4DUF),
         children: (0, r.jsx)(s.P4T, {
@@ -164,7 +164,7 @@ function M() {
           color: c.Z.unsafe_rawColors.YELLOW_300.css
         })
       })]
-    }), A || o === g.pNK.ROLE_SUBSCRIPTIONS ? null : (0, r.jsx)(U, {
+    }), f || o === g.pNK.ROLE_SUBSCRIPTIONS ? null : (0, r.jsx)(U, {
       onClick: () => Z({
         backToSettings: !1
       })
@@ -178,8 +178,8 @@ function v(e) {
   } = e;
   return (0, a.e7)([m.Z], () => m.Z.isViewingRoles(t)) ? (0, r.jsx)("div", {
     className: o()(D.settingsWrapper, {
-      [D.windows]: (0, A.isWindows)(),
-      [D.osx]: (0, A.isMac)()
+      [D.windows]: (0, f.isWindows)(),
+      [D.osx]: (0, f.isMac)()
     }),
     children: (0, r.jsx)(M, {})
   }) : null

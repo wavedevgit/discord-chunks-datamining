@@ -24,8 +24,8 @@ function d(e) {
       requestRejectedNoticeText: p,
       reapplyNoticeText: f
     } = (0, i.Z)(n),
-    h = n.hasFeature(a.oNc.CREATOR_MONETIZABLE_RESTRICTED),
-    x = n.hasFeature(a.oNc.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING);
+    h = n.features.has(a.oNc.CREATOR_MONETIZABLE_RESTRICTED),
+    x = n.features.has(a.oNc.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING);
   if (null != u) return (0, r.jsx)(l.Z, {
     className: c.noticeContainer,
     children: u.getAnyErrorMessage()

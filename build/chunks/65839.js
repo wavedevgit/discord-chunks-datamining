@@ -139,7 +139,7 @@ let j = e => {
     allEntriesCount: O,
     isLoading: E
   } = e, S = (0, a.e7)([u.Z], () => u.Z.getGuild(t.getGuildId()));
-  return null != S && S.hasFeature(m.oNc.SHARD) ? (0, r.jsx)(v, {
+  return (null == S ? void 0 : S.features.has(m.oNc.SHARD)) ? (0, r.jsx)(v, {
     guild: S,
     directoryEntries: n,
     handleCreateOrAddGuild: l,

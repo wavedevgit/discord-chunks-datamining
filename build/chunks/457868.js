@@ -36,8 +36,8 @@ var r = n(255367),
   R = n(499033),
   k = n(626135),
   M = n(585483),
-  L = n(700785),
-  D = n(51144),
+  D = n(700785),
+  L = n(51144),
   U = n(998502),
   B = n(276264),
   F = n(981631),
@@ -74,7 +74,7 @@ let W = U.ZP.getEnableHardwareAcceleration(),
     } = e, s = i.useRef(null), u = (0, p.e7)([A.Z], () => A.Z.isTyping(t.id, o)), h = (0, p.e7)([P.ZP], () => P.ZP.getMember(t.guild_id, o)), g = (0, p.e7)([Z.Z], () => {
       var e;
       return (null == h ? void 0 : h.colorRoleId) != null ? null == (e = Z.Z.getRole(t.guild_id, h.colorRoleId)) ? void 0 : e.name : void 0
-    }, [t.guild_id, h]), b = (0, p.e7)([w.default], () => w.default.getUser(o)), _ = (0, p.e7)([w.default], () => w.default.getCurrentUser()), y = (null == b ? void 0 : b.id) === (null == _ ? void 0 : _.id), C = (0, p.e7)([N.Z, T.Z], () => y ? T.Z.getStatus() : N.Z.getStatus(o, t.guild_id)), v = (0, p.e7)([N.Z], () => N.Z.isMobileOnline(o)), O = (0, p.e7)([N.Z, T.Z], () => y ? T.Z.getActivities() : N.Z.getActivities(o, t.guild_id)), R = (0, p.e7)([I.Z], () => I.Z.getAnyStreamForUser(o)), k = (0, c.JA)(o), L = (0, p.e7)([E.Z], () => E.Z.canUserViewChannel(t.id, l, o)), U = (null == b ? void 0 : b.id) != null && b.id === a, G = i.useCallback(e => {
+    }, [t.guild_id, h]), b = (0, p.e7)([w.default], () => w.default.getUser(o)), _ = (0, p.e7)([w.default], () => w.default.getCurrentUser()), y = (null == b ? void 0 : b.id) === (null == _ ? void 0 : _.id), C = (0, p.e7)([N.Z, T.Z], () => y ? T.Z.getStatus() : N.Z.getStatus(o, t.guild_id)), v = (0, p.e7)([N.Z], () => N.Z.isMobileOnline(o)), O = (0, p.e7)([N.Z, T.Z], () => y ? T.Z.getActivities() : N.Z.getActivities(o, t.guild_id)), R = (0, p.e7)([I.Z], () => I.Z.getAnyStreamForUser(o)), k = (0, c.JA)(o), D = (0, p.e7)([E.Z], () => E.Z.canUserViewChannel(t.id, l, o)), U = (null == b ? void 0 : b.id) != null && b.id === a, G = i.useCallback(e => {
       null != b && (0, f.jW)(e, async () => {
         let {
           default: e
@@ -99,7 +99,7 @@ let W = U.ZP.getEnableHardwareAcceleration(),
       })
     }, [b, t]), V = i.useCallback(() => {
       if (null == b) return;
-      let e = "@".concat(D.ZP.getUserTag(b, {
+      let e = "@".concat(L.ZP.getUserTag(b, {
           decoration: "never"
         })),
         n = "<@".concat(b.id, ">");
@@ -172,7 +172,7 @@ let W = U.ZP.getEnableHardwareAcceleration(),
           premiumSince: null == Q ? null : new Date(Q),
           onClickPremiumGuildIcon: Y,
           itemProps: k,
-          lostPermissionTooltipText: L ? void 0 : H.intl.string(H.t["/QcoT0"]),
+          lostPermissionTooltipText: D ? void 0 : H.intl.string(H.t["/QcoT0"]),
           isOwner: U,
           nameplate: q,
           onClick: e => {
@@ -308,7 +308,7 @@ function Q(e) {
     channel: t
   });
   let x = s().omit(m.containerProps, ["ref"]),
-    v = L.iJ(n);
+    v = D.iJ(n);
   return (0, r.jsx)(_.Gt, {
     value: a,
     children: (0, r.jsx)(c.bG, {

@@ -7,8 +7,8 @@ var r, i = n(255367);
 n(73800);
 var l = n(442837),
   o = n(481060),
-  a = n(893776),
-  s = n(391650),
+  s = n(893776),
+  a = n(391650),
   c = n(313201),
   u = n(144114),
   d = n(607744),
@@ -74,7 +74,7 @@ let O = e => {
         className: m.buttonContainer,
         children: [null != I ? (0, i.jsx)(o.zxk, {
           onClick: () => {
-            y ? s.j() : C ? (0, o.ZDy)(async () => {
+            y ? a.j() : C ? (0, o.ZDy)(async () => {
               let {
                 default: e
               } = await Promise.resolve().then(n.bind(n, 607018));
@@ -83,7 +83,7 @@ let O = e => {
               }, t))
             }, {
               modalKey: f.M
-            }) : v && (a.Z.verifyResend(), (0, o.h7j)(e => {
+            }) : v && (s.Z.verifyResend(), (0, o.h7j)(e => {
               var t, n, r;
               return (0, i.jsx)(o.ConfirmModal, (n = b({
                 header: g.intl.string(g.t.LykQYm),

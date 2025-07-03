@@ -285,7 +285,7 @@ function z(e) {
         className: o()(k.guildNameText, {
           [k.guildNameTextLimitedSize]: null != l
         }),
-        children: t.toString()
+        children: t.name
       })]
     }), _ ? (0, r.jsx)(u.Text, {
       className: k.invitesDisabledTooltip,

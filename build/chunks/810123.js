@@ -4,11 +4,11 @@ n.d(t, {
   Z: () => b
 });
 var i, r = n(255367),
-  l = n(120356),
-  a = n.n(l),
-  s = n(468194),
-  c = n(471445),
-  o = n(686546),
+  a = n(120356),
+  l = n.n(a),
+  s = n(471445),
+  c = n(686546),
+  o = n(601964),
   u = n(292895),
   d = ((i = {}).SMALL_32 = "SMALL_32", i);
 let f = {
@@ -18,50 +18,49 @@ let f = {
     SMALL_32: [13, 11, 10, 10, 10, 10, 10]
   },
   b = function(e) {
-    var t;
     let {
-      className: n,
-      iconClassName: i,
-      size: l,
-      channel: d,
-      guild: b,
-      locked: I,
+      className: t,
+      iconClassName: n,
+      size: i,
+      channel: a,
+      guild: d,
+      locked: b,
       hasActiveThreads: E
     } = e;
-    if (null == b) return null;
-    let _ = b.getIconURL(48),
-      g = p[l],
-      y = f[l],
-      S = (0, c.KS)(d, b, {
-        locked: I,
+    if (null == d) return null;
+    let I = (0, o.EB)(d, 48),
+      _ = p[i],
+      g = f[i],
+      y = (0, s.KS)(a, d, {
+        locked: b,
         hasActiveThreads: E
       });
-    if (null == S) return null;
-    let A = (0, s.Zg)(null != (t = null == b ? void 0 : b.toString()) ? t : null);
+    if (null == y) return null;
+    let A = null != d ? (0, o.gM)(d) : "";
     return (0, r.jsxs)("div", {
       role: "img",
-      className: n,
-      children: [(0, r.jsx)(o.ZP, {
-        mask: o.QS.GUILD_ICON_WITH_CHANNEL_TYPE,
-        children: null != _ ? (0, r.jsx)("img", {
+      className: t,
+      children: [(0, r.jsx)(c.ZP, {
+        mask: c.QS.GUILD_ICON_WITH_CHANNEL_TYPE,
+        children: null != I ? (0, r.jsx)("img", {
           alt: "",
-          src: _,
+          src: I,
           className: u.channelGuildIcon,
           style: {
-            width: y,
-            height: y
+            width: g,
+            height: g
           }
         }) : (0, r.jsx)("div", {
-          className: a()(u.channelGuildIcon, u.acronym),
+          className: l()(u.channelGuildIcon, u.acronym),
           style: {
-            fontSize: A.length - 1 > g.length ? g[g.length - 1] : g[A.length - 1],
-            width: y,
-            height: y
+            fontSize: A.length - 1 > _.length ? _[_.length - 1] : _[A.length - 1],
+            width: g,
+            height: g
           },
           children: A
         })
-      }), (0, r.jsx)(S, {
-        className: a()(u.icon, u.iconWithGuildIcon, i),
+      }), (0, r.jsx)(y, {
+        className: l()(u.icon, u.iconWithGuildIcon, n),
         color: "currentColor"
       })]
     })

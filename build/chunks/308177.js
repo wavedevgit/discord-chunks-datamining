@@ -55,10 +55,10 @@ let O = (0, o.Z)(e => {
     [u.pV.SPEAKER]: k,
     [u.pV.AUDIENCE]: R,
     [u.pV.SELECTED]: 1
-  }, L = (0, d.Dx)(o.id), [D, U] = (0, d.aP)(o.id, M, L), B = [Math.max(null != (t = D[0]) ? t : 1, 1), Math.max(null != (n = D[1]) ? n : 1, 1), D[2]], {
+  }, D = (0, d.Dx)(o.id), [L, U] = (0, d.aP)(o.id, M, D), B = [Math.max(null != (t = L[0]) ? t : 1, 1), Math.max(null != (n = L[1]) ? n : 1, 1), L[2]], {
     speakerTileWidth: F,
     speakerTileHeight: H
-  } = C(y, k), G = S ? y - 32 : Math.min(y - 64, 3 * F + 8), V = e => e === D.length - 1 || 0 === Z && 1 === e, [z, W] = i.useState(!1), [Y, q] = i.useState(!1);
+  } = C(y, k), G = S ? y - 32 : Math.min(y - 64, 3 * F + 8), V = e => e === L.length - 1 || 0 === Z && 1 === e, [z, W] = i.useState(!1), [Y, q] = i.useState(!1);
   return (0, r.jsx)(h.Z, {
     sections: B,
     renderSection: e => {

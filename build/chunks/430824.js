@@ -108,10 +108,10 @@ let _ = new f({
     let {
       guildId: n,
       joinedAt: r,
-      user: i
-    } = e, a = s.default.getId(), o = t.get(n);
-    if (a !== i.id || null == o) return;
-    let l = "string" == typeof r ? new Date(r) : r;
-    l !== o.joinedAt && null != l && t.set(n, o.updateJoinedAt(l))
+      user: a
+    } = e, o = s.default.getId(), l = t.get(n);
+    if (o !== a.id || null == l) return;
+    let c = "string" == typeof r ? new Date(r) : r;
+    c !== l.joinedAt && null != c && t.set(n, (0, i.kH)(l, c))
   }
 })

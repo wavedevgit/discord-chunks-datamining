@@ -142,7 +142,7 @@ function c(e, t, u) {
   null != u && (0, o.jW)(e, async () => {
     let {
       default: e
-    } = await r.e("50331").then(r.bind(r, 158195));
+    } = await Promise.all([r.e("21443"), r.e("19877")]).then(r.bind(r, 158195));
     return t => (0, n.jsx)(e, i(l({}, t), {
       guildId: u
     }))

@@ -423,7 +423,7 @@ let Q = l.memo(function(e) {
     guildEvent: l,
     channel: r
   }));
-  let g = t.hasFeature(M.oNc.COMMUNITY) || t.hasFeature(M.oNc.HUB);
+  let g = t.features.has(M.oNc.COMMUNITY) || t.features.has(M.oNc.HUB);
   if (null == d && null != a && !g) {
     let {
       upcomingEvent: e,

@@ -16,8 +16,8 @@ var r = n(255367),
   _ = n(442837),
   A = n(692547),
   m = n(481060),
-  T = n(239091),
-  f = n(749210),
+  f = n(239091),
+  T = n(749210),
   g = n(112724),
   I = n(607070),
   h = n(605436),
@@ -127,7 +127,7 @@ let z = l.forwardRef(function(e, t) {
   var i, a, o;
   let u, {
       canRemove: d,
-      className: f,
+      className: T,
       role: g,
       onRemove: h,
       guildId: N,
@@ -148,7 +148,7 @@ let z = l.forwardRef(function(e, t) {
     U = (0, b._f)(N, g, g.colorStrings),
     j = (null == (i = g.tags) ? void 0 : i.guild_connections) === null,
     F = l.useCallback(e => {
-      (0, T.jW)(e, async () => {
+      (0, f.jW)(e, async () => {
         let {
           default: e
         } = await n.e("5396").then(n.bind(n, 731646));
@@ -187,7 +187,7 @@ let z = l.forwardRef(function(e, t) {
   return (0, r.jsx)(m.tEY, {
     children: (0, r.jsxs)("div", G(w({
       ref: t,
-      className: s()(y.role, f),
+      className: s()(y.role, T),
       style: K,
       onContextMenu: F,
       onMouseDown: C,
@@ -270,9 +270,9 @@ function V(e) {
     } = e,
     E = (0, c.JA)("overflow-add-roles-".concat(i.id)),
     A = (0, _.e7)([I.Z], () => I.Z.roleStyle),
-    T = x.Z.getHighestRole(n),
-    f = v.ZP.getMember(n.id, i.id),
-    g = e => (0, h.Gy)(n.id, e.id) && !e.managed && x.Z.isRoleHigher(n, T, e) && (null == f || -1 === f.roles.indexOf(e.id));
+    f = x.Z.getHighestRole(n),
+    T = v.ZP.getMember(n.id, i.id),
+    g = e => (0, h.Gy)(n.id, e.id) && !e.managed && x.Z.isRoleHigher(n, f, e) && (null == T || -1 === T.roles.indexOf(e.id));
   return (0, r.jsx)(m.yRy, {
     targetElementRef: t,
     renderPopout: e => {
@@ -316,7 +316,7 @@ function H(e) {
       wrap: E = !0,
       width: A,
       className: m,
-      readOnly: T,
+      readOnly: f,
       roleClassName: g,
       disableBorderColor: I
     } = e,
@@ -324,7 +324,7 @@ function H(e) {
     O = l.useCallback(e => {
       var t;
       let r = a.filter(t => t !== e.id);
-      (null == (t = e.tags) ? void 0 : t.guild_connections) === null ? f.Z.unassignGuildRoleConnection(i.id, e.id) : C.Z.updateMemberRoles(i.id, n.id, r, [], [e.id])
+      (null == (t = e.tags) ? void 0 : t.guild_connections) === null ? T.Z.unassignGuildRoleConnection(i.id, e.id) : C.Z.updateMemberRoles(i.id, n.id, r, [], [e.id])
     }, [a, i.id, n.id]),
     N = l.useCallback(e => {
       let t = a; - 1 === t.indexOf(e) && (t = t.concat([e])), C.Z.updateMemberRoles(i.id, n.id, t, [e], [])
@@ -359,7 +359,7 @@ function H(e) {
   }, [E, A, b]);
   let U = L.default.getCurrentUser();
   o()(null != U, "MemberRolesList: currentUser cannot be undefined");
-  let Z = !T && x.Z.can(j.Plq.MANAGE_ROLES, i),
+  let Z = !f && x.Z.can(j.Plq.MANAGE_ROLES, i),
     H = M.e9(i, U.id),
     K = l.useMemo(() => "roles-".concat((0, u.Z)()), []),
     W = (0, d.ZP)({

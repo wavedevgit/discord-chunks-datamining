@@ -21,7 +21,7 @@ function f(e) {
     activeType: t,
     onTypePicked: n,
     guild: l
-  } = e, f = l.hasFeature(m.oNc.COMMUNITY), h = (0, a.e7)([c.Z], () => c.Z.can(m.Plq.ADMINISTRATOR, l)), x = i.useMemo(() => {
+  } = e, f = l.features.has(m.oNc.COMMUNITY), h = (0, a.e7)([c.Z], () => c.Z.can(m.Plq.ADMINISTRATOR, l)), x = i.useMemo(() => {
     let e = t === u.A.DISCOVERABLE && !h,
       n = f && (t === u.A.DISCOVERABLE || h);
     return [{

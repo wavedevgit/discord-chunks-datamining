@@ -38,8 +38,8 @@ var r = n(255367),
   R = n(348238),
   k = n(62072),
   M = n(38267),
-  L = n(25015),
-  D = n(689674),
+  D = n(25015),
+  L = n(689674),
   U = n(438075),
   B = n(764893),
   F = n(481363),
@@ -188,7 +188,7 @@ function er(e) {
     onFocus: S
   } = E, P = ee(E, ["onFocus"]), {
     isFocused: T,
-    handleFocus: D,
+    handleFocus: L,
     handleBlur: B
   } = (0, R.bb)(S), {
     popouts: F,
@@ -206,7 +206,7 @@ function er(e) {
   }), es = (0, u.e7)([p.Z], () => p.Z.keyboardModeEnabled), ec = V || es && T, eu = ec || ea, {
     content: ed,
     hasSpoilerEmbeds: ep
-  } = (0, L.Z)(a, {
+  } = (0, D.Z)(a, {
     hideSimpleEmbedContent: et && en,
     isInteracting: eu,
     formatInline: !1,
@@ -240,7 +240,7 @@ function er(e) {
       }),
       zalgo: !0,
       onKeyDown: eh,
-      onFocus: D,
+      onFocus: L,
       onBlur: B,
       childrenRepliedMessage: a.type === q.uaV.REPLY && (0, z.Z)($(J({}, e), {
         setPopout: Q,
@@ -345,18 +345,18 @@ let ei = i.memo(function(e) {
     eR = (0, u.e7)([j.Z], () => x.hasFlag(q.iLy.HAS_THREAD) && j.Z.getChannel(S.default.castMessageIdAsChannelId(x.id))),
     ek = x.isFirstMessageInForumPost(Q),
     eM = (0, m.A)((null != (n = x.editedTimestamp) ? n : x.timestamp).valueOf()),
-    eL = (0, u.e7)([O.Z], () => O.Z.isDeveloper),
+    eD = (0, u.e7)([O.Z], () => O.Z.isDeveloper),
     {
-      content: eD,
+      content: eL,
       hasSpoilerEmbeds: eU
-    } = (0, L.Z)(x, {
+    } = (0, D.Z)(x, {
       hideSimpleEmbedContent: ep && eh,
       isInteracting: ew,
       formatInline: !1,
       allowList: ek || eM,
       allowHeading: ek || eM,
       allowLinks: !0,
-      allowDevLinks: eL,
+      allowDevLinks: eD,
       previewLinkTarget: !0
     }),
     eB = (0, k.Z)(P, et, eT),
@@ -375,13 +375,13 @@ let ei = i.memo(function(e) {
     ez = (0, w.iG)(x, el),
     eW = (0, w.Gx)(x),
     eY = (0, u.e7)([h.Z], () => h.Z.getMessage(P), [P]),
-    eq = (0, D.Z)({
+    eq = (0, L.Z)({
       message: x,
       channel: Q
     }),
     eK = null != eY,
     eX = i.useMemo(() => Object.values(em).some(e => e), [em]);
-  l = x.type === q.uaV.CUSTOM_GIFT ? "" : !eN && eK ? (0, B.Z)(e, eD) : (0, G.Z)(e, eD, eN);
+  l = x.type === q.uaV.CUSTOM_GIFT ? "" : !eN && eK ? (0, B.Z)(e, eL) : (0, G.Z)(e, eL, eN);
   let eQ = x.id === el,
     eJ = (0, r.jsx)(d.tEY, {
       offset: {

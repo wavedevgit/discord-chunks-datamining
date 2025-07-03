@@ -20,8 +20,8 @@ var i = n(442837),
   p = n(703656),
   S = n(914010),
   N = n(594174),
-  A = n(933429),
-  f = n(395361),
+  f = n(933429),
+  A = n(395361),
   m = n(626135),
   R = n(243778),
   g = n(921944),
@@ -34,7 +34,7 @@ let h = e => {
   let {
     dismissibleContent: t,
     noticeType: h
-  } = e, U = (0, i.e7)([A.ZP], () => A.ZP.getNotice()), M = (0, i.e7)([N.default], () => N.default.getCurrentUser()), v = (0, i.e7)([S.Z], () => S.Z.getGuildId());
+  } = e, U = (0, i.e7)([f.ZP], () => f.ZP.getNotice()), M = (0, i.e7)([N.default], () => N.default.getCurrentUser()), v = (0, i.e7)([S.Z], () => S.Z.getGuildId());
   return (0, r.jsx)(R.ZP, {
     contentTypes: [t],
     groupName: g.R.NOTICE_BAR,
@@ -95,7 +95,7 @@ let h = e => {
             children: [(0, r.jsx)(o.RyX, {
               onClick: () => i(g.L.UNKNOWN),
               noticeType: h
-            }), (0, r.jsx)(f.Z, {
+            }), (0, r.jsx)(A.Z, {
               className: D.platformIcon
             }), b.intl.string(b.t["5NUVHB"]), (0, r.jsx)(o.NoS, {
               onClick: () => (0, d.Z)({

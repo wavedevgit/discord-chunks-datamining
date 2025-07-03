@@ -124,13 +124,13 @@ function k(e) {
 
 function M(e) {
   if (e.key !== C.vTt) return !1;
-  L()
+  D()
 }
 
-function L() {
+function D() {
   null != r && (r.destroy(), r = null), P()
 }
-class D extends(i = a.ZP.Store) {
+class L extends(i = a.ZP.Store) {
   initialize() {
     this.waitFor(y.default, m.Z, _.Z, u.Z, g.Z), this.syncWith([y.default, m.Z], N), this.syncWith([_.Z], T)
   }
@@ -156,13 +156,13 @@ class D extends(i = a.ZP.Store) {
     }
   }
 }
-o = "PrivateChannelRecipientsInviteStore", (l = "displayName") in D ? Object.defineProperty(D, l, {
+o = "PrivateChannelRecipientsInviteStore", (l = "displayName") in L ? Object.defineProperty(L, l, {
   value: o,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : D[l] = o;
-let U = new D(s.Z, {
+}) : L[l] = o;
+let U = new L(s.Z, {
     CONNECTION_OPEN: function() {
       P()
     },
@@ -182,7 +182,7 @@ let U = new D(s.Z, {
     },
     MODAL_POP: M,
     HIDE_ACTION_SHEET: M,
-    PRIVATE_CHANNEL_RECIPIENTS_INVITE_CLOSE: L,
+    PRIVATE_CHANNEL_RECIPIENTS_INVITE_CLOSE: D,
     PRIVATE_CHANNEL_RECIPIENTS_INVITE_QUERY: function(e) {
       I = e.channelId, Z(e.query)
     },

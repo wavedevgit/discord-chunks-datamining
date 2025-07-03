@@ -49,7 +49,7 @@ function P(e) {
   }
   return e
 }
-let w = (e, t) => e < (0, _.A3)(I.Eu4.NONE) ? I.Eu4.NONE : e < (0, _.A3)(I.Eu4.TIER_1) ? I.Eu4.TIER_1 : e < (0, _.A3)(I.Eu4.TIER_2) ? I.Eu4.TIER_2 : e < (0, _.A3)(I.Eu4.TIER_3) || null != t && t.hasFeature(I.oNc.MORE_STICKERS) && e < c.D.MAX_STICKER_SLOTS ? I.Eu4.TIER_3 : I.Eu4.NONE,
+let w = (e, t) => e < (0, _.A3)(I.Eu4.NONE) ? I.Eu4.NONE : e < (0, _.A3)(I.Eu4.TIER_1) ? I.Eu4.TIER_1 : e < (0, _.A3)(I.Eu4.TIER_2) ? I.Eu4.TIER_2 : e < (0, _.A3)(I.Eu4.TIER_3) || null != t && t.features.has(I.oNc.MORE_STICKERS) && e < c.D.MAX_STICKER_SLOTS ? I.Eu4.TIER_3 : I.Eu4.NONE,
   R = e => {
     let {
       children: t,
@@ -125,7 +125,7 @@ let w = (e, t) => e < (0, _.A3)(I.Eu4.NONE) ? I.Eu4.NONE : e < (0, _.A3)(I.Eu4.T
       return null != (e = v.Z.getStickersByGuildId(t.id)) ? e : []
     }, [t]), {
       analyticsLocations: d
-    } = (0, u.ZP)(), j = (0, x.Z)(t.id), Z = t.hasFeature(I.oNc.MORE_STICKERS) ? I.Eu4.TIER_3 : t.premiumTier, A = t.hasFeature(I.oNc.MORE_STICKERS) ? I.oCV[I.Eu4.TIER_3] : j, L = (0, h.Ek)(t.id, "GuildStickersTiers"), M = (0, b.Z)(t.id);
+    } = (0, u.ZP)(), j = (0, x.Z)(t.id), Z = t.features.has(I.oNc.MORE_STICKERS) ? I.Eu4.TIER_3 : t.premiumTier, A = t.features.has(I.oNc.MORE_STICKERS) ? I.oCV[I.Eu4.TIER_3] : j, L = (0, h.Ek)(t.id, "GuildStickersTiers"), M = (0, b.Z)(t.id);
     if (i.useEffect(() => {
         window.dispatchEvent(new Event("resize"))
       }, [c]), l) return (0, r.jsx)(o.$jN, {});

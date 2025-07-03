@@ -253,8 +253,8 @@ function V(e) {
     isGuestInviteAllowed: M,
     isTemporaryInviteAllowed: k,
     setError: V,
-    analyticsLocation: F
-  } = e, [B, G] = i.useState(!1), [z, H] = i.useState(!1), q = i.useRef(null), [W] = (0, d.Wu)([N.Z], () => [N.Z.hideInstantInvites]), Y = (0, I.Dt)(), X = (0, I.Dt)(), K = (0, I.Dt)(), J = i.useMemo(() => x && null != r.vanityURLCode ? (0, T.Z)(r.vanityURLCode, !1) : null, [r, x]), Q = i.useCallback(async () => {
+    analyticsLocation: B
+  } = e, [F, G] = i.useState(!1), [z, H] = i.useState(!1), q = i.useRef(null), [W] = (0, d.Wu)([N.Z], () => [N.Z.hideInstantInvites]), Y = (0, I.Dt)(), X = (0, I.Dt)(), K = (0, I.Dt)(), J = i.useMemo(() => x && null != r.vanityURLCode ? (0, T.Z)(r.vanityURLCode, !1) : null, [r, x]), Q = i.useCallback(async () => {
     var e, t;
     if (f) return;
     null !== q.current && clearTimeout(q.current);
@@ -271,13 +271,13 @@ function V(e) {
       server: r.id,
       channel: null != (e = null == a ? void 0 : a.id) ? e : null,
       channel_type: null != (t = null == a ? void 0 : a.type) ? t : null,
-      location: F,
+      location: B,
       code: n,
       application_id: m
     }), () => {
       null !== q.current && clearTimeout(q.current)
     }
-  }, [f, p, r, a, F, m, V]), $ = i.useCallback(e => {
+  }, [f, p, r, a, B, m, V]), $ = i.useCallback(e => {
     A({
       max_age: e
     })
@@ -460,7 +460,7 @@ function V(e) {
             null == e || null == (t = e.onClick) || t.call(e), Q()
           },
           disabled: f,
-          children: B ? (0, l.jsxs)(l.Fragment, {
+          children: F ? (0, l.jsxs)(l.Fragment, {
             children: [(0, l.jsx)(h.dz2, {
               size: "xs",
               color: "currentColor"

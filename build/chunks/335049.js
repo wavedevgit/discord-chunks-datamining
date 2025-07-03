@@ -27,7 +27,7 @@ var r = n(255367),
   N = n(388032),
   I = n(555781);
 
-function S(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function S(e) {
   return e
 }
 
-function E(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -73,7 +73,7 @@ function T(e) {
       let {
         default: e
       } = await n.e("5396").then(n.bind(n, 731646));
-      return t => (0, r.jsx)(e, E(S({}, t), {
+      return t => (0, r.jsx)(e, S(E({}, t), {
         id: l,
         label: N.intl.string(N.t.oJ1Mu7)
       }))
@@ -173,7 +173,7 @@ function P(e) {
       let {
         default: e
       } = await n.e("14486").then(n.bind(n, 786746));
-      return t => (0, r.jsx)(e, E(S({}, t), {
+      return t => (0, r.jsx)(e, S(E({}, t), {
         guild: l,
         role: b
       }))
@@ -182,7 +182,7 @@ function P(e) {
   return (null == b ? void 0 : b.name) == null ? null : (0, r.jsxs)("div", {
     onContextMenu: x,
     className: I.identifier,
-    children: [null != g ? (0, r.jsx)(f.Z, S({
+    children: [null != g ? (0, r.jsx)(f.Z, E({
       className: o()(I.__invalid_icon, I.image)
     }, g)) : (0, r.jsx)(u.lZ8, {
       size: "custom",
@@ -241,7 +241,7 @@ function k(e) {
   } = e;
   return (0, r.jsx)(u.ua7, {
     text: t,
-    children: e => (0, r.jsx)("div", E(S({
+    children: e => (0, r.jsx)("div", S(E({
       className: I.lockIcon
     }, e), {
       children: (0, r.jsx)(u.mBM, {

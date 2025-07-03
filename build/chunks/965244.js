@@ -1,37 +1,37 @@
-/** Chunk was on 50331 **/
+/** Chunk was on 19877 **/
 n.d(t, {
   Z: () => b
 });
 var r = n(255367);
 n(73800);
-var o = n(442837),
-  i = n(481060),
+var i = n(442837),
+  o = n(481060),
   c = n(666657),
   l = n(533244),
-  u = n(487419),
-  a = n(430824),
-  f = n(981631),
-  s = n(388032);
+  a = n(487419),
+  u = n(430824),
+  s = n(981631),
+  f = n(388032);
 
 function b(e, t) {
-  let b = t === f.IlC.POPOUT,
-    d = (0, o.e7)([a.Z], () => a.Z.getGuild(e), [e]),
-    O = (0, o.e7)([u.Z], () => null != d ? u.Z.getGuildIncident(d.id) : null);
-  return b ? null : (0, r.jsx)(i.sNh, {
+  let b = t === s.IlC.POPOUT,
+    d = (0, i.e7)([u.Z], () => u.Z.getGuild(e), [e]),
+    O = (0, i.e7)([a.Z], () => null != d ? a.Z.getGuildIncident(d.id) : null);
+  return b ? null : (0, r.jsx)(o.sNh, {
     id: "nav-security-actions",
-    label: s.intl.string(s.t.UgXhdn),
+    label: f.intl.string(f.t.UgXhdn),
     action: () => {
       let t = {
         source: c.Zu.MESSAGE,
         alertType: (0, l.T1)(O)
       };
-      (0, i.ZDy)(async () => {
+      (0, o.ZDy)(async () => {
         let {
-          default: o
+          default: i
         } = await n.e("61536").then(n.bind(n, 664452));
         return n => {
-          var i, c;
-          return (0, r.jsx)(o, (i = function(e) {
+          var o, c;
+          return (0, r.jsx)(i, (o = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 r = Object.keys(n);
@@ -51,7 +51,7 @@ function b(e, t) {
           }({}, n), c = c = {
             guildId: e,
             analyticsData: t
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(c)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(c)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var r = Object.getOwnPropertySymbols(e);
@@ -59,8 +59,8 @@ function b(e, t) {
             }
             return n
           })(Object(c)).forEach(function(e) {
-            Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(c, e))
-          }), i))
+            Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(c, e))
+          }), o))
         }
       })
     }

@@ -20,9 +20,9 @@ var i = n(120356),
   p = n(176505),
   S = n(388032),
   N = n(246752),
-  A = n(240211);
+  f = n(240211);
 
-function f(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -52,13 +52,13 @@ let m = () => {
     y = null,
     b = null,
     D = null,
-    h = [N.notice, A.notice];
+    h = [N.notice, f.notice];
   switch (C) {
     case E.wB.SUBMITTED:
       y = S.intl.string(S.t["5iLvS0"]), b = S.intl.string(S.t.mqtdmZ), D = () => {
         (0, c.h7j)(e => {
           var t, n;
-          return (0, r.jsx)(c.ConfirmModal, (t = f({
+          return (0, r.jsx)(c.ConfirmModal, (t = A({
             header: S.intl.string(S.t.aIz1oa),
             confirmText: S.intl.string(S.t["cY+Ooa"]),
             cancelText: S.intl.string(S.t["ETE/oK"]),
@@ -88,7 +88,7 @@ let m = () => {
           let {
             default: e
           } = await n.e("3378").then(n.bind(n, 76075));
-          return t => (0, r.jsx)(e, f({
+          return t => (0, r.jsx)(e, A({
             guildId: m.id
           }, t))
         })

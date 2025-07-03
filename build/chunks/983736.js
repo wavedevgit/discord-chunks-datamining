@@ -36,5 +36,5 @@ function l(e) {
 }
 
 function c(e) {
-  return null != e && e.hasFeature(o.oNc.MEMBER_VERIFICATION_GATE_ENABLED)
+  return null != e && e.features.has(o.oNc.MEMBER_VERIFICATION_GATE_ENABLED)
 }

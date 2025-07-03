@@ -46,7 +46,7 @@ function g(e) {
     guild: t,
     transitionState: n,
     onClose: i
-  } = e, o = "".concat(d.intl.string(d.t.BayiAg), "—").concat(null != t ? t.toString() : "??");
+  } = e, o = "".concat(d.intl.string(d.t.BayiAg), "—").concat(null != t ? t.name : "??");
   return (0, a.jsxs)(r.Y0X, {
     transitionState: n,
     size: r.CgR.SMALL,

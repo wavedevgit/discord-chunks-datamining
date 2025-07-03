@@ -1,12 +1,12 @@
-/** Chunk was on 42018 **/
+/** Chunk was on 12519 **/
 n.d(t, {
-  Z: () => l
+  Z: () => r
 });
 var i = n(255367),
-  r = n(481060);
+  a = n(481060);
 
-function l(e) {
-  (0, r.ZDy)(async () => {
+function r(e) {
+  (0, a.ZDy)(async () => {
     let {
       default: t
     } = await Promise.all([n.e("55616"), n.e("66868")]).then(n.bind(n, 846632));

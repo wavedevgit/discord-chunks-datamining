@@ -178,7 +178,7 @@ function C(e) {
     return (null == (e = p.ZP.getSelfMember(t)) ? void 0 : e.isPending) === !0
   }), s = (0, E.PE)(t), c = (0, l.e7)([h.Z], () => {
     var e;
-    return null == (e = h.Z.getGuild(t)) ? void 0 : e.hasFeature(O.oNc.GUILD_SERVER_GUIDE)
+    return null == (e = h.Z.getGuild(t)) ? void 0 : e.features.has(O.oNc.GUILD_SERVER_GUIDE)
   });
   return s || o || !a || !c ? null : (0, r.jsx)(N, {
     guildId: t,

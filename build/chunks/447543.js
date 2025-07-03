@@ -151,7 +151,7 @@ function ef(e) {
     channel: r,
     options: i,
     analyticsLocations: a = []
-  } = e, o = U.Z.getGuild(t), s = null == o ? void 0 : o.hasFeature(Q.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), {
+  } = e, o = U.Z.getGuild(t), s = null == o ? void 0 : o.features.has(Q.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), {
     targetUserId: l,
     targetType: c,
     targetApplicationId: u,

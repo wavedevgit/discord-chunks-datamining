@@ -1,17 +1,18 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => h
+  Z: () => f
 }), n(388685);
 var i = n(710845),
-  r = n(314897),
-  s = n(271383),
-  l = n(485386),
-  a = n(430824),
-  o = n(411198),
-  c = n(625137),
-  d = n(287328);
+  r = n(601964),
+  s = n(314897),
+  l = n(271383),
+  a = n(485386),
+  o = n(430824),
+  c = n(411198),
+  d = n(625137),
+  u = n(287328);
 
-function u(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -20,20 +21,20 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), i.forEach(function(t) {
-      u(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
 }
 
-function g(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -45,27 +46,27 @@ function g(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let p = new i.Z("Guilds"),
-  h = new class {
+let h = new i.Z("Guilds"),
+  f = new class {
     async getAsync(e) {
       let t = performance.now(),
-        n = await d.Z.guilds(e).getMany(),
+        n = await u.Z.guilds(e).getMany(),
         i = performance.now();
-      return p.verbose("loaded in ".concat(i - t, "ms (guilds: ").concat(n.length, ")")), n
+      return h.verbose("loaded in ".concat(i - t, "ms (guilds: ").concat(n.length, ")")), n
     }
     async getOneAsync(e, t) {
-      return await d.Z.guilds(e).get(t)
+      return await u.Z.guilds(e).get(t)
     }
     handleBackgroundSync(e, t) {
       for (let n of e.guilds) {
         if ("unavailable" === n.data_mode) return;
-        let e = a.Z.getGuild(n.id);
+        let e = o.Z.getGuild(n.id);
         if (null != e) {
-          let i = l.Z.getRoles(n.id),
-            r = "partial" === n.data_mode ? o.EO(n.id, i, n.partial_updates.roles, n.partial_updates.deleted_role_ids) : (0, c.C5)(n.id, n.roles);
-          this.put(o.rk(o.sp(n, e), {
+          let i = a.Z.getRoles(n.id),
+            r = "partial" === n.data_mode ? c.EO(n.id, i, n.partial_updates.roles, n.partial_updates.deleted_role_ids) : (0, d.C5)(n.id, n.roles);
+          this.put(c.rk(c.sp(n, e), {
             roles: r,
-            member: s.ZP.getSelfMember(n.id)
+            member: l.ZP.getSelfMember(n.id)
           }), t)
         }
       }
@@ -77,84 +78,84 @@ let p = new i.Z("Guilds"),
       this.putOne(e.guild, t)
     }
     handleGuildUpdate(e, t) {
-      let n = a.Z.getGuild(e.guild.id),
-        i = o.di(e.guild, n);
-      this.put(o.rk(i, {
-        roles: (0, c.C5)(e.guild.id, e.guild.roles),
-        member: s.ZP.getSelfMember(e.guild.id)
+      let n = o.Z.getGuild(e.guild.id),
+        i = c.di(e.guild, n);
+      this.put(c.rk(i, {
+        roles: (0, d.C5)(e.guild.id, e.guild.roles),
+        member: l.ZP.getSelfMember(e.guild.id)
       }), t)
     }
     handleGuildDelete(e, t) {
       this.delete(e.guild.id, t)
     }
     handleGuildRoleChange(e, t) {
-      let n = a.Z.getGuild(e.guildId),
-        i = l.Z.getRoles(e.guildId);
-      null != n && this.put(o.rk(n, {
-        roles: g(m({}, i), {
+      let n = o.Z.getGuild(e.guildId),
+        i = a.Z.getRoles(e.guildId);
+      null != n && this.put(c.rk(n, {
+        roles: p(g({}, i), {
           [e.role.id]: e.role
         }),
-        member: s.ZP.getSelfMember(e.guildId)
+        member: l.ZP.getSelfMember(e.guildId)
       }), t)
     }
     handleGuildRoleDelete(e, t) {
-      let n = a.Z.getGuild(e.guildId);
+      let n = o.Z.getGuild(e.guildId);
       if (null != n) {
-        let i = m({}, l.Z.getRoles(e.guildId));
+        let i = g({}, a.Z.getRoles(e.guildId));
         delete i[e.roleId];
-        let r = s.ZP.getSelfMember(e.guildId);
-        null != r && (r = g(m({}, r), {
+        let r = l.ZP.getSelfMember(e.guildId);
+        null != r && (r = p(g({}, r), {
           roles: r.roles.filter(t => t !== e.roleId)
-        })), this.put(o.rk(n, {
+        })), this.put(c.rk(n, {
           roles: i,
           member: r
         }), t)
       }
     }
     handleGuildMemberAdd(e, t) {
-      if (null != e.joinedAt && e.user.id === r.default.getId()) {
-        let n = a.Z.getGuild(e.guildId);
-        null != n && this.put(o.rk(n.updateJoinedAt(e.joinedAt), {
-          roles: l.Z.getRoles(n.id),
-          member: s.ZP.getSelfMember(n.id)
+      if (null != e.joinedAt && e.user.id === s.default.getId()) {
+        let n = o.Z.getGuild(e.guildId);
+        null != n && this.put(c.rk((0, r.kH)(n, e.joinedAt), {
+          roles: a.Z.getRoles(n.id),
+          member: l.ZP.getSelfMember(n.id)
         }), t)
       }
     }
     handleGuildMemberUpdate(e, t) {
-      if (e.user.id !== r.default.getId()) return;
-      let n = a.Z.getGuild(e.guildId);
-      null != n && this.put(o.rk(n, {
+      if (e.user.id !== s.default.getId()) return;
+      let n = o.Z.getGuild(e.guildId);
+      null != n && this.put(c.rk(n, {
         member: {
           roles: e.roles,
           userId: e.user.id
         },
-        roles: l.Z.getRoles(n.id)
+        roles: a.Z.getRoles(n.id)
       }), t)
     }
     resetInMemoryState() {}
     putOne(e, t) {
-      let n = e.members.find(e => e.user.id === r.default.getId()),
-        i = a.Z.getGuild(e.id),
-        s = o.rk(o.wD(e, i), {
-          roles: e.roles instanceof Array ? (0, c.C5)(e.id, e.roles) : e.roles,
+      let n = e.members.find(e => e.user.id === s.default.getId()),
+        i = o.Z.getGuild(e.id),
+        r = c.rk(c.wD(e, i), {
+          roles: e.roles instanceof Array ? (0, d.C5)(e.id, e.roles) : e.roles,
           member: null != n ? {
             userId: n.user.id,
             roles: n.roles
           } : void 0
         });
-      this.put(s, t)
+      this.put(r, t)
     }
     put(e, t) {
-      d.Z.guildsTransaction(t).put(e)
+      u.Z.guildsTransaction(t).put(e)
     }
     delete(e, t) {
-      d.Z.guildsTransaction(t).delete(e)
+      u.Z.guildsTransaction(t).delete(e)
     }
     clear(e) {
-      d.Z.guildsTransaction(e).delete()
+      u.Z.guildsTransaction(e).delete()
     }
     constructor() {
-      u(this, "actions", {
+      m(this, "actions", {
         BACKGROUND_SYNC: (e, t) => this.handleBackgroundSync(e, t),
         CONNECTION_OPEN: (e, t) => this.handleConnectionOpen(e, t),
         GUILD_CREATE: (e, t) => this.handleGuildCreate(e, t),

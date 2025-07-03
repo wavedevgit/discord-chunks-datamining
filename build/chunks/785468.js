@@ -183,7 +183,7 @@ function _(e) {
     guildId: t,
     guildEvent: n,
     onChange: i
-  } = e, a = (0, s.e7)([d.Z], () => d.Z.getGuild(t), [t]), c = (0, v.Z)(t, void 0), u = (0, v.Z)(t, O.d4z.GUILD_VOICE), x = (0, v.Z)(t, O.d4z.GUILD_STAGE_VOICE), g = (0, f.sR)(t, O.d4z.GUILD_VOICE), m = (0, p.q)(a), j = null == a ? void 0 : a.hasFeature(O.oNc.COMMUNITY), y = (0, h.xt)(n), b = k(i, n), T = r.useMemo(() => {
+  } = e, a = (0, s.e7)([d.Z], () => d.Z.getGuild(t), [t]), c = (0, v.Z)(t, void 0), u = (0, v.Z)(t, O.d4z.GUILD_VOICE), x = (0, v.Z)(t, O.d4z.GUILD_STAGE_VOICE), g = (0, f.sR)(t, O.d4z.GUILD_VOICE), m = (0, p.q)(a), j = null == a ? void 0 : a.features.has(O.oNc.COMMUNITY), y = (0, h.xt)(n), b = k(i, n), T = r.useMemo(() => {
     let e = [S({
       name: N.intl.string(N.t.BVZqJi),
       value: E.WX.VOICE,
@@ -219,7 +219,7 @@ function L(e) {
     isSlideReady: c = !1
   } = e, {
     entityType: u
-  } = r, g = (0, s.e7)([d.Z], () => d.Z.getGuild(t), [t]), m = (0, p.q)(g), h = (0, s.e7)([x.Z], () => x.Z.can(O.Plq.MANAGE_CHANNELS, g)), v = null == g ? void 0 : g.hasFeature(O.oNc.COMMUNITY), f = k(a, r), j = v && !T(u) && 0 === m.length && h && null != u;
+  } = r, g = (0, s.e7)([d.Z], () => d.Z.getGuild(t), [t]), m = (0, p.q)(g), h = (0, s.e7)([x.Z], () => x.Z.can(O.Plq.MANAGE_CHANNELS, g)), v = null == g ? void 0 : g.features.has(O.oNc.COMMUNITY), f = k(a, r), j = v && !T(u) && 0 === m.length && h && null != u;
   return (0, l.jsxs)("div", {
     className: C.container,
     children: [(0, l.jsx)(o.X6q, {

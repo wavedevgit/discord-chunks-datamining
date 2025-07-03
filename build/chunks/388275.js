@@ -28,11 +28,11 @@ function b(e) {
     selectedDestinations: I,
     isSending: S,
     onSend: O
-  } = e, A = (0, d.Z)(), v = (0, h.nm)(I), C = (0, h.y)(I), x = (0, _.Ad)(), P = (0, i.e7)([f.Z], () => f.Z.getDraft(t.channel_id, f.d.ForwardContextMessage)), [L, T] = r.useState(() => (0, c.eK)(P)), {
+  } = e, A = (0, d.Z)(), v = (0, h.nm)(I), C = (0, h.y)(I), x = (0, _.Ad)(), P = (0, i.e7)([f.Z], () => f.Z.getDraft(t.channel_id, f.d.ForwardContextMessage)), [T, L] = r.useState(() => (0, c.eK)(P)), {
     textValue: N,
     richValue: j
-  } = L, [Z, w] = r.useState(!1), D = r.useCallback(() => w(!0), []), R = r.useCallback(() => w(!1), []), k = r.useCallback((e, n, l) => {
-    T({
+  } = T, [Z, w] = r.useState(!1), D = r.useCallback(() => w(!0), []), R = r.useCallback(() => w(!1), []), k = r.useCallback((e, n, l) => {
+    L({
       textValue: n,
       richValue: l
     }), s.Z.saveDraft(t.channel_id, n, f.d.ForwardContextMessage), x(t.channel_id, t.id)

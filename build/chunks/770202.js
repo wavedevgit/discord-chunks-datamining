@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(120356),
   o = n.n(l),
-  a = n(442837),
-  s = n(493683),
+  s = n(442837),
+  a = n(493683),
   c = n(239091),
   u = n(146773),
   d = n(201895),
@@ -46,7 +46,7 @@ function C(e) {
 function j(e, t) {
   let n = t.getGuildId();
   if (null == n) throw Error("TextChannel, preloadChannel: Channel does not have a guildId");
-  s.Z.preload(n, t.id)
+  a.Z.preload(n, t.id)
 }
 class E extends m.ZP {
   render() {
@@ -56,8 +56,8 @@ class E extends m.ZP {
       connectChannelDropTarget: n,
       connectChannelDragSource: i,
       connectDragPreview: l,
-      canReorderChannel: a
-    } = this.props, s = (0, r.jsx)("li", {
+      canReorderChannel: s
+    } = this.props, a = (0, r.jsx)("li", {
       className: o()(this.getClassName(), {
         [y.disabled]: this.isDisabled()
       }),
@@ -69,7 +69,7 @@ class E extends m.ZP {
         onClick: this.handleClick,
         onMouseDown: j,
         onContextMenu: this.handleContextMenu,
-        connectDragPreview: a ? l : null,
+        connectDragPreview: s ? l : null,
         "aria-label": (0, d.ZP)({
           channel: e
         }),
@@ -77,7 +77,7 @@ class E extends m.ZP {
         children: [this.renderInviteButton(), this.renderEditButton()]
       })
     });
-    return a ? n(i(s)) : s
+    return s ? n(i(a)) : a
   }
   constructor(...e) {
     super(...e), v(this, "handleContextMenu", e => {
@@ -126,7 +126,7 @@ let S = (0, u.B)(E),
       channel: t,
       guild: n,
       disableSorting: i
-    } = e, l = (0, a.cj)([p.Z, g.Z], () => {
+    } = e, l = (0, s.cj)([p.Z, g.Z], () => {
       let e = p.Z.getChannel(t.parent_id);
       return {
         canManageChannel: g.Z.can(_.Plq.MANAGE_CHANNELS, t),

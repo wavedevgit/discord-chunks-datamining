@@ -86,7 +86,7 @@ let S = () => (0, i.jsxs)(l.Fragment, {
       z = null != c.channel ? (0, p.jD)(c.channel) : null,
       D = null != c.target_application ? new _.ZP(c.target_application) : null,
       M = S || null == c.inviter ? null : new g.Z(c.inviter),
-      k = !(null != c.approximate_member_count && c.approximate_member_count > 100 || null != Z && Z.hasFeature(E.oNc.COMMUNITY)) && null != M,
+      k = !(null != c.approximate_member_count && c.approximate_member_count > 100 || null != Z && Z.features.has(E.oNc.COMMUNITY)) && null != M,
       O = null,
       U = !1;
     if (null != Z) O = null == M ? f.intl.string(f.t["3rE1Pz"]) : f.intl.formatToPlainString(f.t["5u47vb"], {

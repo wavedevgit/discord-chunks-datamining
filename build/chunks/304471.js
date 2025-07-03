@@ -7,8 +7,8 @@ n(73800);
 var i = n(481060),
   l = n(619915),
   o = n(449932),
-  a = n(561788),
-  s = n(642317);
+  s = n(561788),
+  a = n(642317);
 
 function c(e) {
   let {
@@ -16,14 +16,14 @@ function c(e) {
     onAction: n
   } = e, c = (0, l.ZP)(t), u = Array.from((0, l.uF)(c).values());
   return 0 === u.length ? null : (0, r.jsxs)(i.Ttm, {
-    className: s.container,
+    className: a.container,
     children: [(0, r.jsx)("div", {
-      className: s.popoutHeaderContainer,
-      children: (0, r.jsx)(a.Z, {
+      className: a.popoutHeaderContainer,
+      children: (0, r.jsx)(s.Z, {
         channel: t
       })
     }), (0, r.jsx)("div", {
-      className: s.headerDivider
+      className: a.headerDivider
     }), u.map((e, i) => {
       var l;
       return (0, r.jsx)(o.Z, {

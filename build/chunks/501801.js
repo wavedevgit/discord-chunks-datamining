@@ -17,8 +17,8 @@ var r = n(255367),
   _ = n(596454),
   A = n(835473),
   m = n(479099),
-  T = n(592125),
-  f = n(485386),
+  f = n(592125),
+  T = n(485386),
   g = n(594174),
   I = n(934415),
   h = n(823379),
@@ -176,18 +176,18 @@ function M(e) {
               oldValue: i
             } = e, s = e => {
               var t;
-              let r = null != n ? null == (t = f.Z.getRole(n.id, e)) ? void 0 : t.name : void 0;
+              let r = null != n ? null == (t = T.Z.getRole(n.id, e)) ? void 0 : t.name : void 0;
               return null == r ? null : "@".concat(r)
             }, a = e => {
               var t;
-              let n = null == (t = T.Z.getChannel(e)) ? void 0 : t.name;
+              let n = null == (t = f.Z.getChannel(e)) ? void 0 : t.name;
               return null == n ? null : "#".concat(n)
             }, u = (e, n) => {
               let {
                 title: l,
                 id: i
-              } = n, u = e.role_ids.map(s).filter(h.lm), c = e.channel_ids.map(a).filter(h.lm), d = n.role_ids.map(s).filter(h.lm), _ = n.channel_ids.map(a).filter(h.lm), A = o().difference(d, u), m = o().difference(u, d), T = o().difference(_, c), f = o().difference(c, _), g = [];
-              return (o().isEqual(e.title, n.title) || g.push("title"), o().isEqual(e.description, n.description) || g.push("description"), 0 === A.length && 0 === m.length && 0 === T.length && 0 === f.length && 0 === g.length) ? null : (0, r.jsxs)("li", {
+              } = n, u = e.role_ids.map(s).filter(h.lm), c = e.channel_ids.map(a).filter(h.lm), d = n.role_ids.map(s).filter(h.lm), _ = n.channel_ids.map(a).filter(h.lm), A = o().difference(d, u), m = o().difference(u, d), f = o().difference(_, c), T = o().difference(c, _), g = [];
+              return (o().isEqual(e.title, n.title) || g.push("title"), o().isEqual(e.description, n.description) || g.push("description"), 0 === A.length && 0 === m.length && 0 === f.length && 0 === T.length && 0 === g.length) ? null : (0, r.jsxs)("li", {
                 children: [(0, r.jsxs)("div", {
                   className: C.onboardingChangeLogItemTitle,
                   children: [(0, r.jsx)(L, {
@@ -212,15 +212,15 @@ function M(e) {
                     children: S.intl.format(S.t.xIVRoa, {
                       roles: m.join(", ")
                     })
-                  }), T.length > 0 && (0, r.jsx)(E.Text, {
-                    variant: "text-md/normal",
-                    children: S.intl.format(S.t.iYowX1, {
-                      channels: T.join(", ")
-                    })
                   }), f.length > 0 && (0, r.jsx)(E.Text, {
                     variant: "text-md/normal",
-                    children: S.intl.format(S.t.JLdJpK, {
+                    children: S.intl.format(S.t.iYowX1, {
                       channels: f.join(", ")
+                    })
+                  }), T.length > 0 && (0, r.jsx)(E.Text, {
+                    variant: "text-md/normal",
+                    children: S.intl.format(S.t.JLdJpK, {
+                      channels: T.join(", ")
                     })
                   }), g.map((t, l) => (0, r.jsx)(E.Text, {
                     variant: "text-md/normal",
@@ -428,7 +428,7 @@ function M(e) {
             change: A
           } = e;
           if (null == i) return console.warn("No change string for", A), null;
-          let T = S.intl.format(i, {
+          let f = S.intl.format(i, {
             oldValue: u,
             newValue: c,
             count: Array.isArray(c) ? c.length : null,
@@ -471,7 +471,7 @@ function M(e) {
               }, t)
             }
           });
-          return null == T ? null : (0, r.jsxs)("div", {
+          return null == f ? null : (0, r.jsxs)("div", {
             className: C.detail,
             style: {
               position: "relative",
@@ -498,7 +498,7 @@ function M(e) {
               className: C.change,
               children: [(0, r.jsx)("div", {
                 className: C.changeStr,
-                children: T
+                children: f
               }), null != s ? (0, r.jsx)("div", {
                 children: s
               }) : null]

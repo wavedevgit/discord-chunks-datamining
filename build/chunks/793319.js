@@ -38,8 +38,8 @@ var r = n(255367),
   R = n(74299),
   k = n(803647),
   M = n(554747),
-  L = n(95764),
-  D = n(459502),
+  D = n(95764),
+  L = n(459502),
   U = n(140465),
   B = n(800966),
   F = n(641015),
@@ -333,7 +333,7 @@ let eP = i.memo(function(e) {
             onPopoutClick: C.length > 0 ? i : null
           }));
         case "EVENT":
-          return (0, r.jsx)(L.Z, {
+          return (0, r.jsx)(D.Z, {
             channelId: l.id,
             onClick: () => {
               (0, P.v)(a, P.d.DISCONNECT), m.default.disconnect(), null == n || n()
@@ -450,7 +450,7 @@ let eT = function(e) {
     canGoLive: k
   } = (0, u.cj)([en.Z], () => ({
     canGoLive: (0, R.Z)(en.Z)
-  })), M = (0, A.Z)(), L = (0, u.e7)([T.Z], () => null != T.Z.getAwaitingRemoteSessionInfo()), U = null != M, B = (0, u.e7)([er.Z], () => {
+  })), M = (0, A.Z)(), D = (0, u.e7)([T.Z], () => null != T.Z.getAwaitingRemoteSessionInfo()), U = null != M, B = (0, u.e7)([er.Z], () => {
     var e;
     return (null != (e = null == M ? void 0 : M.channelId) ? e : er.Z.getVoiceChannelId()) === n.id
   }), H = (0, O.Z)(n, !0), V = (0, u.e7)([y.ZP], () => y.ZP.getCurrentEmbeddedActivity()), {
@@ -480,7 +480,7 @@ let eT = function(e) {
       section: e_.jXE.VOICE_CONTROL_TRAY,
       children: [(0, r.jsx)("div", {
         className: ex.eventPromptsContainer,
-        children: (0, r.jsx)(D.Z, {
+        children: (0, r.jsx)(L.Z, {
           channelId: n.id
         })
       }), (0, r.jsxs)("div", {
@@ -520,7 +520,7 @@ let eT = function(e) {
                 serverMute: w,
                 suppress: Z,
                 popoutOpen: i,
-                awaitingRemote: L,
+                awaitingRemote: D,
                 onClick: () => (0, I.Z)(w, Z, e_.jXE.VOICE_CONTROL_TRAY),
                 onContextMenu: em
               })

@@ -7,8 +7,8 @@ n(73800);
 var i = n(442837),
   l = n(692547),
   o = n(481060),
-  a = n(619915),
-  s = n(456269),
+  s = n(619915),
+  a = n(456269),
   c = n(921711),
   u = n(368442),
   d = n(601070),
@@ -42,14 +42,14 @@ function I(e) {
     isNewChannel: R,
     muted: D,
     resolvedUnreadSetting: L
-  } = e, M = (0, i.e7)([f.ZP], () => f.ZP.getMentionCount(n.id)), k = (0, i.e7)([f.ZP], () => f.ZP.getIsMentionLowImportance(n.id)), U = (0, a.ZP)(n), G = (0, i.e7)([p.Z], () => !p.Z.can(j.Plq.CONNECT, n)), B = (0, i.e7)([g.Z], () => g.Z.hasVideo(n.id)), F = (0, u.PK)(n.id) && n.isGuildStageVoice(), V = (0, O.ZP)({
+  } = e, M = (0, i.e7)([f.ZP], () => f.ZP.getMentionCount(n.id)), k = (0, i.e7)([f.ZP], () => f.ZP.getIsMentionLowImportance(n.id)), U = (0, s.ZP)(n), G = (0, i.e7)([p.Z], () => !p.Z.can(j.Plq.CONNECT, n)), B = (0, i.e7)([g.Z], () => g.Z.hasVideo(n.id)), F = (0, u.PK)(n.id) && n.isGuildStageVoice(), V = (0, O.ZP)({
     channel: n,
     locked: G,
     video: B || F,
     selected: I
-  }), H = (0, i.e7)([d.Z], () => d.Z.getNewThreadCount(n.guild_id, n.id)), z = (0, s.n2)(n.guild_id, n.id), W = (0, i.e7)([h.Z], () => {
+  }), H = (0, i.e7)([d.Z], () => d.Z.getNewThreadCount(n.guild_id, n.id)), z = (0, a.n2)(n.guild_id, n.id), W = (0, i.e7)([h.Z], () => {
     var e, t;
-    return null != (t = null == (e = h.Z.getGuild(n.guild_id)) ? void 0 : e.hasFeature(j.oNc.COMMUNITY)) && t
+    return null != (t = null == (e = h.Z.getGuild(n.guild_id)) ? void 0 : e.features.has(j.oNc.COMMUNITY)) && t
   });
   if ((0, _.Z)(M)) return (0, r.jsx)(C.Z, {
     mentionsCount: M,

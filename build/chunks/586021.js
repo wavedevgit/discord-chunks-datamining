@@ -19,7 +19,7 @@ let a = new r.Yd("LibDaveManager"),
   };
 
 function u() {
-  return i.WS && "function" == typeof RTCRtpSender && ("transform" in RTCRtpSender.prototype || "createEncodedStreams" in RTCRtpSender.prototype)
+  return "Firefox" !== platform.name && i.WS && "function" == typeof RTCRtpSender && ("transform" in RTCRtpSender.prototype || "createEncodedStreams" in RTCRtpSender.prototype)
 }
 
 function d() {

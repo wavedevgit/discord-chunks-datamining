@@ -97,7 +97,7 @@ let H = e => {
         children: [(0, i.jsx)(u.Text, {
           variant: "text-md/semibold",
           color: "header-primary",
-          children: s.guild.toString()
+          children: s.guild.name
         }), (0, i.jsx)(u.eee, {
           href: null == (n = x.Z.get(s.type)) || null == (t = n.getPlatformUserUrl) ? void 0 : t.call(n, s.account),
           children: (0, i.jsx)(u.Text, {

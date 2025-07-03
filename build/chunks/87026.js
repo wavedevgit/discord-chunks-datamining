@@ -335,26 +335,24 @@ let B = e => {
 function Y(e) {
   let {
     guild: t
-  } = e, i = (0, o.e7)([C.Z], () => C.Z.getRole(t.id, t.getEveryoneRoleId()));
-  if (null == i) return null;
-  let {
-    name: n,
-    color: l
-  } = i;
+  } = e, {
+    name: i,
+    color: n
+  } = (0, o.e7)([C.Z], () => C.Z.getEveryoneRole(t));
   return (0, s.jsx)("div", {
     className: M.__invalid_role,
     children: (0, s.jsxs)("span", {
       className: M.roleRow,
       children: [(0, s.jsx)(u.FhE, {
         className: M.roleDot,
-        color: l.toString(),
+        color: n.toString(),
         background: !1,
         tooltip: !1
       }), (0, s.jsx)(u.Text, {
         className: M.roleName,
         variant: "text-sm/medium",
         color: "interactive-active",
-        children: n
+        children: i
       })]
     })
   })
@@ -566,7 +564,7 @@ let V = e => {
     }, []);
     let {
       guild: a
-    } = (0, o.cj)([b.Z], () => b.Z.getProps()), c = (0, o.e7)([N.Z], () => N.Z.theme), [d, u] = n.useState(!1), [g, S] = n.useState(!y.$X.some(e => T.oz(e, a))), [O, w] = n.useState(y.b4), [P, Z] = n.useState(y.b4), [A] = n.useState(null == a ? void 0 : a.defaultMessageNotifications), [k] = n.useState(null == a ? void 0 : a.verificationLevel), [D] = n.useState(null == a ? void 0 : a.explicitContentFilter), [G] = n.useState(g), Y = (0, o.e7)([C.Z], () => null != a ? C.Z.getRole(a.id, a.getEveryoneRoleId()) : void 0), H = (0, o.e7)([j.ZP], () => null != a ? j.ZP.getChannels(a.id) : null), z = (0, f.Dt)(), {
+    } = (0, o.cj)([b.Z], () => b.Z.getProps()), c = (0, o.e7)([N.Z], () => N.Z.theme), [d, u] = n.useState(!1), [g, S] = n.useState(!y.$X.some(e => T.oz(e, a))), [O, w] = n.useState(y.b4), [P, Z] = n.useState(y.b4), [A] = n.useState(null == a ? void 0 : a.defaultMessageNotifications), [k] = n.useState(null == a ? void 0 : a.verificationLevel), [D] = n.useState(null == a ? void 0 : a.explicitContentFilter), [G] = n.useState(g), Y = (0, o.e7)([C.Z], () => null != a ? C.Z.getEveryoneRole(a) : void 0), H = (0, o.e7)([j.ZP], () => null != a ? j.ZP.getChannels(a.id) : null), z = (0, f.Dt)(), {
       enabled: J
     } = (0, m.D2)(null != (t = null == a ? void 0 : a.id) ? t : R.lds);
     if (null == a) return null;

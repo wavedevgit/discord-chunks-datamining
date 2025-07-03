@@ -63,7 +63,7 @@ function O(e, t) {
 }
 
 function I(e, t) {
-  return !(e.hasFeature(_.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) && e.hasFeature(_.oNc.MEMBER_VERIFICATION_GATE_ENABLED)) && null != t
+  return !(e.features.has(_.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) && e.features.has(_.oNc.MEMBER_VERIFICATION_GATE_ENABLED)) && null != t
 }
 
 function k(e) {
@@ -341,7 +341,7 @@ function y(e) {
     disableTracking: x
   } = e, g = (0, o.e7)([c.Z], () => c.Z.getRulesPrompt(t.id));
   l.useEffect(() => {
-    t.hasFeature(_.oNc.MEMBER_VERIFICATION_GATE_ENABLED) && !t.hasFeature(_.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) && a.ZP.fetchVerificationForm(t.id)
+    t.features.has(_.oNc.MEMBER_VERIFICATION_GATE_ENABLED) && !t.features.has(_.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) && a.ZP.fetchVerificationForm(t.id)
   }, [t]);
   let j = n[i],
     b = i + 1 >= n.length && !I(t, g),

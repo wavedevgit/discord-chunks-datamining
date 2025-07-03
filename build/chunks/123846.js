@@ -132,59 +132,60 @@ function S(e) {
 }
 
 function D(e) {
+  var t;
   let {
-    guildId: t,
-    onClose: n
-  } = e, o = (0, d.e7)([h.Z], () => h.Z.getSearchStateByGuildId(t), [t], u()), {
-    inviteCodes: a
-  } = (0, x.s)(t), c = (0, d.e7)([m.Z], () => m.Z.getGuild(t)), p = null == c ? void 0 : c.vanityURLCode, [D, Z] = l.useState(!1), {
-    selectedSourceInviteCode: L,
-    selectedJoinSourceType: R
-  } = o, I = null != R && R !== g.gq.UNSPECIFIED, P = (0, d.e7)([b.Z], () => b.Z.hideInstantInvites, []);
-  P && (a = []);
-  let M = s()(e => {
-    let n = e.trim();
-    (0, j.Dr)(t, {
-      selectedSourceInviteCode: "" !== n ? n : void 0,
+    guildId: n,
+    onClose: o
+  } = e, a = (0, d.e7)([h.Z], () => h.Z.getSearchStateByGuildId(n), [n], u()), {
+    inviteCodes: c
+  } = (0, x.s)(n), p = (0, d.e7)([m.Z], () => m.Z.getGuild(n)), D = null != (t = null == p ? void 0 : p.vanityURLCode) ? t : null, [Z, L] = l.useState(!1), {
+    selectedSourceInviteCode: R,
+    selectedJoinSourceType: I
+  } = a, P = null != I && I !== g.gq.UNSPECIFIED, M = (0, d.e7)([b.Z], () => b.Z.hideInstantInvites, []);
+  M && (c = []);
+  let V = s()(e => {
+    let t = e.trim();
+    (0, j.Dr)(n, {
+      selectedSourceInviteCode: "" !== t ? t : void 0,
       selectedJoinSourceType: void 0
     })
   }, 300);
   l.useEffect(() => () => {
-    M.cancel()
-  }, [M]);
-  let V = l.useCallback(e => {
-      let n = e.trim();
-      (0, j.Dr)(t, {
-        selectedSourceInviteCode: "" !== n ? n : void 0,
+    V.cancel()
+  }, [V]);
+  let E = l.useCallback(e => {
+      let t = e.trim();
+      (0, j.Dr)(n, {
+        selectedSourceInviteCode: "" !== t ? t : void 0,
         selectedJoinSourceType: void 0
       })
-    }, [t]),
-    E = l.useCallback(e => {
-      e === R ? (0, j.Dr)(t, {
+    }, [n]),
+    T = l.useCallback(e => {
+      e === I ? (0, j.Dr)(n, {
         selectedSourceInviteCode: void 0,
         selectedJoinSourceType: void 0
-      }) : (0, j.Dr)(t, {
+      }) : (0, j.Dr)(n, {
         selectedSourceInviteCode: null,
         selectedJoinSourceType: e
-      }), Z(!1)
-    }, [t, R]),
-    T = l.useCallback(e => {
-      (0, j.Dr)(t, {
+      }), L(!1)
+    }, [n, I]),
+    k = l.useCallback(e => {
+      (0, j.Dr)(n, {
         selectedSourceInviteCode: e,
         selectedJoinSourceType: void 0
-      }), M(e)
-    }, [t, M]);
+      }), V(e)
+    }, [n, V]);
   return (0, r.jsx)(C.v2r, {
     navId: "members-table-join-method-menu",
     onClose: () => {
-      n()
+      o()
     },
     "aria-label": O.intl.string(O.t["u/7RdX"]),
     onSelect: v.dG4,
-    children: D ? (0, r.jsxs)(C.kSQ, {
+    children: Z ? (0, r.jsxs)(C.kSQ, {
       children: [(0, r.jsx)(C.sNh, {
         id: "back",
-        action: () => Z(!1),
+        action: () => L(!1),
         render: e => (0, r.jsxs)("span", w(H({}, e), {
           className: y.customLabelContainer,
           children: [(0, r.jsx)(C.V7D, {
@@ -203,44 +204,44 @@ function D(e) {
         id: "join-source-type-option-".concat(e),
         label: t => (0, r.jsx)(S, w(H({}, t), {
           type: e,
-          vanityUrl: p,
-          text: (0, g.bE)(e, p, P)
+          vanityUrl: D,
+          text: (0, g.bE)(e, D, M)
         })),
-        checked: R === e,
+        checked: I === e,
         disabled: !1,
-        action: () => E(e),
+        action: () => T(e),
         group: "join-source-type-options"
       }, "join-source-type-option-".concat(e)))]
     }) : (0, r.jsxs)(C.kSQ, {
       children: [(0, r.jsx)(C.II_, {
         id: "members-table-invite-code-search",
         control: (e, t) => (0, r.jsx)(C.ne, w(H({}, e), {
-          query: null != L ? L : "",
-          onChange: T,
+          query: null != R ? R : "",
+          onChange: k,
           ref: t,
           placeholder: O.intl.string(O.t.YwJnGx)
         }))
       }, "invite-code-filter-search"), (0, r.jsx)(C.Clw, {}), (0, r.jsx)(C.k5B, {
         id: "join-source-type-option-all",
         label: O.intl.string(O.t.an9Ry8),
-        checked: null == L && null == R,
+        checked: null == R && null == I,
         disabled: !1,
-        action: () => E(null),
+        action: () => T(null),
         group: "join-source-type-options"
-      }, "join-source-type-option-all"), a.map(e => (0, r.jsx)(C.k5B, {
+      }, "join-source-type-option-all"), c.map(e => (0, r.jsx)(C.k5B, {
         id: "join-source-type-option-".concat(e),
         label: t => (0, r.jsx)(S, w(H({}, t), {
           type: g.gq.INVITE,
-          vanityUrl: p,
+          vanityUrl: D,
           text: e
         })),
-        checked: L === e,
+        checked: R === e,
         disabled: !1,
-        action: () => V(e),
+        action: () => E(e),
         group: "join-source-type-options"
       }, "join-source-type-option-".concat(e))), (0, r.jsx)(C.Clw, {}), (0, r.jsx)(C.sNh, {
         id: "other-join-methods",
-        action: () => Z(!0),
+        action: () => L(!0),
         render: e => (0, r.jsxs)("div", {
           className: i()(y.containerWithRightCaret, y.customLabelContainer),
           children: [(0, r.jsxs)("div", {
@@ -251,16 +252,16 @@ function D(e) {
                 [y.focused]: e.isFocused
               }),
               children: O.intl.string(O.t["Kz/cho"])
-            }), I ? (0, r.jsx)("div", {
+            }), P ? (0, r.jsx)("div", {
               className: y.selectedOption,
               children: (0, r.jsx)(S, w(H({}, e), {
                 size: 12,
-                text: (0, g.bE)(R, p, P),
-                type: R,
-                vanityUrl: p
+                text: (0, g.bE)(I, D, M),
+                type: I,
+                vanityUrl: D
               }))
             }) : null]
-          }), I ? (0, r.jsx)(f.Z, {
+          }), P ? (0, r.jsx)(f.Z, {
             background: y.__invalid_radio,
             foreground: y.radioSelection,
             width: 16,

@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(120356),
   o = n.n(l),
-  a = n(481060),
-  s = n(991315);
+  s = n(481060),
+  a = n(991315);
 
 function c(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -42,7 +42,7 @@ function u(e) {
     tooltipClass: m,
     tooltipContentClass: b
   } = e;
-  return (0, r.jsx)(a.ua7, {
+  return (0, r.jsx)(s.ua7, {
     shouldShow: p,
     forceOpen: f,
     spacing: 12,
@@ -51,13 +51,13 @@ function u(e) {
     position: "right",
     color: l,
     "aria-label": !1,
-    tooltipClassName: o()(s.listItemTooltip, m),
+    tooltipClassName: o()(a.listItemTooltip, m),
     tooltipContentClassName: b,
     children: e => {
       var n, l;
       return u ? i.cloneElement(i.Children.only(t), c({}, e)) : (0, r.jsx)("div", (n = c({
-        className: o()(s.listItemWrapper, {
-          [s.selected]: g
+        className: o()(a.listItemWrapper, {
+          [a.selected]: g
         })
       }, e), l = l = {
         children: t

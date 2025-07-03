@@ -346,7 +346,7 @@ let P = function(e, t) {
   leading: !1,
   trailing: !0
 });
-let B = (e, t) => e.type !== T.En.GUILD ? e.id : null != t ? t.toString() : "",
+let B = (e, t) => e.type !== T.En.GUILD ? e.id : null != t ? t.name : "",
   V = (e, t) => {
     switch (e) {
       case T.UX.TOP_GUILD_EMOJI:

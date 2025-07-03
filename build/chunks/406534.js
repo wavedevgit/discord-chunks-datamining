@@ -36,8 +36,8 @@ var r = n(255367),
   R = n(70956),
   k = n(709054),
   M = n(534091),
-  L = n(554838),
-  D = n(481369),
+  D = n(554838),
+  L = n(481369),
   U = n(186877),
   B = n(294218),
   F = n(534469),
@@ -134,7 +134,7 @@ function en(e) {
     ey = (0, O.P)(f.id),
     eC = (0, v.z)(f.id, Q.zr),
     ex = (0, p.k)(f.id),
-    ev = (0, D.Z)(),
+    ev = (0, L.Z)(),
     ej = function(e, t) {
       if (e.isDM() && null != t)
         if (t.type === x.pj.STRANGER_DANGER) return (0, r.jsx)(E.M, {
@@ -213,7 +213,7 @@ function en(e) {
   eP.push(...eZ);
   let eN = el[el.length - 1];
   if (null != eh && eo.forEach((e, t) => {
-      let n = 0 === t && (0, L.J)(f, eN, new Z.ZP({
+      let n = 0 === t && (0, D.J)(f, eN, new Z.ZP({
         type: X.uaV.DEFAULT,
         author: eh
       }));

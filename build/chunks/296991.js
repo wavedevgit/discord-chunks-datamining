@@ -169,7 +169,7 @@ function S(e) {
     rules: t,
     setRules: n,
     guild: l
-  } = e, s = l.rulesChannelId, a = l.hasFeature(v.oNc.PREVIEW_ENABLED), c = (0, u.e7)([h.Z], () => null != s ? h.Z.getChannel(s) : null), d = (0, u.e7)([x.ZP], () => x.ZP.getDefaultChannel(l.id)), [g, p] = i.useState(null), [f, I] = i.useState(null), S = i.useCallback(e => {
+  } = e, s = l.rulesChannelId, a = l.features.has(v.oNc.PREVIEW_ENABLED), c = (0, u.e7)([h.Z], () => null != s ? h.Z.getChannel(s) : null), d = (0, u.e7)([x.ZP], () => x.ZP.getDefaultChannel(l.id)), [g, p] = i.useState(null), [f, I] = i.useState(null), S = i.useCallback(e => {
     if (t.length !== _.X2)
       if (null != e && "" === t[t.length - 1].value) {
         let r = [...t];

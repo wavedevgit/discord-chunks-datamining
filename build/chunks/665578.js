@@ -26,9 +26,9 @@ var r = n(255367),
   C = n(981631),
   N = n(689079),
   I = n(388032),
-  S = n(190434);
+  E = n(190434);
 
-function E(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -138,7 +138,7 @@ function w(e) {
       let {
         default: t
       } = await n.e("64908").then(n.bind(n, 557944));
-      return n => (0, r.jsx)(t, E({
+      return n => (0, r.jsx)(t, S({
         editPermissions: G,
         guildId: j,
         headerText: I.intl.string(I.t["i1c+kZ"]),
@@ -155,7 +155,7 @@ function w(e) {
       let {
         default: t
       } = await n.e("64908").then(n.bind(n, 557944));
-      return n => (0, r.jsx)(t, E({
+      return n => (0, r.jsx)(t, S({
         editPermissions: G,
         guildId: j,
         hasMemberSearch: !0,
@@ -170,7 +170,7 @@ function w(e) {
     let {
       default: e
     } = await n.e("21897").then(n.bind(n, 303313)), t = R.defaultMemberPermissions;
-    return a.fS(t, u.BO) && (t = C.Plq.ADMINISTRATOR), n => (0, r.jsx)(e, T(E({}, n), {
+    return a.fS(t, u.BO) && (t = C.Plq.ADMINISTRATOR), n => (0, r.jsx)(e, T(S({}, n), {
       defaultMemberPermissions: t
     }))
   }), [R]), q = D - N._n, Y = q >= 0, X = [{
@@ -193,34 +193,34 @@ function w(e) {
         removeCount: q
       })
     }) : null, L ? (0, r.jsxs)("div", {
-      className: S.requiredPermissionsBanner,
+      className: E.requiredPermissionsBanner,
       children: [(0, r.jsx)(c.d3s, {
         size: "sm",
         color: "currentColor",
-        className: S.icon
+        className: E.icon
       }), (0, r.jsx)("span", {
-        className: S.message,
+        className: E.message,
         children: I.intl.format(I.t["2889Gh"], {})
       }), (0, r.jsx)(c.zxk, {
         color: c.zxk.Colors.PRIMARY,
         onClick: K,
         size: c.zxk.Sizes.SMALL,
-        className: S.addButton,
+        className: E.addButton,
         children: I.intl.string(I.t["HO/oXl"])
       })]
     }) : null, X.map((e, t) => {
-      let n = t => (0, r.jsx)(c.zxk, T(E({}, t), {
+      let n = t => (0, r.jsx)(c.zxk, T(S({}, t), {
           color: c.zxk.Colors.PRIMARY,
           disabled: Y || !M,
           onClick: e.buttonClick,
           size: c.zxk.Sizes.TINY,
-          className: S.addButton,
+          className: E.addButton,
           children: e.buttonText
         })),
         i = null;
       return M ? Y && (i = I.intl.string(I.t.XTwtW1)) : i = null != l ? I.intl.string(I.t.tybdam) : I.intl.string(I.t.z2hjk5), (0, r.jsx)(_.Z, {
         bar: (0, r.jsx)(c.ua7, {
-          tooltipClassName: S.tooltip,
+          tooltipClassName: E.tooltip,
           text: i,
           shouldShow: null != i,
           children: e => n(e)
@@ -228,7 +228,7 @@ function w(e) {
         inModal: O,
         title: e.title,
         children: (0, r.jsx)("div", {
-          className: O ? void 0 : S.listContainer,
+          className: O ? void 0 : E.listContainer,
           children: (0, r.jsx)(v.Z, {
             guildId: j,
             commandId: l,
@@ -245,8 +245,8 @@ function w(e) {
 
 function P(e) {
   let t = (0, j.w)(e);
-  return T(E({}, t), {
-    results: t.results.map(e => T(E({}, e), {
+  return T(S({}, t), {
+    results: t.results.map(e => T(S({}, e), {
       type: d.Kw.CHANNEL
     }))
   })
@@ -254,10 +254,10 @@ function P(e) {
 
 function Z(e) {
   let t = (0, O.U)(e);
-  return T(E({}, t), {
-    results: t.results.roles.map(e => T(E({}, e), {
+  return T(S({}, t), {
+    results: t.results.roles.map(e => T(S({}, e), {
       type: d.Kw.ROLE
-    })).concat(t.results.members.map(e => T(E({}, e), {
+    })).concat(t.results.members.map(e => T(S({}, e), {
       type: d.Kw.USER
     })))
   })

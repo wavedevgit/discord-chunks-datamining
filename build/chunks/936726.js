@@ -56,13 +56,13 @@ function I(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = e => {
+let E = e => {
   if (null == e) return null;
   let t = new g.Z(e);
   return O.ZP.getUserTag(t)
 };
 
-function E(e, t) {
+function S(e, t) {
   return null != t && /^data:/.test(t) ? t : (0, h.ov)({
     id: e.id,
     avatar: t,
@@ -82,7 +82,7 @@ function T(e) {
     onToggleExpand: w
   } = e, [P, Z] = i.useState(!1), [k] = i.useState(new s.V7);
   i.useEffect(() => () => k.stop(), [k]);
-  let A = i.useMemo(() => E(n, n.avatar), [n]),
+  let A = i.useMemo(() => S(n, n.avatar), [n]),
     D = i.useCallback(() => {
       let e = "".concat((0, a.K0)(!1)).concat(y.ANM.WEBHOOK_INTEGRATION(n.id, n.token));
       (0, x.JG)(e)
@@ -120,7 +120,7 @@ function T(e) {
   null != n.user ? L.push({
     icon: c.T39,
     text: _.intl.formatToPlainString(_.t["7EcUbm"], {
-      user: S(n.user),
+      user: E(n.user),
       timestamp: j.default.extractTimestamp(n.id)
     })
   }) : L.push({
@@ -148,7 +148,7 @@ function T(e) {
                 avatar: e
               })
             },
-            makeURL: e => E(n, e),
+            makeURL: e => S(n, e),
             imageClassName: C.avatarUploaderInner,
             showIcon: !0
           }), null != T.avatar && "" !== T.avatar ? (0, r.jsx)(c.Text, {

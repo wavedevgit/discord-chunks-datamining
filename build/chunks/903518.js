@@ -1,21 +1,22 @@
 /** Chunk was on 58227 **/
 n.d(t, {
-  Y: () => r
+  Y: () => s
 });
-var l = n(700785),
-  i = n(981631);
+var l = n(601964),
+  i = n(700785),
+  r = n(981631);
 
-function r(e, t) {
-  return !!(e.isOwner(t) || l.BT({
-    permission: i.Plq.ADMINISTRATOR,
+function s(e, t) {
+  return !!((0, l.eM)(e, t) || i.BT({
+    permission: r.Plq.ADMINISTRATOR,
     context: e,
     user: t
-  })) || l.BT({
-    permission: i.Plq.MANAGE_GUILD,
+  })) || i.BT({
+    permission: r.Plq.MANAGE_GUILD,
     context: e,
     user: t
-  }) && l.BT({
-    permission: i.Plq.MANAGE_ROLES,
+  }) && i.BT({
+    permission: r.Plq.MANAGE_ROLES,
     context: e,
     user: t
   })

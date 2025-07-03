@@ -11,6 +11,6 @@ function a(e) {
     var n;
     if (null == e) return !1;
     let t = l.Z.getGuild(e);
-    return null != (n = null == t ? void 0 : t.hasFeature(r.oNc.HUB)) && n
+    return null != (n = null == t ? void 0 : t.features.has(r.oNc.HUB)) && n
   }, [e])
 }

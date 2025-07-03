@@ -42,7 +42,7 @@ function b(e) {
     }), (0, r.jsx)(c.Text, {
       variant: "text-md/normal",
       className: j.guildName,
-      children: i.toString()
+      children: i.name
     }), (0, r.jsx)(p.Z, {
       direction: p.Z.Directions.RIGHT,
       className: j.guildArrow

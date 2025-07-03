@@ -35,5 +35,5 @@ function d(e, t) {
       }
       return e
     }({}, t))
-  }) : (null == a ? void 0 : a.hasFeature(o.oNc.PRODUCTS_AVAILABLE_FOR_PURCHASE)) === !0 ? (0, l.Z)(o.Z5c.GUILD_PRODUCT(e, t)) : (0, l.Z)(o.Z5c.CHANNEL(e))
+  }) : (null == a ? void 0 : a.features.has(o.oNc.PRODUCTS_AVAILABLE_FOR_PURCHASE)) ? (0, l.Z)(o.Z5c.GUILD_PRODUCT(e, t)) : (0, l.Z)(o.Z5c.CHANNEL(e))
 }

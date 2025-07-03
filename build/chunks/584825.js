@@ -1,11 +1,11 @@
 /** Chunk was on 68024 **/
 n.d(t, {
   GG: () => T,
-  HQ: () => f,
+  HQ: () => A,
   JH: () => g,
   QV: () => R,
   YB: () => m,
-  _1: () => A,
+  _1: () => f,
   _k: () => O,
   jO: () => I,
   oC: () => P,
@@ -108,7 +108,7 @@ let _ = [],
       }
     }
   },
-  A = () => {
+  f = () => {
     let [e, t] = (0, o.Z)(s.AE), {
       loading: n,
       error: r
@@ -119,7 +119,7 @@ let _ = [],
       archiveSubscriptionListing: e
     }
   },
-  f = () => {
+  A = () => {
     let [e, t] = r.useState(!1), [n, i] = r.useState(null);
     return {
       error: n,

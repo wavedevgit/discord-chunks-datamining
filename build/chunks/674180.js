@@ -16,7 +16,7 @@ var r = n(73800),
 let d = e => {
     let t = (0, a.Z)();
     r.useEffect(() => {
-      null != e && e.hasFeature(u.oNc.CREATOR_MONETIZABLE_RESTRICTED) && s.Z.getMonetizationRestrictionsFetchState(e.id) === s.M.NOT_FETCHED && o.Xj(e.id, {
+      null != e && e.features.has(u.oNc.CREATOR_MONETIZABLE_RESTRICTED) && s.Z.getMonetizationRestrictionsFetchState(e.id) === s.M.NOT_FETCHED && o.Xj(e.id, {
         signal: t
       })
     }, [e, t]);
@@ -37,7 +37,7 @@ let d = e => {
         restrictionsLoading: a
       } = d(n);
     return {
-      shouldHideGuildPurchaseEntryPoints: !((null == n ? void 0 : n.hasFeature(u.oNc.CREATOR_MONETIZABLE)) || (null == n ? void 0 : n.hasFeature(u.oNc.CREATOR_MONETIZABLE_PROVISIONAL))) || (a ? null == (t = null == n ? void 0 : n.hasFeature(u.oNc.CREATOR_MONETIZABLE_RESTRICTED)) || t : (0, c.uq)(r)),
+      shouldHideGuildPurchaseEntryPoints: !((null == n ? void 0 : n.features.has(u.oNc.CREATOR_MONETIZABLE)) || (null == n ? void 0 : n.features.has(u.oNc.CREATOR_MONETIZABLE_PROVISIONAL))) || (a ? null == (t = null == n ? void 0 : n.features.has(u.oNc.CREATOR_MONETIZABLE_RESTRICTED)) || t : (0, c.uq)(r)),
       restrictionsLoading: a
     }
   },
@@ -48,8 +48,8 @@ let d = e => {
         restrictions: r,
         restrictionsLoading: a
       } = d(n),
-      o = a ? null == (t = null == n ? void 0 : n.hasFeature(u.oNc.CREATOR_MONETIZABLE_RESTRICTED)) || t : (0, c.Q6)(r),
-      s = !!(null == n ? void 0 : n.hasFeature(u.oNc.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING));
+      o = a ? null == (t = null == n ? void 0 : n.features.has(u.oNc.CREATOR_MONETIZABLE_RESTRICTED)) || t : (0, c.Q6)(r),
+      s = !!(null == n ? void 0 : n.features.has(u.oNc.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING));
     return {
       shouldRestrictUpdatingCreatorMonetizationSettings: o || s,
       allowSelfRemoveMonetization: !o,

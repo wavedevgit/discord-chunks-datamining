@@ -11,7 +11,7 @@ var r = n(442837),
   l = n(981631);
 
 function c(e) {
-  let t = null == e ? void 0 : e.hasFeature(l.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL),
+  let t = null == e ? void 0 : e.features.has(l.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL),
     n = (0, r.e7)([s.Z, a.default, i.ZP], () => {
       if (null == e) return;
       let t = s.Z.getRequest(e.id),

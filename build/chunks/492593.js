@@ -55,8 +55,8 @@ let g = function(e) {
     childrenRepliedMessage: h,
     childrenExecutedCommand: O,
     childrenHeader: y,
-    childrenSystemMessage: v,
-    childrenButtons: j,
+    childrenSystemMessage: j,
+    childrenButtons: v,
     childrenMessageContent: P,
     childrenAccessories: x,
     messageRef: C,
@@ -69,9 +69,9 @@ let g = function(e) {
     hasThread: S,
     isSystemMessage: E,
     hasReply: N,
-    author: Z,
-    onMouseEnter: R,
-    onMouseLeave: T
+    author: T,
+    onMouseEnter: Z,
+    onMouseLeave: R
   } = e, _ = function(e, t) {
     if (null == e) return {};
     var n, r, l = function(e, t) {
@@ -87,14 +87,14 @@ let g = function(e) {
     }
     return l
   }(e, ["className", "compact", "contentOnly", "zalgo", "preview", "disableInteraction", "childrenRepliedMessage", "childrenExecutedCommand", "childrenHeader", "childrenSystemMessage", "childrenButtons", "childrenMessageContent", "childrenAccessories", "messageRef", "focusProps", "hasThread", "isSystemMessage", "hasReply", "author", "onMouseEnter", "onMouseLeave"]);
-  let k = (0, u.ZP)(null == Z ? void 0 : Z.guildId, null == Z ? void 0 : Z.authorId) && (0, c.S2)(Z),
+  let k = (0, u.ZP)(null == T ? void 0 : T.guildId, null == T ? void 0 : T.authorId) && (0, c.S2)(T),
     [I, M] = l.useState(!1),
     D = l.useCallback(e => {
-      M(!0), null == R || R(e)
-    }, [R]),
+      M(!0), null == Z || Z(e)
+    }, [Z]),
     A = l.useCallback(e => {
-      M(!1), null == T || T(e)
-    }, [T]),
+      M(!1), null == R || R(e)
+    }, [R]),
     L = (0, r.jsx)(s.d.Provider, {
       value: {
         animate: I,
@@ -121,10 +121,10 @@ let g = function(e) {
           onMouseLeave: A,
           children: [h, O, (0, r.jsxs)("div", {
             className: d.contents,
-            children: [v, y, null == v && P]
-          }), x, null != j ? (0, r.jsx)("div", {
+            children: [j, y, null == j && P]
+          }), x, null != v ? (0, r.jsx)("div", {
             className: d.buttonContainer,
-            children: j
+            children: v
           }) : null]
         }))
       }))

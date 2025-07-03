@@ -41,14 +41,14 @@ function p(e) {
     stopPropagation: v = !1,
     ariaLabel: O
   } = e, g = o.useRef(null), {
-    analyticsLocations: h
-  } = (0, u.ZP)(i.Z.USERNAME), m = (0, a.ZP)(p, null == t ? void 0 : t.id), y = o.useCallback(e => {
+    analyticsLocations: m
+  } = (0, u.ZP)(i.Z.USERNAME), h = (0, a.ZP)(p, null == t ? void 0 : t.id), y = o.useCallback(e => {
     let n = c.Z.getChannel(r);
     null != n && null != t && (0, d.Pv)(e, t, n)
   }, [t, r]);
   return o.useCallback(e => (o, i) => {
     let a = null == e ? void 0 : e.colorStrings,
-      c = m && null != a && null != a.primaryColor && null != a.secondaryColor,
+      c = h && null != a && null != a.primaryColor && null != a.secondaryColor,
       d = t => {
         var r, i;
         return (0, n.jsx)(l.rz2, (r = f({}, null != t ? t : {}), i = i = {
@@ -74,7 +74,7 @@ function p(e) {
         v && null != t && t.stopPropagation(), e(t)
       };
     return (0, n.jsx)(u.Gt, {
-      value: h,
+      value: m,
       children: null != t ? (0, n.jsx)(s.Z, {
         targetElementRef: g,
         user: t,
@@ -107,5 +107,5 @@ function p(e) {
         }
       }) : d(void 0)
     }, i)
-  }, [h, t, r, p, b, y, v, O, m])
+  }, [m, t, r, p, b, y, v, O, h])
 }

@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(442837),
   o = n(481060),
-  a = n(235820),
-  s = n(592125),
+  s = n(235820),
+  a = n(592125),
   c = n(944486),
   u = n(455199);
 n(288552);
@@ -19,7 +19,7 @@ function f(e) {
   let {
     closePopout: t,
     onSelect: n
-  } = e, i = (0, l.e7)([s.Z, c.Z], () => s.Z.getChannel(c.Z.getChannelId())), {
+  } = e, i = (0, l.e7)([a.Z, c.Z], () => a.Z.getChannel(c.Z.getChannelId())), {
     everyoneFilter: p,
     roleFilter: f,
     guildFilter: g
@@ -44,7 +44,7 @@ function f(e) {
       id: "Everyone",
       label: h.intl.string(h.t.cdyUsb),
       action: function() {
-        a.Z.setGuildFilter({
+        s.Z.setGuildFilter({
           everyoneFilter: !p
         })
       },
@@ -53,7 +53,7 @@ function f(e) {
       id: "Roles",
       label: h.intl.string(h.t.lZejCg),
       action: function() {
-        a.Z.setGuildFilter({
+        s.Z.setGuildFilter({
           roleFilter: !f
         })
       },
@@ -62,7 +62,7 @@ function f(e) {
       id: "All Servers",
       label: h.intl.string(h.t.GWMA6u),
       action: function() {
-        a.Z.setGuildFilter({
+        s.Z.setGuildFilter({
           guildFilter: g === d.NgX.THIS_SERVER ? d.NgX.ALL_SERVERS : d.NgX.THIS_SERVER
         })
       },

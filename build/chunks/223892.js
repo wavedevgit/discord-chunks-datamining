@@ -74,7 +74,7 @@ function c(e) {
   }, {
     autoTrackExposure: !1
   });
-  return null != e && e.hasFeature(i.oNc.CREATOR_MONETIZABLE_WHITEGLOVE) && t
+  return null != e && e.features.has(i.oNc.CREATOR_MONETIZABLE_WHITEGLOVE) && t
 }
 
 function u(e) {
@@ -83,7 +83,7 @@ function u(e) {
   } = r.AC.getCurrentConfig({
     location: "e3bb71_8"
   });
-  return null != e && e.hasFeature(i.oNc.CREATOR_MONETIZABLE_WHITEGLOVE) && t
+  return null != e && e.features.has(i.oNc.CREATOR_MONETIZABLE_WHITEGLOVE) && t
 }
 
 function d(e) {

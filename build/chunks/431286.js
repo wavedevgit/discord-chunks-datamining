@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(636977),
   o = n(442837),
-  a = n(704215),
-  s = n(952265),
+  s = n(704215),
+  a = n(952265),
   c = n(481060),
   u = n(570140),
   d = n(266454),
@@ -36,11 +36,11 @@ function j() {
     enabled: j
   } = (0, m.hl)({
     location: "virtual_currency_announcement_modal"
-  }), [E, S] = (0, h.US)(j ? [a.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL] : [], ..._.b.useSelectedDismissibleContent), x = (0, c.s9z)(c.JQI);
+  }), [E, S] = (0, h.US)(j ? [s.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL] : [], ..._.b.useSelectedDismissibleContent), x = (0, c.s9z)(c.JQI);
   i.useEffect(() => {
-    j && !t && E === a.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL && (e || x || (u.Z.dispatch({
+    j && !t && E === s.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL && (e || x || (u.Z.dispatch({
       type: "VIRTUAL_CURRENCY_ONBOARDING_MODAL_OPEN"
-    }), (0, s.ZD)(async () => {
+    }), (0, a.ZD)(async () => {
       let {
         AnnouncementModal: e
       } = await n.e("86653").then(n.bind(n, 993318));
@@ -55,10 +55,10 @@ function j() {
           transitionState: i,
           onClose: o,
           ctaOnClick: () => {
-            S(y.L.TAKE_ACTION), (0, d.Q3)(a.z.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK, {
+            S(y.L.TAKE_ACTION), (0, d.Q3)(s.z.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK, {
               dismissAction: y.L.INDIRECT_ACTION,
               groupName: y.R.VIRTUAL_CURRENCY_ONBOARDING
-            }), (0, d.Q3)(a.z.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK, {
+            }), (0, d.Q3)(s.z.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK, {
               dismissAction: y.L.INDIRECT_ACTION,
               groupName: y.R.VIRTUAL_CURRENCY_ONBOARDING
             }), (0, g.Y)({

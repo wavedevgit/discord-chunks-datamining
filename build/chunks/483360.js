@@ -321,7 +321,7 @@ function eH(e, t) {
   let n = t[e.guild_id];
   if (null == n) {
     var r;
-    n = t[e.guild_id] = null == (r = j.Z.getGuild(e.guild_id)) ? void 0 : r.toString().toLocaleLowerCase()
+    n = t[e.guild_id] = null == (r = j.Z.getGuild(e.guild_id)) ? void 0 : r.name.toLocaleLowerCase()
   }
   return n
 }
@@ -547,7 +547,7 @@ let eK = (0, W.oH)((e, t, n) => {
           type: et.h8.GUILD,
           record: e,
           score: eD(n, a[e.id]),
-          comparator: e.toString(),
+          comparator: e.name,
           sortable: t
         })
       }
@@ -834,7 +834,7 @@ let eK = (0, W.oH)((e, t, n) => {
         exactQuery: RegExp("^".concat(X.Z.escape(r)), "i"),
         containQuery: RegExp(X.Z.escape(r), "i"),
         queryLower: r
-      }, a = (0, E.s)(n.id) && !n.hasFeature(ee.oNc.HUB), o = n.hasFeature(ee.oNc.COMMUNITY), s = (0, g.t)(n) && n.hasFeature(ee.oNc.COMMUNITY), l = [{
+      }, a = (0, E.s)(n.id) && !n.features.has(ee.oNc.HUB), o = n.features.has(ee.oNc.COMMUNITY), s = (0, g.t)(n) && n.features.has(ee.oNc.COMMUNITY), l = [{
         id: en.HY.SERVER_GUIDE,
         name: er.intl.string(er.t.VbpLyc)
       }, {

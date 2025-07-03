@@ -21,8 +21,8 @@ var l = n(442837),
   h = n(709586),
   O = n(626135),
   y = n(524444),
-  v = n(981631),
-  j = n(176505),
+  j = n(981631),
+  v = n(176505),
   P = n(388032),
   x = n(854422);
 
@@ -65,29 +65,29 @@ let S = e => {
     name: S
   } = t;
   (0, i.ZP)(() => {
-    O.default.track(v.rMx.OPEN_POPOUT, C({
+    O.default.track(j.rMx.OPEN_POPOUT, C({
       type: "Role Icon Popout",
       guild_id: n.id
     }, (0, s.v_)(g.Z.getChannel(b.Z.getChannelId(n.id)))))
   });
   let E = (0, l.e7)([f.Z], () => null != t.roleId ? f.Z.getRole(n.id, t.roleId) : void 0),
     N = (0, p.Z)(E),
-    Z = N ? P.intl.formatToPlainString(P.t.t0928f, {
+    T = N ? P.intl.formatToPlainString(P.t.t0928f, {
       name: S
     }) : P.intl.formatToPlainString(P.t.UDDkGx, {
       name: S
     }),
-    R = w(C({}, t), {
+    Z = w(C({}, t), {
       src: null == t.src ? t.src : (0, u.o)(t.src, 40),
       size: 40
     }),
-    T = N ? () => {
-      (0, m.uL)(v.Z5c.CHANNEL(n.id, j.oC.ROLE_SUBSCRIPTIONS))
+    R = N ? () => {
+      (0, m.uL)(j.Z5c.CHANNEL(n.id, v.oC.ROLE_SUBSCRIPTIONS))
     } : () => {
       (0, d.f)({
         guildId: n.id,
         location: {
-          section: v.jXE.ROLE_ICON_POPOUT
+          section: j.jXE.ROLE_ICON_POPOUT
         }
       })
     };
@@ -99,7 +99,7 @@ let S = e => {
           className: x.mainContent,
           children: [(0, r.jsx)("div", {
             className: x.roleIconContainer,
-            children: (0, r.jsx)(c.Z, w(C({}, R), {
+            children: (0, r.jsx)(c.Z, w(C({}, Z), {
               enableTooltip: !1,
               className: x.__invalid_roleIcon,
               enableHeight: !1
@@ -114,7 +114,7 @@ let S = e => {
               })
             }), (0, r.jsx)(o.Text, {
               variant: "text-sm/normal",
-              children: Z
+              children: T
             })]
           })]
         }), (0, r.jsxs)(o.zxk, {
@@ -123,7 +123,7 @@ let S = e => {
           className: x.ctaButton,
           innerClassName: x.ctaButtonContent,
           fullWidth: !0,
-          onClick: T,
+          onClick: R,
           autoFocus: !0,
           children: [(0, r.jsx)(h.Z, {
             width: 14,
