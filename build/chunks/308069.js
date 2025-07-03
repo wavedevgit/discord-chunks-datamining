@@ -3,9 +3,9 @@ n.d(t, {
   Z: () => j
 });
 var r = n(255367),
-  s = n(73800),
-  o = n(120356),
-  a = n.n(o),
+  o = n(73800),
+  s = n(120356),
+  a = n.n(s),
   i = n(405499),
   l = n(481060),
   c = n(617136),
@@ -22,19 +22,19 @@ let j = e => {
   let {
     quest: t,
     expansionSpring: n,
-    onCtxMenuSelect: o,
+    onCtxMenuSelect: s,
     onCtxMenuOpen: j,
-    onCtxMenuClose: v,
-    useReducedMotion: _,
+    onCtxMenuClose: _,
+    useReducedMotion: v,
     isExpanded: y,
     isExpansionAnimationComplete: C
-  } = e, O = (0, u.aM)(), E = s.useCallback(() => {
+  } = e, O = (0, u.aM)(), E = o.useCallback(() => {
     (0, g.openDisclosureModal)(t, {
       content: d.jn.QUEST_BAR_V2,
       ctaContent: c.jZ.OPEN_DISCLOSURE,
       sourceQuestContent: d.jn.QUEST_BAR_V2
     })
-  }, [t]), S = s.useCallback(() => {
+  }, [t]), S = o.useCallback(() => {
     (0, p.nc)(t, {
       content: d.jn.QUEST_BAR_V2,
       ctaContent: c.jZ.OPEN_GAME_LINK,
@@ -75,7 +75,7 @@ let j = e => {
       expansionSpring: n,
       isFullyExpanded: w,
       partnerBranding: P,
-      useReducedMotion: _
+      useReducedMotion: v
     }), (0, r.jsxs)(i.animated.div, {
       className: b.promotedBadgeWrapper,
       style: {
@@ -97,8 +97,8 @@ let j = e => {
         })]
       }), (0, r.jsx)(f.r, {
         onOpen: j,
-        onClose: v,
-        onSelect: o,
+        onClose: _,
+        onSelect: s,
         questContent: d.jn.QUEST_BAR_V2,
         quest: t,
         shouldShowDisclosure: !0,

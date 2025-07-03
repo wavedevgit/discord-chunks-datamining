@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => p
 });
 var r = n(255367),
-  s = n(73800),
-  o = n(113434),
+  o = n(73800),
+  s = n(113434),
   a = n(308069),
   i = n(613087),
   l = n(457153),
@@ -23,14 +23,14 @@ let p = function(e) {
     onCtxMenuSelection: h,
     quest: b,
     useReducedMotion: j,
-    collapsedHeight: v
-  } = e, _ = s.useRef(null), y = s.useRef(null), C = (null == (t = b.userStatus) ? void 0 : t.enrolledAt) != null, O = (0, o.Rf)(b);
+    collapsedHeight: _
+  } = e, v = o.useRef(null), y = o.useRef(null), C = (null == (t = b.userStatus) ? void 0 : t.enrolledAt) != null, O = (0, s.Rf)(b);
   return (0, r.jsxs)(i.p, {
     expandedContentRef: n,
-    collapsedContentRef: _,
+    collapsedContentRef: v,
     expansionSpring: p,
     children: [(0, r.jsx)(l.Z, {
-      ref: _,
+      ref: v,
       className: d.content,
       expansionSpring: p,
       isExpanded: m,
@@ -41,7 +41,7 @@ let p = function(e) {
     }), (0, r.jsx)(c.Z, {
       expansionSpring: p,
       className: d.content,
-      collapsedHeight: v,
+      collapsedHeight: _,
       onCtxMenuOpen: g,
       onCtxMenuClose: x,
       onCtxMenuSelect: h,

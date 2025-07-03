@@ -4,9 +4,9 @@ n.d(t, {
   y: () => w
 }), n(388685);
 var r = n(255367),
-  s = n(73800),
-  o = n(120356),
-  a = n.n(o),
+  o = n(73800),
+  s = n(120356),
+  a = n.n(s),
   i = n(442837),
   l = n(780384),
   c = n(481060),
@@ -20,8 +20,8 @@ var r = n(255367),
   h = n(918701),
   b = n(475595),
   j = n(667105),
-  v = n(981631),
-  _ = n(388032),
+  _ = n(981631),
+  v = n(388032),
   y = n(912621),
   C = n(708901);
 
@@ -48,16 +48,16 @@ function E(e) {
   var t;
   let {
     questId: n,
-    errorHints: o,
+    errorHints: s,
     transitionState: E,
     onClose: w,
     sourceQuestContent: P
   } = e, T = (0, g.sf)(n);
   null == T && w();
-  let [N, A] = (0, s.useState)(o), R = (0, g.KX)(), k = (0, m.O5)(), B = null == (t = (0, f.WD)()) ? void 0 : t.getId(), I = (0, i.e7)([u.Z], () => u.Z.useReducedMotion), q = (0, j.g2)({
+  let [N, A] = (0, o.useState)(s), R = (0, g.KX)(), k = (0, m.O5)(), B = null == (t = (0, f.WD)()) ? void 0 : t.getId(), I = (0, i.e7)([u.Z], () => u.Z.useReducedMotion), q = (0, j.g2)({
     useReducedMotion: I,
     className: y.colorTransition
-  }), D = N.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), Q = (0, h.Bz)(T), V = (0, i.e7)([p.Z], () => p.Z.getState().theme), L = (0, l.wj)(V) ? v.BRd.DARK : v.BRd.LIGHT, {
+  }), D = N.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), Q = (0, h.Bz)(T), V = (0, i.e7)([p.Z], () => p.Z.getState().theme), L = (0, l.wj)(V) ? _.BRd.DARK : _.BRd.LIGHT, {
     startConsoleQuest: M,
     startingConsoleQuest: W
   } = (0, g.GI)({
@@ -98,7 +98,7 @@ function E(e) {
         })]
       }), (0, r.jsx)(c.X6q, {
         variant: "heading-xl/bold",
-        children: _.intl.string(_.t.W5lmKi)
+        children: v.intl.string(v.t.W5lmKi)
       }), (0, r.jsx)(c.Text, {
         variant: "text-sm/medium",
         color: "header-secondary",
@@ -112,7 +112,7 @@ function E(e) {
         children: [(0, r.jsx)(c.Text, {
           variant: "eyebrow",
           color: "header-secondary",
-          children: _.intl.string(_.t["+/hZMz"])
+          children: v.intl.string(v.t["+/hZMz"])
         }), (0, r.jsxs)(c.P3F, {
           className: a()(y.refreshWrapper, {
             [y.disabled]: W
@@ -122,7 +122,7 @@ function E(e) {
             variant: "text-sm/medium",
             color: "currentColor",
             className: y.colorTransition,
-            children: _.intl.string(_.t.wzzjk5)
+            children: v.intl.string(v.t.wzzjk5)
           })]
         })]
       }), (0, r.jsxs)("div", {
@@ -131,12 +131,12 @@ function E(e) {
           icon: (0, r.jsx)(c.pzj, {
             size: "sm"
           }),
-          text: _.intl.string(_.t.br3uIi)
+          text: v.intl.string(v.t.br3uIi)
         }), (0, r.jsx)(S, {
           icon: (0, r.jsx)(c.iWm, {
             size: "sm"
           }),
-          text: _.intl.string(_.t.XF4wuL),
+          text: v.intl.string(v.t.XF4wuL),
           errors: Q ? void 0 : D.map(e => e.message),
           gameTile: Q ? (0, r.jsx)(c.ua7, {
             "aria-label": T.config.messages.gameTitle,
@@ -148,7 +148,7 @@ function E(e) {
               }), (0, r.jsx)(c.Text, {
                 variant: "text-xs/normal",
                 color: "text-muted",
-                children: _.intl.string(_.t.STpNEB)
+                children: v.intl.string(v.t.STpNEB)
               })]
             }),
             children: e => {
@@ -177,7 +177,7 @@ function E(e) {
         size: c.PhG.MIN,
         onClick: w,
         className: y.footerCloseButton,
-        children: _.intl.string(_.t.cpT0Cg)
+        children: v.intl.string(v.t.cpT0Cg)
       }), (0, r.jsx)(c.zxk, {
         look: c.iLD.LINK,
         color: c.Ttl.PRIMARY,
@@ -191,7 +191,7 @@ function E(e) {
             sourceQuestContent: P
           })
         },
-        children: _.intl.string(_.t["qiS+xs"])
+        children: v.intl.string(v.t["qiS+xs"])
       })]
     })]
   })
@@ -201,9 +201,9 @@ function S(e) {
   let {
     icon: t,
     text: n,
-    errors: s = [],
-    gameTile: o
-  } = e, i = s.length > 0, l = i ? c._3e : c.B_b;
+    errors: o = [],
+    gameTile: s
+  } = e, i = o.length > 0, l = i ? c._3e : c.B_b;
   return (0, r.jsxs)("div", {
     className: y.connectionRow,
     children: [(0, r.jsxs)("div", {
@@ -219,7 +219,7 @@ function S(e) {
         })]
       }), (0, r.jsxs)("div", {
         className: y.connectionRowHeaderContent,
-        children: [o, (0, r.jsx)(l, {
+        children: [s, (0, r.jsx)(l, {
           color: "currentColor",
           size: "sm",
           className: a()({
@@ -230,7 +230,7 @@ function S(e) {
       })]
     }), (0, r.jsx)("div", {
       className: y.errorsContainer,
-      children: s.map(e => (0, r.jsxs)("div", {
+      children: o.map(e => (0, r.jsxs)("div", {
         className: y.errorRow,
         children: [(0, r.jsx)(c.aNP, {
           size: "sm",

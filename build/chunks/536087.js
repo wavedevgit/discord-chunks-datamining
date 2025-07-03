@@ -1,4 +1,7 @@
-/** Chunk was on 88622 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
-  hidden: "hidden__7d7b6"
+  hidden: "hidden__7d7b6",
+  image: "image__7d7b6",
+  video: "video__7d7b6"
 }

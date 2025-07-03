@@ -3,9 +3,9 @@ n.d(t, {
   Z: () => q
 }), n(784620), n(973216);
 var r = n(255367),
-  s = n(73800),
-  o = n(120356),
-  a = n.n(o),
+  o = n(73800),
+  s = n(120356),
+  a = n.n(s),
   i = n(405499),
   l = n(780384),
   c = n(481060),
@@ -19,8 +19,8 @@ var r = n(255367),
   h = n(918701),
   b = n(974390),
   j = n(475595),
-  v = n(18578),
-  _ = n(623249),
+  _ = n(18578),
+  v = n(623249),
   y = n(685613),
   C = n(670638),
   O = n(341907),
@@ -68,31 +68,31 @@ function B(e) {
   var t;
   let {
     quest: n,
-    errorHints: o,
+    errorHints: s,
     warningHints: a,
     isDarkTheme: l,
     sourceQuestContent: d
   } = e, {
     ref: m,
     height: f = 0
-  } = (0, u.ZP)([o]), x = (null == (t = n.userStatus) ? void 0 : t.completedAt) != null, h = (0, g.z)(n), {
+  } = (0, u.ZP)([s]), x = (null == (t = n.userStatus) ? void 0 : t.completedAt) != null, h = (0, g.z)(n), {
     type: b,
     hints: j
-  } = s.useMemo(() => x || h ? {
+  } = o.useMemo(() => x || h ? {
     type: 2,
     hints: []
-  } : o.length > 0 ? {
+  } : s.length > 0 ? {
     type: 0,
-    hints: o.map(e => e.message)
+    hints: s.map(e => e.message)
   } : a.length > 0 ? {
     type: 1,
     hints: a
   } : {
     type: 2,
     hints: []
-  }, [o, x, h, a]), v = 2 !== b, y = (0, c.q_F)({
-    opacity: +!!v,
-    height: v ? f : 0,
+  }, [s, x, h, a]), _ = 2 !== b, y = (0, c.q_F)({
+    opacity: +!!_,
+    height: _ ? f : 0,
     config: P.Y
   }), C = 0 === b ? c.P4T : c.d3s, O = (0, p.Lq)(T.Ilk.RED_345), E = 0 === b ? O : l ? c.TVs.colors.TEXT_DEFAULT : c.TVs.colors.WHITE;
   return (0, r.jsx)(i.animated.div, {
@@ -111,9 +111,9 @@ function B(e) {
           children: j.at(0)
         })]
       }), 0 === b && (0, r.jsx)(c.zxk, {
-        onClick: () => (0, _.y)({
+        onClick: () => (0, v.y)({
           questId: n.id,
-          errorHints: o,
+          errorHints: s,
           sourceQuestContent: d
         }),
         size: c.PhG.MIN,
@@ -132,16 +132,17 @@ function I(e) {
   let {
     quest: t,
     isHovering: n,
-    showAssets: o
-  } = e, a = s.useMemo(() => (0, j.fh)(t, j.eC.HERO_IMAGE), [t]), i = s.useMemo(() => (0, j.fh)(t, j.eC.HERO_VIDEO), [t]), l = (0, b.h)(t, w.dr.QUEST_HOME_DESKTOP), {
+    showAssets: s
+  } = e, a = o.useMemo(() => (0, j.fh)(t, j.eC.HERO_IMAGE), [t]), i = o.useMemo(() => (0, j.fh)(t, j.eC.HERO_VIDEO), [t]), l = (0, b.h)(t, w.dr.QUEST_HOME_DESKTOP), {
     onAssetLoadComplete: c
-  } = s.useContext(E.k);
+  } = o.useContext(E.k);
   return (0, r.jsx)("div", {
     className: A.heroAssetCont,
-    children: o && (0, r.jsx)(v.K, {
+    children: s && (0, r.jsx)(_.K, {
       imageAsset: null != a ? {
         asset: a,
         assetId: "QuestTileBanner",
+        alt: N.intl.string(N.t.jnijW1),
         className: A.heroAsset
       } : void 0,
       videoAsset: null != i ? {
@@ -160,13 +161,13 @@ function I(e) {
 }
 
 function q(e) {
-  var t, n, o, i, u;
+  var t, n, s, i, u;
   let {
     quest: p,
     isHovering: b,
     errorHints: j,
-    warningHints: v,
-    isVisibleInViewport: _,
+    warningHints: _,
+    isVisibleInViewport: v,
     onCtxMenuClose: w,
     onCtxMenuOpen: P,
     onCtxMenuSelect: q,
@@ -174,9 +175,9 @@ function q(e) {
   } = e, Q = (0, h.PB)(p), V = (0, d.ZP)(), L = ((0, l.wj)(V) ? T.BRd.DARK : T.BRd.LIGHT) === T.BRd.DARK, M = (0, g.tP)(p), W = (null == (t = p.userStatus) ? void 0 : t.claimedAt) != null, Z = (0, g.B6)(p.config.expiresAt, {
     month: "numeric",
     day: "numeric"
-  }), U = (null == (n = p.userStatus) ? void 0 : n.enrolledAt) != null, H = (null == (o = p.userStatus) ? void 0 : o.completedAt) != null, {
+  }), U = (null == (n = p.userStatus) ? void 0 : n.enrolledAt) != null, H = (null == (s = p.userStatus) ? void 0 : s.completedAt) != null, {
     onAssetLoadComplete: z
-  } = s.useContext(E.k), F = s.useCallback(() => {
+  } = o.useContext(E.k), F = o.useCallback(() => {
     Q && ((0, h.zi)(p) || U || (0, f.AH)(p.id, {
       questContent: x.jn.QUEST_HOME_DESKTOP,
       questContentCTA: m.jZ.ACCEPT_QUEST,
@@ -193,7 +194,7 @@ function q(e) {
       children: (0, r.jsx)(I, {
         quest: p,
         isHovering: b,
-        showAssets: _
+        showAssets: v
       })
     }), (0, r.jsx)("div", {
       className: a()(A.overlay, {
@@ -246,7 +247,7 @@ function q(e) {
             }))
           })]
         }), (0, r.jsx)(S.E, {
-          showPlaceholder: !_,
+          showPlaceholder: !v,
           width: 100,
           height: 30,
           className: A.partnerBranding,
@@ -277,7 +278,7 @@ function q(e) {
       }), (0, r.jsx)(B, {
         quest: p,
         errorHints: j,
-        warningHints: v,
+        warningHints: _,
         isDarkTheme: L,
         sourceQuestContent: D
       })]

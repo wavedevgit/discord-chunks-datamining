@@ -1,11 +1,11 @@
 /** Chunk was on 88622 **/
 n.d(t, {
-  Z: () => v
+  Z: () => _
 }), n(388685);
 var r = n(255367),
-  s = n(73800),
-  o = n(120356),
-  a = n.n(o),
+  o = n(73800),
+  s = n(120356),
+  a = n.n(s),
   i = n(617136),
   l = n(113434),
   c = n(497505),
@@ -22,32 +22,32 @@ var r = n(255367),
 function j(e) {
   var t, n;
   let {
-    quest: o,
+    quest: s,
     className: c,
     questContent: d,
     contentPosition: j,
-    rowIndex: v,
-    impressionRef: _,
+    rowIndex: _,
+    impressionRef: v,
     sourceQuestContent: y
-  } = e, [C, O] = s.useState(!1), [E, S] = s.useState([]), w = (0, l.qb)(o), P = s.useMemo(() => (0, u.q8)(o), [o]), T = (0, i._F)(), N = s.useCallback(() => {
+  } = e, [C, O] = o.useState(!1), [E, S] = o.useState([]), w = (0, l.qb)(s), P = o.useMemo(() => (0, u.q8)(s), [s]), T = (0, i._F)(), N = o.useCallback(() => {
     O(!0), T({
-      questId: o.id,
+      questId: s.id,
       event: h.rMx.QUEST_HOVER,
       properties: (0, i.mH)(d),
       sourceQuestContent: y
     }), P && (0, p.loadVideoQuestModal)()
-  }, [T, o.id, d, P, y]), A = s.useCallback(() => {
+  }, [T, s.id, d, P, y]), A = o.useCallback(() => {
     O(!1), T({
-      questId: o.id,
+      questId: s.id,
       event: h.rMx.QUEST_HOVER_OFF,
       properties: (0, i.mH)(d),
       sourceQuestContent: y
     })
-  }, [T, o.id, d, y]), R = s.useContext(f.t), {
+  }, [T, s.id, d, y]), R = o.useContext(f.t), {
     visibilityElementRef: k,
     almostVisibleInViewport: B
   } = function(e) {
-    let [t, n] = s.useState(!1), r = s.useCallback(e => {
+    let [t, n] = o.useState(!1), r = o.useCallback(e => {
       e.isIntersecting && n(!0)
     }, []);
     return {
@@ -60,9 +60,9 @@ function j(e) {
     }
   }(null != (n = null == R || null == (t = R.current) ? void 0 : t.getScrollerNode()) ? n : null);
   return (0, r.jsxs)("div", {
-    id: "quest-tile-".concat(o.id),
+    id: "quest-tile-".concat(s.id),
     ref: e => {
-      _.current = e, k.current = e
+      v.current = e, k.current = e
     },
     className: a()(b.container, c),
     onMouseEnter: N,
@@ -70,18 +70,18 @@ function j(e) {
     onFocus: N,
     onBlur: A,
     children: [(0, r.jsx)(g.Z, {
-      quest: o,
+      quest: s,
       isHovering: C,
       errorHints: E,
       warningHints: w,
       isVisibleInViewport: B,
       sourceQuestContent: y
     }), (0, r.jsx)(x.Z, {
-      quest: o,
+      quest: s,
       questContent: d,
       isHovering: C,
       contentPosition: j,
-      rowIndex: v,
+      rowIndex: _,
       onReceiveErrorHints: S,
       isVisibleInViewport: B,
       sourceQuestContent: y
@@ -89,7 +89,7 @@ function j(e) {
   })
 }
 
-function v(e) {
+function _(e) {
   return (0, r.jsx)(d.A, {
     questOrQuests: e.quest,
     questContent: e.questContent,
@@ -98,7 +98,7 @@ function v(e) {
     trackGuildAndChannelMetadata: e.questContent === c.jn.QUESTS_EMBED,
     sourceQuestContent: e.sourceQuestContent,
     children: t => {
-      var n, s;
+      var n, o;
       return (0, r.jsx)(j, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -116,17 +116,17 @@ function v(e) {
           })
         }
         return e
-      }({}, e), s = s = {
+      }({}, e), o = o = {
         impressionRef: t
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(s)).forEach(function(e) {
-        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(s, e))
+      })(Object(o)).forEach(function(e) {
+        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(o, e))
       }), n))
     }
   })
