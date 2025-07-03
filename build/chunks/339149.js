@@ -6,8 +6,8 @@ n.d(t, {
 var r, i = n(255367),
   l = n(73800),
   o = n(120356),
-  s = n.n(o),
-  a = n(748780),
+  a = n.n(o),
+  s = n(748780),
   c = n(442837),
   u = n(692547),
   d = n(215569),
@@ -126,12 +126,12 @@ class x extends l.PureComponent {
         stage: i,
         progress: l,
         total: o,
-        type: s
+        type: a
       } = n;
       if (null == l || null == o || null == i) return null;
-      let a = e[e.length - 1] / t * 1e3,
-        c = 0 !== a ? Math.max(1, (o - l) / a) : null,
-        u = S[s],
+      let s = e[e.length - 1] / t * 1e3,
+        c = 0 !== s ? Math.max(1, (o - l) / s) : null,
+        u = S[a],
         d = null != u ? Object.keys(u) : [],
         {
           unit: h,
@@ -150,13 +150,13 @@ class I extends(r = l.PureComponent) {
     this.state.animationScale.setValue(1), e()
   }
   componentWillEnter(e) {
-    a.Z.spring(this.state.animationScale, {
+    s.Z.spring(this.state.animationScale, {
       toValue: 1,
       duration: 200
     }).start(e)
   }
   componentWillLeave(e) {
-    a.Z.spring(this.state.animationScale, {
+    s.Z.spring(this.state.animationScale, {
       toValue: 0,
       duration: 200
     }).start(e)
@@ -179,13 +179,13 @@ class I extends(r = l.PureComponent) {
       isPaused: t,
       className: n
     } = this.props;
-    return (0, i.jsx)(a.Z.div, {
+    return (0, i.jsx)(s.Z.div, {
       style: {
         transform: [{
           scale: this.state.animationScale
         }]
       },
-      className: s()(n, C.progressContainer),
+      className: a()(n, C.progressContainer),
       onClick: this.handleOnClick,
       children: (0, i.jsx)(h.ua7, {
         text: this.getTooltipText(),
@@ -219,7 +219,7 @@ class I extends(r = l.PureComponent) {
   }
   constructor(...e) {
     super(...e), j(this, "state", {
-      animationScale: new a.Z.Value(0)
+      animationScale: new s.Z.Value(0)
     }), j(this, "handleOnClick", e => {
       let {
         onClick: t

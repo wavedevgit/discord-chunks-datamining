@@ -7,8 +7,8 @@ n.d(t, {
 var r, i = n(73800),
   l = n(106351),
   o = n(442837),
-  s = n(904245),
-  a = n(89892),
+  a = n(904245),
+  s = n(89892),
   c = n(601070),
   u = n(569471),
   d = n(723170),
@@ -48,7 +48,7 @@ function C() {
 }
 
 function j() {
-  let [e, t] = i.useState(!1), [n, r] = i.useState("loading"), l = C(), c = (0, o.Wu)([f.Z], () => (0, a.K)(l.map(e => f.Z.getMessages(e))), [l]), u = i.useCallback(async n => {
+  let [e, t] = i.useState(!1), [n, r] = i.useState("loading"), l = C(), c = (0, o.Wu)([f.Z], () => (0, s.K)(l.map(e => f.Z.getMessages(e))), [l]), u = i.useCallback(async n => {
     r("loading");
     let i = async () => {
       let e = !1,
@@ -61,9 +61,9 @@ function j() {
           t = o;
           break
         }
-        let a = f.Z.getMessages(i),
-          c = a.length;
-        null == i || a.loadingMore || a.hasPresent() && (a.hasFetched || a.ready) && (!(c < 50) || !a.hasMoreBefore) || (r.push(s.Z.fetchMessages({
+        let s = f.Z.getMessages(i),
+          c = s.length;
+        null == i || s.loadingMore || s.hasPresent() && (s.hasFetched || s.ready) && (!(c < 50) || !s.hasMoreBefore) || (r.push(a.Z.fetchMessages({
           channelId: i,
           limit: 50
         })), e = !0)
@@ -74,9 +74,9 @@ function j() {
       }
     }, {
       hasLoadedAny: o,
-      hasMoreOlder: a
+      hasMoreOlder: s
     } = await i();
-    o || a ? r("loaded") : r("done"), !e && l.length > 0 && t(!0)
+    o || s ? r("loaded") : r("done"), !e && l.length > 0 && t(!0)
   }, [l, e]);
   return i.useEffect(() => {
     e || 0 === l.length || u()

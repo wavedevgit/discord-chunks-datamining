@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(442837),
   o = n(481060),
-  s = n(45114),
-  a = n(110255),
+  a = n(45114),
+  s = n(110255),
   c = n(268623),
   u = n(324701),
   d = n(768943),
@@ -64,8 +64,8 @@ function y(e) {
     label: t,
     onClick: n,
     message: l,
-    Icon: s,
-    interactionType: a
+    Icon: a,
+    interactionType: s
   } = e, [c, u] = (0, i.useState)(!1);
   return (0, r.jsx)(o.ua7, {
     text: t,
@@ -78,10 +78,10 @@ function y(e) {
       onClick: e => {
         (0, h.Qz)({
           message: l,
-          interactionType: a
+          interactionType: s
         }), e.stopPropagation(), n(l)
       },
-      children: (0, r.jsx)(s, {
+      children: (0, r.jsx)(a, {
         size: c ? "sm" : "xs",
         className: g.actionIcon
       })
@@ -94,8 +94,8 @@ function v(e) {
     channel: t,
     message: n,
     label: l,
-    Icon: s,
-    Menu: a,
+    Icon: a,
+    Menu: s,
     interactionType: c
   } = e, [u, d] = (0, i.useState)(!1), [p, f] = (0, i.useState)(!1), _ = (0, i.useRef)(null);
   return (0, r.jsx)(o.yRy, {
@@ -108,7 +108,7 @@ function v(e) {
     onRequestClose: () => f(!1),
     renderPopout: e => (0, r.jsx)(o.P3F, {
       onClick: e => e.stopPropagation(),
-      children: (0, r.jsx)(a, {
+      children: (0, r.jsx)(s, {
         renderPopoutProps: e,
         channel: t,
         message: n
@@ -129,7 +129,7 @@ function v(e) {
             interactionType: c
           }), e.stopPropagation(), f(!p)
         },
-        children: (0, r.jsx)(s, b(m({}, e), {
+        children: (0, r.jsx)(a, b(m({}, e), {
           message: n,
           "aria-label": l,
           className: g.actionIcon,
@@ -145,7 +145,7 @@ let C = {
       Icon: o.dz2,
       label: f.intl.string(f.t.e6RscX),
       onClick: e => {
-        s.In(e.channel_id, {
+        a.In(e.channel_id, {
           object: p.qAy.MARK_MESSAGE_AS_READ_BUTTON,
           objectType: p.Qqv.ACK_MANUAL
         }, !0, void 0, e.id)
@@ -161,7 +161,7 @@ let C = {
         let {
           message: t,
           renderPopoutProps: n
-        } = e, i = (0, l.e7)([d.Z], () => d.Z.getSavedMessage(t.channel_id, t.id)), s = (0, c.x)({
+        } = e, i = (0, l.e7)([d.Z], () => d.Z.getSavedMessage(t.channel_id, t.id)), a = (0, c.x)({
           message: t,
           savedMessage: i
         });
@@ -189,7 +189,7 @@ let C = {
               messageId: t.id,
               displayToast: !0
             })
-          }), (0, r.jsx)(o.Clw, {}), s]
+          }), (0, r.jsx)(o.Clw, {}), a]
         }))
       }
     },
@@ -203,7 +203,7 @@ let C = {
           channel: t,
           renderPopoutProps: n
         } = e;
-        return (0, r.jsx)(a.Z, b(m({}, n), {
+        return (0, r.jsx)(s.Z, b(m({}, n), {
           channel: t,
           navId: "channel-context",
           label: f.intl.string(f.t.Xm41aW)

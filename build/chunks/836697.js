@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(442837),
   o = n(481060),
-  s = n(110924),
-  a = n(693546),
+  a = n(110924),
+  s = n(693546),
   c = n(863249),
   u = n(937111),
   d = n(914010),
@@ -23,9 +23,9 @@ function O(e) {
   let {
     onActivate: t,
     children: n
-  } = e, a = i.useRef(null), d = (0, l.e7)([u.Z], () => u.Z.hasJoinRequestCoackmark()), h = i.useCallback(() => {
+  } = e, s = i.useRef(null), d = (0, l.e7)([u.Z], () => u.Z.hasJoinRequestCoackmark()), h = i.useCallback(() => {
     c.ZP.clearCoachmark()
-  }, []), p = (0, s.Z)(d), f = i.useRef(null);
+  }, []), p = (0, a.Z)(d), f = i.useRef(null);
   return i.useEffect(() => {
     if (d && d !== p) {
       var e, n, r, i, l;
@@ -35,7 +35,7 @@ function O(e) {
     className: _.container,
     children: [(0, r.jsx)(o.yRy, {
       ref: f,
-      targetElementRef: a,
+      targetElementRef: s,
       shouldShow: d,
       renderPopout: () => (0, r.jsxs)("div", {
         className: _.popoutContainer,
@@ -87,7 +87,7 @@ function O(e) {
           return e
         }({}, e), n = n = {
           className: _.popoutAnchor,
-          ref: a
+          ref: s
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -106,7 +106,7 @@ function O(e) {
 function y(e) {
   let {
     onActivate: t
-  } = e, [n, y] = i.useState(!1), v = (0, l.e7)([d.Z], () => d.Z.getGuildId()), C = (0, l.e7)([u.Z], () => u.Z.hasFetchedRequestToJoinGuilds), j = (0, f.Z)(), E = (0, s.Z)(v), S = i.useMemo(() => {
+  } = e, [n, y] = i.useState(!1), v = (0, l.e7)([d.Z], () => d.Z.getGuildId()), C = (0, l.e7)([u.Z], () => u.Z.hasFetchedRequestToJoinGuilds), j = (0, f.Z)(), E = (0, a.Z)(v), S = i.useMemo(() => {
     let e = (0, p.qQ)({
       folderId: h.S.PENDING_JOIN_REQUESTS_FOLDER,
       folderName: b.intl.string(b.t["scsU+v"]),
@@ -117,7 +117,7 @@ function y(e) {
     return e
   }, [j, n]);
   i.useEffect(() => {
-    n && !C && a.Z.fetchRequestToJoinGuilds()
+    n && !C && s.Z.fetchRequestToJoinGuilds()
   }, [n, C]);
   let x = null != v && j.includes(v);
   return (i.useEffect(() => {

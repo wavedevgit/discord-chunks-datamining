@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(392711),
   o = n.n(l),
-  s = n(442837),
-  a = n(570140),
+  a = n(442837),
+  s = n(570140),
   c = n(45114),
   u = n(404616),
   d = n(470623),
@@ -25,7 +25,7 @@ function y(e) {
     channel: t,
     channelRecord: n,
     deleteChannel: l
-  } = e, y = (0, s.Wu)([h.Z, f.Z], () => o()(h.Z.getThreadsForParent(n.guild_id, n.id)).values().filter(e => {
+  } = e, y = (0, a.Wu)([h.Z, f.Z], () => o()(h.Z.getThreadsForParent(n.guild_id, n.id)).values().filter(e => {
     let {
       id: n
     } = e;
@@ -39,7 +39,7 @@ function y(e) {
     (0, p.ok)(e, t, _.on.INBOX)
   }, []);
   return i.useEffect(() => {
-    null == n || !t.isFullyLoaded || t.hasError || t.collapsed || 0 !== y.length || a.Z.wait(() => {
+    null == n || !t.isFullyLoaded || t.hasError || t.collapsed || 0 !== y.length || s.Z.wait(() => {
       (0, c.In)(t.channelId, {
         section: b.jXE.INBOX,
         object: b.qAy.ACK_INBOX_FORUM_NO_POSTS,

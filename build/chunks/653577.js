@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(120356),
   o = n.n(l),
-  s = n(442837),
-  a = n(481060),
+  a = n(442837),
+  s = n(481060),
   c = n(362721),
   u = n(12498),
   d = n(111028),
@@ -25,7 +25,7 @@ function _(e) {
     hovered: l,
     subtitle: _,
     onClick: O
-  } = e, y = (0, s.e7)([u.Z], () => u.Z.getChannelStatus(t)), v = null != y && y.length > 0, C = (0, c.ZP)(t, !0), j = null != _ && _.length > 0;
+  } = e, y = (0, a.e7)([u.Z], () => u.Z.getChannelStatus(t)), v = null != y && y.length > 0, C = (0, c.ZP)(t, !0), j = null != _ && _.length > 0;
   if (i.useEffect(() => {
       v && p.default.track(f.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
         channel_id: t.id,
@@ -33,10 +33,10 @@ function _(e) {
       })
     }, [v, t.id, t.guild_id]), null == t.guild_id) return null;
   let E = o()(m.statusDiv, n && C ? m.hoverable : null);
-  return v ? (0, r.jsx)(a.P3F, {
+  return v ? (0, r.jsx)(s.P3F, {
     className: E,
     onClick: C ? O : void 0,
-    children: (0, r.jsx)(a.Text, {
+    children: (0, r.jsx)(s.Text, {
       variant: "text-xs/medium",
       className: o()(m.statusText, b.markup),
       children: (0, r.jsx)(d.Z, {
@@ -45,14 +45,14 @@ function _(e) {
         })
       })
     })
-  }) : n && C && (!j || l) ? (0, r.jsxs)(a.P3F, {
+  }) : n && C && (!j || l) ? (0, r.jsxs)(s.P3F, {
     className: E,
     onClick: O,
-    children: [(0, r.jsx)(a.Text, {
+    children: [(0, r.jsx)(s.Text, {
       variant: "text-xs/medium",
       className: m.statusText,
       children: g.intl.string(g.t.Mgpxi4)
-    }), (0, r.jsx)(a.vdY, {
+    }), (0, r.jsx)(s.vdY, {
       color: "currentColor",
       className: m.pencilIcon,
       size: "xxs"

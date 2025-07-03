@@ -7,8 +7,8 @@ n(73800);
 var i = n(120356),
   l = n.n(i),
   o = n(442837),
-  s = n(481060),
-  a = n(717881),
+  a = n(481060),
+  s = n(717881),
   c = n(503438),
   u = n(850827),
   d = n(952164),
@@ -27,12 +27,12 @@ function y(e) {
     member: n,
     className: i
   } = e, o = null != n.member ? (0, m.CA)(n.member) : null;
-  return (0, r.jsx)(s.ua7, {
+  return (0, r.jsx)(a.ua7, {
     text: n.nick,
     position: "bottom",
     children: e => {
-      var a;
-      return (0, r.jsx)(s.qEK, function(e) {
+      var s;
+      return (0, r.jsx)(a.qEK, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -51,9 +51,9 @@ function y(e) {
         return e
       }({
         src: null != o ? o : n.user.getAvatarURL(t, 16),
-        size: s.EFr.SIZE_16,
+        size: a.EFr.SIZE_16,
         className: l()(i, O.partyAvatar),
-        "aria-label": null != (a = n.nick) ? a : b.ZP.getName(n.user)
+        "aria-label": null != (s = n.nick) ? s : b.ZP.getName(n.user)
       }, e))
     }
   })
@@ -110,8 +110,8 @@ let C = e => {
         onOpenSpotifyTrack: j ? d.aG : void 0,
         onOpenSpotifyArtist: j ? d.d$ : void 0,
         onOpenSpotifyAlbum: j ? d.Z5 : void 0
-      }) : (0, r.jsx)(a.Z, {
-        type: a.P.VOICE_CHANNEL,
+      }) : (0, r.jsx)(s.Z, {
+        type: s.P.VOICE_CHANNEL,
         activity: n,
         user: y,
         guildId: t.getGuildId(),
@@ -124,14 +124,14 @@ let C = e => {
     }), (0, r.jsx)("div", {
       className: O.activityActionsContainer,
       children: (0, r.jsx)(u.Z, {
-        type: a.P.VOICE_CHANNEL,
+        type: s.P.VOICE_CHANNEL,
         activity: n,
         embeddedActivity: null == l ? void 0 : l.embeddedActivity,
         user: y,
         guildId: t.getGuildId(),
         channelId: t.id,
-        color: s.zxk.Colors.PRIMARY,
-        look: s.zxk.Looks.FILLED,
+        color: a.zxk.Colors.PRIMARY,
+        look: a.zxk.Looks.FILLED,
         onAction: h
       })
     })]

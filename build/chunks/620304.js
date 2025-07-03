@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(120356),
   o = n.n(l),
-  s = n(405499),
-  a = n(793030),
+  a = n(405499),
+  s = n(793030),
   c = n(442837),
   u = n(704215),
   d = n(481060),
@@ -142,7 +142,7 @@ function w(e) {
           className: I.contentContainer,
           children: [(0, r.jsx)("div", {
             className: I.progressContainer,
-            children: (0, r.jsx)(s.animated.div, {
+            children: (0, r.jsx)(a.animated.div, {
               className: o()(I.progress, {
                 [I.progressLow]: R <= 5
               }),
@@ -152,18 +152,18 @@ function w(e) {
             className: I.textContainer,
             children: [(0, r.jsxs)("div", {
               className: I.textContentContainer,
-              children: [(0, r.jsx)(a.xv, {
+              children: [(0, r.jsx)(s.xv, {
                 className: I.text,
                 variant: "text-xs/semibold",
                 children: x.intl.string(S.default.NI6IhY)
-              }), t.premiumSubscriberCount >= w && (0, r.jsx)(a.xv, {
+              }), t.premiumSubscriberCount >= w && (0, r.jsx)(s.xv, {
                 className: I.text,
                 variant: "text-xs/semibold",
                 children: "\uD83C\uDF89"
               })]
             }), (0, r.jsxs)("div", {
               className: I.textContentContainer,
-              children: [(0, r.jsx)(a.xv, {
+              children: [(0, r.jsx)(s.xv, {
                 className: I.text,
                 variant: "text-xs/semibold",
                 children: M ? x.intl.formatToPlainString(S.default["Ehpq+/"], {

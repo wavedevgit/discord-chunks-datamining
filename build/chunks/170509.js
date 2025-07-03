@@ -1,17 +1,17 @@
 /** Chunk was on 4811 **/
 n.d(t, {
-  default: () => a
+  default: () => s
 });
 var r = n(255367);
 n(73800);
 var i = n(481060),
   l = n(933557),
   o = n(388032),
-  s = n(331884);
+  a = n(331884);
 
-function a(e) {
+function s(e) {
   var t, n, {
-      channel: a,
+      channel: s,
       category: c
     } = e,
     u = function(e, t) {
@@ -29,7 +29,7 @@ function a(e) {
       }
       return i
     }(e, ["channel", "category"]);
-  let d = (0, l.ZP)(a, !0),
+  let d = (0, l.ZP)(s, !0),
     h = (0, l.ZP)(c);
   return (0, r.jsx)(i.ConfirmModal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -56,7 +56,7 @@ function a(e) {
   }, u), n = n = {
     children: (0, r.jsx)(i.Text, {
       variant: "text-md/normal",
-      className: s.message,
+      className: a.message,
       selectable: !1,
       children: o.intl.format(o.t["iKW+jY"], {
         channelName: d,

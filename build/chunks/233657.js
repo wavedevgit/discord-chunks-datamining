@@ -7,8 +7,8 @@ n(73800);
 var i = n(442837),
   l = n(704215),
   o = n(481060),
-  s = n(239091),
-  a = n(266454),
+  a = n(239091),
+  s = n(266454),
   c = n(554747),
   u = n(306680),
   d = n(9156),
@@ -68,7 +68,7 @@ function _(e) {
       return n => (0, r.jsx)(e, b(m({}, n), {
         guildId: t.id
       }))
-    }), (0, a.Q3)(l.z.GUILD_HEADER_EVENT_UPSELL)
+    }), (0, s.Q3)(l.z.GUILD_HEADER_EVENT_UPSELL)
   }
   let j = (0, c.ZP)(t.id),
     E = j.length > 0 ? f.intl.formatToPlainString(f.t.IBdqSk, {
@@ -85,7 +85,7 @@ function _(e) {
     selected: _,
     onClick: C,
     onContextMenu: e => {
-      (0, s.jW)(e, async () => {
+      (0, a.jW)(e, async () => {
         let {
           default: e
         } = await n.e("95307").then(n.bind(n, 867757));

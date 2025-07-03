@@ -8,8 +8,8 @@ var r = n(255367),
   i = n(73800),
   l = n(442837),
   o = n(481060),
-  s = n(906732),
-  a = n(879892),
+  a = n(906732),
+  s = n(879892),
   c = n(343649),
   u = n(430824),
   d = n(713081),
@@ -72,7 +72,7 @@ function _(e, t) {
   var m;
   let {
     analyticsLocations: _
-  } = (0, s.ZP)(), [O, y] = i.useState(!1), [v, C] = i.useState(void 0), j = (0, l.e7)([h.Z], () => {
+  } = (0, a.ZP)(), [O, y] = i.useState(!1), [v, C] = i.useState(void 0), j = (0, l.e7)([h.Z], () => {
     var t, n;
     return null != (n = null == (t = h.Z.getStateForGuild(e)) ? void 0 : t.appliedBoosts) ? n : 0
   }), E = (0, l.e7)([u.Z], () => u.Z.getGuild(e)), S = Math.max((null != (m = null == E ? void 0 : E.premiumSubscriberCount) ? m : 0) - j, 0), x = i.useCallback(n => {
@@ -84,7 +84,7 @@ function _(e, t) {
       y(!1)
     })
   }, [e, t.skuId]), I = i.useCallback(e => {
-    if (e.stopPropagation(), null != E) return S < t.cost ? void(0, a.u)({
+    if (e.stopPropagation(), null != E) return S < t.cost ? void(0, s.u)({
       analyticsLocation: {
         page: f.ZY5.GUILD_POWERUPS_OVERVIEW,
         section: f.jXE.GUILD_POWERUPS_OVERVIEW_CARD

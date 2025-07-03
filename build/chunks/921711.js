@@ -8,8 +8,8 @@ n(73800);
 var i = n(120356),
   l = n.n(i),
   o = n(377171),
-  s = n(549631),
-  a = n(734143),
+  a = n(549631),
+  s = n(734143),
   c = n(915887);
 
 function u(e) {
@@ -21,8 +21,8 @@ function d(e) {
     locked: t
   } = e;
   return (0, r.jsx)("div", {
-    className: l()(c.iconItem, a.premiumChannelIcon),
-    children: (0, r.jsx)(s.Z, {
+    className: l()(c.iconItem, s.premiumChannelIcon),
+    children: (0, r.jsx)(a.Z, {
       className: c.actionIcon,
       color: t ? o.Z.CREATOR_REVENUE_LOCKED_CHANNEL_ICON : void 0
     })

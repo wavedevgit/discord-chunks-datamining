@@ -7,8 +7,8 @@ var r = n(255367),
   i = n(73800),
   l = n(120356),
   o = n.n(l),
-  s = n(525654),
-  a = n.n(s),
+  a = n(525654),
+  s = n.n(a),
   c = n(91192),
   u = n(442837),
   d = n(524437),
@@ -30,7 +30,7 @@ var r = n(255367),
   I = n(128406);
 
 function P(e) {
-  var t, n, l, s, P, w, Z;
+  var t, n, l, a, P, w, Z;
   let {
     setTab: T,
     onJump: A,
@@ -57,24 +57,24 @@ function P(e) {
     if (null == i || null == r) return;
     let o = null == (e = i.getScrollerNode()) ? void 0 : e.children;
     if (null == o) return;
-    let s = o[r];
-    if (null == s) return;
+    let a = o[r];
+    if (null == a) return;
     let {
-      scrollTop: a,
+      scrollTop: s,
       offsetHeight: c
     } = i.getScrollerState();
-    (s.offsetTop < a || s.offsetTop > a + c) && i.scrollTo({
-      to: s.offsetTop
+    (a.offsetTop < s || a.offsetTop > s + c) && i.scrollTo({
+      to: a.offsetTop
     })
-  }), s = U, P = G, i.useEffect(() => {
+  }), a = U, P = G, i.useEffect(() => {
     let e = () => {
-      let e = s.channels.find(e => !e.collapsed);
+      let e = a.channels.find(e => !e.collapsed);
       null != e && P.markChannelRead(e)
     };
     return _.S.subscribe(S.CkL.MARK_TOP_INBOX_CHANNEL_READ, e), () => {
       _.S.unsubscribe(S.CkL.MARK_TOP_INBOX_CHANNEL_READ, e)
     }
-  }, [P, s.channels]), w = G, i.useEffect(() => {
+  }, [P, a.channels]), w = G, i.useEffect(() => {
     let e = e => {
       ((0, O.isMac)() || (0, O.isMacWeb)() ? e.metaKey : e.ctrlKey) && !e.shiftKey && !e.altKey && "z" === e.key && w.undoMarkChannelRead()
     };
@@ -106,7 +106,7 @@ function P(e) {
       }), (0, r.jsx)(v.Z, {
         Icon: h.xx7,
         header: x.intl.string(x.t["6XMM+P"]),
-        tip: (null == (Z = a().os) ? void 0 : Z.family) === "OS X" ? x.intl.string(x.t.w9uDOT) : x.intl.string(x.t.BiUJCw)
+        tip: (null == (Z = s().os) ? void 0 : Z.family) === "OS X" ? x.intl.string(x.t.w9uDOT) : x.intl.string(x.t.BiUJCw)
       })]
     })
   }

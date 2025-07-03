@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(392711),
   o = n.n(l),
-  s = n(442837),
-  a = n(524437),
+  a = n(442837),
+  s = n(524437),
   c = n(481060),
   u = n(317632),
   d = n(174767),
@@ -22,7 +22,7 @@ function b(e) {
     setTab: t,
     badgeState: l,
     closePopout: b
-  } = e, O = (0, s.Wu)([u.Z], () => u.Z.getInvites()), y = (0, s.e7)([u.Z], () => u.Z.getInviteStatuses()), [v, C] = i.useMemo(() => o().partition(O, e => {
+  } = e, O = (0, a.Wu)([u.Z], () => u.Z.getInvites()), y = (0, a.e7)([u.Z], () => u.Z.getInviteStatuses()), [v, C] = i.useMemo(() => o().partition(O, e => {
     var t;
     return (null == (t = y[e.invite_id]) ? void 0 : t.joinable) !== !1 && (Date.now() - new Date(e.created_at).getTime()) / 1e3 < e.ttl
   }), [O, y]);
@@ -31,7 +31,7 @@ function b(e) {
   }), 0 === O.length) ? (0, r.jsxs)("div", {
     className: m.container,
     children: [(0, r.jsx)(p.Z, {
-      tab: a.X.GAME_INVITES,
+      tab: s.X.GAME_INVITES,
       setTab: t,
       badgeState: l,
       closePopout: b
@@ -46,7 +46,7 @@ function b(e) {
   }) : (0, r.jsxs)("div", {
     className: m.container,
     children: [(0, r.jsx)(p.Z, {
-      tab: a.X.GAME_INVITES,
+      tab: s.X.GAME_INVITES,
       setTab: t,
       badgeState: l,
       closePopout: b,

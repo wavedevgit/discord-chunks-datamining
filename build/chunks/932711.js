@@ -1,27 +1,27 @@
 /** Chunk was on 4811 **/
 n.d(t, {
-  Z: () => a
+  Z: () => s
 });
 var r = n(255367),
   i = n(481060),
   l = n(821020),
   o = n(388032),
-  s = n(375613);
+  a = n(375613);
 
-function a(e) {
+function s(e) {
   let {
     children: t
   } = e, {
     notificationCenterVariant: n
   } = l.Lk.useExperiment({
     location: "NotificationsInboxTooltip"
-  }), a = n === l.jP.LEGACY ? o.intl.string(o.t.GSmTKC) : o.intl.string(o.t.HcoRu7);
+  }), s = n === l.jP.LEGACY ? o.intl.string(o.t.GSmTKC) : o.intl.string(o.t.HcoRu7);
   return (0, r.jsx)(i.ua7, {
     hideOnClick: !0,
     spacing: 12,
     position: "right",
-    text: a,
-    tooltipClassName: s.listItemTooltip,
+    text: s,
+    tooltipClassName: a.listItemTooltip,
     children: e => {
       var n, i;
       return (0, r.jsx)("div", (n = function(e) {
