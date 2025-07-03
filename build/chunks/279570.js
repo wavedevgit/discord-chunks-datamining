@@ -56,8 +56,10 @@ function m(e) {
     iconOpticalOffsetMargin: g = 0,
     focusProps: p,
     pressed: h = !1,
-    "aria-label": f
-  } = e, b = function(e, t) {
+    "aria-label": f,
+    className: b,
+    style: x
+  } = e, _ = function(e, t) {
     if (null == e) return {};
     var n, i, r = function(e, t) {
       if (null == e) return {};
@@ -71,7 +73,7 @@ function m(e) {
       for (i = 0; i < s.length; i++) n = s[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
     }
     return r
-  }(e, ["role", "size", "variant", "icon", "iconOpticalOffsetMargin", "focusProps", "pressed", "aria-label"]);
+  }(e, ["role", "size", "variant", "icon", "iconOpticalOffsetMargin", "focusProps", "pressed", "aria-label", "className", "style"]);
   return (0, i.jsx)(l.t, d(c({}, p), {
     children: (0, i.jsx)("button", d(c({
       role: t,
@@ -80,7 +82,7 @@ function m(e) {
         [o.pressed]: h
       }),
       "aria-label": f
-    }, b), {
+    }, _), {
       children: (0, i.jsx)("div", {
         className: a.buttonChildrenWrapper,
         children: (0, i.jsx)(m, {

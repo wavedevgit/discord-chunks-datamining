@@ -5,8 +5,8 @@ r.d(t, {
   s: () => u
 });
 var n = r(818083),
-  o = r(984134);
-let l = (0, n.B)({
+  l = r(984134);
+let o = (0, n.B)({
   kind: "user",
   id: "2025-01_go_live_modal_refresh",
   label: "Go Live Modal Refresh",
@@ -71,12 +71,12 @@ function i(e) {
     autoTrackExposure: r = !0
   } = e, {
     isInHoldout: n
-  } = o.h.useExperiment({
+  } = l.h.useExperiment({
     location: t
   }, {
     autoTrackExposure: r
   });
-  return l.useExperiment({
+  return o.useExperiment({
     location: t
   }, {
     disable: n,
@@ -85,9 +85,9 @@ function i(e) {
 }
 
 function u(e) {
-  o.h.getCurrentConfig({
+  l.h.getCurrentConfig({
     location: e
-  }).isInHoldout || l.trackExposure({
+  }).isInHoldout || o.trackExposure({
     location: e
   })
 }

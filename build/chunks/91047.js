@@ -8,9 +8,9 @@ r.d(t, {
 }), r(415506);
 var n = r(255367);
 r(73800);
-var o = r(239091);
+var l = r(239091);
 
-function l(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -43,38 +43,38 @@ function i(e, t) {
 }
 
 function u(e, t, u) {
-  u.isGroupDM() ? (0, o.jW)(e, async () => {
+  u.isGroupDM() ? (0, l.jW)(e, async () => {
     let {
       default: e
     } = await Promise.all([r.e("14006"), r.e("79695"), r.e("80417"), r.e("98783"), r.e("17373")]).then(r.bind(r, 354589));
-    return r => (0, n.jsx)(e, i(l({}, r), {
+    return r => (0, n.jsx)(e, i(o({}, r), {
       user: t,
       channel: u
     }))
-  }) : u.isDM() ? (0, o.jW)(e, async () => {
+  }) : u.isDM() ? (0, l.jW)(e, async () => {
     let {
       default: e
     } = await Promise.all([r.e("14006"), r.e("79695"), r.e("25292"), r.e("80417"), r.e("90508"), r.e("7839"), r.e("70205"), r.e("98783"), r.e("53912"), r.e("15114"), r.e("56826"), r.e("47934")]).then(r.bind(r, 131404));
-    return r => (0, n.jsx)(e, i(l({}, r), {
+    return r => (0, n.jsx)(e, i(o({}, r), {
       user: t,
       channel: u,
       showMute: !1,
       targetIsUser: !0
     }))
-  }) : null != u.guild_id ? (0, o.jW)(e, async () => {
+  }) : null != u.guild_id ? (0, l.jW)(e, async () => {
     let {
       default: e
     } = await Promise.all([r.e("14006"), r.e("79695"), r.e("80417"), r.e("98783"), r.e("97589"), r.e("7717"), r.e("72374")]).then(r.bind(r, 757387));
-    return r => (0, n.jsx)(e, i(l({}, r), {
+    return r => (0, n.jsx)(e, i(o({}, r), {
       user: t,
       channel: u,
       guildId: u.guild_id
     }))
-  }) : (0, o.jW)(e, async () => {
+  }) : (0, l.jW)(e, async () => {
     let {
       default: e
     } = await Promise.all([r.e("79695"), r.e("69220"), r.e("70686")]).then(r.bind(r, 881351));
-    return r => (0, n.jsx)(e, i(l({}, r), {
+    return r => (0, n.jsx)(e, i(o({}, r), {
       user: t
     }))
   })
@@ -88,26 +88,26 @@ function a(e, t) {
     guildId: c
   } = t, d = function(e, t) {
     if (null == e) return {};
-    var r, n, o = function(e, t) {
+    var r, n, l = function(e, t) {
       if (null == e) return {};
-      var r, n, o = {},
-        l = Object.keys(e);
-      for (n = 0; n < l.length; n++) r = l[n], t.indexOf(r) >= 0 || (o[r] = e[r]);
-      return o
+      var r, n, l = {},
+        o = Object.keys(e);
+      for (n = 0; n < o.length; n++) r = o[n], t.indexOf(r) >= 0 || (l[r] = e[r]);
+      return l
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < l.length; n++) r = l[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r])
+      var o = Object.getOwnPropertySymbols(e);
+      for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r])
     }
-    return o
+    return l
   }(t, ["user", "channel", "moderationAlertId", "guildId"]);
   if ((null == a ? void 0 : a.isGroupDM()) || (null == a ? void 0 : a.isDM())) throw Error("Cannot moderate user in DM or group DM");
   let f = null != c ? c : null == a ? void 0 : a.getGuildId();
-  null != f && (0, o.jW)(e, async () => {
+  null != f && (0, l.jW)(e, async () => {
     let {
       default: e
     } = await r.e("16120").then(r.bind(r, 833737));
-    return t => (0, n.jsx)(e, l(i(l({}, t), {
+    return t => (0, n.jsx)(e, o(i(o({}, t), {
       user: u,
       channelId: null == a ? void 0 : a.id,
       guildId: f,
@@ -124,11 +124,11 @@ function s(e, t) {
     onCloseContextMenu: c,
     isViewOnly: d
   } = t;
-  (0, o.jW)(e, async () => {
+  (0, l.jW)(e, async () => {
     let {
       default: e
     } = await r.e("45130").then(r.bind(r, 246389));
-    return t => (0, n.jsx)(e, i(l({}, t), {
+    return t => (0, n.jsx)(e, i(o({}, t), {
       user: u,
       guildId: a,
       analyticsLocations: s,
@@ -139,11 +139,11 @@ function s(e, t) {
 }
 
 function c(e, t, u) {
-  null != u && (0, o.jW)(e, async () => {
+  null != u && (0, l.jW)(e, async () => {
     let {
       default: e
     } = await Promise.all([r.e("21443"), r.e("19877")]).then(r.bind(r, 158195));
-    return t => (0, n.jsx)(e, i(l({}, t), {
+    return t => (0, n.jsx)(e, i(o({}, t), {
       guildId: u
     }))
   })
