@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: 4259c62ec739a25d
+  Original File Name: a4e53ab1f37b496a
 **/
 .countDownWrapper_a1b7b8 {
     align-items: center;
@@ -252,6 +252,7 @@
     display: grid;
     grid-gap: 24px;
     grid-template-columns: repeat(auto-fill,minmax(246px,1fr));
+    margin-bottom: 40px;
     overflow: visible
 }
 
@@ -1800,4 +1801,4 @@
     cursor: pointer
 }
 
-/*# sourceMappingURL=4259c62ec739a25d.css.map*/
+/*# sourceMappingURL=a4e53ab1f37b496a.css.map*/
