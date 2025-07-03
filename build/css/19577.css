@@ -1,6 +1,6 @@
 /**
   Module ID: 19577
-  Original File Name: 9fd7bda6f476ead9
+  Original File Name: 9d49d11a4157fa17
 **/
 .debugMode_fa952e {
     background-color: rgba(255,0,0,.25);
@@ -9605,6 +9605,15 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     width: 400px
 }
 
+.align-chat-input .container__01ae2 {
+    border-right: 1px solid var(--app-border-frame)
+}
+
+.align-chat-input .floating__01ae2 {
+    border-right: 1px solid var(--background-base-lower);
+    border-top: 1px solid var(--background-base-lower)
+}
+
 .floating__01ae2 {
     border-left: 1px solid var(--background-base-lower);
     bottom: 0;
@@ -13704,4 +13713,4 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     position: relative
 }
 
-/*# sourceMappingURL=9fd7bda6f476ead9.css.map*/
+/*# sourceMappingURL=9d49d11a4157fa17.css.map*/
