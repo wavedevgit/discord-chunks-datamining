@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: 8d74adccd35db9d7
+  Original File Name: 3576f47da7a5473d
 **/
 .countDownWrapper_a1b7b8 {
     align-items: center;
@@ -112,6 +112,7 @@
 
 .controls__6db1d {
     display: flex;
+    gap: 8px;
     height: 40px;
     justify-content: space-between;
     padding: 8px 0
@@ -1719,6 +1720,12 @@
     opacity: 0
 }
 
+.searchBar__824d3 {
+    height: 36px;
+    padding: 1px 4px;
+    width: 225px
+}
+
 .headerBar__80679 {
     background-color: var(--background-base-lower);
     border-bottom: 1px solid var(--border-subtle);
@@ -1819,6 +1826,7 @@
     align-items: center;
     display: flex;
     flex-direction: row;
+    gap: 8px;
     margin-left: auto;
     z-index: 1
 }
@@ -1835,4 +1843,4 @@
     cursor: pointer
 }
 
-/*# sourceMappingURL=8d74adccd35db9d7.css.map*/
+/*# sourceMappingURL=3576f47da7a5473d.css.map*/

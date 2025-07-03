@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => E
 }), n(388685);
 var r = n(255367),
   l = n(73800),
@@ -22,26 +22,26 @@ var r = n(255367),
   C = n(388032),
   O = n(484920);
 
-function v(e) {
+function E(e) {
   let {
     isFullScreen: t,
     scrollerRef: n,
     tab: i,
-    sortedCategories: v,
-    setCategoryRef: E
+    sortedCategories: E,
+    setCategoryRef: v
   } = e, {
     handlePageChange: S,
     currentPage: x
   } = (0, h.h)({
     scrollerRef: n,
-    sortedCategories: v
+    sortedCategories: E
   });
   (0, u.Ab)();
   let y = (0, c.F)("CollectiblesBrowse"),
-    [T, j] = l.useState(y);
+    [j, T] = l.useState(y);
   l.useEffect(() => {
-    y || j(!1)
-  }, [y, j]);
+    y || T(!1)
+  }, [y, T]);
   let P = (0, u.S0)(e => e.hasFilters());
   return (0, r.jsx)("div", {
     className: o()(O.pageWrapper, {
@@ -61,17 +61,17 @@ function v(e) {
           children: [(0, r.jsx)("div", {
             className: O.controlsLeftSide,
             children: (0, r.jsx)(d.Z, {
-              sortedCategories: v
+              sortedCategories: E
             })
           }), (0, r.jsxs)("div", {
             className: O.controlsRightSide,
             children: [(0, r.jsx)(g.ZP, {}), (0, r.jsx)(a.zxk, {
-              onClick: () => j(e => !e),
+              onClick: () => T(e => !e),
               look: a.iLD.OUTLINED,
               color: a.Ttl.PRIMARY,
               children: (0, r.jsxs)("div", {
                 className: O.filterButton,
-                children: [C.intl.string(T ? C.t.fYtm6e : C.t.TeTYEx), (0, r.jsx)(a.gXV, {
+                children: [C.intl.string(j ? C.t.fYtm6e : C.t.TeTYEx), (0, r.jsx)(a.gXV, {
                   size: "xs",
                   color: "var(--button-outline-primary-text)"
                 })]
@@ -92,13 +92,13 @@ function v(e) {
           },
           children: (0, r.jsx)(p.Z, {
             isFullScreen: t,
-            sortedCategories: v,
-            setCategoryRef: E,
+            sortedCategories: E,
+            setCategoryRef: v,
             currentPage: x,
             handlePageChange: S
           })
         })]
-      }), T && (0, r.jsx)("aside", {
+      }), j && (0, r.jsx)("aside", {
         className: O.filterBar,
         children: (0, r.jsx)(f.Z, {})
       })]
