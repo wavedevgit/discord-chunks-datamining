@@ -12,8 +12,8 @@ var i = n(255367),
   d = n(153867),
   u = n(425493),
   m = n(918222),
-  g = n(607070),
-  p = n(304761),
+  p = n(607070),
+  g = n(304761),
   h = n(865427),
   f = n(358085),
   b = n(210887),
@@ -47,9 +47,9 @@ function C() {
   let [e, t] = r.useState(Math.round(window.outerWidth / window.innerWidth * 100)), {
     platformZoom: n,
     theme: s
-  } = (0, a.cj)([b.Z, g.Z], () => ({
+  } = (0, a.cj)([b.Z, p.Z], () => ({
     theme: b.Z.theme,
-    platformZoom: g.Z.zoom
+    platformZoom: p.Z.zoom
   })), [C, O] = r.useState("upright"), S = ["normal", "medium", "semibold", "bold", "extrabold"], v = new Map([
     ["normal", 400],
     ["medium", 500],
@@ -63,9 +63,9 @@ function C() {
     })
   }, []);
   let T = f.isPlatformEmbedded ? n : e,
-    N = (0, a.e7)([p.C], () => {
+    N = (0, a.e7)([g.C], () => {
       var e, t;
-      return (0, h.fD)() ? null == (t = p.C.getCurrentBuildOverride()) || null == (e = t.overrides) ? void 0 : e.discord_web : null
+      return (0, h.fD)() ? null == (t = g.C.getCurrentBuildOverride()) || null == (e = t.overrides) ? void 0 : e.discord_web : null
     }),
     [I, y] = (0, m.R)("playground-overrideText", null),
     [A, P] = (0, m.R)("playground-defaultText", j[0].value),

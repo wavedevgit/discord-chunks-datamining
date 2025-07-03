@@ -18,30 +18,30 @@ let d = e => {
     parentSetting: d,
     panelClassName: u,
     defaultTabIndex: m,
-    onTabChange: g,
-    orientation: p = "horizontal"
+    onTabChange: p,
+    orientation: g = "horizontal"
   } = e, {
     viewableTabs: h,
     filteredTab: f
   } = (0, o.a)(n, d), b = null != m ? n[m] : null, x = null != (t = null != b ? b : f) ? t : h[0];
   return (0, i.jsxs)("div", {
     className: s()(c.tabbedSettingsContainer, {
-      [c.vertical]: "vertical" === p
+      [c.vertical]: "vertical" === g
     }),
     children: [(0, i.jsx)(l.njP, {
       className: s()(c.tabBar, {
-        [c.vertical]: "vertical" === p
+        [c.vertical]: "vertical" === g
       }),
       selectedItem: x.setting,
       onItemSelect: e => {
-        a.Z.setSection(r, e), null == g || g(e)
+        a.Z.setSection(r, e), null == p || p(e)
       },
-      orientation: p,
-      type: "vertical" === p ? "side" : "top",
+      orientation: g,
+      type: "vertical" === g ? "side" : "top",
       look: "brand",
       children: h.map(e => (0, i.jsx)(l.njP.Item, {
         className: s()(c.tab, {
-          [c.vertical]: "vertical" === p,
+          [c.vertical]: "vertical" === g,
           [c.selected]: e.setting === x.setting
         }),
         id: e.setting,
@@ -52,7 +52,7 @@ let d = e => {
       id: x.setting,
       "aria-labelledby": x.title,
       className: s()(c.tabBarPanel, u, {
-        [c.vertical]: "vertical" === p
+        [c.vertical]: "vertical" === g
       }),
       children: (e => {
         let t = e.component;

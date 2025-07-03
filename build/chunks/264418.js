@@ -15,11 +15,11 @@ function u(e) {
   var t, n, {
       title: u,
       body: m,
-      caretConfig: g = {
+      caretConfig: p = {
         position: "bottom",
         align: "center"
       },
-      badge: p,
+      badge: g,
       asset: h,
       size: f = "md",
       buttons: b,
@@ -80,12 +80,12 @@ function u(e) {
       }), (0, i.jsx)(d.Y, {
         title: u,
         body: m,
-        badge: p,
+        badge: g,
         footerLink: x
       }), (0, i.jsx)(l.k, {
         buttons: b
       }), (0, i.jsx)(o.$, {
-        caretConfig: g
+        caretConfig: p
       })]
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

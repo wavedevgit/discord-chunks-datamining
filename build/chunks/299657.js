@@ -12,8 +12,8 @@ var i = n(255367),
   d = n(355467),
   u = n(179360),
   m = n(821849),
-  g = n(497321),
-  p = n(100527),
+  p = n(497321),
+  g = n(100527),
   h = n(906732),
   f = n(211242),
   b = n(15640),
@@ -46,7 +46,7 @@ let B = function(e) {
     {
       sourceAnalyticsLocations: s,
       analyticsLocations: B
-    } = (0, h.ZP)(p.Z.PREMIUM_MARKETING),
+    } = (0, h.ZP)(g.Z.PREMIUM_MARKETING),
     M = (0, a.e7)([v.Z], () => v.Z.hasFetchedSubscriptions()),
     U = (0, a.e7)([S.default], () => S.default.getCurrentUser()),
     V = null == U ? void 0 : U.id,
@@ -74,7 +74,7 @@ let B = function(e) {
       location_stack: s,
       load_duration_ms: W.current
     })
-  }, [s, z]), (0, a.e7)([O.Z], () => O.Z.enabled)) ? (0, i.jsx)(g.Z, {}) : n ? (0, i.jsx)(x.c8, {}) : t === w.EZ.ApplicationStoreHome && K ? null == Q ? (0, i.jsx)("div", {
+  }, [s, z]), (0, a.e7)([O.Z], () => O.Z.enabled)) ? (0, i.jsx)(p.Z, {}) : n ? (0, i.jsx)(x.c8, {}) : t === w.EZ.ApplicationStoreHome && K ? null == Q ? (0, i.jsx)("div", {
     className: l()(L.container, L.loading),
     children: (0, i.jsx)(o.$jN, {})
   }) : (0, i.jsx)(h.Gt, {

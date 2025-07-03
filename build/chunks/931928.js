@@ -14,8 +14,8 @@ var i = n(255367),
   d = n(664915),
   u = n(507808),
   m = n(432792),
-  g = n(981631),
-  p = n(921944),
+  p = n(981631),
+  g = n(921944),
   h = n(46140),
   f = n(388032);
 
@@ -44,7 +44,7 @@ let x = e => (0, i.jsx)(m.M4, b({
     }),
     ctaText: f.intl.string(f.t.v4HbPz)
   }, e)),
-  _ = [g.Z5c.ME, g.Z5c.COLLECTIBLES_SHOP, g.Z5c.NITRO_HOME],
+  _ = [p.Z5c.ME, p.Z5c.COLLECTIBLES_SHOP, p.Z5c.NITRO_HOME],
   E = {
     position: "right",
     align: "bottom"
@@ -54,7 +54,7 @@ let x = e => (0, i.jsx)(m.M4, b({
         onClose: a,
         onCtaClick: o,
         targetElementRef: u,
-        isGuildBarScrolling: p,
+        isGuildBarScrolling: g,
         children: h
       } = e,
       f = function(e, t) {
@@ -82,10 +82,10 @@ let x = e => (0, i.jsx)(m.M4, b({
       null !== C.current && C.current.updateElementPositionWithPolling()
     }, [S]), r.useEffect(() => {
       null !== C.current && C.current.updateElementPosition()
-    }, [p]);
+    }, [g]);
     let v = (0, s.TH)().pathname,
       T = r.useCallback(() => {
-        _.includes(v) || (0, c.uL)(g.Z5c.ME), o()
+        _.includes(v) || (0, c.uL)(p.Z5c.ME), o()
       }, [v, o]);
     return (0, i.jsx)(m.WS, (t = b({
       positionControlRef: C,
@@ -130,14 +130,14 @@ let C = e => {
   }), d = r.useCallback(function() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "CLOSE";
     (0, o.Q3)(a.z.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK, {
-      dismissAction: p.L.INDIRECT_ACTION,
-      groupName: p.R.VIRTUAL_CURRENCY_ONBOARDING
+      dismissAction: g.L.INDIRECT_ACTION,
+      groupName: g.R.VIRTUAL_CURRENCY_ONBOARDING
     }), c(e)
   }, [c]), f = r.useCallback(() => c("CTA_CLICK"), [c]), b = r.useCallback(() => {
     d("CTA_CLICK"), (0, u.Y)({
-      pageType: g.ZY5.GUILD_LIST,
-      sectionType: g.jXE.ORBS_DISCOVERY_ONBOARDING_COACHMARK,
-      ctaObject: g.qAy.DISCOVERY_BUTTON_TO_ORB_INTRO_QUEST
+      pageType: p.ZY5.GUILD_LIST,
+      sectionType: p.jXE.ORBS_DISCOVERY_ONBOARDING_COACHMARK,
+      ctaObject: p.qAy.DISCOVERY_BUTTON_TO_ORB_INTRO_QUEST
     })
   }, [d]);
   return t ? {
@@ -150,9 +150,9 @@ let C = e => {
   } : {
     shouldShow: !1,
     questId: void 0,
-    closeCoachmarkIfOpen: g.dG4,
-    onClose: g.dG4,
-    onCtaClick: g.dG4,
-    onDiscoveryButtonClick: g.dG4
+    closeCoachmarkIfOpen: p.dG4,
+    onClose: p.dG4,
+    onCtaClick: p.dG4,
+    onDiscoveryButtonClick: p.dG4
   }
 }

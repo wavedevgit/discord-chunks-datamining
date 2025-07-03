@@ -13,8 +13,8 @@ var i = n(255367),
   d = n(695346),
   u = n(70956),
   m = n(51144),
-  g = n(246133),
-  p = n(981631),
+  p = n(246133),
+  g = n(981631),
   h = n(388032),
   f = n(404255);
 let b = [{
@@ -72,7 +72,7 @@ function j(e) {
     hasButtonStyling: d
   } = a.Y.useExperiment({
     location: "UserProfileAccountPopout"
-  }), h = o && t !== p.Skl.ONLINE, [E, j] = r.useState(void 0), C = void 0 !== E && t === n, O = (0, i.jsx)(i.Fragment, {
+  }), h = o && t !== g.Skl.ONLINE, [E, j] = r.useState(void 0), C = void 0 !== E && t === n, O = (0, i.jsx)(i.Fragment, {
     children: b.map(e => {
       let {
         duration: r,
@@ -81,7 +81,7 @@ function j(e) {
       return (0, i.jsx)(l.sNh, {
         id: "".concat(t, "-").concat(r),
         label: s(),
-        action: () => (0, g.Z)({
+        action: () => (0, p.Z)({
           nextStatus: t,
           prevStatus: n,
           durationMillis: r
@@ -99,7 +99,7 @@ function j(e) {
       return (0, i.jsx)(l.zxk, {
         id: "".concat(t, "-").concat(r),
         onClick: e => {
-          e.stopPropagation(), j(r), (0, g.Z)({
+          e.stopPropagation(), j(r), (0, p.Z)({
             nextStatus: t,
             prevStatus: n,
             durationMillis: null != r ? r : void 0
@@ -139,7 +139,7 @@ function j(e) {
       })
     },
     action: () => {
-      j(h ? u.Z.Millis.DAY : void 0), (0, g.Z)({
+      j(h ? u.Z.Millis.DAY : void 0), (0, p.Z)({
         nextStatus: t,
         prevStatus: n,
         durationMillis: c && h ? u.Z.Millis.DAY : void 0
@@ -180,13 +180,13 @@ function O(e) {
     location: "UserProfileAccountPopout"
   }), n = d.Cr.useSetting(), r = (0, o.p)(), u = c.e.useExperiment({
     location: "UserProfileAccountPopout"
-  }).allowQuietMode || r, m = d.fv.useSetting(), g = e === p.Skl.DND, x = i => {
+  }).allowQuietMode || r, m = d.fv.useSetting(), p = e === g.Skl.DND, x = i => {
     let r = C(n);
     if (e === i && null != r) return r;
     switch (i) {
-      case p.Skl.DND:
+      case g.Skl.DND:
         return u ? h.intl.string(h.t.day5Aw) : t ? h.intl.string(h.t["tq/fMD"]) : h.intl.string(h.t.U9Vv19);
-      case p.Skl.INVISIBLE:
+      case g.Skl.INVISIBLE:
         return t ? h.intl.string(h.t.zPc6MT) : h.intl.string(h.t.MqanVF);
       default:
         return
@@ -207,20 +207,20 @@ function O(e) {
       }, null != n ? n : _)
     })
   }), O = j({
-    status: p.Skl.ONLINE,
+    status: g.Skl.ONLINE,
     currentStatus: e
   }), S = j({
-    status: p.Skl.IDLE,
+    status: g.Skl.IDLE,
     currentStatus: e,
-    description: x(p.Skl.IDLE)
+    description: x(g.Skl.IDLE)
   }), v = j({
-    status: p.Skl.DND,
+    status: g.Skl.DND,
     currentStatus: e,
-    description: x(p.Skl.DND)
+    description: x(g.Skl.DND)
   }), T = j({
-    status: p.Skl.INVISIBLE,
+    status: g.Skl.INVISIBLE,
     currentStatus: e,
-    description: x(p.Skl.INVISIBLE)
+    description: x(g.Skl.INVISIBLE)
   });
   return (0, i.jsxs)(i.Fragment, {
     children: [O, (0, i.jsx)(l.Clw, {}, "menu-separator-statuses"), S, v, T, u || r ? (0, i.jsxs)(i.Fragment, {
@@ -238,8 +238,8 @@ function O(e) {
           }), (0, i.jsxs)("div", {
             className: f.focusModeTitle,
             children: [h.intl.string(h.t.gJRnwM), (0, i.jsx)(l.IGR, {
-              text: r ? h.intl.string(h.t.ApAu9f) : g ? h.intl.string(h.t.gH3Fra) : h.intl.string(h.t["64pl8/"]),
-              color: r ? s.Z.BRAND_500 : g ? s.Z.RED_400 : s.Z.PRIMARY_500
+              text: r ? h.intl.string(h.t.ApAu9f) : p ? h.intl.string(h.t.gH3Fra) : h.intl.string(h.t["64pl8/"]),
+              color: r ? s.Z.BRAND_500 : p ? s.Z.RED_400 : s.Z.PRIMARY_500
             })]
           }), (0, i.jsx)("div", {
             className: f.description,

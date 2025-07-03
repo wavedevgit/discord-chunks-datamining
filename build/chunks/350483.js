@@ -13,8 +13,8 @@ var r = n(392711),
   d = n(914010),
   u = n(771845),
   m = n(55589),
-  g = n(585483),
-  p = n(475468),
+  p = n(585483),
+  g = n(475468),
   h = n(981631),
   f = n(490897);
 
@@ -50,8 +50,8 @@ let x = s().throttle(function(e, t) {
     if (a = v[T], f(j))
       for (; null != a && "" !== a;) {
         if ("string" == typeof a) {
-          if (m(j, a)) return (0, p.K)(j, a, !1, _(j, a))
-        } else if ("object" == typeof a && x(a.resourceId, a.type)) return j !== d.Z.getGuildId() && (0, p.K)(j, null == (s = c.ZP.getDefaultChannel(j)) ? void 0 : s.id), (0, l.ZDy)(async () => {
+          if (m(j, a)) return (0, g.K)(j, a, !1, _(j, a))
+        } else if ("object" == typeof a && x(a.resourceId, a.type)) return j !== d.Z.getGuildId() && (0, g.K)(j, null == (s = c.ZP.getDefaultChannel(j)) ? void 0 : s.id), (0, l.ZDy)(async () => {
           let {
             default: e
           } = await Promise.all([n.e("42743"), n.e("22347"), n.e("56236"), n.e("7549")]).then(n.bind(n, 17671));
@@ -92,7 +92,7 @@ let x = s().throttle(function(e, t) {
     if (S += e, null == (j = O[S]) || "" === j) break;
     v = b(j, E), T = e < 0 ? v.length - 1 : 0
   }
-  g.S.dispatch(h.CkL.SHAKE_APP, {
+  p.S.dispatch(h.CkL.SHAKE_APP, {
     duration: 200,
     intensity: 2
   })

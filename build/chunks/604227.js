@@ -13,14 +13,14 @@ var r = n(120356),
   d = n(304761),
   u = n(320161),
   m = n(998502),
-  g = n(388032),
-  p = n(980832);
+  p = n(388032),
+  g = n(980832);
 
 function h() {
   var e, t, n, r, l;
   let h = window.GLOBAL_ENV.RELEASE_CHANNEL,
-    f = "415748",
-    b = "c58e7612f6d266791d7de9f0a6b9bd508f7b28a0".substring(0, 7),
+    f = "415762",
+    b = "163dc4c6a68accc4cb3b5706f8a540c2cf6d80af".substring(0, 7),
     x = null === c.Z || void 0 === c.Z ? void 0 : c.Z.remoteApp.getVersion(),
     _ = null === c.Z || void 0 === c.Z || null == (e = (t = c.Z.remoteApp).getBuildNumber) ? void 0 : e.call(t),
     E = null === c.Z || void 0 === c.Z || null == (n = (r = c.Z.remoteApp).getAppArch) ? void 0 : n.call(r),
@@ -36,7 +36,7 @@ function h() {
     O = [h, f, "(".concat(b, ")")];
   return null != x && (O.push("Host ".concat(x)), null != E && O.push(E.toLowerCase()), null != _ && O.push("(".concat(_, ")"))), O.push("Build Override: ".concat(null != j ? j.id : "N/A")), null != C && O.push(C), (0, i.jsx)(u.Z, {
     copyValue: O.join(" "),
-    text: g.intl.string(g.t["9Al4QU"]),
+    text: p.intl.string(p.t["9Al4QU"]),
     "aria-label": !1,
     children: e => {
       var t, n;
@@ -58,37 +58,37 @@ function h() {
         }
         return e
       }({}, e), n = n = {
-        "aria-label": g.intl.string(g.t["9Al4QU"]),
-        className: p.clickable,
+        "aria-label": p.intl.string(p.t["9Al4QU"]),
+        className: g.clickable,
         children: (0, i.jsxs)("div", {
-          className: p.info,
+          className: g.info,
           "data-mtctest-ignore": "true",
           children: [(0, i.jsxs)(o.Text, {
             tag: "span",
-            className: p.line,
+            className: g.line,
             variant: "text-xs/normal",
             color: "text-muted",
             children: [h, " ", f, " ", (0, i.jsxs)("span", {
-              className: p.versionHash,
+              className: g.versionHash,
               children: ["(", b, ")"]
             })]
           }), " ", null != j && (0, i.jsx)(o.Text, {
             tag: "span",
-            className: p.line,
+            className: g.line,
             variant: "text-xs/normal",
             color: "text-muted",
             children: (0, i.jsxs)("span", {
-              className: p.versionHash,
+              className: g.versionHash,
               children: ["Build Override: ", j.id]
             })
           }), null != x ? (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsxs)(o.Text, {
               tag: "span",
-              className: p.line,
+              className: g.line,
               variant: "text-xs/normal",
               color: "text-muted",
               children: ["Host ", x, " ", null != E ? (0, i.jsxs)("span", {
-                className: p.appArch,
+                className: g.appArch,
                 children: [E.toLowerCase(), " "]
               }) : null, null != _ ? (0, i.jsxs)("span", {
                 children: ["(", _, ")"]
@@ -96,7 +96,7 @@ function h() {
             }), " "]
           }) : null, null != C ? (0, i.jsx)(o.Text, {
             tag: "span",
-            className: s()(p.line, p.os),
+            className: s()(g.line, g.os),
             variant: "text-xs/normal",
             color: "text-muted",
             children: C

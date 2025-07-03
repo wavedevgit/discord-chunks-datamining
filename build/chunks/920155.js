@@ -1,6 +1,6 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  m: () => p
+  m: () => g
 });
 var i = n(255367);
 n(73800);
@@ -43,15 +43,15 @@ function m(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let g = c.Vq;
+let p = c.Vq;
 
-function p(e) {
+function g(e) {
   let {
     children: t,
     targetElementRef: n,
     shouldShow: r = !0,
     onRequestClose: c,
-    position: p = "top",
+    position: g = "top",
     align: h = "center",
     hasVideo: f = !1,
     gradientColor: b
@@ -60,7 +60,7 @@ function p(e) {
     targetElementRef: n,
     shouldShow: r,
     onRequestClose: c,
-    position: p,
+    position: g,
     align: h,
     spacing: 18,
     layerContext: void 0,
@@ -86,6 +86,6 @@ function p(e) {
       returnRef: n,
       children: t
     })),
-    children: g
+    children: p
   })
 }

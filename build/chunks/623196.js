@@ -12,8 +12,8 @@ var i = n(255367),
   d = n(594174),
   u = n(63063),
   m = n(88658),
-  g = n(398826),
-  p = n(575356),
+  p = n(398826),
+  g = n(575356),
   h = n(838436),
   f = n(726985),
   b = n(981631),
@@ -36,9 +36,9 @@ function j() {
     {
       currentHarvestType: t,
       awaitingInitialRequest: n
-    } = (0, a.cj)([p.Z], () => ({
-      currentHarvestType: p.Z.harvestType,
-      awaitingInitialRequest: p.Z.requestingHarvest
+    } = (0, a.cj)([g.Z], () => ({
+      currentHarvestType: g.Z.harvestType,
+      awaitingInitialRequest: g.Z.requestingHarvest
     })),
     [s, j] = r.useState(!1);
   if (null == e) return null;
@@ -55,7 +55,7 @@ function j() {
         cancelText: x.intl.string(x.t.jpVjsr),
         confirmButtonColor: o.zxk.Colors.BRAND,
         onConfirm: e => {
-          j(!0), (0, g.h)(e).then(e => {
+          j(!0), (0, p.h)(e).then(e => {
             null != e && null != e.body ? c.Z.show({
               body: x.intl.string(x.t["6Nmv4u"])
             }) : c.Z.show({

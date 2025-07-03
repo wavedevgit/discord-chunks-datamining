@@ -13,8 +13,8 @@ var r = n(120356),
   d = n(927359),
   u = n(975298),
   m = n(125529),
-  g = n(594174),
-  p = n(78839),
+  p = n(594174),
+  g = n(78839),
   h = n(975104),
   f = n(63063),
   b = n(367074),
@@ -43,7 +43,7 @@ let k = e => {
     } = e, {
       headingText: o,
       headingTop: c
-    } = U(), d = g.default.getCurrentUser(), m = (0, l.e7)([p.Z], () => p.Z.getPremiumTypeSubscription()), h = (0, C.N)(), f = (0, j.Ng)(), b = (0, j.Wp)(f, A.Si.TIER_2) ? A.Si.TIER_2 : void 0, x = null != m && m.status !== P.O0b.ACCOUNT_HOLD && m.hasAnyPremiumNitro, _ = (0, u.Z)(), O = (0, E.C)("nitro-home", d) && _.isFractionalPremiumActive && !x;
+    } = U(), d = p.default.getCurrentUser(), m = (0, l.e7)([g.Z], () => g.Z.getPremiumTypeSubscription()), h = (0, C.N)(), f = (0, j.Ng)(), b = (0, j.Wp)(f, A.Si.TIER_2) ? A.Si.TIER_2 : void 0, x = null != m && m.status !== P.O0b.ACCOUNT_HOLD && m.hasAnyPremiumNitro, _ = (0, u.Z)(), O = (0, E.C)("nitro-home", d) && _.isFractionalPremiumActive && !x;
     return (0, i.jsxs)("div", {
       className: s()(D.container, r),
       "data-testid": "subscriber-nitro-home-hero-header",
@@ -160,25 +160,25 @@ let k = e => {
       location: n
     } = e, {
       analyticsLocations: r
-    } = (0, c.ZP)(o.Z.PREMIUM_MARKETING_HERO_CTA), l = (0, _.W)(), g = (0, b.Vi)(), p = (0, x._O)(), h = R.intl.string(R.t.qYKftb), E = (0, S.b)(n), j = (0, i.jsx)(k, {
+    } = (0, c.ZP)(o.Z.PREMIUM_MARKETING_HERO_CTA), l = (0, _.W)(), p = (0, b.Vi)(), g = (0, x._O)(), h = R.intl.string(R.t.qYKftb), E = (0, S.b)(n), j = (0, i.jsx)(k, {
       className: t
     }), C = R.intl.string(R.t.ifwQZW), {
       fractionalState: O,
       endsAt: v
     } = (0, u.Z)(), T = (0, d.ZP)(v, d.aj.CREDITS_ENDS_IN);
-    l || g ? (C = R.intl.string(R.t.ifwQZW), j = (0, i.jsx)(B, {
-      isEligibleForBogoPromotion: g
+    l || p ? (C = R.intl.string(R.t.ifwQZW), j = (0, i.jsx)(B, {
+      isEligibleForBogoPromotion: p
     })) : E && (h = R.intl.string(R.t.qYKftb), C = R.intl.string(R.t.ifwQZW), j = (0, i.jsx)(L, {}));
     let I = null;
     if (O === A.a$.NONE || l) I = (0, i.jsx)(N.Cy, {
       className: s()(D.trialPill, {
-        [D.hidden]: !p
+        [D.hidden]: !g
       }),
       text: h,
       colorOptions: N.VE.PREMIUM_TIER_2_WHITE_FILL
     });
     else {
-      p = !0;
+      g = !0;
       let e = (0, i.jsx)("div", {
           className: D.pillIcon,
           children: (0, i.jsx)(a.d3s, {
@@ -219,7 +219,7 @@ let k = e => {
               className: D.flexCentered,
               children: (0, i.jsx)(N.mn, {
                 className: s()(D.trialPill, {
-                  [D.hidden]: !p
+                  [D.hidden]: !g
                 }),
                 text: T,
                 colorOptions: N.VE.PREMIUM_TIER_2_WHITE_FILL,

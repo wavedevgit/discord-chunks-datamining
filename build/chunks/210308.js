@@ -12,8 +12,8 @@ var i = n(255367),
   d = n(667105),
   u = n(819640),
   m = n(585483),
-  g = n(553896),
-  p = n(101966),
+  p = n(553896),
+  g = n(101966),
   h = n(804413),
   f = n(787528),
   b = n(474936),
@@ -27,12 +27,12 @@ function O(e) {
   let {
     groupName: t,
     targetElementRef: n
-  } = e, r = (0, h.Z)(), m = (0, p.Z)({
+  } = e, r = (0, h.Z)(), m = (0, g.Z)({
     location: "TenureLevelUpCoachmark"
-  }), g = (0, c.Z)(e => e.isOpen), f = (0, s.e7)([u.Z], () => u.Z.getLayers().includes(x.S9g.USER_SETTINGS)), b = (0, d.Ws)({
+  }), p = (0, c.Z)(e => e.isOpen), f = (0, s.e7)([u.Z], () => u.Z.getLayers().includes(x.S9g.USER_SETTINGS)), b = (0, d.Ws)({
     location: E.dr.CONFLICT_CHECKS
   });
-  return !m || null == r || g || f || !b ? null : (0, i.jsx)(o.Nq, {
+  return !m || null == r || p || f || !b ? null : (0, i.jsx)(o.Nq, {
     contentType: l.z.NITRO_TENURE_BADGE_LEVEL_UP,
     timeRecurringConfig: {
       cooldownDurationMs: 12096e5
@@ -75,7 +75,7 @@ function S(e) {
     s(_.L.TAKE_ACTION), l(), c.Z.setState({
       shouldRenderTenureLevelUp: !0
     }), m.S.dispatch(x.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, {})
-  }, [s, l]), p = (0, r.useCallback)(() => {
+  }, [s, l]), g = (0, r.useCallback)(() => {
     s(_.L.USER_DISMISS), l()
   }, [s, l]), h = b.vK[n];
   return (0, i.jsxs)("div", {
@@ -89,7 +89,7 @@ function S(e) {
         size: "xs",
         color: "currentColor"
       }),
-      onClick: p
+      onClick: g
     }), null != d && (0, i.jsx)("img", {
       src: d,
       alt: j.intl.string(h.nameUnformatted),
@@ -101,7 +101,7 @@ function S(e) {
       variant: "text-sm/medium",
       className: C.subtitle,
       children: j.intl.formatToPlainString(j.t.ewkaVV, {
-        timeMilestone: null == (t = (0, g.q)(h.id, h.tenureReqNumMonths)) ? void 0 : t.toLocaleLowerCase()
+        timeMilestone: null == (t = (0, p.q)(h.id, h.tenureReqNumMonths)) ? void 0 : t.toLocaleLowerCase()
       })
     }), (0, i.jsx)(a.zxk, {
       className: C.checkItOutButton,

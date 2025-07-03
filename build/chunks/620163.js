@@ -13,8 +13,8 @@ var r = n(990547),
   d = n(37234),
   u = n(809206),
   m = n(230711),
-  g = n(493544),
-  p = n(579806),
+  p = n(493544),
+  g = n(579806),
   h = n(782568),
   f = n(758182),
   b = n(49226),
@@ -67,8 +67,8 @@ var r = n(990547),
   ed = n(501348),
   eu = n(795594),
   em = n(443702),
-  eg = n(327192),
-  ep = n(949493),
+  ep = n(327192),
+  eg = n(949493),
   eh = n(675047),
   ef = n(177508),
   eb = n(956699),
@@ -162,13 +162,13 @@ let eJ = () => {
       useRefreshedVoiceAndVideo: td,
       isEligibleForSensitiveContentDefaults: tu,
       inputMode: tm,
-      activeInputProfile: tg,
-      isInputProfileCustom: tp,
+      activeInputProfile: tp,
+      isInputProfileCustom: tg,
       isGoreContentFilteringEnabled: th
     } = e;
     return Object.freeze({
       [eF.s6.SEARCH_NO_RESULTS]: {
-        section: g.ID.CUSTOM,
+        section: p.ID.CUSTOM,
         element: eN.Z
       },
       [eF.s6.ACCOUNT_SECURITY_TAB]: {
@@ -307,7 +307,7 @@ let eJ = () => {
       },
       [eF.s6.PROFILE_CUSTOMIZATION]: {
         section: ez.oAB.PROFILE_CUSTOMIZATION,
-        type: g.bT.WIDE,
+        type: p.bT.WIDE,
         searchableTitles: [eK.intl.string(eK.t["vi7f+v"])],
         label: eK.intl.string(eK.t["vi7f+v"]),
         ariaLabel: eK.intl.string(eK.t["vi7f+v"]),
@@ -345,7 +345,7 @@ let eJ = () => {
         label: eK.intl.string(eK.t["+o1pDQ"]),
         searchableTitles: [eK.intl.string(eK.t["+o1pDQ"])],
         ariaLabel: eK.intl.string(eK.t["+o1pDQ"]),
-        element: ep.Z,
+        element: eg.Z,
         url: ez.Z5c.SETTINGS("content-and-social")
       },
       [eF.s6.CONTENT_SOCIAL_DISCORD_TAB]: {
@@ -579,7 +579,7 @@ let eJ = () => {
         searchableTitles: [eK.intl.string(eK.t["3fe7U1"])],
         label: eK.intl.string(eK.t["3fe7U1"]),
         ariaLabel: eK.intl.string(eK.t["3fe7U1"]),
-        element: eg.Z,
+        element: ep.Z,
         impressionName: r.ImpressionNames.USER_SETTINGS_CONNECTIONS,
         impressionProperties: {
           source: N
@@ -598,7 +598,7 @@ let eJ = () => {
         section: ez.oAB.CONNECTIONS,
         searchableTitles: [eK.intl.string(eK.t["+/hZMz"])],
         parent: eF.s6.CONNECTIONS,
-        element: eg.Z
+        element: ep.Z
       },
       [eF.s6.CLIPS]: {
         section: ez.oAB.CLIPS,
@@ -951,13 +951,13 @@ let eJ = () => {
         section: ez.oAB.VOICE,
         searchableTitles: [eK.intl.string(eK.t["pS+K2N"]), eK.intl.string(eK.t.nuFtHB)],
         parent: eF.s6.VOICE_AND_VIDEO_VOICE,
-        predicate: () => tg !== eG._.STUDIO
+        predicate: () => tp !== eG._.STUDIO
       },
       [eF.s6.VOICE_AND_VIDEO_SENSITIVITY]: {
         section: ez.oAB.VOICE,
         searchableTitles: [eK.intl.string(eK.t["sqUm+v"]), eK.intl.string(eK.t.nuFtHB)],
         parent: eF.s6.VOICE_AND_VIDEO_VOICE,
-        predicate: () => tm === eW.pM.VOICE_ACTIVITY && tp
+        predicate: () => tm === eW.pM.VOICE_ACTIVITY && tg
       },
       [eF.s6.VOICE_AND_VIDEO_SWITCH_CHANNEL_ALERT]: {
         section: ez.oAB.VOICE,
@@ -1050,7 +1050,7 @@ let eJ = () => {
         section: ez.oAB.VOICE,
         searchableTitles: [eK.intl.string(eK.t["6I6GUl"])],
         parent: eF.s6.VOICE_AND_VIDEO_ADVANCED,
-        predicate: () => tp
+        predicate: () => tg
       },
       [eF.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_ECHO_CANCELLATION]: {
         section: ez.oAB.VOICE,
@@ -1166,7 +1166,7 @@ let eJ = () => {
         section: ez.oAB.VOICE,
         searchableTitles: [eK.intl.string(eK.t["726JHB"])],
         parent: eF.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING,
-        predicate: () => X.isPlatformEmbedded && z.Z.supports(eW.AN.DEBUG_LOGGING) && null != p.Z.fileManager.readLogFiles
+        predicate: () => X.isPlatformEmbedded && z.Z.supports(eW.AN.DEBUG_LOGGING) && null != g.Z.fileManager.readLogFiles
       },
       [eF.s6.VOICE_AND_VIDEO_RESET_VOICE_SETTINGS]: {
         section: ez.oAB.VOICE,
@@ -1508,7 +1508,7 @@ let eJ = () => {
         parent: eF.s6.STREAMER_MODE,
         predicate: () => {
           var e, t, n;
-          return null != (n = null === p.Z || void 0 === p.Z || null == (t = p.Z.window) || null == (e = t.supportsContentProtection) ? void 0 : e.call(t)) && n
+          return null != (n = null === g.Z || void 0 === g.Z || null == (t = g.Z.window) || null == (e = t.supportsContentProtection) ? void 0 : e.call(t)) && n
         }
       },
       [eF.s6.SETTINGS_ADVANCED]: {
@@ -2035,11 +2035,11 @@ let eJ = () => {
         variant: "destructive"
       },
       [eF.s6.SOCIAL_LINKS]: {
-        section: g.ID.CUSTOM,
+        section: p.ID.CUSTOM,
         element: er.Z
       },
       [eF.s6.CLIENT_DEBUG_INFO]: {
-        section: g.ID.CUSTOM,
+        section: p.ID.CUSTOM,
         element: $.Z
       }
     })

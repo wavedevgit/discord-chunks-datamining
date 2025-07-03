@@ -12,8 +12,8 @@ var i = n(255367),
   d = n(533307),
   u = n(189907),
   m = n(812206),
-  g = n(600164),
-  p = n(925329),
+  p = n(600164),
+  g = n(925329),
   h = n(981632),
   f = n(314897),
   b = n(82142),
@@ -60,8 +60,8 @@ class y extends r.PureComponent {
     } = this.props, {
       copyMode: n
     } = this.state;
-    return (0, i.jsxs)(g.Z, {
-      direction: g.Z.Direction.VERTICAL,
+    return (0, i.jsxs)(p.Z, {
+      direction: p.Z.Direction.VERTICAL,
       className: N.giftCodeRow,
       children: [(0, i.jsx)(c.kO8, {
         className: N.codeText,
@@ -129,9 +129,9 @@ class A extends r.PureComponent {
     })
   }
   renderGenerateGiftCodeRow() {
-    return (0, i.jsxs)(g.Z, {
-      justify: g.Z.Justify.BETWEEN,
-      align: g.Z.Align.CENTER,
+    return (0, i.jsxs)(p.Z, {
+      justify: p.Z.Justify.BETWEEN,
+      align: p.Z.Align.CENTER,
       className: N.generateCodeRow,
       children: [(0, i.jsx)(c.Text, {
         variant: "text-md/normal",
@@ -174,15 +174,15 @@ class A extends r.PureComponent {
           splashArtURL: t.getSplashURL(512),
           children: (0, i.jsxs)("div", {
             className: N.cardHeader,
-            children: [(0, i.jsxs)(g.Z, {
-              align: g.Z.Align.CENTER,
+            children: [(0, i.jsxs)(p.Z, {
+              align: p.Z.Align.CENTER,
               children: [null != d ? (0, i.jsx)(h.Z, {
                 giftStyle: d,
                 className: N.seasonalGiftBox,
                 shouldAnimate: this.state.isHovered
-              }) : (0, i.jsx)(p.Z, {
+              }) : (0, i.jsx)(g.Z, {
                 game: t,
-                size: p.Z.Sizes.MEDIUM,
+                size: g.Z.Sizes.MEDIUM,
                 skuId: l.id
               }), (0, i.jsxs)("div", {
                 className: N.headerText,

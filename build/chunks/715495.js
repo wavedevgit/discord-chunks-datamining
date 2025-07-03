@@ -12,8 +12,8 @@ var i = n(255367),
   d = n(205822),
   u = n(329013),
   m = n(594174),
-  g = n(396821),
-  p = n(780771),
+  p = n(396821),
+  g = n(780771),
   h = n(4242),
   f = n(996746),
   b = n(711325),
@@ -55,12 +55,12 @@ function C(e, t) {
 
 function O() {
   var e;
-  let [t, n] = (0, r.useState)(!1), [s, l] = (0, r.useState)(!1), [a, c] = (0, r.useState)(null), m = (0, g.ZP)(e => e.toolsCache), {
+  let [t, n] = (0, r.useState)(!1), [s, l] = (0, r.useState)(!1), [a, c] = (0, r.useState)(null), m = (0, p.ZP)(e => e.toolsCache), {
     setToolsCache: f,
     removeToolsCache: x
-  } = (0, g.L3)(), {
+  } = (0, p.L3)(), {
     setImgCache: O
-  } = (0, g.W_)(), A = (0, r.useCallback)(e => {
+  } = (0, p.W_)(), A = (0, r.useCallback)(e => {
     let t = m[e];
     null != t && c({
       src: t.url,
@@ -68,7 +68,7 @@ function O() {
       preview: !0
     }), c(t => null == t ? {
       src: e,
-      palette: p.jD,
+      palette: g.jD,
       preview: !0
     } : C(j({}, t), {
       src: e,
@@ -146,7 +146,7 @@ function O() {
             let t = URL.createObjectURL(e[0]),
               n = e[0],
               i = await n.arrayBuffer();
-            O(t, t, (0, h.xh)(i)), f(t, t, p.jD)
+            O(t, t, (0, h.xh)(i)), f(t, t, g.jD)
           }
         }), (0, i.jsx)("div", {
           className: E.uploadedArea,
@@ -163,7 +163,7 @@ function O() {
         }), (0, i.jsx)(T, {
           label: "gradient override",
           onChange: e => P({
-            name: p._j,
+            name: g._j,
             darkBackground: e,
             lightBackground: e
           })

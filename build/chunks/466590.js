@@ -12,9 +12,9 @@ var i = n(255367),
   d = n(237872),
   u = n(562618),
   m = n(388032),
-  g = n(669546);
+  p = n(669546);
 
-function p(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -80,12 +80,12 @@ function h(e) {
       null == O || O()
     }, [O]);
   if (!v || null == y) return null;
-  let Z = p({
+  let Z = g({
     text: null != (b = null == (h = y.button) ? void 0 : h.text) ? b : A ? m.intl.string(m.t.i4jeWV) : m.intl.string(m.t.PDTjLC),
     variant: null != (x = null == (f = y.button) ? void 0 : f.variant) ? x : "primary",
     onClick: P
   }, y.button);
-  return (0, i.jsx)(a.m, (t = p({}, T), n = n = {
+  return (0, i.jsx)(a.m, (t = g({}, T), n = n = {
     shouldShow: v,
     onRequestClose: R,
     gradientColor: y.gradientColor,
@@ -103,17 +103,17 @@ function h(e) {
         badge: y.badge,
         footerLink: y.footerLink
       }), (0, i.jsx)("div", {
-        className: g.actionBar,
+        className: p.actionBar,
         children: (0, i.jsxs)("div", {
-          className: g.multistepActionLayout,
+          className: p.multistepActionLayout,
           children: [(0, i.jsx)(l.Text, {
             variant: "text-xs/normal",
-            className: g.multistepIndicator,
+            className: p.multistepIndicator,
             children: m.intl.formatToPlainString(m.t.rO31eX, {
               count: N + 1,
               totalSteps: _.length
             })
-          }), (0, i.jsx)(s.z, p({
+          }), (0, i.jsx)(s.z, g({
             size: "sm"
           }, Z))]
         })

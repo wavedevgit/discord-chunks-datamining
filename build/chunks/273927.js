@@ -14,8 +14,8 @@ var i = n(255367),
   d = n(99690),
   u = n(100527),
   m = n(699516),
-  g = n(594174),
-  p = n(63063),
+  p = n(594174),
+  g = n(63063),
   h = n(838436),
   f = n(526761),
   b = n(726985),
@@ -57,13 +57,13 @@ function C(e) {
   let {
     userId: n,
     last: s
-  } = e, p = (0, a.e7)([m.Z], () => m.Z.isBlocked(n)), h = (0, a.e7)([g.default], () => g.default.getUser(n)), [f, b] = r.useState(!1), x = r.useCallback(() => {
-    b(!0), p ? c.Z.unblockUser(n).catch(() => {
+  } = e, g = (0, a.e7)([m.Z], () => m.Z.isBlocked(n)), h = (0, a.e7)([p.default], () => p.default.getUser(n)), [f, b] = r.useState(!1), x = r.useCallback(() => {
+    b(!0), g ? c.Z.unblockUser(n).catch(() => {
       b(!1)
     }) : c.Z.unignoreUser(n, u.Z.USER_SETTINGS).catch(() => {
       b(!1)
     })
-  }, [p, n]);
+  }, [g, n]);
   return null == h ? null : (0, i.jsxs)("div", {
     className: l()(E.row, {
       [E.lastRow]: s
@@ -89,7 +89,7 @@ function C(e) {
       color: o.Ttl.PRIMARY,
       onClick: x,
       submitting: f,
-      children: _.intl.string(p ? _.t.XyHpKC : _.t["8wXU9P"])
+      children: _.intl.string(g ? _.t.XyHpKC : _.t["8wXU9P"])
     })]
   })
 }
@@ -159,7 +159,7 @@ function T() {
     children: [(0, i.jsx)(h.H, {
       header: _.intl.string(_.t["3wRorq"]),
       description: _.intl.format(_.t["0aNQo6"], {
-        helpArticle: p.Z.getArticleURL(x.BhN.STEALTH_REMEDIATION_FEATURE_GUIDE)
+        helpArticle: g.Z.getArticleURL(x.BhN.STEALTH_REMEDIATION_FEATURE_GUIDE)
       })
     }), (0, i.jsx)(S, {}), (0, i.jsx)(v, {})]
   })

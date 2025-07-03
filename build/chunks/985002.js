@@ -12,7 +12,7 @@ function o(e) {
   let {
     onError: t,
     onSuccess: n
-  } = null != e ? e : {}, [o, c] = i.useState(!1), [d, u] = i.useState(!1), [m, g] = i.useState(!1), [p, h] = i.useState(!1), [f, b] = i.useState(!1), [x, _] = i.useState(!1), [E, j] = i.useState(!1), [C, O] = i.useState(!1), S = o || d || m || p || x || C, v = i.useCallback(async e => {
+  } = null != e ? e : {}, [o, c] = i.useState(!1), [d, u] = i.useState(!1), [m, p] = i.useState(!1), [g, h] = i.useState(!1), [f, b] = i.useState(!1), [x, _] = i.useState(!1), [E, j] = i.useState(!1), [C, O] = i.useState(!1), S = o || d || m || g || x || C, v = i.useCallback(async e => {
     if (!S) {
       c(!0);
       try {
@@ -38,14 +38,14 @@ function o(e) {
     }
   }, [S, t, n]), N = i.useCallback(async e => {
     if (!S) {
-      g(!0);
+      p(!0);
       try {
         await (0, s.Yw)(e.id, a.ne.INACTIVE), null == n || n()
       } catch (n) {
         let e = new r.Hx(n);
         null == t || t(e)
       } finally {
-        g(!1)
+        p(!1)
       }
     }
   }, [S, t, n]), I = i.useCallback(async e => {
@@ -125,7 +125,7 @@ function o(e) {
     isAcceptLoading: o,
     isDeclineLoading: d,
     isDisconnectLoading: m,
-    isCancelLoading: p,
+    isCancelLoading: g,
     isGetLinkCodeLoading: f,
     isSelectTeenUserLoading: E,
     isRequestingLink: x,

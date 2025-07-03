@@ -2,7 +2,7 @@
 n.d(t, {
   eR: () => m,
   hW: () => b,
-  is: () => p
+  is: () => g
 }), n(388685);
 var i = n(73800),
   r = n(442837),
@@ -32,11 +32,11 @@ function m(e) {
   }, [n, e, t])
 }
 
-function g(e) {
+function p(e) {
   null != e.current && (e.current.stop(), e.current = null)
 }
 
-function p(e, t) {
+function g(e, t) {
   let n = (0, i.useRef)(null),
     s = (0, i.useRef)(null == c ? void 0 : c.createGain()),
     a = (0, r.e7)([l.Z], () => l.Z.volume),
@@ -44,12 +44,12 @@ function p(e, t) {
     d = (0, i.useRef)(!0);
   (0, i.useEffect)(() => {
     (async () => {
-      null != n.current && g(n), !t && null != s.current && (n.current = await u(e, s.current), null != n.current && (n.current.loop = !0), d.current || g(n))
+      null != n.current && p(n), !t && null != s.current && (n.current = await u(e, s.current), null != n.current && (n.current.loop = !0), d.current || p(n))
     })()
   }, [t, e]), (0, i.useEffect)(() => {
     null != s.current && (s.current.gain.value = o ? 0 : a)
   }, [o, a]), (0, i.useEffect)(() => () => {
-    d.current = !1, g(n)
+    d.current = !1, p(n)
   }, [])
 }
 let h = n(956294),

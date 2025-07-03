@@ -33,7 +33,7 @@ function m(e) {
   return e
 }
 
-function g(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -46,7 +46,7 @@ function g(e, t) {
   }), e
 }
 
-function p(e, t) {
+function g(e, t) {
   if (null == e) return {};
   var n, i, r = function(e, t) {
     if (null == e) return {};
@@ -70,12 +70,12 @@ function h(e) {
     icon: h,
     hint: f,
     renderSubmenu: b
-  } = e, x = p(e, ["id", "label", "sublabel", "icon", "hint", "renderSubmenu"]);
+  } = e, x = g(e, ["id", "label", "sublabel", "icon", "hint", "renderSubmenu"]);
   let _ = (0, l.JA)(t),
     {
       onFocus: E
     } = _,
-    j = p(_, ["onFocus"]),
+    j = g(_, ["onFocus"]),
     {
       id: C
     } = (0, l.f$)(),
@@ -87,7 +87,7 @@ function h(e) {
       v(e === t)
     })
   }, [t, C, T]);
-  let N = e => (0, i.jsxs)(d.kF, g(m({}, e, j, x), {
+  let N = e => (0, i.jsxs)(d.kF, p(m({}, e, j, x), {
     ref: O,
     role: "button",
     look: o.zxk.Looks.BLANK,
@@ -137,8 +137,8 @@ function f(e) {
       children: e => {
         var {
           ref: t
-        } = e, s = p(e, ["ref"]);
-        return (0, i.jsx)("div", g(m({}, s), {
+        } = e, s = g(e, ["ref"]);
+        return (0, i.jsx)("div", p(m({}, s), {
           ref: t,
           onMouseLeave: () => r.setFocus(null),
           children: n

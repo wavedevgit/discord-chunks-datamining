@@ -13,8 +13,8 @@ var r = n(524437),
   d = n(294602),
   u = n(249996),
   m = n(880257),
-  g = n(63063),
-  p = n(838436),
+  p = n(63063),
+  g = n(838436),
   h = n(526761),
   f = n(726985),
   b = n(981631),
@@ -46,7 +46,7 @@ function E(e) {
     value: r.Q4.SHOW,
     label: x.intl.string(x.t["5k5OFh"])
   };
-  return E && (v.unshift(N), T.unshift(N)), (0, i.jsx)(p.U, {
+  return E && (v.unshift(N), T.unshift(N)), (0, i.jsx)(g.U, {
     setting: f.s6.PRIVACY_SENSITIVE_MEDIA_V2,
     scrollPosition: h.FY.EXPLICIT_MEDIA_REDACTION_V2,
     children: n ? (0, i.jsxs)(i.Fragment, {
@@ -124,10 +124,10 @@ function E(e) {
         children: x.intl.string(x.t.Wnojv7)
       })]
     }) : (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)(p.H, {
+      children: [(0, i.jsx)(g.H, {
         header: x.intl.string(x.t["c/UOwM"]),
         description: x.intl.format(x.t.ZUvrwM, {
-          learnMoreLink: g.Z.getArticleURL(b.BhN.EXPLICIT_MEDIA_REDACTION)
+          learnMoreLink: p.Z.getArticleURL(b.BhN.EXPLICIT_MEDIA_REDACTION)
         })
       }), (0, i.jsx)(s.xJW, {
         tag: s.RB0.H3,

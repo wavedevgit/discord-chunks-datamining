@@ -1,6 +1,6 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => g
+  Z: () => p
 });
 var i = n(255367);
 n(73800);
@@ -60,14 +60,14 @@ let u = e => null != e.globalName ? e.globalName : e.username,
     })
   };
 
-function g(e) {
+function p(e) {
   let {
     referrer: t
   } = e, n = l.Z.useExperiment({
     location: "UserTrialOfferAttribution"
   }), {
-    avatarSrc: g,
-    eventHandlers: p
+    avatarSrc: p,
+    eventHandlers: g
   } = (0, s.Z)({
     user: t,
     size: a.EF.SIZE_32,
@@ -75,8 +75,8 @@ function g(e) {
   });
   return !0 === n.enabled ? (0, i.jsx)(m, {
     referrer: t,
-    avatarSrc: g,
-    eventHandlers: p
+    avatarSrc: p,
+    eventHandlers: g
   }) : (0, i.jsx)("div", {
     className: c.attributionBannerContainer,
     children: (0, i.jsxs)("div", {
@@ -85,10 +85,10 @@ function g(e) {
         className: c.iconContainerApplicationHome,
         children: (0, i.jsx)(r.qEK, d({
           className: c.icon,
-          src: g,
+          src: p,
           "aria-label": t.username,
           size: a.EF.SIZE_32
-        }, p))
+        }, g))
       }), (0, i.jsx)(r.X6q, {
         variant: "heading-lg/medium",
         className: c.textContainer,

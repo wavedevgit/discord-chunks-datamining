@@ -1,6 +1,6 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => g
+  Z: () => p
 });
 var i = n(255367);
 n(73800);
@@ -14,13 +14,13 @@ var r = n(120356),
   u = n(388032),
   m = n(771066);
 
-function g(e) {
+function p(e) {
   let {
     showRemoveBannerButton: t,
     errors: n,
     onBannerChange: r,
-    guildId: g,
-    className: p,
+    guildId: p,
+    className: g,
     disabled: h = !1,
     showPremiumIcon: f = !0,
     isTryItOutFlow: b = !1,
@@ -30,7 +30,7 @@ function g(e) {
     newestAnalyticsLocation: E
   } = (0, a.ZP)(), j = _ ? l.gtL : l.zxk;
   return (0, i.jsx)(c.Z, {
-    className: p,
+    className: g,
     title: u.intl.string(u.t.Vgdusr),
     showPremiumIcon: f,
     errors: n,
@@ -46,7 +46,7 @@ function g(e) {
         onClick: () => (0, o.$r)({
           uploadType: d.pC.BANNER,
           analyticsSource: E,
-          guildId: g,
+          guildId: p,
           isTryItOutFlow: b
         }),
         children: u.intl.string(u.t.N0bC3N)
@@ -56,7 +56,7 @@ function g(e) {
         look: l.zxk.Looks.LINK,
         size: l.zxk.Sizes.SMALL,
         onClick: () => r(null),
-        children: null != g ? u.intl.string(u.t.jHlJNT) : u.intl.string(u.t.tT9n7O)
+        children: null != p ? u.intl.string(u.t.jHlJNT) : u.intl.string(u.t.tT9n7O)
       })]
     })
   })

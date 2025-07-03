@@ -12,8 +12,8 @@ var i = n(255367),
   d = n(23645),
   u = n(53281),
   m = n(678135),
-  g = n(594174),
-  p = n(373071),
+  p = n(594174),
+  g = n(373071),
   h = n(489495),
   f = n(189),
   b = n(662583),
@@ -62,7 +62,7 @@ let C = {
       effect: t
     } = e, {
       upsertConfig: n
-    } = (0, p.n6)(), s = (0, o.e7)([g.default], () => g.default.getCurrentUser()), [S, v] = r.useState(!0), T = r.useRef(null), [N, I] = r.useState(!1), [y, A] = r.useState(!1), [P, R] = r.useState([]), [D, Z] = r.useState(C), w = r.useRef([]), [k, L] = r.useState(t.name), B = k.toLowerCase().replace(/\s+/g, "_"), M = r.useMemo(() => ({
+    } = (0, g.n6)(), s = (0, o.e7)([p.default], () => p.default.getCurrentUser()), [S, v] = r.useState(!0), T = r.useRef(null), [N, I] = r.useState(!1), [y, A] = r.useState(!1), [P, R] = r.useState([]), [D, Z] = r.useState(C), w = r.useRef([]), [k, L] = r.useState(t.name), B = k.toLowerCase().replace(/\s+/g, "_"), M = r.useMemo(() => ({
       type: a.Z.PROFILE_EFFECT,
       id: O,
       skuId: O,

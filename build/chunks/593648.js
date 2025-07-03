@@ -12,8 +12,8 @@ var i = n(255367),
   d = n(524437),
   u = n(481060),
   m = n(668781),
-  g = n(292556),
-  p = n(87051),
+  p = n(292556),
+  g = n(87051),
   h = n(419363),
   f = n(761781),
   b = n(818083),
@@ -126,7 +126,7 @@ function Q(e) {
     t.stopPropagation(), t.preventDefault(), null != a.current && a.current.stop(), a.current = (0, R.GN)(e)
   }, []), d = r.useCallback((e, n) => {
     let i = t.filter(t => t !== e);
-    n || i.push(e), g.default.setDisabledSounds(i)
+    n || i.push(e), p.default.setDisabledSounds(i)
   }, [t]);
   r.useEffect(() => () => {
     var e;
@@ -200,11 +200,11 @@ function Q(e) {
       label: H.intl.string(H.t.CP3DCw),
       sound: "reconnect"
     }],
-    p = null != C.Z.useHolidaySoundpack();
+    g = null != C.Z.useHolidaySoundpack();
   return (0, i.jsx)(P.F, {
     setting: V.s6.NOTIFICATIONS_SOUNDS,
     children: (0, i.jsxs)(u.hjN, {
-      children: [p ? (0, i.jsxs)(i.Fragment, {
+      children: [g ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(u.vwX, {
           className: Y.marginBottom20,
           children: H.intl.string(H.t.fgSHf3)
@@ -215,12 +215,12 @@ function Q(e) {
       }), (0, i.jsx)(u.j7V, {
         note: H.intl.string(H.t["7oXUio"]),
         value: s,
-        onChange: g.default.setNotifyMessagesInSelectedChannel,
+        onChange: p.default.setNotifyMessagesInSelectedChannel,
         children: H.intl.string(H.t.lF5GGR)
       }), (0, i.jsx)(u.j7V, {
         note: H.intl.string(H.t["+B0XLC"]),
         value: n,
-        onChange: g.default.toggleDisableAllSounds,
+        onChange: p.default.toggleDisableAllSounds,
         children: H.intl.string(H.t["2ZhCOT"])
       }), m.map(e => {
         let {
@@ -316,13 +316,13 @@ class $ extends r.PureComponent {
     let t = e ? G.qrD.ALL : G.qrD.NEVER;
     if (t !== G.qrD.NEVER) w.Z.requestPermission(e => {
       let t = e ? G.$Ab.ENABLED : G.$Ab.BLOCKED;
-      g.default.setPermissionsState(t, "UserSettingsModal")
+      p.default.setPermissionsState(t, "UserSettingsModal")
     });
-    else g.default.setDesktopType(t)
+    else p.default.setDesktopType(t)
   }
   handleTTSChange(e) {
     let t = e.value;
-    g.default.setTTSType(t)
+    p.default.setTTSType(t)
   }
   render() {
     let {
@@ -334,7 +334,7 @@ class $ extends r.PureComponent {
       disableAllSounds: a,
       notifyMessagesInSelectedChannel: c,
       focusMode: d
-    } = this.props, m = k.isPlatformEmbedded && (0, k.isWindows)(), g = o().range(1, 11).map(e => ({
+    } = this.props, m = k.isPlatformEmbedded && (0, k.isWindows)(), p = o().range(1, 11).map(e => ({
       value: 60 * e,
       label: H.intl.formatToPlainString(H.t.iXLF9f, {
         minutes: e
@@ -379,7 +379,7 @@ class $ extends r.PureComponent {
           children: [(0, i.jsx)(u.q4e, {
             value: t,
             onChange: B.CM.updateSetting,
-            options: g
+            options: p
           }), (0, i.jsx)(u.R94, {
             type: u.geA.DESCRIPTION,
             className: Y.marginTop8,
@@ -399,9 +399,9 @@ class $ extends r.PureComponent {
   }
   constructor(...e) {
     super(...e), W(this, "handleToggleShowUnreadBadge", () => {
-      g.default.setDisableUnreadBadge(!this.props.disableUnreadBadge)
+      p.default.setDisableUnreadBadge(!this.props.disableUnreadBadge)
     }), W(this, "handleToggleShowFlash", () => {
-      g.default.setTaskbarFlash(!this.props.taskbarFlash)
+      p.default.setTaskbarFlash(!this.props.taskbarFlash)
     }), W(this, "renderTTS", () => {
       if (!h.Zh) return null;
       let e = [{
@@ -463,7 +463,7 @@ function et() {
       className: Y.marginBottom20,
       value: t,
       onChange: e => {
-        p.Z.setAccountFlag(F.c.MENTION_ON_ALL_MESSAGES, e)
+        g.Z.setAccountFlag(F.c.MENTION_ON_ALL_MESSAGES, e)
       },
       note: "Increments the mention count when receiving a message in a channel set to 'All Messages'",
       children: "Mention on all messages?"
@@ -505,7 +505,7 @@ function en() {
         disabled: s || n,
         note: "Turns on the new notification system",
         onChange: e => {
-          p.Z.setAccountFlag(F.c.USE_NEW_NOTIFICATIONS, e)
+          g.Z.setAccountFlag(F.c.USE_NEW_NOTIFICATIONS, e)
         },
         children: H.intl.string(H.t.z21l8P)
       })
@@ -538,7 +538,7 @@ function en() {
               hideBorder: !0,
               value: n,
               onChange: e => {
-                p.Z.setAccountFlag(F.c.USE_NEW_NOTIFICATIONS, e)
+                g.Z.setAccountFlag(F.c.USE_NEW_NOTIFICATIONS, e)
               },
               children: "Toggle new system on/off"
             })

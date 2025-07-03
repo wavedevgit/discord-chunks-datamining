@@ -13,8 +13,8 @@ var r = n(120356),
   d = n(623624),
   u = n(678558),
   m = n(124570),
-  g = n(317169),
-  p = n(430824),
+  p = n(317169),
+  g = n(430824),
   h = n(594174),
   f = n(709586),
   b = n(267642),
@@ -26,9 +26,9 @@ let j = function(e) {
     className: t,
     guildId: n,
     boostingVariant: r
-  } = e, j = (0, l.e7)([p.Z], () => p.Z.getGuild(n), [n]), C = (0, l.e7)([h.default], () => h.default.getCurrentUser()), {
+  } = e, j = (0, l.e7)([g.Z], () => g.Z.getGuild(n), [n]), C = (0, l.e7)([h.default], () => h.default.getCurrentUser()), {
     fractionalState: O
-  } = (0, o.Z)(), S = (0, m.y)("guild_boosting_setting_guild_info_card", C, O), v = (0, g.Z)(null == j ? void 0 : j.id).total;
+  } = (0, o.Z)(), S = (0, m.y)("guild_boosting_setting_guild_info_card", C, O), v = (0, p.Z)(null == j ? void 0 : j.id).total;
   return null == j ? (0, i.jsx)("div", {
     className: s()(t, E.guildContainer),
     children: (0, i.jsx)("div", {

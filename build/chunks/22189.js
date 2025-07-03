@@ -13,8 +13,8 @@ var s = n(399606),
   d = n(906732),
   u = n(975298),
   m = n(779618),
-  g = n(266454),
-  p = n(300284),
+  p = n(266454),
+  g = n(300284),
   h = n(703656),
   f = n(547972),
   b = n(131951),
@@ -69,9 +69,9 @@ let ed = () => {
     analyticsLocations: e
   } = (0, d.ZP)(c.Z.PREMIUM_MARKETING_PERK_CARD), t = (0, o.ZP)(), n = (0, j.BU)(I.Uq / 1024, {
     useKibibytes: !0
-  }), i = (0, s.e7)([_.Z], () => _.Z.getPremiumTypeSubscription()), ec = null != i ? O.ZP.getPremiumPlanItem(i) : null, ed = (null != ec ? O.ZP.getSkuIdForPlan(ec.planId) : null) === I.Si.TIER_2, eu = x.default.getCurrentUser(), em = (0, O.I5)(eu, I.p9.TIER_2), eg = (0, O.I5)(eu, I.p9.TIER_0), ep = (0, m.Z)(b.Z), {
+  }), i = (0, s.e7)([_.Z], () => _.Z.getPremiumTypeSubscription()), ec = null != i ? O.ZP.getPremiumPlanItem(i) : null, ed = (null != ec ? O.ZP.getSkuIdForPlan(ec.planId) : null) === I.Si.TIER_2, eu = x.default.getCurrentUser(), em = (0, O.I5)(eu, I.p9.TIER_2), ep = (0, O.I5)(eu, I.p9.TIER_0), eg = (0, m.Z)(b.Z), {
     isFractionalPremiumActive: eh
-  } = (0, u.Z)(), ef = null != i && i.hasPremiumAtLeast(I.p9.TIER_2), eb = (0, g.Nj)(l.z.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE), ex = (0, p.Z)({
+  } = (0, u.Z)(), ef = null != i && i.hasPremiumAtLeast(I.p9.TIER_2), eb = (0, p.Nj)(l.z.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE), ex = (0, g.Z)({
     scrollPosition: P.Y_.TRY_IT_OUT,
     analyticsLocations: e
   }), e_ = () => {
@@ -105,9 +105,9 @@ let ed = () => {
       title: D.intl.string(D.t.z2jK6e),
       subtitle: D.intl.string(D.t["hxy0/f"]),
       description: D.intl.string(D.t.Z6v86e),
-      descriptionCta: ep ? D.intl.string(D.t.jVcuVV) : D.intl.string(D.t.hvVgAQ),
+      descriptionCta: eg ? D.intl.string(D.t.jVcuVV) : D.intl.string(D.t.hvVgAQ),
       pillText: D.intl.string(D.t.EYxi0t),
-      onCtaClick: ep ? () => {
+      onCtaClick: eg ? () => {
         (0, f.Z)(R.Z.CLIPS, {
           openWithoutBackstack: !0,
           analyticsLocations: e
@@ -356,9 +356,9 @@ let ed = () => {
       title: D.intl.string(D.t.XQCSrq),
       subtitle: D.intl.string(D.t.HC5wVV),
       description: D.intl.string(D.t.ee7wQ0),
-      descriptionCta: em || eg ? D.intl.string(D.t.y9TxXV) : D.intl.string(D.t.d8o6lZ),
-      isPremiumGetCta: !(em || eg),
-      onCtaClick: em || eg ? ej : void 0,
+      descriptionCta: em || ep ? D.intl.string(D.t.y9TxXV) : D.intl.string(D.t.d8o6lZ),
+      isPremiumGetCta: !(em || ep),
+      onCtaClick: em || ep ? ej : void 0,
       perkImage: q
     },
     referralProgram: {
@@ -391,7 +391,7 @@ let ed = () => {
       descriptionCta: em ? D.intl.string(D.t.jVcuVV) : D.intl.string(D.t.JST6jo),
       isPremiumGetCta: !em,
       onCtaClick: em ? () => {
-        eb || (0, g.Q3)(l.z.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE, {
+        eb || (0, p.Q3)(l.z.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE, {
           dismissAction: A.L.TAKE_ACTION
         }), ex()
       } : void 0,

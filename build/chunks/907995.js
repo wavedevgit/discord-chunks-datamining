@@ -18,17 +18,17 @@ function m(e) {
     labelHook: n,
     dismissNotice: s,
     className: m,
-    noticeType: g
-  } = e, p = null != s;
+    noticeType: p
+  } = e, g = null != s;
   r.useEffect(() => {
-    (0, o.l)(g, c.up.VIEWED)
-  }, [g]);
+    (0, o.l)(p, c.up.VIEWED)
+  }, [p]);
   let h = r.useCallback(() => {
-      null != s && (s(), (0, o.l)(g, c.up.DISMISS))
-    }, [g, s]),
+      null != s && (s(), (0, o.l)(p, c.up.DISMISS))
+    }, [p, s]),
     f = r.useCallback(() => {
-      n(), (0, o.l)(g, c.up.LEARN_MORE)
-    }, [g, n]);
+      n(), (0, o.l)(p, c.up.LEARN_MORE)
+    }, [p, n]);
   return (0, i.jsxs)("div", {
     className: l()(u.safetySettingsNotice, m),
     children: [(0, i.jsx)(a.d3s, {
@@ -42,7 +42,7 @@ function m(e) {
           children: e
         }, t)
       })
-    }), p && (0, i.jsx)(a.P3F, {
+    }), g && (0, i.jsx)(a.P3F, {
       className: u.closeButton,
       onClick: h,
       children: (0, i.jsx)(a.Dio, {})

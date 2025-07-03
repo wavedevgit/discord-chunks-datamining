@@ -1,6 +1,6 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => p
+  Z: () => g
 });
 var i = n(255367),
   r = n(73800),
@@ -31,15 +31,15 @@ function m(e) {
   return e
 }
 
-function g(e) {
+function p(e) {
   let {
     className: t,
     boxLayout: n,
     title: r,
     shouldLoadVideo: s,
     isReducedMotion: d,
-    includeSideGradient: g = !1,
-    startLeftAligned: p = !1
+    includeSideGradient: p = !1,
+    startLeftAligned: g = !1
   } = e;
   return (0, i.jsxs)("div", {
     className: l()(u.boxBackdrop, t),
@@ -66,7 +66,7 @@ function g(e) {
           children: e.map(e => {
             var r, l;
             return (0, i.jsx)(c.Z, (r = m({
-              index: t + +!!p
+              index: t + +!!g
             }, e), l = l = {
               size: n,
               shouldLoadVideo: s,
@@ -84,21 +84,21 @@ function g(e) {
           })
         })
       })
-    }), g && (0, i.jsx)("div", {
+    }), p && (0, i.jsx)("div", {
       className: u.bentoSideGradient
     })]
   })
 }
-let p = r.memo(function(e) {
+let g = r.memo(function(e) {
   let {
     whatsNewBoxes: t,
     bestOfBoxes: n
   } = (0, o.ZP)();
   return (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(g, m({
+    children: [(0, i.jsx)(p, m({
       boxLayout: t,
       title: d.intl.string(d.t.LRmNAg)
-    }, e)), (0, i.jsx)(g, m({
+    }, e)), (0, i.jsx)(p, m({
       boxLayout: n,
       title: d.intl.string(d.t.EnzW2N),
       includeSideGradient: !0,

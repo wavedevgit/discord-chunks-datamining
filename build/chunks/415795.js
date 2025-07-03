@@ -18,8 +18,8 @@ var i, r = n(255367),
   d = n(933557),
   u = n(471445),
   m = n(16206),
-  g = n(790145),
-  p = n(925329),
+  p = n(790145),
+  g = n(925329),
   h = n(565138),
   f = n(754688),
   b = n(237583),
@@ -204,7 +204,7 @@ class N extends(i = s.Component) {
       channel: s,
       isMentionLowImportance: l
     } = this.props;
-    return null != n && n > 0 && (e = (0, r.jsx)(g.Z, {
+    return null != n && n > 0 && (e = (0, r.jsx)(p.Z, {
       className: O.badge,
       value: n,
       lowImportance: l
@@ -309,7 +309,7 @@ class I extends s.Component {
       mentions: t,
       channel: n
     } = this.props;
-    return null != t && t > 0 && (e = (0, r.jsx)(g.Z, {
+    return null != t && t > 0 && (e = (0, r.jsx)(p.Z, {
       className: O.badge,
       value: t
     })), (0, r.jsxs)("div", {
@@ -396,7 +396,7 @@ class y extends s.Component {
         mentions: n
       } = this.props,
       i = this.getDisplayNickname();
-    return null != n && n > 0 && (e = (0, r.jsx)(g.Z, {
+    return null != n && n > 0 && (e = (0, r.jsx)(p.Z, {
       className: O.badge,
       value: n
     })), (0, r.jsxs)("div", {
@@ -470,7 +470,7 @@ class A extends s.Component {
       className: O.contentDefault,
       children: [(0, r.jsx)("div", {
         className: O.iconContainer,
-        children: (0, r.jsx)(p.Z, {
+        children: (0, r.jsx)(g.Z, {
           tabIndex: -1,
           className: O.gameIcon,
           game: t,

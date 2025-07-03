@@ -28,7 +28,7 @@ function u(e) {
     badge: o,
     className: u,
     footerLink: m
-  } = e, g = null == (t = null == m ? void 0 : m.external) || t;
+  } = e, p = null == (t = null == m ? void 0 : m.external) || t;
   return (0, i.jsxs)("div", {
     className: s()(c.header, u),
     children: [(0, i.jsxs)("div", {
@@ -58,8 +58,8 @@ function u(e) {
       children: r
     }), null != m && (0, i.jsx)(l.Anchor, {
       href: m.link,
-      target: g ? "_blank" : void 0,
-      rel: g ? "noopener noreferrer" : void 0,
+      target: p ? "_blank" : void 0,
+      rel: p ? "noopener noreferrer" : void 0,
       children: (0, i.jsx)(a.Text, {
         variant: "text-sm/normal",
         className: c.footerLink,

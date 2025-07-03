@@ -11,9 +11,9 @@ var i, r = n(255367),
   d = n(893776),
   u = n(468026),
   m = n(594174),
-  g = n(388032);
+  p = n(388032);
 
-function p(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -29,7 +29,7 @@ function h(e) {
     "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), i.forEach(function(t) {
-      p(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
@@ -47,13 +47,13 @@ class f extends(i = s.Component) {
       color: e,
       disabled: this.state.isSendingVerificationEmail,
       onClick: this.handleResendVerification,
-      children: g.intl.string(g.t.lm1UKi)
+      children: p.intl.string(p.t.lm1UKi)
     })
   }
   constructor(...e) {
-    super(...e), p(this, "state", {
+    super(...e), g(this, "state", {
       isSendingVerificationEmail: !1
-    }), p(this, "handleResendVerification", () => {
+    }), g(this, "handleResendVerification", () => {
       let {
         currentUser: e,
         onClick: t
@@ -64,13 +64,13 @@ class f extends(i = s.Component) {
         d.Z.verifyResend().then(() => (0, c.h7j)(t => {
           var n, i;
           return (0, r.jsx)(c.ConfirmModal, (n = h({
-            header: g.intl.string(g.t.LykQYm),
-            confirmText: g.intl.string(g.t.BddRzc),
+            header: p.intl.string(p.t.LykQYm),
+            confirmText: p.intl.string(p.t.BddRzc),
             confirmButtonColor: c.zxk.Colors.BRAND
           }, t), i = i = {
             children: (0, r.jsx)(c.Text, {
               variant: "text-md/normal",
-              children: g.intl.format(g.t.azKEPz, {
+              children: p.intl.format(p.t.azKEPz, {
                 email: e.email
               })
             })
@@ -87,9 +87,9 @@ class f extends(i = s.Component) {
         })).catch(e => {
           let {
             body: t
-          } = e, n = g.intl.string(g.t.XcrQNz);
+          } = e, n = p.intl.string(p.t.XcrQNz);
           null != t && t.email && (n = t.email), (0, c.h7j)(e => (0, r.jsx)(u.default, h({
-            title: g.intl.string(g.t.VbTh0N),
+            title: p.intl.string(p.t.VbTh0N),
             body: n
           }, e)))
         }).then(() => this.setState({
@@ -99,7 +99,7 @@ class f extends(i = s.Component) {
     })
   }
 }
-p(f, "defaultProps", {
+g(f, "defaultProps", {
   size: c.zxk.Sizes.MEDIUM,
   color: c.zxk.Colors.BRAND
 });

@@ -13,8 +13,8 @@ var r = n(512722),
   d = n(126631),
   u = n(433411),
   m = n(532432),
-  g = n(134795),
-  p = n(513901),
+  p = n(134795),
+  g = n(513901),
   h = n(451392),
   f = n(906364),
   b = n(643879),
@@ -165,7 +165,7 @@ function R(e) {
         }),
         user: Z,
         guild: H
-      }, "decoration"), (0, i.jsx)(p.Z, {
+      }, "decoration"), (0, i.jsx)(g.Z, {
         sectionTitle: (0, i.jsxs)(i.Fragment, {
           children: [I.intl.string(I.t.wR5wOj), (0, i.jsx)(a.ua7, {
             text: I.intl.string(I.t["5AFxuL"]),
@@ -179,7 +179,7 @@ function R(e) {
         }),
         user: Z,
         guild: H
-      }, "effect"), (0, i.jsx)(g.Z, {
+      }, "effect"), (0, i.jsx)(p.Z, {
         showRemoveBannerButton: X,
         errors: null == V ? void 0 : V.banner,
         onBannerChange: e => ee(e, null == W ? void 0 : W.banner, O.g_),

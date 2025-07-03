@@ -12,8 +12,8 @@ var i = n(255367),
   d = n(335131),
   u = n(703656),
   m = n(511050),
-  g = n(52647),
-  p = n(822857),
+  p = n(52647),
+  g = n(822857),
   h = n(317257),
   f = n(120786),
   b = n(775451),
@@ -29,7 +29,7 @@ var i = n(255367),
 function T() {
   let {
     enabled: e
-  } = (0, p.WX)({
+  } = (0, g.WX)({
     location: "revenue_storybook"
   });
   return (0, i.jsxs)("div", {
@@ -42,7 +42,7 @@ function N() {
     openIntroToOrbsClaimedCoachmark: e
   } = (0, m.l)({
     location: "VirtualCurrencyComponents"
-  }), [t, n] = r.useState(150), [g, p] = r.useState(150), [_, E] = r.useState(500), [j, T] = r.useState(h.b.DEFAULT), N = () => {
+  }), [t, n] = r.useState(150), [p, g] = r.useState(150), [_, E] = r.useState(500), [j, T] = r.useState(h.b.DEFAULT), N = () => {
     switch (j) {
       case h.b.DEFAULT:
         T(h.b.HIGHLIGHTED);
@@ -131,12 +131,12 @@ function N() {
         value: t,
         onChange: e => n(e)
       }), (0, i.jsx)(s.zx, {
-        onClick: () => p(t),
+        onClick: () => g(t),
         children: "Set Balance"
       }), (0, i.jsx)("div", {
         className: v.interactivePillContainer,
         children: (0, i.jsx)(x.A4, {
-          balance: g,
+          balance: p,
           balanceWidgetMode: j,
           onClick: () => N()
         })
@@ -152,15 +152,15 @@ function N() {
         onChange: e => E(e)
       }), (0, i.jsx)(s.zx, {
         onClick: () => {
-          p(null), setTimeout(() => {
-            p(t)
+          g(null), setTimeout(() => {
+            g(t)
           }, _)
         },
         children: "Simulate Loading State"
       }), (0, i.jsx)("div", {
         className: v.interactivePillContainer,
         children: (0, i.jsx)(x.A4, {
-          balance: g,
+          balance: p,
           balanceWidgetMode: j,
           onClick: () => N()
         })
@@ -221,7 +221,7 @@ function I() {
 function y() {
   let {
     resetOnboardingAnnouncementModal: e
-  } = (0, g.Z)();
+  } = (0, p.Z)();
   return (0, i.jsxs)(C.$0, {
     children: [(0, i.jsx)(l.X6q, {
       variant: "heading-xl/semibold",

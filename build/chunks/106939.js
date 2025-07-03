@@ -13,8 +13,8 @@ var i = n(255367),
   d = n(704215),
   u = n(481060),
   m = n(150063),
-  g = n(493773),
-  p = n(758119),
+  p = n(493773),
+  g = n(758119),
   h = n(100527),
   f = n(906732),
   b = n(252618),
@@ -143,7 +143,7 @@ function W() {
     f = v.default.getCurrentUser(),
     E = null != e,
     O = s && null != f && !E;
-  (0, g.ZP)(() => {
+  (0, p.ZP)(() => {
     (0, C.e)("family-center"), N.ZP.initialPageLoad(), n || (0, _.Q3)(d.z.FAMILY_CENTER_NEW_BADGE, {
       dismissAction: M.L.AUTO,
       forceTrack: !0
@@ -177,7 +177,7 @@ function W() {
       })
     }
   }, [s, E]), r.useEffect(() => {
-    O && (0, p.mN)(B.L0.FAMILY_CENTER)
+    O && (0, g.mN)(B.L0.FAMILY_CENTER)
   }, [O]), O) ? null : (0, i.jsxs)("main", {
     className: G.container,
     "aria-label": V.intl.string(U.default.RZqaJi),
@@ -206,7 +206,7 @@ function K() {
     selectedTab: Z,
     handleTabChange: w
   } = (0, y.Z)(), F = (0, x.Dt)(), z = v.default.getCurrentUser(), W = null != t, K = a && null != z && !W;
-  (0, g.ZP)(() => {
+  (0, p.ZP)(() => {
     m.Y(L.Z5c.FAMILY_CENTER), (0, C.e)("family-center"), !I.Z.isLoading() && I.Z.canRefetch() && N.ZP.initialPageLoad(), s || (0, _.Q3)(d.z.FAMILY_CENTER_NEW_BADGE, {
       dismissAction: M.L.AUTO,
       forceTrack: !0
@@ -243,7 +243,7 @@ function K() {
       let e = S.Ex.getSetting();
       a && t && void 0 === e && S.Ex.updateSetting(!0)
     }, [a, t]), r.useEffect(() => {
-      K && (0, p.mN)(B.L0.FAMILY_CENTER)
+      K && (0, g.mN)(B.L0.FAMILY_CENTER)
     }, [K]), K) return null;
   let Q = Z !== k.dG.SETTINGS ? Z : k.dG.ACTIVITY,
     J = H[Q];

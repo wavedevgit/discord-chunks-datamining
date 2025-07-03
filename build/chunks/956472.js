@@ -2,7 +2,7 @@
 n.d(t, {
   Ip: () => h,
   T4: () => d,
-  oQ: () => p,
+  oQ: () => g,
   oo: () => m
 }), n(539854);
 var i = n(932563),
@@ -68,7 +68,7 @@ let c = e => {
       displayPrices: o
     }
   },
-  g = e => {
+  p = e => {
     var t;
     let {
       hasSufficientOrbs: n,
@@ -85,7 +85,7 @@ let c = e => {
       shouldCheckoutWithOrbs: a
     }
   },
-  p = e => {
+  g = e => {
     let {
       product: t
     } = e, n = (0, i.zl)(), r = s.default.getCurrentUser(), {
@@ -97,7 +97,7 @@ let c = e => {
       isPremiumUser: l.ZP.canUseCollectibles(r)
     }), d = null != a && null != n && n >= a.amount, {
       shouldCheckoutWithOrbs: m
-    } = g({
+    } = p({
       orbPrice: a,
       fiatPrice: o,
       isOrbExclusive: c,
@@ -140,7 +140,7 @@ function h(e) {
     return e
   }({
     displayPrices: o
-  }, g({
+  }, p({
     orbPrice: s,
     fiatPrice: l,
     isOrbExclusive: a,

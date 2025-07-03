@@ -12,8 +12,8 @@ var i = n(255367),
   d = n(716161),
   u = n(634041),
   m = n(647177),
-  g = n(672339),
-  p = n(898531),
+  p = n(672339),
+  g = n(898531),
   h = n(636188),
   f = n(678916),
   b = n(981631),
@@ -61,7 +61,7 @@ function O(e) {
     currentDeviceId: v,
     smallerBackgroundOptions: T,
     className: N
-  } = e, I = (0, s.e7)([o.default], () => o.default.getCurrentUser()), [y, A] = r.useState(null), P = (0, p.Z)(), R = c.ZP.canUseCustomBackgrounds(I);
+  } = e, I = (0, s.e7)([o.default], () => o.default.getCurrentUser()), [y, A] = r.useState(null), P = (0, g.Z)(), R = c.ZP.canUseCustomBackgrounds(I);
   r.useEffect(() => {
     (0, d.XV)()
   }, []);
@@ -82,15 +82,15 @@ function O(e) {
       onSelectBackgroundOption: t,
       selectedBackgroundOption: n
     } = L.current;
-    e ? (0, g.FU)(n, v, {
+    e ? (0, p.FU)(n, v, {
       track: !1
     }).catch(() => t(null)) : null != n && t(null)
   }, [v]);
   let B = e => {
-    S(e), (0, g.FU)(e, v, {
+    S(e), (0, p.FU)(e, v, {
       location: w.location
     }).then(() => A(null)).catch(() => {
-      A(_.intl.string(_.t.ejrSLS)), (0, g.FU)(null, v, {
+      A(_.intl.string(_.t.ejrSLS)), (0, p.FU)(null, v, {
         location: w.location
       })
     })

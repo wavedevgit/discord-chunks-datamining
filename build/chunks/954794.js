@@ -12,8 +12,8 @@ var i = n(255367),
   d = n(882029),
   u = n(955204),
   m = n(248998),
-  g = n(388032),
-  p = n(167407);
+  p = n(388032),
+  g = n(167407);
 
 function h(e) {
   let {
@@ -23,31 +23,31 @@ function h(e) {
     children: [(0, i.jsx)(a.hjN, {
       children: (0, i.jsxs)(a.P3F, {
         onClick: t,
-        className: p.backContainer,
+        className: g.backContainer,
         children: [(0, i.jsx)(o.Z, {
           direction: o.Z.Directions.LEFT,
-          className: p.icon
+          className: g.icon
         }), (0, i.jsx)(a.Text, {
           variant: "text-lg/normal",
           color: "text-default",
-          children: g.intl.string(g.t["13/7kZ"])
+          children: p.intl.string(p.t["13/7kZ"])
         })]
       })
     }), (0, i.jsxs)("div", {
-      className: p.headerContainer,
+      className: g.headerContainer,
       children: [(0, i.jsxs)("div", {
-        className: p.headerTextContainer,
+        className: g.headerTextContainer,
         children: [(0, i.jsx)(a.X6q, {
           variant: "heading-lg/extrabold",
           color: "header-primary",
-          children: g.intl.string(g.t["6jI0hY"])
+          children: p.intl.string(p.t["6jI0hY"])
         }), (0, i.jsx)(a.Text, {
           variant: "text-md/normal",
           color: "header-secondary",
-          children: g.intl.string(g.t.GuUItb)
+          children: p.intl.string(p.t.GuUItb)
         })]
       }), (0, i.jsx)("div", {
-        className: p.headerIcon,
+        className: g.headerIcon,
         children: (0, i.jsx)(a.rm8, {
           size: "custom",
           color: l.Z.unsafe_rawColors.ORANGE_345.css,
@@ -56,9 +56,9 @@ function h(e) {
         })
       })]
     }), h.length > 0 && (0, i.jsx)(a.hjN, {
-      className: p.divider,
+      className: g.divider,
       children: (0, i.jsx)("div", {
-        className: p.achievementGrid,
+        className: g.achievementGrid,
         children: h.map(e => {
           let {
             achievementId: t,
@@ -71,24 +71,24 @@ function h(e) {
         })
       })
     }), f.length > 0 && (0, i.jsxs)(a.hjN, {
-      className: p.divider,
+      className: g.divider,
       children: [(0, i.jsx)("div", {
-        className: p.headerTextContainer,
+        className: g.headerTextContainer,
         children: (0, i.jsx)(a.Text, {
           variant: "text-md/bold",
           color: "header-secondary",
-          children: g.intl.string(g.t.GFyMg4)
+          children: p.intl.string(p.t.GFyMg4)
         })
       }), (0, i.jsx)("div", {
-        className: p.achievementGrid,
+        className: g.achievementGrid,
         children: f.map(e => (0, i.jsx)(m.Z, {
           achievementId: e.id
         }, e.id))
       })]
     }), (0, i.jsx)(a.hjN, {
-      className: p.divider,
+      className: g.divider,
       children: (0, i.jsx)("div", {
-        className: p.bottomPadding
+        className: g.bottomPadding
       })
     })]
   })

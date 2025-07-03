@@ -13,8 +13,8 @@ var i = n(255367),
   d = n(857595),
   u = n(607070),
   m = n(100527),
-  g = n(906732),
-  p = n(514361),
+  p = n(906732),
+  g = n(514361),
   h = n(705262),
   f = n(550385),
   b = n(266454),
@@ -40,7 +40,7 @@ let A = () => {
     var e, t;
     let {
       analyticsLocations: n
-    } = (0, g.ZP)(m.Z.USER_SETTINGS), l = (0, s.e7)([p.Z], () => p.Z.isPreview), a = (null == (t = (0, _.N)()) || null == (e = t.subscription_trial) ? void 0 : e.sku_id) === N.Si.TIER_2, c = (0, x.Ng)(), d = (0, x.Wp)(c, N.Si.TIER_2);
+    } = (0, p.ZP)(m.Z.USER_SETTINGS), l = (0, s.e7)([g.Z], () => g.Z.isPreview), a = (null == (t = (0, _.N)()) || null == (e = t.subscription_trial) ? void 0 : e.sku_id) === N.Si.TIER_2, c = (0, x.Ng)(), d = (0, x.Wp)(c, N.Si.TIER_2);
     return r.useEffect(() => {
       l && O.default.track(v.rMx.PREMIUM_UPSELL_VIEWED, {
         type: N.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
@@ -101,11 +101,11 @@ function R() {
     useForcedColors: t,
     gradientPreset: n,
     darkSidebar: r
-  } = (0, s.cj)([S.Z, u.Z, p.Z], () => ({
+  } = (0, s.cj)([S.Z, u.Z, g.Z], () => ({
     theme: S.Z.theme,
     useForcedColors: u.Z.useForcedColors,
     darkSidebar: S.Z.darkSidebar,
-    gradientPreset: p.Z.gradientPreset
+    gradientPreset: g.Z.gradientPreset
   }));
   return e !== v.BRd.LIGHT ? null : (0, i.jsx)(o.j7V, {
     hideBorder: !0,
@@ -119,7 +119,7 @@ function R() {
     })
   })
 }
-let D = () => (0, s.e7)([p.Z], () => p.Z.isPreview) ? null : (0, i.jsx)(o.zxk, {
+let D = () => (0, s.e7)([g.Z], () => g.Z.isPreview) ? null : (0, i.jsx)(o.zxk, {
   size: o.PhG.MEDIUM,
   onClick: A,
   children: I.intl.string(I.t.qYXrkZ)

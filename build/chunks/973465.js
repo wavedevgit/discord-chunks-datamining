@@ -26,7 +26,7 @@ function m() {
     {
       analyticsLocations: m
     } = (0, o.ZP)(),
-    g = r.useMemo(() => e.map(e => {
+    p = r.useMemo(() => e.map(e => {
       let {
         id: t,
         name: n
@@ -40,7 +40,7 @@ function m() {
     title: u.intl.string(u.t.FsQ3OT),
     children: (0, i.jsx)(l.q4e, {
       placeholder: u.intl.string(u.t["t9eQ/v"]),
-      options: g,
+      options: p,
       value: t,
       isDisabled: !n,
       onChange: e => a.Z.setVideoDevice(e, {

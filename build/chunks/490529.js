@@ -1,6 +1,6 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  X8: () => g,
+  X8: () => p,
   tI: () => m,
   uj: () => a
 }), n(539854);
@@ -58,7 +58,7 @@ let a = () => {
       }
     })
   },
-  g = e => ({
+  p = e => ({
     [s.gkr.HOUSE_1]: l.intl.string(l.t.ORKdHR),
     [s.gkr.HOUSE_2]: l.intl.string(l.t.aKf3dn),
     [s.gkr.HOUSE_3]: l.intl.string(l.t["21LOa2"])

@@ -18,8 +18,8 @@ function m(e) {
     guildTag: n,
     guildBadge: s,
     guildId: m,
-    guildName: g,
-    guildIcon: p,
+    guildName: p,
+    guildIcon: g,
     guildIconSize: h
   } = e, f = r.useRef(null), [b, x] = r.useState(!1);
   return r.useEffect(() => {
@@ -31,15 +31,15 @@ function m(e) {
       className: u.guildPrefixContainer,
       children: [(0, i.jsx)(o.Ft, {
         guildId: m,
-        guildName: g,
-        guildIcon: p,
+        guildName: p,
+        guildIcon: g,
         iconSize: h,
         className: u.guildPrefixIcon,
         animate: !1
       }), (0, i.jsx)("div", {
         className: u.details,
         children: (0, i.jsx)(a.ua7, {
-          text: g,
+          text: p,
           color: a.ua7.Colors.PRIMARY,
           shouldShow: b,
           children: e => {
@@ -65,7 +65,7 @@ function m(e) {
               ref: f
             }, e), n = n = {
               className: u.guildName,
-              children: g
+              children: p
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {

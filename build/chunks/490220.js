@@ -16,8 +16,8 @@ function m(e) {
   var t;
   let {
     user: m,
-    disabledInputs: g,
-    containerClassName: p
+    disabledInputs: p,
+    containerClassName: g
   } = e, {
     reducedMotion: h
   } = r.useContext(l.Sfi), {
@@ -53,7 +53,7 @@ function m(e) {
     image: null != C ? C : f
   }), N = (0, a.Z)(S, !1);
   return (0, i.jsx)(d.Z, {
-    containerClassName: p,
+    containerClassName: g,
     user: m,
     pendingPronouns: _,
     pendingBio: E,
@@ -66,6 +66,6 @@ function m(e) {
     canUsePremiumCustomization: !0,
     isTryItOutFlow: !0,
     hideExampleButton: !0,
-    disabledInputs: g
+    disabledInputs: p
   })
 }

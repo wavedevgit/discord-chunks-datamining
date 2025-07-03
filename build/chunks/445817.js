@@ -12,8 +12,8 @@ var i = n(255367),
   d = n(716161),
   u = n(672339),
   m = n(747545),
-  g = n(131951),
-  p = n(594174),
+  p = n(131951),
+  g = n(594174),
   h = n(981631),
   f = n(388032),
   b = n(959963);
@@ -27,7 +27,7 @@ function _(e) {
     previewEnabled: t,
     onEnablePreview: n,
     onCancelPreview: _
-  } = e, E = g.Z.getCameraComponent(), [j, C] = r.useState((0, c.P)(p.default.getCurrentUser())), O = r.useRef(!1), S = r.useRef(j), v = (0, o.O)(), T = (0, s.e7)([g.Z], () => g.Z.isVideoAvailable());
+  } = e, E = p.Z.getCameraComponent(), [j, C] = r.useState((0, c.P)(g.default.getCurrentUser())), O = r.useRef(!1), S = r.useRef(j), v = (0, o.O)(), T = (0, s.e7)([p.Z], () => p.Z.isVideoAvailable());
   return r.useEffect(() => () => {
     O.current && a.Z.wait(() => (0, d.Up)(S.current))
   }, []), (0, i.jsx)(m.Z, {

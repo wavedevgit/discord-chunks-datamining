@@ -13,8 +13,8 @@ var r = n(442837),
   d = n(737604),
   u = n(539873),
   m = n(550385),
-  g = n(767714),
-  p = n(626135),
+  p = n(767714),
+  g = n(626135),
   h = n(981631),
   f = n(474936),
   b = n(388032),
@@ -27,7 +27,7 @@ let _ = () => {
       analyticsLocations: e
     } = (0, c.ZP)(o.Z.USER_SETTINGS), t = (0, r.e7)([d.Z], () => d.Z.isUpsellPreview);
     return (0, a.ZP)(() => {
-      t && p.default.track(h.rMx.PREMIUM_UPSELL_VIEWED, {
+      t && g.default.track(h.rMx.PREMIUM_UPSELL_VIEWED, {
         type: f.cd.APP_ICON_UPSELL,
         location_stack: e
       })
@@ -42,7 +42,7 @@ let _ = () => {
             color: t ? s.zxk.Colors.PRIMARY : s.zxk.Colors.BRAND,
             onClick: () => _(),
             children: b.intl.string(b.t["hb/wEx"])
-          }), t ? (0, i.jsx)(g.Z, {
+          }), t ? (0, i.jsx)(p.Z, {
             className: x.tryItOutButton,
             showGradient: !1,
             subscriptionTier: f.Si.TIER_2,

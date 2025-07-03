@@ -12,8 +12,8 @@ var i = n(255367),
   d = n(230711),
   u = n(100527),
   m = n(906732),
-  g = n(266454),
-  p = n(314910),
+  p = n(266454),
+  g = n(314910),
   h = n(498646),
   f = n(981631),
   b = n(921944),
@@ -29,7 +29,7 @@ function C() {
       analyticsLocations: s
     } = (0, m.ZP)(u.Z.HOLIDAY_COACHMARK),
     h = e => {
-      (0, g.Q3)(o.z.CLICKER_COACHMARK, {
+      (0, p.Q3)(o.z.CLICKER_COACHMARK, {
         dismissAction: e,
         forceTrack: !0
       })
@@ -37,7 +37,7 @@ function C() {
   return (0, r.useEffect)(() => {
     var n, i;
     t ? null == (n = e.current) || n.play() : null == (i = e.current) || i.pause()
-  }, [t]), (0, i.jsx)(p.ZP, {
+  }, [t]), (0, i.jsx)(g.ZP, {
     children: (0, i.jsxs)(c.P3F, {
       className: l()(E.wrapper, {
         [E.wrapperHovered]: t
@@ -102,7 +102,7 @@ function C() {
 }
 
 function O() {
-  let e = (0, g.Nj)(o.z.CLICKER_COACHMARK),
+  let e = (0, p.Nj)(o.z.CLICKER_COACHMARK),
     {
       enableGame: t
     } = h.C.getCurrentConfig({

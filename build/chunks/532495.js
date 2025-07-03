@@ -13,8 +13,8 @@ var r = n(512722),
   d = n(74469),
   u = n(396402),
   m = n(150039),
-  g = n(126631),
-  p = n(433411),
+  p = n(126631),
+  g = n(433411),
   h = n(532432),
   f = n(349177),
   b = n(872736),
@@ -127,7 +127,7 @@ function D() {
       errors: K.avatar,
       sectionTitle: P.intl.string(P.t.lqaIxM),
       forcedDivider: !0
-    }, "avatar"), (0, i.jsx)(p.Z, {
+    }, "avatar"), (0, i.jsx)(g.Z, {
       user: L,
       sectionTitle: P.intl.string(P.t["7v0T9P"])
     }, "decoration"), (0, i.jsx)(x.Z, {
@@ -153,7 +153,7 @@ function D() {
       savedUserColor: null == B ? void 0 : B.accentColor,
       pendingColor: H,
       setPendingAccentColor: v.CM
-    }, "color"), (0, i.jsx)(g.Z, {
+    }, "color"), (0, i.jsx)(p.Z, {
       sectionTitle: P.intl.string(P.t.NepzEx),
       errors: er,
       onBioChange: e => (0, m.xQ)(e, null == B ? void 0 : B.bio),

@@ -1,6 +1,6 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => g
+  Z: () => p
 }), n(388685);
 var i = n(255367),
   r = n(73800),
@@ -43,7 +43,7 @@ let m = e => {
       })]
     })
   },
-  g = () => {
+  p = () => {
     let [e, t] = r.useState(0);
     return (0, i.jsxs)("div", {
       className: u.wrapper,

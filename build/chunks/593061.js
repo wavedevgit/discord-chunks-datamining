@@ -1,6 +1,6 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => g
+  Z: () => p
 }), n(388685);
 var i = n(255367),
   r = n(73800),
@@ -26,28 +26,28 @@ async function m(e) {
   }
 }
 
-function g(e) {
+function p(e) {
   let {
     payment: t
-  } = e, [n, s] = r.useState(null), [o, g] = r.useState(null), p = async e => {
+  } = e, [n, s] = r.useState(null), [o, p] = r.useState(null), g = async e => {
     try {
       let n = await m(t.id);
       s(n);
       let i = e ? n.refundInvoiceLinks[0] : n.invoiceLink;
-      window.open(i, "_blank"), g(null)
+      window.open(i, "_blank"), p(null)
     } catch (e) {
       var n;
-      g(null == (n = e.body) ? void 0 : n.message)
+      p(null == (n = e.body) ? void 0 : n.message)
     }
   }, h = null != t.paymentSource && t.status === c.Py.COMPLETED, f = null == n ? void 0 : n.invoiceLink, b = null == n ? void 0 : n.refundInvoiceLinks;
   return t.hasInvoiceURL && null == n ? (0, i.jsxs)("div", {
     className: u.downloadInvoice,
     children: [(0, i.jsx)(l.eee, {
-      onClick: () => p(!1),
+      onClick: () => g(!1),
       children: d.intl.string(d.t.R0xzCA)
     }), t.hasRefundInvoiceURLs ? (0, i.jsx)(l.eee, {
       className: u.downloadRefundInvoice,
-      onClick: () => p(!0),
+      onClick: () => g(!0),
       children: d.intl.string(d.t["3x6NGx"])
     }) : null, (0, i.jsx)(l.Text, {
       color: "text-danger",

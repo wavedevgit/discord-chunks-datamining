@@ -13,8 +13,8 @@ var r = n(704215),
   d = n(314910),
   u = n(378364),
   m = n(197344),
-  g = n(226625),
-  p = n(981631),
+  p = n(226625),
+  g = n(981631),
   h = n(921944),
   f = n(388032),
   b = n(963748);
@@ -29,7 +29,7 @@ function x(e) {
       dismissAction: e
     })
   }, E = () => {
-    l.Z.open(p.oAB.NOTIFICATIONS, null, {
+    l.Z.open(g.oAB.NOTIFICATIONS, null, {
       analyticsLocations: x
     }), _(h.L.SECONDARY)
   };
@@ -38,7 +38,7 @@ function x(e) {
       className: b.wrapper,
       children: [(0, i.jsxs)("div", {
         className: b.backgroundWrapper,
-        children: [(0, i.jsx)(g.Z, {
+        children: [(0, i.jsx)(p.Z, {
           className: b.backgroundImage,
           pageMultiplier: 5
         }), (0, i.jsx)("div", {

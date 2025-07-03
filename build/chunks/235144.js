@@ -1,6 +1,6 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => p
+  Z: () => g
 });
 var i = n(255367),
   r = n(73800),
@@ -12,16 +12,16 @@ var i = n(255367),
   d = n(321614),
   u = n(345655),
   m = n(388032),
-  g = n(20493);
+  p = n(20493);
 
-function p() {
+function g() {
   let {
     analyticsLocations: e
   } = (0, o.ZP)(), t = (0, s.e7)([c.Z], () => c.Z.getActiveInputProfile()), {
     enabledInputProfiles: n
   } = (0, d.c)({
     location: "UserSettingsInputProfile"
-  }), p = r.useCallback(t => {
+  }), g = r.useCallback(t => {
     let {
       value: n
     } = t;
@@ -48,9 +48,9 @@ function p() {
   });
   return (0, i.jsx)(l.xJW, {
     title: m.intl.string(m.t.LM3U3t),
-    className: g.marginBottom20,
+    className: p.marginBottom20,
     children: (0, i.jsx)(l.FXm, {
-      onChange: p,
+      onChange: g,
       options: h,
       value: null != t ? t : u._.CUSTOM
     })

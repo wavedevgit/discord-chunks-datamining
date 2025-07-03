@@ -14,10 +14,10 @@ var i = n(255367),
 let m = e => {
   let {
     entrypoint: t
-  } = e, n = (0, a.N)(), m = (0, l.Ng)(), g = (0, o.HI)({
+  } = e, n = (0, a.N)(), m = (0, l.Ng)(), p = (0, o.HI)({
     trialOffer: n
   });
   return (r.useEffect(() => {
-    !0 === g && (0, o.p9)(), (null != n || null != m) && (0, s.a)(n, m)
-  }, [n, m, g]), t === u.EZ.UserSettings) ? (0, i.jsx)(d.Z, {}) : t === u.EZ.ApplicationStoreHome ? (0, i.jsx)(c.Z, {}) : null
+    !0 === p && (0, o.p9)(), (null != n || null != m) && (0, s.a)(n, m)
+  }, [n, m, p]), t === u.EZ.UserSettings) ? (0, i.jsx)(d.Z, {}) : t === u.EZ.ApplicationStoreHome ? (0, i.jsx)(c.Z, {}) : null
 }

@@ -1,6 +1,6 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => g
+  Z: () => p
 }), n(388685);
 var i = n(255367),
   r = n(73800),
@@ -41,16 +41,16 @@ let c = "url(#gradient)",
         return
     }
   },
-  g = e => {
+  p = e => {
     let {
       percentage: t = 0,
       children: n,
       animationClassName: c,
-      initialPercentage: g = 0,
-      progressCircleStrokeSize: p = 2,
+      initialPercentage: p = 0,
+      progressCircleStrokeSize: g = 2,
       progressCircleVariation: h,
       progressCircleStroke: f
-    } = e, b = 43 + p / 2, x = 2 * Math.PI * b, [_, E] = r.useState(g);
+    } = e, b = 43 + g / 2, x = 2 * Math.PI * b, [_, E] = r.useState(p);
     r.useEffect(() => {
       let e = setTimeout(() => {
         E(t)
@@ -70,7 +70,7 @@ let c = "url(#gradient)",
         children: [(0, i.jsx)("circle", {
           className: h === a.Qo.NITRO_GEM || h === a.Qo.AVATAR_DECO ? o.baseProgressCircle : void 0,
           fill: "transparent",
-          strokeWidth: p,
+          strokeWidth: g,
           r: "".concat(b),
           cx: "50%",
           cy: "50%",
@@ -78,7 +78,7 @@ let c = "url(#gradient)",
           strokeOpacity: S
         }), (0, i.jsx)("circle", {
           stroke: v,
-          strokeWidth: p,
+          strokeWidth: g,
           strokeLinecap: "round",
           strokeDasharray: "".concat(x, " ").concat(x),
           className: c,

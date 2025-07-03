@@ -1,6 +1,6 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => p
+  Z: () => g
 }), n(388685);
 var i = n(255367),
   r = n(73800),
@@ -31,7 +31,7 @@ function m(e) {
   return e
 }
 
-function g(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -44,15 +44,15 @@ function g(e, t) {
   }), e
 }
 
-function p(e) {
+function g(e) {
   let {
     subscriptions: t,
     updateHeader: n
-  } = e, [p, h] = r.useState({
+  } = e, [g, h] = r.useState({
     route: c.j.HOME
   }), {
     route: f
-  } = p, b = () => {
+  } = g, b = () => {
     h({
       route: c.j.HOME
     })
@@ -65,14 +65,14 @@ function p(e) {
     for (let n of t) {
       var e;
       let t = null == (e = n.items[0]) ? void 0 : e.planId;
-      null != t && (E(e => g(m({}, e), {
+      null != t && (E(e => p(m({}, e), {
         [n.id]: o.G.LOADING
       })), (0, l.vY)(t).then(() => {
-        E(e => g(m({}, e), {
+        E(e => p(m({}, e), {
           [n.id]: o.G.DONE
         }))
       }).catch(() => {
-        E(e => g(m({}, e), {
+        E(e => p(m({}, e), {
           [n.id]: o.G.ERROR
         }))
       }))
@@ -96,7 +96,7 @@ function p(e) {
     case c.j.SWITCH_APP_PLANS:
       let {
         route: O
-      } = p, S = function(e, t) {
+      } = g, S = function(e, t) {
         if (null == e) return {};
         var n, i, r = function(e, t) {
           if (null == e) return {};
@@ -110,8 +110,8 @@ function p(e) {
           for (i = 0; i < s.length; i++) n = s[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
         }
         return r
-      }(p, ["route"]);
-      return (0, i.jsx)(d.Z, g(m({}, S), {
+      }(g, ["route"]);
+      return (0, i.jsx)(d.Z, p(m({}, S), {
         navigateToHome: b
       }));
     default:

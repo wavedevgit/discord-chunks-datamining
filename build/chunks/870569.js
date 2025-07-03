@@ -17,8 +17,8 @@ let d = r.forwardRef(function(e, t) {
     onClick: d,
     disabled: u,
     icon: m,
-    iconForeground: g,
-    innerClassName: p,
+    iconForeground: p,
+    innerClassName: g,
     className: h,
     redGlow: f,
     orangeGlow: b,
@@ -36,7 +36,7 @@ let d = r.forwardRef(function(e, t) {
     width: 20,
     height: 20,
     size: "custom",
-    colorClass: null != g ? g : "",
+    colorClass: null != p ? p : "",
     color: "currentColor"
   }) : m;
   return (0, i.jsx)(a.ua7, {
@@ -48,7 +48,7 @@ let d = r.forwardRef(function(e, t) {
     forceOpen: v,
     children: e => {
       var n, m, {
-          onClick: g,
+          onClick: p,
           onMouseEnter: x,
           onMouseLeave: j
         } = e,
@@ -89,7 +89,7 @@ let d = r.forwardRef(function(e, t) {
         look: a.zxk.Looks.BLANK,
         size: a.zxk.Sizes.NONE,
         disabled: u,
-        innerClassName: p,
+        innerClassName: g,
         wrapperClassName: l()(c.button, h),
         className: l()(c.button, h, {
           [c.redGlow]: f,
@@ -100,7 +100,7 @@ let d = r.forwardRef(function(e, t) {
           [c.plateMuted]: f && N
         }),
         onClick: e => {
-          null != g && g(), null != d && d(e)
+          null != p && p(), null != d && d(e)
         },
         onMouseEnter: () => {
           null == x || x(), null == _ || _()

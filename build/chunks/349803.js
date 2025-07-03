@@ -13,8 +13,8 @@ var r = n(120356),
   d = n(639119),
   u = n(736519),
   m = n(784238),
-  g = n(474936),
-  p = n(981631),
+  p = n(474936),
+  g = n(981631),
   h = n(993229);
 let f = function(e) {
   var t, n;
@@ -23,7 +23,7 @@ let f = function(e) {
     subscriptionTier: f,
     isApplicationHome: b,
     isEligibleForBogoPromotion: x
-  } = e, _ = null == (t = (0, d.N)()) ? void 0 : t.subscription_trial, E = (0, c.Ng)(), j = (0, c.Wp)(E, g.Si.TIER_2) ? g.Si.TIER_2 : void 0, C = (0, a.q_F)({
+  } = e, _ = null == (t = (0, d.N)()) ? void 0 : t.subscription_trial, E = (0, c.Ng)(), j = (0, c.Wp)(E, p.Si.TIER_2) ? p.Si.TIER_2 : void 0, C = (0, a.q_F)({
     transform: r ? "translateY(-100%)" : "translateY(0%)",
     opacity: +!!r,
     config: {
@@ -31,7 +31,7 @@ let f = function(e) {
       friction: 12
     }
   }), O = {
-    section: p.jXE.MARKETING_FLOATING_CTA
+    section: g.jXE.MARKETING_FLOATING_CTA
   }, S = (0, o.ZP)(), v = (0, a.wjy)(S);
   return (0, i.jsx)(l.animated.div, {
     className: s()(h.wrapper, {

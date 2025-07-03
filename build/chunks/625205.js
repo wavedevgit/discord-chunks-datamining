@@ -12,21 +12,21 @@ var i = n(255367),
   d = n(72897),
   u = n(463395),
   m = n(131951),
-  g = n(358085),
-  p = n(210887),
+  p = n(358085),
+  g = n(210887),
   h = n(494620),
   f = n(962100),
   b = n(65154),
   x = n(388032),
   _ = n(209782),
   E = n(20493);
-let j = g.isWindows() ? ["BTHENUM", "BTHHFENUM"] : [];
+let j = p.isWindows() ? ["BTHENUM", "BTHHFENUM"] : [];
 
 function C() {
   let e, t, {
-      analyticsLocations: g
+      analyticsLocations: p
     } = (0, c.ZP)(),
-    C = (0, s.e7)([p.Z], () => p.Z.theme),
+    C = (0, s.e7)([g.Z], () => g.Z.theme),
     {
       canSetInputDevice: O,
       canSetOutputDevice: S,
@@ -112,7 +112,7 @@ function C() {
             value: v,
             onChange: e => o.Z.setInputDevice(e, {
               location: "Settings",
-              analyticsLocations: g
+              analyticsLocations: p
             }),
             options: N.map(e => {
               let {
@@ -137,7 +137,7 @@ function C() {
             value: T,
             onChange: e => o.Z.setOutputDevice(e, {
               location: "Settings",
-              analyticsLocations: g
+              analyticsLocations: p
             }),
             options: I.map(e => {
               let {

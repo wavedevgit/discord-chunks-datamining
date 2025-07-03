@@ -49,8 +49,8 @@ function u(e) {
     focusProps: r,
     variant: u = "primary",
     textVariant: m = "text-md/medium",
-    lineClamp: g = 1,
-    className: p,
+    lineClamp: p = 1,
+    className: g,
     style: h
   } = e, f = function(e, t) {
     if (null == e) return {};
@@ -76,7 +76,7 @@ function u(e) {
         tag: "span",
         variant: m,
         color: "none",
-        lineClamp: g,
+        lineClamp: p,
         className: o.text,
         children: n
       })

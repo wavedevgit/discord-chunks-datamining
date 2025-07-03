@@ -12,8 +12,8 @@ var i, r = n(255367),
   d = n(392711),
   u = n.n(d),
   m = n(481060),
-  g = n(600164),
-  p = n(13140),
+  p = n(600164),
+  g = n(13140),
   h = n(388032),
   f = n(556707);
 
@@ -56,7 +56,7 @@ class E extends s.PureComponent {
         value: n,
         disabled: i
       } = this.props,
-      s = (0, p.BB)(n, !0);
+      s = (0, g.BB)(n, !0);
     e = "RECORDING" === t ? h.intl.string(h.t.bmOri4) : 0 === n.length ? h.intl.string(h.t.co3wt7) : h.intl.string(h.t.idFMvL);
     let l = "DEFAULT" === t && n.length > 0;
     return (0, r.jsx)(m.tEY, {
@@ -70,9 +70,9 @@ class E extends s.PureComponent {
           [f.hasValue]: l,
           [f.containerDisabled]: i
         }),
-        children: (0, r.jsxs)(g.Z, {
+        children: (0, r.jsxs)(p.Z, {
           className: f.recorderLayout,
-          children: [(0, r.jsx)(g.Z.Child, {
+          children: [(0, r.jsx)(p.Z.Child, {
             className: f.keybindInput,
             children: (0, r.jsx)("input", {
               id: this._inputId,
@@ -83,7 +83,7 @@ class E extends s.PureComponent {
               value: s,
               disabled: "RECORDING" !== this.props.mode || i
             })
-          }), (0, r.jsx)(g.Z, {
+          }), (0, r.jsx)(p.Z, {
             shrink: 1,
             grow: 0,
             style: {

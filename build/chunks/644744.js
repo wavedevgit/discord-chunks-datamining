@@ -13,7 +13,7 @@ var i = n(255367),
   u = n(388032),
   m = n(962311);
 
-function g(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -21,7 +21,7 @@ function g(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let p = {
+let g = {
     [d.gkr.HOUSE_1]: m.membershipDialogHouse1,
     [d.gkr.HOUSE_2]: m.membershipDialogHouse2,
     [d.gkr.HOUSE_3]: m.membershipDialogHouse3
@@ -54,7 +54,7 @@ class x extends r.Component {
         houseName: (0, c.X8)(e)
       });
       return (0, i.jsx)("div", {
-        className: l()(m.membershipDialog, p[e]),
+        className: l()(m.membershipDialog, g[e]),
         children: (0, i.jsxs)("div", {
           className: m.membershipDialogContent,
           children: [(0, i.jsxs)(o.Z, {
@@ -128,7 +128,7 @@ class x extends r.Component {
     })
   }
   constructor(...e) {
-    super(...e), g(this, "handleJoinHypeSquadClick", () => {
+    super(...e), p(this, "handleJoinHypeSquadClick", () => {
       (0, a.ZDy)(async () => {
         let {
           default: e
@@ -140,7 +140,7 @@ class x extends r.Component {
             "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
               return Object.getOwnPropertyDescriptor(n, e).enumerable
             }))), i.forEach(function(t) {
-              g(e, t, n[t])
+              p(e, t, n[t])
             })
           }
           return e

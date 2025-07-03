@@ -1,6 +1,6 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => p
+  Z: () => g
 });
 var i = n(255367);
 n(73800);
@@ -13,24 +13,24 @@ var r = n(120356),
   d = n(787528),
   u = n(388032),
   m = n(536564);
-let g = (e, t) => (null == e ? void 0 : e.status) === c.Vq.EARNED ? u.intl.format(u.t.Hu4jfn, {
+let p = (e, t) => (null == e ? void 0 : e.status) === c.Vq.EARNED ? u.intl.format(u.t.Hu4jfn, {
     date: null != t ? t : new Date
   }) : (null == e ? void 0 : e.status) === c.Vq.UPCOMING ? u.intl.format(u.t.E85flp, {
     date: null != t ? t : new Date,
     days: e.daysLeft
   }) : null,
-  p = () => {
+  g = () => {
     var e;
     let t = (0, c.Rw)(),
       n = null != (e = (0, c.GG)()) ? e : new Date,
       r = (0, d.u)(null == t ? void 0 : t.id);
     if (null == t || null == r) return null;
     let {
-      id: p,
+      id: g,
       nameUnformatted: h,
       tenureReqNumMonths: f,
       hasWideArt: b
-    } = t, x = u.intl.string(h), _ = (0, o.q)(p, f), E = {
+    } = t, x = u.intl.string(h), _ = (0, o.q)(g, f), E = {
       "--custom-badge-glow-color": (0, a.rj)(t.glowColor, .5)
     };
     return (0, i.jsxs)("div", {
@@ -55,7 +55,7 @@ let g = (e, t) => (null == e ? void 0 : e.status) === c.Vq.EARNED ? u.intl.forma
           children: _
         }), (0, i.jsx)(l.xv, {
           variant: "text-xs/normal",
-          children: g(t, n)
+          children: p(t, n)
         })]
       })]
     })

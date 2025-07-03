@@ -19,9 +19,9 @@ function c(e) {
       onClick: d,
       disabled: u,
       children: m,
-      muted: g = !1
+      muted: p = !1
     } = e,
-    p = function(e, t) {
+    g = function(e, t) {
       if (null == e) return {};
       var n, i, r = function(e, t) {
         if (null == e) return {};
@@ -53,8 +53,8 @@ function c(e) {
       })
     }
     return e
-  }({}, p), n = n = {
-    muted: g,
+  }({}, g), n = n = {
+    muted: p,
     className: s()(u ? a.buttonDisabled : a.buttonEnabled, o[c], r),
     onClick: u ? void 0 : d,
     children: m

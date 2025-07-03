@@ -18,8 +18,8 @@ let d = e => {
     buttonClassName: d,
     perkImage: u,
     isCarousel: m,
-    onCtaClick: g,
-    perkComponent: p,
+    onCtaClick: p,
+    perkComponent: g,
     subtitle: h = "",
     descriptionCta: f = "",
     cardVariant: b,
@@ -52,12 +52,12 @@ let d = e => {
           children: _
         })
       }) : null]
-    }), null != p && (0, i.jsxs)("div", {
+    }), null != g && (0, i.jsxs)("div", {
       className: c.cardIllustrationNoHover,
-      children: [p, 0 !== f.length && null != g && (0, i.jsx)(l.zxk, {
+      children: [g, 0 !== f.length && null != p && (0, i.jsx)(l.zxk, {
         className: d,
         fullWidth: !0,
-        onClick: g,
+        onClick: p,
         children: (0, i.jsx)("div", {
           className: null == E || null == (t = E.descriptionCta) ? void 0 : t.className,
           children: f

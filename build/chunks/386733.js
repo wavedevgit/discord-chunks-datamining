@@ -12,8 +12,8 @@ var i = n(255367),
   d = n(906732),
   u = n(518950),
   m = n(598077),
-  g = n(626135),
-  p = n(63063),
+  p = n(626135),
+  g = n(63063),
   h = n(281494),
   f = n(276444),
   b = n(796634),
@@ -131,7 +131,7 @@ let T = e => {
     let {
       analyticsLocations: t
     } = e;
-    g.default.track(E.rMx.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
+    p.default.track(E.rMx.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
       location_stack: t
     }), (0, o.ZDy)(async () => {
       let {
@@ -147,21 +147,21 @@ let T = e => {
       isInSettings: t = !1
     } = e, n = (0, a.e7)([f.Z], () => f.Z.getRecipientStatus()), {
       referralSentUsers: s
-    } = (0, b.G)(), u = r.useMemo(() => s.map(e => new m.Z(e)), [s]), g = {
+    } = (0, b.G)(), u = r.useMemo(() => s.map(e => new m.Z(e)), [s]), p = {
       redeemed: 0,
       converted: 0,
       sent: n.size
     };
     n.forEach(e => {
-      e === h.Fe.REDEEMED && g.redeemed++, e === h.Fe.CONVERTED && (g.redeemed++, g.converted++)
+      e === h.Fe.REDEEMED && p.redeemed++, e === h.Fe.CONVERTED && (p.redeemed++, p.converted++)
     });
-    let S = g.sent === b.Q,
-      v = p.Z.getArticleURL(E.BhN.REFERRAL_PROGRAM),
+    let S = p.sent === b.Q,
+      v = g.Z.getArticleURL(E.BhN.REFERRAL_PROGRAM),
       {
         analyticsLocations: T
       } = (0, d.ZP)(c.Z.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR),
       N = r.useRef(null),
-      A = g.sent / b.Q * 100,
+      A = p.sent / b.Q * 100,
       P = (0, i.jsxs)("div", {
         className: C.referralInfoContent,
         children: [(0, i.jsx)(x.ZP, {
@@ -185,7 +185,7 @@ let T = e => {
             variant: t ? "text-sm/normal" : "text-lg/medium",
             children: (0, _.Hg)({
               helpdeskArticle: v,
-              referralsStatuses: g
+              referralsStatuses: p
             })
           }), (0, i.jsx)("div", {
             className: l()(C.expandedProgressBarButtonContainer, {
@@ -210,7 +210,7 @@ let T = e => {
           })]
         })]
       }),
-      R = g.redeemed === b.Q;
+      R = p.redeemed === b.Q;
     return (0, i.jsx)(d.Gt, {
       value: T,
       children: (0, i.jsx)("div", {

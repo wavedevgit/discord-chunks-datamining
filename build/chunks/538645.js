@@ -12,8 +12,8 @@ var i = n(255367),
   d = n(53281),
   u = n(281598),
   m = n(25251),
-  g = n(373071),
-  p = n(782691),
+  p = n(373071),
+  g = n(782691),
   h = n(662583);
 let f = "Make sure you're only uploading text files!",
   b = e => {
@@ -23,7 +23,7 @@ let f = "Make sure you're only uploading text files!",
       onClick: a
     } = e, {
       deleteConfig: o
-    } = (0, g.n6)();
+    } = (0, p.n6)();
     return (0, i.jsxs)(c.P3F, {
       className: h.previewCard,
       onClick: () => {
@@ -62,7 +62,7 @@ function _() {
   let {
     profileEffects: e,
     upsertConfig: t
-  } = (0, g.n6)(), [n, s] = r.useState(), _ = r.useRef(null), E = (0, o.Wu)([m.Z], () => m.Z.profileEffects), [j, C] = r.useState(""), O = r.useMemo(() => "" === j ? E : E.filter(e => {
+  } = (0, p.n6)(), [n, s] = r.useState(), _ = r.useRef(null), E = (0, o.Wu)([m.Z], () => m.Z.profileEffects), [j, C] = r.useState(""), O = r.useMemo(() => "" === j ? E : E.filter(e => {
     let t = j.toLowerCase();
     return e.config.title.toLowerCase().includes(t) || e.config.description.toLowerCase().includes(t)
   }), [j, E]), S = r.useCallback((e, n) => {
@@ -153,7 +153,7 @@ function _() {
           }, e.id))
         })]
       })]
-    }), null != n && (0, i.jsx)(p.Z, {
+    }), null != n && (0, i.jsx)(g.Z, {
       effect: n
     })]
   })

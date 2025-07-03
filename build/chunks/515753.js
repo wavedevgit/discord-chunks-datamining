@@ -15,8 +15,8 @@ var i = n(255367),
   d = n(91192),
   u = n(873546),
   m = n(442837),
-  g = n(481060),
-  p = n(493683),
+  p = n(481060),
+  g = n(493683),
   h = n(239091),
   f = n(420660),
   b = n(468363),
@@ -102,7 +102,7 @@ function ee(e, t) {
   }
   return r
 }
-let et = K.ZP.getEnableHardwareAcceleration() ? g.Xo$ : g.qEK,
+let et = K.ZP.getEnableHardwareAcceleration() ? p.Xo$ : p.qEK,
   en = {
     offset: {
       top: 2,
@@ -114,7 +114,7 @@ let et = K.ZP.getEnableHardwareAcceleration() ? g.Xo$ : g.qEK,
     let {
       nameplate: t
     } = e, n = (0, Z.A)(t);
-    return (0, i.jsx)(g.P3F, $(J({
+    return (0, i.jsx)(p.P3F, $(J({
       className: l()(Q.closeButton, {
         [Q.closeButtonPlated]: null != t
       }),
@@ -132,7 +132,7 @@ let et = K.ZP.getEnableHardwareAcceleration() ? g.Xo$ : g.qEK,
         className: l()({
           [Q.innerCloseButtonPlated]: null != t
         }),
-        children: (0, i.jsx)(g.Dio, {
+        children: (0, i.jsx)(p.Dio, {
           size: "md",
           color: "currentColor",
           className: l()(Q.closeIcon, {
@@ -142,17 +142,17 @@ let et = K.ZP.getEnableHardwareAcceleration() ? g.Xo$ : g.qEK,
       })
     }))
   },
-  er = () => (0, i.jsx)(g.r7p, {
+  er = () => (0, i.jsx)(p.r7p, {
     size: "xs",
     color: "currentColor",
     className: Q.favoriteIcon
   }),
-  es = () => (0, i.jsx)(g.kZF, {
+  es = () => (0, i.jsx)(p.kZF, {
     size: "xs",
     color: "currentColor",
     className: Q.favoriteIcon
   }),
-  el = () => (0, i.jsx)(g.t6m, {
+  el = () => (0, i.jsx)(p.t6m, {
     size: "xs",
     color: "currentColor",
     className: Q.favoriteIcon
@@ -167,7 +167,7 @@ let et = K.ZP.getEnableHardwareAcceleration() ? g.Xo$ : g.qEK,
       text: o,
       children: d,
       locationState: m,
-      onClick: p,
+      onClick: g,
       className: h,
       role: f,
       "aria-posinset": b,
@@ -178,7 +178,7 @@ let et = K.ZP.getEnableHardwareAcceleration() ? g.Xo$ : g.qEK,
       className: l()(Q.channel, {
         [Q.fullWidth]: u.tq
       }, h),
-      onClick: p,
+      onClick: g,
       role: f,
       focusProps: J({
         within: !0
@@ -186,7 +186,7 @@ let et = K.ZP.getEnableHardwareAcceleration() ? g.Xo$ : g.qEK,
       "aria-posinset": b,
       "aria-setsize": x,
       ref: _,
-      children: (0, i.jsx)(g.vjx, {
+      children: (0, i.jsx)(p.vjx, {
         as: "div",
         selected: n,
         className: l()(a, Q.interactive, Q.linkButton, {
@@ -231,12 +231,12 @@ function eo(e) {
     "aria-posinset": Y,
     "aria-setsize": W
   } = e, [K, ea] = r.useState(!1), [eo, ec] = r.useState(!1), ed = r.useRef(null), eu = r.useRef(null), em = null != H ? H : eu, {
-    avatarSrc: eg,
-    avatarDecorationSrc: ep,
+    avatarSrc: ep,
+    avatarDecorationSrc: eg,
     eventHandlers: eh
   } = (0, M.Z)({
     user: u,
-    size: g.EFr.SIZE_32,
+    size: p.EFr.SIZE_32,
     animateOnHover: !(a || K || eo)
   }), ef = t.isMultiUserDM(), eb = t.isSystemDM(), ex = (0, B.Q)(), e_ = !ef && !eb && t.type === q.d4z.DM, eE = e_ && (null == u ? void 0 : u.primaryGuild) != null, ej = (0, m.e7)([z.ZP], () => z.ZP.isChannelMuted(t.getGuildId(), t.id)), {
     ignored: eC,
@@ -254,9 +254,9 @@ function eo(e) {
     ec(!1)
   }, ek = function(e) {
     let n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-    null != e && (e.preventDefault(), e.stopPropagation()), p.Z.closePrivateChannel(t.id, a, n)
+    null != e && (e.preventDefault(), e.stopPropagation()), g.Z.closePrivateChannel(t.id, a, n)
   }, eL = () => {
-    p.Z.preload(q.ME, t.id)
+    g.Z.preload(q.ME, t.id)
   }, eB = e => {
     e.stopPropagation()
   }, eM = e => {
@@ -297,7 +297,7 @@ function eo(e) {
       name: eI
     }), s = X.intl.format(X.t.IK1Qvr, {
       name: eI
-    })), (0, g.ZDy)(async () => {
+    })), (0, p.ZDy)(async () => {
       let {
         default: e
       } = await n.e("14604").then(n.bind(n, 960670));
@@ -330,7 +330,7 @@ function eo(e) {
     textClassName: Q.activityStatusText,
     iconClassName: eT ? Q.mutedIcon : void 0
   }) : null, eF = () => {
-    let e = g.EFr.SIZE_32;
+    let e = p.EFr.SIZE_32;
     if (t.isMultiUserDM())
       if (t.recipients.length >= 2 && s && null == t.icon) return (0, i.jsx)(P.Z, {
         "aria-hidden": !0,
@@ -349,9 +349,9 @@ function eo(e) {
     o()(null != u, "PrivateChannel.renderAvatar: Invalid prop configuration - no user or channel");
     let n = null;
     return u.isSystemUser() || (n = (0, f.Z)(b) ? q.Skl.STREAMING : Z), (0, i.jsx)(et, $(J({}, eh), {
-      size: g.EFr.SIZE_32,
-      src: eg,
-      avatarDecoration: ep,
+      size: p.EFr.SIZE_32,
+      src: ep,
+      avatarDecoration: eg,
       status: n,
       isMobile: U,
       isTyping: D,
@@ -395,7 +395,7 @@ function eo(e) {
           className: l()(Q.unreadPill, {
             [Q.muted]: eT
           })
-        }) : null, (0, i.jsxs)(g.vjx, {
+        }) : null, (0, i.jsxs)(p.vjx, {
           className: l()(Q.interactive, {
             [Q.interactiveSystemDM]: ex && eb,
             [Q.interactiveSelected]: a
@@ -485,11 +485,11 @@ let ec = 12633 == n.j ? e => {
       location: "PrivateChannel"
     }),
     {
-      voiceChannel: g
+      voiceChannel: p
     } = (0, _.Z)({
       userId: c
     }),
-    p = (0, D.K)({
+    g = (0, D.K)({
       user: s
     }),
     h = (0, m.e7)([Y.default, H.Z], () => {
@@ -511,8 +511,8 @@ let ec = 12633 == n.j ? e => {
     channel: t,
     selected: n,
     user: s,
-    voiceChannel: u ? g : void 0,
+    voiceChannel: u ? p : void 0,
     isTyping: h,
-    nameplate: p
+    nameplate: g
   }, r, d))
 } : null

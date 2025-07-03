@@ -12,8 +12,8 @@ var i = n(255367),
   d = n(1585),
   u = n(580747),
   m = n(345861),
-  g = n(150039),
-  p = n(993413),
+  p = n(150039),
+  g = n(993413),
   h = n(388032),
   f = n(142436);
 
@@ -33,12 +33,12 @@ function b(e) {
     guildAvatarDecoration: S,
     pendingAvatarDecoration: v,
     pendingErrors: T
-  } = (0, g.$U)(t, n), N = (0, u.Z)("enable_avatar_decoration_uploads"), I = r.useCallback(() => (0, d.ps)({
+  } = (0, p.$U)(t, n), N = (0, u.Z)("enable_avatar_decoration_uploads"), I = r.useCallback(() => (0, d.ps)({
     analyticsLocations: j,
     isTryItOutFlow: E,
     guild: n
   }), [j, E, n]), y = E || void 0 !== v ? null != v : (C ? S : O) != null, A = _ ? a.gtL : a.zxk;
-  return (0, i.jsxs)(p.Z, {
+  return (0, i.jsxs)(g.Z, {
     className: s,
     forcedDivider: b,
     hasBackground: !0,
@@ -59,7 +59,7 @@ function b(e) {
         look: a.zxk.Looks.LINK,
         size: a.zxk.Sizes.SMALL,
         onClick: function() {
-          (0, g.PO)(null == n ? void 0 : n.id, null)
+          (0, p.PO)(null == n ? void 0 : n.id, null)
         },
         children: (0, c.ad)(t, n) ? h.intl.string(h.t.CHf9iI) : h.intl.string(h.t.OrokWl)
       })]

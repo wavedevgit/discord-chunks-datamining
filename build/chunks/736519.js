@@ -1,6 +1,6 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => g
+  Z: () => p
 });
 var i = n(255367);
 n(73800);
@@ -13,13 +13,13 @@ var r = n(120356),
   d = n(474936),
   u = n(388032),
   m = n(638068);
-let g = e => {
+let p = e => {
   let {
     className: t,
     textOptions: n,
     color: r,
-    look: g,
-    hideIcon: p,
+    look: p,
+    hideIcon: g,
     subscriptionTier: h,
     premiumModalAnalyticsLocation: f,
     giftMessage: b,
@@ -39,10 +39,10 @@ let g = e => {
       return (0, i.jsxs)(a.zxk, {
         innerClassName: m.innerGiftButton,
         color: null != r ? r : (0, l.wj)(_) ? a.Ttl.WHITE : a.Ttl.BRAND,
-        look: null != g ? g : a.iLD.OUTLINED,
+        look: null != p ? p : a.iLD.OUTLINED,
         className: s()(t, m.giftButton),
         onClick: c,
-        children: [!p && (0, i.jsx)(a.OgN, {
+        children: [!g && (0, i.jsx)(a.OgN, {
           size: "md",
           color: "currentColor",
           className: m.giftIcon

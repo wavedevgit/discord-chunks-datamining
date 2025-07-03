@@ -13,8 +13,8 @@ var r = n(442837),
   d = n(246946),
   u = n(594174),
   m = n(626135),
-  g = n(51144),
-  p = n(480387),
+  p = n(51144),
+  g = n(480387),
   h = n(726745),
   f = n(251423),
   b = n(383832),
@@ -34,7 +34,7 @@ function j(e) {
         location: {
           section: x.jXE.USER_PROFILE
         }
-      }), p.yD(e))
+      }), g.yD(e))
     },
     S = C.map(r => {
       let s = new c.Z(r),
@@ -59,7 +59,7 @@ function j(e) {
               children: [(0, i.jsx)(l.Text, {
                 className: E.userMenuText,
                 variant: "text-sm/normal",
-                children: g.ZP.getUserTag(s, {
+                children: p.ZP.getUserTag(s, {
                   mode: "username",
                   identifiable: n ? "never" : "always"
                 })

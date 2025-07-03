@@ -12,8 +12,8 @@ var i = n(255367),
   d = n(956097),
   u = n(921801),
   m = n(695103),
-  g = n(998502),
-  p = n(740492),
+  p = n(998502),
+  g = n(740492),
   h = n(695346),
   f = n(494620),
   b = n(399970),
@@ -42,7 +42,7 @@ function C(e) {
 }
 
 function O() {
-  let [e] = r.useState(() => g.ZP.getEnableHardwareAcceleration()), t = h.bm.useSetting(), n = h.Sb.useSetting(), O = (0, s.e7)([m.Z], () => m.Z.testModeApplicationId), S = (0, s.e7)([p.ZP], () => p.ZP.showPlayAgain), v = r.useCallback(e => {
+  let [e] = r.useState(() => p.ZP.getEnableHardwareAcceleration()), t = h.bm.useSetting(), n = h.Sb.useSetting(), O = (0, s.e7)([m.Z], () => m.Z.testModeApplicationId), S = (0, s.e7)([g.ZP], () => g.ZP.showPlayAgain), v = r.useCallback(e => {
     h.bm.updateSetting(!e)
   }, []), T = r.useCallback(e => {
     e ? (0, l.h7j)(e => (0, i.jsx)(b.Z, C({}, e))) : a.mc()
@@ -56,7 +56,7 @@ function O() {
         header: E.intl.string(E.t.aqpAvr),
         confirmText: E.intl.string(E.t.vT7ckp),
         cancelText: E.intl.string(E.t["ETE/oK"]),
-        onConfirm: () => g.ZP.setEnableHardwareAcceleration(e)
+        onConfirm: () => p.ZP.setEnableHardwareAcceleration(e)
       }, t), r = r = {
         children: (0, i.jsx)(l.Text, {
           variant: "text-sm/normal",

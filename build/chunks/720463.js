@@ -13,8 +13,8 @@ var i = n(255367),
   d = n(70097),
   u = n(751648),
   m = n(790542),
-  g = n(317257),
-  p = n(970815),
+  p = n(317257),
+  g = n(970815),
   h = n(622562),
   f = n(937860),
   b = n(335346),
@@ -124,11 +124,11 @@ function T(e) {
       top: 84,
       right: 32
     },
-    children: [(0, i.jsx)(p.A4, {
+    children: [(0, i.jsx)(g.A4, {
       isInModalOverlay: !0,
       onClick: c,
       balance: a,
-      balanceWidgetMode: g.b.DEFAULT
+      balanceWidgetMode: p.b.DEFAULT
     }), (0, i.jsx)(v, {
       onClose: o
     })]

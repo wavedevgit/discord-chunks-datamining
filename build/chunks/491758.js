@@ -12,8 +12,8 @@ var i = n(255367),
   d = n(230711),
   u = n(825209),
   m = n(706454),
-  g = n(494620),
-  p = n(131951),
+  p = n(494620),
+  g = n(131951),
   h = n(556296),
   f = n(924557),
   b = n(435064),
@@ -31,7 +31,7 @@ var i = n(255367),
   y = n(20493);
 
 function A() {
-  let e = (0, a.e7)([p.Z], () => p.Z.getHardwareEncoding()),
+  let e = (0, a.e7)([g.Z], () => g.Z.getHardwareEncoding()),
     {
       clipsEnabled: t,
       remindersEnabled: n,
@@ -42,7 +42,7 @@ function A() {
     R = (0, a.e7)([b.Z], () => b.Z.getHardwareClassification()),
     D = (0, a.e7)([h.ZP], () => h.ZP.getKeybindForAction(O.kg4.SAVE_CLIP, !0)),
     Z = b.Z.isDecoupledGameClippingEnabled(),
-    w = (0, _.Z)(p.Z),
+    w = (0, _.Z)(g.Z),
     {
       showClipsHeaderEntrypoint: k
     } = f.NV.useExperiment({
@@ -143,16 +143,16 @@ function A() {
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)(o.hjN, {
       disabled: !e,
-      children: [!e && (0, i.jsx)(g.Z, {
-        look: g.z.WARNING,
+      children: [!e && (0, i.jsx)(p.Z, {
+        look: p.z.WARNING,
         className: I.formItem,
         children: T.intl.format(T.t.kiaF4e, {
           onClick: () => d.Z.open(O.oAB.VOICE, v.gP, {
             scrollPosition: v.KQ.VoiceAndVideoScrollPositions.HARDWARE_ACCELERATION
           })
         })
-      }), R === x.x.BELOW_MINIMUM ? (0, i.jsx)(g.Z, {
-        look: g.z.WARNING,
+      }), R === x.x.BELOW_MINIMUM ? (0, i.jsx)(p.Z, {
+        look: p.z.WARNING,
         className: I.formItem,
         children: T.intl.string(T.t.SIxrIC)
       }) : null, (0, i.jsx)(o.j7V, {
@@ -166,7 +166,7 @@ function A() {
           trackAnalytics: !0
         }),
         children: T.intl.string(T.t.h8rgrK)
-      }), e && (0, i.jsx)(g.Z, {
+      }), e && (0, i.jsx)(p.Z, {
         className: I.formItem,
         children: T.intl.string(T.t["Z+Mfqa"])
       })]

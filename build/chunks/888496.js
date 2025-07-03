@@ -3,7 +3,7 @@ n.d(t, {
   Dq: () => f,
   hf: () => _,
   li: () => b,
-  oP: () => p,
+  oP: () => g,
   rJ: () => h,
   rm: () => E,
   ul: () => x
@@ -19,9 +19,9 @@ var r = n(120356),
   d = n(275759),
   u = n(856651),
   m = n(388032),
-  g = n(566825);
+  p = n(566825);
 
-function p(e) {
+function g(e) {
   var t;
   let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : void 0,
     r = [],
@@ -90,7 +90,7 @@ function b(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : void 0,
     n = [];
   return "1" === e[u.PC.PAYPAL_VERIFIED] && n.push((0, i.jsx)(S, {
-    className: s()(t, g.paypalVerifiedTag),
+    className: s()(t, p.paypalVerifiedTag),
     label: m.intl.string(m.t.IhXLy8)
   }, u.PC.PAYPAL_VERIFIED)), n
 }
@@ -198,7 +198,7 @@ function j(e) {
   }) : m.intl.format(r, {
     value: d
   }), (0, i.jsx)(o.Text, {
-    className: s()(g.connectedAccountVanityMetadata, l),
+    className: s()(p.connectedAccountVanityMetadata, l),
     variant: "text-xs/normal",
     color: "interactive-active",
     children: t
@@ -213,7 +213,7 @@ function C(e) {
     className: l
   } = e;
   return (0, i.jsx)(o.Text, {
-    className: s()(g.connectedAccountVanityMetadata, l),
+    className: s()(p.connectedAccountVanityMetadata, l),
     variant: "text-xs/normal",
     color: "interactive-active",
     children: m.intl.format(m.t.HLoinJ, {
@@ -231,7 +231,7 @@ function O(e) {
     className: l
   } = e;
   return (0, i.jsxs)("div", {
-    className: s()(g.connectedAccountVanityMetadata, g.connectedAccountVanityMetadataItem, l),
+    className: s()(p.connectedAccountVanityMetadata, p.connectedAccountVanityMetadataItem, l),
     children: [(0, i.jsx)(o.ua7, {
       text: r,
       children: e => {
@@ -256,7 +256,7 @@ function O(e) {
         }({}, e), s = s = {
           src: n,
           alt: r,
-          className: g.connectedAccountVanityMetadataItemIcon
+          className: p.connectedAccountVanityMetadataItemIcon
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -284,7 +284,7 @@ function S(e) {
   return (0, i.jsx)(o.Text, {
     variant: "text-xs/semibold",
     color: "interactive-active",
-    className: s()(g.connectedAccountVanityMetadata, g.connectedAccountVanityMetadataTag, n),
+    className: s()(p.connectedAccountVanityMetadata, p.connectedAccountVanityMetadataTag, n),
     children: t
   })
 }

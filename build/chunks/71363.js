@@ -12,8 +12,8 @@ var i = n(255367),
   d = n(607070),
   u = n(100527),
   m = n(906732),
-  g = n(975298),
-  p = n(626135),
+  p = n(975298),
+  g = n(626135),
   h = n(695349),
   f = n(103433),
   b = n(166021),
@@ -44,7 +44,7 @@ let v = e => {
     Z = (0, E.mN)(),
     {
       fractionalState: w
-    } = (0, g.Z)(),
+    } = (0, p.Z)(),
     k = (0, h.W)();
   return Z ? (t = C.intl.string(C.t["+vt7w8"]), n = C.intl.string(C.t.LgHbnJ)) : (t = C.intl.string(C.t.LgHbnJ), n = C.intl.string(C.t["+vt7w8"])), (0, i.jsx)(c.yWw, {
     className: l()(O.allPerksScroller, {
@@ -59,7 +59,7 @@ let v = e => {
         children: [(0, i.jsx)(f.Z, {
           className: O.heroHeading,
           onBackClick: () => {
-            v(!1), p.default.track(j.rMx.NITRO_HOME_NAVIGATION, {
+            v(!1), g.default.track(j.rMx.NITRO_HOME_NAVIGATION, {
               current_component: _.MQ.SEE_ALL,
               next_component: T,
               interaction_component: "Back Button"
@@ -121,7 +121,7 @@ let v = e => {
         }), (0, i.jsx)(o.$, {
           innerRef: I,
           onChange: e => {
-            e && !P && (p.default.track(j.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+            e && !P && (g.default.track(j.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
               location_stack: A
             }), R(!0))
           },

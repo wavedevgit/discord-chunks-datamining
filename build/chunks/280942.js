@@ -13,7 +13,7 @@ var i = n(255367),
   u = n(388032),
   m = n(898582);
 
-function g(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -32,7 +32,7 @@ function g(e) {
   return e
 }
 
-function p(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -101,7 +101,7 @@ function h(e) {
           let {
             default: e
           } = await Promise.resolve().then(n.bind(n, 760558));
-          return n => (0, i.jsx)(e, p(g({}, n), {
+          return n => (0, i.jsx)(e, g(p({}, n), {
             guildBoostSlots: [t],
             locationSection: c.jXE.SETTINGS_PREMIUM
           }))
@@ -117,7 +117,7 @@ function h(e) {
           let {
             default: e
           } = await Promise.resolve().then(n.bind(n, 450468));
-          return n => (0, i.jsx)(e, p(g({}, n), {
+          return n => (0, i.jsx)(e, g(p({}, n), {
             guildBoostSlotId: t.id
           }))
         })
@@ -132,7 +132,7 @@ function h(e) {
           let {
             default: e
           } = await Promise.resolve().then(n.bind(n, 401786));
-          return n => (0, i.jsx)(e, p(g({}, n), {
+          return n => (0, i.jsx)(e, g(p({}, n), {
             guildBoostSlot: t
           }))
         })

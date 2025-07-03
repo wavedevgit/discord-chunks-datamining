@@ -1,6 +1,6 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => p
+  Z: () => g
 });
 var i = n(255367);
 n(73800);
@@ -13,14 +13,14 @@ var r = n(120356),
   d = n(388032),
   u = n(944680),
   m = n(568147),
-  g = n(332796);
-let p = e => {
+  p = n(332796);
+let g = e => {
   let {
     className: t,
     location: n,
     analyticsLocation: r
   } = e, {
-    analyticsLocations: p
+    analyticsLocations: g
   } = (0, a.ZP)(n), h = (0, o.rK)(), {
     enabled: f
   } = o.RO.useExperiment({
@@ -29,7 +29,7 @@ let p = e => {
     autoTrackExposure: h
   }), b = f && h;
   return (0, i.jsx)(a.Gt, {
-    value: p,
+    value: g,
     children: (0, i.jsxs)("div", {
       className: s()(u.container, t),
       children: [(0, i.jsxs)("div", {
@@ -51,7 +51,7 @@ let p = e => {
           premiumModalAnalyticsLocation: r
         })]
       }), (0, i.jsx)("img", {
-        src: b ? g : m,
+        src: b ? p : m,
         className: u.bannerImage,
         alt: "gift nitro banner"
       })]

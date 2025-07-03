@@ -13,8 +13,8 @@ var r = n(120356),
   d = n(921801),
   u = n(210887),
   m = n(726985),
-  g = n(388032),
-  p = n(20493);
+  p = n(388032),
+  g = n(20493);
 let h = n(651714),
   f = n(297166);
 
@@ -26,12 +26,12 @@ function b(e) {
     setting: m.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_AUDIO,
     children: (0, i.jsx)(o.hjN, {
       className: s()({
-        [p.marginBottom20]: !t
+        [g.marginBottom20]: !t
       }),
-      title: g.intl.string(g.t.DSGme3),
+      title: p.intl.string(p.t.DSGme3),
       children: (0, i.jsx)(o.ToO, {
         className: s()({
-          [p.marginBottom20]: !t
+          [g.marginBottom20]: !t
         }),
         type: o.Dd5.PRIMARY,
         imageData: {
@@ -40,7 +40,7 @@ function b(e) {
           height: 40
         },
         align: c.Z.Align.CENTER,
-        body: g.intl.string(g.t["2nDAzM"])
+        body: p.intl.string(p.t["2nDAzM"])
       })
     })
   })

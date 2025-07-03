@@ -12,8 +12,8 @@ var i = n(255367),
   d = n(937848),
   u = n(20493);
 let m = 0,
-  g = () => "notification-position-selector-".concat(m++),
-  p = e => {
+  p = () => "notification-position-selector-".concat(m++),
+  g = e => {
     switch (e) {
       case o._vf.TOP_LEFT:
         return c.intl.string(c.t.xlchpa);
@@ -33,8 +33,8 @@ function f(e) {
   let {
     position: t,
     onChange: n
-  } = e, [s] = r.useState(() => g()), m = t === o._vf.DISABLED ? c.intl.string(c.t.R6LxVV) : c.intl.formatToPlainString(c.t.XXHDMz, {
-    position: p(t)
+  } = e, [s] = r.useState(() => p()), m = t === o._vf.DISABLED ? c.intl.string(c.t.R6LxVV) : c.intl.formatToPlainString(c.t.XXHDMz, {
+    position: g(t)
   });
   return (0, i.jsxs)("div", {
     children: [(0, i.jsx)(a.tEY, {
@@ -53,7 +53,7 @@ function f(e) {
             [d.bottomRight]: e === o._vf.BOTTOM_RIGHT,
             [d.bottomLeft]: e === o._vf.BOTTOM_LEFT
           }),
-          children: [p(e), e === o._vf.DISABLED ? (0, i.jsx)(a.t6m, {
+          children: [g(e), e === o._vf.DISABLED ? (0, i.jsx)(a.t6m, {
             size: "md",
             color: "currentColor",
             className: d.disabledIcon

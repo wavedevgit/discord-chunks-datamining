@@ -26,9 +26,9 @@ function u(e) {
     setting: t,
     children: n,
     depth: o
-  } = e, [m, g] = r.useState(1 === o), p = r.useCallback(() => {
-    g(!m)
-  }, [m, g]);
+  } = e, [m, p] = r.useState(1 === o), g = r.useCallback(() => {
+    p(!m)
+  }, [m, p]);
   if (0 === n.length) return (0, i.jsx)("div", {
     style: {
       marginLeft: 8 * o
@@ -54,7 +54,7 @@ function u(e) {
     className: c.settingNode,
     children: [(0, i.jsxs)(l.P3F, {
       className: c.headerBar,
-      onClick: p,
+      onClick: g,
       children: [(0, i.jsx)(d, {
         setting: t,
         hasChildren: n.length > 0

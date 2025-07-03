@@ -12,8 +12,8 @@ var i = n(255367),
   d = n(780384),
   u = n(481060),
   m = n(570140),
-  g = n(457330),
-  p = n(497321),
+  p = n(457330),
+  g = n(497321),
   h = n(23551),
   f = n(468026),
   b = n(410030),
@@ -78,7 +78,7 @@ let H = e => {
   return null != (0, a.e7)([N.Z], () => N.Z.getGuild(s.guild.id), [s.guild.id]) || (r = (0, i.jsx)(u.zxk, {
     size: u.PhG.SMALL,
     onClick: function() {
-      g.Z.joinServer(s.id, () => {})
+      p.Z.joinServer(s.id, () => {})
     },
     disabled: l,
     children: (0, i.jsx)("span", {
@@ -122,7 +122,7 @@ function z(e) {
       onDisconnect: a,
       account: o,
       theme: m,
-      locale: p
+      locale: g
     } = e,
     [h, b] = r.useState(o.friendSync),
     [O, S] = r.useState(o.visibility),
@@ -150,7 +150,7 @@ function z(e) {
       inProgressVisibility: e,
       inProgressMetadataVisibility: t
     } = J.current;
-    null != e && (S(e), g.Z.setVisibility(o.type, o.id, e), R(null)), null != t && (N(t), g.Z.setMetadataVisibility(o.type, o.id, t), G(null))
+    null != e && (S(e), p.Z.setVisibility(o.type, o.id, e), R(null)), null != t && (N(t), p.Z.setMetadataVisibility(o.type, o.id, t), G(null))
   }, [o]);
 
   function $() {
@@ -255,7 +255,7 @@ function z(e) {
       var t;
       let n = null != (t = e.metadata) ? t : {},
         r = null,
-        s = (0, E.FI)(n[B.PC.CREATED_AT], p);
+        s = (0, E.FI)(n[B.PC.CREATED_AT], g);
       switch (e.type) {
         case L.ABu.REDDIT:
           r = (0, C.oP)(n, V.metadataItem);
@@ -307,7 +307,7 @@ function z(e) {
         disabled: l,
         "aria-label": U.intl.string(U.t.sCkLYG),
         onClick: l ? void 0 : () => {
-          Y(!0), g.Z.refresh(e.type, e.id).finally(() => {
+          Y(!0), p.Z.refresh(e.type, e.id).finally(() => {
             setTimeout(() => {
               W.push(e.id), K(W), Y(!1)
             }, 2e3)
@@ -323,7 +323,7 @@ function z(e) {
       hideBorder: !0,
       value: h,
       onChange: function(e) {
-        b(e), g.Z.setFriendSync(o.type, o.id, e)
+        b(e), p.Z.setFriendSync(o.type, o.id, e)
       },
       children: (0, i.jsx)(u.Text, {
         variant: "text-sm/semibold",
@@ -334,7 +334,7 @@ function z(e) {
       hideBorder: !0,
       value: I,
       onChange: function(e) {
-        y(e), g.Z.setShowActivity(o.type, o.id, e)
+        y(e), p.Z.setShowActivity(o.type, o.id, e)
       },
       children: (0, i.jsx)(u.Text, {
         variant: "text-sm/semibold",
@@ -357,7 +357,7 @@ function z(e) {
           });
           return
         }
-        N(n), g.Z.setMetadataVisibility(o.type, o.id, n)
+        N(n), p.Z.setMetadataVisibility(o.type, o.id, n)
       },
       disabled: 1 !== O || null == o.metadata,
       children: (0, i.jsx)(u.Text, {
@@ -383,7 +383,7 @@ function z(e) {
               });
               return
             }
-            S(n), g.Z.setVisibility(o.type, o.id, n)
+            S(n), p.Z.setVisibility(o.type, o.id, n)
           },
           children: (0, i.jsx)(u.Text, {
             variant: "text-sm/semibold",
@@ -528,7 +528,7 @@ function q(e) {
         type: t,
         id: n
       } = e;
-      g.Z.disconnect(t, n)
+      p.Z.disconnect(t, n)
     })(e)
   }, t)), (0, i.jsx)(u.xJW, {
     className: V.connectionList,
@@ -543,8 +543,8 @@ let X = () => {
   (0, a.e7)([I.ZP], () => I.ZP.getFlattenedGuildIds());
   let l = (0, a.e7)([R.default], () => R.default.locale);
   return (r.useEffect(() => {
-    g.Z.fetch()
-  }, []), e) ? (0, i.jsx)(p.Z, {}) : (0, i.jsxs)(u.hjN, {
+    p.Z.fetch()
+  }, []), e) ? (0, i.jsx)(g.Z, {}) : (0, i.jsxs)(u.hjN, {
     className: V.__invalid_connections,
     tag: u.RB0.H1,
     title: U.intl.string(U.t["3fe7U1"]),

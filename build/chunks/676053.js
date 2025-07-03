@@ -12,8 +12,8 @@ var i = n(255367),
   d = n(454028),
   u = n(966902),
   m = n(237872),
-  g = n(562618),
-  p = n(445689);
+  p = n(562618),
+  g = n(445689);
 
 function h(e) {
   var t, n, {
@@ -55,7 +55,7 @@ function h(e) {
       alt: h,
       width: 1280,
       height: 720,
-      className: p.media
+      className: g.media
     }), [b, h]),
     y = r.useCallback(() => {
       null !== N.current && N.current.pause(), null == S || S()
@@ -74,7 +74,7 @@ function h(e) {
       }), null == S || S(), null == O || O()
     }, [I, O, S]),
     R = (0, i.jsxs)("div", {
-      className: p.videoContainer,
+      className: g.videoContainer,
       children: [(0, i.jsx)(l.Z, {
         ref: N,
         src: b,
@@ -84,11 +84,11 @@ function h(e) {
         muted: !0,
         loop: !0,
         playsInline: !0,
-        className: p.inlineVideo,
+        className: g.inlineVideo,
         controls: !1,
         preload: "metadata"
       }), (0, i.jsx)("div", {
-        className: p.playButton,
+        className: g.playButton,
         children: (0, i.jsx)(s.J, {
           playing: !1,
           size: "sm",
@@ -124,7 +124,7 @@ function h(e) {
         colorMix: !0
       }), (0, i.jsx)(d.V, {
         asset: R
-      }), (0, i.jsx)(g.Y, {
+      }), (0, i.jsx)(p.Y, {
         title: h,
         body: f,
         badge: E,

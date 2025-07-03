@@ -12,8 +12,8 @@ var i = n(255367),
   d = n(70097),
   u = n(526167),
   m = n(140465),
-  g = n(104494),
-  p = n(639119),
+  p = n(104494),
+  g = n(639119),
   h = n(635921),
   f = n(474936),
   b = n(869783),
@@ -32,7 +32,7 @@ let O = r.forwardRef((e, t) => {
     subscriptionTier: N
   } = e, {
     analyticsLocations: I
-  } = (0, c.ZP)(o.Z.PREMIUM_MARKETING_FOOTER_CTA), y = (0, g.Ng)(), A = (0, g.Wp)(y, f.Si.TIER_2) ? f.Si.TIER_2 : void 0, P = (0, p.N)(), R = (0, m.Nx)(), D = (0, u.rO)(), Z = r.useRef(null), [w, k] = r.useState(!1);
+  } = (0, c.ZP)(o.Z.PREMIUM_MARKETING_FOOTER_CTA), y = (0, p.Ng)(), A = (0, p.Wp)(y, f.Si.TIER_2) ? f.Si.TIER_2 : void 0, P = (0, g.N)(), R = (0, m.Nx)(), D = (0, u.rO)(), Z = r.useRef(null), [w, k] = r.useState(!1);
   return r.useEffect(() => {
     !S || T || w || null == Z.current || Z.current.play()
   }, [S, T, w]), (0, i.jsx)(c.Gt, {

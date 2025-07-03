@@ -18,12 +18,12 @@ function m() {
     }),
     t = (0, l.Z)(e => e.shouldRenderTenureLevelUp),
     n = (0, o.Z)();
-  return e && t && null != n ? (0, i.jsx)(g, {
+  return e && t && null != n ? (0, i.jsx)(p, {
     levelUpData: n
   }) : null
 }
 
-function g(e) {
+function p(e) {
   let {
     levelUpData: t
   } = e, n = r.useRef(null), a = r.useCallback(() => {

@@ -1,6 +1,6 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => g
+  Z: () => p
 }), n(953529);
 var i = n(255367);
 n(73800);
@@ -14,7 +14,7 @@ var r = n(120356),
   u = n(674680),
   m = n(927671);
 
-function g(e) {
+function p(e) {
   let {
     achievementId: t,
     dateUnlocked: n
@@ -22,8 +22,8 @@ function g(e) {
   if (null == r) return null;
   let l = null != n,
     {
-      name: g,
-      description: p,
+      name: p,
+      description: g,
       hideDescriptionUntilUnlock: h,
       onAction: f
     } = r,
@@ -55,11 +55,11 @@ function g(e) {
       }), (0, i.jsx)(o.Text, {
         variant: "text-md/medium",
         color: x,
-        children: g()
+        children: p()
       }), (0, i.jsx)(o.Text, {
         variant: "text-xs/normal",
         color: _,
-        children: b ? "?????" : p()
+        children: b ? "?????" : g()
       })]
     })]
   })

@@ -12,8 +12,8 @@ var i = n(255367),
   d = n(481060),
   u = n(159351),
   m = n(366939),
-  g = n(623573),
-  p = n(190947),
+  p = n(623573),
+  g = n(190947),
   h = n(275850),
   f = n(906732),
   b = n(15640),
@@ -76,7 +76,7 @@ function y(e) {
   }, K = () => {
     (0, d.ZDy)(async () => e => {
       var t, n;
-      return (0, i.jsx)(g.default, (t = function(e) {
+      return (0, i.jsx)(p.default, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             i = Object.keys(n);
@@ -158,13 +158,13 @@ function y(e) {
           disabled: R,
           paymentGatewayRestrictions: t.eligiblePaymentGateways
         })
-      })(), null != t.paymentSourceId ? (0, i.jsx)(p.b, {
+      })(), null != t.paymentSourceId ? (0, i.jsx)(g.b, {
         currencies: n,
         children: (0, i.jsxs)("div", {
           className: l()(N.currency, I.flex, I.alignCenter),
           children: [(0, i.jsx)("div", {
             children: T.intl.string(T.t["0YjaXV"])
-          }), (0, i.jsx)(p.Z, {
+          }), (0, i.jsx)(g.Z, {
             className: N.currencyDropdown,
             selectedCurrency: V,
             currencies: n,

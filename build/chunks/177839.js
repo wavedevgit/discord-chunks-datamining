@@ -12,8 +12,8 @@ var i = n(255367),
   d = n(100527),
   u = n(906732),
   m = n(66595),
-  g = n(535322),
-  p = n(477734),
+  p = n(535322),
+  g = n(477734),
   h = n(626135),
   f = n(881100),
   b = n(981631),
@@ -47,7 +47,7 @@ let E = e => e ? x.intl.string(x.t.QX14gI) : x.intl.string(x.t.RGadQU),
       imageSource: s,
       imageClassName: a,
       titleBadge: c,
-      isNew: p = !1,
+      isNew: g = !1,
       isEarlyAccess: h = !1
     } = e, {
       analyticsLocations: f
@@ -56,7 +56,7 @@ let E = e => e ? x.intl.string(x.t.QX14gI) : x.intl.string(x.t.RGadQU),
       value: f,
       children: (0, i.jsxs)("div", {
         className: l()(_.perkCard, r),
-        children: [p ? (0, i.jsx)(g.Z, {
+        children: [g ? (0, i.jsx)(p.Z, {
           className: _.perkCardNewBadge,
           shouldInheritBackgroundColor: !0,
           shouldInheritTextColor: !0
@@ -86,14 +86,14 @@ let E = e => e ? x.intl.string(x.t.QX14gI) : x.intl.string(x.t.RGadQU),
       isSubscriberNitroHome: n = !1
     } = e, [s, d] = r.useState(!1), m = (0, f.N)({
       styles: _
-    }), g = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), {
+    }), p = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), {
       analyticsLocations: x
-    } = (0, u.ZP)(), O = (0, p._f)(), S = [m.emoji, m.streaming, m.upload, m.customAppIcons, m.soundboard, O ? m.remix : m.videoBackground, m.superReactions, m.stickersPremiumPerk, m.badgeAlt];
+    } = (0, u.ZP)(), O = (0, g._f)(), S = [m.emoji, m.streaming, m.upload, m.customAppIcons, m.soundboard, O ? m.remix : m.videoBackground, m.superReactions, m.stickersPremiumPerk, m.badgeAlt];
     return (0, i.jsxs)("div", {
       className: l()(_.perksContainer, t, {
         [_.partiallyHidden]: n && !s,
         [_.subscriberNitroHome]: n,
-        [_.reducedMotion]: g
+        [_.reducedMotion]: p
       }),
       children: [(0, i.jsx)(o.X6q, {
         variant: "heading-xxl/extrabold",

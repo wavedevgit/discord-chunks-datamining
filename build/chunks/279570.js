@@ -53,8 +53,8 @@ function m(e) {
     size: n = "md",
     variant: r = "secondary",
     icon: m,
-    iconOpticalOffsetMargin: g = 0,
-    focusProps: p,
+    iconOpticalOffsetMargin: p = 0,
+    focusProps: g,
     pressed: h = !1,
     "aria-label": f,
     className: b,
@@ -74,7 +74,7 @@ function m(e) {
     }
     return r
   }(e, ["role", "size", "variant", "icon", "iconOpticalOffsetMargin", "focusProps", "pressed", "aria-label", "className", "style"]);
-  return (0, i.jsx)(l.t, d(c({}, p), {
+  return (0, i.jsx)(l.t, d(c({}, g), {
     children: (0, i.jsx)("button", d(c({
       role: t,
       "aria-pressed": h,
@@ -87,8 +87,8 @@ function m(e) {
         className: a.buttonChildrenWrapper,
         children: (0, i.jsx)(m, {
           color: "currentColor",
-          style: 0 === g ? {} : {
-            marginLeft: g
+          style: 0 === p ? {} : {
+            marginLeft: p
           },
           size: u[n]
         })

@@ -24,7 +24,7 @@ let m = e => {
       children: [t, " ", n]
     })
   },
-  g = e => {
+  p = e => {
     let {
       text: t,
       variant: n
@@ -35,7 +35,7 @@ let m = e => {
       children: t
     })
   },
-  p = e => {
+  g = e => {
     let {
       includes: t
     } = e;
@@ -65,10 +65,10 @@ let m = e => {
           label: (0, i.jsx)(m, {
             text: d.intl.string(d.t["09yRKy"])
           }),
-          column1: (0, i.jsx)(g, {
+          column1: (0, i.jsx)(p, {
             text: l.ZP.formatPriceString(e, o.rV.MONTH)
           }),
-          column2: (0, i.jsx)(g, {
+          column2: (0, i.jsx)(p, {
             text: n ? h : l.ZP.formatPriceString(t, o.rV.MONTH)
           }),
           withBottomBorder: !0
@@ -77,10 +77,10 @@ let m = e => {
           label: (0, i.jsx)(m, {
             text: d.intl.string(d.t.vaDeDQ)
           }),
-          column1: (0, i.jsx)(p, {
+          column1: (0, i.jsx)(g, {
             includes: !0
           }),
-          column2: (0, i.jsx)(p, {
+          column2: (0, i.jsx)(g, {
             includes: !0
           })
         },
@@ -88,10 +88,10 @@ let m = e => {
           label: (0, i.jsx)(m, {
             text: d.intl.string(d.t.RIRtn5)
           }),
-          column1: (0, i.jsx)(p, {
+          column1: (0, i.jsx)(g, {
             includes: !0
           }),
-          column2: (0, i.jsx)(p, {
+          column2: (0, i.jsx)(g, {
             includes: !0
           })
         },
@@ -99,10 +99,10 @@ let m = e => {
           label: (0, i.jsx)(m, {
             text: d.intl.string(d.t.OuItFh)
           }),
-          column1: (0, i.jsx)(p, {
+          column1: (0, i.jsx)(g, {
             includes: !0
           }),
-          column2: (0, i.jsx)(p, {
+          column2: (0, i.jsx)(g, {
             includes: !0
           })
         },
@@ -110,10 +110,10 @@ let m = e => {
           label: (0, i.jsx)(m, {
             text: d.intl.string(d.t["9kRJS0"])
           }),
-          column1: (0, i.jsx)(p, {
+          column1: (0, i.jsx)(g, {
             includes: !0
           }),
-          column2: (0, i.jsx)(p, {
+          column2: (0, i.jsx)(g, {
             includes: !0
           })
         },
@@ -121,10 +121,10 @@ let m = e => {
           label: (0, i.jsx)(m, {
             text: d.intl.string(d.t.ufhQCw)
           }),
-          column1: (0, i.jsx)(g, {
+          column1: (0, i.jsx)(p, {
             text: (0, l.v9)(o.p9.TIER_0)
           }),
-          column2: (0, i.jsx)(g, {
+          column2: (0, i.jsx)(p, {
             text: (0, l.v9)(o.p9.TIER_2)
           })
         },
@@ -132,10 +132,10 @@ let m = e => {
           label: (0, i.jsx)(m, {
             text: d.intl.string(d.t.VwxlMz)
           }),
-          column1: (0, i.jsx)(p, {
+          column1: (0, i.jsx)(g, {
             includes: !1
           }),
-          column2: (0, i.jsx)(g, {
+          column2: (0, i.jsx)(p, {
             text: d.intl.string(d.t.XdN6KS)
           })
         },
@@ -146,10 +146,10 @@ let m = e => {
               percentageOff: (0, a.T3)(s.default.locale, o.Rr / 100)
             })
           }),
-          column1: (0, i.jsx)(p, {
+          column1: (0, i.jsx)(g, {
             includes: !1
           }),
-          column2: (0, i.jsx)(p, {
+          column2: (0, i.jsx)(g, {
             includes: !0
           })
         },
@@ -157,10 +157,10 @@ let m = e => {
           label: (0, i.jsx)(m, {
             text: d.intl.string(d.t.tFbcuL)
           }),
-          column1: (0, i.jsx)(p, {
+          column1: (0, i.jsx)(g, {
             includes: !1
           }),
-          column2: (0, i.jsx)(p, {
+          column2: (0, i.jsx)(g, {
             includes: !0
           })
         },
@@ -168,10 +168,10 @@ let m = e => {
           label: (0, i.jsx)(m, {
             text: d.intl.string(d.t["aR/zTk"])
           }),
-          column1: (0, i.jsx)(p, {
+          column1: (0, i.jsx)(g, {
             includes: !1
           }),
-          column2: (0, i.jsx)(p, {
+          column2: (0, i.jsx)(g, {
             includes: !0
           })
         },
@@ -179,10 +179,10 @@ let m = e => {
           label: (0, i.jsx)(m, {
             text: d.intl.string(d.t.IzrZHx)
           }),
-          column1: (0, i.jsx)(p, {
+          column1: (0, i.jsx)(g, {
             includes: !1
           }),
-          column2: (0, i.jsx)(p, {
+          column2: (0, i.jsx)(g, {
             includes: !0
           })
         },
@@ -190,10 +190,10 @@ let m = e => {
           label: (0, i.jsx)(m, {
             text: d.intl.string(d.t["HwNg/f"])
           }),
-          column1: (0, i.jsx)(p, {
+          column1: (0, i.jsx)(g, {
             includes: !1
           }),
-          column2: (0, i.jsx)(p, {
+          column2: (0, i.jsx)(g, {
             includes: !0
           })
         },
@@ -201,10 +201,10 @@ let m = e => {
           label: (0, i.jsx)(m, {
             text: d.intl.string(d.t["y+HHLy"])
           }),
-          column1: (0, i.jsx)(p, {
+          column1: (0, i.jsx)(g, {
             includes: !0
           }),
-          column2: (0, i.jsx)(p, {
+          column2: (0, i.jsx)(g, {
             includes: !0
           })
         },
@@ -212,10 +212,10 @@ let m = e => {
           label: (0, i.jsx)(m, {
             text: d.intl.string(d.t.qQxxVV)
           }),
-          column1: (0, i.jsx)(p, {
+          column1: (0, i.jsx)(g, {
             includes: !0
           }),
-          column2: (0, i.jsx)(p, {
+          column2: (0, i.jsx)(g, {
             includes: !0
           })
         },
@@ -223,10 +223,10 @@ let m = e => {
           label: (0, i.jsx)(m, {
             text: d.intl.string(d.t.xi0NBA)
           }),
-          column1: (0, i.jsx)(p, {
+          column1: (0, i.jsx)(g, {
             includes: !1
           }),
-          column2: (0, i.jsx)(p, {
+          column2: (0, i.jsx)(g, {
             includes: !0
           }),
           withBottomBorder: !0
@@ -235,10 +235,10 @@ let m = e => {
           label: (0, i.jsx)(m, {
             text: d.intl.string(d.t.MfsUHh)
           }),
-          column1: (0, i.jsx)(p, {
+          column1: (0, i.jsx)(g, {
             includes: !1
           }),
-          column2: (0, i.jsx)(p, {
+          column2: (0, i.jsx)(g, {
             includes: !0
           })
         },
@@ -246,10 +246,10 @@ let m = e => {
           label: (0, i.jsx)(m, {
             text: d.intl.string(d.t["A+0H1d"])
           }),
-          column1: (0, i.jsx)(p, {
+          column1: (0, i.jsx)(g, {
             includes: !1
           }),
-          column2: (0, i.jsx)(p, {
+          column2: (0, i.jsx)(g, {
             includes: !0
           })
         },
@@ -257,10 +257,10 @@ let m = e => {
           label: (0, i.jsx)(m, {
             text: d.intl.string(d.t["il8+nJ"])
           }),
-          column1: (0, i.jsx)(p, {
+          column1: (0, i.jsx)(g, {
             includes: !1
           }),
-          column2: (0, i.jsx)(p, {
+          column2: (0, i.jsx)(g, {
             includes: !0
           })
         },
@@ -270,10 +270,10 @@ let m = e => {
               maxChars: c.en1
             })
           }),
-          column1: (0, i.jsx)(p, {
+          column1: (0, i.jsx)(g, {
             includes: !1
           }),
-          column2: (0, i.jsx)(p, {
+          column2: (0, i.jsx)(g, {
             includes: !0
           }),
           withBottomBorder: !0
@@ -312,10 +312,10 @@ let m = e => {
           label: (0, i.jsx)(m, {
             text: d.intl.string(d.t["93xPy8"])
           }),
-          column1: (0, i.jsx)(p, {
+          column1: (0, i.jsx)(g, {
             includes: !1
           }),
-          column2: (0, i.jsx)(p, {
+          column2: (0, i.jsx)(g, {
             includes: !0
           }),
           withBottomBorder: !0
@@ -324,10 +324,10 @@ let m = e => {
           label: (0, i.jsx)(m, {
             text: d.intl.string(d.t["5BJqND"])
           }),
-          column1: (0, i.jsx)(p, {
+          column1: (0, i.jsx)(g, {
             includes: !1
           }),
-          column2: (0, i.jsx)(p, {
+          column2: (0, i.jsx)(g, {
             includes: !0
           }),
           withBottomBorder: !1

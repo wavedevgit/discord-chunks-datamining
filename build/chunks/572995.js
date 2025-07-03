@@ -12,8 +12,8 @@ var i, r, s = n(230711),
   d = n(63063),
   u = n(963590),
   m = n(981631),
-  g = n(526761),
-  p = n(388032),
+  p = n(526761),
+  g = n(388032),
   h = n(509614),
   f = n(880511),
   b = n(985443),
@@ -42,57 +42,57 @@ let M = () => {
   let {
     analyticsLocations: e
   } = (0, a.ZP)(l.Z.PREMIUM_MARKETING_BENTO_BOX), t = (0, o.Z)({
-    scrollPosition: g.Y_.TRY_IT_OUT,
+    scrollPosition: p.Y_.TRY_IT_OUT,
     analyticsLocations: e
   }), n = (0, c.rO)(), i = d.Z.getArticleURL(m.BhN.REFERRAL_PROGRAM), r = (0, u.Z)({
     location: "WhatsNewSection"
   }), L = {
     name: "voiceFilters",
-    title: p.intl.format(p.t.iAzLOj, {}),
-    description: p.intl.format(p.t["NT0/pa"], {
+    title: g.intl.format(g.t.iAzLOj, {}),
+    description: g.intl.format(g.t["NT0/pa"], {
       learnMoreLink: m.EYA.VOICE_FILTERS_BLOG
     }),
-    descriptionCta: p.intl.string(p.t.jVcuVV),
+    descriptionCta: g.intl.string(g.t.jVcuVV),
     previewImage: D.Z,
     videoUrl: n ? R.Z : Z.Z,
-    badgeText: p.intl.string(p.t.EYxi0t)
+    badgeText: g.intl.string(g.t.EYxi0t)
   }, B = {
     name: "permadecos",
-    title: p.intl.string(p.t["57ngoq"]),
-    description: p.intl.string(p.t.piFFjY),
-    descriptionCta: p.intl.string(p.t.jVcuVV),
+    title: g.intl.string(g.t["57ngoq"]),
+    description: g.intl.string(g.t.piFFjY),
+    descriptionCta: g.intl.string(g.t.jVcuVV),
     previewImage: S.Z,
     onClick: t,
     videoUrl: S.Z
   }, M = {
     name: "serverProfiles",
-    title: p.intl.string(p.t.I9TYMj),
-    description: p.intl.string(p.t.HMSHeH),
-    descriptionCta: p.intl.string(p.t.jVcuVV),
+    title: g.intl.string(g.t.I9TYMj),
+    description: g.intl.string(g.t.HMSHeH),
+    descriptionCta: g.intl.string(g.t.jVcuVV),
     onClick: t,
     previewImage: _,
     videoUrl: n ? I.ZP : y.ZP
   }, U = {
     name: "referralProgram",
-    title: p.intl.string(p.t.tPY4o6),
-    description: p.intl.format(p.t.jRPQUF, {
+    title: g.intl.string(g.t.tPY4o6),
+    description: g.intl.format(g.t.jRPQUF, {
       learnMoreLink: i
     }),
     previewImage: T.Z,
     videoUrl: n ? v.ZP : N.ZP
   }, V = {
     name: "showYourStyle",
-    title: p.intl.string(p.t.Ij3Zmp),
-    description: p.intl.string(p.t.UsOUxc),
-    descriptionCta: p.intl.string(p.t.jVcuVV),
+    title: g.intl.string(g.t.Ij3Zmp),
+    description: g.intl.string(g.t.UsOUxc),
+    descriptionCta: g.intl.string(g.t.jVcuVV),
     previewImage: x,
     onClick: t,
     videoUrl: n ? A.Z : P.Z
   }, G = {
     name: "yourSpace",
-    title: p.intl.string(p.t.Wme3nZ),
-    description: p.intl.string(p.t["/aAIqa"]),
-    descriptionCta: p.intl.string(p.t.jVcuVV),
+    title: g.intl.string(g.t.Wme3nZ),
+    description: g.intl.string(g.t["/aAIqa"]),
+    descriptionCta: g.intl.string(g.t.jVcuVV),
     previewImage: b,
     onClick: () => {
       s.Z.open(m.oAB.APPEARANCE, null, {
@@ -103,8 +103,8 @@ let M = () => {
     videoUrl: n ? w.Z : k.Z
   }, F = {
     name: "emojis",
-    title: p.intl.string(p.t.zY5PPT),
-    description: p.intl.string(p.t.R5Xag4),
+    title: g.intl.string(g.t.zY5PPT),
+    description: g.intl.string(g.t.R5Xag4),
     previewImage: h,
     videoUrl: n ? E.ZP : j.ZP
   };
@@ -121,8 +121,8 @@ let M = () => {
       [G],
       [F, {
         name: "noLimits",
-        title: p.intl.string(p.t["6b3ydH"]),
-        description: p.intl.string(p.t["Y+IJys"]),
+        title: g.intl.string(g.t["6b3ydH"]),
+        description: g.intl.string(g.t["Y+IJys"]),
         previewImage: f,
         videoUrl: n ? C.ZP : O.ZP
       }]

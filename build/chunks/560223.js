@@ -12,8 +12,8 @@ var i = n(255367),
   d = n(963590),
   u = n(119850),
   m = n(22189),
-  g = n(391110),
-  p = n(75077),
+  p = n(391110),
+  g = n(75077),
   h = n(51636),
   f = n(795067);
 let b = e => {
@@ -50,13 +50,13 @@ let b = e => {
       leftAlignHeaders: x = !1,
       showAllPerksButton: _,
       headerClassname: E
-    } = e, j = r.useRef(null), C = n === g.gM.WHATS_NEW, O = (0, u.x)();
+    } = e, j = r.useRef(null), C = n === p.gM.WHATS_NEW, O = (0, u.x)();
     r.useEffect(() => {
       C && O()
     }, [O, C]);
-    let S = (0, p.re)(C),
+    let S = (0, g.re)(C),
       v = (0, m.Z)(),
-      T = (0, p.mN)(),
+      T = (0, g.mN)(),
       {
         fractionalState: N
       } = (0, o.Z)(),
@@ -64,7 +64,7 @@ let b = e => {
       y = (0, d.Z)({
         location: "WhatsNewSection"
       }),
-      A = (0, p.ZM)({
+      A = (0, g.ZM)({
         perksCards: v,
         variant: n,
         hideCardsOnNarrowScreen: !1,

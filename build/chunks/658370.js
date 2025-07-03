@@ -13,8 +13,8 @@ var r = n(120356),
   d = n(639119),
   u = n(784238),
   m = n(404615),
-  g = n(743612),
-  p = n(474936),
+  p = n(743612),
+  g = n(474936),
   h = n(388032),
   f = n(593595);
 let b = e => {
@@ -49,7 +49,7 @@ let b = e => {
     A = (0, m._)(S);
   return (0, i.jsxs)("div", {
     className: s()(f.cardDescription, null == A || null == (t = A.description) ? void 0 : t.className),
-    children: [(0, i.jsx)(g.Z, {
+    children: [(0, i.jsx)(p.Z, {
       title: r,
       cardVariantStyleInfo: A,
       titleClassName: b,
@@ -59,7 +59,7 @@ let b = e => {
       className: x,
       look: l.zxk.Looks.BLANK,
       color: l.zxk.Colors.CUSTOM,
-      subscriptionTier: p.Si.TIER_2,
+      subscriptionTier: g.Si.TIER_2,
       textOptions: {
         textOverride: y
       },

@@ -17,18 +17,18 @@ let m = r.memo(function(e) {
     guildProfile: n,
     title: r,
     description: m,
-    onClose: g
+    onClose: p
   } = e, {
-    isAdopting: p,
+    isAdopting: g,
     onAdoptTag: h,
     onEditProfile: f
-  } = (0, o.Z)(t, g);
+  } = (0, o.Z)(t, p);
   return (0, i.jsxs)("div", {
     className: u.container,
     ref: e.ref,
     children: [(0, i.jsx)(s.olH, {
       className: u.closeButton,
-      onClick: g
+      onClick: p
     }), (0, i.jsx)("div", {
       className: u.tagContainer,
       children: (0, i.jsxs)("div", {
@@ -54,7 +54,7 @@ let m = r.memo(function(e) {
       children: m
     }), (0, i.jsx)(s.zxk, {
       className: u.adoptButton,
-      submitting: p,
+      submitting: g,
       onClick: h,
       children: d.intl.string(d.t.jwEaiY)
     }), (0, i.jsx)(s.zxk, {

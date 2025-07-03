@@ -13,8 +13,8 @@ var r = n(442837),
   d = n(406613),
   u = n(314394),
   m = n(625528),
-  g = n(674116),
-  p = n(754367),
+  p = n(674116),
+  g = n(754367),
   h = n(661950),
   f = n(526761),
   b = n(726985),
@@ -29,7 +29,7 @@ function E() {
   } = (0, d.F)({
     location: "UserSettingsVoiceAndVideo"
   });
-  if (!n) return (0, i.jsx)(g.Z, {});
+  if (!n) return (0, i.jsx)(p.Z, {});
   let E = [{
       title: _.intl.string(_.t.K3lovL),
       component: h.Z,
@@ -46,7 +46,7 @@ function E() {
       subsection: f.GA
     }, {
       title: _.intl.string(_.t.OFpL3d),
-      component: p.Z,
+      component: g.Z,
       setting: b.s6.VOICE_AND_VIDEO_DEBUG_TAB
     }],
     j = E.findIndex(e => null != e.subsection && e.subsection === t);
