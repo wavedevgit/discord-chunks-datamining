@@ -1,6 +1,6 @@
 /** Chunk was on 4811 **/
 n.d(t, {
-  Z: () => Z
+  Z: () => T
 }), n(388685), n(539854);
 var r = n(255367),
   i = n(73800),
@@ -24,11 +24,12 @@ var r = n(255367),
   C = n(554549),
   j = n(441536),
   E = n(447908),
-  S = n(93841),
-  x = n(388032),
-  I = n(27053);
+  S = n(921944),
+  x = n(93841),
+  I = n(388032),
+  P = n(27053);
 
-function P(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +48,7 @@ function P(e) {
   return e
 }
 
-function N(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -60,62 +61,56 @@ function N(e, t) {
   }), e
 }
 
-function w(e) {
+function Z(e) {
   let {
     guild: t,
     withMargin: l
-  } = e, w = i.useMemo(() => (0, E.Z)(t), [t]), Z = (0, v.Z)(t.id), T = i.useCallback(() => {
+  } = e, Z = i.useMemo(() => (0, E.Z)(t), [t]), T = (0, v.Z)(t.id), A = i.useCallback(() => {
     (0, j.Z)(t.id, p.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY)
-  }, [t.id]), A = (0, c.e7)([m.Z], () => {
+  }, [t.id]), R = (0, c.e7)([m.Z], () => {
     var e;
     return null != (e = m.Z.getCountForGuild(t.id)) ? e : 0
   });
   i.useEffect(() => {
-    A !== t.premiumSubscriberCount && (0, g.v)(t.id, t.premiumSubscriberCount)
-  }, [t.id, A, t.premiumSubscriberCount]);
-  let R = Math.min(A / w * 100, 100),
-    [D, L] = (0, d.q_F)(() => ({
-      width: A === t.premiumSubscriberCount ? "".concat(R, "%") : "0%",
+    R !== t.premiumSubscriberCount && (0, g.v)(t.id, t.premiumSubscriberCount)
+  }, [t.id, R, t.premiumSubscriberCount]);
+  let D = Math.min(R / Z * 100, 100),
+    [L, M] = (0, d.q_F)(() => ({
+      width: R === t.premiumSubscriberCount ? "".concat(D, "%") : "0%",
       config: {
         tension: 285,
         damping: 10,
         mass: 1
       }
-    }), "respect-motion-settings", [A, t.premiumSubscriberCount]);
+    }), "respect-motion-settings", [R, t.premiumSubscriberCount]);
   i.useEffect(() => {
-    L({
-      width: "".concat(R, "%")
+    M({
+      width: "".concat(D, "%")
     })
-  }, [R, L]);
-  let M = A >= w,
-    k = i.useRef(null),
-    U = (0, c.e7)([b.default], () => b.default.getCurrentUser()),
-    G = (0, C.Z)(null == U ? void 0 : U.id, t.id),
-    B = (0, y.W)(t.id, "GuildPowerupsSidebarDisplay"),
-    F = (null == t ? void 0 : t.premiumProgressBarEnabled) === !0,
-    V = [];
-  return G && B && F && V.push(u.z.BOOSTER_ENHANCED_ROLE_COLORS_COACHMARK), (0, r.jsx)(d.yRy, {
-    targetElementRef: k,
-    renderPopout: () => (0, r.jsx)(f.ZP, {
-      contentTypes: V,
-      children: e => {
-        let {
-          visibleContent: n,
-          markAsDismissed: i
-        } = e;
-        return n === u.z.BOOSTER_ENHANCED_ROLE_COLORS_COACHMARK ? (0, r.jsx)(O.Z, {
-          guild: t,
-          markAsDismissed: i
-        }) : null
-      }
-    }),
+  }, [D, M]);
+  let k = R >= Z,
+    U = i.useRef(null),
+    G = (0, c.e7)([b.default], () => b.default.getCurrentUser()),
+    B = (0, C.Z)(null == G ? void 0 : G.id, t.id),
+    F = (0, y.W)(t.id, "GuildPowerupsSidebarDisplay"),
+    V = (null == t ? void 0 : t.premiumProgressBarEnabled) === !0,
+    H = [];
+  B && F && V && H.push(u.z.BOOSTER_ENHANCED_ROLE_COLORS_COACHMARK);
+  let [z, W] = (0, f.US)(H);
+  return (0, r.jsx)(d.yRy, {
+    targetElementRef: U,
+    renderPopout: () => z === u.z.BOOSTER_ENHANCED_ROLE_COLORS_COACHMARK ? (0, r.jsx)(O.Z, {
+      guild: t,
+      markAsDismissed: W
+    }) : null,
     position: "right",
     align: "top",
-    shouldShow: !0,
+    shouldShow: null != z,
+    onRequestClose: () => W(S.L.INDIRECT_ACTION),
     animation: d.yRy.Animation.TRANSLATE,
     children: e => (0, r.jsx)("div", {
-      ref: k,
-      children: (0, r.jsx)(d.P3F, N(P({}, e), {
+      ref: U,
+      children: (0, r.jsx)(d.P3F, w(N({}, e), {
         "aria-label": void 0,
         role: "button",
         focusProps: {
@@ -124,59 +119,59 @@ function w(e) {
             right: 4
           }
         },
-        onClick: T,
-        className: o()(I.container, {
-          [I.containerWithMargin]: l
+        onClick: A,
+        className: o()(P.container, {
+          [P.containerWithMargin]: l
         }),
         onContextMenu: e => {
-          Z && (0, h.jW)(e, async () => {
+          T && (0, h.jW)(e, async () => {
             let {
               default: e
             } = await Promise.resolve().then(n.bind(n, 651138));
-            return n => (0, r.jsx)(e, N(P({}, n), {
+            return n => (0, r.jsx)(e, w(N({}, n), {
               guild: t
             }))
           })
         },
         children: (0, r.jsxs)("div", {
-          className: I.contentContainer,
+          className: P.contentContainer,
           children: [(0, r.jsx)("div", {
-            className: I.progressContainer,
+            className: P.progressContainer,
             children: (0, r.jsx)(a.animated.div, {
-              className: o()(I.progress, {
-                [I.progressLow]: R <= 5
+              className: o()(P.progress, {
+                [P.progressLow]: D <= 5
               }),
-              style: D
+              style: L
             })
           }), (0, r.jsxs)("div", {
-            className: I.textContainer,
+            className: P.textContainer,
             children: [(0, r.jsxs)("div", {
-              className: I.textContentContainer,
+              className: P.textContentContainer,
               children: [(0, r.jsx)(s.xv, {
-                className: I.text,
+                className: P.text,
                 variant: "text-xs/semibold",
-                children: x.intl.string(S.default.NI6IhY)
-              }), t.premiumSubscriberCount >= w && (0, r.jsx)(s.xv, {
-                className: I.text,
+                children: I.intl.string(x.default.NI6IhY)
+              }), t.premiumSubscriberCount >= Z && (0, r.jsx)(s.xv, {
+                className: P.text,
                 variant: "text-xs/semibold",
                 children: "\uD83C\uDF89"
               })]
             }), (0, r.jsxs)("div", {
-              className: I.textContentContainer,
+              className: P.textContentContainer,
               children: [(0, r.jsx)(s.xv, {
-                className: I.text,
+                className: P.text,
                 variant: "text-xs/semibold",
-                children: M ? x.intl.formatToPlainString(S.default["Ehpq+/"], {
-                  appliedBoostCount: A
-                }) : x.intl.formatToPlainString(S.default["/rbPDg"], {
-                  appliedBoostCount: A,
-                  maxBoostCount: w
+                children: k ? I.intl.formatToPlainString(x.default["Ehpq+/"], {
+                  appliedBoostCount: R
+                }) : I.intl.formatToPlainString(x.default["/rbPDg"], {
+                  appliedBoostCount: R,
+                  maxBoostCount: Z
                 })
               }), (0, r.jsx)(_.Z, {
                 width: 12,
                 height: 12,
                 direction: _.Z.Directions.RIGHT,
-                className: I.text
+                className: P.text
               })]
             })]
           })]
@@ -186,12 +181,12 @@ function w(e) {
   })
 }
 
-function Z(e) {
+function T(e) {
   let {
     guild: t,
     withMargin: n
   } = e;
-  return (0, r.jsx)(w, {
+  return (0, r.jsx)(Z, {
     guild: t,
     withMargin: n
   })
