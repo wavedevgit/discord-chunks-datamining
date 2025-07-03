@@ -92,13 +92,13 @@ let R = e => {
       }, []),
       {
         selectedTab: Y,
-        transitionState: K,
-        transitionToTab: q
+        transitionState: q,
+        transitionToTab: K
       } = (0, T.B)(N, n, t),
       {
         handleScroll: X
       } = (0, f.z)(N, i, Y);
-    (0, S.q3)(i, Y, V, K, U), (0, S.EB)(Y, c), (0, k.Z)(), l.useEffect(() => {
+    (0, S.q3)(i, Y, V, q, U), (0, S.EB)(Y, c), (0, k.Z)(), l.useEffect(() => {
       t || (0, d.Y)(B.Z5c.COLLECTIBLES_SHOP)
     }, [t]);
     let $ = (0, s.e7)([C.Z], () => C.Z.getLayers().includes(B.S9g.COLLECTIBLES_SHOP)),
@@ -134,23 +134,23 @@ let R = e => {
               onScroll: X,
               children: (0, r.jsxs)("div", {
                 className: o()(A.shopViewWrapper, {
-                  [A.visible]: K === I.f7.VISIBLE,
-                  [A.in]: K === I.f7.IN,
-                  [A.out]: K === I.f7.OUT
+                  [A.visible]: q === I.f7.VISIBLE,
+                  [A.in]: q === I.f7.IN,
+                  [A.out]: q === I.f7.OUT
                 }),
                 children: [(0, r.jsx)(P.I, {
                   isFullScreen: t,
                   isLayer: $,
                   onClose: Z,
-                  handleTransition: q,
+                  handleTransition: K,
                   selectedTab: Y
                 }), (0, r.jsx)(j.Z, {
                   tab: Y,
                   isFullScreen: t,
                   scrollerRef: N,
                   refreshCategories: M,
-                  transitionToTab: q,
-                  transitionState: K,
+                  transitionToTab: K,
+                  transitionState: q,
                   sortedCategories: F,
                   updateAnalyticsState: z
                 })]

@@ -53,9 +53,9 @@ let o = {
       }))
     },
     setSearchError: t => {
-      e({
+      e(i(l({}, o), {
         searchError: t
-      })
+      }))
     },
     clear: () => {
       e(l({}, o))

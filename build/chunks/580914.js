@@ -111,12 +111,12 @@ let R = {
       location: "collectible_hero_block"
     }), z = l.useMemo(() => null != D ? D : w(T), [D, T]), {
       isPreviewingStaticBanner: Y,
-      bannerOverrides: K,
-      bannerStyleOverrides: q,
+      bannerOverrides: q,
+      bannerStyleOverrides: K,
       heroLogo: X,
       heroBannerStatic: $,
       heroBannerAnimated: Q
-    } = (0, L.hr)(z), J = null == K ? void 0 : K.heroBanner, ee = null != (n = null != (t = null == q ? void 0 : q.responsive) ? t : z.responsive) && n, et = null != (i = null == q ? void 0 : q.backgroundStyle) ? i : z.backgroundStyle, en = l.useMemo(() => V(z.rankedSkuIds), [s, V, z.rankedSkuIds]), er = (0, x.a)()(en), el = (0, y.l)(er).slice(0, 4), ei = (0, k.St)(el), eo = M === I.AW.ORBS ? N.intl.string(N.t["1CdL8f"]) : N.intl.formatToPlainString(N.t.wvKYCg, {
+    } = (0, L.hr)(z), J = null == q ? void 0 : q.heroBanner, ee = null != (n = null != (t = null == K ? void 0 : K.responsive) ? t : z.responsive) && n, et = null != (i = null == K ? void 0 : K.backgroundStyle) ? i : z.backgroundStyle, en = l.useMemo(() => V(z.rankedSkuIds), [s, V, z.rankedSkuIds]), er = (0, x.a)()(en), el = (0, y.l)(er).slice(0, 4), ei = (0, k.St)(el), eo = M === I.AW.ORBS ? N.intl.string(N.t["1CdL8f"]) : N.intl.formatToPlainString(N.t.wvKYCg, {
       category_name: z.name
     });
     return null != W && (s || z !== R) ? (0, r.jsxs)("div", {
@@ -138,7 +138,7 @@ let R = {
           src: Q,
           autoPlay: !0,
           loop: !0
-        }), (null == q ? void 0 : q.hideSideShadow) === !0 ? null : (0, r.jsx)(Z, {
+        }), (null == K ? void 0 : K.hideSideShadow) === !0 ? null : (0, r.jsx)(Z, {
           heroBannerOverrides: J,
           isResponsive: ee
         })]
@@ -167,7 +167,7 @@ let R = {
                 children: [z.title, M === I.AW.ORBS && G && (0, r.jsx)(g.Z, {})]
               }), (0, r.jsx)(u.Text, {
                 variant: M === I.AW.ORBS ? "text-lg/medium" : "text-md/normal",
-                className: M === I.AW.ORBS ? A.orbsSubHeaderText : (null == K ? void 0 : K.showDarkBannerText) ? A.subHeaderTextDark : A.subHeaderText,
+                className: M === I.AW.ORBS ? A.orbsSubHeaderText : (null == q ? void 0 : q.showDarkBannerText) ? A.subHeaderTextDark : A.subHeaderText,
                 style: null != z.bannerTextColor ? {
                   color: z.bannerTextColor
                 } : void 0,

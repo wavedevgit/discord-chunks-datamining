@@ -125,28 +125,26 @@ let u = (0, l.U)((e, t) => ({
   g = () => {
     let {
       onSetResponse: e,
-      clear: t,
-      setSearchError: n
+      setSearchError: t
     } = (0, s.a)();
     r.useEffect(() => {
-      let r = u.subscribe(r => {
+      let n = u.subscribe(n => {
         (async () => {
-          t();
-          let l = d(r);
+          let r = d(n);
           try {
-            let t = await (0, a.y)(l),
+            let t = await (0, a.y)(r),
               n = p(t);
             e(n)
           } catch (e) {
-            var i;
-            n(null != (i = null == e ? void 0 : e.message) ? i : "Unknown error")
+            var l;
+            t(null != (l = null == e ? void 0 : e.message) ? l : "Unknown error")
           }
         })()
       });
       return () => {
-        r()
+        n()
       }
-    }, [e, t, n])
+    }, [e, t])
   },
   f = () => {
     let {

@@ -57,10 +57,10 @@ function k(e) {
       case C.AW.BUNDLES:
         return [O.intl.string(O.t.FYFppq), V ? S.Z : E.Z, i.Z.BUNDLE]
     }
-  }, [B, V]), Y = (0, g.a)(), K = l.useMemo(() => Y(D.filter(e => {
+  }, [B, V]), Y = (0, g.a)(), q = l.useMemo(() => Y(D.filter(e => {
     var t;
     return e.type === z || e.type === i.Z.VARIANTS_GROUP && (null == (t = e.variants) ? void 0 : t.some(e => e.type === z)) === !0
-  })), [D, z, Y]), q = (0, f.l)(K);
+  })), [D, z, Y]), K = (0, f.l)(q);
   return (l.useEffect(() => {
     (0, h.n)({
       sessionId: A,
@@ -91,7 +91,7 @@ function k(e) {
       })
     }), (0, r.jsx)("div", {
       className: v.products,
-      children: q.slice(40 * (M - 1), 40 * M).map((e, t) => {
+      children: K.slice(40 * (M - 1), 40 * M).map((e, t) => {
         let n = p.Z.getCategory(e.categorySkuId);
         return null == n ? null : (0, r.jsx)(d.k0, {
           newValue: {
@@ -105,12 +105,12 @@ function k(e) {
           }, e.skuId)
         }, e.skuId)
       })
-    }), q.length > 40 && (0, r.jsx)("div", {
+    }), K.length > 40 && (0, r.jsx)("div", {
       className: v.paginationContainer,
       children: (0, r.jsx)("div", {
         children: (0, r.jsx)(s.DsT, {
           currentPage: M,
-          totalCount: q.length,
+          totalCount: K.length,
           pageSize: 40,
           onPageChange: e => {
             F(e), H()
