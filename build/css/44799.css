@@ -1,6 +1,6 @@
 /**
   Module ID: 44799
-  Original File Name: 19b4095028e96fad
+  Original File Name: 3c1e9ba942a2d081
 **/
 .parentContainer__98cbd {
     display: flex;
@@ -10,8 +10,13 @@
 }
 
 .parentContainer__98cbd:hover .container__98cbd {
+    background-color: var(--background-base-low);
     box-shadow: var(--shadow-high);
     transform: translateY(-4px)
+}
+
+.parentContainer__98cbd:hover .container__98cbd.active__98cbd {
+    background-color: var(--background-surface-high)
 }
 
 .parentContainer__98cbd:hover .buttonContainer__98cbd {
@@ -24,24 +29,35 @@
 }
 
 .container__98cbd {
-    background-color: var(--channeltextarea-background);
+    background-color: var(--background-base-lower);
     border-color: var(--channeltextarea-background);
     border-radius: var(--radius-lg);
     border-style: solid;
     border-width: 1px;
-    box-shadow: var(--shadow-low);
     cursor: pointer;
     flex: 1;
     overflow: hidden;
     position: relative
 }
 
-.container__98cbd.active__98cbd {
-    border-color: hsla(var(--green-360-hsl)/.25)
+.container__98cbd.active__98cbd,.container__98cbd.warning__98cbd {
+    background-color: var(--background-surface-high)
 }
 
-.container__98cbd.warning__98cbd {
-    border-color: var(--status-warning)
+.theme-dark .container__98cbd.active__98cbd {
+    border-color: hsla(var(--green-360-hsl)/.35)
+}
+
+.theme-dark .container__98cbd.warning__98cbd {
+    border-color: hsla(var(--yellow-300-hsl)/.35)
+}
+
+.theme-light .container__98cbd.active__98cbd {
+    border-color: hsla(var(--green-400-hsl)/.35)
+}
+
+.theme-light .container__98cbd.warning__98cbd {
+    border-color: hsla(var(--yellow-400-hsl)/.35)
 }
 
 .contentContainer__98cbd {
@@ -64,6 +80,14 @@
 
 .image__98cbd {
     height: 180px
+}
+
+.theme-dark .image__98cbd {
+    background: linear-gradient(180deg,rgba(15,16,17,0),rgba(15,16,17,.4))
+}
+
+.theme-light .image__98cbd {
+    background: linear-gradient(180deg,rgba(15,16,17,0),rgba(15,16,17,.1))
 }
 
 .labelContainer__98cbd {
@@ -102,7 +126,7 @@
 }
 
 .full-motion .container__98cbd {
-    transition: border-width .2s ease,border-color .2s ease,box-shadow .2s ease,transform .2s ease-in-out
+    transition: border-width .2s ease,border-color .2s ease,box-shadow .2s ease,transform .2s ease-in-out,background-color .2s ease
 }
 
 .full-motion .buttonContainer__98cbd {
@@ -184,11 +208,11 @@
 }
 
 .progress__823e1.full__823e1 {
-    background: hsl(var(--guild-boosting-pink-hsl)/.65)
+    background: var(--guild-boosting-pink)
 }
 
 .progress__823e1.half__823e1 {
-    background: linear-gradient(90deg,hsl(var(--guild-boosting-pink-hsl)/.65),var(--background-mod-subtle))
+    background: linear-gradient(90deg,var(--guild-boosting-pink),var(--background-mod-subtle))
 }
 
 .progress__823e1.none__823e1 {
@@ -219,7 +243,7 @@
 .boostContainer__823e1 {
     align-items: center;
     background-color: var(--interactive-muted);
-    border: var(--space-4) solid var(--channeltextarea-background);
+    border: var(--space-4) solid var(--background-base-lower);
     border-radius: var(--radius-round);
     bottom: 0;
     display: flex;
@@ -406,9 +430,9 @@
 }
 
 .contentContainer__58c46 {
-    display: flex;
-    flex-direction: row;
-    gap: var(--space-8)
+    display: grid;
+    gap: var(--space-8);
+    grid-template-columns: 1fr 1fr 1fr
 }
 
 .learnMore__58c46 {
@@ -607,7 +631,7 @@
 }
 
 .container__89463 {
-    background-color: var(--background-base-low);
+    background-color: var(--background-base-lower);
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -622,7 +646,7 @@
 }
 
 .contentContainer__89463 {
-    background-color: var(--background-base-low);
+    background-color: var(--background-base-lower);
     display: flex;
     flex: 1;
     overflow: hidden
@@ -666,7 +690,7 @@
     flex-wrap: wrap;
     gap: var(--space-16);
     margin-bottom: var(--space-8);
-    padding-bottom: var(--space-24)!important;
+    padding-bottom: var(--space-32)!important;
     padding-top: var(--space-16)
 }
 
@@ -690,4 +714,4 @@
     transition: padding-left .2s ease
 }
 
-/*# sourceMappingURL=19b4095028e96fad.css.map*/
+/*# sourceMappingURL=3c1e9ba942a2d081.css.map*/
