@@ -94,36 +94,33 @@ function g(e) {
       }, () => this.preloadURL(a))
     }
     preloadURL(e) {
-      this.canceller && this.canceller(), this.canceller = (0, s.po)(e, t => {
-        this.canceller && (this.canceller = null), t || (this.cachedURLs.push(e), this.setState({
+      var t, n;
+      null == (t = (n = this).canceller) || t.call(n), this.canceller = (0, s.po)(e, t => {
+        this.canceller = null, t || (this.cachedURLs.push(e), this.setState({
           cached: e,
           loaded: !0
-        }));
-        let {
-          onBackgroundImageLoad: n
-        } = this.props;
-        n && n(t, e)
+        }))
       })
     }
     componentWillUnmount() {
-      this.canceller && this.canceller(), this.cachedURLs.length = 0
+      var e, t;
+      null == (e = (t = this).canceller) || e.call(t), this.cachedURLs.length = 0
     }
     render() {
       let t = this.props,
         {
-          style: n,
-          onBackgroundImageLoad: i
+          style: n
         } = t,
-        a = f(t, ["style", "onBackgroundImageLoad"]),
+        i = f(t, ["style"]),
         {
-          loaded: o,
-          cached: s
+          loaded: a,
+          cached: o
         } = this.state;
-      return o || null == n || (n = d(c({}, n), {
-        backgroundImage: m(s)
+      return a || null == n || (n = d(c({}, n), {
+        backgroundImage: m(o)
       })), (0, r.jsx)(e, c({
         style: n
-      }, a))
+      }, i))
     }
     constructor(e) {
       super(e), l(this, "cachedURLs", []), l(this, "canceller", null);
