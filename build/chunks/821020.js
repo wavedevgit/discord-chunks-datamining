@@ -29,42 +29,34 @@ let l = (0, r.B)({
   commonTriggerPoint: i.$P.CONNECTION_OPEN,
   treatments: [{
     id: 1,
-    label: "Show notification center in popout",
-    config: {
-      notificationCenterVariant: "popout",
-      entrypoint: "server-rail-top",
-      filterStyle: "dropdown"
-    }
-  }, {
-    id: 2,
-    label: "Show notification center in sidebar",
-    config: {
-      notificationCenterVariant: "sidebar",
-      entrypoint: "server-rail-top",
-      filterStyle: "dropdown"
-    }
-  }, {
-    id: 3,
-    label: "Legacy inbox with server rail entrypoint",
+    label: "Server Rail Entrypoint + Legacy Inbox",
     config: {
       notificationCenterVariant: "legacy",
       entrypoint: "server-rail-top",
       filterStyle: null
     }
   }, {
-    id: 4,
-    label: "Panel variant with bottom rail entrypoint",
-    config: {
-      notificationCenterVariant: "sidebar",
-      entrypoint: "server-rail-bottom",
-      filterStyle: "dropdown"
-    }
-  }, {
-    id: 5,
-    label: "Title bar left with popout variant",
+    id: 2,
+    label: "Title Bar Entrypoint + Popout",
     config: {
       notificationCenterVariant: "popout",
       entrypoint: "title-bar-left",
+      filterStyle: "dropdown"
+    }
+  }, {
+    id: 3,
+    label: "Server Rail Entrypoint + Sidebar",
+    config: {
+      notificationCenterVariant: "sidebar",
+      entrypoint: "server-rail-top",
+      filterStyle: "dropdown"
+    }
+  }, {
+    id: 4,
+    label: "Server Rail Entrypoint + Popout",
+    config: {
+      notificationCenterVariant: "popout",
+      entrypoint: "server-rail-top",
       filterStyle: "dropdown"
     }
   }]
