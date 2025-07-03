@@ -1,52 +1,64 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  Ab: () => d,
-  Iy: () => p,
-  S0: () => s
-}), n(388685);
+  Ab: () => g,
+  Iy: () => f,
+  S0: () => u
+}), n(388685), n(642613);
 var r = n(73800),
   l = n(97519),
-  i = n(653654),
-  a = n(149705);
+  i = n(497598),
+  o = n(792091),
+  a = n(653654),
+  s = n(149705);
 
-function o(e, t) {
+function c(e, t) {
   let n = new Set(e);
   return n.has(t) ? n.delete(t) : n.add(t), n
 }
-let s = (0, l.U)((e, t) => ({
+let u = (0, l.U)((e, t) => ({
     itemTypeFilters: new Set,
     colorFilters: new Set,
     themeFilters: new Set,
     orbEligible: !1,
+    sort: {
+      sortType: o.E.RECENCY,
+      sortDirection: i.F.DESC
+    },
     hasFilters: () => {
       let {
         itemTypeFilters: e,
         colorFilters: n,
         themeFilters: r,
-        orbEligible: l
+        orbEligible: l,
+        sort: a
       } = t();
-      return [e, n, r].some(e => e.size > 0) || l
+      return [e, n, r].some(e => e.size > 0) || l || a.sortType !== o.E.RECENCY || a.sortDirection !== i.F.DESC
     },
     onToggleItemType: t => {
       e(e => ({
-        itemTypeFilters: o(e.itemTypeFilters, t)
+        itemTypeFilters: c(e.itemTypeFilters, t)
       }))
     },
     onToggleColor: t => {
       e(e => ({
-        colorFilters: o(e.colorFilters, t)
+        colorFilters: c(e.colorFilters, t)
       }))
     },
     onToggleTheme: t => {
       e(e => ({
-        themeFilters: o(e.themeFilters, t)
+        themeFilters: c(e.themeFilters, t)
       }))
     },
     onToggleOrbEligible: () => {
       e(e => ({
         orbEligible: !e.orbEligible
       }))
+    },
+    onSetSort: t => {
+      e({
+        sort: t
+      })
     },
     onSetResponse: t => {
       e(e => (function(e) {
@@ -79,23 +91,26 @@ let s = (0, l.U)((e, t) => ({
       })
     }
   })),
-  c = (e, t, n) => {
+  d = (e, t, n) => {
     let {
       itemTypeFilters: r,
       colorFilters: l,
       themeFilters: i,
-      orbEligible: a
+      orbEligible: o,
+      sort: a
     } = e;
     return {
       item_types: Array.from(r),
       colors: Array.from(l),
       themes: Array.from(i),
-      orbs_eligible: !!a || void 0,
+      orbs_eligible: !!o || void 0,
       offset: null != t ? t : 0,
-      limit: null != n ? n : 20
+      limit: null != n ? n : 20,
+      sort_type: a.sortType,
+      sort_direction: a.sortDirection
     }
   },
-  u = e => {
+  p = e => {
     let t = e.skus,
       n = e.pagination.total,
       r = e.pagination.has_more;
@@ -107,24 +122,24 @@ let s = (0, l.U)((e, t) => ({
       pageLimit: e.pagination.limit
     }
   },
-  d = () => {
+  g = () => {
     let {
       onSetResponse: e,
       clear: t,
       setSearchError: n
-    } = (0, a.a)();
+    } = (0, s.a)();
     r.useEffect(() => {
-      let r = s.subscribe(r => {
+      let r = u.subscribe(r => {
         (async () => {
           t();
-          let l = c(r);
+          let l = d(r);
           try {
-            let t = await (0, i.y)(l),
-              n = u(t);
+            let t = await (0, a.y)(l),
+              n = p(t);
             e(n)
           } catch (e) {
-            var a;
-            n(null != (a = null == e ? void 0 : e.message) ? a : "Unknown error")
+            var i;
+            n(null != (i = null == e ? void 0 : e.message) ? i : "Unknown error")
           }
         })()
       });
@@ -133,18 +148,18 @@ let s = (0, l.U)((e, t) => ({
       }
     }, [e, t, n])
   },
-  p = () => {
+  f = () => {
     let {
       onSetResponse: e,
       pageLimit: t,
       setSearchError: n
-    } = (0, a.a)();
+    } = (0, s.a)();
     return r.useCallback(async r => {
       let l = r * t,
-        a = c(s.getState(), l, t);
+        i = d(u.getState(), l, t);
       try {
-        let t = await (0, i.y)(a),
-          n = u(t);
+        let t = await (0, a.y)(i),
+          n = p(t);
         e(n)
       } catch (e) {
         var o;

@@ -1,13 +1,13 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  Z: () => L
+  Z: () => P
 }), n(388685);
 var r = n(255367),
   l = n(73800),
   i = n(120356),
-  a = n.n(i),
-  o = n(685816),
+  o = n.n(i),
+  a = n(685816),
   s = n(481060),
   c = n(626135),
   u = n(381585),
@@ -52,8 +52,8 @@ let j = e => {
     let {
       isFetchingShopHome: y,
       fetchShopHomeError: j,
-      shopBlocks: L,
-      refreshShopHome: P
+      shopBlocks: P,
+      refreshShopHome: L
     } = (0, p.E)(c, {
       noCache: h,
       includeUnpublished: v,
@@ -64,10 +64,10 @@ let j = e => {
       tab: c,
       isFullScreen: d
     }), k = l.useCallback(() => {
-      P()
-    }, [P]);
+      L()
+    }, [L]);
     if (l.useEffect(() => {
-        null != j || y || 0 === L.length || (0, g.n)({
+        null != j || y || 0 === P.length || (0, g.n)({
           sessionId: x,
           checkpoint: g.a.SHOP_RENDERED,
           tab: c,
@@ -75,12 +75,12 @@ let j = e => {
           unpublishedCategoriesShown: v,
           cacheDisabled: h
         })
-      }, [j, y, L.length, v, h, x, c, d]), null != j) return (0, r.jsx)(f.Z, {
+      }, [j, y, P.length, v, h, x, c, d]), null != j) return (0, r.jsx)(f.Z, {
       onRetry: k,
       errorOrigin: f.i.SHOP_PAGE,
       errorMessage: j.message
     });
-    if (y || 0 === L.length) return (0, r.jsxs)("div", {
+    if (y || 0 === P.length) return (0, r.jsxs)("div", {
       className: T.loadingContainer,
       children: [(0, r.jsx)(C.Z, {
         isLoading: y,
@@ -101,7 +101,7 @@ let j = e => {
       if (null == e) return null;
       let l = null;
       switch (e.type) {
-        case o.z.HERO:
+        case a.z.HERO:
           l = (0, r.jsx)(C.Z, {
             isLoading: y,
             handleTransition: n,
@@ -109,14 +109,14 @@ let j = e => {
             tab: c
           }, t);
           break;
-        case o.z.FEATURED:
+        case a.z.FEATURED:
           l = (0, r.jsx)(m.Z, {
             isLoading: y,
             handleTransition: n,
             featuredBlockRecord: e
           }, t);
           break;
-        case o.z.FEED:
+        case a.z.FEED:
           let u = e.sortedSkuIds;
           l = (0, r.jsx)(_.Z, {
             isLoading: y || s,
@@ -126,14 +126,14 @@ let j = e => {
             tab: c
           }, t);
           break;
-        case o.z.WIDE_BANNER:
+        case a.z.WIDE_BANNER:
           l = (0, r.jsx)(E.Z, {
             handleTransition: n,
             wideBannerBlock: e,
             tab: c
           }, t);
           break;
-        case o.z.SHELF:
+        case a.z.SHELF:
           l = (0, r.jsx)(O.Z, {
             handleTransition: n,
             shelf: e,
@@ -144,22 +144,22 @@ let j = e => {
           return null
       }
       return (0, r.jsx)("div", {
-        className: a()(T.blockContainer, {
+        className: o()(T.blockContainer, {
           [T.topBlockContainer]: 0 === t
         }),
         children: l
       }, t)
     };
     return (0, r.jsx)(r.Fragment, {
-      children: L.map((e, t) => I(e, t))
+      children: P.map((e, t) => I(e, t))
     })
   },
-  L = e => {
+  P = e => {
     let {
       isFullScreen: t,
       scrollerRef: n,
       handleTransition: i,
-      tab: o,
+      tab: a,
       transitionState: p
     } = e, g = (0, d.R)("CollectiblesFeedShop"), f = (0, h.R)(), b = (0, u.sp)(), [m, _] = l.useState(S.IV), [C, O] = l.useState(!1);
     return l.useEffect(() => {
@@ -177,14 +177,14 @@ let j = e => {
     }, [n, m, g, _, O]), (0, r.jsxs)("div", {
       className: T.shop,
       children: [(0, r.jsxs)("div", {
-        className: a()(T.content, T.mainContent),
+        className: o()(T.content, T.mainContent),
         children: [(0, r.jsx)(j, {
           handleTransition: i,
           numVisibleItems: m,
           isFetchingCategories: f,
-          tab: o,
+          tab: a,
           isFullScreen: t
-        }), o !== S.AW.CATALOG && m >= g && (0, r.jsxs)("div", {
+        }), a !== S.AW.CATALOG && m >= g && (0, r.jsxs)("div", {
           className: T.endOfFeed,
           children: [(0, r.jsx)(s.X6q, {
             variant: "heading-md/semibold",
@@ -194,8 +194,8 @@ let j = e => {
             onClick: () => {
               i("shop all button", void 0, !0), c.default.track(x.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                 collectibles_shop_session_id: null == b ? void 0 : b.sessionId,
-                page_type: o,
-                page_category: o === S.AW.HOME || null == b ? void 0 : b.pageCategory,
+                page_type: a,
+                page_category: a === S.AW.HOME || null == b ? void 0 : b.pageCategory,
                 cta_name: "shop the whole shop button"
               })
             },

@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367),
   l = n(73800),
   i = n(120356),
-  a = n.n(i),
-  o = n(636977),
+  o = n.n(i),
+  a = n(636977),
   s = n(442837),
   c = n(481060),
   u = n(37234),
@@ -28,9 +28,9 @@ var r = n(255367),
   y = n(215023),
   T = n(981631),
   j = n(388032),
-  L = n(774457);
+  P = n(774457);
 
-function P(e) {
+function L(e) {
   let {
     tab: t,
     displayText: n,
@@ -39,9 +39,9 @@ function P(e) {
   } = e;
   return (0, r.jsx)(h.Z.Title, {
     onClick: () => i(t),
-    wrapperClassName: L.tabWrapper,
-    className: a()(L.tab, {
-      [L.selected]: l
+    wrapperClassName: P.tabWrapper,
+    className: o()(P.tab, {
+      [P.selected]: l
     }),
     children: n
   })
@@ -52,19 +52,19 @@ function k(e) {
     tab: t,
     selected: n,
     displayText: i,
-    handleTransition: a
-  } = e, [o, s] = l.useState(!1), u = l.useRef(null), [d, p] = l.useState(0), h = l.useRef(!1), b = e => {
+    handleTransition: o
+  } = e, [a, s] = l.useState(!1), u = l.useRef(null), [d, p] = l.useState(0), h = l.useRef(!1), b = e => {
     clearTimeout(d), p(setTimeout(() => {
       s(e)
     }, 100)), e && (h.current = f.Z.keyboardModeEnabled)
   };
   return (0, r.jsx)("div", {
-    className: L.tabWithMenuContainer,
+    className: P.tabWithMenuContainer,
     onMouseEnter: () => b(!0),
     onMouseLeave: () => b(!1),
     children: (0, r.jsx)(c.yRy, {
       targetElementRef: u,
-      shouldShow: o,
+      shouldShow: a,
       position: "bottom",
       align: "left",
       onRequestOpen: () => b(!0),
@@ -77,22 +77,22 @@ function k(e) {
           closePopout: t
         } = e;
         return (0, r.jsx)(x.Z, {
-          handleTransition: a,
+          handleTransition: o,
           onClose: t
         })
       },
       children: () => (0, r.jsxs)("div", {
         ref: u,
-        className: L.tabWithMenu,
+        className: P.tabWithMenu,
         onKeyDown: e => {
           ("Enter" === e.key || " " === e.key) && (b(!0), e.preventDefault())
         },
-        children: [(0, r.jsx)(P, {
+        children: [(0, r.jsx)(L, {
           tab: t,
           displayText: i,
           selected: n,
-          handleTransition: a
-        }, t), o ? (0, r.jsx)(c.u04, {
+          handleTransition: o
+        }, t), a ? (0, r.jsx)(c.u04, {
           size: "sm",
           color: "currentColor"
         }) : (0, r.jsx)(c.CJ0, {
@@ -115,48 +115,48 @@ function I(e) {
     enabled: N
   } = (0, _.WX)({
     location: "collectibles_shop_header_bar"
-  }), A = (0, S.S)("collectibles_shop_header_bar"), w = [{
+  }), A = (0, S.S)("collectibles_shop_header_bar"), R = [{
     tab: y.AW.HOME,
     displayText: j.intl.string(j.t.ijDDw8)
   }, {
     tab: y.AW.CATALOG,
     displayText: A ? j.intl.string(j.t.Ah5sJi) : j.intl.string(j.t.xFcotb)
   }];
-  N && w.push({
+  N && R.push({
     tab: y.AW.ORBS,
     displayText: j.intl.string(j.t.EBYkzs)
   });
-  let R = n ? E.DR : i,
+  let w = n ? E.DR : i,
     Z = g === y.AW.ORBS ? T.ZY5.SHOP_ORBS_TAB : T.ZY5.COLLECTIBLES_SHOP,
-    M = l.useCallback(() => {
-      t && (R(), (0, u.Ou)()), (0, m.Y)({
+    D = l.useCallback(() => {
+      t && (w(), (0, u.Ou)()), (0, m.Y)({
         pageType: Z,
         sectionType: T.jXE.ORBS_BALANCE_MENU,
         ctaObject: T.qAy.CTA_TO_QUEST_HOME
       }), (0, b.navigateToQuestHome)({
-        fromContent: o.j.ORBS_BALANCE_MENU
+        fromContent: a.j.ORBS_BALANCE_MENU
       })
-    }, [R, t, Z]);
+    }, [w, t, Z]);
   return (0, r.jsx)(c.f6W, {
     theme: x,
     children: e => (0, r.jsxs)(h.Z, {
-      className: a()(e, L.headerBar, {
-        [L.fullscreenHeaderBar]: t
+      className: o()(e, P.headerBar, {
+        [P.fullscreenHeaderBar]: t
       }),
-      innerClassname: N ? L.headerBarInner : void 0,
+      innerClassname: N ? P.headerBarInner : void 0,
       toolbar: t || !B ? null : (0, r.jsx)(l.Fragment, {}),
       children: [(0, r.jsxs)(c.P3F, {
-        className: L.shopHomeLink,
+        className: P.shopHomeLink,
         onClick: () => f(y.AW.HOME),
         "aria-label": j.intl.string(j.t.pWG4zc) + " home",
         children: [(0, r.jsx)(v.Z, {
-          className: L.discordLogo
+          className: P.discordLogo
         }), (0, r.jsx)(h.Z.Title, {
           children: j.intl.string(j.t.pWG4zc)
         })]
       }), (0, r.jsx)("div", {
-        className: L.tabs,
-        children: w.map(e => {
+        className: P.tabs,
+        children: R.map(e => {
           let {
             tab: t,
             displayText: n
@@ -166,7 +166,7 @@ function I(e) {
             selected: (0, y.RE)(g) || g === t,
             displayText: n,
             handleTransition: f
-          }, t) : (0, r.jsx)(P, {
+          }, t) : (0, r.jsx)(L, {
             tab: t,
             displayText: n,
             selected: g === t,
@@ -174,16 +174,16 @@ function I(e) {
           }, t)
         })
       }), (N || t) && (0, r.jsxs)("div", {
-        className: L.alignedRightContent,
+        className: P.alignedRightContent,
         children: [N && (0, r.jsx)(C.V9, {
           anchorPillType: t ? "SHOP_FULLSCREEN" : "SHOP",
           analyticsPage: Z,
           cardAlignment: C.V9.CardAlignment.END,
           ctaText: j.intl.string(j.t.VC4Mq6),
-          ctaOnClick: M,
-          className: L.balanceWidgetMenu
+          ctaOnClick: D,
+          className: P.balanceWidgetMenu
         }), t && (0, r.jsx)(d.Z, {
-          closeAction: R,
+          closeAction: w,
           keybind: "ESC"
         })]
       })]

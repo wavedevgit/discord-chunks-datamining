@@ -1,13 +1,13 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.r(t), n.d(t, {
-  default: () => R
+  default: () => w
 }), n(388685);
 var r = n(255367),
   l = n(73800),
   i = n(120356),
-  a = n.n(i),
-  o = n(772848),
+  o = n.n(i),
+  a = n(772848),
   s = n(399606),
   c = n(952265),
   u = n(481060),
@@ -28,14 +28,14 @@ var r = n(255367),
   y = n(298228),
   T = n(309956),
   j = n(98535),
-  L = n(963102),
-  P = n(508498),
+  P = n(963102),
+  L = n(508498),
   k = n(849217),
   I = n(215023),
   B = n(981631),
   N = n(420212),
   A = n(484920);
-let w = e => {
+let R = e => {
     let {
       children: t,
       shouldAddEventListener: n,
@@ -49,28 +49,28 @@ let w = e => {
       return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
     }, [n, i, r]), t
   },
-  R = function(e) {
+  w = function(e) {
     let {
       isFullScreen: t = !0,
       tab: n = I.AW.HOME
     } = e;
     (0, b.z)(h.f);
-    let i = (0, p.Z)((0, o.Z)()),
+    let i = (0, p.Z)((0, a.Z)()),
       c = (0, s.e7)([O.default], () => O.default.getCurrentUser()),
       N = l.useRef(null),
       {
-        closeIntroToOrbsClaimedCoachmark: R
+        closeIntroToOrbsClaimedCoachmark: w
       } = (0, _.Z)({
         location: "CollectiblesShop"
       });
     l.useEffect(() => () => {
-      R()
-    }, [i, R]);
+      w()
+    }, [i, w]);
     let {
       onClose: Z
-    } = (0, P.Db)(), {
-      categories: M,
-      refreshCategories: H
+    } = (0, L.Db)(), {
+      categories: D,
+      refreshCategories: M
     } = (0, x.ZP)({
       location: "CollectiblesShop.web",
       logPerf: !0
@@ -80,11 +80,11 @@ let w = e => {
       isFullScreen: t
     });
     (0, m.P)();
-    let D = (0, y.O)(M),
-      [F, W] = l.useState(),
+    let F = (0, y.O)(D),
+      [H, W] = l.useState(),
       V = (0, s.e7)([E.Z], () => {
         var e;
-        return null == (e = E.Z.getCategory(F)) ? void 0 : e.name
+        return null == (e = E.Z.getCategory(H)) ? void 0 : e.name
       }),
       [U, G] = l.useState(),
       z = l.useCallback((e, t) => {
@@ -121,7 +121,7 @@ let w = e => {
           pageCategory: V,
           pageSize: I.kN
         },
-        children: (0, r.jsx)(w, {
+        children: (0, r.jsx)(R, {
           onClose: Z,
           shouldAddEventListener: t && !$,
           children: (0, r.jsx)("div", {
@@ -133,12 +133,12 @@ let w = e => {
               ref: N,
               onScroll: X,
               children: (0, r.jsxs)("div", {
-                className: a()(A.shopViewWrapper, {
+                className: o()(A.shopViewWrapper, {
                   [A.visible]: K === I.f7.VISIBLE,
                   [A.in]: K === I.f7.IN,
                   [A.out]: K === I.f7.OUT
                 }),
-                children: [(0, r.jsx)(L.I, {
+                children: [(0, r.jsx)(P.I, {
                   isFullScreen: t,
                   isLayer: $,
                   onClose: Z,
@@ -148,10 +148,10 @@ let w = e => {
                   tab: Y,
                   isFullScreen: t,
                   scrollerRef: N,
-                  refreshCategories: H,
+                  refreshCategories: M,
                   transitionToTab: q,
                   transitionState: K,
-                  sortedCategories: D,
+                  sortedCategories: F,
                   updateAnalyticsState: z
                 })]
               })

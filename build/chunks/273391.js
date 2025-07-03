@@ -1,19 +1,20 @@
 /** Chunk was on 56535 **/
 n.d(t, {
-  v: () => v
+  v: () => x
 }), n(388685);
 var r = n(255367),
   l = n(73800),
   a = n(36793),
-  i = n(481060),
-  s = n(710845),
-  o = n(197712),
+  i = n(33309),
+  s = n(481060),
+  o = n(710845),
+  c = n(197712),
   u = n(511004),
-  c = n(598117),
-  d = n(388032),
-  h = n(917093);
+  d = n(598117),
+  h = n(388032),
+  p = n(917093);
 
-function p(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -32,7 +33,7 @@ function p(e) {
   return e
 }
 
-function g(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -44,211 +45,218 @@ function g(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = new s.Z("ImageEditor"),
-  f = {
+let f = new o.Z("ImageEditor"),
+  v = {
     width: 256,
     height: 256
   },
-  v = e => {
+  x = e => {
     let {
       file: t,
       imageUri: n,
-      onUpdate: s
-    } = e, v = l.useRef({
+      onUpdate: o
+    } = e, x = l.useRef({
       x: 0,
       y: 0
-    }), j = l.useRef(null), [E, N] = l.useState(1), [D, I] = l.useState(null), [C, y] = l.useState({
+    }), E = l.useRef(null), [N, D] = l.useState(1), [I, C] = l.useState(null), [y, S] = l.useState({
       top: 0,
       bottom: 0,
       left: 0,
       right: 0
-    }), [S, w] = l.useState(0), [A, k] = l.useState({
+    }), [w, A] = l.useState(0), [k, M] = l.useState({
       x: 0,
       y: 0
-    }), [M, T] = l.useState(!1), R = "image/gif" === t.type, [P, L] = l.useState(null);
+    }), [T, R] = l.useState(!1), P = "image/gif" === t.type, L = (0, i.v)(t.type), z = L && !P, [Z, G] = l.useState(null);
     l.useEffect(() => {
       (0, u.Z)()
     }, []);
-    let z = l.useCallback(e => {
-        if (null == j.current) return;
+    let U = l.useCallback(e => {
+        if (null == E.current) return;
         let {
           x: t,
           y: n
-        } = (0, o.U$)(e.x, e.y, C);
-        v.current = {
+        } = (0, c.U$)(e.x, e.y, y);
+        x.current = {
           x: t,
           y: n
-        }, j.current.style.transform = "translate3d(".concat(t, "px, ").concat(n, "px, 0) rotate(").concat(S, "deg)")
-      }, [j, S, C]),
-      Z = l.useCallback(e => {
-        if (null == D) return;
-        let t = _(D, e, R),
+        }, E.current.style.transform = "translate3d(".concat(t, "px, ").concat(n, "px, 0) rotate(").concat(w, "deg)")
+      }, [E, w, y]),
+      W = l.useCallback(e => {
+        if (null == I) return;
+        let t = O(I, e, L),
           {
             x: n,
             y: r
-          } = v.current;
-        N(e), y(t), z({
+          } = x.current;
+        D(e), S(t), U({
           x: n,
           y: r
         })
-      }, [D, z, R]),
-      G = l.useCallback(() => {
-        if (null == j.current || null == D) return;
-        let e = (S + 90) % 360,
-          t = -v.current.x,
-          n = v.current.y,
-          r = D.height,
-          l = D.width,
-          a = _({
+      }, [I, U, L]),
+      B = l.useCallback(() => {
+        if (null == E.current || null == I) return;
+        let e = (w + 90) % 360,
+          t = -x.current.x,
+          n = x.current.y,
+          r = I.height,
+          l = I.width,
+          a = O({
             width: r,
             height: l
-          }, E, R);
-        z({
+          }, N, L);
+        U({
           x: n,
           y: t
-        }), w(e), I({
+        }), A(e), C({
           width: r,
           height: l
-        }), y(a)
-      }, [D, S, z, E, R]),
-      U = l.useCallback(() => {
-        if (null == D) return {};
+        }), S(a)
+      }, [I, w, U, N, L]),
+      F = l.useCallback(() => {
+        if (null == I) return {};
         let {
           height: e,
           width: t
-        } = b(x(D, S), E);
+        } = _(b(I, w), N);
         return {
           height: e,
           width: t,
           minHeight: e,
           minWidth: t
         }
-      }, [D, S, E]),
-      W = l.useCallback(e => {
-        k({
-          x: e.clientX - v.current.x,
-          y: e.clientY - v.current.y
-        }), T(!0)
+      }, [I, w, N]),
+      V = l.useCallback(e => {
+        M({
+          x: e.clientX - x.current.x,
+          y: e.clientY - x.current.y
+        }), R(!0)
       }, []);
     l.useEffect(() => {
-      let e = () => T(!1);
+      let e = () => R(!1);
       return window.addEventListener("mouseup", e), () => window.removeEventListener("mouseup", e)
     }, []);
-    let B = l.useCallback(e => {
+    let H = l.useCallback(e => {
       let {
         x: t,
         y: n
-      } = v.current;
-      M && (e.clientX !== t || e.clientY !== n) && z({
-        x: t = e.clientX - A.x,
-        y: n = e.clientY - A.y
+      } = x.current;
+      T && (e.clientX !== t || e.clientY !== n) && U({
+        x: t = e.clientX - k.x,
+        y: n = e.clientY - k.y
       })
-    }, [M, A, z]);
+    }, [T, k, U]);
     l.useEffect(() => {
-      if (M) return window.addEventListener("mousemove", B), () => window.removeEventListener("mousemove", B)
-    }, [B, M]);
-    let F = l.useRef(null),
-      V = l.useCallback(async () => {
+      if (T) return window.addEventListener("mousemove", H), () => window.removeEventListener("mousemove", H)
+    }, [H, T]);
+    let Y = l.useRef(null),
+      J = l.useCallback(async () => {
         let e;
-        if (null == j.current || null == D) return;
-        let n = Date.now(),
-          r = j.current,
-          l = {
-            height: c.eT,
-            width: c.eT
+        if (null == E.current || null == I) return;
+        let r = Date.now(),
+          l = E.current,
+          i = {
+            height: d.eT,
+            width: d.eT
           },
-          i = null;
-        if (null != F.current && (F.current(), F.current = null), R) try {
-          let n = O({
+          s = null;
+        if (null != Y.current && (Y.current(), Y.current = null), P) try {
+          let n = j({
               file: t,
-              image: r,
-              cropDimensions: f,
-              cropOriginCoordinates: v.current,
-              maxDimensions: l,
-              imageRotation: S,
-              resizeWidth: c.eT,
-              resizeHeight: c.eT
-            }, D, E),
+              image: l,
+              cropDimensions: v,
+              cropOriginCoordinates: x.current,
+              maxDimensions: i,
+              imageRotation: w,
+              resizeWidth: d.eT,
+              resizeHeight: d.eT
+            }, I, N),
             {
-              result: a,
-              cancelFn: i
-            } = await (0, o.$p)(n);
-          F.current = i, e = await a
+              result: r,
+              cancelFn: a
+            } = await (0, c.$p)(n);
+          Y.current = a, e = await r
         } catch (e) {
-          m.error("Error cropping GIF", e), i = c.ze.GIF_CROPPING
+          f.error("Error cropping GIF", e), s = d.ze.GIF_CROPPING
         } finally {
           var u;
-          null == (u = F.current) || u.call(F), F.current = null
-        } else e = (0, a.PT)({
-          image: r,
-          cropDimensions: f,
-          cropOriginCoordinates: v.current,
-          maxDimensions: l,
-          imageRotation: S
+          null == (u = Y.current) || u.call(Y), Y.current = null
+        } else e = z ? n : (0, a.PT)({
+          image: l,
+          cropDimensions: v,
+          cropOriginCoordinates: x.current,
+          maxDimensions: i,
+          imageRotation: w
         });
-        return s({
+        return o({
           imageData: e,
-          imageDataTimestamp: n,
-          error: i,
+          imageDataTimestamp: r,
+          error: s,
           loading: !1
         }), () => {
           var e;
-          null == (e = F.current) || e.call(F), F.current = null
+          null == (e = Y.current) || e.call(Y), Y.current = null
         }
-      }, [t, S, R, s, D, E]);
+      }, [t, w, P, z, o, I, N, n]);
     l.useEffect(() => {
-      V()
-    }, [V, S, D, M, E, P]);
-    let H = l.useCallback(() => {
-      if (null == j.current) return;
-      let e = j.current.naturalWidth,
-        t = j.current.naturalHeight;
-      I({
+      J()
+    }, [J, w, I, T, N, Z]);
+    let K = l.useCallback(() => {
+      if (null == E.current) return;
+      let e = E.current.naturalWidth,
+        t = E.current.naturalHeight;
+      C({
         width: e,
         height: t
       });
       let n = Math.min(Math.max(e, t) / Math.min(e, t), 4);
-      L(n), N(n), y(_({
+      G(n), D(n), S(O({
         width: e,
         height: t
-      }, n, R))
-    }, [R]);
+      }, n, L))
+    }, [L]);
     return (0, r.jsxs)("div", {
-      className: h.imageEditor,
+      className: p.imageEditor,
       children: [(0, r.jsxs)("div", {
-        className: h.editingContainer,
+        className: p.editingContainer,
         children: [(0, r.jsx)("img", {
-          onLoad: H,
+          onLoad: K,
           onError: () => {
-            s({
-              error: c.ze.IMAGE_LOAD,
+            o({
+              error: d.ze.IMAGE_LOAD,
               loading: !1
             })
           },
-          style: p({
-            opacity: +(null != D),
-            transform: "translate3d(".concat(v.current.x, "px, ").concat(v.current.y, "px, 0) rotate(").concat(S, "deg)")
-          }, U()),
-          className: h.image,
+          style: g({
+            opacity: +(null != I),
+            transform: "translate3d(".concat(x.current.x, "px, ").concat(x.current.y, "px, 0) rotate(").concat(w, "deg)")
+          }, F()),
+          className: p.image,
           src: n,
           crossOrigin: "anonymous",
-          alt: d.intl.string(d.t.EYR1FR),
-          ref: j,
-          onMouseDown: W,
+          alt: h.intl.string(h.t.EYR1FR),
+          ref: E,
+          onMouseDown: V,
           draggable: !1
-        }), (0, r.jsx)("div", {
-          className: h.overlay,
+        }), !z && (0, r.jsx)("div", {
+          className: p.overlay,
           style: {
-            opacity: +(null != D),
-            width: f.width,
-            height: f.height
+            opacity: +(null != I),
+            width: v.width,
+            height: v.height
           }
         })]
-      }), (0, r.jsxs)("div", {
-        className: h.toolsContainer,
-        children: [(0, r.jsx)(i.ua7, {
-          text: d.intl.string(d.t["oCs/+P"]),
-          "aria-label": d.intl.string(d.t["oCs/+P"]),
+      }), z ? (0, r.jsx)("div", {
+        className: p.animatedInfoContainer,
+        children: (0, r.jsx)(s.Text, {
+          variant: "text-sm/normal",
+          color: "text-muted",
+          children: h.intl.string(h.t["5XCxio"])
+        })
+      }) : (0, r.jsxs)("div", {
+        className: p.toolsContainer,
+        children: [(0, r.jsx)(s.ua7, {
+          text: h.intl.string(h.t["oCs/+P"]),
+          "aria-label": h.intl.string(h.t["oCs/+P"]),
           children: e => {
             var {
               onClick: t
@@ -267,44 +275,44 @@ let m = new s.Z("ImageEditor"),
               }
               return l
             }(e, ["onClick"]);
-            return (0, r.jsx)(i.zxk, g(p({
-              className: h.rotateButton,
-              look: i.zxk.Looks.BLANK,
-              size: i.PhG.NONE,
-              color: i.zxk.Colors.TRANSPARENT,
+            return (0, r.jsx)(s.zxk, m(g({
+              className: p.rotateButton,
+              look: s.zxk.Looks.BLANK,
+              size: s.PhG.NONE,
+              color: s.zxk.Colors.TRANSPARENT,
               grow: !1
             }, n), {
-              onClick: G,
-              children: (0, r.jsx)(i.Vk2, {
+              onClick: B,
+              children: (0, r.jsx)(s.Vk2, {
                 size: "sm",
-                color: i.TVs.colors.ICON_SECONDARY
+                color: s.TVs.colors.ICON_SECONDARY
               })
             }))
           }
         }), (0, r.jsxs)("div", {
-          className: h.zoomControls,
-          children: [(0, r.jsx)(i.BlJ, {
-            color: i.TVs.colors.ICON_SECONDARY,
+          className: p.zoomControls,
+          children: [(0, r.jsx)(s.BlJ, {
+            color: s.TVs.colors.ICON_SECONDARY,
             size: "sm"
-          }), null != P && (0, r.jsx)(i.iRW, {
-            className: h.slider,
-            initialValue: P,
+          }), null != Z && (0, r.jsx)(s.iRW, {
+            className: p.slider,
+            initialValue: Z,
             minValue: 1,
             maxValue: 4,
             keyboardStep: .025,
-            asValueChanges: Z,
+            asValueChanges: W,
             equidistant: !0,
             hideBubble: !0,
-            "aria-label": d.intl.string(d.t["2hPcVF"])
-          }), (0, r.jsx)(i.OyE, {
-            color: i.TVs.colors.ICON_SECONDARY,
+            "aria-label": h.intl.string(h.t["2hPcVF"])
+          }), (0, r.jsx)(s.OyE, {
+            color: s.TVs.colors.ICON_SECONDARY,
             size: "sm"
           })]
         })]
       })]
     })
   },
-  x = (e, t) => {
+  b = (e, t) => {
     let {
       width: n,
       height: r
@@ -317,7 +325,7 @@ let m = new s.Z("ImageEditor"),
       height: r
     }
   },
-  b = (e, t) => {
+  _ = (e, t) => {
     let {
       width: n,
       height: r
@@ -328,11 +336,11 @@ let m = new s.Z("ImageEditor"),
     }
   };
 
-function _(e, t, n) {
+function O(e, t, n) {
   let {
     width: r,
     height: l
-  } = b(e, t), a = Math.abs(256 - r) / 2, i = Math.abs(256 - l) / 2;
+  } = _(e, t), a = Math.abs(256 - r) / 2, i = Math.abs(256 - l) / 2;
   return n && (r < 256 || l < 256) ? {
     top: 0,
     bottom: 0,
@@ -345,17 +353,17 @@ function _(e, t, n) {
     right: a
   }
 }
-let O = (e, t, n) => {
+let j = (e, t, n) => {
   let {
     height: r,
     width: l
-  } = b(t, n), a = (r = Math.min(r, 256)) / (l = Math.min(l, 256)), i = {
+  } = _(t, n), a = (r = Math.min(r, 256)) / (l = Math.min(l, 256)), i = {
     height: r,
     width: l
-  }, s = Math.floor(a < 1 ? c.eT * a : c.eT / a), o = a < 1 ? s : c.eT, u = a > 1 ? s : c.eT;
-  return g(p({}, e), {
+  }, s = Math.floor(a < 1 ? d.eT * a : d.eT / a), o = a < 1 ? s : d.eT, c = a > 1 ? s : d.eT;
+  return m(g({}, e), {
     cropDimensions: i,
     resizeHeight: o,
-    resizeWidth: u
+    resizeWidth: c
   })
 }

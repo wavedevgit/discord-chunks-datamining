@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  F: () => a
+  F: () => o
 });
 var r = n(818083),
   l = n(987338);
@@ -21,6 +21,6 @@ let i = (0, r.B)({
       }
     }]
   }),
-  a = e => i.useExperiment({
+  o = e => i.useExperiment({
     location: e
   }).collectiblesBrowseEnabled
