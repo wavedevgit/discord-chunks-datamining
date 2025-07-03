@@ -1,20 +1,11 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  N: () => r
+  N: () => i
 });
-var i = n(520540);
 
-function r(e) {
-  let {
-    enabled: t,
-    eligibleToFetch: n
-  } = i.g.useExperiment({
-    location: e
-  }, {
-    autoTrackExposure: !1
-  });
+function i(e) {
   return {
-    enabled: t,
-    eligibleToFetch: n
+    enabled: !0,
+    eligibleToFetch: !0
   }
 }

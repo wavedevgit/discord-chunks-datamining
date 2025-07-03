@@ -1,6 +1,6 @@
 /**
   Module ID: 89795
-  Original File Name: 3b9a8ec29a2e9d9a
+  Original File Name: e3caa5ec3d896fc2
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -6593,6 +6593,7 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
     backdrop-filter: blur(8px);
     box-sizing: border-box;
     display: flex;
+    margin-top: 40px;
     min-width: 560px
 }
 
@@ -6612,17 +6613,8 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
     background: var(--background-secondary-alt);
     border-radius: var(--radius-lg);
     margin-bottom: -40px;
-    margin-top: 40px;
     max-width: 660px;
     min-height: 292px
-}
-
-.expandedProgressBarContainerVariant1_a61c56 {
-    margin-top: 65px
-}
-
-.expandedProgressBarContainerVariant2_a61c56 {
-    margin-top: 40px
 }
 
 .allReferralsSentBorder_a61c56 {
@@ -19565,4 +19557,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=3b9a8ec29a2e9d9a.css.map*/
+/*# sourceMappingURL=e3caa5ec3d896fc2.css.map*/
