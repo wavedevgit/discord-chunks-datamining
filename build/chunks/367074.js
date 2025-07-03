@@ -159,7 +159,7 @@ async function x() {
       autoTrackExposure: !1
     }),
     p = !a.tq || c;
-  if (r || i || !o || t && !_ || !p || (f.Z.shouldFetchOffer() && !(0, h.I5)(n) && await (0, g.T)("BogoPromotionUtils"), f.Z.hasFetchedOffer() && (f.Z.hasAnyUnexpiredOffer() || f.Z.hasAnyUnexpiredDiscountOffer()))) return !1;
+  if (r || i || !o || t && !_ || !p || (f.Z.isFetchingOffer() || (0, h.I5)(n) || await (0, g.T)("BogoPromotionUtils"), f.Z.hasFetchedOffer() && (f.Z.hasAnyUnexpiredOffer() || f.Z.hasAnyUnexpiredDiscountOffer()))) return !1;
   !d.Z.hasFetchedMostRecentPremiumTypeSubscription() && (null == (e = u.default.getCurrentUser()) ? void 0 : e.hasPurchasedFlag(C.in.PREMIUM_TIER_2)) && await (0, s.ou)(), d.Z.hasFetchedSubscriptions() || await (0, s.jg)();
   let m = d.Z.getMostRecentPremiumTypeSubscription();
   return w({
