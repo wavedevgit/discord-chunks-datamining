@@ -175,16 +175,18 @@ let P = i.forwardRef((e, t) => {
           children: [(0, r.jsx)("div", {
             className: I.title,
             children: function() {
-              let {
-                user: e,
-                target: t,
-                options: n
-              } = l, i = O.N5(l);
-              return null != i ? (0, r.jsx)("div", {
+              let e, {
+                user: t,
+                target: n,
+                options: i
+              } = l;
+              e = "object" == typeof n && "name" in n ? n.name : n.toString();
+              let s = O.N5(l);
+              return null != s ? (0, r.jsx)("div", {
                 className: I.overflowEllipsis,
-                children: N.intl.format(i, {
-                  user: e,
-                  target: t.toString(),
+                children: N.intl.format(s, {
+                  user: t,
+                  target: e,
                   userHook: (e, t) => {
                     if (null != l.user) return (0, r.jsx)(T, {
                       user: l.user,
@@ -204,13 +206,13 @@ let P = i.forwardRef((e, t) => {
                     onContextMenu: D,
                     children: e
                   }, t),
-                  count: n.count,
-                  channel: null == n.channel || "string" == typeof n.channel ? n.channel : (0, g.F6)(n.channel, b.default, x.Z, !0),
+                  count: i.count,
+                  channel: null == i.channel || "string" == typeof i.channel ? i.channel : (0, g.F6)(i.channel, b.default, x.Z, !0),
                   channelHook: (e, t) => (0, r.jsx)("span", {
                     onContextMenu: w,
                     children: e
                   }, t),
-                  subtarget: n.subtarget
+                  subtarget: i.subtarget
                 })
               }) : null
             }()
