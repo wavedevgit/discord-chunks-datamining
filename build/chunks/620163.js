@@ -935,7 +935,7 @@ let eJ = () => {
       },
       [eF.s6.VOICE_AND_VIDEO_INPUT_PROFILE]: {
         section: ez.oAB.VOICE,
-        searchableTitles: [eK.intl.string(eK.t.LM3U3t), eK.intl.string(eK.t.nuFtHB), eK.intl.string(eK.t.VZPR0d), eK.intl.string(eK.t.cjPbpa)],
+        searchableTitles: [],
         parent: eF.s6.VOICE_AND_VIDEO_VOICE,
         predicate: () => {
           let {

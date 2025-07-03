@@ -20,7 +20,8 @@ function g() {
   } = (0, o.ZP)(), t = (0, s.e7)([c.Z], () => c.Z.getActiveInputProfile()), {
     enabledInputProfiles: n
   } = (0, d.c)({
-    location: "UserSettingsInputProfile"
+    location: "UserSettingsInputProfile",
+    autoTrackExposure: !1
   }), g = r.useCallback(t => {
     let {
       value: n
