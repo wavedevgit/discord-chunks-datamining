@@ -75,7 +75,7 @@ function c(e) {
     autoTrackExposure: o = !0
   } = e, {
     isInHoldout: n
-  } = i.h.useExperiment({
+  } = i.Y.useExperiment({
     location: t
   }, {
     autoTrackExposure: o

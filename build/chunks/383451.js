@@ -27,7 +27,7 @@ function l(e) {
     autoTrackExposure: n = !0
   } = e, {
     isInHoldout: i
-  } = r.h.getCurrentConfig({
+  } = r.Y.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: n
@@ -46,7 +46,7 @@ function a(e) {
     autoTrackExposure: n = !0
   } = e, {
     isInHoldout: i
-  } = r.h.useExperiment({
+  } = r.Y.useExperiment({
     location: t
   }, {
     autoTrackExposure: n

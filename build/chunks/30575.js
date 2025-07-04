@@ -34,18 +34,18 @@ function f(e) {
       onClose: D,
       transitionState: v
     } = e,
-    [_, h] = (0, a.useState)(null != n ? p(n.type) : null),
-    x = (0, a.useRef)(!1),
+    [_, x] = (0, a.useState)(null != n ? p(n.type) : null),
+    C = (0, a.useRef)(!1),
     {
-      optOutPerDevice: C
+      optOutPerDevice: h
     } = (0, c.H)({
       location: "ConnectedDevice"
     });
 
   function T() {
-    x.current = !0, d.Wz(n.displayName)
+    C.current = !0, d.Wz(n.displayName)
   }(0, l.zq)(() => {
-    x.current || T()
+    C.current || T()
   }), (0, a.useEffect)(() => {
     r.default.track(u.rMx.OPEN_MODAL, {
       type: null != f ? "New Audio Device Detected - Certified" : "New Audio Device Detected - Not Certified",
@@ -84,7 +84,7 @@ function f(e) {
             let {
               value: t
             } = e;
-            return h(p(t))
+            return x(p(t))
           },
           options: [{
             name: m.intl.string(m.t.vhxqwc),
@@ -118,16 +118,16 @@ function f(e) {
             look: o.zxk.Looks.LINK,
             color: o.zxk.Colors.LINK,
             onClick: () => {
-              C ? (x.current = !0, d.Gl(n.displayName), r.default.track(u.rMx.MODAL_DISMISSED, {
+              h ? (C.current = !0, d.Gl(n.displayName), r.default.track(u.rMx.MODAL_DISMISSED, {
                 type: null != f ? "New Audio Device Detected - Certified" : "New Audio Device Detected - Not Certified",
                 location_object: n.displayName,
                 dismiss_type: "permanent"
-              })) : (x.current = !0, d.oI(), r.default.track(u.rMx.MODAL_DISMISSED, {
+              })) : (C.current = !0, d.oI(), r.default.track(u.rMx.MODAL_DISMISSED, {
                 type: null != f ? "New Audio Device Detected - Certified" : "New Audio Device Detected - Not Certified",
                 dismiss_type: "permanent"
               })), D()
             },
-            children: C ? m.intl.formatToPlainString(m.t.cwS3Ex, {
+            children: h ? m.intl.formatToPlainString(m.t.cwS3Ex, {
               device: n.displayName
             }) : m.intl.string(m.t["5E9SBw"])
           })]
@@ -145,7 +145,7 @@ function f(e) {
           children: m.intl.string(m.t.vPBgq6)
         }), (0, i.jsx)(o.zxk, {
           onClick: () => {
-            x.current = !0, null != _ && d.mo(n.displayName, _, "New Audio Device Detected Modal"), D()
+            C.current = !0, null != _ && d.mo(n.displayName, _, "New Audio Device Detected Modal"), D()
           },
           children: m.intl.string(m.t.ydkoDQ)
         })]

@@ -24,7 +24,7 @@ function l(e) {
   let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
     {
       isInHoldout: n
-    } = r.h.getCurrentConfig({
+    } = r.Y.getCurrentConfig({
       location: e
     }, {
       autoTrackExposure: t
