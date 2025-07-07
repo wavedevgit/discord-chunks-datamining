@@ -29,12 +29,12 @@ let y = t => {
     onClose: e,
     onConfirm: y,
     transitionState: O
-  } = t, z = (0, s.ZP)(n, !0), S = n.id, A = n.isForumPost(), f = (0, d.e7)([U.Z], () => U.Z.getGuild(n.getGuildId())), h = (0, u.u1)(S), {
+  } = t, z = (0, s.ZP)(n, !0), S = n.id, A = n.isForumPost(), h = (0, d.e7)([U.Z], () => U.Z.getGuild(n.getGuildId())), f = (0, u.u1)(S), {
     isSubscriptionGated: v
-  } = (0, T.Z)(n.id), R = (0, I.Z)(f, n), [N, H] = l.useState(), x = (0, d.e7)([m.default], () => n.isOwner(m.default.getId()), [n]), B = (0, _.q)("DeleteChannelConfirm"), b = (0, d.e7)([C.Z], () => C.Z.can(n.isThread() ? L.Plq.MANAGE_THREADS : L.Plq.MANAGE_CHANNELS, n), [n]), M = (0, d.e7)([g.Z], () => {
+  } = (0, T.Z)(n.id), R = (0, I.Z)(h, n), [N, H] = l.useState(), x = (0, d.e7)([m.default], () => n.isOwner(m.default.getId()), [n]), B = (0, _.q)("DeleteChannelConfirm"), b = (0, d.e7)([C.Z], () => C.Z.can(n.isThread() ? L.Plq.MANAGE_THREADS : L.Plq.MANAGE_CHANNELS, n), [n]), M = (0, d.e7)([g.Z], () => {
     var t;
     return null != (t = g.Z.getCount(n.id)) ? t : 0
-  }, [n.id]), P = A && (b || x && M < 1), j = h.length > 0 && (n.type === L.d4z.GUILD_VOICE || n.type === L.d4z.GUILD_STAGE_VOICE);
+  }, [n.id]), P = A && (b || x && M < 1), j = f.length > 0 && (n.type === L.d4z.GUILD_VOICE || n.type === L.d4z.GUILD_STAGE_VOICE);
   if (l.useEffect(() => {
       (async () => {
         if (!await (0, o.C)(n.getGuildId(), S)) return H(p.j.DEFAULT);
@@ -42,13 +42,13 @@ let y = t => {
         if (null != t) return H(t)
       })()
     }, [n, S]), l.useEffect(() => {
-      null != f && f.features.has(L.oNc.COMMUNITY) && (f.rulesChannelId === S ? H(p.j.RULES) : f.publicUpdatesChannelId === S && H(p.j.UPDATES))
-    }, [f, S]), null == f) return null;
+      null != h && h.features.has(L.oNc.COMMUNITY) && (h.rulesChannelId === S ? H(p.j.RULES) : h.publicUpdatesChannelId === S && H(p.j.UPDATES))
+    }, [h, S]), null == h) return null;
   if (null != N) {
     let t, n = async () => {
-      await c.Z.open(f.id, L.pNK.ONBOARDING), await e()
+      await c.Z.open(h.id, L.pNK.ONBOARDING), await e()
     }, l = async () => {
-      await c.Z.open(f.id, L.pNK.COMMUNITY), await e()
+      await c.Z.open(h.id, L.pNK.COMMUNITY), await e()
     };
     switch (N) {
       case p.j.DEFAULT:
@@ -79,7 +79,7 @@ let y = t => {
         })
     }
     return B ? (0, i.jsx)(r.u, {
-      title: D.intl.string(D.t["TY/V+P"]),
+      heading: D.intl.string(D.t["TY/V+P"]),
       onClose: e,
       headerBody: t,
       transitionState: O,
@@ -147,7 +147,7 @@ let y = t => {
     size: "sm",
     onClose: e,
     transitionState: O,
-    title: X,
+    heading: X,
     headerBody: Y,
     actions: [{
       text: D.intl.string(D.t["ETE/oK"]),
@@ -162,7 +162,7 @@ let y = t => {
       variant: "text-md/normal",
       color: "header-secondary",
       children: D.intl.format(D.t.Ze005O, {
-        count: h.length
+        count: f.length
       })
     }) : null
   }) : (0, i.jsxs)(a.Y0X, {
@@ -186,7 +186,7 @@ let y = t => {
         color: "header-secondary",
         className: G.warningText,
         children: D.intl.format(D.t.Ze005O, {
-          count: h.length
+          count: f.length
         })
       }) : null]
     }), (0, i.jsxs)(a.mzw, {

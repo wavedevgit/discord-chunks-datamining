@@ -163,7 +163,7 @@ class I extends l.PureComponent {
     return (0, i.jsx)(f.Z.Provider, {
       value: c.guild_id,
       children: n ? (0, i.jsx)(a.u, {
-        title: v ? D.intl.string(D.t.aIz1oa) : D.intl.string(D.t.MWMcg4),
+        heading: v ? D.intl.string(D.t.aIz1oa) : D.intl.string(D.t.MWMcg4),
         headerBody: N,
         actions: [{
           text: D.intl.string(D.t["ETE/oK"]),

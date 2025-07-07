@@ -7,7 +7,7 @@ var r = n(255367);
 n(73800);
 var i = n(257465),
   a = n(369585),
-  o = n(530392),
+  o = n(103866),
   s = n(37148);
 
 function l(e, t, n) {
@@ -71,24 +71,24 @@ function p(e) {
   var {
     size: t = "md",
     gradientColor: n = "purple",
-    image: l,
-    title: u,
+    graphic: l,
+    heading: u,
     headerBody: _,
-    actionBarLeading: p,
+    actionBarInput: p,
     actions: h,
     children: m
-  } = e, g = f(e, ["size", "gradientColor", "image", "title", "headerBody", "actionBarLeading", "actions", "children"]);
+  } = e, g = f(e, ["size", "gradientColor", "graphic", "heading", "headerBody", "actionBarInput", "actions", "children"]);
   return (0, r.jsxs)(i.IX, d(c({}, g), {
     size: t,
     paddingSize: "lg",
     children: [(0, r.jsx)(s.x, {
       gradientColor: n,
-      image: l,
-      title: u,
-      titleTextVariant: "heading-xl/semibold",
+      graphic: l,
+      heading: u,
+      headingTextVariant: "heading-xl/semibold",
       body: _,
       alignCenter: !0
-    }), (0, r.jsx)(o.h, {
+    }), (0, r.jsx)(o.f, {
       children: m
     }), (0, r.jsx)(a.G, {
       leading: p,

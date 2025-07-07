@@ -89,7 +89,7 @@ let p = {
           variant: p
         }), (0, r.jsx)(a.u, _(d({}, e), {
           size: "sm",
-          title: t,
+          heading: t,
           headerBody: n,
           actions: i
         }))

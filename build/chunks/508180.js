@@ -52,7 +52,7 @@ let h = () => {
         location: "InteractionRequired"
       }).enabled;
       t.current = (0, s.h7j)(t => e ? (0, r.jsx)(o.u, p({
-        title: f.intl.string(f.t.dLLxCw),
+        heading: f.intl.string(f.t.dLLxCw),
         headerBody: f.intl.string(f.t["64lmt7"]),
         actions: [{
           text: f.intl.string(f.t.BddRzc),
