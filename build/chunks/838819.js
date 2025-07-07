@@ -21,8 +21,8 @@ var r = n(255367),
   _ = n(511050),
   C = n(819640),
   O = n(594174),
-  v = n(381585),
-  E = n(597688),
+  E = n(381585),
+  v = n(597688),
   S = n(780475),
   x = n(223143),
   y = n(298228),
@@ -32,8 +32,8 @@ var r = n(255367),
   L = n(508498),
   I = n(849217),
   k = n(215023),
-  B = n(981631),
-  N = n(420212),
+  N = n(981631),
+  B = n(420212),
   A = n(484920);
 let R = e => {
     let {
@@ -44,7 +44,7 @@ let R = e => {
     return l.useEffect(() => {
       if (!n || i) return;
       let e = e => {
-        e.key === N.mR.Escape && r()
+        e.key === B.mR.Escape && r()
       };
       return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
     }, [n, i, r]), t
@@ -57,7 +57,7 @@ let R = e => {
     (0, b.z)(h.f);
     let i = (0, p.Z)((0, a.Z)()),
       c = (0, s.e7)([O.default], () => O.default.getCurrentUser()),
-      N = l.useRef(null),
+      B = l.useRef(null),
       {
         closeIntroToOrbsClaimedCoachmark: w
       } = (0, _.Z)({
@@ -70,7 +70,7 @@ let R = e => {
       onClose: Z
     } = (0, L.Db)(), {
       categories: F,
-      refreshCategories: M
+      refreshCategories: D
     } = (0, x.ZP)({
       location: "CollectiblesShop.web",
       logPerf: !0
@@ -80,11 +80,11 @@ let R = e => {
       isFullScreen: t
     });
     (0, m.P)();
-    let D = (0, y.O)(F),
+    let M = (0, y.O)(F),
       [H, W] = l.useState(),
-      V = (0, s.e7)([E.Z], () => {
+      V = (0, s.e7)([v.Z], () => {
         var e;
-        return null == (e = E.Z.getCategory(H)) ? void 0 : e.name
+        return null == (e = v.Z.getCategory(H)) ? void 0 : e.name
       }),
       [U, G] = l.useState(),
       z = l.useCallback((e, t) => {
@@ -94,14 +94,14 @@ let R = e => {
         selectedTab: Y,
         transitionState: q,
         transitionToTab: K
-      } = (0, j.B)(N, n, t),
+      } = (0, j.B)(B, n, t),
       {
-        handleScroll: X
-      } = (0, g.z)(N, i, Y);
+        handleScroll: Q
+      } = (0, g.z)(B, i, Y);
     (0, S.q3)(i, Y, V, q, U), (0, S.EB)(Y, c), (0, I.Z)(), l.useEffect(() => {
-      t || (0, d.Y)(B.Z5c.COLLECTIBLES_SHOP)
+      t || (0, d.Y)(N.Z5c.COLLECTIBLES_SHOP)
     }, [t]);
-    let Q = (0, s.e7)([C.Z], () => C.Z.getLayers().includes(B.S9g.COLLECTIBLES_SHOP)),
+    let X = (0, s.e7)([C.Z], () => C.Z.getLayers().includes(N.S9g.COLLECTIBLES_SHOP)),
       J = l.useRef(null),
       $ = l.useRef(null);
     (0, u.Tbt)(J), l.useEffect(() => {
@@ -115,7 +115,7 @@ let R = e => {
     } = (0, S.MV)(Y);
     return (0, r.jsx)(f.Gt, {
       value: ee,
-      children: (0, r.jsx)(v.k0, {
+      children: (0, r.jsx)(E.k0, {
         newValue: {
           sessionId: i,
           pageCategory: V,
@@ -123,15 +123,15 @@ let R = e => {
         },
         children: (0, r.jsx)(R, {
           onClose: Z,
-          shouldAddEventListener: t && !Q,
+          shouldAddEventListener: t && !X,
           children: (0, r.jsx)("div", {
             className: A.shop,
             ref: t ? J : $,
             tabIndex: -1,
             children: (0, r.jsx)(u.Den, {
               className: A.shopScroll,
-              ref: N,
-              onScroll: X,
+              ref: B,
+              onScroll: Q,
               children: (0, r.jsxs)("div", {
                 className: o()(A.shopViewWrapper, {
                   [A.visible]: q === k.f7.VISIBLE,
@@ -140,18 +140,18 @@ let R = e => {
                 }),
                 children: [(0, r.jsx)(P.I, {
                   isFullScreen: t,
-                  isLayer: Q,
+                  isLayer: X,
                   onClose: Z,
                   handleTransition: K,
                   selectedTab: Y
                 }), (0, r.jsx)(T.Z, {
                   tab: Y,
                   isFullScreen: t,
-                  scrollerRef: N,
-                  refreshCategories: M,
+                  scrollerRef: B,
+                  refreshCategories: D,
                   transitionToTab: K,
                   transitionState: q,
-                  sortedCategories: D,
+                  sortedCategories: M,
                   updateAnalyticsState: z
                 })]
               })

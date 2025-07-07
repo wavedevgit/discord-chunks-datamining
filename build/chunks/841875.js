@@ -37,7 +37,7 @@ function m() {
         text: h.intl.string(h.t.AHHHgI),
         value: t
       })]
-    }), (0, r.jsx)(O, {}), (0, r.jsx)(E, {})]
+    }), (0, r.jsx)(O, {}), (0, r.jsx)(v, {})]
   })
 }
 let _ = e => {
@@ -129,14 +129,14 @@ let _ = e => {
       children: [(0, r.jsx)(u.Text, {
         variant: "text-md/semibold",
         children: h.intl.string(h.t.K1xGoK)
-      }), (0, r.jsx)(v, {
+      }), (0, r.jsx)(E, {
         colors: e
-      }), (0, r.jsx)(v, {
+      }), (0, r.jsx)(E, {
         colors: t
       })]
     })
   },
-  v = e => {
+  E = e => {
     let {
       colors: t
     } = e, {
@@ -164,7 +164,7 @@ let _ = e => {
       })
     })
   },
-  E = () => {
+  v = () => {
     let {
       themeFilters: e,
       onToggleTheme: t

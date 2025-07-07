@@ -21,8 +21,8 @@ var r = n(255367),
   _ = n(81136),
   C = n(215023),
   O = n(388032),
-  v = n(484920),
-  E = n(558513),
+  E = n(484920),
+  v = n(558513),
   S = n(662128),
   x = n(676790),
   y = n(665195),
@@ -37,17 +37,17 @@ function I(e) {
     isFetchingCategories: n,
     isFullScreen: I,
     scrollerRef: k,
-    tab: B
-  } = e, N = (0, d.sp)(), A = null != (t = null == N ? void 0 : N.sessionId) ? t : "", {
+    tab: N
+  } = e, B = (0, d.sp)(), A = null != (t = null == B ? void 0 : B.sessionId) ? t : "", {
     noCache: R,
     includeUnpublished: w
-  } = (0, _.Z)(), Z = (0, o.e7)([u.default], () => u.default.getCurrentUser()), F = (0, o.e7)([p.Z], () => p.Z.productsWithVariantsAsGroup), [M, D] = l.useState(1), H = () => {
+  } = (0, _.Z)(), Z = (0, o.e7)([u.default], () => u.default.getCurrentUser()), F = (0, o.e7)([p.Z], () => p.Z.productsWithVariantsAsGroup), [D, M] = l.useState(1), H = () => {
     var e;
     null == k || null == (e = k.current) || e.scrollToTop({
       animate: !0
     })
   }, W = (0, c.Fg)(), V = (0, a.ap)(W), [U, G, z] = l.useMemo(() => {
-    switch (B) {
+    switch (N) {
       case C.AW.AVATAR_DECORATIONS:
         return [O.intl.string(O.t.dRZYND), V ? y.Z : x.Z, i.Z.AVATAR_DECORATION];
       case C.AW.PROFILE_EFFECTS:
@@ -55,9 +55,9 @@ function I(e) {
       case C.AW.NAMEPLATES:
         return [O.intl.string(O.t.V68Fq6), V ? T.Z : j.Z, i.Z.NAMEPLATE];
       case C.AW.BUNDLES:
-        return [O.intl.string(O.t.FYFppq), V ? S.Z : E.Z, i.Z.BUNDLE]
+        return [O.intl.string(O.t.FYFppq), V ? S.Z : v.Z, i.Z.BUNDLE]
     }
-  }, [B, V]), Y = (0, f.a)(), q = l.useMemo(() => Y(F.filter(e => {
+  }, [N, V]), Y = (0, f.a)(), q = l.useMemo(() => Y(F.filter(e => {
     var t;
     return e.type === z || e.type === i.Z.VARIANTS_GROUP && (null == (t = e.variants) ? void 0 : t.some(e => e.type === z)) === !0
   })), [F, z, Y]), K = (0, g.l)(q);
@@ -65,7 +65,7 @@ function I(e) {
     (0, h.n)({
       sessionId: A,
       checkpoint: h.a.SHOP_MOUNTED,
-      tab: B,
+      tab: N,
       isFullScreen: I,
       unpublishedCategoriesShown: w,
       cacheDisabled: R
@@ -74,24 +74,24 @@ function I(e) {
     n || (0, h.n)({
       sessionId: A,
       checkpoint: h.a.SHOP_RENDERED,
-      tab: B,
+      tab: N,
       isFullScreen: I,
       unpublishedCategoriesShown: w,
       cacheDisabled: R
     })
-  }, [A, I, w, R, n, B]), n || null == Z) ? (0, r.jsx)(b.Z, {}) : (0, r.jsxs)(r.Fragment, {
+  }, [A, I, w, R, n, N]), n || null == Z) ? (0, r.jsx)(b.Z, {}) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       style: {
         backgroundImage: "url(".concat(G, ")")
       },
-      className: v.bannerContainer,
+      className: E.bannerContainer,
       children: (0, r.jsx)(s.X6q, {
         variant: "heading-xxl/extrabold",
         children: U
       })
     }), (0, r.jsx)("div", {
-      className: v.products,
-      children: K.slice(40 * (M - 1), 40 * M).map((e, t) => {
+      className: E.products,
+      children: K.slice(40 * (D - 1), 40 * D).map((e, t) => {
         let n = p.Z.getCategory(e.categorySkuId);
         return null == n ? null : (0, r.jsx)(d.k0, {
           newValue: {
@@ -101,19 +101,19 @@ function I(e) {
             product: e,
             user: Z,
             category: n,
-            tab: B
+            tab: N
           }, e.skuId)
         }, e.skuId)
       })
     }), K.length > 40 && (0, r.jsx)("div", {
-      className: v.paginationContainer,
+      className: E.paginationContainer,
       children: (0, r.jsx)("div", {
         children: (0, r.jsx)(s.DsT, {
-          currentPage: M,
+          currentPage: D,
           totalCount: K.length,
           pageSize: 40,
           onPageChange: e => {
-            D(e), H()
+            M(e), H()
           },
           disablePaginationGap: !0
         })

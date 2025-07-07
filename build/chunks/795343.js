@@ -26,7 +26,7 @@ function _(e) {
     isFullScreen: _,
     scrollerRef: C,
     tab: O
-  } = e, v = (0, s.sp)(), E = null != (t = null == v ? void 0 : v.sessionId) ? t : "", {
+  } = e, E = (0, s.sp)(), v = null != (t = null == E ? void 0 : E.sessionId) ? t : "", {
     noCache: S,
     includeUnpublished: x
   } = (0, b.Z)(), y = (0, i.e7)([a.default], () => a.default.getCurrentUser()), {
@@ -39,17 +39,17 @@ function _(e) {
     null == C || null == (e = C.current) || e.scrollToTop({
       animate: !0
     })
-  }, [C]), B = (0, u.a)(), N = l.useMemo(() => B(I), [B, I]);
+  }, [C]), N = (0, u.a)(), B = l.useMemo(() => N(I), [N, I]);
   l.useEffect(() => {
     n || (0, f.n)({
-      sessionId: E,
+      sessionId: v,
       checkpoint: f.a.SHOP_RENDERED,
       tab: O,
       isFullScreen: _,
       unpublishedCategoriesShown: x,
       cacheDisabled: S
     })
-  }, [E, _, x, S, n, O]);
+  }, [v, _, x, S, n, O]);
   let A = l.useRef(null),
     {
       setQueryPageSize: R,
@@ -74,7 +74,7 @@ function _(e) {
     children: F ? (0, r.jsx)(g.Z, {}) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: m.products,
-        children: N.map((e, t) => {
+        children: B.map((e, t) => {
           let n = c.Z.getCategory(e.categorySkuId);
           return null == n ? null : (0, r.jsx)(s.k0, {
             newValue: {

@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => E
 }), n(388685);
 var r = n(255367),
   l = n(73800),
@@ -22,19 +22,19 @@ var r = n(255367),
   C = n(388032),
   O = n(484920);
 
-function v(e) {
+function E(e) {
   let {
     isFullScreen: t,
     scrollerRef: n,
     tab: i,
-    sortedCategories: v,
-    setCategoryRef: E
+    sortedCategories: E,
+    setCategoryRef: v
   } = e, {
     handlePageChange: S,
     currentPage: x
   } = (0, h.h)({
     scrollerRef: n,
-    sortedCategories: v
+    sortedCategories: E
   });
   (0, u.A)();
   let y = (0, c.F)("CollectiblesBrowse"),
@@ -61,7 +61,7 @@ function v(e) {
           children: [(0, r.jsx)("div", {
             className: O.controlsLeftSide,
             children: (0, r.jsx)(d.Z, {
-              sortedCategories: v
+              sortedCategories: E
             })
           }), (0, r.jsxs)("div", {
             className: O.controlsRightSide,
@@ -92,8 +92,8 @@ function v(e) {
           },
           children: (0, r.jsx)(p.Z, {
             isFullScreen: t,
-            sortedCategories: v,
-            setCategoryRef: E,
+            sortedCategories: E,
+            setCategoryRef: v,
             currentPage: x,
             handlePageChange: S
           })

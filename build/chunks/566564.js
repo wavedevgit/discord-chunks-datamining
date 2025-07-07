@@ -21,8 +21,8 @@ var r = n(255367),
   _ = n(548685),
   C = n(580914),
   O = n(963278),
-  v = n(921120),
-  E = n(384067),
+  E = n(921120),
+  v = n(384067),
   S = n(215023),
   x = n(981631),
   y = n(388032),
@@ -37,7 +37,7 @@ let T = e => {
       isFullScreen: d
     } = e, {
       noCache: h,
-      includeUnpublished: v
+      includeUnpublished: E
     } = (0, b.Z)(), S = (0, u.sp)(), x = null != (t = null == S ? void 0 : S.sessionId) ? t : "";
     l.useEffect(() => {
       (0, f.n)({
@@ -45,7 +45,7 @@ let T = e => {
         checkpoint: f.a.SHOP_MOUNTED,
         tab: c,
         isFullScreen: d,
-        unpublishedCategoriesShown: v,
+        unpublishedCategoriesShown: E,
         cacheDisabled: h
       })
     }, [c]);
@@ -56,7 +56,7 @@ let T = e => {
       refreshShopHome: L
     } = (0, p.E)(c, {
       noCache: h,
-      includeUnpublished: v,
+      includeUnpublished: E,
       includeBundles: !0,
       logPerf: !0
     }, {
@@ -72,10 +72,10 @@ let T = e => {
           checkpoint: f.a.SHOP_RENDERED,
           tab: c,
           isFullScreen: d,
-          unpublishedCategoriesShown: v,
+          unpublishedCategoriesShown: E,
           cacheDisabled: h
         })
-      }, [T, y, P.length, v, h, x, c, d]), null != T) return (0, r.jsx)(g.Z, {
+      }, [T, y, P.length, E, h, x, c, d]), null != T) return (0, r.jsx)(g.Z, {
       onRetry: I,
       errorOrigin: g.i.SHOP_PAGE,
       errorMessage: T.message
@@ -127,7 +127,7 @@ let T = e => {
           }, t);
           break;
         case a.z.WIDE_BANNER:
-          l = (0, r.jsx)(E.Z, {
+          l = (0, r.jsx)(v.Z, {
             handleTransition: n,
             wideBannerBlock: e,
             tab: c
@@ -207,10 +207,10 @@ let T = e => {
           })]
         })]
       }), !t && (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(v.Z, {
+        children: [(0, r.jsx)(E.Z, {
           peaking: C,
           transitioning: p === S.f7.OUT
-        }), (0, r.jsx)(v.Z, {
+        }), (0, r.jsx)(E.Z, {
           style: {
             left: 1850
           },

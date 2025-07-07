@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => E
 });
 var r = n(255367),
   l = n(73800),
@@ -22,7 +22,7 @@ var r = n(255367),
   C = n(215023);
 let O = [C.AW.HOME, C.AW.ORBS];
 
-function v(e) {
+function E(e) {
   let {
     tab: t,
     isFullScreen: n,
@@ -31,8 +31,8 @@ function v(e) {
     transitionToTab: u,
     transitionState: d,
     updateAnalyticsState: m,
-    refreshCategories: v
-  } = e, x = E();
+    refreshCategories: E
+  } = e, x = v();
   S(x);
   let y = (0, o.e7)([a.Z], () => a.Z.useReducedMotion),
     {
@@ -52,7 +52,7 @@ function v(e) {
   return (l.useEffect(() => {
     L && "" !== I && P("search")
   }, [L, I, P]), null != x) ? (0, r.jsx)(b.Z, {
-    onRetry: v,
+    onRetry: E,
     errorMessage: x,
     errorOrigin: b.i.SHOP_PAGE
   }) : O.includes(t) ? (0, r.jsx)(_.Z, {
@@ -69,7 +69,7 @@ function v(e) {
     setCategoryRef: j
   })
 }
-let E = () => (0, o.e7)([u.Z, d.Z], () => null != u.Z.error ? "shop load fetch categories error: ".concat(u.Z.error.message) : null != d.Z.claimError ? "shop load claim error: ".concat(d.Z.claimError.message) : null != d.Z.fetchError ? "shop load fetch purchase error: ".concat(d.Z.fetchError.message) : void 0),
+let v = () => (0, o.e7)([u.Z, d.Z], () => null != u.Z.error ? "shop load fetch categories error: ".concat(u.Z.error.message) : null != d.Z.claimError ? "shop load claim error: ".concat(d.Z.claimError.message) : null != d.Z.fetchError ? "shop load fetch purchase error: ".concat(d.Z.fetchError.message) : void 0),
   S = e => {
     let t = (0, o.e7)([s.default], () => s.default.getCurrentUser()),
       {

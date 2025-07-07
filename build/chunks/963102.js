@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  I: () => N
+  I: () => B
 }), n(388685), n(539854);
 var r = n(255367),
   l = n(73800),
@@ -21,8 +21,8 @@ var r = n(255367),
   _ = n(822857),
   C = n(775451),
   O = n(594174),
-  v = n(471731),
-  E = n(335131),
+  E = n(471731),
+  v = n(335131),
   S = n(870289),
   x = n(534517),
   y = n(304742),
@@ -49,7 +49,7 @@ function k(e) {
   })
 }
 
-function B(e) {
+function N(e) {
   let {
     tab: t,
     selected: n,
@@ -106,14 +106,14 @@ function B(e) {
   })
 }
 
-function N(e) {
+function B(e) {
   let {
     isFullScreen: t,
     isLayer: n,
     onClose: i,
     selectedTab: f,
     handleTransition: g
-  } = e, y = (0, p.ZP)(), N = (0, s.e7)([O.default], () => O.default.getCurrentUser()), A = (null == N ? void 0 : N.isStaff()) || (null == N ? void 0 : N.isStaffPersonal()) || !1, {
+  } = e, y = (0, p.ZP)(), B = (0, s.e7)([O.default], () => O.default.getCurrentUser()), A = (null == B ? void 0 : B.isStaff()) || (null == B ? void 0 : B.isStaffPersonal()) || !1, {
     enabled: R
   } = (0, _.WX)({
     location: "collectibles_shop_header_bar"
@@ -128,17 +128,17 @@ function N(e) {
     tab: T.AW.ORBS,
     displayText: L.intl.string(L.t.EBYkzs)
   });
-  let F = n ? E.DR : i,
-    M = f === T.AW.ORBS ? P.ZY5.SHOP_ORBS_TAB : P.ZY5.COLLECTIBLES_SHOP,
-    D = l.useCallback(() => {
+  let F = n ? v.DR : i,
+    D = f === T.AW.ORBS ? P.ZY5.SHOP_ORBS_TAB : P.ZY5.COLLECTIBLES_SHOP,
+    M = l.useCallback(() => {
       t && (F(), (0, u.Ou)()), (0, m.Y)({
-        pageType: M,
+        pageType: D,
         sectionType: P.jXE.ORBS_BALANCE_MENU,
         ctaObject: P.qAy.CTA_TO_QUEST_HOME
       }), (0, b.navigateToQuestHome)({
         fromContent: a.j.ORBS_BALANCE_MENU
       })
-    }, [F, t, M]),
+    }, [F, t, D]),
     H = (0, S.F)("collectibles_shop_header_bar");
   return (0, r.jsx)(c.f6W, {
     theme: y,
@@ -152,7 +152,7 @@ function N(e) {
         className: I.shopHomeLink,
         onClick: () => g(T.AW.HOME),
         "aria-label": L.intl.string(L.t.pWG4zc) + " home",
-        children: [(0, r.jsx)(v.Z, {
+        children: [(0, r.jsx)(E.Z, {
           className: I.discordLogo
         }), (0, r.jsx)(h.Z.Title, {
           children: L.intl.string(L.t.pWG4zc)
@@ -164,7 +164,7 @@ function N(e) {
             tab: t,
             displayText: n
           } = e;
-          return t === T.AW.CATALOG && w ? (0, r.jsx)(B, {
+          return t === T.AW.CATALOG && w ? (0, r.jsx)(N, {
             tab: t,
             selected: (0, T.RE)(f) || f === t,
             displayText: n,
@@ -180,10 +180,10 @@ function N(e) {
         className: I.alignedRightContent,
         children: [H && (0, r.jsx)(j.Z, {}), R && (0, r.jsx)(C.V9, {
           anchorPillType: t ? "SHOP_FULLSCREEN" : "SHOP",
-          analyticsPage: M,
+          analyticsPage: D,
           cardAlignment: C.V9.CardAlignment.END,
           ctaText: L.intl.string(L.t.VC4Mq6),
-          ctaOnClick: D,
+          ctaOnClick: M,
           className: I.balanceWidgetMenu
         }), t && (0, r.jsx)(d.Z, {
           closeAction: F,

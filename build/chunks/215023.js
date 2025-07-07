@@ -23,7 +23,7 @@ n.d(t, {
   rL: () => m,
   xg: () => G,
   yf: () => b
-}), n(388685), n(73800);
+}), n(388685), n(290780), n(73800);
 var r = n(463570),
   i = n.n(r),
   a = n(961238),
@@ -182,19 +182,25 @@ let M = {
   j = new Set(Object.values(M)),
   U = e => j.has(e),
   G = [c.G.AVATAR_DECORATION, c.G.PROFILE_EFFECT, c.G.NAMEPLATE, c.G.BUNDLE],
-  B = [{
-    sortType: d.E.RECENCY,
-    sortDirection: u.F.DESC
-  }, {
-    sortType: d.E.RECENCY,
-    sortDirection: u.F.ASC
-  }, {
-    sortType: d.E.PRICE,
-    sortDirection: u.F.ASC
-  }, {
-    sortType: d.E.PRICE,
-    sortDirection: u.F.DESC
-  }, {
-    sortType: d.E.POPULARITY,
-    sortDirection: u.F.DESC
-  }]
+  B = e => {
+    let t = [{
+      sortType: d.E.RECENCY,
+      sortDirection: u.F.DESC
+    }, {
+      sortType: d.E.RECENCY,
+      sortDirection: u.F.ASC
+    }, {
+      sortType: d.E.PRICE,
+      sortDirection: u.F.ASC
+    }, {
+      sortType: d.E.PRICE,
+      sortDirection: u.F.DESC
+    }, {
+      sortType: d.E.POPULARITY,
+      sortDirection: u.F.DESC
+    }];
+    return "" !== e && t.unshift({
+      sortType: d.E.RELEVANCE,
+      sortDirection: u.F.DESC
+    }), t
+  }

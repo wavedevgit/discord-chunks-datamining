@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  Z: () => N
+  Z: () => B
 }), n(388685);
 var r = n(255367),
   l = n(73800),
@@ -21,8 +21,8 @@ var r = n(255367),
   _ = n(853748),
   C = n(426171),
   O = n(823941),
-  v = n(38900),
-  E = n(709999),
+  E = n(38900),
+  v = n(709999),
   S = n(258939),
   x = n(81136),
   y = n(619899),
@@ -52,7 +52,7 @@ function I(e) {
         newValue: {
           tilePosition: t
         },
-        children: (0, r.jsx)(E.Z, {
+        children: (0, r.jsx)(v.Z, {
           onMount: n,
           category: i,
           product: e,
@@ -114,7 +114,7 @@ function k(e) {
   }, i))
 }
 
-function B(e) {
+function N(e) {
   let {
     category: t,
     initialItemCardRef: n,
@@ -140,7 +140,7 @@ function B(e) {
   })
 }
 
-function N(e) {
+function B(e) {
   var t;
   let {
     sortedCategories: n,
@@ -150,7 +150,7 @@ function N(e) {
     handlePageChange: f
   } = e, h = (0, p.sp)(), b = (0, S.R)(), _ = null != (t = null == h ? void 0 : h.sessionId) ? t : "", {
     noCache: O,
-    includeUnpublished: E
+    includeUnpublished: v
   } = (0, x.Z)(), y = l.useMemo(() => {
     let e = (d - 1) * T.kN;
     return n.slice(e, e + T.kN)
@@ -161,7 +161,7 @@ function N(e) {
       checkpoint: m.a.SHOP_MOUNTED,
       tab: T.AW.CATALOG,
       isFullScreen: c,
-      unpublishedCategoriesShown: E,
+      unpublishedCategoriesShown: v,
       cacheDisabled: O
     })
   }, []), l.useEffect(() => {
@@ -170,10 +170,10 @@ function N(e) {
       checkpoint: m.a.SHOP_RENDERED,
       tab: T.AW.CATALOG,
       isFullScreen: c,
-      unpublishedCategoriesShown: E,
+      unpublishedCategoriesShown: v,
       cacheDisabled: O
     })
-  }, [_, c, E, O, b, y.length]);
+  }, [_, c, v, O, b, y.length]);
   let j = l.useRef(null),
     I = (0, a.e7)([u.Z], () => u.Z.getLayers().includes(P.S9g.COLLECTIBLES_SHOP));
   (0, C.Kp)({
@@ -182,7 +182,7 @@ function N(e) {
     initialItemCardRef: j
   });
   let k = (0, g.F)("CollectiblesBrowse");
-  return b ? (0, r.jsx)(v.Z, {}) : (0, r.jsxs)("div", {
+  return b ? (0, r.jsx)(E.Z, {}) : (0, r.jsxs)("div", {
     className: o()(L.categories, {
       [L.categoriesNoFilter]: !k
     }),
@@ -197,7 +197,7 @@ function N(e) {
         newValue: {
           categoryPosition: t
         },
-        children: (0, r.jsx)(B, {
+        children: (0, r.jsx)(N, {
           category: e,
           initialItemCardRef: j,
           isFullScreen: c
