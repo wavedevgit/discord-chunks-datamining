@@ -19,7 +19,7 @@ function g(e) {
   let {
     transitionState: t
   } = e, g = (0, a.e7)([d.Z], () => d.Z.getAction()), [m, b] = i.useState(!1), _ = (0, u.Dt)();
-  async function O() {
+  async function E() {
     return b(!0), g === p.c2C.AGREEMENTS && b(await (0, s.Lr)()), null
   }
   return (0, c.Z)({
@@ -78,7 +78,7 @@ function g(e) {
     }), (0, r.jsx)(o.mzw, {
       children: (0, r.jsx)(o.zxk, {
         submitting: m,
-        onClick: O,
+        onClick: E,
         color: o.zxk.Colors.GREEN,
         children: h.intl.string(h.t["+TBKLy"])
       })

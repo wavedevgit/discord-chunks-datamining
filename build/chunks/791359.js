@@ -18,8 +18,8 @@ var r = n(255367),
   m = n(594174),
   b = n(801077),
   _ = n(626135),
-  O = n(70956),
-  E = n(225559),
+  E = n(70956),
+  O = n(225559),
   y = n(910436),
   I = n(203028),
   v = n(358924),
@@ -30,7 +30,7 @@ var r = n(255367),
   P = n(46140),
   j = n(388032),
   A = n(370168);
-let Z = 15 * O.Z.Millis.MINUTE,
+let Z = 15 * E.Z.Millis.MINUTE,
   x = (0, S.Z)(function(e) {
     let {
       party: t,
@@ -49,7 +49,7 @@ let Z = 15 * O.Z.Millis.MINUTE,
       applicationStreams: h,
       currentActivities: f,
       voiceChannels: g
-    } = t, m = p.length, b = h.length, O = f.length, E = g.length > 0, S = i.useCallback(() => {
+    } = t, m = p.length, b = h.length, E = f.length, O = g.length > 0, S = i.useCallback(() => {
       let e = f.filter(e => {
         var t, n;
         return (null == (t = e.game) ? void 0 : t.name) != null && (null == (n = e.game) ? void 0 : n.type) === T.wW.GAME
@@ -57,11 +57,11 @@ let Z = 15 * O.Z.Millis.MINUTE,
       _.default.track(N.rMx.NOW_PLAYING_CARD_HOVERED, {
         num_users: m,
         num_streams: b,
-        num_activities: O,
-        in_voice_channel: E,
+        num_activities: E,
+        in_voice_channel: O,
         games_detected: e
       })
-    }, [m, b, O, E, f]), P = s()(S, Z);
+    }, [m, b, E, O, f]), P = s()(S, Z);
     return null != c || null != d ? (0, r.jsx)(u.yRy, {
       targetElementRef: o,
       position: "left",
@@ -135,7 +135,7 @@ function w() {
     fetching: g.Z.isFetching(),
     currentUser: m.default.getCurrentUser()
   })), o = (0, c.e7)([p.Z], () => p.Z.quests);
-  i.useEffect(() => (d.Z.wait(() => E.L()), () => d.Z.wait(() => E.v())), [null == a ? void 0 : a.id]), i.useEffect(() => {
+  i.useEffect(() => (d.Z.wait(() => O.L()), () => d.Z.wait(() => O.v())), [null == a ? void 0 : a.id]), i.useEffect(() => {
     n && !l && L()
   }, [n, l]);
   let s = i.useMemo(() => {

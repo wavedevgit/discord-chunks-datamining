@@ -1,7 +1,7 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  F: () => C,
-  I: () => O
+  F: () => O,
+  I: () => C
 }), n(953529), n(388685);
 var i = n(255367),
   r = n(73800),
@@ -72,7 +72,7 @@ function j(e) {
     hasButtonStyling: d
   } = a.Y.useExperiment({
     location: "UserProfileAccountPopout"
-  }), h = o && t !== g.Skl.ONLINE, [E, j] = r.useState(void 0), C = void 0 !== E && t === n, O = (0, i.jsx)(i.Fragment, {
+  }), h = o && t !== g.Skl.ONLINE, [E, j] = r.useState(void 0), O = void 0 !== E && t === n, C = (0, i.jsx)(i.Fragment, {
     children: b.map(e => {
       let {
         duration: r,
@@ -135,7 +135,7 @@ function j(e) {
         }), null != s && (0, i.jsx)("div", {
           className: f.description,
           children: s
-        }), h && d && C ? S : void 0]
+        }), h && d && O ? S : void 0]
       })
     },
     action: () => {
@@ -146,11 +146,11 @@ function j(e) {
       })
     },
     dontCloseOnAction: !0,
-    children: h && !d ? O : void 0
+    children: h && !d ? C : void 0
   })
 }
 
-function C(e) {
+function O(e) {
   if (null == e || "0" === e) return;
   let t = new Date(Number(e)),
     n = E(t, new Date),
@@ -173,7 +173,7 @@ function C(e) {
   })
 }
 
-function O(e) {
+function C(e) {
   let {
     hasNewStrings: t
   } = a.Y.useExperiment({
@@ -181,7 +181,7 @@ function O(e) {
   }), n = d.Cr.useSetting(), r = (0, o.p)(), u = c.e.useExperiment({
     location: "UserProfileAccountPopout"
   }).allowQuietMode || r, m = d.fv.useSetting(), p = e === g.Skl.DND, x = i => {
-    let r = C(n);
+    let r = O(n);
     if (e === i && null != r) return r;
     switch (i) {
       case g.Skl.DND:
@@ -206,7 +206,7 @@ function O(e) {
         dontCloseOnAction: !0
       }, null != n ? n : _)
     })
-  }), O = j({
+  }), C = j({
     status: g.Skl.ONLINE,
     currentStatus: e
   }), S = j({
@@ -223,7 +223,7 @@ function O(e) {
     description: x(g.Skl.INVISIBLE)
   });
   return (0, i.jsxs)(i.Fragment, {
-    children: [O, (0, i.jsx)(l.Clw, {}, "menu-separator-statuses"), S, v, T, u || r ? (0, i.jsxs)(i.Fragment, {
+    children: [C, (0, i.jsx)(l.Clw, {}, "menu-separator-statuses"), S, v, T, u || r ? (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(l.Clw, {}, "menu-separator-statuses"), (0, i.jsx)(l.sNh, {
         id: "quiet-mode",
         "aria-label": "focus mode",

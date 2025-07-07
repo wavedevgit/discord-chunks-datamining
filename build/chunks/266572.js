@@ -38,7 +38,7 @@ function _(e) {
   return e
 }
 
-function O(e, t) {
+function E(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,7 +50,7 @@ function O(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let E = 10 * h.Z.Millis.SECOND,
+let O = 10 * h.Z.Millis.SECOND,
   y = {
     [b.Etm.VALIDATE_APPLICATION]: {
       scope: m.lH,
@@ -77,7 +77,7 @@ let E = 10 * h.Z.Millis.SECOND,
             if (!e) throw new g.Z({
               errorCode: b.lTL.INVALID_ENTITLEMENT
             }, "User does not have entitlement.")
-          }), (0, l.GR)(E).then(() => {
+          }), (0, l.GR)(O).then(() => {
             throw new g.Z({
               errorCode: b.lTL.INVALID_ENTITLEMENT
             }, "Timed out fetching entitlement.")
@@ -87,7 +87,7 @@ let E = 10 * h.Z.Millis.SECOND,
             let {
               default: e
             } = await n.e("48748").then(n.bind(n, 52004));
-            return t => (0, r.jsx)(e, O(_({}, t), {
+            return t => (0, r.jsx)(e, E(_({}, t), {
               applicationId: i
             }))
           })), e
@@ -121,7 +121,7 @@ let E = 10 * h.Z.Millis.SECOND,
             let {
               default: e
             } = await n.e("48748").then(n.bind(n, 52004));
-            return t => (0, r.jsx)(e, O(_({}, t), {
+            return t => (0, r.jsx)(e, E(_({}, t), {
               applicationId: l
             }))
           }), e

@@ -27,7 +27,7 @@ function g(e) {
     onScroll: g,
     onGuildCardClick: m,
     onGuildCardSeen: b
-  } = e, _ = (0, u.Mf)(t), O = (0, u.a$)(t), E = (0, u.QW)(t), y = (0, u.lg)(t), I = i.useMemo(() => {
+  } = e, _ = (0, u.Mf)(t), E = (0, u.a$)(t), O = (0, u.QW)(t), y = (0, u.lg)(t), I = i.useMemo(() => {
     let e = p ? 30 : n.length,
       t = [];
     for (let a = 0; a < e; a++) {
@@ -45,14 +45,14 @@ function g(e) {
     onScroll: g,
     children: [(0, r.jsx)(o.Z, {
       title: _,
-      description: O,
+      description: E,
       children: (0, r.jsx)(a.Z, {})
     }), (0, r.jsxs)(s.Z, {
       children: [(0, r.jsx)(l.X6q, {
         className: h.sectionTitle,
         variant: "heading-lg/semibold",
         color: "header-primary",
-        children: E
+        children: O
       }), (0, r.jsx)("div", {
         className: h.content,
         children: I

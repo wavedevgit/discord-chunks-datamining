@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => E
+  Z: () => O
 });
 var r = n(255367);
 n(73800);
@@ -19,8 +19,8 @@ var i = n(481060),
   m = n(981631),
   b = n(815660),
   _ = n(308569),
-  O = n(231338);
-let E = {
+  E = n(231338);
+let O = {
   init() {
     l.Z.subscribe("CONNECTION_OPEN", this.handleRequiredAction), l.Z.subscribe("USER_REQUIRED_ACTION_UPDATE", this.handleRequiredAction), l.Z.subscribe("CURRENT_USER_UPDATE", this.handleCurrentUserUpdate), p.default.addChangeListener(this.handleAuthenticationStoreChanged)
   },
@@ -53,7 +53,7 @@ let E = {
       return e
     }({}, e)), {
       modalKey: _.f1,
-      onCloseRequest: O.Vq
+      onCloseRequest: E.Vq
     }) : t === m.c2C.REQUIRE_SAFETY_FLOWS ? (0, s.bu)({
       location: "verification-safety-flows"
     }) && (0, a.q4)(() => (0, r.jsx)(c.Z, {}), {

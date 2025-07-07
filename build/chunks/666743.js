@@ -1,12 +1,12 @@
-/** Chunk was on 1272 **/
+/** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => o
+  Z: () => a
 }), n(388685);
-var r = n(255367),
-  i = n(73800),
-  l = n(314897);
+var i = n(255367),
+  r = n(73800),
+  s = n(314897);
 
-function a(e, t, n) {
+function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -15,24 +15,24 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
-  return class extends i.Component {
+function a(e) {
+  return class extends r.Component {
     componentDidMount() {
-      l.default.addChangeListener(this.onStoreChange)
+      s.default.addChangeListener(this.onStoreChange)
     }
     componentWillUnmount() {
-      l.default.removeChangeListener(this.onStoreChange)
+      s.default.removeChangeListener(this.onStoreChange)
     }
     render() {
       var t, n;
-      return (0, r.jsx)(e, (t = function(e) {
+      return (0, i.jsx)(e, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            i = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), r.forEach(function(t) {
-            a(e, t, n[t])
+          }))), i.forEach(function(t) {
+            l(e, t, n[t])
           })
         }
         return e
@@ -41,8 +41,8 @@ function o(e) {
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, r)
+          var i = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, i)
         }
         return n
       })(Object(n)).forEach(function(e) {
@@ -50,11 +50,11 @@ function o(e) {
       }), t))
     }
     constructor(...e) {
-      super(...e), a(this, "state", {
-        isAuthenticated: l.default.isAuthenticated()
-      }), a(this, "onStoreChange", () => {
+      super(...e), l(this, "state", {
+        isAuthenticated: s.default.isAuthenticated()
+      }), l(this, "onStoreChange", () => {
         this.setState({
-          isAuthenticated: l.default.isAuthenticated()
+          isAuthenticated: s.default.isAuthenticated()
         })
       })
     }

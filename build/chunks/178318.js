@@ -17,9 +17,9 @@ var l = n(836560),
   m = n(852926),
   b = n(186901),
   _ = n(981631),
-  O = n(413135).Buffer;
+  E = n(413135).Buffer;
 
-function E(e, t, n) {
+function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -65,14 +65,14 @@ function T(e, t, n) {
       "Access-Control-Allow-Methods": "POST, GET, PUT, PATCH, DELETE",
       "Access-Control-Allow-Headers": "Content-Type, Authorization"
     } : {};
-  n = n ? JSON.stringify(n) : "", r = 200 === r && 0 === n.length ? 204 : r, t.setHeader("Content-Length", O.byteLength(n).toString()), t.setHeader("Content-Type", "application/json"), t.writeHead(r, function(e) {
+  n = n ? JSON.stringify(n) : "", r = 200 === r && 0 === n.length ? 204 : r, t.setHeader("Content-Length", E.byteLength(n).toString()), t.setHeader("Content-Type", "application/json"), t.writeHead(r, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
       "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
         return Object.getOwnPropertyDescriptor(n, e).enumerable
       }))), r.forEach(function(t) {
-        E(e, t, n[t])
+        O(e, t, n[t])
       })
     }
     return e
@@ -96,7 +96,7 @@ class j extends g.Z {
     this._socket.close(e, t)
   }
   constructor(e, t, n) {
-    if (super("ws", t, n), E(this, "_socket", void 0), -1 === ["etf", "json"].indexOf(n)) throw new h.Z({
+    if (super("ws", t, n), O(this, "_socket", void 0), -1 === ["etf", "json"].indexOf(n)) throw new h.Z({
       closeCode: _.$VG.INVALID_ENCODING
     }, "Invalid Encoding: ".concat(n));
     if ("etf" === n && null == r) throw new h.Z({
@@ -113,7 +113,7 @@ class A extends g.Z {
     this._closeCallback(t, e)
   }
   constructor(e, t, n, r) {
-    if (super("http", n, r), E(this, "_sendCallback", void 0), E(this, "_closeCallback", void 0), "json" !== r) throw new h.Z({
+    if (super("http", n, r), O(this, "_sendCallback", void 0), O(this, "_closeCallback", void 0), "json" !== r) throw new h.Z({
       closeCode: _.$VG.INVALID_ENCODING
     }, "Invalid Encoding: ".concat(r));
     this._sendCallback = e, this._closeCallback = t

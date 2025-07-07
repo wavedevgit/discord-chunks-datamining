@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => E
+  Z: () => O
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -26,7 +26,7 @@ function _(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class O extends i.PureComponent {
+class E extends i.PureComponent {
   hasParty(e) {
     return e.length > 1
   }
@@ -94,7 +94,7 @@ class O extends i.PureComponent {
     })
   }
 }
-let E = o.ZP.connectStores([d.Z, f.default, h.Z, p.Z], () => {
+let O = o.ZP.connectStores([d.Z, f.default, h.Z, p.Z], () => {
   let e, t, n = d.Z.getSyncingWith(),
     r = d.Z.getActivity(),
     i = f.default.getCurrentUser(),
@@ -108,4 +108,4 @@ let E = o.ZP.connectStores([d.Z, f.default, h.Z, p.Z], () => {
     host: e,
     party: l
   }
-})(O)
+})(E)

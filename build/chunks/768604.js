@@ -42,11 +42,11 @@ function b() {
       value: r.Q4.BLUR,
       label: h.intl.string(h.t.S49UaW)
     }],
-    C = {
+    O = {
       value: r.Q4.SHOW,
       label: h.intl.string(h.t["5k5OFh"])
     };
-  return t && (E.unshift(C), j.unshift(C)), (0, i.jsxs)(p.U, {
+  return t && (E.unshift(O), j.unshift(O)), (0, i.jsxs)(p.U, {
     setting: g.s6.GORE_MEDIA_REDACTION,
     children: [(0, i.jsxs)("div", {
       className: f.selectItemRow,

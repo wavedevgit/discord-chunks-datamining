@@ -57,7 +57,7 @@ function x(e) {
     defaultOpen: g
   } = e, [b, x] = r.useState(g), [_, E] = r.useState(!1), j = r.useCallback(() => {
     x(e => !e)
-  }, []), C = (0, a.e7)([u.Z], () => u.Z.getUserExperimentDescriptor(s)), O = (0, a.e7)([u.Z], () => u.Z.getLoadedUserExperiment(s)), S = (0, a.Wu)([u.Z], () => l().sortBy(u.Z.getRecentExposures(h.xY.USER, s), e => {
+  }, []), O = (0, a.e7)([u.Z], () => u.Z.getUserExperimentDescriptor(s)), C = (0, a.e7)([u.Z], () => u.Z.getLoadedUserExperiment(s)), S = (0, a.Wu)([u.Z], () => l().sortBy(u.Z.getRecentExposures(h.xY.USER, s), e => {
     let [t, n] = e;
     return -n
   }).map(e => {
@@ -121,8 +121,8 @@ function x(e) {
         className: f.description,
         children: [(0, i.jsxs)(o.R94, {
           type: o.geA.DESCRIPTION,
-          children: ["Current assigned to bucket ", null != (t = null == C ? void 0 : C.bucket) ? t : h.NZ.NOT_ELIGIBLE]
-        }), null == O ? (0, i.jsx)(o.R94, {
+          children: ["Current assigned to bucket ", null != (t = null == O ? void 0 : O.bucket) ? t : h.NZ.NOT_ELIGIBLE]
+        }), null == C ? (0, i.jsx)(o.R94, {
           type: o.geA.DESCRIPTION,
           children: 'Warning: Server did not send any experiment config. You may need to check the "Send to Client" box in the admin UI.'
         }) : null]
@@ -134,7 +134,7 @@ function x(e) {
         }), (0, i.jsx)(o.Text, {
           variant: "code",
           className: f.pre,
-          children: null == O ? "None" : JSON.stringify(O, void 0, 2)
+          children: null == C ? "None" : JSON.stringify(C, void 0, 2)
         }), (0, i.jsx)(o.vwX, {
           tag: "h5",
           className: f.debugTitle,
@@ -183,7 +183,7 @@ function _(e) {
   }).map(e => {
     let [t, n] = e;
     return "".concat(new Date(n).toLocaleString(), " (").concat(t, ")")
-  })), [j, C] = (0, a.Wu)([m.Z, u.Z], () => {
+  })), [j, O] = (0, a.Wu)([m.Z, u.Z], () => {
     let e = l().sortBy(m.Z.getGuildsArray(), e => e.name.toLowerCase()),
       t = {},
       i = [];
@@ -195,7 +195,7 @@ function _(e) {
     }
     let s = l()(t).keys().map(Number).sort().map(e => "".concat(t[e], " guilds in bucket ").concat(e)).join(", ");
     return [i.join("\n"), s]
-  }), O = (0, i.jsx)(o.P3F, {
+  }), C = (0, i.jsx)(o.P3F, {
     onClick: x,
     children: (0, i.jsxs)(o.vwX, {
       tag: o.RB0.H3,
@@ -217,7 +217,7 @@ function _(e) {
   return c ? (0, i.jsxs)("div", {
     className: f.group,
     children: [(0, i.jsxs)(o.hjN, {
-      children: [O, (0, i.jsxs)("div", {
+      children: [C, (0, i.jsxs)("div", {
         children: [(0, i.jsx)(o.xJW, {
           title: "Bucket Override",
           children: (0, i.jsx)(d.y, {
@@ -236,7 +236,7 @@ function _(e) {
         className: f.description,
         children: [(0, i.jsxs)(o.R94, {
           type: o.geA.DESCRIPTION,
-          children: ["Current Assignments: ", C]
+          children: ["Current Assignments: ", O]
         }), null == _ ? (0, i.jsx)(o.R94, {
           type: o.geA.DESCRIPTION,
           children: 'Warning: Server did not send any experiment config. You may need to check the "Send to Client" box in the admin UI.'
@@ -288,7 +288,7 @@ function _(e) {
   }) : (0, i.jsx)("div", {
     className: f.group,
     children: (0, i.jsx)(o.hjN, {
-      children: O
+      children: C
     })
   })
 }

@@ -18,8 +18,8 @@ var r = n(255367),
   m = n(711237),
   b = n(532835),
   _ = n(347469),
-  O = n(169382),
-  E = n(290297),
+  E = n(169382),
+  O = n(290297),
   y = n(244317),
   I = n(765717),
   v = n(358221),
@@ -49,8 +49,8 @@ var r = n(255367),
   Y = n(821020),
   K = n(147341),
   q = n(82409),
-  X = n(664608),
-  Q = n(270759),
+  Q = n(664608),
+  X = n(270759),
   J = n(918701),
   $ = n(982168),
   ee = n(893908),
@@ -72,8 +72,8 @@ var r = n(255367),
   em = n(409292),
   eb = n(256638),
   e_ = n(663701),
-  eO = n(697309),
-  eE = n(425369),
+  eE = n(697309),
+  eO = n(425369),
   ey = n(715702),
   eI = n(981631),
   ev = n(176505),
@@ -147,7 +147,7 @@ let ej = (0, u.Un)({
   ek = e => {
     let {
       match: t
-    } = e, n = (0, O.l)(), i = (0, p.e7)([ea.Z, eu.Z], () => {
+    } = e, n = (0, E.l)(), i = (0, p.e7)([ea.Z, eu.Z], () => {
       let e = eu.Z.getChannelId();
       return ea.Z.getChannel(e)
     }), {
@@ -268,7 +268,7 @@ let ej = (0, u.Un)({
       inviteCode: t.params.inviteCode
     }) : null
   },
-  eF = () => (0, r.jsx)(eE.Z, {}),
+  eF = () => (0, r.jsx)(eO.Z, {}),
   ez = () => (0, r.jsx)(ey.Z, {}),
   eW = function() {
     let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
@@ -285,24 +285,24 @@ let ej = (0, u.Un)({
     }
   },
   eY = e => (0, r.jsx)(y.Z, eP({}, e)),
-  eK = () => (0, r.jsx)(Q.Z, {}),
+  eK = () => (0, r.jsx)(X.Z, {}),
   eq = () => (0, r.jsx)(F.Z, {}),
-  eX = () => (0, r.jsx)(X.Z, {}),
-  eQ = e => {
+  eQ = () => (0, r.jsx)(Q.Z, {}),
+  eX = e => {
     let {
       match: t
     } = e;
     switch (t.params.feature) {
       case "friends":
-        return (0, r.jsx)(Q.Z, {
+        return (0, r.jsx)(X.Z, {
           initialSection: eI.pJs.ONLINE
         });
       case "addFriends":
-        return (0, r.jsx)(Q.Z, {
+        return (0, r.jsx)(X.Z, {
           initialSection: eI.pJs.ADD_FRIEND
         });
       case "pendingFriends":
-        return (0, r.jsx)(Q.Z, {
+        return (0, r.jsx)(X.Z, {
           initialSection: eI.pJs.PENDING
         });
       case "sessionManagement":
@@ -369,7 +369,7 @@ let ej = (0, u.Un)({
     return (0, r.jsx)(g.Z, {
       deepLinkType: eN.jE.FEATURES,
       path: t,
-      children: eQ(e)
+      children: eX(e)
     })
   };
 
@@ -396,13 +396,13 @@ function e0(e) {
     location: u
   });
   let g = (0, p.e7)([v.Z], () => v.Z.isFullscreenInContext()),
-    O = (0, A.T)("ChannelSidebar"),
-    E = (0, T.useAppSidebarState)(e => !e.isOpen) && O;
+    E = (0, A.T)("ChannelSidebar"),
+    O = (0, T.useAppSidebarState)(e => !e.isOpen) && E;
   i.useLayoutEffect(() => {
-    if (O) {
+    if (E) {
       var e;
-      let t = parseInt(null != (e = h.K.get(eO.nT)) ? e : "");
-      Number.isNaN(t) && (t = eO.qO), t = Math.min(Math.max(t, eO.li), eO.zx), !O && t <= eO.p8 && (t = eO.qO), e$(t);
+      let t = parseInt(null != (e = h.K.get(eE.nT)) ? e : "");
+      Number.isNaN(t) && (t = eE.qO), t = Math.min(Math.max(t, eE.li), eE.zx), !E && t <= eE.p8 && (t = eE.qO), e$(t);
       let n = e => {
         e.metaKey && "b" === e.key && T.useAppSidebarState.setState(e => ({
           isOpen: !e.isOpen
@@ -412,37 +412,37 @@ function e0(e) {
         document.removeEventListener("keydown", n)
       }
     }
-  }, [O]), i.useLayoutEffect(() => {
-    if (E) e$(eO.p8);
+  }, [E]), i.useLayoutEffect(() => {
+    if (O) e$(eE.p8);
     else {
       var e;
-      let t = parseInt(null != (e = h.K.get(eO.nT)) ? e : "");
-      Number.isNaN(t) && (t = eO.qO), e$(t)
+      let t = parseInt(null != (e = h.K.get(eE.nT)) ? e : "");
+      Number.isNaN(t) && (t = eE.qO), e$(t)
     }
-  }, [E]);
+  }, [O]);
   let y = i.useRef(null),
     I = i.useCallback((e, t) => {
       var n;
       e$(e);
-      let r = t < eO.li / 3;
-      t <= eO.li ? document.body.classList.add(eT.draggingMin) : document.body.classList.remove(eT.draggingMin), t >= eO.zx ? document.body.classList.add(eT.draggingMax) : document.body.classList.remove(eT.draggingMax);
+      let r = t < eE.li / 3;
+      t <= eE.li ? document.body.classList.add(eT.draggingMin) : document.body.classList.remove(eT.draggingMin), t >= eE.zx ? document.body.classList.add(eT.draggingMax) : document.body.classList.remove(eT.draggingMax);
       let i = t - e;
-      null == (n = y.current) || n.style.setProperty("--custom-overdrag", "".concat(1 + Math.min(Math.abs(i / eO.p8), .25))), O && (T.useAppSidebarState.setState({
+      null == (n = y.current) || n.style.setProperty("--custom-overdrag", "".concat(1 + Math.min(Math.abs(i / eE.p8), .25))), E && (T.useAppSidebarState.setState({
         isOpen: !r
-      }), r && e$(eO.p8))
-    }, [O]),
+      }), r && e$(eE.p8))
+    }, [E]),
     C = i.useCallback(() => {
       document.body.classList.add(eT.dragging)
     }, []),
     S = i.useCallback(e => {
       var t;
-      document.body.classList.remove(eT.dragging), document.body.classList.remove(eT.draggingMin), document.body.classList.remove(eT.draggingMax), document.body.classList.remove(eT.collapsing), null == (t = y.current) || t.style.setProperty("--custom-overdrag", "0px"), h.K.set(eO.nT, e), ep.default.track(eI.rMx.CHANNEL_SIDEBAR_RESIZED, {
+      document.body.classList.remove(eT.dragging), document.body.classList.remove(eT.draggingMin), document.body.classList.remove(eT.draggingMax), document.body.classList.remove(eT.collapsing), null == (t = y.current) || t.style.setProperty("--custom-overdrag", "0px"), h.K.set(eE.nT, e), ep.default.track(eI.rMx.CHANNEL_SIDEBAR_RESIZED, {
         width: e
       })
     }, []),
     N = (0, _.Z)({
-      minDimension: eO.li,
-      maxDimension: eO.zx,
+      minDimension: eE.li,
+      maxDimension: eE.zx,
       resizableDomNodeRef: y,
       onElementResize: I,
       onElementResizeStart: C,
@@ -456,8 +456,8 @@ function e0(e) {
       }))
     }, []);
   if (i.useLayoutEffect(() => {
-      E && e$(eO.p8)
-    }, [E]), l) return null;
+      O && e$(eE.p8)
+    }, [O]), l) return null;
   let j = {
     className: a()(eT.sidebarList, {
       [eT.sidebarListRounded]: !t
@@ -469,7 +469,7 @@ function e0(e) {
       var t, i;
       return (0, r.jsxs)("div", {
         ref: y,
-        "data-collapsed": E,
+        "data-collapsed": O,
         className: a()(eT.sidebar, e, {
           [eT.fullWidth]: d.tq,
           [eT.hidden]: g,
@@ -540,7 +540,7 @@ function e1() {
     m = (null == g || null == (e = g.params) ? void 0 : e.channelId) === ev.oC.GUILD_ONBOARDING,
     b = l || a || o || u || m,
     _ = i.useCallback(() => z.Z.openSidebar(), []),
-    O = (0, A.T)("AppView"),
+    E = (0, A.T)("AppView"),
     y = (0, T.useAppSidebarState)(e => !e.isOpen),
     C = (0, p.e7)([v.Z], () => v.Z.isFullscreenInContext());
   return (0, r.jsx)("div", {
@@ -561,8 +561,8 @@ function e1() {
             hideSidebar: !h || u
           }), (0, r.jsx)("div", {
             className: eT.page,
-            "data-collapsed": !!O && y,
-            children: (0, r.jsx)(E.Z.Provider, {
+            "data-collapsed": !!E && y,
+            children: (0, r.jsx)(O.Z.Provider, {
               value: _,
               children: (0, r.jsxs)(s.rs, {
                 children: [(0, r.jsx)(I.Z, {
@@ -615,7 +615,7 @@ function e1() {
                   disableTrack: !0
                 }), (0, r.jsx)(I.Z, {
                   path: eI.Z5c.FAMILY_CENTER,
-                  render: eX,
+                  render: eQ,
                   disableTrack: !0
                 }), (0, r.jsx)(I.Z, {
                   path: eI.Z5c.ME,

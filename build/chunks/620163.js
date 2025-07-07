@@ -22,8 +22,8 @@ var r = n(990547),
   _ = n(498646),
   E = n(489968),
   j = n(803038),
-  C = n(703288),
-  O = n(574755),
+  O = n(703288),
+  C = n(574755),
   S = n(994714),
   v = n(377171),
   T = n(621628),
@@ -76,8 +76,8 @@ var r = n(990547),
   e_ = n(293389),
   eE = n(88624),
   ej = n(387747),
-  eC = n(389650),
-  eO = n(649157),
+  eO = n(389650),
+  eC = n(649157),
   eS = n(593648),
   ev = n(327885),
   eT = n(595242),
@@ -127,14 +127,14 @@ let eJ = () => {
       location: "SettingsRendererConfig"
     }).enabled && e.push(s.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE), e.push(s.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE), e
   },
-  e1 = () => {
+  e3 = () => {
     let e = e0(),
       [t] = (0, N.US)(e);
     return t === s.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE ? (0, i.jsx)(R.Z, {}) : t === s.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE ? (0, i.jsx)(a.IGR, {
       text: eK.intl.string(eK.t.y2b7CA)
     }) : null
   },
-  e3 = eD.Z,
+  e1 = eD.Z,
   e8 = e => {
     let {
       unseenGiftCount: t,
@@ -312,7 +312,7 @@ let eJ = () => {
         label: eK.intl.string(eK.t["vi7f+v"]),
         ariaLabel: eK.intl.string(eK.t["vi7f+v"]),
         element: L.Z,
-        newIndicator: (0, i.jsx)(e1, {}),
+        newIndicator: (0, i.jsx)(e3, {}),
         newIndicatorDismissibleContentTypes: [...e0()],
         notice: {
           stores: [Y.Z, A.Z],
@@ -605,8 +605,8 @@ let eJ = () => {
         searchableTitles: [eK.intl.string(eK.t.z2jK6e)],
         label: eK.intl.string(eK.t.z2jK6e),
         ariaLabel: eK.intl.string(eK.t.z2jK6e),
-        icon: e8 ? (0, i.jsx)(C.Z, {}) : void 0,
-        element: O.Z,
+        icon: e8 ? (0, i.jsx)(O.Z, {}) : void 0,
+        element: C.Z,
         predicate: () => !e6,
         url: ez.Z5c.SETTINGS("clips")
       },
@@ -1440,14 +1440,14 @@ let eJ = () => {
         section: ez.oAB.KEYBINDS,
         searchableTitles: [eK.intl.string(eK.t.T9DA2N)],
         label: eK.intl.string(eK.t.T9DA2N),
-        element: eC.Z,
+        element: eO.Z,
         url: ez.Z5c.SETTINGS("keybinds")
       },
       [eF.s6.LANGUAGE]: {
         section: ez.oAB.LOCALE,
         searchableTitles: [eK.intl.string(eK.t.IHMsPj)],
         label: eK.intl.string(eK.t.IHMsPj),
-        element: eO.Z,
+        element: eC.Z,
         url: ez.Z5c.SETTINGS("language")
       },
       [eF.s6.WINDOW_SETTINGS]: {
@@ -1461,7 +1461,7 @@ let eJ = () => {
         section: ez.oAB.LINUX,
         searchableTitles: [eK.intl.string(eK.t["7pPjTU"])],
         label: eK.intl.string(eK.t["7pPjTU"]),
-        element: e3,
+        element: e1,
         predicate: () => X.isPlatformEmbedded && (0, X.isLinux)()
       },
       [eF.s6.STREAMER_MODE]: {

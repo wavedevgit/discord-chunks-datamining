@@ -1,6 +1,6 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => C
+  Z: () => O
 });
 var i = n(255367),
   r = n(73800),
@@ -22,13 +22,13 @@ var i = n(255367),
   E = n(20493);
 let j = p.isWindows() ? ["BTHENUM", "BTHHFENUM"] : [];
 
-function C() {
+function O() {
   let e, t, {
       analyticsLocations: p
     } = (0, c.ZP)(),
-    C = (0, s.e7)([g.Z], () => g.Z.theme),
+    O = (0, s.e7)([g.Z], () => g.Z.theme),
     {
-      canSetInputDevice: O,
+      canSetInputDevice: C,
       canSetOutputDevice: S,
       inputDeviceId: v,
       outputDeviceId: T
@@ -57,7 +57,7 @@ function C() {
         });
       return n && i && (null == e ? void 0 : e.containerId) != null && e.containerId === (null == t ? void 0 : t.containerId)
     }, [N, I, v, T]);
-  O || (e = (0, i.jsx)(a.R94, {
+  C || (e = (0, i.jsx)(a.R94, {
     type: a.R94.Types.DESCRIPTION,
     className: E.marginTop8,
     children: x.intl.format(x.t["1iK6UV"], {
@@ -81,7 +81,7 @@ function C() {
       value: s
     } = e;
     if (u.Z.isCertified(s)) {
-      let e = (0, l.ap)(C) ? n(561259) : n(887695);
+      let e = (0, l.ap)(O) ? n(561259) : n(887695);
       t = (0, i.jsx)("img", {
         src: e,
         alt: "Certified",

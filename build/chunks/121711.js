@@ -18,8 +18,8 @@ var r = n(255367),
   m = n(114851),
   b = n(175307),
   _ = n(17845),
-  O = n(374939),
-  E = n(233374),
+  E = n(374939),
+  O = n(233374),
   y = n(611928),
   I = n(763433),
   v = n(283293),
@@ -128,8 +128,8 @@ let K = function() {
     location: V.intl.string(V.t.JALI2N)
   });
   let q = z ? V.intl.format(V.t.BCBIlp, {}) : V.intl.format(V.t.lmMBf3, {}),
-    X = z ? V.intl.format(V.t.U9FY0N, {}) : V.intl.string(V.t.oWCrBg),
-    Q = i.useRef(null);
+    Q = z ? V.intl.format(V.t.U9FY0N, {}) : V.intl.string(V.t.oWCrBg),
+    X = i.useRef(null);
   return (0, r.jsx)(D.k.Provider, {
     value: {
       onAssetLoadComplete: P
@@ -137,10 +137,10 @@ let K = function() {
     children: (0, r.jsx)("div", {
       className: H.container,
       children: z ? (0, r.jsx)(k.t.Provider, {
-        value: Q,
+        value: X,
         children: (0, r.jsxs)(v.Z, {
           onScroll: l,
-          ref: Q,
+          ref: X,
           children: [(0, r.jsx)(I.a, {
             selectedTabId: e,
             handleTransition: t,
@@ -165,7 +165,7 @@ let K = function() {
             })
           }), (0, r.jsxs)(_.Z, {
             title: q,
-            description: X,
+            description: Q,
             betaTag: z && W,
             button: z ? (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsx)(c.zxk, {
@@ -198,7 +198,7 @@ let K = function() {
             }), (0, r.jsx)(Y, {
               onLoadComplete: P
             })]
-          }), (0, r.jsx)(O.Z, {
+          }), (0, r.jsx)(E.Z, {
             children: e === A.e5.CLAIMED ? (0, r.jsx)(g, {
               onSelectTab: t
             }) : (0, r.jsx)(L.Z, {})
@@ -215,13 +215,13 @@ let K = function() {
             icon: c.qDn
           })]
         }), (0, r.jsx)(k.t.Provider, {
-          value: Q,
+          value: X,
           children: (0, r.jsxs)(v.Z, {
             onScroll: l,
-            ref: Q,
+            ref: X,
             children: [(0, r.jsxs)(_.Z, {
               title: q,
-              description: X,
+              description: Q,
               button: (0, r.jsx)(b.u, {
                 text: V.intl.string(V.t.hvVgAQ),
                 onClick: K
@@ -236,10 +236,10 @@ let K = function() {
               }), (0, r.jsx)(Y, {
                 onLoadComplete: P
               })]
-            }), (0, r.jsxs)(O.Z, {
+            }), (0, r.jsxs)(E.Z, {
               children: [(0, r.jsx)("div", {
                 className: H.tabs,
-                children: (0, r.jsx)(E.Z, {
+                children: (0, r.jsx)(O.Z, {
                   tabs: n,
                   selectedTab: e,
                   onTabSelect: t

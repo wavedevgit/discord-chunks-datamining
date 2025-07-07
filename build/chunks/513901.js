@@ -27,8 +27,8 @@ function _(e) {
     sectionTitle: _,
     forcedDivider: E = !1,
     withTutorial: j = !1,
-    showBorder: C = !1,
-    isTryItOutFlow: O = !1,
+    showBorder: O = !1,
+    isTryItOutFlow: C = !1,
     initialSelectedEffectId: S
   } = e, v = (0, m.Kg)(t, n), T = u.ZP.canUsePremiumProfileCustomization(t), {
     analyticsLocations: N
@@ -53,7 +53,7 @@ function _(e) {
     borderType: g.Y.PREMIUM,
     hasBackground: !0,
     title: _,
-    showBorder: C,
+    showBorder: O,
     errors: y,
     className: s,
     children: (0, i.jsxs)("div", {
@@ -65,7 +65,7 @@ function _(e) {
           [x.buttonHighlighted]: j
         }),
         children: b.intl.string(b.t["/dRfCQ"])
-      }), (O || void 0 !== I ? null != I : null != v) && (0, i.jsx)(a.zxk, {
+      }), (C || void 0 !== I ? null != I : null != v) && (0, i.jsx)(a.zxk, {
         className: x.removeButton,
         color: a.zxk.Colors.PRIMARY,
         look: a.zxk.Looks.LINK,

@@ -22,8 +22,8 @@ var i = n(255367),
   _ = n(410575),
   E = n(941129),
   j = n(634894),
-  C = n(586902),
-  O = n(980591),
+  O = n(586902),
+  C = n(980591),
   S = n(468363),
   v = n(326255),
   T = n(771173),
@@ -76,8 +76,8 @@ var i = n(255367),
   e_ = n(294629),
   eE = n(875527),
   ej = n(702977),
-  eC = n(56848),
-  eO = n(940315),
+  eO = n(56848),
+  eC = n(940315),
   eS = n(378441),
   ev = n(358820),
   eT = n(723547),
@@ -109,8 +109,8 @@ var i = n(255367),
   eJ = n(374023),
   e$ = n(51144),
   e0 = n(998502),
-  e1 = n(578817),
-  e3 = n(870569),
+  e3 = n(578817),
+  e1 = n(870569),
   e8 = n(345243),
   e6 = n(115530),
   e2 = n(981631),
@@ -174,7 +174,7 @@ function ta(e) {
     avatarDecoration: b,
     size: (0, R.y9)(f.EFr.SIZE_32)
   }), E = (0, f.dQu)(f.TVs.modules.guildbar.AVATAR_SIZE), j = (0, G.Z)("Account") ? 32 : E, {
-    updateOpenPopoutRef: C,
+    updateOpenPopoutRef: O,
     highlightBadge: S,
     setHighlightBadge: v
   } = function() {
@@ -186,7 +186,7 @@ function ta(e) {
       }, []),
       [n, i] = r.useState(),
       [s, l] = r.useState(!1);
-    return (0, O.Z)(() => l(!0), 750), r.useEffect(() => {
+    return (0, C.Z)(() => l(!0), 750), r.useEffect(() => {
       let t = t => {
         var n;
         let {
@@ -237,7 +237,7 @@ function ta(e) {
       onRequestClose: () => {
         d(), v(void 0)
       },
-      children: e => (C(e), (0, i.jsxs)(f.P3F, ti(tn({
+      children: e => (O(e), (0, i.jsxs)(f.P3F, ti(tn({
         innerRef: h,
         style: T
       }, e), {
@@ -490,7 +490,7 @@ class to extends r.PureComponent {
     }), tt(this, "handleOpenAccountSettings", () => {
       this.handleOpenSettings()
     }), tt(this, "handleOpenSettings", function() {
-      let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : (0, e1.Q)("Account").jumpToVoice && eB.Z.isConnected() ? e2.oAB.VOICE : e2.oAB.ACCOUNT,
+      let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : (0, e3.Q)("Account").jumpToVoice && eB.Z.isConnected() ? e2.oAB.VOICE : e2.oAB.ACCOUNT,
         t = arguments.length > 1 ? arguments[1] : void 0,
         n = arguments.length > 2 ? arguments[2] : void 0;
       x.Z.open(e, t, n)
@@ -660,13 +660,13 @@ function tc(e) {
     handleOpenSettingsContextMenu: _,
     dismissibleContents: E,
     nameplate: j,
-    accountContainerRef: C
-  } = e, O = (0, et.A)(j);
+    accountContainerRef: O
+  } = e, C = (0, et.A)(j);
   return (0, i.jsxs)("div", {
     className: te.buttons,
-    style: O,
+    style: C,
     children: [(0, i.jsx)(tm, {
-      accountContainerRef: C,
+      accountContainerRef: O,
       selfMute: n,
       serverMute: s,
       suppress: a,
@@ -722,7 +722,7 @@ function td() {
       }
     }),
     a = (0, d.e7)([eR.Z], () => eR.Z.getAnyStreamForUser(n)),
-    c = (0, C.Z)({
+    c = (0, O.Z)({
       userId: n
     }),
     m = e$.ZP.useUserTag(t, {
@@ -740,7 +740,7 @@ function td() {
     } = (0, e_.Z)(g),
     {
       selfDeaf: _,
-      deaf: O
+      deaf: C
     } = (0, ex.Z)(g),
     v = (0, d.e7)([D.C], () => {
       var e;
@@ -813,7 +813,7 @@ function td() {
       premiumSubscription: T,
       selfDeaf: _,
       selfMute: b,
-      serverDeaf: O,
+      serverDeaf: C,
       serverMute: h,
       speaking: c,
       speakingWhileMuted: N,
@@ -856,7 +856,7 @@ function tu(e) {
     }) : h === u.z.SOUNDBOARD_VOLUME_EDUCATION ? () => (0, i.jsx)(em.Z, {
       markAsDismissed: b
     }) : h === u.z.PER_GUILD_COLLECTIBLES_CUSTOMIZATION_COACHMARK ? () => (0, i.jsx)(eh.Z, {}) : () => (0, i.jsx)(i.Fragment, {}),
-    children: () => (0, i.jsx)(e3.Z, ti(tn({
+    children: () => (0, i.jsx)(e1.Z, ti(tn({
       ref: d,
       tooltipText: null != t ? e9.intl.formatToPlainString(e9.t.Gzh6ZG, {
         webBuildOverride: t.id
@@ -889,14 +889,14 @@ function tm(e) {
     onClick: _,
     onContextMenu: E,
     nameplate: j,
-    accountContainerRef: C
-  } = e, O = t || s || n, S = r.useRef(null), v = r.useRef(null), T = (0, eP.b)(O), {
+    accountContainerRef: O
+  } = e, C = t || s || n, S = r.useRef(null), v = r.useRef(null), T = (0, eP.b)(C), {
     activeVoice: N,
     mostRecentlyRequestedVoiceId: I,
     lastInitAttemptMayHaveCrashed: P
   } = (0, eS.o)(), {
     showSilentLagWarning: R
-  } = (0, eO.Y)(), D = null != N, Z = (0, eC.z)(N), w = (0, d.e7)([eB.Z], () => eB.Z.isConnected()), {
+  } = (0, eC.Y)(), D = null != N, Z = (0, eO.z)(N), w = (0, d.e7)([eB.Z], () => eB.Z.isConnected()), {
     Component: k,
     events: B,
     play: M
@@ -920,7 +920,7 @@ function tm(e) {
     location: y.Z.AUDIO_INPUT_BUTTON,
     autoTrackExposure: !0
   });
-  r.useEffect(() => () => M(), [O, M]);
+  r.useEffect(() => () => M(), [C, M]);
   let K = r.useCallback(e => {
       E(e, H)
     }, [E, H]),
@@ -948,8 +948,8 @@ function tm(e) {
   let ee = r.useCallback(() => {
       P || (0, ev.r5)()
     }, [P]),
-    et = O ? f.TVs.colors.STATUS_DANGER : R ? f.TVs.colors.STATUS_WARNING : "currentColor",
-    en = O || R,
+    et = C ? f.TVs.colors.STATUS_DANGER : R ? f.TVs.colors.STATUS_WARNING : "currentColor",
+    en = C || R,
     ei = (0, es.Z)({
       location: "Account"
     });
@@ -960,7 +960,7 @@ function tm(e) {
       className: l()(te.micButtonParent, {
         [te.hasColorGlow]: en
       }),
-      children: [(0, i.jsx)(e3.Z, {
+      children: [(0, i.jsx)(e1.Z, {
         tooltipText: F,
         tooltipColor: m,
         tooltipForceOpen: p,
@@ -985,12 +985,12 @@ function tm(e) {
           [te.micButtonWithMenu]: z
         }),
         orangeGlow: R,
-        redGlow: O,
+        redGlow: C,
         "aria-label": e9.intl.string(e9.t["w4m94+"]),
-        "aria-checked": O,
+        "aria-checked": C,
         disabled: a
       }), z && (0, i.jsx)(f.yRy, {
-        targetElementRef: C,
+        targetElementRef: O,
         position: "top",
         align: "left",
         nudgeAlignIntoViewport: !1,
@@ -1049,7 +1049,7 @@ function tm(e) {
                   markAsDismissed: s,
                   onCTA: () => X(!0)
                 }));
-                let c = () => (0, i.jsx)(e3.Z, tn({
+                let c = () => (0, i.jsx)(e1.Z, tn({
                   ref: v,
                   plated: null != j,
                   tooltipForceOpen: J,
@@ -1076,7 +1076,7 @@ function tm(e) {
                   role: "button",
                   className: te.buttonChevron,
                   orangeGlow: R,
-                  redGlow: O,
+                  redGlow: C,
                   "aria-label": e9.intl.string(e9.t.Hapb4O),
                   disabled: a,
                   onClick: e => {
@@ -1127,7 +1127,7 @@ function tp(e) {
   }, [o, _]);
   return (0, i.jsx)(A.Gt, {
     value: _,
-    children: (0, i.jsx)(e3.Z, {
+    children: (0, i.jsx)(e1.Z, {
       plated: null != d,
       tooltipText: (0, k.Z)(t, n, s),
       onMouseEnter: h,

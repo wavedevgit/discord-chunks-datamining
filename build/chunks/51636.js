@@ -21,8 +21,8 @@ var i = n(255367),
   _ = n(484239),
   E = n(658370),
   j = n(981631),
-  C = n(921944),
-  O = n(388032),
+  O = n(921944),
+  C = n(388032),
   S = n(593595);
 
 function v(e) {
@@ -89,7 +89,7 @@ let N = r.memo(e => {
   return (r.useEffect(() => {
     y && A && (D(!0), g.default.track(j.rMx.PREMIUM_MARKETING_PERK_CARD_FLIPPED, {
       card_type: t
-    }), null != s && L(C.L.TAKE_ACTION))
+    }), null != s && L(O.L.TAKE_ACTION))
   }, [y, A, s, t, L]), (0, m.Z)({
     type: o.ImpressionTypes.VIEW,
     name: o.ImpressionNames.PERK_DISCOVERABILITY_CARD,
@@ -153,7 +153,7 @@ let N = r.memo(e => {
         onTransitionEnd: e => {
           A && "transform" === e.propertyName && e.target.classList.contains(S.flipCard) && (D(!0), g.default.track(j.rMx.PREMIUM_MARKETING_PERK_CARD_FLIPPED, {
             card_type: t
-          }), null != s && L(C.L.TAKE_ACTION))
+          }), null != s && L(O.L.TAKE_ACTION))
         },
         children: [(0, i.jsx)("div", {
           className: S.flipCardHidden,
@@ -173,7 +173,7 @@ let N = r.memo(e => {
           className: S.flipCardButtonContainer,
           children: (0, i.jsx)(d.zxk, {
             onClick: () => P(!0),
-            children: O.intl.string(O.t.dcztdX)
+            children: C.intl.string(C.t.dcztdX)
           })
         })]
       })
@@ -198,8 +198,8 @@ let I = r.forwardRef((e, t) => {
     perkComponent: f,
     cardVariant: b,
     cardType: j,
-    onClick: C,
-    backgroundImage: O,
+    onClick: O,
+    backgroundImage: C,
     pillText: v,
     perkImage: T,
     imageOverlayText: N,
@@ -207,15 +207,15 @@ let I = r.forwardRef((e, t) => {
   } = e, y = j === x.gM.CARD_CAROUSEL_FIRST_ROW || j === x.gM.CARD_CAROUSEL_SECOND_ROW || j === x.gM.CARD_CAROUSEL_THIRD_ROW, A = "" !== o || "" !== c || "" !== a && b === x.zW.REWARD, P = (0, h._)(b);
   return (0, i.jsxs)(d.P3F, {
     className: l()(S.card, g, null == (n = P.cardContainer) ? void 0 : n.className, {
-      [S.clickable]: null != C,
+      [S.clickable]: null != O,
       [S.hideOverflow]: y,
       [S.nitroGradientBackground]: I
     }),
     onMouseEnter: p,
     style: {
-      backgroundImage: null != O ? "url(".concat(O, ")") : void 0
+      backgroundImage: null != C ? "url(".concat(C, ")") : void 0
     },
-    onClick: C,
+    onClick: O,
     children: [null != v && (0, i.jsx)(d.Text, {
       variant: "text-xs/semibold",
       className: S.pill,

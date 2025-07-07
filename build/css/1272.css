@@ -1,6 +1,6 @@
 /**
   Module ID: 1272
-  Original File Name: 8793201f8194e3c2
+  Original File Name: cf62e9285d848767
 **/
 .container__74da2 {
     align-items: center;
@@ -5600,157 +5600,6 @@
     margin-left: 8px
 }
 
-.headerBar__0920e:before {
-    bottom: 0;
-    box-shadow: var(--elevation-low);
-    content: "";
-    display: none;
-    height: 1px;
-    left: 0;
-    pointer-events: none;
-    position: absolute;
-    right: 0;
-    z-index: 1
-}
-
-.homeBody__0920e {
-    box-sizing: border-box;
-    margin: 0 auto;
-    max-width: var(--custom-application-store-home-store-home-width);
-    padding: 0 20px;
-    width: 100%
-}
-
-.categoryHeader__0920e {
-    border-bottom-width: 1px;
-    border-style: solid;
-    display: flex;
-    flex-direction: column;
-    font-size: 16px;
-    font-weight: var(--font-weight-medium);
-    margin: 32px 0 20px;
-    padding-bottom: 10px
-}
-
-.viewAllGamesButton__0920e {
-    display: flex;
-    justify-content: center;
-    margin: 20px auto 40px
-}
-
-.viewAllGamesButton__0920e:hover .viewAllIcon__0920e {
-    transform: rotate(-90deg) translateY(3px)
-}
-
-.viewAllGamesButtonInner__0920e {
-    align-items: center;
-    display: flex
-}
-
-.viewAllGames__0920e,.viewAllNitroGames__0920e {
-    align-items: center;
-    cursor: pointer;
-    display: flex;
-    font-size: 16px
-}
-
-.full-motion .viewAllGames__0920e,.full-motion .viewAllNitroGames__0920e {
-    transition: transform .2s ease
-}
-
-.viewAllGames__0920e:hover .viewAllIcon__0920e,.viewAllNitroGames__0920e:hover .viewAllIcon__0920e {
-    transform: rotate(-90deg) translateY(3px)
-}
-
-.viewAllIcon__0920e {
-    height: 20px;
-    width: 20px
-}
-
-.homeTile__0920e {
-    margin: 0 10px
-}
-
-.homeTile__0920e:first-child {
-    margin-left: 0
-}
-
-.homeTile__0920e:last-child {
-    margin-right: 0
-}
-
-.spinner__0920e {
-    margin-bottom: 40px;
-    margin-top: 40px
-}
-
-.homeWrapper__0920e {
-    background-color: var(--background-base-lowest);
-    border-top: 1px solid var(--app-border-frame);
-    display: flex;
-    flex-direction: column;
-    position: relative
-}
-
-.homeWrapperNormal__0920e {
-    height: 100%;
-    width: 100%
-}
-
-.marketingWrapper__0920e {
-    flex-shrink: 0
-}
-
-.premiumApplicationsHeader__0920e {
-    border-bottom-width: 1px;
-    border-style: solid;
-    display: flex;
-    flex-direction: column;
-    font-size: 16px;
-    font-weight: var(--font-weight-medium);
-    margin: 32px 0 20px;
-    padding-bottom: 10px
-}
-
-.headerBar__0920e {
-    transform: translateZ(0)
-}
-
-.theme-dark .categoryHeader__0920e,.theme-dark .premiumApplicationsHeader__0920e {
-    border-color: var(--primary-500)
-}
-
-.theme-light .categoryHeader__0920e,.theme-light .premiumApplicationsHeader__0920e {
-    border-color: var(--primary-200)
-}
-
-@media (min-width:849px) {
-    .categoryHeader__0920e,.premiumApplicationsHeader__0920e {
-        align-content: center;
-        color: var(--header-primary);
-        flex-direction: row;
-        justify-content: space-between
-    }
-}
-
-@media (max-width:485px) {
-    .premiumContainer__0920e {
-        padding: 16px
-    }
-}
-
-.viewAllGames__0920e {
-    color: var(--header-primary)
-}
-
-.headerBarV2LightBackground__0920e {
-    background: var(--white)!important
-}
-
-.headerBarV2DarkBackground__0920e {
-    background: var(--black)!important
-}
-
 .applicationStore_f07d62 {
     display: flex;
     flex: 1 1 auto;
@@ -8553,4 +8402,4 @@ html .tabBadge__35e86 {
     margin-bottom: 18px
 }
 
-/*# sourceMappingURL=8793201f8194e3c2.css.map*/
+/*# sourceMappingURL=cf62e9285d848767.css.map*/

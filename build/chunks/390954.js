@@ -1,6 +1,6 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => O
+  Z: () => C
 }), n(388685), n(642613);
 var i, r = n(255367),
   s = n(73800),
@@ -101,7 +101,7 @@ _(j, "defaultProps", {
   hideDivider: !1,
   onEditClick: () => {}
 });
-class C extends s.PureComponent {
+class O extends s.PureComponent {
   renderFooter() {
     let {
       paymentSources: e
@@ -222,4 +222,4 @@ class C extends s.PureComponent {
     })
   }
 }
-let O = C
+let C = O

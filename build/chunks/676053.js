@@ -27,8 +27,8 @@ function h(e) {
       },
       badge: E,
       footerLink: j,
-      gradientColor: C,
-      onWatchVideo: O,
+      gradientColor: O,
+      onWatchVideo: C,
       onRequestClose: S,
       popoverRef: v
     } = e,
@@ -71,8 +71,8 @@ function h(e) {
         startingIndex: 0,
         location: "VideoPopover",
         shouldHideMediaOptions: !0
-      }), null == S || S(), null == O || O()
-    }, [I, O, S]),
+      }), null == S || S(), null == C || C()
+    }, [I, C, S]),
     R = (0, i.jsxs)("div", {
       className: g.videoContainer,
       children: [(0, i.jsx)(l.Z, {

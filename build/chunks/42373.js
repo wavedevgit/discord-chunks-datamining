@@ -26,8 +26,8 @@ let x = e => {
     previewImage: _,
     videoUrl: E,
     shouldLoadVideo: j,
-    index: C,
-    customVideoStyle: O,
+    index: O,
+    customVideoStyle: C,
     isReducedMotion: S,
     onClick: v,
     badgeText: T,
@@ -125,7 +125,7 @@ let x = e => {
         [b.largeBoxVideo]: N === g.y$.LARGE,
         [b.mediumBoxVideo]: N === g.y$.MEDIUM,
         [b.smallBoxVideo]: N === g.y$.SMALL,
-        [O]: null != O
+        [C]: null != C
       }),
       ref: y,
       children: (0, i.jsx)("source", {
@@ -144,7 +144,7 @@ let x = e => {
     onFocus: k,
     onBlur: L,
     onMouseLeave: L,
-    children: C % 2 != 0 ? (0, i.jsxs)(i.Fragment, {
+    children: O % 2 != 0 ? (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(B, {}), (0, i.jsx)(M, {})]
     }) : (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(M, {}), (0, i.jsx)(B, {})]

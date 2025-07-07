@@ -1,5 +1,15 @@
-/** Chunk was on 89795 **/
+/** Chunk was on 44421 **/
 n.d(t, {
-  Z: () => i
+  Z: () => s
 });
-let i = "https://cdn.discordapp.com/assets/content/7c8ee05f499cdf960d0b69208667276e8ca276aa2edcee6141d55e237d1ed5d2.svg"
+var r = n(73800),
+  l = n(442837),
+  i = n(897285),
+  a = n(924301);
+
+function s(e, t, n) {
+  let s = (0, l.e7)([a.ZP], () => a.ZP.getUserCount(t, n));
+  return (0, r.useEffect)(() => {
+    null != e && null != t && i.Z.getGuildEventUserCounts(e, t, null != n ? [n] : [])
+  }, [t, e, n]), s
+}

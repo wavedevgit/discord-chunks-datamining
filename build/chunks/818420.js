@@ -24,7 +24,7 @@ function f(e) {
   } = (0, a.ZP)(), f = t.nameplate, {
     pendingNameplate: b,
     pendingErrors: x
-  } = (0, u._A)(), _ = [s.z.NAMEPLATE_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE], [E, j] = (0, o.US)(_), C = E === s.z.NAMEPLATE_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE, O = r.useCallback(() => {
+  } = (0, u._A)(), _ = [s.z.NAMEPLATE_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE], [E, j] = (0, o.US)(_), O = E === s.z.NAMEPLATE_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE, C = r.useCallback(() => {
     j(p.L.TAKE_ACTION), (0, d.f)({
       analyticsLocations: n
     })
@@ -33,7 +33,7 @@ function f(e) {
   }, []);
   return (0, i.jsx)(m.Z, {
     title: g.intl.string(g.t.x5CoXV),
-    titleIcon: C ? (0, i.jsx)(c.Z, {
+    titleIcon: O ? (0, i.jsx)(c.Z, {
       className: h.newBadge
     }) : void 0,
     errors: x,
@@ -41,7 +41,7 @@ function f(e) {
       className: h.section,
       children: [(0, i.jsx)(l.zxk, {
         size: l.zxk.Sizes.SMALL,
-        onClick: O,
+        onClick: C,
         children: g.intl.string(g.t.BwdeMz)
       }), (void 0 === b ? null != f : null != b) && (0, i.jsx)(l.zxk, {
         size: l.zxk.Sizes.SMALL,

@@ -21,14 +21,14 @@ function p(e) {
     onClose: b,
     requirementsUpdated: x,
     noSkip: _ = !1
-  } = e, [E, j] = r.useState(""), [C, O] = r.useState(""), [S, v] = r.useState(""), [T, N] = r.useState(null), [I, y] = r.useState(null), A = (0, s.e7)([o.Z], () => o.Z.getErrors()), P = (0, s.e7)([o.Z], () => o.Z.getFormState()), R = r.useRef(null);
+  } = e, [E, j] = r.useState(""), [O, C] = r.useState(""), [S, v] = r.useState(""), [T, N] = r.useState(null), [I, y] = r.useState(null), A = (0, s.e7)([o.Z], () => o.Z.getErrors()), P = (0, s.e7)([o.Z], () => o.Z.getFormState()), R = r.useRef(null);
   async function D(e) {
     e.preventDefault(), (0, a.b9)();
     let t = !1;
-    if ("" === C ? (N(u.intl.string(u.t["/7/oPT"])), t = !0) : N(null), C !== S ? (y(u.intl.string(u.t.IEKYZ2)), t = !0) : y(null), t) return;
+    if ("" === O ? (N(u.intl.string(u.t["/7/oPT"])), t = !0) : N(null), O !== S ? (y(u.intl.string(u.t.IEKYZ2)), t = !0) : y(null), t) return;
     let n = await (0, a.Mn)({
       password: E,
-      newPassword: C
+      newPassword: O
     });
     if (null == n ? void 0 : n.ok) f();
     else {
@@ -80,8 +80,8 @@ function p(e) {
           error: null != (g = null != (p = null == A || null == (n = A.new_password) ? void 0 : n[0]) ? p : T) ? g : void 0,
           children: (0, i.jsx)(l.oil, {
             type: "password",
-            value: C,
-            onChange: O
+            value: O,
+            onChange: C
           })
         }), (0, i.jsx)(l.xJW, {
           className: m.newPassword,

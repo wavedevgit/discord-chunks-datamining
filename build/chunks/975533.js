@@ -18,8 +18,8 @@ var r = n(570140),
   m = n(352527),
   b = n(641015),
   _ = n(183584),
-  O = n(383451),
-  E = n(199902),
+  E = n(383451),
+  O = n(199902),
   y = n(131951),
   I = n(246946),
   v = n(808506),
@@ -37,7 +37,7 @@ function x(e, t, n) {
   let i = performance.now(),
     l = null != (r = n.context) ? r : A.Yn.DEFAULT;
   if (!0 !== n.latched && e) n.pressedTime = i;
-  else if (null != n.pressedTime && (0, O.f)({
+  else if (null != n.pressedTime && (0, E.f)({
       location: "doPTT",
       autoTrackExposure: !1
     }).enableLatching) {
@@ -178,7 +178,7 @@ let L = {
   },
   [P.kg4.TOGGLE_GO_LIVE_STREAMING]: {
     onTrigger() {
-      let e = E.Z.getCurrentUserActiveStream();
+      let e = O.Z.getCurrentUserActiveStream();
       if (null != e) return (0, o.g)((0, h.V9)(e));
       (0, f.Z)()
     },

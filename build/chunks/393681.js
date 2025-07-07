@@ -21,8 +21,8 @@ var i = n(255367),
   _ = n(332473),
   E = n(303172),
   j = n(518560),
-  C = n(921801),
-  O = n(577275),
+  O = n(921801),
+  C = n(577275),
   S = n(484459),
   v = n(430824),
   T = n(325067),
@@ -181,7 +181,7 @@ class K extends r.PureComponent {
             src: n(511391)
           }), F.intl.string(F.t.FsmBy8)]
         })
-      }) : null, (0, i.jsx)(C.F, {
+      }) : null, (0, i.jsx)(O.F, {
         setting: U.s6.ACCOUNT_CHANGE_PASSWORD,
         children: (0, i.jsx)("div", {
           children: (0, i.jsx)(u.zxk, {
@@ -193,7 +193,7 @@ class K extends r.PureComponent {
             children: F.intl.string(F.t["FRep5+"])
           })
         })
-      }), (0, i.jsx)(C.F, {
+      }), (0, i.jsx)(O.F, {
         setting: U.s6.ACCOUNT_MULTI_FACTOR_AUTHENTICATION,
         children: (0, i.jsxs)(b.Z, {
           align: b.Z.Align.STRETCH,
@@ -310,13 +310,13 @@ class K extends r.PureComponent {
   }
   renderSecuritySettingsRedesign() {
     return (0, i.jsxs)(i.Fragment, {
-      children: [this.renderConfirmModals(), (0, i.jsx)(C.F, {
+      children: [this.renderConfirmModals(), (0, i.jsx)(O.F, {
         setting: U.s6.ACCOUNT_PROFILE,
         children: this.renderAccountSettings(!1)
-      }), (0, i.jsx)(C.F, {
+      }), (0, i.jsx)(O.F, {
         setting: U.s6.ACCOUNT_PASSWORD_AND_AUTHENTICATION,
         children: this.renderSecuritySettings()
-      }), (0, i.jsx)(C.F, {
+      }), (0, i.jsx)(O.F, {
         setting: U.s6.ACCOUNT_REMOVAL,
         children: this.renderAccountRemovalSettings()
       })]
@@ -408,7 +408,7 @@ let q = () => {
     {
       teams: d,
       loading: u
-    } = (0, O.Z)({
+    } = (0, C.Z)({
       refreshOnDepChange: !0
     });
   return (0, i.jsx)(K, {

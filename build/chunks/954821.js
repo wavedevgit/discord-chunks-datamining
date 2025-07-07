@@ -42,7 +42,7 @@ let x = e => {
       listing: o,
       subscription: _,
       onClose: E
-    } = e, j = (0, u.Dt)(), C = (0, p.YB)(s), O = (null == C || null == (t = C.cover_image_asset) ? void 0 : t.application_id) != null ? (0, m._W)(C.cover_image_asset.application_id, C.cover_image_asset, 440) : void 0, {
+    } = e, j = (0, u.Dt)(), O = (0, p.YB)(s), C = (null == O || null == (t = O.cover_image_asset) ? void 0 : t.application_id) != null ? (0, m._W)(O.cover_image_asset.application_id, O.cover_image_asset, 440) : void 0, {
       analyticsLocations: S
     } = (0, d.ZP)(c.Z.GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL), {
       cancelSubscription: v,
@@ -62,7 +62,7 @@ let x = e => {
       parentComponent: "CancelSubscriptionModal",
       children: [(0, i.jsxs)("div", {
         children: [(0, i.jsx)("img", {
-          src: O,
+          src: C,
           alt: "",
           className: b.headerImage
         }), (0, i.jsx)(a.olH, {

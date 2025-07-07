@@ -69,14 +69,14 @@ function f(e) {
     className: l,
     count: o,
     label: m.t.ppXMu7
-  }, u.PC.STEAM_GAME_COUNT)), c > -1 && a.push((0, i.jsx)(O, {
+  }, u.PC.STEAM_GAME_COUNT)), c > -1 && a.push((0, i.jsx)(C, {
     className: l,
     label: m.intl.format(m.t["Y88M5+"], {
       count: c
     }),
     imageSrc: n(738535),
     imageAlt: m.intl.string(m.t.HKUEZm)
-  }, u.PC.STEAM_ITEM_COUNT_DOTA2)), d > -1 && a.push((0, i.jsx)(O, {
+  }, u.PC.STEAM_ITEM_COUNT_DOTA2)), d > -1 && a.push((0, i.jsx)(C, {
     className: l,
     label: m.intl.format(m.t["Y88M5+"], {
       count: d
@@ -162,7 +162,7 @@ function E(e) {
           break;
         case u.xn.DATETIME_GREATER_THAN_EQUAL:
         case u.xn.DATETIME_LESS_THAN_EQUAL:
-          r.push((0, i.jsx)(C, {
+          r.push((0, i.jsx)(O, {
             className: t,
             date: a,
             locale: n,
@@ -205,7 +205,7 @@ function j(e) {
   })
 }
 
-function C(e) {
+function O(e) {
   let {
     date: t,
     locale: n,
@@ -223,7 +223,7 @@ function C(e) {
   })
 }
 
-function O(e) {
+function C(e) {
   let {
     label: t,
     imageSrc: n,

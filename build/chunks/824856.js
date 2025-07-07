@@ -28,12 +28,12 @@ function b(e) {
     description: _
   } = n, E = r.useMemo(() => null == n.thumbnail ? null : (0, g.q)(b, n.thumbnail, 256), [b, n.thumbnail]), {
     data: j
-  } = (0, d.X)(n.skuId), C = r.useMemo(() => {
+  } = (0, d.X)(n.skuId), O = r.useMemo(() => {
     if (null == j || 0 === j.length) return null;
     let e = j[0];
     return (0, m.xg)(e)
   }, [j]);
-  return null == C ? null : (0, i.jsxs)(a.l, {
+  return null == O ? null : (0, i.jsxs)(a.l, {
     className: l()(f.wrapper, s),
     header: (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsxs)("div", {
@@ -49,7 +49,7 @@ function b(e) {
             children: n.summary
           }), (0, i.jsx)(c.Text, {
             variant: "text-md/medium",
-            children: C
+            children: O
           })]
         })]
       }), t]

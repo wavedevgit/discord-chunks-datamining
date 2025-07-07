@@ -24,8 +24,8 @@ var i = n(255367),
   _ = n(600164),
   E = n(925329),
   j = n(963249),
-  C = n(301766),
-  O = n(594174),
+  O = n(301766),
+  C = n(594174),
   S = n(626135),
   v = n(63063),
   T = n(74538),
@@ -49,8 +49,8 @@ function B(e) {
       fromStandaloneBillingPage: a = !0,
       className: c
     } = e,
-    d = (0, u.e7)([O.default], () => {
-      let e = O.default.getCurrentUser();
+    d = (0, u.e7)([C.default], () => {
+      let e = C.default.getCurrentUser();
       return o()(null != e, "GuildBoostingHeader: currentUser cannot be undefined"), e
     });
   if (0 === (0, T.uV)(n.additionalPlans)) return null;
@@ -363,14 +363,14 @@ function W(e) {
     applyEntitlements: !0,
     analyticsLocations: m,
     analyticsLocation: c
-  }), _ = null == l ? void 0 : l.invalid, E = (0, u.e7)([O.default], () => {
+  }), _ = null == l ? void 0 : l.invalid, E = (0, u.e7)([C.default], () => {
     var e;
-    return null == (e = O.default.getCurrentUser()) ? void 0 : e.hasFreePremium()
+    return null == (e = C.default.getCurrentUser()) ? void 0 : e.hasFreePremium()
   }), j = d()(r.currentPeriodEnd), S = null != r.paymentSourceId, v = null != (t = null == x ? void 0 : x.total) ? t : 0, T = !S && v > 0 && (7 >= j.diff(d()(), "days") || r.status === Z.O0b.PAST_DUE) && !E && !r.isPurchasedExternally, N = _ && r.status === Z.O0b.PAST_DUE && !E && !r.isPurchasedExternally, A = (0, y.U)(), P = !E && A, R = (null == r ? void 0 : r.status) === Z.O0b.PAST_DUE ? d()().diff(d()(r.currentPeriodStart), "days") : 0, [w] = (0, I.Ox)({
     subscriptionId: r.id,
     preventFetch: !P
   });
-  return null == b || null == x ? (0, i.jsx)(p.$jN, {}) : (null != r.renewalMutations && (r.renewalMutations.planId !== r.planId && !(0, C.Q0)(r.renewalMutations.planId) || r.hasExternalPlanChange) && (n = (0, i.jsx)(D.Z, {
+  return null == b || null == x ? (0, i.jsx)(p.$jN, {}) : (null != r.renewalMutations && (r.renewalMutations.planId !== r.planId && !(0, O.Q0)(r.renewalMutations.planId) || r.hasExternalPlanChange) && (n = (0, i.jsx)(D.Z, {
     subscription: r,
     renewalMutations: r.renewalMutations,
     className: L.renewalMutationNotice,

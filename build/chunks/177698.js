@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => E
+  Z: () => O
 }), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685);
 var r = n(255367);
 n(73800);
@@ -50,7 +50,7 @@ function _(e, t) {
   }), e
 }
 
-function O(e, t) {
+function E(e, t) {
   function n() {
     (0, i.Mr3)(e) && (0, i.h7j)(e => (0, r.jsx)(s.j, _(b({}, e), {
       children: (0, r.jsx)(c.Lk, {
@@ -65,14 +65,14 @@ function O(e, t) {
     }
   }
 }
-let E = (0, h.Z)(e => {
+let O = (0, h.Z)(e => {
   var t;
   let {
     clientId: n,
     authorizations: u,
     scopes: d,
     parsedPermissions: h,
-    responseType: E,
+    responseType: O,
     redirectUri: y,
     codeChallenge: I,
     codeChallengeMethod: v,
@@ -114,7 +114,7 @@ let E = (0, h.Z)(e => {
             let t = "OAuth2AuthorizeExternalSuccess_".concat(n, "_").concat(S, "_").concat(N),
               {
                 cleanup: l
-              } = O(t, x);
+              } = E(t, x);
             (0, i.h7j)(e => (0, r.jsx)(s.j, _(b({}, e), {
               footer: (0, r.jsx)(c.qN, {
                 application: R,
@@ -136,7 +136,7 @@ let E = (0, h.Z)(e => {
             let t = "OAuth2AuthorizeExternalError_".concat(n, "_").concat(S, "_").concat(N),
               {
                 cleanup: l
-              } = O(t, x);
+              } = E(t, x);
             (0, i.h7j)(e => (0, r.jsx)(s.j, _(b({}, e), {
               footer: (0, r.jsx)(c.qN, {
                 application: R,
@@ -155,14 +155,14 @@ let E = (0, h.Z)(e => {
       },
       {
         cleanup: M
-      } = O(L, x);
+      } = E(L, x);
     (0, i.h7j)(e => (0, r.jsx)(o.OAuth2AuthorizeModal, _(b({}, e), {
       authorizations: u,
       clientId: n,
       scopes: null != d ? d : [],
       disclosures: null != j ? j : [],
       callback: k,
-      responseType: E,
+      responseType: O,
       redirectUri: y,
       codeChallenge: I,
       codeChallengeMethod: v,

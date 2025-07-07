@@ -18,8 +18,8 @@ var r = n(255367),
   m = n(795318),
   b = n(512384),
   _ = n(670188),
-  O = n(314897),
-  E = n(131951),
+  E = n(314897),
+  O = n(131951),
   y = n(51144),
   I = n(524484),
   v = n(388032),
@@ -94,7 +94,7 @@ function j(e) {
       parentAnalyticsLocation: p
     } = (0, f.ZP)(),
     {
-      channel: O,
+      channel: E,
       user: j,
       nick: A,
       mute: Z,
@@ -102,13 +102,13 @@ function j(e) {
       serverMute: L,
       serverDeaf: w
     } = e,
-    R = (0, o.e7)([E.Z], () => E.Z.isLocalMute(j.id)),
+    R = (0, o.e7)([O.Z], () => O.Z.isLocalMute(j.id)),
     D = (0, u.Z)({
       userId: j.id,
       checkSoundSharing: !0
     }),
-    k = null != (t = O.getGuildId()) ? t : void 0,
-    M = j.getAvatarURL(O.guild_id, 24),
+    k = null != (t = E.getGuildId()) ? t : void 0,
+    M = j.getAvatarURL(E.guild_id, 24),
     U = null != A ? A : y.ZP.getName(j),
     {
       icon: G,
@@ -147,7 +147,7 @@ function j(e) {
       return t => (0, r.jsx)(e, N(S({}, t), {
         user: j,
         guildId: k,
-        channel: O,
+        channel: E,
         showMediaItems: !0,
         onInteraction: (0, m.u)("GuildChannelUserContextMenu", h.Z.RTC_PANEL, {
           targetUserId: j.id
@@ -170,7 +170,7 @@ function j(e) {
     targetElementRef: d,
     user: j,
     guildId: k,
-    channelId: O.id,
+    channelId: E.id,
     position: "top",
     clickTrap: !0,
     children: e => (0, r.jsx)(s.ua7, {
@@ -212,7 +212,7 @@ function A(e) {
     voiceStates: t,
     channel: n,
     className: l
-  } = e, [c, u] = i.useState(!1), h = (0, o.e7)([O.default], () => O.default.getId()), {
+  } = e, [c, u] = i.useState(!1), h = (0, o.e7)([E.default], () => E.default.getId()), {
     containerRef: f,
     maxVisibleAvatars: g
   } = function(e) {
@@ -236,7 +236,7 @@ function A(e) {
         if (r.length >= n) return [r, !0];
         r.push(i)
       } return [r, !1]
-  }(t, h, g), _ = c ? s.V_R : s.qJs, E = (0, r.jsx)(s.M0o, {
+  }(t, h, g), _ = c ? s.V_R : s.qJs, O = (0, r.jsx)(s.M0o, {
     onClick: () => u(!c),
     color: s.YX$.PRIMARY,
     size: s.tT7.SIZE_24,
@@ -271,7 +271,7 @@ function A(e) {
           serverMute: l.mute,
           serverDeaf: l.deaf
         }, t.id) : null
-      }), b ? E : null]
+      }), b ? O : null]
     })
   })
 }

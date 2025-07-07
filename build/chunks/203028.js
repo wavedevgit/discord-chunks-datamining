@@ -23,11 +23,11 @@ function _(e) {
   var t, i;
   let {
     party: _,
-    onUserContextMenu: O
+    onUserContextMenu: E
   } = e, {
-    priorityMembers: E,
+    priorityMembers: O,
     guildContext: y
-  } = _, I = E[0], v = function(e) {
+  } = _, I = O[0], v = function(e) {
     let {
       priorityMembers: t,
       partiedMembers: n
@@ -62,7 +62,7 @@ function _(e) {
       partiedMembers: c,
       voiceChannels: u,
       currentActivities: p
-    } = e, _ = i.length, O = c.length - _, E = p[0], y = null == E ? void 0 : E.activity, I = null == E ? void 0 : E.startedPlayingTime, v = {
+    } = e, _ = i.length, E = c.length - _, O = p[0], y = null == O ? void 0 : O.activity, I = null == O ? void 0 : O.startedPlayingTime, v = {
       name: null != (t = null == y ? void 0 : y.name) ? t : ""
     };
     if ((0, a.Z)(y) && null != y) return {
@@ -73,10 +73,10 @@ function _(e) {
       }),
       icon: null
     };
-    if (_ + O === 1 && null != E) {
+    if (_ + E === 1 && null != O) {
       let {
         game: e
-      } = E;
+      } = O;
       if (null == y) return {
         subtitle: null,
         icon: null
@@ -196,6 +196,6 @@ function _(e) {
     icon: S,
     onSubtitleClick: N,
     onIconClick: N,
-    onContextMenu: e => O(e, I.user)
+    onContextMenu: e => E(e, I.user)
   })
 }
