@@ -1,6 +1,6 @@
 /** Chunk was on 3589 **/
 n.d(t, {
-  Z: () => J
+  Z: () => V
 }), n(388685);
 var i, r = n(255367),
   l = n(73800),
@@ -223,7 +223,7 @@ let G = l.forwardRef(function(e, t) {
       children: o
     })
   }),
-  J = l.forwardRef(function(e, t) {
+  V = l.forwardRef(function(e, t) {
     let {
       guestWindow: n,
       focused: i,

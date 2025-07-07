@@ -1,15 +1,17 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => d
+  Z: () => _
 }), n(388685);
-var r = n(147913),
-  i = n(579806),
-  a = n(710845),
-  o = n(199902),
-  s = n(501787);
+var r = n(615287),
+  i = n(147913),
+  a = n(579806),
+  o = n(710845),
+  s = n(199902),
+  l = n(41534),
+  c = n(501787);
 
-function l(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -17,24 +19,24 @@ function l(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let c = new a.Z("OverlayContentProtectionManagerV3");
-class u extends r.Z {
+let d = new o.Z("OverlayContentProtectionManagerV3");
+class f extends i.Z {
   constructor(...e) {
     var t;
-    super(...e), t = this, l(this, "shouldEnable", !1), l(this, "enabled", !1), l(this, "setContentProtection", e => {
+    super(...e), t = this, u(this, "shouldEnable", !1), u(this, "enabled", !1), u(this, "setContentProtection", e => {
       this.shouldEnable = e, this.flushContentProtection()
-    }), l(this, "resetWindowState", function() {
+    }), u(this, "resetWindowState", function() {
       let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
       t.enabled = !1, e && t.flushContentProtection()
-    }), l(this, "flushContentProtection", () => {
+    }), u(this, "flushContentProtection", () => {
       try {
         var e, t;
         if (this.enabled === this.shouldEnable) return;
-        null === i.Z || void 0 === i.Z || null == (e = (t = i.Z.window).setWindowContentProtection) || e.call(t, s.$J, this.shouldEnable), this.enabled = this.shouldEnable
+        null === a.Z || void 0 === a.Z || null == (e = (t = a.Z.window).setWindowContentProtection) || e.call(t, c.$J, this.shouldEnable), this.enabled = this.shouldEnable
       } catch (e) {
-        c.error("Error setting content protection:", e)
+        d.error("Error setting content protection:", e), (0, l.D)(e, r.gl.OutOfProcess)
       }
-    }), l(this, "actions", {
+    }), u(this, "actions", {
       STREAM_START: e => {
         let {
           pid: t,
@@ -43,9 +45,9 @@ class u extends r.Z {
         this.setContentProtection(r)
       },
       STREAM_STOP: () => {
-        null == o.Z.getCurrentUserActiveStream() && this.setContentProtection(!1)
+        null == s.Z.getCurrentUserActiveStream() && this.setContentProtection(!1)
       }
     })
   }
 }
-let d = new u
+let _ = new f
