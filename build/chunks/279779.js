@@ -83,14 +83,22 @@ class S {
       type: "QUERY_CLEAR"
     })
   }
-  setQuery(e, t, n, r) {
-    null != e && (this._nextQuery = {
-      query: e,
-      filters: t,
-      blacklist: n,
-      boosters: null != r ? r : {},
+  setQuery(e) {
+    let {
+      query: t,
+      filters: n,
+      blacklist: r,
+      boosters: i,
+      boosterFallback: a
+    } = e;
+    this._nextQuery = {
+      query: t,
+      filters: n,
+      blacklist: r,
+      boosters: null != i ? i : {},
+      boosterFallback: null != a ? a : 1,
       limit: this._limit
-    }, this._setNextQuery())
+    }, this._setNextQuery()
   }
   _setNextQuery() {
     (null == this._currentQuery || !1 === this._currentQuery) && null != this._nextQuery && (null != this._worker && this._subscribed ? (this._currentQuery = this._nextQuery, this._nextQuery = null, this._worker.postMessage({

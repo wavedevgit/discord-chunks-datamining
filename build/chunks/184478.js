@@ -1,6 +1,6 @@
 /** Chunk was on 44799 **/
 t.d(n, {
-  Z: () => v
+  Z: () => g
 });
 var r = t(255367);
 t(73800);
@@ -19,12 +19,12 @@ var i = t(793030),
   x = t(388032),
   b = t(466649);
 
-function v(e) {
+function g(e) {
   let {
     guildId: n
   } = e, t = (0, o.e7)([c.Z], () => c.Z.getGuild(n)), {
-    available: v,
-    spent: g,
+    available: g,
+    spent: v,
     total: h
   } = (0, u.Z)(n);
   if (null != t) return (0, r.jsxs)("div", {
@@ -45,10 +45,10 @@ function v(e) {
     }), (0, r.jsxs)("div", {
       className: b.contentContainer,
       children: [(0, r.jsx)(p.Z, {
-        count: v,
+        count: g,
         type: p.b.AVAILABLE
       }), (0, r.jsx)(p.Z, {
-        count: g,
+        count: v,
         type: p.b.SPENT
       }), (0, r.jsx)(p.Z, {
         count: h,

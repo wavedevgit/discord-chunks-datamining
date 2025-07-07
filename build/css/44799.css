@@ -1,6 +1,6 @@
 /**
   Module ID: 44799
-  Original File Name: 3c1e9ba942a2d081
+  Original File Name: 17430ee786b4122a
 **/
 .parentContainer__98cbd {
     display: flex;
@@ -26,6 +26,22 @@
 
 .parentContainer__98cbd:hover .labelContainer__98cbd {
     opacity: 0
+}
+
+.parentContainer__98cbd:hover .boostProgressBackground__98cbd {
+    border: var(--space-4) solid var(--background-base-low)
+}
+
+.parentContainer__98cbd:hover .boostProgressBackground__98cbd.active__98cbd {
+    border-color: var(--background-surface-high)
+}
+
+.boostProgressBackground__98cbd {
+    border: var(--space-4) solid var(--background-base-lower)
+}
+
+.boostProgressBackground__98cbd.active__98cbd {
+    border-color: var(--background-surface-high)
 }
 
 .container__98cbd {
@@ -243,7 +259,6 @@
 .boostContainer__823e1 {
     align-items: center;
     background-color: var(--interactive-muted);
-    border: var(--space-4) solid var(--background-base-lower);
     border-radius: var(--radius-round);
     bottom: 0;
     display: flex;
@@ -714,4 +729,4 @@
     transition: padding-left .2s ease
 }
 
-/*# sourceMappingURL=3c1e9ba942a2d081.css.map*/
+/*# sourceMappingURL=17430ee786b4122a.css.map*/

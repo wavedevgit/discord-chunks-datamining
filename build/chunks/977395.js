@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  f: () => g
+  f: () => f
 });
 var r = n(534517),
   l = n(819570),
@@ -13,6 +13,6 @@ var r = n(534517),
   u = n(91641),
   d = n(166350),
   p = n(987338);
-let g = new u.E([d.NR, d.ZI, d.Ob, d.uc, d.m1, c.k, s.g, i.j, l.M, o.l, a.A, r.B], p.$P.COLLECTIBLES_SHOP_OPEN, {
+let f = new u.E([d.NR, d.ZI, d.Ob, d.uc, d.m1, c.k, s.g, i.j, l.M, o.l, a.A, r.B], p.$P.COLLECTIBLES_SHOP_OPEN, {
   location: "collectibles shop open"
 })

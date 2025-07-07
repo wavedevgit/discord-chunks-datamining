@@ -265,8 +265,11 @@ let k = new A(i.Z, {
         let {
           token: e
         } = i;
-        null != e && e.getFullMatch().trim().length > 0 ? (h.Z.requestMembers(r, e.getFullMatch().trim(), 10), c.context.setQuery(e.getFullMatch().trim(), {
-          guild: r
+        null != e && e.getFullMatch().trim().length > 0 ? (h.Z.requestMembers(r, e.getFullMatch().trim(), 10), c.context.setQuery({
+          query: e.getFullMatch().trim(),
+          filters: {
+            guild: r
+          }
         }), n = o.autocompletes, u = !1) : (c.context.clearQuery(), n = R(r, i))
       }
       return E[r] = O({

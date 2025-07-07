@@ -13,8 +13,8 @@ var r = n(255367),
   u = n(626135),
   d = n(381585),
   p = n(597688),
-  g = n(297651),
-  f = n(794324),
+  f = n(297651),
+  g = n(794324),
   h = n(981631),
   b = n(388032),
   m = n(806734);
@@ -30,10 +30,10 @@ let _ = e => {
   let x = null != (n = null != C ? C : null == O ? void 0 : O.skuId) ? n : "",
     {
       handleCardVisibilityChange: y
-    } = (0, g.E)(x, "home", "marketing featured block"),
+    } = (0, f.E)(x, "home", "marketing featured block"),
     {
       featuredBlockBanner: j
-    } = (0, f.YG)(O, E),
+    } = (0, g.YG)(O, E),
     T = l.useRef(null),
     P = x === a.T.NAMEPLATES_V3,
     L = P ? "NAMEPLATES VOL.3" : null,

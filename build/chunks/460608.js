@@ -1,6 +1,6 @@
 /** Chunk was on 44799 **/
 t.d(n, {
-  Z: () => v
+  Z: () => g
 }), t(642613), t(388685);
 var r = t(255367),
   i = t(73800),
@@ -18,24 +18,24 @@ var r = t(255367),
   x = t(388032),
   b = t(211886);
 
-function v(e) {
+function g(e) {
   let {
     guildId: n
   } = e, t = (0, s.Wu)([d.Z], () => {
     var e;
     return null != (e = d.Z.getAppliedGuildBoostsForGuild(n)) ? e : []
-  }, [n]), v = i.useMemo(() => t.sort((e, n) => _.default.extractTimestamp(e.id) < _.default.extractTimestamp(n.id) ? 1 : -1), [t]), g = (0, s.Wu)([m.ZP], () => {
+  }, [n]), g = i.useMemo(() => t.sort((e, n) => _.default.extractTimestamp(e.id) < _.default.extractTimestamp(n.id) ? 1 : -1), [t]), v = (0, s.Wu)([m.ZP], () => {
     let e = new Set;
-    return v.forEach(t => {
+    return g.forEach(t => {
       null == m.ZP.getMember(n, t.userId) && e.add(t.userId)
     }), Array.from(e)
-  }, [n, v]);
-  i.useEffect(() => {
-    g.length > 0 && g.forEach(e => u.Z.requestMember(n, e))
   }, [n, g]);
-  let h = i.useMemo(() => g.length > 0 ? {
-    [n]: g
-  } : {}, [n, g]);
+  i.useEffect(() => {
+    v.length > 0 && v.forEach(e => u.Z.requestMember(n, e))
+  }, [n, v]);
+  let h = i.useMemo(() => v.length > 0 ? {
+    [n]: v
+  } : {}, [n, v]);
   (0, c.$)(h);
   let j = (0, s.e7)([p.Z], () => {
     var e;
@@ -43,7 +43,7 @@ function v(e) {
   });
   return (i.useEffect(() => {
     j !== t.length && (0, l.C0)(n)
-  }, [n, j, t.length]), 0 === v.length) ? null : (0, r.jsxs)(r.Fragment, {
+  }, [n, j, t.length]), 0 === g.length) ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.X6, {
       className: b.header,
       variant: "eyebrow",
@@ -52,7 +52,7 @@ function v(e) {
     }), (0, r.jsx)(o.zJ, {
       className: b.container,
       fade: !0,
-      children: v.map((e, n) => (0, r.jsx)(f.Z, {
+      children: g.map((e, n) => (0, r.jsx)(f.Z, {
         boost: e
       }, "boost-activity-".concat(n)))
     })]

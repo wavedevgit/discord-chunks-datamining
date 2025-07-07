@@ -123,18 +123,18 @@ function Y(e) {
 
 function W(e) {
   if ("OVERLAY_INITIALIZE" === e.type && Y(e) && (j = !0), j) {
-    var t, n, r, i, a;
+    var t, n;
     switch (e.type) {
       case "CHANNEL_CREATE":
       case "THREAD_CREATE":
       case "THREAD_UPDATE":
       case "CHANNEL_DELETE":
       case "THREAD_DELETE":
-        let o = (0, f.kt)(e.channel);
-        if (!f.AW.has(o.type)) break;
+        let r = (0, f.kt)(e.channel);
+        if (!f.AW.has(r.type)) break;
         s.Z.dispatch({
           type: e.type,
-          channel: o
+          channel: r
         });
         break;
       case "CHANNEL_UPDATES":
@@ -152,11 +152,21 @@ function W(e) {
         }));
         break;
       case "GUILD_CREATE":
-        let l = e => (0, f.kt)(e),
-          c = e.guild;
-        c.channels = null != (i = null == (n = c.channels) ? void 0 : n.map(l)) ? i : null, c.threads = null == (r = c.threads) ? void 0 : r.map(l), null != c.channelUpdates && (c.channelUpdates.writes = null == (a = c.channelUpdates.writes) ? void 0 : a.map(l)), s.Z.dispatch({
+        let i = e => (0, f.kt)(e),
+          a = e.guild;
+        switch (a.threads = null == (n = a.threads) ? void 0 : n.map(i), a.channels.op) {
+          case "full_sync":
+            a.channels.items = a.channels.items.map(i);
+            break;
+          case "update":
+            a.channels.writes = a.channels.writes.map(i);
+            break;
+          default:
+            a.channels
+        }
+        s.Z.dispatch({
           type: "GUILD_CREATE",
-          guild: c
+          guild: a
         });
         break;
       case "USER_SETTINGS_PROTO_UPDATE":

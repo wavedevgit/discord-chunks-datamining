@@ -52,27 +52,32 @@ function N() {
     var n;
     let e = y.default.getCurrentUser(),
       i = null != (n = null == e ? void 0 : e.isStaff()) && n;
-    r.setQuery(v, {
-      friends: !0,
-      staff: i,
-      provisional: !1
-    }, t, function() {
-      let e = b.Z.getFrequentlyWithoutFetchingLatest().filter(e => e instanceof p.mn && e.isDM()),
-        t = Math.max(...e.map(e => {
-          let {
-            id: t
-          } = e;
-          return b.Z.getScoreWithoutFetchingLatest(t)
-        })),
-        n = {};
-      return e.forEach(e => {
-        let r = b.Z.getScoreWithoutFetchingLatest(e.id),
-          i = e.getRecipientId(),
-          l = .2 * !!_.Z.isFriend(i),
-          o = .1 * (null != m.Z.getDMFromUserId(i));
-        n[i] = 1 + r / t + l + o
-      }), n
-    }())
+    r.setQuery({
+      query: v,
+      filters: {
+        friends: !0,
+        staff: i,
+        provisional: !1
+      },
+      blacklist: t,
+      boosters: function() {
+        let e = b.Z.getFrequentlyWithoutFetchingLatest().filter(e => e instanceof p.mn && e.isDM()),
+          t = Math.max(...e.map(e => {
+            let {
+              id: t
+            } = e;
+            return b.Z.getScoreWithoutFetchingLatest(t)
+          })),
+          n = {};
+        return e.forEach(e => {
+          let r = b.Z.getScoreWithoutFetchingLatest(e.id),
+            i = e.getRecipientId(),
+            l = .2 * !!_.Z.isFriend(i),
+            o = .1 * (null != m.Z.getDMFromUserId(i));
+          n[i] = 1 + r / t + l + o
+        }), n
+      }()
+    })
   }
   return !1
 }

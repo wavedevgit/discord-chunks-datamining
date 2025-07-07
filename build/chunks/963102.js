@@ -13,8 +13,8 @@ var r = n(255367),
   u = n(37234),
   d = n(425493),
   p = n(410030),
-  g = n(857595),
-  f = n(607070),
+  f = n(857595),
+  g = n(607070),
   h = n(984370),
   b = n(341907),
   m = n(507808),
@@ -58,7 +58,7 @@ function B(e) {
   } = e, [a, s] = l.useState(!1), u = l.useRef(null), [d, p] = l.useState(0), h = l.useRef(!1), b = e => {
     clearTimeout(d), p(setTimeout(() => {
       s(e)
-    }, 100)), e && (h.current = f.Z.keyboardModeEnabled)
+    }, 100)), e && (h.current = g.Z.keyboardModeEnabled)
   };
   return (0, r.jsx)("div", {
     className: k.tabWithMenuContainer,
@@ -72,7 +72,7 @@ function B(e) {
       onRequestOpen: () => b(!0),
       onRequestClose: () => {
         var e;
-        h.current && !f.Z.keyboardModeEnabled && (0, g.Qj)(), b(!1), null == (e = u.current) || e.focus()
+        h.current && !g.Z.keyboardModeEnabled && (0, f.Qj)(), b(!1), null == (e = u.current) || e.focus()
       },
       renderPopout: e => {
         let {
@@ -111,8 +111,8 @@ function N(e) {
     isFullScreen: t,
     isLayer: n,
     onClose: i,
-    selectedTab: g,
-    handleTransition: f
+    selectedTab: f,
+    handleTransition: g
   } = e, y = (0, p.ZP)(), N = (0, s.e7)([O.default], () => O.default.getCurrentUser()), A = (null == N ? void 0 : N.isStaff()) || (null == N ? void 0 : N.isStaffPersonal()) || !1, {
     enabled: R
   } = (0, _.WX)({
@@ -128,17 +128,17 @@ function N(e) {
     tab: T.AW.ORBS,
     displayText: L.intl.string(L.t.EBYkzs)
   });
-  let D = n ? v.DR : i,
-    F = g === T.AW.ORBS ? P.ZY5.SHOP_ORBS_TAB : P.ZY5.COLLECTIBLES_SHOP,
-    M = l.useCallback(() => {
-      t && (D(), (0, u.Ou)()), (0, m.Y)({
-        pageType: F,
+  let M = n ? v.DR : i,
+    D = f === T.AW.ORBS ? P.ZY5.SHOP_ORBS_TAB : P.ZY5.COLLECTIBLES_SHOP,
+    F = l.useCallback(() => {
+      t && (M(), (0, u.Ou)()), (0, m.Y)({
+        pageType: D,
         sectionType: P.jXE.ORBS_BALANCE_MENU,
         ctaObject: P.qAy.CTA_TO_QUEST_HOME
       }), (0, b.navigateToQuestHome)({
         fromContent: a.j.ORBS_BALANCE_MENU
       })
-    }, [D, t, F]),
+    }, [M, t, D]),
     H = (0, S.F)("collectibles_shop_header_bar");
   return (0, r.jsx)(c.f6W, {
     theme: y,
@@ -150,7 +150,7 @@ function N(e) {
       toolbar: t || !A ? null : (0, r.jsx)(l.Fragment, {}),
       children: [(0, r.jsxs)(c.P3F, {
         className: k.shopHomeLink,
-        onClick: () => f(T.AW.HOME),
+        onClick: () => g(T.AW.HOME),
         "aria-label": L.intl.string(L.t.pWG4zc) + " home",
         children: [(0, r.jsx)(E.Z, {
           className: k.discordLogo
@@ -166,27 +166,27 @@ function N(e) {
           } = e;
           return t === T.AW.CATALOG && w ? (0, r.jsx)(B, {
             tab: t,
-            selected: (0, T.RE)(g) || g === t,
+            selected: (0, T.RE)(f) || f === t,
             displayText: n,
-            handleTransition: f
+            handleTransition: g
           }, t) : (0, r.jsx)(I, {
             tab: t,
             displayText: n,
-            selected: g === t,
-            handleTransition: f
+            selected: f === t,
+            handleTransition: g
           }, t)
         })
       }), (R || t || H) && (0, r.jsxs)("div", {
         className: k.alignedRightContent,
         children: [H && (0, r.jsx)(j.Z, {}), R && (0, r.jsx)(C.V9, {
           anchorPillType: t ? "SHOP_FULLSCREEN" : "SHOP",
-          analyticsPage: F,
+          analyticsPage: D,
           cardAlignment: C.V9.CardAlignment.END,
           ctaText: L.intl.string(L.t.VC4Mq6),
-          ctaOnClick: M,
+          ctaOnClick: F,
           className: k.balanceWidgetMenu
         }), t && (0, r.jsx)(d.Z, {
-          closeAction: D,
+          closeAction: M,
           keybind: "ESC"
         })]
       })]

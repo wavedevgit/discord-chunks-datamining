@@ -1,9 +1,8 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  Ab: () => h,
-  Iy: () => b,
-  S0: () => p
+  A: () => h,
+  S: () => p
 }), n(388685), n(642613);
 var r = n(73800),
   l = n(97519),
@@ -44,7 +43,9 @@ let d = {
       sortType: o.E.RECENCY,
       sortDirection: i.F.DESC
     },
-    searchQuery: ""
+    searchQuery: "",
+    queryPageSize: 20,
+    queryPageOffset: 0
   },
   p = (0, l.U)((e, t) => {
     var n, r;
@@ -93,6 +94,16 @@ let d = {
           searchQuery: t
         })
       },
+      setQueryPageSize: t => {
+        e({
+          queryPageSize: t
+        })
+      },
+      setQueryPageOffset: t => {
+        e({
+          queryPageOffset: t
+        })
+      },
       setItemTypeFilter: t => {
         e({
           itemTypeFilters: new Set([t])
@@ -124,28 +135,30 @@ let d = {
       Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
     }), n
   }),
-  g = (e, t, n) => {
+  f = e => {
     let {
-      itemTypeFilters: r,
-      colorFilters: l,
-      themeFilters: i,
-      orbEligible: o,
-      sort: a,
-      searchQuery: s
+      itemTypeFilters: t,
+      colorFilters: n,
+      themeFilters: r,
+      orbEligible: l,
+      sort: i,
+      searchQuery: o,
+      queryPageSize: a,
+      queryPageOffset: s
     } = e;
     return {
-      item_types: Array.from(r),
-      colors: Array.from(l),
-      themes: Array.from(i),
-      orbs_eligible: !!o || void 0,
-      offset: null != t ? t : 0,
-      limit: null != n ? n : 20,
-      sort_type: a.sortType,
-      sort_direction: a.sortDirection,
-      search: s
+      item_types: Array.from(t),
+      colors: Array.from(n),
+      themes: Array.from(r),
+      orbs_eligible: !!l || void 0,
+      offset: s,
+      limit: a,
+      sort_type: i.sortType,
+      sort_direction: i.sortDirection,
+      search: o
     }
   },
-  f = e => {
+  g = e => {
     let t = e.skus,
       n = e.pagination.total,
       r = e.pagination.has_more;
@@ -165,10 +178,10 @@ let d = {
     r.useEffect(() => {
       let n = p.subscribe(n => {
         (async () => {
-          let r = g(n);
+          let r = f(n);
           try {
             let t = await (0, a.y)(r),
-              n = f(t);
+              n = g(t);
             e(n)
           } catch (e) {
             var l;
@@ -180,23 +193,4 @@ let d = {
         n()
       }
     }, [e, t])
-  },
-  b = () => {
-    let {
-      onSetResponse: e,
-      pageLimit: t,
-      setSearchError: n
-    } = (0, s.a)();
-    return r.useCallback(async r => {
-      let l = r * t,
-        i = g(p.getState(), l, t);
-      try {
-        let t = await (0, a.y)(i),
-          n = f(t);
-        e(n)
-      } catch (e) {
-        var o;
-        n(null != (o = null == e ? void 0 : e.message) ? o : "Unknown error")
-      }
-    }, [e, t, n])
   }

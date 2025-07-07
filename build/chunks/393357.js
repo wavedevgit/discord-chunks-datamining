@@ -1,6 +1,6 @@
 /** Chunk was on 44799 **/
 t.r(n), t.d(n, {
-  default: () => v
+  default: () => g
 });
 var r = t(255367);
 t(73800);
@@ -19,11 +19,11 @@ var i = t(114858),
   x = t(504392),
   b = t(981631);
 
-function v(e) {
+function g(e) {
   let {
     guildId: n,
     powerupSkuId: t
-  } = e, v = (0, a.e7)([m.Z], () => m.Z.getGuild(n)), g = (0, a.e7)([c.Z], () => c.Z.hasLoadedExperiments), h = (0, f.Z)(n), j = (0, u.At)(), C = (0, _.Ek)(n, "GuildPowerupsPage"), E = (0, p.V)("GuildPowerupsPage"), N = !g || null == h || null == v, Z = (0, s.ZP)(null != j ? j : []);
+  } = e, g = (0, a.e7)([m.Z], () => m.Z.getGuild(n)), v = (0, a.e7)([c.Z], () => c.Z.hasLoadedExperiments), h = (0, f.Z)(n), j = (0, u.At)(), C = (0, _.Ek)(n, "GuildPowerupsPage"), E = (0, p.V)("GuildPowerupsPage"), N = !v || null == h || null == g, Z = (0, s.ZP)(null != j ? j : []);
   return ((0, l.Z)({
     type: o.ImpressionTypes.VIEW,
     name: o.ImpressionNames.BOOST_SHOP_OPENED,
@@ -40,7 +40,7 @@ function v(e) {
       section: b.jXE.CHANNEL_LIST,
       object: b.qAy.GUILD_POWERUPS_CHANNEL_LIST_ITEM
     },
-    guild: v
+    guild: g
   }) : (0, r.jsx)(i.l_, {
     to: b.Z5c.CHANNEL(n)
   })

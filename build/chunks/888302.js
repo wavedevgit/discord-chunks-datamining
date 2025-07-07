@@ -17,9 +17,9 @@ function u(e) {
   } = e, {
     itemTypeFilters: n,
     searchQuery: u
-  } = (0, a.S0)(e => e), {
+  } = (0, a.S)(e => e), {
     totalCount: d
-  } = (0, s.a)(), p = t.length, g = (0, a.S0)(e => e.hasFilters()), f = l.useCallback(() => g ? "" !== u ? c.intl.format(c.t.KJMJOz, {
+  } = (0, s.a)(), p = t.length, f = (0, a.S)(e => e.hasFilters()), g = l.useCallback(() => f ? "" !== u ? c.intl.format(c.t.KJMJOz, {
     count: d,
     search: u
   }) : 1 === n.size && n.has(i.G.AVATAR_DECORATION) ? c.intl.format(c.t.s1UzGR, {
@@ -34,9 +34,9 @@ function u(e) {
     count: d
   }) : c.intl.format(c.t["+687XV"], {
     count: p
-  }), [n, d, p, g, u]);
+  }), [n, d, p, f, u]);
   return (0, r.jsx)(o.X6q, {
     variant: "heading-lg/semibold",
-    children: f()
+    children: g()
   })
 }

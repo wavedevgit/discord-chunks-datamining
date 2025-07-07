@@ -13,8 +13,8 @@ var r = n(255367),
   u = n(607070),
   d = n(594174),
   p = n(451478),
-  g = n(626135),
-  f = n(63063),
+  f = n(626135),
+  g = n(63063),
   h = n(74538),
   b = n(381585),
   m = n(597688),
@@ -41,16 +41,16 @@ let P = e => {
     setSortType: R,
     sortedItems: w,
     sortOptions: Z,
-    shuffleProducts: D,
-    showRecommendationOption: F
-  } = (0, C.N)(i, B), M = (0, S.St)(w), H = (0, a.e7)([u.Z], () => u.Z.useReducedMotion), W = (0, a.e7)([p.Z], () => p.Z.isFocused()), V = !H && W, {
+    shuffleProducts: M,
+    showRecommendationOption: D
+  } = (0, C.N)(i, B), F = (0, S.St)(w), H = (0, a.e7)([u.Z], () => u.Z.useReducedMotion), W = (0, a.e7)([p.Z], () => p.Z.isFocused()), V = !H && W, {
     animationPhase: U,
     startAnimation: G
   } = (0, v.y)(), z = (0, b.sp)(), Y = null != (t = null == z ? void 0 : z.sessionId) ? t : "", q = l.useRef(null), K = l.useCallback(e => {
     G({
       isShuffling: !1,
       onOutroComplete: () => R(e)
-    }), g.default.track(y.rMx.COLLECTIBLES_SHOP_FEED_SORT_CHANGED, {
+    }), f.default.track(y.rMx.COLLECTIBLES_SHOP_FEED_SORT_CHANGED, {
       page_session_id: Y,
       sort_type: e
     })
@@ -64,7 +64,7 @@ let P = e => {
         children: [(0, r.jsx)(s.X6q, {
           variant: "heading-lg/semibold",
           children: k === x.AW.ORBS ? j.intl.string(j.t.dFgeub) : j.intl.string(j.t.NSv5KS)
-        }), F && (0, r.jsx)(s.ua7, {
+        }), D && (0, r.jsx)(s.ua7, {
           text: j.intl.string(j.t["3taPdn"]),
           position: "top",
           "aria-label": j.intl.string(j.t["3taPdn"]),
@@ -88,7 +88,7 @@ let P = e => {
               }
               return e
             }({}, e), n = n = {
-              onClick: () => (0, c.Z)(f.Z.getArticleURL(y.BhN.DATA_USED_FOR_RECOMMENDED)),
+              onClick: () => (0, c.Z)(g.Z.getArticleURL(y.BhN.DATA_USED_FOR_RECOMMENDED)),
               className: T.informationIcon,
               children: (0, r.jsx)(s.d3s, {
                 size: "sm"
@@ -124,9 +124,9 @@ let P = e => {
           onClick: () => {
             G({
               isShuffling: !0,
-              onOutroComplete: D,
+              onOutroComplete: M,
               returnRef: q
-            }), g.default.track(y.rMx.COLLECTIBLES_SHOP_FEED_SHUFFLE_CLICKED, {
+            }), f.default.track(y.rMx.COLLECTIBLES_SHOP_FEED_SHUFFLE_CLICKED, {
               page_session_id: Y
             })
           },
@@ -143,7 +143,7 @@ let P = e => {
       className: T.feed,
       children: n ? (0, r.jsx)(r.Fragment, {
         children: [...Array(12)].map((e, t) => (0, r.jsx)(O.K, {}, t + 1))
-      }) : M.slice(0, L).map((e, t) => {
+      }) : F.slice(0, L).map((e, t) => {
         let n, l = m.Z.getCategoryForProduct(e.skuId);
         if (null == e || null == l) return null;
         if (V)
