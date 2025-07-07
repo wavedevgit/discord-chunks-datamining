@@ -1,6 +1,6 @@
 /**
   Module ID: 4811
-  Original File Name: 445c849d2ba99eed
+  Original File Name: 76f3aa16b5df3640
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -2394,30 +2394,19 @@
     gap: 8px
 }
 
-.loadingMore__0aee3,.titleContainer__0aee3 {
+.loadMore__0aee3,.titleContainer__0aee3 {
     align-items: center;
     display: flex
 }
 
-.loadingMore__0aee3 {
+.loadMore__0aee3 {
+    height: 16px;
     justify-content: center;
-    margin-bottom: 8px
+    opacity: 0
 }
 
-.loadingMore__0aee3 .spinner__0aee3 {
-    display: inline-block;
-    margin: 0
-}
-
-.hasMore__0aee3,.loadingMore__0aee3 {
-    height: 32px;
-    margin-top: 8px
-}
-
-.hasMore__0aee3 {
-    align-items: center;
-    display: flex;
-    padding: 0 9px 16px 16px
+.loadMore__0aee3.showLoadMore__0aee3 {
+    opacity: 1
 }
 
 .messagesPopout__0aee3 {
@@ -8719,4 +8708,4 @@ div:has(>.positionLayer__4f4b6) {
     width: 96px
 }
 
-/*# sourceMappingURL=445c849d2ba99eed.css.map*/
+/*# sourceMappingURL=76f3aa16b5df3640.css.map*/
