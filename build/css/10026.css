@@ -1,6 +1,6 @@
 /**
   Module ID: 10026
-  Original File Name: fd0ddcd0de843b25
+  Original File Name: 2f9586ea716b526e
 **/
 @value minColumnWidth: 460px;
 
@@ -480,9 +480,9 @@
 
 .message_fcf29c {
     color: var(--text-default);
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: var(--font-weight-medium);
-    line-height: 1.25rem;
+    line-height: 20px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap
@@ -1495,4 +1495,4 @@
     margin-left: var(--space-12)
 }
 
-/*# sourceMappingURL=fd0ddcd0de843b25.css.map*/
+/*# sourceMappingURL=2f9586ea716b526e.css.map*/

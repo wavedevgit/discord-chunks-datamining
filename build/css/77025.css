@@ -1,6 +1,6 @@
 /**
   Module ID: 77025
-  Original File Name: 0e165da71fe6eb59
+  Original File Name: 9551555ddfc5d033
 **/
 :root {
     --legacy-elevation-low: 0 1px 5px var(--opacity-black-20);
@@ -89,9 +89,9 @@
 
 .message_fcf29c {
     color: var(--text-default);
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: var(--font-weight-medium);
-    line-height: 1.25rem;
+    line-height: 20px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap
@@ -742,4 +742,4 @@ div:has(>div>.container_b962dc) {
     z-index: 0
 }
 
-/*# sourceMappingURL=0e165da71fe6eb59.css.map*/
+/*# sourceMappingURL=9551555ddfc5d033.css.map*/
