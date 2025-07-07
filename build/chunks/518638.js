@@ -62,7 +62,7 @@ async function I(e) {
 
 function T(e, t) {
   var n;
-  return null != t.outboundRedemptionUrlFormat ? t.outboundRedemptionUrlFormat.replace(E, encodeURIComponent(e)) : null != (n = t.outboundRedemptionPageLink) ? n : ""
+  return null != t.outboundRedemptionUrlFormat && "" !== t.outboundRedemptionUrlFormat ? t.outboundRedemptionUrlFormat.replace(E, encodeURIComponent(e)) : null != (n = t.outboundRedemptionPageLink) ? n : ""
 }
 
 function S() {

@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  Z: () => C
+  Z: () => _
 });
 var r = n(255367),
   l = n(73800),
@@ -11,89 +11,88 @@ var r = n(255367),
   s = n(381585),
   c = n(597688),
   u = n(370039),
-  d = n(937510),
-  p = n(501431),
-  f = n(149705),
-  g = n(303952),
-  h = n(38900),
-  b = n(709999),
-  m = n(81136),
-  _ = n(484920);
+  d = n(501431),
+  p = n(149705),
+  f = n(303952),
+  g = n(38900),
+  h = n(709999),
+  b = n(81136),
+  m = n(484920);
 
-function C(e) {
+function _(e) {
   var t;
   let {
     isFetchingCategories: n,
-    isFullScreen: C,
-    scrollerRef: O,
-    tab: E
-  } = e, v = (0, s.sp)(), S = null != (t = null == v ? void 0 : v.sessionId) ? t : "", {
-    noCache: x,
-    includeUnpublished: y
-  } = (0, m.Z)(), j = (0, i.e7)([a.default], () => a.default.getCurrentUser()), {
-    skus: T,
-    currentPage: P,
-    totalCount: L
-  } = (0, f.a)(), k = (0, i.Wu)([c.Z], () => c.Z.getProductsBySkus(T)), I = l.useCallback(() => {
+    isFullScreen: _,
+    scrollerRef: C,
+    tab: O
+  } = e, E = (0, s.sp)(), v = null != (t = null == E ? void 0 : E.sessionId) ? t : "", {
+    noCache: S,
+    includeUnpublished: x
+  } = (0, b.Z)(), y = (0, i.e7)([a.default], () => a.default.getCurrentUser()), {
+    skus: j,
+    currentPage: T,
+    totalCount: P
+  } = (0, p.a)(), L = (0, i.Wu)([c.Z], () => c.Z.getProductsBySkus(j)), k = l.useCallback(() => {
     var e;
-    null == O || null == (e = O.current) || e.scrollToTop({
+    null == C || null == (e = C.current) || e.scrollToTop({
       animate: !0
     })
-  }, [O]), B = (0, u.a)(), N = (0, d.l)(B(k));
+  }, [C]), I = (0, u.a)(), B = l.useMemo(() => I(L), [I, L]);
   l.useEffect(() => {
-    n || (0, g.n)({
-      sessionId: S,
-      checkpoint: g.a.SHOP_RENDERED,
-      tab: E,
-      isFullScreen: C,
-      unpublishedCategoriesShown: y,
-      cacheDisabled: x
+    n || (0, f.n)({
+      sessionId: v,
+      checkpoint: f.a.SHOP_RENDERED,
+      tab: O,
+      isFullScreen: _,
+      unpublishedCategoriesShown: x,
+      cacheDisabled: S
     })
-  }, [S, C, y, x, n, E]);
-  let A = l.useRef(null),
+  }, [v, _, x, S, n, O]);
+  let N = l.useRef(null),
     {
-      setQueryPageSize: R,
-      setQueryPageOffset: w,
-      queryPageSize: Z
-    } = (0, p.S)();
+      setQueryPageSize: A,
+      setQueryPageOffset: R,
+      queryPageSize: w
+    } = (0, d.S)();
   return (l.useEffect(() => {
-    if (null != A.current) {
+    if (null != N.current) {
       let e = new ResizeObserver(() => {
-        if (null == A.current) return;
+        if (null == N.current) return;
         let {
           clientWidth: e
-        } = A.current;
-        R(Math.floor(5 * Math.max(1, Math.floor(e / 246))))
+        } = N.current;
+        A(Math.floor(5 * Math.max(1, Math.floor(e / 246))))
       });
-      return e.observe(A.current), () => e.disconnect()
+      return e.observe(N.current), () => e.disconnect()
     }
-  }, [R]), n || null == j) ? (0, r.jsx)(h.Z, {}) : (0, r.jsxs)(r.Fragment, {
+  }, [A]), n || null == y) ? (0, r.jsx)(g.Z, {}) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: _.products,
-      ref: A,
-      children: N.map((e, t) => {
+      className: m.products,
+      ref: N,
+      children: B.map((e, t) => {
         let n = c.Z.getCategory(e.categorySkuId);
         return null == n ? null : (0, r.jsx)(s.k0, {
           newValue: {
             tilePosition: t
           },
-          children: (0, r.jsx)(b.Z, {
+          children: (0, r.jsx)(h.Z, {
             product: e,
-            user: j,
+            user: y,
             category: n,
-            tab: E
+            tab: O
           }, e.skuId)
         }, e.skuId)
       })
-    }), L > Z && (0, r.jsx)("div", {
-      className: _.paginationContainer,
+    }), P > w && (0, r.jsx)("div", {
+      className: m.paginationContainer,
       children: (0, r.jsx)("div", {
         children: (0, r.jsx)(o.DsT, {
-          currentPage: P,
-          totalCount: L,
-          pageSize: Z,
+          currentPage: T,
+          totalCount: P,
+          pageSize: w,
           onPageChange: e => {
-            w((e - 1) * Z), I()
+            R((e - 1) * w), k()
           },
           disablePaginationGap: !0
         })

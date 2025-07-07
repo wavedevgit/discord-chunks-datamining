@@ -86,97 +86,113 @@ let y = async () => {
 };
 
 function S(e) {
-  var t, n, l, o;
+  var t, n, l, o, u;
   let {
-    offer: u,
-    offerOptions: m,
-    forceRefetch: p
-  } = e, [b, f] = r.useState(!1), [g, y] = r.useState(!1), [C, N] = r.useState(!1), [T, E] = r.useState(!1);
+    offer: m,
+    offerOptions: p,
+    forceRefetch: b
+  } = e, [f, g] = r.useState(!1), [y, C] = r.useState(!1), [N, T] = r.useState(!1), [E, S] = r.useState(!1);
   r.useEffect(() => {
-    C && E(!0);
+    N && S(!0);
     let e = setTimeout(() => {
-      E(!1)
+      S(!1)
     }, 500);
     return () => {
       clearTimeout(e)
     }
-  }, [C]);
+  }, [N]);
   let {
-    id: S,
-    expires_at: P,
-    redeemed_at: w,
-    trial_id: I,
-    subscription_trial: k,
-    referrer: R
-  } = u, A = null != (n = null == (t = m.find(e => {
+    id: P,
+    expires_at: w,
+    redeemed_at: I,
+    trial_id: k,
+    subscription_trial: R,
+    referrer: A
+  } = m, Z = null != (n = null == (t = p.find(e => {
     let {
       value: t
     } = e;
-    return t === I
+    return t === k
   })) ? void 0 : t.label) ? n : "Unknown";
-  null != R && (A = "".concat(A, " from @").concat(R.username));
-  let Z = null != P,
-    L = null != P && new Date(P).getTime() < Date.now(),
-    D = (null == k ? void 0 : k.sku_id) === j.Si.TIER_0,
-    M = async () => {
-      N(!0), Z ? await z({
+  null != A && (Z = "".concat(Z, " from @").concat(A.username));
+  let L = null != w,
+    D = null != w && new Date(w).getTime() < Date.now(),
+    M = (null == R ? void 0 : R.sku_id) === j.Si.TIER_0,
+    z = async () => {
+      T(!0), L ? await B({
         expiresAt: null
-      }) : await (0, d.a)(u), p(), N(!1)
-    }, z = async e => {
-      let {
-        expiresAt: t
-      } = e;
-      N(!0);
+      }) : await (0, d.a)(m), b(), T(!1)
+    }, B = async e => {
+      T(!0);
       try {
         await s.tn.patch({
-          url: v.ANM.UPDATE_USER_OFFER(S, "trial"),
-          body: {
-            expires_at: t
-          },
+          url: v.ANM.UPDATE_USER_OFFER(P, "trial"),
+          body: function(e) {
+            for (var t = 1; t < arguments.length; t++) {
+              var n = null != arguments[t] ? arguments[t] : {},
+                a = Object.keys(n);
+              "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                return Object.getOwnPropertyDescriptor(n, e).enumerable
+              }))), a.forEach(function(t) {
+                var a;
+                a = n[t], t in e ? Object.defineProperty(e, t, {
+                  value: a,
+                  enumerable: !0,
+                  configurable: !0,
+                  writable: !0
+                }) : e[t] = a
+              })
+            }
+            return e
+          }({}, "expiresAt" in e && {
+            expires_at: e.expiresAt
+          }, "referrerId" in e && {
+            referrer_id: e.referrerId
+          }),
           rejectWithError: !0
         })
       } finally {
-        p(), N(!1)
+        b(), T(!1)
       }
     };
   r.useEffect(() => {
-    if (b) {
+    if (f) {
       let e = setTimeout(() => {
-        f(!1)
+        g(!1)
       }, 3e3);
       return () => {
         clearTimeout(e)
       }
     }
-    if (g) {
+    if (y) {
       let e = setTimeout(() => {
-        y(!1)
+        C(!1)
       }, 3e3);
       return () => {
         clearTimeout(e)
       }
     }
-  }, [b, g]);
-  let B = "Active";
-  return Z && (B = "Acked"), L && (B = "Expired"), (0, a.jsxs)("div", {
-    className: i()(_.card, D ? _.gradientWrapperTier0 : _.gradientWrapperTier2),
+  }, [f, y]);
+  let F = "Active";
+  return L && (F = "Acked"), D && (F = "Expired"), (0, a.jsxs)("div", {
+    className: i()(_.card, M ? _.gradientWrapperTier0 : _.gradientWrapperTier2),
     children: [(0, a.jsx)("div", {
       className: i()(_.row, _.nameRow),
       children: (0, a.jsx)(c.X6q, {
         variant: "heading-lg/semibold",
         color: "always-white",
-        children: A
+        children: Z
       })
     }), (0, a.jsxs)(c.P3F, {
       className: i()(_.row, _.idRow),
       onClick: () => {
-        (0, x.JG)(S, () => f(!0))
+        (0, x.JG)(P, () => g(!0))
       },
       children: [(0, a.jsxs)(c.Text, {
         variant: "eyebrow",
         color: "always-white",
-        children: ["Offer: ", S]
-      }), b ? (0, a.jsx)(c.dz2, {
+        children: ["Offer: ", P]
+      }), f ? (0, a.jsx)(c.dz2, {
         size: "md",
         color: "currentColor",
         className: _.icon
@@ -188,13 +204,13 @@ function S(e) {
     }), (0, a.jsxs)(c.P3F, {
       className: i()(_.row, _.idRow),
       onClick: () => {
-        (0, x.JG)(I, () => y(!0))
+        (0, x.JG)(k, () => C(!0))
       },
       children: [(0, a.jsxs)(c.Text, {
         variant: "eyebrow",
         color: "always-white",
-        children: ["Trial: ", I]
-      }), g ? (0, a.jsx)(c.dz2, {
+        children: ["Trial: ", k]
+      }), y ? (0, a.jsx)(c.dz2, {
         size: "md",
         color: "currentColor",
         className: _.icon
@@ -209,8 +225,8 @@ function S(e) {
         variant: "eyebrow",
         color: "always-white",
         children: ["Trial Length:", " ", (0, h.if)({
-          intervalType: null != (l = null == k ? void 0 : k.interval) ? l : j.rV.MONTH,
-          intervalCount: null != (o = null == k ? void 0 : k.interval_count) ? o : 1,
+          intervalType: null != (l = null == R ? void 0 : R.interval) ? l : j.rV.MONTH,
+          intervalCount: null != (o = null == R ? void 0 : R.interval_count) ? o : 1,
           capitalize: !1
         })]
       })
@@ -222,25 +238,38 @@ function S(e) {
         children: "Expires:"
       }), (0, a.jsx)("input", {
         type: "date",
-        value: null != P ? P.substring(0, 10) : "",
-        onChange: e => z({
+        value: null != w ? w.substring(0, 10) : "",
+        onChange: e => B({
           expiresAt: e.target.value
+        })
+      })]
+    }), (0, a.jsxs)("div", {
+      className: _.row,
+      children: [(0, a.jsx)(c.Text, {
+        variant: "eyebrow",
+        color: "always-white",
+        children: "Referrer ID:"
+      }), (0, a.jsx)("input", {
+        type: "text",
+        value: null != (u = null == A ? void 0 : A.id) ? u : "",
+        onChange: e => B({
+          referrerId: e.target.value
         })
       })]
     }), (0, a.jsxs)("div", {
       className: _.badgeContainer,
       children: [(0, a.jsx)(c.P3F, {
-        onClick: M,
+        onClick: z,
         className: i()(_.badge, _.clickable, {
-          [_.acked]: Z,
-          [_.expired]: L
+          [_.acked]: L,
+          [_.expired]: D
         }),
         children: (0, a.jsx)(c.Text, {
           variant: "eyebrow",
-          color: "Acked" === B ? void 0 : "always-white",
-          children: B
+          color: "Acked" === F ? void 0 : "always-white",
+          children: F
         })
-      }), null != w && (0, a.jsx)("div", {
+      }), null != I && (0, a.jsx)("div", {
         className: i()(_.badge, _.redeemed),
         children: (0, a.jsx)(c.Text, {
           variant: "eyebrow",
@@ -250,7 +279,7 @@ function S(e) {
       })]
     }), (0, a.jsx)(c.P3F, {
       onClick: async () => {
-        N(!0), await O(S, "trial"), p(), N(!1)
+        T(!0), await O(P, "trial"), b(), T(!1)
       },
       children: (0, a.jsx)(c.XHJ, {
         size: "md",
@@ -259,7 +288,7 @@ function S(e) {
       })
     }), (0, a.jsx)("div", {
       className: i()(_.loadingContainer, {
-        [_.isLoading]: C || T
+        [_.isLoading]: N || E
       }),
       children: (0, a.jsx)(c.$jN, {})
     })]

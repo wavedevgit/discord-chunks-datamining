@@ -1,6 +1,6 @@
 /**
   Module ID: 4811
-  Original File Name: a95d9993962d43c6
+  Original File Name: 445c849d2ba99eed
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -2367,6 +2367,10 @@
     width: 100%
 }
 
+.filterMenuItem_c485a2 {
+    min-height: 36px
+}
+
 .messagesPopoutWrap__0aee3 {
     box-sizing: border-box;
     display: flex;
@@ -2557,26 +2561,21 @@
 }
 
 .full-motion .caughtUpContainer_ea5470 {
-    transition: padding .3s ease;
-    transition-delay: .5s
+    transition: opacity .3s ease
 }
 
 .full-motion .caughtUpContainer_ea5470.hide_ea5470 {
     display: flex;
+    opacity: 0;
     padding-bottom: 0;
     padding-top: 0;
-    transition-delay: 0s
-}
-
-.full-motion .caughtUpContent_ea5470 {
-    transition: padding .3s ease,max-height .3s ease;
-    transition-delay: .5s
+    transition: padding .3s ease,opacity 2s ease-in
 }
 
 .full-motion .hide_ea5470 .caughtUpContent_ea5470 {
     max-height: 0;
     padding: 0;
-    transition-delay: 0s
+    transition: padding .3s ease,max-height .3s ease
 }
 
 .caughtUpText_ea5470 {
@@ -2591,7 +2590,7 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    right: 12px;
+    right: 16px;
     top: auto
 }
 
@@ -8720,4 +8719,4 @@ div:has(>.positionLayer__4f4b6) {
     width: 96px
 }
 
-/*# sourceMappingURL=a95d9993962d43c6.css.map*/
+/*# sourceMappingURL=445c849d2ba99eed.css.map*/
