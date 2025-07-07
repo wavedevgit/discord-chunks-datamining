@@ -1,17 +1,18 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  A: () => h,
-  S: () => p
-}), n(388685), n(642613);
+  A: () => b,
+  S: () => f
+}), n(388685), n(642613), n(49124);
 var r = n(73800),
   l = n(97519),
+  i = n(296574),
   o = n(497598),
-  i = n(792091),
-  a = n(653654),
-  s = n(149705);
+  a = n(792091),
+  s = n(653654),
+  c = n(149705);
 
-function c(e) {
+function u(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -30,50 +31,51 @@ function c(e) {
   return e
 }
 
-function u(e, t) {
+function d(e, t) {
   let n = new Set(e);
   return n.has(t) ? n.delete(t) : n.add(t), n
 }
-let d = {
+let p = {
     itemTypeFilters: new Set,
     colorFilters: new Set,
     themeFilters: new Set,
     orbEligible: !1,
     sort: {
-      sortType: i.E.RECENCY,
+      sortType: a.E.RECENCY,
       sortDirection: o.F.DESC
     },
     searchQuery: "",
     queryPageSize: 20,
-    queryPageOffset: 0
+    queryPageOffset: 0,
+    isFetchingResults: !1
   },
-  p = (0, l.U)((e, t) => {
+  f = (0, l.U)((0, i.XR)((e, t) => {
     var n, r;
-    return n = c({}, d), r = r = {
+    return n = u({}, p), r = r = {
       hasFilters: () => {
         let {
           itemTypeFilters: e,
           colorFilters: n,
           themeFilters: r,
           orbEligible: l,
-          sort: a,
+          sort: i,
           searchQuery: s
         } = t();
-        return [e, n, r].some(e => e.size > 0) || l || a.sortType !== i.E.RECENCY || a.sortDirection !== o.F.DESC || "" !== s
+        return [e, n, r].some(e => e.size > 0) || l || i.sortType !== a.E.RECENCY || i.sortDirection !== o.F.DESC || "" !== s
       },
       onToggleItemType: t => {
         e(e => ({
-          itemTypeFilters: u(e.itemTypeFilters, t)
+          itemTypeFilters: d(e.itemTypeFilters, t)
         }))
       },
       onToggleColor: t => {
         e(e => ({
-          colorFilters: u(e.colorFilters, t)
+          colorFilters: d(e.colorFilters, t)
         }))
       },
       onToggleTheme: t => {
         e(e => ({
-          themeFilters: u(e.themeFilters, t)
+          themeFilters: d(e.themeFilters, t)
         }))
       },
       onToggleOrbEligible: () => {
@@ -87,7 +89,7 @@ let d = {
         })
       },
       onSetResponse: t => {
-        e(e => c({}, e, t))
+        e(e => u({}, e, t))
       },
       onSetSearchQuery: t => {
         e({
@@ -122,7 +124,7 @@ let d = {
         })
       },
       reset: () => {
-        e(c({}, d))
+        e(u({}, p))
       }
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var n = Object.keys(e);
@@ -134,15 +136,15 @@ let d = {
     })(Object(r)).forEach(function(e) {
       Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
     }), n
-  }),
-  f = e => {
+  })),
+  g = e => {
     let {
       itemTypeFilters: t,
       colorFilters: n,
       themeFilters: r,
       orbEligible: l,
-      sort: o,
-      searchQuery: i,
+      sort: i,
+      searchQuery: o,
       queryPageSize: a,
       queryPageOffset: s
     } = e;
@@ -153,12 +155,12 @@ let d = {
       orbs_eligible: !!l || void 0,
       offset: s,
       limit: a,
-      sort_type: o.sortType,
-      sort_direction: o.sortDirection,
-      search: i
+      sort_type: i.sortType,
+      sort_direction: i.sortDirection,
+      search: "" !== o ? o : void 0
     }
   },
-  g = e => {
+  h = e => {
     let t = e.skus,
       n = e.pagination.total,
       r = e.pagination.has_more;
@@ -170,27 +172,32 @@ let d = {
       pageLimit: e.pagination.limit
     }
   },
-  h = () => {
+  b = () => {
     let {
       onSetResponse: e,
-      setSearchError: t
-    } = (0, s.a)();
+      setSearchError: t,
+      clear: n,
+      setIsFetchingResults: l
+    } = (0, c.a)();
     r.useEffect(() => {
-      let n = p.subscribe(n => {
+      let r = f.subscribe(g, r => {
         (async () => {
-          let r = f(n);
+          n(), l(!0);
           try {
-            let t = await (0, a.y)(r),
-              n = g(t);
-            e(n)
+            let t = await (0, s.y)(r);
+            e(h(t))
           } catch (e) {
-            var l;
-            t(null != (l = null == e ? void 0 : e.message) ? l : "Unknown error")
+            var i;
+            t(null != (i = null == e ? void 0 : e.message) ? i : "Unknown error")
+          } finally {
+            l(!1)
           }
         })()
+      }, {
+        equalityFn: (e, t) => JSON.stringify(e) === JSON.stringify(t)
       });
       return () => {
-        n()
+        r()
       }
-    }, [e, t])
+    }, [e, t, n, l])
   }

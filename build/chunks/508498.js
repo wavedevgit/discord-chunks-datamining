@@ -5,8 +5,8 @@ n.d(t, {
 }), n(35282), n(65234), n(111804), n(490233), n(97749), n(388685);
 var r = n(73800),
   l = n(114858),
-  o = n(37234),
-  i = n(703656),
+  i = n(37234),
+  o = n(703656),
   a = n(981631);
 
 function s() {
@@ -33,11 +33,11 @@ function s() {
   }({
     onClose: r.useCallback(() => {
       if (0 === s) {
-        (0, i.op)(), (0, o.jN)(a.S9g.USER_SETTINGS);
+        (0, o.op)(), (0, i.jN)(a.S9g.USER_SETTINGS);
         return
       }
-      if ((0, i.uv)()) return void(0, i.op)();
-      (0, i.uL)(a.Z5c.APP)
+      if ((0, o.uv)()) return void(0, o.op)();
+      (0, o.uL)(a.Z5c.APP)
     }, [s]),
     source: s
   }, t)

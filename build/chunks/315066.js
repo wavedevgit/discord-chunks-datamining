@@ -1,12 +1,12 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  A: () => o,
-  s: () => i
+  A: () => i,
+  s: () => o
 });
 var r = n(818083),
   l = n(987338);
-let o = (0, r.B)({
+let i = (0, r.B)({
     kind: "user",
     id: "2025-04_shop_home_sorting",
     label: "Shop Home Sorting",
@@ -22,6 +22,6 @@ let o = (0, r.B)({
       }
     }]
   }),
-  i = e => o.useExperiment({
+  o = e => i.useExperiment({
     location: e
   }).showShopHomeSorting

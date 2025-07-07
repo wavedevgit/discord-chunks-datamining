@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   l = n(73800),
-  o = n(120356),
-  i = n.n(o),
+  i = n(120356),
+  o = n.n(i),
   a = n(622535),
   s = n(481060),
   c = n(63063),
@@ -17,7 +17,7 @@ var r = n(255367),
   g = n(388032),
   h = n(806734);
 let b = e => {
-  var t, n, o;
+  var t, n, i;
   let {
     wideBannerBlock: b,
     handleTransition: m,
@@ -46,18 +46,18 @@ let b = e => {
     threshold: 0,
     children: (0, r.jsxs)("div", {
       ref: O,
-      className: i()(h.row, h.between, h.bannerBlockContainer, h.centeredSection, {
+      className: o()(h.row, h.between, h.bannerBlockContainer, h.centeredSection, {
         [h.extraRounded]: T
       }),
       children: [(0, r.jsx)("div", {
-        className: i()(h.wideBannerBackgroundImg, {
+        className: o()(h.wideBannerBackgroundImg, {
           [h.extraRounded]: T
         }),
         children: (0, r.jsx)("img", {
           ref: v,
           src: j,
           alt: b.title,
-          className: i()(h.wideBannerArt, {
+          className: o()(h.wideBannerArt, {
             [h.wideBannerArtOrbs]: T
           }),
           style: {
@@ -80,7 +80,7 @@ let b = e => {
             children: b.title
           }), (0, r.jsx)(s.Text, {
             style: {
-              color: null != (o = b.bannerTextColor) ? o : "var(--text-muted)"
+              color: null != (i = b.bannerTextColor) ? i : "var(--text-muted)"
             },
             lineClamp: 2,
             variant: T ? "text-md/medium" : "text-sm/medium",

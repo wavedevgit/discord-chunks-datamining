@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   l = n(73800),
-  o = n(180650),
-  i = n(442837),
+  i = n(180650),
+  o = n(442837),
   a = n(607070),
   s = n(594174),
   c = n(960048),
@@ -34,7 +34,7 @@ function v(e) {
     refreshCategories: v
   } = e, x = E();
   S(x);
-  let y = (0, i.e7)([a.Z], () => a.Z.useReducedMotion),
+  let y = (0, o.e7)([a.Z], () => a.Z.useReducedMotion),
     {
       setCategoryRef: j,
       handleScrollToCategory: T
@@ -42,8 +42,8 @@ function v(e) {
     P = l.useCallback(async (e, t, r) => {
       m(e, t);
       let l = r && !n && !y,
-        i = t === o.T.ORB ? C.AW.ORBS : C.AW.CATALOG;
-      await u(i, l), null != t && T(t)
+        o = t === i.T.ORB ? C.AW.ORBS : C.AW.CATALOG;
+      await u(o, l), null != t && T(t)
     }, [n, y, u, T, m]),
     L = (0, p.F)("content"),
     {
@@ -69,18 +69,18 @@ function v(e) {
     setCategoryRef: j
   })
 }
-let E = () => (0, i.e7)([u.Z, d.Z], () => null != u.Z.error ? "shop load fetch categories error: ".concat(u.Z.error.message) : null != d.Z.claimError ? "shop load claim error: ".concat(d.Z.claimError.message) : null != d.Z.fetchError ? "shop load fetch purchase error: ".concat(d.Z.fetchError.message) : void 0),
+let E = () => (0, o.e7)([u.Z, d.Z], () => null != u.Z.error ? "shop load fetch categories error: ".concat(u.Z.error.message) : null != d.Z.claimError ? "shop load claim error: ".concat(d.Z.claimError.message) : null != d.Z.fetchError ? "shop load fetch purchase error: ".concat(d.Z.fetchError.message) : void 0),
   S = e => {
-    let t = (0, i.e7)([s.default], () => s.default.getCurrentUser()),
+    let t = (0, o.e7)([s.default], () => s.default.getCurrentUser()),
       {
         noCache: n,
         includeUnpublished: r
       } = (0, m.Z)();
     l.useEffect(() => {
-      var l, o;
+      var l, i;
       null != e && c.Z.captureMessage(e, {
         tags: {
-          isStaff: null != (o = null == t || null == (l = t.isStaff()) ? void 0 : l.toString()) ? o : "unknown",
+          isStaff: null != (i = null == t || null == (l = t.isStaff()) ? void 0 : l.toString()) ? i : "unknown",
           disableCache: n.toString(),
           includeUnpublished: r.toString()
         }

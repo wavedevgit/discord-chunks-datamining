@@ -5,8 +5,8 @@ n.r(t), n.d(t, {
 }), n(388685);
 var r = n(255367),
   l = n(73800),
-  o = n(120356),
-  i = n.n(o),
+  i = n(120356),
+  o = n.n(i),
   a = n(772848),
   s = n(399606),
   c = n(952265),
@@ -40,14 +40,14 @@ let R = e => {
       children: t,
       shouldAddEventListener: n,
       onClose: r
-    } = e, o = (0, c.f9)();
+    } = e, i = (0, c.f9)();
     return l.useEffect(() => {
-      if (!n || o) return;
+      if (!n || i) return;
       let e = e => {
         e.key === N.mR.Escape && r()
       };
       return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
-    }, [n, o, r]), t
+    }, [n, i, r]), t
   },
   w = function(e) {
     let {
@@ -55,7 +55,7 @@ let R = e => {
       tab: n = k.AW.HOME
     } = e;
     (0, b.z)(h.f);
-    let o = (0, p.Z)((0, a.Z)()),
+    let i = (0, p.Z)((0, a.Z)()),
       c = (0, s.e7)([O.default], () => O.default.getCurrentUser()),
       N = l.useRef(null),
       {
@@ -65,22 +65,22 @@ let R = e => {
       });
     l.useEffect(() => () => {
       w()
-    }, [o, w]);
+    }, [i, w]);
     let {
       onClose: Z
     } = (0, L.Db)(), {
-      categories: D,
-      refreshCategories: F
+      categories: F,
+      refreshCategories: M
     } = (0, x.ZP)({
       location: "CollectiblesShop.web",
       logPerf: !0
     }, {
-      sessionId: o,
+      sessionId: i,
       tab: n,
       isFullScreen: t
     });
     (0, m.P)();
-    let M = (0, y.O)(D),
+    let D = (0, y.O)(F),
       [H, W] = l.useState(),
       V = (0, s.e7)([E.Z], () => {
         var e;
@@ -97,17 +97,17 @@ let R = e => {
       } = (0, j.B)(N, n, t),
       {
         handleScroll: X
-      } = (0, g.z)(N, o, Y);
-    (0, S.q3)(o, Y, V, q, U), (0, S.EB)(Y, c), (0, I.Z)(), l.useEffect(() => {
+      } = (0, g.z)(N, i, Y);
+    (0, S.q3)(i, Y, V, q, U), (0, S.EB)(Y, c), (0, I.Z)(), l.useEffect(() => {
       t || (0, d.Y)(B.Z5c.COLLECTIBLES_SHOP)
     }, [t]);
     let Q = (0, s.e7)([C.Z], () => C.Z.getLayers().includes(B.S9g.COLLECTIBLES_SHOP)),
-      $ = l.useRef(null),
-      J = l.useRef(null);
-    (0, u.Tbt)($), l.useEffect(() => {
+      J = l.useRef(null),
+      $ = l.useRef(null);
+    (0, u.Tbt)(J), l.useEffect(() => {
       if (!t) {
         var e;
-        null == (e = J.current) || e.focus()
+        null == (e = $.current) || e.focus()
       }
     }, [t]);
     let {
@@ -117,7 +117,7 @@ let R = e => {
       value: ee,
       children: (0, r.jsx)(v.k0, {
         newValue: {
-          sessionId: o,
+          sessionId: i,
           pageCategory: V,
           pageSize: k.kN
         },
@@ -126,14 +126,14 @@ let R = e => {
           shouldAddEventListener: t && !Q,
           children: (0, r.jsx)("div", {
             className: A.shop,
-            ref: t ? $ : J,
+            ref: t ? J : $,
             tabIndex: -1,
             children: (0, r.jsx)(u.Den, {
               className: A.shopScroll,
               ref: N,
               onScroll: X,
               children: (0, r.jsxs)("div", {
-                className: i()(A.shopViewWrapper, {
+                className: o()(A.shopViewWrapper, {
                   [A.visible]: q === k.f7.VISIBLE,
                   [A.in]: q === k.f7.IN,
                   [A.out]: q === k.f7.OUT
@@ -148,10 +148,10 @@ let R = e => {
                   tab: Y,
                   isFullScreen: t,
                   scrollerRef: N,
-                  refreshCategories: F,
+                  refreshCategories: M,
                   transitionToTab: K,
                   transitionState: q,
-                  sortedCategories: M,
+                  sortedCategories: D,
                   updateAnalyticsState: z
                 })]
               })

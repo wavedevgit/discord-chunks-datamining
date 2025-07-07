@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   l = n(73800),
-  o = n(120356),
-  i = n.n(o),
+  i = n(120356),
+  o = n.n(i),
   a = n(685816),
   s = n(481060),
   c = n(626135),
@@ -31,7 +31,7 @@ let T = e => {
     var t;
     let {
       handleTransition: n,
-      numVisibleItems: o,
+      numVisibleItems: i,
       isFetchingCategories: s,
       tab: c,
       isFullScreen: d
@@ -93,7 +93,7 @@ let T = e => {
       }), (0, r.jsx)(_.Z, {
         isLoading: y,
         handleTransition: n,
-        numVisibleItems: o,
+        numVisibleItems: i,
         tab: c
       })]
     });
@@ -121,7 +121,7 @@ let T = e => {
           l = (0, r.jsx)(_.Z, {
             isLoading: y || s,
             handleTransition: n,
-            numVisibleItems: o,
+            numVisibleItems: i,
             sortedSkuIds: u,
             tab: c
           }, t);
@@ -144,7 +144,7 @@ let T = e => {
           return null
       }
       return (0, r.jsx)("div", {
-        className: i()(j.blockContainer, {
+        className: o()(j.blockContainer, {
           [j.topBlockContainer]: 0 === t
         }),
         children: l
@@ -158,7 +158,7 @@ let T = e => {
     let {
       isFullScreen: t,
       scrollerRef: n,
-      handleTransition: o,
+      handleTransition: i,
       tab: a,
       transitionState: p
     } = e, f = (0, d.R)("CollectiblesFeedShop"), g = (0, h.R)(), b = (0, u.sp)(), [m, _] = l.useState(S.IV), [C, O] = l.useState(!1);
@@ -177,9 +177,9 @@ let T = e => {
     }, [n, m, f, _, O]), (0, r.jsxs)("div", {
       className: j.shop,
       children: [(0, r.jsxs)("div", {
-        className: i()(j.content, j.mainContent),
+        className: o()(j.content, j.mainContent),
         children: [(0, r.jsx)(T, {
-          handleTransition: o,
+          handleTransition: i,
           numVisibleItems: m,
           isFetchingCategories: g,
           tab: a,
@@ -192,7 +192,7 @@ let T = e => {
           }), (0, r.jsx)(s.zxk, {
             className: j.endOfFeedButton,
             onClick: () => {
-              o("shop all button", void 0, !0), c.default.track(x.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+              i("shop all button", void 0, !0), c.default.track(x.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                 collectibles_shop_session_id: null == b ? void 0 : b.sessionId,
                 page_type: a,
                 page_category: a === S.AW.HOME || null == b ? void 0 : b.pageCategory,

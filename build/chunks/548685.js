@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   l = n(73800),
-  o = n(120356),
-  i = n.n(o),
+  i = n(120356),
+  o = n.n(i),
   a = n(442837),
   s = n(481060),
   c = n(782568),
@@ -32,7 +32,7 @@ let P = e => {
   var t;
   let {
     isLoading: n,
-    sortedSkuIds: o,
+    sortedSkuIds: i,
     handleTransition: P,
     numVisibleItems: L,
     tab: I
@@ -41,9 +41,9 @@ let P = e => {
     setSortType: R,
     sortedItems: w,
     sortOptions: Z,
-    shuffleProducts: D,
-    showRecommendationOption: F
-  } = (0, C.N)(o, B), M = (0, S.St)(w), H = (0, a.e7)([u.Z], () => u.Z.useReducedMotion), W = (0, a.e7)([p.Z], () => p.Z.isFocused()), V = !H && W, {
+    shuffleProducts: F,
+    showRecommendationOption: M
+  } = (0, C.N)(i, B), D = (0, S.St)(w), H = (0, a.e7)([u.Z], () => u.Z.useReducedMotion), W = (0, a.e7)([p.Z], () => p.Z.isFocused()), V = !H && W, {
     animationPhase: U,
     startAnimation: G
   } = (0, E.y)(), z = (0, b.sp)(), Y = null != (t = null == z ? void 0 : z.sessionId) ? t : "", q = l.useRef(null), K = l.useCallback(e => {
@@ -56,7 +56,7 @@ let P = e => {
     })
   }, [G, R, Y]);
   return null == k ? null : (0, r.jsxs)("div", {
-    className: i()(T.popularPicksSection, T.centeredSection),
+    className: o()(T.popularPicksSection, T.centeredSection),
     children: [(0, r.jsxs)("div", {
       className: T.blockHeader,
       children: [(0, r.jsxs)("div", {
@@ -64,7 +64,7 @@ let P = e => {
         children: [(0, r.jsx)(s.X6q, {
           variant: "heading-lg/semibold",
           children: I === x.AW.ORBS ? j.intl.string(j.t.dFgeub) : j.intl.string(j.t.NSv5KS)
-        }), F && (0, r.jsx)(s.ua7, {
+        }), M && (0, r.jsx)(s.ua7, {
           text: j.intl.string(j.t["3taPdn"]),
           position: "top",
           "aria-label": j.intl.string(j.t["3taPdn"]),
@@ -124,7 +124,7 @@ let P = e => {
           onClick: () => {
             G({
               isShuffling: !0,
-              onOutroComplete: D,
+              onOutroComplete: F,
               returnRef: q
             }), f.default.track(y.rMx.COLLECTIBLES_SHOP_FEED_SHUFFLE_CLICKED, {
               page_session_id: Y
@@ -143,7 +143,7 @@ let P = e => {
       className: T.feed,
       children: n ? (0, r.jsx)(r.Fragment, {
         children: [...Array(12)].map((e, t) => (0, r.jsx)(O.K, {}, t + 1))
-      }) : M.slice(0, L).map((e, t) => {
+      }) : D.slice(0, L).map((e, t) => {
         let n, l = m.Z.getCategoryForProduct(e.skuId);
         if (null == e || null == l) return null;
         if (V)
