@@ -6,8 +6,8 @@ n.d(t, {
 }), n(388685), n(642613);
 var r = n(73800),
   l = n(97519),
-  i = n(497598),
-  o = n(792091),
+  o = n(497598),
+  i = n(792091),
   a = n(653654),
   s = n(149705);
 
@@ -40,8 +40,8 @@ let d = {
     themeFilters: new Set,
     orbEligible: !1,
     sort: {
-      sortType: o.E.RECENCY,
-      sortDirection: i.F.DESC
+      sortType: i.E.RECENCY,
+      sortDirection: o.F.DESC
     },
     searchQuery: "",
     queryPageSize: 20,
@@ -59,7 +59,7 @@ let d = {
           sort: a,
           searchQuery: s
         } = t();
-        return [e, n, r].some(e => e.size > 0) || l || a.sortType !== o.E.RECENCY || a.sortDirection !== i.F.DESC || "" !== s
+        return [e, n, r].some(e => e.size > 0) || l || a.sortType !== i.E.RECENCY || a.sortDirection !== o.F.DESC || "" !== s
       },
       onToggleItemType: t => {
         e(e => ({
@@ -141,8 +141,8 @@ let d = {
       colorFilters: n,
       themeFilters: r,
       orbEligible: l,
-      sort: i,
-      searchQuery: o,
+      sort: o,
+      searchQuery: i,
       queryPageSize: a,
       queryPageOffset: s
     } = e;
@@ -153,9 +153,9 @@ let d = {
       orbs_eligible: !!l || void 0,
       offset: s,
       limit: a,
-      sort_type: i.sortType,
-      sort_direction: i.sortDirection,
-      search: o
+      sort_type: o.sortType,
+      sort_direction: o.sortDirection,
+      search: i
     }
   },
   g = e => {

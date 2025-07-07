@@ -1,6 +1,6 @@
 /**
   Module ID: 4811
-  Original File Name: 76f3aa16b5df3640
+  Original File Name: 340b1e526aaa3454
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -4435,8 +4435,8 @@ div:has(>.repositionLayerSidebarPopout_fc71d3) {
     background: linear-gradient(270deg,rgba(255,115,250,.7),rgba(255,115,250,.25))
 }
 
-.container__0d0f9:hover .text__0d0f9 {
-    color: var(--text-default)
+.container__0d0f9:hover .boostCountText__0d0f9 {
+    opacity: 1
 }
 
 .container__0d0f9:after {
@@ -4487,7 +4487,11 @@ div:has(>.repositionLayerSidebarPopout_fc71d3) {
 }
 
 .text__0d0f9 {
-    color: var(--text-muted)
+    color: var(--text-default)
+}
+
+.boostCountText__0d0f9 {
+    opacity: .7
 }
 
 .progress__0d0f9 {
@@ -4511,7 +4515,7 @@ div:has(>.repositionLayerSidebarPopout_fc71d3) {
     transition: transform .2s ease
 }
 
-.full-motion .text__0d0f9 {
+.full-motion .boostCountText__0d0f9 {
     transition: color .2s ease
 }
 
@@ -8708,4 +8712,4 @@ div:has(>.positionLayer__4f4b6) {
     width: 96px
 }
 
-/*# sourceMappingURL=76f3aa16b5df3640.css.map*/
+/*# sourceMappingURL=340b1e526aaa3454.css.map*/

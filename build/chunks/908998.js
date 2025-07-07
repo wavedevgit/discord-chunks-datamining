@@ -1,4 +1,4 @@
-/** Chunk was on 92404 **/
+/** Chunk was on 64123 **/
 "use strict";
 e.exports = {
   inventory: "inventory__6980e",

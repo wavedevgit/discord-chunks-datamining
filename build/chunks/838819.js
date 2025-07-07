@@ -5,8 +5,8 @@ n.r(t), n.d(t, {
 }), n(388685);
 var r = n(255367),
   l = n(73800),
-  i = n(120356),
-  o = n.n(i),
+  o = n(120356),
+  i = n.n(o),
   a = n(772848),
   s = n(399606),
   c = n(952265),
@@ -21,8 +21,8 @@ var r = n(255367),
   _ = n(511050),
   C = n(819640),
   O = n(594174),
-  E = n(381585),
-  v = n(597688),
+  v = n(381585),
+  E = n(597688),
   S = n(780475),
   x = n(223143),
   y = n(298228),
@@ -30,8 +30,8 @@ var r = n(255367),
   T = n(98535),
   P = n(963102),
   L = n(508498),
-  k = n(849217),
-  I = n(215023),
+  I = n(849217),
+  k = n(215023),
   B = n(981631),
   N = n(420212),
   A = n(484920);
@@ -40,22 +40,22 @@ let R = e => {
       children: t,
       shouldAddEventListener: n,
       onClose: r
-    } = e, i = (0, c.f9)();
+    } = e, o = (0, c.f9)();
     return l.useEffect(() => {
-      if (!n || i) return;
+      if (!n || o) return;
       let e = e => {
         e.key === N.mR.Escape && r()
       };
       return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
-    }, [n, i, r]), t
+    }, [n, o, r]), t
   },
   w = function(e) {
     let {
       isFullScreen: t = !0,
-      tab: n = I.AW.HOME
+      tab: n = k.AW.HOME
     } = e;
     (0, b.z)(h.f);
-    let i = (0, p.Z)((0, a.Z)()),
+    let o = (0, p.Z)((0, a.Z)()),
       c = (0, s.e7)([O.default], () => O.default.getCurrentUser()),
       N = l.useRef(null),
       {
@@ -65,26 +65,26 @@ let R = e => {
       });
     l.useEffect(() => () => {
       w()
-    }, [i, w]);
+    }, [o, w]);
     let {
       onClose: Z
     } = (0, L.Db)(), {
-      categories: M,
-      refreshCategories: D
+      categories: D,
+      refreshCategories: F
     } = (0, x.ZP)({
       location: "CollectiblesShop.web",
       logPerf: !0
     }, {
-      sessionId: i,
+      sessionId: o,
       tab: n,
       isFullScreen: t
     });
     (0, m.P)();
-    let F = (0, y.O)(M),
+    let M = (0, y.O)(D),
       [H, W] = l.useState(),
-      V = (0, s.e7)([v.Z], () => {
+      V = (0, s.e7)([E.Z], () => {
         var e;
-        return null == (e = v.Z.getCategory(H)) ? void 0 : e.name
+        return null == (e = E.Z.getCategory(H)) ? void 0 : e.name
       }),
       [U, G] = l.useState(),
       z = l.useCallback((e, t) => {
@@ -97,8 +97,8 @@ let R = e => {
       } = (0, j.B)(N, n, t),
       {
         handleScroll: X
-      } = (0, g.z)(N, i, Y);
-    (0, S.q3)(i, Y, V, q, U), (0, S.EB)(Y, c), (0, k.Z)(), l.useEffect(() => {
+      } = (0, g.z)(N, o, Y);
+    (0, S.q3)(o, Y, V, q, U), (0, S.EB)(Y, c), (0, I.Z)(), l.useEffect(() => {
       t || (0, d.Y)(B.Z5c.COLLECTIBLES_SHOP)
     }, [t]);
     let Q = (0, s.e7)([C.Z], () => C.Z.getLayers().includes(B.S9g.COLLECTIBLES_SHOP)),
@@ -115,11 +115,11 @@ let R = e => {
     } = (0, S.MV)(Y);
     return (0, r.jsx)(f.Gt, {
       value: ee,
-      children: (0, r.jsx)(E.k0, {
+      children: (0, r.jsx)(v.k0, {
         newValue: {
-          sessionId: i,
+          sessionId: o,
           pageCategory: V,
-          pageSize: I.kN
+          pageSize: k.kN
         },
         children: (0, r.jsx)(R, {
           onClose: Z,
@@ -133,10 +133,10 @@ let R = e => {
               ref: N,
               onScroll: X,
               children: (0, r.jsxs)("div", {
-                className: o()(A.shopViewWrapper, {
-                  [A.visible]: q === I.f7.VISIBLE,
-                  [A.in]: q === I.f7.IN,
-                  [A.out]: q === I.f7.OUT
+                className: i()(A.shopViewWrapper, {
+                  [A.visible]: q === k.f7.VISIBLE,
+                  [A.in]: q === k.f7.IN,
+                  [A.out]: q === k.f7.OUT
                 }),
                 children: [(0, r.jsx)(P.I, {
                   isFullScreen: t,
@@ -148,10 +148,10 @@ let R = e => {
                   tab: Y,
                   isFullScreen: t,
                   scrollerRef: N,
-                  refreshCategories: D,
+                  refreshCategories: F,
                   transitionToTab: K,
                   transitionState: q,
-                  sortedCategories: F,
+                  sortedCategories: M,
                   updateAnalyticsState: z
                 })]
               })

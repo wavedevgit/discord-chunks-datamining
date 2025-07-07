@@ -1,12 +1,12 @@
-/** Chunk was on 92404 **/
+/** Chunk was on 64123 **/
 "use strict";
-r.d(t, {
+n.d(t, {
   Z: () => a
 });
-var n = r(255367);
-r(73800);
-var i = r(481060),
-  l = r(215023);
+var r = n(255367);
+n(73800);
+var i = n(481060),
+  l = n(215023);
 let a = e => {
   let {
     product: t,
@@ -22,21 +22,21 @@ let a = e => {
   (0, i.ZDy)(async () => {
     let {
       default: e
-    } = await Promise.resolve().then(r.bind(r, 331042));
-    return r => (0, n.jsx)(e, function(e) {
+    } = await Promise.resolve().then(n.bind(n, 331042));
+    return n => (0, r.jsx)(e, function(e) {
       for (var t = 1; t < arguments.length; t++) {
-        var r = null != arguments[t] ? arguments[t] : {},
-          n = Object.keys(r);
-        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-          return Object.getOwnPropertyDescriptor(r, e).enumerable
-        }))), n.forEach(function(t) {
-          var n;
-          n = r[t], t in e ? Object.defineProperty(e, t, {
-            value: n,
+        var n = null != arguments[t] ? arguments[t] : {},
+          r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(n, e).enumerable
+        }))), r.forEach(function(t) {
+          var r;
+          r = n[t], t in e ? Object.defineProperty(e, t, {
+            value: r,
             enumerable: !0,
             configurable: !0,
             writable: !0
-          }) : e[t] = n
+          }) : e[t] = r
         })
       }
       return e
@@ -49,7 +49,7 @@ let a = e => {
       shouldCheckoutWithOrbs: u,
       itemConsumed: p,
       purchaseType: v
-    }, r))
+    }, n))
   }, {
     onCloseCallback: d
   })

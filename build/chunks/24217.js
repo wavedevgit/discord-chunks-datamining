@@ -1,8 +1,8 @@
-/** Chunk was on 92404 **/
+/** Chunk was on 64123 **/
 e.exports = function(e) {
-  for (var t = -1, r = null == e ? 0 : e.length, n = 0, i = []; ++t < r;) {
+  for (var t = -1, n = null == e ? 0 : e.length, r = 0, i = []; ++t < n;) {
     var l = e[t];
-    l && (i[n++] = l)
+    l && (i[r++] = l)
   }
   return i
 }

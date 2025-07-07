@@ -1,70 +1,70 @@
-/** Chunk was on 92404 **/
+/** Chunk was on 64123 **/
 "use strict";
-r.d(t, {
+n.d(t, {
   U: () => c
 });
-var n = r(255367);
-r(73800);
-var i = r(120356),
-  l = r.n(i),
-  a = r(481060),
-  o = r(388032),
-  s = r(44615);
+var r = n(255367);
+n(73800);
+var i = n(120356),
+  l = n.n(i),
+  a = n(481060),
+  o = n(388032),
+  s = n(44615);
 let c = e => {
   let {
     className: t,
-    isPartiallyPurchased: r
+    isPartiallyPurchased: n
   } = e;
-  return r ? (0, n.jsx)(a.ua7, {
+  return n ? (0, r.jsx)(a.ua7, {
     tooltipClassName: s.partiallyOwnedDisclaimer,
     position: "top",
     align: "left",
     text: o.intl.string(o.t.y1VWkZ),
     children: e => {
-      var r, i;
-      return (0, n.jsxs)("div", (r = function(e) {
+      var n, i;
+      return (0, r.jsxs)("div", (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {},
-            n = Object.keys(r);
-          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(r, e).enumerable
-          }))), n.forEach(function(t) {
-            var n;
-            n = r[t], t in e ? Object.defineProperty(e, t, {
-              value: n,
+          var n = null != arguments[t] ? arguments[t] : {},
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), r.forEach(function(t) {
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+              value: r,
               enumerable: !0,
               configurable: !0,
               writable: !0
-            }) : e[t] = n
+            }) : e[t] = r
           })
         }
         return e
       }({
         className: l()(s.partialOwnStateContainer, t)
       }, e), i = i = {
-        children: [(0, n.jsx)("span", {
+        children: [(0, r.jsx)("span", {
           className: s.iconWrapper,
-          children: (0, n.jsx)(a.d3s, {
+          children: (0, r.jsx)(a.d3s, {
             size: "md",
             color: "currentColor",
             className: s.infoIcon
           })
-        }), (0, n.jsx)(a.Text, {
+        }), (0, r.jsx)(a.Text, {
           variant: "text-md/semibold",
           children: o.intl.string(o.t.BEjTio)
         })]
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
-        var r = Object.keys(e);
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+        var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e);
-          r.push.apply(r, n)
+          var r = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, r)
         }
-        return r
+        return n
       })(Object(i)).forEach(function(e) {
-        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
-      }), r))
+        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
+      }), n))
     }
-  }) : (0, n.jsx)(a.Text, {
+  }) : (0, r.jsx)(a.Text, {
     variant: "text-md/semibold",
     className: t,
     children: o.intl.string(o.t["6cfuDg"])

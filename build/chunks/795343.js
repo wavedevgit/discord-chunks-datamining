@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   l = n(73800),
-  i = n(399606),
-  o = n(481060),
+  o = n(399606),
+  i = n(481060),
   a = n(594174),
   s = n(381585),
   c = n(597688),
@@ -26,29 +26,29 @@ function _(e) {
     isFullScreen: _,
     scrollerRef: C,
     tab: O
-  } = e, E = (0, s.sp)(), v = null != (t = null == E ? void 0 : E.sessionId) ? t : "", {
+  } = e, v = (0, s.sp)(), E = null != (t = null == v ? void 0 : v.sessionId) ? t : "", {
     noCache: S,
     includeUnpublished: x
-  } = (0, b.Z)(), y = (0, i.e7)([a.default], () => a.default.getCurrentUser()), {
+  } = (0, b.Z)(), y = (0, o.e7)([a.default], () => a.default.getCurrentUser()), {
     skus: j,
     currentPage: T,
     totalCount: P
-  } = (0, p.a)(), L = (0, i.Wu)([c.Z], () => c.Z.getProductsBySkus(j)), k = l.useCallback(() => {
+  } = (0, p.a)(), L = (0, o.Wu)([c.Z], () => c.Z.getProductsBySkus(j)), I = l.useCallback(() => {
     var e;
     null == C || null == (e = C.current) || e.scrollToTop({
       animate: !0
     })
-  }, [C]), I = (0, u.a)(), B = l.useMemo(() => I(L), [I, L]);
+  }, [C]), k = (0, u.a)(), B = l.useMemo(() => k(L), [k, L]);
   l.useEffect(() => {
     n || (0, f.n)({
-      sessionId: v,
+      sessionId: E,
       checkpoint: f.a.SHOP_RENDERED,
       tab: O,
       isFullScreen: _,
       unpublishedCategoriesShown: x,
       cacheDisabled: S
     })
-  }, [v, _, x, S, n, O]);
+  }, [E, _, x, S, n, O]);
   let N = l.useRef(null),
     {
       setQueryPageSize: A,
@@ -87,12 +87,12 @@ function _(e) {
     }), P > w && (0, r.jsx)("div", {
       className: m.paginationContainer,
       children: (0, r.jsx)("div", {
-        children: (0, r.jsx)(o.DsT, {
+        children: (0, r.jsx)(i.DsT, {
           currentPage: T,
           totalCount: P,
           pageSize: w,
           onPageChange: e => {
-            R((e - 1) * w), k()
+            R((e - 1) * w), I()
           },
           disablePaginationGap: !0
         })

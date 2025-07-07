@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   l = n(73800),
-  i = n(335818),
-  o = n(481060),
+  o = n(335818),
+  i = n(481060),
   a = n(501431),
   s = n(149705),
   c = n(388032);
@@ -22,20 +22,20 @@ function u(e) {
   } = (0, s.a)(), p = t.length, f = (0, a.S)(e => e.hasFilters()), g = l.useCallback(() => f ? "" !== u ? c.intl.format(c.t.KJMJOz, {
     count: d,
     search: u
-  }) : 1 === n.size && n.has(i.G.AVATAR_DECORATION) ? c.intl.format(c.t.s1UzGR, {
+  }) : 1 === n.size && n.has(o.G.AVATAR_DECORATION) ? c.intl.format(c.t.s1UzGR, {
     count: d
-  }) : 1 === n.size && n.has(i.G.NAMEPLATE) ? c.intl.format(c.t.ZWGN9f, {
+  }) : 1 === n.size && n.has(o.G.NAMEPLATE) ? c.intl.format(c.t.ZWGN9f, {
     count: d
-  }) : 1 === n.size && n.has(i.G.PROFILE_EFFECT) ? c.intl.format(c.t["v/7apq"], {
+  }) : 1 === n.size && n.has(o.G.PROFILE_EFFECT) ? c.intl.format(c.t["v/7apq"], {
     count: d
-  }) : 1 === n.size && n.has(i.G.BUNDLE) ? c.intl.format(c.t.fZ1rdn, {
+  }) : 1 === n.size && n.has(o.G.BUNDLE) ? c.intl.format(c.t.fZ1rdn, {
     count: d
   }) : c.intl.format(c.t["/rPvmZ"], {
     count: d
   }) : c.intl.format(c.t["+687XV"], {
     count: p
   }), [n, d, p, f, u]);
-  return (0, r.jsx)(o.X6q, {
+  return (0, r.jsx)(i.X6q, {
     variant: "heading-lg/semibold",
     children: g()
   })

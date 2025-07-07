@@ -1,18 +1,17 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  f: () => f
+  f: () => p
 });
 var r = n(534517),
-  l = n(819570),
-  i = n(909688),
+  l = n(909688),
   o = n(765587),
-  a = n(315066),
-  s = n(587792),
-  c = n(228624),
-  u = n(91641),
-  d = n(166350),
-  p = n(987338);
-let f = new u.E([d.NR, d.ZI, d.Ob, d.uc, d.m1, c.k, s.g, i.j, l.M, o.l, a.A, r.B], p.$P.COLLECTIBLES_SHOP_OPEN, {
+  i = n(315066),
+  a = n(587792),
+  s = n(228624),
+  c = n(91641),
+  u = n(166350),
+  d = n(987338);
+let p = new c.E([u.NR, u.ZI, u.Ob, u.uc, u.m1, s.k, a.g, l.j, o.l, i.A, r.B], d.$P.COLLECTIBLES_SHOP_OPEN, {
   location: "collectibles shop open"
 })

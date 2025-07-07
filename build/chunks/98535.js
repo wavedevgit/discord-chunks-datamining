@@ -1,12 +1,12 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  Z: () => E
+  Z: () => v
 });
 var r = n(255367),
   l = n(73800),
-  i = n(180650),
-  o = n(442837),
+  o = n(180650),
+  i = n(442837),
   a = n(607070),
   s = n(594174),
   c = n(960048),
@@ -22,7 +22,7 @@ var r = n(255367),
   C = n(215023);
 let O = [C.AW.HOME, C.AW.ORBS];
 
-function E(e) {
+function v(e) {
   let {
     tab: t,
     isFullScreen: n,
@@ -31,10 +31,10 @@ function E(e) {
     transitionToTab: u,
     transitionState: d,
     updateAnalyticsState: m,
-    refreshCategories: E
-  } = e, x = v();
+    refreshCategories: v
+  } = e, x = E();
   S(x);
-  let y = (0, o.e7)([a.Z], () => a.Z.useReducedMotion),
+  let y = (0, i.e7)([a.Z], () => a.Z.useReducedMotion),
     {
       setCategoryRef: j,
       handleScrollToCategory: T
@@ -42,17 +42,17 @@ function E(e) {
     P = l.useCallback(async (e, t, r) => {
       m(e, t);
       let l = r && !n && !y,
-        o = t === i.T.ORB ? C.AW.ORBS : C.AW.CATALOG;
-      await u(o, l), null != t && T(t)
+        i = t === o.T.ORB ? C.AW.ORBS : C.AW.CATALOG;
+      await u(i, l), null != t && T(t)
     }, [n, y, u, T, m]),
     L = (0, p.F)("content"),
     {
-      searchQuery: k
+      searchQuery: I
     } = (0, f.S)();
   return (l.useEffect(() => {
-    L && "" !== k && P("search")
-  }, [L, k, P]), null != x) ? (0, r.jsx)(b.Z, {
-    onRetry: E,
+    L && "" !== I && P("search")
+  }, [L, I, P]), null != x) ? (0, r.jsx)(b.Z, {
+    onRetry: v,
     errorMessage: x,
     errorOrigin: b.i.SHOP_PAGE
   }) : O.includes(t) ? (0, r.jsx)(_.Z, {
@@ -69,18 +69,18 @@ function E(e) {
     setCategoryRef: j
   })
 }
-let v = () => (0, o.e7)([u.Z, d.Z], () => null != u.Z.error ? "shop load fetch categories error: ".concat(u.Z.error.message) : null != d.Z.claimError ? "shop load claim error: ".concat(d.Z.claimError.message) : null != d.Z.fetchError ? "shop load fetch purchase error: ".concat(d.Z.fetchError.message) : void 0),
+let E = () => (0, i.e7)([u.Z, d.Z], () => null != u.Z.error ? "shop load fetch categories error: ".concat(u.Z.error.message) : null != d.Z.claimError ? "shop load claim error: ".concat(d.Z.claimError.message) : null != d.Z.fetchError ? "shop load fetch purchase error: ".concat(d.Z.fetchError.message) : void 0),
   S = e => {
-    let t = (0, o.e7)([s.default], () => s.default.getCurrentUser()),
+    let t = (0, i.e7)([s.default], () => s.default.getCurrentUser()),
       {
         noCache: n,
         includeUnpublished: r
       } = (0, m.Z)();
     l.useEffect(() => {
-      var l, i;
+      var l, o;
       null != e && c.Z.captureMessage(e, {
         tags: {
-          isStaff: null != (i = null == t || null == (l = t.isStaff()) ? void 0 : l.toString()) ? i : "unknown",
+          isStaff: null != (o = null == t || null == (l = t.isStaff()) ? void 0 : l.toString()) ? o : "unknown",
           disableCache: n.toString(),
           includeUnpublished: r.toString()
         }

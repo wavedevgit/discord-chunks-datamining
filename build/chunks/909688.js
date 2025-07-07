@@ -1,11 +1,11 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  j: () => i
+  j: () => o
 });
 var r = n(818083),
   l = n(987338);
-let i = (0, r.B)({
+let o = (0, r.B)({
   kind: "user",
   id: "2025-01_mobile_shop_adaptive_back_button_color",
   label: "mobile shop adaptive back button color",

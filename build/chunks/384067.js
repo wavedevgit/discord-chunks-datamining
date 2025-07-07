@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   l = n(73800),
-  i = n(120356),
-  o = n.n(i),
+  o = n(120356),
+  i = n.n(o),
   a = n(622535),
   s = n(481060),
   c = n(63063),
@@ -17,14 +17,14 @@ var r = n(255367),
   g = n(388032),
   h = n(806734);
 let b = e => {
-  var t, n, i;
+  var t, n, o;
   let {
     wideBannerBlock: b,
     handleTransition: m,
     tab: _
-  } = e, C = null == (t = u.Z.getCategoryByStoreListingId(b.categoryStoreListingId)) ? void 0 : t.skuId, O = l.useRef(null), E = l.useRef(null), [v, S] = l.useState();
+  } = e, C = null == (t = u.Z.getCategoryByStoreListingId(b.categoryStoreListingId)) ? void 0 : t.skuId, O = l.useRef(null), v = l.useRef(null), [E, S] = l.useState();
   l.useEffect(() => {
-    let e = E.current;
+    let e = v.current;
     if (null == e) return;
     let t = () => {
       e.naturalWidth > 0 && e.naturalHeight > 0 && S(1080 * (e.naturalHeight / e.naturalWidth))
@@ -46,28 +46,28 @@ let b = e => {
     threshold: 0,
     children: (0, r.jsxs)("div", {
       ref: O,
-      className: o()(h.row, h.between, h.bannerBlockContainer, h.centeredSection, {
+      className: i()(h.row, h.between, h.bannerBlockContainer, h.centeredSection, {
         [h.extraRounded]: T
       }),
       children: [(0, r.jsx)("div", {
-        className: o()(h.wideBannerBackgroundImg, {
+        className: i()(h.wideBannerBackgroundImg, {
           [h.extraRounded]: T
         }),
         children: (0, r.jsx)("img", {
-          ref: E,
+          ref: v,
           src: j,
           alt: b.title,
-          className: o()(h.wideBannerArt, {
+          className: i()(h.wideBannerArt, {
             [h.wideBannerArtOrbs]: T
           }),
           style: {
-            height: null != v ? "".concat(v, "px") : "auto"
+            height: null != E ? "".concat(E, "px") : "auto"
           }
         })
       }), (0, r.jsx)("div", {
         className: h.wideBannerContentContainer,
         style: {
-          maxHeight: null != v ? "".concat(v, "px") : "auto"
+          maxHeight: null != E ? "".concat(E, "px") : "auto"
         },
         children: (0, r.jsxs)("div", {
           className: h.wideBannerTextContainer,
@@ -80,7 +80,7 @@ let b = e => {
             children: b.title
           }), (0, r.jsx)(s.Text, {
             style: {
-              color: null != (i = b.bannerTextColor) ? i : "var(--text-muted)"
+              color: null != (o = b.bannerTextColor) ? o : "var(--text-muted)"
             },
             lineClamp: 2,
             variant: T ? "text-md/medium" : "text-sm/medium",
