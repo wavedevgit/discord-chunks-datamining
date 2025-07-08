@@ -13,8 +13,8 @@ var r = n(255367),
   u = n(774078),
   d = n(388032),
   p = n(894948),
-  f = n(781385),
-  g = n(585616);
+  g = n(781385),
+  f = n(585616);
 
 function h(e) {
   let {
@@ -87,12 +87,12 @@ let b = l.memo(function(e) {
     }), (0, r.jsx)(h, {
       endDate: t
     }), (0, r.jsx)("img", {
-      src: f.Z,
+      src: g.Z,
       className: i()(p.sparkles, p.left),
       alt: "",
       "aria-hidden": !0
     }), (0, r.jsx)("img", {
-      src: g.Z,
+      src: f.Z,
       className: i()(p.sparkles, p.right),
       alt: "",
       "aria-hidden": !0

@@ -13,8 +13,8 @@ var r = n(255367),
   u = n(381585),
   d = n(139668),
   p = n(364111),
-  f = n(303952),
-  g = n(752053),
+  g = n(303952),
+  f = n(752053),
   h = n(258939),
   b = n(81136),
   m = n(953655),
@@ -26,8 +26,8 @@ var r = n(255367),
   S = n(215023),
   x = n(981631),
   y = n(388032),
-  T = n(806734);
-let j = e => {
+  j = n(806734);
+let T = e => {
     var t;
     let {
       handleTransition: n,
@@ -40,9 +40,9 @@ let j = e => {
       includeUnpublished: E
     } = (0, b.Z)(), S = (0, u.sp)(), x = null != (t = null == S ? void 0 : S.sessionId) ? t : "";
     l.useEffect(() => {
-      (0, f.n)({
+      (0, g.n)({
         sessionId: x,
-        checkpoint: f.a.SHOP_MOUNTED,
+        checkpoint: g.a.SHOP_MOUNTED,
         tab: c,
         isFullScreen: d,
         unpublishedCategoriesShown: E,
@@ -51,7 +51,7 @@ let j = e => {
     }, [c]);
     let {
       isFetchingShopHome: y,
-      fetchShopHomeError: j,
+      fetchShopHomeError: T,
       shopBlocks: P,
       refreshShopHome: L
     } = (0, p.E)(c, {
@@ -67,21 +67,21 @@ let j = e => {
       L()
     }, [L]);
     if (l.useEffect(() => {
-        null != j || y || 0 === P.length || (0, f.n)({
+        null != T || y || 0 === P.length || (0, g.n)({
           sessionId: x,
-          checkpoint: f.a.SHOP_RENDERED,
+          checkpoint: g.a.SHOP_RENDERED,
           tab: c,
           isFullScreen: d,
           unpublishedCategoriesShown: E,
           cacheDisabled: h
         })
-      }, [j, y, P.length, E, h, x, c, d]), null != j) return (0, r.jsx)(g.Z, {
+      }, [T, y, P.length, E, h, x, c, d]), null != T) return (0, r.jsx)(f.Z, {
       onRetry: I,
-      errorOrigin: g.i.SHOP_PAGE,
-      errorMessage: j.message
+      errorOrigin: f.i.SHOP_PAGE,
+      errorMessage: T.message
     });
     if (y || 0 === P.length) return (0, r.jsxs)("div", {
-      className: T.loadingContainer,
+      className: j.loadingContainer,
       children: [(0, r.jsx)(C.Z, {
         isLoading: y,
         handleTransition: n,
@@ -144,8 +144,8 @@ let j = e => {
           return null
       }
       return (0, r.jsx)("div", {
-        className: i()(T.blockContainer, {
-          [T.topBlockContainer]: 0 === t
+        className: i()(j.blockContainer, {
+          [j.topBlockContainer]: 0 === t
         }),
         children: l
       }, t)
@@ -161,36 +161,36 @@ let j = e => {
       handleTransition: o,
       tab: a,
       transitionState: p
-    } = e, f = (0, d.R)("CollectiblesFeedShop"), g = (0, h.R)(), b = (0, u.sp)(), [m, _] = l.useState(S.IV), [C, O] = l.useState(!1);
+    } = e, g = (0, d.R)("CollectiblesFeedShop"), f = (0, h.R)(), b = (0, u.sp)(), [m, _] = l.useState(S.IV), [C, O] = l.useState(!1);
     return l.useEffect(() => {
       if (null != n.current) {
         let e = () => {
             if (null == n.current) return;
             let e = n.current.getDistanceFromBottom();
-            m >= f ? O(e < 20) : e <= 200 && _(e => e + S.IV)
+            m >= g ? O(e < 20) : e <= 200 && _(e => e + S.IV)
           },
           t = n.current.getScrollerNode();
         return null == t || t.addEventListener("scroll", e), () => {
           null == t || t.removeEventListener("scroll", e)
         }
       }
-    }, [n, m, f, _, O]), (0, r.jsxs)("div", {
-      className: T.shop,
+    }, [n, m, g, _, O]), (0, r.jsxs)("div", {
+      className: j.shop,
       children: [(0, r.jsxs)("div", {
-        className: i()(T.content, T.mainContent),
-        children: [(0, r.jsx)(j, {
+        className: i()(j.content, j.mainContent),
+        children: [(0, r.jsx)(T, {
           handleTransition: o,
           numVisibleItems: m,
-          isFetchingCategories: g,
+          isFetchingCategories: f,
           tab: a,
           isFullScreen: t
-        }), a !== S.AW.CATALOG && m >= f && (0, r.jsxs)("div", {
-          className: T.endOfFeed,
+        }), a !== S.AW.CATALOG && m >= g && (0, r.jsxs)("div", {
+          className: j.endOfFeed,
           children: [(0, r.jsx)(s.X6q, {
             variant: "heading-md/semibold",
             children: y.intl.string(y.t.Yr70c3)
           }), (0, r.jsx)(s.zxk, {
-            className: T.endOfFeedButton,
+            className: j.endOfFeedButton,
             onClick: () => {
               o("shop all button", void 0, !0), c.default.track(x.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                 collectibles_shop_session_id: null == b ? void 0 : b.sessionId,

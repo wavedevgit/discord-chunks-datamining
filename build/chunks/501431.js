@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   A: () => m,
-  S: () => g
+  S: () => f
 }), n(388685), n(642613), n(49124);
 var r = n(73800),
   l = n(97519),
@@ -48,7 +48,7 @@ function p(e, t) {
   let n = new Set(e);
   return n.has(t) ? n.delete(t) : n.add(t), n
 }
-let f = {
+let g = {
     itemTypeFilters: new Set,
     colorFilters: new Set,
     themeFilters: new Set,
@@ -62,7 +62,7 @@ let f = {
     queryPageOffset: 0,
     isFetchingResults: !1
   },
-  g = (0, l.U)((0, o.XR)((e, t) => d(u({}, f), {
+  f = (0, l.U)((0, o.XR)((e, t) => d(u({}, g), {
     hasFilters: () => {
       let {
         itemTypeFilters: e,
@@ -103,7 +103,7 @@ let f = {
       e(e => u({}, e, t))
     },
     onSetSearchQuery: t => {
-      e(e => "" === e.searchQuery && "" !== t ? d(u({}, e, f), {
+      e(e => "" === e.searchQuery && "" !== t ? d(u({}, e, g), {
         searchQuery: t,
         sort: {
           sortType: a.E.RELEVANCE,
@@ -147,7 +147,7 @@ let f = {
       })
     },
     reset: () => {
-      e(u({}, f))
+      e(u({}, g))
     }
   }))),
   h = e => {
@@ -193,7 +193,7 @@ let f = {
       setIsFetchingResults: l
     } = (0, c.a)();
     r.useEffect(() => {
-      let r = g.subscribe(h, r => {
+      let r = f.subscribe(h, r => {
         (async () => {
           n(), l(!0);
           try {

@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: 71f8f02e75e4021b
+  Original File Name: 1684f78d9d92eeca
 **/
 .countDownWrapper_a1b7b8 {
     align-items: center;
@@ -495,7 +495,7 @@
 }
 
 .priceTag_c3d04b {
-    margin-top: 16px
+    display: flex
 }
 
 .buttonsContainer_c3d04b {
@@ -786,10 +786,8 @@
     padding-left: 4px
 }
 
-.subscribeNow_f5ae75 {
-    cursor: pointer;
-    display: inline;
-    text-decoration: underline
+.nitroIcon__8a8e7 {
+    margin-right: 4px
 }
 
 .priceTagsContainer_f73e93 {
@@ -802,19 +800,13 @@
 }
 
 .striked_f73e93 {
+    opacity: .7;
     text-decoration: line-through
-}
-
-.dimmed_f73e93 {
-    opacity: .7
-}
-
-.fullPrice_f73e93,.premiumIcon_f73e93 {
-    margin-right: 4px
 }
 
 .premiumIcon_f73e93 {
     height: 16px;
+    margin-right: 4px;
     width: 16px
 }
 
@@ -841,10 +833,6 @@
     margin-top: 12px
 }
 
-.nitroIcon__132c6 {
-    margin-right: 4px
-}
-
 .disabled__132c6 {
     opacity: .5
 }
@@ -854,7 +842,6 @@
     display: flex;
     flex-direction: row;
     gap: 8px;
-    height: 36px;
     justify-content: space-between;
     padding-top: 2px
 }
@@ -1872,4 +1859,4 @@
     cursor: pointer
 }
 
-/*# sourceMappingURL=71f8f02e75e4021b.css.map*/
+/*# sourceMappingURL=1684f78d9d92eeca.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 2026
-  Original File Name: 8a64a5ad046ab16d
+  Original File Name: 7107cf8334ba0bf4
 **/
 .buttonContent_a83ec9 {
     align-items: center;
@@ -50,6 +50,28 @@
     color: var(--white-500)
 }
 
+.subscribeNow_f5ae75 {
+    cursor: pointer;
+    display: inline;
+    text-decoration: underline
+}
+
+.container_f284f6 {
+    align-items: center;
+    color: var(--text-default);
+    display: flex;
+    flex: 1;
+    margin-right: 8px;
+    opacity: .7;
+    white-space: nowrap
+}
+
+.nitroIcon_f284f6 {
+    height: 16px;
+    margin-right: 4px;
+    width: 16px
+}
+
 .container__3a77d {
     background: linear-gradient(180deg,#000 -17.38%,#36266d 109.68%);
     border-radius: 16px;
@@ -86,24 +108,24 @@
 
 .priceLine__05bc9 {
     align-items: center;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     margin-top: 12px
 }
 
-.orbText__05bc9,.priceLine__05bc9 {
+.priceTagContainer__05bc9 {
+    align-items: flex-start;
     display: flex;
-    flex-direction: row
+    flex: 1;
+    flex-direction: column;
+    gap: 4px
 }
 
 .orbText__05bc9 {
-    gap: 8px
-}
-
-.nitroUpsell__05bc9 {
-    align-items: flex-start;
     display: flex;
-    flex-direction: column;
-    gap: 4px
+    flex-direction: row;
+    gap: 8px
 }
 
 .disabled__05bc9 {
@@ -447,6 +469,7 @@
 .collectibleInfoContainer_c50f62 .priceTagContainer_c50f62 {
     align-items: flex-start;
     display: flex;
+    flex: 1;
     flex-direction: column;
     gap: 4px
 }
@@ -531,4 +554,4 @@
     width: 350px
 }
 
-/*# sourceMappingURL=8a64a5ad046ab16d.css.map*/
+/*# sourceMappingURL=7107cf8334ba0bf4.css.map*/

@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  Z: () => B
+  Z: () => N
 }), n(388685);
 var r = n(255367),
   l = n(73800),
@@ -13,8 +13,8 @@ var r = n(255367),
   u = n(819640),
   d = n(594174),
   p = n(381585),
-  f = n(328347),
-  g = n(870289),
+  g = n(328347),
+  f = n(870289),
   h = n(370039),
   b = n(937510),
   m = n(303952),
@@ -26,8 +26,8 @@ var r = n(255367),
   S = n(258939),
   x = n(81136),
   y = n(619899),
-  T = n(302800),
-  j = n(215023),
+  j = n(302800),
+  T = n(215023),
   P = n(981631),
   L = n(484920);
 
@@ -57,7 +57,7 @@ function I(e) {
           category: o,
           product: e,
           user: i,
-          tab: j.AW.CATALOG
+          tab: T.AW.CATALOG
         }, e.skuId)
       }, e.skuId))
     })]
@@ -85,7 +85,7 @@ function k(e) {
   }(e, ["category", "initialItemCardRef"]);
   let i = (0, b.l)(t.products),
     s = (0, h.a)()(i),
-    c = (0, a.e7)([f.Z], () => f.Z.initialProductSkuId),
+    c = (0, a.e7)([g.Z], () => g.Z.initialProductSkuId),
     u = l.useCallback((e, t) => {
       var r;
       (t.skuId === c || (null == (r = t.variants) ? void 0 : r.some(e => e.skuId === c)) === !0) && (n.current = e.current)
@@ -114,12 +114,12 @@ function k(e) {
   }, o))
 }
 
-function N(e) {
+function B(e) {
   let {
     category: t,
     initialItemCardRef: n,
     isFullScreen: o
-  } = e, [i, a] = l.useState(!1), s = (0, T.M7)(t.skuId), u = (0, c.O)(e => {
+  } = e, [i, a] = l.useState(!1), s = (0, j.M7)(t.skuId), u = (0, c.O)(e => {
     a(e && null != s)
   }, o ? .13 : .15);
   return (0, r.jsxs)("div", {
@@ -140,26 +140,26 @@ function N(e) {
   })
 }
 
-function B(e) {
+function N(e) {
   var t;
   let {
     sortedCategories: n,
     setCategoryRef: o,
     isFullScreen: c,
     currentPage: d,
-    handlePageChange: f
+    handlePageChange: g
   } = e, h = (0, p.sp)(), b = (0, S.R)(), _ = null != (t = null == h ? void 0 : h.sessionId) ? t : "", {
     noCache: O,
     includeUnpublished: v
   } = (0, x.Z)(), y = l.useMemo(() => {
-    let e = (d - 1) * j.kN;
-    return n.slice(e, e + j.kN)
+    let e = (d - 1) * T.kN;
+    return n.slice(e, e + T.kN)
   }, [n, d]);
   l.useEffect(() => {
     (0, m.n)({
       sessionId: _,
       checkpoint: m.a.SHOP_MOUNTED,
-      tab: j.AW.CATALOG,
+      tab: T.AW.CATALOG,
       isFullScreen: c,
       unpublishedCategoriesShown: v,
       cacheDisabled: O
@@ -168,20 +168,20 @@ function B(e) {
     b || 0 === y.length || (0, m.n)({
       sessionId: _,
       checkpoint: m.a.SHOP_RENDERED,
-      tab: j.AW.CATALOG,
+      tab: T.AW.CATALOG,
       isFullScreen: c,
       unpublishedCategoriesShown: v,
       cacheDisabled: O
     })
   }, [_, c, v, O, b, y.length]);
-  let T = l.useRef(null),
+  let j = l.useRef(null),
     I = (0, a.e7)([u.Z], () => u.Z.getLayers().includes(P.S9g.COLLECTIBLES_SHOP));
   (0, C.Kp)({
     isFetchingCategories: b,
     isLayer: I,
-    initialItemCardRef: T
+    initialItemCardRef: j
   });
-  let k = (0, g.F)("CollectiblesBrowse");
+  let k = (0, f.F)("CollectiblesBrowse");
   return b ? (0, r.jsx)(E.Z, {}) : (0, r.jsxs)("div", {
     className: i()(L.categories, {
       [L.categoriesNoFilter]: !k
@@ -197,9 +197,9 @@ function B(e) {
         newValue: {
           categoryPosition: t
         },
-        children: (0, r.jsx)(N, {
+        children: (0, r.jsx)(B, {
           category: e,
-          initialItemCardRef: T,
+          initialItemCardRef: j,
           isFullScreen: c
         })
       })
@@ -208,8 +208,8 @@ function B(e) {
       children: (0, r.jsx)(s.DsT, {
         currentPage: d,
         totalCount: n.length,
-        pageSize: j.kN,
-        onPageChange: f,
+        pageSize: T.kN,
+        onPageChange: g,
         disablePaginationGap: !0
       })
     })]

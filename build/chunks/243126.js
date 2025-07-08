@@ -13,11 +13,11 @@ var r = n(73800),
   u = n(884697),
   d = n(26931),
   p = n(370039),
-  f = n(937510),
-  g = n(981631),
+  g = n(937510),
+  f = n(981631),
   h = n(388032);
 let b = (e, t) => {
-  let n = (0, a.e7)([s.Z], () => s.Z.hasConsented(g.pjP.PERSONALIZATION)),
+  let n = (0, a.e7)([s.Z], () => s.Z.hasConsented(f.pjP.PERSONALIZATION)),
     l = r.useMemo(() => {
       var t;
       return null != (t = null == e ? void 0 : e[i.m.RECOMMENDED]) ? t : []
@@ -39,13 +39,13 @@ let b = (e, t) => {
         return (null != (o = null == (r = (0, u.Vw)(e, t, !1)) ? void 0 : r.amount) ? o : 0) - (null != (i = null == (l = (0, u.Vw)(n, t, !1)) ? void 0 : l.amount) ? i : 0)
       }) : _ === i.m.RECOMMENDED ? e = v(l) : _ === i.m.POPULAR ? e = v(b) : _ === i.m.RANDOM && (e = o().shuffle(S)), x(e)
     }, [_, x, S, t, v, l, b, O]),
-    T = r.useCallback(() => {
+    j = r.useCallback(() => {
       E(e => e + 1), C(i.m.RANDOM)
     }, []);
   return {
     sortType: _,
     setSortType: C,
-    sortedItems: (0, f.l)(y),
+    sortedItems: (0, g.l)(y),
     sortOptions: r.useMemo(() => {
       let e = [{
         value: i.m.POPULAR,
@@ -63,6 +63,6 @@ let b = (e, t) => {
       }), e
     }, [m]),
     showRecommendationOption: m,
-    shuffleProducts: T
+    shuffleProducts: j
   }
 }

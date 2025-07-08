@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  ZP: () => f
+  ZP: () => g
 }), n(388685), n(642613);
 var r = n(255367),
   l = n(73800),
@@ -42,11 +42,11 @@ let p = e => {
       })]
     })
   },
-  f = () => {
+  g = () => {
     let [e, t] = l.useState(!1), n = l.useRef(null), {
       sort: d,
-      onSetSort: f,
-      searchQuery: g
+      onSetSort: g,
+      searchQuery: f
     } = (0, s.S)(), h = l.useCallback(e => {
       let {
         sortType: t,
@@ -110,10 +110,10 @@ let p = e => {
       position: "bottom",
       align: "right",
       renderPopout: () => (0, r.jsx)(p, {
-        options: (0, c.aP)(g).map(h),
+        options: (0, c.aP)(f).map(h),
         selected: m,
         onSelect: e => {
-          f(b(e))
+          g(b(e))
         }
       }),
       shouldShow: e,

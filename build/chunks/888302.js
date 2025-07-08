@@ -20,7 +20,7 @@ function u(e) {
   } = (0, a.S)(e => e), {
     totalCount: d,
     isFetchingResults: p
-  } = (0, s.a)(), f = t.length, g = (0, a.S)(e => e.hasFilters()), h = l.useCallback(() => p ? c.intl.string(c.t["/FaMSE"]) : g ? "" !== u ? c.intl.format(c.t.KJMJOz, {
+  } = (0, s.a)(), g = t.length, f = (0, a.S)(e => e.hasFilters()), h = l.useCallback(() => p ? c.intl.string(c.t["/FaMSE"]) : f ? "" !== u ? c.intl.format(c.t.KJMJOz, {
     count: d,
     search: u
   }) : 1 === n.size && n.has(o.G.AVATAR_DECORATION) ? c.intl.format(c.t.s1UzGR, {
@@ -34,8 +34,8 @@ function u(e) {
   }) : c.intl.format(c.t["/rPvmZ"], {
     count: d
   }) : c.intl.format(c.t["+687XV"], {
-    count: f
-  }), [n, d, f, g, u, p]);
+    count: g
+  }), [n, d, g, f, u, p]);
   return (0, r.jsx)(i.X6q, {
     variant: "heading-lg/semibold",
     children: h()

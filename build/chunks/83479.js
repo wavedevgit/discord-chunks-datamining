@@ -6,7 +6,7 @@ var r = n(73800),
   i = n(979554),
   l = n(215023),
   a = n(388032);
-let s = function(e) {
+let o = function(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
     if (t) {
       var n;
@@ -20,9 +20,9 @@ let s = function(e) {
       pfxName: i.name
     })
   },
-  o = function(e) {
+  s = function(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-    return null == e ? "" : e.type === i.Z.BUNDLE ? s(e, t) : e.summary
+    return null == e ? "" : e.type === i.Z.BUNDLE ? o(e, t) : e.summary
   },
   c = function(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
@@ -34,7 +34,7 @@ let s = function(e) {
       case i.Z.NAMEPLATE:
         return a.intl.string(a.t.ik37ER);
       case i.Z.BUNDLE:
-        return s(e, t);
+        return o(e, t);
       default:
         return ""
     }
@@ -42,5 +42,5 @@ let s = function(e) {
   u = function(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
       n = (null == e ? void 0 : e.skuId) != null && (0, l.o0)(null == e ? void 0 : e.skuId);
-    return (0, r.useMemo)(() => n ? o(e, t) : c(e, t), [n, e, t])
+    return (0, r.useMemo)(() => n ? s(e, t) : c(e, t), [n, e, t])
   }

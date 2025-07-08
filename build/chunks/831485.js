@@ -1,5 +1,4 @@
-/** Chunk was on 64123 **/
-"use strict";
+/** Chunk was on 2026 **/
 e.exports = {
   subscribeNow: "subscribeNow_f5ae75"
 }

@@ -6,17 +6,17 @@ var r = n(255367),
   i = n(442837),
   l = n(678135),
   a = n(643879),
-  s = n(25990),
-  o = n(74538),
+  o = n(25990),
+  s = n(74538),
   c = n(755419),
   u = n(99595);
 let d = e => {
   var t, n;
   let {
     user: d
-  } = e, m = o.ZP.canUsePremiumProfileCustomization(d), p = (0, i.cj)([s.Z], () => s.Z.getAllPending()), {
-    pendingAvatar: h
-  } = p, f = function(e, t) {
+  } = e, m = s.ZP.canUsePremiumProfileCustomization(d), p = (0, i.cj)([o.Z], () => o.Z.getAllPending()), {
+    pendingAvatar: f
+  } = p, h = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -32,7 +32,7 @@ let d = e => {
     return i
   }(p, ["pendingAvatar"]), v = (0, a.SD)({
     userId: d.id,
-    image: h
+    image: f
   });
   return (0, r.jsx)("div", {
     className: u.container,
@@ -53,7 +53,7 @@ let d = e => {
         })
       }
       return e
-    }({}, f), n = n = {
+    }({}, h), n = n = {
       pendingAvatar: v,
       user: d,
       pendingBadges: [(0, c.X)()],

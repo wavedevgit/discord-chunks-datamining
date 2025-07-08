@@ -1,41 +1,41 @@
 /** Chunk was on 64123 **/
 "use strict";
-n.d(t, {
-  k0: () => o,
-  sp: () => a
+r.d(t, {
+  k0: () => a,
+  sp: () => o
 });
-var r = n(255367),
-  i = n(73800);
+var n = r(255367),
+  i = r(73800);
 let l = i.createContext(null);
 
-function a() {
+function o() {
   return i.useContext(l)
 }
 
-function o(e) {
+function a(e) {
   let {
     newValue: t,
-    children: n
-  } = e, o = a(), s = i.useMemo(() => (function(e) {
+    children: r
+  } = e, a = o(), s = i.useMemo(() => (function(e) {
     for (var t = 1; t < arguments.length; t++) {
-      var n = null != arguments[t] ? arguments[t] : {},
-        r = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(n, e).enumerable
-      }))), r.forEach(function(t) {
-        var r;
-        r = n[t], t in e ? Object.defineProperty(e, t, {
-          value: r,
+      var r = null != arguments[t] ? arguments[t] : {},
+        n = Object.keys(r);
+      "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(r, e).enumerable
+      }))), n.forEach(function(t) {
+        var n;
+        n = r[t], t in e ? Object.defineProperty(e, t, {
+          value: n,
           enumerable: !0,
           configurable: !0,
           writable: !0
-        }) : e[t] = r
+        }) : e[t] = n
       })
     }
     return e
-  })({}, o, t), [o, t]);
-  return (0, r.jsx)(l.Provider, {
+  })({}, a, t), [a, t]);
+  return (0, n.jsx)(l.Provider, {
     value: s,
-    children: n
+    children: r
   })
 }

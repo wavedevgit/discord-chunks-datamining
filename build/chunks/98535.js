@@ -13,8 +13,8 @@ var r = n(255367),
   u = n(597688),
   d = n(1870),
   p = n(870289),
-  f = n(501431),
-  g = n(929255),
+  g = n(501431),
+  f = n(929255),
   h = n(426171),
   b = n(752053),
   m = n(81136),
@@ -36,19 +36,19 @@ function E(e) {
   S(x);
   let y = (0, i.e7)([a.Z], () => a.Z.useReducedMotion),
     {
-      setCategoryRef: T,
-      handleScrollToCategory: j
+      setCategoryRef: j,
+      handleScrollToCategory: T
     } = (0, h.xV)(s.current),
     P = l.useCallback(async (e, t, r) => {
       m(e, t);
       let l = r && !n && !y,
         i = t === o.T.ORB ? C.AW.ORBS : C.AW.CATALOG;
-      await u(i, l), null != t && j(t)
-    }, [n, y, u, j, m]),
+      await u(i, l), null != t && T(t)
+    }, [n, y, u, T, m]),
     L = (0, p.F)("content"),
     {
       searchQuery: I
-    } = (0, f.S)();
+    } = (0, g.S)();
   return (l.useEffect(() => {
     L && "" !== I && P("search")
   }, [L, I, P]), null != x) ? (0, r.jsx)(b.Z, {
@@ -61,12 +61,12 @@ function E(e) {
     handleTransition: P,
     tab: t,
     transitionState: d
-  }) : (0, r.jsx)(g.Z, {
+  }) : (0, r.jsx)(f.Z, {
     isFullScreen: n,
     scrollerRef: s,
     tab: t,
     sortedCategories: c,
-    setCategoryRef: T
+    setCategoryRef: j
   })
 }
 let v = () => (0, i.e7)([u.Z, d.Z], () => null != u.Z.error ? "shop load fetch categories error: ".concat(u.Z.error.message) : null != d.Z.claimError ? "shop load claim error: ".concat(d.Z.claimError.message) : null != d.Z.fetchError ? "shop load fetch purchase error: ".concat(d.Z.fetchError.message) : void 0),
