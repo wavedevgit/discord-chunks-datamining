@@ -20,8 +20,8 @@ var r = n(255367),
   p = n(592125),
   m = n(52824),
   f = n(630388),
-  _ = n(591759),
-  g = n(850908),
+  g = n(591759),
+  _ = n(850908),
   h = n(524444),
   b = n(981631),
   E = n(388032),
@@ -104,12 +104,12 @@ function O(e) {
         })]
       }) : null
     }, [n]),
-    c = _.Z.toURLSafe(n.proxy_url);
+    c = g.Z.toURLSafe(n.proxy_url);
   return null == c ? null : (c.searchParams.append("format", "webp"), (0, h.lV)(x(C({}, e), {
     alt: n.description,
     poster: c.toString(),
     fileSize: n.size,
-    fileName: (0, g.Z)(n),
+    fileName: (0, _.Z)(n),
     src: n.url,
     placeholder: n.placeholder,
     placeholderVersion: n.placeholder_version,
@@ -131,7 +131,7 @@ function j(e) {
   let t = e.item.originalItem;
   return (0, h.hX)(x(C({}, e), {
     fileSize: t.size,
-    fileName: (0, g.Z)(t),
+    fileName: (0, _.Z)(t),
     src: t.url
   }))
 }
@@ -152,7 +152,7 @@ function I(e) {
   }, [t]);
   return (0, h.wj)(x(C({}, e), {
     fileSize: r.size,
-    fileName: (0, g.Z)(r),
+    fileName: (0, _.Z)(r),
     src: r.url,
     durationSecs: r.duration_secs,
     waveform: r.waveform,
@@ -167,7 +167,7 @@ function S(e) {
   let t = e.item.originalItem;
   return (0, h.xi)(x(C({}, e), {
     url: t.url,
-    fileName: (0, g.Z)(t),
+    fileName: (0, _.Z)(t),
     fileSize: t.size,
     contentType: t.content_type
   }))
@@ -177,7 +177,7 @@ function T(e) {
   let t = e.item.originalItem;
   return (0, h.ur)(x(C({}, e), {
     url: t.url,
-    fileName: (0, g.Z)(t),
+    fileName: (0, _.Z)(t),
     fileSize: t.size
   }))
 }

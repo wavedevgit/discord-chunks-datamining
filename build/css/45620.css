@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: fb8a699485596d91
+  Original File Name: 71f8f02e75e4021b
 **/
 .countDownWrapper_a1b7b8 {
     align-items: center;
@@ -107,7 +107,8 @@
 }
 
 .pageFilter__6db1d {
-    gap: 24px
+    gap: 24px;
+    min-height: 100vh
 }
 
 .controls__6db1d {
@@ -1871,4 +1872,4 @@
     cursor: pointer
 }
 
-/*# sourceMappingURL=fb8a699485596d91.css.map*/
+/*# sourceMappingURL=71f8f02e75e4021b.css.map*/

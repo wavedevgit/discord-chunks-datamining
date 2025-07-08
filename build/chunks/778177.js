@@ -32,8 +32,8 @@ var r = n(255367),
   T = n(246946),
   N = n(594174),
   A = n(585483),
-  k = n(63063),
-  w = n(405656),
+  w = n(63063),
+  k = n(405656),
   M = n(51144),
   F = n(854709),
   Z = n(981631),
@@ -292,7 +292,7 @@ let z = h()("2015-05-15").local(),
         let h = "",
           p = s.useMemo(() => {
             var e;
-            return e = l.text, w.kG(e).map((e, t, n) => w.Fr(e, n[t + 1]) ? e : new y.WU(e.getFullMatch(), y.Xe))
+            return e = l.text, k.kG(e).map((e, t, n) => k.Fr(e, n[t + 1]) ? e : new y.WU(e.getFullMatch(), y.Xe))
           }, [l.text]).map(e => {
             let t = e.getFullMatch();
             if ("" === t.trim()) return null;
@@ -332,7 +332,7 @@ let z = h()("2015-05-15").local(),
           className: L.searchLearnMore
         }, e), {
           children: (0, r.jsx)(g.eee, {
-            href: k.Z.getArticleURL(Z.BhN.USING_SEARCH),
+            href: w.Z.getArticleURL(Z.BhN.USING_SEARCH),
             title: D.intl.string(D.t.hvVgAQ),
             children: (0, r.jsx)(g.idN, {
               size: "md",
@@ -350,7 +350,7 @@ let z = h()("2015-05-15").local(),
             searchId: o
           } = e,
           c = B(e, ["result", "onSelect", "onFocus", "showFilter", "searchId"]);
-        let u = w.Ko(null != (t = n.token) ? t : "");
+        let u = k.Ko(null != (t = n.token) ? t : "");
         return (0, r.jsxs)(g.P3F, G(U({
           className: a()(L.option, L.searchOption),
           onClick: s,
@@ -437,8 +437,8 @@ class X extends s.PureComponent {
       } = e;
       if (l.type !== i.mode.type) this.setSelectedIndex(-1);
       else if (t.selectedIndex >= 0 && (t.selectedIndex === n || i.autocompletes.length !== a.length)) {
-        let e = w.zV(i.autocompletes, i.mode)[t.selectedIndex],
-          n = w.zV(a, l).indexOf(e); - 1 !== n ? this.setSelectedIndex(n) : t.selectedIndex >= s && this.setSelectedIndex(s - 1)
+        let e = k.zV(i.autocompletes, i.mode)[t.selectedIndex],
+          n = k.zV(a, l).indexOf(e); - 1 !== n ? this.setSelectedIndex(n) : t.selectedIndex >= s && this.setSelectedIndex(s - 1)
       }
     }), H(this, "focusNextOption", () => {
       this.focusOtherOption(1)
@@ -450,14 +450,14 @@ class X extends s.PureComponent {
       } = this.state, {
         resultsState: n
       } = this.props;
-      w.Fz(n.mode.filter) || this.focusOption(t + e)
+      k.Fz(n.mode.filter) || this.focusOption(t + e)
     }), H(this, "focusOption", e => {
       let t = e,
         {
           autocompletes: n
         } = this.props.resultsState,
         r = this.shouldShowSearchQuery();
-      t < -1 || !r && t < 0 ? t = w.BU(n) - 1 : r && t >= w.BU(n) ? t = -1 : !r && t >= w.BU(n) && (t = 0), this.setSelectedIndex(t)
+      t < -1 || !r && t < 0 ? t = k.BU(n) - 1 : r && t >= k.BU(n) ? t = -1 : !r && t >= k.BU(n) && (t = 0), this.setSelectedIndex(t)
     }), H(this, "selectOption", e => {
       let t = e;
       if (null == t && (t = this.state.selectedIndex), t < 0) return !1;
@@ -465,8 +465,8 @@ class X extends s.PureComponent {
         autocompletes: n,
         mode: r
       } = this.props.resultsState;
-      if (w.Fz(r.filter)) return;
-      let s = w.zV(n, r);
+      if (k.Fz(r.filter)) return;
+      let s = k.zV(n, r);
       if (t >= s.length) return !1;
       let l = s[t],
         a = function(e) {
@@ -496,7 +496,7 @@ class X extends s.PureComponent {
       let {
         mode: e
       } = this.props.resultsState;
-      return e.type !== Z.Sap.FILTER && e.type !== Z.Sap.EMPTY && !w.Fz(e.filter)
+      return e.type !== Z.Sap.FILTER && e.type !== Z.Sap.EMPTY && !k.Fz(e.filter)
     }), H(this, "renderDatePicker", () => (0, r.jsxs)("div", {
       className: L.datePicker,
       children: [(0, r.jsx)(q, {
@@ -529,7 +529,7 @@ class X extends s.PureComponent {
         autocompletes: s,
         mode: l
       } = this.props.resultsState;
-      if (w.Fz(l.filter)) return this.renderDatePicker();
+      if (k.Fz(l.filter)) return this.renderDatePicker();
       let a = -1;
       return s.map(s => {
         var i, o, c;
@@ -579,7 +579,7 @@ let Y = s.forwardRef((e, t) => {
         r = null != e ? e : n ? Z.aib.DMS : t;
       o()(null != r, "SearchPopout.getStateFromStores - invalid searchId");
       let s = I.Z.getState(r),
-        l = w.BU(s.autocompletes);
+        l = k.BU(s.autocompletes);
       return [r, s, l]
     });
   return (0, r.jsx)(X, G(U({}, e), {

@@ -32,8 +32,8 @@ var r = n(255367),
   T = n(72006),
   N = n(405656),
   A = n(51144),
-  k = n(181389),
-  w = n(854709),
+  w = n(181389),
+  k = n(854709),
   M = n(652399),
   F = n(861262),
   Z = n(611004),
@@ -66,7 +66,7 @@ class W extends s.PureComponent {
     } = this.props;
     if (t !== e.editorState) {
       let e = (0, N.kG)(T.Sq(t)),
-        r = k.g9(e, t);
+        r = w.g9(e, t);
       h.u$(n, e, r), null != this._editorRef && T.iE(this._editorRef.editor)
     }
   }
@@ -94,7 +94,8 @@ class W extends s.PureComponent {
   }
   renderInput(e) {
     let {
-      editorState: t
+      editorState: t,
+      placeholder: n
     } = this.props;
     return (0, r.jsx)(i.Editor, {
       autoCorrect: "off",
@@ -109,7 +110,7 @@ class W extends s.PureComponent {
       handleDroppedFiles: this.handleDroppedFiles,
       handleDrop: this.handleDrop,
       keyBindingFn: this.handleKeyBind,
-      placeholder: U.intl.string(U.t["5h0QOD"]),
+      placeholder: null != n ? n : U.intl.string(U.t["5h0QOD"]),
       editorState: t,
       onChange: this.setEditorState,
       role: "combobox",
@@ -326,7 +327,7 @@ class W extends s.PureComponent {
       let {
         current: n
       } = this._searchPopoutRef;
-      return null != n && n.selectOption() || ((0, w.X)() && t ? this.search({
+      return null != n && n.selectOption() || ((0, k.X)() && t ? this.search({
         searchEverywhere: !0
       }) : this.search()), "handled"
     }), B(this, "handleBeforeInput", e => {
@@ -476,7 +477,8 @@ function Q(e) {
     hasResults: c,
     keyboardModeEnabled: n,
     onSearch: p,
-    isSearchActive: h
+    isSearchActive: h,
+    placeholder: U.intl.string(U.t["1sHpLC"])
   })
 }
 
@@ -515,7 +517,7 @@ function J(e) {
 function V(e) {
   let {
     className: t
-  } = e, n = (0, u.e7)([C.Z], () => C.Z.getCurrentSearchId()), l = (0, u.e7)([S.Z], () => S.Z.keyboardModeEnabled), a = (0, u.e7)([C.Z], () => null != n ? C.Z.getEditorState(n) : null), i = s.useMemo(() => null != a ? a : T.nR(k.Jl(g.ZP)), [a]), o = (0, x.U)({
+  } = e, n = (0, u.e7)([C.Z], () => C.Z.getCurrentSearchId()), l = (0, u.e7)([S.Z], () => S.Z.keyboardModeEnabled), a = (0, u.e7)([C.Z], () => null != n ? C.Z.getEditorState(n) : null), i = s.useMemo(() => null != a ? a : T.nR(w.Jl(g.ZP)), [a]), o = (0, x.U)({
     location: "Search"
   });
   return n === L.aib.DMS && o ? (0, r.jsx)(Q, {

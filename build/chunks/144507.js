@@ -1,8 +1,8 @@
 /** Chunk was on 61668 **/
 n.d(t, {
-  $D: () => g,
+  $D: () => _,
   H2: () => h,
-  MO: () => _,
+  MO: () => g,
   X$: () => f,
   d5: () => p
 });
@@ -45,11 +45,11 @@ function f(e) {
   return 0 !== m(e)
 }
 
-function _(e) {
+function g(e) {
   let t = (0, u.Bt)(null == e ? void 0 : e.id),
     n = (0, l.Ob)(e),
     r = (0, l.gS)(null == e ? void 0 : e.id),
-    s = g(e),
+    s = _(e),
     d = (0, i.e7)([c.default], () => {
       let t = c.default.getCurrentUser();
       return null != e && (0, o.eM)(e, t)
@@ -70,7 +70,7 @@ function _(e) {
   })
 }
 
-function g(e) {
+function _(e) {
   return (0, i.e7)([s.Z], () => h(e), [e])
 }
 

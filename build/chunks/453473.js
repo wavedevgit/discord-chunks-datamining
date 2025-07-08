@@ -33,8 +33,8 @@ var r = n(255367),
   T = n(664559),
   N = n(767893),
   A = n(206697),
-  k = n(74551),
-  w = n(981631),
+  w = n(74551),
+  k = n(981631),
   M = n(388032),
   F = n(585693);
 
@@ -123,7 +123,7 @@ function G(e) {
   }, [n, o]), h = s.useCallback(() => {
     c(!o), o ? null == n || n() : null == t || t()
   }, [n, t, o]);
-  s.useEffect(() => (O.S.subscribe(w.CkL.TOGGLE_FOR_LATER, h), () => void O.S.unsubscribe(w.CkL.TOGGLE_FOR_LATER, h)), [h]);
+  s.useEffect(() => (O.S.subscribe(k.CkL.TOGGLE_FOR_LATER, h), () => void O.S.unsubscribe(k.CkL.TOGGLE_FOR_LATER, h)), [h]);
   let g = (0, p.e7)([R.Z], () => R.Z.hasOverdueReminder(), []);
   return (0, r.jsx)(f.yRy, {
     targetElementRef: u,
@@ -204,21 +204,21 @@ function z(e) {
     throttledNow: l
   } = e, i = (0, I.gr)(t), o = s.useCallback(async e => {
     var r;
-    await (0, I.fC)(t, i), e.shiftKey || n(), v.default.track(w.rMx.FOR_LATER_SAVED_MESSAGE_JUMP, {
+    await (0, I.fC)(t, i), e.shiftKey || n(), v.default.track(k.rMx.FOR_LATER_SAVED_MESSAGE_JUMP, {
       channel_id: t.saveData.channelId,
       message_id: t.saveData.messageId,
       message_author_id: null == (r = t.message) ? void 0 : r.author.id,
       type: null != t.saveData.dueAt ? P._l.REMINDER : P._l.BOOKMARK,
       due_duration: null != t.saveData.dueAt ? u()().diff(t.saveData.dueAt) : void 0
     })
-  }, [n, t, i]), c = (0, p.e7)([E.Z], () => !!((null == i ? void 0 : i.type) === w.d4z.UNKNOWN || (null == i ? void 0 : i.isPrivate())) || E.Z.can(w.Plq.VIEW_CHANNEL, i));
+  }, [n, t, i]), c = (0, p.e7)([E.Z], () => !!((null == i ? void 0 : i.type) === k.d4z.UNKNOWN || (null == i ? void 0 : i.isPrivate())) || E.Z.can(k.Plq.VIEW_CHANNEL, i));
   return null != i && null != t.message && c ? (0, r.jsxs)("div", {
     className: F.messageContainer,
     children: [(0, r.jsx)(f.P3F, {
       className: F.clickableMessageBackground,
       onClick: o,
       "aria-label": M.intl.string(M.t["+TSRGB"])
-    }), null != t.saveData.dueAt ? (0, r.jsx)(k.Z, {
+    }), null != t.saveData.dueAt ? (0, r.jsx)(w.Z, {
       reminder: t,
       throttledNow: l
     }) : null, (0, r.jsx)(N.Z, {

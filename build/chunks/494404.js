@@ -142,7 +142,7 @@ class A extends s.PureComponent {
     })
   }
 }
-let k = u.ZP.connectStores([x.Z], e => {
+let w = u.ZP.connectStores([x.Z], e => {
   let {
     channel: t
   } = e;
@@ -151,7 +151,7 @@ let k = u.ZP.connectStores([x.Z], e => {
   }
 })(A);
 
-function w(e) {
+function k(e) {
   let {
     analyticsName: t,
     items: n,
@@ -165,7 +165,7 @@ function w(e) {
     scrollerClassName: b,
     className: x,
     listName: T
-  } = e, N = s.useRef(null), A = (0, p.Z)(T, N), k = (0, u.e7)([_.ZP], () => _.ZP.hasNotice()), w = (0, u.e7)([E.Z], () => E.Z.windowSize());
+  } = e, N = s.useRef(null), A = (0, p.Z)(T, N), w = (0, u.e7)([_.ZP], () => _.ZP.hasNotice()), k = (0, u.e7)([E.Z], () => E.Z.windowSize());
   s.useEffect(() => {
     v.default.track(j.rMx.OPEN_POPOUT, {
       type: t
@@ -233,9 +233,9 @@ function w(e) {
       })
     }) : null,
     U = {
-      maxHeight: w.height - 43 - 25 - 48
+      maxHeight: k.height - 43 - 25 - 48
     };
-  k && (U.maxHeight -= 40);
+  w && (U.maxHeight -= 40);
   let G = null != h && l;
   return (0, r.jsx)("div", {
     className: a()(x, I.messagesPopoutWrap),
@@ -344,7 +344,7 @@ function M(e) {
     message: e,
     channel: l
   })), [a, l]);
-  return (0, r.jsx)(w, {
+  return (0, r.jsx)(k, {
     className: O,
     scrollerClassName: v,
     items: N,
@@ -369,7 +369,7 @@ function M(e) {
           className: I.messageGroupCozy,
           message: t,
           channel: n
-        }), (0, r.jsx)(k, {
+        }), (0, r.jsx)(w, {
           channel: l,
           message: t,
           jumping: P,

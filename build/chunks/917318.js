@@ -23,7 +23,7 @@ let m = {
     [i.u.REPORT_TO_MOD_CLOSED_REPORT]: () => d.default.UE81zc
   };
 
-function _(e) {
+function g(e) {
   let {
     type: t
   } = e, n = null;
@@ -49,7 +49,7 @@ function _(e) {
   }) : null
 }
 
-function g(e) {
+function _(e) {
   var t;
   let {
     message: n,
@@ -58,7 +58,7 @@ function g(e) {
   } = e, {
     author: d,
     mentions: f,
-    type: g
+    type: _
   } = n, h = (0, o.ZP)(n), b = n.getChannelId(), E = (0, l.e7)([u.default], () => u.default.getUser(f[0]), [f]), y = (0, o.JZ)(d, i), C = (0, s.l)({
     user: d,
     channelId: b,
@@ -69,7 +69,7 @@ function g(e) {
     channelId: b,
     guildId: i.guild_id,
     messageId: n.id
-  })(x), O = null != (t = m[g]) ? t : null;
+  })(x), O = null != (t = m[_]) ? t : null;
   if (null == O) return null;
   let j = p.intl.format(O(), {
     actorName: h.nick,
@@ -78,8 +78,8 @@ function g(e) {
     targetHook: v
   });
   return (0, r.jsx)(c.Z, {
-    iconNode: (0, r.jsx)(_, {
-      type: g
+    iconNode: (0, r.jsx)(g, {
+      type: _
     }),
     timestamp: n.timestamp,
     compact: a,
@@ -96,19 +96,19 @@ function h(e) {
   } = e, {
     author: a,
     type: u
-  } = n, d = (0, o.ZP)(n), m = n.getChannelId(), g = (0, o.JZ)(a, i), h = (0, s.l)({
+  } = n, d = (0, o.ZP)(n), m = n.getChannelId(), _ = (0, o.JZ)(a, i), h = (0, s.l)({
     user: a,
     channelId: m,
     guildId: i.guild_id,
     messageId: n.id
-  })(g), b = null != (t = f[u]) ? t : null;
+  })(_), b = null != (t = f[u]) ? t : null;
   if (null == b) return null;
   let E = p.intl.format(b(), {
     actorName: d.nick,
     actorHook: h
   });
   return (0, r.jsx)(c.Z, {
-    iconNode: (0, r.jsx)(_, {
+    iconNode: (0, r.jsx)(g, {
       type: u
     }),
     timestamp: n.timestamp,
@@ -125,7 +125,7 @@ function b(e) {
   } = e, {
     type: a
   } = t;
-  return a === i.u.REPORT_TO_MOD_BAN_USER || a === i.u.REPORT_TO_MOD_KICK_USER || a === i.u.REPORT_TO_MOD_TIMEOUT_USER ? (0, r.jsx)(g, {
+  return a === i.u.REPORT_TO_MOD_BAN_USER || a === i.u.REPORT_TO_MOD_KICK_USER || a === i.u.REPORT_TO_MOD_TIMEOUT_USER ? (0, r.jsx)(_, {
     message: t,
     channel: n,
     compact: l

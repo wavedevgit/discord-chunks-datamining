@@ -19,8 +19,8 @@ var r = n(255367),
   p = n(124347),
   m = n(695346),
   f = n(186523),
-  _ = n(553826),
-  g = n(506071),
+  g = n(553826),
+  _ = n(506071),
   h = n(203143),
   b = n(79390),
   E = n(839963),
@@ -261,7 +261,7 @@ function R(e) {
   let {
     attachment: n,
     className: i
-  } = e, l = (0, g.n)(), a = m.QK.useSetting();
+  } = e, l = (0, _.n)(), a = m.QK.useSetting();
   return (0, r.jsx)(p.ZP, {
     className: i,
     imageClassName: O.attachmentImage,
@@ -372,7 +372,7 @@ function U(e) {
     background: O.radioBackground,
     "aria-hidden": !0
   };
-  return t ? (0, r.jsx)(_.Z, I(j({}, l), {
+  return t ? (0, r.jsx)(g.Z, I(j({}, l), {
     foreground: O.radioForeground,
     className: i
   })) : (0, r.jsx)(f.Z, I(j({}, l), {

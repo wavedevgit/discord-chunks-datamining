@@ -14,8 +14,8 @@ var r = n(255367),
   p = n(496675),
   m = n(594174),
   f = n(626135),
-  _ = n(709054),
-  g = n(838440),
+  g = n(709054),
+  _ = n(838440),
   h = n(981631),
   b = n(18485);
 
@@ -24,7 +24,7 @@ function E(e) {
     assets: t,
     currentUser: n,
     message: r
-  } = e, i = (_.default.extractTimestamp(n.id) + _.default.extractTimestamp(r.id)) % t.length;
+  } = e, i = (g.default.extractTimestamp(n.id) + g.default.extractTimestamp(r.id)) % t.length;
   return t[i]
 }
 
@@ -37,7 +37,7 @@ function y(e) {
     stickers: d,
     event: p,
     eventProperties: m
-  } = e, [_, h] = i.useState(!1), y = i.useMemo(() => E({
+  } = e, [g, h] = i.useState(!1), y = i.useMemo(() => E({
     assets: d,
     currentUser: t,
     message: l
@@ -48,7 +48,7 @@ function y(e) {
   }), [u, t, l]), x = i.useCallback(async () => {
     let {
       valid: e
-    } = await (0, g.v)({
+    } = await (0, _.v)({
       type: s.Ie.FORM,
       content: "",
       channel: n
@@ -120,7 +120,7 @@ function y(e) {
     onClick: x,
     children: [(0, r.jsx)(c.Z, {
       className: b.CTAMessageSticker,
-      isInteracting: _,
+      isInteracting: g,
       sticker: y,
       size: 28
     }), C]

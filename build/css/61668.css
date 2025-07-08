@@ -1,6 +1,6 @@
 /**
   Module ID: 61668
-  Original File Name: 99fed5f445c097d1
+  Original File Name: 9d29a1b5ca6d4a27
 **/
 .wrapper__74bfa {
     align-items: center;
@@ -7185,18 +7185,10 @@ html .progress__61462 {
     margin: 0
 }
 
-.inviteTitleWrapper__083ae {
-    white-space: nowrap;
-    width: 100%
-}
-
-.inviteTitle__083ae,.inviteTitleWrapper__083ae {
-    overflow: hidden;
-    text-overflow: ellipsis
-}
-
 .inviteTitle__083ae {
-    padding: 8px 12px
+    overflow: hidden;
+    padding: 8px 12px;
+    text-overflow: ellipsis
 }
 
 .flex__708d1 {
@@ -10409,4 +10401,4 @@ html .progress__61462 {
     width: 16px
 }
 
-/*# sourceMappingURL=99fed5f445c097d1.css.map*/
+/*# sourceMappingURL=9d29a1b5ca6d4a27.css.map*/
