@@ -21,7 +21,13 @@ let d = {
       getLimit: h,
       onFetchStart: p,
       onFetchSuccess: f
-    } = e, g = i.kG(r), m = i.$G(g), S = (0, c.s5)(t);
+    } = e, g = i.kG(r), m = i.$G(g);
+    ! function(e) {
+      if (!Array.isArray(e.pinned)) return;
+      let t = e.pinned.some(e => !0 === e);
+      e.pinned = t
+    }(m);
+    let S = (0, c.s5)(t);
     null != S && i.jW(m, S);
     let y = o.Z.getSearchTabFetcher({
         searchContext: t,
