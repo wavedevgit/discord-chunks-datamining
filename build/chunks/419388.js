@@ -1,6 +1,6 @@
 /** Chunk was on 19577 **/
 n.d(t, {
-  ZP: () => O
+  ZP: () => j
 }), n(388685), n(642613), n(539854);
 var r = n(73800),
   i = n(392711),
@@ -56,7 +56,7 @@ let v = {
   scrollHeight: 0,
   offsetHeight: 0
 };
-class j {
+class O {
   isReady() {
     return this.props.messages.ready
   }
@@ -565,7 +565,7 @@ class j {
   }
 }
 
-function O(e) {
+function j(e) {
   let {
     messages: t,
     channel: n,
@@ -579,7 +579,7 @@ function O(e) {
     additionalMessagePadding: p = 0
   } = e, {
     windowId: h
-  } = r.useContext(u.ZP), [f] = r.useState(() => new j({
+  } = r.useContext(u.ZP), [f] = r.useState(() => new O({
     messages: t,
     channel: n,
     compact: i,

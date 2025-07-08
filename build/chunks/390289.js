@@ -47,14 +47,14 @@ let y = [{
   v = {
     channels: {}
   },
-  j = new Set,
-  O = null,
+  O = new Set,
+  j = null,
   E = 0,
   S = 0;
 
 function I() {
-  if (null == O || !N(O)) return !1;
-  let e = Z(O);
+  if (null == j || !N(j)) return !1;
+  let e = Z(j);
   if (e.lastActionTime > Date.now() - d.Z.Millis.DAY && e.viewDuration > C) return !1;
   let t = Date.now();
   e.lastActionTime = t, e.viewDuration += t - E, E = t
@@ -75,7 +75,7 @@ function Z(e) {
 }
 
 function N(e) {
-  if (!u.ZP.useNewNotifications || j.has(e)) return !1;
+  if (!u.ZP.useNewNotifications || O.has(e)) return !1;
   let t = a.Z.getBasicChannel(e);
   if (null == t || null == t.guild_id || u.ZP.isGuildOrCategoryOrChannelMuted(t.guild_id, t.id) || T(t.guild_id, t.id) || T(t.guild_id, t.parent_id)) return !1;
   let n = u.ZP.resolveUnreadSetting(t);
@@ -111,17 +111,17 @@ class A extends(r = i.ZP.PersistedStore) {
       for (let e of y)
         if (i < e.timeSinceJoin && (l.numSends >= e.sends || l.viewDuration >= e.viewTime)) return !0;
       return !1
-    }(t) && (delete v.channels[e], j.add(e), (0, f.IG)(t.guild_id, t.id, g.i.ALL_MESSAGES), !0)
+    }(t) && (delete v.channels[e], O.add(e), (0, f.IG)(t.guild_id, t.id, g.i.ALL_MESSAGES), !0)
   }
 }
 _(A, "displayName", "UnreadSettingNoticeStore2"), _(A, "persistKey", "UnreadSettingNoticeStore2");
 let w = new A(l.Z, {
     CHANNEL_SELECT: function() {
       let e = I();
-      return O = c.Z.getChannelId(), E = Date.now(), e
+      return j = c.Z.getChannelId(), E = Date.now(), e
     },
     CONNECTION_OPEN: function() {
-      O = c.Z.getChannelId(), E = Date.now(), P();
+      j = c.Z.getChannelId(), E = Date.now(), P();
       let e = Date.now() - x;
       h.default.forEach(v.channels, (t, n) => {
         let {

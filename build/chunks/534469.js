@@ -24,8 +24,8 @@ var r = n(255367),
   C = n(869765),
   x = n(703656),
   v = n(695346),
-  j = n(592125),
-  O = n(906467),
+  O = n(592125),
+  j = n(906467),
   E = n(323873),
   S = n(709054),
   I = n(786761),
@@ -183,8 +183,8 @@ function er(e) {
     compact: b = !1,
     className: _,
     groupId: y,
-    viewingChannelId: j
-  } = e, O = a.type === q.uaV.REPLY ? a.messageReference : void 0, E = (0, c.JA)(null != (t = e.id) ? t : ""), {
+    viewingChannelId: O
+  } = e, j = a.type === q.uaV.REPLY ? a.messageReference : void 0, E = (0, c.JA)(null != (t = e.id) ? t : ""), {
     onFocus: S
   } = E, P = ee(E, ["onFocus"]), {
     isFocused: T,
@@ -194,7 +194,7 @@ function er(e) {
     popouts: F,
     selected: V,
     setPopout: Q
-  } = (0, M.Z)(a.id, Y.d$), et = v.RS.useSetting(), en = v.NA.useSetting(), er = (0, u.e7)([C.Z], () => C.Z.getMessageByReference(O)), ei = (0, m.A)((null != (n = a.editedTimestamp) ? n : a.timestamp).valueOf()), {
+  } = (0, M.Z)(a.id, Y.d$), et = v.RS.useSetting(), en = v.NA.useSetting(), er = (0, u.e7)([C.Z], () => C.Z.getMessageByReference(j)), ei = (0, m.A)((null != (n = a.editedTimestamp) ? n : a.timestamp).valueOf()), {
     handleMouseEnter: el,
     handleMouseLeave: eo,
     isHovered: ea
@@ -214,7 +214,7 @@ function er(e) {
     allowHeading: ei,
     allowLinks: !0,
     previewLinkTarget: !0,
-    viewingChannelId: j
+    viewingChannelId: O
   }), eh = (0, k.Z)(s, h, es), ef = (0, N.ZP)(a), em = (0, w.iG)(a, y), eg = (0, w.Gx)(a), eb = (0, G.Z)(e, ed, !1), e_ = i.useCallback(() => (0, x.XU)(g, h, s), [g, h, s]), ey = (0, f.p9)({
     guildId: g,
     roleId: ef.iconRoleId
@@ -246,7 +246,7 @@ function er(e) {
         setPopout: Q,
         referencedUsernameProfile: F.referencedUsernameProfile,
         referencedAvatarProfile: F.referencedAvatarProfile,
-        replyReference: O,
+        replyReference: j,
         replyMessage: er,
         isReplySpineClickable: !0
       })),
@@ -254,7 +254,7 @@ function er(e) {
         messageProps: e,
         setPopout: Q,
         messagePopouts: F,
-        replyReference: O,
+        replyReference: j,
         author: ef,
         repliedMessage: er,
         roleIcon: ey
@@ -319,7 +319,7 @@ let ei = i.memo(function(e) {
       handleMouseEnter: eC,
       handleMouseLeave: ex,
       hasHovered: ev,
-      isHovered: ej
+      isHovered: eO
     } = (0, R.tn)({
       groupId: el,
       message: x,
@@ -327,7 +327,7 @@ let ei = i.memo(function(e) {
       popouts: em
     }),
     {
-      isFocused: eO,
+      isFocused: ej,
       hasFocused: eE,
       handleFocus: eS,
       handleBlur: eI
@@ -340,12 +340,12 @@ let ei = i.memo(function(e) {
     }, [eI, ex]),
     eN = (0, u.e7)([E.Z], () => E.Z.isEditing(et, P), [et, P]),
     eT = (0, u.e7)([p.Z], () => p.Z.keyboardModeEnabled),
-    eA = eg || eN || eT && eO,
-    ew = eA || ej,
-    eR = (0, u.e7)([j.Z], () => x.hasFlag(q.iLy.HAS_THREAD) && j.Z.getChannel(S.default.castMessageIdAsChannelId(x.id))),
+    eA = eg || eN || eT && ej,
+    ew = eA || eO,
+    eR = (0, u.e7)([O.Z], () => x.hasFlag(q.iLy.HAS_THREAD) && O.Z.getChannel(S.default.castMessageIdAsChannelId(x.id))),
     ek = x.isFirstMessageInForumPost(Q),
     eM = (0, m.A)((null != (n = x.editedTimestamp) ? n : x.timestamp).valueOf()),
-    eD = (0, u.e7)([O.Z], () => O.Z.isDeveloper),
+    eD = (0, u.e7)([j.Z], () => j.Z.isDeveloper),
     {
       content: eL,
       hasSpoilerEmbeds: eU
@@ -395,7 +395,7 @@ let ei = i.memo(function(e) {
         children: [(0, _.Uw)(x) && (0, r.jsx)(g.Z, {
           compact: en,
           message: x,
-          hovering: ej && !eN && !eX
+          hovering: eO && !eN && !eX
         }), (0, r.jsx)(A.Z, $(J({}, eu), {
           "aria-setsize": -1,
           "aria-roledescription": K.intl.string(K.t.BAB0yM),
@@ -454,7 +454,7 @@ let ei = i.memo(function(e) {
             buttonProps: e,
             setPopout: eb,
             messagePopouts: em,
-            isFocused: ej || eO
+            isFocused: eO || ej
           }) : void 0,
           childrenSystemMessage: (0, W.Z)(e),
           childrenMessageContent: l,

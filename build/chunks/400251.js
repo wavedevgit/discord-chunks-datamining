@@ -23,8 +23,8 @@ var r = n(255367),
   C = n(683818),
   x = n(16853),
   v = n(981631),
-  j = n(388032),
-  O = n(901593),
+  O = n(388032),
+  j = n(901593),
   E = n(883760);
 
 function S(e) {
@@ -80,15 +80,15 @@ let Z = e => {
   } = e;
   return (0, r.jsxs)(s.P3F, {
     onClick: t,
-    className: O.addEntryCard,
+    className: j.addEntryCard,
     children: [(0, r.jsx)("img", {
       alt: "",
       src: E
     }), (0, r.jsx)(s.Text, {
       variant: "text-sm/semibold",
       color: "header-primary",
-      className: O.addServerText,
-      children: j.intl.string(j.t.H9jxS0)
+      className: j.addServerText,
+      children: O.intl.string(O.t.H9jxS0)
     })]
   })
 };
@@ -100,12 +100,12 @@ function N(e) {
     canEdit: u
   } = (0, C.Z)(t);
   return (0, r.jsx)("div", {
-    className: o()(O.actionButtonsContainer, {
-      [O.forceButtonsShow]: l
+    className: o()(j.actionButtonsContainer, {
+      [j.forceButtonsShow]: l
     }),
     children: (0, r.jsxs)(p.ZP, {
       children: [u ? (0, r.jsx)(s.ua7, {
-        text: j.intl.string(j.t.XnuOvL),
+        text: O.intl.string(O.t.XnuOvL),
         hideOnClick: !0,
         children: e => {
           var {
@@ -122,11 +122,11 @@ function N(e) {
                 }))
               })
             },
-            "aria-label": j.intl.string(j.t.XnuOvL),
+            "aria-label": O.intl.string(O.t.XnuOvL),
             children: (0, r.jsx)(s.vdY, {
               size: "xs",
               color: "currentColor",
-              className: O.overflowIcon
+              className: j.overflowIcon
             })
           }))
         }
@@ -141,7 +141,7 @@ function N(e) {
             onClick: t
           } = e, n = P(e, ["onClick"]);
           return (0, r.jsx)(s.ua7, {
-            text: j.intl.string(j.t.UKOtz8),
+            text: O.intl.string(O.t.UKOtz8),
             hideOnClick: !0,
             children: e => {
               var {
@@ -152,11 +152,11 @@ function N(e) {
                 onClick: e => {
                   null == i || i(), t(e)
                 },
-                "aria-label": j.intl.string(j.t.UKOtz8),
+                "aria-label": O.intl.string(O.t.UKOtz8),
                 children: (0, r.jsx)(s.xhG, {
                   size: "md",
                   color: "currentColor",
-                  className: O.overflowIcon
+                  className: j.overflowIcon
                 })
               }))
             }
@@ -187,9 +187,9 @@ let T = e => {
     id: l.guildId,
     icon: l.icon,
     size: 40
-  })) ? t : void 0, Z = j.intl.string(j.t.VJlc0d);
-  return C && (Z = j.intl.string(j.t.cqWE2d)), (0, r.jsxs)("div", {
-    className: O.card,
+  })) ? t : void 0, Z = O.intl.string(O.t.VJlc0d);
+  return C && (Z = O.intl.string(O.t.cqWE2d)), (0, r.jsxs)("div", {
+    className: j.card,
     onContextMenu: e => {
       (0, c.jW)(e, async () => {
         let {
@@ -201,24 +201,24 @@ let T = e => {
       })
     },
     children: [(0, r.jsxs)("div", {
-      className: O.cardHeader,
+      className: j.cardHeader,
       children: [(0, r.jsx)("div", {
-        className: O.splash,
+        className: j.splash,
         children: null != E && (0, r.jsx)("img", {
           src: E,
           alt: "",
-          className: O.splashImage
+          className: j.splashImage
         })
       }), (0, r.jsx)("div", {
-        className: O.guildIcon,
+        className: j.guildIcon,
         children: (0, r.jsx)(d.ZP, {
           mask: d.ZP.Masks.SQUIRCLE,
           width: 48,
           height: 48,
           children: (0, r.jsx)("div", {
-            className: O.iconMask,
+            className: j.iconMask,
             children: (0, r.jsx)(h.Z, {
-              className: O.icon,
+              className: j.icon,
               iconSrc: P,
               guild: new b.ZP(l),
               size: h.Z.Sizes.MEDIUM,
@@ -228,52 +228,52 @@ let T = e => {
         })
       })]
     }), (0, r.jsxs)("div", {
-      className: O.guildInfo,
+      className: j.guildInfo,
       children: [(0, r.jsxs)("div", {
-        className: O.title,
+        className: j.title,
         children: [(0, r.jsx)(f.Z, {
-          className: O.guildBadge,
+          className: j.guildBadge,
           guild: l,
           tooltipColor: s.ua7.Colors.PRIMARY
         }), (0, r.jsx)(s.Text, {
-          className: O.guildName,
+          className: j.guildName,
           variant: "heading-md/semibold",
           color: "header-primary",
           children: l.name
         })]
       }), (0, r.jsx)(s.Text, {
-        className: O.description,
+        className: j.description,
         variant: "text-sm/normal",
         color: "header-secondary",
         children: l.description
       }), (0, r.jsxs)("div", {
-        className: O.memberInfo,
+        className: j.memberInfo,
         children: [null != l.approximatePresenceCount && (0, r.jsxs)("div", {
-          className: O.memberCount,
+          className: j.memberCount,
           children: [(0, r.jsx)("div", {
-            className: O.dotOnline
+            className: j.dotOnline
           }), (0, r.jsx)(s.Text, {
             variant: "text-xs/normal",
             color: "header-secondary",
-            children: j.intl.format(j.t["LC+S+v"], {
+            children: O.intl.format(O.t["LC+S+v"], {
               membersOnline: l.approximatePresenceCount
             })
           })]
         }), null != l.approximateMemberCount && (0, r.jsxs)("div", {
-          className: O.memberCount,
+          className: j.memberCount,
           children: [(0, r.jsx)("div", {
-            className: O.dotOffline
+            className: j.dotOffline
           }), (0, r.jsx)(s.Text, {
             variant: "text-xs/normal",
             color: "header-secondary",
-            children: j.intl.format(j.t.zRl6XV, {
+            children: O.intl.format(O.t.zRl6XV, {
               count: l.approximateMemberCount
             })
           })]
         })]
       }), (0, r.jsx)(s.zxk, {
         submitting: o,
-        className: O.joinButton,
+        className: j.joinButton,
         color: C ? s.zxk.Colors.PRIMARY : s.zxk.Colors.GREEN,
         onClick: x,
         children: Z

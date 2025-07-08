@@ -22,8 +22,8 @@ var r = n(255367),
   C = n(91218),
   x = n(623624),
   v = n(518738),
-  j = n(850020),
-  O = n(965376),
+  O = n(850020),
+  j = n(965376),
   E = n(159299),
   S = n(670188),
   I = n(199902),
@@ -74,7 +74,7 @@ let W = U.ZP.getEnableHardwareAcceleration(),
     } = e, s = i.useRef(null), u = (0, p.e7)([A.Z], () => A.Z.isTyping(t.id, o)), h = (0, p.e7)([P.ZP], () => P.ZP.getMember(t.guild_id, o)), g = (0, p.e7)([Z.Z], () => {
       var e;
       return (null == h ? void 0 : h.colorRoleId) != null ? null == (e = Z.Z.getRole(t.guild_id, h.colorRoleId)) ? void 0 : e.name : void 0
-    }, [t.guild_id, h]), b = (0, p.e7)([w.default], () => w.default.getUser(o)), _ = (0, p.e7)([w.default], () => w.default.getCurrentUser()), y = (null == b ? void 0 : b.id) === (null == _ ? void 0 : _.id), C = (0, p.e7)([N.Z, T.Z], () => y ? T.Z.getStatus() : N.Z.getStatus(o, t.guild_id)), v = (0, p.e7)([N.Z], () => N.Z.isMobileOnline(o)), O = (0, p.e7)([N.Z, T.Z], () => y ? T.Z.getActivities() : N.Z.getActivities(o, t.guild_id)), R = (0, p.e7)([I.Z], () => I.Z.getAnyStreamForUser(o)), k = (0, c.JA)(o), D = (0, p.e7)([E.Z], () => E.Z.canUserViewChannel(t.id, l, o)), U = (null == b ? void 0 : b.id) != null && b.id === a, G = i.useCallback(e => {
+    }, [t.guild_id, h]), b = (0, p.e7)([w.default], () => w.default.getUser(o)), _ = (0, p.e7)([w.default], () => w.default.getCurrentUser()), y = (null == b ? void 0 : b.id) === (null == _ ? void 0 : _.id), C = (0, p.e7)([N.Z, T.Z], () => y ? T.Z.getStatus() : N.Z.getStatus(o, t.guild_id)), v = (0, p.e7)([N.Z], () => N.Z.isMobileOnline(o)), j = (0, p.e7)([N.Z, T.Z], () => y ? T.Z.getActivities() : N.Z.getActivities(o, t.guild_id)), R = (0, p.e7)([I.Z], () => I.Z.getAnyStreamForUser(o)), k = (0, c.JA)(o), D = (0, p.e7)([E.Z], () => E.Z.canUserViewChannel(t.id, l, o)), U = (null == b ? void 0 : b.id) != null && b.id === a, G = i.useCallback(e => {
       null != b && (0, f.jW)(e, async () => {
         let {
           default: e
@@ -117,7 +117,7 @@ let W = U.ZP.getEnableHardwareAcceleration(),
           object: F.qAy.BOOST_GEM_ICON
         }
       })
-    }, [t.guild_id]), q = (0, j.K)({
+    }, [t.guild_id]), q = (0, O.K)({
       user: b
     }), [K, X] = i.useState(!1);
     if (null == b) return null;
@@ -159,7 +159,7 @@ let W = U.ZP.getEnableHardwareAcceleration(),
           currentUser: _,
           nick: null == h ? void 0 : h.nick,
           status: C,
-          activities: O,
+          activities: j,
           colorString: null == h ? void 0 : h.colorString,
           colorStrings: null == h ? void 0 : h.colorStrings,
           colorRoleName: g,
@@ -245,7 +245,7 @@ function Q(e) {
     guild: n
   } = e, l = "members-".concat(t.id), {
     analyticsLocations: a
-  } = (0, _.ZP)(b.Z.MEMBER_LIST), d = (0, O.D)(t.id, n), f = d.filter(e => e.userIds.length > 0).reverse()[0], {
+  } = (0, _.ZP)(b.Z.MEMBER_LIST), d = (0, j.D)(t.id, n), f = d.filter(e => e.userIds.length > 0).reverse()[0], {
     navigator: m,
     listRef: y
   } = function(e, t) {

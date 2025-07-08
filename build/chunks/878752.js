@@ -28,8 +28,8 @@ function v(e) {
     hasActiveStream: n,
     showRightDivider: v
   } = e, {
-    analyticsLocations: j
-  } = (0, a.ZP)(o.Z.VOICE_CONTROL_TRAY), O = (0, h.Ou)(t), E = i.useRef(null), S = (0, u.Z)(), {
+    analyticsLocations: O
+  } = (0, a.ZP)(o.Z.VOICE_CONTROL_TRAY), j = (0, h.Ou)(t), E = i.useRef(null), S = (0, u.Z)(), {
     isSharedCanvasEnabled: I
   } = f.Z.useExperiment({
     guildId: null == t ? void 0 : t.guild_id,
@@ -45,7 +45,7 @@ function v(e) {
   let R = P && Z,
     k = I && n;
   return (0, r.jsxs)(a.Gt, {
-    value: j,
+    value: O,
     children: [(0, r.jsxs)("div", {
       className: x.voiceEffectsActionBar,
       children: [R && (0, r.jsx)(g.Z, {
@@ -54,14 +54,14 @@ function v(e) {
         potionRef: E,
         channel: t,
         markAsDismissed: A
-      }), O && (0, r.jsx)(y.Z, {
+      }), j && (0, r.jsx)(y.Z, {
         ref: E,
         channel: t,
         glow: w
       }), k && (0, r.jsx)(b.Z, {}), k && (0, r.jsx)(_.Z, {
         channel: t
       }), k && (0, r.jsx)(C.Z, {})]
-    }), v && (R || w || O || k) && (0, r.jsx)("div", {
+    }), v && (R || w || j || k) && (0, r.jsx)("div", {
       className: x.divider
     })]
   })

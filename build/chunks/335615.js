@@ -22,8 +22,8 @@ var r = n(255367),
   C = n(100527),
   x = n(367907),
   v = n(906732),
-  j = n(493324),
-  O = n(611064),
+  O = n(493324),
+  j = n(611064),
   E = n(677432),
   S = n(178762),
   I = n(868671),
@@ -131,9 +131,9 @@ let et = Y.ZP.getEnableHardwareAcceleration(),
       guildId: C,
       isTyping: x,
       isMobileOnline: v,
-      premiumSince: j,
-      nameplate: O
-    } = e, E = ee(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate"]), S = i.useRef(null), [I, P] = i.useState(!1), Z = null != j ? new Date(j) : null, N = i.useCallback(e => {
+      premiumSince: O,
+      nameplate: j
+    } = e, E = ee(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate"]), S = i.useRef(null), [I, P] = i.useState(!1), Z = null != O ? new Date(O) : null, N = i.useCallback(e => {
       (0, m.jW)(e, async () => {
         let {
           default: e
@@ -206,7 +206,7 @@ let et = Y.ZP.getEnableHardwareAcceleration(),
           onClickPremiumGuildIcon: w,
           selected: I,
           itemProps: E,
-          nameplate: O,
+          nameplate: j,
           onClick: e => {
             e.shiftKey ? null == A || A() : P(e => !e)
           },
@@ -282,7 +282,7 @@ class ea extends i.Component {
     return e.channel.id !== this.props.channel.id || e.version !== this.props.version || e.groups.length !== this.props.groups.length
   }
   componentDidMount() {
-    this.updateSubscription(), this.trackMemberListViewed(), this._areActivitiesExperimentallyHidden = (0, j.$)("ChannelMembers")
+    this.updateSubscription(), this.trackMemberListViewed(), this._areActivitiesExperimentallyHidden = (0, O.$)("ChannelMembers")
   }
   componentDidUpdate(e) {
     e.channel.id !== this.props.channel.id && this.updateSubscription(), this.trackMemberListViewed(), this.updateMaxContentFeedRowSeen()
@@ -384,7 +384,7 @@ class ea extends i.Component {
         groups: n,
         channel: l
       } = this.props, o = n[t];
-      if ((0, O.R)(o)) return (0, i.createElement)(O.Z, $(J({}, o), {
+      if ((0, j.R)(o)) return (0, i.createElement)(j.Z, $(J({}, o), {
         key: "section-".concat(t)
       }));
       if (0 === t) {
@@ -483,7 +483,7 @@ class ea extends i.Component {
       this.props.updateMaxContentFeedRowSeen(r)
     }, 50)), Q(this, "getContentFeedGroup", () => {
       let e = this.props.groups[I.T];
-      if ((0, O.R)(e)) return e
+      if ((0, j.R)(e)) return e
     }), Q(this, "hasContentFeed", () => null != this.getContentFeedGroup()), Q(this, "getRowHeightComputer", () => {
       let e = this.getContentFeedGroup(),
         {
@@ -581,13 +581,13 @@ function es(e) {
         })
       }
     })
-  }, [42]), j = i.useCallback(() => new Promise(e => {
+  }, [42]), O = i.useCallback(() => new Promise(e => {
     let t = b.current;
     if (null == t) return e();
     t.scrollToTop({
       callback: () => requestAnimationFrame(() => e())
     })
-  }), []), O = i.useCallback(() => new Promise(e => {
+  }), []), j = i.useCallback(() => new Promise(e => {
     let t = b.current;
     if (null == t) return e();
     t.scrollToBottom({
@@ -599,8 +599,8 @@ function es(e) {
     id: "members-".concat(t.id),
     setFocus: x,
     isEnabled: a,
-    scrollToStart: j,
-    scrollToEnd: O
+    scrollToStart: O,
+    scrollToEnd: j
   });
   return (0, r.jsx)(v.Gt, {
     value: l,

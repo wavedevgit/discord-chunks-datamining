@@ -22,8 +22,8 @@ var r = n(255367),
   C = n(920888),
   x = n(287151),
   v = n(799903),
-  j = n(501517),
-  O = n(982168),
+  O = n(501517),
+  j = n(982168),
   E = n(216572),
   S = n(817608),
   I = n(569471),
@@ -75,8 +75,8 @@ function F(e, t) {
 function H(e) {
   let {
     channel: t
-  } = e, l = t.isArchivedThread(), o = (0, O.P0)(t), [a, u] = i.useState(!1), d = () => {
-    u(!0), j.Z.resolveFlag(t.id).then(() => {
+  } = e, l = t.isArchivedThread(), o = (0, j.P0)(t), [a, u] = i.useState(!1), d = () => {
+    u(!0), O.Z.resolveFlag(t.id).then(() => {
       u(!1)
     })
   };
@@ -122,8 +122,8 @@ function G(e) {
     parentChannelId: s
   } = e, {
     ref: v,
-    width: j
-  } = (0, p.ZP)(), [O, D] = i.useState(3), [G, V] = i.useState(!n), [z, W] = (0, h.Z)(!1, 2e3), Y = (0, a.e7)([Z.Z], () => Z.Z.getChannel(t), [t]), {
+    width: O
+  } = (0, p.ZP)(), [j, D] = i.useState(3), [G, V] = i.useState(!n), [z, W] = (0, h.Z)(!1, 2e3), Y = (0, a.e7)([Z.Z], () => Z.Z.getChannel(t), [t]), {
     firstMessage: q
   } = (0, w.cl)(Y), K = (0, a.e7)([I.Z], () => I.Z.hasJoined(t)), {
     disableReactionUpdates: X,
@@ -151,8 +151,8 @@ function G(e) {
   });
   let [eo, ea] = i.useState(!0);
   if (i.useEffect(() => {
-      null != j && (D(Math.floor((j - 280) / 58)), ea(!1))
-    }, [j]), null == Y || null == q) return null;
+      null != O && (D(Math.floor((O - 280) / 58)), ea(!1))
+    }, [O]), null == Y || null == q) return null;
   let es = q.reactions.length > 0,
     ec = () => {
       K ? P.Z.leaveThread(Y, "Forum Toolbar") : P.Z.joinThread(Y, "Forum Toolbar")
@@ -216,7 +216,7 @@ function G(e) {
           isLurking: J,
           isGuest: $,
           isPendingMember: ee,
-          maxReactions: O,
+          maxReactions: j,
           className: L.reactions,
           useChatFontScaling: !1,
           isForumToolbar: !0,

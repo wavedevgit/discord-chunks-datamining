@@ -60,16 +60,16 @@ function x(e) {
     warningId: x,
     senderId: v
   } = e, {
-    isBlocked: j
+    isBlocked: O
   } = (0, o.cj)([p.Z], () => ({
     isBlocked: p.Z.isBlocked(v)
-  }), [v]), O = i.useCallback(() => {
+  }), [v]), j = i.useCallback(() => {
     (0, h.T)(t, [x])
   }, [t, x]), E = (0, b.C2)(), S = i.useCallback(e => () => {
     s.Z.blockUser(v, {
       location: b.zr
     }).then(() => {
-      O()
+      j()
     }), (0, m.qc)({
       channelId: t,
       warningId: x,
@@ -77,7 +77,7 @@ function x(e) {
       warningType: f.pj.STRANGER_DANGER,
       cta: e
     })
-  }, [O, t, x, v]);
+  }, [j, t, x, v]);
   i.useEffect(() => {
     (0, m.MC)(_.rMx.SAFETY_WARNING_VIEWED, {
       channelId: t,
@@ -185,7 +185,7 @@ function x(e) {
     warningType: f.pj.STRANGER_DANGER,
     header: y.intl.string(y.t.iOkDpK),
     description: y.intl.string(y.t.ISUbcH),
-    onDismiss: O,
+    onDismiss: j,
     buttons: [{
       text: y.intl.string(y.t["Qk/c4+"]),
       color: a.zxk.Colors.BRAND,
@@ -198,7 +198,7 @@ function x(e) {
           cta: m.NM.OPEN_MORE_TIPS
         })
       }
-    }, ...j ? [] : [{
+    }, ...O ? [] : [{
       text: y.intl.string(y.t.ie0QdH),
       color: a.zxk.Colors.RED,
       onclick: () => P(m.NM.USER_BANNER_BLOCK_CONFIRM, m.NM.USER_BANNER_BLOCK_CANCEL)

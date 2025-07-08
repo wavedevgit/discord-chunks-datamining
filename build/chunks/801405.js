@@ -32,8 +32,8 @@ function v(e) {
     popoutWindow: p,
     currentWindow: v
   } = e, {
-    parentAnalyticsLocation: j
-  } = (0, c.ZP)(), O = n === y.IlC.POPOUT, E = i.useRef(null), {
+    parentAnalyticsLocation: O
+  } = (0, c.ZP)(), j = n === y.IlC.POPOUT, E = i.useRef(null), {
     currentLayout: S,
     mode: I
   } = (0, l.cj)([u.Z], () => {
@@ -54,15 +54,15 @@ function v(e) {
       currentDocument: N,
       rootNode: T
     } = i.useMemo(() => {
-      let e = null != p && O ? p.document : document,
+      let e = null != p && j ? p.document : document,
         t = v.document.getElementById("app-mount");
       return {
         currentWindow: v,
         currentDocument: e,
         rootNode: t
       }
-    }, [p, O, v]),
-    A = o && !O,
+    }, [p, j, v]),
+    A = o && !j,
     w = I === y.WtW.VIDEO && P && !A,
     R = i.useCallback((e, r) => {
       r !== e && (a.Z.updateLayout(t.id, r, n), r === y.AEg.FULL_SCREEN && t.isPrivate() && g.S.dispatch(y.CkL.TEXTAREA_BLUR))
@@ -73,8 +73,8 @@ function v(e) {
       }, N))
     }, [N, R, T]),
     M = i.useCallback(e => () => {
-      null != T && ((0, d.v)(j, d.d.FULL_SCREEN, e !== y.AEg.FULL_SCREEN), e !== y.AEg.FULL_SCREEN ? (Z.current = e, R(e, y.AEg.FULL_SCREEN), (0, _.Dj)(T)) : k(e))
-    }, [R, k, T, j]);
+      null != T && ((0, d.v)(O, d.d.FULL_SCREEN, e !== y.AEg.FULL_SCREEN), e !== y.AEg.FULL_SCREEN ? (Z.current = e, R(e, y.AEg.FULL_SCREEN), (0, _.Dj)(T)) : k(e))
+    }, [R, k, T, O]);
   i.useEffect(() => {
     let e = () => {
       null != T && ((0, _.rB)(T, N) || S !== y.AEg.FULL_SCREEN || M(S)())
@@ -113,15 +113,15 @@ function v(e) {
       }
       return e
     }({
-      video_layout: O ? "popout" : S
+      video_layout: j ? "popout" : S
     }, (0, s.AB)(e.id))), () => {
-      O && (0, b.isMac)() || t(S)
+      j && (0, b.isMac)() || t(S)
     }
-  }, [S, O]), i.useEffect(() => {
+  }, [S, j]), i.useEffect(() => {
     null != T && E.current === y.WtW.VIDEO && I === y.WtW.VOICE && (0, _.Pr)(T, N)
   }, [N, I, E, T]), i.useEffect(() => {
-    !P && O && x()
-  }, [P, O]), w) ? (0, r.jsx)(h.Z, {
+    !P && j && x()
+  }, [P, j]), w) ? (0, r.jsx)(h.Z, {
     themeable: !1,
     node: T,
     guestWindow: p,

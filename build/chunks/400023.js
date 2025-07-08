@@ -22,8 +22,8 @@ var r = n(255367),
   C = n(160404),
   x = n(765104),
   v = n(695346),
-  j = n(314897),
-  O = n(796974),
+  O = n(314897),
+  j = n(796974),
   E = n(323873),
   S = n(607744),
   I = n(375954),
@@ -102,7 +102,7 @@ let W = i.memo(function(e) {
       showNewMessagesBar: y,
       messageDisplayCompact: x,
       channelStream: v,
-      uploads: j,
+      uploads: O,
       hasUnreads: E,
       editingMessageId: S,
       fontSize: I,
@@ -113,7 +113,7 @@ let W = i.memo(function(e) {
       jumpBarClassName: R,
       typingGradient: M,
       isChatInputBottomAligned: W
-    } = e, [Y, q] = i.useState(null != (n = O.Z.isAtBottom(g.id)) && n), K = i.useMemo(() => x ? (0, k.aJ)({
+    } = e, [Y, q] = i.useState(null != (n = j.Z.isAtBottom(g.id)) && n), K = i.useMemo(() => x ? (0, k.aJ)({
       compact: !0,
       messageGroups: 30,
       groupRange: 4,
@@ -156,7 +156,7 @@ let W = i.memo(function(e) {
       showNewMessagesBar: y,
       messageDisplayCompact: x,
       channelStream: v,
-      uploads: j,
+      uploads: O,
       loadMore: X.loadMore,
       scrollManager: X,
       specs: K,
@@ -280,7 +280,7 @@ let W = i.memo(function(e) {
     let {
       canManageMessages: h,
       permissionVersion: C,
-      canChat: O
+      canChat: j
     } = function(e) {
       let t = e.getGuildId(),
         n = (0, c.e7)([S.Z], () => null == t || S.Z.canChatInGuild(t), [t]),
@@ -347,7 +347,7 @@ let W = i.memo(function(e) {
         }, {
           autoTrackExposure: !1
         }),
-        a = null != (n = null == (t = T.default.getUser(j.default.getId())) ? void 0 : t.hasFlag(B.xW$.SPAMMER)) && n,
+        a = null != (n = null == (t = T.default.getUser(O.default.getId())) ? void 0 : t.hasFlag(B.xW$.SPAMMER)) && n,
         s = (0, p.ts)(e),
         u = (0, _.Z)("use_topic_dividers_in_chat"),
         d = (0, c.Wu)([x.Z], () => {
@@ -397,7 +397,7 @@ let W = i.memo(function(e) {
           uploads: (0, c.e7)([N.Z], () => N.Z.getFiles(t.id), [t]),
           unreadCount: (0, c.e7)([Z.ZP], () => Z.ZP.getUnreadCount(t.id), [t]),
           hasUnreads: null != Y,
-          canChat: O,
+          canChat: j,
           editingMessageId: q,
           fontSize: k,
           keyboardModeEnabled: U,

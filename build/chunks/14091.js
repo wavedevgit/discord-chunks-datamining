@@ -22,8 +22,8 @@ var r = n(255367),
   C = n(768119),
   x = n(944486),
   v = n(585483),
-  j = n(72006),
-  O = n(965996),
+  O = n(72006),
+  j = n(965996),
   E = n(652399),
   S = n(970850),
   I = n(861262),
@@ -49,7 +49,7 @@ function L(e, t, n) {
 
 function U(e) {
   let t = null != e ? C.Z.getEditorState(e) : null;
-  return null != t ? j.Sq(t) : null
+  return null != t ? O.Sq(t) : null
 }
 class B extends i.Component {
   componentDidMount() {
@@ -397,7 +397,7 @@ function V(e) {
     } = (0, S.Z)({
       searchId: a
     }),
-    j = i.useCallback(e => {
+    O = i.useCallback(e => {
       v(e);
       let t = U(a);
       T.Z.fetchCrossDMMessages({
@@ -407,7 +407,7 @@ function V(e) {
         searchMode: e
       })
     }, [o, a, v]),
-    O = i.useCallback(e => {
+    j = i.useCallback(e => {
       var t;
       d(e), T.Z.fetchCrossDMMessages({
         searchContext: o,
@@ -429,8 +429,8 @@ function V(e) {
     theme: t,
     isFeedbackVisible: n,
     dismissFeedbackEntrypoint: l,
-    onPageChange: O,
-    onSearchModeChange: j,
+    onPageChange: j,
+    onSearchModeChange: O,
     searchMode: x
   })
 }
@@ -443,7 +443,7 @@ function z(e) {
   }), o = i.useRef(null), [a, s] = i.useState(!1), {
     enabled: c,
     force: u
-  } = (0, O.f)({
+  } = (0, j.f)({
     location: "SearchResults"
   });
   i.useEffect(() => {

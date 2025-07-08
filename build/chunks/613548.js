@@ -22,8 +22,8 @@ var r = n(255367),
   C = n(651183),
   x = n(853476),
   v = n(390322),
-  j = n(616286),
-  O = n(975146),
+  O = n(616286),
+  j = n(975146),
   E = n(597998),
   S = n(606304),
   I = n(358221),
@@ -149,7 +149,7 @@ function M(e) {
       let {
         isShown: n
       } = t;
-      return (0, i.createElement)(O.Z, R(w({}, e), {
+      return (0, i.createElement)(j.Z, R(w({}, e), {
         buttonRef: l,
         isActive: n,
         count: S,
@@ -159,12 +159,12 @@ function M(e) {
     }
   }, "call-members-popout")), U && !B && F.push((0, r.jsx)(_.Z, {
     className: A.button
-  }, "for-later")), L && F.push((0, r.jsx)(O.Z, {
+  }, "for-later")), L && F.push((0, r.jsx)(j.Z, {
     className: o()(A.button, {
       [A.lastButton]: n
     }),
     onClick: () => d.Z.toggleParticipantsList(t.id, !T)
-  }, "participants-list-button")), M && F.push((0, r.jsx)(j.T, {
+  }, "participants-list-button")), M && F.push((0, r.jsx)(O.T, {
     channelId: t.id,
     className: o()(A.button, {
       [A.lastButton]: T

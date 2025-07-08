@@ -25,7 +25,7 @@ function m(e) {
       _ && a.Z.searchGuildBans(t.guild_id, void 0, [null == m ? void 0 : m.id]).finally(() => C(!1))
     }), !x) return null;
   let v = !0 === b ? f.intl.string(h.default.dpfwQ0) : f.intl.string(h.default.ASv23d),
-    j = "ban-user-".concat(null == m ? void 0 : m.id);
+    O = "ban-user-".concat(null == m ? void 0 : m.id);
   return (0, r.jsx)(p.Z, {
     text: v,
     icon: o.pgN,
@@ -73,5 +73,5 @@ function m(e) {
     disabled: !0 === b || y,
     submitting: y,
     color: o.zxk.Colors.RED
-  }, j)
+  }, O)
 }

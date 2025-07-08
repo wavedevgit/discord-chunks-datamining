@@ -23,8 +23,8 @@ var r = n(255367),
   C = n(493010),
   x = n(71127),
   v = n(185935),
-  j = n(522651),
-  O = n(788983),
+  O = n(522651),
+  j = n(788983),
   E = n(928518),
   S = n(703656),
   I = n(493754),
@@ -80,13 +80,13 @@ function ei(e) {
 let el = "HasBeenInStageChannel",
   eo = (e, t) => () => {
     let n = e.getGuildId();
-    null != n && null != t && (0, S.XU)(n, t), O.hP(e)
+    null != n && null != t && (0, S.XU)(n, t), j.hP(e)
   },
   ea = () => {
-    d.Z.wait(() => O.xv(ee.KJ3.CHANNEL_CALL_POPOUT))
+    d.Z.wait(() => j.xv(ee.KJ3.CHANNEL_CALL_POPOUT))
   },
   es = e => {
-    (0, j.v)(m.Z.VOICE_CONTROL_TRAY, j.d.STAY_ON_TOP, e), O.hY(ee.KJ3.CHANNEL_CALL_POPOUT, e)
+    (0, O.v)(m.Z.VOICE_CONTROL_TRAY, O.d.STAY_ON_TOP, e), j.hY(ee.KJ3.CHANNEL_CALL_POPOUT, e)
   };
 
 function ec(e) {
@@ -124,10 +124,10 @@ function ec(e) {
       className: er.rightTrayIcon,
       popoutOpen: l,
       onOpenPopout: () => {
-        (0, j.v)(u, j.d.POPOUT, !0), eo(t, p)()
+        (0, O.v)(u, O.d.POPOUT, !0), eo(t, p)()
       },
       onClosePopout: () => {
-        (0, j.v)(u, j.d.POPOUT, !1), ea()
+        (0, O.v)(u, O.d.POPOUT, !1), ea()
       }
     }) : null, C]
   })
@@ -162,12 +162,12 @@ function ed(e) {
     {
       analyticsLocations: v
     } = (0, g.ZP)(m.Z.VOICE_CONTROL_TRAY),
-    j = (0, f.bp)(),
-    O = (0, s.e7)([L.Z], () => L.Z.getVoiceChannelId() === c.id, [c.id]),
+    O = (0, f.bp)(),
+    j = (0, s.e7)([L.Z], () => L.Z.getVoiceChannelId() === c.id, [c.id]),
     E = (0, s.e7)([D.Z], () => D.Z.can(ee.Plq.CONNECT, c)),
     S = (0, H.w8)(c.id, G.pV.SPEAKER),
     I = (0, s.e7)([b.Z], () => b.Z.getSelectedParticipant(c.id)),
-    P = _ && j !== ee.IlC.POPOUT,
+    P = _ && O !== ee.IlC.POPOUT,
     [T, A] = i.useState(0),
     {
       isOnStartStageScreen: w
@@ -178,9 +178,9 @@ function ed(e) {
   return w && (M = "0px"), l = w ? (0, r.jsx)(Q.Z, {
     channel: c,
     onContinueClick: () => {
-      (0, z.Ku)(!1), O || (0, F.TM)(c)
+      (0, z.Ku)(!1), j || (0, F.TM)(c)
     }
-  }) : O ? (0, r.jsx)(K.Z, {
+  }) : j ? (0, r.jsx)(K.Z, {
     channel: c,
     onScroll: e => {
       let {
@@ -199,19 +199,19 @@ function ed(e) {
       height: "calc(100% - ".concat(M, ")"),
       paddingTop: M
     },
-    disableGradients: !O || 0 === T && N.e.TOP,
-    renderBottomCenter: () => O ? (0, r.jsx)(g.Gt, {
+    disableGradients: !j || 0 === T && N.e.TOP,
+    renderBottomCenter: () => j ? (0, r.jsx)(g.Gt, {
       value: v,
       children: (0, r.jsx)(X.Z, {
         channel: c,
         isOnStartStageScreen: w
       })
     }) : null,
-    renderBottomRight: () => O ? (0, r.jsx)(g.Gt, {
+    renderBottomRight: () => j ? (0, r.jsx)(g.Gt, {
       value: v,
       children: (0, r.jsx)(ec, {
         channel: c,
-        appContext: j,
+        appContext: O,
         popoutOpen: _,
         popoutWindow: p,
         popoutWindowAlwaysOnTop: h,
@@ -255,11 +255,11 @@ function ep(e) {
     a(!l)
   }, [l, a]), {
     popoutWindow: _,
-    popoutWindowAlwaysOnTop: j
+    popoutWindowAlwaysOnTop: O
   } = (0, s.cj)([E.Z], () => ({
     popoutWindow: E.Z.getWindow(ee.KJ3.CHANNEL_CALL_POPOUT),
     popoutWindowAlwaysOnTop: E.Z.getIsAlwaysOnTop(ee.KJ3.CHANNEL_CALL_POPOUT)
-  })), O = null != _ && !_.closed, {
+  })), j = null != _ && !_.closed, {
     analyticsLocations: S
   } = (0, g.ZP)(m.Z.STAGE_CHANNEL_CALL), I = (0, f.bp)(), {
     chatOpen: Z,
@@ -283,7 +283,7 @@ function ep(e) {
   let {
     width: w = 0,
     ref: R
-  } = (0, p.ZP)(), k = w - 550, D = !O || O && I === ee.IlC.POPOUT;
+  } = (0, p.ZP)(), k = w - 550, D = !j || j && I === ee.IlC.POPOUT;
   return (0, r.jsx)(g.Gt, {
     value: S,
     children: (0, r.jsxs)(y.B2, {
@@ -304,8 +304,8 @@ function ep(e) {
                 toggleRequestToSpeakSidebar: d,
                 showRequestToSpeakSidebar: l,
                 popoutWindow: _,
-                popoutWindowAlwaysOnTop: j,
-                popoutOpen: O,
+                popoutWindowAlwaysOnTop: O,
+                popoutOpen: j,
                 chatOpen: Z,
                 idleProps: e
               })

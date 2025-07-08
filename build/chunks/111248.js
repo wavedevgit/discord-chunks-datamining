@@ -31,13 +31,13 @@ function _(e) {
     return [e, i.useCallback(e => {
       s.K.set(b, e), t(e)
     }, [])]
-  }(), j = i.useRef(null), O = null == _.getGuildId() ? 70 : 50, E = (0, a.e7)([d.Z], () => d.Z.pipWidth(f.cL.CAMERA_PREVIEW)), S = y.length, I = E * S + 8 * (S - 1), P = i.useMemo(() => ({
+  }(), O = i.useRef(null), j = null == _.getGuildId() ? 70 : 50, E = (0, a.e7)([d.Z], () => d.Z.pipWidth(f.cL.CAMERA_PREVIEW)), S = y.length, I = E * S + 8 * (S - 1), P = i.useMemo(() => ({
     minWidth: f.Rv[f.cL.CAMERA_PREVIEW] * S + 8 * (S - 1),
     maxWidth: f.$i[f.cL.CAMERA_PREVIEW] * S + 8 * (S - 1)
   }), [S]);
   i.useLayoutEffect(() => {
     var e;
-    null == (e = j.current) || e.ensureIsInPosition()
+    null == (e = O.current) || e.ensureIsInPosition()
   }, [y.length]);
   let Z = i.useCallback(e => {
       let t = 0 === S ? e : (e - 8 * (S - 1)) / S;
@@ -52,12 +52,12 @@ function _(e) {
       position: x,
       id: 0,
       width: I,
-      ref: j,
+      ref: O,
       onMove: N,
       onResize: Z,
       maxX: t,
       maxY: l,
-      edgeOffsetTop: O,
+      edgeOffsetTop: j,
       edgeOffsetBottom: 70,
       edgeOffsetLeft: 16,
       edgeOffsetRight: 16,

@@ -1,6 +1,6 @@
 /** Chunk was on 19577 **/
 n.d(t, {
-  T: () => O
+  T: () => j
 }), n(388685), n(539854);
 var r = n(255367),
   i = n(73800),
@@ -40,7 +40,7 @@ function v(e) {
   }
 }
 
-function j(e) {
+function O(e) {
   let {
     className: t,
     channelId: n
@@ -59,7 +59,7 @@ function j(e) {
   })
 }
 
-function O(e) {
+function j(e) {
   let t;
   var {
     channelId: n,
@@ -69,7 +69,7 @@ function O(e) {
     inPopout: f,
     showRequestToSpeakSidebar: m,
     toggleRequestToSpeakSidebar: _
-  } = e, O = function(e, t) {
+  } = e, j = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -88,7 +88,7 @@ function O(e) {
     parentAnalyticsLocation: E
   } = (0, u.ZP)(), {
     disabled: S
-  } = O, I = i.useRef(null), P = (0, s.e7)([d.Z], () => d.Z.getChatOpen(n), [n]), {
+  } = j, I = i.useRef(null), P = (0, s.e7)([d.Z], () => d.Z.getChatOpen(n), [n]), {
     isShowing: Z,
     unreadCount: N,
     mentionCount: T
@@ -117,7 +117,7 @@ function O(e) {
     let {
       className: t
     } = e;
-    return (0, r.jsx)(j, {
+    return (0, r.jsx)(O, {
       className: t,
       channelId: n
     })
@@ -174,5 +174,5 @@ function O(e) {
       [a]: Z
     }),
     forceTooltipOpen: k
-  }, O))
+  }, j))
 }

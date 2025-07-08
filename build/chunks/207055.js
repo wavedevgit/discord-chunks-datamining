@@ -22,8 +22,8 @@ var r = n(255367),
   C = n(131951),
   x = n(496675),
   v = n(158776),
-  j = n(885110),
-  O = n(797258),
+  O = n(885110),
+  j = n(797258),
   E = n(606304),
   S = n(979651),
   I = n(51144),
@@ -49,11 +49,11 @@ let w = i.memo(e => {
       userIds: t
     } = e;
     return t.has(w)
-  }), [w, g.id]), G = (0, p.Z)(null != H ? [H.applicationId] : []), V = (0, P.Hr)("voice_users_eligibility_check", !1), z = (0, a.e7)([v.Z, j.Z], () => R ? j.Z.getActivities() : v.Z.getActivities(w, g.guild_id)).find(e => null != e.application_id && e.type === N.IIU.PLAYING), W = (0, a.e7)([d.Z], () => (null == z ? void 0 : z.application_id) != null ? d.Z.getApplication(null == z ? void 0 : z.application_id) : void 0);
+  }), [w, g.id]), G = (0, p.Z)(null != H ? [H.applicationId] : []), V = (0, P.Hr)("voice_users_eligibility_check", !1), z = (0, a.e7)([v.Z, O.Z], () => R ? O.Z.getActivities() : v.Z.getActivities(w, g.guild_id)).find(e => null != e.application_id && e.type === N.IIU.PLAYING), W = (0, a.e7)([d.Z], () => (null == z ? void 0 : z.application_id) != null ? d.Z.getApplication(null == z ? void 0 : z.application_id) : void 0);
   null != W && P.ZP.trackExposure({
     location: "voice_users"
   });
-  let [Y, q] = (0, a.Wu)([b.Z], () => [b.Z.getStreamForUser(w, g.getGuildId()), b.Z.getActiveStreamForUser(w, g.getGuildId())], [g, w]), K = (0, a.e7)([O.Z], () => O.Z.getSessionById(x)), X = I.ZP.useName(s), Q = (0, a.e7)([S.Z], () => S.Z.getVoicePlatformForChannel(g.id, w), [g.id, w]), J = (0, m.Eu)(g.id, w);
+  let [Y, q] = (0, a.Wu)([b.Z], () => [b.Z.getStreamForUser(w, g.getGuildId()), b.Z.getActiveStreamForUser(w, g.getGuildId())], [g, w]), K = (0, a.e7)([j.Z], () => j.Z.getSessionById(x)), X = I.ZP.useName(s), Q = (0, a.e7)([S.Z], () => S.Z.getVoicePlatformForChannel(g.id, w), [g.id, w]), J = (0, m.Eu)(g.id, w);
   return (0, r.jsx)(f.Z, {
     shakeLocation: T.oZ.VOICE_USER,
     isShaking: U,
@@ -119,8 +119,8 @@ let R = [],
       location: b,
       numAudience: y,
       withGuildIcon: C = !1,
-      className: j,
-      children: O
+      className: O,
+      children: j
     } = e, [E, S] = i.useState(null), [I, P] = i.useState(!1), T = i.useRef(null), k = (0, m.Es)(l.id, null != c ? c : R), M = i.useRef(new s.sW(50, () => {
       S(T.current), T.current = null
     })), D = i.useRef(new s.sW(175, () => {
@@ -181,12 +181,12 @@ let R = [],
         numUsers: k.length - d
       })), i
     })();
-    return null == F && null == O ? null : (0, r.jsxs)(g.eJ, {
-      className: o()(j, A.list, {
+    return null == F && null == j ? null : (0, r.jsxs)(g.eJ, {
+      className: o()(O, A.list, {
         [A.collapsed]: u,
         [A.withGuildIcon]: C
       }),
       collapsed: u,
-      children: [F, O]
+      children: [F, j]
     })
   }

@@ -1,6 +1,6 @@
 /** Chunk was on 19577 **/
 n.d(t, {
-  ZP: () => j,
+  ZP: () => O,
   cy: () => x,
   iu: () => C
 }), n(388685);
@@ -127,7 +127,7 @@ class v extends a.PureComponent {
     })
   }
 }
-class j extends(r = a.PureComponent) {
+class O extends(r = a.PureComponent) {
   render() {
     let e = this.props,
       {
@@ -213,6 +213,6 @@ class j extends(r = a.PureComponent) {
     })
   }
 }
-b(j, "TextAlignments", C), b(j, "defaultProps", {
+b(O, "TextAlignments", C), b(O, "defaultProps", {
   textAlign: "left"
 })

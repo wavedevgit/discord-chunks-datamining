@@ -31,6 +31,7 @@ function _(e) {
     style: {
       background: _.background
     },
+    "aria-hidden": !0,
     children: (0, r.jsx)(p, {
       nameplate: t,
       className: o()(f.img, {
@@ -62,7 +63,6 @@ function p(e) {
     animatedAsset: l
   } = (0, c._)(t), u = !(null == l ? void 0 : l.endsWith(".webm"));
   return null == s || null == l ? null : u ? (0, r.jsx)(m, {
-    nameplate: t,
     asset: a ? l : s,
     className: n,
     style: i
@@ -105,15 +105,14 @@ function h(e) {
 
 function m(e) {
   let {
-    nameplate: t,
-    asset: n,
-    className: i,
-    style: a
+    asset: t,
+    className: n,
+    style: i
   } = e;
   return (0, r.jsx)("img", {
-    src: n,
-    className: i,
-    style: a,
-    alt: t.imgAlt
+    src: t,
+    className: n,
+    style: i,
+    alt: ""
   })
 }

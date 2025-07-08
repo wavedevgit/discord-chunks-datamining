@@ -33,8 +33,8 @@ function C(e) {
     commandOrigin: x
   } = e, {
     onActivityItemSelected: v,
-    imageBackground: j,
-    activityAction: O,
+    imageBackground: O,
+    activityAction: j,
     labelType: E
   } = (0, u.ZP)({
     context: n,
@@ -58,7 +58,7 @@ function C(e) {
       })
     })
   }), [E]), T = l.useMemo(() => {
-    switch (O) {
+    switch (j) {
       case u.JS.JOIN:
         return (0, i.jsx)("div", {
           className: g.activityAction,
@@ -87,7 +87,7 @@ function C(e) {
       default:
         return null
     }
-  }, [O]);
+  }, [j]);
   return (0, i.jsx)(c.zxk, {
     onClick: v,
     color: "transparent",
@@ -121,7 +121,7 @@ function C(e) {
               transform: t.to([0, 1], [1, 1.05]).to(e => "scale(".concat(e, ")"))
             },
             children: [(0, i.jsx)(d.Z, {
-              imageBackground: j,
+              imageBackground: O,
               applicationName: r.application.name,
               imageClassName: g.activitySuggestionImage,
               imageNotFoundClassName: g.brokenImageIconWrapper

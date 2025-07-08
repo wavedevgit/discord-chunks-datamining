@@ -1,6 +1,6 @@
 /** Chunk was on 19577 **/
 n.d(t, {
-  Z: () => O
+  Z: () => j
 }), n(997841), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -43,7 +43,7 @@ function v(e) {
     id: s
   } = t, {
     id: c
-  } = n, f = t.getGuildId(), g = (0, l.e7)([p.Z], () => p.Z.getGuild(f), [f]), b = t.type === y.d4z.GUILD_ANNOUNCEMENT, v = null != g && g.features.has(y.oNc.NEWS), O = b && v, {
+  } = n, f = t.getGuildId(), g = (0, l.e7)([p.Z], () => p.Z.getGuild(f), [f]), b = t.type === y.d4z.GUILD_ANNOUNCEMENT, v = null != g && g.features.has(y.oNc.NEWS), j = b && v, {
     editingMessage: E,
     editingTextValue: S,
     editingRichValue: I
@@ -55,12 +55,12 @@ function v(e) {
     let {
       content: i
     } = r, l = h.Z.can(y.Plq.MANAGE_MESSAGES, t), s = null != E && null != E.author ? E.author.id : null;
-    return O && (s === P || l) && null != E && (0, m.yE)(E.flags, y.iLy.CROSSPOSTED) ? a.Z.confirmEdit(e, n, i) : o.Z.editMessage(e, n, {
+    return j && (s === P || l) && null != E && (0, m.yE)(E.flags, y.iLy.CROSSPOSTED) ? a.Z.confirmEdit(e, n, i) : o.Z.editMessage(e, n, {
       content: i
     }), Promise.resolve()
-  }, [E, O, P, t]), N = i.useCallback(e => {
+  }, [E, j, P, t]), N = i.useCallback(e => {
     var t, n;
-    return (0, i.createElement)(j, (t = function(e) {
+    return (0, i.createElement)(O, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -106,7 +106,7 @@ function v(e) {
   }) : null
 }
 
-function j(e) {
+function O(e) {
   let {
     textValue: t,
     richValue: n,
@@ -140,7 +140,7 @@ function j(e) {
   }, l.id)
 }
 
-function O(e, t, n) {
+function j(e, t, n) {
   let {
     message: i,
     channel: l,

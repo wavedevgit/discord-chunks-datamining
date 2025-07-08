@@ -22,8 +22,8 @@ var r = n(255367),
   C = n(881998),
   x = n(984933),
   v = n(496675),
-  j = n(594174),
-  O = n(51144),
+  O = n(594174),
+  j = n(51144),
   E = n(7782),
   S = n(967128),
   I = n(320781),
@@ -72,7 +72,7 @@ function G(e) {
     showingBanner: h
   } = e, y = (0, d.ZP)(p), {
     type: x
-  } = p, I = (0, l.e7)([j.default], () => p.isPrivate() ? j.default.getUser(p.getRecipientId()) : null), A = O.ZP.useUserTag(I), {
+  } = p, I = (0, l.e7)([O.default], () => p.isPrivate() ? O.default.getUser(p.getRecipientId()) : null), A = j.ZP.useUserTag(I), {
     canManageRoles: R,
     canReadMessageHistory: k
   } = (0, l.cj)([v.Z], () => ({

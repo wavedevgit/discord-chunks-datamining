@@ -22,8 +22,8 @@ var r = n(255367),
   C = n(594174),
   x = n(626135),
   v = n(585483),
-  j = n(233870),
-  O = n(51144),
+  O = n(233870),
+  j = n(51144),
   E = n(998502),
   S = n(276264),
   I = n(981631),
@@ -57,7 +57,7 @@ function w(e) {
     channel: a,
     status: u,
     activities: d
-  } = e, p = (0, o.e7)([y.Z], () => null != y.Z.getTypingUsers(a.id)[t.id]), f = (0, o.e7)([C.default], () => C.default.getCurrentUser()), x = (0, o.e7)([b.Z], () => b.Z.isMobileOnline(t.id)), j = (0, o.e7)([_.Z], () => _.Z.getNickname(t.id)), E = (0, h.Z)(t.id), Z = i.useRef(null), T = e => {
+  } = e, p = (0, o.e7)([y.Z], () => null != y.Z.getTypingUsers(a.id)[t.id]), f = (0, o.e7)([C.default], () => C.default.getCurrentUser()), x = (0, o.e7)([b.Z], () => b.Z.isMobileOnline(t.id)), O = (0, o.e7)([_.Z], () => _.Z.getNickname(t.id)), E = (0, h.Z)(t.id), Z = i.useRef(null), T = e => {
     (0, s.jW)(e, async () => {
       let {
         default: e
@@ -80,7 +80,7 @@ function w(e) {
       }
     })
   }, w = () => {
-    let e = "@".concat(O.ZP.getUserTag(t, {
+    let e = "@".concat(j.ZP.getUserTag(t, {
         decoration: "never"
       })),
       n = "<@".concat(t.id, ">");
@@ -136,7 +136,7 @@ function w(e) {
         onContextMenu: T,
         selected: k,
         isMobile: x,
-        nick: j,
+        nick: O,
         nameplate: R,
         onClick: e => {
           e.shiftKey ? null == w || w() : M(e => !e)
@@ -167,7 +167,7 @@ function k(e) {
   } = (0, d.ZP)(u.Z.MEMBER_LIST), {
     listItems: c
   } = (0, o.e7)([_.Z, C.default, b.Z], () => {
-    let e = (0, j.T)(t.recipients, C.default),
+    let e = (0, O.T)(t.recipients, C.default),
       n = {};
     for (let t of e) {
       var r, i, l;

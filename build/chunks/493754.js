@@ -89,9 +89,9 @@ function C(e) {
       exitFullScreen: C,
       appContext: x,
       analyticsLocation: v,
-      className: j
+      className: O
     } = e,
-    O = function(e, t) {
+    j = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -114,7 +114,7 @@ function C(e) {
   let Z = m.intl.string(m.t.VINpSE);
   return null != n ? Z = m.intl.string(m.t["6VQaqa"]) : null != i && (Z = m.intl.string(m.t["OzOM/v"])), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.zxk, _(b({
-      size: null != (t = O.size) ? t : c.zxk.Sizes.SMALL,
+      size: null != (t = j.size) ? t : c.zxk.Sizes.SMALL,
       color: g.buttonColor,
       onClick: () => {
         a()(null != I, "guild cannot be null"), a()(null != o, "channel cannot be null"), y({
@@ -128,14 +128,14 @@ function C(e) {
           guildScheduledEvent: P
         })
       },
-      className: l()(j, g.textButton)
-    }, O), {
+      className: l()(O, g.textButton)
+    }, j), {
       children: Z
     })), (0, r.jsx)(d.Z, {
       channel: o,
       stream: n,
       appContext: x,
-      className: l()(j, g.iconButton),
+      className: l()(O, g.iconButton),
       exitFullScreen: C,
       analyticsLocation: v,
       guildScheduledEvent: P

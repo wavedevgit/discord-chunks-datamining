@@ -24,8 +24,8 @@ var r = n(255367),
   C = n(914010),
   x = n(594174),
   v = n(768581),
-  j = n(63063),
-  O = n(374386),
+  O = n(63063),
+  j = n(374386),
   E = n(946734),
   S = n(99843),
   I = n(372564),
@@ -90,7 +90,7 @@ function M(e) {
         variant: "text-sm/medium",
         color: "header-secondary",
         children: A.intl.format(A.t["16agur"], {
-          helpdeskArticle: j.Z.getArticleURL(N.BhN.LINKED_LOBBIES)
+          helpdeskArticle: O.Z.getArticleURL(N.BhN.LINKED_LOBBIES)
         })
       }), (0, r.jsx)(c.P3F, {
         className: w.linkedLobbyEducationTooltipCloseClickContainer,
@@ -239,10 +239,10 @@ function D(e) {
     case N.d4z.ANNOUNCEMENT_THREAD:
     case N.d4z.PUBLIC_THREAD:
     case N.d4z.PRIVATE_THREAD:
-      let j = null;
+      let O = null;
       if (!s && null != l) {
         let e = (0, h.KS)(l, a);
-        j = (0, r.jsxs)(i.Fragment, {
+        O = (0, r.jsxs)(i.Fragment, {
           children: [B(e, A.intl.string(A.t.Pnajj4)), (0, r.jsx)(P.Z.Title, {
             level: C,
             onContextMenu: m,
@@ -252,15 +252,15 @@ function D(e) {
           }), (0, r.jsx)(P.Z.Caret, {})]
         })
       }
-      let O = (null == l ? void 0 : l.type) != null && N.TPd.GUILD_THREADS_ONLY.has(l.type);
+      let j = (null == l ? void 0 : l.type) != null && N.TPd.GUILD_THREADS_ONLY.has(l.type);
       return (0, r.jsxs)(i.Fragment, {
-        children: [j, B(O ? null : b, A.intl.string(A.t["7Xm5QE"])), (0, r.jsx)(P.Z.Title, {
+        children: [O, B(j ? null : b, A.intl.string(A.t["7Xm5QE"])), (0, r.jsx)(P.Z.Title, {
           level: C,
           onContextMenu: d,
           onClick: u,
           className: o()({
             [w.cursorPointer]: s,
-            [w.forumPostTitle]: O
+            [w.forumPostTitle]: j
           }),
           children: v
         })]
@@ -290,7 +290,7 @@ function D(e) {
 let L = e => {
   let {
     channel: t
-  } = e, n = (0, a.e7)([x.default], () => x.default.getCurrentUser()), l = (0, a.e7)([x.default], () => x.default.getUser(t.getRecipientId())), o = (0, O.G)();
+  } = e, n = (0, a.e7)([x.default], () => x.default.getCurrentUser()), l = (0, a.e7)([x.default], () => x.default.getUser(t.getRecipientId())), o = (0, j.G)();
   return (i.useEffect(() => {
     (null == n ? void 0 : n.isStaff()) && null != l && !l.isStaff() && (0, _.Z)(l.id, l.getAvatarURL(void 0, 80), {
       dispatchWait: !0,

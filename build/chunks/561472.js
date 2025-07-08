@@ -26,10 +26,10 @@ let x = function(e) {
     style: n,
     channel: x,
     draftType: v
-  } = e, [j, O] = i.useState(!0), E = (0, l.e7)([d.Z], () => d.Z.hasLayers()), S = (0, l.e7)([p.Z], () => null != x && p.Z.can(y.Plq.ATTACH_FILES, x), [x]), I = null != (0, l.e7)([o.Z], () => o.Z.getActiveCommand(x.id)), P = x.getGuildId(), Z = v === s.d.FirstThreadMessage, N = (0, l.e7)([f.default], () => {
+  } = e, [O, j] = i.useState(!0), E = (0, l.e7)([d.Z], () => d.Z.hasLayers()), S = (0, l.e7)([p.Z], () => null != x && p.Z.can(y.Plq.ATTACH_FILES, x), [x]), I = null != (0, l.e7)([o.Z], () => o.Z.getActiveCommand(x.id)), P = x.getGuildId(), Z = v === s.d.FirstThreadMessage, N = (0, l.e7)([f.default], () => {
     var e;
     return !0 == !(null == (e = f.default.getCurrentUser()) ? void 0 : e.nsfwAllowed)
-  }), T = (0, l.e7)([c.Z], () => c.Z.didAgree(P)) && !N, A = i.useMemo(() => !E && (x.isPrivate() && !x.isManaged() || null != P && (!x.isNSFW() || T) && S && u.Z.canChatInGuild(P)), [S, T, x, P, E]), w = Z ? y.TPd.GUILD_THREADS_ONLY.has(x.type) ? C.intl.string(C.t.RBBLhI) : C.intl.string(C.t.gUx4en) : j ? C.intl.format(C.t.dYP2FR, {
+  }), T = (0, l.e7)([c.Z], () => c.Z.didAgree(P)) && !N, A = i.useMemo(() => !E && (x.isPrivate() && !x.isManaged() || null != P && (!x.isNSFW() || T) && S && u.Z.canChatInGuild(P)), [S, T, x, P, E]), w = Z ? y.TPd.GUILD_THREADS_ONLY.has(x.type) ? C.intl.string(C.t.RBBLhI) : C.intl.string(C.t.gUx4en) : O ? C.intl.format(C.t.dYP2FR, {
     destination: (0, a.F6)(x, f.default, h.Z, !0)
   }) : C.intl.string(C.t.h76ulJ);
   return I || !A ? null : (0, r.jsx)(b.Z, {
@@ -41,14 +41,14 @@ let x = function(e) {
     onDrop: e => {
       if (I) return !1;
       A && null != x && ((0, g.d)(e, x, v, {
-        requireConfirm: j,
+        requireConfirm: O,
         showLargeMessageDialog: !1
       }), m.S.dispatchToLastSubscribed(y.CkL.TEXTAREA_FOCUS))
     },
-    onDragClear: () => O(!0),
+    onDragClear: () => j(!0),
     onDragOver: e => {
       if (I) return !1;
-      Z || e.shiftKey !== j || O(!e.shiftKey)
+      Z || e.shiftKey !== O || j(!e.shiftKey)
     }
   })
 }

@@ -23,8 +23,8 @@ var r = n(255367),
   C = n(314897),
   x = n(271383),
   v = n(709586),
-  j = n(5192),
-  O = n(590415),
+  O = n(5192),
+  j = n(590415),
   E = n(354459),
   S = n(387147);
 
@@ -81,7 +81,7 @@ let Z = i.memo(function(e) {
         className: S.text,
         variant: "text-sm/normal",
         color: "header-primary",
-        children: j.ZP.getName(t, n, i)
+        children: O.ZP.getName(t, n, i)
       }), l ? (0, r.jsx)(v.Z, {
         className: S.boost,
         color: d.Z.unsafe_rawColors.GUILD_BOOSTING_PINK.css
@@ -100,7 +100,7 @@ let Z = i.memo(function(e) {
       blocked: c,
       ignored: u,
       rtsState: d
-    } = n, h = d === O.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK, f = d === O.xO.REQUESTED_TO_SPEAK || h;
+    } = n, h = d === j.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK, f = d === j.xO.REQUESTED_TO_SPEAK || h;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
         className: S.avatarContainer,
@@ -138,8 +138,8 @@ let Z = i.memo(function(e) {
     } = e, {
       user: a,
       blocked: d
-    } = t, v = l.getGuildId(), j = C.default.getId(), {
-      newestAnalyticsLocation: O
+    } = t, v = l.getGuildId(), O = C.default.getId(), {
+      newestAnalyticsLocation: j
     } = (0, g.ZP)(m.Z.AUDIENCE_TILE), Z = (0, f.bp)(), T = (0, u.e7)([x.ZP], () => {
       var e;
       return null != v && (null == (e = x.ZP.getMember(v, a.id)) ? void 0 : e.premiumSince) != null
@@ -151,7 +151,7 @@ let Z = i.memo(function(e) {
         name: c.ImpressionNames.CALL_TILE_CONTEXT_MENU,
         properties: {
           location: "AudienceTile",
-          is_tile_owner: a.id === j,
+          is_tile_owner: a.id === O,
           tile_type: E.TH.USER
         }
       }), (0, h.jW)(e, async () => {
@@ -165,7 +165,7 @@ let Z = i.memo(function(e) {
           showMediaItems: !0,
           showStageChannelItems: !0,
           showChatItems: !1,
-          onInteraction: (0, _.u)("GuildChannelUserContextMenu", O, {
+          onInteraction: (0, _.u)("GuildChannelUserContextMenu", j, {
             targetUserId: a.id,
             tileType: E.TH.USER
           })
@@ -173,7 +173,7 @@ let Z = i.memo(function(e) {
       }, {
         context: Z
       })
-    }, [a, j, Z, v, l, O]);
+    }, [a, O, Z, v, l, j]);
     return (0, r.jsx)(y.Z, {
       targetElementRef: A,
       user: a,

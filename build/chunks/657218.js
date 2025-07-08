@@ -22,8 +22,8 @@ var r = n(255367),
   C = n(303628),
   x = n(313201),
   v = n(967128),
-  j = n(665149),
-  O = n(294218),
+  O = n(665149),
+  j = n(294218),
   E = n(913663),
   S = n(268350),
   I = n(695346),
@@ -114,17 +114,17 @@ function q(e) {
     });
     (0, U.NK)(t)
   }, [t]);
-  return (0, r.jsxs)(j.ZP, {
-    toolbar: (0, r.jsx)(j.ZP.Icon, {
+  return (0, r.jsxs)(O.ZP, {
+    toolbar: (0, r.jsx)(O.ZP.Icon, {
       icon: s.Dio,
       tooltip: H.intl.string(H.t.cpT0Cg),
       onClick: n
     }),
-    children: [(0, r.jsx)(j.ZP.Icon, {
+    children: [(0, r.jsx)(O.ZP.Icon, {
       icon: s.or_,
       disabled: !0,
       "aria-label": H.intl.string(H.t["7Xm5QE"])
-    }), (0, r.jsx)(j.ZP.Title, {
+    }), (0, r.jsx)(O.ZP.Title, {
       children: H.intl.string(H.t["4WNcpq"])
     })]
   })
@@ -185,8 +185,8 @@ function K(e) {
     }
   }(t, m), C = (0, D.vH)(t), {
     nameError: x,
-    messageError: j,
-    submit: O,
+    messageError: O,
+    submit: j,
     submitting: I
   } = function(e) {
     let {
@@ -268,7 +268,7 @@ function K(e) {
       className: o()(G.messagesWrapper, "group-spacing-".concat(u)),
       children: (0, r.jsxs)("form", {
         onSubmit: e => {
-          e.preventDefault(), O()
+          e.preventDefault(), j()
         },
         className: G.form,
         children: [(0, r.jsx)(s.Ttm, {
@@ -307,8 +307,8 @@ function K(e) {
             parentChannel: t,
             textAreaState: b,
             setTextAreaState: y,
-            submit: O,
-            error: j
+            submit: j,
+            error: O
           }), (0, r.jsx)(p.ZP, {
             channel: t,
             isThreadCreation: !0,
@@ -464,7 +464,7 @@ function $(e) {
     parentChannel: t,
     parentMessageId: n
   } = e, i = (0, a.e7)([N.Z], () => null == n ? null : N.Z.getMessage(t.id, n)), l = I.jU.useSetting();
-  return null != i ? (0, r.jsx)(O.Z, {
+  return null != i ? (0, r.jsx)(j.Z, {
     className: G.messagePreview,
     message: i,
     channel: t,

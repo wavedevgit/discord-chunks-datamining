@@ -22,8 +22,8 @@ var r = n(255367),
   C = n(457868),
   x = n(561472),
   v = n(36311),
-  j = n(112724),
-  O = n(902840),
+  O = n(112724),
+  j = n(902840),
   E = n(110924),
   S = n(317381),
   I = n(82888),
@@ -76,8 +76,8 @@ var r = n(255367),
   eC = n(14091),
   ex = n(6025),
   ev = n(897473),
-  ej = n(922482),
-  eO = n(856393),
+  eO = n(922482),
+  ej = n(856393),
   eE = n(657218),
   eS = n(407908),
   eI = n(66556),
@@ -227,7 +227,7 @@ class ta extends i.PureComponent {
     if (s()(null != e, "Missing channel in Channel.renderCall"), !this.shouldRenderCall()) return null;
     switch (e.type) {
       case e7.d4z.GUILD_STAGE_VOICE:
-        return (0, r.jsx)(eO.Z, {
+        return (0, r.jsx)(ej.Z, {
           channel: e
         }, e.id);
       case e7.d4z.GUILD_VOICE:
@@ -631,7 +631,7 @@ class ta extends i.PureComponent {
             channel: e
           }, "pins")), e.isArchivedThread() || a.push((0, r.jsx)($.Z, {
             channelId: e.id
-          }, "members")), null != t && (0, O.Lp)(e) && a.push((0, r.jsx)(en.Z, {
+          }, "members")), null != t && (0, j.Lp)(e) && a.push((0, r.jsx)(en.Z, {
             channel: e
           }, "summaries")), a.push((0, r.jsx)(eZ.Z, {
             channel: e
@@ -649,7 +649,7 @@ class ta extends i.PureComponent {
             channel: e
           }, "pins")), a.push((0, r.jsx)($.Z, {
             channelId: e.id
-          }, "members")), (0, O.Lp)(e) && a.push((0, r.jsx)(en.Z, {
+          }, "members")), (0, j.Lp)(e) && a.push((0, r.jsx)(en.Z, {
             channel: e
           }, "summaries"));
           break;
@@ -785,7 +785,7 @@ class ta extends i.PureComponent {
     })
   }
 }
-let ts = (0, j.Z)(ta),
+let ts = (0, O.Z)(ta),
   tc = i.memo(function(e) {
     var t;
     let {
@@ -796,16 +796,16 @@ let ts = (0, j.Z)(ta),
       let e = null != a ? A.Z.getParticipants(a) : [],
         t = null != a ? A.Z.getActivityParticipants(a) : [];
       return e.length - t.length > 0
-    }, [a]), v = (0, G.Z)(), j = (0, p.e7)([eW.Z], () => {
+    }, [a]), v = (0, G.Z)(), O = (0, p.e7)([eW.Z], () => {
       var e;
       return (null != (e = null == v ? void 0 : v.channelId) ? e : eW.Z.getVoiceChannelId()) === (null == c ? void 0 : c.id)
     }), I = (0, p.e7)([S.ZP], () => null != c ? S.ZP.getSelfEmbeddedActivityForChannel(c.id) : null, [c]), N = (0, p.e7)([eV.Z], () => eV.Z.isConnected()), w = (0, E.Z)(N), R = N && !1 === w;
     i.useEffect(() => {
-      j && R && null != I && null != c && g.Z.selectParticipant(c.id, (0, T.gN)({
+      O && R && null != I && null != c && g.Z.selectParticipant(c.id, (0, T.gN)({
         applicationId: I.applicationId,
         instanceId: I.compositeInstanceId
       }))
-    }, [R, c, j, I]);
+    }, [R, c, O, I]);
     let k = (0, p.e7)([S.ZP], () => S.ZP.getCurrentEmbeddedActivity()),
       M = (0, p.e7)([S.ZP], () => S.ZP.getActivityPanelMode()),
       D = null != k && !(0, P.Z)(null == c ? void 0 : c.id) && M === e8.Ez.PANEL,
@@ -862,9 +862,9 @@ let ts = (0, j.Z)(ta),
         channel: e,
         inCurrentVoiceChannel: t
       } = ed.current;
-      null != l && null != e && ec && e.id === l && !t && ((0, ej.Cq)(e), o(null))
+      null != l && null != e && ec && e.id === l && !t && ((0, eO.Cq)(e), o(null))
     }, [l, ec]);
-    let eg = (0, O.ts)(c),
+    let eg = (0, j.ts)(c),
       e_ = null != c && c.isPrivate(),
       ey = (0, E.Z)(e_),
       eC = (0, E.Z)(null == c ? void 0 : c.id);

@@ -23,13 +23,13 @@ var r = n(255367),
   C = n(419922),
   x = n(375954),
   v = n(699516),
-  j = n(768581),
-  O = n(70956),
+  O = n(768581),
+  j = n(70956),
   E = n(823379),
   S = n(981631),
   I = n(217702),
   P = n(955525);
-let Z = 10 * O.Z.Millis.SECOND;
+let Z = 10 * j.Z.Millis.SECOND;
 
 function N(e) {
   var t;
@@ -41,7 +41,7 @@ function N(e) {
   } = (0, c.cj)([v.Z], () => ({
     isBlocked: v.Z.isBlockedForMessage(n),
     isIgnored: v.Z.isIgnoredForMessage(n)
-  }), [n]), s = (0, b.Uj)(n), d = i.useContext(f.Z), [x, O] = i.useState(!1), E = (0, m.p)(), S = i.useCallback(e => {
+  }), [n]), s = (0, b.Uj)(n), d = i.useContext(f.Z), [x, j] = i.useState(!1), E = (0, m.p)(), S = i.useCallback(e => {
     "A" !== e.target.nodeName && (p.Z.updateChatOpen(n.channel_id, !0), h.Z.jumpToMessage({
       channelId: n.channel_id,
       messageId: n.id,
@@ -68,10 +68,10 @@ function N(e) {
   return (0, r.jsxs)(u.P3F, {
     className: P.toast,
     onMouseEnter: () => {
-      O(!0)
+      j(!0)
     },
     onMouseLeave: () => {
-      O(!1)
+      j(!1)
     },
     onClick: S,
     children: [(0, r.jsxs)("div", {
@@ -83,7 +83,7 @@ function N(e) {
       }), null != k ? null : A]
     }), (0, r.jsx)("img", {
       alt: "",
-      src: (null == s ? void 0 : s.guildMemberAvatar) != null && null != d ? (0, j.JM)({
+      src: (null == s ? void 0 : s.guildMemberAvatar) != null && null != d ? (0, O.JM)({
         guildId: d,
         userId: n.author.id,
         avatar: s.guildMemberAvatar

@@ -40,7 +40,7 @@ function u(e) {
   } = (0, l.ZP)(), _ = t || n || u, y = d ? c.d : c.Z, C = (0, o.Z)(t, n, u, p), {
     events: x,
     play: v,
-    Component: j
+    Component: O
   } = (0, s.b)(_);
   return i.useEffect(() => () => v(), [v, _]), (0, r.jsx)(y, function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -60,7 +60,7 @@ function u(e) {
     }
     return e
   }({
-    iconComponent: j,
+    iconComponent: O,
     isTrayButton: !0,
     caretColor: _ ? "red" : "primaryDark",
     color: _ ? "red" : void 0,
