@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   l = n(73800),
-  i = n(120356),
-  o = n.n(i),
+  o = n(120356),
+  i = n.n(o),
   a = n(481060),
   s = n(381585),
   c = n(870289),
@@ -26,7 +26,7 @@ function E(e) {
   let {
     isFullScreen: t,
     scrollerRef: n,
-    tab: i,
+    tab: o,
     sortedCategories: E,
     setCategoryRef: v
   } = e, {
@@ -44,15 +44,15 @@ function E(e) {
   }, [y, T]);
   let P = (0, u.S)(e => e.hasFilters());
   return (0, r.jsx)("div", {
-    className: o()(O.pageWrapper, {
+    className: i()(O.pageWrapper, {
       [O.pageWrapperFilter]: y
     }),
     children: (0, r.jsxs)("main", {
-      className: o()(O.page, {
+      className: i()(O.page, {
         [O.pageFilter]: y
       }),
       children: [(0, r.jsxs)("div", {
-        className: o()(O.inventory, {
+        className: i()(O.inventory, {
           [O.inventoryNoFilter]: !y,
           [O.pageFullscreen]: t
         }),
@@ -81,12 +81,12 @@ function E(e) {
         }), y && P ? (0, r.jsx)(b.Z, {
           isFullScreen: t,
           scrollerRef: n,
-          tab: i
-        }, i) : (0, _.RE)(i) ? (0, r.jsx)(m.Z, {
+          tab: o
+        }, o) : (0, _.RE)(o) ? (0, r.jsx)(m.Z, {
           isFullScreen: t,
           scrollerRef: n,
-          tab: i
-        }, i) : (0, r.jsx)(s.k0, {
+          tab: o
+        }, o) : (0, r.jsx)(s.k0, {
           newValue: {
             pageIndex: x
           },

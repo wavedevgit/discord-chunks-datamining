@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: 3576f47da7a5473d
+  Original File Name: 56a0d8188d21d282
 **/
 .countDownWrapper_a1b7b8 {
     align-items: center;
@@ -1074,12 +1074,24 @@
     border-radius: 50%;
     cursor: pointer;
     height: 36px;
+    position: relative;
     width: 36px
 }
 
 .circleToggled__11877 {
     outline: 2px solid var(--brand-500);
     outline-offset: 1px
+}
+
+.checkIcon__11877 {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%
 }
 
 .loadingContainer__08415 {
@@ -1843,4 +1855,4 @@
     cursor: pointer
 }
 
-/*# sourceMappingURL=3576f47da7a5473d.css.map*/
+/*# sourceMappingURL=56a0d8188d21d282.css.map*/

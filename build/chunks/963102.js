@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685), n(539854);
 var r = n(255367),
   l = n(73800),
-  i = n(120356),
-  o = n.n(i),
+  o = n(120356),
+  i = n.n(o),
   a = n(636977),
   s = n(442837),
   c = n(481060),
@@ -37,12 +37,12 @@ function k(e) {
     tab: t,
     displayText: n,
     selected: l,
-    handleTransition: i
+    handleTransition: o
   } = e;
   return (0, r.jsx)(h.Z.Title, {
-    onClick: () => i(t),
+    onClick: () => o(t),
     wrapperClassName: I.tabWrapper,
-    className: o()(I.tab, {
+    className: i()(I.tab, {
       [I.selected]: l
     }),
     children: n
@@ -53,8 +53,8 @@ function N(e) {
   let {
     tab: t,
     selected: n,
-    displayText: i,
-    handleTransition: o
+    displayText: o,
+    handleTransition: i
   } = e, [a, s] = l.useState(!1), u = l.useRef(null), [d, p] = l.useState(0), h = l.useRef(!1), b = e => {
     clearTimeout(d), p(setTimeout(() => {
       s(e)
@@ -79,7 +79,7 @@ function N(e) {
           closePopout: t
         } = e;
         return (0, r.jsx)(y.Z, {
-          handleTransition: o,
+          handleTransition: i,
           onClose: t
         })
       },
@@ -91,9 +91,9 @@ function N(e) {
         },
         children: [(0, r.jsx)(k, {
           tab: t,
-          displayText: i,
+          displayText: o,
           selected: n,
-          handleTransition: o
+          handleTransition: i
         }, t), a ? (0, r.jsx)(c.u04, {
           size: "sm",
           color: "currentColor"
@@ -110,7 +110,7 @@ function B(e) {
   let {
     isFullScreen: t,
     isLayer: n,
-    onClose: i,
+    onClose: o,
     selectedTab: f,
     handleTransition: g
   } = e, y = (0, p.ZP)(), B = (0, s.e7)([O.default], () => O.default.getCurrentUser()), A = (null == B ? void 0 : B.isStaff()) || (null == B ? void 0 : B.isStaffPersonal()) || !1, {
@@ -128,7 +128,7 @@ function B(e) {
     tab: T.AW.ORBS,
     displayText: L.intl.string(L.t.EBYkzs)
   });
-  let F = n ? v.DR : i,
+  let F = n ? v.DR : o,
     D = f === T.AW.ORBS ? P.ZY5.SHOP_ORBS_TAB : P.ZY5.COLLECTIBLES_SHOP,
     M = l.useCallback(() => {
       t && (F(), (0, u.Ou)()), (0, m.Y)({
@@ -143,7 +143,7 @@ function B(e) {
   return (0, r.jsx)(c.f6W, {
     theme: y,
     children: e => (0, r.jsxs)(h.Z, {
-      className: o()(e, I.headerBar, {
+      className: i()(e, I.headerBar, {
         [I.fullscreenHeaderBar]: t
       }),
       innerClassname: R ? I.headerBarInner : void 0,

@@ -5,8 +5,8 @@ n.r(t), n.d(t, {
 }), n(388685);
 var r = n(255367),
   l = n(73800),
-  i = n(120356),
-  o = n.n(i),
+  o = n(120356),
+  i = n.n(o),
   a = n(772848),
   s = n(399606),
   c = n(952265),
@@ -40,14 +40,14 @@ let R = e => {
       children: t,
       shouldAddEventListener: n,
       onClose: r
-    } = e, i = (0, c.f9)();
+    } = e, o = (0, c.f9)();
     return l.useEffect(() => {
-      if (!n || i) return;
+      if (!n || o) return;
       let e = e => {
         e.key === B.mR.Escape && r()
       };
       return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
-    }, [n, i, r]), t
+    }, [n, o, r]), t
   },
   w = function(e) {
     let {
@@ -55,7 +55,7 @@ let R = e => {
       tab: n = k.AW.HOME
     } = e;
     (0, b.z)(h.f);
-    let i = (0, p.Z)((0, a.Z)()),
+    let o = (0, p.Z)((0, a.Z)()),
       c = (0, s.e7)([O.default], () => O.default.getCurrentUser()),
       B = l.useRef(null),
       {
@@ -65,7 +65,7 @@ let R = e => {
       });
     l.useEffect(() => () => {
       w()
-    }, [i, w]);
+    }, [o, w]);
     let {
       onClose: Z
     } = (0, L.Db)(), {
@@ -75,7 +75,7 @@ let R = e => {
       location: "CollectiblesShop.web",
       logPerf: !0
     }, {
-      sessionId: i,
+      sessionId: o,
       tab: n,
       isFullScreen: t
     });
@@ -97,8 +97,8 @@ let R = e => {
       } = (0, j.B)(B, n, t),
       {
         handleScroll: Q
-      } = (0, g.z)(B, i, Y);
-    (0, S.q3)(i, Y, V, q, U), (0, S.EB)(Y, c), (0, I.Z)(), l.useEffect(() => {
+      } = (0, g.z)(B, o, Y);
+    (0, S.q3)(o, Y, V, q, U), (0, S.EB)(Y, c), (0, I.Z)(), l.useEffect(() => {
       t || (0, d.Y)(N.Z5c.COLLECTIBLES_SHOP)
     }, [t]);
     let X = (0, s.e7)([C.Z], () => C.Z.getLayers().includes(N.S9g.COLLECTIBLES_SHOP)),
@@ -117,7 +117,7 @@ let R = e => {
       value: ee,
       children: (0, r.jsx)(E.k0, {
         newValue: {
-          sessionId: i,
+          sessionId: o,
           pageCategory: V,
           pageSize: k.kN
         },
@@ -133,7 +133,7 @@ let R = e => {
               ref: B,
               onScroll: Q,
               children: (0, r.jsxs)("div", {
-                className: o()(A.shopViewWrapper, {
+                className: i()(A.shopViewWrapper, {
                   [A.visible]: q === k.f7.VISIBLE,
                   [A.in]: q === k.f7.IN,
                   [A.out]: q === k.f7.OUT

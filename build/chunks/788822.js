@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   l = n(73800),
-  i = n(120356),
-  o = n.n(i),
+  o = n(120356),
+  i = n.n(o),
   a = n(180650),
   s = n(622535),
   c = n(481060),
@@ -19,7 +19,7 @@ var r = n(255367),
   b = n(388032),
   m = n(806734);
 let _ = e => {
-  var t, n, i, _;
+  var t, n, o, _;
   let C, {
     category: O,
     subblock: E,
@@ -69,11 +69,11 @@ let _ = e => {
         className: m.featuredBlockTextContainer,
         children: [null != L && (0, r.jsx)(c.X6q, {
           lineClamp: 2,
-          className: o()(m.featuredBlockTitleText, {
+          className: i()(m.featuredBlockTitleText, {
             [m.featuredBlockTitleTextNameplate]: P
           }),
           style: {
-            color: null != (i = null == E ? void 0 : E.bannerTextColor) ? i : "white"
+            color: null != (o = null == E ? void 0 : E.bannerTextColor) ? o : "white"
           },
           variant: "heading-xl/semibold",
           children: L
