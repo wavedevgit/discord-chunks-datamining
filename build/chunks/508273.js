@@ -20,8 +20,8 @@ var r = n(255367),
   b = n(43542),
   E = n(910200),
   y = n(358595),
-  C = n(981631),
-  x = n(388032),
+  x = n(981631),
+  C = n(388032),
   v = n(583136);
 
 function O(e) {
@@ -32,7 +32,7 @@ function O(e) {
     onTransitionToInviteChannel: c,
     onAcceptInstantInvite: d,
     currentUserId: p
-  } = e, g = i.useRef(null), [h, O] = i.useState(!0), [I, S] = i.useState(!1), T = t.state === C.r2o.ACCEPTING, N = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), {
+  } = e, g = i.useRef(null), [h, O] = i.useState(!0), [I, S] = i.useState(!1), T = t.state === x.r2o.ACCEPTING, N = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), {
     updateButton: P,
     updateCopy: A
   } = (0, f.n2)(), w = p === l.author.id, Z = A ? 326 : 292;
@@ -69,7 +69,7 @@ function O(e) {
           variant: "text-sm/semibold",
           color: "header-secondary",
           className: v.inviteTitle,
-          children: w ? x.intl.string(x.t["oU/lsr"]) : x.intl.string(x.t.BoQUFR)
+          children: w ? C.intl.string(C.t["oU/lsr"]) : C.intl.string(C.t.BoQUFR)
         })
       }) : null, (0, r.jsx)(E.Z7, {
         profile: R,
@@ -91,7 +91,7 @@ function O(e) {
       children: (0, r.jsx)(s.Text, {
         variant: "text-xs/medium",
         color: "interactive-normal",
-        children: x.intl.string(x.t.xdCLeH)
+        children: C.intl.string(C.t.xdCLeH)
       })
     }) : null, (0, r.jsxs)("div", {
       className: a()(v.footer, {

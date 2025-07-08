@@ -20,8 +20,8 @@ var r = n(255367),
   b = n(533244),
   E = n(825829),
   y = n(226192),
-  C = n(36459),
-  x = n(434404),
+  x = n(36459),
+  C = n(434404),
   v = n(518950),
   O = n(670188),
   j = n(592125),
@@ -244,12 +244,12 @@ function H(e) {
     dmsSent: u,
     raidType: g,
     resolvedReason: _
-  } = (0, E.FL)(n), C = (0, p.e7)([j.Z], () => j.Z.getChannel(n.channel_id), [n.channel_id]), x = null != (t = null == C ? void 0 : C.guild_id) ? t : null, {
+  } = (0, E.FL)(n), x = (0, p.e7)([j.Z], () => j.Z.getChannel(n.channel_id), [n.channel_id]), C = null != (t = null == x ? void 0 : x.guild_id) ? t : null, {
     shouldShowIncidentActions: v
-  } = (0, h.mI)(x), O = (0, N.sR)(n.author.id, n.channel_id), I = i.useCallback(() => {
-    let e = null == C ? void 0 : C.guild_id;
+  } = (0, h.mI)(C), O = (0, N.sR)(n.author.id, n.channel_id), I = i.useCallback(() => {
+    let e = null == x ? void 0 : x.guild_id;
     null != e && (0, y.kW)(n.id, e)
-  }, [n.id, C]), S = g === d.$.DM_RAID, T = S ? f.P4T : f.b6m;
+  }, [n.id, x]), S = g === d.$.DM_RAID, T = S ? f.P4T : f.b6m;
   return (0, r.jsx)(z, {
     compact: l,
     header: (0, r.jsxs)(i.Fragment, {
@@ -371,8 +371,8 @@ function V(e) {
       className: k.dotSeparatedRow,
       children: [(0, r.jsx)(f.zxk, {
         onClick: function() {
-          null != a && null != c && (0, C.UE)(a, c, () => {
-            (0, g.c)(u), (0, C.T9)(a)
+          null != a && null != c && (0, x.UE)(a, c, () => {
+            (0, g.c)(u), (0, x.T9)(a)
           })
         },
         color: f.zxk.Colors.LINK,
@@ -389,7 +389,7 @@ function V(e) {
         })
       }), (0, r.jsx)(M, {}), (0, r.jsx)(f.zxk, {
         onClick: function() {
-          null != a && x.Z.open(a, w.pNK.GUILD_AUTOMOD, void 0, w.KsC.AUTOMOD_MENTION_SPAM)
+          null != a && C.Z.open(a, w.pNK.GUILD_AUTOMOD, void 0, w.KsC.AUTOMOD_MENTION_SPAM)
         },
         color: f.zxk.Colors.LINK,
         look: f.zxk.Looks.LINK,

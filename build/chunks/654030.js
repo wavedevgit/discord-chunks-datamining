@@ -19,8 +19,8 @@ var r, i = n(255367),
   b = n(592745),
   E = n(952164),
   y = n(768419),
-  C = n(456432),
-  x = n(789407),
+  x = n(456432),
+  C = n(789407),
   v = n(598077),
   O = n(757266),
   j = n(831506),
@@ -75,7 +75,7 @@ class G extends(r = l.PureComponent) {
       let t = (0, p.Z)(e, n.id);
       if (null != t) return t
     }
-    return null == n || n instanceof x.ZP ? null : Z.ZP.getApplicationIconURL({
+    return null == n || n instanceof C.ZP ? null : Z.ZP.getApplicationIconURL({
       id: n.id,
       icon: null != t ? t.coverImage : n.coverImage,
       size: M.cc
@@ -175,7 +175,7 @@ class G extends(r = l.PureComponent) {
         channelId: t,
         guildId: n
       } = this.props;
-      return (0, i.jsx)(C.Z, F({
+      return (0, i.jsx)(x.Z, F({
         guildId: null != n ? n : void 0,
         channelId: t,
         source: "Invite Embed"

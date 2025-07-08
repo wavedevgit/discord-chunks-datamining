@@ -20,8 +20,8 @@ var r = n(255367),
   b = n(825829),
   E = n(623624),
   y = n(29887),
-  C = n(533694),
-  x = n(345114),
+  x = n(533694),
+  C = n(345114),
   v = n(924301),
   O = n(225890),
   j = n(434404),
@@ -74,8 +74,8 @@ var r = n(255367),
   eb = n(614972),
   eE = n(701181),
   ey = n(29338),
-  eC = n(461135),
-  ex = n(296571),
+  ex = n(461135),
+  eC = n(296571),
   ev = n(587737),
   eO = n(482239),
   ej = n(328749),
@@ -466,7 +466,7 @@ let ek = Object.freeze({
           }
         })
       }, [t]);
-      return (0, r.jsx)(ex.Z, {
+      return (0, r.jsx)(eC.Z, {
         message: t,
         compact: s,
         usernameHook: c,
@@ -527,7 +527,7 @@ let ek = Object.freeze({
         usernameHook: l
       })
     },
-    [eT.uaV.ROLE_SUBSCRIPTION_PURCHASE]: x.Z,
+    [eT.uaV.ROLE_SUBSCRIPTION_PURCHASE]: C.Z,
     [eT.uaV.PURCHASE_NOTIFICATION]: function(e) {
       var t;
       let {
@@ -535,7 +535,7 @@ let ek = Object.freeze({
         channel: i,
         compact: l
       } = e;
-      return (null == (t = n.purchaseNotification) ? void 0 : t.type) === d.Eh.GUILD_PRODUCT ? (0, r.jsx)(C.Z, {
+      return (null == (t = n.purchaseNotification) ? void 0 : t.type) === d.Eh.GUILD_PRODUCT ? (0, r.jsx)(x.Z, {
         message: n,
         channel: i,
         compact: l
@@ -642,7 +642,7 @@ let ek = Object.freeze({
         guildId: n.guild_id,
         messageId: t.id
       });
-      return (0, r.jsx)(eC.Z, {
+      return (0, r.jsx)(ex.Z, {
         message: t,
         compact: i,
         usernameHook: l

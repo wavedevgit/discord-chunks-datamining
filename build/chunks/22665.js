@@ -1,6 +1,6 @@
 /** Chunk was on 61668 **/
 n.d(t, {
-  Z: () => C
+  Z: () => x
 });
 var r = n(255367),
   i = n(73800),
@@ -20,19 +20,19 @@ var r = n(255367),
   b = n(537670),
   E = n(848697),
   y = n(328756);
-let C = e => {
+let x = e => {
   let {
     reportingUserId: t,
     guildId: n,
     compact: l,
     channel: o,
-    messageId: C,
-    reportedTimestamp: x
+    messageId: x,
+    reportedTimestamp: C
   } = e, v = f.default.getUser(t), O = i.useMemo(() => l ? (0, p.Z)((0, g.vc)(s()(), "LT")) : null, [l]), j = (0, m.l)({
     user: v,
     channelId: o.id,
     guildId: n,
-    messageId: C
+    messageId: x
   })((0, u.JZ)(v, o)), I = null != v ? v.getAvatarURL(n, (0, c.pxk)(c.EFr.SIZE_16)) : y, S = null != v ? h.intl.format(_.default["+zqXZm"], {
     username: v.username,
     onUserClick: j
@@ -56,7 +56,7 @@ let C = e => {
         className: b.timestampSeparator,
         children: "•"
       }), (0, r.jsx)(d.Z, {
-        timestamp: x,
+        timestamp: C,
         className: b.timestamp
       })]
     })]

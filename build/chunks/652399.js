@@ -1,7 +1,7 @@
 /** Chunk was on 61668 **/
 n.d(t, {
-  I1: () => C,
-  IZ: () => x,
+  I1: () => x,
+  IZ: () => C,
   Qb: () => y,
   Yc: () => j,
   bo: () => I,
@@ -72,8 +72,8 @@ function h(e) {
     pageNumLinks: b,
     pageNumEmbeds: E,
     pageNumAttachments: y,
-    searchQueryString: C,
-    searchQuery: x
+    searchQueryString: x,
+    searchQuery: C
   } = e;
   i.ZP.trackWithMetadata(d.rMx.SEARCH_RESULT_VIEWED, {
     search_type: t,
@@ -91,8 +91,8 @@ function h(e) {
     page_num_links: b,
     page_num_embeds: E,
     page_num_attach: y,
-    search_query_length: g(C),
-    search_query_content_length: _(x)
+    search_query_length: g(x),
+    search_query_content_length: _(C)
   })
 }
 
@@ -161,7 +161,7 @@ function y(e) {
   })
 }
 
-function C(e) {
+function x(e) {
   let {
     searchType: t,
     searchId: n
@@ -175,7 +175,7 @@ function C(e) {
   })
 }
 
-function x(e) {
+function C(e) {
   let {
     searchId: t,
     searchType: n
@@ -210,9 +210,9 @@ function O(e) {
   } = e, s = Object.keys(l), u = s.reduce((e, t) => {
     let n = l[t];
     return e[t] = Array.isArray(n) ? n.length : 1, e
-  }, {}), p = null != a ? (0, c.kG)(a) : [], m = 0, h = 0, b = 0, E = 0, y = 0, C = 0, x = 0, v = 0;
+  }, {}), p = null != a ? (0, c.kG)(a) : [], m = 0, h = 0, b = 0, E = 0, y = 0, x = 0, C = 0, v = 0;
   p.forEach(e => {
-    e.type === d.dCx.ANSWER_IN ? m++ : e.type === d.dCx.ANSWER_USERNAME_FROM ? h++ : e.type === d.dCx.ANSWER_USERNAME_MENTIONS ? b++ : e.type === d.dCx.ANSWER_HAS ? E++ : e.type === d.dCx.ANSWER_BEFORE ? y++ : e.type === d.dCx.ANSWER_ON ? C++ : e.type === d.dCx.ANSWER_AFTER ? x++ : e.type === d.dCx.ANSWER_PINNED && v++
+    e.type === d.dCx.ANSWER_IN ? m++ : e.type === d.dCx.ANSWER_USERNAME_FROM ? h++ : e.type === d.dCx.ANSWER_USERNAME_MENTIONS ? b++ : e.type === d.dCx.ANSWER_HAS ? E++ : e.type === d.dCx.ANSWER_BEFORE ? y++ : e.type === d.dCx.ANSWER_ON ? x++ : e.type === d.dCx.ANSWER_AFTER ? C++ : e.type === d.dCx.ANSWER_PINNED && v++
   }), i.ZP.trackWithMetadata(d.rMx.MESSAGES_SEARCH_STARTED, {
     search_id: null != n ? o.Z.getAnalyticsId(n) : null,
     search_session_id: f(n),
@@ -225,8 +225,8 @@ function O(e) {
     filter_mentions_count: b,
     filter_has_count: E,
     filter_before_count: y,
-    filter_during_count: C,
-    filter_after_count: x,
+    filter_during_count: x,
+    filter_after_count: C,
     filter_pinned_count: v
   }), i.ZP.trackWithMetadata(d.rMx.SEARCH_STARTED, {
     search_id: null != n ? o.Z.getAnalyticsId(n) : null,

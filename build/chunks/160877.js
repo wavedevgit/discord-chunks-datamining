@@ -1,7 +1,7 @@
 /** Chunk was on 61668 **/
 n.d(t, {
   $: () => v,
-  s: () => x
+  s: () => C
 }), n(953529);
 var r = n(255367),
   i = n(73800),
@@ -26,7 +26,7 @@ let E = e => {
       url: n,
       description: i
     } = t;
-    return null == n ? null : (0, r.jsx)(C, {
+    return null == n ? null : (0, r.jsx)(x, {
       url: n,
       description: i
     })
@@ -38,11 +38,11 @@ let E = e => {
     } = e;
     if (!_.n2.has(l.type)) return null;
     let a = void 0 !== l.video && l.type !== o.h.GIFV ? l.video.url : null != (i = null == (t = l.thumbnail) ? void 0 : t.url) ? i : null == (n = l.image) ? void 0 : n.url;
-    return null == a ? null : (0, r.jsx)(C, {
+    return null == a ? null : (0, r.jsx)(x, {
       url: a
     })
   },
-  C = e => {
+  x = e => {
     let {
       url: t,
       description: n
@@ -61,7 +61,7 @@ let E = e => {
     })
   };
 
-function x(e) {
+function C(e) {
   c.Z.pop(), (0, m.t)({
     id: "explicit-media-false-positive-modal",
     text: h.intl.string(h.t.gFsTKi)
@@ -79,7 +79,7 @@ function v(e) {
     onConfirmPress: d,
     transitionState: p,
     onClose: m
-  } = e, _ = (0, u.Dt)(), C = (0, g.pn)("ExplicitMediaFalsePositiveModal"), x = i.useCallback(() => {
+  } = e, _ = (0, u.Dt)(), x = (0, g.pn)("ExplicitMediaFalsePositiveModal"), C = i.useCallback(() => {
     (0, f.aP)({
       action: f.Yy.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CANCEL,
       channelId: t,
@@ -102,7 +102,7 @@ function v(e) {
       context: a
     })
   }, [t, n, a]);
-  let O = i.useMemo(() => C ? h.intl.string(h.t["z4du/P"]) : h.intl.string(h.t.gg5Dp6), [C]);
+  let O = i.useMemo(() => x ? h.intl.string(h.t["z4du/P"]) : h.intl.string(h.t.gg5Dp6), [x]);
   return (0, r.jsxs)(s.Y0X, {
     transitionState: p,
     "aria-labelledby": _,
@@ -110,7 +110,7 @@ function v(e) {
     parentComponent: "ExplicitMediaFalsePositiveModal",
     children: [(0, r.jsxs)(s.hzk, {
       children: [(0, r.jsx)(s.olH, {
-        onClick: x,
+        onClick: C,
         className: b.closeButton
       }), (0, r.jsx)(s.X6q, {
         id: _,
@@ -142,7 +142,7 @@ function v(e) {
         disabled: l,
         color: s.zxk.Colors.TRANSPARENT,
         size: s.zxk.Sizes.MEDIUM,
-        onClick: x,
+        onClick: C,
         children: h.intl.string(h.t["ETE/oK"])
       })]
     })]

@@ -23,8 +23,8 @@ var r = n(278074),
   b = n(79390),
   E = n(839963),
   y = n(897325),
-  C = n(57101),
-  x = n(562293),
+  x = n(57101),
+  C = n(562293),
   v = n(981631),
   O = n(388032);
 let j = {
@@ -78,7 +78,7 @@ function N(e, t) {
   } = e;
   if (null == o) return;
   let m = e.state === v.yb.SENT,
-    f = m ? null != a ? a : (0, x.H)(o.expiry) : "",
+    f = m ? null != a ? a : (0, C.H)(o.expiry) : "",
     g = null == f && m,
     {
       selectedAnswerIds: _,
@@ -86,14 +86,14 @@ function N(e, t) {
       editing: E,
       showResults: y
     } = null != (i = null != t ? t : (0, h.fU)(e.getChannelId(), e.id)) ? i : j,
-    C = e.reactions,
+    x = e.reactions,
     O = !0;
   if (!T(e)) {
     let t = p.Z.getMessage(e.channel_id, e.id);
-    O = !e.isSearchHit && null != t, C = null != (l = null == t ? void 0 : t.reactions) ? l : C
+    O = !e.isSearchHit && null != t, x = null != (l = null == t ? void 0 : t.reactions) ? l : x
   }
   let I = _.size > 0,
-    S = C.some(e => !0 === e.me_vote),
+    S = x.some(e => !0 === e.me_vote),
     N = !E && S,
     P = N || g || y,
     A = m && O && (!S || E || P),
@@ -116,7 +116,7 @@ function N(e, t) {
     isExpired: g,
     isInteractive: O,
     isSent: m,
-    reactions: C,
+    reactions: x,
     selectedAnswerIds: _,
     submitting: b,
     tapShouldOpenVotersModal: P,
@@ -134,11 +134,11 @@ function P(e, t) {
     poll: h
   } = e;
   if (null == h) return;
-  let x = m.default.getCurrentUser();
-  if (null == x) return;
+  let C = m.default.getCurrentUser();
+  if (null == C) return;
   let v = l.Z.useReducedMotion,
     j = null == (s = u.Z.getChannel(e.getChannelId())) || null == (n = s.getGuildId) ? void 0 : n.call(s),
-    T = (0, y.E)(x, j),
+    T = (0, y.E)(C, j),
     P = h.answers,
     A = h.layout_type,
     w = N(e, t, {
@@ -326,7 +326,7 @@ function P(e, t) {
     }, () => E.Y7.CHECKBOXES).exhaustive(),
     answerTapAccessibilityLabel: W ? $ : void 0,
     layoutType: A,
-    resources: (0, C.Z)({
+    resources: (0, x.Z)({
       theme: d,
       layoutType: A
     }),

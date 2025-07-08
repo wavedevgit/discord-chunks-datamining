@@ -1,7 +1,7 @@
 /** Chunk was on 61668 **/
 n.d(t, {
-  e: () => C,
-  i: () => x
+  e: () => x,
+  i: () => C
 }), n(35282), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -29,7 +29,7 @@ function y(e) {
   return (0, s.e7)([g.ZP], () => null == t ? null : g.ZP.getCustomEmojiById(t))
 }
 
-function C(e) {
+function x(e) {
   let {
     message: t,
     className: n
@@ -64,19 +64,19 @@ function C(e) {
   })
 }
 
-function x(e) {
+function C(e) {
   var t;
   let {
     message: n,
     channel: l,
     compact: a,
     usernameHook: s
-  } = e, [m, g] = i.useState(!1), E = (0, d.ZP)(n), C = s(E), x = y(n.content), v = i.useCallback(() => {
-    null != x && f.S.dispatchToLastSubscribed(_.CkL.INSERT_TEXT, {
-      plainText: ":".concat(x.name, ":"),
+  } = e, [m, g] = i.useState(!1), E = (0, d.ZP)(n), x = s(E), C = y(n.content), v = i.useCallback(() => {
+    null != C && f.S.dispatchToLastSubscribed(_.CkL.INSERT_TEXT, {
+      plainText: ":".concat(C.name, ":"),
       addSpace: !0
     })
-  }, [x]);
+  }, [C]);
   return (0, r.jsx)(p.Z, {
     iconNode: (0, r.jsx)(o.EO4, {
       size: "md",
@@ -90,12 +90,12 @@ function x(e) {
       tag: "span",
       variant: "text-md/normal",
       color: "text-secondary",
-      children: null == x ? h.intl.format(h.t.k6Jc9f, {
+      children: null == C ? h.intl.format(h.t.k6Jc9f, {
         username: E.nick,
-        usernameHook: C
+        usernameHook: x
       }) : h.intl.format(h.t.uoCHWV, {
         username: E.nick,
-        usernameHook: C,
+        usernameHook: x,
         emoji: (0, r.jsxs)(c.P3F, {
           className: b.clickableEmoji,
           tag: "span",
@@ -103,10 +103,10 @@ function x(e) {
           onMouseEnter: () => g(!0),
           onMouseLeave: () => g(!1),
           children: [(0, r.jsx)(u.Z, {
-            emojiName: x.name,
+            emojiName: C.name,
             size: "default",
-            emojiId: x.id,
-            animated: x.animated,
+            emojiId: C.id,
+            animated: C.animated,
             isInteracting: m,
             channelId: l.id,
             messageId: n.id,
@@ -115,7 +115,7 @@ function x(e) {
             tag: "span",
             variant: "text-md/medium",
             color: "text-primary",
-            children: ":".concat(null != (t = x.originalName) ? t : x.name, ":")
+            children: ":".concat(null != (t = C.originalName) ? t : C.name, ":")
           })]
         })
       })
