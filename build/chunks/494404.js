@@ -236,7 +236,7 @@ function w(e) {
       maxHeight: w.height - 43 - 25 - 48
     };
   k && (U.maxHeight -= 40);
-  let B = null != h && l;
+  let G = null != h && l;
   return (0, r.jsx)("div", {
     className: a()(x, I.messagesPopoutWrap),
     style: U,
@@ -247,7 +247,7 @@ function w(e) {
       component: g(),
       children: [(0, r.jsxs)(d.Den, {
         className: a()(I.messagesPopout, b),
-        onScroll: B ? M : void 0,
+        onScroll: G ? M : void 0,
         ref: N,
         children: [(0, r.jsx)(c.bG, {
           navigator: A,

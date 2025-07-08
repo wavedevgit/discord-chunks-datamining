@@ -1,7 +1,7 @@
 /** Chunk was on 36512 **/
 n.d(t, {
   K: () => U,
-  P: () => B
+  P: () => G
 }), n(388685);
 var r = n(255367),
   s = n(73800),
@@ -105,13 +105,13 @@ function U(e) {
       total_count: n.length,
       overdue_count: R.Z.getOverdueMessageReminderCount()
     }
-  }, {}, [n.length]), 0 === n.length) ? (0, r.jsx)(A.w, {}) : (0, r.jsx)(G, {
+  }, {}, [n.length]), 0 === n.length) ? (0, r.jsx)(A.w, {}) : (0, r.jsx)(B, {
     savedMessageKeys: n,
     closePopout: t
   })
 }
 
-function B(e) {
+function G(e) {
   let {
     onOpen: t,
     onClose: n,
@@ -148,7 +148,7 @@ function B(e) {
   })
 }
 
-function G(e) {
+function B(e) {
   let {
     savedMessageKeys: t,
     closePopout: n

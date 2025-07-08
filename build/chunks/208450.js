@@ -41,9 +41,9 @@ var r = n(255367),
   L = n(981631),
   H = n(862825),
   U = n(388032),
-  B = n(665333);
+  G = n(665333);
 
-function G(e, t, n) {
+function B(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -144,9 +144,9 @@ class W extends s.PureComponent {
           className: s,
           ref: this._containerRef,
           children: (0, r.jsx)("div", {
-            className: a()(B.search, {
-              [B.open]: i || l,
-              [B.focused]: l
+            className: a()(G.search, {
+              [G.open]: i || l,
+              [G.focused]: l
             }),
             children: (0, r.jsx)(d.tEY, {
               focusTarget: {
@@ -154,12 +154,12 @@ class W extends s.PureComponent {
               },
               ringTarget: this._searchBarRef,
               children: (0, r.jsxs)("div", {
-                className: B.searchBar,
+                className: G.searchBar,
                 ref: this._searchBarRef,
                 children: [this.renderInput(u), (0, r.jsx)(p.BK, {
                   onClear: this.handleClearSearch,
                   hasContent: i || n,
-                  className: B.icon
+                  className: G.icon
                 })]
               }, e)
             })
@@ -169,10 +169,10 @@ class W extends s.PureComponent {
     })
   }
   constructor(e) {
-    super(e), G(this, "state", {
+    super(e), B(this, "state", {
       focused: !1,
       selectedIndex: void 0
-    }), G(this, "_editorRef", void 0), G(this, "_containerRef", s.createRef()), G(this, "_searchBarRef", s.createRef()), G(this, "_searchPopoutRef", s.createRef()), G(this, "handleSetSearchQuery", e => {
+    }), B(this, "_editorRef", void 0), B(this, "_containerRef", s.createRef()), B(this, "_searchBarRef", s.createRef()), B(this, "_searchPopoutRef", s.createRef()), B(this, "handleSetSearchQuery", e => {
       let {
         query: t,
         anchor: n,
@@ -187,16 +187,16 @@ class W extends s.PureComponent {
       a = T.iK(o, a), this.setEditorState(a), s && this.search({
         queryString: T.Sq(a)
       })
-    }), G(this, "handleSelectedIndexChanged", e => {
+    }), B(this, "handleSelectedIndexChanged", e => {
       var t, n;
       null == (n = this._editorRef) || null == (t = n.editor) || t.setAttribute("aria-activedescendant", null != e ? "".concat(z, "-").concat(e) : void 0), this.setState({
         selectedIndex: e
       })
-    }), G(this, "renderPopout", () => (0, r.jsx)(D.ZP, {
+    }), B(this, "renderPopout", () => (0, r.jsx)(D.ZP, {
       ref: this._searchPopoutRef,
       navId: z,
       onSelectedIndexChanged: this.handleSelectedIndexChanged
-    })), G(this, "search", e => {
+    })), B(this, "search", e => {
       let {
         searchId: t,
         isSearching: n
@@ -222,7 +222,7 @@ class W extends s.PureComponent {
         }), d.uvj.announce(U.intl.string(U.t.pKCxWF)), this.handleBlur(!0)
       }
       return !0
-    }), G(this, "handleClearSearch", e => {
+    }), B(this, "handleClearSearch", e => {
       let {
         editorState: t,
         searchId: n,
@@ -235,7 +235,7 @@ class W extends s.PureComponent {
         searchType: r,
         searchId: n
       }), s || Promise.resolve().then(() => this.blurEditor())
-    }), G(this, "handleFocusSearch", e => {
+    }), B(this, "handleFocusSearch", e => {
       let {
         prefillCurrentChannel: t
       } = e;
@@ -278,19 +278,19 @@ class W extends s.PureComponent {
           replace: !0
         })
       })
-    }), G(this, "focusEditor", () => {
+    }), B(this, "focusEditor", () => {
       let {
         _editorRef: e
       } = this;
       null != e && Promise.resolve().then(() => e.focus())
-    }), G(this, "blurEditor", () => {
+    }), B(this, "blurEditor", () => {
       let {
         _editorRef: e
       } = this;
       null != e && Promise.resolve().then(() => e.blur())
-    }), G(this, "setEditorRef", e => {
+    }), B(this, "setEditorRef", e => {
       this._editorRef = e
-    }), G(this, "onFocus", () => {
+    }), B(this, "onFocus", () => {
       let {
         searchId: e,
         searchType: t,
@@ -302,7 +302,7 @@ class W extends s.PureComponent {
         searchId: e,
         searchType: t
       })
-    }), G(this, "handleBlur", e => {
+    }), B(this, "handleBlur", e => {
       let {
         searchId: t,
         searchType: n,
@@ -316,9 +316,9 @@ class W extends s.PureComponent {
           searchType: n
         }), T.xb(this.props.editorState) && this.clearSearch()
       })
-    }), G(this, "onBlur", e => {
+    }), B(this, "onBlur", e => {
       this.handleBlur()
-    }), G(this, "handleReturn", e => {
+    }), B(this, "handleReturn", e => {
       let {
         shiftKey: t
       } = e;
@@ -329,7 +329,7 @@ class W extends s.PureComponent {
       return null != n && n.selectOption() || ((0, w.X)() && t ? this.search({
         searchEverywhere: !0
       }) : this.search()), "handled"
-    }), G(this, "handleBeforeInput", e => {
+    }), B(this, "handleBeforeInput", e => {
       let {
         editorState: t
       } = this.props, {
@@ -338,7 +338,7 @@ class W extends s.PureComponent {
       return T.Sq(t).length >= 512 || (t = T.x0(e, t), t = T.Hl(t, 512), t = this.tokenize(t), this.setEditorState(t), n || this.setState({
         focused: !0
       })), "handled"
-    }), G(this, "handleKeyCommand", e => {
+    }), B(this, "handleKeyCommand", e => {
       let {
         editorState: t
       } = this.props, {
@@ -364,7 +364,7 @@ class W extends s.PureComponent {
           return "handled"
       }
       return "not-handled"
-    }), G(this, "handlePastedText", e => {
+    }), B(this, "handlePastedText", e => {
       let {
         editorState: t
       } = this.props, {
@@ -373,12 +373,12 @@ class W extends s.PureComponent {
       return e = null != e ? e.replace(/\n/g, "") : "", t = T.x0(e, t), t = T.Hl(t, 512), t = this.tokenize(t), n || this.setState({
         focused: !0
       }), this.setEditorState(t), "handled"
-    }), G(this, "setEditorState", e => {
+    }), B(this, "setEditorState", e => {
       let {
         searchId: t
       } = this.props;
       h.j8(t, e)
-    }), G(this, "handleKeyBind", e => {
+    }), B(this, "handleKeyBind", e => {
       let {
         key: t,
         metaKey: n,

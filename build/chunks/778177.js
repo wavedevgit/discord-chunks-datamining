@@ -62,7 +62,7 @@ function U(e) {
   return e
 }
 
-function B(e, t) {
+function G(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -75,7 +75,7 @@ function B(e, t) {
   }), e
 }
 
-function G(e, t) {
+function B(e, t) {
   if (null == e) return {};
   var n, r, s = function(e, t) {
     if (null == e) return {};
@@ -222,7 +222,7 @@ let z = h()("2015-05-15").local(),
       })]
     })
   },
-  J = e => (0, r.jsx)(Q, B(U({}, e), {
+  J = e => (0, r.jsx)(Q, G(U({}, e), {
     className: L.user,
     renderResult: W
   })),
@@ -243,7 +243,7 @@ let z = h()("2015-05-15").local(),
     },
     [Z.dCx.FILTER_IN]: {
       titleText: () => D.intl.string(D.t.vHyCgo),
-      component: e => (0, r.jsx)(Q, B(U({}, e), {
+      component: e => (0, r.jsx)(Q, G(U({}, e), {
         renderResult: K
       }))
     },
@@ -288,7 +288,7 @@ let z = h()("2015-05-15").local(),
           searchId: o,
           renderResult: c,
           group: u
-        } = e, d = G(e, ["onSelect", "onFocus", "result", "showFilter", "searchId", "renderResult", "group"]);
+        } = e, d = B(e, ["onSelect", "onFocus", "result", "showFilter", "searchId", "renderResult", "group"]);
         let h = "",
           p = s.useMemo(() => {
             var e;
@@ -307,7 +307,7 @@ let z = h()("2015-05-15").local(),
               children: t
             }, e.type + t)
           });
-        return (0, r.jsxs)(g.P3F, B(U({
+        return (0, r.jsxs)(g.P3F, G(U({
           className: L.option,
           onClick: t,
           onFocus: n
@@ -328,7 +328,7 @@ let z = h()("2015-05-15").local(),
       groupTip: () => (0, r.jsx)(g.ua7, {
         text: D.intl.string(D.t.hvVgAQ),
         position: "left",
-        children: e => (0, r.jsx)("div", B(U({
+        children: e => (0, r.jsx)("div", G(U({
           className: L.searchLearnMore
         }, e), {
           children: (0, r.jsx)(g.eee, {
@@ -349,9 +349,9 @@ let z = h()("2015-05-15").local(),
             showFilter: i,
             searchId: o
           } = e,
-          c = G(e, ["result", "onSelect", "onFocus", "showFilter", "searchId"]);
+          c = B(e, ["result", "onSelect", "onFocus", "showFilter", "searchId"]);
         let u = w.Ko(null != (t = n.token) ? t : "");
-        return (0, r.jsxs)(g.P3F, B(U({
+        return (0, r.jsxs)(g.P3F, G(U({
           className: a()(L.option, L.searchOption),
           onClick: s,
           onFocus: l
@@ -582,7 +582,7 @@ let Y = s.forwardRef((e, t) => {
         l = w.BU(s.autocompletes);
       return [r, s, l]
     });
-  return (0, r.jsx)(X, B(U({}, e), {
+  return (0, r.jsx)(X, G(U({}, e), {
     searchId: s,
     resultsState: l,
     totalResults: a,

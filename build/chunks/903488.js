@@ -1,7 +1,7 @@
 /** Chunk was on 36512 **/
 n.d(t, {
   Z: () => _
-}), n(388685);
+}), n(388685), n(539854);
 var r, s = n(442837),
   l = n(570140),
   a = n(881052),
@@ -38,15 +38,10 @@ class h {
       documentsIndexed: i
     } = e;
     this.analyticsId = r, this.isFetching = !1, this.isIndexing = !1, this.isInitialFetchComplete = !0, this.isHistoricalIndexing = a, this.error = null, this.documentsIndexed = i, this.cursor = s;
-    let o = this.dedupMessages(t),
-      c = this.filterBlockedMessages(o);
-    this.messages = [...null != (n = this.messages) ? n : [], ...c], this.hasNextPage = null != this.cursor, this.totalResults = l
-  }
-  filterBlockedMessages(e) {
-    return e
-  }
-  dedupMessages(e) {
-    return e.filter(e => !this.messageIds.has(e.id) && (this.messageIds.add(e.id), !0))
+    let o = [...null != (n = this.messages) ? n : []];
+    t.forEach(e => {
+      this.messageIds.has(e.id) || (this.messageIds.add(e.id), o.push(e))
+    }), this.messages = o, this.hasNextPage = null != this.cursor, this.totalResults = l
   }
   constructor() {
     d(this, "isIndexing", !1), d(this, "isHistoricalIndexing", !1), d(this, "isFetching", !1), d(this, "analyticsId", null), d(this, "error", null), d(this, "messages", null), d(this, "documentsIndexed", 0), d(this, "totalResults", null), d(this, "hasNextPage", !1), d(this, "messageIds", new Set), d(this, "isInitialFetchComplete", !1), d(this, "cursor", null)
