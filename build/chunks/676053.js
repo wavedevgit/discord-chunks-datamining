@@ -26,13 +26,12 @@ function h(e) {
         align: "center"
       },
       badge: E,
-      footerLink: j,
-      gradientColor: O,
-      onWatchVideo: C,
-      onRequestClose: S,
-      popoverRef: v
+      textLink: j,
+      onWatchVideo: O,
+      onRequestClose: C,
+      popoverRef: S
     } = e,
-    T = function(e, t) {
+    v = function(e, t) {
       if (null == e) return {};
       var n, i, r = function(e, t) {
         if (null == e) return {};
@@ -46,9 +45,9 @@ function h(e) {
         for (i = 0; i < s.length; i++) n = s[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
       }
       return r
-    }(e, ["title", "body", "assetUrl", "button", "caretConfig", "badge", "footerLink", "gradientColor", "onWatchVideo", "onRequestClose", "popoverRef"]);
-  let N = r.useRef(null),
-    I = r.useCallback(() => ({
+    }(e, ["title", "body", "assetUrl", "button", "caretConfig", "badge", "textLink", "onWatchVideo", "onRequestClose", "popoverRef"]);
+  let T = r.useRef(null),
+    N = r.useCallback(() => ({
       type: "VIDEO",
       url: b,
       proxyUrl: b,
@@ -57,26 +56,26 @@ function h(e) {
       height: 720,
       className: g.media
     }), [b, h]),
+    I = r.useCallback(() => {
+      null !== T.current && T.current.pause(), null == C || C()
+    }, [C]),
     y = r.useCallback(() => {
-      null !== N.current && N.current.pause(), null == S || S()
-    }, [S]),
+      null !== T.current && T.current.pause(), null == C || C()
+    }, [C]),
     A = r.useCallback(() => {
-      null !== N.current && N.current.pause(), null == S || S()
-    }, [S]),
-    P = r.useCallback(() => {
-      null !== N.current && N.current.pause();
-      let e = I();
+      null !== T.current && T.current.pause();
+      let e = N();
       (0, a.K)({
         items: [e],
         startingIndex: 0,
         location: "VideoPopover",
         shouldHideMediaOptions: !0
-      }), null == S || S(), null == C || C()
-    }, [I, C, S]),
-    R = (0, i.jsxs)("div", {
+      }), null == C || C(), null == O || O()
+    }, [N, O, C]),
+    P = (0, i.jsxs)("div", {
       className: g.videoContainer,
       children: [(0, i.jsx)(l.Z, {
-        ref: N,
+        ref: T,
         src: b,
         width: 240,
         height: 135,
@@ -93,7 +92,7 @@ function h(e) {
           playing: !1,
           size: "sm",
           "aria-label": "Play video: ".concat(h),
-          onClick: P
+          onClick: A
         })
       })]
     });
@@ -114,21 +113,21 @@ function h(e) {
       })
     }
     return e
-  }({}, T), n = n = {
-    onRequestClose: y,
+  }({}, v), n = n = {
+    onRequestClose: I,
     hasVideo: !0,
     children: (0, i.jsxs)("div", {
-      ref: v,
+      ref: S,
       children: [(0, i.jsx)(m.u, {
-        onClick: A,
+        onClick: y,
         colorMix: !0
       }), (0, i.jsx)(d.V, {
-        asset: R
+        asset: P
       }), (0, i.jsx)(p.Y, {
         title: h,
         body: f,
         badge: E,
-        footerLink: j
+        textLink: j
       }), (0, i.jsx)(c.k, {
         buttons: [x]
       }), (0, i.jsx)(u.$, {

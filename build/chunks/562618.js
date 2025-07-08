@@ -27,7 +27,7 @@ function u(e) {
     body: r,
     badge: o,
     className: u,
-    footerLink: m
+    textLink: m
   } = e, p = null == (t = null == m ? void 0 : m.external) || t;
   return (0, i.jsxs)("div", {
     className: s()(c.header, u),

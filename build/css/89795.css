@@ -1,6 +1,6 @@
 /**
   Module ID: 89795
-  Original File Name: fa4e0df10be81f7d
+  Original File Name: 7a2d37a3368dc79f
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -15026,12 +15026,12 @@ div.nagbar_d74ef8 {
 }
 
 .asset--sm_d6f39b {
-    height: 72px;
+    aspect-ratio: 2/1;
     width: 144px
 }
 
 .asset--md_d6f39b {
-    height: 96px;
+    aspect-ratio: 16/9;
     width: 144px
 }
 
@@ -19743,4 +19743,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=fa4e0df10be81f7d.css.map*/
+/*# sourceMappingURL=7a2d37a3368dc79f.css.map*/

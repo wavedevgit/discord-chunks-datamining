@@ -35,7 +35,7 @@ var i = n(255367),
   D = n(231338),
   Z = n(426617),
   w = n(177475),
-  k = n(700355),
+  k = n(453707),
   L = n(241539),
   B = n(715720);
 
@@ -785,7 +785,7 @@ function ei() {
         text: "Button",
         onClick: el
       }],
-      footerLink: {
+      textLink: {
         text: "Learn More",
         link: "https://discord.com",
         external: !0
@@ -947,7 +947,7 @@ function ei() {
         alt: "Medium placeholder"
       }),
       gradientColor: "nitro-pink",
-      footerLink: {
+      textLink: {
         text: "Learn about Nitro",
         link: "https://discord.com/nitro",
         external: !0
@@ -1035,7 +1035,7 @@ function ei() {
           text: "Get Started"
         },
         gradientColor: "blue",
-        footerLink: {
+        textLink: {
           text: "Learn More",
           link: "https://discord.com/quests",
           external: !0
@@ -1106,7 +1106,7 @@ function ei() {
           variant: "expressive"
         },
         gradientColor: "nitro-pink",
-        footerLink: {
+        textLink: {
           text: "Learn More",
           link: "https://discord.com",
           external: !0
