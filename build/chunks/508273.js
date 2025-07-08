@@ -14,14 +14,14 @@ var r = n(255367),
   p = n(906732),
   m = n(406218),
   f = n(749958),
-  g = n(993860),
-  _ = n(137162),
+  _ = n(993860),
+  g = n(137162),
   h = n(15210),
   b = n(43542),
   E = n(910200),
   y = n(358595),
-  x = n(981631),
-  C = n(388032),
+  C = n(981631),
+  x = n(388032),
   v = n(583136);
 
 function O(e) {
@@ -32,13 +32,13 @@ function O(e) {
     onTransitionToInviteChannel: c,
     onAcceptInstantInvite: d,
     currentUserId: p
-  } = e, g = i.useRef(null), [h, O] = i.useState(!0), [I, S] = i.useState(!1), T = t.state === x.r2o.ACCEPTING, N = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), {
+  } = e, _ = i.useRef(null), [h, O] = i.useState(!0), [I, S] = i.useState(!1), T = t.state === C.r2o.ACCEPTING, N = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), {
     updateButton: P,
     updateCopy: A
   } = (0, f.n2)(), w = p === l.author.id, Z = A ? 326 : 292;
   i.useLayoutEffect(() => {
     var e, t;
-    S((null != (t = null == (e = g.current) ? void 0 : e.clientHeight) ? t : 0) > Z)
+    S((null != (t = null == (e = _.current) ? void 0 : e.clientHeight) ? t : 0) > Z)
   }, [Z, S]);
   let R = (0, m.PC)(t),
     k = i.useCallback(() => {
@@ -49,8 +49,8 @@ function O(e) {
     }, [h, I]),
     D = i.useMemo(() => {
       var e;
-      return I && (null == (e = g.current) ? void 0 : e.clientHeight) != null ? {
-        height: h ? Z : g.current.clientHeight + 36 + 48,
+      return I && (null == (e = _.current) ? void 0 : e.clientHeight) != null ? {
+        height: h ? Z : _.current.clientHeight + 36 + 48,
         transition: N ? void 0 : "height 0.2s ease"
       } : {}
     }, [h, I, N, Z]);
@@ -62,14 +62,14 @@ function O(e) {
     style: D,
     children: [(0, r.jsxs)("div", {
       className: v.cardHeightMeasure,
-      ref: g,
+      ref: _,
       children: [A ? (0, r.jsx)("div", {
         className: v.inviteTitleWrapper,
         children: (0, r.jsx)(s.Text, {
           variant: "text-sm/semibold",
           color: "header-secondary",
           className: v.inviteTitle,
-          children: w ? C.intl.string(C.t["oU/lsr"]) : C.intl.string(C.t.BoQUFR)
+          children: w ? x.intl.string(x.t["oU/lsr"]) : x.intl.string(x.t.BoQUFR)
         })
       }) : null, (0, r.jsx)(E.Z7, {
         profile: R,
@@ -78,7 +78,7 @@ function O(e) {
         profile: R
       }), (0, r.jsx)(b.Z, {
         profile: R
-      }), (0, r.jsx)(_.E, {
+      }), (0, r.jsx)(g.E, {
         profile: R,
         className: v.mainContent
       })]
@@ -91,7 +91,7 @@ function O(e) {
       children: (0, r.jsx)(s.Text, {
         variant: "text-xs/medium",
         color: "interactive-normal",
-        children: C.intl.string(C.t.xdCLeH)
+        children: x.intl.string(x.t.xdCLeH)
       })
     }) : null, (0, r.jsxs)("div", {
       className: a()(v.footer, {
@@ -133,8 +133,8 @@ function j(e) {
     inIterationExperiment: m
   } = e, {
     guildId: f,
-    ctaType: _
-  } = (0, g.ZP)(n, g.F3.INVITE), {
+    ctaType: g
+  } = (0, _.ZP)(n, _.F3.INVITE), {
     analyticsLocations: b
   } = (0, p.ZP)(d.Z.INVITE_EMBED), E = i.useCallback(() => {
     let e = l ? "transition" : "accept";
@@ -145,9 +145,9 @@ function j(e) {
       invite_message_id: a.id
     }, b)
   }, [t, a, b, l]);
-  return null == _ ? null : (0, r.jsx)(h.o, {
+  return null == g ? null : (0, r.jsx)(h.o, {
     guildId: f,
-    ctaType: _,
+    ctaType: g,
     submitting: o,
     onGoToGuild: s,
     onAcceptInvite: u,

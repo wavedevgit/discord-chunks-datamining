@@ -207,91 +207,85 @@ let _ = e => {
       onToggleTheme: t
     } = (0, p.S)(), n = (0, d.ZP)() === g.BR.DARK, o = l.useCallback(t => {
       if (e.has(t) || n) return "always-white"
-    }, [e, n]), a = l.useCallback(t => e.has(t) || n ? u.TVs.colors.WHITE : u.TVs.colors.INTERACTIVE_NORMAL, [e, n]), s = l.useMemo(() => [
-      [{
-        name: h.intl.string(h.t.aVBOKi),
-        icon: (0, r.jsx)(u.wGt, {
-          size: "xxs",
-          color: a(c.h.ANIME)
-        }),
-        enum: c.h.ANIME
-      }, {
-        name: h.intl.string(h.t["3WoZBQ"]),
-        icon: (0, r.jsx)(u.iWm, {
-          size: "xxs",
-          color: a(c.h.GAMING)
-        }),
-        enum: c.h.GAMING
-      }],
-      [{
-        name: h.intl.string(h.t.yuEmLi),
-        icon: (0, r.jsx)(u.YqE, {
-          size: "xxs",
-          color: a(c.h.CUTE_COZY)
-        }),
-        enum: c.h.CUTE_COZY
-      }, {
-        name: h.intl.string(h.t.mMvCHh),
-        icon: (0, r.jsx)(u.lqV, {
-          size: "xxs",
-          color: a(c.h.SCI_FI)
-        }),
-        enum: c.h.SCI_FI
-      }],
-      [{
-        name: h.intl.string(h.t.TlhOQE),
-        icon: (0, r.jsx)(u.ED8, {
-          size: "xxs",
-          color: a(c.h.FOOD_DRINKS)
-        }),
-        enum: c.h.FOOD_DRINKS
-      }, {
-        name: h.intl.string(h.t["4IaUIC"]),
-        icon: (0, r.jsx)(u.HI3, {
-          size: "xxs",
-          color: a(c.h.FANTASY)
-        }),
-        enum: c.h.FANTASY
-      }],
-      [{
-        name: h.intl.string(h.t.w0nSGx),
-        icon: (0, r.jsx)(u.Qjj, {
-          size: "xxs",
-          color: a(c.h.ANIMALS_PETS)
-        }),
-        enum: c.h.ANIMALS_PETS
-      }, {
-        name: h.intl.string(h.t.cJng7u),
-        icon: (0, r.jsx)(u.hg2, {
-          size: "xxs",
-          color: a(c.h.NATURE)
-        }),
-        enum: c.h.NATURE
-      }],
-      [{
-        name: h.intl.string(h.t["5mUvyM"]),
-        icon: (0, r.jsx)(u.Roe, {
-          size: "xxs",
-          color: a(c.h.MOVIES_TV_SHOWS)
-        }),
-        enum: c.h.MOVIES_TV_SHOWS
-      }, {
-        name: h.intl.string(h.t.MB9H5e),
-        icon: (0, r.jsx)(u.Z6G, {
-          size: "xxs",
-          color: a(c.h.DARK_MOODY)
-        }),
-        enum: c.h.DARK_MOODY
-      }]
-    ], [a]);
+    }, [e, n]), a = l.useCallback(t => e.has(t) || n ? u.TVs.colors.WHITE : u.TVs.colors.INTERACTIVE_NORMAL, [e, n]), s = l.useMemo(() => [{
+      name: h.intl.string(h.t.aVBOKi),
+      icon: (0, r.jsx)(u.wGt, {
+        size: "xs",
+        color: a(c.h.ANIME)
+      }),
+      enum: c.h.ANIME
+    }, {
+      name: h.intl.string(h.t["3WoZBQ"]),
+      icon: (0, r.jsx)(u.iWm, {
+        size: "xs",
+        color: a(c.h.GAMING)
+      }),
+      enum: c.h.GAMING
+    }, {
+      name: h.intl.string(h.t.yuEmLi),
+      icon: (0, r.jsx)(u.YqE, {
+        size: "xs",
+        color: a(c.h.CUTE_COZY)
+      }),
+      enum: c.h.CUTE_COZY
+    }, {
+      name: h.intl.string(h.t.mMvCHh),
+      icon: (0, r.jsx)(u.lqV, {
+        size: "xs",
+        color: a(c.h.SCI_FI)
+      }),
+      enum: c.h.SCI_FI
+    }, {
+      name: h.intl.string(h.t.TlhOQE),
+      icon: (0, r.jsx)(u.ED8, {
+        size: "xs",
+        color: a(c.h.FOOD_DRINKS)
+      }),
+      enum: c.h.FOOD_DRINKS
+    }, {
+      name: h.intl.string(h.t["4IaUIC"]),
+      icon: (0, r.jsx)(u.HI3, {
+        size: "xs",
+        color: a(c.h.FANTASY)
+      }),
+      enum: c.h.FANTASY
+    }, {
+      name: h.intl.string(h.t.w0nSGx),
+      icon: (0, r.jsx)(u.Qjj, {
+        size: "xs",
+        color: a(c.h.ANIMALS_PETS)
+      }),
+      enum: c.h.ANIMALS_PETS
+    }, {
+      name: h.intl.string(h.t.cJng7u),
+      icon: (0, r.jsx)(u.hg2, {
+        size: "xs",
+        color: a(c.h.NATURE)
+      }),
+      enum: c.h.NATURE
+    }, {
+      name: h.intl.string(h.t["5mUvyM"]),
+      icon: (0, r.jsx)(u.Roe, {
+        size: "xs",
+        color: a(c.h.MOVIES_TV_SHOWS)
+      }),
+      enum: c.h.MOVIES_TV_SHOWS
+    }, {
+      name: h.intl.string(h.t.MB9H5e),
+      icon: (0, r.jsx)(u.Z6G, {
+        size: "xs",
+        color: a(c.h.DARK_MOODY)
+      }),
+      enum: c.h.DARK_MOODY
+    }], [a]);
     return (0, r.jsxs)("div", {
       className: b.themesSection,
       children: [(0, r.jsx)(u.Text, {
         variant: "text-md/semibold",
         children: h.intl.string(h.t.t1Ztrq)
-      }), s.map(n => (0, r.jsx)("div", {
+      }), (0, r.jsx)("div", {
         className: b.themeRow,
-        children: n.map(n => {
+        children: s.map(n => {
           let {
             name: l,
             icon: a,
@@ -304,11 +298,11 @@ let _ = e => {
             onClick: () => t(s),
             children: [a, (0, r.jsx)(u.Text, {
               color: o(s),
-              variant: "text-xs/medium",
+              variant: "text-sm/medium",
               children: l
             })]
           }, l)
         })
-      }, n.map(e => e.name).join(",")))]
+      })]
     })
   }

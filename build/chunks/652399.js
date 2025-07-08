@@ -1,7 +1,7 @@
 /** Chunk was on 61668 **/
 n.d(t, {
-  I1: () => x,
-  IZ: () => C,
+  I1: () => C,
+  IZ: () => x,
   PJ: () => T,
   Qb: () => y,
   Yc: () => j,
@@ -46,12 +46,12 @@ function f(e) {
   return m(e, e => a.Z.getSessionId(e))
 }
 
-function g(e) {
+function _(e) {
   var t, n;
   return null != (n = null == e || null == (t = e.trim()) ? void 0 : t.length) ? n : 0
 }
 
-function _(e) {
+function g(e) {
   var t, n, r;
   return null != (r = null == e || null == (n = e.content) || null == (t = n.trim()) ? void 0 : t.length) ? r : 0
 }
@@ -73,8 +73,8 @@ function h(e) {
     pageNumLinks: b,
     pageNumEmbeds: E,
     pageNumAttachments: y,
-    searchQueryString: x,
-    searchQuery: C
+    searchQueryString: C,
+    searchQuery: x
   } = e;
   i.ZP.trackWithMetadata(d.rMx.SEARCH_RESULT_VIEWED, {
     search_type: t,
@@ -92,8 +92,8 @@ function h(e) {
     page_num_links: b,
     page_num_embeds: E,
     page_num_attach: y,
-    search_query_length: g(x),
-    search_query_content_length: _(C)
+    search_query_length: _(C),
+    search_query_content_length: g(x)
   })
 }
 
@@ -125,8 +125,8 @@ function b(e) {
     limit: u,
     offset: p,
     index_num: m,
-    search_query_length: g(h),
-    search_query_content_length: _(b)
+    search_query_length: _(h),
+    search_query_content_length: g(b)
   })
 }
 
@@ -157,12 +157,12 @@ function y(e) {
     search_id: r,
     search_session_id: f(n),
     search_type: t,
-    search_query_length: g(l),
-    search_query_content_length: _(a)
+    search_query_length: _(l),
+    search_query_content_length: g(a)
   })
 }
 
-function x(e) {
+function C(e) {
   let {
     searchType: t,
     searchId: n
@@ -176,7 +176,7 @@ function x(e) {
   })
 }
 
-function C(e) {
+function x(e) {
   let {
     searchId: t,
     searchType: n
@@ -211,23 +211,23 @@ function O(e) {
   } = e, s = Object.keys(l), u = s.reduce((e, t) => {
     let n = l[t];
     return e[t] = Array.isArray(n) ? n.length : 1, e
-  }, {}), p = null != a ? (0, c.kG)(a) : [], m = 0, h = 0, b = 0, E = 0, y = 0, x = 0, C = 0, v = 0;
+  }, {}), p = null != a ? (0, c.kG)(a) : [], m = 0, h = 0, b = 0, E = 0, y = 0, C = 0, x = 0, v = 0;
   p.forEach(e => {
-    e.type === d.dCx.ANSWER_IN ? m++ : e.type === d.dCx.ANSWER_USERNAME_FROM ? h++ : e.type === d.dCx.ANSWER_USERNAME_MENTIONS ? b++ : e.type === d.dCx.ANSWER_HAS ? E++ : e.type === d.dCx.ANSWER_BEFORE ? y++ : e.type === d.dCx.ANSWER_ON ? x++ : e.type === d.dCx.ANSWER_AFTER ? C++ : e.type === d.dCx.ANSWER_PINNED && v++
+    e.type === d.dCx.ANSWER_IN ? m++ : e.type === d.dCx.ANSWER_USERNAME_FROM ? h++ : e.type === d.dCx.ANSWER_USERNAME_MENTIONS ? b++ : e.type === d.dCx.ANSWER_HAS ? E++ : e.type === d.dCx.ANSWER_BEFORE ? y++ : e.type === d.dCx.ANSWER_ON ? C++ : e.type === d.dCx.ANSWER_AFTER ? x++ : e.type === d.dCx.ANSWER_PINNED && v++
   }), i.ZP.trackWithMetadata(d.rMx.MESSAGES_SEARCH_STARTED, {
     search_id: null != n ? o.Z.getAnalyticsId(n) : null,
     search_session_id: f(n),
     search_type: t,
-    search_query_length: g(a),
-    search_query_content_length: _(l),
+    search_query_length: _(a),
+    search_query_content_length: g(l),
     sort_type: (0, r.Vj)(l),
     filter_in_count: m,
     filter_from_count: h,
     filter_mentions_count: b,
     filter_has_count: E,
     filter_before_count: y,
-    filter_during_count: x,
-    filter_after_count: C,
+    filter_during_count: C,
+    filter_after_count: x,
     filter_pinned_count: v
   }), i.ZP.trackWithMetadata(d.rMx.SEARCH_STARTED, {
     search_id: null != n ? o.Z.getAnalyticsId(n) : null,

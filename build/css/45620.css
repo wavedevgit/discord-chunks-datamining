@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: 56a0d8188d21d282
+  Original File Name: fb8a699485596d91
 **/
 .countDownWrapper_a1b7b8 {
     align-items: center;
@@ -127,7 +127,7 @@
 }
 
 .pageWrapperFilter__6db1d {
-    padding: 20px 26px
+    padding: 20px 0 0 20px
 }
 
 .inventory__6db1d {
@@ -285,13 +285,15 @@
 }
 
 .filterBar__6db1d {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+    border-left: 1px solid var(--border-subtle);
+    height: calc(100vh - 120px);
+    max-width: 300px;
+    overflow-y: auto;
+    padding-left: 12px;
     position: -webkit-sticky;
     position: sticky;
     top: 76px;
-    width: 250px
+    width: 20vw
 }
 
 .filterButton__6db1d {
@@ -310,6 +312,16 @@
     align-items: center;
     display: flex;
     height: 100%
+}
+
+@media (max-width:1400px) {
+    .filterBar__6db1d {
+        display: none
+    }
+
+    .controlsRightSide__6db1d {
+        visibility: hidden
+    }
 }
 
 @keyframes placeholderPulse__72fa0 {
@@ -997,13 +1009,10 @@
 
 .filterBar__11877 {
     background-color: var(--background-base-low);
-    border: 1px solid var(--border-subtle);
-    border-radius: var(--radius-sm);
     gap: 24px;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    padding: 16px;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content
@@ -1045,11 +1054,15 @@
 }
 
 .themesSection__11877 {
-    flex-direction: column
+    display: flex;
+    flex-direction: column;
+    gap: 8px
 }
 
-.themeRow__11877,.themesSection__11877 {
+.themeRow__11877 {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 8px
 }
 
@@ -1062,7 +1075,10 @@
     gap: 6px;
     justify-content: center;
     padding: 8px;
-    white-space: nowrap
+    white-space: nowrap;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content
 }
 
 .themeToggled__11877 {
@@ -1855,4 +1871,4 @@
     cursor: pointer
 }
 
-/*# sourceMappingURL=56a0d8188d21d282.css.map*/
+/*# sourceMappingURL=fb8a699485596d91.css.map*/

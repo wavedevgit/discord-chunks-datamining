@@ -14,14 +14,14 @@ var r = n(255367),
   p = n(601964),
   m = n(271383),
   f = n(485386),
-  g = n(430824),
-  _ = n(594174),
+  _ = n(430824),
+  g = n(594174),
   h = n(700785),
   b = n(709054),
   E = n(962086),
   y = n(160404),
-  x = n(225675),
-  C = n(981631),
+  C = n(225675),
+  x = n(981631),
   v = n(388032),
   O = n(318135);
 
@@ -38,13 +38,13 @@ function j(e) {
 function I(e) {
   let {
     guildId: t
-  } = e, n = (0, u.e7)([_.default], () => _.default.getCurrentUser()), l = (0, u.e7)([g.Z], () => g.Z.getGuild(t)), o = (0, u.e7)([f.Z], () => f.Z.getRoles(t)), {
+  } = e, n = (0, u.e7)([g.default], () => g.default.getCurrentUser()), l = (0, u.e7)([_.Z], () => _.Z.getGuild(t)), o = (0, u.e7)([f.Z], () => f.Z.getRoles(t)), {
     impersonateType: I,
     viewingRoles: S
   } = (0, u.cj)([y.Z], () => ({
     impersonateType: y.Z.getImpersonateType(t),
     viewingRoles: y.Z.getViewingRoles(t)
-  })), T = I === x.z.SERVER_SHOP, N = (0, u.e7)([m.ZP], () => null != n ? m.ZP.getTrueMember(t, n.id) : null), [P, A] = (0, d.A7R)(null == S ? [] : b.default.keys(S)), w = i.useRef(l);
+  })), T = I === C.z.SERVER_SHOP, N = (0, u.e7)([m.ZP], () => null != n ? m.ZP.getTrueMember(t, n.id) : null), [P, A] = (0, d.A7R)(null == S ? [] : b.default.keys(S)), w = i.useRef(l);
   i.useEffect(() => {
     let e = {},
       t = w.current;
@@ -71,7 +71,7 @@ function I(e) {
   }), c.e$(h.I0({
     forceRoles: k,
     context: l
-  }), c.$e(C.Plq.MANAGE_GUILD, C.Plq.MANAGE_ROLES)) || (0, p.eM)(l, n)) ? (0, r.jsx)("div", {
+  }), c.$e(x.Plq.MANAGE_GUILD, x.Plq.MANAGE_ROLES)) || (0, p.eM)(l, n)) ? (0, r.jsx)("div", {
     className: O.container,
     children: (0, r.jsx)(d.hQY, {
       placeholder: v.intl.string(v.t.Sojqsr),

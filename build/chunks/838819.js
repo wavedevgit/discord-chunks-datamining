@@ -26,8 +26,8 @@ var r = n(255367),
   S = n(780475),
   x = n(223143),
   y = n(298228),
-  j = n(309956),
-  T = n(98535),
+  T = n(309956),
+  j = n(98535),
   P = n(963102),
   L = n(508498),
   I = n(849217),
@@ -94,7 +94,7 @@ let R = e => {
         selectedTab: Y,
         transitionState: q,
         transitionToTab: K
-      } = (0, j.B)(B, n, t),
+      } = (0, T.B)(B, n, t),
       {
         handleScroll: Q
       } = (0, g.z)(B, o, Y);
@@ -144,7 +144,7 @@ let R = e => {
                   onClose: Z,
                   handleTransition: K,
                   selectedTab: Y
-                }), (0, r.jsx)(T.Z, {
+                }), (0, r.jsx)(j.Z, {
                   tab: Y,
                   isFullScreen: t,
                   scrollerRef: B,

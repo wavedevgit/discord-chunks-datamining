@@ -15,8 +15,8 @@ var i = n(120356),
   p = n(723774),
   m = n(144140),
   f = n(91159),
-  g = n(576799),
-  _ = n(488131),
+  _ = n(576799),
+  g = n(488131),
   h = n(981631),
   b = n(388032),
   E = n(955344);
@@ -26,14 +26,14 @@ function y(e) {
     message: t,
     compact: n
   } = e, i = (0, a.e7)([u.Z], () => u.Z.getChannel(d.default.castMessageIdAsChannelId(t.id)));
-  return null == i ? null : (0, r.jsx)(x, {
+  return null == i ? null : (0, r.jsx)(C, {
     channel: i,
     compact: n,
     isSystemMessage: (0, c.Z)(t)
   })
 }
 
-function x(e) {
+function C(e) {
   let {
     channel: t,
     compact: i,
@@ -51,7 +51,7 @@ function x(e) {
         children: (0, f.Ye)(l)
       })]
     }) : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(g.Z, {
+      children: [(0, r.jsx)(_.Z, {
         message: n,
         channel: e
       }), (0, r.jsx)("span", {
@@ -68,13 +68,13 @@ function x(e) {
       })
     }), (0, r.jsx)(o.P3F, {
       onClick: function(e) {
-        e.stopPropagation(), (0, _.ok)(t, e.shiftKey)
+        e.stopPropagation(), (0, g.ok)(t, e.shiftKey)
       },
       onKeyDown: function(e) {
         e.stopPropagation();
         let n = !e.altKey && !e.ctrlKey && !e.metaKey && !e.shiftKey,
           r = e.shiftKey && !(e.altKey || e.ctrlKey || e.metaKey);
-        (e.which === h.yXg.SPACE || e.which === h.yXg.ENTER) && (e.preventDefault(), (n || r) && (0, _.ok)(t, r))
+        (e.which === h.yXg.SPACE || e.which === h.yXg.ENTER) && (e.preventDefault(), (n || r) && (0, g.ok)(t, r))
       },
       onContextMenu: function(e) {
         (0, s.jW)(e, async () => {

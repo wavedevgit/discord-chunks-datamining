@@ -1,6 +1,6 @@
 /** Chunk was on 61668 **/
 n.d(t, {
-  Z: () => x
+  Z: () => C
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -14,8 +14,8 @@ var r = n(255367),
   p = n(496675),
   m = n(594174),
   f = n(626135),
-  g = n(709054),
-  _ = n(838440),
+  _ = n(709054),
+  g = n(838440),
   h = n(981631),
   b = n(18485);
 
@@ -24,7 +24,7 @@ function E(e) {
     assets: t,
     currentUser: n,
     message: r
-  } = e, i = (g.default.extractTimestamp(n.id) + g.default.extractTimestamp(r.id)) % t.length;
+  } = e, i = (_.default.extractTimestamp(n.id) + _.default.extractTimestamp(r.id)) % t.length;
   return t[i]
 }
 
@@ -37,18 +37,18 @@ function y(e) {
     stickers: d,
     event: p,
     eventProperties: m
-  } = e, [g, h] = i.useState(!1), y = i.useMemo(() => E({
+  } = e, [_, h] = i.useState(!1), y = i.useMemo(() => E({
     assets: d,
     currentUser: t,
     message: l
-  }), [d, t, l]), x = i.useMemo(() => E({
+  }), [d, t, l]), C = i.useMemo(() => E({
     assets: u,
     currentUser: t,
     message: l
-  }), [u, t, l]), C = i.useCallback(async () => {
+  }), [u, t, l]), x = i.useCallback(async () => {
     let {
       valid: e
-    } = await (0, _.v)({
+    } = await (0, g.v)({
       type: s.Ie.FORM,
       content: "",
       channel: n
@@ -117,17 +117,17 @@ function y(e) {
     color: a.Ttl.PRIMARY,
     onMouseEnter: () => h(!0),
     onMouseLeave: () => h(!1),
-    onClick: C,
+    onClick: x,
     children: [(0, r.jsx)(c.Z, {
       className: b.CTAMessageSticker,
-      isInteracting: g,
+      isInteracting: _,
       sticker: y,
       size: 28
-    }), x]
+    }), C]
   })
 }
 
-function x(e) {
+function C(e) {
   let {
     channel: t,
     message: n,

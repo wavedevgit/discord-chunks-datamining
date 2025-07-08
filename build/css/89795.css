@@ -1,6 +1,6 @@
 /**
   Module ID: 89795
-  Original File Name: c317cddcb5109c72
+  Original File Name: 319fc9acccabd673
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -5732,16 +5732,17 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
     margin-bottom: 30px
 }
 
+.heroHeadingContainer__81281 {
+    margin-left: 30px;
+    margin-top: 30px
+}
+
 .container__81281 {
     align-items: center;
     display: flex;
     justify-content: center;
     position: relative;
     text-align: center
-}
-
-.marketingPageContainer__81281 {
-    margin-left: 30px
 }
 
 .settingsContainer__81281 {
@@ -5948,6 +5949,21 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
 .tier2Gradient__81281 {
     background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
     color: var(--white-500)
+}
+
+.heroHeadingV2Art__81281 {
+    height: 100%;
+    object-fit: contain;
+    width: 100%
+}
+
+.heroHeadingV2ArtContainer__81281 {
+    align-content: center;
+    display: flex;
+    justify-content: right;
+    margin-left: 50px;
+    max-width: 500px;
+    width: 100%
 }
 
 .container__14cf2 {
@@ -6266,23 +6282,7 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 30px;
     position: relative;
-    width: 100%
-}
-
-.heroHeadingV2Art_c880e8 {
-    height: 100%;
-    object-fit: contain;
-    width: 100%
-}
-
-.heroHeadingV2ArtContainer_c880e8 {
-    align-content: center;
-    display: flex;
-    justify-content: right;
-    margin-left: 50px;
-    max-width: 500px;
     width: 100%
 }
 
@@ -19739,4 +19739,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=c317cddcb5109c72.css.map*/
+/*# sourceMappingURL=319fc9acccabd673.css.map*/

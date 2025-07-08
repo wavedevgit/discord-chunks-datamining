@@ -17,12 +17,12 @@ function d(e) {
     message: t,
     usernameHook: d,
     compact: p
-  } = e, m = (0, s.ZP)(t), f = d(m), g = (0, a.I3)("GdmNameChangeSystemMessage", t.channel_id);
+  } = e, m = (0, s.ZP)(t), f = d(m), _ = (0, a.I3)("GdmNameChangeSystemMessage", t.channel_id);
   return (0, r.jsx)(c.Z, {
     icon: n(819373),
     timestamp: t.timestamp,
     compact: p,
-    children: g ? u.intl.format(u.t["4wLp29"], {
+    children: _ ? u.intl.format(u.t["4wLp29"], {
       username: m.nick,
       usernameHook: f,
       editGroupButton: (0, r.jsx)(i.Text, {

@@ -14,14 +14,14 @@ var r, i = n(255367),
   p = n(493683),
   m = n(529103),
   f = n(700582),
-  g = n(906732),
-  _ = n(213609),
+  _ = n(906732),
+  g = n(213609),
   h = n(541716),
   b = n(28546),
   E = n(963249),
   y = n(703656),
-  x = n(594174),
-  C = n(626135),
+  C = n(594174),
+  x = n(626135),
   v = n(51144),
   O = n(479446),
   j = n(795448),
@@ -47,11 +47,11 @@ function k(e) {
     analyticsSection: D,
     glow: M,
     giftIntentSecondaryAction: U
-  } = e, F = (0, c.e7)([x.default], () => x.default.getCurrentUser()), {
+  } = e, F = (0, c.e7)([C.default], () => C.default.getCurrentUser()), {
     analyticsLocations: B
-  } = (0, g.ZP)(), G = (0, c.e7)([I.Z], () => I.Z.getFriendAnniversaryYears(r.id));
+  } = (0, _.ZP)(), G = (0, c.e7)([I.Z], () => I.Z.getFriendAnniversaryYears(r.id));
   l.useEffect(() => {
-    (0, _.h)({
+    (0, g.h)({
       name: s.ImpressionNames.GIFT_INTENT_CARD,
       type: s.ImpressionTypes.VIEW,
       properties: {
@@ -122,7 +122,7 @@ function k(e) {
         children: [null != U && (0, i.jsx)(d.zxk, {
           className: o()(Z.button, J),
           onClick: e => {
-            e.stopPropagation(), C.default.track(N.rMx.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
+            e.stopPropagation(), x.default.track(N.rMx.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
               gift_intent_type: t,
               cta_type: U
             }), U === T.X2.VIEW_ALL ? ((0, y.uL)(N.Z5c.FRIENDS), m.Z.setSection(N.pJs.ALL)) : U === T.X2.SEND_MESSAGE && ((0, j.PV)(r.id), p.Z.openPrivateChannel({

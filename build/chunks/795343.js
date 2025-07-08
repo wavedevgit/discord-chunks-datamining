@@ -30,11 +30,11 @@ function _(e) {
     noCache: S,
     includeUnpublished: x
   } = (0, b.Z)(), y = (0, o.e7)([a.default], () => a.default.getCurrentUser()), {
-    skus: j,
-    currentPage: T,
+    skus: T,
+    currentPage: j,
     totalCount: P,
     isFetchingResults: L
-  } = (0, p.a)(), I = (0, o.Wu)([c.Z], () => c.Z.getProductsBySkus(j)), k = l.useCallback(() => {
+  } = (0, p.a)(), I = (0, o.Wu)([c.Z], () => c.Z.getProductsBySkus(T)), k = l.useCallback(() => {
     var e;
     null == C || null == (e = C.current) || e.scrollToTop({
       animate: !0
@@ -92,7 +92,7 @@ function _(e) {
         className: m.paginationContainer,
         children: (0, r.jsx)("div", {
           children: (0, r.jsx)(i.DsT, {
-            currentPage: T,
+            currentPage: j,
             totalCount: P,
             pageSize: Z,
             onPageChange: e => {

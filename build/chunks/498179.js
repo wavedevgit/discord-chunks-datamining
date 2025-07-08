@@ -50,24 +50,24 @@ function m(e) {
     fullWidth: n = !1,
     size: m = l.zxk.Sizes.LARGE,
     color: f,
-    customDisabledColor: g,
-    hideNotLaunchable: _,
+    customDisabledColor: _,
+    hideNotLaunchable: g,
     tooltipPosition: h,
     onClick: b,
     className: E,
     source: y,
-    hover: x,
-    innerClassName: C
+    hover: C,
+    innerClassName: x
   } = e, v = {
     fullWidth: n,
     size: m,
     color: f,
-    customDisabledColor: g,
+    customDisabledColor: _,
     tooltipPosition: h,
     onClick: b,
     className: E,
-    hover: x,
-    innerClassName: C
+    hover: C,
+    innerClassName: x
   }, O = (0, i.e7)([a.Z], () => a.Z.getActiveLibraryApplication(t.id)), j = null != O ? O.sku.id : null, I = null != j ? j : t.primarySkuId, S = (0, i.e7)([o.Z], () => null != I && !o.Z.didFetchingSkuFail(I));
   return null != O && (0, s.Je)(O) ? (0, r.jsx)(u.Z, p(d({}, v), {
     libraryApplication: O,
@@ -75,7 +75,7 @@ function m(e) {
   })) : S ? (0, r.jsx)("div", {
     children: "deprecated!"
   }) : (0, r.jsx)(c.Z, p(d({}, v), {
-    hideNotLaunchable: _,
+    hideNotLaunchable: g,
     applicationId: t.id
   }))
 }

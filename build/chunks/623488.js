@@ -1,6 +1,6 @@
 /** Chunk was on 61668 **/
 n.d(t, {
-  Z: () => g
+  Z: () => _
 }), n(953529);
 var r = n(255367);
 n(73800);
@@ -70,20 +70,20 @@ function f(e) {
   })
 }
 
-function g(e) {
+function _(e) {
   let {
     imageUrl: t,
     name: n,
     description: i,
     formattedPrice: c,
-    role: g,
-    ctaComponent: _,
+    role: _,
+    ctaComponent: g,
     shouldShowFullDescriptionButton: h = !0,
     onShowFullDescription: b,
     productType: E,
     onTapCard: y,
-    actionMenu: x,
-    showOpaqueBackground: C = !1,
+    actionMenu: C,
+    showOpaqueBackground: x = !1,
     hideRoleTag: v = !1,
     lineClamp: O = 1,
     cardWidth: j = 332,
@@ -123,14 +123,14 @@ function g(e) {
         }), h && (0, r.jsx)(f, {
           onShowFullDescription: b,
           variant: T
-        }), v || null == g || "" === g.name ? null : (0, r.jsxs)(r.Fragment, {
+        }), v || null == _ || "" === _.name ? null : (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(a.LZC, {
             size: 16
           }), (0, r.jsx)(u.Z, {
-            role: g
+            role: _
           })]
         })]
-      }), x]
+      }), C]
     }), (0, r.jsxs)("div", {
       className: p.purchaseDetails,
       children: [(0, r.jsx)(a.Text, {
@@ -148,12 +148,12 @@ function g(e) {
         onClick: e => {
           e.stopPropagation()
         },
-        children: _
+        children: g
       })]
     })]
   });
   return null == y ? (0, r.jsx)("article", {
-    className: l()(p.productCard, C ? p.opaqueBackground : p.solidBackground),
+    className: l()(p.productCard, x ? p.opaqueBackground : p.solidBackground),
     "aria-labelledby": P,
     children: A
   }) : (0, r.jsx)("div", {
@@ -166,7 +166,7 @@ function g(e) {
       "aria-label": d.intl.formatToPlainString(d.t["e+TmJS"], {
         productName: n
       }),
-      className: l()(p.productCard, C ? p.opaqueBackground : p.solidBackground, p.cardClickableContainer),
+      className: l()(p.productCard, x ? p.opaqueBackground : p.solidBackground, p.cardClickableContainer),
       onClick: y,
       children: A
     })

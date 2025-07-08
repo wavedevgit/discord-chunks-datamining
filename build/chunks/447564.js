@@ -15,15 +15,15 @@ var r = n(255367),
   p = n(980463),
   m = n(576645),
   f = n(317951),
-  g = n(63063),
-  _ = n(937615),
+  _ = n(63063),
+  g = n(937615),
   h = n(82950),
   b = n(981631),
   E = n(388032),
   y = n(668275),
-  x = n(99713);
+  C = n(99713);
 
-function C(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ let v = (e, t) => {
     let {
       default: t
     } = await Promise.resolve().then(n.bind(n, 447564));
-    return n => (0, r.jsx)(t, C({
+    return n => (0, r.jsx)(t, x({
       channel: e
     }, n))
   }, {
@@ -74,19 +74,19 @@ function I(e) {
   let {
     channel: t
   } = e, n = (0, m.T$)(t), [a, u] = (0, i.useState)(!1), {
-    price: g,
-    fetchingPrice: _,
+    price: _,
+    fetchingPrice: g,
     error: h
   } = (0, m.R2)(f.FX), {
     entitlement: E,
     fetchedEntitlement: y,
-    error: x
-  } = (0, m.t6)(f.FX), C = h || x, {
+    error: C
+  } = (0, m.t6)(f.FX), x = h || C, {
     analyticsLocations: v
   } = (0, c.ZP)([s.Z.HD_STREAMING_POTION_MODAL]), O = null != E && !E.consumed;
   (0, i.useEffect)(() => () => {
-    C && (0, p.SN)(f.FX)
-  }, [E, t, a, C]);
+    x && (0, p.SN)(f.FX)
+  }, [E, t, a, x]);
   let j = (0, i.useCallback)(() => {
       (0, p.Zu)(t.id), (0, o.pTH)()
     }, [t.id]),
@@ -103,11 +103,11 @@ function I(e) {
   return (0, r.jsx)(S, {
     channel: t,
     buttonState: N,
-    price: g,
+    price: _,
     onActionClick: () => {
       u(!0), (O ? j : I)()
     },
-    loading: _ || !y
+    loading: g || !y
   })
 }
 let S = e => {
@@ -156,7 +156,7 @@ let S = e => {
           color: "text-link",
           variant: "text-sm/normal",
           children: E.intl.format(E.t["1wV4qq"], {
-            helpCenterLink: g.Z.getArticleURL(b.BhN.HD_STREAMING_POTION)
+            helpCenterLink: _.Z.getArticleURL(b.BhN.HD_STREAMING_POTION)
           })
         }), (0, r.jsx)(o.Text, {
           color: "text-muted",
@@ -203,7 +203,7 @@ let S = e => {
       price: n,
       onActionClick: i
     } = e, l = E.intl.formatToPlainString(E.t.S9LAdX, {
-      price: (0, _.T4)(n.amount, n.currency)
+      price: (0, g.T4)(n.amount, n.currency)
     });
     if (3 === t || 4 === t) {
       let e = {
@@ -215,7 +215,7 @@ let S = e => {
         text: e,
         children: e => {
           var t, n;
-          return (0, r.jsx)(o.zxk, (t = C({}, e), n = n = {
+          return (0, r.jsx)(o.zxk, (t = x({}, e), n = n = {
             disabled: !0,
             children: l
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -252,7 +252,7 @@ let S = e => {
     children: (0, r.jsxs)("div", {
       className: y.error,
       children: [(0, r.jsx)(o.Eep, {
-        src: x,
+        src: C,
         width: 178,
         height: 190
       }), (0, r.jsx)(o.Text, {

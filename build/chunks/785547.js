@@ -12,14 +12,14 @@ var r, i, l = n(255367),
   p = n(710845),
   m = n(703656),
   f = n(173747),
-  g = n(7956),
-  _ = n(293245),
+  _ = n(7956),
+  g = n(293245),
   h = n(417363),
   b = n(941128),
   E = n(780570),
   y = n(358085),
-  x = n(814225),
-  C = n(346329),
+  C = n(814225),
+  x = n(346329),
   v = n(701560),
   O = n(981631),
   j = n(388032),
@@ -207,7 +207,7 @@ class Z extends(r = a.Component) {
     } = this.props, n = this.getButtonState();
     if ("play" === n) return this.renderPlayButton();
     if ("preorder_wait" === n) return this.renderDisabledButton(n, function(e) {
-      let t = x.en(e.sku);
+      let t = C.en(e.sku);
       return null != t ? j.intl.formatToPlainString(j.t.Aqe2ZG, {
         date: t
       }) : null
@@ -234,12 +234,12 @@ class Z extends(r = a.Component) {
         libraryApplication: e,
         source: t
       } = this.props;
-      C.installApplication(e.id, e.branchId, t)
+      x.installApplication(e.id, e.branchId, t)
     }), S(this, "handleUpdate", () => {
       let {
         libraryApplication: e
       } = this.props;
-      C.updateApplication(e.id, e.branchId)
+      x.updateApplication(e.id, e.branchId)
     }), S(this, "onClickHandlers", {
       add_to_library: this.handleAddToLibrary,
       install: this.handleInstall,
@@ -256,7 +256,7 @@ class Z extends(r = a.Component) {
 function R(e) {
   let {
     libraryApplication: t
-  } = e, n = (0, d.O)(), [r, i] = (0, o.Wu)([h.Z, b.Z], () => [(0, g.i)(t, h.Z, b.Z), h.Z.getState(t.id, t.branchId)], [t]), a = (0, o.e7)([_.Z], () => _.Z.isSyncing(t.id, t.branchId), [t]), s = (0, o.e7)([f.Z], () => f.Z.hasNoBuild(t.id, t.branchId), [t]);
+  } = e, n = (0, d.O)(), [r, i] = (0, o.Wu)([h.Z, b.Z], () => [(0, _.i)(t, h.Z, b.Z), h.Z.getState(t.id, t.branchId)], [t]), a = (0, o.e7)([g.Z], () => g.Z.isSyncing(t.id, t.branchId), [t]), s = (0, o.e7)([f.Z], () => f.Z.hasNoBuild(t.id, t.branchId), [t]);
   return (0, l.jsx)(Z, N(T({}, e), {
     analyticsContext: n,
     actionState: r,

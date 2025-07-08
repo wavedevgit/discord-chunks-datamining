@@ -39,7 +39,7 @@ let b = (e, t) => {
         return (null != (o = null == (r = (0, u.Vw)(e, t, !1)) ? void 0 : r.amount) ? o : 0) - (null != (i = null == (l = (0, u.Vw)(n, t, !1)) ? void 0 : l.amount) ? i : 0)
       }) : _ === i.m.RECOMMENDED ? e = v(l) : _ === i.m.POPULAR ? e = v(b) : _ === i.m.RANDOM && (e = o().shuffle(S)), x(e)
     }, [_, x, S, t, v, l, b, O]),
-    j = r.useCallback(() => {
+    T = r.useCallback(() => {
       E(e => e + 1), C(i.m.RANDOM)
     }, []);
   return {
@@ -63,6 +63,6 @@ let b = (e, t) => {
       }), e
     }, [m]),
     showRecommendationOption: m,
-    shuffleProducts: j
+    shuffleProducts: T
   }
 }

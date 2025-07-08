@@ -14,8 +14,8 @@ var r = n(255367),
   p = n(419922),
   m = n(626135),
   f = n(585483),
-  g = n(115610),
-  _ = n(981631),
+  _ = n(115610),
+  g = n(981631),
   h = n(388032),
   b = n(711643);
 
@@ -24,10 +24,10 @@ function E(e) {
     message: t,
     channel: l,
     compact: E
-  } = e, y = (0, o.Wu)([d.Z], () => Array.from(d.Z.getAllGuildStickers().values()).flat()).slice(0, 20), [x, C] = i.useState(null);
+  } = e, y = (0, o.Wu)([d.Z], () => Array.from(d.Z.getAllGuildStickers().values()).flat()).slice(0, 20), [C, x] = i.useState(null);
   return (i.useEffect(() => {
     let e = setInterval(() => {
-      y.length > 0 && C(y[Math.floor(Math.random() * y.length)])
+      y.length > 0 && x(y[Math.floor(Math.random() * y.length)])
     }, 500);
     return () => clearInterval(e)
   }, [y]), null == l.guild_id) ? null : (0, r.jsxs)("div", {
@@ -55,12 +55,12 @@ function E(e) {
         children: (0, r.jsx)(s.zxk, {
           color: s.zxk.Colors.PRIMARY,
           onClick: () => {
-            m.default.track(_.rMx.CHANNEL_PROMPT_ACTION_CLICKED, {
+            m.default.track(g.rMx.CHANNEL_PROMPT_ACTION_CLICKED, {
               message_id: t.id,
               channel_id: l.id,
               guild_id: l.guild_id,
               action_type: "upload_file"
-            }), f.S.dispatch(_.CkL.UPLOAD_FILE), (0, u.fE)({
+            }), f.S.dispatch(g.CkL.UPLOAD_FILE), (0, u.fE)({
               message: t,
               channel: l,
               shouldMention: !0
@@ -76,16 +76,16 @@ function E(e) {
         children: (0, r.jsx)(s.zxk, {
           color: s.zxk.Colors.PRIMARY,
           onClick: () => {
-            m.default.track(_.rMx.CHANNEL_PROMPT_ACTION_CLICKED, {
+            m.default.track(g.rMx.CHANNEL_PROMPT_ACTION_CLICKED, {
               message_id: t.id,
               channel_id: l.id,
               guild_id: l.guild_id,
               action_type: "sticker"
-            }), (0, g.O)(t.id, l)
+            }), (0, _.O)(t.id, l)
           },
-          children: null != x ? (0, r.jsx)(p.Z, {
+          children: null != C ? (0, r.jsx)(p.Z, {
             size: 32,
-            sticker: x
+            sticker: C
           }) : (0, r.jsx)(s.EO4, {
             size: "md",
             color: "currentColor"

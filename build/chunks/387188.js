@@ -1,7 +1,7 @@
 /** Chunk was on 61668 **/
 n.d(t, {
-  e: () => x,
-  i: () => C
+  e: () => C,
+  i: () => x
 }), n(35282), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -15,8 +15,8 @@ var r = n(255367),
   p = n(834129),
   m = n(222677),
   f = n(585483),
-  g = n(339085),
-  _ = n(981631),
+  _ = n(339085),
+  g = n(981631),
   h = n(388032),
   b = n(841935);
 let E = /^<(a?):(\w+):(\d+)>/;
@@ -26,10 +26,10 @@ function y(e) {
     var t;
     return null == (t = E.exec(e)) ? void 0 : t[3]
   }, [e]);
-  return (0, s.e7)([g.ZP], () => null == t ? null : g.ZP.getCustomEmojiById(t))
+  return (0, s.e7)([_.ZP], () => null == t ? null : _.ZP.getCustomEmojiById(t))
 }
 
-function x(e) {
+function C(e) {
   let {
     message: t,
     className: n
@@ -64,19 +64,19 @@ function x(e) {
   })
 }
 
-function C(e) {
+function x(e) {
   var t;
   let {
     message: n,
     channel: l,
     compact: a,
     usernameHook: s
-  } = e, [m, g] = i.useState(!1), E = (0, d.ZP)(n), x = s(E), C = y(n.content), v = i.useCallback(() => {
-    null != C && f.S.dispatchToLastSubscribed(_.CkL.INSERT_TEXT, {
-      plainText: ":".concat(C.name, ":"),
+  } = e, [m, _] = i.useState(!1), E = (0, d.ZP)(n), C = s(E), x = y(n.content), v = i.useCallback(() => {
+    null != x && f.S.dispatchToLastSubscribed(g.CkL.INSERT_TEXT, {
+      plainText: ":".concat(x.name, ":"),
       addSpace: !0
     })
-  }, [C]);
+  }, [x]);
   return (0, r.jsx)(p.Z, {
     iconNode: (0, r.jsx)(o.EO4, {
       size: "md",
@@ -90,23 +90,23 @@ function C(e) {
       tag: "span",
       variant: "text-md/normal",
       color: "text-secondary",
-      children: null == C ? h.intl.format(h.t.k6Jc9f, {
+      children: null == x ? h.intl.format(h.t.k6Jc9f, {
         username: E.nick,
-        usernameHook: x
+        usernameHook: C
       }) : h.intl.format(h.t.uoCHWV, {
         username: E.nick,
-        usernameHook: x,
+        usernameHook: C,
         emoji: (0, r.jsxs)(c.P3F, {
           className: b.clickableEmoji,
           tag: "span",
           onClick: v,
-          onMouseEnter: () => g(!0),
-          onMouseLeave: () => g(!1),
+          onMouseEnter: () => _(!0),
+          onMouseLeave: () => _(!1),
           children: [(0, r.jsx)(u.Z, {
-            emojiName: C.name,
+            emojiName: x.name,
             size: "default",
-            emojiId: C.id,
-            animated: C.animated,
+            emojiId: x.id,
+            animated: x.animated,
             isInteracting: m,
             channelId: l.id,
             messageId: n.id,
@@ -115,7 +115,7 @@ function C(e) {
             tag: "span",
             variant: "text-md/medium",
             color: "text-primary",
-            children: ":".concat(null != (t = C.originalName) ? t : C.name, ":")
+            children: ":".concat(null != (t = x.originalName) ? t : x.name, ":")
           })]
         })
       })

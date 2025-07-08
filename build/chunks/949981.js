@@ -14,8 +14,8 @@ var r = n(255367),
   p = n(131704),
   m = n(592125),
   f = n(594174),
-  g = n(823379),
-  _ = n(358595),
+  _ = n(823379),
+  g = n(358595),
   h = n(981631),
   b = n(388032),
   E = n(273254);
@@ -25,8 +25,8 @@ function y(e) {
       invite: n,
       message: l,
       currentUserId: y,
-      onTransitionToInviteChannel: x,
-      onAcceptInstantInvite: C
+      onTransitionToInviteChannel: C,
+      onAcceptInstantInvite: x
     } = e,
     v = y === l.author.id,
     O = n.state === h.r2o.ACCEPTING,
@@ -36,15 +36,15 @@ function y(e) {
     analyticsLocations: I
   } = (0, u.ZP)(c.Z.INVITE_EMBED), S = null != j, T = i.useCallback(() => {
     let e = "noop";
-    S ? (x(), e = "transition") : (C(), e = "accept"), (0, s.r$)({
+    S ? (C(), e = "transition") : (x(), e = "accept"), (0, s.r$)({
       invite: n,
       action: e,
       inviter_id: l.author.id,
       invite_message_id: l.id
     }, I)
-  }, [n, l, I, S, x, C]);
+  }, [n, l, I, S, C, x]);
   if (null == j) {
-    if (null == n.channel) return (0, r.jsx)(_.Z, {});
+    if (null == n.channel) return (0, r.jsx)(g.Z, {});
     j = (0, p.jD)(n.channel), t = null != n.channel && null != n.channel.recipients ? n.channel.recipients : []
   } else {
     t = j.recipients.reduce((e, t) => {
@@ -55,7 +55,7 @@ function y(e) {
     S && null != e && t.push(e)
   }
   let N = j.name;
-  (null == N || "" === N) && (N = t.length > 0 ? t.filter(g.lm).map(e => e.username).join(", ") : b.intl.string(b.t.LJpTRE));
+  (null == N || "" === N) && (N = t.length > 0 ? t.filter(_.lm).map(e => e.username).join(", ") : b.intl.string(b.t.LJpTRE));
   let P = b.intl.string(b.t.XpeFYm),
     A = d.Z.Button.Colors.GREEN;
   S && (P = b.intl.string(b.t.cEnaW1), A = d.Z.Button.Colors.PRIMARY);

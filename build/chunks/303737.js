@@ -1,10 +1,10 @@
 /** Chunk was on 61668 **/
 n.d(t, {
-  GN: () => x,
+  GN: () => C,
   be: () => y,
   g4: () => b,
   m7: () => h,
-  r4: () => C,
+  r4: () => x,
   sO: () => O,
   yL: () => v
 }), n(539854), n(388685), n(993155), n(953529);
@@ -20,9 +20,9 @@ var r = n(991637),
   p = n(144507),
   m = n(853439),
   f = n(981631),
-  g = n(176505);
+  _ = n(176505);
 i().shim();
-let _ = {};
+let g = {};
 
 function h(e) {
   let t = (0, l.e7)([s.Z], () => s.Z.getChannel(e)),
@@ -75,8 +75,8 @@ function E(e) {
 
 function y(e) {
   let t = E(e);
-  _[e] = t, t.forEach(e => {
-    let t = e.set("flags", g.zZ.IS_ROLE_SUBSCRIPTION_TEMPLATE_PREVIEW_CHANNEL);
+  g[e] = t, t.forEach(e => {
+    let t = e.set("flags", _.zZ.IS_ROLE_SUBSCRIPTION_TEMPLATE_PREVIEW_CHANNEL);
     a.Z.dispatch({
       type: "CHANNEL_CREATE",
       channel: t
@@ -84,16 +84,16 @@ function y(e) {
   })
 }
 
-function x(e) {
+function C(e) {
   var t;
-  (null != (t = _[e]) ? t : E(e)).forEach(e => {
+  (null != (t = g[e]) ? t : E(e)).forEach(e => {
     a.Z.dispatch({
       type: "CHANNEL_DELETE",
       channel: e
     })
   })
 }
-async function C(e, t) {
+async function x(e, t) {
   let n = [],
     r = [];
   t.forEach(t => {

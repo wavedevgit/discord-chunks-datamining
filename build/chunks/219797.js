@@ -20,14 +20,14 @@ var r = n(255367),
   p = n(592125),
   m = n(52824),
   f = n(630388),
-  g = n(591759),
-  _ = n(850908),
+  _ = n(591759),
+  g = n(850908),
   h = n(524444),
   b = n(981631),
   E = n(388032),
   y = n(324846);
 
-function x(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function x(e) {
   return e
 }
 
-function C(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -62,7 +62,7 @@ function C(e, t) {
 function v(e) {
   var t;
   let n = e.item.originalItem;
-  return (0, h.Yi)(C(x({}, e), {
+  return (0, h.Yi)(x(C({}, e), {
     alt: n.description,
     src: (0, m.q)({
       proxyURL: n.proxy_url,
@@ -104,12 +104,12 @@ function O(e) {
         })]
       }) : null
     }, [n]),
-    c = g.Z.toURLSafe(n.proxy_url);
-  return null == c ? null : (c.searchParams.append("format", "webp"), (0, h.lV)(C(x({}, e), {
+    c = _.Z.toURLSafe(n.proxy_url);
+  return null == c ? null : (c.searchParams.append("format", "webp"), (0, h.lV)(x(C({}, e), {
     alt: n.description,
     poster: c.toString(),
     fileSize: n.size,
-    fileName: (0, _.Z)(n),
+    fileName: (0, g.Z)(n),
     src: n.url,
     placeholder: n.placeholder,
     placeholderVersion: n.placeholder_version,
@@ -129,9 +129,9 @@ function O(e) {
 
 function j(e) {
   let t = e.item.originalItem;
-  return (0, h.hX)(C(x({}, e), {
+  return (0, h.hX)(x(C({}, e), {
     fileSize: t.size,
-    fileName: (0, _.Z)(t),
+    fileName: (0, g.Z)(t),
     src: t.url
   }))
 }
@@ -150,9 +150,9 @@ function I(e) {
     var n;
     (0, d.Np)(t.id, null != (n = null == e ? void 0 : e.message) ? n : null)
   }, [t]);
-  return (0, h.wj)(C(x({}, e), {
+  return (0, h.wj)(x(C({}, e), {
     fileSize: r.size,
-    fileName: (0, _.Z)(r),
+    fileName: (0, g.Z)(r),
     src: r.url,
     durationSecs: r.duration_secs,
     waveform: r.waveform,
@@ -165,9 +165,9 @@ function I(e) {
 
 function S(e) {
   let t = e.item.originalItem;
-  return (0, h.xi)(C(x({}, e), {
+  return (0, h.xi)(x(C({}, e), {
     url: t.url,
-    fileName: (0, _.Z)(t),
+    fileName: (0, g.Z)(t),
     fileSize: t.size,
     contentType: t.content_type
   }))
@@ -175,9 +175,9 @@ function S(e) {
 
 function T(e) {
   let t = e.item.originalItem;
-  return (0, h.ur)(C(x({}, e), {
+  return (0, h.ur)(x(C({}, e), {
     url: t.url,
-    fileName: (0, _.Z)(t),
+    fileName: (0, g.Z)(t),
     fileSize: t.size
   }))
 }

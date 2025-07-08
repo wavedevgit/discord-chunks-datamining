@@ -26,8 +26,8 @@ var r = n(255367),
   S = n(26931),
   x = n(370039),
   y = n(937510),
-  j = n(823941),
-  T = n(38900),
+  T = n(823941),
+  j = n(38900),
   P = n(709999),
   L = n(794324),
   I = n(619899),
@@ -54,7 +54,7 @@ let R = {
       name: e.name,
       unpublishedAt: e.unpublishedAt,
       logoUrl: (0, v.uV)(null != (o = null != (l = e.heroLogo) ? l : e.logo) ? o : "", {
-        size: j.n
+        size: T.n
       }),
       categorySkuId: e.skuId,
       bannerAsset: e.heroBannerAsset,
@@ -102,14 +102,14 @@ let R = {
     let {
       isLoading: s,
       handleTransition: v,
-      category: j,
+      category: T,
       heroBlock: F,
       tab: D
     } = e, M = (0, c.e7)([d.Z], () => d.Z.useReducedMotion), H = (0, c.e7)([_.Z], () => _.Z.isFocused()), W = (0, c.e7)([m.default], () => m.default.getCurrentUser()), V = (0, S.u)(), U = (0, O.sp)(), {
       showBetaTag: G
     } = b.Z.useExperiment({
       location: "collectible_hero_block"
-    }), z = l.useMemo(() => null != F ? F : w(j), [F, j]), {
+    }), z = l.useMemo(() => null != F ? F : w(T), [F, T]), {
       isPreviewingStaticBanner: Y,
       bannerOverrides: q,
       bannerStyleOverrides: K,
@@ -203,7 +203,7 @@ let R = {
             [A.feedSingleRow]: D !== k.AW.ORBS
           }),
           children: s ? (0, r.jsx)(r.Fragment, {
-            children: [void 0, void 0, void 0, void 0].map((e, t) => (0, r.jsx)(T.K, {}, t))
+            children: [void 0, void 0, void 0, void 0].map((e, t) => (0, r.jsx)(j.K, {}, t))
           }) : (0, r.jsx)(r.Fragment, {
             children: eo.map((e, t) => {
               let n = E.Z.getCategoryForProduct(e.skuId);

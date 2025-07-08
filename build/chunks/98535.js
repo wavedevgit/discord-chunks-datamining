@@ -36,15 +36,15 @@ function E(e) {
   S(x);
   let y = (0, i.e7)([a.Z], () => a.Z.useReducedMotion),
     {
-      setCategoryRef: j,
-      handleScrollToCategory: T
+      setCategoryRef: T,
+      handleScrollToCategory: j
     } = (0, h.xV)(s.current),
     P = l.useCallback(async (e, t, r) => {
       m(e, t);
       let l = r && !n && !y,
         i = t === o.T.ORB ? C.AW.ORBS : C.AW.CATALOG;
-      await u(i, l), null != t && T(t)
-    }, [n, y, u, T, m]),
+      await u(i, l), null != t && j(t)
+    }, [n, y, u, j, m]),
     L = (0, p.F)("content"),
     {
       searchQuery: I
@@ -66,7 +66,7 @@ function E(e) {
     scrollerRef: s,
     tab: t,
     sortedCategories: c,
-    setCategoryRef: j
+    setCategoryRef: T
   })
 }
 let v = () => (0, i.e7)([u.Z, d.Z], () => null != u.Z.error ? "shop load fetch categories error: ".concat(u.Z.error.message) : null != d.Z.claimError ? "shop load claim error: ".concat(d.Z.claimError.message) : null != d.Z.fetchError ? "shop load fetch purchase error: ".concat(d.Z.fetchError.message) : void 0),

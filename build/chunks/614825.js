@@ -14,14 +14,14 @@ var r = n(255367),
   p = n(568836),
   m = n(100527),
   f = n(906732),
-  g = n(963249),
-  _ = n(594174),
+  _ = n(963249),
+  g = n(594174),
   h = n(78839),
   b = n(55935),
   E = n(63063),
   y = n(74538),
-  x = n(276444),
-  C = n(93237),
+  C = n(276444),
+  x = n(93237),
   v = n(786397),
   O = n(474936),
   j = n(981631),
@@ -53,7 +53,7 @@ class P extends i.Component {
   renderTitle(e, t, n) {
     let {
       trialOffer: r
-    } = this.props, i = _.default.getUser(r.user_id), l = null != i ? i.username : "???", a = _.default.getUser(r.referrer_id), o = null != a ? a.username : "???";
+    } = this.props, i = g.default.getUser(r.user_id), l = null != i ? i.username : "???", a = g.default.getUser(r.referrer_id), o = null != a ? a.username : "???";
     return e && void 0 === r.redeemed_at ? I.intl.formatToPlainString(I.t.Mptau7, {
       username: l
     }) : t ? n ? I.intl.string(I.t["9SNdf3"]) : I.intl.formatToPlainString(I.t["H0+MxM"], {
@@ -89,7 +89,7 @@ class P extends i.Component {
         children: (0, r.jsx)(d.zxk, (i = N({}, c), l = l = {
           size: d.zxk.Sizes.SMALL,
           onClick: () => {
-            (0, g.Z)({
+            (0, _.Z)({
               initialPlanId: null,
               subscriptionTier: O.Si.TIER_2,
               analyticsLocations: s,
@@ -126,7 +126,7 @@ class P extends i.Component {
     let l = s()(r.expires_at);
     return t ? I.intl.formatToPlainString(I.t.PuSHfX, {
       date: (0, b.vc)(s()(l), "LL")
-    }) : (0, C.F6)(l.valueOf())
+    }) : (0, x.F6)(l.valueOf())
   }
   renderMedia() {
     return (0, r.jsx)("div", {
@@ -161,7 +161,7 @@ class P extends i.Component {
   }
   constructor(...e) {
     super(...e), T(this, "handleStartTrial", (e, t) => {
-      (0, g.Z)({
+      (0, _.Z)({
         initialPlanId: null,
         subscriptionTier: O.Si.TIER_2,
         analyticsLocations: t,
@@ -178,10 +178,10 @@ function A(e) {
   } = e, {
     trialOffer: i,
     isResolving: l
-  } = (0, u.cj)([x.Z], () => ({
-    trialOffer: n ? x.Z.getRelevantUserTrialOffer(t) : null,
-    isResolving: !!n && x.Z.isResolving(t)
-  }), [n, t]), a = _.default.getCurrentUser(), o = (0, u.e7)([_.default], () => null != i && (0, y.I5)(void 0 !== a && i.user_id === a.id ? a : _.default.getUser(i.user_id))), s = (0, u.e7)([h.Z], () => {
+  } = (0, u.cj)([C.Z], () => ({
+    trialOffer: n ? C.Z.getRelevantUserTrialOffer(t) : null,
+    isResolving: !!n && C.Z.isResolving(t)
+  }), [n, t]), a = g.default.getCurrentUser(), o = (0, u.e7)([g.default], () => null != i && (0, y.I5)(void 0 !== a && i.user_id === a.id ? a : g.default.getUser(i.user_id))), s = (0, u.e7)([h.Z], () => {
     var e;
     return o ? null == (e = h.Z.getPremiumTypeSubscription()) ? void 0 : e.trialEndsAt : null
   }), {
