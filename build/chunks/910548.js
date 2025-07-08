@@ -13,8 +13,8 @@ var r, i = n(255367),
   p = n(481060),
   m = n(230711),
   f = n(745510),
-  g = n(549006),
-  _ = n(64078),
+  _ = n(549006),
+  g = n(64078),
   h = n(29270),
   b = n(709586),
   E = n(267642),
@@ -160,7 +160,7 @@ function U(e) {
     onClick: n,
     position: r,
     size: a
-  } = e, u = l.useRef(null), [d, m] = l.useState(null), [g] = l.useState(null != r ? r : function() {
+  } = e, u = l.useRef(null), [d, m] = l.useState(null), [_] = l.useState(null != r ? r : function() {
     switch (Math.floor(Math.random() * Object.keys(T).length)) {
       case 0:
         return "TOP_LEFT";
@@ -172,7 +172,7 @@ function U(e) {
         return "BOTTOM_RIGHT"
     }
   }()), {
-    createMultipleConfettiAt: _,
+    createMultipleConfettiAt: g,
     confettiCanvas: h
   } = l.useContext(f.h), [b, E] = l.useState(null), y = (0, s.uR)(h, b), C = function(e, t) {
     if (null == e) return "enter";
@@ -189,7 +189,7 @@ function U(e) {
       case "exit":
         return "enter"
     }
-  }(d, g), x = N.includes(g), v = x && "exit" === d, j = l.useCallback(e => {
+  }(d, _), x = N.includes(_), v = x && "exit" === d, j = l.useCallback(e => {
     m(e)
   }, []), I = l.useCallback(() => {
     "exit" === d && (null == t || t())
@@ -200,7 +200,7 @@ function U(e) {
     if ("confetti" === d) {
       let {
         confettiVelocityDirection: e
-      } = w[g], t = function(e, t) {
+      } = w[_], t = function(e, t) {
         let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : P,
           r = null == e ? void 0 : e.getBoundingClientRect();
         if (null == r) return {
@@ -212,8 +212,8 @@ function U(e) {
           x: r.left + i.x,
           y: r.top + i.y
         }
-      }(u.current, g, a);
-      _(t.x, t.y, {
+      }(u.current, _, a);
+      g(t.x, t.y, {
         velocity: {
           type: "static-random",
           minValue: {
@@ -227,9 +227,9 @@ function U(e) {
         }
       })
     }
-  }, [_, g, d, a]), l.useEffect(() => {
+  }, [g, _, d, a]), l.useEffect(() => {
     if (x && "leaf_fall" === d) {
-      let e = w[g].leafRotationDirection;
+      let e = w[_].leafRotationDirection;
       y.createConfetti({
         id: "".concat(Z, "-").concat((0, c.Z)()),
         position: {
@@ -245,7 +245,7 @@ function U(e) {
               x: n.left + r.leafPosition.x,
               y: n.top + r.leafPosition.y
             }
-          }(u.current, g)
+          }(u.current, _)
         },
         size: {
           type: "static",
@@ -275,10 +275,10 @@ function U(e) {
           }
         }
       }, {
-        sprite: "TOP_LEFT" === g ? k : L
+        sprite: "TOP_LEFT" === _ ? k : L
       })
     }
-  }, [x, y, g, d]), (0, i.jsxs)(i.Fragment, {
+  }, [x, y, _, d]), (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(s.Ji, {
       ref: E,
       sprites: D,
@@ -288,10 +288,10 @@ function U(e) {
     }), (0, i.jsx)(p.P3F, {
       onClick: n,
       className: o()(O.easterEggAnimationClickTarget, {
-        [O.easterEggAnimationClickTargetTopLeft]: "TOP_LEFT" === g,
-        [O.easterEggAnimationClickTargetTopRight]: "TOP_RIGHT" === g,
-        [O.easterEggAnimationClickTargetBottomLeft]: "BOTTOM_LEFT" === g,
-        [O.easterEggAnimationClickTargetBottomRight]: "BOTTOM_RIGHT" === g
+        [O.easterEggAnimationClickTargetTopLeft]: "TOP_LEFT" === _,
+        [O.easterEggAnimationClickTargetTopRight]: "TOP_RIGHT" === _,
+        [O.easterEggAnimationClickTargetBottomLeft]: "BOTTOM_LEFT" === _,
+        [O.easterEggAnimationClickTargetBottomRight]: "BOTTOM_RIGHT" === _
       }),
       children: (0, i.jsx)(p.kci, {
         animationRef: A,
@@ -373,7 +373,7 @@ function F(e) {
       S(!1)
     }, []),
     L = l.useCallback(() => {
-      (0, _.AI)({
+      (0, g.AI)({
         settingsVisible: !0
       }), m.Z.open(x.oAB.POGGERMODE), S(!1)
     }, []),
@@ -398,7 +398,7 @@ function F(e) {
       onClick: s,
       className: O.message,
       children: t
-    }), I ? (0, i.jsx)(g.ZP, {
+    }), I ? (0, i.jsx)(_.ZP, {
       children: (0, i.jsx)("div", {
         className: O.cannonWrapper,
         children: (0, i.jsx)(U, {

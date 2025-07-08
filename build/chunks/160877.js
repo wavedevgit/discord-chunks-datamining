@@ -15,8 +15,8 @@ var r = n(255367),
   p = n(406432),
   m = n(584656),
   f = n(247206),
-  g = n(470734),
-  _ = n(719548),
+  _ = n(470734),
+  g = n(719548),
   h = n(388032),
   b = n(580297);
 let E = e => {
@@ -36,7 +36,7 @@ let E = e => {
     let {
       embed: l
     } = e;
-    if (!_.n2.has(l.type)) return null;
+    if (!g.n2.has(l.type)) return null;
     let a = void 0 !== l.video && l.type !== o.h.GIFV ? l.video.url : null != (i = null == (t = l.thumbnail) ? void 0 : t.url) ? i : null == (n = l.image) ? void 0 : n.url;
     return null == a ? null : (0, r.jsx)(C, {
       url: a
@@ -79,7 +79,7 @@ function v(e) {
     onConfirmPress: d,
     transitionState: p,
     onClose: m
-  } = e, _ = (0, u.Dt)(), C = (0, g.pn)("ExplicitMediaFalsePositiveModal"), x = i.useCallback(() => {
+  } = e, g = (0, u.Dt)(), C = (0, _.pn)("ExplicitMediaFalsePositiveModal"), x = i.useCallback(() => {
     (0, f.aP)({
       action: f.Yy.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CANCEL,
       channelId: t,
@@ -105,7 +105,7 @@ function v(e) {
   let O = i.useMemo(() => C ? h.intl.string(h.t["z4du/P"]) : h.intl.string(h.t.gg5Dp6), [C]);
   return (0, r.jsxs)(s.Y0X, {
     transitionState: p,
-    "aria-labelledby": _,
+    "aria-labelledby": g,
     size: s.CgR.SMALL,
     parentComponent: "ExplicitMediaFalsePositiveModal",
     children: [(0, r.jsxs)(s.hzk, {
@@ -113,7 +113,7 @@ function v(e) {
         onClick: x,
         className: b.closeButton
       }), (0, r.jsx)(s.X6q, {
-        id: _,
+        id: g,
         variant: "heading-lg/semibold",
         color: "header-primary",
         className: b.header,

@@ -14,8 +14,8 @@ var r = n(255367),
   p = n(906732),
   m = n(406218),
   f = n(993860),
-  g = n(137162),
-  _ = n(15210),
+  _ = n(137162),
+  g = n(15210),
   h = n(43542),
   b = n(910200),
   E = n(358595),
@@ -30,17 +30,17 @@ function v(e) {
     message: l,
     onTransitionToInviteChannel: c,
     onAcceptInstantInvite: d
-  } = e, p = i.useRef(null), [f, _] = i.useState(!0), [v, j] = i.useState(!1), I = t.state === y.r2o.ACCEPTING, S = (0, o.e7)([u.Z], () => u.Z.useReducedMotion);
+  } = e, p = i.useRef(null), [f, g] = i.useState(!0), [v, j] = i.useState(!1), I = t.state === y.r2o.ACCEPTING, S = (0, o.e7)([u.Z], () => u.Z.useReducedMotion);
   i.useLayoutEffect(() => {
     var e, t;
     j((null != (t = null == (e = p.current) ? void 0 : e.clientHeight) ? t : 0) > 292)
   }, [j]);
   let T = (0, m.PC)(t),
     N = i.useCallback(() => {
-      v && f && _(!1)
+      v && f && g(!1)
     }, [f, v]),
     P = i.useCallback(() => {
-      v && (f || _(!0))
+      v && (f || g(!0))
     }, [f, v]),
     A = i.useMemo(() => {
       var e;
@@ -65,7 +65,7 @@ function v(e) {
         profile: T
       }), (0, r.jsx)(h.Z, {
         profile: T
-      }), (0, r.jsx)(g.E, {
+      }), (0, r.jsx)(_.E, {
         profile: T,
         className: x.mainContent
       })]
@@ -118,7 +118,7 @@ function O(e) {
     onAcceptInstantInvite: u
   } = e, {
     guildId: m,
-    ctaType: g
+    ctaType: _
   } = (0, f.ZP)(n, f.F3.INVITE), {
     analyticsLocations: h
   } = (0, p.ZP)(d.Z.INVITE_EMBED), b = i.useCallback(() => {
@@ -130,9 +130,9 @@ function O(e) {
       invite_message_id: a.id
     }, h)
   }, [t, a, h, l]);
-  return null == g ? null : (0, r.jsx)(_.o, {
+  return null == _ ? null : (0, r.jsx)(g.o, {
     guildId: m,
-    ctaType: g,
+    ctaType: _,
     submitting: o,
     onGoToGuild: s,
     onAcceptInvite: u,

@@ -14,8 +14,8 @@ var r = n(255367),
   p = n(63063),
   m = n(436952),
   f = n(411149),
-  g = n(115215),
-  _ = n(151480),
+  _ = n(115215),
+  g = n(151480),
   h = n(680783),
   b = n(66420),
   E = n(981631),
@@ -55,9 +55,9 @@ function v(e) {
     B = (0, l.e7)([d.default], () => d.default.getCurrentUser()),
     G = (null == B ? void 0 : B.id) === T.author.id,
     H = (0, c.m)(y.p9.TIER_2),
-    V = g.t(N);
+    V = _.t(N);
   return (i.useEffect(() => {
-    null == L && f.Z.shouldFetchWallpapers && _.k9()
+    null == L && f.Z.shouldFetchWallpapers && g.k9()
   }, [L]), null == A) ? null : (j = G ? C.intl.format(C.t.z847Tk, {
     wallpaper_name: null != (n = null == L ? void 0 : L.label) ? n : C.intl.string(C.t["UQMV/P"])
   }) : C.intl.format(C.t["+lKndX"], {
@@ -74,7 +74,7 @@ function v(e) {
   }) : I = C.intl.string(C.t["6JSOu7"]), (null == U ? void 0 : U.isViewable) && F && !G && (S = (0, r.jsx)(a.zxk, {
     className: x.action,
     onClick: () => {
-      _.X(N, A, {
+      g.X(N, A, {
         shouldClear: !V,
         onError: () => {
           (0, a.showToast)((0, a.createToast)(C.intl.string(C.t.F8FvU1), a.ToastType.FAILURE))

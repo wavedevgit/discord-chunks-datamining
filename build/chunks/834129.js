@@ -22,13 +22,13 @@ function c(e) {
     iconClassName: p,
     iconContainerClassName: m,
     timestampClassName: f,
-    compact: g = !1
+    compact: _ = !1
   } = e;
   return (0, r.jsxs)("div", {
     className: l()(c, {
       [s.container]: !0,
-      [s.compact]: g,
-      [s.cozy]: !g
+      [s.compact]: _,
+      [s.cozy]: !_
     }),
     children: [null != n && (0, r.jsx)("div", {
       className: l()(s.iconContainer, m),

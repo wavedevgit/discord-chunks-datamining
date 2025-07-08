@@ -1,6 +1,6 @@
 /** Chunk was on 61668 **/
 n.d(t, {
-  Z: () => g
+  Z: () => _
 });
 var r, i, l, a = n(442837),
   o = n(570140),
@@ -24,7 +24,7 @@ i = "PremiumPromoStore", (r = "displayName") in f ? Object.defineProperty(f, r, 
   configurable: !0,
   writable: !0
 }) : f[r] = i;
-let g = new f(o.Z, {
+let _ = new f(o.Z, {
   CONNECTION_OPEN: function() {
     return m !== (m = d.Z.getFriendIDs().length >= 10 && c.default.extractTimestamp(u.default.getId()) < Date.now() - p)
   }

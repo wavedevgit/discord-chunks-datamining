@@ -14,8 +14,8 @@ var r, i = n(255367),
   p = n(206295),
   m = n(70097),
   f = n(314897),
-  g = n(572004),
-  _ = n(914498),
+  _ = n(572004),
+  g = n(914498),
   h = n(217702),
   b = n(388032),
   E = n(383195);
@@ -85,7 +85,7 @@ function O(e) {
   } = e;
   R = {
     id: null != (n = null == (t = R) ? void 0 : t.id) ? n : "0",
-    linkType: null != (r = null == t ? void 0 : t.linkType) ? r : _.Un.UNKNOWN,
+    linkType: null != (r = null == t ? void 0 : t.linkType) ? r : g.Un.UNKNOWN,
     referrerId: null != (a = null == t ? void 0 : t.referrerId) ? a : f.default.getId(),
     activityCustomId: null == t ? void 0 : t.activityCustomId,
     onView: null == t ? void 0 : t.onView,
@@ -97,15 +97,15 @@ function O(e) {
   } = (0, p.Z)(null != P ? P : S), M = "linear-gradient(45deg, ".concat(L, ", ").concat(D, ")"), U = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), F = l.useRef(!1), B = (0, u.O)(e => {
     if (!1 === F.current && e) {
       var t;
-      null == R || null == (t = R.onView) || t.call(R), (0, _.GF)(R.id, R.linkType, R.referrerId, R.activityCustomId), F.current = !0
+      null == R || null == (t = R.onView) || t.call(R), (0, g.GF)(R.id, R.linkType, R.referrerId, R.activityCustomId), F.current = !0
     }
-  }, void 0), G = g.wS && null != A ? (0, i.jsx)(c.zxk, {
+  }, void 0), G = _.wS && null != A ? (0, i.jsx)(c.zxk, {
     look: c.zxk.Looks.BLANK,
     size: c.zxk.Sizes.ICON,
     "aria-label": b.intl.string(b.t.WqhZsr),
     className: E.linkIcon,
     onClick: () => {
-      (0, g.JG)(A, () => (0, c.showToast)((0, c.createToast)(b.intl.string(b.t["L/PwZW"]), c.ToastType.SUCCESS))), (0, _.Yu)(R.id, R.linkType)
+      (0, _.JG)(A, () => (0, c.showToast)((0, c.createToast)(b.intl.string(b.t["L/PwZW"]), c.ToastType.SUCCESS))), (0, g.Yu)(R.id, R.linkType)
     },
     children: (0, i.jsx)(c.xPt, {
       size: "xs",
@@ -124,7 +124,7 @@ function O(e) {
     null != e && ("hidden" === getComputedStyle(e).visibility ? e.pause() : e.play())
   }, []), q = l.useMemo(() => !!z && new URL(T).pathname.endsWith(".gif"), [z, T]), Q = l.useMemo(() => {
     if (null != k) return e => {
-      k(e), (0, _.KX)(R.id, R.linkType, _.j_.CONTENT, R.referrerId, R.activityCustomId)
+      k(e), (0, g.KX)(R.id, R.linkType, g.j_.CONTENT, R.referrerId, R.activityCustomId)
     }
   }, [k, R]);
   return (0, i.jsxs)("div", {
@@ -213,7 +213,7 @@ function O(e) {
               submitting: o,
               children: p,
               onClick(e) {
-                l(e), (0, _.KX)(R.id, R.linkType, s, R.referrerId, R.activityCustomId)
+                l(e), (0, g.KX)(R.id, R.linkType, s, R.referrerId, R.activityCustomId)
               }
             };
             return u ? (0, i.jsx)(c.ua7, {

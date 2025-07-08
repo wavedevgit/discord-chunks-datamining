@@ -1,17 +1,17 @@
 /** Chunk was on 61668 **/
 n.d(t, {
-  I1: () => C,
-  IZ: () => x,
-  PJ: () => T,
-  Qb: () => y,
-  Yc: () => j,
-  bo: () => I,
-  cy: () => v,
-  hM: () => h,
-  sL: () => b,
-  tI: () => O,
-  z4: () => S,
-  zW: () => E
+  I1: () => x,
+  IZ: () => v,
+  PJ: () => N,
+  Qb: () => C,
+  Yc: () => I,
+  bo: () => S,
+  cy: () => O,
+  hM: () => b,
+  sL: () => E,
+  tI: () => j,
+  z4: () => T,
+  zW: () => y
 }), n(781311);
 var r = n(603263),
   i = n(367907),
@@ -46,17 +46,21 @@ function f(e) {
   return m(e, e => a.Z.getSessionId(e))
 }
 
+function _(e) {
+  return m(e, e => a.Z.getQueryId(e))
+}
+
 function g(e) {
   var t, n;
   return null != (n = null == e || null == (t = e.trim()) ? void 0 : t.length) ? n : 0
 }
 
-function _(e) {
+function h(e) {
   var t, n, r;
   return null != (r = null == e || null == (n = e.content) || null == (t = n.trim()) ? void 0 : t.length) ? r : 0
 }
 
-function h(e) {
+function b(e) {
   let {
     searchType: t,
     searchId: n,
@@ -69,18 +73,19 @@ function h(e) {
     totalResults: u,
     pageResults: p,
     isIndexing: m,
-    pageNumMessages: h,
-    pageNumLinks: b,
-    pageNumEmbeds: E,
-    pageNumAttachments: y,
-    searchQueryString: C,
-    searchQuery: x
+    pageNumMessages: b,
+    pageNumLinks: E,
+    pageNumEmbeds: y,
+    pageNumAttachments: C,
+    searchQueryString: x,
+    searchQuery: v
   } = e;
   i.ZP.trackWithMetadata(d.rMx.SEARCH_RESULT_VIEWED, {
     search_type: t,
     search_id: r,
     prev_search_id: l,
     search_session_id: f(n),
+    search_query_id: _(n),
     is_error: a,
     limit: o,
     offset: s,
@@ -88,16 +93,16 @@ function h(e) {
     total_results: u,
     page_results: p,
     is_indexing: m,
-    page_num_messages: h,
-    page_num_links: b,
-    page_num_embeds: E,
-    page_num_attach: y,
-    search_query_length: g(C),
-    search_query_content_length: _(x)
+    page_num_messages: b,
+    page_num_links: E,
+    page_num_embeds: y,
+    page_num_attach: C,
+    search_query_length: g(x),
+    search_query_content_length: h(v)
   })
 }
 
-function b(e) {
+function E(e) {
   let {
     searchType: t,
     searchId: n,
@@ -110,13 +115,14 @@ function b(e) {
     limit: u,
     offset: p,
     index: m,
-    searchQueryString: h,
-    searchQuery: b
+    searchQueryString: b,
+    searchQuery: E
   } = e;
   s.default.track(d.rMx.SEARCH_RESULT_SELECTED, {
     search_type: t,
     search_id: r,
     search_session_id: f(n),
+    search_query_id: _(n),
     guild_id: i,
     channel_id: l,
     page_results: a,
@@ -125,12 +131,12 @@ function b(e) {
     limit: u,
     offset: p,
     index_num: m,
-    search_query_length: g(h),
-    search_query_content_length: _(b)
+    search_query_length: g(b),
+    search_query_content_length: h(E)
   })
 }
 
-function E(e) {
+function y(e) {
   let {
     searchType: t,
     searchId: n,
@@ -140,12 +146,13 @@ function E(e) {
   i.ZP.trackWithMetadata(d.rMx.SEARCH_RESULT_SORT_CHANGED, {
     search_id: r,
     search_session_id: f(n),
+    search_query_id: _(n),
     search_type: t,
     new_sort_type: l
   })
 }
 
-function y(e) {
+function C(e) {
   let {
     searchType: t,
     searchId: n,
@@ -156,19 +163,23 @@ function y(e) {
   i.ZP.trackWithMetadata(d.rMx.SEARCH_RESULT_EMPTY, {
     search_id: r,
     search_session_id: f(n),
+    search_query_id: _(n),
     search_type: t,
     search_query_length: g(l),
-    search_query_content_length: _(a)
+    search_query_content_length: h(a)
   })
 }
 
-function C(e) {
+function x(e) {
   let {
     searchType: t,
     searchId: n
   } = e;
   m(n, e => {
-    a.Z.initialize(e, p.sR.MESSAGES)
+    a.Z.initialize({
+      searchContext: e,
+      initialTab: p.sR.MESSAGES
+    })
   }), i.ZP.trackWithMetadata(d.rMx.SEARCH_OPENED, {
     search_id: null != n ? o.Z.getAnalyticsId(n) : null,
     search_session_id: f(n),
@@ -176,7 +187,7 @@ function C(e) {
   })
 }
 
-function x(e) {
+function v(e) {
   let {
     searchId: t,
     searchType: n
@@ -184,13 +195,14 @@ function x(e) {
   i.ZP.trackWithMetadata(d.rMx.SEARCH_CLOSED, {
     search_id: null != t ? o.Z.getAnalyticsId(t) : null,
     search_session_id: f(t),
+    search_query_id: _(t),
     search_type: n
   }), m(t, e => {
     a.Z.terminate(e)
   })
 }
 
-function v(e) {
+function O(e) {
   let {
     searchType: t,
     searchId: n
@@ -198,47 +210,66 @@ function v(e) {
   i.ZP.trackWithMetadata(d.rMx.SEARCH_INPUT_CLEARED, {
     search_id: null != n ? o.Z.getAnalyticsId(n) : null,
     search_session_id: f(n),
+    search_query_id: _(n),
     search_type: t
   })
 }
 
-function O(e) {
+function j(e) {
   let {
     searchType: t,
     searchId: n,
     query: l,
-    queryString: a
-  } = e, s = Object.keys(l), u = s.reduce((e, t) => {
-    let n = l[t];
-    return e[t] = Array.isArray(n) ? n.length : 1, e
-  }, {}), p = null != a ? (0, c.kG)(a) : [], m = 0, h = 0, b = 0, E = 0, y = 0, C = 0, x = 0, v = 0;
-  p.forEach(e => {
-    e.type === d.dCx.ANSWER_IN ? m++ : e.type === d.dCx.ANSWER_USERNAME_FROM ? h++ : e.type === d.dCx.ANSWER_USERNAME_MENTIONS ? b++ : e.type === d.dCx.ANSWER_HAS ? E++ : e.type === d.dCx.ANSWER_BEFORE ? y++ : e.type === d.dCx.ANSWER_ON ? C++ : e.type === d.dCx.ANSWER_AFTER ? x++ : e.type === d.dCx.ANSWER_PINNED && v++
-  }), i.ZP.trackWithMetadata(d.rMx.MESSAGES_SEARCH_STARTED, {
+    queryString: s
+  } = e;
+  m(n, e => {
+    a.Z.refreshQueryId(e)
+  });
+  let u = Object.keys(l),
+    p = u.reduce((e, t) => {
+      let n = l[t];
+      return e[t] = Array.isArray(n) ? n.length : 1, e
+    }, {}),
+    b = null != s ? (0, c.kG)(s) : [],
+    E = 0,
+    y = 0,
+    C = 0,
+    x = 0,
+    v = 0,
+    O = 0,
+    j = 0,
+    I = 0;
+  b.forEach(e => {
+    e.type === d.dCx.ANSWER_IN ? E++ : e.type === d.dCx.ANSWER_USERNAME_FROM ? y++ : e.type === d.dCx.ANSWER_USERNAME_MENTIONS ? C++ : e.type === d.dCx.ANSWER_HAS ? x++ : e.type === d.dCx.ANSWER_BEFORE ? v++ : e.type === d.dCx.ANSWER_ON ? O++ : e.type === d.dCx.ANSWER_AFTER ? j++ : e.type === d.dCx.ANSWER_PINNED && I++
+  });
+  let S = _(n);
+  i.ZP.trackWithMetadata(d.rMx.MESSAGES_SEARCH_STARTED, {
     search_id: null != n ? o.Z.getAnalyticsId(n) : null,
     search_session_id: f(n),
+    search_query_id: S,
     search_type: t,
-    search_query_length: g(a),
-    search_query_content_length: _(l),
+    search_query_length: g(s),
+    search_query_content_length: h(l),
     sort_type: (0, r.Vj)(l),
-    filter_in_count: m,
-    filter_from_count: h,
-    filter_mentions_count: b,
-    filter_has_count: E,
-    filter_before_count: y,
-    filter_during_count: C,
-    filter_after_count: x,
-    filter_pinned_count: v
+    filter_in_count: E,
+    filter_from_count: y,
+    filter_mentions_count: C,
+    filter_has_count: x,
+    filter_before_count: v,
+    filter_during_count: O,
+    filter_after_count: j,
+    filter_pinned_count: I
   }), i.ZP.trackWithMetadata(d.rMx.SEARCH_STARTED, {
     search_id: null != n ? o.Z.getAnalyticsId(n) : null,
     search_session_id: f(n),
+    search_query_id: _(n),
     search_type: t,
-    num_modifiers: s.length,
-    modifiers: u
+    num_modifiers: u.length,
+    modifiers: p
   })
 }
 
-function j(e) {
+function I(e) {
   let {
     rating: t,
     searchId: n,
@@ -248,11 +279,12 @@ function j(e) {
     rating: t,
     search_id: null != n ? o.Z.getAnalyticsId(n) : null,
     search_type: r,
-    search_session_id: f(n)
+    search_session_id: f(n),
+    search_query_id: _(n)
   })
 }
 
-function I(e) {
+function S(e) {
   let {
     searchId: t,
     searchType: n
@@ -260,11 +292,12 @@ function I(e) {
   i.ZP.trackWithMetadata(d.rMx.SEARCH_RESULTS_FEEDBACK_ENTRYPOINT_VIEWED, {
     search_id: null != t ? o.Z.getAnalyticsId(t) : null,
     search_type: n,
-    search_session_id: f(t)
+    search_session_id: f(t),
+    search_query_id: _(t)
   })
 }
 
-function S(e) {
+function T(e) {
   let {
     rating: t,
     searchId: n,
@@ -278,6 +311,7 @@ function S(e) {
     search_id: null != n ? o.Z.getAnalyticsId(n) : null,
     search_type: r,
     search_session_id: f(n),
+    search_query_id: _(n),
     rating: t,
     unsatisfied_question_option: l,
     unsatisfied_question_text: a,
@@ -286,13 +320,16 @@ function S(e) {
   })
 }
 
-function T(e) {
+function N(e) {
   let {
     searchType: t,
     searchId: n
   } = e;
   m(n, e => {
-    a.Z.initialize(e, p.sR.MESSAGES)
+    a.Z.initialize({
+      searchContext: e,
+      initialTab: p.sR.MESSAGES
+    })
   }), i.ZP.trackWithMetadata(d.rMx.SEARCH_MESSAGES_CHANNEL_PREFILL, {
     search_type: t,
     search_id: null != n ? o.Z.getAnalyticsId(n) : null,

@@ -1,6 +1,6 @@
 /** Chunk was on 61668 **/
 n.d(t, {
-  Z: () => _
+  Z: () => g
 });
 var r = n(255367);
 n(73800);
@@ -15,10 +15,10 @@ var i = n(442837),
   p = n(51144),
   m = n(981631),
   f = n(388032),
-  g = n(273254);
+  _ = n(273254);
 
-function _(e) {
-  let t, n, _, {
+function g(e) {
+  let t, n, g, {
       author: h,
       banned: b,
       channelId: E
@@ -37,7 +37,7 @@ function _(e) {
       }
       return u.Z.can(m.Plq.SEND_MESSAGES, e)
     });
-  return x ? (t = f.intl.string(f.t["F/OLvL"]), _ = f.intl.string(f.t.C89OLC)) : (_ = f.intl.string(f.t["YVub5+"]), b ? t = f.intl.string(f.t["57nBt7"]) : null != C && v ? (t = f.intl.formatToPlainString(f.t["9Akp1t"], {
+  return x ? (t = f.intl.string(f.t["F/OLvL"]), g = f.intl.string(f.t.C89OLC)) : (g = f.intl.string(f.t["YVub5+"]), b ? t = f.intl.string(f.t["57nBt7"]) : null != C && v ? (t = f.intl.formatToPlainString(f.t["9Akp1t"], {
     username: C
   }), n = (0, r.jsx)(a.Z.Button, {
     onClick: function() {
@@ -54,10 +54,10 @@ function _(e) {
     children: f.intl.string(f.t.P8tvKC)
   })) : t = f.intl.string(f.t["SMJr+f"])), (0, r.jsxs)(a.Z, {
     children: [(0, r.jsx)(a.Z.Header, {
-      text: _
+      text: g
     }), (0, r.jsxs)(a.Z.Body, {
       children: [(0, r.jsxs)("div", {
-        className: g.headerLine,
+        className: _.headerLine,
         children: [(0, r.jsx)(a.Z.Icon, {
           expired: !0
         }), (0, r.jsx)(a.Z.Info, {

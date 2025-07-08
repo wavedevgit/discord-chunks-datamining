@@ -150,7 +150,7 @@ function v(e, t) {
   let n, {
     currentToken: r,
     nextToken: i,
-    previousToken: o
+    previousToken: s
   } = e = null != e ? e : {};
   if (0 === t.length) return {
     type: f.Sap.EMPTY,
@@ -162,7 +162,7 @@ function v(e, t) {
     filter: null,
     token: null
   };
-  if (f.TNx.test(r.type)) {
+  if ((0, o._m)(r.type)) {
     if (null == i || i.type === a.ZP.NON_TOKEN_TYPE) return {
       type: f.Sap.FILTER,
       filter: r.type,
@@ -174,9 +174,9 @@ function v(e, t) {
       token: null
     }
   }
-  return r.type === a.ZP.NON_TOKEN_TYPE && null != o && f.TNx.test(o.type) ? {
+  return r.type === a.ZP.NON_TOKEN_TYPE && null != s && (0, o._m)(s.type) ? {
     type: f.Sap.FILTER,
-    filter: o.type,
+    filter: s.type,
     token: r
   } : (r.type === a.ZP.NON_TOKEN_TYPE && (n = r), {
     type: f.Sap.FILTER_ALL,
@@ -230,7 +230,7 @@ function P(e, t) {
 }
 
 function w() {
-  (0, o.Pe)(), A.reset(), i()(o.ZP).forOwn((e, t) => A.addRule(h({
+  (0, o.WK)(), A.reset(), i()(o.ZP).forOwn((e, t) => A.addRule(h({
     type: t
   }, e)))
 }

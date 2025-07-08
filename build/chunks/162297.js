@@ -25,13 +25,13 @@ function f(e) {
     customInstallUrl: l.customInstallUrl,
     installParams: l.installParams,
     integrationTypesConfig: l.integrationTypesConfig
-  })) ? (0, r.jsx)(g, {
+  })) ? (0, r.jsx)(_, {
     application: l,
     embedUrl: n
   }) : null
 }
 
-function g(e) {
+function _(e) {
   let {
     application: t,
     embedUrl: n

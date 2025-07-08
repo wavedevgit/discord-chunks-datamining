@@ -1,6 +1,6 @@
 /** Chunk was on 61668 **/
 n.d(t, {
-  Z: () => g
+  Z: () => _
 }), n(953529);
 var r = n(255367);
 n(73800);
@@ -70,14 +70,14 @@ function f(e) {
   })
 }
 
-function g(e) {
+function _(e) {
   let {
     imageUrl: t,
     name: n,
     description: i,
     formattedPrice: c,
-    role: g,
-    ctaComponent: _,
+    role: _,
+    ctaComponent: g,
     shouldShowFullDescriptionButton: h = !0,
     onShowFullDescription: b,
     productType: E,
@@ -123,11 +123,11 @@ function g(e) {
         }), h && (0, r.jsx)(f, {
           onShowFullDescription: b,
           variant: T
-        }), v || null == g || "" === g.name ? null : (0, r.jsxs)(r.Fragment, {
+        }), v || null == _ || "" === _.name ? null : (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(a.LZC, {
             size: 16
           }), (0, r.jsx)(u.Z, {
-            role: g
+            role: _
           })]
         })]
       }), C]
@@ -148,7 +148,7 @@ function g(e) {
         onClick: e => {
           e.stopPropagation()
         },
-        children: _
+        children: g
       })]
     })]
   });
