@@ -5,7 +5,7 @@ n.d(t, {
   AB: () => G,
   JS: () => j,
   ZP: () => Y,
-  hH: () => k,
+  hH: () => M,
   kO: () => Z,
   oG: () => H,
   v_: () => U,
@@ -69,7 +69,7 @@ function x(e) {
   return t
 }
 
-function k(e) {
+function M(e) {
   var t;
   if (null == e) return null;
   let n = h.Z.getGuild(e);
@@ -96,7 +96,7 @@ function k(e) {
   }
 }
 
-function M(e, t) {
+function k(e, t) {
   return {
     channel_static_route: t,
     channel_hidden: !1
@@ -158,7 +158,7 @@ function V(e) {
     i = "guild_id" in t ? t.guild_id : r ? v.Z.getGuildId() : null,
     a = "channel_id" in t ? t.channel_id : r ? O.Z.getChannelId(i) : null,
     o = u.Z.getChannel(a),
-    s = L({}, t, k(B(o, i)), null != i && null != a && (0, w.AB)(a) ? M(i, a) : U(o));
+    s = L({}, t, M(B(o, i)), null != i && null != a && (0, w.AB)(a) ? k(i, a) : U(o));
   A.default.track(e, s, {
     flush: n
   })

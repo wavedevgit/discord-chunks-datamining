@@ -35,8 +35,8 @@ var r = n(255367),
   D = n(457040),
   L = n(740492),
   x = n(574254),
-  k = n(585483),
-  M = n(5967),
+  M = n(585483),
+  k = n(5967),
   j = n(28546),
   U = n(957825),
   G = n(981631),
@@ -219,8 +219,8 @@ function et(e) {
       if (n === ec.current || "true" === n.getAttribute("data-menu-item") || "true" === n.getAttribute("data-premium-tutorial-expression-picker-tooltip") || "true" === n.getAttribute("data-premium-tutorial-persistent-coachmark-emoji-step")) return;
       n = n.parentNode
     }(0, j._Q)();
-    let r = null == (t = (0, M.uB)(e)) ? void 0 : t.activeElement;
-    (null == r || "BODY" === r.tagName) && k.S.dispatchToLastSubscribed(G.CkL.TEXTAREA_FOCUS)
+    let r = null == (t = (0, k.uB)(e)) ? void 0 : t.activeElement;
+    (null == r || "BODY" === r.tagName) && M.S.dispatchToLastSubscribed(G.CkL.TEXTAREA_FOCUS)
   }, [ei, ey, eb, eE]), eI = i.useCallback(() => {
     (0, j._Q)()
   }, []);
@@ -228,8 +228,8 @@ function et(e) {
     let e = () => {
       ef === U.X1.GIF && (0, j._Q)()
     };
-    return ep.addEventListener("mousedown", ev), ep.addEventListener("contextmenu", ev), eh.subscribe(G.CkL.POPOUT_CLOSE, eI), k.S.subscribe(G.CkL.CLOSE_GIF_PICKER, e), () => {
-      ep.removeEventListener("mousedown", ev), ep.removeEventListener("contextmenu", ev), eh.unsubscribe(G.CkL.POPOUT_CLOSE, eI), k.S.unsubscribe(G.CkL.CLOSE_GIF_PICKER, e)
+    return ep.addEventListener("mousedown", ev), ep.addEventListener("contextmenu", ev), eh.subscribe(G.CkL.POPOUT_CLOSE, eI), M.S.subscribe(G.CkL.CLOSE_GIF_PICKER, e), () => {
+      ep.removeEventListener("mousedown", ev), ep.removeEventListener("contextmenu", ev), eh.unsubscribe(G.CkL.POPOUT_CLOSE, eI), M.S.unsubscribe(G.CkL.CLOSE_GIF_PICKER, e)
     }
   }, [ef, eI, ev, ep, eh]), (0, m.Tbt)(eo);
   let [eT, eS] = (0, v.US)(eg ? [_.z.SOUNDMOJI_BADGE] : [], void 0, !1), [eA, eN] = i.useState(!1);
@@ -258,11 +258,11 @@ function et(e) {
     eD = (null == (a = Q.soundmoji) ? void 0 : a.allowSending) === !0 && null != q,
     eL = !(null == (s = Q.expressionPicker) ? void 0 : s.onlyEmojis) && (eC || eR),
     ex = "left" === en ? "right" : "left",
-    ek = null != er ? er : "left" === en ? Y.positionLayerDefaultAlignLeft : Y.positionLayerDefaultAlignRight;
+    eM = null != er ? er : "left" === en ? Y.positionLayerDefaultAlignLeft : Y.positionLayerDefaultAlignRight;
   return (0, r.jsx)(E.Z, {
     section: G.jXE.EXPRESSION_PICKER,
     children: (0, r.jsx)(N.W5, {
-      className: o()(Y.positionLayer, ek),
+      className: o()(Y.positionLayer, eM),
       targetRef: l,
       position: et,
       align: en,

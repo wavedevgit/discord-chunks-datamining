@@ -36,8 +36,8 @@ var r = n(255367),
   D = n(240991),
   L = n(713938),
   x = n(973616),
-  k = n(881998),
-  M = n(592125),
+  M = n(881998),
+  k = n(592125),
   j = n(944486),
   U = n(246946),
   G = n(9156),
@@ -221,7 +221,7 @@ let el = e => {
       return null == (r = z.Z.settings.applications) || null == (n = r.appSettings) || null == (t = n[v]) || null == (e = t.appDmSettings) ? void 0 : e.allowMobilePush
     }, [v]), R = N.w.useExperiment({
       location: "oauth2_authorize"
-    }), k = a.bot, j = (0, _.e7)([M.Z], () => M.Z.getDMFromUserId(null == k ? void 0 : k.id)), {
+    }), M = a.bot, j = (0, _.e7)([k.Z], () => k.Z.getDMFromUserId(null == M ? void 0 : M.id)), {
       appDMChannelMuteConfig: U,
       dmChannelMuted: F
     } = (0, _.cj)([G.ZP], () => null == j ? {
@@ -382,9 +382,9 @@ let el = e => {
         label: e ? Z.ZB.Unmuted : Z.ZB.Muted
       })
     }, eh = i.useCallback(async () => {
-      u()(null != k, "dm channel mute setting requires having a bot user");
+      u()(null != M, "dm channel mute setting requires having a bot user");
       let e = j;
-      null == e && (e = await b.Z.ensurePrivateChannel(k.id)), F ? y.Z.updateAppDMOverrideSettings(null, e, a.id, {
+      null == e && (e = await b.Z.ensurePrivateChannel(M.id)), F ? y.Z.updateAppDMOverrideSettings(null, e, a.id, {
         muted: !1
       }, Z.ZB.Unmuted) : (0, g.ZDy)(async () => {
         let {
@@ -395,14 +395,14 @@ let el = e => {
           applicationId: a.id
         }, n))
       })
-    }, [j, k, F, a.id]), em = () => R.enabled ? (0, r.jsxs)("div", {
+    }, [j, M, F, a.id]), em = () => R.enabled ? (0, r.jsxs)("div", {
       className: et.directMessagesSection,
       children: [(0, r.jsx)(g.X6q, {
         variant: "heading-sm/medium",
         color: "header-primary",
         className: et.dmSettingsHeader,
         children: ee.intl.string(ee.t.NaZyYG)
-      }), null != k ? (0, r.jsx)(g.j7V, {
+      }), null != M ? (0, r.jsx)(g.j7V, {
         hideBorder: !0,
         onChange: eh,
         className: et.dmSettingsSwitch,
@@ -471,10 +471,10 @@ let el = e => {
   })),
   e_ = () => {
     let e = (0, _.e7)([U.Z], () => U.Z.hidePersonalInformation),
-      t = (0, _.e7)([k.Z], () => k.Z.getNonChildrenApps()),
+      t = (0, _.e7)([M.Z], () => M.Z.getNonChildrenApps()),
       n = (0, _.e7)([Y.default], () => Y.default.locale),
       a = (0, _.e7)([T.ZP], () => T.ZP.getSelfEmbeddedActivities()),
-      o = (0, _.e7)([M.Z, j.Z], () => M.Z.getChannel(j.Z.getChannelId())),
+      o = (0, _.e7)([k.Z, j.Z], () => k.Z.getChannel(j.Z.getChannelId())),
       s = null == o ? void 0 : o.getGuildId();
     i.useEffect(() => {
       E.Z.fetch()

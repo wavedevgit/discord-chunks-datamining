@@ -39,8 +39,8 @@ var i = n(658722),
   D = n(592125),
   L = n(580005),
   x = n(984933),
-  k = n(271383),
-  M = n(485386),
+  M = n(271383),
+  k = n(485386),
   j = n(430824),
   U = n(375954),
   G = n(496675),
@@ -184,11 +184,11 @@ function eL(e) {
 }
 let ex = [x.sH, x.Zb, ee.d4z.GUILD_CATEGORY];
 
-function ek(e, t) {
+function eM(e, t) {
   return e.split(/(?:,| )+/).every(e => RegExp(X.Z.escape(e), "i").test(t))
 }
 
-function eM(e, t) {
+function ek(e, t) {
   let {
     exactQuery: n,
     containQuery: r,
@@ -200,7 +200,7 @@ function eM(e, t) {
       return ef
     }
     if (r.test(e)) return e_;
-    if (ek(i, e)) return ep;
+    if (eM(i, e)) return ep;
     if (o && a()(i, e)) return eh
   } catch (e) {
     eu.error(e)
@@ -224,7 +224,7 @@ function eU(e) {
   for (; m < h;) {
     var E, b, y, O, v, I, T, S, A;
     let e, r, d = n[m];
-    d instanceof w.Z ? (r = d, e = null == (b = k.ZP.getNick(c, r.id)) ? void 0 : b.toLocaleLowerCase()) : (e = null == (y = d.nick) ? void 0 : y.toLocaleLowerCase(), r = l[d.userId]);
+    d instanceof w.Z ? (r = d, e = null == (b = M.ZP.getNick(c, r.id)) ? void 0 : b.toLocaleLowerCase()) : (e = null == (y = d.nick) ? void 0 : y.toLocaleLowerCase(), r = l[d.userId]);
     let h = null == (E = $.ZP.getGlobalName(r)) ? void 0 : E.toLocaleLowerCase();
     if (null != r && (null == i || i(r))) {
       let n = r.username.toLocaleLowerCase(),
@@ -310,7 +310,7 @@ function eZ(e, t, n) {
   let r = 0,
     i = null;
   for (let a of t) {
-    let t = eM(e, a, n);
+    let t = ek(e, a, n);
     t > r && (r = t, i = a)
   }
   return null != i && (i.isFullMatch ? t.length = 0 : t.splice(t.indexOf(i), 1)), r
@@ -341,11 +341,11 @@ function eW(e, t) {
   return null == e || null == n ? [] : s()(U.Z.getMessages(e).toArray()).reverse().uniqBy(e => e.author.id).map(e => H.default.getUser(e.author.id)).filter(e => {
     if (null == e || e.isNonUserBot()) return !1;
     let t = n.getGuildId();
-    return null == t || ej(k.ZP.getMember(t, e.id))
+    return null == t || ej(M.ZP.getMember(t, e.id))
   }).map(e => {
     var t;
     let r = n.getGuildId(),
-      i = null != r ? k.ZP.getMember(r, e.id) : null;
+      i = null != r ? M.ZP.getMember(r, e.id) : null;
     return {
       type: et.h8.USER,
       record: e,
@@ -433,7 +433,7 @@ let eK = (0, W.oH)((e, t, n) => {
           let e = eW(l.id, i);
           if (e.length > 0) return e
         }
-        t = k.ZP.getMembers(u.guild_id).filter(ej), a && z.Z.requestMembers(u.guild_id, r, i)
+        t = M.ZP.getMembers(u.guild_id).filter(ej), a && z.Z.requestMembers(u.guild_id, r, i)
       }
       return eU({
         query: r,
@@ -462,7 +462,7 @@ let eK = (0, W.oH)((e, t, n) => {
         let e = eW(F.Z.getChannelId(t), r);
         if (e.length > 0) return e
       }
-      let l = k.ZP.getMembers(t).filter(ej);
+      let l = M.ZP.getMembers(t).filter(ej);
       return i && n.length > 0 && z.Z.requestMembers(t, n, r), eU({
         query: n,
         members: l,
@@ -542,7 +542,7 @@ let eK = (0, W.oH)((e, t, n) => {
       for (let e of j.Z.getGuildsArray()) {
         if (!i(e)) continue;
         let t = e.name.toLocaleLowerCase(),
-          n = eM(t, s, r);
+          n = ek(t, s, r);
         n > 0 && l.push({
           type: et.h8.GUILD,
           record: e,
@@ -595,10 +595,10 @@ let eK = (0, W.oH)((e, t, n) => {
         if (!e.isMultiUserDM() || !i(e)) continue;
         let t = (0, f.F6)(e, H.default, V.Z).toLocaleLowerCase(),
           n = (0, J._I)((0, J.Fv)(t)),
-          o = eM(n, l, r);
+          o = ek(n, l, r);
         if ("" !== e.name) {
           let t = (0, f.on)(e, H.default, V.Z).toLocaleLowerCase();
-          o = Math.max(o, eM((0, J._I)((0, J.Fv)(t)), l, r))
+          o = Math.max(o, ek((0, J._I)((0, J.Fv)(t)), l, r))
         }
         o > 0 && u.push({
           type: et.h8.GROUP_DM,
@@ -627,7 +627,7 @@ let eK = (0, W.oH)((e, t, n) => {
         of s) {
         if (!i(e)) continue;
         let t = e.name.toLocaleLowerCase(),
-          n = eM(t, o, r);
+          n = ek(t, o, r);
         n > 0 && l.push({
           type: et.h8.APPLICATION,
           record: e,
@@ -659,7 +659,7 @@ let eK = (0, W.oH)((e, t, n) => {
         if (null != n)
           for (let e of n) {
             let n = e.toLocaleLowerCase(),
-              i = eM(n, a, r);
+              i = ek(n, a, r);
             i > 0 && l.push({
               type: et.h8.IN_APP_NAVIGATION,
               record: u.FL.fromType(t),
@@ -672,7 +672,7 @@ let eK = (0, W.oH)((e, t, n) => {
       return el.getState().options.forEach(e => {
         var t;
         let n = [e.title].concat(e.searchableTitles),
-          i = null != (t = (0, o.max)(n.map(e => eD(eM(e.toLocaleLowerCase(), a, r))))) ? t : 0;
+          i = null != (t = (0, o.max)(n.map(e => eD(ek(e.toLocaleLowerCase(), a, r))))) ? t : 0;
         i > 0 && l.push({
           type: et.h8.IN_APP_NAVIGATION,
           record: u.FL.fromType(u.Ky.SETTINGS, e.path, e.title),
@@ -696,7 +696,7 @@ let eK = (0, W.oH)((e, t, n) => {
       for (let e of l)
         if (e.type === ee.epS.DURABLE_PRIMARY && i(e)) {
           let t = e.name.toLocaleLowerCase(),
-            n = eM(t, o, r);
+            n = ek(t, o, r);
           n > 0 && c.push({
             type: et.h8.SKU,
             record: e,
@@ -744,7 +744,7 @@ let eK = (0, W.oH)((e, t, n) => {
           user: t,
           score: r,
           comparator: i,
-          nick: k.ZP.getNick(n.guild_id, t.id),
+          nick: M.ZP.getNick(n.guild_id, t.id),
           status: B.Z.getStatus(t.id)
         }
       }) : [], g = m.length, E = t.toLowerCase(), b = [];
@@ -752,7 +752,7 @@ let eK = (0, W.oH)((e, t, n) => {
         let e = n.getGuildId(),
           i = j.Z.getGuild(e);
         if (null != i) {
-          let n = s()(M.Z.getRoles(i.id)).filter(t => {
+          let n = s()(k.Z.getRoles(i.id)).filter(t => {
             let {
               mentionable: n,
               name: i,
@@ -788,7 +788,7 @@ let eK = (0, W.oH)((e, t, n) => {
       })) : [], u = c.length, d = t.toLowerCase(), f = [];
       if (u < ee.rnv && o) {
         let e = j.Z.getGuild(n);
-        null != e && (s()(M.Z.getRoles(e.id)).filter(e => {
+        null != e && (s()(k.Z.getRoles(e.id)).filter(e => {
           let {
             mentionable: t,
             name: i,
@@ -813,7 +813,7 @@ let eK = (0, W.oH)((e, t, n) => {
         limit: r = 10,
         fuzzy: i = !0
       } = e, a = t.toLocaleLowerCase(), o = RegExp("^".concat(X.Z.escape(a)), "i"), l = RegExp(X.Z.escape(a), "i"), c = s()(n).map((e, t) => {
-        let n = eM(e.displayName.toLocaleLowerCase(), {
+        let n = ek(e.displayName.toLocaleLowerCase(), {
           exactQuery: o,
           containQuery: l,
           queryLower: a
@@ -844,7 +844,7 @@ let eK = (0, W.oH)((e, t, n) => {
         id: en.HY.CUSTOMIZE_COMMUNITY,
         name: er.intl.string(er.t.h9mGOD)
       }], c = [];
-      for (let e of l)(e.id !== en.HY.SERVER_GUIDE || a) && (e.id !== en.HY.CHANNEL_BROWSER || o) && (e.id !== en.HY.CUSTOMIZE_COMMUNITY || s) && eM(e.name.toLocaleLowerCase(), i, !1) > 0 && c.push(new R.nl({
+      for (let e of l)(e.id !== en.HY.SERVER_GUIDE || a) && (e.id !== en.HY.CHANNEL_BROWSER || o) && (e.id !== en.HY.CUSTOMIZE_COMMUNITY || s) && ek(e.name.toLocaleLowerCase(), i, !1) > 0 && c.push(new R.nl({
         id: e.id,
         name: e.name,
         type: ee.d4z.UNKNOWN,
@@ -989,7 +989,7 @@ let eK = (0, W.oH)((e, t, n) => {
       for (let {
           name: e
         }
-        of Object.values(null != n ? M.Z.getRoles(n.id) : {}))
+        of Object.values(null != n ? k.Z.getRoles(n.id) : {}))
         if (t.username.startsWith(e.toLowerCase())) return !0;
       return !1
     }

@@ -1,10 +1,10 @@
 /** Chunk was on 36512 **/
 n.d(t, {
   M: () => g,
-  Z: () => S
+  Z: () => y
 }), n(415506), n(781311);
-var r, s = n(255367),
-  l = n(73800),
+var r, l = n(255367),
+  s = n(73800),
   a = n(120356),
   i = n.n(a),
   o = n(481060),
@@ -58,56 +58,56 @@ function g(e, t, n) {
     "aria-selected": n
   }
 }
-class m extends(r = l.PureComponent) {
+class m extends(r = s.PureComponent) {
   renderQuery(e) {
     let {
       query: t,
       navId: n,
       focusedIndex: r,
-      onSelectQuery: l,
+      onSelectQuery: s,
       onSelectSearchEverywhere: a,
       onHighlightQuery: d,
       hideQuery: f,
       searchFavorites: m
     } = this.props;
     if (e || f) return null;
-    let S = -1 === r;
-    return (0, s.jsxs)(s.Fragment, {
-      children: [(0, s.jsxs)(o.P3F, p(h({
+    let y = -1 === r;
+    return (0, l.jsxs)(l.Fragment, {
+      children: [(0, l.jsxs)(o.P3F, p(h({
         className: i()(u.queryContainer, {
-          [u.focused]: S
+          [u.focused]: y
         })
-      }, g(n, -1, S)), {
+      }, g(n, -1, y)), {
         onMouseEnter: d,
-        onClick: l,
-        children: [(0, s.jsx)("div", {
+        onClick: s,
+        children: [(0, l.jsx)("div", {
           className: u.queryText,
           children: m ? c.intl.string(c.t["6RVtLC"]) : c.intl.format(c.t.ub226e, {
             value: t
           })
-        }), (0, s.jsx)("div", {
+        }), (0, l.jsx)("div", {
           className: u.queryShortcut,
           "aria-hidden": !0,
-          children: (0, s.jsx)(o.M2$, {
+          children: (0, l.jsx)(o.M2$, {
             shortcut: "return",
             dim: !0,
             className: u.keyCombo
           })
         })]
-      })), m && (0, s.jsxs)(o.P3F, p(h({
+      })), m && (0, l.jsxs)(o.P3F, p(h({
         className: i()(u.queryContainer, {
-          [u.focused]: S
+          [u.focused]: y
         })
-      }, g(n, -1, S)), {
+      }, g(n, -1, y)), {
         onMouseEnter: d,
         onClick: a,
-        children: [(0, s.jsx)("div", {
+        children: [(0, l.jsx)("div", {
           className: u.queryText,
           children: c.intl.string(c.t.FtSUxc)
-        }), (0, s.jsx)("div", {
+        }), (0, l.jsx)("div", {
           className: u.queryShortcut,
           "aria-hidden": !0,
-          children: (0, s.jsx)(o.M2$, {
+          children: (0, l.jsx)(o.M2$, {
             shortcut: "shift+return",
             dim: !0,
             className: u.keyCombo
@@ -121,15 +121,15 @@ class m extends(r = l.PureComponent) {
       numResults: t,
       renderNoResults: n,
       renderInitialState: r,
-      renderResult: s,
-      renderCustomResults: l
+      renderResult: l,
+      renderCustomResults: s
     } = this.props;
     if (e) return r();
     if (0 === t) return n();
-    if (null != s) return Array.from({
+    if (null != l) return Array.from({
       length: t
-    }).map((e, t) => s(t));
-    if (null != l) return l();
+    }).map((e, t) => l(t));
+    if (null != s) return s();
     throw Error("SearchResultsPopout.renderResults: Flow should never allow this...")
   }
   render() {
@@ -138,8 +138,8 @@ class m extends(r = l.PureComponent) {
       focusedIndex: t,
       navId: n,
       width: r
-    } = this.props, l = "" === e.trim();
-    return (0, s.jsxs)("div", {
+    } = this.props, s = "" === e.trim();
+    return (0, l.jsxs)("div", {
       className: u.container,
       style: {
         width: r
@@ -149,7 +149,7 @@ class m extends(r = l.PureComponent) {
       id: n,
       tabIndex: -1,
       "aria-activedescendant": "".concat(n, "-").concat(t),
-      children: [this.renderQuery(l), this.renderResults(l)]
+      children: [this.renderQuery(s), this.renderResults(s)]
     })
   }
 }
@@ -158,4 +158,4 @@ d(m, "defaultProps", {
   hideQuery: !1,
   width: 320
 });
-let S = m
+let y = m

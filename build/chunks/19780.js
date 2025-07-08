@@ -198,7 +198,7 @@ function x(e) {
   N()
 }
 
-function k(e) {
+function M(e) {
   let {
     channelId: t
   } = e;
@@ -206,7 +206,7 @@ function k(e) {
   N()
 }
 
-function M(e) {
+function k(e) {
   let {
     channel: t
   } = e;
@@ -383,9 +383,9 @@ let K = new W(s.Z, __OVERLAY__ ? {} : {
   REMOTE_SESSION_CONNECT: D,
   CLEAR_LAST_SESSION_VOICE_CHANNEL_ID: L,
   GUILD_DELETE: x,
-  CHANNEL_DELETE: M,
-  THREAD_DELETE: M,
-  CALL_DELETE: k,
+  CHANNEL_DELETE: k,
+  THREAD_DELETE: k,
+  CALL_DELETE: M,
   APP_STATE_UPDATE: U,
   RTC_DEBUG_SET_SIMULCAST_OVERRIDE: H
 });

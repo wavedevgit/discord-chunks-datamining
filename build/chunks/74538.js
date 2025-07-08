@@ -14,7 +14,7 @@ n.d(t, {
   M5: () => S.M5,
   MY: () => eQ,
   N1: () => eS,
-  PK: () => ek,
+  PK: () => eM,
   PV: () => eO,
   Px: () => es,
   Qo: () => eX,
@@ -56,7 +56,7 @@ n.d(t, {
   uZ: () => eb,
   v6: () => eD,
   v9: () => e3,
-  xG: () => tM,
+  xG: () => tk,
   xe: () => tD,
   yd: () => S.yd,
   zL: () => eu,
@@ -125,12 +125,12 @@ function x(e, t) {
   return n
 }
 
-function k(e, t) {
+function M(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let M = {
+let k = {
     PAYMENT_SOURCE_MANAGEMENT: "https://support.apple.com/HT201266",
     BILLING_HISTORY: "https://support.apple.com/HT201266",
     SUBSCRIPTION_MANAGEMENT: "https://support.apple.com/HT202039"
@@ -211,7 +211,7 @@ function H(e) {
       planId: e,
       currency: null != a ? a : "unknown"
     },
-    extra: k(L({}, r), {
+    extra: M(L({}, r), {
       isGift: n
     })
   }), o
@@ -543,11 +543,11 @@ function el(e) {
     price: m
   }) : w.intl.format(w.t.NUkcpK, {
     price: m
-  }) : w.intl.string(w.t.zYx3Y2), k = A ? D ? w.intl.format(w.t.VsKcFB, {
+  }) : w.intl.string(w.t.zYx3Y2), M = A ? D ? w.intl.format(w.t.VsKcFB, {
     price: m
   }) : w.intl.format(w.t.hJ5xER, {
     price: m
-  }) : w.intl.string(w.t["8rSipK"]), M = A ? D ? w.intl.format(w.t["jRy6/P"], {
+  }) : w.intl.string(w.t["8rSipK"]), k = A ? D ? w.intl.format(w.t["jRy6/P"], {
     price: m,
     num: L
   }) : w.intl.format(w.t.tTNE8P, {
@@ -623,7 +623,7 @@ function el(e) {
             pauseDate: _.currentPeriodEnd
           });
         case N.O0b.PAUSED:
-          if (v) return k;
+          if (v) return M;
           return w.intl.format(w.t["6RTdZG"], {
             resumeDate: _.pauseEndsAt
           });
@@ -635,7 +635,7 @@ function el(e) {
             }
           });
         default:
-          return k
+          return M
       }
     case R.Xh.PREMIUM_MONTH_TIER_2:
     case R.Xh.PREMIUM_YEAR_TIER_2:
@@ -675,7 +675,7 @@ function el(e) {
             pauseDate: _.currentPeriodEnd
           });
         case N.O0b.PAUSED:
-          if (v) return M;
+          if (v) return k;
           return w.intl.format(w.t["6RTdZG"], {
             resumeDate: _.pauseEndsAt
           });
@@ -702,7 +702,7 @@ function el(e) {
             percent: null != (d = null == b ? void 0 : b.percentage) ? d : R.M_,
             regularPrice: T,
             numMonths: null != (f = null == b ? void 0 : b.duration) ? f : R.rt
-          }) : M
+          }) : k
       }
     default:
       throw Error("Invalid planId ".concat(h))
@@ -993,7 +993,7 @@ function eT(e, t) {
 function eS(e, t, n, r) {
   let i = o()(r ? void 0 : e);
   if (t.length > 0) {
-    let e = tk(t);
+    let e = tM(t);
     i = i.add(e, "hours")
   }
   if (!r && void 0 !== n) {
@@ -1005,7 +1005,7 @@ function eS(e, t, n, r) {
 }
 
 function eA(e) {
-  let t = tk(e.unactivatedUnits);
+  let t = tM(e.unactivatedUnits);
   if (!(t > 0 && e.fractionalState === R.a$.NONE)) return "";
   let n = {
       days: w.t.fYmir6,
@@ -1118,12 +1118,12 @@ function ex(e, t, n) {
   return e.currency !== P.pK.USD && !0 === n && (a = a.concat("*")), a
 }
 
-function ek(e, t, n) {
+function eM(e, t, n) {
   let r = ex(e, t, n);
   return (0, A.og)(r, e.interval, e.intervalCount)
 }
 
-function eM(e, t) {
+function ek(e, t) {
   let {
     planId: n
   } = e;
@@ -1391,7 +1391,7 @@ function eq(e, t) {
   switch (e) {
     case N.gg$.APPLE_PARTNER:
     case N.gg$.APPLE:
-      return M[t];
+      return k[t];
     case N.gg$.GOOGLE:
       return j[t]
   }
@@ -1421,7 +1421,7 @@ function e$(e, t, n, r) {
   var a, o;
   i()(r.has(t), "Expected planId in group");
   let s = !1,
-    l = (null != (o = null == (a = e.renewalMutations) ? void 0 : a.items) ? o : e.items).map(e => r.has(e.planId) ? (s = !0, k(L({}, e), {
+    l = (null != (o = null == (a = e.renewalMutations) ? void 0 : a.items) ? o : e.items).map(e => r.has(e.planId) ? (s = !0, M(L({}, e), {
       quantity: n,
       planId: t
     })) : e);
@@ -1454,7 +1454,7 @@ function e2(e) {
       let r = g.Z.get(e.planId);
       i()(null != r, "Missing plan");
       let a = g.Z.getForSkuAndInterval(r.skuId, t.interval, t.intervalCount);
-      return i()(null != a, "Missing planForInterval"), k(L({}, e), {
+      return i()(null != a, "Missing planForInterval"), M(L({}, e), {
         planId: a.id
       })
     })
@@ -1656,11 +1656,11 @@ function tx(e) {
   return null != e && !e.isProvisional && !e.bot
 }
 
-function tk(e) {
-  return tM(e.map(e => e.skuId))
+function tM(e) {
+  return tk(e.map(e => e.skuId))
 }
 
-function tM(e) {
+function tk(e) {
   return e.reduce((e, t) => {
     let [n, r] = R.Cx[t], i = 1;
     switch (n) {
@@ -1705,7 +1705,7 @@ let tj = Object.freeze({
   isSwitchingPlansDisabled: eN,
   getSwitchingPlansDisabledMessage: eC,
   isNoneSubscription: _.Q0,
-  getPlanIdFromInvoice: eM,
+  getPlanIdFromInvoice: ek,
   getStatusFromInvoice: ej,
   isBaseSubscriptionCanceled: eU,
   getPremiumGuildIntervalPrice: eV,
@@ -1719,7 +1719,7 @@ let tj = Object.freeze({
   getPremiumTypeFromSubscription: e8,
   getPremiumTypeFromSubscriptionRenewalMutations: e7,
   getPremiumGradientColor: e9,
-  getUnactivatedFractionalPremiumHours: tk,
+  getUnactivatedFractionalPremiumHours: tM,
   castPremiumSubscriptionAsSkuId: tC,
   canUseAnimatedEmojis: te,
   canUseEmojisEverywhere: tt,

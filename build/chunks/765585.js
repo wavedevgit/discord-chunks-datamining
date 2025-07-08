@@ -39,8 +39,8 @@ let m = 280,
       art: D,
       isPremiumEarlyAccess: L = !1,
       maxWidth: x = m,
-      hideDismissButton: k = !1,
-      pointerClassName: M,
+      hideDismissButton: M = !1,
+      pointerClassName: k,
       dismissIconClassName: j,
       dismissIcon: U,
       onDismissIconClick: G,
@@ -125,7 +125,7 @@ let m = 280,
               },
               color: null != B ? B : A || L ? s.zxk.Colors.BRAND_INVERTED : s.zxk.Colors.WHITE,
               children: null != y ? y : p.intl.string(p.t.IHf1RE)
-            }), !k && (0, r.jsx)(s.zxk, {
+            }), !M && (0, r.jsx)(s.zxk, {
               className: h.button,
               size: V,
               onClick: e => {
@@ -145,7 +145,7 @@ let m = 280,
             children: p.intl.string(p.t.HU2IR0)
           })
         }), (0, r.jsx)("div", {
-          className: o()(h.pointer, M, {
+          className: o()(h.pointer, k, {
             [h.bottomPointer]: "top" === P,
             [h.centerLeftPointer]: "right" === P && "center" === w,
             [h.topLeftPointer]: "right" === P && "top" === w,

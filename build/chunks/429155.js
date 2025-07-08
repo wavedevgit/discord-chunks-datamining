@@ -47,7 +47,7 @@ let d = 20,
       onActiveCategoryIndexChange: f.setActiveCategoryIndex,
       scrollOffset: d,
       searchQuery: P
-    }), k = i.useCallback(e => {
+    }), M = i.useCallback(e => {
       L(e), x(e);
       let t = (0, l.y)({
         listRef: R,
@@ -105,7 +105,7 @@ let d = 20,
       children: [P.length > 0 && !_ && null != y ? y() : (0, r.jsx)(a.Z, {
         role: "none presentation",
         listPadding: p,
-        onScroll: k,
+        onScroll: M,
         renderRow: h,
         renderSection: m,
         renderSectionHeader: g,

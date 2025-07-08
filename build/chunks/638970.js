@@ -107,8 +107,8 @@ function x(e) {
   } = (0, d.ZP)(), {
     trackUserProfileAction: x
   } = (0, h.KZ)(), {
-    live: k,
-    stream: M
+    live: M,
+    stream: k
   } = (0, m.Z)(t.id), {
     voiceChannel: j,
     voiceActivity: U
@@ -122,7 +122,7 @@ function x(e) {
     voiceActivityStatusEnabled: V
   } = (0, u.U)({
     location: "UserProfileStackedActivity"
-  }), F = V && null == M && null == U && null != j, Z = (0, E.yi)(), H = (null == Z ? void 0 : Z.interactionSource) === v.n_.ACTIVITY, Y = i.useRef(null), W = i.useRef(null), K = i.useRef(null), z = i.useRef(null), [q, X] = i.useReducer(D, L), {
+  }), F = V && null == k && null == U && null != j, Z = (0, E.yi)(), H = (null == Z ? void 0 : Z.interactionSource) === v.n_.ACTIVITY, Y = i.useRef(null), W = i.useRef(null), K = i.useRef(null), z = i.useRef(null), [q, X] = i.useReducer(D, L), {
     height: Q,
     animationPhase: J
   } = q, $ = "awaitingInput" !== J, ee = "animating" === J || "done" === J, et = [], en = {
@@ -131,11 +131,11 @@ function x(e) {
     className: S.card,
     onClose: C
   };
-  null != M && et.push((0, r.jsx)(y.Z, N({
+  null != k && et.push((0, r.jsx)(y.Z, N({
     location: "UserProfileStackedActivity",
-    stream: M,
+    stream: k,
     profileGuildId: null == a ? void 0 : a.guildId
-  }, en), "stream")), k.forEach((e, t) => {
+  }, en), "stream")), M.forEach((e, t) => {
     et.push((0, r.jsx)(b.Z, N({
       activity: e,
       profileGuildId: null == a ? void 0 : a.guildId

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => M
+  Z: () => k
 }), n(388685), n(953529);
 var r = n(255367),
   i = n(73800),
@@ -88,23 +88,23 @@ function x(e) {
       analyticsLocations: l,
       guild: e
     })
-  }, [t, l]), k = i.useCallback(() => {
+  }, [t, l]), M = i.useCallback(() => {
     a(), (0, I.Z)(t, f.Z.GUILD_POWERUPS_MARKETING, n.skuId)
-  }, [t, n.skuId, a]), M = {
+  }, [t, n.skuId, a]), k = {
     tension: 400,
     friction: 30
   }, j = (0, u.q_F)({
     transform: D ? "translateX(-50%) translateY(16px) scale(1)" : "translateX(-50%) translateY(24px) scale(1.40)",
     borderRadius: "0px",
     transformOrigin: "center 0%",
-    config: M
+    config: k
   }), U = (0, u.q_F)({
     y: D ? -25 : 0,
-    config: M
+    config: k
   }), G = (0, u.q_F)({
     opacity: +!!D,
     transform: D ? "translateY(0)" : "translateY(20px)",
-    config: M
+    config: k
   }), B = i.useCallback(e => {
     e && b(!0)
   }, []), V = (0, d.O)(B), F = (0, y.Z)(n, T);
@@ -148,7 +148,7 @@ function x(e) {
           children: N.intl.string(N.t["oPAx7+"])
         }), g && (0, r.jsx)(u.zxk, {
           grow: !0,
-          onClick: k,
+          onClick: M,
           color: u.zxk.Colors.PRIMARY,
           className: R.button,
           children: N.intl.string(N.t.GoCQxc)
@@ -162,7 +162,7 @@ function x(e) {
     })]
   })
 }
-let k = i.forwardRef((e, t) => {
+let M = i.forwardRef((e, t) => {
   var n, a;
   let {
     guild: o,
@@ -194,5 +194,5 @@ let k = i.forwardRef((e, t) => {
     })]
   })
 });
-k.displayName = "GuildPowerupsMarketingPowerupCards";
-let M = k
+M.displayName = "GuildPowerupsMarketingPowerupCards";
+let k = M

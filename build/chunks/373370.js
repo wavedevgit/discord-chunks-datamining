@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  CR: () => k,
+  CR: () => M,
   DD: () => D,
-  up: () => M
+  up: () => k
 }), n(953529), n(388685);
 var r = n(73800),
   i = n(442837),
@@ -303,7 +303,7 @@ function x(e) {
   return r.useMemo(() => L(e), [e])
 }
 
-function k(e) {
+function M(e) {
   let {
     quest: t
   } = e;
@@ -318,7 +318,7 @@ function k(e) {
   }
 }
 
-function M(e) {
+function k(e) {
   let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
   return (0, c.f)({
     location: e,

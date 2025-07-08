@@ -68,7 +68,7 @@ let L = () => (0, r.jsx)("div", {
       })]
     })
   },
-  k = e => {
+  M = e => {
     var t, n, i;
     let {
       onSubscribeSuccess: a,
@@ -97,7 +97,7 @@ let L = () => (0, r.jsx)("div", {
       onSubscribeModalClose: y
     })
   },
-  M = e => {
+  k = e => {
     let {
       markAsDismissed: t,
       isCoachmark: n
@@ -120,7 +120,7 @@ let L = () => (0, r.jsx)("div", {
     }, () => w.intl.string(w.t["dqH+qq"])).otherwise(() => w.intl.string(w.t.Olc2Ky));
     return (0, r.jsxs)("div", {
       className: D.editorFooter,
-      children: [a && (0, r.jsx)(k, {
+      children: [a && (0, r.jsx)(M, {
         onSubscribeSuccess: () => {
           c(!0)
         },
@@ -178,7 +178,7 @@ function j(e) {
               isCoachmark: n
             })]
           })
-        }), (0, r.jsx)(M, {
+        }), (0, r.jsx)(k, {
           markAsDismissed: t,
           isCoachmark: n
         })]

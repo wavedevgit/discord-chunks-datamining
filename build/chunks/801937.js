@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Q8: () => x,
-  ZP: () => M
+  ZP: () => k
 }), n(388685), n(539854);
 var r = n(255367),
   i = n(73800),
@@ -127,7 +127,7 @@ function x(e) {
     remainingPaymentMethods: o
   }
 }
-class k extends i.PureComponent {
+class M extends i.PureComponent {
   componentDidMount() {
     var e;
     (0, c.GE)(), (null != (e = this.props.paymentRequestWallets) ? e : []).length > 0 && setTimeout(() => {
@@ -269,8 +269,8 @@ class k extends i.PureComponent {
     }
   }
 }
-let M = s.ZP.connectStores([m.Z], () => ({
+let k = s.ZP.connectStores([m.Z], () => ({
   ipCountryCode: m.Z.ipCountryCode,
   ipCountryCodeHasError: m.Z.ipCountryCodeHasError,
   localizedPromo: m.Z.localizedPricingPromo
-}))(k)
+}))(M)

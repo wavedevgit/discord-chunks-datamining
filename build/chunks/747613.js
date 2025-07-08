@@ -86,9 +86,9 @@ let P = 20,
   D = (0, g.hQ)(),
   L = d.Z.convert.fromCodePoint("1f44f"),
   x = (0, y.Mg)(f.Z.EMOJI_PICKER_CONSTANTS_EMOJI_CONTAINER_PADDING_VERTICAL),
-  k = (0, y.Mg)(f.Z.EMOJI_PICKER_CONSTANTS_DIVERSITY_EMOJI_SIZE);
+  M = (0, y.Mg)(f.Z.EMOJI_PICKER_CONSTANTS_DIVERSITY_EMOJI_SIZE);
 
-function M(e) {
+function k(e) {
   switch (d.Z.convert.toCodePoint(e)) {
     case "1f3fb":
       return v.intl.string(v.t.BVK5b2);
@@ -124,7 +124,7 @@ let j = e => {
       onClick: () => i(n),
       className: I.diversityEmojiItem,
       children: (0, r.jsx)(c.animated.div, {
-        "aria-label": M(n),
+        "aria-label": k(n),
         className: I.diversityEmojiItemImage,
         style: S({
           backgroundImage: 'url("'.concat(l, '")')
@@ -139,9 +139,9 @@ let j = e => {
       onClick: a,
       hasTabWrapper: s
     } = e, d = (0, m.Z)("diversity"), f = (0, _.q_F)({
-      height: (k + 2 * x) * (E.gw.length + 1),
+      height: (M + 2 * x) * (E.gw.length + 1),
       from: {
-        height: k
+        height: M
       },
       config: {
         duration: w

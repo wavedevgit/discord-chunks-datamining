@@ -3,36 +3,36 @@ n.d(t, {
   Z: () => i
 }), n(388685), n(539854);
 var r = n(73800),
-  s = n(768943),
-  l = n(429828);
+  l = n(768943),
+  s = n(429828);
 
 function a() {
-  return s.Z.getSavedMessages().map(e => e.saveData)
+  return l.Z.getSavedMessages().map(e => e.saveData)
 }
 
 function i() {
-  let [e, t] = r.useState(a), n = r.useRef(s.Z.getIsStale());
+  let [e, t] = r.useState(a), n = r.useRef(l.Z.getIsStale());
   return r.useEffect(() => {
-    let e = s.Z.getLastChanged();
+    let e = l.Z.getLastChanged();
 
     function r() {
-      let r = s.Z.getLastChanged();
+      let r = l.Z.getLastChanged();
       if (e !== r) {
-        if (e = r, n.current && !s.Z.getIsStale()) {
+        if (e = r, n.current && !l.Z.getIsStale()) {
           n.current = !1, t(a());
           return
         }
         t(e => {
           let t = [...e],
-            n = new Map(s.Z.getSavedMessages().map(e => [e.saveData.messageId, e]));
+            n = new Map(l.Z.getSavedMessages().map(e => [e.saveData.messageId, e]));
           for (let r of e) n.has(r.messageId) ? n.delete(r.messageId) : t.splice(t.indexOf(r), 1);
           for (let e of n.values()) t.push(e.saveData);
           return t
         })
       }
     }
-    return s.Z.addChangeListener(r), () => {
-      s.Z.removeChangeListener(r)
+    return l.Z.addChangeListener(r), () => {
+      l.Z.removeChangeListener(r)
     }
-  }, []), (0, l.Z)(), e
+  }, []), (0, s.Z)(), e
 }

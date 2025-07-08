@@ -70,8 +70,8 @@ function L(e, t) {
   }), e
 }
 let x = 10,
-  k = 15,
-  M = "leaderboard.png";
+  M = 15,
+  k = "leaderboard.png";
 
 function j(e) {
   let {
@@ -110,7 +110,7 @@ function j(e) {
   } = (0, l.Z)(g), I = i.useMemo(() => {
     let e = (0, p.oo)(v),
       t = L(w({}, (0, p.pz)(e.r, e.g, e.b)), {
-        l: k
+        l: M
       });
     return (0, p.ZJ)(t.h, t.s, t.l)
   }, [v]), S = i.useMemo(() => null == m.find(e => e.userId === f) && m.length <= x, [m, f]);
@@ -204,7 +204,7 @@ function G(e) {
     return (null == e ? void 0 : e.application_id) != null && A.T.includes(e.application_id)
   }), {
     generatingImage: x,
-    generateImage: k
+    generateImage: M
   } = (0, s.d)({
     renderComponent: e => (0, r.jsx)(T.Z, L(w({}, e), {
       userId: t,
@@ -216,8 +216,8 @@ function G(e) {
     }
   }), j = async () => {
     try {
-      let e = await k();
-      await g.ZP.copyImageBlob(e, M), P("copied"), null == E || E(N.xP.COPIED_LEADERBOARD_ROW)
+      let e = await M();
+      await g.ZP.copyImageBlob(e, k), P("copied"), null == E || E(N.xP.COPIED_LEADERBOARD_ROW)
     } catch (e) {
       P("error")
     }

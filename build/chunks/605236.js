@@ -163,7 +163,7 @@ function C(e, t, n) {
 
 function R(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-  ((0, _.cI)(e) || t.forceTrack) && k(e, t), (0, d.Vr)(e)
+  ((0, _.cI)(e) || t.forceTrack) && M(e, t), (0, d.Vr)(e)
 }
 
 function P(e) {
@@ -191,7 +191,7 @@ async function x(e) {
   R(e, t), await v(e), P(e, t)
 }
 
-function k(e, t) {
+function M(e, t) {
   var n;
   let [i] = (0, _.Aq)(), a = f.Z.getRenderedAtTimestamp(e), o = new Date, l = null == a ? null : o.getTime() - a;
   s.default.track(E.rMx.DISMISSIBLE_CONTENT_DISMISSED, {

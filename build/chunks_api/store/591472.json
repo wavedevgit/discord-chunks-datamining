@@ -1,0 +1,1 @@
+{"id":"591472","type":"store","data":{"name":"FramesStore","functions":[{"name":"getConnectedFrame","args":[]},{"name":"getFrameLayoutMode","args":[]},{"name":"isFrameActive","args":[]}],"events":["FRAME_LAUNCH","FRAME_STOP","FRAME_UPDATE_LAYOUT_MODE"]},"fromModule":{"id":"web.js"}}

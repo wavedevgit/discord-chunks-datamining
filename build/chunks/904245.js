@@ -35,8 +35,8 @@ var r = n(278074),
   D = n(366980),
   L = n(467512),
   x = n(779832),
-  k = n(786761),
-  M = n(459618),
+  M = n(786761),
+  k = n(459618),
   j = n(541288),
   U = n(3148),
   G = n(48854),
@@ -244,7 +244,7 @@ function ex(e) {
   }
 }
 
-function ek(e, t, n, r, i) {
+function eM(e, t, n, r, i) {
   (0, eh.Q_)(e).forEach(e => {
     let a = ea.Z.getChannel(t);
     null != a && u.ZP.trackWithMetadata(eO.rMx.GIFT_CODE_SENT, {
@@ -259,7 +259,7 @@ function ek(e, t, n, r, i) {
   })
 }
 
-function eM(e, t) {
+function ek(e, t) {
   let n = es.Z.getMessage(e, t);
   if (null == n || n.type !== eO.uaV.REPLY) return;
   let r = J.Z.getMessageByReference(n.messageReference);
@@ -507,7 +507,7 @@ let ej = {
         oldFormErrors: !0,
         rejectWithError: !1
       }).then(e => {
-        if (e.body.length > 0) return (0, k.e5)(e.body[0])
+        if (e.body.length > 0) return (0, M.e5)(e.body[0])
       })
     },
     fetchMessages(e) {
@@ -704,7 +704,7 @@ let ej = {
       });
       let s = () => eU._sendMessage(e, t, i),
         l = x.ZP.backgroundify(s, void 0);
-      return (M.Z.recordMessageSendAttempt(e, o), es.Z.isReady(e)) ? l() : r && e !== g.V ? (eP.info("Waiting for channel ".concat(e, " to be ready before sending.")), new Promise((t, n) => {
+      return (k.Z.recordMessageSendAttempt(e, o), es.Z.isReady(e)) ? l() : r && e !== g.V ? (eP.info("Waiting for channel ".concat(e, " to be ready before sending.")), new Promise((t, n) => {
         es.Z.whenReady(e, () => {
           eP.info("Channel ".concat(e, " is ready for sending now.")), l().then(t, n)
         })
@@ -874,8 +874,8 @@ let ej = {
         [w, D] = (0, ee.Z)(u);
       w && (u = D, P = (0, ep.pj)(P, eO.iLy.SUPPRESS_NOTIFICATIONS));
       let x = !1,
-        k = (null == (r = n.messageReference) ? void 0 : r.type) === eO.Uvt.FORWARD;
-      if ("" === u && null == p && null == g && null == v && null == I && !k && (null == T || 0 === T.length))
+        M = (null == (r = n.messageReference) ? void 0 : r.type) === eO.Uvt.FORWARD;
+      if ("" === u && null == p && null == g && null == v && null == I && !M && (null == T || 0 === T.length))
         if (null == S || !(S.length > 0)) return Promise.resolve();
         else x = !0;
       let Y = null != b ? eO.uaV.REPLY : eO.uaV.DEFAULT,
@@ -988,7 +988,7 @@ let ej = {
                 joinRequestUserId: n
               })
             }
-            M.Z.recordMessageSendApiResponse(Q), s.Z.dispatch({
+            k.Z.recordMessageSendApiResponse(Q), s.Z.dispatch({
               type: "SLOWMODE_RESET_COOLDOWN",
               slowmodeType: ed.S.SendMessage,
               channelId: e
@@ -1010,7 +1010,7 @@ let ej = {
               messageId: l.body.id,
               location: null != h ? h : "chat_input",
               suggested: m
-            }), ek(u, e, l.body.id, null != h ? h : "chat_input", !!n.isGiftLinkSentOnBehalfOfUser), null != o && s.Z.dispatch({
+            }), eM(u, e, l.body.id, null != h ? h : "chat_input", !!n.isGiftLinkSentOnBehalfOfUser), null != o && s.Z.dispatch({
               type: "UPLOAD_COMPLETE",
               channelId: e,
               file: o._file,
@@ -1045,7 +1045,7 @@ let ej = {
                 }
               }) : l.body.code === eO.evJ.POGGERMODE_TEMPORARILY_DISABLED ? s.Z.dispatch({
                 type: "POGGERMODE_TEMPORARILY_DISABLED"
-              }) : l.body.code === eO.evJ.EXPLICIT_CONTENT ? t = eI.xi.EXPLICIT_CONTENT : null != v || k || null != I || eU.sendClydeError(e, l.body.code);
+              }) : l.body.code === eO.evJ.EXPLICIT_CONTENT ? t = eI.xi.EXPLICIT_CONTENT : null != v || M || null != I || eU.sendClydeError(e, l.body.code);
             i ? eU.deleteMessage(e, J, !0) : (null != o && s.Z.dispatch({
               type: "UPLOAD_FAIL",
               channelId: e,
@@ -1102,7 +1102,7 @@ let ej = {
         content: r
       } = n;
       await et.Z.unarchiveThreadIfNecessary(e);
-      let i = eM(e, t),
+      let i = ek(e, t),
         a = {
           channelId: e,
           messageId: t,

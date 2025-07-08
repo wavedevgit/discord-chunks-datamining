@@ -98,9 +98,9 @@ function O(e) {
     onFocus: R,
     onUserClick: P,
     onUserPopoutRequestClose: w
-  } = e, [D, L] = i.useState(!1), x = b(O), k = i.useRef(null);
+  } = e, [D, L] = i.useState(!1), x = b(O), M = i.useRef(null);
 
-  function M() {
+  function k() {
     return (0, r.jsx)(c.VqE, {
       className: p.popoutWrapper,
       children: (0, r.jsx)(c.Ttm, {
@@ -161,13 +161,13 @@ function O(e) {
     if (i) {
       let e = null != v ? v : y(O);
       d[d.length - 1] = (0, r.jsx)(c.yRy, {
-        targetElementRef: k,
-        renderPopout: M,
+        targetElementRef: M,
+        renderPopout: k,
         shouldShow: D,
         position: "bottom",
         onRequestClose: () => L(!1),
         children: () => (0, r.jsx)(c.zxk, {
-          buttonRef: k,
+          buttonRef: M,
           className: o()(p.overflow, x, T),
           onFocus: R,
           onClick: e => {

@@ -45,8 +45,8 @@ function P(e) {
     upsellViewedTrackingData: D,
     onClose: L,
     onDisplay: x,
-    onLearnMore: k,
-    isEmojiPickerOverlay: M = !1
+    onLearnMore: M,
+    isEmojiPickerOverlay: k = !1
   } = e, j = (0, s.e7)([g.Z], () => g.Z.affinities), U = (0, s.e7)([g.Z], () => g.Z.hasFetched);
   i.useEffect(() => {
     !U && P && u.MH()
@@ -59,7 +59,7 @@ function P(e) {
       h.default.track(T.rMx.PREMIUM_PROMOTION_OPENED, {
         location_section: w,
         location_object: T.qAy.NAVIGATION_LINK
-      }), null == k || k(), (0, _.Z)(), L(), (0, d.xf)(), (0, p.uL)(T.Z5c.APPLICATION_STORE)
+      }), null == M || M(), (0, _.Z)(), L(), (0, d.xf)(), (0, p.uL)(T.Z5c.APPLICATION_STORE)
     },
     F = (0, b.N)(),
     Z = i.useCallback(() => {
@@ -69,7 +69,7 @@ function P(e) {
     H = (0, l.ap)((0, f.ZP)());
   return (0, E.Z)({
     location: "PremiumUpsellPickerOverlay"
-  }) && M ? (0, r.jsxs)(r.Fragment, {
+  }) && k ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.ZMr, {
       onClick: L,
       isVisible: !0

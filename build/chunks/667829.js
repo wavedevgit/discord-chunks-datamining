@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => M
+  Z: () => k
 }), n(388685), n(539854), n(35282);
 var r = n(255367),
   i = n(73800),
@@ -71,10 +71,10 @@ function x(e, t) {
   }), e
 }
 new E.Z("ChannelEditor.tsx");
-let k = function() {
+let M = function() {
   for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n]
 };
-class M extends i.Component {
+class k extends i.Component {
   componentDidMount() {
     this.props.focused && requestAnimationFrame(() => this.focus()), document.addEventListener("selectionchange", this.handleSelectionChange), window.addEventListener("beforeunload", this.handleBeforeUnload)
   }
@@ -207,8 +207,8 @@ class M extends i.Component {
       id: R,
       required: w,
       maxCharacterCount: L,
-      allowNewLines: k,
-      "aria-describedby": M,
+      allowNewLines: M,
+      "aria-describedby": k,
       "aria-labelledby": j,
       accessibilityLabel: U
     } = this.props, {
@@ -235,7 +235,7 @@ class M extends i.Component {
       moveSelection: this.handleMoveSelection,
       maybeShowAutocomplete: this.maybeShowAutocomplete,
       hideAutocomplete: this.hideAutocomplete,
-      allowNewLines: k,
+      allowNewLines: M,
       onChange: d,
       onResize: p,
       onKeyDown: _,
@@ -255,7 +255,7 @@ class M extends i.Component {
       "aria-expanded": null !== B.id || void 0,
       "aria-activedescendant": null != (s = B.activeDescendant) ? s : void 0,
       "aria-invalid": l.length > L,
-      "aria-describedby": M,
+      "aria-describedby": k,
       "aria-labelledby": j,
       "aria-autocomplete": "list"
     }, F = E ? (0, r.jsx)(A.Z, x(D({
@@ -386,7 +386,7 @@ class M extends i.Component {
         {
           files: c
         } = j(e.clipboardData, o.uploadLongMessages ? l : null);
-      return k("onPaste", [...e.clipboardData.items].map(e => {
+      return M("onPaste", [...e.clipboardData.items].map(e => {
         if ("file" !== e.kind) return {
           kind: e.kind,
           type: e.type

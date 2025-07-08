@@ -36,8 +36,8 @@ var r = n(255367),
   D = n(968435),
   L = n(114732),
   x = n(46140),
-  k = n(981631),
-  M = n(675654),
+  M = n(981631),
+  k = n(675654),
   j = n(474936),
   U = n(388032),
   G = n(335626);
@@ -88,7 +88,7 @@ function H() {
 }
 
 function Y() {
-  f.Z.open(k.oAB.PREMIUM, null, {})
+  f.Z.open(M.oAB.PREMIUM, null, {})
 }
 
 function W(e) {
@@ -126,7 +126,7 @@ function K(e) {
     w = !0 === m && null === p && (null == f ? void 0 : f.skuId) !== "",
     D = null == p && !0 !== m,
     x = null == I || D || w || "loading" === N,
-    k = !v && !S && "claimed" === N;
+    M = !v && !S && "claimed" === N;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.O_, {
       ref: y,
@@ -158,11 +158,11 @@ function K(e) {
           onConfirm: P
         })
       })
-    }), k && (0, r.jsx)(E.Z, {
+    }), M && (0, r.jsx)(E.Z, {
       confettiTarget: g.current,
       confettiCanvas: b,
-      sprites: M.CA,
-      colors: M.Br
+      sprites: k.CA,
+      colors: k.Br
     })]
   })
 }
@@ -254,7 +254,7 @@ function q(e) {
             }
           }),
           buttonAnalyticsObject: {
-            section: k.jXE.PERMADECOS_MARKETING_UPSELL
+            section: M.jXE.PERMADECOS_MARKETING_UPSELL
           }
         })]
       })

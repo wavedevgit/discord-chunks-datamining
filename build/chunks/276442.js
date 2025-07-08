@@ -80,8 +80,8 @@ function y(e) {
     previousStepRef: L,
     setPurchaseState: x
   } = (0, d.JL)(), {
-    isGift: k
-  } = (0, u.wD)(), M = b(g({}, (0, s.fL)()), {
+    isGift: M
+  } = (0, u.wD)(), k = b(g({}, (0, s.fL)()), {
     paymentSources: T,
     paymentSourceId: S,
     setPaymentSourceId: A,
@@ -90,8 +90,8 @@ function y(e) {
     purchaseErrorBlockRef: R,
     paymentAuthenticationState: P,
     selectedSkuId: w,
-    isGift: k
-  }), j = (0, o.N)(m), U = !k && null != j && null != w && h.nG[j.trial_id].skus.includes(w), G = () => {
+    isGift: M
+  }), j = (0, o.N)(m), U = !M && null != j && null != w && h.nG[j.trial_id].skus.includes(w), G = () => {
     c(Object.values(T).length < 1 && null == n ? f.h8.PLAN_SELECT : f.h8.REVIEW, {
       trackedFromStep: f.h8.PAYMENT_TYPE
     })
@@ -100,7 +100,7 @@ function y(e) {
   let V = (0, a.Z)(() => Date.now(), [I]),
     F = null != y && null == L.current ? y : f.h8.PAYMENT_TYPE;
   return (0, s.vP)({
-    paymentModalArgs: M,
+    paymentModalArgs: k,
     initialStep: F,
     prependSteps: [f.h8.PROMOTION_INFO],
     appendSteps: [f.h8.REVIEW, f.h8.CONFIRM],
@@ -128,7 +128,7 @@ function y(e) {
       }))
     },
     isEligibleForTrial: U,
-    allowDesktopRedirectPurchase: O(w, k, D)
+    allowDesktopRedirectPurchase: O(w, M, D)
   })
 }
 

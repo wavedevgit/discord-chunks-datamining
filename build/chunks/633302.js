@@ -154,11 +154,11 @@ function x(e) {
   return t
 }
 
-function k(e) {
+function M(e) {
   return m.test(e)
 }
 
-function M(e) {
+function k(e) {
   return e.replace(_, (e, t) => H(t, e))
 }
 
@@ -180,7 +180,7 @@ let U = String.fromCodePoint(917631),
 
 function V(e, t) {
   var n;
-  if (!0 !== t && !k(e)) return [{
+  if (!0 !== t && !M(e)) return [{
     type: "text",
     text: e
   }];
@@ -217,7 +217,7 @@ function F(e) {
 }
 
 function Z(e) {
-  if (!k(e)) return null;
+  if (!M(e)) return null;
   let t = V(e, !0).map(e => "text" === e.type ? e.text : e.emojiName).join("");
   return t === e ? null : t
 }
@@ -245,8 +245,8 @@ let K = {
   getCategories: w,
   getByName: D,
   getByCategory: x,
-  contentHasUnicodeOrEmoji: k,
-  translateInlineEmojiToSurrogates: M,
+  contentHasUnicodeOrEmoji: M,
+  translateInlineEmojiToSurrogates: k,
   maybeTranslateSurrogatesToInlineEmoji: Z,
   findInlineEmojisFromSurrogates: V,
   translateSurrogatesToInlineEmoji: F,

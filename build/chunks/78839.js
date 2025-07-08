@@ -69,7 +69,7 @@ function A(e) {
   t.forEach(e => {
     if (e.user_id !== u) return;
     let t = s.Q.createFromServer(e);
-    r[t.id] = t, k(t) && (i[t.id] = t, t.type === c.NYc.GUILD && t.status !== c.O0b.ENDED && a.push(t), t.type === c.NYc.APPLICATION && t.status !== c.O0b.ENDED && o.push(t))
+    r[t.id] = t, M(t) && (i[t.id] = t, t.type === c.NYc.GUILD && t.status !== c.O0b.ENDED && a.push(t), t.type === c.NYc.APPLICATION && t.status !== c.O0b.ENDED && o.push(t))
   }), h = r, m = i, E = a, b = o, S = n
 }
 
@@ -81,7 +81,7 @@ function N(e) {
   if (-1 === r) return [n, ...t];
   {
     let e = [...t];
-    return k(n) && n.status !== c.O0b.ENDED ? e[r] = n : e.splice(r, 1), e
+    return M(n) && n.status !== c.O0b.ENDED ? e[r] = n : e.splice(r, 1), e
   }
 }
 
@@ -93,7 +93,7 @@ function C(e) {
   let n = s.Q.createFromServer(t);
   h = p(f({}, h), {
     [n.id]: n
-  }), k(n) && (m = p(f({}, m), {
+  }), M(n) && (m = p(f({}, m), {
     [n.id]: n
   })), null != E && n.type === c.NYc.GUILD && (E = N({
     activeSubscriptions: E,
@@ -150,11 +150,11 @@ function x() {
   h = null, m = null, g = null, E = null, b = null, y = !1, O = null, v = !1, I = !1, S = null
 }
 
-function k(e) {
+function M(e) {
   return e.status !== c.O0b.UNPAID
 }
 
-function M(e, t) {
+function k(e, t) {
   let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
     r = n ? m : h;
   if (null == r) return null;
@@ -177,14 +177,14 @@ class j extends(r = i.ZP.Store) {
   }
   getPremiumSubscription() {
     let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
-    return M(c.NYc.PREMIUM, e => !(0, o.Q0)(e.planId), e)
+    return k(c.NYc.PREMIUM, e => !(0, o.Q0)(e.planId), e)
   }
   getPremiumTypeSubscription() {
     let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
-    return M(c.NYc.PREMIUM, void 0, e)
+    return k(c.NYc.PREMIUM, void 0, e)
   }
   inReverseTrial() {
-    let e = M(c.NYc.PREMIUM, void 0, !0);
+    let e = k(c.NYc.PREMIUM, void 0, !0);
     return null != e && null != e.trialId && !!u.h8.includes(e.trialId) && null == e.paymentSourceId
   }
   getSubscriptions() {

@@ -12,12 +12,12 @@ n.d(t, {
   cT: () => Y,
   eT: () => U,
   gU: () => K,
-  gl: () => k,
+  gl: () => M,
   is: () => C,
   it: () => R,
   lL: () => W,
   m0: () => w,
-  nE: () => M,
+  nE: () => k,
   pf: () => x,
   qm: () => Z,
   w: () => H,
@@ -305,7 +305,7 @@ async function x(e) {
     }
   }
 }
-async function k(e, t) {
+async function M(e, t) {
   let n = p.Z.isDismissingContent(e),
     r = (0, m.GN)(t);
   if (!n && r) {
@@ -334,7 +334,7 @@ async function k(e, t) {
   }
 }
 
-function M(e) {
+function k(e) {
   a.Z.dispatch({
     type: "QUESTS_DISMISS_PROGRESS_TRACKING_FAILURE_NOTICE",
     streamKey: e

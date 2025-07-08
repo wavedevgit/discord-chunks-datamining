@@ -6,7 +6,7 @@ n.d(t, {
   CA: () => D,
   F8: () => $,
   JM: () => w,
-  NZ: () => k,
+  NZ: () => M,
   ZP: () => et,
   aN: () => x,
   ay: () => Q,
@@ -16,7 +16,7 @@ n.d(t, {
   pK: () => b,
   pU: () => en,
   rI: () => K,
-  tp: () => M,
+  tp: () => k,
   xR: () => X
 }), n(35282), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685);
 var i = n(654861),
@@ -208,7 +208,7 @@ function x(e) {
   return "webp" === c && i && X(r) && (u.animated = !0), t += "?".concat(o.stringify(u))
 }
 
-function k(e) {
+function M(e) {
   let {
     avatarDecoration: t,
     size: n,
@@ -227,7 +227,7 @@ function k(e) {
   return u.searchParams.set("size", "".concat((0, l.oO)(n * (0, l.x_)()))), u.searchParams.set("passthrough", "".concat(r && (0, s.ae)(i))), u.toString()
 }
 
-function M(e) {
+function k(e) {
   let t, {
     id: n,
     guildId: r,
@@ -473,9 +473,9 @@ let et = {
   getGuildMemberAvatarURL: D,
   getGuildMemberAvatarURLSimple: w,
   getGuildMemberAvatarSource: L,
-  getGuildMemberBannerURL: M,
+  getGuildMemberBannerURL: k,
   getUserBannerURL: x,
-  getAvatarDecorationURL: k,
+  getAvatarDecorationURL: M,
   hasAnimatedGuildIcon: function e(e) {
     return X(null == e ? void 0 : e.icon)
   },

@@ -5,10 +5,10 @@ n.d(t, {
   Lk: () => F,
   Mx: () => B,
   Xg: () => Z,
-  ZP: () => k,
+  ZP: () => M,
   _0: () => G,
   _Z: () => U,
-  c7: () => M,
+  c7: () => k,
   j3: () => H,
   qN: () => V
 }), n(358797), n(35282);
@@ -96,7 +96,7 @@ function x(e, t) {
   return i
 }
 
-function k(e) {
+function M(e) {
   let {
     message: t,
     footer: n,
@@ -123,8 +123,8 @@ function k(e) {
   })
 }
 
-function M(e) {
-  return (0, r.jsx)(k, D(P({}, e), {
+function k(e) {
+  return (0, r.jsx)(M, D(P({}, e), {
     headerClassName: C.headerSuccess
   }))
 }
@@ -153,7 +153,7 @@ function j(e) {
     });
   return (0, r.jsx)("div", {
     className: C.authorizedSuccessWrapper,
-    children: (0, r.jsx)(M, P({
+    children: (0, r.jsx)(k, P({
       message: o,
       footer: l
     }, a))
@@ -285,7 +285,7 @@ function V(e) {
 function F(e) {
   return (0, r.jsx)("div", {
     className: C.errorWrapper,
-    children: (0, r.jsx)(k, D(P({}, e), {
+    children: (0, r.jsx)(M, D(P({}, e), {
       headerClassName: C.headerFailure
     }))
   })
