@@ -11,11 +11,12 @@ var r = n(255367),
   o = n(388032);
 let c = e => {
     let {
-      error: t
+      error: t,
+      color: n = "text-danger"
     } = e;
     return (0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
-      color: "text-danger",
+      color: n,
       children: u(t)
     })
   },

@@ -74,10 +74,10 @@ function v(e) {
     },
     oldFormErrors: !0,
     rejectWithError: !1
-  }).then(() => s.Z.dispatch({
+  }).then(e => (s.Z.dispatch({
     type: "EMOJI_UPLOAD_STOP",
     guildId: t
-  }), e => (s.Z.dispatch({
+  }), e.body), e => (s.Z.dispatch({
     type: "EMOJI_UPLOAD_STOP",
     guildId: t
   }), Promise.reject(e)))

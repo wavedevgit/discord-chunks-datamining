@@ -1,7 +1,11 @@
 /**
   Module ID: 56535
-  Original File Name: 77d823dfa2c91ec7
+  Original File Name: e1b3d55b72f67212
 **/
+.toast_cbb248 {
+    gap: 8px
+}
+
 .emojiErrorItem__67954 {
     align-items: center;
     background-color: var(--background-base-lower);
@@ -598,6 +602,12 @@
     height: 24px
 }
 
+.guildSelectorContainer__4d307 {
+    display: flex;
+    flex-direction: column;
+    gap: 4px
+}
+
 :root {
     --custom-zindex-emoji-studio-top: 3;
     --custom-zindex-emoji-studio-middle: 2;
@@ -641,4 +651,4 @@
     width: 32px
 }
 
-/*# sourceMappingURL=77d823dfa2c91ec7.css.map*/
+/*# sourceMappingURL=e1b3d55b72f67212.css.map*/
