@@ -57,7 +57,7 @@ function Z(e) {
   return e
 }
 
-function L(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -69,7 +69,7 @@ function L(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let D = {
+let L = {
   offset: {
     left: 4,
     right: -12
@@ -179,7 +179,7 @@ function G(e) {
           }
           return s
         }(e, ["ref"]);
-        return (0, r.jsx)(f.h21, L(Z({
+        return (0, r.jsx)(f.h21, D(Z({
           ref: e => {
             var t;
             l.current = e, s.current = null != (t = null == e ? void 0 : e.getScrollerNode()) ? t : null
@@ -229,7 +229,7 @@ function z(e) {
       className: F.message,
       compact: _.jU.getSetting(),
       animateAvatar: !1,
-      focusProps: D,
+      focusProps: L,
       trackAnnouncementViews: !0
     }, t.message.id), (0, r.jsx)(x.ZP, {
       className: F.hoverBar,
@@ -296,7 +296,7 @@ function W(e) {
         let {
           MessageReminderEditMenu: e
         } = await n.e("69818").then(n.bind(n, 898150));
-        return n => (0, r.jsx)(e, L(Z({}, n), {
+        return n => (0, r.jsx)(e, D(Z({}, n), {
           label: M.intl.string(M.t.roMu1N),
           message: t.message
         }))
@@ -318,7 +318,7 @@ function W(e) {
         let {
           MessageReminderEditMenu: e
         } = await n.e("69818").then(n.bind(n, 898150));
-        return n => (0, r.jsx)(e, L(Z({}, n), {
+        return n => (0, r.jsx)(e, D(Z({}, n), {
           label: M.intl.string(M.t.mJ3P0N),
           message: t.message
         }))
