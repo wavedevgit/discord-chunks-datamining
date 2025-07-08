@@ -15,6 +15,8 @@ function o(e, t, n) {
   }) : e[t] = n, e
 }
 let s = {
+    highlight_mana_buttons: "Highlight mana buttons",
+    highlight_void_buttons: "Highlight void buttons",
     use_topic_dividers_in_chat: "Use summary topics as divider content in chat instead of string formatted dates.",
     highlight_redesigned_icons: "Highlight redesigned icons",
     alt_clips_1: "Use alt clip icon 1",
