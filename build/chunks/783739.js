@@ -71,7 +71,6 @@ function N(e) {
     }), (0, i.jsx)(o.Z, {
       cardClassName: T.boosterRecognitionCard
     }), (0, i.jsx)(c.Z, {
-      isGuildPowerupsExperimentEnabled: !0,
       className: T.faq
     })]
   })

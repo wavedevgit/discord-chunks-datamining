@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => O
 }), n(388685), n(583741), n(953529);
 var r = n(255367),
   i = n(73800),
@@ -12,13 +12,12 @@ var r = n(255367),
   c = n(442837),
   u = n(481060),
   d = n(905128),
-  f = n(50101),
-  _ = n(535396),
-  p = n(93841),
-  h = n(388032),
-  m = n(698323);
+  f = n(535396),
+  _ = n(93841),
+  p = n(388032),
+  h = n(698323);
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -27,20 +26,20 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 
-function E(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      g(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
 }
 
-function b(e, t) {
+function E(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -51,33 +50,33 @@ function b(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+function b(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function O(e) {
+function y(e) {
   let {
     powerup: t
   } = e;
   return (0, r.jsx)(l.xv, {
     tag: "span",
     variant: "text-md/semibold",
-    className: m.highlight,
+    className: h.highlight,
     children: t.title
   })
 }
 
-function v(e) {
+function O(e) {
   let {
     guild: t,
     themeResponsive: n = !0,
     onButtonClick: a
-  } = e, g = (0, f.Ek)(t.id, "GuildBoostingMarketing"), b = (0, c.e7)([d.Z], () => {
+  } = e, m = (0, c.e7)([d.Z], () => {
     var e, n;
-    return null == (n = d.Z.getStateForGuild(t.id)) || null == (e = n.powerupCatalog) ? void 0 : e[_.Us.PERK]
-  }), [v, I] = i.useState(!1), [T, S] = (0, u.q_F)(() => ({
+    return null == (n = d.Z.getStateForGuild(t.id)) || null == (e = n.powerupCatalog) ? void 0 : e[f.Us.PERK]
+  }), [E, O] = i.useState(!1), [v, I] = (0, u.q_F)(() => ({
     scale: .8,
     config: {
       tension: 500,
@@ -86,60 +85,60 @@ function v(e) {
   }));
   i.useEffect(() => {
     let e = setTimeout(() => {
-      S({
+      I({
         scale: 1
-      }), I(!0)
+      }), O(!0)
     }, 300);
     return () => clearTimeout(e)
-  }, [S]);
-  let A = i.useMemo(() => {
+  }, [I]);
+  let T = i.useMemo(() => {
     let e;
-    if (null == b || 0 === b.length) return "";
-    if (1 === b.length) e = (0, r.jsx)(O, {
-      powerup: b[0]
+    if (null == m || 0 === m.length) return "";
+    if (1 === m.length) e = (0, r.jsx)(y, {
+      powerup: m[0]
     });
-    else if (2 === b.length) e = h.intl.format(p.default.MNO3sL, {
-      perk1: (0, r.jsx)(O, {
-        powerup: b[0]
+    else if (2 === m.length) e = p.intl.format(_.default.MNO3sL, {
+      perk1: (0, r.jsx)(y, {
+        powerup: m[0]
       }),
-      perk2: (0, r.jsx)(O, {
-        powerup: b[1]
+      perk2: (0, r.jsx)(y, {
+        powerup: m[1]
       })
     });
     else {
-      let t = b.reverse();
-      e = h.intl.format(p.default.GmN3VV, {
-        perk1: (0, r.jsx)(O, {
+      let t = m.reverse();
+      e = p.intl.format(_.default.GmN3VV, {
+        perk1: (0, r.jsx)(y, {
           powerup: t[0]
         }),
-        perk2: (0, r.jsx)(O, {
+        perk2: (0, r.jsx)(y, {
           powerup: t[1]
         })
       })
     }
-    return h.intl.format(p.default["/6GgQk"], {
+    return p.intl.format(_.default["/6GgQk"], {
       perks: e
     })
-  }, [b]);
-  return g && null != b && 0 !== b.length ? (0, r.jsxs)(s.animated.div, {
-    className: o()(m.container, {
-      [m.themeResponsiveContainer]: n
+  }, [m]);
+  return null == m || 0 === m.length ? null : (0, r.jsxs)(s.animated.div, {
+    className: o()(h.container, {
+      [h.themeResponsiveContainer]: n
     }),
-    style: y(E({}, T), {
-      opacity: +!!v
+    style: b(g({}, v), {
+      opacity: +!!E
     }),
     children: [(0, r.jsx)(l.xv, {
       tag: "span",
       variant: "text-md/semibold",
-      className: o()(m.description, {
-        [m.text]: !n,
-        [m.responsiveText]: n
+      className: o()(h.description, {
+        [h.text]: !n,
+        [h.responsiveText]: n
       }),
-      children: A
+      children: T
     }), (0, r.jsx)(u.zxk, {
-      className: m.button,
+      className: h.button,
       onClick: a,
-      children: h.intl.string(p.default.E5V5KC)
+      children: p.intl.string(_.default.E5V5KC)
     })]
-  }) : null
+  })
 }

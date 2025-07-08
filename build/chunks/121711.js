@@ -128,8 +128,8 @@ let K = function() {
     location: V.intl.string(V.t.JALI2N)
   });
   let q = z ? V.intl.format(V.t.BCBIlp, {}) : V.intl.format(V.t.lmMBf3, {}),
-    Q = z ? V.intl.format(V.t.U9FY0N, {}) : V.intl.string(V.t.oWCrBg),
-    X = i.useRef(null);
+    X = z ? V.intl.format(V.t.U9FY0N, {}) : V.intl.string(V.t.oWCrBg),
+    Q = i.useRef(null);
   return (0, r.jsx)(D.k.Provider, {
     value: {
       onAssetLoadComplete: P
@@ -137,10 +137,10 @@ let K = function() {
     children: (0, r.jsx)("div", {
       className: H.container,
       children: z ? (0, r.jsx)(k.t.Provider, {
-        value: X,
+        value: Q,
         children: (0, r.jsxs)(v.Z, {
           onScroll: l,
-          ref: X,
+          ref: Q,
           children: [(0, r.jsx)(I.a, {
             selectedTabId: e,
             handleTransition: t,
@@ -165,7 +165,7 @@ let K = function() {
             })
           }), (0, r.jsxs)(_.Z, {
             title: q,
-            description: Q,
+            description: X,
             betaTag: z && W,
             button: z ? (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsx)(c.zxk, {
@@ -215,13 +215,13 @@ let K = function() {
             icon: c.qDn
           })]
         }), (0, r.jsx)(k.t.Provider, {
-          value: X,
+          value: Q,
           children: (0, r.jsxs)(v.Z, {
             onScroll: l,
-            ref: X,
+            ref: Q,
             children: [(0, r.jsxs)(_.Z, {
               title: q,
-              description: Q,
+              description: X,
               button: (0, r.jsx)(b.u, {
                 text: V.intl.string(V.t.hvVgAQ),
                 onClick: K

@@ -49,8 +49,8 @@ var r = n(255367),
   Y = n(821020),
   K = n(147341),
   q = n(82409),
-  Q = n(664608),
-  X = n(270759),
+  X = n(664608),
+  Q = n(270759),
   J = n(918701),
   $ = n(982168),
   ee = n(893908),
@@ -285,24 +285,24 @@ let ej = (0, u.Un)({
     }
   },
   eY = e => (0, r.jsx)(y.Z, eP({}, e)),
-  eK = () => (0, r.jsx)(X.Z, {}),
+  eK = () => (0, r.jsx)(Q.Z, {}),
   eq = () => (0, r.jsx)(F.Z, {}),
-  eQ = () => (0, r.jsx)(Q.Z, {}),
-  eX = e => {
+  eX = () => (0, r.jsx)(X.Z, {}),
+  eQ = e => {
     let {
       match: t
     } = e;
     switch (t.params.feature) {
       case "friends":
-        return (0, r.jsx)(X.Z, {
+        return (0, r.jsx)(Q.Z, {
           initialSection: eI.pJs.ONLINE
         });
       case "addFriends":
-        return (0, r.jsx)(X.Z, {
+        return (0, r.jsx)(Q.Z, {
           initialSection: eI.pJs.ADD_FRIEND
         });
       case "pendingFriends":
-        return (0, r.jsx)(X.Z, {
+        return (0, r.jsx)(Q.Z, {
           initialSection: eI.pJs.PENDING
         });
       case "sessionManagement":
@@ -369,7 +369,7 @@ let ej = (0, u.Un)({
     return (0, r.jsx)(g.Z, {
       deepLinkType: eN.jE.FEATURES,
       path: t,
-      children: eX(e)
+      children: eQ(e)
     })
   };
 
@@ -615,7 +615,7 @@ function e1() {
                   disableTrack: !0
                 }), (0, r.jsx)(I.Z, {
                   path: eI.Z5c.FAMILY_CENTER,
-                  render: eQ,
+                  render: eX,
                   disableTrack: !0
                 }), (0, r.jsx)(I.Z, {
                   path: eI.Z5c.ME,

@@ -14,7 +14,7 @@ let d = e => {
   let {
     guild: t
   } = e, n = i.useCallback(() => {
-    (0, l.K7)(t.id)
+    (0, l.K)(t.id)
   }, [t.id]);
   return (0, r.jsx)(a.Z, {
     guild: t,
