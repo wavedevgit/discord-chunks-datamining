@@ -21,7 +21,8 @@ var r = n(255367),
 function m() {
   let {
     onToggleOrbEligible: e,
-    orbEligible: t
+    orbEligible: t,
+    reset: n
   } = (0, p.S)();
   return (0, r.jsxs)("div", {
     className: b.filterBar,
@@ -37,7 +38,12 @@ function m() {
         text: h.intl.string(h.t.AHHHgI),
         value: t
       })]
-    }), (0, r.jsx)(O, {}), (0, r.jsx)(S, {})]
+    }), (0, r.jsx)(O, {}), (0, r.jsx)(S, {}), (0, r.jsx)(u.zxk, {
+      color: u.Ttl.PRIMARY,
+      className: b.resetButton,
+      onClick: n,
+      children: h.intl.string(h.t.jwH6KS)
+    })]
   })
 }
 let _ = e => {

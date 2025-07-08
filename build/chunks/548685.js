@@ -41,8 +41,8 @@ let P = e => {
     setSortType: R,
     sortedItems: w,
     sortOptions: Z,
-    shuffleProducts: D,
-    showRecommendationOption: F
+    shuffleProducts: F,
+    showRecommendationOption: D
   } = (0, C.N)(o, B), M = (0, S.St)(w), H = (0, a.e7)([u.Z], () => u.Z.useReducedMotion), W = (0, a.e7)([p.Z], () => p.Z.isFocused()), V = !H && W, {
     animationPhase: U,
     startAnimation: G
@@ -64,7 +64,7 @@ let P = e => {
         children: [(0, r.jsx)(s.X6q, {
           variant: "heading-lg/semibold",
           children: I === x.AW.ORBS ? j.intl.string(j.t.dFgeub) : j.intl.string(j.t.NSv5KS)
-        }), F && (0, r.jsx)(s.ua7, {
+        }), D && (0, r.jsx)(s.ua7, {
           text: j.intl.string(j.t["3taPdn"]),
           position: "top",
           "aria-label": j.intl.string(j.t["3taPdn"]),
@@ -124,7 +124,7 @@ let P = e => {
           onClick: () => {
             G({
               isShuffling: !0,
-              onOutroComplete: D,
+              onOutroComplete: F,
               returnRef: q
             }), g.default.track(y.rMx.COLLECTIBLES_SHOP_FEED_SHUFFLE_CLICKED, {
               page_session_id: Y
