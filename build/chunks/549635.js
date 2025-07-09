@@ -1,29 +1,26 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Dt: () => N,
-  ZP: () => R,
-  ze: () => A
+  Dt: () => T,
+  ZP: () => A,
+  ze: () => I
 }), n(997841);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
-  s = n(768494),
-  l = n(124347),
-  c = n(80966),
-  u = n(480050),
-  d = n(296182),
-  f = n(524444),
-  _ = n(52824),
-  p = n(630388),
-  h = n(589530),
-  m = n(591759),
-  g = n(254109),
-  E = n(212459),
-  b = n(986261);
+  a = n(768494),
+  o = n(124347),
+  s = n(80966),
+  l = n(296182),
+  c = n(524444),
+  u = n(52824),
+  d = n(630388),
+  f = n(589530),
+  _ = n(591759),
+  p = n(212459),
+  h = n(116475),
+  m = n(986261);
 
-function y(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -32,20 +29,20 @@ function y(e, t, n) {
   }) : e[t] = n, e
 }
 
-function O(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
 }
 
-function v(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -56,15 +53,15 @@ function v(e, t) {
   return n
 }
 
-function I(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function y(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function T(e, t) {
+function O(e, t) {
   if (null == e) return {};
-  var n, r, i = S(e, t);
+  var n, r, i = v(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -72,7 +69,7 @@ function T(e, t) {
   return i
 }
 
-function S(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -80,113 +77,101 @@ function S(e, t) {
   return i
 }
 
-function A(e, t) {
-  return I(O({}, e), {
-    type: (0, s.hg)(e),
+function I(e, t) {
+  return y(E({}, e), {
+    type: (0, a.hg)(e),
     original: e.url,
-    srcIsAnimated: (0, p.yE)(e.flags, s.hR.IS_ANIMATED),
+    srcIsAnimated: (0, d.yE)(e.flags, a.hR.IS_ANIMATED),
     sourceMetadata: {
       message: t
     }
   })
 }
 
-function N(e) {
-  let t = m.Z.toURLSafe(e);
+function T(e) {
+  let t = _.Z.toURLSafe(e);
   return null == t ? null : (t.searchParams.append("format", "webp"), t.toString())
 }
 
-function C(e) {
+function S(e) {
   let t, {
       media: n,
       obscured: i = !1,
       maxWidth: a,
-      maxHeight: s,
-      onContextMenu: d
+      maxHeight: l,
+      onContextMenu: u
     } = e,
     {
-      width: _,
-      height: p,
-      url: m,
-      proxyUrl: y,
+      width: d,
+      height: _,
+      url: g,
+      proxyUrl: b,
       alt: v,
-      type: S,
-      maxWidth: A,
-      maxHeight: C
+      type: I,
+      maxWidth: S,
+      maxHeight: A
     } = n,
-    R = T(n, ["width", "height", "url", "proxyUrl", "alt", "type", "maxWidth", "maxHeight"]),
+    C = O(n, ["width", "height", "url", "proxyUrl", "alt", "type", "maxWidth", "maxHeight"]),
     {
-      zoomed: w,
-      setZoomed: D
-    } = (0, E.Y)(),
-    L = P(w, m, y),
-    x = null != _ && 0 !== _ && null != p && 0 !== p;
-  if ("VIDEO" === S && x && null != y) {
-    var M;
-    let e = N(y);
+      zoomed: R
+    } = (0, p.Y)(),
+    P = N(R, g, b),
+    w = null != d && 0 !== d && null != _ && 0 !== _;
+  if ("VIDEO" === I && w && null != b) {
+    var D;
+    let e = T(b);
     if (null == e) return null;
-    let t = null != (M = n.renderLinkComponent) ? M : f.iT;
-    return (0, r.jsx)(c.Z, I(O({}, R), {
-      src: L,
-      width: _,
-      height: p,
+    let t = null != (D = n.renderLinkComponent) ? D : c.iT;
+    return (0, r.jsx)(s.Z, y(E({}, C), {
+      src: P,
+      width: d,
+      height: _,
       maxWidth: a,
-      maxHeight: s,
+      maxHeight: l,
       poster: e,
-      naturalWidth: _,
-      naturalHeight: p,
-      volume: h.FC,
-      autoMute: h.rs,
-      onVolumeChange: h.jA,
-      onMute: h.Zj,
+      naturalWidth: d,
+      naturalHeight: _,
+      volume: f.FC,
+      autoMute: f.rs,
+      onVolumeChange: f.jA,
+      onMute: f.Zj,
       renderLinkComponent: t,
       autoPlay: !i,
       alt: v,
-      onContextMenu: d,
+      onContextMenu: u,
       disableArrowKeySeek: !0
     }))
   }
-  return "IMAGE" === S && (t = x ? (0, r.jsx)(l.ZP, I(O({}, R), {
-    src: L,
-    width: _,
-    height: p,
+  return "IMAGE" === I && (t = w ? (0, r.jsx)(o.ZP, y(E({}, C), {
+    src: P,
+    width: d,
+    height: _,
     maxWidth: a,
-    maxHeight: s,
+    maxHeight: l,
     useFullWidth: !0,
     shouldLink: !1,
-    className: b.media,
+    className: m.media,
     animated: !i && n.animated,
     autoPlay: !i,
     alt: v,
-    onContextMenu: d
+    onContextMenu: u
   })) : (0, r.jsx)("img", {
-    src: L,
+    src: P,
     alt: v,
-    onContextMenu: d,
-    className: b.dimensionlessImage,
+    onContextMenu: u,
+    className: m.dimensionlessImage,
     style: {
       maxWidth: a,
-      maxHeight: s
+      maxHeight: l
     }
-  })), null != t ? (0, r.jsx)(u.Z, {
-    width: _,
-    height: p,
-    maxWidth: a,
-    maxHeight: s,
-    active: w,
-    className: o()(b.wrapper, {
-      [b.zoomed]: w
-    }),
-    onClick: () => {
-      D(!w), (0, g.yg)(w ? g.uG.ZOOM_OUT_IMAGE_PRESSED : g.uG.ZOOM_IN_IMAGE_PRESSED)
-    },
+  })), null != t ? (0, r.jsx)(h.Z, {
     children: t
   }) : null
 }
-let R = i.memo(C);
+let A = i.memo(S);
 
-function P(e, t, n) {
-  return e && m.Z.isDiscordAssetUrl(t) ? (0, d.s$)(t) : (0, _.q)({
+function N(e, t, n) {
+  return e && _.Z.isDiscordAssetUrl(t) ? (0, l.s$)(t) : (0, u.q)({
     proxyURL: n,
     url: t
   })

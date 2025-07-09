@@ -73,7 +73,7 @@ function er(e) {
   for (; u.length < i;) u.push(null);
   return (0, r.jsxs)("div", {
     className: en.partyStatusWrapper,
-    children: [(0, r.jsx)(Q.ZP, {
+    children: [u.length > 0 && (0, r.jsx)(Q.ZP, {
       guildId: l,
       users: u,
       max: i > 0 ? Math.min(i, 8) : 8,

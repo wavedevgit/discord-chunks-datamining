@@ -1,19 +1,18 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Bo: () => N,
-  Dc: () => h,
-  OF: () => I,
-  QB: () => A,
+  Bo: () => T,
+  Dc: () => f,
+  OF: () => y,
+  QB: () => I,
   Tj: () => c,
-  XN: () => v,
-  _H: () => g,
-  c0: () => R,
-  fD: () => S,
-  kD: () => C,
-  rn: () => m,
-  rv: () => E,
-  vV: () => p,
+  XN: () => b,
+  _H: () => p,
+  c0: () => A,
+  fD: () => v,
+  kD: () => S,
+  rn: () => _,
+  rv: () => h,
   zp: () => d
 }), n(539854), n(35282), n(853839), n(570086), n(479048), n(410992), n(227481), n(730884), n(20464), n(341884), n(364341), n(629680), n(505025), n(918970), n(121784), n(644351), n(146733), n(415506);
 var r = n(512722),
@@ -56,18 +55,8 @@ function d(e, t) {
     maxHeight: i
   })
 }
-let f = 2,
-  _ = 1.6;
 
-function p(e, t, n, r) {
-  let i = Math.max(f, null != e && 0 !== e && null != t && 0 !== t ? e / n : 0),
-    a = f;
-  null != n && n * i > window.innerWidth * _ && (a = window.innerWidth * _ / n);
-  let o = f;
-  return null != r && r * i > window.innerHeight * _ && (o = window.innerHeight * _ / r), i = parseFloat((i = Math.min(i, a, o)).toFixed(2))
-}
-
-function h(e) {
+function f(e) {
   let {
     width: t,
     height: n,
@@ -79,7 +68,7 @@ function h(e) {
   return (n = Math.round(n * a)) > i && (o = i / n), Math.min(a * o, 1)
 }
 
-function m(e) {
+function _(e) {
   let {
     width: t,
     height: n,
@@ -89,7 +78,7 @@ function m(e) {
   return t === n ? 1 : Math.min(Math.max(r / t, i / n), 1)
 }
 
-function g(e) {
+function p(e) {
   let {
     width: t,
     height: n
@@ -97,42 +86,42 @@ function g(e) {
   return null != t && 0 !== t && null != n && 0 !== n
 }
 
-function E(e) {
+function h(e) {
   return null == e || "" === e ? "none" : "url(".concat(e, ")")
 }
 
-function b(e, t, n) {
+function m(e, t, n) {
   let r = [];
   for (let i = 0, a, o, s, l, c; i < t; i += n) o = e[(a = 4 * i) + 0], s = e[a + 1], l = e[a + 2], (void 0 === (c = e[a + 3]) || c >= 125) && !(o > 250 && s > 250 && l > 250) && r.push([o, s, l]);
   return r
 }
-let y = [
+let g = [
     [0, 0, 0]
   ],
-  O = 128;
+  E = 128;
 
-function v(e, t, n) {
+function b(e, t, n) {
   let r = document.createElement("canvas"),
     i = r.getContext("2d");
-  if (null == i) return y;
-  let a = r.width = 0 === e.width ? O : e.width,
-    o = r.height = 0 === e.height ? O : e.height;
+  if (null == i) return g;
+  let a = r.width = 0 === e.width ? E : e.width,
+    o = r.height = 0 === e.height ? E : e.height;
   i.drawImage(e, 0, 0, a, o);
-  let s = b(i.getImageData(0, 0, a, o).data, a * o, n),
+  let s = m(i.getImageData(0, 0, a, o).data, a * o, n),
     c = l()(s, t);
-  return "boolean" == typeof c ? y : c.palette()
+  return "boolean" == typeof c ? g : c.palette()
 }
-let I = e => "number" == typeof e ? null : T(e),
-  T = o().memoize(e => new Promise((t, n) => {
+let y = e => "number" == typeof e ? null : O(e),
+  O = o().memoize(e => new Promise((t, n) => {
     let r = new Image;
     r.crossOrigin = "Anonymous", r.onerror = e => {
       n(e), r.onerror = r.onload = null, r = null
     }, r.onload = () => {
-      t(v(r, 5, 10)), r.onerror = r.onload = null, r = null
+      t(b(r, 5, 10)), r.onerror = r.onload = null, r = null
     }, r.src = e
   }));
 
-function S(e) {
+function v(e) {
   return new Promise((t, n) => {
     let r = new FileReader;
     r.readAsDataURL(e), r.onload = () => {
@@ -141,18 +130,18 @@ function S(e) {
   })
 }
 
-function A(e) {
+function I(e) {
   let t = e.split(";base64,");
   return i()(2 === t.length, "Input data is not a valid image."), atob(t[1]).length
 }
-async function N(e, t, n) {
-  let r = C(e);
+async function T(e, t, n) {
+  let r = S(e);
   return new File([await r.arrayBuffer()], t, {
     type: n
   })
 }
 
-function C(e) {
+function S(e) {
   let t;
   t = e.split(",")[0].indexOf("base64") >= 0 ? atob(e.split(",")[1]) : btoa(e.split(",")[1]);
   let n = e.split(",")[0].split(":")[1].split(";")[0],
@@ -162,7 +151,7 @@ function C(e) {
     type: n
   })
 }
-async function R(e) {
+async function A(e) {
   var t;
   if ("image/png" !== (null == (t = e.type) ? void 0 : t.split(";")[0])) throw Error("File is not a PNG");
   let n = await e.text(),
