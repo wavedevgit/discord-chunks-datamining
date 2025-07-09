@@ -6,11 +6,11 @@ n.d(t, {
 var r = n(73800),
   l = n(952639),
   o = n.n(l),
-  i = n(399606),
-  a = n(1870),
+  a = n(399606),
+  i = n(1870),
   s = n(724994);
 let c = e => {
-  let t = (0, i.e7)([a.Z], () => a.Z.purchases);
+  let t = (0, a.e7)([i.Z], () => i.Z.purchases);
   return (0, r.useMemo)(() => {
     let t = [
       [],
@@ -23,7 +23,7 @@ let c = e => {
         isPurchased: e,
         isPartiallyOwnedBundle: r,
         isPartiallyOwnedVariantsGroup: l
-      } = (0, s.U)(a.Z, n);
+      } = (0, s.U)(i.Z, n);
       t[r ? 2 : l ? 1 : 3 * !!e].push(n)
     }
     return o()(t)

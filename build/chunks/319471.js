@@ -1,2 +1,6 @@
-/** Chunk was on 72825 **/
-e.exports = r.p + "7c1871215eef4da8.woff"
+/** Chunk was on 45620 **/
+"use strict";
+e.exports = {
+  error: "error__71b12",
+  errorImage: "errorImage__71b12"
+}

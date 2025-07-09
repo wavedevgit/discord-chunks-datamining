@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367),
   l = n(73800),
   o = n(120356),
-  i = n.n(o),
-  a = n(622535),
+  a = n.n(o),
+  i = n(622535),
   s = n(755721),
   c = n(481060),
   u = n(63063),
@@ -23,9 +23,9 @@ let m = e => {
     wideBannerBlock: m,
     handleTransition: _,
     tab: C
-  } = e, O = null == (t = d.Z.getCategoryByStoreListingId(m.categoryStoreListingId)) ? void 0 : t.skuId, E = l.useRef(null), v = l.useRef(null), [S, x] = l.useState();
+  } = e, O = null == (t = d.Z.getCategoryByStoreListingId(m.categoryStoreListingId)) ? void 0 : t.skuId, v = l.useRef(null), E = l.useRef(null), [S, x] = l.useState();
   l.useEffect(() => {
-    let e = v.current;
+    let e = E.current;
     if (null == e) return;
     let t = () => {
       e.naturalWidth > 0 && e.naturalHeight > 0 && x(1080 * (e.naturalHeight / e.naturalWidth))
@@ -41,24 +41,24 @@ let m = e => {
     T = m.bannerUrl;
   if (null == T) return null;
   let P = C === g.AW.ORBS;
-  return (0, r.jsx)(a.$, {
-    innerRef: E,
+  return (0, r.jsx)(i.$, {
+    innerRef: v,
     onChange: j,
     threshold: 0,
     children: (0, r.jsxs)("div", {
-      ref: E,
-      className: i()(b.row, b.between, b.bannerBlockContainer, b.centeredSection, {
+      ref: v,
+      className: a()(b.row, b.between, b.bannerBlockContainer, b.centeredSection, {
         [b.extraRounded]: P
       }),
       children: [(0, r.jsx)("div", {
-        className: i()(b.wideBannerBackgroundImg, {
+        className: a()(b.wideBannerBackgroundImg, {
           [b.extraRounded]: P
         }),
         children: (0, r.jsx)("img", {
-          ref: v,
+          ref: E,
           src: T,
           alt: m.title,
-          className: i()(b.wideBannerArt, {
+          className: a()(b.wideBannerArt, {
             [b.wideBannerArtOrbs]: P
           }),
           style: {

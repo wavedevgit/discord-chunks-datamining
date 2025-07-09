@@ -2,6 +2,7 @@
 "use strict";
 e.exports = {
   container: "container_b29565",
+  loader: "loader_b29565",
   headerContainer: "headerContainer_b29565",
   addColorButtonText: "addColorButtonText_b29565",
   gradientBar: "gradientBar_b29565",

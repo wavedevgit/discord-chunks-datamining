@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(73800),
   l = n(97519),
   o = n(296574),
-  i = n(497598),
-  a = n(792091),
+  a = n(497598),
+  i = n(792091),
   s = n(653654),
   c = n(149705);
 
@@ -54,8 +54,8 @@ let g = {
     themeFilters: new Set,
     orbEligible: !1,
     sort: {
-      sortType: a.E.RECENCY,
-      sortDirection: i.F.DESC
+      sortType: i.E.RECENCY,
+      sortDirection: a.F.DESC
     },
     searchQuery: "",
     queryPageSize: 20,
@@ -64,12 +64,12 @@ let g = {
     fullScreenOpen: !1
   },
   f = {
-    sortType: a.E.RELEVANCE,
-    sortDirection: i.F.DESC
+    sortType: i.E.RELEVANCE,
+    sortDirection: a.F.DESC
   },
   h = {
-    sortType: a.E.RECENCY,
-    sortDirection: i.F.DESC
+    sortType: i.E.RECENCY,
+    sortDirection: a.F.DESC
   },
   b = (0, l.U)((0, o.XR)((e, t) => d(u({}, g), {
     hasDefaultFilters: () => !t().hasFilters() && t().sort.sortType === h.sortType && t().sort.sortDirection === h.sortDirection,
@@ -86,30 +86,35 @@ let g = {
     onToggleItemType: t => {
       e(e => ({
         itemTypeFilters: p(e.itemTypeFilters, t),
-        sort: h
+        sort: h,
+        queryPageOffset: 0
       }))
     },
     onToggleColor: t => {
       e(e => ({
         colorFilters: p(e.colorFilters, t),
-        sort: f
+        sort: f,
+        queryPageOffset: 0
       }))
     },
     onToggleTheme: t => {
       e(e => ({
         themeFilters: p(e.themeFilters, t),
-        sort: f
+        sort: f,
+        queryPageOffset: 0
       }))
     },
     onToggleOrbEligible: () => {
       e(e => ({
         orbEligible: !e.orbEligible,
-        sort: h
+        sort: h,
+        queryPageOffset: 0
       }))
     },
     onSetSort: t => {
       e({
-        sort: t
+        sort: t,
+        queryPageOffset: 0
       })
     },
     onSetResponse: t => {
@@ -119,7 +124,8 @@ let g = {
       let n = "" === t ? h : f;
       e(e => d(u({}, e), {
         searchQuery: t,
-        sort: n
+        sort: n,
+        queryPageOffset: 0
       }))
     },
     setQueryPageSize: t => {
@@ -134,7 +140,8 @@ let g = {
     },
     setItemTypeFilter: t => {
       e({
-        itemTypeFilters: new Set([t])
+        itemTypeFilters: new Set([t]),
+        queryPageOffset: 0
       })
     },
     clearFilters: () => {
@@ -160,8 +167,8 @@ let g = {
       themeFilters: r,
       orbEligible: l,
       sort: o,
-      searchQuery: i,
-      queryPageSize: a,
+      searchQuery: a,
+      queryPageSize: i,
       queryPageOffset: s
     } = e;
     return {
@@ -170,10 +177,10 @@ let g = {
       themes: Array.from(r),
       orbs_eligible: !!l || void 0,
       offset: s,
-      limit: a,
+      limit: i,
       sort_type: o.sortType,
       sort_direction: o.sortDirection,
-      search: "" !== i ? i : void 0
+      search: "" !== a ? a : void 0
     }
   },
   _ = e => {
@@ -216,23 +223,9 @@ let g = {
           !e && t && b.setState({
             sort: h
           })
-        }),
-        i = b.subscribe(e => ({
-          itemTypeFilters: e.itemTypeFilters,
-          colorFilters: e.colorFilters,
-          themeFilters: e.themeFilters,
-          orbEligible: e.orbEligible,
-          sort: e.sort,
-          searchQuery: e.searchQuery
-        }), () => {
-          b.setState({
-            queryPageOffset: 0
-          })
-        }, {
-          equalityFn: (e, t) => JSON.stringify(e) === JSON.stringify(t)
         });
       return () => {
-        r(), o(), i()
+        r(), o()
       }
     }, [e, t, n, l])
   }
