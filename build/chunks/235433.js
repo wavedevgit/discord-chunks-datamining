@@ -5,7 +5,7 @@ n.d(t, {
 var i = n(255367);
 n(73800);
 var r = n(481060),
-  s = n(906734),
+  s = n(594928),
   a = n(74538),
   l = n(993413),
   o = n(388032),
@@ -16,9 +16,9 @@ function u(e) {
   let {
     user: t,
     className: n
-  } = e, u = (0, s.F)({
+  } = e, u = s.J.useExperiment({
     location: "DisplayNameStylesSection"
-  }), m = a.ZP.canUsePremiumProfileCustomization(t);
+  }).enabled, m = a.ZP.canUsePremiumProfileCustomization(t);
   return u ? (0, i.jsx)(l.Z, {
     title: o.intl.string(c.default["86GtGB"]),
     className: n,
