@@ -36,14 +36,14 @@ let P = e => {
     handleTransition: P,
     numVisibleItems: L,
     tab: I
-  } = e, k = (0, i.e7)([d.default], () => d.default.getCurrentUser()), B = h.ZP.canUseCollectibles(k), N = (0, _.s)("useShopHomeSorting") && I === x.AW.HOME, {
+  } = e, k = (0, i.e7)([d.default], () => d.default.getCurrentUser()), N = h.ZP.canUseCollectibles(k), B = (0, _.s)("useShopHomeSorting") && I === x.AW.HOME, {
     sortType: A,
     setSortType: R,
     sortedItems: w,
     sortOptions: Z,
     shuffleProducts: F,
     showRecommendationOption: D
-  } = (0, C.N)(o, B), M = (0, S.St)(w), H = (0, i.e7)([u.Z], () => u.Z.useReducedMotion), W = (0, i.e7)([p.Z], () => p.Z.isFocused()), V = !H && W, {
+  } = (0, C.N)(o, N), M = (0, S.St)(w), H = (0, i.e7)([u.Z], () => u.Z.useReducedMotion), W = (0, i.e7)([p.Z], () => p.Z.isFocused()), V = !H && W, {
     animationPhase: U,
     startAnimation: G
   } = (0, E.y)(), z = (0, b.sp)(), q = null != (t = null == z ? void 0 : z.sessionId) ? t : "", Y = l.useRef(null), K = l.useCallback(e => {
@@ -107,7 +107,7 @@ let P = e => {
         })]
       }), (0, r.jsxs)("div", {
         className: T.headerRight,
-        children: [N && (0, r.jsxs)(r.Fragment, {
+        children: [B && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(s.Text, {
             variant: "text-md/medium",
             children: j.intl.string(j.t.uaX709)
@@ -118,7 +118,7 @@ let P = e => {
             isSelected: e => e === A,
             serialize: e => e
           })]
-        }), I === x.AW.HOME && (N ? (0, r.jsx)(s.zxk, {
+        }), I === x.AW.HOME && (B ? (0, r.jsx)(s.zxk, {
           variant: "secondary",
           text: j.intl.string(j.t.X3tnc3),
           buttonRef: Y,

@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  Z: () => N
+  Z: () => B
 }), n(388685);
 var r = n(255367),
   l = n(73800),
@@ -114,7 +114,7 @@ function k(e) {
   }, o))
 }
 
-function B(e) {
+function N(e) {
   let {
     category: t,
     initialItemCardRef: n,
@@ -140,7 +140,7 @@ function B(e) {
   })
 }
 
-function N(e) {
+function B(e) {
   var t;
   let {
     sortedCategories: n,
@@ -186,10 +186,10 @@ function N(e) {
     isLayer: k,
     initialItemCardRef: I
   });
-  let N = (0, f.F)("CollectiblesBrowse");
+  let B = (0, f.F)("CollectiblesBrowse");
   return b ? (0, r.jsx)(v.Z, {}) : (0, r.jsxs)("div", {
     className: a()(L.categories, {
-      [L.categoriesNoFilter]: !N
+      [L.categoriesNoFilter]: !B
     }),
     children: [j.map((e, t) => (0, r.jsx)("div", {
       ref: t => o(e.skuId, t),
@@ -197,7 +197,7 @@ function N(e) {
         newValue: {
           categoryPosition: t
         },
-        children: (0, r.jsx)(B, {
+        children: (0, r.jsx)(N, {
           category: e,
           initialItemCardRef: I,
           isFullScreen: c

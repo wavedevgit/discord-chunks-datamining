@@ -260,7 +260,7 @@ let C = e => {
       enum: c.h.FANTASY
     }, {
       name: b.intl.string(b.t.w0nSGx),
-      icon: (0, r.jsx)(d.Qjj, {
+      icon: (0, r.jsx)(d.Ffc, {
         size: "xs",
         color: i(c.h.ANIMALS_PETS)
       }),

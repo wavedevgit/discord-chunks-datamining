@@ -32,8 +32,8 @@ var r = n(255367),
   L = n(963102),
   I = n(508498),
   k = n(849217),
-  B = n(215023),
-  N = n(981631),
+  N = n(215023),
+  B = n(981631),
   A = n(420212),
   R = n(484920);
 let w = e => {
@@ -53,7 +53,7 @@ let w = e => {
   Z = function(e) {
     let {
       isFullScreen: t = !0,
-      tab: n = B.AW.HOME
+      tab: n = N.AW.HOME
     } = e;
     (0, b.z)(h.f);
     let o = (0, p.Z)((0, i.Z)()),
@@ -100,9 +100,9 @@ let w = e => {
         handleScroll: Q
       } = (0, f.z)(A, o, Y);
     (0, S.q3)(o, Y, U, K, G), (0, S.EB)(Y, c), (0, k.Z)(), l.useEffect(() => {
-      t || (0, d.Y)(N.Z5c.COLLECTIBLES_SHOP)
+      t || (0, d.Y)(B.Z5c.COLLECTIBLES_SHOP)
     }, [t]);
-    let J = (0, s.e7)([C.Z], () => C.Z.getLayers().includes(N.S9g.COLLECTIBLES_SHOP)),
+    let J = (0, s.e7)([C.Z], () => C.Z.getLayers().includes(B.S9g.COLLECTIBLES_SHOP)),
       $ = l.useRef(null),
       ee = l.useRef(null);
     (0, u.Tbt)($);
@@ -126,7 +126,7 @@ let w = e => {
         newValue: {
           sessionId: o,
           pageCategory: U,
-          pageSize: B.kN
+          pageSize: N.kN
         },
         children: (0, r.jsx)(w, {
           onClose: F,
@@ -141,9 +141,9 @@ let w = e => {
               onScroll: Q,
               children: (0, r.jsxs)("div", {
                 className: a()(R.shopViewWrapper, {
-                  [R.visible]: K === B.f7.VISIBLE,
-                  [R.in]: K === B.f7.IN,
-                  [R.out]: K === B.f7.OUT
+                  [R.visible]: K === N.f7.VISIBLE,
+                  [R.in]: K === N.f7.IN,
+                  [R.out]: K === N.f7.OUT
                 }),
                 children: [(0, r.jsx)(L.I, {
                   isFullScreen: t,

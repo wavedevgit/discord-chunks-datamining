@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  I: () => N
+  I: () => B
 }), n(388685), n(539854);
 var r = n(255367),
   l = n(73800),
@@ -49,7 +49,7 @@ function k(e) {
   })
 }
 
-function B(e) {
+function N(e) {
   let {
     tab: t,
     selected: n,
@@ -106,14 +106,14 @@ function B(e) {
   })
 }
 
-function N(e) {
+function B(e) {
   let {
     isFullScreen: t,
     isLayer: n,
     onClose: o,
     selectedTab: g,
     handleTransition: f
-  } = e, y = (0, p.ZP)(), N = (0, s.e7)([O.default], () => O.default.getCurrentUser()), A = (null == N ? void 0 : N.isStaff()) || (null == N ? void 0 : N.isStaffPersonal()) || !1, {
+  } = e, y = (0, p.ZP)(), B = (0, s.e7)([O.default], () => O.default.getCurrentUser()), A = (null == B ? void 0 : B.isStaff()) || (null == B ? void 0 : B.isStaffPersonal()) || !1, {
     enabled: R
   } = (0, _.WX)({
     location: "collectibles_shop_header_bar"
@@ -165,7 +165,7 @@ function N(e) {
             tab: t,
             displayText: n
           } = e;
-          return t === T.AW.CATALOG && w ? (0, r.jsx)(B, {
+          return t === T.AW.CATALOG && w ? (0, r.jsx)(N, {
             tab: t,
             selected: (0, T.RE)(g) || g === t,
             displayText: n,
