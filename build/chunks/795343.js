@@ -9,10 +9,10 @@ var r = n(255367),
   a = n.n(o),
   i = n(399606),
   s = n(481060),
-  c = n(381585),
-  u = n(597688),
-  d = n(370039),
-  p = n(82892),
+  c = n(594174),
+  u = n(381585),
+  d = n(597688),
+  p = n(370039),
   g = n(501431),
   f = n(149705),
   h = n(303952),
@@ -29,20 +29,20 @@ function v(e) {
     isFullScreen: o,
     scrollerRef: v,
     tab: E
-  } = e, S = (0, c.sp)(), x = null != (t = null == S ? void 0 : S.sessionId) ? t : "", {
+  } = e, S = (0, u.sp)(), x = null != (t = null == S ? void 0 : S.sessionId) ? t : "", {
     noCache: y,
     includeUnpublished: j
-  } = (0, _.Z)(), T = (0, p.x)(), {
+  } = (0, _.Z)(), T = (0, i.e7)([c.default], () => c.default.getCurrentUser()), {
     skus: P,
     currentPage: L,
     totalCount: I,
     isFetchingResults: k
-  } = (0, f.a)(), N = (0, i.Wu)([u.Z], () => u.Z.getProductsBySkus(P)), B = l.useCallback(() => {
+  } = (0, f.a)(), N = (0, i.Wu)([d.Z], () => d.Z.getProductsBySkus(P)), B = l.useCallback(() => {
     var e;
     null == v || null == (e = v.current) || e.scrollToTop({
       animate: !0
     })
-  }, [v]), A = (0, d.a)(), R = l.useMemo(() => A(N), [A, N]);
+  }, [v]), A = (0, p.a)(), R = l.useMemo(() => A(N), [A, N]);
   l.useEffect(() => {
     n || (0, h.n)({
       sessionId: x,
@@ -75,9 +75,9 @@ function v(e) {
         [O.productsEmpty]: H
       }),
       ref: w,
-      children: [M && [...Array(D)].map((e, t) => (0, r.jsx)(b.K, {}, t)), H && (0, r.jsx)(C.Z, {}), R.map((e, t) => {
-        let n = u.Z.getCategory(e.categorySkuId);
-        return null == n ? null : (0, r.jsx)(c.k0, {
+      children: [M && [...Array(D)].map((e, t) => (0, r.jsx)(b.K, {}, t)), H && (0, r.jsx)(C.Z, {}), !M && R.map((e, t) => {
+        let n = d.Z.getCategory(e.categorySkuId);
+        return null == n ? null : (0, r.jsx)(u.k0, {
           newValue: {
             tilePosition: t
           },

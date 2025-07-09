@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  h: () => S
+  h: () => N
 });
 var r = n(255367),
   i = n(73800),
@@ -10,13 +10,15 @@ var r = n(255367),
   s = n.n(o),
   l = n(481060),
   c = n(409813),
-  u = n(622999),
-  d = n(878836),
-  f = n(561448),
-  _ = n(231338),
-  p = n(528157);
+  u = n(626135),
+  d = n(622999),
+  f = n(878836),
+  _ = n(561448),
+  p = n(981631),
+  h = n(231338),
+  m = n(528157);
 
-function h(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -25,20 +27,20 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
 }
 
-function g(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,15 +51,15 @@ function g(e, t) {
   return n
 }
 
-function E(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
+function y(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function b(e, t) {
+function O(e, t) {
   if (null == e) return {};
-  var n, r, i = y(e, t);
+  var n, r, i = v(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -65,106 +67,129 @@ function b(e, t) {
   return i
 }
 
-function y(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let O = [c.h8.PAYMENT_ELEMENT],
-  v = i.memo(function(e) {
+let I = [c.h8.PAYMENT_ELEMENT],
+  T = i.memo(function(e) {
     var {
-      wallets: t = [],
-      options: n,
-      originalPaymentType: o
-    } = e, s = b(e, ["wallets", "options", "originalPaymentType"]);
-    let l = i.useMemo(() => {
-      if (null == o || !(0, f.qH)(o)) return;
-      let e = (0, u.rI)();
-      return (0, f.Ko)(o) ? [(0, f.ZK)(o, e)] : [f.zK[o]]
-    }, [o]);
-    return (0, r.jsx)(a.PaymentElement, m({
+      originalPaymentType: t,
+      wallets: n = [],
+      analyticsContext: o,
+      options: s,
+      onChange: l
+    } = e, c = O(e, ["originalPaymentType", "wallets", "analyticsContext", "options", "onChange"]);
+    let f = i.useMemo(() => {
+        if (null == t || !(0, _.qH)(t)) return;
+        let e = (0, d.rI)();
+        return (0, _.Ko)(t) ? [(0, _.ZK)(t, e)] : [_.zK[t]]
+      }, [t]),
+      h = i.useCallback(e => {
+        if (null != l && l(e), null != o) {
+          let {
+            contextMetadata: t,
+            activitySessionId: n,
+            analyticsData: r
+          } = o, i = (0, _.hR)(e.value.type), a = null != i ? _.Ho[i] : e.value.type;
+          u.default.track(p.rMx.PAYMENT_ELEMENT_CHANGED, {
+            load_id: t.loadId,
+            activity_session_id: n,
+            location: r.location,
+            payment_element_selected_method: a,
+            payment_source_type: i,
+            complete: e.complete,
+            empty: e.empty
+          })
+        }
+      }, [l, o]);
+    return (0, r.jsx)(a.PaymentElement, E({
       id: "stripe-payment-element",
-      options: m(E(m({}, null != l && {
-        paymentMethodOrder: l
+      options: E(y(E({}, null != f && {
+        paymentMethodOrder: f
       }), {
         layout: {
           type: "tabs"
         },
         wallets: {
-          applePay: t.includes("applePay") ? "auto" : "never",
-          googlePay: t.includes("googlePay") ? "auto" : "never"
+          applePay: n.includes("applePay") ? "auto" : "never",
+          googlePay: n.includes("googlePay") ? "auto" : "never"
         }
-      }), n)
-    }, s))
+      }), s),
+      onChange: h
+    }, c))
   }),
-  I = i.memo(function(e) {
+  S = i.memo(function(e) {
     var {
       options: t,
       renderWithoutElement: n
-    } = e, i = b(e, ["options", "renderWithoutElement"]);
-    let o = (0, r.jsx)(a.AddressElement, m({
-      options: m({
+    } = e, i = O(e, ["options", "renderWithoutElement"]);
+    let o = (0, r.jsx)(a.AddressElement, E({
+      options: E({
         mode: "billing"
       }, t)
     }, i));
     return n ? o : (0, r.jsx)(a.Elements, {
-      stripe: (0, u.d2)(),
+      stripe: (0, d.d2)(),
       children: o
     })
   }),
-  T = e => {
+  A = e => {
     let {
       step: t,
       stripePaymentElementProps: n,
       stripeAddressElementProps: o,
       elementsRef: l,
       originalPaymentType: u,
-      paymentElementSelectedType: d
-    } = e, f = (0, a.useElements)();
+      paymentElementSelectedType: d,
+      analyticsContext: f
+    } = e, _ = (0, a.useElements)();
     i.useEffect(() => {
-      l.current = f
-    }, [f, l]);
-    let h = O.includes(t) && null != d,
+      l.current = _
+    }, [_, l]);
+    let p = I.includes(t) && null != d,
       g = t === c.h8.ADDRESS;
     return (0, r.jsxs)("div", {
-      className: p.body,
+      className: m.body,
       children: [(0, r.jsx)("div", {
-        className: s()(h ? p.visible : p.hidden, {
-          [p.cardElementContainer]: d === _.He.CARD,
-          [p.customPaymentElementContainer]: d === _.He.PAYPAL
+        className: s()(p ? m.visible : m.hidden, {
+          [m.cardElementContainer]: d === h.He.CARD,
+          [m.customPaymentElementContainer]: d === h.He.PAYPAL
         }),
-        children: (0, r.jsx)(v, E(m({}, n), {
-          originalPaymentType: u
+        children: (0, r.jsx)(T, y(E({}, n), {
+          originalPaymentType: u,
+          analyticsContext: f
         }))
       }), (0, r.jsx)("div", {
-        className: s()(p.addressElementContainer, g ? p.visible : p.hidden),
-        children: (0, r.jsx)(I, E(m({}, o), {
+        className: s()(m.addressElementContainer, g ? m.visible : m.hidden),
+        children: (0, r.jsx)(S, y(E({}, o), {
           renderWithoutElement: !0
         }))
       })]
     })
   },
-  S = e => {
+  N = e => {
     var {
       onSetupError: t
-    } = e, n = b(e, ["onSetupError"]);
+    } = e, n = O(e, ["onSetupError"]);
     let {
       elementsOptions: i,
       isLoading: o,
       setupError: s
-    } = (0, d.S)({
+    } = (0, f.S)({
       onSetupError: t
     });
     return o || null != s ? (0, r.jsx)("div", {
-      className: p.loadingContainer,
+      className: m.loadingContainer,
       children: (0, r.jsx)(l.$jN, {
         type: l.$jN.Type.SPINNING_CIRCLE_SIMPLE
       })
     }) : (0, r.jsxs)(a.Elements, {
-      stripe: (0, u.d2)(),
-      options: m({}, i),
-      children: [(0, r.jsx)(T, m({}, n)), ";"]
+      stripe: (0, d.d2)(),
+      options: E({}, i),
+      children: [(0, r.jsx)(A, E({}, n)), ";"]
     })
   }

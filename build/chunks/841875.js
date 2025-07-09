@@ -232,7 +232,7 @@ let C = e => {
       enum: c.h.GAMING
     }, {
       name: b.intl.string(b.t.yuEmLi),
-      icon: (0, r.jsx)(d.YqE, {
+      icon: (0, r.jsx)(d.h_8, {
         size: "xs",
         color: i(c.h.CUTE_COZY)
       }),
