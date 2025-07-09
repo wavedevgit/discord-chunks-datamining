@@ -27,7 +27,7 @@ function h(e) {
     canAccessPicker: h
   } = (0, f.m)({
     location: "useChannelWallpaperItem",
-    selectedChannelId: e.id
+    channelId: e.id
   }), _ = e.isPrivate() && h;
   return ((0, c.Z)({
     type: l.ImpressionTypes.MENU,

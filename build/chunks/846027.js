@@ -503,5 +503,11 @@ let S = {
         type: "AUDIO_SET_KRISP_MODEL_OVERRIDE",
         model: e
       }), d.Z.getNoiseCancellation() && (this.setNoiseCancellation(!1), this.setNoiseCancellation(!0)))
+    },
+    setNoiseCancellationEnableStats(e) {
+      N() || r.Z.dispatch({
+        type: "AUDIO_SET_NOISE_CANCELLATION_ENABLE_STATS",
+        enabled: e
+      })
     }
   }

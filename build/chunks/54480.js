@@ -12,7 +12,7 @@ var r = n(442837),
 function l(e) {
   let {
     location: t,
-    selectedChannelId: n
+    channelId: n
   } = e, {
     enabled: l,
     entryPoint: c
@@ -25,7 +25,6 @@ function l(e) {
     canAccessPicker: l && (d || u) && (null == f ? void 0 : f.isChatWallpaperEnabled) === !0,
     entryPoint: c,
     isChatWallpaperSetterExperimentEnabled: l,
-    isDarkTheme: d,
-    selectedChannel: f
+    isDarkTheme: d
   }
 }
