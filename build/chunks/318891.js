@@ -30,7 +30,7 @@ function O(e, t) {
     let e = r;
     i.Z.wait(() => a.xv(e))
   }
-  i.Z.wait(() => a.bA(t, y.NYg.EMBED_IFRAME, {
+  i.Z.wait(() => a.bA(t, y.NYg.ACTIVITY, {
     channel: e
   })), r = t
 }

@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367),
   l = n(73800),
   o = n(979554),
-  a = n(399606),
-  i = n(780384),
+  i = n(399606),
+  a = n(780384),
   s = n(481060),
   c = n(410030),
   u = n(594174),
@@ -21,8 +21,8 @@ var r = n(255367),
   _ = n(81136),
   C = n(215023),
   O = n(388032),
-  v = n(484920),
-  E = n(558513),
+  E = n(484920),
+  v = n(558513),
   S = n(662128),
   x = n(676790),
   y = n(665195),
@@ -41,12 +41,12 @@ function I(e) {
   } = e, N = (0, d.sp)(), A = null != (t = null == N ? void 0 : N.sessionId) ? t : "", {
     noCache: R,
     includeUnpublished: w
-  } = (0, _.Z)(), Z = (0, a.e7)([u.default], () => u.default.getCurrentUser()), F = (0, a.e7)([p.Z], () => p.Z.productsWithVariantsAsGroup), [D, M] = l.useState(1), H = () => {
+  } = (0, _.Z)(), Z = (0, i.e7)([u.default], () => u.default.getCurrentUser()), F = (0, i.e7)([p.Z], () => p.Z.productsWithVariantsAsGroup), [D, M] = l.useState(1), H = () => {
     var e;
     null == k || null == (e = k.current) || e.scrollToTop({
       animate: !0
     })
-  }, W = (0, c.Fg)(), V = (0, i.ap)(W), [U, G, z] = l.useMemo(() => {
+  }, W = (0, c.Fg)(), V = (0, a.ap)(W), [U, G, z] = l.useMemo(() => {
     switch (B) {
       case C.AW.AVATAR_DECORATIONS:
         return [O.intl.string(O.t.dRZYND), V ? y.Z : x.Z, o.Z.AVATAR_DECORATION];
@@ -55,7 +55,7 @@ function I(e) {
       case C.AW.NAMEPLATES:
         return [O.intl.string(O.t.V68Fq6), V ? T.Z : j.Z, o.Z.NAMEPLATE];
       case C.AW.BUNDLES:
-        return [O.intl.string(O.t.FYFppq), V ? S.Z : E.Z, o.Z.BUNDLE]
+        return [O.intl.string(O.t.FYFppq), V ? S.Z : v.Z, o.Z.BUNDLE]
     }
   }, [B, V]), Y = (0, g.a)(), q = l.useMemo(() => Y(F.filter(e => {
     var t;
@@ -84,13 +84,13 @@ function I(e) {
       style: {
         backgroundImage: "url(".concat(G, ")")
       },
-      className: v.bannerContainer,
+      className: E.bannerContainer,
       children: (0, r.jsx)(s.X6q, {
         variant: "heading-xxl/extrabold",
         children: U
       })
     }), (0, r.jsx)("div", {
-      className: v.products,
+      className: E.products,
       children: K.slice(40 * (D - 1), 40 * D).map((e, t) => {
         let n = p.Z.getCategory(e.categorySkuId);
         return null == n ? null : (0, r.jsx)(d.k0, {
@@ -106,7 +106,7 @@ function I(e) {
         }, e.skuId)
       })
     }), K.length > 40 && (0, r.jsx)("div", {
-      className: v.paginationContainer,
+      className: E.paginationContainer,
       children: (0, r.jsx)("div", {
         children: (0, r.jsx)(s.DsT, {
           currentPage: D,

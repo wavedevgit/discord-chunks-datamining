@@ -222,33 +222,40 @@ let O = e => {
     "aria-labelledby": m,
     role: g,
     scrollable: E,
-    transparent: b = !1
-  } = e, y = i.useRef(null), O = i.useContext(u.Z);
+    transparent: b = !1,
+    showToolbar: y = !0
+  } = e, O = i.useRef(null), v = i.useContext(u.Z);
   return (0, r.jsx)("section", {
     className: o()(t, _.container, {
       [_.themed]: !b,
       [_.transparent]: b,
-      [_.themedMobile]: l.tq
+      [_.themedMobile]: l.tq,
+      [_.showToolbar]: y
     }),
     "aria-label": h,
     "aria-labelledby": m,
     role: g,
-    ref: y,
+    ref: O,
     children: (0, r.jsxs)(c.JcV, {
-      containerRef: y,
+      containerRef: O,
       children: [(0, r.jsxs)("div", {
-        className: _.upperContainer,
+        className: o()(_.upperContainer, {
+          [_.showToolbar]: y
+        }),
         children: [(0, r.jsxs)("div", {
           className: o()(_.children, n, {
-            [_.scrollable]: E
+            [_.scrollable]: E,
+            [_.showToolbar]: y
           }),
           onDoubleClick: p,
-          children: [l.tq && null != O ? (0, r.jsx)(s.r, {
-            onClick: O,
+          children: [l.tq && null != v ? (0, r.jsx)(s.r, {
+            onClick: v,
             className: _.hamburger
           }) : null, a]
         }), null != f ? (0, r.jsx)("div", {
-          className: _.toolbar,
+          className: o()(_.toolbar, {
+            [_.showToolbar]: y
+          }),
           children: f
         }) : null]
       }), d]

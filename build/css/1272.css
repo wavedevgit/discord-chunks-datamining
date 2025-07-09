@@ -1,6 +1,6 @@
 /**
   Module ID: 1272
-  Original File Name: 38ffb127e3fac671
+  Original File Name: 4f9fd2e62c4378cd
 **/
 .container__74da2 {
     align-items: center;
@@ -403,6 +403,164 @@
 }&.enable-forced-colors .button__85643 {
     background-color: ButtonFace;
     color: ButtonText
+}
+
+.iframe_a62174,.wrapper_a62174 {
+    height: 100%;
+    width: 100%
+}
+
+.wrapper_a62174 {
+    background-color: #000;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2
+}
+
+.wrapper_a62174.resizable_a62174 {
+    height: 65%
+}
+
+.wrapper_a62174.noChat_a62174 {
+    height: 100%;
+    max-height: 100%
+}
+
+.activityPanelContainer_a62174 {
+    display: flex;
+    flex: 1;
+    flex-direction: column
+}
+
+.header_a62174 {
+    padding: 14px 8px
+}
+
+.footer_a62174,.header_a62174 {
+    align-items: center;
+    display: flex;
+    flex-direction: row
+}
+
+.footer_a62174 {
+    justify-content: space-between;
+    padding: 12px 24px
+}
+
+.minimizeContainer_a62174 {
+    flex: 0
+}
+
+.circularButton_a62174 {
+    background: var(--background-secondary-alt);
+    border-radius: 20px;
+    height: 40px;
+    width: 40px
+}
+
+.minimizeIcon_a62174 {
+    height: 20px;
+    width: 20px
+}
+
+.headerTitle_a62174 {
+    flex: 1;
+    text-align: center
+}
+
+.leaveButtonContainer_a62174 {
+    margin: 0 16px
+}
+
+.activityContainer_a62174 {
+    align-items: center;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    margin: 24px
+}
+
+.activityContainerNoMargin_a62174 {
+    margin: 0
+}
+
+.leaveActivityIcon_a62174 {
+    height: 20px;
+    width: 20px
+}
+
+.leaveActivityButton_a62174 {
+    height: 40px;
+    width: 40px
+}
+
+.footerButtons_a62174 {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center
+}
+
+.flex_a62174 {
+    flex: 1
+}
+
+.avatar_a62174 {
+    border-radius: 50%;
+    height: 32px;
+    width: 32px
+}
+
+.buttonSection_a62174 {
+    background: var(--plum-23);
+    border: 1px solid hsl(var(--plum-11-hsl)/.06);
+    border-radius: 12px;
+    padding: 4px;
+    width: 100%
+}
+
+.buttonSection_a62174,.contextlessHeader_a62174 {
+    align-items: center;
+    display: flex;
+    justify-content: space-between
+}
+
+.contextlessHeader_a62174 {
+    padding: var(--space-12) var(--space-16);
+    position: relative;
+    z-index: 3
+}
+
+.contextlessHeaderLeft_a62174 {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-8)
+}
+
+.contextlessInviteButtonIcon_a62174 {
+    height: 16px;
+    width: 16px
+}
+
+.contextlessLeaveActivityButton_a62174 {
+    border-radius: 8px;
+    padding: var(--space-4)
+}
+
+.contextlessLeaveActivityButtonIcon_a62174 {
+    padding: var(--space-4) var(--space-8)
+}
+
+.headerButtons_a62174 {
+    align-items: center;
+    display: flex;
+    gap: 8px
 }
 
 .icon__402f3 {
@@ -8396,4 +8554,4 @@ html .tabBadge__35e86 {
     margin-bottom: 18px
 }
 
-/*# sourceMappingURL=38ffb127e3fac671.css.map*/
+/*# sourceMappingURL=4f9fd2e62c4378cd.css.map*/

@@ -1969,7 +1969,7 @@ var nM = function(e) {
     return e.TOP_LEFT = "top-left", e.TOP_RIGHT = "top-right", e.BOTTOM_LEFT = "bottom-left", e.BOTTOM_RIGHT = "bottom-right", e
   }({}),
   nU = function(e) {
-    return e.VIDEO = "VIDEO", e.EMBED_IFRAME = "EMBED_IFRAME", e
+    return e.VIDEO = "VIDEO", e.ACTIVITY = "ACTIVITY", e.FRAME = "FRAME", e
   }({}),
   nG = function(e) {
     return e.GIF = "GIF", e.STICKER = "STICKER", e

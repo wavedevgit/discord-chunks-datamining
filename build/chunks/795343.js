@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367),
   l = n(73800),
   o = n(399606),
-  a = n(481060),
-  i = n(381585),
+  i = n(481060),
+  a = n(381585),
   s = n(597688),
   c = n(370039),
   u = n(82892),
@@ -26,7 +26,7 @@ function _(e) {
     isFullScreen: _,
     scrollerRef: C,
     tab: O
-  } = e, v = (0, i.sp)(), E = null != (t = null == v ? void 0 : v.sessionId) ? t : "", {
+  } = e, E = (0, a.sp)(), v = null != (t = null == E ? void 0 : E.sessionId) ? t : "", {
     noCache: S,
     includeUnpublished: x
   } = (0, b.Z)(), y = (0, u.x)(), {
@@ -42,14 +42,14 @@ function _(e) {
   }, [C]), B = (0, c.a)(), N = l.useMemo(() => B(I), [B, I]);
   l.useEffect(() => {
     n || (0, g.n)({
-      sessionId: E,
+      sessionId: v,
       checkpoint: g.a.SHOP_RENDERED,
       tab: O,
       isFullScreen: _,
       unpublishedCategoriesShown: x,
       cacheDisabled: S
     })
-  }, [E, _, x, S, n, O]);
+  }, [v, _, x, S, n, O]);
   let A = l.useRef(null),
     {
       setQueryPageSize: R,
@@ -71,7 +71,7 @@ function _(e) {
       ref: A,
       children: [F && [...Array(Z)].map((e, t) => (0, r.jsx)(f.K, {}, t)), N.map((e, t) => {
         let n = s.Z.getCategory(e.categorySkuId);
-        return null == n ? null : (0, r.jsx)(i.k0, {
+        return null == n ? null : (0, r.jsx)(a.k0, {
           newValue: {
             tilePosition: t
           },
@@ -86,7 +86,7 @@ function _(e) {
     }), P > Z && (0, r.jsx)("div", {
       className: m.paginationContainer,
       children: (0, r.jsx)("div", {
-        children: (0, r.jsx)(a.DsT, {
+        children: (0, r.jsx)(i.DsT, {
           currentPage: T,
           totalCount: P,
           pageSize: Z,
