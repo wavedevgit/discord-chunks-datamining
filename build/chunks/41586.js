@@ -1,6 +1,6 @@
 /** Chunk was on 6850 **/
 n.d(t, {
-  Z: () => w
+  Z: () => N
 }), n(388685), n(781311);
 var r = n(255367),
   l = n(73800),
@@ -11,20 +11,21 @@ var r = n(255367),
   c = n(149765),
   u = n(399606),
   d = n(780384),
-  C = n(481060),
-  m = n(102560),
-  b = n(210887),
-  p = n(496675),
-  f = n(910693),
-  h = n(588215),
-  j = n(893966),
-  g = n(527379),
-  x = n(855935),
-  v = n(231338),
+  C = n(755721),
+  m = n(481060),
+  b = n(102560),
+  p = n(210887),
+  f = n(496675),
+  h = n(910693),
+  j = n(588215),
+  g = n(893966),
+  x = n(527379),
+  v = n(855935),
+  y = n(231338),
   O = n(388032),
-  y = n(630620);
+  _ = n(630620);
 
-function _(e) {
+function H(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,7 +44,7 @@ function _(e) {
   return e
 }
 
-function H(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -55,48 +56,48 @@ function H(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let w = l.forwardRef(function(e, t) {
+let N = l.forwardRef(function(e, t) {
   let {
     guild: n
-  } = e, o = l.useRef(null), a = (0, u.e7)([j.Z], () => j.Z.hasDefaultSearchStateByGuildId(n.id), [n.id]), w = (0, u.e7)([b.Z], () => (0, d.wj)(b.Z.theme)), N = (0, u.e7)([p.Z], () => p.Z.can(c.$e(v.Pl.MANAGE_GUILD, v.Pl.KICK_MEMBERS), n)), S = l.useCallback(() => {
-    null != n && N && (0, C.ZDy)(async () => e => (0, r.jsx)(m.Z, H(_({}, e), {
+  } = e, o = l.useRef(null), a = (0, u.e7)([g.Z], () => g.Z.hasDefaultSearchStateByGuildId(n.id), [n.id]), N = (0, u.e7)([p.Z], () => (0, d.wj)(p.Z.theme)), S = (0, u.e7)([f.Z], () => f.Z.can(c.$e(y.Pl.MANAGE_GUILD, y.Pl.KICK_MEMBERS), n)), D = l.useCallback(() => {
+    null != n && S && (0, m.ZDy)(async () => e => (0, r.jsx)(b.Z, w(H({}, e), {
       guild: n
     })))
-  }, [n, N]), D = (0, u.e7)([j.Z], () => j.Z.getSearchStateByGuildId(n.id), [n.id], s()), Z = (0, f.gm)(n.id), [L, R] = l.useState(D.query), I = null != D.selectedSort && D.selectedSort !== h.d$.ORDER_BY_GUILD_JOINED_AT_DESC && D.selectedSort !== h.d$.ORDER_BY_UNSPECIFIED, P = l.useCallback(e => {
+  }, [n, S]), Z = (0, u.e7)([g.Z], () => g.Z.getSearchStateByGuildId(n.id), [n.id], s()), R = (0, h.gm)(n.id), [L, I] = l.useState(Z.query), P = null != Z.selectedSort && Z.selectedSort !== j.d$.ORDER_BY_GUILD_JOINED_AT_DESC && Z.selectedSort !== j.d$.ORDER_BY_UNSPECIFIED, M = l.useCallback(e => {
     let t = e.trim();
-    t.length > 0 && Z(), (0, g.Dr)(n.id, {
+    t.length > 0 && R(), (0, x.Dr)(n.id, {
       query: t
     })
-  }, [n.id, Z]), M = l.useMemo(() => i()(P, 300), [P]), V = l.useCallback(e => {
-    R(e), M(e)
-  }, [M]), E = l.useCallback(() => {
-    R(""), P("")
-  }, [P]);
+  }, [n.id, R]), V = l.useMemo(() => i()(M, 300), [M]), E = l.useCallback(e => {
+    I(e), V(e)
+  }, [V]), T = l.useCallback(() => {
+    I(""), M("")
+  }, [M]);
   return l.useImperativeHandle(t, () => ({
     resetSearchText() {
-      R("")
+      I("")
     }
   })), (0, r.jsxs)("div", {
-    className: y.searchHeaderContainer,
+    className: _.searchHeaderContainer,
     children: [(0, r.jsx)("div", {
-      className: y.searchHeader,
-      children: a ? (0, r.jsx)(C.X6q, {
+      className: _.searchHeader,
+      children: a ? (0, r.jsx)(m.X6q, {
         variant: "heading-md/medium",
         children: O.intl.string(O.t.y12ALC)
-      }) : (0, r.jsx)(C.X6q, {
+      }) : (0, r.jsx)(m.X6q, {
         variant: "heading-md/medium",
         children: O.intl.string(O.t.BUqwKy)
       })
     }), (0, r.jsx)("div", {
-      className: y.searchInput,
+      className: _.searchInput,
       children: (0, r.jsx)("div", {
-        className: y.searchHeader,
-        children: (0, r.jsx)(C.E1j, {
-          className: y.searchBar,
+        className: _.searchHeader,
+        children: (0, r.jsx)(m.E1j, {
+          className: _.searchBar,
           query: L,
           placeholder: O.intl.string(O.t.NVoAMz),
-          onChange: V,
-          onClear: E,
+          onChange: E,
+          onClear: T,
           autoComplete: "off",
           inputProps: {
             autoCapitalize: "none",
@@ -106,13 +107,13 @@ let w = l.forwardRef(function(e, t) {
         })
       })
     }), (0, r.jsx)("div", {
-      children: (0, r.jsx)(C.yRy, {
+      children: (0, r.jsx)(m.yRy, {
         targetElementRef: o,
-        animation: C.yRy.Animation.FADE,
+        animation: m.yRy.Animation.FADE,
         position: "bottom",
         spacing: 4,
         align: "left",
-        renderPopout: () => (0, r.jsx)(x.Z, {
+        renderPopout: () => (0, r.jsx)(v.Z, {
           guildId: n.id,
           onClose: void 0
         }),
@@ -134,22 +135,22 @@ let w = l.forwardRef(function(e, t) {
             }
             return l
           }(e, ["onClick"]);
-          return (0, r.jsx)(C.zxk, H(_({}, n), {
+          return (0, r.jsx)(C.zx, w(H({}, n), {
             buttonRef: o,
             onClick: t,
             "aria-label": O.intl.string(O.t.XvNMNj),
-            color: w ? C.zxk.Colors.PRIMARY : C.zxk.Colors.TRANSPARENT,
-            look: w ? C.zxk.Looks.FILLED : C.zxk.Looks.OUTLINED,
-            size: C.zxk.Sizes.SMALL,
+            color: N ? C.zx.Colors.PRIMARY : C.zx.Colors.TRANSPARENT,
+            look: N ? C.zx.Looks.FILLED : C.zx.Looks.OUTLINED,
+            size: C.zx.Sizes.SMALL,
             children: (0, r.jsxs)("div", {
-              className: y.sortButton,
-              children: [(0, r.jsx)(C.uVW, {
+              className: _.sortButton,
+              children: [(0, r.jsx)(m.uVW, {
                 size: "xs",
-                color: I ? C.TVs.colors.INTERACTIVE_ACTIVE.css : C.TVs.colors.HEADER_SECONDARY.css
-              }), (0, r.jsx)(C.Text, {
+                color: P ? m.TVs.colors.INTERACTIVE_ACTIVE.css : m.TVs.colors.HEADER_SECONDARY.css
+              }), (0, r.jsx)(m.Text, {
                 variant: "text-sm/medium",
-                color: I ? "interactive-active" : "header-secondary",
-                className: y.sortText,
+                color: P ? "interactive-active" : "header-secondary",
+                className: _.sortText,
                 children: O.intl.string(O.t.XvNMNj)
               })]
             })
@@ -157,15 +158,17 @@ let w = l.forwardRef(function(e, t) {
         }
       })
     }), (0, r.jsx)("div", {
-      className: y.tableOptions,
-      children: N && (0, r.jsx)(C.zxk, {
-        className: y.__invalid_pruneButton,
-        onClick: S,
-        "aria-label": O.intl.string(O.t.zbyz7u),
-        color: C.zxk.Colors.RED,
-        look: C.zxk.Looks.OUTLINED,
-        size: C.zxk.Sizes.SMALL,
-        children: O.intl.string(O.t["2mIlKS"])
+      className: _.tableOptions,
+      children: S && (0, r.jsx)("div", {
+        "data-button-hoisted-classname-wrapper": !0,
+        className: _.__invalid_pruneButton,
+        children: (0, r.jsx)(m.zxk, {
+          variant: "critical-secondary",
+          size: "sm",
+          text: O.intl.string(O.t["2mIlKS"]),
+          onClick: D,
+          "aria-label": O.intl.string(O.t.zbyz7u)
+        })
       })
     })]
   })

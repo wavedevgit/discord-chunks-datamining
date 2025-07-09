@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(481060),
-  o = n(906732),
-  a = n(408534),
+  a = n(906732),
+  o = n(408534),
   s = n(522651),
   c = n(795318),
   u = n(390322),
@@ -19,7 +19,7 @@ let f = e => {
     remoteMode: n = !1
   } = e, {
     parentAnalyticsLocation: f
-  } = (0, o.ZP)(), m = i.useRef(null);
+  } = (0, a.ZP)(), m = i.useRef(null);
   return (0, r.jsx)(l.yRy, {
     targetElementRef: m,
     renderPopout: e => {
@@ -27,7 +27,7 @@ let f = e => {
         closePopout: i
       } = e;
       return (0, r.jsx)(u.Z, {
-        children: (0, r.jsx)(a.Z, {
+        children: (0, r.jsx)(o.Z, {
           onClose: i,
           channel: t,
           remoteMode: n,

@@ -63,7 +63,7 @@ function x(e, t) {
   }), e
 }
 
-function L(e, t) {
+function w(e, t) {
   if (null == e) return {};
   var n, r, i = function(e, t) {
     if (null == e) return {};
@@ -78,7 +78,7 @@ function L(e, t) {
   }
   return i
 }
-let w = e => {
+let L = e => {
     let {
       color: t
     } = e;
@@ -109,7 +109,7 @@ let w = e => {
       onMouseEnter: d,
       onMouseLeave: p,
       children: g
-    } = e, m = L(e, ["selected", "locationState", "icon", "onClick", "collectibleShopTab", "onMouseEnter", "onMouseLeave", "children"]);
+    } = e, m = w(e, ["selected", "locationState", "icon", "onClick", "collectibleShopTab", "onMouseEnter", "onMouseLeave", "children"]);
     let b = (0, l.JA)("shop"),
       _ = h.Z.HOME_PAGE_SHOP_TAB,
       {
@@ -144,7 +144,7 @@ let w = e => {
     })
   },
   k = e => (0, r.jsx)(D, x(Z({}, e), {
-    children: (0, r.jsx)(w, {})
+    children: (0, r.jsx)(L, {})
   })),
   M = i.memo(function(e) {
     var t;
@@ -182,7 +182,7 @@ let w = e => {
     var l, c, u, h, f, g, m, b, _, O, y, I, {
         displayOptions: v
       } = e,
-      C = L(e, ["displayOptions"]);
+      C = w(e, ["displayOptions"]);
     let S = (0, a.e7)([p.Z], () => p.Z.useReducedMotion),
       [N, T] = i.useState(0),
       [P, R] = i.useState(!1),
@@ -226,7 +226,7 @@ let w = e => {
             alt: "",
             "aria-hidden": !0
           })
-        }), (0, r.jsx)(w, {
+        }), (0, r.jsx)(L, {
           color: v.badgeColor
         })]
       }))
@@ -235,7 +235,7 @@ let w = e => {
   G = e => {
     var {
       displayOptions: t
-    } = e, n = L(e, ["displayOptions"]);
+    } = e, n = w(e, ["displayOptions"]);
     let l = i.useMemo(() => {
       var e;
       let n = null != t.emojiName ? null == (e = b.ZP.getByName(t.emojiName)) ? void 0 : e.surrogates : null;
@@ -255,7 +255,7 @@ let w = e => {
       hideOnClick: !1,
       "aria-label": t.title(),
       children: e => (0, r.jsx)(D, x(Z({}, n, e), {
-        children: (0, r.jsx)(w, {
+        children: (0, r.jsx)(L, {
           color: t.badgeColor
         })
       }))
@@ -264,7 +264,7 @@ let w = e => {
   B = e => {
     var {
       listScrollerRef: t
-    } = e, n = L(e, ["listScrollerRef"]);
+    } = e, n = w(e, ["listScrollerRef"]);
     let l = i.useRef(null),
       a = (0, _.EQ)({
         listScrollerRef: t
@@ -273,7 +273,7 @@ let w = e => {
         positionControlRef: o,
         onShopButtonClick: s
       } = a,
-      c = L(a, ["positionControlRef", "onShopButtonClick"]);
+      c = w(a, ["positionControlRef", "onShopButtonClick"]);
     return (0, r.jsx)(_.Rg, x(Z({
       targetElementRef: l,
       positionControlRef: o
@@ -289,7 +289,7 @@ let w = e => {
     var {
       displayOptions: t,
       dismissContent: n
-    } = e, l = L(e, ["displayOptions", "dismissContent"]);
+    } = e, l = w(e, ["displayOptions", "dismissContent"]);
     let a = i.useRef(null),
       o = i.useRef(0);
     i.useLayoutEffect(() => {
@@ -314,7 +314,7 @@ let w = e => {
       children: e => (0, r.jsx)(D, x(Z({}, l), {
         onClick: c,
         listItemRef: a,
-        children: (0, r.jsx)(w, {})
+        children: (0, r.jsx)(L, {})
       }))
     })
   },

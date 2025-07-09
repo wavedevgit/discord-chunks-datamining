@@ -1,18 +1,18 @@
 /** Chunk was on 19577 **/
 n.d(t, {
-  r: () => a
+  r: () => o
 });
 var r = n(255367);
 n(73800);
 var i = n(120356),
   l = n.n(i),
-  o = n(576073);
-let a = e => {
+  a = n(576073);
+let o = e => {
   let {
     left: t,
     top: n = 0,
     right: i = 0,
-    bottom: a,
+    bottom: o,
     size: s = 8,
     alert: c = !1,
     showBlurpleTreatment: u = !1,
@@ -20,13 +20,13 @@ let a = e => {
     additionalStyles: p
   } = e;
   return (0, r.jsx)("span", {
-    className: l()(o.dot, {
-      [o.alert]: c,
-      [o.blurpleTreatment]: u,
-      [o.maskPopout]: 0 === d,
-      [o.maskPrimary]: 1 === d,
-      [o.maskSecondary]: 2 === d,
-      [o.maskBlack]: 3 === d,
+    className: l()(a.dot, {
+      [a.alert]: c,
+      [a.blurpleTreatment]: u,
+      [a.maskPopout]: 0 === d,
+      [a.maskPrimary]: 1 === d,
+      [a.maskSecondary]: 2 === d,
+      [a.maskBlack]: 3 === d,
       [null != p ? p : ""]: void 0 !== p
     }),
     style: {
@@ -35,7 +35,7 @@ let a = e => {
       left: t,
       top: n,
       right: i,
-      bottom: a
+      bottom: o
     }
   })
 }

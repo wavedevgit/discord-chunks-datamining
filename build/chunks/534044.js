@@ -5,8 +5,8 @@ t.d(n, {
 var i = t(255367);
 t(73800);
 var s = t(120356),
-  l = t.n(s),
-  a = t(481060),
+  a = t.n(s),
+  l = t(481060),
   r = t(600164),
   o = t(548647),
   c = t(696375),
@@ -23,7 +23,7 @@ function h(e) {
     onClose: s
   } = e, h = (0, o.n)();
   return (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsxs)(a.xBx, {
+    children: [(0, i.jsxs)(l.xBx, {
       direction: r.Z.Direction.VERTICAL,
       className: u.header,
       separator: !1,
@@ -34,23 +34,23 @@ function h(e) {
           alt: "",
           className: m.icon
         })
-      }), (0, i.jsx)(a.X6q, {
+      }), (0, i.jsx)(l.X6q, {
         className: u.title,
         variant: "heading-xl/semibold",
         children: x.intl.string(x.t.QMbTSk)
-      }), (0, i.jsx)(a.X6q, {
+      }), (0, i.jsx)(l.X6q, {
         className: u.subtitle,
         color: "header-secondary",
         variant: "text-md/normal",
         children: x.intl.string(x.t.Qdx8AA)
-      }), null != s && (0, i.jsx)(a.olH, {
+      }), null != s && (0, i.jsx)(l.olH, {
         className: u.closeButton,
         onClick: s
       })]
-    }), (0, i.jsxs)(a.hzk, {
-      className: l()(m.modalContent, n),
+    }), (0, i.jsxs)(l.hzk, {
+      className: a()(m.modalContent, n),
       paddingFix: !1,
-      children: [(0, i.jsx)(a.X6q, {
+      children: [(0, i.jsx)(l.X6q, {
         variant: "heading-md/bold",
         color: "header-primary",
         className: m.actionsHeader,
@@ -64,11 +64,11 @@ function h(e) {
         url: d.sQ.WARNING_SYSTEM_HELPCENTER_LINK,
         onClick: () => h(d.n0.ClickWarningSystemHelpcenterLink)
       })]
-    }), (0, i.jsx)(a.mzw, {
-      children: (0, i.jsx)(a.zxk, {
-        onClick: t,
-        color: a.zxk.Colors.BRAND,
-        children: x.intl.string(x.t.i4jeWV)
+    }), (0, i.jsx)(l.mzw, {
+      children: (0, i.jsx)(l.zxk, {
+        variant: "primary",
+        text: x.intl.string(x.t.i4jeWV),
+        onClick: t
       })
     })]
   })

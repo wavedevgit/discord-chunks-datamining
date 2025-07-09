@@ -1,11 +1,11 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  j: () => l
+  j: () => a
 });
 var i = n(544891),
   r = n(570140),
   s = n(981631);
-let l = () => i.tn.get({
+let a = () => i.tn.get({
   url: s.ANM.GUILD_AFFINITIES,
   oldFormErrors: !0,
   rejectWithError: !1

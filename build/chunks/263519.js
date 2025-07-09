@@ -35,14 +35,14 @@ function P(t) {
     app: x
   } = (0, d.Rt)(F), {
     analyticsLocations: R
-  } = (0, u.ZP)(), k = (0, I.Ev)(C, null != r ? r : void 0), U = null == k ? void 0 : k.subscription, D = null == k ? void 0 : k.subscriptionPlan, G = (0, I.cr)(C, null != r ? r : void 0), B = null == G ? void 0 : G.subscriptionPlan, {
+  } = (0, u.ZP)(), U = (0, I.Ev)(C, null != r ? r : void 0), k = null == U ? void 0 : U.subscription, D = null == U ? void 0 : U.subscriptionPlan, G = (0, I.cr)(C, null != r ? r : void 0), B = null == G ? void 0 : G.subscriptionPlan, {
     entitlementsLoaded: M
   } = (0, I.LM)({
     guildId: r
   });
   null == r && (M = !0);
   let H = (0, p.Z)(),
-    K = null != U && (0, g.Jf)(U, E),
+    K = null != k && (0, g.Jf)(k, E),
     Y = i.useMemo(() => {
       if (!M || null == x || null == y) return c.rf.LOADING;
       if (!w) return c.rf.UNAVAILABLE;

@@ -4,9 +4,9 @@ n.d(t, {
 }), n(388685);
 var i = n(255367),
   r = n(73800),
-  o = n(120356),
-  s = n.n(o),
-  a = n(831209),
+  s = n(120356),
+  a = n.n(s),
+  o = n(831209),
   l = n(481060),
   c = n(367907),
   d = n(177862),
@@ -18,8 +18,8 @@ function p(e) {
   let {
     guildId: t,
     transitionState: n,
-    onClose: o
-  } = e, [p, m] = r.useState([]), [j, C] = r.useState(), _ = [{
+    onClose: s
+  } = e, [p, j] = r.useState([]), [m, _] = r.useState(), C = [{
     text: u.intl.string(u.t["//3pvr"]),
     value: d.C2.DM_SPAM
   }, {
@@ -40,9 +40,9 @@ function p(e) {
   }];
 
   function g(e) {
-    p.includes(e) ? m(t => t.filter(t => t !== e)) : m(t => [...t, e])
+    p.includes(e) ? j(t => t.filter(t => t !== e)) : j(t => [...t, e])
   }
-  return null == t ? (o(), null) : (0, i.jsxs)(l.Y0X, {
+  return null == t ? (s(), null) : (0, i.jsxs)(l.Y0X, {
     transitionState: n,
     size: l.CgR.MEDIUM,
     parentComponent: "GuildRaidLockdownFeedbackModal",
@@ -54,14 +54,14 @@ function p(e) {
           className: h.headerText,
           children: [(0, i.jsx)(l.mBM, {
             size: "xs",
-            color: a.Z.INTERACTIVE_NORMAL
+            color: o.Z.INTERACTIVE_NORMAL
           }), (0, i.jsx)(l.X6q, {
             color: "header-primary",
             variant: "heading-md/semibold",
             children: u.intl.string(u.t.f5hd9P)
           })]
         }), (0, i.jsx)(l.P3F, {
-          onClick: o,
+          onClick: s,
           children: (0, i.jsx)(l.Dio, {
             size: "xs",
             color: "currentColor",
@@ -72,13 +72,13 @@ function p(e) {
     }), (0, i.jsx)(l.hzk, {
       children: (0, i.jsx)("div", {
         className: h.options,
-        children: _.map(e => {
+        children: C.map(e => {
           let {
             text: t,
             value: n
           } = e;
           return (0, i.jsxs)("div", {
-            className: s()(h.optionContainer, {
+            className: a()(h.optionContainer, {
               [h.optionContainerOther]: n === d.C2.OTHER
             }),
             children: [(0, i.jsxs)(l.P3F, {
@@ -101,8 +101,8 @@ function p(e) {
               children: (0, i.jsx)(l.Kx8, {
                 className: h.serverLockdownReasonText,
                 placeholder: u.intl.string(u.t["PAM+JS"]),
-                onChange: e => C(e),
-                value: j,
+                onChange: e => _(e),
+                value: m,
                 rows: 2,
                 autoFocus: !0,
                 flex: !0
@@ -113,17 +113,16 @@ function p(e) {
       })
     }), (0, i.jsx)(l.mzw, {
       children: (0, i.jsx)(l.zxk, {
+        variant: "primary",
+        text: u.intl.string(u.t.nAt0rK),
         onClick: function() {
           (0, c.yw)(x.rMx.GUILD_RAID_LOCKDOWN_FEEDBACK, {
             raid_lockdown_feedback_type: p,
-            raid_lockdown_feedback_other_reason: j,
+            raid_lockdown_feedback_other_reason: m,
             guild_id: t
-          }), o()
+          }), s()
         },
-        color: l.zxk.Colors.BRAND,
-        look: l.zxk.Looks.FILLED,
-        submitting: !1,
-        children: u.intl.string(u.t.nAt0rK)
+        loading: !1
       })
     })]
   })

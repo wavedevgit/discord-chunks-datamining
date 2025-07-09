@@ -1,33 +1,34 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => o
+  Z: () => c
 });
 var i = n(255367);
 n(73800);
 var r = n(120356),
   s = n.n(r),
+  a = n(755721),
   l = n(481060),
-  a = n(427894);
+  o = n(427894);
 
-function o(e) {
+function c(e) {
   let {
     message: t,
     error: n,
     onClick: r,
-    submitting: o,
-    className: c,
-    ctaMessage: d
+    submitting: c,
+    className: d,
+    ctaMessage: u
   } = e;
   return (0, i.jsxs)("div", {
-    className: s()(a.container, c),
+    className: s()(o.container, d),
     children: [(0, i.jsxs)("div", {
-      className: a.textContainer,
+      className: o.textContainer,
       children: [(0, i.jsx)(l.P4T, {
         size: "custom",
         width: 20,
         height: 20,
         color: "currentColor",
-        className: a.warningIcon
+        className: o.warningIcon
       }), (0, i.jsx)(l.LZC, {
         size: 10,
         horizontal: !0
@@ -35,11 +36,11 @@ function o(e) {
         children: [(0, i.jsx)(l.LZC, {
           size: 1
         }), (0, i.jsx)(l.Text, {
-          className: a.info,
+          className: o.info,
           variant: "text-sm/normal",
           children: t
         }), null != n && (0, i.jsx)(l.Text, {
-          className: s()(a.info, a.error),
+          className: s()(o.info, o.error),
           variant: "text-sm/normal",
           children: n
         })]
@@ -47,14 +48,14 @@ function o(e) {
     }), (0, i.jsx)(l.LZC, {
       size: 16,
       horizontal: !0
-    }), (0, i.jsx)(l.zxk, {
-      className: a.undoButton,
-      color: l.zxk.Colors.LINK,
-      look: l.zxk.Looks.LINK,
-      size: l.zxk.Sizes.ICON,
+    }), (0, i.jsx)(a.zx, {
+      className: o.undoButton,
+      color: a.zx.Colors.LINK,
+      look: a.zx.Looks.LINK,
+      size: a.zx.Sizes.ICON,
       onClick: r,
-      submitting: o,
-      children: d
+      submitting: c,
+      children: u
     })]
   })
 }

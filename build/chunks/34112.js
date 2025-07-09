@@ -1,7 +1,7 @@
 /** Chunk was on 82265 **/
 "use strict";
 n.d(t, {
-  Z: () => L
+  Z: () => k
 }), n(781311), n(539338), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -54,7 +54,7 @@ function D(e) {
   return e
 }
 
-function k(e, t) {
+function A(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -66,9 +66,9 @@ function k(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let A = "DRAGGABLE_ROLE";
+let L = "DRAGGABLE_ROLE";
 
-function L(e) {
+function k(e) {
   let {
     setEditRoleId: t,
     guild: n,
@@ -159,13 +159,13 @@ function G(e) {
     disableDrag: N,
     setEditRoleId: I,
     setSelectedSection: S
-  } = e, P = (0, E.T)(u, p, d), L = null != P, [M, G] = i.useState(!1), B = i.useMemo(() => ({
-    type: A,
+  } = e, P = (0, E.T)(u, p, d), k = null != P, [M, G] = i.useState(!1), B = i.useMemo(() => ({
+    type: L,
     item: () => (v(d.id), {
       id: d.id,
       position: h
     }),
-    canDrag: () => M && !L,
+    canDrag: () => M && !k,
     collect: e => ({
       isDragging: e.isDragging()
     }),
@@ -174,11 +174,11 @@ function G(e) {
       if (null == n) return void O();
       C(n.roleId)
     }
-  }), [d, v, O, C, L, M, h]), [{
+  }), [d, v, O, C, k, M, h]), [{
     isDragging: F
   }, z] = (0, a.c)(B), H = i.useMemo(() => ({
-    accept: A,
-    canDrop: () => !L,
+    accept: L,
+    canDrop: () => !k,
     collect: e => {
       let t = e.getItem();
       return null != t && e.isOver() && e.canDrop() ? {
@@ -190,14 +190,14 @@ function G(e) {
     drop: () => ({
       roleId: d.id
     })
-  }), [L, d]), [{
+  }), [k, d]), [{
     dragSourcePosition: V
   }, W] = (0, o.L)(H), Y = i.useCallback(e => {
     (0, g.jW)(e, async () => {
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 741247));
-      return t => (0, r.jsx)(e, k(D({}, t), {
+      return t => (0, r.jsx)(e, A(D({}, t), {
         role: d,
         guild: u
       }))
@@ -235,7 +235,7 @@ function G(e) {
     }),
     children: [(0, r.jsx)("div", {
       className: s()(R.dragIcon, Z.dragSpacing, {
-        [R.dragIconHidden]: L || N
+        [R.dragIconHidden]: k || N
       }),
       onMouseEnter: () => G(!0),
       onMouseLeave: () => G(!1),
@@ -273,7 +273,7 @@ function G(e) {
         count: "".concat(j)
       }),
       position: "right",
-      children: e => (0, r.jsxs)(m.P3F, k(D({}, e), {
+      children: e => (0, r.jsxs)(m.P3F, A(D({}, e), {
         className: s()(R.memberCountContainer, Z.memberSpacing),
         onClick: q,
         children: [(0, r.jsx)(m.Text, {
@@ -292,10 +292,10 @@ function G(e) {
       className: s()(R.buttonsContainer, Z.buttonsSpacing),
       children: [(0, r.jsx)(m.M0o, {
         className: s()(R.circleButton, R.editButton),
-        tooltip: L ? w.intl.string(w.t["HO/oXl"]) : w.intl.string(w.t.bt75u7),
+        tooltip: k ? w.intl.string(w.t["HO/oXl"]) : w.intl.string(w.t.bt75u7),
         color: m.YX$.SECONDARY,
         size: m.tT7.SIZE_36,
-        icon: L ? (0, r.jsx)(m.tEF, {
+        icon: k ? (0, r.jsx)(m.tEF, {
           size: "custom",
           color: "currentColor",
           width: 20,
@@ -343,7 +343,7 @@ function U(e) {
     roleId: o.id,
     size: d
   });
-  if (null != C) return (0, r.jsx)(h.Z, k(D({}, C), {
+  if (null != C) return (0, r.jsx)(h.Z, A(D({}, C), {
     className: p,
     enableTooltip: g
   }));

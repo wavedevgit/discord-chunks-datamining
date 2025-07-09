@@ -1,23 +1,23 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => l
+  Z: () => a
 });
 var i = n(255367);
 n(73800);
 var r = n(481060),
   s = n(83091);
-let l = e => {
+let a = e => {
   let {
     label: t,
     onClick: n,
-    submitting: l
+    submitting: a
   } = e;
   return (0, i.jsx)(r.P3F, {
-    onClick: l ? void 0 : n,
+    onClick: a ? void 0 : n,
     className: s.button,
     children: (0, i.jsxs)("div", {
       className: s.contentContainer,
-      children: [l ? (0, i.jsx)(r.$jN, {
+      children: [a ? (0, i.jsx)(r.$jN, {
         type: r.$jN.Type.PULSING_ELLIPSIS,
         className: s.__invalid_spinner
       }) : (0, i.jsx)(r.Text, {

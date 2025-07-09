@@ -1,63 +1,63 @@
 /** Chunk was on 804 **/
 n.d(t, {
-  default: () => c
+  default: () => o
 }), n(388685);
-var s = n(255367),
-  l = n(73800),
+var a = n(255367),
+  s = n(73800),
   i = n(481060),
-  a = n(365007),
-  o = n(388032),
-  r = n(17379);
+  l = n(365007),
+  r = n(388032),
+  c = n(17379);
 
-function c(e) {
+function o(e) {
   let {
     transitionState: t,
     onClose: n,
-    credential: c
-  } = e, [d, u] = l.useState(!1), [h, x] = l.useState(""), [m, g] = l.useState(void 0), k = l.useRef(null);
-  async function p(e) {
+    credential: o
+  } = e, [d, u] = s.useState(!1), [h, x] = s.useState(""), [m, p] = s.useState(void 0), g = s.useRef(null);
+  async function j(e) {
     e.preventDefault(), u(!0);
     try {
-      await (0, a.WQ)(c.id, h), n()
+      await (0, l.WQ)(o.id, h), n()
     } catch (e) {
-      g(e.message)
+      p(e.message)
     } finally {
       u(!1)
     }
   }
-  return l.useEffect(() => {
+  return s.useEffect(() => {
     if (t === i.Dvm.ENTERED) {
       var e;
-      null == (e = k.current) || e.focus()
+      null == (e = g.current) || e.focus()
     }
-  }, [t]), (0, s.jsxs)(i.Y0X, {
+  }, [t]), (0, a.jsxs)(i.Y0X, {
     transitionState: t,
     parentComponent: "EditCredentialModal",
-    children: [(0, s.jsxs)(i.xBx, {
+    children: [(0, a.jsxs)(i.xBx, {
       separator: !1,
-      className: r.header,
-      children: [(0, s.jsx)(i.Text, {
+      className: c.header,
+      children: [(0, a.jsx)(i.Text, {
         color: "header-secondary",
         variant: "text-lg/bold",
-        className: r.subtitle,
-        children: o.intl.string(o.t.YjuMsb)
-      }), (0, s.jsx)(i.olH, {
+        className: c.subtitle,
+        children: r.intl.string(r.t.YjuMsb)
+      }), (0, a.jsx)(i.olH, {
         onClick: n,
-        className: r.modalCloseButton
+        className: c.modalCloseButton
       })]
-    }), (0, s.jsxs)("form", {
-      onSubmit: p,
-      children: [(0, s.jsx)(i.hzk, {
-        className: r.content,
-        children: (0, s.jsx)(i.xJW, {
-          title: o.intl.string(o.t["7yEgJS"]),
+    }), (0, a.jsxs)("form", {
+      onSubmit: j,
+      children: [(0, a.jsx)(i.hzk, {
+        className: c.content,
+        children: (0, a.jsx)(i.xJW, {
+          title: r.intl.string(r.t["7yEgJS"]),
           error: m,
           required: !0,
-          children: (0, s.jsx)("div", {
-            children: (0, s.jsx)(i.oil, {
-              inputRef: k,
-              "aria-label": o.intl.string(o.t["7yEgJS"]),
-              placeholder: c.name,
+          children: (0, a.jsx)("div", {
+            children: (0, a.jsx)(i.oil, {
+              inputRef: g,
+              "aria-label": r.intl.string(r.t["7yEgJS"]),
+              placeholder: o.name,
               value: h,
               minLength: 1,
               maxLength: 32,
@@ -67,20 +67,21 @@ function c(e) {
             })
           })
         })
-      }), (0, s.jsxs)(i.mzw, {
-        children: [(0, s.jsx)(i.zxk, {
+      }), (0, a.jsxs)(i.mzw, {
+        children: [(0, a.jsx)(i.zxk, {
+          variant: "primary",
+          text: r.intl.string(r.t.i4jeWV),
           type: "submit",
-          color: i.zxk.Colors.BRAND,
-          size: i.zxk.Sizes.MEDIUM,
-          submitting: d,
-          disabled: 0 === h.length || h.length > 32,
-          children: o.intl.string(o.t.i4jeWV)
-        }), (0, s.jsx)(i.zxk, {
-          className: r.cancel,
-          look: i.zxk.Looks.LINK,
-          color: i.zxk.Colors.PRIMARY,
-          onClick: n,
-          children: o.intl.string(o.t["ETE/oK"])
+          loading: d,
+          disabled: 0 === h.length || h.length > 32
+        }), (0, a.jsx)("div", {
+          "data-button-hoisted-classname-wrapper": !0,
+          className: c.cancel,
+          children: (0, a.jsx)(i.zxk, {
+            variant: "secondary",
+            text: r.intl.string(r.t["ETE/oK"]),
+            onClick: n
+          })
         })]
       })]
     })]

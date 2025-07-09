@@ -1,6 +1,6 @@
 /** Chunk was on 226 **/
 s.d(e, {
-  default: () => E
+  default: () => N
 }), s(388685), s(415506);
 var l = s(255367),
   n = s(73800),
@@ -69,10 +69,10 @@ class b extends n.Component {
       hasAcceptedNeccessaryTerms: s
     } = this.state;
     return (0, l.jsx)(i.zxk, {
+      variant: "active",
+      text: Z.intl.string(Z.t.nL0WvL),
       disabled: e || null == t || !s,
-      color: i.zxk.Colors.GREEN,
-      onClick: this.handleInstall,
-      children: Z.intl.string(Z.t.nL0WvL)
+      onClick: this.handleInstall
     })
   }
   render() {
@@ -188,7 +188,7 @@ class b extends n.Component {
     })
   }
 }
-let E = a.ZP.connectStores([f.Z, _.Z, P.Z, p.Z], t => {
+let N = a.ZP.connectStores([f.Z, _.Z, P.Z, p.Z], t => {
   let {
     applicationId: e,
     branchId: s

@@ -1,6 +1,6 @@
 /** Chunk was on 24231 **/
 n.d(t, {
-  Z: () => c
+  Z: () => s
 }), n(388685);
 var r = n(73800),
   i = n(512722),
@@ -8,17 +8,17 @@ var r = n(73800),
   a = n(157925),
   o = n(765305);
 
-function c(e) {
+function s(e) {
   let {
     stageInstance: t,
     defaultStep: n,
     error: i,
-    onSave: c
-  } = e, [s, d] = r.useState(n), [u, h] = r.useState(), [g, _] = r.useState(null);
+    onSave: s
+  } = e, [c, d] = r.useState(n), [u, h] = r.useState(), [g, _] = r.useState(null);
   return r.useEffect(() => {
     null != i && d(a.lv.STAGE_CHANNEL_SETTINGS)
   }, [i]), {
-    modalStep: s,
+    modalStep: c,
     setModalStep: d,
     readySlide: g,
     handleSlideReady: function(e) {
@@ -27,10 +27,10 @@ function c(e) {
     savedOptions: u,
     handleSettingsSave: function(e) {
       if (h(e), e.privacyLevel === o.j8.PUBLIC && (null == t ? void 0 : t.privacy_level) !== o.j8.PUBLIC) return void d(a.lv.PUBLIC_STAGE_PREVIEW);
-      c(e)
+      s(e)
     },
     handleDelayedSave: function() {
-      l()(null != u, "Must have some saved options."), c(u)
+      l()(null != u, "Must have some saved options."), s(u)
     }
   }
 }

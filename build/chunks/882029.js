@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i, r = n(442837),
   s = n(570140),
-  l = n(314897),
-  a = n(57562),
+  a = n(314897),
+  l = n(57562),
   o = n(351780),
   c = n(843693);
 
@@ -36,7 +36,7 @@ let m = {
   p = u({}, m);
 class g extends(i = r.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(l.default, c.ZP);
+    this.waitFor(a.default, c.ZP);
     let t = null != e ? e : u({}, m);
     for (let e in t) p[e] = t[e]
   }
@@ -75,7 +75,7 @@ let h = new g(s.Z, {
       })(Object(n)).forEach(function(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), p.unlockedAchievements = t, setTimeout(() => {
-        (0, a.D)(e, !0)
+        (0, l.D)(e, !0)
       }, 2e3)
     }(t)
   }

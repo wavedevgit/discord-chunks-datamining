@@ -88,8 +88,8 @@ let N = (0, g.Un)({
     [y.S9g.COLLECTIBLES_SHOP]: () => (0, i.jsx)(j, {})
   },
   x = "SHOWN",
-  L = "HIDDEN",
-  w = {
+  w = "HIDDEN",
+  L = {
     friction: 10,
     tension: 100
   };
@@ -111,8 +111,8 @@ class D extends(r = l.PureComponent) {
       mode: n
     } = e;
     if (t !== n) {
-      if (t === x && n === L) return this.animateIn();
-      if (t === L && n === x) return this.animateUnder()
+      if (t === x && n === w) return this.animateIn();
+      if (t === w && n === x) return this.animateUnder()
     }
   }
   componentWillEnter(e) {
@@ -137,9 +137,9 @@ class D extends(r = l.PureComponent) {
     } = this.state;
     s.Z.parallel([s.Z.spring(t, C({
       toValue: 1
-    }, w)), s.Z.spring(n, C({
+    }, L)), s.Z.spring(n, C({
       toValue: 1
-    }, w))]).start(() => this.animateComplete(e))
+    }, L))]).start(() => this.animateComplete(e))
   }
   animateOut(e) {
     c.ZP.Emitter.pause(500);
@@ -149,9 +149,9 @@ class D extends(r = l.PureComponent) {
     } = this.state;
     O.S.dispatch(y.CkL.LAYER_POP_START), s.Z.parallel([s.Z.spring(t, C({
       toValue: 0
-    }, w)), s.Z.spring(n, C({
+    }, L)), s.Z.spring(n, C({
       toValue: 1.1
-    }, w))]).start(() => {
+    }, L))]).start(() => {
       e(), O.S.dispatch(y.CkL.LAYER_POP_COMPLETE)
     })
   }
@@ -163,9 +163,9 @@ class D extends(r = l.PureComponent) {
     } = this.state;
     s.Z.parallel([s.Z.spring(e, C({
       toValue: 0
-    }, w)), s.Z.spring(t, C({
+    }, L)), s.Z.spring(t, C({
       toValue: .93
-    }, w))]).start(() => this.animateComplete())
+    }, L))]).start(() => this.animateComplete())
   }
   animateComplete(e) {
     this.setState({
@@ -193,13 +193,13 @@ class D extends(r = l.PureComponent) {
         for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
-    }(t, ["mode", "children", "baseLayer"]), c = e || n === L ? this.getAnimatedStyle() : null, u = (0, i.jsx)(s.Z.div, S(C({
+    }(t, ["mode", "children", "baseLayer"]), c = e || n === w ? this.getAnimatedStyle() : null, u = (0, i.jsx)(s.Z.div, S(C({
       ref: e => this.containerRef.current = null != e ? e.componentRef : void 0,
-      "aria-hidden": n === L,
+      "aria-hidden": n === w,
       className: o()(I.layer, {
         [I.baseLayer]: l,
         [I.animating]: e,
-        "stop-animations": n === L
+        "stop-animations": n === w
       }),
       style: c
     }, a), {
@@ -232,7 +232,7 @@ class D extends(r = l.PureComponent) {
     super(e), v(this, "containerRef", l.createRef());
     let t = 1,
       n = 1;
-    e.mode === L && (t = .93, n = 0), this.state = {
+    e.mode === w && (t = .93, n = 0), this.state = {
       animating: !1,
       scale: new s.Z.Value(t),
       opacity: new s.Z.Value(n),
@@ -259,7 +259,7 @@ class k extends l.PureComponent {
       length: r
     } = t, l = [];
     return l.push((0, i.jsx)(D, {
-      mode: 0 !== r || n ? L : x,
+      mode: 0 !== r || n ? w : x,
       baseLayer: !0,
       children: e
     }, "layer-base")), t.forEach((e, t) => l.push(this.renderComponent(e, t, r))), l
@@ -267,7 +267,7 @@ class k extends l.PureComponent {
   renderComponent(e, t, n) {
     let r;
     return r = "string" == typeof e ? Z[e]() : (0, i.jsx)(e, {}), (0, i.jsxs)(D, {
-      mode: t === n - 1 ? x : L,
+      mode: t === n - 1 ? x : w,
       children: [(0, i.jsx)(R, {}), r]
     }, "layer-".concat(t))
   }

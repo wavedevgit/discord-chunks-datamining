@@ -5,7 +5,7 @@ n.d(t, {
 var r = n(255367),
   a = n(73800),
   i = n(442837),
-  l = n(481060),
+  l = n(755721),
   o = n(194359),
   s = n(367907),
   c = n(681678),
@@ -39,7 +39,7 @@ let b = e => {
     buttonText: h ? g.intl.string(g.t.ot2tSk) : g.intl.string(g.t["l+7PZW"]),
     buttonDisabled: h,
     onButtonPress: j,
-    buttonColor: "application" === x.name && h ? l.zxk.Colors.WHITE : l.zxk.Colors.RED,
-    buttonLook: "application" === x.name && h ? l.zxk.Looks.LINK : l.zxk.Looks.FILLED
+    buttonColor: "application" === x.name && h ? l.zx.Colors.WHITE : l.zx.Colors.RED,
+    buttonLook: "application" === x.name && h ? l.zx.Looks.LINK : l.zx.Looks.FILLED
   })
 }

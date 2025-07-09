@@ -6,10 +6,10 @@ n.d(t, {
 var i = n(255367),
   r = n(120356),
   s = n.n(r),
-  l = n(481060),
-  a = n(517791);
+  a = n(481060),
+  l = n(517791);
 let o = () => (0, i.jsx)("hr", {
-    className: a.sectionDivider
+    className: l.sectionDivider
   }),
   c = e => {
     let {
@@ -19,13 +19,13 @@ let o = () => (0, i.jsx)("hr", {
       className: c
     } = e;
     return (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)(o, {}), (0, i.jsx)(l.Text, {
+      children: [(0, i.jsx)(o, {}), (0, i.jsx)(a.Text, {
         variant: "text-md/semibold",
-        className: a.labelSpacing,
+        className: l.labelSpacing,
         children: t
       }), (0, i.jsx)("div", {
-        className: s()(a.container, c, {
-          [a.verticalContainer]: "vertical" === r
+        className: s()(l.container, c, {
+          [l.verticalContainer]: "vertical" === r
         }),
         children: n
       })]
@@ -36,7 +36,7 @@ let o = () => (0, i.jsx)("hr", {
       children: t
     } = e;
     return (0, i.jsx)("div", {
-      className: a.section,
+      className: l.section,
       children: t
     })
   }

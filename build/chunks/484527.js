@@ -1,6 +1,6 @@
 /** Chunk was on 89311 **/
 r.d(t, {
-  Z: () => x
+  Z: () => h
 }), r(388685), r(35282);
 var n = r(255367),
   i = r(73800),
@@ -17,14 +17,14 @@ var n = r(255367),
   p = r(981631),
   O = r(388032),
   E = r(263930),
-  h = r(926921);
+  x = r(926921);
 
-function x(e) {
+function h(e) {
   let {
     detectedGame: t,
     trackClick: r,
     onInviteResolved: a,
-    closeModal: x
+    closeModal: h
   } = e, [v, j] = i.useState(), b = (0, o.e7)([m.Z], () => {
     var e, t;
     return (null == v || null == (e = v.guild) ? void 0 : e.id) != null && m.Z.isMember(null == v || null == (t = v.guild) ? void 0 : t.id)
@@ -63,13 +63,13 @@ function x(e) {
     }), (0, n.jsxs)("div", {
       className: l()(E.row, E.gapMd),
       children: [(0, n.jsx)("img", {
-        className: h.guildIcon,
+        className: x.guildIcon,
         src: y,
         alt: O.intl.formatToPlainString(O.t.xm6W9P, {
           guildName: v.guild.name
         })
       }), (0, n.jsxs)("div", {
-        className: h.inviteInfo,
+        className: x.inviteInfo,
         children: [(0, n.jsx)(c.Text, {
           variant: "text-sm/normal",
           children: v.guild.name
@@ -81,16 +81,16 @@ function x(e) {
         })]
       })]
     }), (0, n.jsx)(c.zxk, {
-      color: c.Ttl.PRIMARY,
+      variant: "secondary",
+      text: b ? O.intl.string(O.t.cEnaW1) : O.intl.string(O.t.XpeFYm),
       onClick: () => {
-        x(), r(f.as.JoinOfficialServer), u.Z.dispatch({
+        h(), r(f.as.JoinOfficialServer), u.Z.dispatch({
           type: "INVITE_MODAL_OPEN",
           invite: v,
           code: v.code,
           context: p.IlC.APP
         })
-      },
-      children: b ? O.intl.string(O.t.cEnaW1) : O.intl.string(O.t.XpeFYm)
+      }
     })]
   })
 }

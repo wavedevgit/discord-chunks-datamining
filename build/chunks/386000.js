@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(906732),
-  o = n(628581),
-  a = n(522651),
+  a = n(628581),
+  o = n(522651),
   s = n(8404),
   c = n(871499);
 
@@ -37,7 +37,7 @@ function u(e) {
   }(e, ["selfMute", "serverMute", "suppress", "centerButton", "awaitingRemote", "onMouseEnter", "onMouseLeave", "onClick"]);
   let {
     parentAnalyticsLocation: b
-  } = (0, l.ZP)(), _ = t || n || u, y = d ? c.d : c.Z, C = (0, o.Z)(t, n, u, p), {
+  } = (0, l.ZP)(), _ = t || n || u, y = d ? c.d : c.Z, C = (0, a.Z)(t, n, u, p), {
     events: x,
     play: v,
     Component: O
@@ -72,7 +72,7 @@ function u(e) {
       null == f || f(e), x.onMouseLeave()
     },
     onClick: e => {
-      null == m || m(e), (0, a.v)(b, a.d.MIC, t)
+      null == m || m(e), (0, o.v)(b, o.d.MIC, t)
     }
   }, g))
 }

@@ -84,13 +84,16 @@ function g(e) {
     }), null !== l && "" !== l && null !== s && (0, r.jsxs)("div", {
       children: [(0, r.jsx)(c.$i$, {
         className: u.divider
-      }), (0, r.jsx)(c.zxk, {
+      }), (0, r.jsx)("div", {
+        "data-button-hoisted-classname-wrapper": !0,
         className: u.button,
-        size: c.zxk.Sizes.SMALL,
-        color: c.zxk.Colors.BRAND,
-        onClick: s,
-        disabled: 1 !== h || o,
-        children: l
+        children: (0, r.jsx)(c.zxk, {
+          variant: "primary",
+          size: "sm",
+          text: l,
+          onClick: s,
+          disabled: 1 !== h || o
+        })
       })]
     })]
   })

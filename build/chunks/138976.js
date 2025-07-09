@@ -1,11 +1,11 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  O: () => l
+  O: () => a
 });
 var i = n(904245),
   r = n(306680),
   s = n(944486);
-let l = {
+let a = {
   binds: ["shift+pageup"],
   comboKeysBindGlobal: !0,
   action() {

@@ -1,22 +1,22 @@
 /** Chunk was on 66462 **/
 r.d(t, {
-  default: () => g
+  default: () => m
 }), r(953529), r(388685);
 var n = r(255367);
 r(73800);
 var o = r(435935),
   i = r(481060),
   c = r(259756),
-  l = r(785681),
+  a = r(785681),
   s = r(880257),
-  a = r(863552),
+  l = r(863552),
   d = r(292352),
   h = r(916723),
   u = r(388032),
   p = r(81718),
   f = r(128216);
-let C = {
-    [d.MY.USER_INTERACTION]: (0, n.jsx)(a.Z, {
+let j = {
+    [d.MY.USER_INTERACTION]: (0, n.jsx)(l.Z, {
       width: 18,
       height: 18
     }),
@@ -47,7 +47,7 @@ let C = {
       height: 22
     })
   },
-  j = e => {
+  C = e => {
     let {
       header: t,
       description: r,
@@ -72,11 +72,11 @@ let C = {
       })]
     })
   },
-  g = e => {
+  m = e => {
     let {
       transitionState: t,
       onClose: r
-    } = e, a = (0, l.o)(u.intl.string(h.default.q3IRam), u.intl.string(h.default.JNLpDQ)), g = (0, s.Z)(), m = Array.from(d.tx.entries()), b = (0, c.Xi)({
+    } = e, l = (0, a.o)(u.intl.string(h.default.q3IRam), u.intl.string(h.default.JNLpDQ)), m = (0, s.Z)(), g = Array.from(d.tx.entries()), b = (0, c.Xi)({
       location: "family_center_tooltip_modal_web"
     });
     return (0, n.jsxs)(i.Y0X, {
@@ -96,23 +96,23 @@ let C = {
             color: "header-primary",
             variant: "heading-lg/semibold",
             children: (0, n.jsx)(i.y5t, {
-              children: a
+              children: l
             })
-          }), m.map(e => {
+          }), g.map(e => {
             let [t, r] = e;
-            return (0, n.jsx)(j, {
-              icon: C[t],
+            return (0, n.jsx)(C, {
+              icon: j[t],
               header: r.tooltipHeader(),
-              description: r.tooltipDescription(null != g ? g : void 0, b)
+              description: r.tooltipDescription(null != m ? m : void 0, b)
             }, t)
           })]
         })
       }), (0, n.jsx)(i.mzw, {
         children: (0, n.jsx)(i.zxk, {
+          variant: "primary",
+          text: u.intl.string(u.t["NX+WJC"]),
           type: "button",
-          color: i.zxk.Colors.BRAND,
-          onClick: r,
-          children: u.intl.string(u.t["NX+WJC"])
+          onClick: r
         })
       })]
     })

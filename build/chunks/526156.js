@@ -6,8 +6,8 @@ var i = n(255367);
 n(73800);
 var r = n(120356),
   s = n.n(r),
-  l = n(481060),
-  a = n(230711),
+  a = n(481060),
+  l = n(230711),
   o = n(528084),
   c = n(44380);
 let d = e => {
@@ -28,18 +28,18 @@ let d = e => {
     className: s()(c.tabbedSettingsContainer, {
       [c.vertical]: "vertical" === g
     }),
-    children: [(0, i.jsx)(l.njP, {
+    children: [(0, i.jsx)(a.njP, {
       className: s()(c.tabBar, {
         [c.vertical]: "vertical" === g
       }),
       selectedItem: x.setting,
       onItemSelect: e => {
-        a.Z.setSection(r, e), null == p || p(e)
+        l.Z.setSection(r, e), null == p || p(e)
       },
       orientation: g,
       type: "vertical" === g ? "side" : "top",
       look: "brand",
-      children: h.map(e => (0, i.jsx)(l.njP.Item, {
+      children: h.map(e => (0, i.jsx)(a.njP.Item, {
         className: s()(c.tab, {
           [c.vertical]: "vertical" === g,
           [c.selected]: e.setting === x.setting
@@ -48,7 +48,7 @@ let d = e => {
         "aria-label": e.title,
         children: e.title
       }, e.setting))
-    }), (0, i.jsx)(l.njP.Panel, {
+    }), (0, i.jsx)(a.njP.Panel, {
       id: x.setting,
       "aria-labelledby": x.title,
       className: s()(c.tabBarPanel, u, {

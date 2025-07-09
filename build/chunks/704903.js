@@ -1,6 +1,6 @@
 /** Chunk was on 35401 **/
 i.d(t, {
-  Z: () => v
+  Z: () => x
 }), i(388685);
 var n, s = i(255367),
   a = i(73800),
@@ -8,14 +8,15 @@ var n, s = i(255367),
   o = i.n(l),
   r = i(772848),
   h = i(846519),
-  d = i(481060),
-  c = i(981631),
-  m = i(388032),
-  u = i(944084),
-  g = i(893354),
-  p = i(20493);
+  d = i(755721),
+  c = i(481060),
+  m = i(981631),
+  u = i(388032),
+  g = i(944084),
+  p = i(893354),
+  f = i(20493);
 
-function f(e, t, i) {
+function C(e, t, i) {
   return t in e ? Object.defineProperty(e, t, {
     value: i,
     enumerable: !0,
@@ -23,7 +24,7 @@ function f(e, t, i) {
     writable: !0
   }) : e[t] = i, e
 }
-class C extends(n = a.PureComponent) {
+class v extends(n = a.PureComponent) {
   async componentDidMount() {
     let [e, {
       default: t
@@ -49,34 +50,34 @@ class C extends(n = a.PureComponent) {
       password: a
     } = this.state;
     return (0, s.jsxs)("div", {
-      className: u.container,
-      children: [(0, s.jsx)(d.xJW, {
-        title: m.intl.string(m.t.dI4d4e),
-        className: p.marginBottom20,
-        children: (0, s.jsx)(d.oil, {
+      className: g.container,
+      children: [(0, s.jsx)(c.xJW, {
+        title: u.intl.string(u.t.dI4d4e),
+        className: f.marginBottom20,
+        children: (0, s.jsx)(c.oil, {
           value: n,
           error: e,
           onChange: this.handleEmailChange,
           onKeyPress: this.handleKeyPress,
           autoFocus: !0
         })
-      }), (0, s.jsx)(d.xJW, {
-        title: m.intl.string(m.t["CIGa+/"]),
-        className: p.marginBottom40,
-        children: (0, s.jsx)(d.oil, {
+      }), (0, s.jsx)(c.xJW, {
+        title: u.intl.string(u.t["CIGa+/"]),
+        className: f.marginBottom40,
+        children: (0, s.jsx)(c.oil, {
           type: "password",
           value: a,
           error: t,
           onChange: this.handlePasswordChange,
           onKeyPress: this.handleKeyPress
         })
-      }), (0, s.jsx)(d.zxk, {
+      }), (0, s.jsx)(d.zx, {
         fullWidth: !0,
-        size: d.zxk.Sizes.LARGE,
+        size: d.zx.Sizes.LARGE,
         onClick: this.handleVerify,
         submitting: i,
         disabled: 0 === n.length || 0 === a.length,
-        children: m.intl.string(m.t.v740sr)
+        children: u.intl.string(u.t.v740sr)
       })]
     })
   }
@@ -85,22 +86,22 @@ class C extends(n = a.PureComponent) {
       canChange: e
     } = this.props;
     return (0, s.jsxs)("div", {
-      className: u.container,
-      children: [(0, s.jsx)(d.zxk, {
-        className: p.marginTop20,
+      className: g.container,
+      children: [(0, s.jsx)(d.zx, {
+        className: f.marginTop20,
         fullWidth: !0,
-        size: d.zxk.Sizes.LARGE,
-        color: d.Ttl.PRIMARY,
+        size: d.zx.Sizes.LARGE,
+        color: d.Tt.PRIMARY,
         onClick: this.handleResendEmail,
-        children: m.intl.string(m.t.LdUkOz)
-      }), e && (0, s.jsx)(d.zxk, {
-        className: p.marginTop20,
+        children: u.intl.string(u.t.LdUkOz)
+      }), e && (0, s.jsx)(d.zx, {
+        className: f.marginTop20,
         fullWidth: !0,
-        size: d.zxk.Sizes.MEDIUM,
-        look: d.iLD.LINK,
-        color: d.Ttl.LINK,
+        size: d.zx.Sizes.MEDIUM,
+        look: d.iL.LINK,
+        color: d.Tt.LINK,
         onClick: this.handleChangeEmailClick,
-        children: m.intl.string(m.t.oP5zGB)
+        children: u.intl.string(u.t.oP5zGB)
       })]
     })
   }
@@ -113,40 +114,40 @@ class C extends(n = a.PureComponent) {
         canResend: n,
         transitionState: a
       } = this.props;
-    return e = t && null != i ? m.intl.format(m.t.JqLgQE, {
+    return e = t && null != i ? u.intl.format(u.t.JqLgQE, {
       email: i
-    }) : n ? m.intl.string(m.t.tSXg8P) : m.intl.string(m.t.KW5DEh), (0, s.jsxs)(d.Y0X, {
+    }) : n ? u.intl.string(u.t.tSXg8P) : u.intl.string(u.t.KW5DEh), (0, s.jsxs)(c.Y0X, {
       transitionState: a,
       "aria-labelledby": this._headerId,
-      className: o()(u.emailVerificationModal, g.vertical, g.alignCenter, g.justifyCenter, p.marginTop60),
+      className: o()(g.emailVerificationModal, p.vertical, p.alignCenter, p.justifyCenter, f.marginTop60),
       parentComponent: "EmailVerificationModal",
       children: [(0, s.jsx)("div", {
-        className: u.animationContainer,
+        className: g.animationContainer,
         ref: this.setLottieRef
       }), (0, s.jsx)("div", {
         id: this._headerId,
-        className: o()(u.title, p.marginBottom8),
-        children: m.intl.string(m.t["1MPz29"])
+        className: o()(g.title, f.marginBottom8),
+        children: u.intl.string(u.t["1MPz29"])
       }), (0, s.jsx)("div", {
-        className: o()(u.body, p.marginBottom20),
+        className: o()(g.body, f.marginBottom20),
         children: e
       }), n ? this.renderActions() : this.renderInputs()]
     })
   }
   constructor(...e) {
-    super(...e), f(this, "_lottieRef", void 0), f(this, "_animItem", null), f(this, "_timeout", new h.V7), f(this, "_headerId", (0, r.Z)()), f(this, "state", {
+    super(...e), C(this, "_lottieRef", void 0), C(this, "_animItem", null), C(this, "_timeout", new h.V7), C(this, "_headerId", (0, r.Z)()), C(this, "state", {
       resent: !1,
       shouldClose: !1,
       email: "",
       password: ""
-    }), f(this, "setLottieRef", e => {
+    }), C(this, "setLottieRef", e => {
       this._lottieRef = e
-    }), f(this, "handleVerify", () => {
+    }), C(this, "handleVerify", () => {
       let {
         onVerify: e
       } = this.props;
       e(this.state.email, this.state.password)
-    }), f(this, "handleResendEmail", () => {
+    }), C(this, "handleResendEmail", () => {
       let {
         onResend: e,
         onClose: t
@@ -157,7 +158,7 @@ class C extends(n = a.PureComponent) {
       }), this._timeout.start(3e3, () => {
         this.state.shouldClose && t()
       }))
-    }), f(this, "handleChangeEmailClick", () => {
+    }), C(this, "handleChangeEmailClick", () => {
       let {
         onChangeEmailClick: e
       } = this.props;
@@ -165,15 +166,15 @@ class C extends(n = a.PureComponent) {
         resent: !1,
         shouldClose: !1
       }), e()
-    }), f(this, "handleEmailChange", e => {
+    }), C(this, "handleEmailChange", e => {
       this.setState({
         email: e
       })
-    }), f(this, "handlePasswordChange", e => {
+    }), C(this, "handlePasswordChange", e => {
       this.setState({
         password: e
       })
-    }), f(this, "handleKeyPress", e => {
+    }), C(this, "handleKeyPress", e => {
       let {
         email: t,
         password: i
@@ -182,12 +183,12 @@ class C extends(n = a.PureComponent) {
     })
   }
 }
-f(C, "defaultProps", {
+C(v, "defaultProps", {
   canResend: !1,
   canChange: !0,
-  onChangeEmailClick: c.dG4,
+  onChangeEmailClick: m.dG4,
   onVerify: (e, t) => {},
-  onResend: c.dG4,
-  onClose: c.dG4
+  onResend: m.dG4,
+  onClose: m.dG4
 });
-let v = C
+let x = v

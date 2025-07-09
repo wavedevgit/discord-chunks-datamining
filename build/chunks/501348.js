@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(255367),
   r = n(73800),
   s = n(120356),
-  l = n.n(s),
-  a = n(442837),
+  a = n.n(s),
+  l = n(442837),
   o = n(704215),
   c = n(524437),
   d = n(780384),
@@ -19,12 +19,12 @@ var i = n(255367),
   b = n(607070),
   x = n(627845),
   _ = n(514361),
-  E = n(803038),
-  j = n(600164),
+  j = n(803038),
+  E = n(600164),
   O = n(313201),
   C = n(266454),
-  S = n(786761),
-  v = n(3148),
+  v = n(786761),
+  S = n(3148),
   T = n(739566),
   N = n(753206),
   I = n(921801),
@@ -77,41 +77,41 @@ function z(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let Y = {
+let W = {
     COZY: "cozy",
     COMPACT: "compact"
   },
-  W = (0, O.hQ)(),
+  Y = (0, O.hQ)(),
   K = (0, O.hQ)(),
   q = (0, O.hQ)(),
   X = "1337",
   Q = e => {
     let t = 0;
-    return [(0, S.e5)(z(H({}, (0, v.ZP)({
+    return [(0, v.e5)(z(H({}, (0, S.ZP)({
       channelId: X,
       content: U.intl.string(U.t.oZxkEh)
     })), {
       state: L.yb.SENT,
       id: "".concat(t++)
-    })), (0, S.e5)(z(H({}, (0, v.ZP)({
+    })), (0, v.e5)(z(H({}, (0, S.ZP)({
       channelId: X,
       content: (0, d.wj)(e) ? U.intl.string(U.t["WGb/v7"]) : U.intl.string(U.t["62m4m5"])
     })), {
       state: L.yb.SENT,
       id: "".concat(t++)
-    })), (0, S.e5)(z(H({}, (0, v.ZP)({
+    })), (0, v.e5)(z(H({}, (0, S.ZP)({
       channelId: X,
       content: U.intl.string(U.t.a0Byo6)
     })), {
       state: L.yb.SENT,
       id: "".concat(t++)
-    })), (0, S.e5)(z(H({}, (0, v.ZP)({
+    })), (0, v.e5)(z(H({}, (0, S.ZP)({
       channelId: X,
       content: U.intl.string(U.t.bmwEWF)
     })), {
       state: L.yb.SENT,
       id: "".concat(t++)
-    })), (0, S.e5)(z(H({}, (0, v.ZP)({
+    })), (0, v.e5)(z(H({}, (0, S.ZP)({
       channelId: X,
       content: U.intl.string(U.t.hK9QW1)
     })), {
@@ -138,23 +138,23 @@ class $ extends r.Component {
     return A.isPlatformEmbedded ? (0, i.jsxs)(u.xJW, {
       className: G.marginTop20,
       children: [(0, i.jsx)(u.vwX, {
-        id: W,
+        id: Y,
         tag: u.RB0.H5,
-        className: l()(V.title, G.marginBottom8),
+        className: a()(V.title, G.marginBottom8),
         children: U.intl.string(U.t.i19n5O)
       }), (0, i.jsx)(u.R94, {
         type: u.geA.DESCRIPTION,
         className: V.subtext,
         children: U.intl.string(U.t.ip0uSU)
       }), (0, i.jsx)(u.iRW, {
-        className: l()(G.marginTop20, G.marginBottom4),
+        className: a()(G.marginTop20, G.marginBottom4),
         initialValue: this.props.zoom,
         defaultValue: L.yqN.ZOOM_DEFAULT,
         markers: L.yqN.ZOOM_SCALES,
         stickToMarkers: !0,
         onValueChange: this.handleZoomChange,
         onValueRender: this.handleSliderRender,
-        "aria-labelledby": W
+        "aria-labelledby": Y
       }), (0, i.jsx)(u.R94, {
         type: u.R94.Types.DESCRIPTION,
         children: U.intl.format(U.t.OMkSUl, {
@@ -169,16 +169,16 @@ class $ extends r.Component {
       children: [(0, i.jsx)(u.vwX, {
         id: K,
         tag: u.RB0.H5,
-        className: l()(V.title, G.marginBottom8),
+        className: a()(V.title, G.marginBottom8),
         children: U.intl.string(U.t.qPOqoK)
       }), (0, i.jsx)(u.R94, {
         type: u.geA.DESCRIPTION,
         className: V.subtext,
         children: "Increase or decrease the size of the chat font"
-      }), (0, i.jsx)(j.Z, {
-        align: j.Z.Align.CENTER,
+      }), (0, i.jsx)(E.Z, {
+        align: E.Z.Align.CENTER,
         children: (0, i.jsx)(u.iRW, {
-          className: l()({
+          className: a()({
             [G.marginTop20]: !1,
             [G.marginBottom4]: !1
           }),
@@ -205,7 +205,7 @@ class $ extends r.Component {
       children: [(0, i.jsx)(u.vwX, {
         id: q,
         tag: u.RB0.H5,
-        className: l()(V.title, G.marginBottom8),
+        className: a()(V.title, G.marginBottom8),
         children: U.intl.string(U.t.Q6lKkp)
       }), (0, i.jsx)(u.R94, {
         type: u.geA.DESCRIPTION,
@@ -233,7 +233,7 @@ class $ extends r.Component {
     } = this.props, s = (0, d.wj)(t) ? this.darkMessages : this.lightMessages;
     return (0, i.jsx)(u.Rny, {
       children: (0, i.jsx)(u.Zbd, {
-        className: l()(V.preview, G.marginBottom40, e ? V.compactPreview : void 0, "group-spacing-".concat(null != n ? n : e ? M.c8 : M.pq)),
+        className: a()(V.preview, G.marginBottom40, e ? V.compactPreview : void 0, "group-spacing-".concat(null != n ? n : e ? M.c8 : M.pq)),
         outline: !0,
         "aria-hidden": !0,
         children: s.map((t, n) => (0, i.jsx)(N.Z, {
@@ -252,7 +252,7 @@ class $ extends r.Component {
       useForcedColors: e
     } = this.props;
     return e ? (0, i.jsx)(u.xJW, {
-      className: l()(G.marginTop8, G.marginBottom40),
+      className: a()(G.marginTop8, G.marginBottom40),
       title: (0, i.jsx)("div", {
         className: V.themeTitle,
         children: (0, i.jsx)("div", {
@@ -288,13 +288,13 @@ class $ extends r.Component {
       children: [(0, i.jsx)(u.FXm, {
         options: [{
           name: U.intl.string(U.t.KZIadn),
-          value: Y.COZY
+          value: W.COZY
         }, {
           name: U.intl.string(U.t["6+nTjY"]),
-          value: Y.COMPACT
+          value: W.COMPACT
         }],
         onChange: this.handleMessageDisplayModeChange,
-        value: this.props.messageDisplayCompact ? Y.COMPACT : Y.COZY
+        value: this.props.messageDisplayCompact ? W.COMPACT : W.COZY
       }), (0, i.jsx)(u.j7V, {
         value: this.props.messageDisplayCompact && this.props.displayCompactAvatars,
         disabled: !this.props.messageDisplayCompact,
@@ -359,7 +359,7 @@ class $ extends r.Component {
     return (0, i.jsx)(u.xJW, {
       title: (0, i.jsx)(u.Text, {
         variant: "text-lg/medium",
-        className: l()(V.timeTitle, V.title),
+        className: a()(V.timeTitle, V.title),
         children: U.intl.string(U.t.dyamEB)
       }),
       children: (0, i.jsx)(u.FXm, {
@@ -447,7 +447,7 @@ class $ extends r.Component {
       let {
         value: t
       } = e;
-      D.jU.updateSetting(t === Y.COMPACT), (0, f.ZZ)()
+      D.jU.updateSetting(t === W.COMPACT), (0, f.ZZ)()
     }), F(this, "handleUIDensityChange", e => {
       let {
         value: t
@@ -495,7 +495,7 @@ class ee extends $ {
       }), (0, i.jsx)(u.$i$, {
         className: V.divider
       })]
-    }), l = (0, i.jsxs)(I.F, {
+    }), a = (0, i.jsxs)(I.F, {
       setting: k.s6.APPEARANCE_MESSAGE_DISPLAY_COMPACT,
       children: [(0, i.jsxs)(u.Kqy, {
         gap: 8,
@@ -521,13 +521,13 @@ class ee extends $ {
         }), (0, i.jsx)(u.FXm, {
           options: [{
             name: U.intl.string(U.t.Jqj4cX),
-            value: Y.COZY
+            value: W.COZY
           }, {
             name: U.intl.string(U.t["1JNcPT"]),
-            value: Y.COMPACT
+            value: W.COMPACT
           }],
           onChange: this.handleMessageDisplayModeChange,
-          value: this.props.messageDisplayCompact ? Y.COMPACT : Y.COZY
+          value: this.props.messageDisplayCompact ? W.COMPACT : W.COZY
         }), this.props.messageDisplayCompact && (0, i.jsx)(u.j7V, {
           className: V.compactModeToggle,
           hideBorder: !0,
@@ -541,7 +541,7 @@ class ee extends $ {
       }), this.renderMessageGroupSpacingSlider(), (0, i.jsx)(u.$i$, {
         className: V.divider
       })]
-    }), a = (0, i.jsxs)(I.F, {
+    }), l = (0, i.jsxs)(I.F, {
       setting: k.s6.APPEARANCE_SCALING_SPACING,
       children: [(0, i.jsx)(u.Text, {
         variant: "text-lg/medium",
@@ -565,7 +565,7 @@ class ee extends $ {
     return (0, i.jsxs)(u.hjN, {
       tag: u.RB0.H1,
       title: U.intl.string(U.t["iHH+k5"]),
-      children: [t, n, s, l, a, o, d]
+      children: [t, n, s, a, l, o, d]
     })
   }
 }
@@ -581,9 +581,9 @@ function en() {
     t = D.RS.useSetting(),
     n = D.NA.useSetting(),
     s = D.L1.useSetting(),
-    l = D.hg.useSetting(),
+    a = D.hg.useSetting(),
     c = D.YC.useSetting(),
-    d = E.M.useExperiment({
+    d = j.M.useExperiment({
       location: "UserSettingsAppearance"
     }).enabled;
   (0, g.ZP)(() => {
@@ -591,7 +591,7 @@ function en() {
   }), r.useEffect(() => {
     d && et(o.z.CLIENT_THEMES_APPEARANCE_SETTINGS_NEW_BADGE)
   }, [d]);
-  let u = (0, a.cj)([P.Z, R.ZP, b.Z, y.default, _.Z], () => {
+  let u = (0, l.cj)([P.Z, R.ZP, b.Z, y.default, _.Z], () => {
     var e, t;
     return {
       theme: P.Z.theme,
@@ -610,7 +610,7 @@ function en() {
     messageDisplayCompact: e,
     hideSimpleEmbedContent: t && n,
     clientTheme: s,
-    timestampHourCycle: l,
+    timestampHourCycle: a,
     density: c
   }, u))
 }

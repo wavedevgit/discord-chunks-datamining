@@ -1,12 +1,12 @@
 /** Chunk was on 31649 **/
 n.d(e, {
-  Z: () => a
+  Z: () => r
 });
 var l = n(481060),
-  r = n(695346);
+  a = n(695346);
 
-function a() {
-  switch (r.co.getSetting()) {
+function r() {
+  switch (a.co.getSetting()) {
     case l.Skl.IDLE:
       return l.Skl.IDLE;
     case l.Skl.DND:

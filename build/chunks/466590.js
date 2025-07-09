@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(255367),
   r = n(73800),
   s = n(680018),
-  l = n(481060),
-  a = n(920155),
+  a = n(481060),
+  l = n(920155),
   o = n(454028),
   c = n(966902),
   d = n(237872),
@@ -36,15 +36,15 @@ function g(e) {
 function h(e) {
   var t, n, h, f, b, x, {
       steps: _,
-      caretConfig: E = {
+      caretConfig: j = {
         position: "bottom",
         align: "center"
       },
-      size: j = "md",
+      size: E = "md",
       onStepChange: O,
       onRequestClose: C,
-      popoverRef: S,
-      shouldShow: v
+      popoverRef: v,
+      shouldShow: S
     } = e,
     T = function(e, t) {
       if (null == e) return {};
@@ -63,8 +63,8 @@ function h(e) {
     }(e, ["steps", "caretConfig", "size", "onStepChange", "onRequestClose", "popoverRef", "shouldShow"]);
   let [N, I] = r.useState(0);
   r.useEffect(() => {
-    v && I(0)
-  }, [v]), r.useEffect(() => {
+    S && I(0)
+  }, [S]), r.useEffect(() => {
     null == O || O(N)
   }, [N, O]);
   let y = _[N],
@@ -79,24 +79,24 @@ function h(e) {
     D = r.useCallback(() => {
       null == C || C()
     }, [C]);
-  if (!v || null == y) return null;
+  if (!S || null == y) return null;
   let Z = g({
     text: null != (b = null == (h = y.button) ? void 0 : h.text) ? b : A ? m.intl.string(m.t.i4jeWV) : m.intl.string(m.t.PDTjLC),
     variant: null != (x = null == (f = y.button) ? void 0 : f.variant) ? x : "primary",
     onClick: P
   }, y.button);
-  return (0, i.jsx)(a.m, (t = g({}, T), n = n = {
-    shouldShow: v,
+  return (0, i.jsx)(l.m, (t = g({}, T), n = n = {
+    shouldShow: S,
     onRequestClose: R,
     gradientColor: y.gradientColor,
     children: (0, i.jsxs)("div", {
-      ref: S,
+      ref: v,
       children: [(0, i.jsx)(d.u, {
         onClick: D,
         colorMix: null != y.gradientColor
       }), (0, i.jsx)(o.V, {
         asset: y.asset,
-        size: j
+        size: E
       }), (0, i.jsx)(u.Y, {
         title: y.title,
         body: y.body,
@@ -106,7 +106,7 @@ function h(e) {
         className: p.actionBar,
         children: (0, i.jsxs)("div", {
           className: p.multistepActionLayout,
-          children: [(0, i.jsx)(l.Text, {
+          children: [(0, i.jsx)(a.Text, {
             variant: "text-xs/normal",
             className: p.multistepIndicator,
             children: m.intl.formatToPlainString(m.t.rO31eX, {
@@ -118,7 +118,7 @@ function h(e) {
           }, Z))]
         })
       }), (0, i.jsx)(c.$, {
-        caretConfig: E
+        caretConfig: j
       })]
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

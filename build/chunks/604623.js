@@ -175,12 +175,14 @@ function C(e) {
         text: v.intl.string(v.t["8aYImJ"]),
         children: e => {
           var t, r;
-          return (0, n.jsx)(d.zxk, (t = O({}, e), r = r = {
+          return (0, n.jsx)(d.zxk, (t = O({
+            variant: "primary",
+            text: v.intl.string(v.t.R3BPHx)
+          }, e), r = r = {
             "aria-label": v.intl.string(v.t.R3BPHx),
             disabled: !f,
-            submitting: c,
-            onClick: g,
-            children: v.intl.string(v.t.R3BPHx)
+            loading: c,
+            onClick: g
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
             var r = Object.keys(e);
             if (Object.getOwnPropertySymbols) {

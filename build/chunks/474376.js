@@ -1,13 +1,13 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  g: () => j
+  g: () => E
 }), n(539854);
 var i = n(255367);
 n(73800);
 var r = n(442837),
   s = n(780384),
-  l = n(481060),
-  a = n(44315),
+  a = n(481060),
+  l = n(44315),
   o = n(210887),
   c = n(598077),
   d = n(246946),
@@ -20,12 +20,12 @@ var r = n(442837),
   b = n(383832),
   x = n(981631),
   _ = n(388032),
-  E = n(965695);
+  j = n(965695);
 
-function j(e) {
+function E(e) {
   let t = (0, r.e7)([u.default], () => u.default.getCurrentUser()),
     n = (0, r.e7)([d.Z], () => d.Z.hidePersonalInformation),
-    j = (0, r.e7)([o.Z], () => (0, s.wj)(o.Z.theme)),
+    E = (0, r.e7)([o.Z], () => (0, s.wj)(o.Z.theme)),
     {
       multiAccountUsers: O
     } = (0, f.L)(),
@@ -36,48 +36,48 @@ function j(e) {
         }
       }), g.yD(e))
     },
-    S = O.map(r => {
+    v = O.map(r => {
       let s = new c.Z(r),
         o = s.id === (null == t ? void 0 : t.id),
         d = r.tokenStatus === h.q.INVALID,
         u = n ? null : "#".concat(s.discriminator);
-      return (0, i.jsx)(l.sNh, {
+      return (0, i.jsx)(a.sNh, {
         id: s.id,
-        focusedClassName: E.focused,
+        focusedClassName: j.focused,
         label: e => {
           let {
             isFocused: t
           } = e;
           return (0, i.jsxs)("div", {
-            className: E.userMenuItem,
-            children: [(0, i.jsx)(l.qEK, {
+            className: j.userMenuItem,
+            children: [(0, i.jsx)(a.qEK, {
               src: s.getAvatarURL(void 0, 40),
-              size: l.EFr.SIZE_24,
+              size: a.EFr.SIZE_24,
               "aria-label": r.username
             }), (0, i.jsxs)("div", {
-              className: E.userMenuUsername,
-              children: [(0, i.jsx)(l.Text, {
-                className: E.userMenuText,
+              className: j.userMenuUsername,
+              children: [(0, i.jsx)(a.Text, {
+                className: j.userMenuText,
                 variant: "text-sm/normal",
                 children: p.ZP.getUserTag(s, {
                   mode: "username",
                   identifiable: n ? "never" : "always"
                 })
-              }), !s.isPomelo() && (0, i.jsx)(l.Text, {
-                className: E.userMenuDiscriminator,
+              }), !s.isPomelo() && (0, i.jsx)(a.Text, {
+                className: j.userMenuDiscriminator,
                 variant: "text-sm/normal",
                 children: u
               })]
-            }), o && (0, i.jsx)(l.owK, {
+            }), o && (0, i.jsx)(a.owK, {
               size: "sm",
-              color: (0, a.Lq)(t ? x.Ilk.WHITE_500 : x.Ilk.BRAND_500),
-              secondaryColor: (0, a.Lq)(t && j || t && !j ? x.Ilk.BRAND_500 : x.Ilk.WHITE_500),
-              className: E.activeIcon
-            }), d && (0, i.jsx)(l.P4T, {
-              color: (0, a.Lq)(x.Ilk.RED_400),
-              secondaryColor: (0, a.Lq)(t && j || t && !j ? x.Ilk.BRAND_500 : x.Ilk.WHITE_500),
+              color: (0, l.Lq)(t ? x.Ilk.WHITE_500 : x.Ilk.BRAND_500),
+              secondaryColor: (0, l.Lq)(t && E || t && !E ? x.Ilk.BRAND_500 : x.Ilk.WHITE_500),
+              className: j.activeIcon
+            }), d && (0, i.jsx)(a.P4T, {
+              color: (0, l.Lq)(x.Ilk.RED_400),
+              secondaryColor: (0, l.Lq)(t && E || t && !E ? x.Ilk.BRAND_500 : x.Ilk.WHITE_500),
               size: "xs",
-              className: E.activeIcon
+              className: j.activeIcon
             })]
           })
         },
@@ -86,13 +86,13 @@ function j(e) {
         }
       }, s.id)
     });
-  return S.push((0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(l.Clw, {}), (0, i.jsx)(l.sNh, {
+  return v.push((0, i.jsxs)(i.Fragment, {
+    children: [(0, i.jsx)(a.Clw, {}), (0, i.jsx)(a.sNh, {
       id: "manage-accounts",
       label: _.intl.string(_.t.WbFpq6),
       action: () => {
         null == e || e(), (0, b.Z)()
       }
     })]
-  })), S
+  })), v
 }

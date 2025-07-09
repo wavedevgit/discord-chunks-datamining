@@ -1,10 +1,10 @@
 /** Chunk was on 61668 **/
 n.d(t, {
   $e: () => w,
-  $w: () => D,
+  $w: () => M,
   Og: () => U,
-  ZY: () => M,
-  sc: () => k,
+  ZY: () => k,
+  sc: () => L,
   zs: () => F
 }), n(314940), n(953529);
 var r = n(255367),
@@ -276,7 +276,7 @@ function R(e) {
   })
 }
 
-function k(e) {
+function L(e) {
   let {
     className: t,
     emoji: n
@@ -289,14 +289,14 @@ function k(e) {
   })
 }
 
-function L(e, t) {
+function D(e, t) {
   return null != e ? (0, r.jsx)("div", {
     className: e,
     children: t
   }) : t
 }
 
-function D(e) {
+function M(e) {
   let {
     media: t,
     containerClassName: n,
@@ -311,18 +311,18 @@ function D(e) {
       var n;
       return e.id === (null == (n = t.attachmentIds) ? void 0 : n[0])
     });
-    if (null != e) return L(n, (0, r.jsx)(R, {
+    if (null != e) return D(n, (0, r.jsx)(R, {
       className: i,
       attachment: e
     }))
   }
-  return null != t.emoji ? L(n, (0, r.jsx)(k, {
+  return null != t.emoji ? D(n, (0, r.jsx)(L, {
     className: l,
     emoji: t.emoji
   })) : void 0 !== a ? a : null
 }
 
-function M(e) {
+function k(e) {
   let {
     isVictor: t,
     isExpired: n,

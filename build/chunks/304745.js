@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(442837),
-  o = n(704215),
-  a = n(481060),
+  a = n(704215),
+  o = n(481060),
   s = n(911969),
   c = n(40851),
   u = n(317381),
@@ -36,10 +36,10 @@ function S(e) {
     isHovered: A,
     setIsHovered: w,
     onMouseEnter: R,
-    onMouseLeave: k
-  } = (0, C.Z)(200, 300), M = (0, d.p)({
+    onMouseLeave: M
+  } = (0, C.Z)(200, 300), D = (0, d.p)({
     surface: s.eR.VOICE_LAUNCHER
-  }), D = (0, l.e7)([u.ZP], () => null != u.ZP.getSelfEmbeddedActivityForLocation(u.ZP.getConnectedActivityLocation())), L = !T, U = i.useCallback(e => {
+  }), L = (0, l.e7)([u.ZP], () => null != u.ZP.getSelfEmbeddedActivityForLocation(u.ZP.getConnectedActivityLocation())), k = !T, U = i.useCallback(e => {
     "focus" !== e.type && R()
   }, [R]), B = (0, c.bp)() === O.IlC.POPOUT, {
     analyticsLocations: F,
@@ -51,7 +51,7 @@ function S(e) {
       analyticsLocations: F
     })
   }, [F, t, B, H]), V = [];
-  T || V.push(o.z.ACTIVITIES_MINI_SHELF_SPARKLES), (0, h.Z)(t.id) && !T && V.push(o.z.ACTIVITY_GDM_ROCKET_SPARKLE), T || V.push(o.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP);
+  T || V.push(a.z.ACTIVITIES_MINI_SHELF_SPARKLES), (0, h.Z)(t.id) && !T && V.push(a.z.ACTIVITY_GDM_ROCKET_SPARKLE), T || V.push(a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP);
   let z = i.useRef(!1),
     W = i.useRef(null);
   return (0, r.jsx)(y.ZP, {
@@ -60,12 +60,12 @@ function S(e) {
       let {
         visibleContent: i,
         markAsDismissed: l
-      } = e, s = i === o.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP && !n && !A;
-      return z.current && !s && l(j.L.AUTO_DISMISS), z.current !== s && (z.current = s), (0, r.jsx)(a.yRy, {
+      } = e, s = i === a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP && !n && !A;
+      return z.current && !s && l(j.L.AUTO_DISMISS), z.current !== s && (z.current = s), (0, r.jsx)(o.yRy, {
         targetElementRef: W,
         fixed: !0,
         shouldShow: A && (S === v.D.ACTIVITY || null == S),
-        animation: a.yRy.Animation.FADE,
+        animation: o.yRy.Animation.FADE,
         animationPosition: "top",
         position: "top",
         align: "center",
@@ -78,35 +78,35 @@ function S(e) {
             closePopout: n,
             setPopoutRef: i
           } = e;
-          return L ? (0, r.jsx)(f.m, {
+          return k ? (0, r.jsx)(f.m, {
             ref: e => {
               null == i || i(e)
             },
             channel: t,
             closePopout: n,
             onMouseEnter: R,
-            onMouseLeave: k,
+            onMouseLeave: M,
             isHovered: A,
             onClick: () => l(j.L.UNKNOWN)
           }) : (0, r.jsx)(r.Fragment, {})
         },
         children: () => (0, r.jsx)(y.Xf, {
-          contentType: o.z.ACTIVITIES_VOICE_LAUNCHER_BADGE,
-          latestVersion: M,
+          contentType: a.z.ACTIVITIES_VOICE_LAUNCHER_BADGE,
+          latestVersion: D,
           children: e => {
             let {
               visibleContent: t,
               markAsDismissed: n
             } = e;
             return (0, r.jsxs)(r.Fragment, {
-              children: [(0, r.jsx)(a.ua7, {
+              children: [(0, r.jsx)(o.ua7, {
                 text: E.intl.string(E.t.P8vmUl),
-                color: a.FGA.BRAND,
+                color: o.FGA.BRAND,
                 forceOpen: !0,
                 shouldShow: s,
                 children: e => {
-                  var a, s;
-                  return (0, r.jsx)("div", (a = function(e) {
+                  var o, s;
+                  return (0, r.jsx)("div", (o = function(e) {
                     for (var t = 1; t < arguments.length; t++) {
                       var n = null != arguments[t] ? arguments[t] : {},
                         r = Object.keys(n);
@@ -129,15 +129,15 @@ function S(e) {
                     children: (0, r.jsx)(x.Z, {
                       disabled: T,
                       "aria-label": N,
-                      label: L ? void 0 : N,
-                      isActivityActive: D,
+                      label: k ? void 0 : N,
+                      isActivityActive: L,
                       onClick: () => {
-                        G(), (i === o.z.ACTIVITIES_MINI_SHELF_SPARKLES || i === o.z.ACTIVITY_GDM_ROCKET_SPARKLE || i === o.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES || i === o.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES || i === o.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP) && l(j.L.TAKE_ACTION), t === o.z.ACTIVITIES_VOICE_LAUNCHER_BADGE && n(j.L.TAKE_ACTION)
+                        G(), (i === a.z.ACTIVITIES_MINI_SHELF_SPARKLES || i === a.z.ACTIVITY_GDM_ROCKET_SPARKLE || i === a.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES || i === a.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES || i === a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP) && l(j.L.TAKE_ACTION), t === a.z.ACTIVITIES_VOICE_LAUNCHER_BADGE && n(j.L.TAKE_ACTION)
                       },
                       onMouseEnter: U,
-                      onMouseLeave: k
+                      onMouseLeave: M
                     })
-                  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
+                  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
                     var n = Object.keys(e);
                     if (Object.getOwnPropertySymbols) {
                       var r = Object.getOwnPropertySymbols(e);
@@ -145,10 +145,10 @@ function S(e) {
                     }
                     return n
                   })(Object(s)).forEach(function(e) {
-                    Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(s, e))
-                  }), a))
+                    Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(s, e))
+                  }), o))
                 }
-              }), t === o.z.ACTIVITIES_VOICE_LAUNCHER_BADGE ? (0, r.jsx)(m.r, {
+              }), t === a.z.ACTIVITIES_VOICE_LAUNCHER_BADGE ? (0, r.jsx)(m.r, {
                 top: 2,
                 right: 2,
                 size: 6

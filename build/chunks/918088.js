@@ -100,14 +100,14 @@ function N(e, t) {
     w = null == (r = u.Z.getChannel(e.getChannelId())) || null == (n = r.getGuildId) ? void 0 : n.call(r),
     Z = null != w ? d.ZP.getSelfMember(w) : null,
     R = (0, s.EY)(Z),
-    k = (0, c.b)(Z),
-    L = !b && I && !N && m && !R && !k;
+    L = (0, c.b)(Z),
+    D = !b && I && !N && m && !R && !L;
   return {
     poll: o,
     canTapAnswers: A,
     canRemoveVote: N && m && !_,
     canShowVoteCounts: P,
-    canSubmitVote: L,
+    canSubmitVote: D,
     expirationLabel: f,
     hasSelectedAnswer: I,
     hasVoted: N,
@@ -148,10 +148,10 @@ function P(e, t) {
   let {
     canTapAnswers: Z,
     canRemoveVote: R,
-    canShowVoteCounts: k,
-    canSubmitVote: L,
-    expirationLabel: D = O.intl.string(O.t["e+J3JS"]),
-    hasSelectedAnswer: M,
+    canShowVoteCounts: L,
+    canSubmitVote: D,
+    expirationLabel: M = O.intl.string(O.t["e+J3JS"]),
+    hasSelectedAnswer: k,
     hasVoted: U,
     isEditingVote: F,
     isExpired: B,
@@ -229,7 +229,7 @@ function P(e, t) {
     }
   }), J = (0, r.EQ)({
     isExpired: B,
-    canSubmitVote: L,
+    canSubmitVote: D,
     hasVoted: U,
     isEditingVote: F,
     canRemoveVote: R,
@@ -244,7 +244,7 @@ function P(e, t) {
   }, () => ({
     label: O.intl.string(O.t.JwkNU1),
     presentation: "button",
-    enabled: M,
+    enabled: k,
     type: "submit"
   })).with({
     canRemoveVote: !0
@@ -264,7 +264,7 @@ function P(e, t) {
   })).otherwise(() => ({
     label: O.intl.string(O.t.JwkNU1),
     presentation: "button",
-    enabled: L,
+    enabled: D,
     type: "submit"
   })), $ = (0, g.isIOS)() ? O.intl.string(O.t.PVATMz) : O.intl.string(O.t.cHfFqq), ee = (0, r.EQ)({
     isExpired: B,
@@ -286,7 +286,7 @@ function P(e, t) {
     type: "cancel"
   })).otherwise(() => ({
     label: X,
-    secondaryLabel: D,
+    secondaryLabel: M,
     accessibilityHint: $,
     presentation: "text",
     enabled: !0,
@@ -335,8 +335,8 @@ function P(e, t) {
     isInteractive: G,
     canTapAnswers: Z,
     canSelectMultipleAnswers: en,
-    hasSelectedAnswer: M,
-    canShowVoteCounts: k,
+    hasSelectedAnswer: k,
+    canShowVoteCounts: L,
     hasVoted: U,
     isExpired: B,
     myAvatarUrl: T,

@@ -4,16 +4,16 @@ r.d(s, {
 }), r(953529);
 var o = r(255367);
 r(73800);
-var n = r(512722),
-  i = r.n(n),
+var i = r(512722),
+  n = r.n(i),
   a = r(990547),
   t = r(442837),
   d = r(481060),
   l = r(782568),
   c = r(213609),
   p = r(357352),
-  u = r(313201),
-  m = r(70097),
+  m = r(313201),
+  u = r(70097),
   _ = r(434404),
   h = r(690221),
   b = r(695346),
@@ -29,14 +29,14 @@ function L(e) {
   let {
     transitionState: s,
     onClose: r,
-    guildId: n,
+    guildId: i,
     markAsDismissed: L
-  } = e, j = (0, u.Dt)(), I = (0, t.e7)([g.Z], () => g.Z.getGuild(n));
-  i()(null != I, "Guild must be defined"), (0, c.Z)({
+  } = e, j = (0, m.Dt)(), I = (0, t.e7)([g.Z], () => g.Z.getGuild(i));
+  n()(null != I, "Guild must be defined"), (0, c.Z)({
     type: C.n.MODAL,
     name: a.ImpressionNames.GUILD_SHOP_UPSELL,
     properties: {
-      passed_in_guild_id: n
+      passed_in_guild_id: i
     }
   });
   let O = b.QK.useSetting();
@@ -82,7 +82,7 @@ function L(e) {
         src: (0, p.b)("server_products/upsell/demo2.png"),
         alt: "",
         className: R.demo
-      }) : (0, o.jsx)(m.Z, {
+      }) : (0, o.jsx)(u.Z, {
         autoPlay: !0,
         loop: !0,
         className: R.demo,
@@ -96,10 +96,11 @@ function L(e) {
       })]
     }), (0, o.jsxs)(d.mzw, {
       children: [(0, o.jsx)(d.zxk, {
+        variant: "primary",
+        text: "Check it out",
         onClick: () => {
-          v.some(e => I.features.has(e)) ? _.Z.open(n, N.pNK.GUILD_PRODUCTS) : _.Z.open(n, N.pNK.ROLE_SUBSCRIPTIONS), L(S.L.PRIMARY), r()
-        },
-        children: "Check it out"
+          v.some(e => I.features.has(e)) ? _.Z.open(i, N.pNK.GUILD_PRODUCTS) : _.Z.open(i, N.pNK.ROLE_SUBSCRIPTIONS), L(S.L.PRIMARY), r()
+        }
       }), (0, o.jsx)(d.LZC, {
         size: 12,
         horizontal: !0

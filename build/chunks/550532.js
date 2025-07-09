@@ -1,10 +1,10 @@
 /** Chunk was on 93886 **/
-n.d(t, {
+a.d(t, {
   Z: () => u
 });
-var a, r, l, i = n(442837),
-  s = n(570140),
-  o = n(780106);
+var n, r, l, i = a(442837),
+  s = a(570140),
+  o = a(780106);
 let c = "None";
 class d extends(l = i.ZP.Store) {
   getFakeGameToShow() {
@@ -14,12 +14,12 @@ class d extends(l = i.ZP.Store) {
     return o.O[c]
   }
 }
-r = "ContentInventoryDevToolsStore", (a = "displayName") in d ? Object.defineProperty(d, a, {
+r = "ContentInventoryDevToolsStore", (n = "displayName") in d ? Object.defineProperty(d, n, {
   value: r,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : d[a] = r;
+}) : d[n] = r;
 let u = new d(s.Z, {
   CONTENT_INVENTORY_FORCE_SHOW_GAME_SHARING: function(e) {
     let {

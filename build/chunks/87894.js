@@ -1,13 +1,13 @@
 /** Chunk was on 37447 **/
 n.d(t, {
-  DJ: () => l,
+  DJ: () => a,
   U0: () => u,
   W_: () => o,
   Z$: () => c,
   Z0: () => m,
   iM: () => i,
   j2: () => d,
-  jc: () => a,
+  jc: () => l,
   uq: () => s
 });
 var r = n(497505);
@@ -29,8 +29,8 @@ function i(e) {
   } = t;
   return (null == r ? void 0 : r.enrolledAt) != null && null == r.completedAt || o(n)
 }
-let l = 100,
-  a = 20,
+let a = 100,
+  l = 20,
   c = 32,
   u = 1e3,
   d = 460,

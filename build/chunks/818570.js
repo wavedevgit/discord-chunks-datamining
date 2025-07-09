@@ -1,58 +1,59 @@
 /** Chunk was on 61668 **/
 n.d(t, {
-  Z: () => d
+  Z: () => p
 });
 var r = n(255367);
 n(73800);
-var i = n(481060),
-  l = n(767714),
-  a = n(834129),
-  o = n(981631),
-  s = n(474936),
-  c = n(388032),
-  u = n(806725);
+var i = n(755721),
+  l = n(481060),
+  a = n(767714),
+  o = n(834129),
+  s = n(981631),
+  c = n(474936),
+  u = n(388032),
+  d = n(806725);
 
-function d(e) {
+function p(e) {
   let {
     message: t,
     channel: n
-  } = e, d = null != n.guild_id ? o.jXE.TEXT_IN_VOICE : o.jXE.CHANNEL_TEXT_AREA;
-  return (0, r.jsx)(a.Z, {
-    contentClassName: u.messageContentContainer,
-    iconContainerClassName: u.iconContainer,
-    iconNode: (0, r.jsx)(i.Dkj, {
-      colorClass: u.icon
+  } = e, p = null != n.guild_id ? s.jXE.TEXT_IN_VOICE : s.jXE.CHANNEL_TEXT_AREA;
+  return (0, r.jsx)(o.Z, {
+    contentClassName: d.messageContentContainer,
+    iconContainerClassName: d.iconContainer,
+    iconNode: (0, r.jsx)(l.Dkj, {
+      colorClass: d.icon
     }),
     children: (0, r.jsxs)("div", {
-      className: u.container,
+      className: d.container,
       children: [(0, r.jsxs)("div", {
-        children: [(0, r.jsx)(i.Text, {
+        children: [(0, r.jsx)(l.Text, {
           variant: "text-sm/medium",
           children: t.content
         }), (0, r.jsxs)("div", {
-          className: u.nitroBadge,
-          children: [(0, r.jsx)(i.SrA, {
+          className: d.nitroBadge,
+          children: [(0, r.jsx)(l.SrA, {
             size: "xs",
-            colorClass: u.nitroBadgeIcon
-          }), (0, r.jsx)(i.Text, {
+            colorClass: d.nitroBadgeIcon
+          }), (0, r.jsx)(l.Text, {
             variant: "text-xs/medium",
-            className: u.nitroBadgeText,
-            children: c.intl.string(c.t["BMw+7O"])
+            className: d.nitroBadgeText,
+            children: u.intl.string(u.t["BMw+7O"])
           })]
         })]
       }), (0, r.jsx)("div", {
-        className: u.buttonContainer,
-        children: (0, r.jsx)(l.Z, {
+        className: d.buttonContainer,
+        children: (0, r.jsx)(a.Z, {
           showGradient: !0,
-          iconClassName: u.premiumIcon,
-          subscriptionTier: s.Si.TIER_2,
+          iconClassName: d.premiumIcon,
+          subscriptionTier: c.Si.TIER_2,
           textOptions: {
-            textOverride: c.intl.string(c.t.Y2WKTk)
+            textOverride: u.intl.string(u.t.Y2WKTk)
           },
-          size: i.zxk.Sizes.SMALL,
+          size: i.zx.Sizes.SMALL,
           premiumModalAnalyticsLocation: {
-            section: d,
-            object: o.qAy.MESSAGE
+            section: p,
+            object: s.qAy.MESSAGE
           }
         })
       })]

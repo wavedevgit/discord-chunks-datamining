@@ -188,10 +188,11 @@ function E(e) {
           "aria-hidden": !0,
           children: x
         }), (0, r.jsx)(c.zxk, {
-          size: c.zxk.Sizes.SMALL,
+          variant: "primary",
+          size: "sm",
+          text: b.intl.string(b.t["PMsq/f"]),
           disabled: !y,
-          type: "submit",
-          children: b.intl.string(b.t["PMsq/f"])
+          type: "submit"
         })]
       })
     }), null != w && (0, r.jsx)(c.R94, {

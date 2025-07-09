@@ -92,10 +92,10 @@ let P = i.forwardRef((e, t) => {
       onContentClick: R,
       onHeaderClick: Z,
       onTargetContextMenu: D,
-      onUserContextMenu: k,
-      theme: A
+      onUserContextMenu: A,
+      theme: L
     } = e,
-    L = i.useRef(null),
+    k = i.useRef(null),
     M = function() {
       let {
         changes: e
@@ -139,14 +139,14 @@ let P = i.forwardRef((e, t) => {
             }
           } = l;
           if (null != e && null != t) return (0, r.jsx)(p.Z, {
-            targetElementRef: L,
+            targetElementRef: k,
             user: e,
             guildId: _,
             newAnalyticsLocations: [m.Z.AVATAR],
             children: e => {
               var t;
               return (0, r.jsx)(d.qEK, S(E({}, e), {
-                ref: L,
+                ref: k,
                 onClick: t => {
                   t.stopPropagation(), e.onClick(t)
                 },
@@ -160,7 +160,7 @@ let P = i.forwardRef((e, t) => {
           if (null != n) {
             let e = u.Z.get(n);
             if (null != e) {
-              let t = (0, c.wj)(A) ? e.icon.darkSVG : e.icon.lightSVG;
+              let t = (0, c.wj)(L) ? e.icon.darkSVG : e.icon.lightSVG;
               return (0, r.jsx)(d.qEK, {
                 className: I.avatar,
                 src: t,
@@ -190,7 +190,7 @@ let P = i.forwardRef((e, t) => {
                   userHook: (e, t) => {
                     if (null != l.user) return (0, r.jsx)(T, {
                       user: l.user,
-                      onContextMenu: k
+                      onContextMenu: A
                     }, t);
                     if (null != l.options.integration_type) {
                       var n;

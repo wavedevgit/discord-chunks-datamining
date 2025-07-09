@@ -121,7 +121,7 @@ class v extends(i = r.PureComponent) {
         size: m.IXf
       })
     }));
-    let k = null != (e = null != L ? L : o) ? e : g.intl.string(g.t["Ge+94+"]);
+    let D = null != (e = null != L ? L : o) ? e : g.intl.string(g.t["Ge+94+"]);
     return (0, l.jsxs)("div", {
       className: a()(p.imageUploader, S),
       children: [(0, l.jsx)(d.tEY, {
@@ -138,13 +138,13 @@ class v extends(i = r.PureComponent) {
               children: i
             }), null != A ? (0, l.jsx)(d.P3F, {
               className: p.imageUploaderFileInput,
-              "aria-label": k,
+              "aria-label": D,
               onClick: A
             }) : (0, l.jsx)(h.ZP, {
               ref: this.inputRef,
               onChange: y,
               className: p.imageUploaderFileInput,
-              "aria-label": k,
+              "aria-label": D,
               tabIndex: 0,
               maxFileSizeBytes: _,
               onFileSizeError: P

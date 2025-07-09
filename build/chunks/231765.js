@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(255367),
   r = n(73800),
   s = n(392711),
-  l = n(442837),
-  a = n(692547),
+  a = n(442837),
+  l = n(692547),
   o = n(481060),
   c = n(37234),
   d = n(607070),
@@ -19,12 +19,12 @@ var i = n(255367),
   b = n(351780),
   x = n(954794),
   _ = n(112843),
-  E = n(524484),
-  j = n(981631),
+  j = n(524484),
+  E = n(981631),
   O = n(388032),
   C = n(966053);
 
-function S(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -43,7 +43,7 @@ function S(e) {
   return e
 }
 
-function v(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -66,32 +66,32 @@ let T = {
   y = (0, s.range)(1, 11),
   A = (0, s.range)(1, 26),
   P = () => [{
-    location: E.Hn.CHAT_INPUT,
+    location: j.Hn.CHAT_INPUT,
     title: O.intl.string(O.t.elTty8),
     description: O.intl.string(O.t.HtKfMj)
   }, {
-    location: E.Hn.REACTION,
+    location: j.Hn.REACTION,
     title: O.intl.string(O.t.Ik4VIS),
     description: O.intl.string(O.t.y4rqKy)
   }, {
-    location: E.Hn.MEMBER_USER,
+    location: j.Hn.MEMBER_USER,
     title: O.intl.string(O.t.ZXBlAg),
     description: O.intl.string(O.t["m9RD+f"])
   }, {
-    location: E.Hn.CALL_TILE,
+    location: j.Hn.CALL_TILE,
     title: O.intl.string(O.t.V66giY),
     description: O.intl.string(O.t.fiHV7u)
   }],
   R = () => [{
-    location: E.oZ.CHAT_INPUT,
+    location: j.oZ.CHAT_INPUT,
     title: O.intl.string(O.t.vUcvPD),
     description: O.intl.string(O.t.y00OrK)
   }, {
-    location: E.oZ.VOICE_USER,
+    location: j.oZ.VOICE_USER,
     title: O.intl.string(O.t["TcRO5+"]),
     description: O.intl.string(O.t.YJCxVV)
   }, {
-    location: E.oZ.MENTION,
+    location: j.oZ.MENTION,
     title: O.intl.string(O.t.oW4shI),
     description: O.intl.string(O.t["mqfw/P"])
   }];
@@ -102,11 +102,11 @@ function D(e) {
     locations: n,
     settingsLocations: r,
     onChange: s
-  } = e, l = n.map(e => (0, i.jsx)(o.j7V, {
+  } = e, a = n.map(e => (0, i.jsx)(o.j7V, {
     disabled: t,
     value: r[e.location],
     note: e.description,
-    onChange: t => s(v(S({}, r), {
+    onChange: t => s(S(v({}, r), {
       [e.location]: t
     })),
     children: e.title
@@ -114,7 +114,7 @@ function D(e) {
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(o.vwX, {
       children: O.intl.string(O.t.bWVN1N)
-    }), l]
+    }), a]
   })
 }
 
@@ -137,12 +137,12 @@ function w(e) {
       warningSeen: n
     },
     updateSettings: r
-  } = e, s = (0, l.e7)([d.Z], () => d.Z.useReducedMotion);
+  } = e, s = (0, a.e7)([d.Z], () => d.Z.useReducedMotion);
   return (0, i.jsx)(o.j7V, {
     value: t,
     note: O.intl.string(O.t.KuYbWF),
     onChange: e => {
-      e || (0, g.T)(h.hn.DISABLE_POGGERMODE), e && (!n || s) ? (0, o.h7j)(e => (0, i.jsx)(o.ConfirmModal, v(S({
+      e || (0, g.T)(h.hn.DISABLE_POGGERMODE), e && (!n || s) ? (0, o.h7j)(e => (0, i.jsx)(o.ConfirmModal, S(v({
         header: s ? O.intl.string(O.t["FxT+p6"]) : O.intl.string(O.t.TAZ4Fx),
         confirmText: O.intl.string(O.t.JFfinp),
         cancelText: O.intl.string(O.t["ETE/oK"]),
@@ -170,9 +170,9 @@ function k(e) {
       confettiEnabled: n,
       confettiCount: r,
       confettiSize: s,
-      confettiEnabledLocations: l
+      confettiEnabledLocations: a
     },
-    updateSettings: a
+    updateSettings: l
   } = e, c = !t || !n;
   return (0, i.jsxs)(o.hjN, {
     tag: o.RB0.H1,
@@ -181,7 +181,7 @@ function k(e) {
       disabled: !t,
       value: n,
       note: O.intl.string(O.t.O1Vflp),
-      onChange: e => a({
+      onChange: e => l({
         confettiEnabled: e
       }, 0),
       children: O.intl.string(O.t.s0KCgI)
@@ -198,7 +198,7 @@ function k(e) {
         minValue: y[0],
         maxValue: y[y.length - 1],
         initialValue: r,
-        onValueChange: e => a({
+        onValueChange: e => l({
           confettiCount: e
         }, 0),
         onValueRender: e => "".concat(e)
@@ -216,7 +216,7 @@ function k(e) {
         minValue: A[0],
         maxValue: A[A.length - 1],
         initialValue: s,
-        onValueChange: e => a({
+        onValueChange: e => l({
           confettiSize: e
         }, 0),
         onValueRender: e => "".concat(e)
@@ -224,8 +224,8 @@ function k(e) {
     }), (0, i.jsx)(D, {
       disabled: c,
       locations: P(),
-      settingsLocations: l,
-      onChange: e => a({
+      settingsLocations: a,
+      onChange: e => l({
         confettiEnabledLocations: e
       }, 0)
     })]
@@ -240,8 +240,8 @@ function L(e) {
       comboSoundsEnabled: r,
       combosRequiredCount: s
     },
-    updateSettings: l
-  } = e, a = !t || !n;
+    updateSettings: a
+  } = e, l = !t || !n;
   return (0, i.jsxs)(o.hjN, {
     tag: o.RB0.H1,
     title: O.intl.string(O.t.Xz0olZ),
@@ -249,7 +249,7 @@ function L(e) {
       disabled: !t,
       value: n,
       note: O.intl.string(O.t["31Z8ER"]),
-      onChange: e => l({
+      onChange: e => a({
         combosEnabled: e
       }),
       children: O.intl.string(O.t.o3iV7O)
@@ -257,24 +257,24 @@ function L(e) {
       disabled: !t,
       value: r,
       note: O.intl.string(O.t["9rgQEh"]),
-      onChange: e => l({
+      onChange: e => a({
         comboSoundsEnabled: e
       }),
       children: O.intl.string(O.t["Ax+Ioa"])
     }), (0, i.jsxs)(o.xJW, {
-      disabled: a,
+      disabled: l,
       title: O.intl.string(O.t.L0oQur),
       className: C.formItem,
       children: [(0, i.jsx)(Z, {
         children: O.intl.string(O.t["/OOFpK"])
       }), (0, i.jsx)(o.iRW, {
-        disabled: a,
+        disabled: l,
         markers: N,
         stickToMarkers: !0,
         minValue: N[0],
         maxValue: N[N.length - 1],
         initialValue: s,
-        onValueChange: e => l({
+        onValueChange: e => a({
           combosRequiredCount: e
         }),
         onValueRender: e => "".concat(e)
@@ -293,9 +293,9 @@ function B(e) {
       shakeIntensity: r,
       screenshakeEnabledLocations: s
     },
-    updateSettings: a
-  } = e, c = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), u = !t || !n || c, m = (e, t) => {
-    null != e.shakeIntensity && e.shakeIntensity > r && (0, g.T)(h.hn.MORE), a(e, t)
+    updateSettings: l
+  } = e, c = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), u = !t || !n || c, m = (e, t) => {
+    null != e.shakeIntensity && e.shakeIntensity > r && (0, g.T)(h.hn.MORE), l(e, t)
   };
   return (0, i.jsxs)(o.hjN, {
     tag: o.RB0.H1,
@@ -305,7 +305,7 @@ function B(e) {
       tooltipNote: c ? O.intl.string(O.t.GckHGx) : null,
       value: n && !c,
       note: O.intl.string(O.t.Qq5W3t),
-      onChange: e => a({
+      onChange: e => l({
         screenshakeEnabled: e
       }, 1),
       children: O.intl.string(O.t.N004zM)
@@ -332,7 +332,7 @@ function B(e) {
       disabled: u,
       locations: R(),
       settingsLocations: s,
-      onChange: e => a({
+      onChange: e => l({
         screenshakeEnabledLocations: e
       }, 1)
     })]
@@ -351,16 +351,20 @@ function M(e) {
       children: [(0, i.jsx)(o.R94, {
         className: C.formItem,
         children: O.intl.string(O.t["1SLnkp"])
-      }), (0, i.jsx)(o.zxk, {
+      }), (0, i.jsx)("div", {
+        "data-button-hoisted-classname-wrapper": !0,
         className: C.hideButton,
-        size: o.zxk.Sizes.SMALL,
-        onClick: () => {
-          t({
-            enabled: !1,
-            settingsVisible: !1
-          }), (0, c.xf)()
-        },
-        children: O.intl.string(O.t.qz65yc)
+        children: (0, i.jsx)(o.zxk, {
+          variant: "primary",
+          size: "sm",
+          text: O.intl.string(O.t.qz65yc),
+          onClick: () => {
+            t({
+              enabled: !1,
+              settingsVisible: !1
+            }), (0, c.xf)()
+          }
+        })
       })]
     })
   })
@@ -378,7 +382,7 @@ function U(e) {
         className: C.achievementIconContainer,
         children: (0, i.jsx)(o.rm8, {
           size: "md",
-          color: a.Z.unsafe_rawColors.ORANGE_345.css
+          color: l.Z.unsafe_rawColors.ORANGE_345.css
         })
       }), (0, i.jsxs)("div", {
         className: C.achievementTextContainer,
@@ -413,7 +417,7 @@ function G(e) {
   let {
     onChangePage: t,
     setShowEnableAnimation: n
-  } = e, s = (0, l.cj)([b.Z], () => b.Z.getState()), [a, c] = r.useState({
+  } = e, s = (0, a.cj)([b.Z], () => b.Z.getState()), [l, c] = r.useState({
     x: 0,
     y: 0
   }), d = (0, _.Z)();
@@ -424,7 +428,7 @@ function G(e) {
   let g = e => {
       if (e.enabled && !1 === s.enabled) {
         var t;
-        n(!0), (0, m.GN)("poggermode_enabled"), p.S.dispatch(j.CkL.SHAKE_APP, {
+        n(!0), (0, m.GN)("poggermode_enabled"), p.S.dispatch(E.CkL.SHAKE_APP, {
           duration: 2e3,
           intensity: null != (t = e.shakeIntensity) ? t : s.shakeIntensity
         })
@@ -433,13 +437,13 @@ function G(e) {
     h = (e, t) => {
       if (g(e), (0, f.AI)(e), null == t) return;
       let n = u(s.confettiEnabled, e.confettiEnabled, s.enabled, e.enabled);
-      0 === t && n && d.fire(a.x, a.y, {
+      0 === t && n && d.fire(l.x, l.y, {
         settings: e
       });
       let i = u(s.screenshakeEnabled, e.screenshakeEnabled, s.enabled, e.enabled);
       if (1 === t && i) {
         var r;
-        p.S.dispatch(j.CkL.SHAKE_APP, {
+        p.S.dispatch(E.CkL.SHAKE_APP, {
           duration: 1e3,
           intensity: null != (r = e.shakeIntensity) ? r : s.shakeIntensity
         })
@@ -496,7 +500,7 @@ let F = (e, t, n) => {
   H = e => 0 === e ? u.n.LEFT : u.n.RIGHT;
 
 function z() {
-  let [e, t] = r.useState(0), [n, s] = r.useState(H(e)), [a, c] = r.useState(!1), m = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), p = a && !m;
+  let [e, t] = r.useState(0), [n, s] = r.useState(H(e)), [l, c] = r.useState(!1), m = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), p = l && !m;
   return r.useEffect(() => {
     let t = setTimeout(() => {
       s(H(e))

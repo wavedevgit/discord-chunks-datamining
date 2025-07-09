@@ -1,88 +1,89 @@
 /** Chunk was on 61 **/
 n.d(t, {
-  Z: () => x
+  Z: () => m
 });
 var l = n(255367);
 n(73800);
 var r = n(442837),
-  i = n(481060),
-  a = n(536442),
-  s = n(142497),
-  o = n(388032),
-  c = n(482945),
-  u = n(137707);
-let d = () => (0, l.jsxs)(l.Fragment, {
-  children: [(0, l.jsx)(i.Text, {
+  i = n(755721),
+  a = n(481060),
+  s = n(536442),
+  o = n(142497),
+  c = n(388032),
+  u = n(482945),
+  d = n(137707);
+let x = () => (0, l.jsxs)(l.Fragment, {
+  children: [(0, l.jsx)(a.Text, {
     color: "header-primary",
     variant: "text-xs/normal",
-    className: c.inlineText,
-    children: o.intl.string(o.t.GcZzp6)
-  }), (0, l.jsx)(i.Text, {
+    className: u.inlineText,
+    children: c.intl.string(c.t.GcZzp6)
+  }), (0, l.jsx)(a.Text, {
     color: "header-primary",
     variant: "text-xs/normal",
-    className: c.inlineText,
-    children: o.intl.string(o.t["/NEGrK"])
-  }), (0, l.jsx)(i.Text, {
+    className: u.inlineText,
+    children: c.intl.string(c.t["/NEGrK"])
+  }), (0, l.jsx)(a.Text, {
     color: "header-primary",
     variant: "text-xs/normal",
-    className: c.inlineText,
-    children: o.intl.string(o.t.eUbuHB)
-  }), (0, l.jsx)(i.Text, {
+    className: u.inlineText,
+    children: c.intl.string(c.t.eUbuHB)
+  }), (0, l.jsx)(a.Text, {
     color: "header-primary",
     variant: "text-xs/normal",
-    className: c.inlineText,
-    children: o.intl.string(o.t.sCAZeH)
+    className: u.inlineText,
+    children: c.intl.string(c.t.sCAZeH)
   })]
 });
 
-function x(e) {
+function m(e) {
   let {
     onClick: t
   } = e;
-  return (0, r.e7)([a.qc], () => !a.qc.hasHotspot(a.v6.STAGE_CHANNEL_UPSELL)) ? null : (0, l.jsxs)("div", {
-    className: c.container,
+  return (0, r.e7)([s.qc], () => !s.qc.hasHotspot(s.v6.STAGE_CHANNEL_UPSELL)) ? null : (0, l.jsxs)("div", {
+    className: u.container,
     children: [(0, l.jsxs)("div", {
-      className: c.content,
+      className: u.content,
       children: [(0, l.jsxs)("div", {
-        className: c.textContainer,
-        children: [(0, l.jsx)(i.X6q, {
+        className: u.textContainer,
+        children: [(0, l.jsx)(a.X6q, {
           variant: "heading-md/semibold",
-          children: o.intl.string(o.t.Sx8Ezs)
-        }), (0, l.jsx)(i.Text, {
+          children: c.intl.string(c.t.Sx8Ezs)
+        }), (0, l.jsx)(a.Text, {
           color: "header-secondary",
           variant: "text-xs/normal",
-          className: c.descriptionText,
-          children: o.intl.string(o.t.JUzPho)
-        }), (0, l.jsx)(i.Text, {
+          className: u.descriptionText,
+          children: c.intl.string(c.t.JUzPho)
+        }), (0, l.jsx)(a.Text, {
           color: "header-secondary",
           variant: "text-xs/normal",
-          children: o.intl.format(o.t.Vh7rPz, {
-            suggestionsHook: d
+          children: c.intl.format(c.t.Vh7rPz, {
+            suggestionsHook: x
           })
         })]
       }), (0, l.jsx)("div", {
-        className: c.image,
+        className: u.image,
         children: (0, l.jsx)("img", {
-          src: u,
-          alt: o.intl.string(o.t["uIm/n5"])
+          src: d,
+          alt: c.intl.string(c.t["uIm/n5"])
         })
       })]
     }), (0, l.jsxs)("div", {
-      className: c.footer,
-      children: [(0, l.jsx)(i.zxk, {
+      className: u.footer,
+      children: [(0, l.jsx)(i.zx, {
         onClick: t,
-        color: i.zxk.Colors.PRIMARY,
-        size: i.zxk.Sizes.SMALL,
-        className: c.button,
-        children: o.intl.string(o.t["X/3SyM"])
-      }), (0, l.jsx)(i.zxk, {
+        color: i.zx.Colors.PRIMARY,
+        size: i.zx.Sizes.SMALL,
+        className: u.button,
+        children: c.intl.string(c.t["X/3SyM"])
+      }), (0, l.jsx)(i.zx, {
         onClick: () => {
-          s.Kw(a.v6.STAGE_CHANNEL_UPSELL)
+          o.Kw(s.v6.STAGE_CHANNEL_UPSELL)
         },
-        color: i.zxk.Colors.TRANSPARENT,
-        size: i.zxk.Sizes.SMALL,
-        look: i.iLD.LINK,
-        children: o.intl.string(o.t["5E9SBw"])
+        color: i.zx.Colors.TRANSPARENT,
+        size: i.zx.Sizes.SMALL,
+        look: i.iL.LINK,
+        children: c.intl.string(c.t["5E9SBw"])
       })]
     })]
   })

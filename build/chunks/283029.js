@@ -1,28 +1,28 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => a
+  Z: () => l
 });
 var i = n(255367);
 n(73800);
 var r = n(120356),
   s = n.n(r),
-  l = n(180097);
-let a = function(e) {
+  a = n(180097);
+let l = function(e) {
   let {
     className: t,
     imageClassName: r,
-    boostInCooldown: a,
+    boostInCooldown: l,
     useReducedMotion: o
   } = e;
   return (0, i.jsx)("div", {
-    className: s()(l.imageWrapper, t, {
-      [l.cooldown]: a
+    className: s()(a.imageWrapper, t, {
+      [a.cooldown]: l
     }),
     children: (0, i.jsx)("img", {
-      className: s()(l.image, r, {
-        [l.cooldownImage]: a
+      className: s()(a.image, r, {
+        [a.cooldownImage]: l
       }),
-      src: a ? n(971149) : o ? n(908635) : n(83957),
+      src: l ? n(971149) : o ? n(908635) : n(83957),
       alt: ""
     })
   })

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(706454),
   r = n(74538),
   s = n(937615),
-  l = n(474936),
-  a = n(981631),
+  a = n(474936),
+  l = n(981631),
   o = n(388032);
 let c = () => [{
   id: 17,
@@ -95,10 +95,10 @@ let c = () => [{
     id: 4,
     label: o.intl.string(o.t.ufhQCw),
     tier0ColumnData: {
-      text: (0, r.v9)(l.p9.TIER_0)
+      text: (0, r.v9)(a.p9.TIER_0)
     },
     tier2ColumnData: {
-      text: (0, r.v9)(l.p9.TIER_2)
+      text: (0, r.v9)(a.p9.TIER_2)
     }
   }, {
     id: 11,
@@ -139,8 +139,8 @@ let c = () => [{
   }, {
     id: 6,
     label: o.intl.formatToPlainString(o.t.nyhDp6, {
-      numBoosts: l.cb,
-      percentageOff: (0, s.T3)(i.default.locale, l.Rr / 100)
+      numBoosts: a.cb,
+      percentageOff: (0, s.T3)(i.default.locale, a.Rr / 100)
     }),
     tier0ColumnData: {
       includes: !1
@@ -178,7 +178,7 @@ let c = () => [{
   }, {
     id: 15,
     label: o.intl.formatToPlainString(o.t["8crdzM"], {
-      maxChars: a.en1
+      maxChars: l.en1
     }),
     tier0ColumnData: {
       includes: !1

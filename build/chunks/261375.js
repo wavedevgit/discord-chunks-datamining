@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(768433),
   r = n(710845),
   s = n(38618),
-  l = n(131704),
-  a = n(314897),
+  a = n(131704),
+  l = n(314897),
   o = n(592125),
   c = n(485386),
   d = n(430824),
@@ -33,19 +33,19 @@ let x = new class {
     let t = performance.now(),
       [n, i] = await Promise.all([p.Z.basicChannels(e).getKvEntries(), p.Z.syncedBasicChannels(e).getKvEntries()]),
       r = performance.now() - t,
-      [s, l] = function(e) {
+      [s, a] = function(e) {
         let t = [],
           n = [];
         for (let [i, r] of e)(r ? t : n).push(i);
         return [t, n]
       }(i),
-      a = new Set(s);
-    return this.synced = a, f.verbose("loaded in ".concat(r, "ms (guilds: ").concat(n.length, ", synced: ").concat(a.size, " unsynced: ").concat(l.length, ")")), {
+      l = new Set(s);
+    return this.synced = l, f.verbose("loaded in ".concat(r, "ms (guilds: ").concat(n.length, ", synced: ").concat(l.size, " unsynced: ").concat(a.length, ")")), {
       all: n,
-      stale: l,
+      stale: a,
       channels: n.filter(e => {
         let [t, n] = e;
-        return a.has(t)
+        return l.has(t)
       })
     }
   }
@@ -64,7 +64,7 @@ let x = new class {
         break;
       case "partial":
         var n, i, r;
-        let e = e => (0, l.q_)(e, s.id);
+        let e = e => (0, a.q_)(e, s.id);
         this.onGuildUpdate(s.id, null != (i = null == (n = s.partial_updates.channels) ? void 0 : n.map(e)) ? i : [], null != (r = s.partial_updates.deleted_channel_ids) ? r : [], t);
         break;
       default:
@@ -122,7 +122,7 @@ let x = new class {
     (null == i || n.permissions !== i.permissions) && this.unsync(e.guildId, t)
   }
   handleGuildMemberUpdate(e, t) {
-    e.user.id === a.default.getId() && this.unsync(e.guildId, t)
+    e.user.id === l.default.getId() && this.unsync(e.guildId, t)
   }
   handleWriteCaches(e, t) {
     this.sync(t)

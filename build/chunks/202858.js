@@ -8,7 +8,7 @@ n(73800);
 var r = n(481060),
   s = n(981631);
 
-function l(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -27,7 +27,7 @@ function l(e) {
   return e
 }
 
-function a(e, t) {
+function l(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -47,7 +47,7 @@ function o() {
       let {
         default: t
       } = await Promise.all([n.e("76540"), n.e("35305")]).then(n.bind(n, 628908));
-      return n => (0, i.jsx)(t, a(l({}, n), {
+      return n => (0, i.jsx)(t, l(a({}, n), {
         isTotp: e
       }))
     }, {
@@ -63,7 +63,7 @@ let c = {
         let {
           default: t
         } = await Promise.all([n.e("85516"), n.e("23746")]).then(n.bind(n, 837651));
-        return n => (0, i.jsx)(t, a(l({}, n), {
+        return n => (0, i.jsx)(t, l(a({}, n), {
           handleEnableMFASuccess: e
         }))
       })

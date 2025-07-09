@@ -6,8 +6,8 @@ var i = n(255367);
 n(73800);
 var r = n(704215),
   s = n(481060),
-  l = n(230711),
-  a = n(100527),
+  a = n(230711),
+  l = n(100527),
   o = n(906732),
   c = n(266454),
   d = n(314910),
@@ -24,12 +24,12 @@ function x(e) {
     dismissibleContent: t
   } = e, n = m.Z.useIsEligible(), u = (0, c.Nj)(t), {
     analyticsLocations: x
-  } = (0, o.ZP)(a.Z.HOLIDAY_COACHMARK), _ = e => {
+  } = (0, o.ZP)(l.Z.HOLIDAY_COACHMARK), _ = e => {
     (0, c.Q3)(r.z.HOLIDAY_COACHMARK_HALLOWEEN_2024, {
       dismissAction: e
     })
-  }, E = () => {
-    l.Z.open(g.oAB.NOTIFICATIONS, null, {
+  }, j = () => {
+    a.Z.open(g.oAB.NOTIFICATIONS, null, {
       analyticsLocations: x
     }), _(h.L.SECONDARY)
   };
@@ -61,7 +61,7 @@ function x(e) {
               settingsHook: (e, t) => (0, i.jsx)(s.P3F, {
                 tag: "span",
                 className: b.specialTextLink,
-                onClick: E,
+                onClick: j,
                 children: e
               }, t)
             })

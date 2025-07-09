@@ -1,11 +1,11 @@
 /** Chunk was on 60137 **/
 n.r(t), n.d(t, {
   default: () => r,
-  messagesLoader: () => a
+  messagesLoader: () => l
 });
 let {
-  createLoader: l
-} = n(515149), a = l({
+  createLoader: a
+} = n(515149), l = a({
   bg: () => n.e("47497").then(n.t.bind(n, 589914, 19)),
   cs: () => n.e("17822").then(n.t.bind(n, 933423, 19)),
   da: () => n.e("27506").then(n.t.bind(n, 498300, 19)),
@@ -39,4 +39,4 @@ let {
   "en-US": () => n.e("41497").then(n.bind(n, 991335))
 }, "en-US"), {
   makeMessagesProxy: i
-} = n(515149), r = i(a)
+} = n(515149), r = i(l)

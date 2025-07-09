@@ -1,39 +1,40 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Dd: () => L
+  Dd: () => x
 });
 var r = n(255367);
 n(73800);
 var i = n(442837),
-  a = n(481060),
-  o = n(493773),
-  s = n(100527),
-  l = n(906732),
-  c = n(335131),
-  u = n(628952),
-  d = n(225657),
-  f = n(600164),
-  _ = n(109213),
-  p = n(927699),
-  h = n(987716),
-  m = n(311821),
-  g = n(251660),
-  E = n(594174),
-  b = n(855775),
-  y = n(626135),
-  O = n(937615),
-  v = n(987209),
-  I = n(563132),
-  T = n(409813),
-  S = n(27034),
-  A = n(981631),
-  N = n(474936),
-  C = n(388032),
-  R = n(997433),
-  P = n(651427);
+  a = n(755721),
+  o = n(481060),
+  s = n(493773),
+  l = n(100527),
+  c = n(906732),
+  u = n(335131),
+  d = n(628952),
+  f = n(225657),
+  _ = n(600164),
+  p = n(109213),
+  h = n(927699),
+  m = n(987716),
+  g = n(311821),
+  E = n(251660),
+  b = n(594174),
+  y = n(855775),
+  O = n(626135),
+  v = n(937615),
+  I = n(987209),
+  T = n(563132),
+  S = n(409813),
+  A = n(27034),
+  N = n(981631),
+  C = n(474936),
+  R = n(388032),
+  P = n(997433),
+  w = n(651427);
 
-function w(e, t, n) {
+function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -42,28 +43,28 @@ function w(e, t, n) {
   }) : e[t] = n, e
 }
 
-function D(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      D(e, t, n[t])
     })
   }
   return e
 }
-let L = {
-  key: T.h8.GIFT_CUSTOMIZATION,
-  renderStep: e => (0, r.jsx)(M, D({}, e)),
+let x = {
+  key: S.h8.GIFT_CUSTOMIZATION,
+  renderStep: e => (0, r.jsx)(k, L({}, e)),
   options: {
     isLargeModal: !0,
-    useBreadcrumbLabel: () => C.intl.string(C.t["W685+f"])
+    useBreadcrumbLabel: () => R.intl.string(R.t["W685+f"])
   }
 };
 
-function x(e) {
+function M(e) {
   let {
     onStepChange: t,
     onBackClick: n,
@@ -72,56 +73,56 @@ function x(e) {
     loading: s = !1
   } = e, {
     hasPaymentSources: l
-  } = (0, I.JL)(), c = l ? T.h8.REVIEW : T.h8.ADD_PAYMENT_STEPS;
+  } = (0, T.JL)(), c = l ? S.h8.REVIEW : S.h8.ADD_PAYMENT_STEPS;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(a.zxk, {
+    children: [(0, r.jsx)(a.zx, {
       onClick: () => t(c),
       disabled: o,
       submitting: s,
-      children: C.intl.string(C.t.XiOHRU)
-    }), i ? (0, r.jsx)(m.Z, {
+      children: R.intl.string(R.t.XiOHRU)
+    }), i ? (0, r.jsx)(g.Z, {
       onClick: n
     }) : null]
   })
 }
 
-function M(e) {
+function k(e) {
   let {
     handleStepChange: t,
     handleClose: n
   } = e, {
-    customGiftMessage: s = "",
+    customGiftMessage: a = "",
     setCustomGiftMessage: l,
-    giftRecipientError: m,
-    setGiftRecipientError: T,
-    validatingGiftRecipient: w,
+    giftRecipientError: c,
+    setGiftRecipientError: g,
+    validatingGiftRecipient: S,
     giftRecipient: D,
     recommendedGiftSkuIds: L,
-    giftingOrigin: M,
-    setValidatingGiftRecipient: j
-  } = (0, v.wD)(), {
+    giftingOrigin: x,
+    setValidatingGiftRecipient: k
+  } = (0, I.wD)(), {
     selectedSkuId: U,
     setSelectedSkuId: G,
     selectedSkuPricePreview: B,
     paymentSourceId: V,
     skuPricePreviewsById: F
-  } = (0, I.JL)(), Z = (0, i.e7)([E.default], () => E.default.getCurrentUser()), {
+  } = (0, T.JL)(), Z = (0, i.e7)([b.default], () => b.default.getCurrentUser()), {
     enabled: H,
     giftRecommendationAlgorithm: Y
-  } = _.G.useExperiment({
+  } = p.G.useExperiment({
     location: "CollectiblesPaymentModalGiftCustomizationStep"
   }, {
     autoTrackExposure: !1
-  }), W = H && M === N.Wt.DM_CHANNEL, K = Y === _.u.POPULAR ? C.intl.string(C.t.Kwgrrq) : C.intl.string(C.t.r1huYW), z = async (e, t) => {
-    j(!0), null != m && T(), await (0, c.B1)(e.id, t) || T(C.intl.string(C.t["4kgVqa"])), j(!1)
+  }), W = H && x === C.Wt.DM_CHANNEL, K = Y === p.u.POPULAR ? R.intl.string(R.t.Kwgrrq) : R.intl.string(R.t.r1huYW), z = async (e, t) => {
+    k(!0), null != c && g(), await (0, u.B1)(e.id, t) || g(R.intl.string(R.t["4kgVqa"])), k(!1)
   };
-  (0, o.ZP)(() => {
-    null != U && null != D && (y.default.track(A.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
+  (0, s.ZP)(() => {
+    null != U && null != D && (O.default.track(N.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
       sku_id: U
     }), z(D, U))
   });
   let q = e => {
-      y.default.track(A.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
+      O.default.track(N.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
         sku_id: e
       }), null != D && z(D, e), G(e)
     },
@@ -130,133 +131,133 @@ function M(e) {
         n = null;
       if (null != t) {
         var i;
-        n = null != V && null != (i = t[V]) ? i : t[b.c]
+        n = null != V && null != (i = t[V]) ? i : t[y.c]
       }
       if (null == n) return;
-      let a = (0, O.T4)(n.amount, n.currency);
-      return (0, r.jsx)(u.Z, {
+      let a = (0, v.T4)(n.amount, n.currency);
+      return (0, r.jsx)(d.Z, {
         skuId: e,
         price: a,
         isSelected: e === U,
         onSelect: e => q(e),
-        className: R.recommendedGiftPreview
+        className: P.recommendedGiftPreview
       }, e)
     },
-    Q = () => (0, r.jsx)(p.Z, {
-      sectionTitle: C.intl.string(C.t.B3miEx),
+    Q = () => (0, r.jsx)(h.Z, {
+      sectionTitle: R.intl.string(R.t.B3miEx),
       onTextChange: e => null == l ? void 0 : l(e),
-      pendingText: s,
-      currentText: s,
+      pendingText: a,
+      currentText: a,
       disableThemedBackground: !0,
-      className: R.customGiftMessageWrapper,
-      innerClassName: R.customGiftMessage
+      className: P.customGiftMessageWrapper,
+      innerClassName: P.customGiftMessage
     }),
     J = () => W ? (0, r.jsxs)("div", {
-      className: R.bodyColumnLeft,
-      children: [(0, r.jsx)(a.Text, {
+      className: P.bodyColumnLeft,
+      children: [(0, r.jsx)(o.Text, {
         variant: "text-xs/bold",
         color: "header-secondary",
-        className: R.selectGiftTitle,
+        className: P.selectGiftTitle,
         children: K.toLocaleUpperCase()
-      }), L.map(e => X(e)), (0, r.jsx)(k, {
+      }), L.map(e => X(e)), (0, r.jsx)(j, {
         handleClose: n
       })]
     }) : (0, r.jsx)("div", {
-      className: R.bodyColumnMiddle,
-      children: (0, r.jsx)(h.q, {
+      className: P.bodyColumnMiddle,
+      children: (0, r.jsx)(m.q, {
         isShopGift: !0
       })
     }),
     $ = () => {
       if (W) return (0, r.jsxs)("div", {
-        className: R.bodyColumnRight,
-        children: [(0, r.jsx)(g.s, {
+        className: P.bodyColumnRight,
+        children: [(0, r.jsx)(E.s, {
           giftRecipient: D
-        }), (0, r.jsx)(h.q, {
+        }), (0, r.jsx)(m.q, {
           isShopGift: !0,
-          className: P.adjustedGiftMainAnimation,
-          optionsContainerClassName: P.adjustedGiftBoxOptionContainer
+          className: w.adjustedGiftMainAnimation,
+          optionsContainerClassName: w.adjustedGiftBoxOptionContainer
         }), Q()]
       });
-      let e = null != B ? (0, O.T4)(B.amount, B.currency) : void 0;
+      let e = null != B ? (0, v.T4)(B.amount, B.currency) : void 0;
       return (0, r.jsxs)("div", {
-        className: R.bodyColumnRight,
-        children: [(0, r.jsx)(d.Z, {
+        className: P.bodyColumnRight,
+        children: [(0, r.jsx)(f.Z, {
           selectedSkuId: U,
-          className: R.sendTo,
+          className: P.sendTo,
           validateSelectedGift: z
-        }), Q(), null != e && (0, r.jsx)(u.Z, {
+        }), Q(), null != e && (0, r.jsx)(d.Z, {
           skuId: U,
           price: e,
-          className: R.giftPreview,
+          className: P.giftPreview,
           isSelected: !0,
           shouldDisplayHeader: !0
         })]
       })
     };
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(S.C3, {
+    children: [(0, r.jsx)(A.C3, {
       children: (0, r.jsxs)("div", {
-        className: R.stepBody,
+        className: P.stepBody,
         children: [J(), $()]
       })
-    }), (0, r.jsx)(S.O3, {
-      children: (0, r.jsx)(a.mzw, {
-        justify: f.Z.Justify.BETWEEN,
-        align: f.Z.Align.CENTER,
-        children: (0, r.jsx)(x, {
+    }), (0, r.jsx)(A.O3, {
+      children: (0, r.jsx)(o.mzw, {
+        justify: _.Z.Justify.BETWEEN,
+        align: _.Z.Align.CENTER,
+        children: (0, r.jsx)(M, {
           onStepChange: t,
           onBackClick: n,
-          disabled: null != m || null == D || D.id === (null == Z ? void 0 : Z.id) || s.length > N.$n,
-          loading: w
+          disabled: null != c || null == D || D.id === (null == Z ? void 0 : Z.id) || a.length > C.$n,
+          loading: S
         })
       })
     })]
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     handleClose: t
   } = e, {
     analyticsLocations: n
-  } = (0, l.ZP)(s.Z.COLLECTIBLES_GIFT_CUSTOMIZATION_MODAL);
+  } = (0, c.ZP)(l.Z.COLLECTIBLES_GIFT_CUSTOMIZATION_MODAL);
 
   function i() {
-    t(), (0, a.pTH)(), (0, c.mK)({
+    t(), (0, o.pTH)(), (0, u.mK)({
       openInLayer: !1,
       analyticsLocations: n,
-      analyticsSource: s.Z.COLLECTIBLES_GIFT_CUSTOMIZATION_MODAL
+      analyticsSource: l.Z.COLLECTIBLES_GIFT_CUSTOMIZATION_MODAL
     })
   }
-  return (0, r.jsx)(a.P3F, {
+  return (0, r.jsx)(o.P3F, {
     onClick: i,
     children: (0, r.jsxs)("div", {
-      className: R.navigateToShopButton,
+      className: P.navigateToShopButton,
       children: [(0, r.jsxs)("div", {
-        className: R.navigateToShopBody,
+        className: P.navigateToShopBody,
         children: [(0, r.jsx)("div", {
-          className: R.shopIcon,
-          children: (0, r.jsx)(a.EOn, {
+          className: P.shopIcon,
+          children: (0, r.jsx)(o.EOn, {
             size: "custom",
             width: 18,
             height: 18,
             color: "var(--header-primary)"
           })
         }), (0, r.jsxs)("div", {
-          className: R.navigateToShopTextWrapper,
-          children: [(0, r.jsx)(a.Text, {
+          className: P.navigateToShopTextWrapper,
+          children: [(0, r.jsx)(o.Text, {
             color: "header-primary",
             variant: "text-md/semibold",
-            children: C.intl.string(C.t["1+Co8P"])
-          }), (0, r.jsx)(a.X6q, {
+            children: R.intl.string(R.t["1+Co8P"])
+          }), (0, r.jsx)(o.X6q, {
             color: "header-secondary",
             variant: "heading-sm/medium",
-            children: C.intl.string(C.t.nYn52N)
+            children: R.intl.string(R.t.nYn52N)
           })]
         })]
       }), (0, r.jsx)("div", {
-        children: (0, r.jsx)(a.d4D, {
+        children: (0, r.jsx)(o.d4D, {
           size: "custom",
           width: 20,
           height: 20,

@@ -1,15 +1,16 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => d
+  Z: () => u
 }), n(388685);
 var i = n(255367),
   r = n(73800),
-  s = n(481060),
+  s = n(755721),
+  a = n(481060),
   l = n(401190),
-  a = n(388032),
-  o = n(585777);
+  o = n(388032),
+  c = n(585777);
 
-function c(e, t, n) {
+function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -17,14 +18,14 @@ function c(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class d extends r.PureComponent {
+class u extends r.PureComponent {
   renderErrorMessage() {
     let {
       hasError: e
     } = this.state;
     return e ? (0, i.jsx)("div", {
-      className: o.error,
-      children: a.intl.string(a.t.UUcECA)
+      className: c.error,
+      children: o.intl.string(o.t.UUcECA)
     }) : null
   }
   render() {
@@ -34,30 +35,30 @@ class d extends r.PureComponent {
       isHypeSquadOnlineMember: t
     } = this.props;
     return t ? (0, i.jsxs)("div", {
-      className: o.leaveActionWrapper,
-      children: [this.renderErrorMessage(), (0, i.jsxs)(s.Text, {
+      className: c.leaveActionWrapper,
+      children: [this.renderErrorMessage(), (0, i.jsxs)(a.Text, {
         variant: "text-sm/normal",
-        children: [a.intl.string(a.t.ziWmcH), (0, i.jsx)(s.zxk, {
-          className: o.leaveButton,
-          color: s.zxk.Colors.LINK,
-          look: s.zxk.Looks.LINK,
+        children: [o.intl.string(o.t.ziWmcH), (0, i.jsx)(s.zx, {
+          className: c.leaveButton,
+          color: s.zx.Colors.LINK,
+          look: s.zx.Looks.LINK,
           onClick: this.handleLeaveHypeSquadClick,
-          size: s.zxk.Sizes.NONE,
+          size: s.zx.Sizes.NONE,
           submitting: e,
-          children: a.intl.string(a.t["WH+dho"])
+          children: o.intl.string(o.t["WH+dho"])
         })]
       })]
     }) : null
   }
   constructor(...e) {
-    super(...e), c(this, "state", {
+    super(...e), d(this, "state", {
       isRequestPending: !1,
       hasError: !1
-    }), c(this, "handleLeaveHypeSquadError", () => {
+    }), d(this, "handleLeaveHypeSquadError", () => {
       this.setState({
         hasError: !0
       })
-    }), c(this, "handleLeaveHypeSquadClick", () => {
+    }), d(this, "handleLeaveHypeSquadClick", () => {
       this.setState({
         isRequestPending: !0
       }, () => {

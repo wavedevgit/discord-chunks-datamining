@@ -5,14 +5,14 @@ n.d(t, {
 var i = n(442837),
   r = n(607070),
   s = n(391110),
-  l = n(758114);
-let a = {
+  a = n(758114);
+let l = {
     subtitle: {
       onlyShowOnHover: !1
     },
     description: {
       onlyShowOnHover: !0,
-      className: l.cardDescription
+      className: a.cardDescription
     },
     descriptionCta: {
       onlyShowOnHover: !0
@@ -21,7 +21,7 @@ let a = {
   o = e => {
     let t = (0, i.e7)([r.Z], () => r.Z.useReducedMotion),
       n = {
-        [s.zW.DEFAULT]: a,
+        [s.zW.DEFAULT]: l,
         [s.zW.REWARD]: {
           subtitle: {
             onlyShowOnHover: !0,
@@ -29,20 +29,20 @@ let a = {
           },
           description: {
             onlyShowOnHover: !0,
-            className: l.cardDescriptionTenureReward
+            className: a.cardDescriptionTenureReward
           },
           descriptionCta: {
             onlyShowOnHover: !1,
             hideOnHoverComponent: !0,
-            className: l.descriptionCTATenureReward
+            className: a.descriptionCTATenureReward
           },
           cardContainer: {
-            className: t ? void 0 : l.nitroGradientBorderHover
+            className: t ? void 0 : a.nitroGradientBorderHover
           }
         },
         [s.zW.NITRO_GRADIENT_HOVER_BORDER]: {
           cardContainer: {
-            className: l.nitroGradientBorderHover
+            className: a.nitroGradientBorderHover
           }
         }
       };

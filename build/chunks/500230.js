@@ -22,8 +22,8 @@ let g = function(e) {
     guildId: t,
     badge: a,
     primaryColor: g,
-    secondaryColor: b
-  } = e, [y, j] = i.useState(!1), v = i.useRef(null), C = i.useMemo(() => m.go.every(e => e.primary !== g || e.secondary !== b), [g, b]);
+    secondaryColor: y
+  } = e, [b, j] = i.useState(!1), v = i.useRef(null), C = i.useMemo(() => m.go.every(e => e.primary !== g || e.secondary !== y), [g, y]);
 
   function N(e) {
     let n = {};
@@ -38,7 +38,7 @@ let g = function(e) {
       className: p.pickerGrid,
       children: [m.go.map(e => (0, r.jsx)(d.P3F, {
         className: l()(p.pickerItem, {
-          [p.pickerItemSelected]: e.primary === g && e.secondary === b
+          [p.pickerItemSelected]: e.primary === g && e.secondary === y
         }),
         onClick: () => N(e),
         children: (0, r.jsx)(c.v, {
@@ -53,7 +53,7 @@ let g = function(e) {
         showSecondaryColor: f.ER[a] >= 2,
         palette: {
           primary: g,
-          secondary: b
+          secondary: y
         },
         onPrimaryColorChange: e => {
           N({
@@ -65,7 +65,7 @@ let g = function(e) {
             secondary: (0, s.Rf)(e)
           })
         },
-        shouldShow: y,
+        shouldShow: b,
         onRequestClose: () => j(!1),
         children: e => {
           var n, t;

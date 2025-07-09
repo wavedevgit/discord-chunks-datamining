@@ -1,8 +1,8 @@
 /** Chunk was on 81872 **/
 n.d(t, {
   ZP: () => M,
-  eJ: () => k,
-  nm: () => L
+  eJ: () => L,
+  nm: () => k
 }), n(539854), n(997841), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -54,7 +54,7 @@ function D(e) {
   }
   return e
 }
-let k = e => {
+let L = e => {
   let {
     children: t,
     collapsed: n = !1,
@@ -67,7 +67,7 @@ let k = e => {
   })
 };
 
-function L(e) {
+function k(e) {
   let {
     className: t,
     mute: n,
@@ -89,9 +89,9 @@ function L(e) {
     guildId: x,
     channelId: E,
     user: D,
-    disconnected: k
+    disconnected: L
   } = e, {
-    enabled: L
+    enabled: k
   } = d.c.getCurrentConfig({
     location: "VoiceUserIcons"
   }, {
@@ -124,7 +124,7 @@ function L(e) {
       color: "currentColor",
       className: o()(A.icon, h)
     })
-  }, "video"))), k && M.push((0, r.jsx)(s.DY3, {
+  }, "video"))), L && M.push((0, r.jsx)(s.DY3, {
     className: A.iconSpacing,
     text: Z.intl.string(Z.t.HFwRpq),
     children: (0, r.jsx)(s.P4T, {
@@ -132,7 +132,7 @@ function L(e) {
       color: s.TVs.colors.STATUS_WARNING_BACKGROUND
     })
   }, "disconnected"));
-  let V = L ? s.iWm : s.nG3;
+  let V = k ? s.iWm : s.nG3;
   null != y && M.push((0, r.jsx)(s.DY3, {
     text: (0, p.Z)(y.name),
     className: A.iconSpacing,
@@ -212,7 +212,7 @@ let M = i.forwardRef(function(e, t) {
     onKeyDown: P,
     onDoubleClick: C,
     onContextMenu: N,
-    onMouseLeave: k,
+    onMouseLeave: L,
     onMouseDown: M,
     priority: R,
     speaking: F,
@@ -260,7 +260,7 @@ let M = i.forwardRef(function(e, t) {
       null == N || N(e, K)
     },
     onMouseLeave: e => {
-      null == k || k(e, K)
+      null == L || L(e, K)
     },
     onMouseDown: e => {
       null == M || M(e, K)
@@ -327,7 +327,7 @@ let M = i.forwardRef(function(e, t) {
         })(Object(t)).forEach(function(n) {
           Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
         }), e)) : null
-      }(), (0, r.jsx)(L, D({
+      }(), (0, r.jsx)(k, D({
         disabled: f
       }, v)), !U && en ? (0, r.jsx)(s.DY3, {
         text: Z.intl.string(Z.t["+1H47u"]),

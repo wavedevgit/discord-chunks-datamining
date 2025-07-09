@@ -18,7 +18,7 @@ function u(e) {
     emoji: u,
     setEmoji: m,
     channel: h
-  } = e, j = i.useRef(null), x = e => t => {
+  } = e, j = i.useRef(null), v = e => t => {
     var n, r;
     let {
       emoji: i,
@@ -31,7 +31,7 @@ function u(e) {
       name: null != (r = i.originalName) ? r : i.name,
       animated: i.animated
     }), l && e())
-  }, p = null == u || null == u.name ? null : () => {
+  }, x = null == u || null == u.name ? null : () => {
     var e;
     return (0, r.jsx)(o.Z, {
       className: n,
@@ -54,7 +54,7 @@ function u(e) {
         } = e;
         return (0, r.jsx)(a.Z, {
           closePopout: t,
-          onSelectEmoji: x(t),
+          onSelectEmoji: v(t),
           pickerIntention: d.Hz.COMMUNITY_CONTENT,
           channel: h
         })
@@ -86,7 +86,7 @@ function u(e) {
           tabIndex: 0,
           active: o,
           className: t,
-          renderButtonContents: p
+          renderButtonContents: x
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {

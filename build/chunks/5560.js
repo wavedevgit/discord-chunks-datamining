@@ -6,9 +6,9 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  o = n.n(l),
-  a = n(512722),
-  s = n.n(a),
+  a = n.n(l),
+  o = n(512722),
+  s = n.n(o),
   c = n(374470),
   u = n(442837),
   d = n(481060),
@@ -68,10 +68,10 @@ class O extends i.PureComponent {
       },
       targetWidth: i,
       targetHeight: l,
-      position: o,
-      offset: a
+      position: a,
+      offset: o
     } = e;
-    (this.props.tutorialId !== t || this.props.origin.x !== n || this.props.origin.y !== r || this.props.targetWidth !== i || this.props.targetHeight !== l || this.props.position !== o || this.props.offset.x !== a.x || this.props.offset.y !== a.y) && this.updateCache()
+    (this.props.tutorialId !== t || this.props.origin.x !== n || this.props.origin.y !== r || this.props.targetWidth !== i || this.props.targetHeight !== l || this.props.position !== a || this.props.offset.x !== o.x || this.props.offset.y !== o.y) && this.updateCache()
   }
   updateCache() {
     var e, t;
@@ -117,7 +117,7 @@ class O extends i.PureComponent {
     } = this.props, l = (0, g.S)(e);
     if (null == l) return null;
     let {
-      media: a,
+      media: o,
       textAlign: s,
       isLongText: c,
       highPriority: u,
@@ -134,12 +134,12 @@ class O extends i.PureComponent {
       let t = n && !e;
       return !0 !== u ? null : (0, r.jsxs)("div", {
         children: [(0, r.jsx)("div", {
-          className: o()(y.top, {
+          className: a()(y.top, {
             [y.animating]: t,
             [y.notAnimating]: !t
           })
         }), (0, r.jsx)("div", {
-          className: o()(y.bottom, {
+          className: a()(y.bottom, {
             [y.animating]: t,
             [y.notAnimating]: !t
           })
@@ -156,7 +156,7 @@ class O extends i.PureComponent {
     return (0, r.jsx)(h.ZP, v(x({
       innerRef: this.contentRef,
       position: m,
-      renderMedia: a,
+      renderMedia: o,
       textAlign: s,
       spacing: p,
       isLongText: c,
@@ -175,11 +175,11 @@ class O extends i.PureComponent {
           style: C,
           innerRef: this.contentRef,
           children: (0, r.jsxs)("div", {
-            className: o()(y.animationContainer, j(n)),
+            className: a()(y.animationContainer, j(n)),
             children: [O(n), (0, r.jsx)("div", {
-              className: o()(y.innerCircle, j(n))
+              className: a()(y.innerCircle, j(n))
             }), (0, r.jsx)("div", {
-              className: o()(y.outerCircle, j(n))
+              className: a()(y.outerCircle, j(n))
             })]
           })
         }))
@@ -209,10 +209,10 @@ let j = 12633 == n.j ? function() {
   }));
   return i ? (0, r.jsx)(r.Fragment, {
     children: Object.entries(e).map(e => {
-      let [i, l] = e, o = t[i];
-      return s()(null != o, "Missing tutorial definition for ".concat(i)), (0, r.jsx)(O, x({
+      let [i, l] = e, a = t[i];
+      return s()(null != a, "Missing tutorial definition for ".concat(i)), (0, r.jsx)(O, x({
         tutorialId: i,
-        tutorialDefinition: o,
+        tutorialDefinition: a,
         focused: n
       }, l), i)
     })

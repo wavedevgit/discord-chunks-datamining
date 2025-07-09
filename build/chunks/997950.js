@@ -1,14 +1,14 @@
 /** Chunk was on 89795 **/
 n.d(t, {
   Th: () => r,
-  xu: () => l
+  xu: () => a
 });
 var i = n(97519);
 let r = "0",
   s = {
     selectedGuildId: r
   },
-  l = (0, i.U)(e => {
+  a = (0, i.U)(e => {
     var t, n;
     return t = function(e) {
       for (var t = 1; t < arguments.length; t++) {

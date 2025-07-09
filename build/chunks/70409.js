@@ -5,7 +5,7 @@ n.d(t, {
 });
 var r = n(255367);
 n(73800);
-var i = n(481060),
+var i = n(755721),
   l = n(372444),
   s = n(267642),
   a = n(981631),
@@ -21,8 +21,8 @@ function u(e) {
   } = e, m = t.premiumTier, g = (0, s.FZ)(m), p = o._k[m] - 2;
   if (null == g || m === a.Eu4.TIER_3 || n < p) return null;
   let f = u ? {
-    color: i.Ttl.GREEN,
-    look: i.iLD.FILLED,
+    color: i.Tt.GREEN,
+    look: i.iL.FILLED,
     text: c.intl.string(c.t.cYzxGh)
   } : void 0;
   return (0, r.jsx)(l.Z, {

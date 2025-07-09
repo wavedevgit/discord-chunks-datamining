@@ -1,8 +1,8 @@
 /** Chunk was on 86915 **/
 "use strict";
 n.d(t, {
-  I: () => N,
-  S: () => C
+  I: () => S,
+  S: () => N
 }), n(997841);
 var i = n(255367),
   l = n(73800),
@@ -10,21 +10,22 @@ var i = n(255367),
   s = n.n(r),
   a = n(533800),
   o = n(442837),
-  c = n(481060),
-  d = n(484614),
-  u = n(914010),
-  h = n(246946),
-  m = n(626135),
-  g = n(630388),
-  p = n(971130),
-  f = n(530436),
-  x = n(245335),
-  j = n(981631),
-  b = n(388032),
-  v = n(821022),
-  y = n(20493);
-let C = o.ZP.connectStores([h.Z], () => ({
-    hideValue: h.Z.hideInstantInvites
+  c = n(755721),
+  d = n(481060),
+  u = n(484614),
+  h = n(914010),
+  m = n(246946),
+  g = n(626135),
+  p = n(630388),
+  f = n(971130),
+  x = n(530436),
+  j = n(245335),
+  b = n(981631),
+  v = n(388032),
+  y = n(821022),
+  C = n(20493);
+let N = o.ZP.connectStores([m.Z], () => ({
+    hideValue: m.Z.hideInstantInvites
   }))(e => {
     let {
       value: t,
@@ -33,24 +34,24 @@ let C = o.ZP.connectStores([h.Z], () => ({
       onCopy: r,
       disabled: s
     } = e;
-    return (0, i.jsx)(d.Z, {
+    return (0, i.jsx)(u.Z, {
       value: t,
-      hideMessage: l ? b.intl.string(b.t["6HzNgY"]) : null,
-      buttonColor: c.zxk.Colors.BRAND,
+      hideMessage: l ? v.intl.string(v.t["6HzNgY"]) : null,
+      buttonColor: c.zx.Colors.BRAND,
       onCopy: r,
       autoFocus: n,
       disabled: s
     })
   }),
-  N = e => {
+  S = e => {
     let {
       guild: t,
       noInvitesAvailable: n,
       showFriends: r,
       onClose: o,
-      modalState: d,
-      isApplicationBypassToggleEnabled: h,
-      setInviteFlags: N,
+      modalState: c,
+      isApplicationBypassToggleEnabled: u,
+      setInviteFlags: m,
       copyValue: S,
       changePage: O,
       inviteChannel: E,
@@ -64,10 +65,10 @@ let C = o.ZP.connectStores([h.Z], () => ({
       maxUses: P,
       networkError: A,
       showVanityURL: L,
-      flags: k
-    } = d, D = l.useCallback(() => {
-      m.default.track(j.rMx.COPY_INSTANT_INVITE, {
-        server: u.Z.getGuildId(),
+      flags: D
+    } = c, M = l.useCallback(() => {
+      g.default.track(b.rMx.COPY_INSTANT_INVITE, {
+        server: h.Z.getGuildId(),
         channel: null == E ? void 0 : E.id,
         channel_type: null == E ? void 0 : E.type,
         location: T,
@@ -77,28 +78,28 @@ let C = o.ZP.connectStores([h.Z], () => ({
       })
     }, [null == I ? void 0 : I.id, E, T, w, Z]);
     return (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)(C, {
+      children: [(0, i.jsx)(N, {
         value: S,
         autoFocus: r,
-        onCopy: D,
+        onCopy: M,
         disabled: R
-      }), h && (0, i.jsxs)(i.Fragment, {
+      }), u && (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
-          className: v.divider
-        }), (0, i.jsx)(c.j7V, {
-          className: v.toggle,
-          value: (0, g.yE)(k, a.$.IS_APPLICATION_BYPASS),
-          onChange: e => N((0, g.mB)(k, a.$.IS_APPLICATION_BYPASS, e)),
+          className: y.divider
+        }), (0, i.jsx)(d.j7V, {
+          className: y.toggle,
+          value: (0, p.yE)(D, a.$.IS_APPLICATION_BYPASS),
+          onChange: e => m((0, p.mB)(D, a.$.IS_APPLICATION_BYPASS, e)),
           disabled: R,
           hideBorder: !0,
           children: (0, i.jsxs)("div", {
-            className: v.formText,
-            children: [(0, i.jsx)(c.Text, {
+            className: y.formText,
+            children: [(0, i.jsx)(d.Text, {
               variant: "text-md/semibold",
-              children: b.intl.string(b.t["1i1bUl"])
-            }), (0, i.jsx)(c.ua7, {
-              text: b.intl.string(b.t["jvd/LC"]),
-              children: e => (0, i.jsx)(c.d3s, function(e) {
+              children: v.intl.string(v.t["1i1bUl"])
+            }), (0, i.jsx)(d.ua7, {
+              text: v.intl.string(v.t["jvd/LC"]),
+              children: e => (0, i.jsx)(d.d3s, function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                   var n = null != arguments[t] ? arguments[t] : {},
                     i = Object.keys(n);
@@ -122,18 +123,18 @@ let C = o.ZP.connectStores([h.Z], () => ({
             })]
           })
         })]
-      }), n || L ? null : (0, i.jsxs)(c.Text, {
+      }), n || L ? null : (0, i.jsxs)(d.Text, {
         variant: "text-xs/normal",
-        className: s()(y.marginTop8, v.footerText),
-        children: [(0, p.Vg)(_, P), " ", r ? (0, i.jsx)(c.eee, {
-          onClick: () => O(x.RV.SETTINGS),
-          children: b.intl.string(b.t.VNe8Pz)
+        className: s()(C.marginTop8, y.footerText),
+        children: [(0, f.Vg)(_, P), " ", r ? (0, i.jsx)(d.eee, {
+          onClick: () => O(j.RV.SETTINGS),
+          children: v.intl.string(v.t.VNe8Pz)
         }) : null]
-      }), !n && r && L ? (0, i.jsxs)(c.Text, {
+      }), !n && r && L ? (0, i.jsxs)(d.Text, {
         variant: "text-xs/normal",
-        className: s()(y.marginTop8, v.footerText),
-        children: [b.intl.string(b.t["0M2U9/"]), " "]
-      }) : null, null != A ? (0, i.jsx)(f.W, {
+        className: s()(C.marginTop8, y.footerText),
+        children: [v.intl.string(v.t["0M2U9/"]), " "]
+      }) : null, null != A ? (0, i.jsx)(x.W, {
         guild: t,
         error: A,
         onClose: o

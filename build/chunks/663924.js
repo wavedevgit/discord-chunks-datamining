@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(374470),
-  o = n(952265),
-  a = n(481060),
+  a = n(952265),
+  o = n(481060),
   s = n(40851),
   c = n(896449),
   u = n(314910),
@@ -38,9 +38,9 @@ function E(e) {
   } = e, f = i.useRef(null), {
     renderWindow: x,
     windowDispatch: v
-  } = i.useContext(s.ZP), O = null != u, E = (0, o.Jw)(null != u ? u : ""), S = i.useCallback(e => {
+  } = i.useContext(s.ZP), O = null != u, E = (0, a.Jw)(null != u ? u : ""), S = i.useCallback(e => {
     var t;
-    if (!O && (0, o.$s)() || O && !(E && n) || d.Z.isOpen() || e.defaultPrevented) return;
+    if (!O && (0, a.$s)() || O && !(E && n) || d.Z.isOpen() || e.defaultPrevented) return;
     let {
       target: r
     } = e;
@@ -60,8 +60,8 @@ function E(e) {
   }, [n, E, O]);
   i.useLayoutEffect(() => (x.addEventListener("mousedown", S), x.addEventListener("contextmenu", S), v.subscribe(y.CkL.POPOUT_CLOSE, j), () => {
     x.removeEventListener("mousedown", S), x.removeEventListener("contextmenu", S), v.unsubscribe(y.CkL.POPOUT_CLOSE, j)
-  }), [S, x, v]), (0, a.Tbt)(f), i.useEffect(() => {
-    (!O && (0, o.$s)() || O && !E) && j()
+  }), [S, x, v]), (0, o.Tbt)(f), i.useEffect(() => {
+    (!O && (0, a.$s)() || O && !E) && j()
   }, [E, O]);
   let I = (0, b.Z)();
   return (0, r.jsx)(g.Z, {

@@ -145,8 +145,9 @@ function S(e) {
           children: (0, r.jsxs)("div", {
             className: g.closeButtonContainer,
             children: [(0, r.jsx)(l.zxk, {
-              onClick: o,
-              children: m.intl.string(m.t.cpT0Cg)
+              variant: "primary",
+              text: m.intl.string(m.t.cpT0Cg),
+              onClick: o
             }), (0, r.jsx)(s.animated.div, {
               className: g.progressOverlay,
               style: S

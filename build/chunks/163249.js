@@ -194,12 +194,15 @@ function b(e) {
           variant: "text-md/normal",
           className: p.introBody,
           children: g.intl.string(g.t["1ydhVl"])
-        }), (0, r.jsx)(a.zxk, {
+        }), (0, r.jsx)("div", {
+          "data-button-hoisted-classname-wrapper": !0,
           className: p.button,
-          size: a.zxk.Sizes.MEDIUM,
-          onClick: m,
-          submitting: s,
-          children: g.intl.string(g.t.JZZjQE)
+          children: (0, r.jsx)(a.zxk, {
+            variant: "primary",
+            text: g.intl.string(g.t.JZZjQE),
+            onClick: m,
+            loading: s
+          })
         })]
       }), (0, r.jsx)(a.$i$, {
         className: p.divider

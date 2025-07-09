@@ -1,11 +1,11 @@
 /** Chunk was on 25526 **/
-n.d(t, {
-  _: () => s
+r.d(t, {
+  _: () => a
 });
-var r = n(425128),
-  i = n(434382);
-let s = async e => {
-  await r._b(e), await i.Z.fetchLeaderboard({
+var n = r(425128),
+  i = r(434382);
+let a = async e => {
+  await n._b(e), await i.Z.fetchLeaderboard({
     guildId: e.guildId,
     leaderboardId: e.leaderboardId,
     force: !0

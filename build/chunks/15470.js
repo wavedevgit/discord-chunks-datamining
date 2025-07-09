@@ -9,7 +9,7 @@ var r = n(255367),
   l = n.n(i),
   s = n(159635),
   o = n.n(s),
-  c = n(481060),
+  c = n(755721),
   d = n(770146),
   u = n(241209),
   p = n(73346),
@@ -133,10 +133,10 @@ class j extends a.PureComponent {
             children: t
           })]
         })
-      }), o ? (0, r.jsx)(c.zxk, {
+      }), o ? (0, r.jsx)(c.zx, {
         className: h.toggleCollapseButton,
         onClick: this.handleToggleCollapse,
-        color: c.zxk.Colors.PRIMARY,
+        color: c.zx.Colors.PRIMARY,
         children: s ? m.intl.string(m.t.DxcOXF) : m.intl.string(m.t.rD6EaG)
       }) : null]
     })

@@ -7,8 +7,8 @@ var i = n(255367);
 n(73800);
 var r = n(481060),
   s = n(570140),
-  l = n(955204),
-  a = n(510273),
+  a = n(955204),
+  l = n(510273),
   o = n(388032);
 
 function c(e) {
@@ -19,10 +19,10 @@ function c(e) {
 }
 
 function d(e, t) {
-  let n = (0, l.oX)(e);
+  let n = (0, a.oX)(e);
   null != n && (0, r.showToast)((0, r.createToast)(o.intl.string(o.t.MPpEUF), r.ToastType.CUSTOM, {
     position: r.ToastPosition.BOTTOM,
-    component: (0, i.jsx)(a.Z, {
+    component: (0, i.jsx)(l.Z, {
       achievement: n,
       unlocked: t
     }),

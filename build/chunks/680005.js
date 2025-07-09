@@ -7,7 +7,7 @@ n.d(e, {
 var i, r = n(255367);
 n(73800);
 var l = n(860911),
-  o = n(481060),
+  o = n(755721),
   a = n(100527),
   s = n(906732),
   u = n(349167),
@@ -125,7 +125,7 @@ function y(t) {
       return r
     }(t, ["appId", "skuId", "onClick"]);
   let f = (0, u.Z)();
-  return (0, r.jsx)(o.zxk, (e = function(t) {
+  return (0, r.jsx)(o.zx, (e = function(t) {
     for (var e = 1; e < arguments.length; e++) {
       var n = null != arguments[e] ? arguments[e] : {},
         i = Object.keys(n);
@@ -173,11 +173,11 @@ function m(t) {
     className: e,
     children: n
   } = t;
-  return (0, r.jsx)(o.zxk, {
+  return (0, r.jsx)(o.zx, {
     disabled: !0,
     className: e,
-    look: o.zxk.Looks.OUTLINED,
-    color: o.zxk.Colors.PRIMARY,
+    look: o.zx.Looks.OUTLINED,
+    color: o.zx.Colors.PRIMARY,
     children: n
   })
 }

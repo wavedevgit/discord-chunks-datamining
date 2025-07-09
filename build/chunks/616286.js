@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  o = n.n(l),
-  a = n(392711),
+  a = n.n(l),
+  o = n(392711),
   s = n(442837),
   c = n(475179),
   u = n(906732),
@@ -23,7 +23,7 @@ var r = n(255367),
   x = n(388032);
 
 function v(e) {
-  let t = (0, s.e7)([m.Z], () => !(0, a.isEmpty)(m.Z.getTypingUsers(e)), [e]),
+  let t = (0, s.e7)([m.Z], () => !(0, o.isEmpty)(m.Z.getTypingUsers(e)), [e]),
     n = (0, s.e7)([f.Z], () => f.Z.getVoiceChannelId() === e, [e]),
     {
       unreadCount: r,
@@ -47,15 +47,15 @@ function O(e) {
   } = e, {
     unreadCount: i,
     mentionCount: l,
-    isTyping: o,
-    voiceChannelIsSelected: a
+    isTyping: a,
+    voiceChannelIsSelected: o
   } = v(n);
   return (0, r.jsx)(_.Z, {
     className: t,
     unreadCount: i,
     mentionCount: l,
-    isTyping: o,
-    canBadge: a
+    isTyping: a,
+    canBadge: o
   })
 }
 
@@ -64,7 +64,7 @@ function j(e) {
   var {
     channelId: n,
     className: l,
-    showingClassName: a,
+    showingClassName: o,
     onClick: h,
     inPopout: f,
     showRequestToSpeakSidebar: m,
@@ -97,14 +97,14 @@ function j(e) {
       unreadCount: t,
       mentionCount: n,
       isTyping: r
-    } = v(e), [l, o] = i.useState(!1);
+    } = v(e), [l, a] = i.useState(!1);
     return i.useEffect(() => {
-      o(t > 0);
+      a(t > 0);
       let e = setTimeout(() => {
-        o(!1)
+        a(!1)
       }, b.z);
       return () => {
-        clearTimeout(e), o(!1)
+        clearTimeout(e), a(!1)
       }
     }, [t]), {
       isShowing: l || n > 0 || r,
@@ -129,24 +129,24 @@ function j(e) {
     event: C.CkL.FOCUS_CHAT_BUTTON,
     handler: S ? null : R
   });
-  let [k, M] = i.useState(!1), D = i.useCallback(() => {
-    f && M(!0)
+  let [M, D] = i.useState(!1), L = i.useCallback(() => {
+    f && D(!0)
   }, [f]);
   (0, g.yp)({
     event: C.CkL.SHOW_TEXT_IN_VOICE_POPOUT_COMING_SOON_TIP,
-    handler: D
+    handler: L
   }), i.useEffect(() => {
     let e;
-    return k && (e = setTimeout(() => {
-      M(!1)
+    return M && (e = setTimeout(() => {
+      D(!1)
     }, 3e3)), () => {
       clearTimeout(e)
     }
-  }, [k]);
-  let L = [t = f && S ? x.intl.string(x.t.DPgc5u) : P ? x.intl.string(x.t.nthdxM) : x.intl.string(x.t["5KxXrK"])];
-  return T > 0 && L.push(x.intl.formatToPlainString(x.t["3l1GOz"], {
+  }, [M]);
+  let k = [t = f && S ? x.intl.string(x.t.DPgc5u) : P ? x.intl.string(x.t.nthdxM) : x.intl.string(x.t["5KxXrK"])];
+  return T > 0 && k.push(x.intl.formatToPlainString(x.t["3l1GOz"], {
     mentionCount: T
-  })), N > 0 && L.push(x.intl.string(x.t.x5zAGR)), (0, r.jsx)(y.Z, function(e) {
+  })), N > 0 && k.push(x.intl.string(x.t.x5zAGR)), (0, r.jsx)(y.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -167,12 +167,12 @@ function j(e) {
     buttonRef: I,
     onClick: A,
     label: t,
-    "aria-label": L.join(", "),
+    "aria-label": k.join(", "),
     iconComponent: w,
     tooltipPosition: "bottom",
-    wrapperClassName: o()(l, null != a && {
-      [a]: Z
+    wrapperClassName: a()(l, null != o && {
+      [o]: Z
     }),
-    forceTooltipOpen: k
+    forceTooltipOpen: M
   }, j))
 }

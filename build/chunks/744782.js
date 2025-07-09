@@ -13,17 +13,17 @@ var r = n(442837),
   u = n(984933),
   d = n(430824),
   x = n(341165),
-  g = n(626135),
-  m = n(572004),
-  h = n(971130),
-  v = n(230900),
+  m = n(626135),
+  g = n(572004),
+  v = n(971130),
+  h = n(230900),
   f = n(981631),
   p = n(388032),
   j = n(407865);
 let {
   INVITE_OPTIONS_7_DAYS: y,
   INVITE_OPTIONS_UNLIMITED: b
-} = h.ZP;
+} = v.ZP;
 
 function E(e) {
   var t, n, E;
@@ -46,10 +46,10 @@ function E(e) {
       baseCode: w,
       guildScheduledEventId: P
     }) : null,
-    k = null == D || null == Z,
+    _ = null == D || null == Z,
     R = (0, s.Z)(null != D ? D : ""),
-    _ = null != (n = null == Z ? void 0 : Z.maxAge) ? n : y.value,
-    L = null != (E = null == Z ? void 0 : Z.maxUses) ? E : b.value;
+    L = null != (n = null == Z ? void 0 : Z.maxAge) ? n : y.value,
+    A = null != (E = null == Z ? void 0 : Z.maxUses) ? E : b.value;
   return (0, l.jsxs)("div", {
     className: j.container,
     children: [(0, l.jsx)(i.P3F, {
@@ -86,10 +86,10 @@ function E(e) {
         value: R,
         autoFocus: !1,
         onCopy: e => {
-          if (k) return;
-          (0, m.JG)(e);
-          let t = (0, v.xC)(N.entity_type);
-          g.default.track(f.rMx.COPY_INSTANT_INVITE, {
+          if (_) return;
+          (0, g.JG)(e);
+          let t = (0, h.xC)(N.entity_type);
+          m.default.track(f.rMx.COPY_INSTANT_INVITE, {
             server: N.guild_id,
             channel: I,
             channel_type: t,
@@ -102,7 +102,7 @@ function E(e) {
         variant: "text-xs/normal",
         color: "header-secondary",
         className: j.inviteDetail,
-        children: (0, h.Vg)(_, L)
+        children: (0, v.Vg)(L, A)
       })]
     })]
   })

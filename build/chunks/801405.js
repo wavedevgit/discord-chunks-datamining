@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(442837),
-  o = n(570140),
-  a = n(475179),
+  a = n(570140),
+  o = n(475179),
   s = n(367907),
   c = n(906732),
   u = n(358221),
@@ -21,14 +21,14 @@ var r = n(255367),
   y = n(981631),
   C = n(806176);
 let x = () => {
-  o.Z.wait(() => p.xv(y.KJ3.CHANNEL_CALL_POPOUT))
+  a.Z.wait(() => p.xv(y.KJ3.CHANNEL_CALL_POPOUT))
 };
 
 function v(e) {
   let {
     channel: t,
     appContext: n,
-    popoutOpen: o,
+    popoutOpen: a,
     popoutWindow: p,
     currentWindow: v
   } = e, {
@@ -62,39 +62,39 @@ function v(e) {
         rootNode: t
       }
     }, [p, j, v]),
-    A = o && !j,
+    A = a && !j,
     w = I === y.WtW.VIDEO && P && !A,
     R = i.useCallback((e, r) => {
-      r !== e && (a.Z.updateLayout(t.id, r, n), r === y.AEg.FULL_SCREEN && t.isPrivate() && g.S.dispatch(y.CkL.TEXTAREA_BLUR))
+      r !== e && (o.Z.updateLayout(t.id, r, n), r === y.AEg.FULL_SCREEN && t.isPrivate() && g.S.dispatch(y.CkL.TEXTAREA_BLUR))
     }, [n, t]),
-    k = i.useCallback(e => {
+    M = i.useCallback(e => {
       null != T && e === y.AEg.FULL_SCREEN && (R(e, Z.current), (0, _.Pr)(e => {
         Z.current = e
       }, N))
     }, [N, R, T]),
-    M = i.useCallback(e => () => {
-      null != T && ((0, d.v)(O, d.d.FULL_SCREEN, e !== y.AEg.FULL_SCREEN), e !== y.AEg.FULL_SCREEN ? (Z.current = e, R(e, y.AEg.FULL_SCREEN), (0, _.Dj)(T)) : k(e))
-    }, [R, k, T, O]);
+    D = i.useCallback(e => () => {
+      null != T && ((0, d.v)(O, d.d.FULL_SCREEN, e !== y.AEg.FULL_SCREEN), e !== y.AEg.FULL_SCREEN ? (Z.current = e, R(e, y.AEg.FULL_SCREEN), (0, _.Dj)(T)) : M(e))
+    }, [R, M, T, O]);
   i.useEffect(() => {
     let e = () => {
-      null != T && ((0, _.rB)(T, N) || S !== y.AEg.FULL_SCREEN || M(S)())
+      null != T && ((0, _.rB)(T, N) || S !== y.AEg.FULL_SCREEN || D(S)())
     };
     return N.addEventListener(_.NO, e), () => {
       N.removeEventListener(_.NO, e)
     }
-  }, [N, S, M, T]);
-  let D = {
+  }, [N, S, D, T]);
+  let L = {
       channel: t,
-      maybeLeaveFullScreen: k
+      maybeLeaveFullScreen: M
     },
-    L = i.useRef(D);
+    k = i.useRef(L);
   return (i.useEffect(() => {
-    L.current = D
+    k.current = L
   }), i.useEffect(() => {
     let {
       channel: e,
       maybeLeaveFullScreen: t
-    } = L.current;
+    } = k.current;
     return m.default.track(y.rMx.VIDEO_LAYOUT_TOGGLED, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -126,6 +126,6 @@ function v(e) {
     node: T,
     guestWindow: p,
     className: C.rightTrayIcon,
-    onClick: M(S)
+    onClick: D(S)
   }) : null
 }

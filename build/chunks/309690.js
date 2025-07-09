@@ -5,9 +5,9 @@ r.d(e, {
 var s = r(255367);
 r(73800);
 var n = r(481060),
-  l = r(600164),
+  a = r(600164),
   i = r(458725),
-  a = r(386146),
+  l = r(386146),
   o = r(388032),
   d = r(463672);
 
@@ -18,9 +18,9 @@ function c(t) {
     transitionState: c
   } = t, {
     avErrorUIEnabled: u
-  } = (0, a.JN)({
+  } = (0, l.JN)({
     location: "StreamWarning"
-  }), x = null == (e = (0, i.hp)(i.u.STREAM_FULL)) ? void 0 : e.errorCode, h = o.intl.formatToPlainString(o.t["ejOT9/"], {
+  }), x = null == (e = (0, i.hp)(i.u.STREAM_FULL)) ? void 0 : e.errorCode, m = o.intl.formatToPlainString(o.t["ejOT9/"], {
     errorCode: x
   });
   return (0, s.jsxs)(n.Y0X, {
@@ -28,7 +28,7 @@ function c(t) {
     transitionState: c,
     parentComponent: "StreamFullModal",
     children: [(0, s.jsxs)(n.xBx, {
-      justify: l.Z.Justify.BETWEEN,
+      justify: a.Z.Justify.BETWEEN,
       children: [(0, s.jsx)(n.vwX, {
         tag: "h2",
         className: d.header,
@@ -46,14 +46,15 @@ function c(t) {
         selectable: !0,
         color: "text-muted",
         className: d.errorCode,
-        children: h
+        children: m
       }), (0, s.jsx)("div", {
         className: d.fullArt
       })]
     }), (0, s.jsx)(n.mzw, {
       children: (0, s.jsx)(n.zxk, {
-        onClick: r,
-        children: o.intl.string(o.t.BddRzc)
+        variant: "primary",
+        text: o.intl.string(o.t.BddRzc),
+        onClick: r
       })
     })]
   })

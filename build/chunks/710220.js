@@ -6,8 +6,8 @@ var i = n(255367);
 n(73800);
 var r = n(481060),
   s = n(518950),
-  l = n(304480),
-  a = n(182294),
+  a = n(304480),
+  l = n(182294),
   o = n(388032),
   c = n(416820);
 
@@ -46,7 +46,7 @@ let u = e => null != e.globalName ? e.globalName : e.username,
             className: c.icon,
             src: n,
             "aria-label": t.username,
-            size: a.EF.SIZE_32
+            size: l.EF.SIZE_32
           }, s))
         }), (0, i.jsx)(r.X6q, {
           variant: "heading-sm/normal",
@@ -63,14 +63,14 @@ let u = e => null != e.globalName ? e.globalName : e.username,
 function p(e) {
   let {
     referrer: t
-  } = e, n = l.Z.useExperiment({
+  } = e, n = a.Z.useExperiment({
     location: "UserTrialOfferAttribution"
   }), {
     avatarSrc: p,
     eventHandlers: g
   } = (0, s.Z)({
     user: t,
-    size: a.EF.SIZE_32,
+    size: l.EF.SIZE_32,
     animateOnHover: !0
   });
   return !0 === n.enabled ? (0, i.jsx)(m, {
@@ -87,7 +87,7 @@ function p(e) {
           className: c.icon,
           src: p,
           "aria-label": t.username,
-          size: a.EF.SIZE_32
+          size: l.EF.SIZE_32
         }, g))
       }), (0, i.jsx)(r.X6q, {
         variant: "heading-lg/medium",

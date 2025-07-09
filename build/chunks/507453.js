@@ -1,21 +1,22 @@
 /** Chunk was on 52030 **/
 n.d(t, {
-  Z: () => a
+  Z: () => c
 });
 var r = n(255367);
 n(73800);
-var l = n(481060),
-  i = n(600164),
-  s = n(388032),
-  o = n(895453);
-let a = {
+var l = n(755721),
+  i = n(481060),
+  s = n(600164),
+  o = n(388032),
+  a = n(895453);
+let c = {
   SlideContent: function(e) {
     let {
       children: t,
       scrollbarType: n
     } = e;
-    return (0, r.jsx)(l.hzk, {
-      className: o.content,
+    return (0, r.jsx)(i.hzk, {
+      className: a.content,
       scrollbarType: n,
       children: t
     })
@@ -24,8 +25,8 @@ let a = {
     let {
       error: t
     } = e;
-    return null == t ? null : (0, r.jsx)(l.Text, {
-      className: o.error,
+    return null == t ? null : (0, r.jsx)(i.Text, {
+      className: a.error,
       variant: "text-sm/normal",
       color: "text-danger",
       children: t
@@ -33,11 +34,11 @@ let a = {
   },
   SlideFooter: function(e) {
     var t, n, {
-        mfaChallenge: a,
-        setSlide: c,
-        showConfirm: u = !1
+        mfaChallenge: c,
+        setSlide: u,
+        showConfirm: d = !1
       } = e,
-      d = function(e, t) {
+      f = function(e, t) {
         if (null == e) return {};
         var n, r, l = function(e, t) {
           if (null == e) return {};
@@ -52,16 +53,15 @@ let a = {
         }
         return l
       }(e, ["mfaChallenge", "setSlide", "showConfirm"]);
-    let f = a.methods.length > 1;
-    return f || u ? (0, r.jsxs)(l.mzw, {
-      className: o.footer,
-      direction: u && !f ? i.Z.Direction.HORIZONTAL_REVERSE : i.Z.Direction.HORIZONTAL,
-      children: [f && (0, r.jsx)(l.zxk, {
-        look: l.zxk.Looks.LINK,
-        onClick: () => c("select"),
-        color: l.zxk.Colors.PRIMARY,
-        children: s.intl.string(s.t.Tot4EB)
-      }), u && (0, r.jsx)(l.zxk, (t = function(e) {
+    let h = c.methods.length > 1;
+    return h || d ? (0, r.jsxs)(i.mzw, {
+      className: a.footer,
+      direction: d && !h ? s.Z.Direction.HORIZONTAL_REVERSE : s.Z.Direction.HORIZONTAL,
+      children: [h && (0, r.jsx)(i.zxk, {
+        variant: "secondary",
+        text: o.intl.string(o.t.Tot4EB),
+        onClick: () => u("select")
+      }), d && (0, r.jsx)(l.zx, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -80,8 +80,8 @@ let a = {
         return e
       }({
         type: "submit"
-      }, d), n = n = {
-        children: s.intl.string(s.t["cY+Ooa"])
+      }, f), n = n = {
+        children: o.intl.string(o.t["cY+Ooa"])
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -99,20 +99,20 @@ let a = {
       subtitle: t,
       onClose: n
     } = e;
-    return (0, r.jsxs)(l.xBx, {
-      direction: i.Z.Direction.VERTICAL,
-      className: o.header,
+    return (0, r.jsxs)(i.xBx, {
+      direction: s.Z.Direction.VERTICAL,
+      className: a.header,
       separator: !1,
-      children: [(0, r.jsx)(l.X6q, {
+      children: [(0, r.jsx)(i.X6q, {
         variant: "heading-xl/semibold",
-        children: s.intl.string(s.t.saHocH)
-      }), null != t && (0, r.jsx)(l.Text, {
+        children: o.intl.string(o.t.saHocH)
+      }), null != t && (0, r.jsx)(i.Text, {
         color: "header-secondary",
         variant: "text-md/normal",
-        className: o.subtitle,
+        className: a.subtitle,
         children: t
-      }), (0, r.jsx)(l.olH, {
-        className: o.closeButton,
+      }), (0, r.jsx)(i.olH, {
+        className: a.closeButton,
         onClick: n
       })]
     })

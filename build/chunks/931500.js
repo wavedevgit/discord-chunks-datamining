@@ -1,14 +1,14 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  _: () => a
+  _: () => l
 }), n(388685);
 var i = n(392711),
   r = n.n(i),
   s = n(442837),
-  l = n(651941);
+  a = n(651941);
 
-function a(e) {
-  return (0, s.Wu)([l.Z], () => r()(l.Z.getUserVerifiedKeys(e)).entries().map(e => {
+function l(e) {
+  return (0, s.Wu)([a.Z], () => r()(a.Z.getUserVerifiedKeys(e)).entries().map(e => {
     let [t, n] = e;
     return {
       verifiedKey: t,

@@ -23,8 +23,8 @@ var r = n(255367),
   g = n(592125),
   x = n(485386),
   v = n(699516),
-  O = n(594174),
-  y = n(388032),
+  y = n(594174),
+  O = n(388032),
   _ = n(962923);
 
 function H(e) {
@@ -78,9 +78,9 @@ function S(e) {
 }
 let D = (0, p.hQ)(),
   Z = (0, p.hQ)(),
-  L = "text-sm/medium";
+  R = "text-sm/medium";
 
-function R(e) {
+function L(e) {
   return 1 === e.type
 }
 
@@ -105,7 +105,7 @@ function P(e) {
 }
 
 function M(e) {
-  let t = (0, C.F6)(e, O.default, v.Z);
+  let t = (0, C.F6)(e, y.default, v.Z);
   return {
     tag: {
       type: d.Fj.CHANNEL,
@@ -146,7 +146,7 @@ let V = l.memo(function(e) {
     }, d), {
       enableTooltip: !1
     })) : m, (0, r.jsx)(u.Text, {
-      variant: L,
+      variant: R,
       className: _.roleTagLabel,
       children: s
     })]
@@ -168,14 +168,14 @@ function E(e) {
       color: "currentColor",
       className: _.channelIcon
     }), (0, r.jsx)(u.Text, {
-      variant: t.isCategory() ? "eyebrow" : L,
+      variant: t.isCategory() ? "eyebrow" : R,
       children: n.display
     })]
   })
 }
 
 function T(e, t, n) {
-  return R(e) ? (0, r.jsx)(V, {
+  return L(e) ? (0, r.jsx)(V, {
     row: e,
     guildId: t,
     className: n
@@ -206,19 +206,19 @@ function k(e) {
     }), t.forEach(e => {
       e in n && (r[e] = P(n[e]))
     }), r
-  })(a, C, h), [a, C, h]), v = l.useMemo(() => Object.keys(j), [j]), [O, S] = l.useState(""), [L, V] = l.useState(!1), [E, k] = l.useState(!1), [A, B] = l.useState(!1), U = l.useRef(null), {
+  })(a, C, h), [a, C, h]), v = l.useMemo(() => Object.keys(j), [j]), [y, S] = l.useState(""), [R, V] = l.useState(!1), [E, k] = l.useState(!1), [A, B] = l.useState(!1), U = l.useRef(null), {
     sections: F,
     sectionCounts: z
   } = l.useMemo(() => {
-    let e = "" !== O ? o.filter(e => s()(O, e.display.toLocaleLowerCase())) : o,
-      t = "" !== O ? n.filter(e => s()(O, e.display.toLocaleLowerCase())) : n,
+    let e = "" !== y ? o.filter(e => s()(y, e.display.toLocaleLowerCase())) : o,
+      t = "" !== y ? n.filter(e => s()(y, e.display.toLocaleLowerCase())) : n,
       r = [],
       l = [];
     return r[0] = e, l[0] = e.length, r[1] = t, l[1] = t.length, {
       sections: r,
       sectionCounts: l
     }
-  }, [O, o, n]), q = l.useCallback(e => {
+  }, [y, o, n]), q = l.useCallback(e => {
     let t = Object.values(e),
       n = t.filter(e => {
         let {
@@ -230,7 +230,7 @@ function k(e) {
         let {
           row: t
         } = e;
-        return R(t)
+        return L(t)
       }).map(e => e.row.record.id);
     m(new Set(n), new Set(r))
   }, [m]), G = () => {
@@ -238,18 +238,18 @@ function k(e) {
   };
   l.useEffect(() => {
     let e = setTimeout(() => {
-      B(L || E)
+      B(R || E)
     }, 32);
     return () => {
       clearTimeout(e)
     }
-  }, [L, E]);
+  }, [R, E]);
   let Y = (e, t, n) => {
       n.stopPropagation(), n.preventDefault(), 2 === t ? V(e) : (1 === t || V(e), k(e))
     },
     W = l.useCallback(e => {
       let t = H({}, j);
-      I(e) ? t[e.id] = M(e.record) : R(e) && (t[e.id] = P(e.record)), q(t), S(""), G(), setTimeout(() => {
+      I(e) ? t[e.id] = M(e.record) : L(e) && (t[e.id] = P(e.record)), q(t), S(""), G(), setTimeout(() => {
         var e;
         let t = null == (e = U.current) ? void 0 : e.containerRef.current,
           n = null == t ? void 0 : t.firstChild;
@@ -289,7 +289,7 @@ function k(e) {
         tags: J,
         maxHeight: 98,
         size: d.ZP.Sizes.MEDIUM,
-        query: O,
+        query: y,
         ref: U,
         onRemoveTag: e => {
           let t = v[e],
@@ -315,7 +315,7 @@ function k(e) {
         onQueryChange: e => {
           S(e.trim().toLocaleLowerCase())
         },
-        placeholder: null != b ? b : y.intl.string(y.t.uqHLzc),
+        placeholder: null != b ? b : O.intl.string(O.t.uqHLzc),
         sections: [v.length],
         inputProps: {
           "aria-labelledby": D,
@@ -342,12 +342,12 @@ function k(e) {
             return 0 === t ? (0, r.jsx)(u.vwX, {
               tag: "h5",
               className: i()(_.sectionTitle, _.sectionHeight),
-              children: y.intl.string(y.t.OGiMXF)
-            }, y.intl.string(y.t.OGiMXF)) : 1 === t ? (0, r.jsx)(u.vwX, {
+              children: O.intl.string(O.t.OGiMXF)
+            }, O.intl.string(O.t.OGiMXF)) : 1 === t ? (0, r.jsx)(u.vwX, {
               tag: "h5",
               className: i()(_.sectionTitle, _.sectionHeight),
-              children: y.intl.string(y.t.LPJmLy)
-            }, y.intl.string(y.t.LPJmLy)) : null
+              children: O.intl.string(O.t.LPJmLy)
+            }, O.intl.string(O.t.LPJmLy)) : null
           },
           renderFooter: e => {
             let {

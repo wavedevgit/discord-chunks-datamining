@@ -68,10 +68,10 @@ let h = i.memo(function(e) {
     onContextMenu: U,
     onClick: M,
     hideSimpleEmbedContent: v = !0,
-    channel: k,
-    isGroupStart: L,
-    animateAvatar: Z,
-    subscribeToComponentDispatch: j,
+    channel: L,
+    isGroupStart: Z,
+    animateAvatar: j,
+    subscribeToComponentDispatch: k,
     renderThreadAccessory: x,
     trackAnnouncementViews: F = !1
   } = e, G = function(e, t) {
@@ -88,7 +88,7 @@ let h = i.memo(function(e) {
       for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(e, ["message", "compact", "className", "onContextMenu", "onClick", "hideSimpleEmbedContent", "channel", "isGroupStart", "animateAvatar", "subscribeToComponentDispatch", "renderThreadAccessory", "trackAnnouncementViews"]), V = i.type === C.uaV.POLL_RESULT || null != (t = e.disableInteraction) && t, w = i.isFirstMessageInForumPost(k), B = (0, u.A)((null != (n = i.editedTimestamp) ? n : i.timestamp).valueOf()), {
+  }(e, ["message", "compact", "className", "onContextMenu", "onClick", "hideSimpleEmbedContent", "channel", "isGroupStart", "animateAvatar", "subscribeToComponentDispatch", "renderThreadAccessory", "trackAnnouncementViews"]), V = i.type === C.uaV.POLL_RESULT || null != (t = e.disableInteraction) && t, w = i.isFirstMessageInForumPost(L), B = (0, u.A)((null != (n = i.editedTimestamp) ? n : i.timestamp).valueOf()), {
     content: W,
     hasSpoilerEmbeds: z
   } = (0, S.Z)(i, {
@@ -98,11 +98,11 @@ let h = i.memo(function(e) {
     allowLinks: !0,
     previewLinkTarget: !0
   }), H = i.type === C.uaV.REPLY ? i.messageReference : void 0, Y = (0, c.e7)([d.Z], () => d.Z.getMessageByReference(H)), K = (0, a.JA)(i.id), q = (0, I.ZP)(i), X = (0, c.e7)([_.Z], () => i.hasFlag(C.iLy.HAS_THREAD) && _.Z.getChannel(E.default.castMessageIdAsChannelId(i.id))), J = (0, s.p9)({
-    guildId: k.guild_id,
+    guildId: L.guild_id,
     roleId: q.iconRoleId
   }), Q = (0, N.Z)({
     message: i,
-    channel: k,
+    channel: L,
     enabled: F
   }), $ = (0, p.iG)(i), ee = (0, p.Gx)(i);
   return (0, r.jsx)(T.Z, b({
@@ -112,10 +112,10 @@ let h = i.memo(function(e) {
       [y.disableInteraction]: V
     }),
     disableInteraction: V,
-    childrenRepliedMessage: (0, P.Z)(i, k, H, Y, l),
-    childrenExecutedCommand: (0, g.Z)(i, k, l),
+    childrenRepliedMessage: (0, P.Z)(i, L, H, Y, l),
+    childrenExecutedCommand: (0, g.Z)(i, L, l),
     childrenHeader: (0, m.Z)(D(b({}, e), {
-      guildId: k.guild_id,
+      guildId: L.guild_id,
       author: q,
       roleIcon: J
     })),

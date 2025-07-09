@@ -5,26 +5,26 @@ n.d(t, {
 var i = n(255367),
   r = n(73800),
   s = n(780384),
-  l = n(410030),
-  a = n(119269),
+  a = n(410030),
+  l = n(119269),
   o = n(3504);
 let c = "url(#gradient)",
   d = (e, t) => {
     switch (e) {
-      case a.Qo.NITRO_LOGO:
+      case l.Qo.NITRO_LOGO:
         return t ? "0.3" : "0.2";
-      case a.Qo.NITRO_GEM:
-      case a.Qo.AVATAR_DECO:
+      case l.Qo.NITRO_GEM:
+      case l.Qo.AVATAR_DECO:
       default:
         return
     }
   },
   u = e => {
     switch (e) {
-      case a.Qo.NITRO_GEM:
-      case a.Qo.AVATAR_DECO:
+      case l.Qo.NITRO_GEM:
+      case l.Qo.AVATAR_DECO:
         return "var(--background-base-low)";
-      case a.Qo.NITRO_LOGO:
+      case l.Qo.NITRO_LOGO:
         return "var(--premium-tier-2-purple)";
       default:
         return
@@ -32,10 +32,10 @@ let c = "url(#gradient)",
   },
   m = (e, t) => {
     switch (t) {
-      case a.Qo.NITRO_GEM:
-      case a.Qo.AVATAR_DECO:
+      case l.Qo.NITRO_GEM:
+      case l.Qo.AVATAR_DECO:
         return c;
-      case a.Qo.NITRO_LOGO:
+      case l.Qo.NITRO_LOGO:
         return e ? "url(#gradient_nitro_logo)" : c;
       default:
         return
@@ -50,34 +50,34 @@ let c = "url(#gradient)",
       progressCircleStrokeSize: g = 2,
       progressCircleVariation: h,
       progressCircleStroke: f
-    } = e, b = 43 + g / 2, x = 2 * Math.PI * b, [_, E] = r.useState(p);
+    } = e, b = 43 + g / 2, x = 2 * Math.PI * b, [_, j] = r.useState(p);
     r.useEffect(() => {
       let e = setTimeout(() => {
-        E(t)
+        j(t)
       }, 200);
       return () => clearTimeout(e)
     }, [t]);
-    let j = (0, l.ZP)(),
-      O = (0, s.ap)(j),
+    let E = (0, a.ZP)(),
+      O = (0, s.ap)(E),
       C = u(h),
-      S = d(h, O),
-      v = null != f ? f : m(O, h);
+      v = d(h, O),
+      S = null != f ? f : m(O, h);
     return (0, i.jsxs)("div", {
       className: o.circleContainer,
       children: [(0, i.jsxs)("svg", {
         viewBox: "0 0 100 100",
         className: o.circleSVG,
         children: [(0, i.jsx)("circle", {
-          className: h === a.Qo.NITRO_GEM || h === a.Qo.AVATAR_DECO ? o.baseProgressCircle : void 0,
+          className: h === l.Qo.NITRO_GEM || h === l.Qo.AVATAR_DECO ? o.baseProgressCircle : void 0,
           fill: "transparent",
           strokeWidth: g,
           r: "".concat(b),
           cx: "50%",
           cy: "50%",
           stroke: C,
-          strokeOpacity: S
+          strokeOpacity: v
         }), (0, i.jsx)("circle", {
-          stroke: v,
+          stroke: S,
           strokeWidth: g,
           strokeLinecap: "round",
           strokeDasharray: "".concat(x, " ").concat(x),

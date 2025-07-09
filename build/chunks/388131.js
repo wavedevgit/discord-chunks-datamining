@@ -1,14 +1,14 @@
 /** Chunk was on 46786 **/
 n.d(t, {
-  A: () => _,
-  default: () => j
+  A: () => y,
+  default: () => C
 }), n(388685);
 var r = n(255367),
   l = n(73800),
-  i = n(442837),
-  a = n(481060),
-  o = n(741361),
-  d = n(881052),
+  a = n(442837),
+  i = n(481060),
+  d = n(741361),
+  o = n(881052),
   s = n(911969),
   c = n(185413),
   u = n(600164),
@@ -18,10 +18,10 @@ var r = n(255367),
   m = n(700785),
   p = n(146085),
   b = n(71080),
-  k = n(388032),
-  C = n(441609);
+  j = n(388032),
+  _ = n(441609);
 
-function _(e, t) {
+function y(e, t) {
   return {
     id: e,
     type: t,
@@ -30,15 +30,15 @@ function _(e, t) {
   }
 }
 
-function j(e) {
+function C(e) {
   let {
     transitionState: t,
     onClose: n,
     channelId: m
-  } = e, j = (0, h.Dt)(), R = (0, i.e7)([x.Z], () => x.Z.getChannel(m)), S = (0, i.e7)([g.Z], () => g.Z.getGuild(null == R ? void 0 : R.getGuildId())), [E, w] = l.useState({}), [y, A] = l.useState(!1), [N, f] = l.useState(null);
-  if (null == R || null == S) return null;
-  let M = async () => {
-    A(!0);
+  } = e, C = (0, h.Dt)(), E = (0, a.e7)([x.Z], () => x.Z.getChannel(m)), S = (0, a.e7)([g.Z], () => g.Z.getGuild(null == E ? void 0 : E.getGuildId())), [k, v] = l.useState({}), [w, R] = l.useState(!1), [f, A] = l.useState(null);
+  if (null == E || null == S) return null;
+  let N = async () => {
+    R(!0);
     try {
       await
       function(e, t) {
@@ -51,61 +51,64 @@ function j(e) {
           let {
             row: t
           } = e;
-          return t.rowType === b.aC.ROLE ? _(t.id, s.BN.ROLE) : _(t.id, s.BN.MEMBER)
+          return t.rowType === b.aC.ROLE ? y(t.id, s.BN.ROLE) : y(t.id, s.BN.MEMBER)
         });
-        return (0, o.hw)(e.id, n, !0)
-      }(R, E), n()
+        return (0, d.hw)(e.id, n, !0)
+      }(E, k), n()
     } catch (t) {
-      let e = new d.Hx(t);
-      A(!1), f(e)
+      let e = new o.Hx(t);
+      R(!1), A(e)
     }
   };
-  return (0, r.jsxs)(a.Y0X, {
+  return (0, r.jsxs)(i.Y0X, {
     transitionState: t,
-    "aria-labelledby": j,
-    size: a.CgR.SMALL,
-    className: C.modalRoot,
+    "aria-labelledby": C,
+    size: i.CgR.SMALL,
+    className: _.modalRoot,
     parentComponent: "AddModeratorsModal",
-    children: [(0, r.jsxs)(a.xBx, {
+    children: [(0, r.jsxs)(i.xBx, {
       separator: !1,
       direction: u.Z.Direction.VERTICAL,
       align: u.Z.Align.CENTER,
-      className: C.header,
-      children: [(0, r.jsx)(a.X6q, {
+      className: _.header,
+      children: [(0, r.jsx)(i.X6q, {
         variant: "heading-xl/semibold",
-        children: k.intl.string(k.t.dMJ3Y2)
-      }), (0, r.jsxs)(a.Text, {
+        children: j.intl.string(j.t.dMJ3Y2)
+      }), (0, r.jsxs)(i.Text, {
         variant: "text-md/normal",
         color: "header-secondary",
-        className: C.headerSubtitle,
-        children: [(0, r.jsx)(a.ewx, {
+        className: _.headerSubtitle,
+        children: [(0, r.jsx)(i.ewx, {
           size: "xs",
           color: "currentColor",
-          className: C.headerSubtitleIcon
-        }), R.name]
+          className: _.headerSubtitleIcon
+        }), E.name]
       })]
     }), (0, r.jsx)(c.U, {
       guild: S,
-      channel: R,
+      channel: E,
       permission: p.yP,
-      pendingAdditions: E,
-      setPendingAdditions: w
-    }), null != N ? (0, r.jsx)(a.Text, {
-      className: C.error,
+      pendingAdditions: k,
+      setPendingAdditions: v
+    }), null != f ? (0, r.jsx)(i.Text, {
+      className: _.error,
       variant: "text-xs/normal",
       color: "text-danger",
-      children: N.getAnyErrorMessage()
-    }) : null, (0, r.jsxs)(a.mzw, {
-      children: [(0, r.jsx)(a.zxk, {
-        onClick: M,
-        submitting: y,
-        children: k.intl.string(k.t.OYkgVl)
-      }), (0, r.jsx)(a.zxk, {
-        look: a.zxk.Looks.LINK,
-        color: a.zxk.Colors.PRIMARY,
-        onClick: n,
-        children: k.intl.string(k.t["ETE/oK"])
-      })]
+      children: f.getAnyErrorMessage()
+    }) : null, (0, r.jsx)(i.mzw, {
+      children: (0, r.jsxs)(i.hE2, {
+        direction: "horizontal-reverse",
+        children: [(0, r.jsx)(i.zxk, {
+          variant: "primary",
+          text: j.intl.string(j.t.OYkgVl),
+          onClick: N,
+          loading: w
+        }), (0, r.jsx)(i.zxk, {
+          variant: "secondary",
+          text: j.intl.string(j.t["ETE/oK"]),
+          onClick: n
+        })]
+      })
     })]
   })
 }

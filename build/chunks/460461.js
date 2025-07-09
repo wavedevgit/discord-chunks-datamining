@@ -1,56 +1,57 @@
 /** Chunk was on 82265 **/
 "use strict";
 n.d(t, {
-  J: () => P,
-  Z: () => R
+  J: () => w,
+  Z: () => Z
 }), n(953529), n(388685), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(35282), n(804061), n(704826), n(413496), n(433524);
 var r = n(255367),
   i = n(73800),
   l = n(442837),
   s = n(692547),
-  a = n(481060),
-  o = n(225433),
-  c = n(484614),
-  d = n(852860),
-  u = n(688465),
-  m = n(970061),
-  g = n(456268),
-  p = n(134432),
-  f = n(813197),
-  h = n(208567),
-  x = n(496675),
-  b = n(768581),
-  j = n(63063),
-  _ = n(434404),
-  v = n(999382),
-  O = n(718157),
-  C = n(450474),
-  y = n(190287),
-  N = n(465520),
-  I = n(981631),
-  E = n(388032),
-  S = n(869562);
-let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
-  P = () => {
+  a = n(755721),
+  o = n(481060),
+  c = n(225433),
+  d = n(484614),
+  u = n(852860),
+  m = n(688465),
+  g = n(970061),
+  p = n(456268),
+  f = n(134432),
+  h = n(813197),
+  x = n(208567),
+  b = n(496675),
+  j = n(768581),
+  _ = n(63063),
+  v = n(434404),
+  O = n(999382),
+  C = n(718157),
+  y = n(450474),
+  N = n(190287),
+  I = n(465520),
+  E = n(981631),
+  S = n(388032),
+  T = n(869562);
+let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
+  w = () => {
     let {
       guild: e,
       guildMetadata: t,
       submitting: n
-    } = (0, l.cj)([v.Z], () => ({
-      submitting: v.Z.isSubmitting(),
-      guild: v.Z.getGuild(),
-      guildMetadata: v.Z.getMetadata()
+    } = (0, l.cj)([O.Z], () => ({
+      submitting: O.Z.isSubmitting(),
+      guild: O.Z.getGuild(),
+      guildMetadata: O.Z.getMetadata()
     }));
-    return (0, r.jsx)(d.Z, {
+    return (0, r.jsx)(u.Z, {
       submitting: n,
       onReset: () => {
-        null != e && _.Z.init(e.id)
+        null != e && v.Z.init(e.id)
       },
       onSave: () => {
-        null != e && (_.Z.saveGuild(e.id, {
+        null != e && (v.Z.saveGuild(e.id, {
           discoverySplash: e.discoverySplash,
           description: e.description
-        }), (0, g.Vv)({
+        }), (0, p.Vv)({
           guildId: e.id,
           primaryCategoryId: t.primaryCategoryId,
           keywords: t.keywords,
@@ -65,20 +66,20 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
       }
     })
   },
-  w = () => {
+  R = () => {
     var e;
     let t = i.useRef(null),
-      d = (0, l.e7)([v.Z], () => v.Z.getGuild()),
-      [P, w] = i.useState(!1);
+      u = (0, l.e7)([O.Z], () => O.Z.getGuild()),
+      [w, R] = i.useState(!1);
     i.useEffect(() => {
-      P || null == d || ((0, g.le)(), (0, g.aC)(d.id), (0, g.i3)(d.id), w(!0))
-    }, [d, P]);
+      w || null == u || ((0, p.le)(), (0, p.aC)(u.id), (0, p.i3)(u.id), R(!0))
+    }, [u, w]);
     let {
-      canManageGuild: R
-    } = (0, l.cj)([x.Z], () => ({
-      canManageGuild: x.Z.can(I.Plq.MANAGE_GUILD, d)
-    })), Z = (0, l.e7)([v.Z], () => v.Z.isGuildMetadataLoaded()), D = (0, l.e7)([v.Z], () => null != d ? v.Z.getMetadata() : null), k = (0, l.e7)([v.Z], () => null != d && (null == D ? void 0 : D.isPublished) ? v.Z.getSlug() : null), [A, L] = i.useState([!0]), [M, G] = i.useState(!0), [U, B] = i.useState([!1]), [F, z] = i.useState([""]), H = e => {
-      let t = Object.entries(N.z).filter(e => !F.includes(e[1].presentation)).map(e => ({
+      canManageGuild: Z
+    } = (0, l.cj)([b.Z], () => ({
+      canManageGuild: b.Z.can(E.Plq.MANAGE_GUILD, u)
+    })), D = (0, l.e7)([O.Z], () => O.Z.isGuildMetadataLoaded()), A = (0, l.e7)([O.Z], () => null != u ? O.Z.getMetadata() : null), L = (0, l.e7)([O.Z], () => null != u && (null == A ? void 0 : A.isPublished) ? O.Z.getSlug() : null), [k, M] = i.useState([!0]), [G, U] = i.useState(!0), [B, F] = i.useState([!1]), [z, H] = i.useState([""]), V = e => {
+      let t = Object.entries(I.z).filter(e => !z.includes(e[1].presentation)).map(e => ({
         label: e[1].presentation,
         value: e[0]
       }));
@@ -86,424 +87,427 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
         label: e,
         value: e
       })
-    }, V = e => {
+    }, W = e => {
       try {
         var t, n, r, i;
         let l = new URL(e).hostname.split(".");
-        if (3 === l.length && "bandcamp" === l[1].toLowerCase()) return N.z.bandcamp.presentation;
+        if (3 === l.length && "bandcamp" === l[1].toLowerCase()) return I.z.bandcamp.presentation;
         let s = null != (n = null == (t = l.shift()) ? void 0 : t.toLowerCase()) ? n : "";
-        if ("www" === s && (s = null != (i = null == (r = l.shift()) ? void 0 : r.toLowerCase()) ? i : ""), s in N.z) return N.z[s].presentation;
+        if ("www" === s && (s = null != (i = null == (r = l.shift()) ? void 0 : r.toLowerCase()) ? i : ""), s in I.z) return I.z[s].presentation;
         return null
       } catch (e) {
         return null
       }
     };
     i.useEffect(() => {
-      if (null !== D) {
+      if (null !== A) {
         let e = [],
           t = [];
-        D.socialLinks.forEach((n, r) => {
+        A.socialLinks.forEach((n, r) => {
           if ("" !== n) {
-            let i = V(n);
+            let i = W(n);
             null !== i ? (t[r] = i, e[r] = !0) : e[r] = !1
           } else e[r] = !0
-        }), z(t), L(e), G(e.every(e => !0 === e))
+        }), H(t), M(e), U(e.every(e => !0 === e))
       }
-    }, [D]);
-    let W = (0, l.e7)([v.Z], () => null != d ? v.Z.getErrors() : null);
-    if (null == d || null == D) return null;
-    let Y = e => {
-        _.Z.updateGuild({
+    }, [A]);
+    let Y = (0, l.e7)([O.Z], () => null != u ? O.Z.getErrors() : null);
+    if (null == u || null == A) return null;
+    let K = e => {
+        v.Z.updateGuild({
           discoverySplash: e
         })
       },
-      K = e => {
+      X = e => {
         let t = () => {
-          (0, g.W1)(d.id, e), e ? (0, g.Vv)({
-            guildId: d.id,
-            primaryCategoryId: D.primaryCategoryId,
-            keywords: D.keywords,
-            emojiDiscoverabilityEnabled: D.emojiDiscoverabilityEnabled,
-            partnerActionedTimestamp: D.partnerActionedTimestamp,
-            partnerApplicationTimestamp: D.partnerApplicationTimestamp,
+          (0, p.W1)(u.id, e), e ? (0, p.Vv)({
+            guildId: u.id,
+            primaryCategoryId: A.primaryCategoryId,
+            keywords: A.keywords,
+            emojiDiscoverabilityEnabled: A.emojiDiscoverabilityEnabled,
+            partnerActionedTimestamp: A.partnerActionedTimestamp,
+            partnerApplicationTimestamp: A.partnerApplicationTimestamp,
             isPublished: !0,
-            reasonsToJoin: D.reasonsToJoin,
-            socialLinks: D.socialLinks,
-            about: D.about
-          }) : (0, g.Vv)({
-            guildId: d.id,
-            primaryCategoryId: D.primaryCategoryId,
-            keywords: D.keywords,
-            emojiDiscoverabilityEnabled: D.emojiDiscoverabilityEnabled,
-            partnerActionedTimestamp: D.partnerActionedTimestamp,
-            partnerApplicationTimestamp: D.partnerApplicationTimestamp,
+            reasonsToJoin: A.reasonsToJoin,
+            socialLinks: A.socialLinks,
+            about: A.about
+          }) : (0, p.Vv)({
+            guildId: u.id,
+            primaryCategoryId: A.primaryCategoryId,
+            keywords: A.keywords,
+            emojiDiscoverabilityEnabled: A.emojiDiscoverabilityEnabled,
+            partnerActionedTimestamp: A.partnerActionedTimestamp,
+            partnerApplicationTimestamp: A.partnerApplicationTimestamp,
             isPublished: !1,
-            reasonsToJoin: D.reasonsToJoin,
-            socialLinks: D.socialLinks,
-            about: D.about
-          }), _.Z.saveGuild(d.id, {
-            discoverySplash: d.discoverySplash,
-            description: d.description
+            reasonsToJoin: A.reasonsToJoin,
+            socialLinks: A.socialLinks,
+            about: A.about
+          }), v.Z.saveGuild(u.id, {
+            discoverySplash: u.discoverySplash,
+            description: u.description
           })
         };
         if (e) return void t();
-        null != d.vanityURLCode ? n.e("66731").then(n.bind(n, 241485)).then(e => {
+        null != u.vanityURLCode ? n.e("66731").then(n.bind(n, 241485)).then(e => {
           e.default.open(t)
         }) : t()
       },
-      X = (e, t) => {
-        let n = [...D.socialLinks],
-          r = [...F],
-          i = [...A];
-        r[t] = e, n[t] = N.z[e].baseUrl, i[t] = !0, L(i), z(r), G(i.every(e => !0 === e)), (0, g.t$)(d.id, n)
-      },
       q = (e, t) => {
-        let n = [...D.socialLinks],
+        let n = [...A.socialLinks],
+          r = [...z],
+          i = [...k];
+        r[t] = e, n[t] = I.z[e].baseUrl, i[t] = !0, M(i), H(r), U(i.every(e => !0 === e)), (0, p.t$)(u.id, n)
+      },
+      Q = (e, t) => {
+        let n = [...A.socialLinks],
           r = n[t],
           i = e;
-        0 === r.length && i.length > 1 && !1 === RegExp("^https?:").test(i) && (i = "https://" + i), /\.(zip|exe|pdf|dmg|msi|apk|rar|7z|tar|gz|iso|docx?|xlsx?|pptx?|mp4|mp3)$/i.test(i) || (n[t] = i, (0, g.t$)(d.id, n))
-      },
-      Q = e => {
-        let t = [...U];
-        t.splice(e, 1), B(t);
-        let n = [...A];
-        n.splice(e, 1), L(n);
-        let r = [...F];
-        r.splice(e, 1), z(r);
-        let i = [...D.socialLinks];
-        i.splice(e, 1), (0, g.t$)(d.id, i)
+        0 === r.length && i.length > 1 && !1 === RegExp("^https?:").test(i) && (i = "https://" + i), /\.(zip|exe|pdf|dmg|msi|apk|rar|7z|tar|gz|iso|docx?|xlsx?|pptx?|mp4|mp3)$/i.test(i) || (n[t] = i, (0, p.t$)(u.id, n))
       },
       J = e => {
-        let {
-          reason: t = "",
-          emoji_name: n = ""
-        } = e;
-        return null !== t && t.length >= 10 && t.length <= 128 && null !== n
+        let t = [...B];
+        t.splice(e, 1), F(t);
+        let n = [...k];
+        n.splice(e, 1), M(n);
+        let r = [...z];
+        r.splice(e, 1), H(r);
+        let i = [...A.socialLinks];
+        i.splice(e, 1), (0, p.t$)(u.id, i)
       },
       $ = e => {
         let {
           reason: t = "",
           emoji_name: n = ""
         } = e;
+        return null !== t && t.length >= 10 && t.length <= 128 && null !== n
+      },
+      ee = e => {
+        let {
+          reason: t = "",
+          emoji_name: n = ""
+        } = e;
         return (null === t || "" === t) && null === n
       },
-      ee = [{
-        title: E.intl.string(E.t["/SWsHx"]),
+      et = [{
+        title: S.intl.string(S.t["/SWsHx"]),
         items: [{
-          description: E.intl.string(E.t.DU8jFx),
-          completed: null !== d.discoverySplash && "" !== d.discoverySplash
+          description: S.intl.string(S.t.DU8jFx),
+          completed: null !== u.discoverySplash && "" !== u.discoverySplash
         }, {
-          description: E.intl.string(E.t.SW5OHx),
-          completed: null !== d.description && "" !== d.description
+          description: S.intl.string(S.t.SW5OHx),
+          completed: null !== u.description && "" !== u.description
         }, {
-          description: E.intl.string(E.t.m3b3WF),
-          completed: null !== D.about && D.about.length >= 300 && D.about.length <= 2400
+          description: S.intl.string(S.t.m3b3WF),
+          completed: null !== A.about && A.about.length >= 300 && A.about.length <= 2400
         }, {
-          description: E.intl.string(E.t.qpx5MD),
-          completed: null !== D.reasonsToJoin && D.reasonsToJoin.every(e => $(e) || J(e)) && D.reasonsToJoin.filter(J).length >= 2
+          description: S.intl.string(S.t.qpx5MD),
+          completed: null !== A.reasonsToJoin && A.reasonsToJoin.every(e => ee(e) || $(e)) && A.reasonsToJoin.filter($).length >= 2
         }]
       }],
-      et = (e, t) => {
-        let n = [...U];
-        n[e] = t, B(n)
+      en = (e, t) => {
+        let n = [...B];
+        n[e] = t, F(n)
       };
     return (0, r.jsx)("div", {
-      className: S.settingsColumn,
+      className: T.settingsColumn,
       children: (0, r.jsx)("div", {
-        className: S.settingsContainer,
-        children: (0, r.jsx)(a.w0Z, {
-          className: S.settingsScroller,
+        className: T.settingsContainer,
+        children: (0, r.jsx)(o.w0Z, {
+          className: T.settingsScroller,
           children: (0, r.jsx)("main", {
             ref: t,
-            className: S.settingsContent,
-            children: (0, r.jsx)(a.JcV, {
+            className: T.settingsContent,
+            children: (0, r.jsx)(o.JcV, {
               containerRef: t,
               children: (0, r.jsxs)("div", {
-                className: S.container,
-                children: [(0, r.jsxs)(a.hjN, {
-                  className: S.mainContent,
+                className: T.container,
+                children: [(0, r.jsxs)(o.hjN, {
+                  className: T.mainContent,
                   title: (0, r.jsxs)("div", {
-                    children: [E.intl.string(E.t.kGlQGB), " ", (0, r.jsx)(u.Z, {
-                      className: S.betaTag
+                    children: [S.intl.string(S.t.kGlQGB), " ", (0, r.jsx)(m.Z, {
+                      className: T.betaTag
                     })]
                   }),
-                  tag: a.RB0.H1,
-                  children: [(0, r.jsxs)(a.R94, {
-                    className: S.tabMainDescription,
-                    type: a.geA.DESCRIPTION,
-                    children: [E.intl.format(E.t["+ScrMT"], {
+                  tag: o.RB0.H1,
+                  children: [(0, r.jsxs)(o.R94, {
+                    className: T.tabMainDescription,
+                    type: o.geA.DESCRIPTION,
+                    children: [S.intl.format(S.t["+ScrMT"], {
                       discordURL: window.GLOBAL_ENV.MARKETING_ENDPOINT
-                    }), " ", E.intl.format(E.t.T6WtKy, {
-                      learnMoreURL: j.Z.getArticleURL(I.BhN.SERVER_WEB_PAGES)
+                    }), " ", S.intl.format(S.t.T6WtKy, {
+                      learnMoreURL: _.Z.getArticleURL(E.BhN.SERVER_WEB_PAGES)
                     })]
                   }), (() => {
-                    if (!D.isPublished || null == k) return;
-                    let e = T + k;
-                    return (0, r.jsxs)(a.hjN, {
-                      className: S.noDividerFormSection,
-                      children: [(0, r.jsx)(a.vwX, {
-                        className: S.formTitle,
-                        children: E.intl.string(E.t.safBZ2)
-                      }), (0, r.jsx)(c.Z, {
+                    if (!A.isPublished || null == L) return;
+                    let e = P + L;
+                    return (0, r.jsxs)(o.hjN, {
+                      className: T.noDividerFormSection,
+                      children: [(0, r.jsx)(o.vwX, {
+                        className: T.formTitle,
+                        children: S.intl.string(S.t.safBZ2)
+                      }), (0, r.jsx)(d.Z, {
                         value: e
-                      }), (0, r.jsx)(a.zxk, {
-                        className: S.viewPageButton,
-                        size: a.zxk.Sizes.SMALL,
-                        color: a.zxk.Colors.BRAND,
-                        onClick: () => window.open(e),
-                        children: E.intl.string(E.t.NI8iGB)
+                      }), (0, r.jsx)("div", {
+                        "data-button-hoisted-classname-wrapper": !0,
+                        className: T.viewPageButton,
+                        children: (0, r.jsx)(o.zxk, {
+                          variant: "primary",
+                          size: "sm",
+                          text: S.intl.string(S.t.NI8iGB),
+                          onClick: () => window.open(e)
+                        })
                       })]
                     })
-                  })(), (0, r.jsx)(a.$i$, {
-                    className: S.divider
+                  })(), (0, r.jsx)(o.$i$, {
+                    className: T.divider
                   }), (() => {
-                    if (null != d) return (0, r.jsxs)(r.Fragment, {
-                      children: [(0, r.jsxs)(a.hjN, {
-                        children: [(0, r.jsx)(a.vwX, {
-                          className: S.formTitle,
-                          children: E.intl.string(E.t.GjPpSk)
-                        }), (0, r.jsx)(a.R94, {
-                          type: a.geA.DESCRIPTION,
-                          className: S.description,
-                          children: E.intl.string(E.t.MVXonJ)
+                    if (null != u) return (0, r.jsxs)(r.Fragment, {
+                      children: [(0, r.jsxs)(o.hjN, {
+                        children: [(0, r.jsx)(o.vwX, {
+                          className: T.formTitle,
+                          children: S.intl.string(S.t.GjPpSk)
+                        }), (0, r.jsx)(o.R94, {
+                          type: o.geA.DESCRIPTION,
+                          className: T.description,
+                          children: S.intl.string(S.t.MVXonJ)
                         })]
-                      }), (0, r.jsx)(O.E, {
-                        guildId: d.id,
-                        guildMetadata: D,
-                        isDisabled: !R
-                      }), (0, r.jsxs)(a.hjN, {
-                        className: S.noDividerFormSection,
-                        children: [(0, r.jsx)(a.vwX, {
-                          className: S.formTitle,
-                          children: E.intl.string(E.t.oOPlPD)
-                        }), (0, r.jsx)(C.Z, {
-                          guild: d,
-                          guildMetadata: D,
-                          disabled: !R
+                      }), (0, r.jsx)(C.E, {
+                        guildId: u.id,
+                        guildMetadata: A,
+                        isDisabled: !Z
+                      }), (0, r.jsxs)(o.hjN, {
+                        className: T.noDividerFormSection,
+                        children: [(0, r.jsx)(o.vwX, {
+                          className: T.formTitle,
+                          children: S.intl.string(S.t.oOPlPD)
+                        }), (0, r.jsx)(y.Z, {
+                          guild: u,
+                          guildMetadata: A,
+                          disabled: !Z
                         })]
-                      }), (null == W ? void 0 : W.category) != null ? (0, r.jsx)(a.Text, {
+                      }), (null == Y ? void 0 : Y.category) != null ? (0, r.jsx)(o.Text, {
                         color: "text-danger",
-                        className: S.error,
+                        className: T.error,
                         variant: "text-sm/normal",
-                        children: W.category
+                        children: Y.category
                       }) : null]
                     })
-                  })(), (0, r.jsx)(a.$i$, {
-                    className: S.divider
+                  })(), (0, r.jsx)(o.$i$, {
+                    className: T.divider
                   }), (() => {
-                    if (null != d) return (0, r.jsxs)(r.Fragment, {
-                      children: [(0, r.jsxs)(a.hjN, {
-                        className: S.twoColumnFormSection,
+                    if (null != u) return (0, r.jsxs)(r.Fragment, {
+                      children: [(0, r.jsxs)(o.hjN, {
+                        className: T.twoColumnFormSection,
                         children: [(0, r.jsxs)("div", {
-                          children: [(0, r.jsx)(a.vwX, {
-                            className: S.formTitle,
-                            children: E.intl.string(E.t["8bT/Cg"])
-                          }), (0, r.jsx)(a.R94, {
-                            type: a.geA.DESCRIPTION,
-                            className: S.formDescription,
-                            children: E.intl.string(E.t.WCWT7O)
-                          }), (0, r.jsxs)(a.zxk, {
-                            size: a.zxk.Sizes.SMALL,
-                            color: a.zxk.Colors.PRIMARY,
-                            children: [E.intl.string(E.t.yG2pUl), (0, r.jsx)(f.ZP, {
-                              disabled: !R,
-                              onChange: Y
+                          children: [(0, r.jsx)(o.vwX, {
+                            className: T.formTitle,
+                            children: S.intl.string(S.t["8bT/Cg"])
+                          }), (0, r.jsx)(o.R94, {
+                            type: o.geA.DESCRIPTION,
+                            className: T.formDescription,
+                            children: S.intl.string(S.t.WCWT7O)
+                          }), (0, r.jsxs)(a.zx, {
+                            size: a.zx.Sizes.SMALL,
+                            color: a.zx.Colors.PRIMARY,
+                            children: [S.intl.string(S.t.yG2pUl), (0, r.jsx)(h.ZP, {
+                              disabled: !Z,
+                              onChange: K
                             })]
                           })]
-                        }), (0, r.jsx)(h.Z, {
-                          image: d.discoverySplash,
-                          makeURL: e => b.ZP.getGuildDiscoverySplashURL({
-                            id: d.id,
+                        }), (0, r.jsx)(x.Z, {
+                          image: u.discoverySplash,
+                          makeURL: e => j.ZP.getGuildDiscoverySplashURL({
+                            id: u.id,
                             splash: e,
-                            size: 512 * (0, p.x_)()
+                            size: 512 * (0, f.x_)()
                           }),
-                          disabled: !R,
-                          onChange: Y,
-                          hint: E.intl.string(E.t.uPvxqK),
-                          imageClassName: S.imageUploaderInnerSquare,
+                          disabled: !Z,
+                          onChange: K,
+                          hint: S.intl.string(S.t.uPvxqK),
+                          imageClassName: T.imageUploaderInnerSquare,
                           hideSize: !0
                         })]
-                      }), (null == W ? void 0 : W.discovery_splash) != null ? (0, r.jsx)(a.Text, {
+                      }), (null == Y ? void 0 : Y.discovery_splash) != null ? (0, r.jsx)(o.Text, {
                         color: "text-danger",
                         variant: "text-sm/normal",
-                        children: W.discovery_splash
+                        children: Y.discovery_splash
                       }) : null]
                     })
-                  })(), (0, r.jsx)(a.$i$, {
-                    className: S.divider
-                  }), (0, r.jsxs)(a.hjN, {
-                    children: [(0, r.jsx)(a.vwX, {
-                      className: S.formTitle,
-                      children: E.intl.string(E.t["RSfm+v"])
-                    }), (0, r.jsx)(a.R94, {
-                      className: S.description,
-                      type: a.geA.DESCRIPTION,
-                      children: E.intl.string(E.t.IBi6h4)
-                    }), (0, r.jsx)(a.Kx8, {
-                      value: null !== d.description ? d.description : "",
-                      placeholder: E.intl.string(E.t.rFa9Ul),
+                  })(), (0, r.jsx)(o.$i$, {
+                    className: T.divider
+                  }), (0, r.jsxs)(o.hjN, {
+                    children: [(0, r.jsx)(o.vwX, {
+                      className: T.formTitle,
+                      children: S.intl.string(S.t["RSfm+v"])
+                    }), (0, r.jsx)(o.R94, {
+                      className: T.description,
+                      type: o.geA.DESCRIPTION,
+                      children: S.intl.string(S.t.IBi6h4)
+                    }), (0, r.jsx)(o.Kx8, {
+                      value: null !== u.description ? u.description : "",
+                      placeholder: S.intl.string(S.t.rFa9Ul),
                       onChange: e => {
                         var t;
-                        _.Z.updateGuild({
+                        v.Z.updateGuild({
                           description: null != (t = null == e ? void 0 : e.replaceAll("\n", "")) ? t : ""
                         })
                       },
                       maxLength: 120,
-                      disabled: !R
+                      disabled: !Z
                     })]
-                  }), (0, r.jsx)(a.$i$, {
-                    className: S.divider
+                  }), (0, r.jsx)(o.$i$, {
+                    className: T.divider
                   }), (() => {
-                    if (null == D) return null;
-                    let e = 0 === D.reasonsToJoin.length ? [, , , , ].fill({
+                    if (null == A) return null;
+                    let e = 0 === A.reasonsToJoin.length ? [, , , , ].fill({
                       reason: "",
                       emoji_name: null
-                    }) : D.reasonsToJoin;
-                    return (0, r.jsxs)(a.hjN, {
-                      children: [(0, r.jsx)(a.vwX, {
-                        className: S.formTitle,
-                        children: E.intl.string(E.t.vUmXsb)
-                      }), (0, r.jsx)(a.R94, {
-                        type: a.geA.DESCRIPTION,
-                        className: S.description,
-                        children: E.intl.string(E.t.esnBnZ)
+                    }) : A.reasonsToJoin;
+                    return (0, r.jsxs)(o.hjN, {
+                      children: [(0, r.jsx)(o.vwX, {
+                        className: T.formTitle,
+                        children: S.intl.string(S.t.vUmXsb)
+                      }), (0, r.jsx)(o.R94, {
+                        type: o.geA.DESCRIPTION,
+                        className: T.description,
+                        children: S.intl.string(S.t.esnBnZ)
                       }), (0, r.jsx)("div", {
-                        className: S.reasonToJoin,
-                        children: (0, r.jsx)(y.Z, {
+                        className: T.reasonToJoin,
+                        children: (0, r.jsx)(N.Z, {
                           reasonMinLength: 10,
                           reasonMaxLength: 128,
-                          guildId: d.id,
+                          guildId: u.id,
                           reasons: e
                         })
-                      }), (null == W ? void 0 : W.reasons_to_join) != null ? (0, r.jsx)(a.Text, {
+                      }), (null == Y ? void 0 : Y.reasons_to_join) != null ? (0, r.jsx)(o.Text, {
                         color: "text-danger",
                         variant: "text-sm/normal",
-                        children: W.reasons_to_join
+                        children: Y.reasons_to_join
                       }) : null]
                     })
-                  })(), (0, r.jsx)(a.$i$, {
-                    className: S.divider
+                  })(), (0, r.jsx)(o.$i$, {
+                    className: T.divider
                   }), (0, r.jsxs)(r.Fragment, {
-                    children: [(0, r.jsxs)(a.hjN, {
-                      children: [(0, r.jsx)(a.vwX, {
-                        className: S.formTitle,
-                        children: E.intl.string(E.t["lu+BmJ"])
-                      }), (0, r.jsx)(a.R94, {
-                        className: S.description,
-                        type: a.geA.DESCRIPTION,
-                        children: E.intl.string(E.t.ozSi8v)
-                      }), (0, r.jsx)(a.Kx8, {
+                    children: [(0, r.jsxs)(o.hjN, {
+                      children: [(0, r.jsx)(o.vwX, {
+                        className: T.formTitle,
+                        children: S.intl.string(S.t["lu+BmJ"])
+                      }), (0, r.jsx)(o.R94, {
+                        className: T.description,
+                        type: o.geA.DESCRIPTION,
+                        children: S.intl.string(S.t.ozSi8v)
+                      }), (0, r.jsx)(o.Kx8, {
                         showCharacterCount: !0,
-                        className: S.textArea,
-                        value: D.about,
-                        placeholder: E.intl.string(E.t.TduTbm),
+                        className: T.textArea,
+                        value: A.about,
+                        placeholder: S.intl.string(S.t.TduTbm),
                         onChange: e => {
-                          (0, g.mA)(d.id, e)
+                          (0, p.mA)(u.id, e)
                         },
                         minLength: 300,
                         maxLength: 2400,
-                        disabled: !R,
-                        defaultDirty: (null == (e = D.about) ? void 0 : e.length) > 0
-                      }, "text-area-".concat(Z))]
-                    }), (null == W ? void 0 : W.about) != null ? (0, r.jsx)(a.Text, {
+                        disabled: !Z,
+                        defaultDirty: (null == (e = A.about) ? void 0 : e.length) > 0
+                      }, "text-area-".concat(D))]
+                    }), (null == Y ? void 0 : Y.about) != null ? (0, r.jsx)(o.Text, {
                       color: "text-danger",
                       variant: "text-sm/normal",
-                      children: W.about
+                      children: Y.about
                     }) : null]
-                  }), (0, r.jsx)(a.$i$, {
-                    className: S.divider
-                  }), (0, r.jsxs)(a.hjN, {
-                    children: [(0, r.jsx)(a.vwX, {
-                      className: S.formTitle,
-                      children: E.intl.string(E.t.V5mNyc)
-                    }), (0, r.jsx)(a.R94, {
-                      className: S.description,
-                      type: a.geA.DESCRIPTION,
-                      children: E.intl.string(E.t.d3kA9f)
-                    }), D.socialLinks.map((e, t) => (0, r.jsxs)("div", {
-                      className: S.socialLinksContainer,
-                      onMouseOver: () => et(t, !0),
-                      onFocus: () => et(t, !0),
-                      onMouseOut: () => et(t, !1),
-                      onBlur: () => et(t, !1),
-                      children: [(0, r.jsx)(a.q4e, {
-                        className: D.isPublished ? S.socialLinksDropdownMax : S.socialLinksDropdownMin,
-                        options: H(F[t]),
-                        placeholder: E.intl.string(E.t.xSALIC),
-                        value: F[t],
-                        onChange: e => X(e, t),
-                        isDisabled: !R
-                      }, "dropdown-" + t), (0, r.jsx)(a.oil, {
-                        value: e,
-                        className: D.isPublished ? S.socialLinksMax : S.socialLinksMin,
+                  }), (0, r.jsx)(o.$i$, {
+                    className: T.divider
+                  }), (0, r.jsxs)(o.hjN, {
+                    children: [(0, r.jsx)(o.vwX, {
+                      className: T.formTitle,
+                      children: S.intl.string(S.t.V5mNyc)
+                    }), (0, r.jsx)(o.R94, {
+                      className: T.description,
+                      type: o.geA.DESCRIPTION,
+                      children: S.intl.string(S.t.d3kA9f)
+                    }), A.socialLinks.map((e, t) => (0, r.jsxs)("div", {
+                      className: T.socialLinksContainer,
+                      onMouseOver: () => en(t, !0),
+                      onFocus: () => en(t, !0),
+                      onMouseOut: () => en(t, !1),
+                      onBlur: () => en(t, !1),
+                      children: [(0, r.jsx)(o.q4e, {
+                        className: A.isPublished ? T.socialLinksDropdownMax : T.socialLinksDropdownMin,
+                        options: V(z[t]),
+                        placeholder: S.intl.string(S.t.xSALIC),
+                        value: z[t],
                         onChange: e => q(e, t),
-                        placeholder: E.intl.string(E.t.Q6o4pK),
+                        isDisabled: !Z
+                      }, "dropdown-" + t), (0, r.jsx)(o.oil, {
+                        value: e,
+                        className: A.isPublished ? T.socialLinksMax : T.socialLinksMin,
+                        onChange: e => Q(e, t),
+                        placeholder: S.intl.string(S.t.Q6o4pK),
                         maxLength: 150,
-                        disabled: !R
-                      }, "link-" + t), A[t] ? (0, r.jsx)(a.owK, {
+                        disabled: !Z
+                      }, "link-" + t), k[t] ? (0, r.jsx)(o.owK, {
                         size: "custom",
-                        className: D.isPublished ? S.validationButtonMax : S.validationButtonMin,
+                        className: A.isPublished ? T.validationButtonMax : T.validationButtonMin,
                         color: s.Z.unsafe_rawColors.GREEN_230.css,
                         width: 20,
                         height: 20
-                      }, "validation-passed-" + t) : (0, r.jsx)(a.k$p, {
+                      }, "validation-passed-" + t) : (0, r.jsx)(o.k$p, {
                         size: "custom",
-                        className: D.isPublished ? S.validationButtonMax : S.validationButtonMin,
+                        className: A.isPublished ? T.validationButtonMax : T.validationButtonMin,
                         color: s.Z.unsafe_rawColors.RED_400.css,
                         width: 20,
                         height: 20
-                      }, "validation-failed-" + t), R && (0, r.jsx)(o.Z, {
-                        className: U[t] ? D.isPublished ? S.deleteButtonMax : S.deleteButtonMin : D.isPublished ? S.deleteButtonHiddenMax : S.deleteButtonHiddenMin,
-                        onClick: () => Q(t)
+                      }, "validation-failed-" + t), Z && (0, r.jsx)(c.Z, {
+                        className: B[t] ? A.isPublished ? T.deleteButtonMax : T.deleteButtonMin : A.isPublished ? T.deleteButtonHiddenMax : T.deleteButtonHiddenMin,
+                        onClick: () => J(t)
                       }, "delete-button-" + t)]
-                    }, "social-container-" + t)), (null == W ? void 0 : W.social_links) != null ? (0, r.jsx)(a.Text, {
+                    }, "social-container-" + t)), (null == Y ? void 0 : Y.social_links) != null ? (0, r.jsx)(o.Text, {
                       color: "text-danger",
                       variant: "text-sm/normal",
-                      children: W.social_links
-                    }) : null, (0, r.jsx)(a.zxk, {
-                      size: a.zxk.Sizes.SMALL,
-                      color: a.zxk.Colors.PRIMARY,
+                      children: Y.social_links
+                    }) : null, (0, r.jsx)(o.zxk, {
+                      variant: "secondary",
+                      size: "sm",
+                      text: S.intl.string(S.t.QvovjY),
                       onClick: () => {
-                        if (D.socialLinks.length < 9) {
-                          let e = [...D.socialLinks];
-                          (0, g.t$)(d.id, e.concat("")), z(F.concat(""))
+                        if (A.socialLinks.length < 9) {
+                          let e = [...A.socialLinks];
+                          (0, p.t$)(u.id, e.concat("")), H(z.concat(""))
                         }
                       },
-                      disabled: !R || D.socialLinks.length >= 9,
-                      children: E.intl.string(E.t.QvovjY)
+                      disabled: !Z || A.socialLinks.length >= 9
                     })]
-                  }), D.isPublished && (0, r.jsxs)(r.Fragment, {
-                    children: [(0, r.jsx)(a.$i$, {
-                      className: S.divider
-                    }), (0, r.jsxs)(a.hjN, {
-                      children: [(0, r.jsx)(a.vwX, {
-                        className: S.formTitle,
-                        children: E.intl.string(E.t["5yF7e3"])
-                      }), (0, r.jsx)(a.R94, {
-                        className: S.description,
-                        type: a.geA.DESCRIPTION,
-                        children: E.intl.string(E.t.eOFvqa)
-                      }), (0, r.jsx)(a.zxk, {
-                        size: a.zxk.Sizes.SMALL,
-                        color: a.zxk.Colors.RED,
-                        onClick: () => K(!1),
-                        disabled: !R,
-                        children: E.intl.string(E.t["DCHd/P"])
+                  }), A.isPublished && (0, r.jsxs)(r.Fragment, {
+                    children: [(0, r.jsx)(o.$i$, {
+                      className: T.divider
+                    }), (0, r.jsxs)(o.hjN, {
+                      children: [(0, r.jsx)(o.vwX, {
+                        className: T.formTitle,
+                        children: S.intl.string(S.t["5yF7e3"])
+                      }), (0, r.jsx)(o.R94, {
+                        className: T.description,
+                        type: o.geA.DESCRIPTION,
+                        children: S.intl.string(S.t.eOFvqa)
+                      }), (0, r.jsx)(o.zxk, {
+                        variant: "critical-primary",
+                        size: "sm",
+                        text: S.intl.string(S.t["DCHd/P"]),
+                        onClick: () => X(!1),
+                        disabled: !Z
                       })]
                     })]
-                  }), (null == W ? void 0 : W.is_published) != null ? (0, r.jsx)(a.Text, {
+                  }), (null == Y ? void 0 : Y.is_published) != null ? (0, r.jsx)(o.Text, {
                     color: "text-danger",
                     variant: "text-sm/normal",
-                    children: W.is_published
+                    children: Y.is_published
                   }) : null]
-                }), !D.isPublished && (0, r.jsx)("div", {
-                  className: S.checklist,
-                  children: (0, r.jsx)(m.Z, {
-                    title: E.intl.string(E.t["2kCyn5"]),
-                    children: ee,
-                    buttonLabel: E.intl.string(E.t.tVK6S0),
-                    buttonCallback: () => K(!0),
-                    disabled: !R || !M
+                }), !A.isPublished && (0, r.jsx)("div", {
+                  className: T.checklist,
+                  children: (0, r.jsx)(g.Z, {
+                    title: S.intl.string(S.t["2kCyn5"]),
+                    children: et,
+                    buttonLabel: S.intl.string(S.t.tVK6S0),
+                    buttonCallback: () => X(!0),
+                    disabled: !Z || !G
                   })
                 })]
               })
@@ -513,4 +517,4 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
       })
     })
   },
-  R = () => null == (0, l.e7)([v.Z], () => v.Z.getGuild()) ? null : (0, r.jsx)(w, {})
+  Z = () => null == (0, l.e7)([O.Z], () => O.Z.getGuild()) ? null : (0, r.jsx)(R, {})

@@ -5,7 +5,7 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  l = n(481060),
+  l = n(755721),
   s = n(906732),
   a = n(884858),
   o = n(813197),
@@ -37,9 +37,9 @@ function h(e) {
       perks: (0, g.o9)()
     })
   }, [x, t]);
-  return b ? (0, r.jsxs)(l.zxk, {
+  return b ? (0, r.jsxs)(l.zx, {
     disabled: !j,
-    color: l.Ttl.BRAND,
+    color: l.Tt.BRAND,
     className: h,
     children: [f.intl.string(f.t.yG2pUl), (0, r.jsx)(o.ZP, {
       disabled: !j,

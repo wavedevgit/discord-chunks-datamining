@@ -33,17 +33,17 @@ var r = n(255367),
   E = n(989941),
   P = n(562224),
   R = n(586290),
-  k = n(544753),
-  A = n(853030),
+  A = n(544753),
+  k = n(853030),
   M = n(560749),
-  L = n(311924),
-  D = n(485299),
+  D = n(311924),
+  L = n(485299),
   B = n(615161),
   G = n(289989),
   U = n(328242),
   W = n(565574),
-  z = n(286420),
-  F = n(51708),
+  F = n(286420),
+  z = n(51708),
   H = n(801604),
   V = n(577257),
   Y = n(70722),
@@ -72,7 +72,7 @@ function Q(e) {
     autoTrackExposure: !1
   }), er = i.useRef(performance.now()), ei = (0, m.e7)([C.Z], () => C.Z.getUseSystemScreensharePicker() && ((0, w.isLinux)() || (0, w.isMac)() && c().satisfies(null === x.Z || void 0 === x.Z ? void 0 : x.Z.os.release, Y.jR))), {
     analyticsLocations: el
-  } = (0, v.ZP)(_.Z.GO_LIVE_MODAL_V2), es = (0, m.e7)([O.default], () => O.default.getCurrentUser()), eo = (0, k.Z)(), {
+  } = (0, v.ZP)(_.Z.GO_LIVE_MODAL_V2), es = (0, m.e7)([O.default], () => O.default.getCurrentUser()), eo = (0, A.Z)(), {
     state: ea,
     dispatch: ec
   } = (0, B.Ti)(a, es, eo, (0, w.isWindows)() && null != a && Q ? "confirm" : "source_select"), ed = (0, b.zX)({
@@ -166,9 +166,9 @@ function Q(e) {
           nativePickerEnabled: ei
         }), (0, r.jsxs)("div", {
           className: K.rightButtonGroup,
-          children: [ej && (0, r.jsx)(z.Z, {
+          children: [ej && (0, r.jsx)(F.Z, {
             onClose: n
-          }), e_ && !eg && (0, r.jsx)(A.Z, {
+          }), e_ && !eg && (0, r.jsx)(k.Z, {
             mainCTADisabled: !eh && "" === ea.nativeSourceType,
             mainCTAOnClick: () => {
               (0, T.t)(), (0, T.T)(ea.nativeSourceType)
@@ -176,7 +176,7 @@ function Q(e) {
             align: "right",
             ctaText: J.intl.string(J.t.FiBjwc),
             hideOptionsButton: !ej
-          }), eg && !e_ && (0, r.jsx)(A.Z, {
+          }), eg && !e_ && (0, r.jsx)(k.Z, {
             mainCTADisabled: null == ea.selectedSource,
             mainCTAOnClick: () => {
               null != ea.selectedChannel ? eO(ea.selectedChannel) : null != ea.selectedSource && ey(ea.selectedSource)
@@ -189,7 +189,7 @@ function Q(e) {
             align: "right"
           })]
         })]
-      }), eu && (0, r.jsx)(F.Z, {
+      }), eu && (0, r.jsx)(z.Z, {
         onClose: n
       })]
     }),
@@ -222,7 +222,7 @@ function Q(e) {
           [K.withFooter]: ev
         }),
         onSelectChannel: eO
-      }) : ep ? (0, r.jsx)(D.Z, {
+      }) : ep ? (0, r.jsx)(L.Z, {
         hideBackButton: null != a
       }) : (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(h.xBx, {
@@ -277,7 +277,7 @@ function Q(e) {
             }
           })
         })]
-      }), eb && (0, r.jsx)(L.Z, {}), ev && eI]
+      }), eb && (0, r.jsx)(D.Z, {}), ev && eI]
     })
   })
 }

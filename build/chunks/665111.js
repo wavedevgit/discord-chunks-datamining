@@ -1,25 +1,26 @@
 /** Chunk was on 84686 **/
 n.d(t, {
-  default: () => h
+  default: () => b
 });
 var r = n(255367);
 n(73800);
-var i = n(481060),
-  o = n(313201),
-  l = n(471253),
-  c = n(930180),
-  s = n(320596),
-  a = n(939863),
-  u = n(388032),
-  d = n(22946);
+var i = n(755721),
+  o = n(481060),
+  l = n(313201),
+  c = n(471253),
+  s = n(930180),
+  a = n(320596),
+  u = n(939863),
+  d = n(388032),
+  h = n(22946);
 
-function h(e) {
+function b(e) {
   var t, n, {
-      channel: h,
-      transitionState: b,
-      onClose: _
+      channel: b,
+      transitionState: _,
+      onClose: p
     } = e,
-    p = function(e, t) {
+    m = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -34,15 +35,15 @@ function h(e) {
       }
       return i
     }(e, ["channel", "transitionState", "onClose"]);
-  let m = (0, o.Dt)(),
-    g = (0, c._d)(h.id),
-    f = (0, c.K3)(h.id),
-    j = async () => {
-      await (0, l.yi)(h), _()
-    }, x = async () => {
-      await (0, l.RK)(h, !1), _()
+  let g = (0, l.Dt)(),
+    f = (0, s._d)(b.id),
+    j = (0, s.K3)(b.id),
+    x = async () => {
+      await (0, c.yi)(b), p()
+    }, y = async () => {
+      await (0, c.RK)(b, !1), p()
     };
-  return (0, r.jsx)(i.Y0X, (t = function(e) {
+  return (0, r.jsx)(o.Y0X, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -60,67 +61,67 @@ function h(e) {
     }
     return e
   }({
-    transitionState: b,
-    "aria-labelledby": m
-  }, p), n = n = {
-    size: i.CgR.SMALL,
+    transitionState: _,
+    "aria-labelledby": g
+  }, m), n = n = {
+    size: o.CgR.SMALL,
     parentComponent: "StageChannelModeratorJoinModal",
-    children: (0, r.jsxs)(i.hzk, {
-      className: d.content,
-      children: [(0, r.jsx)(a.Z, {
+    children: (0, r.jsxs)(o.hzk, {
+      className: h.content,
+      children: [(0, r.jsx)(u.Z, {
         children: (0, r.jsx)("div", {
-          className: d.stageIconBackground,
-          children: (0, r.jsx)(i.ewx, {
+          className: h.stageIconBackground,
+          children: (0, r.jsx)(o.ewx, {
             size: "custom",
             color: "currentColor",
             width: 40,
             height: 40,
-            className: d.stageIcon
+            className: h.stageIcon
           })
         })
-      }), (0, r.jsx)(i.X6q, {
-        id: m,
+      }), (0, r.jsx)(o.X6q, {
+        id: g,
         variant: "heading-xl/semibold",
         color: "header-primary",
-        className: d.headerTitle,
-        children: u.intl.string(u.t.njetU1)
-      }), (0, r.jsx)(i.Text, {
+        className: h.headerTitle,
+        children: d.intl.string(d.t.njetU1)
+      }), (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
-        className: d.headerSubtitle,
-        children: u.intl.string(u.t.LQY4JS)
-      }), (g > 0 || f > 0) && (0, r.jsx)(s.mv, {
-        channelId: h.id
+        className: h.headerSubtitle,
+        children: d.intl.string(d.t.LQY4JS)
+      }), (f > 0 || j > 0) && (0, r.jsx)(a.mv, {
+        channelId: b.id
       }), (0, r.jsxs)("div", {
-        className: d.buttonsContainer,
-        children: [(0, r.jsxs)(i.zxk, {
-          color: i.zxk.Colors.PRIMARY,
-          className: d.button,
-          innerClassName: d.innerButton,
+        className: h.buttonsContainer,
+        children: [(0, r.jsxs)(i.zx, {
+          color: i.zx.Colors.PRIMARY,
+          className: h.button,
+          innerClassName: h.innerButton,
+          onClick: y,
+          children: [(0, r.jsx)("div", {
+            className: h.icon,
+            children: (0, r.jsx)(o.S6n, {
+              size: "custom",
+              color: "currentColor",
+              width: 20,
+              height: 20
+            })
+          }), d.intl.string(d.t["Q8o/tb"])]
+        }), (0, r.jsxs)(i.zx, {
+          color: i.zx.Colors.PRIMARY,
+          className: h.button,
+          innerClassName: h.innerButton,
           onClick: x,
           children: [(0, r.jsx)("div", {
-            className: d.icon,
-            children: (0, r.jsx)(i.S6n, {
+            className: h.icon,
+            children: (0, r.jsx)(o.BFJ, {
               size: "custom",
               color: "currentColor",
               width: 20,
               height: 20
             })
-          }), u.intl.string(u.t["Q8o/tb"])]
-        }), (0, r.jsxs)(i.zxk, {
-          color: i.zxk.Colors.PRIMARY,
-          className: d.button,
-          innerClassName: d.innerButton,
-          onClick: j,
-          children: [(0, r.jsx)("div", {
-            className: d.icon,
-            children: (0, r.jsx)(i.BFJ, {
-              size: "custom",
-              color: "currentColor",
-              width: 20,
-              height: 20
-            })
-          }), u.intl.string(u.t["N3/Oyc"])]
+          }), d.intl.string(d.t["N3/Oyc"])]
         })]
       })]
     })

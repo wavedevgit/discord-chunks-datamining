@@ -1,13 +1,13 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  P: () => E
+  P: () => j
 }), n(290780), n(388685);
 var i = n(255367);
 n(73800);
 var r = n(524437),
   s = n(481060),
-  l = n(168107),
-  a = n(480916),
+  a = n(168107),
+  l = n(480916),
   o = n(247206),
   c = n(656577),
   d = n(294602),
@@ -21,19 +21,19 @@ var r = n(524437),
   x = n(388032),
   _ = n(298136);
 
-function E(e) {
+function j(e) {
   var t;
   let {
     isNested: n = !1
-  } = e, E = null == (t = (0, m.Z)()) || t, {
-    explicitContentGuilds: j,
+  } = e, j = null == (t = (0, m.Z)()) || t, {
+    explicitContentGuilds: E,
     explicitContentFriendDm: O,
     explicitContentNonFriendDm: C
-  } = (0, d.B)(), S = e => {
+  } = (0, d.B)(), v = e => {
     let t = Object.values(e);
-    if ((0, o.Ks)() && t.includes(r.Q4.SHOW)) return void l.Z.showAgeVerificationGetStartedModal(a.cU.SENSITIVE_MEDIA_FILTER_SETTINGS);
+    if ((0, o.Ks)() && t.includes(r.Q4.SHOW)) return void a.Z.showAgeVerificationGetStartedModal(l.cU.SENSITIVE_MEDIA_FILTER_SETTINGS);
     (0, c.zj)(e)
-  }, v = [{
+  }, S = [{
     value: r.Q4.BLUR,
     label: x.intl.string(x.t.S49UaW)
   }, {
@@ -46,7 +46,7 @@ function E(e) {
     value: r.Q4.SHOW,
     label: x.intl.string(x.t["5k5OFh"])
   };
-  return E && (v.unshift(N), T.unshift(N)), (0, i.jsx)(g.U, {
+  return j && (S.unshift(N), T.unshift(N)), (0, i.jsx)(g.U, {
     setting: f.s6.PRIVACY_SENSITIVE_MEDIA_V2,
     scrollPosition: h.FY.EXPLICIT_MEDIA_REDACTION_V2,
     children: n ? (0, i.jsxs)(i.Fragment, {
@@ -57,9 +57,9 @@ function E(e) {
           children: x.intl.string(x.t["+uI23N"])
         }), (0, i.jsx)(s.q4e, {
           look: s.qQH.CUSTOM,
-          options: v,
+          options: S,
           value: O,
-          onChange: e => S({
+          onChange: e => v({
             explicitContentFriendDm: e
           }),
           renderOptionValue: e => {
@@ -79,9 +79,9 @@ function E(e) {
           children: x.intl.string(x.t["Yh+HX1"])
         }), (0, i.jsx)(s.q4e, {
           look: s.qQH.CUSTOM,
-          options: v,
+          options: S,
           value: C,
-          onChange: e => S({
+          onChange: e => v({
             explicitContentNonFriendDm: e
           }),
           renderOptionValue: e => {
@@ -98,16 +98,16 @@ function E(e) {
         className: _.selectItemRow,
         children: [(0, i.jsx)(s.Text, {
           variant: "text-md/medium",
-          color: E ? "text-primary" : "text-muted",
+          color: j ? "text-primary" : "text-muted",
           children: x.intl.string(x.t["FP+a4+"])
         }), (0, i.jsx)(s.q4e, {
           look: s.qQH.CUSTOM,
           options: T,
-          value: j,
-          onChange: e => S({
+          value: E,
+          onChange: e => v({
             explicitContentGuilds: e
           }),
-          isDisabled: !E,
+          isDisabled: !j,
           renderOptionValue: e => {
             let [t] = e;
             return (0, i.jsx)(u.Z, {
@@ -134,9 +134,9 @@ function E(e) {
         title: x.intl.string(x.t["6k0AgI"]),
         titleClassName: _.selectItemTitle,
         children: (0, i.jsx)(s.q4e, {
-          options: v,
+          options: S,
           value: O,
-          onChange: e => S({
+          onChange: e => v({
             explicitContentFriendDm: e
           })
         })
@@ -145,9 +145,9 @@ function E(e) {
         title: x.intl.string(x.t.D2EGSk),
         titleClassName: _.selectItemTitle,
         children: (0, i.jsx)(s.q4e, {
-          options: v,
+          options: S,
           value: C,
-          onChange: e => S({
+          onChange: e => v({
             explicitContentNonFriendDm: e
           })
         })
@@ -157,11 +157,11 @@ function E(e) {
         titleClassName: _.selectItemTitle,
         children: (0, i.jsx)(s.q4e, {
           options: T,
-          value: j,
-          onChange: e => S({
+          value: E,
+          onChange: e => v({
             explicitContentGuilds: e
           }),
-          isDisabled: !E
+          isDisabled: !j
         })
       })]
     })

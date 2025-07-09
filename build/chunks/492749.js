@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(255367),
   s = n(73800),
   l = n(120356),
-  r = n.n(l),
-  a = n(442837),
+  a = n.n(l),
+  r = n(442837),
   o = n(481060),
   c = n(600164),
   d = n(565138),
@@ -15,9 +15,9 @@ var i = n(255367),
   x = n(388032),
   C = n(275017),
   h = n(36705),
-  g = n(216019);
+  p = n(216019);
 
-function p(e) {
+function g(e) {
   let {
     guild: t,
     onClick: n
@@ -35,7 +35,7 @@ function p(e) {
       children: t.name
     }), (0, i.jsx)("img", {
       alt: "",
-      src: g
+      src: p
     })]
   })
 }
@@ -44,7 +44,7 @@ function f(e) {
   let {
     directoryChannelId: t,
     guild: n
-  } = e, l = (0, a.e7)([u.Z], () => u.Z.getDirectoryEntry(t, n.id)), r = s.useRef(null);
+  } = e, l = (0, r.e7)([u.Z], () => u.Z.getDirectoryEntry(t, n.id)), a = s.useRef(null);
   return (0, i.jsxs)("div", {
     className: C.guildRow,
     children: [(0, i.jsx)(d.Z, {
@@ -57,7 +57,7 @@ function f(e) {
       children: n.name
     }), (0, i.jsx)(m.Z, {
       entry: l,
-      targetElementRef: r,
+      targetElementRef: a,
       children: e => {
         var t, n;
         return (0, i.jsx)(o.xhG, (t = function(e) {
@@ -78,7 +78,7 @@ function f(e) {
           }
           return e
         }({
-          ref: r,
+          ref: a,
           size: "md",
           color: "currentColor"
         }, e), n = n = {
@@ -102,11 +102,11 @@ function j(e) {
   let t, {
       directoryChannelId: n,
       onClose: l,
-      onGuildChosen: a,
+      onGuildChosen: r,
       handleChooseCreate: d,
       directoryGuildName: u,
       availableGuilds: m,
-      addedGuilds: g,
+      addedGuilds: p,
       loading: j
     } = e,
     [_, b] = s.useState(0);
@@ -125,10 +125,10 @@ function j(e) {
       variant: "text-md/normal",
       children: x.intl.string(x.t.liuEhY)
     })]
-  }) : m.map(e => (0, i.jsx)(p, {
+  }) : m.map(e => (0, i.jsx)(g, {
     guild: e,
-    onClick: () => a(e)
-  }, e.id)) : 0 === g.length ? (0, i.jsxs)("div", {
+    onClick: () => r(e)
+  }, e.id)) : 0 === p.length ? (0, i.jsxs)("div", {
     className: C.emptyContainer,
     children: [(0, i.jsx)("img", {
       src: h,
@@ -140,7 +140,7 @@ function j(e) {
       variant: "text-md/normal",
       children: x.intl.string(x.t.WJLuKC)
     })]
-  }) : g.map(e => (0, i.jsx)(f, {
+  }) : p.map(e => (0, i.jsx)(f, {
     directoryChannelId: n,
     guild: e
   }, e.id)), (0, i.jsxs)(i.Fragment, {
@@ -169,13 +169,13 @@ function j(e) {
         type: "top",
         look: "brand",
         children: [(0, i.jsx)(o.njP.Item, {
-          className: r()(C.tabBarItem, {
+          className: a()(C.tabBarItem, {
             [C.selectedTab]: 0 === _
           }),
           id: 0,
           children: x.intl.string(x.t.FTe8HR)
         }), (0, i.jsx)(o.njP.Item, {
-          className: r()(C.tabBarItem, {
+          className: a()(C.tabBarItem, {
             [C.selectedTab]: 1 === _
           }),
           id: 1,
@@ -192,11 +192,14 @@ function j(e) {
         variant: "heading-lg/semibold",
         className: C.footerTitle,
         children: x.intl.string(x.t.pgCZRE)
-      }), (0, i.jsx)(o.zxk, {
+      }), (0, i.jsx)("div", {
+        "data-button-hoisted-classname-wrapper": !0,
         className: C.footerButton,
-        color: o.zxk.Colors.PRIMARY,
-        onClick: d,
-        children: x.intl.string(x.t.WqJbLi)
+        children: (0, i.jsx)(o.zxk, {
+          variant: "secondary",
+          text: x.intl.string(x.t.WqJbLi),
+          onClick: d
+        })
       })]
     })]
   })

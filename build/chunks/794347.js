@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i, r = n(255367),
   s = n(73800),
-  l = n(120356),
-  a = n.n(l),
+  a = n(120356),
+  l = n.n(a),
   o = n(692547),
   c = n(477690),
   d = n(393238),
@@ -29,7 +29,7 @@ function x(e) {
     notchBackground: t,
     progress: n,
     gradientStart: i = o.Z.unsafe_rawColors.YELLOW_260.css,
-    gradientEnd: l = o.Z.unsafe_rawColors.GREEN_360.css,
+    gradientEnd: a = o.Z.unsafe_rawColors.GREEN_360.css,
     className: c,
     children: m
   } = e, {
@@ -40,22 +40,22 @@ function x(e) {
     return {
       transform: "translateX(".concat(e, "px)")
     }
-  }, [n, x]), E = s.useMemo(() => ({
+  }, [n, x]), j = s.useMemo(() => ({
     width: "".concat(x, "px"),
-    background: n <= 0 ? "none" : "linear-gradient(to right, ".concat(i, ", ").concat(l, ")")
-  }), [l, i, n, x]);
+    background: n <= 0 ? "none" : "linear-gradient(to right, ".concat(i, ", ").concat(a, ")")
+  }), [a, i, n, x]);
   return (0, r.jsxs)("div", {
     className: p.wrapper,
     ref: g,
     children: [(0, r.jsxs)("div", {
-      className: a()(p.container, c),
-      style: E,
+      className: l()(p.container, c),
+      style: j,
       children: [(0, r.jsx)("div", {
         className: p.progress,
         style: _
       }), 0 !== x && (0, r.jsx)(u.Z, {
         width: x,
-        className: a()(p.notches, f[t])
+        className: l()(p.notches, f[t])
       })]
     }), m]
   })

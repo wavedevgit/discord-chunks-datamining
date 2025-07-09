@@ -28,9 +28,9 @@ function c(e) {
       className: o()(l.title, l.subtitle),
       children: i.intl.string(i.t.xv5g7O)
     }), (0, s.jsx)(r.zxk, {
-      color: r.zxk.Colors.WHITE,
-      onClick: t,
-      children: i.intl.string(i.t["6X9YKC"])
+      variant: "overlay-primary",
+      text: i.intl.string(i.t["6X9YKC"]),
+      onClick: t
     })]
   })
 }

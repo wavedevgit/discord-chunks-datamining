@@ -41,23 +41,23 @@ function I(e) {
     appContext: A,
     onInteraction: D
   } = e, {
-    analyticsLocations: k
+    analyticsLocations: L
   } = (0, u.ZP)();
   (0, d.Z)({
     type: i.ImpressionTypes.MENU,
     name: i.ImpressionNames.AUDIO_DEVICE_MENU,
     properties: {
-      location_stack: k
+      location_stack: L
     }
   });
-  let L = (0, y.Z)(A),
-    M = (0, v.Z)(k, N),
-    R = (0, h.Z)(k, N),
+  let k = (0, y.Z)(A),
+    M = (0, v.Z)(L, N),
+    R = (0, h.Z)(L, N),
     F = (0, l.e7)([b.Z], () => b.Z.getActiveInputProfile()),
-    U = (0, m.Z)(k),
-    V = (0, p.Z)(k),
-    B = (0, f.Z)(k),
-    Y = (0, g.Z)(k),
+    U = (0, m.Z)(L),
+    V = (0, p.Z)(L),
+    B = (0, f.Z)(L),
+    Y = (0, g.Z)(L),
     z = o.Yn.DEFAULT,
     W = b.Z.isSelfDeaf(z),
     H = (0, l.e7)([b.Z], () => b.Z.getMode()),
@@ -88,10 +88,10 @@ function I(e) {
           id: "input-mode",
           label: S.intl.string(S.t.Q8gkVF),
           action: () => s.Z.setMode(G, void 0, void 0, {
-            analyticsLocations: k
+            analyticsLocations: L
           }),
           disabled: F === j._.STUDIO
-        }) : null, L]
+        }) : null, k]
       })]
     })
   })

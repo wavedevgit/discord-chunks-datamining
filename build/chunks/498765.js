@@ -1,13 +1,13 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => a
+  Z: () => l
 });
 var i = n(255367);
 n(73800);
 var r = n(120356),
   s = n.n(r),
-  l = n(283441);
-let a = e => {
+  a = n(283441);
+let l = e => {
   let {
     lifted: t = !1
   } = e;
@@ -18,8 +18,8 @@ let a = e => {
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg",
     preserveAspectRatio: "none",
-    className: s()(l.root, {
-      [l.lifted]: t
+    className: s()(a.root, {
+      [a.lifted]: t
     }),
     children: [(0, i.jsx)("path", {
       d: "M1175.02 650.847C567.943 650.847 449.538 793 0 793V0H2338V529.841C1912.54 529.841 1705.84 650.847 1175.02 650.847Z",
@@ -33,19 +33,19 @@ let a = e => {
         y2: "975.136",
         gradientUnits: "userSpaceOnUse",
         children: [(0, i.jsx)("stop", {
-          className: l.stop1
+          className: a.stop1
         }), (0, i.jsx)("stop", {
           offset: "0.339235",
-          className: l.stop2
+          className: a.stop2
         }), (0, i.jsx)("stop", {
           offset: "0.492065",
-          className: l.stop3
+          className: a.stop3
         }), (0, i.jsx)("stop", {
           offset: "0.823236",
-          className: l.stop4
+          className: a.stop4
         }), (0, i.jsx)("stop", {
           offset: "0.899558",
-          className: l.stop5
+          className: a.stop5
         })]
       })
     })]

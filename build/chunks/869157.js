@@ -33,7 +33,7 @@ var r = n(255367),
   P = n(388032),
   Z = n(981263);
 
-function k(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -52,7 +52,7 @@ function k(e) {
   return e
 }
 
-function A(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -126,19 +126,19 @@ function D(e) {
     let e = Object.values(p).filter(e => e.type === m.Kw.USER && !e.canRead && !y.has(e.id)).map(e => e.id);
     0 !== e.length && (u.Z.requestMembersById(l, e, !1), S(t => new Set([...t, ...e])))
   }, [l, p, y, S]);
-  let k = (0, c.e7)([I.Z], () => I.Z.getApplicationId()),
-    A = (0, c.e7)([N.default], () => null == k ? void 0 : N.default.integrations.find(e => {
+  let A = (0, c.e7)([I.Z], () => I.Z.getApplicationId()),
+    k = (0, c.e7)([N.default], () => null == A ? void 0 : N.default.integrations.find(e => {
       var t;
-      return (null == (t = e.application) ? void 0 : t.id) === k
+      return (null == (t = e.application) ? void 0 : t.id) === A
     })),
-    D = (0, c.e7)([f.Z], () => void 0 !== A && f.Z.canShowToggleTooltip(A.id));
+    D = (0, c.e7)([f.Z], () => void 0 !== k && f.Z.canShowToggleTooltip(k.id));
   return T.length > 0 ? T.map(e => (0, r.jsx)(R, {
     guild: h,
     commandId: t,
     onChange: t => P(e.id, e.type, t),
     onRemove: () => w(e.id, e.type),
     overwrite: e,
-    integration: A,
+    integration: k,
     canShowMigrationTooltip: D,
     hasAccessToMutatePermissions: g
   }, e.id)) : (0, r.jsx)("div", {
@@ -172,7 +172,7 @@ function R(e) {
   i.useEffect(() => {
     if (E) {
       var e;
-      y.default.track(w.rMx.COMMANDS_MIGRATION_TOOLTIP_VIEWED, A(k({}, (0, p.hH)(a.id)), {
+      y.default.track(w.rMx.COMMANDS_MIGRATION_TOOLTIP_VIEWED, k(A({}, (0, p.hH)(a.id)), {
         application_id: null == j || null == (e = j.application) ? void 0 : e.id,
         location: "toggle"
       }))
@@ -185,7 +185,7 @@ function R(e) {
       shouldShow: N,
       position: "left",
       hideOnClick: !1,
-      children: e => (0, r.jsx)("div", A(k({}, e), {
+      children: e => (0, r.jsx)("div", k(A({}, e), {
         ref: D,
         children: (0, r.jsx)(T.Z, {
           isDisabled: N,

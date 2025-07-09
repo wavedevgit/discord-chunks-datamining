@@ -1,53 +1,53 @@
 /** Chunk was on 25526 **/
-n.d(t, {
+r.d(t, {
   default: () => _
-}), n(388685), n(539854);
-var r = n(255367),
-  i = n(73800),
-  s = n(512722),
-  a = n.n(s),
-  o = n(902704),
-  l = n(481060),
-  c = n(935369),
-  d = n(367907),
-  u = n(707515),
-  f = n(528567),
-  g = n(873128),
-  h = n(647529),
-  b = n(986398),
-  m = n(981631),
-  x = n(388032),
-  p = n(308102);
+}), r(388685), r(539854);
+var n = r(255367),
+  i = r(73800),
+  a = r(512722),
+  s = r.n(a),
+  o = r(902704),
+  l = r(481060),
+  c = r(935369),
+  d = r(367907),
+  u = r(707515),
+  f = r(528567),
+  g = r(873128),
+  h = r(647529),
+  b = r(986398),
+  m = r(981631),
+  x = r(388032),
+  p = r(308102);
 
 function _(e) {
-  var t, n, {
-      guildId: s,
+  var t, r, {
+      guildId: a,
       leaderboardId: _
     } = e,
     j = function(e, t) {
       if (null == e) return {};
-      var n, r, i = function(e, t) {
+      var r, n, i = function(e, t) {
         if (null == e) return {};
-        var n, r, i = {},
-          s = Object.keys(e);
-        for (r = 0; r < s.length; r++) n = s[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+        var r, n, i = {},
+          a = Object.keys(e);
+        for (n = 0; n < a.length; n++) r = a[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
         return i
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var s = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < s.length; r++) n = s[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+        var a = Object.getOwnPropertySymbols(e);
+        for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
       }
       return i
     }(e, ["guildId", "leaderboardId"]);
-  let w = (0, g.Z)({
-    guildId: s,
+  let y = (0, g.Z)({
+    guildId: a,
     leaderboardId: _
   });
-  a()(null != w, "Leaderboard must be loaded before opening the settings modal");
-  let y = w.guild_settings,
-    [v, O] = i.useState(y.sort_by_statistic_id),
-    [C, S] = i.useState(y.sort_desc),
-    [I, N] = i.useState(y.show_winner_crown),
+  s()(null != y, "Leaderboard must be loaded before opening the settings modal");
+  let w = y.guild_settings,
+    [v, O] = i.useState(w.sort_by_statistic_id),
+    [C, S] = i.useState(w.sort_desc),
+    [I, N] = i.useState(w.show_winner_crown),
     [Z, {
       loading: L
     }] = (0, c.Z)(u._);
@@ -56,112 +56,113 @@ function _(e) {
       type: m.jXE.GUILD_LEADERBOARD_SETTINGS_MODAL
     })
   }, []);
-  let k = v !== y.sort_by_statistic_id || C !== y.sort_desc || I !== y.show_winner_crown,
+  let k = v !== w.sort_by_statistic_id || C !== w.sort_desc || I !== w.show_winner_crown,
     P = async () => {
       await Z({
-        guildId: s,
+        guildId: a,
         leaderboardId: _,
         sortByStatisticId: v,
         sortDesc: C,
         showWinnerCrown: I
       }), j.onClose()
     }, B = i.useMemo(() => {
-      let e = Object.values(w.settings.statistics).filter(e => e.selectable_for_competition),
+      let e = Object.values(y.settings.statistics).filter(e => e.selectable_for_competition),
         t = [];
-      for (let n of e)
+      for (let r of e)
         for (let e of [!0, !1]) t.push({
           value: {
-            sortByStatisticId: n.id,
+            sortByStatisticId: r.id,
             sortDesc: e
           },
           label: (0, f.s)({
-            statisticId: n.id,
+            statisticId: r.id,
             sortDesc: e,
-            aggregationType: n.aggregation_type
+            aggregationType: r.aggregation_type
           })
         });
       return t
-    }, [w]), E = B.find(e => (0, o.Z)(e.value, {
+    }, [y]), E = B.find(e => (0, o.Z)(e.value, {
       sortByStatisticId: v,
       sortDesc: C
     }));
-  return (0, r.jsx)(h.Z, (t = function(e) {
+  return (0, n.jsx)(h.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
-      var n = null != arguments[t] ? arguments[t] : {},
-        r = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(n, e).enumerable
-      }))), r.forEach(function(t) {
-        var r;
-        r = n[t], t in e ? Object.defineProperty(e, t, {
-          value: r,
+      var r = null != arguments[t] ? arguments[t] : {},
+        n = Object.keys(r);
+      "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(r, e).enumerable
+      }))), n.forEach(function(t) {
+        var n;
+        n = r[t], t in e ? Object.defineProperty(e, t, {
+          value: n,
           enumerable: !0,
           configurable: !0,
           writable: !0
-        }) : e[t] = r
+        }) : e[t] = n
       })
     }
     return e
-  }({}, j), n = n = {
-    guildId: s,
+  }({}, j), r = r = {
+    guildId: a,
     title: x.intl.string(x.t.rv9GUV),
-    buttons: (0, r.jsx)(l.zxk, {
+    buttons: (0, n.jsx)(l.zxk, {
+      variant: "primary",
+      text: x.intl.string(x.t.R3BPHx),
       onClick: P,
-      submitting: L,
-      disabled: !k,
-      children: x.intl.string(x.t.R3BPHx)
+      loading: L,
+      disabled: !k
     }),
-    children: (0, r.jsxs)(l.hzk, {
+    children: (0, n.jsxs)(l.hzk, {
       className: p.content,
-      children: [(0, r.jsx)(l.Text, {
+      children: [(0, n.jsx)(l.Text, {
         variant: "text-md/medium",
         color: "header-primary",
         children: x.intl.string(x.t.IQO9Fx)
-      }), (0, r.jsx)(l.LZC, {
+      }), (0, n.jsx)(l.LZC, {
         size: 8
-      }), (0, r.jsx)(l.q4e, {
+      }), (0, n.jsx)(l.q4e, {
         placeholder: x.intl.string(x.t["g/Rr2d"]),
         value: null == E ? void 0 : E.value,
         options: B,
         onChange: e => {
           let {
             sortByStatisticId: t,
-            sortDesc: n
+            sortDesc: r
           } = e;
-          O(t), S(n)
+          O(t), S(r)
         }
-      }), (0, r.jsx)("div", {
+      }), (0, n.jsx)("div", {
         className: p.divider
-      }), (0, r.jsx)(l.vwX, {
+      }), (0, n.jsx)(l.vwX, {
         children: x.intl.string(x.t.HU4EKC)
-      }), (0, r.jsx)(l.LZC, {
+      }), (0, n.jsx)(l.LZC, {
         size: 8
-      }), (0, r.jsx)(l.j7V, {
+      }), (0, n.jsx)(l.j7V, {
         hideBorder: !0,
         onChange: () => N(e => !e),
         value: I,
         className: p.showWinnerCrownSwitch,
-        children: (0, r.jsxs)("div", {
+        children: (0, n.jsxs)("div", {
           className: p.showWinnerCrownTextContainer,
-          children: [(0, r.jsx)(l.Text, {
+          children: [(0, n.jsx)(l.Text, {
             variant: "text-md/medium",
             color: "header-primary",
             children: x.intl.string(x.t.cH7QEx)
-          }), (0, r.jsx)(b.Z, {
+          }), (0, n.jsx)(b.Z, {
             className: p.winnerImage,
-            leaderboard: w
+            leaderboard: y
           })]
         })
       })]
     })
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-    var n = Object.keys(e);
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
+    var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
+      var n = Object.getOwnPropertySymbols(e);
+      r.push.apply(r, n)
     }
-    return n
-  })(Object(n)).forEach(function(e) {
-    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+    return r
+  })(Object(r)).forEach(function(e) {
+    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
   }), t))
 }

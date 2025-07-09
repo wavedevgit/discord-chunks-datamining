@@ -60,10 +60,11 @@ function d(e) {
           }
           return e
         }({
+          variant: "primary",
+          text: "Accept New Terms",
           disabled: !n
         }, e), i = i = {
-          onClick: d,
-          children: "Accept New Terms"
+          onClick: d
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {

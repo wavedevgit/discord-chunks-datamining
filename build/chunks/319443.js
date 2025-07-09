@@ -25,8 +25,8 @@ var r = n(255367),
   y = n(370210),
   I = n(678694),
   O = n(216780),
-  S = n(881294),
-  P = n(975907),
+  P = n(881294),
+  S = n(975907),
   E = n(119014),
   N = n(258971),
   T = n(133743),
@@ -34,9 +34,9 @@ var r = n(255367),
   L = n(666697),
   R = n(548514),
   Z = n(370648),
-  k = n(569527),
-  w = n(979007),
-  D = n(981631),
+  w = n(569527),
+  D = n(979007),
+  k = n(981631),
   M = n(388032),
   G = n(691133);
 
@@ -79,10 +79,10 @@ function z(e) {
 
 function B() {
   let e = a.useCallback(() => {
-      (0, S.qF)()
+      (0, P.qF)()
     }, []),
     t = a.useCallback(() => {
-      (0, S.rf)()
+      (0, P.rf)()
     }, []);
   return (0, r.jsxs)(c.qXd, {
     color: c.DM8.BRAND,
@@ -100,11 +100,11 @@ function B() {
       className: G.nagbarActionContainer,
       children: [(0, r.jsx)(c.NoS, {
         onClick: e,
-        noticeType: D.kVF.LOGIN,
+        noticeType: k.kVF.LOGIN,
         children: M.intl.string(M.t["825cFx"])
       }), (0, r.jsx)(c.NoS, {
         onClick: t,
-        noticeType: D.kVF.REGISTER,
+        noticeType: k.kVF.REGISTER,
         minor: !0,
         children: M.intl.string(M.t.HAkXzs)
       })]
@@ -120,7 +120,7 @@ let U = function() {
       resetScrollPosition: y
     } = (0, u.M)(),
     R = (0, N.Xh)(),
-    U = (0, S.nu)(),
+    U = (0, P.nu)(),
     F = (null == R ? void 0 : R.type) === N.m_.CATEGORY ? R.categoryId : void 0,
     {
       applicationId: V,
@@ -145,7 +145,7 @@ let U = function() {
   a.useEffect(() => {
     if (!en && null == er) {
       let e = (0, f.PM)();
-      v.default.track(D.rMx.APP_DIRECTORY_OPENED, {
+      v.default.track(k.rMx.APP_DIRECTORY_OPENED, {
         source: N.xF.EXTERNAL,
         session_id: e,
         user_id: null == ea ? void 0 : ea.id
@@ -176,7 +176,7 @@ let U = function() {
     onSearchTextChange: ec,
     onClearSearch: ed,
     onSearchSubmit: eu
-  } = (0, P.M)({
+  } = (0, S.M)({
     initialQuery: null != Y ? Y : ""
   }), ep = j.Z.useField("searchBarState"), {
     onTabsAvailableWidthChange: em,
@@ -202,7 +202,7 @@ let U = function() {
       scrollHeight: r,
       location: a
     } = e;
-    t > 0 && (0, S.zZ)(D.rMx.APP_DIRECTORY_PAGE_SCROLLED, {
+    t > 0 && (0, P.zZ)(k.rMx.APP_DIRECTORY_PAGE_SCROLLED, {
       scroll_visible_percentile: (t + n) / r,
       current_page: a
     })
@@ -265,10 +265,10 @@ let U = function() {
         applicationId: V,
         initialTab: H,
         onButtonsVisibilityChange: et
-      }) : es ? (0, r.jsx)(k.Z, {
+      }) : es ? (0, r.jsx)(w.Z, {
         onSelectApplication: e_,
         onScroll: e => eC(e, N.m_.SEARCH)
-      }) : J === w.GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID.toString() ? (0, r.jsx)(Z.Z, {
+      }) : J === D.GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID.toString() ? (0, r.jsx)(Z.Z, {
         onScroll: e => eC(e, N.m_.HOME),
         onSelectApplication: e_
       }) : (0, r.jsx)(A.Z, {

@@ -41,9 +41,9 @@ function h(e) {
       variant: "text-xs/semibold",
       children: d.intl.string(d.t["m1+IBg"])
     }), (0, r.jsx)(a.zxk, {
-      onClick: () => f(!0),
-      color: a.zxk.Colors.BRAND,
-      children: d.intl.string(d.t.fIv16O)
+      variant: "primary",
+      text: d.intl.string(d.t.fIv16O),
+      onClick: () => f(!0)
     })]
   }) : (0, r.jsxs)("div", {
     className: p.container,

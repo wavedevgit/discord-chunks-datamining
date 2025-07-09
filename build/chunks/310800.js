@@ -1,42 +1,43 @@
 /** Chunk was on 82265 **/
 "use strict";
 n.d(t, {
-  Z: () => b
+  Z: () => j
 });
 var r = n(255367);
 n(73800);
-var i = n(481060),
-  l = n(724598),
-  s = n(674180),
-  a = n(572004),
-  o = n(495437),
-  c = n(267101),
-  d = n(863663),
-  u = n(676651),
-  m = n(613810),
-  g = n(391181),
-  p = n(388032),
-  f = n(520880);
-let h = "guild-product-listings-header";
+var i = n(755721),
+  l = n(481060),
+  s = n(724598),
+  a = n(674180),
+  o = n(572004),
+  c = n(495437),
+  d = n(267101),
+  u = n(863663),
+  m = n(676651),
+  g = n(613810),
+  p = n(391181),
+  f = n(388032),
+  h = n(520880);
+let x = "guild-product-listings-header";
 
-function x(e) {
+function b(e) {
   let {
     guildId: t,
-    handleCreateOrEditProduct: u
-  } = e, x = (0, c.ue)(t, {
+    handleCreateOrEditProduct: i
+  } = e, m = (0, d.ue)(t, {
     publishedOnly: !1
   }), {
     shouldRestrictUpdatingCreatorMonetizationSettings: b
-  } = (0, s.gX)(t), j = e => {
-    (0, o.Je)(t, e, {
+  } = (0, a.gX)(t), j = e => {
+    (0, c.Je)(t, e, {
       published: !1
     })
-  }, _ = (e, l) => {
-    (0, i.ZDy)(async () => {
+  }, _ = (e, i) => {
+    (0, l.ZDy)(async () => {
       let {
-        default: i
+        default: l
       } = await n.e("95925").then(n.bind(n, 673078));
-      return n => (0, r.jsx)(i, function(e) {
+      return n => (0, r.jsx)(l, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -56,29 +57,29 @@ function x(e) {
       }({
         guildId: t,
         productId: e,
-        productName: l
+        productName: i
       }, n))
     })
   }, v = (e, t) => {
-    (0, a.JG)((0, d.ar)(e, t))
-  }, O = x.length > 0;
+    (0, o.JG)((0, u.ar)(e, t))
+  }, O = m.length > 0;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(i.vwX, {
-      className: f.productListingsHeader,
-      id: h,
-      children: O ? p.intl.string(p.t.RwuStb) : p.intl.string(p.t.WKMcMT)
+    children: [(0, r.jsx)(l.vwX, {
+      className: h.productListingsHeader,
+      id: x,
+      children: O ? f.intl.string(f.t.RwuStb) : f.intl.string(f.t.WKMcMT)
     }), O ? (0, r.jsx)("ul", {
-      className: f.productListings,
-      "aria-labelledby": h,
-      children: x.map(e => (0, r.jsx)("li", {
-        children: (0, r.jsx)(g.Z, {
+      className: h.productListings,
+      "aria-labelledby": x,
+      children: m.map(e => (0, r.jsx)("li", {
+        children: (0, r.jsx)(p.Z, {
           guildId: t,
           product: e,
-          onEditProduct: () => u(e.id),
+          onEditProduct: () => i(e.id),
           onUnpublishProduct: () => j(e.id),
           onDeleteProduct: () => _(e.id, e.name),
           onCopyProductLink: () => v(t, e.id),
-          onTestDownload: () => m.Z.open({
+          onTestDownload: () => g.Z.open({
             guildId: t,
             productId: e.id
           }),
@@ -86,7 +87,7 @@ function x(e) {
           disabled: b
         })
       }, e.id))
-    }) : (0, r.jsx)(l.Z, {
+    }) : (0, r.jsx)(s.Z, {
       guildId: t,
       showCTA: !1,
       responsive: !1
@@ -94,35 +95,35 @@ function x(e) {
   })
 }
 
-function b(e) {
+function j(e) {
   let {
     guildId: t
   } = e, {
     shouldRestrictUpdatingCreatorMonetizationSettings: n
-  } = (0, s.gX)(t), l = e => {
-    u.h(t, e)
+  } = (0, a.gX)(t), s = e => {
+    m.h(t, e)
   };
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(i.zxk, {
-      className: f.addButton,
-      innerClassName: f.addButtonInner,
-      onClick: () => l(null),
+    children: [(0, r.jsxs)(i.zx, {
+      className: h.addButton,
+      innerClassName: h.addButtonInner,
+      onClick: () => s(null),
       disabled: n,
-      children: [(0, r.jsx)(i.qJs, {
+      children: [(0, r.jsx)(l.qJs, {
         size: "custom",
         color: "currentColor",
         width: 20,
         height: 20,
         "aria-hidden": !0
-      }), (0, r.jsx)(i.LZC, {
+      }), (0, r.jsx)(l.LZC, {
         size: 6,
         horizontal: !0
-      }), p.intl.string(p.t.riG6DQ)]
-    }), (0, r.jsx)(i.LZC, {
+      }), f.intl.string(f.t.riG6DQ)]
+    }), (0, r.jsx)(l.LZC, {
       size: 24
-    }), (0, r.jsx)(x, {
+    }), (0, r.jsx)(b, {
       guildId: t,
-      handleCreateOrEditProduct: l
+      handleCreateOrEditProduct: s
     })]
   })
 }

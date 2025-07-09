@@ -23,32 +23,32 @@ function v(e) {
   let {
     onClose: j,
     transitionState: g,
-    skuId: k,
-    appId: b,
-    onHeaderTitleClick: N
-  } = e, S = (0, a.e7)([s.Z], () => s.Z.getForSKU(k), [k]), I = (0, a.e7)([i.Z], () => i.Z.get(k), [k]), O = (0, u.M)(k);
-  if (null == I) return null;
-  let C = null != (t = I.name) ? t : "",
-    y = null != (v = null == S || null == (n = S.description) ? void 0 : n.trim()) ? v : void 0,
-    R = (null == S ? void 0 : S.headerBackground) != null && null != (f = d.Z.toURLSafe((0, c._W)(b, S.headerBackground, 256))) ? f : void 0,
-    T = I.type === h.epS.DURABLE && O,
-    B = I.type === h.epS.DURABLE ? T ? p.intl.string(p.t.bm82mp) : p.intl.string(p.t["6gprwc"]) : void 0,
+    skuId: b,
+    appId: N,
+    onHeaderTitleClick: S
+  } = e, I = (0, a.e7)([s.Z], () => s.Z.getForSKU(b), [b]), k = (0, a.e7)([i.Z], () => i.Z.get(b), [b]), O = (0, u.M)(b);
+  if (null == k) return null;
+  let C = null != (t = k.name) ? t : "",
+    y = null != (v = null == I || null == (n = I.description) ? void 0 : n.trim()) ? v : void 0,
+    R = (null == I ? void 0 : I.headerBackground) != null && null != (f = d.Z.toURLSafe((0, c._W)(N, I.headerBackground, 256))) ? f : void 0,
+    T = k.type === h.epS.DURABLE && O,
+    B = k.type === h.epS.DURABLE ? T ? p.intl.string(p.t.bm82mp) : p.intl.string(p.t["6gprwc"]) : void 0,
     {
       price: E
-    } = I;
+    } = k;
   return null == E ? null : (0, l.jsx)(x.A, {
-    appId: b,
-    skuId: I.id,
+    appId: N,
+    skuId: k.id,
     transitionState: g,
-    onHeaderTitleClick: null != N ? N : j,
+    onHeaderTitleClick: null != S ? S : j,
     onClose: j,
     footer: (0, l.jsx)(m.YG, {
-      appId: b,
-      sku: I
+      appId: N,
+      sku: k
     }),
     children: (0, l.jsx)(_.i, {
-      appId: b,
-      skuId: I.id,
+      appId: N,
+      skuId: k.id,
       title: C,
       description: y,
       imgSrc: R,

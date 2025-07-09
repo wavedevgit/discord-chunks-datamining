@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(255367),
   r = n(73800),
   s = n(442837),
-  l = n(481060),
-  a = n(846027),
+  a = n(481060),
+  l = n(846027),
   o = n(906732),
   c = n(72897),
   d = n(131951),
@@ -36,14 +36,14 @@ function m() {
         label: n
       }
     }), [e]);
-  return (0, i.jsx)(l.xJW, {
+  return (0, i.jsx)(a.xJW, {
     title: u.intl.string(u.t.FsQ3OT),
-    children: (0, i.jsx)(l.q4e, {
+    children: (0, i.jsx)(a.q4e, {
       placeholder: u.intl.string(u.t["t9eQ/v"]),
       options: p,
       value: t,
       isDisabled: !n,
-      onChange: e => a.Z.setVideoDevice(e, {
+      onChange: e => l.Z.setVideoDevice(e, {
         analyticsLocations: m
       }),
       "aria-label": u.intl.string(u.t["t9eQ/v"])

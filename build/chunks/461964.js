@@ -1,5 +1,5 @@
 /** Chunk was on 91081 **/
-n.d(t, {
+n.d(e, {
   default: () => p
 });
 var l = n(255367),
@@ -14,15 +14,15 @@ var l = n(255367),
   d = n(388032),
   h = n(961686);
 
-function p(e) {
+function p(t) {
   let {
-    transitionState: t,
+    transitionState: e,
     onClose: n
-  } = e, p = (0, o.Dt)();
+  } = t, p = (0, o.Dt)();
   return i.useEffect(() => {
     _.r_()
   }, []), (0, l.jsxs)(c.Y0X, {
-    transitionState: t,
+    transitionState: e,
     role: "alertdialog",
     "aria-labelledby": p,
     parentComponent: "KeyboardNavigationModal",
@@ -33,10 +33,10 @@ function p(e) {
         id: p,
         className: h.header,
         children: d.intl.format(d.t.V4fxrq, {
-          tab: (e, t) => (0, l.jsx)(c.M2$, {
+          tab: (t, e) => (0, l.jsx)(c.M2$, {
             shortcut: "tab",
             className: h.headerShortcut
-          }, t)
+          }, e)
         })
       }), (0, l.jsx)(c.Text, {
         variant: "text-md/normal",
@@ -66,11 +66,11 @@ function p(e) {
       })]
     }), (0, l.jsx)(c.mzw, {
       children: (0, l.jsx)(c.zxk, {
+        variant: "primary",
+        size: "sm",
+        text: d.intl.string(d.t.BddRzc),
         onClick: n,
-        color: c.zxk.Colors.BRAND,
-        size: c.zxk.Sizes.SMALL,
-        autoFocus: !0,
-        children: d.intl.string(d.t.BddRzc)
+        autoFocus: !0
       })
     })]
   })

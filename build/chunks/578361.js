@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i, r = n(255367),
   s = n(73800),
-  l = n(120356),
-  a = n.n(l),
+  a = n(120356),
+  l = n.n(a),
   o = n(748780),
   c = n(215569),
   d = n(666532);
@@ -83,15 +83,15 @@ let f = e => {
     step: n,
     direction: i,
     className: s,
-    springSettings: l = g,
+    springSettings: a = g,
     fadeInOut: o = !1
   } = e;
   return (0, r.jsx)(c.W, {
     component: "div",
-    className: a()(d.animator, s),
+    className: l()(d.animator, s),
     children: (0, r.jsx)(h, {
       direction: i,
-      springSettings: l,
+      springSettings: a,
       fadeInOut: o,
       children: t
     }, n)

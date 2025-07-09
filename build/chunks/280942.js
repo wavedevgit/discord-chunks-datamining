@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(255367),
   r = n(73800),
   s = n(481060),
-  l = n(230711),
-  a = n(124570),
+  a = n(230711),
+  l = n(124570),
   o = n(267642),
   c = n(981631),
   d = n(474936),
@@ -53,8 +53,8 @@ function h(e) {
     premiumSubscription: b,
     onSelect: x,
     fractionalState: _,
-    user: E
-  } = e, j = {
+    user: j
+  } = e, E = {
     transfer: {
       label: null != t.premiumGuildSubscription ? u.intl.string(u.t["PR0n//"]) : u.intl.string(u.t["+fmEYG"]),
       subtext: t.isOnCooldown() ? u.intl.string(u.t.XnB8Mz) : null,
@@ -73,16 +73,16 @@ function h(e) {
   };
   switch (b.status) {
     case c.O0b.PAST_DUE:
-      j.cancel.disabled = !0, j.cancel.subtext = u.intl.string(u.t.WnL6DQ), j.uncancel.disabled = !0;
+      E.cancel.disabled = !0, E.cancel.subtext = u.intl.string(u.t.WnL6DQ), E.uncancel.disabled = !0;
       break;
     case c.O0b.PAUSE_PENDING:
     case c.O0b.PAUSED:
-      _ === d.a$.NONE && (j.transfer.disabled = !0, j.transfer.subtext = u.intl.string(u.t.LiLRRU), (0, a.y)("guild_boost_slot_popout", E, _) || (j.cancel.subtext = u.intl.string(u.t["1ywaWF"]), j.cancel.disabled = !0, j.uncancel.disabled = !0))
-  }(0, a.y)("guild_boost_slot_popout", E, _) && (j.cancel.subtext = u.intl.string(u.t.dq4vq6), j.cancel.disabled = !0, j.uncancel.disabled = !0);
+      _ === d.a$.NONE && (E.transfer.disabled = !0, E.transfer.subtext = u.intl.string(u.t.LiLRRU), (0, l.y)("guild_boost_slot_popout", j, _) || (E.cancel.subtext = u.intl.string(u.t["1ywaWF"]), E.cancel.disabled = !0, E.uncancel.disabled = !0))
+  }(0, l.y)("guild_boost_slot_popout", j, _) && (E.cancel.subtext = u.intl.string(u.t.dq4vq6), E.cancel.disabled = !0, E.uncancel.disabled = !0);
   let O = r.useMemo(() => b.isPausedOrPausePending && _ === d.a$.NONE ? (0, i.jsx)(s.sNh, {
     id: "manage-subscription",
     label: u.intl.string(u.t.obRG6e),
-    action: () => l.Z.open(c.oAB.SUBSCRIPTIONS),
+    action: () => a.Z.open(c.oAB.SUBSCRIPTIONS),
     iconLeft: s.WGR,
     className: m.manageSubscription
   }) : null, [_, b]);
@@ -94,8 +94,8 @@ function h(e) {
     onClose: h,
     children: [(0, i.jsx)(s.sNh, {
       id: "apply",
-      label: j.transfer.label,
-      subtext: j.transfer.subtext,
+      label: E.transfer.label,
+      subtext: E.transfer.subtext,
       action: function() {
         (0, s.ZDy)(async () => {
           let {
@@ -107,11 +107,11 @@ function h(e) {
           }))
         })
       },
-      disabled: j.transfer.disabled
+      disabled: E.transfer.disabled
     }), (0, o.tl)(t) ? (0, i.jsx)(s.sNh, {
       id: "uncancel",
-      label: j.uncancel.label,
-      subtext: j.uncancel.subtext,
+      label: E.uncancel.label,
+      subtext: E.uncancel.subtext,
       action: function() {
         (0, s.ZDy)(async () => {
           let {
@@ -122,11 +122,11 @@ function h(e) {
           }))
         })
       },
-      disabled: j.uncancel.disabled
+      disabled: E.uncancel.disabled
     }) : (0, i.jsx)(s.sNh, {
       id: "cancel",
-      label: j.cancel.label,
-      subtext: j.cancel.subtext,
+      label: E.cancel.label,
+      subtext: E.cancel.subtext,
       action: function() {
         (0, s.ZDy)(async () => {
           let {
@@ -137,7 +137,7 @@ function h(e) {
           }))
         })
       },
-      disabled: j.cancel.disabled,
+      disabled: E.cancel.disabled,
       color: "danger"
     }), O]
   })

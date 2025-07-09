@@ -15,7 +15,7 @@ function c(t) {
     onConfirm: e,
     onClose: c,
     onDismiss: d
-  } = t, [m, h] = i.useState(!1), u = (0, o.Dt)(), p = async () => {
+  } = t, [m, h] = i.useState(!1), p = (0, o.Dt)(), u = async () => {
     if (!m) {
       h(!0);
       try {
@@ -28,7 +28,7 @@ function c(t) {
   };
   return (0, n.jsxs)(l.Y0X, {
     transitionState: a,
-    "aria-labelledby": u,
+    "aria-labelledby": p,
     size: l.CgR.SMALL,
     parentComponent: "AcceptRequestConfirmationModal",
     children: [(0, n.jsxs)(l.hzk, {
@@ -38,7 +38,7 @@ function c(t) {
         },
         className: r.closeButton
       }), (0, n.jsx)(l.X6q, {
-        id: u,
+        id: p,
         variant: "heading-lg/extrabold",
         color: "header-primary",
         className: r.modalTitle,
@@ -51,11 +51,11 @@ function c(t) {
       })]
     }), (0, n.jsx)(l.mzw, {
       children: (0, n.jsx)(l.zxk, {
+        variant: "primary",
+        text: s.intl.string(s.t["cY+Ooa"]),
         type: "submit",
-        color: l.zxk.Colors.BRAND,
-        onClick: p,
-        submitting: m,
-        children: s.intl.string(s.t["cY+Ooa"])
+        onClick: u,
+        loading: m
       })
     })]
   })

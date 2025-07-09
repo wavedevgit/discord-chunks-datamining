@@ -16,13 +16,13 @@ function c(e) {
     setSlide: c,
     onClose: u,
     isSlideReady: d
-  } = e, [f, h] = l.useState(!1), [m, p] = l.useState(null), [g, b] = l.useState(""), j = l.useRef(null), y = a.intl.string(a.t["C/ZAw8"]), x = a.intl.string(a.t.fZSi1N), S = l.useCallback(e => {
+  } = e, [f, h] = l.useState(!1), [m, p] = l.useState(null), [g, b] = l.useState(""), y = l.useRef(null), j = a.intl.string(a.t["C/ZAw8"]), x = a.intl.string(a.t.fZSi1N), S = l.useCallback(e => {
     b(e), p(null)
   }, [b, p]);
   return l.useEffect(() => {
     if (d) {
       var e;
-      null == (e = j.current) || e.focus()
+      null == (e = y.current) || e.focus()
     }
   }, [d]), (0, r.jsxs)("form", {
     onSubmit: e => {
@@ -40,9 +40,9 @@ function c(e) {
       onClose: u
     }), (0, r.jsx)(o.Z.SlideContent, {
       children: (0, r.jsxs)(s.xJW, {
-        title: y,
+        title: j,
         children: [(0, r.jsx)(s.oil, {
-          inputRef: j,
+          inputRef: y,
           onChange: S,
           placeholder: x,
           maxLength: i.tL,

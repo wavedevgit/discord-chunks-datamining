@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(255367),
   r = n(73800),
   s = n(481060),
-  l = n(707558),
-  a = n(577720),
+  a = n(707558),
+  l = n(577720),
   o = n(388032),
   c = n(835071);
 let d = () => [{
@@ -26,14 +26,14 @@ class u extends r.Component {
   render() {
     return (0, i.jsxs)("div", {
       className: c.features,
-      children: [(0, i.jsx)(a.Z, {
+      children: [(0, i.jsx)(l.Z, {
         className: c.video,
         videoID: "SWzB1mx2o5k"
       }), (0, i.jsx)(s.X6q, {
         className: c.perksHeading,
         variant: "heading-sm/semibold",
         children: o.intl.string(o.t["ITh5+/"])
-      }), (0, i.jsx)(l.Z, {
+      }), (0, i.jsx)(a.Z, {
         features: d()
       })]
     })

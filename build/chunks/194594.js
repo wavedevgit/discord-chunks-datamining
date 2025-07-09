@@ -68,8 +68,8 @@ function j(e) {
     textVariant: y = "text-sm/normal",
     compact: I,
     guildIconSize: O = x.LARGE,
-    guildsClassName: S,
-    children: P
+    guildsClassName: P,
+    children: S
   } = e, E = (0, o.e7)([p.default], () => p.default.locale), N = new Intl.ListFormat(E), T = null != (n = null == (t = l.directory_entry) ? void 0 : t.guild_count) ? n : 0, A = null != (r = null == c ? void 0 : c.length) ? r : 0, L = Math.max(0, T - A), {
     shownMutualGuilds: R,
     hiddenMutualGuilds: Z
@@ -82,7 +82,7 @@ function j(e) {
       shownMutualGuilds: e,
       hiddenMutualGuilds: t
     }
-  }, [c, h]), k = Z.length, w = function(e, t, n, r, a) {
+  }, [c, h]), w = Z.length, D = function(e, t, n, r, a) {
     if (0 === t && 0 === e) return null;
     if (t > 0 && 0 === n) return g.intl.formatToPlainString(g.t.pnzE1t, {
       mutualGuildCount: t
@@ -98,14 +98,14 @@ function j(e) {
       nonMutualGuildCount: l.format(n)
     })
   }(T, A, L, E, I);
-  return 0 === R.length && null == w ? null : (0, a.jsxs)(a.Fragment, {
-    children: [P, (0, a.jsxs)("div", {
+  return 0 === R.length && null == D ? null : (0, a.jsxs)(a.Fragment, {
+    children: [S, (0, a.jsxs)("div", {
       className: s()(j, f.wrapper),
       children: [(0, a.jsx)("div", {
-        className: s()(f.icons, S),
+        className: s()(f.icons, P),
         children: R.length > 0 ? (0, a.jsxs)(a.Fragment, {
           children: [R.map((e, t) => {
-            let n = t === R.length - 1 && 0 === k,
+            let n = t === R.length - 1 && 0 === w,
               r = m.ZP.getGuildIconURL({
                 id: e.id,
                 icon: e.icon,
@@ -130,14 +130,14 @@ function j(e) {
               mask: u.ZP.Masks.VOICE_USER_SUMMARY_ITEM,
               children: l
             }, e.id)
-          }), k > 0 ? (0, a.jsx)(d.ua7, {
+          }), w > 0 ? (0, a.jsx)(d.ua7, {
             text: g.intl.formatToPlainString(g.t.m6oRrK, {
               appNames: N.format(Z.map(e => e.name))
             }),
             position: "top",
             children: e => (0, a.jsxs)("div", b(_({}, e), {
               className: s()(f.moreGuilds, v[O]),
-              children: ["+", k]
+              children: ["+", w]
             }))
           }) : null]
         }) : (0, a.jsx)(d.QTo, {
@@ -147,10 +147,10 @@ function j(e) {
           height: O,
           className: f.defaultIcon
         })
-      }), null != w ? (0, a.jsx)(d.Text, {
+      }), null != D ? (0, a.jsx)(d.Text, {
         variant: y,
         color: "header-secondary",
-        children: w
+        children: D
       }) : null]
     })]
   })

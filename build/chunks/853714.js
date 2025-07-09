@@ -44,7 +44,7 @@ function D(e, t, n) {
   }) : e[t] = n, e
 }
 
-function k(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -57,7 +57,7 @@ function k(e) {
   return e
 }
 
-function A(e, t) {
+function L(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -70,7 +70,7 @@ function A(e, t) {
   }), e
 }
 
-function L(e, t) {
+function k(e, t) {
   if (null == e) return {};
   var n, r, i = function(e, t) {
     if (null == e) return {};
@@ -90,8 +90,8 @@ let M = i.forwardRef((e, t) => {
     onHeaderClick: i,
     guildId: l,
     guild: s
-  } = e, a = L(e, ["onHeaderClick", "guildId", "guild"]);
-  return null == l ? null : (0, r.jsx)(S.Z, A(k({
+  } = e, a = k(e, ["onHeaderClick", "guildId", "guild"]);
+  return null == l ? null : (0, r.jsx)(S.Z, L(A({
     ref: t
   }, a), {
     guildId: l,
@@ -112,7 +112,7 @@ let M = i.forwardRef((e, t) => {
         let {
           default: e
         } = await n.e("50929").then(n.bind(n, 595011));
-        return t => (0, r.jsx)(e, A(k({}, t), {
+        return t => (0, r.jsx)(e, L(A({}, t), {
           guildId: l,
           user: i
         }))
@@ -126,7 +126,7 @@ let M = i.forwardRef((e, t) => {
         let {
           default: e
         } = await n.e("51529").then(n.bind(n, 228620));
-        return n => null != t.options.channel ? (0, r.jsx)(e, A(k({}, n), {
+        return n => null != t.options.channel ? (0, r.jsx)(e, L(A({}, n), {
           channel: t.options.channel
         })) : null
       })
@@ -144,7 +144,7 @@ let M = i.forwardRef((e, t) => {
             let {
               default: e
             } = await n.e("51529").then(n.bind(n, 228620));
-            return t => (0, r.jsx)(e, A(k({}, t), {
+            return t => (0, r.jsx)(e, L(A({}, t), {
               channel: i
             }))
           });
@@ -152,7 +152,7 @@ let M = i.forwardRef((e, t) => {
             let {
               default: e
             } = await n.e("5396").then(n.bind(n, 731646));
-            return n => (0, r.jsx)(e, A(k({}, n), {
+            return n => (0, r.jsx)(e, L(A({}, n), {
               id: t.targetId,
               label: P.intl.string(P.t.rCaznZ)
             }))
@@ -163,7 +163,7 @@ let M = i.forwardRef((e, t) => {
             let {
               default: e
             } = await n.e("50929").then(n.bind(n, 595011));
-            return t => (0, r.jsx)(e, A(k({}, t), {
+            return t => (0, r.jsx)(e, L(A({}, t), {
               guildId: l,
               user: o
             }))
@@ -197,8 +197,8 @@ function G(e) {
       children: e => {
         var {
           ref: i
-        } = e, a = L(e, ["ref"]);
-        return (0, r.jsx)("div", A(k({
+        } = e, a = k(e, ["ref"]);
+        return (0, r.jsx)("div", L(A({
           ref: i
         }, a), {
           className: w.list,
@@ -502,11 +502,14 @@ class U extends i.PureComponent {
         hasOlderLogs: t,
         hide: n
       } = this.props;
-      if (e && t && !n) return (0, r.jsx)(d.zxk, {
-        color: d.zxk.Colors.PRIMARY,
+      if (e && t && !n) return (0, r.jsx)("div", {
+        "data-button-hoisted-classname-wrapper": !0,
         className: w.loadMore,
-        onClick: this.handleFetchNextPage,
-        children: P.intl.string(P.t["Q/LSXl"])
+        children: (0, r.jsx)(d.zxk, {
+          variant: "secondary",
+          text: P.intl.string(P.t["Q/LSXl"]),
+          onClick: this.handleFetchNextPage
+        })
       })
     }), D(this, "handleFilterActionChange", e => {
       (0, u.ZX)(e, this.props.guildId)

@@ -2,8 +2,8 @@
 n.d(t, {
   Z: () => _
 }), n(953529);
-var i, r, s, l = n(255367),
-  a = n(73800),
+var i, r, s, a = n(255367),
+  l = n(73800),
   o = n(120356),
   c = n.n(o),
   d = n(481060),
@@ -15,7 +15,7 @@ var i, r, s, l = n(255367),
   f = n(624138),
   b = n(388032),
   x = n(943617);
-class _ extends(i = a.PureComponent) {
+class _ extends(i = l.PureComponent) {
   get typeString() {
     let {
       paymentSource: e
@@ -54,7 +54,7 @@ class _ extends(i = a.PureComponent) {
       paymentSource: e,
       descriptionClassName: t
     } = this.props;
-    return (0, l.jsx)(d.Text, {
+    return (0, a.jsx)(d.Text, {
       className: c()(x.description, t),
       variant: "text-md/semibold",
       children: this.getLabel(e)
@@ -78,28 +78,28 @@ class _ extends(i = a.PureComponent) {
       isForSubscription: i,
       showPaymentSourceIcon: r,
       showLabels: s
-    } = this.props, a = this.renderSubText();
-    return (0, l.jsxs)(m.Z, {
-      children: [r && (0, l.jsx)(p.ZP, {
+    } = this.props, l = this.renderSubText();
+    return (0, a.jsxs)(m.Z, {
+      children: [r && (0, a.jsx)(p.ZP, {
         type: this.typeString
-      }), (0, l.jsxs)(m.Z, {
+      }), (0, a.jsxs)(m.Z, {
         direction: m.Z.Direction.VERTICAL,
         className: x.descriptionWrapper,
-        children: [(0, l.jsxs)(m.Z, {
+        children: [(0, a.jsxs)(m.Z, {
           align: m.Z.Align.CENTER,
-          children: [this.renderDescription(), s && e ? (0, l.jsx)("div", {
+          children: [this.renderDescription(), s && e ? (0, a.jsx)("div", {
             className: x.defaultIndicator,
             children: b.intl.string(b.t.bBvAEB)
-          }) : null, i ? (0, l.jsx)("div", {
+          }) : null, i ? (0, a.jsx)("div", {
             className: x.premiumIndicator,
             children: b.intl.string(b.t.YCrcPD)
-          }) : null, s && t.invalid ? (0, l.jsx)("div", {
+          }) : null, s && t.invalid ? (0, a.jsx)("div", {
             className: x.invalidIndicator,
             children: b.intl.string(b.t["851k9/"])
           }) : null]
-        }), n && null != a ? (0, l.jsx)("div", {
+        }), n && null != l ? (0, a.jsx)("div", {
           className: x.subText,
-          children: a
+          children: l
         }) : null]
       })]
     })

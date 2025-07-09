@@ -4,9 +4,9 @@ r.d(t, {
 }), r(388685);
 var n = r(255367),
   i = r(73800),
-  o = r(264738),
-  s = r(481060),
-  a = r(230711),
+  a = r(264738),
+  o = r(481060),
+  s = r(230711),
   l = r(687158),
   c = r(63063),
   u = r(51144),
@@ -14,34 +14,34 @@ var n = r(255367),
   m = r(801461),
   g = r(981631),
   f = r(388032),
-  h = r(927687);
+  p = r(927687);
 
 function E(e) {
   var t, r, {
       userRef: E,
-      usernameSuggestionLoading: p = !1,
-      oneClickFlow: O = !1
+      usernameSuggestionLoading: h = !1,
+      oneClickFlow: y = !1
     } = e,
-    y = function(e, t) {
+    O = function(e, t) {
       if (null == e) return {};
       var r, n, i = function(e, t) {
         if (null == e) return {};
         var r, n, i = {},
-          o = Object.keys(e);
-        for (n = 0; n < o.length; n++) r = o[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+          a = Object.keys(e);
+        for (n = 0; n < a.length; n++) r = a[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
         return i
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var o = Object.getOwnPropertySymbols(e);
-        for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
+        var a = Object.getOwnPropertySymbols(e);
+        for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
       }
       return i
     }(e, ["userRef", "usernameSuggestionLoading", "oneClickFlow"]);
   let {
-    user: S,
-    editState: b,
+    user: b,
+    editState: S,
     onClose: _
-  } = y, x = (0, l.ZP)(S.id), N = function(e, t, r) {
+  } = O, x = (0, l.ZP)(b.id), v = function(e, t, r) {
     switch (e) {
       case m.Wq.EDIT_USERNAME:
         return {
@@ -57,7 +57,7 @@ function E(e) {
             displayName: t
           }), subtitle: f.intl.format(f.t.bWE0ZG, {
             onClick: () => {
-              r(), a.Z.open(g.oAB.ACCOUNT)
+              r(), s.Z.open(g.oAB.ACCOUNT)
             }
           })
         };
@@ -72,12 +72,12 @@ function E(e) {
           header: f.intl.string(f.t["a/zCWl"]), subtitle: f.intl.string(f.t.gGz0sb)
         }
     }
-  }(b, u.ZP.getName(S), _), [j, v] = (0, s.q_F)(() => ({
+  }(S, u.ZP.getName(b), _), [N, j] = (0, o.q_F)(() => ({
     opacity: 0,
     y: 10
   }));
   return i.useEffect(() => {
-    v({
+    j({
       y: 0,
       opacity: 1,
       from: {
@@ -85,29 +85,29 @@ function E(e) {
         opacity: 0
       }
     })
-  }, [v, b]), (0, n.jsxs)("div", {
-    className: h.displayNameContainer,
-    children: [(0, n.jsxs)(o.animated.div, {
+  }, [j, S]), (0, n.jsxs)("div", {
+    className: p.displayNameContainer,
+    children: [(0, n.jsxs)(a.animated.div, {
       style: {
-        opacity: j.opacity,
-        y: j.y
+        opacity: N.opacity,
+        y: N.y
       },
-      children: [(0, n.jsx)(s.X6q, {
-        className: h.title,
+      children: [(0, n.jsx)(o.X6q, {
+        className: p.title,
         color: "header-primary",
         variant: "heading-xl/extrabold",
-        children: N.header
+        children: v.header
       }), (0, n.jsxs)("div", {
-        className: h.subtitle,
-        children: [(0, n.jsx)(s.X6q, {
+        className: p.subtitle,
+        children: [(0, n.jsx)(o.X6q, {
           color: "header-secondary",
           variant: "heading-sm/medium",
-          children: N.subtitle
-        }), null != N.link && (0, n.jsx)(s.Text, {
-          className: h.link,
+          children: v.subtitle
+        }), null != v.link && (0, n.jsx)(o.Text, {
+          className: p.link,
           color: "header-secondary",
           variant: "text-sm/medium",
-          children: N.link
+          children: v.link
         })]
       })]
     }), (0, n.jsx)(d.Z, (t = function(e) {
@@ -127,11 +127,11 @@ function E(e) {
         })
       }
       return e
-    }({}, y), r = r = {
+    }({}, O), r = r = {
       displayProfile: x,
       ref: E,
-      usernameSuggestionLoading: p,
-      oneClickFlow: O
+      usernameSuggestionLoading: h,
+      oneClickFlow: y
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var r = Object.keys(e);
       if (Object.getOwnPropertySymbols) {

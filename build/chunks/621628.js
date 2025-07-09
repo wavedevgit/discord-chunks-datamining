@@ -1,13 +1,13 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => S,
+  Z: () => v,
   u: () => O
 }), n(388685), n(539854), n(410992), n(227481), n(730884), n(20464), n(341884), n(364341), n(629680), n(505025), n(918970), n(121784), n(644351), n(146733), n(290780), n(642613);
 var i = n(255367),
   r = n(73800),
   s = n(120356),
-  l = n.n(s),
-  a = n(442837),
+  a = n.n(s),
+  l = n(442837),
   o = n(704215),
   c = n(433517),
   d = n(481060),
@@ -20,12 +20,12 @@ var i = n(255367),
   b = n(428967),
   x = n(972118),
   _ = n(533936),
-  E = n(20493);
+  j = n(20493);
 
-function j(e) {
+function E(e) {
   let {
     content: t
-  } = e, n = (0, a.e7)([p.Z], () => {
+  } = e, n = (0, l.e7)([p.Z], () => {
     var e, n;
     return null == (n = p.Z.settings.userContent) || null == (e = n.recurringDismissibleContentStates) ? void 0 : e[t]
   });
@@ -33,17 +33,17 @@ function j(e) {
   let r = [],
     {
       lastDismissedVersion: s,
-      lastDismissedAtMs: l,
+      lastDismissedAtMs: a,
       lastDismissedObjectId: o
     } = n;
-  if (void 0 !== s && 0 !== s && r.push("last_dismissed_version: ".concat(s)), void 0 !== l) {
-    let e = Number(l),
+  if (void 0 !== s && 0 !== s && r.push("last_dismissed_version: ".concat(s)), void 0 !== a) {
+    let e = Number(a),
       t = Number.isNaN(e) ? "n/a" : new Date(e).toLocaleString();
     r.push("last_dismissed_at: ".concat(t))
   }
   return (void 0 !== o && "0" !== o && r.push("last_dismissed_object_id: ".concat(o)), 0 === r.length) ? null : (0, i.jsx)(d.Text, {
     variant: "text-xs/normal",
-    className: E.marginTop4,
+    className: j.marginTop4,
     children: r.join(", ")
   })
 }
@@ -54,22 +54,22 @@ function O(e) {
     contents: n,
     content: r,
     onChange: s
-  } = e, l = o.z[r], {
-    isDismissed: a,
+  } = e, a = o.z[r], {
+    isDismissed: l,
     handleToggleDismissState: c
-  } = (0, x.Z)(l, n);
+  } = (0, x.Z)(a, n);
   return (0, i.jsxs)(d.j7V, {
-    value: a,
+    value: l,
     onChange: () => {
       s(r), c()
     },
     className: t,
     children: [(0, i.jsx)(d.Text, {
       variant: "text-md/normal",
-      className: E.marginTop4,
+      className: j.marginTop4,
       children: "".concat(r.toLowerCase(), " (").concat(o.z[r], ")")
-    }), (0, b.qh)(l) && (0, i.jsx)(j, {
-      content: l
+    }), (0, b.qh)(a) && (0, i.jsx)(E, {
+      content: a
     })]
   })
 }
@@ -89,24 +89,24 @@ function C(e) {
   })
 }
 
-function S() {
+function v() {
   var e;
   let t = (0, f.ZP)(e => e.recentlyShown),
     {
       dailyCapReached: n,
       dailyCapOverridden: s,
       newUserMinAgeRequiredOverridden: b
-    } = (0, a.cj)([h.Z], () => ({
+    } = (0, l.cj)([h.Z], () => ({
       dailyCapReached: h.Z.hasUserHitDCCap(),
       dailyCapOverridden: h.Z.dailyCapOverridden,
       newUserMinAgeRequiredOverridden: h.Z.newUserMinAgeRequiredOverridden
     })),
-    [x, j] = r.useState(""),
-    O = null != (e = (0, a.e7)([p.Z], () => {
+    [x, E] = r.useState(""),
+    O = null != (e = (0, l.e7)([p.Z], () => {
       var e;
       return null == (e = p.Z.settings.userContent) ? void 0 : e.dismissedContents
     })) ? e : new Uint8Array,
-    [S, v] = function(e, t) {
+    [v, S] = function(e, t) {
       let [n, i] = r.useState(() => {
         let n = c.K.get(e);
         return null != n ? n : t
@@ -116,7 +116,7 @@ function S() {
       }, [e, n]), [n, i]
     }("RecentDismissibleOverrides", []),
     T = e => {
-      v(t => {
+      S(t => {
         let n = new Set(t);
         n.delete(e);
         let i = Array.from(n).slice(0, 4);
@@ -124,16 +124,16 @@ function S() {
       })
     },
     N = t.map(e => o.z[e]),
-    I = S.filter(e => e.toLowerCase().includes(x.toLowerCase())).filter(e => !N.includes(e)),
-    y = Object.keys(o.z).filter(e => !N.includes(e)).filter(e => !S.includes(e)).filter(e => e.toLowerCase().includes(x.toLowerCase())).sort((e, t) => e.localeCompare(t));
+    I = v.filter(e => e.toLowerCase().includes(x.toLowerCase())).filter(e => !N.includes(e)),
+    y = Object.keys(o.z).filter(e => !N.includes(e)).filter(e => !v.includes(e)).filter(e => e.toLowerCase().includes(x.toLowerCase())).sort((e, t) => e.localeCompare(t));
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)(d.hjN, {
       title: "Dismissible Content Fatigue",
       tag: d.RB0.H1,
-      className: E.marginBottom60,
+      className: j.marginBottom60,
       children: [(0, i.jsx)(d.xJW, {
         children: (0, i.jsxs)(d.R94, {
-          className: E.marginBottom4,
+          className: j.marginBottom4,
           children: ["Daily Cap Reached: ", n ? "Yes" : "No"]
         })
       }), (0, i.jsx)(d.j7V, {
@@ -146,10 +146,11 @@ function S() {
         children: "Override Minimum User Account Age Requirement"
       }), (0, i.jsxs)(d.xJW, {
         children: [(0, i.jsx)(d.zxk, {
-          onClick: () => (0, g.EG)(),
-          children: "Reset DismissibleContentFrameworkStore"
+          variant: "primary",
+          text: "Reset DismissibleContentFrameworkStore",
+          onClick: () => (0, g.EG)()
         }), (0, i.jsx)(d.R94, {
-          className: E.marginTop4,
+          className: j.marginTop4,
           children: "This will reset the daily cap and content seen during session"
         })]
       })]
@@ -157,24 +158,26 @@ function S() {
       title: "Dismissible Contents",
       tag: d.RB0.H1,
       children: [(0, i.jsx)(d.E1j, {
-        className: E.marginBottom20,
+        className: j.marginBottom20,
         size: d.E1j.Sizes.LARGE,
         query: x,
-        onChange: j,
-        onClear: () => j("")
+        onChange: E,
+        onClear: () => E("")
       }), (0, i.jsxs)(d.xJW, {
         className: _.buttonsContainer,
         children: [(0, i.jsx)(d.zxk, {
-          onClick: m.sr,
-          children: "Clear All Dismissed Contents"
+          variant: "primary",
+          text: "Clear All Dismissed Contents",
+          onClick: m.sr
         }), (0, i.jsx)(d.zxk, {
-          onClick: m.bE,
-          children: "Check All Dismissed Contents"
+          variant: "primary",
+          text: "Check All Dismissed Contents",
+          onClick: m.bE
         })]
       }), t.length > 0 ? (0, i.jsxs)("div", {
-        className: E.marginBottom20,
+        className: j.marginBottom20,
         children: [(0, i.jsx)("div", {
-          className: E.marginBottom20,
+          className: j.marginBottom20,
           children: (0, i.jsx)(d.vwX, {
             children: "Recently Shown"
           })
@@ -185,7 +188,7 @@ function S() {
         })]
       }) : null, I.length > 0 ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
-          className: E.marginBottom20,
+          className: j.marginBottom20,
           children: (0, i.jsx)(d.vwX, {
             children: "Recent Overrides"
           })
@@ -195,7 +198,7 @@ function S() {
           handleChange: T
         })]
       }) : null, (0, i.jsx)(u.Z, {
-        className: l()(E.marginBottom20, E.marginTop20),
+        className: a()(j.marginBottom20, j.marginTop20),
         children: (0, i.jsx)(d.vwX, {
           children: "Available Dismissible Contents"
         })

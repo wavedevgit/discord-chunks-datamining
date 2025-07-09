@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(255367),
   r = n(73800),
   s = n(442837),
-  l = n(481060),
-  a = n(588126),
+  a = n(481060),
+  l = n(588126),
   o = n(643879),
   c = n(25990),
   d = n(678135),
@@ -20,17 +20,17 @@ function m(e) {
     containerClassName: g
   } = e, {
     reducedMotion: h
-  } = r.useContext(l.Sfi), {
+  } = r.useContext(a.Sfi), {
     pendingAvatar: f,
     pendingBanner: b,
     pendingThemeColors: x,
     pendingPronouns: _,
-    pendingBio: E,
-    tryItOutThemeColors: j,
+    pendingBio: j,
+    tryItOutThemeColors: E,
     tryItOutAvatar: O,
     tryItOutBanner: C,
-    tryItOutAvatarDecoration: S,
-    tryItOutProfileEffectId: v
+    tryItOutAvatarDecoration: v,
+    tryItOutProfileEffectId: S
   } = (0, s.cj)([c.Z], () => (function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -51,17 +51,17 @@ function m(e) {
   })({}, c.Z.getAllPending(), c.Z.getAllTryItOut())), T = (0, o.SD)({
     userId: m.id,
     image: null != O ? O : f
-  }), N = (0, a.Z)(S, !1);
+  }), N = (0, l.Z)(v, !1);
   return (0, i.jsx)(d.Z, {
     containerClassName: g,
     user: m,
     pendingPronouns: _,
-    pendingBio: E,
+    pendingBio: j,
     pendingBanner: null != (t = null != C ? C : b) ? t : n(466045),
     pendingAvatar: T,
-    pendingThemeColors: null != j ? j : x,
+    pendingThemeColors: null != E ? E : x,
     pendingAvatarDecoration: N,
-    pendingProfileEffectId: v,
+    pendingProfileEffectId: S,
     avatarClassName: null != O || null != f || h.enabled ? void 0 : u.spinningAvatar,
     canUsePremiumCustomization: !0,
     isTryItOutFlow: !0,

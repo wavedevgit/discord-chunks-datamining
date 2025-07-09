@@ -1,33 +1,33 @@
 /** Chunk was on 48748 **/
-i.d(n, {
+n.d(i, {
   default: () => d
 });
-var e = i(255367);
-i(73800);
-var l = i(442837),
-  s = i(481060),
-  a = i(812206),
-  r = i(600164),
-  c = i(63063),
-  o = i(981631),
-  m = i(388032),
-  p = i(981860);
+var e = n(255367);
+n(73800);
+var a = n(442837),
+  s = n(481060),
+  l = n(812206),
+  r = n(600164),
+  c = n(63063),
+  o = n(981631),
+  m = n(388032),
+  p = n(981860);
 let x = c.Z.getArticleURL(o.BhN.MISSING_ENTITLEMENT),
-  d = l.ZP.connectStores([a.Z], t => {
+  d = a.ZP.connectStores([l.Z], t => {
     let {
-      applicationId: n
+      applicationId: i
     } = t;
     return {
-      application: a.Z.getApplication(n)
+      application: l.Z.getApplication(i)
     }
   })(function(t) {
     let {
-      application: n,
-      transitionState: i,
-      onClose: l
+      application: i,
+      transitionState: n,
+      onClose: a
     } = t;
     return (0, e.jsxs)(s.Y0X, {
-      transitionState: i,
+      transitionState: n,
       size: s.CgR.MEDIUM,
       parentComponent: "MissingEntitlementModal",
       children: [(0, e.jsxs)(s.xBx, {
@@ -35,11 +35,11 @@ let x = c.Z.getArticleURL(o.BhN.MISSING_ENTITLEMENT),
         justify: r.Z.Justify.BETWEEN,
         children: [(0, e.jsx)(s.vwX, {
           tag: s.RB0.H4,
-          children: null != n ? m.intl.formatToPlainString(m.t.N2mILi, {
-            applicationName: n.name
+          children: null != i ? m.intl.formatToPlainString(m.t.N2mILi, {
+            applicationName: i.name
           }) : m.intl.string(m.t.nS8PUV)
         }), (0, e.jsx)(s.olH, {
-          onClick: l
+          onClick: a
         })]
       }), (0, e.jsxs)(s.hzk, {
         children: [(0, e.jsx)("div", {
@@ -47,8 +47,8 @@ let x = c.Z.getArticleURL(o.BhN.MISSING_ENTITLEMENT),
         }), (0, e.jsx)(s.Text, {
           className: p.text,
           variant: "text-md/normal",
-          children: null != n ? m.intl.format(m.t["MM/7q6"], {
-            applicationName: n.name,
+          children: null != i ? m.intl.format(m.t["MM/7q6"], {
+            applicationName: i.name,
             supportArticleURL: x
           }) : m.intl.format(m.t.IfQUx8, {
             supportArticleURL: x
@@ -56,8 +56,9 @@ let x = c.Z.getArticleURL(o.BhN.MISSING_ENTITLEMENT),
         })]
       }), (0, e.jsx)(s.mzw, {
         children: (0, e.jsx)(s.zxk, {
-          onClick: l,
-          children: m.intl.string(m.t.BddRzc)
+          variant: "primary",
+          text: m.intl.string(m.t.BddRzc),
+          onClick: a
         })
       })]
     })

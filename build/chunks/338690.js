@@ -1,12 +1,12 @@
 /** Chunk was on 96075 **/
 s.d(n, {
-  Z: () => a
+  Z: () => i
 });
 var e = s(287734),
   r = s(592125),
-  i = s(894257);
+  a = s(894257);
 
-function a() {
-  let t = r.Z.getDMFromUserId(i.I);
+function i() {
+  let t = r.Z.getDMFromUserId(a.I);
   null != t && e.default.selectPrivateChannel(t)
 }

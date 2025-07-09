@@ -5,16 +5,16 @@ n.d(t, {
 var i = n(255367),
   r = n(515753),
   s = n(82892),
-  l = n(131704),
-  a = n(981631);
+  a = n(131704),
+  l = n(981631);
 
 function o(e) {
   let {
     selected: t,
     nameplate: n
-  } = e, o = (0, s.x)(), c = new l.mn({
+  } = e, o = (0, s.x)(), c = new a.mn({
     id: "0",
-    type: a.d4z.DM,
+    type: l.d4z.DM,
     name: "self",
     guild_id: "0",
     recipients: [o.id]

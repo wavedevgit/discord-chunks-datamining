@@ -1,5 +1,5 @@
 /** Chunk was on 91081 **/
-e.exports = {
+t.exports = {
   closeButton: "closeButton__47998",
   art: "art__47998",
   description: "description__47998",

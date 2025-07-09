@@ -1,16 +1,16 @@
 /** Chunk was on 9343 **/
 n.d(t, {
   i: () => i,
-  w: () => a
+  w: () => l
 });
 var s = n(990547),
-  r = n(573261),
-  l = n(981631);
+  a = n(573261),
+  r = n(981631);
 
 function i() {
   let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-  return r.Z.put({
-    url: l.ANM.USER_EMAIL,
+  return a.Z.put({
+    url: r.ANM.USER_EMAIL,
     trackedActionData: {
       event: s.NetworkActionNames.USER_ACCOUNT_EMAIL_CHANGE_SEND_CODE,
       properties: {
@@ -20,9 +20,9 @@ function i() {
     rejectWithError: !1
   })
 }
-async function a(e) {
-  return (await r.Z.post({
-    url: l.ANM.USER_EMAIL_VERIFY_CODE,
+async function l(e) {
+  return (await a.Z.post({
+    url: r.ANM.USER_EMAIL_VERIFY_CODE,
     body: {
       code: e
     },

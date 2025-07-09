@@ -67,11 +67,11 @@ let O = {
       margin: 20
     }
   },
-  S = {
+  P = {
     width: 1920,
     height: 1080
   },
-  P = {
+  S = {
     width: 1280,
     height: 720
   },
@@ -107,9 +107,9 @@ let O = {
     } = e;
     if (i.type === v.s9s.YOUTUBE_VIDEO) t = y({
       url: (0, v.n8r)(i.youtubeVideoId)
-    }, S), n = y({
+    }, P), n = y({
       url: "".concat((0, v.ivE)(i.youtubeVideoId), "?").concat("rel=0&iv_load_policy=3&showinfo=0&modestbranding=1")
-    }, P), r = p.pn.YOUTUBE;
+    }, S), r = p.pn.YOUTUBE;
     else {
       let e = null != i.width ? i.width : 0,
         r = null != i.height ? i.height : 0;

@@ -8,16 +8,16 @@ n.d(t, {
 var i = n(932563),
   r = n(822857),
   s = n(594174),
-  l = n(74538),
-  a = n(215023),
+  a = n(74538),
+  l = n(215023),
   o = n(981631);
 let c = e => {
     var t, n, i, r;
     let {
       product: s,
-      isPremiumUser: l
+      isPremiumUser: a
     } = e;
-    return null != (r = null == (i = s.prices[l ? o.tuJ.PREMIUM_TIER_2 : o.tuJ.DEFAULT]) || null == (n = i.countryPrices) || null == (t = n.prices) ? void 0 : t.slice(0, 2)) ? r : []
+    return null != (r = null == (i = s.prices[a ? o.tuJ.PREMIUM_TIER_2 : o.tuJ.DEFAULT]) || null == (n = i.countryPrices) || null == (t = n.prices) ? void 0 : t.slice(0, 2)) ? r : []
   },
   d = e => {
     var t;
@@ -41,10 +41,10 @@ let c = e => {
       enabled: s
     } = (0, r.CE)({
       location: "getShopBasePricingData"
-    }), l = s ? i.find(e => e.currency === o.pKx.DISCORD_ORB) : void 0, a = i.find(e => e.currency !== o.pKx.DISCORD_ORB), d = 1 === i.length && null != l;
+    }), a = s ? i.find(e => e.currency === o.pKx.DISCORD_ORB) : void 0, l = i.find(e => e.currency !== o.pKx.DISCORD_ORB), d = 1 === i.length && null != a;
     return {
-      orbPrice: l,
-      fiatPrice: a,
+      orbPrice: a,
+      fiatPrice: l,
       isOrbExclusive: d
     }
   },
@@ -56,15 +56,15 @@ let c = e => {
     } = e, {
       orbPrice: r,
       fiatPrice: s,
-      isOrbExclusive: l
+      isOrbExclusive: a
     } = u({
       product: t,
       isPremiumUser: n
     }), o = [];
-    return i === a.AW.ORBS ? null != r && (o = [r]) : (null != s && o.push(s), null != r && o.push(r)), {
+    return i === l.AW.ORBS ? null != r && (o = [r]) : (null != s && o.push(s), null != r && o.push(r)), {
       orbPrice: r,
       fiatPrice: s,
-      isOrbExclusive: l,
+      isOrbExclusive: a,
       displayPrices: o
     }
   },
@@ -75,30 +75,30 @@ let c = e => {
       orbPrice: i,
       fiatPrice: r,
       isOrbExclusive: s
-    } = e, l = [];
-    null != i && null != r ? n ? l.push(i, r) : l.push(r, i) : null != i ? l.push(i) : null != r && l.push(r);
-    let a = l.length > 0 && (null == (t = l[0]) ? void 0 : t.currency) === o.pKx.DISCORD_ORB;
+    } = e, a = [];
+    null != i && null != r ? n ? a.push(i, r) : a.push(r, i) : null != i ? a.push(i) : null != r && a.push(r);
+    let l = a.length > 0 && (null == (t = a[0]) ? void 0 : t.currency) === o.pKx.DISCORD_ORB;
     return {
-      checkoutEligiblePrices: l,
+      checkoutEligiblePrices: a,
       isOrbExclusive: s,
       hasSufficientOrbs: n,
-      shouldCheckoutWithOrbs: a
+      shouldCheckoutWithOrbs: l
     }
   },
   g = e => {
     let {
       product: t
     } = e, n = (0, i.zl)(), r = s.default.getCurrentUser(), {
-      orbPrice: a,
+      orbPrice: l,
       fiatPrice: o,
       isOrbExclusive: c
     } = u({
       product: t,
-      isPremiumUser: l.ZP.canUseCollectibles(r)
-    }), d = null != a && null != n && n >= a.amount, {
+      isPremiumUser: a.ZP.canUseCollectibles(r)
+    }), d = null != l && null != n && n >= l.amount, {
       shouldCheckoutWithOrbs: m
     } = p({
-      orbPrice: a,
+      orbPrice: l,
       fiatPrice: o,
       isOrbExclusive: c,
       hasSufficientOrbs: d
@@ -113,8 +113,8 @@ function h(e) {
     tab: r
   } = e, {
     orbPrice: s,
-    fiatPrice: l,
-    isOrbExclusive: a,
+    fiatPrice: a,
+    isOrbExclusive: l,
     displayPrices: o
   } = m({
     product: t,
@@ -142,8 +142,8 @@ function h(e) {
     displayPrices: o
   }, p({
     orbPrice: s,
-    fiatPrice: l,
-    isOrbExclusive: a,
+    fiatPrice: a,
+    isOrbExclusive: l,
     hasSufficientOrbs: c
   }))
 }

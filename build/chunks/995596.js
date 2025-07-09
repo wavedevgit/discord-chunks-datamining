@@ -156,15 +156,15 @@ function N(e) {
   }), E = _(null != N ? N : 0), {
     lastVisibleIndex: S,
     onItemLayout: I,
-    overflowItemsRef: R
+    overflowItemsRef: O
   } = (0, o.zP)({
     items: E,
     itemGapPx: 16,
     maxLines: 1,
     containerWidth: a - 200
-  }), O = (0, s.e7)([f.ZP], () => null != f.ZP.getGuildSidebarState(t), [t]), P = (0, h.L)({
+  }), P = (0, s.e7)([f.ZP], () => null != f.ZP.getGuildSidebarState(t), [t]), R = (0, h.L)({
     guildId: t
-  }), y = l.useMemo(() => n === p.e.ALL_MEMBERS ? O : null != P && null != P.user, [n, O, P]), w = l.useMemo(() => E.slice(0, S + 1), [S, E]), A = l.useMemo(() => E.slice(S + 1), [S, E]), Z = (0, m.Z)(e => {
+  }), y = l.useMemo(() => n === p.e.ALL_MEMBERS ? P : null != R && null != R.user, [n, P, R]), w = l.useMemo(() => E.slice(0, S + 1), [S, E]), A = l.useMemo(() => E.slice(S + 1), [S, E]), Z = (0, m.Z)(e => {
     let t = e.contentRect.width;
     null != t && C.current !== t && (c(t), C.current = t)
   });
@@ -185,7 +185,7 @@ function N(e) {
             children: e.label
           })
         }, e.id)), (0, r.jsx)("div", {
-          ref: R,
+          ref: O,
           children: (0, r.jsx)(T, {
             tabs: A,
             onTabSelect: i,

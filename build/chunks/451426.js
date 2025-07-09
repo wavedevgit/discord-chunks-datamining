@@ -1,11 +1,11 @@
 /** Chunk was on 65652 **/
 t.d(n, {
-  Z: () => p
+  Z: () => C
 }), t(953529), t(388685);
 var i = t(255367),
   s = t(73800),
-  l = t(442837),
-  a = t(481060),
+  a = t(442837),
+  l = t(481060),
   r = t(570140),
   o = t(600164),
   c = t(103879),
@@ -15,56 +15,56 @@ var i = t(255367),
   u = t(981631),
   _ = t(388032),
   h = t(67164),
-  C = t(91463);
+  p = t(91463);
 
-function p(e) {
+function C(e) {
   let {
     className: n,
     isDsaEligible: t,
-    onClose: p,
+    onClose: C,
     onNext: N,
     onBack: g
-  } = e, j = (0, l.e7)([d.Z], () => d.Z.getAppealClassificationId()), {
+  } = e, j = (0, a.e7)([d.Z], () => d.Z.getAppealClassificationId()), {
     classification: I
-  } = (0, m.YG)(null != j ? j : u.lds), k = (0, x.c7)(null == I ? void 0 : I.description), E = (0, l.e7)([d.Z], () => d.Z.getIsSubmitting()), T = (0, l.e7)([d.Z], () => d.Z.getAppealSignal()), f = (0, l.e7)([d.Z], () => d.Z.getFreeTextAppealReason()), [A, S] = s.useState(!1), [v, L] = s.useState(""), Z = s.useCallback(e => {
+  } = (0, m.YG)(null != j ? j : u.lds), E = (0, x.c7)(null == I ? void 0 : I.description), T = (0, a.e7)([d.Z], () => d.Z.getIsSubmitting()), v = (0, a.e7)([d.Z], () => d.Z.getAppealSignal()), f = (0, a.e7)([d.Z], () => d.Z.getFreeTextAppealReason()), [S, k] = s.useState(!1), [A, Z] = s.useState(""), L = s.useCallback(e => {
     r.Z.dispatch({
       type: "SAFETY_HUB_APPEAL_SIGNAL_CUSTOM_INPUT_CHANGE",
       userInput: e
     })
-  }, []), P = s.useCallback(async () => {
+  }, []), b = s.useCallback(async () => {
     if (null !== j) try {
-      L(""), await c.uR(j, T, f), null == N || N()
+      Z(""), await c.uR(j, v, f), null == N || N()
     } catch (n) {
       var e;
-      L((0, x.Zs)(null == (e = n.body) ? void 0 : e.code))
+      Z((0, x.Zs)(null == (e = n.body) ? void 0 : e.code))
     }
-  }, [j, T, f, N]);
+  }, [j, v, f, N]);
   return (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsxs)(a.xBx, {
+    children: [(0, i.jsxs)(l.xBx, {
       direction: o.Z.Direction.VERTICAL,
-      className: C.header,
+      className: p.header,
       separator: !1,
-      children: [(0, i.jsx)(a.X6q, {
-        className: C.title,
+      children: [(0, i.jsx)(l.X6q, {
+        className: p.title,
         variant: "heading-xl/semibold",
         children: _.intl.string(_.t["C5q+pa"])
-      }), (0, i.jsx)(a.Text, {
-        className: C.subtitle,
+      }), (0, i.jsx)(l.Text, {
+        className: p.subtitle,
         color: "header-secondary",
         variant: "text-md/normal",
         children: _.intl.string(_.t["G2g/g4"])
-      }), null != p && (0, i.jsx)(a.olH, {
-        className: C.closeButton,
-        onClick: p
+      }), null != C && (0, i.jsx)(l.olH, {
+        className: p.closeButton,
+        onClick: C
       })]
-    }), (0, i.jsxs)(a.hzk, {
+    }), (0, i.jsxs)(l.hzk, {
       className: n,
       paddingFix: !1,
       children: [(0, i.jsx)("ul", {
         className: h.listContainer,
-        children: [(0, x.ox)(T), f].filter(e => e.length > 0).map((e, n) => (0, i.jsx)("li", {
+        children: [(0, x.ox)(v), f].filter(e => e.length > 0).map((e, n) => (0, i.jsx)("li", {
           className: h.listItem,
-          children: (0, i.jsx)(a.Text, {
+          children: (0, i.jsx)(l.Text, {
             tag: "span",
             variant: "text-md/normal",
             children: e
@@ -72,53 +72,55 @@ function p(e) {
         }, n))
       }), t && (0, i.jsx)("div", {
         className: h.anchorContainer,
-        children: (0, i.jsx)(a.eee, {
-          onClick: () => S(e => !e),
-          children: (0, i.jsx)(a.X6q, {
+        children: (0, i.jsx)(l.eee, {
+          onClick: () => k(e => !e),
+          children: (0, i.jsx)(l.X6q, {
             variant: "heading-md/normal",
             color: "text-link",
             children: f.length > 0 ? _.intl.string(_.t.tnE3bW) : _.intl.string(_.t.uoQFIi)
           })
         })
-      }), A && t && (0, i.jsx)("div", {
+      }), S && t && (0, i.jsx)("div", {
         className: h.inputContainer,
-        children: (0, i.jsx)(a.Kx8, {
+        children: (0, i.jsx)(l.Kx8, {
           value: f,
-          onChange: Z
+          onChange: L
         })
       }), (0, i.jsx)("div", {
-        className: C.policyContainer,
-        children: (0, i.jsx)(a.Text, {
+        className: p.policyContainer,
+        children: (0, i.jsx)(l.Text, {
           variant: "text-md/semibold",
-          children: k
+          children: E
         })
-      }), (0, i.jsx)(a.Text, {
+      }), (0, i.jsx)(l.Text, {
         variant: "text-xs/medium",
         color: "header-secondary",
         className: h.footerText,
         children: _.intl.string(_.t.d6qgY2)
       })]
-    }), (0, i.jsxs)(a.mzw, {
+    }), (0, i.jsxs)(l.mzw, {
       direction: o.Z.Direction.VERTICAL,
-      children: ["" !== v && (0, i.jsx)(a.Text, {
+      children: ["" !== A && (0, i.jsx)(l.Text, {
         className: h.errorText,
         variant: "text-lg/normal",
         color: "text-danger",
-        children: v
-      }), (0, i.jsxs)("div", {
+        children: A
+      }), (0, i.jsx)("div", {
         className: h.buttonContainer,
-        children: [(0, i.jsx)(a.zxk, {
-          look: a.zxk.Looks.LINK,
-          color: a.zxk.Colors.PRIMARY,
-          onClick: g,
-          disabled: E,
-          children: _.intl.string(_.t["13/7kZ"])
-        }), (0, i.jsx)(a.zxk, {
-          onClick: P,
-          color: a.zxk.Colors.RED,
-          submitting: E,
-          children: _.intl.string(_.t.geKm7u)
-        })]
+        children: (0, i.jsxs)(l.hE2, {
+          direction: "horizontal-reverse",
+          children: [(0, i.jsx)(l.zxk, {
+            variant: "secondary",
+            text: _.intl.string(_.t["13/7kZ"]),
+            onClick: g,
+            disabled: T
+          }), (0, i.jsx)(l.zxk, {
+            variant: "critical-primary",
+            text: _.intl.string(_.t.geKm7u),
+            onClick: b,
+            loading: T
+          })]
+        })
       })]
     })]
   })

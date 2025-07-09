@@ -1,40 +1,40 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => a
+  Z: () => l
 }), n(953529);
 var i = n(255367);
 n(73800);
 var r = n(481060),
   s = n(921801),
-  l = n(632805);
+  a = n(632805);
 
-function a(e) {
+function l(e) {
   let {
     children: t,
     title: n,
-    description: a,
+    description: l,
     webSetting: o
   } = e;
   return (0, i.jsx)(s.F, {
     setting: o,
     children: (0, i.jsxs)("div", {
-      className: l.category,
-      children: [(null != n || null != a) && (0, i.jsxs)("div", {
-        className: l.categoryHeader,
+      className: a.category,
+      children: [(null != n || null != l) && (0, i.jsxs)("div", {
+        className: a.categoryHeader,
         children: [null != n && (0, i.jsx)(r.X6q, {
           variant: "heading-lg/semibold",
           color: "header-primary",
           children: n
-        }), null != a && (0, i.jsx)(r.Text, {
+        }), null != l && (0, i.jsx)(r.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
-          children: a
+          children: l
         })]
       }), (0, i.jsx)("div", {
-        className: l.categoryContent,
+        className: a.categoryContent,
         children: t
       }), (0, i.jsx)(r.$i$, {
-        className: l.categoryDivider
+        className: a.categoryDivider
       })]
     })
   })

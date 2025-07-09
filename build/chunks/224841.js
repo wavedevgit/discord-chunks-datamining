@@ -4,7 +4,7 @@ n.d(t, {
 });
 var r = n(255367);
 n(73800);
-var i = n(481060),
+var i = n(755721),
   l = n(388905),
   s = n(671533),
   a = n(63063),
@@ -22,7 +22,7 @@ let d = () => (0, r.jsx)(l.ZP, {
       children: c.intl.format(c.t.KQgoxM, {
         underageMessage: c.intl.string(c.t.WqEH4O)
       })
-    }), (0, r.jsxs)(i.zxk, {
+    }), (0, r.jsxs)(i.zx, {
       className: u.button,
       innerClassName: u.buttonWithIcon,
       onClick: () => window.open(a.Z.getArticleURL(o.BhN.AGE_GATE), "_blank"),

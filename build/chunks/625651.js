@@ -1,6 +1,6 @@
 /** Chunk was on 31924 **/
 n.d(t, {
-  default: () => j
+  default: () => g
 });
 var r = n(255367),
   o = n(73800),
@@ -17,14 +17,14 @@ var r = n(255367),
   p = n(535396),
   x = n(93841),
   k = n(388032),
-  g = n(340114);
+  v = n(340114);
 
-function j(e) {
+function g(e) {
   var t, n, {
-      guildId: j,
-      powerup: v
+      guildId: g,
+      powerup: j
     } = e,
-    _ = function(e, t) {
+    h = function(e, t) {
       if (null == e) return {};
       var n, r, o = function(e, t) {
         if (null == e) return {};
@@ -40,16 +40,16 @@ function j(e) {
       return o
     }(e, ["guildId", "powerup"]);
   let {
-    onDeactivate: I,
+    onDeactivate: _,
     error: O,
-    isLoading: h
-  } = (0, b.ZP)(j, v), {
+    isLoading: I
+  } = (0, b.ZP)(g, j), {
     onClose: C
-  } = _, T = o.useCallback(e => {
-    I(e).then(() => {
+  } = h, T = o.useCallback(e => {
+    _(e).then(() => {
       null == C || C()
     })
-  }, [C, I]), E = function(e, t) {
+  }, [C, _]), E = function(e, t) {
     let n = (0, a.e7)([c.Z], () => c.Z.getMemberCount(e)),
       d = (0, s.Z)(e),
       m = (0, a.e7)([u.Z], () => {
@@ -81,8 +81,8 @@ function j(e) {
         })]
       })), e
     }, [t, f, n, m])
-  }(j, v);
-  return (0, d.$)(j, v, d.w.DEACTIVATE), (0, r.jsxs)(i.Y0X, (t = function(e) {
+  }(g, j);
+  return (0, d.$)(g, j, d.w.DEACTIVATE), (0, r.jsxs)(i.Y0X, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -100,74 +100,80 @@ function j(e) {
     }
     return e
   }({
-    className: g.modal,
-    size: v.type === p.Us.LEVEL ? i.CgR.MEDIUM : i.CgR.SMALL
-  }, _), n = n = {
+    className: v.modal,
+    size: j.type === p.Us.LEVEL ? i.CgR.MEDIUM : i.CgR.SMALL
+  }, h), n = n = {
     parentComponent: "GuildPowerupDeactivateModal",
     children: [(0, r.jsxs)(i.hzk, {
-      className: g.modalContentContainer,
+      className: v.modalContentContainer,
       scrollbarType: "none",
       children: [(0, r.jsxs)("div", {
-        className: g.headerContainer,
+        className: v.headerContainer,
         children: [(0, r.jsxs)("div", {
-          className: g.header,
+          className: v.header,
           children: [(0, r.jsx)(i.X6q, {
             variant: "heading-md/semibold",
             children: k.intl.formatToPlainString(x.default.iEBw1N, {
-              perk: v.title
+              perk: j.title
             })
           }), (0, r.jsx)(i.Text, {
             variant: "text-sm/medium",
             children: k.intl.formatToPlainString(x.default["7o0K+/"], {
-              perk: v.title
+              perk: j.title
             })
           })]
         }), (0, r.jsx)(i.olH, {
-          onClick: _.onClose
+          onClick: h.onClose
         })]
       }), (() => {
-        switch (v.type) {
+        switch (j.type) {
           case p.Us.LEVEL:
             return (0, r.jsx)(f.Z, {
-              powerup: v
+              powerup: j
             });
           case p.Us.PERK:
             return (0, r.jsx)(m.m, {
-              className: g.image,
-              powerup: v
+              className: v.image,
+              powerup: j
             })
         }
       })(), (0, r.jsxs)("div", {
-        className: g.warningContainer,
+        className: v.warningContainer,
         children: [(0, r.jsx)(i.Text, {
           color: "text-danger",
           variant: "eyebrow",
           children: k.intl.string(x.default.OVt5CA)
         }), (0, r.jsx)(i.Text, {
-          className: g.warningText,
+          className: v.warningText,
           tag: "span",
           variant: "text-sm/medium",
           children: E
         })]
       }), null != O && (0, r.jsx)(i.Text, {
-        className: g.errorText,
+        className: v.errorText,
         color: "text-danger",
         variant: "text-sm/semibold",
         children: O
       })]
     }), (0, r.jsxs)(i.mzw, {
-      className: g.footer,
-      children: [(0, r.jsx)(i.zxk, {
-        submitting: h,
-        color: i.Ttl.RED,
-        className: g.button,
-        onClick: T,
-        children: k.intl.string(x.default.PYPdl5)
-      }), (0, r.jsx)(i.zxk, {
-        color: i.Ttl.PRIMARY,
-        className: g.button,
-        onClick: _.onClose,
-        children: k.intl.string(k.t["ETE/oK"])
+      className: v.footer,
+      children: [(0, r.jsx)("div", {
+        "data-button-hoisted-classname-wrapper": !0,
+        className: v.button,
+        children: (0, r.jsx)(i.zxk, {
+          variant: "critical-primary",
+          text: k.intl.string(x.default.PYPdl5),
+          loading: I,
+          onClick: T
+        })
+      }), (0, r.jsx)("div", {
+        "data-button-hoisted-classname-wrapper": !0,
+        className: v.button,
+        children: (0, r.jsx)(i.zxk, {
+          variant: "secondary",
+          text: k.intl.string(k.t["ETE/oK"]),
+          onClick: h.onClose
+        })
       })]
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

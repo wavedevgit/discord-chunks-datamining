@@ -1,10 +1,10 @@
 /** Chunk was on 61323 **/
 a.d(t, {
-  Z: () => l,
-  p: () => s
+  Z: () => s,
+  p: () => l
 }), a(388685);
 var n = a(238675);
-let l = Object.entries(n.sJ).map(e => {
+let s = Object.entries(n.sJ).map(e => {
     let [t, a] = e;
     return {
       label: t,
@@ -13,7 +13,7 @@ let l = Object.entries(n.sJ).map(e => {
   }).filter(function(e) {
     return "string" != typeof e.value
   }),
-  s = Object.entries(n.fw).map(e => {
+  l = Object.entries(n.fw).map(e => {
     let [t, a] = e;
     return {
       label: t,

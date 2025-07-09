@@ -6,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(442837),
   l = n(481060),
-  o = n(100527),
-  a = n(906732),
+  a = n(100527),
+  o = n(906732),
   s = n(545594),
   c = n(300284),
   u = n(314897),
@@ -41,9 +41,10 @@ function y(e) {
       textStyles: _.bannerContainer,
       headerStyles: _.bannerHeader,
       children: (0, r.jsx)(l.zxk, {
-        onClick: () => i(),
-        size: l.zxk.Sizes.SMALL,
-        children: b.intl.string(b.t.Viksoq)
+        variant: "primary",
+        size: "sm",
+        text: b.intl.string(b.t.Viksoq),
+        onClick: () => i()
       })
     })
   })
@@ -55,7 +56,7 @@ function C(e) {
     guild: i
   } = e, {
     analyticsLocations: c
-  } = (0, a.ZP)(o.Z.AUTOMOD_PROFILE_QUARANTINE_ALERT), [u, d] = (0, h.ww)({
+  } = (0, o.ZP)(a.Z.AUTOMOD_PROFILE_QUARANTINE_ALERT), [u, d] = (0, h.ww)({
     guildId: null != (t = null == i ? void 0 : i.id) ? t : f.lds,
     analyticsLocations: c,
     openWithoutBackstack: !0
@@ -74,11 +75,12 @@ function C(e) {
       textStyles: _.bannerContainer,
       headerStyles: _.bannerHeader,
       children: (0, r.jsx)(l.zxk, {
+        variant: "primary",
+        size: "sm",
+        text: m,
         onClick: () => {
           u()
-        },
-        size: l.zxk.Sizes.SMALL,
-        children: m
+        }
       })
     })
   })

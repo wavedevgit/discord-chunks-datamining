@@ -1,34 +1,34 @@
 /** Chunk was on 93886 **/
-n.d(t, {
+a.d(t, {
   Z: () => x
-}), n(388685);
-var a = n(255367),
-  r = n(73800),
-  l = n(120356),
-  i = n.n(l),
-  s = n(442837),
-  o = n(481060),
-  c = n(98357),
-  d = n(432877),
-  u = n(738629),
-  m = n(616257);
+}), a(388685);
+var n = a(255367),
+  r = a(73800),
+  l = a(120356),
+  i = a.n(l),
+  s = a(442837),
+  o = a(481060),
+  c = a(98357),
+  d = a(432877),
+  u = a(738629),
+  m = a(616257);
 
 function x(e) {
   let {
     devSettingsCategory: t
-  } = e, n = (0, s.e7)([d.ZP], () => d.ZP.allByCategory(t), [t], s.pF), l = r.useMemo(() => n.map(e => {
-    let [t, n, {
+  } = e, a = (0, s.e7)([d.ZP], () => d.ZP.allByCategory(t), [t], s.pF), l = r.useMemo(() => a.map(e => {
+    let [t, a, {
       label: r
     }] = e;
-    return (0, a.jsx)(o.j7V, {
-      value: n,
+    return (0, n.jsx)(o.j7V, {
+      value: a,
       onChange: e => (0, c.Z)(t, e),
       hideBorder: !0,
       className: u.switch,
       children: r
     }, t)
-  }), [n]);
-  return (0, a.jsx)("div", {
+  }), [a]);
+  return (0, n.jsx)("div", {
     className: i()(m.panel, u.panel),
     children: l
   })

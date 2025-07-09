@@ -5,9 +5,9 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  o = n.n(l),
-  a = n(392711),
-  s = n.n(a),
+  a = n.n(l),
+  o = n(392711),
+  s = n.n(o),
   c = n(91192),
   u = n(924826),
   d = n(873546),
@@ -34,10 +34,10 @@ var r = n(255367),
   A = n(518738),
   w = n(570096),
   R = n(850020),
-  k = n(155409),
-  M = n(670188),
-  D = n(706454),
-  L = n(439170),
+  M = n(155409),
+  D = n(670188),
+  L = n(706454),
+  k = n(439170),
   U = n(485386),
   B = n(944486),
   F = n(111583),
@@ -118,8 +118,8 @@ let et = Y.ZP.getEnableHardwareAcceleration(),
     let {
       colorString: t,
       colorStrings: l,
-      colorRoleName: o,
-      colorRoleId: a,
+      colorRoleName: a,
+      colorRoleId: o,
       isOwner: s,
       nick: c,
       user: u,
@@ -165,12 +165,12 @@ let et = Y.ZP.getEnableHardwareAcceleration(),
         }
       }))
     }, [C]);
-    return (0, r.jsx)(M.Z, {
+    return (0, r.jsx)(D.Z, {
       targetElementRef: S,
       user: u,
       guildId: C,
       channelId: y.id,
-      roleId: a,
+      roleId: o,
       position: d.tq ? "window_center" : "left",
       spacing: 16,
       onShiftClick: A,
@@ -182,7 +182,7 @@ let et = Y.ZP.getEnableHardwareAcceleration(),
         let {
           onClick: n,
           onMouseDown: i
-        } = e, a = ee(e, ["onClick", "onMouseDown"]);
+        } = e, o = ee(e, ["onClick", "onMouseDown"]);
         return (0, r.jsx)(_.Z, J({
           ref: S,
           className: X.member,
@@ -198,7 +198,7 @@ let et = Y.ZP.getEnableHardwareAcceleration(),
           premiumSince: Z,
           colorString: t,
           colorStrings: l,
-          colorRoleName: o,
+          colorRoleName: a,
           isTyping: x,
           channel: y,
           guildId: C,
@@ -213,7 +213,7 @@ let et = Y.ZP.getEnableHardwareAcceleration(),
           onMouseDown: e => {
             I ? e.stopPropagation() : null == i || i(e)
           }
-        }, a))
+        }, o))
       }
     })
   }),
@@ -223,14 +223,14 @@ let et = Y.ZP.getEnableHardwareAcceleration(),
     } = e, n = ee(e, ["colorRoleId"]), {
       channel: i,
       user: l,
-      index: o
-    } = e, a = (0, c.JA)("".concat(o)), s = (0, h.e7)([F.Z], () => F.Z.isTyping(i.id, l.id)), u = (0, h.e7)([H.default], () => H.default.getCurrentUser()), d = (0, h.e7)([U.Z], () => {
+      index: a
+    } = e, o = (0, c.JA)("".concat(a)), s = (0, h.e7)([F.Z], () => F.Z.isTyping(i.id, l.id)), u = (0, h.e7)([H.default], () => H.default.getCurrentUser()), d = (0, h.e7)([U.Z], () => {
       var e;
       return null != t ? null == (e = U.Z.getRole(i.guild_id, t)) ? void 0 : e.name : void 0
     }, [i, t]), p = (0, R.K)({
       user: l
     });
-    return (0, r.jsx)(er, $(J({}, n, a), {
+    return (0, r.jsx)(er, $(J({}, n, o), {
       isTyping: s,
       currentUser: u,
       colorRoleName: d,
@@ -243,11 +243,11 @@ let et = Y.ZP.getEnableHardwareAcceleration(),
       title: n,
       count: i,
       guildId: l
-    } = e, o = (0, A.p9)({
+    } = e, a = (0, A.p9)({
       roleId: t,
       guildId: l,
       size: 16
-    }), a = (0, h.e7)([D.default], () => new Intl.NumberFormat(D.default.locale).format(i), [i]);
+    }), o = (0, h.e7)([L.default], () => new Intl.NumberFormat(L.default.locale).format(i), [i]);
     return t === q.Skl.UNKNOWN ? (0, r.jsx)("div", {
       className: X.membersGroup,
       children: (0, r.jsx)("div", {
@@ -262,14 +262,14 @@ let et = Y.ZP.getEnableHardwareAcceleration(),
         })
       }), (0, r.jsxs)("span", {
         "aria-hidden": !0,
-        children: [null != o ? (0, r.jsx)(Z.Z, J({
+        children: [null != a ? (0, r.jsx)(Z.Z, J({
           className: X.roleIcon
-        }, o)) : null, n, " — ", a]
+        }, a)) : null, n, " — ", o]
       })]
     })
   });
 
-function eo(e) {
+function ea(e) {
   let {
     index: t
   } = e, n = (0, c.JA)("".concat(t));
@@ -277,7 +277,7 @@ function eo(e) {
     itemProps: n
   })
 }
-class ea extends i.Component {
+class eo extends i.Component {
   shouldComponentUpdate(e) {
     return e.channel.id !== this.props.channel.id || e.version !== this.props.version || e.groups.length !== this.props.groups.length
   }
@@ -292,11 +292,11 @@ class ea extends i.Component {
       height: t,
       rowHeight: n,
       y: r
-    } = e, i = this.getContentFeedHeight(), l = Math.max(0, t - Math.max(0, i - r)), o = Math.floor(l / n);
+    } = e, i = this.getContentFeedHeight(), l = Math.max(0, t - Math.max(0, i - r)), a = Math.floor(l / n);
     return {
       height: l,
       rowHeight: n,
-      rowsVisible: o,
+      rowsVisible: a,
       y: Math.max(0, r - i)
     }
   }
@@ -329,13 +329,13 @@ class ea extends i.Component {
     } = this.props;
     return (0, r.jsx)(f.Wdt, {
       children: l => (0, r.jsx)(N.FG, {
-        children: a => (0, r.jsx)("aside", {
-          className: o()(X.membersWrap, X.hiddenMembers),
-          "aria-labelledby": a,
+        children: o => (0, r.jsx)("aside", {
+          className: a()(X.membersWrap, X.hiddenMembers),
+          "aria-labelledby": o,
           children: (0, r.jsx)(f.y5t, {
             component: (0, r.jsx)(f.nn4, {
               children: (0, r.jsx)(f.H, {
-                id: a,
+                id: o,
                 children: K.intl.format(K.t.JBQxV1, {
                   channel: n.name
                 })
@@ -344,7 +344,7 @@ class ea extends i.Component {
             children: (0, r.jsx)(c.SJ, {
               children: n => {
                 var {
-                  ref: a,
+                  ref: o,
                   role: s
                 } = n, c = ee(n, ["ref", "role"]);
                 return (0, r.jsx)(f.aVo, J({
@@ -352,9 +352,9 @@ class ea extends i.Component {
                   innerAriaLabel: K.intl.string(K.t["9Oq93t"]),
                   ref: e => {
                     var t;
-                    this._list = e, this.props.listRef.current = e, a.current = null != (t = null == e ? void 0 : e.getScrollerNode()) ? t : null
+                    this._list = e, this.props.listRef.current = e, o.current = null != (t = null == e ? void 0 : e.getScrollerNode()) ? t : null
                   },
-                  className: o()(X.members, {
+                  className: a()(X.members, {
                     [X.fullWidth]: d.tq
                   }),
                   paddingTop: 0,
@@ -383,25 +383,25 @@ class ea extends i.Component {
       } = e, {
         groups: n,
         channel: l
-      } = this.props, o = n[t];
-      if ((0, j.R)(o)) return (0, i.createElement)(j.Z, $(J({}, o), {
+      } = this.props, a = n[t];
+      if ((0, j.R)(a)) return (0, i.createElement)(j.Z, $(J({}, a), {
         key: "section-".concat(t)
       }));
       if (0 === t) {
         let {
           key: e
-        } = o;
-        return (0, r.jsx)(k.Z, {
+        } = a;
+        return (0, r.jsx)(M.Z, {
           tutorialId: "whos-online",
           position: "left",
           inlineSpecs: en,
-          children: (0, i.createElement)(el, $(J({}, o), {
+          children: (0, i.createElement)(el, $(J({}, a), {
             key: "section-".concat(e),
             guildId: l.guild_id
           }))
         }, "section-".concat(t))
       }
-      return (0, i.createElement)(el, $(J({}, o), {
+      return (0, i.createElement)(el, $(J({}, a), {
         key: "section-".concat(t),
         guildId: l.guild_id
       }))
@@ -422,14 +422,14 @@ class ea extends i.Component {
         rowIndex: i
       } = e, {
         channel: l
-      } = this.props, o = this.getRowProps(e);
-      if (null != o) {
-        if (o.type === L.so.MEMBER && "user" in o) {
+      } = this.props, a = this.getRowProps(e);
+      if (null != a) {
+        if (a.type === k.so.MEMBER && "user" in a) {
           let {
             colorString: e,
             colorStrings: t,
             colorRoleId: n,
-            user: a,
+            user: o,
             status: s,
             isOwner: c,
             isMobileOnline: u,
@@ -437,12 +437,12 @@ class ea extends i.Component {
             activities: p,
             applicationStream: h,
             premiumSince: f
-          } = o;
+          } = a;
           return (0, r.jsx)(ei, {
             colorString: e,
             colorStrings: t,
             colorRoleId: n,
-            user: a,
+            user: o,
             status: s,
             isOwner: c,
             nick: d,
@@ -453,22 +453,22 @@ class ea extends i.Component {
             premiumSince: f,
             isMobileOnline: u,
             index: i
-          }, "member-".concat(o.user.id))
+          }, "member-".concat(a.user.id))
         }
-        if (o.type === L.so.CONTENT_INVENTORY) {
-          let e = "content-inventory-".concat(o.entry.id);
-          null != o.entry.original_id && (e += "-".concat(o.entry.original_id));
-          let t = (0, r.jsx)(S.ZP, $(J({}, o), {
+        if (a.type === k.so.CONTENT_INVENTORY) {
+          let e = "content-inventory-".concat(a.entry.id);
+          null != a.entry.original_id && (e += "-".concat(a.entry.original_id));
+          let t = (0, r.jsx)(S.ZP, $(J({}, a), {
             channel: this.props.channel,
             index: i
           }), e);
-          return o.entry.content_type === p.s.LEADERBOARD ? (0, r.jsx)(w.N, {
+          return a.entry.content_type === p.s.LEADERBOARD ? (0, r.jsx)(w.N, {
             children: t
           }, e) : t
         }
-        if (o.type === L.so.HIDDEN_CONTENT_INVENTORY) return (0, r.jsx)(E.Z, {}, "content-inventory-hidden-entry")
+        if (a.type === k.so.HIDDEN_CONTENT_INVENTORY) return (0, r.jsx)(E.Z, {}, "content-inventory-hidden-entry")
       }
-      return (0, r.jsx)(eo, {
+      return (0, r.jsx)(ea, {
         index: i
       }, "placeholder-".concat(t, ":").concat(n))
     }), Q(this, "handleScroll", () => {
@@ -534,7 +534,7 @@ class ea extends i.Component {
       if (0 === r.length) return;
       let i = r.reduce((e, t) => {
         var n;
-        return t.type !== L.so.MEMBER || (e.num_users_visible++, t.isMobileOnline && e.num_users_visible_with_mobile_indicator++, null != t.activities && t.activities.length > 0 && (e.num_users_visible_with_activity++, t.activities.some(e => e.type === q.IIU.PLAYING) && e.num_users_visible_with_game_activity++), null != t.user.avatarDecoration && e.num_users_visible_with_avatar_decoration++, (null == (n = t.user.collectibles) ? void 0 : n.nameplate) != null && e.num_users_visible_with_nameplate++), e
+        return t.type !== k.so.MEMBER || (e.num_users_visible++, t.isMobileOnline && e.num_users_visible_with_mobile_indicator++, null != t.activities && t.activities.length > 0 && (e.num_users_visible_with_activity++, t.activities.some(e => e.type === q.IIU.PLAYING) && e.num_users_visible_with_game_activity++), null != t.user.avatarDecoration && e.num_users_visible_with_avatar_decoration++, (null == (n = t.user.collectibles) ? void 0 : n.nameplate) != null && e.num_users_visible_with_nameplate++), e
       }, {
         num_users_visible: 0,
         num_users_visible_with_mobile_indicator: 0,
@@ -554,7 +554,7 @@ function es(e) {
     className: n
   } = e, {
     analyticsLocations: l
-  } = (0, v.ZP)(C.Z.MEMBER_LIST), a = (0, h.e7)([y.Z], () => y.Z.keyboardModeEnabled), s = (0, h.cj)([L.ZP], () => L.ZP.getProps(t.guild_id, t.id)), {
+  } = (0, v.ZP)(C.Z.MEMBER_LIST), o = (0, h.e7)([y.Z], () => y.Z.keyboardModeEnabled), s = (0, h.cj)([k.ZP], () => k.ZP.getProps(t.guild_id, t.id)), {
     rows: d,
     groups: p,
     version: m,
@@ -598,17 +598,17 @@ function es(e) {
   }), []), E = (0, u.ZP)({
     id: "members-".concat(t.id),
     setFocus: x,
-    isEnabled: a,
+    isEnabled: o,
     scrollToStart: O,
     scrollToEnd: j
   });
   return (0, r.jsx)(v.Gt, {
     value: l,
     children: (0, r.jsx)("div", {
-      className: o()(X.container, n),
+      className: a()(X.container, n),
       children: (0, r.jsx)(c.bG, {
         navigator: E,
-        children: (0, r.jsx)(ea, $(J({}, e, s), {
+        children: (0, r.jsx)(eo, $(J({}, e, s), {
           version: m,
           groups: p,
           rows: d,

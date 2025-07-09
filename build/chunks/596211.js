@@ -4,7 +4,7 @@ n.d(t, {
 });
 var r = n(255367);
 n(73800);
-var i = n(481060),
+var i = n(755721),
   l = n(406877);
 
 function a(e) {
@@ -32,7 +32,7 @@ function a(e) {
     isLoading: u,
     downloadAttachment: d
   } = (0, l.Z)(a, o);
-  return (0, r.jsx)(i.zxk, (t = function(e) {
+  return (0, r.jsx)(i.zx, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

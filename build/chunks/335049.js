@@ -151,7 +151,7 @@ function w(e) {
       className: I.tag,
       variant: "text-sm/normal",
       children: ["(", f, ")"]
-    }) : null, l ? (0, r.jsx)(k, {
+    }) : null, l ? (0, r.jsx)(A, {
       tooltipText: a
     }) : null]
   })
@@ -195,7 +195,7 @@ function P(e) {
       color: "header-primary",
       variant: "text-md/normal",
       children: b.name
-    }), s ? (0, r.jsx)(k, {
+    }), s ? (0, r.jsx)(A, {
       tooltipText: m
     }) : null]
   })
@@ -229,13 +229,13 @@ function Z(e) {
       className: I.tag,
       variant: "text-sm/normal",
       children: _.ZP.getUserTag(a)
-    }), i ? (0, r.jsx)(k, {
+    }), i ? (0, r.jsx)(A, {
       tooltipText: l
     }) : null]
   })
 }
 
-function k(e) {
+function A(e) {
   let {
     tooltipText: t
   } = e;

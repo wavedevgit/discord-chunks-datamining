@@ -37,12 +37,12 @@ var i = n(255367),
   P = n(823379),
   A = n(892880),
   L = n(63063),
-  k = n(5192),
-  D = n(233608),
-  M = n(700785),
+  D = n(5192),
+  M = n(233608),
+  k = n(700785),
   B = n(51144),
-  U = n(257017),
-  V = n(188857),
+  V = n(257017),
+  U = n(188857),
   W = n(981631),
   H = n(388032),
   G = n(483112);
@@ -144,12 +144,12 @@ function Y(e) {
           null != n && (e = n.name)
         }
       }
-      U.X(e)
+      V.X(e)
     }
   }, b = e => {
     let t = I.Z.can(W.Plq.ADMINISTRATOR, l) || I.Z.can(W.Plq.MANAGE_ROLES, n, void 0, void 0, !0);
     return n.isGuildStageVoice() && N.xS.has(e) ? H.intl.string(H.t.bTS5lZ) : !((!a.fS(e, W.Plq.MANAGE_ROLES) || t) && (null == e || I.Z.can(e, l) || t)) && H.intl.string(H.t.nOtPMD)
-  }, v = g === s, y = n.isForumLikeChannel() && a.e$(t.deny, W.Plq.SEND_MESSAGES), S = a.e$(t.deny, W.Plq.SEND_MESSAGES), O = a.e$(t.deny, W.Plq.READ_MESSAGE_HISTORY), T = D.Z.generateChannelPermissionSpec(s, n, v, {
+  }, v = g === s, y = n.isForumLikeChannel() && a.e$(t.deny, W.Plq.SEND_MESSAGES), S = a.e$(t.deny, W.Plq.SEND_MESSAGES), O = a.e$(t.deny, W.Plq.READ_MESSAGE_HISTORY), T = M.Z.generateChannelPermissionSpec(s, n, v, {
     createPostsDisabled: y,
     sendMessagesDisabled: S,
     readMessageHistoryDisabled: O
@@ -164,8 +164,10 @@ function Y(e) {
       permissionRender: b,
       className: G.permissionsForm
     }, n)), s === g ? null : (0, i.jsx)(d.zxk, {
-      look: d.zxk.Looks.OUTLINED,
-      color: d.zxk.Colors.RED,
+      variant: "critical-secondary",
+      text: H.intl.format(H.t.txPV7u, {
+        name: p()
+      }),
       onClick: () => {
         let e = p();
         u.Z.show({
@@ -176,10 +178,7 @@ function Y(e) {
           cancelText: H.intl.string(H.t["ETE/oK"]),
           onConfirm: () => h.Z.clearPermissionOverwrite(c, g)
         })
-      },
-      children: H.intl.format(H.t.txPV7u, {
-        name: p()
-      })
+      }
     })]
   })
 }
@@ -189,7 +188,7 @@ function J(e) {
     guildId: t,
     channelId: n,
     user: l
-  } = e, r = l.getAvatarURL(t, 32), s = k.ZP.getNickname(t, n, l), a = B.ZP.useUserTag(l), o = null, c = null;
+  } = e, r = l.getAvatarURL(t, 32), s = D.ZP.getNickname(t, n, l), a = B.ZP.useUserTag(l), o = null, c = null;
   return o = null != s ? s : l.hasAvatarForGuild(t) ? l.username : a, (null != s || l.hasAvatarForGuild(t)) && (c = (0, i.jsxs)("div", {
     className: G.userRowSubText,
     children: [l.hasAvatarForGuild(t) ? (0, i.jsx)(d.qEK, {
@@ -285,7 +284,7 @@ function Q() {
         guildRoles: t
       }
     }, [f]),
-    N = (0, V.Z)(f, r),
+    N = (0, U.Z)(f, r),
     O = (0, b.ZP)(),
     T = (0, o.e7)([v.Z], () => v.Z.roleStyle),
     w = l.useCallback((e, l) => {
@@ -333,11 +332,11 @@ function Q() {
       h.Z.updatePermissionOverwrite(t.id, {
         id: e,
         type: n,
-        allow: M.Hn,
-        deny: M.Hn
+        allow: k.Hn,
+        deny: k.Hn
       }).then(() => (0, m.Aj)(e))
     };
-  null != r && null == r[x.id] && (r[x.id] = M.we(x.id));
+  null != r && null == r[x.id] && (r[x.id] = k.we(x.id));
   let A = s()(r).filter(e => e.type === j.BN.ROLE).map(e => y[e.id]).filter(P.lm).sortBy(e => -e.position).map(e => (0, i.jsx)(p.Z, {
       theme: O,
       roleStyle: T,
@@ -353,7 +352,7 @@ function Q() {
       }),
       children: e.name
     }, "".concat(a, "-").concat(e.id))).value(),
-    k = s()(N).sortBy(e => e.username.toLowerCase()).map(e => {
+    D = s()(N).sortBy(e => e.username.toLowerCase()).map(e => {
       let t = e.getAvatarURL(x.id, 24);
       return (0, i.jsx)(p.Z, {
         id: e.id,
@@ -411,7 +410,7 @@ function Q() {
             })
           }))
         })
-      })(), A, k, (0, i.jsxs)(l.Fragment, {
+      })(), A, D, (0, i.jsxs)(l.Fragment, {
         children: [(0, i.jsx)(d.njP.Separator, {
           style: {
             marginTop: 20,

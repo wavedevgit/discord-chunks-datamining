@@ -1,16 +1,16 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => l
+  Z: () => a
 });
 var i = n(255367);
 n(73800);
 var r = n(481060),
   s = n(388032);
 
-function l(e, t, n) {
-  (0, r.h7j)(l => {
-    var a, o;
-    return (0, i.jsx)(r.ConfirmModal, (a = function(e) {
+function a(e, t, n) {
+  (0, r.h7j)(a => {
+    var l, o;
+    return (0, i.jsx)(r.ConfirmModal, (l = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           i = Object.keys(n);
@@ -32,12 +32,12 @@ function l(e, t, n) {
       confirmText: s.intl.string(s.t.BddRzc),
       cancelText: s.intl.string(s.t["ETE/oK"]),
       onConfirm: n
-    }, l), o = o = {
+    }, a), o = o = {
       children: (0, i.jsx)(r.Text, {
         variant: "text-md/normal",
         children: t
       })
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
         var i = Object.getOwnPropertySymbols(e);
@@ -45,7 +45,7 @@ function l(e, t, n) {
       }
       return n
     })(Object(o)).forEach(function(e) {
-      Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(o, e))
-    }), a))
+      Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(o, e))
+    }), l))
   })
 }

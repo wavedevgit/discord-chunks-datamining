@@ -6,8 +6,8 @@ var i = n(255367);
 n(73800);
 var r = n(120356),
   s = n.n(r),
-  l = n(481060),
-  a = n(984370),
+  a = n(481060),
+  l = n(984370),
   o = n(664134),
   c = n(60503);
 let d = e => Object.values(e).sort((e, t) => e.order - t.order),
@@ -16,19 +16,19 @@ let d = e => Object.values(e).sort((e, t) => e.order - t.order),
       navBarSections: t,
       activeSectionId: n
     } = e, r = d(t);
-    return (0, i.jsxs)(a.Z, {
+    return (0, i.jsxs)(l.Z, {
       className: c.navBar,
-      children: [(0, i.jsx)(l.SrA, {
+      children: [(0, i.jsx)(a.SrA, {
         className: c.nitroWheelIcon
       }), (0, i.jsx)("div", {
         className: c.navBarContent,
         children: r.map(e => {
           let t = n === e.id,
             r = o.C[e.id];
-          return (0, i.jsxs)(l.P3F, {
+          return (0, i.jsxs)(a.P3F, {
             className: c.sectionClickable,
             onClick: e.scrollToSection,
-            children: [(0, i.jsx)(l.Text, {
+            children: [(0, i.jsx)(a.Text, {
               variant: "text-sm/medium",
               color: "text-primary",
               children: r

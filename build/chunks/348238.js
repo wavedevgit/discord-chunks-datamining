@@ -3,7 +3,7 @@ n.d(t, {
   $3: () => V,
   Go: () => B,
   JC: () => w,
-  NU: () => L,
+  NU: () => D,
   Nk: () => A,
   R9: () => R,
   RN: () => U,
@@ -11,11 +11,11 @@ n.d(t, {
   XO: () => N,
   Xn: () => z,
   bb: () => H,
-  qo: () => D,
-  rY: () => k,
+  qo: () => M,
+  rY: () => L,
   sR: () => F,
   tn: () => G,
-  wq: () => M
+  wq: () => k
 }), n(997841), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -96,15 +96,15 @@ function R(e, t) {
   return Z(S("avatarProfile", e, t))
 }
 
-function k(e, t) {
+function L(e, t) {
   return Z(S("referencedAvatarProfile", e, t))
 }
 
-function L(e, t) {
+function D(e, t) {
   return Z(S("interactionAvatarProfile", e, t))
 }
 
-function D(e, t, a, o) {
+function M(e, t, a, o) {
   let {
     id: c
   } = t, {
@@ -172,7 +172,7 @@ function D(e, t, a, o) {
   }, [p, c, u, a, m, o])
 }
 
-function M(e, t) {
+function k(e, t) {
   return i.useCallback(n => {
     let r = h.default.getUser(e),
       i = f.Z.getChannel(t);

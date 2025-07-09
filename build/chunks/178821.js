@@ -4,8 +4,8 @@ r.d(t, {
   Y5: () => v,
   ZF: () => T,
   ZP: () => F,
-  d6: () => k,
-  m8: () => y,
+  d6: () => y,
+  m8: () => k,
   nU: () => I,
   tO: () => p
 }), r(388685);
@@ -106,7 +106,7 @@ function T(e) {
   }]
 }
 
-function k(e, t) {
+function y(e, t) {
   let r = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
     n = a.useRef(Array(j).fill(0)),
     c = a.useRef(performance.now()),
@@ -145,7 +145,7 @@ function k(e, t) {
   }
 }
 
-function y(e) {
+function k(e) {
   let t = e.dispatcher.getIsSchedulerBackgrounded(),
     r = a.useRef(t);
   r.current = t;
@@ -159,7 +159,7 @@ function w(e) {
   let {
     socket: t,
     isAverageFrameTime: r
-  } = e, [c, s] = y(t), {
+  } = e, [c, s] = k(t), {
     currentFPS: l,
     averageFrameTime: o,
     timeSinceLastDrop: x,
@@ -167,8 +167,8 @@ function w(e) {
     droppedFramesRef: b,
     renderedFrameCount: j,
     bufferFramecountRef: w,
-    frameCheckerEffect: S
-  } = k(r, c), [R, O, I] = T(t), [F, C] = v(R, S), E = performance.now() - s.current < g, D = O(o, w.current);
+    frameCheckerEffect: R
+  } = y(r, c), [S, O, I] = T(t), [F, C] = v(S, R), E = performance.now() - s.current < g, D = O(o, w.current);
   (0, i.ZP)(() => (F(), () => {
     C()
   }));
@@ -261,15 +261,16 @@ function w(e) {
     }), (0, n.jsx)("div", {
       className: d.bottomPanelButton,
       children: (0, n.jsx)(u.zxk, {
-        size: u.zxk.Sizes.SMALL,
-        onClick: P,
-        children: "Reset Frame Data"
+        variant: "primary",
+        size: "sm",
+        text: "Reset Frame Data",
+        onClick: P
       })
     })]
   })
 }
 
-function S(e) {
+function R(e) {
   let {
     socket: t,
     isAverageFrameTime: r,
@@ -319,7 +320,7 @@ function S(e) {
   })
 }
 
-function R(e) {
+function S(e) {
   let {
     socket: t
   } = e, r = t.dispatcher.getDispatchTimings(), [c, l] = a.useState(!1);
@@ -447,11 +448,12 @@ function O(e) {
       }), (0, n.jsx)("div", {
         className: d.bottomPanelButton,
         children: (0, n.jsx)(u.zxk, {
-          size: u.zxk.Sizes.SMALL,
+          variant: "primary",
+          size: "sm",
+          text: "Reset Scheduler Telemetry",
           onClick: () => {
             r.reset()
-          },
-          children: "Reset Scheduler Telemetry"
+          }
         })
       })]
     }) : null]
@@ -480,11 +482,11 @@ function F() {
       children: [(0, n.jsx)(w, {
         socket: e,
         isAverageFrameTime: t
-      }), (0, n.jsx)(S, {
+      }), (0, n.jsx)(R, {
         socket: e,
         isAverageFrameTime: t,
         onToggleAverageFrameTime: r
-      }), (0, n.jsx)(R, {
+      }), (0, n.jsx)(S, {
         socket: e
       }), (0, n.jsx)(O, {
         socket: e

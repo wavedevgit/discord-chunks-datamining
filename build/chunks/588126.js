@@ -1,22 +1,22 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => a
+  Z: () => l
 }), n(388685);
 var i = n(73800),
   r = n(597688),
   s = n(884697),
-  l = n(223143);
-let a = function(e) {
+  a = n(223143);
+let l = function(e) {
   let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
-    [n, a] = i.useState(),
+    [n, l] = i.useState(),
     {
       categories: o,
       purchases: c
-    } = (0, l.ZP)({
+    } = (0, a.ZP)({
       location: "useTryItOutAvatarDecoration"
     });
   return i.useEffect(() => {
-    (null == n || 0 === n.size) && a(o)
+    (null == n || 0 === n.size) && l(o)
   }, [o, n]), i.useMemo(() => {
     if (null != e) return e;
     if (null == n || !t) return;

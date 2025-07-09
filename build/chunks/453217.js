@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(255367);
 n(73800);
-var o = n(120356),
-  s = n.n(o),
+var s = n(120356),
+  o = n.n(s),
   a = n(264738),
   i = n(481060),
   l = n(113434),
@@ -21,7 +21,7 @@ let h = function(e) {
   var t;
   let {
     className: n,
-    expansionSpring: o,
+    expansionSpring: s,
     isExpanded: h,
     isExpansionAnimationComplete: b,
     quest: j,
@@ -31,12 +31,12 @@ let h = function(e) {
   } = (0, l.Rf)(j), C = (0, l.Jf)(j), O = null != C ? C.percentComplete > 0 : y > 0;
   return (0, r.jsxs)(a.animated.div, {
     "aria-hidden": h && b,
-    className: s()(n, x.contentCollapsed, {
+    className: o()(n, x.contentCollapsed, {
       [x.contentCollapsedExpanded]: h,
       [x.contentCollapsedAccepted]: v
     }),
     style: {
-      opacity: o.to({
+      opacity: s.to({
         range: [0, 1],
         output: [1, 0]
       })

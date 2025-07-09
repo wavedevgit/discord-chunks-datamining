@@ -6,7 +6,7 @@ var n = l(255367),
   i = l(73800),
   s = l(120356),
   a = l.n(s),
-  r = l(481060),
+  r = l(755721),
   o = l(53281),
   u = l(121746);
 
@@ -28,8 +28,8 @@ function c(e) {
       placeholder: d,
       type: "text",
       value: t
-    }), (0, n.jsxs)(r.zxk, {
-      size: r.zxk.Sizes.MIN,
+    }), (0, n.jsxs)(r.zx, {
+      size: r.zx.Sizes.MIN,
       className: u.fileUploadButton,
       children: [c, (0, n.jsx)(o.Z, {
         ref: f,

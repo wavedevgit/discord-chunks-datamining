@@ -50,10 +50,14 @@ function g(e) {
         }), (0, r.jsx)(l.X6q, {
           variant: "heading-md/semibold",
           children: u.intl.string(u.t.gzuVHx)
-        }), (0, r.jsx)(l.zxk, {
+        }), (0, r.jsx)("div", {
+          "data-button-hoisted-classname-wrapper": !0,
           className: p.emptyStateButton,
-          onClick: t,
-          children: u.intl.string(u.t["ZwSt+f"])
+          children: (0, r.jsx)(l.zxk, {
+            variant: "primary",
+            text: u.intl.string(u.t["ZwSt+f"]),
+            onClick: t
+          })
         })]
       })
     }(x, () => open(s.Z.getArticleURL(d.BhN.CHANNEL_FOLLOWING)))]

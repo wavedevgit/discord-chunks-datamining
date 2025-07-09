@@ -142,7 +142,7 @@ class T extends r.PureComponent {
     })
   }
 }
-let k = a().throttle(() => {
+let D = a().throttle(() => {
   m.Z.increment({
     name: u.V.APP_CRASHED,
     tags: ["reason:".concat(c.v.UNHANDLED_JS_ERROR), "level:".concat(d.c.FATAL)]
@@ -150,7 +150,7 @@ let k = a().throttle(() => {
 }, 100, {
   trailing: !1
 });
-class D extends r.PureComponent {
+class k extends r.PureComponent {
   componentDidCatch(e, t) {
     let n = (0, O.s1)().location;
     this.setState({
@@ -183,7 +183,7 @@ class D extends r.PureComponent {
       error_stack: e.stack,
       sentry_issue_id: o,
       error_level: "fatal"
-    }), k()
+    }), D()
   }
   render() {
     let {
@@ -208,4 +208,4 @@ class D extends r.PureComponent {
     })
   }
 }
-let R = D
+let R = k

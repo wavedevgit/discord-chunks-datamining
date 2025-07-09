@@ -1,12 +1,12 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => a
+  Z: () => l
 }), n(388685);
 var i = n(255367),
   r = n(73800),
   s = n(314897);
 
-function l(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -15,7 +15,7 @@ function l(e, t, n) {
   }) : e[t] = n, e
 }
 
-function a(e) {
+function l(e) {
   return class extends r.Component {
     componentDidMount() {
       s.default.addChangeListener(this.onStoreChange)
@@ -32,7 +32,7 @@ function a(e) {
           "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
           }))), i.forEach(function(t) {
-            l(e, t, n[t])
+            a(e, t, n[t])
           })
         }
         return e
@@ -50,9 +50,9 @@ function a(e) {
       }), t))
     }
     constructor(...e) {
-      super(...e), l(this, "state", {
+      super(...e), a(this, "state", {
         isAuthenticated: s.default.isAuthenticated()
-      }), l(this, "onStoreChange", () => {
+      }), a(this, "onStoreChange", () => {
         this.setState({
           isAuthenticated: s.default.isAuthenticated()
         })

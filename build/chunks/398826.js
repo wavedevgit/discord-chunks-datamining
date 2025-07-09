@@ -1,18 +1,18 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  A: () => a,
+  A: () => l,
   h: () => o
 });
 var i = n(544891),
   r = n(570140),
   s = n(809206),
-  l = n(981631);
+  a = n(981631);
 
-function a() {
+function l() {
   return r.Z.dispatch({
     type: "LOAD_DATA_HARVEST_TYPE_START"
   }), i.tn.get({
-    url: l.ANM.USER_HARVEST,
+    url: a.ANM.USER_HARVEST,
     oldFormErrors: !0,
     rejectWithError: !1
   }).then(e => {

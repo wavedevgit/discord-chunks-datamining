@@ -34,10 +34,10 @@ var r = n(255367),
   w = n(831506),
   Z = n(77498),
   R = n(283595),
-  k = n(293273),
-  L = n(158776),
-  D = n(885110),
-  M = n(594174),
+  L = n(293273),
+  D = n(158776),
+  M = n(885110),
+  k = n(594174),
   U = n(417363),
   F = n(768581),
   B = n(823379),
@@ -297,14 +297,14 @@ function em(e) {
     onView: A,
     partyStatusElement: w,
     presenceActivity: R
-  } = e, k = (0, m.ye)(j), {
-    bot: L
-  } = j, D = F.ZP.getApplicationIconURL({
+  } = e, L = (0, m.ye)(j), {
+    bot: D
+  } = j, M = F.ZP.getApplicationIconURL({
     id: j.id,
     icon: j.icon,
-    bot: L
+    bot: D
   }), {
-    staticBannerSrc: M,
+    staticBannerSrc: k,
     videoBannerSrc: U,
     bannerAspectRatio: B
   } = (0, E.E)(j), {
@@ -363,7 +363,7 @@ function em(e) {
     currentUserId: S,
     message: P,
     application: j,
-    isEmbeddedApplication: k,
+    isEmbeddedApplication: L,
     isGameLaunchable: en
   }), eE = !(null == R || !(0, Q.Z)(R, P, j.id) || !(0, q.Z)(R, et.xjy.SYNC) || !H.isPlatformEmbedded || ec(T, R)), ey = ec(T, R), eC = function(e, t, n, r) {
     var i;
@@ -435,10 +435,10 @@ function em(e) {
         applicationId: $.id
       })
     }
-  } : null != eh ? eh : void 0, [j.id, en, eu, null == $ ? void 0 : $.id, eh]), eO = (0, y.G)(j), ej = i.useMemo(() => null != ee ? ee : null != el ? el : null != eO && k ? eO : void 0, [k, ee, el, eO]), eI = i.useMemo(() => {
+  } : null != eh ? eh : void 0, [j.id, en, eu, null == $ ? void 0 : $.id, eh]), eO = (0, y.G)(j), ej = i.useMemo(() => null != ee ? ee : null != el ? el : null != eO && L ? eO : void 0, [L, ee, el, eO]), eI = i.useMemo(() => {
     let e = [];
     return K || null == ex ? K && null != ev && e.push(ev) : e.push(ex), e
-  }, [ev, K, ex]), eS = (0, W.dQ)(j.name, null == (t = P.activity) ? void 0 : t.type), eT = k ? (0, _.H)({
+  }, [ev, K, ex]), eS = (0, W.dQ)(j.name, null == (t = P.activity) ? void 0 : t.type), eT = L ? (0, _.H)({
     applicationId: j.id,
     referrerId: S
   }) : void 0, eN = (0, O.N)(j.id).some(e => (0, x.ig)(e) === l.o.GLOBAL) ? (0, r.jsxs)(r.Fragment, {
@@ -460,10 +460,10 @@ function em(e) {
     return (0, r.jsx)(g.W, {
       header: eS,
       title: j.name,
-      staticBannerSrc: M,
+      staticBannerSrc: k,
       videoBannerSrc: U,
       bannerAspectRatio: B,
-      iconSrc: null != D ? D : void 0,
+      iconSrc: null != M ? M : void 0,
       embedUrl: eT,
       infoUrl: G.Z.getArticleURL(et.BhN.RICH_PRESENCE_INTRODUCTION),
       info: e,
@@ -505,10 +505,10 @@ function em(e) {
   return (0, r.jsx)(g.W, {
     header: eS,
     title: j.name,
-    staticBannerSrc: M,
+    staticBannerSrc: k,
     videoBannerSrc: U,
     bannerAspectRatio: B,
-    iconSrc: null != D ? D : void 0,
+    iconSrc: null != M ? M : void 0,
     embedUrl: eT,
     infoUrl: G.Z.getArticleURL(et.BhN.RICH_PRESENCE_INTRODUCTION),
     info: eR,
@@ -532,15 +532,15 @@ function ef(e) {
     message: c,
     hideParty: u,
     onView: d
-  } = e, p = (0, b.O)(a), m = (0, o.e7)([P.default], () => P.default.getId()), f = (0, o.e7)([L.Z], () => {
-    if (null == c.application) return L.Z.findActivity(c.author.id, e => e.type === et.IIU.LISTENING);
+  } = e, p = (0, b.O)(a), m = (0, o.e7)([P.default], () => P.default.getId()), f = (0, o.e7)([D.Z], () => {
+    if (null == c.application) return D.Z.findActivity(c.author.id, e => e.type === et.IIU.LISTENING);
     {
       let e = c.author.id;
-      return ea(c) && (e = e === m && s.isPrivate() ? s.getRecipientId() : m), L.Z.getApplicationActivity(e, c.application.id)
+      return ea(c) && (e = e === m && s.isPrivate() ? s.getRecipientId() : m), D.Z.getApplicationActivity(e, c.application.id)
     }
-  }, [c, s, m]), _ = (0, o.e7)([k.Z, D.Z], () => {
+  }, [c, s, m]), _ = (0, o.e7)([L.Z, M.Z], () => {
     var e;
-    return null != (e = k.Z.getApplicationActivity(p.id)) ? e : D.Z.getApplicationActivity(p.id, !0)
+    return null != (e = L.Z.getApplicationActivity(p.id)) ? e : M.Z.getApplicationActivity(p.id, !0)
   }, [p.id]), g = (0, o.Wu)([w.Z], () => {
     var e;
     return null == f || null == f.party ? [] : Array.from(null != (e = w.Z.getParty(f.party.id)) ? e : [])
@@ -548,7 +548,7 @@ function ef(e) {
     partySize: h,
     maxPartySize: E
   } = (0, X._)(f), y = i.useMemo(() => g.map(e => {
-    let t = M.default.getUser(e);
+    let t = k.default.getUser(e);
     return null != t ? t : $.ag
   }), [g]), C = (0, en.Ps)(null == f || null == (t = f.party) ? void 0 : t.id) || p.id === N.r9.id, x = (0, r.jsx)(el, {
     partyMembers: y,

@@ -1,25 +1,25 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => a
+  Z: () => l
 }), n(388685), n(781311), n(35282);
 var i = n(73800),
   r = n(304445),
   s = n(997383);
-let l = [];
+let a = [];
 
-function a(e) {
+function l(e) {
   let {
     visible: t,
     autocompleterResultTypes: n,
-    autocompleterOptions: a,
+    autocompleterOptions: l,
     autocompleterBeforeCreateSearchContext: o
-  } = e, [c, d] = i.useState(""), [u, m] = i.useState(l), p = i.useCallback((e, t) => {
-    "" === (t = t.trim()).trim() ? m(l) : m(e)
+  } = e, [c, d] = i.useState(""), [u, m] = i.useState(a), p = i.useCallback((e, t) => {
+    "" === (t = t.trim()).trim() ? m(a) : m(e)
   }, []);
   i.useEffect(() => r.Z.addRouteChangeListener(() => {
     d("")
   }), []);
-  let [g] = i.useState(() => new s.Z(p, n, void 0, a));
+  let [g] = i.useState(() => new s.Z(p, n, void 0, l));
   return i.useEffect(() => {
     t ? (null == o || o(g), g.createSearchContext()) : (g.clean(), d(""))
   }, [t, g, o]), {

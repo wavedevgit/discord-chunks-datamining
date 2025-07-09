@@ -76,9 +76,9 @@ function y(e) {
     fps: E,
     sourceType: P,
     audioSourceId: R
-  }, k] = (0, m.E_)(), A = (0, o.zX)({
+  }, A] = (0, m.E_)(), k = (0, o.zX)({
     location: "StreamOptionsMenu"
-  }), M = (0, f.Z)(), [L, D] = null != (n = (0, p.Z)(x.tI.PRESET_VIDEO)) ? n : [x.LY.RESOLUTION_720, x.ws.FPS_30], [B, G] = null != (v = (0, p.Z)(x.tI.PRESET_DOCUMENTS)) ? v : [x.LY.RESOLUTION_SOURCE, x.ws.FPS_15];
+  }), M = (0, f.Z)(), [D, L] = null != (n = (0, p.Z)(x.tI.PRESET_VIDEO)) ? n : [x.LY.RESOLUTION_720, x.ws.FPS_30], [B, G] = null != (v = (0, p.Z)(x.tI.PRESET_DOCUMENTS)) ? v : [x.LY.RESOLUTION_SOURCE, x.ws.FPS_15];
   return (0, r.jsxs)(l.v2r, {
     "aria-label": _.intl.string(_.t["+1H47u"]),
     navId: "stream-options",
@@ -104,8 +104,8 @@ function y(e) {
             switch (e) {
               case x.tI.PRESET_VIDEO:
                 return _.intl.format(g.default.G5O1Mz, {
-                  resolution: (0, u.M)(L),
-                  frameRate: D
+                  resolution: (0, u.M)(D),
+                  frameRate: L
                 });
               case x.tI.PRESET_DOCUMENTS:
                 return _.intl.format(g.default["8tcFLy"], {
@@ -118,7 +118,7 @@ function y(e) {
                 throw Error("No case implemented for ".concat(e))
             }
           }(t),
-          action: () => k({
+          action: () => A({
             type: "set_preset",
             preset: t
           })
@@ -148,7 +148,7 @@ function y(e) {
               if (!(0, c.Z)(N, e, E, a.default.getCurrentUser(), M)) return y(), (0, h.E)({
                 analyticsLocation: s.Z.GO_LIVE_MODAL_SETTINGS_SELECTION
               });
-              k({
+              A({
                 type: "set_resolution",
                 resolution: e
               })
@@ -169,7 +169,7 @@ function y(e) {
             if (!(0, c.Z)(N, T, e, a.default.getCurrentUser(), M)) return y(), (0, h.E)({
               analyticsLocation: s.Z.GO_LIVE_MODAL_SETTINGS_SELECTION
             });
-            k({
+            A({
               type: "set_fps",
               fps: e
             })
@@ -180,21 +180,21 @@ function y(e) {
       id: "stream-option-mute",
       checked: I,
       label: _.intl.string(g.default["b0+Ira"]),
-      action: () => k({
+      action: () => A({
         type: "set_mute_audio",
         value: !I
       })
     }), P === i.vA.CAMERA && (0, r.jsx)(l.sNh, {
       id: "device-audio-input",
       label: _.intl.string(g.default.YSdHV1),
-      subtext: null == (t = A.find(e => {
+      subtext: null == (t = k.find(e => {
         let {
           id: t
         } = e;
         return R === t
       })) ? void 0 : t.name,
       subtextLineClamp: 1,
-      children: A.map(e => {
+      children: k.map(e => {
         let {
           id: t,
           name: n
@@ -204,7 +204,7 @@ function y(e) {
           id: "device-audio-input-".concat(t),
           checked: R === t,
           label: n,
-          action: () => k({
+          action: () => A({
             type: "set_audio_source",
             audioSourceId: t
           })
@@ -217,7 +217,7 @@ function y(e) {
         id: "stream-option-share-preview",
         checked: w,
         label: _.intl.string(g.default.H3Qjqa),
-        action: () => k({
+        action: () => A({
           type: "set_hide_preview",
           hidePreview: !w
         })
@@ -225,7 +225,7 @@ function y(e) {
         id: "stream-option-notify",
         checked: Z,
         label: _.intl.string(g.default.SiHtX1),
-        action: () => k({
+        action: () => A({
           type: "set_notify_friends",
           value: !Z
         })

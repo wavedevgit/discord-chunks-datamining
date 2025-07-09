@@ -4,8 +4,8 @@ e.d(n, {
 });
 var i = e(255367),
   l = e(73800),
-  s = e(120356),
-  a = e.n(s),
+  a = e(120356),
+  s = e.n(a),
   r = e(481060),
   d = e(600164),
   c = e(539379),
@@ -18,15 +18,15 @@ function u(t) {
   let {
     guildTemplate: n,
     onClick: e,
-    autoFocus: s
-  } = t, a = l.useCallback(() => {
+    autoFocus: a
+  } = t, s = l.useCallback(() => {
     e(n)
   }, [n, e]);
   return (0, i.jsx)(o.Z, {
     icon: c.U[n.id],
     message: n.label,
-    onClick: a,
-    autoFocus: s
+    onClick: s,
+    autoFocus: a
   })
 }
 
@@ -35,7 +35,7 @@ function _(t) {
     className: n,
     isNewUser: e,
     onClose: l,
-    onChooseTemplate: s,
+    onChooseTemplate: a,
     onJoin: c
   } = t, o = (0, m.E)();
   return (0, i.jsxs)(i.Fragment, {
@@ -57,11 +57,11 @@ function _(t) {
         onClick: l
       })]
     }), (0, i.jsxs)(r.hzk, {
-      className: a()(p.templatesList, n),
+      className: s()(p.templatesList, n),
       paddingFix: !1,
       children: [(0, i.jsx)(u, {
         guildTemplate: o[m.l.CREATE],
-        onClick: s,
+        onClick: a,
         autoFocus: !0
       }), (0, i.jsx)(r.Text, {
         className: p.optionHeader,
@@ -70,22 +70,22 @@ function _(t) {
         children: C.intl.string(C.t.JGDkfn)
       }), (0, i.jsx)(u, {
         guildTemplate: o[m.l.GAMING],
-        onClick: s
+        onClick: a
       }), (0, i.jsx)(u, {
         guildTemplate: o[m.l.FRIENDS],
-        onClick: s
+        onClick: a
       }), (0, i.jsx)(u, {
         guildTemplate: o[m.l.STUDY],
-        onClick: s
+        onClick: a
       }), (0, i.jsx)(u, {
         guildTemplate: o[m.l.SCHOOL_CLUB],
-        onClick: s
+        onClick: a
       }), (0, i.jsx)(u, {
         guildTemplate: o[m.l.LOCAL_COMMUNITY],
-        onClick: s
+        onClick: a
       }), (0, i.jsx)(u, {
         guildTemplate: o[m.l.CREATORS],
-        onClick: s
+        onClick: a
       })]
     }), null != c && (0, i.jsxs)(r.mzw, {
       className: p.footer,
@@ -93,11 +93,15 @@ function _(t) {
         variant: "heading-lg/semibold",
         className: p.footerTitle,
         children: C.intl.string(C.t["N+Mi/f"])
-      }), (0, i.jsx)(r.zxk, {
+      }), (0, i.jsx)("div", {
+        "data-button-hoisted-classname-wrapper": !0,
         className: p.footerButton,
-        color: r.zxk.Colors.PRIMARY,
-        onClick: c,
-        children: C.intl.string(C.t.riOUtL)
+        children: (0, i.jsx)(r.zxk, {
+          variant: "secondary",
+          fullWidth: !0,
+          text: C.intl.string(C.t.riOUtL),
+          onClick: c
+        })
       })]
     })]
   })

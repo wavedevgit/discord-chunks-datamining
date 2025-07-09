@@ -1,6 +1,6 @@
 /** Chunk was on 2668 **/
 n.d(t, {
-  default: () => N
+  default: () => E
 }), n(388685), n(781311), n(642613);
 var r = n(255367),
   l = n(73800),
@@ -25,7 +25,7 @@ var r = n(255367),
   C = n(356659),
   P = n(684668);
 
-function k(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,7 +44,7 @@ function k(e) {
   return e
 }
 
-function w(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -57,12 +57,12 @@ function w(e, t) {
   }), e
 }
 
-function N(e) {
+function E(e) {
   let {
     channelId: t,
     onClose: a,
     transitionState: o
-  } = e, [N, E] = l.useState(""), [S, Z] = l.useState("descending"), [D, L] = l.useState(!0), [I, T] = l.useState(null), M = l.useDeferredValue(N), _ = (0, u.e7)([j.Z], () => j.Z.getClips()), z = (0, u.e7)([j.Z], () => j.Z.getPendingClips()), R = (0, u.e7)([j.Z], () => j.Z.getSettings().storageLocation), A = (0, u.Wu)([j.Z], () => j.Z.getNewClipIds()), {
+  } = e, [E, S] = l.useState(""), [k, Z] = l.useState("descending"), [D, L] = l.useState(!0), [I, T] = l.useState(null), M = l.useDeferredValue(E), _ = (0, u.e7)([j.Z], () => j.Z.getClips()), z = (0, u.e7)([j.Z], () => j.Z.getPendingClips()), R = (0, u.e7)([j.Z], () => j.Z.getSettings().storageLocation), A = (0, u.Wu)([j.Z], () => j.Z.getNewClipIds()), {
     analyticsLocations: H
   } = (0, f.ZP)(m.Z.CLIPS_GALLERY), V = l.useMemo(() => [...z, ..._], [_, z]);
   (0, b.Z)({
@@ -80,7 +80,7 @@ function N(e) {
     if ("" === M.trim()) return !0;
     let t = M.toLowerCase();
     return null != e.name && "" !== e.name && i()(t, e.name.toLowerCase()) || i()(t, e.applicationName.toLowerCase())
-  }).sort((e, t) => "ascending" === S ? g.default.compare(e.id, t.id) : "descending" === S ? g.default.compare(t.id, e.id) : 0).chunk(3).value(), [V, M, S]);
+  }).sort((e, t) => "ascending" === k ? g.default.compare(e.id, t.id) : "descending" === k ? g.default.compare(t.id, e.id) : 0).chunk(3).value(), [V, M, k]);
   l.useEffect(() => {
     !async function() {
       L(!0);
@@ -96,7 +96,7 @@ function N(e) {
         let {
           default: l
         } = await n.e("61526").then(n.bind(n, 22989));
-        return n => (0, r.jsx)(l, w(k({}, n), {
+        return n => (0, r.jsx)(l, N(w({}, n), {
           channelId: t,
           clip: e
         }))
@@ -115,7 +115,7 @@ function N(e) {
         let {
           default: l
         } = await n.e("15915").then(n.bind(n, 799677));
-        return n => (0, r.jsx)(l, w(k({
+        return n => (0, r.jsx)(l, N(w({
           clip: e
         }, n), {
           onBeforeDelete: t,
@@ -168,9 +168,9 @@ function N(e) {
       value: H,
       children: [(0, r.jsx)(O.Z, {
         onClose: a,
-        filterQuery: N,
-        setFilterQuery: E,
-        sortOrder: S,
+        filterQuery: E,
+        setFilterQuery: S,
+        sortOrder: k,
         setSortOrder: Z
       }), U]
     })

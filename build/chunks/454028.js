@@ -1,24 +1,24 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  V: () => a
+  V: () => l
 });
 var i = n(255367);
 n(73800);
 var r = n(120356),
   s = n.n(r),
-  l = n(669546);
+  a = n(669546);
 
-function a(e) {
+function l(e) {
   let {
     asset: t,
     size: n = "md",
     className: r
-  } = e, a = s()(l.asset, {
-    [l.assetPlaceholder]: null == t && !1,
-    [l["asset--".concat(n)]]: null != n
+  } = e, l = s()(a.asset, {
+    [a.assetPlaceholder]: null == t && !1,
+    [a["asset--".concat(n)]]: null != n
   }, r);
   return (0, i.jsx)("div", {
-    className: a,
+    className: l,
     children: null != t ? t : null
   })
 }

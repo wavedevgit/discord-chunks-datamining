@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(255367),
   r = n(73800),
   s = n(120356),
-  l = n.n(s),
-  a = n(481060),
+  a = n.n(s),
+  l = n(481060),
   o = n(572995),
   c = n(42373),
   d = n(388032),
@@ -43,8 +43,8 @@ function p(e) {
     startLeftAligned: g = !1
   } = e;
   return (0, i.jsxs)("div", {
-    className: l()(u.boxBackdrop, t),
-    children: [(0, i.jsx)(a.X6q, {
+    className: a()(u.boxBackdrop, t),
+    children: [(0, i.jsx)(l.X6q, {
       className: u.bentoHeader,
       variant: "display-md",
       color: "header-primary",
@@ -65,22 +65,22 @@ function p(e) {
         }
         return (0, i.jsx)(i.Fragment, {
           children: e.map(e => {
-            var r, l;
+            var r, a;
             return (0, i.jsx)(c.Z, (r = m({
               index: t + +!!g
-            }, e), l = l = {
+            }, e), a = a = {
               size: n,
               shouldLoadVideo: s,
               isReducedMotion: d
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {
                 var i = Object.getOwnPropertySymbols(e);
                 n.push.apply(n, i)
               }
               return n
-            })(Object(l)).forEach(function(e) {
-              Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(l, e))
+            })(Object(a)).forEach(function(e) {
+              Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(a, e))
             }), r), e.name)
           })
         })

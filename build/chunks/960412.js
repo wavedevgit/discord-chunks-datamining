@@ -7,12 +7,12 @@ n.d(t, {
 var i = n(990547),
   r = n(283693),
   s = n(570140),
-  l = n(573261),
-  a = n(930441),
+  a = n(573261),
+  l = n(930441),
   o = n(981631);
 async function c() {
   try {
-    let e = await l.Z.get({
+    let e = await a.Z.get({
       url: o.ANM.EMAIL_SETTINGS,
       trackedActionData: {
         event: i.NetworkActionNames.EMAIL_SETTINGS_FETCH,
@@ -44,7 +44,7 @@ async function d(e, t) {
     }
   });
   try {
-    let n = await l.Z.patch({
+    let n = await a.Z.patch({
       url: o.ANM.EMAIL_SETTINGS,
       body: {
         settings: {
@@ -73,7 +73,7 @@ async function d(e, t) {
   }
 }
 async function u() {
-  let e = a.M0.reduce((e, t) => {
+  let e = l.M0.reduce((e, t) => {
     var n, i;
     return n = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -110,7 +110,7 @@ async function u() {
     updates: e
   });
   try {
-    let t = await l.Z.patch({
+    let t = await a.Z.patch({
       url: o.ANM.EMAIL_SETTINGS,
       body: {
         settings: {

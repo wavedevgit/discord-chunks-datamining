@@ -1,11 +1,11 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  h: () => l
+  h: () => a
 });
 var i = n(416867),
   r = n(549631),
   s = n(388032);
-let l = () => {
+let a = () => {
   (0, i.B)({
     title: s.intl.string(s.t.oPV2c3),
     body: s.intl.string(s.t.DdRizc),

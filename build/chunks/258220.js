@@ -104,17 +104,17 @@ function g(e) {
           children: p.intl.string(p.t["5E9SBw"])
         })
       }), (0, r.jsx)(l.zxk, {
-        color: l.zxk.Colors.PRIMARY,
-        onClick: I,
-        children: p.intl.string(p.t["Ibf5/v"])
+        variant: "secondary",
+        text: p.intl.string(p.t["Ibf5/v"]),
+        onClick: I
       }), (0, r.jsx)(l.zxk, {
-        color: l.zxk.Colors.BRAND,
+        variant: "primary",
+        text: p.intl.string(p.t["/wlDqq"]),
         onClick: () => {
           c.default.track(d.rMx.ACTIVITY_ENABLE_HARDWARE_ACCELERATION, {
             application_id: m
           }), u.ZP.setEnableHardwareAcceleration(!0)
-        },
-        children: p.intl.string(p.t["/wlDqq"])
+        }
       })]
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

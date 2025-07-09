@@ -9,8 +9,8 @@ var i = e(19780),
   l = e(700785),
   a = e(427679),
   c = e(157925),
-  o = e(981631),
-  s = e(71080),
+  s = e(981631),
+  o = e(71080),
   d = e(388032);
 
 function u(t, n, e, i) {
@@ -27,14 +27,14 @@ function u(t, n, e, i) {
 
 function _(t, n) {
   switch (t) {
-    case s.aC.OWNER:
+    case o.aC.OWNER:
       return d.intl.string(d.t.icuNBA);
-    case s.aC.ADMINISTRATOR:
+    case o.aC.ADMINISTRATOR:
       return d.intl.string(d.t.eTmN5e);
-    case s.aC.MEMBER:
-    case s.aC.ROLE:
+    case o.aC.MEMBER:
+    case o.aC.ROLE:
       return n ? d.intl.string(d.t.Hw3XW1) : d.intl.string(d.t.YieyPj);
-    case s.aC.EMPTY_STATE:
+    case o.aC.EMPTY_STATE:
   }
   return null
 }
@@ -46,7 +46,7 @@ function h(t) {
     guild_id: t.guild_id,
     topic: null == n ? void 0 : n.topic,
     media_session_id: i.Z.getMediaSessionId(),
-    request_to_speak_state: l.Uu(o.Plq.REQUEST_TO_SPEAK, t) ? c.BM.EVERYONE : c.BM.NO_ONE,
+    request_to_speak_state: l.Uu(s.Plq.REQUEST_TO_SPEAK, t) ? c.BM.EVERYONE : c.BM.NO_ONE,
     stage_instance_id: null == n ? void 0 : n.id
   }
 }

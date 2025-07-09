@@ -1,18 +1,18 @@
 /** Chunk was on 80144 **/
 t.d(n, {
   Cg: () => I,
-  Cp: () => M,
+  Cp: () => P,
   Cs: () => b,
   EY: () => T,
   I5: () => m,
   JQ: () => R,
   RY: () => S,
   Sv: () => x,
-  TX: () => k,
+  TX: () => M,
   ZW: () => p,
   bK: () => A,
   n0: () => L,
-  o6: () => P,
+  o6: () => f,
   oE: () => O,
   qS: () => h,
   s: () => C,
@@ -75,6 +75,6 @@ let R = {
 };
 var h = ((a = {})[a.USER = 1] = "USER", a[a.GUILD_OWNER = 2] = "GUILD_OWNER", a[a.GUILD_MEMBER = 3] = "GUILD_MEMBER", a),
   O = ((c = {}).LOADING = "loading", c.ERROR = "error", c.SUCCESS = "success", c.FAILURE = "failure", c.NONE = "none", c);
-let k = 2e3,
-  M = 15e3,
-  P = 5
+let M = 2e3,
+  P = 15e3,
+  f = 5

@@ -1,6 +1,6 @@
 /** Chunk was on 83976 **/
 n.d(t, {
-  Z: () => k
+  Z: () => L
 }), n(388685);
 var r = n(255367),
   l = n(73800),
@@ -114,10 +114,10 @@ let P = (0, u.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
       {
         location: M
       } = (0, p.O)(),
-      k = (0, s.e7)([h.default], () => h.default.getCurrentUser()),
-      L = u && !S.ZP.isPremium(k, Z.p9.TIER_1) && !S.ZP.canStreamQuality(S.ZP.StreamQuality.MID, k),
+      L = (0, s.e7)([h.default], () => h.default.getCurrentUser()),
+      k = u && !S.ZP.isPremium(L, Z.p9.TIER_1) && !S.ZP.canStreamQuality(S.ZP.StreamQuality.MID, L),
       U = l.useCallback(() => {
-        L && D && (0, f.ZDy)(async () => {
+        k && D && (0, f.ZDy)(async () => {
           let {
             default: e
           } = await n.e("28479").then(n.bind(n, 78865));
@@ -125,7 +125,7 @@ let P = (0, u.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
             analyticsSource: M
           }))
         })
-      }, [L, D, M]);
+      }, [k, D, M]);
     if (l.useEffect(() => {
         !P && D && (v.default.track(y.rMx.PREMIUM_UPSELL_VIEWED, {
           type: Z.cd.STREAM_QUALITY_INDICATOR,
@@ -141,7 +141,7 @@ let P = (0, u.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
       children: e => (0, r.jsxs)(f.P3F, w(I({}, e), {
         onClick: U,
         className: a()(_.qualityIndicator, E, g.eE[d], T ? _.qualityIndicatorLowQuality : _.qualityIndicatorFullQuality, {
-          [_.clickable]: L && D
+          [_.clickable]: k && D
         }),
         children: [D ? (0, r.jsx)(f.SrA, {
           size: "md",
@@ -164,7 +164,7 @@ let P = (0, u.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
       shape: d
     })
   },
-  k = e => {
+  L = e => {
     let {
       participant: t,
       showQuality: n,

@@ -1,5 +1,6 @@
-/** Chunk was on 89795 **/
-n.r(e.exports = {
+/** Chunk was on web.js **/
+"use strict";
+var r = {
   textButton: "textButton__98277",
   text: "text__98277",
   primary: "primary__98277",
@@ -7,4 +8,5 @@ n.r(e.exports = {
   "always-white": "always-white__98277",
   critical: "critical__98277",
   button: "button__98277"
-})
+};
+n.r(e.exports = r)

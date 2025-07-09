@@ -6,8 +6,8 @@ var i = n(255367);
 n(73800);
 var r = n(120356),
   s = n.n(r),
-  l = n(507274),
-  a = n(930295),
+  a = n(507274),
+  l = n(930295),
   o = n(304789),
   c = n(231338),
   d = n(669546);
@@ -56,7 +56,7 @@ function g(e) {
     hasVideo: f = !1,
     gradientColor: b
   } = e;
-  return (0, i.jsx)(a.H, {
+  return (0, i.jsx)(l.H, {
     targetElementRef: n,
     shouldShow: r,
     onRequestClose: c,
@@ -72,14 +72,14 @@ function g(e) {
     renderPopout: e => null != b ? (0, i.jsx)(o.$, {
       color: b,
       className: d.popoverGradientWrapper,
-      children: (0, i.jsx)(l.V, m(u({}, e), {
+      children: (0, i.jsx)(a.V, m(u({}, e), {
         className: s()(d.popoverContentWithGradient, {
           [d["popover--video"]]: f
         }),
         returnRef: n,
         children: t
       }))
-    }) : (0, i.jsx)(l.V, m(u({}, e), {
+    }) : (0, i.jsx)(a.V, m(u({}, e), {
       className: s()(d.popover, {
         [d["popover--video"]]: f
       }),

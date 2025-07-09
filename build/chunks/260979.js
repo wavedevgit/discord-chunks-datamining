@@ -1,29 +1,29 @@
 /** Chunk was on 19577 **/
 n.d(t, {
-  Z: () => a
+  Z: () => o
 }), n(539854);
 var r = n(255367),
   i = n(73800),
   l = n(965288),
-  o = n(983834);
-let a = i.memo(function(e) {
+  a = n(983834);
+let o = i.memo(function(e) {
   let {
     channel: t,
     participants: n,
     maxTiles: i
   } = e;
   if (0 === n.length) return null;
-  let a = [];
+  let o = [];
   for (let e = 0; e < i; e++)
     if (e < n.length) {
       let i = n[e];
-      a.push((0, r.jsx)(l.Z, {
+      o.push((0, r.jsx)(l.Z, {
         channel: t,
         participant: i
       }, i.id))
-    } else a.push((0, r.jsx)(l.y, {}, e));
+    } else o.push((0, r.jsx)(l.y, {}, e));
   return (0, r.jsx)("div", {
-    className: o.participants,
-    children: a
+    className: a.participants,
+    children: o
   })
 })

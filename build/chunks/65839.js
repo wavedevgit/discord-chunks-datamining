@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  o = n.n(l),
-  a = n(481060),
+  a = n.n(l),
+  o = n(481060),
   s = n(393238),
   c = n(400251),
   u = n(75666),
@@ -35,18 +35,18 @@ let g = e => {
       }), (0, r.jsx)("div", {
         className: h.headerContentWrapper,
         children: (0, r.jsxs)("div", {
-          className: o()(h.headerContent, {
+          className: a()(h.headerContent, {
             [h.headerContentSmall]: p
           }),
-          children: [(0, r.jsx)(a.X6q, {
+          children: [(0, r.jsx)(o.X6q, {
             variant: "heading-xl/semibold",
             className: h.searchTitle,
             children: d.intl.string(d.t.IT7qoK)
-          }), (0, r.jsx)(a.Text, {
+          }), (0, r.jsx)(o.Text, {
             variant: "text-md/normal",
             className: h.searchSubtitle,
             children: d.intl.string(d.t["5PoYtr"])
-          }), (0, r.jsx)(a.Rj2, {
+          }), (0, r.jsx)(o.Rj2, {
             searchTerm: t,
             className: h.searchBox,
             inputClassName: h.searchBoxInput,
@@ -68,7 +68,7 @@ let g = e => {
       channel: t,
       directoryEntries: n,
       handleCreateOrAddGuild: l,
-      searchQuery: o,
+      searchQuery: a,
       setSearchQuery: s,
       handleClearSearch: f,
       handleSearchKeyPress: m,
@@ -80,16 +80,16 @@ let g = e => {
     } = e;
     return (0, r.jsx)("div", {
       className: p.pageContainer,
-      children: (0, r.jsxs)(a.yWw, {
+      children: (0, r.jsxs)(o.yWw, {
         className: p.scroller,
         children: [(0, r.jsx)(g, {
-          searchQuery: o,
+          searchQuery: a,
           setSearchQuery: s,
           handleClearSearch: f,
           handleSearchKeyPress: m
-        }), (0, r.jsx)(a.h21, {
+        }), (0, r.jsx)(o.h21, {
           orientation: "horizontal",
-          children: (0, r.jsxs)(a.njP, {
+          children: (0, r.jsxs)(o.njP, {
             className: h.tabBar,
             type: "top",
             look: "brand",
@@ -97,7 +97,7 @@ let g = e => {
             onItemSelect: e => {
               _(e)
             },
-            children: [(0, r.jsx)(a.njP.Item, {
+            children: [(0, r.jsx)(o.njP.Item, {
               className: h.tabBarItem,
               id: u.AR.ALL,
               children: "".concat(d.intl.string(d.t.hEAa2d), " (").concat(C, ")")
@@ -106,17 +106,17 @@ let g = e => {
                 value: t,
                 label: n
               } = e;
-              return (0, r.jsx)(a.njP.Item, {
+              return (0, r.jsx)(o.njP.Item, {
                 className: h.tabBarItem,
                 id: t,
                 children: "".concat(n, " ").concat(null != y[t] ? "(".concat(y[t], ")") : "")
               }, t)
             })]
           })
-        }), x && null == n ? (0, r.jsx)(a.$jN, {
+        }), x && null == n ? (0, r.jsx)(o.$jN, {
           className: p.spinner
         }) : null == n ? void 0 : n.map((e, t) => (0, r.jsxs)(i.Fragment, {
-          children: [void 0 !== e.header ? (0, r.jsx)(a.Text, {
+          children: [void 0 !== e.header ? (0, r.jsx)(o.Text, {
             variant: "text-md/semibold",
             className: h.sectionHeader,
             children: e.header

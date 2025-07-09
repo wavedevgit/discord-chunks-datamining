@@ -63,8 +63,8 @@ function x(e) {
     initialSelectedDestinations: x,
     forwardOptions: P,
     onClose: T,
-    onRequestSent: L
-  } = e, N = function(e, t) {
+    onRequestSent: N
+  } = e, L = function(e, t) {
     if (null == e) return {};
     var n, l, r = function(e, t) {
       if (null == e) return {};
@@ -82,10 +82,10 @@ function x(e) {
   let {
     channel_id: j,
     id: Z
-  } = t, w = r.useMemo(() => (0, u.dL)(j), [j]), [D, R] = r.useState(!1), k = (0, a.e7)([h.Z], () => {
+  } = t, w = r.useMemo(() => (0, u.dL)(j), [j]), [D, R] = r.useState(!1), F = (0, a.e7)([h.Z], () => {
     var e;
     return null != (e = h.Z.getMessage(t.channel_id, t.id)) ? e : t
-  }, [t]), F = (0, a.e7)([f.Z], () => f.Z.getChannel(j), [j]), M = (0, m.ZF)(), G = (0, m.mh)(), U = r.useRef(0), H = r.useRef(0), [W, Q] = r.useState(x), z = W.length, V = z >= I.G, [B, q] = r.useState(""), {
+  }, [t]), k = (0, a.e7)([f.Z], () => f.Z.getChannel(j), [j]), G = (0, m.ZF)(), M = (0, m.mh)(), U = r.useRef(0), H = r.useRef(0), [W, Q] = r.useState(x), z = W.length, V = z >= I.G, [B, q] = r.useState(""), {
     results: K,
     updateSearchText: X
   } = (0, d.s)({
@@ -95,8 +95,8 @@ function x(e) {
   }), Y = r.useCallback(e => {
     q(e), X(e)
   }, [X]), J = r.useCallback(e => {
-    Y(e), H.current += 1, "" !== e && G(j, Z)
-  }, [j, Z, G, Y]), $ = r.useCallback(() => {
+    Y(e), H.current += 1, "" !== e && M(j, Z)
+  }, [j, Z, M, Y]), $ = r.useCallback(() => {
     Y("")
   }, [Y]), ee = r.useCallback(() => {
     (0, m.sF)({
@@ -119,7 +119,7 @@ function x(e) {
       trailing: !1
     }), []),
     el = r.useCallback(e => {
-      M(j, Z, "" !== B), Q(t => {
+      G(j, Z, "" !== B), Q(t => {
         let n = t.findIndex(t => {
           let {
             type: n,
@@ -131,7 +131,7 @@ function x(e) {
         let l = [...t];
         return l.splice(n, 1), U.current += 1, l
       })
-    }, [j, V, Z, B, Y, M]),
+    }, [j, V, Z, B, Y, G]),
     er = r.useCallback(async function(e) {
       var r;
       let {
@@ -153,7 +153,7 @@ function x(e) {
             }))
           })
         })) return void R(!1);
-      d && (0, y.mc)(), null == L || L(), a && (await o.Z.fetchMessages({
+      d && (0, y.mc)(), null == N || N(), a && (await o.Z.fetchMessages({
         channelId: b[0]
       }), (0, c.Kh)(b[0], {
         openTextInVoiceIfVoiceChannel: !0
@@ -198,7 +198,7 @@ function x(e) {
         failedDestinations: A,
         forwardOptions: P
       })
-    }, [j, P, Z, t, L, en]),
+    }, [j, P, Z, t, N, en]),
     ei = r.useCallback(e => {
       er(W, {
         withMessage: e,
@@ -206,14 +206,14 @@ function x(e) {
         closeAfterSend: !0
       })
     }, [er, W]);
-  if (null == k || null == F) return null;
+  if (null == F || null == k) return null;
   let ea = K.length > 0 ? (0, l.jsx)(E.F, {
       paddingBottom: 16,
       paddingTop: 16,
       rowData: K,
       rowMode: E.G.TOGGLE,
-      message: k,
-      originChannel: F,
+      message: F,
+      originChannel: k,
       handleToggleDestination: el,
       selectedDestinations: W,
       disableSelection: V
@@ -235,7 +235,7 @@ function x(e) {
   return (0, l.jsxs)(s.Y0X, C(v({
     className: O.modal,
     "aria-label": S.intl.string(S.t["+SkRRk"])
-  }, N), {
+  }, L), {
     parentComponent: "ForwardModal",
     children: [(0, l.jsxs)(s.xBx, {
       className: O.header,
@@ -275,7 +275,7 @@ function x(e) {
         autoFocus: !0
       })]
     }), ea, (0, l.jsx)(b.n, {
-      message: k,
+      message: F,
       forwardOptions: P,
       sendLabel: es,
       canSend: z > 0,

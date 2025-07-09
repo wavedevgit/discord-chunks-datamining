@@ -1,7 +1,7 @@
 /** Chunk was on 86915 **/
 "use strict";
 n.r(t), n.d(t, {
-  default: () => M
+  default: () => k
 });
 var i = n(255367),
   l = n(73800),
@@ -37,7 +37,7 @@ var i = n(255367),
   A = n(388032),
   L = n(511740);
 
-function k(e) {
+function D(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null,
     n = arguments.length > 2 ? arguments[2] : void 0;
   h.ZP.trackWithMetadata(P.rMx.SETTINGS_PANE_VIEWED, {
@@ -47,9 +47,9 @@ function k(e) {
     location: n
   })
 }
-class D extends l.PureComponent {
+class M extends l.PureComponent {
   componentDidMount() {
-    k(this.props.section, null, this.props.analyticsLocation)
+    D(this.props.section, null, this.props.analyticsLocation)
   }
   componentWillUnmount() {
     a.Z.wait(() => (0, o.xv)())
@@ -66,7 +66,7 @@ class D extends l.PureComponent {
       canManageWebhooks: a,
       canUnlinkChannel: o
     } = this.props;
-    (s || r || a || o) && (i !== P.QZA.CLOSED || i === t) && (r || l !== P.CoT.PERMISSIONS) && (a || o || l !== P.CoT.INTEGRATIONS) ? l !== n && k(l, n): (0, c.xf)()
+    (s || r || a || o) && (i !== P.QZA.CLOSED || i === t) && (r || l !== P.CoT.PERMISSIONS) && (a || o || l !== P.CoT.INTEGRATIONS) ? l !== n && D(l, n): (0, c.xf)()
   }
   render() {
     let {
@@ -183,7 +183,7 @@ class D extends l.PureComponent {
   }
 }
 
-function M() {
+function k() {
   let {
     channel: e,
     analyticsLocation: t
@@ -198,7 +198,7 @@ function M() {
     canManageWebhooks: null != e && S.Z.can(P.Plq.MANAGE_WEBHOOKS, e),
     canUnlinkChannel: (0, f.C)(e, S.Z)
   })), g = (0, r.e7)([N.Z], () => N.Z.getChannel(null == e ? void 0 : e.parent_id));
-  return (0, i.jsx)(D, {
+  return (0, i.jsx)(M, {
     channel: e,
     category: g,
     canManageChannels: (null == e ? void 0 : e.isThread()) ? o : d,

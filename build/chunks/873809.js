@@ -1,59 +1,62 @@
 /** Chunk was on 67753 **/
-n.d(s, {
+n.d(t, {
   default: () => d
 }), n(388685);
-var t = n(255367),
-  i = n(73800),
-  r = n(481060),
+var s = n(255367),
+  r = n(73800),
+  i = n(481060),
   a = n(388032),
   l = n(78349);
 
-function o(e, s, n) {
-  return s in e ? Object.defineProperty(e, s, {
+function o(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
     configurable: !0,
     writable: !0
-  }) : e[s] = n, e
+  }) : e[t] = n, e
 }
-class c extends i.PureComponent {
+class c extends r.PureComponent {
   render() {
     let {
       transitionState: e,
-      header: s,
-      body: i,
+      header: t,
+      body: r,
       confirmText: o
     } = this.props;
-    return (0, t.jsxs)(r.Y0X, {
+    return (0, s.jsxs)(i.Y0X, {
       transitionState: e,
-      "aria-label": s,
+      "aria-label": t,
       parentComponent: "VideoDevicesWarningModal",
-      children: [(0, t.jsxs)(r.hzk, {
+      children: [(0, s.jsxs)(i.hzk, {
         className: l.content,
-        children: [(0, t.jsx)("img", {
+        children: [(0, s.jsx)("img", {
           src: n(568533),
-          alt: s
-        }), (0, t.jsx)(r.X6q, {
+          alt: t
+        }), (0, s.jsx)(i.X6q, {
           variant: "heading-xl/semibold",
           className: l.header,
-          children: s
-        }), (0, t.jsx)(r.Text, {
+          children: t
+        }), (0, s.jsx)(i.Text, {
           variant: "text-md/normal",
-          children: i
+          children: r
         })]
-      }), (0, t.jsxs)(r.mzw, {
+      }), (0, s.jsx)(i.mzw, {
         className: l.footer,
-        children: [(0, t.jsx)(r.zxk, {
-          size: r.zxk.Sizes.SMALL,
-          onClick: this.handleConfirm,
-          children: o
-        }), (0, t.jsx)(r.zxk, {
-          size: r.zxk.Sizes.SMALL,
-          look: r.zxk.Looks.LINK,
-          color: r.zxk.Colors.PRIMARY,
-          onClick: this.handleDismiss,
-          children: a.intl.string(a.t.cpT0Cg)
-        })]
+        children: (0, s.jsxs)(i.hE2, {
+          direction: "horizontal-reverse",
+          children: [(0, s.jsx)(i.zxk, {
+            variant: "primary",
+            size: "sm",
+            text: o,
+            onClick: this.handleConfirm
+          }), (0, s.jsx)(i.zxk, {
+            variant: "secondary",
+            size: "sm",
+            text: a.intl.string(a.t.cpT0Cg),
+            onClick: this.handleDismiss
+          })]
+        })
       })]
     })
   }
@@ -61,15 +64,15 @@ class c extends i.PureComponent {
     super(...e), o(this, "handleConfirm", () => {
       let {
         onConfirm: e,
-        onClose: s
+        onClose: t
       } = this.props;
-      null == s || s(), null == e || e()
+      null == t || t(), null == e || e()
     }), o(this, "handleDismiss", () => {
       let {
         onDismiss: e,
-        onClose: s
+        onClose: t
       } = this.props;
-      null == s || s(), null == e || e()
+      null == t || t(), null == e || e()
     })
   }
 }

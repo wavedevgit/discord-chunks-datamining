@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(255367),
   r = n(73800),
   s = n(823379),
-  l = n(106976),
-  a = n(270144),
+  a = n(106976),
+  l = n(270144),
   o = n(301935),
   c = n(630656),
   d = n(10970),
@@ -60,27 +60,27 @@ function g(e) {
     h(m({
       route: c.j.SWITCH_APP_PLANS
     }, e)), n(u.intl.string(u.t.VFqtkJ), b)
-  }, [_, E] = r.useState({});
+  }, [_, j] = r.useState({});
   r.useEffect(() => {
     for (let n of t) {
       var e;
       let t = null == (e = n.items[0]) ? void 0 : e.planId;
-      null != t && (E(e => p(m({}, e), {
+      null != t && (j(e => p(m({}, e), {
         [n.id]: o.G.LOADING
-      })), (0, l.vY)(t).then(() => {
-        E(e => p(m({}, e), {
+      })), (0, a.vY)(t).then(() => {
+        j(e => p(m({}, e), {
           [n.id]: o.G.DONE
         }))
       }).catch(() => {
-        E(e => p(m({}, e), {
+        j(e => p(m({}, e), {
           [n.id]: o.G.ERROR
         }))
       }))
     }
   }, [t]);
   let {
-    loadState: j
-  } = (0, a.qz)(), O = j !== a.jd.LOADED;
+    loadState: E
+  } = (0, l.qz)(), O = E !== l.jd.LOADED;
   switch (f) {
     case c.j.HOME:
       return (0, i.jsx)(i.Fragment, {
@@ -96,7 +96,7 @@ function g(e) {
     case c.j.SWITCH_APP_PLANS:
       let {
         route: C
-      } = g, S = function(e, t) {
+      } = g, v = function(e, t) {
         if (null == e) return {};
         var n, i, r = function(e, t) {
           if (null == e) return {};
@@ -111,7 +111,7 @@ function g(e) {
         }
         return r
       }(g, ["route"]);
-      return (0, i.jsx)(d.Z, p(m({}, S), {
+      return (0, i.jsx)(d.Z, p(m({}, v), {
         navigateToHome: b
       }));
     default:

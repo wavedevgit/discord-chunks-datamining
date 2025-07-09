@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(255367),
   r = n(73800),
   s = n(515149),
-  l = n(481060),
-  a = n(832840),
+  a = n(481060),
+  l = n(832840),
   o = n(200951),
   c = n(388032);
 
@@ -18,7 +18,7 @@ function d() {
       e({})
     })
   }, []), (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(l.PhF, {
+    children: [(0, i.jsx)(a.PhF, {
       options: [{
         value: "en-US",
         label: "English"
@@ -29,39 +29,39 @@ function d() {
       isSelected: e => e === c.intl.currentLocale,
       select: e => c.intl.setLocale(e),
       serialize: e => e
-    }), (0, i.jsx)(l.LZC, {
+    }), (0, i.jsx)(a.LZC, {
       size: 32
-    }), (0, i.jsxs)(l.hjN, {
-      tag: l.RB0.H1,
-      children: [(0, i.jsx)(l.Text, {
+    }), (0, i.jsxs)(a.hjN, {
+      tag: a.RB0.H1,
+      children: [(0, i.jsx)(a.Text, {
         tag: "div",
         variant: "heading-lg/bold",
         children: c.intl.format(o.Z.JJ0wpK, {})
-      }), (0, i.jsx)(l.Text, {
+      }), (0, i.jsx)(a.Text, {
         tag: "div",
         variant: "text-md/normal",
-        children: c.intl.format(a.Z.swfLzc, {})
-      }), (0, i.jsx)(l.Text, {
+        children: c.intl.format(l.Z.swfLzc, {})
+      }), (0, i.jsx)(a.Text, {
         tag: "div",
         variant: "text-md/normal",
         children: c.intl.format(o.Z["rmps8/"], {})
-      }), (0, i.jsx)(l.Text, {
+      }), (0, i.jsx)(a.Text, {
         tag: "div",
         variant: "text-md/normal",
         children: c.intl.format(o.Z.uczI4u, {
           linkTarget: console.log
         })
-      }), (0, i.jsx)(l.Text, {
+      }), (0, i.jsx)(a.Text, {
         tag: "div",
         variant: "text-md/normal",
         children: c.intl.format(o.Z.rdfRys, {})
-      }), (0, i.jsx)(l.Text, {
+      }), (0, i.jsx)(a.Text, {
         tag: "div",
         variant: "text-md/normal",
         children: c.intl.format(o.Z["Q+eyqq"], {
           count: 1
         })
-      }), (0, i.jsx)(l.Text, {
+      }), (0, i.jsx)(a.Text, {
         tag: "div",
         variant: "text-md/normal",
         children: c.intl.format(o.Z.XOdbAw, {

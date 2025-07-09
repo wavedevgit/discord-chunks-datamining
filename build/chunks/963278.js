@@ -29,12 +29,11 @@ let f = e => {
         variant: "heading-lg/semibold",
         children: t.name
       }), (0, r.jsx)(a.zxk, {
-        color: a.Ttl.PRIMARY,
-        look: a.iLD.FILLED,
-        onClick: () => n("shelf block see all", t.categorySkuId),
-        children: p.intl.formatToPlainString(p.t.bc9RBA, {
+        variant: "secondary",
+        text: p.intl.formatToPlainString(p.t.bc9RBA, {
           category_name: t.name
-        })
+        }),
+        onClick: () => n("shelf block see all", t.categorySkuId)
       })]
     }), (0, r.jsx)("div", {
       className: g.feed,

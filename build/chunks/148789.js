@@ -4,7 +4,7 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  l = n(481060),
+  l = n(755721),
   o = n(298213),
   a = n(388032),
   s = n(884492);
@@ -38,20 +38,20 @@ function c(e) {
   }, [n, t]);
   return (0, r.jsxs)("div", {
     className: s.friendRequestContainer,
-    children: [(0, r.jsx)(l.zxk, {
+    children: [(0, r.jsx)(l.zx, {
       className: s.acceptButton,
-      look: l.zxk.Looks.FILLED,
-      color: l.zxk.Colors.GREEN,
-      size: l.zxk.Sizes.NONE,
+      look: l.zx.Looks.FILLED,
+      color: l.zx.Colors.GREEN,
+      size: l.zx.Sizes.NONE,
       submitting: c,
       disabled: d,
       onClick: f,
       children: a.intl.string(a.t.ZcibdX)
-    }), (0, r.jsx)(l.zxk, {
+    }), (0, r.jsx)(l.zx, {
       className: s.ignoreButton,
-      look: l.zxk.Looks.FILLED,
-      color: l.zxk.Colors.PRIMARY,
-      size: l.zxk.Sizes.NONE,
+      look: l.zx.Looks.FILLED,
+      color: l.zx.Colors.PRIMARY,
+      size: l.zx.Sizes.NONE,
       submitting: d,
       disabled: c,
       onClick: p,

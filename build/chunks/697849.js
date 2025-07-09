@@ -99,13 +99,13 @@ let z = e => {
     onClose: E
   } = e, {
     analyticsLocations: T
-  } = (0, o.ZP)(d.Z.GUILD_EVENT_MODAL), [L, D] = l.useState(I), G = (0, r.e7)([f.ZP], () => f.ZP.getGuildScheduledEvent(n), [n]), z = null == G ? void 0 : G.id, k = null == G ? void 0 : G.guild_id, {
-    guild: A,
-    isMember: R
-  } = (0, v.Z)(k, z), B = (0, c.Z)(t), w = null == G ? void 0 : G.channel_id, H = (0, r.e7)([_.Z], () => _.Z.getChannel(w), [w]), M = (0, s.Dt)(), [X, V] = l.useState(O.fL.EVENT_INFO), F = (0, C.Z)(z, L), Y = (0, h.Z)(k, z, L), [W, {
+  } = (0, o.ZP)(d.Z.GUILD_EVENT_MODAL), [L, D] = l.useState(I), G = (0, r.e7)([f.ZP], () => f.ZP.getGuildScheduledEvent(n), [n]), z = null == G ? void 0 : G.id, A = null == G ? void 0 : G.guild_id, {
+    guild: R,
+    isMember: k
+  } = (0, v.Z)(A, z), B = (0, c.Z)(t), w = null == G ? void 0 : G.channel_id, H = (0, r.e7)([_.Z], () => _.Z.getChannel(w), [w]), M = (0, s.Dt)(), [X, V] = l.useState(O.fL.EVENT_INFO), F = (0, C.Z)(z, L), Y = (0, h.Z)(A, z, L), [W, {
     loading: q,
     error: K
-  }] = (0, p.Z)(() => m.Z.getGuildEventUsers(null == G ? void 0 : G.id, L, k));
+  }] = (0, p.Z)(() => m.Z.getGuildEventUsers(null == G ? void 0 : G.id, L, A));
   l.useEffect(() => {
     null == G ? E() : g.default.track(U.rMx.OPEN_MODAL, {
       type: O.zw,
@@ -118,7 +118,7 @@ let z = e => {
       var e, n;
       let t = 16 * ((null == G ? void 0 : G.recurrence_rule) != null);
       $((null != (n = null == J || null == (e = J.current) ? void 0 : e.offsetHeight) ? n : 0) + t)
-    }, [J, null == G ? void 0 : G.recurrence_rule]), null == G || null == A || !R && !B) return null;
+    }, [J, null == G ? void 0 : G.recurrence_rule]), null == G || null == R || !k && !B) return null;
   let ee = e => {
       e !== X && (e === O.fL.RSVP_LIST && W(), V(e))
     },
@@ -156,7 +156,7 @@ let z = e => {
               id: O.fL.EVENT_INFO,
               children: (0, i.jsx)(N.Z, {
                 guildEvent: G,
-                guild: A,
+                guild: R,
                 channel: H,
                 headerId: M,
                 onClose: E,
@@ -184,8 +184,8 @@ let z = e => {
         children: (0, i.jsx)(P, {
           guildEvent: G,
           isHub: B,
-          isMember: R,
-          guild: A,
+          isMember: k,
+          guild: R,
           channel: H,
           onActionTaken: E,
           recurrenceId: en

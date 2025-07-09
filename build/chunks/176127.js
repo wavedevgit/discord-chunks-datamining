@@ -6,16 +6,16 @@ var r = n(255367);
 n(73800);
 var i = n(120356),
   l = n.n(i),
-  o = n(442837),
-  a = n(435064),
+  a = n(442837),
+  o = n(435064),
   s = n(892983);
 
 function c() {
   var e, t;
-  let n = (0, o.Wu)([a.Z], () => {
+  let n = (0, a.Wu)([o.Z], () => {
     var e;
-    let t = null == (e = a.Z.getLastClipsSession()) ? void 0 : e.newClipIds;
-    return null == t ? [] : a.Z.getClips().slice(0, 4).filter(e => t.includes(e.id))
+    let t = null == (e = o.Z.getLastClipsSession()) ? void 0 : e.newClipIds;
+    return null == t ? [] : o.Z.getClips().slice(0, 4).filter(e => t.includes(e.id))
   });
   return (0, r.jsx)("div", {
     className: l()(s.thumbnailStack, {

@@ -1,19 +1,20 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => b
+  Z: () => x
 }), n(388685);
 var i, r = n(255367),
   s = n(73800),
-  l = n(512722),
-  a = n.n(l),
+  a = n(512722),
+  l = n.n(a),
   o = n(442837),
-  c = n(481060),
-  d = n(893776),
-  u = n(468026),
-  m = n(594174),
-  p = n(388032);
+  c = n(755721),
+  d = n(481060),
+  u = n(893776),
+  m = n(468026),
+  p = n(594174),
+  g = n(388032);
 
-function g(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,38 +23,38 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), i.forEach(function(t) {
-      g(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
 }
-class f extends(i = s.Component) {
+class b extends(i = s.Component) {
   render() {
     let {
       color: e,
       look: t,
       size: n
     } = this.props;
-    return (0, r.jsx)(c.zxk, {
+    return (0, r.jsx)(c.zx, {
       look: t,
       size: n,
       color: e,
       disabled: this.state.isSendingVerificationEmail,
       onClick: this.handleResendVerification,
-      children: p.intl.string(p.t.lm1UKi)
+      children: g.intl.string(g.t.lm1UKi)
     })
   }
   constructor(...e) {
-    super(...e), g(this, "state", {
+    super(...e), h(this, "state", {
       isSendingVerificationEmail: !1
-    }), g(this, "handleResendVerification", () => {
+    }), h(this, "handleResendVerification", () => {
       let {
         currentUser: e,
         onClick: t
@@ -61,16 +62,16 @@ class f extends(i = s.Component) {
       null == t || t(), this.setState({
         isSendingVerificationEmail: !0
       }, () => {
-        d.Z.verifyResend().then(() => (0, c.h7j)(t => {
+        u.Z.verifyResend().then(() => (0, d.h7j)(t => {
           var n, i;
-          return (0, r.jsx)(c.ConfirmModal, (n = h({
-            header: p.intl.string(p.t.LykQYm),
-            confirmText: p.intl.string(p.t.BddRzc),
-            confirmButtonColor: c.zxk.Colors.BRAND
+          return (0, r.jsx)(d.ConfirmModal, (n = f({
+            header: g.intl.string(g.t.LykQYm),
+            confirmText: g.intl.string(g.t.BddRzc),
+            confirmButtonColor: c.zx.Colors.BRAND
           }, t), i = i = {
-            children: (0, r.jsx)(c.Text, {
+            children: (0, r.jsx)(d.Text, {
               variant: "text-md/normal",
-              children: p.intl.format(p.t.azKEPz, {
+              children: g.intl.format(g.t.azKEPz, {
                 email: e.email
               })
             })
@@ -87,9 +88,9 @@ class f extends(i = s.Component) {
         })).catch(e => {
           let {
             body: t
-          } = e, n = p.intl.string(p.t.XcrQNz);
-          null != t && t.email && (n = t.email), (0, c.h7j)(e => (0, r.jsx)(u.default, h({
-            title: p.intl.string(p.t.VbTh0N),
+          } = e, n = g.intl.string(g.t.XcrQNz);
+          null != t && t.email && (n = t.email), (0, d.h7j)(e => (0, r.jsx)(m.default, f({
+            title: g.intl.string(g.t.VbTh0N),
             body: n
           }, e)))
         }).then(() => this.setState({
@@ -99,13 +100,13 @@ class f extends(i = s.Component) {
     })
   }
 }
-g(f, "defaultProps", {
-  size: c.zxk.Sizes.MEDIUM,
-  color: c.zxk.Colors.BRAND
+h(b, "defaultProps", {
+  size: c.zx.Sizes.MEDIUM,
+  color: c.zx.Colors.BRAND
 });
-let b = o.ZP.connectStores([m.default], () => {
-  let e = m.default.getCurrentUser();
-  return a()(null != e, "ResendEmailVerificationButton: currentUser cannot be undefined"), {
+let x = o.ZP.connectStores([p.default], () => {
+  let e = p.default.getCurrentUser();
+  return l()(null != e, "ResendEmailVerificationButton: currentUser cannot be undefined"), {
     currentUser: e
   }
-})(f)
+})(b)

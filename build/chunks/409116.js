@@ -7,8 +7,8 @@ var n = r(255367);
 r(73800);
 var i = r(120356),
   l = r.n(i),
-  o = r(481060),
-  a = r(937615),
+  a = r(481060),
+  o = r(937615),
   s = r(884697),
   c = r(388032),
   u = r(864356);
@@ -33,21 +33,21 @@ let p = e => {
     className: v,
     discount: b = s.f_,
     variant: f = "heading-md/semibold"
-  } = e, m = (0, a.qr)(t, r), h = b !== s.f_ && b.discountPercentage >= 5 ? (0, n.jsxs)(n.Fragment, {
-    children: [m, (0, n.jsx)(o.Text, {
+  } = e, m = (0, o.qr)(t, r), h = b !== s.f_ && b.discountPercentage >= 5 ? (0, n.jsxs)(n.Fragment, {
+    children: [m, (0, n.jsx)(a.Text, {
       variant: f,
       color: "text-feedback-positive",
       className: u.discount,
       children: " (-".concat(b.discountPercentage, "%)")
     })]
-  }) : (0, n.jsx)(o.Text, {
+  }) : (0, n.jsx)(a.Text, {
     variant: f,
     children: m
   });
-  return (0, n.jsxs)(o.X6q, {
+  return (0, n.jsxs)(a.X6q, {
     variant: f,
     className: l()(u.container, v),
-    children: ["tooltip" === i ? (0, n.jsx)(o.ua7, {
+    children: ["tooltip" === i ? (0, n.jsx)(a.ua7, {
       text: c.intl.string(c.t.MPFyJy),
       "aria-label": c.intl.string(c.t.X3Ekj4),
       children: e => {
@@ -55,7 +55,7 @@ let p = e => {
           if (null == e) throw TypeError("Cannot destructure " + e);
           return e
         }(e));
-        return (0, n.jsx)(o.SrA, (t = function(e) {
+        return (0, n.jsx)(a.SrA, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var r = null != arguments[t] ? arguments[t] : {},
               n = Object.keys(r);
@@ -88,7 +88,7 @@ let p = e => {
           Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
         }), t))
       }
-    }) : "default" === i ? (0, n.jsx)(o.SrA, {
+    }) : "default" === i ? (0, n.jsx)(a.SrA, {
       size: p,
       color: "currentColor",
       className: u.nitroIcon

@@ -1,27 +1,28 @@
 /** Chunk was on 2045 **/
 n.d(t, {
-  default: () => d
+  default: () => p
 });
 var r = n(255367);
 n(73800);
-var o = n(481060),
-  c = n(313201),
-  l = n(430824),
-  s = n(614812),
-  a = n(388032),
-  i = n(318350);
-let d = e => {
+var o = n(755721),
+  c = n(481060),
+  l = n(313201),
+  s = n(430824),
+  a = n(614812),
+  i = n(388032),
+  d = n(318350);
+let p = e => {
   var t, n;
   let {
-    onClose: d,
-    guildId: p
-  } = e, u = (0, c.Dt)(), b = a.intl.format(a.t.ZqkXsL, {
-    helpdeskArticle: s.z
-  }), m = l.Z.getGuild(p);
-  return null != m && (b = a.intl.format(a.t.jn0Xy8, {
-    guildName: m.name,
-    helpdeskArticle: s.z
-  })), (0, r.jsxs)(o.Y0X, (t = function(e) {
+    onClose: p,
+    guildId: u
+  } = e, b = (0, l.Dt)(), m = i.intl.format(i.t.ZqkXsL, {
+    helpdeskArticle: a.z
+  }), f = s.Z.getGuild(u);
+  return null != f && (m = i.intl.format(i.t.jn0Xy8, {
+    guildName: f.name,
+    helpdeskArticle: a.z
+  })), (0, r.jsxs)(c.Y0X, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -39,32 +40,32 @@ let d = e => {
     }
     return e
   }({}, e), n = n = {
-    "aria-labelledby": u,
+    "aria-labelledby": b,
     parentComponent: "GuildLimitedAccessInfoModal",
-    children: [(0, r.jsxs)(o.xBx, {
+    children: [(0, r.jsxs)(c.xBx, {
       separator: !1,
-      className: i.modalHeader,
-      children: [(0, r.jsx)(o.X6q, {
-        id: u,
+      className: d.modalHeader,
+      children: [(0, r.jsx)(c.X6q, {
+        id: b,
         variant: "heading-xl/extrabold",
-        children: a.intl.string(a.t.kJwpBQ)
-      }), (0, r.jsx)(o.olH, {
-        className: i.closeButton,
-        onClick: d
+        children: i.intl.string(i.t.kJwpBQ)
+      }), (0, r.jsx)(c.olH, {
+        className: d.closeButton,
+        onClick: p
       })]
-    }), (0, r.jsx)(o.hzk, {
-      className: i.modalContent,
-      children: (0, r.jsx)(o.Text, {
+    }), (0, r.jsx)(c.hzk, {
+      className: d.modalContent,
+      children: (0, r.jsx)(c.Text, {
         variant: "text-md/normal",
-        className: i.contentText,
-        children: b
+        className: d.contentText,
+        children: m
       })
-    }), (0, r.jsx)(o.mzw, {
-      children: (0, r.jsx)(o.zxk, {
-        className: i.button,
-        size: o.zxk.Sizes.MIN,
-        onClick: d,
-        children: a.intl.string(a.t.BddRzc)
+    }), (0, r.jsx)(c.mzw, {
+      children: (0, r.jsx)(o.zx, {
+        className: d.button,
+        size: o.zx.Sizes.MIN,
+        onClick: p,
+        children: i.intl.string(i.t.BddRzc)
       })
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

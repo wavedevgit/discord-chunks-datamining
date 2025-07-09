@@ -54,8 +54,8 @@ function P(e) {
   }), U = (0, r.e7)([l.Z], () => l.Z.isFetchingUserOutbox(t.id)), k = t.id === n.id, M = (0, r.e7)([d.Z, s.Z], () => {
     let e = k ? d.Z.getStatus() : s.Z.getStatus(t.id);
     return e === i.Skl.OFFLINE || e === i.Skl.INVISIBLE
-  }), R = S.length > 0 || null != B, G = Z && null == B && null == D && null != L, V = !M && (R || G), F = E.length > 0;
-  if (!V && !F && U) return (0, o.jsx)("div", {
+  }), R = S.length > 0 || null != B, V = Z && null == B && null == D && null != L, G = !M && (R || V), F = E.length > 0;
+  if (!G && !F && U) return (0, o.jsx)("div", {
     className: O.cards,
     children: Array.from({
       length: 8
@@ -70,7 +70,7 @@ function P(e) {
       })]
     }, t))
   });
-  if (!V && !F && !U) {
+  if (!G && !F && !U) {
     var Y;
     return k ? (0, o.jsx)(h.Uf, {
       onClose: C
@@ -84,11 +84,11 @@ function P(e) {
   return (0, o.jsxs)(i.Ttm, {
     className: O.scroller,
     fade: !0,
-    children: [V ? (0, o.jsx)(g.Z, {
+    children: [G ? (0, o.jsx)(g.Z, {
       heading: v.intl.string(v.t.J6STd3),
       children: (0, o.jsxs)("ul", {
         className: O.cards,
-        children: [!w && G && (0, o.jsx)("li", {
+        children: [!w && V && (0, o.jsx)("li", {
           children: (0, o.jsx)(y.Z, {
             user: t,
             currentUser: n,
@@ -112,7 +112,7 @@ function P(e) {
             onClose: C,
             profileGuildId: null == P ? void 0 : P.guildId
           })
-        }, "live-".concat(r))), w && G && (0, o.jsx)("li", {
+        }, "live-".concat(r))), w && V && (0, o.jsx)("li", {
           children: (0, o.jsx)(y.Z, {
             user: t,
             currentUser: n,

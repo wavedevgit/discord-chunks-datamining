@@ -1,7 +1,7 @@
 /** Chunk was on 16705 **/
 n.d(t, {
   M: () => O,
-  Z: () => M
+  Z: () => _
 }), n(388685), n(290780);
 var i, l, r, s, a = n(392711),
   o = n.n(a),
@@ -50,7 +50,7 @@ s = "ChannelPinsStore", (r = "displayName") in j ? Object.defineProperty(j, r, {
   configurable: !0,
   writable: !0
 }) : j[r] = s;
-let M = new j(d.Z, {
+let _ = new j(d.Z, {
   CONNECTION_OPEN: function() {
     x = {}
   },

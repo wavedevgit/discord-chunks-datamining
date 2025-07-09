@@ -5,17 +5,17 @@ n.d(t, {
 var r, i = n(255367),
   a = n(73800),
   l = n(120356),
-  o = n.n(l),
-  c = n(873546),
-  s = n(481060),
+  c = n.n(l),
+  o = n(873546),
+  s = n(755721),
   u = n(599857),
   d = n(600164),
   f = n(63063),
   p = n(1964),
   m = n(981631),
   y = n(388032),
-  h = n(816676),
-  g = n(20493);
+  g = n(816676),
+  h = n(20493);
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -38,8 +38,8 @@ class v extends(r = a.PureComponent) {
       children: e.map(e => e === m.PUi.CAPTCHA ? (0, i.jsx)(u.Z, {
         onVerify: r,
         theme: n
-      }, t) : (0, i.jsx)(s.zxk, {
-        className: g.marginBottom20,
+      }, t) : (0, i.jsx)(s.zx, {
+        className: h.marginBottom20,
         onClick: () => this.handleClick(e),
         children: p.Z.getButtonTitle(e)
       }, e))
@@ -47,23 +47,23 @@ class v extends(r = a.PureComponent) {
   }
   render() {
     return (0, i.jsxs)(d.Z, {
-      className: h.verification,
+      className: g.verification,
       align: d.Z.Align.CENTER,
       direction: d.Z.Direction.VERTICAL,
       children: [(0, i.jsxs)(d.Z, {
-        className: o()(h.container, {
-          [h.isMobile]: c.tq
+        className: c()(g.container, {
+          [g.isMobile]: o.tq
         }),
         direction: d.Z.Direction.VERTICAL,
         align: d.Z.Align.CENTER,
         justify: d.Z.Justify.CENTER,
         children: [(0, i.jsx)("div", {
-          className: h.image
+          className: g.image
         }), (0, i.jsx)("div", {
-          className: o()(h.title, g.marginTop20),
+          className: c()(g.title, h.marginTop20),
           children: y.intl.string(y.t.Iz0kDg)
         }), (0, i.jsx)("div", {
-          className: o()(h.body, g.marginTop4, g.marginBottom20),
+          className: c()(g.body, h.marginTop4, h.marginBottom20),
           children: y.intl.format(y.t["0rqMV1"], {
             helpCenterURL: E
           })
@@ -74,21 +74,21 @@ class v extends(r = a.PureComponent) {
           children: this.renderFields()
         })]
       }), (0, i.jsx)("div", {
-        className: o()(h.footer, g.marginTop20),
+        className: c()(g.footer, h.marginTop20),
         children: y.intl.string(y.t.qqYun5)
       }), (0, i.jsxs)(d.Z, {
-        className: o()(g.marginTop4, g.marginBottom20),
+        className: c()(h.marginTop4, h.marginBottom20),
         grow: 0,
         children: [(0, i.jsx)("div", {
-          className: o()(h.footer, h.footerAction),
+          className: c()(g.footer, g.footerAction),
           children: y.intl.format(y.t.WL51ZW, {
             supportURL: f.Z.getSubmitRequestURL()
           })
         }), (0, i.jsx)("div", {
-          className: o()(h.footer, h.footerBullet),
+          className: c()(g.footer, g.footerBullet),
           children: "•"
         }), (0, i.jsx)("div", {
-          className: o()(h.footer, h.footerAction),
+          className: c()(g.footer, g.footerAction),
           children: y.intl.format(y.t.Hv7ztb, {
             logoutOnClick: this.props.onLogout
           })

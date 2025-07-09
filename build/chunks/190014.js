@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(255367),
   r = n(73800),
   s = n(626135),
-  l = n(63063),
-  a = n(88658),
+  a = n(63063),
+  l = n(88658),
   o = n(695346),
   c = n(639814),
   d = n(838436),
@@ -23,7 +23,7 @@ function x(e) {
     ingress: t,
     guildId: n
   } = e, c = o.iH.useSetting().includes(n), p = r.useCallback(e => {
-    let i = (0, a.rr)();
+    let i = (0, l.rr)();
     e ? i.delete(n) : i.add(n), o.iH.updateSetting([...i]), s.default.track(f.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
       action: m.Y.RESTRICT_GUILD_ACTIVITY_JOIN_TOGGLE,
       ingress: t,
@@ -37,7 +37,7 @@ function x(e) {
       value: !c,
       onChange: p,
       note: b.intl.format(b.t.jXKQCg, {
-        helpdeskArticle: l.Z.getArticleURL(f.BhN.ACTIVITY_STATUS_SETTINGS)
+        helpdeskArticle: a.Z.getArticleURL(f.BhN.ACTIVITY_STATUS_SETTINGS)
       })
     })
   })

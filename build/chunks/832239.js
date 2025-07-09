@@ -1,22 +1,22 @@
 /** Chunk was on 76815 **/
 n.d(e, {
-  JO: () => c,
+  JO: () => a,
   KK: () => u,
   Vp: () => l,
   hW: () => s,
-  zu: () => a
+  zu: () => c
 });
 var r = n(544891),
   i = n(570140),
   o = n(981631);
 
-function c() {
+function a() {
   i.Z.dispatch({
     type: "VIBING_WUMPUS_PLAY_MUSIC"
   })
 }
 
-function a() {
+function c() {
   i.Z.dispatch({
     type: "VIBING_WUMPUS_STOP_MUSIC"
   })

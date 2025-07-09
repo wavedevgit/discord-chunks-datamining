@@ -57,10 +57,10 @@ let Z = function(e) {
     Z = (0, v.If)(),
     {
       section: x,
-      rows: L
+      rows: w
     } = (0, c.cj)([I.ZP], () => I.ZP.getState()),
-    w = (0, c.e7)([m.Z], () => m.Z.getSuggestionCount()),
-    R = i.useMemo(() => L.getRelationshipCounts(), [L]);
+    L = (0, c.e7)([m.Z], () => m.Z.getSuggestionCount()),
+    R = i.useMemo(() => w.getRelationshipCounts(), [w]);
   i.useEffect(() => {
     null != t && h.Z.setInitialSection(t), 0 === R[N.OGo.FRIEND] && 0 === R[N.OGo.PENDING_INCOMING] && 0 === R[N.OGo.PENDING_OUTGOING] && 0 === R[N.OGo.BLOCKED] && h.Z.setSection(N.pJs.ADD_FRIEND)
   }, [t, R]);
@@ -71,7 +71,7 @@ let Z = function(e) {
     M = (0, g.Dt)(),
     U = [{
       id: N.pJs.ONLINE,
-      show: L.filter(N.pJs.ONLINE).length > 0,
+      show: w.filter(N.pJs.ONLINE).length > 0,
       content: P.intl.string(P.t.b9w3bG),
       className: j.item
     }, {
@@ -81,7 +81,7 @@ let Z = function(e) {
       className: j.item
     }, {
       id: N.pJs.PENDING,
-      show: L.filter(N.pJs.PENDING).length > 0,
+      show: w.filter(N.pJs.PENDING).length > 0,
       content: (0, r.jsxs)(r.Fragment, {
         children: [P.intl.string(P.t.p6IHGB), Z > 0 && (0, r.jsx)(u.mAB, {
           count: Z,
@@ -94,15 +94,15 @@ let Z = function(e) {
       className: j.item
     }, {
       id: N.pJs.SUGGESTIONS,
-      show: w > 0,
+      show: L > 0,
       content: (0, r.jsxs)(r.Fragment, {
         children: [P.intl.string(P.t["8rSi19"]), (0, r.jsx)(u.mAB, {
-          count: w,
+          count: L,
           className: j.badge
         })]
       }),
       ariaLabel: P.intl.formatToPlainString(P.t.AbMQp6, {
-        count: w.toString()
+        count: L.toString()
       }),
       className: j.item
     }, {

@@ -1,12 +1,12 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => j
+  Z: () => E
 });
 var i = n(255367),
   r = n(73800),
   s = n(120356),
-  l = n.n(s),
-  a = n(688642),
+  a = n.n(s),
+  l = n(688642),
   o = n(435935),
   c = n(442837),
   d = n(481060),
@@ -19,8 +19,8 @@ var i = n(255367),
   b = n(916723),
   x = n(388032),
   _ = n(128607),
-  E = n(20493);
-let j = () => {
+  j = n(20493);
+let E = () => {
   let e = g.Ex.useSetting(),
     {
       categories: t,
@@ -35,7 +35,7 @@ let j = () => {
       color: "text-muted",
       children: x.intl.string(b.default.USIXU1)
     }), (0, i.jsx)(d.j7V, {
-      className: l()(E.marginTop8, E.marginBottom20),
+      className: a()(j.marginTop8, j.marginBottom20),
       value: e,
       note: x.intl.string(b.default["5MdB3t"]),
       hideBorder: !0,
@@ -54,7 +54,7 @@ let j = () => {
             children: x.intl.string(b.default.xAVm7O)
           })
         }), (0, i.jsx)(d.P3F, {
-          children: (0, i.jsx)(a.rU, {
+          children: (0, i.jsx)(l.rU, {
             onClick: u.xf,
             to: {
               pathname: h.Z5c.FAMILY_CENTER,
@@ -71,7 +71,7 @@ let j = () => {
         })]
       })
     }) : null, (0, i.jsx)(d.j7V, {
-      className: l()(E.marginTop20, E.marginBottom20),
+      className: a()(j.marginTop20, j.marginBottom20),
       value: !!t[f.$Z.FAMILY_CENTER_DIGEST],
       note: x.intl.string(b.default["y34S4+"]),
       hideBorder: !0,

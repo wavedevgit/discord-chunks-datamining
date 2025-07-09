@@ -1,17 +1,17 @@
 /** Chunk was on 51343 **/
-a.d(t, {
-  Z: () => s
+t.d(a, {
+  Z: () => l
 });
-var l = a(255367);
-a(73800);
-var r = a(475286);
+var r = t(255367);
+t(73800);
+var s = t(475286);
 
-function s(e) {
+function l(e) {
   let {
-    children: t
+    children: a
   } = e;
-  return (0, l.jsx)("div", {
-    className: r.slideContainer,
-    children: t
+  return (0, r.jsx)("div", {
+    className: s.slideContainer,
+    children: a
   })
 }

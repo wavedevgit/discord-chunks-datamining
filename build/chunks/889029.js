@@ -6,8 +6,8 @@ var i = n(255367);
 n(73800);
 var r = n(120356),
   s = n.n(r),
-  l = n(442837),
-  a = n(481060),
+  a = n(442837),
+  l = n(481060),
   o = n(223245),
   c = n(230711),
   d = n(921801),
@@ -26,9 +26,9 @@ function x() {
     hideInstantInvites: r,
     hidePersonalInformation: x,
     disableSounds: _,
-    disableNotifications: E,
-    enableContentProtection: j
-  } = (0, l.cj)([u.Z], () => (function(e) {
+    disableNotifications: j,
+    enableContentProtection: E
+  } = (0, a.cj)([u.Z], () => (function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         i = Object.keys(n);
@@ -50,21 +50,21 @@ function x() {
       [e]: t
     })
   };
-  return (0, i.jsxs)(a.hjN, {
+  return (0, i.jsxs)(l.hjN, {
     className: f.container,
-    tag: a.RB0.H1,
+    tag: l.RB0.H1,
     title: h.intl.string(h.t.S5GfOT),
     children: [(0, i.jsx)(d.F, {
       setting: p.s6.STREAMER_MODE_INTEGRATIONS,
-      children: (0, i.jsx)(a.ToO, {
+      children: (0, i.jsx)(l.ToO, {
         className: b.marginBottom40,
         iconClassName: f.noticeIcon,
-        type: a.Dd5.PRIMARY,
+        type: l.Dd5.PRIMARY,
         imageData: {
           src: n(560264),
           width: 184,
           height: 110,
-          position: a.SwA.RIGHT
+          position: l.SwA.RIGHT
         },
         title: h.intl.string(h.t.bxGbHB),
         body: h.intl.format(h.t["4rmZn5"], {
@@ -73,7 +73,7 @@ function x() {
       })
     }), (0, i.jsxs)(d.F, {
       setting: p.s6.STREAMER_MODE_ENABLE,
-      children: [(0, i.jsx)(a.j7V, {
+      children: [(0, i.jsx)(l.j7V, {
         value: e,
         onChange: e => O("enabled", e),
         note: h.intl.format(h.t.MLVL2N, {
@@ -83,7 +83,7 @@ function x() {
         }),
         children: h.intl.string(h.t.p9ZAJS)
       }), (() => {
-        if (m.isPlatformEmbedded) return (0, i.jsx)(a.j7V, {
+        if (m.isPlatformEmbedded) return (0, i.jsx)(l.j7V, {
           value: t,
           onChange: e => O("autoToggle", e),
           note: h.intl.string(h.t.ZPi4lJ),
@@ -91,12 +91,12 @@ function x() {
         })
       })()]
     }), (0, i.jsxs)("div", {
-      children: [(0, i.jsx)(a.vwX, {
+      children: [(0, i.jsx)(l.vwX, {
         className: s()(b.marginTop40, b.marginBottom8, f.sectionLabel),
         children: h.intl.string(h.t["+1H47u"])
       }), (0, i.jsx)(d.F, {
         setting: p.s6.STREAMER_MODE_HIDE_PERSONAL_INFORMATION,
-        children: (0, i.jsx)(a.j7V, {
+        children: (0, i.jsx)(l.j7V, {
           value: x,
           onChange: e => O("hidePersonalInformation", e),
           note: h.intl.string(h.t["+9Lra2"]),
@@ -104,7 +104,7 @@ function x() {
         })
       }), (0, i.jsx)(d.F, {
         setting: p.s6.STREAMER_MODE_HIDE_INVITE_LINKS,
-        children: (0, i.jsx)(a.j7V, {
+        children: (0, i.jsx)(l.j7V, {
           value: r,
           onChange: e => O("hideInstantInvites", e),
           note: h.intl.string(h.t.m7mS2d),
@@ -112,7 +112,7 @@ function x() {
         })
       }), (0, i.jsx)(d.F, {
         setting: p.s6.STREAMER_MODE_DISABLE_SOUNDS,
-        children: (0, i.jsx)(a.j7V, {
+        children: (0, i.jsx)(l.j7V, {
           value: _,
           onChange: e => O("disableSounds", e),
           note: h.intl.string(h.t.eAkaio),
@@ -120,16 +120,16 @@ function x() {
         })
       }), (0, i.jsx)(d.F, {
         setting: p.s6.STREAMER_MODE_DISABLE_NOTIFICATIONS,
-        children: (0, i.jsx)(a.j7V, {
-          value: E,
+        children: (0, i.jsx)(l.j7V, {
+          value: j,
           onChange: e => O("disableNotifications", e),
           note: h.intl.string(h.t.ZAmpQ0),
           children: h.intl.string(h.t.qmYiYW)
         })
       }), (0, i.jsx)(d.F, {
         setting: p.s6.STREAMER_MODE_HIDE_DISCORD_WINDOW_FROM_SCREEN_CAPTURE,
-        children: (0, i.jsx)(a.j7V, {
-          value: j,
+        children: (0, i.jsx)(l.j7V, {
+          value: E,
           onChange: e => O("enableContentProtection", e),
           note: h.intl.string(h.t.P4vj0t),
           children: h.intl.string(h.t["iA81+f"])

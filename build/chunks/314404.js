@@ -399,8 +399,9 @@ function en(e) {
       shouldRenderUpdatedPaymentModal: l,
       isTrial: c
     }) : (0, r.jsx)(u.zxk, {
-      disabled: !0,
-      children: Y.intl.string(Y.t.XqMe3N)
+      variant: "primary",
+      text: Y.intl.string(Y.t.XqMe3N),
+      disabled: !0
     }), o ? (0, r.jsx)(U.Z, {
       className: _ && E ? K.equalDistantBackButton : void 0,
       onClick: a
@@ -426,7 +427,8 @@ function er(e) {
   var E = s ? Y.intl.string(Y.t.PDTjLC) : Y.intl.string(Y.t.XqMe3N),
     y = g.h8.ADD_PAYMENT_STEPS;
   return h && (y = g.h8.REVIEW), (0, C.id)(_, i, a) && f !== g.h8.SELECT_FREE_SKU && (y = g.h8.SELECT_FREE_SKU), (0, r.jsx)(u.zxk, {
-    onClick: () => t(y),
-    children: E
+    variant: "primary",
+    text: E,
+    onClick: () => t(y)
   })
 }

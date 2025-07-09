@@ -31,9 +31,9 @@ function d(e) {
     setSubscriptionMetadataRequest: O
   } = (0, c.JL)(), {
     isGift: S
-  } = (0, s.wD)(), [P, k] = r.useState(!h || !g || x);
+  } = (0, s.wD)(), [P, N] = r.useState(!h || !g || x);
   return (r.useEffect(() => {
-    k(!h || !g || x)
+    N(!h || !g || x)
   }, [x, g, h]), r.useEffect(() => {
     null != d && O({
       guild_id: d

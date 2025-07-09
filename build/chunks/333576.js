@@ -6,8 +6,8 @@ var i = n(255367);
 n(73800);
 var r = n(693789),
   s = n(481060),
-  l = n(37234),
-  a = n(703656),
+  a = n(37234),
+  l = n(703656),
   o = n(52647),
   c = n(450272),
   d = n(981631);
@@ -32,7 +32,7 @@ let u = function() {
         children: "Click the button below to reset your onboarding state for Virtual Currency."
       }), (0, i.jsx)(r.zx, {
         onClick: () => {
-          e(), t(), (0, l.xf)(), (0, a.uL)(d.Z5c.APP)
+          e(), t(), (0, a.xf)(), (0, l.uL)(d.Z5c.APP)
         },
         children: "Reset Onboarding State"
       }), (0, i.jsx)(s.Text, {

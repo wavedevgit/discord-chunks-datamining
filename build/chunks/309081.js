@@ -29,7 +29,7 @@ var r = n(255367),
   C = n(388032),
   E = n(687852);
 
-function k(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,7 +48,7 @@ function k(e) {
   return e
 }
 
-function A(e, t) {
+function I(e, t) {
   if (null == e) return {};
   var n, r, a = function(e, t) {
     if (null == e) return {};
@@ -63,7 +63,7 @@ function A(e, t) {
   }
   return a
 }
-let I = {
+let k = {
   offset: {
     top: -4,
     bottom: -4,
@@ -138,7 +138,7 @@ function R(e) {
     containerRef: O
   } = e, j = a.useRef(null), x = (0, s.e7)([g.Z], () => g.Z.getChannel(t)), {
     emoji: v,
-    isLoadingMedia: I,
+    isLoadingMedia: k,
     hasUpload: R,
     mediaUrl: N,
     mediaFilename: T
@@ -186,7 +186,7 @@ function R(e) {
       onDeleteMedia: Z,
       closePopout: t
     })
-  }, [Z, h]), W = I ? (0, r.jsx)(c.$jN, {
+  }, [Z, h]), W = k ? (0, r.jsx)(c.$jN, {
     className: L ? E.spinnerWrapperDefault : E.spinnerWrapperImageOnly
   }) : (0, r.jsx)(S, {
     hasUpload: R,
@@ -216,7 +216,7 @@ function R(e) {
         "aria-controls": t,
         "aria-expanded": n
       } = e;
-      return A(e, ["aria-controls", "aria-expanded"]), (0, r.jsx)(c.yRy, {
+      return I(e, ["aria-controls", "aria-expanded"]), (0, r.jsx)(c.yRy, {
         targetElementRef: j,
         animation: c.yRy.Animation.NONE,
         position: "bottom",
@@ -227,8 +227,8 @@ function R(e) {
               "aria-controls": i,
               "aria-expanded": s
             } = e,
-            u = A(e, ["onClick", "aria-controls", "aria-expanded"]);
-          return (0, r.jsxs)(c.P3F, (a = k({
+            u = I(e, ["onClick", "aria-controls", "aria-expanded"]);
+          return (0, r.jsxs)(c.P3F, (a = A({
             innerRef: j
           }, u), l = l = {
             className: H,
@@ -293,7 +293,7 @@ let T = a.forwardRef(function(e, t) {
     onAnswerTextChange: w,
     onEmojiSelect: _,
     onEmojiRemove: P,
-    canRemoveAnswer: A,
+    canRemoveAnswer: I,
     onRemoveAnswer: S,
     addAnswer: D,
     submitPoll: T,
@@ -310,7 +310,7 @@ let T = a.forwardRef(function(e, t) {
       let {
         default: t
       } = await n.e("2538").then(n.bind(n, 89619));
-      return n => (0, r.jsx)(t, k({
+      return n => (0, r.jsx)(t, A({
         channelId: l,
         answer: d,
         onSave: e
@@ -344,7 +344,7 @@ let T = a.forwardRef(function(e, t) {
   return b === i.C.DEFAULT ? (0, r.jsxs)("div", {
     ref: M,
     className: o()(E.answerRow, {
-      [E.hasDeleteButton]: A
+      [E.hasDeleteButton]: I
     }),
     children: [(0, r.jsxs)("div", {
       className: o()(E.defaultTextInputWrapper, {
@@ -368,13 +368,13 @@ let T = a.forwardRef(function(e, t) {
         maxLength: v.WA,
         "aria-invalid": H,
         "aria-describedby": H ? z : W,
-        focusProps: I,
+        focusProps: k,
         inputRef: Z
       }), (0, r.jsx)(N, {
         value: d.text,
         id: W
       })]
-    }), A && (0, r.jsx)(c.P3F, {
+    }), I && (0, r.jsx)(c.P3F, {
       onClick: () => S(p),
       className: E.removeAnswerButtonDefault,
       "aria-label": C.intl.formatToPlainString(C.t["22fjER"], {

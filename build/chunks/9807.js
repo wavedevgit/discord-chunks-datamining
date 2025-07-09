@@ -88,11 +88,11 @@ let I = e => {
       className: s()(n, t)
     }))
   },
-  S = {
+  P = {
     width: 1280,
     height: 720
   },
-  P = {
+  S = {
     width: 640,
     height: 360
   },
@@ -108,9 +108,9 @@ let I = e => {
     } = e;
     if (i.type === _.s9s.YOUTUBE_VIDEO) t = C({
       url: (0, _.n8r)(i.youtubeVideoId)
-    }, S), n = C({
+    }, P), n = C({
       url: "".concat((0, _.ivE)(i.youtubeVideoId), "?").concat("rel=0&iv_load_policy=3&showinfo=0&modestbranding=1")
-    }, P), r = u.pn.YOUTUBE;
+    }, S), r = u.pn.YOUTUBE;
     else {
       let e = null != i.width ? i.width : 0,
         r = null != i.height ? i.height : 0;

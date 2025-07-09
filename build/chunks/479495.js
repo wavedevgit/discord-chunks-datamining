@@ -1,39 +1,39 @@
 /** Chunk was on 56782 **/
-r.d(t, {
-  Z: () => P
-}), r(35282);
-var n, s = r(255367),
-  i = r(73800),
-  l = r(120356),
-  a = r.n(l),
-  o = r(593473),
-  c = r(873546),
-  u = r(442837),
-  d = r(570140),
-  h = r(893776),
-  p = r(129293),
-  m = r(254942),
-  f = r(388905),
-  x = r(17894),
-  g = r(124860),
-  j = r(703656),
-  v = r(108427),
-  C = r(314897),
-  N = r(585483),
-  O = r(981631),
-  b = r(388032),
-  E = r(20493);
+n.d(t, {
+  Z: () => T
+}), n(35282);
+var r, s = n(255367),
+  i = n(73800),
+  l = n(120356),
+  a = n.n(l),
+  o = n(593473),
+  c = n(873546),
+  u = n(442837),
+  d = n(570140),
+  h = n(893776),
+  p = n(129293),
+  m = n(254942),
+  f = n(388905),
+  x = n(17894),
+  g = n(124860),
+  j = n(703656),
+  v = n(108427),
+  C = n(314897),
+  N = n(585483),
+  O = n(981631),
+  b = n(388032),
+  y = n(20493);
 
-function y(e, t, r) {
+function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
-    value: r,
+    value: n,
     enumerable: !0,
     configurable: !0,
     writable: !0
-  }) : e[t] = r, e
+  }) : e[t] = n, e
 }
 u.ZP.initialize();
-class S extends(n = i.PureComponent) {
+class S extends(r = i.PureComponent) {
   componentDidMount() {
     (0, v.e)("reset_password")
   }
@@ -41,7 +41,7 @@ class S extends(n = i.PureComponent) {
     let {
       password: e,
       error: t,
-      hasCancel: n,
+      hasCancel: r,
       working: i
     } = this.state, l = null != t ? t : this.renderError("password");
     return (0, s.jsxs)(f.ZP, {
@@ -49,15 +49,15 @@ class S extends(n = i.PureComponent) {
       tag: "form",
       children: [(0, s.jsx)("img", {
         alt: "",
-        src: null == l ? r(26230) : r(935227),
-        className: E.marginBottom20
+        src: null == l ? n(26230) : n(935227),
+        className: y.marginBottom20
       }), (0, s.jsx)(f.Dx, {
         children: b.intl.string(b.t["1LV6Ki"])
       }), (0, s.jsxs)(f.gO, {
-        className: E.marginTop20,
+        className: y.marginTop20,
         children: [(0, s.jsx)(f.II, {
           label: b.intl.string(b.t["8dM4FB"]),
-          className: E.marginBottom20,
+          className: y.marginBottom20,
           name: "password",
           value: e,
           onChange: e => this.setState({
@@ -69,8 +69,8 @@ class S extends(n = i.PureComponent) {
           type: "submit",
           submitting: i,
           children: b.intl.string(b.t["FRep5+"])
-        }), n ? (0, s.jsx)(f.zx, {
-          className: E.marginTop8,
+        }), r ? (0, s.jsx)(f.zx, {
+          className: y.marginTop8,
           onClick: this.handleGoToLogin,
           submitting: i,
           color: f.zx.Colors.PRIMARY,
@@ -92,9 +92,9 @@ class S extends(n = i.PureComponent) {
         mfaFinish: e => {
           let {
             mfaType: t,
-            data: r
+            data: n
           } = e;
-          return this.handleTokenSubmitMFAv2(t, r)
+          return this.handleTokenSubmitMFAv2(t, n)
         },
         mfaChallenge: e,
         onEarlyClose: () => {
@@ -110,10 +110,10 @@ class S extends(n = i.PureComponent) {
     return (0, s.jsxs)(f.ZP, {
       children: [(0, s.jsx)("img", {
         alt: "",
-        src: r(26230),
-        className: a()(E.marginBottom20, c.tq ? E.marginTop20 : "")
+        src: n(26230),
+        className: a()(y.marginBottom20, c.tq ? y.marginTop20 : "")
       }), (0, s.jsx)(f.Dx, {
-        className: E.marginBottom40,
+        className: y.marginBottom40,
         children: b.intl.string(b.t.WAUOoK)
       }), (0, s.jsx)(f.zx, {
         onClick: this.handleOpenApp,
@@ -126,11 +126,11 @@ class S extends(n = i.PureComponent) {
   }
   constructor(e) {
     var t;
-    super(e), y(this, "handleSubmit", async e => {
+    super(e), E(this, "handleSubmit", async e => {
       let {
         location: t,
-        onLoginSuccess: r,
-        source: n,
+        onLoginSuccess: n,
+        source: r,
         resetToken: s
       } = this.props, {
         password: i,
@@ -159,7 +159,7 @@ class S extends(n = i.PureComponent) {
             token: o,
             totp: c,
             backup: u
-          } = await h.Z.resetPassword(a, i, n);
+          } = await h.Z.resetPassword(a, i, r);
           e === h.c.MFA ? d.Z.dispatch({
             type: "LOGIN_MFA_STEP",
             ticket: l,
@@ -167,7 +167,7 @@ class S extends(n = i.PureComponent) {
             webauthn: s,
             totp: c,
             backup: u
-          }) : null != r ? r(o) : (d.Z.dispatch({
+          }) : null != n ? n(o) : (d.Z.dispatch({
             type: "LOGIN_SUCCESS",
             token: o
           }), this.handlePasswordChangeSuccess())
@@ -180,10 +180,10 @@ class S extends(n = i.PureComponent) {
           working: !1
         })
       }
-    }), y(this, "handleTokenSubmitMFAv2", async (e, t) => {
+    }), E(this, "handleTokenSubmitMFAv2", async (e, t) => {
       let {
-        location: r,
-        mfaTicket: n,
+        location: n,
+        mfaTicket: r,
         onLoginSuccess: s,
         resetToken: i,
         source: l
@@ -194,32 +194,32 @@ class S extends(n = i.PureComponent) {
         type: "LOGIN_RESET"
       }), Promise.reject();
       let o = i;
-      if (null != r && (o = (0, p.Z)(r)), null == o) return d.Z.dispatch({
+      if (null != n && (o = (0, p.Z)(n)), null == o) return d.Z.dispatch({
         type: "LOGIN_RESET"
       }), Promise.reject();
       this.setState({
         working: !0
       });
       try {
-        let r = await h.Z.resetPasswordMFAv2({
+        let n = await h.Z.resetPasswordMFAv2({
           method: e,
           code: t,
-          ticket: n,
+          ticket: r,
           password: a,
           token: o,
           source: l
         });
-        if (null != s) return void s(r);
+        if (null != s) return void s(n);
         d.Z.dispatch({
           type: "LOGIN_SUCCESS",
-          token: r
+          token: n
         }), this.handlePasswordChangeSuccess()
       } finally {
         this.setState({
           working: !1
         })
       }
-    }), y(this, "handlePasswordChangeSuccess", () => {
+    }), E(this, "handlePasswordChangeSuccess", () => {
       let {
         replaceWith: e
       } = this.props;
@@ -227,55 +227,55 @@ class S extends(n = i.PureComponent) {
         success: !0
       });
       e(O.Z5c.APP)
-    }), y(this, "handleGoToLogin", () => {
+    }), E(this, "handleGoToLogin", () => {
       let {
         transitionTo: e
       } = this.props;
       h.Z.loginReset(), e(O.Z5c.LOGIN, {
         source: "reset_password"
       })
-    }), y(this, "handleOpenApp", () => {
+    }), E(this, "handleOpenApp", () => {
       (0, x.Z)("password_reset")
-    }), y(this, "hasError", e => null != this.state.apiErrors[e] || null != this.state.error), y(this, "renderError", e => {
+    }), E(this, "hasError", e => null != this.state.apiErrors[e] || null != this.state.error), E(this, "renderError", e => {
       let {
         apiErrors: t
       } = this.state;
       if (this.hasError(e)) {
-        let r = t[e];
-        return Array.isArray(r) ? r[0] : r
+        let n = t[e];
+        return Array.isArray(n) ? n[0] : n
       }
       return null
     });
-    let r = (null == (t = this.props.location) ? void 0 : t.search) != null && "" !== this.props.location.search ? (0, o.parse)(this.props.location.search) : null;
+    let n = (null == (t = this.props.location) ? void 0 : t.search) != null && "" !== this.props.location.search ? (0, o.parse)(this.props.location.search) : null;
     this.state = {
       method: "",
       password: "",
       code: "",
       apiErrors: {},
       error: null,
-      hasCancel: null != r && null != r.from_login,
+      hasCancel: null != n && null != n.from_login,
       working: !1,
       success: !1
     }
   }
 }
-y(S, "defaultProps", {
+E(S, "defaultProps", {
   transitionTo: j.uL,
   replaceWith: j.dL
 });
-let P = function(e) {
+let T = function(e) {
   let t = (0, u.cj)([C.default], () => ({
     mfaTicket: C.default.getMFATicket(),
     mfaMethods: C.default.getMFAMethods()
   }));
   return (0, s.jsx)(S, function(e) {
     for (var t = 1; t < arguments.length; t++) {
-      var r = null != arguments[t] ? arguments[t] : {},
-        n = Object.keys(r);
-      "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(r, e).enumerable
-      }))), n.forEach(function(t) {
-        y(e, t, r[t])
+      var n = null != arguments[t] ? arguments[t] : {},
+        r = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(n, e).enumerable
+      }))), r.forEach(function(t) {
+        E(e, t, n[t])
       })
     }
     return e

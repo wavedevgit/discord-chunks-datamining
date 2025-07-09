@@ -1,11 +1,11 @@
 /** Chunk was on 19577 **/
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(255367),
   i = n(998502),
   l = n(15594);
-let o = i.ZP.getEnableHardwareAcceleration() ? function() {
+let a = i.ZP.getEnableHardwareAcceleration() ? function() {
   return (0, r.jsx)("div", {
     children: (0, r.jsxs)("div", {
       className: l.gradientBackground,

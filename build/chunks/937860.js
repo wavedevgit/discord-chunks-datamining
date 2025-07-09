@@ -1,14 +1,15 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  s: () => a
+  s: () => o
 });
 var i = n(255367),
-  r = n(481060),
-  s = n(388032),
+  r = n(755721),
+  s = n(481060),
+  a = n(388032),
   l = n(752740);
-let a = e => {
+let o = e => {
   var t, n;
-  return (0, i.jsx)(r.zxk, (t = function(e) {
+  return (0, i.jsx)(r.zx, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         i = Object.keys(n);
@@ -26,12 +27,12 @@ let a = e => {
     }
     return e
   }({}, e), n = n = {
-    "aria-label": s.intl.string(s.t.cpT0Cg),
-    look: r.zxk.Looks.BLANK,
-    size: r.zxk.Sizes.NONE,
+    "aria-label": a.intl.string(a.t.cpT0Cg),
+    look: r.zx.Looks.BLANK,
+    size: r.zx.Sizes.NONE,
     wrapperClassName: l.closeButton,
     innerClassName: l.closeButtonInner,
-    children: (0, i.jsx)(r.Uz9, {
+    children: (0, i.jsx)(s.Uz9, {
       size: "refresh_sm",
       className: l.closeButtonIcon
     })

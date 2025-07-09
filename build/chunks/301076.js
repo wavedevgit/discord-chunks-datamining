@@ -1,18 +1,18 @@
 /** Chunk was on 19577 **/
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(255367);
 n(73800);
 var i = n(562129),
   l = n(871499);
 
-function o(e) {
+function a(e) {
   var {
     isActivityActive: t,
     onMouseEnter: n,
-    onMouseLeave: o,
-    onClick: a
+    onMouseLeave: a,
+    onClick: o
   } = e, s = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
@@ -59,10 +59,10 @@ function o(e) {
       null == n || n(e), u.onMouseEnter()
     },
     onMouseLeave: e => {
-      null == o || o(e), u.onMouseLeave()
+      null == a || a(e), u.onMouseLeave()
     },
     onClick: e => {
-      null == a || a(e), d()
+      null == o || o(e), d()
     }
   }, s))
 }

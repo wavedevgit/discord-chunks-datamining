@@ -1,31 +1,32 @@
 /** Chunk was on 79921 **/
 t.d(s, {
-  default: () => A
+  default: () => I
 }), t(388685);
 var l = t(255367),
   r = t(73800),
   a = t(120356),
   n = t.n(a),
   u = t(442837),
-  c = t(481060),
-  i = t(24124),
-  o = t(461745),
-  d = t(212819),
-  h = t(43267),
-  m = t(447003),
-  _ = t(933557),
-  x = t(606206),
-  p = t(592125),
-  N = t(944486),
-  g = t(585483),
-  k = t(5192),
-  v = t(51144),
-  C = t(981631),
-  S = t(388032),
-  E = t(944801),
-  j = t(20493);
+  c = t(755721),
+  i = t(481060),
+  o = t(24124),
+  d = t(461745),
+  h = t(212819),
+  m = t(43267),
+  _ = t(447003),
+  x = t(933557),
+  p = t(606206),
+  N = t(592125),
+  g = t(944486),
+  v = t(585483),
+  C = t(5192),
+  S = t(51144),
+  E = t(981631),
+  j = t(388032),
+  L = t(944801),
+  k = t(20493);
 
-function L(e, s, t) {
+function b(e, s, t) {
   return s in e ? Object.defineProperty(e, s, {
     value: t,
     enumerable: !0,
@@ -33,78 +34,78 @@ function L(e, s, t) {
     writable: !0
   }) : e[s] = t, e
 }
-let b = e => {
+let f = e => {
     let {
       channel: s,
       categoryName: t,
       guildName: r
-    } = e, a = c.VL1;
-    return (0, m.Z)(s) ? a = c.W4G : s.isNSFW() && (a = c.z0B), (0, l.jsxs)("div", {
-      className: E.result,
+    } = e, a = i.VL1;
+    return (0, _.Z)(s) ? a = i.W4G : s.isNSFW() && (a = i.z0B), (0, l.jsxs)("div", {
+      className: L.result,
       children: [(0, l.jsx)(a, {
-        className: E.resultIcon,
-        colorClass: E.resultIconBackground,
+        className: L.resultIcon,
+        colorClass: L.resultIconBackground,
         size: "xs"
       }), (0, l.jsxs)("div", {
-        className: E.resultText,
+        className: L.resultText,
         children: [(0, l.jsx)("span", {
           children: s.name
         }), (0, l.jsx)("span", {
-          className: E.resultCategoryName,
+          className: L.resultCategoryName,
           children: t
         })]
       }), (0, l.jsx)("div", {
-        className: E.resultGuildName,
+        className: L.resultGuildName,
         children: r
-      })]
-    })
-  },
-  f = e => {
-    let {
-      channel: s
-    } = e, t = (0, _.ZP)(s);
-    return (0, l.jsxs)("div", {
-      className: E.result,
-      children: [(0, l.jsx)(c.qEK, {
-        src: (0, h.x)(s),
-        "aria-label": null != t ? t : "",
-        className: E.resultAvatar,
-        size: c.EFr.SIZE_32
-      }), (0, l.jsx)("div", {
-        className: E.resultText,
-        children: t
       })]
     })
   },
   R = e => {
     let {
+      channel: s
+    } = e, t = (0, x.ZP)(s);
+    return (0, l.jsxs)("div", {
+      className: L.result,
+      children: [(0, l.jsx)(i.qEK, {
+        src: (0, m.x)(s),
+        "aria-label": null != t ? t : "",
+        className: L.resultAvatar,
+        size: i.EFr.SIZE_32
+      }), (0, l.jsx)("div", {
+        className: L.resultText,
+        children: t
+      })]
+    })
+  },
+  z = e => {
+    let {
       user: s,
       status: t
-    } = e, r = (0, u.e7)([N.Z, p.Z], () => {
+    } = e, r = (0, u.e7)([g.Z, N.Z], () => {
       var e;
-      let s = null != (e = N.Z.getVoiceChannelId()) ? e : N.Z.getChannelId();
-      return null == s ? null : p.Z.getChannel(s)
-    }), a = null == r ? void 0 : r.guild_id, n = null == r ? void 0 : r.id, i = k.ZP.useName(a, n, s), o = v.ZP.useName(s);
+      let s = null != (e = g.Z.getVoiceChannelId()) ? e : g.Z.getChannelId();
+      return null == s ? null : N.Z.getChannel(s)
+    }), a = null == r ? void 0 : r.guild_id, n = null == r ? void 0 : r.id, c = C.ZP.useName(a, n, s), o = S.ZP.useName(s);
     return (0, l.jsxs)("div", {
-      className: E.result,
-      children: [(0, l.jsx)(c.qEK, {
+      className: L.result,
+      children: [(0, l.jsx)(i.qEK, {
         src: s.getAvatarURL(void 0, 32),
         "aria-label": s.username,
-        className: E.resultAvatar,
-        size: c.EFr.SIZE_32,
+        className: L.resultAvatar,
+        size: i.EFr.SIZE_32,
         status: t
       }), (0, l.jsxs)("div", {
-        className: E.resultText,
+        className: L.resultText,
         children: [(0, l.jsx)("span", {
-          children: i
+          children: c
         }), (0, l.jsx)("span", {
-          className: E.resultUsername,
+          className: L.resultUsername,
           children: o
         })]
       })]
     })
   };
-class z extends r.Component {
+class A extends r.Component {
   render() {
     let e, s, {
       result: t,
@@ -112,24 +113,24 @@ class z extends r.Component {
       sending: a
     } = this.props;
     switch (t.type) {
-      case d.h8.GROUP_DM:
-        e = (0, l.jsx)(f, {
+      case h.h8.GROUP_DM:
+        e = (0, l.jsx)(R, {
           channel: t.data.record
         });
         break;
-      case d.h8.TEXT_CHANNEL: {
+      case h.h8.TEXT_CHANNEL: {
         let {
           categoryName: s,
           guildName: r
         } = t;
-        e = (0, l.jsx)(b, {
+        e = (0, l.jsx)(f, {
           channel: t.data.record,
           categoryName: s,
           guildName: r
         });
         break
       }
-      case d.h8.USER: {
+      case h.h8.USER: {
         let {
           data: {
             comparator: s,
@@ -137,30 +138,30 @@ class z extends r.Component {
           },
           status: a
         } = t;
-        e = (0, l.jsx)(R, {
+        e = (0, l.jsx)(z, {
           comparator: s,
           user: r,
           status: a
         })
       }
     }
-    return s = t.sent ? (0, l.jsx)(c.zxk, {
-      className: E.inviteButton,
-      look: c.zxk.Looks.LINK,
-      size: c.zxk.Sizes.SMALL,
+    return s = t.sent ? (0, l.jsx)(c.zx, {
+      className: L.inviteButton,
+      look: c.zx.Looks.LINK,
+      size: c.zx.Sizes.SMALL,
       disabled: !0,
-      color: c.zxk.Colors.WHITE,
-      children: S.intl.string(S.t.i6A1X1)
-    }) : (0, l.jsx)(c.zxk, {
-      color: c.zxk.Colors.GREEN,
-      look: r ? c.zxk.Looks.FILLED : c.zxk.Looks.OUTLINED,
-      className: E.inviteButton,
-      size: c.zxk.Sizes.SMALL,
+      color: c.zx.Colors.WHITE,
+      children: j.intl.string(j.t.i6A1X1)
+    }) : (0, l.jsx)(c.zx, {
+      color: c.zx.Colors.GREEN,
+      look: r ? c.zx.Looks.FILLED : c.zx.Looks.OUTLINED,
+      className: L.inviteButton,
+      size: c.zx.Sizes.SMALL,
       submitting: a,
-      children: S.intl.string(S.t["6F9ivr"])
-    }), (0, l.jsxs)(c.P3F, {
-      className: n()(E.resultWrapper, {
-        [E.resultWrapperSelected]: r
+      children: j.intl.string(j.t["6F9ivr"])
+    }), (0, l.jsxs)(i.P3F, {
+      className: n()(L.resultWrapper, {
+        [L.resultWrapperSelected]: r
       }),
       onMouseEnter: this.handleMouseEnter,
       onClick: this.handleClick,
@@ -168,13 +169,13 @@ class z extends r.Component {
     })
   }
   constructor(...e) {
-    super(...e), L(this, "handleClick", () => {
+    super(...e), b(this, "handleClick", () => {
       let {
         onInvite: e,
         row: s
       } = this.props;
       e(s)
-    }), L(this, "handleMouseEnter", () => {
+    }), b(this, "handleMouseEnter", () => {
       let {
         onMouseEnter: e,
         row: s
@@ -184,36 +185,36 @@ class z extends r.Component {
   }
 }
 
-function A(e) {
+function I(e) {
   let {
     transitionState: s,
     onClose: t
   } = e, {
     results: a,
     query: n,
-    activity: h
-  } = (0, u.cj)([x.Z], () => ({
-    results: x.Z.getResults(),
-    query: x.Z.getQuery(),
-    activity: x.Z.getActivity()
-  }), []), [m, _] = r.useState(n), [p, N] = r.useState(0), [k, v] = r.useState([]), [L, b] = r.useState(!1), f = r.useRef(null), R = r.useCallback(() => {
+    activity: c
+  } = (0, u.cj)([p.Z], () => ({
+    results: p.Z.getResults(),
+    query: p.Z.getQuery(),
+    activity: p.Z.getActivity()
+  }), []), [m, _] = r.useState(n), [x, N] = r.useState(0), [g, C] = r.useState([]), [S, b] = r.useState(!1), f = r.useRef(null), R = r.useCallback(() => {
     var e;
     null == (e = f.current) || e.scrollPageUp({
       animate: !0
     })
-  }, [f]), A = r.useCallback(() => {
+  }, [f]), z = r.useCallback(() => {
     var e;
     null == (e = f.current) || e.scrollPageDown({
       animate: !0
     })
   }, [f]);
-  r.useEffect(() => (g.S.subscribe(C.CkL.SCROLL_PAGE_UP, R), () => {
-    g.S.unsubscribe(C.CkL.SCROLL_PAGE_UP, R)
-  }), [R]), r.useEffect(() => (g.S.subscribe(C.CkL.SCROLL_PAGE_DOWN, A), () => {
-    g.S.unsubscribe(C.CkL.SCROLL_PAGE_DOWN, A)
-  }), [A]), r.useEffect(() => {
-    null == h && t()
-  }, [t, h]), r.useEffect(() => {
+  r.useEffect(() => (v.S.subscribe(E.CkL.SCROLL_PAGE_UP, R), () => {
+    v.S.unsubscribe(E.CkL.SCROLL_PAGE_UP, R)
+  }), [R]), r.useEffect(() => (v.S.subscribe(E.CkL.SCROLL_PAGE_DOWN, z), () => {
+    v.S.unsubscribe(E.CkL.SCROLL_PAGE_DOWN, z)
+  }), [z]), r.useEffect(() => {
+    null == c && t()
+  }, [t, c]), r.useEffect(() => {
     var e;
     null == (e = f.current) || e.scrollToTop(), N(0)
   }, [f, a]);
@@ -226,15 +227,15 @@ function A(e) {
           }
         }
       } = a[e];
-      if (!(null == t || k.includes(t))) switch (v([...k, t]), s.type) {
-        case d.h8.GROUP_DM:
-        case d.h8.TEXT_CHANNEL:
-          (0, i.GG)(s.record.id);
+      if (!(null == t || g.includes(t))) switch (C([...g, t]), s.type) {
+        case h.h8.GROUP_DM:
+        case h.h8.TEXT_CHANNEL:
+          (0, o.GG)(s.record.id);
           break;
-        case d.h8.USER:
-          (0, i.R2)(s.record.id)
+        case h.h8.USER:
+          (0, o.R2)(s.record.id)
       }
-    }, [a, k]),
+    }, [a, g]),
     P = r.useCallback(e => {
       N(e)
     }, [N]),
@@ -242,36 +243,36 @@ function A(e) {
       Z("")
     },
     Z = e => {
-      _(e), (0, i.rh)(e)
+      _(e), (0, o.rh)(e)
     };
-  return null == h ? null : (0, l.jsxs)(c.Y0X, {
+  return null == c ? null : (0, l.jsxs)(i.Y0X, {
     transitionState: s,
-    size: c.CgR.SMALL,
-    "aria-label": S.intl.formatToPlainString(S.t["2tN7io"], {
-      name: h.name
+    size: i.CgR.SMALL,
+    "aria-label": j.intl.formatToPlainString(j.t["2tN7io"], {
+      name: c.name
     }),
     parentComponent: "ActivityInviteModal",
-    children: [(0, l.jsxs)(c.xBx, {
-      separator: L,
-      className: E.modalHeader,
-      children: [(0, l.jsx)(c.olH, {
-        className: E.closeButton,
+    children: [(0, l.jsxs)(i.xBx, {
+      separator: S,
+      className: L.modalHeader,
+      children: [(0, l.jsx)(i.olH, {
+        className: L.closeButton,
         onClick: t
       }), (0, l.jsxs)("div", {
-        className: E.header,
-        children: [(0, l.jsx)(c.vwX, {
+        className: L.header,
+        children: [(0, l.jsx)(i.vwX, {
           tag: "h2",
-          className: j.marginBottom8,
-          children: S.intl.format(S.t["2tN7io"], {
-            name: h.name
+          className: k.marginBottom8,
+          children: j.intl.format(j.t["2tN7io"], {
+            name: c.name
           })
-        }), (0, l.jsx)(o.ZP, {
-          size: o.ZP.Sizes.MEDIUM,
+        }), (0, l.jsx)(d.ZP, {
+          size: d.ZP.Sizes.MEDIUM,
           query: m,
           selectedSection: 0,
-          selectedRow: p,
+          selectedRow: x,
           sections: [a.length],
-          className: j.marginTop4,
+          className: k.marginTop4,
           onSelect: (e, s) => {
             null == s ? T() : I(s)
           },
@@ -283,18 +284,18 @@ function A(e) {
             })
           },
           onQueryChange: Z,
-          placeholder: S.intl.string(S.t.IJExws),
+          placeholder: j.intl.string(j.t.IJExws),
           autoFocus: !0,
           onClear: T
         })]
       })]
-    }), (0, l.jsx)(c.YAO, {
+    }), (0, l.jsx)(i.YAO, {
       scrollerRef: f,
-      className: 0 === a.length ? E.noResults : E.results,
+      className: 0 === a.length ? L.noResults : L.results,
       paddingBottom: 12,
       sections: [a.length],
       sectionHeight: 0,
-      renderSection: C.VqG,
+      renderSection: E.VqG,
       rowHeight: (e, s) => e > 0 ? 0 : 48 * (null != a[s]),
       renderRow: e => {
         let {
@@ -303,18 +304,18 @@ function A(e) {
         } = e;
         if (s > 0) return null;
         let r = a[t];
-        return null == r ? null : (0, l.jsx)(z, {
+        return null == r ? null : (0, l.jsx)(A, {
           row: t,
           result: r,
-          sending: null != r.data.record.id && k.includes(r.data.record.id),
-          selected: t === p,
+          sending: null != r.data.record.id && g.includes(r.data.record.id),
+          selected: t === x,
           onMouseEnter: P,
           onInvite: I
         }, r.data.record.id)
       },
       onScroll: e => {
         let s = e.currentTarget.scrollTop > 0;
-        L !== s && b(s)
+        S !== s && b(s)
       }
     })]
   })

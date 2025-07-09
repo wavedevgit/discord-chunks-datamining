@@ -1,6 +1,6 @@
 /** Chunk was on 4811 **/
 n.d(t, {
-  Z: () => w
+  Z: () => Z
 }), n(539854), n(583741), n(388685), n(642613);
 var r = n(255367),
   i = n(73800),
@@ -9,113 +9,114 @@ var r = n(255367),
   a = n(392711),
   s = n.n(a),
   c = n(91192),
-  u = n(481060),
-  d = n(724757),
-  h = n(100527),
-  p = n(906732),
-  f = n(585483),
-  g = n(709054),
-  m = n(821020),
-  b = n(538397),
-  _ = n(389160),
-  O = n(370774),
-  y = n(334426),
-  v = n(982183),
-  C = n(981631),
-  j = n(144717),
-  E = n(388032),
-  S = n(709701);
+  u = n(755721),
+  d = n(481060),
+  h = n(724757),
+  p = n(100527),
+  f = n(906732),
+  g = n(585483),
+  m = n(709054),
+  b = n(821020),
+  _ = n(538397),
+  O = n(389160),
+  y = n(370774),
+  v = n(334426),
+  C = n(982183),
+  j = n(981631),
+  E = n(144717),
+  S = n(388032),
+  x = n(709701);
 
-function x(e) {
+function I(e) {
   e.stopPropagation()
 }
 
-function I(e) {
+function P(e) {
   let {
     group: t,
     isOpen: n,
     toggleOpenedState: i
   } = e;
-  return (0, r.jsx)(u.P3F, {
+  return (0, r.jsx)(d.P3F, {
     onClick: i,
-    className: o()(S.messagesGroupHeaderWrap, {
-      [S.collapsed]: !n
+    className: o()(x.messagesGroupHeaderWrap, {
+      [x.collapsed]: !n
     }),
-    children: (0, r.jsxs)(u.Kqy, {
+    children: (0, r.jsxs)(d.Kqy, {
       gap: 4,
       direction: "horizontal",
       align: "center",
-      children: [(0, r.jsx)(u.X6q, {
+      children: [(0, r.jsx)(d.X6q, {
         variant: "text-sm/medium",
         color: "text-secondary",
-        className: S.messagesGroupHeader,
-        children: (0, a.capitalize)(E.intl.string(v.Vv[t]).toLowerCase())
-      }), (0, r.jsx)(u.CJ0, {
+        className: x.messagesGroupHeader,
+        children: (0, a.capitalize)(S.intl.string(C.Vv[t]).toLowerCase())
+      }), (0, r.jsx)(d.CJ0, {
         size: "xxs",
-        className: S.chevron
+        className: x.chevron
       })]
     })
   })
 }
-let P = [v.KZ.UNREAD, v.KZ.TODAY, v.KZ.YESTERDAY, v.KZ.OLDER];
+let N = [C.KZ.UNREAD, C.KZ.TODAY, C.KZ.YESTERDAY, C.KZ.OLDER];
 
-function N() {
+function w() {
   let {
     analyticsLocations: e
-  } = (0, p.ZP)(h.Z.NOTIFICATIONS_INBOX);
+  } = (0, f.ZP)(p.Z.NOTIFICATIONS_INBOX);
   return (0, r.jsx)("div", {
-    className: S.emptyStateContainer,
-    children: (0, r.jsxs)(u.Kqy, {
+    className: x.emptyStateContainer,
+    children: (0, r.jsxs)(d.Kqy, {
       gap: 24,
       align: "center",
-      children: [(0, r.jsxs)(u.Kqy, {
+      children: [(0, r.jsxs)(d.Kqy, {
         gap: 16,
         align: "center",
-        children: [(0, r.jsx)(u.xx7, {
+        children: [(0, r.jsx)(d.xx7, {
           size: "custom",
           height: 40,
           width: 40,
-          color: u.TVs.colors.BACKGROUND_MOD_STRONG
-        }), (0, r.jsx)(u.Text, {
+          color: d.TVs.colors.BACKGROUND_MOD_STRONG
+        }), (0, r.jsx)(d.Text, {
           variant: "text-sm/medium",
-          color: C.tPk.TEXT_MUTED,
+          color: j.tPk.TEXT_MUTED,
           style: {
             textAlign: "center"
           },
-          children: E.intl.string(j.default["O+racX"])
+          children: S.intl.string(E.default["O+racX"])
         })]
-      }), (0, r.jsx)(u.zxk, {
-        onClick: () => (0, O.j4)(e),
-        color: u.zxk.Colors.PRIMARY,
+      }), (0, r.jsx)(u.zx, {
+        onClick: () => (0, y.j4)(e),
+        color: u.zx.Colors.PRIMARY,
         style: {
           fontWeight: 600
         },
-        children: E.intl.string(j.default.klSpfn)
+        children: S.intl.string(E.default.klSpfn)
       })]
     })
   })
 }
 
-function w(e) {
+function Z(e) {
   let {
     messages: t,
     loadingInitial: n,
     loadingMore: l,
     loadMore: a,
-    renderLoadingState: h,
+    renderLoadingState: u,
     renderMessageGroup: p,
-    scrollerClassName: j,
+    scrollerClassName: f,
     className: E,
-    listName: w,
+    listName: S,
     ignoreGrouping: Z = !1
-  } = e, T = i.useRef(null), A = (0, d.Z)(w, T), {
+  } = e, T = i.useRef(null), A = (0, h.Z)(S, T), {
     notificationCenterVariant: R
-  } = m.Lk.useExperiment({
+  } = b.Lk.useExperiment({
     location: "NotificationsInboxSidebarList"
   }), {
     messageCategoryOpenStates: D,
     toggleOpenState: L
-  } = (0, _.Z)();
+  } = (0, O.Z)();
   i.useEffect(() => {
     function e() {
       var e;
@@ -130,83 +131,83 @@ function w(e) {
         animate: !0
       })
     }
-    return f.S.subscribe(C.CkL.SCROLL_PAGE_DOWN, t), f.S.subscribe(C.CkL.SCROLL_PAGE_UP, e), () => {
-      f.S.unsubscribe(C.CkL.SCROLL_PAGE_DOWN, t), f.S.unsubscribe(C.CkL.SCROLL_PAGE_UP, e)
+    return g.S.subscribe(j.CkL.SCROLL_PAGE_DOWN, t), g.S.subscribe(j.CkL.SCROLL_PAGE_UP, e), () => {
+      g.S.unsubscribe(j.CkL.SCROLL_PAGE_DOWN, t), g.S.unsubscribe(j.CkL.SCROLL_PAGE_UP, e)
     }
   }, []);
   let M = i.useCallback(() => {
       var e;
       let t = null == (e = T.current) ? void 0 : e.getScrollerState(),
-        n = (0, O.s)(D);
+        n = (0, y.s)(D);
       null != t && t.scrollHeight >= t.scrollTop + t.offsetHeight && (null == a || a(n))
     }, [a, D]),
-    k = (0, O.fW)(null != t ? t : []),
+    k = (0, y.fW)(null != t ? t : []),
     U = i.useMemo(() => {
       if (null == t || n) return null;
       let e = {
-          [v.KZ.UNREAD]: [],
-          [v.KZ.TODAY]: [],
-          [v.KZ.YESTERDAY]: [],
-          [v.KZ.OLDER]: []
+          [C.KZ.UNREAD]: [],
+          [C.KZ.TODAY]: [],
+          [C.KZ.YESTERDAY]: [],
+          [C.KZ.OLDER]: []
         },
         r = {
-          [v.KZ.UNREAD]: [],
-          [v.KZ.TODAY]: [],
-          [v.KZ.YESTERDAY]: [],
-          [v.KZ.OLDER]: []
+          [C.KZ.UNREAD]: [],
+          [C.KZ.TODAY]: [],
+          [C.KZ.YESTERDAY]: [],
+          [C.KZ.OLDER]: []
         },
         i = {
-          [v.KZ.UNREAD]: {},
-          [v.KZ.TODAY]: {},
-          [v.KZ.YESTERDAY]: {},
-          [v.KZ.OLDER]: {}
+          [C.KZ.UNREAD]: {},
+          [C.KZ.TODAY]: {},
+          [C.KZ.YESTERDAY]: {},
+          [C.KZ.OLDER]: {}
         };
       return null != t && t.length > 0 && (s().each(t, e => {
         let {
           message: t,
           kind: n
         } = e, l = k(t.id);
-        n === v.fL.MENTION ? r[l].push(t) : t.channel_id in i[l] ? i[l][t.channel_id].push(t) : i[l][t.channel_id] = [t]
-      }), s().each(P, t => {
-        [...Object.values(i[t]).map(e => e.reverse()), ...r[t].map(e => [e])].sort((e, t) => g.default.compare(t[0].id, e[0].id)).forEach(n => {
+        n === C.fL.MENTION ? r[l].push(t) : t.channel_id in i[l] ? i[l][t.channel_id].push(t) : i[l][t.channel_id] = [t]
+      }), s().each(N, t => {
+        [...Object.values(i[t]).map(e => e.reverse()), ...r[t].map(e => [e])].sort((e, t) => m.default.compare(t[0].id, e[0].id)).forEach(n => {
           e[t].push(n)
         })
       })), e
     }, [t, k, n]),
     G = i.useMemo(() => {
       let e = [];
-      return null == t || n || null == U ? e.push(h()) : 0 === t.length ? e.push((0, r.jsx)(N, {}, "empty-state")) : Z ? e.push(...t.map(e => {
+      return null == t || n || null == U ? e.push(u()) : 0 === t.length ? e.push((0, r.jsx)(w, {}, "empty-state")) : Z ? e.push(...t.map(e => {
         let {
           message: t
         } = e;
-        return p([t], R === m.jP.SIDEBAR, k(t.id) === v.KZ.UNREAD)
-      })) : null != U && s().each(P, t => {
-        0 !== U[t].length && (e.push((0, r.jsx)(I, {
+        return p([t], R === b.jP.SIDEBAR, k(t.id) === C.KZ.UNREAD)
+      })) : null != U && s().each(N, t => {
+        0 !== U[t].length && (e.push((0, r.jsx)(P, {
           group: t,
           isOpen: D[t],
           toggleOpenedState: () => {
             let e = D[t];
-            L(t), (0, b.RZ)({
+            L(t), (0, _.RZ)({
               section: t,
               enabled: !e
             })
           }
-        })), D[t] && e.push(...U[t].map(e => p(e, R === m.jP.SIDEBAR, k(e[0].id) === v.KZ.UNREAD))))
+        })), D[t] && e.push(...U[t].map(e => p(e, R === b.jP.SIDEBAR, k(e[0].id) === C.KZ.UNREAD))))
       }), e
-    }, [n, t, h, D, L, U, Z, p, R, k]);
+    }, [n, t, u, D, L, U, Z, p, R, k]);
   i.useEffect(() => {
     var e, t, r, i, l, o, a;
     if (n) return;
     let s = null != U && 0 === U.UNREAD.length,
       c = null != (a = null != (o = null != (l = null == (e = U) || null == (t = e.TODAY[0]) ? void 0 : t[0]) ? l : null == e || null == (r = e.YESTERDAY[0]) ? void 0 : r[0]) ? o : null == e || null == (i = e.OLDER[0]) ? void 0 : i[0]) ? a : null;
-    y.Z.setInboxReadState(s, c)
+    v.Z.setInboxReadState(s, c)
   }, [U, n]);
   let B = null != t && t.length > 0 && null != a && l,
     F = (0, r.jsx)("div", {
-      className: o()(S.loadMore, {
-        [S.showLoadMore]: B
+      className: o()(x.loadMore, {
+        [x.showLoadMore]: B
       }),
-      children: (0, r.jsx)(u.$jN, {})
+      children: (0, r.jsx)(d.$jN, {})
     }, "loading-more-after");
   return function(e) {
     let {
@@ -214,24 +215,24 @@ function w(e) {
       messagesByCategory: n
     } = e, r = i.useRef(!1), l = null != n && n.UNREAD.length > 0, o = null == n || t, {
       setOpenStateFromUnreads: a
-    } = (0, _.Z)();
+    } = (0, O.Z)();
     i.useEffect(() => {
       o || r.current || (a(l), r.current = !0)
     }, [a, l, o])
   }({
     messagesByCategory: U,
     loadingInitial: n
-  }), (0, b.vU)({
+  }), (0, _.vU)({
     notificationCenterVariant: R,
     wrappedMessages: t,
     groupedUnreadMessages: null == U ? void 0 : U.UNREAD
   }), (0, r.jsx)("div", {
-    className: o()(E, S.messagesPopoutWrap),
-    onClick: x,
-    onDoubleClick: x,
+    className: o()(E, x.messagesPopoutWrap),
+    onClick: I,
+    onDoubleClick: I,
     "aria-label": e["aria-label"],
-    children: (0, r.jsx)(u.Den, {
-      className: o()(S.messagesPopout, j),
+    children: (0, r.jsx)(d.Den, {
+      className: o()(x.messagesPopout, f),
       onScroll: M,
       fade: !0,
       ref: T,

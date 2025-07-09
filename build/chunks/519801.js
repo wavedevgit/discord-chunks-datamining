@@ -29,35 +29,35 @@ function v(e) {
     {
       updatedSubscription: S,
       readySlideId: P,
-      selectedSku: k,
-      selectedStoreListing: N,
+      selectedSku: N,
+      selectedStoreListing: k,
       application: _
     } = (0, d.JL)(),
     E = (0, l.Z)(g.i),
     {
       createMultipleConfettiAt: T
     } = r.useContext(o.h),
-    w = null != (t = null == k ? void 0 : k.name) ? t : "",
+    w = null != (t = null == N ? void 0 : N.name) ? t : "",
     Z = () => {
       C(), null == O || O()
     },
     I = P === m.h8.CONFIRM,
-    A = (0, s.KW)(null != (n = null == k ? void 0 : k.flags) ? n : 0),
-    D = null != N && N.benefits.length > 0 ? x.intl.formatToPlainString(x.t["+IQQVF"], {
-      benefitCount: N.benefits.length
+    A = (0, s.KW)(null != (n = null == N ? void 0 : N.flags) ? n : 0),
+    D = null != k && k.benefits.length > 0 ? x.intl.formatToPlainString(x.t["+IQQVF"], {
+      benefitCount: k.benefits.length
     }) : null;
   return y ? E ? v = (0, i.jsx)(u.h, {
     title: x.intl.format(x.t.ea6tZm, {
       tierName: w
     }),
-    subtitle: null != N && N.benefits.length > 0 ? x.intl.formatToPlainString(x.t.HNepfn, {
+    subtitle: null != k && k.benefits.length > 0 ? x.intl.formatToPlainString(x.t.HNepfn, {
       benefits: D
     }) : null,
     onConfirm: Z,
     confirmCta: x.intl.string(x.t.nlkyw8)
-  }) : (v = null != N && null != _ ? (0, i.jsx)(c.Oc, {
-    icon: N.thumbnail,
-    storeListingBenefits: N.benefits,
+  }) : (v = null != k && null != _ ? (0, i.jsx)(c.Oc, {
+    icon: k.thumbnail,
+    storeListingBenefits: k.benefits,
     application: _,
     title: x.intl.format(x.t["Q+qktb"], {
       tier: w

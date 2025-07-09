@@ -79,12 +79,12 @@ function g(e) {
     }
   }, [T, g]);
   return null == I ? null : (0, r.jsx)(a.zxk, {
-    color: a.zxk.Colors.GREEN,
-    size: a.zxk.Sizes.SMALL,
+    variant: "active",
+    size: "sm",
+    text: I,
     fullWidth: !0,
-    submitting: E || o,
-    onClick: S,
-    children: I
+    loading: E || o,
+    onClick: S
   })
 }
 

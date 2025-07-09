@@ -70,12 +70,12 @@ let P = e => {
       clearTimeout(e), D(!1)
     }
   }, [Z]);
-  let k = (0, b.J_)({
+  let L = (0, b.J_)({
       location: "voice_filter_item",
       autoTrackExposure: !0,
       disable: !f.ZP.canCheckVoiceFilterFilesExist()
     }),
-    L = (0, a.e7)([_.Z], () => _.Z.isVoiceFilterDownloaded(t.id), [t]),
+    k = (0, a.e7)([_.Z], () => _.Z.isVoiceFilterDownloaded(t.id), [t]),
     M = null == E ? void 0 : E.previewSoundURLs,
     [R, F] = i.useState(0),
     {
@@ -107,7 +107,7 @@ let P = e => {
       [S.locked]: T && !w
     }),
     children: [(0, r.jsx)(c.ua7, {
-      shouldShow: k && !L,
+      shouldShow: L && !k,
       "aria-label": j.intl.string(j.t.SQ7qMD),
       text: (0, r.jsxs)("div", {
         className: S.downloadRequiredContent,
@@ -187,7 +187,7 @@ let P = e => {
             variant: "text-xs/medium",
             color: t.underDevelopment ? "header-muted" : "header-primary",
             children: [t.underDevelopment ? "\uD83D\uDEA7 " : "", G]
-          }), k && !L ? (0, r.jsx)(c._8t, {
+          }), L && !k ? (0, r.jsx)(c._8t, {
             size: "xxs"
           }) : null]
         })]

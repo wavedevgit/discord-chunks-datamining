@@ -1,13 +1,13 @@
 /** Chunk was on 89795 **/
 n.d(t, {
   BalanceWidgetEarnedOrbsCoachmarkModal: () => T,
-  E: () => v
+  E: () => S
 });
 var i = n(255367),
   r = n(73800),
   s = n(120356),
-  l = n.n(s),
-  a = n(442837),
+  a = n.n(s),
+  l = n(442837),
   o = n(481060),
   c = n(607070),
   d = n(70097),
@@ -20,59 +20,59 @@ var i = n(255367),
   b = n(335346),
   x = n(981631),
   _ = n(388032),
-  E = n(806539),
-  j = n(293401),
+  j = n(806539),
+  E = n(293401),
   O = n(447489),
   C = n(484885);
-let S = () => {
-    let e = (0, a.e7)([c.Z], () => c.Z.useReducedMotion);
+let v = () => {
+    let e = (0, l.e7)([c.Z], () => c.Z.useReducedMotion);
     return (0, i.jsx)("div", {
-      className: j.centerContent,
+      className: E.centerContent,
       children: e ? (0, i.jsx)("img", {
         src: O.Z,
-        className: j.orbAsset,
+        className: E.orbAsset,
         alt: "Orb"
       }) : (0, i.jsxs)(d.Z, {
         autoPlay: !0,
         loop: !0,
-        className: j.orbAsset,
+        className: E.orbAsset,
         children: [(0, i.jsx)("source", {
           src: C.Z,
           type: "video/webm"
         }), (0, i.jsx)("img", {
           src: O.Z,
-          className: j.orbAsset,
+          className: E.orbAsset,
           alt: "Orb"
         })]
       })
     })
   },
-  v = e => {
+  S = e => {
     let {
       descriptionText: t = _.intl.string(_.t["6If1Cw"]),
       onClose: n = () => {}
     } = e;
     return (0, i.jsxs)("div", {
-      className: l()(j.container, E.baseCardOutline),
+      className: a()(E.container, j.baseCardOutline),
       children: [(0, i.jsx)(f.s, {
         onClick: n
       }), (0, i.jsx)(b.V, {
         rightOffset: 20,
         invertTail: !0,
-        tailSpineClassName: j.coachmarkTailSpine,
-        tailTargetInnerClassName: j.coachmarkTailTargetInner
-      }), (0, i.jsx)(S, {}), (0, i.jsx)("div", {
-        className: j.contentContainer,
+        tailSpineClassName: E.coachmarkTailSpine,
+        tailTargetInnerClassName: E.coachmarkTailTargetInner
+      }), (0, i.jsx)(v, {}), (0, i.jsx)("div", {
+        className: E.contentContainer,
         children: (0, i.jsxs)("div", {
-          className: j.textContainer,
+          className: E.textContainer,
           children: [(0, i.jsx)(o.X6q, {
             variant: "heading-md/bold",
             color: "header-primary",
-            className: j.coachmarkTitle,
+            className: E.coachmarkTitle,
             children: _.intl.string(_.t["D/nzVl"])
           }), (0, i.jsx)(o.Text, {
             variant: "text-sm/medium",
-            className: j.coachmarkDescription,
+            className: E.coachmarkDescription,
             children: t
           })]
         })
@@ -85,7 +85,7 @@ function T(e) {
     backgroundElementRef: t,
     onClickPill: n,
     onClose: s,
-    onCloseCallback: l
+    onCloseCallback: a
   } = e;
   ! function(e, t) {
     if (null != e) {
@@ -103,14 +103,14 @@ function T(e) {
     }
   }(e, ["backgroundElementRef", "onClickPill", "onClose", "onCloseCallback"]);
   let {
-    balance: a
+    balance: l
   } = (0, m.A)(), o = r.useCallback(async () => {
-    await (0, u.j2)(), await s(), l()
-  }, [s, l]), c = r.useCallback(async () => {
+    await (0, u.j2)(), await s(), a()
+  }, [s, a]), c = r.useCallback(async () => {
     await o(), n()
   }, [n, o]);
   return (0, i.jsxs)(h.E9, {
-    className: j.coachmarkModalContainer,
+    className: E.coachmarkModalContainer,
     backgroundElementRef: t,
     onGetBoundingRect: x.dG4,
     getOffsetsRelativeToElement: () => ({
@@ -127,9 +127,9 @@ function T(e) {
     children: [(0, i.jsx)(g.A4, {
       isInModalOverlay: !0,
       onClick: c,
-      balance: a,
+      balance: l,
       balanceWidgetMode: p.b.DEFAULT
-    }), (0, i.jsx)(v, {
+    }), (0, i.jsx)(S, {
       onClose: o
     })]
   })

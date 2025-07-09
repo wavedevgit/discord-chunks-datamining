@@ -33,9 +33,9 @@ var r = n(255367),
   I = n(470623),
   E = n(858543),
   R = n(265641),
-  k = n(883728),
-  M = n(39154),
-  Z = n(712950),
+  M = n(883728),
+  Z = n(39154),
+  k = n(712950),
   A = n(406432),
   L = n(169525),
   F = n(566006),
@@ -110,7 +110,7 @@ let ec = i.memo(function(e) {
           firstMessage: t,
           formatInline: n = !0,
           noStyleAndInteraction: r = !0
-        } = e, a = (0, Z.p)(), l = i.useMemo(() => null != t ? (0, M.Z)(t, null == t ? void 0 : t.messageSnapshots[0]) : null, [t]), {
+        } = e, a = (0, k.p)(), l = i.useMemo(() => null != t ? (0, Z.Z)(t, null == t ? void 0 : t.messageSnapshots[0]) : null, [t]), {
           hasSpoilerEmbeds: s,
           content: o
         } = i.useMemo(() => (null == l ? void 0 : l.content) != null && "" !== l.content ? (0, z.ZP)(l, {
@@ -174,7 +174,7 @@ let ec = i.memo(function(e) {
     {
       handleLeftClick: P,
       handleRightClick: E
-    } = (0, k.Z)({
+    } = (0, M.Z)({
       facepileRef: S,
       goToThread: n,
       channel: d

@@ -7,7 +7,7 @@ var r = n(255367);
 n(73800);
 var i = n(952265),
   a = n(82659),
-  o = n(481060),
+  o = n(755721),
   s = n(468026),
   l = n(724723),
   c = n(388032);
@@ -97,7 +97,7 @@ let p = {
       return (0, r.jsx)(s.default, _(d({}, e), {
         title: t,
         body: n,
-        confirmColor: "critical-primary" === p ? o.Ttl.RED : o.Ttl.BRAND,
+        confirmColor: "critical-primary" === p ? o.Tt.RED : o.Tt.BRAND,
         confirmText: f,
         cancelText: h,
         onConfirm: m,

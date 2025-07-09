@@ -14,10 +14,10 @@ let r = function(e) {
       behavior: "smooth",
       block: "start"
     }))
-  }, [t]), [r, s] = (0, i.useState)(Object.fromEntries(e.map(e => [e, !1]))), [l, a] = (0, i.useState)(e[0]);
+  }, [t]), [r, s] = (0, i.useState)(Object.fromEntries(e.map(e => [e, !1]))), [a, l] = (0, i.useState)(e[0]);
   (0, i.useEffect)(() => {
     let e = Object.keys(r).filter(e => r[e]);
-    e.length > 0 && a(e[0])
+    e.length > 0 && l(e[0])
   }, [r]);
   let o = (0, i.useRef)({});
   return (0, i.useEffect)(() => {
@@ -69,7 +69,7 @@ let r = function(e) {
       scrollToSection: () => n(t),
       order: i
     }, e), {}), [e, n]),
-    activeSectionId: l,
-    setActiveSectionId: a
+    activeSectionId: a,
+    setActiveSectionId: l
   }
 }

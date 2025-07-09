@@ -6,8 +6,8 @@ r.d(t, {
 var n = r(73800),
   i = r(442837),
   l = r(626135),
-  o = r(74538),
-  a = r(381585),
+  a = r(74538),
+  o = r(381585),
   s = r(597688),
   c = r(884697),
   u = r(82892),
@@ -15,10 +15,10 @@ var n = r(73800),
 
 function p(e, t) {
   let r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "product",
-    p = (0, a.sp)(),
+    p = (0, o.sp)(),
     v = (0, i.e7)([s.Z], () => s.Z.getProduct(e)),
     b = (0, u.x)(),
-    f = o.ZP.canUseCollectibles(b),
+    f = a.ZP.canUseCollectibles(b),
     m = n.useRef(null),
     h = n.useCallback(() => {
       let n = null != v ? (0, c.Vw)(v, f, !1) : null,

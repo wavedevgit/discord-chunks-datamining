@@ -1,19 +1,19 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  D: () => a
+  D: () => l
 });
 var i = n(255367);
 n(73800);
 var r = n(245364),
   s = n(622999),
-  l = n(246652);
-let a = e => {
+  a = n(246652);
+let l = e => {
   let {
     errorLabel: t,
     children: n,
-    elementOptions: a
+    elementOptions: l
   } = e, o = Date.now();
-  return (0, i.jsx)(l.k, {
+  return (0, i.jsx)(a.k, {
     label: t,
     children: (0, i.jsx)(r.Elements, {
       stripe: (0, s.d2)(),
@@ -38,7 +38,7 @@ let a = e => {
         mode: "setup",
         currency: "usd",
         setup_future_usage: "off_session"
-      }, a),
+      }, l),
       children: n
     })
   }, o)

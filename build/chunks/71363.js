@@ -1,12 +1,12 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => v
+  Z: () => S
 }), n(388685);
 var i = n(255367),
   r = n(73800),
   s = n(120356),
-  l = n.n(s),
-  a = n(442837),
+  a = n.n(s),
+  l = n(442837),
   o = n(622535),
   c = n(481060),
   d = n(607070),
@@ -19,15 +19,15 @@ var i = n(255367),
   b = n(166021),
   x = n(22189),
   _ = n(391110),
-  E = n(75077),
-  j = n(981631),
+  j = n(75077),
+  E = n(981631),
   O = n(388032),
   C = n(614729),
-  S = n(865215);
-let v = e => {
+  v = n(865215);
+let S = e => {
   let t, n, {
       isAllPerksVisible: s,
-      setIsAllPerksVisible: v,
+      setIsAllPerksVisible: S,
       previousComponent: T
     } = e,
     N = r.useRef(null),
@@ -40,14 +40,14 @@ let v = e => {
       analyticsLocations: A
     } = (0, m.ZP)(u.Z.PREMIUM_SUBSCRIBER_NITRO_HOME),
     [P, R] = r.useState(!1),
-    D = (0, a.e7)([d.Z], () => d.Z.useReducedMotion),
-    Z = (0, E.mN)(),
+    D = (0, l.e7)([d.Z], () => d.Z.useReducedMotion),
+    Z = (0, j.mN)(),
     {
       fractionalState: w
     } = (0, p.Z)(),
     k = (0, h.W)();
   return Z ? (t = O.intl.string(O.t["+vt7w8"]), n = O.intl.string(O.t.LgHbnJ)) : (t = O.intl.string(O.t.LgHbnJ), n = O.intl.string(O.t["+vt7w8"])), (0, i.jsx)(c.yWw, {
-    className: l()(C.allPerksScroller, {
+    className: a()(C.allPerksScroller, {
       [C.open]: s,
       [C.openCloseReduceMotion]: D
     }),
@@ -59,7 +59,7 @@ let v = e => {
         children: [(0, i.jsx)(f.Z, {
           className: C.heroHeading,
           onBackClick: () => {
-            v(!1), g.default.track(j.rMx.NITRO_HOME_NAVIGATION, {
+            S(!1), g.default.track(E.rMx.NITRO_HOME_NAVIGATION, {
               current_component: _.MQ.SEE_ALL,
               next_component: T,
               interaction_component: "Back Button"
@@ -74,7 +74,7 @@ let v = e => {
             children: t
           }), (0, i.jsx)(b.Z, {
             className: C.cardCarousel,
-            cards: (0, E.ZM)({
+            cards: (0, j.ZM)({
               perksCards: y,
               variant: _.gM.CARD_CAROUSEL_FIRST_ROW,
               isPremiumSubscriber: Z,
@@ -90,7 +90,7 @@ let v = e => {
             children: n
           }), (0, i.jsx)(b.Z, {
             className: C.cardCarousel,
-            cards: (0, E.ZM)({
+            cards: (0, j.ZM)({
               perksCards: y,
               variant: _.gM.CARD_CAROUSEL_SECOND_ROW,
               isPremiumSubscriber: Z,
@@ -106,7 +106,7 @@ let v = e => {
             children: O.intl.string(O.t.LTaxu7)
           }), (0, i.jsx)(b.Z, {
             className: C.cardCarousel,
-            cards: (0, E.ZM)({
+            cards: (0, j.ZM)({
               perksCards: y,
               variant: _.gM.CARD_CAROUSEL_THIRD_ROW,
               isPremiumSubscriber: Z,
@@ -121,7 +121,7 @@ let v = e => {
         }), (0, i.jsx)(o.$, {
           innerRef: I,
           onChange: e => {
-            e && !P && (g.default.track(j.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+            e && !P && (g.default.track(E.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
               location_stack: A
             }), R(!0))
           },
@@ -130,7 +130,7 @@ let v = e => {
             className: C.bottomOfPageVisibilitySensor
           })
         }), (0, i.jsx)("img", {
-          src: S,
+          src: v,
           className: C.bottomIllustration,
           width: 112,
           height: 85,

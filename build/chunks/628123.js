@@ -12,7 +12,7 @@ var r = n(255367),
   c = n(286379),
   u = n(903772),
   d = n(442837),
-  f = n(481060),
+  f = n(755721),
   _ = n(386506),
   p = n(304761),
   h = n(865427),
@@ -48,8 +48,8 @@ function A() {
       t(!1)
     }
   };
-  return (0, r.jsx)(f.zxk, {
-    size: f.PhG.LARGE,
+  return (0, r.jsx)(f.zx, {
+    size: f.Ph.LARGE,
     onClick: n,
     submitting: e,
     className: T.clearOverrideButton,
@@ -116,8 +116,8 @@ class C extends i.PureComponent {
         }),
         n = (0, r.jsxs)("div", {
           className: T.buttons,
-          children: [(0, r.jsx)(f.zxk, {
-            size: f.PhG.LARGE,
+          children: [(0, r.jsx)(f.zx, {
+            size: f.Ph.LARGE,
             onClick: this._handleSubmitReport,
             children: I.intl.string(I.t["+hivLS"])
           }), (0, r.jsx)(A, {})]

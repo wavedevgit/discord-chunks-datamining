@@ -1,16 +1,16 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  J: () => a
+  J: () => l
 });
 var i = n(255367);
 n(73800);
 var r = n(657707),
   s = n(780605),
-  l = n(388032);
+  a = n(388032);
 
-function a(e) {
+function l(e) {
   var t, n, {
-      "aria-label": a,
+      "aria-label": l,
       playing: o
     } = e,
     c = function(e, t) {
@@ -46,7 +46,7 @@ function a(e) {
     }
     return e
   }({}, c), n = n = {
-    "aria-label": null != a ? a : o ? l.intl.string(l.t.ZcgDJS) : l.intl.string(l.t.RscU7O),
+    "aria-label": null != l ? l : o ? a.intl.string(a.t.ZcgDJS) : a.intl.string(a.t.RscU7O),
     icon: o ? r.fpf : r.o1U,
     variant: "overlay-secondary",
     fullWidth: !1,

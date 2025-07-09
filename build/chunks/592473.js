@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  o = n.n(l),
-  a = n(772848),
+  a = n.n(l),
+  o = n(772848),
   s = n(481060),
   c = n(871499),
   u = n(388032),
@@ -17,14 +17,14 @@ function p(e) {
     width: t = 24,
     height: n = 24,
     isBadged: l = !1
-  } = e, [o] = i.useState(() => (0, a.Z)());
+  } = e, [a] = i.useState(() => (0, o.Z)());
   return (0, r.jsxs)("svg", {
     width: t,
     height: n,
     viewBox: "0 0 24 24",
     children: [(0, r.jsx)("defs", {
       children: (0, r.jsxs)("mask", {
-        id: o,
+        id: a,
         children: [(0, r.jsx)("rect", {
           fill: "white",
           width: "100%",
@@ -37,7 +37,7 @@ function p(e) {
         })]
       })
     }), (0, r.jsx)("g", {
-      mask: "url(#".concat(o, ")"),
+      mask: "url(#".concat(a, ")"),
       children: (0, r.jsx)(s.E0I, {})
     })]
   })
@@ -49,7 +49,7 @@ function h(e) {
     numRequestToSpeak: n
   } = e, i = n > 0;
   return (0, r.jsxs)("div", {
-    className: o()(d.raisedHandIcon, t),
+    className: a()(d.raisedHandIcon, t),
     children: [(0, r.jsx)(p, {
       isBadged: i
     }), i ? (0, r.jsx)(s.Text, {
@@ -65,8 +65,8 @@ function f(e) {
     toggleRequestToSpeakSidebar: t,
     showRequestToSpeakSidebar: n,
     className: l,
-    numRequestToSpeak: o,
-    onClick: a
+    numRequestToSpeak: a,
+    onClick: o
   } = e, s = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
@@ -83,8 +83,8 @@ function f(e) {
     return i
   }(e, ["toggleRequestToSpeakSidebar", "showRequestToSpeakSidebar", "className", "numRequestToSpeak", "onClick"]);
   let d = i.useCallback(() => {
-    null == a || a(), t()
-  }, [a, t]);
+    null == o || o(), t()
+  }, [o, t]);
   return (0, r.jsx)(c.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -107,7 +107,7 @@ function f(e) {
     label: n ? u.intl.string(u.t.gKGz7O) : u.intl.string(u.t.ImQ4dX),
     className: l,
     iconComponent: () => (0, r.jsx)(h, {
-      numRequestToSpeak: o,
+      numRequestToSpeak: a,
       className: l
     })
   }, s))

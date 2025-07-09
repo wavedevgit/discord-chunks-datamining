@@ -55,8 +55,8 @@ let g = function(e) {
     childrenRepliedMessage: h,
     childrenExecutedCommand: O,
     childrenHeader: y,
-    childrenSystemMessage: j,
-    childrenButtons: v,
+    childrenSystemMessage: v,
+    childrenButtons: j,
     childrenMessageContent: P,
     childrenAccessories: x,
     messageRef: C,
@@ -87,8 +87,8 @@ let g = function(e) {
     }
     return l
   }(e, ["className", "compact", "contentOnly", "zalgo", "preview", "disableInteraction", "childrenRepliedMessage", "childrenExecutedCommand", "childrenHeader", "childrenSystemMessage", "childrenButtons", "childrenMessageContent", "childrenAccessories", "messageRef", "focusProps", "hasThread", "isSystemMessage", "hasReply", "author", "onMouseEnter", "onMouseLeave"]);
-  let k = (0, u.ZP)(null == T ? void 0 : T.guildId, null == T ? void 0 : T.authorId) && (0, c.S2)(T),
-    [I, M] = l.useState(!1),
+  let I = (0, u.ZP)(null == T ? void 0 : T.guildId, null == T ? void 0 : T.authorId) && (0, c.S2)(T),
+    [k, M] = l.useState(!1),
     D = l.useCallback(e => {
       M(!0), null == Z || Z(e)
     }, [Z]),
@@ -97,13 +97,13 @@ let g = function(e) {
     }, [R]),
     L = (0, r.jsx)(s.d.Provider, {
       value: {
-        animate: I,
+        animate: k,
         setAnimate: M
       },
       children: (0, r.jsx)(a.tEY, m(p({}, w), {
         children: (0, r.jsxs)("div", m(p({
           className: i()(t, {
-            [d.gradient]: k,
+            [d.gradient]: I,
             [d.wrapper]: !0,
             [d.contentOnly]: o,
             [d.compact]: n,
@@ -121,10 +121,10 @@ let g = function(e) {
           onMouseLeave: A,
           children: [h, O, (0, r.jsxs)("div", {
             className: d.contents,
-            children: [j, y, null == j && P]
-          }), x, null != v ? (0, r.jsx)("div", {
+            children: [v, y, null == v && P]
+          }), x, null != j ? (0, r.jsx)("div", {
             className: d.buttonContainer,
-            children: v
+            children: j
           }) : null]
         }))
       }))

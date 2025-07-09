@@ -5,11 +5,11 @@ n.d(t, {
 var l = n(990547),
   i = n(283693),
   r = n(570140),
-  s = n(573261),
-  a = n(981631);
+  a = n(573261),
+  s = n(981631);
 let o = {
-  signup: (e, t) => s.Z.post({
-    url: a.ANM.HUB_WAITLIST_SIGNUP,
+  signup: (e, t) => a.Z.post({
+    url: s.ANM.HUB_WAITLIST_SIGNUP,
     body: {
       email: e,
       school: t
@@ -27,8 +27,8 @@ let o = {
     },
     rejectWithError: !1
   }),
-  sendVerificationEmail: async (e, t, n) => (await s.Z.post({
-    url: a.ANM.HUB_EMAIL_VERIFY_SEND,
+  sendVerificationEmail: async (e, t, n) => (await a.Z.post({
+    url: s.ANM.HUB_EMAIL_VERIFY_SEND,
     body: {
       email: e,
       guild_id: n,
@@ -50,8 +50,8 @@ let o = {
   async verify(e) {
     if (null != e) try {
       var t;
-      let n = null == (t = (await s.Z.post({
-        url: a.ANM.HUB_EMAIL_VERIFY,
+      let n = null == (t = (await a.Z.post({
+        url: s.ANM.HUB_EMAIL_VERIFY,
         body: {
           token: e
         },
@@ -74,8 +74,8 @@ let o = {
   async verifyCode(e, t, n) {
     if (null != e) try {
       var i;
-      let o = await s.Z.post({
-          url: a.ANM.HUB_EMAIL_VERIFY_CODE,
+      let o = await a.Z.post({
+          url: s.ANM.HUB_EMAIL_VERIFY_CODE,
           body: {
             code: e,
             guild_id: t,

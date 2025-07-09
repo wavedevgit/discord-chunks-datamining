@@ -1,89 +1,92 @@
 /** Chunk was on 51343 **/
-a.d(t, {
+t.d(a, {
   m: () => h
 });
-var l = a(255367),
-  r = a(73800),
-  s = a(442837),
-  n = a(481060),
-  o = a(600164),
-  c = a(553795),
-  i = a(424071),
-  d = a(239358),
-  x = a(388032),
-  u = a(475286);
+var r = t(255367),
+  s = t(73800),
+  l = t(442837),
+  n = t(481060),
+  i = t(600164),
+  o = t(553795),
+  c = t(424071),
+  d = t(239358),
+  x = t(388032),
+  u = t(475286);
 
 function h(e) {
   let {
-    platformType: t,
-    onContinue: a,
+    platformType: a,
+    onContinue: t,
     onClose: h,
     img: m,
     headerConnect: N,
     headerReconnect: C,
     body: j,
-    learnMoreLink: k,
+    learnMoreLink: p,
     valueProps: v
-  } = e, p = (0, s.e7)([c.Z], () => {
-    let e = c.Z.getAccount(null, t);
+  } = e, k = (0, l.e7)([o.Z], () => {
+    let e = o.Z.getAccount(null, a);
     return (null == e ? void 0 : e.twoWayLink) === !1
   });
-  return (0, l.jsxs)(i.Z, {
-    children: [(0, l.jsxs)(n.xBx, {
-      direction: o.Z.Direction.VERTICAL,
+  return (0, r.jsxs)(c.Z, {
+    children: [(0, r.jsxs)(n.xBx, {
+      direction: i.Z.Direction.VERTICAL,
       className: u.header,
       separator: !1,
-      children: [(0, l.jsxs)("div", {
+      children: [(0, r.jsxs)("div", {
         className: u.illustration,
         children: [m, " "]
-      }), (0, l.jsx)(n.X6q, {
+      }), (0, r.jsx)(n.X6q, {
         className: u.title,
         variant: "heading-xl/extrabold",
-        children: p && null != C ? C : N
-      }), (0, l.jsx)(n.olH, {
+        children: k && null != C ? C : N
+      }), (0, r.jsx)(n.olH, {
         className: u.closeButton,
         onClick: h
       })]
-    }), (0, l.jsxs)(n.hzk, {
+    }), (0, r.jsxs)(n.hzk, {
       className: u.body,
-      children: [(0, l.jsx)(n.Text, {
+      children: [(0, r.jsx)(n.Text, {
         tag: "p",
         variant: "text-md/normal",
         color: "header-secondary",
         children: j
-      }), (0, l.jsx)("div", {
+      }), (0, r.jsx)("div", {
         className: u.valueProps,
-        children: v.map((e, t) => {
+        children: v.map((e, a) => {
           let {
-            label: a,
-            subLabel: s,
+            label: t,
+            subLabel: l,
             icon: n
           } = e;
-          return (0, l.jsxs)(r.Fragment, {
-            children: [(0, l.jsx)(d.Z, {
-              label: a,
-              subLabel: s,
+          return (0, r.jsxs)(s.Fragment, {
+            children: [(0, r.jsx)(d.Z, {
+              label: t,
+              subLabel: l,
               icon: n
-            }, a), t !== v.length - 1 && (0, l.jsx)("div", {
+            }, t), a !== v.length - 1 && (0, r.jsx)("div", {
               className: u.valuePropDivider
             })]
-          }, a)
+          }, t)
         })
-      }), null != k ? (0, l.jsx)(n.Text, {
+      }), null != p ? (0, r.jsx)(n.Text, {
         tag: "p",
         variant: "text-sm/normal",
         color: "header-secondary",
         children: x.intl.format(x.t["/l3n+/"], {
-          helpCenterLink: k
+          helpCenterLink: p
         })
       }) : null]
-    }), (0, l.jsx)(n.mzw, {
+    }), (0, r.jsx)(n.mzw, {
       className: u.footer,
-      children: (0, l.jsx)(n.zxk, {
+      children: (0, r.jsx)("div", {
+        "data-button-hoisted-classname-wrapper": !0,
         className: u.footerButton,
-        color: n.zxk.Colors.BRAND,
-        onClick: a,
-        children: x.intl.string(x.t["3PatS0"])
+        children: (0, r.jsx)(n.zxk, {
+          variant: "primary",
+          text: x.intl.string(x.t["3PatS0"]),
+          onClick: t
+        })
       })
     })]
   })

@@ -1,51 +1,52 @@
 /** Chunk was on 67127 **/
 n.r(t), n.d(t, {
-  VerifyAccountDeekLink: () => m,
-  VerifyAccountLoading: () => S,
-  default: () => v
+  VerifyAccountDeekLink: () => E,
+  VerifyAccountLoading: () => m,
+  default: () => S
 }), n(388685), n(704826), n(35282), n(457542);
 var r = n(255367),
   c = n(73800),
   o = n(114858),
   l = n(873546),
   a = n(604039),
-  i = n(481060),
-  s = n(457330),
-  u = n(733427),
-  d = n(169382),
-  f = n(726542),
-  p = n(536285),
-  O = n(591759),
-  g = n(656649),
-  N = n(981631),
-  C = n(388032),
-  b = n(5194);
-let y = null != window.opener;
+  i = n(755721),
+  s = n(481060),
+  u = n(457330),
+  d = n(733427),
+  f = n(169382),
+  p = n(726542),
+  O = n(536285),
+  g = n(591759),
+  N = n(656649),
+  C = n(981631),
+  b = n(388032),
+  y = n(5194);
+let v = null != window.opener;
 
-function v() {
+function S() {
   var e, t;
   let n = (0, o.k6)(),
-    i = (0, d.l)(),
-    p = i.get("code"),
-    C = i.get("oauth_verifier"),
+    i = (0, f.l)(),
+    s = i.get("code"),
+    O = i.get("oauth_verifier"),
     b = null != (e = i.get("state")) ? e : "",
-    v = i.get("loading"),
-    j = null != (t = i.get("iss")) ? t : void 0,
+    y = i.get("loading"),
+    S = null != (t = i.get("iss")) ? t : void 0,
     {
       type: w
     } = (0, o.UO)(),
-    R = (0, g.vJ)(w),
+    R = (0, N.vJ)(w),
     [A, T] = c.useState(!1),
     [x, D] = c.useState(!1),
-    k = (0, u.Z)(),
-    Z = null == C ? null != p ? p : "" : C;
+    Z = (0, d.Z)(),
+    k = null == O ? null != s ? s : "" : O;
   c.useEffect(() => {
     let e;
-    if (null != v) return;
+    if (null != y) return;
     for (let t of i.keys()) t.startsWith("openid.") && (null == e && (e = {}), e[t] = i.get(t));
-    let t = (0, g.vJ)(w);
+    let t = (0, N.vJ)(w);
     !async function() {
-      if (null == t || !f.Z.isSupported(t)) return;
+      if (null == t || !p.Z.isSupported(t)) return;
 
       function r(e) {
         let {
@@ -58,34 +59,34 @@ function v() {
             return
           }
           if ([200, 204].includes(r)) {
-            n.replace(N.Z5c.CONNECTIONS_SUCCESS(t)), y && window.close();
+            n.replace(C.Z5c.CONNECTIONS_SUCCESS(t)), v && window.close();
             return
-          }(null == c ? void 0 : c.code) != null && i.append("error-code", c.code), n.replace("".concat(N.Z5c.CONNECTIONS_ERROR(t), "?").concat(i.toString()))
+          }(null == c ? void 0 : c.code) != null && i.append("error-code", c.code), n.replace("".concat(C.Z5c.CONNECTIONS_ERROR(t), "?").concat(i.toString()))
         }
       }
-      if (await E({
+      if (await _({
           platformType: t,
-          code: Z,
+          code: k,
           state: b,
           openidParams: e,
-          iss: j,
+          iss: S,
           handleCallbackResponse: r
         })) return;
-      let c = await _(t, b, Z, e, j);
-      0 === c ? T(!0) : 1 === c ? n.replace("".concat(N.Z5c.CONNECTIONS_ERROR(t), "?").concat(i.toString())) : 3 === c ? l.tq ? D(!0) : n.replace("".concat(N.Z5c.CONNECTIONS_ERROR(t), "?").concat(i.toString())) : h({
+      let c = await h(t, b, k, e, S);
+      0 === c ? T(!0) : 1 === c ? n.replace("".concat(C.Z5c.CONNECTIONS_ERROR(t), "?").concat(i.toString())) : 3 === c ? l.tq ? D(!0) : n.replace("".concat(C.Z5c.CONNECTIONS_ERROR(t), "?").concat(i.toString())) : j({
         platformType: t,
         state: b,
         handleCallbackResponse: r,
         handleCallbackError: e => {
           var r;
-          (null == e || null == (r = e.body) ? void 0 : r.code) != null && i.append("error-code", e.body.code), n.replace("".concat(N.Z5c.CONNECTIONS_ERROR(t), "?").concat(i.toString()))
+          (null == e || null == (r = e.body) ? void 0 : r.code) != null && i.append("error-code", e.body.code), n.replace("".concat(C.Z5c.CONNECTIONS_ERROR(t), "?").concat(i.toString()))
         },
         openidParams: e,
-        code: Z,
-        iss: j
+        code: k,
+        iss: S
       })
     }()
-  }, [Z, n, v, w, i, b, j]), c.useEffect(() => {
+  }, [k, n, y, w, i, b, S]), c.useEffect(() => {
     let e;
     if (!A) return;
     let t = 0;
@@ -94,88 +95,88 @@ function v() {
       let {
         handoff_status: c,
         success_redirect: o
-      } = (await s.Z.getHandoffStatus(R, b)).body;
+      } = (await u.Z.getHandoffStatus(R, b)).body;
       if (c === a.g.HANDOFF_SUCCESS)
-        if (null == O.Z.toURLSafe(o)) return n.replace(N.Z5c.CONNECTIONS_SUCCESS(R));
+        if (null == g.Z.toURLSafe(o)) return n.replace(C.Z5c.CONNECTIONS_SUCCESS(R));
         else {
           window.location = o;
           return
-        } if (c === a.g.HANDOFF_ERROR || t >= 10) return n.replace(N.Z5c.CONNECTIONS_ERROR(R));
+        } if (c === a.g.HANDOFF_ERROR || t >= 10) return n.replace(C.Z5c.CONNECTIONS_ERROR(R));
       e = setTimeout(() => {
-        k() && (t += 1, r())
+        Z() && (t += 1, r())
       }, 1e3)
     }
     return r(), () => {
       null != e && clearTimeout(e)
     }
-  }, [k, n, R, A, b]);
+  }, [Z, n, R, A, b]);
   let I = c.useMemo(() => {
-    if (null != R) return "discord://".concat(N.Z5c.CONNECTIONS(R), "/?").concat(i.toString())
+    if (null != R) return "discord://".concat(C.Z5c.CONNECTIONS(R), "/?").concat(i.toString())
   }, [R, i]);
-  return null != R && f.Z.isSupported(R) ? x ? (0, r.jsx)(m, {
+  return null != R && p.Z.isSupported(R) ? x ? (0, r.jsx)(E, {
     platformType: R,
     deeplink: I,
     onClick: () => {
       D(!1), T(!0)
     }
-  }) : (0, r.jsx)(S, {
+  }) : (0, r.jsx)(m, {
     platformType: R
   }) : null
 }
 
-function S(e) {
+function m(e) {
   let {
     platformType: t
-  } = e, n = f.Z.get(t);
-  return (0, r.jsxs)(g.UV, {
+  } = e, n = p.Z.get(t);
+  return (0, r.jsxs)(N.UV, {
     platformType: t,
     children: [(0, r.jsx)("div", {
-      className: b.message,
-      children: C.intl.format(C.t.AOKOe3, {
+      className: y.message,
+      children: b.intl.format(b.t.AOKOe3, {
         name: n.name
       })
     }), (0, r.jsx)("div", {
-      className: b.buttonContainer,
-      children: (0, r.jsx)(i.zxk, {
-        className: b.btn,
+      className: y.buttonContainer,
+      children: (0, r.jsx)(i.zx, {
+        className: y.btn,
         disabled: !0,
-        children: (0, r.jsx)(i.$jN, {
-          itemClassName: b.spinnerItem
+        children: (0, r.jsx)(s.$jN, {
+          itemClassName: y.spinnerItem
         })
       })
     })]
   })
 }
 
-function m(e) {
+function E(e) {
   let {
     deeplink: t,
     onClick: n,
     platformType: c
-  } = e, o = f.Z.get(c);
-  return (0, r.jsx)(g.UV, {
+  } = e, o = p.Z.get(c);
+  return (0, r.jsx)(N.UV, {
     platformType: c,
     children: (0, r.jsxs)("div", {
-      className: b.buttonContainer,
+      className: y.buttonContainer,
       children: [(0, r.jsx)("div", {
-        className: b.message,
-        children: C.intl.format(C.t["6ig6i4"], {
+        className: y.message,
+        children: b.intl.format(b.t["6ig6i4"], {
           connectionName: o.name
         })
-      }), (0, r.jsx)(i.P3F, {
+      }), (0, r.jsx)(s.P3F, {
         tag: "a",
         href: t,
         onClick: n,
         target: "_self",
-        children: (0, r.jsx)(i.zxk, {
-          className: b.btn,
-          children: C.intl.string(C.t.flvacH)
+        children: (0, r.jsx)(i.zx, {
+          className: y.btn,
+          children: b.intl.string(b.t.flvacH)
         })
       })]
     })
   })
 }
-async function E(e) {
+async function _(e) {
   let {
     platformType: t,
     code: n,
@@ -184,10 +185,10 @@ async function E(e) {
     iss: o,
     handleCallbackResponse: a
   } = e;
-  if (l.tq || y) return !1;
+  if (l.tq || v) return !1;
   try {
     var i, s;
-    let e = await p.default.request(N.Etm.CONNECTIONS_CALLBACK, (i = function(e) {
+    let e = await O.default.request(C.Etm.CONNECTIONS_CALLBACK, (i = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -221,16 +222,16 @@ async function E(e) {
     })(Object(s)).forEach(function(e) {
       Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(s, e))
     }), i)).finally(() => {
-      p.default.disconnect()
+      O.default.disconnect()
     });
     return a(e), !0
   } catch (e) {
     return !1
   }
 }
-async function _(e, t, n, r, c) {
+async function h(e, t, n, r, c) {
   try {
-    return await s.Z.sessionHandoff(e, t, n, r, c), 0
+    return await u.Z.sessionHandoff(e, t, n, r, c), 0
   } catch (e) {
     var o, l;
     if ((null == e || null == (o = e.body) ? void 0 : o.code) === 10020) return 2;
@@ -238,7 +239,7 @@ async function _(e, t, n, r, c) {
     return 1
   }
 }
-async function h(e) {
+async function j(e) {
   let {
     platformType: t,
     state: n,
@@ -249,12 +250,12 @@ async function h(e) {
     iss: a
   } = e;
   try {
-    let e = await s.Z.callback(t, {
+    let e = await u.Z.callback(t, {
       code: l,
       openid_params: o,
       state: n,
       iss: a
-    }, !y);
+    }, !v);
     return r(e), !0
   } catch (e) {
     return c(e), !0

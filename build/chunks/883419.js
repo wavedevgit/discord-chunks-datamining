@@ -30,8 +30,8 @@ function S(e) {
     backButtonEligible: l,
     prevStep: S,
     handleStepChange: P,
-    trialFooterMessageOverride: k,
-    reviewWarningMessage: N,
+    trialFooterMessageOverride: N,
+    reviewWarningMessage: k,
     planGroup: _,
     openInvoiceId: E,
     analyticsData: T,
@@ -42,38 +42,38 @@ function S(e) {
     application: A,
     setUpdatedSubscription: D,
     contextMetadata: L,
-    currencies: R,
-    paymentSources: B,
-    priceOptions: F,
-    purchaseError: M,
-    purchaseTokenAuthState: H,
+    currencies: B,
+    paymentSources: F,
+    priceOptions: R,
+    purchaseError: H,
+    purchaseTokenAuthState: M,
     selectedPlan: W,
-    selectedSku: z,
-    setCurrency: G,
+    selectedSku: G,
+    setCurrency: z,
     setPaymentSourceId: K,
-    setPurchaseState: Y,
-    setPurchaseError: V,
-    purchaseState: q,
-    subscriptionMetadataRequest: Q,
+    setPurchaseState: V,
+    setPurchaseError: q,
+    purchaseState: Q,
+    subscriptionMetadataRequest: Y,
     setHasAcceptedTerms: J
   } = (0, p.JL)();
   a()(null != W, "Expected plan to be selected");
   let X = r.useRef(null),
     [U, $] = (0, c.Z)(!1, 500),
-    ee = null == Q ? void 0 : Q.guild_id,
+    ee = null == Y ? void 0 : Y.guild_id,
     et = (0, o.e7)([f.Z], () => f.Z.getGuild(ee), [ee]),
     [en, ei] = r.useState(null),
-    er = (0, m.KW)(null != (t = null == z ? void 0 : z.flags) ? t : 0);
+    er = (0, m.KW)(null != (t = null == G ? void 0 : G.flags) ? t : 0);
   r.useEffect(() => {
-    null != M && null != X.current && X.current.scrollIntoView({
+    null != H && null != X.current && X.current.scrollIntoView({
       behavior: "smooth"
     })
-  }, [M]);
+  }, [H]);
   let el = r.useCallback(e => {
       D(e), P(b.h8.CONFIRM)
     }, [P, D]),
     ea = r.useRef(null);
-  if (q === h.A.PURCHASING) return (0, i.jsx)(v.Z, {});
+  if (Q === h.A.PURCHASING) return (0, i.jsx)(v.Z, {});
   let eo = () => {
     P(b.h8.ADD_PAYMENT_STEPS)
   };
@@ -113,25 +113,25 @@ function S(e) {
       }), null == I ? (0, i.jsx)(u.Z, {
         selectedPlanId: W.id,
         planGroup: _,
-        paymentSources: B,
+        paymentSources: F,
         onPaymentSourceChange: e => K(null != e ? e.id : null),
-        priceOptions: F,
-        currencies: R,
-        onCurrencyChange: e => G(e),
+        priceOptions: R,
+        currencies: B,
+        onCurrencyChange: e => z(e),
         handlePaymentSourceAdd: () => P(b.h8.ADD_PAYMENT_STEPS),
         setHasAcceptedTerms: J,
         legalTermsNodeRef: ea,
         hasLegalTermsFlash: U,
-        trialFooterMessageOverride: k,
-        reviewWarningMessage: N,
-        metadata: er ? void 0 : Q,
-        purchaseState: q,
+        trialFooterMessageOverride: N,
+        reviewWarningMessage: k,
+        metadata: er ? void 0 : Y,
+        purchaseState: Q,
         hideSubscriptionDetails: !0,
         handleClose: Z
       }) : (0, i.jsx)(d.Z, {
         premiumSubscription: I,
-        paymentSources: B,
-        priceOptions: F,
+        paymentSources: F,
+        priceOptions: R,
         onPaymentSourceChange: e => K(null != e ? e.id : null),
         onPaymentSourceAdd: eo,
         planId: W.id,
@@ -142,31 +142,31 @@ function S(e) {
           ei(e)
         },
         planGroup: _,
-        currencies: R,
-        onCurrencyChange: e => G(e),
+        currencies: B,
+        onCurrencyChange: e => z(e),
         hasOpenInvoice: null != E,
-        purchaseState: q,
+        purchaseState: Q,
         handleClose: Z
       })]
     }), (0, i.jsx)(j.O3, {
       children: (0, i.jsx)(x.Z, {
         premiumSubscription: null != I ? I : null,
-        setPurchaseState: Y,
+        setPurchaseState: V,
         onBack: () => null != S && P(S),
         onNext: el,
-        onPurchaseError: e => V(e),
+        onPurchaseError: e => q(e),
         legalTermsNodeRef: ea,
         flashLegalTerms: () => $(!0),
         analyticsLocation: w,
         baseAnalyticsData: T,
         flowStartTime: L.startTime,
         planGroup: _,
-        purchaseTokenAuthState: H,
+        purchaseTokenAuthState: M,
         openInvoiceId: E,
-        metadata: er ? void 0 : Q,
+        metadata: er ? void 0 : Y,
         backButtonEligible: l,
         invoiceError: en,
-        disablePurchase: (null == Q ? void 0 : Q.guild_id) == null && !er,
+        disablePurchase: (null == Y ? void 0 : Y.guild_id) == null && !er,
         onPaymentSourceAdd: eo
       })
     })]

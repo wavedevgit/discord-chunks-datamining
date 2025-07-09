@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(255367),
   r = n(73800),
   s = n(524437),
-  l = n(481060),
-  a = n(230711),
+  a = n(481060),
+  l = n(230711),
   o = n(768581),
   c = n(63063),
   d = n(709054),
@@ -20,7 +20,7 @@ var i = n(255367),
   x = n(388032),
   _ = n(296281);
 
-function E(e) {
+function j(e) {
   let {
     applications: t
   } = e, n = r.useMemo(() => t.sort((e, t) => d.default.compare(t.id, e.id)), [t]), s = r.useMemo(() => {
@@ -34,7 +34,7 @@ function E(e) {
       r = n.length - 3;
     return r > 0 ? x.intl.format(x.t.sHFdTk, {
       gameList: t,
-      plusMoreHook: (e, t) => (0, i.jsx)(l.Text, {
+      plusMoreHook: (e, t) => (0, i.jsx)(a.Text, {
         tag: "span",
         variant: "text-sm/medium",
         color: "text-muted",
@@ -50,14 +50,14 @@ function E(e) {
       if (null == r) break;
       let {
         icon: s,
-        name: a,
+        name: l,
         id: c
       } = r, d = o.ZP.getApplicationIconURL({
         id: c,
         icon: s
       });
-      e.push((0, i.jsx)(l.ua7, {
-        text: a,
+      e.push((0, i.jsx)(a.ua7, {
+        text: l,
         children: e => (0, i.jsx)("img", function(e, t) {
           return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
             var n = Object.keys(e);
@@ -88,7 +88,7 @@ function E(e) {
           return e
         }({}, e), {
           src: d,
-          "aria-label": a,
+          "aria-label": l,
           className: _.icon
         }))
       }, c))
@@ -96,33 +96,33 @@ function E(e) {
     let t = n.length - 3;
     return t > 0 && e.push((0, i.jsx)("div", {
       className: _.moreIcon,
-      children: (0, i.jsx)(l.Text, {
+      children: (0, i.jsx)(a.Text, {
         variant: "text-xs/medium",
         color: "text-default",
         children: "+".concat(t)
       })
     }, "omitted")), e
   }, [n]), u = r.useCallback(() => {
-    a.Z.open(b.oAB.AUTHORIZED_APPS)
+    l.Z.open(b.oAB.AUTHORIZED_APPS)
   }, []);
   return (0, i.jsxs)("div", {
     className: _.header,
     children: [(0, i.jsxs)("div", {
       className: _.gameNamesHeader,
-      children: [(0, i.jsx)(l.Text, {
+      children: [(0, i.jsx)(a.Text, {
         variant: "text-md/normal",
         color: "header-primary",
         children: s
-      }), (0, i.jsxs)(l.P3F, {
+      }), (0, i.jsxs)(a.P3F, {
         onClick: u,
         className: _.manageGamesLink,
-        children: [(0, i.jsx)(l.Text, {
+        children: [(0, i.jsx)(a.Text, {
           variant: "text-xs/normal",
           color: "interactive-normal",
           children: x.intl.format(x.t.oYaYOT, {})
-        }), (0, i.jsx)(l.Fbu, {
+        }), (0, i.jsx)(a.Fbu, {
           size: "xxs",
-          color: l.TVs.colors.INTERACTIVE_NORMAL,
+          color: a.TVs.colors.INTERACTIVE_NORMAL,
           className: _.manageGamesChevron
         })]
       })]
@@ -135,7 +135,7 @@ function E(e) {
   })
 }
 
-function j() {
+function E() {
   let e = u._j.useSetting();
   return (0, i.jsx)(g.U, {
     setting: f.s6.PRIVACY_AND_SAFETY_ALLOW_GAME_FRIEND_DMS,
@@ -168,7 +168,7 @@ function O() {
     children: [(0, i.jsx)(g.H, {
       header: x.intl.string(x.t["ms+TmZ"]),
       description: x.intl.string(x.t["4NN4+/"])
-    }), (0, i.jsx)(l.FXm, {
+    }), (0, i.jsx)(a.FXm, {
       value: t,
       options: n,
       onChange: e => {
@@ -187,20 +187,20 @@ function C() {
     slayerSdkApplications: t
   } = (0, m.Z)(!0);
   return (0, i.jsx)(p.Z, {
-    children: e ? (0, i.jsx)(l.$jN, {}) : t.length > 0 ? (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)(E, {
+    children: e ? (0, i.jsx)(a.$jN, {}) : t.length > 0 ? (0, i.jsxs)(i.Fragment, {
+      children: [(0, i.jsx)(j, {
         applications: t
-      }), (0, i.jsx)(j, {}), (0, i.jsx)("div", {
+      }), (0, i.jsx)(E, {}), (0, i.jsx)("div", {
         className: _.divider
       }), (0, i.jsx)(O, {})]
     }) : (0, i.jsxs)("div", {
       className: _.emptyContainer,
-      children: [(0, i.jsx)(l.Text, {
+      children: [(0, i.jsx)(a.Text, {
         variant: "text-md/medium",
         color: "header-primary",
         className: _.noGamesConnectedText,
         children: x.intl.string(x.t["+0U77e"])
-      }), (0, i.jsx)(l.Text, {
+      }), (0, i.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: "text-muted",
         children: x.intl.format(x.t.V8wClJ, {

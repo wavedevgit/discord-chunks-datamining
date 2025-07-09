@@ -1,6 +1,6 @@
 /** Chunk was on 58121 **/
 t.d(n, {
-  Z: () => A
+  Z: () => k
 }), t(539854);
 var l = t(255367),
   r = t(73800),
@@ -52,7 +52,7 @@ function B(e) {
   return e
 }
 
-function k(e, n) {
+function A(e, n) {
   return n = null != n ? n : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, n) {
     var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -65,10 +65,10 @@ function k(e, n) {
   }), e
 }
 
-function A(e) {
+function k(e) {
   let {
     channelId: n,
-    baseChannelId: A,
+    baseChannelId: k,
     channelViewSource: R = "Split View",
     isResourceChannelView: D
   } = e, L = (0, i.e7)([v.Z], () => v.Z.getChannel(n)), M = (0, i.e7)([I.Z], () => I.Z.getGuild(null == L ? void 0 : L.getGuildId())), H = (0, i.e7)([Z.default], () => Z.default.getCurrentUser()), U = (0, i.e7)([O.Z], () => O.Z.didAgree(null == L ? void 0 : L.guild_id)), G = (null == H ? void 0 : H.nsfwAllowed) === !0, W = (0, w.ZP)(L), F = (0, i.e7)([C.Z], () => (null == M ? void 0 : M.id) != null && C.Z.isLurking(M.id), [M]), z = (0, f.Z)(n), q = (0, i.e7)([p.Z], () => {
@@ -76,7 +76,7 @@ function A(e) {
     return null == (e = p.Z.getResourceForChannel(null == M ? void 0 : M.id, n)) ? void 0 : e.title
   }), X = r.useRef(!1);
   if (r.useEffect(() => {
-      null == L || X.current || (X.current = !0, (0, d.yw)(E.rMx.CHANNEL_OPENED, k(B({}, (0, d.$H)(L.id)), {
+      null == L || X.current || (X.current = !0, (0, d.yw)(E.rMx.CHANNEL_OPENED, A(B({}, (0, d.$H)(L.id)), {
         channel_view: R
       })), (0, u.a)(E.rMx.CHANNEL_OPENED_CLICKSTREAM, {
         channelId: L.id
@@ -88,7 +88,7 @@ function A(e) {
   }, "notifications")), V.push((0, l.jsx)(g.ZP.Icon, {
     icon: a.Dio,
     tooltip: S.intl.string(S.t.cpT0Cg),
-    onClick: () => b.Z.closeChannelSidebar(A)
+    onClick: () => b.Z.closeChannelSidebar(k)
   }, "close")), !L.isNSFW() || G && U) ? (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(s.Z, {
       channel: L,
@@ -106,7 +106,7 @@ function A(e) {
             let {
               default: e
             } = await t.e("24783").then(t.bind(t, 439635));
-            return n => (0, l.jsx)(e, k(B({}, n), {
+            return n => (0, l.jsx)(e, A(B({}, n), {
               channel: L,
               guild: M
             }))

@@ -1,40 +1,41 @@
 /** Chunk was on 69417 **/
 n.d(t, {
-  Z: () => b
+  Z: () => d
 });
-var r, s = n(255367);
+var r, i = n(255367);
 n(73800);
-var i = n(481060),
+var s = n(755721),
+  a = n(481060),
   o = n(600164),
   c = n(390668),
-  a = ((r = a || {}).UPGRADE = "UPGRADE", r.CANCEL = "CANCEL", r.UNVERIFIED = "UNVERIFIED", r.UNCLAIMED = "UNCLAIMED", r.GRANDFATHERED = "GRANDFATHERED", r);
-let l = {
+  l = ((r = l || {}).UPGRADE = "UPGRADE", r.CANCEL = "CANCEL", r.UNVERIFIED = "UNVERIFIED", r.UNCLAIMED = "UNCLAIMED", r.GRANDFATHERED = "GRANDFATHERED", r);
+let u = {
     UPGRADE: "imageUpgrade",
     CANCEL: "imageCancel",
     UNVERIFIED: "imageUnverified",
     UNCLAIMED: "imageUnclaimed",
     GRANDFATHERED: "imageCancel"
   },
-  u = e => {
+  b = e => {
     var t, n, {
         children: r
       } = e,
-      o = function(e, t) {
+      s = function(e, t) {
         if (null == e) return {};
-        var n, r, s = function(e, t) {
+        var n, r, i = function(e, t) {
           if (null == e) return {};
-          var n, r, s = {},
-            i = Object.keys(e);
-          for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (s[n] = e[n]);
-          return s
+          var n, r, i = {},
+            s = Object.keys(e);
+          for (r = 0; r < s.length; r++) n = s[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+          return i
         }(e, t);
         if (Object.getOwnPropertySymbols) {
-          var i = Object.getOwnPropertySymbols(e);
-          for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (s[n] = e[n])
+          var s = Object.getOwnPropertySymbols(e);
+          for (r = 0; r < s.length; r++) n = s[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
         }
-        return s
+        return i
       }(e, ["children"]);
-    return (0, s.jsx)(i.Y0X, (t = function(e) {
+    return (0, i.jsx)(a.Y0X, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -51,7 +52,7 @@ let l = {
         })
       }
       return e
-    }({}, o), n = n = {
+    }({}, s), n = n = {
       parentComponent: "PremiumModal",
       children: r
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -65,55 +66,55 @@ let l = {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))
   };
-u.Header = e => {
+b.Header = e => {
   let {
     children: t,
     onClose: n
   } = e;
-  return (0, s.jsxs)(i.xBx, {
+  return (0, i.jsxs)(a.xBx, {
     justify: o.Z.Justify.BETWEEN,
     separator: !1,
-    children: [(0, s.jsx)(i.vwX, {
-      tag: i.RB0.H4,
+    children: [(0, i.jsx)(a.vwX, {
+      tag: a.RB0.H4,
       children: t
-    }), null != n ? (0, s.jsx)(i.olH, {
+    }), null != n ? (0, i.jsx)(a.olH, {
       className: c.__invalid_closeIcon,
       onClick: n
     }) : null]
   })
-}, u.Content = e => {
+}, b.Content = e => {
   let {
     children: t,
     type: n
   } = e;
-  return (0, s.jsxs)(i.hzk, {
-    children: [(0, s.jsx)("div", {
-      className: c[l[n]]
-    }), (0, s.jsx)("div", {
+  return (0, i.jsxs)(a.hzk, {
+    children: [(0, i.jsx)("div", {
+      className: c[u[n]]
+    }), (0, i.jsx)("div", {
       className: c.message,
       children: t
     })]
   })
-}, u.Footer = e => {
+}, b.Footer = e => {
   let {
     primary: t,
     primaryRenderer: n,
     secondary: r
   } = e;
-  return (0, s.jsx)(i.mzw, {
-    children: (0, s.jsxs)(o.Z, {
+  return (0, i.jsx)(a.mzw, {
+    children: (0, i.jsxs)(o.Z, {
       justify: o.Z.Justify.END,
-      children: [null != r ? (0, s.jsx)(i.zxk, {
+      children: [null != r ? (0, i.jsx)(s.zx, {
         onClick: r.onClick,
-        look: i.zxk.Looks.LINK,
+        look: s.zx.Looks.LINK,
         innerClassName: c.secondaryButton,
         children: r.label
-      }) : null, null != t ? (0, s.jsx)(i.zxk, {
-        onClick: t.onClick,
-        color: i.zxk.Colors.BRAND,
-        children: t.label
+      }) : null, null != t ? (0, i.jsx)(a.zxk, {
+        variant: "primary",
+        text: t.label,
+        onClick: t.onClick
       }) : n]
     })
   })
-}, u.Types = a;
-let b = u
+}, b.Types = l;
+let d = b

@@ -1,32 +1,33 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => l
+  Z: () => c
 });
 var r = n(255367);
 n(73800);
-var i = n(481060),
-  a = n(929204),
-  o = n(388032),
-  s = n(909917);
+var i = n(755721),
+  a = n(481060),
+  o = n(929204),
+  s = n(388032),
+  l = n(909917);
 
-function l(e) {
+function c(e) {
   let {
     analyticsSection: t,
     buttonText: n
   } = e;
-  return (0, r.jsxs)(i.gtL, {
-    className: s.premiumButton,
-    innerClassName: s.premiumButtonInner,
-    color: i.zxk.Colors.GREEN,
-    size: i.zxk.Sizes.SMALL,
-    onClick: () => (0, a.Z)({
+  return (0, r.jsxs)(a.gtL, {
+    className: l.premiumButton,
+    innerClassName: l.premiumButtonInner,
+    color: i.zx.Colors.GREEN,
+    size: i.zx.Sizes.SMALL,
+    onClick: () => (0, o.Z)({
       section: t
     }),
-    children: [(0, r.jsx)(i.SrA, {
+    children: [(0, r.jsx)(a.SrA, {
       size: "md",
       color: "currentColor",
-      className: s.premiumButtonNitroWheel
-    }), null != n ? n : o.intl.string(o.t["8Sh5fn"])]
+      className: l.premiumButtonNitroWheel
+    }), null != n ? n : s.intl.string(s.t["8Sh5fn"])]
   })
 }

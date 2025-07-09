@@ -22,9 +22,9 @@ var i, l = t(255367),
   N = t(742593),
   y = t(810561),
   f = t(187443),
-  k = t(131154),
-  b = t(765305),
-  E = t(981631),
+  b = t(131154),
+  E = t(765305),
+  k = t(981631),
   w = t(388032),
   I = t(565585);
 
@@ -67,7 +67,7 @@ function O(e) {
     onClick: t
   } = e, {
     canManageAllEvents: i
-  } = (0, v.XJ)(n), r = (0, c.e7)([m.Z], () => !n.isGuildVocal() || m.Z.can(E.Plq.CONNECT, n), [n]), h = a.useMemo(() => (0, u.Z)(n), [n]), x = (0, d.KS)(n);
+  } = (0, v.XJ)(n), r = (0, c.e7)([m.Z], () => !n.isGuildVocal() || m.Z.can(k.Plq.CONNECT, n), [n]), h = a.useMemo(() => (0, u.Z)(n), [n]), x = (0, d.KS)(n);
   return (0, l.jsx)(o.ua7, {
     text: w.intl.string(w.t.nHjY9P),
     shouldShow: !r && null != t,
@@ -153,7 +153,7 @@ function P(e) {
     isActive: v,
     isUserLurking: m,
     isJoined: x = !1,
-    isMember: E = !1,
+    isMember: k = !1,
     isHub: w = !1,
     speakers: Z,
     speakerCount: S,
@@ -175,7 +175,7 @@ function P(e) {
     eventPreview: H,
     recurrenceRule: q,
     recurrenceId: B
-  } = e, K = (0, g.Q)(i, c), Q = c === b.WX.EXTERNAL, Y = Q ? e => e.stopPropagation() : void 0, F = [];
+  } = e, K = (0, g.Q)(i, c), Q = c === E.WX.EXTERNAL, Y = Q ? e => e.stopPropagation() : void 0, F = [];
   if (null != q && null != event) {
     let e = (0, p.Ho)(q);
     F = (0, p.PJ)(4, e, new Date(V.scheduled_start_time))
@@ -207,7 +207,7 @@ function P(e) {
         guildEvent: V,
         eventPreview: H,
         recurrenceId: B
-      }), v && null != t && null != Z && S > 0 && (0, l.jsx)(k.Z, {
+      }), v && null != t && null != Z && S > 0 && (0, l.jsx)(b.Z, {
         guild: t,
         speakers: Z,
         speakerCount: S,
@@ -227,7 +227,7 @@ function P(e) {
         }), w ? (0, l.jsx)(f.Z, {
           isActive: v,
           isUserLurking: m,
-          isMember: E,
+          isMember: k,
           rsvped: T,
           onRsvpClick: M,
           onJoinGuildClick: X,

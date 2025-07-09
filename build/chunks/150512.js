@@ -23,7 +23,7 @@ function S(e) {
     guildId: t,
     welcomeMessage: n,
     className: r
-  } = e, S = (0, a.e7)([I.Z], () => I.Z.getGuild(t)), E = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), p = (0, a.e7)([h.default], () => h.default.getUser(null == n ? void 0 : n.authorIds[0])), T = i.useMemo(() => null != S && null != p && (0, u.Y)(S, p) ? p : null, [S, p]), x = (0, a.e7)([h.default], () => h.default.getCurrentUser()), O = i.useMemo(() => {
+  } = e, S = (0, a.e7)([I.Z], () => I.Z.getGuild(t)), p = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), E = (0, a.e7)([h.default], () => h.default.getUser(null == n ? void 0 : n.authorIds[0])), T = i.useMemo(() => null != S && null != E && (0, u.Y)(S, E) ? E : null, [S, E]), x = (0, a.e7)([h.default], () => h.default.getCurrentUser()), O = i.useMemo(() => {
     var e;
     return null != (e = null == n ? void 0 : n.authorIds) ? e : []
   }, [n]);
@@ -42,7 +42,7 @@ function S(e) {
     className: s()(f.welcomeMessageContainer, r),
     children: [(0, l.jsx)("div", {
       className: f.avatarBackground
-    }), E ? (0, l.jsx)(o.qEK, {
+    }), p ? (0, l.jsx)(o.qEK, {
       src: T.getAvatarURL(t, 48),
       size: o.EFr.SIZE_48,
       className: f.avatar,

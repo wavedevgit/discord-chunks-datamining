@@ -7,8 +7,8 @@ var r, i = n(255367),
   l = n(73800),
   a = n(120356),
   o = n.n(a),
-  c = n(481060),
-  s = n(565138),
+  s = n(481060),
+  c = n(565138),
   d = n(372769),
   u = n(857395),
   h = n(131154),
@@ -25,8 +25,8 @@ function b(e) {
     handleGuildNameClick: m,
     source: b,
     speakers: f,
-    speakerCount: x,
-    audienceCount: p,
+    speakerCount: p,
+    audienceCount: x,
     channelName: v
   } = e, j = l.useRef(null), N = t.id;
   return (0, i.jsx)("div", {
@@ -40,17 +40,17 @@ function b(e) {
           shouldShow: r,
           onRequestClose: () => a(!1),
           targetElementRef: j,
-          children: () => (0, i.jsxs)(c.P3F, {
+          children: () => (0, i.jsxs)(s.P3F, {
             className: _.flexContainerRow,
             onClick: m,
             innerRef: j,
-            children: [(0, i.jsx)(s.Z, {
+            children: [(0, i.jsx)(c.Z, {
               guild: t,
-              size: s.Z.Sizes.MINI,
+              size: c.Z.Sizes.MINI,
               className: _.guildIcon
             }), (0, i.jsxs)("div", {
               className: _.flexContainerRow,
-              children: [(0, i.jsx)(c.Text, {
+              children: [(0, i.jsx)(s.Text, {
                 color: "header-secondary",
                 variant: "text-sm/normal",
                 className: o()(_.guildName, {
@@ -66,22 +66,22 @@ function b(e) {
           className: _.rightJustifiedContent,
           children: [6 === b && (0, i.jsx)("div", {
             className: _.featuredTag,
-            children: (0, i.jsx)(c.Text, {
+            children: (0, i.jsx)(s.Text, {
               variant: "text-sm/normal",
               className: _.featuredTagText,
               children: "Featured"
             })
           }), (0, i.jsx)(g.Z, {
-            count: p,
+            count: x,
             className: _.__invalid_audienceCount
           })]
         })]
-      }), (0, i.jsx)(c.Text, {
+      }), (0, i.jsx)(s.Text, {
         color: "header-primary",
         variant: "text-lg/semibold",
         className: _.topicText,
         children: n.topic
-      }), (0, i.jsx)(c.Text, {
+      }), (0, i.jsx)(s.Text, {
         color: "header-secondary",
         className: _.description,
         variant: "text-sm/normal",
@@ -89,20 +89,20 @@ function b(e) {
       }), (0, i.jsx)(h.Z, {
         guild: t,
         speakers: f,
-        speakerCount: x,
+        speakerCount: p,
         className: _.speakers
       }), null != v && (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("hr", {
           className: _.divider
         }), (0, i.jsxs)("div", {
           className: _.footer,
-          children: [(0, i.jsx)(c.ewx, {
+          children: [(0, i.jsx)(s.ewx, {
             size: "custom",
             color: "currentColor",
             width: 20,
             height: 20,
             className: _.icon
-          }), (0, i.jsx)(c.Text, {
+          }), (0, i.jsx)(s.Text, {
             color: "header-secondary",
             className: _.__invalid_label,
             variant: "text-sm/normal",

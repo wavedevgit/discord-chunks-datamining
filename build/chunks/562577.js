@@ -3,8 +3,8 @@ n.d(e, {
   Z: () => h
 });
 var l = n(255367),
-  r = n(120356),
-  a = n.n(r),
+  a = n(120356),
+  r = n.n(a),
   i = n(692547),
   o = n(481060),
   s = n(19391),
@@ -17,14 +17,14 @@ function f(t) {
   let {
     option: e,
     isSelected: n,
-    onClick: r
+    onClick: a
   } = t, c = (0, s.Z)(e.value);
   return (0, l.jsx)(o.DY3, {
     text: c,
     children: (0, l.jsx)(o.P3F, {
-      onClick: r,
+      onClick: a,
       "aria-pressed": n,
-      className: a()(m.customStatusLabelSelectorItem, n && m.customStatusLabelSelectorItemSelected),
+      className: r()(m.customStatusLabelSelectorItem, n && m.customStatusLabelSelectorItemSelected),
       "aria-label": n ? d.intl.formatToPlainString(d.t["+KXSFh"], {
         label: c
       }) : d.intl.formatToPlainString(d.t.mDVlTk, {

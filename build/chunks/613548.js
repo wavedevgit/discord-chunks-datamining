@@ -1,13 +1,13 @@
 /** Chunk was on 19577 **/
 n.d(t, {
-  Z: () => M
+  Z: () => D
 }), n(539854);
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  o = n.n(l),
-  a = n(392711),
-  s = n.n(a),
+  a = n.n(l),
+  o = n(392711),
+  s = n.n(o),
   c = n(442837),
   u = n(481060),
   d = n(475179),
@@ -65,7 +65,7 @@ function R(e, t) {
   }), e
 }
 
-function k(e) {
+function M(e) {
   let {
     channelId: t,
     guildId: n
@@ -81,7 +81,7 @@ function k(e) {
         username: e.user.username
       }),
       children: l => (0, r.jsx)(E.ZP, R(w({}, l), {
-        className: o()(A.speaker, {
+        className: a()(A.speaker, {
           [A.last]: t === i.length - 1
         }),
         user: e.user,
@@ -93,12 +93,12 @@ function k(e) {
   })
 }
 
-function M(e) {
+function D(e) {
   let {
     channel: t,
     isChatOpen: n
   } = e, l = i.useRef(null), {
-    analyticsLocations: a
+    analyticsLocations: o
   } = (0, h.ZP)(p.Z.VOICE_CHANNEL_HEADER), s = t.id, {
     voiceParticipantsHidden: y,
     selectedParticipant: E,
@@ -109,17 +109,17 @@ function M(e) {
     voiceParticipantsHidden: I.Z.getVoiceParticipantsHidden(s),
     userParticipantCount: I.Z.getUserParticipantCount(s),
     participantsListOpen: I.Z.getParticipantsListOpen(s)
-  }), [s]), M = t.isGuildVoice() && !n, {
-    hasParticipantsPanel: D
+  }), [s]), D = t.isGuildVoice() && !n, {
+    hasParticipantsPanel: L
   } = (0, Z.Z)({
     location: "ChannelCallHeaderToolbar"
-  }), L = !T && D && (t.isGuildVoice() || t.isGroupDM()), {
+  }), k = !T && L && (t.isGuildVoice() || t.isGroupDM()), {
     enabled: U,
     inInbox: B
   } = b.Z.useExperiment({
     location: "ChannelCallHeaderToolbar"
   }), F = [];
-  return y && F.push((0, r.jsx)(k, {
+  return y && F.push((0, r.jsx)(M, {
     channelId: s,
     guildId: t.guild_id
   }, "current-speaker")), F.push((0, r.jsx)(m.Z, {
@@ -137,7 +137,7 @@ function M(e) {
   }, "live-indicator"))), (null == E ? void 0 : E.type) === N.fO.USER && F.push((0, r.jsx)(x.Z, {
     className: A.button,
     userId: E.id
-  }, "video-warning")), y && !D && F.push((0, r.jsx)(u.yRy, {
+  }, "video-warning")), y && !L && F.push((0, r.jsx)(u.yRy, {
     targetElementRef: l,
     position: "bottom",
     renderPopout: () => (0, r.jsx)(v.Z, {
@@ -159,19 +159,19 @@ function M(e) {
     }
   }, "call-members-popout")), U && !B && F.push((0, r.jsx)(_.Z, {
     className: A.button
-  }, "for-later")), L && F.push((0, r.jsx)(j.Z, {
-    className: o()(A.button, {
+  }, "for-later")), k && F.push((0, r.jsx)(j.Z, {
+    className: a()(A.button, {
       [A.lastButton]: n
     }),
     onClick: () => d.Z.toggleParticipantsList(t.id, !T)
-  }, "participants-list-button")), M && F.push((0, r.jsx)(O.T, {
+  }, "participants-list-button")), D && F.push((0, r.jsx)(O.T, {
     channelId: t.id,
-    className: o()(A.button, {
+    className: a()(A.button, {
       [A.lastButton]: T
     }),
     disabled: n
   }, "chat-spacer")), (0, r.jsx)(h.Gt, {
-    value: a,
+    value: o,
     children: F
   })
 }

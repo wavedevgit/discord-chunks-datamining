@@ -25,8 +25,9 @@ function a(e) {
         children: l.intl.string(l.t.DwKFKS)
       })]
     }), (0, r.jsx)(i.zxk, {
-      onClick: t,
-      children: l.intl.string(l.t.w3ND8P)
+      variant: "primary",
+      text: l.intl.string(l.t.w3ND8P),
+      onClick: t
     })]
   })
 }

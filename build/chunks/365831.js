@@ -92,8 +92,8 @@ function I(e) {
     Z.current = A
   }, [A]);
   let D = null != n,
-    k = !D,
-    L = D && null != l,
+    L = !D,
+    k = D && null != l,
     M = null == n && null != l,
     R = (0, c.q_F)({
       opacity: +!!D,
@@ -104,7 +104,7 @@ function I(e) {
         easing: O,
         duration: 200
       } : j,
-      delay: 100 * !!L
+      delay: 100 * !!k
     }, "respect-motion-settings"),
     F = (0, c.Yzy)(null == I ? void 0 : I.id, {
       key: A,
@@ -114,19 +114,19 @@ function I(e) {
       },
       enter: {
         opacity: 1,
-        delay: L ? 100 : 50
+        delay: k ? 100 : 50
       },
       leave: {
         opacity: 0,
-        delay: L ? 100 : 150
+        delay: k ? 100 : 150
       },
       config: {
         easing: O,
-        duration: L ? 250 : 200
+        duration: k ? 250 : 200
       }
     }, "respect-motion-settings"),
     [U] = (0, c.bYB)(2, e => ({
-      from: L ? {
+      from: k ? {
         translateY: 0,
         opacity: 1
       } : {
@@ -136,7 +136,7 @@ function I(e) {
       to: null == n ? {
         translateY: 16,
         opacity: 0
-      } : L ? null : {
+      } : k ? null : {
         translateY: 0,
         opacity: 1
       },
@@ -151,7 +151,7 @@ function I(e) {
       from: {
         opacity: 0,
         scale: 80 / 88,
-        translateX: L ? -16 : 0
+        translateX: k ? -16 : 0
       },
       enter: {
         opacity: 1,
@@ -163,7 +163,7 @@ function I(e) {
         opacity: 0,
         scale: D ? 80 / 88 : 1,
         translateX: 24 * !!D,
-        delay: 150 * !L
+        delay: 150 * !k
       },
       config: e => "opacity" === e ? {
         easing: O,
@@ -174,8 +174,8 @@ function I(e) {
       key: A,
       from: {
         opacity: 0,
-        scale: L ? .9 : 1,
-        translateY: 16 * !L
+        scale: k ? .9 : 1,
+        translateY: 16 * !k
       },
       enter: {
         opacity: 1,
@@ -186,7 +186,7 @@ function I(e) {
         config: e => "opacity" === e ? {
           easing: O,
           duration: 200
-        } : L ? j : S
+        } : k ? j : S
       },
       leave: {
         opacity: 0,
@@ -196,13 +196,13 @@ function I(e) {
         config: e => "opacity" === e ? {
           easing: O,
           duration: 200
-        } : L ? j : S
+        } : k ? j : S
       }
     }, "respect-motion-settings"),
     Y = _.intl.string(C ? _.t.esVyo6 : _.t.UQqFCA);
   return (0, r.jsxs)(a.animated.div, {
     className: v.voiceFilterHero,
-    "aria-hidden": k,
+    "aria-hidden": L,
     style: R,
     children: [(0, r.jsx)("div", {
       className: o()([v.bgGradient, v.bgGradientHighlight])
@@ -259,7 +259,7 @@ function I(e) {
             className: o()(v.button, {
               [v.loopbackEnabled]: C
             }),
-            "aria-hidden": k,
+            "aria-hidden": L,
             focusProps: {
               enabled: D
             },
@@ -282,7 +282,7 @@ function I(e) {
           style: U[1],
           children: (0, r.jsx)(c.P3F, y(h({
             className: v.button,
-            "aria-hidden": k,
+            "aria-hidden": L,
             focusProps: {
               enabled: D
             },

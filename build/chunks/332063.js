@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => p
 }), n(388685);
 var i, s = n(255367),
-  l = n(73800),
-  r = n(442837),
+  r = n(73800),
+  l = n(442837),
   a = n(481060),
   o = n(274616),
   d = n(560587),
@@ -18,7 +18,7 @@ function h(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class u extends(i = l.Component) {
+class u extends(i = r.Component) {
   componentDidMount() {
     let {
       applicationId: e,
@@ -40,10 +40,10 @@ class u extends(i = l.Component) {
       selectedBranchId: t,
       applicationId: n,
       includeMaster: i,
-      hide: l,
-      className: r
+      hide: r,
+      className: l
     } = this.props;
-    if (0 === e.length || l) return null;
+    if (0 === e.length || r) return null;
     let o = i ? e : e.filter(e => e.id !== n);
     return (0, s.jsx)(a.q4e, {
       options: o.map(e => ({
@@ -53,7 +53,7 @@ class u extends(i = l.Component) {
       placeholder: c.intl.string(c.t.Sw7pHB),
       value: t,
       onChange: this.handleChange,
-      className: r
+      className: l
     })
   }
   constructor(...e) {
@@ -65,7 +65,7 @@ class u extends(i = l.Component) {
 h(u, "defaultProps", {
   includeMaster: !1
 });
-let p = r.ZP.connectStores([d.Z], e => {
+let p = l.ZP.connectStores([d.Z], e => {
   let {
     applicationId: t
   } = e;

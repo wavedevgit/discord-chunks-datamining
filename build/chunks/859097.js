@@ -1,58 +1,59 @@
 /** Chunk was on 51343 **/
-a.d(t, {
-  C: () => d
+t.d(a, {
+  C: () => x
 });
-var l = a(255367);
-a(73800);
-var r = a(481060),
-  s = a(600164),
-  n = a(424071),
-  o = a(388032),
-  c = a(475286),
-  i = a(387852);
+var r = t(255367);
+t(73800);
+var s = t(755721),
+  l = t(481060),
+  n = t(600164),
+  i = t(424071),
+  o = t(388032),
+  c = t(475286),
+  d = t(387852);
 
-function d(e) {
+function x(e) {
   let {
-    onContinue: t,
-    onClose: a,
-    title: d,
-    body: x
+    onContinue: a,
+    onClose: t,
+    title: x,
+    body: u
   } = e;
-  return (0, l.jsxs)(n.Z, {
-    children: [(0, l.jsxs)(r.xBx, {
-      direction: s.Z.Direction.VERTICAL,
+  return (0, r.jsxs)(i.Z, {
+    children: [(0, r.jsxs)(l.xBx, {
+      direction: n.Z.Direction.VERTICAL,
       className: c.header,
       separator: !1,
-      children: [(0, l.jsx)("img", {
-        src: i,
+      children: [(0, r.jsx)("img", {
+        src: d,
         className: c.illustration,
         width: "254",
         height: "127",
         alt: ""
-      }), (0, l.jsx)(r.X6q, {
+      }), (0, r.jsx)(l.X6q, {
         className: c.title,
         variant: "heading-xl/extrabold",
-        children: d
-      }), null != a && (0, l.jsx)(r.olH, {
+        children: x
+      }), null != t && (0, r.jsx)(l.olH, {
         className: c.closeButton,
-        onClick: a
+        onClick: t
       })]
-    }), (0, l.jsx)(r.hzk, {
+    }), (0, r.jsx)(l.hzk, {
       className: c.body,
       paddingFix: !1,
-      children: (0, l.jsx)(r.Text, {
+      children: (0, r.jsx)(l.Text, {
         tag: "p",
         variant: "text-md/normal",
         color: "header-secondary",
-        children: x
+        children: u
       })
-    }), (0, l.jsx)(r.mzw, {
+    }), (0, r.jsx)(l.mzw, {
       className: c.footer,
-      children: (0, l.jsxs)(r.zxk, {
+      children: (0, r.jsxs)(s.zx, {
         className: c.footerButton,
-        color: r.zxk.Colors.BRAND,
-        onClick: t,
-        children: [o.intl.string(o.t["7NqTJi"]), (0, l.jsx)(r.rgF, {
+        color: s.zx.Colors.BRAND,
+        onClick: a,
+        children: [o.intl.string(o.t["7NqTJi"]), (0, r.jsx)(l.rgF, {
           color: "currentColor",
           className: c.launchIcon,
           size: "xs"

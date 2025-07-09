@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(255367),
   r = n(73800),
   s = n(120356),
-  l = n.n(s),
-  a = n(481060),
+  a = n.n(s),
+  l = n(481060),
   o = n(388032),
   c = n(501810);
 let d = r.forwardRef(function(e, t) {
@@ -53,18 +53,18 @@ let d = r.forwardRef(function(e, t) {
     }
     return e
   }({
-    className: l()(c.__invalid_paginator, p),
+    className: a()(c.__invalid_paginator, p),
     ref: t
   }, h), r = r = {
     children: [m, (0, i.jsxs)("div", {
       className: c.pageActions,
-      children: [(0, i.jsx)(a.P3F, {
-        className: l()(c.pageButtonPrev, {
+      children: [(0, i.jsx)(l.P3F, {
+        className: a()(c.pageButtonPrev, {
           [c.disabled]: f
         }),
         tabIndex: f ? -1 : 0,
         onClick: f ? void 0 : () => u(s - 1),
-        children: (0, i.jsx)(a.V7D, {
+        children: (0, i.jsx)(l.V7D, {
           size: "md",
           color: "currentColor",
           className: c.pageButtonIcon,
@@ -81,13 +81,13 @@ let d = r.forwardRef(function(e, t) {
         children: o.intl.format(o.t.bKI77e, {
           currentPage: s + 1
         })
-      }), (0, i.jsx)(a.P3F, {
-        className: l()(c.pageButtonNext, {
+      }), (0, i.jsx)(l.P3F, {
+        className: a()(c.pageButtonNext, {
           [c.disabled]: b
         }),
         tabIndex: b ? -1 : 0,
         onClick: b ? void 0 : () => u(s + 1),
-        children: (0, i.jsx)(a.Fbu, {
+        children: (0, i.jsx)(l.Fbu, {
           size: "md",
           color: "currentColor",
           className: c.pageButtonIcon,

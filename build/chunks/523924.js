@@ -1,85 +1,86 @@
 /** Chunk was on 3378 **/
 n.d(t, {
-  Z: () => d
+  Z: () => f
 });
 var o = n(255367),
   r = n(73800),
   i = n(442837),
-  l = n(481060),
-  a = n(693546),
-  c = n(937111),
-  s = n(388032),
-  u = n(568410);
-let d = e => {
+  l = n(755721),
+  a = n(481060),
+  c = n(693546),
+  s = n(937111),
+  u = n(388032),
+  d = n(568410);
+let f = e => {
   let {
     headerId: t,
     reapplyText: n,
-    onReapply: d,
-    confirmText: f,
-    onWithdrawApplication: p,
-    rejectionReason: m = null,
-    guild: b = null
-  } = e, g = (0, i.e7)([c.Z], () => {
+    onReapply: f,
+    confirmText: p,
+    onWithdrawApplication: m,
+    rejectionReason: b = null,
+    guild: g = null
+  } = e, j = (0, i.e7)([s.Z], () => {
     var e;
-    return c.Z.getCooldown(null != (e = null == b ? void 0 : b.id) ? e : "0")
+    return s.Z.getCooldown(null != (e = null == g ? void 0 : g.id) ? e : "0")
   });
   r.useEffect(() => {
-    null == g && null != b && a.Z.fetchJoinRequestCooldown(b.id)
-  }, [g, b]);
-  let j = (null != g ? g : 0) > 0,
-    h = j && null != g ? Math.ceil((1e3 * g - Date.now()) / 864e5) : 0;
+    null == j && null != g && c.Z.fetchJoinRequestCooldown(g.id)
+  }, [j, g]);
+  let h = (null != j ? j : 0) > 0,
+    y = h && null != j ? Math.ceil((1e3 * j - Date.now()) / 864e5) : 0;
   return (0, o.jsxs)("div", {
-    className: u.confirmation,
+    className: d.confirmation,
     children: [(0, o.jsx)("div", {
-      className: u.iconWrapper,
-      children: (0, o.jsx)(l.P$X, {
+      className: d.iconWrapper,
+      children: (0, o.jsx)(a.P$X, {
         size: "md",
-        color: l.TVs.colors.INTERACTIVE_ACTIVE
+        color: a.TVs.colors.INTERACTIVE_ACTIVE
       })
     }), (0, o.jsxs)("div", {
-      className: u.statusTextContainer,
-      children: [(0, o.jsx)(l.X6q, {
+      className: d.statusTextContainer,
+      children: [(0, o.jsx)(a.X6q, {
         id: t,
         variant: "heading-lg/semibold",
         color: "header-primary",
-        children: (null == b ? void 0 : b.name) != null ? s.intl.formatToPlainString(s.t["P+/gzM"], {
-          guildName: b.name
-        }) : s.intl.string(s.t.gBPcuL)
-      }), null != m && "" !== m ? (0, o.jsxs)(l.Text, {
+        children: (null == g ? void 0 : g.name) != null ? u.intl.formatToPlainString(u.t["P+/gzM"], {
+          guildName: g.name
+        }) : u.intl.string(u.t.gBPcuL)
+      }), null != b && "" !== b ? (0, o.jsxs)(a.Text, {
         variant: "text-md/medium",
         color: "header-secondary",
         children: [(0, o.jsx)("span", {
-          className: u.rejectionReasonLabel,
-          children: s.intl.string(s.t.cf1psb)
+          className: d.rejectionReasonLabel,
+          children: u.intl.string(u.t.cf1psb)
         }), (0, o.jsx)("span", {
-          children: m
+          children: b
         })]
       }) : null]
     }), (0, o.jsxs)("div", {
-      className: u.confirmationButtonRow,
-      children: [(0, o.jsx)(l.DY3, {
-        className: u.confirmationButton,
-        text: j ? s.intl.formatToPlainString(s.t.A0f0Pz, {
-          days: h
+      className: d.confirmationButtonRow,
+      children: [(0, o.jsx)(a.DY3, {
+        className: d.confirmationButton,
+        text: h ? u.intl.formatToPlainString(u.t.A0f0Pz, {
+          days: y
         }) : null,
-        "aria-label": j ? s.intl.formatToPlainString(s.t.A0f0Pz, {
-          days: h
+        "aria-label": h ? u.intl.formatToPlainString(u.t.A0f0Pz, {
+          days: y
         }) : void 0,
-        children: (0, o.jsx)(l.zxk, {
-          className: u.confirmationTooltipContents,
-          onClick: d,
-          color: l.zxk.Colors.PRIMARY,
-          size: l.zxk.Sizes.LARGE,
-          submitting: null == g,
-          disabled: j,
+        children: (0, o.jsx)(l.zx, {
+          className: d.confirmationTooltipContents,
+          onClick: f,
+          color: l.zx.Colors.PRIMARY,
+          size: l.zx.Sizes.LARGE,
+          submitting: null == j,
+          disabled: h,
           children: n
         })
-      }), (0, o.jsx)(l.zxk, {
-        onClick: p,
-        size: l.zxk.Sizes.LARGE,
-        color: l.zxk.Colors.RED,
-        className: u.confirmationButton,
-        children: f
+      }), (0, o.jsx)(l.zx, {
+        onClick: m,
+        size: l.zx.Sizes.LARGE,
+        color: l.zx.Colors.RED,
+        className: d.confirmationButton,
+        children: p
       })]
     })]
   })

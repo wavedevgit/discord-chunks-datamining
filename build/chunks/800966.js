@@ -1,22 +1,23 @@
 /** Chunk was on 19577 **/
 n.d(t, {
-  h: () => b
+  h: () => _
 });
 var r = n(255367);
 n(73800);
 var i = n(120356),
   l = n.n(i),
-  o = n(990547),
-  a = n(481060),
-  s = n(213609),
-  c = n(626135),
-  u = n(738672),
-  d = n(981631),
-  p = n(388032),
-  h = n(504619);
+  a = n(990547),
+  o = n(755721),
+  s = n(481060),
+  c = n(213609),
+  u = n(626135),
+  d = n(738672),
+  p = n(981631),
+  h = n(388032),
+  f = n(504619);
 
-function f() {
-  return (f = Object.assign || function(e) {
+function m() {
+  return (m = Object.assign || function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = arguments[t];
       for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -25,7 +26,7 @@ function f() {
   }).apply(this, arguments)
 }
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,53 +45,53 @@ function m(e) {
   return e
 }
 
-function g(e) {
+function b(e) {
   let {
     hidden: t,
     onDismiss: n
   } = e;
-  return (0, s.Z)({
-    type: o.ImpressionTypes.VIEW,
-    name: o.ImpressionNames.HD_STREAMING_POPOUT
+  return (0, c.Z)({
+    type: a.ImpressionTypes.VIEW,
+    name: a.ImpressionNames.HD_STREAMING_POPOUT
   }, {
     disableTrack: t
   }, [t]), (0, r.jsxs)("div", {
-    className: l()(h.popoutContainer, {
-      [h.hidden]: t
+    className: l()(f.popoutContainer, {
+      [f.hidden]: t
     }),
     children: [(0, r.jsx)("img", {
-      className: h.image,
+      className: f.image,
       src: "https://cdn.discordapp.com/assets/premium/roadblocks/hd_streaming.png",
       alt: "HD Streaming Nitro Perk"
-    }), (0, r.jsx)(a.zxk, {
-      className: h.closeButton,
-      "aria-label": p.intl.string(p.t.cpT0Cg),
-      look: a.zxk.Looks.BLANK,
-      size: a.zxk.Sizes.NONE,
+    }), (0, r.jsx)(o.zx, {
+      className: f.closeButton,
+      "aria-label": h.intl.string(h.t.cpT0Cg),
+      look: o.zx.Looks.BLANK,
+      size: o.zx.Sizes.NONE,
       onClick: () => {
-        n(), c.default.track(d.rMx.HD_STREAMING_POPOUT_DISMISSED)
+        n(), u.default.track(p.rMx.HD_STREAMING_POPOUT_DISMISSED)
       },
-      children: (0, r.jsx)(a.Dio, {
+      children: (0, r.jsx)(s.Dio, {
         size: "xs",
-        className: h.closeIcon,
+        className: f.closeIcon,
         color: "white"
       })
     }), (0, r.jsx)("div", {
-      className: h.infoContainerParent,
+      className: f.infoContainerParent,
       children: (0, r.jsxs)("div", {
-        className: h.infoContainer,
-        children: [(0, r.jsx)(a.Text, {
-          className: h.infoText,
+        className: f.infoContainer,
+        children: [(0, r.jsx)(s.Text, {
+          className: f.infoText,
           variant: "text-sm/medium",
-          children: p.intl.format(p.t.ruvD7u, {})
+          children: h.intl.format(h.t.ruvD7u, {})
         }), (0, r.jsxs)("div", {
-          className: h.poweredByNitroContainer,
-          children: [(0, r.jsx)(a.SrA, {
+          className: f.poweredByNitroContainer,
+          children: [(0, r.jsx)(s.SrA, {
             size: "xs"
-          }), (0, r.jsx)(a.Text, {
-            className: h.infoText,
+          }), (0, r.jsx)(s.Text, {
+            className: f.infoText,
             variant: "text-sm/medium",
-            children: p.intl.string(p.t["BMw+7O"])
+            children: h.intl.string(h.t["BMw+7O"])
           })]
         })]
       })
@@ -98,13 +99,13 @@ function g(e) {
   })
 }
 
-function b(e) {
-  var t, n, i = f({}, function(e) {
+function _(e) {
+  var t, n, i = m({}, function(e) {
     if (null == e) throw TypeError("Cannot destructure " + e);
     return e
   }(e));
-  return (0, r.jsx)(u.h, (t = m({}, i), n = n = {
-    renderComponent: e => (0, r.jsx)(g, m({}, e))
+  return (0, r.jsx)(d.h, (t = g({}, i), n = n = {
+    renderComponent: e => (0, r.jsx)(b, g({}, e))
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

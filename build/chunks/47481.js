@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(275726),
   i = n(135938),
   l = n(55935),
-  o = n(709054),
-  a = n(554838),
+  a = n(709054),
+  o = n(554838),
   s = n(493892),
   c = n(356647),
   u = n(981631);
@@ -22,17 +22,17 @@ function d(e) {
     } = e,
     _ = [],
     y = !1,
-    C = null != f ? o.default.extractTimestamp(f) : null,
+    C = null != f ? a.default.extractTimestamp(f) : null,
     x = null;
   return h.forEach(e => {
     var i, v, O;
     let j, E;
     if (null != g && g.length > 0) {
-      let t = o.default.extractTimestamp(e.id);
+      let t = a.default.extractTimestamp(e.id);
       for (let e = 0; i = e < (null == g ? void 0 : g.length), i; e++) {
         if (null == g[e]) continue;
-        let n = o.default.extractTimestamp(g[e].startId),
-          r = o.default.extractTimestamp(g[e].endId);
+        let n = a.default.extractTimestamp(g[e].startId),
+          r = a.default.extractTimestamp(g[e].endId);
         if (t >= n && t <= r) {
           if (x === g[e].id) break;
           _.push({
@@ -71,7 +71,7 @@ function d(e) {
     }), O.hasUnread = !0) : e.isFirstMessageInForumPost(p) || _.push({
       type: u.ys_.DIVIDER,
       unreadId: e.id
-    }), C = null) : null != C && o.default.extractTimestamp(e.id) > C && (e.isFirstMessageInForumPost(p) || _.push({
+    }), C = null) : null != C && a.default.extractTimestamp(e.id) > C && (e.isFirstMessageInForumPost(p) || _.push({
       type: u.ys_.DIVIDER,
       unreadId: e.id
     }), C = null);
@@ -82,7 +82,7 @@ function d(e) {
       groupId: T.id
     });
     let A = (null == I ? void 0 : I.type) === u.ys_.MESSAGE ? d : I;
-    (0, a.J)(p, A, e) && (n = e.id);
+    (0, o.J)(p, A, e) && (n = e.id);
     let w = {
       type: e.type === u.uaV.THREAD_STARTER_MESSAGE ? u.ys_.THREAD_STARTER_MESSAGE : u.ys_.MESSAGE,
       content: e,
@@ -91,10 +91,10 @@ function d(e) {
     n === e.id && (d = w);
     let {
       jumpSequenceId: R,
-      jumpFlash: k,
-      jumpTargetId: M
+      jumpFlash: M,
+      jumpTargetId: D
     } = h;
-    k && e.id === M && null != R && (w.flashKey = R), h.jumpTargetId === e.id && (w.jumpTarget = !0), null != b && e.id === b.startId && b.count > 1 && _.push({
+    M && e.id === D && null != R && (w.flashKey = R), h.jumpTargetId === e.id && (w.jumpTarget = !0), null != b && e.id === b.startId && b.count > 1 && _.push({
       type: u.ys_.DIVIDER,
       content: b.topic,
       contentKey: b.startId,

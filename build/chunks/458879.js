@@ -1,16 +1,16 @@
 /** Chunk was on 79764 **/
 n.d(t, {
-  Z: () => a
+  Z: () => r
 });
 var i = n(990547),
   s = n(881052),
   l = n(573261),
-  r = n(981631);
-let a = {
-  createGuildFromTemplate: async function(e, t, n, a, o) {
+  a = n(981631);
+let r = {
+  createGuildFromTemplate: async function(e, t, n, r, o) {
     try {
       return (await l.Z.post({
-        url: r.ANM.GUILDS,
+        url: a.ANM.GUILDS,
         body: {
           name: e,
           icon: t,
@@ -24,7 +24,7 @@ let a = {
           event: i.NetworkActionNames.GUILD_CREATE,
           properties: {
             template_name: n.id,
-            is_community_intent: a
+            is_community_intent: r
           }
         },
         rejectWithError: !1

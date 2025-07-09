@@ -9,7 +9,7 @@ var r, a, i = n(255367),
   c = n(392711),
   d = n.n(c),
   u = n(846519),
-  p = n(481060),
+  p = n(755721),
   m = n(570140),
   h = n(578361),
   g = n(768762),
@@ -53,8 +53,8 @@ class y extends(r = l.PureComponent) {
     }, r);
     return (0, i.jsxs)("div", {
       className: o()(v.controls, this.props.className),
-      children: [(0, i.jsx)(p.zxk, {
-        look: p.zxk.Looks.BLANK,
+      children: [(0, i.jsx)(p.zx, {
+        look: p.zx.Looks.BLANK,
         className: c,
         onClick: this.handlePrevious,
         "aria-label": x.intl.string(x.t.vgfxaG),
@@ -67,17 +67,17 @@ class y extends(r = l.PureComponent) {
         })
       }), (0, i.jsx)("div", {
         className: v.dots,
-        children: d().times(t, t => (0, i.jsx)(p.zxk, {
-          look: p.zxk.Looks.BLANK,
-          size: p.zxk.Sizes.NONE,
+        children: d().times(t, t => (0, i.jsx)(p.zx, {
+          look: p.zx.Looks.BLANK,
+          size: p.zx.Sizes.NONE,
           onClick: () => this.handleDotClick(t),
           className: t === e ? o()(v.dotSelected, l) : o()(v.dotNormal, a),
           "aria-label": x.intl.formatToPlainString(x.t["2SXOrK"], {
             pageNumber: t + 1
           })
         }, "dot-".concat(t)))
-      }), (0, i.jsx)(p.zxk, {
-        look: p.zxk.Looks.BLANK,
+      }), (0, i.jsx)(p.zx, {
+        look: p.zx.Looks.BLANK,
         className: c,
         onClick: this.handleNext,
         "aria-label": x.intl.string(x.t.XiOHRU),

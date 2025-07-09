@@ -5,9 +5,9 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  o = n.n(l),
-  a = n(653603),
-  s = n.n(a),
+  a = n.n(l),
+  o = n(653603),
+  s = n.n(o),
   c = n(442837),
   u = n(481060),
   d = n(904245),
@@ -32,7 +32,7 @@ let j = i.memo(function(e) {
     } = e;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
-        className: o()(x.blockedNoticeContainer, {
+        className: a()(x.blockedNoticeContainer, {
           [x.compact]: i
         }),
         children: [(0, r.jsx)("div", {
@@ -51,7 +51,7 @@ let j = i.memo(function(e) {
           })
         })]
       }), (0, r.jsx)("div", {
-        className: o()(x.ephemeralAccessories, {
+        className: a()(x.ephemeralAccessories, {
           [x.compact]: i
         }),
         children: (0, r.jsx)(m.Z, {
@@ -74,7 +74,7 @@ let j = i.memo(function(e) {
     var t, n;
     let {
       className: l,
-      compact: a,
+      compact: o,
       message: u,
       children: f,
       content: m,
@@ -86,7 +86,7 @@ let j = i.memo(function(e) {
       S.current ? null != y && y() : S.current = !0
     }, [y, u.content, m, E, f]), (0, r.jsxs)("div", {
       id: (0, g.ut)(u),
-      className: o()(l, O.markup, {
+      className: a()(l, O.markup, {
         [v.messageContent]: !0,
         [v.markupRtl]: "rtl" === s()(u.content),
         [x.blockedEdit]: null == I ? void 0 : I.isBlockedEdit,
@@ -105,7 +105,7 @@ let j = i.memo(function(e) {
       }), (0, r.jsx)(j, {
         notice: null != (n = null == I ? void 0 : I.errorMessage) ? n : C.intl.string(C.t.zQ69pq),
         message: u,
-        compact: a,
+        compact: o,
         onDismiss: P
       })]
     })

@@ -64,12 +64,12 @@ function I(e) {
       return !T || (null == (t = e.tags) ? void 0 : t.subscription_listing_id) != null
     }).filter(e => (null == Z ? void 0 : Z.id) === e.id || h.r6(l, n.id, Z, e)) : [], [l, n, T, Z, o]);
   if (null == n || null == l || null == N) return null;
-  let k = {};
+  let L = {};
   return (N.roles.forEach(e => {
     let t = o[e];
-    null != t && (k[t.id] = t)
+    null != t && (L[t.id] = t)
   }), c.e$(h.I0({
-    forceRoles: k,
+    forceRoles: L,
     context: l
   }), c.$e(x.Plq.MANAGE_GUILD, x.Plq.MANAGE_ROLES)) || (0, p.eM)(l, n)) ? (0, r.jsx)("div", {
     className: O.container,

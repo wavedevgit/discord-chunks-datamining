@@ -1,6 +1,6 @@
 /** Chunk was on 89311 **/
 r.d(t, {
-  Z: () => x
+  Z: () => h
 });
 var n = r(255367),
   i = r(73800),
@@ -17,13 +17,13 @@ var n = r(255367),
   p = r(297781),
   O = r(388032),
   E = r(152790),
-  h = r(263930);
-let x = e => {
+  x = r(263930);
+let h = e => {
   let {
     entry: t,
     onClose: r,
     onReaction: a,
-    onRequestOpen: x,
+    onRequestOpen: h,
     disableActivityProfileLinks: v,
     customCTA: j,
     popoutClassname: b,
@@ -63,7 +63,7 @@ let x = e => {
     },
     positionKey: "'content-entry-".concat(t.id),
     onRequestOpen: () => {
-      null == x || x()
+      null == h || h()
     },
     children: e => {
       var r, i;
@@ -105,7 +105,7 @@ let x = e => {
             }), (0, n.jsx)("div", {
               className: E.playerInfo,
               children: (0, n.jsxs)("div", {
-                className: l()(h.column, h.gapXs),
+                className: l()(x.column, x.gapXs),
                 children: [(0, n.jsx)(o.Text, {
                   variant: "text-md/medium",
                   color: "text-primary",

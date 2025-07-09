@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(255367),
   r = n(73800),
   s = n(392711),
-  l = n.n(s),
-  a = n(442837),
+  a = n.n(s),
+  l = n(442837),
   o = n(481060),
   c = n(355467),
   d = n(179360),
@@ -19,12 +19,12 @@ var i = n(255367),
   b = n(811334),
   x = n(55610),
   _ = n(311821),
-  E = n(42818),
-  j = n(314884),
+  j = n(42818),
+  E = n(314884),
   O = n(509545),
   C = n(78839),
-  S = n(267642),
-  v = n(74538),
+  v = n(267642),
+  S = n(74538),
   T = n(937615),
   N = n(518062),
   I = n(474936),
@@ -38,16 +38,16 @@ function R(e) {
     fractionalPremiumInfo: n,
     isInventory: r,
     onNext: s,
-    onClose: l
-  } = e, a = A.intl.format(A.t.otHdfX, {
+    onClose: a
+  } = e, l = A.intl.format(A.t.otHdfX, {
     endDate: t.currentPeriodEnd
   });
-  return t.isPurchasedExternally && null != t.paymentGateway ? a = A.intl.format(A.t.HbpFLi, {
+  return t.isPurchasedExternally && null != t.paymentGateway ? l = A.intl.format(A.t.HbpFLi, {
     paymentGatewayName: y.Vz[t.paymentGateway],
-    subscriptionManagementLink: (0, v.JE)(t.paymentGateway, "SUBSCRIPTION_MANAGEMENT")
-  }) : t.isPausedForFractionalPremium ? a = A.intl.format(A.t["Hzqe6+"], {
+    subscriptionManagementLink: (0, S.JE)(t.paymentGateway, "SUBSCRIPTION_MANAGEMENT")
+  }) : t.isPausedForFractionalPremium ? l = A.intl.format(A.t["Hzqe6+"], {
     expirationDate: n.endsAt.toDate()
-  }) : r && (a = A.intl.format(A.t.gXSnur, {
+  }) : r && (l = A.intl.format(A.t.gXSnur, {
     endDate: t.currentPeriodEnd
   })), (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)(o.xBx, {
@@ -56,101 +56,102 @@ function R(e) {
         tag: o.RB0.H4,
         children: r ? A.intl.string(A.t.iIoSd3) : A.intl.string(A.t.Skzv0t)
       }), (0, i.jsx)(o.olH, {
-        onClick: l
+        onClick: a
       })]
     }), (0, i.jsxs)(o.hzk, {
       className: P.body,
       children: [(0, i.jsx)("div", {
         className: P.cancelImage
       }), (0, i.jsx)("div", {
-        children: a
+        children: l
       }), (0, i.jsx)(x.Z, {
         fromBoostCancelModal: !0
       })]
     }), t.isPurchasedExternally ? null : (0, i.jsxs)(o.mzw, {
       justify: g.Z.Justify.START,
       children: [(0, i.jsx)(o.zxk, {
-        onClick: s,
-        children: A.intl.string(A.t.PDTjLC)
-      }), (0, i.jsx)(o.zxk, {
-        look: o.zxk.Looks.LINK,
-        onClick: l,
-        children: A.intl.string(A.t["ETE/oK"])
+        variant: "primary",
+        text: A.intl.string(A.t.PDTjLC),
+        onClick: s
+      }), (0, i.jsx)(o.Avr, {
+        variant: "primary",
+        text: A.intl.string(A.t["ETE/oK"]),
+        onClick: a
       })]
     })]
   })
 }
 async function D(e, t, n, i) {
   let r = null != i ? i : function() {
-    let e = Object.values(j.Z.boostSlots),
-      t = l().sortBy(e.filter(e => !(0, S.tl)(e)), e => [null != e.premiumGuildSubscription, null != e.cooldownEndsAt ? new Date(e.cooldownEndsAt) : null])[0];
+    let e = Object.values(E.Z.boostSlots),
+      t = a().sortBy(e.filter(e => !(0, v.tl)(e)), e => [null != e.premiumGuildSubscription, null != e.cooldownEndsAt ? new Date(e.cooldownEndsAt) : null])[0];
     return null != t ? t.id : null
   }();
   if (null == r) throw Error("No slot to cancel");
-  let s = (0, v.MY)(e, t);
+  let s = (0, S.MY)(e, t);
   await (0, d.pD)(r), await (0, c.Mg)(e, {
     items: s
   }, {
     amount: 0,
     currency: e.currency
-  }, (0, v.UX)(s, e.currency, e.paymentSourceId), n)
+  }, (0, S.UX)(s, e.currency, e.paymentSourceId), n)
 }
 
 function Z(e) {
   var t, n, s;
   let {
-    premiumSubscription: l,
+    premiumSubscription: a,
     guildBoostSlotId: c,
     fractionalPremiumInfo: d,
     onBack: p,
     onNext: x,
-    onClose: j
-  } = e, [C, S] = r.useState(!1), [y, R] = r.useState(null), [Z, w] = r.useMemo(() => {
+    onClose: E
+  } = e, [C, v] = r.useState(!1), [y, R] = r.useState(null), [Z, w] = r.useMemo(() => {
     try {
-      return [(0, f.g)(l, -1), !1]
+      return [(0, f.g)(a, -1), !1]
     } catch (e) {
       return [
         [], !0
       ]
     }
-  }, [l]), k = r.useRef(j);
+  }, [a]), k = r.useRef(E);
   r.useEffect(() => {
-    k.current = j
+    k.current = E
   }), r.useEffect(() => {
     w && k.current()
   }, [w]);
   let {
     premiumSubscriptionPlan: L,
     premiumGuildPlan: B
-  } = (0, a.cj)([O.Z], () => {
-    let e = O.Z.get(l.planId);
+  } = (0, l.cj)([O.Z], () => {
+    let e = O.Z.get(a.planId);
     return {
       premiumSubscriptionPlan: e,
-      premiumGuildPlan: null != e ? O.Z.getForSkuAndInterval((0, v.Wz)(I.Si.GUILD), e.interval, e.intervalCount) : null
+      premiumGuildPlan: null != e ? O.Z.getForSkuAndInterval((0, S.Wz)(I.Si.GUILD), e.interval, e.intervalCount) : null
     }
   }), {
     analyticsLocations: M
   } = (0, m.ZP)(), [U] = (0, h.ED)({
-    subscriptionId: l.id,
+    subscriptionId: a.id,
     renewal: !0,
-    currency: l.currency,
-    paymentSourceId: l.paymentSourceId,
+    currency: a.currency,
+    paymentSourceId: a.paymentSourceId,
     analyticsLocations: M,
     analyticsLocation: u.Z.GUILD_BOOST_SLOT_CANCELLATION_MODAL_CURRENT_INVOICE_PREVIEW
-  }), V = null != B ? (0, v.Zx)(l, null != (s = null == (t = Z[0]) ? void 0 : t.quantity) ? s : 0, B.id) : null, [G] = (0, h.ED)({
-    subscriptionId: l.id,
+  }), V = null != B ? (0, S.Zx)(a, null != (s = null == (t = Z[0]) ? void 0 : t.quantity) ? s : 0, B.id) : null, [G] = (0, h.ED)({
+    subscriptionId: a.id,
     items: V,
     renewal: !0,
     analyticsLocations: M,
     analyticsLocation: u.Z.GUILD_BOOST_SLOT_CANCELLATION_MODAL_RENEWAL_INVOICE_PREVIEW
   });
   if (null == G || null == L || null == B || null == U) return (0, i.jsx)(o.$jN, {});
-  let F = l.items.some(e => {
+  let F = a.items.some(e => {
       let {
         planId: t
       } = e;
       return !I.Z1.has(t)
-    }) && null == l.renewalMutations || (null == (n = l.renewalMutations) ? void 0 : n.items.find(e => {
+    }) && null == a.renewalMutations || (null == (n = a.renewalMutations) ? void 0 : n.items.find(e => {
       let {
         planId: t
       } = e;
@@ -164,17 +165,17 @@ function Z(e) {
     }),
     z = F || H ? G.total - U.total : -U.total,
     {
-      interval: Y,
-      intervalCount: W
+      interval: W,
+      intervalCount: Y
     } = L,
     K = A.intl.format(A.t["0W23cn"], {
       endDate: G.subscriptionPeriodStart
     });
-  return l.isPausedForFractionalPremium && d.fetched && (K = A.intl.format(A.t.eb0xgY, {
+  return a.isPausedForFractionalPremium && d.fetched && (K = A.intl.format(A.t.eb0xgY, {
     expirationDate: d.endsAt.toDate()
   })), (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(N.Z, {
-      onClose: j
+      onClose: E
     }), (0, i.jsxs)(o.hzk, {
       className: P.body,
       children: [null !== y && (0, i.jsx)(o.kzN, {
@@ -190,11 +191,11 @@ function Z(e) {
           label: A.intl.format(A.t["Vg+LRk"], {
             subscriptionCount: 1
           }),
-          value: (0, T.og)((0, T.T4)(z, l.currency), Y, W),
+          value: (0, T.og)((0, T.T4)(z, a.currency), W, Y),
           className: P.invoiceCancelRow
         }), null != V && V.length > 0 ? (0, i.jsxs)("div", {
-          children: [(0, i.jsx)(b.UN, {}), (0, i.jsx)(E.nd, {
-            premiumSubscription: l,
+          children: [(0, i.jsx)(b.UN, {}), (0, i.jsx)(j.nd, {
+            premiumSubscription: a,
             renewalInvoice: G,
             isUpdate: !0
           })]
@@ -204,16 +205,16 @@ function Z(e) {
       align: g.Z.Align.CENTER,
       justify: g.Z.Justify.BETWEEN,
       children: [(0, i.jsx)(o.zxk, {
-        color: o.zxk.Colors.RED,
+        variant: "critical-primary",
+        text: A.intl.string(A.t["/AS/gI"]),
         disabled: C,
         onClick: async () => {
           try {
-            S(!0), R(null), await D(l, Z, M, c), x()
+            v(!0), R(null), await D(a, Z, M, c), x()
           } catch (e) {
-            R(A.intl.string(A.t["5mlOCQ"])), S(!1)
+            R(A.intl.string(A.t["5mlOCQ"])), v(!1)
           }
-        },
-        children: A.intl.string(A.t["/AS/gI"])
+        }
       }), (0, i.jsx)(_.Z, {
         onClick: p
       })]
@@ -247,8 +248,9 @@ function w(e) {
       })]
     }), (0, i.jsx)(o.mzw, {
       children: (0, i.jsx)(o.zxk, {
-        onClick: r,
-        children: A.intl.string(A.t.BddRzc)
+        variant: "primary",
+        text: A.intl.string(A.t.BddRzc),
+        onClick: r
       })
     })]
   })
@@ -258,12 +260,12 @@ function k(e) {
   let t, {
     guildBoostSlot: n,
     transitionState: s,
-    onClose: l
+    onClose: a
   } = e;
   r.useEffect(() => {
     C.Z.hasFetchedSubscriptions() || (0, c.jg)()
   }, []);
-  let d = (0, a.e7)([C.Z], () => C.Z.getPremiumTypeSubscription()),
+  let d = (0, l.e7)([C.Z], () => C.Z.getPremiumTypeSubscription()),
     g = (0, p.Z)(),
     [h, f] = r.useState(1),
     {
@@ -279,7 +281,7 @@ function k(e) {
         fractionalPremiumInfo: g,
         isInventory: null == n.premiumGuildSubscription,
         onNext: () => f(2),
-        onClose: l
+        onClose: a
       });
       break;
     case 2:
@@ -289,14 +291,14 @@ function k(e) {
         fractionalPremiumInfo: g,
         onBack: () => f(1),
         onNext: () => f(3),
-        onClose: l
+        onClose: a
       });
       break;
     case 3:
       t = (0, i.jsx)(w, {
         premiumSubscription: d,
         fractionalPremiumInfo: g,
-        onClose: l
+        onClose: a
       });
       break;
     default:

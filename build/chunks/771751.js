@@ -1,26 +1,26 @@
 /** Chunk was on 93886 **/
-n.d(t, {
+a.d(t, {
   Z: () => w
-}), n(388685), n(642613);
-var a = n(255367),
-  r = n(73800),
-  l = n(120356),
-  i = n.n(l),
-  s = n(544891),
-  o = n(704215),
-  c = n(481060),
-  d = n(937579),
-  u = n(675478),
-  m = n(431),
-  x = n(572004),
-  h = n(74538),
-  p = n(604776),
-  b = n(246992),
-  f = n(232867),
-  v = n(981631),
-  j = n(474936),
-  g = n(616257),
-  _ = n(173166);
+}), a(388685), a(642613);
+var n = a(255367),
+  r = a(73800),
+  l = a(120356),
+  i = a.n(l),
+  s = a(544891),
+  o = a(704215),
+  c = a(481060),
+  d = a(937579),
+  u = a(675478),
+  m = a(431),
+  x = a(572004),
+  p = a(74538),
+  h = a(604776),
+  b = a(246992),
+  f = a(232867),
+  v = a(981631),
+  j = a(474936),
+  g = a(616257),
+  _ = a(173166);
 let y = async () => {
   try {
     let {
@@ -86,10 +86,10 @@ let y = async () => {
 };
 
 function S(e) {
-  var t, n, l, o, u;
+  var t, a, l, o, u;
   let {
     offer: m,
-    offerOptions: p,
+    offerOptions: h,
     forceRefetch: b
   } = e, [f, g] = r.useState(!1), [y, C] = r.useState(!1), [N, T] = r.useState(!1), [E, S] = r.useState(!1);
   r.useEffect(() => {
@@ -105,42 +105,42 @@ function S(e) {
     id: P,
     expires_at: w,
     redeemed_at: I,
-    trial_id: k,
-    subscription_trial: R,
-    referrer: A
-  } = m, Z = null != (n = null == (t = p.find(e => {
+    trial_id: R,
+    subscription_trial: k,
+    referrer: Z
+  } = m, A = null != (a = null == (t = h.find(e => {
     let {
       value: t
     } = e;
-    return t === k
-  })) ? void 0 : t.label) ? n : "Unknown";
-  null != A && (Z = "".concat(Z, " from @").concat(A.username));
-  let L = null != w,
-    D = null != w && new Date(w).getTime() < Date.now(),
-    M = (null == R ? void 0 : R.sku_id) === j.Si.TIER_0,
-    z = async () => {
-      T(!0), L ? await B({
+    return t === R
+  })) ? void 0 : t.label) ? a : "Unknown";
+  null != Z && (A = "".concat(A, " from @").concat(Z.username));
+  let D = null != w,
+    L = null != w && new Date(w).getTime() < Date.now(),
+    M = (null == k ? void 0 : k.sku_id) === j.Si.TIER_0,
+    B = async () => {
+      T(!0), D ? await F({
         expiresAt: null
       }) : await (0, d.a)(m), b(), T(!1)
-    }, B = async e => {
+    }, F = async e => {
       T(!0);
       try {
         await s.tn.patch({
           url: v.ANM.UPDATE_USER_OFFER(P, "trial"),
           body: function(e) {
             for (var t = 1; t < arguments.length; t++) {
-              var n = null != arguments[t] ? arguments[t] : {},
-                a = Object.keys(n);
-              "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(n, e).enumerable
-              }))), a.forEach(function(t) {
-                var a;
-                a = n[t], t in e ? Object.defineProperty(e, t, {
-                  value: a,
+              var a = null != arguments[t] ? arguments[t] : {},
+                n = Object.keys(a);
+              "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(a).filter(function(e) {
+                return Object.getOwnPropertyDescriptor(a, e).enumerable
+              }))), n.forEach(function(t) {
+                var n;
+                n = a[t], t in e ? Object.defineProperty(e, t, {
+                  value: n,
                   enumerable: !0,
                   configurable: !0,
                   writable: !0
-                }) : e[t] = a
+                }) : e[t] = n
               })
             }
             return e
@@ -173,135 +173,135 @@ function S(e) {
       }
     }
   }, [f, y]);
-  let F = "Active";
-  return L && (F = "Acked"), D && (F = "Expired"), (0, a.jsxs)("div", {
+  let z = "Active";
+  return D && (z = "Acked"), L && (z = "Expired"), (0, n.jsxs)("div", {
     className: i()(_.card, M ? _.gradientWrapperTier0 : _.gradientWrapperTier2),
-    children: [(0, a.jsx)("div", {
+    children: [(0, n.jsx)("div", {
       className: i()(_.row, _.nameRow),
-      children: (0, a.jsx)(c.X6q, {
+      children: (0, n.jsx)(c.X6q, {
         variant: "heading-lg/semibold",
         color: "always-white",
-        children: Z
+        children: A
       })
-    }), (0, a.jsxs)(c.P3F, {
+    }), (0, n.jsxs)(c.P3F, {
       className: i()(_.row, _.idRow),
       onClick: () => {
         (0, x.JG)(P, () => g(!0))
       },
-      children: [(0, a.jsxs)(c.Text, {
+      children: [(0, n.jsxs)(c.Text, {
         variant: "eyebrow",
         color: "always-white",
         children: ["Offer: ", P]
-      }), f ? (0, a.jsx)(c.dz2, {
+      }), f ? (0, n.jsx)(c.dz2, {
         size: "md",
         color: "currentColor",
         className: _.icon
-      }) : (0, a.jsx)(c.TIy, {
+      }) : (0, n.jsx)(c.TIy, {
         size: "xs",
         color: "currentColor",
         className: _.icon
       })]
-    }), (0, a.jsxs)(c.P3F, {
+    }), (0, n.jsxs)(c.P3F, {
       className: i()(_.row, _.idRow),
       onClick: () => {
-        (0, x.JG)(k, () => C(!0))
+        (0, x.JG)(R, () => C(!0))
       },
-      children: [(0, a.jsxs)(c.Text, {
+      children: [(0, n.jsxs)(c.Text, {
         variant: "eyebrow",
         color: "always-white",
-        children: ["Trial: ", k]
-      }), y ? (0, a.jsx)(c.dz2, {
+        children: ["Trial: ", R]
+      }), y ? (0, n.jsx)(c.dz2, {
         size: "md",
         color: "currentColor",
         className: _.icon
-      }) : (0, a.jsx)(c.TIy, {
+      }) : (0, n.jsx)(c.TIy, {
         size: "xs",
         color: "currentColor",
         className: _.icon
       })]
-    }), (0, a.jsx)("div", {
+    }), (0, n.jsx)("div", {
       className: _.row,
-      children: (0, a.jsxs)(c.Text, {
+      children: (0, n.jsxs)(c.Text, {
         variant: "eyebrow",
         color: "always-white",
-        children: ["Trial Length:", " ", (0, h.if)({
-          intervalType: null != (l = null == R ? void 0 : R.interval) ? l : j.rV.MONTH,
-          intervalCount: null != (o = null == R ? void 0 : R.interval_count) ? o : 1,
+        children: ["Trial Length:", " ", (0, p.if)({
+          intervalType: null != (l = null == k ? void 0 : k.interval) ? l : j.rV.MONTH,
+          intervalCount: null != (o = null == k ? void 0 : k.interval_count) ? o : 1,
           capitalize: !1
         })]
       })
-    }), (0, a.jsxs)("div", {
+    }), (0, n.jsxs)("div", {
       className: _.row,
-      children: [(0, a.jsx)(c.Text, {
+      children: [(0, n.jsx)(c.Text, {
         variant: "eyebrow",
         color: "always-white",
         children: "Expires:"
-      }), (0, a.jsx)("input", {
+      }), (0, n.jsx)("input", {
         type: "date",
         value: null != w ? w.substring(0, 10) : "",
-        onChange: e => B({
+        onChange: e => F({
           expiresAt: e.target.value
         })
       })]
-    }), (0, a.jsxs)("div", {
+    }), (0, n.jsxs)("div", {
       className: _.row,
-      children: [(0, a.jsx)(c.Text, {
+      children: [(0, n.jsx)(c.Text, {
         variant: "eyebrow",
         color: "always-white",
         children: "Referrer ID:"
-      }), (0, a.jsx)("input", {
+      }), (0, n.jsx)("input", {
         type: "text",
-        value: null != (u = null == A ? void 0 : A.id) ? u : "",
-        onChange: e => B({
+        value: null != (u = null == Z ? void 0 : Z.id) ? u : "",
+        onChange: e => F({
           referrerId: e.target.value
         })
       })]
-    }), (0, a.jsxs)("div", {
+    }), (0, n.jsxs)("div", {
       className: _.badgeContainer,
-      children: [(0, a.jsx)(c.P3F, {
-        onClick: z,
+      children: [(0, n.jsx)(c.P3F, {
+        onClick: B,
         className: i()(_.badge, _.clickable, {
-          [_.acked]: L,
-          [_.expired]: D
+          [_.acked]: D,
+          [_.expired]: L
         }),
-        children: (0, a.jsx)(c.Text, {
+        children: (0, n.jsx)(c.Text, {
           variant: "eyebrow",
-          color: "Acked" === F ? void 0 : "always-white",
-          children: F
+          color: "Acked" === z ? void 0 : "always-white",
+          children: z
         })
-      }), null != I && (0, a.jsx)("div", {
+      }), null != I && (0, n.jsx)("div", {
         className: i()(_.badge, _.redeemed),
-        children: (0, a.jsx)(c.Text, {
+        children: (0, n.jsx)(c.Text, {
           variant: "eyebrow",
           color: "always-white",
           children: "Redeemed"
         })
       })]
-    }), (0, a.jsx)(c.P3F, {
+    }), (0, n.jsx)(c.P3F, {
       onClick: async () => {
         T(!0), await O(P, "trial"), b(), T(!1)
       },
-      children: (0, a.jsx)(c.XHJ, {
+      children: (0, n.jsx)(c.XHJ, {
         size: "md",
         color: "currentColor",
         className: i()(_.icon, _.trashIcon)
       })
-    }), (0, a.jsx)("div", {
+    }), (0, n.jsx)("div", {
       className: i()(_.loadingContainer, {
         [_.isLoading]: N || E
       }),
-      children: (0, a.jsx)(c.$jN, {})
+      children: (0, n.jsx)(c.$jN, {})
     })]
   })
 }
 
 function P(e) {
-  var t, n;
+  var t, a;
   let {
     offer: l,
     offerOptions: o,
     forceRefetch: u
-  } = e, [m, h] = r.useState(!1), [p, b] = r.useState(!1), [f, j] = r.useState(!1), [g, y] = r.useState(!1);
+  } = e, [m, p] = r.useState(!1), [h, b] = r.useState(!1), [f, j] = r.useState(!1), [g, y] = r.useState(!1);
   r.useEffect(() => {
     f && y(!0);
     let e = setTimeout(() => {
@@ -317,16 +317,16 @@ function P(e) {
     applied_at: T,
     discount_id: E,
     discount: S
-  } = l, P = null != (n = null == (t = o.find(e => {
+  } = l, P = null != (a = null == (t = o.find(e => {
     let {
       value: t
     } = e;
     return t === E
-  })) ? void 0 : t.label) ? n : "Unknown", w = null != N, I = null != N && new Date(N).getTime() < Date.now(), k = async () => {
-    j(!0), w ? await R({
+  })) ? void 0 : t.label) ? a : "Unknown", w = null != N, I = null != N && new Date(N).getTime() < Date.now(), R = async () => {
+    j(!0), w ? await k({
       expiresAt: null
     }) : await (0, d.a)(void 0, l), u(), j(!1)
-  }, R = async e => {
+  }, k = async e => {
     let {
       expiresAt: t
     } = e;
@@ -346,13 +346,13 @@ function P(e) {
   r.useEffect(() => {
     if (m) {
       let e = setTimeout(() => {
-        h(!1)
+        p(!1)
       }, 3e3);
       return () => {
         clearTimeout(e)
       }
     }
-    if (p) {
+    if (h) {
       let e = setTimeout(() => {
         b(!1)
       }, 3e3);
@@ -360,183 +360,186 @@ function P(e) {
         clearTimeout(e)
       }
     }
-  }, [m, p]);
-  let A = "Active";
-  return I && (A = "Expired"), w && (A = "Acked"), (0, a.jsxs)("div", {
+  }, [m, h]);
+  let Z = "Active";
+  return I && (Z = "Expired"), w && (Z = "Acked"), (0, n.jsxs)("div", {
     className: i()(_.card, _.discount),
-    children: [(0, a.jsxs)("div", {
+    children: [(0, n.jsxs)("div", {
       className: i()(_.row, _.nameRow),
-      children: [(0, a.jsx)(c.X6q, {
+      children: [(0, n.jsx)(c.X6q, {
         variant: "heading-lg/semibold",
         color: "text-default",
         children: P
-      }), (0, a.jsx)(c.P3F, {
+      }), (0, n.jsx)(c.P3F, {
         onClick: async () => {
           j(!0), await O(C, "discount"), u(), j(!1)
         },
-        children: (0, a.jsx)(c.XHJ, {
+        children: (0, n.jsx)(c.XHJ, {
           size: "md",
           color: "currentColor",
           className: i()(_.icon, _.trashIcon)
         })
       })]
-    }), (0, a.jsxs)(c.P3F, {
+    }), (0, n.jsxs)(c.P3F, {
       className: i()(_.row, _.idRow),
       onClick: () => {
-        (0, x.JG)(C, () => h(!0))
+        (0, x.JG)(C, () => p(!0))
       },
-      children: [(0, a.jsxs)(c.Text, {
+      children: [(0, n.jsxs)(c.Text, {
         variant: "eyebrow",
         color: "text-default",
         children: ["Offer: ", C]
-      }), m ? (0, a.jsx)(c.dz2, {
+      }), m ? (0, n.jsx)(c.dz2, {
         size: "md",
         color: "currentColor",
         className: i()(_.icon, _.noMargin)
-      }) : (0, a.jsx)(c.TIy, {
+      }) : (0, n.jsx)(c.TIy, {
         size: "xs",
         color: "currentColor",
         className: _.icon
       })]
-    }), (0, a.jsxs)(c.P3F, {
+    }), (0, n.jsxs)(c.P3F, {
       className: i()(_.row, _.idRow),
       onClick: () => {
         (0, x.JG)(E, () => b(!0))
       },
-      children: [(0, a.jsxs)(c.Text, {
+      children: [(0, n.jsxs)(c.Text, {
         variant: "eyebrow",
         color: "text-default",
         children: ["Discount: ", E]
-      }), p ? (0, a.jsx)(c.dz2, {
+      }), h ? (0, n.jsx)(c.dz2, {
         size: "md",
         color: "currentColor",
         className: i()(_.icon, _.noMargin)
-      }) : (0, a.jsx)(c.TIy, {
+      }) : (0, n.jsx)(c.TIy, {
         size: "xs",
         color: "currentColor",
         className: _.icon
       })]
-    }), (null == S ? void 0 : S.amount) != null && (0, a.jsx)("div", {
-      children: (0, a.jsxs)(c.Text, {
+    }), (null == S ? void 0 : S.amount) != null && (0, n.jsx)("div", {
+      children: (0, n.jsxs)(c.Text, {
         variant: "eyebrow",
         color: "text-default",
         children: [S.amount, "% off"]
       })
-    }), (0, a.jsxs)("div", {
+    }), (0, n.jsxs)("div", {
       className: _.row,
-      children: [(0, a.jsx)(c.Text, {
+      children: [(0, n.jsx)(c.Text, {
         variant: "eyebrow",
         color: "always-white",
         children: "Expires:"
-      }), (0, a.jsx)("input", {
+      }), (0, n.jsx)("input", {
         type: "date",
         value: null != N ? N.substring(0, 10) : "",
-        onChange: e => R({
+        onChange: e => k({
           expiresAt: e.target.value
         })
       })]
-    }), (0, a.jsxs)("div", {
+    }), (0, n.jsxs)("div", {
       className: _.badgeContainer,
-      children: [(0, a.jsx)(c.P3F, {
-        onClick: k,
+      children: [(0, n.jsx)(c.P3F, {
+        onClick: R,
         className: i()(_.badge, _.clickable, {
           [_.acked]: w,
           [_.expired]: I
         }),
-        children: (0, a.jsx)(c.Text, {
+        children: (0, n.jsx)(c.Text, {
           variant: "eyebrow",
-          color: "Acked" === A ? void 0 : "always-white",
-          children: A
+          color: "Acked" === Z ? void 0 : "always-white",
+          children: Z
         })
-      }), null != T && (0, a.jsx)("div", {
+      }), null != T && (0, n.jsx)("div", {
         className: i()(_.badge, _.redeemed),
-        children: (0, a.jsx)(c.Text, {
+        children: (0, n.jsx)(c.Text, {
           variant: "eyebrow",
           color: "always-white",
           children: "Applied"
         })
       })]
-    }), (0, a.jsx)("div", {
+    }), (0, n.jsx)("div", {
       className: i()(_.loadingContainer, {
         [_.isLoading]: f || g
       }),
-      children: (0, a.jsx)(c.$jN, {})
+      children: (0, n.jsx)(c.$jN, {})
     })]
   })
 }
 
 function w() {
-  let [e, t] = r.useState([]), [n, l] = r.useState([]), [i, s] = r.useState(), [x, h] = r.useState(), [j, O] = r.useState([]), [w, I] = r.useState([]), [k, R] = r.useState(!0), [A, Z] = r.useState(10080), [L, D] = r.useState([]), {
+  let [e, t] = r.useState([]), [a, l] = r.useState([]), [i, s] = r.useState(), [x, p] = r.useState(), [j, O] = r.useState([]), [w, I] = r.useState([]), [R, k] = r.useState(!0), [Z, A] = r.useState(10080), [D, L] = r.useState([]), {
     entitlements: M,
-    deleteFractionalPremium: z,
-    refreshEntitlementList: B
+    deleteFractionalPremium: B,
+    refreshEntitlementList: F
   } = (0, f.m)();
   r.useEffect(() => {
-    B()
-  }, [B]);
-  let F = e => e.filter(e => e.sourceType === v.kNB.REVERSE_TRIAL && null != e.endsAt && e.endsAt > new Date);
+    F()
+  }, [F]);
+  let z = e => e.filter(e => e.sourceType === v.kNB.REVERSE_TRIAL && null != e.endsAt && e.endsAt > new Date);
   r.useEffect(() => {
-    D(F(M))
+    L(z(M))
   }, [M]), r.useEffect(() => {
-    (0 === e.length || 0 === n.length || k) && y().then(e => {
-      let n = Object.keys(e.trial).map(t => ({
+    (0 === e.length || 0 === a.length || R) && y().then(e => {
+      let a = Object.keys(e.trial).map(t => ({
           label: t,
           value: e.trial[t]
         })),
-        a = Object.keys(e.discount).map(t => ({
+        n = Object.keys(e.discount).map(t => ({
           label: t,
           value: e.discount[t]
         }));
-      t(n), l(a), null == i && s(n[0].value), null == x && h(a[0].value)
+      t(a), l(n), null == i && s(a[0].value), null == x && p(n[0].value)
     })
-  }, [e, n, i, x, k]), r.useEffect(() => {
-    k && (R(!1), m.Z.forceReset(), (0, d.T)(), N().then(e => {
+  }, [e, a, i, x, R]), r.useEffect(() => {
+    R && (k(!1), m.Z.forceReset(), (0, d.T)(), N().then(e => {
       O(e.trial.sort((e, t) => e.id.localeCompare(t.id))), I(e.discount.sort((e, t) => e.id.localeCompare(t.id)))
     }))
-  }, [k]);
+  }, [R]);
   let U = async () => {
-    null != i && (await C(i, "trial"), R(!0))
+    null != i && (await C(i, "trial"), k(!0))
   }, G = async () => {
-    null != x && (await C(x, "discount"), R(!0))
+    null != x && (await C(x, "discount"), k(!0))
   }, V = async () => {
-    await T(), R(!0)
+    await T(), k(!0)
   }, H = async () => {
-    let e = new Date(Date.now() + 60 * A * 1e3).toISOString();
-    await E(e), B()
+    let e = new Date(Date.now() + 60 * Z * 1e3).toISOString();
+    await E(e), F()
   };
-  return (0, a.jsx)(c.zJl, {
+  return (0, n.jsx)(c.zJl, {
     className: g.panel,
-    children: (0, a.jsxs)("div", {
+    children: (0, n.jsxs)("div", {
       className: _.panelInner,
-      children: [(0, a.jsxs)("section", {
+      children: [(0, n.jsxs)("section", {
         className: _.section,
-        children: [(0, a.jsx)(c.X6q, {
+        children: [(0, n.jsx)(c.X6q, {
           variant: "heading-md/semibold",
           children: "Utils"
-        }), (0, a.jsxs)("div", {
+        }), (0, n.jsxs)("div", {
           className: _.buttons,
-          children: [(0, a.jsx)(c.zxk, {
-            size: c.zxk.Sizes.SMALL,
-            onClick: V,
-            children: "Clear all User Offers"
-          }), (0, a.jsx)(c.zxk, {
-            size: c.zxk.Sizes.SMALL,
-            onClick: () => (0, u.w9)(o.z.PREMIUM_MOBILE_TRIAL_USER_SETTINGS_AVATAR_BADGE),
-            children: "Clear Mobile Trials DismissibleContent"
-          }), (0, a.jsx)(c.zxk, {
-            size: c.zxk.Sizes.SMALL,
-            onClick: () => R(!0),
-            children: "Refresh DevTools"
+          children: [(0, n.jsx)(c.zxk, {
+            variant: "primary",
+            size: "sm",
+            text: "Clear all User Offers",
+            onClick: V
+          }), (0, n.jsx)(c.zxk, {
+            variant: "primary",
+            size: "sm",
+            text: "Clear Mobile Trials DismissibleContent",
+            onClick: () => (0, u.w9)(o.z.PREMIUM_MOBILE_TRIAL_USER_SETTINGS_AVATAR_BADGE)
+          }), (0, n.jsx)(c.zxk, {
+            variant: "primary",
+            size: "sm",
+            text: "Refresh DevTools",
+            onClick: () => k(!0)
           })]
         })]
-      }), (0, a.jsxs)("section", {
+      }), (0, n.jsxs)("section", {
         className: _.section,
-        children: [(0, a.jsx)(c.X6q, {
+        children: [(0, n.jsx)(c.X6q, {
           variant: "heading-md/semibold",
           children: "Create a Trial Offer"
-        }), (0, a.jsxs)("div", {
+        }), (0, n.jsxs)("div", {
           className: _.inputRow,
-          children: [(0, a.jsx)(c.PhF, {
+          children: [(0, n.jsx)(c.PhF, {
             className: _.input,
             options: e,
             isSelected: e => i === e,
@@ -544,59 +547,61 @@ function w() {
             serialize: e => String(e),
             select: e => s(e),
             popoutLayerContext: b.O$
-          }), (0, a.jsx)(c.zxk, {
-            onClick: U,
-            children: "Create"
+          }), (0, n.jsx)(c.zxk, {
+            variant: "primary",
+            text: "Create",
+            onClick: U
           })]
         })]
-      }), (0, a.jsxs)("section", {
+      }), (0, n.jsxs)("section", {
         className: _.section,
-        children: [(0, a.jsx)(c.X6q, {
+        children: [(0, n.jsx)(c.X6q, {
           variant: "heading-md/semibold",
           children: "Create a Discount Offer"
-        }), (0, a.jsxs)("div", {
+        }), (0, n.jsxs)("div", {
           className: _.inputRow,
-          children: [(0, a.jsx)(c.PhF, {
+          children: [(0, n.jsx)(c.PhF, {
             className: _.input,
-            options: n,
+            options: a,
             isSelected: e => x === e,
             placeholder: "Discount Type",
             serialize: e => String(e),
-            select: e => h(e),
+            select: e => p(e),
             popoutLayerContext: b.O$
-          }), (0, a.jsx)(c.zxk, {
-            onClick: G,
-            children: "Create"
+          }), (0, n.jsx)(c.zxk, {
+            variant: "primary",
+            text: "Create",
+            onClick: G
           })]
         })]
-      }), j.length > 0 && (0, a.jsxs)("section", {
+      }), j.length > 0 && (0, n.jsxs)("section", {
         className: _.section,
-        children: [(0, a.jsx)(c.X6q, {
+        children: [(0, n.jsx)(c.X6q, {
           variant: "heading-md/semibold",
           children: "Existing Trial Offers"
-        }), j.map(t => (0, a.jsx)(S, {
+        }), j.map(t => (0, n.jsx)(S, {
           offer: t,
           offerOptions: e,
-          forceRefetch: () => R(!0)
+          forceRefetch: () => k(!0)
         }, t.id))]
-      }), w.length > 0 && (0, a.jsxs)("section", {
+      }), w.length > 0 && (0, n.jsxs)("section", {
         className: _.section,
-        children: [(0, a.jsx)(c.X6q, {
+        children: [(0, n.jsx)(c.X6q, {
           variant: "heading-md/semibold",
           children: "Existing Discount Offers"
-        }), w.map(e => (0, a.jsx)(P, {
+        }), w.map(e => (0, n.jsx)(P, {
           offer: e,
-          offerOptions: n,
-          forceRefetch: () => R(!0)
+          offerOptions: a,
+          forceRefetch: () => k(!0)
         }, e.id))]
-      }), (0, a.jsxs)("section", {
+      }), (0, n.jsxs)("section", {
         className: _.section,
-        children: [(0, a.jsx)(c.X6q, {
+        children: [(0, n.jsx)(c.X6q, {
           variant: "heading-md/semibold",
           children: "Create a Reverse Trial Entitlement"
-        }), (0, a.jsxs)("div", {
+        }), (0, n.jsxs)("div", {
           className: _.inputRow,
-          children: [(0, a.jsx)(c.PhF, {
+          children: [(0, n.jsx)(c.PhF, {
             className: _.input,
             options: [{
               label: "5 minutes",
@@ -611,28 +616,29 @@ function w() {
               label: "1 week",
               value: 10080
             }],
-            isSelected: e => A === e,
+            isSelected: e => Z === e,
             placeholder: "Reverse Trial Length",
             serialize: e => String(e),
-            select: e => Z(e),
+            select: e => A(e),
             popoutLayerContext: b.O$
-          }), (0, a.jsx)(c.zxk, {
-            onClick: H,
-            children: "Create"
+          }), (0, n.jsx)(c.zxk, {
+            variant: "primary",
+            text: "Create",
+            onClick: H
           })]
         })]
-      }), L.length > 0 && (0, a.jsxs)("div", {
-        children: [(0, a.jsx)(c.Text, {
+      }), D.length > 0 && (0, n.jsxs)("div", {
+        children: [(0, n.jsx)(c.Text, {
           style: {
             marginTop: "15px"
           },
           variant: "text-md/bold",
           children: "Active reverse trial"
-        }), (0, a.jsx)("div", {
-          children: L.map(e => (0, a.jsx)(p.D, {
+        }), (0, n.jsx)("div", {
+          children: D.map(e => (0, n.jsx)(h.D, {
             entitlement: e,
             active: !0,
-            onDelete: () => z(e.id)
+            onDelete: () => B(e.id)
           }, e.id))
         })]
       })]

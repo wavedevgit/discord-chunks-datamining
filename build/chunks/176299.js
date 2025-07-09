@@ -32,8 +32,8 @@ var r = n(255367),
   A = n(540059),
   Z = n(591472),
   x = n(351051),
-  L = n(724383),
-  w = n(135864),
+  w = n(724383),
+  L = n(135864),
   R = n(372900),
   D = n(6039),
   k = n(637853),
@@ -110,13 +110,13 @@ let eZ = (0, u.Un)({
     className: ej.loader,
     children: (0, r.jsx)(f.$jN, {})
   }),
-  eL = (0, u.Un)({
+  ew = (0, u.Un)({
     createPromise: () => n.e("78431").then(n.bind(n, 650788)),
     webpackId: 650788,
     name: "GuildShopPage",
     renderLoader: ex
   }),
-  ew = (0, u.Un)({
+  eL = (0, u.Un)({
     createPromise: () => n.e("12009").then(n.bind(n, 231588)),
     webpackId: 231588,
     name: "GuildHomePage",
@@ -173,14 +173,14 @@ let eZ = (0, u.Un)({
     let f = (0, P.C4)(l, "channel_renderer");
     if (null != l && null != a && (0, eS.AB)(a)) switch (a) {
       case eS.oC.ROLE_SUBSCRIPTIONS:
-        return f ? (0, r.jsx)(eL, {
+        return f ? (0, r.jsx)(ew, {
           guildId: l,
           initialTab: j.y.GUILD_ROLE_SUBSCRIPTIONS
         }) : (0, r.jsx)(U.Z, {
           guildId: l
         });
       case eS.oC.GUILD_SHOP:
-        return (0, r.jsx)(eL, {
+        return (0, r.jsx)(ew, {
           guildId: l,
           productId: o,
           initialTab: h
@@ -190,7 +190,7 @@ let eZ = (0, u.Un)({
           to: eC.Z5c.CHANNEL(l, eS.oC.MEMBER_SAFETY)
         });
       case eS.oC.GUILD_HOME:
-        return (0, r.jsx)(ew, {
+        return (0, r.jsx)(eL, {
           guildId: l
         });
       case eS.oC.CHANNEL_BROWSER:
@@ -245,13 +245,13 @@ let eZ = (0, u.Un)({
     }), i = (0, p.e7)([ep.Z], () => null != t ? t : ep.Z.getChannelId(e));
     return window.location.pathname.startsWith(eC.Z5c.NOTIFICATIONS_INBOX()) ? ("sidebar" !== n && (0, ea.dL)(ec.Z.defaultRoute), (0, r.jsx)(Q.Z, {
       includePanelSpacing: !0
-    })) : window.location.pathname.startsWith(eC.Z5c.GLOBAL_DISCOVERY) || window.location.pathname.startsWith(eC.Z5c.GUILD_DISCOVERY) || (0, ee.OG)() ? (0, r.jsx)(w.Z, {}) : null != e ? (0, r.jsx)(G.Z, {
+    })) : window.location.pathname.startsWith(eC.Z5c.GLOBAL_DISCOVERY) || window.location.pathname.startsWith(eC.Z5c.GUILD_DISCOVERY) || (0, ee.OG)() ? (0, r.jsx)(L.Z, {}) : null != e ? (0, r.jsx)(G.Z, {
       selectedChannelId: i,
       guildId: e
     }, e) : (0, r.jsx)(eO.Z, {})
   }),
   eB = e => (0, r.jsx)(eU, eA({}, e)),
-  eV = () => (0, r.jsx)(L.Z, {}),
+  eV = () => (0, r.jsx)(w.Z, {}),
   eH = e => null != e.match.params.channelId ? eB(e) : (0, r.jsx)(X.Z, {}),
   eF = e => {
     let {

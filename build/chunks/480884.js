@@ -1,97 +1,98 @@
 /** Chunk was on 59385 **/
 t.d(n, {
-  default: () => v
+  default: () => h
 }), t(953529);
 var a = t(255367),
   s = t(73800),
   o = t(286379),
   c = t(399606),
-  i = t(481060),
-  l = t(797614),
-  r = t(819557),
-  d = t(138201),
-  u = t(359119),
-  _ = t(473092),
-  x = t(636749),
-  m = t(981631),
-  b = t(388032),
-  g = t(661306);
+  i = t(755721),
+  l = t(481060),
+  r = t(797614),
+  d = t(819557),
+  u = t(138201),
+  _ = t(359119),
+  x = t(473092),
+  m = t(636749),
+  b = t(981631),
+  g = t(388032),
+  v = t(661306);
 
-function v(e) {
+function h(e) {
   let {
     transitionState: n,
     onClose: t,
-    channelId: v,
-    warningId: h,
-    senderId: k,
-    description: N,
-    safetyTipRows: f,
-    actionRows: T,
-    learnMore: p
-  } = e, j = (0, c.e7)([u.ZP], () => u.ZP.getChannelSafetyWarning(v, h));
+    channelId: h,
+    warningId: N,
+    senderId: f,
+    description: k,
+    safetyTipRows: T,
+    actionRows: p,
+    learnMore: j
+  } = e, B = (0, c.e7)([_.ZP], () => _.ZP.getChannelSafetyWarning(h, N));
   return s.useEffect(() => {
-    (0, _.MC)(m.rMx.SAFETY_WARNING_MODAL_VIEWED, {
-      channelId: v,
-      warningId: h,
-      senderId: k,
-      warningType: null == j ? void 0 : j.type
-    }), l.Z.increment({
+    (0, x.MC)(b.rMx.SAFETY_WARNING_MODAL_VIEWED, {
+      channelId: h,
+      warningId: N,
+      senderId: f,
+      warningType: null == B ? void 0 : B.type
+    }), r.Z.increment({
       name: o.V.SAFETY_WARNING_MODAL_VIEW
     })
-  }, [v, h, k, j]), (0, a.jsx)(i.Y0X, {
+  }, [h, N, f, B]), (0, a.jsx)(l.Y0X, {
     transitionState: n,
     parentComponent: "MoreTipsModal",
-    children: (0, a.jsxs)(i.Ttm, {
+    children: (0, a.jsxs)(l.Ttm, {
       style: {
         overflow: "hidden auto"
       },
-      children: [(0, a.jsxs)(i.xBx, {
-        className: g.modalHeader,
+      children: [(0, a.jsxs)(l.xBx, {
+        className: v.modalHeader,
         children: [(0, a.jsxs)("div", {
-          className: g.modalHeaderText,
-          children: [(0, a.jsx)(i.Text, {
+          className: v.modalHeaderText,
+          children: [(0, a.jsx)(l.Text, {
             variant: "eyebrow",
             color: "status-positive-text",
-            children: b.intl.string(b.t.lyt43N)
-          }), (0, a.jsx)(i.X6q, {
+            children: g.intl.string(g.t.lyt43N)
+          }), (0, a.jsx)(l.X6q, {
             variant: "heading-xl/bold",
             color: "status-positive-text",
-            children: N
+            children: k
           })]
-        }), (0, a.jsx)(i.zxk, {
-          "aria-label": b.intl.string(b.t.cpT0Cg),
-          look: i.zxk.Looks.BLANK,
-          size: i.zxk.Sizes.NONE,
+        }), (0, a.jsx)(i.zx, {
+          "aria-label": g.intl.string(g.t.cpT0Cg),
+          look: i.zx.Looks.BLANK,
+          size: i.zx.Sizes.NONE,
           onClick: t,
-          innerClassName: g.closeButtonInner,
-          className: g.closeButton,
-          children: (0, a.jsx)(i.Dio, {
+          innerClassName: v.closeButtonInner,
+          className: v.closeButton,
+          children: (0, a.jsx)(l.Dio, {
             size: "sm",
             color: "currentColor",
-            className: g.closeIcon
+            className: v.closeIcon
           })
         })]
-      }), (0, a.jsxs)(i.hzk, {
-        className: g.modalContent,
+      }), (0, a.jsxs)(l.hzk, {
+        className: v.modalContent,
         children: [(0, a.jsxs)("div", {
-          className: g.mainSection,
-          children: [(0, a.jsx)(r.z, {
-            children: f
-          }), null != p ? p : null]
+          className: v.mainSection,
+          children: [(0, a.jsx)(d.z, {
+            children: T
+          }), null != j ? j : null]
         }), (0, a.jsxs)("div", {
-          children: [(0, a.jsx)(i.Text, {
-            className: g.moreHeading,
+          children: [(0, a.jsx)(l.Text, {
+            className: v.moreHeading,
             variant: "eyebrow",
             color: "header-secondary",
-            children: b.intl.string(b.t.K5FKtb)
-          }), (0, a.jsx)(d.rT, {
-            children: T
+            children: g.intl.string(g.t.K5FKtb)
+          }), (0, a.jsx)(u.rT, {
+            children: p
           })]
-        }), (0, a.jsx)(x.Z, {
-          channelId: v,
-          warningId: h,
-          senderId: k,
-          safetyWarning: j
+        }), (0, a.jsx)(m.Z, {
+          channelId: h,
+          warningId: N,
+          senderId: f,
+          safetyWarning: B
         })]
       })]
     })

@@ -4,17 +4,17 @@ n.d(t, {
 });
 var r = n(255367);
 n(73800);
-var i = n(481060),
+var i = n(755721),
   l = n(493683),
-  o = n(726521),
-  a = n(868807),
+  a = n(726521),
+  o = n(868807),
   s = n(388032);
 
 function c(e) {
   let {
     channel: t,
-    buttonSize: n = i.PhG.TINY,
-    color: c = i.zxk.Colors.RED,
+    buttonSize: n = i.Ph.TINY,
+    color: c = i.zx.Colors.RED,
     className: u,
     onReportClick: d,
     onReportSubmit: p,
@@ -24,18 +24,18 @@ function c(e) {
     error: m,
     loaded: g,
     message: b
-  } = (0, a.a)(t);
+  } = (0, o.a)(t);
   if (null == b && (g || m)) return null;
   let _ = () => {
     null == p || p(), l.Z.closePrivateChannel(t.id)
   };
-  return (0, r.jsx)(i.zxk, {
+  return (0, r.jsx)(i.zx, {
     className: u,
     size: n,
     color: c,
     disabled: null == b,
     onClick: e => {
-      e.stopPropagation(), null == d || d(), null != b && (0, o.WL)(b, _)
+      e.stopPropagation(), null == d || d(), null != b && (0, a.WL)(b, _)
     },
     onMouseEnter: h,
     onMouseLeave: f,

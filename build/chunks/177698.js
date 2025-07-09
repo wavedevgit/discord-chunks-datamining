@@ -85,14 +85,14 @@ let O = (0, h.Z)(e => {
     integrationType: A,
     pid: Z,
     signal: x
-  } = e, L = "OAuth2Authorize_".concat(n, "_").concat(S, "_").concat(N), w = null != A ? null == u ? void 0 : u.get(A) : void 0, R = null != (t = null == w ? void 0 : w.application) ? t : a.Z.getApplication(n);
+  } = e, w = "OAuth2Authorize_".concat(n, "_").concat(S, "_").concat(N), L = null != A ? null == u ? void 0 : u.get(A) : void 0, R = null != (t = null == L ? void 0 : L.application) ? t : a.Z.getApplication(n);
   return new Promise((e, t) => {
     let a = (0, f.jU)(Z),
-      w = i.z1l;
+      L = i.z1l;
     null != R && null != (0, l.ZP)({
       application: R,
       channelId: N
-    }) ? w = i.u1M : a.context === g.IlC.POPOUT && (w = i.u1M);
+    }) ? L = i.u1M : a.context === g.IlC.POPOUT && (L = i.u1M);
     let D = !1,
       k = l => {
         let {
@@ -131,7 +131,7 @@ let O = (0, h.Z)(e => {
               onCloseCallback: () => {
                 l(), e(u), a.lock()
               }
-            }, w)
+            }, L)
           } else {
             let t = "OAuth2AuthorizeExternalError_".concat(n, "_").concat(S, "_").concat(N),
               {
@@ -149,13 +149,13 @@ let O = (0, h.Z)(e => {
               onCloseCallback: () => {
                 l(), e(u), a.lock()
               }
-            }, w)
+            }, L)
           }
         }
       },
       {
         cleanup: M
-      } = E(L, x);
+      } = E(w, x);
     (0, i.h7j)(e => (0, r.jsx)(o.OAuth2AuthorizeModal, _(b({}, e), {
       authorizations: u,
       clientId: n,
@@ -175,13 +175,13 @@ let O = (0, h.Z)(e => {
       integrationType: A,
       cancelCompletesFlow: !0
     })), {
-      modalKey: L,
+      modalKey: w,
       onCloseCallback: () => {
         M(), D || (t(new p.Z({
           errorCode: g.lTL.OAUTH2_ERROR
         }, "User cancelled authorization")), a.lock())
       }
-    }, w)
+    }, L)
   })
 }, function(e, t, n) {
   if ((0, f.br)(n) || !u.isPlatformEmbedded) return;

@@ -1,15 +1,15 @@
 /** Chunk was on 93886 **/
-n.d(t, {
+a.d(t, {
   Z: () => l
 });
-var a = n(570140),
-  r = n(432877);
+var n = a(570140),
+  r = a(432877);
 
 function l(e, t) {
-  let n = "boolean" == typeof t ? t : !r.ZP.get(e);
-  a.Z.dispatch({
+  let a = "boolean" == typeof t ? t : !r.ZP.get(e);
+  n.Z.dispatch({
     type: "DEV_TOOLS_DEV_SETTING_SET",
     toggle: e,
-    value: n
+    value: a
   })
 }

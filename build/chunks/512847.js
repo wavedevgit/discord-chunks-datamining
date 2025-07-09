@@ -127,13 +127,13 @@ function x() {
   }), null
 }
 
-function L() {
+function w() {
   return N([I.Z], () => I.Z.userHasBeenMovedVersion, (e, t) => {
     if (e !== t) return "user_moved"
   }), null
 }
 
-function w() {
+function L() {
   return N([O.Z, I.Z], () => {
     let e = O.Z.getVoiceChannelId();
     if (null == e) return d.xO.NONE;
@@ -245,6 +245,6 @@ function D() {
 
 function k() {
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(T, {}), (0, r.jsx)(P, {}), (0, r.jsx)(j, {}), (0, r.jsx)(Z, {}), (0, r.jsx)(L, {}), (0, r.jsx)(R, {}), (0, r.jsx)(w, {}), (0, r.jsx)(D, {}), (0, r.jsx)(A, {}), (0, r.jsx)(x, {})]
+    children: [(0, r.jsx)(T, {}), (0, r.jsx)(P, {}), (0, r.jsx)(j, {}), (0, r.jsx)(Z, {}), (0, r.jsx)(w, {}), (0, r.jsx)(R, {}), (0, r.jsx)(L, {}), (0, r.jsx)(D, {}), (0, r.jsx)(A, {}), (0, r.jsx)(x, {})]
   })
 }

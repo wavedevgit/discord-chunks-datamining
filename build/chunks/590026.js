@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(73800),
   i = n(876215),
   l = n(442837),
-  o = n(676316),
-  a = n(146282),
+  a = n(676316),
+  o = n(146282),
   s = n(442853),
   c = n(520951),
   u = n(897674),
@@ -29,12 +29,12 @@ function h(e) {
   let {
     entriesWithLeaderboard: h,
     hasLeaderboardEntry: f
-  } = (0, o.Z)({
+  } = (0, a.Z)({
     entries: t,
     channelId: e
   });
   return t = h, {
-    requestId: (0, l.e7)([a.Z], () => a.Z.getFeedRequestId(d.YN.GLOBAL_FEED)),
+    requestId: (0, l.e7)([o.Z], () => o.Z.getFeedRequestId(d.YN.GLOBAL_FEED)),
     entries: t,
     impressionCappedEntryIds: i,
     hasLeaderboardEntry: f

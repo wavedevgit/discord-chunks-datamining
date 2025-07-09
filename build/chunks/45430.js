@@ -1,32 +1,33 @@
 /** Chunk was on 19577 **/
 n.d(t, {
-  Z: () => c
+  Z: () => u
 });
 var r = n(255367),
-  i = n(481060),
-  l = n(475179),
+  i = n(755721),
+  l = n(481060),
+  a = n(475179),
   o = n(841397),
-  a = n(388032),
-  s = n(761325);
+  s = n(388032),
+  c = n(761325);
 
-function c(e) {
+function u(e) {
   let {
     channelId: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: s.container,
+    className: c.container,
     children: [(0, r.jsx)(o.Z, {}), (0, r.jsxs)("div", {
-      className: s.content,
-      children: [(0, r.jsx)(i.X6q, {
+      className: c.content,
+      children: [(0, r.jsx)(l.X6q, {
         variant: "heading-lg/normal",
-        children: a.intl.format(a.t.ilLVLi, {})
-      }), (0, r.jsx)(i.zxk, {
-        size: i.zxk.Sizes.LARGE,
-        color: i.zxk.Colors.PRIMARY,
+        children: s.intl.format(s.t.ilLVLi, {})
+      }), (0, r.jsx)(i.zx, {
+        size: i.zx.Sizes.LARGE,
+        color: i.zx.Colors.PRIMARY,
         onClick: e => {
-          e.stopPropagation(), l.Z.toggleVoiceParticipantsHidden(t, !1)
+          e.stopPropagation(), a.Z.toggleVoiceParticipantsHidden(t, !1)
         },
-        children: a.intl.string(a.t.kLQySE)
+        children: s.intl.string(s.t.kLQySE)
       })]
     })]
   })

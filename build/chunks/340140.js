@@ -1,19 +1,20 @@
 /** Chunk was on 18912 **/
 n.d(e, {
-  default: () => h
+  default: () => g
 }), n(388685);
 var l = n(255367),
   r = n(73800),
-  i = n(481060),
+  i = n(755721),
+  a = n(481060),
   s = n(600164),
-  a = n(538211),
-  o = n(698066),
-  c = n(648159),
-  u = n(388032),
-  d = n(424698),
-  b = n(679335);
+  o = n(538211),
+  c = n(698066),
+  u = n(648159),
+  d = n(388032),
+  b = n(424698),
+  m = n(679335);
 
-function m(t, e, n) {
+function f(t, e, n) {
   return e in t ? Object.defineProperty(t, e, {
     value: n,
     enumerable: !0,
@@ -21,7 +22,7 @@ function m(t, e, n) {
     writable: !0
   }) : t[e] = n, t
 }
-class f extends r.PureComponent {
+class p extends r.PureComponent {
   render() {
     let {
       isStreamer: t,
@@ -30,33 +31,33 @@ class f extends r.PureComponent {
     } = this.props, {
       problem: r
     } = this.state;
-    return (0, l.jsxs)(i.Y0X, {
+    return (0, l.jsxs)(a.Y0X, {
       transitionState: e,
-      size: i.CgR.SMALL,
-      "aria-label": u.intl.string(u.t.qnJ9W1),
+      size: a.CgR.SMALL,
+      "aria-label": d.intl.string(d.t.qnJ9W1),
       parentComponent: "ReportProblem",
-      children: [(0, l.jsx)(c.Z, {}), (0, l.jsxs)(i.xBx, {
+      children: [(0, l.jsx)(u.Z, {}), (0, l.jsxs)(a.xBx, {
         separator: !1,
-        className: d.modalHeader,
-        children: [(0, l.jsx)(i.X6q, {
+        className: b.modalHeader,
+        children: [(0, l.jsx)(a.X6q, {
           variant: "text-md/semibold",
-          className: b.title,
-          children: u.intl.string(u.t.qnJ9W1)
-        }), (0, l.jsx)(i.olH, {
-          className: b.closeButton,
-          innerClassName: d.modalInnerCloseButton,
+          className: m.title,
+          children: d.intl.string(d.t.qnJ9W1)
+        }), (0, l.jsx)(a.olH, {
+          className: m.closeButton,
+          innerClassName: b.modalInnerCloseButton,
           onClick: n
         })]
-      }), (0, l.jsxs)(i.hzk, {
-        className: b.content,
-        children: [(0, l.jsx)(i.Text, {
+      }), (0, l.jsxs)(a.hzk, {
+        className: m.content,
+        children: [(0, l.jsx)(a.Text, {
           variant: "text-sm/normal",
-          children: u.intl.string(u.t["7vw0h4"])
-        }), (0, l.jsx)(i.xJW, {
-          title: u.intl.string(u.t["6Y1t5O"]),
-          children: (0, l.jsx)(i.q4e, {
-            placeholder: u.intl.string(u.t.U0kGk5),
-            options: (0, a.Z)({
+          children: d.intl.string(d.t["7vw0h4"])
+        }), (0, l.jsx)(a.xJW, {
+          title: d.intl.string(d.t["6Y1t5O"]),
+          children: (0, l.jsx)(a.q4e, {
+            placeholder: d.intl.string(d.t.U0kGk5),
+            options: (0, o.Z)({
               isStreamer: t,
               isEndStream: !1,
               showVibesHoneypot: !1
@@ -66,51 +67,51 @@ class f extends r.PureComponent {
             maxVisibleItems: 4
           })
         }), (0, l.jsx)("div", {
-          className: d.art
+          className: b.art
         })]
-      }), (0, l.jsxs)(i.mzw, {
-        className: b.__invalid_footer,
-        children: [(0, l.jsx)(i.zxk, {
-          color: i.zxk.Colors.BRAND,
+      }), (0, l.jsxs)(a.mzw, {
+        className: m.__invalid_footer,
+        children: [(0, l.jsx)(a.zxk, {
+          variant: "primary",
+          text: d.intl.string(d.t.E48BIS),
           disabled: null == r,
-          onClick: this.handleSubmit,
-          children: u.intl.string(u.t.E48BIS)
+          onClick: this.handleSubmit
         }), (0, l.jsx)(s.Z, {
-          children: (0, l.jsx)(i.zxk, {
-            look: i.zxk.Looks.LINK,
-            color: i.zxk.Colors.PRIMARY,
-            size: i.zxk.Sizes.NONE,
+          children: (0, l.jsx)(i.zx, {
+            look: i.zx.Looks.LINK,
+            color: i.zx.Colors.PRIMARY,
+            size: i.zx.Sizes.NONE,
             onClick: n,
-            children: u.intl.string(u.t["ETE/oK"])
+            children: d.intl.string(d.t["ETE/oK"])
           })
         })]
       })]
     })
   }
   constructor(...t) {
-    super(...t), m(this, "state", {
+    super(...t), f(this, "state", {
       problem: null
-    }), m(this, "handleChanged", t => {
+    }), f(this, "handleChanged", t => {
       this.setState({
         problem: null != t ? t : null
       })
-    }), m(this, "handleSubmit", () => {
+    }), f(this, "handleSubmit", () => {
       let {
         stream: t,
         streamApplication: e,
         analyticsData: r,
-        onClose: s
+        onClose: i
       } = this.props, {
-        problem: a
+        problem: s
       } = this.state;
-      (0, o.Z)({
-        problem: a,
+      (0, c.Z)({
+        problem: s,
         stream: t,
         feedback: "",
         streamApplication: e,
         analyticsData: r,
         location: "Stream"
-      }), s(), (0, i.ZDy)(async () => {
+      }), i(), (0, a.ZDy)(async () => {
         let {
           default: t
         } = await n.e("14466").then(n.bind(n, 729328));
@@ -121,15 +122,15 @@ class f extends r.PureComponent {
             "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
               return Object.getOwnPropertyDescriptor(n, t).enumerable
             }))), l.forEach(function(e) {
-              m(t, e, n[e])
+              f(t, e, n[e])
             })
           }
           return t
         }({
-          body: u.intl.string(u.t.mMTVnp)
+          body: d.intl.string(d.t.mMTVnp)
         }, e))
       })
     })
   }
 }
-let h = f
+let g = p

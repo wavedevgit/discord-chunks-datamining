@@ -32,7 +32,7 @@ function u(e) {
   return e
 }
 
-function f(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -45,7 +45,7 @@ function f(e, t) {
   }), e
 }
 
-function p(e) {
+function f(e) {
   let {
     price: t,
     selected: n,
@@ -107,21 +107,21 @@ function _(e) {
         children: m.intl.format(m.t["5i7UhY"], {
           price: (0, o.T4)(t.listings[0].price_tier, d.pKx.USD)
         })
-      }), l.map((e, t) => (0, a.jsx)(p, {
+      }), l.map((e, t) => (0, a.jsx)(f, {
         price: e,
         selected: t === i,
         onClick: () => c(t)
       }, e))]
     }), (0, a.jsx)(s.zxk, {
-      size: s.zxk.Sizes.MEDIUM,
+      variant: "primary",
+      text: m.intl.string(m.t["1W7mCg"]),
       onClick: () => {
-        n(f(u({}, t), {
-          listings: [f(u({}, t.listings[0]), {
+        n(p(u({}, t), {
+          listings: [p(u({}, t.listings[0]), {
             price_tier: l[i]
           })]
         }))
-      },
-      children: m.intl.string(m.t["1W7mCg"])
+      }
     })]
   })
 }

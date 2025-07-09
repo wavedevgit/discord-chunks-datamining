@@ -157,12 +157,12 @@ function G(e) {
     endTime: G
   } = (0, E.ZP)(n, p), P = (0, b.Z)(n.guild_id, n.id, p), z = l.useCallback(e => {
     e.stopPropagation(), null != n && (0, s.Bk)(n)
-  }, [n]), k = (0, C.Z)(p, n.id), A = (0, h.Z)(n);
+  }, [n]), A = (0, C.Z)(p, n.id), R = (0, h.Z)(n);
   l.useEffect(() => {
     v.Z.getGuildEventUserCounts(t.id, n.id, null != p ? [p] : []), v.Z.getGuildEventsForCurrentUser(t.id)
   }, [t.id, n.id, p]);
-  let R = (0, x.KV)(n.recurrence_rule),
-    B = (null == n ? void 0 : n.scheduled_start_time) != null ? (0, T.lh)(k, S, new Date(null == n ? void 0 : n.scheduled_start_time)) : null;
+  let k = (0, x.KV)(n.recurrence_rule),
+    B = (null == n ? void 0 : n.scheduled_start_time) != null ? (0, T.lh)(A, S, new Date(null == n ? void 0 : n.scheduled_start_time)) : null;
   return (0, i.jsxs)("div", {
     ref: g,
     children: [(0, i.jsxs)("div", {
@@ -194,11 +194,11 @@ function G(e) {
       }), null != P && (0, i.jsx)(Z, {
         userCount: P,
         onClick: u
-      }), !_ && null != A && (0, i.jsx)(O, {
-        creator: A,
+      }), !_ && null != R && (0, i.jsx)(O, {
+        creator: R,
         guildId: t.id,
         channelId: null == r ? void 0 : r.id
-      }, A.id), null != n.description && (0, i.jsx)("div", {
+      }, R.id), null != n.description && (0, i.jsx)("div", {
         className: D.description,
         children: (0, i.jsx)(y.Z, {
           description: n.description,
@@ -206,11 +206,11 @@ function G(e) {
           guildId: t.id
         })
       })]
-    }), null != R && (0, i.jsx)("hr", {
+    }), null != k && (0, i.jsx)("hr", {
       className: D.divider
-    }), null != R && (0, i.jsx)(L.Z, {
+    }), null != k && (0, i.jsx)(L.Z, {
       guildId: t.id,
-      recurrenceRule: R,
+      recurrenceRule: k,
       guildEventId: n.id,
       onRecurrenceClick: m,
       hideScroller: !0,

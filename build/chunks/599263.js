@@ -1,6 +1,6 @@
 /** Chunk was on 37709 **/
 n.r(t), n.d(t, {
-  default: () => P
+  default: () => w
 }), n(388685);
 var r = n(255367),
   l = n(73800),
@@ -26,29 +26,29 @@ var r = n(255367),
   E = n(548473),
   O = n(15320),
   I = n(973051),
-  k = n(981631),
-  Z = n(388032),
-  y = n(113728);
+  Z = n(981631),
+  y = n(388032),
+  P = n(113728);
 
-function P(e) {
+function w(e) {
   let {
     guildId: t
   } = e, {
     ref: n,
     width: o,
-    height: P
-  } = (0, d.ZP)(), w = (0, a.Wu)([N.Z], () => N.Z.getOnboardingPromptsForOnboarding(t)), D = (0, a.e7)([N.Z], () => N.Z.getEnabled(t)), T = l.useCallback((e, n, r) => {
+    height: w
+  } = (0, d.ZP)(), D = (0, a.Wu)([N.Z], () => N.Z.getOnboardingPromptsForOnboarding(t)), T = (0, a.e7)([N.Z], () => N.Z.getEnabled(t)), R = l.useCallback((e, n, r) => {
     b.Z.selectOption(t, e, n, r)
-  }, [t]), R = l.useCallback(() => {
-    b.Z.completeOnboarding(t, w)
-  }, [t, w]), M = (0, a.e7)([j.Z], () => j.Z.getGuild(t)), S = l.useMemo(() => null == M ? null : v.ZP.getGuildSplashURL({
+  }, [t]), k = l.useCallback(() => {
+    b.Z.completeOnboarding(t, D)
+  }, [t, D]), M = (0, a.e7)([j.Z], () => j.Z.getGuild(t)), S = l.useMemo(() => null == M ? null : v.ZP.getGuildSplashURL({
     id: M.id,
     splash: M.splash
   }), [M]), A = (0, f.N)(S), B = (0, a.e7)([C.ZP], () => C.ZP.getCurrentOnboardingStep(t)), [L, F] = l.useState(null != S ? null : "cover"), z = l.useCallback(e => {
     F(B), b.Z.setUserOnboardingStep(t, e)
-  }, [t, B]), U = (0, a.e7)([p.Z], () => p.Z.isFullServerPreview(t)), G = (0, a.e7)([C.ZP], () => C.ZP.getOnboardingStatus(t)), V = null != w && w.length > 0, q = l.useCallback(() => {
-    (0, C.kp)(G) && D && V ? z(0) : R()
-  }, [G, D, V, z, R]);
+  }, [t, B]), U = (0, a.e7)([p.Z], () => p.Z.isFullServerPreview(t)), G = (0, a.e7)([C.ZP], () => C.ZP.getOnboardingStatus(t)), V = null != D && D.length > 0, q = l.useCallback(() => {
+    (0, C.kp)(G) && T && V ? z(0) : k()
+  }, [G, T, V, z, k]);
   l.useEffect(() => {
     if (!C.ZP.shouldShowOnboarding(t)) return u.Z.escapeToDefaultChannel(t);
     (0, h.E)(t)
@@ -69,7 +69,7 @@ function P(e) {
   if (l.useEffect(() => {
       if (!W || X) {
         let e = setTimeout(() => {
-          (0, x.uL)(k.Z5c.CHANNEL(t))
+          (0, x.uL)(Z.Z5c.CHANNEL(t))
         }, 1e3);
         return () => clearTimeout(e)
       }
@@ -86,10 +86,10 @@ function P(e) {
       case "rules":
         return (0, r.jsx)(I.Z, {
           setCurrentStep: z,
-          previousPromptIndex: w.length - 1,
+          previousPromptIndex: D.length - 1,
           guild: M,
-          prompts: w,
-          completeOnboarding: R,
+          prompts: D,
+          completeOnboarding: k,
           disableTracking: U
         });
       case null:
@@ -97,33 +97,33 @@ function P(e) {
       default:
         return (0, r.jsx)(O.Z, {
           guild: M,
-          prompts: w,
+          prompts: D,
           step: B,
-          selectOption: T,
-          completeOnboarding: R,
+          selectOption: R,
+          completeOnboarding: k,
           setCurrentStep: z,
           disableTracking: U
         })
     }
   };
   return (0, r.jsxs)("div", {
-    className: i()(y.main, {
-      [y.fullBorderWithGradient]: null == S
+    className: i()(P.main, {
+      [P.fullBorderWithGradient]: null == S
     }),
     ref: n,
     children: [null != S ? (0, r.jsx)(m.Z, {
-      className: y.artwork,
+      className: P.artwork,
       src: S,
       width: o,
-      height: P,
-      imageClassName: y.cover
+      height: w,
+      imageClassName: P.cover
     }) : (0, r.jsx)(g.Z, {}), null != A && (0, r.jsx)("div", {
-      className: y.gradient,
+      className: P.gradient,
       style: {
         background: "linear-gradient(180deg, ".concat((0, _.aD)(A, .16), " 0%, ").concat((0, _.aD)(A, 1), " 100%)")
       }
     }), null == S ? null : (0, r.jsx)("div", {
-      className: y.gradient
+      className: P.gradient
     }), H((e, t, n) => {
       let {
         key: l
@@ -133,12 +133,12 @@ function P(e) {
         children: Y()
       }, l)
     }), "cover" === B && (0, r.jsx)("div", {
-      className: y.bottomCenterContent,
+      className: P.bottomCenterContent,
       children: (0, r.jsx)(c.X6q, {
         variant: "heading-sm/normal",
         color: "header-secondary",
-        children: Z.intl.format(Z.t.kI6UoK, {
-          privacyLink: k.EYA.PRIVACY
+        children: y.intl.format(y.t.kI6UoK, {
+          privacyLink: Z.EYA.PRIVACY
         })
       })
     })]

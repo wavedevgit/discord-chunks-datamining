@@ -1,67 +1,68 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => m
+  Z: () => p
 }), n(953529);
 var i = n(255367),
   r = n(73800),
-  s = n(481060),
+  s = n(755721),
+  a = n(481060),
   l = n(731722),
-  a = n(172751),
-  o = n(446094),
-  c = n(131085),
-  d = n(388032),
-  u = n(729495);
-let m = r.memo(function(e) {
+  o = n(172751),
+  c = n(446094),
+  d = n(131085),
+  u = n(388032),
+  m = n(729495);
+let p = r.memo(function(e) {
   let {
     guildId: t,
     guildProfile: n,
     title: r,
-    description: m,
-    onClose: p
+    description: p,
+    onClose: g
   } = e, {
-    isAdopting: g,
-    onAdoptTag: h,
-    onEditProfile: f
-  } = (0, o.Z)(t, p);
+    isAdopting: h,
+    onAdoptTag: f,
+    onEditProfile: b
+  } = (0, c.Z)(t, g);
   return (0, i.jsxs)("div", {
-    className: u.container,
+    className: m.container,
     ref: e.ref,
-    children: [(0, i.jsx)(s.olH, {
-      className: u.closeButton,
-      onClick: p
+    children: [(0, i.jsx)(a.olH, {
+      className: m.closeButton,
+      onClick: g
     }), (0, i.jsx)("div", {
-      className: u.tagContainer,
+      className: m.tagContainer,
       children: (0, i.jsxs)("div", {
-        className: u.tag,
-        children: [null != n.badge && (0, i.jsx)(a.eI, {
-          src: (0, l.Ic)(t, n.badge, c.Gg.SIZE_36),
+        className: m.tag,
+        children: [null != n.badge && (0, i.jsx)(o.eI, {
+          src: (0, l.Ic)(t, n.badge, d.Gg.SIZE_36),
           tag: n.tag,
-          size: c.Gg.SIZE_36,
-          className: u.badge
-        }), (0, i.jsx)(s.Text, {
+          size: d.Gg.SIZE_36,
+          className: m.badge
+        }), (0, i.jsx)(a.Text, {
           tag: "span",
           variant: "heading-xxl/semibold",
           children: n.tag
         })]
       })
-    }), (0, i.jsx)(s.X6q, {
+    }), (0, i.jsx)(a.X6q, {
       variant: "heading-md/semibold",
-      className: u.title,
+      className: m.title,
       children: r
-    }), (0, i.jsx)(s.Text, {
+    }), (0, i.jsx)(a.Text, {
       variant: "text-sm/medium",
-      className: u.description,
-      children: m
-    }), (0, i.jsx)(s.zxk, {
-      className: u.adoptButton,
-      submitting: g,
-      onClick: h,
-      children: d.intl.string(d.t.jwEaiY)
-    }), (0, i.jsx)(s.zxk, {
-      color: s.zxk.Colors.PRIMARY,
-      className: u.editButton,
+      className: m.description,
+      children: p
+    }), (0, i.jsx)(s.zx, {
+      className: m.adoptButton,
+      submitting: h,
       onClick: f,
-      children: d.intl.string(d.t.s5vZlZ)
+      children: u.intl.string(u.t.jwEaiY)
+    }), (0, i.jsx)(s.zx, {
+      color: s.zx.Colors.PRIMARY,
+      className: m.editButton,
+      onClick: b,
+      children: u.intl.string(u.t.s5vZlZ)
     })]
   })
 })

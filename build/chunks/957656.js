@@ -6,14 +6,14 @@ var n = t(255367);
 t(73800);
 var o = t(481060),
   s = t(198952),
-  l = t(329242),
+  i = t(329242),
   c = t(916723),
-  i = t(388032),
+  l = t(388032),
   a = t(305623);
 let d = e => {
   var r, t, {
       children: s,
-      className: l
+      className: i
     } = e,
     c = function(e, r) {
       if (null == e) return {};
@@ -48,7 +48,7 @@ let d = e => {
     }
     return e
   }({
-    className: l
+    className: i
   }, c), t = t = {
     parentComponent: "FamilyCenterCommonModal",
     children: s
@@ -76,7 +76,7 @@ d.ButtonFooter = e => {
     icon: r,
     currentUser: t,
     otherUser: c,
-    header: i
+    header: l
   } = e;
   return (0, n.jsxs)("div", {
     className: a.header,
@@ -88,8 +88,8 @@ d.ButtonFooter = e => {
       className: a.heading,
       children: [(0, n.jsx)(o.X6q, {
         variant: "text-lg/bold",
-        children: i
-      }), (0, n.jsx)(l.Z, {
+        children: l
+      }), (0, n.jsx)(i.Z, {
         user: c
       })]
     })]
@@ -111,7 +111,7 @@ d.ButtonFooter = e => {
     children: [(0, n.jsx)(o.Text, {
       variant: "eyebrow",
       color: "header-primary",
-      children: i.intl.string(c.default.cXgKMD)
+      children: l.intl.string(c.default.cXgKMD)
     }), (0, n.jsx)(o.Text, {
       variant: "text-sm/normal",
       color: "header-secondary",

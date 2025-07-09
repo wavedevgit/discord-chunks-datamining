@@ -6,9 +6,9 @@ n.d(t, {
 var i = n(255367),
   r = n(73800),
   s = n(120356),
-  l = n.n(s),
-  a = n(209739),
-  o = n.n(a),
+  a = n.n(s),
+  l = n(209739),
+  o = n.n(l),
   c = n(442837),
   d = n(846519),
   u = n(481060),
@@ -20,12 +20,12 @@ var i = n(255367),
   b = n(695346),
   x = n(938117),
   _ = n(131951),
-  E = n(626135),
-  j = n(358085),
+  j = n(626135),
+  E = n(358085),
   O = n(981631),
   C = n(726985),
-  S = n(388032),
-  v = n(602985);
+  v = n(388032),
+  S = n(602985);
 let T = /\{65E8773D-8F56-11D0-A3B9-00A0C9223196\}/i;
 
 function N() {
@@ -36,7 +36,7 @@ function N() {
       t(!0)
     }) : (e.stop(), t(!1)), () => e.stop()
   }, [n]), e) ? (0, i.jsx)("div", {
-    className: v.filterLoadingIndicator,
+    className: S.filterLoadingIndicator,
     children: (0, i.jsx)(u.$jN, {})
   }) : null
 }
@@ -47,7 +47,7 @@ function I(e) {
     hideDeviceHeader: n = !1,
     hideCameraSettingsLink: r = !1,
     onLearnMore: s,
-    selectedBackgroundOption: a,
+    selectedBackgroundOption: l,
     onSelectBackgroundOption: d,
     renderCamera: N,
     hidePreviewToggle: I = !1,
@@ -75,45 +75,45 @@ function I(e) {
   });
   return (0, i.jsxs)(i.Fragment, {
     children: [N(R), _.Z.isEnabled() ? null : (0, i.jsx)(u.Text, {
-      className: v.permissionWarning,
+      className: S.permissionWarning,
       color: "interactive-normal",
       variant: "text-sm/normal",
-      children: S.intl.format(S.t.stagfH, {
+      children: v.intl.format(v.t.stagfH, {
         onEnableClick: () => m.Z.enable(!0)
       })
     }), I ? null : (0, i.jsx)(u.j7V, {
-      className: v.previewToggle,
-      note: S.intl.string(S.t.WNbX4O),
+      className: S.previewToggle,
+      note: v.intl.string(v.t.WNbX4O),
       onChange: e => {
-        b.qF.updateSetting(e), E.default.track(O.rMx.UPDATE_USER_SETTINGS_LOCAL, {
+        b.qF.updateSetting(e), j.default.track(O.rMx.UPDATE_USER_SETTINGS_LOCAL, {
           always_preview_video: e
         })
       },
       value: w,
       hideBorder: !0,
       children: (0, i.jsx)("div", {
-        className: v.cameraPreviewTitle,
-        children: S.intl.string(S.t["3Ppr1t"])
+        className: S.cameraPreviewTitle,
+        children: v.intl.string(v.t["3Ppr1t"])
       })
     }), !t && (0, i.jsx)(f.F, {
       setting: C.s6.VOICE_AND_VIDEO_VIDEO_CAMERA_PREVIEW,
       children: (0, i.jsxs)(u.xJW, {
-        title: n ? null : S.intl.string(S.t.FsQ3OT),
+        title: n ? null : v.intl.string(v.t.FsQ3OT),
         children: [(0, i.jsx)(u.q4e, {
-          placeholder: S.intl.string(S.t["t9eQ/v"]),
-          className: l()(v.selector, {
-            [v.selectorNoHeader]: n
+          placeholder: v.intl.string(v.t["t9eQ/v"]),
+          className: a()(S.selector, {
+            [S.selectorNoHeader]: n
           }),
           options: k,
           value: R,
           isDisabled: !D,
           onChange: e => m.Z.setVideoDevice(e),
-          "aria-label": S.intl.string(S.t["t9eQ/v"])
-        }), !r && !!(0, j.isWindows)() && !!j.isPlatformEmbedded && o().satisfies(p.Z.os.release, ">=10.0.22000") && (0, i.jsx)(u.R94, {
-          className: v.cameraDeeplink,
-          children: S.intl.format(S.t.aJYgRk, {
+          "aria-label": v.intl.string(v.t["t9eQ/v"])
+        }), !r && !!(0, E.isWindows)() && !!E.isPlatformEmbedded && o().satisfies(p.Z.os.release, ">=10.0.22000") && (0, i.jsx)(u.R94, {
+          className: S.cameraDeeplink,
+          children: v.intl.format(v.t.aJYgRk, {
             onCameraSettingsClick: () => {
-              null == A || A(), window.open((0, j.getPlatform)() === j.PlatformTypes.WINDOWS ? "ms-settings:camera" + (null != R ? "?cameraId=".concat(encodeURIComponent(R.replace(T, "{E5323777-F976-4f5b-9B55-B94699C46E44}"))) : "") : ""), E.default.track(O.rMx.SYSTEM_CAMERA_SETTINGS_OPENED, {
+              null == A || A(), window.open((0, E.getPlatform)() === E.PlatformTypes.WINDOWS ? "ms-settings:camera" + (null != R ? "?cameraId=".concat(encodeURIComponent(R.replace(T, "{E5323777-F976-4f5b-9B55-B94699C46E44}"))) : "") : ""), j.default.track(O.rMx.SYSTEM_CAMERA_SETTINGS_OPENED, {
                 location_stack: P
               })
             }
@@ -123,9 +123,9 @@ function I(e) {
     }), (0, i.jsx)(f.F, {
       setting: C.s6.VOICE_AND_VIDEO_VIDEO_BACKGROUND,
       children: (0, i.jsx)(x.Z, {
-        className: v.spacingTop24,
+        className: S.spacingTop24,
         onLearnMore: s,
-        selectedBackgroundOption: a,
+        selectedBackgroundOption: l,
         onSelectBackgroundOption: d,
         currentDeviceId: R,
         smallerBackgroundOptions: y

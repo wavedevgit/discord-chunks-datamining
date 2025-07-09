@@ -1,68 +1,72 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => b
+  Z: () => _
 });
 var r = n(255367),
   i = n(73800),
   l = n(286379),
-  a = n(481060),
-  o = n(797614),
-  s = n(359110),
-  c = n(6025),
-  u = n(433355),
-  d = n(26373),
-  p = n(486622),
-  h = n(376191),
-  f = n(86203),
-  g = n(388032),
-  m = n(972308);
+  a = n(755721),
+  o = n(481060),
+  s = n(797614),
+  c = n(359110),
+  u = n(6025),
+  d = n(433355),
+  p = n(26373),
+  h = n(486622),
+  f = n(376191),
+  g = n(86203),
+  m = n(388032),
+  b = n(972308);
 
-function b(e) {
+function _(e) {
   let {
     active: t,
     user: n,
-    channel: b
-  } = e, _ = (0, d.V)(), E = i.useCallback(() => {
-    (0, a.showToast)((0, a.createToast)(g.intl.string(g.t.pIQ3h4), a.ToastType.FAILURE)), o.Z.increment({
+    channel: _
+  } = e, E = (0, p.V)(), O = i.useCallback(() => {
+    (0, o.showToast)((0, o.createToast)(m.intl.string(m.t.pIQ3h4), o.ToastType.FAILURE)), s.Z.increment({
       name: l.V.SPAM_MESSAGE_REQUEST_ERROR_VIEW
     })
-  }, []), O = i.useCallback(() => {
-    c.Z.closeChannelSidebar(u.uZ)
   }, []), y = i.useCallback(() => {
-    c.Z.closeChannelSidebar(u.uZ), _ && (0, s.Kh)(b.id)
-  }, [b.id, _]), {
-    acceptMessageRequest: I,
-    isAcceptLoading: v,
-    isUserProfileLoading: C,
-    isOptimisticAccepted: S
-  } = (0, p.m)({
+    u.Z.closeChannelSidebar(d.uZ)
+  }, []), I = i.useCallback(() => {
+    u.Z.closeChannelSidebar(d.uZ), E && (0, c.Kh)(_.id)
+  }, [_.id, E]), {
+    acceptMessageRequest: v,
+    isAcceptLoading: C,
+    isUserProfileLoading: S,
+    isOptimisticAccepted: N
+  } = (0, h.m)({
     user: n,
-    onAcceptSuccess: y,
-    onRejectSuccess: O,
-    onError: E
-  }), N = v || C, T = N || S;
+    onAcceptSuccess: I,
+    onRejectSuccess: y,
+    onError: O
+  }), T = C || S, P = T || N;
   return (0, r.jsxs)("div", {
-    className: m.container,
-    children: [(0, r.jsx)(h.Z, {
+    className: b.container,
+    children: [(0, r.jsx)(f.Z, {
       otherUser: n,
-      channel: b,
+      channel: _,
       active: t
     }), (0, r.jsxs)("div", {
-      className: m.actions,
-      children: [(0, r.jsx)(a.zxk, {
-        className: m.button,
-        color: a.Ttl.PRIMARY,
-        size: a.zxk.Sizes.SMALL,
-        onClick: e => {
-          I(b.id), e.stopPropagation()
-        },
-        disabled: T,
-        submitting: N,
-        children: g.intl.string(g.t.vicfl5)
-      }), (0, r.jsx)(f.Z, {
-        className: m.button,
-        channel: b,
-        buttonSize: a.zxk.Sizes.SMALL
+      className: b.actions,
+      children: [(0, r.jsx)("div", {
+        "data-button-hoisted-classname-wrapper": !0,
+        className: b.button,
+        children: (0, r.jsx)(o.zxk, {
+          variant: "secondary",
+          size: "sm",
+          text: m.intl.string(m.t.vicfl5),
+          onClick: e => {
+            v(_.id), e.stopPropagation()
+          },
+          disabled: P,
+          loading: T
+        })
+      }), (0, r.jsx)(g.Z, {
+        className: b.button,
+        channel: _,
+        buttonSize: a.zx.Sizes.SMALL
       })]
     })]
   })

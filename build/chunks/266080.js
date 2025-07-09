@@ -1,42 +1,43 @@
 /** Chunk was on 13268 **/
 n.d(t, {
-  Z: () => m
+  Z: () => p
 }), n(388685);
 var r = n(255367),
   a = n(73800),
-  i = n(481060),
-  l = n(367907),
-  o = n(434404),
-  s = n(138201),
-  c = n(430824),
-  d = n(981631),
-  u = n(388032);
-let m = e => {
+  i = n(755721),
+  l = n(481060),
+  o = n(367907),
+  s = n(434404),
+  c = n(138201),
+  d = n(430824),
+  u = n(981631),
+  m = n(388032);
+let p = e => {
   let {
     guildId: t,
     reportId: n
-  } = e, [m, p] = a.useState(!1), _ = c.Z.getGuild(t), g = null != _;
+  } = e, [p, _] = a.useState(!1), g = d.Z.getGuild(t), b = null != g;
   a.useEffect(() => {
-    p(!g)
-  }, [g]);
-  let b = a.useCallback(() => {
-    p(!0), l.ZP.trackWithMetadata(d.rMx.IAR_LEAVE_GUILD_BUTTON_CLICKED, {
+    _(!b)
+  }, [b]);
+  let x = a.useCallback(() => {
+    _(!0), o.ZP.trackWithMetadata(u.rMx.IAR_LEAVE_GUILD_BUTTON_CLICKED, {
       guild_id: t,
       report_id: n
-    }), o.Z.leaveGuild(t)
+    }), s.Z.leaveGuild(t)
   }, [t, n]);
-  return null == _ ? null : (0, r.jsx)(s.ZP, {
-    title: u.intl.string(u.t.cU96io),
-    description: u.intl.formatToPlainString(u.t["26mR6+"], {
-      guildName: null == _ ? void 0 : _.name
+  return null == g ? null : (0, r.jsx)(c.ZP, {
+    title: m.intl.string(m.t.cU96io),
+    description: m.intl.formatToPlainString(m.t["26mR6+"], {
+      guildName: null == g ? void 0 : g.name
     }),
-    buttonText: m ? u.intl.string(u.t["9Ak99v"]) : u.intl.string(u.t.F3qExs),
-    buttonDisabled: m,
-    buttonColor: i.zxk.Colors.RED,
+    buttonText: p ? m.intl.string(m.t["9Ak99v"]) : m.intl.string(m.t.F3qExs),
+    buttonDisabled: p,
+    buttonColor: i.zx.Colors.RED,
     onButtonPress: () => {
-      (0, i.h7j)(e => {
+      (0, l.h7j)(e => {
         var t, n;
-        return (0, r.jsx)(i.ConfirmModal, (t = function(e) {
+        return (0, r.jsx)(l.ConfirmModal, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -54,17 +55,17 @@ let m = e => {
           }
           return e
         }({
-          header: u.intl.formatToPlainString(u.t["1GX6Pz"], {
-            name: _.name
+          header: m.intl.formatToPlainString(m.t["1GX6Pz"], {
+            name: g.name
           }),
-          confirmText: u.intl.string(u.t.J2TBi4),
-          cancelText: u.intl.string(u.t["ETE/oK"]),
-          onConfirm: b
+          confirmText: m.intl.string(m.t.J2TBi4),
+          cancelText: m.intl.string(m.t["ETE/oK"]),
+          onConfirm: x
         }, e), n = n = {
-          children: (0, r.jsx)(i.Text, {
+          children: (0, r.jsx)(l.Text, {
             variant: "text-md/normal",
-            children: u.intl.format(u.t.ZEXC0t, {
-              name: _.name
+            children: m.intl.format(m.t.ZEXC0t, {
+              name: g.name
             })
           })
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

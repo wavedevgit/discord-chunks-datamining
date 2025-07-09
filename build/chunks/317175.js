@@ -1,6 +1,6 @@
 /** Chunk was on 76540 **/
 n.d(t, {
-  Z: () => f
+  Z: () => C
 }), n(361932), n(187205);
 var s = n(255367),
   i = n(73800),
@@ -18,7 +18,7 @@ var s = n(255367),
   m = n(939175),
   I = n(20795);
 
-function C(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -26,7 +26,7 @@ function C(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class f extends i.PureComponent {
+class C extends i.PureComponent {
   renderItems() {
     let {
       query: e
@@ -69,7 +69,7 @@ class f extends i.PureComponent {
           "function" == typeof Object.getOwnPropertySymbols && (s = s.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
           }))), s.forEach(function(t) {
-            C(e, t, n[t])
+            f(e, t, n[t])
           })
         }
         return e
@@ -110,15 +110,15 @@ class f extends i.PureComponent {
     })
   }
   constructor(e) {
-    super(e), C(this, "onChangeQuery", e => {
+    super(e), f(this, "onChangeQuery", e => {
       this.setState({
         query: e
       })
-    }), C(this, "onClearQuery", () => {
+    }), f(this, "onClearQuery", () => {
       this.setState({
         query: ""
       })
-    }), C(this, "onClick", e => {
+    }), f(this, "onClick", e => {
       var t, n;
       null == (t = (n = this.props).onClick) || t.call(n, e)
     }), this.state = {

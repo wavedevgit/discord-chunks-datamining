@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(255367),
   r = n(73800),
   s = n(544891),
-  l = n(481060),
-  a = n(357841),
+  a = n(481060),
+  l = n(357841),
   o = n(981631),
   c = n(231338),
   d = n(388032),
@@ -42,38 +42,38 @@ function p(e) {
   }, h = null != t.paymentSource && t.status === c.Py.COMPLETED, f = null == n ? void 0 : n.invoiceLink, b = null == n ? void 0 : n.refundInvoiceLinks;
   return t.hasInvoiceURL && null == n ? (0, i.jsxs)("div", {
     className: u.downloadInvoice,
-    children: [(0, i.jsx)(l.eee, {
+    children: [(0, i.jsx)(a.eee, {
       onClick: () => g(!1),
       children: d.intl.string(d.t.R0xzCA)
-    }), t.hasRefundInvoiceURLs ? (0, i.jsx)(l.eee, {
+    }), t.hasRefundInvoiceURLs ? (0, i.jsx)(a.eee, {
       className: u.downloadRefundInvoice,
       onClick: () => g(!0),
       children: d.intl.string(d.t["3x6NGx"])
-    }) : null, (0, i.jsx)(l.Text, {
+    }) : null, (0, i.jsx)(a.Text, {
       color: "text-danger",
       variant: "text-sm/semibold",
       children: o
     })]
   }) : t.hasInvoiceURL && null != n ? (0, i.jsxs)("div", {
     className: u.downloadInvoice,
-    children: [(0, i.jsx)(l.eee, {
+    children: [(0, i.jsx)(a.eee, {
       href: f,
       children: d.intl.string(d.t.R0xzCA)
-    }), null != b ? b.map((e, t) => (0, i.jsx)(l.eee, {
+    }), null != b ? b.map((e, t) => (0, i.jsx)(a.eee, {
       className: u.downloadRefundInvoice,
       href: e,
       children: d.intl.string(d.t["3x6NGx"])
-    }, t)) : null, (0, i.jsx)(l.Text, {
+    }, t)) : null, (0, i.jsx)(a.Text, {
       color: "text-danger",
       variant: "text-sm/semibold",
       children: o
     })]
   }) : h ? (0, i.jsx)("div", {
     className: u.downloadInvoice,
-    children: (0, i.jsx)(l.eee, {
+    children: (0, i.jsx)(a.eee, {
       onClick: () => {
         var e;
-        e = t.paymentSource, a.Z.open(t, e)
+        e = t.paymentSource, l.Z.open(t, e)
       },
       children: d.intl.string(d.t.onRIxc)
     })

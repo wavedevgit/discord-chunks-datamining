@@ -32,10 +32,14 @@ function o() {
       variant: "text-sm/normal",
       color: "header-secondary",
       children: s.intl.string(s.t["8ega19"])
-    }), (0, r.jsx)(i.zxk, {
+    }), (0, r.jsx)("div", {
+      "data-button-hoisted-classname-wrapper": !0,
       className: a.button,
-      onClick: () => (0, l.Nb)("Safety Check"),
-      children: s.intl.string(s.t.TbzK39)
+      children: (0, r.jsx)(i.zxk, {
+        variant: "primary",
+        text: s.intl.string(s.t.TbzK39),
+        onClick: () => (0, l.Nb)("Safety Check")
+      })
     })]
   })
 }
@@ -59,10 +63,14 @@ function c() {
       variant: "text-sm/normal",
       color: "header-secondary",
       children: s.intl.string(s.t.y08PCA)
-    }), (0, r.jsx)(i.zxk, {
+    }), (0, r.jsx)("div", {
+      "data-button-hoisted-classname-wrapper": !0,
       className: a.button,
-      onClick: () => (0, l.Nb)("Default Channels"),
-      children: s.intl.string(s.t.TbzK39)
+      children: (0, r.jsx)(i.zxk, {
+        variant: "primary",
+        text: s.intl.string(s.t.TbzK39),
+        onClick: () => (0, l.Nb)("Default Channels")
+      })
     })]
   })
 }
@@ -86,10 +94,14 @@ function d() {
       variant: "text-sm/normal",
       color: "header-secondary",
       children: s.intl.string(s.t.TVGk1d)
-    }), (0, r.jsx)(i.zxk, {
+    }), (0, r.jsx)("div", {
+      "data-button-hoisted-classname-wrapper": !0,
       className: a.button,
-      onClick: () => (0, l.Nb)("Customization Questions"),
-      children: s.intl.string(s.t.TbzK39)
+      children: (0, r.jsx)(i.zxk, {
+        variant: "primary",
+        text: s.intl.string(s.t.TbzK39),
+        onClick: () => (0, l.Nb)("Customization Questions")
+      })
     })]
   })
 }
@@ -113,10 +125,14 @@ function u() {
       variant: "text-sm/normal",
       color: "header-secondary",
       children: s.intl.string(s.t.eamP29)
-    }), (0, r.jsx)(i.zxk, {
+    }), (0, r.jsx)("div", {
+      "data-button-hoisted-classname-wrapper": !0,
       className: a.button,
-      onClick: () => (0, l.Nb)("Home Settings"),
-      children: s.intl.string(s.t.TbzK39)
+      children: (0, r.jsx)(i.zxk, {
+        variant: "primary",
+        text: s.intl.string(s.t.TbzK39),
+        onClick: () => (0, l.Nb)("Home Settings")
+      })
     })]
   })
 }

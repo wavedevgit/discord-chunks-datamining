@@ -6,8 +6,8 @@ var i = n(255367);
 n(73800);
 var r = n(120356),
   s = n.n(r),
-  l = n(512722),
-  a = n.n(l),
+  a = n(512722),
+  l = n.n(a),
   o = n(442837),
   c = n(481060),
   d = n(600164),
@@ -39,14 +39,14 @@ function f(e) {
   let {
     unclaimedNotice: t,
     unverifiedNotice: r,
-    className: l
+    className: a
   } = e, {
     isClaimed: f,
     isVerified: b,
     hasEmail: x
   } = (0, o.cj)([u.default], () => {
     let e = u.default.getCurrentUser();
-    return a()(null != e, "EmailNotice: currentUser cannot be undefined"), {
+    return l()(null != e, "EmailNotice: currentUser cannot be undefined"), {
       isClaimed: e.isClaimed(),
       isVerified: e.verified,
       hasEmail: null != e.email
@@ -62,7 +62,7 @@ function f(e) {
     })
   }
   return f && b ? null : (0, i.jsx)(c.Zbd, {
-    className: s()(g.wrapper, l),
+    className: s()(g.wrapper, a),
     children: (0, i.jsxs)(d.Z, {
       align: d.Z.Align.CENTER,
       children: [(0, i.jsx)(d.Z.Child, {
@@ -81,16 +81,15 @@ function f(e) {
             shrink: 0,
             children: (0, i.jsx)(m.Z, {})
           }) : (0, i.jsx)(c.zxk, {
-            size: c.zxk.Sizes.MEDIUM,
-            color: c.zxk.Colors.BRAND,
-            onClick: _,
-            children: p.intl.string(p.t.ydw5nZ)
+            variant: "primary",
+            text: p.intl.string(p.t.ydw5nZ),
+            onClick: _
           }) : (0, i.jsx)(d.Z.Child, {
             grow: 0,
             shrink: 0,
             children: (0, i.jsx)(c.zxk, {
-              size: c.zxk.Sizes.MEDIUM,
-              color: c.zxk.Colors.BRAND,
+              variant: "primary",
+              text: p.intl.string(p.t.fiNVio),
               onClick: function() {
                 (0, c.ZDy)(async () => {
                   let {
@@ -98,17 +97,15 @@ function f(e) {
                   } = await n.e("60827").then(n.bind(n, 324239));
                   return t => (0, i.jsx)(e, h({}, t))
                 })
-              },
-              children: p.intl.string(p.t.fiNVio)
+              }
             })
           }), f && x ? (0, i.jsx)(d.Z.Child, {
             grow: 0,
             shrink: 0,
             children: (0, i.jsx)(c.zxk, {
-              color: c.zxk.Colors.PRIMARY,
-              look: c.zxk.Looks.LINK,
-              onClick: _,
-              children: p.intl.string(p.t.Vm8akJ)
+              variant: "secondary",
+              text: p.intl.string(p.t.Vm8akJ),
+              onClick: _
             })
           }) : null]
         })]

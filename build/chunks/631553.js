@@ -33,8 +33,8 @@ var I = n(266454),
   w = n(74299),
   N = n(989941),
   T = n(377400),
-  k = n(329557),
-  D = n(199902),
+  D = n(329557),
+  k = n(199902),
   R = n(314897),
   A = n(592125),
   L = n(430824),
@@ -176,7 +176,7 @@ class eE extends o.Component {
     v.Z.deactivateAllRegions()
   }
   componentDidMount() {
-    v.Z.startSession(), T.Z.initialize(), x.Z.initialize(), k.Z.initialize()
+    v.Z.startSession(), T.Z.initialize(), x.Z.initialize(), D.Z.initialize()
   }
   componentDidUpdate(e) {
     let {
@@ -269,7 +269,7 @@ class eE extends o.Component {
     window.addEventListener("keydown", this.onKeyDownGlobal, !0), window.addEventListener("keyup", this.onKeyUpGlobal, !0)
   }
   componentWillUnmount() {
-    window.removeEventListener("resize", this.handleWindowResize), window.removeEventListener("keydown", this.onKeyDownGlobal, !0), window.removeEventListener("keyup", this.onKeyUpGlobal, !0), this.props.locked && window.removeEventListener("contextmenu", eO, !1), T.Z.terminate(), x.Z.terminate(), k.Z.terminate()
+    window.removeEventListener("resize", this.handleWindowResize), window.removeEventListener("keydown", this.onKeyDownGlobal, !0), window.removeEventListener("keyup", this.onKeyUpGlobal, !0), this.props.locked && window.removeEventListener("contextmenu", eO, !1), T.Z.terminate(), x.Z.terminate(), D.Z.terminate()
   }
   renderInvalidSizeMessage() {
     return (0, r.jsx)(Z.Z, {
@@ -366,7 +366,7 @@ function eS() {
     incompatibleApp: Y.default.incompatibleApp,
     activeRegions: Y.default.getActiveRegions(),
     isPreviewingInGame: Y.default.isPreviewingInGame()
-  })), l = (0, f.e7)([K.Z], () => K.Z.windowSize()), s = (0, f.e7)([G.ZP], () => G.ZP.getOverlayKeybind()), a = (0, f.e7)([V.Z], () => V.Z.getVoiceChannelId()), c = (0, f.e7)([A.Z], () => A.Z.getChannel(a)), d = (0, f.e7)([L.Z], () => null != c ? L.Z.getGuild(c.guild_id) : null), u = (0, f.e7)([P.ZP, U.Z], () => (0, N.Z)(P.ZP, U.Z)), h = (0, f.e7)([z.Z], () => (0, w.Z)(z.Z)), p = (0, f.e7)([D.Z], () => null != D.Z.getCurrentUserActiveStream()), {
+  })), l = (0, f.e7)([K.Z], () => K.Z.windowSize()), s = (0, f.e7)([G.ZP], () => G.ZP.getOverlayKeybind()), a = (0, f.e7)([V.Z], () => V.Z.getVoiceChannelId()), c = (0, f.e7)([A.Z], () => A.Z.getChannel(a)), d = (0, f.e7)([L.Z], () => null != c ? L.Z.getGuild(c.guild_id) : null), u = (0, f.e7)([P.ZP, U.Z], () => (0, N.Z)(P.ZP, U.Z)), h = (0, f.e7)([z.Z], () => (0, w.Z)(z.Z)), p = (0, f.e7)([k.Z], () => null != k.Z.getCurrentUserActiveStream()), {
     analyticsLocations: g
   } = (0, j.ZP)(C.Z.OVERLAY), {
     showKeybindIndicators: m,

@@ -32,8 +32,8 @@ var r = n(255367),
   A = n(954709),
   Z = n(644679),
   x = n(403763),
-  L = n(314533),
-  w = n(9029),
+  w = n(314533),
+  L = n(9029),
   R = n(935347),
   D = n(560067),
   k = n(823169),
@@ -86,8 +86,8 @@ var r = n(255367),
   eA = n(479313),
   eZ = n(911560),
   ex = n(703016),
-  eL = n(892001),
-  ew = n(497805),
+  ew = n(892001),
+  eL = n(497805),
   eR = n(332754),
   eD = n(507468),
   ek = n(722589),
@@ -254,7 +254,7 @@ let tl = [{
     } = e, {
       id: n
     } = t.params;
-    return (0, X.h)(() => (0, eL.openUserProfileModal)({
+    return (0, X.h)(() => (0, ew.openUserProfileModal)({
       userId: n,
       sourceAnalyticsLocations: [N.Z.URI_SCHEME]
     })), (0, r.jsx)(a.l_, {
@@ -475,7 +475,7 @@ function to(e) {
 }
 class ts extends i.PureComponent {
   componentDidMount() {
-    e0.ZP.setZoomFactor(b.Z.zoom), ev.Z.init(), P.Z.initialize(), eg.Z.initialize(), z.Z.initialize(), eU.Z.initialize(), W.Z.initialize(), eb.Z.initialize(), M.Z.initialize(), el.Z.initialize(), _.Z.init(), K.Z.init(), Y.Z.init(), eu.Z.initialize(), v.Z.initialize(), B.Z.initialize(), e_.Z.initialize(), I.ZP.initialize(), V.ZP.initialize(), eM.Z.initialize(), ef.Z.initialize(), y.Z.initialize(), er.Z.init(), x.Z.init(), eJ.Z.init(), O.Z.initialize(), ex.Z.init(), eX.Z.init(), eR.Z.init(), eP.Z.initialize(), ej.Z.initialize(), ew.Z.initialize(), eD.Z.init(), G.Z.initialize(), E.Z.initialize(), eC.Z.initialize(), eT.Z.initialize(), ep.Z.initialize(), ed.Z.initialize(), eh.Z.initialize(), L.Z.initialize(), w.Z.initialize(), F.Z.initialize(), ei.Z.init({
+    e0.ZP.setZoomFactor(b.Z.zoom), ev.Z.init(), P.Z.initialize(), eg.Z.initialize(), z.Z.initialize(), eU.Z.initialize(), W.Z.initialize(), eb.Z.initialize(), M.Z.initialize(), el.Z.initialize(), _.Z.init(), K.Z.init(), Y.Z.init(), eu.Z.initialize(), v.Z.initialize(), B.Z.initialize(), e_.Z.initialize(), I.ZP.initialize(), V.ZP.initialize(), eM.Z.initialize(), ef.Z.initialize(), y.Z.initialize(), er.Z.init(), x.Z.init(), eJ.Z.init(), O.Z.initialize(), ex.Z.init(), eX.Z.init(), eR.Z.init(), eP.Z.initialize(), ej.Z.initialize(), eL.Z.initialize(), eD.Z.init(), G.Z.initialize(), E.Z.initialize(), eC.Z.initialize(), eT.Z.initialize(), ep.Z.initialize(), ed.Z.initialize(), eh.Z.initialize(), w.Z.initialize(), L.Z.initialize(), F.Z.initialize(), ei.Z.init({
       hasModalOpen: s.$sL,
       openModal: () => (0, s.ZDy)(async () => {
         let {
@@ -486,7 +486,7 @@ class ts extends i.PureComponent {
     }), U.Z.init(), ea.Z.initialize(), eE.Z.initialize(), em.Z.initialize(), k.Z.initialize(), A.Z.initialize(), Z.Z.initialize(), C.Z.initialize(), this.rewriterUnlisten = eO.Z.addRouteRewriter(this.ensureChannelMatchesGuild), this.historyUnlisten = eO.Z.addRouteChangeListener(this.handleHistoryChange)
   }
   componentWillUnmount() {
-    ev.Z.terminate(), eU.Z.terminate(), eb.Z.terminate(), eg.Z.terminate(), P.Z.terminate(), I.ZP.terminate(), V.ZP.terminate(), eM.Z.terminate(), y.Z.terminate(), e_.Z.terminate(), ef.Z.terminate(), ew.Z.terminate(), O.Z.terminate(), G.Z.terminate(), ea.Z.terminate(), E.Z.terminate(), eE.Z.terminate(), eC.Z.terminate(), eT.Z.terminate(), ep.Z.terminate(), ed.Z.terminate(), eh.Z.terminate(), L.Z.terminate(), w.Z.terminate(), em.Z.terminate(), k.Z.terminate(), H.Z.terminate(), A.Z.terminate(), Z.Z.terminate(), C.Z.terminate(), F.Z.terminate(), this.historyUnlisten(), this.rewriterUnlisten()
+    ev.Z.terminate(), eU.Z.terminate(), eb.Z.terminate(), eg.Z.terminate(), P.Z.terminate(), I.ZP.terminate(), V.ZP.terminate(), eM.Z.terminate(), y.Z.terminate(), e_.Z.terminate(), ef.Z.terminate(), eL.Z.terminate(), O.Z.terminate(), G.Z.terminate(), ea.Z.terminate(), E.Z.terminate(), eE.Z.terminate(), eC.Z.terminate(), eT.Z.terminate(), ep.Z.terminate(), ed.Z.terminate(), eh.Z.terminate(), w.Z.terminate(), L.Z.terminate(), em.Z.terminate(), k.Z.terminate(), H.Z.terminate(), A.Z.terminate(), Z.Z.terminate(), C.Z.terminate(), F.Z.terminate(), this.historyUnlisten(), this.rewriterUnlisten()
   }
   handleHistoryChange(e) {
     let {

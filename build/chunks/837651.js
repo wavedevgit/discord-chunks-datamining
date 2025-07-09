@@ -7,8 +7,8 @@ var n = r(255367),
   i = r(73800),
   s = r(481060),
   o = r(816814),
-  c = r(600164),
-  a = r(198993),
+  a = r(600164),
+  c = r(198993),
   l = r(594174),
   d = r(287880),
   u = r(388032),
@@ -29,18 +29,18 @@ let g = e => {
     text: i,
     children: o
   } = e;
-  return (0, n.jsxs)(c.Z, {
+  return (0, n.jsxs)(a.Z, {
     className: h.spacing,
-    children: [(0, n.jsx)(c.Z, {
+    children: [(0, n.jsx)(a.Z, {
       grow: 0,
       shrink: 0,
       basis: "156px",
-      justify: c.Z.Justify.CENTER,
+      justify: a.Z.Justify.CENTER,
       className: h.image,
       children: t
-    }), (0, n.jsx)(c.Z, {
-      direction: c.Z.Direction.VERTICAL,
-      justify: c.Z.Justify.CENTER,
+    }), (0, n.jsx)(a.Z, {
+      direction: a.Z.Direction.VERTICAL,
+      justify: a.Z.Justify.CENTER,
       children: (0, n.jsxs)("div", {
         children: [(0, n.jsx)(s.vwX, {
           tag: "h5",
@@ -66,9 +66,9 @@ class f extends i.PureComponent {
       isVerifying: f
     } = this.state, _ = null == (e = l.default.getCurrentUser()) ? void 0 : e.email, C = (0, d.U0)(null != _ ? _ : "", o), E = (0, n.jsx)("form", {
       onSubmit: this.handleActivate,
-      children: (0, n.jsxs)(c.Z, {
+      children: (0, n.jsxs)(a.Z, {
         className: h.inputContainer,
-        align: c.Z.Align.START,
+        align: a.Z.Align.START,
         children: [(0, n.jsx)(s.oil, {
           value: p,
           className: h.input,
@@ -78,13 +78,14 @@ class f extends i.PureComponent {
           onChange: this.handleCodeChange,
           error: this.state.error,
           autoFocus: !0
-        }), (0, n.jsx)(c.Z.Child, {
+        }), (0, n.jsx)(a.Z.Child, {
           grow: 0,
           shrink: 0,
           children: (0, n.jsx)(s.zxk, {
+            variant: "primary",
+            text: u.intl.string(u.t["/a5+YW"]),
             type: "submit",
-            submitting: f,
-            children: u.intl.string(u.t["/a5+YW"])
+            loading: f
           })
         })]
       })
@@ -96,7 +97,7 @@ class f extends i.PureComponent {
       parentComponent: "MFAEnable",
       children: [(0, n.jsxs)(s.xBx, {
         separator: !1,
-        children: [(0, n.jsxs)(c.Z.Child, {
+        children: [(0, n.jsxs)(a.Z.Child, {
           grow: 1,
           shrink: 1,
           children: [(0, n.jsx)(s.X6q, {
@@ -107,7 +108,7 @@ class f extends i.PureComponent {
             className: h.subHeader,
             children: u.intl.string(u.t["7NGwtL"])
           })]
-        }), (0, n.jsx)(c.Z.Child, {
+        }), (0, n.jsx)(a.Z.Child, {
           grow: 0,
           children: (0, n.jsx)(s.olH, {
             onClick: i
@@ -129,7 +130,7 @@ class f extends i.PureComponent {
         }), (0, n.jsx)(s.$i$, {
           className: h.divider
         }), (0, n.jsx)(g, {
-          image: (0, n.jsx)(a.ZP, {
+          image: (0, n.jsx)(c.ZP, {
             text: C
           }),
           label: u.intl.string(u.t["91InFx"]),

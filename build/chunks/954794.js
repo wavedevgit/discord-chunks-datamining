@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(255367),
   r = n(73800),
   s = n(442837),
-  l = n(692547),
-  a = n(481060),
+  a = n(692547),
+  l = n(481060),
   o = n(768762),
   c = n(823379),
   d = n(882029),
@@ -20,14 +20,14 @@ function h(e) {
     onBackClick: t
   } = e, n = (0, s.e7)([d.Z], () => d.Z.getAllUnlockedAchievements()), h = r.useMemo(() => Object.values(n).sort((e, t) => t.dateUnlocked - e.dateUnlocked), [n]), f = r.useMemo(() => Object.values(u.LG).filter(c.lm).filter(e => null == n[e.id]).sort((e, t) => e.rarity - t.rarity), [n]);
   return (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(a.hjN, {
-      children: (0, i.jsxs)(a.P3F, {
+    children: [(0, i.jsx)(l.hjN, {
+      children: (0, i.jsxs)(l.P3F, {
         onClick: t,
         className: g.backContainer,
         children: [(0, i.jsx)(o.Z, {
           direction: o.Z.Directions.LEFT,
           className: g.icon
-        }), (0, i.jsx)(a.Text, {
+        }), (0, i.jsx)(l.Text, {
           variant: "text-lg/normal",
           color: "text-default",
           children: p.intl.string(p.t["13/7kZ"])
@@ -37,25 +37,25 @@ function h(e) {
       className: g.headerContainer,
       children: [(0, i.jsxs)("div", {
         className: g.headerTextContainer,
-        children: [(0, i.jsx)(a.X6q, {
+        children: [(0, i.jsx)(l.X6q, {
           variant: "heading-lg/extrabold",
           color: "header-primary",
           children: p.intl.string(p.t["6jI0hY"])
-        }), (0, i.jsx)(a.Text, {
+        }), (0, i.jsx)(l.Text, {
           variant: "text-md/normal",
           color: "header-secondary",
           children: p.intl.string(p.t.GuUItb)
         })]
       }), (0, i.jsx)("div", {
         className: g.headerIcon,
-        children: (0, i.jsx)(a.rm8, {
+        children: (0, i.jsx)(l.rm8, {
           size: "custom",
-          color: l.Z.unsafe_rawColors.ORANGE_345.css,
+          color: a.Z.unsafe_rawColors.ORANGE_345.css,
           width: 40,
           height: 40
         })
       })]
-    }), h.length > 0 && (0, i.jsx)(a.hjN, {
+    }), h.length > 0 && (0, i.jsx)(l.hjN, {
       className: g.divider,
       children: (0, i.jsx)("div", {
         className: g.achievementGrid,
@@ -70,11 +70,11 @@ function h(e) {
           }, t)
         })
       })
-    }), f.length > 0 && (0, i.jsxs)(a.hjN, {
+    }), f.length > 0 && (0, i.jsxs)(l.hjN, {
       className: g.divider,
       children: [(0, i.jsx)("div", {
         className: g.headerTextContainer,
-        children: (0, i.jsx)(a.Text, {
+        children: (0, i.jsx)(l.Text, {
           variant: "text-md/bold",
           color: "header-secondary",
           children: p.intl.string(p.t.GFyMg4)
@@ -85,7 +85,7 @@ function h(e) {
           achievementId: e.id
         }, e.id))
       })]
-    }), (0, i.jsx)(a.hjN, {
+    }), (0, i.jsx)(l.hjN, {
       className: g.divider,
       children: (0, i.jsx)("div", {
         className: g.bottomPadding

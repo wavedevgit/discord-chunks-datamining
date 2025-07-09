@@ -335,11 +335,12 @@ class J extends r.Component {
               children: d
             })]
           }), (0, i.jsx)(u.zxk, {
-            submitting: e,
+            variant: "primary",
+            text: this.buttonText,
+            loading: e,
             onClick: () => {
               this.trackStepAnalytics(), this.handleClick()
-            },
-            children: this.buttonText
+            }
           })]
         })]
       }), null != r.giftStyle && !o && this.step !== H.wZ8.ERROR && !O && !e && b && (null == p || null == S ? (0, i.jsx)(X, {

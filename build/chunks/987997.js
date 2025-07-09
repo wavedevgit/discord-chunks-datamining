@@ -1,17 +1,17 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => l
+  Z: () => a
 });
 var i = n(255367);
 n(73800);
-var r = n(481060),
+var r = n(755721),
   s = n(261623);
 
-function l(e) {
+function a(e) {
   var t, n, {
-      children: l
+      children: a
     } = e,
-    a = function(e, t) {
+    l = function(e, t) {
       if (null == e) return {};
       var n, i, r = function(e, t) {
         if (null == e) return {};
@@ -26,7 +26,7 @@ function l(e) {
       }
       return r
     }(e, ["children"]);
-  return (0, i.jsx)(r.zxk, (t = function(e) {
+  return (0, i.jsx)(r.zx, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         i = Object.keys(n);
@@ -43,11 +43,11 @@ function l(e) {
       })
     }
     return e
-  }({}, a), n = n = {
-    size: r.zxk.Sizes.SMALL,
-    color: r.zxk.Colors.BRAND_INVERTED,
+  }({}, l), n = n = {
+    size: r.zx.Sizes.SMALL,
+    color: r.zx.Colors.BRAND_INVERTED,
     className: s.button,
-    children: l
+    children: a
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

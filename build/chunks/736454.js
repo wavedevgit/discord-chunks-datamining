@@ -1,20 +1,21 @@
 /** Chunk was on 27157 **/
 r.d(t, {
-  default: () => a
+  default: () => u
 }), r(388685);
 var n = r(255367),
   o = r(73800),
-  c = r(481060),
-  i = r(153867),
-  l = r(388032),
-  s = r(903463);
+  c = r(755721),
+  i = r(481060),
+  l = r(153867),
+  s = r(388032),
+  a = r(903463);
 
-function a(e) {
+function u(e) {
   var t, r, {
-      onSubmit: a,
-      onClose: u
+      onSubmit: u,
+      onClose: p
     } = e,
-    p = function(e, t) {
+    b = function(e, t) {
       if (null == e) return {};
       var r, n, o = function(e, t) {
         if (null == e) return {};
@@ -29,8 +30,8 @@ function a(e) {
       }
       return o
     }(e, ["onSubmit", "onClose"]);
-  let [b, f] = o.useState(!1);
-  return (0, n.jsxs)(c.ConfirmModal, (t = function(e) {
+  let [f, O] = o.useState(!1);
+  return (0, n.jsxs)(i.ConfirmModal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
         n = Object.keys(r);
@@ -48,26 +49,26 @@ function a(e) {
     }
     return e
   }({
-    header: l.intl.string(l.t.HlAPoq),
-    confirmButtonColor: c.zxk.Colors.GREEN,
-    confirmText: l.intl.string(l.t.rimG2d),
-    cancelText: l.intl.string(l.t["ETE/oK"]),
-    onConfirm: a,
-    onClose: () => (b && i.ZP.updatedUnsyncedSettings({
+    header: s.intl.string(s.t.HlAPoq),
+    confirmButtonColor: c.zx.Colors.GREEN,
+    confirmText: s.intl.string(s.t.rimG2d),
+    cancelText: s.intl.string(s.t["ETE/oK"]),
+    onConfirm: u,
+    onClose: () => (f && l.ZP.updatedUnsyncedSettings({
       disableCallUserConfirmationPrompt: !0
-    }), u())
-  }, p), r = r = {
-    children: [(0, n.jsx)(c.Text, {
+    }), p())
+  }, b), r = r = {
+    children: [(0, n.jsx)(i.Text, {
       variant: "text-md/normal",
-      children: l.intl.string(l.t.Jz3oqK)
-    }), (0, n.jsx)(c.XZJ, {
-      type: c.XZJ.Types.INVERTED,
-      value: b,
-      onChange: (e, t) => f(t),
-      className: s.checkbox,
-      children: (0, n.jsx)(c.Text, {
+      children: s.intl.string(s.t.Jz3oqK)
+    }), (0, n.jsx)(i.XZJ, {
+      type: i.XZJ.Types.INVERTED,
+      value: f,
+      onChange: (e, t) => O(t),
+      className: a.checkbox,
+      children: (0, n.jsx)(i.Text, {
         variant: "text-md/normal",
-        children: l.intl.string(l.t["JdIQ/f"])
+        children: s.intl.string(s.t["JdIQ/f"])
       })
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {

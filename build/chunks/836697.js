@@ -52,11 +52,11 @@ function O(e) {
               children: b.intl.string(b.t["0UQVDA"])
             })]
           }), (0, r.jsx)(o.zxk, {
+            variant: "primary",
+            size: "sm",
+            text: b.intl.string(b.t["4r+amZ"]),
             fullWidth: !0,
-            size: o.PhG.SMALL,
-            color: o.Ttl.BRAND,
-            onClick: h,
-            children: b.intl.string(b.t["4r+amZ"])
+            onClick: h
           })]
         }), (0, r.jsx)("div", {
           className: _.popoutCaretLeft

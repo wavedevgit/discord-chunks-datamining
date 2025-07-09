@@ -24,8 +24,8 @@ var i = n(255367),
   C = n(145597),
   j = n(41534),
   w = n(333031),
-  k = n(610394),
-  P = n(380736),
+  P = n(610394),
+  k = n(380736),
   Z = n(987650),
   E = n(981631),
   S = n(388032),
@@ -78,7 +78,7 @@ function M(e) {
     M = r.useCallback(e => {
       e.stopPropagation(), null == o || o(), null == a || a()
     }, [a, o]),
-    L = (0, d.e7)([k.ZP], () => k.ZP.getFocusedRunningGame()),
+    L = (0, d.e7)([P.ZP], () => P.ZP.getFocusedRunningGame()),
     R = v ? (0, i.jsxs)("div", {
       children: [(0, i.jsx)(h.Text, {
         variant: "text-md/semibold",
@@ -104,7 +104,7 @@ function M(e) {
     }) : null,
     I = v ? null : S.intl.string(S.t.oEJEFh),
     W = null != (t = null == j ? void 0 : j.isStaff()) && t || null != (n = null == j ? void 0 : j.isStaffPersonal()) && n;
-  return (0, i.jsx)(P.Y, {
+  return (0, i.jsx)(k.Y, {
     title: S.intl.string(S.t.U38qZm),
     body: R,
     hint: W ? I : void 0,
@@ -174,7 +174,7 @@ class L extends r.PureComponent {
           })
         },
         onDisable: () => {
-          let e = k.ZP.getFocusedRunningGame();
+          let e = P.ZP.getFocusedRunningGame();
           null != e && p.Z.toggleOverlay(e, !1, !1)
         },
         onCrashDisabled: () => {

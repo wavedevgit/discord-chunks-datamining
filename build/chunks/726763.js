@@ -6,8 +6,8 @@ var i = n(255367);
 n(73800);
 var r = n(120356),
   s = n.n(r),
-  l = n(442837),
-  a = n(780384),
+  a = n(442837),
+  l = n(780384),
   o = n(481060),
   c = n(600164),
   d = n(921801),
@@ -21,7 +21,7 @@ let h = n(651714),
 function b(e) {
   let {
     refreshStyles: t = !1
-  } = e, n = (0, l.e7)([u.Z], () => u.Z.theme);
+  } = e, n = (0, a.e7)([u.Z], () => u.Z.theme);
   return (0, i.jsx)(d.F, {
     setting: m.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_AUDIO,
     children: (0, i.jsx)(o.hjN, {
@@ -35,7 +35,7 @@ function b(e) {
         }),
         type: o.Dd5.PRIMARY,
         imageData: {
-          src: (0, a.ap)(n) ? h : f,
+          src: (0, l.ap)(n) ? h : f,
           width: 70,
           height: 40
         },

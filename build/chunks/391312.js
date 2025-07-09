@@ -1,19 +1,20 @@
 /** Chunk was on 82560 **/
 r.d(t, {
-  default: () => p
+  default: () => u
 }), r(388685);
 var n = r(255367),
   o = r(73800),
-  c = r(481060),
-  i = r(43740),
-  a = r(437152),
-  s = r(388032),
-  l = r(301403);
+  c = r(755721),
+  i = r(481060),
+  a = r(43740),
+  s = r(437152),
+  l = r(388032),
+  p = r(301403);
 
-function p(e) {
+function u(e) {
   var t, r;
-  let [p, u] = o.useState(!1);
-  return (0, n.jsxs)(c.ConfirmModal, (t = function(e) {
+  let [u, b] = o.useState(!1);
+  return (0, n.jsxs)(i.ConfirmModal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
         n = Object.keys(r);
@@ -31,26 +32,26 @@ function p(e) {
     }
     return e
   }({}, e), r = r = {
-    header: s.intl.string(s.t.pjYu09),
-    confirmText: s.intl.string(s.t.zVZXRU),
-    cancelText: s.intl.string(s.t["ETE/oK"]),
+    header: l.intl.string(l.t.pjYu09),
+    confirmText: l.intl.string(l.t.zVZXRU),
+    cancelText: l.intl.string(l.t["ETE/oK"]),
     onConfirm: () => {
-      (0, i.l)(!0)
+      (0, a.l)(!0)
     },
-    confirmButtonColor: c.zxk.Colors.BRAND,
-    children: [(0, n.jsx)(c.Text, {
+    confirmButtonColor: c.zx.Colors.BRAND,
+    children: [(0, n.jsx)(i.Text, {
       variant: "text-md/normal",
-      children: s.intl.format(s.t["0eydys"], {})
-    }), (0, n.jsx)(c.XZJ, {
-      className: l.checkboxMargin,
-      type: c.XZJ.Types.INVERTED,
-      value: p,
+      children: l.intl.format(l.t["0eydys"], {})
+    }), (0, n.jsx)(i.XZJ, {
+      className: p.checkboxMargin,
+      type: i.XZJ.Types.INVERTED,
+      value: u,
       onChange: () => {
-        (0, a.E)(), u(!0)
+        (0, s.E)(), b(!0)
       },
-      children: (0, n.jsx)(c.Text, {
+      children: (0, n.jsx)(i.Text, {
         variant: "text-md/normal",
-        children: s.intl.string(s.t["50TyjY"])
+        children: l.intl.string(l.t["50TyjY"])
       })
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {

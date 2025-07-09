@@ -5,17 +5,17 @@ n.d(t, {
 var i = n(544891),
   r = n(570140),
   s = n(881052),
-  l = n(981631);
-let a = {
-    [l.gkr.HOUSE_1]: 1,
-    [l.gkr.HOUSE_2]: 2,
-    [l.gkr.HOUSE_3]: 3
+  a = n(981631);
+let l = {
+    [a.gkr.HOUSE_1]: 1,
+    [a.gkr.HOUSE_2]: 2,
+    [a.gkr.HOUSE_3]: 3
   },
   o = {
     joinHypeSquadOnline: e => i.tn.post({
-      url: l.ANM.HYPESQUAD_ONLINE,
+      url: a.ANM.HYPESQUAD_ONLINE,
       body: {
-        house_id: a[e.houseID]
+        house_id: l[e.houseID]
       },
       oldFormErrors: !0,
       rejectWithError: !1
@@ -26,7 +26,7 @@ let a = {
       throw new s.yZ(e)
     }),
     leaveHypeSquadOnline: () => i.tn.del({
-      url: l.ANM.HYPESQUAD_ONLINE,
+      url: a.ANM.HYPESQUAD_ONLINE,
       oldFormErrors: !0,
       rejectWithError: !1
     }).then(() => r.Z.dispatch({

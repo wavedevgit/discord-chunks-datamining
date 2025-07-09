@@ -53,7 +53,7 @@ function T(e) {
   return e
 }
 
-function k(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -65,7 +65,7 @@ function k(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class D extends r.PureComponent {
+class k extends r.PureComponent {
   handleDisconnect() {
     h.default.selectVoiceChannel(null)
   }
@@ -112,7 +112,7 @@ class D extends r.PureComponent {
             targetElementRef: this.rtcConnectionStatusRef,
             renderPopout: () => this.renderPopout(o.id),
             position: "top",
-            children: e => (0, i.jsx)(c.P3F, k(T({}, e), {
+            children: e => (0, i.jsx)(c.P3F, D(T({}, e), {
               innerRef: this.rtcConnectionStatusRef,
               children: (0, i.jsx)(v.Z, {
                 channelId: o.id,
@@ -204,7 +204,7 @@ function R(e) {
     } = (0, g.A)({
       location: "Controls"
     });
-  return (0, i.jsx)(D, k(T({}, o), {
+  return (0, i.jsx)(k, D(T({}, o), {
     context: t,
     lobbyId: n,
     channel: r,

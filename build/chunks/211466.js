@@ -6,8 +6,8 @@ var i = n(255367);
 n(73800);
 var r = n(925513),
   s = n(63063),
-  l = n(526156),
-  a = n(821035),
+  a = n(526156),
+  l = n(821035),
   o = n(768604),
   c = n(838436),
   d = n(526761),
@@ -19,7 +19,7 @@ function g() {
   let e = (0, r.v6)(),
     t = [{
       title: p.intl.string(p.t.GYpoAg),
-      component: () => (0, i.jsx)(a.P, {
+      component: () => (0, i.jsx)(l.P, {
         isNested: !0
       }),
       orientation: "vertical",
@@ -38,7 +38,7 @@ function g() {
       description: p.intl.format(p.t.dliU4u, {
         learnMoreLink: s.Z.getArticleURL(e)
       })
-    }), (0, i.jsx)(l.Z, {
+    }), (0, i.jsx)(a.Z, {
       parentSetting: u.s6.CONTENT_SOCIAL,
       settingsSection: m.oAB.CONTENT_AND_SOCIAL,
       tabs: t,

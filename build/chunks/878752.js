@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(704215),
-  o = n(100527),
-  a = n(906732),
+  a = n(100527),
+  o = n(906732),
   s = n(779618),
   c = n(243778),
   u = n(446226),
@@ -29,7 +29,7 @@ function v(e) {
     showRightDivider: v
   } = e, {
     analyticsLocations: O
-  } = (0, a.ZP)(o.Z.VOICE_CONTROL_TRAY), j = (0, h.Ou)(t), E = i.useRef(null), S = (0, u.Z)(), {
+  } = (0, o.ZP)(a.Z.VOICE_CONTROL_TRAY), j = (0, h.Ou)(t), E = i.useRef(null), S = (0, u.Z)(), {
     isSharedCanvasEnabled: I
   } = f.Z.useExperiment({
     guildId: null == t ? void 0 : t.guild_id,
@@ -43,8 +43,8 @@ function v(e) {
   }), Z = (0, s.Z)(m.Z), N = (0, h.Zm)(t, "VoiceEffectsActionBar") ? [l.z.CONSUMABLE_HD_POTION_UPSELL] : [], [T, A] = (0, c.US)(N, void 0, !0), w = T === l.z.CONSUMABLE_HD_POTION_UPSELL;
   if (null == t || null != S) return null;
   let R = P && Z,
-    k = I && n;
-  return (0, r.jsxs)(a.Gt, {
+    M = I && n;
+  return (0, r.jsxs)(o.Gt, {
     value: O,
     children: [(0, r.jsxs)("div", {
       className: x.voiceEffectsActionBar,
@@ -58,10 +58,10 @@ function v(e) {
         ref: E,
         channel: t,
         glow: w
-      }), k && (0, r.jsx)(b.Z, {}), k && (0, r.jsx)(_.Z, {
+      }), M && (0, r.jsx)(b.Z, {}), M && (0, r.jsx)(_.Z, {
         channel: t
-      }), k && (0, r.jsx)(C.Z, {})]
-    }), v && (R || w || j || k) && (0, r.jsx)("div", {
+      }), M && (0, r.jsx)(C.Z, {})]
+    }), v && (R || w || j || M) && (0, r.jsx)("div", {
       className: x.divider
     })]
   })

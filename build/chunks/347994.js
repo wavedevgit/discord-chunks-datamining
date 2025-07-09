@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(392711),
   r = n.n(i),
   s = n(710845),
-  l = n(581883),
-  a = n(314897),
+  a = n(581883),
+  l = n(314897),
   o = n(287328),
   c = n(261875);
 
@@ -37,17 +37,17 @@ let u = new s.Z("UserSettingsProto"),
         USER_SETTINGS_PROTO_ENQUEUE_UPDATE: () => this.throttledOnChange(),
         USER_SETTINGS_PROTO_UPDATE_EDIT_INFO: () => this.throttledOnChange()
       }), d(this, "handleUserSettingsProtoChange", () => {
-        let e = a.default.getId(),
+        let e = l.default.getId(),
           t = c.Z.database(e);
         null == t || t.transaction(e => {
           var t, n;
-          let i = l.Z.computeState(),
+          let i = a.Z.computeState(),
             r = o.Z.userSettingsTransaction(e);
           for (let e in i) r.put({
             id: Number(e),
             value: i[e]
           });
-          let s = null != (n = null == (t = l.Z.settings.versions) ? void 0 : t.dataVersion) ? n : -1;
+          let s = null != (n = null == (t = a.Z.settings.versions) ? void 0 : t.dataVersion) ? n : -1;
           o.Z.nonGuildVersionsTransaction(e).put({
             id: "user_settings_version",
             version: s

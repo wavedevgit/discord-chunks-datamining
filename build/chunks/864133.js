@@ -5,7 +5,7 @@ n.d(t, {
 var i, r = n(442837),
   s = n(570140);
 
-function l(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -13,13 +13,13 @@ function l(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let a = {
+let l = {
     lastSeenInfos: {}
   },
-  o = a;
+  o = l;
 class c extends(i = r.ZP.PersistedStore) {
   initialize(e) {
-    o = null != e ? e : a
+    o = null != e ? e : l
   }
   getState() {
     return o
@@ -29,7 +29,7 @@ class c extends(i = r.ZP.PersistedStore) {
     return null != (t = o.lastSeenInfos[e]) ? t : null
   }
 }
-l(c, "displayName", "GuildTagChangedCoachmarkStore"), l(c, "persistKey", "GuildTagChangedCoachmarkStore");
+a(c, "displayName", "GuildTagChangedCoachmarkStore"), a(c, "persistKey", "GuildTagChangedCoachmarkStore");
 let d = new c(s.Z, {
   GUILD_TAG_CHANGED_COACHMARK_SEEN: function(e) {
     let {
@@ -39,6 +39,6 @@ let d = new c(s.Z, {
     o.lastSeenInfos[t] = n
   },
   LOGOUT: function() {
-    o = a
+    o = l
   }
 })

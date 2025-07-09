@@ -217,8 +217,9 @@ function b(e) {
       className: g.bottomPanelButton,
       children: (0, i.jsx)(f.Z, {
         children: (0, i.jsx)(s.zxk, {
-          onClick: z,
-          children: "Reset Frame Data"
+          variant: "primary",
+          text: "Reset Frame Data",
+          onClick: z
         })
       })
     })]

@@ -1,7 +1,7 @@
 /** Chunk was on 82265 **/
 "use strict";
 n.d(t, {
-  Z: () => L
+  Z: () => k
 }), n(388685), n(781311), n(953529), n(539854);
 var r = n(255367),
   i = n(73800),
@@ -126,18 +126,21 @@ function Z(e) {
         variant: "text-sm/normal",
         children: x.getAnyErrorMessage()
       }) : null]
-    }), (0, r.jsxs)(o.mzw, {
+    }), (0, r.jsx)(o.mzw, {
       className: T.footer,
-      children: [(0, r.jsx)(o.zxk, {
-        onClick: m,
-        children: S.intl.string(S.t.i4jeWV)
-      }), (0, r.jsx)(o.zxk, {
-        onClick: C,
-        look: o.zxk.Looks.LINK,
-        color: o.zxk.Colors.RED,
-        submitting: g,
-        children: S.intl.string(S.t.UPcIa2)
-      })]
+      children: (0, r.jsxs)(o.hE2, {
+        direction: "horizontal-reverse",
+        children: [(0, r.jsx)(o.zxk, {
+          variant: "primary",
+          text: S.intl.string(S.t.i4jeWV),
+          onClick: m
+        }), (0, r.jsx)(o.zxk, {
+          variant: "critical-secondary",
+          text: S.intl.string(S.t.UPcIa2),
+          onClick: C,
+          loading: g
+        })]
+      })
     })]
   })
 }
@@ -197,7 +200,7 @@ class D extends i.PureComponent {
     })
   }
 }
-let k = i.forwardRef(function(e, t) {
+let A = i.forwardRef(function(e, t) {
   let {
     guild: n,
     sortedBans: l,
@@ -233,7 +236,7 @@ let k = i.forwardRef(function(e, t) {
   })
 });
 
-function A(e) {
+function L(e) {
   let {
     guildId: t,
     storedSearchQuery: n
@@ -282,20 +285,23 @@ function A(e) {
         onClear: g,
         size: o.E1j.Sizes.MEDIUM,
         isLoading: a
-      }), (0, r.jsx)(o.zxk, {
-        color: o.zxk.Colors.BRAND,
-        onClick: p,
-        size: o.zxk.Sizes.SMALL,
-        disabled: a,
-        submitting: a,
+      }), (0, r.jsx)("div", {
+        "data-button-hoisted-classname-wrapper": !0,
         className: T.searchButton,
-        children: S.intl.string(S.t["5h0QOD"])
+        children: (0, r.jsx)(o.zxk, {
+          variant: "primary",
+          size: "sm",
+          text: S.intl.string(S.t["5h0QOD"]),
+          onClick: p,
+          disabled: a,
+          loading: a
+        })
       })]
     })]
   }, "bans-header")
 }
 
-function L() {
+function k() {
   var e, t;
   let {
     guild: c,
@@ -314,7 +320,7 @@ function L() {
       null != e && I(t)(e) && r.push(e)
     }
     return r
-  }, [I]), Z = i.useMemo(() => P(b, u, _), [b, P, u, _]), D = null != b, L = Z.length % 1e3 == 0 && Z.length > 0 && D, M = 0 === Z.length, [G, U] = i.useState({
+  }, [I]), Z = i.useMemo(() => P(b, u, _), [b, P, u, _]), D = null != b, k = Z.length % 1e3 == 0 && Z.length > 0 && D, M = 0 === Z.length, [G, U] = i.useState({
     currentPage: 1,
     pageSize: 100
   });
@@ -329,10 +335,10 @@ function L() {
     F = i.useMemo(() => s().chunk(Z, G.pageSize), [G.pageSize, Z]),
     z = i.useCallback(e => {
       var t, n, r;
-      null == (t = N.current) || t.scrollToSectionTop(0), (e + 1) * G.pageSize > Z.length && L && !p && (H.current = null != (r = null == (n = Z[Z.length - 1]) ? void 0 : n.id) ? r : null, B(H.current)), (null != F[e - 1] || L) && U(t => R(w({}, t), {
+      null == (t = N.current) || t.scrollToSectionTop(0), (e + 1) * G.pageSize > Z.length && k && !p && (H.current = null != (r = null == (n = Z[Z.length - 1]) ? void 0 : n.id) ? r : null, B(H.current)), (null != F[e - 1] || k) && U(t => R(w({}, t), {
         currentPage: e
       }))
-    }, [G.pageSize, Z, L, F, B, p]),
+    }, [G.pageSize, Z, k, F, B, p]),
     H = i.useRef(null);
   i.useEffect(() => {
     B(H.current)
@@ -343,17 +349,17 @@ function L() {
   }, [F, G.currentPage]);
   return null == c ? null : (0, r.jsxs)("div", {
     className: T.container,
-    children: [(0, r.jsx)(A, {
+    children: [(0, r.jsx)(L, {
       guildId: C,
       storedSearchQuery: u
     }), (0, r.jsxs)("div", {
       className: T.scrollerContainer,
-      children: [!M && (0, r.jsx)(k, {
+      children: [!M && (0, r.jsx)(A, {
         guild: c,
         bans: b,
         sortedBans: V,
         ref: N
-      }), !L && M && (0, r.jsxs)(o.ubH, {
+      }), !k && M && (0, r.jsxs)(o.ubH, {
         theme: O,
         className: T.emptyState,
         children: [(0, r.jsx)(o.oxh, {
@@ -373,7 +379,7 @@ function L() {
       className: T.__invalid_paginationContainer,
       children: (0, r.jsx)(o.DsT, {
         className: T.paginationInput,
-        totalCount: Z.length + (L ? G.pageSize : 0),
+        totalCount: Z.length + (k ? G.pageSize : 0),
         pageSize: G.pageSize,
         currentPage: G.currentPage,
         onPageChange: z,

@@ -44,8 +44,8 @@ var i = n(512722),
   U = n(979651),
   M = n(938475),
   L = n(823379),
-  k = n(709054),
-  Z = n(968358),
+  Z = n(709054),
+  k = n(968358),
   j = n(203818),
   w = n(295454),
   x = n(443063),
@@ -482,7 +482,7 @@ class es extends ei {
         return 4 === n || t > 0 && Date.now() - t < es.MAX_TIMESTAMP_DELTA
       }).sortBy(e => {
         let [, t, n] = e;
-        return -(t - (4 === n ? 0 : k.DISCORD_EPOCH))
+        return -(t - (4 === n ? 0 : Z.DISCORD_EPOCH))
       }).take(es.MAX_RECENT_CHANNELS).sortBy(e => {
         let [, t] = e;
         return -t
@@ -512,7 +512,7 @@ B(es, "MIN_READABLE_CHANNELS", 7), B(es, "MAX_RECENT_CHANNELS", 10), B(es, "MAX_
 class ea extends ei {
   updateAllChannels(e) {
     let t = !1;
-    return k.default.keys(this.channels).forEach(n => {
+    return Z.default.keys(this.channels).forEach(n => {
       this.updateChannel(this.channels[n].record, e) && (t = !0)
     }), t
   }
@@ -790,7 +790,7 @@ function eT(e, t, n) {
         name: i.name
       };
       let r = M.ZP.getVoiceStatesForChannel(e);
-      if (n && t && (0, Z.a)(r)) return {
+      if (n && t && (0, k.a)(r)) return {
         type: "go-live"
       };
       let l = c.Z.getChannelStatus(e);
@@ -861,7 +861,7 @@ function eN(e, t, n) {
     if (b.ZP.getMentionCount(e) > 0 || b.ZP.hasUnread(e) || b.ZP.hasRecentlyVisitedAndRead(e)) return !0;
   if (e.mutedChannelIds.has(t.id) || null != t.parent_id && e.mutedChannelIds.has(t.parent_id)) return !1;
   let l = T.Z.getNewChannelIds(e.id),
-    o = Array.from(l).sort((e, t) => k.default.compare(t, e));
+    o = Array.from(l).sort((e, t) => Z.default.compare(t, e));
   return !!(l.has(t.id) && o.indexOf(t.id) < Y || b.ZP.hasRecentlyVisitedAndRead(t.id))
 }
 let ef = new Set(Object.values(x.z))

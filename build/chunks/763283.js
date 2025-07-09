@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(255367),
   r = n(120356),
   s = n.n(r),
-  l = n(793030),
-  a = n(883851);
+  a = n(793030),
+  l = n(883851);
 
 function o(e) {
   var t, n, {
@@ -29,7 +29,7 @@ function o(e) {
       }
       return r
     }(e, ["children", "className", "color"]);
-  return (0, i.jsx)(l.xv, (t = function(e) {
+  return (0, i.jsx)(a.xv, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         i = Object.keys(n);
@@ -47,8 +47,8 @@ function o(e) {
     }
     return e
   }({}, d), n = n = {
-    className: s()(o, a.text, {
-      [a.colorClickerGameBrand]: "clicker-game-brand" === c
+    className: s()(o, l.text, {
+      [l.colorClickerGameBrand]: "clicker-game-brand" === c
     }),
     color: "clicker-game-brand" === c ? "none" : c,
     children: r

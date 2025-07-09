@@ -1,12 +1,12 @@
 /** Chunk was on 42483 **/
 e.d(n, {
-  U: () => s
+  U: () => a
 });
 var i = e(481060);
 e(43236);
 var l = e(103714);
 e(940328), e(888395), e(389028), e(142390), e(425506);
-let s = {
+let a = {
   CREATE: i.B0A,
   GAMING: i.Tg$,
   FRIENDS: i.z93,

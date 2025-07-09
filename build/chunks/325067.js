@@ -2,8 +2,8 @@
 n.d(t, {
   Z: () => b
 });
-var i, r, s, l = n(392711),
-  a = n.n(l),
+var i, r, s, a = n(392711),
+  l = n.n(a),
   o = n(213919),
   c = n(442837),
   d = n(570140);
@@ -66,7 +66,7 @@ let b = new f(d.Z, {
       codes: t,
       key: n
     } = e;
-    m = a().sortBy(t, "code"), p = n
+    m = l().sortBy(t, "code"), p = n
   },
   MFA_SEND_VERIFICATION_KEY: function(e) {
     let {

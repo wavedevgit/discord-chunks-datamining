@@ -76,7 +76,7 @@ function v(e) {
         tag: t
       }))
     })
-  }, B = (0, o.jsxs)(o.Fragment, {
+  }, F = (0, o.jsxs)(o.Fragment, {
     children: [k ? (0, o.jsx)(m.Z, {
       className: c()(h.emoji, {
         [h.small]: L
@@ -98,7 +98,7 @@ function v(e) {
       color: "currentColor",
       children: E
     })]
-  }), F = {
+  }), B = {
     key: t.id,
     className: c()(h.pill, {
       [h.disabled]: r,
@@ -124,10 +124,10 @@ function v(e) {
     }),
     role: "button",
     "aria-pressed": O
-  }), F), {
-    children: B
-  })) : (0, o.jsx)("div", y(T({}, F), {
-    children: B
+  }), B), {
+    children: F
+  })) : (0, o.jsx)("div", y(T({}, B), {
+    children: F
   }))
 }
 

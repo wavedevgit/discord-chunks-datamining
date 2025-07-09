@@ -33,9 +33,9 @@ var r = n(255367),
   I = n(404616),
   E = n(510060),
   R = n(983200),
-  k = n(196255),
-  M = n(858543),
-  Z = n(482062),
+  M = n(196255),
+  Z = n(858543),
+  k = n(482062),
   A = n(883728),
   L = n(710352),
   F = n(981631),
@@ -128,9 +128,9 @@ function G(e) {
   i.useEffect(() => {
     null == x || x(b.current, p)
   }, [x, p]);
-  let M = (0, N.xw)(n, s.z.CREATION_DATE, L.R6.POSTED_DURATION_AGO),
+  let Z = (0, N.xw)(n, s.z.CREATION_DATE, L.R6.POSTED_DURATION_AGO),
     F = (0, I.NN)(n),
-    H = (0, Z.nX)({
+    H = (0, k.nX)({
       id: t,
       row: g.row,
       column: g.column,
@@ -181,14 +181,14 @@ function G(e) {
         className: z.authorRow,
         children: [(0, r.jsxs)("div", {
           className: z.rowGroup,
-          children: [(0, r.jsx)(k.Z, {
+          children: [(0, r.jsx)(M.Z, {
             channel: n,
             message: v
           }), (0, r.jsx)(d.Text, {
             variant: "text-xs/normal",
             color: "header-secondary",
             className: z.postCreationTimestamp,
-            children: M
+            children: Z
           })]
         }), O ? (0, r.jsx)(d.IGR, {
           className: z.newBadge,
@@ -293,7 +293,7 @@ function q(e) {
       shouldMaintainAspectRatio: v
     }), (0, r.jsx)("div", {
       className: z.tagsRow,
-      children: (0, r.jsx)(M.ZP, {
+      children: (0, r.jsx)(Z.ZP, {
         channel: t,
         tagsClassName: z.tagPill
       })
@@ -490,7 +490,7 @@ function Q(e) {
     noStyleAndInteraction: !0
   }), {
     shouldRenderTagsRow: g
-  } = (0, M.DM)({
+  } = (0, Z.DM)({
     channel: t,
     isNew: !1
   }), f = i.useMemo(() => ({
@@ -516,7 +516,7 @@ function Q(e) {
       className: l()(z.textContentFooter, {
         [z.noTags]: !g
       }),
-      children: g ? (0, r.jsx)(M.ZP, {
+      children: g ? (0, r.jsx)(Z.ZP, {
         channel: t,
         tagsClassName: z.tagPill
       }) : null
@@ -531,7 +531,7 @@ function $(e) {
     channel: a
   } = e, [s, o] = (0, E.rI)(n - 2 * E.LT), {
     shouldRenderTagsRow: c
-  } = (0, M.DM)({
+  } = (0, Z.DM)({
     channel: a,
     isNew: !1
   }), u = i.useMemo(() => ({
@@ -553,7 +553,7 @@ function $(e) {
       className: l()(z.textContentFooter, {
         [z.noTags]: !c
       }),
-      children: c ? (0, r.jsx)(M.ZP, {
+      children: c ? (0, r.jsx)(Z.ZP, {
         channel: a,
         tagsClassName: z.tagPill
       }) : null

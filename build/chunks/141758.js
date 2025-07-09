@@ -1,4 +1,4 @@
 /** Chunk was on 37483 **/
-e.exports = {
+t.exports = {
   button: "button__43e98"
 }

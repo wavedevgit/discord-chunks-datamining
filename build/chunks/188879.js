@@ -1,6 +1,6 @@
 /** Chunk was on 18831 **/
 n.d(t, {
-  Z: () => D
+  Z: () => U
 }), n(953529);
 var i = n(255367),
   a = n(73800),
@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(797614),
   d = n(706454),
   u = n(626135),
-  m = n(331692),
-  p = n(531441),
+  p = n(331692),
+  m = n(531441),
   f = n(236289),
   h = n(788080),
   g = n(451284),
@@ -67,7 +67,7 @@ let P = e => {
           children: e
         }, t)
       };
-      return null == n ? E.intl.format(E.t.HpvELi, e) : (null == n ? void 0 : n.member_type) === p.wO.OWNER ? E.intl.format(E.t.X1ngSU, w(A({}, e), {
+      return null == n ? E.intl.format(E.t.HpvELi, e) : (null == n ? void 0 : n.member_type) === m.wO.OWNER ? E.intl.format(E.t.X1ngSU, w(A({}, e), {
         guildName: null == n ? void 0 : n.name
       })) : E.intl.format(E.t.rmpEPD, w(A({}, e), {
         guildName: null == n ? void 0 : n.name
@@ -211,7 +211,7 @@ let P = e => {
       }), r]
     })
   },
-  D = e => {
+  U = e => {
     var t;
     let {
       classificationId: n,
@@ -224,10 +224,10 @@ let P = e => {
       isAppealEligible: w,
       isDsaEligible: C,
       violationType: S
-    } = (0, y.YG)(n), N = (0, s.e7)([f.Z], () => f.Z.getAppealEligibility()), k = (0, g.P)(), D = null != E && null != E.flagged_content && E.flagged_content.length > 0, U = (0, x.e)(), Z = !!(null == E ? void 0 : E.is_coppa) && N.includes(p.tG.AGE_VERIFY_ELIGIBLE), M = {
+    } = (0, y.YG)(n), N = (0, s.e7)([f.Z], () => f.Z.getAppealEligibility()), k = (0, g.P)(), U = null != E && null != E.flagged_content && E.flagged_content.length > 0, D = (0, x.e)(), Z = !!(null == E ? void 0 : E.is_coppa) && N.includes(m.tG.AGE_VERIFY_ELIGIBLE), M = {
       accountStanding: k,
       classificationId: n,
-      hasFlaggedContent: D,
+      hasFlaggedContent: U,
       isDsaEligible: C,
       source: r,
       violationType: S
@@ -243,7 +243,7 @@ let P = e => {
         source: a,
         violationType: l
       } = Y.current;
-      U && u.default.track(O.rMx.SAFETY_HUB_ACTION, {
+      D && u.default.track(O.rMx.SAFETY_HUB_ACTION, {
         action: b.n0.ViewViolationDetail,
         account_standing: e.state,
         classification_ids: [Number(t)],
@@ -252,7 +252,7 @@ let P = e => {
         is_dsa_eligible: i,
         violation_type: l
       })
-    }, [U]), null == E && A === p.OY.FAILED) ? (o(), null) : null == E ? null : (0, i.jsxs)("div", {
+    }, [D]), null == E && A === m.OY.FAILED) ? (o(), null) : null == E ? null : (0, i.jsxs)("div", {
       className: _.classificationContainer,
       children: [(0, i.jsx)(P, {
         classificationTypeText: E.description,
@@ -275,10 +275,10 @@ let P = e => {
               account_standing: k.state,
               classification_ids: [Number(n)],
               source: r,
-              is_violative_content_shown: D,
+              is_violative_content_shown: U,
               is_dsa_eligible: C,
               violation_type: S
-            }), Z ? m.Z.open(n, d) : w && (c.Z.increment({
+            }), Z ? p.Z.open(n, d) : w && (c.Z.increment({
               name: l.V.APPEAL_INGESTION_VIEW
             }), j.Z.open(n))
           },

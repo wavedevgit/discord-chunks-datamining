@@ -1,24 +1,25 @@
 /** Chunk was on 19577 **/
 n.d(t, {
-  W: () => s
+  W: () => c
 });
 var r = n(255367),
   i = n(442837),
-  l = n(481060),
+  l = n(755721),
+  a = n(481060),
   o = n(9156),
-  a = n(388032);
-let s = e => {
+  s = n(388032);
+let c = e => {
   let {
     className: t,
-    channel: s,
-    user: c
-  } = e, u = (0, i.e7)([o.ZP], () => o.ZP.isChannelMuted(null, s.id));
-  return c.bot ? (0, r.jsx)(l.zxk, {
+    channel: c,
+    user: u
+  } = e, d = (0, i.e7)([o.ZP], () => o.ZP.isChannelMuted(null, c.id));
+  return u.bot ? (0, r.jsx)(l.zx, {
     className: t,
-    size: l.PhG.SMALL,
-    color: u ? l.zxk.Colors.PRIMARY : l.zxk.Colors.RED,
+    size: l.Ph.SMALL,
+    color: d ? l.zx.Colors.PRIMARY : l.zx.Colors.RED,
     onClick: function() {
-      (0, l.ZDy)(async () => {
+      (0, a.ZDy)(async () => {
         let {
           default: e
         } = await n.e("83545").then(n.bind(n, 53149));
@@ -40,10 +41,10 @@ let s = e => {
           }
           return e
         }({
-          channelId: s.id
+          channelId: c.id
         }, t))
       })
     },
-    children: u ? a.intl.string(a.t.YqAjX1) : a.intl.string(a.t["w4m94+"])
+    children: d ? s.intl.string(s.t.YqAjX1) : s.intl.string(s.t["w4m94+"])
   }) : null
 }

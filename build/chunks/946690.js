@@ -6,8 +6,8 @@ var i = n(255367);
 n(73800);
 var r = n(120356),
   s = n.n(r),
-  l = n(481060),
-  a = n(589608),
+  a = n(481060),
+  l = n(589608),
   o = n(270434);
 let c = e => {
   let {
@@ -17,7 +17,7 @@ let c = e => {
     description: c
   } = e;
   return (0, i.jsxs)("div", {
-    className: s()(o.container, a.box),
+    className: s()(o.container, l.box),
     children: [(0, i.jsx)("div", {
       className: o.circle,
       children: (0, i.jsx)(t, {
@@ -28,13 +28,13 @@ let c = e => {
         color: "currentColor"
       })
     }), (0, i.jsxs)("div", {
-      children: [(0, i.jsx)(l.X6q, {
+      children: [(0, i.jsx)(a.X6q, {
         variant: "heading-md/bold",
         className: o.header,
-        children: (0, i.jsx)(l.y5t, {
+        children: (0, i.jsx)(a.y5t, {
           children: r
         })
-      }), (0, i.jsx)(l.Text, {
+      }), (0, i.jsx)(a.Text, {
         variant: "text-sm/medium",
         color: "text-muted",
         children: c

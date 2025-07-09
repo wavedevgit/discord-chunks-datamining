@@ -6,8 +6,8 @@ var i = n(255367);
 n(73800);
 var r = n(120356),
   s = n.n(r),
-  l = n(512722),
-  a = n.n(l),
+  a = n(512722),
+  l = n.n(a),
   o = n(481060),
   c = n(563132),
   d = n(409813),
@@ -21,7 +21,7 @@ function h(e) {
     transitionState: t,
     analyticsLocation: n,
     onClose: r,
-    onAddPaymentSource: l,
+    onAddPaymentSource: a,
     toastContent: c,
     initialStep: h = d.h8.PAYMENT_TYPE,
     overwriteSubscriptionPaymentSource: f = !1
@@ -34,7 +34,7 @@ function h(e) {
       r()
     },
     onComplete: (e, t) => {
-      a()(null != t, "paymentSource missing"), null == l || l(t), r()
+      l()(null != t, "paymentSource missing"), null == a || a(t), r()
     },
     onStepChange: () => {},
     header: (0, i.jsxs)("div", {

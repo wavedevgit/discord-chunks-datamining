@@ -52,14 +52,14 @@ function y(e, t) {
   }), e
 }
 let _ = function(e) {
-  var t, n, l, _, k, P;
+  var t, n, l, _, P, k;
   let {
     sourceURL: O
   } = e, {
     videoPlayerRef: S,
     cropData: N,
     setCropData: E
-  } = (0, h.S)(), [R, L] = r.useState(((P = !(null == (n = S.current) || null == (t = n.videoElement) ? void 0 : t.paused), true), P)), T = r.useRef(null), [F, D] = r.useState(null), [I, A] = r.useState(), Z = r.useRef(null), B = r.useRef(null), [M, z] = r.useState(0), [H, W] = r.useState(!1), [U, V] = r.useState(null);
+  } = (0, h.S)(), [R, L] = r.useState(((k = !(null == (n = S.current) || null == (t = n.videoElement) ? void 0 : t.paused), true), k)), T = r.useRef(null), [F, D] = r.useState(null), [I, A] = r.useState(), Z = r.useRef(null), B = r.useRef(null), [M, z] = r.useState(0), [H, W] = r.useState(!1), [U, V] = r.useState(null);
   (0, m.Z)(() => {
     var e;
     let t = null == (e = S.current) ? void 0 : e.videoElement;
@@ -317,7 +317,7 @@ let _ = function(e) {
               "aria-valuemin": N.start + g.Hp,
               "aria-valuenow": N.end,
               "aria-valuetext": C(N.end),
-              "aria-valuemax": null == (k = S.current) || null == (_ = k.videoElement) ? void 0 : _.duration,
+              "aria-valuemax": null == (P = S.current) || null == (_ = P.videoElement) ? void 0 : _.duration,
               "aria-label": x.intl.string(x.t.bBgBYm),
               children: (0, a.jsx)("div", {
                 className: b.cropRightArrow

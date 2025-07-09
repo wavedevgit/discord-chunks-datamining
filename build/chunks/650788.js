@@ -32,8 +32,8 @@ var n = r(255367),
   Z = r(333866),
   N = r(176505),
   D = r(20281),
-  k = r(388032),
-  T = r(663457),
+  T = r(388032),
+  k = r(663457),
   R = r(100658);
 
 function E(e) {
@@ -52,7 +52,7 @@ function E(e) {
   return null == s || !u && p ? (0, n.jsx)(a.$jN, {}) : (0, n.jsx)(x.Z, {
     defaultSortOption: null != (t = null == l ? void 0 : l.store_page_guild_products_default_sort) ? t : Z.zJ.NAME,
     children: (0, n.jsxs)("div", {
-      className: T.contentContainer,
+      className: k.contentContainer,
       children: [(0, n.jsx)(L.C, {
         guild: s,
         subscriptionsSettings: l
@@ -61,7 +61,7 @@ function E(e) {
       }), C.length > 0 && (0, n.jsx)(w.z, {
         guild: s
       }), (0, n.jsxs)("div", {
-        className: T.tabContainer,
+        className: k.tabContainer,
         children: [(0, n.jsx)(a.LZC, {
           size: 32
         }), u && (0, n.jsx)(P.Z, {
@@ -102,25 +102,25 @@ function M(e) {
     disableTrack: P
   }), (0, n.jsxs)("div", {
     "data-has-border": !0,
-    className: l()(R.chat, T.container),
+    className: l()(R.chat, k.container),
     children: [(0, n.jsxs)(j.Z, {
       children: [(0, n.jsx)(j.Z.Icon, {
         icon: (0, a.GSL)(I.Z),
         "aria-hidden": !0,
         color: u.Z.INTERACTIVE_ACTIVE
       }), (0, n.jsx)(j.Z.Title, {
-        children: k.intl.string(k.t.al5EXF)
+        children: T.intl.string(T.t.al5EXF)
       }), (0, n.jsx)(S.Z, {})]
     }), (0, n.jsx)(a.u2D, {
-      className: T.content,
+      className: k.content,
       children: o ? (0, n.jsx)(E, {
         guildId: t,
         productId: r
       }) : (0, n.jsx)(a.$jN, {})
     }), (0, n.jsx)(b.Z, {
-      className: T.sparkleCloudTop
+      className: k.sparkleCloudTop
     }), (0, n.jsx)(f.Z, {
-      className: T.sparkleCloudBottom
+      className: k.sparkleCloudBottom
     })]
   })
 }

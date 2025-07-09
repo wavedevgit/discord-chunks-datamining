@@ -1,18 +1,18 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => a
+  Z: () => l
 });
 var i = n(255367);
 n(73800);
 var r = n(481060),
   s = n(993413),
-  l = n(388032);
+  a = n(388032);
 
-function a(e) {
+function l(e) {
   let {
     sectionTitle: t,
     errors: n,
-    onPronounsChange: a,
+    onPronounsChange: l,
     pendingPronouns: o,
     placeholder: c,
     currentPronouns: d,
@@ -23,11 +23,11 @@ function a(e) {
     errors: n,
     disabled: u,
     children: (0, i.jsx)(r.oil, {
-      placeholder: null != c ? c : l.intl.string(l.t.NPEUUl),
+      placeholder: null != c ? c : a.intl.string(a.t.NPEUUl),
       maxLength: 40,
       value: null != o ? o : d,
       onChange: function(e) {
-        a(e === d ? void 0 : e)
+        l(e === d ? void 0 : e)
       },
       disabled: u
     })

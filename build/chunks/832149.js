@@ -1,17 +1,17 @@
 /** Chunk was on 64123 **/
 "use strict";
 r.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var n = r(255367);
 r(73800);
 var i = r(481060),
   l = r(215023);
-let o = e => {
+let a = e => {
   let {
     product: t,
-    analyticsLocations: o,
-    overrideTitle: a,
+    analyticsLocations: a,
+    overrideTitle: o,
     overrideDescription: s,
     shouldShowPromotionalExperience: c,
     shouldCheckoutWithOrbs: u,
@@ -42,8 +42,8 @@ let o = e => {
       return e
     }({
       product: t,
-      analyticsLocations: o,
-      overrideTitle: a,
+      analyticsLocations: a,
+      overrideTitle: o,
       overrideDescription: s,
       shouldShowPromotionalExperience: c,
       shouldCheckoutWithOrbs: u,

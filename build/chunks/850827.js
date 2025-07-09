@@ -9,7 +9,7 @@ var i = n(120356),
   o = n(512722),
   a = n.n(o),
   s = n(442837),
-  c = n(481060),
+  c = n(755721),
   u = n(730749),
   d = n(726542),
   p = n(40851),
@@ -35,8 +35,8 @@ var i = n(120356),
   Z = n(477839),
   A = n(388032),
   D = n(603571),
-  k = n(126485);
-let L = e => {
+  L = n(126485);
+let k = e => {
     let {
       user: t,
       color: n,
@@ -64,8 +64,8 @@ let L = e => {
       guildId: p,
       channelId: g,
       source: M,
-      color: R = c.zxk.Colors.WHITE,
-      look: F = c.zxk.Looks.OUTLINED,
+      color: R = c.zx.Colors.WHITE,
+      look: F = c.zx.Looks.OUTLINED,
       type: U,
       onAction: V
     } = e, B = (0, s.e7)([b.default], () => {
@@ -105,7 +105,7 @@ let L = e => {
         return n
       })(Object(G)).forEach(function(e) {
         Object.defineProperty(H, e, Object.getOwnPropertyDescriptor(G, e))
-      }), t = H, (0, r.jsx)(L, {
+      }), t = H, (0, r.jsx)(k, {
         user: i,
         color: R,
         look: F,
@@ -119,7 +119,7 @@ let L = e => {
       align: f.Z.Align.STRETCH,
       direction: W,
       wrap: J ? f.Z.Wrap.WRAP : f.Z.Wrap.NO_WRAP,
-      className: l()(u, k.buttonsWrapper, J ? k.vertical : k.horizontal),
+      className: l()(u, L.buttonsWrapper, J ? L.vertical : L.horizontal),
       children: (() => {
         if ((0, y.Z)(t)) return (0, r.jsx)(j.Z, {
           platform: d.Z.get(N.ABu.XBOX),

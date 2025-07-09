@@ -23,8 +23,8 @@ function h(e, t) {
     hideSimpleEmbedContent: h,
     formatInline: O = !1,
     noStyleAndInteraction: y = !1,
-    isInteracting: j = !1,
-    allowHeading: v = !1,
+    isInteracting: v = !1,
+    allowHeading: j = !1,
     allowList: P = !1,
     allowLinks: x = !1,
     allowDevLinks: C = !1,
@@ -76,8 +76,8 @@ function h(e, t) {
       hideSimpleEmbedContent: h,
       formatInline: O,
       noStyleAndInteraction: y,
-      isInteracting: j,
-      allowHeading: v,
+      isInteracting: v,
+      allowHeading: j,
       allowList: P,
       allowLinks: x,
       allowDevLinks: C,
@@ -86,5 +86,5 @@ function h(e, t) {
       viewingChannelId: S,
       allowGameMentions: N
     })
-  }, [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, h, O, y, j, v, P, x, w, E, C, S, T.enabled, N, Z])
+  }, [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, h, O, y, v, j, P, x, w, E, C, S, T.enabled, N, Z])
 }

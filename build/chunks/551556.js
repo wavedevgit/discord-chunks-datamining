@@ -1,16 +1,16 @@
 /** Chunk was on 85342 **/
 r.d(t, {
-  Z: () => s
+  Z: () => o
 });
 var n = r(255367);
 r(73800);
 var i = r(692547),
-  o = r(325767);
+  a = r(325767);
 
-function s(e) {
+function o(e) {
   var t, r, {
-      width: s = 24,
-      height: a = 24,
+      width: o = 24,
+      height: s = 24,
       color: l = i.Z.unsafe_rawColors.WHITE_500.css,
       backgroundColor: c = i.Z.unsafe_rawColors.BRAND_500.css
     } = e,
@@ -19,13 +19,13 @@ function s(e) {
       var r, n, i = function(e, t) {
         if (null == e) return {};
         var r, n, i = {},
-          o = Object.keys(e);
-        for (n = 0; n < o.length; n++) r = o[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+          a = Object.keys(e);
+        for (n = 0; n < a.length; n++) r = a[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
         return i
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var o = Object.getOwnPropertySymbols(e);
-        for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
+        var a = Object.getOwnPropertySymbols(e);
+        for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
       }
       return i
     }(e, ["width", "height", "color", "backgroundColor"]);
@@ -46,9 +46,9 @@ function s(e) {
       })
     }
     return e
-  }({}, (0, o.Z)(u)), r = r = {
-    width: s,
-    height: a,
+  }({}, (0, a.Z)(u)), r = r = {
+    width: o,
+    height: s,
     viewBox: "0 0 14 14",
     children: [(0, n.jsx)("path", {
       fill: c,

@@ -1,22 +1,22 @@
 /** Chunk was on 30019 **/
 r.d(t, {
-  default: () => x
+  default: () => p
 });
 var n = r(255367),
   a = r(73800),
   i = r(481060),
-  o = r(933557),
-  c = r(925329),
-  s = r(296023),
+  c = r(933557),
+  s = r(925329),
+  o = r(296023),
   l = r(388032),
   d = r(821084);
-let x = e => {
+let p = e => {
   let {
     channel: t,
-    application: x,
-    onClose: p,
+    application: p,
+    onClose: m,
     transitionState: u
-  } = e, m = (0, s.w)(t), b = a.useCallback(() => (p(), (0, i.ZDy)(async () => {
+  } = e, x = (0, o.w)(t), b = a.useCallback(() => (m(), (0, i.ZDy)(async () => {
     let {
       default: e
     } = await r.e("31907").then(r.bind(r, 366854));
@@ -41,7 +41,7 @@ let x = e => {
         return e
       }({}, r), i = i = {
         channelId: t.id,
-        application: x
+        application: p
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -53,7 +53,7 @@ let x = e => {
         Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(i, e))
       }), a))
     }
-  })), [x, t.id, p]), j = (0, o.ZP)(t, !0);
+  })), [p, t.id, m]), j = (0, c.ZP)(t, !0);
   return (0, n.jsxs)(i.Y0X, {
     transitionState: u,
     "aria-label": l.intl.string(l.t.OJknho),
@@ -66,9 +66,9 @@ let x = e => {
       })
     }), (0, n.jsxs)(i.hzk, {
       className: d.content,
-      children: [(0, n.jsx)(c.Z, {
-        game: x,
-        size: c.Z.Sizes.XLARGE
+      children: [(0, n.jsx)(s.Z, {
+        game: p,
+        size: s.Z.Sizes.XLARGE
       }), (0, n.jsxs)("div", {
         className: d.metadata,
         children: [(0, n.jsxs)("div", {
@@ -76,7 +76,7 @@ let x = e => {
           children: [(0, n.jsx)(i.Text, {
             variant: "text-md/semibold",
             color: "header-primary",
-            children: x.name
+            children: p.name
           }), (0, n.jsx)(i.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
@@ -84,27 +84,29 @@ let x = e => {
               channelName: j
             })
           })]
-        }), null != m && (0, n.jsxs)(n.Fragment, {
+        }), null != x && (0, n.jsxs)(n.Fragment, {
           children: [(0, n.jsx)("div", {
             className: d.divider
           }), (0, n.jsx)(i.Text, {
             variant: "text-xs/normal",
             color: "text-muted",
-            children: m
+            children: x
           })]
         })]
       })]
     }), (0, n.jsxs)(i.mzw, {
       children: [(0, n.jsx)(i.zxk, {
-        onClick: b,
-        color: i.zxk.Colors.RED,
-        children: l.intl.string(l.t.LLWaxc)
-      }), (0, n.jsx)(i.zxk, {
-        onClick: p,
-        look: i.zxk.Looks.FILLED,
-        color: i.zxk.Colors.PRIMARY,
+        variant: "critical-primary",
+        text: l.intl.string(l.t.LLWaxc),
+        onClick: b
+      }), (0, n.jsx)("div", {
+        "data-button-hoisted-classname-wrapper": !0,
         className: d.cancelButton,
-        children: l.intl.string(l.t["ETE/oK"])
+        children: (0, n.jsx)(i.zxk, {
+          variant: "secondary",
+          text: l.intl.string(l.t["ETE/oK"]),
+          onClick: m
+        })
       })]
     })]
   })

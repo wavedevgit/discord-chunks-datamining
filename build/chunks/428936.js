@@ -52,9 +52,9 @@ function p(e) {
   } = e, [p, f] = l.useTransition(), h = (0, o.e7)([c.Z], () => c.Z.getEstimatedMemberSearchCountByGuildId(t), [t]), j = (0, o.cj)([c.Z], () => c.Z.getPaginationStateByGuildId(t), [t]), g = (0, s.$j)(t), x = l.useMemo(() => a.LU.map(e => ({
     value: e,
     label: Number(e).toLocaleString()
-  })), []), v = new Intl.NumberFormat(d.intl.currentLocale).format(h), O = d.intl.formatToPlainString(d.t.RNDnQ0, {
+  })), []), v = new Intl.NumberFormat(d.intl.currentLocale).format(h), y = d.intl.formatToPlainString(d.t.RNDnQ0, {
     count: g ? "..." : v
-  }), y = h > j.pageSize || g, _ = h > a.LU["0"];
+  }), O = h > j.pageSize || g, _ = h > a.LU["0"];
   return (0, r.jsxs)("div", {
     className: C.paginationContainer,
     children: [(0, r.jsx)("div", {
@@ -65,7 +65,7 @@ function p(e) {
           color: "text-muted",
           children: d.intl.string(d.t.jNwLu7)
         }), (0, r.jsx)(i.PhF, {
-          "aria-label": O,
+          "aria-label": y,
           className: C.pageSizeInput,
           options: x,
           isSelected: e => e === j.pageSize,
@@ -87,7 +87,7 @@ function p(e) {
             color: "text-muted",
             className: C.pageLabel
           }, e), {
-            children: O
+            children: y
           }))
         })]
       }) : (0, r.jsx)(i.Text, {
@@ -99,7 +99,7 @@ function p(e) {
       })
     }), (0, r.jsx)("div", {
       className: C.pagination,
-      children: y && (0, r.jsx)(i.DsT, {
+      children: O && (0, r.jsx)(i.DsT, {
         className: C.paginationInput,
         totalCount: h,
         pageSize: j.pageSize,

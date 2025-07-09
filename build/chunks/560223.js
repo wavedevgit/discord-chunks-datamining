@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(255367),
   r = n(73800),
   s = n(120356),
-  l = n.n(s),
-  a = n(481060),
+  a = n.n(s),
+  l = n(481060),
   o = n(975298),
   c = n(695349),
   d = n(963590),
@@ -22,15 +22,15 @@ let b = e => {
       leftAlignHeaders: n,
       title: r,
       headerClassname: s
-    } = e, l = (0, i.jsx)(a.X6q, {
+    } = e, a = (0, i.jsx)(l.X6q, {
       variant: "heading-xxl/extrabold",
       color: "header-primary",
       className: null != s ? s : f.heading,
       children: r
     });
-    return null == t ? l : n ? (0, i.jsxs)("div", {
+    return null == t ? a : n ? (0, i.jsxs)("div", {
       className: f.sectionHeader,
-      children: [l, null != t && (0, i.jsx)("div", {
+      children: [a, null != t && (0, i.jsx)("div", {
         className: f.showAllPerksButton,
         children: t
       })]
@@ -38,7 +38,7 @@ let b = e => {
       className: f.container,
       children: (0, i.jsx)("div", {
         className: f.sectionHeaderSeeAll,
-        children: l
+        children: a
       })
     })
   },
@@ -49,13 +49,13 @@ let b = e => {
       noBackground: s = !1,
       leftAlignHeaders: x = !1,
       showAllPerksButton: _,
-      headerClassname: E
-    } = e, j = r.useRef(null), O = n === p.gM.WHATS_NEW, C = (0, u.x)();
+      headerClassname: j
+    } = e, E = r.useRef(null), O = n === p.gM.WHATS_NEW, C = (0, u.x)();
     r.useEffect(() => {
       O && C()
     }, [C, O]);
-    let S = (0, g.re)(O),
-      v = (0, m.Z)(),
+    let v = (0, g.re)(O),
+      S = (0, m.Z)(),
       T = (0, g.mN)(),
       {
         fractionalState: N
@@ -65,7 +65,7 @@ let b = e => {
         location: "WhatsNewSection"
       }),
       A = (0, g.ZM)({
-        perksCards: v,
+        perksCards: S,
         variant: n,
         hideCardsOnNarrowScreen: !1,
         isPremiumSubscriber: T,
@@ -75,20 +75,20 @@ let b = e => {
       }),
       P = A.some(e => null != e.pillText);
     return (0, i.jsxs)("div", {
-      ref: j,
-      className: l()(f.section, {
+      ref: E,
+      className: a()(f.section, {
         [f.centerAlignSection]: !x,
         [f.leftAlignSection]: x
       }, t),
       children: [(0, i.jsx)(b, {
         showAllPerksButton: _,
         leftAlignHeaders: x,
-        title: S.title,
-        headerClassname: E
-      }), (0, i.jsx)(a.Text, {
+        title: v.title,
+        headerClassname: j
+      }), (0, i.jsx)(l.Text, {
         variant: "text-lg/normal",
         color: "header-primary",
-        className: l()(f.subtitle, {
+        className: a()(f.subtitle, {
           [f.subtitle]: null == _ || x,
           [f.subtitleWithButton]: null != _ && !x,
           [f.fullWidth]: O || x,
@@ -96,7 +96,7 @@ let b = e => {
           [f.leftAlignSubtitle]: x,
           [f.centerAlignSubtitle]: !x
         }),
-        children: S.subtitle
+        children: v.subtitle
       }), !x && null != _ && (0, i.jsx)("div", {
         className: f.showAllPerksButtonCenter,
         children: _

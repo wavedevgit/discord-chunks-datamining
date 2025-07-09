@@ -169,13 +169,13 @@ async function D(e, t) {
     features: n
   })
 }
-async function k(e, t) {
+async function A(e, t) {
   return await O.Z.saveGuild(e.id, {
     moderatorReportingEnabled: t
   })
 }
 
-function A(e) {
+function L(e) {
   let {
     guild: t
   } = e, n = (0, o.e7)([x.Z], () => null != t && x.Z.can(I.Plq.MANAGE_GUILD, t), [t]), l = t.features.has(I.oNc.COMMUNITY), s = (0, p.n2)(t.id), [a, d] = i.useState(t.features.has(I.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), u = i.useCallback(async e => {
@@ -215,7 +215,7 @@ function A(e) {
   })
 }
 
-function L(e) {
+function k(e) {
   let {
     guild: t,
     mfaLevel: n
@@ -275,7 +275,7 @@ function M(e) {
   let {
     guild: t
   } = e, n = (0, o.e7)([x.Z], () => null != t && x.Z.can(I.Plq.MANAGE_GUILD, t), [t]), l = t.features.has(I.oNc.REPORT_TO_MOD_PILOT), [s, a] = i.useState((0, f.Z)(t) && l), d = i.useCallback(async e => {
-    a(e), await k(t, e)
+    a(e), await A(t, e)
   }, [t]);
   return l && n ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
@@ -318,11 +318,11 @@ function G() {
     titleClassName: T.headerContainer,
     children: [(0, r.jsx)(M, {
       guild: e
-    }), (0, r.jsx)(A, {
+    }), (0, r.jsx)(L, {
       guild: e
     }), (0, r.jsx)(R, {
       guild: e
-    }), (0, r.jsx)(L, {
+    }), (0, r.jsx)(k, {
       guild: e,
       mfaLevel: t
     }), (0, r.jsx)(Z, {

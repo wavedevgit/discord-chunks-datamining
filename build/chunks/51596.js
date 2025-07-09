@@ -1,5 +1,5 @@
 /** Chunk was on 91081 **/
-n.d(t, {
+n.d(e, {
   $Z: () => k,
   Cp: () => H,
   F_: () => Z,
@@ -25,32 +25,32 @@ var l = n(481060),
   I = n(283595),
   T = n(944486),
   g = n(914010),
-  A = n(626135),
-  S = n(777754),
-  m = n(823385),
+  m = n(626135),
+  A = n(777754),
+  S = n(823385),
   N = n(981631),
   x = n(176505);
 
-function R(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
+function y(t) {
+  for (var e = 1; e < arguments.length; e++) {
+    var n = null != arguments[e] ? arguments[e] : {},
       l = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), l.forEach(function(t) {
+    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
+      return Object.getOwnPropertyDescriptor(n, t).enumerable
+    }))), l.forEach(function(e) {
       var l;
-      l = n[t], t in e ? Object.defineProperty(e, t, {
+      l = n[e], e in t ? Object.defineProperty(t, e, {
         value: l,
         enumerable: !0,
         configurable: !0,
         writable: !0
-      }) : e[t] = l
+      }) : t[e] = l
     })
   }
-  return e
+  return t
 }
-let y = () => Promise.resolve();
-y = n(346329).playApplication;
+let R = () => Promise.resolve();
+R = n(346329).playApplication;
 let b = Object.freeze({
     [_.xQ.USER]: _.h8.USER,
     [_.xQ.TEXT_CHANNEL]: _.h8.TEXT_CHANNEL,
@@ -60,22 +60,22 @@ let b = Object.freeze({
   }),
   O = new RegExp("^".concat(_.xQ.USER, "|").concat(_.xQ.TEXT_CHANNEL, "|").concat(_.xQ.VOICE_CHANNEL, "|\\").concat(_.xQ.GUILD, "|\\").concat(_.xQ.APPLICATION));
 
-function Z(e) {
-  var t;
-  let n, [l, i] = (n = null != (t = b[e.charAt(0)]) ? t : null, [e.replace(O, ""), n]);
+function Z(t) {
+  var e;
+  let n, [l, i] = (n = null != (e = b[t.charAt(0)]) ? e : null, [t.replace(O, ""), n]);
   return {
     query: l,
     queryMode: i
   }
 }
 
-function L(e, t) {
+function L(t, e) {
   let {
     results: n,
     queryMode: l,
     query: i,
     maxQueryLength: c
-  } = m.Z.getProps(), a = g.Z.getGuildId(), r = T.Z.getChannelId(a), o = n[(0, _.gJ)(_.a8.DOWN, -1, n)], s = S.Z.isEmail(i), u = S.Z.isPhoneNumber(i), d = S.Z.isUserTagLike(i), h = null != r && (0, x.AB)(r), p = e => null == e ? null : e.type === _.h8.IN_APP_NAVIGATION ? e.type + "_" + e.record.type : e.type, C = {
+  } = S.Z.getProps(), a = g.Z.getGuildId(), r = T.Z.getChannelId(a), o = n[(0, _.gJ)(_.a8.DOWN, -1, n)], s = A.Z.isEmail(i), u = A.Z.isPhoneNumber(i), d = A.Z.isUserTagLike(i), h = null != r && (0, x.AB)(r), p = t => null == t ? null : t.type === _.h8.IN_APP_NAVIGATION ? t.type + "_" + t.record.type : t.type, C = {
     current_channel_id: h ? void 0 : r,
     current_channel_static_route: h ? r : void 0,
     current_guild_id: a,
@@ -88,24 +88,24 @@ function L(e, t) {
     query: s || u || d ? null : i,
     top_result_type: p(o),
     top_result_score: null != o ? o.score : null,
-    num_results_total: m.Z.getResultTotals(),
-    num_results_users: m.Z.getResultTotals(_.h8.USER),
-    num_results_text_channels: m.Z.getResultTotals(_.h8.TEXT_CHANNEL),
-    num_results_voice_channels: m.Z.getResultTotals(_.h8.VOICE_CHANNEL),
-    num_results_guilds: m.Z.getResultTotals(_.h8.GUILD),
-    num_results_group_dms: m.Z.getResultTotals(_.h8.GROUP_DM)
+    num_results_total: S.Z.getResultTotals(),
+    num_results_users: S.Z.getResultTotals(_.h8.USER),
+    num_results_text_channels: S.Z.getResultTotals(_.h8.TEXT_CHANNEL),
+    num_results_voice_channels: S.Z.getResultTotals(_.h8.VOICE_CHANNEL),
+    num_results_guilds: S.Z.getResultTotals(_.h8.GUILD),
+    num_results_group_dms: S.Z.getResultTotals(_.h8.GROUP_DM)
   };
   if (null != r) {
-    let e = f.Z.getChannel(r);
-    C.current_channel_type = null != e ? e.type : null
+    let t = f.Z.getChannel(r);
+    C.current_channel_type = null != t ? t.type : null
   }
-  if (null != t) {
+  if (null != e) {
     let {
-      type: e,
+      type: t,
       score: l,
       record: i
-    } = t;
-    switch (C.selected_type = p(t), C.selected_score = l, C.selected_index = n.indexOf(t), e) {
+    } = e;
+    switch (C.selected_type = p(e), C.selected_score = l, C.selected_index = n.indexOf(e), t) {
       case _.h8.GUILD:
         C.selected_guild_id = i.id;
         break;
@@ -120,7 +120,7 @@ function L(e, t) {
         C.selected_user_id = i.id
     }
   }
-  A.default.track(e, C)
+  m.default.track(t, C)
 }
 
 function U() {
@@ -130,52 +130,52 @@ function U() {
 }
 
 function k() {
-  let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "KEYBIND",
-    t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "";
-  ! function(e) {
-    let t;
-    if (m.Z.isOpen()) return;
+  let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "KEYBIND",
+    e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "";
+  ! function(t) {
+    let e;
+    if (S.Z.isOpen()) return;
     let n = g.Z.getGuildId(),
       l = T.Z.getChannelId(n);
     if (null != l) {
-      let e = f.Z.getChannel(l);
-      t = null != e ? e.type : null
+      let t = f.Z.getChannel(l);
+      e = null != t ? t.type : null
     }
-    A.default.track(N.rMx.QUICKSWITCHER_OPENED, {
-      source: e,
+    m.default.track(N.rMx.QUICKSWITCHER_OPENED, {
+      source: t,
       current_guild_id: n,
       current_channel_id: l,
-      current_channel_type: t
+      current_channel_type: e
     })
-  }(e), i.Z.dispatch(R({
+  }(t), i.Z.dispatch(y({
     type: "QUICKSWITCHER_SHOW"
-  }, Z(t)))
+  }, Z(e)))
 }
 
 function H() {
   L(N.rMx.QUICKSWITCHER_CLOSED), U()
 }
 
-function v(e) {
-  i.Z.dispatch(R({
+function v(t) {
+  i.Z.dispatch(y({
     type: "QUICKSWITCHER_SEARCH"
-  }, Z(e)))
+  }, Z(t)))
 }
 
-function D(e) {
+function D(t) {
   i.Z.dispatch({
     type: "QUICKSWITCHER_SELECT",
-    selectedIndex: e
+    selectedIndex: t
   })
 }
 
-function B(e) {
-  let t, n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-  U(), (0, l.pTH)(), L(N.rMx.QUICKSWITCHER_RESULT_SELECTED, e);
+function B(t) {
+  let e, n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+  U(), (0, l.pTH)(), L(N.rMx.QUICKSWITCHER_RESULT_SELECTED, t);
   let {
     type: E,
     record: T
-  } = e, g = {
+  } = t, g = {
     page: N.ZY5.QUICK_SWITCHER
   };
   switch (E) {
@@ -185,7 +185,7 @@ function B(e) {
       });
       break;
     case _.h8.TEXT_CHANNEL:
-      null != (t = f.Z.getChannel(T.id)) && (0, h.Kh)(t.id, {
+      null != (e = f.Z.getChannel(T.id)) && (0, h.Kh)(e.id, {
         state: {
           analyticsSource: g
         },
@@ -193,7 +193,7 @@ function B(e) {
       });
       break;
     case _.h8.VOICE_CHANNEL:
-      null != (t = f.Z.getChannel(T.id)) && (n ? a.Z.updateChatOpen(T.id, !0) : o.default.selectVoiceChannel(T.id), (0, h.Kh)(t.id, {
+      null != (e = f.Z.getChannel(T.id)) && (n ? a.Z.updateChatOpen(T.id, !0) : o.default.selectVoiceChannel(T.id), (0, h.Kh)(e.id, {
         state: {
           analyticsSource: g
         },
@@ -212,8 +212,8 @@ function B(e) {
       }), r.Z.channelListScrollTo(N.ME, T.id);
       break;
     case _.h8.APPLICATION:
-      let A = I.Z.getActiveLibraryApplication(T.id);
-      y(T.id, A, {
+      let m = I.Z.getActiveLibraryApplication(T.id);
+      R(T.id, m, {
         analyticsParams: {
           source: N.Sbl.QUICK_SWITCHER,
           location: N.Sbl.QUICK_SWITCHER
@@ -226,11 +226,11 @@ function B(e) {
       });
       break;
     case _.h8.IN_APP_NAVIGATION:
-      if (e.record.type === u.Ky.SETTINGS) {
-        let t = (0, C.default)(e.record.path);
-        null != t && s.Z.open(t.section, t.subsection, {
+      if (t.record.type === u.Ky.SETTINGS) {
+        let e = (0, C.default)(t.record.path);
+        null != e && s.Z.open(e.section, e.subsection, {
           openWithoutBackstack: !1,
-          impressionSource: t.source
+          impressionSource: e.source
         })
       } else(0, d.Z)(T.path, {
         navigationReplace: !0
@@ -238,6 +238,6 @@ function B(e) {
   }
   i.Z.dispatch({
     type: "QUICKSWITCHER_SWITCH_TO",
-    result: e
+    result: t
   })
 }

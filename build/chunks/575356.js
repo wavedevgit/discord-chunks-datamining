@@ -3,10 +3,10 @@ let i;
 n.d(t, {
   Z: () => u
 });
-var r, s, l, a = n(442837),
+var r, s, a, l = n(442837),
   o = n(570140);
 let c = !1;
-class d extends(l = a.ZP.Store) {
+class d extends(a = l.ZP.Store) {
   get harvestType() {
     return i
   }

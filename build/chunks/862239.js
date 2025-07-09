@@ -109,7 +109,7 @@ function u(e) {
   })
 }
 
-function f(e) {
+function p(e) {
   let {
     benefit: t
   } = e;
@@ -124,7 +124,7 @@ function f(e) {
   })
 }
 
-function p(e) {
+function f(e) {
   let {
     listing: t
   } = e;
@@ -143,7 +143,7 @@ function p(e) {
       variant: "text-xs/semibold",
       className: m.benefitTypeHeader,
       children: d.intl.string(d.t.XqWRLi)
-    }), t.additional_perks.map((e, t) => (0, a.jsx)(f, {
+    }), t.additional_perks.map((e, t) => (0, a.jsx)(p, {
       benefit: e.name
     }, t))]
   })
@@ -164,15 +164,15 @@ function _(e) {
         listing: r
       }), (0, a.jsx)("div", {
         className: m.divider
-      }), (0, a.jsx)(p, {
+      }), (0, a.jsx)(f, {
         listing: r
       })]
     }), (0, a.jsx)(l.zxk, {
-      size: l.zxk.Sizes.MEDIUM,
+      variant: "primary",
+      text: d.intl.string(d.t["1W7mCg"]),
       onClick: () => {
         n(t)
-      },
-      children: d.intl.string(d.t["1W7mCg"])
+      }
     })]
   })
 }

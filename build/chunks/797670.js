@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(255367),
   r = n(120356),
   s = n.n(r),
-  l = n(481060),
-  a = n(686546),
+  a = n(481060),
+  l = n(686546),
   o = n(601964),
   c = n(587015);
 
@@ -15,9 +15,9 @@ function d(e) {
     guild: t,
     size: n
   } = e, r = (0, o.EB)(t, n, !1, !0), d = (0, o.gM)(t);
-  return (0, i.jsx)(a.ZP, {
+  return (0, i.jsx)(l.ZP, {
     className: c.iconContainer,
-    mask: a.ZP.Masks.SQUIRCLE,
+    mask: l.ZP.Masks.SQUIRCLE,
     width: n,
     height: n,
     children: null != r ? (0, i.jsx)("img", {
@@ -27,7 +27,7 @@ function d(e) {
       width: n
     }) : (0, i.jsx)("div", {
       className: c.textContainer,
-      children: (0, i.jsx)(l.Text, {
+      children: (0, i.jsx)(a.Text, {
         className: s()({
           [c.smallText]: 20 === n
         }),

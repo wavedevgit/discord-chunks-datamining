@@ -41,23 +41,23 @@ function y(e) {
   } = (0, g.pH)(P), D = {
     [p.vh.MEMBERS]: O.intl.string(O.t.sx4E5u),
     [p.vh.CONTENT]: O.intl.string(O.t.fphZb2)
-  }, k = i.useMemo(() => Object.values(null != Z ? Z : {}).flat().filter(d.lm), [Z]), A = {
+  }, A = i.useMemo(() => Object.values(null != Z ? Z : {}).flat().filter(d.lm), [Z]), L = {
     isInEditMode: w,
     setEditingRule: E
-  }, L = i.useRef(A);
+  }, k = i.useRef(L);
   i.useEffect(() => {
-    L.current = A
+    k.current = L
   }), i.useEffect(() => {
     let {
       isInEditMode: e,
       setEditingRule: t
-    } = L.current;
+    } = k.current;
     e && t(null)
   }, [P]);
   let M = i.useCallback((e, t) => {
       if (null != e) {
         var n, r;
-        return null != (r = null == (n = k.find(t => {
+        return null != (r = null == (n = A.find(t => {
           let {
             id: n
           } = t;
@@ -65,7 +65,7 @@ function y(e) {
         })) ? void 0 : n.name) ? r : null
       }
       return null != t ? p.I6[t].getDefaultRuleName() : null
-    }, [k]),
+    }, [A]),
     G = i.useMemo(() => {
       var e, t;
       return M(null != (e = null == I ? void 0 : I.id) ? e : null, null != (t = null == I ? void 0 : I.triggerType) ? t : null)
@@ -150,7 +150,7 @@ function y(e) {
       className: C.explicitContentFilterSection
     }), (0, r.jsx)(x.Z, {
       guildId: P,
-      existingRules: k
+      existingRules: A
     }), w && (0, r.jsx)("div", {
       className: C.endSpacer
     })]

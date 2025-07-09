@@ -6,7 +6,7 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(442837),
-  a = n(481060),
+  a = n(755721),
   o = n(726542),
   s = n(906732),
   l = n(231757),
@@ -43,7 +43,7 @@ function h(e) {
     text: p.intl.formatToPlainString(p.t.XWSHTU, {
       platform: o.Z.get(t).name
     }),
-    size: a.PhG.TINY,
+    size: a.Ph.TINY,
     themeColor: "secondary",
     onClick: E
   }) : (0, r.jsx)(d.tG, {

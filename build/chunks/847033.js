@@ -39,15 +39,15 @@ function C(e) {
     guildId: o
   } = e, P = (0, a.e7)([T.Z], () => T.Z.getGuild(o)), C = (0, a.e7)([E.Z], () => E.Z.isViewingServerShop(o)), y = (0, N.g)(P, "guild_shop_page"), b = (0, S.RF)(o, "guild_shop_page"), D = (null == P ? void 0 : P.features.has(R.oNc.PRODUCTS_AVAILABLE_FOR_PURCHASE)) === !0, h = (0, _.mY)(null == P ? void 0 : P.id), U = null == (t = (0, d.YB)(o)) ? void 0 : t.server_shop_tab_order, M = [], v = f.y.GUILD_SHOP_FULL_PREVIEW;
   C || D && h ? (M.push(U === A.a3.PRODUCTS_FIRST ? f.y.GUILD_PRODUCTS : f.y.GUILD_ROLE_SUBSCRIPTIONS), M.push(U === A.a3.PRODUCTS_FIRST ? f.y.GUILD_ROLE_SUBSCRIPTIONS : f.y.GUILD_PRODUCTS), v = M[0]) : D && !h ? (M.push(f.y.GUILD_PRODUCTS), v = f.y.GUILD_PRODUCTS) : !D && h && (M.push(f.y.GUILD_ROLE_SUBSCRIPTIONS), v = f.y.GUILD_ROLE_SUBSCRIPTIONS, y && M.push(f.y.GUILD_PRODUCTS_PREVIEW)), l = null != l ? l : v;
-  let [k, L] = i.useState(l), Z = y && !(h && b) || k === f.y.GUILD_PRODUCTS_PREVIEW;
+  let [L, Z] = i.useState(l), j = y && !(h && b) || L === f.y.GUILD_PRODUCTS_PREVIEW;
   return i.useEffect(() => {
-    L(l)
+    Z(l)
   }, [l]), (0, r.jsx)(g.Provider, {
     value: {
-      selectedTab: k,
-      setSelectedTab: L,
+      selectedTab: L,
+      setSelectedTab: Z,
       categoryTabs: M,
-      isPhantomPreview: Z,
+      isPhantomPreview: j,
       handlePreviewDismiss: e => {
         (0, u.Q3)(c.z.SERVER_SHOP_PHANTOM_PREVIEW);
         let t = function(e) {
@@ -68,7 +68,7 @@ function C(e) {
           }
           return e
         }({}, (0, s.hH)(o));
-        if (k === f.y.GUILD_PRODUCTS_PREVIEW) e.stopPropagation(), L(f.y.GUILD_ROLE_SUBSCRIPTIONS), t.action_taken = m.mz.DISMISS_TAB_PREVIEW;
+        if (L === f.y.GUILD_PRODUCTS_PREVIEW) e.stopPropagation(), Z(f.y.GUILD_ROLE_SUBSCRIPTIONS), t.action_taken = m.mz.DISMISS_TAB_PREVIEW;
         else {
           var n;
           (0, O.dL)(R.Z5c.CHANNEL(o, null == (n = I.ZP.getDefaultChannel(o)) ? void 0 : n.id)), t.action_taken = m.mz.DISMISS_FULL_PREVIEW

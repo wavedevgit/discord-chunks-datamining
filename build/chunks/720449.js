@@ -3,8 +3,8 @@ n.d(e, {
   Z: () => d
 }), n(781311);
 var l = n(913527),
-  r = n.n(l),
-  a = n(381499),
+  a = n.n(l),
+  r = n(381499),
   i = n(695346),
   o = n(626135),
   s = n(337953),
@@ -26,11 +26,11 @@ function d(t) {
   {
     let t = i.Ok.updateSetting({
       text: p.length > 0 ? p : "",
-      expiresAtMs: null != l && l !== u.FO.DONT_CLEAR ? String(r()().add((0, s.Z)(l), "ms").toDate().getTime()) : "0",
+      expiresAtMs: null != l && l !== u.FO.DONT_CLEAR ? String(a()().add((0, s.Z)(l), "ms").toDate().getTime()) : "0",
       emojiId: null != n && null != n.id ? n.id : "0",
       emojiName: null != n ? n.name : "",
-      createdAtMs: String(null != m ? m : r()().toDate().getTime()),
-      label: null != h ? a.Gm.create({
+      createdAtMs: String(null != m ? m : a()().toDate().getTime()),
+      label: null != h ? r.Gm.create({
         value: h
       }) : void 0
     });

@@ -27,26 +27,26 @@ var r = n(255367),
   P = n(915298);
 
 function C(e) {
-  return e.isActiveThread() ? (0, r.jsx)(I, {
+  return e.isActiveThread() ? (0, r.jsx)(w, {
     channel: e
   }) : (0, r.jsx)(S, {
     channel: e
   })
 }
 
-function I(e) {
+function w(e) {
   let {
     channel: t
   } = e, n = (0, l.e7)([b.Z], () => b.Z.getMostRecentMessage(t.id));
-  return null == n ? (0, r.jsx)(O, {
+  return null == n ? (0, r.jsx)(I, {
     channel: t
-  }) : (0, r.jsx)(w, {
+  }) : (0, r.jsx)(O, {
     channel: t,
     message: n
   })
 }
 
-function O(e) {
+function I(e) {
   let {
     channel: t
   } = e, n = (0, N.Ok)(t);
@@ -58,7 +58,7 @@ function O(e) {
   })
 }
 
-function w(e) {
+function O(e) {
   let {
     channel: t,
     message: n
@@ -83,11 +83,11 @@ function w(e) {
       isBlocked: j.Z.isBlockedForMessage(n),
       isIgnored: j.Z.isIgnoredForMessage(n)
     }), [n]),
-    I = (0, d.p)(),
-    O = a.useMemo(() => {
+    w = (0, d.p)(),
+    I = a.useMemo(() => {
       let e = null != n.content && "" !== n.content ? (0, u.ZP)(n, {
           formatInline: !0,
-          shouldFilterKeywords: I
+          shouldFilterKeywords: w
         }).content : null,
         {
           contentPlaceholder: t,
@@ -104,7 +104,7 @@ function w(e) {
           children: t
         }), l]
       })
-    }, [n, y, C, I]);
+    }, [n, y, C, w]);
   return (0, r.jsxs)(s.Text, {
     className: P.subtext,
     variant: "text-sm/normal",
@@ -118,7 +118,7 @@ function w(e) {
       color: x,
       roleColors: b,
       className: P.authorName
-    }), ":\xa0", O, "\xa0 • \xa0", (0, N.Ye)(Z.default.extractTimestamp(n.id))]
+    }), ":\xa0", I, "\xa0 • \xa0", (0, N.Ye)(Z.default.extractTimestamp(n.id))]
   })
 }
 

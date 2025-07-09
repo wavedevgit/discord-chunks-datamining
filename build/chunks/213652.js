@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(442837),
-  o = n(481060),
-  a = n(906732),
+  a = n(481060),
+  o = n(906732),
   s = n(435064),
   c = n(39604),
   u = n(441167),
@@ -24,7 +24,7 @@ function y(e) {
     channel: t
   } = e, {
     parentAnalyticsLocation: n
-  } = (0, a.ZP)(), y = (0, l.e7)([f.Z], () => f.Z.getSelectedParticipant(t.id)), C = (null == y ? void 0 : y.type) === g.fO.STREAM, x = (0, l.e7)([p.Z], () => C ? p.Z.getActiveStreamForStreamKey(y.id) : null), {
+  } = (0, o.ZP)(), y = (0, l.e7)([f.Z], () => f.Z.getSelectedParticipant(t.id)), C = (null == y ? void 0 : y.type) === g.fO.STREAM, x = (0, l.e7)([p.Z], () => C ? p.Z.getActiveStreamForStreamKey(y.id) : null), {
     ignoreSenderPreference: v
   } = u.Z.useExperiment({
     location: "ActionBarClipsButton"
@@ -38,7 +38,7 @@ function y(e) {
     isAtMaxSavingClipOperations: s.Z.getIsAtMaxSaveClipOperations()
   })), E = s.Z.getSettings().clipsEnabled, S = (null == x ? void 0 : x.ownerId) === h.default.getId(), I = !E || !(S || O) || j || null == y, P = i.useCallback(e => {
     var t, n;
-    return (0, r.jsx)(o.xmR, (t = function(e) {
+    return (0, r.jsx)(a.xmR, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);

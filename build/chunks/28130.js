@@ -79,7 +79,7 @@ function Z(e) {
   })
 }
 
-function k(e) {
+function D(e) {
   let {
     guildFeature: t,
     guild: n
@@ -96,7 +96,7 @@ function k(e) {
   })
 }
 
-function D(e) {
+function k(e) {
   let {
     guildFeature: t,
     guild: n
@@ -140,7 +140,7 @@ function I(e) {
           })
         }), n]
       })]
-    }), c && (0, r.jsx)(D, {
+    }), c && (0, r.jsx)(k, {
       guild: a,
       guildFeature: l
     })]
@@ -158,7 +158,7 @@ function L(e) {
     handleFileSizeError: u
   } = e, d = (0, E.GY)(n), p = (0, E.C6)(n, {
     isGIF: !1
-  }), g = k({
+  }), g = D({
     guildFeature: p,
     guild: l
   });
@@ -203,7 +203,7 @@ function M(e) {
     onMouseLeave: s
   } = (0, j.Z)(), c = (0, E.Kq)(t), u = (0, E.C6)(t, {
     isGIF: !0
-  }), d = k({
+  }), d = D({
     guildFeature: u,
     guild: n
   });
@@ -244,8 +244,8 @@ function U(e) {
     analyticsLocation: E,
     analyticsLocations: F = [],
     imageSpecifications: Z,
-    modalTitle: k = P.intl.string(P.t.DToW4e),
-    uploadOptionTitle: D = P.intl.string(P.t["MsUY/f"]),
+    modalTitle: D = P.intl.string(P.t.DToW4e),
+    uploadOptionTitle: k = P.intl.string(P.t["MsUY/f"]),
     allowRecentAvatarsSelection: I = !0
   } = e, U = (0, s.e7)([A.default], () => A.default.getCurrentUser()), B = (0, s.e7)([x.Z], () => x.Z.getGuildId()), H = (0, s.e7)([y.Z], () => y.Z.getGuild(B)), z = (0, o.vRw)(), V = d === T.pC.AVATAR || d === T.pC.BANNER, G = !v.ZP.canUseAnimatedAvatar(U) && d === T.pC.AVATAR, q = (0, p.M)(!V), W = (0, m.T)({
     location: "NewSelectImageModal"
@@ -337,7 +337,7 @@ function U(e) {
       separator: !1,
       children: [(0, r.jsx)(o.X6q, {
         variant: "heading-lg/semibold",
-        children: k
+        children: D
       }), (0, r.jsx)(o.olH, {
         onClick: a,
         className: R.modalCloseButton
@@ -351,7 +351,7 @@ function U(e) {
           "aria-label": P.intl.string(P.t.iBnqtb),
           children: [(0, r.jsx)("li", {
             children: (0, r.jsx)(L, {
-              label: D,
+              label: k,
               uploadType: d,
               guild: H,
               handleOpenImageEditingModal: K,

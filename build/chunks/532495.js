@@ -6,8 +6,8 @@ var i = n(255367);
 n(73800);
 var r = n(512722),
   s = n.n(r),
-  l = n(442837),
-  a = n(809206),
+  a = n(442837),
+  l = n(809206),
   o = n(634894),
   c = n(295474),
   d = n(74469),
@@ -20,12 +20,12 @@ var r = n(512722),
   b = n(872736),
   x = n(818420),
   _ = n(134795),
-  E = n(610966),
-  j = n(513901),
+  j = n(610966),
+  E = n(513901),
   O = n(451392),
   C = n(906364),
-  S = n(643879),
-  v = n(350327),
+  v = n(643879),
+  S = n(350327),
   T = n(621853),
   N = n(687158),
   I = n(25990),
@@ -36,11 +36,11 @@ var r = n(512722),
 
 function D() {
   var e, t, n, r, D, Z, w, k;
-  let L = (0, l.e7)([y.default], () => {
+  let L = (0, a.e7)([y.default], () => {
       let e = y.default.getCurrentUser();
       return s()(null != e, "DefaultCustomizationSections: user cannot be undefined"), e
     }),
-    B = (0, l.e7)([T.Z], () => T.Z.getUserProfile(L.id)),
+    B = (0, a.e7)([T.Z], () => T.Z.getUserProfile(L.id)),
     {
       pendingAvatar: M,
       pendingGlobalName: U,
@@ -49,10 +49,10 @@ function D() {
       pendingPronouns: F,
       pendingAccentColor: H,
       pendingThemeColors: z,
-      pendingLegacyUsernameDisabled: Y,
-      pendingPrimaryGuildId: W,
+      pendingLegacyUsernameDisabled: W,
+      pendingPrimaryGuildId: Y,
       errors: K
-    } = (0, l.cj)([I.Z], () => {
+    } = (0, a.cj)([I.Z], () => {
       var e, t;
       let n = I.Z.getAllPending(),
         i = I.Z.getErrors();
@@ -86,7 +86,7 @@ function D() {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
       }), e
     }),
-    q = (0, S.SD)({
+    q = (0, v.SD)({
       userId: L.id,
       image: M
     }),
@@ -114,15 +114,15 @@ function D() {
       errors: ei,
       currentGlobalName: L.globalName,
       pendingGlobalName: U,
-      onGlobalNameChange: a.W0
+      onGlobalNameChange: l.W0
     }), (0, i.jsx)(C.Z, {
       sectionTitle: P.intl.string(P.t["+T3RIy"]),
       errors: K.pronouns,
-      onPronounsChange: v.ID,
+      onPronounsChange: S.ID,
       pendingPronouns: F,
       currentPronouns: null != (w = null == B ? void 0 : B.pronouns) ? w : ""
     }, "pronouns"), (0, i.jsx)(h.Z, {
-      onAvatarChange: a.I5,
+      onAvatarChange: l.I5,
       showRemoveAvatarButton: J,
       errors: K.avatar,
       sectionTitle: P.intl.string(P.t.lqaIxM),
@@ -132,27 +132,27 @@ function D() {
       sectionTitle: P.intl.string(P.t["7v0T9P"])
     }, "decoration"), (0, i.jsx)(x.Z, {
       user: L
-    }), (0, i.jsx)(j.Z, {
+    }), (0, i.jsx)(E.Z, {
       user: L,
       sectionTitle: P.intl.string(P.t.wR5wOj)
     }, "effect"), Q ? (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(_.Z, {
         showRemoveBannerButton: $,
         errors: K.banner,
-        onBannerChange: v.g_,
+        onBannerChange: S.g_,
         forcedDivider: !0
       }, "banner"), (0, i.jsx)(O.Z, {
         user: L,
         pendingAvatarSrc: q,
         pendingColors: z,
-        onThemeColorsChange: v.z5,
+        onThemeColorsChange: S.z5,
         forcedDivider: !0
       })]
-    }) : (0, i.jsx)(E.Z, {
+    }) : (0, i.jsx)(j.Z, {
       user: L,
       savedUserColor: null == B ? void 0 : B.accentColor,
       pendingColor: H,
-      setPendingAccentColor: v.CM
+      setPendingAccentColor: S.CM
     }, "color"), (0, i.jsx)(p.Z, {
       sectionTitle: P.intl.string(P.t.NepzEx),
       errors: er,
@@ -161,11 +161,11 @@ function D() {
       currentBio: null != (k = null == B ? void 0 : B.bio) ? k : ""
     }, "bio"), es.length > 0 && (0, i.jsx)(d.Z, {
       availablePrimaryGuilds: es,
-      pendingPrimaryGuildId: W,
-      onChange: e => (0, a.s4)(e)
+      pendingPrimaryGuildId: Y,
+      onChange: e => (0, l.s4)(e)
     }), null != en && (0, i.jsx)(b.Z, {
       legacyUsername: en,
-      pendingLegacyUsernameDisabled: Y
+      pendingLegacyUsernameDisabled: W
     }, "legacy_username")]
   })
 }

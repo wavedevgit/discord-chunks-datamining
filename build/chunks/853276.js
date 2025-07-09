@@ -157,15 +157,15 @@ function h(e) {
       }
       C(!1), l(e)
     }, [t, y, l, p]),
-    k = i.useCallback(e => {
+    A = i.useCallback(e => {
       let n = t.trim().length <= 0;
       u.ye.has(e.key) ? (e.preventDefault(), e.stopPropagation(), D(!0)) : "Backspace" === e.key && n && (e.preventDefault(), e.stopPropagation(), D(!0))
     }, [D, t]),
-    A = i.useCallback(e => {
+    L = i.useCallback(e => {
       let t = e.metaKey || e.ctrlKey;
       g(t), t ? e.preventDefault() : C(!0), e.stopPropagation()
     }, [g]),
-    L = i.useCallback(e => {
+    k = i.useCallback(e => {
       p()
     }, [p]);
   return (0, r.jsx)("div", {
@@ -182,7 +182,7 @@ function h(e) {
       children: [(0, r.jsxs)(o.P3F, {
         tag: "div",
         onBlur: () => D(!1),
-        onClick: A,
+        onClick: L,
         ignoreKeyPress: !0,
         onMouseEnter: () => P(!0),
         onMouseLeave: () => P(!1),
@@ -198,7 +198,7 @@ function h(e) {
           }),
           ref: _,
           onChange: Z,
-          onKeyDownCapture: k,
+          onKeyDownCapture: A,
           value: t,
           style: {
             width: R > 0 ? R : "calc(".concat(t.length, "ch + 10px)")
@@ -213,7 +213,7 @@ function h(e) {
         })]
       }), !O && (0, r.jsx)(o.P3F, {
         className: m.closeIconContainer,
-        onClick: L,
+        onClick: k,
         children: (0, r.jsx)(o.Dio, {
           size: "xxs",
           color: "currentColor",

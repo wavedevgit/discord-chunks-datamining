@@ -95,8 +95,8 @@ function D(e) {
     onVideoResize: T,
     blocked: D,
     ignored: M,
-    noVideoRender: k = !1,
-    pulseSpeakingIndicator: L = !1,
+    noVideoRender: L = !1,
+    pulseSpeakingIndicator: k = !1,
     inOverlayPopout: U = !1,
     paused: F = !1
   } = e, V = y.Z.getVideoComponent(), W = (0, o.e7)([b.default], () => b.default.getId()), {
@@ -125,7 +125,7 @@ function D(e) {
       user: n
     } = eo.current;
     e.isGuildStageVoice() && !K && (null == t ? void 0 : t.id) === n.id && s.Z.selectParticipant(e.id, null)
-  }, [K]), i && !J && !k && K && !S && null != V && y.Z.supports(A.AN.VIDEO)) ? null != el && null == ei ? (0, r.jsx)(I.Z, {
+  }, [K]), i && !J && !L && K && !S && null != V && y.Z.supports(A.AN.VIDEO)) ? null != el && null == ei ? (0, r.jsx)(I.Z, {
     avError: el,
     userId: t.id,
     width: u,
@@ -151,7 +151,7 @@ function D(e) {
       avatarDecoration: en,
       backgroundSrc: H.getAvatarURL(n.guild_id, 80),
       size: ee,
-      pulseSpeakingIndicator: L,
+      pulseSpeakingIndicator: k,
       speaking: z,
       userId: H.id
     })

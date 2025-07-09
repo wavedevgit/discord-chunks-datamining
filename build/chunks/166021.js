@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(255367),
   r = n(73800),
   s = n(120356),
-  l = n.n(s),
-  a = n(264738),
+  a = n.n(s),
+  l = n(264738),
   o = n(481060),
   c = n(51636),
   d = n(687588);
@@ -30,10 +30,10 @@ let u = e => {
     x = r.useCallback(e => ({
       x: (e - m) * 100
     }), [m]),
-    [_, E] = (0, o.bYB)(t.length, x);
+    [_, j] = (0, o.bYB)(t.length, x);
   return r.useEffect(() => {
-    E(x)
-  }, [E, x]), (0, i.jsx)("div", {
+    j(x)
+  }, [j, x]), (0, i.jsx)("div", {
     className: n,
     children: (0, i.jsxs)("div", {
       className: d.cardContainer,
@@ -41,7 +41,7 @@ let u = e => {
         onClick: b ? () => {
           p(e => 0 === e ? f - g : e - 1)
         } : void 0,
-        className: l()({
+        className: a()({
           [d.leftArrow]: b,
           [d.inactiveArrow]: !b
         }),
@@ -52,11 +52,11 @@ let u = e => {
       }), (0, i.jsx)("div", {
         className: d.cardInnerContainer,
         children: _.map((e, n) => {
-          var r, l;
+          var r, a;
           let {
             x: o
           } = e;
-          return (0, i.jsx)(a.animated.div, {
+          return (0, i.jsx)(l.animated.div, {
             className: d.card,
             style: {
               transform: null == o ? void 0 : o.to(e => "translate3d(".concat(e, "%,0,0)"))
@@ -78,17 +78,17 @@ let u = e => {
                 })
               }
               return e
-            }({}, t[n]), l = l = {
+            }({}, t[n]), a = a = {
               cardType: s
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {
                 var i = Object.getOwnPropertySymbols(e);
                 n.push.apply(n, i)
               }
               return n
-            })(Object(l)).forEach(function(e) {
-              Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(l, e))
+            })(Object(a)).forEach(function(e) {
+              Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(a, e))
             }), r), "".concat(t[n].name, "_").concat(n, "_perks_card"))
           }, "".concat(t[n].name, "_").concat(n, "_animated_div"))
         })

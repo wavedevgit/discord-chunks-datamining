@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(255367),
   r = n(73800),
   s = n(120356),
-  l = n.n(s),
-  a = n(544891),
+  a = n.n(s),
+  l = n(544891),
   o = n(780384),
   c = n(481060),
   d = n(410030),
@@ -19,8 +19,8 @@ var i = n(255367),
   b = n(981631),
   x = n(388032),
   _ = n(828576),
-  E = n(982404),
-  j = n(299156);
+  j = n(982404),
+  E = n(299156);
 let O = function(e) {
   let {
     premiumSubscription: t,
@@ -28,9 +28,9 @@ let O = function(e) {
     onClose: s,
     onConfirm: O,
     userDiscountOffer: C
-  } = e, [S, v] = r.useState(!1), [T, N] = r.useState(!1), I = async e => {
+  } = e, [v, S] = r.useState(!1), [T, N] = r.useState(!1), I = async e => {
     try {
-      N(!0), v(!1), await a.tn.post({
+      N(!0), S(!1), await l.tn.post({
         url: b.ANM.USER_OFFER_REDEEM,
         body: {
           user_discount_offer_id: e
@@ -38,10 +38,10 @@ let O = function(e) {
         rejectWithError: !0
       }), O()
     } catch (e) {
-      v(!0)
+      S(!0)
     }
     N(!1)
-  }, y = (0, d.ZP)(), A = (0, o.wj)(y) ? E : j, P = (0, g._)(t, f.Xh.PREMIUM_MONTH_TIER_2, C), R = (0, m.aS)(f.Xh.PREMIUM_MONTH_TIER_2, !1, !1, {
+  }, y = (0, d.ZP)(), A = (0, o.wj)(y) ? j : E, P = (0, g._)(t, f.Xh.PREMIUM_MONTH_TIER_2, C), R = (0, m.aS)(f.Xh.PREMIUM_MONTH_TIER_2, !1, !1, {
     currency: t.currency,
     paymentSourceId: t.paymentSourceId
   }), D = (0, p.T4)(R.amount, R.currency);
@@ -85,7 +85,7 @@ let O = function(e) {
               helpdeskArticle: u.Z.getArticleURL(b.BhN.PAID_TERMS)
             })
           })
-        }), S && (0, i.jsx)("div", {
+        }), v && (0, i.jsx)("div", {
           className: _.redemptionFailedMessage,
           children: (0, i.jsx)(c.Text, {
             variant: "text-xs/semibold",
@@ -93,19 +93,20 @@ let O = function(e) {
             children: x.intl.string(x.t.AD6odn)
           })
         }), (0, i.jsxs)("div", {
-          className: l()(_.confirmDiscountButtons, {
-            [_.confrimDiscountsButtonsError]: S,
-            [_.confrimDiscountsButtonsNoError]: !S
+          className: a()(_.confirmDiscountButtons, {
+            [_.confrimDiscountsButtonsError]: v,
+            [_.confrimDiscountsButtonsNoError]: !v
           }),
-          children: [(0, i.jsx)(c.zxk, {
-            look: c.iLD.LINK,
-            onClick: () => s(),
-            children: x.intl.string(x.t.zl7LZm)
+          children: [(0, i.jsx)(c.Avr, {
+            variant: "primary",
+            text: x.intl.string(x.t.zl7LZm),
+            onClick: () => s()
           }), (0, i.jsx)(c.zxk, {
-            size: c.PhG.SMALL,
-            submitting: T,
-            onClick: () => I(C.id),
-            children: x.intl.string(x.t.CKSuZG)
+            variant: "primary",
+            size: "sm",
+            text: x.intl.string(x.t.CKSuZG),
+            loading: T,
+            onClick: () => I(C.id)
           })]
         })]
       })

@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(597312),
-  o = n(481060),
-  a = n(727637),
+  a = n(755721),
+  o = n(727637),
   s = n(410030),
   c = n(100527),
   u = n(906732),
@@ -55,23 +55,23 @@ function w(e) {
   let {
     user: t,
     channel: n
-  } = e, w = __OVERLAY__ || !(0, d.Z)(t.id), R = (0, g.ZP)(t.id), k = (0, s.ZP)(), M = i.useRef(Date.now()), {
-    analyticsLocations: D
-  } = (0, u.ZP)(c.Z.USER_PROFILE_SIDEBAR), L = (0, f.ZB)({
+  } = e, w = __OVERLAY__ || !(0, d.Z)(t.id), R = (0, g.ZP)(t.id), M = (0, s.ZP)(), D = i.useRef(Date.now()), {
+    analyticsLocations: L
+  } = (0, u.ZP)(c.Z.USER_PROFILE_SIDEBAR), k = (0, f.ZB)({
     layout: "SIDEBAR",
     userId: t.id,
     channelId: n.id
-  }), U = i.useRef(null), B = (0, a.Z)(U), F = e => {
+  }), U = i.useRef(null), B = (0, o.Z)(U), F = e => {
     (0, b.openUserProfileModal)(A({
-      sourceAnalyticsLocations: D,
+      sourceAnalyticsLocations: L,
       hideRestrictedProfile: !0
-    }, L, e))
+    }, k, e))
   };
   return (0, r.jsx)(u.Gt, {
-    value: D,
+    value: L,
     children: (0, r.jsx)(f.Mt, {
-      value: L,
-      openedAt: M.current,
+      value: k,
+      openedAt: D.current,
       fetchStartedAt: null == R ? void 0 : R.fetchStartedAt,
       fetchEndedAt: null == R ? void 0 : R.fetchEndedAt,
       isLoaded: null == R ? void 0 : R.isLoaded,
@@ -80,7 +80,7 @@ function w(e) {
         user: t,
         displayProfile: R,
         themeType: P.lY.SIDEBAR,
-        themeOverride: k,
+        themeOverride: M,
         children: [(0, r.jsxs)(l.u2, {
           children: [(0, r.jsx)(I.Z, {
             children: (0, r.jsx)(S.Z, {
@@ -133,16 +133,16 @@ function w(e) {
           })]
         }), !w && (0, r.jsx)("footer", {
           className: N.footer,
-          children: (0, r.jsx)(o.zxk, {
+          children: (0, r.jsx)(a.zx, {
             fullWidth: !0,
-            size: o.zxk.Sizes.LARGE,
-            look: o.zxk.Looks.BLANK,
+            size: a.zx.Sizes.LARGE,
+            look: a.zx.Looks.BLANK,
             color: N.footerButtonColor,
             onClick: () => {
               F(), (0, m.pQ)(A({
                 action: "PRESS_VIEW_PROFILE",
-                analyticsLocations: D
-              }, L))
+                analyticsLocations: L
+              }, k))
             },
             children: Z.intl.string(Z.t["+Xp3ho"])
           })

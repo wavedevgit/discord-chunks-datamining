@@ -1,6 +1,6 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => l
+  Z: () => a
 });
 var i = n(255367);
 n(73800);
@@ -24,10 +24,10 @@ function s(e) {
   }
   return e
 }
-let l = e => {
+let a = e => {
   var t, n, {
-      className: l,
-      backgroundColor: a,
+      className: a,
+      backgroundColor: l,
       backgroundCircleSize: o
     } = e,
     c = function(e, t) {
@@ -59,13 +59,13 @@ let l = e => {
       r: null != o ? o : "40%",
       cx: "50%",
       cy: "50%",
-      className: a
+      className: l
     }), (0, i.jsxs)("g", {
       transform: "translate(50, 50) scale(0.6) translate(-51, -52)",
       children: [(0, i.jsx)("path", {
         d: "M52.0002 11.7556L28.3402 35.4156V68.6956L52.0002 92.3556L75.6602 68.6956V35.4156L52.0002 11.7556ZM63.8302 63.7556L52.0002 75.6289L40.1702 63.7989V40.3122L52.0002 28.4822L63.8302 40.3122V63.7556Z",
         fill: "#FF6BFA",
-        className: l
+        className: a
       }), (0, i.jsx)("path", {
         d: "M40.1702 40.3122V63.7989L52.0002 75.6289L63.8302 63.7989V40.3122L52.0002 28.4822L40.1702 40.3122Z",
         fill: "#FFDEF9"

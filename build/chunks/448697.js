@@ -1,25 +1,26 @@
 /** Chunk was on 81872 **/
 n.d(t, {
-  R: () => m
+  R: () => g
 });
 var r = n(255367),
   i = n(73800),
   l = n(392711),
   o = n(264738),
   a = n(442837),
-  s = n(481060),
-  c = n(709706),
-  u = n(378441),
-  d = n(358820),
-  p = n(388032),
-  f = n(690410);
+  s = n(755721),
+  c = n(481060),
+  u = n(709706),
+  d = n(378441),
+  p = n(358820),
+  f = n(388032),
+  m = n(690410);
 
-function m() {
+function g() {
   let {
     hasActiveDownloads: e,
     progress: t
   } = function() {
-    let e = (0, a.cj)([c.Z], () => c.Z.getOngoingDownloads()),
+    let e = (0, a.cj)([u.Z], () => u.Z.getOngoingDownloads()),
       t = i.useRef({});
     i.useEffect(() => {
       0 === Object.entries(e).length && (t.current = {}), Object.assign(t.current, e)
@@ -45,8 +46,8 @@ function m() {
     }
   }(), {
     activeVoice: n
-  } = (0, u.o)();
-  return (0, s.Yzy)(e ? null != n ? "voice-on" : "voice-off" : null, {
+  } = (0, d.o)();
+  return (0, c.Yzy)(e ? null != n ? "voice-on" : "voice-off" : null, {
     from: {
       opacity: 0,
       translateY: 20
@@ -61,30 +62,30 @@ function m() {
     }
   }, "respect-motion-settings")((e, n) => null != n ? (0, r.jsx)(o.animated.div, {
     style: e,
-    className: f.floaterWrapper,
+    className: m.floaterWrapper,
     children: (0, r.jsxs)("div", {
-      className: f.visibleFloater,
+      className: m.visibleFloater,
       children: [(0, r.jsxs)("div", {
-        className: f.progressText,
-        children: [(0, r.jsx)(s.Text, {
+        className: m.progressText,
+        children: [(0, r.jsx)(c.Text, {
           variant: "text-sm/semibold",
           color: "text-primary",
-          children: p.intl.format(p.t["r+uZYW"], {
+          children: f.intl.format(f.t["r+uZYW"], {
             progress: t
           })
-        }), (0, r.jsx)(s.zxk, {
-          look: s.zxk.Looks.LINK,
-          size: s.zxk.Sizes.MIN,
-          onClick: d.ge,
-          children: (0, r.jsx)(s.Text, {
+        }), (0, r.jsx)(s.zx, {
+          look: s.zx.Looks.LINK,
+          size: s.zx.Sizes.MIN,
+          onClick: p.ge,
+          children: (0, r.jsx)(c.Text, {
             variant: "text-sm/normal",
             color: "text-primary",
-            children: p.intl.string(p.t["ETE/oK"])
+            children: f.intl.string(f.t["ETE/oK"])
           })
         })]
-      }), (0, r.jsx)(s.Exd, {
+      }), (0, r.jsx)(c.Exd, {
         percent: t,
-        size: s.Exd.Sizes.XSMALL
+        size: c.Exd.Sizes.XSMALL
       })]
     })
   }) : null)

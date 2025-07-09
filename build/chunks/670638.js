@@ -6,8 +6,8 @@ var r = n(255367),
   s = n(73800),
   o = n(442837),
   i = n(481060),
-  l = n(239091),
-  a = n(479531),
+  a = n(239091),
+  l = n(479531),
   c = n(390322),
   u = n(572004),
   d = n(63063),
@@ -89,19 +89,19 @@ function E(e) {
         sourceQuestContent: e.sourceQuestContent
       }), (0, i.showToast)((0, i.createToast)(O.intl.string(O.t["+5kSoa"]), i.ToastType.SUCCESS))
     }, [E, e.quest.id, e.questContent, e.questContentPosition, e.sourceQuestContent]),
-    M = e => (0, i.showToast)((0, i.createToast)(new a.Z(e, e.status).message, i.ToastType.FAILURE)),
-    k = () => (0, h.is)(e.quest.id).catch(M),
-    A = s.useMemo(() => (0, r.jsx)(i.S89, {
+    M = e => (0, i.showToast)((0, i.createToast)(new l.Z(e, e.status).message, i.ToastType.FAILURE)),
+    A = () => (0, h.is)(e.quest.id).catch(M),
+    Q = s.useMemo(() => (0, r.jsx)(i.S89, {
       id: "delivery",
       label: "Show in Quest Bar",
       checked: (null == n ? void 0 : n.id) === e.quest.id,
       action: _
     }), [_, e.quest.id, null == n ? void 0 : n.id]),
-    Q = e.shouldShowDisclosure && e.quest.id !== b.V6;
+    Z = e.shouldShowDisclosure && e.quest.id !== b.V6;
   return (0, r.jsxs)(i.v2r, {
     variant: "fixed",
     onSelect: () => {
-      null != e.onSelect ? e.onSelect() : (0, l.Zy)()
+      null != e.onSelect ? e.onSelect() : (0, a.Zy)()
     },
     navId: "quests-entry",
     "aria-label": O.intl.string(O.t.ogxXGh),
@@ -135,7 +135,7 @@ function E(e) {
           })
         },
         icon: i.qDn
-      }), Q && (0, r.jsx)(i.sNh, {
+      }), Z && (0, r.jsx)(i.sNh, {
         id: "display-disclosure",
         label: O.intl.string(O.t.GcsZKC),
         action: () => {
@@ -163,7 +163,7 @@ function E(e) {
       })]
     }, "minor-actions"), e.quest.preview && (0, r.jsxs)(i.kSQ, {
       label: "Preview Controls",
-      children: [A, (0, r.jsx)(i.sNh, {
+      children: [Q, (0, r.jsx)(i.sNh, {
         id: "dismiss",
         label: "Reset Dismissibility",
         action: w
@@ -171,7 +171,7 @@ function E(e) {
         id: "enrollment",
         label: "Reset Quest",
         action: () => {
-          R(), k()
+          R(), A()
         }
       }), (0, r.jsx)(i.sNh, {
         id: "progress",
@@ -197,7 +197,7 @@ function E(e) {
         }), (0, r.jsx)(i.sNh, {
           id: "stop",
           label: "Stop heartbeat",
-          action: k
+          action: A
         })]
       }), (0, r.jsx)(i.sNh, {
         id: "copy-quest-id",
@@ -215,8 +215,8 @@ function q(e) {
     children: t,
     onOpen: n,
     onClose: o,
-    preventIdle: l,
-    quest: a,
+    preventIdle: a,
+    quest: l,
     questContent: u,
     questContentPosition: d,
     sourceQuestContent: p
@@ -236,13 +236,13 @@ function q(e) {
     return s
   }(e, ["children", "onOpen", "onClose", "preventIdle", "quest", "questContent", "questContentPosition", "sourceQuestContent"]), x = (0, m.O5)(), g = s.useRef(null), j = s.useCallback(() => {
     x({
-      questId: a.id,
+      questId: l.id,
       questContent: u,
       questContentCTA: m.jZ.OPEN_CONTEXT_MENU,
       questContentPosition: d,
       sourceQuestContent: p
     }), null != n && n()
-  }, [n, a.id, u, d, x, p]);
+  }, [n, l.id, u, d, x, p]);
   return (0, r.jsx)(i.yRy, {
     targetElementRef: g,
     onRequestOpen: j,
@@ -251,16 +251,16 @@ function q(e) {
       let {
         closePopout: t
       } = e;
-      return l ? (0, r.jsx)(c.Z, {
+      return a ? (0, r.jsx)(c.Z, {
         children: (0, r.jsx)(E, T(N({}, h), {
-          quest: a,
+          quest: l,
           questContent: u,
           questContentPosition: d,
           onClose: t,
           sourceQuestContent: p
         }))
       }) : (0, r.jsx)(E, T(N({}, h), {
-        quest: a,
+        quest: l,
         questContent: u,
         questContentPosition: d,
         onClose: t,

@@ -1,8 +1,8 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => E
+  Z: () => j
 });
-var i, r, s, l, a, o, c = n(442837),
+var i, r, s, a, l, o, c = n(442837),
   d = n(570140),
   u = n(592125),
   m = n(896797),
@@ -10,7 +10,7 @@ var i, r, s, l, a, o, c = n(442837),
   g = n(944486),
   h = n(55589),
   f = n(981631);
-let b = (null != (a = null == (l = window) || null == (s = l.location) ? void 0 : s.pathname) ? a : "").startsWith(f.Z5c.ACTIVITIES) ? f.Z5c.ACTIVITIES : null;
+let b = (null != (l = null == (a = window) || null == (s = a.location) ? void 0 : s.pathname) ? l : "").startsWith(f.Z5c.ACTIVITIES) ? f.Z5c.ACTIVITIES : null;
 
 function x(e) {
   let {
@@ -33,7 +33,7 @@ r = "AppViewStore", (i = "displayName") in _ ? Object.defineProperty(_, i, {
   configurable: !0,
   writable: !0
 }) : _[i] = r;
-let E = new _(d.Z, {
+let j = new _(d.Z, {
   OVERLAY_INITIALIZE: function() {
     let e = h.Z.getPrivateChannelIds(),
       t = g.Z.getChannelId(f.ME);

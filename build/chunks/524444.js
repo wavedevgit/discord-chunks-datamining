@@ -318,9 +318,10 @@ let el = e => {
         }), null != n ? (0, r.jsx)(d.tEY, {
           offset: -2,
           children: (0, r.jsx)(d.zxk, {
-            size: d.PhG.SMALL,
-            onClick: n,
-            children: es(t)
+            variant: "primary",
+            size: "sm",
+            text: es(t),
+            onClick: n
           })
         }) : (0, r.jsx)(d.$jN, {
           type: d.$jN.Type.PULSING_ELLIPSIS,

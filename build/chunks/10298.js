@@ -1,19 +1,19 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  N: () => l
+  N: () => a
 });
 var i = n(255367),
   r = n(481060),
   s = n(704912);
-let l = e => {
+let a = e => {
   let {
     children: t,
     header: n,
-    notice: l
+    notice: a
   } = e;
   return (0, i.jsxs)("div", {
     className: s.settingsPage,
-    children: [l, (0, i.jsx)(r.y5t, {
+    children: [a, (0, i.jsx)(r.y5t, {
       children: (0, i.jsx)(r.X6q, {
         variant: "heading-xl/semibold",
         color: "header-primary",

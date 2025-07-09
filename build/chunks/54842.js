@@ -1,7 +1,7 @@
 /** Chunk was on 82265 **/
 "use strict";
 n.d(t, {
-  Z: () => R
+  Z: () => w
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -45,20 +45,7 @@ function I(e) {
   }
   return e
 }
-
-function E(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
-    }
-    return n
-  })(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-let S = () => [{
+let E = () => [{
     icon: c.IeX,
     color: o.Z.unsafe_rawColors.GREEN_360.css,
     header: h.intl.string(h.t.oVQF29),
@@ -93,7 +80,7 @@ let S = () => [{
     header: h.intl.string(h.t.W2kLJC),
     body: h.intl.string(h.t.hyNkHx)
   }],
-  T = [{
+  S = [{
     iconSrc: C,
     name: "Pokemon GO Paris",
     position: [-230, -100]
@@ -124,7 +111,7 @@ let S = () => [{
     faded: !0,
     rightAlign: !0
   }],
-  P = e => {
+  T = e => {
     let {
       icon: t,
       color: n,
@@ -153,7 +140,7 @@ let S = () => [{
       })]
     })
   },
-  w = e => {
+  P = e => {
     let {
       iconSrc: t,
       name: n,
@@ -184,7 +171,7 @@ let S = () => [{
       })]
     })
   },
-  R = e => {
+  w = e => {
     let {
       guild: t
     } = e, [n, l] = i.useState(0), [s, o] = i.useState(0), [_, v] = i.useState(), O = (0, a.e7)([m.Z], () => m.Z.can(p.Plq.ADMINISTRATOR, t)), C = null == _ ? void 0 : _.offsetWidth, y = null == _ ? void 0 : _.offsetHeight;
@@ -201,9 +188,21 @@ let S = () => [{
       children: [(0, r.jsxs)("div", {
         className: x.banner,
         ref: e => v(e),
-        children: [T.map(e => (0, r.jsx)(w, E(I({}, e), {
-          imageCoordinates: [n, s]
-        }), e.name)), (0, r.jsx)("img", {
+        children: [S.map(e => {
+          var t, i;
+          return (0, r.jsx)(P, (t = I({}, e), i = i = {
+            imageCoordinates: [n, s]
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+            var n = Object.keys(e);
+            if (Object.getOwnPropertySymbols) {
+              var r = Object.getOwnPropertySymbols(e);
+              n.push.apply(n, r)
+            }
+            return n
+          })(Object(i)).forEach(function(e) {
+            Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
+          }), t), e.name)
+        }), (0, r.jsx)("img", {
           alt: "",
           src: b,
           className: x.image,
@@ -226,13 +225,16 @@ let S = () => [{
       }), (0, r.jsx)(c.ua7, {
         text: O ? null : h.intl.string(h.t["pjG+T0"]),
         "aria-label": O ? void 0 : h.intl.string(h.t["pjG+T0"]),
-        children: e => (0, r.jsx)(c.zxk, E(I({
-          onClick: N,
+        children: e => (0, r.jsx)("div", {
+          "data-button-hoisted-classname-wrapper": !0,
           className: x.button,
-          disabled: !O
-        }, e), {
-          children: h.intl.string(h.t.LhlgY2)
-        }))
+          children: (0, r.jsx)(c.zxk, I({
+            variant: "primary",
+            text: h.intl.string(h.t.LhlgY2),
+            onClick: N,
+            disabled: !O
+          }, e))
+        })
       }), (0, r.jsx)("hr", {
         className: x.separator
       }), (0, r.jsx)(c.Text, {
@@ -248,7 +250,7 @@ let S = () => [{
         })
       }), (0, r.jsx)("div", {
         className: x.features,
-        children: S().map((e, t) => (0, r.jsx)(P, I({}, e), t))
+        children: E().map((e, t) => (0, r.jsx)(T, I({}, e), t))
       })]
     })
   }

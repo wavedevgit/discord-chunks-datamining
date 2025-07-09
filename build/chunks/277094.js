@@ -4,7 +4,7 @@ t.d(n, {
 });
 var o = t(255367);
 t(73800);
-var c = t(481060),
+var c = t(755721),
   i = t(572691),
   a = t(906732),
   r = t(705556),
@@ -89,7 +89,7 @@ function f(e) {
     }), (0, o.jsx)(l.Z7, {
       type: "text",
       userId: n.id,
-      color: c.zxk.Colors.BRAND,
+      color: c.zx.Colors.BRAND,
       analyticsLocation: I,
       autoFocus: !0
     })]

@@ -82,10 +82,10 @@ function v(e) {
     userOverride: T,
     compact: U = !1,
     withMentionPrefix: v = !1,
-    showPopout: k = !1,
-    hideGuildTag: L = !1,
-    hideSystemTag: Z = !1,
-    className: j,
+    showPopout: L = !1,
+    hideGuildTag: Z = !1,
+    hideSystemTag: j = !1,
+    className: k,
     onClick: x,
     onContextMenu: F,
     onPopoutRequestClose: G,
@@ -132,16 +132,16 @@ function v(e) {
     onContextMenu: F,
     children: ed,
     "data-text": X + J
-  }, eE = l.useMemo(() => U && !L ? (0, i.jsx)(S.ZP, {
+  }, eE = l.useMemo(() => U && !Z ? (0, i.jsx)(S.ZP, {
     primaryGuild: n.primaryGuild,
     userId: r.author.id,
     contextGuildId: K,
     className: b.clanTagChiplet
-  }) : null, [U, n.primaryGuild, K, r.author.id, L]), eO = null != T ? T : r.author, eI = null != V && null != k ? (0, i.jsx)(m.Z, {
+  }) : null, [U, n.primaryGuild, K, r.author.id, Z]), eO = null != T ? T : r.author, eI = null != V && null != L ? (0, i.jsx)(m.Z, {
     targetElementRef: H,
     user: eO,
     renderPopout: V,
-    shouldShow: k,
+    shouldShow: L,
     shouldPreload: el,
     position: c.tq ? "window_center" : "right",
     avatarUrl: null != n.guildMemberAvatar && null != K ? (0, R.JM)({
@@ -151,7 +151,7 @@ function v(e) {
       size: 80
     }) : void 0,
     onRequestClose: G,
-    clickTrap: k,
+    clickTrap: L,
     children: e => {
       var {
         onClick: t
@@ -175,18 +175,18 @@ function v(e) {
           tag: "span",
           innerRef: H
         }, n, e_), {
-          className: a()(e_.className, b.clickable, j)
+          className: a()(e_.className, b.clickable, k)
         })), eE]
       })
     }
   }) : (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(_.P3F, h(D({}, e_), {
-      className: a()(e_.className, j)
+      className: a()(e_.className, k)
     })), eE]
   }), eT = null != B ? B[0] : null, ep = null != B ? B[1] : null;
   return (0, i.jsxs)(I.Gt, {
     value: q,
-    children: [null != eT && !Z && U ? (0, i.jsxs)(i.Fragment, {
+    children: [null != eT && !j && U ? (0, i.jsxs)(i.Fragment, {
       children: [" ", eT, " "]
     }) : null, "dot" === et ? (0, i.jsx)(_.FhE, {
       color: Q,
@@ -194,11 +194,11 @@ function v(e) {
       name: ee,
       className: b.roleDot,
       hoverOverride: null == eo ? void 0 : eo.animate
-    }) : null, eI, !U && !L && (0, i.jsx)(S.ZP, {
+    }) : null, eI, !U && !Z && (0, i.jsx)(S.ZP, {
       primaryGuild: n.primaryGuild,
       userId: r.author.id,
       contextGuildId: K,
       className: b.clanTagChiplet
-    }), null != ep ? ep : null, null == eT || Z || U ? null : eT, null != r && (0, P.f)(r) && er && w ? (0, i.jsx)(M, {}) : null]
+    }), null != ep ? ep : null, null == eT || j || U ? null : eT, null != r && (0, P.f)(r) && er && w ? (0, i.jsx)(M, {}) : null]
   })
 }

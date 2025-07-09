@@ -6,7 +6,7 @@ n.d(t, {
 var i = n(81643),
   r = n(818083),
   s = n(128064);
-let l = (0, r.B)({
+let a = (0, r.B)({
     kind: "user",
     id: "2025-02_dm_defaults_new_users",
     label: "Default DM Settings - New Users",
@@ -33,7 +33,7 @@ let l = (0, r.B)({
       }
     }]
   }),
-  a = (0, r.B)({
+  l = (0, r.B)({
     kind: "user",
     id: "2025-02_dm_defaults",
     label: "Default DM Settings",
@@ -61,12 +61,12 @@ let l = (0, r.B)({
     }]
   }),
   o = e => {
-    let t = a.useExperiment({
+    let t = l.useExperiment({
         location: e
       }, {
         autoTrackExposure: !1
       }),
-      n = l.useExperiment({
+      n = a.useExperiment({
         location: e
       }, {
         autoTrackExposure: !1
@@ -74,12 +74,12 @@ let l = (0, r.B)({
     return t.dmOffByDefault || n.dmOffByDefault
   },
   c = e => {
-    let t = a.getCurrentConfig({
+    let t = l.getCurrentConfig({
         location: e
       }, {
         autoTrackExposure: !1
       }),
-      n = l.getCurrentConfig({
+      n = a.getCurrentConfig({
         location: e
       }, {
         autoTrackExposure: !1

@@ -1,6 +1,6 @@
 /** Chunk was on 18831 **/
 n.d(t, {
-  Z: () => U
+  Z: () => D
 }), n(997841), n(388685), n(457542);
 var i = n(255367),
   a = n(73800),
@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(406432),
   d = n(169525),
   u = n(786761),
-  m = n(499376),
-  p = n(3148),
+  p = n(499376),
+  m = n(3148),
   f = n(739566),
   h = n(492593),
   g = n(219797),
@@ -76,7 +76,7 @@ let L = (e, t, n, i) => {
         height: null != (l = null == (i = t[e.id]) ? void 0 : i.height) ? l : T.EY
       }) : r
     });
-    return (0, u.e5)(I(k({}, (0, p.ZP)({
+    return (0, u.e5)(I(k({}, (0, m.ZP)({
       author: null != n ? n : {
         id: "",
         avatar: void 0,
@@ -93,7 +93,7 @@ let L = (e, t, n, i) => {
       state: C.yb.SENT
     }))
   },
-  D = e => {
+  U = e => {
     let {
       message: t
     } = e, {
@@ -156,7 +156,7 @@ let L = (e, t, n, i) => {
             item: {
               uniqueId: e.id,
               originalItem: e,
-              type: (0, m.aw)(e, !0),
+              type: (0, p.aw)(e, !0),
               downloadUrl: e.proxy_url,
               height: e.height,
               width: e.width,
@@ -188,11 +188,11 @@ let L = (e, t, n, i) => {
     })
   };
 
-function U(e) {
+function D(e) {
   var t;
   let {
     flaggedContent: n
-  } = e, l = (0, r.e7)([O.default], () => O.default.getCurrentUser()), [s, d] = a.useState({}), [u, m] = a.useState(!0), p = (0, r.e7)([w.Z], () => w.Z.getUsername()), g = n[0], y = L(g, s, l, p), x = (0, f.ZP)(y), E = (0, j.Z)(y, {
+  } = e, l = (0, r.e7)([O.default], () => O.default.getCurrentUser()), [s, d] = a.useState({}), [u, p] = a.useState(!0), m = (0, r.e7)([w.Z], () => w.Z.getUsername()), g = n[0], y = L(g, s, l, m), x = (0, f.ZP)(y), E = (0, j.Z)(y, {
     hideSimpleEmbedContent: !1,
     allowList: !1,
     allowHeading: !1,
@@ -229,7 +229,7 @@ function U(e) {
       })
     }).then(t => d(n => I(k({}, n), {
       [e.id]: t
-    }))))).finally(() => m(!1))
+    }))))).finally(() => p(!1))
   }, [g.attachments]), "" === y.content && 0 === y.attachments.length) ? null : (0, i.jsx)("div", {
     className: N.classificationEvidenceCard,
     children: u ? (0, i.jsx)(o.$jN, {}) : (0, i.jsx)(h.Z, {
@@ -237,7 +237,7 @@ function U(e) {
       childrenHeader: (0, b.Z)({
         author: I(k({}, l), {
           colorString: "",
-          nick: null != (t = null == l ? void 0 : l.username) ? t : p
+          nick: null != (t = null == l ? void 0 : l.username) ? t : m
         }),
         message: y,
         channel: void 0,
@@ -248,7 +248,7 @@ function U(e) {
         roleIcon: void 0,
         hideTimestamp: !1
       }),
-      childrenAccessories: (0, i.jsx)(D, {
+      childrenAccessories: (0, i.jsx)(U, {
         message: y
       }),
       childrenMessageContent: (0, v.Z)({

@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(392711),
-  o = n.n(l),
-  a = n(442837),
+  a = n.n(l),
+  o = n(442837),
   s = n(481060),
   c = n(884338),
   u = n(100527),
@@ -47,18 +47,18 @@ class E {
   }
   renderNicknamePairs() {
     return this.getNicknameGuildPairs().map((e, t) => {
-      let [n, l] = e, o = (0, r.jsx)(s.P3F, {
+      let [n, l] = e, a = (0, r.jsx)(s.P3F, {
         tag: "span",
         onClick: this.handleClick,
         children: n
       });
-      return l.length > 0 && (o = (0, r.jsx)(s.DY3, {
+      return l.length > 0 && (a = (0, r.jsx)(s.DY3, {
         className: O.tooltip,
         text: l.join(", "),
         position: "bottom",
-        children: o
+        children: a
       })), (0, r.jsxs)(i.Fragment, {
-        children: [0 !== t ? ", " : null, o]
+        children: [0 !== t ? ", " : null, a]
       }, t)
     })
   }
@@ -70,7 +70,7 @@ class E {
   }) {
     j(this, "userId", void 0), j(this, "user", void 0), j(this, "channelId", void 0), j(this, "analyticsLocations", void 0), j(this, "generateNicknameGuildPairs", (0, _.oH)(e => {
       var t;
-      return o()(m.ZP.getNicknameGuildsMapping(null != (t = null == e ? void 0 : e.id) ? t : this.userId)).toPairs().map(e => {
+      return a()(m.ZP.getNicknameGuildsMapping(null != (t = null == e ? void 0 : e.id) ? t : this.userId)).toPairs().map(e => {
         let [t, n] = e;
         return [t, n.map(e => {
           var t;
@@ -106,25 +106,25 @@ class E {
 function S(e) {
   let {
     channel: t
-  } = e, n = t.getRecipientId(), l = (0, h.gc)(n), o = Array(l.length).fill(null), {
+  } = e, n = t.getRecipientId(), l = (0, h.gc)(n), a = Array(l.length).fill(null), {
     analyticsLocations: f
   } = (0, d.ZP)(u.Z.AKA), m = function(e) {
     let {
       userId: t,
       channelId: n,
       analyticsLocations: r
-    } = e, l = (0, a.e7)([b.default], () => b.default.getUser(t), [t]), [o] = i.useState(() => new E({
+    } = e, l = (0, o.e7)([b.default], () => b.default.getUser(t), [t]), [a] = i.useState(() => new E({
       user: l,
       userId: t,
       channelId: n,
       analyticsLocations: r
     }));
-    return o.updateData({
+    return a.updateData({
       userId: t,
       user: l,
       channelId: n,
       analyticsLocations: r
-    }), o
+    }), a
   }({
     userId: n,
     analyticsLocations: f,
@@ -142,23 +142,23 @@ function S(e) {
       className: O.akaBadge
     }), l.length > 0 ? (0, r.jsx)(c.ZP, {
       size: 16,
-      users: o,
+      users: a,
       showUserPopout: !1,
       renderUser: (e, t, n) => {
         var i;
-        let o = m.user,
-          a = l[n];
-        return null == a || null == o ? null : (0, r.jsx)(s.DY3, {
-          text: null == (i = g.Z.getGuild(a)) ? void 0 : i.name,
+        let a = m.user,
+          o = l[n];
+        return null == o || null == a ? null : (0, r.jsx)(s.DY3, {
+          text: null == (i = g.Z.getGuild(o)) ? void 0 : i.name,
           position: "bottom",
           children: (0, r.jsx)("img", {
             alt: "",
             className: O.avatar,
             onClick: m.handleClick,
-            src: o.getAvatarURL(a, 16),
+            src: a.getAvatarURL(o, 16),
             "aria-hidden": !0
           })
-        }, a[1])
+        }, o[1])
       },
       renderMoreUsers: m.renderMoreAvatars,
       guildId: void 0,

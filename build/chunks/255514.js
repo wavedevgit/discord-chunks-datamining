@@ -35,8 +35,8 @@ var r = n(255367),
   M = n(157759),
   w = n(521332),
   A = n(905434),
-  R = n(196627),
-  D = n(289809),
+  D = n(196627),
+  R = n(289809),
   B = n(739319),
   L = n(842401),
   z = n(375790),
@@ -165,7 +165,7 @@ let K = e => {
       separator: !1,
       direction: o.Z.Direction.VERTICAL,
       className: F.header,
-      children: [(0, r.jsx)(R.Z, {
+      children: [(0, r.jsx)(D.Z, {
         element: q(t, "success")
       }), (0, r.jsx)(O.Z, {
         node: t,
@@ -177,7 +177,7 @@ let K = e => {
       className: F.body,
       children: [null != ea && (0, r.jsx)(B.Z, {
         element: ea
-      }), null != es && (0, r.jsx)(D.Z, {
+      }), null != es && (0, r.jsx)(R.Z, {
         element: es
       }), null != q(t, "message_preview") && ("message" === n.name || "first_dm" === n.name || "report_to_mod_message" === n.name) && (0, r.jsx)(S.Z, {
         message: n.record

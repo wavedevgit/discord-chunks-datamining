@@ -1,13 +1,13 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  BL: () => l,
-  J1: () => a,
+  BL: () => a,
+  J1: () => l,
   ZP: () => o
 });
 var i = n(818083),
   r = n(987338),
   s = n(388032);
-let l = (0, i.B)({
+let a = (0, i.B)({
   kind: "user",
   id: "2025-06_nitro_tagline_premium_brand_refresh_experiment",
   label: "Nitro Tagline Premium Brand Refresh Experiment",
@@ -36,7 +36,7 @@ let l = (0, i.B)({
   }]
 });
 
-function a(e) {
+function l(e) {
   switch (e) {
     case "v4":
       return s.intl.string(s.t["EW+VIS"]);
@@ -51,7 +51,7 @@ function o(e) {
   let {
     location: t
   } = e;
-  return l.useExperiment({
+  return a.useExperiment({
     location: t
   }, {
     autoTrackExposure: !0

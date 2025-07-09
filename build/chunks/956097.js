@@ -2,8 +2,8 @@
 n.d(t, {
   Z: () => x
 }), n(388685);
-var i, r, s, l = n(442837),
-  a = n(544891),
+var i, r, s, a = n(442837),
+  l = n(544891),
   o = n(570140),
   c = n(668781),
   d = n(358085),
@@ -15,7 +15,7 @@ let g = {
   },
   h = [],
   f = ["discord.com", "discordapp.com", "discordapp.net", "dl.discordapp.net", "discordcdn.com", "discord.gg", "discord.media"];
-class b extends(i = l.ZP.Store) {
+class b extends(i = a.ZP.Store) {
   initialize() {
     this.updateState(), this.addListener()
   }
@@ -78,7 +78,7 @@ class b extends(i = l.ZP.Store) {
         }).plus) {
         let {
           key: e
-        } = (await a.tn.get({
+        } = (await l.tn.get({
           url: p.ANM.USER_WARP_LICENSE,
           oldFormErrors: !0,
           rejectWithError: !0

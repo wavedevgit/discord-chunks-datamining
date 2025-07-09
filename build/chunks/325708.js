@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r, i = n(255367),
   l = n(73800),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(392711),
   c = n(692547),
   u = n(481060),
@@ -23,9 +23,9 @@ function b(e) {
     onResize: n,
     onResizeEnd: r,
     maxWidth: l,
-    minWidth: o
-  } = e, a = (0, p.Z)({
-    minDimension: o,
+    minWidth: a
+  } = e, o = (0, p.Z)({
+    minDimension: a,
     maxDimension: l,
     resizableDomNodeRef: t,
     onElementResize: n,
@@ -34,7 +34,7 @@ function b(e) {
     throttleDuration: 16
   });
   return (0, i.jsx)("div", {
-    onMouseDown: a,
+    onMouseDown: o,
     className: m.resizeHandle
   })
 }
@@ -44,7 +44,7 @@ function _(e) {
     sidebarType: t,
     maxWidth: n,
     onWidthChange: r,
-    children: o,
+    children: a,
     floatingLayer: p
   } = e, g = l.useRef(null), _ = function(e) {
     switch (e) {
@@ -80,11 +80,11 @@ function _(e) {
       }
     }), (0, i.jsx)(I, {
       children: (0, i.jsxs)("div", {
-        className: a()(m.chatLayerWrapper, {
+        className: o()(m.chatLayerWrapper, {
           [m.hidden]: !1
         }),
         children: [(0, i.jsx)("div", {
-          className: a()(m.chatTarget, {
+          className: o()(m.chatTarget, {
             [m.floating]: O,
             [m.notFloating]: !O
           }),
@@ -99,13 +99,13 @@ function _(e) {
           onResizeEnd: x
         }), (0, i.jsx)("div", {
           ref: g,
-          className: a()(m.container, {
+          className: o()(m.container, {
             [m.floating]: O
           }),
           style: {
             width: E
           },
-          children: o
+          children: a
         })]
       })
     })]

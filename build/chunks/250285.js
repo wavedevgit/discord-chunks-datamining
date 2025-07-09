@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(255367),
   r = n(73800),
   s = n(120356),
-  l = n.n(s),
-  a = n(708816),
+  a = n.n(s),
+  l = n(708816),
   o = n(748780),
   c = n(91192),
   d = n(906732),
@@ -34,7 +34,7 @@ let p = e => {
     id: t,
     children: e => {
       var t, r;
-      return (0, i.jsx)(a.tE, {
+      return (0, i.jsx)(l.tE, {
         offset: {
           left: -8,
           right: -8
@@ -60,7 +60,7 @@ let p = e => {
           style: {
             opacity: 1
           },
-          className: l()(m.rowItem, p, {
+          className: a()(m.rowItem, p, {
             [m.last]: s,
             [m.active]: g
           }),

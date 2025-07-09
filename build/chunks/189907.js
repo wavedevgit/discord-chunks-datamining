@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i, r = n(255367),
   s = n(73800),
-  l = n(120356),
-  a = n.n(l),
+  a = n(120356),
+  l = n.n(a),
   o = n(600164),
   c = n(559595);
 
@@ -26,7 +26,7 @@ class u extends(i = s.PureComponent) {
       onMouseLeave: i
     } = this.props;
     return (0, r.jsx)("div", {
-      className: a()(c.card, t),
+      className: l()(c.card, t),
       onMouseEnter: n,
       onMouseLeave: i,
       children: e
@@ -40,7 +40,7 @@ d(u, "Header", e => {
     splashArtURL: i
   } = e;
   return (0, r.jsxs)(o.Z, {
-    className: a()(c.header, n),
+    className: l()(c.header, n),
     align: o.Z.Align.CENTER,
     children: [(0, r.jsx)("div", {
       className: c.splashArt,
@@ -55,7 +55,7 @@ d(u, "Header", e => {
     className: n
   } = e;
   return (0, r.jsx)("div", {
-    className: a()(c.body, n),
+    className: l()(c.body, n),
     children: t
   })
 });

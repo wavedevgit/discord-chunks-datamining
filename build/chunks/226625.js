@@ -5,9 +5,9 @@ n.d(t, {
 var i = n(255367),
   r = n(73800),
   s = n(120356),
-  l = n.n(s),
-  a = n(392711),
-  o = n.n(a),
+  a = n.n(s),
+  l = n(392711),
+  o = n.n(l),
   c = n(264738),
   d = n(442837),
   u = n(481060),
@@ -23,7 +23,7 @@ function h(e) {
   let {
     className: t,
     pageMultiplier: n
-  } = e, s = (0, d.e7)([m.Z], () => m.Z.useReducedMotion), [a, h] = r.useState({
+  } = e, s = (0, d.e7)([m.Z], () => m.Z.useReducedMotion), [l, h] = r.useState({
     x: 0,
     y: 0
   }), f = r.useMemo(() => o().throttle(e => {
@@ -40,13 +40,13 @@ function h(e) {
   }));
   return r.useEffect(() => {
     x({
-      x: a.x,
-      y: a.y
+      x: l.x,
+      y: l.y
     })
-  }, [a.x, a.y, x]), (0, i.jsx)(c.animated.div, {
+  }, [l.x, l.y, x]), (0, i.jsx)(c.animated.div, {
     style: {
       transform: (0, c.to)([b.x, b.y], (e, t) => "translate3d(".concat(e, "px, ").concat(t, "px, 0)"))
     },
-    className: l()(p.background, t)
+    className: a()(p.background, t)
   })
 }

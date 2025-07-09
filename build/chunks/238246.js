@@ -23,8 +23,8 @@ var i, r = n(255367),
   C = n(100527),
   j = n(906732),
   w = n(168551),
-  k = n(260035),
-  P = n(628123),
+  P = n(260035),
+  k = n(628123),
   Z = n(686546),
   E = n(950796);
 n(151851);
@@ -144,7 +144,7 @@ class H extends(i = l.Component) {
       contentClassName: h
     } = this.props;
     (0, L.getPlatform)();
-    let p = i === U.$J ? D.Z : P.Z;
+    let p = i === U.$J ? D.Z : k.Z;
     return (0, r.jsx)(d.VK, {
       children: (0, r.jsx)(T.w, {
         windowKey: i,
@@ -158,7 +158,7 @@ class H extends(i = l.Component) {
                 children: [(0, r.jsx)(Z.Co, {}), (0, r.jsx)(g.Wu, {
                   appContext: A.IlC.POPOUT,
                   renderWindow: a,
-                  children: (0, r.jsx)(k.m, {
+                  children: (0, r.jsx)(P.m, {
                     children: (0, r.jsxs)(N.yP, {
                       children: [(0, r.jsxs)("div", {
                         className: F.popout,

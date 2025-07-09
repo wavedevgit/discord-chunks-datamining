@@ -6,8 +6,8 @@ var i = n(255367);
 n(73800);
 var r = n(442837),
   s = n(481060),
-  l = n(601911),
-  a = n(887818),
+  a = n(601911),
+  l = n(887818),
   o = n(824856),
   c = n(565138),
   d = n(430824),
@@ -26,10 +26,10 @@ function x(e) {
     currentSubscription: p,
     currentListing: h,
     alternativeListings: x,
-    navigateToHome: E,
-    subscriptionGroup: j,
+    navigateToHome: j,
+    subscriptionGroup: E,
     renewalSkuId: O
-  } = e, C = (0, l.y)(n, 100), S = (0, m.KK)(j.flags), v = S ? s.QTo : s.tBG, T = S ? f.intl.string(f.t["46YF2N"]) : f.intl.string(f.t.fFyGiI), N = null == (t = p.metadata) ? void 0 : t.application_subscription_guild_id, I = (0, r.e7)([d.Z], () => S && null != N ? d.Z.getGuild(N) : void 0, [N, S]), y = (0, r.e7)([u.Z], () => {
+  } = e, C = (0, a.y)(n, 100), v = (0, m.KK)(E.flags), S = v ? s.QTo : s.tBG, T = v ? f.intl.string(f.t["46YF2N"]) : f.intl.string(f.t.fFyGiI), N = null == (t = p.metadata) ? void 0 : t.application_subscription_guild_id, I = (0, r.e7)([d.Z], () => v && null != N ? d.Z.getGuild(N) : void 0, [N, v]), y = (0, r.e7)([u.Z], () => {
     if (null != O) return u.Z.get(O)
   }, [O]), A = (0, g.p)(p.currentPeriodEnd);
   return (0, i.jsxs)("div", {
@@ -49,7 +49,7 @@ function x(e) {
           children: [(0, i.jsxs)(s.X6q, {
             variant: "heading-md/normal",
             className: b.subInfoType,
-            children: [(0, i.jsx)(v, {
+            children: [(0, i.jsx)(S, {
               size: "xs",
               color: "currentColor"
             }), " ", T]
@@ -73,7 +73,7 @@ function x(e) {
           })]
         })]
       })]
-    }), (0, i.jsx)(a.Z, {
+    }), (0, i.jsx)(l.Z, {
       children: e => (0, i.jsxs)("div", {
         className: b.planNotice,
         children: [(0, i.jsx)(s.Text, {
@@ -87,7 +87,7 @@ function x(e) {
             variant: "text-md/normal",
             children: f.intl.format(f.t.sqowY2, {})
           })]
-        }), (0, i.jsx)(a.Z.Toggle, {
+        }), (0, i.jsx)(l.Z.Toggle, {
           text: e ? f.intl.string(f.t["1Rkq/P"]) : f.intl.string(f.t.WsTHkZ)
         })]
       })
@@ -122,7 +122,7 @@ function x(e) {
       }, e.id) : (0, i.jsx)(_, {
         storeListing: e,
         guildId: N,
-        navigateToHome: E
+        navigateToHome: j
       }, e.id))]
     })]
   })
@@ -134,7 +134,7 @@ function _(e) {
     guildId: n,
     navigateToHome: r
   } = e, {
-    openModal: l
+    openModal: a
   } = (0, p.Z)({
     analyticsLocation: h.Sbl.APP_SUBSCRIPTIONS_MANAGEMENT,
     skuId: t.skuId,
@@ -145,9 +145,10 @@ function _(e) {
   return (0, i.jsx)(o.Z, {
     storeListing: t,
     cta: (0, i.jsx)(s.zxk, {
-      size: s.zxk.Sizes.SMALL,
-      onClick: l,
-      children: f.intl.string(f.t["+KwmBg"])
+      variant: "primary",
+      size: "sm",
+      text: f.intl.string(f.t["+KwmBg"]),
+      onClick: a
     })
   })
 }

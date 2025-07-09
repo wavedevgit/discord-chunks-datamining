@@ -1,14 +1,14 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => a
+  Z: () => l
 });
 var i = n(255367);
 n(73800);
 var r = n(481060),
   s = n(570140),
-  l = n(71509);
+  a = n(71509);
 
-function a() {
+function l() {
   (0, r.ZDy)(async () => {
     let {
       default: e
@@ -38,6 +38,6 @@ function a() {
         isMultiAccount: !0
       })
     },
-    modalKey: l.Ui
+    modalKey: a.Ui
   })
 }

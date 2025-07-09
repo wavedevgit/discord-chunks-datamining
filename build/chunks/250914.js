@@ -1,19 +1,20 @@
 /** Chunk was on 98137 **/
 n.d(t, {
-  default: () => l
+  default: () => i
 });
 var r = n(255367);
 n(73800);
-var o = n(481060),
-  c = n(313201),
-  a = n(388032),
-  s = n(281373);
-let l = e => {
+var o = n(755721),
+  c = n(481060),
+  a = n(313201),
+  s = n(388032),
+  l = n(281373);
+let i = e => {
   var t, n;
   let {
-    onClose: l
-  } = e, i = (0, c.Dt)();
-  return (0, r.jsxs)(o.Y0X, (t = function(e) {
+    onClose: i
+  } = e, d = (0, a.Dt)();
+  return (0, r.jsxs)(c.Y0X, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -31,32 +32,32 @@ let l = e => {
     }
     return e
   }({}, e), n = n = {
-    "aria-labelledby": i,
+    "aria-labelledby": d,
     parentComponent: "QuarantineModeInfoModal",
-    children: [(0, r.jsxs)(o.xBx, {
+    children: [(0, r.jsxs)(c.xBx, {
       separator: !1,
-      className: s.modalHeader,
-      children: [(0, r.jsx)(o.X6q, {
-        id: i,
+      className: l.modalHeader,
+      children: [(0, r.jsx)(c.X6q, {
+        id: d,
         variant: "heading-xl/extrabold",
-        children: a.intl.string(a.t.EouHws)
-      }), (0, r.jsx)(o.olH, {
-        className: s.closeButton,
-        onClick: l
+        children: s.intl.string(s.t.EouHws)
+      }), (0, r.jsx)(c.olH, {
+        className: l.closeButton,
+        onClick: i
       })]
-    }), (0, r.jsx)(o.hzk, {
-      className: s.modalContent,
-      children: (0, r.jsx)(o.Text, {
+    }), (0, r.jsx)(c.hzk, {
+      className: l.modalContent,
+      children: (0, r.jsx)(c.Text, {
         variant: "text-md/normal",
-        className: s.contentText,
-        children: a.intl.string(a.t.zNPBMD)
+        className: l.contentText,
+        children: s.intl.string(s.t.zNPBMD)
       })
-    }), (0, r.jsx)(o.mzw, {
-      children: (0, r.jsx)(o.zxk, {
-        className: s.button,
-        size: o.zxk.Sizes.MIN,
-        onClick: l,
-        children: a.intl.string(a.t.BddRzc)
+    }), (0, r.jsx)(c.mzw, {
+      children: (0, r.jsx)(o.zx, {
+        className: l.button,
+        size: o.zx.Sizes.MIN,
+        onClick: i,
+        children: s.intl.string(s.t.BddRzc)
       })
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

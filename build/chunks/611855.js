@@ -7,8 +7,8 @@ n(73800);
 var s = n(120356),
   o = n.n(s),
   i = n(780384),
-  l = n(481060),
-  a = n(410030),
+  a = n(481060),
+  l = n(410030),
   c = n(388032),
   u = n(286737);
 let d = function(e) {
@@ -16,8 +16,8 @@ let d = function(e) {
     className: t,
     color: n = "header-primary",
     textOpacity: s = .9
-  } = e, d = (0, a.Fg)(), m = (0, i.wj)(d);
-  return (0, r.jsxs)(l.Text, {
+  } = e, d = (0, l.Fg)(), m = (0, i.wj)(d);
+  return (0, r.jsxs)(a.Text, {
     variant: "text-xxs/medium",
     color: n,
     className: o()(u.promotedTag, t),

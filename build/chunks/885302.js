@@ -6,9 +6,9 @@ var i = n(255367);
 n(73800);
 var r = n(780384),
   s = n(410030),
-  l = n(325767);
+  a = n(325767);
 
-function a(e) {
+function l(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -52,7 +52,7 @@ let o = (e, t) => null != t ? t : e ? .5 : .2,
       g = (0, r.ap)(p),
       h = o(g, d),
       f = c(g, u);
-    return (0, i.jsxs)("svg", (t = a({
+    return (0, i.jsxs)("svg", (t = l({
       style: {
         overflow: "visible"
       },
@@ -61,7 +61,7 @@ let o = (e, t) => null != t ? t : e ? .5 : .2,
       viewBox: "0 0 100 100",
       fill: "none",
       xmlns: "http://www.w3.org/2000/svg"
-    }, (0, l.Z)(a({}, m))), n = n = {
+    }, (0, a.Z)(l({}, m))), n = n = {
       children: [(0, i.jsxs)("svg", {
         width: "100",
         height: "100",

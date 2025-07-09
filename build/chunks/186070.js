@@ -1,6 +1,6 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  FI: () => l,
+  FI: () => a,
   IL: () => s
 });
 var i = n(585483),
@@ -12,7 +12,7 @@ let s = {
       if (i.S.hasSubscribers(r.CkL.CALL_ACCEPT)) return i.S.dispatch(r.CkL.CALL_ACCEPT), !1
     }
   },
-  l = {
+  a = {
     binds: ["ctrl+'", "ctrl+shift+'"],
     comboKeysBindGlobal: !0,
     action(e) {
