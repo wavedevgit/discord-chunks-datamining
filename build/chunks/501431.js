@@ -228,6 +228,8 @@ let g = {
           b.setState({
             queryPageOffset: 0
           })
+        }, {
+          equalityFn: (e, t) => JSON.stringify(e) === JSON.stringify(t)
         });
       return () => {
         r(), o(), i()
