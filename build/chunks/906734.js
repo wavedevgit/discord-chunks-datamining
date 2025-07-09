@@ -1,17 +1,18 @@
-/** Chunk was on 1272 **/
+/** Chunk was on 89795 **/
 n.d(t, {
-  A: () => l
+  A: () => s,
+  F: () => a
 });
-var r = n(818083),
-  i = n(987338);
-let l = (0, r.B)({
+var i = n(818083),
+  r = n(987338);
+let s = (0, i.B)({
   id: "2025-06_display_name_styles",
   kind: "user",
   label: "Display Name Styles",
   defaultConfig: {
     enabled: !1
   },
-  commonTriggerPoint: i.$P.CONNECTION_OPEN,
+  commonTriggerPoint: r.$P.CONNECTION_OPEN,
   treatments: [{
     id: 1,
     label: "Enables the display name styles Nitro perk.",
@@ -19,4 +20,13 @@ let l = (0, r.B)({
       enabled: !0
     }
   }]
-})
+});
+
+function a(e) {
+  let {
+    location: t
+  } = e;
+  return s.useExperiment({
+    location: t
+  }).enabled
+}

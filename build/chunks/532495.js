@@ -114,7 +114,8 @@ function D() {
       errors: ei,
       currentGlobalName: L.globalName,
       pendingGlobalName: U,
-      onGlobalNameChange: l.W0
+      onGlobalNameChange: l.W0,
+      user: L
     }), (0, i.jsx)(C.Z, {
       sectionTitle: P.intl.string(P.t["+T3RIy"]),
       errors: K.pronouns,
