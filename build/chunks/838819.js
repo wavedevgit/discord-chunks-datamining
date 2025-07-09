@@ -68,9 +68,9 @@ let w = e => {
       Z()
     }, [o, Z]);
     let {
-      onClose: F
+      onClose: D
     } = (0, I.Db)(), {
-      categories: D,
+      categories: F,
       refreshCategories: M
     } = (0, x.ZP)({
       location: "CollectiblesShop.web",
@@ -81,7 +81,7 @@ let w = e => {
       isFullScreen: t
     });
     (0, m.P)();
-    let H = (0, y.O)(D),
+    let H = (0, y.O)(F),
       [W, V] = l.useState(),
       U = (0, s.e7)([v.Z], () => {
         var e;
@@ -129,7 +129,7 @@ let w = e => {
           pageSize: B.kN
         },
         children: (0, r.jsx)(w, {
-          onClose: F,
+          onClose: D,
           shouldAddEventListener: t && !J,
           children: (0, r.jsx)("div", {
             className: R.shop,
@@ -148,7 +148,7 @@ let w = e => {
                 children: [(0, r.jsx)(L.I, {
                   isFullScreen: t,
                   isLayer: J,
-                  onClose: F,
+                  onClose: D,
                   handleTransition: X,
                   selectedTab: q
                 }), (0, r.jsx)(P.Z, {

@@ -68,10 +68,10 @@ function _(e) {
       return e.observe(A.current), () => e.disconnect()
     }
   }, [R]);
-  let F = n || L || null == y;
+  let D = n || L || null == y;
   return (0, r.jsx)("div", {
     ref: A,
-    children: F ? (0, r.jsx)(f.Z, {}) : (0, r.jsxs)(r.Fragment, {
+    children: D ? (0, r.jsx)(f.Z, {}) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: m.products,
         children: N.map((e, t) => {

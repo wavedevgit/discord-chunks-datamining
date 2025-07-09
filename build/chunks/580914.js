@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  Z: () => F
+  Z: () => D
 }), n(388685);
 var r = n(255367),
   l = n(73800),
@@ -97,26 +97,26 @@ let R = {
       })]
     })
   },
-  F = e => {
+  D = e => {
     var t, n, o;
     let {
       isLoading: s,
       handleTransition: v,
       category: j,
-      heroBlock: F,
-      tab: D
+      heroBlock: D,
+      tab: F
     } = e, M = (0, c.e7)([d.Z], () => d.Z.useReducedMotion), H = (0, c.e7)([_.Z], () => _.Z.isFocused()), W = (0, c.e7)([m.default], () => m.default.getCurrentUser()), V = (0, S.u)(), U = (0, O.sp)(), {
       showBetaTag: G
     } = b.Z.useExperiment({
       location: "collectible_hero_block"
-    }), z = l.useMemo(() => null != F ? F : w(j), [F, j]), {
+    }), z = l.useMemo(() => null != D ? D : w(j), [D, j]), {
       isPreviewingStaticBanner: Y,
       bannerOverrides: q,
       bannerStyleOverrides: K,
       heroLogo: X,
       heroBannerStatic: Q,
       heroBannerAnimated: J
-    } = (0, L.hr)(z), $ = null == q ? void 0 : q.heroBanner, ee = null != (n = null != (t = null == K ? void 0 : K.responsive) ? t : z.responsive) && n, et = null != (o = null == K ? void 0 : K.backgroundStyle) ? o : z.backgroundStyle, en = l.useMemo(() => V(z.rankedSkuIds), [s, V, z.rankedSkuIds]), er = (0, x.a)()(en), el = (0, y.l)(er).slice(0, 4), eo = (0, I.St)(el), ei = D === k.AW.ORBS ? N.intl.string(N.t["1CdL8f"]) : N.intl.formatToPlainString(N.t.wvKYCg, {
+    } = (0, L.hr)(z), $ = null == q ? void 0 : q.heroBanner, ee = null != (n = null != (t = null == K ? void 0 : K.responsive) ? t : z.responsive) && n, et = null != (o = null == K ? void 0 : K.backgroundStyle) ? o : z.backgroundStyle, en = l.useMemo(() => V(z.rankedSkuIds), [s, V, z.rankedSkuIds]), er = (0, x.a)()(en), el = (0, y.l)(er).slice(0, 4), eo = (0, I.St)(el), ei = F === k.AW.ORBS ? N.intl.string(N.t["1CdL8f"]) : N.intl.formatToPlainString(N.t.wvKYCg, {
       category_name: z.name
     });
     return null != W && (s || z !== R) ? (0, r.jsxs)("div", {
@@ -164,10 +164,10 @@ let R = {
                 variant: "heading-xxl/bold",
                 className: A.title,
                 color: "header-primary",
-                children: [z.title, D === k.AW.ORBS && G && (0, r.jsx)(g.Z, {})]
+                children: [z.title, F === k.AW.ORBS && G && (0, r.jsx)(g.Z, {})]
               }), (0, r.jsx)(u.Text, {
-                variant: D === k.AW.ORBS ? "text-lg/medium" : "text-md/normal",
-                className: D === k.AW.ORBS ? A.orbsSubHeaderText : (null == q ? void 0 : q.showDarkBannerText) ? A.subHeaderTextDark : A.subHeaderText,
+                variant: F === k.AW.ORBS ? "text-lg/medium" : "text-md/normal",
+                className: F === k.AW.ORBS ? A.orbsSubHeaderText : (null == q ? void 0 : q.showDarkBannerText) ? A.subHeaderTextDark : A.subHeaderText,
                 style: null != z.bannerTextColor ? {
                   color: z.bannerTextColor
                 } : void 0,
@@ -180,7 +180,7 @@ let R = {
               className: A.heroHeaderButton,
               color: u.Ttl.WHITE,
               onClick: () => {
-                D === k.AW.ORBS ? ((0, h.Y)({
+                F === k.AW.ORBS ? ((0, h.Y)({
                   pageType: B.ZY5.SHOP_ORBS_TAB,
                   sectionType: B.jXE.ORBS_SHOP_HERO_BLOCK,
                   ctaObject: B.qAy.CTA_TO_QUEST_HOME
@@ -189,7 +189,7 @@ let R = {
                 })) : (v("shop latest category hero", z.categorySkuId), C.default.track(B.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                   collectibles_shop_session_id: null == U ? void 0 : U.sessionId,
                   sku_id: z.categorySkuId,
-                  page_type: D,
+                  page_type: F,
                   page_section: null == U ? void 0 : U.pageSection,
                   page_category: null == U ? void 0 : U.pageCategory,
                   cta_name: "shop latest category hero button"
@@ -200,7 +200,7 @@ let R = {
           })]
         }), (0, r.jsx)("div", {
           className: i()(A.row, A.feed, {
-            [A.feedSingleRow]: D !== k.AW.ORBS
+            [A.feedSingleRow]: F !== k.AW.ORBS
           }),
           children: s ? (0, r.jsx)(r.Fragment, {
             children: [void 0, void 0, void 0, void 0].map((e, t) => (0, r.jsx)(T.K, {}, t))
@@ -217,7 +217,7 @@ let R = {
                   product: e,
                   category: n,
                   user: W,
-                  tab: D
+                  tab: F
                 }, e.skuId)
               }, null == e ? void 0 : e.skuId)
             })

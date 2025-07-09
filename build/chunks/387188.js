@@ -39,7 +39,7 @@ function C(e) {
       name: d.name
     }, m.TW.MESSAGE)
   }, [s, d, t.id]);
-  return (0, r.jsx)(c.P3F, {
+  return null == d ? null : (0, r.jsx)(c.P3F, {
     className: a()(n, b.ctaReactionButton),
     onClick: p,
     onMouseEnter: () => o(!0),
@@ -79,7 +79,7 @@ function x(e) {
   }, [x]);
   return (0, r.jsx)(p.Z, {
     iconNode: (0, r.jsx)(o.EO4, {
-      size: "md",
+      size: "refresh_sm",
       color: "currentColor"
     }),
     iconContainerClassName: b.iconContainer,

@@ -200,6 +200,7 @@ let _ = e => {
           children: o && (0, r.jsx)("div", {
             className: b.checkIcon,
             children: (0, r.jsx)(u.sV5, {
+              size: "xs",
               color: u.TVs.colors.WHITE
             })
           })

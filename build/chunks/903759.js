@@ -26,13 +26,15 @@ let h = e => {
         }), (0, r.jsx)(a.Text, {
           variant: "text-md/medium",
           children: u.intl.format(u.t["Ks2/3d"], {
-            selectFileHook: (e, n) => (0, r.jsx)(p, {
+            selectFileHook: (e, n) => (0, r.jsx)(m, {
               translatedContent: e,
               setUserImage: t
             }, n)
           })
         }), null !== n && (0, r.jsx)(c.H, {
-          error: o.ze.IMAGE_LOAD
+          error: o.ze.IMAGE_LOAD,
+          variant: "text-sm/normal",
+          color: "text-danger"
         }), (0, r.jsx)(i.X, {
           onSuccess: t,
           onError: s
@@ -40,7 +42,7 @@ let h = e => {
       })
     })
   },
-  p = e => {
+  m = e => {
     let {
       setUserImage: t,
       translatedContent: n

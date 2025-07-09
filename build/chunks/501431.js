@@ -136,11 +136,6 @@ let g = {
         itemTypeFilters: new Set([t])
       })
     },
-    clearItemTypeFilter: () => {
-      e({
-        itemTypeFilters: new Set
-      })
-    },
     clearFilters: () => {
       e({
         itemTypeFilters: new Set,

@@ -12,7 +12,7 @@ var r = n(255367),
   u = n(511004),
   d = n(598117),
   h = n(388032),
-  p = n(917093);
+  m = n(917093);
 
 function g(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -33,7 +33,7 @@ function g(e) {
   return e
 }
 
-function m(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -63,10 +63,10 @@ let f = new o.Z("ImageEditor"),
       bottom: 0,
       left: 0,
       right: 0
-    }), [w, T] = l.useState(0), [A, M] = l.useState({
+    }), [w, T] = l.useState(0), [A, k] = l.useState({
       x: 0,
       y: 0
-    }), [k, P] = l.useState(!1), R = "image/gif" === t.type, L = (0, i.v)(t.type), z = L && !R, [Z, G] = l.useState(null);
+    }), [M, P] = l.useState(!1), R = "image/gif" === t.type, L = (0, i.v)(t.type), Z = L && !R, [z, G] = l.useState(null);
     l.useEffect(() => {
       (0, u.Z)()
     }, []);
@@ -126,7 +126,7 @@ let f = new o.Z("ImageEditor"),
         }
       }, [D, w, E]),
       H = l.useCallback(e => {
-        M({
+        k({
           x: e.clientX - x.current.x,
           y: e.clientY - x.current.y
         }), P(!0)
@@ -140,14 +140,14 @@ let f = new o.Z("ImageEditor"),
         x: t,
         y: n
       } = x.current;
-      k && (e.clientX !== t || e.clientY !== n) && U({
+      M && (e.clientX !== t || e.clientY !== n) && U({
         x: t = e.clientX - A.x,
         y: n = e.clientY - A.y
       })
-    }, [k, A, U]);
+    }, [M, A, U]);
     l.useEffect(() => {
-      if (k) return window.addEventListener("mousemove", V), () => window.removeEventListener("mousemove", V)
-    }, [V, k]);
+      if (M) return window.addEventListener("mousemove", V), () => window.removeEventListener("mousemove", V)
+    }, [V, M]);
     let Y = l.useRef(null),
       J = l.useCallback(async () => {
         let e;
@@ -180,7 +180,7 @@ let f = new o.Z("ImageEditor"),
         } finally {
           var u;
           null == (u = Y.current) || u.call(Y), Y.current = null
-        } else e = z ? n : (0, a.PT)({
+        } else e = Z ? n : (0, a.PT)({
           image: l,
           cropDimensions: v,
           cropOriginCoordinates: x.current,
@@ -196,11 +196,11 @@ let f = new o.Z("ImageEditor"),
           var e;
           null == (e = Y.current) || e.call(Y), Y.current = null
         }
-      }, [t, w, R, z, o, D, E, n]);
+      }, [t, w, R, Z, o, D, E, n]);
     l.useEffect(() => {
       J()
-    }, [J, w, D, k, E, Z]);
-    let X = l.useCallback(() => {
+    }, [J, w, D, M, E, z]);
+    let K = l.useCallback(() => {
       if (null == N.current) return;
       let e = N.current.naturalWidth,
         t = N.current.naturalHeight;
@@ -215,11 +215,11 @@ let f = new o.Z("ImageEditor"),
       }, n, L))
     }, [L]);
     return (0, r.jsxs)("div", {
-      className: p.imageEditor,
+      className: m.imageEditor,
       children: [(0, r.jsxs)("div", {
-        className: p.editingContainer,
+        className: m.editingContainer,
         children: [(0, r.jsx)("img", {
-          onLoad: X,
+          onLoad: K,
           onError: () => {
             o({
               error: d.ze.IMAGE_LOAD,
@@ -230,30 +230,30 @@ let f = new o.Z("ImageEditor"),
             opacity: +(null != D),
             transform: "translate3d(".concat(x.current.x, "px, ").concat(x.current.y, "px, 0) rotate(").concat(w, "deg)")
           }, F()),
-          className: p.image,
+          className: m.image,
           src: n,
           crossOrigin: "anonymous",
           alt: h.intl.string(h.t.EYR1FR),
           ref: N,
           onMouseDown: H,
           draggable: !1
-        }), !z && (0, r.jsx)("div", {
-          className: p.overlay,
+        }), !Z && (0, r.jsx)("div", {
+          className: m.overlay,
           style: {
             opacity: +(null != D),
             width: v.width,
             height: v.height
           }
         })]
-      }), z ? (0, r.jsx)("div", {
-        className: p.animatedInfoContainer,
+      }), Z ? (0, r.jsx)("div", {
+        className: m.animatedInfoContainer,
         children: (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
           children: h.intl.string(h.t["5XCxio"])
         })
       }) : (0, r.jsxs)("div", {
-        className: p.toolsContainer,
+        className: m.toolsContainer,
         children: [(0, r.jsx)(s.ua7, {
           text: h.intl.string(h.t["oCs/+P"]),
           "aria-label": h.intl.string(h.t["oCs/+P"]),
@@ -275,8 +275,8 @@ let f = new o.Z("ImageEditor"),
               }
               return l
             }(e, ["onClick"]);
-            return (0, r.jsx)(s.zxk, m(g({
-              className: p.rotateButton,
+            return (0, r.jsx)(s.zxk, p(g({
+              className: m.rotateButton,
               look: s.zxk.Looks.BLANK,
               size: s.PhG.NONE,
               color: s.zxk.Colors.TRANSPARENT,
@@ -290,13 +290,13 @@ let f = new o.Z("ImageEditor"),
             }))
           }
         }), (0, r.jsxs)("div", {
-          className: p.zoomControls,
+          className: m.zoomControls,
           children: [(0, r.jsx)(s.BlJ, {
             color: s.TVs.colors.ICON_SECONDARY,
             size: "sm"
-          }), null != Z && (0, r.jsx)(s.iRW, {
-            className: p.slider,
-            initialValue: Z,
+          }), null != z && (0, r.jsx)(s.iRW, {
+            className: m.slider,
+            initialValue: z,
             minValue: 1,
             maxValue: 4,
             keyboardStep: .025,
@@ -361,7 +361,7 @@ let O = (e, t, n) => {
     height: r,
     width: l
   }, s = Math.floor(a < 1 ? d.eT * a : d.eT / a), o = a < 1 ? s : d.eT, c = a > 1 ? s : d.eT;
-  return m(g({}, e), {
+  return p(g({}, e), {
     cropDimensions: i,
     resizeHeight: o,
     resizeWidth: c
