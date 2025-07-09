@@ -1,6 +1,6 @@
 /**
   Module ID: 89795
-  Original File Name: bec37790f778ad9c
+  Original File Name: 04eb898edad21021
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -4661,24 +4661,23 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
 
 .preview_c202a4 {
     background: var(--background-base-lowest);
+    padding: 8px
+}
+
+.preview_c202a4,.simArea_c202a4 {
     border-radius: 8px;
-    padding: 8px;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content
+    width: 100%
 }
 
 .simArea_c202a4 {
     background: var(--background-base-lower);
-    border-radius: 8px;
     display: flex;
     flex-direction: column;
     gap: 8px;
     padding-bottom: 10px;
     padding-right: 8px;
     padding-top: 10px;
-    position: relative;
-    width: 240px
+    position: relative
 }
 
 .toggleButton_c202a4 {
@@ -4805,22 +4804,26 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
 .previews_c202a4 {
     display: flex;
     flex-direction: column;
-    gap: 8px
+    gap: 8px;
+    max-width: 432px;
+    min-width: 264px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    resize: none
 }
 
 .label_c202a4 {
     margin-left: 8px
 }
 
-.resizer_c202a4 {
-    max-width: 360px;
-    resize: horizontal
+.rtcSim_c202a4 {
+    border-radius: 8px
 }
 
-.rtcSim_c202a4 {
-    background: var(--background-base-lower);
-    height: 60px;
-    width: 252px
+.rtcSim_c202a4>div>div {
+    padding-left: 10px!important;
+    padding-right: 10px!important
 }
 
 .theme-dark .rtcSim_c202a4 {
@@ -4829,6 +4832,42 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
 
 .theme-light .rtcSim_c202a4 {
     background: var(--bg-overlay-3,var(--background-secondary-alt))
+}
+
+.resizeHandle_c202a4 {
+    align-items: center;
+    background: var(--background-base-lowest);
+    border-radius: 4px;
+    bottom: 0;
+    cursor: ew-resize;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: -2px;
+    top: 0;
+    transition: background-color .2s ease;
+    width: 8px;
+    z-index: 10
+}
+
+.resizeHandle_c202a4:hover {
+    background: var(--background-base-lower)
+}
+
+.resizeHandle_c202a4:after,.resizeHandle_c202a4:before {
+    background: var(--text-muted);
+    border-radius: 1px;
+    content: "";
+    height: 20px;
+    width: 2px
+}
+
+.resizeHandle_c202a4:after {
+    left: 50%;
+    margin-left: 2px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%)
 }
 
 .applicationHomeBanner__62eb1 {
@@ -19695,4 +19734,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=bec37790f778ad9c.css.map*/
+/*# sourceMappingURL=04eb898edad21021.css.map*/

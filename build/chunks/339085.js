@@ -127,7 +127,7 @@ let Q = 42,
   J = D.default.fromTimestamp(Date.now() - 60 * C.Z.Millis.DAY),
   $ = [],
   ee = 3,
-  et = z.slice(0),
+  et = [...z],
   en = {},
   er = {},
   ei = null,
@@ -183,7 +183,7 @@ function ed(e) {
       return null != (t = k.ZP.getByName(e)) ? t : es(e)
     },
     afterCompute: () => {
-      e(), et = z.slice(0), a().some(en, e => e.usableEmojis.length > 0) || et.splice(z.indexOf(V.UX.CUSTOM), 1)
+      e(), et = [...z], a().some(en, e => e.usableEmojis.length > 0) || et.splice(z.indexOf(V.UX.CUSTOM), 1)
     },
     numFrequentlyItems: Q
   })

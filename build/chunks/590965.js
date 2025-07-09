@@ -8,12 +8,12 @@ var i, l = n(442837),
   a = n(413605),
   o = n(703656),
   c = n(131704),
-  u = n(601964),
-  d = n(592125),
-  h = n(430824),
-  p = n(701190),
-  g = n(496675),
-  m = n(594174),
+  u = n(592125),
+  d = n(430824),
+  h = n(701190),
+  p = n(496675),
+  g = n(594174),
+  m = n(411198),
   f = n(998502),
   _ = n(981631),
   x = n(176505);
@@ -49,7 +49,7 @@ function y() {
 }
 class S extends(i = l.ZP.Store) {
   initialize() {
-    this.waitFor(h.Z, p.Z, m.default)
+    this.waitFor(d.Z, h.Z, g.default)
   }
   isOpen() {
     let e = __OVERLAY__ ? _.IlC.OVERLAY : _.IlC.APP;
@@ -80,18 +80,18 @@ let N = new S(s.Z, {
       } = t;
       if (null == e) return !1;
       if ((0, c.bc)(e.type)) {
-        if (null != d.Z.getChannel(e.id)) return (0, o.XU)(_.ME, e.id), f.ZP.focus(), !1
+        if (null != u.Z.getChannel(e.id)) return (0, o.XU)(_.ME, e.id), f.ZP.focus(), !1
       } else {
         if (null == n) return !1;
-        if (null != h.Z.getGuild(n.id) && !(0, a.TY)(t)) {
+        if (null != d.Z.getGuild(n.id) && !(0, a.TY)(t)) {
           let e = function(e) {
             if ((0, a.W6)(e)) return x.oC.ROLE_SUBSCRIPTIONS;
             let {
               channel: t
             } = e;
             if (null != t) {
-              let e = d.Z.getChannel(t.id);
-              if (g.Z.can(_.Plq.VIEW_CHANNEL, e)) return t.id
+              let e = u.Z.getChannel(t.id);
+              if (p.Z.can(_.Plq.VIEW_CHANNEL, e)) return t.id
             }
             return null
           }(t);
@@ -115,10 +115,10 @@ let N = new S(s.Z, {
         target_application: a,
         stage_instance: o,
         type: c,
-        channel: d,
-        guild: h,
-        is_nickname_changeable: p
-      } = e, g = {
+        channel: u,
+        guild: d,
+        is_nickname_changeable: h
+      } = e, p = {
         code: r,
         state: i,
         approximate_member_count: t,
@@ -128,9 +128,9 @@ let N = new S(s.Z, {
         target_application: a,
         stage_instance: o,
         type: c,
-        is_nickname_changeable: p
+        is_nickname_changeable: h
       };
-      return null != d && (g.channel = E({}, d)), null != h && (g.guild = new u.ZP(h)), null != e.inviter && (g.inviter = E({}, e.inviter)), g
+      return null != u && (p.channel = E({}, u)), null != d && (p.guild = (0, m.Qs)(d)), null != e.inviter && (p.inviter = E({}, e.inviter)), p
     }(t);
     O.push([n, e.resolve])
   },

@@ -8,7 +8,7 @@ var r, i = n(442837),
   o = n(457330),
   s = n(726542),
   l = n(368111),
-  c = n(601964);
+  c = n(411198);
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -67,7 +67,9 @@ function I(e) {
 function T(e) {
   e.local && null != e.accounts ? v(e.accounts.map(e => new l.Z(_(d({}, e), {
     integrations: e.integrations.map(e => _(d({}, e), {
-      guild: new c.ZP(e.guild)
+      guild: (0, c.yS)(_(d({}, e.guild), {
+        features: []
+      }))
     }))
   })))) : o.Z.fetch()
 }

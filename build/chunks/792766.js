@@ -11,8 +11,8 @@ var r = n(255367),
   s = n(481060),
   c = n(686546),
   u = n(565138),
-  d = n(601964),
-  p = n(598077),
+  d = n(598077),
+  p = n(411198),
   m = n(388032),
   f = n(515230);
 let _ = e => {
@@ -21,7 +21,7 @@ let _ = e => {
       speaker: n,
       guildId: i,
       isEmbed: l
-    } = e, a = new p.Z(n.user);
+    } = e, a = new d.Z(n.user);
     return (0, r.jsxs)("div", {
       className: f.speaker,
       children: [(0, r.jsx)(s.qEK, {
@@ -43,7 +43,7 @@ let _ = e => {
       onlineCount: n
     } = e;
     if (null == t) return null;
-    let i = new d.ZP(t),
+    let i = p.Qs(t),
       {
         name: l,
         description: a
@@ -95,10 +95,10 @@ let _ = e => {
     let {
       stageInstance: n,
       guild: l,
-      isCard: p = !1,
+      isCard: d = !1,
       isEmbed: g = !1,
       onClick: h
-    } = e, b = i.useMemo(() => null == l ? null : l instanceof d.ZP ? l : new d.ZP(l), [l]);
+    } = e, b = i.useMemo(() => null == l ? null : p.lM(l) ? l : p.Qs(l), [l]);
     if (null == n || null == b) return null;
     let {
       topic: E,
@@ -155,7 +155,7 @@ let _ = e => {
           children: b.name
         })]
       }), (0, r.jsx)(s.X6q, {
-        variant: p || g ? "heading-md/semibold" : "heading-lg/semibold",
+        variant: d || g ? "heading-md/semibold" : "heading-lg/semibold",
         className: a()(f.header, {
           [f.embed]: g
         }),

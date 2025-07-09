@@ -1,15 +1,15 @@
 /** Chunk was on web.js **/
 "use strict";
-let r, i, a;
+let r, i;
 n.d(t, {
-  Z: () => R
+  Z: () => C
 }), n(388685);
-var o, s = n(442837),
-  l = n(570140),
-  c = n(981631),
-  u = n(354459);
+var a, o = n(442837),
+  s = n(570140),
+  l = n(981631),
+  c = n(354459);
 
-function d(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -18,20 +18,20 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function d(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      d(e, t, n[t])
+      u(e, t, n[t])
     })
   }
   return e
 }
 
-function _(e, t) {
+function f(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -42,100 +42,111 @@ function _(e, t) {
   return n
 }
 
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let h = new Map,
-  m = {},
-  g = c.VD2.BOTTOM_RIGHT,
-  E = {
-    [u.cL.VIDEO]: u.l8[u.cL.VIDEO],
-    [u.cL.CAMERA_PREVIEW]: u.l8[u.cL.CAMERA_PREVIEW]
+let p = new Map,
+  h = {},
+  m = l.VD2.BOTTOM_RIGHT,
+  g = {
+    [c.cL.VIDEO]: c.l8[c.cL.VIDEO],
+    [c.cL.CAMERA_PREVIEW]: c.l8[c.cL.CAMERA_PREVIEW]
   };
 
-function b(e) {
+function E(e) {
   var t, n;
   let {
-    id: o,
-    component: s,
-    props: l
+    id: a,
+    component: o,
+    props: s
   } = e;
-  if (null != h.get(o)) return;
-  let u = {
-    id: o,
-    component: s,
-    position: null != (t = l.position) ? t : g,
-    props: l,
-    docked: null != (n = l.docked) && n
+  if (null != p.get(a)) return;
+  let c = {
+    id: a,
+    component: o,
+    position: null != (t = s.position) ? t : m,
+    props: s,
+    docked: null != (n = s.docked) && n
   };
-  h.set(o, u), s === c.NYg.VIDEO ? null == r && (r = o) : s === c.NYg.ACTIVITY ? null == i && (i = o) : s === c.NYg.FRAME && null == a && (a = o)
+  p.set(a, c), o === l.NYg.VIDEO ? null == r && (r = a) : o === l.NYg.EMBED_IFRAME && null == i && (i = a)
+}
+
+function b(e) {
+  let {
+    id: t
+  } = e;
+  if (!p.has(t)) return !1;
+  {
+    p.delete(t);
+    let e = Array.from(p.keys());
+    r === t ? r = e.find(e => {
+      let t = p.get(e);
+      return null != t && t.component === l.NYg.VIDEO
+    }) : i === t && (i = e.find(e => {
+      let t = p.get(e);
+      return null != t && t.component === l.NYg.EMBED_IFRAME
+    }))
+  }
 }
 
 function y(e) {
   let {
-    id: t
+    id: t,
+    position: n
   } = e;
-  if (!h.has(t)) return !1;
+  if (null == t || r !== t && i !== t) return !1;
   {
-    h.delete(t);
-    let e = Array.from(h.keys());
-    r === t ? r = e.find(e => {
-      let t = h.get(e);
-      return null != t && t.component === c.NYg.VIDEO
-    }) : i === t ? i = e.find(e => {
-      let t = h.get(e);
-      return null != t && t.component === c.NYg.ACTIVITY
-    }) : a === t && (a = e.find(e => {
-      let t = h.get(e);
-      return null != t && t.component === c.NYg.FRAME
-    }))
+    let e = new Map;
+    p.forEach((t, r) => {
+      e.set(r, _(d({}, t), {
+        position: n
+      }))
+    }), p = e, m = n
   }
 }
 
 function O(e) {
   let {
-    id: t,
-    position: n
+    width: t,
+    pipType: n
   } = e;
-  if (null == t || r !== t && i !== t && a !== t) return !1;
-  {
-    let e = new Map;
-    h.forEach((t, r) => {
-      e.set(r, p(f({}, t), {
-        position: n
-      }))
-    }), h = e, g = n
-  }
+  g[n] = t
 }
 
 function v(e) {
   let {
-    width: t,
-    pipType: n
+    id: t,
+    rect: n
   } = e;
-  E[n] = t
+  h[t] = n
 }
 
 function I(e) {
   let {
-    id: t,
-    rect: n
+    id: t
   } = e;
-  m[t] = n
+  if (r !== t && i !== t) return !1;
+  {
+    let e = p.get(t);
+    if (null == e) return !1;
+    p.set(t, _(d({}, e), {
+      hidden: !0
+    }))
+  }
 }
 
 function T(e) {
   let {
     id: t
   } = e;
-  if (r !== t && i !== t && a !== t) return !1;
+  if (r !== t && i !== t) return !1;
   {
-    let e = h.get(t);
+    let e = p.get(t);
     if (null == e) return !1;
-    h.set(t, p(f({}, e), {
-      hidden: !0
+    p.set(t, _(d({}, e), {
+      hidden: !1
     }))
   }
 }
@@ -143,94 +154,74 @@ function T(e) {
 function S(e) {
   let {
     id: t
-  } = e;
-  if (r !== t && i !== t && a !== t) return !1;
-  {
-    let e = h.get(t);
-    if (null == e) return !1;
-    h.set(t, p(f({}, e), {
-      hidden: !1
-    }))
-  }
+  } = e, n = p.get(t);
+  null != n && (n.component === l.NYg.VIDEO ? r = t : n.component === l.NYg.EMBED_IFRAME && (i = t))
 }
 
-function A(e) {
-  let {
-    id: t
-  } = e, n = h.get(t);
-  null != n && (n.component === c.NYg.VIDEO ? r = t : n.component === c.NYg.ACTIVITY ? i = t : n.component === c.NYg.FRAME && (a = t))
+function A() {
+  r = null, i = null, p = new Map
 }
-
-function N() {
-  r = null, i = null, a = null, h = new Map
-}
-class C extends(o = s.ZP.PersistedStore) {
+class N extends(a = o.ZP.PersistedStore) {
   initialize(e) {
     if (null == e) {
-      g = c.VD2.BOTTOM_RIGHT, E = {
-        [u.cL.VIDEO]: u.l8[u.cL.VIDEO],
-        [u.cL.CAMERA_PREVIEW]: u.l8[u.cL.CAMERA_PREVIEW]
+      m = l.VD2.BOTTOM_RIGHT, g = {
+        [c.cL.VIDEO]: c.l8[c.cL.VIDEO],
+        [c.cL.CAMERA_PREVIEW]: c.l8[c.cL.CAMERA_PREVIEW]
       };
       return
     }
-    g = e.openPosition, E = e.pipWidths
+    m = e.openPosition, g = e.pipWidths
   }
   get pipWindow() {
-    var e, t;
-    return null == r && null == i && null == a ? null : h.get(null != (t = null != (e = null != r ? r : i) ? e : a) ? t : "")
+    var e;
+    return null == r && null == i ? null : p.get(null != (e = null != r ? r : i) ? e : "")
   }
   get pipVideoWindow() {
-    return null == r ? null : h.get(r)
+    return null == r ? null : p.get(r)
   }
   get pipActivityWindow() {
-    return null == i ? null : h.get(i)
-  }
-  get pipFrameWindow() {
-    return null == a ? null : h.get(a)
+    return null == i ? null : p.get(i)
   }
   get pipWindows() {
-    return h
+    return p
   }
   pipWidth(e) {
-    return E[e]
+    return g[e]
   }
   isEmbeddedActivityHidden() {
     return null == i
   }
-  isFrameHidden() {
-    return null == a
-  }
   getDockedRect(e) {
-    return m[e]
+    return h[e]
   }
   isOpen(e) {
-    return null != e && h.has(e)
+    return null != e && p.has(e)
   }
   getState() {
     return {
-      openPosition: g,
-      pipWidths: E
+      openPosition: m,
+      pipWidths: g
     }
   }
 }
-d(C, "displayName", "PictureInPictureStore"), d(C, "persistKey", "PictureInPictureStore"), d(C, "migrations", [e => {
+u(N, "displayName", "PictureInPictureStore"), u(N, "persistKey", "PictureInPictureStore"), u(N, "migrations", [e => {
   var t, n;
   return {
     pipWidths: {
-      [u.cL.VIDEO]: null != (t = e.pipWidth) ? t : u.l8[u.cL.VIDEO],
-      [u.cL.CAMERA_PREVIEW]: u.l8[u.cL.CAMERA_PREVIEW]
+      [c.cL.VIDEO]: null != (t = e.pipWidth) ? t : c.l8[c.cL.VIDEO],
+      [c.cL.CAMERA_PREVIEW]: c.l8[c.cL.CAMERA_PREVIEW]
     },
-    openPosition: null != (n = e.openPosition) ? n : c.VD2.BOTTOM_RIGHT
+    openPosition: null != (n = e.openPosition) ? n : l.VD2.BOTTOM_RIGHT
   }
 }]);
-let R = new C(l.Z, {
-  PICTURE_IN_PICTURE_OPEN: b,
-  PICTURE_IN_PICTURE_CLOSE: y,
-  PICTURE_IN_PICTURE_MOVE: O,
-  PICTURE_IN_PICTURE_RESIZE: v,
-  PICTURE_IN_PICTURE_HIDE: T,
-  PICTURE_IN_PICTURE_SHOW: S,
-  PICTURE_IN_PICTURE_UPDATE_RECT: I,
-  PICTURE_IN_PICTURE_UPDATE_SELECTED_WINDOW: A,
-  LOGOUT: N
+let C = new N(s.Z, {
+  PICTURE_IN_PICTURE_OPEN: E,
+  PICTURE_IN_PICTURE_CLOSE: b,
+  PICTURE_IN_PICTURE_MOVE: y,
+  PICTURE_IN_PICTURE_RESIZE: O,
+  PICTURE_IN_PICTURE_HIDE: I,
+  PICTURE_IN_PICTURE_SHOW: T,
+  PICTURE_IN_PICTURE_UPDATE_RECT: v,
+  PICTURE_IN_PICTURE_UPDATE_SELECTED_WINDOW: S,
+  LOGOUT: A
 })

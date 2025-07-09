@@ -12,9 +12,9 @@ var r = n(255367),
   u = n(906732),
   d = n(955415),
   p = n(131704),
-  m = n(601964),
-  f = n(199902),
-  _ = n(914010),
+  m = n(199902),
+  f = n(914010),
+  _ = n(411198),
   g = n(51144),
   h = n(358595),
   b = n(981631),
@@ -32,9 +32,9 @@ function x(e) {
       onAcceptInstantInvite: S
     } = e,
     T = null == O ? void 0 : O.id,
-    N = (0, o.e7)([_.Z], () => _.Z.getGuildId()),
-    P = (0, o.e7)([f.Z], () => null != x && null != x.target_user ? f.Z.getActiveStreamForUser(x.target_user.id, T) : null, [x, T]),
-    A = (0, o.e7)([f.Z], () => null != x && null != x.target_user ? f.Z.getStreamForUser(x.target_user.id, T) : null, [x, T]),
+    N = (0, o.e7)([f.Z], () => f.Z.getGuildId()),
+    P = (0, o.e7)([m.Z], () => null != x && null != x.target_user ? m.Z.getActiveStreamForUser(x.target_user.id, T) : null, [x, T]),
+    A = (0, o.e7)([m.Z], () => null != x && null != x.target_user ? m.Z.getStreamForUser(x.target_user.id, T) : null, [x, T]),
     {
       analyticsLocations: w
     } = (0, u.ZP)(c.Z.INVITE_EMBED),
@@ -60,7 +60,7 @@ function x(e) {
     F = null != O;
   if (null == O) {
     if (null == x.guild) return (0, r.jsx)(h.Z, {});
-    O = new m.ZP(x.guild)
+    O = (0, _.Qs)(x.guild)
   }
   let B = null != x.channel ? (0, p.jD)(x.channel) : null,
     G = g.ZP.getName(D);

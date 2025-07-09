@@ -15,9 +15,9 @@ var i = t(255367),
   m = t(47343),
   _ = t(973616),
   p = t(131704),
-  x = t(601964),
-  g = t(598077),
-  N = t(594174),
+  x = t(598077),
+  g = t(594174),
+  N = t(411198),
   h = t(51144),
   E = t(981631),
   I = t(888592),
@@ -75,31 +75,31 @@ let S = () => (0, i.jsxs)(l.Fragment, {
       } = e,
       {
         currentUser: b
-      } = (0, a.cj)([N.default], () => ({
-        currentUser: N.default.getCurrentUser()
+      } = (0, a.cj)([g.default], () => ({
+        currentUser: g.default.getCurrentUser()
       })),
       R = (0, d.WR)({
         location: "invite"
       }) && null != b;
     if (null == c) return null;
-    let Z = null != c.guild ? new x.ZP(c.guild) : null,
+    let Z = null != c.guild ? N.lM(c.guild) ? c.guild : N.Qs(c.guild) : null,
       z = null != c.channel ? (0, p.jD)(c.channel) : null,
-      D = null != c.target_application ? new _.ZP(c.target_application) : null,
-      M = S || null == c.inviter ? null : new g.Z(c.inviter),
-      k = !(null != c.approximate_member_count && c.approximate_member_count > 100 || null != Z && Z.features.has(E.oNc.COMMUNITY)) && null != M,
+      M = null != c.target_application ? new _.ZP(c.target_application) : null,
+      D = S || null == c.inviter ? null : new x.Z(c.inviter),
+      k = !(null != c.approximate_member_count && c.approximate_member_count > 100 || null != Z && Z.features.has(E.oNc.COMMUNITY)) && null != D,
       O = null,
       U = !1;
-    if (null != Z) O = null == M ? f.intl.string(f.t["3rE1Pz"]) : f.intl.formatToPlainString(f.t["5u47vb"], {
-      username: h.ZP.getFormattedName(M)
+    if (null != Z) O = null == D ? f.intl.string(f.t["3rE1Pz"]) : f.intl.formatToPlainString(f.t["5u47vb"], {
+      username: h.ZP.getFormattedName(D)
     }), c.target_type === v.Iq.STREAM && null != c.target_user && (O = f.intl.formatToPlainString(f.t.x2L32d, {
       username: h.ZP.getFormattedName(c.target_user)
-    })), c.target_type === v.Iq.EMBEDDED_APPLICATION && null != c.target_application && (O = null != M ? f.intl.formatToPlainString(f.t.UW1Cam, {
-      username: h.ZP.getFormattedName(M)
-    }) : f.intl.string(f.t.ENSuNz)), k && null == D && (t = (0, i.jsx)(s.Vj, {
+    })), c.target_type === v.Iq.EMBEDDED_APPLICATION && null != c.target_application && (O = null != D ? f.intl.formatToPlainString(f.t.UW1Cam, {
+      username: h.ZP.getFormattedName(D)
+    }) : f.intl.string(f.t.ENSuNz)), k && null == M && (t = (0, i.jsx)(s.Vj, {
       className: j.icon,
       guild: Z,
       size: s.Vj.Sizes.SMALL
-    })), l = Z.name, null != D && (l = D.name, o = (0, i.jsxs)("div", {
+    })), l = Z.name, null != M && (l = M.name, o = (0, i.jsxs)("div", {
       children: [(0, i.jsx)(s.DK, {
         className: j.appIn,
         children: f.intl.string(f.t["3gg9fH"])
@@ -118,16 +118,16 @@ let S = () => (0, i.jsxs)(l.Fragment, {
       })]
     }));
     else if (null != z) {
-      if (null == M) throw Error("no inviter in group DM invite");
-      let e = h.ZP.getFormattedName(M);
+      if (null == D) throw Error("no inviter in group DM invite");
+      let e = h.ZP.getFormattedName(D);
       null != z.name && "" !== z.name ? (O = f.intl.formatToPlainString(f.t["5u47vb"], {
         username: e
       }), l = z.name, null != z.icon && (t = (0, i.jsx)(s.MC, {
         channel: z,
         size: r.EFr.SIZE_32
       }))) : (O = f.intl.string(f.t.OsdY8P), l = e)
-    } else if (null != M) {
-      let e = h.ZP.getFormattedName(M, !0);
+    } else if (null != D) {
+      let e = h.ZP.getFormattedName(D, !0);
       l = f.intl.formatToPlainString(f.t["4aF92d"], {
         username: e
       }), U = !0, o = null != A ? null : (0, i.jsx)(s.DK, {
@@ -142,9 +142,9 @@ let S = () => (0, i.jsxs)(l.Fragment, {
     return (0, i.jsxs)("div", {
       className: j.container,
       children: [(0, i.jsx)(C, {
-        application: D,
+        application: M,
         guild: Z,
-        user: k ? M : null,
+        user: k ? D : null,
         compact: U
       }), null != A ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(s.DK, {
@@ -163,7 +163,7 @@ let S = () => (0, i.jsxs)(l.Fragment, {
             tooltipPosition: "left"
           }) : null, t, l]
         })]
-      }), o, null != D || U || (null == c || null == (n = c.guild) ? void 0 : n.id) === I.fQ ? null : (0, i.jsx)(s.EJ, {
+      }), o, null != M || U || (null == c || null == (n = c.guild) ? void 0 : n.id) === I.fQ ? null : (0, i.jsx)(s.EJ, {
         className: j.activityCount,
         online: c.approximate_presence_count,
         total: c.approximate_member_count,

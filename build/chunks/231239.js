@@ -2,9 +2,9 @@
 n.d(t, {
   Z: () => o
 }), n(35282);
-var l = n(990547),
-  i = n(283693),
-  r = n(570140),
+var r = n(990547),
+  l = n(283693),
+  i = n(570140),
   a = n(573261),
   s = n(981631);
 let o = {
@@ -15,12 +15,12 @@ let o = {
       school: t
     },
     trackedActionData: {
-      event: l.NetworkActionNames.HUB_WAITLIST_SIGNUP,
+      event: r.NetworkActionNames.HUB_WAITLIST_SIGNUP,
       properties: e => {
         var t;
         let n = !1,
-          l = null == e || null == (t = e.body) ? void 0 : t.email_domain;
-        return null != l && (n = -1 !== l.split(".").indexOf("edu")), (0, i.iG)({
+          r = null == e || null == (t = e.body) ? void 0 : t.email_domain;
+        return null != r && (n = -1 !== r.split(".").indexOf("edu")), (0, l.iG)({
           is_edu_email: n
         })
       }
@@ -36,11 +36,11 @@ let o = {
       use_verification_code: !0
     },
     trackedActionData: {
-      event: l.NetworkActionNames.HUB_EMAIL_VERIFY_SEND,
+      event: r.NetworkActionNames.HUB_EMAIL_VERIFY_SEND,
       properties: e => {
         var t;
         let n = null == e || null == (t = e.body) ? void 0 : t.has_matching_guild;
-        return (0, i.iG)({
+        return (0, l.iG)({
           has_matching_guild: n
         })
       }
@@ -56,16 +56,16 @@ let o = {
           token: e
         },
         trackedActionData: {
-          event: l.NetworkActionNames.HUB_EMAIL_VERIFY
+          event: r.NetworkActionNames.HUB_EMAIL_VERIFY
         },
         rejectWithError: !1
       })).body.guild) ? void 0 : t.id;
-      r.Z.dispatch({
+      i.Z.dispatch({
         type: "HUB_VERIFY_EMAIL_SUCCESS",
         guildId: n
       })
     } catch (e) {
-      r.Z.dispatch({
+      i.Z.dispatch({
         type: "HUB_VERIFY_EMAIL_FAILURE",
         errors: e.body
       })
@@ -73,7 +73,7 @@ let o = {
   },
   async verifyCode(e, t, n) {
     if (null != e) try {
-      var i;
+      var l;
       let o = await a.Z.post({
           url: s.ANM.HUB_EMAIL_VERIFY_CODE,
           body: {
@@ -82,17 +82,17 @@ let o = {
             email: n
           },
           trackedActionData: {
-            event: l.NetworkActionNames.HUB_EMAIL_VERIFY
+            event: r.NetworkActionNames.HUB_EMAIL_VERIFY
           },
           rejectWithError: !1
         }),
-        c = null == (i = o.body.guild) ? void 0 : i.id;
-      return r.Z.dispatch({
+        c = null == (l = o.body.guild) ? void 0 : l.id;
+      return i.Z.dispatch({
         type: "HUB_VERIFY_EMAIL_SUCCESS",
         guildId: c
       }), o.body
     } catch (e) {
-      throw r.Z.dispatch({
+      throw i.Z.dispatch({
         type: "HUB_VERIFY_EMAIL_FAILURE",
         errors: e.body
       }), e

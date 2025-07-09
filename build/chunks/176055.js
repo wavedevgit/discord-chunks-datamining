@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(41776),
   _ = n(703656),
   E = n(769654),
-  O = n(601964),
-  y = n(430824),
+  O = n(430824),
+  y = n(411198),
   I = n(843445),
   v = n(981631),
   C = n(388032),
@@ -71,7 +71,7 @@ class T extends i.PureComponent {
       pageSize: s
     } = this.props;
     if (t && n) return null;
-    let d = new O.ZP(e),
+    let d = (0, y.B3)(e),
       p = C.intl.string(C.t.pxwdrK),
       h = this.handleJoinOrView,
       b = c.zx.Looks.FILLED,
@@ -144,12 +144,12 @@ class T extends i.PureComponent {
     })
   }
 }
-let P = (0, h.Z)(s.ZP.connectStores([y.Z, b.Z], e => {
+let P = (0, h.Z)(s.ZP.connectStores([O.Z, b.Z], e => {
   let {
     guild: t
   } = e, n = b.Z.isLurking(t.id);
   return {
-    isInGuild: null != y.Z.getGuild(t.id) && !n,
+    isInGuild: null != O.Z.getGuild(t.id) && !n,
     isLurking: n
   }
 })(T))

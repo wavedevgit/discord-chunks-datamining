@@ -18,9 +18,9 @@ var r = n(255367),
   m = n(372769),
   g = n(134432),
   b = n(769654),
-  _ = n(601964),
-  y = n(430824),
-  C = n(768581),
+  _ = n(430824),
+  y = n(768581),
+  C = n(411198),
   x = n(683818),
   v = n(16853),
   O = n(981631),
@@ -171,7 +171,7 @@ let A = e => {
   var t;
   let {
     entry: l
-  } = e, [a, h] = i.useState(!1), x = null != (0, o.e7)([y.Z], () => y.Z.getGuild(l.guildId)), v = async () => {
+  } = e, [a, h] = i.useState(!1), x = null != (0, o.e7)([_.Z], () => _.Z.getGuild(l.guildId)), v = async () => {
     h(!0);
     try {
       x ? (0, b.X)(l.guildId) : await d.Z.joinGuild(l.guildId, {
@@ -180,11 +180,11 @@ let A = e => {
     } finally {
       h(!1)
     }
-  }, S = C.ZP.getGuildSplashURL({
+  }, S = y.ZP.getGuildSplashURL({
     id: l.guildId,
     splash: l.splash,
     size: 300 * (0, g.x_)()
-  }), Z = null != (t = C.ZP.getGuildIconURL({
+  }), Z = null != (t = y.ZP.getGuildIconURL({
     id: l.guildId,
     icon: l.icon,
     size: 40
@@ -221,7 +221,7 @@ let A = e => {
             children: (0, r.jsx)(f.Z, {
               className: E.icon,
               iconSrc: Z,
-              guild: new _.ZP(l),
+              guild: (0, C.e)(l),
               size: f.Z.Sizes.MEDIUM,
               active: !0
             })

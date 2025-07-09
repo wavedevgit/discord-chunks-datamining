@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r, i = n(442837),
   a = n(570140),
-  o = n(601964),
-  s = n(594174),
+  o = n(594174),
+  s = n(411198),
   l = n(881952);
 
 function c(e, t, n) {
@@ -74,7 +74,7 @@ function b(e) {
   } = e;
   if (null == n) return;
   let r = h(n),
-    i = s.default.getCurrentUser();
+    i = o.default.getCurrentUser();
   if (null != i && r.userId !== i.id) return !1;
   (0, l.d3)(r) ? m(t): d[t] = r
 }
@@ -200,7 +200,7 @@ class R extends(r = i.ZP.Store) {
     return Object.values(d).map(e => null == e ? void 0 : e.guildId).filter(e => null != e)
   }
   getJoinRequestGuild(e) {
-    return null != _[e] ? new o.ZP(_[e]) : null
+    return null != _[e] ? (0, s.yS)(_[e]) : null
   }
   get hasFetchedRequestToJoinGuilds() {
     return f

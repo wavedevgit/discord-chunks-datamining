@@ -68,8 +68,8 @@ function j(e) {
     textVariant: y = "text-sm/normal",
     compact: I,
     guildIconSize: O = x.LARGE,
-    guildsClassName: P,
-    children: S
+    guildsClassName: S,
+    children: P
   } = e, E = (0, o.e7)([p.default], () => p.default.locale), N = new Intl.ListFormat(E), T = null != (n = null == (t = l.directory_entry) ? void 0 : t.guild_count) ? n : 0, A = null != (r = null == c ? void 0 : c.length) ? r : 0, L = Math.max(0, T - A), {
     shownMutualGuilds: R,
     hiddenMutualGuilds: Z
@@ -99,10 +99,10 @@ function j(e) {
     })
   }(T, A, L, E, I);
   return 0 === R.length && null == D ? null : (0, a.jsxs)(a.Fragment, {
-    children: [S, (0, a.jsxs)("div", {
+    children: [P, (0, a.jsxs)("div", {
       className: s()(j, f.wrapper),
       children: [(0, a.jsx)("div", {
-        className: s()(f.icons, P),
+        className: s()(f.icons, S),
         children: R.length > 0 ? (0, a.jsxs)(a.Fragment, {
           children: [R.map((e, t) => {
             let n = t === R.length - 1 && 0 === w,

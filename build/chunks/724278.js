@@ -1,6 +1,6 @@
 /** Chunk was on 70657 **/
 t.d(n, {
-  Z: () => G
+  Z: () => Z
 }), t(953529);
 var i = t(255367),
   l = t(73800),
@@ -113,7 +113,7 @@ function U(e) {
   })
 }
 
-function Z(e) {
+function G(e) {
   let {
     userCount: n,
     onClick: t
@@ -140,7 +140,7 @@ function Z(e) {
   })
 }
 
-function G(e) {
+function Z(e) {
   let {
     guildEvent: n,
     guild: t,
@@ -154,7 +154,7 @@ function G(e) {
     setRecurrenceId: m
   } = e, I = (0, d.e7)([f.Z], () => null != f.Z.getGuild(t.id), [t.id]), {
     startTime: S,
-    endTime: G
+    endTime: Z
   } = (0, E.ZP)(n, p), P = (0, b.Z)(n.guild_id, n.id, p), z = l.useCallback(e => {
     e.stopPropagation(), null != n && (0, s.Bk)(n)
   }, [n]), A = (0, C.Z)(p, n.id), R = (0, h.Z)(n);
@@ -169,7 +169,7 @@ function G(e) {
       className: D.header,
       children: [(0, i.jsx)(j.z, {
         startTime: S.toISOString(),
-        endTime: null == G ? void 0 : G.toISOString(),
+        endTime: null == Z ? void 0 : Z.toISOString(),
         status: null != B ? B : n.status,
         eventType: n.entity_type,
         guildEventId: n.id,
@@ -191,7 +191,7 @@ function G(e) {
         guildScheduledEvent: n,
         channel: r,
         onClose: c
-      }), null != P && (0, i.jsx)(Z, {
+      }), null != P && (0, i.jsx)(G, {
         userCount: P,
         onClick: u
       }), !_ && null != R && (0, i.jsx)(O, {

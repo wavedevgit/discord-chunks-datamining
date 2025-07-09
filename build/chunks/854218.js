@@ -4,7 +4,7 @@ n.d(t, {
   PZ: () => a,
   XX: () => o
 }), n(388685);
-var r = n(601964),
+var r = n(411198),
   i = n(981631),
   a = function(e) {
     return e.PUBLIC = "PUBLIC", e.INVITE_ONLY = "INVITE_ONLY", e.APPLY_TO_JOIN = "APPLY_TO_JOIN", e
@@ -18,9 +18,9 @@ function o(e) {
     o = 0;
   if (a) {
     var l;
-    o = null != (l = e instanceof r.ZP ? e.premiumSubscriberCount : e.premiumSubscriptionCount) ? l : 0
+    o = null != (l = (0, r.lM)(e) ? e.premiumSubscriberCount : e.premiumSubscriptionCount) ? l : 0
   }
-  let c = e instanceof r.ZP ? e.premiumTier : i.Eu4.NONE;
+  let c = (0, r.lM)(e) ? e.premiumTier : i.Eu4.NONE;
   return {
     verified: t.has(i.oNc.VERIFIED),
     partnered: t.has(i.oNc.PARTNERED),
@@ -34,5 +34,5 @@ function o(e) {
 }
 
 function s(e) {
-  return null != e && (e instanceof r.ZP ? e.premiumSubscriberCount > 0 || e.premiumTier > i.Eu4.NONE : null != e.premiumSubscriptionCount && e.premiumSubscriptionCount > 0)
+  return null != e && ((0, r.lM)(e) ? e.premiumSubscriberCount > 0 || e.premiumTier > i.Eu4.NONE : null != e.premiumSubscriptionCount && e.premiumSubscriptionCount > 0)
 }

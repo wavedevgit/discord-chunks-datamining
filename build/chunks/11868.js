@@ -1,6 +1,6 @@
 /** Chunk was on 70657 **/
 t.d(n, {
-  Qt: () => G,
+  Qt: () => Z,
   ZP: () => R
 }), t(953529);
 var i = t(255367),
@@ -15,9 +15,9 @@ var i = t(255367),
   _ = t(372769),
   g = t(955415),
   p = t(922482),
-  m = t(601964),
-  f = t(592125),
-  I = t(430824),
+  m = t(592125),
+  f = t(430824),
+  I = t(411198),
   v = t(15274),
   h = t(924301),
   C = t(725436),
@@ -35,14 +35,14 @@ var i = t(255367),
 let U = (e, n) => t => {
     t.stopPropagation(), u.default.selectVoiceChannel(e.channel_id, !1), null == n || n(t)
   },
-  Z = (e, n) => t => {
-    let i = f.Z.getChannel(e.channel_id);
+  G = (e, n) => t => {
+    let i = m.Z.getChannel(e.channel_id);
     null != i && (t.stopPropagation(), (0, p.Cq)(i), null == n || n(t))
   },
-  G = (e, n) => {
+  Z = (e, n) => {
     switch (null == e ? void 0 : e.entity_type) {
       case S.WX.STAGE_INSTANCE:
-        return Z(e, n);
+        return G(e, n);
       case S.WX.VOICE:
         return U(e, n)
     }
@@ -56,13 +56,14 @@ let U = (e, n) => t => {
       guildScheduledEvent: r,
       channel: a,
       isMember: o
-    } = e, u = (0, d.e7)([I.Z], () => {
-      var e;
-      return null == t ? null : null != (e = I.Z.getGuild(t.id)) ? e : new m.ZP(t)
-    }, [t]), p = (0, j.u)(r, a), f = l.useCallback(e => {
+    } = e, u = (0, d.e7)([f.Z], () => {
+      if (null == t) return null;
+      let e = f.Z.getGuild(t.id);
+      return null != e ? e : (0, I.lM)(t) ? t : (0, I.Qs)(t)
+    }, [t]), p = (0, j.u)(r, a), m = l.useCallback(e => {
       o && null != r && (e.stopPropagation(), (0, c.Bk)(r))
     }, [o, r]), v = l.useCallback(e => {
-      G(r)(e)
+      Z(r)(e)
     }, [r]);
     if (null == u) return null;
     let h = null == p ? void 0 : p.IconComponent,
@@ -81,7 +82,7 @@ let U = (e, n) => t => {
       className: O.inviteDetailsContainer,
       children: [(0, i.jsx)(g.Z.Icon, {
         guild: u,
-        onClick: f
+        onClick: m
       }), (0, i.jsxs)("div", {
         className: O.verticalContainer,
         children: [(0, i.jsxs)("div", {
@@ -94,7 +95,7 @@ let U = (e, n) => t => {
             className: O.guildBadge
           }), (0, i.jsx)(s.P3F, {
             className: O.guildNameClickable,
-            onClick: f,
+            onClick: m,
             children: (0, i.jsx)(s.X6q, {
               className: o ? O.guildNameLinkable : O.guildName,
               variant: "text-sm/medium",

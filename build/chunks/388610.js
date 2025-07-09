@@ -12,9 +12,9 @@ var c, u = n(392711),
   h = n(544891),
   m = n(570140),
   g = n(131704),
-  E = n(601964),
-  b = n(758449),
-  y = n(598077),
+  E = n(758449),
+  b = n(598077),
+  y = n(411198),
   O = n(592125),
   v = n(981631);
 
@@ -166,13 +166,13 @@ function F(e) {
 }
 
 function Z(e) {
-  return new b.Z({
+  return new E.Z({
     code: e.code,
     temporary: e.temporary,
     revoked: e.revoked,
-    inviter: null != e.inviter ? new y.Z(e.inviter) : null,
+    inviter: null != e.inviter ? new b.Z(e.inviter) : null,
     channel: (0, g.jD)(e.channel),
-    guild: null != e.guild ? new E.ZP(e.guild) : null,
+    guild: null != e.guild ? (0, y.Qs)(e.guild) : null,
     uses: e.uses,
     maxUses: e.max_uses,
     maxAge: e.max_age,

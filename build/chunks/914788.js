@@ -3,11 +3,11 @@ n.d(e, {
   Z: () => X
 }), n(388685), n(539854), n(35282);
 var i, r, l, a, d = n(133080),
-  s = n(750041),
-  o = n(594174),
-  u = n(709054),
-  E = n(260722),
-  c = n(735079),
+  u = n(750041),
+  s = n(594174),
+  o = n(411198),
+  E = n(709054),
+  c = n(260722),
   _ = n(546791),
   T = n(292352);
 
@@ -46,16 +46,16 @@ function I(t, e) {
   }), t
 }
 let C = null,
-  p = null,
+  A = null,
   g = {},
   y = U(),
-  A = Y(),
+  p = Y(),
   N = null,
-  h = (null == (r = window) || null == (i = r.location) ? void 0 : i.pathname) === T.ix.FAMILY_CENTER_MY_FAMILY ? T.dG.REQUESTS : (null == (a = window) || null == (l = a.location) ? void 0 : l.pathname) === T.ix.FAMILY_CENTER_SETTINGS ? T.dG.SETTINGS : T.dG.ACTIVITY,
-  L = !1,
+  L = (null == (r = window) || null == (i = r.location) ? void 0 : i.pathname) === T.ix.FAMILY_CENTER_MY_FAMILY ? T.dG.REQUESTS : (null == (a = window) || null == (l = a.location) ? void 0 : l.pathname) === T.ix.FAMILY_CENTER_SETTINGS ? T.dG.SETTINGS : T.dG.ACTIVITY,
+  h = !1,
   R = !1,
-  b = null,
   M = null,
+  b = null,
   D = {};
 
 function U() {
@@ -86,7 +86,7 @@ function O() {
 }
 
 function m(t) {
-  void 0 !== t && (A = t)
+  void 0 !== t && (p = t)
 }
 
 function v(t, e) {
@@ -98,9 +98,14 @@ function v(t, e) {
 }
 
 function F(t) {
-  D = t.reduce((t, e) => I(S({}, t), {
-    [e.id]: new c.J(e)
-  }), D)
+  D = t.reduce((t, e) => {
+    var n;
+    return I(S({}, t), {
+      [e.id]: I(S({}, (0, o.Jh)(e)), {
+        approximateMemberCount: null != (n = e.approximate_member_count) ? n : 0
+      })
+    })
+  }, D)
 }
 
 function w() {
@@ -118,7 +123,7 @@ function j(t) {
     teenId: a,
     rangeStartId: d
   } = n;
-  C = a, p = d, v(i), m(l), F(r), O(e), R = !1, b = u.default.fromTimestamp(Date.now()), L = !0
+  C = a, A = d, v(i), m(l), F(r), O(e), R = !1, M = E.default.fromTimestamp(Date.now()), h = !0
 }
 
 function P(t) {
@@ -147,7 +152,7 @@ function H(t) {
     teenId: l,
     rangeStartId: a
   } = e;
-  C = l, p = a, v(n), m(i), F(r), R = !1, b = u.default.fromTimestamp(Date.now())
+  C = l, A = a, v(n), m(i), F(r), R = !1, M = E.default.fromTimestamp(Date.now())
 }
 
 function G(t) {
@@ -181,45 +186,45 @@ function Z(t) {
   N = e
 }
 
-function x(t) {
+function W(t) {
   let {
     tab: e
   } = t;
-  h = e
+  L = e
 }
 
-function W(t) {
+function K(t) {
   let {
     user: e
   } = t;
   if (void 0 === e.linked_users) return;
-  let n = o.default.getUsers();
+  let n = s.default.getUsers();
   e.linked_users.some(t => {
     let {
       user_id: e
     } = t;
     return void 0 === n[e]
-  }) && e.linked_users.length > Object.keys(g).length ? E.ZP.fetchLinkedUsers() : O(e.linked_users)
+  }) && e.linked_users.length > Object.keys(g).length ? c.ZP.fetchLinkedUsers() : O(e.linked_users)
 }
 
-function K(t) {
+function x(t) {
   var e;
   let {
     countryCode: n
   } = t;
-  null != n && (M = null != (e = (0, d.Zz)(n)) ? e : null)
+  null != n && (b = null != (e = (0, d.Zz)(n)) ? e : null)
 }
 
 function z() {
-  C = null, p = null, g = {}, y = U(), A = Y(), D = {}, R = !1, b = null
+  C = null, A = null, g = {}, y = U(), p = Y(), D = {}, R = !1, M = null
 }
-class B extends s.Z {
+class B extends u.Z {
   initialize() {
-    this.waitFor(o.default)
+    this.waitFor(s.default)
   }
   loadCache() {
     let t = this.readSnapshot(B.LATEST_SNAPSHOT_VERSION);
-    null != t && (O(t.linkedUsers), F(t.guilds), v(t.teenActivity), A = t.teenActivityTotals.reduce((t, e) => {
+    null != t && (O(t.linkedUsers), F(t.guilds), v(t.teenActivity), p = t.teenActivityTotals.reduce((t, e) => {
       let [n, i] = e.split(":"), r = (0, _.jV)(n);
       return void 0 === r ? t : I(S({}, t), {
         [r]: parseInt(i, 10)
@@ -231,7 +236,7 @@ class B extends s.Z {
       version: B.LATEST_SNAPSHOT_VERSION,
       data: {
         linkedUsers: Object.values(g),
-        teenActivityTotals: Object.entries(A).map(t => {
+        teenActivityTotals: Object.entries(p).map(t => {
           let [e, n] = t;
           return "".concat(e, ":").concat(n)
         }),
@@ -258,13 +263,13 @@ class B extends s.Z {
     return null == n ? null : null != (e = n.updated_at) ? e : n.created_at
   }
   getRangeStartTimestamp() {
-    return null == p ? null : u.default.extractTimestamp(p)
+    return null == A ? null : E.default.extractTimestamp(A)
   }
   getActionsForDisplayType(t) {
     return Object.values(y[t])
   }
   getTotalForDisplayType(t) {
-    return A[t]
+    return p[t]
   }
   getLinkCode() {
     return N
@@ -273,26 +278,26 @@ class B extends s.Z {
     return D[t]
   }
   getSelectedTab() {
-    return h
-  }
-  getStartId() {
-    return p
-  }
-  getIsInitialized() {
     return L
   }
+  getStartId() {
+    return A
+  }
+  getIsInitialized() {
+    return h
+  }
   getUserCountry() {
-    return M
+    return b
   }
   isLoading() {
     return R
   }
   canRefetch() {
-    return null === b || u.default.age(b) > T.Of
+    return null === M || E.default.age(M) > T.Of
   }
   constructor() {
     super({
-      CURRENT_USER_UPDATE: W,
+      CURRENT_USER_UPDATE: K,
       CACHE_LOADED_LAZY: () => this.loadCache(),
       FAMILY_CENTER_INITIAL_LOAD: j,
       FAMILY_CENTER_FETCH_START: w,
@@ -303,8 +308,8 @@ class B extends s.Z {
       FAMILY_CENTER_REQUEST_LINK_UPDATE_SUCCESS: V,
       FAMILY_CENTER_REQUEST_LINK_REMOVE_SUCCESS: Q,
       FAMILY_CENTER_LINK_CODE_FETCH_SUCCESS: Z,
-      FAMILY_CENTER_HANDLE_TAB_SELECT: x,
-      SET_LOCATION_METADATA: K,
+      FAMILY_CENTER_HANDLE_TAB_SELECT: W,
+      SET_LOCATION_METADATA: x,
       LOGOUT: z
     })
   }

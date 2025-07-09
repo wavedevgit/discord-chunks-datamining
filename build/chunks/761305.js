@@ -8,8 +8,8 @@ var r, i = n(255367),
   a = n(442837),
   o = n(544891),
   c = n(108427),
-  u = n(601964),
-  d = n(896797),
+  u = n(896797),
+  d = n(411198),
   h = n(129293),
   p = n(388905),
   g = n(981631),
@@ -43,7 +43,7 @@ class x extends(r = l.PureComponent) {
         body: {
           guild: t
         }
-      } = e, n = new u.ZP(t);
+      } = e, n = (0, d.Jh)(t);
       this.setState({
         success: !0,
         busy: !1,
@@ -128,6 +128,6 @@ class x extends(r = l.PureComponent) {
 _(x, "defaultProps", {
   transitionTo: e => n.g.location.assign(e)
 });
-let b = a.ZP.connectStores([d.Z], () => ({
-  defaultRoute: d.Z.defaultRoute
+let b = a.ZP.connectStores([u.Z], () => ({
+  defaultRoute: u.Z.defaultRoute
 }))(x)

@@ -1,6 +1,6 @@
 /** Chunk was on 88934 **/
 n.d(t, {
-  Z: () => S
+  Z: () => P
 }), n(65234), n(111804), n(490233), n(97749), n(388685), n(35282);
 var r = n(255367),
   a = n(73800),
@@ -25,12 +25,12 @@ var r = n(255367),
   y = n(979007),
   I = n(981631),
   O = n(388032),
-  P = n(714002);
-let S = function(e) {
+  S = n(714002);
+let P = function(e) {
   let {
     applicationId: t,
     onSelectApplication: n,
-    onScroll: S,
+    onScroll: P,
     initialTab: E,
     onButtonsVisibilityChange: N
   } = e, T = a.useRef(null), A = (0, i.e7)([u.Z], () => u.Z.getApplication(t)), L = (0, i.e7)([u.Z], () => u.Z.getApplicationFetchState(t));
@@ -113,30 +113,30 @@ let S = function(e) {
     }, [t]),
     Y = Z === y.GlobalDiscoveryAppsSections.ABOUT;
   return (0, r.jsx)(c.Z, {
-    onScroll: S,
+    onScroll: P,
     ref: T,
     children: (0, r.jsx)(s.Z, {
       children: null == A ? null == L || L === u.M.FETCHING ? (0, r.jsx)("div", {
-        className: P.centerContainer,
+        className: S.centerContainer,
         children: (0, r.jsx)(h.Z, {
           loading: !0
         })
       }) : (0, r.jsx)("div", {
-        className: P.centerContainer,
+        className: S.centerContainer,
         children: (0, r.jsx)(g.Z, {
-          className: P.error
+          className: S.error
         })
       }) : (0, r.jsxs)("div", {
-        className: P.detailContainer,
+        className: S.detailContainer,
         children: [(0, r.jsx)(x.Z, {
           application: A,
           onButtonsVisibilityChange: N
         }), (0, r.jsxs)("div", {
-          className: P.contentContainer,
+          className: S.contentContainer,
           children: [(0, r.jsxs)("div", {
-            className: P.contentTabsContainer,
+            className: S.contentTabsContainer,
             children: [R && (0, r.jsx)("div", {
-              className: P.contentTabs,
+              className: S.contentTabs,
               children: (0, r.jsx)(o.Z, {
                 tabs: F,
                 onTabSelect: H,
@@ -150,7 +150,7 @@ let S = function(e) {
               similarLoadId: null == G ? void 0 : G.loadId
             })]
           }), Y && (0, r.jsx)(v.Z, {
-            className: P.sidebar,
+            className: S.sidebar,
             application: A,
             view: "side"
           })]

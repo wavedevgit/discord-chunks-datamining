@@ -1,11 +1,11 @@
 /** Chunk was on 95468 **/
 n.d(t, {
-  H: () => _,
-  default: () => x
+  H: () => x,
+  default: () => f
 });
-var l = n(255367),
-  i = n(73800),
-  r = n(990547),
+var r = n(255367),
+  l = n(73800),
+  i = n(990547),
   a = n(481060),
   s = n(390885),
   o = n(495784),
@@ -15,41 +15,41 @@ var l = n(255367),
   m = n(388032),
   h = n(778360);
 
-function x(e) {
+function f(e) {
   let {
     transitionState: t,
     onClose: n,
-    isNUXFlow: x
+    isNUXFlow: f
   } = e;
-  return i.useEffect(() => {
-    o.Z.hideHubUpsell(), x && s.Z.flowStep(u.MK.ORGANIC, u.EW.HUB_CONNECTION)
-  }, [x]), (0, l.jsx)(a.Y0X, {
+  return l.useEffect(() => {
+    o.Z.hideHubUpsell(), f && s.Z.flowStep(u.MK.ORGANIC, u.EW.HUB_CONNECTION)
+  }, [f]), (0, r.jsx)(a.Y0X, {
     className: h.modalRoot,
     transitionState: t,
     "aria-label": m.intl.string(m.t["3khS8P"]),
     impression: {
-      impressionName: r.ImpressionNames.HUB_EMAIL_SIGNUP
+      impressionName: i.ImpressionNames.HUB_EMAIL_SIGNUP
     },
     parentComponent: "HubEmailConnectionModal",
-    children: (0, l.jsx)(a.hzk, {
+    children: (0, r.jsx)(a.hzk, {
       style: {
         overflow: "hidden",
         paddingRight: "0px"
       },
       paddingFix: !1,
       className: h.modalContent,
-      children: (0, l.jsxs)("div", {
+      children: (0, r.jsxs)("div", {
         className: h.container,
-        children: [(0, l.jsx)("div", {
+        children: [(0, r.jsx)("div", {
           className: h.sidebarContainer,
-          children: (0, l.jsx)(d.Z, {})
-        }), (0, l.jsxs)("div", {
+          children: (0, r.jsx)(d.Z, {})
+        }), (0, r.jsxs)("div", {
           className: h.contentContainer,
-          children: [(0, l.jsx)(a.olH, {
+          children: [(0, r.jsx)(a.olH, {
             onClick: n,
             className: h.closeButton
-          }), (0, l.jsx)(c.Z, {
-            isNUXFlow: x,
+          }), (0, r.jsx)(c.Z, {
+            isNUXFlow: f,
             onClose: n
           })]
         })]
@@ -57,18 +57,18 @@ function x(e) {
     })
   })
 }
-let _ = e => {
+let x = e => {
   let {
     invite: t
   } = e;
-  return (0, l.jsxs)("div", {
+  return (0, r.jsxs)("div", {
     className: h.container,
-    children: [(0, l.jsx)("div", {
+    children: [(0, r.jsx)("div", {
       className: h.sidebarContainer,
-      children: (0, l.jsx)(d.Z, {})
-    }), (0, l.jsx)("div", {
+      children: (0, r.jsx)(d.Z, {})
+    }), (0, r.jsx)("div", {
       className: h.contentContainer,
-      children: (0, l.jsx)(c.Z, {
+      children: (0, r.jsx)(c.Z, {
         invite: t
       })
     })]

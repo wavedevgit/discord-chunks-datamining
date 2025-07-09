@@ -13,7 +13,7 @@ var i = n(120356),
   c = n(782568),
   d = n(377171),
   u = n(565138),
-  m = n(601964),
+  m = n(411198),
   g = n(526717),
   p = n(594278),
   f = n(549631),
@@ -52,7 +52,7 @@ function j(e) {
     guildIcon: n,
     guildAvatarUrl: i,
     subscriberCount: l
-  } = e, s = new m.ZP({
+  } = e, s = (0, m.Jh)({
     name: t,
     icon: n
   });

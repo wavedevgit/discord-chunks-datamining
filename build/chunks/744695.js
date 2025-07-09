@@ -148,7 +148,7 @@ function x(e) {
   }, [v, d]);
   (0, c.s)(y, I);
   let O = 0 !== u,
-    P = j.some(e => e.id === n);
+    S = j.some(e => e.id === n);
   return (0, r.jsxs)("div", {
     className: l()(h.container, t),
     ref: y,
@@ -169,7 +169,7 @@ function x(e) {
           tabs: j,
           onTabSelect: o,
           selectedTab: n,
-          selected: P
+          selected: S
         })
       })]
     }), O && (0, r.jsxs)("div", {
@@ -183,7 +183,7 @@ function x(e) {
         tabs: j,
         onTabSelect: o,
         selectedTab: n,
-        selected: P
+        selected: S
       }) : null]
     })]
   })
