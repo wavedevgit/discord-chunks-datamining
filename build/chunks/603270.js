@@ -21,8 +21,8 @@ var r = n(255367),
   b = n(509545),
   E = n(238),
   y = n(55563),
-  C = n(551428),
-  x = n(626135),
+  x = n(551428),
+  C = n(626135),
   v = n(572004),
   O = n(601911),
   j = n(504211),
@@ -32,12 +32,12 @@ var r = n(255367),
   N = n(979007),
   P = n(388032),
   A = n(197866);
-let w = (0, o.Kb)([y.Z, C.Z, b.Z], {
+let w = (0, o.Kb)([y.Z, x.Z, b.Z], {
     queryId: e => T.McO.SKU(e),
     get: e => {
       if (null == e) return;
       let t = y.Z.get(e),
-        n = C.Z.getForSKU(e);
+        n = x.Z.getForSKU(e);
       if (null == t || null == n) return;
       let r = b.Z.getForSKU(e);
       return {
@@ -66,7 +66,7 @@ function R(e) {
   let {
     appId: t,
     message: l
-  } = e, a = (0, I.R)(t), [d, p, _, g, b, y, C] = (0, o.Wu)([m.Z, E.Z, h.Z], () => {
+  } = e, a = (0, I.R)(t), [d, p, _, g, b, y, x] = (0, o.Wu)([m.Z, E.Z, h.Z], () => {
     var e;
     let n = m.Z.getApplication(t),
       r = null != n ? (0, O.y)(n, 45) : void 0,
@@ -110,16 +110,16 @@ function R(e) {
     onLinkCopy: () => {
       (0, j.X)(t, j.B.STORE_EMBED)
     },
-    iconSrc: C,
+    iconSrc: x,
     onIconClick: () => {
-      Z(), x.default.track(T.rMx.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
+      Z(), C.default.track(T.rMx.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
         application_id: t,
         area: "app_icon"
       })
     },
     children: (0, r.jsx)(s.zx, {
       onClick: () => {
-        Z(), x.default.track(T.rMx.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
+        Z(), C.default.track(T.rMx.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
           application_id: t,
           area: "open_store_button"
         })
@@ -156,7 +156,7 @@ function L(e) {
     }
   }(u, a), {
     data: y
-  } = (0, p.IX)(null == f ? void 0 : f.applicationId), C = (0, o.e7)([h.Z], () => {
+  } = (0, p.IX)(null == f ? void 0 : f.applicationId), x = (0, o.e7)([h.Z], () => {
     var e;
     return null == (e = h.Z.getBasicChannel(d.channel_id)) ? void 0 : e.guild_id
   }, [d]), v = i.useMemo(() => null != y ? (0, O.y)(y, 45) : void 0, [y]), R = (0, I.R)(null != (l = null == y ? void 0 : y.id) ? l : ""), {
@@ -164,7 +164,7 @@ function L(e) {
     subscriptionPurchaseButtonState: M
   } = (0, g.Z)({
     skuId: u,
-    initialSubscribeForGuild: C
+    initialSubscribeForGuild: x
   });
   if (!R || null == y || null == f) return null;
   let k = f.type === T.epS.SUBSCRIPTION,
@@ -178,7 +178,7 @@ function L(e) {
           transitionState: t.transitionState,
           onClose: t.onClose,
           appId: y.id,
-          guildId: C
+          guildId: x
         })
       })
     },
@@ -194,7 +194,7 @@ function L(e) {
             transitionState: n.transitionState,
             appId: y.id,
             skuId: f.id,
-            guildId: C,
+            guildId: x,
             subscriptionType: U ? "user" : "guild",
             onClose: n.onClose,
             onHeaderTitleClick: i
@@ -223,7 +223,7 @@ function L(e) {
     }) : null == E || null == (t = E.description) ? void 0 : t.trim();
   "" === G && (G = void 0);
   let H = () => {
-    x.default.track(T.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
+    C.default.track(T.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
       application_id: y.id,
       sku_id: f.id,
       area: "purchase_button"
@@ -239,7 +239,7 @@ function L(e) {
     },
     iconSrc: v,
     onIconClick: () => {
-      F(), x.default.track(T.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
+      F(), C.default.track(T.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
         application_id: y.id,
         sku_id: f.id,
         area: "app_icon"
@@ -250,7 +250,7 @@ function L(e) {
       children: [(0, r.jsx)(s.zx, {
         color: s.Tt.CUSTOM,
         onClick: () => {
-          B(), x.default.track(T.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
+          B(), C.default.track(T.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
             application_id: y.id,
             sku_id: f.id,
             area: "view_details"

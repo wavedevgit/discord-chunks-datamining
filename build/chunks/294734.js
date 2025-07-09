@@ -20,8 +20,8 @@ var r = n(255367),
   b = n(430824),
   E = n(496675),
   y = n(699516),
-  C = n(594174),
-  x = n(100604),
+  x = n(594174),
+  C = n(100604),
   v = n(694784),
   O = n(39154),
   j = n(245216),
@@ -49,7 +49,7 @@ function N(e) {
     message: t,
     snapshot: n,
     index: d
-  } = e, p = i.useMemo(() => new x.r(t, n, d), [t, n, d]), m = (0, a.e7)([g.Z, C.default, y.Z, E.Z, b.Z, u.Z], () => p.getForwardInfo(g.Z, C.default, y.Z, E.Z, b.Z, u.Z).footerInfo, [p], o.Z), f = i.useCallback(() => {
+  } = e, p = i.useMemo(() => new C.r(t, n, d), [t, n, d]), m = (0, a.e7)([g.Z, x.default, y.Z, E.Z, b.Z, u.Z], () => p.getForwardInfo(g.Z, x.default, y.Z, E.Z, b.Z, u.Z).footerInfo, [p], o.Z), f = i.useCallback(() => {
     (0, v.Z)(t)
   }, [t]);
   return null == m ? null : (0, r.jsxs)(c.P3F, {
@@ -79,7 +79,7 @@ function P(e) {
     index: o
   } = e, s = i.useMemo(() => (0, O.Z)(n, l), [n, l]), c = _.RS.useSetting(), u = _.NA.useSetting(), b = (0, a.e7)([h.Z], () => h.Z.isDeveloper), E = (0, d.A)((null != (t = s.editedTimestamp) ? t : s.timestamp).valueOf()), {
     content: y,
-    hasSpoilerEmbeds: C
+    hasSpoilerEmbeds: x
   } = (0, m.Z)(s, {
     hideSimpleEmbedContent: c && u,
     isInteracting: !1,
@@ -89,8 +89,8 @@ function P(e) {
     allowLinks: !0,
     allowDevLinks: b,
     previewLinkTarget: !0
-  }), x = (0, a.e7)([g.Z], () => g.Z.getChannel(n.channel_id)), v = _.jU.useSetting();
-  return null == x ? null : (0, r.jsxs)("div", {
+  }), C = (0, a.e7)([g.Z], () => g.Z.getChannel(n.channel_id)), v = _.jU.useSetting();
+  return null == C ? null : (0, r.jsxs)("div", {
     className: S.container,
     children: [(0, r.jsx)("div", {
       className: S.quote
@@ -103,10 +103,10 @@ function P(e) {
       }), (0, f.Z)({
         channelMessageProps: {
           message: s,
-          channel: x,
+          channel: C,
           compact: v
         },
-        hasSpoilerEmbeds: C,
+        hasSpoilerEmbeds: x,
         isInteracting: !1,
         isMessageSnapshot: !0,
         renderThreadAccessory: !1

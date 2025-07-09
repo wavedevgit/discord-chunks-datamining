@@ -27,23 +27,23 @@ let y = e => {
       url: n,
       description: i
     } = t;
-    return null == n ? null : (0, r.jsx)(x, {
+    return null == n ? null : (0, r.jsx)(C, {
       url: n,
       description: i
     })
   },
-  C = e => {
+  x = e => {
     var t, n, i;
     let {
       embed: l
     } = e;
     if (!h.n2.has(l.type)) return null;
     let a = void 0 !== l.video && l.type !== o.h.GIFV ? l.video.url : null != (i = null == (t = l.thumbnail) ? void 0 : t.url) ? i : null == (n = l.image) ? void 0 : n.url;
-    return null == a ? null : (0, r.jsx)(x, {
+    return null == a ? null : (0, r.jsx)(C, {
       url: a
     })
   },
-  x = e => {
+  C = e => {
     let {
       url: t,
       description: n
@@ -80,7 +80,7 @@ function O(e) {
     onConfirmPress: p,
     transitionState: m,
     onClose: f
-  } = e, h = (0, d.Dt)(), x = (0, g.pn)("ExplicitMediaFalsePositiveModal"), v = i.useCallback(() => {
+  } = e, h = (0, d.Dt)(), C = (0, g.pn)("ExplicitMediaFalsePositiveModal"), v = i.useCallback(() => {
     (0, _.aP)({
       action: _.Yy.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CANCEL,
       channelId: t,
@@ -103,7 +103,7 @@ function O(e) {
       context: a
     })
   }, [t, n, a]);
-  let j = i.useMemo(() => x ? b.intl.string(b.t["z4du/P"]) : b.intl.string(b.t.gg5Dp6), [x]);
+  let j = i.useMemo(() => C ? b.intl.string(b.t["z4du/P"]) : b.intl.string(b.t.gg5Dp6), [C]);
   return (0, r.jsxs)(c.Y0X, {
     transitionState: m,
     "aria-labelledby": h,
@@ -126,7 +126,7 @@ function O(e) {
         children: j
       }), null != o && (0, r.jsx)(y, {
         attachment: o
-      }), null != u && (0, r.jsx)(C, {
+      }), null != u && (0, r.jsx)(x, {
         embed: u
       })]
     }), (0, r.jsxs)(c.mzw, {

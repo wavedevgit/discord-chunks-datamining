@@ -52,10 +52,10 @@ function E(e, t) {
   }), e
 }
 let y = (e, t) => null == e && null == t || e === t,
-  C = (e, t) => e.findIndex(e => y(e.emoji.id, null == t ? void 0 : t.id) && y(e.emoji.name, null == t ? void 0 : t.name)),
-  x = (e, t) => {
+  x = (e, t) => e.findIndex(e => y(e.emoji.id, null == t ? void 0 : t.id) && y(e.emoji.name, null == t ? void 0 : t.name)),
+  C = (e, t) => {
     if (null == t) return e;
-    let n = C(e, t);
+    let n = x(e, t);
     return n < 0 ? e : [e[n], ...e.slice(0, n), ...e.slice(n + 1)]
   };
 class v extends i.PureComponent {
@@ -79,8 +79,8 @@ class v extends i.PureComponent {
       isForumToolbar: b,
       channel: E,
       className: y,
-      forceAddReactions: C,
-      reactionClassName: x,
+      forceAddReactions: x,
+      reactionClassName: C,
       useChatFontScaling: v,
       forceHideReactionCreates: O,
       remainingReactions: j,
@@ -89,8 +89,8 @@ class v extends i.PureComponent {
     } = this.props, {
       disableTransitionAppear: T
     } = this.state, N = v ? g : _, P = S > 0;
-    if (!P && !C) return null;
-    let A = C || P;
+    if (!P && !x) return null;
+    let A = x || P;
     return (0, r.jsxs)(o.W, {
       component: "div",
       className: a()(N.reactions, y),
@@ -113,12 +113,12 @@ class v extends i.PureComponent {
         isPendingMember: h,
         isForumToolbar: b,
         useChatFontScaling: v,
-        className: x
+        className: C
       }), j > 0 && (0, r.jsx)(s.P3F, {
         onClick: t => {
           t.stopPropagation(), (0, m.op)(E, e)
         },
-        className: a()(N.reaction, x, N.remainingReactions),
+        className: a()(N.reaction, C, N.remainingReactions),
         "aria-label": f.intl.string(f.t.lfIHs7),
         children: (0, r.jsxs)(s.Text, {
           className: N.reactionInner,
@@ -157,7 +157,7 @@ let O = e => {
     visibleReactionsCount: s
   } = i.useMemo(() => {
     let e = [],
-      r = x(t.reactions, l),
+      r = C(t.reactions, l),
       i = null != n && n < r.length ? r.slice(0, n) : r,
       a = r.length - i.length,
       o = r.length;

@@ -21,14 +21,13 @@ var r = n(255367),
 function b(e) {
   let {
     code: t,
-    message: n,
-    embedUrl: b
-  } = e, [E, y, C] = (0, a.Wu)([f.Z], () => [f.Z.getApplication(t), f.Z.isInvalidApplication(t), f.Z.getApplicationFetchState(t)], [t]), x = (0, a.e7)([d.Z], () => {
+    message: n
+  } = e, [b, E, y] = (0, a.Wu)([f.Z], () => [f.Z.getApplication(t), f.Z.isInvalidApplication(t), f.Z.getApplicationFetchState(t)], [t]), x = (0, a.e7)([d.Z], () => {
     var e;
     return null != (e = d.Z.getGuildId()) ? e : void 0
-  }), [v, O] = i.useState(!1), j = i.useCallback(e => {
-    e && O(!0)
-  }, []), I = (0, o.O)(j), S = i.useCallback(() => {
+  }), [C, v] = i.useState(!1), O = i.useCallback(e => {
+    e && v(!0)
+  }, []), j = (0, o.O)(O), I = i.useCallback(() => {
     p.default.track(_.rMx.APP_DIRECTORY_PROFILE_EMBED_VIEWED, {
       application_id: t,
       device_platform: l.tq ? "mobile_web" : "desktop_web",
@@ -40,16 +39,16 @@ function b(e) {
   return (i.useEffect(() => {
     (0, m.gZ)(t)
   }, [t]), i.useEffect(() => {
-    v && C === f.M.FETCHED && S()
-  }, [v, C, S]), i.useEffect(() => {
-    v && y && p.default.track(_.rMx.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
+    C && y === f.M.FETCHED && I()
+  }, [C, y, I]), i.useEffect(() => {
+    C && E && p.default.track(_.rMx.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
       device_platform: l.tq ? "mobile_web" : "desktop_web",
       sender_user_id: n.author.id,
       guild_id: x,
       channel_id: n.channel_id
     })
-  }, [v, x, y, n.author.id, n.channel_id]), y) ? (0, r.jsxs)(c.Z, {
-    containerRef: I,
+  }, [C, x, E, n.author.id, n.channel_id]), E) ? (0, r.jsxs)(c.Z, {
+    containerRef: j,
     children: [(0, r.jsx)(c.Z.Header, {
       text: g.intl.string(g.t.j4KtLS)
     }), (0, r.jsx)(c.Z.Body, {
@@ -64,17 +63,16 @@ function b(e) {
         })]
       })
     })]
-  }) : null == E || C === f.M.FETCHING ? (0, r.jsxs)(c.Z, {
-    containerRef: I,
+  }) : null == b || y === f.M.FETCHING ? (0, r.jsxs)(c.Z, {
+    containerRef: j,
     children: [(0, r.jsx)(c.Z.Header, {
       text: g.intl.string(g.t.m9hXGR)
     }), (0, r.jsx)(c.Z.Body, {
       resolving: !0
     })]
   }) : (0, r.jsx)(s.O, {
-    app: u.ZP.createFromServer(E),
-    embedUrl: b,
+    app: u.ZP.createFromServer(b),
     linkType: s.U.APP_DISCOVERY,
-    onView: S
+    onView: I
   })
 }

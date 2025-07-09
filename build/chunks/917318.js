@@ -59,22 +59,22 @@ function g(e) {
     author: d,
     mentions: f,
     type: g
-  } = n, h = (0, o.ZP)(n), b = n.getChannelId(), E = (0, l.e7)([u.default], () => u.default.getUser(f[0]), [f]), y = (0, o.JZ)(d, i), C = (0, s.l)({
+  } = n, h = (0, o.ZP)(n), b = n.getChannelId(), E = (0, l.e7)([u.default], () => u.default.getUser(f[0]), [f]), y = (0, o.JZ)(d, i), x = (0, s.l)({
     user: d,
     channelId: b,
     guildId: i.guild_id,
     messageId: n.id
-  })(y), x = (0, o.Sw)(E, i), v = (0, s.l)({
+  })(y), C = (0, o.Sw)(E, i), v = (0, s.l)({
     user: E,
     channelId: b,
     guildId: i.guild_id,
     messageId: n.id
-  })(x), O = null != (t = m[g]) ? t : null;
+  })(C), O = null != (t = m[g]) ? t : null;
   if (null == O) return null;
   let j = p.intl.format(O(), {
     actorName: h.nick,
-    actorHook: C,
-    targetName: null == x ? void 0 : x.nick,
+    actorHook: x,
+    targetName: null == C ? void 0 : C.nick,
     targetHook: v
   });
   return (0, r.jsx)(c.Z, {

@@ -1,6 +1,6 @@
 /**
   Module ID: 61668
-  Original File Name: 47803334e45b0cf6
+  Original File Name: 9cfa61e09fd5b7e8
 **/
 .wrapper__74bfa {
     align-items: center;
@@ -2512,7 +2512,7 @@ html .progress__61462 {
     min-width: 0
 }
 
-.contentWrapperClickable__98ba8 {
+.cursorPointer__98ba8 {
     cursor: pointer
 }
 
@@ -2606,8 +2606,13 @@ html .progress__61462 {
     gap: 4px
 }
 
+:root {
+    --custom-app-message-embed-base-info-gap: 4px;
+    --custom-app-message-embed-base-info-top: calc(var(--custom-app-message-embed-base-info-gap) - 2px)
+}
+
 .description__1f7ec {
-    padding-top: 2px
+    margin-top: var(--custom-app-message-embed-base-info-top)
 }
 
 .description__1f7ec * {
@@ -2618,7 +2623,7 @@ html .progress__61462 {
     align-items: center;
     display: flex;
     gap: 4px;
-    padding-top: 6px
+    padding-top: var(--custom-app-message-embed-base-info-gap)
 }
 
 .tag__1f7ec:not(:first-of-type):before {
@@ -6989,12 +6994,17 @@ html .progress__61462 {
     background-color: var(--background-mod-subtle)
 }
 
+:root {
+    --custom-app-message-embed-base-info-gap: 4px;
+    --custom-app-message-embed-base-info-top: calc(var(--custom-app-message-embed-base-info-gap) - 2px)
+}
+
 .infoWrapper_c44293 {
     display: flex;
     flex: 1;
     flex-direction: column;
-    gap: 4px;
-    padding-top: 4px
+    gap: var(--custom-app-message-embed-base-info-gap);
+    margin-top: var(--custom-app-message-embed-base-info-top)
 }
 
 .activityPresenceDetailsContainer_c44293 {
@@ -7013,6 +7023,11 @@ html .progress__61462 {
 
 .activityPresenceDetailsItemContainer_c44293.truncatesText_c44293 {
     min-width: 0
+}
+
+.activityPresenceDetailsItemIconContainer_c44293 {
+    align-items: center;
+    display: flex
 }
 
 .activePlayingWrapper_c44293 {
@@ -7046,6 +7061,11 @@ html .progress__61462 {
     .theme-light .ephemeralMessage__124d2 {
         font-weight: var(--font-weight-medium)
     }
+}
+
+:root {
+    --custom-app-message-embed-base-info-gap: 4px;
+    --custom-app-message-embed-base-info-top: calc(var(--custom-app-message-embed-base-info-gap) - 2px)
 }
 
 .statusCounts_a4b24e {
@@ -7117,8 +7137,8 @@ html .progress__61462 {
     display: flex;
     flex: 1;
     flex-direction: column;
-    gap: 6px;
-    padding-top: 2px
+    gap: var(--custom-app-message-embed-base-info-gap);
+    margin-top: var(--custom-app-message-embed-base-info-top)
 }
 
 .guildInviteContainer__083ae {
@@ -7809,16 +7829,24 @@ html .progress__61462 {
     }
 }
 
+:root {
+    --custom-app-message-embed-base-info-gap: 4px;
+    --custom-app-message-embed-base-info-top: calc(var(--custom-app-message-embed-base-info-gap) - 2px)
+}
+
 .description_c8f246 {
-    padding-top: 2px
+    margin-top: var(--custom-app-message-embed-base-info-top)
 }
 
 .description_c8f246 * {
     font-weight: var(--font-weight-medium)
 }
 
-.tagline_c8f246 {
-    padding: 2px
+.info_c8f246 {
+    display: flex;
+    flex-direction: column;
+    gap: var(--custom-app-message-embed-base-info-gap);
+    margin-top: var(--custom-app-message-embed-base-info-top)
 }
 
 .tagline_c8f246,.timestampContainer_c8f246 {
@@ -10401,4 +10429,4 @@ html .progress__61462 {
     width: 16px
 }
 
-/*# sourceMappingURL=47803334e45b0cf6.css.map*/
+/*# sourceMappingURL=9cfa61e09fd5b7e8.css.map*/

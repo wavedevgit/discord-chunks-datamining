@@ -20,8 +20,8 @@ var r = n(255367),
   b = n(430824),
   E = n(626135),
   y = n(76535),
-  C = n(866104),
-  x = n(886176),
+  x = n(866104),
+  C = n(886176),
   v = n(981631),
   O = n(388032),
   j = n(24665);
@@ -69,13 +69,13 @@ function I(e) {
     children: (0, r.jsx)(d.$jN, {})
   }) : null == l || null == S ? null : (0, r.jsxs)("div", {
     className: j.guildShopEmbed,
-    children: [(0, r.jsx)(C.Z, {
+    children: [(0, r.jsx)(x.Z, {
       coverImageAsset: null != (t = S.cover_image_asset) ? t : null
     }), (0, r.jsx)(d.LZC, {
       size: 16
     }), (0, r.jsxs)("div", {
       className: j.serverShopLabel,
-      children: [(0, r.jsx)(x.Z, {
+      children: [(0, r.jsx)(C.Z, {
         height: "16px",
         width: "16px",
         color: s.Z.INTERACTIVE_NORMAL
@@ -132,7 +132,7 @@ function I(e) {
         onClick: P,
         children: (0, r.jsxs)("div", {
           className: j.guildShopEmbedCtaContent,
-          children: [(0, r.jsx)(x.Z, {
+          children: [(0, r.jsx)(C.Z, {
             height: "18px",
             width: "18px"
           }), (0, r.jsx)(d.Text, {

@@ -1,7 +1,7 @@
 /** Chunk was on 61668 **/
 n.d(t, {
   G: () => y,
-  z: () => C
+  z: () => x
 });
 var r = n(73800),
   i = n(442837),
@@ -82,7 +82,7 @@ function y(e, t) {
   } : void 0, [e.id, i, n, c, u, d, l, t, p])
 }
 
-function C(e) {
+function x(e) {
   let {
     canViewApp: t,
     isInstallable: n

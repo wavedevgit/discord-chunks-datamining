@@ -28,9 +28,9 @@ async function h(e, t) {
   if (null == E) return;
   await (0, o.$p)();
   let y = Array.from(s.Z.getAllStickersIterator()),
-    C = y.filter(e => e.type === c.n0.GUILD).filter(e => g(e.guild_id) && (0, a.kl)(e, E, t)).sort((e, t) => -m.default.compare(e.id, t.id));
-  if (C.length > 5) {
-    let i = [C[Math.floor(Math.pow(Math.random(), 2) * C.length)].id];
+    x = y.filter(e => e.type === c.n0.GUILD).filter(e => g(e.guild_id) && (0, a.kl)(e, E, t)).sort((e, t) => -m.default.compare(e.id, t.id));
+  if (x.length > 5) {
+    let i = [x[Math.floor(Math.pow(Math.random(), 2) * x.length)].id];
     r.Z.sendStickers(t.id, i, "", {
       messageReference: {
         guild_id: null != (n = t.getGuildId()) ? n : void 0,
@@ -40,14 +40,14 @@ async function h(e, t) {
     });
     return
   }
-  let x = u.Z.getGuildIds().filter(g).map(e => i.ZP.getUsableGuildEmoji(e)).flat().filter(e => null == p.ZP.getEmojiUnavailableReason({
+  let C = u.Z.getGuildIds().filter(g).map(e => i.ZP.getUsableGuildEmoji(e)).flat().filter(e => null == p.ZP.getEmojiUnavailableReason({
     emoji: e,
     channel: t,
     guildId: b,
     intention: _.Hz.CHAT
   })).sort((e, t) => -m.default.compare(e.id, t.id));
-  if (x.length > 10) {
-    let n = x[Math.floor(Math.pow(Math.random(), 2) * x.length)];
+  if (C.length > 10) {
+    let n = C[Math.floor(Math.pow(Math.random(), 2) * C.length)];
     r.Z.sendMessage(t.id, l.ZP.parse(t, n.allNamesString), !1, {
       messageReference: {
         guild_id: null != (f = t.getGuildId()) ? f : void 0,

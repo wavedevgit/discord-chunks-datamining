@@ -2,15 +2,15 @@
 "use strict";
 n.d(t, {
   Z: () => _
-}), n(35282);
+}), n(35282), n(388685);
 var r = n(255367),
   l = n(73800),
   o = n(399606),
   i = n(481060),
-  a = n(594174),
-  s = n(381585),
-  c = n(597688),
-  u = n(370039),
+  a = n(381585),
+  s = n(597688),
+  c = n(370039),
+  u = n(82892),
   d = n(501431),
   p = n(149705),
   g = n(303952),
@@ -26,19 +26,20 @@ function _(e) {
     isFullScreen: _,
     scrollerRef: C,
     tab: O
-  } = e, E = (0, s.sp)(), v = null != (t = null == E ? void 0 : E.sessionId) ? t : "", {
+  } = e, E = (0, a.sp)(), v = null != (t = null == E ? void 0 : E.sessionId) ? t : "", {
     noCache: S,
     includeUnpublished: x
-  } = (0, b.Z)(), y = (0, o.e7)([a.default], () => a.default.getCurrentUser()), {
+  } = (0, b.Z)(), y = (0, u.x)(), {
     skus: j,
     currentPage: T,
-    totalCount: P
-  } = (0, p.a)(), L = (0, o.Wu)([c.Z], () => c.Z.getProductsBySkus(j)), I = l.useCallback(() => {
+    totalCount: P,
+    isFetchingResults: L
+  } = (0, p.a)(), I = (0, o.Wu)([s.Z], () => s.Z.getProductsBySkus(j)), k = l.useCallback(() => {
     var e;
     null == C || null == (e = C.current) || e.scrollToTop({
       animate: !0
     })
-  }, [C]), k = (0, u.a)(), B = l.useMemo(() => k(L), [k, L]);
+  }, [C]), B = (0, c.a)(), N = l.useMemo(() => B(I), [B, I]);
   l.useEffect(() => {
     n || (0, g.n)({
       sessionId: v,
@@ -49,54 +50,52 @@ function _(e) {
       cacheDisabled: S
     })
   }, [v, _, x, S, n, O]);
-  let N = l.useRef(null),
+  let A = l.useRef(null),
     {
-      setQueryPageSize: A,
-      setQueryPageOffset: R,
-      queryPageSize: w
+      setQueryPageSize: R,
+      setQueryPageOffset: w,
+      queryPageSize: Z
     } = (0, d.S)();
   l.useEffect(() => {
-    if (null != N.current) {
+    if (null != A.current) {
       let e = new ResizeObserver(() => {
-        null != N.current && A(Math.floor(5 * getComputedStyle(N.current).gridTemplateColumns.split(/\s+/).length))
+        null != A.current && R(Math.floor(5 * getComputedStyle(A.current).gridTemplateColumns.split(/\s+/).length))
       });
-      return e.observe(N.current), () => e.disconnect()
+      return e.observe(A.current), () => e.disconnect()
     }
-  }, [A]);
-  let Z = n || null == y;
-  return (0, r.jsx)("div", {
-    children: Z ? (0, r.jsx)(f.Z, {}) : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)("div", {
-        className: m.products,
-        ref: N,
-        children: B.map((e, t) => {
-          let n = c.Z.getCategory(e.categorySkuId);
-          return null == n ? null : (0, r.jsx)(s.k0, {
-            newValue: {
-              tilePosition: t
-            },
-            children: (0, r.jsx)(h.Z, {
-              product: e,
-              user: y,
-              category: n,
-              tab: O
-            }, e.skuId)
+  }, [R]);
+  let F = n || L || null == y;
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsxs)("div", {
+      className: m.products,
+      ref: A,
+      children: [F && [...Array(Z)].map((e, t) => (0, r.jsx)(f.K, {}, t)), N.map((e, t) => {
+        let n = s.Z.getCategory(e.categorySkuId);
+        return null == n ? null : (0, r.jsx)(a.k0, {
+          newValue: {
+            tilePosition: t
+          },
+          children: (0, r.jsx)(h.Z, {
+            product: e,
+            user: y,
+            category: n,
+            tab: O
           }, e.skuId)
-        })
-      }), P > w && (0, r.jsx)("div", {
-        className: m.paginationContainer,
-        children: (0, r.jsx)("div", {
-          children: (0, r.jsx)(i.DsT, {
-            currentPage: T,
-            totalCount: P,
-            pageSize: w,
-            onPageChange: e => {
-              R((e - 1) * w), I()
-            },
-            disablePaginationGap: !0
-          })
-        })
+        }, e.skuId)
       })]
-    })
+    }), P > Z && (0, r.jsx)("div", {
+      className: m.paginationContainer,
+      children: (0, r.jsx)("div", {
+        children: (0, r.jsx)(i.DsT, {
+          currentPage: T,
+          totalCount: P,
+          pageSize: Z,
+          onPageChange: e => {
+            w((e - 1) * Z), k()
+          },
+          disablePaginationGap: !0
+        })
+      })
+    })]
   })
 }
