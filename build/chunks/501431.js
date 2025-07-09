@@ -72,16 +72,16 @@ let g = {
     sortDirection: i.F.DESC
   },
   b = (0, l.U)((0, o.XR)((e, t) => d(u({}, g), {
+    hasDefaultFilters: () => !t().hasFilters() && t().sort.sortType === h.sortType && t().sort.sortDirection === h.sortDirection,
     hasFilters: () => {
       let {
         itemTypeFilters: e,
         colorFilters: n,
         themeFilters: r,
         orbEligible: l,
-        sort: o,
-        searchQuery: s
+        searchQuery: o
       } = t();
-      return [e, n, r].some(e => e.size > 0) || l || o.sortType !== a.E.RECENCY || o.sortDirection !== i.F.DESC || "" !== s
+      return [e, n, r].some(e => e.size > 0) || l || "" !== o
     },
     onToggleItemType: t => {
       e(e => ({
@@ -119,6 +119,7 @@ let g = {
       let n = "" === t ? h : f;
       e(e => d(u({}, e), {
         searchQuery: t,
+        queryPageOffset: 0,
         sort: n
       }))
     },

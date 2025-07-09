@@ -143,7 +143,7 @@ function w(e) {
         label: o,
         className: a()((0, c.wjy)(i) ? O.darkOverlay : O.lightOverlay, O.themeOption),
         style: {
-          background: "var(--bg-overlay), ".concat(l)
+          background: "var(--background-gradient), ".concat(l)
         }
       })
     }

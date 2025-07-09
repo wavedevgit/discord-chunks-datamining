@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: 1bc4b52e5cd36850
+  Original File Name: 8843e9f8d4b64ce7
 **/
 .titleBar__421ed {
     z-index: 3001;
@@ -146,7 +146,7 @@
 }
 
 .custom-theme-background .withBackgroundOverride__421ed {
-    background: var(--bg-overlay-app-frame,var(--background-base-lowest))
+    background: var(--background-gradient-app-frame,var(--background-base-lowest))
 }
 
 .custom-theme-background .withBackgroundOverride__421ed.typeWindows__421ed {
@@ -2412,7 +2412,7 @@
 }
 
 .wrapper__2ea32:hover .link__2ea32 {
-    background: var(--bg-overlay-hover,var(--background-modifier-hover))
+    background: var(--background-modifier-hover)
 }
 
 .wrapper__2ea32:active .link__2ea32 {
@@ -2434,7 +2434,7 @@
 }
 
 .modeSelected__2ea32 .link__2ea32,.modeSelected__2ea32:hover .link__2ea32 {
-    background: var(--bg-overlay-selected,var(--background-modifier-selected))
+    background: var(--background-modifier-selected)
 }
 
 .name__2ea32 {
@@ -3223,4 +3223,4 @@
     width: 96px
 }
 
-/*# sourceMappingURL=1bc4b52e5cd36850.css.map*/
+/*# sourceMappingURL=8843e9f8d4b64ce7.css.map*/

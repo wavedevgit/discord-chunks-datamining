@@ -183,7 +183,7 @@ function I(e) {
     name: t.getName(),
     className: a()([i ? h.disabled : null, (0, c.wj)(p) ? h.darkOverlay : h.lightOverlay]),
     style: {
-      background: "var(--bg-overlay), ".concat(m)
+      background: "var(--background-gradient), ".concat(m)
     },
     tabIndex: o,
     showBadge: l,

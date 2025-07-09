@@ -180,7 +180,8 @@ function N(e) {
       }), (R || t || H) && (0, r.jsxs)("div", {
         className: I.alignedRightContent,
         children: [H && (0, r.jsx)(j.Z, {
-          handleTransition: f
+          handleTransition: f,
+          selectedTab: g
         }), R && (0, r.jsx)(C.V9, {
           anchorPillType: t ? "SHOP_FULLSCREEN" : "SHOP",
           analyticsPage: D,

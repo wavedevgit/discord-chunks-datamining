@@ -1,6 +1,6 @@
 /**
   Module ID: 2026
-  Original File Name: 7107cf8334ba0bf4
+  Original File Name: 6a9b8d666bc7e2f5
 **/
 .buttonContent_a83ec9 {
     align-items: center;
@@ -329,7 +329,7 @@
 
 .chatPreview_c50f62 {
     align-items: stretch;
-    background: var(--bg-overlay-chat,var(--background-base-low));
+    background: var(--background-gradient-chat,var(--background-base-low));
     border-radius: var(--radius-sm);
     bottom: 44px;
     display: flex;
@@ -361,7 +361,7 @@
 
 .mockInput_c50f62 {
     align-items: center;
-    background: var(--bg-overlay-3,var(--channeltextarea-background));
+    background: var(--background-gradient-low,var(--channeltextarea-background));
     border-radius: var(--radius-md);
     display: flex;
     height: 40px;
@@ -554,4 +554,4 @@
     width: 350px
 }
 
-/*# sourceMappingURL=7107cf8334ba0bf4.css.map*/
+/*# sourceMappingURL=6a9b8d666bc7e2f5.css.map*/

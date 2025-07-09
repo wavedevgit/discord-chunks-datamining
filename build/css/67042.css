@@ -1,6 +1,6 @@
 /**
   Module ID: 67042
-  Original File Name: 3678781b2f56a35c
+  Original File Name: 3712c5fc13325239
 **/
 .pill_a2c9e8 {
     align-items: center;
@@ -1573,7 +1573,7 @@
 }
 
 .wrapper__2ea32:hover .link__2ea32 {
-    background: var(--bg-overlay-hover,var(--background-modifier-hover))
+    background: var(--background-modifier-hover)
 }
 
 .wrapper__2ea32:active .link__2ea32 {
@@ -1595,7 +1595,7 @@
 }
 
 .modeSelected__2ea32 .link__2ea32,.modeSelected__2ea32:hover .link__2ea32 {
-    background: var(--bg-overlay-selected,var(--background-modifier-selected))
+    background: var(--background-modifier-selected)
 }
 
 .name__2ea32 {
@@ -2156,4 +2156,4 @@ div.profileThemedContainer__656be {
     background-image: url(/assets/436b5a86429f186a.svg)
 }
 
-/*# sourceMappingURL=3678781b2f56a35c.css.map*/
+/*# sourceMappingURL=3712c5fc13325239.css.map*/

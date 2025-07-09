@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
+  $E: () => E,
   TS: () => f,
   Wh: () => h,
   bk: () => m,
@@ -87,6 +88,7 @@ function g(e, t) {
 }
 
 function E(e, t) {
+  if (e === t) return !0;
   for (let n of Object.keys(e)) {
     let r = n;
     if (!g(e[r], t[r])) return !1

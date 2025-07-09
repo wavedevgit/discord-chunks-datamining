@@ -1,6 +1,6 @@
 /**
   Module ID: 88622
-  Original File Name: 92cbfb85be7074bd
+  Original File Name: 4a08f5367c32f956
 **/
 .wrapper_b76891 {
     align-items: center;
@@ -2201,11 +2201,11 @@
 }
 
 .theme-dark .wrapper__0d616 {
-    background: var(--bg-overlay-3,var(--background-base-lower))
+    background: var(--background-gradient-low,var(--background-base-lower))
 }
 
 .theme-light .wrapper__0d616 {
-    background: var(--bg-overlay-2,var(--background-base-lower))
+    background: var(--background-gradient-lower,var(--background-base-lower))
 }
 
 .wrapperInvisible__0d616 {
@@ -2483,4 +2483,4 @@
     padding-top: 10px
 }
 
-/*# sourceMappingURL=92cbfb85be7074bd.css.map*/
+/*# sourceMappingURL=4a08f5367c32f956.css.map*/

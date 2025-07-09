@@ -1,6 +1,6 @@
 /**
   Module ID: 96174
-  Original File Name: 05851c4a580566c1
+  Original File Name: a94e85a2b259f3f1
 **/
 .titleBar__421ed {
     z-index: 3001;
@@ -146,7 +146,7 @@
 }
 
 .custom-theme-background .withBackgroundOverride__421ed {
-    background: var(--bg-overlay-app-frame,var(--background-base-lowest))
+    background: var(--background-gradient-app-frame,var(--background-base-lowest))
 }
 
 .custom-theme-background .withBackgroundOverride__421ed.typeWindows__421ed {
@@ -933,4 +933,4 @@
     align-items: stretch
 }
 
-/*# sourceMappingURL=05851c4a580566c1.css.map*/
+/*# sourceMappingURL=a94e85a2b259f3f1.css.map*/

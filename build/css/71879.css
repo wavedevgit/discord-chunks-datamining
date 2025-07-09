@@ -1,6 +1,6 @@
 /**
   Module ID: 71879
-  Original File Name: 9e651bd43f6cad28
+  Original File Name: 0aa30e95e8099ee2
 **/
 .obscuredIcon__43090 {
     height: 32px;
@@ -817,7 +817,7 @@
 
 .container_f369db {
     align-items: center;
-    background: var(--bg-overlay-chat,var(--background-base-lower));
+    background: var(--background-gradient-chat,var(--background-base-lower));
     display: flex;
     flex-direction: column;
     min-width: 320px;
@@ -901,7 +901,7 @@
 }
 
 .mainCard_f369db {
-    background: var(--bg-overlay-4,var(--background-base-low));
+    background: var(--background-gradient-high,var(--background-base-low));
     border: 1px solid var(--border-subtle);
     border-radius: var(--radius-md)
 }
@@ -2716,4 +2716,4 @@
     color: var(--text-link)
 }
 
-/*# sourceMappingURL=9e651bd43f6cad28.css.map*/
+/*# sourceMappingURL=0aa30e95e8099ee2.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 36512
-  Original File Name: 799414b3f98bd21b
+  Original File Name: 36d9154e4f23100a
 **/
 .container_e512ac {
     background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
@@ -1053,7 +1053,7 @@
 
 .searchBar__97492 {
     align-items: stretch;
-    background: var(--bg-overlay-3,var(--input-background));
+    background: var(--background-gradient-low,var(--input-background));
     border: 1px solid var(--input-border);
     border-radius: var(--radius-sm);
     box-shadow: none;
@@ -1400,4 +1400,4 @@
     margin-right: 8px
 }
 
-/*# sourceMappingURL=799414b3f98bd21b.css.map*/
+/*# sourceMappingURL=36d9154e4f23100a.css.map*/

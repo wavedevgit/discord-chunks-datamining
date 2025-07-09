@@ -1,6 +1,6 @@
 /**
   Module ID: 89795
-  Original File Name: 95c650330f5b7d93
+  Original File Name: f0fea4bc3ff4dcef
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -3474,7 +3474,7 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .containerSidenav_dc2e0e {
-    background: var(--bg-overlay-chat,var(--background-base-lower));
+    background: var(--background-gradient-chat,var(--background-base-lower));
     border-top: 1px solid var(--app-border-frame)
 }
 
@@ -4576,11 +4576,11 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
 }
 
 .interactive__972a0:hover {
-    background: var(--bg-overlay-selected,var(--background-mod-subtle))
+    background: var(--background-modifier-hover)
 }
 
 .interactive__972a0:active,.interactiveSelected__972a0 {
-    background: var(--bg-overlay-selected,var(--background-mod-normal));
+    background: var(--background-modifier-selected);
     color: var(--text-default)
 }
 
@@ -4827,11 +4827,11 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
 }
 
 .theme-dark .rtcSim_c202a4 {
-    background: var(--bg-overlay-1,var(--background-secondary-alt))
+    background: var(--background-gradient-lowest,var(--background-secondary-alt))
 }
 
 .theme-light .rtcSim_c202a4 {
-    background: var(--bg-overlay-3,var(--background-secondary-alt))
+    background: var(--background-gradient-low,var(--background-secondary-alt))
 }
 
 .resizeHandle_c202a4 {
@@ -8829,7 +8829,7 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
 }
 
 .mainPageScroller_ca1a02 {
-    background: var(--bg-overlay-chat,var(--background-base-low));
+    background: var(--background-gradient-chat,var(--background-base-low));
     contain: layout size
 }
 
@@ -8838,7 +8838,7 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
 }
 
 .allPerksScroller_ca1a02 {
-    background: var(--bg-overlay-chat,var(--background-base-low));
+    background: var(--background-gradient-chat,var(--background-base-low));
     contain: layout size;
     height: calc(100% - 48px);
     left: 100%;
@@ -12445,12 +12445,8 @@ html .invoiceCancelRow_b9f95d {
     scroll-margin-top: 145px
 }
 
-.theme-dark.custom-theme-background .preview__5d148 {
-    background: linear-gradient(rgb(var(--bg-overlay-color)/var(--bg-overlay-opacity-3)),rgb(var(--bg-overlay-color)/var(--bg-overlay-opacity-3))),var(--custom-theme-background)
-}
-
-.theme-light.custom-theme-background .preview__5d148 {
-    background: linear-gradient(rgb(var(--bg-overlay-color)/var(--bg-overlay-opacity-2)),rgb(var(--bg-overlay-color)/var(--bg-overlay-opacity-2))),var(--custom-theme-background)
+.custom-theme-background .preview__5d148 {
+    background: var(--background-gradient-chat-preview)
 }
 
 .card__594f1,.spacing__594f1 {
@@ -19746,4 +19742,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=95c650330f5b7d93.css.map*/
+/*# sourceMappingURL=f0fea4bc3ff4dcef.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 88934
-  Original File Name: 79f20d3528ed5852
+  Original File Name: e545279a666109e6
 **/
 @value headerBarHeight 60px;
 
@@ -30,7 +30,7 @@
 }
 
 .relative__8a7fc {
-    background: var(--bg-overlay-chat,var(--background-base-low));
+    background: var(--background-gradient-chat,var(--background-base-low));
     box-shadow: var(--shadow-low);
     -webkit-clip-path: inset(0 0 -4px 0);
     clip-path: inset(0 0 -4px 0);
@@ -38,7 +38,7 @@
 }
 
 .backdrop__8a7fc {
-    background: var(--bg-overlay-3,var(--background-base-lower));
+    background: var(--background-gradient-low,var(--background-base-lower));
     height: 100%;
     left: 0;
     position: absolute;
@@ -48,7 +48,7 @@
 }
 
 .background__8a7fc {
-    background: var(--bg-overlay-2,var(--background-base-lower))
+    background: var(--background-gradient-lower,var(--background-base-lower))
 }
 
 .icon__8a7fc {
@@ -282,7 +282,7 @@
 }
 
 .searchBar__1ac1c {
-    background: var(--bg-overlay-3,var(--background-base-lowest));
+    background: var(--background-gradient-low,var(--background-base-lowest));
     color: var(--text-default);
     flex: 1 1 240px;
     max-width: 240px;
@@ -444,7 +444,7 @@
 }
 
 .scroller__23746 {
-    background: var(--bg-overlay-chat,var(--background-base-lower));
+    background: var(--background-gradient-chat,var(--background-base-lower));
     display: flex;
     flex: 1;
     flex-direction: column
@@ -1870,9 +1870,9 @@
 
 .avatar_efaad4 {
     -webkit-user-drag: none;
-    background: var(--bg-overlay-chat,var(--background-base-low));
+    background: var(--background-gradient-chat,var(--background-base-low));
     border: solid;
-    border-color: var(--bg-overlay-chat,var(--background-base-low));
+    border-color: var(--background-gradient-chat,var(--background-base-low));
     border-radius: var(--radius-xl);
     transform: translateY(-50%)
 }
@@ -2363,7 +2363,7 @@
 
 .container__5682d {
     align-items: center;
-    background: var(--bg-overlay-3,var(--background-base-lower));
+    background: var(--background-gradient-low,var(--background-base-lower));
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -2544,4 +2544,4 @@
     width: 22px
 }
 
-/*# sourceMappingURL=79f20d3528ed5852.css.map*/
+/*# sourceMappingURL=e545279a666109e6.css.map*/

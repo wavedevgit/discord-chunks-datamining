@@ -77,7 +77,7 @@ function v(e) {
       e = "linear-gradient(".concat(n, "deg, ").concat(t.join(", "), ")")
     }
     return {
-      background: "var(--bg-overlay), ".concat(e)
+      background: "var(--background-gradient), ".concat(e)
     }
   }, [I, P]), D = (0, f.Sl)(g.Il.WHITE).hex, L = (0, f.Sl)(g.Il.RED_430).hex, x = C ? D : void 0, M = i.useCallback(() => {
     T && S(), null == v || v()

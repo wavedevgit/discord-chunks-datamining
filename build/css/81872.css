@@ -1,6 +1,6 @@
 /**
   Module ID: 81872
-  Original File Name: 8d36289d4e34e882
+  Original File Name: 1dc7334abe71f715
 **/
 .pro__30cbe {
     text-transform: uppercase
@@ -1748,15 +1748,15 @@ div.clanTagBadgeContainer__07f91 {
 }
 
 .listDefault__07f91 .clickable__07f91:hover .content__07f91 {
-    background: var(--bg-overlay-hover,var(--background-modifier-hover))
+    background: var(--background-modifier-hover)
 }
 
 .listDefault__07f91 .clickable__07f91:active .content__07f91 {
-    background: var(--bg-overlay-active,var(--background-modifier-active))
+    background: var(--background-modifier-active)
 }
 
 .listDefault__07f91 .clickable__07f91.selected__07f91 .content__07f91 {
-    background: var(--bg-overlay-selected,var(--background-modifier-selected))
+    background: var(--background-modifier-selected)
 }
 
 .listDefault__07f91 .clickable__07f91:hover .username__07f91 {
@@ -1775,7 +1775,7 @@ div.clanTagBadgeContainer__07f91 {
 }
 
 .optionsActive__07f91,.optionsButton__07f91:hover {
-    background: var(--bg-overlay-active,var(--background-modifier-active))
+    background: var(--background-modifier-active)
 }
 
 .voiceUser__07f91:not(:hover,:focus-within) .optionsButton__07f91:not(.optionsActive__07f91) {
@@ -1854,4 +1854,4 @@ span.clanTag__07f91.isOverlay__07f91 {
     color: CanvasText
 }
 
-/*# sourceMappingURL=8d36289d4e34e882.css.map*/
+/*# sourceMappingURL=1dc7334abe71f715.css.map*/

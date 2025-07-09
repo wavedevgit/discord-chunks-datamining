@@ -1,6 +1,6 @@
 /**
   Module ID: 12009
-  Original File Name: f86ba2a37be2303f
+  Original File Name: 3775f1ca9b6ad84d
 **/
 .header__553a5 {
     margin-top: -16px;
@@ -78,7 +78,7 @@
 }
 
 .container__7449f {
-    background: var(--bg-overlay-chat,var(--background-base-low));
+    background: var(--background-gradient-chat,var(--background-base-low));
     display: flex;
     flex: 1 1 auto;
     flex-direction: column;
@@ -498,4 +498,4 @@
     top: 1px
 }
 
-/*# sourceMappingURL=f86ba2a37be2303f.css.map*/
+/*# sourceMappingURL=3775f1ca9b6ad84d.css.map*/

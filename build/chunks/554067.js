@@ -13,27 +13,30 @@ var r = n(255367),
 
 function u(e) {
   let {
-    handleTransition: t
+    handleTransition: t,
+    selectedTab: n
   } = e, {
-    searchQuery: n,
-    onSetSearchQuery: u
-  } = (0, i.S)(), [d, p] = l.useState("");
+    searchQuery: u,
+    onSetSearchQuery: d
+  } = (0, i.S)(), [p, g] = l.useState("");
   return l.useEffect(() => {
     let e = setTimeout(() => {
-      u(d)
+      d(p)
     }, 250);
     return () => clearTimeout(e)
-  }, [d, u]), l.useEffect(() => {}, []), l.useEffect(() => {
-    p(n)
-  }, [n]), (0, r.jsx)(o.E1j, {
-    onFocus: () => t(a.AW.CATALOG),
+  }, [p, d]), l.useEffect(() => {
+    g(u)
+  }, [u]), (0, r.jsx)(o.E1j, {
+    onFocus: () => {
+      n !== a.AW.CATALOG && t(a.AW.CATALOG)
+    },
     className: c.searchBar,
     onKeyDown: e => {
-      "Enter" === e.key && u(d)
+      "Enter" === e.key && d(p)
     },
-    query: d,
-    onChange: p,
-    onClear: () => p(""),
+    query: p,
+    onChange: g,
+    onClear: () => g(""),
     placeholder: s.intl.string(s.t["hIt/Nj"])
   })
 }

@@ -1,6 +1,6 @@
 /**
   Module ID: 19577
-  Original File Name: 9d49d11a4157fa17
+  Original File Name: f4aa649453bc1bf4
 **/
 .debugMode_fa952e {
     background-color: rgba(255,0,0,.25);
@@ -234,7 +234,7 @@
 }
 
 .container_c8ffbb {
-    background: var(--bg-overlay-chat,var(--custom-channel-members-bg));
+    background: var(--background-gradient-chat,var(--custom-channel-members-bg));
     border-left: 1px solid var(--border-subtle);
     display: flex;
     flex-direction: column;
@@ -254,7 +254,7 @@
 }
 
 .members_c8ffbb {
-    background: var(--bg-overlay-chat,var(--custom-channel-members-bg));
+    background: var(--background-gradient-chat,var(--custom-channel-members-bg));
     flex: 0 0 auto;
     height: auto;
     padding: 0 0 10px
@@ -265,7 +265,7 @@
 }
 
 .member_c8ffbb {
-    background: var(--bg-overlay-chat,var(--custom-channel-members-bg))
+    background: var(--background-gradient-chat,var(--custom-channel-members-bg))
 }
 
 .membersGroup_c8ffbb {
@@ -1873,7 +1873,7 @@ strong {
 }
 
 .circularButton__92e4b {
-    background: var(--bg-overlay-1,var(--background-secondary-alt));
+    background: var(--background-gradient-lowest,var(--background-secondary-alt));
     border-radius: 20px;
     height: 40px;
     width: 40px
@@ -5071,8 +5071,8 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .circleLayer__8b6cd {
-    background: var(--bg-overlay-3,var(--channeltextarea-background));
-    background: var(--bg-overlay-floating,var(--input-background));
+    background: var(--background-gradient-low,var(--channeltextarea-background));
+    background: var(--background-gradient-highest,var(--input-background));
     border-radius: 50%;
     height: 20px;
     height: 32px;
@@ -5412,7 +5412,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     box-sizing: border-box;
     position: relative;
     word-wrap: break-word;
-    background: var(--bg-overlay-chat,var(--background-base-lower));
+    background: var(--background-gradient-chat,var(--background-base-lower));
     contain: paint layout;
     flex: 0 0 auto;
     overflow: hidden;
@@ -5559,7 +5559,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .wrapper_d852db {
-    background: var(--bg-overlay-chat,var(--background-base-lower));
+    background: var(--background-gradient-chat,var(--background-base-lower));
     contain: strict;
     overflow: hidden
 }
@@ -6978,7 +6978,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .container__34c2c,.header__34c2c {
-    background: var(--bg-overlay-chat,var(--background-base-lower))
+    background: var(--background-gradient-chat,var(--background-base-lower))
 }
 
 .header__34c2c {
@@ -7143,7 +7143,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .summaryEndIcon__3aab5,.summaryFeedbackWrapper__3aab5 {
-    background: var(--bg-overlay-chat,var(--background-base-low))
+    background: var(--background-gradient-chat,var(--background-base-low))
 }
 
 .summaryFeedbackWrapper__3aab5 {
@@ -9254,11 +9254,11 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .theme-dark .themed_a53846 {
-    background: var(--bg-overlay-2,var(--__header-bar-background))
+    background: var(--background-gradient-lower,var(--__header-bar-background))
 }
 
 .theme-light .themed_a53846 {
-    background: var(--bg-overlay-1,var(--__header-bar-background))
+    background: var(--background-gradient-lowest,var(--__header-bar-background))
 }
 
 .refresh-fast-follow-distinct-borders .chatHeaderBar_a53846 {
@@ -9273,7 +9273,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     overflow: hidden;
     position: relative;
     --custom-app-dm-chat-input-primary-button-width: 152px;
-    background: var(--bg-overlay-chat,var(--background-base-lowest))
+    background: var(--background-gradient-chat,var(--background-base-lowest))
 }
 
 .chat_f75fb0[data-has-border=true] {
@@ -9359,7 +9359,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .chatContent_f75fb0 {
-    background: var(--bg-overlay-chat,var(--background-base-lower));
+    background: var(--background-gradient-chat,var(--background-base-lower));
     display: flex;
     flex: 1 1 auto;
     flex-direction: column;
@@ -9406,7 +9406,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .channelTextArea_f75fb0 {
-    background: var(--bg-overlay-floating,var(--chat-background-default));
+    background: var(--background-gradient-highest,var(--chat-background-default));
     margin-bottom: var(--custom-chat-input-margin-bottom)
 }
 
@@ -9476,7 +9476,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .theme-light.client-theme-color-picker .title_f75fb0 {
-    --bg-overlay-1: var(--bg-overlay-chat)
+    --background-gradient-lowest: var(--background-gradient-chat)
 }
 
 .guildBreadcrumbContainer_f75fb0 {
@@ -9592,7 +9592,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .container__01ae2 {
-    background: var(--bg-overlay-app-frame,var(--background-base-lowest));
+    background: var(--background-gradient-app-frame,var(--background-base-lowest));
     border-left: 1px solid var(--app-border-frame);
     border-radius: 8px 0 0 8px;
     border-top: 1px solid var(--app-border-frame);
@@ -9630,7 +9630,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .resizeHandle__01ae2 {
-    background: var(--bg-overlay-app-frame,var(--background-base-lowest));
+    background: var(--background-gradient-app-frame,var(--background-base-lowest));
     cursor: ew-resize;
     flex-shrink: 0;
     height: 100%;
@@ -11073,7 +11073,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .channelChatWrapper_cb9592,.wrapper_cb9592 {
-    background: var(--bg-overlay-app-frame,var(--background-base-lowest))
+    background: var(--background-gradient-app-frame,var(--background-base-lowest))
 }
 
 .emptyWrapper_f12222 {
@@ -11289,7 +11289,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .pageContainer__09fde {
-    background: var(--bg-overlay-chat,var(--background-base-lower));
+    background: var(--background-gradient-chat,var(--background-base-lower));
     display: flex;
     flex: 1 1 auto;
     flex-direction: column;
@@ -11824,7 +11824,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .searchResultsWrap_a9e706 {
-    background: var(--bg-overlay-1,var(--background-base-lowest));
+    background: var(--background-gradient-lowest,var(--background-base-lowest));
     border-left: 1px solid var(--app-border-frame);
     display: flex;
     flex: 0 0 auto;
@@ -12838,7 +12838,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .container_fb64c9 {
-    background: var(--bg-overlay-2,var(--background-base-lower))
+    background: var(--background-gradient-lower,var(--background-base-lower))
 }
 
 .chat_fb64c9,.container_fb64c9 {
@@ -13713,4 +13713,4 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     position: relative
 }
 
-/*# sourceMappingURL=9d49d11a4157fa17.css.map*/
+/*# sourceMappingURL=f4aa649453bc1bf4.css.map*/

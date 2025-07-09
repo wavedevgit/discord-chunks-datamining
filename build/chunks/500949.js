@@ -5,7 +5,7 @@ a.d(t, {
   GU: () => Y,
   H8: () => q,
   HI: () => J,
-  HW: () => z,
+  HW: () => U,
   Ib: () => eo,
   KB: () => eu,
   S2: () => H,
@@ -16,7 +16,7 @@ a.d(t, {
   h9: () => es,
   iw: () => ea,
   jC: () => V,
-  jQ: () => U,
+  jQ: () => z,
   lT: () => X,
   rd: () => ed,
   t4: () => ec,
@@ -89,7 +89,7 @@ function F(e, t) {
     Object.defineProperty(e, a, Object.getOwnPropertyDescriptor(t, a))
   }), e
 }
-let z = {
+let U = {
     sRGB: i.Z,
     A98RGB: s.Z,
     ACEScc: o.Z,
@@ -117,8 +117,8 @@ let z = {
     XYZ_D50: w.Z,
     XYZ_D65: I.Z
   },
-  U = Object.fromEntries(Object.keys(z).map(e => [e, e]));
-Object.values(z).forEach(e => R.Z.register(e));
+  z = Object.fromEntries(Object.keys(U).map(e => [e, e]));
+Object.values(U).forEach(e => R.Z.register(e));
 let {
   SemanticColors: G
 } = L.V, V = G, H = CSS.supports("color", "color(display-p3 1 0 0)") && CSS.supports("color", "color(display-p3 1 0 0 / 1)");
@@ -216,7 +216,7 @@ function er(e) {
     darkness: r,
     lightness: l,
     easingStrength: s = 1
-  } = e, o = z[e.colorSpace], c = (0, Z.Z)(a, o), d = (0, A.CD)(c, "white", 1 - r, {
+  } = e, o = U[e.colorSpace], c = (0, Z.Z)(a, o), d = (0, A.CD)(c, "white", 1 - r, {
     space: o,
     outputSpace: i.Z
   }), u = (0, A.CD)(c, "black", 1 - l, {

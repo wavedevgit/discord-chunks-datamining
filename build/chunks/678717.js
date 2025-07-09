@@ -41,8 +41,8 @@ var _ = a(392750),
   M = a(442954),
   B = a(633001),
   F = a(702904),
-  z = a(178821),
-  U = a(891401),
+  U = a(178821),
+  z = a(891401),
   G = a(958328),
   V = a(315384),
   H = a(514866),
@@ -123,7 +123,7 @@ function ei(e) {
       id: "performance",
       name: "Performance",
       group: ee.v0.DEVELOPMENT,
-      render: () => (0, n.jsx)(z.ZP, {})
+      render: () => (0, n.jsx)(U.ZP, {})
     }), e.push({
       id: "feedback",
       name: "Feedback",
@@ -212,7 +212,7 @@ function ei(e) {
       id: "perks",
       name: "Perks",
       group: ee.v0.PREMIUM,
-      render: () => (0, n.jsx)(U.Z, {})
+      render: () => (0, n.jsx)(z.Z, {})
     }), e.push({
       id: "potions",
       name: "Potions",

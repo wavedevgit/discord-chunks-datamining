@@ -43,7 +43,7 @@ function v(e) {
   l.useEffect(() => {
     j || P(!1)
   }, [j, P]);
-  let L = (0, d.S)(e => e.hasFilters());
+  let L = (0, d.S)(e => e.hasDefaultFilters());
   return (0, r.jsx)("div", {
     className: i()(E.pageWrapper, {
       [E.pageWrapperFilter]: j
@@ -77,7 +77,7 @@ function v(e) {
               })
             })]
           })]
-        }), j && L ? (0, r.jsx)(m.Z, {
+        }), j && !L ? (0, r.jsx)(m.Z, {
           isFullScreen: t,
           scrollerRef: n,
           tab: o

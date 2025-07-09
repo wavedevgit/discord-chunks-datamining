@@ -1,6 +1,6 @@
 /**
   Module ID: 67544
-  Original File Name: 70436a43d933208c
+  Original File Name: 55da5d4f692f37de
 **/
 .titleBar__421ed {
     z-index: 3001;
@@ -146,7 +146,7 @@
 }
 
 .custom-theme-background .withBackgroundOverride__421ed {
-    background: var(--bg-overlay-app-frame,var(--background-base-lowest))
+    background: var(--background-gradient-app-frame,var(--background-base-lowest))
 }
 
 .custom-theme-background .withBackgroundOverride__421ed.typeWindows__421ed {
@@ -1373,4 +1373,4 @@
     cursor: url(/assets/dfb72fed71c8e261.svg),pointer
 }
 
-/*# sourceMappingURL=70436a43d933208c.css.map*/
+/*# sourceMappingURL=55da5d4f692f37de.css.map*/

@@ -139,8 +139,8 @@ function y() {
       noiseCancellationEnableStats: h.Z.getKrispEnableStats()
     })),
     F = A ? "KRISP" : D ? "STANDARD" : "NONE",
-    z = (0, x.N)(),
-    U = r.useCallback(() => {
+    U = (0, x.N)(),
+    z = r.useCallback(() => {
       var e;
       null == (e = C.current) || e.stop(), C.current = null, y(null)
     }, []);
@@ -150,13 +150,13 @@ function y() {
   }
 
   function V(e) {
-    if (t && G(), U(), null == z) return;
-    let a = z.createBufferSource();
-    a.buffer = e.audioBuffer, O.current = z.createGain(), O.current.gain.value = N, a.connect(O.current), O.current.connect(z.destination), a.loop = !0, a.start(), C.current = a, y(e)
+    if (t && G(), z(), null == U) return;
+    let a = U.createBufferSource();
+    a.buffer = e.audioBuffer, O.current = U.createGain(), O.current.gain.value = N, a.connect(O.current), O.current.connect(U.destination), a.loop = !0, a.start(), C.current = a, y(e)
   }
   r.useEffect(() => {
-    U()
-  }, [U]);
+    z()
+  }, [z]);
   let H = [];
   return M && H.push({
     label: "Krisp",
@@ -292,7 +292,7 @@ function y() {
         children: (0, n.jsx)(d.zx, {
           color: t ? d.zx.Colors.RED : d.zx.Colors.BRAND,
           onClick: t ? G : function() {
-            U(), a(!0), m.Z.setLoopback("krisp_test", !0), h.Z.getMediaEngine().startRecordingRawSamples((t, n, r) => {
+            z(), a(!0), m.Z.setLoopback("krisp_test", !0), h.Z.getMediaEngine().startRecordingRawSamples((t, n, r) => {
               var l, o;
               a(!1), m.Z.setLoopback("krisp_test", !1);
               let c = new AudioBuffer({
@@ -341,7 +341,7 @@ function y() {
           recording: e,
           playing: e === g,
           onPlay: V,
-          onStop: U
+          onStop: z
         }, t))
       })]
     })

@@ -1,6 +1,6 @@
 /**
   Module ID: 43473
-  Original File Name: 7dd05ff2964d9c0a
+  Original File Name: 330f9d544fbc0010
 **/
 .scroller__95bea {
     display: flex;
@@ -905,7 +905,7 @@
     box-sizing: border-box;
     position: relative;
     word-wrap: break-word;
-    background: var(--bg-overlay-chat,var(--background-base-lower));
+    background: var(--background-gradient-chat,var(--background-base-lower));
     contain: paint layout;
     flex: 0 0 auto;
     overflow: hidden;
@@ -1413,4 +1413,4 @@
     border-color: var(--input-focused-border)
 }
 
-/*# sourceMappingURL=7dd05ff2964d9c0a.css.map*/
+/*# sourceMappingURL=330f9d544fbc0010.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 49910
-  Original File Name: 4c856dcec1382f69
+  Original File Name: df26fa30e307c005
 **/
 .root__81345 {
     max-height: calc(100vh - var(--space-16) - var(--custom-app-top-bar-height));
@@ -97,11 +97,11 @@
 }
 
 .darkOverlay__81345 {
-    --bg-overlay: linear-gradient(var(--opacity-black-20),var(--opacity-black-20))
+    --background-gradient: linear-gradient(var(--opacity-black-20),var(--opacity-black-20))
 }
 
 .lightOverlay__81345 {
-    --bg-overlay: linear-gradient(var(--opacity-white-48),var(--opacity-white-48))
+    --background-gradient: linear-gradient(var(--opacity-white-48),var(--opacity-white-48))
 }
 
 .new__81345 {
@@ -133,4 +133,4 @@
     }
 }
 
-/*# sourceMappingURL=4c856dcec1382f69.css.map*/
+/*# sourceMappingURL=df26fa30e307c005.css.map*/
