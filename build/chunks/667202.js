@@ -72,21 +72,21 @@ function p(e) {
     size: t = "md",
     gradientColor: n = "purple",
     graphic: l,
-    heading: u,
-    headerBody: _,
+    title: u,
+    subtitle: _,
     actionBarInput: p,
     actions: h,
     children: m
-  } = e, g = f(e, ["size", "gradientColor", "graphic", "heading", "headerBody", "actionBarInput", "actions", "children"]);
+  } = e, g = f(e, ["size", "gradientColor", "graphic", "title", "subtitle", "actionBarInput", "actions", "children"]);
   return (0, r.jsxs)(i.IX, d(c({}, g), {
     size: t,
     paddingSize: "lg",
     children: [(0, r.jsx)(s.x, {
       gradientColor: n,
       graphic: l,
-      heading: u,
-      headingTextVariant: "heading-xl/semibold",
-      body: _,
+      title: u,
+      titleTextVariant: "heading-xl/semibold",
+      subtitle: _,
       alignCenter: !0
     }), (0, r.jsx)(o.f, {
       children: m

@@ -71,20 +71,20 @@ function p(e, t) {
 function h(e) {
   var {
     size: t,
-    heading: n,
-    headerBody: c,
+    title: n,
+    subtitle: c,
     input: d,
     preview: p,
     actions: h,
     actionBarInput: m,
     children: g
-  } = e, E = _(e, ["size", "heading", "headerBody", "input", "preview", "actions", "actionBarInput", "children"]);
+  } = e, E = _(e, ["size", "title", "subtitle", "input", "preview", "actions", "actionBarInput", "children"]);
   let b = null != t ? t : null != d || null != g ? "md" : "sm";
   return (0, r.jsxs)(i.IX, f(u({}, E), {
     size: b,
     children: [(0, r.jsx)(l.x, {
-      heading: n,
-      body: c
+      title: n,
+      subtitle: c
     }), (0, r.jsx)(o.f, {
       controls: d,
       children: g

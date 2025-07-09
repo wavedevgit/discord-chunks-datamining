@@ -33,18 +33,18 @@ function r(t) {
     protocol: d,
     authorityPrefix: x,
     hostname: m,
-    theRestOfTheUrl: h
-  } = i(e), u = a.useCallback(() => {
+    theRestOfTheUrl: u
+  } = i(e), h = a.useCallback(() => {
     o && n(e), null == s || s(), l()
   }, [e, o, n, l, s]);
   return {
     protocol: d,
     authorityPrefix: x,
     hostname: m,
-    theRestOfTheUrl: h,
+    theRestOfTheUrl: u,
     shouldTrustUrl: o,
     setShouldTrustUrl: c,
-    handleConfirm: u,
+    handleConfirm: h,
     handleCancel: a.useCallback(() => {
       null == s || s(), r()
     }, [r, s])

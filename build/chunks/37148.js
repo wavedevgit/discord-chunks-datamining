@@ -98,9 +98,9 @@ function h(e) {
   let {
     gradientColor: t,
     graphic: n,
-    heading: i,
-    headingTextVariant: a,
-    body: l,
+    title: i,
+    titleTextVariant: a,
+    subtitle: l,
     alignCenter: f = !1,
     leading: h,
     trailing: m

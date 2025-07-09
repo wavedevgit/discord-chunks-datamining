@@ -1820,8 +1820,8 @@ function ec(e) {
     children: [(0, i.jsx)("div", {
       className: Z.modalOutlines,
       children: (0, i.jsx)(O.x, {
-        heading: "Demo Modal",
-        body: "The ModalHeader can have leading and trailing items on either side of the text",
+        title: "Demo Modal",
+        subtitle: "The ModalHeader can have leading and trailing items on either side of the text",
         leading: (0, i.jsx)(r, {}),
         trailing: (0, i.jsx)(r, {})
       })
@@ -1872,8 +1872,8 @@ function ed(e) {
     onClose: n,
     size: s,
     children: [(0, i.jsx)(O.x, {
-      heading: l,
-      body: c,
+      title: l,
+      subtitle: c,
       alignCenter: u
     }), (0, i.jsx)(j.f, {
       controls: p ? (0, i.jsx)(S.E1j, {
@@ -2014,7 +2014,7 @@ function eu(e) {
     transitionState: t,
     onClose: n,
     size: "md",
-    heading: "Invite to server",
+    title: "Invite to server",
     input: (0, i.jsx)(S.E1j, {
       size: S.E1j.Sizes.MEDIUM,
       placeholder: "Search",
@@ -2086,8 +2086,8 @@ function em(e) {
   return (0, i.jsx)(x.u, {
     transitionState: t,
     onClose: n,
-    heading: "Alert Modal",
-    headerBody: "This is an alert",
+    title: "Alert Modal",
+    subtitle: "This is an alert",
     actions: [{
       variant: "secondary",
       text: "Cancel",
@@ -2109,8 +2109,8 @@ function ep(e) {
     transitionState: t,
     onClose: n,
     graphic: w,
-    heading: "Expressive Modal",
-    headerBody: "This is an expressive modal with a header image",
+    title: "Expressive Modal",
+    subtitle: "This is an expressive modal with a header image",
     actions: [{
       variant: "secondary",
       text: "Cancel",
@@ -2133,8 +2133,8 @@ function eg(e) {
     transitionState: t,
     onClose: n,
     size: 1 === s ? "md" : "sm",
-    heading: "Mana Modal Stacking Demo",
-    headerBody: "This is modal level ".concat(s, "."),
+    title: "Mana Modal Stacking Demo",
+    subtitle: "This is modal level ".concat(s, "."),
     actions: [{
       variant: "secondary",
       text: "Close",
