@@ -47,11 +47,11 @@ var r = n(255367),
   z = n(133340),
   W = n(758371),
   K = n(276852),
-  Y = n(115914),
-  X = n(984211),
-  q = n(620662),
-  Q = n(994339),
-  J = n(275920),
+  Y = n(984211),
+  X = n(620662),
+  q = n(994339),
+  Q = n(275920),
+  J = n(561766),
   $ = n(884338),
   ee = n(404174),
   et = n(981631),
@@ -125,7 +125,7 @@ function eu(e) {
     onView: m,
     partyStatusElement: f,
     presenceActivity: _
-  } = e, b = ec(u, _), E = (0, T.Lz)(_, p.author, "Invite Embed"), y = !(0, Q.Z)(_, p, c.id), x = i.useMemo(() => {
+  } = e, b = ec(u, _), E = (0, T.Lz)(_, p.author, "Invite Embed"), y = !(0, q.Z)(_, p, c.id), x = i.useMemo(() => {
     let e = [];
     if (!b) {
       var t;
@@ -232,33 +232,33 @@ function ed(e, t) {
 function ep(e) {
   let {
     presenceActivity: t
-  } = e, n = (0, Y.M)({
-    presenceActivity: t,
+  } = e, n = (0, J.Cx)({
+    platforms: null == t ? void 0 : t.supported_platforms,
     currentPlatform: et.M7m.DESKTOP
   }), l = i.useMemo(() => n.map(e => {
     switch (e) {
-      case Y.O.MOBILE:
+      case J.Ol.MOBILE:
         return (0, r.jsx)(s.AtH, {
           size: "xxs",
           color: "currentColor"
         });
-      case Y.O.ANDROID:
+      case J.Ol.ANDROID:
         return (0, r.jsx)(ee.j, {
           width: a.Z.xxs,
           height: a.Z.xxs,
           color: "currentColor"
         });
-      case Y.O.IOS:
+      case J.Ol.IOS:
         return (0, r.jsx)(s.gLQ, {
           size: "xxs",
           color: "currentColor"
         });
-      case Y.O.PLAYSTATION:
+      case J.Ol.PLAYSTATION:
         return (0, r.jsx)(s.Tsp, {
           size: "xxs",
           color: "currentColor"
         });
-      case Y.O.XBOX:
+      case J.Ol.XBOX:
         return (0, r.jsx)(s.Mko, {
           size: "xxs",
           color: "currentColor"
@@ -313,7 +313,7 @@ function em(e) {
     location: "RichPresenceActivityInviteEmbed"
   }, {
     autoTrackExposure: !0
-  }), K = !(0, Q.Z)(R, P, j.id), Y = ea(P), $ = (0, o.e7)([Z.Z], () => Z.Z.getGameByName(j.name), [j.name]), {
+  }), K = !(0, q.Z)(R, P, j.id), J = ea(P), $ = (0, o.e7)([Z.Z], () => Z.Z.getGameByName(j.name), [j.name]), {
     openGameProfileModal: ee,
     isGameLaunchable: en
   } = ed(j.id, P.author.id), {
@@ -354,8 +354,8 @@ function em(e) {
       isEmbeddedApplication: a,
       isGameLaunchable: o
     } = e;
-    if (i.author.id === r || !(0, Q.Z)(t, i, l.id)) return !1;
-    let s = (0, X._)(t);
+    if (i.author.id === r || !(0, q.Z)(t, i, l.id)) return !1;
+    let s = (0, Y._)(t);
     return !(!es(s) || eo(s) || ec(n, t) || ea(i)) && (!!a || !!H.isPlatformEmbedded && !!o)
   }({
     presenceActivity: R,
@@ -365,10 +365,10 @@ function em(e) {
     application: j,
     isEmbeddedApplication: L,
     isGameLaunchable: en
-  }), eE = !(null == R || !(0, Q.Z)(R, P, j.id) || !(0, q.Z)(R, et.xjy.SYNC) || !H.isPlatformEmbedded || ec(T, R)), ey = ec(T, R), eC = function(e, t, n, r) {
+  }), eE = !(null == R || !(0, q.Z)(R, P, j.id) || !(0, X.Z)(R, et.xjy.SYNC) || !H.isPlatformEmbedded || ec(T, R)), ey = ec(T, R), eC = function(e, t, n, r) {
     var i;
-    if (t.author.id === r || !(0, Q.Z)(e, t, n.id) || (null == (i = t.activity) ? void 0 : i.type) !== et.mFx.JOIN_REQUEST || !(0, q.Z)(e, et.xjy.JOIN)) return !1;
-    let l = (0, X._)(e);
+    if (t.author.id === r || !(0, q.Z)(e, t, n.id) || (null == (i = t.activity) ? void 0 : i.type) !== et.mFx.JOIN_REQUEST || !(0, X.Z)(e, et.xjy.JOIN)) return !1;
+    let l = (0, Y._)(e);
     return !(!es(l) || eo(l))
   }(R, P, j, S), ex = i.useMemo(() => eb ? {
     label: er.intl.string(er.t.VJlc0d),
@@ -383,8 +383,8 @@ function em(e) {
         messageId: P.id,
         source: et.Sbl.MESSAGE_EMBED,
         analyticsLocations: v,
-        embedded: (0, q.Z)(R, et.xjy.EMBEDDED)
-      }), (0, J.Z)({
+        embedded: (0, X.Z)(R, et.xjy.EMBEDDED)
+      }), (0, Q.Z)({
         type: et.q5t.JOIN,
         source: et.Sbl.MESSAGE_EMBED,
         userId: P.author.id,
@@ -497,10 +497,10 @@ function em(e) {
       className: ei.tagline,
       color: "none",
       lineClamp: 2,
-      children: [Y ? (0, W.$v)(P, j, I, S, K) : ew, Y ? null : eN]
+      children: [J ? (0, W.$v)(P, j, I, S, K) : ew, J ? null : eN]
     }),
     eR = (0, r.jsxs)(r.Fragment, {
-      children: [eZ, N || Y ? null : w]
+      children: [eZ, N || J ? null : w]
     });
   return (0, r.jsx)(g.W, {
     header: eS,
@@ -547,7 +547,7 @@ function ef(e) {
   }, [f]), {
     partySize: h,
     maxPartySize: E
-  } = (0, X._)(f), y = i.useMemo(() => g.map(e => {
+  } = (0, Y._)(f), y = i.useMemo(() => g.map(e => {
     let t = k.default.getUser(e);
     return null != t ? t : $.ag
   }), [g]), C = (0, en.Ps)(null == f || null == (t = f.party) ? void 0 : t.id) || p.id === N.r9.id, x = (0, r.jsx)(el, {

@@ -1,15 +1,26 @@
 /** Chunk was on 61668 **/
 n.d(t, {
-  C: () => a,
-  O: () => l
+  Cx: () => s,
+  Ol: () => a
 }), n(388685), n(539854);
-var r, i = n(981631),
-  l = ((r = {}).MOBILE = "mobile", r.ANDROID = "android", r.IOS = "ios", r.PLAYSTATION = "playstation", r.XBOX = "xbox", r);
+var r, i = n(73800),
+  l = n(981631),
+  a = ((r = {}).DESKTOP = "desktop", r.MOBILE = "mobile", r.ANDROID = "android", r.IOS = "ios", r.PLAYSTATION = "playstation", r.XBOX = "xbox", r);
+let o = [];
 
-function a(e) {
+function s(e) {
   let {
-    presenceActivity: t,
+    platforms: t,
     currentPlatform: n
-  } = e, r = null == t ? void 0 : t.supported_platforms, l = new Set(r), a = [];
-  return null == r || 0 === r.length || r.includes(n) ? [] : (l.has(i.M7m.ANDROID) && l.has(i.M7m.IOS) ? a.push("mobile") : l.has(i.M7m.ANDROID) ? a.push("android") : l.has(i.M7m.IOS) && a.push("ios"), (l.has(i.M7m.PS4) || l.has(i.M7m.PS5)) && a.push("playstation"), l.has(i.M7m.XBOX) && a.push("xbox"), a)
+  } = e;
+  return i.useMemo(() => (function(e) {
+    let {
+      platforms: t,
+      currentPlatform: n
+    } = e, r = new Set(t), i = [];
+    return null == t || 0 === t.length || null != n && r.has(n) ? o : (r.has(l.M7m.ANDROID) && r.has(l.M7m.IOS) ? i.push("mobile") : r.has(l.M7m.ANDROID) ? i.push("android") : r.has(l.M7m.IOS) && i.push("ios"), (r.has(l.M7m.PS4) || r.has(l.M7m.PS5)) && i.push("playstation"), r.has(l.M7m.XBOX) && i.push("xbox"), r.has(l.M7m.DESKTOP) && i.push("desktop"), i)
+  })({
+    platforms: t,
+    currentPlatform: n
+  }), [n, t])
 }
