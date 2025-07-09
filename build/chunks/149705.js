@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  a: () => a
+  a: () => i
 });
 var r = n(97519);
 
@@ -36,7 +36,7 @@ function o(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let i = {
+let a = {
     skus: [],
     currentPage: 0,
     totalCount: 0,
@@ -44,7 +44,7 @@ let i = {
     searchError: null,
     isFetchingResults: !1
   },
-  a = (0, r.U)(e => o(l({}, i), {
+  i = (0, r.U)(e => o(l({}, a), {
     onSetResponse: t => {
       let n = Math.floor(t.pageOffset / t.pageLimit) + 1;
       e(o(l({}, t), {
@@ -52,7 +52,7 @@ let i = {
       }))
     },
     setSearchError: t => {
-      e(o(l({}, i), {
+      e(o(l({}, a), {
         searchError: t
       }))
     },
@@ -62,6 +62,6 @@ let i = {
       })
     },
     clear: () => {
-      e(l({}, i))
+      e(l({}, a))
     }
   }))

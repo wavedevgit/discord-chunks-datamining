@@ -6,8 +6,8 @@ n.r(t), n.d(t, {
 var r = n(255367),
   l = n(73800),
   o = n(120356),
-  i = n.n(o),
-  a = n(772848),
+  a = n.n(o),
+  i = n(772848),
   s = n(399606),
   c = n(952265),
   u = n(481060),
@@ -21,8 +21,8 @@ var r = n(255367),
   _ = n(511050),
   C = n(819640),
   O = n(594174),
-  E = n(381585),
-  v = n(597688),
+  v = n(381585),
+  E = n(597688),
   S = n(780475),
   x = n(223143),
   y = n(298228),
@@ -56,7 +56,7 @@ let w = e => {
       tab: n = B.AW.HOME
     } = e;
     (0, b.z)(h.f);
-    let o = (0, p.Z)((0, a.Z)()),
+    let o = (0, p.Z)((0, i.Z)()),
       c = (0, s.e7)([O.default], () => O.default.getCurrentUser()),
       A = l.useRef(null),
       {
@@ -83,9 +83,9 @@ let w = e => {
     (0, m.P)();
     let H = (0, y.O)(D),
       [W, V] = l.useState(),
-      U = (0, s.e7)([v.Z], () => {
+      U = (0, s.e7)([E.Z], () => {
         var e;
-        return null == (e = v.Z.getCategory(W)) ? void 0 : e.name
+        return null == (e = E.Z.getCategory(W)) ? void 0 : e.name
       }),
       [G, z] = l.useState(),
       Y = l.useCallback((e, t) => {
@@ -122,7 +122,7 @@ let w = e => {
     } = (0, S.MV)(q);
     return en && !t ? null : (0, r.jsx)(g.Gt, {
       value: er,
-      children: (0, r.jsx)(E.k0, {
+      children: (0, r.jsx)(v.k0, {
         newValue: {
           sessionId: o,
           pageCategory: U,
@@ -140,7 +140,7 @@ let w = e => {
               ref: A,
               onScroll: Q,
               children: (0, r.jsxs)("div", {
-                className: i()(R.shopViewWrapper, {
+                className: a()(R.shopViewWrapper, {
                   [R.visible]: K === B.f7.VISIBLE,
                   [R.in]: K === B.f7.IN,
                   [R.out]: K === B.f7.OUT

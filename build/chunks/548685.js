@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367),
   l = n(73800),
   o = n(120356),
-  i = n.n(o),
-  a = n(442837),
+  a = n.n(o),
+  i = n(442837),
   s = n(481060),
   c = n(782568),
   u = n(607070),
@@ -21,8 +21,8 @@ var r = n(255367),
   _ = n(315066),
   C = n(243126),
   O = n(38900),
-  E = n(709999),
-  v = n(328626),
+  v = n(709999),
+  E = n(328626),
   S = n(619899),
   x = n(215023),
   y = n(981631),
@@ -36,17 +36,17 @@ let P = e => {
     handleTransition: P,
     numVisibleItems: L,
     tab: I
-  } = e, k = (0, a.e7)([d.default], () => d.default.getCurrentUser()), B = h.ZP.canUseCollectibles(k), N = (0, _.s)("useShopHomeSorting") && I === x.AW.HOME, {
+  } = e, k = (0, i.e7)([d.default], () => d.default.getCurrentUser()), B = h.ZP.canUseCollectibles(k), N = (0, _.s)("useShopHomeSorting") && I === x.AW.HOME, {
     sortType: A,
     setSortType: R,
     sortedItems: w,
     sortOptions: Z,
     shuffleProducts: F,
     showRecommendationOption: D
-  } = (0, C.N)(o, B), M = (0, S.St)(w), H = (0, a.e7)([u.Z], () => u.Z.useReducedMotion), W = (0, a.e7)([p.Z], () => p.Z.isFocused()), V = !H && W, {
+  } = (0, C.N)(o, B), M = (0, S.St)(w), H = (0, i.e7)([u.Z], () => u.Z.useReducedMotion), W = (0, i.e7)([p.Z], () => p.Z.isFocused()), V = !H && W, {
     animationPhase: U,
     startAnimation: G
-  } = (0, v.y)(), z = (0, b.sp)(), Y = null != (t = null == z ? void 0 : z.sessionId) ? t : "", q = l.useRef(null), K = l.useCallback(e => {
+  } = (0, E.y)(), z = (0, b.sp)(), Y = null != (t = null == z ? void 0 : z.sessionId) ? t : "", q = l.useRef(null), K = l.useCallback(e => {
     G({
       isShuffling: !1,
       onOutroComplete: () => R(e)
@@ -56,7 +56,7 @@ let P = e => {
     })
   }, [G, R, Y]);
   return null == k ? null : (0, r.jsxs)("div", {
-    className: i()(T.popularPicksSection, T.centeredSection),
+    className: a()(T.popularPicksSection, T.centeredSection),
     children: [(0, r.jsxs)("div", {
       className: T.blockHeader,
       children: [(0, r.jsxs)("div", {
@@ -131,7 +131,7 @@ let P = e => {
               page_session_id: Y
             })
           },
-          disabled: U !== v.g.MOUNTED && U !== v.g.FINISHED
+          disabled: U !== E.g.MOUNTED && U !== E.g.FINISHED
         }) : (0, r.jsx)(s.zxk, {
           variant: "secondary",
           text: j.intl.string(j.t.xFcotb),
@@ -146,17 +146,17 @@ let P = e => {
         let n, l = m.Z.getCategoryForProduct(e.skuId);
         if (null == e || null == l) return null;
         if (V)
-          if (U === v.g.SHUFFLE_OUT) return (0, r.jsx)("div", {
+          if (U === E.g.SHUFFLE_OUT) return (0, r.jsx)("div", {
             className: T.shuffleOutro
           }, "".concat(e.skuId, "-").concat(t));
-          else U === v.g.SORT_OUT ? n = T.sortChangedOutro : U === v.g.SHUFFLE_IN ? n = T.shuffleIntro : U === v.g.SORT_IN && (n = T.sortChangedIntro);
+          else U === E.g.SORT_OUT ? n = T.sortChangedOutro : U === E.g.SHUFFLE_IN ? n = T.shuffleIntro : U === E.g.SORT_IN && (n = T.sortChangedIntro);
         return (0, r.jsx)(b.k0, {
           newValue: {
             tilePosition: t,
             pageSection: "popular picks",
             categoryPosition: 2
           },
-          children: (0, r.jsx)(E.Z, {
+          children: (0, r.jsx)(v.Z, {
             product: e,
             category: l,
             user: k,

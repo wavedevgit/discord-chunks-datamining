@@ -28,17 +28,19 @@ class _ extends a.Z {
         this.maybeFetchSubscriptions(), this.maybeFetchCountryCode(), this.maybeFetchMostRecentSubscription()
       }
     }), f(this, "maybeFetchSubscriptions", async () => {
-      let e = o.default.getCurrentUser();
+      let e = o.default.getCurrentUser(),
+        t = s.Z.isSubscriptionFetching;
       if ((0, u.I5)(e)) {
-        l.Z.hasFetchedSubscriptions() || await (0, r.jg)();
+        l.Z.hasFetchedSubscriptions() || t || await (0, r.jg)();
         let e = l.Z.getPremiumSubscription();
         (null == e ? void 0 : e.paymentSourceId) != null || c.Z.applicationIdsFetched.has(d.CL) || await (0, i.yD)(d.CL)
       }
     }), f(this, "maybeFetchMostRecentSubscription", () => {
       var e;
       let t = o.default.getCurrentUser(),
-        n = (0, u.xI)(null != (e = null == t ? void 0 : t.premiumType) ? e : null, d.p9.TIER_1);
-      null != t && n && t.hasHadPremium() && (0, r.ou)()
+        n = (0, u.xI)(null != (e = null == t ? void 0 : t.premiumType) ? e : null, d.p9.TIER_1),
+        i = l.Z.getIsFetchingMostRecentSubscription();
+      null != t && n && t.hasHadPremium() && !i && (0, r.ou)()
     }), f(this, "maybeFetchCountryCode", async () => {
       let e = o.default.getCurrentUser();
       (0, u.I5)(e) && !s.Z.ipCountryCodeLoaded && await this.fetchCountryCode()
