@@ -111,8 +111,8 @@ var i = n(255367),
   e0 = n(998502),
   e1 = n(578817),
   e3 = n(870569),
-  e6 = n(345243),
-  e8 = n(115530),
+  e8 = n(345243),
+  e6 = n(115530),
   e2 = n(981631),
   e5 = n(215023),
   e7 = n(921944),
@@ -625,12 +625,12 @@ class to extends r.PureComponent {
       return null == e ? null : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
           className: te.panelTitleContainer,
-          children: (0, i.jsx)(e8.Z, {
+          children: (0, i.jsx)(e6.Z, {
             children: e$.ZP.getName(e)
           })
         }), (0, i.jsx)("div", {
           className: te.panelSubtextContainer,
-          children: (0, i.jsx)(e6.Z, {
+          children: (0, i.jsx)(e8.Z, {
             children: this.renderStatus()
           })
         })]
