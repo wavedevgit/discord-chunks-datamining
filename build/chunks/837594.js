@@ -1,0 +1,2 @@
+/** Chunk was on 79763 **/
+e.exports = JSON.parse('{"klSpfn":"Rediger indstillinger","NzUuLC":["+",[1,"count"]," ",[6,"count",{"one":["besked"],"other":["beskeder"]},0,"cardinal"]],"O+racX":"Der er ingen meddelelser.","dcpdhI":"V\xe6lg en besked for at hoppe derhen.","VAK+h4":"Velkommen til dit meddelelsescenter!"}')

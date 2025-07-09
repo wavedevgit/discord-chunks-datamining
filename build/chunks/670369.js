@@ -1,0 +1,2 @@
+/** Chunk was on 90945 **/
+e.exports = JSON.parse('{"klSpfn":"Editar configura\xe7\xf5es","NzUuLC":["+",[1,"count"]," ",[6,"count",{"one":["mensagem"],"other":["mensagens"]},0,"cardinal"]],"O+racX":"Nenhuma notifica\xe7\xe3o.","dcpdhI":"Selecione uma mensagem para abri-la.","VAK+h4":"Este \xe9 o seu centro de notifica\xe7\xf5es!"}')

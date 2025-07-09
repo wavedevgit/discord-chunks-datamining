@@ -1,0 +1,2 @@
+/** Chunk was on 39417 **/
+i.exports = JSON.parse('{"klSpfn":"Ayarları D\xfczenle","NzUuLC":["+",[1,"count"]," ",[6,"count",{"one":["mesaj"],"other":["mesajlar"]},0,"cardinal"]],"O+racX":"Bildirim yok.","dcpdhI":"Oraya gitmek i\xe7in bir mesaj se\xe7.","VAK+h4":"Bildirim Merkezine hoş geldin!"}')

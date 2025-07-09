@@ -1,0 +1,124 @@
+/**
+  Module ID: 95463
+  Original File Name: 38e2f573b4e77377
+**/
+.wrapper__6d749 {
+    width: 500px;
+    z-index: 1
+}
+
+.modalHeader__6d749 {
+    flex: 1;
+    padding-bottom: 16px
+}
+
+.header__6d749 {
+    display: flex;
+    flex-direction: column;
+    width: 100%
+}
+
+.closeButton__6d749.closeButton__6d749 {
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    z-index: 3
+}
+
+.resultWrapper__6d749 {
+    align-items: center;
+    border-radius: var(--radius-md);
+    box-sizing: border-box;
+    color: var(--primary-300);
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
+    height: 48px;
+    justify-content: space-between;
+    margin-left: 16px;
+    margin-right: 8px;
+    padding: 8px
+}
+
+.resultWrapperSelected__6d749 {
+    background-color: hsl(var(--primary-500-hsl)/.3);
+    color: var(--white-500)
+}
+
+.result__6d749 {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    overflow: hidden
+}
+
+.resultAvatar__6d749 {
+    margin-right: 10px
+}
+
+.resultIcon__6d749 {
+    align-items: center;
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: center;
+    opacity: .6;
+    width: 30px
+}
+
+.resultIconBackground__6d749 {
+    opacity: .6
+}
+
+.resultText__6d749 {
+    flex: 1;
+    font-weight: var(--font-weight-medium);
+    margin-right: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.resultUsername__6d749 {
+    font-weight: var(--font-weight-normal);
+    margin-left: 4px;
+    opacity: .5
+}
+
+.resultCategoryName__6d749 {
+    font-size: 10px;
+    line-height: 16px;
+    text-transform: uppercase
+}
+
+.resultCategoryName__6d749,.resultGuildName__6d749 {
+    font-weight: var(--font-weight-medium);
+    margin-left: 4px;
+    opacity: .5
+}
+
+.resultGuildName__6d749 {
+    font-size: 14px;
+    margin-right: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.inviteButton__6d749 {
+    flex: none;
+    height: 32px;
+    transition: unset;
+    width: 72px
+}
+
+.results__6d749 {
+    height: 300px
+}
+
+.noResults__6d749 {
+    background: url(/assets/05207174d5432737.svg) no-repeat 50% 40%;
+    width: 100%
+}
+
+/*# sourceMappingURL=38e2f573b4e77377.css.map*/

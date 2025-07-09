@@ -1,0 +1,2 @@
+/** Chunk was on 13562 **/
+n.exports = JSON.parse('{"klSpfn":"Chỉnh Sửa C\xe0i Đặt","NzUuLC":["+",[1,"count"]," ",[6,"count",{"one":["tin nhắn"],"other":["tin nhắn"]},0,"cardinal"]],"O+racX":"Kh\xf4ng c\xf3 th\xf4ng b\xe1o n\xe0o.","dcpdhI":"Chọn một tin nhắn để chuyển đến đ\xf3.","VAK+h4":"Ch\xe0o mừng đến với Trung T\xe2m Th\xf4ng B\xe1o của bạn!"}')

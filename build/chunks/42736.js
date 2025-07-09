@@ -1,2 +1,2 @@
 /** Chunk was on 67486 **/
-s.exports = JSON.parse('{"WfH9io":"Zamknij","cgdAs7":"(Strona otworzy się w nowej karcie)"}')
+i.exports = JSON.parse('{"WfH9io":"Zamknij","m3Vfcn":"Nie pokazuj ponownie","cgdAs7":"(Strona otworzy się w nowej karcie)"}')
