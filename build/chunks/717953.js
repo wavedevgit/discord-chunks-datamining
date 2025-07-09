@@ -82,20 +82,23 @@ function v(e) {
   }, [I, P]), D = (0, f.Sl)(g.Il.WHITE).hex, L = (0, f.Sl)(g.Il.RED_430).hex, x = C ? D : void 0, M = i.useCallback(() => {
     T && S(), null == v || v()
   }, [T, S, v]);
-  return (0, r.jsxs)(h.S4, {
-    onSelect: a ? void 0 : M,
-    isSelected: !1,
-    showSelectionCircle: C,
-    name: b.intl.string(E.default.KSBBpK),
-    className: o()(y.container, C && R, a && y.disabled),
-    showBadge: !1,
-    showLockedBadge: !1,
-    style: w,
-    children: [!A && !C && (0, r.jsx)(O, {}), (0, r.jsx)("div", {
-      className: y.borderOverlay
-    }), (0, r.jsx)(s.V3v, {
-      color: x,
-      className: y.paletteIcon
+  return (0, r.jsxs)("div", {
+    className: y.badgeContainer,
+    children: [(0, r.jsxs)(h.S4, {
+      onSelect: a ? void 0 : M,
+      isSelected: !1,
+      showSelectionCircle: C,
+      name: b.intl.string(E.default.KSBBpK),
+      className: o()(y.container, C && R, a && y.disabled),
+      showBadge: !1,
+      showLockedBadge: !1,
+      style: w,
+      children: [!A && !C && (0, r.jsx)(O, {}), (0, r.jsx)("div", {
+        className: y.borderOverlay
+      }), (0, r.jsx)(s.V3v, {
+        color: x,
+        className: y.paletteIcon
+      })]
     }), T && (0, r.jsx)(u.IGR, {
       className: y.newBadge,
       text: b.intl.string(b.t.y2b7CA),
