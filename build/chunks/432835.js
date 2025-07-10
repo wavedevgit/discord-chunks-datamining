@@ -39,4 +39,4 @@ let d = new u({
       note: null
     }))
   }
-}, o.IZ.cachedIsEnabled())
+}, o.IZ.cachedIsEnabled() ? "libdiscore" : "typescript")

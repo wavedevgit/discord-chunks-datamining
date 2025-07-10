@@ -122,4 +122,4 @@ let p = new _({
     let c = "string" == typeof r ? new Date(r) : r;
     c !== s.joinedAt && null != c && t.set(n, (0, a.kH)(s, c))
   }
-}, i.j_.cachedIsEnabled())
+}, i.j_.cachedIsEnabled() ? "libdiscore" : "typescript")
