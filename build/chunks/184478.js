@@ -1,6 +1,6 @@
 /** Chunk was on 44799 **/
 t.d(n, {
-  Z: () => v
+  Z: () => g
 });
 var r = t(255367);
 t(73800);
@@ -18,35 +18,35 @@ var i = t(793030),
   f = t(981631),
   x = t(93841),
   b = t(388032),
-  g = t(466649);
+  v = t(466649);
 
-function v(e) {
+function g(e) {
   let {
     guildId: n
   } = e, t = (0, o.e7)([d.Z], () => d.Z.getGuild(n)), {
-    available: v,
+    available: g,
     spent: h,
     total: j
   } = (0, m.Z)(n);
   if (null != t) return (0, r.jsxs)("div", {
-    className: g.container,
+    className: v.container,
     children: [(0, r.jsxs)("div", {
-      className: g.headerContainer,
+      className: v.headerContainer,
       children: [(0, r.jsx)(i.xv, {
         variant: "eyebrow",
         color: "text-secondary",
         children: b.intl.string(x.default.hjvcLC)
       }), (0, r.jsx)(i.xv, {
-        className: g.learnMore,
+        className: v.learnMore,
         variant: "text-xs/semibold",
         children: b.intl.format(x.default.fXE30d, {
           helpDeskArticle: u.Z.getArticleURL(f.BhN.GUILD_BOOSTING_FAQ)
         })
       })]
     }), (0, r.jsxs)("div", {
-      className: g.contentContainer,
+      className: v.contentContainer,
       children: [(0, r.jsx)(_.Z, {
-        count: v,
+        count: g,
         type: _.b.AVAILABLE
       }), (0, r.jsx)(_.Z, {
         count: h,
@@ -56,7 +56,7 @@ function v(e) {
         type: _.b.TOTAL
       })]
     }), (0, r.jsx)(l.Z, {
-      className: g.boostButton,
+      className: v.boostButton,
       guild: t,
       analyticsLocation: {
         page: f.ZY5.GUILD_POWERUPS_OVERVIEW,
@@ -66,7 +66,7 @@ function v(e) {
       size: a.Ph.LARGE,
       intent: c.P.NONE,
       icon: (0, r.jsx)(s.$Eu, {
-        className: g.boostButtonIcon,
+        className: v.boostButtonIcon,
         size: "sm",
         color: s.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
       })

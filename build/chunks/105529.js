@@ -19,7 +19,11 @@ function _(e) {
     guildId: n,
     perk: t,
     markAsDismissed: _
-  } = e, f = d._[t];
+  } = e, f = d._[t], x = async () => {
+    let e = null;
+    for (let t of Object.values(l.Z.getRoles(n)))(0, c.YB)(t) && (e = t.id);
+    await s.Z.open(n, u.pNK.ROLES), null !== e && await s.Z.selectRole(e), _(m.L.SECONDARY)
+  };
   return (0, r.jsxs)("div", {
     className: p.container,
     children: [(0, r.jsx)("img", {
@@ -33,7 +37,7 @@ function _(e) {
         _(m.L.USER_DISMISS)
       }
     }), (0, r.jsx)(i.xv, {
-      color: "always-white",
+      color: "text-primary",
       variant: "text-md/semibold",
       children: f.title
     }), (0, r.jsx)(i.xv, {
@@ -43,14 +47,7 @@ function _(e) {
       children: f.description
     }), (0, r.jsx)(o.zx, {
       className: p.button,
-      onClick: () => {
-        let e = null,
-          t = l.Z.getRoles(n);
-        if (null != t && 0 !== Object.keys(t).length) {
-          for (let n of Object.values(t))(0, c.YB)(n) && (e = n.id);
-          s.Z.open(n, u.pNK.ROLES), null !== e && s.Z.selectRole(e), _(m.L.SECONDARY)
-        }
-      },
+      onClick: x,
       children: f.cta
     })]
   })

@@ -21,7 +21,7 @@ function C(e) {
     avatarSrc: c,
     eventHandlers: x
   } = (0, l.Z)({
-    user: r,
+    userId: null == r ? void 0 : r.id,
     size: n.EFr.SIZE_32
   }), f = null != (t = r.globalName) ? t : r.username;
   return (0, a.jsxs)("div", {

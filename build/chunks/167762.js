@@ -117,16 +117,16 @@ let X = l.memo(e => {
     nickname: A,
     onAction: U,
     onFriendVisible: x
-  } = e, {
-    avatarDecorationSrc: F,
-    avatarSrc: M,
-    eventHandlers: L
+  } = e, F = t.id, {
+    avatarDecorationSrc: M,
+    avatarSrc: L,
+    eventHandlers: Y
   } = (0, w.Z)({
-    user: t,
+    userId: F,
     size: H,
     animateOnHover: !0,
     guildId: null
-  }), Y = (0, a.JA)("".concat(O)), [J, B] = l.useState(!1), [X, $] = l.useState({}), ee = t.id, et = i.filter(e => e.type === q.IIU.PLAYING && (0, h.Z)(e, q.xjy.JOIN)), en = (0, o.Wu)([D.Z], () => D.Z.getActivities().filter(e => e.type === q.IIU.PLAYING && (0, h.Z)(e, q.xjy.JOIN))), {
+  }), J = (0, a.JA)("".concat(O)), [B, X] = l.useState(!1), [$, ee] = l.useState({}), et = i.filter(e => e.type === q.IIU.PLAYING && (0, h.Z)(e, q.xjy.JOIN)), en = (0, o.Wu)([D.Z], () => D.Z.getActivities().filter(e => e.type === q.IIU.PLAYING && (0, h.Z)(e, q.xjy.JOIN))), {
     voiceChannel: ei
   } = (0, S.Z)({
     userId: t.id
@@ -149,11 +149,11 @@ let X = l.memo(e => {
       newStatus: l
     }
   }, [t.id, i]), ec = en.length > 0, eu = l.useCallback(e => {
-    null == x || x(ee, e, ec)
-  }, [x, ee, ec]), ed = (0, g.O)(eu), ep = l.useCallback(() => {
-    B(!0)
+    null == x || x(F, e, ec)
+  }, [x, F, ec]), ed = (0, g.O)(eu), ep = l.useCallback(() => {
+    X(!0)
   }, []), ef = l.useCallback(() => {
-    B(!1)
+    X(!1)
   }, []), eg = l.useCallback(() => {
     if (null != s) {
       let e = s.traits,
@@ -215,40 +215,40 @@ let X = l.memo(e => {
       }
     })
   }, [t.id, U]), em = l.useCallback(async (e, n) => {
-    if (e.preventDefault(), e.stopPropagation(), null != n.application_id && "" !== n.application_id && !X[n.application_id]) try {
-      $(e => W(z({}, e), {
+    if (e.preventDefault(), e.stopPropagation(), null != n.application_id && "" !== n.application_id && !$[n.application_id]) try {
+      ee(e => W(z({}, e), {
         [n.application_id]: !0
       })), await u.Z.sendActivityInviteUser({
         type: q.mFx.JOIN,
         userId: t.id,
         activity: n,
         location: q.Sbl.FRIENDS_POPOUT
-      }), null == U || U("send_activity_invite", t.id), $(e => W(z({}, e), {
+      }), null == U || U("send_activity_invite", t.id), ee(e => W(z({}, e), {
         [n.application_id]: !1
       }))
     } finally {
-      $(e => W(z({}, e), {
+      ee(e => W(z({}, e), {
         [n.application_id]: !1
       }))
     }
-  }, [U, X, t.id]), eE = l.useCallback(async (e, n) => {
-    if (e.preventDefault(), e.stopPropagation(), null != n.application_id && "" !== n.application_id && !X[n.application_id]) try {
-      $(e => W(z({}, e), {
+  }, [U, $, t.id]), eE = l.useCallback(async (e, n) => {
+    if (e.preventDefault(), e.stopPropagation(), null != n.application_id && "" !== n.application_id && !$[n.application_id]) try {
+      ee(e => W(z({}, e), {
         [n.application_id]: !0
       })), await u.Z.sendActivityInviteUser({
         type: q.mFx.JOIN_REQUEST,
         userId: t.id,
         activity: n,
         location: q.Sbl.FRIENDS_POPOUT
-      }), null == U || U("ask_to_join", t.id), $(e => W(z({}, e), {
+      }), null == U || U("ask_to_join", t.id), ee(e => W(z({}, e), {
         [n.application_id]: !1
       }))
     } finally {
-      $(e => W(z({}, e), {
+      ee(e => W(z({}, e), {
         [n.application_id]: !1
       }))
     }
-  }, [U, X, t.id]), eS = () => T === q.OGo.PENDING_INCOMING ? (0, r.jsxs)(r.Fragment, {
+  }, [U, $, t.id]), eS = () => T === q.OGo.PENDING_INCOMING ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(C.sF, {
       label: V.intl.string(V.t.MMlhsr),
       icon: c.dz2,
@@ -283,17 +283,17 @@ let X = l.memo(e => {
     onClick: eh
   }) : null, ey = () => (0, r.jsxs)(r.Fragment, {
     children: [et.map(e => (0, r.jsx)(C.sF, {
-      label: X[e.application_id] ? V.intl.string(V.t["8BEiNj"]) : V.intl.string(V.t.OKsSCQ),
-      icon: X[e.application_id] ? c.dz2 : c.V9,
+      label: $[e.application_id] ? V.intl.string(V.t["8BEiNj"]) : V.intl.string(V.t.OKsSCQ),
+      icon: $[e.application_id] ? c.dz2 : c.V9,
       onClick: t => eE(t, e)
     }, e.application_id)), en.map(e => {
       var n;
       return (0, r.jsx)(C.sF, {
-        label: X[e.application_id] ? V.intl.string(V.t["8BEiNj"]) : V.intl.formatToPlainString(V.t["KHLo+P"], {
+        label: $[e.application_id] ? V.intl.string(V.t["8BEiNj"]) : V.intl.formatToPlainString(V.t["KHLo+P"], {
           channel: null != (n = t.globalName) ? n : t.username,
           game: e.name
         }),
-        icon: X[e.application_id] ? c.dz2 : c.ejJ,
+        icon: $[e.application_id] ? c.dz2 : c.ejJ,
         onClick: t => em(t, e)
       }, e.application_id)
     })]
@@ -316,16 +316,16 @@ let X = l.memo(e => {
           onContextMenu: eN,
           onMouseEnter: ep,
           onMouseLeave: ef,
-          avatar: (0, r.jsx)(c.qEK, W(z({}, L), {
+          avatar: (0, r.jsx)(c.qEK, W(z({}, Y), {
             size: H,
-            src: M,
+            src: L,
             isMobile: ea,
             isTyping: !1,
             status: eo,
             className: Q.avatar,
             "aria-label": t.username,
             statusTooltip: !0,
-            avatarDecoration: F
+            avatarDecoration: M
           })),
           name: (0, r.jsx)("span", {
             className: Q.username,
@@ -334,8 +334,8 @@ let X = l.memo(e => {
           subText: eg(),
           selected: l,
           nameplate: er,
-          hovered: J
-        }, e, Y)), (0, r.jsxs)(C.ZP, {
+          hovered: B
+        }, e, J)), (0, r.jsxs)(C.ZP, {
           className: Q.hoverBar,
           children: [eS(), ey(), T !== q.OGo.PENDING_INCOMING && T !== q.OGo.PENDING_OUTGOING && (0, r.jsx)(C.sF, {
             label: V.intl.string(V.t["g33r/P"]),

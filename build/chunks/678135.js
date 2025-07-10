@@ -61,7 +61,7 @@ function A(e) {
     avatarSrc: K,
     avatarDecorationSrc: z
   } = (0, f.Z)({
-    user: t,
+    userId: null == t ? void 0 : t.id,
     guildId: null == n ? void 0 : n.id,
     avatarDecorationOverride: C,
     avatarOverride: A,

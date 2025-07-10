@@ -40,7 +40,7 @@ let b = (e, t) => {
       avatarSrc: n,
       eventHandlers: l
     } = (0, p.Z)({
-      user: t,
+      userId: null == t ? void 0 : t.id,
       size: d.EFr.SIZE_56
     }), o = m.ZP.getName(t), C = t.username !== o && r === j.Fz.SUCCESS, c = r === j.Fz.FAIL;
     return (0, a.jsxs)("div", {

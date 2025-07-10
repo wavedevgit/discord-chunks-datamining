@@ -107,7 +107,7 @@ function D(e) {
     avatarSrc: et,
     avatarDecorationSrc: en
   } = (0, v.Z)({
-    user: H,
+    userId: H.id,
     guildId: n.guild_id,
     size: ee,
     animateOnHover: !$

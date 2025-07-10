@@ -210,7 +210,7 @@ let A = function(e) {
     selectedUsers: _
   }), k = i.useMemo(() => [..._.keys()].filter(e => !P.has(e)), [_, P]);
   o()(null != s, "Referrals remaining should not be null");
-  let G = (0, h.O)(e => {
+  let I = (0, h.O)(e => {
     e && !A && F()
   });
   if (B) return (0, a.jsx)(U, {
@@ -219,11 +219,11 @@ let A = function(e) {
   if (0 === s) return (0, a.jsx)(M, {
     onShare: r
   });
-  let I = m.length > 0 && 0 === Z.length;
+  let G = m.length > 0 && 0 === Z.length;
   return (0, a.jsxs)("div", {
     children: [(0, a.jsxs)("div", {
       className: n()(w.header, w.headerSeparator),
-      children: [I ? (0, a.jsx)(O, {}) : (0, a.jsx)(E, {
+      children: [G ? (0, a.jsx)(O, {}) : (0, a.jsx)(E, {
         numOfSelectedUsers: k.length,
         anySelected: _.size > 0
       }), (0, a.jsx)(p.ZP, {
@@ -242,7 +242,7 @@ let A = function(e) {
         onQueryChange: f,
         onClear: () => f("")
       })]
-    }), I ? (0, a.jsx)(R, {}) : (0, a.jsxs)(C.w0, {
+    }), G ? (0, a.jsx)(R, {}) : (0, a.jsxs)(C.w0, {
       className: w.list,
       children: [Z.map(e => (0, a.jsx)(v.Z, {
         disabled: [..._.values()].filter(e => !P.has(e.id)).length >= s && !_.has(e.id) && !P.has(e.id),
@@ -255,18 +255,18 @@ let A = function(e) {
           })
         }
       }, e.id)), A && (0, a.jsx)(x.$jN, {}), (0, a.jsx)("div", {
-        ref: G
+        ref: I
       })]
     }), (0, a.jsx)("div", {
       className: n()(w.footer, w.footerSeparator),
       children: (0, a.jsx)(c.zx, {
         className: w.submit,
-        disabled: 0 === _.size && !I || b,
+        disabled: 0 === _.size && !G || b,
         onClick: async () => {
-          if (I) return void t();
+          if (G) return void t();
           N(!0), await r([..._.values()]), N(!1)
         },
-        children: I ? S.intl.string(S.t.wpSqAQ) : S.intl.string(S.t.ItpQxs)
+        children: G ? S.intl.string(S.t.wpSqAQ) : S.intl.string(S.t.ItpQxs)
       })
     })]
   })

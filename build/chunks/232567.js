@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  In: () => b,
+  $k: () => b,
+  In: () => y,
   Lr: () => m,
   PR: () => E,
-  Sr: () => y,
+  Sr: () => O,
   k: () => h,
   mB: () => g
 }), n(997841);
@@ -82,7 +83,14 @@ function E(e) {
     user: t.body
   }), d.default.getUser(e)))
 }
-async function b(e) {
+
+function b(e) {
+  return s.Z.dispatch({
+    type: "USER_UPDATE",
+    user: e
+  }), d.default.getUser(e.id)
+}
+async function y(e) {
   let {
     type: t,
     withMutualGuilds: n,
@@ -136,7 +144,7 @@ async function b(e) {
     }), t
   }
 }
-async function y(e, t) {
+async function O(e, t) {
   s.Z.dispatch({
     type: "MUTUAL_FRIENDS_FETCH_START",
     userId: e

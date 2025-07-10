@@ -21,7 +21,7 @@ let h = () => {
       avatarSrc: n,
       eventHandlers: t
     } = (0, a.Z)({
-      user: e,
+      userId: null == e ? void 0 : e.id,
       size: u.EF.SIZE_32,
       animateOnHover: !0
     }),

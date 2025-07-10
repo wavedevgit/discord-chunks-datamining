@@ -235,7 +235,7 @@ function eo(e) {
     avatarDecorationSrc: eg,
     eventHandlers: eh
   } = (0, M.Z)({
-    user: u,
+    userId: null == u ? void 0 : u.id,
     size: p.EFr.SIZE_32,
     animateOnHover: !(l || K || eo)
   }), ef = t.isMultiUserDM(), eb = t.isSystemDM(), ex = (0, B.Q)(), e_ = !ef && !eb && t.type === q.d4z.DM, ej = e_ && (null == u ? void 0 : u.primaryGuild) != null, eE = (0, m.e7)([z.ZP], () => z.ZP.isChannelMuted(t.getGuildId(), t.id)), {

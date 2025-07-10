@@ -18,7 +18,7 @@ function d() {
       avatarSrc: n,
       eventHandlers: d
     } = (0, s.Z)({
-      user: t,
+      userId: null == t ? void 0 : t.id,
       size: a.EFr.SIZE_24,
       animateOnHover: !0
     }),

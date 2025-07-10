@@ -374,30 +374,28 @@ let ee = l.memo(function(e) {
       } = (0, d.ZP)(u.Z.AVATAR), _ = (0, a.e7)([S.ZP], () => {
         var e;
         return null != (e = o.displayCompactAvatars) ? e : S.ZP.displayCompactAvatars
-      }), I = g.author, {
-        id: k
-      } = I, M = (0, U.Z)(g), D = b ? 32 : 80, {
-        avatarSrc: A,
-        avatarDecorationSrc: L,
-        eventHandlers: G
+      }), I = (0, U.Z)(g), k = b ? 32 : 80, {
+        avatarSrc: M,
+        avatarDecorationSrc: D,
+        eventHandlers: A
       } = (0, x.Z)({
-        user: I,
+        userId: g.author.id,
         guildId: i,
-        size: D,
+        size: k,
         animateOnHover: null != h ? !E : !O,
         showPending: !0
-      }), B = g.isInteractionPlaceholder(), H = l.useMemo(() => {
+      }), L = g.isInteractionPlaceholder(), G = l.useMemo(() => {
         var e, t;
-        return B && null == I.avatar && (null == (e = g.application) ? void 0 : e.icon) != null && null != (t = Z.ZP.getApplicationIconURL({
+        return L && null == g.author.avatar && (null == (e = g.application) ? void 0 : e.icon) != null && null != (t = Z.ZP.getApplicationIconURL({
           id: g.application.id,
           icon: g.application.icon,
-          size: D,
+          size: k,
           fallbackAvatar: !1
-        })) ? t : A
-      }, [B, null == (t = g.application) ? void 0 : t.icon, null == (n = g.application) ? void 0 : n.id, I.avatar, D, A]);
+        })) ? t : M
+      }, [L, null == (t = g.application) ? void 0 : t.icon, null == (n = g.application) ? void 0 : n.id, g.author.avatar, k, M]);
       if (l.useEffect(() => {
-          if (null != h) return R.S.subscribeKeyed(F.LPv.ANIMATE_CHAT_AVATAR, "".concat(h, ":").concat(k), N), () => void R.S.unsubscribeKeyed(F.LPv.ANIMATE_CHAT_AVATAR, "".concat(h, ":").concat(k), N)
-        }, [k, h]), !b || _) return null != c && null != P ? (0, r.jsx)(d.Gt, {
+          if (null != h) return R.S.subscribeKeyed(F.LPv.ANIMATE_CHAT_AVATAR, "".concat(h, ":").concat(g.author.id), N), () => void R.S.unsubscribeKeyed(F.LPv.ANIMATE_CHAT_AVATAR, "".concat(h, ":").concat(g.author.id), N)
+        }, [g.author.id, h]), !b || _) return null != c && null != P ? (0, r.jsx)(d.Gt, {
         value: T,
         children: (0, r.jsx)(w.Z, {
           targetElementRef: C,
@@ -406,7 +404,7 @@ let ee = l.memo(function(e) {
           channelId: g.channel_id,
           messageId: g.id,
           shouldShow: P,
-          shouldPreload: M,
+          shouldPreload: I,
           renderPopout: c,
           position: s.tq ? "window_center" : "right",
           avatarUrl: null != f.guildMemberAvatar && null != i ? Z.ZP.getGuildMemberAvatarURLSimple({
@@ -417,9 +415,9 @@ let ee = l.memo(function(e) {
           }) : g.author.getAvatarURL(void 0, 80, !1),
           onRequestClose: j,
           clickTrap: P,
-          children: e => q(W(K({}, G), {
-            avatarSrc: H,
-            avatarDecorationSrc: L,
+          children: e => q(W(K({}, A), {
+            avatarSrc: G,
+            avatarDecorationSrc: D,
             compact: b,
             onClick: v,
             onContextMenu: y,
@@ -432,9 +430,9 @@ let ee = l.memo(function(e) {
         })
       }) : (0, r.jsx)(d.Gt, {
         value: T,
-        children: q(W(K({}, G), {
-          avatarSrc: H,
-          avatarDecorationSrc: L,
+        children: q(W(K({}, A), {
+          avatarSrc: G,
+          avatarDecorationSrc: D,
           compact: b,
           onClick: v,
           onContextMenu: y,

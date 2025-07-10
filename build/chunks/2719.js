@@ -487,7 +487,7 @@ function et() {
       avatarSrc: d,
       avatarDecorationSrc: u
     } = (0, I.Z)({
-      user: t,
+      userId: null == t ? void 0 : t.id,
       size: m.EFr.SIZE_80
     });
   return (0, i.jsxs)("div", {

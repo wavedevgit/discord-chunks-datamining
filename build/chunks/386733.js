@@ -64,7 +64,7 @@ let N = e => {
       avatarSrc: r,
       eventHandlers: s
     } = (0, m.Z)({
-      user: t,
+      userId: null == t ? void 0 : t.id,
       size: c.EFr.SIZE_32,
       animateOnHover: !0
     }), a = null != t, l = a ? (0, i.jsx)(c.qEK, S({

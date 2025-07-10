@@ -22,7 +22,7 @@ function u(e) {
     avatarDecorationSrc: g,
     eventHandlers: h
   } = (0, s.Z)({
-    user: a,
+    userId: a.id,
     size: r.EFr.SIZE_40,
     animateOnHover: !0
   });

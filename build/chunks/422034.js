@@ -92,7 +92,7 @@ function g(e) {
     avatarSrc: a,
     eventHandlers: s
   } = (0, c.Z)({
-    user: t,
+    userId: null == t ? void 0 : t.id,
     size: i,
     animateOnHover: !0
   });

@@ -1,60 +1,62 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => l
+  Z: () => u
 });
 var r = n(73800),
-  i = n(481060),
-  a = n(1585),
-  o = n(125988),
-  s = n(287008);
+  i = n(442837),
+  a = n(481060),
+  o = n(1585),
+  s = n(125988),
+  l = n(594174),
+  c = n(287008);
 
-function l(e) {
+function u(e) {
   let {
-    user: t,
+    userId: t,
     guildId: n,
-    size: l,
-    showPending: c = !1,
-    showTryItOut: u = !1,
-    animateOnHover: d = !1,
-    avatarDecorationOverride: f,
-    avatarOverride: _
-  } = e, {
-    avatarSrc: p,
-    isAvatarAnimating: h,
-    eventHandlers: m
-  } = (0, s.Z)({
-    user: t,
-    guildId: n,
-    size: (0, i.pxk)(l),
-    showPending: c,
-    animateOnHover: d,
-    avatarOverride: _
-  }), {
-    avatarPlaceholderSrc: g,
-    avatarDecorationSrc: E,
+    size: u,
+    showPending: d = !1,
+    showTryItOut: f = !1,
+    animateOnHover: _ = !1,
+    avatarDecorationOverride: p,
+    avatarOverride: h
+  } = e, m = (0, i.e7)([l.default], () => l.default.getUser(t)), {
+    avatarSrc: g,
+    isAvatarAnimating: E,
     eventHandlers: b
-  } = (0, o.Z)({
-    user: t,
+  } = (0, c.Z)({
+    user: m,
+    guildId: n,
+    size: (0, a.pxk)(u),
+    showPending: d,
+    animateOnHover: _,
+    avatarOverride: h
+  }), {
+    avatarPlaceholderSrc: y,
+    avatarDecorationSrc: O,
+    eventHandlers: v
+  } = (0, s.Z)({
+    user: m,
     guildId: null != n ? n : void 0,
-    size: (0, a.y9)(l),
-    showPending: c,
-    onlyAnimateOnHover: d,
-    avatarDecorationOverride: f,
-    showTryItOut: u
+    size: (0, o.y9)(u),
+    showPending: d,
+    onlyAnimateOnHover: _,
+    avatarDecorationOverride: p,
+    showTryItOut: f
   });
   return {
-    avatarPlaceholderSrc: g,
-    avatarDecorationSrc: E,
-    avatarSrc: p,
-    isAnimating: h,
+    avatarPlaceholderSrc: y,
+    avatarDecorationSrc: O,
+    avatarSrc: g,
+    isAnimating: E,
     eventHandlers: {
       onMouseEnter: r.useCallback(() => {
-        m.onMouseEnter(), b.onMouseEnter()
-      }, [m, b]),
+        b.onMouseEnter(), v.onMouseEnter()
+      }, [b, v]),
       onMouseLeave: r.useCallback(() => {
-        m.onMouseLeave(), b.onMouseLeave()
-      }, [m, b])
+        b.onMouseLeave(), v.onMouseLeave()
+      }, [b, v])
     }
   }
 }
