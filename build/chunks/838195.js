@@ -40,7 +40,6 @@ function o(e) {
       return e
     }({
       applicationId: t,
-      channelId: o,
       mediaUrl: s
     }, n))
   }, {

@@ -482,21 +482,22 @@ async function e_(e, t, n) {
     s.Z.dispatch({
       type: "UPLOAD_ACTIVITY_IMAGE_ATTACHMENT_START"
     });
-    let r = await a.tn.post({
-      url: $.ANM.APPLICATION_UPLOAD_ATTACHMENT(e),
-      query: {
+    let r = null != t ? {
         channel_id: t
-      },
-      attachments: [{
-        name: "file",
-        file: n
-      }],
-      rejectWithError: !0
-    });
+      } : void 0,
+      i = await a.tn.post({
+        url: $.ANM.APPLICATION_UPLOAD_ATTACHMENT(e),
+        query: r,
+        attachments: [{
+          name: "file",
+          file: n
+        }],
+        rejectWithError: !0
+      });
     return s.Z.dispatch({
       type: "UPLOAD_ACTIVITY_IMAGE_ATTACHMENT_SUCCESS",
-      attachment: r.body.attachment
-    }), r.body.attachment
+      attachment: i.body.attachment
+    }), i.body.attachment
   } catch (e) {
     return s.Z.dispatch({
       type: "UPLOAD_ACTIVITY_IMAGE_ATTACHMENT_FAIL"
