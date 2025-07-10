@@ -72,7 +72,7 @@ function B(e, t) {
   }), e
 }
 
-function F(e) {
+function V(e) {
   let {
     message: t,
     channel: n,
@@ -215,12 +215,12 @@ function F(e) {
           isUnread: s,
           isSelected: a,
           channel: n
-        }), null != d && (0, r.jsx)(u.Kqy, {
+        }), d.length > 0 && (0, r.jsx)(u.Kqy, {
           gap: 4,
           style: {
             minWidth: 0
           },
-          children: (null == d ? void 0 : d.length) > 0 && (0, r.jsx)(V, {
+          children: (0, r.jsx)(F, {
             overflowMessages: d
           })
         })]
@@ -229,7 +229,7 @@ function F(e) {
   }))
 }
 
-function V(e) {
+function F(e) {
   let {
     overflowMessages: t
   } = e, n = (0, a.uniqBy)(t.map(e => e.author), e => e.id).slice(0, 3);
@@ -358,28 +358,29 @@ function z(e) {
   })
 }
 let W = (0, i.memo)(function(e) {
+  var t;
   let {
-    message: t,
-    goToSidebar: i,
-    groupedMessages: l,
-    isUnread: a
-  } = e, {
-    params: f
-  } = (0, s.$B)(), g = (0, c.e7)([w.Z], () => w.Z.getChannel(t.channel_id));
-  return null == t || null == g ? null : (0, r.jsx)(u.P3F, {
+    message: i,
+    goToSidebar: l,
+    groupedMessages: a,
+    isUnread: f
+  } = e, g = i.message, {
+    params: m
+  } = (0, s.$B)(), b = (0, c.e7)([w.Z], () => w.Z.getChannel(i.channelId)), _ = null != (t = null == a ? void 0 : a.map(e => e.message).filter(e => null != e)) ? t : [];
+  return null == g || null == b ? null : (0, r.jsx)(u.P3F, {
     className: o()(U.messageClickableContainer, {
-      [U.selected]: t.id === f.messageId
+      [U.selected]: g.id === m.messageId
     }),
     onClick: () => {
       (0, A.Qz)({
         interactionType: A.s_.CLICK,
-        message: t
-      }), h.Z.trackJump(g.id, t.id, "Notifications Inbox"), a && p.In(t.channel_id, {
+        message: g
+      }), h.Z.trackJump(b.id, g.id, "Notifications Inbox"), f && p.In(g.channel_id, {
         section: L.jXE.INBOX,
         object: L.qAy.ACK_MESSAGE_VIEWED,
         objectType: L.Qqv.ACK_SEMI_AUTOMATIC
-      }, !0, void 0, t.id);
-      let e = i ? L.Z5c.NOTIFICATIONS_INBOX(g.id, t.id) : L.Z5c.CHANNEL(g.guild_id, g.id, t.id);
+      }, !0, void 0, g.id);
+      let e = l ? L.Z5c.NOTIFICATIONS_INBOX(b.id, g.id) : L.Z5c.CHANNEL(b.guild_id, b.id, g.id);
       (0, I.uL)(e)
     },
     onContextMenuCapture: e => {
@@ -388,24 +389,24 @@ let W = (0, i.memo)(function(e) {
     onContextMenu: e => {
       (0, A.Qz)({
         interactionType: A.s_.CONTEXT_MENU,
-        message: t
+        message: g
       }), (0, d.jW)(e, async () => {
         let {
           default: e
         } = await n.e("74922").then(n.bind(n, 550265));
         return t => (0, r.jsx)(e, B(G({}, t), {
-          channel: g
+          channel: b
         }))
       }, {
         disableClickTrap: !0
       })
     },
-    children: (0, r.jsx)(F, {
-      message: t,
-      channel: g,
-      isSelected: t.id === f.messageId,
-      groupedMessages: l,
-      isUnread: a
+    children: (0, r.jsx)(V, {
+      message: g,
+      channel: b,
+      isSelected: g.id === m.messageId,
+      groupedMessages: _,
+      isUnread: f
     })
   })
 }, (e, t) => {

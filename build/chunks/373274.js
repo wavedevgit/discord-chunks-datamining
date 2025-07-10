@@ -41,8 +41,8 @@ var r, i = n(255367),
   U = n(598056),
   G = n(761091),
   B = n(301342),
-  F = n(906817),
-  V = n(429122),
+  V = n(906817),
+  F = n(429122),
   H = n(285573),
   z = n(995993),
   W = n(910595),
@@ -436,7 +436,7 @@ class ef extends(r = l.PureComponent) {
         guildChannels: n,
         density: r
       } = this.props;
-      return (0, F.EM)(e, t, n, r)
+      return (0, V.EM)(e, t, n, r)
     }), eu(this, "getSectionFooterHeight", e => {
       let {
         guildChannels: t,
@@ -446,7 +446,7 @@ class ef extends(r = l.PureComponent) {
         optInEnabled: l,
         guildChannelsVersion: o
       } = this.props;
-      return (0, V.dt)({
+      return (0, F.dt)({
         sectionIndex: e,
         guildChannels: t,
         guildChannelsVersion: o,
@@ -532,14 +532,14 @@ class ef extends(r = l.PureComponent) {
         selectedChannelId: o,
         disableManageChannels: a
       } = this.props;
-      return (0, i.jsx)(F.ZP, {
+      return (0, i.jsx)(V.ZP, {
         sectionIndex: t,
         guild: l,
         guildChannels: n,
         guildChannelsVersion: r,
         selectedChannelId: o,
         disableManageChannels: a
-      }, (0, F.WW)(t, n))
+      }, (0, V.WW)(t, n))
     }), eu(this, "renderRow", e => {
       let {
         section: t,
@@ -730,7 +730,7 @@ class ef extends(r = l.PureComponent) {
         optInEnabled: s,
         guildId: c
       } = this.props;
-      return (0, i.jsx)(V.ZP, {
+      return (0, i.jsx)(F.ZP, {
         guildId: c,
         guildChannels: n,
         guildChannelsVersion: r,
@@ -739,7 +739,7 @@ class ef extends(r = l.PureComponent) {
         selectedChannelId: o,
         selectedVoiceChannelId: a,
         optInEnabled: s
-      }, (0, V.eo)(t, n, s))
+      }, (0, F.eo)(t, n, s))
     }), eu(this, "getAnchorId", (e, t) => {
       var n, r, i;
       let {

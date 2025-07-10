@@ -67,11 +67,11 @@ function A(e) {
     openClips: M
   } = e, {
     analyticsLocations: D
-  } = (0, p.ZP)(), L = (0, g.Dt)({
+  } = (0, p.ZP)(), k = (0, g.Dt)({
     channel: t
   });
 
-  function k() {
+  function L() {
     (0, b.R6)(t, void 0, "Plus Button")
   }
 
@@ -252,7 +252,7 @@ function A(e) {
           return (0, r.jsx)(s.sNh, {
             id: "THREAD",
             label: i,
-            action: k
+            action: L
           }, "THREAD");
         case j.r.SLASH_COMMAND:
           return (0, r.jsx)(s.sNh, {
@@ -274,7 +274,7 @@ function A(e) {
             action: () => (0, g.$f)({
               channel: t
             }),
-            children: L
+            children: k
           }, "scheduled_message");
         default:
           return null

@@ -35,9 +35,9 @@ let h = e => {
     })), {
       roleFilter: S,
       everyoneFilter: x
-    } = (0, i.cj)([a.Z], () => ({
-      everyoneFilter: a.Z.everyoneFilter,
-      roleFilter: a.Z.roleFilter
+    } = (0, i.cj)([a.ZP], () => ({
+      everyoneFilter: a.ZP.everyoneFilter,
+      roleFilter: a.ZP.roleFilter
     }));
     r.useEffect(() => ((0, s.Vk)(!0), () => (0, s.Vk)(!1)), []), r.useEffect(() => {
       O && t && (0, l.FT)(d.W.NOTIFICATION_CENTER)

@@ -49,8 +49,8 @@ let P = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
       renderChildNode: U,
       folderButtonSize: G,
       folderButtonContent: B,
-      "aria-setsize": F,
-      "aria-posinset": V
+      "aria-setsize": V,
+      "aria-posinset": F
     } = e, {
       id: H,
       name: z,
@@ -133,8 +133,8 @@ let P = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
             onKeyDown: en,
             treeItemProps: ei,
             folderButtonContent: B,
-            "aria-setsize": F,
-            "aria-posinset": V
+            "aria-setsize": V,
+            "aria-posinset": F
           })
         })
       }), A ? (0, r.jsx)(y.ZP, {

@@ -39,8 +39,8 @@ function u(e) {
 function d(e) {
   let {
     notificationCenterVariant: t,
-    wrappedMessages: n,
-    groupedUnreadMessages: r
+    messages: n,
+    unreadMessages: r
   } = e, s = i.useRef(null), c = i.useRef(!1);
   (0, l.ZP)(() => {
     ! function(e) {

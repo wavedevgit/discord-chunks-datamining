@@ -1,7 +1,7 @@
 /** Chunk was on 19577 **/
 n.d(t, {
   TS: () => F,
-  ud: () => L,
+  ud: () => k,
   v0: () => U
 }), n(388685);
 var r = n(255367),
@@ -125,7 +125,7 @@ function D(e) {
   }, a)
 }
 
-function L(e) {
+function k(e) {
   let {
     channel: t,
     channelName: n,
@@ -287,7 +287,7 @@ function L(e) {
       return null
   }
 }
-let k = e => {
+let L = e => {
   let {
     channel: t
   } = e, n = (0, o.e7)([x.default], () => x.default.getCurrentUser()), l = (0, o.e7)([x.default], () => x.default.getUser(t.getRecipientId())), a = (0, j.G)();
@@ -308,7 +308,7 @@ function U(e, t) {
   switch (e.type) {
     case N.d4z.DM:
       return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(k, {
+        children: [(0, r.jsx)(L, {
           channel: e
         }), (0, r.jsx)(E.Z, {
           channel: e

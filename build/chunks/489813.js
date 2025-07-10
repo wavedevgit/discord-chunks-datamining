@@ -1,7 +1,7 @@
 /** Chunk was on 77025 **/
 n.d(t, {
-  CA: () => u,
-  Ih: () => d,
+  CA: () => d,
+  Ih: () => u,
   PU: () => m,
   hK: () => c
 });
@@ -29,7 +29,7 @@ function c(e) {
   })
 }
 
-function u(e) {
+function d(e) {
   let {
     title: t,
     children: n
@@ -45,7 +45,7 @@ function u(e) {
   })
 }
 
-function d(e) {
+function u(e) {
   let {
     icon: t,
     text: n,
@@ -83,12 +83,12 @@ function m(e) {
     text: n,
     footnote: i,
     meetsRequirement: c,
-    children: u,
-    className: d
+    children: d,
+    className: u
   } = e;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: l()(a.requirementContainer, d),
+      className: l()(a.requirementContainer, u),
       children: [(0, r.jsx)(t, {
         className: a.requirementIcon,
         height: 20,
@@ -104,7 +104,7 @@ function m(e) {
         color: "currentColor",
         className: a.requirementSuccess,
         secondaryColor: o.Z.colors.WHITE.css
-      }) : u]
+      }) : d]
     }), null != i && (0, r.jsx)(s.Text, {
       color: "header-secondary",
       className: a.footnote,

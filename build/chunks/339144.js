@@ -55,11 +55,11 @@ let I = i.memo(function(e) {
       parentAnalyticsLocation: B
     } = (0, h.ZP)(),
     {
-      changeLeaveCallAndActivityIcons: F
+      changeLeaveCallAndActivityIcons: V
     } = (0, v.A)({
       location: "Activity Actions"
     }),
-    V = x(M, L, D),
+    F = x(M, L, D),
     H = i.useCallback(() => {
       o()(null != L, "Received null activity"), (0, p.v)(B, p.d.INVITE), y.default.track(j.rMx.OPEN_MODAL, {
         type: "Send Join Invite",
@@ -139,7 +139,7 @@ let I = i.memo(function(e) {
         icon: u
       })
     })) : null,
-    q = V && null == D ? (0, r.jsx)(C.Z, {
+    q = F && null == D ? (0, r.jsx)(C.Z, {
       tooltipText: E.intl.string(E.t["hC/Ze3"]),
       onClick: H,
       icon: a.ejJ
@@ -147,7 +147,7 @@ let I = i.memo(function(e) {
     X = null == D ? null : (0, r.jsx)(C.Z, {
       tooltipText: E.intl.string(E.t["R/FK4O"]),
       onClick: z(D.applicationId, D.location),
-      icon: F ? a.Dio : a.PBZ
+      icon: V ? a.Dio : a.PBZ
     }),
     Q = null == P ? null : (0, r.jsx)(f.Z, {});
   return null == Y && null == q && null == X ? null : (0, r.jsxs)("div", {

@@ -1,24 +1,23 @@
 /** Chunk was on 19577 **/
 n.d(t, {
-  Z: () => u
+  Z: () => c
 });
 var r = n(255367);
 n(73800);
-var i = n(755721),
-  l = n(481060),
-  a = n(313201),
-  o = n(388032),
-  s = n(802867);
-let c = () => n.e("49812").then(n.t.bind(n, 48603, 19)).then(e => {
+var i = n(481060),
+  l = n(313201),
+  a = n(388032),
+  o = n(802867);
+let s = () => n.e("49812").then(n.t.bind(n, 48603, 19)).then(e => {
     let {
       default: t
     } = e;
     return t
   }),
-  u = e => {
+  c = e => {
     var t, n;
-    let u = (0, a.Dt)();
-    return (0, r.jsxs)(l.Y0X, (t = function(e) {
+    let c = (0, l.Dt)();
+    return (0, r.jsxs)(i.Y0X, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -36,39 +35,41 @@ let c = () => n.e("49812").then(n.t.bind(n, 48603, 19)).then(e => {
       }
       return e
     }({}, e), n = n = {
-      size: l.CgR.SMALL,
+      size: i.CgR.SMALL,
       transitionState: e.transitionState,
-      "aria-labelledby": u,
-      className: s.modal,
+      "aria-labelledby": c,
+      className: o.modal,
       parentComponent: "MemberVerificationSuccessModal",
       children: [(0, r.jsx)("div", {
-        className: s.animationContainer,
-        children: (0, r.jsx)(l.Fmz, {
-          importData: c,
-          className: s.animationMiddle
+        className: o.animationContainer,
+        children: (0, r.jsx)(i.Fmz, {
+          importData: s,
+          className: o.animationMiddle
         })
-      }), (0, r.jsx)(l.hzk, {
+      }), (0, r.jsx)(i.hzk, {
         children: (0, r.jsxs)("div", {
-          className: s.container,
-          children: [(0, r.jsx)(l.X6q, {
+          className: o.container,
+          children: [(0, r.jsx)(i.X6q, {
             variant: "heading-lg/semibold",
-            className: s.header,
-            id: u,
-            children: o.intl.format(o.t.z9qozM, {
+            className: o.header,
+            id: c,
+            children: a.intl.format(a.t.z9qozM, {
               guildName: e.guildName
             })
-          }), (0, r.jsx)(l.Text, {
+          }), (0, r.jsx)(i.Text, {
             variant: "text-sm/medium",
             color: "header-secondary",
-            children: o.intl.string(o.t.nwpqyc)
-          }), (0, r.jsx)(i.zx, {
-            className: s.button,
-            onClick: () => {
-              e.onAccept(), e.onClose()
-            },
-            fullWidth: !0,
-            size: i.Ph.LARGE,
-            children: o.intl.string(o.t.NuzmOD)
+            children: a.intl.string(a.t.nwpqyc)
+          }), (0, r.jsx)("div", {
+            className: o.buttonContainer,
+            children: (0, r.jsx)(i.zxk, {
+              variant: "primary",
+              onClick: () => {
+                e.onAccept(), e.onClose()
+              },
+              text: a.intl.string(a.t.NuzmOD),
+              fullWidth: !0
+            })
           })]
         })
       })]

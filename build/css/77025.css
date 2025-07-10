@@ -1,6 +1,6 @@
 /**
   Module ID: 77025
-  Original File Name: 9551555ddfc5d033
+  Original File Name: bc0aa6b7ee0e2a6e
 **/
 :root {
     --legacy-elevation-low: 0 1px 5px var(--opacity-black-20);
@@ -630,7 +630,9 @@ div:has(>div>.container_b962dc) {
     text-align: initial
 }
 
-.resendButton_b962dc {
+.resendButtonContainer_b962dc {
+    display: flex;
+    justify-content: center;
     margin: 24px auto
 }
 
@@ -742,4 +744,4 @@ div:has(>div>.container_b962dc) {
     z-index: 0
 }
 
-/*# sourceMappingURL=9551555ddfc5d033.css.map*/
+/*# sourceMappingURL=bc0aa6b7ee0e2a6e.css.map*/

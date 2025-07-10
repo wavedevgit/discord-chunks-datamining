@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => S
+  Z: () => O
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -10,54 +10,35 @@ var r = n(255367),
   s = n(442837),
   c = n(481060),
   u = n(686546),
-  d = n(455199),
-  p = n(592125),
-  h = n(430824),
-  f = n(306680),
-  g = n(944486),
-  m = n(358085),
-  b = n(821020),
-  _ = n(370774),
-  E = n(961040),
-  O = n(739340),
-  y = n(981631),
-  I = n(388032),
-  v = n(61626);
+  d = n(944486),
+  p = n(358085),
+  h = n(821020),
+  f = n(370774),
+  g = n(961040),
+  m = n(981631),
+  b = n(388032),
+  _ = n(61626);
 
-function C(e) {
+function E(e) {
   let {
     onClick: t,
     selectedOverride: n = !1,
     popoutProps: l,
     ref: o
-  } = e, [g, b] = i.useState(!1), E = (0, _.D)(), {
-    unreadRecentMentionsCount: y,
-    unreadChannelIds: C
-  } = function() {
-    let e = (0, O.wt)(),
-      t = (0, s.Wu)([f.ZP], () => e.filter(e => f.ZP.hasUnread(e)), [e]),
-      n = (0, s.Wu)([d.Z], () => {
-        var e;
-        return null != (e = d.Z.getSettingsFilteredMentions()) ? e : []
-      });
-    return {
-      unreadRecentMentionsCount: (0, s.e7)([f.ZP, p.Z, h.Z], () => {
-        var e, t;
-        return null != (t = null == n || null == (e = n.filter(e => (0, _.YH)(e, h.Z, p.Z, f.ZP))) ? void 0 : e.length) ? t : 0
-      }, [n]),
-      unreadChannelIds: t
-    }
-  }(), S = y > 0 ? {
+  } = e, [s, d] = i.useState(!1), h = (0, f.D)(), {
+    unreadRecentMentionsCount: g,
+    unreadChannelIds: m
+  } = (0, f.O4)(), E = g > 0 ? {
     type: "mentions",
-    count: y
-  } : C.length > 0 ? {
+    count: g
+  } : m.length > 0 ? {
     type: "unread",
-    count: C.length
+    count: m.length
   } : {
     type: null
-  }, N = n || n || E, T = (0, r.jsx)(c.Dkj, {
-    className: v.icon,
-    color: g || N ? c.TVs.colors.ICON_PRIMARY : c.TVs.colors.ICON_TERTIARY,
+  }, O = n || n || h, y = (0, r.jsx)(c.Dkj, {
+    className: _.icon,
+    color: s || O ? c.TVs.colors.ICON_PRIMARY : c.TVs.colors.ICON_TERTIARY,
     size: "custom",
     height: 20,
     width: 20
@@ -66,11 +47,11 @@ function C(e) {
     gap: 0,
     direction: "horizontal",
     children: [(0, r.jsx)(c.LZC, {
-      size: (0, m.isMac)() ? 4 : 72,
+      size: (0, p.isMac)() ? 4 : 72,
       horizontal: !0
     }), (0, r.jsx)(c.ua7, {
-      shouldShow: !N,
-      text: I.intl.string(I.t.HcoRu7),
+      shouldShow: !O,
+      text: b.intl.string(b.t.HcoRu7),
       children: e => {
         var n, i, s;
         return (0, r.jsxs)(c.P3F, (n = function(e) {
@@ -92,37 +73,37 @@ function C(e) {
           return e
         }({
           innerRef: o,
-          className: v.clickableContainer
+          className: _.clickableContainer
         }, e, l), i = i = {
           onMouseEnter: () => {
             var t;
-            b(!0), null == (t = e.onMouseEnter) || t.call(e)
+            d(!0), null == (t = e.onMouseEnter) || t.call(e)
           },
           onMouseLeave: () => {
             var t;
-            b(!1), null == (t = e.onMouseLeave) || t.call(e)
+            d(!1), null == (t = e.onMouseLeave) || t.call(e)
           },
           onClick: () => {
             var n, r;
             null == t || t(), null == l || null == (n = l.onClick) || n.call(l), null == (r = e.onClick) || r.call(e)
           },
           children: [(0, r.jsx)("div", {
-            className: a()(v.iconWrapper, null),
-            children: "unread" === S.type ? (0, r.jsxs)(r.Fragment, {
+            className: a()(_.iconWrapper, null),
+            children: "unread" === E.type ? (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsx)(u.ZP, {
                 width: 20,
                 height: 20,
                 mask: u.ZP.Masks.HEADER_BAR_BADGE_BOTTOM,
-                children: T
+                children: y
               }), (0, r.jsx)("div", {
-                className: v.unreadDot
+                className: _.unreadDot
               })]
-            }) : T
-          }), "mentions" === S.type && null != S.count && (0, r.jsx)(c.mAB, {
-            count: S.count
-          }), "unread" === S.type && null != S.count && (0, r.jsx)(c.Text, {
+            }) : y
+          }), "mentions" === E.type && null != E.count && (0, r.jsx)(c.mAB, {
+            count: E.count
+          }), "unread" === E.type && null != E.count && (0, r.jsx)(c.Text, {
             variant: "eyebrow",
-            children: (s = S.count) > 50 ? "".concat(50, "+") : s.toString()
+            children: (s = E.count) > 50 ? "".concat(50, "+") : s.toString()
           })]
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var n = Object.keys(e);
@@ -139,23 +120,23 @@ function C(e) {
   })
 }
 
-function S() {
+function O() {
   let e = i.useRef(null),
     {
       notificationCenterVariant: t
-    } = b.Lk.useExperiment({
+    } = h.Lk.useExperiment({
       location: "NotificationsInboxButton"
     }),
-    n = (0, s.e7)([g.Z], () => g.Z.getChannelId()),
-    l = i.useMemo(() => y.Z5c.NOTIFICATIONS_INBOX(null != n ? n : void 0), [n]);
-  return t === b.jP.SIDEBAR ? (0, r.jsx)(C, {
+    n = (0, s.e7)([d.Z], () => d.Z.getChannelId()),
+    l = i.useMemo(() => m.Z5c.NOTIFICATIONS_INBOX(null != n ? n : void 0), [n]);
+  return t === h.jP.SIDEBAR ? (0, r.jsx)(E, {
     onClick: () => (0, o.uL)(l)
-  }) : t === b.jP.POPOUT ? (0, r.jsx)(E.Z, {
+  }) : t === h.jP.POPOUT ? (0, r.jsx)(g.Z, {
     targetElementRef: e,
     popoutPosition: "bottom",
     popoutAlign: "center",
     spacing: 2,
-    children: (t, n, i) => (0, r.jsx)(C, {
+    children: (t, n, i) => (0, r.jsx)(E, {
       ref: e,
       selectedOverride: n,
       onClick: t,

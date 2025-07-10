@@ -83,18 +83,18 @@ function v(e) {
       N.removeEventListener(_.NO, e)
     }
   }, [N, S, D, T]);
-  let L = {
+  let k = {
       channel: t,
       maybeLeaveFullScreen: M
     },
-    k = i.useRef(L);
+    L = i.useRef(k);
   return (i.useEffect(() => {
-    k.current = L
+    L.current = k
   }), i.useEffect(() => {
     let {
       channel: e,
       maybeLeaveFullScreen: t
-    } = k.current;
+    } = L.current;
     return m.default.track(y.rMx.VIDEO_LAYOUT_TOGGLED, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},

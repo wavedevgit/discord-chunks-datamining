@@ -149,7 +149,7 @@ function H(e, t) {
       let t = p.Z.getChannel(e);
       if (null == t) return void delete i.mentionCounts[e];
       if (t.getGuildId() !== n) return;
-      let r = c ? s.Z.getMentionCountForChannel(e) : 0,
+      let r = c ? s.ZP.getMentionCountForChannel(e) : 0,
         a = E.ZP.getMentionCount(e) - r;
       null !== n && !u && E.ZP.hasUnread(t.id) && M(t, a, !0) && (u = !0, i.unreadChannelId = t.id), a > 0 && M(t, a) ? i.mentionCounts[t.id] = {
         count: a,
@@ -210,7 +210,7 @@ function W(e, t) {
       if (!h && o) continue;
       let m = !l && (!o || h) && _;
       if ((m || h) && j(n, c, u) && (m && (r.unreadByType[T.W.CHANNEL] = !0, r.unreadChannelId = t), h)) {
-        let e = Math.max(c - (d ? s.Z.getMentionCountForChannel(n.id) : 0), 0);
+        let e = Math.max(c - (d ? s.ZP.getMentionCountForChannel(n.id) : 0), 0);
         p ? r.lowImportanceMentionCount += e : r.highImportanceMentionCount += e, r.mentionCounts[n.id] = {
           count: e,
           isMentionLowImportance: p
@@ -461,7 +461,7 @@ function ey(e) {
 }
 class eO extends m.Z {
   initialize() {
-    this.waitFor(p.Z, b.Z, E.ZP, g.Z, _.default, O.default, y.ZP, l.Z, c.Z, s.Z)
+    this.waitFor(p.Z, b.Z, E.ZP, g.Z, _.default, O.default, y.ZP, l.Z, c.Z, s.ZP)
   }
   loadCache() {
     let e = this.readSnapshot(eO.LATEST_SNAPSHOT_VERSION);

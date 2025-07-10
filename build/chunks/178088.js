@@ -71,16 +71,16 @@ function S(e) {
   i.useEffect(() => (m.S.subscribe(j.CkL.TOGGLE_INBOX, G), () => void m.S.unsubscribe(j.CkL.TOGGLE_INBOX, G)), [G]);
   let {
     enabled: B,
-    inInbox: F
+    inInbox: V
   } = h.Z.useExperiment({
     location: "RecentsPopout"
-  }), V = (0, o.e7)([p.Z], () => p.Z.hasOverdueReminder(), []) && B && F, {
+  }), F = (0, o.e7)([p.Z], () => p.Z.hasOverdueReminder(), []) && B && V, {
     enabled: H
   } = d.Z.useExperiment({
     location: "RecentsPopout"
   });
   i.useEffect(() => {
-    D !== a.X.BOOKMARKS || B || F || L(a.X.MENTIONS)
+    D !== a.X.BOOKMARKS || B || V || L(a.X.MENTIONS)
   });
   let z = i.useCallback(e => {
     e.shiftKey || U()
@@ -112,7 +112,7 @@ function S(e) {
             setTab: L,
             badgeState: x,
             closePopout: U
-          }) : B && F && D === a.X.BOOKMARKS ? (0, r.jsx)(b.Z, {
+          }) : B && V && D === a.X.BOOKMARKS ? (0, r.jsx)(b.Z, {
             setTab: L,
             badgeState: x,
             closePopout: U
@@ -143,7 +143,7 @@ function S(e) {
         let {
           isShown: n
         } = t;
-        return S(G, n, e, V)
+        return S(G, n, e, F)
       }
     })
   })

@@ -89,8 +89,8 @@ let k = i.memo(function(e) {
     guildNode: U,
     setRef: G,
     onDragStart: B,
-    onDragEnd: F,
-    route: V,
+    onDragEnd: V,
+    route: F,
     guild: H,
     animatable: z,
     selected: W = !1,
@@ -128,7 +128,7 @@ let k = i.memo(function(e) {
         nodeId: U.id
       }),
       end() {
-        null == F || F(), (0, g.V1)(C.ZP.getCompatibleGuildFolders())
+        null == V || V(), (0, g.V1)(C.ZP.getCompatibleGuildFolders())
       },
       collect: e => ({
         dragging: e.isDragging()
@@ -142,18 +142,18 @@ let k = i.memo(function(e) {
     [ev] = i.useState(() => new d.sW(70, () => ey(!0)));
   i.useEffect(() => () => ev.cancel(), [ev]);
   let eC = i.useCallback(() => {
-      if (null != V) return void(0, _.uL)(V, {
+      if (null != F) return void(0, _.uL)(F, {
         state: L
       });
       (0, O.X)(eo, {
         state: L
       })
-    }, [eo, V]),
+    }, [eo, F]),
     ej = i.useCallback(() => {
-      if (null != V || null == H || q || !et) return;
+      if (null != F || null == H || q || !et) return;
       let e = (0, b.V)(H.id);
       null != e && p.Z.preload(H.id, e)
-    }, [V, H, q, et]),
+    }, [F, H, q, et]),
     eE = (0, u.e7)([v.ZP], () => v.ZP.isCurrentUserGuest(eo)),
     eS = i.useCallback(e => {
       null == H || eE || J(e, H)

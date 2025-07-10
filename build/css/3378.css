@@ -1,6 +1,6 @@
 /**
   Module ID: 3378
-  Original File Name: 8ed0ad3d9604101d
+  Original File Name: 1907c0f08088872f
 **/
 .confirmation__1051d {
     align-items: center;
@@ -13,6 +13,11 @@
     max-width: 400px;
     padding: 24px;
     text-align: center
+}
+
+.buttonContainer__1051d {
+    display: flex;
+    width: 100%
 }
 
 .iconWrapper__1051d {
@@ -45,7 +50,9 @@
 }
 
 .confirmationButton__1051d {
-    width: 100%
+    display: flex;
+    flex: 1;
+    width: auto
 }
 
 .rejectionReasonLabel__1051d {
@@ -56,4 +63,4 @@
     width: 100%
 }
 
-/*# sourceMappingURL=8ed0ad3d9604101d.css.map*/
+/*# sourceMappingURL=1907c0f08088872f.css.map*/

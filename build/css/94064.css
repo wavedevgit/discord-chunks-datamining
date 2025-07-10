@@ -1,6 +1,6 @@
 /**
   Module ID: 94064
-  Original File Name: 5e2d088e904b8a66
+  Original File Name: 8e7db9789581733c
 **/
 .modal__0651b {
     max-height: 100%;
@@ -58,18 +58,13 @@
     opacity: 0;
     position: absolute;
     right: 8px;
-    top: 12px;
+    top: 6px;
     transition: opacity .2s ease-in-out;
     z-index: 2
 }
 
 .clearButton__0651b:focus,.clearButton__0651b:hover {
     opacity: 1
-}
-
-.clearIcon__0651b {
-    height: 16px;
-    width: 16px
 }
 
 .dragContainer__0651b {
@@ -99,14 +94,6 @@
     margin-bottom: 16px
 }
 
-.button__0651b {
-    width: auto
-}
-
-.cancelButton__0651b {
-    margin-right: 8px
-}
-
 .radioIconEmptyContainer__0651b {
     display: flex;
     margin-bottom: 12px;
@@ -117,4 +104,4 @@
     color: var(--interactive-normal)
 }
 
-/*# sourceMappingURL=5e2d088e904b8a66.css.map*/
+/*# sourceMappingURL=8e7db9789581733c.css.map*/

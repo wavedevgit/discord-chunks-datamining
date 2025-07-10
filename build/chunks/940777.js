@@ -75,9 +75,9 @@ function R() {
     })),
     G = (0, s.e7)([v.Z], () => v.Z.getChannelId(N.I_8)),
     B = (0, s.e7)([y.Z], () => y.Z.getChannel(G)),
-    F = (0, _.Z)(e => e.guildId) === N.I_8,
+    V = (0, _.Z)(e => e.guildId) === N.I_8,
     {
-      badge: V,
+      badge: F,
       unread: H
     } = (0, x.Z)(U),
     z = function(e) {
@@ -111,13 +111,13 @@ function R() {
         activity: g
       })
     }(U),
-    W = V > 0 ? (0, b.N)(V) : null,
+    W = F > 0 ? (0, b.N)(F) : null,
     K = i.useCallback(() => {
       D()
     }, [D]);
   return (0, r.jsxs)(g.H, {
     children: [(0, r.jsx)(f.Z, {
-      selected: F,
+      selected: V,
       hovered: L,
       unread: H && !k,
       className: Z.pill
@@ -131,14 +131,14 @@ function R() {
           children: (0, r.jsx)(c.LYs, (e = T({}, l), t = t = {
             ariaLabel: w.intl.formatToPlainString(w.t["/uzRsr"], {
               guildName: w.intl.string(w.t.wMWycn),
-              mentions: V
+              mentions: F
             }),
-            "aria-selected": F,
+            "aria-selected": V,
             to: {
               pathname: N.Z5c.CHANNEL(N.I_8, G),
               state: A
             },
-            selected: F || L,
+            selected: V || L,
             onMouseEnter: () => M(!0),
             onMouseLeave: () => M(!1),
             onMouseDown: function() {

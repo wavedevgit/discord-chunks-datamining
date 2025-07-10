@@ -42,10 +42,10 @@ function I(e) {
     isNewChannel: R,
     muted: D,
     resolvedUnreadSetting: L
-  } = e, M = (0, i.e7)([f.ZP], () => f.ZP.getMentionCount(n.id)), k = (0, i.e7)([f.ZP], () => f.ZP.getIsMentionLowImportance(n.id)), U = (0, a.ZP)(n), G = (0, i.e7)([p.Z], () => !p.Z.can(j.Plq.CONNECT, n)), B = (0, i.e7)([g.Z], () => g.Z.hasVideo(n.id)), F = (0, u.PK)(n.id) && n.isGuildStageVoice(), V = (0, O.ZP)({
+  } = e, M = (0, i.e7)([f.ZP], () => f.ZP.getMentionCount(n.id)), k = (0, i.e7)([f.ZP], () => f.ZP.getIsMentionLowImportance(n.id)), U = (0, a.ZP)(n), G = (0, i.e7)([p.Z], () => !p.Z.can(j.Plq.CONNECT, n)), B = (0, i.e7)([g.Z], () => g.Z.hasVideo(n.id)), V = (0, u.PK)(n.id) && n.isGuildStageVoice(), F = (0, O.ZP)({
     channel: n,
     locked: G,
-    video: B || F,
+    video: B || V,
     selected: I
   }), H = (0, i.e7)([d.Z], () => d.Z.getNewThreadCount(n.guild_id, n.id)), z = (0, s.n2)(n.guild_id, n.id), W = (0, i.e7)([h.Z], () => {
     var e, t;
@@ -76,9 +76,9 @@ function I(e) {
     children: (0, o.NGo)(z)
   });
   let K = null != (t = null == N ? void 0 : N.length) ? t : 0;
-  return null != w && w && V ? (0, r.jsx)(v.Z, {
+  return null != w && w && F ? (0, r.jsx)(v.Z, {
     userCount: K,
-    video: B || F,
+    video: B || V,
     channel: n
   }) : P && (0, m.a)(N) && W ? (0, r.jsx)(o.IGR, {
     text: S.intl.string(S.t.dI3q4u),

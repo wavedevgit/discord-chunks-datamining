@@ -41,8 +41,8 @@ var r = n(255367),
   U = n(605951),
   G = n(474109),
   B = n(741616),
-  F = n(187835),
-  V = n(118122),
+  V = n(187835),
+  F = n(118122),
   H = n(193154),
   z = n(602147),
   W = n(222059),
@@ -228,10 +228,10 @@ function ed(e) {
       "aria-label": et.intl.string(et.t["7hB4kp"]),
       gap: "xs",
       children: s.map((e, t) => l(e, t, s.length))
-    }), c, (0, r.jsx)(q.Z, {}), i ? null : (0, r.jsx)(V.Z, {
+    }), c, (0, r.jsx)(q.Z, {}), i ? null : (0, r.jsx)(F.Z, {
       disableTooltip: o.length > 0,
       lastTargetNode: s[s.length - 1]
-    }), i ? null : t, n ? null : (0, r.jsx)(F.Z, {})]
+    }), i ? null : t, n ? null : (0, r.jsx)(V.Z, {})]
   })
 }
 
@@ -244,9 +244,9 @@ function eh(e) {
   } = e, [s] = (0, h.Wu)([L.ZP], () => {
     let e = L.ZP.getGuildsTree();
     return [e, e.version]
-  }), d = (0, h.e7)([S.Z], () => S.Z.lurkingGuildIds()), p = i.useMemo(() => n ? [] : d, [d, n]), b = (0, h.e7)([C.Z], () => C.Z.isFullscreenInContext()), [O, j] = i.useState(!1), E = i.useCallback(() => j(!0), []), A = i.useCallback(() => j(!1), []), R = i.useRef(!1), [D] = i.useState(() => new f.V7), B = i.useRef(null), F = i.useRef(null), V = (0, u.OP)(), {
+  }), d = (0, h.e7)([S.Z], () => S.Z.lurkingGuildIds()), p = i.useMemo(() => n ? [] : d, [d, n]), b = (0, h.e7)([C.Z], () => C.Z.isFullscreenInContext()), [O, j] = i.useState(!1), E = i.useCallback(() => j(!0), []), A = i.useCallback(() => j(!1), []), R = i.useRef(!1), [D] = i.useState(() => new f.V7), B = i.useRef(null), V = i.useRef(null), F = (0, u.OP)(), {
     ref: H
-  } = V, W = eo(V, ["ref"]), K = (0, m.mFp)(), [q, J] = i.useState(!1), $ = (0, m.dQu)(g.Z.modules.guildbar.AVATAR_SIZE), er = (0, m.dQu)(g.Z.space.SPACE_XS), eh = i.useMemo(() => {
+  } = F, W = eo(F, ["ref"]), K = (0, m.mFp)(), [q, J] = i.useState(!1), $ = (0, m.dQu)(g.Z.modules.guildbar.AVATAR_SIZE), er = (0, m.dQu)(g.Z.space.SPACE_XS), eh = i.useMemo(() => {
     let e = function(e, t) {
       let n = e + t,
         r = 2 + t;
@@ -260,7 +260,7 @@ function eh(e) {
     }($, er);
     return new ec(s, J, ee.dG4, () => {
       var e, t;
-      null == (e = B.current) || e.calculateState(), null == (t = F.current) || t.calculateState()
+      null == (e = B.current) || e.calculateState(), null == (t = V.current) || t.calculateState()
     }, e)
   }, [$, er, s]);
   i.useEffect(() => (eh.setResizeObserver(), () => {
@@ -422,7 +422,7 @@ function eh(e) {
           })
         })), (0, r.jsx)(G.Z, {
           reverse: !0,
-          ref: F,
+          ref: V,
           isVisible: eh.isItemVisible,
           onJumpTo: eh.handleJumpToGuild,
           className: o()(en.unreadMentionsIndicatorBottom, {

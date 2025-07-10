@@ -1,6 +1,6 @@
 /** Chunk was on 77025 **/
 n.d(t, {
-  Z: () => d
+  Z: () => u
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -9,55 +9,55 @@ var r = n(255367),
   s = n(585483),
   a = n(981631),
   c = n(388032),
-  u = n(744053);
-let d = function(e) {
+  d = n(744053);
+let u = function(e) {
   var t;
   let {
     message: n,
-    errorMessage: d,
+    errorMessage: u,
     submitting: m,
     onReset: f,
     onSave: h,
     onSaveText: p,
-    onResetText: b,
+    onResetText: x,
     onSaveButtonColor: g,
-    disabled: x,
-    saveButtonTooltip: j
-  } = e, v = i.useRef(null), [_, O] = i.useState(!1);
+    disabled: b,
+    saveButtonTooltip: v
+  } = e, _ = i.useRef(null), [j, C] = i.useState(!1);
   return i.useEffect(() => {
     function e() {
-      O(!0), setTimeout(() => O(!1), 1e3)
+      C(!0), setTimeout(() => C(!1), 1e3)
     }
     return s.S.subscribe(a.CkL.EMPHASIZE_NOTICE, e), () => {
       s.S.unsubscribe(a.CkL.EMPHASIZE_NOTICE, e)
     }
   }, []), (0, r.jsx)("div", {
-    className: u.container,
-    "data-emphasized": _,
+    className: d.container,
+    "data-emphasized": j,
     children: (0, r.jsx)("div", {
-      className: u.flexContainer,
-      ref: v,
+      className: d.flexContainer,
+      ref: _,
       children: (0, r.jsxs)(o.JcV, {
-        containerRef: v,
+        containerRef: _,
         children: [(0, r.jsx)("div", {
-          className: u.shrinkingContainer,
+          className: d.shrinkingContainer,
           children: (0, r.jsx)("div", {
-            className: u.message,
-            children: null != (t = null != d ? d : n) ? t : c.intl.string(c.t.GP7JLC)
+            className: d.message,
+            children: null != (t = null != u ? u : n) ? t : c.intl.string(c.t.GP7JLC)
           })
         }), (0, r.jsxs)("div", {
-          className: u.actions,
+          className: d.actions,
           children: [null != f && (0, r.jsx)(l.zx, {
-            className: u.resetButton,
+            className: d.resetButton,
             size: l.zx.Sizes.SMALL,
             color: l.zx.Colors.PRIMARY,
             look: l.zx.Looks.LINK,
             onClick: f,
             children: (0, r.jsx)("span", {
-              children: null != b ? b : c.intl.string(c.t.yBZMsb)
+              children: null != x ? x : c.intl.string(c.t.yBZMsb)
             })
           }), null != h ? (0, r.jsx)(o.ua7, {
-            text: j,
+            text: v,
             children: e => {
               var t, n;
               return (0, r.jsx)(l.zx, (t = function(e) {
@@ -81,7 +81,7 @@ let d = function(e) {
                 size: l.zx.Sizes.SMALL,
                 color: null != g ? g : l.zx.Colors.GREEN,
                 submitting: m,
-                disabled: x,
+                disabled: b,
                 onClick: h
               }, e), n = n = {
                 children: null != p ? p : c.intl.string(c.t.K344S0)

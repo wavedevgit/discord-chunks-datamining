@@ -41,8 +41,8 @@ var r = n(255367),
   U = n(981631),
   G = n(647086),
   B = n(388032),
-  F = n(915887),
-  V = n(185346);
+  V = n(915887),
+  F = n(185346);
 
 function H(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -98,11 +98,11 @@ class K extends D.ZP {
       sortingPosition: t,
       isUserOver: n
     } = this.props;
-    if (n) return F.containerUserOver;
+    if (n) return V.containerUserOver;
     if (null != t)
-      if (e > t) return F.containerDragAfter;
-      else return F.containerDragBefore;
-    return F.containerDefault
+      if (e > t) return V.containerDragAfter;
+      else return V.containerDragBefore;
+    return V.containerDefault
   }
   renderVoiceUsers() {
     let {
@@ -147,7 +147,7 @@ class K extends D.ZP {
       shouldShowGuildVerificationPopout: v
     } = this.state, C = this.getVoiceStatesCount(), j = (0, r.jsxs)("li", {
       className: o()(this.getModeClass(), {
-        [F.disabled]: this.isDisabled()
+        [V.disabled]: this.isDisabled()
       }),
       "data-dnd-name": e.name,
       children: [(0, r.jsx)(s.yRy, {
@@ -180,9 +180,9 @@ class K extends D.ZP {
             }(l, ["onClick", "onContextMenu"]);
             return (0, r.jsxs)(M.ZP, W(z({
               ref: this.channelItemRef,
-              className: F.iconVisibility,
+              className: V.iconVisibility,
               iconClassName: o()({
-                [V.iconLive]: null != f
+                [F.iconLive]: null != f
               }),
               channel: e,
               selected: !y && t,
@@ -281,7 +281,7 @@ class K extends D.ZP {
             onBlur: u
           } = t;
           return (0, r.jsx)(s.P3F, {
-            className: o()(F.iconItem, n ? F.alwaysShown : null),
+            className: o()(V.iconItem, n ? V.alwaysShown : null),
             onClick: () => {
               c.Z.updateChatOpen(e.id, !0), this.handleClickChat()
             },
@@ -293,7 +293,7 @@ class K extends D.ZP {
             children: (0, r.jsx)(s.kBi, {
               size: "xs",
               color: "currentColor",
-              className: F.actionIcon
+              className: V.actionIcon
             })
           })
         }

@@ -1,6 +1,6 @@
 /**
   Module ID: 1272
-  Original File Name: 4f9fd2e62c4378cd
+  Original File Name: b620b3c7589ecfa3
 **/
 .container__74da2 {
     align-items: center;
@@ -1582,6 +1582,11 @@
     text-align: center
 }
 
+.buttonContainer__1051d {
+    display: flex;
+    width: 100%
+}
+
 .iconWrapper__1051d {
     background: var(--background-base-lowest);
     border-radius: 50%;
@@ -1612,7 +1617,9 @@
 }
 
 .confirmationButton__1051d {
-    width: 100%
+    display: flex;
+    flex: 1;
+    width: auto
 }
 
 .rejectionReasonLabel__1051d {
@@ -8554,4 +8561,4 @@ html .tabBadge__35e86 {
     margin-bottom: 18px
 }
 
-/*# sourceMappingURL=4f9fd2e62c4378cd.css.map*/
+/*# sourceMappingURL=b620b3c7589ecfa3.css.map*/

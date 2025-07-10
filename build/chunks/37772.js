@@ -77,8 +77,8 @@ let G = i.memo(function e(t) {
       compact: A = !1,
       className: L,
       onContextMenu: G,
-      onClick: F,
-      disableInteraction: V = !1,
+      onClick: V,
+      disableInteraction: F = !1,
       hasThread: H,
       treatSpam: z
     } = t,
@@ -129,7 +129,7 @@ let G = i.memo(function e(t) {
     compact: A,
     className: o()(L, {
       [M.ephemeral]: (0, O.Pv)(s),
-      [M.disableInteraction]: V,
+      [M.disableInteraction]: F,
       [M.groupStart]: t.isGroupStart
     }),
     childrenRepliedMessage: (0, T.Z)(s, l, W, K, A),
@@ -164,7 +164,7 @@ let G = i.memo(function e(t) {
     childrenMessageContent: (0, P.Z)(t, en),
     childrenSystemMessage: (0, w.Z)(t),
     onContextMenu: G,
-    onClick: F,
+    onClick: V,
     hasThread: !1 !== H && null != el && s.hasFlag(R.iLy.HAS_THREAD),
     hasReply: s.type === R.uaV.REPLY,
     isSystemMessage: (0, v.Z)(s),

@@ -525,7 +525,7 @@ let ej = {
         avoidInitialScroll: p
       } = e, h = ea.Z.getChannel(t), m = I.Z.isConnectedOrOverlay(), E = Date.now();
       if (null != h && h.type === eO.d4z.GUILD_STORE) return !1;
-      if (t === g.V || (eR.log("Fetching messages for ".concat(t, " between ").concat(n, " and ").concat(r, ". jump=").concat(JSON.stringify(o))), eU._tryFetchMessagesCached({
+      if (t === g.V || (eR.log("Fetching messages for ".concat(t, " between ").concat(r, " and ").concat(n, ". jump=").concat(JSON.stringify(o))), eU._tryFetchMessagesCached({
           channelId: t,
           before: n,
           after: r,

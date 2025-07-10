@@ -36,8 +36,8 @@ var r = n(255367),
   R = n(931651),
   M = n(280845),
   D = n(2818),
-  L = n(768943),
-  k = n(665906),
+  k = n(768943),
+  L = n(665906),
   U = n(695346),
   B = n(314897),
   F = n(323873),
@@ -205,13 +205,13 @@ function ef(e) {
       isFocused: o
     } = e, {
       author: s
-    } = n, d = (0, u.e7)([G.Z], () => G.Z.getGuild(t.guild_id), [t.guild_id]), p = (0, u.e7)([B.default], () => B.default.getId()), h = (0, k.$R)(t), g = (0, k.Gu)(t), b = U.nc.useSetting(), _ = U.Sb.useSetting(), y = (0, u.e7)([V.Z], () => null == t.guild_id || V.Z.canChatInGuild(t.guild_id), [t]), {
+    } = n, d = (0, u.e7)([G.Z], () => G.Z.getGuild(t.guild_id), [t.guild_id]), p = (0, u.e7)([B.default], () => B.default.getId()), h = (0, L.$R)(t), g = (0, L.Gu)(t), b = U.nc.useSetting(), _ = U.Sb.useSetting(), y = (0, u.e7)([V.Z], () => null == t.guild_id || V.Z.canChatInGuild(t.guild_id), [t]), {
       canManageMessages: C,
       canAddNewReactions: v
     } = (0, u.cj)([z.Z], () => ({
       canAddNewReactions: y && z.Z.can(ei.Plq.ADD_REACTIONS, t),
       canManageMessages: z.Z.can(ei.Plq.MANAGE_MESSAGES, t)
-    }), [t, y]), O = (0, M.U)(t, n), j = (0, k.NE)(t, n), S = (0, k.Ek)(n), I = (0, u.e7)([E.Z], () => null != t.guild_id && E.Z.isLurking(t.guild_id), [t]), P = (0, u.e7)([H.ZP], () => null != t.guild_id && H.ZP.isCurrentUserGuest(t.guild_id), [t]), Z = s.id === p, N = (C || n.canDeleteOwnMessage(p)) && h && !ei.V$x.UNDELETABLE.has(n.type);
+    }), [t, y]), O = (0, M.U)(t, n), j = (0, L.NE)(t, n), S = (0, L.Ek)(n), I = (0, u.e7)([E.Z], () => null != t.guild_id && E.Z.isLurking(t.guild_id), [t]), P = (0, u.e7)([H.ZP], () => null != t.guild_id && H.ZP.isCurrentUserGuest(t.guild_id), [t]), Z = s.id === p, N = (C || n.canDeleteOwnMessage(p)) && h && !ei.V$x.UNDELETABLE.has(n.type);
     n.type === ei.uaV.AUTO_MODERATION_ACTION && (N = N && C);
     let T = (0, X.a4)(n),
       A = (0, J.Z)(n, t, C),
@@ -238,7 +238,7 @@ function ef(e) {
       } = D.Z.useExperiment({
         location: "message_utilities"
       }),
-      et = (0, u.e7)([L.Z], () => null != L.Z.getSavedMessage(t.id, n.id)),
+      et = (0, u.e7)([k.Z], () => null != k.Z.getSavedMessage(t.id, n.id)),
       en = (0, c.Z)(),
       er = (0, u.e7)([f.Z], () => f.Z.keyboardModeEnabled);
     return {
@@ -277,7 +277,7 @@ function ef(e) {
     ea({
       emojiPicker: !q
     })
-  }, [q, ea]), eg = (0, k.$R)(t), e_ = n.hasFlag(ei.iLy.CROSSPOSTED), [ey, eC] = (0, g.cv)(w ? [d.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE] : []), ex = ey === d.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE, [ev, eO] = i.useState(!1), ej = i.useCallback(() => {
+  }, [q, ea]), eg = (0, L.$R)(t), e_ = n.hasFlag(ei.iLy.CROSSPOSTED), [ey, eC] = (0, g.cv)(w ? [d.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE] : []), ex = ey === d.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE, [ev, eO] = i.useState(!1), ej = i.useCallback(() => {
     eO(!0)
   }, []), eE = i.useCallback(() => {
     eO(!1)

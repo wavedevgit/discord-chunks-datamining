@@ -41,7 +41,7 @@ let w = i.memo(e => {
     channel: g,
     sessionId: x,
     nick: A
-  } = e, w = s.id, R = (0, o.e7)([_.default], () => _.default.getId() === w, [w]), [M, D, L] = (0, o.Wu)([C.Z], () => R ? [!C.Z.isSupported() || C.Z.isSelfMute() || C.Z.isSelfMutedTemporarily(), C.Z.isSelfDeaf(), !1] : [!C.Z.isSupported() || C.Z.isLocalMute(w), !1, C.Z.isLocalVideoDisabled(w)], [R, w]), k = (0, o.e7)([E.Z], () => E.Z.isPrioritySpeaker(w)), U = (0, c.Z)({
+  } = e, w = s.id, R = (0, o.e7)([_.default], () => _.default.getId() === w, [w]), [M, D, k] = (0, o.Wu)([C.Z], () => R ? [!C.Z.isSupported() || C.Z.isSelfMute() || C.Z.isSelfMutedTemporarily(), C.Z.isSelfDeaf(), !1] : [!C.Z.isSupported() || C.Z.isLocalMute(w), !1, C.Z.isLocalVideoDisabled(w)], [R, w]), L = (0, o.e7)([E.Z], () => E.Z.isPrioritySpeaker(w)), U = (0, c.Z)({
     userId: w,
     checkSoundSharing: !0
   }), B = (0, o.e7)([y.ZP], () => y.ZP.isGuestOrLurker(g.guild_id, w)), F = (0, o.e7)([h.Z], () => h.Z.getGuildRingingUsers(g.id).has(w)), H = (0, o.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(g.id).find(e => {
@@ -80,13 +80,13 @@ let w = i.memo(e => {
       otherClientSessionType: null == K || null == (t = K.clientInfo) ? void 0 : t.os,
       voicePlatform: Q,
       localMute: M && !R,
-      localVideoDisabled: L,
+      localVideoDisabled: k,
       mute: l || M,
       deaf: a || D,
       speaking: U,
       ringing: F,
       disconnected: J,
-      priority: k,
+      priority: L,
       embeddedApplication: G[0],
       isStreaming: null != Y && Y.channelId === g.id,
       isWatching: null != q && q.state !== N.jm8.ENDED,
@@ -123,12 +123,12 @@ let R = [],
       children: j
     } = e, [E, S] = i.useState(null), [I, P] = i.useState(!1), T = i.useRef(null), M = (0, m.Es)(l.id, null != c ? c : R), D = i.useRef(new s.sW(50, () => {
       S(T.current), T.current = null
-    })), L = i.useRef(new s.sW(175, () => {
+    })), k = i.useRef(new s.sW(175, () => {
       S(null)
-    })), k = i.useCallback(e => {
-      t && (P(!0), L.current.cancel(), T.current = e, D.current.delay())
+    })), L = i.useCallback(e => {
+      t && (P(!0), k.current.cancel(), T.current = e, D.current.delay())
     }, [t]), U = i.useCallback(e => {
-      t && (D.current.cancel(), E === e && (P(!1), L.current.delay()))
+      t && (D.current.cancel(), E === e && (P(!1), k.current.delay()))
     }, [t, E]), B = (0, o.Wu)([v.Z], () => {
       if (u) return [];
       let e = new Set;
@@ -166,7 +166,7 @@ let R = [],
             channel: l,
             collapsed: u,
             canDrag: n && x.Z.can(N.Plq.MOVE_MEMBERS, l),
-            showPreview: k,
+            showPreview: L,
             hidePreview: U,
             previewIsOpen: I,
             shouldShowPreview: E === a.id,

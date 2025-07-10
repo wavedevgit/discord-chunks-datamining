@@ -40,9 +40,9 @@ function P(e) {
     badgeState: M
   } = e, k = i.useRef(null), [U, G] = (0, E.ZP)(k), {
     loadState: B,
-    channels: F
+    channels: V
   } = U, {
-    maybeLoadMore: V,
+    maybeLoadMore: F,
     markAllRead: H
   } = G;
   t = k, n = U, l = G, i.useLayoutEffect(() => {
@@ -93,7 +93,7 @@ function P(e) {
       location: "Unreads"
     }),
     K = (0, g.Z)("unreads", k);
-  if (0 === F.length) {
+  if (0 === V.length) {
     return (0, r.jsxs)("div", {
       className: o()(I.container, {
         [I.widerInbox]: W
@@ -169,11 +169,11 @@ function P(e) {
               k.current = e, i.current = null != (t = null == e ? void 0 : e.getScrollerNode()) ? t : null
             }
           }, l), n = n = {
-            onScroll: B === E.jd.Done ? void 0 : V,
+            onScroll: B === E.jd.Done ? void 0 : F,
             className: I.scroller,
             children: [R ? (0, r.jsx)(N, {
               setSeenTutorial: D
-            }) : null, (0, j.Z)(F, G, A), B === E.jd.Done ? null : (0, r.jsx)(h.$jN, {
+            }) : null, (0, j.Z)(V, G, A), B === E.jd.Done ? null : (0, r.jsx)(h.$jN, {
               className: I.spinner
             })]
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
