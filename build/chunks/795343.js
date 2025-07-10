@@ -42,7 +42,12 @@ function v(e) {
     null == v || null == (e = v.current) || e.scrollToTop({
       animate: !0
     })
-  }, [v]), A = (0, p.a)(), R = l.useMemo(() => A(N), [A, N]);
+  }, [v]);
+  l.useEffect(() => {
+    B()
+  }, [P[0], B]);
+  let A = (0, p.a)(),
+    R = l.useMemo(() => A(N), [A, N]);
   l.useEffect(() => {
     n || (0, h.n)({
       sessionId: x,
