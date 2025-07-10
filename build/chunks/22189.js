@@ -51,8 +51,8 @@ var s = n(399606),
   K = n(498730),
   q = n(607762),
   X = n(474106),
-  J = n(572501),
-  Q = n(755590),
+  Q = n(572501),
+  J = n(755590),
   $ = n(909910),
   ee = n(912429),
   et = n(91394),
@@ -196,14 +196,14 @@ let ed = () => {
       title: D.intl.string(D.t["H+v6eX"]),
       subtitle: D.intl.string(D.t.wmbOAg),
       description: D.intl.string(D.t.gdA9FB),
-      perkImage: Q,
+      perkImage: J,
       pillText: D.intl.string(D.t.EYxi0t)
     } : {
       name: "remixing",
       title: D.intl.string(D.t["H+v6eX"]),
       subtitle: D.intl.string(D.t.wmbOAg),
       description: D.intl.string(D.t.fiLtJi),
-      perkImage: Q,
+      perkImage: J,
       pillText: D.intl.string(D.t.EYxi0t)
     },
     serverBoosts: {
@@ -370,7 +370,7 @@ let ed = () => {
       }),
       descriptionCta: D.intl.string(D.t.JST6jo),
       isPremiumGetCta: !ed || void 0,
-      perkImage: J
+      perkImage: Q
     },
     serverProfiles: {
       name: "serverProfiles",

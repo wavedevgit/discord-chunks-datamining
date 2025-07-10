@@ -59,12 +59,14 @@ let d = e => {
     return e in t ? t[e] : null
   },
   f = new Set([a.He.CARD, a.He.PAYPAL]),
-  _ = new Set([a.He.IDEAL, a.He.GOPAY_WALLET]);
+  _ = new Set([a.He.IDEAL, a.He.GOPAY_WALLET, a.He.KAKAOPAY]);
 
 function p(e, t) {
   let n = null != t ? t : (0, i.vP)(),
-    r = f.has(e);
-  return n ? r || _.has(e) : r
+    a = f.has(e);
+  if (!n) return a;
+  let o = (0, r.rI)();
+  return (!h(e) || "live" !== o || null != b(e, o)) && (a || _.has(e))
 }
 
 function h(e) {
@@ -85,6 +87,13 @@ let m = {
       subtitleTranslationKey: o.t["43J8JC"],
       isRegionalPaymentMethod: !0,
       isStaffOnly: !0
+    },
+    [a.He.KAKAOPAY]: {
+      paymentSourceType: a.He.KAKAOPAY,
+      liveId: null,
+      testId: "cpmt_1ReOr3CR4aIufmH29WgZlgkT",
+      subtitleTranslationKey: o.t.CSVexs,
+      isRegionalPaymentMethod: !0
     }
   },
   g = {
@@ -93,7 +102,8 @@ let m = {
   },
   E = u(l({}, g), {
     [a.He.PAYPAL]: "paypal",
-    [a.He.GOPAY_WALLET]: "gopay"
+    [a.He.GOPAY_WALLET]: "gopay",
+    [a.He.KAKAOPAY]: "kakaopay"
   }),
   b = (e, t) => {
     let n = m[e];
@@ -110,7 +120,7 @@ function y(e) {
     isRegionalPaymentMethod: t.isRegionalPaymentMethod,
     isStaffOnly: t.isStaffOnly,
     paymentSourceType: t.paymentSourceType
-  }))
+  })).filter(e => null != e.id)
 }
 let O = {
     unknown: y("test"),
@@ -121,7 +131,10 @@ let O = {
 
 function I(e) {
   let t = {};
-  for (let n of Object.values(m)) t[b(n.paymentSourceType, e)] = n.paymentSourceType;
+  for (let n of Object.values(m)) {
+    let r = b(n.paymentSourceType, e);
+    null != r && (t[r] = n.paymentSourceType)
+  }
   return t
 }
 let T = {

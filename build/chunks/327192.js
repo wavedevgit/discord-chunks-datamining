@@ -1,6 +1,6 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => J
+  Z: () => Q
 }), n(388685), n(539854), n(457542);
 var i = n(255367),
   r = n(73800),
@@ -134,17 +134,17 @@ function W(e) {
     [W, Y] = r.useState(!1),
     [K, q] = r.useState([]),
     X = (0, j.rR)(o.type),
-    J = _.Z.get(X);
+    Q = _.Z.get(X);
   r.useEffect(() => {
     x(o.friendSync), S(o.visibility), I(o.metadataVisibility), A(o.showActivity)
   }, [o]);
-  let Q = {
+  let J = {
       inProgressVisibility: P,
       inProgressMetadataVisibility: U
     },
-    $ = r.useRef(Q);
+    $ = r.useRef(J);
   r.useEffect(() => {
-    $.current = Q
+    $.current = J
   }), r.useEffect(() => {
     if (!1 === o.verified) return;
     let {
@@ -340,7 +340,7 @@ function W(e) {
       children: (0, i.jsx)(m.Text, {
         variant: "text-sm/semibold",
         children: V.intl.format(V.t["6u6J0t"], {
-          platform: J.name
+          platform: Q.name
         })
       })
     })), (null == (t = _.Z.get(o.type)) ? void 0 : t.hasMetadata) === !0 && (a = (0, i.jsx)(m.j7V, {
@@ -536,7 +536,7 @@ function X(e) {
     children: t
   })
 }
-let J = () => {
+let Q = () => {
   let e = (0, l.e7)([A.Z], () => A.Z.hidePersonalInformation),
     t = (0, l.e7)([N.Z], () => N.Z.isFetching()),
     n = (0, l.e7)([N.Z], () => N.Z.getAccounts()),

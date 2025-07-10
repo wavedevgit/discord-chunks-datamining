@@ -91,8 +91,8 @@ function D() {
       image: M
     }),
     X = (0, c.gS)(),
-    J = A.ZP.canUsePremiumProfileCustomization(L),
-    Q = (0, m.gd)(M, L.avatar),
+    Q = A.ZP.canUsePremiumProfileCustomization(L),
+    J = (0, m.gd)(M, L.avatar),
     $ = (0, m.f$)(V, null == B ? void 0 : B.banner),
     ee = "DefaultCustomizationSections";
   (0, o.j)({
@@ -124,7 +124,7 @@ function D() {
       currentPronouns: null != (w = null == B ? void 0 : B.pronouns) ? w : ""
     }, "pronouns"), (0, i.jsx)(h.Z, {
       onAvatarChange: l.I5,
-      showRemoveAvatarButton: Q,
+      showRemoveAvatarButton: J,
       errors: K.avatar,
       sectionTitle: P.intl.string(P.t.lqaIxM),
       forcedDivider: !0
@@ -136,7 +136,7 @@ function D() {
     }), (0, i.jsx)(E.Z, {
       user: L,
       sectionTitle: P.intl.string(P.t.wR5wOj)
-    }, "effect"), J ? (0, i.jsxs)(i.Fragment, {
+    }, "effect"), Q ? (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(_.Z, {
         showRemoveBannerButton: $,
         errors: K.banner,

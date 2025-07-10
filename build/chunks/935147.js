@@ -54,8 +54,8 @@ function G(e) {
     tryItOutThemeColors: K,
     tryItOutAvatar: q,
     tryItOutBanner: X,
-    tryItOutProfileEffectId: J,
-    tryItOutAvatarDecoration: Q
+    tryItOutProfileEffectId: Q,
+    tryItOutAvatarDecoration: J
   } = (0, s.cj)([T.Z], () => {
     var e, t;
     let n = T.Z.getAllPending(),
@@ -89,7 +89,7 @@ function G(e) {
     })(Object(t)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
-  }), $ = (0, h.Z)(J), {
+  }), $ = (0, h.Z)(Q), {
     preset: ee,
     onShuffle: et
   } = (0, x.Z)(), en = r.useRef(null);
@@ -100,9 +100,9 @@ function G(e) {
     sourceAnalyticsLocations: es
   } = (0, d.ZP)(c.Z.USER_SETTINGS_TRY_OUT_PREMIUM), ea = e => {
     if (e) {
-      if ((0, l.I5)(q), (0, v.z5)(K), (0, v.ho)(X), null != Q) {
-        let e = m.Z.getProduct(Q.skuId);
-        null != e && (0, g.G1)(e) ? (0, u.fK)(e.skuId).then(() => (0, l.cV)(Q)) : null != p.Z.getPurchase(Q.skuId) && (0, l.cV)(Q)
+      if ((0, l.I5)(q), (0, v.z5)(K), (0, v.ho)(X), null != J) {
+        let e = m.Z.getProduct(J.skuId);
+        null != e && (0, g.G1)(e) ? (0, u.fK)(e.skuId).then(() => (0, l.cV)(J)) : null != p.Z.getPurchase(J.skuId) && (0, l.cV)(J)
       }
       N.default.track(L.rMx.TRY_IT_OUT_PRESET_SELECTED, {
         preset: ee
