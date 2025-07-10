@@ -15,7 +15,7 @@ let o = {
       queryString: o,
       searchMode: c
     } = e, u = (0, s.WJ)(t);
-    r.Gn(u), r.QY(u, !1), l.Z.clearSearchState(u), l.Z.fetchMessages({
+    r.Gn(u), r.QY(u, !1), r.h7(u, o), l.Z.clearSearchState(u), l.Z.fetchMessages({
       searchContext: t,
       searchTabs: [i.sR.MESSAGES],
       searchQueryString: o,

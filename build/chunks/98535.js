@@ -46,11 +46,11 @@ function E(e) {
         a = t === o.T.ORB ? O.AW.ORBS : O.AW.CATALOG;
       await u(a, l), null != t && P(t)
     }, [n, j, u, P, m]),
-    I = (0, p.F)("CollectiblesContent"),
+    k = (0, p.F)("CollectiblesContent"),
     {
-      searchError: k
+      searchError: I
     } = (0, g.a)();
-  return I && null != k ? (0, r.jsx)(C.Z, {}) : null != y ? (0, r.jsx)(b.Z, {
+  return k && null != I ? (0, r.jsx)(C.Z, {}) : null != y ? (0, r.jsx)(b.Z, {
     onRetry: E,
     errorMessage: y,
     errorOrigin: b.i.SHOP_PAGE

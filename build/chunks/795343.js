@@ -35,19 +35,19 @@ function v(e) {
   } = (0, _.Z)(), T = (0, i.e7)([c.default], () => c.default.getCurrentUser()), {
     skus: P,
     currentPage: L,
-    totalCount: I,
-    isFetchingResults: k
-  } = (0, f.a)(), N = (0, i.Wu)([d.Z], () => d.Z.getProductsBySkus(P)), B = l.useCallback(() => {
+    totalCount: k,
+    isFetchingResults: I
+  } = (0, f.a)(), B = (0, i.Wu)([d.Z], () => d.Z.getProductsBySkus(P)), N = l.useCallback(() => {
     var e;
     null == v || null == (e = v.current) || e.scrollToTop({
       animate: !0
     })
   }, [v]), A = null == P ? void 0 : P.join("");
   l.useEffect(() => {
-    B()
-  }, [A, B]);
-  let R = (0, p.a)(),
-    w = l.useMemo(() => R(N), [R, N]);
+    N()
+  }, [A, N]);
+  let w = (0, p.a)(),
+    R = l.useMemo(() => w(B), [w, B]);
   l.useEffect(() => {
     n || (0, h.n)({
       sessionId: x,
@@ -64,8 +64,8 @@ function v(e) {
       setQueryPageOffset: D,
       queryPageSize: M
     } = (0, g.S)(),
-    H = n || k || null == T,
-    W = !H && 0 === w.length;
+    H = n || I || null == T,
+    W = !H && 0 === R.length;
   return l.useEffect(() => {
     if (null != Z.current && !W) {
       let e = new ResizeObserver(() => {
@@ -79,7 +79,7 @@ function v(e) {
         [O.productsEmpty]: W
       }),
       ref: Z,
-      children: [H && [...Array(M)].map((e, t) => (0, r.jsx)(b.K, {}, t)), W && (0, r.jsx)(C.Z, {}), !H && w.map((e, t) => {
+      children: [H && [...Array(M)].map((e, t) => (0, r.jsx)(b.K, {}, t)), W && (0, r.jsx)(C.Z, {}), !H && R.map((e, t) => {
         let n = d.Z.getCategory(e.categorySkuId);
         return null == n ? null : (0, r.jsx)(u.k0, {
           newValue: {
@@ -93,12 +93,12 @@ function v(e) {
           }, e.skuId)
         }, e.skuId)
       })]
-    }), I > M && (0, r.jsx)("div", {
+    }), k > M && (0, r.jsx)("div", {
       className: O.paginationContainer,
       children: (0, r.jsx)("div", {
         children: (0, r.jsx)(s.DsT, {
           currentPage: L,
-          totalCount: I,
+          totalCount: k,
           pageSize: M,
           onPageChange: e => {
             D((e - 1) * M)

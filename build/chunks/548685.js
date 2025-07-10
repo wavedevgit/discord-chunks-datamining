@@ -35,27 +35,27 @@ let P = e => {
     sortedSkuIds: o,
     handleTransition: P,
     numVisibleItems: L,
-    tab: I
-  } = e, k = (0, i.e7)([d.default], () => d.default.getCurrentUser()), N = h.ZP.canUseCollectibles(k), B = (0, _.s)("useShopHomeSorting") && I === x.AW.HOME, {
+    tab: k
+  } = e, I = (0, i.e7)([d.default], () => d.default.getCurrentUser()), B = h.ZP.canUseCollectibles(I), N = (0, _.s)("useShopHomeSorting") && k === x.AW.HOME, {
     sortType: A,
-    setSortType: R,
-    sortedItems: w,
+    setSortType: w,
+    sortedItems: R,
     sortOptions: Z,
     shuffleProducts: F,
     showRecommendationOption: D
-  } = (0, C.N)(o, N), M = (0, S.St)(w), H = (0, i.e7)([u.Z], () => u.Z.useReducedMotion), W = (0, i.e7)([p.Z], () => p.Z.isFocused()), V = !H && W, {
+  } = (0, C.N)(o, B), M = (0, S.St)(R), H = (0, i.e7)([u.Z], () => u.Z.useReducedMotion), W = (0, i.e7)([p.Z], () => p.Z.isFocused()), V = !H && W, {
     animationPhase: U,
     startAnimation: G
   } = (0, E.y)(), z = (0, b.sp)(), q = null != (t = null == z ? void 0 : z.sessionId) ? t : "", Y = l.useRef(null), K = l.useCallback(e => {
     G({
       isShuffling: !1,
-      onOutroComplete: () => R(e)
+      onOutroComplete: () => w(e)
     }), g.default.track(y.rMx.COLLECTIBLES_SHOP_FEED_SORT_CHANGED, {
       page_session_id: q,
       sort_type: e
     })
-  }, [G, R, q]);
-  return null == k ? null : (0, r.jsxs)("div", {
+  }, [G, w, q]);
+  return null == I ? null : (0, r.jsxs)("div", {
     className: a()(T.popularPicksSection, T.centeredSection),
     children: [(0, r.jsxs)("div", {
       className: T.blockHeader,
@@ -63,7 +63,7 @@ let P = e => {
         className: T.headerLeft,
         children: [(0, r.jsx)(s.X6q, {
           variant: "heading-lg/semibold",
-          children: I === x.AW.ORBS ? j.intl.string(j.t.dFgeub) : j.intl.string(j.t.NSv5KS)
+          children: k === x.AW.ORBS ? j.intl.string(j.t.dFgeub) : j.intl.string(j.t.NSv5KS)
         }), D && (0, r.jsx)(s.ua7, {
           text: j.intl.string(j.t["3taPdn"]),
           position: "top",
@@ -107,7 +107,7 @@ let P = e => {
         })]
       }), (0, r.jsxs)("div", {
         className: T.headerRight,
-        children: [B && (0, r.jsxs)(r.Fragment, {
+        children: [N && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(s.Text, {
             variant: "text-md/medium",
             children: j.intl.string(j.t.uaX709)
@@ -118,7 +118,7 @@ let P = e => {
             isSelected: e => e === A,
             serialize: e => e
           })]
-        }), I === x.AW.HOME && (B ? (0, r.jsx)(s.zxk, {
+        }), k === x.AW.HOME && (N ? (0, r.jsx)(s.zxk, {
           variant: "secondary",
           text: j.intl.string(j.t.X3tnc3),
           buttonRef: Y,
@@ -159,8 +159,8 @@ let P = e => {
           children: (0, r.jsx)(v.Z, {
             product: e,
             category: l,
-            user: k,
-            tab: I,
+            user: I,
+            tab: k,
             className: n
           })
         }, null == e ? void 0 : e.skuId)

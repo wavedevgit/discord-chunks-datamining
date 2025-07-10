@@ -30,13 +30,13 @@ var r = n(255367),
   T = n(501431),
   P = n(98535),
   L = n(426171),
-  I = n(963102),
-  k = n(508498),
-  N = n(849217),
-  B = n(215023),
+  k = n(963102),
+  I = n(508498),
+  B = n(849217),
+  N = n(215023),
   A = n(981631),
-  R = n(420212),
-  w = n(484920);
+  w = n(420212),
+  R = n(484920);
 let Z = e => {
     let {
       children: t,
@@ -46,7 +46,7 @@ let Z = e => {
     return l.useEffect(() => {
       if (!n || o) return;
       let e = e => {
-        e.key === R.mR.Escape && r()
+        e.key === w.mR.Escape && r()
       };
       return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
     }, [n, o, r]), t
@@ -54,12 +54,12 @@ let Z = e => {
   F = function(e) {
     let {
       isFullScreen: t = !0,
-      tab: n = B.AW.HOME
+      tab: n = N.AW.HOME
     } = e;
     (0, b.z)(h.f);
     let o = (0, p.Z)((0, i.Z)()),
       c = (0, s.e7)([O.default], () => O.default.getCurrentUser()),
-      R = l.useRef(null),
+      w = l.useRef(null),
       {
         closeIntroToOrbsClaimedCoachmark: F
       } = (0, _.Z)({
@@ -70,7 +70,7 @@ let Z = e => {
     }, [o, F]);
     let {
       onClose: D
-    } = (0, k.Db)(), {
+    } = (0, I.Db)(), {
       categories: M,
       refreshCategories: H
     } = (0, x.ZP)({
@@ -97,11 +97,11 @@ let Z = e => {
         selectedTab: K,
         transitionState: X,
         transitionToTab: Q
-      } = (0, j.B)(R, n, t),
+      } = (0, j.B)(w, n, t),
       {
         handleScroll: J
-      } = (0, f.z)(R, o, K);
-    (0, S.q3)(o, K, G, X, z), (0, S.EB)(K, c), (0, N.Z)(), l.useEffect(() => {
+      } = (0, f.z)(w, o, K);
+    (0, S.q3)(o, K, G, X, z), (0, S.EB)(K, c), (0, B.Z)(), l.useEffect(() => {
       t || (0, d.Y)(A.Z5c.COLLECTIBLES_SHOP)
     }, [t]);
     let $ = (0, s.e7)([C.Z], () => C.Z.getLayers().includes(A.S9g.COLLECTIBLES_SHOP)),
@@ -128,26 +128,26 @@ let Z = e => {
         newValue: {
           sessionId: o,
           pageCategory: G,
-          pageSize: B.kN
+          pageSize: N.kN
         },
         children: (0, r.jsx)(Z, {
           onClose: D,
           shouldAddEventListener: t && !$,
           children: (0, r.jsx)("div", {
-            className: w.shop,
+            className: R.shop,
             ref: t ? ee : et,
             tabIndex: -1,
             children: (0, r.jsx)(u.Den, {
-              className: w.shopScroll,
-              ref: R,
+              className: R.shopScroll,
+              ref: w,
               onScroll: J,
               children: (0, r.jsxs)("div", {
-                className: a()(w.shopViewWrapper, {
-                  [w.visible]: X === B.f7.VISIBLE,
-                  [w.in]: X === B.f7.IN,
-                  [w.out]: X === B.f7.OUT
+                className: a()(R.shopViewWrapper, {
+                  [R.visible]: X === N.f7.VISIBLE,
+                  [R.in]: X === N.f7.IN,
+                  [R.out]: X === N.f7.OUT
                 }),
-                children: [(0, r.jsx)(I.I, {
+                children: [(0, r.jsx)(k.I, {
                   isFullScreen: t,
                   isLayer: $,
                   onClose: D,
@@ -156,7 +156,7 @@ let Z = e => {
                 }), (0, r.jsx)(P.Z, {
                   tab: K,
                   isFullScreen: t,
-                  scrollerRef: R,
+                  scrollerRef: w,
                   refreshCategories: H,
                   transitionToTab: Q,
                   transitionState: X,
