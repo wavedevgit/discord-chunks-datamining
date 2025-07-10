@@ -19,12 +19,12 @@ n.d(t, {
   Ue: () => y
 });
 var a = "copy",
-  o = "convert";
+  s = "convert";
 
-function s(e, t, n) {
+function o(e, t, n) {
   if (t === a) return n;
-  if (t === o) return e(n);
-  if (t instanceof Array) return n.map(n => s(e, t[0], n));
+  if (t === s) return e(n);
+  if (t instanceof Array) return n.map(n => o(e, t[0], n));
   if (t instanceof Object) {
     let r = {};
     for (let [i, a] of Object.entries(t)) {
@@ -40,7 +40,7 @@ function s(e, t, n) {
         r[i] = null;
         continue
       }
-      r[i] = s(e, a.schema, n[i])
+      r[i] = o(e, a.schema, n[i])
     }
     return r
   }
@@ -69,7 +69,7 @@ function u(e) {
 }
 var d = {
     type: l(a),
-    id: l(o),
+    id: l(s),
     transports: u(a)
   },
   p = {
@@ -86,11 +86,11 @@ var d = {
     publicKey: l({
       rp: l(a),
       user: l({
-        id: l(o),
+        id: l(s),
         name: l(a),
         displayName: l(a)
       }),
-      challenge: l(o),
+      challenge: l(s),
       pubKeyCredParams: l(a),
       timeout: u(a),
       excludeCredentials: u([d]),
@@ -103,11 +103,11 @@ var d = {
   m = {
     type: l(a),
     id: l(a),
-    rawId: l(o),
+    rawId: l(s),
     authenticatorAttachment: u(a),
     response: l({
-      clientDataJSON: l(o),
-      attestationObject: l(o),
+      clientDataJSON: l(s),
+      attestationObject: l(s),
       transports: c(a, e => {
         var t;
         return (null == (t = e.getTransports) ? void 0 : t.call(e)) || []
@@ -118,7 +118,7 @@ var d = {
   _ = {
     mediation: u(a),
     publicKey: l({
-      challenge: l(o),
+      challenge: l(s),
       timeout: u(a),
       rpId: u(a),
       allowCredentials: u([d]),
@@ -130,21 +130,21 @@ var d = {
   g = {
     type: l(a),
     id: l(a),
-    rawId: l(o),
+    rawId: l(s),
     authenticatorAttachment: u(a),
     response: l({
-      clientDataJSON: l(o),
-      authenticatorData: l(o),
-      signature: l(o),
-      userHandle: l(o)
+      clientDataJSON: l(s),
+      authenticatorData: l(s),
+      signature: l(s),
+      userHandle: l(s)
     }),
     clientExtensionResults: c(f, e => e.getClientExtensionResults())
   };
 async function y(e) {
-  let t = await navigator.credentials.create(s(r, h, e));
-  return s(i, m, t)
+  let t = await navigator.credentials.create(o(r, h, e));
+  return o(i, m, t)
 }
 async function w(e) {
-  let t = await navigator.credentials.get(s(r, _, e));
-  return s(i, g, t)
+  let t = await navigator.credentials.get(o(r, _, e));
+  return o(i, g, t)
 }

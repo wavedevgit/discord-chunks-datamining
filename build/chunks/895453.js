@@ -7,7 +7,6 @@ t.exports = {
   smsInputContainer: "smsInputContainer__7c901",
   smsInput: "smsInput__7c901",
   error: "error__7c901",
-  footer: "footer__7c901",
   listItemContainer: "listItemContainer__7c901",
   listItemText: "listItemText__7c901",
   listItemArrow: "listItemArrow__7c901"

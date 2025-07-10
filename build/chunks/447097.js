@@ -1,65 +1,65 @@
 /** Chunk was on 52030 **/
 n.d(t, {
-  Z: () => c
+  Z: () => d
 }), n(704826), n(35282), n(388685), n(457542);
-var r = n(255367),
-  l = n(73800),
+var l = n(255367),
+  r = n(73800),
   i = n(658550),
   s = n(481060),
-  o = n(507453),
-  a = n(388032);
+  a = n(507453),
+  o = n(388032);
 
-function c(e) {
+function d(e) {
   let {
     mfaChallenge: t,
     finish: n,
-    setSlide: c,
-    onClose: u,
-    isSlideReady: d
-  } = e, [f, h] = l.useState(!1), [m, p] = l.useState(null), [g, b] = l.useState(""), y = l.useRef(null), j = a.intl.string(a.t["C/ZAw8"]), x = a.intl.string(a.t.fZSi1N), S = l.useCallback(e => {
-    b(e), p(null)
-  }, [b, p]);
-  return l.useEffect(() => {
-    if (d) {
+    setSlide: d,
+    onClose: c,
+    isSlideReady: u
+  } = e, [h, f] = r.useState(!1), [m, g] = r.useState(null), [x, p] = r.useState(""), j = r.useRef(null), b = o.intl.string(o.t["C/ZAw8"]), S = o.intl.string(o.t.fZSi1N), y = r.useCallback(e => {
+    p(e), g(null)
+  }, [p, g]);
+  return r.useEffect(() => {
+    if (u) {
       var e;
-      null == (e = y.current) || e.focus()
+      null == (e = j.current) || e.focus()
     }
-  }, [d]), (0, r.jsxs)("form", {
+  }, [u]), (0, l.jsxs)("form", {
     onSubmit: e => {
-      e.preventDefault(), h(!0), n({
+      e.preventDefault(), f(!0), n({
         mfaType: "backup",
-        data: g.replace(/-/g, "")
+        data: x.replace(/-/g, "")
       }).catch(e => {
         var t, n;
-        p(null != (n = null == (t = e.body) ? void 0 : t.message) ? n : e.message)
+        g(null != (n = null == (t = e.body) ? void 0 : t.message) ? n : e.message)
       }).finally(() => {
-        h(!1)
+        f(!1)
       })
     },
-    children: [(0, r.jsx)(o.Z.SlideHeader, {
-      onClose: u
-    }), (0, r.jsx)(o.Z.SlideContent, {
-      children: (0, r.jsxs)(s.xJW, {
-        title: j,
-        children: [(0, r.jsx)(s.oil, {
-          inputRef: y,
-          onChange: S,
-          placeholder: x,
+    children: [(0, l.jsx)(a.Z.SlideHeader, {
+      onClose: c
+    }), (0, l.jsx)(a.Z.SlideContent, {
+      children: (0, l.jsxs)(s.xJW, {
+        title: b,
+        children: [(0, l.jsx)(s.oil, {
+          inputRef: j,
+          onChange: y,
+          placeholder: S,
           maxLength: i.tL,
           minLength: i.th,
-          value: g,
+          value: x,
           spellCheck: "false",
-          disabled: f
-        }), (0, r.jsx)(o.Z.SlideError, {
+          disabled: h
+        }), (0, l.jsx)(a.Z.SlideError, {
           error: m
         })]
       })
-    }), (0, r.jsx)(o.Z.SlideFooter, {
+    }), (0, l.jsx)(a.Z.SlideFooter, {
       mfaChallenge: t,
-      setSlide: c,
+      setSlide: d,
       showConfirm: !0,
-      disabled: g.length < 8,
-      submitting: f
+      disabled: x.length < 8,
+      submitting: h
     })]
   })
 }

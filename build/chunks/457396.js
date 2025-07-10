@@ -83,8 +83,13 @@ let V = e => {
         enabled: ee
       } = v.pd.useExperiment({
         location: "NitroTabButton"
-      }),
-      et = (0, l.JA)("nitro"),
+      });
+    v.VL.useConfig({
+      location: "NitroTabButton"
+    }), v.CF.useConfig({
+      location: "NitroTabButton"
+    });
+    let et = (0, l.JA)("nitro"),
       en = (0, T.N)(),
       er = (0, N.Ng)(),
       ei = (0, I.W)(),

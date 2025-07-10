@@ -74,22 +74,24 @@ let m = i.forwardRef(function(e, t) {
       direction: a = "vertical",
       align: s = "stretch",
       justify: l = "start",
-      padding: u = 0,
-      style: f,
-      className: h,
-      children: m
-    } = e, b = p(e, ["as", "gap", "direction", "align", "justify", "padding", "style", "className", "children"]);
+      wrap: u = !1,
+      padding: f = 0,
+      style: h,
+      className: m,
+      children: b
+    } = e, y = p(e, ["as", "gap", "direction", "align", "justify", "wrap", "padding", "style", "className", "children"]);
     return (0, r.jsx)(n, _(d({
       ref: t,
       "data-align": s,
       "data-justify": l,
       "data-direction": a,
-      className: o()(c.stack, h),
-      style: d(_(d({}, f), {
+      "data-wrap": u,
+      className: o()(c.stack, m),
+      style: d(_(d({}, h), {
         gap: g(i)
-      }), E(u))
-    }, b), {
-      children: m
+      }), E(f))
+    }, y), {
+      children: b
     }))
   }),
   g = e => "var(--space-".concat(e, ")"),
