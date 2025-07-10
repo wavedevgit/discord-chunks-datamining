@@ -73,11 +73,7 @@ let _ = e => {
   }, B = () => {
     null == A.current || S || (P.current = A.current.currentTime, A.current.pause())
   }, M = () => (0, i.jsxs)("div", {
-    className: a()({
-      [x.largeTextBox]: I === h.y$.LARGE,
-      [x.mediumTextBox]: I === h.y$.MEDIUM,
-      [x.smallTextBox]: I === h.y$.SMALL
-    }),
+    className: a()(x.textBox, x["".concat(I)]),
     children: [(0, i.jsxs)("div", {
       children: [null != N && (0, i.jsx)("div", {
         className: x.badge,
@@ -89,11 +85,7 @@ let _ = e => {
       }), (0, i.jsx)(d.X6q, {
         variant: I === h.y$.SMALL ? "heading-xl/extrabold" : "heading-xxl/extrabold",
         color: "header-primary",
-        className: a()(x.header, {
-          [x.largeBoxHeader]: I === h.y$.LARGE,
-          [x.mediumBoxHeader]: I === h.y$.MEDIUM,
-          [x.smallBoxHeader]: I === h.y$.SMALL
-        }),
+        className: a()(x.header, x["".concat(I)]),
         children: n
       })]
     }), (0, i.jsx)(d.Text, {
@@ -111,21 +103,14 @@ let _ = e => {
       children: _
     })]
   }), U = () => (0, i.jsx)("div", {
-    className: a()({
-      [x.largeBoxArtContainer]: I === h.y$.LARGE,
-      [x.mediumBoxArtContainer]: I === h.y$.MEDIUM,
-      [x.smallBoxArtContainer]: I === h.y$.SMALL
-    }),
+    className: a()(x.boxArtContainer, x["".concat(I)]),
     children: (0, i.jsx)(m.Z, {
       playsInline: !0,
       preload: O ? "auto" : "none",
       muted: !0,
       poster: j,
       loop: !0,
-      className: a()({
-        [x.largeBoxVideo]: I === h.y$.LARGE,
-        [x.mediumBoxVideo]: I === h.y$.MEDIUM,
-        [x.smallBoxVideo]: I === h.y$.SMALL,
+      className: a()(x.boxVideo, x["".concat(I)], {
         [v]: null != v
       }),
       ref: A,
@@ -136,11 +121,7 @@ let _ = e => {
     }, E)
   });
   return (0, i.jsx)("div", {
-    className: a()(R, {
-      [x.largeBoxContainer]: I === h.y$.LARGE,
-      [x.mediumBoxContainer]: I === h.y$.MEDIUM,
-      [x.smallBoxContainer]: I === h.y$.SMALL
-    }),
+    className: a()(R, x.boxContainer, x["".concat(I)]),
     onMouseEnter: L,
     onFocus: L,
     onBlur: B,
