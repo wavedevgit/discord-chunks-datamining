@@ -63,18 +63,17 @@ function v(e) {
       setQueryPageSize: Z,
       setQueryPageOffset: F,
       queryPageSize: D
-    } = (0, g.S)();
-  l.useEffect(() => {
-    if (null != w.current) {
+    } = (0, g.S)(),
+    M = n || k || null == T,
+    H = !M && 0 === R.length;
+  return l.useEffect(() => {
+    if (null != w.current && !H) {
       let e = new ResizeObserver(() => {
         null != w.current && Z(Math.floor(5 * getComputedStyle(w.current).gridTemplateColumns.split(/\s+/).length))
       });
       return e.observe(w.current), () => e.disconnect()
     }
-  }, [Z]);
-  let M = n || k || null == T,
-    H = !M && 0 === R.length;
-  return (0, r.jsxs)(r.Fragment, {
+  }, [Z, H]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: a()(O.products, {
         [O.productsEmpty]: H
