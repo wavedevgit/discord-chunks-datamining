@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  h: () => a
+  q: () => a
 });
 var r = n(931084);
 let i = (0, n(818083).B)({
@@ -10,14 +10,21 @@ let i = (0, n(818083).B)({
   label: "Emoji Studio",
   defaultConfig: {
     enabled: !1,
-    isTester: !1
+    showExpressionPickerButton: !1
   },
   treatments: [{
     id: 1,
-    label: "Enabled - Treatment 1",
+    label: "Enabled - New Modal",
     config: {
       enabled: !0,
-      isTester: !1
+      showExpressionPickerButton: !1
+    }
+  }, {
+    id: 2,
+    label: "Enabled - New Modal with Expression Picker Button",
+    config: {
+      enabled: !0,
+      showExpressionPickerButton: !0
     }
   }]
 });
@@ -25,14 +32,19 @@ let i = (0, n(818083).B)({
 function a(e) {
   let {
     location: t,
-    autoTrackExposure: n
-  } = e, a = (0, r.$u)(t), {
-    enabled: o
+    autoTrackExposure: n,
+    disable: a = !1
+  } = e, o = (0, r.$u)(t), {
+    enabled: s,
+    showExpressionPickerButton: l
   } = i.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: n,
-    disable: a
+    disable: o || a
   });
-  return o
+  return {
+    enabled: s,
+    showExpressionPickerButton: l
+  }
 }
