@@ -492,7 +492,7 @@ class y extends o.Z {
         let i = _.z4.parseInboundStats(r, e);
         this.statCollectionPausedUsers.has(n) || (t.appendAndIncrementStats(i), t.appendTransportStats(l)), i.packets > 0 && this.emit("fps-update", n, i.framesCodec, i.timestamp), t.decoderCodec !== _.u7.UNKNOWN && f.add(t.decoderCodec), null == t.timeToFirstFrame && r.framesDecoded > 0 && (t.timeToFirstFrame = e - t.startTime)
       }
-    }), 0 !== d.size && 0 !== f.size && ((0, a.z)(d, f) ? this.symmetricCodecUpdates++ : this.asymmetricCodecUpdates++)
+    }), 0 !== d.size && 0 !== f.size && ((0, a.O)(d, f) ? this.symmetricCodecUpdates++ : this.asymmetricCodecUpdates++)
   }
   updateSystemResourceStats() {
     for (let e in this.outboundStats) this.outboundStats[e].addSystemResources();

@@ -5,9 +5,9 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  l = n(442837),
-  s = n(852860),
-  a = n(823379),
+  l = n(843991),
+  s = n(442837),
+  a = n(852860),
   o = n(434404),
   c = n(999382),
   d = n(203377);
@@ -18,7 +18,7 @@ function u() {
     originalGuild: t,
     submitting: n,
     errors: u
-  } = (0, l.cj)([c.Z], () => c.Z.getProps()), m = i.useMemo(() => (0, d.LG)(u), [u]), g = i.useCallback(async () => {
+  } = (0, s.cj)([c.Z], () => c.Z.getProps()), m = i.useMemo(() => (0, d.LG)(u), [u]), g = i.useCallback(async () => {
     if (null == e) return Promise.resolve();
     let n = {
       systemChannelFlags: e.systemChannelFlags,
@@ -27,7 +27,7 @@ function u() {
       afkTimeout: e.afkTimeout,
       defaultMessageNotifications: e.defaultMessageNotifications
     };
-    if ((0, a.OL)(new Set(e.features), new Set(t.features)) || (n.features = e.features), c.Z.hasChanges() && await o.Z.saveGuild(e.id, n), c.Z.widgetHasChanges()) {
+    if ((0, l.O)(new Set(e.features), new Set(t.features)) || (n.features = e.features), c.Z.hasChanges() && await o.Z.saveGuild(e.id, n), c.Z.widgetHasChanges()) {
       let {
         enabled: t,
         channelId: n
@@ -38,7 +38,7 @@ function u() {
   }, [e, t]), p = i.useCallback(() => {
     null != e && o.Z.init(e.id)
   }, [e]);
-  return (0, r.jsx)(s.Z, {
+  return (0, r.jsx)(a.Z, {
     submitting: n,
     errorMessage: m,
     onSave: g,
