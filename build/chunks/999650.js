@@ -297,10 +297,27 @@ function ea(e, t, n) {
           channel: n
         } = t;
         return n.id === e
-      }); - 1 !== n && a.splice(n, 1), a.unshift({
-        text: t.name,
-        channel: t
-      })
+      });
+      if (-1 !== n) {
+        let e = a[n];
+        a.splice(n, 1), a.unshift(e)
+      } else if (t.isGroupDM()) {
+        let e = (0, u.F6)(t, y.default, h.Z);
+        a.unshift({
+          text: e,
+          channel: t
+        })
+      } else if (t.isDM()) {
+        let e = t.getRecipientId(),
+          n = y.default.getUser(e);
+        if (null != n) {
+          let e = T.ZP.getUserTag(n);
+          a.unshift({
+            text: e,
+            channel: t
+          })
+        }
+      }
     }
   }
   return a.slice(0, n)
