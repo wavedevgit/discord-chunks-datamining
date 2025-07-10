@@ -204,7 +204,7 @@ let w = s.memo(function(e) {
   } = e;
   return (0, r.jsx)(c.Text, {
     variant: "text-md/semibold",
-    color: "text-default",
+    color: "header-primary",
     tag: "span",
     className: O.header,
     children: n

@@ -173,8 +173,8 @@ function S(e) {
       }
     }
   }, [f, y]);
-  let U = "Active";
-  return D && (U = "Acked"), L && (U = "Expired"), (0, n.jsxs)("div", {
+  let z = "Active";
+  return D && (z = "Acked"), L && (z = "Expired"), (0, n.jsxs)("div", {
     className: i()(_.card, M ? _.gradientWrapperTier0 : _.gradientWrapperTier2),
     children: [(0, n.jsx)("div", {
       className: i()(_.row, _.nameRow),
@@ -266,8 +266,8 @@ function S(e) {
         }),
         children: (0, n.jsx)(c.Text, {
           variant: "eyebrow",
-          color: "Acked" === U ? void 0 : "always-white",
-          children: U
+          color: "Acked" === z ? void 0 : "always-white",
+          children: z
         })
       }), null != I && (0, n.jsx)("div", {
         className: i()(_.badge, _.redeemed),
@@ -474,9 +474,9 @@ function w() {
   r.useEffect(() => {
     F()
   }, [F]);
-  let U = e => e.filter(e => e.sourceType === v.kNB.REVERSE_TRIAL && null != e.endsAt && e.endsAt > new Date);
+  let z = e => e.filter(e => e.sourceType === v.kNB.REVERSE_TRIAL && null != e.endsAt && e.endsAt > new Date);
   r.useEffect(() => {
-    L(U(M))
+    L(z(M))
   }, [M]), r.useEffect(() => {
     (0 === e.length || 0 === a.length || R) && y().then(e => {
       let a = Object.keys(e.trial).map(t => ({
@@ -494,7 +494,7 @@ function w() {
       O(e.trial.sort((e, t) => e.id.localeCompare(t.id))), I(e.discount.sort((e, t) => e.id.localeCompare(t.id)))
     }))
   }, [R]);
-  let z = async () => {
+  let U = async () => {
     null != i && (await C(i, "trial"), k(!0))
   }, G = async () => {
     null != x && (await C(x, "discount"), k(!0))
@@ -550,7 +550,7 @@ function w() {
           }), (0, n.jsx)(c.zxk, {
             variant: "primary",
             text: "Create",
-            onClick: z
+            onClick: U
           })]
         })]
       }), (0, n.jsxs)("section", {

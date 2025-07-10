@@ -23,8 +23,8 @@ class u extends a.fE {
     return this.get(e)
   }
 }
-s(u, "displayName", "NoteStore"), l.info("libdiscore enabled: ".concat(o.I.cachedIsEnabled()));
-let d = new u(o.I.cachedIsEnabled() ? void 0 : {
+s(u, "displayName", "NoteStore"), l.info("libdiscore enabled: ".concat(o.IZ.cachedIsEnabled()));
+let d = new u({
   CONNECTION_OPEN: (e, t) => t.reset(),
   OVERLAY_INITIALIZE: (e, t) => t.reset(),
   USER_NOTE_UPDATE: (e, t) => {
@@ -39,4 +39,4 @@ let d = new u(o.I.cachedIsEnabled() ? void 0 : {
       note: null
     }))
   }
-})
+}, o.IZ.cachedIsEnabled())

@@ -264,7 +264,7 @@ let B = r.memo(function(e) {
     })
   });
 
-function U(e) {
+function z(e) {
   let t = L(Object.values((0, o.Wu)([_.Z], () => _.Z.getWidgetsForLayout(P.$S))), e);
   return [t, () => {
     if (null != t)(0, u.E9)(t.id);
@@ -277,7 +277,7 @@ function U(e) {
   }]
 }
 
-function z(e) {
+function U(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
   return t ? "".concat(e.toFixed(2), "ms") : new Date(e).toLocaleTimeString()
 }
@@ -363,7 +363,7 @@ function V() {
                   children: [(0, n.jsx)(G, {
                     pid: a,
                     tag: "span"
-                  }), " - ", null != (r = null == a ? void 0 : a.toString()) ? r : "null", " @ ", z(t, !0)]
+                  }), " - ", null != (r = null == a ? void 0 : a.toString()) ? r : "null", " @ ", U(t, !0)]
                 })
               }))
             }
@@ -435,7 +435,7 @@ let H = r.memo(function(e) {
               return (0, n.jsx)(d.Text, {
                 variant: "text-xs/normal",
                 color: "text-default",
-                children: "".concat(a, ":").concat((0, v.sS)(a), " @ ").concat(z(r))
+                children: "".concat(a, ":").concat((0, v.sS)(a), " @ ").concat(U(r))
               }, "".concat(e.pid, "-").concat(a, "-").concat(r))
             })]
           }, e.pid))]
@@ -489,7 +489,7 @@ let H = r.memo(function(e) {
     })
   }),
   X = r.memo(function() {
-    let [e, t] = U(S.Odu.CLICK_ZONE_DEBUG), [a, r] = U(S.Odu.PERFORMANCE_DEBUG), l = (0, o.e7)([j.ZP], () => j.ZP.hasRenderDebugMode(b.G.ClickZones)), i = (0, o.e7)([j.ZP], () => j.ZP.hasRenderDebugMode(b.G.WidgetAreas)), s = (0, o.e7)([j.ZP], () => j.ZP.hasRenderDebugMode(b.G.DisabledGPUBoost)), c = (0, o.e7)([j.ZP], () => j.ZP.hasRenderDebugMode(b.G.ForceGPUBoost)), u = e => {
+    let [e, t] = z(S.Odu.CLICK_ZONE_DEBUG), [a, r] = z(S.Odu.PERFORMANCE_DEBUG), l = (0, o.e7)([j.ZP], () => j.ZP.hasRenderDebugMode(b.G.ClickZones)), i = (0, o.e7)([j.ZP], () => j.ZP.hasRenderDebugMode(b.G.WidgetAreas)), s = (0, o.e7)([j.ZP], () => j.ZP.hasRenderDebugMode(b.G.DisabledGPUBoost)), c = (0, o.e7)([j.ZP], () => j.ZP.hasRenderDebugMode(b.G.ForceGPUBoost)), u = e => {
       m.Z.setRenderDebugMode(!j.ZP.hasRenderDebugMode(e), e)
     }, x = () => {
       u(b.G.ClickZones)

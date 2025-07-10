@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => p
 }), n(388685);
 var r = n(845856),
-  i = n(601964),
-  a = n(411198),
-  o = n(709054),
-  s = n(314897),
-  l = n(981631),
-  c = n(647086);
+  i = n(894276),
+  a = n(601964),
+  o = n(411198),
+  s = n(709054),
+  l = n(314897),
+  c = n(981631),
+  u = n(647086);
 
-function u(e, t, n) {
+function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -20,37 +21,37 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 
-function d(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      u(e, t, n[t])
+      d(e, t, n[t])
     })
   }
   return e
 }
-class f extends r.fE {
+class _ extends r.fE {
   getGuildCount() {
     return this.length()
   }
   constructor(...e) {
-    super(...e), u(this, "getGuild", e => {
-      if (null != e) return e === l.I_8 ? c.g : this.get(e)
-    }), u(this, "getGuilds", this.memoized(e => d({}, e))), u(this, "getGuildsArray", this.memoized(e => Object.values(e))), u(this, "getGuildIds", this.memoized(e => o.default.keys(e)))
+    super(...e), d(this, "getGuild", e => {
+      if (null != e) return e === c.I_8 ? u.g : this.get(e)
+    }), d(this, "getGuilds", this.memoized(e => f({}, e))), d(this, "getGuildsArray", this.memoized(e => Object.values(e))), d(this, "getGuildIds", this.memoized(e => s.default.keys(e)))
   }
 }
-u(f, "displayName", "GuildStore");
-let _ = new f({
+d(_, "displayName", "GuildStore");
+let p = new _({
   BACKGROUND_SYNC: (e, t) => {
     let {
       guilds: n
     } = e;
     for (let e of n) {
       let n = t.get(e.id);
-      null != n && "unavailable" !== e.data_mode && t.set(e.id, a.sp(e, n))
+      null != n && "unavailable" !== e.data_mode && t.set(e.id, o.sp(e, n))
     }
   },
   CONNECTION_OPEN: (e, t) => {
@@ -58,7 +59,7 @@ let _ = new f({
       guilds: n
     } = e;
     t.reset((e, t) => {
-      for (let r of n) e[r.id] = a.wD(r, t[r.id])
+      for (let r of n) e[r.id] = o.wD(r, t[r.id])
     })
   },
   OVERLAY_INITIALIZE: (e, t) => {
@@ -71,7 +72,7 @@ let _ = new f({
             properties: t,
             additionalFields: r
           }
-          of n) e[t.id] = a.Ee(t, {
+          of n) e[t.id] = o.Ee(t, {
           joinedAt: null != r.joinedAt ? new Date(r.joinedAt) : null,
           premiumSubscriberCount: r.premiumSubscriberCount
         })
@@ -82,7 +83,7 @@ let _ = new f({
       guilds: n
     } = e;
     t.reset(e => {
-      for (let t of n) e[t.id] = a.cL(t)
+      for (let t of n) e[t.id] = o.cL(t)
     })
   },
   CACHE_LOADED_LAZY: (e, t) => {
@@ -90,20 +91,20 @@ let _ = new f({
       guilds: n
     } = e;
     0 !== n.length && t.reset(e => {
-      for (let t of n) e[t.id] = a.cL(t)
+      for (let t of n) e[t.id] = o.cL(t)
     })
   },
   GUILD_CREATE: (e, t) => {
     let {
       guild: n
     } = e;
-    t.set(n.id, e => a.wD(n, e))
+    t.set(n.id, e => o.wD(n, e))
   },
   GUILD_UPDATE: (e, t) => {
     let {
       guild: n
     } = e;
-    t.set(n.id, e => a.R(n, e))
+    t.set(n.id, e => o.R(n, e))
   },
   GUILD_DELETE: (e, t) => {
     let {
@@ -115,10 +116,10 @@ let _ = new f({
     let {
       guildId: n,
       joinedAt: r,
-      user: a
-    } = e, o = s.default.getId(), l = t.get(n);
-    if (o !== a.id || null == l) return;
+      user: i
+    } = e, o = l.default.getId(), s = t.get(n);
+    if (o !== i.id || null == s) return;
     let c = "string" == typeof r ? new Date(r) : r;
-    c !== l.joinedAt && null != c && t.set(n, (0, i.kH)(l, c))
+    c !== s.joinedAt && null != c && t.set(n, (0, a.kH)(s, c))
   }
-})
+}, i.j_.cachedIsEnabled())
