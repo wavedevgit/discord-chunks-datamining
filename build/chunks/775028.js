@@ -140,7 +140,7 @@ let L = r.memo(function() {
       tooltipDirection: Z = "right"
     } = e, {
       isSubscriptionGated: D
-    } = (0, f.Z)(n.id), H = (0, N.Mf)(i.id, n.id, r.id), U = (0, N.t4)(i.id, n.id, r.id), G = (0, N.EH)(i.id, r.id), W = (0, o.e7)([y.Z], () => y.Z.getActiveThreadCount(i.id, n.id)), F = (0, o.e7)([C.Z], () => C.Z.shouldIndicateNewChannel(i.id, n.id)), z = e => {
+    } = (0, f.Z)(n.id), H = (0, N.Mf)(i.id, n.id, r.id), U = (0, N.t4)(i.id, n.id, r.id), G = (0, N.EH)(i.id, r.id), W = (0, o.e7)([y.Z], () => y.Z.getActiveThreadCount(i.id, n.id)), z = (0, o.e7)([C.Z], () => C.Z.shouldIndicateNewChannel(i.id, n.id)), F = e => {
       if (!U) return e.stopPropagation(), I(i.id, n.id, r.id), !0
     }, q = e => {
       n.isGuildVocal() ? (0, m.jW)(e, async () => {
@@ -204,7 +204,7 @@ let L = r.memo(function() {
             [S.disabled]: U
           })
         }, e), {
-          onClick: z,
+          onClick: F,
           onContextMenu: q,
           children: [(0, l.jsxs)("div", {
             className: S.channelInfo,
@@ -225,7 +225,7 @@ let L = r.memo(function() {
               }), D ? (0, l.jsx)(g.Z, {
                 color: Y,
                 className: S.premiumIcon
-              }) : null, F ? (0, l.jsx)(u.IGR, {
+              }) : null, z ? (0, l.jsx)(u.IGR, {
                 text: E.intl.string(E.t.y2b7CA),
                 color: c.Z.unsafe_rawColors.BRAND_260.css,
                 className: S.titleBadge

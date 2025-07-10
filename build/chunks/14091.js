@@ -29,8 +29,8 @@ var r = n(255367),
   I = n(861262),
   P = n(251285),
   Z = n(406326),
-  N = n(994463),
-  T = n(611004),
+  T = n(994463),
+  N = n(611004),
   A = n(619753),
   w = n(902733),
   R = n(981631),
@@ -232,7 +232,7 @@ class H extends i.PureComponent {
     }), L(this, "renderIndexing", () => {
       let e = this.props.searchType === R.aib.GUILD ? D.intl.string(D.t.AXPbZm) : D.intl.string(D.t.Q0JJjo);
       return (0, r.jsxs)(F, {
-        children: [(0, r.jsx)(N.Z, {}), (0, r.jsx)("div", {
+        children: [(0, r.jsx)(T.Z, {}), (0, r.jsx)("div", {
           className: (k.emptyResultsText, k.stillIndexing),
           children: e
         })]
@@ -400,7 +400,7 @@ function V(e) {
     O = i.useCallback(e => {
       v(e);
       let t = U(o);
-      T.Z.fetchCrossDMMessages({
+      N.Z.fetchCrossDMMessages({
         searchContext: a,
         selectedPageIndex: 0,
         queryString: null != t ? t : "",
@@ -409,7 +409,7 @@ function V(e) {
     }, [a, o, v]),
     j = i.useCallback(e => {
       var t;
-      d(e), T.Z.fetchCrossDMMessages({
+      d(e), N.Z.fetchCrossDMMessages({
         searchContext: a,
         queryString: null != (t = U(o)) ? t : "",
         selectedPageIndex: e,

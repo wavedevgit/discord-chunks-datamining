@@ -1,11 +1,12 @@
-/** Chunk was on 61668 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  H1: () => a,
-  s8: () => o
+  H1: () => o,
+  s8: () => s
 });
 var r = n(818083),
   i = n(128064);
-let l = (0, r.B)({
+let a = (0, r.B)({
   kind: "user",
   id: "2025-02_tigger_pawtect",
   label: "Tigger pawtect",
@@ -21,21 +22,21 @@ let l = (0, r.B)({
   }]
 });
 
-function a(e) {
+function o(e) {
   let {
     location: t
   } = e;
-  return l.getCurrentConfig({
+  return a.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: !0
   }).enabled || (0, i.c_)(t)
 }
 
-function o(e) {
+function s(e) {
   let {
     location: t
-  } = e, n = l.getCurrentConfig({
+  } = e, n = a.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: !0

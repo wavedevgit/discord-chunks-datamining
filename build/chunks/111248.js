@@ -43,7 +43,7 @@ function _(e) {
       let t = 0 === S ? e : (e - 8 * (S - 1)) / S;
       c.d7(t, f.cL.CAMERA_PREVIEW)
     }, [S]),
-    N = i.useCallback((e, t) => {
+    T = i.useCallback((e, t) => {
       v(t)
     }, [v]);
   return (0, r.jsx)("div", {
@@ -53,7 +53,7 @@ function _(e) {
       id: 0,
       width: I,
       ref: O,
-      onMove: N,
+      onMove: T,
       onResize: Z,
       maxX: t,
       maxY: l,

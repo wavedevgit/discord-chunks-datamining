@@ -48,9 +48,9 @@ function x(e) {
     commandOrigin: v
   }), [I, P] = l.useState(!1), Z = l.useCallback(() => {
     P(!0)
-  }, [P]), N = l.useCallback(() => {
+  }, [P]), T = l.useCallback(() => {
     P(!1)
-  }, [P]), T = l.useMemo(() => (0, i.jsx)("div", {
+  }, [P]), N = l.useMemo(() => (0, i.jsx)("div", {
     className: b.overlayBadge,
     children: (0, i.jsx)("div", {
       className: b.badgeContainer,
@@ -95,9 +95,9 @@ function x(e) {
     look: c.zx.Looks.BLANK,
     size: c.zx.Sizes.NONE,
     onFocus: Z,
-    onBlur: N,
+    onBlur: T,
     onMouseEnter: Z,
-    onMouseLeave: N,
+    onMouseLeave: T,
     innerClassName: b.activityItemButtonInnerClass,
     children: (0, i.jsx)(u.AMe, {
       config: y,
@@ -126,7 +126,7 @@ function x(e) {
               applicationName: r.application.name,
               imageClassName: b.activitySuggestionImage,
               imageNotFoundClassName: b.brokenImageIconWrapper
-            }), T, A]
+            }), N, A]
           })
         })
       }

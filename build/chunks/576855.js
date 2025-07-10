@@ -1,47 +1,47 @@
-/** Chunk was on 68024 **/
-n.d(t, {
-  Z: () => O
+/** Chunk was on 32670 **/
+t.d(n, {
+  Z: () => _
 });
-var r, i, l = n(255367),
-  o = n(73800),
-  a = n(120356),
-  c = n.n(a),
-  s = n(481060),
-  u = n(388032),
-  d = n(108921);
-let _ = {
-  BLOCK: d.block,
-  INLINE: d.inline
+var i, l, s = t(255367),
+  r = t(73800),
+  c = t(120356),
+  a = t.n(c),
+  o = t(481060),
+  d = t(388032),
+  p = t(108921);
+let u = {
+  BLOCK: p.block,
+  INLINE: p.inline
 };
-class E extends(i = o.PureComponent) {
+class h extends(l = r.PureComponent) {
   render() {
     let {
       children: e,
-      className: t,
-      textClassName: n,
-      type: r = _.BLOCK,
-      style: i
+      className: n,
+      textClassName: t,
+      type: i = u.BLOCK,
+      style: l
     } = this.props;
-    return (0, l.jsxs)("div", {
-      className: c()(t, r),
-      style: i,
-      children: [(0, l.jsxs)(s.Text, {
+    return (0, s.jsxs)("div", {
+      className: a()(n, i),
+      style: l,
+      children: [(0, s.jsxs)(o.Text, {
         variant: "text-sm/bold",
         tag: "div",
         color: "text-feedback-positive",
-        className: d.pro,
-        children: [u.intl.string(u.t["8tvIiI"]), ":"]
-      }), (0, l.jsx)(s.Text, {
-        className: c()(d.tip, n),
+        className: p.pro,
+        children: [d.intl.string(d.t["8tvIiI"]), ":"]
+      }), (0, s.jsx)(o.Text, {
+        className: a()(p.tip, t),
         variant: "text-sm/normal",
         children: e
       })]
     })
   }
-}(r = "Types") in E ? Object.defineProperty(E, r, {
-  value: _,
+}(i = "Types") in h ? Object.defineProperty(h, i, {
+  value: u,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : E[r] = _;
-let O = E
+}) : h[i] = u;
+let _ = h

@@ -29,11 +29,11 @@ function y(e) {
     selectedDestinations: S,
     isSending: O,
     onSend: A
-  } = e, v = (0, f.Z)(), C = (0, _.nm)(S), x = (0, _.y)(S), P = (0, g.Ad)(), T = (0, i.e7)([h.Z], () => h.Z.getDraft(t.channel_id, h.d.ForwardContextMessage)), [N, L] = r.useState(() => (0, u.eK)(T)), {
+  } = e, v = (0, f.Z)(), C = (0, _.nm)(S), x = (0, _.y)(S), P = (0, g.Ad)(), T = (0, i.e7)([h.Z], () => h.Z.getDraft(t.channel_id, h.d.ForwardContextMessage)), [L, N] = r.useState(() => (0, u.eK)(T)), {
     textValue: j,
     richValue: Z
-  } = N, [w, D] = r.useState(!1), R = r.useCallback(() => D(!0), []), F = r.useCallback(() => D(!1), []), k = r.useCallback((e, n, l) => {
-    L({
+  } = L, [w, D] = r.useState(!1), R = r.useCallback(() => D(!0), []), k = r.useCallback(() => D(!1), []), F = r.useCallback((e, n, l) => {
+    N({
       textValue: n,
       richValue: l
     }), o.Z.saveDraft(t.channel_id, n, h.d.ForwardContextMessage), P(t.channel_id, t.id)
@@ -58,13 +58,13 @@ function y(e) {
         className: b.footerButtons,
         children: [(0, l.jsx)(d.Z, {
           innerClassName: b.messageInput,
-          onChange: k,
+          onChange: F,
           placeholder: E.intl.string(E.t.ZroO3N),
           channel: C,
           textValue: j,
           richValue: Z,
           type: c.Ie.FORWARD_MESSAGE_INPUT,
-          onBlur: F,
+          onBlur: k,
           onFocus: R,
           focused: w,
           onSubmit: M,

@@ -31,9 +31,9 @@ let g = e => {
     seconds: I
   } = (0, o.Z)(null != E ? E : new Date), P = I > 0, {
     parentAnalyticsLocation: Z
-  } = (0, s.ZP)(), N = i.useCallback(e => {
+  } = (0, s.ZP)(), T = i.useCallback(e => {
     "focus" !== e.type && (O || P || C())
-  }, [O, P, C]), T = i.useCallback(() => {
+  }, [O, P, C]), N = i.useCallback(() => {
     O || x()
   }, [x, O]), A = i.useCallback((e, t) => {
     v(), j(!O), g === f.D.EMOJI ? null == b || b(void 0) : null == b || b(f.D.EMOJI), (!_ || O) && (null == t || t(e))
@@ -58,7 +58,7 @@ let g = e => {
         channel: t,
         closePopout: n,
         onMouseEnter: C,
-        onMouseLeave: T,
+        onMouseLeave: N,
         onFocus: () => j(!0)
       })
     },
@@ -79,8 +79,8 @@ let g = e => {
         onClick: e => {
           (0, c.v)(Z, c.d.EMOJI), A(e, t)
         },
-        onMouseEnter: N,
-        onMouseLeave: T,
+        onMouseEnter: T,
+        onMouseLeave: N,
         isActive: O,
         ref: R
       })

@@ -34,8 +34,8 @@ let _ = (0, l.Z)(e => {
     showParticipants: I = !0,
     width: P,
     height: Z,
-    idle: N,
-    mode: T,
+    idle: T,
+    mode: N,
     popoutWindow: A,
     awaitingRemoteSessionInfo: w,
     callContainerDimensions: R
@@ -50,7 +50,7 @@ let _ = (0, l.Z)(e => {
     channel: O,
     participants: t,
     hasConnectPermission: j
-  }) : T === m.WtW.VOICE ? (0, r.jsx)(o.Z, {
+  }) : N === m.WtW.VOICE ? (0, r.jsx)(o.Z, {
     guildId: O.guild_id,
     width: P,
     className: b.voiceCallWrapper,
@@ -81,7 +81,7 @@ let _ = (0, l.Z)(e => {
     participants: t,
     popoutWindow: A,
     className: E,
-    idle: N,
+    idle: T,
     height: Z,
     width: P,
     layout: y,

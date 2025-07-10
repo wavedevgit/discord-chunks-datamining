@@ -64,8 +64,8 @@ function P(e) {
       onSelectParticipant: l,
       onContextMenuParticipant: P,
       onFullscreenParticipant: Z,
-      participants: N,
-      filteredParticipants: T,
+      participants: T,
+      filteredParticipants: N,
       popoutWindow: A,
       inCall: w,
       channel: R,
@@ -160,11 +160,11 @@ function P(e) {
     ex = i.useCallback(e => {
       W(e), K(!1)
     }, []),
-    ev = en ? [] : (0, _.n3)(N, M, V),
+    ev = en ? [] : (0, _.n3)(T, M, V),
     {
       visibleParticipants: eO,
       participantTileWidth: ej
-    } = (0, y.ZB)(L, T);
+    } = (0, y.ZB)(L, N);
   return (0, r.jsxs)("div", {
     className: a()(O.root, v.flexCenter, k),
     children: [(0, r.jsxs)("div", {

@@ -63,8 +63,8 @@ function x(e) {
     initialSelectedDestinations: x,
     forwardOptions: P,
     onClose: T,
-    onRequestSent: N
-  } = e, L = function(e, t) {
+    onRequestSent: L
+  } = e, N = function(e, t) {
     if (null == e) return {};
     var n, l, r = function(e, t) {
       if (null == e) return {};
@@ -82,10 +82,10 @@ function x(e) {
   let {
     channel_id: j,
     id: Z
-  } = t, w = r.useMemo(() => (0, u.dL)(j), [j]), [D, R] = r.useState(!1), F = (0, a.e7)([h.Z], () => {
+  } = t, w = r.useMemo(() => (0, u.dL)(j), [j]), [D, R] = r.useState(!1), k = (0, a.e7)([h.Z], () => {
     var e;
     return null != (e = h.Z.getMessage(t.channel_id, t.id)) ? e : t
-  }, [t]), k = (0, a.e7)([f.Z], () => f.Z.getChannel(j), [j]), G = (0, m.ZF)(), M = (0, m.mh)(), U = r.useRef(0), H = r.useRef(0), [W, Q] = r.useState(x), z = W.length, V = z >= I.G, [B, q] = r.useState(""), {
+  }, [t]), F = (0, a.e7)([f.Z], () => f.Z.getChannel(j), [j]), G = (0, m.ZF)(), M = (0, m.mh)(), U = r.useRef(0), H = r.useRef(0), [W, Q] = r.useState(x), z = W.length, V = z >= I.G, [B, q] = r.useState(""), {
     results: K,
     updateSearchText: X
   } = (0, d.s)({
@@ -153,7 +153,7 @@ function x(e) {
             }))
           })
         })) return void R(!1);
-      d && (0, y.mc)(), null == N || N(), a && (await o.Z.fetchMessages({
+      d && (0, y.mc)(), null == L || L(), a && (await o.Z.fetchMessages({
         channelId: b[0]
       }), (0, c.Kh)(b[0], {
         openTextInVoiceIfVoiceChannel: !0
@@ -198,7 +198,7 @@ function x(e) {
         failedDestinations: A,
         forwardOptions: P
       })
-    }, [j, P, Z, t, N, en]),
+    }, [j, P, Z, t, L, en]),
     ei = r.useCallback(e => {
       er(W, {
         withMessage: e,
@@ -206,14 +206,14 @@ function x(e) {
         closeAfterSend: !0
       })
     }, [er, W]);
-  if (null == F || null == k) return null;
+  if (null == k || null == F) return null;
   let ea = K.length > 0 ? (0, l.jsx)(E.F, {
       paddingBottom: 16,
       paddingTop: 16,
       rowData: K,
       rowMode: E.G.TOGGLE,
-      message: F,
-      originChannel: k,
+      message: k,
+      originChannel: F,
       handleToggleDestination: el,
       selectedDestinations: W,
       disableSelection: V
@@ -235,7 +235,7 @@ function x(e) {
   return (0, l.jsxs)(s.Y0X, C(v({
     className: O.modal,
     "aria-label": S.intl.string(S.t["+SkRRk"])
-  }, L), {
+  }, N), {
     parentComponent: "ForwardModal",
     children: [(0, l.jsxs)(s.xBx, {
       className: O.header,
@@ -275,7 +275,7 @@ function x(e) {
         autoFocus: !0
       })]
     }), ea, (0, l.jsx)(b.n, {
-      message: F,
+      message: k,
       forwardOptions: P,
       sendLabel: es,
       canSend: z > 0,

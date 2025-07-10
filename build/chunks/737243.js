@@ -30,7 +30,7 @@ let h = i.memo(function(e) {
   } = (0, l.cj)([c.Z], () => ({
     isInteractionUserBlocked: c.Z.isBlockedForMessage(h),
     isInteractionUserIgnored: c.Z.isIgnoredForMessage(h)
-  }), [h]), j = (0, l.e7)([s.Z], () => s.Z.getMessageByReference(null == h ? void 0 : h.messageReference)), E = (0, d.wq)(null == (t = h.interaction) ? void 0 : t.user.id, f.id), S = (0, d.Nk)(h.interaction, f, g, x), I = (0, d.NU)(b, x), P = (0, o.t0)(h), Z = (null == P ? void 0 : P.type) === a.B8.APPLICATION_COMMAND ? null == (n = P.target_user) ? void 0 : n.id : void 0, N = (0, d.wq)(Z, f.id), T = (0, d.JC)(Z, f, y, x), A = (0, d.rY)(C, x), w = (0, d.Xn)(_, x), R = i.useCallback(() => {
+  }), [h]), j = (0, l.e7)([s.Z], () => s.Z.getMessageByReference(null == h ? void 0 : h.messageReference)), E = (0, d.wq)(null == (t = h.interaction) ? void 0 : t.user.id, f.id), S = (0, d.Nk)(h.interaction, f, g, x), I = (0, d.NU)(b, x), P = (0, o.t0)(h), Z = (null == P ? void 0 : P.type) === a.B8.APPLICATION_COMMAND ? null == (n = P.target_user) ? void 0 : n.id : void 0, T = (0, d.wq)(Z, f.id), N = (0, d.JC)(Z, f, y, x), A = (0, d.rY)(C, x), w = (0, d.Xn)(_, x), R = i.useCallback(() => {
     x({
       interactionUsernameProfile: !1,
       interactionAvatarProfile: !1,
@@ -66,8 +66,8 @@ let h = i.memo(function(e) {
     onClickCommand: w,
     onUserContextMenu: E,
     onClickTargetAvatar: A,
-    onClickTargetUsername: T,
-    onTargetUserContextMenu: N,
+    onClickTargetUsername: N,
+    onTargetUserContextMenu: T,
     onPopoutRequestClose: R,
     renderTargetMessage: M
   })

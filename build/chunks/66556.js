@@ -1,44 +1,45 @@
 /** Chunk was on 19577 **/
 n.d(t, {
-  Z: () => f
+  Z: () => m
 }), n(388685);
 var r = n(255367),
   i = n(73800),
   l = n(442837),
   a = n(481060),
-  o = n(665149),
-  s = n(731290),
-  c = n(594174),
-  u = n(91159),
-  d = n(593130),
-  p = n(388032),
-  h = n(522634);
+  o = n(622822),
+  s = n(665149),
+  c = n(731290),
+  u = n(594174),
+  d = n(91159),
+  p = n(593130),
+  h = n(388032),
+  f = n(522634);
 
-function f(e) {
+function m(e) {
   let {
     channel: t
-  } = e, [n, f] = i.useState(!1), m = i.useRef(null), g = (0, l.e7)([s.Z, c.default], () => {
-    let e = c.default.getCurrentUser();
-    return null == e || t.isNSFW() && (!e.nsfwAllowed || !s.Z.didAgree(t.getGuildId()))
-  }, [t]), b = i.useCallback(() => {
-    f(!1)
-  }, []), _ = i.useCallback(() => {
-    n || (0, u.U4)("Popout"), f(!n)
+  } = e, [n, m] = i.useState(!1), g = i.useRef(null), b = (0, l.e7)([c.Z, u.default], () => {
+    let e = u.default.getCurrentUser();
+    return null == e || (0, o.aC)(t) && (!e.nsfwAllowed || !c.Z.didAgree(t.getGuildId()))
+  }, [t]), _ = i.useCallback(() => {
+    m(!1)
+  }, []), y = i.useCallback(() => {
+    n || (0, d.U4)("Popout"), m(!n)
   }, [n]);
   return (0, r.jsx)(a.yRy, {
-    targetElementRef: m,
+    targetElementRef: g,
     animation: a.yRy.Animation.NONE,
     position: "bottom",
     align: "right",
     autoInvert: !1,
     shouldShow: n,
-    onRequestClose: b,
+    onRequestClose: _,
     renderPopout: function() {
       return (0, r.jsx)(a.VqE, {
-        children: (0, r.jsx)(d.Z, {
-          className: h.browser,
+        children: (0, r.jsx)(p.Z, {
+          className: f.browser,
           channel: t,
-          onClose: b
+          onClose: _
         })
       })
     },
@@ -48,7 +49,7 @@ function f(e) {
       let {
         isShown: l
       } = t;
-      return (0, r.jsx)(o.JO, (n = function(e) {
+      return (0, r.jsx)(s.JO, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -66,13 +67,13 @@ function f(e) {
         }
         return e
       }({}, e), i = i = {
-        ref: m,
-        className: h.icon,
-        onClick: _,
+        ref: g,
+        className: f.icon,
+        onClick: y,
         icon: a.or_,
-        "aria-label": p.intl.string(p.t.B2panJ),
-        tooltip: l ? null : p.intl.string(p.t.B2panJ),
-        disabled: g,
+        "aria-label": h.intl.string(h.t.B2panJ),
+        tooltip: l ? null : h.intl.string(h.t.B2panJ),
+        disabled: b,
         selected: l
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);

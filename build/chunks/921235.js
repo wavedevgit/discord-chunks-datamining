@@ -48,10 +48,10 @@ function j(e) {
         e.ok || 429 !== e.status || j(x.intl.string(x.t["Whhv4+"]))
       }
     }, [n.id, n.type, l]),
-    N = x.intl.formatToPlainString(x.t.m0zYbW, {
+    T = x.intl.formatToPlainString(x.t.m0zYbW, {
       username: I
     }),
-    T = null != l && "" !== l ? (0, r.jsx)(c.Text, {
+    N = null != l && "" !== l ? (0, r.jsx)(c.Text, {
       className: v.error,
       color: "text-danger",
       variant: "text-sm/normal",
@@ -69,9 +69,9 @@ function j(e) {
       }), (0, r.jsx)(c.Text, {
         className: v.text,
         variant: "text-md/medium",
-        children: N
+        children: T
       })]
-    }), T]
+    }), N]
   }) : (0, r.jsxs)("div", {
     className: v.containerExpanded,
     children: [(0, r.jsx)(h.Z, {
@@ -81,7 +81,7 @@ function j(e) {
       className: v.button,
       onClick: Z,
       disabled: !!l,
-      children: N
-    }), T]
+      children: T
+    }), N]
   })
 }

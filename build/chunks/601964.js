@@ -95,5 +95,5 @@ function m(e, t) {
 }
 
 function g(e) {
-  return e.nsfwLevel === s.V_K.EXPLICIT || e.nsfwLevel === s.V_K.AGE_RESTRICTED
+  return null != e && (e.ownerConfiguredContentLevel === s.V_K.EXPLICIT || e.ownerConfiguredContentLevel === s.V_K.AGE_RESTRICTED)
 }

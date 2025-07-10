@@ -37,12 +37,12 @@ function v(e) {
     entries: I,
     impressionCappedEntryIds: P,
     hasLeaderboardEntry: Z
-  } = (0, m.Z)(v), N = (0, i.e7)([p.Z], () => p.Z.hidden), T = (0, i.e7)([c.Z], () => c.Z.isFocused()), A = (0, i.e7)([o.Z], () => o.Z.getChannel(v)), w = (0, i.e7)([s.Z], () => s.Z.getGuild(O), [O]), R = (0, h.E)(w), M = null != R && R && (null == A ? void 0 : A.isForumChannel()) === !1, [D, k, L, U] = r.useMemo(() => {
+  } = (0, m.Z)(v), T = (0, i.e7)([p.Z], () => p.Z.hidden), N = (0, i.e7)([c.Z], () => c.Z.isFocused()), A = (0, i.e7)([o.Z], () => o.Z.getChannel(v)), w = (0, i.e7)([s.Z], () => s.Z.getGuild(O), [O]), R = (0, h.E)(w), M = null != R && R && (null == A ? void 0 : A.isForumChannel()) === !1, [D, k, L, U] = r.useMemo(() => {
     let e;
     if (null == I || 0 === I.length || null == S || !M) return [t, n, x];
     let r = j ? I.length : Z ? 4 : 3,
       i = I.slice(0, r);
-    e = N ? [{
+    e = T ? [{
       type: a.so.HIDDEN_CONTENT_INVENTORY
     }] : i.map(e => ({
       type: a.so.CONTENT_INVENTORY,
@@ -74,7 +74,7 @@ function v(e) {
       [l, ...t],
       [...n, l, ...e], Math.random(), e
     ]
-  }, [v, I, j, t, O, S, n, x, N, M, Z]), B = r.useRef(0), F = r.useRef(I), H = r.useRef(void 0), G = r.useRef({
+  }, [v, I, j, t, O, S, n, x, T, M, Z]), B = r.useRef(0), F = r.useRef(I), H = r.useRef(void 0), G = r.useRef({
     impressionCappedEntryIds: P
   }), V = r.useCallback(e => {
     var t;
@@ -93,7 +93,7 @@ function v(e) {
     if (null == S || null == H.current || Date.now() - H.current < 3e3) return;
     let n = null != (t = null == (e = F.current) ? void 0 : e.map(e => e.id)) ? t : [],
       r = n.slice(0, B.current);
-    !N && T && M && ((0, f.e)(y.rMx.RANKING_ITEMS_SEEN_MUST_BE_SAMPLED, {
+    !T && N && M && ((0, f.e)(y.rMx.RANKING_ITEMS_SEEN_MUST_BE_SAMPLED, {
       request_id: S,
       first_shown_at: H.current,
       item_ids: r,
@@ -106,7 +106,7 @@ function v(e) {
       type: "CONTENT_INVENTORY_TRACK_ITEM_IMPRESSIONS",
       itemIds: r
     }))
-  }), [S, v, O, N, T, M]), {
+  }), [S, v, O, T, N, M]), {
     groups: D,
     rows: k,
     version: L,

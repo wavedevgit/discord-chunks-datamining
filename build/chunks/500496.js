@@ -1,12 +1,13 @@
-/** Chunk was on 68024 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
   Tz: () => o,
-  cE: () => l,
-  j0: () => a
+  cE: () => a,
+  j0: () => s
 });
 var r = n(818083),
   i = n(987338);
-let l = (0, r.B)({
+let a = (0, r.B)({
   kind: "guild",
   id: "2025-06_server_content_level_setting",
   label: "Guild content level setting",
@@ -27,24 +28,24 @@ function o(e) {
   let {
     guildId: t,
     location: n
-  } = e;
-  return l.getCurrentConfig({
+  } = e, r = a.getCurrentConfig({
     guildId: t,
     location: n
   }, {
     autoTrackExposure: !0
-  }).enabled
+  });
+  return null == r ? void 0 : r.enabled
 }
 
-function a(e) {
+function s(e) {
   let {
     guildId: t,
     location: n
-  } = e;
-  return l.getCurrentConfig({
+  } = e, r = a.getCurrentConfig({
     guildId: t,
     location: n
   }, {
     autoTrackExposure: !0
-  }).enabled
+  });
+  return null == r ? void 0 : r.enabled
 }
