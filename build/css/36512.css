@@ -1,6 +1,6 @@
 /**
   Module ID: 36512
-  Original File Name: 36d9154e4f23100a
+  Original File Name: 2598bbf4fee2fbaf
 **/
 .container_e512ac {
     background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
@@ -566,6 +566,38 @@
 
 .focused__55c99 {
     background-color: var(--background-base-lowest)
+}
+
+.inChannelOptionContainer__55c99 {
+    border-bottom: 1px solid var(--border-subtle);
+    border-radius: var(--radius-xs);
+    font-size: 16px;
+    overflow: hidden;
+    padding: 10px
+}
+
+.inChannelOptionContainer__55c99[aria-selected=true] .inChannelOption__55c99 {
+    background-color: var(--background-modifier-hover);
+    box-shadow: inset 2px 0 0 0 var(--focus-primary)
+}
+
+.inChannelOption__55c99 {
+    align-items: center;
+    border-radius: var(--radius-xs);
+    cursor: pointer;
+    display: flex;
+    padding: 8px 10px
+}
+
+.inChannelOption__55c99:hover {
+    background-color: var(--background-modifier-hover)
+}
+
+.channelName__55c99 {
+    flex: 1;
+    margin-left: 6px;
+    min-width: 0;
+    white-space: nowrap
 }
 
 .refresh-fast-follow-distinct-borders .container__55c99 {
@@ -1400,4 +1432,4 @@
     margin-right: 8px
 }
 
-/*# sourceMappingURL=36d9154e4f23100a.css.map*/
+/*# sourceMappingURL=2598bbf4fee2fbaf.css.map*/

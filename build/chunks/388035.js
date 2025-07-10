@@ -1,6 +1,6 @@
 /** Chunk was on 36512 **/
 n.d(t, {
-  U: () => y
+  U: () => S
 }), n(388685);
 var r = n(255367),
   l = n(704215),
@@ -37,7 +37,7 @@ let f = l.z.FOR_LATER_POPOUT_COACHMARK,
     caretPosition: o.DF.TOP_RIGHT
   });
 
-function y(e) {
+function S(e) {
   let {
     location: t,
     children: n,

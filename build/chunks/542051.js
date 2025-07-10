@@ -1,17 +1,18 @@
 /** Chunk was on 36512 **/
 n.d(t, {
-  M: () => g,
+  M: () => m,
   Z: () => y
-}), n(415506), n(781311);
+}), n(415506), n(781311), n(388685);
 var r, l = n(255367),
   s = n(73800),
   a = n(120356),
   i = n.n(a),
   o = n(481060),
-  c = n(388032),
-  u = n(953928);
+  c = n(405656),
+  u = n(388032),
+  d = n(953928);
 
-function d(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -20,20 +21,20 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      d(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
 }
 
-function p(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -46,11 +47,11 @@ function p(e, t) {
   }), e
 }
 
-function f(e) {
+function g(e) {
   e.stopPropagation(), e.preventDefault()
 }
 
-function g(e, t, n) {
+function m(e, t, n) {
   return {
     id: "".concat(e, "-").concat(t),
     role: "option",
@@ -58,7 +59,7 @@ function g(e, t, n) {
     "aria-selected": n
   }
 }
-class m extends(r = s.PureComponent) {
+class S extends(r = s.PureComponent) {
   renderQuery(e) {
     let {
       query: t,
@@ -66,51 +67,51 @@ class m extends(r = s.PureComponent) {
       focusedIndex: r,
       onSelectQuery: s,
       onSelectSearchEverywhere: a,
-      onHighlightQuery: d,
-      hideQuery: f,
-      searchFavorites: m
+      onHighlightQuery: c,
+      hideQuery: h,
+      searchFavorites: g
     } = this.props;
-    if (e || f) return null;
-    let y = -1 === r;
+    if (e || h) return null;
+    let S = -1 === r;
     return (0, l.jsxs)(l.Fragment, {
-      children: [(0, l.jsxs)(o.P3F, p(h({
-        className: i()(u.queryContainer, {
-          [u.focused]: y
+      children: [(0, l.jsxs)(o.P3F, f(p({
+        className: i()(d.queryContainer, {
+          [d.focused]: S
         })
-      }, g(n, -1, y)), {
-        onMouseEnter: d,
+      }, m(n, -1, S)), {
+        onMouseEnter: c,
         onClick: s,
         children: [(0, l.jsx)("div", {
-          className: u.queryText,
-          children: m ? c.intl.string(c.t["6RVtLC"]) : c.intl.format(c.t.ub226e, {
+          className: d.queryText,
+          children: g ? u.intl.string(u.t["6RVtLC"]) : u.intl.format(u.t.ub226e, {
             value: t
           })
         }), (0, l.jsx)("div", {
-          className: u.queryShortcut,
+          className: d.queryShortcut,
           "aria-hidden": !0,
           children: (0, l.jsx)(o.M2$, {
             shortcut: "return",
             dim: !0,
-            className: u.keyCombo
+            className: d.keyCombo
           })
         })]
-      })), m && (0, l.jsxs)(o.P3F, p(h({
-        className: i()(u.queryContainer, {
-          [u.focused]: y
+      })), g && (0, l.jsxs)(o.P3F, f(p({
+        className: i()(d.queryContainer, {
+          [d.focused]: S
         })
-      }, g(n, -1, y)), {
-        onMouseEnter: d,
+      }, m(n, -1, S)), {
+        onMouseEnter: c,
         onClick: a,
         children: [(0, l.jsx)("div", {
-          className: u.queryText,
-          children: c.intl.string(c.t.FtSUxc)
+          className: d.queryText,
+          children: u.intl.string(u.t.FtSUxc)
         }), (0, l.jsx)("div", {
-          className: u.queryShortcut,
+          className: d.queryShortcut,
           "aria-hidden": !0,
           children: (0, l.jsx)(o.M2$, {
             shortcut: "shift+return",
             dim: !0,
-            className: u.keyCombo
+            className: d.keyCombo
           })
         })]
       }))]
@@ -140,22 +141,54 @@ class m extends(r = s.PureComponent) {
       width: r
     } = this.props, s = "" === e.trim();
     return (0, l.jsxs)("div", {
-      className: u.container,
+      className: d.container,
       style: {
         width: r
       },
-      onMouseDown: f,
+      onMouseDown: g,
       role: "listbox",
       id: n,
       tabIndex: -1,
       "aria-activedescendant": "".concat(n, "-").concat(t),
-      children: [this.renderQuery(s), this.renderResults(s)]
+      children: [this.renderQuery(s), this.renderSearchInSelectedChannelAutocomplete(), this.renderResults(s)]
+    })
+  }
+  constructor(...e) {
+    super(...e), h(this, "renderSearchInSelectedChannelAutocomplete", () => {
+      let {
+        navId: e,
+        channel: t,
+        showSearchInSelectedChannel: n,
+        focusedIndex: r,
+        onSelectSearchInSelectedChannel: s,
+        renderChannel: a
+      } = this.props;
+      if (!n || null == t) return null;
+      let i = (0, c.X3)(t),
+        h = a(null, "", {
+          channel: t,
+          text: u.intl.formatToPlainString(u.t.LDpotL, {
+            guildName: i
+          })
+        }, d.channelName);
+      return (0, l.jsx)(o.P3F, f(p({}, m(e, -1, -1 === r)), {
+        className: d.inChannelOptionContainer,
+        onClick: s,
+        children: (0, l.jsx)(o.Text, {
+          variant: "text-md/normal",
+          color: "interactive-normal",
+          className: d.inChannelOption,
+          children: u.intl.format(u.t.LDpotL, {
+            guildName: h
+          })
+        })
+      }))
     })
   }
 }
-d(m, "defaultProps", {
+h(S, "defaultProps", {
   renderInitialState: () => null,
   hideQuery: !1,
   width: 320
 });
-let y = m
+let y = S

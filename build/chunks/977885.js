@@ -22,9 +22,9 @@ let h = {
       getId: f,
       getLimit: g,
       onFetchStart: m,
-      onFetchSuccess: y,
-      searchMode: b = d.QIO.NEWEST
-    } = e, S = o.kG(r), x = o.$G(S);
+      onFetchSuccess: S,
+      searchMode: y = d.QIO.NEWEST
+    } = e, b = o.kG(r), x = o.$G(b);
     ! function(e) {
       if (!Array.isArray(e.pinned)) return;
       let t = e.pinned.some(e => !0 === e);
@@ -47,7 +47,7 @@ let h = {
           })
         }
         return e
-      }({}, x, (0, a.zH)(b)),
+      }({}, x, (0, a.zH)(y)),
       v = (0, u.s5)(t);
     null != v && o.jW(_, v);
     let O = c.Z.getSearchTabFetcher({
@@ -106,7 +106,7 @@ let h = {
           doingHistoricalIndex: n.doing_deep_historical_index,
           documentsIndexed: n.documents_indexed
         })
-      }), null == y || y({
+      }), null == S || S({
         searchContext: t,
         tabEntries: r
       })
