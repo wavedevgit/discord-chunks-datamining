@@ -16,7 +16,7 @@ function s(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let l = 1e4,
+let l = 3e4,
   c = .1;
 class u {
   clearTimeoutTimer() {
@@ -31,7 +31,7 @@ class u {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
     if (!(0, a.M)(o.dr.QUESTS_BAR) || null === this.startTime || this.questId !== e) return;
     t || this.clearTimeoutTimer();
-    let n = Math.round(performance.now() - this.startTime);
+    let n = t ? l : Math.round(performance.now() - this.startTime);
     this.startTime = null, Math.random() > c || i.Z.distribution({
       name: r.V.QUEST_BAR_RENDER_DELAY,
       tags: ["quest_id:".concat(e), "timeout:".concat(t)]
