@@ -117,7 +117,7 @@ function X(e) {
   })
 }
 
-function Q(e) {
+function J(e) {
   let {
     disabledSounds: t,
     disableAllSounds: n,
@@ -241,7 +241,7 @@ function Q(e) {
   })
 }
 
-function J() {
+function Q() {
   let e = (0, c.e7)([E.Z], () => E.Z.getGuildAlertSettings()),
     [t, n] = r.useState(null),
     s = L.default.keys(e).map(t => {
@@ -388,8 +388,8 @@ class $ extends r.PureComponent {
             className: a()(W.marginTop40, W.marginBottom40)
           })]
         })
-      }), this.renderTTS(), (0, i.jsx)(J, {}), (0, i.jsx)(u.xJW, {
-        children: (0, i.jsx)(Q, {
+      }), this.renderTTS(), (0, i.jsx)(Q, {}), (0, i.jsx)(u.xJW, {
+        children: (0, i.jsx)(J, {
           disabledSounds: s,
           disableAllSounds: l,
           notifyMessagesInSelectedChannel: c

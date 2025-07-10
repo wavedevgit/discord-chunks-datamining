@@ -1,7 +1,7 @@
 /** Chunk was on 89795 **/
 n.d(t, {
   R: () => H,
-  default: () => Q
+  default: () => J
 }), n(388685), n(415506);
 var i, r = n(255367),
   s = n(73800),
@@ -320,7 +320,7 @@ let X = {
   7: "Confirm Pause Duration"
 };
 
-function Q(e) {
+function J(e) {
   var t;
   let n, {
       premiumSubscription: i,
@@ -354,9 +354,9 @@ function Q(e) {
       }, q(t))), r(e), l(Date.now())
     }, [n, o, a, i, t]);
     return [i, c, a, o]
-  }(h, i, c), [Y, Q] = s.useState(null);
+  }(h, i, c), [Y, J] = s.useState(null);
   (0, B.w)(i, l, !1);
-  let J = e => {
+  let Q = e => {
       l(), O.default.track(U.rMx.CANCELLATION_FLOW_STEP, F({
         from_step: X[e],
         to_step: null,
@@ -378,9 +378,9 @@ function Q(e) {
         premiumSubscription: i,
         premiumType: T,
         setStep: L,
-        onClose: () => J(k),
+        onClose: () => Q(k),
         pauseDuration: Y,
-        setPauseDuration: Q,
+        setPauseDuration: J,
         footer: (0, r.jsxs)("div", {
           className: G.whatYouLoseButtonContainer,
           children: [(0, r.jsx)(g.zxk, {
@@ -414,7 +414,7 @@ function Q(e) {
         premiumSubscription: i,
         premiumType: T,
         setStep: L,
-        onClose: () => J(k),
+        onClose: () => Q(k),
         analyticsLocation: u,
         pauseDuration: Y
       });
@@ -434,11 +434,11 @@ function Q(e) {
           }), (0, r.jsx)(p.zx, {
             look: p.zx.Looks.LINK,
             color: (0, m.wj)(N) ? p.zx.Colors.WHITE : p.zx.Colors.PRIMARY,
-            onClick: () => J(k),
+            onClick: () => Q(k),
             children: V.intl.string(V.t.h9tkAA)
           })]
         }),
-        onClose: () => J(k),
+        onClose: () => Q(k),
         onDiscountClaim: () => L(4),
         onContinue: () => L(2),
         isLoading: $ && et,
@@ -451,7 +451,7 @@ function Q(e) {
         premiumSubscription: i,
         premiumType: T,
         setStep: L,
-        onClose: () => J(k),
+        onClose: () => Q(k),
         whatYouLoseExperienceEnabled: A,
         analyticsLocation: u
       });
@@ -461,7 +461,7 @@ function Q(e) {
         premiumSubscription: i,
         premiumType: T,
         onBack: () => L(2),
-        onClose: () => J(k),
+        onClose: () => Q(k),
         analyticsLocation: u
       });
       break;
@@ -469,7 +469,7 @@ function Q(e) {
       n = (0, r.jsx)(P.Z, {
         premiumSubscription: i,
         premiumType: T,
-        onClose: () => J(k),
+        onClose: () => Q(k),
         onConfirm: () => L(5),
         userDiscountOffer: ee
       });
@@ -478,7 +478,7 @@ function Q(e) {
       n = (0, r.jsx)(R.D, {
         premiumSubscription: i,
         premiumType: T,
-        onClose: () => J(k),
+        onClose: () => Q(k),
         confettiCanvas: j,
         userDiscountOffer: ee
       });

@@ -51,8 +51,8 @@ var i = n(255367),
   K = n(53891),
   q = n(291533),
   X = n(427347),
-  Q = n(50697),
-  J = n(90042),
+  J = n(50697),
+  Q = n(90042),
   $ = n(78933),
   ee = n(850020),
   et = n(379839),
@@ -105,8 +105,8 @@ var i = n(255367),
   eK = n(585483),
   eq = n(70956),
   eX = n(823379),
-  eQ = n(74538),
-  eJ = n(374023),
+  eJ = n(74538),
+  eQ = n(374023),
   e$ = n(51144),
   e0 = n(998502),
   e1 = n(578817),
@@ -406,7 +406,7 @@ class to extends r.PureComponent {
                 })
               });
             case u.z.EXPIRING_STATUS_COACHMARK:
-              return (0, i.jsx)(J.Z, {
+              return (0, i.jsx)(Q.Z, {
                 markAsDismissed: r,
                 targetElementRef: this.avatarWithPopoutRef,
                 children: t => {
@@ -750,20 +750,20 @@ function td() {
     N = (0, d.e7)([eL.Z], () => eL.Z.getSpeakingWhileMuted()),
     I = (0, d.e7)([w.Z], () => w.Z.isFullscreenInContext()),
     P = (0, d.e7)([ek.Z], () => ek.Z.hasLayers()),
-    R = (0, f.s9z)(f.JQI) || P || eJ.s.isDisallowPopupsSet() || I,
+    R = (0, f.s9z)(f.JQI) || P || eQ.s.isDisallowPopupsSet() || I,
     k = (0, er.b)(),
     L = (0, d.e7)([Y.Z], () => null != Y.Z.getAwaitingRemoteSessionInfo()),
     B = (0, d.e7)([eM.Z], () => eM.Z.getGuildId()),
     M = (0, eo.D)(),
     U = (0, j.u)(),
-    V = eQ.ZP.canUsePremiumGuildMemberProfile(t),
+    V = eJ.ZP.canUsePremiumGuildMemberProfile(t),
     G = (null == t || null == (e = t.avatarDecoration) ? void 0 : e.skuId) === e5.rL,
     {
       voiceActivityStatusEnabled: F
     } = (0, v.U)({
       location: "Account"
     }),
-    H = (0, Q.m)(),
+    H = (0, J.m)(),
     [z, W] = (0, q.G)(null != B ? B : null),
     K = "account";
   (0, E.j)({
@@ -775,7 +775,7 @@ function td() {
   });
   let X = (0, d.e7)([eu.Z], () => eu.Z.hasHadOtherUserPlaySoundInSession()),
     {
-      analyticsLocations: J
+      analyticsLocations: Q
     } = (0, A.ZP)(y.Z.ACCOUNT),
     $ = (0, ee.K)({
       user: t
@@ -798,7 +798,7 @@ function td() {
       settings: []
     };
   return !R && (M && (1 === U ? ei.settings.push(u.z.USER_SAFETY_CONSUMER_EDUCATION_MUTE) : ei.settings.push(u.z.USER_SAFETY_CONSUMER_EDUCATION_BLOCK)), X && ei.settings.push(u.z.SOUNDBOARD_VOLUME_EDUCATION), V && ei.settings.push(u.z.PER_GUILD_COLLECTIBLES_CUSTOMIZATION_COACHMARK), G && ei.avatar.push(u.z.PREMIUM_SUBSCRIPTION_APRIL_MARKETING_DECO_TOOLTIP), H && ei.avatar.push(u.z.EXPIRING_STATUS_COACHMARK)), (0, i.jsx)(A.Gt, {
-    value: J,
+    value: Q,
     children: (0, i.jsx)(to, {
       currentUser: t,
       activities: r,
@@ -925,7 +925,7 @@ function tm(e) {
       j(e, H)
     }, [j, H]),
     [q, X] = r.useState(!1),
-    Q = r.useCallback(e => {
+    J = r.useCallback(e => {
       var t;
       if ((0, c.k)(null == e ? void 0 : e.target, Node) && (null == (t = v.current) ? void 0 : t.contains(e.target))) return h.F;
       X(!1)
@@ -936,7 +936,7 @@ function tm(e) {
       X(!0)
     }
   });
-  let [J, $] = r.useState(!1);
+  let [Q, $] = r.useState(!1);
   r.useEffect(() => {
     let e;
     return w && D && (e = setTimeout(() => {
@@ -998,7 +998,7 @@ function tm(e) {
         useMouseEnter: !0,
         ignoreModalClicks: !0,
         onRequestOpen: ee,
-        onRequestClose: Q,
+        onRequestClose: J,
         shouldShow: q,
         renderPopout: e => {
           let {
@@ -1052,10 +1052,10 @@ function tm(e) {
                 let c = () => (0, i.jsx)(e3.Z, tn({
                   ref: S,
                   plated: null != E,
-                  tooltipForceOpen: J,
-                  tooltipColor: J ? f.FGA.GREEN : void 0,
-                  tooltipContentClassName: J ? te.voiceFilterWarning : void 0,
-                  tooltipText: J ? (0, i.jsxs)(i.Fragment, {
+                  tooltipForceOpen: Q,
+                  tooltipColor: Q ? f.FGA.GREEN : void 0,
+                  tooltipContentClassName: Q ? te.voiceFilterWarning : void 0,
+                  tooltipText: Q ? (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)("img", {
                       alt: null != Z ? e9.intl.string(Z.name) : "",
                       src: null == Z ? void 0 : Z.iconURL,

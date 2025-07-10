@@ -65,7 +65,7 @@ let Z = e => {
       analyticsLocations: B
     } = (0, m.ZP)(u.Z.PREMIUM_MARKETING_HERO_CTA), M = (0, b._O)(), U = (0, j.Ng)(), V = (0, j.Wp)(U, N.Si.TIER_2) ? N.Si.TIER_2 : void 0, G = (0, E.N)(), F = (0, f.Nx)(), H = (0, l.e7)([h.Z], () => h.Z.affinities), z = (0, O.Z)(), W = null != z, Y = w ? o.Tt.WHITE : o.Tt.BRAND, K = H.length > 0, q = (0, x.ZP)({
       location: "PremiumMarketingHeroHeading"
-    }), X = (0, x.J1)(q), Q = (0, g.rO)(), J = (0, l.e7)([d.Z], () => d.Z.useReducedMotion);
+    }), X = (0, x.J1)(q), J = (0, g.rO)(), Q = (0, l.e7)([d.Z], () => d.Z.useReducedMotion);
     return (0, i.jsx)(m.Gt, {
       value: B,
       children: (0, i.jsxs)("div", {
@@ -120,16 +120,16 @@ let Z = e => {
         }), (0, i.jsx)("div", {
           className: A.heroHeadingV2ArtContainer,
           children: (0, i.jsx)(p.Z, {
-            autoPlay: !J,
+            autoPlay: !Q,
             playsInline: !0,
-            preload: J ? "none" : "auto",
+            preload: Q ? "none" : "auto",
             poster: R.Z,
             loop: !0,
             className: A.heroHeadingV2Art,
             ref: L,
             children: (0, i.jsx)("source", {
-              src: Q ? P.Z : D.Z,
-              type: Q ? I.m.MP4 : I.m.WEBM
+              src: J ? P.Z : D.Z,
+              type: J ? I.m.MP4 : I.m.WEBM
             })
           })
         })]

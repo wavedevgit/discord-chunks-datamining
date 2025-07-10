@@ -1,6 +1,6 @@
 /**
   Module ID: 89795
-  Original File Name: f0fea4bc3ff4dcef
+  Original File Name: 1ef4e19cf5f84d64
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -5769,6 +5769,89 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
 
 .bottomMargin__26dae,.section__26dae {
     margin-bottom: 30px
+}
+
+.flyingWumpus__12720 {
+    height: 180px;
+    left: calc(50% + 150px);
+    position: absolute;
+    top: 160px;
+    z-index: 2
+}
+
+.boltTrinket__12720 {
+    left: calc(50% + 525px);
+    position: absolute;
+    top: 375px
+}
+
+.carTrinket__12720 {
+    position: absolute;
+    right: calc(50% + 400px);
+    top: 190px
+}
+
+.hammerTrinket__12720 {
+    left: calc(50% + 375px);
+    position: absolute;
+    top: 50px
+}
+
+.keyTrinket__12720 {
+    position: absolute;
+    right: calc(50% + 335px);
+    top: 290px
+}
+
+.starTrinket__12720 {
+    position: absolute;
+    right: calc(50% + 375px);
+    top: 10px
+}
+
+.container__3849c {
+    align-items: center;
+    justify-content: center;
+    text-align: center
+}
+
+.container__3849c,.contentContainer__3849c {
+    display: flex;
+    position: relative
+}
+
+.contentContainer__3849c {
+    flex-direction: column;
+    gap: var(--space-24);
+    padding-top: 120px;
+    z-index: 1
+}
+
+.marketingPageTextContainer__3849c {
+    max-width: 800px
+}
+
+.marketingPageHeading__3849c {
+    font-size: 64px;
+    font-style: italic;
+    font-weight: 900;
+    letter-spacing: -1.28px;
+    line-height: 82%;
+    text-transform: uppercase
+}
+
+.buttonContainer__3849c {
+    align-items: center;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    width: 100%
+}
+
+.gradientBackground__3849c {
+    position: absolute;
+    top: 0;
+    z-index: 0
 }
 
 .heroHeadingContainer__81281 {
@@ -19742,4 +19825,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=f0fea4bc3ff4dcef.css.map*/
+/*# sourceMappingURL=1ef4e19cf5f84d64.css.map*/
