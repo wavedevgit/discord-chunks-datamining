@@ -156,9 +156,9 @@ function O(e) {
           className: y.rightButtons,
           children: (0, r.jsxs)(a.hE2, {
             direction: "horizontal-reverse",
+            size: "sm",
             children: [(0, r.jsx)(a.zxk, {
               variant: "secondary",
-              size: "sm",
               text: N.intl.string(N.t["ETE/oK"]),
               onClick: n
             }), (0, r.jsx)(a.zxk, {

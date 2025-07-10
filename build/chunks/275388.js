@@ -1,7 +1,7 @@
-/** Chunk was on 99014 **/
+/** Chunk was on 98595 **/
 n.d(t, {
-  q: () => u,
-  r: () => c
+  q: () => c,
+  r: () => u
 });
 var i = n(255367),
   r = n(772848),
@@ -9,12 +9,12 @@ var i = n(255367),
   o = n(396639),
   s = n(981631);
 let a = "orb-checkout-payment-modal-key",
-  c = () => (0, l.VXO)(a),
-  u = e => {
+  u = () => (0, l.VXO)(a),
+  c = e => {
     var {
       skuId: t,
-      analyticsLocations: c = [],
-      analyticsSourceLocation: u,
+      analyticsLocations: u = [],
+      analyticsSourceLocation: c,
       onCloseCallback: d,
       onCheckoutSuccess: h
     } = e, g = function(e, t) {
@@ -59,8 +59,8 @@ let a = "orb-checkout-payment-modal-key",
           return e
         }({
           skuId: t,
-          analyticsLocations: c,
-          analyticsSourceLocation: u,
+          analyticsLocations: u,
+          analyticsSourceLocation: c,
           onCheckoutSuccess: e => {
             p = !0, h(e)
           }
@@ -83,8 +83,8 @@ let a = "orb-checkout-payment-modal-key",
         p || (0, o._Y)(s.rMx.PAYMENT_FLOW_CANCELED, {
           loadId: f,
           skuId: t,
-          analyticsLocations: c,
-          analyticsSourceLocation: u
+          analyticsLocations: u,
+          analyticsSourceLocation: c
         }), (0, l.Mr3)(a)
       },
       modalKey: a

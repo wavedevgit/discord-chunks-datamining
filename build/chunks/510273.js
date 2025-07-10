@@ -1,4 +1,4 @@
-/** Chunk was on 99014 **/
+/** Chunk was on 98595 **/
 n.d(t, {
   Z: () => g
 }), n(953529);
@@ -8,8 +8,8 @@ var i = n(255367),
   o = n.n(l),
   s = n(481060),
   a = n(955204),
-  c = n(818765),
-  u = n(674680),
+  u = n(818765),
+  c = n(674680),
   d = n(127058);
 let h = e => {
   let {
@@ -74,28 +74,28 @@ function g(e) {
     hideDescriptionUntilUnlock: f,
     onAction: E
   } = t, {
-    color: _
+    color: O
   } = (0, a.F7)(p);
   r.useEffect(() => {
     let e = setTimeout(() => {
-      c.Z.playAchievementUnlockSound()
+      u.Z.playAchievementUnlockSound()
     }, 50);
     return () => {
       clearTimeout(e)
     }
   }, []);
-  let m = null != E && n,
-    O = m ? s.P3F : "div";
-  return (0, i.jsxs)(O, {
-    className: o()(d.container, m && d.actionable),
+  let _ = null != E && n,
+    m = _ ? s.P3F : "div";
+  return (0, i.jsxs)(m, {
+    className: o()(d.container, _ && d.actionable),
     onClick: () => {
-      m && E()
+      _ && E()
     },
     children: [(0, i.jsx)("div", {
       className: d.iconContainer,
-      children: (0, i.jsx)(u.Z, {
+      children: (0, i.jsx)(c.Z, {
         achievementId: t.id,
-        size: u.Z.Sizes.SIZE_40,
+        size: c.Z.Sizes.SIZE_40,
         unlocked: n
       })
     }), (0, i.jsxs)("div", {
@@ -112,7 +112,7 @@ function g(e) {
     }), (0, i.jsx)("div", {
       className: d.flair,
       children: (0, i.jsx)(h, {
-        color: _
+        color: O
       })
     })]
   })

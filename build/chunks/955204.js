@@ -1,16 +1,16 @@
-/** Chunk was on 99014 **/
+/** Chunk was on 98595 **/
 n.d(t, {
   EP: () => a,
   F7: () => d,
-  LG: () => c,
+  LG: () => u,
   hn: () => s,
-  oX: () => u
+  oX: () => c
 });
 var i, r, l = n(641033),
   o = n(388032),
   s = ((i = {})[i.ENABLE_POGGERMODE = 0] = "ENABLE_POGGERMODE", i[i.DISABLE_POGGERMODE = 1] = "DISABLE_POGGERMODE", i[i.PING_SOMEONE = 2] = "PING_SOMEONE", i[i.PING_ME = 3] = "PING_ME", i[i.COMBO_MULTI_LEVEL_1 = 4] = "COMBO_MULTI_LEVEL_1", i[i.COMBO_MULTI_LEVEL_2 = 5] = "COMBO_MULTI_LEVEL_2", i[i.COMBO_MULTI_LEVEL_3 = 6] = "COMBO_MULTI_LEVEL_3", i[i.COMBO_MULTI_LEVEL_4 = 7] = "COMBO_MULTI_LEVEL_4", i[i.TOTAL_SCORE_LEVEL_1 = 8] = "TOTAL_SCORE_LEVEL_1", i[i.TOTAL_SCORE_LEVEL_2 = 9] = "TOTAL_SCORE_LEVEL_2", i[i.TOTAL_SCORE_LEVEL_3 = 10] = "TOTAL_SCORE_LEVEL_3", i[i.TOTAL_SCORE_LEVEL_4 = 11] = "TOTAL_SCORE_LEVEL_4", i[i.TOTAL_SCORE_LEVEL_5 = 12] = "TOTAL_SCORE_LEVEL_5", i[i.VISITOR_100 = 13] = "VISITOR_100", i[i.CUSTOMIZE_CONFETTI = 14] = "CUSTOMIZE_CONFETTI", i[i.MORE = 15] = "MORE", i[i.COMBO_VALUE_LEVEL_1 = 16] = "COMBO_VALUE_LEVEL_1", i[i.COMBO_VALUE_LEVEL_2 = 17] = "COMBO_VALUE_LEVEL_2", i[i.COMBO_VALUE_LEVEL_3 = 18] = "COMBO_VALUE_LEVEL_3", i[i.COMBO_VALUE_LEVEL_4 = 19] = "COMBO_VALUE_LEVEL_4", i),
   a = ((r = {})[r.COMMON = 0] = "COMMON", r[r.UNCOMMON = 1] = "UNCOMMON", r[r.RARE = 2] = "RARE", r[r.EPIC = 3] = "EPIC", r[r.LEGENDARY = 4] = "LEGENDARY", r);
-let c = {
+let u = {
   0: {
     id: 0,
     name: () => o.intl.string(o.t.CRLcOz),
@@ -169,8 +169,8 @@ let c = {
   }
 };
 
-function u(e) {
-  return c[e]
+function c(e) {
+  return u[e]
 }
 let d = e => {
   switch (e) {

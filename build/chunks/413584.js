@@ -211,14 +211,14 @@ let M = "WELCOME_CHANNEL",
       (0, C.VP)({
         channels: t
       }), U(t)
-    }, z = e => t => {
+    }, H = e => t => {
       let n = [...null != I ? I : []];
       null == t ? n.splice(e, 1) : n[e] = t, (0, C.VP)({
         channels: n
       }), U(n), 0 === n.length && T && ((0, C.VP)({
         enabled: !1
       }), B(!1))
-    }, H = (e, t, n) => {
+    }, z = (e, t, n) => {
       if (null == I) return;
       let r = I.indexOf(e),
         i = [...I];
@@ -355,8 +355,8 @@ let M = "WELCOME_CHANNEL",
           }), null == I ? void 0 : I.map((e, n) => (0, r.jsx)(G, {
             guildId: t.id,
             welcomeChannel: e,
-            onEdit: z(n),
-            onChannelReorder: H,
+            onEdit: H(n),
+            onChannelReorder: z,
             isDropHovered: n === d,
             index: n
           }, n)), (null == I || I.length < 5) && (0, r.jsx)("div", {

@@ -116,7 +116,7 @@ let w = i.forwardRef((e, t) => {
     variant: "text-sm/normal",
     children: [B, "—", F]
   });
-  let z = G ? D : N.dG4;
+  let H = G ? D : N.dG4;
   return (0, r.jsx)(a.mh, {
     id: l.id,
     children: e => (0, r.jsxs)("div", {
@@ -125,7 +125,7 @@ let w = i.forwardRef((e, t) => {
       children: [(0, r.jsxs)(d.P3F, T(S({
         className: U,
         "aria-expanded": f,
-        onClick: z
+        onClick: H
       }, e), {
         children: [(0, r.jsx)(y.mp, {
           action: l.action,

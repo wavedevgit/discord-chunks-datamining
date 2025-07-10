@@ -1,4 +1,4 @@
-/** Chunk was on 64123 **/
+/** Chunk was on 55864 **/
 "use strict";
 r.d(t, {
   Z: () => O
@@ -25,15 +25,15 @@ let O = e => {
     product: t,
     selectedVariantIndex: r,
     returnRef: O,
-    onSuccess: _,
-    tooltipDelay: j,
+    onSuccess: j,
+    tooltipDelay: _,
     color: x = a.Tt.BRAND
   } = e, {
     analyticsLocations: P
   } = (0, s.ZP)(), w = i.useRef(null), C = (0, v.hv)("CollectiblesShopGiftButton"), S = (0, d.sp)(), I = (0, b.Z)();
   return (0, p.x6)(t) ? null : (0, n.jsx)(o.ua7, {
     text: g.intl.string(g.t["JCFN//"]),
-    delay: j,
+    delay: _,
     children: e => {
       var i, s;
       return (0, n.jsx)(a.zx, (i = function(e) {
@@ -81,8 +81,8 @@ let O = e => {
             analyticsLocations: P,
             returnRef: O,
             variantsReturnStyle: C,
-            onClose: null != _ ? e => {
-              e && _()
+            onClose: null != j ? e => {
+              e && j()
             } : void 0
           })
         },

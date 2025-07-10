@@ -197,13 +197,13 @@ let w = (e, t) => e < (0, _.A3)(I.Eu4.NONE) ? I.Eu4.NONE : e < (0, _.A3)(I.Eu4.T
           U = d.slice(C, R),
           B = U.length > 0,
           F = Z < m.tier,
-          z = w(d.length, t),
-          H = b && !F && z === m.tier && R !== U.length,
-          V = H || U.length > 0,
+          H = w(d.length, t),
+          z = b && !F && H === m.tier && R !== U.length,
+          V = z || U.length > 0,
           W = R - C,
           Y = n(872732),
           K = G - U.length,
-          X = H ? Math.min(5 - (U.length + 0) % 5, K) : 0,
+          X = z ? Math.min(5 - (U.length + 0) % 5, K) : 0,
           q = [];
         for (let e = 0; e < X; e++) q.push((0, r.jsx)(D, {}, "placeholder-".concat(e)));
         let Q = t.premiumTier < m.tier && j >= I.oCV[m.tier],
@@ -214,8 +214,8 @@ let w = (e, t) => e < (0, _.A3)(I.Eu4.NONE) ? I.Eu4.NONE : e < (0, _.A3)(I.Eu4.T
           let e = E.Cp[m.tier];
           null != e && (0, h.H6)(t.id, e)
         }, J = S.intl.string(S.t.g7lkra), t.premiumTier + 1 !== m.tier && (ee = !0, i = S.intl.string(S.t.mTMkY2))) : (ee = !0, i = S.intl.string(S.t.hwPEJS)));
-        let et = z === x + 1 && z > Z,
-          en = H || et || x > Z;
+        let et = H === x + 1 && H > Z,
+          en = z || et || x > Z;
         return et ? l = (0, r.jsx)(g.Z, {
           guild: t,
           size: o.zx.Sizes.SMALL,
@@ -228,7 +228,7 @@ let w = (e, t) => e < (0, _.A3)(I.Eu4.NONE) ? I.Eu4.NONE : e < (0, _.A3)(I.Eu4.T
             object: I.qAy.BOOST_UPSELL_NEXT_LEVEL_HEADER,
             objectType: (0, _.ge)(m.tier)
           }
-        }) : H && (l = (0, r.jsx)(A, {
+        }) : z && (l = (0, r.jsx)(A, {
           guild: t
         })), (0, r.jsxs)(y.Z, {
           subscriptionCount: L,
@@ -247,7 +247,7 @@ let w = (e, t) => e < (0, _.A3)(I.Eu4.NONE) ? I.Eu4.NONE : e < (0, _.A3)(I.Eu4.T
               sticker: e,
               canManageSticker: v(e)
             }, e.id)), q]
-          }), !F && !H && 0 === U.length && (0, r.jsx)("div", {
+          }), !F && !z && 0 === U.length && (0, r.jsx)("div", {
             className: s()(T.emptyTierWrapper, T.unusedTierWrapper),
             children: (0, r.jsx)(c.Text, {
               variant: "text-md/normal",

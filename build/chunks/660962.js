@@ -43,8 +43,8 @@ var r = n(255367),
   U = n(203377),
   B = n(981631),
   F = n(141006),
-  z = n(388032),
-  H = n(93841),
+  H = n(388032),
+  z = n(93841),
   V = n(275302),
   W = n(877248),
   Y = n(179517),
@@ -83,7 +83,7 @@ function $(e) {
   return i.useEffect(() => {
     s(t.name)
   }, [t.name]), (0, r.jsx)(p.xJW, {
-    title: z.intl.string(z.t.dLbkBg),
+    title: H.intl.string(H.t.dLbkBg),
     required: !0,
     children: (0, r.jsx)(p.oil, {
       type: "text",
@@ -101,15 +101,15 @@ let ee = [{
   colors: {
     primary_color: B.p6O
   },
-  labelString: z.t["8Qyaho"]
+  labelString: H.t["8Qyaho"]
 }, {
   id: D.g.GRADIENT,
   colors: F.Eg,
-  labelString: z.t.XpWmJy
+  labelString: H.t.XpWmJy
 }, {
   id: D.g.HOLOGRAPHIC,
   colors: F.SK,
-  labelString: z.t.QTKppa
+  labelString: H.t.QTKppa
 }];
 
 function et(e) {
@@ -119,7 +119,7 @@ function et(e) {
     selectedStyle: i,
     disabled: l,
     shouldShowUpsell: a
-  } = e, o = e => l || a && [D.g.HOLOGRAPHIC, D.g.GRADIENT].includes(e), d = ei(z.intl.string(z.t.Mi9KbW)), h = (0, x.ZP)(), b = (0, C.oC)(n, t), _ = {
+  } = e, o = e => l || a && [D.g.HOLOGRAPHIC, D.g.GRADIENT].includes(e), d = ei(H.intl.string(H.t.Mi9KbW)), h = (0, x.ZP)(), b = (0, C.oC)(n, t), _ = {
     dark: {
       src: Y,
       name: t.name
@@ -133,7 +133,7 @@ function et(e) {
     children: [(0, r.jsxs)(p.vwX, {
       className: V.roleStyleFormTitle,
       children: [(0, r.jsx)("div", {
-        children: z.intl.string(z.t["9wVJRE"])
+        children: H.intl.string(H.t["9wVJRE"])
       }), (0, r.jsx)(O.ZP, {
         contentTypes: [u.z.GUILD_SETTINGS_ROLE_STYLES_NEW_BADGE],
         children: e => {
@@ -141,7 +141,7 @@ function et(e) {
             visibleContent: t
           } = e;
           return t === u.z.GUILD_SETTINGS_ROLE_STYLES_NEW_BADGE ? (0, r.jsx)(p.IGR, {
-            text: z.intl.string(z.t.y2b7CA),
+            text: H.intl.string(H.t.y2b7CA),
             className: V.newBadge
           }) : null
         }
@@ -185,7 +185,7 @@ function et(e) {
             })
           }), (0, r.jsx)("div", {
             className: V.roleStyleLabel,
-            children: z.intl.string(u)
+            children: H.intl.string(u)
           })]
         }, l)
       })
@@ -196,13 +196,13 @@ function et(e) {
         children: [(0, r.jsx)(p.Text, {
           variant: "text-sm/semibold",
           color: "button-outline-primary-text",
-          children: z.intl.format(H.default.VpEDJS, {
+          children: H.intl.format(z.default.VpEDJS, {
             magical: (0, r.jsx)(en, {})
           })
         }), (0, r.jsx)(p.Text, {
           variant: "text-xs/medium",
           color: "button-outline-primary-text",
-          children: z.intl.string(H.default.FJZeZG)
+          children: H.intl.string(z.default.FJZeZG)
         })]
       }), (0, r.jsxs)(p.gtL, {
         size: g.zx.Sizes.MEDIUM,
@@ -218,7 +218,7 @@ function et(e) {
           className: V.guildBoostBadge,
           height: 16,
           width: 16
-        }), z.intl.string(z.t["+7XY39"])]
+        }), H.intl.string(H.t["+7XY39"])]
       })]
     })]
   })
@@ -241,8 +241,8 @@ function en() {
   return (0, r.jsx)("span", {
     style: q({}, t),
     className: n,
-    "data-text": z.intl.string(H.default["+/IHLi"]),
-    children: z.intl.string(H.default["+/IHLi"])
+    "data-text": H.intl.string(z.default["+/IHLi"]),
+    children: H.intl.string(z.default["+/IHLi"])
   })
 }
 
@@ -256,11 +256,11 @@ function er(e) {
   } = e;
   return (0, r.jsxs)(p.xJW, {
     className: V.colorPicker,
-    title: z.intl.string(z.t["1F6FzM"]),
+    title: H.intl.string(H.t["1F6FzM"]),
     required: !0,
     children: [(0, r.jsx)(p.R94, {
       className: V.colorDescription,
-      children: z.intl.string(z.t["9UCxlZ"])
+      children: H.intl.string(H.t["9UCxlZ"])
     }), (0, r.jsx)(Q, {
       defaultColor: B.p6O,
       colors: s === D.g.GRADIENT && a ? F.tl : B.pmI,
@@ -306,7 +306,7 @@ function ei(e) {
     }), t));
     return r.author = h.$k(new P.Z({
       id: "313337",
-      username: z.intl.string(z.t.cqpybG),
+      username: H.intl.string(H.t.cqpybG),
       discriminator: "0000",
       bot: !1
     })), r.author.getAvatarURL = () => X.Z, r
@@ -320,7 +320,7 @@ function el(e) {
     guildId: o,
     selectedStyle: c,
     disableInteraction: d
-  } = e, u = ei(z.intl.string(z.t.Mi9KbW)), g = {
+  } = e, u = ei(H.intl.string(H.t.Mi9KbW)), g = {
     nick: u.author.username,
     colorStrings: {
       primaryColor: null == (t = a.colorStrings) ? void 0 : t.primaryColor,
@@ -359,7 +359,7 @@ function el(e) {
             variant: "text-xs/medium",
             color: "text-secondary",
             className: V.lightThemeNotice,
-            children: z.intl.string(z.t.nxwm3N)
+            children: H.intl.string(H.t.nxwm3N)
           })]
         })
       }, e))
@@ -378,16 +378,16 @@ function es(e) {
       value: t.hoist,
       onChange: e => (0, Z.we)(t.id, e, t.mentionable),
       hideBorder: !0,
-      children: z.intl.string(z.t.vceJPj)
+      children: H.intl.string(H.t.vceJPj)
     }), (0, r.jsx)(p.$i$, {
       className: V.divider
     }), (0, r.jsx)(p.j7V, {
       disabled: n,
       value: t.mentionable,
       onChange: e => (0, Z.we)(t.id, t.hoist, e),
-      note: z.intl.string(z.t.kRg5W1),
+      note: H.intl.string(H.t.kRg5W1),
       hideBorder: !0,
-      children: z.intl.format(z.t.DTXoJS, {})
+      children: H.intl.format(H.t.DTXoJS, {})
     })]
   })
 }
@@ -449,7 +449,7 @@ function ea(e) {
         className: V.holographicInfoBox,
         children: (0, r.jsx)(p.Text, {
           variant: "text-xs/medium",
-          children: z.intl.string(H.default.tBhCys)
+          children: H.intl.string(z.default.tBhCys)
         })
       }), (0, r.jsx)(L.Z, {
         guild: t,

@@ -176,7 +176,7 @@ function G(e) {
     }
   }), [d, v, O, C, k, M, h]), [{
     isDragging: F
-  }, z] = (0, a.c)(B), H = i.useMemo(() => ({
+  }, H] = (0, a.c)(B), z = i.useMemo(() => ({
     accept: L,
     canDrop: () => !k,
     collect: e => {
@@ -192,7 +192,7 @@ function G(e) {
     })
   }), [k, d]), [{
     dragSourcePosition: V
-  }, W] = (0, o.L)(H), Y = i.useCallback(e => {
+  }, W] = (0, o.L)(z), Y = i.useCallback(e => {
     (0, g.jW)(e, async () => {
       let {
         default: e
@@ -205,7 +205,7 @@ function G(e) {
   }, [u, d]), K = (0, b.e)(u, d);
   if (F) return (0, r.jsx)("div", {
     ref: e => {
-      z(e)
+      H(e)
     },
     className: s()(R.roleRow, R.roleRowDragging)
   });
@@ -226,7 +226,7 @@ function G(e) {
     onClick: X,
     onContextMenu: Y,
     innerRef: e => {
-      z(W(e))
+      H(W(e))
     },
     "data-dnd-name": d.name,
     "aria-label": w.intl.formatToPlainString(w.t.Vu0AcX, {

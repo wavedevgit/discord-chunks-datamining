@@ -78,8 +78,8 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
       canManageGuild: Z
     } = (0, l.cj)([b.Z], () => ({
       canManageGuild: b.Z.can(E.Plq.MANAGE_GUILD, u)
-    })), D = (0, l.e7)([O.Z], () => O.Z.isGuildMetadataLoaded()), A = (0, l.e7)([O.Z], () => null != u ? O.Z.getMetadata() : null), L = (0, l.e7)([O.Z], () => null != u && (null == A ? void 0 : A.isPublished) ? O.Z.getSlug() : null), [k, M] = i.useState([!0]), [G, U] = i.useState(!0), [B, F] = i.useState([!1]), [z, H] = i.useState([""]), V = e => {
-      let t = Object.entries(I.z).filter(e => !z.includes(e[1].presentation)).map(e => ({
+    })), D = (0, l.e7)([O.Z], () => O.Z.isGuildMetadataLoaded()), A = (0, l.e7)([O.Z], () => null != u ? O.Z.getMetadata() : null), L = (0, l.e7)([O.Z], () => null != u && (null == A ? void 0 : A.isPublished) ? O.Z.getSlug() : null), [k, M] = i.useState([!0]), [G, U] = i.useState(!0), [B, F] = i.useState([!1]), [H, z] = i.useState([""]), V = e => {
+      let t = Object.entries(I.z).filter(e => !H.includes(e[1].presentation)).map(e => ({
         label: e[1].presentation,
         value: e[0]
       }));
@@ -108,7 +108,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
             let i = W(n);
             null !== i ? (t[r] = i, e[r] = !0) : e[r] = !1
           } else e[r] = !0
-        }), H(t), M(e), U(e.every(e => !0 === e))
+        }), z(t), M(e), U(e.every(e => !0 === e))
       }
     }, [A]);
     let Y = (0, l.e7)([O.Z], () => null != u ? O.Z.getErrors() : null);
@@ -154,9 +154,9 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
       },
       q = (e, t) => {
         let n = [...A.socialLinks],
-          r = [...z],
+          r = [...H],
           i = [...k];
-        r[t] = e, n[t] = I.z[e].baseUrl, i[t] = !0, M(i), H(r), U(i.every(e => !0 === e)), (0, p.t$)(u.id, n)
+        r[t] = e, n[t] = I.z[e].baseUrl, i[t] = !0, M(i), z(r), U(i.every(e => !0 === e)), (0, p.t$)(u.id, n)
       },
       Q = (e, t) => {
         let n = [...A.socialLinks],
@@ -169,8 +169,8 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
         t.splice(e, 1), F(t);
         let n = [...k];
         n.splice(e, 1), M(n);
-        let r = [...z];
-        r.splice(e, 1), H(r);
+        let r = [...H];
+        r.splice(e, 1), z(r);
         let i = [...A.socialLinks];
         i.splice(e, 1), (0, p.t$)(u.id, i)
       },
@@ -432,9 +432,9 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       onBlur: () => en(t, !1),
                       children: [(0, r.jsx)(o.q4e, {
                         className: A.isPublished ? T.socialLinksDropdownMax : T.socialLinksDropdownMin,
-                        options: V(z[t]),
+                        options: V(H[t]),
                         placeholder: S.intl.string(S.t.xSALIC),
-                        value: z[t],
+                        value: H[t],
                         onChange: e => q(e, t),
                         isDisabled: !Z
                       }, "dropdown-" + t), (0, r.jsx)(o.oil, {
@@ -471,7 +471,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       onClick: () => {
                         if (A.socialLinks.length < 9) {
                           let e = [...A.socialLinks];
-                          (0, p.t$)(u.id, e.concat("")), H(z.concat(""))
+                          (0, p.t$)(u.id, e.concat("")), z(H.concat(""))
                         }
                       },
                       disabled: !Z || A.socialLinks.length >= 9

@@ -1,6 +1,6 @@
 /**
   Module ID: 82265
-  Original File Name: c0e274a68b2b2aaf
+  Original File Name: 92bb1da34152d027
 **/
 .editCard_a25a68 {
     background-color: var(--background-surface-high);
@@ -4142,19 +4142,6 @@
     margin-top: 4px
 }
 
-.lockedPill__1ea09 {
-    border: thin solid var(--text-default);
-    border-radius: var(--radius-sm);
-    color: var(--text-default);
-    padding: 6px 12px
-}
-
-.lockedPillInner__1ea09 {
-    align-items: center;
-    display: flex;
-    gap: 4px
-}
-
 .container_e9b3cb {
     background-color: var(--background-base-lower);
     border-radius: var(--radius-sm);
@@ -4853,19 +4840,6 @@
     margin: -1px 16px 0
 }
 
-.lockedPill__514d8 {
-    border: thin solid var(--text-default);
-    border-radius: var(--radius-sm);
-    color: var(--text-default);
-    padding: 6px 12px
-}
-
-.lockedPillInner__514d8 {
-    align-items: center;
-    display: flex;
-    gap: 4px
-}
-
 .advancedModeToggle__514d8 {
     margin-bottom: 16px;
     margin-top: 8px
@@ -4997,22 +4971,9 @@
     gap: 8px
 }
 
-.button__4a4f2 {
-    align-items: center;
-    display: flex;
-    font-size: 16px;
-    gap: 4px;
-    justify-content: center
-}
-
-.button__4a4f2.hidden__4a4f2 {
+.hidden__4a4f2 {
     opacity: 0;
     pointer-events: none
-}
-
-.arrow__4a4f2 {
-    height: 16px;
-    width: 16px
 }
 
 .enable-forced-colors .container__4a4f2 {
@@ -8607,13 +8568,9 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     border-radius: var(--radius-sm)
 }
 
-.actionItemEditButton_d2b0e4,.resourceChannelEditButton_d2b0e4 {
+.actionItemEditButton_d2b0e4 {
     color: var(--white-100);
     padding: 4px
-}
-
-.actionItemEditButtonInner_d2b0e4,.resourceChannelEditButtonInner_d2b0e4 {
-    height: 24px
 }
 
 .addActionItem_d2b0e4 {
@@ -8774,11 +8731,6 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 
 .suggestedChannelText_d2b0e4 {
     flex: 1 1 auto
-}
-
-.suggestedChannelButton_d2b0e4 {
-    flex: 0 0 auto;
-    padding: 8px 16px
 }
 
 .suggestedSeparator_d2b0e4 {
@@ -8970,17 +8922,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     text-transform: uppercase
 }
 
-.cta__28e57 {
-    margin-left: 16px
-}
-
-.ctaInner__28e57 {
-    align-items: center;
-    display: flex;
-    gap: 4px
-}
-
-.inlineSwitch__28e57 {
+.cta__28e57,.inlineSwitch__28e57 {
     margin-left: 16px
 }
 
@@ -12572,4 +12514,4 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     text-overflow: ellipsis
 }
 
-/*# sourceMappingURL=c0e274a68b2b2aaf.css.map*/
+/*# sourceMappingURL=92bb1da34152d027.css.map*/

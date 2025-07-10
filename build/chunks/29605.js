@@ -46,7 +46,7 @@ var r = n(255367),
   B = n(808574),
   F = n(588866);
 
-function z(e) {
+function H(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -64,7 +64,7 @@ function z(e) {
   }
   return e
 }
-let H = d().throttle(h.OQ, 1e3),
+let z = d().throttle(h.OQ, 1e3),
   V = e => {
     let {
       guildId: t,
@@ -84,7 +84,7 @@ let H = d().throttle(h.OQ, 1e3),
           text: n.available ? null : U.intl.string(U.t["KUzI7+"]),
           children: e => {
             var t, i;
-            return (0, r.jsx)("div", (t = z({}, e), i = i = {
+            return (0, r.jsx)("div", (t = H({}, e), i = i = {
               className: s()(B.emojiImage, {
                 [B.emojiDisabled]: !n.available
               }),
@@ -355,9 +355,9 @@ let H = d().throttle(h.OQ, 1e3),
     i.useEffect(() => {
       x && $()
     }, [x]), i.useEffect(() => {
-      H(e.id)
+      z(e.id)
     }, [e.id]), i.useEffect(() => {
-      null != h && h < c && H(e.id)
+      null != h && h < c && z(e.id)
     }, [c, h, e.id]);
     let K = i.useCallback(() => (0, C.i)({
         analyticsLocation: {
@@ -388,7 +388,7 @@ let H = d().throttle(h.OQ, 1e3),
           let {
             default: t
           } = await n.e("16169").then(n.bind(n, 935333));
-          return n => (0, r.jsx)(t, z({
+          return n => (0, r.jsx)(t, H({
             processFiles: () => J(e)
           }, n))
         })

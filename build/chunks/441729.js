@@ -1,58 +1,58 @@
-/** Chunk was on 24358 **/
-r.d(t, {
-  Z: () => p
+/** Chunk was on 74080 **/
+n.d(t, {
+  Z: () => h
 });
-var n, l = r(442837),
-  i = r(570140);
+var r, i = n(442837),
+  l = n(570140);
 
-function a(e, t, r) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
-    value: r,
+    value: n,
     enumerable: !0,
     configurable: !0,
     writable: !0
-  }) : e[t] = r, e
+  }) : e[t] = n, e
 }
 
-function o(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var r = null != arguments[t] ? arguments[t] : {},
-      n = Object.keys(r);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(r, e).enumerable
-    }))), n.forEach(function(t) {
-      a(e, t, r[t])
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      o(e, t, n[t])
     })
   }
   return e
 }
 
-function c(e, t) {
+function s(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var r = Object.keys(e);
+    var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var n = Object.getOwnPropertySymbols(e);
-      r.push.apply(r, n)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
-    return r
-  })(Object(t)).forEach(function(r) {
-    Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
+    return n
+  })(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let s = {
+let c = {
     speechRate: 1,
     currentMessage: null
   },
-  u = s;
-class b extends(n = l.ZP.DeviceSettingsStore) {
+  u = c;
+class d extends(r = i.ZP.DeviceSettingsStore) {
   initialize(e) {
-    u = o({}, s, null != e ? e : null)
+    u = a({}, c, null != e ? e : null)
   }
   isSpeakingMessage(e, t) {
     let {
-      currentMessage: r
+      currentMessage: n
     } = u;
-    return null !== r && r.channelId === e && r.messageId === t
+    return null !== n && n.channelId === e && n.messageId === t
   }
   get currentMessage() {
     return u.currentMessage
@@ -64,27 +64,27 @@ class b extends(n = l.ZP.DeviceSettingsStore) {
     return u
   }
 }
-a(b, "displayName", "TTSStore"), a(b, "persistKey", "TTSStore"), a(b, "migrations", []);
-let p = new b(i.Z, __OVERLAY__ ? {} : {
+o(d, "displayName", "TTSStore"), o(d, "persistKey", "TTSStore"), o(d, "migrations", []);
+let h = new d(l.Z, __OVERLAY__ ? {} : {
   SPEAKING_MESSAGE: function(e) {
     let {
       messageId: t,
-      channelId: r
+      channelId: n
     } = e;
-    u = c(o({}, u), {
+    u = s(a({}, u), {
       currentMessage: {
         messageId: t,
-        channelId: r
+        channelId: n
       }
     })
   },
   STOP_SPEAKING: function() {
-    u = c(o({}, u), {
+    u = s(a({}, u), {
       currentMessage: null
     })
   },
   SET_TTS_SPEECH_RATE: function(e) {
-    u = c(o({}, u), {
+    u = s(a({}, u), {
       speechRate: e.speechRate
     })
   }

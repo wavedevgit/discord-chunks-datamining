@@ -53,14 +53,14 @@ function O(e) {
   }), A = (0, a.cj)([h.Z], () => {
     var e;
     return null != (e = h.Z.errors[x]) ? e : v
-  }), [L, k] = i.useState(!1), [M, G] = i.useState(!1), U = null != (t = A.options) ? t : A.optionErrors.filter(g.lm)[0], B = A.config, F = l.options.length >= b.fY, z = (0, u.kl)(n.id, Array.from(P), [l]).length - P.size, H = i.useRef(null), V = i.useRef(x);
+  }), [L, k] = i.useState(!1), [M, G] = i.useState(!1), U = null != (t = A.options) ? t : A.optionErrors.filter(g.lm)[0], B = A.config, F = l.options.length >= b.fY, H = (0, u.kl)(n.id, Array.from(P), [l]).length - P.size, z = i.useRef(null), V = i.useRef(x);
   return (i.useEffect(() => {
     V.current = x
   }), i.useLayoutEffect(() => {
     setTimeout(() => {
       if (0 === V.current && !d) {
         var e;
-        null == (e = H.current) || e.focus()
+        null == (e = z.current) || e.focus()
       }
     }, 0)
   }, [d]), L) ? (0, r.jsx)(o.tEY, {
@@ -150,7 +150,7 @@ function O(e) {
       }), (0, r.jsx)(o.oil, {
         className: _.title,
         inputClassName: _.titleInput,
-        inputRef: H,
+        inputRef: z,
         value: l.title,
         onChange: e => (0, f.Kk)(n, l.id, {
           title: e
@@ -208,7 +208,7 @@ function O(e) {
               variant: "text-sm/normal",
               color: "interactive-normal",
               children: N ? j.intl.formatToPlainString(j.t["0re8T0"], {
-                count: z
+                count: H
               }) : j.intl.string(j.t.Ur8Vrq)
             })
           }) : null]

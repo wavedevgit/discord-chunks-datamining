@@ -326,7 +326,7 @@ function F(e) {
   })
 }
 
-function z(e) {
+function H(e) {
   let {
     onClose: t,
     guildId: n,
@@ -352,7 +352,7 @@ function z(e) {
   })
 }
 
-function H(e) {
+function z(e) {
   let {
     onClose: t,
     guildId: n,
@@ -480,14 +480,14 @@ function V(e) {
       width: 440,
       children: [(0, r.jsx)(m.Mi4, {
         id: 0,
-        children: (0, r.jsx)(z, {
+        children: (0, r.jsx)(H, {
           onClose: l,
           guildId: n,
           onSelect: o
         })
       }), (0, r.jsx)(m.Mi4, {
         id: 1,
-        children: (0, r.jsx)(H, {
+        children: (0, r.jsx)(z, {
           onClose: l,
           guildId: n,
           role: a,
