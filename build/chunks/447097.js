@@ -16,7 +16,7 @@ function d(e) {
     setSlide: d,
     onClose: c,
     isSlideReady: u
-  } = e, [h, f] = r.useState(!1), [m, g] = r.useState(null), [x, p] = r.useState(""), j = r.useRef(null), b = o.intl.string(o.t["C/ZAw8"]), S = o.intl.string(o.t.fZSi1N), y = r.useCallback(e => {
+  } = e, [h, f] = r.useState(!1), [m, g] = r.useState(null), [x, p] = r.useState(""), j = r.useRef(null), b = o.intl.string(o.t["C/ZAw8"]), y = o.intl.string(o.t.fZSi1N), S = r.useCallback(e => {
     p(e), g(null)
   }, [p, g]);
   return r.useEffect(() => {
@@ -43,8 +43,8 @@ function d(e) {
         title: b,
         children: [(0, l.jsx)(s.oil, {
           inputRef: j,
-          onChange: y,
-          placeholder: S,
+          onChange: S,
+          placeholder: y,
           maxLength: i.tL,
           minLength: i.th,
           value: x,

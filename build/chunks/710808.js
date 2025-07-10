@@ -203,26 +203,17 @@ function A(e) {
           note: v.intl.string(v.t["/7ak9f"]),
           children: v.intl.string(v.t["726JHB"])
         }), (0, i.jsx)(l.xJW, {
-          children: (0, i.jsxs)(m.Z, {
-            children: [(0, i.jsx)(m.Z.Child, {
-              grow: 0,
-              shrink: 0,
-              children: (0, i.jsx)(l.zxk, {
-                variant: "primary",
-                size: "sm",
-                text: v.intl.string(v.t["3UB9aW"]),
-                disabled: n,
-                onClick: Z
-              })
-            }), (0, i.jsx)(m.Z.Child, {
-              grow: 0,
-              shrink: 0,
-              children: (0, i.jsx)(l.zxk, {
-                variant: "primary",
-                size: "sm",
-                text: v.intl.string(v.t.nuPtYm),
-                onClick: I
-              })
+          children: (0, i.jsxs)(l.hE2, {
+            size: "sm",
+            children: [(0, i.jsx)(l.zxk, {
+              variant: "primary",
+              text: v.intl.string(v.t["3UB9aW"]),
+              disabled: n,
+              onClick: Z
+            }), (0, i.jsx)(l.zxk, {
+              variant: "primary",
+              text: v.intl.string(v.t.nuPtYm),
+              onClick: I
             })]
           })
         })]

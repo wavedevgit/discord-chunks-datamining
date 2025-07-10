@@ -19,7 +19,7 @@ function h(e) {
     setSlide: h,
     onClose: f,
     isSlideReady: m
-  } = e, [g, x] = r.useState(!1), [p, j] = r.useState(null), [b, S] = r.useState(!1), [y, v] = r.useState(null), [C, Z] = r.useState(""), w = r.useRef(null);
+  } = e, [g, x] = r.useState(!1), [p, j] = r.useState(null), [b, y] = r.useState(!1), [S, v] = r.useState(null), [C, Z] = r.useState(""), w = r.useRef(null);
   r.useEffect(() => {
     x(!0), s.tn.post({
       url: d.ANM.LOGIN_SMS_SEND,
@@ -47,14 +47,14 @@ function h(e) {
   });
   return (0, l.jsxs)("form", {
     onSubmit: e => {
-      e.preventDefault(), S(!0), n({
+      e.preventDefault(), y(!0), n({
         mfaType: "sms",
         data: C
       }).catch(e => {
         var t, n;
         v(null != (n = e.message) ? n : null == (t = e.body) ? void 0 : t.message)
       }).finally(() => {
-        S(!1)
+        y(!1)
       })
     },
     children: [(0, l.jsx)(o.Z.SlideHeader, {
@@ -96,7 +96,7 @@ function h(e) {
             }
           })]
         }), (0, l.jsx)(o.Z.SlideError, {
-          error: y
+          error: S
         })]
       })
     }), (0, l.jsx)(o.Z.SlideFooter, {

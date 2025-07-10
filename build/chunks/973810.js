@@ -21,10 +21,10 @@ function m(e) {
     setSlide: m,
     onClose: g
   } = e, [x, p] = r.useState(!1), [j, b] = r.useState(null), {
-    challenge: S
-  } = t.methods.find(e => "webauthn" === e.type), y = async () => {
+    challenge: y
+  } = t.methods.find(e => "webauthn" === e.type), S = async () => {
     p(!0), b(null);
-    let e = o.isPlatformEmbedded && c.ZP.supportsFeature(h.eRX.WEBAUTHN) ? c.ZP.webAuthnAuthenticate(S) : i.U2(JSON.parse(S)).then(e => JSON.stringify(e)),
+    let e = o.isPlatformEmbedded && c.ZP.supportsFeature(h.eRX.WEBAUTHN) ? c.ZP.webAuthnAuthenticate(y) : i.U2(JSON.parse(y)).then(e => JSON.stringify(e)),
       t = async e => {
         try {
           await n({
@@ -47,12 +47,10 @@ function m(e) {
   return (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(u.Z.SlideHeader, {
       onClose: g
-    }), null != j && (0, l.jsxs)(u.Z.SlideContent, {
-      children: [(0, l.jsx)(u.Z.SlideError, {
-        error: "The error is here now"
-      }), (0, l.jsx)(u.Z.SlideError, {
+    }), null != j && (0, l.jsx)(u.Z.SlideContent, {
+      children: (0, l.jsx)(u.Z.SlideError, {
         error: j
-      })]
+      })
     }), (0, l.jsx)(u.Z.SlideFooter, {
       mfaChallenge: t,
       setSlide: m,
@@ -60,7 +58,7 @@ function m(e) {
         variant: "primary",
         text: f.intl.string(f.t.Xr3Ekp),
         loading: x,
-        onClick: y,
+        onClick: S,
         fullWidth: !0
       })
     })]

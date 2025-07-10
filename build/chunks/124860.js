@@ -54,7 +54,7 @@ function g(e) {
     onEarlyClose: x,
     onClose: p,
     width: j = 440
-  } = e, [b, S] = r.useState(null != (n = null == (t = h.methods[0]) ? void 0 : t.type) ? n : "select"), [y, v] = r.useState(b), C = async e => {
+  } = e, [b, y] = r.useState(null != (n = null == (t = h.methods[0]) ? void 0 : t.type) ? n : "select"), [S, v] = r.useState(b), C = async e => {
     let {
       mfaType: t,
       data: n
@@ -67,7 +67,7 @@ function g(e) {
   }, Z = {
     mfaChallenge: h,
     finish: C,
-    setSlide: S,
+    setSlide: y,
     onClose: x
   };
   return (0, l.jsxs)(i.MyZ, {
@@ -83,22 +83,22 @@ function g(e) {
     }), (0, l.jsx)(i.Mi4, {
       id: "totp",
       children: (0, l.jsx)(c.Z, m(f({}, Z), {
-        isSlideReady: "totp" === y
+        isSlideReady: "totp" === S
       }))
     }), (0, l.jsx)(i.Mi4, {
       id: "sms",
       children: (0, l.jsx)(d.Z, m(f({}, Z), {
-        isSlideReady: "sms" === y
+        isSlideReady: "sms" === S
       }))
     }), (0, l.jsx)(i.Mi4, {
       id: "backup",
       children: (0, l.jsx)(s.Z, m(f({}, Z), {
-        isSlideReady: "backup" === y
+        isSlideReady: "backup" === S
       }))
     }), (0, l.jsx)(i.Mi4, {
       id: "password",
       children: (0, l.jsx)(a.Z, m(f({}, Z), {
-        isSlideReady: "password" === y
+        isSlideReady: "password" === S
       }))
     })]
   })
