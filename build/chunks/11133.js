@@ -1,96 +1,91 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => u
+  Z: () => d
 }), n(35282);
-var r = n(657305),
-  i = n(394821),
-  a = n(841784),
-  o = n(503438),
-  s = n(750154),
-  l = n(981631),
-  c = n(388032);
+var r = n(734959),
+  i = n(657305),
+  a = n(394821),
+  o = n(841784),
+  s = n(503438),
+  l = n(750154),
+  c = n(981631),
+  u = n(388032);
 
-function u(e) {
+function d(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
     n = (null == e ? void 0 : e.name) === "" ? null : null == e ? void 0 : e.name,
-    u = (null == e ? void 0 : e.details) === "" ? null : null == e ? void 0 : e.details,
-    d = (null == e ? void 0 : e.state) === "" ? null : null == e ? void 0 : e.state;
-  if ((0, a.Z)(e)) {
-    let e = (0, r.Z)(n);
+    d = (null == e ? void 0 : e.details) === "" ? null : null == e ? void 0 : e.details,
+    f = (null == e ? void 0 : e.state) === "" ? null : null == e ? void 0 : e.state,
+    _ = (null == e ? void 0 : e.type) === c.IIU.STREAMING && null != d ? d : n;
+  if ((null == e ? void 0 : e.status_display_type) === r.D.NAME && null != n ? _ = n : (null == e ? void 0 : e.status_display_type) === r.D.STATE && null != f ? _ = f : (null == e ? void 0 : e.status_display_type) === r.D.DETAILS && null != d && (_ = d), (0, o.Z)(e)) {
+    let e = (0, i.Z)(n);
     return {
       text: e,
       tooltip: e
     }
   }
-  if ((null == e ? void 0 : e.type) === l.IIU.PLAYING && null != n) return {
-    text: c.intl.format(c.t.lFApm5, {
-      game: n
+  if ((null == e ? void 0 : e.type) === c.IIU.PLAYING && null != _) return {
+    text: u.intl.format(u.t.lFApm5, {
+      game: _
     }),
-    tooltip: c.intl.formatToPlainString(c.t.lFApm5, {
-      game: n
+    tooltip: u.intl.formatToPlainString(u.t.lFApm5, {
+      game: _
     })
   };
-  if ((0, o.Z)(e) && t && null != d) {
-    var f;
-    let e = null == (f = d.split(";")) ? void 0 : f.join(", ");
+  if ((0, s.Z)(e) && t && null != f) {
+    var p;
+    let e = null == (p = f.split(";")) ? void 0 : p.join(", ");
     return {
-      text: c.intl.format(c.t.Vnuxub, {
+      text: u.intl.format(u.t.Vnuxub, {
         name: e
       }),
-      tooltip: c.intl.formatToPlainString(c.t.Vnuxub, {
+      tooltip: u.intl.formatToPlainString(u.t.Vnuxub, {
         name: e
       })
     }
   }
-  return (0, s.dS)(e) && null != n ? {
-    text: c.intl.format(c.t.pW3Ip6, {
+  return (0, l.dS)(e) && null != n ? {
+    text: u.intl.format(u.t.pW3Ip6, {
       name: n
     }),
-    tooltip: c.intl.formatToPlainString(c.t.pW3Ip6, {
+    tooltip: u.intl.formatToPlainString(u.t.pW3Ip6, {
       name: n
     })
-  } : (null == e ? void 0 : e.type) === l.IIU.LISTENING && null != n ? {
-    text: c.intl.format(c.t.Vnuxub, {
-      name: n
+  } : (null == e ? void 0 : e.type) === c.IIU.LISTENING && null != _ ? {
+    text: u.intl.format(u.t.Vnuxub, {
+      name: _
     }),
-    tooltip: c.intl.formatToPlainString(c.t.Vnuxub, {
-      name: n
+    tooltip: u.intl.formatToPlainString(u.t.Vnuxub, {
+      name: _
     })
-  } : (0, i.Z)(e) && t && null != u ? {
-    text: c.intl.format(c.t.pW3Ip6, {
-      name: u
+  } : (0, a.Z)(e) && t && null != d ? {
+    text: u.intl.format(u.t.pW3Ip6, {
+      name: d
     }),
-    tooltip: c.intl.formatToPlainString(c.t.pW3Ip6, {
-      name: u
+    tooltip: u.intl.formatToPlainString(u.t.pW3Ip6, {
+      name: d
     })
-  } : (null == e ? void 0 : e.type) === l.IIU.WATCHING && null != n ? {
-    text: c.intl.format(c.t.pW3Ip6, {
-      name: n
+  } : (null == e ? void 0 : e.type) === c.IIU.WATCHING && null != _ ? {
+    text: u.intl.format(u.t.pW3Ip6, {
+      name: _
     }),
-    tooltip: c.intl.formatToPlainString(c.t.pW3Ip6, {
-      name: n
+    tooltip: u.intl.formatToPlainString(u.t.pW3Ip6, {
+      name: _
     })
-  } : (null == e ? void 0 : e.type) === l.IIU.COMPETING && null != n ? {
-    text: c.intl.format(c.t.QQ2wVF, {
-      name: n
+  } : (null == e ? void 0 : e.type) === c.IIU.COMPETING && null != _ ? {
+    text: u.intl.format(u.t.QQ2wVF, {
+      name: _
     }),
-    tooltip: c.intl.formatToPlainString(c.t.QQ2wVF, {
-      name: n
+    tooltip: u.intl.formatToPlainString(u.t.QQ2wVF, {
+      name: _
     })
-  } : (null == e ? void 0 : e.type) === l.IIU.STREAMING && null != u ? {
-    text: c.intl.format(c.t["0wJXSk"], {
-      name: u
+  } : (null == e ? void 0 : e.type) === c.IIU.STREAMING && null != _ ? {
+    text: u.intl.format(u.t["0wJXSk"], {
+      name: _
     }),
-    tooltip: c.intl.formatToPlainString(c.t["0wJXSk"], {
-      name: u
-    })
-  } : (null == e ? void 0 : e.type) === l.IIU.STREAMING && null != n ? {
-    text: c.intl.format(c.t["0wJXSk"], {
-      name: n
-    }),
-    tooltip: c.intl.formatToPlainString(c.t["0wJXSk"], {
-      name: n
+    tooltip: u.intl.formatToPlainString(u.t["0wJXSk"], {
+      name: _
     })
   } : {}
 }

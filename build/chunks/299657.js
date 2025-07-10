@@ -58,8 +58,8 @@ let U = function(e) {
     [Y, K] = r.useState(!0),
     q = r.useRef(0),
     X = (0, I.M5)(G, L.p9.TIER_2),
-    Q = (0, R.n)(),
-    J = null == Q ? void 0 : Q.countryCode,
+    J = (0, R.n)(),
+    Q = null == J ? void 0 : J.countryCode,
     $ = (0, P.Z)({
       location: "PremiumMarketingPage"
     }),
@@ -70,9 +70,9 @@ let U = function(e) {
   }, [et]), r.useEffect(() => {
     c.Z.wait(async () => {
       let e = Date.now();
-      await Promise.all([d.jg(), (0, u.X8)(), d.tZ(), (0, m.Y2)(J, null, B.JjL.DISCOVERY), null != F && X && (0, C.Z)(F)]), q.current = Date.now() - e, K(!1)
+      await Promise.all([d.jg(), (0, u.X8)(), d.tZ(), (0, m.Y2)(Q, null, B.JjL.DISCOVERY), null != F && X && (0, C.Z)(F)]), q.current = Date.now() - e, K(!1)
     })
-  }, [J, F, X]), r.useEffect(() => {
+  }, [Q, F, X]), r.useEffect(() => {
     n && (null != H || null != z) && (0, A.a)(H, z)
   }, [n, H, z]), r.useEffect(() => {
     Y || N.default.track(B.rMx.PREMIUM_MARKETING_PAGE_VIEWED, {

@@ -116,8 +116,11 @@ let l = {
     name: e.string().required(),
     url: e.string().allow(null).optional(),
     application_id: e.string().optional(),
+    status_display_type: e.number().optional(),
     state: e.string().optional(),
+    state_url: e.string().optional(),
     details: e.string().optional(),
+    details_url: e.string().optional(),
     emoji: e.object({
       name: e.string().required(),
       id: e.string().allow(null).optional(),
@@ -126,8 +129,10 @@ let l = {
     assets: e.object({
       large_image: e.string().optional(),
       large_text: e.string().optional(),
+      large_url: e.string().optional(),
       small_image: e.string().optional(),
-      small_text: e.string().optional()
+      small_text: e.string().optional(),
+      small_url: e.string().optional()
     }).optional(),
     timestamps: e.object({
       start: e.number().optional(),

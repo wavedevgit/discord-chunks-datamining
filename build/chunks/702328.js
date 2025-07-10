@@ -53,8 +53,8 @@ let V = () => {
     z = (0, c.wj)(H),
     [W, Y] = r.useState(!1),
     [K, q] = r.useState(!1),
-    [X, Q] = r.useState(!1),
-    [J, $] = r.useState(!1),
+    [X, J] = r.useState(!1),
+    [Q, $] = r.useState(!1),
     [ee, et] = r.useState(!1),
     en = (0, l.e7)([x.Z], () => x.Z.getPremiumTypeSubscription()),
     ei = null != en ? (0, j.Af)(en) : null,
@@ -149,7 +149,7 @@ let V = () => {
         ref: ex.ref,
         children: (0, i.jsx)(o.$, {
           innerRef: n,
-          onChange: e => Q(e),
+          onChange: e => J(e),
           threshold: .1,
           active: !0,
           children: ed ? (0, i.jsx)(T.rz, {
@@ -173,7 +173,7 @@ let V = () => {
       }), (0, i.jsx)(o.$, {
         innerRef: V,
         onChange: e => {
-          e && !J && (_.default.track(B.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+          e && !Q && (_.default.track(B.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
             location_stack: ec
           }), $(!0))
         },
