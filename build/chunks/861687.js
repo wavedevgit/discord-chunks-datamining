@@ -487,13 +487,17 @@ class ev extends d.Z {
         return null != (t = await (null == (e = this._systemResources) ? void 0 : e.getBatteryLevelStats())) ? t : {
           batteryUsageRounded: null
         }
-      })(), P.Z.getKrispModel()]).then(e => {
+      })(), P.Z.getKrispModel(), x.Z.getKrispEnableStats() ? x.Z.getMediaEngine().getNoiseCancellationStats() : Promise.resolve(null)]).then(e => {
         let [{
           batteryUsageRounded: t
-        }, n] = e;
+        }, n, r] = e;
         G.default.track(eo.rMx.VOICE_DISCONNECT, ed(ec({}, s), {
           battery_usage: t,
-          krisp_nc_model: n
+          krisp_nc_model: n,
+          duration_low_noise_detected_ms: null == r ? void 0 : r.lowNoiseMs,
+          duration_medium_noise_detected_ms: null == r ? void 0 : r.mediumNoiseMs,
+          duration_high_noise_detected_ms: null == r ? void 0 : r.highNoiseMs,
+          duration_noise_cancellation_voice_detected_ms: null == r ? void 0 : r.talkTimeMs
         }))
       }), this._trackRemainingSecureFrameTransitions()
     }

@@ -78,6 +78,7 @@ function d(e) {
           }), (0, o.jsx)(i.zxk, {
             variant: "secondary",
             text: _.intl.string(_.t["ETE/oK"]),
+            type: "button",
             onClick: t
           })]
         })

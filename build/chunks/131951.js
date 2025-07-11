@@ -1364,7 +1364,7 @@ function nL(e) {
 
 function nx(e) {
   var t;
-  tc = e.enabled, null == (t = eH.setNoiseCancellationEnableStats) || t.call(eH, e.enabled)
+  (0, en.isWeb)() || (tc = e.enabled, null == (t = eH.setNoiseCancellationEnableStats) || t.call(eH, e.enabled))
 }
 
 function nk(e) {
