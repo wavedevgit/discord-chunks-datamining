@@ -386,13 +386,13 @@ let ee = l.memo(function(e) {
         showPending: !0
       }), L = g.isInteractionPlaceholder(), G = l.useMemo(() => {
         var e, t;
-        return L && null == g.author.avatar && (null == (e = g.application) ? void 0 : e.icon) != null && null != (t = Z.ZP.getApplicationIconURL({
+        return L && null == g.author.avatar && (null == (e = g.application) ? void 0 : e.icon) != null ? null != (t = Z.ZP.getApplicationIconURL({
           id: g.application.id,
           icon: g.application.icon,
           size: k,
           fallbackAvatar: !1
-        })) ? t : M
-      }, [L, null == (t = g.application) ? void 0 : t.icon, null == (n = g.application) ? void 0 : n.id, g.author.avatar, k, M]);
+        })) ? t : M : null != g.webhookId && null != g.author.avatar ? g.author.avatar : M
+      }, [L, g.webhookId, null == (t = g.application) ? void 0 : t.icon, null == (n = g.application) ? void 0 : n.id, g.author.avatar, k, M]);
       if (l.useEffect(() => {
           if (null != h) return R.S.subscribeKeyed(F.LPv.ANIMATE_CHAT_AVATAR, "".concat(h, ":").concat(g.author.id), N), () => void R.S.unsubscribeKeyed(F.LPv.ANIMATE_CHAT_AVATAR, "".concat(h, ":").concat(g.author.id), N)
         }, [g.author.id, h]), !b || _) return null != c && null != P ? (0, r.jsx)(d.Gt, {

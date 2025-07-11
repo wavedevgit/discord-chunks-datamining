@@ -100,15 +100,17 @@ function A(e) {
       loadingStartedLabel: L,
       loadingFinishedLabel: x,
       rounded: k = !1,
-      className: M,
-      style: j
+      type: M = "button",
+      rel: j,
+      className: U,
+      style: G
     } = e,
-    U = v(e, ["role", "variant", "size", "text", "icon", "iconPosition", "iconOpticalOffsetMargin", "fullWidth", "focusProps", "loading", "loadingStartedLabel", "loadingFinishedLabel", "rounded", "className", "style"]);
-  let G = (0, m.M)(),
-    B = null != (n = null == G ? void 0 : G.size) ? n : E,
-    V = null != (a = null == G ? void 0 : G.fullWidth) ? a : P;
+    B = v(e, ["role", "variant", "size", "text", "icon", "iconPosition", "iconOpticalOffsetMargin", "fullWidth", "focusProps", "loading", "loadingStartedLabel", "loadingFinishedLabel", "rounded", "type", "rel", "className", "style"]);
+  let V = (0, m.M)(),
+    F = null != (n = null == V ? void 0 : V.size) ? n : E,
+    Z = null != (a = null == V ? void 0 : V.fullWidth) ? a : P;
 
-  function F() {
+  function H() {
     if (0 === R) return {};
     switch (A) {
       case "start":
@@ -122,64 +124,66 @@ function A(e) {
     }
     return {}
   }
-  let Z = null != y;
+  let Y = null != y;
   null != I && (t = (0, r.jsx)(I, {
     color: "currentColor",
-    style: F(),
-    size: S[B],
+    style: H(),
+    size: S[F],
     className: g.icon
   }));
-  let H = i.useRef(null),
-    Y = "expressive" === d,
-    W = i.useContext(l.S),
-    K = (0, _.a)((0, p.ZP)()),
-    z = i.useRef(!1);
+  let W = i.useRef(null),
+    K = "expressive" === d,
+    z = i.useContext(l.S),
+    q = (0, _.a)((0, p.ZP)()),
+    X = i.useRef(!1);
   i.useEffect(() => {
-    !0 === D && (z.current = !0, s.u.announce(null != L ? L : h.intl.string(h.t.A11Y_LOADING_STARTED))), !1 === D && !0 === z.current && (s.u.announce(null != x ? x : h.intl.string(h.t.A11Y_LOADING_FINISHED)), z.current = !1)
+    !0 === D && (X.current = !0, s.u.announce(null != L ? L : h.intl.string(h.t.A11Y_LOADING_STARTED))), !1 === D && !0 === X.current && (s.u.announce(null != x ? x : h.intl.string(h.t.A11Y_LOADING_FINISHED)), X.current = !1)
   }, [D, L, x]);
-  let q = (0, r.jsxs)("div", {
+  let Q = (0, r.jsxs)("div", {
       className: o()(g.buttonChildren, {
         [g.loading]: D
       }),
-      children: [null != t && "start" === A && t, Z && (0, r.jsx)(f.x, {
+      children: [null != t && "start" === A && t, Y && (0, r.jsx)(f.x, {
         tag: "span",
-        variant: T[B],
+        variant: T[F],
         color: "none",
         lineClamp: 1,
         children: y
       }), null != t && "end" === A && t]
     }),
-    X = (0, r.jsx)(c.t, O(b({}, w), {
+    J = (0, r.jsx)(c.t, O(b({}, w), {
       children: (0, r.jsxs)("button", O(b({
         role: u,
         "aria-busy": D,
-        className: o()(g.button, g[B], g[d], {
-          [g.hasText]: Z,
-          [g.fullWidth]: V,
+        className: o()(g.button, g[F], g[d], {
+          [g.hasText]: Y,
+          [g.fullWidth]: Z,
           [g.rounded]: k
         }),
-        ref: H
-      }, U), {
-        children: [Y && (0, r.jsx)(C, {
-          hasReducedMotion: W.reducedMotion.enabled,
-          buttonRef: H,
-          isLightMode: K
+        ref: W,
+        rel: j,
+        type: M
+      }, B), {
+        children: [K && (0, r.jsx)(C, {
+          hasReducedMotion: z.reducedMotion.enabled,
+          buttonRef: W,
+          isLightMode: q
         }), null == D ? (0, r.jsx)("div", {
           className: g.buttonChildrenWrapper,
-          children: q
+          children: Q
         }) : (0, r.jsx)(N, {
           loading: D,
-          size: B,
-          children: q
+          size: F,
+          children: Q
         })]
       }))
     }));
-  return Y ? (0, r.jsx)("div", {
+  return K ? (0, r.jsx)("div", {
     className: o()(g.expressiveWrapper, {
-      [g.fullWidth]: V
+      [g.fullWidth]: Z
     }),
-    children: X
-  }) : X
+    children: J
+  }) : J
 }
 
 function N(e) {

@@ -306,11 +306,7 @@ function eU(e) {
     let t = o = e,
       n = V({}, s);
     Y.forEach(r => {
-      if (!K.has(r) && ("rulesChannelId" !== r && "publicUpdatesChannelId" !== r || n[r] !== G.b4)) {
-        if ("features" === r) {
-          t = (0, I.t8)(t, r, new Set(n[r]));
-          return
-        }
+      if (!K.has(r) && ("rulesChannelId" !== r && "publicUpdatesChannelId" !== r || n[r] !== G.b4) && "features" !== r) {
         if ("ownerConfiguredContentLevel" === r) {
           t = (0, I.t8)(t, r, e[r]);
           return

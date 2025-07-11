@@ -121,7 +121,7 @@ function O() {
         })]
       }), (0, i.jsxs)("div", {
         className: _.themePicker,
-        children: [t && (0, i.jsx)(d.i, {}), " ", s && (0, i.jsx)(f.Z, {
+        children: [t && (0, i.jsx)(d.i, {}), s && (0, i.jsx)(f.Z, {
           selected: null == u || null == (e = u.palette) ? void 0 : e.name,
           onSelect: e => {
             (null == u ? void 0 : u.src) != null && D(u.src, u.src, e), L(e)
