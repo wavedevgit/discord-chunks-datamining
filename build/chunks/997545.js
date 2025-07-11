@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => L
+  Z: () => x
 }), n(388685), n(290780), n(415506), n(49124), n(642613), n(35282), n(539854);
 var r = n(595182),
   i = n.n(r),
@@ -65,22 +65,26 @@ function A(e, t) {
 let N = 50,
   C = .9,
   R = .1,
-  P = 0;
+  P = 0,
+  w = {
+    fec: !0,
+    packetLossRate: .3
+  };
 
-function w(e) {
+function D(e) {
   return (null != e ? e : v.Qx) / v.Qx
 }
 
-function D(e) {
+function L(e) {
   return null != e && 0 !== e ? e + 1 : 0
 }
-class L extends _.Z {
+class x extends _.Z {
   static create(e, t, n) {
-    let r = new L(e, t, !0);
+    let r = new x(e, t, !0);
     return r.initialize(n), r
   }
   static createReplay(e, t) {
-    let n = new L(e, "0", !0),
+    let n = new x(e, "0", !0),
       r = (0, b.zS)();
     n.initializeStreamParameters([{
       type: O.Tr.VIDEO,
@@ -214,7 +218,13 @@ class L extends _.Z {
     this.conn.destroy(), Object.keys(this.localSpeakingFlags).filter(e => e !== this.userId).forEach(e => this.emit(m.Sh.Speaking, e, v.Dg.NONE, this.remoteAudioSSRCs[e])), this.setConnectionState(v.$j.DISCONNECTED), super.destroy()
   }
   setCodecs(e, t, n) {
-    this.conn.setTransportOptions(this.getCodecOptions(e, t, n)), this.videoEncoderFallbackPending && (this.videoEncoderFallbackPending = !1)
+    this.logger.info("Setting codecs for context: ".concat(n, ": ").concat(e, " ").concat(t));
+    let r = this.getCodecOptions(e, t, n),
+      i = e === v.ad.RED ? {
+        fec: !1,
+        packetLossRate: 0
+      } : w;
+    this.conn.setTransportOptions(T({}, r, i)), this.videoEncoderFallbackPending && (this.videoEncoderFallbackPending = !1)
   }
   getStats() {
     return this.connectionState === v.$j.DISCONNECTED ? Promise.resolve(null) : (0, d.timeout)(new Promise(e => {
@@ -237,7 +247,7 @@ class L extends _.Z {
           ssrc: t,
           videoSsrc: r,
           videoSsrcs: n,
-          rtxSsrc: D(r),
+          rtxSsrc: L(r),
           mute: this.getLocalMute(e),
           volume: this.getLocalVolume(e)
         };
@@ -324,7 +334,7 @@ class L extends _.Z {
   }
   getLocalVolume(e) {
     let t = this.localVolumes[e];
-    return null == t && (t = this.context === v.Yn.DEFAULT ? v.Qx : v.Yh), w(t)
+    return null == t && (t = this.context === v.Yn.DEFAULT ? v.Qx : v.Yh), D(t)
   }
   setLocalVolume(e, t) {
     this.localVolumes[e] = t;
@@ -574,7 +584,7 @@ class L extends _.Z {
       c = -1 !== l && this.videoStreamParameters.length > l,
       u = this.videoQualityManager.shouldEnableGoliveSimulcastForHqQuality(i),
       d = c && this.videoStreamParameters[l].active !== u;
-    c && (this.videoStreamParameters[l].active = u, this.simulcastLQDisabledSsrc = u ? void 0 : this.videoStreamParameters[l].ssrc), (o || d) && (this.emit(m.Sh.Video, this.userId, null, this.audioSSRC, this.videoStreamParameters[s].ssrc, D(this.videoStreamParameters[s].ssrc), this.videoStreamParameters), this.conn.setTransportOptions(this.applyQualityConstraints().constraints))
+    c && (this.videoStreamParameters[l].active = u, this.simulcastLQDisabledSsrc = u ? void 0 : this.videoStreamParameters[l].ssrc), (o || d) && (this.emit(m.Sh.Video, this.userId, null, this.audioSSRC, this.videoStreamParameters[s].ssrc, L(this.videoStreamParameters[s].ssrc), this.videoStreamParameters), this.conn.setTransportOptions(this.applyQualityConstraints().constraints))
   }
   setSDP(e) {}
   setRemoteVideoSinkWants(e) {
@@ -655,7 +665,7 @@ class L extends _.Z {
         ssrc: this.remoteAudioSSRCs[e],
         videoSsrc: t,
         videoSsrcs: this.remoteVideoSSRCs[e],
-        rtxSsrc: D(t),
+        rtxSsrc: L(t),
         mute: this.getLocalMute(e),
         volume: this.getLocalVolume(e)
       }
@@ -768,9 +778,7 @@ class L extends _.Z {
       inputModeOptions: this.createInputModeOptions(),
       minimumJitterBufferLevel: this.minimumJitterBufferLevel,
       postponeDecodeLevel: this.postponeDecodeLevel
-    }, this.getAttenuationOptions()), {
-      fec: !0,
-      packetLossRate: .3,
+    }, this.getAttenuationOptions(), w), {
       qos: this.qos,
       prioritySpeakerDucking: v.jg,
       encodingVoiceBitRate: this.voiceBitrate,
@@ -884,7 +892,7 @@ class L extends _.Z {
             })
           }
         })
-      }) : t > 0 ? (i[0].active = !0, i[0].ssrc = t, i[0].rtxSsrc = D(t)) : i[0].active = !1 : t > 0 && (void 0 !== this.remoteVideoSSRCs[e] ? this.remoteVideoSSRCs[e].includes(t) || (this.remoteVideoSSRCs[e] = [...this.remoteVideoSSRCs[e], t]) : this.remoteVideoSSRCs[e] = [t]), this.videoStreamParameters = i, this.emit(m.Sh.Video, e, null != n && "" !== n ? n : null, e === this.userId ? this.audioSSRC : this.remoteAudioSSRCs[e], t, D(t), this.videoStreamParameters)
+      }) : t > 0 ? (i[0].active = !0, i[0].ssrc = t, i[0].rtxSsrc = L(t)) : i[0].active = !1 : t > 0 && (void 0 !== this.remoteVideoSSRCs[e] ? this.remoteVideoSSRCs[e].includes(t) || (this.remoteVideoSSRCs[e] = [...this.remoteVideoSSRCs[e], t]) : this.remoteVideoSSRCs[e] = [t]), this.videoStreamParameters = i, this.emit(m.Sh.Video, e, null != n && "" !== n ? n : null, e === this.userId ? this.audioSSRC : this.remoteAudioSSRCs[e], t, L(t), this.videoStreamParameters)
     }), I(this, "handleFirstFrame", (e, t, n) => {
       this.emit(m.Sh.FirstFrame, e, t, n)
     }), I(this, "handleNoInput", e => {
