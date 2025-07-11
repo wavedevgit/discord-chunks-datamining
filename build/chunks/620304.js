@@ -76,16 +76,16 @@ function Z(e) {
   }, [t.id, R, t.premiumSubscriberCount]);
   let D = Math.min(R / Z * 100, 100),
     [L, M] = (0, d.q_F)(() => ({
-      width: R === t.premiumSubscriberCount ? "".concat(D, "%") : "0%",
+      width: R === t.premiumSubscriberCount ? "calc(".concat(D, "% - 4px)") : "0%",
       config: {
-        tension: 285,
-        damping: 10,
+        tension: 250,
+        damping: 5,
         mass: 1
       }
     }), "respect-motion-settings", [R, t.premiumSubscriberCount]);
   i.useEffect(() => {
     M({
-      width: "".concat(D, "%")
+      width: "calc(".concat(D, "% - 4px)")
     })
   }, [D, M]);
   let k = R >= Z,

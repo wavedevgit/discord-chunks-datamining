@@ -102,6 +102,8 @@ function G(e) {
     sendParam: n
   } = O.Z.getCurrentConfig({
     location: "GIFPickerSearchResults"
+  }, {
+    autoTrackExposure: !0
   }), r = y.Z.toURLSafe(e), i = null != r && U(r), a = t && i, o = n && i;
   return null != r && (j(r) || a || o) ? (o && r.searchParams.set("gif_treatment", String(+t)), a && r.searchParams.set("format", "webp"), (j(r) || a) && r.searchParams.set("animated", "true"), r.toString()) : e
 }
