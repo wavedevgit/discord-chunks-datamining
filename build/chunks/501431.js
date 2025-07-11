@@ -239,23 +239,25 @@ let g = {
       setIsFetchingResults: l
     } = (0, c.a)();
     r.useEffect(() => {
-      let r = _.subscribe(C, r => {
-          (async () => {
-            n(), l(!0);
-            try {
-              let t = await (0, s.y)(r);
-              e(O(t))
-            } catch (e) {
-              var i;
-              t(null != (i = null == e ? void 0 : e.message) ? i : "Unknown error")
-            } finally {
-              l(!1)
-            }
-          })()
-        }, {
+      let r = r => {
+        (async () => {
+          n(), l(!0);
+          try {
+            let t = await (0, s.y)(r);
+            e(O(t))
+          } catch (e) {
+            var i;
+            t(null != (i = null == e ? void 0 : e.message) ? i : "Unknown error")
+          } finally {
+            l(!1)
+          }
+        })()
+      };
+      r(C(_.getState()));
+      let i = _.subscribe(C, r, {
           equalityFn: (e, t) => JSON.stringify(e) === JSON.stringify(t)
         }),
-        i = _.subscribe(e => e.hasFilters(), (e, t) => {
+        a = _.subscribe(e => e.hasFilters(), (e, t) => {
           if (!e && t) {
             let e = _.getState();
             e.userHasSelectedSort || _.setState({
@@ -264,7 +266,7 @@ let g = {
           }
         });
       return () => {
-        r(), i()
+        i(), a()
       }
     }, [e, t, n, l])
   }

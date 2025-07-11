@@ -1,4 +1,4 @@
-/** Chunk was on 74080 **/
+/** Chunk was on 74390 **/
 n.d(t, {
   Z: () => ep
 }), n(388685);
@@ -358,7 +358,7 @@ function eh(e) {
       className: en.discoveryIcon,
       onClick: eS ? ej : void 0
     }),
-    eI = eS ? (0, r.jsx)(w.fO, el(ei({
+    eI = eS ? (0, r.jsx)(w.MP, el(ei({
       targetElementRef: eO,
       isGuildBarScrolling: q
     }, eE), {

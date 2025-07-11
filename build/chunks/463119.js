@@ -274,7 +274,7 @@ let L = e => {
         onShopButtonClick: s
       } = a,
       c = w(a, ["positionControlRef", "onShopButtonClick"]);
-    return (0, r.jsx)(_.Rg, x(Z({
+    return (0, r.jsx)(_.Pk, x(Z({
       targetElementRef: l,
       positionControlRef: o
     }, c), {
