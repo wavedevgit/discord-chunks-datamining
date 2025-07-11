@@ -19,7 +19,7 @@ var u = n(377171),
   m = n(709054),
   b = n(821020),
   _ = n(948154),
-  O = n(854454),
+  O = n(787879),
   y = n(370774),
   v = n(334426),
   C = n(862149),
@@ -48,7 +48,7 @@ function Z(e) {
   var t, n;
   let {
     includePanelSpacing: l
-  } = e, [a, u] = i.useState(x.V5.ALL), v = (0, s.e7)([O.ZP], () => O.ZP.oldestDisplayedMessageId), C = (0, s.Wu)([O.ZP], () => O.ZP.getInboxMessages()), j = (0, s.Wu)([g.ZP, f.Z], () => C.filter(e => !(0, y.YH)({
+  } = e, [a, u] = i.useState(x.V5.ALL), v = (0, s.e7)([O.Z], () => O.Z.oldestDisplayedMessageId), C = (0, s.Wu)([O.Z], () => O.Z.getInboxMessages()), j = (0, s.Wu)([g.ZP, f.Z], () => C.filter(e => !(0, y.YH)({
     messageId: e.id,
     channelId: e.channelId,
     guildId: e.guildId,
@@ -65,9 +65,9 @@ function Z(e) {
   }, [a]), {
     hasLoadedEver: Z,
     hasNotifyingChannels: M
-  } = (0, s.cj)([O.ZP], () => ({
-    hasLoadedEver: O.ZP.hasLoadedEver,
-    hasNotifyingChannels: null != O.ZP.getNotifyingChannelIds()
+  } = (0, s.cj)([O.Z], () => ({
+    hasLoadedEver: O.Z.hasLoadedEver,
+    hasNotifyingChannels: null != O.Z.getNotifyingChannelIds()
   }));
   i.useEffect(() => {
     M && !Z && P()
