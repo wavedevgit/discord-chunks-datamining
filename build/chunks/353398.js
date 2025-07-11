@@ -3,7 +3,7 @@
 n.d(t, {
   Q5: () => T,
   Sf: () => S,
-  ZP: () => P
+  ZP: () => w
 }), n(781311), n(953529), n(388685);
 var r, i = n(255367),
   l = n(73800),
@@ -77,11 +77,15 @@ function T() {
     submitting: e,
     onReset: S.reset,
     onSave: n,
-    disabled: "" === S.name.trim()
+    disabled: !P(S.name)
   })
 }
 
-function P() {
+function P(e) {
+  return null != e && e.trim().length >= 2
+}
+
+function w() {
   return (0, i.jsx)(g.hjN, {
     className: N.marginBottom4,
     children: (0, i.jsxs)(g.y5t, {
@@ -93,14 +97,14 @@ function P() {
         className: N.marginBottom20,
         type: g.geA.DESCRIPTION,
         children: C.intl.format(C.t.c0m8bG, {})
-      }), (0, i.jsx)(R, {}), (0, i.jsx)(g.$i$, {
+      }), (0, i.jsx)(Z, {}), (0, i.jsx)(g.$i$, {
         className: y.divider
-      }), (0, i.jsx)(w, {})]
+      }), (0, i.jsx)(R, {})]
     })
   })
 }
 
-function w() {
+function R() {
   let {
     guild: e
   } = v.Z.getProps();
@@ -145,7 +149,7 @@ function w() {
   });
   let o = null != t && null == t.getFirstFieldErrorMessage("name") && null == t.getFirstFieldErrorMessage("description");
   return (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(D, {}), (0, i.jsx)(A, {
+    children: [(0, i.jsx)(A, {}), (0, i.jsx)(L, {
       guild: e,
       guildTemplate: a
     }), o ? (0, i.jsx)(g.Text, {
@@ -157,7 +161,7 @@ function w() {
   })
 }
 
-function R() {
+function Z() {
   return (0, i.jsxs)("div", {
     className: y.descriptionBox,
     children: [(0, i.jsxs)("div", {
@@ -224,7 +228,7 @@ function R() {
   })
 }
 
-function Z(e) {
+function D(e) {
   let {
     cancel: t,
     confirm: n
@@ -244,20 +248,35 @@ function Z(e) {
   })
 }
 
-function D() {
+function A() {
   let e = (0, d.e7)([S], () => S.name),
     t = (0, d.e7)([S], () => S.description),
-    n = (0, d.e7)([S], () => S.error);
+    n = (0, d.e7)([S], () => S.error),
+    [r, s] = l.useState(!1),
+    a = l.useCallback(() => {
+      s(!1)
+    }, []),
+    o = l.useCallback(() => {
+      s(!0)
+    }, []),
+    c = l.useMemo(() => {
+      if (!(r || e.length < 1 || P(e))) return C.intl.string(C.t.IHAlh4)
+    }, [e, r]);
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(g.xJW, {
       className: N.marginBottom20,
       title: C.intl.string(C.t.z1a9R0),
+      required: !0,
       error: null == n ? void 0 : n.getFirstFieldErrorMessage("name"),
       children: (0, i.jsx)(g.oil, {
         value: e,
         onChange: e => S.setName(e),
         placeholder: C.intl.string(C.t.bMlpvr),
-        maxLength: 100
+        maxLength: 100,
+        onBlur: a,
+        onFocus: o,
+        autoFocus: !0,
+        error: c
       })
     }), (0, i.jsx)(g.xJW, {
       className: N.marginBottom20,
@@ -273,12 +292,12 @@ function D() {
   })
 }
 
-function A(e) {
+function L(e) {
   let {
     guild: t,
     guildTemplate: n
   } = e;
-  return null == n ? (0, i.jsx)(L, {
+  return null == n ? (0, i.jsx)(k, {
     guild: t
   }) : (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(g.xJW, {
@@ -295,15 +314,15 @@ function A(e) {
       children: C.intl.string(C.t.aWsjtL)
     }), (0, i.jsxs)("div", {
       className: a()(N.marginTop20, y.buttonContainer),
-      children: [n.isDirty && (0, i.jsx)(k, {
+      children: [n.isDirty && (0, i.jsx)(M, {
         guild: t,
         guildTemplate: n
       }), (0, i.jsxs)("div", {
         className: y.rightButtonContainer,
-        children: [(0, i.jsx)(M, {
+        children: [(0, i.jsx)(G, {
           guild: t,
           guildTemplate: n
-        }), (0, i.jsx)(G, {
+        }), (0, i.jsx)(U, {
           guildTemplate: n
         })]
       })]
@@ -316,7 +335,7 @@ function A(e) {
   })
 }
 
-function L(e) {
+function k(e) {
   let {
     guild: t
   } = e, n = (0, d.e7)([S], () => S.name), [r, s] = l.useState(!1), a = async () => {
@@ -332,12 +351,12 @@ function L(e) {
     variant: "primary",
     text: C.intl.string(C.t.Wxdi8P),
     loading: r,
-    disabled: !(null != n && n.trim().length >= 2),
+    disabled: !P(n),
     onClick: a
   })
 }
 
-function k(e) {
+function M(e) {
   let {
     guild: t,
     guildTemplate: n
@@ -362,7 +381,7 @@ function k(e) {
   })
 }
 
-function M(e) {
+function G(e) {
   let {
     guild: t,
     guildTemplate: n
@@ -384,14 +403,14 @@ function M(e) {
         text: C.intl.string(C.t["cN/RFB"]),
         onClick: () => s(!0)
       })
-    }), r ? (0, i.jsx)(Z, {
+    }), r ? (0, i.jsx)(D, {
       confirm: a,
       cancel: () => s(!1)
     }) : null]
   })
 }
 
-function G(e) {
+function U(e) {
   let {
     guildTemplate: t
   } = e;

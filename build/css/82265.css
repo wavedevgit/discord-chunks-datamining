@@ -1,6 +1,6 @@
 /**
   Module ID: 82265
-  Original File Name: 89cea5a16853ad94
+  Original File Name: e779f9ef6842c742
 **/
 .editCard_a25a68 {
     background-color: var(--background-surface-high);
@@ -12030,6 +12030,10 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     gap: 8px
 }
 
+.iconInput__0a560 {
+    position: relative
+}
+
 .container__0c9ee {
     gap: 16px;
     padding: 80px 40px;
@@ -12504,4 +12508,4 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     text-overflow: ellipsis
 }
 
-/*# sourceMappingURL=89cea5a16853ad94.css.map*/
+/*# sourceMappingURL=e779f9ef6842c742.css.map*/

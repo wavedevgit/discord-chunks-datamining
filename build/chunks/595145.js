@@ -15,9 +15,9 @@ var o = n(255367),
   p = n(368326),
   m = n(429467),
   b = n(320582),
-  _ = n(246016),
-  x = n(680295),
-  y = n(189156),
+  x = n(246016),
+  y = n(680295),
+  _ = n(189156),
   h = n(699516),
   g = n(246946),
   j = n(5192),
@@ -28,8 +28,8 @@ var o = n(255367),
   N = n(771362),
   A = n(510659),
   T = n(113557),
-  C = n(648052),
-  Z = n(867176),
+  Z = n(648052),
+  C = n(867176),
   w = n(280885),
   S = n(537006),
   E = n(681837),
@@ -47,9 +47,9 @@ var o = n(255367),
   H = n(693408),
   K = n(661462),
   W = n(768111),
-  q = n(228168),
-  z = n(981631),
-  X = n(388032),
+  z = n(228168),
+  X = n(981631),
+  q = n(388032),
   J = n(517603);
 
 function Q(e) {
@@ -82,8 +82,8 @@ function Q(e) {
     messageId: et,
     roleId: en,
     showGuildProfile: ed
-  }), eb = r.useRef(null), e_ = (0, s.Z)(eb), ex = (0, A.$m)(), ey = (0, l.q_F)({
-    opacity: +(null != ex.interactionType),
+  }), eb = r.useRef(null), ex = (0, s.Z)(eb), ey = (0, A.$m)(), e_ = (0, l.q_F)({
+    opacity: +(null != ey.interactionType),
     config: {
       duration: 150
     }
@@ -113,12 +113,12 @@ function Q(e) {
       user: n,
       currentUser: Q
     }),
-    eC = (0, _.Y)({
+    eZ = (0, x.Y)({
       userId: n.id
     }),
-    eZ = (0, b.vh)(n.id),
+    eC = (0, b.vh)(n.id),
     ew = (0, N.Z)(n.id),
-    eS = X.intl.formatToPlainString(X.t.KRe1Fh, {
+    eS = q.intl.formatToPlainString(q.t.KRe1Fh, {
       name: ej
     });
   return (0, o.jsx)(f.Gt, {
@@ -130,53 +130,48 @@ function Q(e) {
       fetchEndedAt: null == eg ? void 0 : eg.fetchEndedAt,
       isLoaded: null == eg ? void 0 : eg.isLoaded,
       children: (0, o.jsx)(A.NJ, {
-        value: ex,
+        value: ey,
         children: (0, o.jsxs)(l.Y0X, {
           hideShadow: !0,
           className: J.root,
           transitionState: ec,
           "aria-label": eS,
           parentComponent: "UserProfileModalV2",
-          children: [ef && (0, o.jsxs)(o.Fragment, {
-            children: [(0, o.jsx)("div", {
-              className: J.floatingTitle,
-              children: (0, o.jsx)(l.X6q, {
-                variant: "heading-md/normal",
-                color: "text-primary",
-                children: X.intl.string(X.t.SKNnqq)
-              })
-            }), (0, o.jsx)(l.P3F, {
-              className: J.closeModalButton,
+          children: [ef && (0, o.jsxs)("div", {
+            className: J.previewBar,
+            children: [(0, o.jsx)(l.X6q, {
+              variant: "heading-sm/normal",
+              color: "text-primary",
+              children: q.intl.string(q.t.apViam)
+            }), (0, o.jsx)(l.zxk, {
+              size: "sm",
+              variant: "secondary",
+              text: q.intl.string(q.t.ojM1xM),
               onClick: es,
-              "aria-label": X.intl.string(X.t.cpT0Cg),
-              children: (0, o.jsx)(l.Dio, {
-                size: "sm",
-                color: "currentColor",
-                "aria-hidden": !0
-              })
+              "aria-label": q.intl.string(q.t.cpT0Cg)
             })]
           }), (0, o.jsxs)(M.Z, {
             className: ef ? J.disabled : void 0,
             user: n,
             displayProfile: eg,
-            themeType: q.lY.MODAL_V2,
+            themeType: z.lY.MODAL_V2,
             children: [null != eP && (0, o.jsx)("div", {
               className: J.backgroundImage,
               style: {
                 backgroundImage: "url(".concat(eP, ")")
               }
-            }), null != ex.interactionType && (0, o.jsx)(i.animated.div, {
-              style: ey,
+            }), null != ey.interactionType && (0, o.jsx)(i.animated.div, {
+              style: e_,
               className: J.backdrop
             }), (0, o.jsxs)("div", {
               className: J.profile,
               ref: (null == eg ? void 0 : eg.profileEffectId) != null ? eb : void 0,
               children: [(0, o.jsxs)("div", {
                 className: J.profileHeader,
-                children: [(0, o.jsx)(Z.Z, {
+                children: [(0, o.jsx)(C.Z, {
                   user: n,
                   displayProfile: eg,
-                  themeType: q.lY.MODAL_V2
+                  themeType: z.lY.MODAL_V2
                 }), (0, o.jsx)(D.Z, {
                   userId: n.id,
                   onClose: es,
@@ -187,13 +182,13 @@ function Q(e) {
                   displayProfile: eg,
                   guildId: $,
                   channelId: ee,
-                  themeType: q.lY.MODAL_V2
+                  themeType: z.lY.MODAL_V2
                 }), (0, o.jsx)(V.Z, {
                   location: "UserProfileModalV2",
                   user: n,
                   guildId: $,
                   channelId: ee,
-                  themeType: q.lY.MODAL_V2,
+                  themeType: z.lY.MODAL_V2,
                   hasEntered: ec === l.Dvm.ENTERED,
                   prompt: eN && n.id === Q.id ? eA : null,
                   disableToolbar: ef
@@ -211,13 +206,13 @@ function Q(e) {
                   }),
                   nicknameVariant: "heading-xl/semibold",
                   pronouns: null == eg ? void 0 : eg.pronouns,
-                  tags: (0, o.jsx)(C.Z, {
+                  tags: (0, o.jsx)(Z.Z, {
                     displayProfile: eg,
-                    themeType: q.lY.MODAL_V2,
+                    themeType: z.lY.MODAL_V2,
                     onClose: es
                   })
                 }), (0, o.jsxs)(l.y5t, {
-                  children: [eI === z.OGo.PENDING_INCOMING && (0, o.jsx)(M.Z.Overlay, {
+                  children: [eI === X.OGo.PENDING_INCOMING && (0, o.jsx)(M.Z.Overlay, {
                     className: J.profileOverlay,
                     children: (0, o.jsx)(L.Z, {
                       user: n,
@@ -226,7 +221,7 @@ function Q(e) {
                       channelId: ee,
                       className: J.profileBanner
                     })
-                  }), eZ.map(e => {
+                  }), eC.map(e => {
                     var t;
                     let {
                       applicationId: r
@@ -245,14 +240,14 @@ function Q(e) {
                   }), n.isProvisional && (0, o.jsx)(M.Z.Overlay, {
                     className: J.profileOverlay,
                     children: (0, o.jsx)(H.Z, {
-                      heading: X.intl.string(X.t.Iyka0d),
+                      heading: q.intl.string(q.t.Iyka0d),
                       headingVariant: "text-md/semibold",
                       headingIcon: (0, o.jsx)(l.P4T, {
                         size: "xs",
                         color: "currentColor"
                       }),
                       className: J.profileBanner,
-                      children: (0, o.jsx)(y.n, {
+                      children: (0, o.jsx)(_.n, {
                         userId: n.id,
                         variant: "text-sm/normal"
                       })
@@ -277,17 +272,17 @@ function Q(e) {
                   }), (null == eg ? void 0 : eg.bio) != null && (null == eg ? void 0 : eg.bio) !== "" && !eO && (0, o.jsx)(w.Z, {
                     userBio: eg.bio,
                     setLineClamp: !1
-                  }), eC.length > 0 && (0, o.jsx)(H.Z, {
-                    heading: X.intl.string(X.t["Uv/eT0"]),
+                  }), eZ.length > 0 && (0, o.jsx)(H.Z, {
+                    heading: q.intl.string(q.t["Uv/eT0"]),
                     children: (0, o.jsx)(B.Z, {
-                      applicationIds: eC
+                      applicationIds: eZ
                     })
                   }), (0, o.jsx)(H.Z, {
-                    heading: X.intl.string(X.t.a6XYDw),
+                    heading: q.intl.string(q.t.a6XYDw),
                     children: (0, o.jsx)(U.Z, {
                       userId: n.id,
                       guildId: null == eg ? void 0 : eg.guildId,
-                      tooltipDelay: q.vB
+                      tooltipDelay: z.vB
                     })
                   }), (null == eg ? void 0 : eg.guildId) != null && (0, o.jsx)(G.Z, {
                     user: n,
@@ -296,22 +291,22 @@ function Q(e) {
                     className: J.profileRolesSection,
                     headingVariant: "text-xs/medium",
                     headingColor: "currentColor",
-                    scrollIntoView: ei === q.Tb.ROLES
+                    scrollIntoView: ei === z.Tb.ROLES
                   }), ew.length > 0 && (0, o.jsx)(H.Z, {
-                    heading: X.intl.string(X.t["3fe7U1"]),
-                    scrollIntoView: ei === q.Tb.CONNECTIONS,
+                    heading: q.intl.string(q.t["3fe7U1"]),
+                    scrollIntoView: ei === z.Tb.CONNECTIONS,
                     children: (0, o.jsx)(Y.Z, {
                       connections: ew,
                       userId: n.id,
                       className: J.profileAppConnections
                     })
                   }), (0, o.jsx)(H.Z, {
-                    heading: X.intl.string(X.t["mQKv+v"]),
-                    scrollIntoView: ei === q.Tb.NOTE,
+                    heading: q.intl.string(q.t["mQKv+v"]),
+                    scrollIntoView: ei === z.Tb.NOTE,
                     children: (0, o.jsx)(a.Z, {
                       userId: n.id,
                       className: J.profileNote,
-                      autoFocus: ei === q.Tb.NOTE,
+                      autoFocus: ei === z.Tb.NOTE,
                       onUpdate: () => (0, O.pQ)(function(e) {
                         for (var t = 1; t < arguments.length; t++) {
                           var n = null != arguments[t] ? arguments[t] : {},
@@ -335,9 +330,9 @@ function Q(e) {
                     })
                   })]
                 })]
-              }), (null == eg ? void 0 : eg.profileEffectId) != null && (0, o.jsx)(x.Z, {
+              }), (null == eg ? void 0 : eg.profileEffectId) != null && (0, o.jsx)(y.Z, {
                 profileEffectId: null == eg ? void 0 : eg.profileEffectId,
-                isHovering: e_
+                isHovering: ex
               })]
             }), (0, o.jsx)(l.y5t, {
               children: (0, o.jsx)(K.Z, {
