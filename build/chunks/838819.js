@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.r(t), n.d(t, {
-  default: () => F
+  default: () => D
 }), n(388685);
 var r = n(255367),
   l = n(73800),
@@ -51,7 +51,7 @@ let Z = e => {
       return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
     }, [n, i, r]), t
   },
-  F = function(e) {
+  D = function(e) {
     let {
       isFullScreen: t = !0,
       tab: n = N.AW.HOME
@@ -61,15 +61,15 @@ let Z = e => {
       c = (0, s.e7)([O.default], () => O.default.getCurrentUser()),
       w = l.useRef(null),
       {
-        closeIntroToOrbsClaimedCoachmark: F
+        closeIntroToOrbsClaimedCoachmark: D
       } = (0, _.Z)({
         location: "CollectiblesShop"
       });
     l.useEffect(() => () => {
-      F()
-    }, [i, F]);
+      D()
+    }, [i, D]);
     let {
-      onClose: D
+      onClose: F
     } = (0, I.Db)(), {
       categories: M,
       refreshCategories: H
@@ -131,7 +131,7 @@ let Z = e => {
           pageSize: N.kN
         },
         children: (0, r.jsx)(Z, {
-          onClose: D,
+          onClose: F,
           shouldAddEventListener: t && !$,
           children: (0, r.jsx)("div", {
             className: R.shop,
@@ -150,7 +150,7 @@ let Z = e => {
                 children: [(0, r.jsx)(k.I, {
                   isFullScreen: t,
                   isLayer: $,
-                  onClose: D,
+                  onClose: F,
                   handleTransition: Q,
                   selectedTab: K
                 }), (0, r.jsx)(P.Z, {

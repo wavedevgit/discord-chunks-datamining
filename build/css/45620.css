@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: 50eb9722ccf7210d
+  Original File Name: 00c02b69a6ba581c
 **/
 .countDownWrapper_a1b7b8 {
     align-items: center;
@@ -136,7 +136,7 @@
 }
 
 .inventoryWrapper__6db1d {
-    align-items: center;
+    align-items: flex-start;
     display: flex;
     flex: 1;
     justify-content: center;
@@ -1915,4 +1915,4 @@
     cursor: pointer
 }
 
-/*# sourceMappingURL=50eb9722ccf7210d.css.map*/
+/*# sourceMappingURL=00c02b69a6ba581c.css.map*/

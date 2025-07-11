@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 a.d(t, {
-  Z: () => Z
+  Z: () => D
 }), a(388685), a(49124);
 var n = a(255367),
   r = a(73800),
@@ -91,7 +91,25 @@ function w(e) {
     })]
   })
 }
-let I = [{
+let I = new Set(["client_performance_cpu", "client_performance_memory"]),
+  R = (e, t, a) => {
+    let n = e.filter(e => e.event === t);
+    if (0 === n.length) return {
+      average: null,
+      count: 0
+    };
+    let r = null,
+      l = 0;
+    for (let e of n) {
+      let t = e.properties[a];
+      "number" == typeof t && (l += 1, null == r ? r = t : r += t)
+    }
+    return {
+      average: null !== r ? r / n.length : null,
+      count: l
+    }
+  },
+  k = [{
     id: "details",
     name: "Details",
     group: O.v0.NONE,
@@ -103,8 +121,9 @@ let I = [{
           timestamp: r,
           fingerprint: l
         },
-        onClose: s
-      } = e, c = b.default.getUser(l), d = o()(r);
+        onClose: s,
+        filteredEvents: c
+      } = e, d = b.default.getUser(l), p = o()(r);
       return (0, n.jsxs)("div", {
         "data-mtctest-ignore": "true",
         children: [(0, n.jsxs)(x.ZP, {
@@ -148,7 +167,7 @@ let I = [{
                 event: t,
                 timestamp: r,
                 fingerprint: l,
-                user: null == c ? void 0 : c.id
+                user: null == d ? void 0 : d.id
               }, a), (e, t) => void 0 === t ? null : t, 2))
             }
           }), (0, n.jsx)(x.ZP.Icon, {
@@ -163,14 +182,14 @@ let I = [{
             copyValue: r.toISOString(),
             children: (0, n.jsxs)("time", {
               dateTime: r.toISOString(),
-              title: (0, v.vc)(d, "LLLL"),
-              children: ["(", o().locale(), ") ", (0, v.Y4)(d)]
+              title: (0, v.vc)(p, "LLLL"),
+              children: ["(", o().locale(), ") ", (0, v.Y4)(p)]
             })
-          }), null != c && (0, n.jsx)(_.Z9, {
+          }), null != d && (0, n.jsx)(_.Z9, {
             name: "User",
-            copyValue: c.id,
+            copyValue: d.id,
             children: (0, n.jsx)(m.Z, {
-              user: c
+              user: d
             })
           }), (0, n.jsx)(_.Z9, {
             name: "Fingerprint",
@@ -181,28 +200,38 @@ let I = [{
           })]
         }), (0, n.jsx)(P, {
           children: Object.entries(a).map(e => {
-            let [t, a] = e;
-            return (0, n.jsx)(w, {
-              name: "".concat(t, ":"),
-              copyValue: {
-                [t]: a || null
-              },
-              children: null != a ? (0, n.jsx)("code", {
-                children: JSON.stringify(a)
-              }) : (0, n.jsx)("code", {
-                className: T.emptyProperty,
-                children: "null"
-              })
-            }, t)
+            let [a, r] = e, l = I.has(a) ? R(c, t, a) : null;
+            return (0, n.jsxs)("div", {
+              children: [(0, n.jsx)(w, {
+                name: "".concat(a, ":"),
+                copyValue: {
+                  [a]: r || null
+                },
+                children: null != r ? (0, n.jsx)("code", {
+                  children: JSON.stringify(r)
+                }) : (0, n.jsx)("code", {
+                  className: T.emptyProperty,
+                  children: "null"
+                })
+              }, a), null !== l && null !== l.average && (0, n.jsx)(w, {
+                name: "".concat(a, "_avg:"),
+                copyValue: {
+                  [a]: r || null
+                },
+                children: (0, n.jsxs)("code", {
+                  children: [l.average.toFixed(3), " (", l.count, ")"]
+                })
+              }, "".concat(a, "_avg"))]
+            }, "".concat(a, "_container"))
           })
         })]
       })
     }
   }],
-  R = {
+  Z = {
     events: {
       label: "Events",
-      filter: e => Object.entries(R).filter(e => {
+      filter: e => Object.entries(Z).filter(e => {
         let [t] = e;
         return "events" !== t
       }).map(t => {
@@ -225,7 +254,7 @@ let I = [{
       filter: e => e.event.startsWith("network_action")
     }
   },
-  k = {
+  A = {
     searchType: p.S.REGEX,
     searchStringGenerator: e => {
       let {
@@ -237,19 +266,19 @@ let I = [{
     throttleMs: 100
   };
 
-function Z() {
+function D() {
   let e = r.useRef(null),
     [t, a] = r.useState(""),
     l = (0, c.e7)([j.Z], () => j.Z.loggedEventsVersion),
-    [s, o] = r.useState(() => Object.keys(R)),
+    [s, o] = r.useState(() => Object.keys(Z)),
     [m, x] = r.useState(j.Z.loggedEvents),
     p = r.useCallback(e => {
       x(e)
     }, []);
-  (0, h.BO)(t, j.Z.loggedEvents, p, k, [l]);
+  (0, h.BO)(t, j.Z.loggedEvents, p, A, [l]);
   let b = m.filter(e => {
       for (let t of s)
-        if (R[t].filter(e)) return !0;
+        if (Z[t].filter(e)) return !0;
       return !1
     }),
     [f, v] = r.useState(void 0),
@@ -258,7 +287,7 @@ function Z() {
       TabBar: P,
       renderSelectedTab: w
     } = (0, O.ZP)({
-      tabs: I
+      tabs: k
     }, []);
   return (0, n.jsxs)("div", {
     ref: e,
@@ -282,7 +311,7 @@ function Z() {
         className: T.toolbarDivider
       }), (0, n.jsx)("div", {
         className: T.filters,
-        children: Object.entries(R).map(e => {
+        children: Object.entries(Z).map(e => {
           let [t, a] = e;
           return (0, n.jsx)(u.P3F, {
             className: i()(T.filter, s.includes(t) && T.activeFilter),
@@ -313,7 +342,8 @@ function Z() {
       initialHeight: null != e.current ? e.current.clientHeight / 2 : 300,
       children: [(0, n.jsx)(P, {}), w({
         loggedEvent: _,
-        onClose: () => v(void 0)
+        onClose: () => v(void 0),
+        filteredEvents: b
       })]
     })]
   })

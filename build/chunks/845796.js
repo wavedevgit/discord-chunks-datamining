@@ -15,8 +15,9 @@ var r = n(255367),
 let p = () => {
   let {
     sort: e,
-    onSetSort: t
-  } = (0, s.S)(), n = l.useCallback(e => {
+    onSetSort: t,
+    hasRelevanceFilters: n
+  } = (0, s.S)(), p = n(), g = l.useMemo(() => c.aP.filter(e => e.sortType !== a.E.RELEVANCE || p), [p]), f = l.useCallback(e => {
     let {
       sortType: t,
       sortDirection: n
@@ -37,7 +38,7 @@ let p = () => {
       label: u.intl.string(u.t.Y68e5u),
       value: "popularity"
     }
-  }, []), p = l.useCallback(e => ({
+  }, []), h = l.useCallback(e => ({
     recent: {
       sortType: a.E.RECENCY,
       sortDirection: i.F.DESC
@@ -58,13 +59,13 @@ let p = () => {
       sortType: a.E.RELEVANCE,
       sortDirection: i.F.DESC
     }
-  })[e], []), g = n(e);
+  })[e], []), b = f(e);
   return (0, r.jsx)(o.PhF, {
     look: o.qQH.CUSTOM,
     className: d.custom,
-    options: c.aP.map(n),
-    select: e => t(p(e)),
-    isSelected: e => e === g.value,
+    options: g.map(f),
+    select: e => t(h(e)),
+    isSelected: e => e === b.value,
     serialize: e => e,
     popoutWidth: 224
   })

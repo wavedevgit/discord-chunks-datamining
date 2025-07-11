@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: 8c411219a373b2fc
+  Original File Name: 99ac1985decb7317
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -728,7 +728,8 @@
 
 .subPanel_fb48ea {
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    overflow: scroll
 }
 
 .toolbar_fb48ea {
@@ -3375,4 +3376,4 @@
     width: 100%
 }
 
-/*# sourceMappingURL=8c411219a373b2fc.css.map*/
+/*# sourceMappingURL=99ac1985decb7317.css.map*/

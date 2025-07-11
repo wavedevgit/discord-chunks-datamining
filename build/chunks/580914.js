@@ -49,7 +49,7 @@ let Z = {
     type: s.z.HERO,
     categoryStoreListingId: ""
   },
-  F = e => {
+  D = e => {
     var t, n, r, l, i, a;
     return null == e ? Z : {
       rankedSkuIds: null != (r = e.heroRanking) ? r : [],
@@ -71,7 +71,7 @@ let Z = {
       backgroundStyle: null == (n = e.heroBannerConfig) ? void 0 : n.backgroundStyle
     }
   },
-  D = e => {
+  F = e => {
     let {
       isResponsive: t,
       heroBannerOverrides: n
@@ -111,7 +111,7 @@ let Z = {
       showBetaTag: q
     } = m.Z.useExperiment({
       location: "collectible_hero_block"
-    }), Y = l.useMemo(() => null != M ? M : F(P), [M, P]), {
+    }), Y = l.useMemo(() => null != M ? M : D(P), [M, P]), {
       isPreviewingStaticBanner: K,
       bannerOverrides: X,
       bannerStyleOverrides: Q,
@@ -140,7 +140,7 @@ let Z = {
           src: ee,
           autoPlay: !0,
           loop: !0
-        }), (null == Q ? void 0 : Q.hideSideShadow) === !0 ? null : (0, r.jsx)(D, {
+        }), (null == Q ? void 0 : Q.hideSideShadow) === !0 ? null : (0, r.jsx)(F, {
           heroBannerOverrides: et,
           isResponsive: en
         })]
