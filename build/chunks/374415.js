@@ -17,21 +17,22 @@ function s(e) {
     padding: c,
     className: u,
     children: d,
-    fullWidth: f = !1
-  } = e, _ = i.useMemo(() => ({
+    wrap: f = !0,
+    fullWidth: _ = !1
+  } = e, p = i.useMemo(() => ({
     size: t,
-    fullWidth: f
-  }), [t, f]);
+    fullWidth: _
+  }), [t, _]);
   return (0, r.jsx)(a.Kq, {
     direction: n,
     gap: 8,
     justify: s,
     align: l,
-    wrap: !0,
+    wrap: f,
     padding: c,
     className: u,
     children: (0, r.jsx)(o.u.Provider, {
-      value: _,
+      value: p,
       children: d
     })
   })

@@ -126,7 +126,8 @@ function A(e) {
   null != I && (t = (0, r.jsx)(I, {
     color: "currentColor",
     style: F(),
-    size: S[B]
+    size: S[B],
+    className: g.icon
   }));
   let H = i.useRef(null),
     Y = "expressive" === d,
