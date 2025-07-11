@@ -60,7 +60,6 @@ let O = e => {
         look: a.zx.Looks.FILLED,
         size: a.Ph.ICON,
         innerClassName: y.giftButtonInner,
-        "aria-label": g.intl.string(g.t.PEjaCw),
         onClick: e => {
           e.stopPropagation(), u.default.track(m.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
             collectibles_shop_session_id: null == S ? void 0 : S.sessionId,

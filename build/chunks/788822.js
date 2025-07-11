@@ -5,9 +5,9 @@ n.d(t, {
 });
 var r = n(255367),
   l = n(73800),
-  o = n(120356),
-  i = n.n(o),
-  a = n(180650),
+  i = n(120356),
+  a = n.n(i),
+  o = n(180650),
   s = n(622535),
   c = n(755721),
   u = n(481060),
@@ -20,7 +20,7 @@ var r = n(255367),
   m = n(388032),
   _ = n(806734);
 let C = e => {
-  var t, n, o, C;
+  var t, n, i, C;
   let O, {
     category: v,
     subblock: E,
@@ -36,10 +36,10 @@ let C = e => {
       featuredBlockBanner: T
     } = (0, h.YG)(v, E),
     P = l.useRef(null),
-    L = y === a.T.NAMEPLATES_V3,
+    L = y === o.T.NAMEPLATES_V3,
     k = L ? "NAMEPLATES VOL.3" : null,
     I = null == E ? void 0 : E.bodyText,
-    B = (0, p.sp)();
+    N = (0, p.sp)();
   return (0, r.jsx)(s.$, {
     innerRef: P,
     onChange: j,
@@ -52,13 +52,13 @@ let C = e => {
       },
       onClick: () => {
         x("shop marketing tile", y), d.default.track(b.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-          collectibles_shop_session_id: null == B ? void 0 : B.sessionId,
+          collectibles_shop_session_id: null == N ? void 0 : N.sessionId,
           sku_id: y,
           page_type: "home",
-          page_section: null == B ? void 0 : B.pageSection,
-          page_category: null == B ? void 0 : B.pageCategory,
+          page_section: null == N ? void 0 : N.pageSection,
+          page_category: null == N ? void 0 : N.pageCategory,
           tile_type: "FEATURED_BLOCK",
-          tile_position: String(null == B ? void 0 : B.tilePosition),
+          tile_position: String(null == N ? void 0 : N.tilePosition),
           cta_name: null
         })
       },
@@ -70,11 +70,11 @@ let C = e => {
         className: _.featuredBlockTextContainer,
         children: [null != k && (0, r.jsx)(u.X6q, {
           lineClamp: 2,
-          className: i()(_.featuredBlockTitleText, {
+          className: a()(_.featuredBlockTitleText, {
             [_.featuredBlockTitleTextNameplate]: L
           }),
           style: {
-            color: null != (o = null == E ? void 0 : E.bannerTextColor) ? o : "white"
+            color: null != (i = null == E ? void 0 : E.bannerTextColor) ? i : "white"
           },
           variant: "heading-xl/semibold",
           children: k
@@ -92,13 +92,13 @@ let C = e => {
         color: c.Tt.WHITE,
         onClick: e => {
           x("shop marketing take me there button", y), e.stopPropagation(), d.default.track(b.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-            collectibles_shop_session_id: null == B ? void 0 : B.sessionId,
+            collectibles_shop_session_id: null == N ? void 0 : N.sessionId,
             sku_id: y,
             page_type: "home",
-            page_section: null == B ? void 0 : B.pageSection,
-            page_category: null == B ? void 0 : B.pageCategory,
+            page_section: null == N ? void 0 : N.pageSection,
+            page_category: null == N ? void 0 : N.pageCategory,
             tile_type: "FEATURED_BLOCK",
-            tile_position: String(null == B ? void 0 : B.tilePosition),
+            tile_position: String(null == N ? void 0 : N.tilePosition),
             cta_name: "Take me there button"
           })
         },

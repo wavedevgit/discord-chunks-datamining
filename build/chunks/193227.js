@@ -5,9 +5,9 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   l = n(73800),
-  o = n(120356),
-  i = n.n(o),
-  a = n(399606),
+  i = n(120356),
+  a = n.n(i),
+  o = n(399606),
   s = n(481060),
   c = n(434650),
   u = n(594174),
@@ -32,8 +32,8 @@ function j(e) {
     products: t,
     header: n,
     category: l
-  } = e, o = (0, a.e7)([u.default], () => u.default.getCurrentUser()), i = (0, E.St)(t);
-  return null == o || 0 === t.length ? null : (0, r.jsxs)("div", {
+  } = e, i = (0, o.e7)([u.default], () => u.default.getCurrentUser()), a = (0, E.St)(t);
+  return null == i || 0 === t.length ? null : (0, r.jsxs)("div", {
     children: [null != n ? (0, r.jsx)(s.Text, {
       className: y.itemTypeTitle,
       color: "header-secondary",
@@ -43,14 +43,14 @@ function j(e) {
       size: 24
     }), (0, r.jsx)("div", {
       className: y.cardsContainer,
-      children: i.map((e, t) => (0, r.jsx)(d.k0, {
+      children: a.map((e, t) => (0, r.jsx)(d.k0, {
         newValue: {
           tilePosition: t
         },
         children: (0, r.jsx)(C.Z, {
           category: l,
           product: e,
-          user: o,
+          user: i,
           tab: x.AW.CATALOG
         }, e.skuId)
       }, e.skuId))
@@ -72,21 +72,21 @@ function P(e) {
   let {
     category: t,
     isFullScreen: n
-  } = e, [o, i] = l.useState(!1), a = (0, S.M7)(t.skuId), s = (0, c.O)(e => {
-    i(e && null != a)
+  } = e, [i, a] = l.useState(!1), o = (0, S.M7)(t.skuId), s = (0, c.O)(e => {
+    a(e && null != o)
   }, n ? .13 : .15);
   return (0, r.jsxs)("div", {
     className: y.categoryWrapper,
     ref: s,
     children: [(0, r.jsx)(m.Z, {
       category: t,
-      hideLimitedTimeBadge: null != a
+      hideLimitedTimeBadge: null != o
     }), (0, r.jsx)(T, {
       category: t
-    }), null != a && null != t.unpublishedAt && (0, r.jsx)(b.$, {
+    }), null != o && null != t.unpublishedAt && (0, r.jsx)(b.$, {
       unpublishedAt: t.unpublishedAt,
-      isVisible: o,
-      displayOptions: a,
+      isVisible: i,
+      displayOptions: o,
       isFullScreen: n
     })]
   })
@@ -96,8 +96,8 @@ function L(e) {
   var t;
   let {
     sortedCategories: n,
-    setCategoryRef: o,
-    isFullScreen: a,
+    setCategoryRef: i,
+    isFullScreen: o,
     currentPage: c,
     handlePageChange: u
   } = e, g = (0, d.sp)(), f = (0, O.R)(), b = null != (t = null == g ? void 0 : g.sessionId) ? t : "", {
@@ -117,7 +117,7 @@ function L(e) {
       sessionId: b,
       checkpoint: h.a.SHOP_MOUNTED,
       tab: x.AW.CATALOG,
-      isFullScreen: a,
+      isFullScreen: o,
       unpublishedCategoriesShown: C,
       cacheDisabled: m
     })
@@ -126,25 +126,25 @@ function L(e) {
       sessionId: b,
       checkpoint: h.a.SHOP_RENDERED,
       tab: x.AW.CATALOG,
-      isFullScreen: a,
+      isFullScreen: o,
       unpublishedCategoriesShown: C,
       cacheDisabled: m
     })
-  }, [b, a, C, m, f, S.length]);
+  }, [b, o, C, m, f, S.length]);
   let j = (0, p.F)("CollectiblesBrowse");
   return f ? (0, r.jsx)(_.Z, {}) : (0, r.jsxs)("div", {
-    className: i()(y.categories, {
+    className: a()(y.categories, {
       [y.categoriesNoFilter]: !j
     }),
     children: [S.map((e, t) => (0, r.jsx)("div", {
-      ref: t => o(e.skuId, t),
+      ref: t => i(e.skuId, t),
       children: (0, r.jsx)(d.k0, {
         newValue: {
           categoryPosition: t
         },
         children: (0, r.jsx)(P, {
           category: e,
-          isFullScreen: a
+          isFullScreen: o
         })
       })
     }, e.skuId)), (0, r.jsx)("div", {

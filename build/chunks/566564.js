@@ -5,9 +5,9 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   l = n(73800),
-  o = n(120356),
-  i = n.n(o),
-  a = n(685816),
+  i = n(120356),
+  a = n.n(i),
+  o = n(685816),
   s = n(755721),
   c = n(481060),
   u = n(626135),
@@ -32,7 +32,7 @@ let P = e => {
     var t;
     let {
       handleTransition: n,
-      numVisibleItems: o,
+      numVisibleItems: i,
       isFetchingCategories: s,
       tab: c,
       isFullScreen: u
@@ -94,7 +94,7 @@ let P = e => {
       }), (0, r.jsx)(C.Z, {
         isLoading: y,
         handleTransition: n,
-        numVisibleItems: o,
+        numVisibleItems: i,
         tab: c
       })]
     });
@@ -102,7 +102,7 @@ let P = e => {
       if (null == e) return null;
       let l = null;
       switch (e.type) {
-        case a.z.HERO:
+        case o.z.HERO:
           l = (0, r.jsx)(O.Z, {
             isLoading: y,
             handleTransition: n,
@@ -110,31 +110,31 @@ let P = e => {
             tab: c
           }, t);
           break;
-        case a.z.FEATURED:
+        case o.z.FEATURED:
           l = (0, r.jsx)(_.Z, {
             isLoading: y,
             handleTransition: n,
             featuredBlockRecord: e
           }, t);
           break;
-        case a.z.FEED:
+        case o.z.FEED:
           let u = e.sortedSkuIds;
           l = (0, r.jsx)(C.Z, {
             isLoading: y || s,
             handleTransition: n,
-            numVisibleItems: o,
+            numVisibleItems: i,
             sortedSkuIds: u,
             tab: c
           }, t);
           break;
-        case a.z.WIDE_BANNER:
+        case o.z.WIDE_BANNER:
           l = (0, r.jsx)(S.Z, {
             handleTransition: n,
             wideBannerBlock: e,
             tab: c
           }, t);
           break;
-        case a.z.SHELF:
+        case o.z.SHELF:
           l = (0, r.jsx)(v.Z, {
             handleTransition: n,
             shelf: e,
@@ -145,7 +145,7 @@ let P = e => {
           return null
       }
       return (0, r.jsx)("div", {
-        className: i()(T.blockContainer, {
+        className: a()(T.blockContainer, {
           [T.topBlockContainer]: 0 === t
         }),
         children: l
@@ -159,8 +159,8 @@ let P = e => {
     let {
       isFullScreen: t,
       scrollerRef: n,
-      handleTransition: o,
-      tab: a,
+      handleTransition: i,
+      tab: o,
       transitionState: g
     } = e, f = (0, p.R)("CollectiblesFeedShop"), h = (0, b.R)(), m = (0, d.sp)(), [_, C] = l.useState(x.IV), [O, v] = l.useState(!1);
     return l.useEffect(() => {
@@ -178,14 +178,14 @@ let P = e => {
     }, [n, _, f, C, v]), (0, r.jsxs)("div", {
       className: T.shop,
       children: [(0, r.jsxs)("div", {
-        className: i()(T.content, T.mainContent),
+        className: a()(T.content, T.mainContent),
         children: [(0, r.jsx)(P, {
-          handleTransition: o,
+          handleTransition: i,
           numVisibleItems: _,
           isFetchingCategories: h,
-          tab: a,
+          tab: o,
           isFullScreen: t
-        }), a !== x.AW.CATALOG && _ >= f && (0, r.jsxs)("div", {
+        }), o !== x.AW.CATALOG && _ >= f && (0, r.jsxs)("div", {
           className: T.endOfFeed,
           children: [(0, r.jsx)(c.X6q, {
             variant: "heading-md/semibold",
@@ -193,10 +193,10 @@ let P = e => {
           }), (0, r.jsx)(s.zx, {
             className: T.endOfFeedButton,
             onClick: () => {
-              o("shop all button", void 0, !0), u.default.track(y.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+              i("shop all button", void 0, !0), u.default.track(y.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                 collectibles_shop_session_id: null == m ? void 0 : m.sessionId,
-                page_type: a,
-                page_category: a === x.AW.HOME || null == m ? void 0 : m.pageCategory,
+                page_type: o,
+                page_category: o === x.AW.HOME || null == m ? void 0 : m.pageCategory,
                 cta_name: "shop the whole shop button"
               })
             },

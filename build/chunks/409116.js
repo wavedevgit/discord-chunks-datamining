@@ -34,17 +34,32 @@ let p = e => {
     discount: b = s.f_,
     variant: f = "heading-md/semibold"
   } = e, m = (0, o.qr)(t, r), h = b !== s.f_ && b.discountPercentage >= 5 ? (0, n.jsxs)(n.Fragment, {
-    children: [m, (0, n.jsx)(a.Text, {
+    children: [(0, n.jsx)(a.nn4, {
+      children: c.intl.format(c.t.niC6DA, {
+        price: m,
+        discountPercentage: b.discountPercentage
+      })
+    }), (0, n.jsx)("span", {
+      "aria-hidden": !0,
+      children: m
+    }), (0, n.jsxs)(a.Text, {
       variant: f,
       color: "text-feedback-positive",
       className: u.discount,
-      children: " (-".concat(b.discountPercentage, "%)")
+      "aria-hidden": !0,
+      children: ["(-", b.discountPercentage, "%)"]
     })]
-  }) : (0, n.jsx)(a.Text, {
-    variant: f,
-    children: m
+  }) : (0, n.jsxs)(n.Fragment, {
+    children: [(0, n.jsx)(a.nn4, {
+      children: c.intl.format(c.t["6C36MD"], {
+        price: m
+      })
+    }), (0, n.jsx)("span", {
+      "aria-hidden": !0,
+      children: m
+    })]
   });
-  return (0, n.jsxs)(a.X6q, {
+  return (0, n.jsxs)(a.Text, {
     variant: f,
     className: l()(u.container, v),
     children: ["tooltip" === i ? (0, n.jsx)(a.ua7, {

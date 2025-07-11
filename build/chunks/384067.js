@@ -5,9 +5,9 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   l = n(73800),
-  o = n(120356),
-  i = n.n(o),
-  a = n(622535),
+  i = n(120356),
+  a = n.n(i),
+  o = n(622535),
   s = n(755721),
   c = n(481060),
   u = n(63063),
@@ -18,7 +18,7 @@ var r = n(255367),
   h = n(388032),
   b = n(806734);
 let m = e => {
-  var t, n, o;
+  var t, n, i;
   let {
     wideBannerBlock: m,
     handleTransition: _,
@@ -41,24 +41,24 @@ let m = e => {
     T = m.bannerUrl;
   if (null == T) return null;
   let P = C === g.AW.ORBS;
-  return (0, r.jsx)(a.$, {
+  return (0, r.jsx)(o.$, {
     innerRef: v,
     onChange: j,
     threshold: 0,
     children: (0, r.jsxs)("div", {
       ref: v,
-      className: i()(b.row, b.between, b.bannerBlockContainer, b.centeredSection, {
+      className: a()(b.row, b.between, b.bannerBlockContainer, b.centeredSection, {
         [b.extraRounded]: P
       }),
       children: [(0, r.jsx)("div", {
-        className: i()(b.wideBannerBackgroundImg, {
+        className: a()(b.wideBannerBackgroundImg, {
           [b.extraRounded]: P
         }),
         children: (0, r.jsx)("img", {
           ref: E,
           src: T,
           alt: m.title,
-          className: i()(b.wideBannerArt, {
+          className: a()(b.wideBannerArt, {
             [b.wideBannerArtOrbs]: P
           }),
           style: {
@@ -81,7 +81,7 @@ let m = e => {
             children: m.title
           }), (0, r.jsx)(c.Text, {
             style: {
-              color: null != (o = m.bannerTextColor) ? o : "var(--text-muted)"
+              color: null != (i = m.bannerTextColor) ? i : "var(--text-muted)"
             },
             lineClamp: 2,
             variant: P ? "text-md/medium" : "text-sm/medium",

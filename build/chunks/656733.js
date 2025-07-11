@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => x
+  Z: () => k
 }), n(704826), n(35282), n(388685);
 var r, i = n(442837),
   a = n(377108),
   o = n(570140),
-  s = n(981631),
-  l = n(388032);
+  s = n(868814),
+  l = n(981631),
+  c = n(388032);
 
-function c(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -18,20 +19,20 @@ function c(e, t, n) {
   }) : e[t] = n, e
 }
 
-function u(e) {
+function d(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      c(e, t, n[t])
+      u(e, t, n[t])
     })
   }
   return e
 }
 
-function d(e, t) {
+function f(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -42,12 +43,12 @@ function d(e, t) {
   return n
 }
 
-function f(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = {
+let p = {
     MP4: "mp4",
     TINYMP4: "tinymp4",
     NANOMP4: "nanomp4",
@@ -55,7 +56,7 @@ let _ = {
     TINYWEBM: "tinywebm",
     NANOWEBM: "nanowebm"
   },
-  p = {
+  h = {
     FIXED_HEIGHT_MP4: "fixed_height.mp4",
     FIXED_HEIGHT_SMALL_MP4: "fixed_height_small.mp4",
     FIXED_WIDTH_MP4: "fixed_width.mp4",
@@ -63,51 +64,58 @@ let _ = {
     DOWNSIZED_SMALL_MP4: "downsized_small.mp4",
     ORIGINAL_MP4: "original.mp4"
   },
-  h = _.MP4,
-  m = null,
-  g = "",
+  m = (() => {
+    let {
+      optimizationsEnabled: e
+    } = s.Z.getCurrentConfig({
+      location: "GIFPickerViewStore"
+    });
+    return e ? p.WEBM : p.MP4
+  })(),
+  g = null,
   E = "",
-  b = [],
+  b = "",
   y = [],
-  O = h,
-  v = [],
-  I = [];
-
-function T(e) {
-  m = e.analyticsID
-}
+  O = [],
+  v = m,
+  I = [],
+  T = [];
 
 function S(e) {
-  "" === (g = e.query) && (E = "", b = [], v = [])
+  g = e.analyticsID
 }
 
 function A(e) {
+  "" === (E = e.query) && (b = "", y = [], I = [])
+}
+
+function N(e) {
   switch (e) {
-    case p.FIXED_HEIGHT_MP4:
-    case p.FIXED_HEIGHT_SMALL_MP4:
-    case p.FIXED_WIDTH_MP4:
-    case p.FIXED_WIDTH_SMALL_MP4:
-    case p.DOWNSIZED_SMALL_MP4:
-    case p.ORIGINAL_MP4:
-    case _.MP4:
-    case _.TINYMP4:
-    case _.NANOMP4:
-    case _.WEBM:
-    case _.TINYWEBM:
-    case _.NANOWEBM:
+    case h.FIXED_HEIGHT_MP4:
+    case h.FIXED_HEIGHT_SMALL_MP4:
+    case h.FIXED_WIDTH_MP4:
+    case h.FIXED_WIDTH_SMALL_MP4:
+    case h.DOWNSIZED_SMALL_MP4:
+    case h.ORIGINAL_MP4:
+    case p.MP4:
+    case p.TINYMP4:
+    case p.NANOMP4:
+    case p.WEBM:
+    case p.TINYWEBM:
+    case p.NANOWEBM:
       return !0;
     default:
       return !1
   }
 }
 
-function N(e) {
+function C(e) {
   return e.replace(/^https?:/, "")
 }
 
-function C(e) {
-  if (null != e.query && g === E) return !1;
-  null != e.query && (E = e.query), b = e.items.map(e => {
+function R(e) {
+  if (null != e.query && E === b) return !1;
+  null != e.query && (b = e.query), y = e.items.map(e => {
     let {
       width: t,
       height: n,
@@ -119,42 +127,35 @@ function C(e) {
     return {
       width: t,
       height: n,
-      src: N(r),
-      gifSrc: N(i),
+      src: C(r),
+      gifSrc: C(i),
       url: o,
       id: s,
-      format: A(O) ? a.EO.VIDEO : a.EO.IMAGE
+      format: N(v) ? a.EO.VIDEO : a.EO.IMAGE
     }
   })
 }
 
-function R(e) {
+function P(e) {
   let {
     query: t
   } = e;
   if (null == t) return !1;
-  E = t, b = []
-}
-
-function P(e) {
-  let t = e.trendingCategories;
-  y = [...null != e.trendingGIFPreview ? [{
-    type: s.wI2.TRENDING_GIFS,
-    name: l.intl.string(l.t.H6zNFx),
-    src: N(e.trendingGIFPreview.src),
-    format: a.EO.IMAGE
-  }] : [], ...t.map(e => f(u({}, e), {
-    src: N(e.src),
-    type: s.wI2.TRENDING_CATEGORY,
-    format: a.EO.VIDEO
-  }))]
+  b = t, y = []
 }
 
 function w(e) {
-  let {
-    items: t
-  } = e;
-  v = t
+  let t = e.trendingCategories;
+  O = [...null != e.trendingGIFPreview ? [{
+    type: l.wI2.TRENDING_GIFS,
+    name: c.intl.string(c.t.H6zNFx),
+    src: C(e.trendingGIFPreview.src),
+    format: a.EO.IMAGE
+  }] : [], ...t.map(e => _(d({}, e), {
+    src: C(e.src),
+    type: l.wI2.TRENDING_CATEGORY,
+    format: a.EO.VIDEO
+  }))]
 }
 
 function D(e) {
@@ -163,39 +164,46 @@ function D(e) {
   } = e;
   I = t
 }
-class L extends(r = i.ZP.Store) {
+
+function L(e) {
+  let {
+    items: t
+  } = e;
+  T = t
+}
+class x extends(r = i.ZP.Store) {
   getAnalyticsID() {
-    return m
-  }
-  getQuery() {
     return g
   }
-  getResultQuery() {
+  getQuery() {
     return E
   }
-  getResultItems() {
+  getResultQuery() {
     return b
   }
-  getTrendingCategories() {
+  getResultItems() {
     return y
   }
-  getSelectedFormat() {
+  getTrendingCategories() {
     return O
   }
-  getSuggestions() {
+  getSelectedFormat() {
     return v
   }
-  getTrendingSearchTerms() {
+  getSuggestions() {
     return I
   }
+  getTrendingSearchTerms() {
+    return T
+  }
 }
-c(L, "displayName", "GIFPickerViewStore");
-let x = new L(o.Z, {
-  GIF_PICKER_INITIALIZE: T,
-  GIF_PICKER_QUERY: S,
-  GIF_PICKER_QUERY_SUCCESS: C,
-  GIF_PICKER_QUERY_FAILURE: R,
-  GIF_PICKER_TRENDING_FETCH_SUCCESS: P,
-  GIF_PICKER_SUGGESTIONS_SUCCESS: w,
-  GIF_PICKER_TRENDING_SEARCH_TERMS_SUCCESS: D
+u(x, "displayName", "GIFPickerViewStore");
+let k = new x(o.Z, {
+  GIF_PICKER_INITIALIZE: S,
+  GIF_PICKER_QUERY: A,
+  GIF_PICKER_QUERY_SUCCESS: R,
+  GIF_PICKER_QUERY_FAILURE: P,
+  GIF_PICKER_TRENDING_FETCH_SUCCESS: w,
+  GIF_PICKER_SUGGESTIONS_SUCCESS: D,
+  GIF_PICKER_TRENDING_SEARCH_TERMS_SUCCESS: L
 })

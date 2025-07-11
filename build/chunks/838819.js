@@ -5,9 +5,9 @@ n.r(t), n.d(t, {
 }), n(388685);
 var r = n(255367),
   l = n(73800),
-  o = n(120356),
-  i = n.n(o),
-  a = n(772848),
+  i = n(120356),
+  a = n.n(i),
+  o = n(772848),
   s = n(399606),
   c = n(952265),
   u = n(481060),
@@ -32,8 +32,8 @@ var r = n(255367),
   L = n(426171),
   k = n(963102),
   I = n(508498),
-  B = n(849217),
-  N = n(215023),
+  N = n(849217),
+  B = n(215023),
   A = n(981631),
   w = n(420212),
   R = n(484920);
@@ -42,22 +42,22 @@ let Z = e => {
       children: t,
       shouldAddEventListener: n,
       onClose: r
-    } = e, o = (0, c.f9)();
+    } = e, i = (0, c.f9)();
     return l.useEffect(() => {
-      if (!n || o) return;
+      if (!n || i) return;
       let e = e => {
         e.key === w.mR.Escape && r()
       };
       return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
-    }, [n, o, r]), t
+    }, [n, i, r]), t
   },
   F = function(e) {
     let {
       isFullScreen: t = !0,
-      tab: n = N.AW.HOME
+      tab: n = B.AW.HOME
     } = e;
     (0, b.z)(h.f);
-    let o = (0, p.Z)((0, a.Z)()),
+    let i = (0, p.Z)((0, o.Z)()),
       c = (0, s.e7)([O.default], () => O.default.getCurrentUser()),
       w = l.useRef(null),
       {
@@ -67,7 +67,7 @@ let Z = e => {
       });
     l.useEffect(() => () => {
       F()
-    }, [o, F]);
+    }, [i, F]);
     let {
       onClose: D
     } = (0, I.Db)(), {
@@ -77,7 +77,7 @@ let Z = e => {
       location: "CollectiblesShop.web",
       logPerf: !0
     }, {
-      sessionId: o,
+      sessionId: i,
       tab: n,
       isFullScreen: t
     });
@@ -100,8 +100,8 @@ let Z = e => {
       } = (0, j.B)(w, n, t),
       {
         handleScroll: J
-      } = (0, f.z)(w, o, K);
-    (0, S.q3)(o, K, G, X, z), (0, S.EB)(K, c), (0, B.Z)(), l.useEffect(() => {
+      } = (0, f.z)(w, i, K);
+    (0, S.q3)(i, K, G, X, z), (0, S.EB)(K, c), (0, N.Z)(), l.useEffect(() => {
       t || (0, d.Y)(A.Z5c.COLLECTIBLES_SHOP)
     }, [t]);
     let $ = (0, s.e7)([C.Z], () => C.Z.getLayers().includes(A.S9g.COLLECTIBLES_SHOP)),
@@ -126,9 +126,9 @@ let Z = e => {
       value: el,
       children: (0, r.jsx)(v.k0, {
         newValue: {
-          sessionId: o,
+          sessionId: i,
           pageCategory: G,
-          pageSize: N.kN
+          pageSize: B.kN
         },
         children: (0, r.jsx)(Z, {
           onClose: D,
@@ -142,10 +142,10 @@ let Z = e => {
               ref: w,
               onScroll: J,
               children: (0, r.jsxs)("div", {
-                className: i()(R.shopViewWrapper, {
-                  [R.visible]: X === N.f7.VISIBLE,
-                  [R.in]: X === N.f7.IN,
-                  [R.out]: X === N.f7.OUT
+                className: a()(R.shopViewWrapper, {
+                  [R.visible]: X === B.f7.VISIBLE,
+                  [R.in]: X === B.f7.IN,
+                  [R.out]: X === B.f7.OUT
                 }),
                 children: [(0, r.jsx)(k.I, {
                   isFullScreen: t,

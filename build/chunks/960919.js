@@ -22,7 +22,7 @@ let u = n(17702),
         [a.loading]: r
       }),
       src: g,
-      alt: "Orb Icon",
+      alt: "",
       style: void 0 !== t ? {
         height: t
       } : void 0

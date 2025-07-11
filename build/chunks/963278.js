@@ -6,9 +6,9 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var l = n(120356),
-  o = n.n(l),
-  i = n(442837),
-  a = n(481060),
+  i = n.n(l),
+  a = n(442837),
+  o = n(481060),
   s = n(594174),
   c = n(381585),
   u = n(597688),
@@ -20,15 +20,15 @@ let f = e => {
     shelf: t,
     handleTransition: n,
     tab: l
-  } = e, f = (0, i.e7)([s.default], () => s.default.getCurrentUser());
+  } = e, f = (0, a.e7)([s.default], () => s.default.getCurrentUser());
   return null == f ? null : (0, r.jsxs)("div", {
-    className: o()(g.shelfBlockContainer, g.centeredSection),
+    className: i()(g.shelfBlockContainer, g.centeredSection),
     children: [(0, r.jsxs)("div", {
       className: g.blockHeader,
-      children: [(0, r.jsx)(a.X6q, {
+      children: [(0, r.jsx)(o.X6q, {
         variant: "heading-lg/semibold",
         children: t.name
-      }), (0, r.jsx)(a.zxk, {
+      }), (0, r.jsx)(o.zxk, {
         variant: "secondary",
         text: p.intl.formatToPlainString(p.t.bc9RBA, {
           category_name: t.name
@@ -39,17 +39,17 @@ let f = e => {
       className: g.feed,
       children: (0, r.jsx)(r.Fragment, {
         children: t.rankedSkuIds.map((e, n) => {
-          let o = u.Z.getCategoryForProduct(e),
-            i = u.Z.getProduct(e);
-          return null == o || null == i ? null : (0, r.jsx)(c.k0, {
+          let i = u.Z.getCategoryForProduct(e),
+            a = u.Z.getProduct(e);
+          return null == i || null == a ? null : (0, r.jsx)(c.k0, {
             newValue: {
               tilePosition: n,
               pageSection: t.name,
               categoryPosition: 2
             },
             children: (0, r.jsx)(d.Z, {
-              product: i,
-              category: o,
+              product: a,
+              category: i,
               user: f,
               tab: l
             }, e)

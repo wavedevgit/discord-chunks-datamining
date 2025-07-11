@@ -74,7 +74,7 @@ function g(e) {
     hideDescriptionUntilUnlock: f,
     onAction: E
   } = t, {
-    color: O
+    color: _
   } = (0, a.F7)(p);
   r.useEffect(() => {
     let e = setTimeout(() => {
@@ -84,12 +84,12 @@ function g(e) {
       clearTimeout(e)
     }
   }, []);
-  let _ = null != E && n,
-    m = _ ? s.P3F : "div";
+  let O = null != E && n,
+    m = O ? s.P3F : "div";
   return (0, i.jsxs)(m, {
-    className: o()(d.container, _ && d.actionable),
+    className: o()(d.container, O && d.actionable),
     onClick: () => {
-      _ && E()
+      O && E()
     },
     children: [(0, i.jsx)("div", {
       className: d.iconContainer,
@@ -112,7 +112,7 @@ function g(e) {
     }), (0, i.jsx)("div", {
       className: d.flair,
       children: (0, i.jsx)(h, {
-        color: O
+        color: _
       })
     })]
   })

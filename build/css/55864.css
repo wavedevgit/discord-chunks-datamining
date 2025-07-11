@@ -1,6 +1,6 @@
 /**
   Module ID: 55864
-  Original File Name: 742b8a920db9ab99
+  Original File Name: 83740f4a4a4291d0
 **/
 .partialOwnStateContainer__0d2da {
     align-items: center;
@@ -37,9 +37,15 @@
     max-width: 24px
 }
 
+.striked_e77b99 {
+    opacity: .7;
+    text-decoration: line-through
+}
+
 .container__8a8e7 {
     align-items: center;
     display: inline-flex;
+    position: relative;
     white-space: nowrap
 }
 
@@ -60,11 +66,6 @@
     margin-right: 8px
 }
 
-.striked_f73e93 {
-    opacity: .7;
-    text-decoration: line-through
-}
-
 .premiumIcon_f73e93 {
     height: 16px;
     margin-right: 4px;
@@ -79,7 +80,8 @@
     align-items: center;
     display: flex;
     flex-direction: row;
-    gap: 4px
+    gap: 4px;
+    position: relative
 }
 
 .insufficientBalance__5dbac {
@@ -423,7 +425,8 @@
 .limitedTimeBadge_c3d04b {
     position: absolute;
     right: 16px;
-    top: 16px
+    top: 16px;
+    z-index: 1
 }
 
 .shopCard_c3d04b:focus-within .innerHover_c3d04b,.shopCard_c3d04b:hover .innerHover_c3d04b {
@@ -477,7 +480,8 @@
     color: var(--black-500);
     position: absolute;
     right: 16px;
-    top: 16px
+    top: 16px;
+    z-index: 1
 }
 
 .theme-light .badge_c3d04b {
@@ -728,4 +732,4 @@
     background-clip: padding-box
 }
 
-/*# sourceMappingURL=742b8a920db9ab99.css.map*/
+/*# sourceMappingURL=83740f4a4a4291d0.css.map*/

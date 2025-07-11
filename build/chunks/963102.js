@@ -1,13 +1,13 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  I: () => N
+  I: () => B
 }), n(388685), n(539854);
 var r = n(255367),
   l = n(73800),
-  o = n(120356),
-  i = n.n(o),
-  a = n(636977),
+  i = n(120356),
+  a = n.n(i),
+  o = n(636977),
   s = n(442837),
   c = n(481060),
   u = n(37234),
@@ -37,25 +37,25 @@ function I(e) {
     tab: t,
     displayText: n,
     selected: l,
-    handleTransition: o
+    handleTransition: i
   } = e;
   return (0, r.jsx)(h.Z.Title, {
-    onClick: () => o(t),
+    onClick: () => i(t),
     wrapperClassName: k.tabWrapper,
-    className: i()(k.tab, {
+    className: a()(k.tab, {
       [k.selected]: l
     }),
     children: n
   })
 }
 
-function B(e) {
+function N(e) {
   let {
     tab: t,
     selected: n,
-    displayText: o,
-    handleTransition: i
-  } = e, [a, s] = l.useState(!1), u = l.useRef(null), [d, p] = l.useState(0), h = l.useRef(!1), b = e => {
+    displayText: i,
+    handleTransition: a
+  } = e, [o, s] = l.useState(!1), u = l.useRef(null), [d, p] = l.useState(0), h = l.useRef(!1), b = e => {
     clearTimeout(d), p(setTimeout(() => {
       s(e)
     }, 100)), e && (h.current = f.Z.keyboardModeEnabled)
@@ -66,7 +66,7 @@ function B(e) {
     onMouseLeave: () => b(!1),
     children: (0, r.jsx)(c.yRy, {
       targetElementRef: u,
-      shouldShow: a,
+      shouldShow: o,
       position: "bottom",
       align: "left",
       onRequestOpen: () => b(!0),
@@ -79,7 +79,7 @@ function B(e) {
           closePopout: t
         } = e;
         return (0, r.jsx)(y.Z, {
-          handleTransition: i,
+          handleTransition: a,
           onClose: t
         })
       },
@@ -91,10 +91,10 @@ function B(e) {
         },
         children: [(0, r.jsx)(I, {
           tab: t,
-          displayText: o,
+          displayText: i,
           selected: n,
-          handleTransition: i
-        }, t), a ? (0, r.jsx)(c.u04, {
+          handleTransition: a
+        }, t), o ? (0, r.jsx)(c.u04, {
           size: "sm",
           color: "currentColor"
         }) : (0, r.jsx)(c.CJ0, {
@@ -106,14 +106,14 @@ function B(e) {
   })
 }
 
-function N(e) {
+function B(e) {
   let {
     isFullScreen: t,
     isLayer: n,
-    onClose: o,
+    onClose: i,
     selectedTab: g,
     handleTransition: f
-  } = e, y = (0, p.ZP)(), N = (0, s.e7)([O.default], () => O.default.getCurrentUser()), A = (null == N ? void 0 : N.isStaff()) || (null == N ? void 0 : N.isStaffPersonal()) || !1, {
+  } = e, y = (0, p.ZP)(), B = (0, s.e7)([O.default], () => O.default.getCurrentUser()), A = (null == B ? void 0 : B.isStaff()) || (null == B ? void 0 : B.isStaffPersonal()) || !1, {
     enabled: w
   } = (0, _.WX)({
     location: "collectibles_shop_header_bar"
@@ -128,7 +128,7 @@ function N(e) {
     tab: T.AW.ORBS,
     displayText: L.intl.string(L.t.EBYkzs)
   });
-  let F = n ? E.DR : o,
+  let F = n ? E.DR : i,
     D = g === T.AW.ORBS ? P.ZY5.SHOP_ORBS_TAB : P.ZY5.COLLECTIBLES_SHOP,
     M = l.useCallback(() => {
       t && (F(), (0, u.Ou)()), (0, m.Y)({
@@ -136,7 +136,7 @@ function N(e) {
         sectionType: P.jXE.ORBS_BALANCE_MENU,
         ctaObject: P.qAy.CTA_TO_QUEST_HOME
       }), (0, b.navigateToQuestHome)({
-        fromContent: a.j.ORBS_BALANCE_MENU
+        fromContent: o.j.ORBS_BALANCE_MENU
       })
     }, [F, t, D]),
     H = (0, S.F)("collectibles_shop_header_bar");
@@ -144,7 +144,7 @@ function N(e) {
     theme: y,
     children: e => (0, r.jsxs)(h.Z, {
       disableDoubleClick: !0,
-      className: i()(e, k.headerBar, {
+      className: a()(e, k.headerBar, {
         [k.fullscreenHeaderBar]: t
       }),
       innerClassname: w ? k.headerBarInner : void 0,
@@ -165,7 +165,7 @@ function N(e) {
             tab: t,
             displayText: n
           } = e;
-          return t === T.AW.CATALOG && R ? (0, r.jsx)(B, {
+          return t === T.AW.CATALOG && R ? (0, r.jsx)(N, {
             tab: t,
             selected: (0, T.RE)(g) || g === t,
             displayText: n,

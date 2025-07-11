@@ -5,9 +5,9 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   l = n(73800),
-  o = n(120356),
-  i = n.n(o),
-  a = n(755721),
+  i = n(120356),
+  a = n.n(i),
+  o = n(755721),
   s = n(481060),
   c = n(381585),
   u = n(870289),
@@ -27,7 +27,7 @@ function E(e) {
   let {
     isFullScreen: t,
     scrollerRef: n,
-    tab: o,
+    tab: i,
     sortedCategories: E,
     setCategoryRef: S
   } = e, {
@@ -45,15 +45,15 @@ function E(e) {
   }, [j, P]);
   let L = (0, d.S)(e => e.hasDefaultFilters());
   return (0, r.jsx)("div", {
-    className: i()(v.pageWrapper, {
+    className: a()(v.pageWrapper, {
       [v.pageWrapperFilter]: j
     }),
     children: (0, r.jsxs)("main", {
-      className: i()(v.page, {
+      className: a()(v.page, {
         [v.pageFilter]: j
       }),
       children: [(0, r.jsxs)("div", {
-        className: i()(v.inventory, {
+        className: a()(v.inventory, {
           [v.inventoryNoFilter]: !j,
           [v.pageFullscreen]: t
         }),
@@ -70,10 +70,10 @@ function E(e) {
                 variant: "text-md/semibold",
                 children: O.intl.string(O.t.uaX709)
               }), (0, r.jsx)(f.Z, {})]
-            }), (0, r.jsx)(a.zx, {
+            }), (0, r.jsx)(o.zx, {
               onClick: () => P(e => !e),
-              look: a.iL.OUTLINED,
-              color: a.Tt.PRIMARY,
+              look: o.iL.OUTLINED,
+              color: o.Tt.PRIMARY,
               children: (0, r.jsxs)("div", {
                 className: v.filterButton,
                 children: [O.intl.string(T ? O.t.fYtm6e : O.t.TeTYEx), (0, r.jsx)(s.gXV, {
@@ -86,12 +86,12 @@ function E(e) {
         }), j && !L ? (0, r.jsx)(m.Z, {
           isFullScreen: t,
           scrollerRef: n,
-          tab: o
-        }, o) : (0, C.RE)(o) ? (0, r.jsx)(_.Z, {
+          tab: i
+        }, i) : (0, C.RE)(i) ? (0, r.jsx)(_.Z, {
           isFullScreen: t,
           scrollerRef: n,
-          tab: o
-        }, o) : (0, r.jsx)(c.k0, {
+          tab: i
+        }, i) : (0, r.jsx)(c.k0, {
           newValue: {
             pageIndex: y
           },

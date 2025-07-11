@@ -16,8 +16,8 @@ var i = n(570140),
 let p = (0, l.uk)("poggermode_applause", o.Z.getSoundpack()),
   f = !1,
   E = !1,
-  O = [],
-  _ = null,
+  _ = [],
+  O = null,
   m = () => {
     f || (p.loop(), f = !0)
   },
@@ -30,25 +30,25 @@ let p = (0, l.uk)("poggermode_applause", o.Z.getSoundpack()),
     return !!e && !!t && null != u.Z.getChannelId()
   },
   v = () => {
-    if (0 === O.length || !C() || E) return;
+    if (0 === _.length || !C() || E) return;
     E = !0;
-    let [e, t] = O[O.length - 1];
-    (0, l.GN)(e, t), _ = setTimeout(y, 1e3)
+    let [e, t] = _[_.length - 1];
+    (0, l.GN)(e, t), O = setTimeout(y, 1e3)
   },
   y = () => {
-    O.pop(), E = !1, v()
+    _.pop(), E = !1, v()
   },
   L = function(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1,
       n = a.Z.isConnected();
-    O.push([e, t * (n ? .1 : 1)]), v()
+    _.push([e, t * (n ? .1 : 1)]), v()
   };
 class k extends r.Z {
   _initialize() {
     h.ZP.addChangeListener(this.startAudio), i.Z.subscribe("RTC_CONNECTION_STATE", this.setVolume), i.Z.subscribe("TYPING_STOP", this.stopAudio), i.Z.subscribe("TYPING_STOP_LOCAL", this.stopAudio), i.Z.subscribe("CHANNEL_SELECT", this.stopAudio), i.Z.subscribe("POGGERMODE_SETTINGS_UPDATE", this.stopAudio)
   }
   _terminate() {
-    h.ZP.removeChangeListener(this.startAudio), i.Z.unsubscribe("RTC_CONNECTION_STATE", this.setVolume), i.Z.unsubscribe("TYPING_STOP", this.stopAudio), i.Z.unsubscribe("TYPING_STOP_LOCAL", this.stopAudio), i.Z.unsubscribe("CHANNEL_SELECT", this.stopAudio), i.Z.unsubscribe("POGGERMODE_SETTINGS_UPDATE", this.stopAudio), clearTimeout(_)
+    h.ZP.removeChangeListener(this.startAudio), i.Z.unsubscribe("RTC_CONNECTION_STATE", this.setVolume), i.Z.unsubscribe("TYPING_STOP", this.stopAudio), i.Z.unsubscribe("TYPING_STOP_LOCAL", this.stopAudio), i.Z.unsubscribe("CHANNEL_SELECT", this.stopAudio), i.Z.unsubscribe("POGGERMODE_SETTINGS_UPDATE", this.stopAudio), clearTimeout(O)
   }
   setVolume(e) {
     let {
