@@ -136,14 +136,16 @@ let G = () => {
         ref: eb.ref,
         children: (0, i.jsx)(I.g, {
           shouldLoadVideo: et,
-          isReducedMotion: H
+          isReducedMotion: H,
+          enablePremiumBrandRefreshDesign: eu
         })
       }), (0, i.jsx)("div", {
         className: U.bestOfNitroSection,
         ref: ex.ref,
         children: (0, i.jsx)(I.G_, {
           shouldLoadVideo: et,
-          isReducedMotion: H
+          isReducedMotion: H,
+          enablePremiumBrandRefreshDesign: eu
         })
       }), (0, i.jsx)("div", {
         className: U.premiumTierCardsContainerFullscreen,
