@@ -22,7 +22,7 @@ function f(e) {
     channelId: r
   } = e, a = (0, l.e7)([p.Z], () => p.Z.getChannel(r));
   i()(null != a, "channel cannot be null for popout");
-  let f = (0, l.e7)([c.ZP], () => c.ZP.getCurrentEmbeddedActivity());
+  let f = (0, l.e7)([c.ZP], () => c.ZP.getSelfEmbeddedActivityForChannel(a.id), [a]);
   return (0, n.jsx)(m.Z, {
     withTitleBar: !0,
     windowKey: t,
