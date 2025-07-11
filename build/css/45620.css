@@ -1,63 +1,7 @@
 /**
   Module ID: 45620
-  Original File Name: 00c02b69a6ba581c
+  Original File Name: c61d734aecffdcf9
 **/
-.countDownWrapper_a1b7b8 {
-    align-items: center;
-    border-radius: 48px;
-    bottom: 0;
-    display: flex;
-    font-family: var(--font-code);
-    gap: 12px;
-    height: 32px;
-    justify-content: center;
-    left: calc(50% + 156px);
-    padding: 4px 32px;
-    pointer-events: none;
-    position: fixed;
-    width: 444px;
-    z-index: 100
-}
-
-.fullScreenWrapper_a1b7b8 {
-    left: calc(50% + 20px)
-}
-
-.mobileWrapper_a1b7b8 {
-    left: 50%
-}
-
-.countdownIcon_a1b7b8 {
-    height: 40px;
-    pointer-events: none
-}
-
-.countdownLabel_a1b7b8 {
-    margin-left: -12px;
-    text-transform: uppercase
-}
-
-.countdown_a1b7b8,.countdownLabel_a1b7b8 {
-    color: inherit;
-    font-family: inherit
-}
-
-.sparkles_a1b7b8 {
-    position: absolute
-}
-
-.sparkles_a1b7b8.left_a1b7b8 {
-    height: 20px;
-    left: 40px;
-    top: -10px
-}
-
-.sparkles_a1b7b8.right_a1b7b8 {
-    bottom: -14px;
-    height: 28px;
-    right: 30px
-}
-
 .shopWrapper__6db1d {
     background: var(--background-base-low);
     overflow-y: scroll;
@@ -1137,6 +1081,55 @@
     width: 209px
 }
 
+.countDownWrapper__66ce2 {
+    align-items: center;
+    border-radius: 48px;
+    bottom: 0;
+    display: flex;
+    font-family: var(--font-code);
+    gap: 12px;
+    height: 50px;
+    justify-content: center;
+    left: calc(50% + 156px);
+    min-width: 350px;
+    padding: 4px 32px;
+    pointer-events: none;
+    position: fixed;
+    width: min(506px,40vw);
+    z-index: 100
+}
+
+.fullScreenWrapper__66ce2 {
+    left: calc(50% + 20px)
+}
+
+.mobileWrapper__66ce2 {
+    left: 50%
+}
+
+.countdownIcon__66ce2 {
+    height: 40px;
+    pointer-events: none
+}
+
+.countdownLabel__66ce2 {
+    color: #000;
+    font-family: var(--font-headline);
+    text-transform: uppercase
+}
+
+.countdownBody__66ce2 {
+    color: #000
+}
+
+.countdown__66ce2 {
+    background-color: rgba(151,66,242,.75);
+    border-radius: 4px;
+    color: inherit;
+    font-family: inherit;
+    padding: 4px 8px
+}
+
 .loadingContainer__08415 {
     align-items: stretch;
     display: flex;
@@ -1915,4 +1908,4 @@
     cursor: pointer
 }
 
-/*# sourceMappingURL=00c02b69a6ba581c.css.map*/
+/*# sourceMappingURL=c61d734aecffdcf9.css.map*/

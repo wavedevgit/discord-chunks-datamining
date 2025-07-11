@@ -6,9 +6,9 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var l = n(120356),
-  i = n.n(l),
-  a = n(87290),
-  o = n(960048),
+  o = n.n(l),
+  i = n(87290),
+  a = n(960048),
   s = n(381585),
   c = n(788822),
   u = n(388032),
@@ -20,9 +20,9 @@ let p = ["1366494385738354769", "1385035256125591633"],
       featuredBlockRecord: n
     } = e;
     return (0, r.jsx)("div", {
-      className: i()(d.col2, d.centeredSection),
+      className: o()(d.col2, d.centeredSection),
       children: null == n ? void 0 : n.subblocks.map((e, n) => {
-        if (e.type === a.O.CATEGORY) {
+        if (e.type === i.O.CATEGORY) {
           let l = null != e.unpublishedAt ? u.intl.string(u.t["h/uBCQ"]) : p.includes(e.categoryStoreListingId) ? u.intl.string(u.t["soka7+"]) : void 0;
           return (0, r.jsx)(s.k0, {
             newValue: {
@@ -47,14 +47,14 @@ let p = ["1366494385738354769", "1385035256125591633"],
       handleTransition: t,
       categories: n
     } = e;
-    if (null == n || n.length < 2) return o.Z.captureMessage("Collectible Featured Block requires at least 2 categories"), null;
-    let [l, a] = n, p = (null == l ? void 0 : l.unpublishedAt) != null ? u.intl.string(u.t["h/uBCQ"]) : void 0;
+    if (null == n || n.length < 2) return a.Z.captureMessage("Collectible Featured Block requires at least 2 categories"), null;
+    let [l, i] = n, p = (null == l ? void 0 : l.unpublishedAt) != null ? u.intl.string(u.t["h/uBCQ"]) : void 0;
     return (0, r.jsx)("div", {
-      className: i()(d.col2, d.centeredSection),
+      className: o()(d.col2, d.centeredSection),
       children: (0, r.jsxs)(s.k0, {
         newValue: {
           categoryPosition: 1,
-          pageCategory: null != l ? l.name : null == a ? void 0 : a.name,
+          pageCategory: null != l ? l.name : null == i ? void 0 : i.name,
           pageSection: "featured_block",
           tilePosition: +(null == l)
         },
@@ -62,8 +62,8 @@ let p = ["1366494385738354769", "1385035256125591633"],
           category: l,
           badgeText: p,
           handleTransition: t
-        }), null != a && (0, r.jsx)(c.q, {
-          category: a,
+        }), null != i && (0, r.jsx)(c.q, {
+          category: i,
           badgeText: u.intl.string(u.t["o/oRJC"]),
           handleTransition: t
         })]
@@ -75,23 +75,23 @@ let p = ["1366494385738354769", "1385035256125591633"],
       isLoading: t,
       handleTransition: n,
       categories: l,
-      featuredBlockRecord: a
+      featuredBlockRecord: i
     } = e;
     return t ? (0, r.jsxs)("div", {
-      className: i()(d.col2, d.centeredSection),
+      className: o()(d.col2, d.centeredSection),
       children: [(0, r.jsx)("div", {
-        className: i()(d.skeleton, d.featuredBlock),
+        className: o()(d.skeleton, d.featuredBlock),
         children: (0, r.jsx)("div", {
           className: d.skeletonBody
         })
       }), (0, r.jsx)("div", {
-        className: i()(d.skeleton, d.featuredBlock),
+        className: o()(d.skeleton, d.featuredBlock),
         children: (0, r.jsx)("div", {
           className: d.skeletonBody
         })
       })]
-    }) : null != a ? (0, r.jsx)(g, {
-      featuredBlockRecord: a,
+    }) : null != i ? (0, r.jsx)(g, {
+      featuredBlockRecord: i,
       handleTransition: n,
       isLoading: !1
     }) : (0, r.jsx)(f, {

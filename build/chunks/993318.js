@@ -1,6 +1,7 @@
 /** Chunk was on 86653 **/
 a.d(t, {
-  AnnouncementModal: () => v
+  AnnouncementModal: () => O,
+  WrappedAnnouncementModal: () => v
 });
 var r = a(255367);
 a(73800);
@@ -12,12 +13,13 @@ var s = a(755721),
   i = a(70097),
   l = a(688465),
   u = a(794231),
-  b = a(388032),
-  p = a(418822),
-  f = a(6210),
-  h = a(313460),
-  m = a(686936),
-  _ = a(326238);
+  b = a(543936),
+  p = a(388032),
+  f = a(418822),
+  h = a(6210),
+  m = a(313460),
+  _ = a(686936),
+  x = a(326238);
 
 function g(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -37,17 +39,17 @@ function g(e) {
   }
   return e
 }
-let x = a(450390),
-  j = e => {
+let j = a(450390),
+  C = e => {
     var t, a;
     return (0, r.jsx)(s.zx, (t = g({}, e), a = a = {
-      "aria-label": b.intl.string(b.t.cpT0Cg),
+      "aria-label": p.intl.string(p.t.cpT0Cg),
       look: s.zx.Looks.BLANK,
       size: s.zx.Sizes.NONE,
       children: (0, r.jsx)("img", {
-        src: x,
+        src: j,
         alt: "Close Modal",
-        className: p.closeButtonIcon
+        className: f.closeButtonIcon
       })
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
       var a = Object.keys(e);
@@ -60,7 +62,7 @@ let x = a(450390),
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(a, e))
     }), t))
   },
-  C = e => {
+  y = e => {
     let {
       animatedAssetURL: t,
       staticAssetURL: a,
@@ -80,7 +82,7 @@ let x = a(450390),
       })
     })
   },
-  y = e => {
+  N = e => {
     let {
       header: t,
       subHeader: a,
@@ -88,25 +90,25 @@ let x = a(450390),
       animatedAsset: c
     } = e;
     return (0, r.jsxs)("div", {
-      className: p.featureCard,
-      children: [(0, r.jsx)(C, {
+      className: f.featureCard,
+      children: [(0, r.jsx)(y, {
         staticAssetURL: s,
         animatedAssetURL: c,
-        className: p.orbAsset
+        className: f.orbAsset
       }), (0, r.jsxs)("div", {
-        className: p.featureCardTextGroup,
+        className: f.featureCardTextGroup,
         children: [(0, r.jsx)(n.X6q, {
           variant: "heading-md/extrabold",
-          className: p.featureCardTextHeader,
+          className: f.featureCardTextHeader,
           children: t
         }), (0, r.jsx)("div", {
-          className: p.featureCardTextSubHeader,
+          className: f.featureCardTextSubHeader,
           children: a
         })]
       })]
     })
   },
-  v = e => {
+  O = e => {
     let {
       onClose: t,
       ctaOnClick: a,
@@ -116,51 +118,55 @@ let x = a(450390),
     } = u.Z.useExperiment({
       location: "virtual_currency_announcement_modal_v2"
     }), i = [{
-      header: b.intl.string(b.t["2Nvn8/"]),
-      subHeader: b.intl.string(b.t.F1lGFx),
-      staticAsset: m.Z
-    }, {
-      header: b.intl.string(b.t["1IEs7+"]),
-      subHeader: b.intl.string(b.t.mej05u),
+      header: p.intl.string(p.t["2Nvn8/"]),
+      subHeader: p.intl.string(p.t.F1lGFx),
       staticAsset: _.Z
+    }, {
+      header: p.intl.string(p.t["1IEs7+"]),
+      subHeader: p.intl.string(p.t.mej05u),
+      staticAsset: x.Z
     }];
     return (0, r.jsxs)(n.Y0X, {
-      className: p.root,
+      className: f.root,
       transitionState: s,
       "aria-labelledby": c,
       hideShadow: !0,
       parentComponent: "AnnouncementModalV2",
-      children: [(0, r.jsx)(j, {
-        className: p.closeButton,
+      children: [(0, r.jsx)(C, {
+        className: f.closeButton,
         onClick: t
-      }), (0, r.jsx)(C, {
-        staticAssetURL: f.Z,
-        animatedAssetURL: h.Z,
-        className: p.heroAsset
+      }), (0, r.jsx)(y, {
+        staticAssetURL: h.Z,
+        animatedAssetURL: m.Z,
+        className: f.heroAsset
       }), (0, r.jsxs)(n.hzk, {
-        className: p.content,
+        className: f.content,
         children: [(0, r.jsxs)("div", {
-          className: p.headerContainer,
+          className: f.headerContainer,
           children: [(0, r.jsx)(n.X6q, {
             variant: "display-md",
-            className: p.header,
-            children: b.intl.string(b.t.XKlAys)
+            className: f.header,
+            children: p.intl.string(p.t.XKlAys)
           }), o && (0, r.jsx)(l.Z, {
-            className: p.betaBadge
+            className: f.betaBadge
           })]
         }), (0, r.jsx)(n.X6q, {
           variant: "heading-lg/semibold",
-          className: p.subHeader,
-          children: b.intl.string(b.t.icWQKi)
+          className: f.subHeader,
+          children: p.intl.string(p.t.icWQKi)
         }), i.length > 0 && (0, r.jsx)("div", {
-          className: p.featureCardGroup,
-          children: i.map((e, t) => (0, r.jsx)(y, g({}, e), "".concat(e.header, "_").concat(t)))
+          className: f.featureCardGroup,
+          children: i.map((e, t) => (0, r.jsx)(N, g({}, e), "".concat(e.header, "_").concat(t)))
         }), (0, r.jsx)(n.gtL, {
           onClick: a,
-          color: p.buttonColor,
-          className: p.button,
-          children: b.intl.string(b.t.ynollp)
+          color: f.buttonColor,
+          className: f.button,
+          children: p.intl.string(p.t.ynollp)
         })]
       })]
     })
-  }
+  },
+  v = e => (0, r.jsx)(b.x, {
+    errorSource: "ORBS_ANNOUNCEMENT_MODAL",
+    children: (0, r.jsx)(O, g({}, e))
+  })

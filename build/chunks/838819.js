@@ -5,9 +5,9 @@ n.r(t), n.d(t, {
 }), n(388685);
 var r = n(255367),
   l = n(73800),
-  i = n(120356),
-  a = n.n(i),
-  o = n(772848),
+  o = n(120356),
+  i = n.n(o),
+  a = n(772848),
   s = n(399606),
   c = n(952265),
   u = n(481060),
@@ -42,14 +42,14 @@ let Z = e => {
       children: t,
       shouldAddEventListener: n,
       onClose: r
-    } = e, i = (0, c.f9)();
+    } = e, o = (0, c.f9)();
     return l.useEffect(() => {
-      if (!n || i) return;
+      if (!n || o) return;
       let e = e => {
         e.key === w.mR.Escape && r()
       };
       return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
-    }, [n, i, r]), t
+    }, [n, o, r]), t
   },
   D = function(e) {
     let {
@@ -57,7 +57,7 @@ let Z = e => {
       tab: n = N.AW.HOME
     } = e;
     (0, b.z)(h.f);
-    let i = (0, p.Z)((0, o.Z)()),
+    let o = (0, p.Z)((0, a.Z)()),
       c = (0, s.e7)([O.default], () => O.default.getCurrentUser()),
       w = l.useRef(null),
       {
@@ -67,7 +67,7 @@ let Z = e => {
       });
     l.useEffect(() => () => {
       D()
-    }, [i, D]);
+    }, [o, D]);
     let {
       onClose: F
     } = (0, I.Db)(), {
@@ -77,18 +77,18 @@ let Z = e => {
       location: "CollectiblesShop.web",
       logPerf: !0
     }, {
-      sessionId: i,
+      sessionId: o,
       tab: n,
       isFullScreen: t
     });
     (0, m.P)();
     let W = (0, y.O)(M),
       [V, U] = l.useState(),
-      G = (0, s.e7)([E.Z], () => {
+      z = (0, s.e7)([E.Z], () => {
         var e;
         return null == (e = E.Z.getCategory(V)) ? void 0 : e.name
       }),
-      [z, q] = l.useState();
+      [G, q] = l.useState();
     (0, L.Kp)();
     let Y = l.useCallback((e, t) => {
         q(e), U(t)
@@ -96,12 +96,12 @@ let Z = e => {
       {
         selectedTab: K,
         transitionState: X,
-        transitionToTab: Q
+        transitionToTab: J
       } = (0, j.B)(w, n, t),
       {
-        handleScroll: J
-      } = (0, f.z)(w, i, K);
-    (0, S.q3)(i, K, G, X, z), (0, S.EB)(K, c), (0, B.Z)(), l.useEffect(() => {
+        handleScroll: Q
+      } = (0, f.z)(w, o, K);
+    (0, S.q3)(o, K, z, X, G), (0, S.EB)(K, c), (0, B.Z)(), l.useEffect(() => {
       t || (0, d.Y)(A.Z5c.COLLECTIBLES_SHOP)
     }, [t]);
     let $ = (0, s.e7)([C.Z], () => C.Z.getLayers().includes(A.S9g.COLLECTIBLES_SHOP)),
@@ -126,8 +126,8 @@ let Z = e => {
       value: el,
       children: (0, r.jsx)(v.k0, {
         newValue: {
-          sessionId: i,
-          pageCategory: G,
+          sessionId: o,
+          pageCategory: z,
           pageSize: N.kN
         },
         children: (0, r.jsx)(Z, {
@@ -140,9 +140,9 @@ let Z = e => {
             children: (0, r.jsx)(u.Den, {
               className: R.shopScroll,
               ref: w,
-              onScroll: J,
+              onScroll: Q,
               children: (0, r.jsxs)("div", {
-                className: a()(R.shopViewWrapper, {
+                className: i()(R.shopViewWrapper, {
                   [R.visible]: X === N.f7.VISIBLE,
                   [R.in]: X === N.f7.IN,
                   [R.out]: X === N.f7.OUT
@@ -151,14 +151,14 @@ let Z = e => {
                   isFullScreen: t,
                   isLayer: $,
                   onClose: F,
-                  handleTransition: Q,
+                  handleTransition: J,
                   selectedTab: K
                 }), (0, r.jsx)(P.Z, {
                   tab: K,
                   isFullScreen: t,
                   scrollerRef: w,
                   refreshCategories: H,
-                  transitionToTab: Q,
+                  transitionToTab: J,
                   transitionState: X,
                   sortedCategories: W,
                   updateAnalyticsState: Y

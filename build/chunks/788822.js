@@ -5,9 +5,9 @@ n.d(t, {
 });
 var r = n(255367),
   l = n(73800),
-  i = n(120356),
-  a = n.n(i),
-  o = n(180650),
+  o = n(120356),
+  i = n.n(o),
+  a = n(180650),
   s = n(622535),
   c = n(755721),
   u = n(481060),
@@ -20,7 +20,7 @@ var r = n(255367),
   m = n(388032),
   _ = n(806734);
 let C = e => {
-  var t, n, i, C;
+  var t, n, o, C;
   let O, {
     category: v,
     subblock: E,
@@ -36,7 +36,7 @@ let C = e => {
       featuredBlockBanner: T
     } = (0, h.YG)(v, E),
     P = l.useRef(null),
-    L = y === o.T.NAMEPLATES_V3,
+    L = y === a.T.NAMEPLATES_V3,
     k = L ? "NAMEPLATES VOL.3" : null,
     I = null == E ? void 0 : E.bodyText,
     B = (0, p.sp)();
@@ -70,11 +70,11 @@ let C = e => {
         className: _.featuredBlockTextContainer,
         children: [null != k && (0, r.jsx)(u.X6q, {
           lineClamp: 2,
-          className: a()(_.featuredBlockTitleText, {
+          className: i()(_.featuredBlockTitleText, {
             [_.featuredBlockTitleTextNameplate]: L
           }),
           style: {
-            color: null != (i = null == E ? void 0 : E.bannerTextColor) ? i : "white"
+            color: null != (o = null == E ? void 0 : E.bannerTextColor) ? o : "white"
           },
           variant: "heading-xl/semibold",
           children: k

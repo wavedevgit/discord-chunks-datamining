@@ -51,7 +51,7 @@ function h(e) {
       var a;
       (a = c({}, e)).isCoachmarkEnabled && (0, i.ZDy)(async () => {
         let {
-          BalanceWidgetEarnedOrbsCoachmarkModal: e
+          WrappedBalanceWidgetEarnedOrbsCoachmarkModal: e
         } = await r.e("82081").then(r.bind(r, 720463));
         return t => (0, n.jsx)(e, c({}, a, t))
       }, f)
