@@ -1,7 +1,7 @@
 /** Chunk was on 31978 **/
 "use strict";
 n.d(t, {
-  R: () => l
+  R: () => o
 });
 let r = (0, n(818083).B)({
   kind: "user",
@@ -28,7 +28,7 @@ let r = (0, n(818083).B)({
   }]
 });
 
-function l(e, t) {
+function o(e, t) {
   let n = r.getCurrentConfig({
     location: t
   }, {

@@ -1,17 +1,17 @@
 /** Chunk was on 31978 **/
 "use strict";
 n.d(t, {
-  Z: () => s
+  Z: () => a
 });
 var r = n(255367);
 n(73800);
-var l = n(481060),
-  o = n(388032),
+var o = n(481060),
+  l = n(388032),
   i = n(156189);
 
-function s() {
-  return (0, r.jsx)(l.ua7, {
-    text: o.intl.string(o.t["RO/KYm"]),
+function a() {
+  return (0, r.jsx)(o.ua7, {
+    text: l.intl.string(l.t["RO/KYm"]),
     children: e => {
       var t, n;
       return (0, r.jsx)("div", (t = function(e) {
@@ -34,7 +34,7 @@ function s() {
       }({
         className: i.badge
       }, e), n = n = {
-        children: (0, r.jsx)(l.LQn, {
+        children: (0, r.jsx)(o.LQn, {
           color: "currentColor",
           size: "custom",
           width: "1rem",

@@ -1,6 +1,6 @@
 /**
   Module ID: 81872
-  Original File Name: 1dc7334abe71f715
+  Original File Name: a3c24319922b5e9d
 **/
 .pro__30cbe {
     text-transform: uppercase
@@ -37,7 +37,7 @@
 }
 
 .popoverReactionHoverBar_f84418 {
-    background: var(--background-nested-floating);
+    background: var(--background-surface-high);
     border: 1px solid var(--border-faint);
     border-radius: 8px;
     box-shadow: var(--shadow-low)!important;
@@ -1854,4 +1854,4 @@ span.clanTag__07f91.isOverlay__07f91 {
     color: CanvasText
 }
 
-/*# sourceMappingURL=1dc7334abe71f715.css.map*/
+/*# sourceMappingURL=a3c24319922b5e9d.css.map*/

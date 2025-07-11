@@ -1,6 +1,6 @@
 /**
   Module ID: 15066
-  Original File Name: 62f9e9a3753fe1cb
+  Original File Name: 9fe7fd2abda3c875
 **/
 .pro__30cbe {
     text-transform: uppercase
@@ -33,7 +33,7 @@
 }
 
 .popoverReactionHoverBar_f84418 {
-    background: var(--background-nested-floating);
+    background: var(--background-surface-high);
     border: 1px solid var(--border-faint);
     border-radius: 8px;
     box-shadow: var(--shadow-low)!important;
@@ -523,4 +523,4 @@ h1.title_feb59c,h2.title_feb59c {
     margin-right: var(--space-32)
 }
 
-/*# sourceMappingURL=62f9e9a3753fe1cb.css.map*/
+/*# sourceMappingURL=9fe7fd2abda3c875.css.map*/

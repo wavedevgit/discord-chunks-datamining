@@ -1,7 +1,7 @@
 /** Chunk was on 31978 **/
 "use strict";
 n.d(t, {
-  o: () => l
+  o: () => o
 });
 let r = (0, n(818083).B)({
   id: "2025-04_native_markdown",
@@ -25,7 +25,7 @@ let r = (0, n(818083).B)({
   }]
 });
 
-function l(e) {
+function o(e) {
   let {
     location: t
   } = e;
