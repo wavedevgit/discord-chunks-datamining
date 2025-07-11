@@ -11,8 +11,8 @@ var l = t(255367),
   o = t(65361),
   d = t(798476),
   u = t(6025),
-  h = t(592125),
-  m = t(375954),
+  m = t(592125),
+  h = t(375954),
   f = t(496675),
   g = t(768581),
   p = t(526120),
@@ -40,7 +40,7 @@ let _ = r.memo(function(e) {
       channelId: n,
       title: t,
       icon: o
-    } = e, d = (0, a.e7)([h.Z], () => h.Z.getChannel(n)), x = (0, a.e7)([m.Z], () => m.Z.getMessages(n)), j = (0, a.e7)([f.Z], () => f.Z.can(b.Plq.VIEW_CHANNEL, d)), _ = x.first(), v = (0, c.zy)(_, !1), I = (null == v ? void 0 : v.length) > 0 ? v[0] : null, Z = null != d && null == _ && !x.loadingMore && !x.ready && !x.hasFetched && j;
+    } = e, d = (0, a.e7)([m.Z], () => m.Z.getChannel(n)), x = (0, a.e7)([h.Z], () => h.Z.getMessages(n)), j = (0, a.e7)([f.Z], () => f.Z.can(b.Plq.VIEW_CHANNEL, d)), _ = x.first(), v = (0, c.zy)(_, !1), I = (null == v ? void 0 : v.length) > 0 ? v[0] : null, Z = null != d && null == _ && !x.loadingMore && !x.ready && !x.hasFetched && j;
     r.useEffect(() => {
       Z && s.Z.fetchMessages({
         channelId: n,

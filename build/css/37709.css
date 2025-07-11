@@ -1,6 +1,6 @@
 /**
   Module ID: 37709
-  Original File Name: c4e5b6526ca7bd11
+  Original File Name: 50d103f537538cc7
 **/
 .coverContainer__2f300 {
     align-items: center;
@@ -332,7 +332,6 @@
 
 .navButtons_fe70ca {
     align-items: center;
-    background-color: var(--background-base-lower);
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
     display: flex;
@@ -340,12 +339,11 @@
     padding: 20px
 }
 
-.finishEmoji_fe70ca {
-    margin-left: 4px
+.navButtons_fe70ca,.termsFieldBody_fe70ca {
+    background-color: var(--background-base-lower)
 }
 
 .termsFieldBody_fe70ca {
-    background-color: var(--background-base-lower);
     border-radius: 12px;
     margin-top: 32px;
     padding: 0 16px
@@ -379,21 +377,6 @@
     gap: 16px
 }
 
-.button_fe70ca {
-    width: auto
-}
-
-.buttonInner_fe70ca {
-    align-items: center;
-    display: flex;
-    gap: 4px
-}
-
-.arrow_fe70ca {
-    height: 20px;
-    width: 20px
-}
-
 .overlay_fe70ca {
     background: linear-gradient(to top,var(--modal-background),transparent);
     bottom: 78px;
@@ -403,4 +386,4 @@
     width: 100%
 }
 
-/*# sourceMappingURL=c4e5b6526ca7bd11.css.map*/
+/*# sourceMappingURL=50d103f537538cc7.css.map*/

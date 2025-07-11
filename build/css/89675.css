@@ -1,6 +1,6 @@
 /**
   Module ID: 89675
-  Original File Name: e1efab42727e59be
+  Original File Name: 4b58f446a87fdf5b
 **/
 .perkRow_c609c8 {
     align-items: center;
@@ -75,6 +75,7 @@
 
 .footer__30359 {
     flex-direction: row;
+    gap: var(--space-8);
     justify-content: flex-end
 }
 
@@ -106,4 +107,4 @@
     text-align: center
 }
 
-/*# sourceMappingURL=e1efab42727e59be.css.map*/
+/*# sourceMappingURL=4b58f446a87fdf5b.css.map*/

@@ -15,8 +15,8 @@ var a = l(255367),
   h = l(592125),
   x = l(984933),
   p = l(430824),
-  v = l(768581),
-  g = l(969632),
+  g = l(768581),
+  v = l(969632),
   j = l(580357),
   C = l(388032),
   k = l(70164);
@@ -48,12 +48,12 @@ function _(e) {
       value: n.id,
       label: n.name
     }
-  }(f)), w = (0, s.e7)([g.Z], () => {
+  }(f)), w = (0, s.e7)([v.Z], () => {
     var e;
-    return null == (e = g.Z.getResourceChannel(null == f ? void 0 : f.channelId)) ? void 0 : e.icon
-  }), H = (0, s.Wu)([g.Z], () => {
+    return null == (e = v.Z.getResourceChannel(null == f ? void 0 : f.channelId)) ? void 0 : e.icon
+  }), H = (0, s.Wu)([v.Z], () => {
     var e, n;
-    return (null != (n = null == (e = g.Z.getSettings()) ? void 0 : e.resourceChannels) ? n : []).map(e => e.channelId)
+    return (null != (n = null == (e = v.Z.getSettings()) ? void 0 : e.resourceChannels) ? n : []).map(e => e.channelId)
   }), P = G.length < u.n || null == R, T = t.useCallback(() => {
     null == R || G.length <= 0 || (N(I(R, G, S, w)), _())
   }, [N, _, G, R, w, S]), W = t.useCallback(() => {
@@ -76,7 +76,7 @@ function _(e) {
     })
   }, [b]), L = t.useCallback(e => {
     null != y && null != R && y(I(R, G, S), e)
-  }, [R, G, y, S]), M = t.useCallback(() => null == w || null == R ? null : v.ZP.getResourceChannelIconURL({
+  }, [R, G, y, S]), M = t.useCallback(() => null == w || null == R ? null : g.ZP.getResourceChannelIconURL({
     channelId: R.value,
     icon: w
   }), [R, w]);
@@ -188,10 +188,9 @@ function _(e) {
         }) : (0, a.jsx)("div", {}), (0, a.jsx)("div", {
           className: k.rightButtons,
           children: (0, a.jsxs)(o.hE2, {
-            direction: "horizontal-reverse",
+            size: "sm",
             children: [(0, a.jsx)(o.zxk, {
               variant: "secondary",
-              size: "sm",
               text: C.intl.string(C.t["ETE/oK"]),
               onClick: _
             }), (0, a.jsx)(o.zxk, {

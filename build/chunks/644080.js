@@ -11,8 +11,8 @@ var l = t(255367),
   o = t(755721),
   d = t(481060),
   u = t(410030),
-  h = t(565138),
-  m = t(523751),
+  m = t(565138),
+  h = t(523751),
   f = t(637853),
   g = t(434404),
   p = t(159300),
@@ -90,10 +90,10 @@ let O = r.memo(function(e) {
       className: v.titleWrapper,
       children: (0, l.jsxs)("div", {
         className: r,
-        children: [(0, l.jsx)(h.Z, {
+        children: [(0, l.jsx)(m.Z, {
           className: v.headerIcon,
           guild: n,
-          size: h.Z.Sizes.XLARGE,
+          size: m.Z.Sizes.XLARGE,
           active: !0
         }), (0, l.jsx)(d.y5t, {
           children: (0, l.jsxs)("div", {
@@ -102,7 +102,7 @@ let O = r.memo(function(e) {
               className: v.headerName,
               variant: "heading-xxl/bold",
               children: n.name
-            }), (0, l.jsx)(m.Z, {
+            }), (0, l.jsx)(h.Z, {
               size: 24,
               guild: n,
               tooltipPosition: "bottom",

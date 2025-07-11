@@ -404,10 +404,9 @@ function Z(e) {
         }) : (0, t.jsx)("div", {}), (0, t.jsx)("div", {
           className: _.rightButtons,
           children: (0, t.jsxs)(s.hE2, {
-            direction: "horizontal-reverse",
+            size: "sm",
             children: [(0, t.jsx)(s.zxk, {
               variant: "secondary",
-              size: "sm",
               text: S.intl.string(S.t["ETE/oK"]),
               onClick: M
             }), (0, t.jsx)(s.zxk, {

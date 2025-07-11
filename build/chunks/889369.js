@@ -9,28 +9,28 @@ var l, i, r, s = n(392711),
   d = n(45966),
   u = n(999382),
   m = n(981631);
-let I = !1,
-  h = null,
+let h = !1,
+  I = null,
   g = new Set;
 
 function N() {
-  I = !1, h = null, null != (h = u.Z.getGuildId()) && u.Z.getSection() === m.pNK.ONBOARDING && (g = new Set(d.Z.getDefaultChannelIds(h)))
+  h = !1, I = null, null != (I = u.Z.getGuildId()) && u.Z.getSection() === m.pNK.ONBOARDING && (g = new Set(d.Z.getDefaultChannelIds(I)))
 }
 class f extends(l = o.ZP.Store) {
   initialize() {
     this.waitFor(u.Z, d.Z)
   }
   hasChanges() {
-    if (null == h) return !1;
-    let e = d.Z.getDefaultChannelIds(h).sort(),
+    if (null == I) return !1;
+    let e = d.Z.getDefaultChannelIds(I).sort(),
       t = Array.from(g).sort();
     return !a().isEqual(e, t)
   }
   get guildId() {
-    return h
+    return I
   }
   get submitting() {
-    return I
+    return h
   }
   get editedDefaultChannelIds() {
     return g
@@ -49,7 +49,7 @@ let S = new f(c.Z, {
   GUILD_SETTINGS_DEFAULT_CHANNELS_RESET: N,
   GUILD_SETTINGS_DEFAULT_CHANNELS_SAVE_SUCCESS: N,
   GUILD_SETTINGS_DEFAULT_CHANNELS_SAVE_FAILED: function() {
-    I = !1
+    h = !1
   },
   GUILD_SETTINGS_DEFAULT_CHANNELS_TOGGLE: function(e) {
     let {
@@ -58,6 +58,6 @@ let S = new f(c.Z, {
     (g = new Set(g)).has(t) ? g.delete(t) : g.add(t)
   },
   GUILD_SETTINGS_DEFAULT_CHANNELS_SUBMIT: function() {
-    I = !0
+    h = !0
   }
 })

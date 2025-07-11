@@ -1,6 +1,6 @@
 /**
   Module ID: 82265
-  Original File Name: 92bb1da34152d027
+  Original File Name: 89cea5a16853ad94
 **/
 .editCard_a25a68 {
     background-color: var(--background-surface-high);
@@ -9247,16 +9247,6 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     margin: 8px 0
 }
 
-.testimonialControl__3e7e2 {
-    border-radius: 50%;
-    padding: 4px
-}
-
-.testimonialControlIcon__3e7e2,.testimonialControlInner__3e7e2 {
-    height: 16px;
-    width: 16px
-}
-
 .container_c66e86 {
     display: flex;
     flex-direction: column;
@@ -12514,4 +12504,4 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     text-overflow: ellipsis
 }
 
-/*# sourceMappingURL=92bb1da34152d027.css.map*/
+/*# sourceMappingURL=89cea5a16853ad94.css.map*/

@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   l = n(73800),
   a = n(658722),
-  o = n.n(a),
-  s = n(399606),
+  s = n.n(a),
+  o = n(399606),
   i = n(481060),
   u = n(313201),
   c = n(734893),
@@ -58,14 +58,14 @@ function j(e) {
     guildId: k,
     welcomeMessage: _,
     onSave: O
-  } = e, I = (0, u.Dt)(), [P, C] = l.useState(v({}, _)), w = (0, s.e7)([m.Z], () => m.Z.getGuild(k)), B = l.useCallback(e => {
+  } = e, I = (0, u.Dt)(), [P, C] = l.useState(v({}, _)), w = (0, o.e7)([m.Z], () => m.Z.getGuild(k)), B = l.useCallback(e => {
     let t = {};
     return Promise.resolve(d.ZP.getMembers(k).filter(n => {
       var r;
       let l = g.default.getUser(n.userId);
       if (null != l && (t[n.userId] = l), null == w || null == l || !(0, p.Y)(w, l)) return !1;
       let a = "".concat(null != (r = n.nick) ? r : "", " ").concat(null == l ? void 0 : l.username);
-      return o()(e.toLowerCase(), a.toLowerCase())
+      return s()(e.toLowerCase(), a.toLowerCase())
     }).map(e => {
       var n, r, l;
       return {
@@ -98,7 +98,7 @@ function j(e) {
     }))
   }, [C]), S = l.useCallback(() => {
     O(null), y()
-  }, [O, y]), T = null != (t = P.authorIds[0]) ? t : "", z = (0, s.e7)([d.ZP], () => null != k ? d.ZP.getMember(k, T) : null), E = (0, s.e7)([g.default], () => null != z ? g.default.getUser(z.userId) : null), G = null != (a = null != (n = null == z ? void 0 : z.nick) ? n : null == E ? void 0 : E.username) ? a : "", H = function(e) {
+  }, [O, y]), T = null != (t = P.authorIds[0]) ? t : "", z = (0, o.e7)([d.ZP], () => null != k ? d.ZP.getMember(k, T) : null), E = (0, o.e7)([g.default], () => null != z ? g.default.getUser(z.userId) : null), G = null != (a = null != (n = null == z ? void 0 : z.nick) ? n : null == E ? void 0 : E.username) ? a : "", H = function(e) {
     if (null == e.message || 0 === e.message.length) return null;
     if (null == e.authorIds || 0 === e.authorIds.length)
       if (e.message.length < c.ZR) return x.intl.formatToPlainString(x.t.Lj831N, {
@@ -176,10 +176,9 @@ function j(e) {
         }), (0, r.jsx)("div", {
           className: f.rightButtons,
           children: (0, r.jsxs)(i.hE2, {
-            direction: "horizontal-reverse",
+            size: "sm",
             children: [(0, r.jsx)(i.zxk, {
               variant: "secondary",
-              size: "sm",
               text: x.intl.string(x.t["ETE/oK"]),
               onClick: y
             }), (0, r.jsx)(i.zxk, {

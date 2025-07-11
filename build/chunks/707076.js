@@ -14,8 +14,8 @@ var i = n(120356),
   d = n(721012),
   u = n(869764),
   m = n(150512),
-  I = n(430824),
-  h = n(594174),
+  h = n(430824),
+  I = n(594174),
   g = n(626135),
   N = n(999382),
   f = n(983135),
@@ -23,7 +23,7 @@ var i = n(120356),
   p = n(981631),
   E = n(388032),
   T = n(568614);
-let x = () => [{
+let O = () => [{
     emoji: "\uD83E\uDDD9",
     emojiDescription: E.intl.string(E.t.Jh9uiY),
     title: E.intl.string(E.t.ATF45u),
@@ -39,7 +39,7 @@ let x = () => [{
     title: E.intl.string(E.t["5Z5sgo"]),
     selected: !1
   }],
-  O = () => [{
+  x = () => [{
     channelIcon: () => (0, l.jsx)(a.MqZ, {
       size: "xs",
       color: "currentColor",
@@ -76,7 +76,7 @@ let x = () => [{
 function _(e) {
   let {
     isTooltip: t = !1
-  } = e, n = x();
+  } = e, n = O();
   t && n.pop();
   let i = t ? (0, l.jsx)(a.Text, {
       variant: "text-sm/semibold",
@@ -157,8 +157,8 @@ function j() {
 
 function v() {
   let e = (0, s.e7)([N.Z], () => N.Z.getGuildId()),
-    t = (0, s.e7)([I.Z], () => I.Z.getGuild(e)),
-    n = (0, s.e7)([h.default], () => h.default.getCurrentUser());
+    t = (0, s.e7)([h.Z], () => h.Z.getGuild(e)),
+    n = (0, s.e7)([I.default], () => I.default.getCurrentUser());
   return null == e || null == t || null == n ? null : (0, l.jsxs)("div", {
     className: T.upsellContainer,
     children: [(0, l.jsxs)("div", {
@@ -274,7 +274,7 @@ function v() {
         className: T.valueContainer,
         children: [(0, l.jsx)("div", {
           className: r()(T.upsellPreview, T.spacingLarge),
-          children: O().map((e, t) => {
+          children: x().map((e, t) => {
             let {
               channelIcon: n,
               channel: i,

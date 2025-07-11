@@ -1,6 +1,6 @@
 /**
   Module ID: 91372
-  Original File Name: 87c76d19fe56b55f
+  Original File Name: f2492465a5622c48
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -12392,11 +12392,8 @@ html .invoiceCancelRow_b9f95d {
 }
 
 .buttonsContainer__4962e {
-    display: flex
-}
-
-.removeButton__4962e {
-    margin-left: 4px
+    display: flex;
+    gap: 4px
 }
 
 .displayNameStylesSection_e60bc0 {
@@ -19958,4 +19955,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=87c76d19fe56b55f.css.map*/
+/*# sourceMappingURL=f2492465a5622c48.css.map*/

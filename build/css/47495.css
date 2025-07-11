@@ -1,0 +1,52 @@
+/**
+  Module ID: 47495
+  Original File Name: 2797e22b8ec43053
+**/
+.modalHeaderPreview__4671c {
+    display: flex;
+    justify-content: flex-end
+}
+
+.modalHeader__39813 {
+    justify-content: space-between;
+    padding-bottom: var(--space-16)
+}
+
+.modalHeaderPreview__39813 {
+    display: flex;
+    justify-content: flex-end
+}
+
+.modalContent__39813 {
+    display: flex
+}
+
+.previewSection__39813,.selectionSection__39813 {
+    flex: 1
+}
+
+.selectionSubSection__39813 {
+    margin-top: var(--space-32)
+}
+
+.footer__39813 {
+    background-color: var(--background-mod-subtle);
+    border-top: 1px solid var(--border-subtle);
+    gap: 4px
+}
+
+.applyButton__39813 {
+    min-width: 120px
+}
+
+.surpriseMeButton__39813 {
+    margin-right: var(--space-12)
+}
+
+.surpriseMeButtonContent__39813 {
+    align-items: center;
+    display: flex;
+    gap: 8px
+}
+
+/*# sourceMappingURL=2797e22b8ec43053.css.map*/
