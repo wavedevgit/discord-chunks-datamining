@@ -1,10 +1,14 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Iu: () => u,
-  OS: () => d,
-  g6: () => _,
-  v3: () => f
+  OS: () => _,
+  YF: () => u,
+  _$: () => d,
+  dI: () => g,
+  g6: () => h,
+  km: () => f,
+  nC: () => m,
+  v3: () => p
 });
 var r = n(97519),
   i = n(296574);
@@ -49,6 +53,8 @@ function l(e, t) {
 }
 let c = (0, r.U)((0, i.tJ)(e => ({
   channelDismissTimestamps: {},
+  userDismissTimestamps: {},
+  globalDismissTimestamp: null,
   queuedWarning: !1
 }), {
   name: "shared-spaces-warning-storage",
@@ -59,20 +65,45 @@ function u(e) {
   return c.getState().channelDismissTimestamps[e]
 }
 
-function d() {
-  return c.getState().queuedWarning
+function d(e) {
+  return c.getState().userDismissTimestamps[e]
 }
 
 function f() {
+  return c.getState().globalDismissTimestamp
+}
+
+function _() {
+  return c.getState().queuedWarning
+}
+
+function p() {
   c.setState({
     queuedWarning: !1
   })
 }
 
-function _(e) {
+function h(e) {
   c.setState(t => ({
     channelDismissTimestamps: l(o({}, t.channelDismissTimestamps), {
       [e]: Date.now()
     })
+  }))
+}
+
+function m(e) {
+  c.setState(t => ({
+    userDismissTimestamps: l(o({}, t.userDismissTimestamps), {
+      [e]: Date.now()
+    }),
+    globalDismissTimestamp: Date.now()
+  }))
+}
+
+function g(e) {
+  let t = Array.from(e).reduce((e, t) => (e[t] = Date.now(), e), {});
+  c.setState(e => ({
+    userDismissTimestamps: o({}, e.userDismissTimestamps, t),
+    globalDismissTimestamp: Date.now()
   }))
 }
