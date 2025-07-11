@@ -6,14 +6,15 @@ n.d(t, {
   DZ: () => C,
   PS: () => P,
   T6: () => S,
-  Z1: () => k,
+  Z1: () => M,
   aj: () => R,
-  bE: () => j,
+  bE: () => U,
   fy: () => E.fy,
   hW: () => N,
+  m9: () => x,
   nm: () => D,
-  sr: () => M,
-  w9: () => x
+  sr: () => j,
+  w9: () => k
 }), n(415506), n(388685), n(410992), n(227481), n(730884), n(20464), n(341884), n(364341), n(629680), n(505025), n(918970), n(121784), n(644351), n(146733);
 var r = n(512722),
   i = n.n(r),
@@ -305,15 +306,20 @@ async function L(e, t) {
     n.recurringDismissibleContentStates[e] = O({}, n.recurringDismissibleContentStates[e], t)
   }, E.fy.INFREQUENT_USER_ACTION)
 }
+async function x(e, t, n) {
+  return await P(t, t => {
+    t.guildDismissibleContentStates[e] = O({}, t.guildDismissibleContentStates[e], n)
+  }, E.fy.INFREQUENT_USER_ACTION)
+}
 
-function x(e) {
+function k(e) {
   return N.updateAsync("userContent", t => {
     if (!(0, p.jl)(t.dismissedContents, e)) return !1;
     t.dismissedContents = (0, p.jx)(t.dismissedContents, e)
   }, E.fy.INFREQUENT_USER_ACTION)
 }
 
-function k(e) {
+function M(e) {
   return L(e, {
     lastDismissedVersion: 0,
     lastDismissedAtMs: "0",
@@ -321,13 +327,13 @@ function k(e) {
   })
 }
 
-function M() {
+function j() {
   return N.updateAsync("userContent", e => {
     e.dismissedContents = new Uint8Array, e.recurringDismissibleContentStates = {}
   }, E.fy.INFREQUENT_USER_ACTION)
 }
 
-function j() {
+function U() {
   return N.updateAsync("userContent", e => {
     let t = new Uint8Array;
     for (let n of d.V_)(0, d.O2)(n) ? t = (0, p.GV)(t, n) : e.recurringDismissibleContentStates[n] = (0, f.F8)(n);

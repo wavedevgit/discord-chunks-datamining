@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => T
+  Z: () => S
 }), n(642613), n(583741), n(388685), n(415506);
 var r = n(73800),
   i = n(512722),
@@ -106,7 +106,11 @@ let I = e => {
   }
 };
 
-function T() {
+function T(e, t) {
+  return null != t && !p.Z.fetchingAllEntitlements && (!p.Z.fetchedAllEntitlements || e)
+}
+
+function S() {
   let {
     forceFetch: e,
     excludeReverseTrial: t,
@@ -117,8 +121,8 @@ function T() {
     excludeReverseTrialFromCountdown: !1
   }, i = (0, c.e7)([f.default], () => f.default.getCurrentUser()), a = (0, c.Wu)([p.Z], () => p.Z.getFractionalPremium({
     excludeReverseTrial: t
-  })), s = (0, c.e7)([p.Z], () => p.Z.fetchedAllEntitlements), l = (0, c.Wu)([p.Z], () => p.Z.getUnactivatedFractionalPremiumUnits()), h = (0, c.e7)([_.Z], () => _.Z.getPremiumTypeSubscription()), m = null !== i && !p.Z.fetchingAllEntitlements && (!p.Z.fetchedAllEntitlements || e), [E, b] = r.useState(I({
-    isFetching: m || p.Z.fetchingAllEntitlements,
+  })), s = (0, c.e7)([p.Z], () => p.Z.fetchedAllEntitlements), l = (0, c.Wu)([p.Z], () => p.Z.getUnactivatedFractionalPremiumUnits()), h = (0, c.e7)([_.Z], () => _.Z.getPremiumTypeSubscription()), [m, E] = r.useState(I({
+    isFetching: T(e, i) || p.Z.fetchingAllEntitlements,
     entitlements: a,
     unactivatedFractionalPremiumUnits: l,
     currentUser: i,
@@ -127,7 +131,7 @@ function T() {
     excludeReverseTrialFromCountdown: n
   }));
   return (0, d.ZP)(() => {
-    m && (0, u.p0)({
+    T(e, i) && (0, u.p0)({
       entitlementType: g.qc2.FRACTIONAL_REDEMPTION
     })
   }), r.useEffect(() => {
@@ -139,6 +143,6 @@ function T() {
       fetchedAllEntitlements: s,
       excludeReverseTrialFromCountdown: n
     });
-    b(t => (0, o.isEqual)(t, e) ? t : e)
-  }, [i, a, h, l, s, n]), E
+    E(t => (0, o.isEqual)(t, e) ? t : e)
+  }, [i, a, h, l, s, n]), m
 }
