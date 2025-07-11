@@ -22,16 +22,16 @@ var r = n(255367),
   C = n(585483),
   x = n(403182),
   v = n(127654),
-  O = n(752305),
-  j = n(951211),
+  j = n(752305),
+  O = n(951211),
   E = n(981631),
   S = n(921944),
   I = n(489887),
   P = n(388032),
   Z = n(725776);
-let T = RegExp("(.*)```(\\w+)\\n(.*)```(.*)", "s");
+let N = RegExp("(.*)```(\\w+)\\n(.*)```(.*)", "s");
 
-function N() {
+function T() {
   let e = (0, a.e7)([_.Z], () => _.Z.hasCurrentUserSentMessageSinceAppStart()),
     t = [];
   e && t.push(o.z.ACTIVITIES_CHAT_MENU_NEW_BADGE);
@@ -76,7 +76,7 @@ function A(e) {
   }
 
   function U() {
-    y.default.track(E.rMx.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), R("/", (0, O.JM)("/"))
+    y.default.track(E.rMx.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), R("/", (0, j.JM)("/"))
   }
 
   function B() {
@@ -145,7 +145,7 @@ function A(e) {
     let e = w,
       n = "txt",
       r = "",
-      i = w.match(T);
+      i = w.match(N);
     null != i && (r = i[1], n = i[2], e = i[3], r += i[4]), (0, v.d)([(0, x.dp)(new Blob([e], {
       type: "text/plain"
     }), "message.".concat(n), "text/plain")], t, A), C.S.dispatchToLastSubscribed(E.CkL.CLEAR_TEXT), "" !== r && C.S.dispatchToLastSubscribed(E.CkL.INSERT_TEXT, {
@@ -181,32 +181,32 @@ function A(e) {
         })]
       });
       switch (e.type) {
-        case j.r.UPLOAD_A_FILE:
+        case O.r.UPLOAD_A_FILE:
           return (0, r.jsx)(s.sNh, {
             id: "upload-file",
             label: i,
             action: f
           }, "upload-file");
-        case j.r.UPLOAD_TEXT_AS_FILE:
+        case O.r.UPLOAD_TEXT_AS_FILE:
           if ("" === w) return null;
           return (0, r.jsx)(s.sNh, {
             id: "upload-text-as-file",
             label: i,
             action: G
           }, "upload-text-as-file");
-        case j.r.CLIPS:
+        case O.r.CLIPS:
           return (0, r.jsx)(s.sNh, {
             id: "clips",
             label: i,
             action: B
           }, "clips");
-        case j.r.POLL:
+        case O.r.POLL:
           return (0, r.jsx)(s.sNh, {
             id: "poll",
             label: i,
             action: F
           }, "poll");
-        case j.r.INVITE_TO_PLAY_GAME:
+        case O.r.INVITE_TO_PLAY_GAME:
           return (0, r.jsx)(s.sNh, {
             id: "play",
             label: i,
@@ -220,7 +220,7 @@ function A(e) {
               })
             }
           }, "play");
-        case j.r.INVITE_TO_LISTEN:
+        case O.r.INVITE_TO_LISTEN:
           return (0, r.jsx)(s.sNh, {
             id: "listen",
             label: i,
@@ -234,7 +234,7 @@ function A(e) {
               })
             }
           }, "listen");
-        case j.r.INVITE_TO_WATCH:
+        case O.r.INVITE_TO_WATCH:
           return (0, r.jsx)(s.sNh, {
             id: "watch",
             label: i,
@@ -248,26 +248,26 @@ function A(e) {
               })
             }
           }, "watch");
-        case j.r.CREATE_THREAD:
+        case O.r.CREATE_THREAD:
           return (0, r.jsx)(s.sNh, {
             id: "THREAD",
             label: i,
             action: L
           }, "THREAD");
-        case j.r.SLASH_COMMAND:
+        case O.r.SLASH_COMMAND:
           return (0, r.jsx)(s.sNh, {
             id: "SLASH_COMMAND",
             label: i,
             action: U
           }, "SLASH_COMMAND");
-        case j.r.ACTIVITY:
+        case O.r.ACTIVITY:
           return (0, r.jsx)(s.sNh, {
             id: "activity",
             label: i,
             action: H,
-            hint: (0, r.jsx)(N, {})
+            hint: (0, r.jsx)(T, {})
           }, "activity");
-        case j.r.SCHEDULED_MESSAGE:
+        case O.r.SCHEDULED_MESSAGE:
           return (0, r.jsx)(s.sNh, {
             id: "scheduled_message",
             label: i,

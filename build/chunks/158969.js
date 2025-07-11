@@ -22,8 +22,8 @@ var r = n(255367),
   C = n(388032),
   x = n(684525),
   v = n(848697),
-  O = n(73433);
-let j = i.memo(function(e) {
+  j = n(73433);
+let O = i.memo(function(e) {
     let {
       message: t,
       notice: n,
@@ -86,7 +86,7 @@ let j = i.memo(function(e) {
       S.current ? null != y && y() : S.current = !0
     }, [y, u.content, m, E, f]), (0, r.jsxs)("div", {
       id: (0, g.ut)(u),
-      className: a()(l, O.markup, {
+      className: a()(l, j.markup, {
         [v.messageContent]: !0,
         [v.markupRtl]: "rtl" === s()(u.content),
         [x.blockedEdit]: null == I ? void 0 : I.isBlockedEdit,
@@ -102,7 +102,7 @@ let j = i.memo(function(e) {
             children: ["(", C.intl.string(C.t.Z7eEx8), ")"]
           })
         })]
-      }), (0, r.jsx)(j, {
+      }), (0, r.jsx)(O, {
         notice: null != (n = null == I ? void 0 : I.errorMessage) ? n : C.intl.string(C.t.zQ69pq),
         message: u,
         compact: o,

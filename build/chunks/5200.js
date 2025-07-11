@@ -33,8 +33,8 @@ function x(e) {
     animatedDivClass: x,
     commandOrigin: v
   } = e, {
-    onActivityItemSelected: O,
-    imageBackground: j,
+    onActivityItemSelected: j,
+    imageBackground: O,
     activityAction: E,
     labelType: S
   } = (0, d.ZP)({
@@ -48,9 +48,9 @@ function x(e) {
     commandOrigin: v
   }), [I, P] = l.useState(!1), Z = l.useCallback(() => {
     P(!0)
-  }, [P]), T = l.useCallback(() => {
+  }, [P]), N = l.useCallback(() => {
     P(!1)
-  }, [P]), N = l.useMemo(() => (0, i.jsx)("div", {
+  }, [P]), T = l.useMemo(() => (0, i.jsx)("div", {
     className: b.overlayBadge,
     children: (0, i.jsx)("div", {
       className: b.badgeContainer,
@@ -90,14 +90,14 @@ function x(e) {
     }
   }, [E]);
   return (0, i.jsx)(c.zx, {
-    onClick: O,
+    onClick: j,
     color: "transparent",
     look: c.zx.Looks.BLANK,
     size: c.zx.Sizes.NONE,
     onFocus: Z,
-    onBlur: T,
+    onBlur: N,
     onMouseEnter: Z,
-    onMouseLeave: T,
+    onMouseLeave: N,
     innerClassName: b.activityItemButtonInnerClass,
     children: (0, i.jsx)(u.AMe, {
       config: y,
@@ -122,11 +122,11 @@ function x(e) {
               transform: t.to([0, 1], [1, 1.05]).to(e => "scale(".concat(e, ")"))
             },
             children: [(0, i.jsx)(p.Z, {
-              imageBackground: j,
+              imageBackground: O,
               applicationName: r.application.name,
               imageClassName: b.activitySuggestionImage,
               imageNotFoundClassName: b.brokenImageIconWrapper
-            }), N, A]
+            }), T, A]
           })
         })
       }

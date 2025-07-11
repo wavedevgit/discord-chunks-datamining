@@ -22,8 +22,8 @@ var r = n(255367),
   C = n(433355),
   x = n(699516),
   v = n(594174),
-  O = n(768581),
-  j = n(525541),
+  j = n(768581),
+  O = n(525541),
   E = n(981631),
   S = n(228168),
   I = n(388032),
@@ -35,7 +35,7 @@ let Z = e => {
     } = e, l = (0, a.e7)([_.Z], () => _.Z.getMutualGuilds(t), [t]), o = i.useMemo(() => null != l ? l.slice(0, 3).map((e, t) => {
       let {
         guild: n
-      } = e, i = null != n ? O.ZP.getGuildIconURL({
+      } = e, i = null != n ? j.ZP.getGuildIconURL({
         id: n.id,
         icon: n.icon,
         size: 24
@@ -82,7 +82,7 @@ let Z = e => {
       })]
     })
   },
-  T = e => {
+  N = e => {
     var t;
     let {
       relationshipType: n,
@@ -181,7 +181,7 @@ let Z = e => {
         return null
     }
   },
-  N = e => {
+  T = e => {
     let {
       channelId: t,
       otherUserId: n
@@ -231,18 +231,18 @@ let Z = e => {
     } = e, {
       channelId: o
     } = (0, m._)(), s = (0, a.e7)([h.Z], () => null != o && h.Z.isSpam(o), [o]), c = (0, a.e7)([x.Z], () => x.Z.getRelationshipType(t), [t]), u = n.id === o, d = !l.tq && !u, p = !!l.tq || u || s, f = s || u ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(N, {
+      children: [(0, r.jsx)(T, {
         channelId: n.id,
         otherUserId: t
       }), (0, r.jsx)(g.Z, {
         channel: n
       })]
     }) : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(T, {
+      children: [(0, r.jsx)(N, {
         relationshipType: c,
         userId: t,
         showingBanner: i
-      }), !i && (0, r.jsx)(j.Z, {
+      }), !i && (0, r.jsx)(O.Z, {
         otherUserId: t,
         channel: n,
         navigateAwayOnReportSuccess: d

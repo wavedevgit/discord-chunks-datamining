@@ -31,12 +31,12 @@ function y(e) {
   }, {
     autoTrackExposure: !1
   }), {
-    viewerClippingAllowed: O,
-    isAtMaxSavingClipOperations: j
+    viewerClippingAllowed: j,
+    isAtMaxSavingClipOperations: O
   } = (0, l.cj)([s.Z], () => ({
     viewerClippingAllowed: null != x && (s.Z.isViewerClippingAllowedForUser(x.ownerId) || v),
     isAtMaxSavingClipOperations: s.Z.getIsAtMaxSaveClipOperations()
-  })), E = s.Z.getSettings().clipsEnabled, S = (null == x ? void 0 : x.ownerId) === h.default.getId(), I = !E || !(S || O) || j || null == y, P = i.useCallback(e => {
+  })), E = s.Z.getSettings().clipsEnabled, S = (null == x ? void 0 : x.ownerId) === h.default.getId(), I = !E || !(S || j) || O || null == y, P = i.useCallback(e => {
     var t, n;
     return (0, r.jsx)(a.xmR, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -75,7 +75,7 @@ function y(e) {
     },
     disabled: I,
     iconComponent: P,
-    label: null == x ? b.intl.string(b.t.eg5qtb) : S || O ? E ? j ? void 0 : b.intl.string(b.t.U4URzM) : b.intl.string(b.t.wSS1yM) : b.intl.string(b.t.aRifJS),
+    label: null == x ? b.intl.string(b.t.eg5qtb) : S || j ? E ? O ? void 0 : b.intl.string(b.t.U4URzM) : b.intl.string(b.t.wSS1yM) : b.intl.string(b.t.aRifJS),
     grow: !1
   })
 }

@@ -1,6 +1,6 @@
 /** Chunk was on 19577 **/
 n.d(t, {
-  Z: () => T
+  Z: () => N
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -22,8 +22,8 @@ var r = n(255367),
   C = n(63063),
   x = n(5192),
   v = n(823961),
-  O = n(981631),
-  j = n(37113),
+  j = n(981631),
+  O = n(37113),
   E = n(388032),
   S = n(15322),
   I = n(574169);
@@ -48,13 +48,13 @@ function P(e) {
 }
 let Z = e => 1 - Math.pow(1 - e, 3);
 
-function T(e) {
+function N(e) {
   let {
     channel: t,
     buyer: l,
     onClose: o,
-    dismissibleContent: T
-  } = e, N = (0, u.Wu)([b.Z], () => b.Z.getAllActiveStreams()), A = (0, u.e7)([y.default], () => y.default.getCurrentUser()), w = null != N.find(e => e.ownerId === (null == A ? void 0 : A.id)), R = (0, u.e7)([v.Z], () => v.Z.getPreviousGoLiveSettings()), M = w && null != R && R.resolution !== j.LY.RESOLUTION_1440 && R.frameRate !== j.ws.FPS_60, [D, k] = (0, i.useState)(!1);
+    dismissibleContent: N
+  } = e, T = (0, u.Wu)([b.Z], () => b.Z.getAllActiveStreams()), A = (0, u.e7)([y.default], () => y.default.getCurrentUser()), w = null != T.find(e => e.ownerId === (null == A ? void 0 : A.id)), R = (0, u.e7)([v.Z], () => v.Z.getPreviousGoLiveSettings()), M = w && null != R && R.resolution !== O.LY.RESOLUTION_1440 && R.frameRate !== O.ws.FPS_60, [D, k] = (0, i.useState)(!1);
   (0, i.useEffect)(() => {
     k(!0)
   }, []);
@@ -87,13 +87,13 @@ function T(e) {
     V = t.hdStreamingUntil;
   if (null == V || null == l || null == A) return null;
   let z = s()(V).diff(s()(), "hours"),
-    W = T ? E.intl.format(E.t["6LrV9f"], {
+    W = N ? E.intl.format(E.t["6LrV9f"], {
       username: H,
       num: z,
-      helpCenterLink: C.Z.getArticleURL(O.BhN.HD_STREAMING_POTION)
+      helpCenterLink: C.Z.getArticleURL(j.BhN.HD_STREAMING_POTION)
     }) : l.id === A.id ? E.intl.string(E.t.IjKvNT) : !0 === w ? E.intl.format(E.t.JkWoqK, {
       username: H,
-      helpCenterLink: C.Z.getArticleURL(O.BhN.HD_STREAMING_POTION)
+      helpCenterLink: C.Z.getArticleURL(j.BhN.HD_STREAMING_POTION)
     }) : E.intl.formatToPlainString(E.t.vNbVXF, {
       username: H
     }),

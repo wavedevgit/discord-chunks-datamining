@@ -22,15 +22,15 @@ var r = n(255367),
   C = n(768119),
   x = n(944486),
   v = n(585483),
-  O = n(72006),
-  j = n(965996),
+  j = n(72006),
+  O = n(965996),
   E = n(652399),
   S = n(970850),
   I = n(861262),
   P = n(251285),
   Z = n(406326),
-  T = n(994463),
-  N = n(611004),
+  N = n(994463),
+  T = n(611004),
   A = n(619753),
   w = n(902733),
   R = n(981631),
@@ -49,7 +49,7 @@ function L(e, t, n) {
 
 function U(e) {
   let t = null != e ? C.Z.getEditorState(e) : null;
-  return null != t ? O.Sq(t) : null
+  return null != t ? j.Sq(t) : null
 }
 class B extends i.Component {
   componentDidMount() {
@@ -232,7 +232,7 @@ class H extends i.PureComponent {
     }), L(this, "renderIndexing", () => {
       let e = this.props.searchType === R.aib.GUILD ? D.intl.string(D.t.AXPbZm) : D.intl.string(D.t.Q0JJjo);
       return (0, r.jsxs)(F, {
-        children: [(0, r.jsx)(T.Z, {}), (0, r.jsx)("div", {
+        children: [(0, r.jsx)(N.Z, {}), (0, r.jsx)("div", {
           className: (k.emptyResultsText, k.stillIndexing),
           children: e
         })]
@@ -397,19 +397,19 @@ function V(e) {
     } = (0, S.Z)({
       searchId: o
     }),
-    O = i.useCallback(e => {
+    j = i.useCallback(e => {
       v(e);
       let t = U(o);
-      N.Z.fetchCrossDMMessages({
+      T.Z.fetchCrossDMMessages({
         searchContext: a,
         selectedPageIndex: 0,
         queryString: null != t ? t : "",
         searchMode: e
       })
     }, [a, o, v]),
-    j = i.useCallback(e => {
+    O = i.useCallback(e => {
       var t;
-      d(e), N.Z.fetchCrossDMMessages({
+      d(e), T.Z.fetchCrossDMMessages({
         searchContext: a,
         queryString: null != (t = U(o)) ? t : "",
         selectedPageIndex: e,
@@ -429,8 +429,8 @@ function V(e) {
     theme: t,
     isFeedbackVisible: n,
     dismissFeedbackEntrypoint: l,
-    onPageChange: j,
-    onSearchModeChange: O,
+    onPageChange: O,
+    onSearchModeChange: j,
     searchMode: x
   })
 }
@@ -443,7 +443,7 @@ function z(e) {
   }), a = i.useRef(null), [o, s] = i.useState(!1), {
     enabled: c,
     force: u
-  } = (0, j.f)({
+  } = (0, O.f)({
     location: "SearchResults"
   });
   i.useEffect(() => {

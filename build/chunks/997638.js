@@ -1,6 +1,6 @@
 /** Chunk was on 19577 **/
 n.d(t, {
-  ZP: () => j,
+  ZP: () => O,
   cy: () => v,
   iu: () => x
 }), n(388685);
@@ -53,7 +53,7 @@ function C(e, t) {
 }
 var x = ((i = {}).CENTER = "center", i.LEFT = "left", i),
   v = ((l = {}).TOP = "top", l.MIDDLE = "middle", l);
-class O extends o.PureComponent {
+class j extends o.PureComponent {
   componentDidMount() {
     let {
       uniqueId: e
@@ -129,7 +129,7 @@ class O extends o.PureComponent {
     })
   }
 }
-class j extends(r = o.PureComponent) {
+class O extends(r = o.PureComponent) {
   render() {
     let e = this.props,
       {
@@ -194,7 +194,7 @@ class j extends(r = o.PureComponent) {
       } = this.props, s = null != o;
       return (0, a.jsx)(p.f6W, {
         theme: r,
-        children: e => (0, a.jsx)(O, C(y({}, this.props), {
+        children: e => (0, a.jsx)(j, C(y({}, this.props), {
           className: c()({
             [b.bottom]: "bottom" === n,
             [b.contentNarrowNoMedia]: !i && !s,
@@ -215,6 +215,6 @@ class j extends(r = o.PureComponent) {
     })
   }
 }
-_(j, "TextAlignments", x), _(j, "defaultProps", {
+_(O, "TextAlignments", x), _(O, "defaultProps", {
   textAlign: "left"
 })

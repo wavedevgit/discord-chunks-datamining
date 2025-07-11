@@ -30,16 +30,16 @@ function y(e) {
     context: C
   } = (0, s.KZ)(), x = (0, i.Z)(), {
     mutualFriendsCount: v,
-    mutualFriends: O,
-    mutualGuilds: j
-  } = (0, c.Z)(t), E = !t.bot && null != v && v > 0, S = null != j && j.length > 0;
+    mutualFriends: j,
+    mutualGuilds: O
+  } = (0, c.Z)(t), E = !t.bot && null != v && v > 0, S = null != O && O.length > 0;
   return E || S ? (0, r.jsxs)(m.Z.Overlay, {
     className: _.overlay,
     children: [S && (0, r.jsx)(g.Z, {
       section: "MUTUAL_GUILDS",
       header: b.intl.string(b.t["4lTDZm"]),
       listClassName: _.list,
-      items: j.map(e => {
+      items: O.map(e => {
         let {
           guild: n,
           nick: i
@@ -58,7 +58,7 @@ function y(e) {
       header: b.intl.string(b.t["0mTJ3t"]),
       listClassName: _.list,
       onExpand: () => (0, u.Z)(t.id, x),
-      items: null == O ? Array.from({
+      items: null == j ? Array.from({
         length: v
       }).map((e, t) => (0, r.jsxs)("div", {
         className: _.loadingMutualFriend,
@@ -69,7 +69,7 @@ function y(e) {
           width: 135,
           opacity: .08
         })]
-      }, t)) : O.map(e => {
+      }, t)) : j.map(e => {
         let {
           key: t,
           user: i,

@@ -22,7 +22,7 @@ var r = n(255367),
   C = n(989830),
   x = n(388032),
   v = n(837265);
-let O = i.memo(function(e) {
+let j = i.memo(function(e) {
     let {
       channelId: t,
       width: n
@@ -55,7 +55,7 @@ let O = i.memo(function(e) {
       })
     })
   }),
-  j = i.memo(function(e) {
+  O = i.memo(function(e) {
     let {
       value: t,
       multiplier: n
@@ -145,21 +145,21 @@ let O = i.memo(function(e) {
     }, [I]);
     let {
       multiplier: Z,
-      value: T
+      value: N
     } = i.useMemo(() => ({
       value: E ? I.value : P.current.value,
       multiplier: E ? I.multiplier : P.current.multiplier
     }), [E, I, P]);
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(O, {
+      children: [(0, r.jsx)(j, {
         channelId: t,
         width: m
       }), (0, r.jsx)(o.animated.div, {
         ref: p,
         className: v.combo,
         style: S,
-        children: (0, r.jsx)(j, {
-          value: T,
+        children: (0, r.jsx)(O, {
+          value: N,
           multiplier: Z
         })
       })]

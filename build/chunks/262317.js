@@ -24,15 +24,15 @@ var r = n(255367),
   C = n(701362),
   x = n(670188),
   v = n(597998),
-  O = n(314897),
-  j = n(430824),
+  j = n(314897),
+  O = n(430824),
   E = n(496675),
   S = n(594174),
   I = n(979651),
   P = n(927923),
   Z = n(70722),
-  T = n(388032),
-  N = n(587382);
+  N = n(388032),
+  T = n(587382);
 
 function A(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -71,7 +71,7 @@ function R(e) {
     numUsers: t
   } = e;
   return (0, r.jsx)("div", {
-    className: N.moreContainer,
+    className: T.moreContainer,
     children: (0, r.jsxs)(o.Text, {
       color: "text-muted",
       variant: "text-sm/medium",
@@ -84,19 +84,19 @@ function M(e) {
   let {
     numAudience: t,
     collapsed: n
-  } = e, i = n ? t : T.intl.formatToPlainString(T.t["+v2pNz"], {
+  } = e, i = n ? t : N.intl.formatToPlainString(N.t["+v2pNz"], {
     count: t
   });
   return (0, r.jsxs)("div", {
-    className: a()(N.audienceContainer, {
-      [N.audienceContainerCollapsed]: n
+    className: a()(T.audienceContainer, {
+      [T.audienceContainerCollapsed]: n
     }),
     children: [(0, r.jsx)("div", {
-      className: N.audienceIconContainer,
+      className: T.audienceIconContainer,
       children: (0, r.jsx)(o.VWR, {
         size: "md",
         color: "currentColor",
-        className: N.audienceIcon
+        className: T.audienceIcon
       })
     }), (0, r.jsx)(o.Text, {
       color: "text-muted",
@@ -144,7 +144,7 @@ let D = (0, p.$)(function(e) {
     ep(!ed)
   }, ef = () => {
     K && (null == ee || ee(p.id))
-  }, em = () => K && (0, _.p9)(R, I.Z, j.Z, E.Z, m.Z)[0], eg = () => {
+  }, em = () => K && (0, _.p9)(R, I.Z, O.Z, E.Z, m.Z)[0], eg = () => {
     if (!em()) return;
     let e = {
       streamType: Z.lo.GUILD,
@@ -152,7 +152,7 @@ let D = (0, p.$)(function(e) {
       channelId: R.id,
       guildId: R.guild_id
     };
-    O.default.getId() !== p.id && u.default.selectVoiceChannel(R.id), X ? ((0, y.Z)(e), s.Z.selectParticipant(e.channelId, (0, b.V9)(e))) : (0, d.iV)(e), null == ee || ee(p.id)
+    j.default.getId() !== p.id && u.default.selectVoiceChannel(R.id), X ? ((0, y.Z)(e), s.Z.selectParticipant(e.channelId, (0, b.V9)(e))) : (0, d.iV)(e), null == ee || ee(p.id)
   }, eb = e => {
     (0, c.jW)(e, async () => {
       let {
@@ -200,7 +200,7 @@ let D = (0, p.$)(function(e) {
         voicePlatform: ei,
         embeddedApplication: B,
         avatarContainerClass: a()({
-          [N.userAvatar]: !0
+          [T.userAvatar]: !0
         }),
         disabled: el && !t,
         selected: ed,
@@ -215,7 +215,7 @@ let D = (0, p.$)(function(e) {
     if (el) {
       var i;
       return (0, r.jsx)(o.ua7, {
-        text: null != (i = (0, g.Z)(er)) ? i : T.intl.string(T.t.IyYqqa),
+        text: null != (i = (0, g.Z)(er)) ? i : N.intl.string(N.t.IyYqqa),
         children: e => {
           var {
             onClick: t,
@@ -255,7 +255,7 @@ let D = (0, p.$)(function(e) {
       }))
     })
   }, eC = (0, r.jsx)("div", {
-    className: N.draggable,
+    className: T.draggable,
     "data-dnd-name": R.name,
     onMouseEnter: el ? void 0 : () => {
       K && !ed && (null == $ || $(p.id))

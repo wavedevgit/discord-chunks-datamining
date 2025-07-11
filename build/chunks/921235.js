@@ -1,6 +1,6 @@
 /** Chunk was on 19577 **/
 n.d(t, {
-  Z: () => j
+  Z: () => O
 }), n(388685), n(583741);
 var r = n(255367),
   i = n(73800),
@@ -22,36 +22,36 @@ var r = n(255367),
   C = n(981631),
   x = n(388032),
   v = n(900170);
-let O = "749054660769218631";
+let j = "749054660769218631";
 
-function j(e) {
+function O(e) {
   var t;
   let {
     channel: n
-  } = e, [l, j] = i.useState("");
+  } = e, [l, O] = i.useState("");
   i.useEffect(() => {
     (0, d.FQ)("847199849233514549", !0)
   }, []);
   let E = (0, o.e7)([m.Z, f.default], () => !!a()(m.Z.getMessages(n.id).toArray()).reverse().find(e => e.author.id !== f.default.getId() && e.state === C.yb.SENT && !(0, y.Z)(e))),
     S = (0, o.e7)([g.default], () => g.default.getUser(n.isPrivate() ? n.getRecipientId() : null)),
     I = null != (t = _.ZP.useName(S)) ? t : x.intl.string(x.t.y1Wu2d),
-    P = (0, o.e7)([p.Z], () => p.Z.getStickerById(O)),
+    P = (0, o.e7)([p.Z], () => p.Z.getStickerById(j)),
     Z = i.useCallback(async () => {
       if (null == l || "" === l) try {
-        await u.Z.sendGreetMessage(n.id, O), b.default.track(C.rMx.DM_EMPTY_ACTION, {
+        await u.Z.sendGreetMessage(n.id, j), b.default.track(C.rMx.DM_EMPTY_ACTION, {
           channel_id: n.id,
           channel_type: n.type,
           source: "Wave",
           type: "Send wave"
         })
       } catch (e) {
-        e.ok || 429 !== e.status || j(x.intl.string(x.t["Whhv4+"]))
+        e.ok || 429 !== e.status || O(x.intl.string(x.t["Whhv4+"]))
       }
     }, [n.id, n.type, l]),
-    T = x.intl.formatToPlainString(x.t.m0zYbW, {
+    N = x.intl.formatToPlainString(x.t.m0zYbW, {
       username: I
     }),
-    N = null != l && "" !== l ? (0, r.jsx)(c.Text, {
+    T = null != l && "" !== l ? (0, r.jsx)(c.Text, {
       className: v.error,
       color: "text-danger",
       variant: "text-sm/normal",
@@ -69,9 +69,9 @@ function j(e) {
       }), (0, r.jsx)(c.Text, {
         className: v.text,
         variant: "text-md/medium",
-        children: T
+        children: N
       })]
-    }), N]
+    }), T]
   }) : (0, r.jsxs)("div", {
     className: v.containerExpanded,
     children: [(0, r.jsx)(h.Z, {
@@ -81,7 +81,7 @@ function j(e) {
       className: v.button,
       onClick: Z,
       disabled: !!l,
-      children: T
-    }), N]
+      children: N
+    }), T]
   })
 }

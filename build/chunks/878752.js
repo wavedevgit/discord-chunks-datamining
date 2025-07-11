@@ -28,8 +28,8 @@ function v(e) {
     hasActiveStream: n,
     showRightDivider: v
   } = e, {
-    analyticsLocations: O
-  } = (0, o.ZP)(a.Z.VOICE_CONTROL_TRAY), j = (0, h.Ou)(t), E = i.useRef(null), S = (0, u.Z)(), {
+    analyticsLocations: j
+  } = (0, o.ZP)(a.Z.VOICE_CONTROL_TRAY), O = (0, h.Ou)(t), E = i.useRef(null), S = (0, u.Z)(), {
     isSharedCanvasEnabled: I
   } = f.Z.useExperiment({
     guildId: null == t ? void 0 : t.guild_id,
@@ -40,12 +40,12 @@ function v(e) {
     location: "VoiceEffectsActionBar"
   }, {
     autoTrackExposure: !1
-  }), Z = (0, s.Z)(m.Z), T = (0, h.Zm)(t, "VoiceEffectsActionBar") ? [l.z.CONSUMABLE_HD_POTION_UPSELL] : [], [N, A] = (0, c.US)(T, void 0, !0), w = N === l.z.CONSUMABLE_HD_POTION_UPSELL;
+  }), Z = (0, s.Z)(m.Z), N = (0, h.Zm)(t, "VoiceEffectsActionBar") ? [l.z.CONSUMABLE_HD_POTION_UPSELL] : [], [T, A] = (0, c.US)(N, void 0, !0), w = T === l.z.CONSUMABLE_HD_POTION_UPSELL;
   if (null == t || null != S) return null;
   let R = P && Z,
     M = I && n;
   return (0, r.jsxs)(o.Gt, {
-    value: O,
+    value: j,
     children: [(0, r.jsxs)("div", {
       className: x.voiceEffectsActionBar,
       children: [R && (0, r.jsx)(g.Z, {
@@ -54,14 +54,14 @@ function v(e) {
         potionRef: E,
         channel: t,
         markAsDismissed: A
-      }), j && (0, r.jsx)(y.Z, {
+      }), O && (0, r.jsx)(y.Z, {
         ref: E,
         channel: t,
         glow: w
       }), M && (0, r.jsx)(b.Z, {}), M && (0, r.jsx)(_.Z, {
         channel: t
       }), M && (0, r.jsx)(C.Z, {})]
-    }), v && (R || w || j || M) && (0, r.jsx)("div", {
+    }), v && (R || w || O || M) && (0, r.jsx)("div", {
       className: x.divider
     })]
   })

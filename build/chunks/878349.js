@@ -28,11 +28,11 @@ function b(e) {
     tooltipColor: C,
     className: x,
     id: v = "fancybutton-toggle",
-    collapseWhenChecked: O = !0,
-    onClick: j,
+    collapseWhenChecked: j = !0,
+    onClick: O,
     disabled: E
-  } = e, S = (0, o.e7)([p.Z], () => p.Z.useReducedMotion), [I, P] = i.useState(!1), Z = (0, d.ZP)(), T = (0, s.wj)(Z) || t ? g : m, {
-    width: N = 0,
+  } = e, S = (0, o.e7)([p.Z], () => p.Z.useReducedMotion), [I, P] = i.useState(!1), Z = (0, d.ZP)(), N = (0, s.wj)(Z) || t ? g : m, {
+    width: T = 0,
     ref: A
   } = (0, u.ZP)(), {
     width: w = 0,
@@ -56,7 +56,7 @@ function b(e) {
           let e = !t;
           P(!0), null == y || y(e)
         }
-        "function" == typeof j && j()
+        "function" == typeof O && O()
       },
       id: v,
       type: "checkbox",
@@ -68,21 +68,21 @@ function b(e) {
         [f.labelChecked]: t,
         [f.labelUnchecked]: !t && !b
       }),
-      style: O ? {
-        width: t ? N : N + w
+      style: j ? {
+        width: t ? T : T + w
       } : void 0,
       children: [t ? (0, r.jsx)(c.ZX5, {
         className: f.shine,
         shinePaused: S
       }) : null, (0, r.jsx)("img", {
         ref: A,
-        src: T,
+        src: N,
         alt: _
       }), (0, r.jsx)("span", {
         ref: R,
         children: (0, r.jsx)(c.Text, {
           className: a()(f.burstText, {
-            [f.visuallyHidden]: t && O,
+            [f.visuallyHidden]: t && j,
             [f.burstTextChecked]: t
           }),
           variant: "text-sm/semibold",

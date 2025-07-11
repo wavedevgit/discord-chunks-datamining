@@ -19,24 +19,24 @@ var i, l, a, o = n(442837),
   C = n(981631);
 let x = !1,
   v = "",
-  O = 0,
-  j = [],
+  j = 0,
+  O = [],
   E = !1,
   S = new Set,
   I = null;
 
 function P() {
-  v = "", O = 0, j = [], S = new Set, x = !1, I = null
+  v = "", j = 0, O = [], S = new Set, x = !1, I = null
 }
 
 function Z(e) {
-  v = e, O = 0, T()
+  v = e, j = 0, N()
 }
 
-function T() {
+function N() {
   if (!x) return !1;
   let e = m.Z.getChannel(I);
-  if (0 === v.trim().length) return null != r && r.clearQuery(), j = function(e) {
+  if (0 === v.trim().length) return null != r && r.clearQuery(), O = function(e) {
     let t = _.Z.getFriendIDs(),
       n = y.default.getCurrentUser();
     return (null == n ? void 0 : n.isStaff()) && (t = Array.from(new Set([...t, ...y.default.filter(e => e.isStaff() && e.id !== n.id, !1).map(e => e.id)]))), (null == e ? void 0 : e.isPrivate()) && (t = t.filter(t => !e.recipients.includes(t))), t.reduce((e, t) => {
@@ -82,7 +82,7 @@ function T() {
   return !1
 }
 
-function N() {
+function T() {
   if (!x) return !1;
   let e = E;
   return (E = _.Z.getFriendCount() > 0) !== e
@@ -115,7 +115,7 @@ function w(e) {
       comparator: r
     })
   }
-  j = n, U.emitChange()
+  O = n, U.emitChange()
 }
 
 function R() {
@@ -124,7 +124,7 @@ function R() {
 
 function M(e) {
   if (e.key !== C.vTt) return !1;
-  x = !0, N(), r = R(), I = null, Z("")
+  x = !0, T(), r = R(), I = null, Z("")
 }
 
 function D(e) {
@@ -137,10 +137,10 @@ function k() {
 }
 class L extends(i = o.ZP.Store) {
   initialize() {
-    this.waitFor(y.default, m.Z, _.Z, u.Z, g.Z), this.syncWith([y.default, m.Z], T), this.syncWith([_.Z], N)
+    this.waitFor(y.default, m.Z, _.Z, u.Z, g.Z), this.syncWith([y.default, m.Z], N), this.syncWith([_.Z], T)
   }
   getResults() {
-    return j
+    return O
   }
   hasFriends() {
     return E
@@ -154,9 +154,9 @@ class L extends(i = o.ZP.Store) {
   getState() {
     return {
       query: v,
-      selectedRow: O,
+      selectedRow: j,
       selectedUsers: S,
-      results: j,
+      results: O,
       hasFriends: E
     }
   }
@@ -178,12 +178,12 @@ let U = new L(s.Z, {
       } = e;
       if (null != t) return !1;
       let r = x;
-      return P(), x = r, I = n, T()
+      return P(), x = r, I = n, N()
     },
     MODAL_PUSH: M,
     SHOW_ACTION_SHEET: M,
     PRIVATE_CHANNEL_RECIPIENTS_INVITE_OPEN: function(e) {
-      x = !0, N(), r = R(), I = e.channelId, Z("")
+      x = !0, T(), r = R(), I = e.channelId, Z("")
     },
     MODAL_POP: D,
     HIDE_ACTION_SHEET: D,
@@ -192,7 +192,7 @@ let U = new L(s.Z, {
       I = e.channelId, Z(e.query)
     },
     PRIVATE_CHANNEL_RECIPIENTS_INVITE_SELECT: function(e) {
-      O = e.row
+      j = e.row
     },
     PRIVATE_CHANNEL_RECIPIENTS_ADD_USER: function(e) {
       let {

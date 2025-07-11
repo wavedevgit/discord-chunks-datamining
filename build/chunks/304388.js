@@ -74,17 +74,17 @@ let p = i.forwardRef(function(e, t) {
   } = e, [y, C] = i.useState(!1), {
     isHovered: x,
     setIsHovered: v,
-    onMouseEnter: O,
-    onMouseLeave: j,
+    onMouseEnter: j,
+    onMouseLeave: O,
     cancelTimers: E
   } = (0, o.Z)(200, 300);
 
   function S(e) {
-    "focus" === e.type || y || O()
+    "focus" === e.type || y || j()
   }
 
   function I() {
-    y || j()
+    y || O()
   }
 
   function P(e) {
@@ -111,7 +111,7 @@ let p = i.forwardRef(function(e, t) {
     renderPopout: e => (0, r.jsx)(d, u({
       isHovered: Z,
       onFocus: () => C(!0),
-      onMouseEnter: O,
+      onMouseEnter: j,
       onMouseLeave: I,
       renderPopout: n
     }, e)),

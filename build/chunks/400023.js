@@ -22,15 +22,15 @@ var r = n(255367),
   C = n(160404),
   x = n(765104),
   v = n(695346),
-  O = n(314897),
-  j = n(796974),
+  j = n(314897),
+  O = n(796974),
   E = n(323873),
   S = n(607744),
   I = n(375954),
   P = n(496675),
   Z = n(306680),
-  T = n(62817),
-  N = n(594174),
+  N = n(62817),
+  T = n(594174),
   A = n(459273),
   w = n(255269),
   R = n(47481),
@@ -102,18 +102,18 @@ let W = i.memo(function(e) {
       showNewMessagesBar: y,
       messageDisplayCompact: x,
       channelStream: v,
-      uploads: O,
+      uploads: j,
       hasUnreads: E,
       editingMessageId: S,
       fontSize: I,
       keyboardModeEnabled: Z,
-      filterAfterTimestamp: T,
-      showingQuarantineBanner: N,
+      filterAfterTimestamp: N,
+      showingQuarantineBanner: T,
       hideSummaries: w = !1,
       jumpBarClassName: R,
       typingGradient: D,
       isChatInputBottomAligned: W
-    } = e, [Y, q] = i.useState(null != (n = j.Z.isAtBottom(g.id)) && n), K = i.useMemo(() => x ? (0, M.aJ)({
+    } = e, [Y, q] = i.useState(null != (n = O.Z.isAtBottom(g.id)) && n), K = i.useMemo(() => x ? (0, M.aJ)({
       compact: !0,
       messageGroups: 30,
       groupRange: 4,
@@ -134,7 +134,7 @@ let W = i.memo(function(e) {
       hasUnreads: E,
       focusId: S,
       placeholderHeight: K.totalHeight,
-      canLoadMore: null == T,
+      canLoadMore: null == N,
       handleScrollToBottom: i.useCallback(() => q(!0), [q]),
       handleScrollFromBottom: i.useCallback(() => q(!1), [q]),
       additionalMessagePadding: 48 * !!W
@@ -156,12 +156,12 @@ let W = i.memo(function(e) {
       showNewMessagesBar: y,
       messageDisplayCompact: x,
       channelStream: v,
-      uploads: O,
+      uploads: j,
       loadMore: X.loadMore,
       scrollManager: X,
       specs: K,
-      filterAfterTimestamp: null != T ? T : J,
-      showingQuarantineBanner: N,
+      filterAfterTimestamp: null != N ? N : J,
+      showingQuarantineBanner: T,
       hideSummaries: w,
       jumpToPresent: () => {
         if (b.hasPresent()) {
@@ -257,7 +257,7 @@ let W = i.memo(function(e) {
               children: F.intl.string(F.t.Spb3s7)
             }), $, (0, r.jsx)("div", {
               className: a()({
-                [H.scrollerSpacer]: !N,
+                [H.scrollerSpacer]: !T,
                 [H.empty]: 0 === b.length && !b.loadingMore,
                 [H.emptyForum]: 1 === b.length && !b.loadingMore && g.isForumPost() && (null == (t = b.first()) ? void 0 : t.isFirstMessageInForumPost(g))
               })
@@ -280,7 +280,7 @@ let W = i.memo(function(e) {
     let {
       canManageMessages: h,
       permissionVersion: C,
-      canChat: j
+      canChat: O
     } = function(e) {
       let t = e.getGuildId(),
         n = (0, c.e7)([S.Z], () => null == t || S.Z.canChatInGuild(t), [t]),
@@ -347,7 +347,7 @@ let W = i.memo(function(e) {
         }, {
           autoTrackExposure: !1
         }),
-        o = null != (n = null == (t = N.default.getUser(O.default.getId())) ? void 0 : t.hasFlag(B.xW$.SPAMMER)) && n,
+        o = null != (n = null == (t = T.default.getUser(j.default.getId())) ? void 0 : t.hasFlag(B.xW$.SPAMMER)) && n,
         s = (0, p.ts)(e),
         u = (0, _.Z)("use_topic_dividers_in_chat"),
         d = (0, c.Wu)([x.Z], () => {
@@ -394,10 +394,10 @@ let W = i.memo(function(e) {
           messages: F,
           channelStream: H,
           permissionVersion: C,
-          uploads: (0, c.e7)([T.Z], () => T.Z.getFiles(t.id), [t]),
+          uploads: (0, c.e7)([N.Z], () => N.Z.getFiles(t.id), [t]),
           unreadCount: (0, c.e7)([Z.ZP], () => Z.ZP.getUnreadCount(t.id), [t]),
           hasUnreads: null != Y,
-          canChat: j,
+          canChat: O,
           editingMessageId: q,
           fontSize: M,
           keyboardModeEnabled: U,

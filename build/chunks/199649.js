@@ -27,8 +27,8 @@ function b(e) {
   (0, o.Z)(_.id);
   let x = (0, s.Z)(_.id),
     v = _.isSystemDM(),
-    O = C && !v && !_.isMultiUserDM(),
-    j = {};
+    j = C && !v && !_.isMultiUserDM(),
+    O = {};
   if (v) {
     let e = x ? (0, r.jsxs)(r.Fragment, {
       children: [g.intl.string(g.t["+KSnWV"]), (0, r.jsx)(l.rgF, {
@@ -36,7 +36,7 @@ function b(e) {
         color: c.Z.HEADER_PRIMARY
       })]
     }) : g.intl.string(g.t.hvVgAQ);
-    j.message = g.intl.string(g.t.Bt2N7O), j.subtitle = g.intl.string(g.t["n/Vzk5"]), j.buttonText = e, j.onButtonClick = () => {
+    O.message = g.intl.string(g.t.Bt2N7O), O.subtitle = g.intl.string(g.t["n/Vzk5"]), O.buttonText = e, O.onButtonClick = () => {
       if (x) {
         open(m.D2), d.default.track(f.rMx.CHANGE_LOG_CTA_CLICKED, {
           cta_type: "chat_blocker",
@@ -45,8 +45,8 @@ function b(e) {
         return
       }
       open(p.Z.getArticleURL(f.BhN.SYSTEM_DMS))
-    }, j.imageSrc = n(780961)
-  } else O && (j.message = g.intl.string(g.t["9T6N5+"]), j.buttonText = g.intl.string(g.t.XyHpKC), j.onButtonClick = () => {
+    }, O.imageSrc = n(780961)
+  } else j && (O.message = g.intl.string(g.t["9T6N5+"]), O.buttonText = g.intl.string(g.t.XyHpKC), O.onButtonClick = () => {
     a.Z.unblockUser(_.getRecipientId())
   });
   return (0, r.jsx)(h.Z, (t = function(e) {
@@ -66,7 +66,7 @@ function b(e) {
       })
     }
     return e
-  }({}, j), b = b = {
+  }({}, O), b = b = {
     children: y
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(b)) : (function(e, t) {
     var n = Object.keys(e);
