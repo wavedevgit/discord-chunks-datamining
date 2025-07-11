@@ -34,7 +34,7 @@ function h() {
       useForcedColors: s.Z.useForcedColors
     })),
     v = b.YC.useSetting(),
-    E = (e, i) => (0, r.jsx)(a.k5B, {
+    S = (e, i) => (0, r.jsx)(a.k5B, {
       id: e,
       group: "input-modes",
       label: i,
@@ -50,10 +50,10 @@ function h() {
         })
       }
     }),
-    S = E(O.BRd.DARK, f.intl.string(f.t.SMPT1t)),
-    P = E(O.BRd.LIGHT, f.intl.string(f.t.K2sFfn)),
+    E = S(O.BRd.DARK, f.intl.string(f.t.SMPT1t)),
+    P = S(O.BRd.LIGHT, f.intl.string(f.t.K2sFfn)),
     m = [(0, r.jsxs)(a.kSQ, {
-      children: [P, S, E(O.BRd.DARKER, f.intl.string(f.t.b8Cei4)), E(O.BRd.MIDNIGHT, f.intl.string(f.t.Do4ZJy)), E("system", f.intl.string(f.t["7rOU6u"]))]
+      children: [P, E, S(O.BRd.DARKER, f.intl.string(f.t.b8Cei4)), S(O.BRd.MIDNIGHT, f.intl.string(f.t.Do4ZJy)), S("system", f.intl.string(f.t["7rOU6u"]))]
     }, "theme-items"), , ];
   return m.push((0, r.jsxs)(a.kSQ, {
     label: "UI Density",

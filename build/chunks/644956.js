@@ -44,7 +44,7 @@ function x(e, t, n) {
   }) : e[t] = n, e
 }
 
-function M(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -57,7 +57,7 @@ function M(e) {
   return e
 }
 
-function k(e, t) {
+function M(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -69,7 +69,7 @@ function k(e, t) {
 }
 
 function j(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -111,7 +111,7 @@ function G(e) {
       let {
         isShown: o
       } = i;
-      return (0, r.jsx)(f.Z, M({
+      return (0, r.jsx)(f.Z, k({
         ref: c,
         selected: o,
         colorString: t.colorString,
@@ -128,7 +128,7 @@ function G(e) {
             let {
               default: e
             } = await Promise.all([n.e("14006"), n.e("79695"), n.e("80417"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("72374")]).then(n.bind(n, 757387));
-            return t => (0, r.jsx)(e, j(M({}, t), {
+            return t => (0, r.jsx)(e, j(k({}, t), {
               user: _,
               guildId: a,
               channel: p,
@@ -186,7 +186,7 @@ function B(e) {
   });
   return (0, r.jsx)(c.d.Provider, {
     value: void 0,
-    children: (0, r.jsx)("div", j(M({
+    children: (0, r.jsx)("div", j(k({
       className: D.rolePopout,
       ref: d
     }, t), {
@@ -225,7 +225,7 @@ function V(e) {
     inlinePreview: _ = !1
   } = e, {
     analyticsLocations: g
-  } = (0, m.ZP)(h.Z.ROLE_MENTION), E = (0, l.e7)([p.Z], () => p.Z.roleStyle), b = (0, l.e7)([N.Z], () => null == d || null == a ? null : N.Z.getRole(d, a)), I = (0, v.yH)(d, b), T = !_ && (null != t && 0 !== t || null != n && null != n.primaryColor), S = T && "dot" === E, A = T && "username" === E, C = I && null != b ? b.colorStrings : null, R = i.useRef(null), P = e => (0, r.jsxs)(O.Z, j(M({
+  } = (0, m.ZP)(h.Z.ROLE_MENTION), E = (0, l.e7)([p.Z], () => p.Z.roleStyle), b = (0, l.e7)([N.Z], () => null == d || null == a ? null : N.Z.getRole(d, a)), I = (0, v.yH)(d, b), T = !_ && (null != t && 0 !== t || null != n && null != n.primaryColor), S = T && "dot" === E, A = T && "username" === E, C = I && null != b ? b.colorStrings : null, R = i.useRef(null), P = e => (0, r.jsxs)(O.Z, j(k({
     ref: R,
     className: D.roleMention,
     color: A ? t : null,

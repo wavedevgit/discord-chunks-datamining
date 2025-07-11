@@ -2,9 +2,9 @@
 "use strict";
 n.d(t, {
   Ds: () => j,
-  YB: () => M,
+  YB: () => k,
   of: () => U,
-  q5: () => k
+  q5: () => M
 });
 var r = n(255367);
 n(73800);
@@ -54,7 +54,7 @@ function x(e) {
   })
 }
 
-function M(e) {
+function k(e) {
   var t, n, i;
   let {
     channel: a,
@@ -64,8 +64,8 @@ function M(e) {
     onMouseLeave: N,
     onJumpToChannel: w,
     idle: x,
-    selectedParticipant: M,
-    embeddedActivity: k
+    selectedParticipant: k,
+    embeddedActivity: M
   } = e, j = (0, c.bp)() === R.IlC.POPOUT, U = (0, o.e7)([S.Z], () => S.Z.isVideoEnabled()), G = (0, o.e7)([S.Z], () => Object.values(S.Z.getVideoDevices())[0]), B = !1 === (null == (t = null == G ? void 0 : G.disabled) || t), V = (0, d.Z)([s])[0], F = (0, m.Z)(a), {
     parentAnalyticsLocation: Z
   } = (0, u.ZP)(), H = e => {
@@ -109,7 +109,7 @@ function M(e) {
             channelId: a.id,
             guildId: a.getGuildId(),
             className: L.__invalid_leftTrayIcon,
-            participant: M,
+            participant: k,
             compact: !0
           })
         })]
@@ -126,7 +126,7 @@ function M(e) {
           onClosePopout: P.Vq
         }), (0, r.jsx)(O.Z, {
           applicationId: s,
-          location: k.location,
+          location: M.location,
           className: D.rightPipIcon
         })]
       })]
@@ -134,7 +134,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function M(e) {
   var t, n;
   let {
     channel: i,

@@ -1,6 +1,6 @@
 /**
   Module ID: 74080
-  Original File Name: 883a2836a1e7fea5
+  Original File Name: 0060b953b424272f
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -4428,7 +4428,7 @@ div:has(>.repositionLayerSidebarPopout_fc71d3) {
 }
 
 .container__0d0f9:hover .progressContainer__0d0f9 {
-    transform: scale(1.02)
+    transform: scale(1.02,1.1)
 }
 
 .container__0d0f9:hover .progress__0d0f9 {
@@ -4464,8 +4464,7 @@ div:has(>.repositionLayerSidebarPopout_fc71d3) {
     background-color: var(--background-base-low);
     border-radius: var(--radius-round);
     display: flex;
-    height: 22px;
-    padding: 2px
+    height: 26px
 }
 
 .textContainer__0d0f9 {
@@ -4497,7 +4496,9 @@ div:has(>.repositionLayerSidebarPopout_fc71d3) {
 .progress__0d0f9 {
     background: linear-gradient(270deg,rgba(255,115,250,.4),rgba(255,115,250,.1));
     border-radius: var(--radius-round);
-    box-shadow: 0 1px 4px 0 rgba(0,0,0,.14),inset 0 0 4.6px 0 rgba(255,115,250,.2)
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.14),inset 0 0 4.6px 0 rgba(255,115,250,.2);
+    inset: 2px;
+    position: absolute
 }
 
 .progressLow__0d0f9 {
@@ -8712,4 +8713,4 @@ div:has(>.positionLayer__4f4b6) {
     width: 96px
 }
 
-/*# sourceMappingURL=883a2836a1e7fea5.css.map*/
+/*# sourceMappingURL=0060b953b424272f.css.map*/

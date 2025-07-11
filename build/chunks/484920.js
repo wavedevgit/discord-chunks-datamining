@@ -32,5 +32,6 @@ e.exports = {
   filterButton: "filterButton__6db1d",
   controlsRightSide: "controlsRightSide__6db1d",
   controlsLeftSide: "controlsLeftSide__6db1d",
+  divider: "divider__6db1d",
   sortBy: "sortBy__6db1d"
 }

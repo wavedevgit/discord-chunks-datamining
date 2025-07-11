@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => M
+  Z: () => k
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -71,15 +71,15 @@ function x(e, t) {
   }), e
 }
 
-function M(e) {
+function k(e) {
   var t;
   let {
     onClose: n,
     onComplete: a,
     onStepChange: w,
     transitionState: L,
-    loadId: M,
-    skuId: k,
+    loadId: k,
+    skuId: M,
     isGift: j = !1,
     giftRecipient: U,
     giftMessage: G,
@@ -90,8 +90,8 @@ function M(e) {
     analyticsLocations: Z
   } = (0, d.ZP)([...V, u.Z.COLLECTIBLES_PAYMENT_MODAL]), H = i.useRef(new s.qA), [Y, W] = i.useState(null), [K, z] = i.useState(!1), q = i.useMemo(() => (0, N.UY)({
     purchaseType: C.o8.FIAT,
-    skuId: k
-  }), [k]), X = (0, l.Wu)([f.Z], () => f.Z.recommendedGiftSkuIds, []), Q = null != k ? [k] : X, J = null != (t = Q[0]) ? t : null, $ = null != k && p.Rm.has(k), ee = i.useCallback(() => {
+    skuId: M
+  }), [M]), X = (0, l.Wu)([f.Z], () => f.Z.recommendedGiftSkuIds, []), Q = null != M ? [M] : X, J = null != (t = Q[0]) ? t : null, $ = null != M && p.Rm.has(M), ee = i.useCallback(() => {
     z(!0), null == a || a()
   }, [a]), et = i.useCallback(e => {
     z(!1), n(e), c.Z.dispatch({
@@ -129,7 +129,7 @@ function M(e) {
         [P.hidden]: !K
       })
     }), (0, r.jsx)(m.PaymentContextProvider, {
-      loadId: M,
+      loadId: k,
       stepConfigs: er,
       applicationId: A.XAJ,
       skuIDs: Q,

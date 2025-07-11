@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367),
   l = n(73800),
   o = n(979554),
-  a = n(399606),
-  i = n(780384),
+  i = n(399606),
+  a = n(780384),
   s = n(481060),
   c = n(410030),
   u = n(594174),
@@ -41,12 +41,12 @@ function k(e) {
   } = e, N = (0, d.sp)(), A = null != (t = null == N ? void 0 : N.sessionId) ? t : "", {
     noCache: w,
     includeUnpublished: R
-  } = (0, _.Z)(), Z = (0, a.e7)([u.default], () => u.default.getCurrentUser()), F = (0, a.e7)([p.Z], () => p.Z.productsWithVariantsAsGroup), [D, M] = l.useState(1), H = () => {
+  } = (0, _.Z)(), Z = (0, i.e7)([u.default], () => u.default.getCurrentUser()), F = (0, i.e7)([p.Z], () => p.Z.productsWithVariantsAsGroup), [D, M] = l.useState(1), H = () => {
     var e;
     null == I || null == (e = I.current) || e.scrollToTop({
       animate: !0
     })
-  }, W = (0, c.Fg)(), V = (0, i.ap)(W), [U, G, z] = l.useMemo(() => {
+  }, W = (0, c.Fg)(), V = (0, a.ap)(W), [U, G, z] = l.useMemo(() => {
     switch (B) {
       case C.AW.AVATAR_DECORATIONS:
         return [O.intl.string(O.t.dRZYND), V ? y.Z : x.Z, o.Z.AVATAR_DECORATION];

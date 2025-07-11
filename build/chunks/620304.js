@@ -136,13 +136,12 @@ function Z(e) {
         children: (0, r.jsxs)("div", {
           className: P.contentContainer,
           children: [(0, r.jsx)("div", {
-            className: P.progressContainer,
-            children: (0, r.jsx)(a.animated.div, {
-              className: o()(P.progress, {
-                [P.progressLow]: D <= 5
-              }),
-              style: L
-            })
+            className: P.progressContainer
+          }), (0, r.jsx)(a.animated.div, {
+            className: o()(P.progress, {
+              [P.progressLow]: D <= 5
+            }),
+            style: L
           }), (0, r.jsxs)("div", {
             className: P.textContainer,
             children: [(0, r.jsxs)("div", {

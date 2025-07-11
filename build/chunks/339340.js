@@ -42,7 +42,7 @@ function P(e) {
     location: "VoiceChannelStatusModal"
   }, {
     autoTrackExposure: !0
-  }).enabled, D = (0, s.e7)([p.Z], () => p.Z.getChannelStatus(t)), L = (0, s.e7)([O.Z], () => O.Z.getMediaSessionId()), [x, M] = i.useState(null != D ? D : ""), [k, j] = i.useState(!1), [U, G] = i.useState(null), B = (0, s.e7)([v.default], () => v.default.getCurrentUser()), V = x.length > R;
+  }).enabled, D = (0, s.e7)([p.Z], () => p.Z.getChannelStatus(t)), L = (0, s.e7)([O.Z], () => O.Z.getMediaSessionId()), [x, k] = i.useState(null != D ? D : ""), [M, j] = i.useState(!1), [U, G] = i.useState(null), B = (0, s.e7)([v.default], () => v.default.getCurrentUser()), V = x.length > R;
   i.useEffect(() => {
     I.default.track(T.rMx.OPEN_MODAL, {
       type: "Voice Channel Topic Modal",
@@ -94,8 +94,8 @@ function P(e) {
         j(!1)
       }
     }, [Y, W] = i.useState((0, m.JM)(x)), K = (e, t, n) => {
-      M(t), W(n)
-    }, z = async () => (V || k || await H(), Promise.resolve({
+      k(t), W(n)
+    }, z = async () => (V || M || await H(), Promise.resolve({
       shouldClear: !1,
       shouldRefocus: !0
     })), q = (0, r.jsxs)(d.hjN, {
@@ -137,7 +137,7 @@ function P(e) {
       onClick: P
     }, {
       variant: "primary",
-      loading: k,
+      loading: M,
       disabled: V,
       text: S.intl.string(S.t.XqK2Iy),
       onClick: H
@@ -186,7 +186,7 @@ function P(e) {
           })
         }), (0, r.jsx)(u.zx, {
           onClick: H,
-          submitting: k,
+          submitting: M,
           className: A.button,
           disabled: V,
           children: S.intl.string(S.t.XqK2Iy)

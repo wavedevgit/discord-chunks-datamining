@@ -70,8 +70,8 @@ let O = Symbol("NO GUILD ID"),
   D = new Map,
   L = new Map,
   x = [],
-  M = [],
-  k = !1,
+  k = [],
+  M = !1,
   j = null;
 
 function U(e) {
@@ -106,7 +106,7 @@ function G(e, t) {
 }
 
 function B() {
-  v.clear(), I.clear(), N.clear(), C.clear(), w.clear(), D.clear(), L.clear(), k = !1
+  v.clear(), I.clear(), N.clear(), C.clear(), w.clear(), D.clear(), L.clear(), M = !1
 }
 
 function V(e) {
@@ -141,11 +141,11 @@ function H(e) {
 }
 
 function Y(e) {
-  var t, n, r, i, s, l, c, d, f, h, g, b, A, M, k, B, V, F, H, Y, K, z, q, X, Q, J, $;
+  var t, n, r, i, s, l, c, d, f, h, g, b, A, k, M, B, V, F, H, Y, K, z, q, X, Q, J, $;
   let {
     userProfile: ee,
     fetchStartedAt: et
-  } = e, en = null != (k = null == (t = ee.guild_member_profile) ? void 0 : t.guild_id) ? k : O;
+  } = e, en = null != (M = null == (t = ee.guild_member_profile) ? void 0 : t.guild_id) ? M : O;
   if (null == (n = v.get(ee.user.id)) || n.delete(en), I.delete(ee.user.id), null != ee.mutual_guilds) {
     let e = {};
     ee.mutual_guilds.forEach(t => {
@@ -218,7 +218,7 @@ function Y(e) {
         name: ea.name
       } : null,
       badges: eo
-    }), (null == (M = ee.user_profile) || null == (A = M.profile_effect) ? void 0 : A.expires_at) != null) {
+    }), (null == (k = ee.user_profile) || null == (A = k.profile_effect) ? void 0 : A.expires_at) != null) {
     let e = new a.V7;
     R.set(ee.user.id, e), U(ee.user.id)
   }
@@ -302,7 +302,7 @@ function z(e) {
     fetchEndedAt: 0,
     fetchError: void 0
   };
-  s.fetchStartedAt = o, s.fetchEndedAt = Date.now(), s.fetchError = a, N.set(r, s), (null == a ? void 0 : a.status) === 404 && (D.set(r, 0), w.set(r, x), L.set(r, M))
+  s.fetchStartedAt = o, s.fetchEndedAt = Date.now(), s.fetchError = a, N.set(r, s), (null == a ? void 0 : a.status) === 404 && (D.set(r, 0), w.set(r, x), L.set(r, k))
 }
 
 function q(e) {
@@ -371,15 +371,15 @@ function X(e) {
 }
 
 function Q(e) {
-  k = !0
+  M = !0
 }
 
 function J(e) {
-  k = !1, null != e.guild_id ? X(e) : q(e)
+  M = !1, null != e.guild_id ? X(e) : q(e)
 }
 
 function $(e) {
-  k = !1
+  M = !1
 }
 
 function ee(e) {
@@ -443,7 +443,7 @@ class es extends d.Z {
     return I.has(e)
   }
   get isSubmitting() {
-    return k
+    return M
   }
   getUserProfile(e) {
     return N.get(e)

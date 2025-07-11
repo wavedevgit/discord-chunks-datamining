@@ -77,8 +77,8 @@ function p(e) {
     listPaddingRight: D,
     itemNodeMargin: L,
     listPadding: x,
-    gridNavigatorId: M,
-    gridNotice: k,
+    gridNavigatorId: k,
+    gridNotice: M,
     renderHeader: j,
     renderUpsell: U,
     setShowUpsell: G
@@ -111,7 +111,7 @@ function p(e) {
     expressionsGrid: K,
     onSelectItem: p,
     store: f,
-    gridNavigatorId: M
+    gridNavigatorId: k
   }), er = i.useCallback((e, t) => y(K[e], $(e), {
     isUsingKeyboardNavigation: en.current,
     gutterWidth: Q,
@@ -138,7 +138,7 @@ function p(e) {
       hasSendableExpressions: !0,
       onKeyDown: et,
       expressionsListRef: V,
-      gridNavigatorId: M,
+      gridNavigatorId: k,
       defaultSearchPlaceholder: g,
       emptySearchPlaceholder: E
     }), null == N ? void 0 : N()]
@@ -148,13 +148,13 @@ function p(e) {
       className: c.header,
       children: [" ", el, " "]
     }), Z && null != b ? b(c.emptyState) : (0, r.jsxs)(r.Fragment, {
-      children: [A(V), null != k && (0, r.jsx)("div", {
+      children: [A(V), null != M && (0, r.jsx)("div", {
         className: c.gridNoticeWrapper,
-        children: k
+        children: M
       }), (0, r.jsx)("div", _(d({
         ref: B,
         className: c.listWrapper,
-        id: M
+        id: k
       }, ee), {
         children: null != W ? (0, r.jsx)(s.Z, {
           categories: t,

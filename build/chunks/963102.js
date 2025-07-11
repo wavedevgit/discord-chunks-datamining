@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367),
   l = n(73800),
   o = n(120356),
-  a = n.n(o),
-  i = n(636977),
+  i = n.n(o),
+  a = n(636977),
   s = n(442837),
   c = n(481060),
   u = n(37234),
@@ -42,7 +42,7 @@ function I(e) {
   return (0, r.jsx)(h.Z.Title, {
     onClick: () => o(t),
     wrapperClassName: k.tabWrapper,
-    className: a()(k.tab, {
+    className: i()(k.tab, {
       [k.selected]: l
     }),
     children: n
@@ -54,8 +54,8 @@ function B(e) {
     tab: t,
     selected: n,
     displayText: o,
-    handleTransition: a
-  } = e, [i, s] = l.useState(!1), u = l.useRef(null), [d, p] = l.useState(0), h = l.useRef(!1), b = e => {
+    handleTransition: i
+  } = e, [a, s] = l.useState(!1), u = l.useRef(null), [d, p] = l.useState(0), h = l.useRef(!1), b = e => {
     clearTimeout(d), p(setTimeout(() => {
       s(e)
     }, 100)), e && (h.current = f.Z.keyboardModeEnabled)
@@ -66,7 +66,7 @@ function B(e) {
     onMouseLeave: () => b(!1),
     children: (0, r.jsx)(c.yRy, {
       targetElementRef: u,
-      shouldShow: i,
+      shouldShow: a,
       position: "bottom",
       align: "left",
       onRequestOpen: () => b(!0),
@@ -79,7 +79,7 @@ function B(e) {
           closePopout: t
         } = e;
         return (0, r.jsx)(y.Z, {
-          handleTransition: a,
+          handleTransition: i,
           onClose: t
         })
       },
@@ -93,8 +93,8 @@ function B(e) {
           tab: t,
           displayText: o,
           selected: n,
-          handleTransition: a
-        }, t), i ? (0, r.jsx)(c.u04, {
+          handleTransition: i
+        }, t), a ? (0, r.jsx)(c.u04, {
           size: "sm",
           color: "currentColor"
         }) : (0, r.jsx)(c.CJ0, {
@@ -136,7 +136,7 @@ function N(e) {
         sectionType: P.jXE.ORBS_BALANCE_MENU,
         ctaObject: P.qAy.CTA_TO_QUEST_HOME
       }), (0, b.navigateToQuestHome)({
-        fromContent: i.j.ORBS_BALANCE_MENU
+        fromContent: a.j.ORBS_BALANCE_MENU
       })
     }, [F, t, D]),
     H = (0, S.F)("collectibles_shop_header_bar");
@@ -144,7 +144,7 @@ function N(e) {
     theme: y,
     children: e => (0, r.jsxs)(h.Z, {
       disableDoubleClick: !0,
-      className: a()(e, k.headerBar, {
+      className: i()(e, k.headerBar, {
         [k.fullscreenHeaderBar]: t
       }),
       innerClassname: w ? k.headerBarInner : void 0,

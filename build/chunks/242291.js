@@ -5,8 +5,8 @@ n.d(t, {
   GN: () => P,
   M2: () => L,
   Nq: () => C,
-  SZ: () => k,
-  aC: () => M,
+  SZ: () => M,
+  aC: () => k,
   lF: () => G,
   pI: () => A,
   sR: () => x,
@@ -99,7 +99,7 @@ function x(e) {
   return a
 }
 
-function M(e, t) {
+function k(e, t) {
   (0, l.PS)(e, n => {
     n.joinSound = void 0, j({
       guildId: e,
@@ -110,7 +110,7 @@ function M(e, t) {
   }, l.fy.INFREQUENT_USER_ACTION)
 }
 
-function k(e, t, n) {
+function M(e, t, n) {
   (0, l.PS)(e, r => {
     let i = t.guildId === I.X8,
       a = i ? y.H$.DEFAULT : y.H$.CUSTOM,

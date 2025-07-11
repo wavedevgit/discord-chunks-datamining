@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  A: () => M,
-  Z: () => k
+  A: () => k,
+  Z: () => M
 }), n(539854);
 var r = n(392711),
   i = n.n(r),
@@ -71,7 +71,7 @@ function w(e, t) {
 let D = 10,
   L = 15e5,
   x = 15e5;
-class M {
+class k {
   setActionContext(e) {
     this.actionContext = e
   }
@@ -104,7 +104,7 @@ class M {
     C(this, "streamRegion", void 0), C(this, "streamApplication", void 0), C(this, "streamSourceType", void 0), C(this, "actionContext", void 0), C(this, "maxViewers", void 0), C(this, "nativePickerStyleUsed", void 0), C(this, "startTime", void 0), C(this, "endTime", void 0), C(this, "goLiveModalDurationMs", void 0), C(this, "numViewers", void 0), this.streamRegion = e, this.streamApplication = t, this.streamSourceType = n, this.actionContext = r, this.maxViewers = i, this.goLiveModalDurationMs = a, this.numViewers = i
   }
 }
-class k extends s.Z {
+class M extends s.Z {
   get isOwner() {
     let {
       ownerId: e
@@ -214,7 +214,7 @@ class k extends s.Z {
                 gameName: D,
                 gameId: L,
                 exe: x,
-                distributor: M
+                distributor: k
               } = (0, f.G8)(w);
             O.default.track(A.rMx.SCREENSHARE_FINISHED, R({
               screenshare_frames: e,
@@ -241,7 +241,7 @@ class k extends s.Z {
               share_game_name: D,
               share_game_id: L,
               share_game_exe: x,
-              share_game_distributor: M,
+              share_game_distributor: k,
               picker_type_used: null != this.analyticsContext.nativePickerStyleUsed ? "native" : "internal",
               duration: this.analyticsContext.getDuration()
             }, C))

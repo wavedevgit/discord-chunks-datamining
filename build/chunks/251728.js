@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Y: () => d
+  Y: () => f
 });
 var r = n(685816),
   i = n(549616),
-  a = n(794934),
-  o = n(885577),
-  s = n(198647),
-  l = n(690913),
-  c = n(608413);
+  a = n(472756),
+  o = n(794934),
+  s = n(885577),
+  l = n(198647),
+  c = n(690913),
+  u = n(608413);
 
-function u(e, t, n) {
+function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -19,23 +20,25 @@ function u(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class d {
+class f {
   static fromServer(e) {
-    return new d(e)
+    return new f(e)
   }
   constructor(e) {
-    u(this, "shopBlocks", void 0), u(this, "categories", void 0), this.shopBlocks = e.shop_blocks.map(e => {
+    d(this, "shopBlocks", void 0), d(this, "categories", void 0), this.shopBlocks = e.shop_blocks.map(e => {
       switch (e.type) {
         case r.z.HERO:
-          return s.s.fromServer(e);
+          return l.s.fromServer(e);
         case r.z.FEATURED:
-          return a.I.fromServer(e);
+          return o.I.fromServer(e);
         case r.z.FEED:
-          return o.K.fromServer(e);
+          return s.K.fromServer(e);
         case r.z.WIDE_BANNER:
-          return c.j.fromServer(e);
+          return u.j.fromServer(e);
         case r.z.SHELF:
-          return l.O.fromServer(e);
+          return c.O.fromServer(e);
+        case r.z.COUNTDOWN_TIMER:
+          return a.G.fromServer(e);
         default:
           return
       }

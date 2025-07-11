@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367),
   l = n(73800),
   o = n(120356),
-  a = n.n(o),
-  i = n(399606),
+  i = n.n(o),
+  a = n(399606),
   s = n(481060),
   c = n(434650),
   u = n(594174),
@@ -32,7 +32,7 @@ function j(e) {
     products: t,
     header: n,
     category: l
-  } = e, o = (0, i.e7)([u.default], () => u.default.getCurrentUser()), a = (0, E.St)(t);
+  } = e, o = (0, a.e7)([u.default], () => u.default.getCurrentUser()), i = (0, E.St)(t);
   return null == o || 0 === t.length ? null : (0, r.jsxs)("div", {
     children: [null != n ? (0, r.jsx)(s.Text, {
       className: y.itemTypeTitle,
@@ -43,7 +43,7 @@ function j(e) {
       size: 24
     }), (0, r.jsx)("div", {
       className: y.cardsContainer,
-      children: a.map((e, t) => (0, r.jsx)(d.k0, {
+      children: i.map((e, t) => (0, r.jsx)(d.k0, {
         newValue: {
           tilePosition: t
         },
@@ -72,21 +72,21 @@ function P(e) {
   let {
     category: t,
     isFullScreen: n
-  } = e, [o, a] = l.useState(!1), i = (0, S.M7)(t.skuId), s = (0, c.O)(e => {
-    a(e && null != i)
+  } = e, [o, i] = l.useState(!1), a = (0, S.M7)(t.skuId), s = (0, c.O)(e => {
+    i(e && null != a)
   }, n ? .13 : .15);
   return (0, r.jsxs)("div", {
     className: y.categoryWrapper,
     ref: s,
     children: [(0, r.jsx)(m.Z, {
       category: t,
-      hideLimitedTimeBadge: null != i
+      hideLimitedTimeBadge: null != a
     }), (0, r.jsx)(T, {
       category: t
-    }), null != i && null != t.unpublishedAt && (0, r.jsx)(b.$, {
+    }), null != a && null != t.unpublishedAt && (0, r.jsx)(b.$, {
       unpublishedAt: t.unpublishedAt,
       isVisible: o,
-      displayOptions: i,
+      displayOptions: a,
       isFullScreen: n
     })]
   })
@@ -97,7 +97,7 @@ function L(e) {
   let {
     sortedCategories: n,
     setCategoryRef: o,
-    isFullScreen: i,
+    isFullScreen: a,
     currentPage: c,
     handlePageChange: u
   } = e, g = (0, d.sp)(), f = (0, O.R)(), b = null != (t = null == g ? void 0 : g.sessionId) ? t : "", {
@@ -117,7 +117,7 @@ function L(e) {
       sessionId: b,
       checkpoint: h.a.SHOP_MOUNTED,
       tab: x.AW.CATALOG,
-      isFullScreen: i,
+      isFullScreen: a,
       unpublishedCategoriesShown: C,
       cacheDisabled: m
     })
@@ -126,14 +126,14 @@ function L(e) {
       sessionId: b,
       checkpoint: h.a.SHOP_RENDERED,
       tab: x.AW.CATALOG,
-      isFullScreen: i,
+      isFullScreen: a,
       unpublishedCategoriesShown: C,
       cacheDisabled: m
     })
-  }, [b, i, C, m, f, S.length]);
+  }, [b, a, C, m, f, S.length]);
   let j = (0, p.F)("CollectiblesBrowse");
   return f ? (0, r.jsx)(_.Z, {}) : (0, r.jsxs)("div", {
-    className: a()(y.categories, {
+    className: i()(y.categories, {
       [y.categoriesNoFilter]: !j
     }),
     children: [S.map((e, t) => (0, r.jsx)("div", {
@@ -144,7 +144,7 @@ function L(e) {
         },
         children: (0, r.jsx)(P, {
           category: e,
-          isFullScreen: i
+          isFullScreen: a
         })
       })
     }, e.skuId)), (0, r.jsx)("div", {

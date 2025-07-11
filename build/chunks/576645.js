@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  J: () => M,
+  J: () => k,
   Nt: () => Z,
   Ou: () => G,
   R2: () => L,
   T$: () => w,
-  Uu: () => k,
+  Uu: () => M,
   ZC: () => F,
   Zm: () => D,
   bK: () => j,
@@ -105,7 +105,7 @@ function x(e) {
   }
 }
 
-function M(e, t) {
+function k(e, t) {
   let n = (0, r.useRef)(!0),
     i = null == e ? void 0 : e.hdStreamingUntil,
     a = (0, r.useRef)(t);
@@ -120,8 +120,8 @@ function M(e, t) {
   }, [i])
 }
 
-function k(e) {
-  M(e, () => {
+function M(e) {
+  k(e, () => {
     let t = f.Z.getCurrentUserActiveStream();
     if (null != t && t.channelId === e.id) {
       let e = p.Z.getState().goLiveSource;

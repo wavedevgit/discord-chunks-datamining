@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  $7: () => k,
+  $7: () => M,
   $8: () => eP,
   $e: () => f,
   $n: () => eX,
@@ -42,7 +42,7 @@ n.d(t, {
   TD: () => eF,
   TL: () => X,
   Tp: () => eY,
-  UA: () => M,
+  UA: () => k,
   UD: () => y,
   Ue: () => j,
   Uq: () => eS,
@@ -72,7 +72,7 @@ n.d(t, {
   ff: () => Z,
   gW: () => eh,
   gh: () => B,
-  h1: () => eM,
+  h1: () => ek,
   h8: () => eo,
   hX: () => eQ,
   hs: () => el,
@@ -86,7 +86,7 @@ n.d(t, {
   m8: () => V,
   mn: () => S,
   nG: () => eb,
-  nH: () => ek,
+  nH: () => eM,
   nL: () => eB,
   o4: () => v,
   p9: () => l,
@@ -325,8 +325,8 @@ let C = Object.freeze({
   D = 5,
   L = 30,
   x = 2,
-  M = 3,
-  k = 28,
+  k = 3,
+  M = 28,
   j = 30,
   U = 30,
   G = 7,
@@ -499,10 +499,10 @@ let ev = Object.freeze({
 var ex = function(e) {
     return e.SOUNDBOARD_PLAY = "soundboard play", e.PROFILE_THEME_COLOR = "profile_theme_color", e.PROFILE_BANNER = "profile_banner", e.ANIMATED_AVATAR = "animated_avatar", e.AVATAR_DECORATION = "avatar_decoration", e.CLIENT_THEME = "client_theme", e.SHARED_CANVAS = "shared_canvas", e.PROFILE_EFFECT = "profile_effect", e.PRESET = "preset", e
   }({}),
-  eM = function(e) {
+  ek = function(e) {
     return e.FREE = "free", e.PREMIUM_STANDARD = "premium-standard", e
   }({});
-let ek = {
+let eM = {
   "1024422698568122368": P,
   "511651876987469824": P,
   "511651885459963904": P,

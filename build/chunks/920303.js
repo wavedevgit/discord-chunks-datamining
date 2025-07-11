@@ -63,14 +63,14 @@ function L(e) {
     hasMoreThreads: e.hasMore,
     filterTagIds: Array.from(e.tagFilter),
     sortOrder: e.sortOrder
-  }), M(), I = e.hasMore, C = e.offset + y, O = !1, v = !1
+  }), k(), I = e.hasMore, C = e.offset + y, O = !1, v = !1
 }
 
 function x(e) {
-  return (null == S || null == e.channelId || S === e.channelId) && M()
+  return (null == S || null == e.channelId || S === e.channelId) && k()
 }
 
-function M() {
+function k() {
   if (null == S) return !1;
   let e = !I,
     t = h.Z.getChannel(N[N.length - 1]),
@@ -93,7 +93,7 @@ function M() {
   }).sort((e, t) => g.default.compare(w(e, A), w(t, A))).map(e => e.id).reverse().value()
 }
 
-function k(e) {
+function M(e) {
   if (e.channelId !== S || e.sortOrder !== A || !(0, c.O)(e.tagFilter, r) || e.tagSetting !== R) return !1;
   O = !1, T = !0, v = !1
 }
@@ -150,6 +150,6 @@ let Z = new F(d.Z, {
   CHANNEL_DELETE: j,
   LOAD_ARCHIVED_THREADS: D,
   LOAD_ARCHIVED_THREADS_SUCCESS: L,
-  LOAD_ARCHIVED_THREADS_FAIL: k,
+  LOAD_ARCHIVED_THREADS_FAIL: M,
   RESORT_THREADS: x
 })

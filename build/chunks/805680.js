@@ -35,8 +35,8 @@ var r = n(255367),
   D = n(926491),
   L = n(457040),
   x = n(740492),
-  M = n(574254),
-  k = n(585483),
+  k = n(574254),
+  M = n(585483),
   j = n(5967),
   U = n(28546),
   G = n(957825),
@@ -205,7 +205,7 @@ function en(e) {
     windowDispatch: eh
   } = i.useContext(O.ZP), em = (0, f.e7)([D.Z], () => !D.Z.hasLoadedStickerPacks), eg = (0, R.V2)({
     location: "expression_picker"
-  }), eE = (0, f.e7)([M.Z], () => M.Z.isOpen()), eb = null != ea, ey = (0, p.Jw)(null != ea ? ea : ""), eO = (null == (t = Q.gifs) ? void 0 : t.allowSending) && !c.tq && null != x, ev = (null == (n = Q.stickers) ? void 0 : n.allowSending) && null != z, eI = !(null == (a = Q.expressionPicker) ? void 0 : a.onlyEmojis) && (eO || ev), {
+  }), eE = (0, f.e7)([k.Z], () => k.Z.isOpen()), eb = null != ea, ey = (0, p.Jw)(null != ea ? ea : ""), eO = (null == (t = Q.gifs) ? void 0 : t.allowSending) && !c.tq && null != x, ev = (null == (n = Q.stickers) ? void 0 : n.allowSending) && null != z, eI = !(null == (a = Q.expressionPicker) ? void 0 : a.onlyEmojis) && (eO || ev), {
     showExpressionPickerButton: eT
   } = (0, S.q)({
     location: "expression_picker",
@@ -224,7 +224,7 @@ function en(e) {
       n = n.parentNode
     }(0, U._Q)();
     let r = null == (t = (0, j.uB)(e)) ? void 0 : t.activeElement;
-    (null == r || "BODY" === r.tagName) && k.S.dispatchToLastSubscribed(B.CkL.TEXTAREA_FOCUS)
+    (null == r || "BODY" === r.tagName) && M.S.dispatchToLastSubscribed(B.CkL.TEXTAREA_FOCUS)
   }, [ei, ey, eb, eE]), eA = i.useCallback(() => {
     (0, U._Q)()
   }, []);
@@ -232,8 +232,8 @@ function en(e) {
     let e = () => {
       ef === G.X1.GIF && (0, U._Q)()
     };
-    return ep.addEventListener("mousedown", eS), ep.addEventListener("contextmenu", eS), eh.subscribe(B.CkL.POPOUT_CLOSE, eA), k.S.subscribe(B.CkL.CLOSE_GIF_PICKER, e), () => {
-      ep.removeEventListener("mousedown", eS), ep.removeEventListener("contextmenu", eS), eh.unsubscribe(B.CkL.POPOUT_CLOSE, eA), k.S.unsubscribe(B.CkL.CLOSE_GIF_PICKER, e)
+    return ep.addEventListener("mousedown", eS), ep.addEventListener("contextmenu", eS), eh.subscribe(B.CkL.POPOUT_CLOSE, eA), M.S.subscribe(B.CkL.CLOSE_GIF_PICKER, e), () => {
+      ep.removeEventListener("mousedown", eS), ep.removeEventListener("contextmenu", eS), eh.unsubscribe(B.CkL.POPOUT_CLOSE, eA), M.S.unsubscribe(B.CkL.CLOSE_GIF_PICKER, e)
     }
   }, [ef, eA, eS, ep, eh]), (0, g.Tbt)(eo);
   let [eN, eC] = (0, I.US)(eg ? [_.z.SOUNDMOJI_BADGE] : [], void 0, !1), [eR, eP] = i.useState(!1);
@@ -259,11 +259,11 @@ function en(e) {
     eD = i.useCallback((e, t) => null == q ? void 0 : q(e, "soundboard_picker", t), [q]),
     eL = (null == (s = Q.soundmoji) ? void 0 : s.allowSending) === !0 && null != q,
     ex = "left" === en ? "right" : "left",
-    eM = null != er ? er : "left" === en ? W.positionLayerDefaultAlignLeft : W.positionLayerDefaultAlignRight;
+    ek = null != er ? er : "left" === en ? W.positionLayerDefaultAlignLeft : W.positionLayerDefaultAlignRight;
   return (0, r.jsx)(b.Z, {
     section: B.jXE.EXPRESSION_PICKER,
     children: (0, r.jsx)(C.W5, {
-      className: o()(W.positionLayer, eM),
+      className: o()(W.positionLayer, ek),
       targetRef: l,
       position: J,
       align: en,

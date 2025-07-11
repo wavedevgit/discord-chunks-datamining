@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: 349602f66c20db96
+  Original File Name: 1491b3be874ecc02
 **/
 .countDownWrapper_a1b7b8 {
     align-items: center;
@@ -107,7 +107,8 @@
 }
 
 .pageFilter__6db1d {
-    gap: 24px;
+    gap: 12px;
+    justify-content: flex-end;
     min-height: 100vh
 }
 
@@ -136,7 +137,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 60px;
-    max-width: 1124px;
+    padding: 0 20px;
     width: 100%
 }
 
@@ -148,6 +149,7 @@
 }
 
 .inventoryNoFilter__6db1d {
+    max-width: 1124px;
     padding: 0 32px 32px
 }
 
@@ -290,15 +292,13 @@
 }
 
 .filterBar__6db1d {
-    border-left: 1px solid var(--border-subtle);
+    align-self: flex-start;
+    flex: 0 0 250px;
     height: calc(100vh - 120px);
-    max-width: 300px;
     overflow-y: auto;
-    padding-left: 12px;
     position: -webkit-sticky;
     position: sticky;
-    top: 76px;
-    width: 20vw
+    top: 76px
 }
 
 .filterButton__6db1d {
@@ -320,13 +320,21 @@
 }
 
 @media (max-width:1400px) {
-    .filterBar__6db1d {
+    .divider__6db1d,.filterBar__6db1d {
         display: none
     }
 
     .controlsRightSide__6db1d {
         visibility: hidden
     }
+}
+
+.divider__6db1d {
+    background-color: var(--border-subtle);
+    margin-bottom: -20px;
+    margin-left: 12px;
+    margin-top: -20px;
+    width: 1px
 }
 
 .sortBy__6db1d {
@@ -1892,4 +1900,4 @@
     cursor: pointer
 }
 
-/*# sourceMappingURL=349602f66c20db96.css.map*/
+/*# sourceMappingURL=1491b3be874ecc02.css.map*/

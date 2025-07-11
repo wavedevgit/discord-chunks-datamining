@@ -45,22 +45,22 @@ function w(e) {
     analyticsLocationSection: D,
     upsellViewedTrackingData: L,
     onClose: x,
-    onDisplay: M,
-    onLearnMore: k,
+    onDisplay: k,
+    onLearnMore: M,
     isEmojiPickerOverlay: j = !1
   } = e, U = (0, s.e7)([E.Z], () => E.Z.affinities), G = (0, s.e7)([E.Z], () => E.Z.hasFetched);
   i.useEffect(() => {
     !G && w && d.MH()
   }, [G, w]), i.useEffect(() => {
-    m.default.track(S.rMx.PREMIUM_UPSELL_VIEWED, L), null == M || M()
-  }, [M, L]);
+    m.default.track(S.rMx.PREMIUM_UPSELL_VIEWED, L), null == k || k()
+  }, [k, L]);
   let B = U.length > 1 && w,
     V = () => 2 === t ? C.hasTabParentContainer : 1 === t ? C.hasParentContainer : C.noParentContainer,
     F = () => {
       m.default.track(S.rMx.PREMIUM_PROMOTION_OPENED, {
         location_section: D,
         location_object: S.qAy.NAVIGATION_LINK
-      }), null == k || k(), (0, p.Z)(), x(), (0, f.xf)(), (0, h.uL)(S.Z5c.APPLICATION_STORE)
+      }), null == M || M(), (0, p.Z)(), x(), (0, f.xf)(), (0, h.uL)(S.Z5c.APPLICATION_STORE)
     },
     Z = (0, y.N)(),
     H = i.useCallback(() => {

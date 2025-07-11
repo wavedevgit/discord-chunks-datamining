@@ -12,7 +12,7 @@ var r = n(120356),
 
 function c(e) {
   let {
-    buttons: t,
+    actions: t,
     className: n
   } = e;
   return (0, i.jsx)("div", {

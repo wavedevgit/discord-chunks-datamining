@@ -71,14 +71,14 @@ function x(e, t) {
   }), e
 }
 
-function M(e) {
+function k(e) {
   let {
     guildId: t,
     powerup: n,
     onClose: a
   } = e, {
     analyticsLocations: l
-  } = (0, p.ZP)(), c = null != (0, v.Z)(t, n), E = (0, I.Z)(t), [b, y] = i.useState(!1), [S, w] = i.useState(!1), L = S, M = i.useCallback(() => {
+  } = (0, p.ZP)(), c = null != (0, v.Z)(t, n), E = (0, I.Z)(t), [b, y] = i.useState(!1), [S, w] = i.useState(!1), L = S, k = i.useCallback(() => {
     let e = g.Z.getGuild(t);
     null != e && (0, h.u)({
       analyticsLocation: {
@@ -89,7 +89,7 @@ function M(e) {
       analyticsLocations: l,
       guild: e
     })
-  }, [t, l]), k = i.useCallback(() => {
+  }, [t, l]), M = i.useCallback(() => {
     a(), (0, T.Z)(t, _.Z.GUILD_POWERUPS_MARKETING, n.skuId)
   }, [t, n.skuId, a]), j = {
     tension: 400,
@@ -143,13 +143,13 @@ function M(e) {
         className: P.buttonsContainer,
         children: [(0, r.jsx)(u.zx, {
           grow: !0,
-          onClick: M,
+          onClick: k,
           color: u.zx.Colors.BRAND,
           className: P.button,
           children: C.intl.string(C.t["oPAx7+"])
         }), E && (0, r.jsx)(u.zx, {
           grow: !0,
-          onClick: k,
+          onClick: M,
           color: u.zx.Colors.PRIMARY,
           className: P.button,
           children: C.intl.string(C.t.GoCQxc)
@@ -163,7 +163,7 @@ function M(e) {
     })]
   })
 }
-let k = i.forwardRef((e, t) => {
+let M = i.forwardRef((e, t) => {
   var n, a;
   let {
     guild: o,
@@ -187,7 +187,7 @@ let k = i.forwardRef((e, t) => {
       })
     }), (0, r.jsx)("div", {
       className: R.powerupsContainer,
-      children: d.map(e => (0, r.jsx)(M, {
+      children: d.map(e => (0, r.jsx)(k, {
         guildId: o.id,
         powerup: e,
         onClose: s
@@ -195,5 +195,5 @@ let k = i.forwardRef((e, t) => {
     })]
   })
 });
-k.displayName = "GuildPowerupsMarketingPowerupCards";
-let j = k
+M.displayName = "GuildPowerupsMarketingPowerupCards";
+let j = M

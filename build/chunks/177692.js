@@ -26,8 +26,8 @@ async function d() {
 
 function f() {
   let e = [];
-  s.o$.forEach(t => {
-    t.cachedIsEnabled() && e.push(t.feature)
+  s.Re.forEach(t => {
+    t.isEnabled() && e.push(t.id)
   }), o.default.track(l.rMx.LIBDISCORE_LOADED, {
     success: !0,
     experimental_features: e

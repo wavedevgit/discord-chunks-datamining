@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367),
   l = n(73800),
   o = n(120356),
-  a = n.n(o),
-  i = n(755721),
+  i = n.n(o),
+  a = n(755721),
   s = n(481060),
   c = n(381585),
   u = n(870289),
@@ -45,15 +45,15 @@ function E(e) {
   }, [j, P]);
   let L = (0, d.S)(e => e.hasDefaultFilters());
   return (0, r.jsx)("div", {
-    className: a()(v.pageWrapper, {
+    className: i()(v.pageWrapper, {
       [v.pageWrapperFilter]: j
     }),
     children: (0, r.jsxs)("main", {
-      className: a()(v.page, {
+      className: i()(v.page, {
         [v.pageFilter]: j
       }),
       children: [(0, r.jsxs)("div", {
-        className: a()(v.inventory, {
+        className: i()(v.inventory, {
           [v.inventoryNoFilter]: !j,
           [v.pageFullscreen]: t
         }),
@@ -70,10 +70,10 @@ function E(e) {
                 variant: "text-md/semibold",
                 children: O.intl.string(O.t.uaX709)
               }), (0, r.jsx)(f.Z, {})]
-            }), (0, r.jsx)(i.zx, {
+            }), (0, r.jsx)(a.zx, {
               onClick: () => P(e => !e),
-              look: i.iL.OUTLINED,
-              color: i.Tt.PRIMARY,
+              look: a.iL.OUTLINED,
+              color: a.Tt.PRIMARY,
               children: (0, r.jsxs)("div", {
                 className: v.filterButton,
                 children: [O.intl.string(T ? O.t.fYtm6e : O.t.TeTYEx), (0, r.jsx)(s.gXV, {
@@ -103,9 +103,13 @@ function E(e) {
             handlePageChange: x
           })
         })]
-      }), T && (0, r.jsx)(s.Ttm, {
-        className: v.filterBar,
-        children: (0, r.jsx)(h.Z, {})
+      }), T && (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)("div", {
+          className: v.divider
+        }), (0, r.jsx)(s.Ttm, {
+          className: v.filterBar,
+          children: (0, r.jsx)(h.Z, {})
+        })]
       })]
     })
   })

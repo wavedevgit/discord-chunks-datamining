@@ -38,9 +38,9 @@ var i, a = n(392711),
   D = n(145597),
   L = n(370862),
   x = n(981631),
-  M = n(987650);
+  k = n(987650);
 
-function k(e, t, n) {
+function M(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -56,7 +56,7 @@ function j(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      k(e, t, n[t])
+      M(e, t, n[t])
     })
   }
   return e
@@ -432,11 +432,11 @@ function ex(e) {
   ew(X)
 }
 
-function eM(e) {
+function ek(e) {
   q = e.games
 }
 
-function ek() {
+function eM() {
   W = !1
 }
 
@@ -562,7 +562,7 @@ H.forEach(e => {
   e_.set(e.name.toLowerCase(), e), (null != (t = e.executables) ? t : []).forEach(t => {
     ef.set(t.name.toLowerCase(), e)
   })
-}), !__OVERLAY__ && ((0, P.isDesktop)() || M.iP) && (en = function() {
+}), !__OVERLAY__ && ((0, P.isDesktop)() || k.iP) && (en = function() {
   let e = [],
     t = new Set;
   r = {};
@@ -722,11 +722,11 @@ class eQ extends(i = c.ZP.Store) {
     ec.add(null != (t = (0, h.F)(e)) ? t : e)
   }
 }
-k(eQ, "displayName", "RunningGameStore");
+M(eQ, "displayName", "RunningGameStore");
 let eJ = new eQ(d.Z, {
     RUNNING_GAMES_CHANGE: ex,
-    CANDIDATE_GAMES_CHANGE: eM,
-    PERMISSION_CLEAR_PTT_ADMIN_WARNING: ek,
+    CANDIDATE_GAMES_CHANGE: ek,
+    PERMISSION_CLEAR_PTT_ADMIN_WARNING: eM,
     PERMISSION_REQUEST_ELEVATED_PROCESS: ej,
     PERMISSION_CLEAR_ELEVATED_PROCESS: eG,
     PERMISSION_CONTINUE_NONELEVATED_PROCESS: eU,

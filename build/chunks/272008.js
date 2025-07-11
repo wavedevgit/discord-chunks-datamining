@@ -12,13 +12,13 @@ n.d(t, {
   cT: () => W,
   eT: () => G,
   gU: () => z,
-  gl: () => k,
+  gl: () => M,
   is: () => R,
   it: () => P,
   lL: () => K,
   m0: () => D,
   nE: () => j,
-  pf: () => M,
+  pf: () => k,
   qm: () => H,
   w: () => Y,
   xw: () => w
@@ -281,7 +281,7 @@ async function x(e, t, n) {
     }
   }
 }
-async function M(e) {
+async function k(e) {
   if (!h.Z.isFetchingRewardCode(e)) {
     a.Z.dispatch({
       type: "QUESTS_FETCH_REWARD_CODE_BEGIN",
@@ -306,7 +306,7 @@ async function M(e) {
     }
   }
 }
-async function k(e, t) {
+async function M(e, t) {
   let n = h.Z.isDismissingContent(e),
     r = (0, g.GN)(t);
   if (!n && r) {

@@ -83,17 +83,17 @@ function x(e, t) {
   return e > 0 ? "" : null != (r = null == (n = P[t]) ? void 0 : n.id) ? r : ""
 }
 
-function M(e) {
+function k(e) {
   return e === u.EO.VIDEO
 }
 
-function k(e) {
+function M(e) {
   return ((0, E._M)(e) || (0, E.MO)(e)) && (e.pathname.toLowerCase().endsWith(".webp") || e.pathname.toLowerCase().endsWith(".avif"))
 }
 
 function j(e) {
   let t = y.Z.toURLSafe(e);
-  return null != t && k(t) ? (t.searchParams.set("animated", "true"), t.toString()) : e
+  return null != t && M(t) ? (t.searchParams.set("animated", "true"), t.toString()) : e
 }
 class U extends i.PureComponent {
   componentDidMount() {
@@ -171,7 +171,7 @@ class U extends i.PureComponent {
       style: A({
         backgroundColor: s ? void 0 : o
       }, i),
-      children: [M(n) ? null : this.renderGIF(), null != t ? t(e) : null]
+      children: [k(n) ? null : this.renderGIF(), null != t ? t(e) : null]
     })
   }
   constructor(e) {
@@ -195,7 +195,7 @@ class U extends i.PureComponent {
     this.state = {
       color: null == n ? l().sample(N) : n,
       loaded: !1
-    }, M(t) || (this._image = r.getElement(), this._image.onload = () => this.setState({
+    }, k(t) || (this._image = r.getElement(), this._image.onload = () => this.setState({
       loaded: !0
     }), this._image.src = e.src)
   }

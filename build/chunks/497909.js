@@ -2,9 +2,9 @@
 "use strict";
 n.d(t, {
   Z: () => p
-}), n(388685);
-var r = n(843991),
-  i = n(668757),
+}), n(388685), n(49124);
+var r = n(668757),
+  i = n(902704),
   a = n(147913),
   o = n(818083),
   s = n(353926),
@@ -21,49 +21,38 @@ function c(e, t, n) {
 let u = null;
 
 function d() {
-  if (!(0, i.X6)()) return;
-  let e = new Set,
-    t = (0, i.Md)();
-  if (l.o$.forEach(t => {
-      var n;
-      (null == (n = t._discordExperiment) ? void 0 : n.getCurrentConfig({
-        location: "default"
-      }).enabled) && e.add(t.id)
-    }), null === u || !(0, r.O)(u, e)) {
-    let n = Array.from(e);
-    t.flushToCache(n), u = e
-  }
+  if (!(0, r.X6)()) return;
+  let e = {};
+  for (let t of l.Re) e[t.id] = t.getCurrentConfig();
+  null != u && (0, i.Z)(u, e) || ((0, r.Md)().flushToCache(JSON.stringify(e)), u = e)
 }
 
 function f() {
-  l.o$.forEach(e => {
-    let t = (0, o.B)({
-      kind: "user",
-      id: e.id,
-      label: "libdiscore ".concat(e.feature, " Migration"),
-      defaultConfig: {
-        enabled: !1
-      },
-      treatments: [{
-        id: 0,
-        label: "Control",
+  l.Re.forEach(e => e.setExperiment((0, o.B)({
+    kind: "user",
+    id: e.id,
+    label: e.getLabel(),
+    defaultConfig: {
+      treatmentId: -1
+    },
+    treatments: e.getTreatments().map(e => {
+      let {
+        treatmentId: t,
+        label: n
+      } = e;
+      return {
+        id: t,
+        label: n,
         config: {
-          enabled: !1
+          treatmentId: t
         }
-      }, {
-        id: 1,
-        label: "Use libdiscore ".concat(e.feature),
-        config: {
-          enabled: !0
-        }
-      }]
-    });
-    e.setDiscordExperiment(t)
-  })
+      }
+    })
+  })))
 }
 class _ extends a.Z {
   _initialize() {
-    f(), d()
+    f()
   }
   _terminate() {}
   constructor(...e) {

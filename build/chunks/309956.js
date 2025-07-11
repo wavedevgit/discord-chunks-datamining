@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(73800),
   l = n(114858),
   o = n(335818),
-  a = n(822857),
-  i = n(870289),
+  i = n(822857),
+  a = n(870289),
   s = n(501431),
   c = n(149705),
   u = n(215023),
@@ -21,9 +21,9 @@ let p = {
   g = (e, t, n) => {
     let {
       enabled: o
-    } = (0, a.WX)({
+    } = (0, i.WX)({
       location: "useShopViewTransition"
-    }), g = (0, i.F)("CollectiblesBrowse"), {
+    }), g = (0, a.F)("CollectiblesBrowse"), {
       setItemTypeFilter: f,
       reset: h
     } = (0, s.S)(), {

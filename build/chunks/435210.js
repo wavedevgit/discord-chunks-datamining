@@ -256,9 +256,9 @@ t.log = function() {
   for (var n = Object.keys(t), r = n.length; r--;) e[n[r]] = t[n[r]];
   return e
 };
-var M = "undefined" != typeof Symbol ? Symbol("util.promisify.custom") : void 0;
+var k = "undefined" != typeof Symbol ? Symbol("util.promisify.custom") : void 0;
 
-function k(e, t) {
+function M(e, t) {
   if (!e) {
     var n = Error("Promise was rejected with a falsy value");
     n.reason = e, e = n
@@ -267,10 +267,10 @@ function k(e, t) {
 }
 t.promisify = function(e) {
   if ("function" != typeof e) throw TypeError('The "original" argument must be of type Function');
-  if (M && e[M]) {
-    var t = e[M];
+  if (k && e[k]) {
+    var t = e[k];
     if ("function" != typeof t) throw TypeError('The "util.promisify.custom" argument must be of type Function');
-    return Object.defineProperty(t, M, {
+    return Object.defineProperty(t, k, {
       value: t,
       enumerable: !1,
       writable: !1,
@@ -292,13 +292,13 @@ t.promisify = function(e) {
     }
     return r
   }
-  return Object.setPrototypeOf(t, Object.getPrototypeOf(e)), M && Object.defineProperty(t, M, {
+  return Object.setPrototypeOf(t, Object.getPrototypeOf(e)), k && Object.defineProperty(t, k, {
     value: t,
     enumerable: !1,
     writable: !1,
     configurable: !0
   }), Object.defineProperties(t, i(e))
-}, t.promisify.custom = M, t.callbackify = function(e) {
+}, t.promisify.custom = k, t.callbackify = function(e) {
   if ("function" != typeof e) throw TypeError('The "original" argument must be of type Function');
 
   function t() {
@@ -312,7 +312,7 @@ t.promisify = function(e) {
     e.apply(this, t).then(function(e) {
       r.nextTick(o.bind(null, null, e))
     }, function(e) {
-      r.nextTick(k.bind(null, e, o))
+      r.nextTick(M.bind(null, e, o))
     })
   }
   return Object.setPrototypeOf(t, Object.getPrototypeOf(e)), Object.defineProperties(t, i(e)), t

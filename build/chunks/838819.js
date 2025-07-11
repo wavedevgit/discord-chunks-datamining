@@ -6,8 +6,8 @@ n.r(t), n.d(t, {
 var r = n(255367),
   l = n(73800),
   o = n(120356),
-  a = n.n(o),
-  i = n(772848),
+  i = n.n(o),
+  a = n(772848),
   s = n(399606),
   c = n(952265),
   u = n(481060),
@@ -57,7 +57,7 @@ let Z = e => {
       tab: n = N.AW.HOME
     } = e;
     (0, b.z)(h.f);
-    let o = (0, p.Z)((0, i.Z)()),
+    let o = (0, p.Z)((0, a.Z)()),
       c = (0, s.e7)([O.default], () => O.default.getCurrentUser()),
       w = l.useRef(null),
       {
@@ -142,7 +142,7 @@ let Z = e => {
               ref: w,
               onScroll: J,
               children: (0, r.jsxs)("div", {
-                className: a()(R.shopViewWrapper, {
+                className: i()(R.shopViewWrapper, {
                   [R.visible]: X === N.f7.VISIBLE,
                   [R.in]: X === N.f7.IN,
                   [R.out]: X === N.f7.OUT

@@ -27,10 +27,13 @@ function u(e) {
     body: r,
     badge: o,
     className: u,
-    textLink: m
-  } = e, p = null == (t = null == m ? void 0 : m.external) || t;
+    textLink: m,
+    hasBottomMargin: p = !1
+  } = e, g = null == (t = null == m ? void 0 : m.external) || t;
   return (0, i.jsxs)("div", {
-    className: s()(c.header, u),
+    className: s()(c.header, u, {
+      [c.hasActions]: p
+    }),
     children: [(0, i.jsxs)("div", {
       children: [null != o && (0, i.jsx)(l.Text, {
         variant: "text-xs/bold",
@@ -58,8 +61,8 @@ function u(e) {
       children: r
     }), null != m && (0, i.jsx)(a.Anchor, {
       href: m.link,
-      target: p ? "_blank" : void 0,
-      rel: p ? "noopener noreferrer" : void 0,
+      target: g ? "_blank" : void 0,
+      rel: g ? "noopener noreferrer" : void 0,
       children: (0, i.jsx)(l.Text, {
         variant: "text-sm/normal",
         className: c.footerLink,

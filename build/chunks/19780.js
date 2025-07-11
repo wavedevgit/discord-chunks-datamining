@@ -191,7 +191,7 @@ function x() {
   y = null
 }
 
-function M(e) {
+function k(e) {
   let {
     guild: t
   } = e;
@@ -199,7 +199,7 @@ function M(e) {
   C()
 }
 
-function k(e) {
+function M(e) {
   let {
     channelId: t
   } = e;
@@ -386,10 +386,10 @@ let z = new K(s.Z, __OVERLAY__ ? {} : {
   CLEAR_REMOTE_DISCONNECT_VOICE_CHANNEL_ID: L,
   REMOTE_SESSION_CONNECT: L,
   CLEAR_LAST_SESSION_VOICE_CHANNEL_ID: x,
-  GUILD_DELETE: M,
+  GUILD_DELETE: k,
   CHANNEL_DELETE: j,
   THREAD_DELETE: j,
-  CALL_DELETE: k,
+  CALL_DELETE: M,
   APP_STATE_UPDATE: G,
   RTC_DEBUG_SET_SIMULCAST_OVERRIDE: Y
 });

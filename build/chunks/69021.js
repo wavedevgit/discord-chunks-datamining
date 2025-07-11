@@ -57,14 +57,14 @@ function f() {
     isLoggingOverlayEvents: h,
     isLoggingAnalyticsEvents: j,
     isAnalyticsDebuggerEnabled: v,
-    isTracingRequests: E,
-    isForcedCanary: S,
+    isTracingRequests: S,
+    isForcedCanary: E,
     isSourceMapsEnabled: P,
     isIdleStatusIndicatorEnabled: m,
     isAxeEnabled: x,
     preventPopoutClose: w,
     onlyShowPreviewAppCollections: k,
-    disableAppCollectionsCache: Z
+    disableAppCollectionsCache: D
   } = (0, i.cj)([u.default, d.default, s.Z], () => {
     var e;
     return {
@@ -85,14 +85,14 @@ function f() {
       disableAppCollectionsCache: u.default.disableAppCollectionsCache
     }
   }), {
-    horizontalSpacing: D,
+    horizontalSpacing: Z,
     verticalSpacing: A,
     maxHorizontalSpacing: C,
     maxVerticalSpacing: I
   } = (0, c.i)(), {
     setHorizontalSpacing: T,
-    setVerticalSpacing: N
-  } = c.i.getState(), _ = p.zY.useSetting(), R = [];
+    setVerticalSpacing: _
+  } = c.i.getState(), N = p.zY.useSetting(), R = [];
   return t && n && (R.push((0, r.jsx)(l.sNh, {
     id: "overrides",
     label: "Overrides",
@@ -114,27 +114,27 @@ function f() {
     children: [(0, r.jsx)(l.S89, {
       id: "tracing-requests",
       label: "Tracing Requests",
-      checked: E,
+      checked: S,
       action: () => {
         (0, a.y)({
-          trace: !E
+          trace: !S
         })
       }
     }, "tracing-requests"), (0, r.jsx)(l.S89, {
       id: "forced-canary",
       label: "Forced Canary",
-      checked: S,
+      checked: E,
       action: () => {
         (0, a.y)({
-          canary: !S
+          canary: !E
         })
       }
     }, "forced-canary"), (0, r.jsx)(l.S89, {
       id: "always-deliver",
       label: "Ads auto-targeting",
-      checked: _,
+      checked: N,
       action: () => {
-        p.zY.updateSetting(!_)
+        p.zY.updateSetting(!N)
       }
     }, "always-deliver"), (0, r.jsx)(l.S89, {
       id: "source-maps",
@@ -184,10 +184,10 @@ function f() {
     }, "preview-collections"), (0, r.jsx)(l.S89, {
       id: "disable-collections-cache",
       label: "Disable Collections Cache",
-      checked: Z,
+      checked: D,
       action: () => {
         (0, a.y)({
-          disableAppCollectionsCache: !Z
+          disableAppCollectionsCache: !D
         })
       }
     }, "disable-collections-cache")]
@@ -255,7 +255,7 @@ function f() {
     label: "Horizontal Spacing",
     control: (e, t) => (0, r.jsx)(l._wy, O(y({}, e), {
       ref: t,
-      value: D,
+      value: Z,
       minValue: 0,
       maxValue: C,
       onChange: e => T(e),
@@ -270,7 +270,7 @@ function f() {
       value: A,
       minValue: 0,
       maxValue: I,
-      onChange: e => N(e),
+      onChange: e => _(e),
       "aria-label": "Horizontal Spacing",
       renderValue: e => "".concat(Math.round(e), "px")
     }))

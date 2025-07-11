@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367),
   l = n(73800),
   o = n(120356),
-  a = n.n(o),
-  i = n(180650),
+  i = n.n(o),
+  a = n(180650),
   s = n(622535),
   c = n(755721),
   u = n(481060),
@@ -36,7 +36,7 @@ let C = e => {
       featuredBlockBanner: T
     } = (0, h.YG)(v, E),
     P = l.useRef(null),
-    L = y === i.T.NAMEPLATES_V3,
+    L = y === a.T.NAMEPLATES_V3,
     k = L ? "NAMEPLATES VOL.3" : null,
     I = null == E ? void 0 : E.bodyText,
     B = (0, p.sp)();
@@ -70,7 +70,7 @@ let C = e => {
         className: _.featuredBlockTextContainer,
         children: [null != k && (0, r.jsx)(u.X6q, {
           lineClamp: 2,
-          className: a()(_.featuredBlockTitleText, {
+          className: i()(_.featuredBlockTitleText, {
             [_.featuredBlockTitleTextNameplate]: L
           }),
           style: {

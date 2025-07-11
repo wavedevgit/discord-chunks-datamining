@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367),
   l = n(73800),
   o = n(481060),
-  a = n(501431),
-  i = n(215023),
+  i = n(501431),
+  a = n(215023),
   s = n(388032),
   c = n(234209);
 
@@ -18,7 +18,7 @@ function u(e) {
   } = e, {
     searchQuery: u,
     onSetSearchQuery: d
-  } = (0, a.S)(), [p, g] = l.useState("");
+  } = (0, i.S)(), [p, g] = l.useState("");
   return l.useEffect(() => {
     let e = setTimeout(() => {
       d(p)
@@ -28,7 +28,7 @@ function u(e) {
     g(u)
   }, [u]), (0, r.jsx)(o.E1j, {
     onFocus: () => {
-      n !== i.AW.CATALOG && t(i.AW.CATALOG)
+      n !== a.AW.CATALOG && t(a.AW.CATALOG)
     },
     className: c.searchBar,
     onKeyDown: e => {

@@ -99,8 +99,8 @@ function A(e) {
       loading: D,
       loadingStartedLabel: L,
       loadingFinishedLabel: x,
-      rounded: M = !1,
-      className: k,
+      rounded: k = !1,
+      className: M,
       style: j
     } = e,
     U = v(e, ["role", "variant", "size", "text", "icon", "iconPosition", "iconOpticalOffsetMargin", "fullWidth", "focusProps", "loading", "loadingStartedLabel", "loadingFinishedLabel", "rounded", "className", "style"]);
@@ -155,7 +155,7 @@ function A(e) {
         className: o()(g.button, g[B], g[d], {
           [g.hasText]: Z,
           [g.fullWidth]: V,
-          [g.rounded]: M
+          [g.rounded]: k
         }),
         ref: H
       }, U), {

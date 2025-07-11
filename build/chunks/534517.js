@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   B: () => o,
-  S: () => a
+  S: () => i
 });
 var r = n(818083),
   l = n(987338);
@@ -22,6 +22,6 @@ let o = (0, r.B)({
       }
     }]
   }),
-  a = e => o.useExperiment({
+  i = e => o.useExperiment({
     location: e
   }).showShopMenuWithIndexPage

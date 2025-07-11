@@ -6,13 +6,13 @@ n.d(t, {
   DZ: () => C,
   PS: () => P,
   T6: () => S,
-  Z1: () => M,
+  Z1: () => k,
   aj: () => R,
   bE: () => j,
   fy: () => E.fy,
   hW: () => N,
   nm: () => D,
-  sr: () => k,
+  sr: () => M,
   w9: () => x
 }), n(415506), n(388685), n(410992), n(227481), n(730884), n(20464), n(341884), n(364341), n(629680), n(505025), n(918970), n(121784), n(644351), n(146733);
 var r = n(512722),
@@ -313,7 +313,7 @@ function x(e) {
   }, E.fy.INFREQUENT_USER_ACTION)
 }
 
-function M(e) {
+function k(e) {
   return L(e, {
     lastDismissedVersion: 0,
     lastDismissedAtMs: "0",
@@ -321,7 +321,7 @@ function M(e) {
   })
 }
 
-function k() {
+function M() {
   return N.updateAsync("userContent", e => {
     e.dismissedContents = new Uint8Array, e.recurringDismissibleContentStates = {}
   }, E.fy.INFREQUENT_USER_ACTION)

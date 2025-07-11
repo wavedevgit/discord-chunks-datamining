@@ -81,10 +81,10 @@ function h(e) {
     }, [C]);
   if (!S || null == y) return null;
   let Z = g({
-    text: null != (b = null == (h = y.button) ? void 0 : h.text) ? b : A ? m.intl.string(m.t.i4jeWV) : m.intl.string(m.t.PDTjLC),
-    variant: null != (x = null == (f = y.button) ? void 0 : f.variant) ? x : "primary",
+    text: null != (b = null == (h = y.action) ? void 0 : h.text) ? b : A ? m.intl.string(m.t.i4jeWV) : m.intl.string(m.t.PDTjLC),
+    variant: null != (x = null == (f = y.action) ? void 0 : f.variant) ? x : "primary",
     onClick: P
-  }, y.button);
+  }, y.action);
   return (0, i.jsx)(l.m, (t = g({}, T), n = n = {
     shouldShow: S,
     onRequestClose: R,
@@ -94,14 +94,15 @@ function h(e) {
       children: [(0, i.jsx)(d.u, {
         onClick: D,
         colorMix: null != y.gradientColor
-      }), (0, i.jsx)(o.V, {
+      }), null != y.asset ? (0, i.jsx)(o.V, {
         asset: y.asset,
         size: E
-      }), (0, i.jsx)(u.Y, {
+      }) : null, (0, i.jsx)(u.Y, {
         title: y.title,
         body: y.body,
         badge: y.badge,
-        textLink: y.textLink
+        textLink: y.textLink,
+        hasBottomMargin: !0
       }), (0, i.jsx)("div", {
         className: p.actionBar,
         children: (0, i.jsxs)("div", {

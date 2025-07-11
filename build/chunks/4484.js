@@ -39,8 +39,8 @@ let D = i.forwardRef(function(e, t) {
     channel: D,
     className: L,
     id: x,
-    disabled: M,
-    submitting: k,
+    disabled: k,
+    submitting: M,
     placeholder: j,
     required: U,
     textAreaPaddingClassName: G,
@@ -72,7 +72,7 @@ let D = i.forwardRef(function(e, t) {
     "aria-describedby": ed,
     "aria-labelledby": ef,
     "aria-autocomplete": e_
-  } = e, ep = i.useRef(null), eh = i.useRef(null), em = i.useRef(!0), eg = i.useRef(!0), eE = M || k, eb = i.useCallback((e, t, n) => {
+  } = e, ep = i.useRef(null), eh = i.useRef(null), em = i.useRef(!0), eg = i.useRef(!0), eE = k || M, eb = i.useCallback((e, t, n) => {
     var r;
     let {
       value: i,
@@ -217,7 +217,7 @@ let D = i.forwardRef(function(e, t) {
         readOnly: eE,
         spellCheck: $,
         autoFocus: !en,
-        canFocus: !M,
+        canFocus: !k,
         onChange: eP,
         onFocus: Z,
         onBlur: H,

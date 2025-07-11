@@ -4,8 +4,8 @@ n.d(t, {
   BB: () => j,
   C$: () => A,
   H9: () => S,
-  Kd: () => k,
-  d2: () => M,
+  Kd: () => M,
+  d2: () => k,
   dU: () => I
 }), n(388685), n(704826), n(35282), n(415506), n(539854), n(781311);
 var r = n(921738),
@@ -206,7 +206,7 @@ function x(e) {
   return e + "Key"
 }
 
-function M(e) {
+function k(e) {
   let t = {
     keyCode: 0,
     key: "",
@@ -230,7 +230,7 @@ function M(e) {
   }, [])
 }
 
-function k(e) {
+function M(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : I(),
     n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : d.MoX.KEYBOARD_KEY;
   return e.replace(/numpad plus/i, "").replace(/NUMPAD \+/i, "numpad plus").replace(/mod/i, s.Z.modKey).split("+").map(e => e.trim().replace("plus", "+")).reduce((e, r) => {

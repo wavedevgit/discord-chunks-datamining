@@ -103,8 +103,8 @@ let S = {
   D = 9e5,
   L = 36e5,
   x = 864e5,
-  M = .001,
-  k = performance.now(),
+  k = .001,
+  M = performance.now(),
   j = (0, s.X6)() ? (0, s.Ub)((0, o.R)()) : null,
   U = [];
 
@@ -215,12 +215,12 @@ let B = {
   [m.rMx.RPC_COMMAND_SENT]: {
     throttlePeriod: x,
     throttleKeys: e => [e.application_id, e.command],
-    throttlePercent: M
+    throttlePercent: k
   },
   [m.rMx.RPC_SUBSCRIPTION_REQUESTED]: {
     throttlePeriod: x,
     throttleKeys: e => [e.application_id, e.event],
-    throttlePercent: M
+    throttlePercent: k
   },
   [m.rMx.ACTIVITY_HANDSHAKE]: {
     throttlePeriod: x,
@@ -379,7 +379,7 @@ function K(e) {
     } = a;
     a = y({}, I(a, ["source"]), F(e))
   }
-  a.client_performance_cpu = p.Z.getCurrentCPUUsagePercent(), a.client_performance_memory = p.Z.getCurrentMemoryUsageKB(), a.cpu_core_count = p.Z.getCPUCoreCount(), a.accessibility_features = Z(), a.rendered_locale = E.intl.currentLocale, a.uptime_app = Math.floor((performance.now() - k) / 1e3);
+  a.client_performance_cpu = p.Z.getCurrentCPUUsagePercent(), a.client_performance_memory = p.Z.getCurrentMemoryUsageKB(), a.cpu_core_count = p.Z.getCPUCoreCount(), a.accessibility_features = Z(), a.rendered_locale = E.intl.currentLocale, a.uptime_app = Math.floor((performance.now() - M) / 1e3);
   let o = p.Z.getProcessUptime();
   null != o && (a.uptime_process_renderer = Math.floor(o));
   let {
