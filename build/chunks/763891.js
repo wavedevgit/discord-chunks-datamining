@@ -37,8 +37,8 @@ function k(e) {
     isFetchingCategories: n,
     isFullScreen: k,
     scrollerRef: I,
-    tab: N
-  } = e, B = (0, d.sp)(), A = null != (t = null == B ? void 0 : B.sessionId) ? t : "", {
+    tab: B
+  } = e, N = (0, d.sp)(), A = null != (t = null == N ? void 0 : N.sessionId) ? t : "", {
     noCache: w,
     includeUnpublished: R
   } = (0, _.Z)(), Z = (0, a.e7)([u.default], () => u.default.getCurrentUser()), F = (0, a.e7)([p.Z], () => p.Z.productsWithVariantsAsGroup), [D, M] = l.useState(1), H = () => {
@@ -47,7 +47,7 @@ function k(e) {
       animate: !0
     })
   }, W = (0, c.Fg)(), V = (0, o.ap)(W), [U, G, z] = l.useMemo(() => {
-    switch (N) {
+    switch (B) {
       case C.AW.AVATAR_DECORATIONS:
         return [O.intl.string(O.t.dRZYND), V ? y.Z : x.Z, i.Z.AVATAR_DECORATION];
       case C.AW.PROFILE_EFFECTS:
@@ -57,7 +57,7 @@ function k(e) {
       case C.AW.BUNDLES:
         return [O.intl.string(O.t.FYFppq), V ? S.Z : E.Z, i.Z.BUNDLE]
     }
-  }, [N, V]), q = (0, g.a)(), Y = l.useMemo(() => q(F.filter(e => {
+  }, [B, V]), q = (0, g.a)(), Y = l.useMemo(() => q(F.filter(e => {
     var t;
     return e.type === z || e.type === i.Z.VARIANTS_GROUP && (null == (t = e.variants) ? void 0 : t.some(e => e.type === z)) === !0
   })), [F, z, q]), K = (0, f.l)(Y);
@@ -65,7 +65,7 @@ function k(e) {
     (0, h.n)({
       sessionId: A,
       checkpoint: h.a.SHOP_MOUNTED,
-      tab: N,
+      tab: B,
       isFullScreen: k,
       unpublishedCategoriesShown: R,
       cacheDisabled: w
@@ -74,12 +74,12 @@ function k(e) {
     n || (0, h.n)({
       sessionId: A,
       checkpoint: h.a.SHOP_RENDERED,
-      tab: N,
+      tab: B,
       isFullScreen: k,
       unpublishedCategoriesShown: R,
       cacheDisabled: w
     })
-  }, [A, k, R, w, n, N]), n || null == Z) ? (0, r.jsx)(b.Z, {}) : (0, r.jsxs)(r.Fragment, {
+  }, [A, k, R, w, n, B]), n || null == Z) ? (0, r.jsx)(b.Z, {}) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       style: {
         backgroundImage: "url(".concat(G, ")")
@@ -101,7 +101,7 @@ function k(e) {
             product: e,
             user: Z,
             category: n,
-            tab: N
+            tab: B
           }, e.skuId)
         }, e.skuId)
       })

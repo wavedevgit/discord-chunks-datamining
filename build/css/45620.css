@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: 1ae3d9dd28b7ed2f
+  Original File Name: 50eb9722ccf7210d
 **/
 .countDownWrapper_a1b7b8 {
     align-items: center;
@@ -108,7 +108,6 @@
 
 .pageFilter__6db1d {
     gap: 12px;
-    justify-content: flex-end;
     min-height: 100vh
 }
 
@@ -128,8 +127,20 @@
     position: relative
 }
 
+.pageWrapperFilter__6db1d,.pageWrapperNoFilter__6db1d {
+    align-items: flex-start
+}
+
 .pageWrapperFilter__6db1d {
     padding: 20px 0 0 20px
+}
+
+.inventoryWrapper__6db1d {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    width: 100%
 }
 
 .inventory__6db1d {
@@ -137,7 +148,8 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 60px;
-    padding: 0 20px;
+    max-width: 1124px;
+    padding: 0 32px 32px;
     width: 100%
 }
 
@@ -148,9 +160,8 @@
     }
 }
 
-.inventoryNoFilter__6db1d {
-    max-width: 1124px;
-    padding: 0 32px 32px
+.inventoryFilter__6db1d {
+    padding: 0 20px
 }
 
 .pageFullscreen__6db1d {
@@ -1904,4 +1915,4 @@
     cursor: pointer
 }
 
-/*# sourceMappingURL=1ae3d9dd28b7ed2f.css.map*/
+/*# sourceMappingURL=50eb9722ccf7210d.css.map*/

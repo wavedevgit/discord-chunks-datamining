@@ -32,8 +32,8 @@ var r = n(255367),
   L = n(38900),
   k = n(709999),
   I = n(794324),
-  N = n(619899),
-  B = n(215023),
+  B = n(619899),
+  N = n(215023),
   A = n(981631),
   w = n(388032),
   R = n(806734);
@@ -61,7 +61,7 @@ let Z = {
       categorySkuId: e.skuId,
       bannerAsset: e.heroBannerAsset,
       fallbackBannerUrl: (0, S.uV)(null != (a = e.heroBanner) ? a : "", {
-        size: B.pv,
+        size: N.pv,
         format: "jpg"
       }),
       summary: e.summary,
@@ -118,7 +118,7 @@ let Z = {
       heroLogo: J,
       heroBannerStatic: $,
       heroBannerAnimated: ee
-    } = (0, I.hr)(Y), et = null == X ? void 0 : X.heroBanner, en = null != (n = null != (t = null == Q ? void 0 : Q.responsive) ? t : Y.responsive) && n, er = null != (i = null == Q ? void 0 : Q.backgroundStyle) ? i : Y.backgroundStyle, el = l.useMemo(() => G(Y.rankedSkuIds), [s, G, Y.rankedSkuIds]), ei = (0, j.a)()(el), ea = (0, T.l)(ei).slice(0, 4), eo = (0, N.St)(ea), es = H === B.AW.ORBS ? w.intl.string(w.t["1CdL8f"]) : w.intl.formatToPlainString(w.t.wvKYCg, {
+    } = (0, I.hr)(Y), et = null == X ? void 0 : X.heroBanner, en = null != (n = null != (t = null == Q ? void 0 : Q.responsive) ? t : Y.responsive) && n, er = null != (i = null == Q ? void 0 : Q.backgroundStyle) ? i : Y.backgroundStyle, el = l.useMemo(() => G(Y.rankedSkuIds), [s, G, Y.rankedSkuIds]), ei = (0, j.a)()(el), ea = (0, T.l)(ei).slice(0, 4), eo = (0, B.St)(ea), es = H === N.AW.ORBS ? w.intl.string(w.t["1CdL8f"]) : w.intl.formatToPlainString(w.t.wvKYCg, {
       category_name: Y.name
     }), ec = (0, x.F)("CollectiblesContent");
     return null != U && (s || Y !== Z) ? (0, r.jsxs)("div", {
@@ -166,10 +166,10 @@ let Z = {
                 variant: "heading-xxl/bold",
                 className: R.title,
                 color: "header-primary",
-                children: [Y.title, H === B.AW.ORBS && q && (0, r.jsx)(f.Z, {})]
+                children: [Y.title, H === N.AW.ORBS && q && (0, r.jsx)(f.Z, {})]
               }), (0, r.jsx)(d.Text, {
-                variant: H === B.AW.ORBS ? "text-lg/medium" : "text-md/normal",
-                className: H === B.AW.ORBS ? R.orbsSubHeaderText : (null == X ? void 0 : X.showDarkBannerText) ? R.subHeaderTextDark : R.subHeaderText,
+                variant: H === N.AW.ORBS ? "text-lg/medium" : "text-md/normal",
+                className: H === N.AW.ORBS ? R.orbsSubHeaderText : (null == X ? void 0 : X.showDarkBannerText) ? R.subHeaderTextDark : R.subHeaderText,
                 style: null != Y.bannerTextColor ? {
                   color: Y.bannerTextColor
                 } : void 0,
@@ -182,7 +182,7 @@ let Z = {
               className: R.heroHeaderButton,
               color: u.Tt.WHITE,
               onClick: () => {
-                H === B.AW.ORBS ? ((0, b.Y)({
+                H === N.AW.ORBS ? ((0, b.Y)({
                   pageType: A.ZY5.SHOP_ORBS_TAB,
                   sectionType: A.jXE.ORBS_SHOP_HERO_BLOCK,
                   ctaObject: A.qAy.CTA_TO_QUEST_HOME
@@ -202,7 +202,7 @@ let Z = {
           })]
         }), (0, r.jsx)("div", {
           className: a()(R.row, R.feed, {
-            [R.feedSingleRow]: H !== B.AW.ORBS
+            [R.feedSingleRow]: H !== N.AW.ORBS
           }),
           children: s ? (0, r.jsx)(r.Fragment, {
             children: [void 0, void 0, void 0, void 0].map((e, t) => (0, r.jsx)(L.K, {}, t))

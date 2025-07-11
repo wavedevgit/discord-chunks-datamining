@@ -37,17 +37,17 @@ function v(e) {
     currentPage: L,
     totalCount: k,
     isFetchingResults: I
-  } = (0, f.a)(), N = (0, o.Wu)([d.Z], () => d.Z.getProductsBySkus(P)), B = l.useCallback(() => {
+  } = (0, f.a)(), B = (0, o.Wu)([d.Z], () => d.Z.getProductsBySkus(P)), N = l.useCallback(() => {
     var e;
     null == v || null == (e = v.current) || e.scrollToTop({
       animate: !0
     })
   }, [v]), A = null == P ? void 0 : P.join("");
   l.useEffect(() => {
-    B()
-  }, [A, B]);
+    N()
+  }, [A, N]);
   let w = (0, p.a)(),
-    R = l.useMemo(() => w(N), [w, N]);
+    R = l.useMemo(() => w(B), [w, B]);
   l.useEffect(() => {
     n || (0, h.n)({
       sessionId: x,
