@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Fd: () => E,
-  ZP: () => v
+  B: () => m,
+  Z: () => b
 }), n(388685);
 var r = n(147913),
   i = n(592125),
@@ -23,11 +23,10 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 n(334431);
-let f = 3 * s.Z.Millis.DAY,
-  _ = 2 * s.Z.Millis.DAY,
-  p = +s.Z.Millis.HOUR;
+let f = +s.Z.Millis.HOUR,
+  _ = 3 * s.Z.Millis.DAY;
 
-function h(e) {
+function p(e) {
   let {
     channelId: t
   } = e;
@@ -36,7 +35,7 @@ function h(e) {
   if (null != n && n.isGroupDM()) {
     let e = n.recipients.filter(e => o.Z.isBlocked(e)),
       r = n.recipients.filter(e => o.Z.isIgnored(e));
-    (e.length > 0 || r.length > 0) && !n.blockedUserWarningDismissed && !y(t) && (0, c.O)({
+    (e.length > 0 || r.length > 0) && !n.blockedUserWarningDismissed && !g(t) && (0, c.O)({
       channelId: t,
       blockedUserIds: e,
       ignoredUserIds: r
@@ -44,41 +43,29 @@ function h(e) {
   }
 }
 
-function m(e) {
+function h(e) {
   let {
     state: t
   } = e
 }
 
-function g() {
-  var e;
-  return (null != (e = (0, l.km)()) ? e : 0) > Date.now() - p
+function m(e) {
+  return (0, l.Iu)(e) > Date.now() - f
 }
 
-function E(e) {
-  return !!g() || Array.from(e).every(e => b(e, !0))
+function g(e) {
+  return (0, l.Iu)(e) > Date.now() - _
 }
-
-function b(e) {
-  var t;
-  let n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-  return !!(!n && g()) || (null != (t = (0, l._$)(e)) ? t : 0) > Date.now() - _
-}
-
-function y(e) {
-  var t;
-  return (null != (t = (0, l.YF)(e)) ? t : 0) > Date.now() - f
-}
-class O extends r.Z {
+class E extends r.Z {
   handleBlockedOrIgnoredUserVoiceChannelJoin(e, t) {
     let n = a.Z.getChannelId();
-    e === n && null != i.Z.getChannel(e) && (b(t) || (0, u.H)(n, t))
+    e === n && null != i.Z.getChannel(e) && (m(e) || (0, u.H)(n, t))
   }
   constructor(...e) {
     super(...e), d(this, "actions", {
-      CHANNEL_SELECT: h,
-      APP_STATE_UPDATE: m
+      CHANNEL_SELECT: p,
+      APP_STATE_UPDATE: h
     })
   }
 }
-let v = new O
+let b = new E

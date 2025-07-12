@@ -29,9 +29,9 @@ function h(e) {
     onClose: x
   } = e, p = s.useRef(!1), O = (0, a.e7)([_.Z], () => _.Z.isBlocked(n)), L = (0, a.e7)([u.Z], () => u.Z.getChannel(t));
   if ((0, c.zq)(() => {
-      p.current || (0, A.nC)(n)
+      p.current || (0, A.g6)(t)
     }), null == d.default.getUser(n)) return null;
-  let C = [{
+  let j = [{
       icon: (0, I.r)([n], null == L ? void 0 : L.guild_id),
       text: (0, I.a)([n], 1, null == L ? void 0 : L.guild_id, t),
       className: S.row
@@ -43,17 +43,17 @@ function h(e) {
       text: N.intl.string(N.t["+4O9nZ"]),
       className: S.row
     }],
-    j = O ? (0, r.jsxs)(r.Fragment, {
+    C = O ? (0, r.jsxs)(r.Fragment, {
       children: [N.intl.string(N.t.cpgfFh), (0, r.jsx)("br", {}), N.intl.string(N.t.UKQ4Cg)]
     }) : (0, r.jsxs)(r.Fragment, {
       children: [N.intl.string(N.t["xj3j4+"]), (0, r.jsx)("br", {}), N.intl.string(N.t.wWueRU)]
     });
   return (0, r.jsx)(E.Z, {
     headerText: N.intl.string(N.t["1/gpFh"]),
-    descriptionText: j,
-    infoRows: C,
+    descriptionText: C,
+    infoRows: j,
     onDismissAndStay: () => {
-      p.current = !0, x(), (0, A.nC)(n), f.default.track(m.rMx.VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT, {
+      p.current = !0, x(), (0, A.g6)(t), f.default.track(m.rMx.VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT, {
         action: g.q.CLICK_TO_STAY,
         channel_id: t,
         blocked_user_ids: O ? [n] : [],

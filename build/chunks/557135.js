@@ -67,7 +67,7 @@ let v = {
       R = (null == C ? void 0 : C.channelId) === t.id || _.Z.getChannelId() === p.Z.getCurrentClientVoiceChannelId(t.guild_id),
       P = c.Z.getBlockedUsersForVoiceChannel(t.id),
       w = c.Z.getIgnoredUsersForVoiceChannel(t.id);
-    return ((0, l.Fd)(P.union(w)) && (S = !0), S || v || s || !(P.size > 0) && !(w.size > 0)) ? !T && !v && (0, m._)(t) ? new Promise(e => {
+    return ((0, l.B)(t.id) && (S = !0), S || v || s || !(P.size > 0) && !(w.size > 0)) ? !T && !v && (0, m._)(t) ? new Promise(e => {
       (0, i.ZDy)(async () => {
         let {
           default: i

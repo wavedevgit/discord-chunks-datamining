@@ -408,7 +408,7 @@ let i = {
   },
   SharedSpacesWarningManager: {
     actions: ["CHANNEL_SELECT", "APP_STATE_UPDATE"],
-    inlineRequire: () => n(414509).ZP,
+    inlineRequire: () => n(414509).Z,
     neverLoadBeforeConnectionOpen: !0
   },
   DispatcherSchedulerManager: {
