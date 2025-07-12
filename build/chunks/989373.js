@@ -52,8 +52,7 @@ let w = i.memo(function(e) {
   let {
     withTitleBar: t,
     windowKey: n
-  } = e;
-  return ! function(e, t) {
+  } = e, u = function(e, t) {
     let n = (0, o.e7)([d.Z], () => d.Z.getWindow(e)),
       r = i.useRef(null),
       u = i.useRef(null),
@@ -109,10 +108,12 @@ let w = i.memo(function(e) {
     }), (0, c.zq)(() => {
       null != s.current && s.current()
     }), S
-  }(n, S.$S) ? null : (0, r.jsx)(s.Z, {
+  }(n, S.$S), b = (0, v.getPID)(), h = (0, o.e7)([p.default], () => p.default.isInputLocked(b), [b]);
+  return u ? (0, r.jsx)(s.Z, {
     withTitleBar: t,
     windowKey: n,
     title: "Discord Overlay",
+    hideModals: h,
     children: (0, r.jsx)(g.Z, {})
-  })
+  }) : null
 })

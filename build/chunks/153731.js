@@ -6,8 +6,8 @@ var n = r(255367),
   a = r(73800),
   i = r(392711),
   l = r.n(i),
-  s = r(442837),
-  o = r(481060),
+  o = r(442837),
+  s = r(481060),
   c = r(304680),
   d = r(503089),
   u = r(493544),
@@ -34,8 +34,8 @@ let S = (e, t, r) => (0, n.jsx)(m.Z, {
     children: (0, n.jsx)(m.Z.Child, {
       children: (0, n.jsxs)(m.Z, {
         align: m.Z.Align.CENTER,
-        children: [(0, n.jsx)(o.qEK, {
-          size: o.EFr.SIZE_24,
+        children: [(0, n.jsx)(s.qEK, {
+          size: s.EFr.SIZE_24,
           src: e.getAvatarURL(r, 24),
           "aria-label": e.username,
           className: F.avatar
@@ -63,9 +63,9 @@ function k(e, t, r, n, a) {
   let i = [];
   if (null == t) return i;
   let {
-    transport: s,
+    transport: o,
     rtp: {
-      inbound: o,
+      inbound: s,
       outbound: d
     },
     camera: m
@@ -75,7 +75,7 @@ function k(e, t, r, n, a) {
       label: x.intl.formatToPlainString(x.t.PK5fOD, {
         context: e
       })
-    }), null != s && i.push({
+    }), null != o && i.push({
       section: (0, g.J$)(e, Z._s_.TRANSPORT, r),
       label: x.intl.string(x.t.wU9INz),
       element: R.Z,
@@ -100,15 +100,15 @@ function k(e, t, r, n, a) {
         index: r,
         camera: m
       }
-    }), null != o && !l().isEmpty(o)) {
+    }), null != s && !l().isEmpty(s)) {
     let t = [];
-    Object.keys(o).forEach(i => {
+    Object.keys(s).forEach(i => {
       let l = v.default.getUser(i),
-        s = y.ZP.getNick(a, i),
+        o = y.ZP.getNick(a, i),
         d = (0, g.J$)(e, i, r);
-      null != o[i] && o[i].length > 0 && t.push({
+      null != s[i] && s[i].length > 0 && t.push({
         section: d,
-        label: null != l ? S(l, s, a) : I(null != s ? s : i),
+        label: null != l ? S(l, o, a) : I(null != o ? o : i),
         ariaLabel: null != l ? l.tag : i,
         onClick: () => {
           c.zc(d)
@@ -133,19 +133,19 @@ function B() {
   let {
     defaultStats: r,
     streamStats: i
-  } = (0, s.e7)([g.ZP], () => ({
+  } = (0, o.e7)([g.ZP], () => ({
     defaultStats: g.ZP.getAllStats(N.Yn.DEFAULT),
     streamStats: g.ZP.getAllStats(N.Yn.STREAM)
-  }), [], s.pF), l = (0, s.e7)([f.Z, h.Z], () => h.Z.getChannel(f.Z.getChannelId())), m = null == (e = r.concat(i).find(e => null != e.screenshare)) ? void 0 : e.screenshare, y = null == (t = i.find(e => null != e.clips)) ? void 0 : t.clips, v = (0, s.e7)([p.Z], () => p.Z.theme), D = (0, s.e7)([p.Z], () => p.Z.darkSidebar ? Z.BRd.DARK : void 0), b = (0, s.e7)([g.ZP], () => g.ZP.getSection()), E = function(e) {
+  }), [], o.pF), l = (0, o.e7)([f.Z, h.Z], () => h.Z.getChannel(f.Z.getChannelId())), m = null == (e = r.concat(i).find(e => null != e.screenshare)) ? void 0 : e.screenshare, y = null == (t = i.find(e => null != e.clips)) ? void 0 : t.clips, v = (0, o.e7)([p.Z], () => p.Z.theme), D = (0, o.e7)([p.Z], () => p.Z.darkSidebar ? Z.BRd.DARK : void 0), b = (0, o.e7)([g.ZP], () => g.ZP.getSection()), E = function(e) {
     let {
       defaultStats: t,
       streamStats: r,
       videoStreams: a,
       screenshare: i,
       clips: l,
-      channel: s,
+      channel: o,
       connectionState: c
-    } = e, d = t.flatMap((e, t) => k(N.Yn.DEFAULT, e, t, a, null == s ? void 0 : s.getGuildId())), m = r.flatMap((e, t) => k(N.Yn.STREAM, e, t, a, null == s ? void 0 : s.getGuildId())), p = [], h = [], y = {
+    } = e, d = t.flatMap((e, t) => k(N.Yn.DEFAULT, e, t, a, null == o ? void 0 : o.getGuildId())), m = r.flatMap((e, t) => k(N.Yn.STREAM, e, t, a, null == o ? void 0 : o.getGuildId())), p = [], h = [], y = {
       section: u.ID.DIVIDER
     };
     return null != i && (p.push(y), p.push({
@@ -162,18 +162,18 @@ function B() {
       elementProps: {
         clips: l
       }
-    })), m.length > 0 && m.unshift(y), [...null != s ? [{
+    })), m.length > 0 && m.unshift(y), [...null != o ? [{
       section: u.ID.CUSTOM,
       label: "Channel Name",
-      element: () => (0, n.jsx)(o.X6q, {
+      element: () => (0, n.jsx)(s.X6q, {
         className: F.channelName,
         variant: "heading-lg/semibold",
-        children: s.name
+        children: o.name
       })
     }] : [], {
       section: u.ID.CUSTOM,
       label: "Connection State",
-      element: () => (0, n.jsx)(o.X6q, {
+      element: () => (0, n.jsx)(s.X6q, {
         className: F.channelName,
         variant: "heading-md/normal",
         children: c === Z.hes.RTC_CONNECTED ? "Connected" : "Disconnected"
@@ -182,11 +182,11 @@ function B() {
   }({
     defaultStats: r,
     streamStats: i,
-    videoStreams: (0, s.e7)([g.ZP], () => g.ZP.getVideoStreams()),
+    videoStreams: (0, o.e7)([g.ZP], () => g.ZP.getVideoStreams()),
     screenshare: m,
     clips: y,
     channel: l,
-    connectionState: (0, s.e7)([f.Z], () => f.Z.getState())
+    connectionState: (0, o.e7)([f.Z], () => f.Z.getState())
   });
   return a.useEffect(() => () => {
     c.xv()

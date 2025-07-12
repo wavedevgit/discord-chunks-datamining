@@ -1,14 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
-n.d(t, {
-  y: () => r
-}), n(73800);
-let r = (0, n(392711).throttle)(i, 300, {
-  leading: !0,
-  trailing: !0
-});
 
-function i(e) {
+function r(e) {
   var t, n, r;
   let {
     listRef: i,
@@ -38,3 +31,6 @@ function i(e) {
     areOnlyNitroLockedSectionsVisible: f && !_
   }
 }
+n.d(t, {
+  y: () => r
+}), n(73800)

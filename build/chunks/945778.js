@@ -1,6 +1,6 @@
 /** Chunk was on 80960 **/
 r.r(t), r.d(t, {
-  default: () => s
+  default: () => o
 });
 var n = r(255367);
 r(73800);
@@ -8,7 +8,7 @@ var a = r(238246),
   i = r(153731),
   l = r(388032);
 
-function s(e) {
+function o(e) {
   let {
     windowKey: t
   } = e;
