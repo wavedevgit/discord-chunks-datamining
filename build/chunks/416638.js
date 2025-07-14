@@ -1,9 +1,8 @@
 /** Chunk was on 61668 **/
 n.d(t, {
   Tm: () => l,
-  WJ: () => o,
-  jj: () => a,
-  s5: () => s
+  WJ: () => a,
+  s5: () => o
 }), n(539854), n(997841), n(913527);
 var r = n(592125);
 n(630388), n(862825);
@@ -23,11 +22,7 @@ function l(e) {
   }
 }
 
-function a(e, t, n) {
-  return "".concat(l(e), "-").concat(t, "-").concat(n)
-}
-
-function o(e) {
+function a(e) {
   switch (e.type) {
     case i.aib.GUILD:
     case i.aib.GUILD_CHANNEL:
@@ -41,7 +36,7 @@ function o(e) {
   }
 }
 
-function s(e) {
+function o(e) {
   switch (e.type) {
     case i.aib.GUILD_CHANNEL:
     case i.aib.GUILD:

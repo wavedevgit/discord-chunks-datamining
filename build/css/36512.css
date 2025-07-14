@@ -1,6 +1,6 @@
 /**
   Module ID: 36512
-  Original File Name: 2598bbf4fee2fbaf
+  Original File Name: 761d5bf76aacecf6
 **/
 .container_e512ac {
     background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
@@ -691,6 +691,7 @@
     cursor: pointer;
     font-size: 16px;
     height: 34px;
+    line-height: 1.25;
     margin: 0 10px;
     overflow: hidden;
     padding: 0 10px;
@@ -1432,4 +1433,4 @@
     margin-right: 8px
 }
 
-/*# sourceMappingURL=2598bbf4fee2fbaf.css.map*/
+/*# sourceMappingURL=761d5bf76aacecf6.css.map*/
