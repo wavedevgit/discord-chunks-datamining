@@ -1,4 +1,4 @@
-/** Chunk was on 74390 **/
+/** Chunk was on 96127 **/
 n.d(t, {
   Z: () => p
 });
@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(990547),
   o = n(91192),
-  a = n(481060),
-  s = n(724757),
+  s = n(481060),
+  a = n(724757),
   c = n(213609),
   u = n(441358),
   d = n(426521),
@@ -19,7 +19,7 @@ function p(e) {
     items: n,
     loading: p,
     loadMore: f
-  } = e, g = i.useRef(null), m = (0, s.Z)("for-you", g);
+  } = e, g = i.useRef(null), m = (0, a.Z)("for-you", g);
   (0, c.Z)({
     type: l.ImpressionTypes.VIEW,
     name: l.ImpressionNames.NOTIFICATION_CENTER_LANDING,
@@ -56,7 +56,7 @@ function p(e) {
             }
             return i
           }(e, ["ref"]);
-        return (0, r.jsxs)(a.Den, (t = function(e) {
+        return (0, r.jsxs)(s.Den, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -83,7 +83,7 @@ function p(e) {
           onScroll: b,
           children: [(0, r.jsx)(d.U, {
             items: n
-          }), p ? (0, r.jsx)(a.$jN, {
+          }), p ? (0, r.jsx)(s.$jN, {
             className: h.spinner
           }) : null]
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
@@ -98,7 +98,7 @@ function p(e) {
         }), t))
       }
     })
-  }) : (0, r.jsx)(a.$jN, {
+  }) : (0, r.jsx)(s.$jN, {
     className: h.loadingPlaceholder
   })
 }

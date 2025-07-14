@@ -1,4 +1,5 @@
-/** Chunk was on 74390 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   wrapper: "wrapper__00943",
   overlay: "overlay__00943",

@@ -1,12 +1,12 @@
-/** Chunk was on 82081 **/
-r.d(t, {
-  x: () => o
-}), r(388685);
-var n = r(73800),
-  a = r(960048);
-class o extends n.PureComponent {
+/** Chunk was on 96127 **/
+n.d(t, {
+  x: () => l
+}), n(388685);
+var r = n(73800),
+  i = n(960048);
+class l extends r.PureComponent {
   componentDidCatch(e, t) {
-    a.Z.captureException(e, {
+    i.Z.captureException(e, {
       tags: {
         app_context: "virtual_currency",
         source: this.props.errorSource
@@ -23,15 +23,15 @@ class o extends n.PureComponent {
     return null != this.state.error ? null != this.props.renderCustomErrorComponent ? this.props.renderCustomErrorComponent() : null : this.props.children
   }
   constructor(...e) {
-    var t, r;
-    super(...e), r = {
+    var t, n;
+    super(...e), n = {
       error: null,
       info: null
     }, (t = "state") in this ? Object.defineProperty(this, t, {
-      value: r,
+      value: n,
       enumerable: !0,
       configurable: !0,
       writable: !0
-    }) : this[t] = r
+    }) : this[t] = n
   }
 }

@@ -151,6 +151,12 @@ function $(e) {
       label: W.intl.string(W.t.YqAjX1),
       sound: "unmute"
     }, {
+      label: W.intl.string(W.t.JoTq8v),
+      sound: "camera_on"
+    }, {
+      label: W.intl.string(W.t["8P6tQ0"]),
+      sound: "camera_off"
+    }, {
       label: W.intl.string(W.t["juL9/P"]),
       sound: "disconnect"
     }, {

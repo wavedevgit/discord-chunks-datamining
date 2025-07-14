@@ -1,4 +1,4 @@
-/** Chunk was on 74390 **/
+/** Chunk was on 96127 **/
 n.d(t, {
   Z: () => b
 });
@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(442837),
   o = n(481060),
-  a = n(746916),
-  s = n(965638),
+  s = n(746916),
+  a = n(965638),
   c = n(905423),
   u = n(486472),
   d = n(888369),
@@ -21,7 +21,7 @@ let b = i.memo(function(e) {
   let {
     guildNode: b,
     lowerBadge: _
-  } = e, O = b.id, y = (0, l.e7)([h.Z], () => h.Z.getGuild(O)), v = (0, a.E)(y), C = (0, l.e7)([p.Z], () => p.Z.isFocused()), j = (0, l.e7)([u.Z], () => u.Z.isUnavailable(O)), E = (0, c.Z)(e => e.guildId), S = (0, f.Z)(O), {
+  } = e, O = b.id, y = (0, l.e7)([h.Z], () => h.Z.getGuild(O)), v = (0, s.E)(y), C = (0, l.e7)([p.Z], () => p.Z.isFocused()), j = (0, l.e7)([u.Z], () => u.Z.isUnavailable(O)), E = (0, c.Z)(e => e.guildId), S = (0, f.Z)(O), {
     badge: x,
     unread: I,
     isMentionLowImportance: P
@@ -29,7 +29,7 @@ let b = i.memo(function(e) {
     badge: d.default.getMentionCount(O),
     isMentionLowImportance: d.default.getIsMentionLowImportance(O),
     unread: d.default.hasUnread(O)
-  })), N = (0, s.Ij)(y) && 0 === x, w = i.useMemo(() => null != _ ? _ : N ? (0, r.jsx)("div", {
+  })), N = (0, a.Ij)(y) && 0 === x, w = i.useMemo(() => null != _ ? _ : N ? (0, r.jsx)("div", {
     className: m.pauseBackground,
     children: (0, r.jsx)(o.fpf, {
       size: "custom",

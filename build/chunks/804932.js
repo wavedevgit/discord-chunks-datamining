@@ -1,22 +1,22 @@
-/** Chunk was on 74390 **/
+/** Chunk was on 96127 **/
 n.d(t, {
   Qz: () => c,
   RZ: () => u,
-  s_: () => s,
+  s_: () => a,
   vU: () => d
 });
 var r, i = n(73800),
   l = n(493773),
   o = n(626135),
-  a = n(981631),
-  s = ((r = {}).CLICK = "click", r.CONTEXT_MENU = "context_menu", r.BOOKMARK = "bookmark", r.ACK = "ack", r.SETTINGS = "settings", r);
+  s = n(981631),
+  a = ((r = {}).CLICK = "click", r.CONTEXT_MENU = "context_menu", r.BOOKMARK = "bookmark", r.ACK = "ack", r.SETTINGS = "settings", r);
 
 function c(e) {
   let {
     message: t,
     interactionType: n
   } = e;
-  o.default.track(a.rMx.NOTIFICATIONS_INBOX_ITEM_INTERACTED, {
+  o.default.track(s.rMx.NOTIFICATIONS_INBOX_ITEM_INTERACTED, {
     interaction_type: n,
     message_id: t.id,
     channel_id: t.channel_id,
@@ -30,7 +30,7 @@ function u(e) {
     section: t,
     enabled: n
   } = e;
-  o.default.track(a.rMx.NOTIFICATIONS_INBOX_SECTION_INTERACTED, {
+  o.default.track(s.rMx.NOTIFICATIONS_INBOX_SECTION_INTERACTED, {
     section: t,
     enabled: n
   })
@@ -41,21 +41,21 @@ function d(e) {
     notificationCenterVariant: t,
     messages: n,
     unreadMessages: r
-  } = e, s = i.useRef(null), c = i.useRef(!1);
+  } = e, a = i.useRef(null), c = i.useRef(!1);
   (0, l.ZP)(() => {
     ! function(e) {
       let {
         variant: t
       } = e;
-      o.default.track(a.rMx.NOTIFICATIONS_INBOX_OPENED, {
+      o.default.track(s.rMx.NOTIFICATIONS_INBOX_OPENED, {
         inbox_variant: t
       })
     }({
       variant: t
-    }), s.current = Date.now()
+    }), a.current = Date.now()
   }), i.useEffect(() => {
-    if (null != s.current && null != n && null != r && !c.current) {
-      let e = Date.now() - s.current;
+    if (null != a.current && null != n && null != r && !c.current) {
+      let e = Date.now() - a.current;
       c.current = !0,
         function(e) {
           let {
@@ -63,7 +63,7 @@ function d(e) {
             unreadsCount: n,
             totalMessagesCount: r
           } = e;
-          o.default.track(a.rMx.NOTIFICATIONS_INBOX_LOADED, {
+          o.default.track(s.rMx.NOTIFICATIONS_INBOX_LOADED, {
             time_to_load: t,
             unreads_count: n,
             total_messages_count: r
@@ -81,7 +81,7 @@ function d(e) {
         unreadsCount: t,
         totalMessagesCount: n
       } = e;
-      o.default.track(a.rMx.NOTIFICATIONS_INBOX_UNMOUNTED, {
+      o.default.track(s.rMx.NOTIFICATIONS_INBOX_UNMOUNTED, {
         unreads_count: t,
         total_messages_count: n
       })

@@ -1,12 +1,12 @@
-/** Chunk was on 74390 **/
+/** Chunk was on 96127 **/
 n.d(t, {
-  x: () => a
+  x: () => s
 });
 var r = n(512722),
   i = n.n(r),
   l = n(442837),
   o = n(594174);
-let a = () => {
+let s = () => {
   let e = (0, l.e7)([o.default], () => o.default.getCurrentUser());
   return i()(null != e, "user has to be signed in before accessing shop"), e
 }

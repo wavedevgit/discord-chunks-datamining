@@ -1,4 +1,4 @@
-/** Chunk was on 74390 **/
+/** Chunk was on 96127 **/
 n.d(t, {
   Z: () => j
 }), n(388685);
@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(120356),
   o = n.n(l),
-  a = n(442837),
-  s = n(481060),
+  s = n(442837),
+  a = n(481060),
   c = n(100527),
   u = n(434479),
   d = n(819640),
@@ -74,7 +74,7 @@ let C = {
         default:
           return (0, r.jsx)("div", {})
       }
-    }, [t, null == j ? void 0 : j.popout]), x = (0, s.s9z)(s.JQI), I = (0, a.e7)([d.Z], () => d.Z.hasLayers()), [P, N] = i.useState(null), w = null == P ? "animation" : "LOOP";
+    }, [t, null == j ? void 0 : j.popout]), x = (0, a.s9z)(a.JQI), I = (0, s.e7)([d.Z], () => d.Z.hasLayers()), [P, N] = i.useState(null), w = null == P ? "animation" : "LOOP";
     i.useEffect(() => {
       (null == j ? void 0 : j.popout) == null && N(null)
     }, [null == j ? void 0 : j.popout]);
@@ -82,7 +82,7 @@ let C = {
         N(e)
       }, []),
       T = i.useRef(null);
-    return (0, r.jsx)(s.yRy, {
+    return (0, r.jsx)(a.yRy, {
       targetElementRef: T,
       shouldShow: (null == j ? void 0 : j.popout) != null && !(x || I),
       nudgeAlignIntoViewport: !0,
@@ -90,19 +90,19 @@ let C = {
       position: "right",
       renderPopout: S,
       children: e => {
-        var i, a;
-        return (0, r.jsx)(u.m, (i = v({}, e), a = a = {
+        var i, s;
+        return (0, r.jsx)(u.m, (i = v({}, e), s = s = {
           ref: T,
           className: y.container,
           id: "skill-trees-".concat(t),
-          renderIcon: e => (0, r.jsx)(s.$Eu, {
+          renderIcon: e => (0, r.jsx)(a.$Eu, {
             size: "md",
             className: e,
             color: "currentColor"
           }),
           background: (null == j ? void 0 : j.popout) != null && (0, r.jsx)("div", {
             className: y.lottieContainer,
-            children: (0, r.jsx)(s.kci, {
+            children: (0, r.jsx)(a.kci, {
               nextScene: w,
               className: y.lottie,
               sceneSegments: C,
@@ -123,15 +123,15 @@ let C = {
           onClick: E,
           showUnread: (null == j ? void 0 : j.showUnread) === !0,
           trailing: null == j ? void 0 : j.trailing
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
             n.push.apply(n, r)
           }
           return n
-        })(Object(a)).forEach(function(e) {
-          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
+        })(Object(s)).forEach(function(e) {
+          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(s, e))
         }), i))
       }
     })

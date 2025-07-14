@@ -1,4 +1,4 @@
-/** Chunk was on 74390 **/
+/** Chunk was on 96127 **/
 n.d(t, {
   Z: () => g
 });
@@ -7,8 +7,8 @@ n(73800);
 var i = n(780384),
   l = n(481060),
   o = n(410030),
-  a = n(44315),
-  s = n(889901),
+  s = n(44315),
+  a = n(889901),
   c = n(955204),
   u = n(231338),
   d = n(835115);
@@ -84,7 +84,7 @@ function g(e) {
       className: d.trophyIconContainer,
       children: (0, r.jsx)(l.rm8, {
         size: "custom",
-        color: u ? v : (0, a.Lq)(C.trophy),
+        color: u ? v : (0, s.Lq)(C.trophy),
         width: j,
         height: j
       })
@@ -93,12 +93,12 @@ function g(e) {
       style: x,
       children: (0, r.jsx)(l.mBM, h({
         size: "custom",
-        color: (0, a.Lq)(C.locked)
+        color: (0, s.Lq)(C.locked)
       }, S))
     }), u && y === c.EP.LEGENDARY && (0, r.jsx)("div", {
       className: d.lockContainer,
       style: x,
-      children: (0, r.jsx)(s.Z, h({
+      children: (0, r.jsx)(a.Z, h({
         className: d.confettiIcon
       }, S))
     })]

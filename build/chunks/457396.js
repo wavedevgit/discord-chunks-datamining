@@ -71,8 +71,8 @@ let V = e => {
         return i
       }(e, ["selected", "route", "locationState"]);
     let q = (0, a.e7)([g.default], () => g.default.getCurrentUser()),
-      X = (0, a.e7)([b.Z], () => b.Z.getPremiumTypeSubscription()),
-      Q = (0, E.Qo)(q, X),
+      Q = (0, a.e7)([b.Z], () => b.Z.getPremiumTypeSubscription()),
+      X = (0, E.Qo)(q, Q),
       {
         enabled: J,
         variant: $
@@ -162,7 +162,7 @@ let V = e => {
       isTabSelected: z
     }), O = 4);
     let eO = G.intl.string(G.t.Ipxkoq);
-    Q && ee && (eO = G.intl.string(G.t["4gwVVl"])), !Q && J && ($ === v.Rx.TRY_NITRO && null != en ? eO = G.intl.string(G.t["3O6A4e"]) : $ === v.Rx.JOIN_NITRO ? eO = G.intl.string(G.t.brBiOz) : $ === v.Rx.GET_NITRO && (eO = G.intl.string(G.t.GayC1t)));
+    X && ee && (eO = G.intl.string(G.t["4gwVVl"])), !X && J && ($ === v.Rx.TRY_NITRO && null != en ? eO = G.intl.string(G.t["3O6A4e"]) : $ === v.Rx.JOIN_NITRO ? eO = G.intl.string(G.t.brBiOz) : $ === v.Rx.GET_NITRO && (eO = G.intl.string(G.t.GayC1t)));
     let ey = (0, r.jsx)(c.Qj, (H = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -189,7 +189,7 @@ let V = e => {
       onClick: () => {
         eh === o.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL && ef(U.L.TAKE_ACTION), _.default.track(M.rMx.NITRO_TAB_VISITED, {
           badge_decorator: O,
-          has_premium: Q
+          has_premium: X
         }), null != e_ && eE(U.L.USER_DISMISS)
       }
     }, K, et), F = F = {

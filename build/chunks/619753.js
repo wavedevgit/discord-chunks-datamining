@@ -68,8 +68,7 @@ function G(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-
-function k(e) {
+let k = l.memo(function(e) {
   var t;
   let {
     search: n,
@@ -191,7 +190,7 @@ function k(e) {
       pageSize: j.vpv
     })]
   })
-}
+});
 
 function F(e) {
   let {

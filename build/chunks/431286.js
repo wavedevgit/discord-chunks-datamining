@@ -1,4 +1,4 @@
-/** Chunk was on 74390 **/
+/** Chunk was on 96127 **/
 n.d(t, {
   t: () => S
 }), n(388685);
@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(636977),
   o = n(442837),
-  a = n(704215),
-  s = n(952265),
+  s = n(704215),
+  a = n(952265),
   c = n(481060),
   u = n(570140),
   d = n(266454),
@@ -38,13 +38,13 @@ function S() {
     enabled: S
   } = (0, _.hl)({
     location: "virtual_currency_announcement_modal"
-  }), [x, I] = (0, h.US)(S ? [a.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL] : [], ...y.b.useSelectedDismissibleContent), P = (0, c.s9z)(c.JQI);
+  }), [x, I] = (0, h.US)(S ? [s.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL] : [], ...y.b.useSelectedDismissibleContent), P = (0, c.s9z)(c.JQI);
   i.useEffect(() => {
-    if (x !== a.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL) return;
+    if (x !== s.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL) return;
     let i = g.default.getCurrentUser();
     !(!S || t || (0, m.EO)(i)) && (e || P || (u.Z.dispatch({
       type: "VIRTUAL_CURRENCY_ONBOARDING_MODAL_OPEN"
-    }), (0, s.ZD)(async () => {
+    }), (0, a.ZD)(async () => {
       let {
         WrappedAnnouncementModal: e
       } = await n.e("86653").then(n.bind(n, 993318));
@@ -59,10 +59,10 @@ function S() {
           transitionState: i,
           onClose: o,
           ctaOnClick: () => {
-            I(C.L.TAKE_ACTION), (0, d.Q3)(a.z.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK, {
+            I(C.L.TAKE_ACTION), (0, d.Q3)(s.z.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK, {
               dismissAction: C.L.INDIRECT_ACTION,
               groupName: C.R.VIRTUAL_CURRENCY_ONBOARDING
-            }), (0, d.Q3)(a.z.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK, {
+            }), (0, d.Q3)(s.z.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK, {
               dismissAction: C.L.INDIRECT_ACTION,
               groupName: C.R.VIRTUAL_CURRENCY_ONBOARDING
             }), (0, b.Y)({

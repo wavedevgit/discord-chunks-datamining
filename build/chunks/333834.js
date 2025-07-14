@@ -1,4 +1,4 @@
-/** Chunk was on 74390 **/
+/** Chunk was on 96127 **/
 n.d(t, {
   Z: () => R
 }), n(539854), n(583741), n(388685), n(642613);
@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(120356),
   o = n.n(l),
-  a = n(392711),
-  s = n.n(a),
+  s = n(392711),
+  a = n.n(s),
   c = n(114858),
   u = n(91192),
   d = n(442837),
@@ -53,7 +53,7 @@ function Z(e) {
         variant: "text-sm/medium",
         color: "text-secondary",
         className: N.messagesGroupHeader,
-        children: (0, a.capitalize)(P.intl.string(S.Vv[t]).toLowerCase())
+        children: (0, s.capitalize)(P.intl.string(S.Vv[t]).toLowerCase())
       }), (0, r.jsx)(p.CJ0, {
         size: "xxs",
         className: N.chevron
@@ -105,7 +105,7 @@ function R(e) {
     messages: t,
     unreadMessages: n,
     loadMore: l,
-    renderLoadingState: a,
+    renderLoadingState: s,
     renderMessageGroup: h,
     scrollerClassName: g,
     className: m,
@@ -189,12 +189,12 @@ function R(e) {
           [S.KZ.YESTERDAY]: {},
           [S.KZ.OLDER]: {}
         };
-      return (t.length > 0 || n.length > 0) && (s().each(n, e => {
+      return (t.length > 0 || n.length > 0) && (a().each(n, e => {
         e.kind === S.fL.MENTION ? r[S.KZ.UNREAD].push(e) : e.channelId in i[S.KZ.UNREAD] ? i[S.KZ.UNREAD][e.channelId].push(e) : i[S.KZ.UNREAD][e.channelId] = [e]
-      }), s().each(t, e => {
+      }), a().each(t, e => {
         let t = (0, j.bl)(e);
         e.kind === S.fL.MENTION ? r[t].push(e) : e.channelId in i[t] ? i[t][e.channelId].push(e) : i[t][e.channelId] = [e]
-      }), s().each(T, t => {
+      }), a().each(T, t => {
         [...Object.values(i[t]).map(e => e.reverse()), ...r[t].map(e => [e])].sort((e, t) => _.default.compare(t[0].id, e[0].id)).forEach(n => {
           e[t].push(n)
         })
@@ -205,7 +205,7 @@ function R(e) {
     q = M && Y,
     X = i.useMemo(() => {
       let e = [];
-      return q ? e.push(a()) : K ? e.push((0, r.jsx)(A, {}, "empty-state")) : P ? (e.push(...n.map(e => h([e], L === O.jP.SIDEBAR, !0))), e.push(...t.map(e => h([e], L === O.jP.SIDEBAR, !1)))) : s().each(T, t => {
+      return q ? e.push(s()) : K ? e.push((0, r.jsx)(A, {}, "empty-state")) : P ? (e.push(...n.map(e => h([e], L === O.jP.SIDEBAR, !0))), e.push(...t.map(e => h([e], L === O.jP.SIDEBAR, !1)))) : a().each(T, t => {
         0 !== W[t].length && (e.push((0, r.jsx)(Z, {
           group: t,
           isOpen: B[t],
@@ -218,13 +218,13 @@ function R(e) {
           }
         }, t)), B[t] && e.push(...W[t].map(e => h(e, L === O.jP.SIDEBAR, t === S.KZ.UNREAD))))
       }), e
-    }, [t, n, a, B, V, W, P, h, L, K, q]);
+    }, [t, n, s, B, V, W, P, h, L, K, q]);
   i.useEffect(() => {
     var e, t, n, r, i, l, o;
     if (q) return;
-    let a = 0 === W.UNREAD.length,
-      s = null != (o = null != (l = null != (i = null == (t = (e = W).TODAY[0]) ? void 0 : t[0]) ? i : null == (n = e.YESTERDAY[0]) ? void 0 : n[0]) ? l : null == (r = e.OLDER[0]) ? void 0 : r[0]) ? o : null;
-    E.Z.setInboxReadState(a, (null == s ? void 0 : s.id) != null ? _.default.extractTimestamp(null == s ? void 0 : s.id) : null)
+    let s = 0 === W.UNREAD.length,
+      a = null != (o = null != (l = null != (i = null == (t = (e = W).TODAY[0]) ? void 0 : t[0]) ? i : null == (n = e.YESTERDAY[0]) ? void 0 : n[0]) ? l : null == (r = e.OLDER[0]) ? void 0 : r[0]) ? o : null;
+    E.Z.setInboxReadState(s, (null == a ? void 0 : a.id) != null ? _.default.extractTimestamp(null == a ? void 0 : a.id) : null)
   }, [W, q]);
   let Q = (t.length > 0 || n.length > 0) && null != l && M,
     J = (0, r.jsx)("div", {

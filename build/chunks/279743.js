@@ -1,4 +1,4 @@
-/** Chunk was on 74390 **/
+/** Chunk was on 96127 **/
 n.d(t, {
   Z: () => g
 }), n(388685);
@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(120356),
   o = n.n(l),
-  a = n(264738),
-  s = n(748780),
+  s = n(264738),
+  a = n(748780),
   c = n(481060),
   u = n(442837),
   d = n(607070),
@@ -55,7 +55,7 @@ function f(e) {
       animationDelay: l
     } = v.current, {
       useReducedMotion: o
-    } = d.Z, a = 200 * !o;
+    } = d.Z, s = 200 * !o;
     O({
       reset: !0,
       immediate: !1,
@@ -64,8 +64,8 @@ function f(e) {
         borderColor: e
       },
       config: {
-        duration: a,
-        easing: s.Z.Easing.ease
+        duration: s,
+        easing: a.Z.Easing.ease
       }
     }), O({
       delay: l,
@@ -75,8 +75,8 @@ function f(e) {
         borderColor: r
       }],
       config: {
-        duration: a,
-        easing: s.Z.Easing.ease
+        duration: s,
+        easing: a.Z.Easing.ease
       }
     }), O({
       delay: l + 200 + 200,
@@ -86,12 +86,12 @@ function f(e) {
         borderColor: n
       }],
       config: {
-        duration: a,
-        easing: s.Z.Easing.ease
+        duration: s,
+        easing: a.Z.Easing.ease
       },
       onRest: t
     })
-  }, [O]), (0, r.jsx)(a.animated.div, {
+  }, [O]), (0, r.jsx)(s.animated.div, {
     style: _,
     className: o()(p.settingsItemHighlight, n),
     children: t
@@ -103,12 +103,12 @@ function g(e) {
     children: t,
     scrollPosition: n,
     animationDelay: l
-  } = e, o = (0, u.e7)([h.Z], () => h.Z.getScrollPosition() === n), [a, s] = i.useState(!1);
+  } = e, o = (0, u.e7)([h.Z], () => h.Z.getScrollPosition() === n), [s, a] = i.useState(!1);
   return (i.useEffect(() => {
-    o && s(!0)
-  }, [o]), a) ? (0, r.jsx)(f, {
+    o && a(!0)
+  }, [o]), s) ? (0, r.jsx)(f, {
     animationDelay: l,
-    onFlashEnd: () => s(!1),
+    onFlashEnd: () => a(!1),
     children: t
   }) : t
 }

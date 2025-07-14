@@ -1,4 +1,4 @@
-/** Chunk was on 74390 **/
+/** Chunk was on 96127 **/
 n.d(t, {
   Z: () => _
 }), n(539854), n(388685);
@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(442837),
   o = n(239091),
-  a = n(749210),
-  s = n(905423),
+  s = n(749210),
+  a = n(905423),
   c = n(664915),
   u = n(888369),
   d = n(430824),
@@ -70,7 +70,7 @@ let _ = i.memo(function(e) {
     name: y,
     color: v,
     children: C
-  } = t, j = C.map(e => e.id), E = (0, s.Z)(e => e.guildId), S = (0, l.e7)([c.Z], () => c.Z.isFolderExpanded(O)), x = function(e) {
+  } = t, j = C.map(e => e.id), E = (0, a.Z)(e => e.guildId), S = (0, l.e7)([c.Z], () => c.Z.isFolderExpanded(O)), x = function(e) {
     let t = e.children.map(e => {
         let t = e.id,
           n = d.Z.getGuild(t);
@@ -89,7 +89,7 @@ let _ = i.memo(function(e) {
     isMentionLowImportance: j.every(e => u.default.getIsMentionLowImportance(e)),
     unread: j.some(e => u.default.hasUnread(e))
   })), Z = i.useCallback(() => {
-    a.Z.toggleGuildFolderExpand(O)
+    s.Z.toggleGuildFolderExpand(O)
   }, [O]), T = i.useCallback(e => {
     (0, o.jW)(e, async () => {
       let {

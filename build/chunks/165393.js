@@ -1,4 +1,4 @@
-/** Chunk was on 74390 **/
+/** Chunk was on 96127 **/
 n.d(t, {
   Z: () => p
 }), n(388685);
@@ -6,14 +6,14 @@ var r = n(255367),
   i = n(73800),
   l = n(120356),
   o = n.n(l),
-  a = n(866442),
-  s = n(481060),
+  s = n(866442),
+  a = n(481060),
   c = n(686546),
   u = n(629998);
 let d = [1752220, 3066993, 3447003, 0x9b59b6, 0xe91e63, 0xf1c40f];
 
 function h(e) {
-  return (0, a.Rf)(d[function(e) {
+  return (0, s.Rf)(d[function(e) {
     let t = 5381,
       n = 0;
     for (; n < e.length;) t = 33 * t ^ e.charCodeAt(n++);
@@ -26,7 +26,7 @@ function p(e) {
   let {
     title: n,
     className: l,
-    icon: a
+    icon: s
   } = e, [d, p] = i.useState(h(n));
   return i.useEffect(() => {
     p(h(n))
@@ -36,7 +36,7 @@ function p(e) {
       mask: c.ZP.Masks.STATUS_SCREENSHARE,
       width: 32,
       height: 32,
-      children: null == a || 0 === a.length ? (0, r.jsx)("div", {
+      children: null == s || 0 === s.length ? (0, r.jsx)("div", {
         className: u.icon,
         style: {
           backgroundColor: d
@@ -44,10 +44,10 @@ function p(e) {
         children: null != (t = n[0]) ? t : "?"
       }) : (0, r.jsx)("img", {
         alt: "",
-        src: a,
+        src: s,
         className: u.icon
       })
-    }), (0, r.jsx)(s.Odl, {
+    }), (0, r.jsx)(a.Odl, {
       size: "md",
       color: "currentColor",
       className: u.badge

@@ -1,4 +1,4 @@
-/** Chunk was on 74390 **/
+/** Chunk was on 96127 **/
 n.d(t, {
   Z: () => d
 }), n(361932), n(187205), n(539854);
@@ -7,8 +7,8 @@ n(73800);
 var i = n(392711),
   l = n.n(i),
   o = n(661824),
-  a = n(289481),
-  s = n(809780),
+  s = n(289481),
+  a = n(809780),
   c = n(388032),
   u = n(739910);
 
@@ -24,15 +24,15 @@ function d(e, t, n) {
     let t = e.sortOrder !== g;
     g = e.sortOrder;
     let l = [];
-    return t && (e.hasLoadedAnything && e.sortOrder === s.As.ReallyOldChannel ? l.push((0, r.jsx)(o.Z, {
+    return t && (e.hasLoadedAnything && e.sortOrder === a.As.ReallyOldChannel ? l.push((0, r.jsx)(o.Z, {
       className: u.divider,
       contentClassName: u.dividerContent,
       children: c.intl.string(c.t.roBMzs)
-    }, "old-divider")) : e.hasLoadedAnything && e.sortOrder === s.As.NoNotifications && l.push((0, r.jsx)(o.Z, {
+    }, "old-divider")) : e.hasLoadedAnything && e.sortOrder === a.As.NoNotifications && l.push((0, r.jsx)(o.Z, {
       className: u.divider,
       contentClassName: u.dividerContent,
       children: c.intl.string(c.t["2Ys7np"])
-    }, "disabled-divider"))), l.push((0, r.jsx)(a.Z, {
+    }, "disabled-divider"))), l.push((0, r.jsx)(s.Z, {
       channel: e,
       markChannelRead: i,
       markGuildRead: d,

@@ -1,4 +1,4 @@
-/** Chunk was on 74390 **/
+/** Chunk was on 96127 **/
 n.d(t, {
   Z: () => j
 });
@@ -7,8 +7,8 @@ n(73800);
 var i = n(120356),
   l = n.n(i),
   o = n(442837),
-  a = n(755721),
-  s = n(481060),
+  s = n(755721),
+  a = n(481060),
   c = n(717881),
   u = n(503438),
   d = n(850827),
@@ -28,12 +28,12 @@ function v(e) {
     member: n,
     className: i
   } = e, o = null != n.member ? (0, b.CA)(n.member) : null;
-  return (0, r.jsx)(s.ua7, {
+  return (0, r.jsx)(a.ua7, {
     text: n.nick,
     position: "bottom",
     children: e => {
-      var a;
-      return (0, r.jsx)(s.qEK, function(e) {
+      var s;
+      return (0, r.jsx)(a.qEK, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -52,9 +52,9 @@ function v(e) {
         return e
       }({
         src: null != o ? o : n.user.getAvatarURL(t, 16),
-        size: s.EFr.SIZE_16,
+        size: a.EFr.SIZE_16,
         className: l()(i, y.partyAvatar),
-        "aria-label": null != (a = n.nick) ? a : _.ZP.getName(n.user)
+        "aria-label": null != (s = n.nick) ? s : _.ZP.getName(n.user)
       }, e))
     }
   })
@@ -87,7 +87,7 @@ let j = e => {
     presenceActivity: n,
     members: i,
     embeddedApp: l,
-    onAction: s
+    onAction: a
   } = e, p = null != l, b = p ? Array.from(l.embeddedActivity.userIds) : [], _ = (0, o.e7)([m.default, g.default], () => {
     if (p) return m.default.getUser(b[0]);
     if (null != i) {
@@ -131,9 +131,9 @@ let j = e => {
         user: _,
         guildId: t.getGuildId(),
         channelId: t.id,
-        color: a.zx.Colors.PRIMARY,
-        look: a.zx.Looks.FILLED,
-        onAction: s
+        color: s.zx.Colors.PRIMARY,
+        look: s.zx.Looks.FILLED,
+        onAction: a
       })
     })]
   })

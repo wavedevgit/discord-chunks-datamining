@@ -1,4 +1,4 @@
-/** Chunk was on 74390 **/
+/** Chunk was on 96127 **/
 n.d(t, {
   Z: () => E
 });
@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(442837),
   o = n(481060),
-  a = n(239091),
-  s = n(906732),
+  s = n(239091),
+  a = n(906732),
   c = n(560067),
   u = n(451603),
   d = n(885714),
@@ -35,7 +35,7 @@ let C = {
 };
 
 function j(e) {
-  (0, a.jW)(e, async () => {
+  (0, s.jW)(e, async () => {
     let {
       default: e
     } = await n.e("9606").then(n.bind(n, 987578));
@@ -64,9 +64,9 @@ function E(e) {
   let {
     disableTooltip: t,
     lastTargetNode: n
-  } = e, a = (0, l.Wu)([f.Z], () => f.Z.getGuildsArray()), E = (0, l.e7)([g.default], () => g.default.getCurrentUser()), S = i.useMemo(() => a.some(e => (0, p.eM)(e, E)), [a, E]), x = (0, o.s9z)(e => (0, o.DEQ)(e, O.PU)), {
+  } = e, s = (0, l.Wu)([f.Z], () => f.Z.getGuildsArray()), E = (0, l.e7)([g.default], () => g.default.getCurrentUser()), S = i.useMemo(() => s.some(e => (0, p.eM)(e, E)), [s, E]), x = (0, o.s9z)(e => (0, o.DEQ)(e, O.PU)), {
     analyticsLocations: I
-  } = (0, s.ZP)(), P = (0, r.jsx)(b.Z, {
+  } = (0, a.ZP)(), P = (0, r.jsx)(b.Z, {
     showPill: !1,
     id: "create-join-button",
     onClick: () => {

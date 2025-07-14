@@ -1,4 +1,4 @@
-/** Chunk was on 74390 **/
+/** Chunk was on 96127 **/
 n.d(t, {
   Z: () => T
 });
@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(120356),
   o = n.n(l),
-  a = n(91192),
-  s = n(442837),
+  s = n(91192),
+  a = n(442837),
   c = n(481060),
   u = n(493683),
   d = n(239091),
@@ -74,9 +74,9 @@ function Z(e) {
     }),
     style: t
   }, {
-    density: a
+    density: s
   } = (0, c.TCT)();
-  switch (a) {
+  switch (s) {
     case "cozy":
       return (0, r.jsxs)("svg", w(N({}, l), {
         width: "10",
@@ -131,15 +131,15 @@ let T = i.memo(function(e) {
     isSelectedVoice: P,
     isLast: T,
     withGuildIcon: A
-  } = e, R = (0, s.e7)([_.ZP], () => _.ZP.getVoiceStatesForChannel(t), [t]), D = (0, s.e7)([b.Z], () => b.Z.hasVideo(t.id)), {
+  } = e, R = (0, a.e7)([_.ZP], () => _.ZP.getVoiceStatesForChannel(t), [t]), D = (0, a.e7)([b.Z], () => b.Z.hasVideo(t.id)), {
     unread: L,
     mentionCount: M,
     isMentionLowImportance: k
-  } = (0, s.cj)([m.ZP], () => ({
+  } = (0, a.cj)([m.ZP], () => ({
     unread: m.ZP.hasUnread(t.id),
     mentionCount: m.ZP.getMentionCount(t.id),
     isMentionLowImportance: m.ZP.getIsMentionLowImportance(t.id)
-  })), U = (0, s.e7)([p.Z], () => p.Z.isMuted(t.id)), G = i.useCallback(e => {
+  })), U = (0, a.e7)([p.Z], () => p.Z.isMuted(t.id)), G = i.useCallback(e => {
     (0, f.ok)(t, !e.shiftKey, E.on.CHANNEL_LIST)
   }, [t]), B = i.useCallback(() => {
     u.Z.preload(t.guild_id, t.id)
@@ -153,7 +153,7 @@ let T = i.memo(function(e) {
         channel: i
       }))
     })
-  }, [t.id]), F = null == R ? 0 : R.length, H = (0, a.JA)(t.id), {
+  }, [t.id]), F = null == R ? 0 : R.length, H = (0, s.JA)(t.id), {
     role: z
   } = H, W = function(e, t) {
     if (null == e) return {};

@@ -1,4 +1,4 @@
-/** Chunk was on 74390 **/
+/** Chunk was on 96127 **/
 n.d(t, {
   Z: () => _
 }), n(539854);
@@ -6,8 +6,8 @@ var r = n(399606),
   i = n(897345),
   l = n(697379),
   o = n(241559),
-  a = n(563534),
-  s = n(655359),
+  s = n(563534),
+  a = n(655359),
   c = n(931261),
   u = n(460347),
   d = n(994592),
@@ -24,9 +24,9 @@ function _(e) {
     _ = (0, d.j0)(e.id),
     O = (0, i.u)(e),
     y = (0, c.g)(e.id),
-    v = (0, r.e7)([a.Z], () => a.Z.getNewMemberActions(e.id), [e.id]),
+    v = (0, r.e7)([s.Z], () => s.Z.getNewMemberActions(e.id), [e.id]),
     C = (0, u.Z)(e.id),
-    j = (0, s.PE)(e.id),
+    j = (0, a.PE)(e.id),
     E = (0, o.n2)(e.id),
     S = [],
     x = e.features.has(b.oNc.HUB),

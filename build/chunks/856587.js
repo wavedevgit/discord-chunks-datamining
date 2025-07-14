@@ -1,4 +1,4 @@
-/** Chunk was on 74390 **/
+/** Chunk was on 96127 **/
 e.exports = {
   clipsEducationHeader: "clipsEducationHeader__384ad",
   clipsEducationArt: "clipsEducationArt__384ad",

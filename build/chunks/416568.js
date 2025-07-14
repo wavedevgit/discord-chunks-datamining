@@ -1,4 +1,4 @@
-/** Chunk was on 74390 **/
+/** Chunk was on 96127 **/
 n.d(t, {
   Z: () => ep
 }), n(388685);
@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(120356),
   o = n.n(l),
-  a = n(392711),
-  s = n.n(a),
+  s = n(392711),
+  a = n.n(s),
   c = n(114858),
   u = n(91192),
   d = n(374470),
@@ -107,9 +107,9 @@ function eo(e, t) {
   }
   return i
 }
-let ea = (0, M.isWindows)() ? 4 : 12 * !(0, M.isMac)();
+let es = (0, M.isWindows)() ? 4 : 12 * !(0, M.isMac)();
 
-function es(e) {
+function ea(e) {
   return e.startsWith(ee.Z5c.GUILD_DISCOVERY) || e.startsWith(ee.Z5c.GLOBAL_DISCOVERY)
 }
 class ec {
@@ -126,7 +126,7 @@ class ec {
       null == (e = this.observer) || e.disconnect(), this.observer = void 0
     }, this.scrollToGuild = (e, t) => {
       let n = this.scrollerRef.current;
-      if (null == n || null == e && es(window.location.pathname) || e === ee.x8Z.SERVER_DISCOVERY_BADGE || e === ee.x8Z.E3_SERVER_DISCOVERY_BADGE) return;
+      if (null == n || null == e && ea(window.location.pathname) || e === ee.x8Z.SERVER_DISCOVERY_BADGE || e === ee.x8Z.E3_SERVER_DISCOVERY_BADGE) return;
       if (null == e) return void n.scrollTo({
         to: 0,
         animate: t
@@ -160,22 +160,22 @@ class ec {
         heightBeforeIcons: l
       } = this.sizes, o = this.scrollerRef.current;
       if (null == o) return !1;
-      let a = n.findIndex(t => "string" == typeof t || null == t ? t === e : t.includes(e));
-      if (a < 0) return !1;
-      let s = r * a + l;
-      t || (s += i);
+      let s = n.findIndex(t => "string" == typeof t || null == t ? t === e : t.includes(e));
+      if (s < 0) return !1;
+      let a = r * s + l;
+      t || (a += i);
       let c = o.getScrollerState();
-      return !t && !!(s >= c.scrollTop) || !!t && !!(s + r <= c.scrollTop + c.offsetHeight)
+      return !t && !!(a >= c.scrollTop) || !!t && !!(a + r <= c.scrollTop + c.offsetHeight)
     }, this.handleScroll = () => {
       this.setScrolling(!0), this.timeout.start(200, () => this.setScrolling(!1)), this._handleScrollDebounced(), this._handleScrollThrottled()
-    }, this._handleScrollDebounced = s().debounce(() => {
+    }, this._handleScrollDebounced = a().debounce(() => {
       let e = this.scrollerRef.current;
       if (null == e) return;
       let {
         scrollTop: t
       } = e.getScrollerState();
       b.Z.updateGuildListScrollTo(t), this.onScroll()
-    }, 200), this._handleScrollThrottled = s().throttle(() => {
+    }, 200), this._handleScrollThrottled = a().throttle(() => {
       let e = this.scrollerRef.current;
       null != e && this.setIsScrolledToBottom(e.isScrolledToBottom())
     }, 100), this.setNodeRef = (e, t) => {
@@ -191,14 +191,14 @@ function eu(e) {
     lurkingGuildIds: i
   } = e, l = (0, j.Z)(), {
     pathname: o
-  } = (0, c.TH)(), a = o.startsWith(ee.Z5c.GUILD_MEMBER_VERIFICATION_FOR_HUB("")), s = (0, h.Wu)([D.Z, R.ZP], () => D.Z.getGuildIds().filter(e => R.ZP.isCurrentUserGuest(e))), u = i.concat(s), {
+  } = (0, c.TH)(), s = o.startsWith(ee.Z5c.GUILD_MEMBER_VERIFICATION_FOR_HUB("")), a = (0, h.Wu)([D.Z, R.ZP], () => D.Z.getGuildIds().filter(e => R.ZP.isCurrentUserGuest(e))), u = i.concat(a), {
     entrypoint: d
   } = x.Lk.useExperiment({
     location: "GuildsBar"
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(W.u, {}), d === x.u3.SERVER_RAIL_TOP && (0, r.jsx)(I.Z, {}), l ? (0, r.jsx)(E.Z, {}) : null, (0, r.jsx)(K.Z, {
-      isOnHubVerificationRoute: a
+      isOnHubVerificationRoute: s
     }), !t && (0, r.jsx)(B.Z, {}), u.map(e => (0, r.jsx)($.Z, {
       guildId: e
     }, e)), (0, r.jsx)(J.Z, {
@@ -214,10 +214,10 @@ function ed(e) {
     isOverlay: i,
     renderTreeNode: l,
     lurkingGuildIds: o
-  } = e, [a] = (0, h.Wu)([L.ZP], () => {
+  } = e, [s] = (0, h.Wu)([L.ZP], () => {
     let e = L.ZP.getGuildsTree();
     return [e, e.version]
-  }), s = a.getRoots(), c = (0, h.Wu)([A.Z], () => A.Z.getGeoRestrictedGuilds()).map(e => (0, r.jsx)(H.Z, {
+  }), a = s.getRoots(), c = (0, h.Wu)([A.Z], () => A.Z.getGeoRestrictedGuilds()).map(e => (0, r.jsx)(H.Z, {
     id: e.id,
     name: e.name,
     icon: e.icon
@@ -227,10 +227,10 @@ function ed(e) {
       role: "group",
       "aria-label": et.intl.string(et.t["7hB4kp"]),
       gap: "xs",
-      children: s.map((e, t) => l(e, t, s.length))
+      children: a.map((e, t) => l(e, t, a.length))
     }), c, (0, r.jsx)(q.Z, {}), i ? null : (0, r.jsx)(F.Z, {
       disableTooltip: o.length > 0,
-      lastTargetNode: s[s.length - 1]
+      lastTargetNode: a[a.length - 1]
     }), i ? null : t, n ? null : (0, r.jsx)(V.Z, {})]
   })
 }
@@ -240,8 +240,8 @@ function eh(e) {
     disableAppDownload: t = M.isPlatformEmbedded,
     isOverlay: n = !1,
     className: l,
-    themeOverride: a
-  } = e, [s] = (0, h.Wu)([L.ZP], () => {
+    themeOverride: s
+  } = e, [a] = (0, h.Wu)([L.ZP], () => {
     let e = L.ZP.getGuildsTree();
     return [e, e.version]
   }), d = (0, h.e7)([S.Z], () => S.Z.lurkingGuildIds()), p = i.useMemo(() => n ? [] : d, [d, n]), b = (0, h.e7)([C.Z], () => C.Z.isFullscreenInContext()), [O, j] = i.useState(!1), E = i.useCallback(() => j(!0), []), A = i.useCallback(() => j(!1), []), R = i.useRef(!1), [D] = i.useState(() => new f.V7), B = i.useRef(null), V = i.useRef(null), F = (0, u.OP)(), {
@@ -255,14 +255,14 @@ function eh(e) {
         iconTotalSize: n,
         badgeVisibleBuffer: n - 16,
         separatorSize: r,
-        heightBeforeIcons: ea + r
+        heightBeforeIcons: es + r
       }
     }($, er);
-    return new ec(s, J, ee.dG4, () => {
+    return new ec(a, J, ee.dG4, () => {
       var e, t;
       null == (e = B.current) || e.calculateState(), null == (t = V.current) || t.calculateState()
     }, e)
-  }, [$, er, s]);
+  }, [$, er, a]);
   i.useEffect(() => (eh.setResizeObserver(), () => {
     eh.clearResizeObserver()
   }), [eh]);
@@ -270,9 +270,9 @@ function eh(e) {
     analyticsLocations: ep
   } = (0, v.ZP)(y.Z.GUILDS_LIST), {
     pathname: ef
-  } = (0, c.TH)(), eg = es(ef);
+  } = (0, c.TH)(), eg = ea(ef);
   (0, _.Ng)(() => {
-    if (!R.current && 0 !== s.size) {
+    if (!R.current && 0 !== a.size) {
       if (!eg) {
         let {
           scrollTop: e
@@ -285,7 +285,7 @@ function eh(e) {
       return R.current = !0, () => D.stop()
     }
   }), i.useEffect(() => {
-    if (eh.setGuildsTree(s), R.current || 0 === s.size) return;
+    if (eh.setGuildsTree(a), R.current || 0 === a.size) return;
     let e = P.Z.getState().guildId;
     eh.scrollToGuild(e, !1);
     let t = null;
@@ -295,7 +295,7 @@ function eh(e) {
       } = e;
       n !== t && (t = n, eh.scrollToGuild(t, !1))
     })
-  }, [s, eh]);
+  }, [a, eh]);
   let em = i.useCallback(() => {
     eh.scrollTo({
       to: 0,
@@ -373,7 +373,7 @@ function eh(e) {
   return (0, r.jsx)(v.Gt, {
     value: ep,
     children: (0, r.jsx)(m.f6W, {
-      theme: a,
+      theme: s,
       children: e => (0, r.jsxs)("nav", {
         className: o()(en.wrapper, l, e, {
           [en.hidden]: b

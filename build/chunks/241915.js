@@ -329,24 +329,25 @@ let A = e => {
       pictureInPictureComponents: _,
       appContext: h,
       roundCorners: g,
-      resizeConfig: E
-    } = e, [b, O] = a.useState(!1), v = a.useMemo(() => null == t ? null : n.map(e => {
+      resizeConfig: E,
+      className: b
+    } = e, [O, v] = a.useState(!1), I = a.useMemo(() => null == t ? null : n.map(e => {
       if (e.id !== t.id && e.component !== f.NYg.ACTIVITY && e.component !== f.NYg.FRAME) return null;
       let n = "string" == typeof e.component ? _[e.component] : e.component;
       return (0, i.jsx)(n, m({
         width: r
       }, e.props), e.id)
-    }), [n, t, r, _]), I = a.useCallback(() => {
-      O(!0)
-    }, []), T = a.useCallback(() => {
-      O(!1)
-    }, []), A = a.useMemo(() => n.some(e => e.component === f.NYg.ACTIVITY), [n]), N = a.useMemo(() => n.some(e => e.component === f.NYg.FRAME), [n]);
+    }), [n, t, r, _]), T = a.useCallback(() => {
+      v(!0)
+    }, []), A = a.useCallback(() => {
+      v(!1)
+    }, []), N = a.useMemo(() => n.some(e => e.component === f.NYg.ACTIVITY), [n]), C = a.useMemo(() => n.some(e => e.component === f.NYg.FRAME), [n]);
     return null == t ? (0, i.jsx)("div", {
       className: p.pictureInPicture
     }) : (0, i.jsx)("div", {
       className: s()(p.pictureInPicture, {
-        [p.dragging]: b
-      }),
+        [p.dragging]: O
+      }, b),
       children: (0, i.jsx)(S, {
         appContext: h,
         position: t.position,
@@ -354,8 +355,8 @@ let A = e => {
         hidden: t.hidden,
         onMove: c,
         onResize: u,
-        onDragStart: I,
-        onDragEnd: T,
+        onDragStart: T,
+        onDragEnd: A,
         maxX: o,
         maxY: l,
         width: r,
@@ -365,8 +366,8 @@ let A = e => {
         edgeOffsetLeft: y.left,
         edgeOffsetRight: y.top,
         roundCorners: g,
-        resizeConfig: A || N ? void 0 : E,
-        children: v
+        resizeConfig: N || C ? void 0 : E,
+        children: I
       })
     })
   },

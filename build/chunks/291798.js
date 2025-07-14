@@ -1,4 +1,4 @@
-/** Chunk was on 74390 **/
+/** Chunk was on 96127 **/
 e.exports = {
   flexColumn: "flexColumn__16b66",
   flexRow: "flexRow__16b66",

@@ -1,20 +1,23 @@
-/** Chunk was on 74390 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  L: () => s,
+  L: () => l,
   a: () => c
 });
 var r = n(442837),
   i = n(480294),
-  l = n(451478),
+  a = n(451478),
   o = n(817915),
-  a = n(981631);
+  s = n(981631);
 
-function s() {
-  var e, t;
-  return e = (0, r.e7)([l.Z], () => l.Z.windowSize().width), t = (0, r.e7)([i.Z], () => i.Z.hasConsented(a.pjP.PERSONALIZATION)), e > o.t && t
+function l() {
+  return u((0, r.e7)([a.Z], () => a.Z.windowSize().width), (0, r.e7)([i.Z], () => i.Z.hasConsented(s.pjP.PERSONALIZATION)))
 }
 
 function c() {
-  var e, t;
-  return e = l.Z.windowSize().width, t = i.Z.hasConsented(a.pjP.PERSONALIZATION), e > o.t && t
+  return u(a.Z.windowSize().width, i.Z.hasConsented(s.pjP.PERSONALIZATION))
+}
+
+function u(e, t) {
+  return e > o.t && t
 }

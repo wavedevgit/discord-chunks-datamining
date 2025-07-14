@@ -1,6 +1,6 @@
-/** Chunk was on 74390 **/
+/** Chunk was on 96127 **/
 n.d(t, {
-  Z: () => s
+  Z: () => a
 }), n(539854), n(583741), n(388685);
 var r, i = n(73800),
   l = n(846519);
@@ -13,7 +13,7 @@ function o(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class a extends(r = i.Component) {
+class s extends(r = i.Component) {
   componentDidMount() {
     this.update(), this._interval.start(this.props.updateInterval, this.update)
   }
@@ -25,17 +25,17 @@ class a extends(r = i.Component) {
       numUpdatesToShow: t,
       updateInterval: n,
       pointsToSmooth: r
-    } = this.props, i = Date.now(), l = 0, o = 0, a = [], s = null != e[0] ? e[0].bytes : 0;
+    } = this.props, i = Date.now(), l = 0, o = 0, s = [], a = null != e[0] ? e[0].bytes : 0;
     for (; l < t + r; l++) {
       let t, r = i - (l + 1) * n;
       for (; o < e.length;)
         if ((t = e[o]).timestamp > r) o++;
         else break;
       if (o === e.length) break;
-      null != t && (a.push(s - t.bytes), s = t.bytes)
+      null != t && (s.push(a - t.bytes), a = t.bytes)
     }
-    for (; l < t + r; l++) a.push(0);
-    return a.reverse(), a
+    for (; l < t + r; l++) s.push(0);
+    return s.reverse(), s
   }
   smoothDeltaBytes(e) {
     let {
@@ -79,9 +79,9 @@ class a extends(r = i.Component) {
     }
   }
 }
-o(a, "defaultProps", {
+o(s, "defaultProps", {
   numUpdatesToShow: 30,
   updateInterval: 500,
   pointsToSmooth: 10
 });
-let s = a
+let a = s

@@ -1,4 +1,4 @@
-/** Chunk was on 74390 **/
+/** Chunk was on 96127 **/
 e.exports = {
   wrapper: "wrapper__260e1",
   total: "total__260e1",

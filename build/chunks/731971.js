@@ -1,4 +1,4 @@
-/** Chunk was on 74390 **/
+/** Chunk was on 96127 **/
 n.d(t, {
   NQ: () => b,
   U1: () => y,
@@ -18,7 +18,7 @@ var r = n(97519),
   l = n(695346),
   o = n(594174);
 
-function a(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function a(e) {
   return e
 }
 
-function s(e, t) {
+function a(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -67,31 +67,31 @@ let d = (0, r.U)(e => ({
     inviteCode: void 0,
     guildId: void 0,
     touched: !1,
-    setNickname: t => e(e => s(a({}, e), {
+    setNickname: t => e(e => a(s({}, e), {
       nickname: t,
       touched: !0
     })),
-    setDmsAllowed: t => e(e => s(a({}, e), {
+    setDmsAllowed: t => e(e => a(s({}, e), {
       dmsAllowed: t,
       touched: !0
     })),
-    setShowActivity: t => e(e => s(a({}, e), {
+    setShowActivity: t => e(e => a(s({}, e), {
       showActivity: t,
       touched: !0
     })),
-    setMutedServer: t => e(e => s(a({}, e), {
+    setMutedServer: t => e(e => a(s({}, e), {
       mutedServer: t,
       touched: !0
     })),
-    setInviteCode: t => e(e => s(a({}, e), {
+    setInviteCode: t => e(e => a(s({}, e), {
       inviteCode: t,
       touched: !0
     })),
-    setGuildId: t => e(e => s(a({}, e), {
+    setGuildId: t => e(e => a(s({}, e), {
       guildId: t,
       touched: !0
     })),
-    initialize: (t, n, r) => e(e => s(a({}, e), {
+    initialize: (t, n, r) => e(e => a(s({}, e), {
       guildSize: t,
       inviteCode: n,
       guildId: r,

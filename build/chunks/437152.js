@@ -1,4 +1,4 @@
-/** Chunk was on 74390 **/
+/** Chunk was on 96127 **/
 n.d(t, {
   E: () => c,
   N: () => u
@@ -7,17 +7,17 @@ var r = n(704215),
   i = n(433517),
   l = n(605236),
   o = n(70956),
-  a = n(921944);
-let s = "doNotShowReorderModal";
+  s = n(921944);
+let a = "doNotShowReorderModal";
 
 function c() {
   (0, l.Ow)(r.z.CHANNEL_REORDER_MODAL_DISMISS_SETTING, {
-    dismissAction: a.L.USER_DISMISS
+    dismissAction: s.L.USER_DISMISS
   })
 }
 
 function u() {
-  null != i.K.get(s) && i.K.remove(s);
+  null != i.K.get(a) && i.K.remove(a);
   let {
     isDismissed: e
   } = (0, l.Fo)(r.z.CHANNEL_REORDER_MODAL_DISMISS_SETTING, {

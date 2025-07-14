@@ -1,4 +1,4 @@
-/** Chunk was on 74390 **/
+/** Chunk was on 96127 **/
 n.d(t, {
   Ne: () => f,
   Ny: () => g,
@@ -10,8 +10,8 @@ n(73800);
 var i = n(120356),
   l = n.n(i),
   o = n(481060),
-  a = n(456100),
-  s = n(44315),
+  s = n(456100),
+  a = n(44315),
   c = n(246364),
   u = n(460562),
   d = n(981631),
@@ -55,7 +55,7 @@ function g() {
 function m(e) {
   let {
     enabled: t
-  } = a.c.useExperiment({
+  } = s.c.useExperiment({
     location: "renderMediaBadge"
   }, {
     autoTrackExposure: !0
@@ -69,12 +69,12 @@ function b(e) {
     video: r,
     screenshare: i,
     isCurrentUserConnected: l,
-    liveStage: a,
-    activeEvent: s,
+    liveStage: s,
+    activeEvent: a,
     activity: c
   } = e;
-  if (s) t = o.Que;
-  else if (a) t = o.ewx;
+  if (a) t = o.Que;
+  else if (s) t = o.ewx;
   else if (c) t = m;
   else if (i) t = o.pzj;
   else if (r) t = o.Odl;
@@ -114,15 +114,15 @@ function O(e) {
     icon: t,
     color: n,
     isCurrentUserConnected: i
-  } = e, a = null == n ? {
+  } = e, s = null == n ? {
     disableColor: !0
   } : {
-    color: (0, s.Lq)(n)
+    color: (0, a.Lq)(n)
   };
   return (0, r.jsx)(o.G2e, p({
     icon: t,
     className: l()(h.iconBadge, {
       [h.isCurrentUserConnected]: i
     })
-  }, a))
+  }, s))
 }

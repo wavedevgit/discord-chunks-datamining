@@ -1,4 +1,4 @@
-/** Chunk was on 74390 **/
+/** Chunk was on 96127 **/
 n.d(t, {
   Z: () => v
 }), n(388685);
@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(442837),
   o = n(18998),
-  a = n(664915),
-  s = n(888369),
+  s = n(664915),
+  a = n(888369),
   c = n(358652),
   u = n(771845),
   d = n(613060),
@@ -24,15 +24,15 @@ function _() {
 
 function O(e) {
   var t;
-  let n = s.default.getMutableGuildStates();
+  let n = a.default.getMutableGuildStates();
   return e === f.x8Z.SERVER_DISCOVERY_BADGE && !d.Z.hasViewed(f.x8Z.SERVER_DISCOVERY_BADGE) || e !== m && e !== b && (null == (t = n[null != e ? e : "null"]) ? void 0 : t.highImportanceMentionCount) > 0
 }
 let y = (0, p.oH)((e, t, n) => ["null", ...t, ...e, b, f.x8Z.E3_SERVER_DISCOVERY_BADGE, m]),
   v = i.forwardRef(function(e, t) {
     var n, i;
-    let d = (0, l.Wu)([u.ZP, c.Z, s.default], () => y(u.ZP.getGuildFolders(), c.Z.getUnreadPrivateChannelIds(), s.default.getStoreChangeSentinel())),
+    let d = (0, l.Wu)([u.ZP, c.Z, a.default], () => y(u.ZP.getGuildFolders(), c.Z.getUnreadPrivateChannelIds(), a.default.getStoreChangeSentinel())),
       p = (0, l.e7)([h.Z], () => h.Z.isFocused()),
-      f = (0, l.e7)([a.Z], () => a.Z.getExpandedFolders());
+      f = (0, l.e7)([s.Z], () => s.Z.getExpandedFolders());
     return (0, r.jsx)(o.Z, (n = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},

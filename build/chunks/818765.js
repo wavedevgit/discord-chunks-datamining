@@ -1,4 +1,4 @@
-/** Chunk was on 74390 **/
+/** Chunk was on 96127 **/
 n.d(t, {
   Z: () => x
 }), n(388685), n(539854);
@@ -6,8 +6,8 @@ var r = n(570140),
   i = n(317770),
   l = n(460181),
   o = n(474873),
-  a = n(314897),
-  s = n(19780),
+  s = n(314897),
+  a = n(19780),
   c = n(944486),
   u = n(111583),
   d = n(351780),
@@ -40,7 +40,7 @@ let f = (0, l.uk)("poggermode_applause", o.Z.getSoundpack()),
   },
   E = function(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1,
-      n = s.Z.isConnected();
+      n = a.Z.isConnected();
     b.push([e, t * (n ? .1 : 1)]), C()
   };
 class S extends i.Z {
@@ -60,7 +60,7 @@ class S extends i.Z {
     let {
       userId: t
     } = e;
-    a.default.getId() === t && y()
+    s.default.getId() === t && y()
   }
   stopAudio() {
     y()
@@ -70,7 +70,7 @@ class S extends i.Z {
     if (!v()) return;
     let t = c.Z.getChannelId();
     if (null == t) return;
-    let n = a.default.getId(),
+    let n = s.default.getId(),
       r = u.Z.isTyping(t, n),
       i = h.ZP.getUserCombo(n, t),
       l = null != (e = null == i ? void 0 : i.multiplier) ? e : 1;

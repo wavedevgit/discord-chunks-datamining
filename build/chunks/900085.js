@@ -1,12 +1,12 @@
-/** Chunk was on 74390 **/
+/** Chunk was on 96127 **/
 n.d(t, {
   Z: () => X
 }), n(415506), n(388685), n(35282), n(290780);
 var r, i = n(255367),
   l = n(73800),
   o = n(120356),
-  a = n.n(o),
-  s = n(873546),
+  s = n.n(o),
+  a = n(873546),
   c = n(442837),
   u = n(481060),
   d = n(239091),
@@ -246,7 +246,7 @@ class q extends l.PureComponent {
   }
   renderProtip() {
     return (0, i.jsx)(b.Z, {
-      className: a()(L.protip, {
+      className: s()(L.protip, {
         [L.hasContent]: this.state.query.length > 0
       }),
       type: b.Z.Types.INLINE,
@@ -275,11 +275,11 @@ class q extends l.PureComponent {
       "aria-label": D.intl.string(D.t.ZvKwYW),
       size: u.CgR.DYNAMIC,
       transitionState: this.props.transitionState,
-      className: a()(L.container, s.tq && L.mobileContainer),
+      className: s()(L.container, a.tq && L.mobileContainer),
       fullscreenOnMobile: !1,
       parentComponent: "QuickSwitcher",
       children: (0, i.jsxs)("div", {
-        className: a()(L.quickswitcher, s.tq && L.mobileQuickswitcher),
+        className: s()(L.quickswitcher, a.tq && L.mobileQuickswitcher),
         onMouseMove: this.handleMouseMove,
         children: [this.renderInput(), this.renderResults(), this.renderProtip(), this.renderTutorial()]
       })

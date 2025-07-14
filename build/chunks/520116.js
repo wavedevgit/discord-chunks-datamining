@@ -1,4 +1,4 @@
-/** Chunk was on 74390 **/
+/** Chunk was on 96127 **/
 n.d(t, {
   Z: () => x
 }), n(539854);
@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(913527),
   o = n.n(l),
-  a = n(91192),
-  s = n(755721),
+  s = n(91192),
+  a = n(755721),
   c = n(481060),
   u = n(135938),
   d = n(554838),
@@ -32,12 +32,12 @@ function S(e) {
   var t, n, l;
   let {
     channel: o,
-    message: s,
+    message: a,
     compact: u,
     isGroupStart: d,
     treatSpam: h,
     gotoChannel: p
-  } = e, g = (0, a.JA)(null != (t = s.id) ? t : ""), m = i.useCallback(e => {
+  } = e, g = (0, s.JA)(null != (t = a.id) ? t : ""), m = i.useCallback(e => {
     if ("ArrowLeft" === e.key) {
       var t;
       null == (t = document.querySelector('[data-recents-channel="'.concat(o.id, '"]'))) || t.focus()
@@ -68,10 +68,10 @@ function S(e) {
     }, g), l = l = {
       children: [(0, r.jsx)(O.Z, {
         className: j.jumpButton,
-        onJump: e => p(e, s.id)
+        onJump: e => p(e, a.id)
       }), (0, r.jsx)(f.Z, {
-        id: s.id,
-        message: s,
+        id: a.id,
+        message: a,
         channel: o,
         className: j.message,
         compact: u,
@@ -89,7 +89,7 @@ function S(e) {
       return n
     })(Object(l)).forEach(function(e) {
       Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
-    }), n), s.id)
+    }), n), a.id)
   })
 }
 
@@ -98,7 +98,7 @@ function x(e) {
   let {
     channel: i,
     channelRecord: l,
-    gotoChannel: a
+    gotoChannel: s
   } = e, {
     enabled: f
   } = u.Z.useExperiment({
@@ -125,12 +125,12 @@ function x(e) {
         compact: O,
         isGroupStart: i,
         treatSpam: !P && f && (0, h.DQ)(n) && E,
-        gotoChannel: a
+        gotoChannel: s
       }, n.id))
-    }), i.messages.length >= y.hC && N.push((0, r.jsxs)(s.zx, {
-      color: s.zx.Colors.LINK,
-      look: s.zx.Looks.LINK,
-      onClick: e => a(e, n[n.length - 1].id),
+    }), i.messages.length >= y.hC && N.push((0, r.jsxs)(a.zx, {
+      color: a.zx.Colors.LINK,
+      look: a.zx.Looks.LINK,
+      onClick: e => s(e, n[n.length - 1].id),
       children: [C.intl.string(C.t["9OB9ho"]), " ›"]
     }, "view-all")), 0 === N.length && (N = [(0, r.jsx)(c.$jN, {}, "spinner")])
   }
