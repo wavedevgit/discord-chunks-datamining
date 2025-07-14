@@ -4,10 +4,10 @@ n.d(t, {
 });
 var r = n(255367),
   o = n(120356),
-  a = n.n(o),
-  i = n(755721),
-  s = n(477415),
-  l = n(690786),
+  i = n.n(o),
+  l = n(755721),
+  a = n(477415),
+  s = n(690786),
   c = n(639777),
   u = n(262212),
   d = n(388032),
@@ -20,19 +20,19 @@ function f(e) {
     powerup: o,
     onError: f,
     onClose: b
-  } = e, m = (0, c.Z)(n), O = null == (0, l.Z)(n, o) || !m, j = (0, s.Z)(n, o);
+  } = e, m = (0, c.Z)(n), v = null == (0, s.Z)(n, o) || !m, O = (0, a.Z)(n, o);
   return (0, r.jsxs)("div", {
-    className: a()(p.container, {
-      [p.disabled]: O
+    className: i()(p.container, {
+      [p.disabled]: v
     }, t),
-    children: [!j && m && (0, r.jsx)(u.Nn, {
+    children: [!O && m && (0, r.jsx)(u.Nn, {
       guildId: n,
       powerup: o,
       onError: f,
       grow: !1,
-      compact: !O
-    }), (0, r.jsx)(i.zx, {
-      color: O ? i.Tt.PRIMARY : i.Tt.BRAND,
+      compact: !v
+    }), (0, r.jsx)(l.zx, {
+      color: v ? l.Tt.PRIMARY : l.Tt.BRAND,
       onClick: b,
       children: d.intl.string(d.t.cpT0Cg)
     })]

@@ -1,6 +1,6 @@
 /**
   Module ID: 44799
-  Original File Name: cc56976dc7432093
+  Original File Name: af134724e0820240
 **/
 .parentContainer__98cbd {
     display: flex;
@@ -107,10 +107,16 @@
 }
 
 .labelContainer__98cbd {
+    align-items: center;
+    display: flex;
     justify-content: space-between
 }
 
-.inline__98cbd,.labelContainer__98cbd {
+.labelContainerEnd__98cbd {
+    justify-content: flex-end
+}
+
+.inline__98cbd,.labelContainerEnd__98cbd {
     align-items: center;
     display: flex
 }
@@ -730,4 +736,4 @@
     transition: padding-left .2s ease
 }
 
-/*# sourceMappingURL=cc56976dc7432093.css.map*/
+/*# sourceMappingURL=af134724e0820240.css.map*/

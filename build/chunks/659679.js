@@ -10,8 +10,8 @@ var i = t(793030),
   s = t(834129),
   l = t(271383),
   c = t(709054),
-  d = t(884902),
-  u = t(93841),
+  u = t(884902),
+  d = t(93841),
   m = t(388032),
   p = t(326319);
 
@@ -30,7 +30,7 @@ function _(e) {
       roleColor: null == r ? void 0 : r.colorString,
       roleColorStrings: null == r ? void 0 : r.colorStrings
     }
-  }, [n]), b = (0, d.X7)(n.guildId, n.userId, x);
+  }, [n]), v = (0, u.X7)(n.guildId, n.userId, x);
   return (0, r.jsx)(s.Z, {
     className: p.systemMessageContainer,
     contentClassName: p.systemMessageContent,
@@ -51,11 +51,11 @@ function _(e) {
         variant: "text-md/semibold",
         name: _,
         color: null != f ? f : void 0,
-        roleColors: b
+        roleColors: v
       }), (0, r.jsx)(i.xv, {
         variant: "text-md/medium",
         lineClamp: 1,
-        children: m.intl.string(u.default.plwH8f)
+        children: m.intl.string(d.default.plwH8f)
       })]
     })
   })

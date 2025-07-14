@@ -1,6 +1,6 @@
 /** Chunk was on 44799 **/
 t.d(n, {
-  Z: () => v
+  Z: () => b
 }), t(642613), t(388685);
 var r = t(255367),
   i = t(73800),
@@ -9,29 +9,29 @@ var r = t(255367),
   s = t(442837),
   l = t(179360),
   c = t(616780),
-  d = t(899667),
-  u = t(720202),
+  u = t(899667),
+  d = t(720202),
   m = t(271383),
   p = t(430824),
   _ = t(709054),
   f = t(659679),
   x = t(388032),
-  b = t(211886);
+  v = t(211886);
 
-function v(e) {
+function b(e) {
   let {
     guildId: n
-  } = e, t = (0, s.Wu)([d.Z], () => {
+  } = e, t = (0, s.Wu)([u.Z], () => {
     var e;
-    return null != (e = d.Z.getAppliedGuildBoostsForGuild(n)) ? e : []
-  }, [n]), v = i.useMemo(() => t.sort((e, n) => _.default.extractTimestamp(e.id) < _.default.extractTimestamp(n.id) ? 1 : -1), [t]), g = (0, s.Wu)([m.ZP], () => {
+    return null != (e = u.Z.getAppliedGuildBoostsForGuild(n)) ? e : []
+  }, [n]), b = i.useMemo(() => t.sort((e, n) => _.default.extractTimestamp(e.id) < _.default.extractTimestamp(n.id) ? 1 : -1), [t]), g = (0, s.Wu)([m.ZP], () => {
     let e = new Set;
-    return v.forEach(t => {
+    return b.forEach(t => {
       null == m.ZP.getMember(n, t.userId) && e.add(t.userId)
     }), Array.from(e)
-  }, [n, v]);
+  }, [n, b]);
   i.useEffect(() => {
-    g.length > 0 && g.forEach(e => u.Z.requestMember(n, e))
+    g.length > 0 && g.forEach(e => d.Z.requestMember(n, e))
   }, [n, g]);
   let h = i.useMemo(() => g.length > 0 ? {
     [n]: g
@@ -43,16 +43,16 @@ function v(e) {
   });
   return (i.useEffect(() => {
     j !== t.length && (0, l.C0)(n)
-  }, [n, j, t.length]), 0 === v.length) ? null : (0, r.jsxs)(r.Fragment, {
+  }, [n, j, t.length]), 0 === b.length) ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.X6, {
-      className: b.header,
+      className: v.header,
       variant: "eyebrow",
       color: "text-secondary",
       children: x.intl.string(x.t.yM9Krq)
     }), (0, r.jsx)(o.zJ, {
-      className: b.container,
+      className: v.container,
       fade: !0,
-      children: v.map((e, n) => (0, r.jsx)(f.Z, {
+      children: b.map((e, n) => (0, r.jsx)(f.Z, {
         boost: e
       }, "boost-activity-".concat(n)))
     })]
