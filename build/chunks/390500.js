@@ -36,15 +36,12 @@ let c = function(e) {
         color: "header-secondary",
         children: o.intl.string(o.t.FdsK4u)
       })]
-    }), (0, r.jsx)("div", {
-      className: s.buttonContainer,
-      children: (0, r.jsx)(l.zxk, {
-        fullWidth: !0,
-        onClick: t,
-        variant: "critical-primary",
-        size: "md",
-        text: o.intl.string(o.t.g9tK0t)
-      })
+    }), (0, r.jsx)(l.zxk, {
+      fullWidth: !0,
+      onClick: t,
+      variant: "critical-primary",
+      size: "md",
+      text: o.intl.string(o.t.g9tK0t)
     })]
   })
 }

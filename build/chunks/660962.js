@@ -168,6 +168,9 @@ function et(e) {
               children: (0, r.jsx)(I.Z, {
                 author: {
                   nick: d.author.username,
+                  guildId: n,
+                  authorId: d.author.id,
+                  colorRoleId: t.id,
                   colorStrings: {
                     primaryColor: null != a.primary_color ? (0, c.Rf)(a.primary_color) : void 0,
                     secondaryColor: null != a.secondary_color ? (0, c.Rf)(a.secondary_color) : void 0,
@@ -322,6 +325,9 @@ function el(e) {
     disableInteraction: d
   } = e, u = ei(H.intl.string(H.t.Mi9KbW)), g = {
     nick: u.author.username,
+    guildId: o,
+    authorId: u.author.id,
+    colorRoleId: a.id,
     colorStrings: {
       primaryColor: null == (t = a.colorStrings) ? void 0 : t.primaryColor,
       secondaryColor: null == (n = a.colorStrings) ? void 0 : n.secondaryColor,

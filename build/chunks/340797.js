@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => u
 });
 var r = n(255367),
-  o = n(73800),
-  l = n(481060),
+  l = n(73800),
+  o = n(481060),
   i = n(946273),
   a = n(441110),
   s = n(388032),
@@ -15,33 +15,33 @@ function u(e) {
   let {
     guild: t,
     message: n
-  } = e, u = o.useRef(null);
-  return (0, i.vV)(t.id, n.author.id) ? (0, r.jsx)(l.yRy, {
+  } = e, u = l.useRef(null);
+  return (0, i.vV)(t.id, n.author.id) ? (0, r.jsx)(o.yRy, {
     targetElementRef: u,
-    animation: l.yRy.Animation.TRANSLATE,
+    animation: o.yRy.Animation.TRANSLATE,
     align: "center",
     autoInvert: !0,
     nudgeAlignIntoViewport: !0,
     position: "right",
     renderPopout: e => {
       let {
-        closePopout: o
+        closePopout: l
       } = e;
       return (0, r.jsx)(a.Z, {
         guild: t,
         message: n,
-        onClose: o
+        onClose: l
       })
     },
     children: e => {
       let {
         onClick: t
       } = e;
-      return (0, r.jsx)(l.P3F, {
+      return (0, r.jsx)(o.P3F, {
         onClick: t,
         tag: "span",
         innerRef: u,
-        children: (0, r.jsx)(l.ua7, {
+        children: (0, r.jsx)(o.ua7, {
           text: s.intl.string(s.t["v/OYd3"]),
           children: e => {
             var t, n;
@@ -65,7 +65,7 @@ function u(e) {
             }({
               className: c.newMemberBadge
             }, e), n = n = {
-              children: (0, r.jsx)(l.hg2, {
+              children: (0, r.jsx)(o.hg2, {
                 size: "custom",
                 color: "currentColor",
                 width: 20,

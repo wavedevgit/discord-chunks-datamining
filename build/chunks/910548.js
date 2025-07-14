@@ -338,7 +338,7 @@ function F(e) {
     {
       reducedMotion: N
     } = l.useContext(p.Sfi),
-    P = (0, y.ZH)(n),
+    P = (0, y.ZP)(n),
     A = P.nick,
     w = o(P);
   t = null == c || null == a ? u > 1 ? v.intl.format(v.t.yfC9dn, {

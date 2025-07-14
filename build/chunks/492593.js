@@ -1,19 +1,21 @@
 /** Chunk was on 31978 **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => b
 }), n(388685);
 var r = n(255367),
-  o = n(73800),
-  l = n(120356),
-  i = n.n(l),
-  a = n(573385),
-  s = n(481060),
-  c = n(606318),
-  u = n(402235),
-  d = n(848697);
+  l = n(73800),
+  o = n(120356),
+  i = n.n(o),
+  a = n(442837),
+  s = n(573385),
+  c = n(481060),
+  u = n(606318),
+  d = n(402235),
+  p = n(485386),
+  m = n(848697);
 
-function p(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -32,7 +34,7 @@ function p(e) {
   return e
 }
 
-function m(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -44,92 +46,93 @@ function m(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let g = function(e) {
+let b = function(e) {
   var {
     className: t,
     compact: n = !1,
-    contentOnly: l = !1,
-    zalgo: g = !0,
-    preview: f = !1,
-    disableInteraction: b = !1,
-    childrenRepliedMessage: h,
-    childrenExecutedCommand: O,
-    childrenHeader: y,
-    childrenSystemMessage: v,
-    childrenButtons: j,
-    childrenMessageContent: P,
-    childrenAccessories: x,
-    messageRef: w,
-    focusProps: C = {
+    contentOnly: o = !1,
+    zalgo: b = !0,
+    preview: h = !1,
+    disableInteraction: O = !1,
+    childrenRepliedMessage: y,
+    childrenExecutedCommand: v,
+    childrenHeader: j,
+    childrenSystemMessage: P,
+    childrenButtons: x,
+    childrenMessageContent: w,
+    childrenAccessories: C,
+    messageRef: S,
+    focusProps: E = {
       offset: {
         left: 4,
         right: 4
       }
     },
-    hasThread: S,
-    isSystemMessage: E,
-    hasReply: N,
+    hasThread: N,
+    isSystemMessage: Z,
+    hasReply: R,
     author: T,
-    onMouseEnter: Z,
-    onMouseLeave: R
-  } = e, _ = function(e, t) {
+    onMouseEnter: I,
+    onMouseLeave: _
+  } = e, k = function(e, t) {
     if (null == e) return {};
-    var n, r, o = function(e, t) {
+    var n, r, l = function(e, t) {
       if (null == e) return {};
-      var n, r, o = {},
-        l = Object.keys(e);
-      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
-      return o
+      var n, r, l = {},
+        o = Object.keys(e);
+      for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
+      return l
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
+      var o = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
     }
-    return o
+    return l
   }(e, ["className", "compact", "contentOnly", "zalgo", "preview", "disableInteraction", "childrenRepliedMessage", "childrenExecutedCommand", "childrenHeader", "childrenSystemMessage", "childrenButtons", "childrenMessageContent", "childrenAccessories", "messageRef", "focusProps", "hasThread", "isSystemMessage", "hasReply", "author", "onMouseEnter", "onMouseLeave"]);
-  let I = (0, u.ZP)(null == T ? void 0 : T.guildId, null == T ? void 0 : T.authorId) && (0, c.S2)(T),
-    [k, M] = o.useState(!1),
-    D = o.useCallback(e => {
-      M(!0), null == Z || Z(e)
-    }, [Z]),
-    A = o.useCallback(e => {
-      M(!1), null == R || R(e)
-    }, [R]),
-    L = (0, r.jsx)(a.d.Provider, {
+  let M = (0, a.e7)([p.Z], () => (null == T ? void 0 : T.guildId) == null || (null == T ? void 0 : T.colorRoleId) == null ? null : p.Z.getRole(T.guildId, T.colorRoleId)),
+    D = (0, d.yH)(null == T ? void 0 : T.guildId, M) && (0, u.S2)(T),
+    [A, L] = l.useState(!1),
+    G = l.useCallback(e => {
+      L(!0), null == I || I(e)
+    }, [I]),
+    U = l.useCallback(e => {
+      L(!1), null == _ || _(e)
+    }, [_]),
+    B = (0, r.jsx)(s.d.Provider, {
       value: {
-        animate: k,
-        setAnimate: M
+        animate: A,
+        setAnimate: L
       },
-      children: (0, r.jsx)(s.tEY, m(p({}, C), {
-        children: (0, r.jsxs)("div", m(p({
+      children: (0, r.jsx)(c.tEY, f(g({}, E), {
+        children: (0, r.jsxs)("div", f(g({
           className: i()(t, {
-            [d.gradient]: I,
-            [d.wrapper]: !0,
-            [d.contentOnly]: l,
-            [d.compact]: n,
-            [d.preview]: f,
-            [d.cozy]: !n,
-            [d.zalgo]: g,
-            [d.hasThread]: S,
-            [d.isSystemMessage]: E,
-            [d.hasReply]: N
+            [m.gradient]: D,
+            [m.wrapper]: !0,
+            [m.contentOnly]: o,
+            [m.compact]: n,
+            [m.preview]: h,
+            [m.cozy]: !n,
+            [m.zalgo]: b,
+            [m.hasThread]: N,
+            [m.isSystemMessage]: Z,
+            [m.hasReply]: R
           }),
-          ref: w
-        }, _), {
+          ref: S
+        }, k), {
           role: "article",
-          onMouseEnter: D,
-          onMouseLeave: A,
-          children: [h, O, (0, r.jsxs)("div", {
-            className: d.contents,
-            children: [v, y, null == v && P]
-          }), x, null != j ? (0, r.jsx)("div", {
-            className: d.buttonContainer,
-            children: j
+          onMouseEnter: G,
+          onMouseLeave: U,
+          children: [y, v, (0, r.jsxs)("div", {
+            className: m.contents,
+            children: [P, j, null == P && w]
+          }), C, null != x ? (0, r.jsx)("div", {
+            className: m.buttonContainer,
+            children: x
           }) : null]
         }))
       }))
     });
-  return b ? (0, r.jsx)(s.Rny, {
-    children: L
-  }) : L
+  return O ? (0, r.jsx)(c.Rny, {
+    children: B
+  }) : B
 }

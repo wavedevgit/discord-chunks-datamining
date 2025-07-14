@@ -1,12 +1,12 @@
 /** Chunk was on 31978 **/
 "use strict";
 n.d(t, {
-  d: () => l,
-  v: () => o
+  d: () => o,
+  v: () => l
 });
 var r = n(73800);
-let o = r.createContext(null);
+let l = r.createContext(null);
 
-function l() {
-  return r.useContext(o)
+function o() {
+  return r.useContext(l)
 }

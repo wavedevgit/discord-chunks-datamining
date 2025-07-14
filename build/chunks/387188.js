@@ -135,24 +135,25 @@ function O(e) {
     message: n,
     compact: l,
     usernameHook: a
-  } = e, [s, u] = i.useState(!1), f = (0, d.ZP)(n), h = a(f), x = C(n.content), v = i.useCallback(() => {
-    null != x && g.S.dispatchToLastSubscribed(b.CkL.INSERT_TEXT, {
-      plainText: ":".concat(x.name, ":"),
+  } = e, s = n.content, [u, f] = i.useState(!1), h = (0, d.ZP)(n), x = a(h), v = C(s), O = i.useCallback(() => {
+    null != v && g.S.dispatchToLastSubscribed(b.CkL.INSERT_TEXT, {
+      plainText: ":".concat(v.name, ":"),
+      rawText: s,
       addSpace: !0
     })
-  }, [x]), O = i.useMemo(() => {
+  }, [v, s]), j = i.useMemo(() => {
     var e;
-    return null == x ? null : {
+    return null == v ? null : {
       src: _.ZP.getEmojiURL({
-        id: x.id,
-        animated: x.animated,
+        id: v.id,
+        animated: v.animated,
         size: 48
       }),
-      emojiId: x.id,
-      name: ":".concat(null != (e = x.originalName) ? e : x.name, ":"),
-      animated: x.animated
+      emojiId: v.id,
+      name: ":".concat(null != (e = v.originalName) ? e : v.name, ":"),
+      animated: v.animated
     }
-  }, [x]);
+  }, [v]);
   return (0, r.jsx)(m.Z, {
     iconNode: (0, r.jsx)(o.EO4, {
       size: "refresh_sm",
@@ -163,27 +164,27 @@ function O(e) {
     compact: l,
     contentClassName: y.content,
     children: (0, r.jsx)("span", {
-      children: null == x || null == O ? E.intl.format(E.t.k6Jc9f, {
-        username: f.nick,
-        usernameHook: h
+      children: null == v || null == j ? E.intl.format(E.t.k6Jc9f, {
+        username: h.nick,
+        usernameHook: x
       }) : E.intl.format(E.t.IihHBw, {
-        username: f.nick,
-        usernameHook: h,
+        username: h.nick,
+        usernameHook: x,
         emojiPreview: (0, r.jsx)(p.Y, {
-          node: O,
-          isInteracting: s
+          node: j,
+          isInteracting: u
         }),
         emojiName: (0, r.jsx)(c.P3F, {
           className: y.clickableEmoji,
           tag: "span",
-          onClick: v,
-          onMouseEnter: () => u(!0),
-          onMouseLeave: () => u(!1),
+          onClick: O,
+          onMouseEnter: () => f(!0),
+          onMouseLeave: () => f(!1),
           children: (0, r.jsx)(c.Text, {
             tag: "span",
             variant: "text-md/medium",
             color: "text-primary",
-            children: ":".concat(null != (t = x.originalName) ? t : x.name, ":")
+            children: ":".concat(null != (t = v.originalName) ? t : v.name, ":")
           })
         })
       })
