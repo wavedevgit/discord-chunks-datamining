@@ -38,7 +38,7 @@ function h(e) {
   }, [x]), j = (0, l.e7)([d.Z], () => {
     var e;
     return null == (e = d.Z.getRoleMemberCount(t.id)) ? void 0 : e[f.id]
-  }, [f.id, t.id]), _ = (0, o.pM)(t.id, f.id), v = (0, u.Z)(f);
+  }, [f.id, t.id]), _ = (0, o.pM)(t.id, f.id), v = (0, u.Z)(t.id, f);
   i.useEffect(() => {
     _ && x(m.ZI.PERMISSIONS)
   }, [_, x]);
