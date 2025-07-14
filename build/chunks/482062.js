@@ -52,10 +52,10 @@ function h(e) {
         r = (0, s.x3)(e);
       p(n, r), (0, a.h)(t, r, !0)
     }, [t, p]),
-    [v, _] = i.useState(!1),
-    C = i.useRef(v);
+    [v, C] = i.useState(!1),
+    _ = i.useRef(v);
   i.useLayoutEffect(() => {
-    C.current = v
+    _.current = v
   }, [v]), i.useLayoutEffect(() => {
     let e = g.current;
     if (null != e) return e.addEventListener("focusin", n), e.addEventListener("focusout", r), e.addEventListener("focus", i), e.addEventListener("scroll", a, {
@@ -65,11 +65,11 @@ function h(e) {
     };
 
     function n() {
-      _(!0)
+      C(!0)
     }
 
     function r(e) {
-      e.currentTarget.contains(e.relatedTarget) || (_(!1), requestAnimationFrame(() => {
+      e.currentTarget.contains(e.relatedTarget) || (C(!1), requestAnimationFrame(() => {
         let e = c.current;
         null !== e && null == x((0, s.P1)(e, o)) && b((0, s.P1)(t, "data-grid-id"))
       }))
@@ -77,7 +77,7 @@ function h(e) {
 
     function i() {
       let e = g.current;
-      if (C.current || null == e) return
+      if (_.current || null == e) return
     }
 
     function a() {

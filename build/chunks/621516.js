@@ -21,14 +21,14 @@ var r = n(255367),
   b = n(406074),
   j = n(434404),
   v = n(430824),
-  _ = n(63063),
-  C = n(595433),
+  C = n(63063),
+  _ = n(595433),
   y = n(981631),
   O = n(388032),
   w = n(461238),
   N = n(906739),
-  T = n(965358),
-  S = n(420196),
+  S = n(965358),
+  T = n(420196),
   P = n(433075);
 
 function I(e) {
@@ -134,7 +134,7 @@ let R = e => {
   }), {
     transitions: L,
     setVisible: F
-  } = (0, C.H)(), D = i.useCallback(() => {
+  } = (0, _.H)(), D = i.useCallback(() => {
     F(!1), x.Z.hideAdminOnboarding(a.id, !0)
   }, [a, F]);
   i.useEffect(() => {
@@ -215,7 +215,7 @@ let R = e => {
             }), (0, r.jsx)(u.LZC, {
               size: 16
             }), (0, r.jsxs)(u.P3F, {
-              onClick: () => open(_.Z.getCreatorSupportArticleURL(y.BhN.MEDIA_CHANNEL)),
+              onClick: () => open(C.Z.getCreatorSupportArticleURL(y.BhN.MEDIA_CHANNEL)),
               className: w.helpCenterLink,
               children: [(0, r.jsx)(u.Text, {
                 variant: "text-sm/medium",
@@ -245,11 +245,11 @@ let R = e => {
             children: (0, r.jsxs)("div", {
               className: w.contentImageContainer,
               children: [(0, r.jsx)("img", {
-                src: R ? S : P,
+                src: R ? T : P,
                 alt: "",
                 className: w.previewEmbedImage
               }), (0, r.jsx)("img", {
-                src: R ? N : T,
+                src: R ? N : S,
                 alt: "",
                 className: w.previewEmbedImage
               })]

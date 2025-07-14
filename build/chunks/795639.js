@@ -21,24 +21,24 @@ var r = n(255367),
   b = n(313201),
   j = n(70097),
   v = n(374794),
-  _ = n(470623),
-  C = n(983200),
+  C = n(470623),
+  _ = n(983200),
   y = n(127654),
   O = n(124252),
   w = n(388032),
   N = n(554010);
-let T = [{
+let S = [{
     name: "Media Post Thumbnail",
     extensions: ["jpg", "jpeg", "png", "gif", "webp"]
   }],
-  S = (0, b.hQ)();
+  T = (0, b.hQ)();
 
 function P(e) {
   let {
     mediaAttachments: t,
     containerWidth: n,
     containerHeight: i
-  } = e, a = (0, C.tu)({
+  } = e, a = (0, _.tu)({
     numAttachments: t.length,
     containerWidth: n,
     containerHeight: i
@@ -68,27 +68,27 @@ let I = e => {
     parentChannel: a
   } = e, {
     textAreaState: s
-  } = (0, _.xH)(e => {
+  } = (0, C.xH)(e => {
     let {
       textAreaState: t
     } = e;
     return {
       textAreaState: t
     }
-  }, c.X), b = (0, d.e7)([g.Z], () => g.Z.keyboardModeEnabled), j = (0, O.Z)(a, null == (t = s.textValue) ? void 0 : t.trim()), C = i.useMemo(() => j.find(e => e.isThumbnail), [j]), I = null != j && j.length > 0, E = i.useMemo(() => {
+  }, c.X), b = (0, d.e7)([g.Z], () => g.Z.keyboardModeEnabled), j = (0, O.Z)(a, null == (t = s.textValue) ? void 0 : t.trim()), _ = i.useMemo(() => j.find(e => e.isThumbnail), [j]), I = null != j && j.length > 0, E = i.useMemo(() => {
     let e = (null == j ? void 0 : j.length) > 1 ? 1.15 : 1;
     return {
       width: 153 * e,
       height: 86 * e
     }
   }, [j]), R = i.useCallback(e => {
-    null != C && h.Z.remove(a.id, C.id, f.Ie.CREATE_FORUM_POST.drafts.type), (0, y.d)(e.currentTarget.files, a, f.Ie.CREATE_FORUM_POST.drafts.type, {
+    null != _ && h.Z.remove(a.id, _.id, f.Ie.CREATE_FORUM_POST.drafts.type), (0, y.d)(e.currentTarget.files, a, f.Ie.CREATE_FORUM_POST.drafts.type, {
       requireConfirm: !0,
       isThumbnail: !0
     }), e.currentTarget.value = null
-  }, [a, C]), M = e => {
-    e.stopPropagation(), (null == C ? void 0 : C.upload) != null && (0, m.ZDy)(async () => {
-      let e = C.upload;
+  }, [a, _]), M = e => {
+    e.stopPropagation(), (null == _ ? void 0 : _.upload) != null && (0, m.ZDy)(async () => {
+      let e = _.upload;
       o()(null != e, "upload should not be null");
       let {
         default: t
@@ -148,8 +148,8 @@ let I = e => {
     onChange: R,
     multiple: !1,
     "aria-hidden": !0,
-    filters: T,
-    "aria-describedby": S,
+    filters: S,
+    "aria-describedby": T,
     "aria-label": I ? w.intl.string(w.t.MxJI3d) : w.intl.string(w.t.CbiofX),
     children: I ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(P, {
@@ -164,7 +164,7 @@ let I = e => {
           variant: "text-xs/medium",
           color: "header-secondary",
           children: w.intl.string(w.t.MxJI3d)
-        }), null == C && (0, r.jsx)(m.vdY, {
+        }), null == _ && (0, r.jsx)(m.vdY, {
           size: "xs",
           color: "currentColor",
           className: N.editIcon
@@ -187,7 +187,7 @@ let I = e => {
   return (0, r.jsx)("div", {
     className: N.thumbnailContainer,
     style: E,
-    children: null != C ? (0, r.jsx)(p.Z, {
+    children: null != _ ? (0, r.jsx)(p.Z, {
       actions: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(x.Z, {
           className: N.action,
@@ -200,7 +200,7 @@ let I = e => {
         }), (0, r.jsx)(x.Z, {
           className: N.action,
           tooltip: w.intl.string(w.t.vN7REx),
-          onClick: () => h.Z.remove(a.id, C.id, f.Ie.CREATE_FORUM_POST.drafts.type),
+          onClick: () => h.Z.remove(a.id, _.id, f.Ie.CREATE_FORUM_POST.drafts.type),
           dangerous: !0,
           children: (0, r.jsx)(m.XHJ, {
             size: "md",
@@ -209,7 +209,7 @@ let I = e => {
         })]
       }),
       draftType: f.Ie.CREATE_FORUM_POST.drafts.type,
-      id: C.id,
+      id: _.id,
       channelId: a.id,
       handleEditModal: M,
       keyboardModeEnabled: b,

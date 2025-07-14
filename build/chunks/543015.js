@@ -21,14 +21,14 @@ var r = n(255367),
   b = n(168107),
   j = n(480916),
   v = n(446489),
-  _ = n(824578),
-  C = n(95398),
+  C = n(824578),
+  _ = n(95398),
   y = n(247206),
   O = n(109434),
   w = n(456269),
   N = n(109590),
-  T = n(368844),
-  S = n(660189),
+  S = n(368844),
+  T = n(660189),
   P = n(73315),
   I = n(470623),
   E = n(858543),
@@ -122,7 +122,7 @@ let ec = i.memo(function(e) {
         }) : {
           hasSpoilerEmbeds: !1,
           content: null
-        }, [n, l, r, a]), c = (0, T.eL)(t, s), d = (0, T.vg)(t, s);
+        }, [n, l, r, a]), c = (0, S.eL)(t, s), d = (0, S.vg)(t, s);
         return null == t ? null : {
           hasSpoilerEmbeds: s,
           content: o,
@@ -150,7 +150,7 @@ let ec = i.memo(function(e) {
     overrideMedia: s
   });
   (0, ee.KK)(j);
-  let _ = (0, h.e7)([Y.default, X.Z], () => {
+  let C = (0, h.e7)([Y.default, X.Z], () => {
       var e, t, n, r, i, a;
       let l = Y.default.getUser(null == j || null == (t = j.messageSnapshots[0]) || null == (e = t.moderatorReport) ? void 0 : e.reported_user_id);
       if (null != l) return l;
@@ -161,21 +161,21 @@ let ec = i.memo(function(e) {
       return null
     }),
     {
-      ref: C,
+      ref: _,
       height: y
     } = (0, x.ZP)(),
     O = (0, I.xH)(e => e.setCardHeight, u.X);
   i.useEffect(() => {
     null != y && O(t, y)
   }, [y, O, t]), i.useEffect(() => {
-    null == a || a(C.current, t)
-  }, [C, a, t]);
-  let S = i.useRef(null),
+    null == a || a(_.current, t)
+  }, [_, a, t]);
+  let T = i.useRef(null),
     {
       handleLeftClick: P,
       handleRightClick: E
     } = (0, M.Z)({
-      facepileRef: S,
+      facepileRef: T,
       goToThread: n,
       channel: d
     }),
@@ -205,7 +205,7 @@ let ec = i.memo(function(e) {
       handleBlur: U
     } = (0, R.Z)(F);
   return (0, r.jsxs)("div", {
-    ref: C,
+    ref: _,
     "data-item-id": t,
     onClick: P,
     onContextMenu: E,
@@ -215,7 +215,7 @@ let ec = i.memo(function(e) {
     children: [(0, r.jsx)(g.P3F, eo({
       onClick: P,
       focusProps: {
-        ringTarget: C
+        ringTarget: _
       },
       onContextMenu: E,
       "aria-label": ei.intl.formatToPlainString(ei.t.pgYN6e, {
@@ -235,7 +235,7 @@ let ec = i.memo(function(e) {
             firstMessage: j,
             content: b,
             hasMediaAttachment: null != v,
-            originalAuthor: _
+            originalAuthor: C
           }), (null == j ? void 0 : j.blocked) || null == v ? null : (0, r.jsx)(eb, {
             channel: d,
             firstMedia: v
@@ -246,7 +246,7 @@ let ec = i.memo(function(e) {
         children: (0, r.jsx)(em, {
           channel: d,
           firstMessage: j,
-          facepileRef: S
+          facepileRef: T
         })
       })]
     })]
@@ -288,7 +288,7 @@ let eu = i.memo(function(e) {
     hasMediaAttachment: a,
     hasUnreads: s,
     originalAuthor: o
-  } = e, c = (0, h.e7)([S.Z], () => S.Z.isLoading(n.id)), d = (0, h.e7)([K.Z], () => K.Z.can(en.Plq.MANAGE_MESSAGES, n)), u = V.cC.useSetting(), m = (0, h.e7)([J.Z], () => J.Z.getGuildId()), {
+  } = e, c = (0, h.e7)([T.Z], () => T.Z.isLoading(n.id)), d = (0, h.e7)([K.Z], () => K.Z.can(en.Plq.MANAGE_MESSAGES, n)), u = V.cC.useSetting(), m = (0, h.e7)([J.Z], () => J.Z.getGuildId()), {
     contentPlaceholder: f,
     renderedContent: x
   } = null == t ? {
@@ -309,7 +309,7 @@ let eu = i.memo(function(e) {
     "aria-label": "",
     children: null == t ? c ? null : ei.intl.string(ei.t.mE3KJC) : f
   });
-  return (0, r.jsxs)(C.aQ.Provider, {
+  return (0, r.jsxs)(_.aQ.Provider, {
     value: (0, D.Z)(u, d),
     children: [null != o ? (0, r.jsx)(g.qEK, {
       size: g.EFr.SIZE_40,
@@ -337,7 +337,7 @@ function em(e) {
     firstMessage: i
   } = e, {
     isNew: a
-  } = (0, w.J$)(t), l = (0, _.Q)(t.id), s = (null == i ? void 0 : i.reactions) != null && i.reactions.length > 0;
+  } = (0, w.J$)(t), l = (0, C.Q)(t.id), s = (null == i ? void 0 : i.reactions) != null && i.reactions.length > 0;
   return (0, r.jsxs)("div", {
     className: ea.footer,
     children: [(0, r.jsxs)("div", {

@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => P,
-  _: () => T
+  _: () => S
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -22,8 +22,8 @@ var r = n(255367),
   b = n(585483),
   j = n(127654),
   v = n(228392),
-  _ = n(981631),
-  C = n(933897);
+  C = n(981631),
+  _ = n(933897);
 let y = {
     scale: .95,
     opacity: 0
@@ -41,7 +41,7 @@ let y = {
     friction: 52
   };
 
-function T(e) {
+function S(e) {
   let {
     channelId: t,
     onClick: n,
@@ -49,7 +49,7 @@ function T(e) {
     onMouseEnter: s
   } = e, u = i.useRef(null), m = (0, o.e7)([f.Z], () => f.Z.getChannel(t), [t]);
   return l()(null != m, "Forum Channel is null"), (0, r.jsxs)(c.P3F, {
-    className: C.uploadInput,
+    className: _.uploadInput,
     onMouseEnter: s,
     onClick: () => {
       (0, v.N3)({
@@ -65,12 +65,12 @@ function T(e) {
       }
     },
     children: [(0, r.jsx)(d.Z, {
-      className: C.fileInput,
+      className: _.fileInput,
       ref: u,
       onChange: e => {
         null == a || a(), (0, j.d)(e.currentTarget.files, m, x.d.FirstThreadMessage, {
           requireConfirm: !0
-        }), b.S.dispatch(_.CkL.TEXTAREA_FOCUS), e.currentTarget.value = null
+        }), b.S.dispatch(C.CkL.TEXTAREA_FOCUS), e.currentTarget.value = null
       },
       multiple: m.rateLimitPerUser <= 0,
       tabIndex: -1,
@@ -80,12 +80,12 @@ function T(e) {
       color: "currentColor",
       width: 28,
       height: 28,
-      className: C.uploadIcon
+      className: _.uploadIcon
     })]
   })
 }
 
-function S(e) {
+function T(e) {
   let {
     channelId: t,
     closePopout: n
@@ -97,17 +97,17 @@ function S(e) {
     config: N
   }, "animate-always"), x = (0, o.e7)([u.Z], () => u.Z.keyboardModeEnabled), b = (0, o.e7)([p.Z], () => p.Z.getUploads(t, m.Ie.CREATE_FORUM_POST.drafts.type));
   return (0, r.jsx)(s.animated.div, {
-    className: C.popoutContainer,
+    className: _.popoutContainer,
     onMouseLeave: () => {
       a || n()
     },
     style: f,
     children: (0, r.jsxs)(c.zJl, {
       orientation: "horizontal",
-      className: C.popout,
+      className: _.popout,
       paddingFix: !1,
       fade: !0,
-      children: [(0, r.jsx)(T, {
+      children: [(0, r.jsx)(S, {
         channelId: t,
         onClick: () => {
           l(!0)
@@ -116,7 +116,7 @@ function S(e) {
           l(!1), n()
         }
       }), (0, r.jsx)("div", {
-        className: C.uploads,
+        className: _.uploads,
         children: b.map(e => (0, r.jsx)(g.Z, {
           channelId: t,
           draftType: m.Ie.CREATE_FORUM_POST.drafts.type,
@@ -141,20 +141,20 @@ function P(e) {
     c && a(!0)
   };
   return (0, r.jsxs)("div", {
-    className: C.container,
+    className: _.container,
     children: [c ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(g.r, {
         upload: l[0],
         size: h.q.SMALL,
         onMouseEnter: d
       }), !n && (0, r.jsx)("div", {
-        className: C.badge,
+        className: _.badge,
         children: s
       })]
-    }) : (0, r.jsx)(T, {
+    }) : (0, r.jsx)(S, {
       onMouseEnter: d,
       channelId: t
-    }), n && (0, r.jsx)(S, {
+    }), n && (0, r.jsx)(T, {
       channelId: t,
       closePopout: () => {
         a(!1)

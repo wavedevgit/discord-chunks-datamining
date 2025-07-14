@@ -31,11 +31,11 @@ let b = i.memo(function(e) {
     return {
       guidelinesOpen: t
     }
-  }, o.X), v = (0, m.r_)(t), [_, C] = i.useState(!1), y = i.useCallback(e => {
+  }, o.X), v = (0, m.r_)(t), [C, _] = i.useState(!1), y = i.useCallback(e => {
     if (null == e) return;
     let t = e.clientHeight >= 220;
-    t !== _ && C(t)
-  }, [_]);
+    t !== C && _(t)
+  }, [C]);
   i.useLayoutEffect(() => {
     setTimeout(a, 350)
   }, [j, a]);
@@ -102,7 +102,7 @@ let b = i.memo(function(e) {
               allowList: !0
             })
           })
-        }), _ && (0, r.jsxs)("div", {
+        }), C && (0, r.jsxs)("div", {
           className: x.showMore,
           children: [(0, r.jsx)("div", {
             className: x.gradient

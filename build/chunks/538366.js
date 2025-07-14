@@ -22,7 +22,7 @@ function f(e) {
     guildId: f,
     tagFilter: x,
     channel: p
-  } = e, b = (0, d.r_)(p), j = (0, s.cD)(p), v = p.isMediaChannel(), _ = i.useCallback(() => {
+  } = e, b = (0, d.r_)(p), j = (0, s.cD)(p), v = p.isMediaChannel(), C = i.useCallback(() => {
     (0, u.qz)(), (0, l.ZDy)(async () => {
       let {
         default: e
@@ -60,7 +60,7 @@ function f(e) {
         }), n))
       }
     })
-  }, [f]), C = x.size > 0, y = j || b, O = !C && b && !v, w = i.useCallback(() => O ? _() : j ? void c.S.dispatch(m.CkL.FOCUS_COMPOSER_TITLE) : (0, m.VqG)(), [_, O, j]);
+  }, [f]), _ = x.size > 0, y = j || b, O = !_ && b && !v, w = i.useCallback(() => O ? C() : j ? void c.S.dispatch(m.CkL.FOCUS_COMPOSER_TITLE) : (0, m.VqG)(), [C, O, j]);
   return (0, r.jsxs)("div", {
     className: g.container,
     children: [(0, r.jsxs)("div", {
@@ -79,13 +79,13 @@ function f(e) {
     }), (0, r.jsx)(l.X6q, {
       className: g.header,
       variant: "heading-md/semibold",
-      children: C ? h.intl.formatToPlainString(h.t.lvPci4, {
+      children: _ ? h.intl.formatToPlainString(h.t.lvPci4, {
         numTags: x.size
       }) : h.intl.string(h.t.PwTMGx)
     }), (0, r.jsx)(l.Text, {
       color: "header-secondary",
       variant: "text-sm/normal",
-      children: C ? h.intl.formatToPlainString(h.t.AAeye3, {
+      children: _ ? h.intl.formatToPlainString(h.t.AAeye3, {
         numTags: x.size
       }) : h.intl.formatToPlainString(h.t.YtsXFB, {
         channelName: t
