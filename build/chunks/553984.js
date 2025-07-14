@@ -1,6 +1,6 @@
 /** Chunk was on 96127 **/
 n.d(t, {
-  Z: () => C,
+  Z: () => j,
   p: () => S
 }), n(539854), n(388685), n(361932), n(187205);
 var r = n(255367),
@@ -14,11 +14,12 @@ var r = n(255367),
   d = n(768943),
   h = n(175006),
   p = n(804932),
-  f = n(982183),
-  g = n(388032),
-  m = n(381231);
+  f = n(725739),
+  g = n(982183),
+  m = n(388032),
+  b = n(381231);
 
-function b(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +38,7 @@ function b(e) {
   return e
 }
 
-function _(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,7 +51,7 @@ function _(e, t) {
   }), e
 }
 
-function O(e, t) {
+function y(e, t) {
   if (null == e) return {};
   var n, r, i = function(e, t) {
     if (null == e) return {};
@@ -65,58 +66,60 @@ function O(e, t) {
   }
   return i
 }
-let y = () => {
+let v = () => {
     let e = (0, s.e7)([d.Z], () => d.Z.getSavedMessageCount());
     return (0, i.useMemo)(() => {
-      let t = [f.V5.ALL, f.V5.MENTIONS];
-      return ((0, h.Z)() || e > 0) && t.push(f.V5.BOOKMARKS), t.push(f.V5.ANNOUNCEMENTS), t
+      let t = [g.V5.ALL, g.V5.MENTIONS];
+      return ((0, h.Z)() || e > 0) && t.push(g.V5.BOOKMARKS), t.push(g.V5.ANNOUNCEMENTS), t
     }, [e])
   },
-  v = {
-    [f.V5.ALL]: !1,
-    [f.V5.BOOKMARKS]: !1,
-    [f.V5.MENTIONS]: !1,
-    [f.V5.ANNOUNCEMENTS]: !1
+  C = {
+    [g.V5.ALL]: !1,
+    [g.V5.BOOKMARKS]: !1,
+    [g.V5.MENTIONS]: !1,
+    [g.V5.ANNOUNCEMENTS]: !1
   };
 
-function C(e) {
-  let {
-    selectedFilter: t,
-    setSelectedFilter: n
-  } = e, l = f.by, s = y(), [c, u] = (0, i.useState)(v), d = s.filter(e => !c[e]);
+function j() {
+  let e = g.by,
+    t = v(),
+    [n, l] = (0, i.useState)(C),
+    s = t.filter(e => !n[e]),
+    {
+      selectedFilter: c,
+      setSelectedFilter: u
+    } = (0, f.Z)();
   return (0, r.jsxs)("div", {
-    className: m.filters,
+    className: b.filters,
     children: [(0, r.jsx)(a.njP, {
       look: "grey",
       orientation: "horizontal",
-      onItemSelect: n,
-      selectedItem: t,
-      className: m.tabBar,
-      children: s.flatMap(e => (0, r.jsx)(a.njP.Item, {
-        id: e,
-        "aria-label": e,
-        className: o()(m.filterButton, {
-          [m.selected]: t === e
+      onItemSelect: u,
+      selectedItem: c,
+      className: b.tabBar,
+      children: t.flatMap(t => (0, r.jsx)(a.njP.Item, {
+        id: t,
+        "aria-label": t,
+        className: o()(b.filterButton, {
+          [b.selected]: c === t
         }),
         disableItemStyles: !0,
-        children: (0, r.jsx)(j, {
-          setIsVisible: t => {
-            u(n => _(b({}, n), {
-              [e]: t
+        children: (0, r.jsx)(E, {
+          setIsVisible: e => {
+            l(n => O(_({}, n), {
+              [t]: e
             }))
           },
-          children: l[e]
+          children: e[t]
         })
-      }, e))
-    }), (0, r.jsx)(E, {
-      setSelectedFilter: n,
-      hiddenFilters: d,
-      selectedFilter: t
+      }, t))
+    }), (0, r.jsx)(x, {
+      hiddenFilters: s
     })]
   })
 }
 
-function j(e) {
+function E(e) {
   let {
     children: t,
     setIsVisible: n
@@ -127,53 +130,54 @@ function j(e) {
   })
 }
 
-function E(e) {
+function x(e) {
   let {
-    setSelectedFilter: t,
-    hiddenFilters: n,
-    selectedFilter: l
-  } = e, o = (0, i.useRef)(null), [s, c] = (0, i.useState)(!1), [d, h] = (0, i.useState)(!1), g = f.by;
-  return 0 === n.length ? null : (0, r.jsx)(a.yRy, {
+    hiddenFilters: t
+  } = e, n = (0, i.useRef)(null), [l, o] = (0, i.useState)(!1), [s, c] = (0, i.useState)(!1), d = g.by, {
+    selectedFilter: h,
+    setSelectedFilter: m
+  } = (0, f.Z)();
+  return 0 === t.length ? null : (0, r.jsx)(a.yRy, {
     position: "bottom",
     align: "left",
-    shouldShow: s,
-    targetElementRef: o,
-    onRequestClose: () => c(!1),
-    onRequestOpen: () => c(!0),
+    shouldShow: l,
+    targetElementRef: n,
+    onRequestClose: () => o(!1),
+    onRequestOpen: () => o(!0),
     renderPopout: e => {
       var {
-        closePopout: i
-      } = e, o = O(e, ["closePopout"]);
-      return (0, r.jsx)(a.v2r, _(b({
+        closePopout: n
+      } = e, i = y(e, ["closePopout"]);
+      return (0, r.jsx)(a.v2r, O(_({
         onSelect: () => {},
         navId: "notifications-sidebar-filters",
         "aria-label": "Notifications Sidebar Filters"
-      }, o), {
-        onClose: () => i(),
-        children: n.map(e => (0, r.jsx)(a.sNh, {
+      }, i), {
+        onClose: () => n(),
+        children: t.map(e => (0, r.jsx)(a.sNh, {
           id: e,
           action: () => {
-            t(t => t === e ? f.V5.ALL : e), (0, p.RZ)({
+            m(h === e ? g.V5.ALL : e), (0, p.RZ)({
               section: e,
               enabled: !0
             })
           },
-          label: g[e],
+          label: d[e],
           dontCloseOnAction: !0,
-          className: m.filterMenuItem,
-          icon: e === l ? (0, r.jsx)(x, {}) : void 0
+          className: b.filterMenuItem,
+          icon: e === h ? (0, r.jsx)(I, {}) : void 0
         }, e))
       }))
     },
-    children: e => (0, r.jsx)(a.P3F, _(b({}, e), {
-      className: m.filterButton,
-      innerRef: o,
-      onMouseEnter: () => h(!0),
-      onMouseLeave: () => h(!1),
+    children: e => (0, r.jsx)(a.P3F, O(_({}, e), {
+      className: b.filterButton,
+      innerRef: n,
+      onMouseEnter: () => c(!0),
+      onMouseLeave: () => c(!1),
       children: (0, r.jsx)(a.xhG, {
-        className: m.moreButtonIcon,
+        className: b.moreButtonIcon,
         size: "xxs",
-        color: d || s ? u.Z.INTERACTIVE_HOVER : u.Z.INTERACTIVE_NORMAL
+        color: s || l ? u.Z.INTERACTIVE_HOVER : u.Z.INTERACTIVE_NORMAL
       })
     }))
   })
@@ -181,70 +185,71 @@ function E(e) {
 
 function S(e) {
   let {
-    selectedFilter: t,
-    setSelectedFilter: n,
-    className: l
-  } = e, o = y(), s = (0, i.useRef)(null), [c, d] = (0, i.useState)(!1), [h, v] = (0, i.useState)(!1), C = f.by;
-  return 0 === o.length ? null : (0, r.jsx)(a.yRy, {
+    className: t
+  } = e, n = v(), l = (0, i.useRef)(null), [s, c] = (0, i.useState)(!1), [d, h] = (0, i.useState)(!1), C = g.by, {
+    selectedFilter: j,
+    setSelectedFilter: E
+  } = (0, f.Z)();
+  return 0 === n.length ? null : (0, r.jsx)(a.yRy, {
     position: "bottom",
     align: "left",
-    shouldShow: c,
-    targetElementRef: s,
-    onRequestClose: () => d(!1),
-    onRequestOpen: () => d(!0),
+    shouldShow: s,
+    targetElementRef: l,
+    onRequestClose: () => c(!1),
+    onRequestOpen: () => c(!0),
     autoInvert: !1,
     renderPopout: e => {
       var {
-        closePopout: i
-      } = e, l = O(e, ["closePopout"]);
-      return (0, r.jsx)(a.v2r, _(b({
+        closePopout: t
+      } = e, i = y(e, ["closePopout"]);
+      return (0, r.jsx)(a.v2r, O(_({
         onSelect: () => {},
         navId: "notifications-sidebar-filters",
         "aria-label": "Notifications Sidebar Filters"
-      }, l), {
-        onClose: () => i(),
-        children: o.map(e => (0, r.jsx)(a.sNh, {
+      }, i), {
+        onClose: () => t(),
+        children: n.map(e => (0, r.jsx)(a.sNh, {
           id: e,
           action: () => {
-            n(t => t === e ? f.V5.ALL : e), (0, p.RZ)({
+            E(j === e ? g.V5.ALL : e), (0, p.RZ)({
               section: e,
               enabled: !0
             })
           },
           label: C[e],
           dontCloseOnAction: !0,
-          className: m.filterMenuItem,
-          icon: e === t ? (0, r.jsx)(x, {}) : void 0
+          className: b.filterMenuItem,
+          icon: e === j ? (0, r.jsx)(I, {}) : void 0
         }, e))
       }))
     },
     children: e => (0, r.jsx)(a.ua7, {
       position: "bottom",
-      forceOpen: h,
-      shouldShow: h && !c,
-      text: g.intl.string(g.t.UdhTtr),
-      children: () => (0, r.jsx)(a.P3F, _(b({}, e), {
-        className: l,
-        innerRef: s,
+      forceOpen: d,
+      shouldShow: d && !s,
+      text: m.intl.string(m.t.UdhTtr),
+      children: () => (0, r.jsx)(a.P3F, O(_({}, e), {
+        className: o()(t, b.headerButton),
+        innerRef: l,
         onClick: t => {
           e.onClick(t)
         },
         onMouseEnter: () => {
           var t;
-          v(!0), null == (t = e.onMouseEnter) || t.call(e)
+          h(!0), null == (t = e.onMouseEnter) || t.call(e)
         },
         onMouseLeave: () => {
-          v(!1)
+          h(!1)
         },
         children: (0, r.jsx)(a.gXV, {
           size: "xs",
-          color: h || c ? u.Z.INTERACTIVE_HOVER : u.Z.INTERACTIVE_NORMAL
+          color: d || s ? u.Z.INTERACTIVE_HOVER : u.Z.INTERACTIVE_NORMAL
         })
       }))
     })
   })
 }
-let x = () => (0, r.jsx)(a.owK, {
+let I = () => (0, r.jsx)(a.owK, {
   size: "refresh_sm",
   color: "".concat(u.Z.BG_BRAND, " !important"),
   secondaryColor: u.Z.WHITE

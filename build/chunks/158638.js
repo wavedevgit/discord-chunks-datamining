@@ -1,11 +1,14 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  s: () => i
+  AR: () => l,
+  g1: () => s,
+  sT: () => o
 });
-var r = n(818083);
-n(981631), n(647086);
-let i = (0, r.B)({
+var r = n(818083),
+  i = n(981631),
+  a = n(647086);
+let o = (0, r.B)({
   kind: "guild",
   id: "2025-06_vanity_url_perk",
   label: "Vanity URL Standalone Perk",
@@ -19,4 +22,24 @@ let i = (0, r.B)({
       enabled: !0
     }
   }]
-})
+});
+
+function s(e, t) {
+  let n = null != e && e !== a._ && e !== i.I_8;
+  return o.useExperiment({
+    guildId: e,
+    location: t
+  }, {
+    disable: !n,
+    autoTrackExposure: !1
+  }).enabled
+}
+
+function l(e, t) {
+  return null != e && e !== a._ && e !== i.I_8 && o.getCurrentConfig({
+    guildId: e,
+    location: t
+  }, {
+    autoTrackExposure: !1
+  }).enabled
+}

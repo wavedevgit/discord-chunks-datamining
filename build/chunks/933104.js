@@ -2,7 +2,7 @@
 n.d(t, {
   $h: () => E,
   jG: () => j,
-  yI: () => S
+  yI: () => x
 });
 var r = n(255367);
 n(73800);
@@ -32,7 +32,7 @@ function j(e) {
     powerup: n,
     markAsDismissed: i
   } = e;
-  return (0, r.jsx)(x, {
+  return (0, r.jsx)(S, {
     asset: (0, r.jsx)(g.g, {
       className: v.image
     }),
@@ -53,7 +53,7 @@ function E(e) {
     guildId: t,
     markAsDismissed: n
   } = e, i = (0, p.Z)(t);
-  return (0, r.jsx)(x, {
+  return (0, r.jsx)(S, {
     asset: (0, r.jsx)("img", {
       alt: "",
       src: C.Z,
@@ -73,7 +73,7 @@ function E(e) {
   })
 }
 
-function S(e) {
+function x(e) {
   let {
     guildId: t,
     powerups: n,
@@ -87,7 +87,7 @@ function S(e) {
   if (0 === n.length) return;
   let a = n.length > 1 ? "".concat(n[0].title, " & ").concat(n[1].title) : "".concat(n[0].title),
     u = 1 === n.length;
-  return (0, r.jsx)(x, {
+  return (0, r.jsx)(S, {
     asset: 1 === n.length ? (0, r.jsx)(g.m, {
       className: v.image,
       powerup: n[0]
@@ -108,7 +108,7 @@ function S(e) {
   })
 }
 
-function x(e) {
+function S(e) {
   var {
     asset: t,
     header: n,

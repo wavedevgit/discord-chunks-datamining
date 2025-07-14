@@ -24,8 +24,8 @@ var r = n(255367),
   C = n(358221),
   j = n(706590),
   E = n(940777),
-  S = n(41776),
-  x = n(821020),
+  x = n(41776),
+  S = n(821020),
   I = n(770858),
   P = n(905423),
   N = n(822857),
@@ -193,11 +193,11 @@ function eu(e) {
     pathname: o
   } = (0, c.TH)(), s = o.startsWith(ee.Z5c.GUILD_MEMBER_VERIFICATION_FOR_HUB("")), a = (0, h.Wu)([D.Z, R.ZP], () => D.Z.getGuildIds().filter(e => R.ZP.isCurrentUserGuest(e))), u = i.concat(a), {
     entrypoint: d
-  } = x.Lk.useExperiment({
+  } = S.Lk.useExperiment({
     location: "GuildsBar"
   });
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(W.u, {}), d === x.u3.SERVER_RAIL_TOP && (0, r.jsx)(I.Z, {}), l ? (0, r.jsx)(E.Z, {}) : null, (0, r.jsx)(K.Z, {
+    children: [(0, r.jsx)(W.u, {}), d === S.u3.SERVER_RAIL_TOP && (0, r.jsx)(I.Z, {}), l ? (0, r.jsx)(E.Z, {}) : null, (0, r.jsx)(K.Z, {
       isOnHubVerificationRoute: s
     }), !t && (0, r.jsx)(B.Z, {}), u.map(e => (0, r.jsx)($.Z, {
       guildId: e
@@ -244,7 +244,7 @@ function eh(e) {
   } = e, [a] = (0, h.Wu)([L.ZP], () => {
     let e = L.ZP.getGuildsTree();
     return [e, e.version]
-  }), d = (0, h.e7)([S.Z], () => S.Z.lurkingGuildIds()), p = i.useMemo(() => n ? [] : d, [d, n]), b = (0, h.e7)([C.Z], () => C.Z.isFullscreenInContext()), [O, j] = i.useState(!1), E = i.useCallback(() => j(!0), []), A = i.useCallback(() => j(!1), []), R = i.useRef(!1), [D] = i.useState(() => new f.V7), B = i.useRef(null), V = i.useRef(null), F = (0, u.OP)(), {
+  }), d = (0, h.e7)([x.Z], () => x.Z.lurkingGuildIds()), p = i.useMemo(() => n ? [] : d, [d, n]), b = (0, h.e7)([C.Z], () => C.Z.isFullscreenInContext()), [O, j] = i.useState(!1), E = i.useCallback(() => j(!0), []), A = i.useCallback(() => j(!1), []), R = i.useRef(!1), [D] = i.useState(() => new f.V7), B = i.useRef(null), V = i.useRef(null), F = (0, u.OP)(), {
     ref: H
   } = F, W = eo(F, ["ref"]), K = (0, m.mFp)(), [q, J] = i.useState(!1), $ = (0, m.dQu)(g.Z.modules.guildbar.AVATAR_SIZE), er = (0, m.dQu)(g.Z.space.SPACE_XS), eh = i.useMemo(() => {
     let e = function(e, t) {
@@ -350,26 +350,26 @@ function eh(e) {
       onDiscoveryButtonClick: ej
     } = ey,
     eE = eo(ey, ["shouldShow", "questId", "onDiscoveryButtonClick"]),
-    eS = e_ && ev,
-    ex = (0, r.jsx)(z.Z, {
+    ex = e_ && ev,
+    eS = (0, r.jsx)(z.Z, {
       ref: eO,
-      questId: eS ? eC : void 0,
+      questId: ex ? eC : void 0,
       selected: eg,
       className: en.discoveryIcon,
-      onClick: eS ? ej : void 0
+      onClick: ex ? ej : void 0
     }),
-    eI = eS ? (0, r.jsx)(w.MP, el(ei({
+    eI = ex ? (0, r.jsx)(w.MP, el(ei({
       targetElementRef: eO,
       isGuildBarScrolling: q
     }, eE), {
-      children: ex
-    })) : ex,
+      children: eS
+    })) : eS,
     {
       entrypoint: eP
-    } = x.Lk.useExperiment({
+    } = S.Lk.useExperiment({
       location: "GuildsBar"
     }),
-    eN = eP === x.u3.SERVER_RAIL_BOTTOM;
+    eN = eP === S.u3.SERVER_RAIL_BOTTOM;
   return (0, r.jsx)(v.Gt, {
     value: ep,
     children: (0, r.jsx)(m.f6W, {

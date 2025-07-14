@@ -1,6 +1,6 @@
 /** Chunk was on 96127 **/
 n.d(t, {
-  Z: () => x
+  Z: () => S
 }), n(388685), n(539854);
 var r = n(570140),
   i = n(317770),
@@ -43,7 +43,7 @@ let f = (0, l.uk)("poggermode_applause", o.Z.getSoundpack()),
       n = a.Z.isConnected();
     b.push([e, t * (n ? .1 : 1)]), C()
   };
-class S extends i.Z {
+class x extends i.Z {
   _initialize() {
     h.ZP.addChangeListener(this.startAudio), r.Z.subscribe("RTC_CONNECTION_STATE", this.setVolume), r.Z.subscribe("TYPING_STOP", this.stopAudio), r.Z.subscribe("TYPING_STOP_LOCAL", this.stopAudio), r.Z.subscribe("CHANNEL_SELECT", this.stopAudio), r.Z.subscribe("POGGERMODE_SETTINGS_UPDATE", this.stopAudio)
   }
@@ -80,4 +80,4 @@ class S extends i.Z {
     v() && E("poggermode_achievement_unlock")
   }
 }
-let x = new S
+let S = new x

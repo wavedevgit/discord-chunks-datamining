@@ -1,6 +1,6 @@
 /** Chunk was on 96127 **/
 n.d(t, {
-  Z: () => S
+  Z: () => x
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -35,7 +35,7 @@ function E(e) {
     selectedOverride: p = !1,
     popoutProps: g,
     ref: _
-  } = e, v = (0, l.Ie)("notifications-inbox"), [E, S] = i.useState(!1), x = (0, b.D)(), I = p || x, {
+  } = e, v = (0, l.Ie)("notifications-inbox"), [E, x] = i.useState(!1), S = (0, b.D)(), I = p || S, {
     unreadRecentMentionsCount: P,
     unreadChannelIds: N
   } = (0, b.O4)(), {
@@ -87,8 +87,8 @@ function E(e) {
           onClick: h,
           to: D,
           selected: I || E,
-          onMouseEnter: () => S(!0),
-          onMouseLeave: () => S(!1),
+          onMouseEnter: () => x(!0),
+          onMouseLeave: () => x(!1),
           children: (0, r.jsx)(A, {
             size: "custom",
             color: "currentColor",
@@ -111,7 +111,7 @@ function E(e) {
   })
 }
 
-function S() {
+function x() {
   let e = i.useRef(null),
     {
       notificationCenterVariant: t

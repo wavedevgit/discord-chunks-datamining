@@ -36,11 +36,11 @@ var r = n(255367),
   A = n(233037),
   k = n(810013),
   M = n(537135),
-  D = n(641115),
-  L = n(143135),
+  L = n(641115),
+  D = n(143135),
   B = n(70722),
-  G = n(981631),
-  U = n(526761),
+  U = n(981631),
+  G = n(526761),
   W = n(388032),
   F = n(14383),
   z = n(347226);
@@ -53,7 +53,7 @@ function H(e) {
     onChangeSource: l
   } = e, s = (0, o.e7)([h.ZP, O.Z], () => (0, N.isWindows)() ? (0, E.Z)(h.ZP, O.Z) : null), d = (0, o.e7)([u.Z], () => (null == s ? void 0 : s.id) != null ? u.Z.getApplication(s.id) : null), f = (0, o.e7)([h.ZP], () => h.ZP.getRunningGames()), m = (0, o.Wu)([u.Z], () => f.map(e => null != e.id ? u.Z.getApplication(e.id) : null).filter(w.lm), [f]), x = null;
   if (null != t ? x = t.name : null != s && (x = s.name), null == x) return null;
-  let g = (0, L.Z)(s, t, f),
+  let g = (0, D.Z)(s, t, f),
     _ = i ? m.find(e => {
       let {
         id: t
@@ -142,7 +142,7 @@ function X(e) {
     var e;
     return null != (e = j.Z.getMemberCount(t)) ? e : 0
   }), l = g.eo.useSetting(), a = i.useCallback((e, t) => {
-    g.eo.updateSetting(t), Z.default.track(G.rMx.NOTIFY_STREAM_SETTING_UPDATE, {
+    g.eo.updateSetting(t), Z.default.track(U.rMx.NOTIFY_STREAM_SETTING_UPDATE, {
       value: t
     })
   }, []);
@@ -165,18 +165,18 @@ function J(e) {
     enabled: t,
     onChange: n,
     screen: l
-  } = e, o = i.useCallback((e, t) => {
+  } = e, a = i.useCallback((e, t) => {
     n(t)
-  }, [n]);
+  }, [n]), d = (0, o.e7)([S.Z], () => S.Z.getUseSystemScreensharePicker() && (0, N.isLinux)());
   return (0, r.jsx)(c.xJW, {
     className: s()(z.modalContent, F.checkboxRow),
     children: (0, r.jsx)(c.XZJ, {
       value: t,
       type: c.XZJ.Types.INVERTED,
-      onChange: o,
+      onChange: a,
       children: (0, r.jsx)(c.Text, {
         variant: "text-sm/normal",
-        children: l ? W.intl.string(W.t["5Adrtb"]) : W.intl.string(W.t.gRpbRE)
+        children: l || d ? W.intl.string(W.t["5Adrtb"]) : W.intl.string(W.t.gRpbRE)
       })
     })
   })
@@ -225,7 +225,7 @@ function q(e) {
     onChangeSource: N,
     onChangeAudioDevice: E,
     onChangeGuild: M,
-    onChangeSound: L,
+    onChangeSound: D,
     onChangePreviewDisabled: B
   } = e, z = (0, o.e7)([C.Z, v.Z], () => v.Z.getChannel(C.Z.getVoiceChannelId())), q = (0, o.e7)([T.Z], () => T.Z.GPUDriversOutdated), Q = (0, o.e7)([T.Z], () => T.Z.problematicGPUDriver), $ = (0, o.e7)([y.default], () => y.default.getCurrentUser()), ee = (0, P.Z)();
   null != t && t.id.startsWith("screen") && !S.Z.supportsScreenSoundshare() && (ee = W.intl.string(W.t["1b0Gm5"]));
@@ -248,7 +248,7 @@ function q(e) {
         text: ee
       }) : null, null != t && null == ee ? (0, r.jsx)(J, {
         enabled: x,
-        onChange: L,
+        onChange: D,
         screen: t.id.startsWith("screen")
       }) : null]
     }), p && null != u ? (0, r.jsx)(V, {
@@ -266,19 +266,19 @@ function q(e) {
       text: W.intl.string(W.t.q65tS0)
     }) : null, Q ? (0, r.jsx)(Y, {
       text: W.intl.format(W.t.RrLvub, {
-        helpCenterLink: I.Z.getArticleURL(G.BhN.NVIDIA_DRIVER_ISSUES)
+        helpCenterLink: I.Z.getArticleURL(U.BhN.NVIDIA_DRIVER_ISSUES)
       })
     }) : null, ei && (0, r.jsx)(_.Z, {
       look: _.z.WARNING,
       className: F.hardwareWarning,
       children: W.intl.format(W.t.zCLXws, {
         onClick: () => {
-          j(), d.Z.open(G.oAB.VOICE, U.gP, {
-            scrollPosition: U.KQ.VoiceAndVideoScrollPositions.HARDWARE_ACCELERATION
+          j(), d.Z.open(U.oAB.VOICE, G.gP, {
+            scrollPosition: G.KQ.VoiceAndVideoScrollPositions.HARDWARE_ACCELERATION
           })
         }
       })
-    }), (0, r.jsx)(D.Z, {
+    }), (0, r.jsx)(L.Z, {
       selectedPreset: s,
       selectedFPS: n,
       selectedResolution: a,

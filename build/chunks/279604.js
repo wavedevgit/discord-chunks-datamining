@@ -75,7 +75,7 @@ function _(e, t) {
   } = (0, s.ZP)(), [O, y] = i.useState(!1), [v, C] = i.useState(void 0), j = (0, l.e7)([h.Z], () => {
     var t, n;
     return null != (n = null == (t = h.Z.getStateForGuild(e)) ? void 0 : t.appliedBoosts) ? n : 0
-  }), E = (0, l.e7)([u.Z], () => u.Z.getGuild(e)), S = Math.max((null != (m = null == E ? void 0 : E.premiumSubscriberCount) ? m : 0) - j, 0), x = i.useCallback(n => {
+  }), E = (0, l.e7)([u.Z], () => u.Z.getGuild(e)), x = Math.max((null != (m = null == E ? void 0 : E.premiumSubscriberCount) ? m : 0) - j, 0), S = i.useCallback(n => {
     let r = n ? d.H6 : d.Th;
     return y(!0), C(void 0), r(e, t.skuId).catch(e => {
       var t;
@@ -84,16 +84,16 @@ function _(e, t) {
       y(!1)
     })
   }, [e, t.skuId]), I = i.useCallback(e => {
-    if (e.stopPropagation(), null != E) return S < t.cost ? void(0, a.u)({
+    if (e.stopPropagation(), null != E) return x < t.cost ? void(0, a.u)({
       analyticsLocation: {
         page: f.ZY5.GUILD_POWERUPS_OVERVIEW,
         section: f.jXE.GUILD_POWERUPS_OVERVIEW_CARD
       },
-      numberOfBoostsToAdd: t.cost - S,
+      numberOfBoostsToAdd: t.cost - x,
       analyticsLocations: _,
       guild: E,
       intent: t.type === p.Us.LEVEL ? c.P.LEVEL : c.P.PERK,
-      onSubscribeComplete: () => x(!0).then(() => {
+      onSubscribeComplete: () => S(!0).then(() => {
         (0, o.ZDy)(async () => {
           let {
             default: e
@@ -104,7 +104,7 @@ function _(e, t) {
           }, n))
         })
       })
-    }) : x(!0).then(() => {
+    }) : S(!0).then(() => {
       (0, o.ZDy)(async () => {
         let {
           default: e
@@ -115,7 +115,7 @@ function _(e, t) {
         }, n))
       })
     })
-  }, [x, t, S, _, E]), P = i.useCallback(e => (e.stopPropagation(), x(!1)), [x]);
+  }, [S, t, x, _, E]), P = i.useCallback(e => (e.stopPropagation(), S(!1)), [S]);
   return {
     isLoading: O,
     error: v,

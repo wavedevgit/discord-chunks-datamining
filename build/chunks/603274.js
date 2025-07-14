@@ -25,9 +25,9 @@ var i = n(120356),
   C = n(981631),
   j = n(388032),
   E = n(714509),
-  S = n(375613);
+  x = n(375613);
 
-function x(e, t) {
+function S(e, t) {
   return 0 === t.length ? null : (0, r.jsxs)("div", {
     className: E.row,
     children: [(0, r.jsx)(e, {
@@ -63,7 +63,7 @@ function I() {
       for (let t of i) e += p.Z.getParticipantCount(t, f.pV.AUDIENCE);
       return e
     }),
-    S = (0, a.Wu)([g.Z], () => g.Z.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [t]),
+    x = (0, a.Wu)([g.Z], () => g.Z.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [t]),
     I = (0, a.Wu)([d.ZP], () => {
       let e = d.ZP.getEmbeddedActivitiesByChannel(),
         n = [];
@@ -74,8 +74,8 @@ function I() {
       return n
     }, [t]),
     P = (0, a.Wu)([b.default], () => I.map(e => b.default.getUser(e)), [I]),
-    N = (0, a.Wu)([b.default], () => S.map(e => b.default.getUser(e)), [S]),
-    w = x(c.gj8, l.filter(e => !S.includes(e.id) && !I.includes(e.id))),
+    N = (0, a.Wu)([b.default], () => x.map(e => b.default.getUser(e)), [x]),
+    w = S(c.gj8, l.filter(e => !x.includes(e.id) && !I.includes(e.id))),
     Z = 0 === o.length ? null : (0, r.jsxs)("div", {
       className: E.row,
       children: [(0, r.jsx)(c.ewx, {
@@ -99,7 +99,7 @@ function I() {
         })]
       })]
     }),
-    T = x(c.hGI, N.filter(e => null != e && !I.includes(e.id))),
+    T = S(c.hGI, N.filter(e => null != e && !I.includes(e.id))),
     {
       enabled: A
     } = u.c.useExperiment({
@@ -107,7 +107,7 @@ function I() {
     }, {
       autoTrackExposure: !0
     }),
-    R = x(A ? c.iWm : c.nG3, P);
+    R = S(A ? c.iWm : c.nG3, P);
   return (0, r.jsxs)(r.Fragment, {
     children: [Z, w, T, R]
   })
@@ -137,7 +137,7 @@ function N(e) {
     position: "right",
     text: (0, r.jsx)(P, {}),
     "aria-label": t,
-    tooltipClassName: S.listItemTooltip,
+    tooltipClassName: x.listItemTooltip,
     onTooltipShow: n,
     children: e => {
       var t, n;

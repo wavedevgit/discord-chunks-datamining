@@ -1,6 +1,6 @@
 /** Chunk was on 96127 **/
 n.d(t, {
-  Z: () => S
+  Z: () => x
 }), n(388685), n(642613);
 var r = n(255367),
   i = n(73800),
@@ -40,7 +40,7 @@ function E(e) {
   })
 }
 
-function S(e) {
+function x(e) {
   let {
     setTab: t,
     badgeState: n,
@@ -49,10 +49,10 @@ function S(e) {
     initialized: c,
     items: v,
     loading: j,
-    loadMore: S
-  } = (0, p.y6)(), x = (0, s.e7)([u.Z], () => u.Z.localItems), I = (0, g.Us)({
+    loadMore: x
+  } = (0, p.y6)(), S = (0, s.e7)([u.Z], () => u.Z.localItems), I = (0, g.Us)({
     location: "ForYou"
-  }), P = i.useMemo(() => [...[...v, ...x].sort((e, t) => -1 * _.default.compare(e.id, t.id))], [v, x]), N = v.length > 0 ? v[0] : null, w = m.d$.useSetting(), Z = i.useMemo(() => {
+  }), P = i.useMemo(() => [...[...v, ...S].sort((e, t) => -1 * _.default.compare(e.id, t.id))], [v, S]), N = v.length > 0 ? v[0] : null, w = m.d$.useSetting(), Z = i.useMemo(() => {
     if (null != N && 0 >= _.default.compare(N.id, w)) return !1;
     for (let e of P) {
       if (0 >= _.default.compare(e.id, w)) break;
@@ -80,7 +80,7 @@ function S(e) {
       initialized: c,
       items: P,
       loading: j,
-      loadMore: S
+      loadMore: x
     })]
   })
 }

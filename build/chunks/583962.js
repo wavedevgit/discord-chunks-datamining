@@ -26,8 +26,8 @@ var r = n(255367),
   C = n(267642),
   j = n(624138),
   E = n(667815),
-  S = n(531572),
-  x = n(651138),
+  x = n(531572),
+  S = n(651138),
   I = n(18857),
   P = n(981631),
   N = n(921944),
@@ -77,9 +77,9 @@ let D = (0, j.Mg)(d.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
     let {
       guild: t,
       withMargin: n
-    } = e, l = (0, C.Jh)(t.id), d = (0, b.Z)(t.id), j = (0, C.FZ)(l), D = null == j, L = null != j ? j : l, M = (0, c.e7)([S.Z], () => {
+    } = e, l = (0, C.Jh)(t.id), d = (0, b.Z)(t.id), j = (0, C.FZ)(l), D = null == j, L = null != j ? j : l, M = (0, c.e7)([x.Z], () => {
       var e;
-      return null != (e = S.Z.getCountForGuild(t.id)) ? e : 0
+      return null != (e = x.Z.getCountForGuild(t.id)) ? e : 0
     }), U = (0, c.e7)([O.Z], () => O.Z.can(P.Plq.MANAGE_GUILD, t));
     i.useEffect(() => {
       M !== d && (0, E.v)(t.id, d)
@@ -155,7 +155,7 @@ let D = (0, j.Mg)(d.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
                 [T.containerWithMargin]: n
               }),
               onContextMenu: e => {
-                U && (0, p.vq)(e, e => (0, r.jsx)(x.default, R(A({}, e), {
+                U && (0, p.vq)(e, e => (0, r.jsx)(S.default, R(A({}, e), {
                   guild: t
                 })))
               },

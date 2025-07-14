@@ -1,123 +1,128 @@
 /** Chunk was on 46746 **/
 n.d(t, {
-  Z: () => S
+  Z: () => O
 }), n(388685);
 var r = n(255367);
 n(73800);
 var i = n(120356),
   l = n.n(i),
   s = n(268146),
-  o = n(481060),
-  a = n(925329),
-  c = n(72897),
-  d = n(668519),
-  u = n(672811),
-  f = n(891180),
-  m = n(556389),
-  h = n(615161),
-  p = n(396678),
-  x = n(37113),
-  g = n(676462),
-  _ = n(388032),
-  v = n(326879);
+  o = n(442837),
+  a = n(481060),
+  c = n(925329),
+  d = n(72897),
+  u = n(131951),
+  f = n(358085),
+  m = n(668519),
+  h = n(672811),
+  p = n(891180),
+  x = n(556389),
+  g = n(615161),
+  _ = n(396678),
+  v = n(37113),
+  j = n(676462),
+  b = n(388032),
+  S = n(326879);
 
-function j() {
+function C() {
   return (0, r.jsx)("span", {
-    className: v.ellipsis,
+    className: S.ellipsis,
     children: "•"
   })
 }
 
-function b(e) {
+function y(e) {
   let {
     source: t
   } = e;
-  return null == t ? (0, r.jsx)(o.hGI, {
-    className: v.screenArrowIcon,
+  return null == t ? (0, r.jsx)(a.hGI, {
+    className: S.screenArrowIcon,
     size: "md",
     color: "currentColor"
-  }) : (0, m.T)(t) ? (0, r.jsx)(a.Z, {
+  }) : (0, x.T)(t) ? (0, r.jsx)(c.Z, {
     game: null,
     pid: t.pid
-  }) : null == t.icon || "" === t.icon ? (0, r.jsx)(o.hGI, {
-    className: v.screenArrowIcon,
+  }) : null == t.icon || "" === t.icon ? (0, r.jsx)(a.hGI, {
+    className: S.screenArrowIcon,
     size: "md",
     color: "currentColor"
   }) : (0, r.jsx)("img", {
     src: t.icon,
     alt: "",
-    className: v.sourceIcon
+    className: S.sourceIcon
   })
 }
 
-function S(e) {
-  var t, n, i, a;
+function O(e) {
+  var t, n, i, c;
   let {
-    nativePickerEnabled: m
+    nativePickerEnabled: x
   } = e, [{
-    preset: S,
-    resolution: C,
-    fps: y,
-    muteStreamAudio: O,
-    selectedSource: Z,
-    sourceType: w,
-    audioSourceId: I
-  }] = (0, h.E_)(), {
-    twoClickVariant: N
-  } = (0, d.a)({
+    preset: O,
+    resolution: Z,
+    fps: w,
+    muteStreamAudio: I,
+    selectedSource: N,
+    sourceType: T,
+    audioSourceId: E
+  }] = (0, g.E_)(), {
+    twoClickVariant: P
+  } = (0, m.a)({
     location: "go_live_modal_refresh",
     autoTrackExposure: !1
-  }), T = (0, c.zX)({
+  }), R = (0, d.zX)({
     location: "StreamSettingsSummary"
-  }), [E, P] = null != (i = (0, p.Z)(S)) ? i : [C, y], R = (0, u.L)(S), A = (0, f.M)(E), k = w === s.vA.CAMERA, M = null != Z || !!N && (!m || k), D = null != Z ? null == Z || null == (t = Z.id) ? void 0 : t.startsWith(s.vA.CAMERA) : k, L = M ? void 0 : S === x.tI.PRESET_VIDEO ? _.intl.string(g.default.MuHUFR) : S === x.tI.PRESET_DOCUMENTS ? _.intl.string(g.default.y0JuYW) : void 0;
+  }), [A, k] = null != (i = (0, _.Z)(O)) ? i : [Z, w], M = (0, h.L)(O), L = (0, p.M)(A), D = T === s.vA.CAMERA, B = null != N || !!P && (!x || D), U = null != N ? null == N || null == (t = N.id) ? void 0 : t.startsWith(s.vA.CAMERA) : D, G = B ? void 0 : O === v.tI.PRESET_VIDEO ? b.intl.string(j.default.MuHUFR) : O === v.tI.PRESET_DOCUMENTS ? b.intl.string(j.default.y0JuYW) : void 0, W = (0, o.e7)([u.Z], () => u.Z.getUseSystemScreensharePicker() && (0, f.isLinux)());
   return (0, r.jsxs)("div", {
-    className: v.root,
-    children: [M && (0, r.jsx)(b, {
-      source: Z
+    className: S.root,
+    children: [B && (0, r.jsx)(y, {
+      source: N
     }), (0, r.jsxs)("div", {
-      className: v.summary,
-      children: [(0, r.jsx)(o.Text, {
-        className: v.sourceOrPresetName,
+      className: S.summary,
+      children: [(0, r.jsx)(a.Text, {
+        className: S.sourceOrPresetName,
         variant: "text-md/semibold",
         color: "header-primary",
-        children: M ? null != (a = null == Z ? void 0 : Z.name) ? a : _.intl.string(g.default["hJMA+/"]) : R
-      }), (0, r.jsxs)(o.Text, {
-        className: v.summaryDetail,
+        children: B ? null != (c = null == N ? void 0 : N.name) ? c : b.intl.string(j.default["hJMA+/"]) : M
+      }), (0, r.jsxs)(a.Text, {
+        className: S.summaryDetail,
         variant: "text-xs/medium",
         color: "text-muted",
-        children: [M && (0, r.jsxs)(r.Fragment, {
+        children: [B && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsxs)("span", {
-            className: v.iconSummaryContainer,
-            children: [(0, r.jsx)(o.ewm, {
-              className: v.icon,
+            className: S.iconSummaryContainer,
+            children: [(0, r.jsx)(a.ewm, {
+              className: S.icon,
               size: "xxs",
               color: "currentColor"
-            }), R]
-          }), (0, r.jsx)(j, {})]
-        }), null != L && (0, r.jsxs)(r.Fragment, {
+            }), M]
+          }), (0, r.jsx)(C, {})]
+        }), null != G && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)("span", {
-            children: L
-          }), (0, r.jsx)(j, {})]
+            children: G
+          }), (0, r.jsx)(C, {})]
         }), (0, r.jsx)("span", {
-          children: A
-        }), (0, r.jsx)(j, {}), (0, r.jsx)("span", {
-          children: "".concat(P, "fps")
-        }), O && (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(j, {}), (0, r.jsxs)("span", {
-            className: v.iconSummaryContainer,
-            children: [(0, r.jsx)(o.OyP, {
-              className: l()(v.icon, v.mutedIcon),
+          children: L
+        }), (0, r.jsx)(C, {}), (0, r.jsx)("span", {
+          children: "".concat(k, "fps")
+        }), I && (0, r.jsxs)(r.Fragment, {
+          children: [(0, r.jsx)(C, {}), (0, r.jsxs)("span", {
+            className: S.iconSummaryContainer,
+            children: [(0, r.jsx)(a.OyP, {
+              className: l()(S.icon, S.mutedIcon),
               size: "xxs",
               color: "currentColor"
-            }), _.intl.string(g.default.FzMGWV)]
+            }), b.intl.string(j.default.FzMGWV)]
           })]
-        }), D ? (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(j, {}), (0, r.jsx)("span", {
-            children: null == (n = T.find(e => {
+        }), !I && !U && W && (0, r.jsxs)(r.Fragment, {
+          children: [(0, r.jsx)(C, {}), b.intl.string(j.default["n9/rUl"])]
+        }), U ? (0, r.jsxs)(r.Fragment, {
+          children: [(0, r.jsx)(C, {}), (0, r.jsx)("span", {
+            children: null == (n = R.find(e => {
               let {
                 id: t
               } = e;
-              return I === t
+              return E === t
             })) ? void 0 : n.name
           })]
         }) : null]

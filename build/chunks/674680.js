@@ -61,13 +61,13 @@ function g(e) {
     C = (0, i.wj)(m) ? p : f,
     j = (_.size - _.offset - 2 * _.stroke) * .8,
     E = _.size - _.stroke,
-    S = {
+    x = {
       width: .4 * j,
       height: .4 * j
     },
-    x = {
-      width: S.width + 1,
-      height: S.height + 1,
+    S = {
+      width: x.width + 1,
+      height: x.height + 1,
       right: _.stroke + 1,
       bottom: _.stroke + 1,
       padding: 0
@@ -90,17 +90,17 @@ function g(e) {
       })
     }), !u && (0, r.jsx)("div", {
       className: d.lockContainer,
-      style: x,
+      style: S,
       children: (0, r.jsx)(l.mBM, h({
         size: "custom",
         color: (0, s.Lq)(C.locked)
-      }, S))
+      }, x))
     }), u && y === c.EP.LEGENDARY && (0, r.jsx)("div", {
       className: d.lockContainer,
-      style: x,
+      style: S,
       children: (0, r.jsx)(a.Z, h({
         className: d.confettiIcon
-      }, S))
+      }, x))
     })]
   })
 }

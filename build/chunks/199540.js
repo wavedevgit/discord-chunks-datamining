@@ -91,8 +91,8 @@ function b(e) {
     treeItemProps: {
       onFocus: E
     },
-    "aria-setsize": S,
-    "aria-posinset": x
+    "aria-setsize": x,
+    "aria-posinset": S
   } = e, I = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
@@ -143,8 +143,8 @@ function b(e) {
       }
     }, I), n = n = {
       role: "treeitem",
-      "aria-setsize": S,
-      "aria-posinset": x,
+      "aria-setsize": x,
+      "aria-posinset": S,
       "aria-expanded": o,
       "aria-owns": _,
       children: (0, r.jsxs)(a.aRk, {

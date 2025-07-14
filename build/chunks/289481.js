@@ -1,6 +1,6 @@
 /** Chunk was on 96127 **/
 n.d(t, {
-  Z: () => S
+  Z: () => x
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -42,7 +42,7 @@ function E(e) {
   }
   return e
 }
-let S = i.memo(function(e) {
+let x = i.memo(function(e) {
     let {
       channel: t,
       deleteChannel: n
@@ -80,10 +80,10 @@ let S = i.memo(function(e) {
     return (0, r.jsx)(s.animated.div, {
       ref: l,
       style: f,
-      children: (0, r.jsx)(x, E({}, e))
+      children: (0, r.jsx)(S, E({}, e))
     })
   }),
-  x = i.memo(function(e) {
+  S = i.memo(function(e) {
     let {
       channel: t,
       onJump: n,

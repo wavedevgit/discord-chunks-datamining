@@ -28,7 +28,7 @@ class h extends i.Z {
     let e = s.Z.getGuildId();
     if (null == e || e === _._ || e === f.I_8) return;
     let t = a.Z.getGuild(e);
-    null != t && (u.s.trackExposure({
+    null != t && (u.sT.trackExposure({
       guildId: t.id,
       location: "GuildPowerupsManager"
     }), (0, d.D)(o.Z, t) && (c.Z.shouldFetchCatalogForGuild(e) && (0, l.Sn)(e), c.Z.shouldFetchPowerupsForGuild(e) && (0, l.Fm)(e)))

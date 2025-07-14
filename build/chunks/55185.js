@@ -87,7 +87,7 @@ function E(e) {
   })
 }
 
-function S(e) {
+function x(e) {
   let {
     children: t,
     closePopout: n
@@ -128,11 +128,11 @@ function S(e) {
   })
 }
 
-function x(e) {
+function S(e) {
   let {
     closePopout: t
   } = e, n = d.G6.useSetting();
-  return (0, i.jsxs)(S, {
+  return (0, i.jsxs)(x, {
     closePopout: t,
     children: [(0, i.jsx)(u.Text, {
       variant: "text-xs/normal",
@@ -156,7 +156,7 @@ function I(e) {
   let {
     closePopout: t
   } = e;
-  return (0, i.jsxs)(S, {
+  return (0, i.jsxs)(x, {
     closePopout: t,
     children: [(0, i.jsx)(u.Text, {
       variant: "text-xs/normal",
@@ -175,7 +175,7 @@ function P(e) {
   let {
     closePopout: t
   } = e, n = d.G6.useSetting();
-  return (0, i.jsxs)(S, {
+  return (0, i.jsxs)(x, {
     closePopout: t,
     children: [(0, i.jsx)(u.Text, {
       variant: "text-xs/normal",
@@ -201,7 +201,7 @@ function N(e) {
   } = e, n = d.G6.useSetting(), {
     showLinkToSettings: r
   } = (0, g.D)("popout");
-  return (0, i.jsxs)(S, {
+  return (0, i.jsxs)(x, {
     children: [(0, i.jsx)(E, {
       showCurrentGame: n,
       closePopout: t
@@ -223,7 +223,7 @@ function w(e) {
   let {
     closePopout: t
   } = e;
-  return (0, i.jsxs)(S, {
+  return (0, i.jsxs)(x, {
     children: [(0, i.jsx)(o.X6, {
       variant: "heading-sm/semibold",
       color: "header-primary",
@@ -247,7 +247,7 @@ function Z(e) {
   } = e, n = d.G6.useSetting(), {
     showLinkToSettings: r
   } = (0, g.D)("popout");
-  return (0, i.jsxs)(S, {
+  return (0, i.jsxs)(x, {
     children: [(0, i.jsx)(E, {
       showCurrentGame: n,
       shouldShowStatus: !0,
@@ -277,7 +277,7 @@ function A(e) {
       r()
     }, [r]), o) {
     case 0:
-      return (0, i.jsx)(x, {
+      return (0, i.jsx)(S, {
         closePopout: n
       });
     case 1:
