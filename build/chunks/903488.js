@@ -216,7 +216,7 @@ class L extends(r = i.ZP.Store) {
   getLastSearchAnalyticsId() {
     return p
   }
-  isSearchStateActive(e) {
+  hasSearchState(e) {
     return _.has(e)
   }
 }

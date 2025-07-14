@@ -1,6 +1,6 @@
 /**
   Module ID: 19577
-  Original File Name: 8efeacaee765f636
+  Original File Name: 494d10072d6c44a1
 **/
 .debugMode_fa952e {
     background-color: rgba(255,0,0,.25);
@@ -7181,9 +7181,8 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     width: 232px
 }
 
-.button__7ff28 {
-    margin-top: 24px;
-    width: 100%
+.stickerExpanded__7ff28 {
+    margin-bottom: 24px
 }
 
 .containerCompact__7ff28 {
@@ -13723,4 +13722,4 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     position: relative
 }
 
-/*# sourceMappingURL=8efeacaee765f636.css.map*/
+/*# sourceMappingURL=494d10072d6c44a1.css.map*/

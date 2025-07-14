@@ -1,6 +1,6 @@
 /**
   Module ID: 26179
-  Original File Name: 58e8d9ca4d70b37a
+  Original File Name: f81179421900e370
 **/
 @use postcss-pxtorem;
 
@@ -1676,7 +1676,8 @@
 .mainContent__8641f {
     align-items: start;
     display: flex;
-    flex-direction: row
+    flex-direction: row;
+    margin-bottom: 16px
 }
 
 .roleIconContainer__8641f {
@@ -1690,10 +1691,6 @@
 
 .truncatingText__8641f {
     min-width: 0
-}
-
-.ctaButton__8641f {
-    margin: 16px auto 0
 }
 
 .ctaButtonContent__8641f {
@@ -1867,4 +1864,4 @@
     margin: 0 var(--space-40)
 }
 
-/*# sourceMappingURL=58e8d9ca4d70b37a.css.map*/
+/*# sourceMappingURL=f81179421900e370.css.map*/

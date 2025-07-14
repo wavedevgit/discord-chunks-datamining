@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  o: () => I,
-  p: () => v
+  o: () => v,
+  p: () => O
 });
 var r, i = n(255367),
   a = n(73800),
@@ -72,12 +72,8 @@ function y(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let O = {
-  DEFAULT: p.inputDefault,
-  MINI: p.inputMini
-};
 
-function v(e) {
+function O(e) {
   let {
     error: t
   } = e, n = (0, d.Yzy)(t, {
@@ -133,7 +129,7 @@ function v(e) {
     })
   })
 }
-class I extends(r = a.Component) {
+class v extends(r = a.Component) {
   componentDidMount() {
     var e, t, n, r;
     null == (e = (t = this.context).setHasValue) || e.call(t, null != this.props.defaultValue && "" !== this.props.defaultValue || null != this.props.value && "" !== this.props.value), null == (n = (r = this.context).setIsFocused) || n.call(r, !1)
@@ -150,38 +146,33 @@ class I extends(r = a.Component) {
       {
         className: r,
         inputClassName: a,
-        inputPrefix: o,
-        disabled: l,
-        size: u,
-        editable: d,
-        inputRef: f,
-        prefixElement: _,
-        focusProps: h
+        disabled: o,
+        editable: l,
+        inputRef: u,
+        prefixElement: d,
+        focusProps: f
       } = n,
-      g = b(n, ["className", "inputClassName", "inputPrefix", "disabled", "size", "editable", "inputRef", "prefixElement", "focusProps"]),
-      y = null != (t = g["aria-labelledby"]) ? t : null == (e = this.context) ? void 0 : e.titleId;
+      _ = b(n, ["className", "inputClassName", "disabled", "editable", "inputRef", "prefixElement", "focusProps"]),
+      h = null != (t = _["aria-labelledby"]) ? t : null == (e = this.context) ? void 0 : e.titleId;
     return (0, i.jsxs)("div", {
       className: s()(p.inputWrapper, r),
-      children: [null != _ && _, null != o ? (0, i.jsx)("span", {
-        className: p.inputPrefix,
-        children: o
-      }) : null, (0, i.jsx)(c.t, E(m({}, h), {
+      children: [null != d && d, (0, i.jsx)(c.t, E(m({}, f), {
         children: (0, i.jsx)("input", E(m({
-          className: s()(u, a, {
+          className: s()(p.input, a, {
             [p.error]: this.hasError(),
-            [p.disabled]: l,
-            [p.editable]: d
+            [p.disabled]: o,
+            [p.editable]: l
           }),
-          disabled: l,
-          readOnly: !1 === d || void 0
-        }, g), {
-          "aria-labelledby": y,
+          disabled: o,
+          readOnly: !1 === l || void 0
+        }, _), {
+          "aria-labelledby": h,
           onChange: this.onChange,
           onBlur: this.onBlur,
           onFocus: this.onFocus,
-          ref: f
+          ref: u
         }))
-      })), (0, i.jsx)(v, {
+      })), (0, i.jsx)(O, {
         error: this.getError()
       })]
     })
@@ -229,9 +220,8 @@ class I extends(r = a.Component) {
     }
   }
 }
-h(I, "Sizes", O), h(I, "contextType", u.q3), h(I, "defaultProps", {
+h(v, "contextType", u.q3), h(v, "defaultProps", {
   name: "",
-  size: O.DEFAULT,
   disabled: !1,
   type: "text",
   placeholder: "",

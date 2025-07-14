@@ -59,8 +59,8 @@ let g = function(e) {
     childrenButtons: j,
     childrenMessageContent: P,
     childrenAccessories: x,
-    messageRef: C,
-    focusProps: w = {
+    messageRef: w,
+    focusProps: C = {
       offset: {
         left: 4,
         right: 4
@@ -69,8 +69,8 @@ let g = function(e) {
     hasThread: S,
     isSystemMessage: E,
     hasReply: N,
-    author: Z,
-    onMouseEnter: T,
+    author: T,
+    onMouseEnter: Z,
     onMouseLeave: R
   } = e, _ = function(e, t) {
     if (null == e) return {};
@@ -87,11 +87,11 @@ let g = function(e) {
     }
     return o
   }(e, ["className", "compact", "contentOnly", "zalgo", "preview", "disableInteraction", "childrenRepliedMessage", "childrenExecutedCommand", "childrenHeader", "childrenSystemMessage", "childrenButtons", "childrenMessageContent", "childrenAccessories", "messageRef", "focusProps", "hasThread", "isSystemMessage", "hasReply", "author", "onMouseEnter", "onMouseLeave"]);
-  let I = (0, u.ZP)(null == Z ? void 0 : Z.guildId, null == Z ? void 0 : Z.authorId) && (0, c.S2)(Z),
+  let I = (0, u.ZP)(null == T ? void 0 : T.guildId, null == T ? void 0 : T.authorId) && (0, c.S2)(T),
     [k, M] = o.useState(!1),
     D = o.useCallback(e => {
-      M(!0), null == T || T(e)
-    }, [T]),
+      M(!0), null == Z || Z(e)
+    }, [Z]),
     A = o.useCallback(e => {
       M(!1), null == R || R(e)
     }, [R]),
@@ -100,7 +100,7 @@ let g = function(e) {
         animate: k,
         setAnimate: M
       },
-      children: (0, r.jsx)(s.tEY, m(p({}, w), {
+      children: (0, r.jsx)(s.tEY, m(p({}, C), {
         children: (0, r.jsxs)("div", m(p({
           className: i()(t, {
             [d.gradient]: I,
@@ -114,7 +114,7 @@ let g = function(e) {
             [d.isSystemMessage]: E,
             [d.hasReply]: N
           }),
-          ref: C
+          ref: w
         }, _), {
           role: "article",
           onMouseEnter: D,

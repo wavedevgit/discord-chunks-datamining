@@ -1,6 +1,6 @@
 /**
   Module ID: 13268
-  Original File Name: c7296dce04d30ded
+  Original File Name: bf13d2d25928418a
 **/
 .actionButton__5d9ef {
     margin-left: auto
@@ -1682,7 +1682,8 @@
 .mainContent__8641f {
     align-items: start;
     display: flex;
-    flex-direction: row
+    flex-direction: row;
+    margin-bottom: 16px
 }
 
 .roleIconContainer__8641f {
@@ -1696,10 +1697,6 @@
 
 .truncatingText__8641f {
     min-width: 0
-}
-
-.ctaButton__8641f {
-    margin: 16px auto 0
 }
 
 .ctaButtonContent__8641f {
@@ -2042,4 +2039,4 @@
     }
 }
 
-/*# sourceMappingURL=c7296dce04d30ded.css.map*/
+/*# sourceMappingURL=bf13d2d25928418a.css.map*/

@@ -28,7 +28,7 @@ let y = e => {
     if (null == P) return null;
     let t = s.default.getUser(P.used_by);
     return null != (e = (0, u.y)(null == j ? void 0 : j.getGuildId(), null == j ? void 0 : j.id, t)) ? e : null == t ? void 0 : t.globalName
-  }, [P, j]), C = o.useCallback(() => {
+  }, [P, j]), w = o.useCallback(() => {
     if (null != y.current && (0, f.Uw)(n)) {
       let {
         x: e,
@@ -43,12 +43,12 @@ let y = e => {
         h: o
       }, !0, d.LL.UserTriggered)
     }
-  }, [n]), w = o.useCallback(() => {
+  }, [n]), C = o.useCallback(() => {
     (0, i.Z)(c.Z.getArticleURL(b.BhN.CONFETTI_POTION))
   }, []);
   return v && null != x && (null == P ? void 0 : P.type) === g.B.CONFETTI ? (0, r.jsx)(l.P3F, {
-    onFocus: C,
-    onClick: w,
+    onFocus: w,
+    onClick: C,
     "aria-label": h.intl.string(h.t.Mp5k6O),
     children: (0, r.jsx)(l.ua7, {
       text: h.intl.formatToPlainString(h.t["FE++aG"], {
