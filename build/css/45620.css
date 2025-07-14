@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: c61d734aecffdcf9
+  Original File Name: d8da8a90477257ac
 **/
 .shopWrapper__6db1d {
     background: var(--background-base-low);
@@ -1855,11 +1855,18 @@
 }
 
 .tabWithMenu__80679 {
+    gap: 2px;
+    height: 100%
+}
+
+.tabWithChevron__80679,.tabWithMenu__80679 {
     align-items: center;
     display: flex;
-    gap: 2px;
-    height: 100%;
     justify-content: center
+}
+
+.tabWithChevron__80679 {
+    gap: 5px
 }
 
 .discordLogoContainer__80679 {
@@ -1908,4 +1915,4 @@
     cursor: pointer
 }
 
-/*# sourceMappingURL=c61d734aecffdcf9.css.map*/
+/*# sourceMappingURL=d8da8a90477257ac.css.map*/

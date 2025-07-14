@@ -1,20 +1,20 @@
 /** Chunk was on 45620 **/
 "use strict";
-n.d(t, {
+r.d(t, {
   Z: () => u
-}), n(388685);
-var r = n(255367),
-  l = n(73800),
-  o = n(481060),
-  i = n(501431),
-  a = n(215023),
-  s = n(388032),
-  c = n(234209);
+}), r(388685);
+var n = r(255367),
+  l = r(73800),
+  o = r(481060),
+  i = r(501431),
+  a = r(215023),
+  s = r(388032),
+  c = r(234209);
 
 function u(e) {
   let {
     handleTransition: t,
-    selectedTab: n
+    selectedTab: r
   } = e, {
     searchQuery: u,
     onSetSearchQuery: d
@@ -26,9 +26,9 @@ function u(e) {
     return () => clearTimeout(e)
   }, [p, d]), l.useEffect(() => {
     g(u)
-  }, [u]), (0, r.jsx)(o.E1j, {
+  }, [u]), (0, n.jsx)(o.E1j, {
     onFocus: () => {
-      n !== a.AW.CATALOG && t(a.AW.CATALOG)
+      r !== a.AW.CATALOG && t(a.AW.CATALOG)
     },
     className: c.searchBar,
     onKeyDown: e => {

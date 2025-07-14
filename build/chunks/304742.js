@@ -1,18 +1,18 @@
 /** Chunk was on 45620 **/
 "use strict";
-n.d(t, {
+r.d(t, {
   Z: () => s
 });
-var r = n(255367),
-  l = n(73800),
-  o = n(481060),
-  i = n(215023),
-  a = n(388032);
+var n = r(255367),
+  l = r(73800),
+  o = r(481060),
+  i = r(215023),
+  a = r(388032);
 
 function s(e) {
   let {
     handleTransition: t,
-    onClose: n
+    onClose: r
   } = e, s = l.useMemo(() => [{
     label: a.intl.string(a.t.dRZYND),
     value: i.AW.AVATAR_DECORATIONS
@@ -29,12 +29,12 @@ function s(e) {
     label: a.intl.string(a.t.xFcotb),
     value: i.AW.CATALOG
   }], []);
-  return (0, r.jsx)(o.v2r, {
+  return (0, n.jsx)(o.v2r, {
     navId: "collectibles-index-page-menu",
-    onClose: n,
+    onClose: r,
     "aria-label": a.intl.string(a.t.xFcotb),
     onSelect: () => {},
-    children: s.map(e => (0, r.jsx)(o.sNh, {
+    children: s.map(e => (0, n.jsx)(o.sNh, {
       id: e.value,
       label: e.label,
       action: () => {

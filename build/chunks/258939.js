@@ -1,8 +1,8 @@
 /** Chunk was on 45620 **/
 "use strict";
-n.d(t, {
+r.d(t, {
   R: () => o
 });
-var r = n(442837),
-  l = n(597688);
-let o = () => (0, r.e7)([l.Z], () => l.Z.isFetchingCategories)
+var n = r(442837),
+  l = r(597688);
+let o = () => (0, n.e7)([l.Z], () => l.Z.isFetchingCategories)

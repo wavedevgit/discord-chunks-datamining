@@ -1,15 +1,15 @@
 /** Chunk was on 45620 **/
 "use strict";
-n.d(t, {
+r.d(t, {
   y: () => a
 });
-var r = n(544891),
-  l = n(343817),
-  o = n(411700),
-  i = n(981631);
+var n = r(544891),
+  l = r(343817),
+  o = r(411700),
+  i = r(981631);
 let a = async e => {
   try {
-    return (await r.tn.get({
+    return (await n.tn.get({
       url: i.ANM.COLLECTIBLES_SEARCH,
       query: e,
       rejectWithError: !0
