@@ -137,27 +137,27 @@ function _(e) {
           align: m.Z.Align.CENTER,
           justify: m.Z.Justify.END,
           children: [function(e, t, n) {
-            var i;
+            var i, l;
             if (null == e) return null;
-            let l = [],
+            let o = [],
               {
-                application: o,
-                integration: s,
-                webhooks: c
+                application: s,
+                integration: c,
+                webhooks: u
               } = e;
-            return null != o.bot && l.push((0, r.jsx)(d.DY3, {
+            return null != s.bot && (null == c || null == (i = c.scopes) ? void 0 : i.includes(a.x.BOT)) && o.push((0, r.jsx)(d.DY3, {
               forceOpen: t,
-              text: new f.Z(o.bot).isVerifiedBot() ? v.intl.string(v.t.xxcTGx) : v.intl.string(v.t.AOdOYm),
+              text: new f.Z(s.bot).isVerifiedBot() ? v.intl.string(v.t.xxcTGx) : v.intl.string(v.t.AOdOYm),
               className: y.feature,
               children: (0, r.jsx)(d.wGt, {
                 size: "md",
                 color: "currentColor",
                 className: y.featureIcon
               })
-            }, "bot")), c.length > 0 && l.push((0, r.jsx)(d.DY3, {
+            }, "bot")), u.length > 0 && o.push((0, r.jsx)(d.DY3, {
               forceOpen: t,
               text: v.intl.formatToPlainString(v.t["6HqDfX"], {
-                count: c.length
+                count: u.length
               }),
               className: y.feature,
               children: (0, r.jsx)(d.tYf, {
@@ -165,14 +165,16 @@ function _(e) {
                 color: "currentColor",
                 className: y.featureIcon
               })
-            }, "webhooks")), (null == s || null == (i = s.scopes) ? void 0 : i.includes(a.x.APPLICATIONS_COMMANDS)) === !0 && n && l.push((0, r.jsx)("div", {
+            }, "webhooks")), (null == c || null == (l = c.scopes) ? void 0 : l.includes(a.x.APPLICATIONS_COMMANDS)) === !0 && n && o.push((0, r.jsx)(d.DY3, {
+              forceOpen: t,
+              text: v.intl.string(v.t["0hKkS0"]),
               className: y.feature,
               children: (0, r.jsx)(d.SsZ, {
                 size: "md",
                 color: "currentColor",
                 className: y.featureIcon
               })
-            }, "commands")), l
+            }, "commands")), o
           }(w, B, X), K, M]
         })
       })]

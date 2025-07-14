@@ -1,9 +1,10 @@
 /**
   Module ID: 40897
-  Original File Name: a85fe75ceaab8ddc
+  Original File Name: fb0f67f16cf028f9
 **/
 .modal_e59759 {
-    width: 732px
+    min-height: unset;
+    width: 748px
 }
 
 @media (max-width:800px) {
@@ -18,15 +19,14 @@
     padding-top: 16px
 }
 
+.header_e59759 {
+    display: flex;
+    gap: 10px
+}
+
 .headerIcon_e59759 {
     color: var(--interactive-normal);
     margin-right: 4px
-}
-
-.modalCloseButton_e59759 {
-    position: absolute;
-    right: var(--custom-guild-role-connections-modal-close-button-margin);
-    top: var(--custom-guild-role-connections-modal-close-button-margin)
 }
 
 .content_e59759:before {
@@ -111,4 +111,4 @@
     padding: 2px
 }
 
-/*# sourceMappingURL=a85fe75ceaab8ddc.css.map*/
+/*# sourceMappingURL=fb0f67f16cf028f9.css.map*/

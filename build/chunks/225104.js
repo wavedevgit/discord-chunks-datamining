@@ -4,8 +4,8 @@ t.d(r, {
 });
 var n = t(255367);
 t(73800);
-var l = t(866442),
-  i = t(91218),
+var i = t(866442),
+  l = t(91218),
   o = t(518738),
   a = t(134433),
   s = t(981631);
@@ -22,7 +22,7 @@ function c(e) {
     roleId: c.id,
     size: d
   });
-  return null != f ? (0, n.jsx)(i.Z, function(e) {
+  return null != f ? (0, n.jsx)(l.Z, function(e) {
     for (var r = 1; r < arguments.length; r++) {
       var t = null != arguments[r] ? arguments[r] : {},
         n = Object.keys(t);
@@ -42,7 +42,7 @@ function c(e) {
   }({
     className: u
   }, f)) : (0, n.jsx)(a.Z, {
-    color: null != (r = c.colorString) ? r : (0, l.Rf)(s.p6O),
+    color: null != (r = c.colorString) ? r : (0, i.Rf)(s.p6O),
     className: u,
     size: d
   })

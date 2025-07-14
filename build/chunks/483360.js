@@ -472,14 +472,19 @@ let eK = (0, Y.oH)((e, t, n) => {
       })
     },
     queryUsers(e) {
-      let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 10,
-        n = (arguments.length > 2 && void 0 !== arguments[2] && arguments[2], !(arguments.length > 3) || void 0 === arguments[3] || arguments[3]),
-        r = arguments.length > 4 ? arguments[4] : void 0;
-      return n && e.length > 0 && z.Z.requestMembers(null, e, t), eU({
-        query: e,
+      let {
+        query: t,
+        filter: n,
+        boosters: r,
+        limit: i = 10,
+        request: a = !0
+      } = e;
+      return a && t.length > 0 && z.Z.requestMembers(null, t, i), eU({
+        query: t,
         members: s()(Z.default.getUsers()).values().value(),
-        limit: t,
-        filter: r
+        limit: i,
+        filter: n,
+        boosters: r
       })
     },
     queryChannels(e) {

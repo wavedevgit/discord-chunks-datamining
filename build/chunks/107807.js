@@ -418,7 +418,7 @@ function ee(e) {
             children: [(0, c.jsx)("div", {
               className: Y.headerText,
               children: (0, c.jsx)(p.X6q, {
-                variant: "heading-xl/extrabold",
+                variant: "heading-xl/semibold",
                 children: D.intl.string(D.t.zOZh3d)
               })
             }), (0, c.jsx)(p.olH, {
@@ -433,7 +433,7 @@ function ee(e) {
             className: Y.header,
             separator: !1,
             children: [(0, c.jsx)(p.X6q, {
-              variant: "heading-xl/extrabold",
+              variant: "heading-xl/semibold",
               className: Y.headerText,
               children: D.intl.format(D.t.yQvgBA, {
                 platformName: t

@@ -1,6 +1,6 @@
 /**
   Module ID: 1272
-  Original File Name: 92f29d2c6aeccc0d
+  Original File Name: 3c2cf729005fc66e
 **/
 .container__74da2 {
     align-items: center;
@@ -7803,7 +7803,8 @@ html .tabBadge__35e86 {
 }
 
 .modal_e59759 {
-    width: 732px
+    min-height: unset;
+    width: 748px
 }
 
 @media (max-width:800px) {
@@ -7818,15 +7819,14 @@ html .tabBadge__35e86 {
     padding-top: 16px
 }
 
+.header_e59759 {
+    display: flex;
+    gap: 10px
+}
+
 .headerIcon_e59759 {
     color: var(--interactive-normal);
     margin-right: 4px
-}
-
-.modalCloseButton_e59759 {
-    position: absolute;
-    right: var(--custom-guild-role-connections-modal-close-button-margin);
-    top: var(--custom-guild-role-connections-modal-close-button-margin)
 }
 
 .content_e59759:before {
@@ -8561,4 +8561,4 @@ html .tabBadge__35e86 {
     margin-bottom: 18px
 }
 
-/*# sourceMappingURL=92f29d2c6aeccc0d.css.map*/
+/*# sourceMappingURL=3c2cf729005fc66e.css.map*/
