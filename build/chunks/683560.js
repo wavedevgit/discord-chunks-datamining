@@ -1,7 +1,6 @@
 /** Chunk was on 96127 **/
 e.exports = {
   ping: "ping__06d62",
-  smallPing: "smallPing__06d62",
   largePing: "largePing__06d62",
   rtcConnectionStatus: "rtcConnectionStatus__06d62",
   rtcConnectionStatusLabel: "rtcConnectionStatusLabel__06d62",

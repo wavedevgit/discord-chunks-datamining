@@ -682,14 +682,14 @@ function em(e) {
   let {
     voiceChannel: r
   } = e, l = null == r ? void 0 : r.id, a = (0, o.cj)([H.Z], () => ({
-    channelId: H.Z.getChannelId(),
     quality: H.Z.getQuality(),
     state: H.Z.getState(),
     lastPing: H.Z.getLastPing()
-  })), s = null != l, c = (0, o.e7)([K.Z], () => null != l && K.Z.hasVideo(l), [l]);
-  return s && null != r && (0, i.jsxs)(i.Fragment, {
+  })), s = (0, o.e7)([K.Z], () => null != l && K.Z.hasVideo(l), [l]);
+  return null != l && null != r && (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(w.Z, (t = er({}, a), n = n = {
-      hasVideo: c,
+      channelId: l,
+      hasVideo: s,
       connectionStatusTextVariant: "text-sm/medium"
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);

@@ -11,8 +11,8 @@ var r = n(255367),
   c = n(979651),
   u = n(362446),
   d = n(571826),
-  h = n(277642),
-  f = n(441894),
+  f = n(277642),
+  h = n(441894),
   p = n(160038),
   g = n(586646),
   O = n(760373),
@@ -94,7 +94,7 @@ function v(e) {
     isOverlay: n,
     lobbyId: l,
     closePopout: i
-  } = e, o = (0, f.J)({
+  } = e, o = (0, h.J)({
     channelId: t
   }) ? N.intl.string(N.t["3BogKS"]) : N.intl.string(N.t.ETIVvr);
   return n ? (0, r.jsx)(E, {
@@ -111,7 +111,7 @@ function C(e) {
   let t = (0, i.e7)([c.Z], () => c.Z.hasVideo(e.channelId)),
     [n, a] = l.useState(O.tu.RTC_DEBUG_PANEL),
     u = (0, s.Dt)(),
-    f = l.useMemo(() => {
+    h = l.useMemo(() => {
       switch (n) {
         case O.tu.RTC_DEBUG_PANEL:
           return (0, r.jsx)(v, b({}, e));
@@ -127,7 +127,7 @@ function C(e) {
       selectedTab: n
     })
   }, [e.channelId, n]);
-  let p = (0, h.r)();
+  let p = (0, f.r)();
   return l.useEffect(() => {
     p && a(O.tu.RTC_DEBUG_PANEL)
   }, [p]), (0, r.jsxs)("div", {
@@ -155,13 +155,13 @@ function C(e) {
     }), (0, r.jsx)(o.njP.Panel, {
       id: n,
       "aria-labelledby": u,
-      children: f
+      children: h
     })]
   })
 }
 
 function I(e) {
-  return (0, f.J)({
+  return (0, h.J)({
     channelId: e.channelId
   }) ? (0, r.jsx)(C, b({}, e)) : (0, r.jsx)("div", {
     className: y.debugPanelStandalone,

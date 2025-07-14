@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: 1cc1525cf7b015a4
+  Original File Name: 7096ff76d8e22123
 **/
 .titleBar__421ed {
     z-index: 3001;
@@ -1535,11 +1535,6 @@
     width: 16px
 }
 
-.ping__06d62.smallPing__06d62 {
-    height: 14px;
-    width: 14px
-}
-
 .ping__06d62.largePing__06d62 {
     background: var(--background-mod-faint);
     border-radius: 8px;
@@ -2791,4 +2786,4 @@
     width: 96px
 }
 
-/*# sourceMappingURL=1cc1525cf7b015a4.css.map*/
+/*# sourceMappingURL=7096ff76d8e22123.css.map*/

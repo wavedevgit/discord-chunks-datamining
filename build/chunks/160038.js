@@ -11,8 +11,8 @@ var r = n(255367),
   c = n(304680),
   u = n(706619),
   d = n(695346),
-  h = n(131951),
-  f = n(626135),
+  f = n(131951),
+  h = n(626135),
   p = n(572004),
   g = n(63063),
   O = n(476221),
@@ -21,7 +21,7 @@ var r = n(255367),
   b = n(388032),
   x = n(684680);
 let E = () => {
-    h.Z.getMediaEngine().once(s.aB.ConnectionStats, e => {
+    f.Z.getMediaEngine().once(s.aB.ConnectionStats, e => {
       let t = JSON.stringify(Object.values(y.Yn).map(t => {
         let n = e.filter(e => {
           let {
@@ -43,7 +43,7 @@ let E = () => {
   },
   m = function(e) {
     (0, l.useEffect)(() => {
-      f.default.track(N.rMx.OPEN_POPOUT, {
+      h.default.track(N.rMx.OPEN_POPOUT, {
         type: "RTC Connection"
       })
     }, []);
@@ -141,7 +141,7 @@ let E = () => {
             color: a.TVs.colors.TEXT_FEEDBACK_POSITIVE.css,
             className: x.__invalid_icon
           }), s]
-        }), p && h.Z.supports(y.AN.DIAGNOSTICS) && !__OVERLAY__ && (0, r.jsxs)(r.Fragment, {
+        }), p && f.Z.supports(y.AN.DIAGNOSTICS) && !__OVERLAY__ && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsxs)(a.eee, {
             className: o()(x.debugButton, x.textWithIcon),
             onClick: t,
