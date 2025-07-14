@@ -25,9 +25,9 @@ let g = i.memo(function(e) {
         me: b,
         me_burst: E,
         burst_count: y,
-        burst_colors: x,
-        readOnly: C,
-        isLurking: v,
+        burst_colors: C,
+        readOnly: v,
+        isLurking: x,
         isGuest: O,
         isPendingMember: j,
         type: I,
@@ -35,21 +35,21 @@ let g = i.memo(function(e) {
       } = e,
       T = I === p.O.BURST,
       N = (0, m.y4)(b, E, I),
-      P = (0, d.v)(T && null != x ? x : []),
+      P = (0, d.v)(T && null != C ? C : []),
       A = i ? _ : f,
       w = T ? y : h,
       Z = (0, u.y)(w, m.aO),
       R = {};
     if (T && null != P) {
-      var L;
+      var D;
       let {
         accentColor: e,
         backgroundColor: r,
         opacity: i
-      } = P, l = null != (L = (0, o.wK)(null != r ? r : "", i)) ? L : "";
+      } = P, l = null != (D = (0, o.wK)(null != r ? r : "", i)) ? D : "";
       N && (R.borderColor = r), R.background = l, t = e, n = e
     }
-    let D = {
+    let L = {
       minWidth: Z,
       color: t,
       borderColor: n
@@ -57,7 +57,7 @@ let g = i.memo(function(e) {
     return (0, r.jsxs)("div", {
       className: a()(A.reaction, A.reactionInner, g, {
         [A.reactionMe]: N,
-        [A.reactionReadOnly]: C && !v && !j && !O
+        [A.reactionReadOnly]: v && !x && !j && !O
       }),
       style: R,
       children: [(0, r.jsx)(s.Z, {
@@ -70,7 +70,7 @@ let g = i.memo(function(e) {
         animated: T && c.animated
       }), (0, r.jsx)("div", {
         className: A.reactionCount,
-        style: D,
+        style: L,
         children: w
       })]
     })

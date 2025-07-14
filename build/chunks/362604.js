@@ -25,13 +25,13 @@ function y(e) {
     message: t,
     channel: l,
     compact: y
-  } = e, x = (0, o.Wu)([p.Z], () => Array.from(p.Z.getAllGuildStickers().values()).flat()).slice(0, 20), [C, v] = i.useState(null);
+  } = e, C = (0, o.Wu)([p.Z], () => Array.from(p.Z.getAllGuildStickers().values()).flat()).slice(0, 20), [v, x] = i.useState(null);
   return (i.useEffect(() => {
     let e = setInterval(() => {
-      x.length > 0 && v(x[Math.floor(Math.random() * x.length)])
+      C.length > 0 && x(C[Math.floor(Math.random() * C.length)])
     }, 500);
     return () => clearInterval(e)
-  }, [x]), null == l.guild_id) ? null : (0, r.jsxs)("div", {
+  }, [C]), null == l.guild_id) ? null : (0, r.jsxs)("div", {
     children: [(0, r.jsx)(u.Z, {
       className: a()(E.mainContainer, {
         [E.compact]: y
@@ -84,9 +84,9 @@ function y(e) {
               action_type: "sticker"
             }), (0, g.O)(t.id, l)
           },
-          children: null != C ? (0, r.jsx)(m.Z, {
+          children: null != v ? (0, r.jsx)(m.Z, {
             size: 32,
-            sticker: C
+            sticker: v
           }) : (0, r.jsx)(c.EO4, {
             size: "md",
             color: "currentColor"

@@ -1,6 +1,6 @@
 /** Chunk was on 61668 **/
 n.d(t, {
-  Z: () => L
+  Z: () => D
 }), n(415506), n(388685);
 var r, i, l = n(255367),
   a = n(73800),
@@ -18,9 +18,9 @@ var r, i, l = n(255367),
   b = n(417363),
   E = n(941128),
   y = n(780570),
-  x = n(358085),
-  C = n(814225),
-  v = n(346329),
+  C = n(358085),
+  v = n(814225),
+  x = n(346329),
   O = n(701560),
   j = n(981631),
   I = n(388032),
@@ -111,7 +111,7 @@ class R extends(r = a.Component) {
     if (e.isHidden()) return "add_to_library";
     if (e.isPreorder()) return "preorder_wait";
     let r = null != n ? w[n] : null;
-    return null != r ? r : null != t && t.type === j.vxO.UNINSTALLING ? "uninstalling" : (0, x.isWeb)() ? "play" : "unsupported_os"
+    return null != r ? r : null != t && t.type === j.vxO.UNINSTALLING ? "uninstalling" : (0, C.isWeb)() ? "play" : "unsupported_os"
   }
   renderPlayButton() {
     let {
@@ -208,7 +208,7 @@ class R extends(r = a.Component) {
     } = this.props, n = this.getButtonState();
     if ("play" === n) return this.renderPlayButton();
     if ("preorder_wait" === n) return this.renderDisabledButton(n, function(e) {
-      let t = C.en(e.sku);
+      let t = v.en(e.sku);
       return null != t ? I.intl.formatToPlainString(I.t.Aqe2ZG, {
         date: t
       }) : null
@@ -235,12 +235,12 @@ class R extends(r = a.Component) {
         libraryApplication: e,
         source: t
       } = this.props;
-      v.installApplication(e.id, e.branchId, t)
+      x.installApplication(e.id, e.branchId, t)
     }), T(this, "handleUpdate", () => {
       let {
         libraryApplication: e
       } = this.props;
-      v.updateApplication(e.id, e.branchId)
+      x.updateApplication(e.id, e.branchId)
     }), T(this, "onClickHandlers", {
       add_to_library: this.handleAddToLibrary,
       install: this.handleInstall,
@@ -254,7 +254,7 @@ class R extends(r = a.Component) {
   }
 }
 
-function L(e) {
+function D(e) {
   let {
     libraryApplication: t
   } = e, n = (0, p.O)(), [r, i] = (0, o.Wu)([b.Z, E.Z], () => [(0, g.i)(t, b.Z, E.Z), b.Z.getState(t.id, t.branchId)], [t]), a = (0, o.e7)([h.Z], () => h.Z.isSyncing(t.id, t.branchId), [t]), s = (0, o.e7)([_.Z], () => _.Z.hasNoBuild(t.id, t.branchId), [t]);

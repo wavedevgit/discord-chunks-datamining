@@ -20,9 +20,9 @@ var r = n(255367),
   b = n(600164),
   E = n(479446),
   y = n(930114),
-  x = n(981632),
-  C = n(108989),
-  v = n(703656),
+  C = n(981632),
+  v = n(108989),
+  x = n(703656),
   O = n(314897),
   j = n(82142),
   I = n(283595),
@@ -34,8 +34,8 @@ var r = n(255367),
   w = n(669079),
   Z = n(74538),
   R = n(296848),
-  L = n(51144),
-  D = n(626799),
+  D = n(51144),
+  L = n(626799),
   M = n(981631),
   k = n(474936),
   U = n(388032),
@@ -202,7 +202,7 @@ class W extends i.Component {
       sku: r
     } = this.props;
     return this.isCustomGiftMessage() && !n ? U.intl.formatToPlainString(U.t.t1SOIS, {
-      recipientDisplayName: L.ZP.getName(t)
+      recipientDisplayName: D.ZP.getName(t)
     }) : null == r ? null : e.isSubscription ? n ? U.intl.string(U.t["2PJ1ND"]) : U.intl.string(U.t.hrnGnp) : n ? U.intl.string(U.t.QLEMlZ) : U.intl.string(U.t.W4DBc3)
   }
   renderBody(e) {
@@ -236,11 +236,11 @@ class W extends i.Component {
     });
     if (e.isExistingPremiumSubscriptionDisallowed) return U.intl.string(U.t["UCIU9/"]);
     if (e.hasMultipleCopies) return null != i ? e.isSubscription ? U.intl.format(U.t.l3VxgI, {
-      username: L.ZP.getUserTag(i),
+      username: D.ZP.getUserTag(i),
       maxUses: e.maxUses,
       skuName: o
     }) : U.intl.format(U.t["9cYrw8"], {
-      username: L.ZP.getUserTag(i),
+      username: D.ZP.getUserTag(i),
       totalCopies: e.maxUses,
       skuName: o
     }) : e.isSubscription ? U.intl.formatToPlainString(U.t.svrO3d, {
@@ -255,7 +255,7 @@ class W extends i.Component {
       if (null != i) {
         let e = l.interval === k.rV.MONTH ? U.t["/RDIEB"] : U.t["3CX6Eh"];
         return U.intl.format(e, {
-          username: L.ZP.getUserTag(i),
+          username: D.ZP.getUserTag(i),
           skuName: o,
           intervalCount: l.intervalCount
         })
@@ -267,7 +267,7 @@ class W extends i.Component {
       })
     }
     return null != i ? U.intl.format(U.t["3HsdQ0"], {
-      username: L.ZP.getUserTag(i)
+      username: D.ZP.getUserTag(i)
     }) : U.intl.string(U.t.Jdnjjo)
   }
   renderPromotionActions() {
@@ -283,7 +283,7 @@ class W extends i.Component {
       giftCode: e,
       width: t
     } = this.props;
-    return null == e ? null : (0, r.jsx)(D.$, {
+    return null == e ? null : (0, r.jsx)(L.$, {
       skuId: e.skuId,
       onEmbedClick: this.handleEmbedClick,
       analyticsSection: M.jXE.GIFT_CODE_EMBED,
@@ -301,7 +301,7 @@ class W extends i.Component {
       width: n,
       isSelfGift: i
     } = this.props;
-    if (null != e && null != e.promotion) return (0, r.jsx)(D.$, {
+    if (null != e && null != e.promotion) return (0, r.jsx)(L.$, {
       skuId: e.skuId,
       onEmbedClick: this.handleClaimPromotion,
       analyticsSection: M.jXE.GIFT_CODE_EMBED,
@@ -328,7 +328,7 @@ class W extends i.Component {
       let {
         libraryApplication: t
       } = this.props;
-      e.preventDefault(), null != t && t.isHidden() ? (0, v.uL)(M.Z5c.APPLICATION_LIBRARY_SETTINGS) : (0, v.uL)(M.Z5c.APPLICATION_LIBRARY, {
+      e.preventDefault(), null != t && t.isHidden() ? (0, x.uL)(M.Z5c.APPLICATION_LIBRARY_SETTINGS) : (0, x.uL)(M.Z5c.APPLICATION_LIBRARY, {
         state: {
           applicationId: null != t ? t.id : void 0
         }
@@ -385,12 +385,12 @@ class W extends i.Component {
         });
       return (0, r.jsxs)("div", {
         className: l,
-        children: [!t && k.eZ.includes(e.giftStyle) && (0, r.jsx)(C.Z, {
+        children: [!t && k.eZ.includes(e.giftStyle) && (0, r.jsx)(v.Z, {
           className: F.snow,
           wind: 5
         }), i && (0, r.jsx)(P.Z, {
           className: F.headerIcon
-        }), null != e.giftStyle && (0, r.jsx)(x.Z, {
+        }), null != e.giftStyle && (0, r.jsx)(C.Z, {
           defaultAnimationState: e.redeemed ? E.SR.LOOP : E.SR.IDLE,
           giftStyle: e.giftStyle,
           className: o

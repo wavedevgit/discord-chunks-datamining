@@ -1,12 +1,12 @@
 /** Chunk was on 36878 **/
 n.d(t, {
-  P: () => o
+  P: () => s
 });
-var a = n(255367),
-  i = n(254204);
+var i = n(255367),
+  a = n(254204);
 
-function o() {
-  return (0, a.jsx)("div", {
-    className: i.sidebar
+function s() {
+  return (0, i.jsx)("div", {
+    className: a.sidebar
   })
 }

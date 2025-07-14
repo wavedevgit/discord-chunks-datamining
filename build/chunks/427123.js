@@ -17,9 +17,9 @@ var r, i, l, a = n(392711),
   b = n(55563),
   E = n(981631);
 let y = "DetectedOffPlatformPremiumPerksStore",
-  x = {},
   C = {},
-  v = [];
+  v = {},
+  x = [];
 
 function O() {
   let e = !1;
@@ -27,8 +27,8 @@ function O() {
       skuId: t,
       applicationId: n
     }
-    of o().values(C)) {
-    if (v.includes(t)) continue;
+    of o().values(v)) {
+    if (x.includes(t)) continue;
     let r = f.Z.getApplication(n);
     if (null == r) {
       f.Z.isFetchingApplication(n) || f.Z.didFetchingApplicationFail(n) || m.ZP.fetchApplication(n);
@@ -39,7 +39,7 @@ function O() {
       b.Z.isFetching(t) || b.Z.didFetchingSkuFail(t) || p.$N(r.id, t);
       continue
     }
-    h.Z.applicationIdsFetching.has(r.id) || h.Z.isEntitledToSku(g.default.getCurrentUser(), t, r.id, r.id) || !i.available ? null != x[t] && (delete x[t], e = !0) : (x[t] = {
+    h.Z.applicationIdsFetching.has(r.id) || h.Z.isEntitledToSku(g.default.getCurrentUser(), t, r.id, r.id) || !i.available ? null != C[t] && (delete C[t], e = !0) : (C[t] = {
       skuId: t,
       applicationId: n
     }, e = !0)
@@ -49,10 +49,10 @@ function O() {
 class j extends(r = s.ZP.Store) {
   initialize() {
     var e;
-    this.waitFor(_.ZP, b.Z, h.Z), v = null != (e = c.K.get(y)) ? e : v
+    this.waitFor(_.ZP, b.Z, h.Z), x = null != (e = c.K.get(y)) ? e : x
   }
   getDetectedOffPlatformPremiumPerks() {
-    return o().values(x)
+    return o().values(C)
   }
 }
 l = "DetectedOffPlatformPremiumPerksStore", (i = "displayName") in j ? Object.defineProperty(j, i, {
@@ -63,7 +63,7 @@ l = "DetectedOffPlatformPremiumPerksStore", (i = "displayName") in j ? Object.de
 }) : j[i] = l;
 let I = new j(u.Z, {
   LOGOUT: function() {
-    x = {}, C = {}
+    C = {}, v = {}
   },
   SKU_FETCH_SUCCESS: O,
   ENTITLEMENT_FETCH_APPLICATION_SUCCESS: O,
@@ -73,8 +73,8 @@ let I = new j(u.Z, {
     let {
       skuId: t
     } = e;
-    if (delete x[t], v.includes(t)) return !1;
-    v.push(t), c.K.set(y, v)
+    if (delete C[t], x.includes(t)) return !1;
+    x.push(t), c.K.set(y, x)
   },
   RUNNING_GAMES_CHANGE: function() {
     let e = !1;
@@ -88,7 +88,7 @@ let I = new j(u.Z, {
             skuId: n,
             applicationId: r
           }
-          of E.Lg6) r !== t || v.includes(n) || null == C[n] && (h.Z.applicationIdsFetched.has(r) || h.Z.applicationIdsFetching.has(r) || null != h.Z.getForSku(n) || d.yD(r), C[n] = {
+          of E.Lg6) r !== t || x.includes(n) || null == v[n] && (h.Z.applicationIdsFetched.has(r) || h.Z.applicationIdsFetching.has(r) || null != h.Z.getForSku(n) || d.yD(r), v[n] = {
           skuId: n,
           applicationId: r
         }, e = !0);

@@ -82,9 +82,9 @@ function _(e) {
     onShowFullDescription: b,
     productType: E,
     onTapCard: y,
-    actionMenu: x,
-    showOpaqueBackground: C = !1,
-    hideRoleTag: v = !1,
+    actionMenu: C,
+    showOpaqueBackground: v = !1,
+    hideRoleTag: x = !1,
     lineClamp: O = 1,
     cardWidth: j = 332,
     cardHeight: I,
@@ -123,14 +123,14 @@ function _(e) {
         }), h && (0, r.jsx)(f, {
           onShowFullDescription: b,
           variant: T
-        }), v || null == _ || "" === _.name ? null : (0, r.jsxs)(r.Fragment, {
+        }), x || null == _ || "" === _.name ? null : (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(a.LZC, {
             size: 16
           }), (0, r.jsx)(u.Z, {
             role: _
           })]
         })]
-      }), x]
+      }), C]
     }), (0, r.jsxs)("div", {
       className: p.purchaseDetails,
       children: [(0, r.jsx)(a.Text, {
@@ -153,7 +153,7 @@ function _(e) {
     })]
   });
   return null == y ? (0, r.jsx)("article", {
-    className: l()(p.productCard, C ? p.opaqueBackground : p.solidBackground),
+    className: l()(p.productCard, v ? p.opaqueBackground : p.solidBackground),
     "aria-labelledby": P,
     children: A
   }) : (0, r.jsx)("div", {
@@ -166,7 +166,7 @@ function _(e) {
       "aria-label": d.intl.formatToPlainString(d.t["e+TmJS"], {
         productName: n
       }),
-      className: l()(p.productCard, C ? p.opaqueBackground : p.solidBackground, p.cardClickableContainer),
+      className: l()(p.productCard, v ? p.opaqueBackground : p.solidBackground, p.cardClickableContainer),
       onClick: y,
       children: A
     })

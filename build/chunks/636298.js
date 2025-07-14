@@ -2,11 +2,11 @@
 n.d(t, {
   Z: () => f
 });
-var a = n(255367),
-  i = n(73800),
-  o = n(873546),
-  r = n(755721),
-  s = n(481060),
+var i = n(255367),
+  a = n(73800),
+  s = n(873546),
+  o = n(755721),
+  r = n(481060),
   l = n(36361),
   d = n(254204);
 
@@ -15,13 +15,13 @@ function c(e) {
     icon: t,
     onClick: n
   } = e;
-  return (0, a.jsx)(r.zx, {
-    look: r.zx.Looks.BLANK,
-    size: r.zx.Sizes.ICON,
+  return (0, i.jsx)(o.zx, {
+    look: o.zx.Looks.BLANK,
+    size: o.zx.Sizes.ICON,
     className: d.contentHeaderButton,
     innerClassName: d.iconButtonInner,
     onClick: n,
-    children: (0, a.jsx)(t, {
+    children: (0, i.jsx)(t, {
       size: "sm"
     })
   })
@@ -31,40 +31,40 @@ function u(e) {
   let {
     title: t,
     onClose: n,
-    setShowNavigationMobile: i
+    setShowNavigationMobile: a
   } = e;
-  return (0, a.jsxs)("div", {
+  return (0, i.jsxs)("div", {
     className: d.contentHeader,
-    children: [(0, a.jsxs)("div", {
+    children: [(0, i.jsxs)("div", {
       className: d.contentHeaderLeft,
-      children: [o.tq && (0, a.jsx)(c, {
-        icon: s.yFM,
-        onClick: () => i(!0)
-      }), (0, a.jsx)(s.X6q, {
+      children: [s.tq && (0, i.jsx)(c, {
+        icon: r.yFM,
+        onClick: () => a(!0)
+      }), (0, i.jsx)(r.X6q, {
         variant: "heading-md/normal",
         color: "header-secondary",
         children: t
       })]
-    }), !o.tq && (0, a.jsx)(c, {
-      icon: s.Uz9,
+    }), !s.tq && (0, i.jsx)(c, {
+      icon: r.Uz9,
       onClick: n
     })]
   })
 }
-let f = i.memo(function(e) {
+let f = a.memo(function(e) {
   let {
     onClose: t,
     setShowNavigationMobile: n,
-    setting: i
-  } = e, o = i.data.useTitle();
-  return (0, a.jsxs)("div", {
+    setting: a
+  } = e, s = a.data.useTitle();
+  return (0, i.jsxs)("div", {
     className: d.content,
-    children: [(0, a.jsx)(u, {
-      title: o,
+    children: [(0, i.jsx)(u, {
+      title: s,
       onClose: t,
       setShowNavigationMobile: n
-    }), (0, a.jsx)(l.Z, {
-      node: i
+    }), (0, i.jsx)(l.Z, {
+      node: a
     })]
   })
 })

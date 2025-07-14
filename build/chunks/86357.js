@@ -1,6 +1,6 @@
 /** Chunk was on 61668 **/
 n.d(t, {
-  Z: () => v
+  Z: () => x
 }), n(415506);
 var r, i, l, a = n(255367),
   o = n(73800),
@@ -84,7 +84,7 @@ let _ = e => {
       })]
     })
   },
-  x = e => {
+  C = e => {
     let {
       className: t
     } = e;
@@ -93,7 +93,7 @@ let _ = e => {
       children: p.intl.string(p.t.QQsaCQ)
     })
   };
-class C extends(r = o.PureComponent) {
+class v extends(r = o.PureComponent) {
   getState() {
     let {
       inLibrary: e,
@@ -115,7 +115,7 @@ class C extends(r = o.PureComponent) {
     } = this.props;
     switch (e) {
       case 5:
-        return (0, a.jsx)(x, {
+        return (0, a.jsx)(C, {
           className: c()(t, n)
         });
       case 1:
@@ -146,7 +146,7 @@ class C extends(r = o.PureComponent) {
     } = this.props;
     switch (e) {
       case 5:
-        return (0, a.jsx)(x, {
+        return (0, a.jsx)(C, {
           className: t
         });
       case 3:
@@ -173,7 +173,7 @@ class C extends(r = o.PureComponent) {
     } = this.props;
     switch (e) {
       case 5:
-        t = (0, a.jsx)(x, {});
+        t = (0, a.jsx)(C, {});
         break;
       case 2:
         t = (0, a.jsxs)(o.Fragment, {
@@ -217,10 +217,10 @@ class C extends(r = o.PureComponent) {
         throw Error("Invalid Price Unit Type")
     }
   }
-}(l = "Types") in C ? Object.defineProperty(C, l, {
+}(l = "Types") in v ? Object.defineProperty(v, l, {
   value: f,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : C[l] = f;
-let v = C
+}) : v[l] = f;
+let x = v

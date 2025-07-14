@@ -20,9 +20,9 @@ var r = n(255367),
   b = n(139256),
   E = n(294608),
   y = n(388032),
-  x = n(709893);
+  C = n(709893);
 
-function C(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -41,7 +41,7 @@ function C(e) {
   return e
 }
 
-function v(e) {
+function x(e) {
   let {
     percentage: t,
     label: n,
@@ -50,12 +50,12 @@ function v(e) {
   } = e, s = (0, m.Dt)(), {
     channelId: c,
     messageId: u
-  } = (0, E.pE)(), [h, b] = i.useState(""), [y, v] = i.useState(!1), O = "" !== h && y, j = i.useCallback(() => {
+  } = (0, E.pE)(), [h, b] = i.useState(""), [y, x] = i.useState(!1), O = "" !== h && y, j = i.useCallback(() => {
     b((0, g.e1)(u, c, a))
   }, [u, c, a]), I = i.useCallback(() => {
-    j(), v(!0)
+    j(), x(!0)
   }, [j]), S = i.useCallback(() => {
-    v(!1)
+    x(!1)
   }, []), T = i.useCallback(() => {
     (0, _.n)({
       channelId: c,
@@ -71,12 +71,12 @@ function v(e) {
   let N = (0, r.jsx)(p.Text, {
     variant: "text-xs/semibold",
     color: "none",
-    className: x.voteCount,
+    className: C.voteCount,
     scaleFontToUserSetting: !0,
     children: n
   });
   return (0, r.jsxs)("div", {
-    className: x.votesData,
+    className: C.votesData,
     children: [l ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(p.ua7, {
         text: (0, r.jsx)(p.Text, {
@@ -89,13 +89,13 @@ function v(e) {
         "aria-label": !1,
         children: e => {
           var t, n;
-          return (0, r.jsx)(d.zx, (t = C({}, e), n = n = {
+          return (0, r.jsx)(d.zx, (t = v({}, e), n = n = {
             onMouseEnter: I,
             onMouseLeave: S,
             onFocus: I,
             onBlur: S,
             onClick: T,
-            className: x.voteCountButton,
+            className: C.voteCountButton,
             "aria-describedby": O ? s : void 0,
             look: d.zx.Looks.BLANK,
             size: d.zx.Sizes.NONE,
@@ -141,7 +141,7 @@ function O(e) {
     }
   }, "animate-always");
   return (0, r.jsx)(s.animated.span, {
-    className: x.votePercentageBar,
+    className: C.votePercentageBar,
     style: i,
     "aria-hidden": !0
   })
@@ -191,25 +191,25 @@ function I(e) {
     canShowVoterDetails: s
   } = e, c = !0 === t.isSelected, u = !0 === t.didSelfVote, d = !0 === t.isVictor, m = t.shouldAnimateTransition;
   return (0, r.jsxs)("div", {
-    className: a()(x.answerInner, {
-      [x.currentlyVoting]: i !== h.Y7.LIST,
-      [x.selected]: c
+    className: a()(C.answerInner, {
+      [C.currentlyVoting]: i !== h.Y7.LIST,
+      [C.selected]: c
     }),
     children: [l ? (0, r.jsx)(O, {
       percentage: t.votesPercentage,
       shouldAnimate: m
     }) : null, null != t.pollMedia.emoji && (0, r.jsx)(b.sc, {
-      className: x.emoji,
+      className: C.emoji,
       emoji: t.pollMedia.emoji
     }), (0, r.jsx)(p.Text, {
-      className: x.label,
+      className: C.label,
       variant: "text-sm/semibold",
       color: "none",
       scaleFontToUserSetting: !0,
       children: t.pollMedia.text
     }), t.didSelfVote && (0, r.jsx)(o.T, {
       children: y.intl.string(y.t["8DAM+/"])
-    }), l && (0, r.jsx)(v, {
+    }), l && (0, r.jsx)(x, {
       percentage: t.votesPercentage,
       label: t.votes,
       canShowVoterDetails: s,
@@ -220,7 +220,7 @@ function I(e) {
       didSelfVote: u,
       isVictor: d,
       isExpired: n,
-      className: x.answerSelectionIcon
+      className: C.answerSelectionIcon
     })]
   })
 }
@@ -246,9 +246,9 @@ function S(e) {
     }
     return i
   }(e, ["isExpired", "answersInteraction", "canShowVoteCounts", "canTapAnswers"]);
-  return (0, r.jsx)(b.$e, C({
-    className: x.answersContainer,
-    answerClassName: x.answer,
+  return (0, r.jsx)(b.$e, v({
+    className: C.answersContainer,
+    answerClassName: C.answer,
     answersInteraction: n,
     canTapAnswers: l,
     renderAnswerContent: e => (0, r.jsx)(I, {

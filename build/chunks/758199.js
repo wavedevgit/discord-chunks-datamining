@@ -1,7 +1,7 @@
 /** Chunk was on 61668 **/
 n.d(t, {
   W: () => j,
-  u: () => v
+  u: () => x
 }), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685);
 var r, i = n(255367),
   l = n(73800),
@@ -21,8 +21,8 @@ var r, i = n(255367),
   E = n(388032),
   y = n(383195);
 
-function x() {
-  return (x = Object.assign || function(e) {
+function C() {
+  return (C = Object.assign || function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = arguments[t];
       for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -31,7 +31,7 @@ function x() {
   }).apply(this, arguments)
 }
 
-function C(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -49,7 +49,7 @@ function C(e) {
   }
   return e
 }
-var v = ((r = {})[r.BOT = 0] = "BOT", r[r.ACTIVITY = 1] = "ACTIVITY", r);
+var x = ((r = {})[r.BOT = 0] = "BOT", r[r.ACTIVITY = 1] = "ACTIVITY", r);
 
 function O(e) {
   let {
@@ -72,7 +72,7 @@ function O(e) {
 function j(e) {
   var t, n, r, a;
   let {
-    title: v,
+    title: x,
     header: j,
     footer: I,
     info: S,
@@ -83,12 +83,12 @@ function j(e) {
     embedUrl: w,
     infoUrl: Z,
     actions: R = [],
-    trackingConfig: L,
-    onClickContent: D,
+    trackingConfig: D,
+    onClickContent: L,
     onClickBanner: M
   } = e;
-  L = {
-    id: null != (n = null == (t = L) ? void 0 : t.id) ? n : "0",
+  D = {
+    id: null != (n = null == (t = D) ? void 0 : t.id) ? n : "0",
     linkType: null != (r = null == t ? void 0 : t.linkType) ? r : h.Un.UNKNOWN,
     referrerId: null != (a = null == t ? void 0 : t.referrerId) ? a : _.default.getId(),
     activityCustomId: null == t ? void 0 : t.activityCustomId,
@@ -101,7 +101,7 @@ function j(e) {
   } = (0, m.Z)(null != A ? A : T), F = "linear-gradient(45deg, ".concat(k, ", ").concat(U, ")"), B = (0, s.e7)([p.Z], () => p.Z.useReducedMotion), G = l.useRef(!1), H = (0, d.O)(e => {
     if (!1 === G.current && e) {
       var t;
-      null == L || null == (t = L.onView) || t.call(L), (0, h.GF)(L.id, L.linkType, L.referrerId, L.activityCustomId), G.current = !0
+      null == D || null == (t = D.onView) || t.call(D), (0, h.GF)(D.id, D.linkType, D.referrerId, D.activityCustomId), G.current = !0
     }
   }, void 0), V = g.wS && null != w ? (0, i.jsx)(c.zx, {
     look: c.zx.Looks.BLANK,
@@ -109,7 +109,7 @@ function j(e) {
     "aria-label": E.intl.string(E.t.WqhZsr),
     className: y.linkIcon,
     onClick: () => {
-      (0, g.JG)(w, () => (0, u.showToast)((0, u.createToast)(E.intl.string(E.t["L/PwZW"]), u.ToastType.SUCCESS))), (0, h.Yu)(L.id, L.linkType)
+      (0, g.JG)(w, () => (0, u.showToast)((0, u.createToast)(E.intl.string(E.t["L/PwZW"]), u.ToastType.SUCCESS))), (0, h.Yu)(D.id, D.linkType)
     },
     children: (0, i.jsx)(u.xPt, {
       size: "xs",
@@ -127,14 +127,14 @@ function j(e) {
     let e = q.current;
     null != e && ("hidden" === getComputedStyle(e).visibility ? e.pause() : e.play())
   }, []), J = l.useMemo(() => !!K && new URL(N).pathname.endsWith(".gif"), [K, N]), $ = l.useMemo(() => {
-    if (null != D) return e => {
-      D(e), (0, h.KX)(L.id, L.linkType, h.j_.CONTENT, L.referrerId, L.activityCustomId)
+    if (null != L) return e => {
+      L(e), (0, h.KX)(D.id, D.linkType, h.j_.CONTENT, D.referrerId, D.activityCustomId)
     }
-  }, [D, L]), ee = l.useMemo(() => {
+  }, [L, D]), ee = l.useMemo(() => {
     if (null != M) return e => {
-      M(e), (0, h.KX)(L.id, L.linkType, h.j_.BANNER, L.referrerId, L.activityCustomId)
+      M(e), (0, h.KX)(D.id, D.linkType, h.j_.BANNER, D.referrerId, D.activityCustomId)
     }
-  }, [M, L]);
+  }, [M, D]);
   return (0, i.jsxs)("div", {
     ref: H,
     className: y.embed,
@@ -194,7 +194,7 @@ function j(e) {
                 color: "none",
                 lineClamp: 1,
                 className: y.contentTitle,
-                children: v
+                children: x
               }), (0, i.jsx)("div", {
                 className: y.contentInfoWrapper,
                 children: S
@@ -222,19 +222,19 @@ function j(e) {
               submitting: o,
               children: m,
               onClick(e) {
-                l(e), (0, h.KX)(L.id, L.linkType, s, L.referrerId, L.activityCustomId)
+                l(e), (0, h.KX)(D.id, D.linkType, s, D.referrerId, D.activityCustomId)
               }
             };
             return d ? (0, i.jsx)(u.ua7, {
               text: a,
               children: e => {
-                var t = x({}, function(e) {
+                var t = C({}, function(e) {
                   if (null == e) throw TypeError("Cannot destructure " + e);
                   return e
                 }(e));
-                return (0, i.jsx)(c.zx, C({}, f, t))
+                return (0, i.jsx)(c.zx, v({}, f, t))
               }
-            }, n) : (0, i.jsx)(c.zx, C({}, f), n)
+            }, n) : (0, i.jsx)(c.zx, v({}, f), n)
           })
         })]
       }), null != I && I]

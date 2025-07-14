@@ -103,9 +103,9 @@ let _ = e => {
     let {
       topic: E,
       speaker_count: y,
-      participant_count: x
-    } = n, C = null != (t = n.members) ? t : [], v = g ? C.slice(0, 3) : C, O = y - v.length;
-    return g && (O += C.length - v.length), (0, r.jsxs)("div", {
+      participant_count: C
+    } = n, v = null != (t = n.members) ? t : [], x = g ? v.slice(0, 3) : v, O = y - x.length;
+    return g && (O += v.length - x.length), (0, r.jsxs)("div", {
       children: [(0, r.jsxs)("div", {
         className: f.flex,
         children: [(0, r.jsxs)("div", {
@@ -132,7 +132,7 @@ let _ = e => {
           }), (0, r.jsx)(s.X6q, {
             className: a()(f.__invalid_label, f.listeners),
             variant: "heading-sm/semibold",
-            children: x
+            children: C
           })]
         })]
       }), g && (0, r.jsxs)("div", {
@@ -164,9 +164,9 @@ let _ = e => {
         className: a()(f.members, {
           [f.embed]: g
         }),
-        children: [v.length > 0 && (0, r.jsxs)("div", {
+        children: [x.length > 0 && (0, r.jsxs)("div", {
           className: f.speakers,
-          children: [v.map(e => (0, r.jsx)(_, {
+          children: [x.map(e => (0, r.jsx)(_, {
             speaker: e,
             guildId: b.id,
             isEmbed: g

@@ -1,6 +1,6 @@
 /** Chunk was on 61668 **/
 n.d(t, {
-  e: () => v,
+  e: () => x,
   i: () => O
 }), n(35282), n(388685);
 var r = n(255367),
@@ -21,21 +21,21 @@ var r = n(255367),
   b = n(981631),
   E = n(388032),
   y = n(841935);
-let x = /^<(a?):(\w+):(\d+)>/;
+let C = /^<(a?):(\w+):(\d+)>/;
 
-function C(e) {
+function v(e) {
   let t = i.useMemo(() => {
     var t;
-    return null == (t = x.exec(e)) ? void 0 : t[3]
+    return null == (t = C.exec(e)) ? void 0 : t[3]
   }, [e]);
   return (0, s.e7)([h.ZP], () => null == t ? null : h.ZP.getCustomEmojiById(t))
 }
 
-function v(e) {
+function x(e) {
   let {
     message: t,
     className: n
-  } = e, [l, o] = i.useState(!1), s = t.getChannelId(), d = C(t.content), p = i.useCallback(() => {
+  } = e, [l, o] = i.useState(!1), s = t.getChannelId(), d = v(t.content), p = i.useCallback(() => {
     null != d && (0, f.rU)(s, t.id, {
       id: d.id,
       name: d.name
@@ -135,25 +135,25 @@ function O(e) {
     message: n,
     compact: l,
     usernameHook: a
-  } = e, s = n.content, [u, f] = i.useState(!1), h = (0, d.ZP)(n), x = a(h), v = C(s), O = i.useCallback(() => {
-    null != v && g.S.dispatchToLastSubscribed(b.CkL.INSERT_TEXT, {
-      plainText: ":".concat(v.name, ":"),
+  } = e, s = n.content, [u, f] = i.useState(!1), h = (0, d.ZP)(n), C = a(h), x = v(s), O = i.useCallback(() => {
+    null != x && g.S.dispatchToLastSubscribed(b.CkL.INSERT_TEXT, {
+      plainText: ":".concat(x.name, ":"),
       rawText: s,
       addSpace: !0
     })
-  }, [v, s]), j = i.useMemo(() => {
+  }, [x, s]), j = i.useMemo(() => {
     var e;
-    return null == v ? null : {
+    return null == x ? null : {
       src: _.ZP.getEmojiURL({
-        id: v.id,
-        animated: v.animated,
+        id: x.id,
+        animated: x.animated,
         size: 48
       }),
-      emojiId: v.id,
-      name: ":".concat(null != (e = v.originalName) ? e : v.name, ":"),
-      animated: v.animated
+      emojiId: x.id,
+      name: ":".concat(null != (e = x.originalName) ? e : x.name, ":"),
+      animated: x.animated
     }
-  }, [v]);
+  }, [x]);
   return (0, r.jsx)(m.Z, {
     iconNode: (0, r.jsx)(o.EO4, {
       size: "refresh_sm",
@@ -164,12 +164,12 @@ function O(e) {
     compact: l,
     contentClassName: y.content,
     children: (0, r.jsx)("span", {
-      children: null == v || null == j ? E.intl.format(E.t.k6Jc9f, {
+      children: null == x || null == j ? E.intl.format(E.t.k6Jc9f, {
         username: h.nick,
-        usernameHook: x
+        usernameHook: C
       }) : E.intl.format(E.t.IihHBw, {
         username: h.nick,
-        usernameHook: x,
+        usernameHook: C,
         emojiPreview: (0, r.jsx)(p.Y, {
           node: j,
           isInteracting: u
@@ -184,7 +184,7 @@ function O(e) {
             tag: "span",
             variant: "text-md/medium",
             color: "text-primary",
-            children: ":".concat(null != (t = v.originalName) ? t : v.name, ":")
+            children: ":".concat(null != (t = x.originalName) ? t : x.name, ":")
           })
         })
       })

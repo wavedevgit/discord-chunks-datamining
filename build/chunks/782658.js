@@ -20,9 +20,9 @@ var r = n(255367),
   b = n(314897),
   E = n(430824),
   y = n(701190),
-  x = n(411198),
-  C = n(610699),
-  v = n(313876),
+  C = n(411198),
+  v = n(610699),
+  x = n(313876),
   O = n(778333),
   j = n(949981),
   I = n(680668),
@@ -40,16 +40,16 @@ function R(e) {
     message: n,
     getAcceptInviteContext: R
   } = e, {
-    invite: L,
-    inviteError: D
+    invite: D,
+    inviteError: L
   } = (0, l.cj)([y.Z], () => ({
     invite: y.Z.getInvite(t),
     inviteError: y.Z.getInviteError(t)
-  }), [t]), M = null == L;
+  }), [t]), M = null == D;
   i.useEffect(() => {
     M && a.ZP.resolveInvite(t)
   }, [t, M]);
-  let k = null != L ? L : {
+  let k = null != D ? D : {
       state: w.r2o.RESOLVING,
       code: ""
     },
@@ -57,7 +57,7 @@ function R(e) {
       analyticsLocations: U
     } = (0, u.ZP)(),
     F = (0, d.v)(),
-    B = (0, l.e7)([E.Z], () => (null == L ? void 0 : L.guild) != null ? E.Z.getGuild(L.guild.id) : null, [L]),
+    B = (0, l.e7)([E.Z], () => (null == D ? void 0 : D.guild) != null ? E.Z.getGuild(D.guild.id) : null, [D]),
     G = (0, l.e7)([b.default], () => b.default.getId()),
     H = (0, l.e7)([m.ZP], () => {
       var e;
@@ -67,8 +67,8 @@ function R(e) {
       null != k.channel && a.ZP.transitionToInviteSync(k)
     },
     z = () => {
-      if (null == B && (null == L ? void 0 : L.guild) != null) {
-        let e = x.Qs(L.guild);
+      if (null == B && (null == D ? void 0 : D.guild) != null) {
+        let e = C.Qs(D.guild);
         if ((0, c.bN)() && (0, c.Yt)(e)) return void(0, s.mN)(Z.L0.NSFW_SERVER_INVITE_EMBED)
       }(0, g.yU)() ? (0, h.Z)({
         analyticsSource: {
@@ -105,9 +105,9 @@ function R(e) {
       });
       break;
     case w.r2o.ERROR:
-      W = (0, r.jsx)(v.Z, {
+      W = (0, r.jsx)(x.Z, {
         author: n.author,
-        inviteError: D
+        inviteError: L
       });
       break;
     default:
@@ -164,7 +164,7 @@ function R(e) {
             break
           }
           if ((0, _.P1)(k)) {
-            W = (0, r.jsx)(C.Z, {
+            W = (0, r.jsx)(v.Z, {
               invite: k,
               getAcceptInviteContext: R,
               message: n

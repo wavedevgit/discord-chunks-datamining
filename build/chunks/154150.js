@@ -1,15 +1,15 @@
 /** Chunk was on 36878 **/
 n.d(t, {
-  X: () => o
+  X: () => s
 }), n(388685);
-var a = n(51880);
-class i extends a.Z {
+var i = n(51880);
+class a extends i.Z {
   get root() {
-    return this.items[a.d]
+    return this.items[i.d]
   }
 }
 
-function o() {
+function s() {
   for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
-  return new i(...t)
+  return new a(...t)
 }

@@ -1,6 +1,6 @@
 /** Chunk was on 61668 **/
 n.d(t, {
-  Z: () => x
+  Z: () => C
 }), n(997841), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -21,9 +21,9 @@ var r = n(255367),
   E = n(388032),
   y = n(273254);
 
-function x(e) {
-  var t, x, C;
-  let v, O, j, {
+function C(e) {
+  var t, C, v;
+  let x, O, j, {
       onTransitionToInviteChannel: I,
       onAcceptInstantInvite: S,
       guild: T,
@@ -35,16 +35,16 @@ function x(e) {
     {
       channel: Z,
       approximate_member_count: R,
-      approximate_presence_count: L
+      approximate_presence_count: D
     } = N,
-    D = N.state === b.r2o.ACCEPTING,
+    L = N.state === b.r2o.ACCEPTING,
     M = null != Z ? (0, m.jD)(Z) : null,
     k = null != T,
     U = null != M,
     F = null != M && M.isGuildVocal(),
     B = null != M && M.isGuildStageVoice(),
     G = (0, f.yE)(null != (t = N.flags) ? t : 0, l.$.IS_GUEST_INVITE),
-    H = null != (x = null == T ? void 0 : T.features.has(b.oNc.HUB)) && x,
+    H = null != (C = null == T ? void 0 : T.features.has(b.oNc.HUB)) && C,
     V = null == T ? void 0 : T.id,
     {
       analyticsLocations: z
@@ -66,7 +66,7 @@ function x(e) {
     }, [N, P, z, k, I, S]);
   if (null == T) {
     if (null == N.guild) return (0, r.jsx)(h.Z, {});
-    (T = _.Qs(N.guild)).premiumTier = null != (C = N.guild.premium_tier) ? C : b.Eu4.NONE
+    (T = _.Qs(N.guild)).premiumTier = null != (v = N.guild.premium_tier) ? v : b.Eu4.NONE
   }
   let J = (0, g.e)({
     isVoiceChannel: F,
@@ -106,7 +106,7 @@ function x(e) {
     })
   })), F ? (O = (0, r.jsx)(p.Z.Channel, {
     channel: M
-  }), v = (0, r.jsxs)("span", {
+  }), x = (0, r.jsxs)("span", {
     className: y.infoTitle,
     children: [E.intl.format(E.t["2wimj4"], {
       guildName: T.name
@@ -117,10 +117,10 @@ function x(e) {
         isBannerVisible: !1
       })
     })]
-  })) : null != R && R >= 5 || null != L && L > 0 ? v = (0, r.jsx)(p.Z.Data, {
+  })) : null != R && R >= 5 || null != D && D > 0 ? x = (0, r.jsx)(p.Z.Data, {
     members: R,
-    membersOnline: L
-  }) : U && (v = (0, r.jsx)(p.Z.Channel, {
+    membersOnline: D
+  }) : U && (x = (0, r.jsx)(p.Z.Channel, {
     channel: M,
     guild: T
   })), (0, r.jsxs)(p.Z, {
@@ -137,11 +137,11 @@ function x(e) {
         }), (0, r.jsx)(p.Z.Info, {
           title: O,
           onClick: q,
-          children: v
+          children: x
         })]
       }), (0, r.jsx)(p.Z.Button, {
         onClick: Q,
-        submitting: D,
+        submitting: L,
         color: p.Z.Button.Colors.GREEN,
         children: F ? B ? E.intl.string(E.t["7vb2cX"]) : E.intl.string(E.t.gpqgam) : k ? E.intl.string(E.t.cEnaW1) : E.intl.string(E.t.XpeFYm)
       })]

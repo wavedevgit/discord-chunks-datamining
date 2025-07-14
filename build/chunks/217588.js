@@ -20,9 +20,9 @@ var r = n(255367),
   b = n(524444),
   E = n(98278),
   y = n(767714),
-  x = n(430824),
-  C = n(594174),
-  v = n(626135),
+  C = n(430824),
+  v = n(594174),
+  x = n(626135),
   O = n(74538),
   j = n(453070),
   I = n(926491),
@@ -35,7 +35,7 @@ var r = n(255367),
   Z = n(673206),
   R = n(239594);
 
-function L(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -54,7 +54,7 @@ function L(e) {
   return e
 }
 
-function D(e, t) {
+function L(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -80,7 +80,7 @@ let M = (e, t) => t ? w.intl.format(w.t.auckX1, {
   };
 
 function U(e) {
-  v.default.track(P.rMx.PREMIUM_PROMOTION_OPENED, {
+  x.default.track(P.rMx.PREMIUM_PROMOTION_OPENED, {
     location_page: null != e.guild_id ? P.ZY5.GUILD_CHANNEL : P.ZY5.DM_CHANNEL,
     location_section: P.jXE.STICKER_POPOUT
   }), (0, E.z)()
@@ -141,7 +141,7 @@ let B = e => {
       let {
         channel: e
       } = g.current;
-      v.default.track(P.rMx.OPEN_POPOUT, L({
+      x.default.track(P.rMx.OPEN_POPOUT, D({
         type: P.jXE.STICKER_POPOUT,
         guild_id: e.getGuildId(),
         sticker_pack_id: n.pack_id
@@ -188,9 +188,9 @@ let B = e => {
       } = e,
       [j, I] = i.useState(null),
       [S, N] = i.useState(!1),
-      M = C.default.getCurrentUser(),
+      M = v.default.getCurrentUser(),
       k = O.ZP.canUseCustomStickersEverywhere(M),
-      B = (0, o.e7)([x.Z], () => x.Z.getGuild(n.guild_id)),
+      B = (0, o.e7)([C.Z], () => C.Z.getGuild(n.guild_id)),
       G = null != B,
       [H, V] = i.useState(!1),
       [z, W] = i.useState(null),
@@ -200,7 +200,7 @@ let B = e => {
       }), [l.guild_id]),
       {
         current: Y
-      } = i.useRef(L({
+      } = i.useRef(D({
         guild_id: l.getGuildId()
       }, (0, p.v_)(l))),
       X = {
@@ -234,7 +234,7 @@ let B = e => {
       } = q.current;
       e()
     }, [S, j]), (0, d.ZP)(() => {
-      v.default.track(P.rMx.OPEN_POPOUT, L({
+      x.default.track(P.rMx.OPEN_POPOUT, D({
         type: ee
       }, Y))
     }), S) ? (0, r.jsxs)(b.W_, {
@@ -315,7 +315,7 @@ let B = e => {
               align: m.Z.Align.START,
               justify: m.Z.Justify.START,
               className: R.otherEmojisContainer,
-              children: t.map(e => (0, r.jsx)(c.ua7, D(L({
+              children: t.map(e => (0, r.jsx)(c.ua7, L(D({
                 text: e.name
               }, b.b_), {
                 children: t => {
@@ -337,7 +337,7 @@ let B = e => {
                     }
                     return i
                   }(t, ["onMouseEnter", "onMouseLeave"]);
-                  return (0, r.jsx)("div", D(L({
+                  return (0, r.jsx)("div", L(D({
                     className: a()(R.otherEmoji, {
                       [Z.nonInteractingSticker]: null != z && z !== e.id
                     }),

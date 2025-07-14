@@ -1,9 +1,9 @@
 /** Chunk was on 61668 **/
 n.d(t, {
-  I1: () => C,
-  IZ: () => v,
+  I1: () => v,
+  IZ: () => x,
   PJ: () => N,
-  Qb: () => x,
+  Qb: () => C,
   Yc: () => I,
   bo: () => S,
   cy: () => O,
@@ -76,9 +76,9 @@ function b(e) {
     pageNumMessages: b,
     pageNumLinks: E,
     pageNumEmbeds: y,
-    pageNumAttachments: x,
-    searchQueryString: C,
-    searchQuery: v
+    pageNumAttachments: C,
+    searchQueryString: v,
+    searchQuery: x
   } = e;
   i.ZP.trackWithMetadata(d.rMx.SEARCH_RESULT_VIEWED, {
     search_type: t,
@@ -96,9 +96,9 @@ function b(e) {
     page_num_messages: b,
     page_num_links: E,
     page_num_embeds: y,
-    page_num_attach: x,
-    search_query_length: g(C),
-    search_query_content_length: h(v)
+    page_num_attach: C,
+    search_query_length: g(v),
+    search_query_content_length: h(x)
   })
 }
 
@@ -152,7 +152,7 @@ function y(e) {
   })
 }
 
-function x(e) {
+function C(e) {
   let {
     searchType: t,
     searchId: n,
@@ -170,7 +170,7 @@ function x(e) {
   })
 }
 
-function C(e) {
+function v(e) {
   let {
     searchType: t,
     searchId: n
@@ -187,7 +187,7 @@ function C(e) {
   })
 }
 
-function v(e) {
+function x(e) {
   let {
     searchId: t,
     searchType: n
@@ -233,14 +233,14 @@ function j(e) {
     b = null != s ? (0, c.kG)(s) : [],
     E = 0,
     y = 0,
-    x = 0,
     C = 0,
     v = 0,
+    x = 0,
     O = 0,
     j = 0,
     I = 0;
   b.forEach(e => {
-    e.type === d.dCx.ANSWER_IN ? E++ : e.type === d.dCx.ANSWER_USERNAME_FROM ? y++ : e.type === d.dCx.ANSWER_USERNAME_MENTIONS ? x++ : e.type === d.dCx.ANSWER_HAS ? C++ : e.type === d.dCx.ANSWER_BEFORE ? v++ : e.type === d.dCx.ANSWER_ON ? O++ : e.type === d.dCx.ANSWER_AFTER ? j++ : e.type === d.dCx.ANSWER_PINNED && I++
+    e.type === d.dCx.ANSWER_IN ? E++ : e.type === d.dCx.ANSWER_USERNAME_FROM ? y++ : e.type === d.dCx.ANSWER_USERNAME_MENTIONS ? C++ : e.type === d.dCx.ANSWER_HAS ? v++ : e.type === d.dCx.ANSWER_BEFORE ? x++ : e.type === d.dCx.ANSWER_ON ? O++ : e.type === d.dCx.ANSWER_AFTER ? j++ : e.type === d.dCx.ANSWER_PINNED && I++
   });
   let S = _(n);
   i.ZP.trackWithMetadata(d.rMx.MESSAGES_SEARCH_STARTED, {
@@ -253,9 +253,9 @@ function j(e) {
     sort_type: (0, r.Vj)(l),
     filter_in_count: E,
     filter_from_count: y,
-    filter_mentions_count: x,
-    filter_has_count: C,
-    filter_before_count: v,
+    filter_mentions_count: C,
+    filter_has_count: v,
+    filter_before_count: x,
     filter_during_count: O,
     filter_after_count: j,
     filter_pinned_count: I

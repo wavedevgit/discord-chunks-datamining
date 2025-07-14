@@ -1,6 +1,6 @@
 /** Chunk was on 61668 **/
 n.d(t, {
-  Z: () => v
+  Z: () => x
 }), n(314940);
 var r = n(255367),
   i = n(73800),
@@ -102,7 +102,7 @@ function y(e) {
   })
 }
 
-function x(e) {
+function C(e) {
   let {
     action: t,
     channelId: n,
@@ -146,7 +146,7 @@ function x(e) {
   })
 }
 
-function C(e) {
+function v(e) {
   let {
     message: t,
     poll: n,
@@ -180,18 +180,18 @@ function C(e) {
         })]
       }), c, (0, r.jsxs)("div", {
         className: g.bottomBar,
-        children: [(0, r.jsx)(x, {
+        children: [(0, r.jsx)(C, {
           channelId: t.getChannelId(),
           messageId: t.id,
           action: n.secondaryAction,
           className: g.secondaryAction,
           isInteractive: n.isInteractive
-        }), (0, r.jsx)(x, {
+        }), (0, r.jsx)(C, {
           channelId: t.getChannelId(),
           messageId: t.id,
           action: n.tertiaryAction,
           className: g.tertiaryAction
-        }), (0, r.jsx)(x, {
+        }), (0, r.jsx)(C, {
           channelId: t.getChannelId(),
           messageId: t.id,
           action: n.primaryAction
@@ -201,7 +201,7 @@ function C(e) {
   })
 }
 
-function v(e) {
+function x(e) {
   let {
     message: t,
     poll: n,
@@ -211,7 +211,7 @@ function v(e) {
     message: t,
     poll: n,
     children: (0, r.jsx)(f.Pk, {
-      children: (0, r.jsx)(C, {
+      children: (0, r.jsx)(v, {
         message: t,
         poll: n,
         className: i

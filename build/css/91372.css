@@ -1,6 +1,6 @@
 /**
   Module ID: 91372
-  Original File Name: c670648b8b4d6a9b
+  Original File Name: 784353917cef90e6
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -824,7 +824,7 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .markdown_d285a6 {
-    font-size: 16px;
+    font-size: 1rem;
     -webkit-user-select: text;
     -moz-user-select: text;
     user-select: text
@@ -6273,6 +6273,102 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
     margin-bottom: 30px
 }
 
+.header__61e0e {
+    font-size: 64px;
+    font-style: italic;
+    font-weight: 900;
+    letter-spacing: -1.28px;
+    line-height: 100%;
+    text-transform: uppercase
+}
+
+@container premium-marketing-home-container (max-width: 820px) {
+    .header__61e0e {
+        font-size: 52px;
+        letter-spacing: -1.04px;
+        line-height: 54px
+    }
+}
+
+@container premium-marketing-home-container (max-width: 660px) {
+    .header__61e0e {
+        font-size: 38px;
+        letter-spacing: -.76px;
+        line-height: 38px
+    }
+}
+
+.container__15b9a {
+    align-items: center;
+    display: flex;
+    height: 750px;
+    justify-content: center;
+    position: relative
+}
+
+.gradientBackground__15b9a {
+    bottom: 0;
+    position: absolute;
+    transform: rotate(180deg);
+    z-index: 1
+}
+
+.contentContainer__15b9a {
+    max-width: 800px;
+    position: relative;
+    text-align: center;
+    z-index: 1
+}
+
+.jumpingWumpus__15b9a {
+    height: 283px;
+    left: 50%;
+    position: absolute;
+    top: -300px;
+    transform: translateX(-50%)
+}
+
+.footerFlag__15b9a {
+    height: 100px;
+    left: -20px;
+    position: absolute;
+    top: -115px;
+    transform: rotate(21.871deg);
+    width: 123px
+}
+
+.footerBattery__15b9a {
+    position: absolute;
+    right: -20px;
+    top: -145px;
+    transform: rotate(-27.323deg);
+    width: 134px
+}
+
+.footerBox__15b9a {
+    height: 150px;
+    left: 15px;
+    position: absolute;
+    top: 82px
+}
+
+.footerKey__15b9a {
+    height: 156px;
+    position: absolute;
+    right: 0;
+    top: 105px
+}
+
+.topLayer__15b9a {
+    z-index: 3
+}
+
+.bottomLayer__15b9a {
+    background-blend-mode: screen;
+    mix-blend-mode: screen;
+    z-index: 0
+}
+
 .attributionBannerContainer_afe9b4 {
     align-items: center;
     display: flex;
@@ -6350,31 +6446,6 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
 .attributionIcon_afe9b4 {
     margin-bottom: -12px;
     margin-left: auto
-}
-
-.header__61e0e {
-    font-size: 64px;
-    font-style: italic;
-    font-weight: 900;
-    letter-spacing: -1.28px;
-    line-height: 100%;
-    text-transform: uppercase
-}
-
-@container premium-marketing-home-container (max-width: 820px) {
-    .header__61e0e {
-        font-size: 52px;
-        letter-spacing: -1.04px;
-        line-height: 54px
-    }
-}
-
-@container premium-marketing-home-container (max-width: 660px) {
-    .header__61e0e {
-        font-size: 38px;
-        letter-spacing: -.76px;
-        line-height: 38px
-    }
 }
 
 .flyingWumpus__12720 {
@@ -20153,4 +20224,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=c670648b8b4d6a9b.css.map*/
+/*# sourceMappingURL=784353917cef90e6.css.map*/

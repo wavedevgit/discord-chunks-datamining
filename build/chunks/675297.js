@@ -26,9 +26,9 @@ function y(e) {
     guildProductListing: t,
     guildId: n,
     location: y,
-    shouldShowFullDescriptionButton: x = !0,
-    hideRoleTag: C = !1,
-    lineClamp: v = 1,
+    shouldShowFullDescriptionButton: C = !0,
+    hideRoleTag: v = !1,
+    lineClamp: x = 1,
     cardWidth: O,
     cardHeight: j,
     thumbnailHeight: I,
@@ -39,9 +39,9 @@ function y(e) {
     return s.Z.getRole(n, null != (e = null == t ? void 0 : t.role_id) ? e : E.lds)
   }), A = (0, l.U)(t, 600), w = (0, _.C)(t), Z = (0, d.SO)(N), {
     shouldHideGuildPurchaseEntryPoints: R
-  } = (0, o.uP)(n), L = (0, _.k)(t);
+  } = (0, o.uP)(n), D = (0, _.k)(t);
   if (null == N || R) return null;
-  let D = () => (0, h.e)({
+  let L = () => (0, h.e)({
       guildId: n,
       guildProductListingId: t.id,
       analyticsLocation: y
@@ -74,7 +74,7 @@ function y(e) {
     imageUrl: A,
     name: t.name,
     description: t.description,
-    formattedPrice: L,
+    formattedPrice: D,
     role: P,
     ctaComponent: (0, r.jsx)(b.Z, {
       guildId: n,
@@ -82,13 +82,13 @@ function y(e) {
       sourceAnalyticsLocations: y
     }),
     productType: w,
-    shouldShowFullDescriptionButton: x,
-    onShowFullDescription: D,
-    onTapCard: D,
+    shouldShowFullDescriptionButton: C,
+    onShowFullDescription: L,
+    onTapCard: L,
     actionMenu: M,
     showOpaqueBackground: T,
-    hideRoleTag: C,
-    lineClamp: v,
+    hideRoleTag: v,
+    lineClamp: x,
     cardWidth: O,
     cardHeight: j,
     thumbnailHeight: I,

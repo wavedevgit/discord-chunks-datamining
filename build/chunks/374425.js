@@ -1,6 +1,6 @@
 /** Chunk was on 61668 **/
 n.d(t, {
-  Z: () => v
+  Z: () => x
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -50,8 +50,8 @@ function y(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let x = (0, d.Mg)(l.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
-  C = e => {
+let C = (0, d.Mg)(l.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
+  v = e => {
     null != e && s.ZP.trackWithMetadata(g.rMx.EXPRESSION_TOOLTIP_VIEWED, {
       type: h.cd.STICKER_IN_MESSAGE_HOVER,
       expression_id: e.id,
@@ -60,12 +60,12 @@ let x = (0, d.Mg)(l.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
       is_custom: (0, m.z)(e.type)
     })
   },
-  v = e => {
+  x = e => {
     let {
       renderableSticker: t,
       channel: n,
       isInteracting: l
-    } = e, s = i.useRef(null), [d, m] = i.useState(!0), [g, h] = i.useState(String(Date.now())), [v] = (0, p.XW)(t, l), {
+    } = e, s = i.useRef(null), [d, m] = i.useState(!0), [g, h] = i.useState(String(Date.now())), [x] = (0, p.XW)(t, l), {
       analyticsLocations: O
     } = (0, c.ZP)(o.Z.STICKER_MESSAGE), j = (0, r.jsxs)("span", {
       className: b.stickerName,
@@ -73,7 +73,7 @@ let x = (0, d.Mg)(l.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
         size: "xs",
         color: "currentColor",
         className: b.stickerIcon
-      }), (null != v ? v : t).name]
+      }), (null != x ? x : t).name]
     });
     return (0, r.jsx)(c.Gt, {
       value: O,
@@ -99,7 +99,7 @@ let x = (0, d.Mg)(l.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
             text: (0, u.Y)(j),
             "aria-label": !1,
             onTooltipShow: () => {
-              C(v)
+              v(x)
             },
             children: e => (0, r.jsx)(a.P3F, y(E({}, e), {
               innerRef: s,
@@ -110,8 +110,8 @@ let x = (0, d.Mg)(l.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
               tag: "span",
               children: (0, r.jsx)(f.Z, {
                 isInteracting: l,
-                size: x,
-                sticker: null != v ? v : t
+                size: C,
+                sticker: null != x ? x : t
               })
             }))
           }))

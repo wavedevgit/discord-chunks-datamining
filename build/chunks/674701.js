@@ -1,7 +1,7 @@
 /** Chunk was on 61668 **/
 n.d(t, {
   U: () => R,
-  Z: () => L
+  Z: () => D
 });
 var r, i = n(255367),
   l = n(73800),
@@ -20,9 +20,9 @@ var r, i = n(255367),
   b = n(541716),
   E = n(28546),
   y = n(963249),
-  x = n(594174),
-  C = n(626135),
-  v = n(51144),
+  C = n(594174),
+  v = n(626135),
+  x = n(51144),
   O = n(479446),
   j = n(795448),
   I = n(441623),
@@ -35,19 +35,19 @@ var r, i = n(255367),
   Z = n(587862),
   R = ((r = {}).SYSTEM_MESSAGE = "system_message", r.COACHMARK = "coachmark", r);
 
-function L(e) {
+function D(e) {
   let {
     giftIntentType: t,
     premiumGiftIntentCardType: n,
     recipientUser: r,
     onMouseEnter: a,
     onMouseLeave: R,
-    popoutPosition: L,
-    analyticsPage: D,
+    popoutPosition: D,
+    analyticsPage: L,
     analyticsSection: M,
     glow: k,
     giftIntentSecondaryAction: U
-  } = e, F = (0, c.e7)([x.default], () => x.default.getCurrentUser()), {
+  } = e, F = (0, c.e7)([C.default], () => C.default.getCurrentUser()), {
     analyticsLocations: B
   } = (0, g.ZP)(), G = (0, c.e7)([I.Z], () => I.Z.getFriendAnniversaryYears(r.id));
   l.useEffect(() => {
@@ -107,7 +107,7 @@ function L(e) {
             color: V ? "header-primary" : "always-white",
             lineClamp: 3,
             children: t === T.hX.FRIEND_ANNIVERSARY ? w.intl.formatToPlainString(w.t.BWJvAA, {
-              friendUserName: v.ZP.getName(r)
+              friendUserName: x.ZP.getName(r)
             }) : (0, O.Ou)(t)
           }), (0, i.jsx)(p.Text, {
             className: Y,
@@ -122,7 +122,7 @@ function L(e) {
         children: [null != U && (0, i.jsx)(d.zx, {
           className: o()(Z.button, J),
           onClick: e => {
-            e.stopPropagation(), C.default.track(N.rMx.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
+            e.stopPropagation(), v.default.track(N.rMx.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
               gift_intent_type: t,
               cta_type: U
             }), U === T.X2.VIEW_ALL ? f.Z.transitionToSection(N.pJs.ALL, {
@@ -169,7 +169,7 @@ function L(e) {
               analyticsLocation: "system_message" === n ? i.chat : i.actionButtonCoachmark,
               analyticsLocations: B,
               analyticsObject: {
-                page: D,
+                page: L,
                 section: M,
                 object: N.qAy.BUTTON_CTA,
                 objectType: N.Qqv.GIFT
@@ -193,10 +193,10 @@ function L(e) {
             })]
           })
         })]
-      }), null != L && (0, i.jsx)("div", {
+      }), null != D && (0, i.jsx)("div", {
         className: o()(Z.connector, {
-          [Z.leftPopoutConnector]: "left" === L,
-          [Z.rightPopoutConnector]: "right" === L
+          [Z.leftPopoutConnector]: "left" === D,
+          [Z.rightPopoutConnector]: "right" === D
         })
       })]
     })

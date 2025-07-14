@@ -1,7 +1,7 @@
 /** Chunk was on 61668 **/
 n.d(t, {
   $: () => O,
-  s: () => v
+  s: () => x
 }), n(953529);
 var r = n(255367),
   i = n(73800),
@@ -27,23 +27,23 @@ let y = e => {
       url: n,
       description: i
     } = t;
-    return null == n ? null : (0, r.jsx)(C, {
+    return null == n ? null : (0, r.jsx)(v, {
       url: n,
       description: i
     })
   },
-  x = e => {
+  C = e => {
     var t, n, i;
     let {
       embed: l
     } = e;
     if (!h.n2.has(l.type)) return null;
     let a = void 0 !== l.video && l.type !== o.h.GIFV ? l.video.url : null != (i = null == (t = l.thumbnail) ? void 0 : t.url) ? i : null == (n = l.image) ? void 0 : n.url;
-    return null == a ? null : (0, r.jsx)(C, {
+    return null == a ? null : (0, r.jsx)(v, {
       url: a
     })
   },
-  C = e => {
+  v = e => {
     let {
       url: t,
       description: n
@@ -62,7 +62,7 @@ let y = e => {
     })
   };
 
-function v(e) {
+function x(e) {
   u.Z.pop(), (0, f.t)({
     id: "explicit-media-false-positive-modal",
     text: b.intl.string(b.t.gFsTKi)
@@ -80,7 +80,7 @@ function O(e) {
     onConfirmPress: p,
     transitionState: m,
     onClose: f
-  } = e, h = (0, d.Dt)(), C = (0, g.pn)("ExplicitMediaFalsePositiveModal"), v = i.useCallback(() => {
+  } = e, h = (0, d.Dt)(), v = (0, g.pn)("ExplicitMediaFalsePositiveModal"), x = i.useCallback(() => {
     (0, _.aP)({
       action: _.Yy.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CANCEL,
       channelId: t,
@@ -103,7 +103,7 @@ function O(e) {
       context: a
     })
   }, [t, n, a]);
-  let j = i.useMemo(() => C ? b.intl.string(b.t["z4du/P"]) : b.intl.string(b.t.gg5Dp6), [C]);
+  let j = i.useMemo(() => v ? b.intl.string(b.t["z4du/P"]) : b.intl.string(b.t.gg5Dp6), [v]);
   return (0, r.jsxs)(c.Y0X, {
     transitionState: m,
     "aria-labelledby": h,
@@ -111,7 +111,7 @@ function O(e) {
     parentComponent: "ExplicitMediaFalsePositiveModal",
     children: [(0, r.jsxs)(c.hzk, {
       children: [(0, r.jsx)(c.olH, {
-        onClick: v,
+        onClick: x,
         className: E.closeButton
       }), (0, r.jsx)(c.X6q, {
         id: h,
@@ -126,7 +126,7 @@ function O(e) {
         children: j
       }), null != o && (0, r.jsx)(y, {
         attachment: o
-      }), null != u && (0, r.jsx)(x, {
+      }), null != u && (0, r.jsx)(C, {
         embed: u
       })]
     }), (0, r.jsxs)(c.mzw, {
@@ -145,7 +145,7 @@ function O(e) {
         disabled: l,
         color: s.zx.Colors.TRANSPARENT,
         size: s.zx.Sizes.MEDIUM,
-        onClick: v,
+        onClick: x,
         children: b.intl.string(b.t["ETE/oK"])
       })]
     })]

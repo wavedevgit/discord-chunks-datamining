@@ -1,6 +1,6 @@
 /**
   Module ID: 61668
-  Original File Name: bd8b3250b61e669e
+  Original File Name: 794f12b9dcc9a97f
 **/
 .wrapper__74bfa {
     align-items: center;
@@ -9902,21 +9902,14 @@ html .progress__61462 {
     margin-left: -8px
 }
 
-.buttonContainer__44492 .footerAction__44492 {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    vertical-align: center
-}
-
-.buttonContainer__44492 .footerAction__44492 .footerIcon__44492 {
+.footerIcon__44492 {
     margin-right: 4px;
     vertical-align: center
 }
 
-.buttonStyle__44492 {
-    padding: 2px 8px
+.footerAction__44492 {
+    display: flex;
+    padding: 8px
 }
 
 .dot__44492 {
@@ -10195,21 +10188,14 @@ html .progress__61462 {
     margin-right: 8px
 }
 
-.footerAction_b99f57 {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    vertical-align: center
-}
-
-.footerAction_b99f57 .footerIcon_b99f57 {
+.footerIcon_b99f57 {
     margin-right: 4px;
     vertical-align: center
 }
 
-.buttonStyle_b99f57 {
-    padding: 2px 8px
+.footerAction_b99f57 {
+    display: flex;
+    padding: 8px
 }
 
 .spanCorrection_b99f57 {
@@ -10235,10 +10221,13 @@ html .progress__61462 {
 }
 
 .dotSeparatedRow_b99f57 {
+    gap: 4px
+}
+
+.dotSeparatedRow_b99f57,.footerRow_b99f57 {
     align-items: center;
     display: flex;
-    flex-direction: row;
-    gap: 4px
+    flex-direction: row
 }
 
 .dot_b99f57 {
@@ -10422,4 +10411,4 @@ html .progress__61462 {
     width: 16px
 }
 
-/*# sourceMappingURL=bd8b3250b61e669e.css.map*/
+/*# sourceMappingURL=794f12b9dcc9a97f.css.map*/

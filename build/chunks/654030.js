@@ -19,9 +19,9 @@ var r, i = n(255367),
   b = n(592745),
   E = n(952164),
   y = n(768419),
-  x = n(456432),
-  C = n(789407),
-  v = n(598077),
+  C = n(456432),
+  v = n(789407),
+  x = n(598077),
   O = n(757266),
   j = n(831506),
   I = n(271383),
@@ -33,8 +33,8 @@ var r, i = n(255367),
   w = n(417363),
   Z = n(768581),
   R = n(358085),
-  L = n(804739),
-  D = n(410575),
+  D = n(804739),
+  L = n(410575),
   M = n(981631),
   k = n(701488);
 
@@ -75,7 +75,7 @@ class G extends(r = l.PureComponent) {
       let t = (0, p.Z)(e, n.id);
       if (null != t) return t
     }
-    return null == n || n instanceof C.ZP ? null : Z.ZP.getApplicationIconURL({
+    return null == n || n instanceof v.ZP ? null : Z.ZP.getApplicationIconURL({
       id: n.id,
       icon: null != t ? t.coverImage : n.coverImage,
       size: k.cc
@@ -98,8 +98,8 @@ class G extends(r = l.PureComponent) {
     return null != t && null != t.primarySkuId && !e && R.isPlatformEmbedded
   }
   render() {
-    return (0, i.jsx)(D.Z, {
-      section: D.Z.Sections.APPLICATION_EMBED,
+    return (0, i.jsx)(L.Z, {
+      section: L.Z.Sections.APPLICATION_EMBED,
       children: this.renderEmbed()
     })
   }
@@ -175,7 +175,7 @@ class G extends(r = l.PureComponent) {
         channelId: t,
         guildId: n
       } = this.props;
-      return (0, i.jsx)(x.Z, F({
+      return (0, i.jsx)(C.Z, F({
         guildId: null != n ? n : void 0,
         channelId: t,
         source: "Invite Embed"
@@ -278,7 +278,7 @@ let H = a.ZP.connectStores([y.Z, j.Z, T.Z, N.Z, O.Z, A.Z, S.Z, b.Z, w.Z, P.defau
         n = null != t ? t.nick : null,
         r = P.default.getUser(e),
         i = null == r;
-      return null == r && (r = new v.Z({
+      return null == r && (r = new x.Z({
         discriminator: "0005"
       })), {
         user: r,
@@ -296,7 +296,7 @@ let H = a.ZP.connectStores([y.Z, j.Z, T.Z, N.Z, O.Z, A.Z, S.Z, b.Z, w.Z, P.defau
     myPartyId: null != u && null != u.party ? u.party.id : null,
     isLaunching: d,
     isSyncable: m && !_,
-    isLaunchable: null != s && (0, L.t)({
+    isLaunchable: null != s && (0, D.t)({
       LibraryApplicationStore: S.Z,
       LaunchableGameStore: b.Z,
       DispatchApplicationStore: w.Z,
