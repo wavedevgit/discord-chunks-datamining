@@ -1,30 +1,32 @@
 /** Chunk was on 31924 **/
 n.d(t, {
-  default: () => g
+  default: () => j
 });
 var r = n(255367),
   o = n(73800),
-  a = n(442837),
-  i = n(481060),
-  s = n(14263),
-  c = n(650774),
-  l = n(485386),
+  a = n(494497),
+  i = n(442837),
+  s = n(481060),
+  c = n(14263),
+  l = n(650774),
+  d = n(485386),
   u = n(430824),
-  d = n(870246),
-  m = n(795338),
-  f = n(17622),
-  b = n(279604),
-  p = n(535396),
-  x = n(93841),
-  k = n(388032),
-  v = n(340114);
+  m = n(870246),
+  f = n(158638),
+  b = n(795338),
+  p = n(17622),
+  x = n(279604),
+  g = n(535396),
+  k = n(93841),
+  v = n(388032),
+  h = n(340114);
 
-function g(e) {
+function j(e) {
   var t, n, {
-      guildId: g,
-      powerup: j
+      guildId: j,
+      powerup: _
     } = e,
-    h = function(e, t) {
+    O = function(e, t) {
       if (null == e) return {};
       var n, r, o = function(e, t) {
         if (null == e) return {};
@@ -40,49 +42,68 @@ function g(e) {
       return o
     }(e, ["guildId", "powerup"]);
   let {
-    onDeactivate: _,
-    error: O,
-    isLoading: I
-  } = (0, b.ZP)(g, j), {
-    onClose: C
-  } = h, T = o.useCallback(e => {
-    _(e).then(() => {
-      null == C || C()
+    onDeactivate: I,
+    error: C,
+    isLoading: T
+  } = (0, x.ZP)(j, _), {
+    onClose: N
+  } = O, y = o.useCallback(e => {
+    I(e).then(() => {
+      null == N || N()
     })
-  }, [C, _]), E = function(e, t) {
-    let n = (0, a.e7)([c.Z], () => c.Z.getMemberCount(e)),
-      d = (0, s.Z)(e),
-      m = (0, a.e7)([u.Z], () => {
+  }, [N, I]), E = function(e, t) {
+    let n = (0, i.e7)([l.Z], () => l.Z.getMemberCount(e)),
+      m = (0, c.Z)(e),
+      b = (0, i.e7)([u.Z], () => {
         var t;
         return (null == (t = u.Z.getGuild(e)) ? void 0 : t.vanityURLCode) != null
       }),
-      f = (0, a.e7)([l.Z], () => t.skuId !== p.If || null == d ? 0 : Object.values(l.Z.getRoles(e)).filter(e => {
+      p = (0, f.g1)(e, "Powerup Deactivate Modal"),
+      x = (0, i.e7)([d.Z], () => t.skuId !== g.If || null == m ? 0 : Object.values(d.Z.getRoles(e)).filter(e => {
         var t;
         return (null == (t = e.colorStrings) ? void 0 : t.secondaryColor) != null
       }).reduce((e, t) => {
         var n;
-        return e + (null != (n = d[t.id]) ? n : 0)
-      }, 0), [e, t.skuId, d]);
+        return e + (null != (n = m[t.id]) ? n : 0)
+      }, 0), [e, t.skuId, m]);
     return o.useMemo(() => {
       let e;
-      return e = t.skuId === p.If ? f > 0 ? k.intl.formatToPlainString(x.default["4jSvr6"], {
-        perk: t.title,
-        memberCount: f
-      }) : k.intl.formatToPlainString(x.default.cavtEh, {
-        perk: t.title
-      }) : k.intl.formatToPlainString(x.default["4jSvr6"], {
-        perk: t.title,
-        memberCount: n
-      }), m && t.skuId === p.XW && (e = (0, r.jsxs)(r.Fragment, {
-        children: [e, (0, r.jsx)(i.Text, {
+      switch (t.skuId) {
+        case g.If:
+          e = x > 0 ? v.intl.formatToPlainString(k.default["4jSvr6"], {
+            perk: t.title,
+            memberCount: x
+          }) : v.intl.formatToPlainString(k.default.cavtEh, {
+            perk: t.title
+          });
+          break;
+        case a.A:
+          e = b ? (0, r.jsx)(s.Text, {
+            color: "text-danger",
+            variant: "text-sm/semibold",
+            children: v.intl.string(k.default.hN75yc)
+          }) : (0, r.jsx)(s.Text, {
+            color: "text-danger",
+            variant: "text-sm/semibold",
+            children: v.intl.string(k.default.Du91RU)
+          });
+          break;
+        default:
+          e = v.intl.formatToPlainString(k.default["4jSvr6"], {
+            perk: t.title,
+            memberCount: n
+          })
+      }
+      return b && t.skuId === g.XW && (e = (0, r.jsxs)(r.Fragment, {
+        children: [e, (0, r.jsx)(s.Text, {
           color: "text-danger",
           variant: "text-sm/semibold",
-          children: k.intl.string(x.default.M4XL5u)
+          children: p ? v.intl.string(k.default.TkNA7e) : v.intl.string(k.default.M4XL5u)
         })]
       })), e
-    }, [t, f, n, m])
-  }(g, j);
-  return (0, d.$)(g, j, d.w.DEACTIVATE), (0, r.jsxs)(i.Y0X, (t = function(e) {
+    }, [t, x, n, b, p])
+  }(j, _);
+  return (0, m.$)(j, _, m.w.DEACTIVATE), (0, r.jsxs)(s.Y0X, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -100,79 +121,79 @@ function g(e) {
     }
     return e
   }({
-    className: v.modal,
-    size: j.type === p.Us.LEVEL ? i.CgR.MEDIUM : i.CgR.SMALL
-  }, h), n = n = {
+    className: h.modal,
+    size: _.type === g.Us.LEVEL ? s.CgR.MEDIUM : s.CgR.SMALL
+  }, O), n = n = {
     parentComponent: "GuildPowerupDeactivateModal",
-    children: [(0, r.jsxs)(i.hzk, {
-      className: v.modalContentContainer,
+    children: [(0, r.jsxs)(s.hzk, {
+      className: h.modalContentContainer,
       scrollbarType: "none",
       children: [(0, r.jsxs)("div", {
-        className: v.headerContainer,
+        className: h.headerContainer,
         children: [(0, r.jsxs)("div", {
-          className: v.header,
-          children: [(0, r.jsx)(i.X6q, {
+          className: h.header,
+          children: [(0, r.jsx)(s.X6q, {
             variant: "heading-md/semibold",
-            children: k.intl.formatToPlainString(x.default.iEBw1N, {
-              perk: j.title
+            children: v.intl.formatToPlainString(k.default.iEBw1N, {
+              perk: _.title
             })
-          }), (0, r.jsx)(i.Text, {
+          }), (0, r.jsx)(s.Text, {
             variant: "text-sm/medium",
-            children: k.intl.formatToPlainString(x.default["7o0K+/"], {
-              perk: j.title
+            children: v.intl.formatToPlainString(k.default["7o0K+/"], {
+              perk: _.title
             })
           })]
-        }), (0, r.jsx)(i.olH, {
-          onClick: h.onClose
+        }), (0, r.jsx)(s.olH, {
+          onClick: O.onClose
         })]
       }), (() => {
-        switch (j.type) {
-          case p.Us.LEVEL:
-            return (0, r.jsx)(f.Z, {
-              powerup: j
+        switch (_.type) {
+          case g.Us.LEVEL:
+            return (0, r.jsx)(p.Z, {
+              powerup: _
             });
-          case p.Us.PERK:
-            return (0, r.jsx)(m.m, {
-              className: v.image,
-              powerup: j
+          case g.Us.PERK:
+            return (0, r.jsx)(b.m, {
+              className: h.image,
+              powerup: _
             })
         }
       })(), (0, r.jsxs)("div", {
-        className: v.warningContainer,
-        children: [(0, r.jsx)(i.Text, {
+        className: h.warningContainer,
+        children: [(0, r.jsx)(s.Text, {
           color: "text-danger",
           variant: "eyebrow",
-          children: k.intl.string(x.default.OVt5CA)
-        }), (0, r.jsx)(i.Text, {
-          className: v.warningText,
+          children: v.intl.string(k.default.OVt5CA)
+        }), (0, r.jsx)(s.Text, {
+          className: h.warningText,
           tag: "span",
           variant: "text-sm/medium",
           children: E
         })]
-      }), null != O && (0, r.jsx)(i.Text, {
-        className: v.errorText,
+      }), null != C && (0, r.jsx)(s.Text, {
+        className: h.errorText,
         color: "text-danger",
         variant: "text-sm/semibold",
-        children: O
+        children: C
       })]
-    }), (0, r.jsxs)(i.mzw, {
-      className: v.footer,
+    }), (0, r.jsxs)(s.mzw, {
+      className: h.footer,
       children: [(0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": !0,
-        className: v.button,
-        children: (0, r.jsx)(i.zxk, {
+        className: h.button,
+        children: (0, r.jsx)(s.zxk, {
           variant: "critical-primary",
-          text: k.intl.string(x.default.PYPdl5),
-          loading: I,
-          onClick: T
+          text: v.intl.string(k.default.PYPdl5),
+          loading: T,
+          onClick: y
         })
       }), (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": !0,
-        className: v.button,
-        children: (0, r.jsx)(i.zxk, {
+        className: h.button,
+        children: (0, r.jsx)(s.zxk, {
           variant: "secondary",
-          text: k.intl.string(k.t["ETE/oK"]),
-          onClick: h.onClose
+          text: v.intl.string(v.t["ETE/oK"]),
+          onClick: O.onClose
         })
       })]
     })]

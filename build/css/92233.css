@@ -1,6 +1,6 @@
 /**
   Module ID: 92233
-  Original File Name: 2f9586ea716b526e
+  Original File Name: 37ed72a08053aa5b
 **/
 @value minColumnWidth: 460px;
 
@@ -1345,7 +1345,18 @@
     width: 100%
 }
 
+.premiumCardHover__6df1a {
+    transition: transform .2s ease-in-out
+}
+
+.premiumCardHover__6df1a:hover {
+    position: relative;
+    transform: scale(1.1);
+    z-index: 1
+}
+
 .applicationHomeCard__6df1a {
+    height: 100%;
     width: 342px
 }
 
@@ -1495,4 +1506,4 @@
     margin-left: var(--space-12)
 }
 
-/*# sourceMappingURL=2f9586ea716b526e.css.map*/
+/*# sourceMappingURL=37ed72a08053aa5b.css.map*/

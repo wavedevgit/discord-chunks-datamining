@@ -1,6 +1,7 @@
 /** Chunk was on 96127 **/
 e.exports = {
   premiumCards: "premiumCards__6df1a",
+  premiumCardHover: "premiumCardHover__6df1a",
   applicationHomeCard: "applicationHomeCard__6df1a",
   card: "card__6df1a",
   tier0: "tier0__6df1a",

@@ -76,7 +76,7 @@ function g(e) {
         })
       })
     }),
-    T = (0, i.jsx)(o.X6q, {
+    M = (0, i.jsx)(o.X6q, {
       variant: "heading-lg/bold",
       color: "header-primary",
       children: _.intl.string(_.t["Rp0+ZG"])
@@ -88,7 +88,7 @@ function g(e) {
         direction: "horizontal",
         justify: "space-between",
         align: "center",
-        children: [T, (0, i.jsx)(o.olH, {
+        children: [M, (0, i.jsx)(o.olH, {
           onClick: t
         })]
       })

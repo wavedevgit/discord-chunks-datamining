@@ -37,8 +37,8 @@ function y(e) {
       paymentSources: b,
       paymentSourceId: I,
       selectedPlan: O,
-      selectedSkuId: T,
-      step: M,
+      selectedSkuId: M,
+      step: T,
       updatedSubscription: w,
       startingPremiumSubscriptionPlanIdRef: A,
       startingFractionalPremiumEndsAtRef: N
@@ -63,7 +63,7 @@ function y(e) {
     q = (0, C.tK)(null == D ? void 0 : D.skuId),
     J = (0, _.$)(b, I),
     Q = R && null != D && V;
-  s()(null != O, "Expected plan to selected"), s()(null != T, "Expected selectedSkuId"), s()(null != M, "Step should be set");
+  s()(null != O, "Expected plan to selected"), s()(null != M, "Expected selectedSkuId"), s()(null != T, "Step should be set");
   let X = l.useCallback(() => {
     t(), null == y || y()
   }, [t, y]);
