@@ -1,4 +1,4 @@
-/** Chunk was on 61668 **/
+/** Chunk was on 670 **/
 e.exports = {
   row: "row_c7dbcb",
   icon: "icon_c7dbcb",

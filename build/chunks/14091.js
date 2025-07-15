@@ -357,83 +357,74 @@ function V(e) {
     dismissFeedbackEntrypoint: l
   } = e, a = i.useMemo(() => ({
     type: R.aib.DMS
-  }), []), o = (0, b.WJ)(a), s = (0, c.e7)([C.Z], () => C.Z.getSearchResultsQueryString(o)), [u, d] = i.useState(0);
-  i.useEffect(() => {
-    d(0)
-  }, [s]);
-  let p = (0, c.cj)([g.Z, C.Z], () => {
-      var e, t, n, r;
-      return {
-        isSearching: null != (e = g.Z.getIsFetching(o)) && e,
-        isIndexing: null != (t = g.Z.getIsIndexing(o)) && t,
-        isHistoricalIndexing: null != (n = g.Z.getIsHistoricalIndexing(o)) && n,
-        documentsIndexed: g.Z.getDocumentsIndexed(o),
-        offset: u * R.vpv,
-        totalResults: null != (r = g.Z.getTotalCount(o)) ? r : 0,
-        hasError: null != g.Z.getError(o),
-        showBlockedResults: C.Z.shouldShowBlockedResults(o),
-        showNoResultsAlt: C.Z.shouldShowNoResultsAlt(o)
-      }
-    }),
-    h = (0, c.e7)([g.Z], () => g.Z.getLastSearchAnalyticsId()),
-    {
-      searchResults: f,
-      ignoreCount: m,
-      blockCount: y
-    } = (0, P.G)(a),
-    {
-      searchMode: x,
-      setSearchMode: v
-    } = (0, S.Z)({
-      searchId: o
-    }),
-    j = i.useCallback(e => {
-      v(e);
-      let t = U(o);
-      T.Z.fetchCrossDMMessages({
-        searchContext: a,
-        selectedPageIndex: 0,
-        queryString: null != t ? t : "",
-        searchMode: e
-      })
-    }, [a, o, v]),
-    O = i.useCallback(e => {
-      var t;
-      d(e), T.Z.fetchCrossDMMessages({
-        searchContext: a,
-        queryString: null != (t = U(o)) ? t : "",
-        selectedPageIndex: e,
-        searchMode: x
-      })
-    }, [a, o, x]);
+  }), []), o = (0, b.WJ)(a), s = (0, c.cj)([g.Z, C.Z], () => {
+    var e, t, n, r;
+    return {
+      isSearching: null != (e = g.Z.getIsFetching(o)) && e,
+      isIndexing: null != (t = g.Z.getIsIndexing(o)) && t,
+      isHistoricalIndexing: null != (n = g.Z.getIsHistoricalIndexing(o)) && n,
+      documentsIndexed: g.Z.getDocumentsIndexed(o),
+      offset: C.Z.getOffset(o),
+      totalResults: null != (r = g.Z.getTotalCount(o)) ? r : 0,
+      hasError: null != g.Z.getError(o),
+      showBlockedResults: C.Z.shouldShowBlockedResults(o),
+      showNoResultsAlt: C.Z.shouldShowNoResultsAlt(o)
+    }
+  }), u = (0, c.e7)([g.Z], () => g.Z.getLastSearchAnalyticsId()), {
+    searchResults: d,
+    ignoreCount: p,
+    blockCount: h
+  } = (0, P.G)(a), {
+    searchMode: f,
+    setSearchMode: m
+  } = (0, S.Z)({
+    searchId: o
+  }), y = i.useCallback(e => {
+    m(e);
+    let t = U(o);
+    T.Z.fetchCrossDMMessages({
+      searchContext: a,
+      selectedPageIndex: 0,
+      queryString: null != t ? t : "",
+      searchMode: e
+    })
+  }, [a, o, m]), x = i.useCallback(e => {
+    var t;
+    T.Z.fetchCrossDMMessages({
+      searchContext: a,
+      queryString: null != (t = U(o)) ? t : "",
+      selectedPageIndex: e,
+      searchMode: f
+    })
+  }, [a, o, f]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(H, {
       searchId: R.aib.DMS,
-      search: p,
-      searchAnalyticsId: h,
+      search: s,
+      searchAnalyticsId: u,
       searchType: R.aib.DMS,
-      searchResults: f,
-      ignoreCount: m,
-      blockCount: y,
+      searchResults: d,
+      ignoreCount: p,
+      blockCount: h,
       renderEmbeds: _.NA.useSetting(),
       developerMode: _.Sb.useSetting(),
       theme: t,
       isFeedbackVisible: n,
       dismissFeedbackEntrypoint: l,
-      onPageChange: O,
-      onSearchModeChange: j,
-      searchMode: x
+      onPageChange: x,
+      onSearchModeChange: y,
+      searchMode: f
     }), (0, r.jsx)(B, {
       searchId: R.aib.DMS,
       searchType: R.aib.DMS,
-      searchAnalyticsId: h,
-      searchResults: f,
-      searchOffset: p.offset,
+      searchAnalyticsId: u,
+      searchResults: d,
+      searchOffset: s.offset,
       searchLimit: R.vpv,
-      searchHasError: p.hasError,
-      searchTotalResults: p.totalResults,
-      searchIsIndexing: p.isHistoricalIndexing,
-      isSearching: p.isSearching
+      searchHasError: s.hasError,
+      searchTotalResults: s.totalResults,
+      searchIsIndexing: s.isHistoricalIndexing,
+      isSearching: s.isSearching
     })]
   })
 }

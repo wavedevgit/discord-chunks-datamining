@@ -1,4 +1,4 @@
-/** Chunk was on 61668 **/
+/** Chunk was on 29971 **/
 e.exports = {
   notFoundPlaceholder: "notFoundPlaceholder_a3c1e1",
   fadeIn: "fadeIn_a3c1e1",

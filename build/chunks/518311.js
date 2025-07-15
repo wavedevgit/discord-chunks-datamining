@@ -22,7 +22,7 @@ var r, i = n(255367),
   C = n(708690),
   x = n(194359),
   v = n(425493),
-  j = n(461745),
+  j = n(794433),
   O = n(493773),
   E = n(40851),
   S = n(100527),
@@ -330,13 +330,13 @@ class eg extends(r = l.PureComponent) {
       null != t && o.push($.ZP.getName(t))
     }), (0, i.jsxs)("div", {
       className: el.searchBar,
-      children: [(0, i.jsx)(j.ZP, {
+      children: [(0, i.jsx)(j.Z, {
         ref: this.searchBarRef,
         className: el.searchBarComponent,
         autoFocus: !0,
         placeholder: 0 === a.size ? ei.intl.string(ei.t.Wxnb6u) : "",
         disabled: this.isPartyFull(),
-        size: j.ZP.Sizes.MEDIUM,
+        size: j.Z.Sizes.MEDIUM,
         maxHeight: this.props.inBornThisNamedExperiment ? 110 : void 0,
         query: t,
         selectedRow: l,

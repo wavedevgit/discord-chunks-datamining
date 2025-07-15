@@ -19,13 +19,13 @@ let d = function(e) {
     questContent: d,
     taskDetails: E,
     location: S,
-    sourceQuestContent: T
-  } = e, m = (0, o.DD)({
+    sourceQuestContent: m
+  } = e, T = (0, o.DD)({
     quest: s,
     taskDetails: E,
     location: S,
     questContent: d,
-    sourceQuestContent: T
+    sourceQuestContent: m
   }), A = (0, u.h)({
     location: S,
     questConfig: s.config
@@ -41,13 +41,13 @@ let d = function(e) {
       quest: s,
       questContent: d,
       location: S,
-      sourceQuestContent: T
+      sourceQuestContent: m
     }), (0, l.jsx)("div", {
       className: c.copy,
       children: (0, l.jsx)(i.Text, {
         variant: "text-sm/normal",
         color: "text-default",
-        children: m
+        children: T
       })
     })]
   })

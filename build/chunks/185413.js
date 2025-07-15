@@ -1,8 +1,8 @@
 /** Chunk was on 7590 **/
 n.d(t, {
-  U: () => P,
-  default: () => Z,
-  t: () => k
+  U: () => k,
+  default: () => P,
+  t: () => Z
 }), n(953529), n(388685), n(781311), n(413496), n(433524), n(35282), n(539854);
 var r = n(255367),
   l = n(73800),
@@ -10,7 +10,7 @@ var r = n(255367),
   a = n(755721),
   s = n(481060),
   o = n(741361),
-  c = n(461745),
+  c = n(794433),
   d = n(600164),
   u = n(313201),
   m = n(131704),
@@ -53,7 +53,7 @@ function L(e, t) {
   return t ? e.slice(1) : e
 }
 
-function P(e) {
+function k(e) {
   let t, {
       guild: n,
       channel: a,
@@ -76,8 +76,8 @@ function P(e) {
   let N = v.iI(O, a, n, s, w),
     {
       placeholderText: M,
-      hintText: P,
-      renderEmptyText: Z
+      hintText: k,
+      renderEmptyText: P
     } = {
       placeholderText: R.intl.string(R.t.iezLLi),
       hintText: R.intl.string(R.t["rwFx8/"]),
@@ -85,7 +85,7 @@ function P(e) {
         query: e
       })
     };
-  return (0, r.jsx)(k, {
+  return (0, r.jsx)(Z, {
     pendingAdditions: o,
     query: f,
     onQueryChange: function(e) {
@@ -118,11 +118,11 @@ function P(e) {
         else {
           let n;
           e.rowType === S.aC.ROLE || e.rowType === S.aC.ADMINISTRATOR ? n = {
-            type: c.Fj.ROLE,
+            type: c.F.ROLE,
             label: e.name,
             color: e.colorString
           } : (e.rowType === S.aC.MEMBER || e.rowType === S.aC.OWNER) && (n = {
-            type: c.Fj.MEMBER,
+            type: c.F.MEMBER,
             label: e.name,
             avatar: e.avatarURL
           }), null != n && (r[t] = {
@@ -158,14 +158,14 @@ function P(e) {
     roles: t,
     members: N,
     placeholderText: M,
-    hintText: P,
-    renderEmptyText: Z,
+    hintText: k,
+    renderEmptyText: P,
     isStageChannel: u,
     description: m
   })
 }
 
-function k(e) {
+function Z(e) {
   let t, {
     listClassName: n,
     pendingAdditions: l,
@@ -210,7 +210,7 @@ function k(e) {
   })
 }
 
-function Z(e) {
+function P(e) {
   let {
     transitionState: t,
     onClose: n,
@@ -268,7 +268,7 @@ function Z(e) {
           className: O.headerSubtitleIcon
         }), E.name]
       })]
-    }), (0, r.jsx)(P, {
+    }), (0, r.jsx)(k, {
       guild: w,
       channel: E,
       permission: E.accessPermissions,

@@ -1,6 +1,6 @@
 /**
   Module ID: 27978
-  Original File Name: 688006a386ad912b
+  Original File Name: b0fb787d4219365f
 **/
 .textContainer__2215e {
     padding: 6px 0
@@ -1025,7 +1025,7 @@
 }
 
 .hasActionMaxWidth__920b8 {
-    max-width: 48%
+    max-width: 45%
 }
 
 .userActions__920b8,.username__920b8 {
@@ -1034,25 +1034,8 @@
 }
 
 .userActions__920b8 {
+    gap: 8px;
     margin-left: auto
-}
-
-.userActionMenu__920b8 {
-    line-height: 0;
-    margin-left: 16px;
-    padding: 0
-}
-
-.userActionMenu__920b8:hover {
-    cursor: pointer
-}
-
-.userActionMenu__920b8:hover .overflowMenuIcon__920b8 {
-    color: var(--interactive-active)
-}
-
-.userActionMenu__920b8 .overflowMenuIcon__920b8 {
-    color: var(--interactive-normal)
 }
 
 .textOverflow__920b8 {
@@ -1075,7 +1058,7 @@
 .actions_df9c06 {
     display: flex;
     justify-content: center;
-    margin-top: 16px
+    margin: 28px 0 12px
 }
 
 .buttonsContainer_a8b931 {
@@ -2900,4 +2883,4 @@
     height: 100px
 }
 
-/*# sourceMappingURL=688006a386ad912b.css.map*/
+/*# sourceMappingURL=b0fb787d4219365f.css.map*/

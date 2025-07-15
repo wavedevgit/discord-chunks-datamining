@@ -1,6 +1,6 @@
-/** Chunk was on 67042 **/
+/** Chunk was on 46989 **/
 n.d(t, {
-  Z: () => g
+  Z: () => T
 });
 var r = n(255367),
   l = n(73800),
@@ -13,109 +13,109 @@ var r = n(255367),
   d = n(430824),
   E = n(944486),
   _ = n(189432),
-  A = n(776767),
-  m = n(981631),
-  f = n(388032),
-  T = n(12740);
+  m = n(776767),
+  A = n(981631),
+  g = n(388032),
+  f = n(12740);
 
-function g(e) {
+function T(e) {
   let {
     member: t
-  } = e, n = (0, i.e7)([d.Z], () => d.Z.getGuild(t.guildId), [t.guildId]), g = (0, u.mh)(t.userId, t.guildId), I = (0, u.mV)(t.userId, t.guildId), h = (0, u.LD)(t.userId), O = (0, u.wi)(t.userId, t.guildId);
+  } = e, n = (0, i.e7)([d.Z], () => d.Z.getGuild(t.guildId), [t.guildId]), T = (0, u.mh)(t.userId, t.guildId), I = (0, u.mV)(t.userId, t.guildId), h = (0, u.LD)(t.userId), O = (0, u.wi)(t.userId, t.guildId);
   return (l.useEffect(() => {
     (0, o.zO)(t.guildId)
   }, [t.guildId]), null == n) ? null : (0, r.jsx)(s.xJW, {
-    title: f.intl.string(f.t["ldCE/v"]),
-    titleClassName: T.infoTitle,
-    children: (0, r.jsxs)(A.WM, {
-      children: [(0, r.jsx)(A._2, {
+    title: g.intl.string(g.t["ldCE/v"]),
+    titleClassName: f.infoTitle,
+    children: (0, r.jsxs)(m.WM, {
+      children: [(0, r.jsx)(m._2, {
         icon: (0, r.jsx)(s.lZ8, {
           size: "custom",
-          width: A.Mn,
-          height: A.Mn
+          width: m.Mn,
+          height: m.Mn
         }),
         name: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "text-default",
-          children: f.intl.string(f.t.nzGai4)
+          children: g.intl.string(g.t.nzGai4)
         }),
-        description: g ? (0, r.jsx)(s.sV5, {
+        description: T ? (0, r.jsx)(s.sV5, {
           size: "custom",
-          width: A.Mn,
-          height: A.Mn,
+          width: m.Mn,
+          height: m.Mn,
           color: s.TVs.colors.STATUS_POSITIVE
         }) : (0, r.jsx)(s.CTb, {
           size: "custom",
-          width: A.Mn,
-          height: A.Mn,
+          width: m.Mn,
+          height: m.Mn,
           color: s.TVs.colors.STATUS_DANGER
         })
-      }), I !== u.qc.NO_GATE && (0, r.jsx)(A._2, {
+      }), I !== u.qc.NO_GATE && (0, r.jsx)(m._2, {
         icon: (0, r.jsx)(s.snC, {
           size: "custom",
-          width: A.Mn,
-          height: A.Mn
+          width: m.Mn,
+          height: m.Mn
         }),
         name: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "text-default",
-          children: f.intl.string(f.t["93hqlp"])
+          children: g.intl.string(g.t["93hqlp"])
         }),
         description: I === u.qc.AGREED ? (0, r.jsx)(s.sV5, {
           size: "custom",
-          width: A.Mn,
-          height: A.Mn,
+          width: m.Mn,
+          height: m.Mn,
           color: s.TVs.colors.STATUS_POSITIVE
         }) : (0, r.jsx)(s.CTb, {
           size: "custom",
-          width: A.Mn,
-          height: A.Mn,
+          width: m.Mn,
+          height: m.Mn,
           color: s.TVs.colors.STATUS_DANGER
         })
-      }), (0, r.jsx)(A._2, {
+      }), (0, r.jsx)(m._2, {
         icon: (0, r.jsx)(s.gw7, {
           size: "custom",
           color: "currentColor",
-          width: A.Mn,
-          height: A.Mn
+          width: m.Mn,
+          height: m.Mn
         }),
         name: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "text-default",
-          children: f.intl.string(f.t.SaDIpK)
+          children: g.intl.string(g.t.SaDIpK)
         }),
         description: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "text-default",
           children: h
         })
-      }), (0, r.jsx)(A._2, {
+      }), (0, r.jsx)(m._2, {
         icon: (0, r.jsx)(a.Vj, {
           guild: n,
           size: a.Vj.Sizes.SMOL,
           animate: !1,
-          className: T.guildIcon
+          className: f.guildIcon
         }),
         name: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "text-default",
-          children: f.intl.string(f.t["NQJ+WF"])
+          children: g.intl.string(g.t["NQJ+WF"])
         }),
         description: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "text-default",
           children: O
         })
-      }), (0, r.jsx)(A._2, {
+      }), (0, r.jsx)(m._2, {
         icon: (0, r.jsx)(s.ejJ, {
           size: "custom",
-          width: A.Mn,
-          height: A.Mn
+          width: m.Mn,
+          height: m.Mn
         }),
         name: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "text-default",
-          children: f.intl.string(f.t["eJOq+f"])
+          children: g.intl.string(g.t["eJOq+f"])
         }),
         description: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
@@ -126,7 +126,7 @@ function g(e) {
             showInviterAsFooter: !0,
             onClickInviter: e => {
               let n = E.Z.getChannelId();
-              (0, _.r)(t.guildId, e.id, null != n ? n : m.lds)
+              (0, _.r)(t.guildId, e.id, null != n ? n : A.lds)
             }
           })
         })

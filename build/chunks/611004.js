@@ -25,14 +25,14 @@ let c = {
       getLimit: () => i.vpv,
       onFetchStart: e => {
         let {
-          searchQueryString: n,
-          searchQuery: l
+          searchQueryString: l,
+          searchQuery: s
         } = e;
-        r.Vs(d, n, l), (0, a.tI)({
+        r.Vs(d, l, s, n * i.vpv), (0, a.tI)({
           searchType: t.type,
           searchId: d,
-          query: l,
-          queryString: n
+          query: s,
+          queryString: l
         })
       },
       pagination: {

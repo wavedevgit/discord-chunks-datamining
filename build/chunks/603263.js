@@ -1,4 +1,4 @@
-/** Chunk was on 61668 **/
+/** Chunk was on 670 **/
 n.d(t, {
   Gn: () => C,
   Nz: () => f,
@@ -162,11 +162,12 @@ function v(e, t) {
   })
 }
 
-function x(e, t, n) {
+function x(e, t, n, i) {
   r.Z.dispatch({
     type: "SEARCH_RESULTS_QUERY_UPDATE",
     searchId: e,
     queryString: t,
-    query: n
+    query: n,
+    offset: i
   })
 }

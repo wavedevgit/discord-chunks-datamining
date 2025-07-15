@@ -1,6 +1,6 @@
 /**
   Module ID: 37908
-  Original File Name: c3bf14abcbccb50c
+  Original File Name: eb32820567efe3c6
 **/
 .header__7c901 {
     flex-grow: 0;
@@ -219,18 +219,8 @@
     padding: 0 var(--space-24) var(--space-24)
 }
 
-.backButton__86e92,.continueButton__86e92 {
+.continueButton__86e92 {
     margin: 0
-}
-
-.backButton__86e92 {
-    color: var(--interactive-normal)
-}
-
-.backButton__86e92:hover {
-    text-decoration: underline;
-    -webkit-text-decoration-color: var(--interactive-normal);
-    text-decoration-color: var(--interactive-normal)
 }
 
 .modal_f04ae9 {
@@ -285,7 +275,7 @@
 }
 
 .hasActionMaxWidth__920b8 {
-    max-width: 48%
+    max-width: 45%
 }
 
 .userActions__920b8,.username__920b8 {
@@ -294,25 +284,8 @@
 }
 
 .userActions__920b8 {
+    gap: 8px;
     margin-left: auto
-}
-
-.userActionMenu__920b8 {
-    line-height: 0;
-    margin-left: 16px;
-    padding: 0
-}
-
-.userActionMenu__920b8:hover {
-    cursor: pointer
-}
-
-.userActionMenu__920b8:hover .overflowMenuIcon__920b8 {
-    color: var(--interactive-active)
-}
-
-.userActionMenu__920b8 .overflowMenuIcon__920b8 {
-    color: var(--interactive-normal)
 }
 
 .textOverflow__920b8 {
@@ -352,7 +325,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin: 16px 0;
+    margin: 28px 0;
     width: 100%
 }
 
@@ -360,4 +333,4 @@
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=c3bf14abcbccb50c.css.map*/
+/*# sourceMappingURL=eb32820567efe3c6.css.map*/

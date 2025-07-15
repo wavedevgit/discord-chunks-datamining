@@ -1,4 +1,4 @@
-/** Chunk was on 67042 **/
+/** Chunk was on 46989 **/
 n.d(t, {
   Z: () => o
 });
@@ -16,13 +16,13 @@ function o(e) {
     className: u,
     canRemove: c = !1,
     onRemove: d = a.dG
-  } = e, E = (0, i.dQu)(i.TVs.unsafe_rawColors.PRIMARY_300).hex(), _ = null != (t = null == o ? void 0 : o.colorString) ? t : E, A = l.useMemo(() => ({
+  } = e, E = (0, i.dQu)(i.TVs.unsafe_rawColors.PRIMARY_300).hex(), _ = null != (t = null == o ? void 0 : o.colorString) ? t : E, m = l.useMemo(() => ({
     backgroundColor: "".concat(_, "27")
   }), [_]);
   return null == o ? null : (0, r.jsx)(i.P3F, {
     children: (0, r.jsx)(s.UB, {
       className: u,
-      style: A,
+      style: m,
       role: o,
       guildId: n,
       canRemove: c,

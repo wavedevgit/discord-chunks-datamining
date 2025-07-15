@@ -126,9 +126,9 @@ function T(e) {
     placeholderText: N,
     disabledText: M,
     hintText: L,
-    searchTitleText: P,
-    renderEmptyText: k,
-    focusSearchAfterReady: Z,
+    searchTitleText: k,
+    renderEmptyText: Z,
+    focusSearchAfterReady: P,
     isReady: A,
     maxCount: z,
     hideRowLabel: I = !1
@@ -172,9 +172,9 @@ function T(e) {
       className: a()(p.searchBox, {
         [p.scrollSeparator]: U
       }),
-      children: [null != P && (0, r.jsx)(o.vwX, {
+      children: [null != k && (0, r.jsx)(o.vwX, {
         tag: o.RB0.H5,
-        children: P
+        children: k
       }), (0, r.jsx)(b.Z, {
         ref: B,
         query: i,
@@ -189,7 +189,7 @@ function T(e) {
           T(Y[e])
         },
         placeholder: N,
-        focusAfterReady: Z,
+        focusAfterReady: P,
         isReady: A,
         "aria-labelledby": g,
         "aria-controls": j
@@ -342,7 +342,7 @@ function T(e) {
         className: p.noResultIcon
       }), (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
-        children: k(i)
+        children: Z(i)
       })]
     })]
   })

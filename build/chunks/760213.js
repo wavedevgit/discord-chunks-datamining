@@ -1,32 +1,31 @@
 /** Chunk was on 56782 **/
 n.d(t, {
   W: () => E,
-  Z: () => T
+  Z: () => S
 }), n(457542);
 var r, s = n(255367),
   i = n(73800),
   l = n(120356),
   a = n.n(l),
   o = n(442837),
-  c = n(755721),
-  u = n(481060),
-  d = n(893776),
-  h = n(239091),
-  p = n(598077),
-  m = n(314897),
-  f = n(246946),
-  x = n(594174),
-  g = n(626135),
-  j = n(51144),
-  v = n(480387),
-  C = n(726745),
-  N = n(251423),
-  O = n(981631),
-  b = n(388032),
-  y = n(576052),
+  c = n(481060),
+  u = n(893776),
+  d = n(239091),
+  h = n(598077),
+  p = n(314897),
+  m = n(246946),
+  f = n(594174),
+  x = n(626135),
+  g = n(51144),
+  j = n(480387),
+  v = n(726745),
+  C = n(251423),
+  b = n(981631),
+  y = n(388032),
+  O = n(576052),
   E = ((r = {})[r.LOGIN_REQUIRED = 0] = "LOGIN_REQUIRED", r[r.SWITCHED = 1] = "SWITCHED", r[r.REMOVED = 2] = "REMOVED", r);
 
-function S(e) {
+function N(e) {
   let {
     actionText: t,
     user: n,
@@ -34,84 +33,84 @@ function S(e) {
   } = e, {
     currentUser: i,
     hidePrivateData: l,
-    isAuthenticated: N
-  } = (0, o.cj)([x.default, f.Z, m.default], () => ({
-    currentUser: x.default.getCurrentUser(),
-    hidePrivateData: f.Z.hidePersonalInformation,
-    isAuthenticated: m.default.isAuthenticated()
-  })), E = new p.Z(n), S = N && (null == i ? void 0 : i.id) === E.id, T = n.tokenStatus === C.q.INVALID, P = l || E.isPomelo() ? null : "#".concat(E.discriminator), w = null;
-  return S ? w = (0, s.jsx)(u.Text, {
+    isAuthenticated: C
+  } = (0, o.cj)([f.default, m.Z, p.default], () => ({
+    currentUser: f.default.getCurrentUser(),
+    hidePrivateData: m.Z.hidePersonalInformation,
+    isAuthenticated: p.default.isAuthenticated()
+  })), E = new h.Z(n), N = C && (null == i ? void 0 : i.id) === E.id, S = n.tokenStatus === v.q.INVALID, P = l || E.isPomelo() ? null : "#".concat(E.discriminator), T = null;
+  return N ? T = (0, s.jsx)(c.Text, {
     variant: "text-sm/semibold",
-    className: y.hintText,
+    className: O.hintText,
     color: "text-feedback-positive",
-    children: b.intl.string(b.t.seV8ys)
-  }) : T && (w = (0, s.jsx)(u.Text, {
+    children: y.intl.string(y.t.seV8ys)
+  }) : S && (T = (0, s.jsx)(c.Text, {
     variant: "text-sm/semibold",
-    className: y.hintText,
+    className: O.hintText,
     color: "text-danger",
-    children: b.intl.string(b.t.tYX2pq)
+    children: y.intl.string(y.t.tYX2pq)
   })), (0, s.jsx)("div", {
-    className: y.accountCard,
+    className: O.accountCard,
     children: (0, s.jsxs)("div", {
-      className: y.userDetails,
-      children: [(0, s.jsx)(u.qEK, {
+      className: O.userDetails,
+      children: [(0, s.jsx)(c.qEK, {
         src: E.getAvatarURL(void 0, 40),
-        size: u.EFr.SIZE_40,
+        size: c.EFr.SIZE_40,
         "aria-label": n.username
       }), (0, s.jsxs)("div", {
-        className: a()(y.usernameSection, {
-          [y.hasActionMaxWidth]: !S
+        className: a()(O.usernameSection, {
+          [O.hasActionMaxWidth]: !N
         }),
         children: [(0, s.jsxs)("div", {
-          className: y.username,
-          children: [(0, s.jsx)(u.Text, {
+          className: O.username,
+          children: [(0, s.jsx)(c.Text, {
             variant: "text-md/semibold",
             color: "header-primary",
-            className: y.textOverflow,
-            children: j.ZP.getUserTag(E, {
+            className: O.textOverflow,
+            children: g.ZP.getUserTag(E, {
               mode: "username",
               identifiable: l ? "never" : "always"
             })
-          }), (0, s.jsx)(u.Text, {
+          }), (0, s.jsx)(c.Text, {
             color: "header-secondary",
             variant: "text-sm/normal",
             children: P
           })]
-        }), w]
+        }), T]
       }), (0, s.jsxs)("div", {
-        className: y.userActions,
-        children: [!S && (0, s.jsx)(u.zxk, {
+        className: O.userActions,
+        children: [!N && (0, s.jsx)(c.zxk, {
           variant: "secondary",
-          text: T ? b.intl.string(b.t["DSN+h4"]) : t,
+          text: S ? y.intl.string(y.t["DSN+h4"]) : t,
           onClick: function() {
-            if (T) return void r(0, n.id);
-            g.default.track(O.rMx.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
+            if (S) return void r(0, n.id);
+            x.default.track(b.rMx.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
               location: {
-                section: O.jXE.MANAGE_ACCOUNTS_MODAL
+                section: b.jXE.MANAGE_ACCOUNTS_MODAL
               }
-            }), v.yD(n.id), r(1, n.id)
+            }), j.yD(n.id), r(1, n.id)
           }
-        }), (0, s.jsx)(c.zx, {
-          className: y.userActionMenu,
+        }), (0, s.jsx)(c.hU, {
+          icon: c.xhG,
           onClick: function(e) {
-            (0, h.vq)(e, e => {
+            (0, d.vq)(e, e => {
               let {
                 onSelect: t
               } = e;
-              return (0, s.jsx)(u.v2r, {
-                "aria-label": b.intl.string(b.t["41qiDQ"]),
+              return (0, s.jsx)(c.v2r, {
+                "aria-label": y.intl.string(y.t["41qiDQ"]),
                 navId: "manage-multi-account",
-                onClose: h.Zy,
+                onClose: d.Zy,
                 onSelect: t,
-                children: (0, s.jsx)(u.sNh, {
+                children: (0, s.jsx)(c.sNh, {
                   id: "remove-account",
-                  label: b.intl.string(b.t.lSLMaW),
+                  label: y.intl.string(y.t.lSLMaW),
                   action: () => {
-                    d.Z.logout("multi_accounts_list", null, n.id).finally(() => {
-                      v.Zd(n.id)
+                    u.Z.logout("multi_accounts_list", null, n.id).finally(() => {
+                      j.Zd(n.id)
                     });
                     let e = {};
-                    null != i ? e.section = O.jXE.MANAGE_ACCOUNTS_MODAL : e.page = O.Usc.LOGIN, g.default.track(O.rMx.MULTI_ACCOUNT_ACCOUNT_REMOVE, {
+                    null != i ? e.section = b.jXE.MANAGE_ACCOUNTS_MODAL : e.page = b.Usc.LOGIN, x.default.track(b.rMx.MULTI_ACCOUNT_ACCOUNT_REMOVE, {
                       location: e
                     }), r(2, n.id), null != t && t()
                   },
@@ -120,39 +119,32 @@ function S(e) {
               })
             })
           },
-          size: c.zx.Sizes.ICON,
-          look: c.zx.Looks.BLANK,
-          color: c.zx.Colors.WHITE,
-          "aria-label": b.intl.string(b.t.PdRCRk),
-          children: (0, s.jsx)(u.xhG, {
-            size: "md",
-            color: "currentColor",
-            className: y.overflowMenuIcon
-          })
+          "aria-label": y.intl.string(y.t.PdRCRk),
+          variant: "icon-only"
         })]
       })]
     })
   })
 }
 
-function T(e) {
+function S(e) {
   let {
     actionText: t,
     onAction: n
   } = e, {
     isLoading: r,
     multiAccountUsers: l
-  } = (0, N.L)();
+  } = (0, C.L)();
   return (0, s.jsx)("div", {
-    className: y.list,
-    children: r ? (0, s.jsx)(u.$jN, {}) : l.map((e, r) => (0, s.jsxs)(i.Fragment, {
-      children: [(0, s.jsx)(S, {
+    className: O.list,
+    children: r ? (0, s.jsx)(c.$jN, {}) : l.map((e, r) => (0, s.jsxs)(i.Fragment, {
+      children: [(0, s.jsx)(N, {
         user: e,
         actionText: t,
         onAction: n
       }, e.id), l.length - 1 !== r && (0, s.jsx)("div", {
         role: "separator",
-        className: y.separator
+        className: O.separator
       })]
     }, e.id))
   })

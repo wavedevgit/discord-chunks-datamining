@@ -1,6 +1,6 @@
-/** Chunk was on 67042 **/
+/** Chunk was on 46989 **/
 n.d(t, {
-  Z: () => T
+  Z: () => f
 }), n(388685);
 var r = n(255367),
   l = n(73800),
@@ -14,7 +14,7 @@ var r = n(255367),
   E = n(388032),
   _ = n(548185);
 
-function A(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,20 +23,20 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
 }
 
-function f(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -48,7 +48,7 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class T extends l.PureComponent {
+class f extends l.PureComponent {
   render() {
     let {
       result: e,
@@ -60,17 +60,17 @@ class T extends l.PureComponent {
     if (null == a) return null;
     let u = d.Z.getChannel(a.channel_id);
     if (null == u) return null;
-    let A = "search-result-".concat(a.id);
+    let m = "search-result-".concat(a.id);
     return (0, r.jsx)(o.tEY, {
       ringTarget: this.hitRef,
       ringClassName: _.__invalid_searchResultFocusRing,
       offset: 4,
-      children: (0, r.jsxs)("li", f(m({
+      children: (0, r.jsxs)("li", g(A({
         className: _.container
       }, t), {
         "aria-posinset": 1 + n + l,
         "aria-setsize": i,
-        "aria-labelledby": A,
+        "aria-labelledby": m,
         children: [(0, r.jsx)(o.P3F, {
           tabIndex: -1,
           onClick: this.handleMessageClick,
@@ -83,7 +83,7 @@ class T extends l.PureComponent {
             ref: this.hitRef,
             className: _.message,
             children: (0, r.jsx)(c.Z, {
-              id: A,
+              id: m,
               message: a,
               channel: u,
               onContextMenu: e => this.handleContextMenu(e, a),
@@ -106,18 +106,18 @@ class T extends l.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), A(this, "containerRef", l.createRef()), A(this, "hitRef", l.createRef()), A(this, "handleContextMenu", (e, t) => {
+    super(...e), m(this, "containerRef", l.createRef()), m(this, "hitRef", l.createRef()), m(this, "handleContextMenu", (e, t) => {
       let l = d.Z.getChannel(t.channel_id);
       null != l && (e.stopPropagation(), (0, u.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("16705"), n.e("32670")]).then(n.bind(n, 858341));
-        return n => (0, r.jsx)(e, f(m({}, n), {
+        return n => (0, r.jsx)(e, g(A({}, n), {
           message: t,
           channel: l
         }))
       }))
-    }), A(this, "jumpTo", e => {
+    }), m(this, "jumpTo", e => {
       null != e && (e.preventDefault(), e.stopPropagation());
       let {
         onJump: t,
@@ -125,7 +125,7 @@ class T extends l.PureComponent {
         index: r
       } = this.props, l = n.find(e => e.isSearchHit);
       null != l && t(l, r)
-    }), A(this, "handleMessageClick", e => {
+    }), m(this, "handleMessageClick", e => {
       if (function(e, t) {
           var n;
           let r = null == (n = window) ? void 0 : n.getSelection();

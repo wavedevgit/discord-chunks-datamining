@@ -1,10 +1,10 @@
 /** Chunk was on 36006 **/
 "use strict";
 n.d(t, {
-  $x: () => P,
+  $x: () => x,
   ZP: () => N,
   d7: () => C,
-  w6: () => x
+  w6: () => P
 }), n(539854), n(361932), n(187205), n(388685);
 var r = n(255367),
   s = n(73800),
@@ -63,8 +63,8 @@ let E = Object.freeze({
     onPreventNavigation: null,
     sidebarOpen: !0
   }),
-  P = 1.4,
-  x = 15,
+  x = 1.4,
+  P = 15,
   C = 2;
 
 function _(e) {
@@ -108,7 +108,7 @@ class w extends s.PureComponent {
     let {
       section: t
     } = e;
-    t !== this.props.section && (this._intensity = P)
+    t !== this.props.section && (this._intensity = x)
   }
   componentWillUnmount() {
     this._unmounted = !0, this._subscribedStores.forEach(e => e.removeChangeListener(this.handleNoticeStoreUpdate)), this.props.sections.forEach(e => {
@@ -129,7 +129,7 @@ class w extends s.PureComponent {
     return null != n && n.stores.some(e => e.showNotice() && !(null != e.canCloseEarly && e.canCloseEarly())) ? (p.S.dispatch(m.CkL.SHAKE_APP, {
       duration: 300,
       intensity: this._intensity
-    }), this._intensity = Math.min(this._intensity + C, x), p.S.dispatch(m.CkL.EMPHASIZE_NOTICE), !1) : (this._intensity = P, !0)
+    }), this._intensity = Math.min(this._intensity + C, P), p.S.dispatch(m.CkL.EMPHASIZE_NOTICE), !1) : (this._intensity = x, !0)
   }
   renderSidebar(e) {
     let {
@@ -221,7 +221,7 @@ class w extends s.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), y(this, "_unmounted", !1), y(this, "_intensity", P), y(this, "_subscribedStores", []), y(this, "scrollerRef", s.createRef()), y(this, "state", S(j({}, E), {
+    super(...e), y(this, "_unmounted", !1), y(this, "_intensity", x), y(this, "_subscribedStores", []), y(this, "scrollerRef", s.createRef()), y(this, "state", S(j({}, E), {
       sidebarOpen: this.props.section !== m.oAB.SUBSCRIPTIONS && this.props.section !== m.oAB.PROFILE_CUSTOMIZATION
     })), y(this, "setPreventNavigation", (e, t) => {
       this.setState({
@@ -259,7 +259,7 @@ class w extends s.PureComponent {
         null == e || e()
       }
     }), y(this, "handleNoticeStoreUpdate", () => {
-      this._unmounted || (this._intensity = P, this.forceUpdate())
+      this._unmounted || (this._intensity = x, this.forceUpdate())
     }), y(this, "renderSettingsSectionTabBarItem", (e, t, n) => {
       let {
         section: s,

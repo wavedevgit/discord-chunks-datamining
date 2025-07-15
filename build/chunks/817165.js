@@ -1,4 +1,4 @@
-/** Chunk was on 61668 **/
+/** Chunk was on 670 **/
 e.exports = {
   splashContainer: "splashContainer__0bef9",
   splashContainerHorizontal: "splashContainerHorizontal__0bef9",

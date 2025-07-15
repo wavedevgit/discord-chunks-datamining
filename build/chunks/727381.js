@@ -1,4 +1,4 @@
-/** Chunk was on 67042 **/
+/** Chunk was on 46989 **/
 n.d(t, {
   Z: () => h
 });
@@ -14,29 +14,29 @@ var l = n(120356),
   d = n(753042),
   E = n(787469),
   _ = n(477718),
-  A = n(791176),
-  m = n(908474),
-  f = n(467014),
-  T = n(388032),
-  g = n(12740);
+  m = n(791176),
+  A = n(908474),
+  g = n(467014),
+  f = n(388032),
+  T = n(12740);
 
 function I() {
   return (0, r.jsxs)("div", {
-    className: g.header,
+    className: T.header,
     children: [(0, r.jsxs)("div", {
-      className: g.headerTitle,
+      className: T.headerTitle,
       children: [(0, r.jsx)(c.Z, {
         width: 16,
         height: 16
       }), (0, r.jsx)(a.X6q, {
         variant: "heading-md/semibold",
-        children: T.intl.string(T.t.cf5lgo)
+        children: f.intl.string(f.t.cf5lgo)
       })]
     }), (0, r.jsx)("div", {
       children: (0, r.jsx)(a.M2$, {
         shortcut: "esc",
-        keyClassName: g.keyComboInner,
-        className: g.keyComboContainer
+        keyClassName: T.keyComboInner,
+        className: T.keyComboContainer
       })
     })]
   })
@@ -48,20 +48,20 @@ function h(e) {
     guildId: n,
     location: l,
     className: c,
-    onNavigate: T
+    onNavigate: f
   } = e, h = (0, s.e7)([u.default], () => u.default.getUser(t), [t]), O = (0, s.e7)([o.ZP], () => o.ZP.getMember(n, t), [n, t]);
   return null == h || null == O ? null : (0, r.jsxs)("div", {
-    className: i()(g.container, c),
+    className: i()(T.container, c),
     children: [(0, r.jsx)(I, {}), (0, r.jsxs)(a.Ttm, {
-      className: g.innerContainer,
-      children: [(0, r.jsx)(m.Z, {
+      className: T.innerContainer,
+      children: [(0, r.jsx)(A.Z, {
         member: O
-      }), (0, r.jsx)(f.Z, {
+      }), (0, r.jsx)(g.Z, {
         userId: t,
         guildId: n
-      }), (0, r.jsx)(A.Z, {
+      }), (0, r.jsx)(m.Z, {
         member: O,
-        onNavigate: T
+        onNavigate: f
       }), (0, r.jsx)(E.Z, {
         member: O
       }), (0, r.jsx)(d.Z, {

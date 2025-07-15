@@ -27,7 +27,7 @@ function h(e) {
     theme: h,
     content: O = v.intl.string(v.t["6OSasb"]),
     className: y
-  } = e, j = (0, o.e7)([p.default], () => p.default.getCurrentUser()), S = g.ZP.useName(n, null, j), E = (0, c.Kz)(i), P = s.useMemo(() => {
+  } = e, j = (0, o.e7)([p.default], () => p.default.getCurrentUser()), S = g.ZP.useName(n, null, j), E = (0, c.Kz)(i), x = s.useMemo(() => {
     var e, t;
     return (0, u.e5)((e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -67,7 +67,7 @@ function h(e) {
     })(Object(t)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e))
-  }, [j, O]), x = {
+  }, [j, O]), P = {
     nick: S,
     colorString: null != (t = i.colorString) ? t : void 0
   };
@@ -77,9 +77,9 @@ function h(e) {
       className: l()(e, m.container, y),
       children: (0, r.jsx)(f.Z, {
         hideTimestamp: !0,
-        author: x,
+        author: P,
         roleIcon: E,
-        message: P,
+        message: x,
         isGroupStart: !0,
         disableInteraction: !0
       })

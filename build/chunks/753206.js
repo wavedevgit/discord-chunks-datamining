@@ -28,14 +28,14 @@ let g = s.memo(function(e) {
     preview: y,
     author: j
   } = e, S = null != O ? O : (0, a.k)(n), E = (0, o.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), {
-    content: P
+    content: x
   } = (0, u.Z)(n, {
     hideSimpleEmbedContent: m,
     allowList: E,
     allowHeading: E,
     allowLinks: !0,
     previewLinkTarget: !0
-  }), x = s.useMemo(() => {
+  }), P = s.useMemo(() => {
     var t, n;
     return (0, f.Z)((t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -75,8 +75,8 @@ let g = s.memo(function(e) {
       [p.cozyMessage]: !g,
       [p.groupStart]: v
     }),
-    childrenHeader: x,
-    childrenMessageContent: (0, d.Z)(e, P),
+    childrenHeader: P,
+    childrenMessageContent: (0, d.Z)(e, x),
     disableInteraction: h,
     author: j,
     preview: y

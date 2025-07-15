@@ -26,23 +26,23 @@ function p(e) {
     setRef: j,
     placeholder: v,
     autoFocus: C,
-    maxLength: N,
-    spellCheck: O,
-    autoComplete: b,
-    autoCapitalize: y,
-    autoCorrect: E,
+    maxLength: b,
+    spellCheck: y,
+    autoComplete: O,
+    autoCapitalize: E,
+    autoCorrect: N,
     onChange: S,
-    inputClassName: T
-  } = e, P = (0, o.Dt)(), [w, A] = s.useState(!1), k = (0, c.o9)(i, g);
+    inputClassName: P
+  } = e, T = (0, o.Dt)(), [w, A] = s.useState(!1), k = (0, c.o9)(i, g);
   return (0, r.jsx)(a.xJW, {
     title: p,
     error: m,
     className: f,
     required: x,
     tag: "label",
-    htmlFor: P,
+    htmlFor: T,
     children: (0, r.jsxs)("div", {
-      className: l()(h.input, d.input, T, {
+      className: l()(h.input, d.input, P, {
         [h.error]: null != m,
         [h.focused]: w
       }),
@@ -51,7 +51,7 @@ function p(e) {
         alpha2: t,
         countryCode: n
       }), (0, r.jsx)(a.oil, {
-        id: P,
+        id: T,
         name: "email",
         type: i === c.Nz.EMAIL ? "email" : "text",
         value: g,
@@ -63,12 +63,12 @@ function p(e) {
           let t = (0, c.o9)(i, e) ? n : "";
           S(e, t)
         },
-        autoComplete: b,
-        autoCapitalize: y,
-        autoCorrect: E,
+        autoComplete: O,
+        autoCapitalize: E,
+        autoCorrect: N,
         autoFocus: C,
-        maxLength: N,
-        spellCheck: O,
+        maxLength: b,
+        spellCheck: y,
         className: d.inputWrapper,
         inputClassName: d.inputField,
         onFocus: () => A(!0),

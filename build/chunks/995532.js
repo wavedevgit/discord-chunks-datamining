@@ -1,6 +1,6 @@
-/** Chunk was on 67042 **/
+/** Chunk was on 46989 **/
 n.d(t, {
-  Z: () => T,
+  Z: () => f,
   a: () => o
 });
 var r, l, i, s = n(442837),
@@ -12,21 +12,21 @@ let o = {},
   E = !1,
   _ = !1;
 
-function A(e) {
+function m(e) {
   let {
     guild: t
   } = e.invite;
   return (null == t ? void 0 : t.welcome_screen) != null && (u[t.id] = t.welcome_screen, !0)
 }
 
-function m(e) {
+function A(e) {
   let {
     welcomeScreen: t,
     guildId: n
   } = e;
   u[n] = null != t ? t : o
 }
-class f extends(i = s.ZP.Store) {
+class g extends(i = s.ZP.Store) {
   get(e) {
     if (null != e) return u[e]
   }
@@ -46,17 +46,17 @@ class f extends(i = s.ZP.Store) {
     return null == t || 0 === t.welcome_channels.length
   }
 }
-l = "WelcomeScreenStore", (r = "displayName") in f ? Object.defineProperty(f, r, {
+l = "WelcomeScreenStore", (r = "displayName") in g ? Object.defineProperty(g, r, {
   value: l,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : f[r] = l;
-let T = new f(a.Z, {
-  INVITE_RESOLVE_SUCCESS: A,
-  INVITE_ACCEPT_SUCCESS: A,
-  WELCOME_SCREEN_SUBMIT_SUCCESS: m,
-  WELCOME_SCREEN_UPDATE: m,
+}) : g[r] = l;
+let f = new g(a.Z, {
+  INVITE_RESOLVE_SUCCESS: m,
+  INVITE_ACCEPT_SUCCESS: m,
+  WELCOME_SCREEN_SUBMIT_SUCCESS: A,
+  WELCOME_SCREEN_UPDATE: A,
   WELCOME_SCREEN_VIEW: function(e) {
     let {
       guildId: t,

@@ -242,9 +242,10 @@ function Z(e) {
   let {
     searchId: t,
     queryString: n,
-    query: r
-  } = e, i = b(t);
-  i.searchResultsQueryString = n, i.query = r
+    query: r,
+    offset: i
+  } = e, a = b(t);
+  a.searchResultsQueryString = n, a.query = r, a.offset = null != i ? i : 0
 }
 class H extends(r = o.ZP.Store) {
   initialize() {
