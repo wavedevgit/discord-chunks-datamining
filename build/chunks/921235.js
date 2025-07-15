@@ -1,4 +1,4 @@
-/** Chunk was on 19577 **/
+/** Chunk was on 51977 **/
 n.d(t, {
   Z: () => j
 }), n(388685), n(583741);
@@ -50,7 +50,7 @@ function j(e) {
     Z = C.intl.formatToPlainString(C.t.m0zYbW, {
       username: S
     }),
-    T = null != l && "" !== l ? (0, r.jsx)(s.Text, {
+    N = null != l && "" !== l ? (0, r.jsx)(s.Text, {
       className: x.error,
       color: "text-danger",
       variant: "text-sm/normal",
@@ -70,7 +70,7 @@ function j(e) {
         variant: "text-md/medium",
         children: Z
       })]
-    }), T]
+    }), N]
   }) : (0, r.jsxs)("div", {
     className: x.containerExpanded,
     children: [(0, r.jsx)(p.Z, {
@@ -84,6 +84,6 @@ function j(e) {
       onClick: P,
       disabled: !!l,
       text: Z
-    }), T]
+    }), N]
   })
 }

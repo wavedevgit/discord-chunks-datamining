@@ -1,4 +1,4 @@
-/** Chunk was on 19577 **/
+/** Chunk was on 51977 **/
 n.d(t, {
   Z: () => eh,
   e: () => ed
@@ -30,8 +30,8 @@ var r = n(255367),
   I = n(703656),
   P = n(493754),
   Z = n(937995),
-  T = n(880831),
-  N = n(73563),
+  N = n(880831),
+  T = n(73563),
   A = n(800965),
   w = n(107169),
   R = n(891551),
@@ -195,12 +195,12 @@ function ep(e) {
     participants: S,
     channel: c,
     hasConnectPermission: E
-  }), (0, r.jsx)(N.Z, (t = el({
+  }), (0, r.jsx)(T.Z, (t = el({
     style: {
       height: "calc(100% - ".concat(M, ")"),
       paddingTop: M
     },
-    disableGradients: !O || 0 === Z && N.e.TOP,
+    disableGradients: !O || 0 === Z && T.e.TOP,
     renderBottomCenter: () => O ? (0, r.jsx)(b.Gt, {
       value: v,
       children: (0, r.jsx)(Q.Z, {
@@ -225,7 +225,7 @@ function ep(e) {
       channel: c
     }),
     renderChatToasts: () => !R || y || P ? null : (0, r.jsx)(C.ZP, {
-      children: (0, r.jsx)(T.Z, {
+      children: (0, r.jsx)(N.Z, {
         className: a()(ei.chatToasts, {
           [ei.rtsSidebarOpen]: d
         }),
@@ -264,11 +264,11 @@ function eh(e) {
     analyticsLocations: E
   } = (0, b.ZP)(g.Z.STAGE_CHANNEL_CALL), I = (0, m.bp)(), {
     chatOpen: P,
-    participantsListOpen: T
+    participantsListOpen: N
   } = (0, s.cj)([_.Z], () => ({
     chatOpen: _.Z.getChatOpen(t.id),
     participantsListOpen: _.Z.getParticipantsListOpen(t.id)
-  }), [t.id]), N = (0, s.e7)([k.Z], () => k.Z.getGuild(t.guild_id), [t.guild_id]), {
+  }), [t.id]), T = (0, s.e7)([k.Z], () => k.Z.getGuild(t.guild_id), [t.guild_id]), {
     hasParticipantsPanel: A
   } = (0, j.Z)({
     location: "StageChannelCall"
@@ -296,7 +296,7 @@ function eh(e) {
           children: e => (0, r.jsx)("div", {
             className: a()(ei.callContainer, e, {
               [ei.sidebarVisible]: l,
-              [ei.sidebarOrChatVisible]: l || P || T
+              [ei.sidebarOrChatVisible]: l || P || N
             }),
             children: (0, r.jsx)(Z.ZP, {
               timeout: 2e3,
@@ -320,9 +320,9 @@ function eh(e) {
           className: ei.channelChatWrapper,
           children: [P && D && (0, r.jsx)(x.Z, {
             channel: t,
-            guild: N,
+            guild: T,
             maxWidth: M
-          }), T && A && D && (0, r.jsx)(v.Z, {
+          }), N && A && D && (0, r.jsx)(v.Z, {
             channel: t,
             maxWidth: M
           })]

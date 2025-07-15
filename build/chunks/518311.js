@@ -1,4 +1,4 @@
-/** Chunk was on 19577 **/
+/** Chunk was on 51977 **/
 n.d(t, {
   Z: () => ey,
   l: () => eC
@@ -29,8 +29,8 @@ var r, i = n(255367),
   I = n(367907),
   P = n(906732),
   Z = n(43267),
-  T = n(933557),
-  N = n(600164),
+  N = n(933557),
+  T = n(600164),
   A = n(313201),
   w = n(429090),
   R = n(912114),
@@ -119,10 +119,10 @@ function eh(e) {
     className: t,
     children: n
   } = e;
-  return (0, i.jsxs)(N.Z, {
-    align: N.Z.Align.CENTER,
-    justify: N.Z.Justify.CENTER,
-    direction: N.Z.Direction.VERTICAL,
+  return (0, i.jsxs)(T.Z, {
+    align: T.Z.Align.CENTER,
+    justify: T.Z.Justify.CENTER,
+    direction: T.Z.Direction.VERTICAL,
     className: o()(el.errorState, t),
     children: [(0, i.jsx)("div", {
       className: o()(el.errorStateIcon, ea.marginBottom20)
@@ -134,7 +134,7 @@ let ef = e => {
     let {
       channel: n,
       onClose: r
-    } = e, l = null != (t = (0, T.ZP)(n)) ? t : "", a = (0, p.e7)([V.ZP], () => {
+    } = e, l = null != (t = (0, N.ZP)(n)) ? t : "", a = (0, p.e7)([V.ZP], () => {
       var e;
       return null != (e = V.ZP.lastMessageId(n.id)) ? e : n.id
     });
@@ -361,8 +361,8 @@ class eg extends(r = l.PureComponent) {
     let e = null != this.scrollerRef.current && this.state.separator,
       t = this.isNotFriends() ? ei.intl.string(ei.t.Xjlbvr) : ei.intl.string(ei.t.CdNhGR);
     return (0, i.jsxs)(f.xBx, {
-      direction: N.Z.Direction.VERTICAL,
-      align: N.Z.Align.STRETCH,
+      direction: T.Z.Direction.VERTICAL,
+      align: T.Z.Align.STRETCH,
       className: el.header,
       separator: e,
       children: [d.tq ? this.renderMobileCloseButton() : null, (0, i.jsx)(f.X6q, {
@@ -789,7 +789,7 @@ function eb(e) {
     analyticsLocations: s
   } = (0, P.ZP)(S.Z.NEW_GROUP_DM_INVITE_MODAL);
   if (!(0, w.a)(S.Z.NEW_GROUP_DM_INVITE_MODAL)) return null;
-  let c = (0, T.pT)(Array.from(t), Y.default, z.Z);
+  let c = (0, N.pT)(Array.from(t), Y.default, z.Z);
   return (0, i.jsxs)("div", {
     className: el.customizationContainer,
     children: [(0, i.jsx)(R.B, {

@@ -1,4 +1,4 @@
-/** Chunk was on 19577 **/
+/** Chunk was on 51977 **/
 n.d(t, {
   Z: () => en
 }), n(539854), n(388685), n(290780);
@@ -29,8 +29,8 @@ var r = n(255367),
   I = n(122707),
   P = n(779836),
   Z = n(23750),
-  T = n(306680),
-  N = n(944486),
+  N = n(306680),
+  T = n(944486),
   A = n(594174),
   w = n(55935),
   R = n(70956),
@@ -211,9 +211,9 @@ function en(e) {
       }, e.content.id)
     });
   eP.push(...eZ);
-  let eT = el[el.length - 1];
+  let eN = el[el.length - 1];
   if (null != eh && ea.forEach((e, t) => {
-      let n = 0 === t && (0, k.J)(f, eT, new Z.ZP({
+      let n = 0 === t && (0, k.J)(f, eN, new Z.ZP({
         type: X.uaV.DEFAULT,
         author: eh
       }));
@@ -246,12 +246,12 @@ function en(e) {
     }, es), "has-more-after")), !eu && em && ef() && eP.push((0, r.jsx)(W.Z, {
       channel: f
     })), en > 0 && er && ef()) {
-    let e, t, n = T.ZP.getOldestUnreadTimestamp(f.id),
+    let e, t, n = N.ZP.getOldestUnreadTimestamp(f.id),
       l = 0 !== n ? n : M.default.extractTimestamp(f.id),
       o = (0, w.KC)(new Date, new Date(l));
-    if (T.ZP.isEstimated(f.id) ? (e = o ? J.t.wvtbbG : J.t.tHqbtr, t = J.t.vaPWFR) : (e = o ? J.t.BctFHx : J.t["3wXb9P"], t = J.t["4H8ldH"]), eb && (0, c.tW)(f) && ev.includes(q.E.SUMMARIES)) {
-      let n = T.ZP.ackMessageId(f.id),
-        o = (0, I.q)(f.id, T.ZP.getOldestUnreadMessageId(f.id));
+    if (N.ZP.isEstimated(f.id) ? (e = o ? J.t.wvtbbG : J.t.tHqbtr, t = J.t.vaPWFR) : (e = o ? J.t.BctFHx : J.t["3wXb9P"], t = J.t["4H8ldH"]), eb && (0, c.tW)(f) && ev.includes(q.E.SUMMARIES)) {
+      let n = N.ZP.ackMessageId(f.id),
+        o = (0, I.q)(f.id, N.ZP.getOldestUnreadMessageId(f.id));
       if ((0, d.yw)(X.rMx.SUMMARIES_UNREAD_BAR_VIEWED, {
           num_unread_summaries: o,
           num_unread_messages: en,
@@ -379,7 +379,7 @@ function en(e) {
     }) : (0, r.jsx)(V.DR, {
       onClick: () => (function(e) {
         o.Z.jumpToPresent(e.id, X.AQB);
-        let t = N.Z.getChannelId();
+        let t = T.Z.getChannelId();
         e.id === t && (0, C.Kh)(e.id)
       })(f),
       className: ep

@@ -1,4 +1,4 @@
-/** Chunk was on 19577 **/
+/** Chunk was on 51977 **/
 n.d(t, {
   Z: () => _
 }), n(388685);
@@ -43,7 +43,7 @@ function _(e) {
       let t = 0 === S ? e : (e - 8 * (S - 1)) / S;
       c.d7(t, f.cL.CAMERA_PREVIEW)
     }, [S]),
-    T = i.useCallback((e, t) => {
+    N = i.useCallback((e, t) => {
       v(t)
     }, [v]);
   return (0, r.jsx)("div", {
@@ -53,7 +53,7 @@ function _(e) {
       id: 0,
       width: I,
       ref: j,
-      onMove: T,
+      onMove: N,
       onResize: Z,
       maxX: t,
       maxY: l,

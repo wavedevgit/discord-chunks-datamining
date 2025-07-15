@@ -1,4 +1,4 @@
-/** Chunk was on 19577 **/
+/** Chunk was on 51977 **/
 n.d(t, {
   Z: () => _
 });
@@ -34,8 +34,8 @@ let _ = (0, l.Z)(e => {
     showParticipants: I = !0,
     width: P,
     height: Z,
-    idle: T,
-    mode: N,
+    idle: N,
+    mode: T,
     popoutWindow: A,
     awaitingRemoteSessionInfo: w,
     callContainerDimensions: R
@@ -50,7 +50,7 @@ let _ = (0, l.Z)(e => {
     channel: j,
     participants: t,
     hasConnectPermission: O
-  }) : N === m.WtW.VOICE ? (0, r.jsx)(o.Z, {
+  }) : T === m.WtW.VOICE ? (0, r.jsx)(o.Z, {
     guildId: j.guild_id,
     width: P,
     className: b.voiceCallWrapper,
@@ -81,7 +81,7 @@ let _ = (0, l.Z)(e => {
     participants: t,
     popoutWindow: A,
     className: E,
-    idle: T,
+    idle: N,
     height: Z,
     width: P,
     layout: y,

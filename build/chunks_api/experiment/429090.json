@@ -1,1 +1,1 @@
-{"id":"429090","type":"experiment","data":{"kind":"user","id":"2025-04_gdm_born_this_named","label":"GDM Born This Named","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enabled","config":{"enabled":false}}]},"fromModule":{"id":"19577"}}
+{"id":"429090","type":"experiment","data":{"kind":"user","id":"2025-04_gdm_born_this_named","label":"GDM Born This Named","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enabled","config":{"enabled":false}}]},"fromModule":{"id":"51977"}}

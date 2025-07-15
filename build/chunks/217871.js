@@ -1,4 +1,4 @@
-/** Chunk was on 19577 **/
+/** Chunk was on 51977 **/
 n.d(t, {
   Z: () => E
 }), n(388685), n(358797);
@@ -145,7 +145,7 @@ let j = i.memo(function(e) {
     }, [I]);
     let {
       multiplier: Z,
-      value: T
+      value: N
     } = i.useMemo(() => ({
       value: E ? I.value : P.current.value,
       multiplier: E ? I.multiplier : P.current.multiplier
@@ -159,7 +159,7 @@ let j = i.memo(function(e) {
         className: v.combo,
         style: S,
         children: (0, r.jsx)(O, {
-          value: T,
+          value: N,
           multiplier: Z
         })
       })]

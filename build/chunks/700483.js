@@ -1,4 +1,4 @@
-/** Chunk was on 19577 **/
+/** Chunk was on 51977 **/
 n.d(t, {
   Z: () => eg
 }), n(388685);
@@ -29,8 +29,8 @@ var r = n(255367),
   I = n(829750),
   P = n(189771),
   Z = n(294629),
-  T = n(793319),
-  N = n(987329),
+  N = n(793319),
+  T = n(987329),
   A = n(560688),
   w = n(390322),
   R = n(871499),
@@ -92,7 +92,7 @@ let ec = i.memo(function(e) {
         channelId: t.id
       }), n ? (0, r.jsx)(es, {
         channel: t
-      }) : null, (0, r.jsx)(N.Z, {
+      }) : null, (0, r.jsx)(T.Z, {
         channel: t
       })]
     }), (0, r.jsx)(ed, {
@@ -127,7 +127,7 @@ function ed(e) {
     suppress: C
   } = (0, Z.Z)(t), x = L.default.getId(), [j] = (0, er.Z)(t), O = q.ZP.isModerator(x, t.id), S = (0, W.B)(t.id), I = f(g), {
     parentAnalyticsLocation: P
-  } = (0, h.ZP)(), T = i.useRef(null);
+  } = (0, h.ZP)(), N = i.useRef(null);
   if (!b) return (0, r.jsx)(s.zx, {
     size: s.zx.Sizes.MEDIUM,
     color: s.zx.Colors.GREEN,
@@ -148,7 +148,7 @@ function ed(e) {
       })]
     })
   });
-  let N = () => (function(e) {
+  let T = () => (function(e) {
     let {
       channel: t,
       appContext: n
@@ -160,7 +160,7 @@ function ed(e) {
     appContext: l
   });
   return (O || I) && null != m ? (0, r.jsx)(c.yRy, {
-    targetElementRef: T,
+    targetElementRef: N,
     renderPopout: e => {
       let {
         closePopout: i
@@ -195,19 +195,19 @@ function ed(e) {
         isShown: i
       } = t;
       return (0, r.jsx)(M.Z, {
-        ref: T,
+        ref: N,
         label: ea.intl.string(ea.t.c6qKws),
-        onClick: N,
+        onClick: T,
         onPopoutClick: n,
         popoutOpen: i
       })
     }
   }) : C && !S || j ? (0, r.jsx)(M.Z, {
     label: ea.intl.string(ea.t.SMKyio),
-    onClick: N
+    onClick: T
   }) : (0, r.jsx)(M.Z, {
     label: ea.intl.string(ea.t.c6qKws),
-    onClick: N
+    onClick: T
   })
 }
 
@@ -304,7 +304,7 @@ let ef = i.memo(function(e) {
         hasPermission: v,
         enabled: _,
         cameraUnavailable: p,
-        onChange: T.r,
+        onChange: N.r,
         onCameraUnavailable: A.Z,
         channelLimitReached: O,
         channelLimit: j,
@@ -362,7 +362,7 @@ let ef = i.memo(function(e) {
       }), G && K]
     }) : null, (0, r.jsxs)("div", {
       className: eo.buttonSection,
-      children: [M && !l && G ? (0, r.jsx)(T.NZ, {
+      children: [M && !l && G ? (0, r.jsx)(N.NZ, {
         channel: t,
         currentUser: E,
         exitFullScreen: () => null,
@@ -377,7 +377,7 @@ let ef = i.memo(function(e) {
         channel: t
       }), M && !l && (0, r.jsx)(ep, {
         channel: t
-      }), (0, r.jsx)(N.Z, {
+      }), (0, r.jsx)(T.Z, {
         channel: t
       })]
     }), (0, r.jsx)(ed, {

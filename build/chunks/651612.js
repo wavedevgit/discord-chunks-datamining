@@ -1,4 +1,4 @@
-/** Chunk was on 19577 **/
+/** Chunk was on 51977 **/
 n.d(t, {
   Z: () => y
 }), n(539854);
@@ -77,7 +77,7 @@ function y(e) {
   })), j > 0 && I.push(b.intl.string(b.t.x5zAGR));
   let P = (0, a.e7)([f.ZP], () => f.ZP.getFocusedLayout()),
     Z = O > 0 ? O : j,
-    T = Z > 0;
+    N = Z > 0;
   return (0, r.jsxs)("div", {
     className: _.wrapper,
     children: [(0, r.jsx)(c.d, function(e) {
@@ -107,7 +107,7 @@ function y(e) {
       iconComponent: P === m.MI.NO_CHAT ? o.sXD : o.hic,
       themeable: !0,
       className: n
-    }, y)), T ? (0, r.jsx)(s.Z, {
+    }, y)), N ? (0, r.jsx)(s.Z, {
       hasMentions: O > 0,
       truncatedCount: Z > 99 ? "99+" : Z,
       className: _.badge

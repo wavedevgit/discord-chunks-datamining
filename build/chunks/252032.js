@@ -1,4 +1,4 @@
-/** Chunk was on 19577 **/
+/** Chunk was on 51977 **/
 n.d(t, {
   Z: () => O
 }), n(997841), n(388685);
@@ -58,7 +58,7 @@ function v(e) {
     return O && (s === P || l) && null != E && (0, m.yE)(E.flags, y.iLy.CROSSPOSTED) ? o.Z.confirmEdit(e, n, i) : a.Z.editMessage(e, n, {
       content: i
     }), Promise.resolve()
-  }, [E, O, P, t]), T = i.useCallback(e => {
+  }, [E, O, P, t]), N = i.useCallback(e => {
     var t, n;
     return (0, i.createElement)(j, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -102,7 +102,7 @@ function v(e) {
     onConfirmDelete: o.Z.confirmDelete,
     saveMessage: Z,
     validateEdit: x,
-    children: T
+    children: N
   }) : null
 }
 

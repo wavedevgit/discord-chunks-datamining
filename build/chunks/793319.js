@@ -1,7 +1,7 @@
-/** Chunk was on 19577 **/
+/** Chunk was on 51977 **/
 n.d(t, {
   NZ: () => eS,
-  ZP: () => eN,
+  ZP: () => eT,
   r: () => eE
 }), n(388685);
 var r = n(255367),
@@ -31,8 +31,8 @@ var r = n(255367),
   I = n(575175),
   P = n(522651),
   Z = n(795318),
-  T = n(243778),
-  N = n(258609),
+  N = n(243778),
+  T = n(258609),
   A = n(446226),
   w = n(569545),
   R = n(74299),
@@ -186,7 +186,7 @@ function eS(e) {
   };
   return (0, r.jsxs)(r.Fragment, {
     children: [(() => {
-      if (x && 0 === f.length) return (0, r.jsx)(T.ZP, {
+      if (x && 0 === f.length) return (0, r.jsx)(N.ZP, {
         contentTypes: [d.z.TRIAL_NUX_STREAM_COACH_MARK],
         bypassAutoDismiss: !0,
         children: e => {
@@ -218,7 +218,7 @@ function eS(e) {
               handleGoLive: C,
               appContext: h,
               onClose: i,
-              onInteraction: eT("ManageStreamsMenu")
+              onInteraction: eN("ManageStreamsMenu")
             })
           })
         },
@@ -293,12 +293,12 @@ let eP = i.memo(function(e) {
   i.useEffect(() => {
     E() !== S && f(!0)
   }, [S, E]);
-  let T = i.useCallback(() => {
+  let N = i.useCallback(() => {
       if (null != _)(0, g.g)((0, w.V9)(_));
       else
         for (let e of C)(0, g.g)((0, w.V9)(e))
     }, [C, _]),
-    N = (e, i) => {
+    T = (e, i) => {
       let c = {
         isTrayButton: !1,
         centerButton: !0,
@@ -319,7 +319,7 @@ let eP = i.memo(function(e) {
             streamActive: !0,
             color: "disconnect",
             onClick: () => {
-              (0, P.v)(o, P.d.STOP_WATCHING), T()
+              (0, P.v)(o, P.d.STOP_WATCHING), N()
             },
             onPopoutClick: C.length > 1 ? i : null,
             isSelfStream: !1
@@ -354,7 +354,7 @@ let eP = i.memo(function(e) {
         handleGoLive: e_.VqG,
         hideSelfOptions: !0,
         onClose: n,
-        onInteraction: eT("ManageStreamsMenu")
+        onInteraction: eN("ManageStreamsMenu")
       })
     },
     position: "top",
@@ -369,7 +369,7 @@ let eP = i.memo(function(e) {
       return (0, r.jsx)(c.animated.div, {
         style: Z,
         ref: O,
-        children: N(i, n)
+        children: T(i, n)
       })
     }
   })
@@ -423,12 +423,12 @@ function eZ(e) {
   })
 }
 
-function eT(e) {
+function eN(e) {
   return (0, Z.u)(e, x.Z.VOICE_CONTROL_TRAY, {
     entrypoint: ey.A5.CARET
   })
 }
-let eN = function(e) {
+let eT = function(e) {
   var t;
   let {
     channel: n,
@@ -444,13 +444,13 @@ let eN = function(e) {
     enabled: j
   } = (0, el.Z)(), P = (0, es.Z)(n), {
     suppress: Z,
-    selfMute: T,
+    selfMute: N,
     mute: w
   } = (0, ec.Z)(n), {
     canGoLive: M
   } = (0, u.cj)([en.Z], () => ({
     canGoLive: (0, R.Z)(en.Z)
-  })), D = (0, A.Z)(), k = (0, u.e7)([N.Z], () => null != N.Z.getAwaitingRemoteSessionInfo()), U = null != D, B = (0, u.e7)([er.Z], () => {
+  })), D = (0, A.Z)(), k = (0, u.e7)([T.Z], () => null != T.Z.getAwaitingRemoteSessionInfo()), U = null != D, B = (0, u.e7)([er.Z], () => {
     var e;
     return (null != (e = null == D ? void 0 : D.channelId) ? e : er.Z.getVoiceChannelId()) === n.id
   }), H = (0, O.Z)(n, !0), V = (0, u.e7)([y.ZP], () => y.ZP.getCurrentEmbeddedActivity()), {
@@ -471,7 +471,7 @@ let eN = function(e) {
       renderOutputVolume: !0,
       renderDeafen: !0,
       minimal: !0,
-      onInteraction: eT("AudioDeviceMenu")
+      onInteraction: eN("AudioDeviceMenu")
     })))
   } : void 0;
   return B ? (0, r.jsx)(v.Gt, {
@@ -498,7 +498,7 @@ let eN = function(e) {
                 children: (0, r.jsx)($.R, {
                   onClose: t,
                   location: x.Z.VOICE_CONTROL_TRAY,
-                  onInteraction: eT("AudioDeviceMenu")
+                  onInteraction: eN("AudioDeviceMenu")
                 })
               })
             },
@@ -516,7 +516,7 @@ let eN = function(e) {
                 ref: eu,
                 centerButton: !0,
                 onPopoutClick: U ? null : n,
-                selfMute: T,
+                selfMute: N,
                 serverMute: w,
                 suppress: Z,
                 popoutOpen: i,
@@ -535,7 +535,7 @@ let eN = function(e) {
                 children: (0, r.jsx)(S.Z, {
                   onClose: t,
                   minimal: !0,
-                  onInteraction: eT("VideoDeviceMenu")
+                  onInteraction: eN("VideoDeviceMenu")
                 })
               })
             },

@@ -1,6 +1,6 @@
-/** Chunk was on 19577 **/
+/** Chunk was on 51977 **/
 n.d(t, {
-  h: () => T
+  h: () => N
 });
 var r = n(255367),
   i = n(73800),
@@ -60,7 +60,7 @@ function Z(e, t) {
   }), e
 }
 
-function T(e) {
+function N(e) {
   let {
     channel: t,
     guild: n,
@@ -69,7 +69,7 @@ function T(e) {
     handleClose: a,
     userParticipantCount: o
   } = e;
-  return i < 250 ? (0, r.jsx)(N, {
+  return i < 250 ? (0, r.jsx)(T, {
     channel: t,
     guild: n,
     width: i,
@@ -91,7 +91,7 @@ function T(e) {
   })
 }
 
-function N(e) {
+function T(e) {
   let {
     channel: t,
     inPopout: n,

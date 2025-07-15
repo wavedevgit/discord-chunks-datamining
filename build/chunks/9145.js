@@ -1,4 +1,4 @@
-/** Chunk was on 19577 **/
+/** Chunk was on 51977 **/
 n.d(t, {
   Z: () => G
 }), n(388685);
@@ -29,8 +29,8 @@ var r = n(255367),
   I = n(619915),
   P = n(988980),
   Z = n(16609),
-  T = n(952561),
-  N = n(563218),
+  N = n(952561),
+  T = n(563218),
   A = n(884338),
   w = n(617552),
   R = n(719296),
@@ -52,7 +52,7 @@ function G(e) {
     maxHeight: G,
     connectedLocation: V,
     renderExternalHeader: z
-  } = e, W = (0, T.Z)(), Y = (0, o.Wu)([S.ZP], () => S.ZP.getEmbeddedActivitiesForLocation(V), [V]), q = (0, Z.p)(V), K = (0, o.e7)([y.Z], () => y.Z.getChannel(q)), X = (0, I.gb)(Y), Q = (0, I.uF)(X), J = i.useCallback(() => {
+  } = e, W = (0, N.Z)(), Y = (0, o.Wu)([S.ZP], () => S.ZP.getEmbeddedActivitiesForLocation(V), [V]), q = (0, Z.p)(V), K = (0, o.e7)([y.Z], () => y.Z.getChannel(q)), X = (0, I.gb)(Y), Q = (0, I.uF)(X), J = i.useCallback(() => {
     (0, E.tg)(k.Ez.PIP)
   }, []), $ = i.useRef(null), ee = (0, o.e7)([S.ZP], () => S.ZP.getFocusedLayout()), et = ee !== k.MI.NO_CHAT, [en, er] = i.useState(null != (n = null != (t = m.ZP.activityPanelHeight) ? t : G) ? n : null), ei = i.useCallback(e => {
     u.ZP.updatedUnsyncedSettings({
@@ -192,7 +192,7 @@ function G(e) {
             paddingBottom: eu
           },
           ref: el,
-          children: (0, r.jsx)(N.Z, {
+          children: (0, r.jsx)(T.Z, {
             className: B.iframe,
             embedId: (0, R.Z)(V.id, W.id)
           })

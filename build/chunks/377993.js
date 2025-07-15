@@ -1,4 +1,4 @@
-/** Chunk was on 19577 **/
+/** Chunk was on 51977 **/
 n.d(t, {
   Z: () => M
 }), n(388685), n(539854);
@@ -30,7 +30,7 @@ var r = n(255367),
   P = n(388032),
   Z = n(11847);
 
-function T(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,7 +48,7 @@ function T(e) {
   }
   return e
 }
-let N = [],
+let T = [],
   A = E.ZP.getEnableHardwareAcceleration();
 
 function w(e) {
@@ -57,14 +57,14 @@ function w(e) {
     channel: o,
     status: u,
     activities: d
-  } = e, p = (0, a.e7)([y.Z], () => null != y.Z.getTypingUsers(o.id)[t.id]), f = (0, a.e7)([C.default], () => C.default.getCurrentUser()), x = (0, a.e7)([b.Z], () => b.Z.isMobileOnline(t.id)), j = (0, a.e7)([_.Z], () => _.Z.getNickname(t.id)), E = (0, h.Z)(t.id), Z = i.useRef(null), N = e => {
+  } = e, p = (0, a.e7)([y.Z], () => null != y.Z.getTypingUsers(o.id)[t.id]), f = (0, a.e7)([C.default], () => C.default.getCurrentUser()), x = (0, a.e7)([b.Z], () => b.Z.isMobileOnline(t.id)), j = (0, a.e7)([_.Z], () => _.Z.getNickname(t.id)), E = (0, h.Z)(t.id), Z = i.useRef(null), T = e => {
     (0, s.jW)(e, async () => {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("98783"), n.e("14126")]).then(n.bind(n, 354589));
       return n => {
         var i, l;
-        return (0, r.jsx)(e, (i = T({}, n), l = l = {
+        return (0, r.jsx)(e, (i = N({}, n), l = l = {
           user: t,
           channel: o
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
@@ -121,7 +121,7 @@ function w(e) {
         }
         return i
       }(e, ["onClick", "onMouseDown"]);
-      return (0, r.jsx)(S.Z, T({
+      return (0, r.jsx)(S.Z, N({
         ref: Z,
         user: t,
         currentUser: f,
@@ -133,7 +133,7 @@ function w(e) {
         activities: d,
         applicationStream: E,
         channel: o,
-        onContextMenu: N,
+        onContextMenu: T,
         selected: M,
         isMobile: x,
         nick: j,
@@ -173,10 +173,10 @@ function M(e) {
       var r, i, l;
       _.Z.isFriend(t.id) || t.id === (null == (r = C.default.getCurrentUser()) ? void 0 : r.id) ? n[t.id] = {
         status: null != (i = b.Z.getStatus(t.id)) ? i : I.Skl.OFFLINE,
-        activities: null != (l = b.Z.getActivities(t.id)) ? l : N
+        activities: null != (l = b.Z.getActivities(t.id)) ? l : T
       } : n[t.id] = {
         status: I.Skl.OFFLINE,
-        activities: N
+        activities: T
       }
     }
     let a = [];

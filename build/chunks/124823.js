@@ -1,4 +1,4 @@
-/** Chunk was on 19577 **/
+/** Chunk was on 51977 **/
 n.d(t, {
   Z: () => w
 });
@@ -29,8 +29,8 @@ var r = n(255367),
   I = n(544989),
   P = n(228168),
   Z = n(388032),
-  T = n(638414),
-  N = n(283189);
+  N = n(638414),
+  T = n(283189);
 
 function A(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -87,7 +87,7 @@ function w(e) {
               user: t
             })
           }), (0, r.jsxs)("header", {
-            className: T.header,
+            className: N.header,
             children: [(0, r.jsx)(C.Z, {
               user: t,
               displayProfile: R,
@@ -101,7 +101,7 @@ function w(e) {
               onOpenProfile: w ? void 0 : F
             })]
           }), (0, r.jsxs)("div", {
-            className: N.body,
+            className: T.body,
             children: [(0, r.jsx)(E.Z, {
               user: t,
               nickname: h.ZP.getName(null, n.id, t),
@@ -112,7 +112,7 @@ function w(e) {
                 themeType: P.lY.SIDEBAR
               })
             }), (0, r.jsxs)(O.Z.Overlay, {
-              className: N.overlay,
+              className: T.overlay,
               children: [(0, r.jsx)(j.Z, {
                 heading: Z.intl.string(Z.t["61W33d"]),
                 headingColor: "header-primary",
@@ -132,12 +132,12 @@ function w(e) {
             })]
           })]
         }), !w && (0, r.jsx)("footer", {
-          className: T.footer,
+          className: N.footer,
           children: (0, r.jsx)(a.zx, {
             fullWidth: !0,
             size: a.zx.Sizes.LARGE,
             look: a.zx.Looks.BLANK,
-            color: T.footerButtonColor,
+            color: N.footerButtonColor,
             onClick: () => {
               F(), (0, m.pQ)(A({
                 action: "PRESS_VIEW_PROFILE",

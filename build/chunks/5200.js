@@ -1,4 +1,4 @@
-/** Chunk was on 19577 **/
+/** Chunk was on 51977 **/
 n.d(t, {
   Y: () => x
 }), n(388685);
@@ -48,9 +48,9 @@ function x(e) {
     commandOrigin: v
   }), [I, P] = l.useState(!1), Z = l.useCallback(() => {
     P(!0)
-  }, [P]), T = l.useCallback(() => {
+  }, [P]), N = l.useCallback(() => {
     P(!1)
-  }, [P]), N = l.useMemo(() => (0, i.jsx)("div", {
+  }, [P]), T = l.useMemo(() => (0, i.jsx)("div", {
     className: b.overlayBadge,
     children: (0, i.jsx)("div", {
       className: b.badgeContainer,
@@ -95,9 +95,9 @@ function x(e) {
     look: c.zx.Looks.BLANK,
     size: c.zx.Sizes.NONE,
     onFocus: Z,
-    onBlur: T,
+    onBlur: N,
     onMouseEnter: Z,
-    onMouseLeave: T,
+    onMouseLeave: N,
     innerClassName: b.activityItemButtonInnerClass,
     children: (0, i.jsx)(u.AMe, {
       config: y,
@@ -126,7 +126,7 @@ function x(e) {
               applicationName: r.application.name,
               imageClassName: b.activitySuggestionImage,
               imageNotFoundClassName: b.brokenImageIconWrapper
-            }), N, A]
+            }), T, A]
           })
         })
       }

@@ -1,4 +1,4 @@
-/** Chunk was on 19577 **/
+/** Chunk was on 51977 **/
 n.d(t, {
   Z: () => O
 }), n(388685);
@@ -51,7 +51,7 @@ let O = (0, a.Z)(e => {
     selectedParticipantId: o.Z.getSelectedParticipantId(a.id),
     largeStream: o.Z.getStageStreamSize(a.id),
     chatOpen: o.Z.getChatOpen(a.id)
-  }), [a.id]), P = (0, c.Io)(a.id), Z = (0, c.Rk)(a.id, u.pV.AUDIENCE), T = (0, l.e7)([s.Z], () => null != E ? s.Z.getParticipant(a.id, E) : null), N = (0, c.w8)(a.id, u.pV.SPEAKER), A = N.filter(j), w = null != N.find(e => e.type === u.Ui.STREAM), R = v(y), M = x(y, I), D = {
+  }), [a.id]), P = (0, c.Io)(a.id), Z = (0, c.Rk)(a.id, u.pV.AUDIENCE), N = (0, l.e7)([s.Z], () => null != E ? s.Z.getParticipant(a.id, E) : null), T = (0, c.w8)(a.id, u.pV.SPEAKER), A = T.filter(j), w = null != T.find(e => e.type === u.Ui.STREAM), R = v(y), M = x(y, I), D = {
     [u.pV.SPEAKER]: M,
     [u.pV.AUDIENCE]: R,
     [u.pV.SELECTED]: 1
@@ -108,7 +108,7 @@ let O = (0, a.Z)(e => {
               tileWidth: F,
               channel: a,
               participants: l,
-              selectedParticipant: T
+              selectedParticipant: N
             })
           }, "speakers-".concat(t, "-").concat(n));
         case 2:

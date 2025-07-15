@@ -14,8 +14,8 @@ function l(e) {
       r = e.metaKey && !(e.altKey || e.ctrlKey || e.shiftKey),
       {
         disabled: l = !1,
-        onSubmit: o
+        onSubmit: i
       } = t.current;
-    "enter" === e.key.toLowerCase() && ("macos" === (0, a.getOS)() ? r : n) && !l && (e.preventDefault(), o())
+    "enter" === e.key.toLowerCase() && ("macos" === (0, a.getOS)() ? r : n) && !l && (e.preventDefault(), i())
   }, [])
 }

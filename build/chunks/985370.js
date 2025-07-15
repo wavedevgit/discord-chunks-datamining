@@ -1,4 +1,4 @@
-/** Chunk was on 19577 **/
+/** Chunk was on 51977 **/
 n.d(t, {
   Z: () => g
 }), n(388685);
@@ -31,9 +31,9 @@ let g = e => {
     seconds: I
   } = (0, o.Z)(null != E ? E : new Date), P = I > 0, {
     parentAnalyticsLocation: Z
-  } = (0, s.ZP)(), T = i.useCallback(e => {
+  } = (0, s.ZP)(), N = i.useCallback(e => {
     "focus" !== e.type && (j || P || C())
-  }, [j, P, C]), N = i.useCallback(() => {
+  }, [j, P, C]), T = i.useCallback(() => {
     j || x()
   }, [x, j]), A = i.useCallback((e, t) => {
     v(), O(!j), g === f.D.EMOJI ? null == b || b(void 0) : null == b || b(f.D.EMOJI), (!_ || j) && (null == t || t(e))
@@ -58,7 +58,7 @@ let g = e => {
         channel: t,
         closePopout: n,
         onMouseEnter: C,
-        onMouseLeave: N,
+        onMouseLeave: T,
         onFocus: () => O(!0)
       })
     },
@@ -79,8 +79,8 @@ let g = e => {
         onClick: e => {
           (0, c.v)(Z, c.d.EMOJI), A(e, t)
         },
-        onMouseEnter: T,
-        onMouseLeave: N,
+        onMouseEnter: N,
+        onMouseLeave: T,
         isActive: j,
         ref: R
       })

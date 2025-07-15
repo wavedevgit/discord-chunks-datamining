@@ -1,4 +1,4 @@
-/** Chunk was on 19577 **/
+/** Chunk was on 51977 **/
 n.d(t, {
   Z: () => P
 }), n(388685);
@@ -64,8 +64,8 @@ function P(e) {
       onSelectParticipant: l,
       onContextMenuParticipant: P,
       onFullscreenParticipant: Z,
-      participants: T,
-      filteredParticipants: N,
+      participants: N,
+      filteredParticipants: T,
       popoutWindow: A,
       inCall: w,
       channel: R,
@@ -160,11 +160,11 @@ function P(e) {
     ex = i.useCallback(e => {
       W(e), K(!1)
     }, []),
-    ev = en ? [] : (0, _.n3)(T, M, V),
+    ev = en ? [] : (0, _.n3)(N, M, V),
     {
       visibleParticipants: ej,
       participantTileWidth: eO
-    } = (0, y.ZB)(L, N);
+    } = (0, y.ZB)(L, T);
   return (0, r.jsxs)("div", {
     className: a()(j.root, v.flexCenter, k),
     children: [(0, r.jsxs)("div", {

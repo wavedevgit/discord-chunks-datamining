@@ -1,4 +1,4 @@
-/** Chunk was on 19577 **/
+/** Chunk was on 51977 **/
 n.d(t, {
   m: () => U
 }), n(997841), n(953529);
@@ -29,8 +29,8 @@ var r = n(255367),
   I = n(456100),
   P = n(566620),
   Z = n(127255),
-  T = n(5200),
-  N = n(558317),
+  N = n(5200),
+  T = n(558317),
   A = n(403404),
   w = n(981631),
   R = n(388032),
@@ -215,7 +215,7 @@ let U = i.forwardRef(function(e, t) {
             }
           }), (0, r.jsxs)("div", {
             className: M.activityContainer,
-            children: [U.map(e => (0, r.jsx)(T.Y, {
+            children: [U.map(e => (0, r.jsx)(N.Y, {
               context: {
                 channel: l,
                 type: "channel"
@@ -224,7 +224,7 @@ let U = i.forwardRef(function(e, t) {
               onClick: () => {
                 s(), b()
               },
-              aspectRatio: T.Y.AspectRatio.THIRTEEN_BY_ELEVEN,
+              aspectRatio: N.Y.AspectRatio.THIRTEEN_BY_ELEVEN,
               animatedDivClass: M.activitySuggestion,
               commandOrigin: C.bB.MINI_SHELF
             }, e.application.id)), (0, r.jsx)("div", {
@@ -233,7 +233,7 @@ let U = i.forwardRef(function(e, t) {
               }),
               children: (0, r.jsx)("div", {
                 className: M.wumpusRocketInnerContainer,
-                children: (0, r.jsx)(N.Z, {
+                children: (0, r.jsx)(T.Z, {
                   className: M.wumpusRocket
                 })
               })

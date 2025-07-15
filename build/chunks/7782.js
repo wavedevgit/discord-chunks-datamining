@@ -1,4 +1,4 @@
-/** Chunk was on 19577 **/
+/** Chunk was on 51977 **/
 n.d(t, {
   Z: () => A
 });
@@ -82,7 +82,7 @@ let Z = e => {
       })]
     })
   },
-  T = e => {
+  N = e => {
     var t;
     let {
       relationshipType: n,
@@ -181,7 +181,7 @@ let Z = e => {
         return null
     }
   },
-  N = e => {
+  T = e => {
     let {
       channelId: t,
       otherUserId: n
@@ -231,14 +231,14 @@ let Z = e => {
     } = e, {
       channelId: o
     } = (0, m._)(), s = (0, a.e7)([h.Z], () => null != o && h.Z.isSpam(o), [o]), c = (0, a.e7)([x.Z], () => x.Z.getRelationshipType(t), [t]), u = n.id === o, d = !l.tq && !u, p = !!l.tq || u || s, f = s || u ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(N, {
+      children: [(0, r.jsx)(T, {
         channelId: n.id,
         otherUserId: t
       }), (0, r.jsx)(g.Z, {
         channel: n
       })]
     }) : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(T, {
+      children: [(0, r.jsx)(N, {
         relationshipType: c,
         userId: t,
         showingBanner: i

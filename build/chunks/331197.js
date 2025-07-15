@@ -1,4 +1,4 @@
-/** Chunk was on 19577 **/
+/** Chunk was on 51977 **/
 n.d(t, {
   Z: () => O
 }), n(388685);
@@ -36,8 +36,8 @@ function O(e) {
     Component: P,
     play: Z,
     events: {
-      onMouseEnter: T,
-      onMouseLeave: N
+      onMouseEnter: N,
+      onMouseLeave: T
     }
   } = (0, o.j)(), A = t.getGuildId(), {
     mute: w,
@@ -142,10 +142,10 @@ function O(e) {
       onContextMenu: z,
       onClick: W,
       onMouseEnter: () => {
-        G(), T()
+        G(), N()
       },
       onMouseLeave: () => {
-        null == E && (V(), N())
+        null == E && (V(), T())
       },
       isActive: F || E === v.D.SOUNDBOARD,
       color: F || E === v.D.SOUNDBOARD ? "primaryDark" : void 0

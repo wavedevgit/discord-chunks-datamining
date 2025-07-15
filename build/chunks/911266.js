@@ -1,4 +1,4 @@
-/** Chunk was on 19577 **/
+/** Chunk was on 51977 **/
 n.d(t, {
   Z: () => y
 }), n(388685);
@@ -59,7 +59,7 @@ let y = e => {
     "aria-hidden": "true"
   });
   let Z = P.emoji[0],
-    T = null == Z.id ? p.ZP.getURL(Z.name) : d.ZP.getEmojiURL({
+    N = null == Z.id ? p.ZP.getURL(Z.name) : d.ZP.getEmojiURL({
       id: Z.id,
       animated: !1,
       size: 32,
@@ -73,17 +73,17 @@ let y = e => {
     },
     children: [(0, r.jsx)("img", {
       alt: "",
-      src: T,
+      src: N,
       className: a()([_.emoji, _.left, I && _.shy, C && _.confettiMode]),
       width: 28
     }), (0, r.jsx)("img", {
       alt: "",
-      src: T,
+      src: N,
       className: a()([_.emoji, _.right, I && _.shy, C && _.confettiMode]),
       width: 26
     }), (0, r.jsx)("img", {
       alt: "",
-      src: T,
+      src: N,
       className: a()([_.emoji, _.center, I && _.shy, C && _.confettiMode]),
       width: 32
     })]

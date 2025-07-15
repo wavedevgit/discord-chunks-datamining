@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   a = n(73800),
   l = n(120356),
-  o = n.n(l),
-  i = n(525769),
+  i = n.n(l),
+  o = n(525769),
   s = n(263568),
   c = n(755721),
   u = n(481060),
@@ -27,12 +27,12 @@ var r = n(255367),
 let P = (0, m.hQ)(),
   C = (0, m.hQ)();
 
-function E(e) {
+function A(e) {
   let {
     question: t,
     onChange: n,
     error: l,
-    inputRef: i
+    inputRef: o
   } = e, [s, c] = a.useState(!1);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.vwX, {
@@ -40,11 +40,11 @@ function E(e) {
       htmlFor: C,
       children: v.intl.string(v.t.WBiKnJ)
     }), (0, r.jsx)(u.Kx8, {
-      inputRef: i,
+      inputRef: o,
       id: C,
       placeholder: v.intl.string(v.t["/uQqJS"]),
       value: t,
-      className: o()(_.questionInput, {
+      className: i()(_.questionInput, {
         [_.hasError]: null != l
       }),
       onChange: n,
@@ -62,7 +62,7 @@ function E(e) {
   })
 }
 
-function A(e) {
+function E(e) {
   let {
     selectedDuration: t,
     onSelect: n
@@ -103,59 +103,66 @@ function I(e) {
   let {
     channel: t,
     transitionState: n,
-    onClose: l
-  } = e, m = (0, b._N)();
+    onClose: l,
+    initialQuestion: m,
+    initialAnswers: h,
+    initialDuration: C
+  } = e, k = (0, b._N)();
   (0, f.Z)({
     type: w.n.MODAL,
-    name: i.z.POLL_EDITOR_VIEWED
+    name: o.z.POLL_EDITOR_VIEWED
   });
-  let h = a.useRef(null),
-    C = a.useRef([]),
-    k = a.useRef([]),
-    S = a.useRef(null),
+  let S = a.useRef(null),
     D = a.useRef([]),
-    R = a.useCallback(e => {
+    R = a.useRef([]),
+    N = a.useRef(null),
+    T = a.useRef([]),
+    L = a.useCallback(e => {
       var t, n, r, a;
       let {
         indexToRemove: l,
-        numberOfAnswers: o
+        numberOfAnswers: i
       } = e;
-      o === x.gY + 1 ? null == (n = S.current) || null == (t = n.ref) || t.focus() : null == (a = D.current[l === o - 1 ? l - 1 : l + 1]) || null == (r = a.ref) || r.focus()
+      i === x.gY + 1 ? null == (n = N.current) || null == (t = n.ref) || t.focus() : null == (a = T.current[l === i - 1 ? l - 1 : l + 1]) || null == (r = a.ref) || r.focus()
     }, []),
     {
-      answers: N,
-      question: T,
-      selectedLayoutType: L,
-      setSelectedLayoutType: B,
-      allowMultiSelect: Z,
-      setAllowMultiSelect: U,
-      duration: M,
-      setDuration: z,
-      handleQuestionChange: W,
-      handleAnswerTextChange: H,
-      handleEmojiSelect: Y,
-      canAddMoreAnswers: F,
-      handleRemoveAnswerImage: K,
-      canRemoveMoreAnswers: q,
-      handleAddAnswer: X,
-      handleRemoveAnswer: G,
-      createPollError: J,
-      handleSubmitPoll: V,
-      fieldErrors: Q,
-      submitting: $,
-      shouldFocusOnInvalidField: ee,
-      setShouldFocusOnInvalidField: et
-    } = (0, g.Z)(t, l, R),
+      answers: B,
+      question: Z,
+      selectedLayoutType: U,
+      setSelectedLayoutType: M,
+      allowMultiSelect: z,
+      setAllowMultiSelect: W,
+      duration: H,
+      setDuration: Y,
+      handleQuestionChange: F,
+      handleAnswerTextChange: K,
+      handleEmojiSelect: q,
+      canAddMoreAnswers: X,
+      handleRemoveAnswerImage: G,
+      canRemoveMoreAnswers: J,
+      handleAddAnswer: Q,
+      handleRemoveAnswer: V,
+      createPollError: $,
+      handleSubmitPoll: ee,
+      fieldErrors: et,
+      submitting: en,
+      shouldFocusOnInvalidField: er,
+      setShouldFocusOnInvalidField: ea
+    } = (0, g.Z)(t, l, L, {
+      initialQuestion: m,
+      initialAnswers: h,
+      initialDuration: C
+    }),
     {
-      trackPollCreationCancelled: en
-    } = (0, O.l)(N, Z, L),
-    er = a.useRef(N.length),
-    ea = L === s.C.DEFAULT,
-    el = a.useCallback(() => {
-      en(), l()
-    }, [l, en]),
-    eo = a.useCallback(() => {
-      if (!(0, b.D$)(T, N, L)) return void d.Z.show({
+      trackPollCreationCancelled: el
+    } = (0, O.l)(B, z, U),
+    ei = a.useRef(B.length),
+    eo = U === s.C.DEFAULT,
+    es = a.useCallback(() => {
+      el(), l()
+    }, [l, el]),
+    ec = a.useCallback(() => {
+      if (!(0, b.D$)(Z, B, U)) return void d.Z.show({
         title: v.intl.string(v.t.HMrgcn),
         body: v.intl.string(v.t["Wxa/j4"]),
         confirmColor: c.Tt.RED,
@@ -163,11 +170,11 @@ function I(e) {
         confirmVariant: "critical-primary",
         cancelText: v.intl.string(v.t["2BR5R0"]),
         onConfirm: () => {
-          el()
+          es()
         }
       });
-      el()
-    }, [el, N, T, L]);
+      es()
+    }, [es, B, Z, U]);
   a.useEffect(() => {
     (0, u.oav)(x.$z, e => {
       var n, a;
@@ -200,29 +207,29 @@ function I(e) {
       })(Object(a)).forEach(function(e) {
         Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(a, e))
       }), n))
-    }, eo)
-  }, [eo, t]), a.useEffect(() => {
-    if (N.length > er.current) {
+    }, ec)
+  }, [ec, t]), a.useEffect(() => {
+    if (B.length > ei.current) {
       var e;
-      null == (e = k.current[N.length - 1]) || e.focus()
+      null == (e = R.current[B.length - 1]) || e.focus()
     }
-    er.current = N.length
-  }, [N.length]), a.useEffect(() => {
-    if (ee) {
+    ei.current = B.length
+  }, [B.length]), a.useEffect(() => {
+    if (er) {
       var e, t;
-      if ((null == Q ? void 0 : Q.question) != null) null == (e = h.current) || e.focus();
+      if ((null == et ? void 0 : et.question) != null) null == (e = S.current) || e.focus();
       else {
-        let e = N.findIndex(e => Q["answer-".concat(e.localCreationAnswerId)]); - 1 !== e && (null == (t = k.current[e]) || t.focus())
+        let e = B.findIndex(e => et["answer-".concat(e.localCreationAnswerId)]); - 1 !== e && (null == (t = R.current[e]) || t.focus())
       }
-      et(!1)
+      ea(!1)
     }
-  }, [Q, N, ee, et, k, C]);
-  let ei = () => {
-      n === u.Dvm.ENTERED && V()
+  }, [et, B, er, ea, R, D]);
+  let eu = () => {
+      n === u.Dvm.ENTERED && ee()
     },
-    es = (0, p.Z)({
-      disabled: $,
-      onSubmit: ei
+    ed = (0, p.Z)({
+      disabled: en,
+      onSubmit: eu
     });
   return (0, r.jsxs)(u.Y0X, {
     size: u.CgR.MEDIUM,
@@ -240,65 +247,65 @@ function I(e) {
         id: P,
         children: v.intl.string(v.t["GD/8X1"])
       }), (0, r.jsx)(u.olH, {
-        onClick: eo
+        onClick: ec
       })]
     }), (0, r.jsxs)(u.hzk, {
       className: _.content,
-      onKeyDown: es,
-      children: [null != J && (0, r.jsx)(u.kzN, {
+      onKeyDown: ed,
+      children: [null != $ && (0, r.jsx)(u.kzN, {
         className: _.apiErrorBlock,
-        children: J.getAnyErrorMessage()
-      }), (0, r.jsx)(E, {
-        question: T,
-        onChange: W,
-        error: null == Q ? void 0 : Q.question,
-        inputRef: h
-      }), m && (0, r.jsx)(y.Z, {
-        selectedLayoutType: L,
-        onSelectedLayoutType: B
+        children: $.getAnyErrorMessage()
+      }), (0, r.jsx)(A, {
+        question: Z,
+        onChange: F,
+        error: null == et ? void 0 : et.question,
+        inputRef: S
+      }), k && (0, r.jsx)(y.Z, {
+        selectedLayoutType: U,
+        onSelectedLayoutType: M
       }), (0, r.jsx)(u.LZC, {
         size: 26
       }), (0, r.jsxs)("fieldset", {
-        className: o()(_.answerInputsContainer, ea ? _.defaultContainer : _.imageOnlyContainer),
+        className: i()(_.answerInputsContainer, eo ? _.defaultContainer : _.imageOnlyContainer),
         children: [(0, r.jsx)(u.vwX, {
           tag: u.RB0.LEGEND,
           children: v.intl.string(v.t.oMBfeX)
-        }), N.map((e, n) => (0, r.jsx)(j.Z, {
+        }), B.map((e, n) => (0, r.jsx)(j.Z, {
           answer: e,
           channelId: t.id,
           index: n,
-          isLastAnswer: n === N.length - 1,
-          onEmojiSelect: Y,
-          onEmojiRemove: K,
-          layout: L,
-          onAnswerTextChange: H,
-          onRemoveAnswer: G,
-          addAnswer: X,
-          submitPoll: ei,
-          answerTextInputRefs: k,
-          error: null == Q ? void 0 : Q["answer-".concat(e.localCreationAnswerId)],
-          canRemoveAnswer: q,
+          isLastAnswer: n === B.length - 1,
+          onEmojiSelect: q,
+          onEmojiRemove: G,
+          layout: U,
+          onAnswerTextChange: K,
+          onRemoveAnswer: V,
+          addAnswer: Q,
+          submitPoll: eu,
+          answerTextInputRefs: R,
+          error: null == et ? void 0 : et["answer-".concat(e.localCreationAnswerId)],
+          canRemoveAnswer: J,
           ref: e => {
-            C.current[n] = e
+            D.current[n] = e
           },
           inputRef: e => {
-            k.current[n] = e
+            R.current[n] = e
           },
           deleteButtonRef: e => {
-            D.current[n] = e
+            T.current[n] = e
           }
-        }, e.localCreationAnswerId)), F && (0, r.jsxs)(u.P3F, {
-          className: o()(ea ? _.addAnswerButtonDefault : _.addAnswerButtonImageOnly, {
-            [_.canRemoveMoreAnswers]: q
+        }, e.localCreationAnswerId)), X && (0, r.jsxs)(u.P3F, {
+          className: i()(eo ? _.addAnswerButtonDefault : _.addAnswerButtonImageOnly, {
+            [_.canRemoveMoreAnswers]: J
           }),
-          onClick: F ? X : void 0,
+          onClick: X ? Q : void 0,
           "aria-label": v.intl.string(v.t.B2UvmZ),
-          ref: S,
+          ref: N,
           children: [(0, r.jsx)(u.qJs, {
             size: "md",
             color: "currentColor",
-            className: ea ? _.addAnswerIconDefault : _.addAnswerIconImageOnly
-          }), ea && (0, r.jsx)(u.Text, {
+            className: eo ? _.addAnswerIconDefault : _.addAnswerIconImageOnly
+          }), eo && (0, r.jsx)(u.Text, {
             variant: "text-md/normal",
             color: "text-muted",
             className: _.addAnswerButtonLabel,
@@ -307,17 +314,17 @@ function I(e) {
         })]
       }), (0, r.jsx)(u.LZC, {
         size: 18
-      }), (0, r.jsx)(A, {
-        selectedDuration: M,
-        onSelect: z
+      }), (0, r.jsx)(E, {
+        selectedDuration: H,
+        onSelect: Y
       })]
     }), (0, r.jsxs)(u.mzw, {
       className: _.footer,
       children: [(0, r.jsx)(u.XZJ, {
         className: _.checkbox,
         size: 24,
-        value: Z,
-        onChange: (e, t) => U(t),
+        value: z,
+        onChange: (e, t) => W(t),
         children: (0, r.jsx)(u.Text, {
           variant: "text-md/medium",
           color: "interactive-active",
@@ -327,8 +334,8 @@ function I(e) {
         look: c.iL.FILLED,
         size: c.zx.Sizes.MEDIUM,
         className: _.postButton,
-        onClick: ei,
-        submitting: $,
+        onClick: eu,
+        submitting: en,
         children: (0, r.jsx)(u.Text, {
           variant: "text-md/semibold",
           className: _.postButtonText,

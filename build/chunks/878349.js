@@ -1,4 +1,4 @@
-/** Chunk was on 19577 **/
+/** Chunk was on 51977 **/
 n.d(t, {
   Z: () => b
 }), n(388685);
@@ -31,8 +31,8 @@ function b(e) {
     collapseWhenChecked: j = !0,
     onClick: O,
     disabled: E
-  } = e, S = (0, o.e7)([p.Z], () => p.Z.useReducedMotion), [I, P] = i.useState(!1), Z = (0, d.ZP)(), T = (0, s.wj)(Z) || t ? g : m, {
-    width: N = 0,
+  } = e, S = (0, o.e7)([p.Z], () => p.Z.useReducedMotion), [I, P] = i.useState(!1), Z = (0, d.ZP)(), N = (0, s.wj)(Z) || t ? g : m, {
+    width: T = 0,
     ref: A
   } = (0, u.ZP)(), {
     width: w = 0,
@@ -69,14 +69,14 @@ function b(e) {
         [f.labelUnchecked]: !t && !b
       }),
       style: j ? {
-        width: t ? N : N + w
+        width: t ? T : T + w
       } : void 0,
       children: [t ? (0, r.jsx)(c.ZX5, {
         className: f.shine,
         shinePaused: S
       }) : null, (0, r.jsx)("img", {
         ref: A,
-        src: T,
+        src: N,
         alt: _
       }), (0, r.jsx)("span", {
         ref: R,

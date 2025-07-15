@@ -1,7 +1,7 @@
-/** Chunk was on 19577 **/
+/** Chunk was on 51977 **/
 n.d(t, {
   Z: () => A,
-  y: () => N
+  y: () => T
 });
 var r = n(255367),
   i = n(73800),
@@ -88,7 +88,7 @@ let Z = i.memo(function(e) {
       }) : null]
     })
   }),
-  T = i.memo(function(e) {
+  N = i.memo(function(e) {
     var t;
     let {
       participant: n,
@@ -128,7 +128,7 @@ let Z = i.memo(function(e) {
       })]
     })
   }),
-  N = () => (0, r.jsx)("div", {
+  T = () => (0, r.jsx)("div", {
     className: S.tileBaseContainer
   }),
   A = i.memo(function(e) {
@@ -140,7 +140,7 @@ let Z = i.memo(function(e) {
       blocked: d
     } = t, v = l.getGuildId(), j = C.default.getId(), {
       newestAnalyticsLocation: O
-    } = (0, g.ZP)(m.Z.AUDIENCE_TILE), Z = (0, f.bp)(), N = (0, u.e7)([x.ZP], () => {
+    } = (0, g.ZP)(m.Z.AUDIENCE_TILE), Z = (0, f.bp)(), T = (0, u.e7)([x.ZP], () => {
       var e;
       return null != v && (null == (e = x.ZP.getMember(v, o.id)) ? void 0 : e.premiumSince) != null
     }, [v, o.id]), A = i.useRef(null);
@@ -183,16 +183,16 @@ let Z = i.memo(function(e) {
       children: e => (0, r.jsx)(p.P3F, P(I({
         innerRef: A,
         className: a()(S.tileContainer, {
-          [S.singleIcon]: N || d,
-          [S.doubleIcon]: N && d
+          [S.singleIcon]: T || d,
+          [S.doubleIcon]: T && d
         }),
         onContextMenu: w
       }, e), {
-        children: (0, r.jsx)(T, {
+        children: (0, r.jsx)(N, {
           participant: t,
           guildId: v,
           channel: l,
-          isPremium: N
+          isPremium: T
         })
       }))
     })

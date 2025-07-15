@@ -1,15 +1,15 @@
 /** Chunk was on 68784 **/
 n.d(t, {
-  N: () => o
+  N: () => i
 });
 var r = n(255367);
 n(73800);
 var a = n(692547),
   l = n(325767);
-let o = e => {
+let i = e => {
   var t, n, {
-      width: o = 24,
-      height: i = 24,
+      width: i = 24,
+      height: o = 24,
       color: s = a.Z.colors.INTERACTIVE_NORMAL
     } = e,
     c = function(e, t) {
@@ -46,8 +46,8 @@ let o = e => {
     return e
   }({}, (0, l.Z)(c)), n = n = {
     xmlns: "http://www.w3.org/2000/svg",
-    width: o,
-    height: i,
+    width: i,
+    height: o,
     viewBox: "0 0 24 24",
     fill: "string" == typeof s ? s : s.css,
     children: [(0, r.jsxs)("g", {

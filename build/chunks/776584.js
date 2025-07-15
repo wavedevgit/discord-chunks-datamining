@@ -1,4 +1,4 @@
-/** Chunk was on 19577 **/
+/** Chunk was on 51977 **/
 e.exports = {
   container: "container_fb64c9",
   chat: "chat_fb64c9",
@@ -18,5 +18,7 @@ e.exports = {
   privateThreadFormTitle: "privateThreadFormTitle_fb64c9",
   privateThreadFormTitleText: "privateThreadFormTitleText_fb64c9",
   submitContainer: "submitContainer_fb64c9",
-  messagePreview: "messagePreview_fb64c9"
+  messagePreview: "messagePreview_fb64c9",
+  threadNameInputWithAI: "threadNameInputWithAI_fb64c9",
+  threadNameContainer: "threadNameContainer_fb64c9"
 }

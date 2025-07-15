@@ -15,19 +15,19 @@ var r = n(255367),
   g = n(768581),
   b = n(585483),
   p = n(176354),
-  O = n(981631),
-  m = n(185923),
+  m = n(981631),
+  O = n(185923),
   y = n(388032);
 
 function h(e, t) {
   let {
     reducedMotion: n
-  } = i.useContext(a.Sfi), g = (0, u.$R)(t), h = (0, l.e7)([f.Z], () => (t.isPrivate() || f.Z.can(O.Plq.ADD_REACTIONS, t)) && g, [t, g]), j = (0, o.MZ)(t.getGuildId());
+  } = i.useContext(a.Sfi), g = (0, u.$R)(t), h = (0, l.e7)([f.Z], () => (t.isPrivate() || f.Z.can(m.Plq.ADD_REACTIONS, t)) && g, [t, g]), j = (0, o.MZ)(t.getGuildId());
   if (!d.nc.getSetting() || !h) return null;
   let S = j.filter(e => !p.ZP.isEmojiFilteredOrLocked({
     emoji: e,
     channel: t,
-    intention: m.Hz.REACTION
+    intention: O.Hz.REACTION
   })).slice(0, 12).map((i, l) => {
     var o, u;
     return (0, r.jsx)(a.sNh, {
@@ -77,7 +77,7 @@ function h(e, t) {
     id: "add-reaction",
     label: y.intl.string(y.t.lfIHs7),
     action: () => {
-      b.S.dispatchKeyed(O.LPv.TOGGLE_REACTION_POPOUT, e.id, {
+      b.S.dispatchKeyed(m.LPv.TOGGLE_REACTION_POPOUT, e.id, {
         emojiPicker: !0
       })
     },
@@ -89,7 +89,7 @@ function h(e, t) {
         label: y.intl.string(y.t["OBCR+v"]),
         icon: a.EO4,
         action: () => {
-          b.S.dispatchKeyed(O.LPv.TOGGLE_REACTION_POPOUT, e.id, {
+          b.S.dispatchKeyed(m.LPv.TOGGLE_REACTION_POPOUT, e.id, {
             emojiPicker: !0
           })
         }

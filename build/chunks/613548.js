@@ -1,4 +1,4 @@
-/** Chunk was on 19577 **/
+/** Chunk was on 51977 **/
 n.d(t, {
   Z: () => D
 }), n(539854);
@@ -29,8 +29,8 @@ var r = n(255367),
   I = n(358221),
   P = n(355827),
   Z = n(185935),
-  T = n(354459),
-  N = n(388032),
+  N = n(354459),
+  T = n(388032),
   A = n(232989);
 
 function w(e) {
@@ -71,13 +71,13 @@ function M(e) {
     guildId: n
   } = e, i = (0, c.Wu)([S.Z, I.Z], () => {
     let e = Date.now();
-    return s()(S.Z.getSpeakers()).map(e => I.Z.getParticipant(t, e)).filter(e => null != e && e.type === T.fO.USER && e.speaking && !(0, y.ZP)(e)).sortBy(t => -S.Z.getSpeakingDuration(t.user.id, e)).slice(0, 3).value()
+    return s()(S.Z.getSpeakers()).map(e => I.Z.getParticipant(t, e)).filter(e => null != e && e.type === N.fO.USER && e.speaking && !(0, y.ZP)(e)).sortBy(t => -S.Z.getSpeakingDuration(t.user.id, e)).slice(0, 3).value()
   });
   return 0 === i.length ? null : (0, r.jsx)(r.Fragment, {
     children: i.map((e, t) => (0, r.jsx)(u.ua7, {
       position: "bottom",
       color: u.ua7.Colors.GREY,
-      text: N.intl.formatToPlainString(N.t.JjdizM, {
+      text: T.intl.formatToPlainString(T.t.JjdizM, {
         username: e.user.username
       }),
       children: l => (0, r.jsx)(E.ZP, R(w({}, l), {
@@ -103,7 +103,7 @@ function D(e) {
     voiceParticipantsHidden: y,
     selectedParticipant: E,
     userParticipantCount: S,
-    participantsListOpen: N
+    participantsListOpen: T
   } = (0, c.cj)([I.Z], () => ({
     selectedParticipant: I.Z.getSelectedParticipant(s),
     voiceParticipantsHidden: I.Z.getVoiceParticipantsHidden(s),
@@ -113,7 +113,7 @@ function D(e) {
     hasParticipantsPanel: k
   } = (0, Z.Z)({
     location: "ChannelCallHeaderToolbar"
-  }), L = !N && k && (t.isGuildVoice() || t.isGroupDM()), {
+  }), L = !T && k && (t.isGuildVoice() || t.isGroupDM()), {
     enabled: U,
     inInbox: B
   } = b.Z.useExperiment({
@@ -125,7 +125,7 @@ function D(e) {
   }, "current-speaker")), F.push((0, r.jsx)(m.Z, {
     className: A.button,
     channelId: s
-  }, "clips-enabled-indicator")), (null == E ? void 0 : E.type) === T.fO.STREAM && (F.push((0, r.jsx)(C.Z, {
+  }, "clips-enabled-indicator")), (null == E ? void 0 : E.type) === N.fO.STREAM && (F.push((0, r.jsx)(C.Z, {
     className: A.button,
     participant: E
   }, "warning")), F.push((0, r.jsx)(g.Z, {
@@ -134,7 +134,7 @@ function D(e) {
     participant: E,
     showQuality: !0,
     premiumIndicator: !1
-  }, "live-indicator"))), (null == E ? void 0 : E.type) === T.fO.USER && F.push((0, r.jsx)(x.Z, {
+  }, "live-indicator"))), (null == E ? void 0 : E.type) === N.fO.USER && F.push((0, r.jsx)(x.Z, {
     className: A.button,
     userId: E.id
   }, "video-warning")), y && !k && F.push((0, r.jsx)(u.yRy, {
@@ -163,11 +163,11 @@ function D(e) {
     className: a()(A.button, {
       [A.lastButton]: n
     }),
-    onClick: () => d.Z.toggleParticipantsList(t.id, !N)
+    onClick: () => d.Z.toggleParticipantsList(t.id, !T)
   }, "participants-list-button")), D && F.push((0, r.jsx)(j.T, {
     channelId: t.id,
     className: a()(A.button, {
-      [A.lastButton]: N
+      [A.lastButton]: T
     }),
     disabled: n
   }, "chat-spacer")), (0, r.jsx)(h.Gt, {

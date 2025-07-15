@@ -1,4 +1,4 @@
-/** Chunk was on 19577 **/
+/** Chunk was on 51977 **/
 e.exports = {
   wallpaperContainer: "wallpaperContainer__5fa7b",
   thumbhashContainer: "thumbhashContainer__5fa7b"
