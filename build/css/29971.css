@@ -1,6 +1,6 @@
 /**
   Module ID: 29971
-  Original File Name: 780a0ad88f02ec6d
+  Original File Name: 648d7c40e57ca399
 **/
 .container__4216d {
     align-items: center;
@@ -1261,11 +1261,13 @@
 }
 
 .applicationIcon_e858dd {
-    margin-right: .5em
+    align-self: end;
+    margin-bottom: 3px;
+    margin-left: 16px
 }
 
 .submissionWarning_e858dd {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=780a0ad88f02ec6d.css.map*/
+/*# sourceMappingURL=648d7c40e57ca399.css.map*/
