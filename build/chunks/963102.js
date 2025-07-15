@@ -162,17 +162,17 @@ function N(e) {
     tab: T.AW.ORBS,
     displayText: L.intl.string(L.t.EBYkzs)
   });
-  let D = r ? E.DR : o,
-    F = f === T.AW.ORBS ? P.ZY5.SHOP_ORBS_TAB : P.ZY5.COLLECTIBLES_SHOP,
+  let F = r ? E.DR : o,
+    D = f === T.AW.ORBS ? P.ZY5.SHOP_ORBS_TAB : P.ZY5.COLLECTIBLES_SHOP,
     M = l.useCallback(() => {
-      t && (D(), (0, u.Ou)()), (0, m.Y)({
-        pageType: F,
+      t && (F(), (0, u.Ou)()), (0, m.Y)({
+        pageType: D,
         sectionType: P.jXE.ORBS_BALANCE_MENU,
         ctaObject: P.qAy.CTA_TO_QUEST_HOME
       }), (0, b.navigateToQuestHome)({
         fromContent: a.j.ORBS_BALANCE_MENU
       })
-    }, [D, t, F]),
+    }, [F, t, D]),
     H = (0, S.F)("collectibles_shop_header_bar");
   return (0, n.jsx)(c.f6W, {
     theme: x,
@@ -218,13 +218,13 @@ function N(e) {
           selectedTab: f
         }), w && (0, n.jsx)(O.V9, {
           anchorPillType: t ? "SHOP_FULLSCREEN" : "SHOP",
-          analyticsPage: F,
+          analyticsPage: D,
           cardAlignment: O.V9.CardAlignment.END,
           ctaText: L.intl.string(L.t.VC4Mq6),
           ctaOnClick: M,
           className: I.balanceWidgetMenu
         }), t && (0, n.jsx)(d.Z, {
-          closeAction: D,
+          closeAction: F,
           keybind: "ESC"
         })]
       })]

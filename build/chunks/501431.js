@@ -67,7 +67,7 @@ let f = {
     orbEligible: !1,
     sort: f,
     searchQuery: "",
-    queryPageSize: 20,
+    queryPageSize: 0,
     queryPageOffset: 0,
     isFetchingResults: !1,
     fullScreenOpen: !1,
@@ -175,6 +175,9 @@ let f = {
       e(e => {
         let r = new Set([t]),
           n = d(u({}, e), {
+            colorFilters: new Set,
+            themeFilters: new Set,
+            orbEligible: !1,
             itemTypeFilters: r,
             queryPageOffset: 0
           });
@@ -183,13 +186,21 @@ let f = {
     },
     clearFilters: () => {
       e({
-        itemTypeFilters: new Set,
         colorFilters: new Set,
-        themeFilters: new Set
+        themeFilters: new Set,
+        itemTypeFilters: new Set,
+        orbEligible: !1
       })
     },
     reset: () => {
-      e(u({}, b))
+      let {
+        queryPageSize: r,
+        queryPageOffset: n
+      } = t();
+      e(d(u({}, b), {
+        queryPageSize: r,
+        queryPageOffset: n
+      }))
     },
     setFullScreenOpen: t => {
       e({
@@ -241,29 +252,29 @@ let f = {
     let {
       onSetResponse: e,
       setSearchError: t,
-      clear: r,
-      setIsFetchingResults: l
+      setIsFetchingResults: r
     } = (0, c.a)();
     n.useEffect(() => {
       let n = n => {
-        (async () => {
-          r(), l(!0);
+        let l = async () => {
+          r(!0);
           try {
             let t = await (0, s.y)(n);
             e(C(t))
           } catch (e) {
-            var o;
-            t(null != (o = null == e ? void 0 : e.message) ? o : "Unknown error")
+            var l;
+            t(null != (l = null == e ? void 0 : e.message) ? l : "Unknown error")
           } finally {
-            l(!1)
+            r(!1)
           }
-        })()
+        };
+        0 !== n.limit && l()
       };
       n(O(_.getState()));
-      let o = _.subscribe(O, n, {
+      let l = _.subscribe(O, n, {
           equalityFn: (e, t) => JSON.stringify(e) === JSON.stringify(t)
         }),
-        i = _.subscribe(e => e.hasFilters(), (e, t) => {
+        o = _.subscribe(e => e.hasFilters(), (e, t) => {
           if (!e && t) {
             let e = _.getState();
             e.userHasSelectedSort || _.setState({
@@ -272,7 +283,7 @@ let f = {
           }
         });
       return () => {
-        o(), i()
+        l(), o()
       }
-    }, [e, t, r, l])
+    }, [e, t, r])
   }

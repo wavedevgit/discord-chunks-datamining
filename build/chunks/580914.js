@@ -38,7 +38,7 @@ var n = r(255367),
   w = r(981631),
   R = r(388032),
   Z = r(806734);
-let D = {
+let F = {
     rankedSkuIds: [],
     name: "",
     unpublishedAt: void 0,
@@ -50,9 +50,9 @@ let D = {
     type: s.z.HERO,
     categoryStoreListingId: ""
   },
-  F = e => {
+  D = e => {
     var t, r, n, l;
-    return null == e ? D : {
+    return null == e ? F : {
       rankedSkuIds: null != (t = e.heroRanking) ? t : [],
       name: e.name,
       unpublishedAt: e.unpublishedAt,
@@ -115,7 +115,7 @@ let D = {
       showBetaTag: Y
     } = _.Z.useExperiment({
       location: "collectible_hero_block"
-    }), K = l.useMemo(() => null != y ? y : F(s), [y, s]), {
+    }), K = l.useMemo(() => null != y ? y : D(s), [y, s]), {
       isPreviewingStaticBanner: X,
       bannerOverrides: J,
       bannerStyleOverrides: Q,
@@ -126,7 +126,7 @@ let D = {
     } = (0, B.hr)(K), en = null == J ? void 0 : J.heroBanner, el = null != (t = null == Q ? void 0 : Q.responsive) && t, eo = null == Q ? void 0 : Q.backgroundStyle, ei = l.useMemo(() => G(K.rankedSkuIds), [r, G, K.rankedSkuIds]), ea = (0, T.a)()(ei), es = (0, P.l)(ea).slice(0, 4), ec = (0, N.St)(es), eu = L === A.AW.ORBS ? R.intl.string(R.t["1CdL8f"]) : R.intl.formatToPlainString(R.t.wvKYCg, {
       category_name: K.name
     }), ed = (0, x.F)("CollectiblesContent");
-    return null != z && (r || K !== D) ? (0, n.jsxs)("div", {
+    return null != z && (r || K !== F) ? (0, n.jsxs)("div", {
       ref: U,
       className: i()(Z.heroBlock, {
         [Z.responsiveHero]: el

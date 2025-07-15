@@ -60,38 +60,39 @@ function v(e) {
   }, [y, o, j, x, r, E]);
   let Z = l.useRef(null),
     {
-      setQueryPageSize: D,
-      setQueryPageOffset: F,
+      setQueryPageSize: F,
+      setQueryPageOffset: D,
       queryPageSize: M
     } = (0, f.S)(),
     H = r || k || null == T,
-    W = !H && 0 === R.length;
+    W = M > 0 && !H && 0 === R.length;
   return l.useEffect(() => {
-    if (null != Z.current && !W) {
-      let e = new ResizeObserver(() => {
-        null != Z.current && D(Math.floor(5 * getComputedStyle(Z.current).gridTemplateColumns.split(/\s+/).length))
-      });
-      return e.observe(Z.current), () => e.disconnect()
-    }
-  }, [D, W]), (0, n.jsxs)(n.Fragment, {
+    let e = new ResizeObserver(() => {
+      null != Z.current && F(Math.floor(5 * getComputedStyle(Z.current).gridTemplateColumns.split(/\s+/).length))
+    });
+    if (null != Z.current) return e.observe(Z.current), () => e.disconnect()
+  }, [F]), (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsxs)("div", {
-      className: i()(C.products, {
+      className: i()({
         [C.productsEmpty]: W
       }),
-      ref: Z,
-      children: [H && [...Array(M)].map((e, t) => (0, n.jsx)(b.K, {}, t)), W && (0, n.jsx)(O.Z, {}), !H && R.map((e, t) => {
-        let r = d.Z.getCategory(e.categorySkuId);
-        return null == r ? null : (0, n.jsx)(u.k0, {
-          newValue: {
-            tilePosition: t
-          },
-          children: (0, n.jsx)(m.Z, {
-            product: e,
-            user: T,
-            category: r,
-            tab: E
+      children: [W && (0, n.jsx)(O.Z, {}), (0, n.jsxs)("div", {
+        className: C.products,
+        ref: Z,
+        children: [H && [...Array(M)].map((e, t) => (0, n.jsx)(b.K, {}, t)), !H && R.map((e, t) => {
+          let r = d.Z.getCategory(e.categorySkuId);
+          return null == r ? null : (0, n.jsx)(u.k0, {
+            newValue: {
+              tilePosition: t
+            },
+            children: (0, n.jsx)(m.Z, {
+              product: e,
+              user: T,
+              category: r,
+              tab: E
+            }, e.skuId)
           }, e.skuId)
-        }, e.skuId)
+        })]
       })]
     }), I > M && (0, n.jsx)("div", {
       className: C.paginationContainer,
@@ -101,7 +102,7 @@ function v(e) {
           totalCount: I,
           pageSize: M,
           onPageChange: e => {
-            F((e - 1) * M)
+            D((e - 1) * M)
           },
           disablePaginationGap: !0
         })

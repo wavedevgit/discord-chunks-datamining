@@ -41,7 +41,7 @@ function I(e) {
   } = e, N = (0, d.sp)(), A = null != (t = null == N ? void 0 : N.sessionId) ? t : "", {
     noCache: w,
     includeUnpublished: R
-  } = (0, _.Z)(), Z = (0, i.e7)([u.default], () => u.default.getCurrentUser()), D = (0, i.e7)([p.Z], () => p.Z.productsWithVariantsAsGroup), [F, M] = l.useState(1), H = () => {
+  } = (0, _.Z)(), Z = (0, i.e7)([u.default], () => u.default.getCurrentUser()), F = (0, i.e7)([p.Z], () => p.Z.productsWithVariantsAsGroup), [D, M] = l.useState(1), H = () => {
     var e;
     null == k || null == (e = k.current) || e.scrollToTop({
       animate: !0
@@ -57,10 +57,10 @@ function I(e) {
       case O.AW.BUNDLES:
         return [C.intl.string(C.t.FYFppq), V ? S.Z : E.Z, o.Z.BUNDLE]
     }
-  }, [B, V]), q = (0, f.a)(), Y = l.useMemo(() => q(D.filter(e => {
+  }, [B, V]), q = (0, f.a)(), Y = l.useMemo(() => q(F.filter(e => {
     var t;
     return e.type === G || e.type === o.Z.VARIANTS_GROUP && (null == (t = e.variants) ? void 0 : t.some(e => e.type === G)) === !0
-  })), [D, G, q]), K = (0, g.l)(Y);
+  })), [F, G, q]), K = (0, g.l)(Y);
   return (l.useEffect(() => {
     (0, h.n)({
       sessionId: A,
@@ -91,7 +91,7 @@ function I(e) {
       })
     }), (0, n.jsx)("div", {
       className: v.products,
-      children: K.slice(40 * (F - 1), 40 * F).map((e, t) => {
+      children: K.slice(40 * (D - 1), 40 * D).map((e, t) => {
         let r = p.Z.getCategory(e.categorySkuId);
         return null == r ? null : (0, n.jsx)(d.k0, {
           newValue: {
@@ -109,7 +109,7 @@ function I(e) {
       className: v.paginationContainer,
       children: (0, n.jsx)("div", {
         children: (0, n.jsx)(s.DsT, {
-          currentPage: F,
+          currentPage: D,
           totalCount: K.length,
           pageSize: 40,
           onPageChange: e => {
