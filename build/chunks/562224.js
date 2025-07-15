@@ -1,7 +1,7 @@
 /** Chunk was on 81691 **/
 "use strict";
 r.d(t, {
-  Z: () => w
+  Z: () => y
 }), r(388685);
 var n = r(268146),
   l = r(872810),
@@ -20,25 +20,25 @@ var n = r(268146),
   h = r(143135),
   m = r(37113),
   O = r(761274);
-async function w(e, t) {
-  var r, w, y, P, j, S, I, D, E, x;
+async function y(e, t) {
+  var r, y, w, P, j, S, I, D, E, x;
   let k = p.default.getCurrentUser(),
     C = f.Z.getVoiceChannelId(),
     Z = s.Z.getChannel(C),
     M = null == Z ? void 0 : Z.getGuildId(),
     R = null == (r = c.Z.getGuild(M)) ? void 0 : r.premiumTier;
   if (null == k || null == Z || null == C) return [!1, "no user or channel"];
-  let _ = null;
-  if (null == (_ = "number" == typeof e ? o.ZP.getGameForPID(e) : e)) return [!1, "no source"];
+  let N = null;
+  if (null == (N = "number" == typeof e ? o.ZP.getGameForPID(e) : e)) return [!1, "no source"];
   if (!d.Z.getUseSystemScreensharePicker() && !await i.Z.hasPermission(O.Eu.SCREEN_RECORDING, {
       showAuthorizationError: !1
     })) return [!1, "no permission"];
   let {
-    preset: G,
-    resolution: W,
-    fps: A,
-    soundshareEnabled: N
-  } = a.Z.getState(), L = null != (y = null == t ? void 0 : t.preset) ? y : G, [U, V] = null != (P = (0, g.Z)(L, k, R)) ? P : [], H = null != (j = null != U ? U : null == t ? void 0 : t.resolution) ? j : W, T = null != (S = null != V ? V : null == t ? void 0 : t.fps) ? S : A, F = null != (I = null == t ? void 0 : t.previewDisabled) ? I : u.I0.getSetting(), Y = null != (D = null == t ? void 0 : t.soundshareEnabled) ? D : N;
+    preset: _,
+    resolution: G,
+    fps: W,
+    soundshareEnabled: A
+  } = a.Z.getState(), L = null != (w = null == t ? void 0 : t.preset) ? w : _, [U, V] = null != (P = (0, g.Z)(L, k, R)) ? P : [], H = null != (j = null != U ? U : null == t ? void 0 : t.resolution) ? j : G, T = null != (S = null != V ? V : null == t ? void 0 : t.fps) ? S : W, F = null != (I = null == t ? void 0 : t.previewDisabled) ? I : u.I0.getSetting(), Y = null != (D = null == t ? void 0 : t.soundshareEnabled) ? D : A;
   return (0, v.Z)(L, H, T, k, R, Z) || (L = m.tI.PRESET_VIDEO, H = m.LY.RESOLUTION_720, T = m.ws.FPS_30), (0, l.Rc)({
     preset: L,
     resolution: H,
@@ -74,8 +74,8 @@ async function w(e, t) {
       sourceName: e.name,
       sourceIcon: e.icon
     }
-  }(_)), x = x = {
-    audioSourceId: (null == (w = _.id) ? void 0 : w.startsWith(n.vA.CAMERA)) ? null == t ? void 0 : t.audioSourceId : void 0,
+  }(N)), x = x = {
+    audioSourceId: (null == (y = N.id) ? void 0 : y.startsWith(n.vA.CAMERA)) ? null == t ? void 0 : t.audioSourceId : void 0,
     sound: Y,
     previewDisabled: F,
     goLiveModalDurationMs: null == t ? void 0 : t.goLiveModalDurationMs

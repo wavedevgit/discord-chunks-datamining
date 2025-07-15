@@ -41,22 +41,22 @@ function E(e) {
   (0, d.A)();
   let T = (0, u.F)("CollectiblesBrowse"),
     [P, L] = l.useState(T),
-    [k, I] = l.useState(!1),
+    [I, k] = l.useState(!1),
     B = l.useRef(null),
     N = l.useRef(null);
   l.useEffect(() => {
     let e = () => {
-      I(window.innerWidth < 1400)
+      k(window.innerWidth < 1400)
     };
     return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
   }, []), l.useEffect(() => {
-    if (!k || !P) return;
+    if (!I || !P) return;
     let e = e => {
       let t = e.target;
       null === N.current || null === B.current || N.current.contains(t) || B.current.contains(t) || L(!1)
     };
     return document.addEventListener("mousedown", e), () => document.removeEventListener("mousedown", e)
-  }, [k, P]), l.useEffect(() => {
+  }, [I, P]), l.useEffect(() => {
     T || L(!1)
   }, [T, L]);
   let A = (0, d.S)(e => e.hasDefaultFilters()),
@@ -72,7 +72,7 @@ function E(e) {
           children: (0, n.jsx)(p.Z, {})
         }), (0, n.jsxs)("div", {
           className: i()(v.controlsRightSide, {
-            [v.controlsRightSideResponsive]: k
+            [v.controlsRightSideResponsive]: I
           }),
           children: [(0, n.jsxs)("div", {
             className: v.sortBy,
@@ -87,7 +87,7 @@ function E(e) {
               look: a.iL.OUTLINED,
               color: a.Tt.PRIMARY,
               className: i()({
-                [v.responsiveFilterButton]: k,
+                [v.responsiveFilterButton]: I,
                 [v.filterButtonActive]: P
               }),
               children: (0, n.jsxs)("div", {
@@ -99,7 +99,7 @@ function E(e) {
               })
             })
           })]
-        }), P && k && (0, n.jsx)("div", {
+        }), P && I && (0, n.jsx)("div", {
           className: v.filterOverlay,
           ref: N,
           children: (0, n.jsx)(s.Den, {
@@ -140,17 +140,17 @@ function E(e) {
         children: [(0, n.jsx)("div", {
           className: v.inventoryWrapper,
           children: w
-        }), P && !k && (0, n.jsx)("div", {
+        }), P && !I && (0, n.jsx)("div", {
           className: v.divider
         })]
       })) : (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)("div", {
           className: v.inventoryWrapper,
           children: w
-        }), P && !k && (0, n.jsx)("div", {
+        }), P && !I && (0, n.jsx)("div", {
           className: v.divider
         })]
-      }), P && !k && (0, n.jsx)(s.Ttm, {
+      }), P && !I && (0, n.jsx)(s.Ttm, {
         className: v.filterBar,
         children: (0, n.jsx)(h.Z, {})
       })]

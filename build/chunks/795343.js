@@ -35,8 +35,8 @@ function v(e) {
   } = (0, _.Z)(), T = (0, a.e7)([c.default], () => c.default.getCurrentUser()), {
     skus: P,
     currentPage: L,
-    totalCount: k,
-    isFetchingResults: I
+    totalCount: I,
+    isFetchingResults: k
   } = (0, g.a)(), B = (0, a.Wu)([d.Z], () => d.Z.getProductsBySkus(P)), N = l.useCallback(() => {
     var e;
     null == v || null == (e = v.current) || e.scrollToTop({
@@ -64,7 +64,7 @@ function v(e) {
       setQueryPageOffset: F,
       queryPageSize: M
     } = (0, f.S)(),
-    H = r || I || null == T,
+    H = r || k || null == T,
     W = !H && 0 === R.length;
   return l.useEffect(() => {
     if (null != Z.current && !W) {
@@ -93,12 +93,12 @@ function v(e) {
           }, e.skuId)
         }, e.skuId)
       })]
-    }), k > M && (0, n.jsx)("div", {
+    }), I > M && (0, n.jsx)("div", {
       className: C.paginationContainer,
       children: (0, n.jsx)("div", {
         children: (0, n.jsx)(s.DsT, {
           currentPage: L,
-          totalCount: k,
+          totalCount: I,
           pageSize: M,
           onPageChange: e => {
             F((e - 1) * M)

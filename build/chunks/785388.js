@@ -27,8 +27,8 @@ var i = n(255367),
   E = n(222677),
   R = n(995774),
   I = n(665906),
-  P = n(210887),
-  N = n(314897),
+  N = n(210887),
+  P = n(314897),
   C = n(592125),
   w = n(271383),
   Z = n(542578),
@@ -215,7 +215,7 @@ function $(e) {
     reactionType: a,
     onRemoveReactor: s,
     disableManage: c = !1
-  } = e, d = (0, u.e7)([N.default], () => N.default.getId()), p = (0, u.e7)([L.default], () => L.default.getUser(n.id), [n]), g = (0, I.$R)(l), j = (0, u.e7)([M.Z], () => M.Z.can(G.Plq.MANAGE_MESSAGES, l) && g) || d === n.id, O = (0, u.e7)([w.ZP, C.Z, _.Z], () => U.ZP.getName(o, l.id, n));
+  } = e, d = (0, u.e7)([P.default], () => P.default.getId()), p = (0, u.e7)([L.default], () => L.default.getUser(n.id), [n]), g = (0, I.$R)(l), j = (0, u.e7)([M.Z], () => M.Z.can(G.Plq.MANAGE_MESSAGES, l) && g) || d === n.id, O = (0, u.e7)([w.ZP, C.Z, _.Z], () => U.ZP.getName(o, l.id, n));
   return (0, i.jsxs)(b.Z, {
     className: W.reactorDefault,
     onContextMenu: e => (0, B.Pv)(e, n, l),
@@ -441,7 +441,7 @@ function et(e) {
   } : null, b), E = r.useMemo(() => {
     var e;
     return null == x ? null : null != (e = f.find(e => (0, R.ir)(e.emoji, x.emoji))) ? e : null
-  }, [f, x]), I = (0, u.e7)([g.Z], () => g.Z.saturation), N = (0, u.e7)([P.Z], () => (0, d.wj)(P.Z.theme));
+  }, [f, x]), I = (0, u.e7)([g.Z], () => g.Z.saturation), P = (0, u.e7)([N.Z], () => (0, d.wj)(N.Z.theme));
   if (r.useEffect(() => {
       (0 === f.length || null == x && null == E) && setImmediate(a)
     }, [a, f.length, E, x]), null == x || null == E) return (0, i.jsx)(h.$jN, {});
@@ -466,7 +466,7 @@ function et(e) {
             reactionType: n ? T.O.BURST : T.O.NORMAL,
             emoji: e.emoji,
             count: n ? e.burst_count : e.count,
-            colors: null != e.burst_colors ? (0, O.Z)(e.burst_colors, I, N) : void 0
+            colors: null != e.burst_colors ? (0, O.Z)(e.burst_colors, I, P) : void 0
           }, "".concat(n ? "burst-" : "normal-").concat(null != (t = e.emoji.id) ? t : "", ":").concat(e.emoji.name))
         })
       }), (0, i.jsx)(ee, {

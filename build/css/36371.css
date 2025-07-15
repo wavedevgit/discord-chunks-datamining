@@ -1,6 +1,6 @@
 /**
   Module ID: 36371
-  Original File Name: 4b14bb5889204ddf
+  Original File Name: f2d2deb0edf559af
 **/
 .marker__9d896 {
     margin-left: 4px
@@ -29,17 +29,6 @@
     display: flex;
     justify-content: space-between;
     width: 100%
-}
-
-.removeButton_e45886 {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content
-}
-
-.rightButtons_e45886 {
-    align-items: center;
-    display: flex
 }
 
 .separator_e45886 {
@@ -136,4 +125,4 @@
     top: 0
 }
 
-/*# sourceMappingURL=4b14bb5889204ddf.css.map*/
+/*# sourceMappingURL=f2d2deb0edf559af.css.map*/

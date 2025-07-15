@@ -37,8 +37,8 @@ let O = e => {
     } = (0, h.YG)(v, E),
     P = l.useRef(null),
     L = x === a.T.NAMEPLATES_V3,
-    k = L ? "NAMEPLATES VOL.3" : null,
-    I = null == E ? void 0 : E.bodyText,
+    I = L ? "NAMEPLATES VOL.3" : null,
+    k = null == E ? void 0 : E.bodyText,
     B = (0, p.sp)();
   return (0, n.jsx)(s.$, {
     innerRef: P,
@@ -68,7 +68,7 @@ let O = e => {
         className: _.featuredBlockBadge
       }), (0, n.jsxs)("div", {
         className: _.featuredBlockTextContainer,
-        children: [null != k && (0, n.jsx)(u.X6q, {
+        children: [null != I && (0, n.jsx)(u.X6q, {
           lineClamp: 2,
           className: i()(_.featuredBlockTitleText, {
             [_.featuredBlockTitleTextNameplate]: L
@@ -77,15 +77,15 @@ let O = e => {
             color: null != (o = null == E ? void 0 : E.bannerTextColor) ? o : "white"
           },
           variant: "heading-xl/semibold",
-          children: k
-        }), null != I && (0, n.jsx)(u.X6q, {
-          lineClamp: null != k ? 2 : 4,
+          children: I
+        }), null != k && (0, n.jsx)(u.X6q, {
+          lineClamp: null != I ? 2 : 4,
           className: _.featuredBlockBodyText,
           style: {
             color: null != (O = null == E ? void 0 : E.bannerTextColor) ? O : "white"
           },
           variant: "heading-md/medium",
-          children: I
+          children: k
         })]
       }), (0, n.jsx)(c.zx, {
         className: _.featuredBlockButton,

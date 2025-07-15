@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 r.d(t, {
-  Z: () => k
+  Z: () => I
 }), r(388685);
 var n = r(255367),
   l = r(73800),
@@ -31,19 +31,19 @@ var n = r(255367),
   P = r(266058),
   L = r(719138);
 
-function k(e) {
+function I(e) {
   var t;
   let {
     isFetchingCategories: r,
-    isFullScreen: k,
-    scrollerRef: I,
+    isFullScreen: I,
+    scrollerRef: k,
     tab: B
   } = e, N = (0, d.sp)(), A = null != (t = null == N ? void 0 : N.sessionId) ? t : "", {
     noCache: w,
     includeUnpublished: R
   } = (0, _.Z)(), Z = (0, i.e7)([u.default], () => u.default.getCurrentUser()), D = (0, i.e7)([p.Z], () => p.Z.productsWithVariantsAsGroup), [F, M] = l.useState(1), H = () => {
     var e;
-    null == I || null == (e = I.current) || e.scrollToTop({
+    null == k || null == (e = k.current) || e.scrollToTop({
       animate: !0
     })
   }, W = (0, c.Fg)(), V = (0, a.ap)(W), [U, z, G] = l.useMemo(() => {
@@ -66,7 +66,7 @@ function k(e) {
       sessionId: A,
       checkpoint: h.a.SHOP_MOUNTED,
       tab: B,
-      isFullScreen: k,
+      isFullScreen: I,
       unpublishedCategoriesShown: R,
       cacheDisabled: w
     })
@@ -75,11 +75,11 @@ function k(e) {
       sessionId: A,
       checkpoint: h.a.SHOP_RENDERED,
       tab: B,
-      isFullScreen: k,
+      isFullScreen: I,
       unpublishedCategoriesShown: R,
       cacheDisabled: w
     })
-  }, [A, k, R, w, r, B]), r || null == Z) ? (0, n.jsx)(b.Z, {}) : (0, n.jsxs)(n.Fragment, {
+  }, [A, I, R, w, r, B]), r || null == Z) ? (0, n.jsx)(b.Z, {}) : (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsx)("div", {
       style: {
         backgroundImage: "url(".concat(z, ")")

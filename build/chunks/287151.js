@@ -29,8 +29,8 @@ var i, r = n(255367),
   E = n(56314),
   R = n(231053),
   I = n(944386),
-  P = n(305325),
-  N = n(33154),
+  N = n(305325),
+  P = n(33154),
   C = n(692147),
   w = n(767714),
   Z = n(659215),
@@ -152,8 +152,8 @@ class ed extends(i = l.PureComponent) {
       {
         shouldShowTooltip: R,
         tooltipTextAria: I,
-        reactionRef: P,
-        tooltipPositionKey: N
+        reactionRef: N,
+        tooltipPositionKey: P
       } = this.state,
       w = y ? ei : en,
       Z = {
@@ -172,12 +172,12 @@ class ed extends(i = l.PureComponent) {
       } = l, o = null != (_ = (0, h.wK)(null != i ? i : "", r)) ? _ : "";
       this.isMe() && (Z.borderColor = i), Z.background = o, e = n, t = n
     }
-    let L = null == P ? void 0 : P.getBoundingClientRect(),
+    let L = null == N ? void 0 : N.getBoundingClientRect(),
       k = null != S && null != L,
       D = null == S;
     return (0, r.jsx)(f.yRy, {
       targetElementRef: {
-        current: P
+        current: N
       },
       shouldShow: R,
       "aria-label": null != I && I,
@@ -185,7 +185,7 @@ class ed extends(i = l.PureComponent) {
       nudgeAlignIntoViewport: !0,
       position: "top",
       align: "center",
-      positionKey: N,
+      positionKey: P,
       children: () => (0, r.jsx)("div", {
         onMouseEnter: this.handleEnter,
         onMouseLeave: this.handleLeave,
@@ -247,7 +247,7 @@ class ed extends(i = l.PureComponent) {
                 digitWidth: es
               }), (0, r.jsx)(C.Z, {
                 count: A,
-                reactionRef: P
+                reactionRef: N
               })]
             }))
           })
@@ -358,9 +358,9 @@ class ed extends(i = l.PureComponent) {
         message: n,
         isLurking: i
       } = this.props, l = L.Z.getChannel(n.getChannelId()), o = k.Z.getGuild(null == l ? void 0 : l.getGuildId());
-      return i && null != o ? (0, r.jsx)(N.Z, {
+      return i && null != o ? (0, r.jsx)(P.Z, {
         ctaRef: this.ctaRef,
-        type: N.s.REACTIONS,
+        type: P.s.REACTIONS,
         guild: o,
         closePopout: t
       }) : (0, r.jsx)(r.Fragment, {})
@@ -488,7 +488,7 @@ class ed extends(i = l.PureComponent) {
       if (!t) return null;
       let n = L.Z.getChannel(e.getChannelId()),
         i = k.Z.getGuild(null == n ? void 0 : n.getGuildId());
-      null != i && (0, P.hk)(i.id)
+      null != i && (0, N.hk)(i.id)
     }), el(this, "handleSetReactionRef", e => {
       this.setState({
         reactionRef: e
@@ -594,12 +594,12 @@ let eh = l.memo(e => {
       return {
         joinedEmojiSourceGuild: (null == e ? void 0 : e.type) === S.B.GUILD ? k.Z.getGuild(null == e ? void 0 : e.guildId) : void 0
       }
-    }), [u, d] = l.useState(void 0), [h, m] = l.useState(void 0), [g, b] = l.useState(null), [j, O] = l.useState(!1), [y, v] = l.useState(!1), [T, E] = l.useState(!1), I = null != c, P = null != (t = null == u ? void 0 : u.isDiscoverable()) && t, N = U.Z.getGuildId(), C = null != N && (N === (null == u ? void 0 : u.id) || N === (null == c ? void 0 : c.id)), w = V.default.getCurrentUser(), Z = (0, z.a)({
+    }), [u, d] = l.useState(void 0), [h, m] = l.useState(void 0), [g, b] = l.useState(null), [j, O] = l.useState(!1), [y, v] = l.useState(!1), [T, E] = l.useState(!1), I = null != c, N = null != (t = null == u ? void 0 : u.isDiscoverable()) && t, P = U.Z.getGuildId(), C = null != P && (P === (null == u ? void 0 : u.id) || P === (null == c ? void 0 : c.id)), w = V.default.getCurrentUser(), Z = (0, z.a)({
       sourceType: g,
       expressionSourceApplication: null != h ? h : null,
       isPremium: H.ZP.isPremium(w),
       hasJoinedEmojiSourceGuild: I,
-      isDiscoverable: P,
+      isDiscoverable: N,
       emojiComesFromCurrentGuild: C,
       isUnusableRoleSubscriptionEmoji: !1,
       userIsRoleSubscriber: !1,
@@ -659,7 +659,7 @@ let eh = l.memo(e => {
         hasJoinedExpressionSourceGuild: I,
         onClose: o,
         popoutData: Z,
-        currentGuildId: N,
+        currentGuildId: P,
         nonce: s
       })]
     })

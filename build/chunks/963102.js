@@ -30,9 +30,9 @@ var n = r(255367),
   T = r(215023),
   P = r(981631),
   L = r(388032),
-  k = r(774457);
+  I = r(774457);
 
-function I(e) {
+function k(e) {
   let {
     tab: t,
     displayText: r,
@@ -41,9 +41,9 @@ function I(e) {
   } = e;
   return (0, n.jsx)(h.Z.Title, {
     onClick: () => o(t),
-    wrapperClassName: k.tabWrapper,
-    className: i()(k.tab, {
-      [k.selected]: l
+    wrapperClassName: I.tabWrapper,
+    className: i()(I.tab, {
+      [I.selected]: l
     }),
     children: r
   })
@@ -63,7 +63,7 @@ function B(e) {
     ("Enter" === e.key || " " === e.key) && (e.preventDefault(), _(!0))
   };
   return (0, n.jsx)("div", {
-    className: k.tabWithMenuContainer,
+    className: I.tabWithMenuContainer,
     onMouseEnter: () => _(!0),
     onMouseLeave: () => _(!1),
     children: (0, n.jsx)(c.yRy, {
@@ -111,12 +111,12 @@ function B(e) {
           ref: d,
           onClick: () => a(t),
           onKeyDown: O,
-          wrapperClassName: k.tabWrapper,
-          className: i()(k.tab, {
-            [k.selected]: r
+          wrapperClassName: I.tabWrapper,
+          className: i()(I.tab, {
+            [I.selected]: r
           }),
           children: (0, n.jsxs)("span", {
-            className: k.tabWithChevron,
+            className: I.tabWithChevron,
             children: [o, p ? (0, n.jsx)(c.u04, {
               size: "sm",
               color: "currentColor"
@@ -178,22 +178,22 @@ function N(e) {
     theme: x,
     children: e => (0, n.jsxs)(h.Z, {
       disableDoubleClick: !0,
-      className: i()(e, k.headerBar, {
-        [k.fullscreenHeaderBar]: t
+      className: i()(e, I.headerBar, {
+        [I.fullscreenHeaderBar]: t
       }),
-      innerClassname: w ? k.headerBarInner : void 0,
+      innerClassname: w ? I.headerBarInner : void 0,
       toolbar: t || !A ? null : (0, n.jsx)(l.Fragment, {}),
       children: [(0, n.jsxs)(c.P3F, {
-        className: k.shopHomeLink,
+        className: I.shopHomeLink,
         onClick: () => g(T.AW.HOME),
         "aria-label": L.intl.string(L.t.pWG4zc) + " home",
         children: [(0, n.jsx)(v.Z, {
-          className: k.discordLogo
+          className: I.discordLogo
         }), (0, n.jsx)(h.Z.Title, {
           children: L.intl.string(L.t.pWG4zc)
         })]
       }), (0, n.jsx)("div", {
-        className: k.tabs,
+        className: I.tabs,
         children: Z.map(e => {
           let {
             tab: t,
@@ -204,7 +204,7 @@ function N(e) {
             selected: (0, T.RE)(f) || f === t,
             displayText: r,
             handleTransition: g
-          }, t) : (0, n.jsx)(I, {
+          }, t) : (0, n.jsx)(k, {
             tab: t,
             displayText: r,
             selected: f === t,
@@ -212,7 +212,7 @@ function N(e) {
           }, t)
         })
       }), (w || t || H) && (0, n.jsxs)("div", {
-        className: k.alignedRightContent,
+        className: I.alignedRightContent,
         children: [H && (0, n.jsx)(j.Z, {
           handleTransition: g,
           selectedTab: f
@@ -222,7 +222,7 @@ function N(e) {
           cardAlignment: O.V9.CardAlignment.END,
           ctaText: L.intl.string(L.t.VC4Mq6),
           ctaOnClick: M,
-          className: k.balanceWidgetMenu
+          className: I.balanceWidgetMenu
         }), t && (0, n.jsx)(d.Z, {
           closeAction: D,
           keybind: "ESC"

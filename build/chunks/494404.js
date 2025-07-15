@@ -1,6 +1,6 @@
 /** Chunk was on 95336 **/
 r.d(t, {
-  ZP: () => L,
+  ZP: () => M,
   h4: () => N,
   nH: () => k
 }), r(388685), r(539854);
@@ -189,20 +189,20 @@ function A(e) {
       E.S.unsubscribe(C.CkL.SCROLL_PAGE_DOWN, t), E.S.unsubscribe(C.CkL.SCROLL_PAGE_UP, e)
     }
   }, []);
-  let L = s.useCallback(() => {
+  let M = s.useCallback(() => {
       var e;
       let t = null == (e = k.current) ? void 0 : e.getScrollerState();
       null != t && t.scrollHeight - t.scrollTop - t.offsetHeight < 250 && l && !o && (null == p || p())
     }, [l, p, o]),
-    M = [],
-    F = !0;
-  null == r || o && 0 === r.length ? M = [(0, n.jsx)("div", {
+    F = [],
+    L = !0;
+  null == r || o && 0 === r.length ? F = [(0, n.jsx)("div", {
     className: a()(R.emptyPlaceholder, R.loadingPlaceholder),
     children: (0, n.jsx)(h.$jN, {})
-  }, "spinner")] : 0 === r.length ? M.push((0, n.jsx)(s.Fragment, {
+  }, "spinner")] : 0 === r.length ? F.push((0, n.jsx)(s.Fragment, {
     children: b()
-  }, "empty-state")) : (F = !1, M = [], i().each(r, e => {
-    M.push(...y(e))
+  }, "empty-state")) : (L = !1, F = [], i().each(r, e => {
+    F.push(...y(e))
   }));
   let D = null;
   null != r && r.length > 0 && null != p && (D = o ? (0, n.jsx)("div", {
@@ -222,7 +222,7 @@ function A(e) {
     children: b()
   }));
   let H = null == S ? void 0 : S(),
-    B = F && null != H ? (0, n.jsx)("div", {
+    B = L && null != H ? (0, n.jsx)("div", {
       className: R.footer,
       children: (0, n.jsx)(g.Z, {
         style: {
@@ -248,7 +248,7 @@ function A(e) {
       component: m(),
       children: [(0, n.jsxs)(h.Den, {
         className: a()(R.messagesPopout, x),
-        onScroll: G ? L : void 0,
+        onScroll: G ? M : void 0,
         ref: k,
         children: [(0, n.jsx)(c.bG, {
           navigator: w,
@@ -286,7 +286,7 @@ function A(e) {
               }({
                 ref: s
               }, l), r = r = {
-                children: M
+                children: F
               }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
                 var r = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
@@ -305,7 +305,7 @@ function A(e) {
   })
 }
 
-function L(e) {
+function M(e) {
   let {
     analyticsName: t,
     onFetch: r,

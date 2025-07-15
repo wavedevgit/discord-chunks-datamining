@@ -27,25 +27,29 @@ function O() {
     reset: r,
     hasFilters: l
   } = (0, g.S)(), o = l(), {
-    enabled: i
+    enabled: a
   } = (0, f.WX)({
     location: "Shop"
   });
   return (0, n.jsxs)("div", {
     className: _.filterBar,
     children: [(0, n.jsxs)("div", {
-      className: _.filterCheckboxes,
+      className: i()(_.filterSection, _.itemType),
       children: [(0, n.jsx)(d.Text, {
         variant: "text-md/semibold",
+        className: _.filterTitle,
         children: m.intl.string(m.t.Qk6r1d)
       }), h.xg.map(e => (0, n.jsx)(C, {
         filter: e
-      }, e)), i && (0, n.jsx)(v, {
-        onChange: () => e(),
-        text: m.intl.string(m.t.AHHHgI),
-        value: t
+      }, e)), a && (0, n.jsx)(d.XZJ, {
+        value: t,
+        onChange: e,
+        children: (0, n.jsx)(d.Text, {
+          variant: "text-md/normal",
+          children: m.intl.string(m.t.AHHHgI)
+        })
       })]
-    }), (0, n.jsx)(E, {}), (0, n.jsx)(x, {}), o && (0, n.jsx)(u.zx, {
+    }), (0, n.jsx)(v, {}), (0, n.jsx)(y, {}), o && (0, n.jsx)(u.zx, {
       color: u.Tt.PRIMARY,
       className: _.resetButton,
       onClick: r,
@@ -66,35 +70,16 @@ let C = e => {
       itemTypeFilters: o,
       onToggleItemType: i
     } = (0, g.S)();
-    return (0, n.jsx)("div", {
-      children: (0, n.jsx)(v, {
-        onChange: () => i(r),
-        text: null != (t = l[r]) ? t : "",
-        value: o.has(r)
+    return (0, n.jsx)(d.XZJ, {
+      value: o.has(r),
+      onChange: () => i(r),
+      children: (0, n.jsx)(d.Text, {
+        variant: "text-md/normal",
+        children: null != (t = l[r]) ? t : ""
       })
     })
   },
-  v = e => {
-    let {
-      onChange: t,
-      text: r,
-      value: l
-    } = e;
-    return (0, n.jsxs)(d.P3F, {
-      className: _.filterCheckbox,
-      onClick: t,
-      children: [(0, n.jsx)("div", {
-        className: _.checkbox,
-        children: (0, n.jsx)(d.XZJ, {
-          value: l
-        })
-      }), (0, n.jsx)(d.Text, {
-        variant: "text-md/normal",
-        children: r
-      })]
-    })
-  },
-  E = () => {
+  v = () => {
     let e = l.useMemo(() => [{
         color: "#9B59B6",
         label: m.intl.string(m.t.kqUD4O),
@@ -138,18 +123,19 @@ let C = e => {
         enum: a.x.BLACK
       }], []);
     return (0, n.jsxs)("div", {
-      className: _.colorSwatches,
+      className: _.filterSection,
       children: [(0, n.jsx)(d.Text, {
         variant: "text-md/semibold",
+        className: _.filterTitle,
         children: m.intl.string(m.t.K1xGoK)
-      }), (0, n.jsx)(S, {
+      }), (0, n.jsx)(E, {
         colors: e
-      }), (0, n.jsx)(S, {
+      }), (0, n.jsx)(E, {
         colors: t
       })]
     })
   },
-  S = e => {
+  E = e => {
     let {
       colors: t
     } = e, {
@@ -164,7 +150,7 @@ let C = e => {
           label: o,
           enum: i
         } = e;
-        return (0, n.jsx)(y, {
+        return (0, n.jsx)(S, {
           color: t,
           label: o,
           enum: i,
@@ -174,7 +160,7 @@ let C = e => {
       })
     })
   },
-  y = e => {
+  S = e => {
     let {
       color: t,
       label: r,
@@ -215,7 +201,7 @@ let C = e => {
       }
     }, r)
   },
-  x = () => {
+  y = () => {
     let {
       themeFilters: e,
       onToggleTheme: t
@@ -293,9 +279,10 @@ let C = e => {
       enum: c.h.DARK_MOODY
     }], [a]);
     return (0, n.jsxs)("div", {
-      className: _.themesSection,
+      className: _.filterSection,
       children: [(0, n.jsx)(d.Text, {
         variant: "text-md/semibold",
+        className: _.filterTitle,
         children: m.intl.string(m.t.t1Ztrq)
       }), (0, n.jsx)("div", {
         className: _.themeRow,

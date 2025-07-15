@@ -35,8 +35,8 @@ let P = e => {
     sortedSkuIds: o,
     handleTransition: P,
     numVisibleItems: L,
-    tab: k
-  } = e, I = (0, a.e7)([d.default], () => d.default.getCurrentUser()), B = h.ZP.canUseCollectibles(I), N = (0, _.s)("useShopHomeSorting") && k === y.AW.HOME, {
+    tab: I
+  } = e, k = (0, a.e7)([d.default], () => d.default.getCurrentUser()), B = h.ZP.canUseCollectibles(k), N = (0, _.s)("useShopHomeSorting") && I === y.AW.HOME, {
     sortType: A,
     setSortType: w,
     sortedItems: R,
@@ -55,7 +55,7 @@ let P = e => {
       sort_type: e
     })
   }, [z, w, q]);
-  return null == I ? null : (0, n.jsxs)("div", {
+  return null == k ? null : (0, n.jsxs)("div", {
     className: i()(T.popularPicksSection, T.centeredSection),
     children: [(0, n.jsxs)("div", {
       className: T.blockHeader,
@@ -63,7 +63,7 @@ let P = e => {
         className: T.headerLeft,
         children: [(0, n.jsx)(s.X6q, {
           variant: "heading-lg/semibold",
-          children: k === y.AW.ORBS ? j.intl.string(j.t.dFgeub) : j.intl.string(j.t.NSv5KS)
+          children: I === y.AW.ORBS ? j.intl.string(j.t.dFgeub) : j.intl.string(j.t.NSv5KS)
         }), F && (0, n.jsx)(s.ua7, {
           text: j.intl.string(j.t["3taPdn"]),
           position: "top",
@@ -118,7 +118,7 @@ let P = e => {
             isSelected: e => e === A,
             serialize: e => e
           })]
-        }), k === y.AW.HOME && (N ? (0, n.jsx)(s.zxk, {
+        }), I === y.AW.HOME && (N ? (0, n.jsx)(s.zxk, {
           variant: "secondary",
           text: j.intl.string(j.t.X3tnc3),
           buttonRef: Y,
@@ -159,8 +159,8 @@ let P = e => {
           children: (0, n.jsx)(v.Z, {
             product: e,
             category: l,
-            user: I,
-            tab: k,
+            user: k,
+            tab: I,
             className: r
           })
         }, null == e ? void 0 : e.skuId)

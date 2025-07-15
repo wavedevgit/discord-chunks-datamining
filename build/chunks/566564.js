@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 r.d(t, {
-  Z: () => k
+  Z: () => I
 }), r(388685);
 var n = r(255367),
   l = r(73800),
@@ -53,8 +53,8 @@ let L = e => {
     }, [c]);
     let {
       isFetchingShopHome: L,
-      fetchShopHomeError: k,
-      shopBlocks: I,
+      fetchShopHomeError: I,
+      shopBlocks: k,
       refreshShopHome: B
     } = (0, f.E)(c, {
       noCache: p,
@@ -69,7 +69,7 @@ let L = e => {
       B()
     }, [B]);
     if (l.useEffect(() => {
-        null != k || L || 0 === I.length || (0, g.n)({
+        null != I || L || 0 === k.length || (0, g.n)({
           sessionId: T,
           checkpoint: g.a.SHOP_RENDERED,
           tab: c,
@@ -77,12 +77,12 @@ let L = e => {
           unpublishedCategoriesShown: m,
           cacheDisabled: p
         })
-      }, [k, L, I.length, m, p, T, c, u]), null != k) return (0, n.jsx)(h.Z, {
+      }, [I, L, k.length, m, p, T, c, u]), null != I) return (0, n.jsx)(h.Z, {
       onRetry: N,
       errorOrigin: h.i.SHOP_PAGE,
-      errorMessage: k.message
+      errorMessage: I.message
     });
-    if (L || 0 === I.length) return (0, n.jsxs)("div", {
+    if (L || 0 === k.length) return (0, n.jsxs)("div", {
       className: P.loadingContainer,
       children: [(0, n.jsx)(v.Z, {
         isLoading: L,
@@ -161,10 +161,10 @@ let L = e => {
       }, t)
     };
     return (0, n.jsx)(n.Fragment, {
-      children: I.map((e, t) => A(e, t))
+      children: k.map((e, t) => A(e, t))
     })
   },
-  k = e => {
+  I = e => {
     let {
       isFullScreen: t,
       scrollerRef: r,

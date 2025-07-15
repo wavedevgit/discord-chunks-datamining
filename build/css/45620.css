@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: a087d709c50b34c7
+  Original File Name: 30aa96ab8e625f62
 **/
 .shopWrapper__6db1d {
     background: var(--background-base-low);
@@ -1025,52 +1025,31 @@
     width: fit-content
 }
 
-.filterBar__11877,.filterCheckboxes__11877 {
+.filterBar__11877,.filterSection__11877 {
     display: flex;
     flex-direction: column
 }
 
-.filterCheckboxes__11877 {
-    gap: 4px
-}
-
-.checkbox__11877 {
-    width: 24px
-}
-
-.filterCheckbox__11877 {
-    align-items: center;
-    cursor: pointer;
-    display: flex;
-    gap: 8px;
-    height: 24px;
-    justify-content: flex-start;
-    padding: 8px 0
-}
-
-.colorSwatches__11877 {
-    display: flex;
-    flex-direction: column;
+.filterSection__11877 {
     gap: 8px
 }
 
-.colorSwatchRow__11877 {
+.filterSection__11877.itemType__11877 {
+    gap: 16px
+}
+
+.filterTitle__11877 {
+    margin-bottom: 2px
+}
+
+.colorSwatchRow__11877,.themeRow__11877 {
     display: flex;
     flex-direction: row;
-    gap: 8px
-}
-
-.themesSection__11877 {
-    display: flex;
-    flex-direction: column;
     gap: 8px
 }
 
 .themeRow__11877 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 8px
+    flex-wrap: wrap
 }
 
 .theme__11877 {
@@ -1972,4 +1951,4 @@
     cursor: pointer
 }
 
-/*# sourceMappingURL=a087d709c50b34c7.css.map*/
+/*# sourceMappingURL=30aa96ab8e625f62.css.map*/

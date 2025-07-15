@@ -41,24 +41,24 @@ function E(e) {
       setCategoryRef: P,
       handleScrollToCategory: L
     } = (0, h.xV)(s.current),
-    k = l.useCallback(async (e, t, n) => {
+    I = l.useCallback(async (e, t, n) => {
       m(e, t);
       let l = n && !r && !T,
         i = t === o.T.ORB ? C.AW.ORBS : C.AW.CATALOG;
       await u(i, l), null != t && L(t)
     }, [r, T, u, L, m]),
-    I = (0, p.F)("CollectiblesContent"),
+    k = (0, p.F)("CollectiblesContent"),
     {
       searchError: B
     } = (0, f.a)();
-  return I && null != B ? (0, n.jsx)(O.Z, {}) : null != j ? (0, n.jsx)(b.Z, {
+  return k && null != B ? (0, n.jsx)(O.Z, {}) : null != j ? (0, n.jsx)(b.Z, {
     onRetry: E,
     errorMessage: j,
     errorOrigin: b.i.SHOP_PAGE
   }) : v.includes(t) ? (0, n.jsx)(_.Z, {
     isFullScreen: r,
     scrollerRef: s,
-    handleTransition: k,
+    handleTransition: I,
     tab: t,
     transitionState: d
   }) : (0, n.jsx)(g.Z, {
