@@ -14,13 +14,13 @@ let o = (0, r.B)({
       enableResumableUploads: !1
     },
     treatments: [{
-      id: 1,
+      id: 0,
       label: "Control",
       config: {
         enableResumableUploads: !1
       }
     }, {
-      id: 2,
+      id: 1,
       label: "Resumable Uploads Enabled",
       config: {
         enableResumableUploads: !0
@@ -34,10 +34,10 @@ let o = (0, r.B)({
       enableResumableUploads: !1
     },
     variations: {
-      1: {
+      0: {
         enableResumableUploads: !1
       },
-      2: {
+      1: {
         enableResumableUploads: !0
       }
     }
