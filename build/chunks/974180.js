@@ -182,7 +182,7 @@ async function tm(t) {
         var l, a;
         if (null == th[e] ? th[e] = {
             [t]: i
-          } : null == th[e][t] && (th[e][t] = i), !n) return;
+          } : null == th[e][t] && (th[e][t] = i), !n || tO()) return;
         let r = null != (a = null == (l = tC[e]) ? void 0 : l[t]) ? a : 0;
         if (Date.now() - r < ti.Z.Millis.HOUR) return;
         let o = N.Z.getApplication(t);

@@ -1,6 +1,6 @@
 /**
   Module ID: 62059
-  Original File Name: eee3c7ba20497f19
+  Original File Name: 2e1c773f15a8e57c
 **/
 .wrapper__74bfa {
     align-items: center;
@@ -7364,9 +7364,11 @@ html .progress__61462 {
 
 .footer__4a98c {
     background-color: unset;
-    margin-top: 32px;
+    flex-direction: column;
+    margin-top: var(--space-32);
     padding: var(--space-8);
-    text-align: center
+    text-align: center;
+    width: 100%
 }
 
 .footer__4a98c a {
@@ -7453,13 +7455,14 @@ html .progress__61462 {
 }
 
 .icon__4a98c {
-    background-color: var(--icon-primary);
+    background-color: var(--icon-secondary);
     background-repeat: no-repeat;
     background-size: contain;
     height: 100%;
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
     position: absolute;
+    top: 0;
     transition: background-color .2s ease;
     width: 100%
 }
@@ -7469,61 +7472,37 @@ html .progress__61462 {
 }
 
 .icon__4a98c.active__4a98c {
-    background-color: var(--bg-brand);
+    background-color: var(--text-brand);
     opacity: 0
 }
 
 .icon__4a98c.apple__4a98c {
-    background-image: url(/assets/3bacc5415aa9a561.svg);
     -webkit-mask-image: url(/assets/3bacc5415aa9a561.svg);
-    mask-image: url(/assets/3bacc5415aa9a561.svg)
-}
-
-.icon__4a98c.apple__4a98c.active__4a98c {
-    background-image: url(/assets/77783177cefd67fe.svg)
+    mask-image: url(/assets/3bacc5415aa9a561.svg);
+    -webkit-mask-position: center;
+    mask-position: center
 }
 
 .icon__4a98c.android__4a98c {
-    background-image: url(/assets/8d4fb350d405ae2d.svg);
-    background-position: bottom;
     -webkit-mask-image: url(/assets/8d4fb350d405ae2d.svg);
     mask-image: url(/assets/8d4fb350d405ae2d.svg);
     -webkit-mask-position: bottom;
     mask-position: bottom
 }
 
-.icon__4a98c.android__4a98c.active__4a98c {
-    background-image: url(/assets/c522a59d9f951f59.svg)
-}
-
 .icon__4a98c.windows__4a98c {
-    background-image: url(/assets/f80d470870ccfd01.svg);
     -webkit-mask-image: url(/assets/f80d470870ccfd01.svg);
     mask-image: url(/assets/f80d470870ccfd01.svg)
 }
 
-.icon__4a98c.windows__4a98c.active__4a98c {
-    background-image: url(/assets/3ab3b2480e6de1f1.svg)
-}
-
 .icon__4a98c.linux__4a98c {
-    background-image: url(/assets/64dcefc70846922d.svg);
     -webkit-mask-image: url(/assets/64dcefc70846922d.svg);
     mask-image: url(/assets/64dcefc70846922d.svg)
 }
 
-.icon__4a98c.linux__4a98c.active__4a98c {
-    background-image: url(/assets/ab3278fc56c3e4c1.svg)
-}
-
 .icon__4a98c.ios__4a98c {
-    background-image: url(/assets/81672d3df281d7de.svg);
     -webkit-mask-image: url(/assets/81672d3df281d7de.svg);
     mask-image: url(/assets/81672d3df281d7de.svg)
-}
-
-.icon__4a98c.ios__4a98c.active__4a98c {
-    background-image: url(/assets/9c404f814fcf2d63.svg)
 }
 
 .downloadButtons__4a98c {
@@ -10358,4 +10337,4 @@ html .progress__61462 {
     background-image: url(/assets/abbc14555963e723.svg)
 }
 
-/*# sourceMappingURL=eee3c7ba20497f19.css.map*/
+/*# sourceMappingURL=2e1c773f15a8e57c.css.map*/
