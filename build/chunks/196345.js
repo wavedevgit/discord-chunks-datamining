@@ -1,6 +1,6 @@
 /** Chunk was on 77025 **/
 n.d(t, {
-  EK: () => u,
+  EK: () => d,
   G0: () => m,
   QC: () => f,
   dd: () => h
@@ -13,25 +13,25 @@ var i = n(120356),
   s = n(454585),
   a = n(489813),
   c = n(388032),
-  d = n(667084);
+  u = n(667084);
 
-function u(e) {
+function d(e) {
   let {
     terms: t,
     channelId: n,
     className: i
   } = e;
   return (0, r.jsx)("div", {
-    className: l()(d.termsFieldBody, i),
+    className: l()(u.termsFieldBody, i),
     children: t.map((e, t) => (0, r.jsxs)("div", {
-      className: d.termsRow,
+      className: u.termsRow,
       children: [(0, r.jsx)(o.Text, {
         variant: "text-md/normal",
         color: "text-muted",
         children: "".concat(t + 1, ".")
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/normal",
-        className: d.termsRowContent,
+        className: u.termsRowContent,
         children: s.Z.parseGuildVerificationFormRule(e, !0, {
           channelId: n
         })
@@ -55,7 +55,7 @@ function m(e) {
     style: {
       borderWidth: 2
     },
-    className: d.checkbox,
+    className: u.checkbox,
     children: (0, r.jsx)(o.Text, {
       variant: "text-md/normal",
       children: c.intl.string(c.t["2EXfGB"])
@@ -81,8 +81,8 @@ let h = e => {
   } = e;
   return (0, r.jsxs)(a.hK, {
     title: c.intl.string(c.t.Q8OFNz),
-    children: [(0, r.jsx)(u, {
-      className: d.disabledFieldBackground,
+    children: [(0, r.jsx)(d, {
+      className: u.disabledFieldBackground,
       terms: n.values,
       channelId: t
     }), (0, r.jsx)(m, {

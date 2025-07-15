@@ -1,6 +1,6 @@
 /** Chunk was on 77025 **/
 n.d(t, {
-  BO: () => u,
+  BO: () => d,
   QH: () => m,
   sp: () => f
 });
@@ -11,32 +11,32 @@ var r = n(255367),
   s = n(481060),
   a = n(489813),
   c = n(707592),
-  d = n(667084);
+  u = n(667084);
 
-function u(e) {
+function d(e) {
   let {
     disabled: t,
     field: n,
     value: l,
     radioItemClassName: a,
     radioItemIconClassName: c,
-    onChange: u
+    onChange: d
   } = e, {
     choices: m
   } = n, f = i.useMemo(() => m.map((e, t) => ({
     name: e,
     value: t,
-    radioItemIconClassName: o()(d.multipleChoiceIcon, c),
-    radioBarClassName: d.multipleChoiceItem
+    radioItemIconClassName: o()(u.multipleChoiceIcon, c),
+    radioBarClassName: u.multipleChoiceItem
   })), [m, c]);
   return (0, r.jsx)(s.FXm, {
     radioPosition: "right",
     disabled: t,
     options: f,
     value: l,
-    onChange: u,
+    onChange: d,
     radioItemClassName: a,
-    itemTitleClassName: d.multipleChoiceTitle
+    itemTitleClassName: u.multipleChoiceTitle
   })
 }
 
@@ -47,7 +47,7 @@ function m(e) {
   return (0, r.jsx)(a.CA, {
     title: t.label,
     children: (0, r.jsx)(c.Gi, {
-      className: d.disabledFieldBackground,
+      className: u.disabledFieldBackground,
       value: n,
       disabled: !0
     })
@@ -61,7 +61,7 @@ function f(e) {
   } = e;
   return (0, r.jsx)(a.hK, {
     title: t.label,
-    children: (0, r.jsx)(u, {
+    children: (0, r.jsx)(d, {
       field: t,
       value: t.response,
       onChange: n

@@ -1,7 +1,7 @@
 /** Chunk was on 77025 **/
 n.d(t, {
   B: () => m,
-  b: () => u
+  b: () => d
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -11,8 +11,8 @@ var r = n(255367),
   a = n(388032),
   c = n(667084);
 
-function d() {
-  let [e, t] = i.useState(!1), [n, s] = i.useState(!1), [d, u] = i.useState(!1);
+function u() {
+  let [e, t] = i.useState(!1), [n, s] = i.useState(!1), [u, d] = i.useState(!1);
   i.useEffect(() => {
     let e;
     return n && (e = setTimeout(() => {
@@ -25,7 +25,7 @@ function d() {
     if (!e) {
       t(!0);
       try {
-        await o.Z.verifyResend(), s(!0), u(!0)
+        await o.Z.verifyResend(), s(!0), d(!0)
       } catch (e) {} finally {
         t(!1)
       }
@@ -39,13 +39,13 @@ function d() {
   }) : (0, r.jsx)(l.zxk, {
     variant: "primary",
     size: "sm",
-    text: d ? a.intl.string(a.t.WnX4Jy) : a.intl.string(a.t["13ofGh"]),
+    text: u ? a.intl.string(a.t.WnX4Jy) : a.intl.string(a.t["13ofGh"]),
     loading: e,
     onClick: m
   })
 }
 
-function u() {
+function d() {
   return (0, r.jsx)(s.PU, {
     className: c.editableRequirementContainer,
     icon: l._XJ,
@@ -74,6 +74,6 @@ function m(e) {
     text: n,
     footnote: a.intl.string(a.t["jMh+TU"]),
     meetsRequirement: t,
-    children: (0, r.jsx)(d, {})
+    children: (0, r.jsx)(u, {})
   })
 }

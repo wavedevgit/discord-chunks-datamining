@@ -1,6 +1,6 @@
 /** Chunk was on 77025 **/
 n.d(t, {
-  Q8: () => u,
+  Q8: () => d,
   jn: () => m,
   lX: () => f
 });
@@ -12,25 +12,25 @@ var i = n(120356),
   s = n(489813),
   a = n(592286),
   c = n(388032),
-  d = n(667084);
+  u = n(667084);
 
-function u(e) {
+function d(e) {
   let {
     value: t,
     placeholder: n,
     onChange: i,
     disabled: s,
     className: c,
-    autofocus: u
+    autofocus: d
   } = e;
   return (0, r.jsx)(o.Kx8, {
-    className: l()(d.paragraphFieldBody, c),
+    className: l()(u.paragraphFieldBody, c),
     maxLength: a.RS,
     value: null != t ? t : "",
     placeholder: null != n ? n : "",
     onChange: i,
     disabled: s,
-    autoFocus: u,
+    autoFocus: d,
     autosize: !0,
     showRemainingCharacterCount: !s
   })
@@ -42,8 +42,8 @@ function m(e) {
   } = e;
   return (0, r.jsx)(s.CA, {
     title: t.label,
-    children: (0, r.jsx)(u, {
-      className: d.disabledFieldBackground,
+    children: (0, r.jsx)(d, {
+      className: u.disabledFieldBackground,
       value: t.response,
       disabled: !0
     })
@@ -58,7 +58,7 @@ function f(e) {
   } = e;
   return (0, r.jsx)(s.hK, {
     title: t.label,
-    children: (0, r.jsx)(u, {
+    children: (0, r.jsx)(d, {
       value: t.response,
       onChange: i,
       autofocus: n,

@@ -1,24 +1,7 @@
 /**
   Module ID: 5945
-  Original File Name: 8e7db9789581733c
+  Original File Name: 1814c6ec63fbbbc7
 **/
-.modal__0651b {
-    max-height: 100%;
-    min-height: unset
-}
-
-.description__0651b {
-    margin-top: 8px
-}
-
-.body__0651b {
-    margin-top: 16px
-}
-
-.modalContent__0651b {
-    padding: 16px
-}
-
 .addItemContainer__0651b {
     cursor: pointer;
     display: flex;
@@ -104,4 +87,4 @@
     color: var(--interactive-normal)
 }
 
-/*# sourceMappingURL=8e7db9789581733c.css.map*/
+/*# sourceMappingURL=1814c6ec63fbbbc7.css.map*/

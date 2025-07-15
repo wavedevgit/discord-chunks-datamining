@@ -1,7 +1,7 @@
 /** Chunk was on 77025 **/
 n.d(t, {
-  l: () => d,
-  v: () => u
+  l: () => u,
+  v: () => d
 });
 var r = n(255367);
 n(73800);
@@ -12,7 +12,7 @@ var i = n(481060),
   a = n(388032),
   c = n(667084);
 
-function d() {
+function u() {
   return (0, r.jsx)(o.PU, {
     className: c.editableRequirementContainer,
     icon: i.AtH,
@@ -31,14 +31,14 @@ function d() {
   })
 }
 
-function u(e) {
+function d(e) {
   let {
     isUserVerified: t
-  } = e, d = t ? a.intl.string(a.t.WWzQtb) : a.intl.string(a.t.woMjLS);
+  } = e, u = t ? a.intl.string(a.t.WWzQtb) : a.intl.string(a.t.woMjLS);
   return (0, r.jsx)(o.PU, {
     className: c.editableRequirementContainer,
     icon: i.AtH,
-    text: d,
+    text: u,
     footnote: a.intl.string(a.t["jMh+TU"]),
     meetsRequirement: t,
     children: (0, r.jsx)(i.zxk, {
