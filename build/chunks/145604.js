@@ -130,8 +130,7 @@ class X extends i.PureComponent {
         was_moved: D.Z.getWasMoved()
       }, (0, u.oG)(h, d), (0, u.kO)(h, d, I)))
     }
-    let B = null != x && null != x.distributor && null != x.sku && null != e.runningGame && e.runningGame.distributor === x.distributor && x.sku === e.runningGame.sku;
-    if (e.runningGame !== x && null != x && !x.isLauncher && !B) {
+    if (e.runningGame !== x && null != x && !x.isLauncher) {
       let e = Z.Z.getGameByName(x.name),
         c = _.ZP.getOverrideForGame(x),
         u = w.Z.getGuildIds(),
