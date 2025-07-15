@@ -63,7 +63,7 @@ class O {
       maxAttachmentsCount: A
     })), Error("Too many attachments");
     e.target = d.e.GUILD_PRODUCT_ATTACHMENT;
-    let n = new s.n(e, this.guildId);
+    let n = new s.nH(e, this.guildId);
     n.upload(), n.on("error", A => {
       var r;
       A === v.evJ.ENTITY_TOO_LARGE && this.onFileSizeError();
@@ -113,7 +113,7 @@ class O {
       }
       return r
     }(e, ["priceTier", "createNewRole", "imageName"]);
-    if (this.uploads.some(e => e.status === s.m.ERROR)) throw Error("Cannot create product with failed attachments");
+    if (this.uploads.some(e => e.status === s.mw.ERROR)) throw Error("Cannot create product with failed attachments");
     "unlinkRole" in l && (t = l.unlinkRole);
     let o = this.uploads.filter(e => !this.existingAttachmentIds.has(e.id)),
       c = this.uploads.filter(e => this.existingAttachmentIds.has(e.id)).map(e => {
@@ -161,7 +161,7 @@ class O {
     null != r && (this.uploads = r.map(t => {
       var A;
       this.existingAttachmentIds.add(t.id);
-      let n = new s.n({
+      let n = new s.nH({
         id: t.id,
         platform: c.ow.WEB,
         file: {
@@ -170,7 +170,7 @@ class O {
           size: null != (A = t.size) ? A : 0
         }
       }, e);
-      return n.status = s.m.COMPLETED, n
+      return n.status = s.mw.COMPLETED, n
     }))
   }
 }

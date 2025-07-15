@@ -90,7 +90,7 @@ function S(e, t) {
 
 function A(e, t) {
   var n, r;
-  if ((0, h.B)(e)) return {
+  if ((0, h.Bh)(e)) return {
     isDismissed: !0,
     lastDismissedVersion: null
   };
@@ -104,7 +104,7 @@ function A(e, t) {
 
 function N(e, t) {
   var n, r;
-  if ((0, h.B)(e)) return {
+  if ((0, h.Bh)(e)) return {
     isDismissed: !0,
     lastDismissedAtMs: null
   };
@@ -129,7 +129,7 @@ function N(e, t) {
 
 function C(e, t, n) {
   var r, i, a, s;
-  if ((0, h.B)(e)) return !0;
+  if ((0, h.Bh)(e)) return !0;
   let c = null == (i = o.Z.settings.userContent) || null == (r = i.recurringDismissibleContentStates[e]) ? void 0 : r.lastDismissedObjectId,
     u = null == (s = o.Z.settings.userContent) || null == (a = s.recurringDismissibleContentStates[e]) ? void 0 : a.lastDismissedAtMs,
     d = null != u && "0" !== u ? Number.isNaN(Number(u)) ? void 0 : Number(u) : void 0,
@@ -145,7 +145,7 @@ function C(e, t, n) {
 }
 
 function R(e, t) {
-  if ((0, h.B)(e)) return !0;
+  if ((0, h.Bh)(e)) return !0;
   let n = o.Z.getGuildDismissedContentState(t);
   return null != n && null != n[e] && !0 === n[e].dismissed
 }

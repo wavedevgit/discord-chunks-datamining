@@ -60,7 +60,7 @@ let O = e => {
     })
   });
   a().forEach(t, e => {
-    let t = new c.n(e, n, r, o.length);
+    let t = new c.nH(e, n, r, o.length);
     t.upload(), o.push(t)
   }), b(n, i, o)
 };
@@ -108,7 +108,7 @@ function S(e) {
     id: n,
     file: r,
     draftType: i
-  } = e, a = [...g(t, i)].filter(e => e.id !== n), o = new c.n(r, t);
+  } = e, a = [...g(t, i)].filter(e => e.id !== n), o = new c.nH(r, t);
   o.upload(), a.push(o), b(t, i, a)
 }
 

@@ -115,7 +115,7 @@ function I(t, e, i) {
   } else {
     let i = Array.from(t).map((t, i) => {
       let n = null != d ? d[i] : {};
-      return new l.n(E({
+      return new l.nH(E({
         file: t,
         platform: a.ow.WEB,
         isThumbnail: m

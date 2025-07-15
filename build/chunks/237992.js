@@ -10,16 +10,16 @@ async function a(e) {
     n = arguments.length > 2 ? arguments[2] : void 0,
     a = e.map(e => new Promise((a, o) => {
       switch (e.status) {
-        case r.m.NOT_STARTED:
+        case r.mw.NOT_STARTED:
           e.upload();
           break;
-        case r.m.COMPLETED:
+        case r.mw.COMPLETED:
           a("complete");
           break;
-        case r.m.ERROR:
+        case r.mw.ERROR:
           t && e.error !== i.evJ.ENTITY_TOO_LARGE ? e.upload() : o(Error("File failed to upload"));
           break;
-        case r.m.CANCELED:
+        case r.mw.CANCELED:
           o(Error("Upload is canceled"))
       }
       e.on("complete", () => {
