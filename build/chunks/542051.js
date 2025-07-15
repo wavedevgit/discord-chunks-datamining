@@ -170,7 +170,7 @@ class b extends(r = l.PureComponent) {
           text: u.intl.formatToPlainString(u.t.LDpotL, {
             guildName: o
           })
-        }, d.channelName);
+        }, d.channelContainer, d.searchResultNameContainer);
       return (0, s.jsx)(i.P3F, f(p({}, m(e, -1, -1 === r)), {
         className: d.inChannelOptionContainer,
         onClick: l,

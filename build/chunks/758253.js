@@ -1,5 +1,4 @@
-/** Chunk was on 82265 **/
-"use strict";
+/** Chunk was on 76010 **/
 e.exports = {
   avatarUploader: "avatarUploader_e04502",
   avatarUploaderDisabled: "avatarUploaderDisabled_e04502",

@@ -173,7 +173,7 @@ function N(e) {
         fromContent: a.j.ORBS_BALANCE_MENU
       })
     }, [F, t, D]),
-    H = (0, S.F)("collectibles_shop_header_bar");
+    H = (0, S.eN)("collectibles_shop_header_bar");
   return (0, n.jsx)(c.f6W, {
     theme: x,
     children: e => (0, n.jsxs)(h.Z, {

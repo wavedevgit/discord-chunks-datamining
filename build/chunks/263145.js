@@ -1,17 +1,16 @@
-/** Chunk was on 82265 **/
-"use strict";
+/** Chunk was on 27063 **/
 n.d(t, {
-  Z: () => m
+  Z: () => h
 });
 var r = n(255367),
   i = n(73800),
-  l = n(120356),
-  s = n.n(l),
-  a = n(600164),
-  o = n(930223),
-  c = n(20493);
+  a = n(120356),
+  s = n.n(a),
+  l = n(600164),
+  d = n(930223),
+  o = n(20493);
 
-function d(e, t, n) {
+function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -27,58 +26,60 @@ class u extends i.PureComponent {
       value: t,
       placeholder: n,
       error: i,
-      className: l,
-      maxLength: d,
+      className: a,
+      maxLength: c,
       autoFocus: u,
-      prefix: m,
-      disabled: g
+      prefix: h,
+      disabled: f
     } = this.props;
-    return (0, r.jsxs)(a.Z, {
-      align: a.Z.Align.CENTER,
-      justify: a.Z.Justify.START,
-      className: s()(o.prefixInput, l, {
-        [o.focused]: e,
-        [o.error]: i
+    return (0, r.jsxs)(l.Z, {
+      align: l.Z.Align.CENTER,
+      justify: l.Z.Justify.START,
+      className: s()(d.prefixInput, a, {
+        [d.focused]: e,
+        [d.error]: i
       }),
       onClick: this.handleFocusInput,
-      children: [(0, r.jsx)(a.Z.Child, {
+      children: [(0, r.jsx)(l.Z.Child, {
         grow: 0,
-        className: o.prefixInputPrefix,
-        children: m
-      }), (0, r.jsx)(a.Z.Child, {
-        className: c.marginReset,
+        className: d.prefixInputPrefix,
+        children: (0, r.jsx)("span", {
+          children: h
+        })
+      }), (0, r.jsx)(l.Z.Child, {
+        className: o.marginReset,
         children: (0, r.jsx)("input", {
           ref: this.setInputRef,
-          className: o.prefixInputInput,
+          className: d.prefixInputInput,
           value: t,
           placeholder: n,
-          maxLength: d,
+          maxLength: c,
           onChange: this.handleChange,
           onFocus: this.handleFocus,
           onBlur: this.handleBlur,
           autoFocus: u,
-          disabled: g
+          disabled: f
         })
       })]
     })
   }
   constructor(e) {
-    super(e), d(this, "_inputRef", void 0), d(this, "setInputRef", e => {
+    super(e), c(this, "_inputRef", void 0), c(this, "setInputRef", e => {
       this._inputRef = e
-    }), d(this, "handleChange", e => {
+    }), c(this, "handleChange", e => {
       let {
         onChange: t
       } = this.props;
       t(e.currentTarget.value)
-    }), d(this, "handleFocus", () => {
+    }), c(this, "handleFocus", () => {
       this.setState({
         focused: !0
       })
-    }), d(this, "handleBlur", () => {
+    }), c(this, "handleBlur", () => {
       this.setState({
         focused: !1
       })
-    }), d(this, "handleFocusInput", () => {
+    }), c(this, "handleFocusInput", () => {
       null != this._inputRef && this._inputRef.focus()
     });
     let {
@@ -89,4 +90,4 @@ class u extends i.PureComponent {
     }
   }
 }
-let m = u
+let h = u

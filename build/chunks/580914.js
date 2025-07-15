@@ -125,7 +125,7 @@ let F = {
       heroBannerAnimated: er
     } = (0, B.hr)(K), en = null == J ? void 0 : J.heroBanner, el = null != (t = null == Q ? void 0 : Q.responsive) && t, ei = null == Q ? void 0 : Q.backgroundStyle, eo = l.useMemo(() => G(K.rankedSkuIds), [r, G, K.rankedSkuIds]), ea = (0, T.a)()(eo), es = (0, P.l)(ea).slice(0, 4), ec = (0, N.St)(es), eu = L === A.AW.ORBS ? R.intl.string(R.t["1CdL8f"]) : R.intl.formatToPlainString(R.t.wvKYCg, {
       category_name: K.name
-    }), ed = (0, x.F)("CollectiblesContent");
+    }), ed = (0, x.FF)("CollectiblesContent");
     return null != z && (r || K !== F) ? (0, n.jsxs)("div", {
       ref: U,
       className: o()(Z.heroBlock, {

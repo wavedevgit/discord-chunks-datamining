@@ -17,15 +17,16 @@ var r = n(704215),
   p = n(204283);
 
 function f() {
-  let [e, t] = (0, a.cv)([r.z.OVERLAY_KEYBIND_NOTIFICATION]), n = (0, c.Z)({
-    location: "Overlay",
-    options: {
-      autoTrackExposure: !1
-    }
-  });
+  let e = (0, c.Z)({
+      location: "Overlay",
+      options: {
+        autoTrackExposure: !1
+      }
+    }),
+    [t, n] = (0, a.cv)(e ? [r.z.OVERLAY_KEYBIND_NOTIFICATION] : []);
   return {
-    showKeybindIndicators: null != e && n,
-    dismissKeybindNotification: t
+    showKeybindIndicators: null != t && e,
+    dismissKeybindNotification: n
   }
 }
 

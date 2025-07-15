@@ -36,9 +36,9 @@ var r = n(399834),
   y = n(803068),
   S = n.n(y),
   x = n(561099),
-  O = n.n(x),
-  j = n(655e3),
-  v = n.n(j);
+  j = n.n(x),
+  O = n(655e3),
+  v = n.n(O);
 
 function _(e, t, n, s) {
   let l = s.getCurrentContent(),
@@ -74,7 +74,7 @@ function E(e, t, n, s) {
 function C(e, t) {
   switch (e) {
     case "delete":
-      return O()(t);
+      return j()(t);
     case "delete-word":
       return p()(t);
     case "backspace":

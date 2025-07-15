@@ -243,7 +243,7 @@ function B(e) {
   } = e, U = C.cC.useSetting(), B = (0, h.p)(), G = i.useCallback(e => {
     if (e === N.Z.getChannelId()) return;
     let t = O.Z.getChannel(e);
-    null != t && I.Z.can(R.Plq.VIEW_CHANNEL, t) && (0, x.Kh)(t.id)
+    null != t && (I.Z.can(R.Plq.VIEW_CHANNEL, t) || t.isPrivate()) && (0, x.Kh)(t.id)
   }, []), H = null != a ? (0, m.F6)(a, P.default, S.Z, !1) : "???", V = k && null != a.guild_id ? null == (t = j.Z.getGuild(a.guild_id)) ? void 0 : t.name : null, z = (null == a ? void 0 : a.parent_id) != null ? O.Z.getChannel(a.parent_id) : null, W = null != (n = null == z ? void 0 : z.name) ? n : null, K = null != (l = (0, f.KS)(a)) ? l : s.VL1, Y = I.Z.can(R.Plq.MANAGE_MESSAGES, a), {
     content: X
   } = (0, b.ZP)({

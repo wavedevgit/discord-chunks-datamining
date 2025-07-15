@@ -21,8 +21,8 @@ var r = n(255367),
   y = n(213609),
   S = n(294218),
   x = n(373662),
-  O = n(695346),
-  j = n(496675),
+  j = n(695346),
+  O = n(496675),
   v = n(626135),
   _ = n(585483),
   E = n(70956),
@@ -211,7 +211,7 @@ function W(e) {
       type: null != t.saveData.dueAt ? P._l.REMINDER : P._l.BOOKMARK,
       due_duration: null != t.saveData.dueAt ? u()().diff(t.saveData.dueAt) : void 0
     })
-  }, [n, t, o]), c = (0, p.e7)([j.Z], () => !!((null == o ? void 0 : o.type) === Z.d4z.UNKNOWN || (null == o ? void 0 : o.isPrivate())) || j.Z.can(Z.Plq.VIEW_CHANNEL, o));
+  }, [n, t, o]), c = (0, p.e7)([O.Z], () => !!((null == o ? void 0 : o.type) === Z.d4z.UNKNOWN || (null == o ? void 0 : o.isPrivate())) || O.Z.can(Z.Plq.VIEW_CHANNEL, o));
   return null != o && null != t.message && c ? (0, r.jsxs)("div", {
     className: M.messageContainer,
     children: [(0, r.jsx)(f.P3F, {
@@ -227,7 +227,7 @@ function W(e) {
       message: t.message,
       channel: o,
       className: M.message,
-      compact: O.jU.getSetting(),
+      compact: j.jU.getSetting(),
       animateAvatar: !1,
       focusProps: D,
       trackAnnouncementViews: !0

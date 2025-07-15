@@ -1,7 +1,8 @@
 /** Chunk was on 45620 **/
 "use strict";
 r.d(t, {
-  F: () => o
+  FF: () => o,
+  eN: () => a
 });
 var n = r(818083),
   l = r(987338);
@@ -11,16 +12,28 @@ let i = (0, n.B)({
     label: "Collectibles Browse Experiment",
     commonTriggerPoint: l.$P.COLLECTIBLES_SHOP_OPEN,
     defaultConfig: {
-      collectiblesBrowseEnabled: !1
+      filterEnabled: !1,
+      searchEnabled: !1
     },
     treatments: [{
       id: 1,
       label: "Enable collectibles browse",
       config: {
-        collectiblesBrowseEnabled: !0
+        filterEnabled: !0,
+        searchEnabled: !0
+      }
+    }, {
+      id: 2,
+      label: "Enable collectibles browse with only filter",
+      config: {
+        filterEnabled: !0,
+        searchEnabled: !1
       }
     }]
   }),
   o = e => i.useExperiment({
     location: e
-  }).collectiblesBrowseEnabled
+  }).filterEnabled,
+  a = e => i.useExperiment({
+    location: e
+  }).searchEnabled

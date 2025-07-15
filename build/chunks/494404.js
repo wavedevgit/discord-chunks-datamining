@@ -22,8 +22,8 @@ var r = n(255367),
   y = n(703656),
   S = n(592125),
   x = n(375954),
-  O = n(496675),
-  j = n(933429),
+  j = n(496675),
+  O = n(933429),
   v = n(451478),
   _ = n(626135),
   E = n(585483),
@@ -143,12 +143,12 @@ class w extends s.PureComponent {
     })
   }
 }
-let Z = u.ZP.connectStores([O.Z], e => {
+let Z = u.ZP.connectStores([j.Z], e => {
   let {
     channel: t
   } = e;
   return {
-    canManageMessages: null != t && O.Z.can(C.Plq.MANAGE_MESSAGES, t)
+    canManageMessages: null != t && j.Z.can(C.Plq.MANAGE_MESSAGES, t)
   }
 })(w);
 
@@ -164,9 +164,9 @@ function A(e) {
     renderItem: y,
     getProTip: S,
     scrollerClassName: x,
-    className: O,
+    className: j,
     listName: N
-  } = e, k = s.useRef(null), w = (0, f.Z)(N, k), Z = (0, u.e7)([j.ZP], () => j.ZP.hasNotice()), A = (0, u.e7)([v.Z], () => v.Z.windowSize());
+  } = e, k = s.useRef(null), w = (0, f.Z)(N, k), Z = (0, u.e7)([O.ZP], () => O.ZP.hasNotice()), A = (0, u.e7)([v.Z], () => v.Z.windowSize());
   s.useEffect(() => {
     _.default.track(C.rMx.OPEN_POPOUT, {
       type: t
@@ -239,7 +239,7 @@ function A(e) {
   Z && (U.maxHeight -= 40);
   let G = null != p && l;
   return (0, r.jsx)("div", {
-    className: a()(O, R.messagesPopoutWrap),
+    className: a()(j, R.messagesPopoutWrap),
     style: U,
     onClick: T,
     onDoubleClick: T,
@@ -318,8 +318,8 @@ function M(e) {
     canCloseAllMessages: h = !1,
     renderHeader: f,
     renderEmptyState: g,
-    renderMessage: O,
-    getProTip: j,
+    renderMessage: j,
+    getProTip: O,
     scrollerClassName: v,
     className: _,
     onCloseMessage: E,
@@ -355,14 +355,14 @@ function M(e) {
     renderHeader: f,
     hasMore: o,
     loadMore: c,
-    getProTip: j,
+    getProTip: O,
     renderItem: function(e) {
       let {
         message: t,
         channel: n
       } = e;
       if (null == t) return [];
-      if (null != O) return O(t, e => T(t, e));
+      if (null != j) return j(t, e => T(t, e));
       let s = [];
       return null == n ? [] : (s.push((0, r.jsxs)("div", {
         className: R.messageGroupWrapper,

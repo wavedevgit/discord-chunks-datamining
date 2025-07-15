@@ -1,5 +1,4 @@
-/** Chunk was on 82265 **/
-"use strict";
+/** Chunk was on 72891 **/
 e.exports = {
   guildBanner: "guildBanner__6e6ad",
   guildHeader: "guildHeader__6e6ad",

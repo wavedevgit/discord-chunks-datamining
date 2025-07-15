@@ -58,11 +58,11 @@ function x() {
         color: "text-muted",
         children: m.intl.string(m.t.F6u3Ex)
       })]
-    }), (0, r.jsx)(O, {})]
+    }), (0, r.jsx)(j, {})]
   })
 }
 
-function O() {
+function j() {
   let e = (0, h.Px)(g.p9.TIER_2),
     t = s.useCallback(() => (0, i.ZDy)(async () => {
       let {

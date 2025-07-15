@@ -27,17 +27,17 @@ function m(e) {
     documentsIndexed: S
   } = e, x = (0, c.U)({
     location: "SearchHeader"
-  }), O = (0, o.e7)([u.Z], () => u.Z.getSearchResultsQueryString(t)), j = s.useMemo(() => t === p.aib.DMS && x ? (0, h.j2)(null != O ? O : "", p.dCx.FILTER_IN) ? null : f.intl.string(f.t.tc619f) : null, [t, x, O]);
+  }), j = (0, o.e7)([u.Z], () => u.Z.getSearchResultsQueryString(t)), O = s.useMemo(() => t === p.aib.DMS && x ? (0, h.j2)(null != j ? j : "", p.dCx.FILTER_IN) ? null : f.intl.string(f.t.tc619f) : null, [t, x, j]);
   return (0, r.jsxs)("header", {
     className: a()(g.searchHeader, {
-      [g.searchHeaderWithSubtitle]: null != j
+      [g.searchHeaderWithSubtitle]: null != O
     }),
     children: [(0, r.jsx)("div", {
       className: g.totalResults,
       role: "status",
       children: (0, r.jsx)(b, {
         totalResults: d,
-        subtitle: j,
+        subtitle: O,
         isIndexing: m,
         isSearching: y,
         documentsIndexed: S
@@ -74,7 +74,7 @@ function b(e) {
   } = e;
   return l ? (0, r.jsx)(S, {
     documentsIndexed: a
-  }) : s ? (0, r.jsx)(x, {}) : (0, r.jsx)(O, {
+  }) : s ? (0, r.jsx)(x, {}) : (0, r.jsx)(j, {
     totalResults: t,
     subtitle: n
   })
@@ -154,7 +154,7 @@ function x() {
   })
 }
 
-function O(e) {
+function j(e) {
   let {
     totalResults: t,
     subtitle: n

@@ -47,7 +47,7 @@ function E(e) {
         o = t === i.T.ORB ? C.AW.ORBS : C.AW.CATALOG;
       await u(o, l), null != t && L(t)
     }, [r, T, u, L, m]),
-    k = (0, p.F)("CollectiblesContent"),
+    k = (0, p.FF)("CollectiblesContent"),
     {
       searchError: B
     } = (0, f.a)();

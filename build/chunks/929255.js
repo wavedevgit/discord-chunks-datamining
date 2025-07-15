@@ -33,7 +33,7 @@ function E(e) {
     advancedScroller: p
   } = e;
   (0, d.A)();
-  let f = (0, u.F)("CollectiblesBrowse"),
+  let f = (0, u.FF)("CollectiblesBrowse"),
     [g, b] = l.useState(f),
     [m, _] = l.useState(!1);
   return l.useEffect(() => {
@@ -86,7 +86,7 @@ let S = e => {
     scrollerRef: y,
     sortedCategories: x,
     setCategoryRef: j
-  } = e, T = (0, u.F)("CollectiblesBrowse"), P = l.useRef(null), L = (0, d.S)(e => e.hasDefaultFilters()), {
+  } = e, T = (0, u.FF)("CollectiblesBrowse"), P = l.useRef(null), L = (0, d.S)(e => e.hasDefaultFilters()), {
     handlePageChange: I,
     currentPage: k
   } = (0, b.h)({
