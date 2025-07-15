@@ -13,14 +13,14 @@ var n = r(255367),
   u = r(626135),
   d = r(381585),
   p = r(139668),
-  g = r(364111),
-  f = r(303952),
+  f = r(364111),
+  g = r(303952),
   h = r(752053),
   b = r(899766),
   m = r(258939),
   _ = r(81136),
-  C = r(953655),
-  O = r(548685),
+  O = r(953655),
+  C = r(548685),
   v = r(580914),
   E = r(963278),
   S = r(921120),
@@ -42,9 +42,9 @@ let L = e => {
       includeUnpublished: m
     } = (0, _.Z)(), [S, x] = l.useState(!1), j = (0, d.sp)(), T = null != (t = null == j ? void 0 : j.sessionId) ? t : "";
     l.useEffect(() => {
-      (0, f.n)({
+      (0, g.n)({
         sessionId: T,
-        checkpoint: f.a.SHOP_MOUNTED,
+        checkpoint: g.a.SHOP_MOUNTED,
         tab: c,
         isFullScreen: u,
         unpublishedCategoriesShown: m,
@@ -56,7 +56,7 @@ let L = e => {
       fetchShopHomeError: k,
       shopBlocks: I,
       refreshShopHome: B
-    } = (0, g.E)(c, {
+    } = (0, f.E)(c, {
       noCache: p,
       includeUnpublished: m,
       includeBundles: !0,
@@ -69,9 +69,9 @@ let L = e => {
       B()
     }, [B]);
     if (l.useEffect(() => {
-        null != k || L || 0 === I.length || (0, f.n)({
+        null != k || L || 0 === I.length || (0, g.n)({
           sessionId: T,
-          checkpoint: f.a.SHOP_RENDERED,
+          checkpoint: g.a.SHOP_RENDERED,
           tab: c,
           isFullScreen: u,
           unpublishedCategoriesShown: m,
@@ -88,11 +88,11 @@ let L = e => {
         isLoading: L,
         handleTransition: r,
         tab: c
-      }), (0, n.jsx)(C.Z, {
+      }), (0, n.jsx)(O.Z, {
         isLoading: L,
         handleTransition: r,
         categories: []
-      }), (0, n.jsx)(O.Z, {
+      }), (0, n.jsx)(C.Z, {
         isLoading: L,
         handleTransition: r,
         numVisibleItems: o,
@@ -113,7 +113,7 @@ let L = e => {
           }, t);
           break;
         case a.z.FEATURED:
-          l = (0, n.jsx)(C.Z, {
+          l = (0, n.jsx)(O.Z, {
             isLoading: L,
             handleTransition: r,
             featuredBlockRecord: e
@@ -121,7 +121,7 @@ let L = e => {
           break;
         case a.z.FEED:
           let d = e.sortedSkuIds;
-          l = (0, n.jsx)(O.Z, {
+          l = (0, n.jsx)(C.Z, {
             isLoading: L || s,
             handleTransition: r,
             numVisibleItems: o,
@@ -170,21 +170,21 @@ let L = e => {
       scrollerRef: r,
       handleTransition: o,
       tab: a,
-      transitionState: g
-    } = e, f = (0, p.R)("CollectiblesFeedShop"), h = (0, m.R)(), b = (0, d.sp)(), [_, C] = l.useState(x.IV), [O, v] = l.useState(!1);
+      transitionState: f
+    } = e, g = (0, p.R)("CollectiblesFeedShop"), h = (0, m.R)(), b = (0, d.sp)(), [_, O] = l.useState(x.IV), [C, v] = l.useState(!1);
     return l.useEffect(() => {
       if (null != r.current) {
         let e = () => {
             if (null == r.current) return;
             let e = r.current.getDistanceFromBottom();
-            _ >= f ? v(e < 20) : e <= 200 && C(e => e + x.IV)
+            _ >= g ? v(e < 20) : e <= 200 && O(e => e + x.IV)
           },
           t = r.current.getScrollerNode();
         return null == t || t.addEventListener("scroll", e), () => {
           null == t || t.removeEventListener("scroll", e)
         }
       }
-    }, [r, _, f, C, v]), (0, n.jsxs)("div", {
+    }, [r, _, g, O, v]), (0, n.jsxs)("div", {
       className: P.shop,
       children: [(0, n.jsxs)("div", {
         className: i()(P.content, P.mainContent),
@@ -194,7 +194,7 @@ let L = e => {
           isFetchingCategories: h,
           tab: a,
           isFullScreen: t
-        }), a !== x.AW.CATALOG && _ >= f && (0, n.jsxs)("div", {
+        }), a !== x.AW.CATALOG && _ >= g && (0, n.jsxs)("div", {
           className: P.endOfFeed,
           children: [(0, n.jsx)(c.X6q, {
             variant: "heading-md/semibold",
@@ -218,14 +218,14 @@ let L = e => {
         })]
       }), !t && (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)(S.Z, {
-          peaking: O,
-          transitioning: g === x.f7.OUT
+          peaking: C,
+          transitioning: f === x.f7.OUT
         }), (0, n.jsx)(S.Z, {
           style: {
             left: 1850
           },
-          peaking: O,
-          transitioning: g === x.f7.OUT
+          peaking: C,
+          transitioning: f === x.f7.OUT
         })]
       })]
     })

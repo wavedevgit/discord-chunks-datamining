@@ -13,9 +13,9 @@ var n = r(255367),
   u = r(481060),
   d = r(774078),
   p = r(388032),
-  g = r(698921);
+  f = r(698921);
 
-function f(e) {
+function g(e) {
   let {
     endDate: t
   } = e, {
@@ -30,7 +30,7 @@ function f(e) {
   }(r, l, o, i);
   return (0, n.jsx)(u.Text, {
     variant: "heading-md/medium",
-    className: g.countdown,
+    className: f.countdown,
     tag: "div",
     color: "always-white",
     children: (0, n.jsx)("div", {
@@ -54,7 +54,7 @@ let h = l.memo(function(e) {
     }
   });
   return (0, n.jsxs)(a.animated.div, {
-    className: i()([g.countDownWrapper, l && g.fullScreenWrapper, s.tq && g.mobileWrapper]),
+    className: i()([f.countDownWrapper, l && f.fullScreenWrapper, s.tq && f.mobileWrapper]),
     role: "status",
     style: function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -82,20 +82,20 @@ let h = l.memo(function(e) {
       direction: c.k.Direction.VERTICAL,
       children: [(0, n.jsx)(u.Text, {
         variant: "text-md/medium",
-        className: g.countdownLabel,
+        className: f.countdownLabel,
         style: null != t.textColor && "" !== t.textColor ? {
           color: t.textColor
         } : void 0,
         children: t.title
       }), null != t.body && "" !== t.body && (0, n.jsx)(u.Text, {
         variant: "text-sm/medium",
-        className: g.countdownBody,
+        className: f.countdownBody,
         style: null != t.textColor && "" !== t.textColor ? {
           color: t.textColor
         } : void 0,
         children: t.body
       })]
-    }), (0, n.jsx)(f, {
+    }), (0, n.jsx)(g, {
       endDate: t.endTime
     })]
   })

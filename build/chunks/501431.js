@@ -48,11 +48,11 @@ function p(e, t) {
   let r = new Set(e);
   return r.has(t) ? r.delete(t) : r.add(t), r
 }
-let g = {
+let f = {
     sortType: a.E.RECENCY,
     sortDirection: i.F.DESC
   },
-  f = {
+  g = {
     sortType: a.E.POPULARITY,
     sortDirection: i.F.DESC
   },
@@ -65,13 +65,14 @@ let g = {
     colorFilters: new Set,
     themeFilters: new Set,
     orbEligible: !1,
-    sort: g,
+    sort: f,
     searchQuery: "",
     queryPageSize: 20,
     queryPageOffset: 0,
     isFetchingResults: !1,
     fullScreenOpen: !1,
-    userHasSelectedSort: !1
+    userHasSelectedSort: !1,
+    currentTab: null
   },
   m = e => {
     let {
@@ -80,10 +81,10 @@ let g = {
       searchQuery: n,
       itemTypeFilters: l
     } = e;
-    return t.size > 0 || r.size > 0 || "" !== n.trim() ? h : l.size > 0 ? f : g
+    return t.size > 0 || r.size > 0 || "" !== n.trim() ? h : l.size > 0 ? g : f
   },
   _ = (0, l.U)((0, o.XR)((e, t) => d(u({}, b), {
-    hasDefaultFilters: () => !t().hasFilters() && t().sort.sortType === g.sortType && t().sort.sortDirection === g.sortDirection,
+    hasDefaultFilters: () => !t().hasFilters() && t().sort.sortType === f.sortType && t().sort.sortDirection === f.sortDirection,
     hasFilters: () => {
       let {
         itemTypeFilters: e,
@@ -194,9 +195,14 @@ let g = {
       e({
         fullScreenOpen: t
       })
+    },
+    setCurrentTab: t => {
+      e({
+        currentTab: t
+      })
     }
   }))),
-  C = e => {
+  O = e => {
     let {
       itemTypeFilters: t,
       colorFilters: r,
@@ -219,7 +225,7 @@ let g = {
       search: "" !== i ? i : void 0
     }
   },
-  O = e => {
+  C = e => {
     let t = e.skus,
       r = e.pagination.total,
       n = e.pagination.has_more;
@@ -244,7 +250,7 @@ let g = {
           r(), l(!0);
           try {
             let t = await (0, s.y)(n);
-            e(O(t))
+            e(C(t))
           } catch (e) {
             var o;
             t(null != (o = null == e ? void 0 : e.message) ? o : "Unknown error")
@@ -253,8 +259,8 @@ let g = {
           }
         })()
       };
-      n(C(_.getState()));
-      let o = _.subscribe(C, n, {
+      n(O(_.getState()));
+      let o = _.subscribe(O, n, {
           equalityFn: (e, t) => JSON.stringify(e) === JSON.stringify(t)
         }),
         i = _.subscribe(e => e.hasFilters(), (e, t) => {

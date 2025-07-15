@@ -14,7 +14,7 @@ var l = r(120356),
   u = r(388032),
   d = r(806734);
 let p = ["1366494385738354769", "1385035256125591633"],
-  g = e => {
+  f = e => {
     let {
       handleTransition: t,
       featuredBlockRecord: r
@@ -42,7 +42,7 @@ let p = ["1366494385738354769", "1385035256125591633"],
       })
     })
   },
-  f = e => {
+  g = e => {
     let {
       handleTransition: t,
       categories: r
@@ -90,11 +90,11 @@ let p = ["1366494385738354769", "1385035256125591633"],
           className: d.skeletonBody
         })
       })]
-    }) : null != i ? (0, n.jsx)(g, {
+    }) : null != i ? (0, n.jsx)(f, {
       featuredBlockRecord: i,
       handleTransition: r,
       isLoading: !1
-    }) : (0, n.jsx)(f, {
+    }) : (0, n.jsx)(g, {
       categories: l,
       handleTransition: r,
       isLoading: !1

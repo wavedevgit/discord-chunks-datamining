@@ -2,7 +2,7 @@
 "use strict";
 r.d(t, {
   EB: () => b,
-  MV: () => f,
+  MV: () => g,
   q3: () => h
 }), r(388685);
 var n = r(73800),
@@ -15,7 +15,7 @@ var n = r(73800),
   u = r(215023),
   d = r(981631),
   p = r(474936);
-let g = e => {
+let f = e => {
     switch (e) {
       case u.AW.ORBS:
         return o.Z.COLLECTIBLES_SHOP_ORBS_TAB;
@@ -33,11 +33,11 @@ let g = e => {
         return o.Z.COLLECTIBLES_SHOP_FULLSCREEN
     }
   },
-  f = e => {
+  g = e => {
     let {
       analyticsSource: t,
       analyticsLocations: r
-    } = (0, l.cj)([c.Z], () => c.Z.getAnalytics()), n = g(e), {
+    } = (0, l.cj)([c.Z], () => c.Z.getAnalytics()), n = f(e), {
       analyticsLocations: a,
       newestAnalyticsLocation: s
     } = (0, i.ZP)([...r, o.Z.COLLECTIBLES_SHOP, n]);
@@ -54,7 +54,7 @@ let g = e => {
       analyticsSource: s,
       currentTabLocation: c,
       newestAnalyticsLocation: p
-    } = f(t);
+    } = g(t);
     n.useEffect(() => {
       if (l !== u.f7.VISIBLE || p !== c) return;
       let n = t === u.AW.CATALOG ? o : s;
@@ -70,7 +70,7 @@ let g = e => {
   b = (e, t) => {
     let {
       analyticsLocations: r
-    } = f(e);
+    } = g(e);
     n.useEffect(() => {
       null == t || s.ZP.canUseCollectibles(t) || a.default.track(d.rMx.PREMIUM_UPSELL_VIEWED, {
         type: p.cd.COLLECTIBLES_SHOP,

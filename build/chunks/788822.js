@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 r.d(t, {
-  q: () => C
+  q: () => O
 });
 var n = r(255367),
   l = r(73800),
@@ -13,25 +13,25 @@ var n = r(255367),
   u = r(481060),
   d = r(626135),
   p = r(381585),
-  g = r(597688),
-  f = r(297651),
+  f = r(597688),
+  g = r(297651),
   h = r(794324),
   b = r(981631),
   m = r(388032),
   _ = r(806734);
-let C = e => {
-  var t, r, o, C;
-  let O, {
+let O = e => {
+  var t, r, o, O;
+  let C, {
     category: v,
     subblock: E,
     badgeText: S,
     handleTransition: y
   } = e;
-  null != E && (O = null == (t = g.Z.getCategoryByStoreListingId(null == E ? void 0 : E.categoryStoreListingId)) ? void 0 : t.skuId);
-  let x = null != (r = null != O ? O : null == v ? void 0 : v.skuId) ? r : "",
+  null != E && (C = null == (t = f.Z.getCategoryByStoreListingId(null == E ? void 0 : E.categoryStoreListingId)) ? void 0 : t.skuId);
+  let x = null != (r = null != C ? C : null == v ? void 0 : v.skuId) ? r : "",
     {
       handleCardVisibilityChange: j
-    } = (0, f.E)(x, "home", "marketing featured block"),
+    } = (0, g.E)(x, "home", "marketing featured block"),
     {
       featuredBlockBanner: T
     } = (0, h.YG)(v, E),
@@ -82,7 +82,7 @@ let C = e => {
           lineClamp: null != k ? 2 : 4,
           className: _.featuredBlockBodyText,
           style: {
-            color: null != (C = null == E ? void 0 : E.bannerTextColor) ? C : "white"
+            color: null != (O = null == E ? void 0 : E.bannerTextColor) ? O : "white"
           },
           variant: "heading-md/medium",
           children: I

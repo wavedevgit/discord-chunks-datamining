@@ -13,14 +13,14 @@ var n = r(255367),
   u = r(607070),
   d = r(594174),
   p = r(451478),
-  g = r(626135),
-  f = r(63063),
+  f = r(626135),
+  g = r(63063),
   h = r(74538),
   b = r(381585),
   m = r(597688),
   _ = r(315066),
-  C = r(243126),
-  O = r(38900),
+  O = r(243126),
+  C = r(38900),
   v = r(709999),
   E = r(328626),
   S = r(619899),
@@ -43,14 +43,14 @@ let P = e => {
     sortOptions: Z,
     shuffleProducts: D,
     showRecommendationOption: F
-  } = (0, C.N)(o, B), M = (0, S.St)(R), H = (0, a.e7)([u.Z], () => u.Z.useReducedMotion), W = (0, a.e7)([p.Z], () => p.Z.isFocused()), V = !H && W, {
+  } = (0, O.N)(o, B), M = (0, S.St)(R), H = (0, a.e7)([u.Z], () => u.Z.useReducedMotion), W = (0, a.e7)([p.Z], () => p.Z.isFocused()), V = !H && W, {
     animationPhase: U,
     startAnimation: z
   } = (0, E.y)(), G = (0, b.sp)(), q = null != (t = null == G ? void 0 : G.sessionId) ? t : "", Y = l.useRef(null), K = l.useCallback(e => {
     z({
       isShuffling: !1,
       onOutroComplete: () => w(e)
-    }), g.default.track(x.rMx.COLLECTIBLES_SHOP_FEED_SORT_CHANGED, {
+    }), f.default.track(x.rMx.COLLECTIBLES_SHOP_FEED_SORT_CHANGED, {
       page_session_id: q,
       sort_type: e
     })
@@ -88,7 +88,7 @@ let P = e => {
               }
               return e
             }({}, e), r = r = {
-              onClick: () => (0, c.Z)(f.Z.getArticleURL(x.BhN.DATA_USED_FOR_RECOMMENDED)),
+              onClick: () => (0, c.Z)(g.Z.getArticleURL(x.BhN.DATA_USED_FOR_RECOMMENDED)),
               className: T.informationIcon,
               children: (0, n.jsx)(s.d3s, {
                 size: "sm"
@@ -127,7 +127,7 @@ let P = e => {
               isShuffling: !0,
               onOutroComplete: D,
               returnRef: Y
-            }), g.default.track(x.rMx.COLLECTIBLES_SHOP_FEED_SHUFFLE_CLICKED, {
+            }), f.default.track(x.rMx.COLLECTIBLES_SHOP_FEED_SHUFFLE_CLICKED, {
               page_session_id: q
             })
           },
@@ -141,7 +141,7 @@ let P = e => {
     }), (0, n.jsx)("div", {
       className: T.feed,
       children: r ? (0, n.jsx)(n.Fragment, {
-        children: [...Array(12)].map((e, t) => (0, n.jsx)(O.K, {}, t + 1))
+        children: [...Array(12)].map((e, t) => (0, n.jsx)(C.K, {}, t + 1))
       }) : M.slice(0, L).map((e, t) => {
         let r, l = m.Z.getCategoryForProduct(e.skuId);
         if (null == e || null == l) return null;

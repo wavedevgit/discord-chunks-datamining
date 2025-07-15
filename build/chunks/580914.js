@@ -13,14 +13,14 @@ var n = r(255367),
   u = r(755721),
   d = r(481060),
   p = r(434650),
-  g = r(607070),
-  f = r(70097),
+  f = r(607070),
+  g = r(70097),
   h = r(688465),
   b = r(341907),
   m = r(507808),
   _ = r(794231),
-  C = r(594174),
-  O = r(451478),
+  O = r(594174),
+  C = r(451478),
   v = r(626135),
   E = r(381585),
   S = r(597688),
@@ -109,9 +109,9 @@ let D = {
       heroBlock: H,
       tab: W,
       onVisibilityChange: V
-    } = e, U = (0, c.e7)([g.Z], () => g.Z.useReducedMotion), z = (0, c.e7)([O.Z], () => O.Z.isFocused()), G = (0, p.O)(e => {
+    } = e, U = (0, c.e7)([f.Z], () => f.Z.useReducedMotion), z = (0, c.e7)([C.Z], () => C.Z.isFocused()), G = (0, p.O)(e => {
       null == V || V(e)
-    }, .1), q = (0, c.e7)([C.default], () => C.default.getCurrentUser()), Y = (0, j.u)(), K = (0, E.sp)(), {
+    }, .1), q = (0, c.e7)([O.default], () => O.default.getCurrentUser()), Y = (0, j.u)(), K = (0, E.sp)(), {
       showBetaTag: X
     } = _.Z.useExperiment({
       location: "collectible_hero_block"
@@ -140,7 +140,7 @@ let D = {
           style: {
             backgroundImage: "url(".concat(er, ")")
           }
-        }) : (0, n.jsx)(f.Z, {
+        }) : (0, n.jsx)(g.Z, {
           className: i()(Z.bannerAsset, Z.bannerVideoBackground),
           src: en,
           autoPlay: !0,

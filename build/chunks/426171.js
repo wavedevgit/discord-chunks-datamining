@@ -15,18 +15,18 @@ var n = r(73800),
   u = r(597688),
   d = r(328347),
   p = r(429368),
-  g = r(410127),
-  f = r(237031),
+  f = r(410127),
+  g = r(237031),
   h = r(258939),
   b = r(956472),
   m = r(981631);
 let _ = "".concat("#").concat("itemSkuId", "="),
-  C = new RegExp("^".concat(_, "(\\d+)$")),
-  O = [m.Z5c.COLLECTIBLES_SHOP, m.Z5c.COLLECTIBLES_SHOP_FULLSCREEN],
+  O = new RegExp("^".concat(_, "(\\d+)$")),
+  C = [m.Z5c.COLLECTIBLES_SHOP, m.Z5c.COLLECTIBLES_SHOP_FULLSCREEN],
   v = e => {
     let t = (0, l.TH)();
     n.useEffect(() => {
-      if (null != e && O.includes(t.pathname)) return () => {
+      if (null != e && C.includes(t.pathname)) return () => {
         window.location.hash.startsWith(_) && window.location.replace("#")
       }
     }, [e, t.pathname])
@@ -52,7 +52,7 @@ let _ = "".concat("#").concat("itemSkuId", "="),
           let n = null == (a = r.variants) ? void 0 : a.findIndex(e => e.skuId === t);
           null != n && n > -1 && (0, p.$)(r, n)
         }
-      }(0, f.T)({
+      }(0, g.T)({
         product: e,
         category: i,
         analyticsSource: n,
@@ -71,12 +71,12 @@ let _ = "".concat("#").concat("itemSkuId", "="),
       {
         analyticsLocations: p
       } = (0, s.ZP)(u),
-      f = (0, g.Z)();
+      g = (0, f.Z)();
     n.useEffect(() => {
       if (e) return;
-      let t = C.exec(i.hash);
+      let t = O.exec(i.hash);
       null != t ? r.current = t[1] : r.current = null
-    }, [f, e, i.hash]);
+    }, [g, e, i.hash]);
     let b = (0, o.e7)([d.Z], () => d.Z.initialProductSkuId);
     n.useEffect(() => {
       if (t) return;
@@ -87,12 +87,12 @@ let _ = "".concat("#").concat("itemSkuId", "="),
             productSkuId: n,
             analyticsLocations: p,
             analyticsSource: u,
-            tab: f
+            tab: g
           })
         }, 250);
         return () => clearTimeout(e)
       }
-    }, [e, p, u, t, b, f])
+    }, [e, p, u, t, b, g])
   },
   y = e => {
     let t = n.useRef({}),

@@ -13,8 +13,8 @@ var n = r(255367),
   u = r(63063),
   d = r(597688),
   p = r(297651),
-  g = r(215023),
-  f = r(981631),
+  f = r(215023),
+  g = r(981631),
   h = r(388032),
   b = r(806734);
 let m = e => {
@@ -22,8 +22,8 @@ let m = e => {
   let {
     wideBannerBlock: m,
     handleTransition: _,
-    tab: C
-  } = e, O = null == (t = d.Z.getCategoryByStoreListingId(m.categoryStoreListingId)) ? void 0 : t.skuId, v = l.useRef(null), E = l.useRef(null), [S, y] = l.useState();
+    tab: O
+  } = e, C = null == (t = d.Z.getCategoryByStoreListingId(m.categoryStoreListingId)) ? void 0 : t.skuId, v = l.useRef(null), E = l.useRef(null), [S, y] = l.useState();
   l.useEffect(() => {
     let e = E.current;
     if (null == e) return;
@@ -34,13 +34,13 @@ let m = e => {
       e.onload = null
     }
   }, []);
-  let x = null != O ? O : "",
+  let x = null != C ? C : "",
     {
       handleCardVisibilityChange: j
     } = (0, p.E)(x, "home", "marketing wide banner"),
     T = m.bannerUrl;
   if (null == T) return null;
-  let P = C === g.AW.ORBS;
+  let P = O === f.AW.ORBS;
   return (0, n.jsx)(a.$, {
     innerRef: v,
     onChange: j,
@@ -86,7 +86,7 @@ let m = e => {
             lineClamp: 2,
             variant: P ? "text-md/medium" : "text-sm/medium",
             children: P ? h.intl.format(h.t.SFFP7O, {
-              helpdeskArticle: u.Z.getArticleURL(f.BhN.VIRTUAL_CURRENCY_LEARN_MORE)
+              helpdeskArticle: u.Z.getArticleURL(g.BhN.VIRTUAL_CURRENCY_LEARN_MORE)
             }) : m.body
           })]
         })

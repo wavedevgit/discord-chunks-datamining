@@ -13,15 +13,15 @@ var n = r(255367),
   u = r(597688),
   d = r(1870),
   p = r(870289),
-  g = r(149705),
-  f = r(929255),
+  f = r(149705),
+  g = r(929255),
   h = r(426171),
   b = r(752053),
   m = r(81136),
   _ = r(566564),
-  C = r(795477),
-  O = r(215023);
-let v = [O.AW.HOME, O.AW.ORBS];
+  O = r(795477),
+  C = r(215023);
+let v = [C.AW.HOME, C.AW.ORBS];
 
 function E(e) {
   let {
@@ -32,40 +32,42 @@ function E(e) {
     transitionToTab: u,
     transitionState: d,
     updateAnalyticsState: m,
-    refreshCategories: E
-  } = e, x = S();
-  y(x);
-  let j = (0, i.e7)([a.Z], () => a.Z.useReducedMotion),
+    refreshCategories: E,
+    advancedScroller: x
+  } = e, j = S();
+  y(j);
+  let T = (0, i.e7)([a.Z], () => a.Z.useReducedMotion),
     {
-      setCategoryRef: T,
-      handleScrollToCategory: P
+      setCategoryRef: P,
+      handleScrollToCategory: L
     } = (0, h.xV)(s.current),
-    L = l.useCallback(async (e, t, n) => {
+    k = l.useCallback(async (e, t, n) => {
       m(e, t);
-      let l = n && !r && !j,
-        i = t === o.T.ORB ? O.AW.ORBS : O.AW.CATALOG;
-      await u(i, l), null != t && P(t)
-    }, [r, j, u, P, m]),
-    k = (0, p.F)("CollectiblesContent"),
+      let l = n && !r && !T,
+        i = t === o.T.ORB ? C.AW.ORBS : C.AW.CATALOG;
+      await u(i, l), null != t && L(t)
+    }, [r, T, u, L, m]),
+    I = (0, p.F)("CollectiblesContent"),
     {
-      searchError: I
-    } = (0, g.a)();
-  return k && null != I ? (0, n.jsx)(C.Z, {}) : null != x ? (0, n.jsx)(b.Z, {
+      searchError: B
+    } = (0, f.a)();
+  return I && null != B ? (0, n.jsx)(O.Z, {}) : null != j ? (0, n.jsx)(b.Z, {
     onRetry: E,
-    errorMessage: x,
+    errorMessage: j,
     errorOrigin: b.i.SHOP_PAGE
   }) : v.includes(t) ? (0, n.jsx)(_.Z, {
     isFullScreen: r,
     scrollerRef: s,
-    handleTransition: L,
+    handleTransition: k,
     tab: t,
     transitionState: d
-  }) : (0, n.jsx)(f.Z, {
+  }) : (0, n.jsx)(g.Z, {
     isFullScreen: r,
     scrollerRef: s,
     tab: t,
     sortedCategories: c,
-    setCategoryRef: T
+    setCategoryRef: P,
+    advancedScroller: x
   })
 }
 let S = () => (0, i.e7)([u.Z, d.Z], () => null != u.Z.error ? "shop load fetch categories error: ".concat(u.Z.error.message) : null != d.Z.claimError ? "shop load claim error: ".concat(d.Z.claimError.message) : null != d.Z.fetchError ? "shop load fetch purchase error: ".concat(d.Z.fetchError.message) : void 0),

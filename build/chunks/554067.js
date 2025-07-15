@@ -18,14 +18,14 @@ function u(e) {
   } = e, {
     searchQuery: u,
     onSetSearchQuery: d
-  } = (0, i.S)(), [p, g] = l.useState("");
+  } = (0, i.S)(), [p, f] = l.useState("");
   return l.useEffect(() => {
     let e = setTimeout(() => {
       d(p)
     }, 250);
     return () => clearTimeout(e)
   }, [p, d]), l.useEffect(() => {
-    g(u)
+    f(u)
   }, [u]), (0, n.jsx)(o.E1j, {
     onFocus: () => {
       r !== a.AW.CATALOG && t(a.AW.CATALOG)
@@ -35,8 +35,8 @@ function u(e) {
       "Enter" === e.key && d(p)
     },
     query: p,
-    onChange: g,
-    onClear: () => g(""),
+    onChange: f,
+    onClear: () => f(""),
     placeholder: s.intl.string(s.t["hIt/Nj"])
   })
 }

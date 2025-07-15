@@ -13,14 +13,14 @@ var n = r(255367),
   u = r(594174),
   d = r(381585),
   p = r(870289),
-  g = r(370039),
-  f = r(937510),
+  f = r(370039),
+  g = r(937510),
   h = r(303952),
   b = r(823941),
   m = r(38900),
   _ = r(709999),
-  C = r(258939),
-  O = r(81136),
+  O = r(258939),
+  C = r(81136),
   v = r(619899),
   E = r(215023),
   S = r(484920);
@@ -59,7 +59,7 @@ function y(e) {
 function x(e) {
   let {
     category: t
-  } = e, r = (0, f.l)(t.products), l = (0, g.a)()(r);
+  } = e, r = (0, g.l)(t.products), l = (0, f.a)()(r);
   return (0, n.jsx)(y, {
     products: l,
     category: t
@@ -93,10 +93,10 @@ function T(e) {
     isFullScreen: a,
     currentPage: c,
     handlePageChange: u
-  } = e, g = (0, d.sp)(), f = (0, C.R)(), b = null != (t = null == g ? void 0 : g.sessionId) ? t : "", {
+  } = e, f = (0, d.sp)(), g = (0, O.R)(), b = null != (t = null == f ? void 0 : f.sessionId) ? t : "", {
     noCache: _,
     includeUnpublished: v
-  } = (0, O.Z)(), y = l.useMemo(() => r.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
+  } = (0, C.Z)(), y = l.useMemo(() => r.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
     let {
       products: t
     } = e;
@@ -115,7 +115,7 @@ function T(e) {
       cacheDisabled: _
     })
   }, []), l.useEffect(() => {
-    f || 0 === x.length || (0, h.n)({
+    g || 0 === x.length || (0, h.n)({
       sessionId: b,
       checkpoint: h.a.SHOP_RENDERED,
       tab: E.AW.CATALOG,
@@ -123,9 +123,9 @@ function T(e) {
       unpublishedCategoriesShown: v,
       cacheDisabled: _
     })
-  }, [b, a, v, _, f, x.length]);
+  }, [b, a, v, _, g, x.length]);
   let T = (0, p.F)("CollectiblesBrowse");
-  return f ? (0, n.jsx)(m.Z, {}) : (0, n.jsxs)("div", {
+  return g ? (0, n.jsx)(m.Z, {}) : (0, n.jsxs)("div", {
     className: i()(S.categories, {
       [S.categoriesNoFilter]: !T
     }),

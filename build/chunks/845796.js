@@ -17,7 +17,7 @@ let p = () => {
     sort: e,
     onSetSort: t,
     hasRelevanceFilters: r
-  } = (0, s.S)(), p = r(), g = l.useMemo(() => c.aP.filter(e => e.sortType !== i.E.RELEVANCE || p), [p]), f = l.useCallback(e => {
+  } = (0, s.S)(), p = r(), f = l.useMemo(() => c.aP.filter(e => e.sortType !== i.E.RELEVANCE || p), [p]), g = l.useCallback(e => {
     let {
       sortType: t,
       sortDirection: r
@@ -59,11 +59,11 @@ let p = () => {
       sortType: i.E.RELEVANCE,
       sortDirection: o.F.DESC
     }
-  })[e], []), b = f(e);
+  })[e], []), b = g(e);
   return (0, n.jsx)(a.PhF, {
     look: a.qQH.CUSTOM,
     className: d.custom,
-    options: g.map(f),
+    options: f.map(g),
     select: e => t(h(e)),
     isSelected: e => e === b.value,
     serialize: e => e,

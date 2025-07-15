@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: d8da8a90477257ac
+  Original File Name: a087d709c50b34c7
 **/
 .shopWrapper__6db1d {
     background: var(--background-base-low);
@@ -10,6 +10,10 @@
 }
 
 .shopViewWrapper__6db1d {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 0;
     opacity: 0;
     width: 100%
 }
@@ -44,15 +48,18 @@
 
 .page__6db1d {
     background-color: var(--background-base-low);
+    box-sizing: border-box;
     display: flex;
+    flex: 1;
     justify-content: center;
+    min-height: 0;
     position: relative;
     width: 100%
 }
 
 .pageFilter__6db1d {
     gap: 12px;
-    min-height: 100vh
+    height: 100%
 }
 
 .controls__6db1d {
@@ -65,9 +72,12 @@
 
 .pageWrapper__6db1d {
     align-items: center;
+    box-sizing: border-box;
     display: flex;
+    flex: 1;
     flex-direction: column;
     gap: 16px;
+    min-height: 0;
     position: relative
 }
 
@@ -75,21 +85,20 @@
     align-items: flex-start
 }
 
-.pageWrapperFilter__6db1d {
-    padding: 20px 0 0 20px
-}
-
 .inventoryWrapper__6db1d {
     align-items: flex-start;
     display: flex;
     flex: 1;
     justify-content: center;
+    min-height: 100%;
+    overflow: hidden;
     width: 100%
 }
 
 .inventory__6db1d {
     box-sizing: border-box;
     display: flex;
+    flex: 1;
     flex-direction: column;
     margin-bottom: 60px;
     max-width: 1124px;
@@ -134,9 +143,12 @@
     background-color: var(--background-base-lower);
     border-top: 1px solid var(--border-subtle);
     box-sizing: border-box;
+    display: flex;
     flex: 1;
+    flex-direction: column;
     height: 100%;
-    min-width: 575px
+    min-width: 575px;
+    overflow: hidden
 }
 
 @media (max-width:485px) {
@@ -147,7 +159,8 @@
 
 .shopScroll__6db1d {
     background-color: var(--background-base-low);
-    height: 100%;
+    flex: 1;
+    min-height: 0;
     overflow-y: auto
 }
 
@@ -248,12 +261,11 @@
 
 .filterBar__6db1d {
     align-self: flex-start;
-    flex: 0 0 250px;
-    height: calc(100vh - 120px);
+    flex: 0 0 260px;
+    height: 100%;
     overflow-y: auto;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 76px
+    padding-left: 3px;
+    padding-top: 15px
 }
 
 .filterButton__6db1d {
@@ -282,6 +294,40 @@
     .controlsRightSide__6db1d {
         visibility: hidden
     }
+
+    .controlsRightSideResponsive__6db1d {
+        display: flex;
+        justify-content: flex-end;
+        visibility: visible
+    }
+
+    .responsiveFilterButton__6db1d {
+        position: relative;
+        z-index: 1001
+    }
+}
+
+.filterOverlay__6db1d {
+    background-color: var(--background-base-low);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    box-shadow: var(--elevation-high);
+    height: 80vh;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 260px;
+    z-index: 1000
+}
+
+.filterOverlayContent__6db1d {
+    height: 100%;
+    padding: 16px 0 16px 16px
+}
+
+.controls__6db1d {
+    position: relative
 }
 
 .divider__6db1d {
@@ -296,6 +342,16 @@
     align-items: center;
     display: flex;
     gap: 12px
+}
+
+.filterButtonActive__6db1d {
+    background-color: var(--brand-500);
+    border-color: var(--brand-500);
+    color: var(--white)
+}
+
+.filterButtonActive__6db1d .filterButton__6db1d {
+    color: var(--white)
 }
 
 @keyframes placeholderPulse__72fa0 {
@@ -1062,6 +1118,7 @@
 }
 
 .resetButton__11877 {
+    margin-bottom: 8px;
     max-width: 220px;
     width: 100%
 }
@@ -1915,4 +1972,4 @@
     cursor: pointer
 }
 
-/*# sourceMappingURL=d8da8a90477257ac.css.map*/
+/*# sourceMappingURL=a087d709c50b34c7.css.map*/
