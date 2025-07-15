@@ -1,30 +1,30 @@
 /** Chunk was on 61547 **/
 i.d(e, {
-  Z: () => c
+  Z: () => l
 });
-var o = i(255367);
+var n = i(255367);
 i(73800);
-var n = i(120356),
-  a = i.n(n),
-  d = i(481060),
-  r = i(388032),
-  l = i(622680);
-let u = Object.freeze({
-  DEFAULT: l.default,
-  FILLED: l.filled
+var o = i(120356),
+  r = i.n(o),
+  a = i(481060),
+  u = i(388032),
+  d = i(622680);
+let c = Object.freeze({
+  DEFAULT: d.default,
+  FILLED: d.filled
 });
 
-function c(t) {
+function l(t) {
   let {
     className: e,
     onClick: i,
-    "aria-label": n,
-    look: c = u.DEFAULT
+    "aria-label": o,
+    look: l = c.DEFAULT
   } = t;
-  return (0, o.jsx)(d.P3F, {
-    "aria-label": null != n ? n : r.intl.string(r.t.N86XcH),
-    className: a()(l.button, c, e),
+  return (0, n.jsx)(a.P3F, {
+    "aria-label": null != o ? o : u.intl.string(u.t.N86XcH),
+    className: r()(d.button, l, e),
     onClick: i
   })
 }
-c.Looks = u
+l.Looks = c

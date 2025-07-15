@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(442837),
-  l = n(693789),
-  a = n(993365),
+  l = n(993365),
+  a = n(755721),
   s = n(481060),
   o = n(230711),
   c = n(767714),
@@ -50,14 +50,15 @@ function b(e) {
         variant: "heading-sm/bold",
         children: C.intl.string(C.t.dTbAx8)
       })]
-    }), (0, r.jsx)(a.x, {
+    }), (0, r.jsx)(l.x, {
       variant: "text-sm/normal",
       children: j
-    }), y ? (0, r.jsx)(l.zx, {
+    }), y ? (0, r.jsx)(s.zxk, {
       onClick: function() {
         o.Z.open(p.oAB.VOICE, g.GA), null == n || n(), null == b || b(f.L.PRIMARY)
       },
-      children: C.intl.string(C.t.RzWDqa)
+      text: C.intl.string(C.t.RzWDqa),
+      fullWidth: !0
     }) : (0, r.jsx)(c.Z, {
       textOptions: {
         textOverride: C.intl.string(C.t.pj0XBA)
@@ -67,7 +68,7 @@ function b(e) {
         section: p.jXE.SOUNDBOARD_SOUND_PICKER,
         object: p.qAy.BUTTON_CTA
       },
-      color: l.zx.Colors.GREEN,
+      color: a.zx.Colors.GREEN,
       onSubscribeModalClose: () => null == b ? void 0 : b(f.L.PRIMARY)
     })]
   })

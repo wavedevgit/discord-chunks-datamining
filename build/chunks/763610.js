@@ -5,8 +5,8 @@ l.d(t, {
 var n = l(255367),
   i = l(73800),
   s = l(120356),
-  a = l.n(s),
-  r = l(755721),
+  r = l.n(s),
+  a = l(755721),
   o = l(53281),
   u = l(121746);
 
@@ -20,7 +20,7 @@ function c(e) {
     onFileSelect: m
   } = e, f = i.useRef(null);
   return (0, n.jsxs)("div", {
-    className: a()(l, u.fileUpload),
+    className: r()(l, u.fileUpload),
     children: [(0, n.jsx)("input", {
       className: u.fileUploadInput,
       tabIndex: -1,
@@ -28,8 +28,8 @@ function c(e) {
       placeholder: d,
       type: "text",
       value: t
-    }), (0, n.jsxs)(r.zx, {
-      size: r.zx.Sizes.MIN,
+    }), (0, n.jsxs)(a.zx, {
+      size: a.zx.Sizes.MIN,
       className: u.fileUploadButton,
       children: [c, (0, n.jsx)(o.Z, {
         ref: f,
