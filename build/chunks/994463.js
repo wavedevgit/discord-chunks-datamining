@@ -1,15 +1,15 @@
-/** Chunk was on 46989 **/
+/** Chunk was on 62059 **/
 n.d(t, {
-  Z: () => E
+  Z: () => p
 }), n(388685);
 var r = n(255367),
-  l = n(73800),
-  i = n(525654),
-  s = n.n(i),
-  a = n(748780),
-  o = n(782682);
+  i = n(73800),
+  l = n(525654),
+  a = n.n(l),
+  o = n(748780),
+  s = n(782682);
 
-function u(e, t, n) {
+function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -18,7 +18,7 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 
-function c(e) {
+function u(e) {
   let t = e => e.interpolate({
     inputRange: [0, 1],
     outputRange: ["0px", "1px"]
@@ -31,14 +31,14 @@ function c(e) {
     }]
   }
 }
-class d extends l.Component {
+class d extends i.Component {
   componentDidMount() {
     this._isMounted = !0;
     let {
       x: e,
       y: t
     } = this.state;
-    "Firefox" !== s().name && (a.Z.animate(e, {
+    "Firefox" !== a().name && (o.Z.animate(e, {
       loop: !0,
       toValueMin: -74,
       toValueMax: 95,
@@ -46,7 +46,7 @@ class d extends l.Component {
       friction: 5,
       tension: 1,
       shouldLoop: this.shouldLoop
-    }), a.Z.animate(t, {
+    }), o.Z.animate(t, {
       loop: !0,
       toValueMin: -59,
       toValueMax: 75,
@@ -61,11 +61,11 @@ class d extends l.Component {
   }
   render() {
     return (0, r.jsxs)("div", {
-      className: o.searchIndexAnimation,
+      className: s.searchIndexAnimation,
       children: [(0, r.jsx)("div", {
-        className: o.searchIndexBackground
+        className: s.searchIndexBackground
       }), (0, r.jsxs)("svg", {
-        className: o.searchIndexForeground,
+        className: s.searchIndexForeground,
         width: "320",
         height: "280",
         children: [(0, r.jsx)("defs", {
@@ -83,9 +83,9 @@ class d extends l.Component {
             children: [(0, r.jsx)("mask", {
               id: "search-index-foreground-mask-b",
               fill: "#fff",
-              children: (0, r.jsx)(a.Z.use, {
-                style: c(this.state),
-                className: o.mask,
+              children: (0, r.jsx)(o.Z.use, {
+                style: u(this.state),
+                className: s.mask,
                 xlinkHref: "#search-index-foreground-mask-a"
               })
             }), (0, r.jsxs)("g", {
@@ -347,9 +347,9 @@ class d extends l.Component {
                 strokeLinejoin: "round"
               })]
             })]
-          }), (0, r.jsxs)(a.Z.g, {
-            className: o.magnifyingGlass,
-            style: c(this.state),
+          }), (0, r.jsxs)(o.Z.g, {
+            className: s.magnifyingGlass,
+            style: u(this.state),
             children: [(0, r.jsx)("path", {
               fill: "#C9D2F0",
               d: "M89.8311 190.9259c-2.441-2.441-2.441-6.4 0-8.841l36.771-36.771 8.841 8.841-36.771 36.771c-2.441 2.441-6.4 2.441-8.841 0"
@@ -392,10 +392,10 @@ class d extends l.Component {
     })
   }
   constructor(...e) {
-    super(...e), u(this, "state", {
-      x: new a.Z.Value(0),
-      y: new a.Z.Value(0)
-    }), u(this, "_isMounted", !1), u(this, "shouldLoop", () => this._isMounted)
+    super(...e), c(this, "state", {
+      x: new o.Z.Value(0),
+      y: new o.Z.Value(0)
+    }), c(this, "_isMounted", !1), c(this, "shouldLoop", () => this._isMounted)
   }
 }
-let E = d
+let p = d

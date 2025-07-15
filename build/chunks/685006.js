@@ -23,17 +23,17 @@ var r = n(255367),
   C = n(981631),
   x = n(314734),
   v = n(522271);
-let j = (0, o.U)(() => ({
+let O = (0, o.U)(() => ({
     visible: !1
   })),
-  O = e => {
+  j = e => {
     (0, s.j)(() => {
-      j.setState({
+      O.setState({
         visible: e
       })
     })
   },
-  E = j;
+  E = O;
 
 function S(e) {
   let {
@@ -58,10 +58,10 @@ function S(e) {
       location: d.Z.APP_DMS_ENTRY_POINT_COMMAND_BUTTON,
       source: g._b.TEXT
     }))
-  }, [c, f]), j = null != x && x.filter(e => e.type === u.yU.CHAT || e.type === u.yU.PRIMARY_ENTRY_POINT).length > 0, E = !a && null != o && !0 === j;
-  return (i.useEffect(() => (O(E), () => {
-    O(!1)
-  }), [E]), E) ? (0, r.jsx)(I, {
+  }, [c, f]), O = null != x && x.filter(e => e.type === u.yU.CHAT || e.type === u.yU.PRIMARY_ENTRY_POINT).length > 0, E = !a && null != o && !0 === O;
+  return (i.useEffect(() => (j(E), () => {
+    j(!1)
+  }), [E]), E) ? (0, r.jsx)(P, {
     context: t,
     application: o,
     primaryEntryPointCommand: s,
@@ -71,7 +71,7 @@ function S(e) {
   }) : null
 }
 
-function I(e) {
+function P(e) {
   let {
     context: t,
     application: n,
@@ -95,7 +95,7 @@ function I(e) {
     primaryEntryPointCommand: i,
     application: n,
     showAppLauncherPopup: u
-  }), j = (0, f.J)({
+  }), O = (0, f.J)({
     context: t,
     application: n,
     isEmbeddedApp: m,
@@ -105,13 +105,13 @@ function I(e) {
     channelRecipientUserId: b,
     setIsExecutingLaunchInteraction: _,
     analyticsLocations: C
-  }), O = h ? c.zx.Colors.RED : c.zx.Colors.BRAND;
+  }), j = h ? c.zx.Colors.RED : c.zx.Colors.BRAND;
   return (0, r.jsx)(c.zx, {
     className: a()(v.entryPointAppCommandButton, x.Id),
     size: c.zx.Sizes.SMALL,
-    color: O,
+    color: j,
     submitting: d,
-    onClick: j,
+    onClick: O,
     buttonRef: o,
     children: p
   })

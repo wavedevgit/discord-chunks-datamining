@@ -22,12 +22,12 @@ var r = n(255367),
   C = n(160404),
   x = n(765104),
   v = n(695346),
-  j = n(314897),
-  O = n(796974),
+  O = n(314897),
+  j = n(796974),
   E = n(323873),
   S = n(607744),
-  I = n(375954),
-  P = n(496675),
+  P = n(375954),
+  I = n(496675),
   Z = n(306680),
   N = n(62817),
   T = n(594174),
@@ -102,10 +102,10 @@ let W = i.memo(function(e) {
       showNewMessagesBar: y,
       messageDisplayCompact: x,
       channelStream: v,
-      uploads: j,
+      uploads: O,
       hasUnreads: E,
       editingMessageId: S,
-      fontSize: I,
+      fontSize: P,
       keyboardModeEnabled: Z,
       filterAfterTimestamp: N,
       showingQuarantineBanner: T,
@@ -113,21 +113,21 @@ let W = i.memo(function(e) {
       jumpBarClassName: R,
       typingGradient: D,
       isChatInputBottomAligned: W
-    } = e, [Y, q] = i.useState(null != (n = O.Z.isAtBottom(g.id)) && n), K = i.useMemo(() => x ? (0, M.aJ)({
+    } = e, [Y, q] = i.useState(null != (n = j.Z.isAtBottom(g.id)) && n), K = i.useMemo(() => x ? (0, M.aJ)({
       compact: !0,
       messageGroups: 30,
       groupRange: 4,
       attachments: 8,
-      fontSize: I,
+      fontSize: P,
       groupSpacing: p
     }) : (0, M.aJ)({
       compact: !1,
       messageGroups: 26,
       groupRange: 4,
       attachments: 8,
-      fontSize: I,
+      fontSize: P,
       groupSpacing: p
-    }), [x, I, p]), X = (0, L.ZP)({
+    }), [x, P, p]), X = (0, L.ZP)({
       messages: b,
       channel: g,
       compact: x,
@@ -143,7 +143,7 @@ let W = i.memo(function(e) {
       isEditing: null != S,
       keyboardModeEnabled: Z,
       hasMoreAfter: b.hasMoreAfter
-    }), J = (0, c.e7)([C.Z], () => P.Z.can(B.Plq.READ_MESSAGE_HISTORY, g) ? null : C.Z.getViewingRolesTimestamp(g.getGuildId())), {
+    }), J = (0, c.e7)([C.Z], () => I.Z.can(B.Plq.READ_MESSAGE_HISTORY, g) ? null : C.Z.getViewingRolesTimestamp(g.getGuildId())), {
       channelStreamMarkup: $,
       newMessagesBar: ee,
       jumpToPresentBar: et,
@@ -156,7 +156,7 @@ let W = i.memo(function(e) {
       showNewMessagesBar: y,
       messageDisplayCompact: x,
       channelStream: v,
-      uploads: j,
+      uploads: O,
       loadMore: X.loadMore,
       scrollManager: X,
       specs: K,
@@ -280,16 +280,16 @@ let W = i.memo(function(e) {
     let {
       canManageMessages: h,
       permissionVersion: C,
-      canChat: O
+      canChat: j
     } = function(e) {
       let t = e.getGuildId(),
         n = (0, c.e7)([S.Z], () => null == t || S.Z.canChatInGuild(t), [t]),
         {
           canManageMessages: r,
           permissionVersion: i
-        } = (0, c.cj)([P.Z], () => ({
-          canManageMessages: P.Z.can(B.Plq.MANAGE_MESSAGES, e),
-          permissionVersion: null != t ? P.Z.getGuildVersion(t) : null
+        } = (0, c.cj)([I.Z], () => ({
+          canManageMessages: I.Z.can(B.Plq.MANAGE_MESSAGES, e),
+          permissionVersion: null != t ? I.Z.getGuildVersion(t) : null
         }), [e, t]);
       return {
         canChat: n,
@@ -335,7 +335,7 @@ let W = i.memo(function(e) {
       editingMessageId: q
     } = function(e) {
       var t, n;
-      let r = (0, c.e7)([I.Z], () => I.Z.getMessages(e.id), [e.id]),
+      let r = (0, c.e7)([P.Z], () => P.Z.getMessages(e.id), [e.id]),
         l = (0, c.e7)([Z.ZP], () => {
           var t;
           return null != (t = Z.ZP.getOldestUnreadMessageId(e.id)) ? t : null
@@ -347,7 +347,7 @@ let W = i.memo(function(e) {
         }, {
           autoTrackExposure: !1
         }),
-        o = null != (n = null == (t = T.default.getUser(j.default.getId())) ? void 0 : t.hasFlag(B.xW$.SPAMMER)) && n,
+        o = null != (n = null == (t = T.default.getUser(O.default.getId())) ? void 0 : t.hasFlag(B.xW$.SPAMMER)) && n,
         s = (0, p.ts)(e),
         u = (0, _.Z)("use_topic_dividers_in_chat"),
         d = (0, c.Wu)([x.Z], () => {
@@ -397,7 +397,7 @@ let W = i.memo(function(e) {
           uploads: (0, c.e7)([N.Z], () => N.Z.getFiles(t.id), [t]),
           unreadCount: (0, c.e7)([Z.ZP], () => Z.ZP.getUnreadCount(t.id), [t]),
           hasUnreads: null != Y,
-          canChat: O,
+          canChat: j,
           editingMessageId: q,
           fontSize: M,
           keyboardModeEnabled: U,

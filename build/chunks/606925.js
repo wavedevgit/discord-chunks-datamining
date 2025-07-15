@@ -1,4 +1,4 @@
-/** Chunk was on 81872 **/
+/** Chunk was on 86350 **/
 n.d(t, {
   Z: () => u
 });
@@ -6,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(442837),
   l = n(231757),
-  o = n(553795),
-  a = n(915863),
+  a = n(553795),
+  o = n(915863),
   s = n(388032),
   c = n(289356);
 
@@ -17,17 +17,17 @@ function u(e) {
     color: n,
     look: u,
     onAction: d,
-    Icon: p
+    Icon: f
   } = e;
-  if ((0, i.e7)([o.Z], () => o.Z.getAccounts().some(e => e.type === t.type))) return null;
-  let f = null != p ? (0, r.jsx)(p, {
+  if ((0, i.e7)([a.Z], () => a.Z.getAccounts().some(e => e.type === t.type))) return null;
+  let p = null != f ? (0, r.jsx)(f, {
     className: c.platformIcon
   }) : (0, r.jsx)("img", {
     alt: "",
     className: c.platformIcon,
     src: t.icon.whiteSVG
   });
-  return (0, r.jsx)(a.Z, {
+  return (0, r.jsx)(o.Z, {
     onClick: () => {
       null == d || d(), (0, l.Z)({
         platformType: t.type,
@@ -39,7 +39,7 @@ function u(e) {
     fullWidth: !0,
     children: (0, r.jsxs)("div", {
       className: c.flex,
-      children: [f, s.intl.format(s.t.XWSHTU, {
+      children: [p, s.intl.format(s.t.XWSHTU, {
         platform: t.name
       })]
     })

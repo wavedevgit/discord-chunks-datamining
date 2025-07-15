@@ -1,6 +1,6 @@
 /** Chunk was on 51977 **/
 n.d(t, {
-  Z: () => j
+  Z: () => O
 });
 var r = n(255367),
   i = n(73800),
@@ -32,20 +32,20 @@ function v(e) {
   }), a = (0, h.Kt)(), {
     verifyAgreementButtonText: c,
     verifyGateDescription: v
-  } = (0, h.a1)((0, m.Y2)(t) ? y.L0.NSFW_SERVER : y.L0.NSFW_CHANNEL), j = i.useCallback(() => {
+  } = (0, h.a1)((0, m.Y2)(t) ? y.L0.NSFW_SERVER : y.L0.NSFW_CHANNEL), O = i.useCallback(() => {
     null != t && u.Z.nsfwReturnToSafety(t.id)
-  }, [t]), O = i.useCallback(() => {
+  }, [t]), j = i.useCallback(() => {
     null != t && u.Z.nsfwAgree(t.id)
   }, [t]), E = i.useCallback(() => {
     d.Z.showAgeVerificationGetStartedModal(p.cU.NSFW_GUILD)
-  }, []), S = (0, m.Y2)(t), I = C.intl.string(S ? C.t.xi46lp : C.t.ZmwvDQ);
+  }, []), S = (0, m.Y2)(t), P = C.intl.string(S ? C.t.xi46lp : C.t.ZmwvDQ);
   return a ? (0, r.jsx)(f.Z, {
     guildId: null == t ? void 0 : t.id,
     channelId: n,
     modalType: p.it.NSFW_CHANNEL_AGE_VERIFY,
     onAgree: E,
-    onDisagree: j,
-    title: I,
+    onDisagree: O,
+    title: P,
     description: v,
     agreement: c,
     agreementButtonColor: s.zx.Colors.BRAND,
@@ -55,8 +55,8 @@ function v(e) {
     guildId: null == t ? void 0 : t.id,
     channelId: n,
     modalType: p.it.NSFW_CHANNEL_UNDERAGE,
-    onAgree: O,
-    onDisagree: j,
+    onAgree: j,
+    onDisagree: O,
     title: C.intl.string(C.t.NEabBQ),
     description: C.intl.format(C.t["2kHZen"], {
       helpURL: b.Z.getArticleURL(_.BhN.NSFW_AGE_GATING)
@@ -68,15 +68,15 @@ function v(e) {
     guildId: null == t ? void 0 : t.id,
     channelId: n,
     modalType: p.it.NSFW_CHANNEL_VERIFIED,
-    onAgree: O,
-    onDisagree: j,
-    title: I,
+    onAgree: j,
+    onDisagree: O,
+    title: P,
     description: C.intl.string(S ? C.t.ZtuRtr : C.t.E4Cd5O),
     agreement: C.intl.string(C.t.wVq7ur),
     disagreement: C.intl.string(C.t["/g10LC"])
   })
 }
-let j = function(e) {
+let O = function(e) {
   let {
     guild: t,
     channelId: n,

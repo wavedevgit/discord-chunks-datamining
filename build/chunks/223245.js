@@ -1,16 +1,16 @@
-/** Chunk was on 92233 **/
+/** Chunk was on 48812 **/
 n.d(t, {
-  Z: () => r
+  Z: () => i
 }), n(388685);
-var i = n(570140);
-let r = {
+var r = n(570140);
+let i = {
   setEnabled(e) {
     this.update({
       enabled: e
     })
   },
   update(e) {
-    for (let t of Object.keys(e)) i.Z.dispatch({
+    for (let t of Object.keys(e)) r.Z.dispatch({
       type: "STREAMER_MODE_UPDATE",
       key: t,
       value: e[t]

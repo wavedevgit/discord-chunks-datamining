@@ -23,12 +23,12 @@ var i = n(657707),
   C = n(78806),
   x = n(91433),
   v = n(900927),
-  j = n(944043),
-  O = n(678738),
+  O = n(944043),
+  j = n(678738),
   E = n(638970),
   S = n(502762),
-  I = n(530),
-  P = n(827313),
+  P = n(530),
+  I = n(827313),
   Z = n(228168),
   N = n(981631),
   T = n(388032),
@@ -58,7 +58,7 @@ function w(e) {
   });
   return (0, r.jsxs)("div", {
     className: A.body,
-    children: [(0, r.jsx)(I.Z, {
+    children: [(0, r.jsx)(P.Z, {
       user: t,
       nickname: p.ZP.getName(null, R.id, t),
       pronouns: null == w ? void 0 : w.pronouns,
@@ -70,7 +70,7 @@ function w(e) {
       nicknameIcons: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(y.Z, {
           userId: t.id
-        }), !F && (0, r.jsx)(P.Z, {
+        }), !F && (0, r.jsx)(I.Z, {
           userId: t.id,
           isHovering: M,
           onOpenProfile: D
@@ -89,12 +89,12 @@ function w(e) {
         applicationId: e.applicationId,
         channelId: R.id
       })
-    }, e.applicationId)), (0, r.jsx)(j.Z, {
+    }, e.applicationId)), (0, r.jsx)(O.Z, {
       user: t,
       className: A.card
     }), t.isProvisional && (0, r.jsx)(S.Z.Overlay, {
       className: A.card,
-      children: (0, r.jsx)(O.Z, {
+      children: (0, r.jsx)(j.Z, {
         heading: T.intl.string(T.t.Iyka0d),
         headingIcon: (0, r.jsx)(i.P4T, {
           size: "xxs",
@@ -117,7 +117,7 @@ function w(e) {
       className: A.card
     }), (0, r.jsxs)(S.Z.Overlay, {
       className: A.overlay,
-      children: [!F && (null == w ? void 0 : w.bio) != null && (null == w ? void 0 : w.bio) !== "" && (0, r.jsx)(O.Z, {
+      children: [!F && (null == w ? void 0 : w.bio) != null && (null == w ? void 0 : w.bio) !== "" && (0, r.jsx)(j.Z, {
         heading: T.intl.string(T.t["61W33d"]),
         headingColor: "header-primary",
         children: (0, r.jsx)(b.Z, {
@@ -130,13 +130,13 @@ function w(e) {
         applicationId: H.id,
         commandIds: H.popularApplicationCommandIds,
         channel: R
-      }), B.length > 0 && (0, r.jsx)(O.Z, {
+      }), B.length > 0 && (0, r.jsx)(j.Z, {
         heading: T.intl.string(T.t["Uv/eT0"]),
         headingColor: "header-primary",
         children: (0, r.jsx)(C.Z, {
           applicationIds: B
         })
-      }), (0, r.jsx)(O.Z, {
+      }), (0, r.jsx)(j.Z, {
         heading: t.bot ? T.intl.string(T.t["A//N4u"]) : T.intl.string(T.t.a6XYDw),
         headingColor: "header-primary",
         children: (0, r.jsx)(v.Z, {

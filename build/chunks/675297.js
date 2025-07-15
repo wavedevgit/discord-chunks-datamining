@@ -1,4 +1,4 @@
-/** Chunk was on 670 **/
+/** Chunk was on 62059 **/
 n.d(t, {
   H: () => y
 }), n(953529);
@@ -16,8 +16,8 @@ var i = n(399606),
   m = n(676651),
   f = n(623488),
   _ = n(942833),
-  g = n(391181),
-  h = n(964793),
+  h = n(391181),
+  g = n(964793),
   b = n(226060),
   E = n(981631);
 
@@ -26,9 +26,9 @@ function y(e) {
     guildProductListing: t,
     guildId: n,
     location: y,
-    shouldShowFullDescriptionButton: C = !0,
-    hideRoleTag: v = !1,
-    lineClamp: x = 1,
+    shouldShowFullDescriptionButton: x = !0,
+    hideRoleTag: C = !1,
+    lineClamp: v = 1,
     cardWidth: O,
     cardHeight: j,
     thumbnailHeight: I,
@@ -39,14 +39,14 @@ function y(e) {
     return s.Z.getRole(n, null != (e = null == t ? void 0 : t.role_id) ? e : E.lds)
   }), A = (0, l.U)(t, 600), w = (0, _.C)(t), Z = (0, d.SO)(N), {
     shouldHideGuildPurchaseEntryPoints: R
-  } = (0, o.uP)(n), D = (0, _.k)(t);
+  } = (0, o.uP)(n), k = (0, _.k)(t);
   if (null == N || R) return null;
-  let L = () => (0, h.e)({
+  let L = () => (0, g.e)({
       guildId: n,
       guildProductListingId: t.id,
       analyticsLocation: y
     }),
-    M = (0, r.jsx)(g.m, {
+    D = (0, r.jsx)(h.m, {
       product: t,
       guildId: n,
       showEditProduct: Z,
@@ -74,7 +74,7 @@ function y(e) {
     imageUrl: A,
     name: t.name,
     description: t.description,
-    formattedPrice: D,
+    formattedPrice: k,
     role: P,
     ctaComponent: (0, r.jsx)(b.Z, {
       guildId: n,
@@ -82,13 +82,13 @@ function y(e) {
       sourceAnalyticsLocations: y
     }),
     productType: w,
-    shouldShowFullDescriptionButton: C,
+    shouldShowFullDescriptionButton: x,
     onShowFullDescription: L,
     onTapCard: L,
-    actionMenu: M,
+    actionMenu: D,
     showOpaqueBackground: T,
-    hideRoleTag: v,
-    lineClamp: x,
+    hideRoleTag: C,
+    lineClamp: v,
     cardWidth: O,
     cardHeight: j,
     thumbnailHeight: I,

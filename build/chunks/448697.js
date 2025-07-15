@@ -1,18 +1,18 @@
-/** Chunk was on 81872 **/
+/** Chunk was on 86350 **/
 n.d(t, {
   R: () => g
 });
 var r = n(255367),
   i = n(73800),
   l = n(392711),
-  o = n(108542),
-  a = n(442837),
+  a = n(108542),
+  o = n(442837),
   s = n(755721),
   c = n(481060),
   u = n(709706),
   d = n(378441),
-  p = n(358820),
-  f = n(388032),
+  f = n(358820),
+  p = n(388032),
   m = n(690410);
 
 function g() {
@@ -20,7 +20,7 @@ function g() {
     hasActiveDownloads: e,
     progress: t
   } = function() {
-    let e = (0, a.cj)([u.Z], () => u.Z.getOngoingDownloads()),
+    let e = (0, o.cj)([u.Z], () => u.Z.getOngoingDownloads()),
       t = i.useRef({});
     i.useEffect(() => {
       0 === Object.entries(e).length && (t.current = {}), Object.assign(t.current, e)
@@ -32,7 +32,7 @@ function g() {
         } = e;
         return (null != t ? t : 0) > 0
       }),
-      o = (0, l.sumBy)(n, e => {
+      a = (0, l.sumBy)(n, e => {
         var t;
         return null != (t = null == e ? void 0 : e.downloadedBytes) ? t : 0
       }),
@@ -42,7 +42,7 @@ function g() {
       });
     return {
       hasActiveDownloads: r,
-      progress: 0 === s ? 0 : Math.floor(o / s * 100)
+      progress: 0 === s ? 0 : Math.floor(a / s * 100)
     }
   }(), {
     activeVoice: n
@@ -60,7 +60,7 @@ function g() {
       opacity: 0,
       translateY: 80
     }
-  }, "respect-motion-settings")((e, n) => null != n ? (0, r.jsx)(o.animated.div, {
+  }, "respect-motion-settings")((e, n) => null != n ? (0, r.jsx)(a.animated.div, {
     style: e,
     className: m.floaterWrapper,
     children: (0, r.jsxs)("div", {
@@ -70,17 +70,17 @@ function g() {
         children: [(0, r.jsx)(c.Text, {
           variant: "text-sm/semibold",
           color: "text-primary",
-          children: f.intl.format(f.t["r+uZYW"], {
+          children: p.intl.format(p.t["r+uZYW"], {
             progress: t
           })
         }), (0, r.jsx)(s.zx, {
           look: s.zx.Looks.LINK,
           size: s.zx.Sizes.MIN,
-          onClick: p.ge,
+          onClick: f.ge,
           children: (0, r.jsx)(c.Text, {
             variant: "text-sm/normal",
             color: "text-primary",
-            children: f.intl.string(f.t["ETE/oK"])
+            children: p.intl.string(p.t["ETE/oK"])
           })
         })]
       }), (0, r.jsx)(c.Exd, {

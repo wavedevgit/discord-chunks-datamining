@@ -22,12 +22,12 @@ var r = n(255367),
   C = n(651183),
   x = n(853476),
   v = n(390322),
-  j = n(616286),
-  O = n(975146),
+  O = n(616286),
+  j = n(975146),
   E = n(597998),
   S = n(606304),
-  I = n(358221),
-  P = n(355827),
+  P = n(358221),
+  I = n(355827),
   Z = n(185935),
   N = n(354459),
   T = n(388032),
@@ -69,9 +69,9 @@ function M(e) {
   let {
     channelId: t,
     guildId: n
-  } = e, i = (0, c.Wu)([S.Z, I.Z], () => {
+  } = e, i = (0, c.Wu)([S.Z, P.Z], () => {
     let e = Date.now();
-    return s()(S.Z.getSpeakers()).map(e => I.Z.getParticipant(t, e)).filter(e => null != e && e.type === N.fO.USER && e.speaking && !(0, y.ZP)(e)).sortBy(t => -S.Z.getSpeakingDuration(t.user.id, e)).slice(0, 3).value()
+    return s()(S.Z.getSpeakers()).map(e => P.Z.getParticipant(t, e)).filter(e => null != e && e.type === N.fO.USER && e.speaking && !(0, y.ZP)(e)).sortBy(t => -S.Z.getSpeakingDuration(t.user.id, e)).slice(0, 3).value()
   });
   return 0 === i.length ? null : (0, r.jsx)(r.Fragment, {
     children: i.map((e, t) => (0, r.jsx)(u.ua7, {
@@ -104,11 +104,11 @@ function D(e) {
     selectedParticipant: E,
     userParticipantCount: S,
     participantsListOpen: T
-  } = (0, c.cj)([I.Z], () => ({
-    selectedParticipant: I.Z.getSelectedParticipant(s),
-    voiceParticipantsHidden: I.Z.getVoiceParticipantsHidden(s),
-    userParticipantCount: I.Z.getUserParticipantCount(s),
-    participantsListOpen: I.Z.getParticipantsListOpen(s)
+  } = (0, c.cj)([P.Z], () => ({
+    selectedParticipant: P.Z.getSelectedParticipant(s),
+    voiceParticipantsHidden: P.Z.getVoiceParticipantsHidden(s),
+    userParticipantCount: P.Z.getUserParticipantCount(s),
+    participantsListOpen: P.Z.getParticipantsListOpen(s)
   }), [s]), D = t.isGuildVoice() && !n, {
     hasParticipantsPanel: k
   } = (0, Z.Z)({
@@ -141,7 +141,7 @@ function D(e) {
     targetElementRef: l,
     position: "bottom",
     renderPopout: () => (0, r.jsx)(v.Z, {
-      children: (0, r.jsx)(P.Z, {
+      children: (0, r.jsx)(I.Z, {
         channel: t
       })
     }),
@@ -149,7 +149,7 @@ function D(e) {
       let {
         isShown: n
       } = t;
-      return (0, i.createElement)(O.Z, R(w({}, e), {
+      return (0, i.createElement)(j.Z, R(w({}, e), {
         buttonRef: l,
         isActive: n,
         count: S,
@@ -159,12 +159,12 @@ function D(e) {
     }
   }, "call-members-popout")), U && !B && F.push((0, r.jsx)(_.Z, {
     className: A.button
-  }, "for-later")), L && F.push((0, r.jsx)(O.Z, {
+  }, "for-later")), L && F.push((0, r.jsx)(j.Z, {
     className: a()(A.button, {
       [A.lastButton]: n
     }),
     onClick: () => d.Z.toggleParticipantsList(t.id, !T)
-  }, "participants-list-button")), D && F.push((0, r.jsx)(j.T, {
+  }, "participants-list-button")), D && F.push((0, r.jsx)(O.T, {
     channelId: t.id,
     className: a()(A.button, {
       [A.lastButton]: T

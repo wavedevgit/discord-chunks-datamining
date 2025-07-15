@@ -56,24 +56,24 @@ function y(e) {
     senderId: C
   } = e, x = i.useCallback(() => {
     (0, d.T)(t, [y])
-  }, [t, y]), v = (0, a.e7)([u.Z], () => u.Z.isBlocked(C)), j = i.useMemo(() => ({
+  }, [t, y]), v = (0, a.e7)([u.Z], () => u.Z.isBlocked(C)), O = i.useMemo(() => ({
     channelId: t,
     warningId: y,
     senderId: C,
     warningType: p.pj.INAPPROPRIATE_CONVERSATION_TIER_2
   }), [t, y, C]);
   i.useEffect(() => {
-    (0, h.KQ)(_(b({}, j), {
+    (0, h.KQ)(_(b({}, O), {
       viewName: h.pb.SAFETY_WARNING_BANNER
     })), c.Z.increment({
       name: l.V.SAFETY_WARNING_VIEW
     })
-  }, [j]);
-  let O = i.useCallback(e => {
-      (0, h.qc)(_(b({}, j), {
+  }, [O]);
+  let j = i.useCallback(e => {
+      (0, h.qc)(_(b({}, O), {
         cta: e
       }))
-    }, [j]),
+    }, [O]),
     E = i.useCallback(() => {
       (0, s.ZDy)(async () => {
         let {
@@ -95,15 +95,15 @@ function y(e) {
         }
       }, {
         modalKey: m.X_
-      }), O(h.NM.USER_BANNER_OPEN_SAFETY_TOOLS)
-    }, [t, C, y, O]),
+      }), j(h.NM.USER_BANNER_OPEN_SAFETY_TOOLS)
+    }, [t, C, y, j]),
     S = i.useCallback(() => {
-      x(), O(h.NM.USER_BANNER_BLOCK_CONFIRM)
-    }, [x, O]),
-    I = i.useCallback(() => {
-      x(), O(h.NM.USER_BANNER_BLOCK_AND_REPORT_CONFIRM)
-    }, [x, O]),
+      x(), j(h.NM.USER_BANNER_BLOCK_CONFIRM)
+    }, [x, j]),
     P = i.useCallback(() => {
+      x(), j(h.NM.USER_BANNER_BLOCK_AND_REPORT_CONFIRM)
+    }, [x, j]),
+    I = i.useCallback(() => {
       (0, s.ZDy)(async () => {
         let {
           default: e
@@ -116,9 +116,9 @@ function y(e) {
           return (0, r.jsx)(e, {
             transitionState: i,
             onBlock: S,
-            onBlockAndReport: I,
+            onBlockAndReport: P,
             onCancel: () => {
-              null == l || l(), O(h.NM.USER_BANNER_BLOCK_CANCEL)
+              null == l || l(), j(h.NM.USER_BANNER_BLOCK_CANCEL)
             },
             onClose: l,
             userId: C,
@@ -126,7 +126,7 @@ function y(e) {
           })
         }
       })
-    }, [S, I, C, t, O]);
+    }, [S, P, C, t, j]);
   return (0, r.jsx)(f.Q, {
     channelId: t,
     warningId: y,
@@ -142,7 +142,7 @@ function y(e) {
     }, ...v ? [] : [{
       text: g.intl.string(g.t["7q0bNT"]),
       color: o.zx.Colors.PRIMARY,
-      onclick: P
+      onclick: I
     }]]
   })
 }

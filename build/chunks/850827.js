@@ -1,4 +1,4 @@
-/** Chunk was on 81872 **/
+/** Chunk was on 86350 **/
 n.d(t, {
   Z: () => M
 });
@@ -6,28 +6,28 @@ var r = n(255367);
 n(73800);
 var i = n(120356),
   l = n.n(i),
-  o = n(512722),
-  a = n.n(o),
+  a = n(512722),
+  o = n.n(a),
   s = n(442837),
   c = n(755721),
   u = n(730749),
   d = n(726542),
-  p = n(40851),
-  f = n(600164),
+  f = n(40851),
+  p = n(600164),
   m = n(750154),
   g = n(892001),
-  b = n(594174),
-  _ = n(374129),
-  v = n(639351),
-  h = n(503438),
+  _ = n(594174),
+  b = n(374129),
+  h = n(639351),
+  v = n(503438),
   y = n(802856),
   O = n(387903),
   j = n(606925),
   S = n(719216),
   x = n(429589),
   I = n(636245),
-  P = n(697761),
-  C = n(611459),
+  C = n(697761),
+  P = n(611459),
   E = n(544671),
   w = n(757182),
   T = n(910424),
@@ -42,15 +42,15 @@ let k = e => {
       color: n,
       look: i,
       activity: l,
-      onAction: o
-    } = e, a = (0, p.Aq)();
+      onAction: a
+    } = e, o = (0, f.Aq)();
     return (0, r.jsx)(S.Z, {
       user: t,
       color: n,
       look: i,
       activity: l,
       onAction: () => {
-        a.dispatch(N.CkL.POPOUT_CLOSE), (0, g.closeUserProfileModal)(), null == o || o()
+        o.dispatch(N.CkL.POPOUT_CLOSE), (0, g.closeUserProfileModal)(), null == a || a()
       }
     }, "custom-activity-button")
   },
@@ -59,22 +59,22 @@ let k = e => {
       activity: t,
       embeddedActivity: n,
       user: i,
-      applicationStream: o,
+      applicationStream: a,
       className: u,
-      guildId: p,
+      guildId: f,
       channelId: g,
       source: M,
       color: R = c.zx.Colors.WHITE,
       look: F = c.zx.Looks.OUTLINED,
       type: U,
       onAction: V
-    } = e, B = (0, s.e7)([b.default], () => {
-      let e = b.default.getCurrentUser();
-      return a()(null != e, "UserActivityActions: currentUser cannot be undefined"), e
-    }), Y = U === O.Y.STREAM_PREVIEW || null != o, z = (0, h.Z)(t), W = z || Y ? f.Z.Direction.HORIZONTAL : f.Z.Direction.VERTICAL;
+    } = e, B = (0, s.e7)([_.default], () => {
+      let e = _.default.getCurrentUser();
+      return o()(null != e, "UserActivityActions: currentUser cannot be undefined"), e
+    }), Y = U === O.Y.STREAM_PREVIEW || null != a, W = (0, v.Z)(t), z = W || Y ? p.Z.Direction.HORIZONTAL : p.Z.Direction.VERTICAL;
     if ((null == t ? void 0 : t.application_id) === Z.bO) {
-      var H, G;
-      return H = function(e) {
+      var G, H;
+      return G = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -91,21 +91,21 @@ let k = e => {
           })
         }
         return e
-      }({}, t), G = G = {
+      }({}, t), H = H = {
         buttons: [A.intl.string(D.default["Fv/2Oz"])],
         metadata: {
           button_urls: [Z.U8]
         }
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(H, Object.getOwnPropertyDescriptors(G)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(G, Object.getOwnPropertyDescriptors(H)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(G)).forEach(function(e) {
-        Object.defineProperty(H, e, Object.getOwnPropertyDescriptor(G, e))
-      }), t = H, (0, r.jsx)(k, {
+      })(Object(H)).forEach(function(e) {
+        Object.defineProperty(G, e, Object.getOwnPropertyDescriptor(H, e))
+      }), t = G, (0, r.jsx)(k, {
         user: i,
         color: R,
         look: F,
@@ -113,12 +113,12 @@ let k = e => {
         onAction: V
       })
     }
-    let J = W === f.Z.Direction.VERTICAL;
-    return (0, r.jsx)(f.Z, {
+    let J = z === p.Z.Direction.VERTICAL;
+    return (0, r.jsx)(p.Z, {
       grow: 0,
-      align: f.Z.Align.STRETCH,
-      direction: W,
-      wrap: J ? f.Z.Wrap.WRAP : f.Z.Wrap.NO_WRAP,
+      align: p.Z.Align.STRETCH,
+      direction: z,
+      wrap: J ? p.Z.Wrap.WRAP : p.Z.Wrap.NO_WRAP,
       className: l()(u, L.buttonsWrapper, J ? L.vertical : L.horizontal),
       children: (() => {
         if ((0, y.Z)(t)) return (0, r.jsx)(j.Z, {
@@ -126,27 +126,27 @@ let k = e => {
           look: F,
           color: R,
           onAction: V,
-          Icon: v.Z
+          Icon: h.Z
         }, "ConnectPlatformActivityButton");
         if ((null == t ? void 0 : t.platform) === N.M7m.PS4 || (null == t ? void 0 : t.platform) === N.M7m.PS5) return (0, r.jsx)(j.Z, {
           look: F,
           color: R,
           platform: d.Z.get(N.ABu.PLAYSTATION),
           onAction: V,
-          Icon: _.Z
+          Icon: b.Z
         }, "ConnectPlatformActivityButton");
-        if (z) {
+        if (W) {
           let e = (0, r.jsx)(E.Z, {
               activity: t,
               user: i,
-              guildId: p,
+              guildId: f,
               channelId: g,
               source: M,
               look: F,
               color: R,
               onAction: V
             }, "spotify-activity-sync-button"),
-            n = (0, r.jsx)(C.Z, {
+            n = (0, r.jsx)(P.Z, {
               activity: t,
               user: i,
               source: M,
@@ -172,7 +172,7 @@ let k = e => {
           isCurrentUser: B.id === i.id,
           color: R,
           look: F,
-          applicationStream: o,
+          applicationStream: a,
           onAction: V
         }, "watch-button") : (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(w.Z, {
@@ -187,7 +187,7 @@ let k = e => {
             color: R,
             look: F,
             onAction: V
-          }, "join-activity-button"), (0, r.jsx)(P.Z, {
+          }, "join-activity-button"), (0, r.jsx)(C.Z, {
             activity: t,
             user: i,
             color: R,

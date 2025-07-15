@@ -1,6 +1,6 @@
-/** Chunk was on 670 **/
+/** Chunk was on 62059 **/
 n.d(t, {
-  l: () => h
+  l: () => g
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -15,19 +15,19 @@ var r = n(255367),
   m = n(287151),
   f = n(92254),
   _ = n(588429);
-let g = i.memo(function(e) {
+let h = i.memo(function(e) {
     let t, n, {
         useChatFontScaling: i,
         hideEmoji: l,
         emoji: c,
-        className: g,
-        count: h,
+        className: h,
+        count: g,
         me: b,
         me_burst: E,
         burst_count: y,
-        burst_colors: C,
-        readOnly: v,
-        isLurking: x,
+        burst_colors: x,
+        readOnly: C,
+        isLurking: v,
         isGuest: O,
         isPendingMember: j,
         type: I,
@@ -35,18 +35,18 @@ let g = i.memo(function(e) {
       } = e,
       T = I === p.O.BURST,
       N = (0, m.y4)(b, E, I),
-      P = (0, d.v)(T && null != C ? C : []),
+      P = (0, d.v)(T && null != x ? x : []),
       A = i ? _ : f,
-      w = T ? y : h,
+      w = T ? y : g,
       Z = (0, u.y)(w, m.aO),
       R = {};
     if (T && null != P) {
-      var D;
+      var k;
       let {
         accentColor: e,
         backgroundColor: r,
         opacity: i
-      } = P, l = null != (D = (0, o.wK)(null != r ? r : "", i)) ? D : "";
+      } = P, l = null != (k = (0, o.wK)(null != r ? r : "", i)) ? k : "";
       N && (R.borderColor = r), R.background = l, t = e, n = e
     }
     let L = {
@@ -55,9 +55,9 @@ let g = i.memo(function(e) {
       borderColor: n
     };
     return (0, r.jsxs)("div", {
-      className: a()(A.reaction, A.reactionInner, g, {
+      className: a()(A.reaction, A.reactionInner, h, {
         [A.reactionMe]: N,
-        [A.reactionReadOnly]: v && !x && !j && !O
+        [A.reactionReadOnly]: C && !v && !j && !O
       }),
       style: R,
       children: [(0, r.jsx)(s.Z, {
@@ -75,7 +75,7 @@ let g = i.memo(function(e) {
       })]
     })
   }),
-  h = i.memo(function(e) {
+  g = i.memo(function(e) {
     var {
       showImmediate: t,
       reactions: n
@@ -98,7 +98,7 @@ let g = i.memo(function(e) {
       !e || a || s || u(() => {
         o(!0)
       })
-    }, [a, s]), f = (0, c.O)(d), _ = a && !s || t ? m.le : g;
+    }, [a, s]), f = (0, c.O)(d), _ = a && !s || t ? m.le : h;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         ref: f

@@ -1,4 +1,4 @@
-/** Chunk was on 81872 **/
+/** Chunk was on 86350 **/
 e.exports = {
   countdownContainer: "countdownContainer__8fece",
   iconContainer: "iconContainer__8fece",

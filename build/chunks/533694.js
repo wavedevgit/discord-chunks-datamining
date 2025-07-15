@@ -1,6 +1,6 @@
-/** Chunk was on 670 **/
+/** Chunk was on 62059 **/
 n.d(t, {
-  Z: () => g
+  Z: () => h
 });
 var r = n(255367);
 n(73800);
@@ -53,20 +53,20 @@ function _(e) {
   })
 }
 
-function g(e) {
+function h(e) {
   var t, i, l;
   let {
     channel: a,
     message: d,
     compact: f
-  } = e, g = (0, o.ZP)(d), h = (0, s.l)({
+  } = e, h = (0, o.ZP)(d), g = (0, s.l)({
     user: d.author,
     channelId: a.id,
     guildId: a.guild_id,
     messageId: d.id
-  })(g), b = m.intl.format(m.t.TQs67u, {
-    username: g.nick,
-    usernameHook: h,
+  })(h), b = m.intl.format(m.t.TQs67u, {
+    username: h.nick,
+    usernameHook: g,
     productName: null != (l = null == (i = d.purchaseNotification) || null == (t = i.guild_product_purchase) ? void 0 : t.product_name) ? l : "",
     handleProductListingClick: () => {
       var e, t, n;
@@ -80,7 +80,7 @@ function g(e) {
       compact: f,
       children: b
     }), (0, r.jsx)(_, {
-      username: g.nick,
+      username: h.nick,
       guildId: a.guild_id,
       user: d.author
     })]

@@ -1,4 +1,4 @@
-/** Chunk was on 670 **/
+/** Chunk was on 62059 **/
 n.d(t, {
   Z: () => p
 });
@@ -38,8 +38,8 @@ function p(e) {
       content: m,
       className: f,
       compact: _,
-      popoutProps: g,
-      hideTimestamp: h = !1,
+      popoutProps: h,
+      hideTimestamp: g = !1,
       withFooter: b = !1
     } = e,
     E = function(e, t) {
@@ -82,11 +82,11 @@ function p(e) {
         author: y,
         guildId: null == p ? void 0 : p.guild_id,
         compact: _,
-        hideTimestamp: h,
+        hideTimestamp: g,
         className: l()(u.header, {
           [u.compact]: _
         })
-      }, null != g ? g : {})),
+      }, null != h ? h : {})),
       compact: _,
       author: y
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

@@ -1,6 +1,6 @@
 /** Chunk was on 51977 **/
 n.d(t, {
-  Z: () => j
+  Z: () => O
 }), n(539854), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -148,7 +148,7 @@ class v extends i.PureComponent {
   }
 }
 
-function j(e) {
+function O(e) {
   var t;
   let {
     participants: n,

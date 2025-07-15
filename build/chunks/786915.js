@@ -46,12 +46,12 @@ function y(e) {
     exitFullScreen: C,
     appContext: x,
     analyticsLocation: v,
-    guildScheduledEvent: j,
-    shouldPrioritizeGroupPlusIcon: O = !1,
+    guildScheduledEvent: O,
+    shouldPrioritizeGroupPlusIcon: j = !1,
     isRichPresenceInvite: E = !1,
     iconClassName: S,
-    look: I,
-    size: P,
+    look: P,
+    size: I,
     buttonText: Z,
     color: N
   } = e, T = function(e, t) {
@@ -76,7 +76,7 @@ function y(e) {
     R = null == y ? void 0 : y.getGuildId(),
     M = (0, a.e7)([p.Z], () => null != R ? p.Z.getGuild(R) : null, [R]),
     D = (0, a.e7)([h.Z], () => null != t ? h.Z.getApplicationActivity(t) : void 0),
-    k = null == t || O ? o.ejJ : o.gQj,
+    k = null == t || j ? o.ejJ : o.gQj,
     L = null != t ? b.intl.string(b.t["OzOM/v"]) : b.intl.string(b.t["6F9ivr"]);
   return null != D && E ? (0, r.jsx)(m.Z, {
     onClick: () => {
@@ -85,8 +85,8 @@ function y(e) {
     iconComponent: k,
     label: L,
     iconClassName: S,
-    look: I,
-    size: P,
+    look: P,
+    size: I,
     buttonText: Z,
     color: null != N ? N : void 0
   }) : null != M && null != y && f.Z.can(g.Plq.CREATE_INSTANT_INVITE, y) ? (0, r.jsx)(m.Z, _({
@@ -140,14 +140,14 @@ function y(e) {
           appContext: null != x ? x : A,
           exitFullScreen: C,
           analyticsLocation: v,
-          guildScheduledEvent: j
+          guildScheduledEvent: O
         })
     },
     iconComponent: k,
     label: L,
     iconClassName: S,
-    look: I,
-    size: P,
+    look: P,
+    size: I,
     color: N,
     buttonText: Z
   }, T)) : null

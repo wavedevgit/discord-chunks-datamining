@@ -25,10 +25,10 @@ function g(e) {
   if ((0, c.ZP)(() => {
       y && s.Z.searchGuildBans(t.guild_id, void 0, [null == g ? void 0 : g.id]).finally(() => x(!1))
     }), !v) return null;
-  let j = !0 === _ ? m.intl.string(f.default.dpfwQ0) : m.intl.string(f.default.ASv23d),
-    O = "ban-user-".concat(null == g ? void 0 : g.id);
+  let O = !0 === _ ? m.intl.string(f.default.dpfwQ0) : m.intl.string(f.default.ASv23d),
+    j = "ban-user-".concat(null == g ? void 0 : g.id);
   return (0, r.jsx)(h.Z, {
-    text: j,
+    text: O,
     icon: o.pgN,
     onClick: () => {
       null != g && (0, o.ZDy)(async () => {
@@ -74,5 +74,5 @@ function g(e) {
     disabled: !0 === _ || C,
     submitting: C,
     color: a.zx.Colors.RED
-  }, O)
+  }, j)
 }

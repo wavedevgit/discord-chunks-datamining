@@ -1,6 +1,6 @@
-/** Chunk was on 670 **/
+/** Chunk was on 62059 **/
 n.d(t, {
-  Z: () => C
+  Z: () => x
 }), n(997841), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -15,15 +15,15 @@ var r = n(255367),
   m = n(131704),
   f = n(630388),
   _ = n(411198),
-  g = n(277707),
-  h = n(358595),
+  h = n(277707),
+  g = n(358595),
   b = n(981631),
   E = n(388032),
   y = n(273254);
 
-function C(e) {
-  var t, C, v;
-  let x, O, j, {
+function x(e) {
+  var t, x, C;
+  let v, O, j, {
       onTransitionToInviteChannel: I,
       onAcceptInstantInvite: S,
       guild: T,
@@ -35,16 +35,16 @@ function C(e) {
     {
       channel: Z,
       approximate_member_count: R,
-      approximate_presence_count: D
+      approximate_presence_count: k
     } = N,
     L = N.state === b.r2o.ACCEPTING,
-    M = null != Z ? (0, m.jD)(Z) : null,
-    k = null != T,
-    U = null != M,
-    F = null != M && M.isGuildVocal(),
-    B = null != M && M.isGuildStageVoice(),
+    D = null != Z ? (0, m.jD)(Z) : null,
+    M = null != T,
+    U = null != D,
+    F = null != D && D.isGuildVocal(),
+    B = null != D && D.isGuildStageVoice(),
     G = (0, f.yE)(null != (t = N.flags) ? t : 0, l.$.IS_GUEST_INVITE),
-    H = null != (C = null == T ? void 0 : T.features.has(b.oNc.HUB)) && C,
+    H = null != (x = null == T ? void 0 : T.features.has(b.oNc.HUB)) && x,
     V = null == T ? void 0 : T.id,
     {
       analyticsLocations: z
@@ -57,18 +57,18 @@ function C(e) {
     }, [V, z]),
     Q = i.useCallback(() => {
       let e = "noop";
-      k ? (I(), e = "transition") : (S(), e = "accept"), (0, o.r$)({
+      M ? (I(), e = "transition") : (S(), e = "accept"), (0, o.r$)({
         invite: N,
         action: e,
         inviter_id: P.author.id,
         invite_message_id: P.id
       }, z)
-    }, [N, P, z, k, I, S]);
+    }, [N, P, z, M, I, S]);
   if (null == T) {
-    if (null == N.guild) return (0, r.jsx)(h.Z, {});
-    (T = _.Qs(N.guild)).premiumTier = null != (v = N.guild.premium_tier) ? v : b.Eu4.NONE
+    if (null == N.guild) return (0, r.jsx)(g.Z, {});
+    (T = _.Qs(N.guild)).premiumTier = null != (C = N.guild.premium_tier) ? C : b.Eu4.NONE
   }
-  let J = (0, g.e)({
+  let J = (0, h.e)({
     isVoiceChannel: F,
     isOwnInvite: w,
     isGuest: G,
@@ -105,8 +105,8 @@ function C(e) {
       className: y.infoIcon
     })
   })), F ? (O = (0, r.jsx)(p.Z.Channel, {
-    channel: M
-  }), x = (0, r.jsxs)("span", {
+    channel: D
+  }), v = (0, r.jsxs)("span", {
     className: y.infoTitle,
     children: [E.intl.format(E.t["2wimj4"], {
       guildName: T.name
@@ -117,11 +117,11 @@ function C(e) {
         isBannerVisible: !1
       })
     })]
-  })) : null != R && R >= 5 || null != D && D > 0 ? x = (0, r.jsx)(p.Z.Data, {
+  })) : null != R && R >= 5 || null != k && k > 0 ? v = (0, r.jsx)(p.Z.Data, {
     members: R,
-    membersOnline: D
-  }) : U && (x = (0, r.jsx)(p.Z.Channel, {
-    channel: M,
+    membersOnline: k
+  }) : U && (v = (0, r.jsx)(p.Z.Channel, {
+    channel: D,
     guild: T
   })), (0, r.jsxs)(p.Z, {
     children: [(0, r.jsx)(p.Z.GuildSplash, {
@@ -137,13 +137,13 @@ function C(e) {
         }), (0, r.jsx)(p.Z.Info, {
           title: O,
           onClick: q,
-          children: x
+          children: v
         })]
       }), (0, r.jsx)(p.Z.Button, {
         onClick: Q,
         submitting: L,
         color: p.Z.Button.Colors.GREEN,
-        children: F ? B ? E.intl.string(E.t["7vb2cX"]) : E.intl.string(E.t.gpqgam) : k ? E.intl.string(E.t.cEnaW1) : E.intl.string(E.t.XpeFYm)
+        children: F ? B ? E.intl.string(E.t["7vb2cX"]) : E.intl.string(E.t.gpqgam) : M ? E.intl.string(E.t.cEnaW1) : E.intl.string(E.t.XpeFYm)
       })]
     }), T.features.has(b.oNc.HUB) && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {

@@ -1,6 +1,6 @@
-/** Chunk was on 670 **/
+/** Chunk was on 62059 **/
 n.d(t, {
-  Z: () => x
+  Z: () => v
 }), n(415506);
 var r, i, l, a = n(255367),
   o = n(73800),
@@ -24,7 +24,7 @@ let _ = e => {
       }), p.intl.string(p.t["7eicAA"])]
     })
   },
-  g = e => {
+  h = e => {
     let {
       sku: t,
       className: n
@@ -38,7 +38,7 @@ let _ = e => {
       }), (0, d.Z)(t)]
     })
   },
-  h = e => {
+  g = e => {
     let {
       sku: t,
       className: n
@@ -75,7 +75,7 @@ let _ = e => {
     } = e;
     return (0, a.jsxs)("div", {
       className: c()(m.row, n),
-      children: [(0, a.jsx)(h, {
+      children: [(0, a.jsx)(g, {
         sku: t
       }), (0, a.jsx)(b, {
         sku: t
@@ -84,7 +84,7 @@ let _ = e => {
       })]
     })
   },
-  C = e => {
+  x = e => {
     let {
       className: t
     } = e;
@@ -93,7 +93,7 @@ let _ = e => {
       children: p.intl.string(p.t.QQsaCQ)
     })
   };
-class v extends(r = o.PureComponent) {
+class C extends(r = o.PureComponent) {
   getState() {
     let {
       inLibrary: e,
@@ -115,7 +115,7 @@ class v extends(r = o.PureComponent) {
     } = this.props;
     switch (e) {
       case 5:
-        return (0, a.jsx)(C, {
+        return (0, a.jsx)(x, {
           className: c()(t, n)
         });
       case 1:
@@ -123,7 +123,7 @@ class v extends(r = o.PureComponent) {
           className: c()(t, n)
         });
       case 3:
-        return (0, a.jsx)(g, {
+        return (0, a.jsx)(h, {
           sku: r,
           className: c()(t, n)
         });
@@ -146,11 +146,11 @@ class v extends(r = o.PureComponent) {
     } = this.props;
     switch (e) {
       case 5:
-        return (0, a.jsx)(C, {
+        return (0, a.jsx)(x, {
           className: t
         });
       case 3:
-        return (0, a.jsx)(g, {
+        return (0, a.jsx)(h, {
           sku: n,
           className: c()(m.directoryHeroPricePremium, t)
         });
@@ -173,7 +173,7 @@ class v extends(r = o.PureComponent) {
     } = this.props;
     switch (e) {
       case 5:
-        t = (0, a.jsx)(C, {});
+        t = (0, a.jsx)(x, {});
         break;
       case 2:
         t = (0, a.jsxs)(o.Fragment, {
@@ -181,7 +181,7 @@ class v extends(r = o.PureComponent) {
             className: m.row,
             children: [(0, a.jsx)(E, {
               sku: r
-            }), (0, a.jsx)(h, {
+            }), (0, a.jsx)(g, {
               sku: r
             })]
           }), (0, a.jsx)(b, {
@@ -217,10 +217,10 @@ class v extends(r = o.PureComponent) {
         throw Error("Invalid Price Unit Type")
     }
   }
-}(l = "Types") in v ? Object.defineProperty(v, l, {
+}(l = "Types") in C ? Object.defineProperty(C, l, {
   value: f,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : v[l] = f;
-let x = v
+}) : C[l] = f;
+let v = C

@@ -22,12 +22,12 @@ var r = n(255367),
   C = n(258609),
   x = n(74299),
   v = n(924301),
-  j = n(459502),
-  O = n(856691),
+  O = n(459502),
+  j = n(856691),
   E = n(357156),
   S = n(923973),
-  I = n(829750),
-  P = n(189771),
+  P = n(829750),
+  I = n(189771),
   Z = n(294629),
   N = n(793319),
   T = n(987329),
@@ -125,15 +125,15 @@ function ed(e) {
     canManageGuildEvent: f
   } = (0, E.XJ)(t), m = (0, o.e7)([K.Z], () => K.Z.getStageInstanceByChannel(t.id), [t.id]), g = (0, o.e7)([v.ZP], () => v.ZP.getGuildScheduledEvent(null == m ? void 0 : m.guild_scheduled_event_id)), b = (0, o.e7)([F.Z], () => F.Z.getVoiceChannelId() === t.id, [t.id]), {
     suppress: C
-  } = (0, Z.Z)(t), x = L.default.getId(), [j] = (0, er.Z)(t), O = q.ZP.isModerator(x, t.id), S = (0, W.B)(t.id), I = f(g), {
-    parentAnalyticsLocation: P
+  } = (0, Z.Z)(t), x = L.default.getId(), [O] = (0, er.Z)(t), j = q.ZP.isModerator(x, t.id), S = (0, W.B)(t.id), P = f(g), {
+    parentAnalyticsLocation: I
   } = (0, h.ZP)(), N = i.useRef(null);
   if (!b) return (0, r.jsx)(s.zx, {
     size: s.zx.Sizes.MEDIUM,
     color: s.zx.Colors.GREEN,
     className: a()(eo.buttonSpacing, eo.buttonWithTextButton),
     onClick: () => {
-      (0, _.v)(P, _.d.JOIN_STAGE), (0, z.TM)(t)
+      (0, _.v)(I, _.d.JOIN_STAGE), (0, z.TM)(t)
     },
     children: (0, r.jsxs)("div", {
       className: eo.buttonWithTextInnerContainer,
@@ -159,7 +159,7 @@ function ed(e) {
     channel: t,
     appContext: l
   });
-  return (O || I) && null != m ? (0, r.jsx)(c.yRy, {
+  return (j || P) && null != m ? (0, r.jsx)(c.yRy, {
     targetElementRef: N,
     renderPopout: e => {
       let {
@@ -171,7 +171,7 @@ function ed(e) {
           "aria-label": ea.intl.string(ea.t["3Uj+2t"]),
           onClose: i,
           onSelect: n,
-          onInteraction: (0, y.u)("End Stage", P, {
+          onInteraction: (0, y.u)("End Stage", I, {
             entrypoint: el.A5.CARET
           }),
           children: (0, r.jsx)(c.sNh, {
@@ -202,7 +202,7 @@ function ed(e) {
         popoutOpen: i
       })
     }
-  }) : C && !S || j ? (0, r.jsx)(M.Z, {
+  }) : C && !S || O ? (0, r.jsx)(M.Z, {
     label: ea.intl.string(ea.t.SMKyio),
     onClick: T
   }) : (0, r.jsx)(M.Z, {
@@ -265,10 +265,10 @@ let ef = i.memo(function(e) {
   } = (0, Z.Z)(t), u = (0, W.B)(t.id), d = (0, o.e7)([C.Z], () => null != C.Z.getAwaitingRemoteSessionInfo()), {
     cameraUnavailable: p,
     enabled: _
-  } = (0, S.Z)(), v = (0, P.Z)(t), {
-    limit: j,
-    reachedLimit: O
-  } = (0, I.Z)(t), E = (0, o.e7)([H.default], () => H.default.getCurrentUser()), R = (0, o.e7)([U.Z], () => (0, x.Z)(U.Z)), M = (0, o.e7)([F.Z], () => F.Z.getVoiceChannelId() === t.id, [t.id]), L = (0, o.e7)([f.Z], () => f.Z.getStreamParticipants(t.id)[0], [t.id]), B = (0, X.PK)(t.id), G = j > 0, V = O && !B || null != L && L.user.id !== (null == E ? void 0 : E.id), z = (0, y.u)("AudioDeviceMenu", n, {
+  } = (0, S.Z)(), v = (0, I.Z)(t), {
+    limit: O,
+    reachedLimit: j
+  } = (0, P.Z)(t), E = (0, o.e7)([H.default], () => H.default.getCurrentUser()), R = (0, o.e7)([U.Z], () => (0, x.Z)(U.Z)), M = (0, o.e7)([F.Z], () => F.Z.getVoiceChannelId() === t.id, [t.id]), L = (0, o.e7)([f.Z], () => f.Z.getStreamParticipants(t.id)[0], [t.id]), B = (0, X.PK)(t.id), G = O > 0, V = j && !B || null != L && L.user.id !== (null == E ? void 0 : E.id), z = (0, y.u)("AudioDeviceMenu", n, {
     entrypoint: el.A5.CARET
   }), Y = i.useRef(null), q = i.useRef(null);
   if (null == E) return null;
@@ -306,8 +306,8 @@ let ef = i.memo(function(e) {
         cameraUnavailable: p,
         onChange: N.r,
         onCameraUnavailable: A.Z,
-        channelLimitReached: O,
-        channelLimit: j,
+        channelLimitReached: j,
+        channelLimit: O,
         popoutOpen: i,
         onPopoutClick: n
       })
@@ -413,11 +413,11 @@ let eg = i.memo(function(e) {
     className: eo.containerColumn,
     children: [(0, r.jsxs)("div", {
       className: eo.eventPrompts,
-      children: [u ? (0, r.jsx)(j.Z, {
+      children: [u ? (0, r.jsx)(O.Z, {
         channelId: null == t ? void 0 : t.id
       }) : null, (0, r.jsx)("div", {
         className: eo.separator
-      }), u && a ? (0, r.jsx)(O.Z, {
+      }), u && a ? (0, r.jsx)(j.Z, {
         highlight: !0,
         channel: t
       }) : null, (0, r.jsx)("div", {

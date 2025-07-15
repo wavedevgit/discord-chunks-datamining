@@ -1,4 +1,4 @@
-/** Chunk was on 670 **/
+/** Chunk was on 62059 **/
 n.d(t, {
   Z: () => u
 });
@@ -20,7 +20,7 @@ let u = e => {
     onAcceptInstantInvite: f
   } = e, {
     analyticsLocations: _
-  } = (0, o.ZP)(a.Z.INVITE_EMBED), g = i.useCallback(() => {
+  } = (0, o.ZP)(a.Z.INVITE_EMBED), h = i.useCallback(() => {
     let e = "noop";
     p ? (m(), e = "transition") : (f(), e = "accept"), (0, l.r$)({
       invite: t,
@@ -34,7 +34,7 @@ let u = e => {
       isEmbed: !0,
       stageInstance: n,
       guild: u,
-      onClick: g
+      onClick: h
     })
   })
 }

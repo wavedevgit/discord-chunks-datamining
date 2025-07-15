@@ -1,4 +1,4 @@
-/** Chunk was on 670 **/
+/** Chunk was on 62059 **/
 n.d(t, {
   Z: () => b
 });
@@ -49,7 +49,7 @@ function _(e) {
   }) : null
 }
 
-function g(e) {
+function h(e) {
   var t;
   let {
     message: n,
@@ -58,28 +58,28 @@ function g(e) {
   } = e, {
     author: d,
     mentions: f,
-    type: g
-  } = n, h = (0, o.ZP)(n), b = n.getChannelId(), E = (0, l.e7)([u.default], () => u.default.getUser(f[0]), [f]), y = (0, o.JZ)(d, i), C = (0, s.l)({
+    type: h
+  } = n, g = (0, o.ZP)(n), b = n.getChannelId(), E = (0, l.e7)([u.default], () => u.default.getUser(f[0]), [f]), y = (0, o.JZ)(d, i), x = (0, s.l)({
     user: d,
     channelId: b,
     guildId: i.guild_id,
     messageId: n.id
-  })(y), v = (0, o.Sw)(E, i), x = (0, s.l)({
+  })(y), C = (0, o.Sw)(E, i), v = (0, s.l)({
     user: E,
     channelId: b,
     guildId: i.guild_id,
     messageId: n.id
-  })(v), O = null != (t = m[g]) ? t : null;
+  })(C), O = null != (t = m[h]) ? t : null;
   if (null == O) return null;
   let j = p.intl.format(O(), {
-    actorName: h.nick,
-    actorHook: C,
-    targetName: null == v ? void 0 : v.nick,
-    targetHook: x
+    actorName: g.nick,
+    actorHook: x,
+    targetName: null == C ? void 0 : C.nick,
+    targetHook: v
   });
   return (0, r.jsx)(c.Z, {
     iconNode: (0, r.jsx)(_, {
-      type: g
+      type: h
     }),
     timestamp: n.timestamp,
     compact: a,
@@ -87,7 +87,7 @@ function g(e) {
   })
 }
 
-function h(e) {
+function g(e) {
   var t;
   let {
     message: n,
@@ -96,16 +96,16 @@ function h(e) {
   } = e, {
     author: a,
     type: u
-  } = n, d = (0, o.ZP)(n), m = n.getChannelId(), g = (0, o.JZ)(a, i), h = (0, s.l)({
+  } = n, d = (0, o.ZP)(n), m = n.getChannelId(), h = (0, o.JZ)(a, i), g = (0, s.l)({
     user: a,
     channelId: m,
     guildId: i.guild_id,
     messageId: n.id
-  })(g), b = null != (t = f[u]) ? t : null;
+  })(h), b = null != (t = f[u]) ? t : null;
   if (null == b) return null;
   let E = p.intl.format(b(), {
     actorName: d.nick,
-    actorHook: h
+    actorHook: g
   });
   return (0, r.jsx)(c.Z, {
     iconNode: (0, r.jsx)(_, {
@@ -125,11 +125,11 @@ function b(e) {
   } = e, {
     type: a
   } = t;
-  return a === i.u.REPORT_TO_MOD_BAN_USER || a === i.u.REPORT_TO_MOD_KICK_USER || a === i.u.REPORT_TO_MOD_TIMEOUT_USER ? (0, r.jsx)(g, {
+  return a === i.u.REPORT_TO_MOD_BAN_USER || a === i.u.REPORT_TO_MOD_KICK_USER || a === i.u.REPORT_TO_MOD_TIMEOUT_USER ? (0, r.jsx)(h, {
     message: t,
     channel: n,
     compact: l
-  }) : (0, r.jsx)(h, {
+  }) : (0, r.jsx)(g, {
     message: t,
     channel: n,
     compact: l

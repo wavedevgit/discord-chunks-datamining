@@ -1,6 +1,6 @@
 /** Chunk was on 51977 **/
 n.d(t, {
-  T: () => O
+  T: () => j
 }), n(388685), n(539854);
 var r = n(255367),
   i = n(73800),
@@ -40,7 +40,7 @@ function v(e) {
   }
 }
 
-function j(e) {
+function O(e) {
   let {
     className: t,
     channelId: n
@@ -59,7 +59,7 @@ function j(e) {
   })
 }
 
-function O(e) {
+function j(e) {
   let t;
   var {
     channelId: n,
@@ -69,7 +69,7 @@ function O(e) {
     inPopout: f,
     showRequestToSpeakSidebar: m,
     toggleRequestToSpeakSidebar: _
-  } = e, O = function(e, t) {
+  } = e, j = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -88,7 +88,7 @@ function O(e) {
     parentAnalyticsLocation: E
   } = (0, u.ZP)(), {
     disabled: S
-  } = O, I = i.useRef(null), P = (0, s.e7)([d.Z], () => d.Z.getChatOpen(n), [n]), {
+  } = j, P = i.useRef(null), I = (0, s.e7)([d.Z], () => d.Z.getChatOpen(n), [n]), {
     isShowing: Z,
     unreadCount: N,
     mentionCount: T
@@ -112,18 +112,18 @@ function O(e) {
       mentionCount: n
     }
   }(n), A = i.useCallback(() => {
-    (0, p.v)(E, p.d.CHAT, !P), null == h || h(), !P && m && (null == _ || _()), c.Z.updateChatOpen(n, !P)
-  }, [n, P, h, m, _, E]), w = i.useCallback(e => {
+    (0, p.v)(E, p.d.CHAT, !I), null == h || h(), !I && m && (null == _ || _()), c.Z.updateChatOpen(n, !I)
+  }, [n, I, h, m, _, E]), w = i.useCallback(e => {
     let {
       className: t
     } = e;
-    return (0, r.jsx)(j, {
+    return (0, r.jsx)(O, {
       className: t,
       channelId: n
     })
   }, [n]), R = i.useCallback(() => {
     var e;
-    null == (e = I.current) || e.focus()
+    null == (e = P.current) || e.focus()
   }, []);
   (0, g.yp)({
     event: C.CkL.FOCUS_CHAT_BUTTON,
@@ -143,7 +143,7 @@ function O(e) {
       clearTimeout(e)
     }
   }, [M]);
-  let L = [t = f && S ? x.intl.string(x.t.DPgc5u) : P ? x.intl.string(x.t.nthdxM) : x.intl.string(x.t["5KxXrK"])];
+  let L = [t = f && S ? x.intl.string(x.t.DPgc5u) : I ? x.intl.string(x.t.nthdxM) : x.intl.string(x.t["5KxXrK"])];
   return T > 0 && L.push(x.intl.formatToPlainString(x.t["3l1GOz"], {
     mentionCount: T
   })), N > 0 && L.push(x.intl.string(x.t.x5zAGR)), (0, r.jsx)(y.Z, function(e) {
@@ -164,7 +164,7 @@ function O(e) {
     }
     return e
   }({
-    buttonRef: I,
+    buttonRef: P,
     onClick: A,
     label: t,
     "aria-label": L.join(", "),
@@ -174,5 +174,5 @@ function O(e) {
       [o]: Z
     }),
     forceTooltipOpen: M
-  }, O))
+  }, j))
 }

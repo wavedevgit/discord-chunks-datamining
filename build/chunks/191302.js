@@ -42,9 +42,9 @@ function C(e) {
 function x(e) {
   let {
     channel: t
-  } = e, l = (0, o.e7)([f.default], () => f.default.getUser(t.hdStreamingBuyerId), [t.hdStreamingBuyerId]), [a, d] = (0, i.useState)(!1), [h, _] = (0, i.useState)(!1), y = (0, g.bK)(), [x, j] = (0, i.useState)(!1);
+  } = e, l = (0, o.e7)([f.default], () => f.default.getUser(t.hdStreamingBuyerId), [t.hdStreamingBuyerId]), [a, d] = (0, i.useState)(!1), [h, _] = (0, i.useState)(!1), y = (0, g.bK)(), [x, O] = (0, i.useState)(!1);
   (0, u.ZP)(() => {
-    t.isHDStreamSplashed && j(!0)
+    t.isHDStreamSplashed && O(!0)
   }), (0, g.Uu)(t),
   function(e) {
     let t = (0, o.e7)([f.default], () => f.default.getCurrentUser()),
@@ -63,12 +63,12 @@ function x(e) {
       })
     }, [a, u, e])
   }(t);
-  let O = () => {
+  let j = () => {
     d(!1)
   };
   (0, g.J)(t, () => {
     if (y) {
-      _(!0), O();
+      _(!0), j();
       return
     }
     d(!0);
@@ -78,17 +78,17 @@ function x(e) {
     return () => clearTimeout(e)
   });
   let E = x ? [s.z.HD_STREAMING_POTION_BANNER] : [],
-    [S, I] = (0, p.US)(E);
+    [S, P] = (0, p.US)(E);
   return null == l ? null : (0, r.jsxs)(r.Fragment, {
     children: [a && (0, r.jsx)(v, {
       buyer: l,
-      onEnd: O
+      onEnd: j
     }), (h || S === s.z.HD_STREAMING_POTION_BANNER) && (0, r.jsx)(m.Z, {
       channel: t,
       buyer: l,
       streaming: !0,
       onClose: () => {
-        _(!1), x && I(b.L.DISMISS)
+        _(!1), x && P(b.L.DISMISS)
       }
     })]
   })

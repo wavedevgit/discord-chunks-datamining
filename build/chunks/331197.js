@@ -1,6 +1,6 @@
 /** Chunk was on 51977 **/
 n.d(t, {
-  Z: () => O
+  Z: () => j
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -22,18 +22,18 @@ var r = n(255367),
   C = n(390322),
   x = n(871499),
   v = n(127379),
-  j = n(388032);
+  O = n(388032);
 
-function O(e) {
+function j(e) {
   let {
     channel: t,
-    themeable: O,
+    themeable: j,
     whichPopoutIsOpen: E,
     setWhichPopoutIsOpen: S
   } = e, {
-    parentAnalyticsLocation: I
+    parentAnalyticsLocation: P
   } = (0, u.ZP)(), {
-    Component: P,
+    Component: I,
     play: Z,
     events: {
       onMouseEnter: N,
@@ -81,7 +81,7 @@ function O(e) {
           guildId: A,
           sourceAnalyticsLocations: B
         }, t), i = i = {
-          onInteraction: (0, p.u)("SoundboardContextMenu", I)
+          onInteraction: (0, p.u)("SoundboardContextMenu", P)
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -97,7 +97,7 @@ function O(e) {
   }
 
   function W() {
-    (0, d.v)(I, d.d.SOUNDBOARD), E === v.D.SOUNDBOARD ? (null == S || S(void 0), V()) : (null != E ? (Z(), G()) : Z(), null == S || S(v.D.SOUNDBOARD))
+    (0, d.v)(P, d.d.SOUNDBOARD), E === v.D.SOUNDBOARD ? (null == S || S(void 0), V()) : (null != E ? (Z(), G()) : Z(), null == S || S(v.D.SOUNDBOARD))
   }
   let Y = i.useRef(null);
   return (0, r.jsx)(s.y, {
@@ -135,9 +135,9 @@ function O(e) {
     children: () => (0, r.jsx)(x.d, {
       ref: Y,
       isTrayButton: !0,
-      themeable: O,
-      label: w ? j.intl.string(j.t["Ox4/zc"]) : R ? j.intl.string(j.t["+YBKYG"]) : M ? j.intl.string(j.t.X1lQlp) : void 0,
-      iconComponent: P,
+      themeable: j,
+      label: w ? O.intl.string(O.t["Ox4/zc"]) : R ? O.intl.string(O.t["+YBKYG"]) : M ? O.intl.string(O.t.X1lQlp) : void 0,
+      iconComponent: I,
       disabled: D,
       onContextMenu: z,
       onClick: W,

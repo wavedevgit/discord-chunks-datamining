@@ -1,4 +1,4 @@
-/** Chunk was on 670 **/
+/** Chunk was on 62059 **/
 n.d(t, {
   $: () => w,
   Z: () => A
@@ -15,14 +15,14 @@ var r, i = n(255367),
   m = n(914602),
   f = n(568836),
   _ = n(730749),
-  g = n(112724),
-  h = n(812206),
+  h = n(112724),
+  g = n(812206),
   b = n(283595),
   E = n(558314),
   y = n(55563),
-  C = n(551428),
-  v = n(73346),
-  x = n(981631),
+  x = n(551428),
+  C = n(73346),
+  v = n(981631),
   O = n(388032),
   j = n(228016);
 
@@ -55,8 +55,8 @@ class S extends(r = l.Component) {
       }
       return e
     }({}, n), t = t = {
-      section: null != r ? r : x.jXE.APPLICATION_EMBED,
-      object: x.qAy.CARD
+      section: null != r ? r : v.jXE.APPLICATION_EMBED,
+      object: v.qAy.CARD
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -95,11 +95,11 @@ class S extends(r = l.Component) {
     } = this.props, o = n > f.aL;
     return null == e || null == t ? r ? l() : (0, i.jsx)(f.OR, {
       isHorizontal: o
-    }) : e.productLine === x.POd.COLLECTIBLES ? (0, i.jsx)(u.Z, {
-      section: x.jXE.APPLICATION_EMBED,
+    }) : e.productLine === v.POd.COLLECTIBLES ? (0, i.jsx)(u.Z, {
+      section: v.jXE.APPLICATION_EMBED,
       children: this.renderApplicationTile(e, t)
     }) : (0, i.jsx)(u.Z, {
-      section: x.jXE.APPLICATION_EMBED,
+      section: v.jXE.APPLICATION_EMBED,
       children: (0, i.jsx)(a.rU, {
         onClick: this.handleLinkClick,
         to: this.getStoreListingLocation(),
@@ -130,7 +130,7 @@ class S extends(r = l.Component) {
         sku: e
       } = this.props;
       if (null == e) throw Error("Should not be link to ApplicationStoreListing without SKU");
-      return (0, v.ZI)(e.id, {
+      return (0, C.ZI)(e.id, {
         slug: e.slug,
         analyticsSource: this.analyticsLocation
       })
@@ -178,7 +178,7 @@ class S extends(r = l.Component) {
       });
       if (null == n) return null;
       let o = null != n && n.primarySkuId === r,
-        c = null != l && l.hasFlag(x.eHb.HIDDEN);
+        c = null != l && l.hasFlag(v.eHb.HIDDEN);
       return (0, i.jsxs)("div", {
         className: j.tileActions,
         children: [!o || c ? this.renderViewInStoreButton() : (0, i.jsx)(d.Z, {
@@ -186,7 +186,7 @@ class S extends(r = l.Component) {
           customDisabledColor: s.zx.Colors.PRIMARY,
           size: s.zx.Sizes.SMALL,
           className: j.actionButton,
-          source: x.Sbl.MESSAGE_EMBED,
+          source: v.Sbl.MESSAGE_EMBED,
           onClick: this.handleActionButtonClick
         }), t && !c || e.premium ? null : (0, i.jsx)(p.Z, {
           type: p.Z.Types.EMBED,
@@ -198,23 +198,23 @@ class S extends(r = l.Component) {
   }
 }
 I(S, "defaultProps", {
-  renderFallback: x.dG4
+  renderFallback: v.dG4
 });
-let T = [y.Z, E.Z, b.Z, C.Z];
+let T = [y.Z, E.Z, b.Z, x.Z];
 
 function N(e) {
   let {
     skuId: t
-  } = e, n = y.Z.get(t), r = null != n ? h.Z.getApplication(n.applicationId) : null;
+  } = e, n = y.Z.get(t), r = null != n ? g.Z.getApplication(n.applicationId) : null;
   return {
     sku: n,
     application: r,
     fetchFailed: y.Z.didFetchingSkuFail(t),
     inLibrary: null != n && b.Z.hasApplication(n.applicationId, n.applicationId, !0),
-    storeListing: null != n ? C.Z.getForSKU(n.id) : null,
+    storeListing: null != n ? x.Z.getForSKU(n.id) : null,
     libraryApplication: null != n ? b.Z.getLibraryApplication(n.applicationId, n.applicationId, !0) : null
   }
 }
-let P = (0, g.Z)((0, _.Z)(S)),
+let P = (0, h.Z)((0, _.Z)(S)),
   A = o.ZP.connectStores(T, N)(P),
   w = (0, _.Z)(o.ZP.connectStores(T, N)(S))

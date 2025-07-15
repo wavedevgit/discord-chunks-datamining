@@ -1,6 +1,6 @@
-/** Chunk was on 670 **/
+/** Chunk was on 62059 **/
 n.d(t, {
-  Z: () => x
+  Z: () => v
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -15,8 +15,8 @@ var r = n(255367),
   m = n(373228),
   f = n(419922),
   _ = n(217588),
-  g = n(981631),
-  h = n(474936),
+  h = n(981631),
+  g = n(474936),
   b = n(282940);
 
 function E(e) {
@@ -50,22 +50,22 @@ function y(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let C = (0, d.Mg)(l.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
-  v = e => {
-    null != e && s.ZP.trackWithMetadata(g.rMx.EXPRESSION_TOOLTIP_VIEWED, {
-      type: h.cd.STICKER_IN_MESSAGE_HOVER,
+let x = (0, d.Mg)(l.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
+  C = e => {
+    null != e && s.ZP.trackWithMetadata(h.rMx.EXPRESSION_TOOLTIP_VIEWED, {
+      type: g.cd.STICKER_IN_MESSAGE_HOVER,
       expression_id: e.id,
       expression_name: e.name,
       is_animated: (0, m.aQ)(e.format_type),
       is_custom: (0, m.z)(e.type)
     })
   },
-  x = e => {
+  v = e => {
     let {
       renderableSticker: t,
       channel: n,
       isInteracting: l
-    } = e, s = i.useRef(null), [d, m] = i.useState(!0), [g, h] = i.useState(String(Date.now())), [x] = (0, p.XW)(t, l), {
+    } = e, s = i.useRef(null), [d, m] = i.useState(!0), [h, g] = i.useState(String(Date.now())), [v] = (0, p.XW)(t, l), {
       analyticsLocations: O
     } = (0, c.ZP)(o.Z.STICKER_MESSAGE), j = (0, r.jsxs)("span", {
       className: b.stickerName,
@@ -73,21 +73,21 @@ let C = (0, d.Mg)(l.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
         size: "xs",
         color: "currentColor",
         className: b.stickerIcon
-      }), (null != x ? x : t).name]
+      }), (null != v ? v : t).name]
     });
     return (0, r.jsx)(c.Gt, {
       value: O,
       children: (0, r.jsx)(a.yRy, {
         align: "center",
         animation: a.yRy.Animation.TRANSLATE,
-        positionKey: g,
+        positionKey: h,
         onRequestClose: () => {
           m(!0)
         },
         renderPopout: e => (0, r.jsx)(_.Z, y(E({}, e), {
           renderableSticker: t,
           channel: n,
-          refreshPositionKey: () => h(String(Date.now()))
+          refreshPositionKey: () => g(String(Date.now()))
         })),
         targetElementRef: s,
         children: e => {
@@ -99,7 +99,7 @@ let C = (0, d.Mg)(l.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
             text: (0, u.Y)(j),
             "aria-label": !1,
             onTooltipShow: () => {
-              v(x)
+              C(v)
             },
             children: e => (0, r.jsx)(a.P3F, y(E({}, e), {
               innerRef: s,
@@ -110,8 +110,8 @@ let C = (0, d.Mg)(l.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
               tag: "span",
               children: (0, r.jsx)(f.Z, {
                 isInteracting: l,
-                size: C,
-                sticker: null != x ? x : t
+                size: x,
+                sticker: null != v ? v : t
               })
             }))
           }))

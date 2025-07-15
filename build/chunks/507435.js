@@ -1,4 +1,4 @@
-/** Chunk was on 670 **/
+/** Chunk was on 62059 **/
 n.d(t, {
   Z: () => j
 }), n(953529);
@@ -15,13 +15,13 @@ var r = n(255367),
   m = n(739566),
   f = n(942951),
   _ = n(834129),
-  g = n(809026),
-  h = n(139256),
+  h = n(809026),
+  g = n(139256),
   b = n(489887),
   E = n(388032),
   y = n(271629);
 
-function C() {
+function x() {
   return (0, r.jsx)("svg", {
     width: "24",
     height: "24",
@@ -37,12 +37,12 @@ function C() {
   })
 }
 
-function v(e) {
+function C(e) {
   let t, {
     hasNoVotes: n,
     victorEmoji: i
   } = e;
-  if (n) t = (0, r.jsx)(C, {});
+  if (n) t = (0, r.jsx)(x, {});
   else if (null != i) {
     let e = "" !== i.name ? i.name : i.displayName;
     t = (0, r.jsx)(d.Z, {
@@ -57,7 +57,7 @@ function v(e) {
   }) : null
 }
 
-function x(e) {
+function v(e) {
   let t;
   var {
     type: n
@@ -99,7 +99,7 @@ function x(e) {
             className: y.victorAnswerText,
             scaleFontToUserSetting: !0,
             children: a
-          }), (0, r.jsx)(h.ZY, {
+          }), (0, r.jsx)(g.ZY, {
             size: 16,
             className: y.victorIcon,
             isVictor: !0,
@@ -161,10 +161,10 @@ function O(e) {
     className: a()(y.container, {
       [y.containerWithImage]: u
     }, t),
-    children: [(0, r.jsx)(v, {
+    children: [(0, r.jsx)(C, {
       hasNoVotes: "NO_VOTES" === o.type,
       victorEmoji: n.victorEmoji
-    }), (0, r.jsx)(x, function(e) {
+    }), (0, r.jsx)(v, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -203,19 +203,19 @@ function j(e) {
     channel: l,
     compact: a,
     disableInteraction: s = !1
-  } = e, d = n.embeds[0], p = i.useMemo(() => (0, g.Z)(d), [d]), h = (0, o.aF)(null != (t = null == p ? void 0 : p.questionText) ? t : "", b.Dv), C = (0, m.ZP)(n), v = (0, f.l)({
+  } = e, d = n.embeds[0], p = i.useMemo(() => (0, h.Z)(d), [d]), g = (0, o.aF)(null != (t = null == p ? void 0 : p.questionText) ? t : "", b.Dv), x = (0, m.ZP)(n), C = (0, f.l)({
     user: n.author,
     channelId: l.id,
     guildId: l.guild_id,
     messageId: n.id
-  }), x = n.messageReference, j = i.useCallback(() => {
-    null != x && u.Z.jumpToMessage({
-      channelId: x.channel_id,
-      messageId: x.message_id,
+  }), v = n.messageReference, j = i.useCallback(() => {
+    null != v && u.Z.jumpToMessage({
+      channelId: v.channel_id,
+      messageId: v.message_id,
       flash: !0,
       returnMessageId: n.id
     })
-  }, [n.id, x]);
+  }, [n.id, v]);
   return null == p ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(_.Z, {
       iconNode: (0, r.jsx)(c.QDj, {
@@ -224,9 +224,9 @@ function j(e) {
       timestamp: n.timestamp,
       compact: a,
       children: E.intl.format(E.t["VJcK4+"], {
-        username: C.nick,
-        usernameHook: v(C),
-        title: h,
+        username: x.nick,
+        usernameHook: C(x),
+        title: g,
         titleOnClick: j
       })
     }), (0, r.jsx)(O, {

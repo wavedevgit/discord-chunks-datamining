@@ -1,4 +1,4 @@
-/** Chunk was on 670 **/
+/** Chunk was on 62059 **/
 n.d(t, {
   Z: () => o
 });
@@ -16,7 +16,7 @@ function o(e) {
     actorUsernameHook: c,
     targetUsernameHook: u,
     compact: d
-  } = e, p = (0, i.ZP)(t), m = (0, i.Sw)(s, o), f = c(p), _ = u(null != m ? m : void 0), g = a.intl.format(a.t.tusv2t, {
+  } = e, p = (0, i.ZP)(t), m = (0, i.Sw)(s, o), f = c(p), _ = u(null != m ? m : void 0), h = a.intl.format(a.t.tusv2t, {
     actorName: p.nick,
     actorHook: f,
     targetName: null == m ? void 0 : m.nick,
@@ -26,6 +26,6 @@ function o(e) {
     icon: n(570111),
     timestamp: t.timestamp,
     compact: d,
-    children: g
+    children: h
   })
 }

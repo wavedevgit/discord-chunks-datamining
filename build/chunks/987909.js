@@ -1,6 +1,6 @@
-/** Chunk was on 670 **/
+/** Chunk was on 62059 **/
 n.d(t, {
-  Z: () => C
+  Z: () => x
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -15,8 +15,8 @@ var r = n(255367),
   m = n(594174),
   f = n(626135),
   _ = n(709054),
-  g = n(838440),
-  h = n(981631),
+  h = n(838440),
+  g = n(981631),
   b = n(18485);
 
 function E(e) {
@@ -37,18 +37,18 @@ function y(e) {
     stickers: d,
     event: p,
     eventProperties: m
-  } = e, [_, h] = i.useState(!1), y = i.useMemo(() => E({
+  } = e, [_, g] = i.useState(!1), y = i.useMemo(() => E({
     assets: d,
     currentUser: t,
     message: l
-  }), [d, t, l]), C = i.useMemo(() => E({
+  }), [d, t, l]), x = i.useMemo(() => E({
     assets: u,
     currentUser: t,
     message: l
-  }), [u, t, l]), v = i.useCallback(async () => {
+  }), [u, t, l]), C = i.useCallback(async () => {
     let {
       valid: e
-    } = await (0, g.v)({
+    } = await (0, h.v)({
       type: s.Ie.FORM,
       content: "",
       channel: n
@@ -115,19 +115,19 @@ function y(e) {
     className: b.CTAMessageButtonOuter,
     innerClassName: b.CTAMessageButton,
     color: a.Tt.PRIMARY,
-    onMouseEnter: () => h(!0),
-    onMouseLeave: () => h(!1),
-    onClick: v,
+    onMouseEnter: () => g(!0),
+    onMouseLeave: () => g(!1),
+    onClick: C,
     children: [(0, r.jsx)(c.Z, {
       className: b.CTAMessageSticker,
       isInteracting: _,
       sticker: y,
       size: 28
-    }), C]
+    }), x]
   })
 }
 
-function C(e) {
+function x(e) {
   let {
     channel: t,
     message: n,
@@ -146,7 +146,7 @@ function C(e) {
       let i = t.guild_id;
       if (null == r || null == i) return !1;
       let l = (0, u.xl)(t),
-        a = p.Z.can(h.Plq.SEND_MESSAGES, t),
+        a = p.Z.can(g.Plq.SEND_MESSAGES, t),
         o = null == (e = d.ZP.getMember(i, r.id)) ? void 0 : e.isPending,
         s = n.author.bot;
       return a && !l && !o && !s

@@ -1,4 +1,4 @@
-/** Chunk was on 670 **/
+/** Chunk was on 62059 **/
 n.d(t, {
   Z: () => f
 });
@@ -24,14 +24,14 @@ function f(e) {
   } = (0, l.cj)([d.Z], () => ({
     isBlocked: d.Z.isBlockedForMessage(t),
     isIgnored: d.Z.isIgnoredForMessage(t)
-  }), [t]), g = (0, o.p)(), h = i.useMemo(() => ({
+  }), [t]), h = (0, o.p)(), g = i.useMemo(() => ({
     [n.guild_id]: [t.author.id]
   }), [n.guild_id, t.author.id]);
-  (0, a.$)(h);
+  (0, a.$)(g);
   let b = i.useMemo(() => null != t.content && "" !== t.content ? (0, s.ZP)(t, {
     formatInline: !0,
-    shouldFilterKeywords: g
-  }).content : null, [t, g]);
+    shouldFilterKeywords: h
+  }).content : null, [t, h]);
   return (0, r.jsxs)("div", {
     className: m.threadMessageAccessory,
     children: [(0, r.jsx)("img", {

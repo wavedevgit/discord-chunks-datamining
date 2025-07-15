@@ -1,4 +1,4 @@
-/** Chunk was on 670 **/
+/** Chunk was on 62059 **/
 n.d(t, {
   Z: () => c
 });
@@ -17,7 +17,7 @@ function c(e) {
     usernameHook: u,
     onClickPins: d,
     compact: p
-  } = e, m = (0, a.ZP)(c), f = m.nick, _ = u(m), g = () => {
+  } = e, m = (0, a.ZP)(c), f = m.nick, _ = u(m), h = () => {
     if (null == c.messageReference) return;
     let {
       channel_id: e,
@@ -28,7 +28,7 @@ function c(e) {
       messageId: t,
       flash: !0
     })
-  }, h = {
+  }, g = {
     iconNode: (0, r.jsx)(i.qQX, {
       size: "sm",
       color: "currentColor"
@@ -51,18 +51,18 @@ function c(e) {
       })
     }
     return e
-  }({}, h), n = n = {
+  }({}, g), n = n = {
     timestamp: c.timestamp,
     compact: p,
     children: null != c.messageReference ? null == d ? s.intl.format(s.t.lD5tur, {
       usernameHook: _,
       username: f,
-      messageOnClick: g
+      messageOnClick: h
     }) : s.intl.format(s.t.yIDvPD, {
       usernameHook: _,
       username: f,
       pinsActionOnClick: d,
-      messageOnClick: g
+      messageOnClick: h
     }) : null == d ? s.intl.format(s.t.vfkjq6, {
       usernameHook: _,
       username: f

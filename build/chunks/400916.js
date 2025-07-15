@@ -1,4 +1,4 @@
-/** Chunk was on 670 **/
+/** Chunk was on 62059 **/
 n.d(t, {
   Z: () => _
 });
@@ -19,14 +19,14 @@ var i = n(512722),
 function _(e) {
   var t, n, i, _;
   let {
-    guildId: g,
-    productId: h
-  } = e, b = (0, a.e7)([u.Z], () => u.Z.getGuildProduct(h)), E = (null != (_ = null == b || null == (t = b.attachments) ? void 0 : t.length) ? _ : 0) > 1, y = null == b || null == (i = b.attachments) || null == (n = i[0]) ? void 0 : n.id;
+    guildId: h,
+    productId: g
+  } = e, b = (0, a.e7)([u.Z], () => u.Z.getGuildProduct(g)), E = (null != (_ = null == b || null == (t = b.attachments) ? void 0 : t.length) ? _ : 0) > 1, y = null == b || null == (i = b.attachments) || null == (n = i[0]) ? void 0 : n.id;
   return E ? (0, r.jsxs)(o.zx, {
     onClick: function() {
       d.Z.open({
-        guildId: g,
-        productId: h
+        guildId: h,
+        productId: g
       })
     },
     innerClassName: f.textWithIcon,
@@ -41,8 +41,8 @@ function _(e) {
       direction: c.Z.Directions.RIGHT
     })]
   }) : (l()(null != y, "No attachment"), (0, r.jsxs)(p.Z, {
-    guildId: g,
-    productId: h,
+    guildId: h,
+    productId: g,
     attachmentId: y,
     innerClassName: f.textWithIcon,
     children: [(0, r.jsx)("div", {

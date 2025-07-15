@@ -54,17 +54,17 @@ let y = function(e) {
   } = e, n = (0, l.e7)([u.Z, p.default], () => {
     let e = p.default.getCurrentUser();
     return null == e || (0, c.aC)(t) && (!e.nsfwAllowed || !u.Z.didAgree(t.getGuildId()))
-  }, [t]), [y, C] = i.useState(!1), x = (0, l.e7)([d.ZP], () => d.ZP.hasUnreadPins(t.id), [t]), v = (0, s.Aq)(), j = i.useRef(null), O = i.useCallback(() => {
+  }, [t]), [y, C] = i.useState(!1), x = (0, l.e7)([d.ZP], () => d.ZP.hasUnreadPins(t.id), [t]), v = (0, s.Aq)(), O = i.useRef(null), j = i.useCallback(() => {
     n || C(e => !e)
   }, [n]);
 
   function E(e) {
     (null == e ? void 0 : e.shiftKey) || v.dispatch(m.CkL.POPOUT_CLOSE)
   }
-  return i.useEffect(() => (h.S.subscribe(m.CkL.TOGGLE_CHANNEL_PINS, O), () => {
-    h.S.unsubscribe(m.CkL.TOGGLE_CHANNEL_PINS, O)
-  }), [O]), (0, r.jsx)(a.yRy, {
-    targetElementRef: j,
+  return i.useEffect(() => (h.S.subscribe(m.CkL.TOGGLE_CHANNEL_PINS, j), () => {
+    h.S.unsubscribe(m.CkL.TOGGLE_CHANNEL_PINS, j)
+  }), [j]), (0, r.jsx)(a.yRy, {
+    targetElementRef: O,
     shouldShow: y,
     animation: a.yRy.Animation.NONE,
     position: "bottom",
@@ -84,8 +84,8 @@ let y = function(e) {
         isShown: i
       } = t;
       return (0, r.jsx)(f.JO, _(b({}, e), {
-        ref: j,
-        onClick: O,
+        ref: O,
+        onClick: j,
         tooltip: i ? null : g.intl.string(g.t["mp1N//"]),
         icon: a.qQX,
         iconSize: 20,

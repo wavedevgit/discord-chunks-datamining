@@ -26,17 +26,17 @@ let p = function(e) {
     onSecondaryButtonClick: C,
     children: x,
     useReducedMotion: v = !1
-  } = e, j = (0, a.e7)([u.ZP], () => u.ZP.getState().isMembersOpen);
-  if (l.tq && j) return null;
+  } = e, O = (0, a.e7)([u.ZP], () => u.ZP.getState().isMembersOpen);
+  if (l.tq && O) return null;
   if (null == t) return (0, r.jsx)(r.Fragment, {
     children: i.Children.only(x)
   });
-  let O = null;
-  return null != b ? O = (0, r.jsx)("img", {
+  let j = null;
+  return null != b ? j = (0, r.jsx)("img", {
     alt: "",
     src: b,
     className: d.image
-  }) : null != _ && (O = (0, r.jsx)(s.Fmz, {
+  }) : null != _ && (j = (0, r.jsx)(s.Fmz, {
     importData: _,
     shouldAnimate: !v,
     className: d.animation
@@ -44,7 +44,7 @@ let p = function(e) {
     className: d.wrapper,
     children: [(0, r.jsxs)("div", {
       className: d.content,
-      children: [O, (0, r.jsxs)("div", {
+      children: [j, (0, r.jsxs)("div", {
         className: d.text,
         children: [(0, r.jsx)(s.X6q, {
           variant: "heading-md/semibold",

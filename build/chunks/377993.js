@@ -22,12 +22,12 @@ var r = n(255367),
   C = n(594174),
   x = n(626135),
   v = n(585483),
-  j = n(233870),
-  O = n(51144),
+  O = n(233870),
+  j = n(51144),
   E = n(998502),
   S = n(276264),
-  I = n(981631),
-  P = n(388032),
+  P = n(981631),
+  I = n(388032),
   Z = n(11847);
 
 function N(e) {
@@ -57,7 +57,7 @@ function w(e) {
     channel: o,
     status: u,
     activities: d
-  } = e, p = (0, a.e7)([y.Z], () => null != y.Z.getTypingUsers(o.id)[t.id]), f = (0, a.e7)([C.default], () => C.default.getCurrentUser()), x = (0, a.e7)([b.Z], () => b.Z.isMobileOnline(t.id)), j = (0, a.e7)([_.Z], () => _.Z.getNickname(t.id)), E = (0, h.Z)(t.id), Z = i.useRef(null), T = e => {
+  } = e, p = (0, a.e7)([y.Z], () => null != y.Z.getTypingUsers(o.id)[t.id]), f = (0, a.e7)([C.default], () => C.default.getCurrentUser()), x = (0, a.e7)([b.Z], () => b.Z.isMobileOnline(t.id)), O = (0, a.e7)([_.Z], () => _.Z.getNickname(t.id)), E = (0, h.Z)(t.id), Z = i.useRef(null), T = e => {
     (0, s.jW)(e, async () => {
       let {
         default: e
@@ -80,13 +80,13 @@ function w(e) {
       }
     })
   }, w = () => {
-    let e = "@".concat(O.ZP.getUserTag(t, {
+    let e = "@".concat(j.ZP.getUserTag(t, {
         decoration: "never"
       })),
       n = "<@".concat(t.id, ">");
-    v.S.dispatch(I.CkL.TEXTAREA_FOCUS, {
+    v.S.dispatch(P.CkL.TEXTAREA_FOCUS, {
       channelId: o.id
-    }), v.S.dispatchToLastSubscribed(I.CkL.INSERT_TEXT, {
+    }), v.S.dispatchToLastSubscribed(P.CkL.INSERT_TEXT, {
       plainText: e,
       rawText: n
     }), c.Z.startTyping(o.id)
@@ -126,7 +126,7 @@ function w(e) {
         user: t,
         currentUser: f,
         isOwner: t.id === o.ownerId,
-        ownerTooltipText: P.intl.string(P.t["MRXZ+/"]),
+        ownerTooltipText: I.intl.string(I.t["MRXZ+/"]),
         shouldAnimateStatus: A,
         isTyping: p,
         status: u,
@@ -136,7 +136,7 @@ function w(e) {
         onContextMenu: T,
         selected: M,
         isMobile: x,
-        nick: j,
+        nick: O,
         nameplate: R,
         onClick: e => {
           e.shiftKey ? null == w || w() : D(e => !e)
@@ -167,15 +167,15 @@ function M(e) {
   } = (0, d.ZP)(u.Z.MEMBER_LIST), {
     listItems: c
   } = (0, a.e7)([_.Z, C.default, b.Z], () => {
-    let e = (0, j.T)(t.recipients, C.default),
+    let e = (0, O.T)(t.recipients, C.default),
       n = {};
     for (let t of e) {
       var r, i, l;
       _.Z.isFriend(t.id) || t.id === (null == (r = C.default.getCurrentUser()) ? void 0 : r.id) ? n[t.id] = {
-        status: null != (i = b.Z.getStatus(t.id)) ? i : I.Skl.OFFLINE,
+        status: null != (i = b.Z.getStatus(t.id)) ? i : P.Skl.OFFLINE,
         activities: null != (l = b.Z.getActivities(t.id)) ? l : T
       } : n[t.id] = {
-        status: I.Skl.OFFLINE,
+        status: P.Skl.OFFLINE,
         activities: T
       }
     }
@@ -193,7 +193,7 @@ function M(e) {
     }
   }, [t], R);
   i.useEffect(() => {
-    x.default.track(I.rMx.MEMBER_LIST_VIEWED, {
+    x.default.track(P.rMx.MEMBER_LIST_VIEWED, {
       channel_id: t.id,
       channel_type: t.type,
       guild_id: t.guild_id
@@ -211,7 +211,7 @@ function M(e) {
           fade: !0,
           children: [(0, r.jsxs)(f.Z, {
             className: Z.membersGroup,
-            children: ["".concat(P.intl.string(P.t["9Oq93t"]), "—").concat(c.length, " "), h && (0, r.jsx)(p.Z, {
+            children: ["".concat(I.intl.string(I.t["9Oq93t"]), "—").concat(c.length, " "), h && (0, r.jsx)(p.Z, {
               type: p.Z.Types.STAFF_ONLY_DM
             })]
           }), c.map(e => (0, r.jsx)(w, {

@@ -59,37 +59,37 @@ function v(e) {
   let {
     channelId: t,
     warningId: v,
-    senderId: j
+    senderId: O
   } = e, {
-    isBlocked: O
+    isBlocked: j
   } = (0, a.cj)([h.Z], () => ({
-    isBlocked: h.Z.isBlocked(j)
-  }), [j]), E = i.useCallback(() => {
+    isBlocked: h.Z.isBlocked(O)
+  }), [O]), E = i.useCallback(() => {
     (0, f.T)(t, [v])
-  }, [t, v]), S = (0, _.C2)(), I = i.useCallback(e => () => {
-    c.Z.blockUser(j, {
+  }, [t, v]), S = (0, _.C2)(), P = i.useCallback(e => () => {
+    c.Z.blockUser(O, {
       location: _.zr
     }).then(() => {
       E()
     }), (0, g.qc)({
       channelId: t,
       warningId: v,
-      senderId: j,
+      senderId: O,
       warningType: m.pj.STRANGER_DANGER,
       cta: e
     })
-  }, [E, t, v, j]);
+  }, [E, t, v, O]);
   i.useEffect(() => {
     (0, g.MC)(y.rMx.SAFETY_WARNING_VIEWED, {
       channelId: t,
       warningId: v,
-      senderId: j,
+      senderId: O,
       warningType: m.pj.STRANGER_DANGER
     }), u.Z.increment({
       name: l.V.SAFETY_WARNING_VIEW
     })
-  }, [t, v, j]);
-  let P = () => {
+  }, [t, v, O]);
+  let I = () => {
       (0, s.ZDy)(async () => {
         let {
           default: e
@@ -104,7 +104,7 @@ function v(e) {
             onClose: l,
             channelId: t,
             warningId: v,
-            senderId: j,
+            senderId: O,
             description: C.intl.string(C.t.DJMZX1),
             safetyTipRows: S.map((e, t) => (0, r.jsx)(d.q, {
               index: t,
@@ -113,7 +113,7 @@ function v(e) {
             }, t)),
             actionRows: (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsx)(x, {
-                senderId: j,
+                senderId: O,
                 channelId: t,
                 warningId: v
               }, "more-tips-button"), (0, r.jsx)(p.ZP, {
@@ -122,7 +122,7 @@ function v(e) {
                 buttonText: C.intl.string(C.t["5QYPOz"]),
                 buttonColor: o.zx.Colors.RED,
                 onButtonPress: () => {
-                  l(), Z(g.NM.USER_MODAL_BLOCK_CONFIRM, g.NM.USER_MODAL_BLOCK_CANCEL, P)
+                  l(), Z(g.NM.USER_MODAL_BLOCK_CONFIRM, g.NM.USER_MODAL_BLOCK_CANCEL, I)
                 }
               }, "block-button")]
             })
@@ -155,13 +155,13 @@ function v(e) {
             }
             return e
           }({}, n), s = s = {
-            userId: j,
-            confirmBlock: I(e),
+            userId: O,
+            confirmBlock: P(e),
             onCancel: () => {
               null == l || l(), (0, g.qc)({
                 channelId: t,
                 warningId: v,
-                senderId: j,
+                senderId: O,
                 warningType: m.pj.STRANGER_DANGER,
                 cta: i
               })
@@ -182,7 +182,7 @@ function v(e) {
   return (0, r.jsx)(b.Q, {
     channelId: t,
     warningId: v,
-    senderId: j,
+    senderId: O,
     warningType: m.pj.STRANGER_DANGER,
     header: C.intl.string(C.t.iOkDpK),
     description: C.intl.string(C.t.ISUbcH),
@@ -191,15 +191,15 @@ function v(e) {
       text: C.intl.string(C.t["Qk/c4+"]),
       color: o.zx.Colors.BRAND,
       onclick: () => {
-        P(), (0, g.qc)({
+        I(), (0, g.qc)({
           channelId: t,
           warningId: v,
-          senderId: j,
+          senderId: O,
           warningType: m.pj.STRANGER_DANGER,
           cta: g.NM.OPEN_MORE_TIPS
         })
       }
-    }, ...O ? [] : [{
+    }, ...j ? [] : [{
       text: C.intl.string(C.t.ie0QdH),
       color: o.zx.Colors.RED,
       onclick: () => Z(g.NM.USER_BANNER_BLOCK_CONFIRM, g.NM.USER_BANNER_BLOCK_CANCEL)

@@ -1,6 +1,6 @@
-/** Chunk was on 670 **/
+/** Chunk was on 62059 **/
 n.d(t, {
-  e: () => x,
+  e: () => v,
   i: () => O
 }), n(35282), n(388685);
 var r = n(255367),
@@ -16,26 +16,26 @@ var r = n(255367),
   m = n(834129),
   f = n(222677),
   _ = n(768581),
-  g = n(585483),
-  h = n(339085),
+  h = n(585483),
+  g = n(339085),
   b = n(981631),
   E = n(388032),
   y = n(841935);
-let C = /^<(a?):(\w+):(\d+)>/;
+let x = /^<(a?):(\w+):(\d+)>/;
 
-function v(e) {
+function C(e) {
   let t = i.useMemo(() => {
     var t;
-    return null == (t = C.exec(e)) ? void 0 : t[3]
+    return null == (t = x.exec(e)) ? void 0 : t[3]
   }, [e]);
-  return (0, s.e7)([h.ZP], () => null == t ? null : h.ZP.getCustomEmojiById(t))
+  return (0, s.e7)([g.ZP], () => null == t ? null : g.ZP.getCustomEmojiById(t))
 }
 
-function x(e) {
+function v(e) {
   let {
     message: t,
     className: n
-  } = e, [l, o] = i.useState(!1), s = t.getChannelId(), d = v(t.content), p = i.useCallback(() => {
+  } = e, [l, o] = i.useState(!1), s = t.getChannelId(), d = C(t.content), p = i.useCallback(() => {
     null != d && (0, f.rU)(s, t.id, {
       id: d.id,
       name: d.name
@@ -57,7 +57,7 @@ function x(e) {
           onMouseEnter: f,
           onMouseLeave: _
         } = e,
-        g = function(e, t) {
+        h = function(e, t) {
           if (null == e) return {};
           var n, r, i = function(e, t) {
             if (null == e) return {};
@@ -89,7 +89,7 @@ function x(e) {
           })
         }
         return e
-      }({}, g), m = m = {
+      }({}, h), m = m = {
         className: a()(n, y.ctaReactionButton),
         onClick: p,
         onMouseEnter: () => {
@@ -135,25 +135,25 @@ function O(e) {
     message: n,
     compact: l,
     usernameHook: a
-  } = e, s = n.content, [u, f] = i.useState(!1), h = (0, d.ZP)(n), C = a(h), x = v(s), O = i.useCallback(() => {
-    null != x && g.S.dispatchToLastSubscribed(b.CkL.INSERT_TEXT, {
-      plainText: ":".concat(x.name, ":"),
+  } = e, s = n.content, [u, f] = i.useState(!1), g = (0, d.ZP)(n), x = a(g), v = C(s), O = i.useCallback(() => {
+    null != v && h.S.dispatchToLastSubscribed(b.CkL.INSERT_TEXT, {
+      plainText: ":".concat(v.name, ":"),
       rawText: s,
       addSpace: !0
     })
-  }, [x, s]), j = i.useMemo(() => {
+  }, [v, s]), j = i.useMemo(() => {
     var e;
-    return null == x ? null : {
+    return null == v ? null : {
       src: _.ZP.getEmojiURL({
-        id: x.id,
-        animated: x.animated,
+        id: v.id,
+        animated: v.animated,
         size: 48
       }),
-      emojiId: x.id,
-      name: ":".concat(null != (e = x.originalName) ? e : x.name, ":"),
-      animated: x.animated
+      emojiId: v.id,
+      name: ":".concat(null != (e = v.originalName) ? e : v.name, ":"),
+      animated: v.animated
     }
-  }, [x]);
+  }, [v]);
   return (0, r.jsx)(m.Z, {
     iconNode: (0, r.jsx)(o.EO4, {
       size: "refresh_sm",
@@ -164,12 +164,12 @@ function O(e) {
     compact: l,
     contentClassName: y.content,
     children: (0, r.jsx)("span", {
-      children: null == x || null == j ? E.intl.format(E.t.k6Jc9f, {
-        username: h.nick,
-        usernameHook: C
+      children: null == v || null == j ? E.intl.format(E.t.k6Jc9f, {
+        username: g.nick,
+        usernameHook: x
       }) : E.intl.format(E.t.IihHBw, {
-        username: h.nick,
-        usernameHook: C,
+        username: g.nick,
+        usernameHook: x,
         emojiPreview: (0, r.jsx)(p.Y, {
           node: j,
           isInteracting: u
@@ -184,7 +184,7 @@ function O(e) {
             tag: "span",
             variant: "text-md/medium",
             color: "text-primary",
-            children: ":".concat(null != (t = x.originalName) ? t : x.name, ":")
+            children: ":".concat(null != (t = v.originalName) ? t : v.name, ":")
           })
         })
       })

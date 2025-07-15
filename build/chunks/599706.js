@@ -1,4 +1,4 @@
-/** Chunk was on 670 **/
+/** Chunk was on 62059 **/
 n.d(t, {
   Z: () => f
 }), n(539854);
@@ -98,8 +98,8 @@ let m = e => {
       empty: !0,
       guildId: o
     }, "empty-member-".concat(e)));
-    let g = Math.max(Math.min(c - f.length, 99), 0);
-    if (1 === g) {
+    let h = Math.max(Math.min(c - f.length, 99), 0);
+    if (1 === h) {
       let e = n[l];
       f.push((0, r.jsx)(m, {
         member: e,
@@ -110,9 +110,9 @@ let m = e => {
       className: p.wrapper,
       children: (0, r.jsxs)("div", {
         className: p.partyMembers,
-        children: [f, g > 1 ? (0, r.jsxs)("div", {
+        children: [f, h > 1 ? (0, r.jsxs)("div", {
           className: p.partyMemberOverflow,
-          children: ["+", g]
+          children: ["+", h]
         }) : null]
       })
     })

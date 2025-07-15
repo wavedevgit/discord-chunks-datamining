@@ -1,24 +1,24 @@
-/** Chunk was on 51977 **/
-n.d(t, {
-  Z: () => s
-}), n(388685), n(49124);
-var r = n(73800),
-  i = n(442837),
-  l = n(603263),
-  a = n(768119),
-  o = n(981631);
+/** Chunk was on 51164 **/
+r.d(t, {
+  Z: () => c
+}), r(388685), r(49124);
+var n = r(73800),
+  l = r(442837),
+  i = r(603263),
+  a = r(768119),
+  o = r(981631);
 
-function s(e) {
+function c(e) {
   let {
     searchId: t
-  } = e, [n, s] = r.useState(o.QIO.NEWEST), c = (0, i.e7)([a.Z], () => a.Z.getQuery(t)), u = r.useRef(null);
-  return r.useEffect(() => {
-    JSON.stringify(u.current) !== JSON.stringify(c) && (s(l.Vj({
-      sort_by: null == c ? void 0 : c.sort_by,
-      sort_order: null == c ? void 0 : c.sort_order
-    })), u.current = c)
-  }, [c]), {
-    searchMode: n,
-    setSearchMode: s
+  } = e, [r, c] = n.useState(o.QIO.NEWEST), s = (0, l.e7)([a.Z], () => a.Z.getQuery(t)), u = n.useRef(null);
+  return n.useEffect(() => {
+    JSON.stringify(u.current) !== JSON.stringify(s) && (c(i.Vj({
+      sort_by: null == s ? void 0 : s.sort_by,
+      sort_order: null == s ? void 0 : s.sort_order
+    })), u.current = s)
+  }, [s]), {
+    searchMode: r,
+    setSearchMode: c
   }
 }

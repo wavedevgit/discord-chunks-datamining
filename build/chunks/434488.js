@@ -22,13 +22,13 @@ var r = n(255367),
   C = n(340541),
   x = n(448239),
   v = n(626135),
-  j = n(607187),
-  O = n(981631),
+  O = n(607187),
+  j = n(981631),
   E = n(388032),
   S = n(413384),
-  I = n(359165);
+  P = n(359165);
 
-function P(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -113,7 +113,7 @@ function T(e) {
   };
   return (0, r.jsx)(b.Gt, {
     value: l,
-    children: (0, r.jsxs)(j.Z, {
+    children: (0, r.jsxs)(O.Z, {
       className: S.root,
       children: [(0, r.jsx)(u.ua7, {
         text: E.intl.string(E.t.qJvTKS),
@@ -135,7 +135,7 @@ function T(e) {
             }
             return i
           }(e, ["onClick"]);
-          return (0, r.jsx)(u.P3F, Z(P({}, n), {
+          return (0, r.jsx)(u.P3F, Z(I({}, n), {
             className: S.clickableTile,
             onClick: () => {
               null == t || t(), d()
@@ -152,7 +152,7 @@ function T(e) {
           }))
         }
       }), (0, r.jsx)(u.f6W, {
-        theme: O.BRd.DARK,
+        theme: j.BRd.DARK,
         children: e => (0, r.jsx)(u.P3F, {
           onClick: i,
           className: a()(e, S.shelfButtonCloseButton),
@@ -175,7 +175,7 @@ function A(e) {
     inPopout: o
   } = e;
   i.useEffect(() => {
-    v.default.track(O.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
+    v.default.track(j.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
       tile_type: "activity invite",
       n_participants: 1
     })
@@ -199,10 +199,10 @@ function A(e) {
       let {
         default: e
       } = await Promise.all([n.e("7654"), n.e("34946")]).then(n.bind(n, 560114));
-      return n => (0, r.jsx)(e, Z(P({}, n), {
+      return n => (0, r.jsx)(e, Z(I({}, n), {
         guild: l,
         channel: t,
-        source: O.t4x.ACTIVITY_ENTRY_POINT_TILE
+        source: j.t4x.ACTIVITY_ENTRY_POINT_TILE
       }))
     }, {
       contextKey: o ? u.u1M : u.z1l
@@ -222,11 +222,11 @@ function A(e) {
     value: s,
     children: (0, r.jsx)(u.f6W, {
       disableAdaptiveTheme: !0,
-      theme: O.BRd.MIDNIGHT,
-      children: e => (0, r.jsxs)(j.Z, {
+      theme: j.BRd.MIDNIGHT,
+      children: e => (0, r.jsxs)(O.Z, {
         className: a()(S.root, S.singleUserRoot, e),
         children: [(0, r.jsx)("img", {
-          src: I,
+          src: P,
           className: S.art,
           alt: ""
         }), (0, r.jsxs)("div", {
@@ -265,7 +265,7 @@ function w(e) {
     userParticipantCount: c
   } = e;
   (0, d.ZP)(() => {
-    v.default.track(O.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
+    v.default.track(j.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
       tile_type: "activity suggestion",
       n_participants: c
     })
@@ -282,7 +282,7 @@ function w(e) {
     }), [t]);
   return (0, r.jsx)(b.Gt, {
     value: m,
-    children: (0, r.jsxs)(j.Z, {
+    children: (0, r.jsxs)(O.Z, {
       className: S.root,
       children: [s > 300 ? (0, r.jsx)(u.Text, {
         className: S.heading,
@@ -302,7 +302,7 @@ function w(e) {
       }), (0, r.jsxs)(u.P3F, {
         className: S.checkboxContainer,
         onClick: function() {
-          v.default.track(O.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
+          v.default.track(j.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
             tile_type: "activity suggestion",
             close_type: "permanent",
             n_participants: c
@@ -315,7 +315,7 @@ function w(e) {
       }), (0, r.jsx)(u.P3F, {
         className: S.closeButtonContainer,
         onClick: function() {
-          v.default.track(O.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
+          v.default.track(j.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
             tile_type: "activity suggestion",
             close_type: "temporary",
             n_participants: c

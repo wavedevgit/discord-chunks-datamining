@@ -1,6 +1,6 @@
-/** Chunk was on 670 **/
+/** Chunk was on 62059 **/
 n.d(t, {
-  Z: () => g
+  Z: () => h
 });
 var r = n(255367);
 n(73800);
@@ -17,13 +17,13 @@ var i = n(512722),
   f = n(400916),
   _ = n(388032);
 
-function g(e) {
+function h(e) {
   let {
     guildId: t,
     guildProductListingId: n,
     sourceAnalyticsLocations: i
-  } = e, g = (0, a.e7)([p.Z], () => p.Z.getGuildProduct(n)), h = (0, a.e7)([c.Z], () => c.Z.getGuild(t), [t]), b = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), E = (0, u.n)();
-  return (l()(null != h, "guild cannot be null"), l()(null != g, "guildProductListing cannot be null"), (0, d.SO)(h)) ? (0, r.jsx)(o.ua7, {
+  } = e, h = (0, a.e7)([p.Z], () => p.Z.getGuildProduct(n)), g = (0, a.e7)([c.Z], () => c.Z.getGuild(t), [t]), b = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), E = (0, u.n)();
+  return (l()(null != g, "guild cannot be null"), l()(null != h, "guildProductListing cannot be null"), (0, d.SO)(g)) ? (0, r.jsx)(o.ua7, {
     text: _.intl.string(_.t.sAJr9f),
     children: e => {
       var t, n;
@@ -60,9 +60,9 @@ function g(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t))
     }
-  }) : g.has_entitlement ? null != g.attachments ? (0, r.jsx)(f.Z, {
-    guildId: h.id,
-    productId: g.id
+  }) : h.has_entitlement ? null != h.attachments ? (0, r.jsx)(f.Z, {
+    guildId: g.id,
+    productId: h.id
   }) : (0, r.jsx)(o.zxk, {
     variant: "secondary",
     text: _.intl.string(_.t.RcTOGB),
@@ -71,8 +71,8 @@ function g(e) {
     shineSize: o.gtL.ShineSizes.SMALL,
     pauseAnimation: b || !E,
     onClick: () => (0, m.z)({
-      guildProductListing: g,
-      guildId: h.id,
+      guildProductListing: h,
+      guildId: g.id,
       sourceAnalyticsLocations: i
     }),
     children: _.intl.string(_.t.xUi3BA)

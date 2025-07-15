@@ -1,6 +1,6 @@
-/** Chunk was on 46989 **/
+/** Chunk was on 80393 **/
 n.d(t, {
-  Z: () => f,
+  Z: () => g,
   a: () => o
 });
 var r, l, i, s = n(442837),
@@ -8,37 +8,37 @@ var r, l, i, s = n(442837),
 let o = {},
   u = {},
   c = {},
-  d = !1,
   E = !1,
+  d = !1,
   _ = !1;
 
-function m(e) {
+function A(e) {
   let {
     guild: t
   } = e.invite;
   return (null == t ? void 0 : t.welcome_screen) != null && (u[t.id] = t.welcome_screen, !0)
 }
 
-function A(e) {
+function T(e) {
   let {
     welcomeScreen: t,
     guildId: n
   } = e;
   u[n] = null != t ? t : o
 }
-class g extends(i = s.ZP.Store) {
+class I extends(i = s.ZP.Store) {
   get(e) {
     if (null != e) return u[e]
   }
   isFetching() {
-    return E
+    return d
   }
   hasError() {
     return _
   }
   hasSeen(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-    return null != e && (t ? d : c[e] || !1)
+    return null != e && (t ? E : c[e] || !1)
   }
   isEmpty(e) {
     if (null == e) return !0;
@@ -46,26 +46,26 @@ class g extends(i = s.ZP.Store) {
     return null == t || 0 === t.welcome_channels.length
   }
 }
-l = "WelcomeScreenStore", (r = "displayName") in g ? Object.defineProperty(g, r, {
+l = "WelcomeScreenStore", (r = "displayName") in I ? Object.defineProperty(I, r, {
   value: l,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : g[r] = l;
-let f = new g(a.Z, {
-  INVITE_RESOLVE_SUCCESS: m,
-  INVITE_ACCEPT_SUCCESS: m,
-  WELCOME_SCREEN_SUBMIT_SUCCESS: A,
-  WELCOME_SCREEN_UPDATE: A,
+}) : I[r] = l;
+let g = new I(a.Z, {
+  INVITE_RESOLVE_SUCCESS: A,
+  INVITE_ACCEPT_SUCCESS: A,
+  WELCOME_SCREEN_SUBMIT_SUCCESS: T,
+  WELCOME_SCREEN_UPDATE: T,
   WELCOME_SCREEN_VIEW: function(e) {
     let {
       guildId: t,
       isLurking: n
     } = e;
-    c[t] = !0, n && (d = !0)
+    c[t] = !0, n && (E = !0)
   },
   GUILD_STOP_LURKING: function() {
-    d = !1
+    E = !1
   },
   GUILD_DELETE: function(e) {
     let {
@@ -76,10 +76,10 @@ let f = new g(a.Z, {
     c[t] = !1
   },
   WELCOME_SCREEN_FETCH_START: function() {
-    E = !0, _ = !1
+    d = !0, _ = !1
   },
   WELCOME_SCREEN_FETCH_SUCCESS: function(e) {
-    E = !1, _ = !1;
+    d = !1, _ = !1;
     let {
       welcomeScreen: t,
       guildId: n
@@ -87,6 +87,6 @@ let f = new g(a.Z, {
     u[n] = null != t ? t : o
   },
   WELCOME_SCREEN_FETCH_FAIL: function() {
-    E = !1, _ = !0
+    d = !1, _ = !0
   }
 })

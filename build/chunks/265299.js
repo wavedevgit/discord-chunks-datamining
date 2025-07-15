@@ -1,4 +1,4 @@
-/** Chunk was on 670 **/
+/** Chunk was on 62059 **/
 n.d(t, {
   Z: () => m
 });
@@ -22,10 +22,10 @@ function m(e) {
     isFetchingCurrentQuests: f
   } = (0, a.J2)({
     fetchPolicy: "cache-or-network"
-  }), _ = i.useMemo(() => n.find(e => e.id === t), [t, n]), g = i.useMemo(() => m.find(e => e.id === t), [t, m]);
+  }), _ = i.useMemo(() => n.find(e => e.id === t), [t, n]), h = i.useMemo(() => m.find(e => e.id === t), [t, m]);
   return f ? (0, r.jsx)(l.$jN, {
     className: p.spinner
-  }) : null != g ? (0, r.jsx)(u.W, {
+  }) : null != h ? (0, r.jsx)(u.W, {
     questId: t
   }) : null == _ ? (0, r.jsx)(d.o, {
     questId: t,

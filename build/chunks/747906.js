@@ -1,11 +1,11 @@
-/** Chunk was on 81872 **/
+/** Chunk was on 86350 **/
 n.d(t, {
-  P: () => a
+  P: () => o
 });
 var r = n(255367),
   i = n(73800),
   l = n(709014);
-let o = {
+let a = {
     mute: {
       name: "mute",
       start: 0,
@@ -42,10 +42,10 @@ let o = {
       duration: 40
     }
   },
-  a = e => {
+  o = e => {
     let t = i.useRef(null),
-      a = i.useRef(e);
-    a.current = e;
+      o = i.useRef(e);
+    o.current = e;
     let s = i.useMemo(() => () => {
         null != t.current && t.current.play(e)
       }, [e]),
@@ -81,8 +81,8 @@ let o = {
         }({}, e), s = s = {
           src: () => n.e("30261").then(n.t.bind(n, 414787, 19)),
           ref: t,
-          initialAnimation: a.current,
-          markers: o
+          initialAnimation: o.current,
+          markers: a
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {

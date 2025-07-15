@@ -22,7 +22,7 @@ var r = n(255367),
   C = n(989830),
   x = n(388032),
   v = n(837265);
-let j = i.memo(function(e) {
+let O = i.memo(function(e) {
     let {
       channelId: t,
       width: n
@@ -55,7 +55,7 @@ let j = i.memo(function(e) {
       })
     })
   }),
-  O = i.memo(function(e) {
+  j = i.memo(function(e) {
     let {
       value: t,
       multiplier: n
@@ -135,30 +135,30 @@ let j = i.memo(function(e) {
         pointerEvents: "none",
         config: o.config.stiff
       }),
-      I = i.useMemo(() => null != x ? x : {
+      P = i.useMemo(() => null != x ? x : {
         value: 0,
         multiplier: 1
       }, [x]),
-      P = i.useRef(I);
+      I = i.useRef(P);
     i.useEffect(() => {
-      (I.multiplier > 1 || I.value > 0) && (P.current = I)
-    }, [I]);
+      (P.multiplier > 1 || P.value > 0) && (I.current = P)
+    }, [P]);
     let {
       multiplier: Z,
       value: N
     } = i.useMemo(() => ({
-      value: E ? I.value : P.current.value,
-      multiplier: E ? I.multiplier : P.current.multiplier
-    }), [E, I, P]);
+      value: E ? P.value : I.current.value,
+      multiplier: E ? P.multiplier : I.current.multiplier
+    }), [E, P, I]);
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(j, {
+      children: [(0, r.jsx)(O, {
         channelId: t,
         width: m
       }), (0, r.jsx)(o.animated.div, {
         ref: p,
         className: v.combo,
         style: S,
-        children: (0, r.jsx)(O, {
+        children: (0, r.jsx)(j, {
           value: N,
           multiplier: Z
         })

@@ -1,4 +1,4 @@
-/** Chunk was on 61007 **/
+/** Chunk was on 62059 **/
 n.d(t, {
   O: () => c,
   l: () => s
@@ -6,26 +6,26 @@ n.d(t, {
 var r = n(594174),
   i = n(63063),
   l = n(74538),
-  o = n(981631),
-  a = n(388032);
+  a = n(981631),
+  o = n(388032);
 
 function s(e) {
   switch (e) {
-    case o.evJ.TOO_MANY_USER_GUILDS:
+    case a.evJ.TOO_MANY_USER_GUILDS:
       let t = r.default.getCurrentUser(),
-        n = l.ZP.canUseIncreasedGuildCap(t) || (null == t ? void 0 : t.isStaff()) ? o.tHP : o.DZw;
+        n = l.ZP.canUseIncreasedGuildCap(t) || (null == t ? void 0 : t.isStaff()) ? a.tHP : a.DZw;
       return {
-        title: a.intl.formatToPlainString(a.t["ttJ/ho"], {
+        title: o.intl.formatToPlainString(o.t["ttJ/ho"], {
           quantity: n
-        }), description: a.intl.string(a.t.iLyuDA)
+        }), description: o.intl.string(o.t.iLyuDA)
       };
-    case o.evJ.GUILD_AT_CAPACITY:
+    case a.evJ.GUILD_AT_CAPACITY:
       return {
-        title: a.intl.string(a.t.ZZlox8), description: a.intl.string(a.t.ZUEGFh)
+        title: o.intl.string(o.t.ZZlox8), description: o.intl.string(o.t.ZUEGFh)
       };
-    case o.evJ.GUILD_JOIN_INVITE_LIMITED_ACCESS:
+    case a.evJ.GUILD_JOIN_INVITE_LIMITED_ACCESS:
       return {
-        title: a.intl.string(a.t.kJwpBQ), description: a.intl.string(a.t.ZUEGFh)
+        title: o.intl.string(o.t.kJwpBQ), description: o.intl.string(o.t.ZUEGFh)
       };
     default:
       return null
@@ -34,19 +34,19 @@ function s(e) {
 
 function c(e) {
   switch (e) {
-    case o.evJ.TOO_MANY_USER_GUILDS:
-      return a.intl.string(a.t.iLyuDA);
-    case o.evJ.GUILD_AT_CAPACITY:
-      return a.intl.string(a.t.M6unND);
-    case o.evJ.INVALID_COUNTRY_CODE:
-      return a.intl.string(a.t.sRJGR0);
-    case o.evJ.INVALID_CANNOT_FRIEND_SELF:
-      return a.intl.string(a.t["mY2R+P"]);
-    case o.evJ.INVITES_DISABLED:
-      return a.intl.format(a.t.RXSeLi, {
-        articleLink: i.Z.getArticleURL(o.BhN.INVITE_DISABLED)
+    case a.evJ.TOO_MANY_USER_GUILDS:
+      return o.intl.string(o.t.iLyuDA);
+    case a.evJ.GUILD_AT_CAPACITY:
+      return o.intl.string(o.t.M6unND);
+    case a.evJ.INVALID_COUNTRY_CODE:
+      return o.intl.string(o.t.sRJGR0);
+    case a.evJ.INVALID_CANNOT_FRIEND_SELF:
+      return o.intl.string(o.t["mY2R+P"]);
+    case a.evJ.INVITES_DISABLED:
+      return o.intl.format(o.t.RXSeLi, {
+        articleLink: i.Z.getArticleURL(a.BhN.INVITE_DISABLED)
       });
     default:
-      return a.intl.string(a.t.dDZRd3)
+      return o.intl.string(o.t.dDZRd3)
   }
 }

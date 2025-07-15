@@ -1,4 +1,4 @@
-/** Chunk was on 670 **/
+/** Chunk was on 62059 **/
 n.d(t, {
   Z: () => _
 });
@@ -21,12 +21,12 @@ function _(e) {
     compact: t,
     message: n,
     channel: _
-  } = e, g = (0, c.ZP)(n), h = (0, u.l)({
+  } = e, h = (0, c.ZP)(n), g = (0, u.l)({
     user: n.author,
     channelId: n.channel_id,
     guildId: _.guild_id,
     messageId: n.id
-  })(g), b = (0, a.j)("HDStreamingUpgradedMessage"), E = () => (0, o.k)(_, "HDStreamingUpgradedMessage"), y = b ? E : s.Z.getArticleURL(p.BhN.HD_STREAMING_POTION);
+  })(h), b = (0, a.j)("HDStreamingUpgradedMessage"), E = () => (0, o.k)(_, "HDStreamingUpgradedMessage"), y = b ? E : s.Z.getArticleURL(p.BhN.HD_STREAMING_POTION);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: f.parentContainer,
@@ -37,8 +37,8 @@ function _(e) {
         timestamp: n.timestamp,
         compact: t,
         children: m.intl.format(m.t["u0qJ4+"], {
-          actorName: g.nick,
-          actorHook: h
+          actorName: h.nick,
+          actorHook: g
         })
       })
     }), (0, r.jsxs)(i.P3F, {

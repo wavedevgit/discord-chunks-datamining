@@ -24,7 +24,7 @@ var r = n(255367),
   x = n(388032),
   v = n(285580);
 
-function j(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,7 +43,7 @@ function j(e) {
   return e
 }
 
-function O(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -118,35 +118,35 @@ let S = function(e) {
     setHasPendingChanges: a,
     closeOrShowDiscardChangesAlert: f,
     location: S
-  } = e, I = (0, g.Dt)(), P = (0, o.e7)([b.Z], () => b.Z.getChannel(t)), Z = null == P ? void 0 : P.name, N = (0, m.cO)(P), [T, A] = i.useState(null != Z ? Z : ""), [w, R] = i.useState(void 0), M = void 0 !== w, {
+  } = e, P = (0, g.Dt)(), I = (0, o.e7)([b.Z], () => b.Z.getChannel(t)), Z = null == I ? void 0 : I.name, N = (0, m.cO)(I), [T, A] = i.useState(null != Z ? Z : ""), [w, R] = i.useState(void 0), M = void 0 !== w, {
     analyticsLocations: D
   } = (0, h.ZP)(S, p.Z.GROUP_DM_EDIT_MODAL), k = {
     channel_id: t,
-    channel_type: null == P ? void 0 : P.type,
+    channel_type: null == I ? void 0 : I.type,
     location: S,
     location_stack: D,
     old_name_set: "" !== Z,
-    old_icon_set: (null == P ? void 0 : P.icon) != null
+    old_icon_set: (null == I ? void 0 : I.icon) != null
   };
   return (i.useEffect(() => {
     a(T !== Z || M)
-  }, [T, Z, M, a]), (0, d.ZP)(() => (_.default.track(C.rMx.GDM_EDIT_INTERACTED, O(j({}, k), {
+  }, [T, Z, M, a]), (0, d.ZP)(() => (_.default.track(C.rMx.GDM_EDIT_INTERACTED, j(O({}, k), {
     action: "opened"
   })), () => {
-    _.default.track(C.rMx.GDM_EDIT_INTERACTED, O(j({}, k), {
+    _.default.track(C.rMx.GDM_EDIT_INTERACTED, j(O({}, k), {
       action: "dismissed"
     }))
-  })), null == P) ? null : (0, r.jsx)(h.Gt, {
+  })), null == I) ? null : (0, r.jsx)(h.Gt, {
     value: D,
     children: (0, r.jsx)("form", {
       onSubmit: e => {
         e.preventDefault();
         let r = T !== Z,
           i = void 0 !== w;
-        if (_.default.track(C.rMx.GDM_EDIT_INTERACTED, O(j({}, k), {
+        if (_.default.track(C.rMx.GDM_EDIT_INTERACTED, j(O({}, k), {
             action: "saved",
             new_name_set: "" !== T,
-            new_icon_set: (i ? w : null == P ? void 0 : P.icon) != null,
+            new_icon_set: (i ? w : null == I ? void 0 : I.icon) != null,
             name_changed: r,
             icon_changed: i
           })), r || i) {
@@ -157,14 +157,14 @@ let S = function(e) {
       },
       children: (0, r.jsxs)(c.Y0X, {
         transitionState: l,
-        "aria-labelledby": I,
+        "aria-labelledby": P,
         className: v.modal,
         parentComponent: "GdmEditModal",
         children: [(0, r.jsxs)(c.xBx, {
           separator: !0,
           className: v.header,
           children: [(0, r.jsx)(c.X6q, {
-            id: I,
+            id: P,
             variant: "heading-lg/semibold",
             color: "header-primary",
             children: x.intl.string(x.t["5Q9+/P"])
@@ -175,7 +175,7 @@ let S = function(e) {
         }), (0, r.jsxs)(c.hzk, {
           className: v.modalContent,
           children: [(0, r.jsx)(E, {
-            channel: P,
+            channel: I,
             previewIcon: w,
             onIconChange: e => R(e.imageUri),
             onIconRemove: () => R(null),

@@ -1,12 +1,12 @@
-/** Chunk was on 81872 **/
+/** Chunk was on 86350 **/
 n.d(t, {
-  R: () => a,
+  R: () => o,
   c: () => s
 });
 var r = n(818083),
   i = n(984134),
   l = n(345655);
-let o = (0, r.B)({
+let a = (0, r.B)({
   kind: "user",
   id: "2025-05_input_profiles_experiment_web",
   label: "Audio input profiles (studio mode)",
@@ -22,7 +22,7 @@ let o = (0, r.B)({
   }]
 });
 
-function a(e) {
+function o(e) {
   let {
     location: t,
     autoTrackExposure: n = !0
@@ -33,7 +33,7 @@ function a(e) {
   }, {
     autoTrackExposure: n
   });
-  return o.getCurrentConfig({
+  return a.getCurrentConfig({
     location: t
   }, {
     disable: r,
@@ -52,7 +52,7 @@ function s(e) {
   }, {
     autoTrackExposure: n
   });
-  return o.useExperiment({
+  return a.useExperiment({
     location: t
   }, {
     disable: r,

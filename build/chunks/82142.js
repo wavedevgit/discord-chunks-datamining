@@ -1,4 +1,4 @@
-/** Chunk was on 670 **/
+/** Chunk was on 62059 **/
 n.d(t, {
   Z: () => w
 }), n(388685);
@@ -12,27 +12,27 @@ var r, i, l, a = n(913527),
   m = n(669079),
   f = n(981631);
 let _ = {},
-  g = new Map,
-  h = [],
+  h = new Map,
+  g = [],
   b = [],
   E = [],
   y = new Set,
+  x = {},
   C = {},
-  v = {},
-  x = new Set;
+  v = new Set;
 
 function O(e) {
   let t = p.Z.createFromServer(e),
     n = t.code;
-  if (g.has(n)) g.set(n, g.get(n).merge(t));
-  else if (g.set(n, t), null != t.expiresAt) {
+  if (h.has(n)) h.set(n, h.get(n).merge(t));
+  else if (h.set(n, t), null != t.expiresAt) {
     let e = new c.V7;
     _[n] = e,
       function e(t) {
-        let n = g.get(t);
+        let n = h.get(t);
         if (null == n || null == n.expiresAt) return;
         let r = n.expiresAt.valueOf() - o()().valueOf();
-        if (r <= 0) g.delete(t), delete _[t], A.emitChange();
+        if (r <= 0) h.delete(t), delete _[t], A.emitChange();
         else {
           let n = _[t];
           if (null == n) return;
@@ -44,10 +44,10 @@ function O(e) {
 
 function j(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-  if (t && !x.has(e.channel_id)) return !1;
+  if (t && !v.has(e.channel_id)) return !1;
   let n = (0, m.Fp)(e) ? (0, m.Q_)((null == e ? void 0 : e.embeds) != null ? null == e ? void 0 : e.embeds[0].url : void 0) : (0, m.Q_)(e.content);
   return 0 !== n.length && (n.forEach(e => {
-    h.includes(e) || E.includes(e) || (I({
+    g.includes(e) || E.includes(e) || (I({
       code: e
     }), u.Z.wait(() => d.Z.resolveGiftCode(e, !1, !0).catch(f.VqG)))
   }), !1)
@@ -57,7 +57,7 @@ function I(e) {
   let {
     code: t
   } = e;
-  h.includes(t) || (h = [...h, t])
+  g.includes(t) || (g = [...g, t])
 }
 
 function S(e) {
@@ -72,7 +72,7 @@ function T(e) {
     channelId: t,
     messages: n
   } = e;
-  x.add(t), n.forEach(e => j(e, !0))
+  v.add(t), n.forEach(e => j(e, !0))
 }
 
 function N(e) {
@@ -84,17 +84,17 @@ function N(e) {
 }
 class P extends(r = s.ZP.Store) {
   get(e) {
-    let t = g.get(e);
+    let t = h.get(e);
     return null == t || t.isExpired() ? null : t
   }
   getError(e) {
-    return null != e ? v[e] : null
+    return null != e ? C[e] : null
   }
   getForGifterSKUAndPlan(e, t, n) {
-    return Array.from(g.values()).filter(r => r.userId === e && r.skuId === t && (null == n || r.subscriptionPlanId === n) && !r.isExpired())
+    return Array.from(h.values()).filter(r => r.userId === e && r.skuId === t && (null == n || r.subscriptionPlanId === n) && !r.isExpired())
   }
   getIsResolving(e) {
-    return h.includes(e)
+    return g.includes(e)
   }
   getIsResolved(e) {
     return E.includes(e)
@@ -106,10 +106,10 @@ class P extends(r = s.ZP.Store) {
     return y.has((0, m.Bg)(e, t))
   }
   getUserGiftCodesLoadedAtForSKUAndPlan(e, t) {
-    return C[(0, m.Bg)(e, t)]
+    return x[(0, m.Bg)(e, t)]
   }
   getResolvingCodes() {
-    return h
+    return g
   }
   getResolvedCodes() {
     return E
@@ -126,26 +126,26 @@ l = "GiftCodeStore", (i = "displayName") in P ? Object.defineProperty(P, i, {
 }) : P[i] = l;
 let A = new P(u.Z, {
     CONNECTION_OPEN: function() {
-      return x.clear(), !1
+      return v.clear(), !1
     },
     CHANNEL_SELECT: function(e) {
       let {
         channelId: t
       } = e;
-      return null != t && x.add(t), !1
+      return null != t && v.add(t), !1
     },
     GIFT_CODE_RESOLVE: I,
     GIFT_CODE_RESOLVE_SUCCESS: function(e) {
       let {
         giftCode: t
       } = e;
-      return h = h.filter(e => e !== t.code), E.includes(t.code) || (E = [...E, t.code]), O(t)
+      return g = g.filter(e => e !== t.code), E.includes(t.code) || (E = [...E, t.code]), O(t)
     },
     GIFT_CODE_RESOLVE_FAILURE: function(e) {
       let {
         code: t
       } = e;
-      h = h.filter(e => e !== t), E.includes(t) || (E = [...E, t])
+      g = g.filter(e => e !== t), E.includes(t) || (E = [...E, t])
     },
     GIFT_CODE_REDEEM: function(e) {
       let {
@@ -158,8 +158,8 @@ let A = new P(u.Z, {
         code: t
       } = e;
       b = b.filter(e => e !== t);
-      let n = g.get(t);
-      null != n && g.set(t, n.merge({
+      let n = h.get(t);
+      null != n && h.set(t, n.merge({
         redeemed: !0,
         uses: n.uses + 1
       }))
@@ -170,20 +170,20 @@ let A = new P(u.Z, {
         error: n
       } = e;
       b = b.filter(e => e !== t);
-      let r = g.get(t);
-      if (v[t] = n, null != r) switch (n.code) {
+      let r = h.get(t);
+      if (C[t] = n, null != r) switch (n.code) {
         case f.evJ.UNKNOWN_GIFT_CODE:
-          g.set(t, r.set("revoked", !0));
+          h.set(t, r.set("revoked", !0));
           break;
         case f.evJ.INVALID_GIFT_REDEMPTION_EXHAUSTED:
-          g.set(t, r.set("uses", r.maxUses))
+          h.set(t, r.set("uses", r.maxUses))
       }
     },
     GIFT_CODE_REVOKE_SUCCESS: function(e) {
       let {
         code: t
       } = e;
-      g.delete(t);
+      h.delete(t);
       let n = _[t];
       null != n && (n.stop(), delete _[t]), E.includes(t) || (E = [...E, t])
     },
@@ -208,7 +208,7 @@ let A = new P(u.Z, {
       } = e;
       t.forEach(O);
       let i = (0, m.Bg)(n, r);
-      C[i] = Date.now(), y.delete(i)
+      x[i] = Date.now(), y.delete(i)
     },
     GIFT_CODES_FETCH_FAILURE: function(e) {
       let {
@@ -248,8 +248,8 @@ let A = new P(u.Z, {
       let {
         uses: t,
         code: n
-      } = e, r = g.get(n);
-      null != r && g.set(n, r.set("uses", Math.max(r.uses, t)))
+      } = e, r = h.get(n);
+      null != r && h.set(n, r.set("uses", Math.max(r.uses, t)))
     },
     LOAD_THREADS_SUCCESS: N,
     LOAD_ARCHIVED_THREADS_SUCCESS: N,

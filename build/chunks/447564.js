@@ -1,4 +1,4 @@
-/** Chunk was on 670 **/
+/** Chunk was on 62059 **/
 n.d(t, {
   default: () => j,
   k: () => O
@@ -16,15 +16,15 @@ var r = n(255367),
   m = n(980463),
   f = n(576645),
   _ = n(317951),
-  g = n(63063),
-  h = n(937615),
+  h = n(63063),
+  g = n(937615),
   b = n(82950),
   E = n(981631),
   y = n(388032),
-  C = n(668275),
-  v = n(99713);
+  x = n(668275),
+  C = n(99713);
 
-function x(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ let O = (e, t) => {
     let {
       default: t
     } = await Promise.resolve().then(n.bind(n, 447564));
-    return n => (0, r.jsx)(t, x({
+    return n => (0, r.jsx)(t, v({
       channel: e
     }, n))
   }, {
@@ -76,29 +76,29 @@ function S(e) {
     channel: t
   } = e, n = (0, f.T$)(t), [a, o] = (0, i.useState)(!1), {
     price: d,
-    fetchingPrice: g,
-    error: h
+    fetchingPrice: h,
+    error: g
   } = (0, f.R2)(_.FX), {
     entitlement: b,
     fetchedEntitlement: y,
-    error: C
-  } = (0, f.t6)(_.FX), v = h || C, {
-    analyticsLocations: x
+    error: x
+  } = (0, f.t6)(_.FX), C = g || x, {
+    analyticsLocations: v
   } = (0, u.ZP)([c.Z.HD_STREAMING_POTION_MODAL]), O = null != b && !b.consumed;
   (0, i.useEffect)(() => () => {
-    v && (0, m.SN)(_.FX)
-  }, [b, t, a, v]);
+    C && (0, m.SN)(_.FX)
+  }, [b, t, a, C]);
   let j = (0, i.useCallback)(() => {
       (0, m.Zu)(t.id), (0, s.pTH)()
     }, [t.id]),
     I = (0, i.useCallback)(() => {
       (0, p.Z)({
         skuId: _.FX,
-        analyticsLocations: x,
+        analyticsLocations: v,
         onComplete: j,
         variantsReturnStyle: l.v.INDIVIDUAL_PRODUCTS
       })
-    }, [x, j]),
+    }, [v, j]),
     S = (0, i.useMemo)(() => () => t.isHDStreamSplashed ? 4 : n ? (null == b ? void 0 : b.type) === E.qc2.DEVELOPER_GIFT ? 1 : 2 * !!O : 3, [t.isHDStreamSplashed, n, null == b ? void 0 : b.type, O]),
     N = (0, i.useMemo)(() => S(), [S]);
   return (0, r.jsx)(T, {
@@ -108,7 +108,7 @@ function S(e) {
     onActionClick: () => {
       o(!0), (O ? j : I)()
     },
-    loading: g || !y
+    loading: h || !y
   })
 }
 let T = e => {
@@ -121,7 +121,7 @@ let T = e => {
     } = e;
     return a ? (0, r.jsx)(R, {}) : null == i ? (0, r.jsx)(Z, {}) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
-        className: C.modal,
+        className: x.modal,
         children: [(0, r.jsx)(N, {}), (0, r.jsx)(P, {
           channel: t
         })]
@@ -133,7 +133,7 @@ let T = e => {
     })
   },
   N = () => (0, r.jsx)("img", {
-    className: C.image,
+    className: x.image,
     src: "https://cdn.discordapp.com/assets/premium/roadblocks/hd_streaming.png",
     alt: y.intl.string(y.t.DdigcX)
   }),
@@ -143,9 +143,9 @@ let T = e => {
     } = e;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
-        className: C.body,
+        className: x.body,
         children: [(0, r.jsxs)("div", {
-          className: C.heading,
+          className: x.heading,
           children: [(0, r.jsx)(s.X6q, {
             variant: "heading-lg/bold",
             children: y.intl.string(y.t.K04rOD)
@@ -157,7 +157,7 @@ let T = e => {
           color: "text-link",
           variant: "text-sm/normal",
           children: y.intl.format(y.t["1wV4qq"], {
-            helpCenterLink: g.Z.getArticleURL(E.BhN.HD_STREAMING_POTION)
+            helpCenterLink: h.Z.getArticleURL(E.BhN.HD_STREAMING_POTION)
           })
         }), (0, r.jsx)(s.Text, {
           color: "text-muted",
@@ -165,9 +165,9 @@ let T = e => {
           children: y.intl.string(y.t.qk07Mj)
         })]
       }), (0, r.jsx)("div", {
-        className: C.divider
+        className: x.divider
       }), (0, r.jsxs)("div", {
-        className: C.applyingTo,
+        className: x.applyingTo,
         children: [(0, r.jsx)(s.Text, {
           variant: "eyebrow",
           children: y.intl.string(y.t.tZyXg4)
@@ -184,7 +184,7 @@ let T = e => {
       onActionClick: i
     } = e;
     return (0, r.jsxs)("div", {
-      className: C.footer,
+      className: x.footer,
       children: [(0, r.jsx)(s.zxk, {
         variant: "secondary",
         text: y.intl.string(y.t.Avt5KS),
@@ -204,7 +204,7 @@ let T = e => {
       price: n,
       onActionClick: i
     } = e, l = y.intl.formatToPlainString(y.t.S9LAdX, {
-      price: (0, h.T4)(n.amount, n.currency)
+      price: (0, g.T4)(n.amount, n.currency)
     });
     if (3 === t || 4 === t) {
       let e = {
@@ -212,11 +212,11 @@ let T = e => {
         4: y.intl.string(y.t.utRdl5)
       } [t];
       return (0, r.jsx)(s.ua7, {
-        tooltipContentClassName: C.tooltip,
+        tooltipContentClassName: x.tooltip,
         text: e,
         children: e => {
           var t, n;
-          return (0, r.jsx)(o.zx, (t = x({}, e), n = n = {
+          return (0, r.jsx)(o.zx, (t = v({}, e), n = n = {
             disabled: !0,
             children: l
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -240,7 +240,7 @@ let T = e => {
     return (0, r.jsx)(o.zx, {
       onClick: i,
       children: (0, r.jsxs)("div", {
-        className: C.buttonCopy,
+        className: x.buttonCopy,
         children: [(0, r.jsx)(s.hh5, {
           color: a.Z.colors.WHITE,
           size: "sm"
@@ -249,11 +249,11 @@ let T = e => {
     })
   },
   Z = () => (0, r.jsx)("div", {
-    className: C.anomaly,
+    className: x.anomaly,
     children: (0, r.jsxs)("div", {
-      className: C.error,
+      className: x.error,
       children: [(0, r.jsx)(s.Eep, {
-        src: v,
+        src: C,
         width: 178,
         height: 190
       }), (0, r.jsx)(s.Text, {
@@ -263,9 +263,9 @@ let T = e => {
     })
   }),
   R = () => (0, r.jsx)("div", {
-    className: C.anomaly,
+    className: x.anomaly,
     children: (0, r.jsx)("div", {
-      className: C.spinner,
+      className: x.spinner,
       children: (0, r.jsx)(s.$jN, {})
     })
   })

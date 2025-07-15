@@ -33,8 +33,8 @@ function x(e) {
     animatedDivClass: x,
     commandOrigin: v
   } = e, {
-    onActivityItemSelected: j,
-    imageBackground: O,
+    onActivityItemSelected: O,
+    imageBackground: j,
     activityAction: E,
     labelType: S
   } = (0, d.ZP)({
@@ -46,11 +46,11 @@ function x(e) {
     embeddedActivitiesManager: f.Z,
     assetNames: _,
     commandOrigin: v
-  }), [I, P] = l.useState(!1), Z = l.useCallback(() => {
-    P(!0)
-  }, [P]), N = l.useCallback(() => {
-    P(!1)
-  }, [P]), T = l.useMemo(() => (0, i.jsx)("div", {
+  }), [P, I] = l.useState(!1), Z = l.useCallback(() => {
+    I(!0)
+  }, [I]), N = l.useCallback(() => {
+    I(!1)
+  }, [I]), T = l.useMemo(() => (0, i.jsx)("div", {
     className: b.overlayBadge,
     children: (0, i.jsx)("div", {
       className: b.badgeContainer,
@@ -90,7 +90,7 @@ function x(e) {
     }
   }, [E]);
   return (0, i.jsx)(c.zx, {
-    onClick: j,
+    onClick: O,
     color: "transparent",
     look: c.zx.Looks.BLANK,
     size: c.zx.Sizes.NONE,
@@ -105,7 +105,7 @@ function x(e) {
         value: 0
       },
       to: {
-        value: +!!I
+        value: +!!P
       },
       children: e => {
         let {
@@ -122,7 +122,7 @@ function x(e) {
               transform: t.to([0, 1], [1, 1.05]).to(e => "scale(".concat(e, ")"))
             },
             children: [(0, i.jsx)(p.Z, {
-              imageBackground: O,
+              imageBackground: j,
               applicationName: r.application.name,
               imageClassName: b.activitySuggestionImage,
               imageNotFoundClassName: b.brokenImageIconWrapper

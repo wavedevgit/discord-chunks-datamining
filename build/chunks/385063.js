@@ -1,4 +1,4 @@
-/** Chunk was on 670 **/
+/** Chunk was on 62059 **/
 n.d(t, {
   Z: () => f
 });
@@ -48,13 +48,13 @@ function _(e) {
     message: t,
     usernameHook: i,
     compact: c
-  } = e, f = (0, u.ZP)(t), _ = i(f), g = (0, o.I3)("GdmNameChangeSystemMessage", t.channel_id), h = "" === t.content ? p.t.AI1ZZm : p.t.geP3ra;
+  } = e, f = (0, u.ZP)(t), _ = i(f), h = (0, o.I3)("GdmNameChangeSystemMessage", t.channel_id), g = "" === t.content ? p.t.AI1ZZm : p.t.geP3ra;
   return (0, r.jsx)(d.Z, {
     compact: c,
     className: m.channelNameChange,
     icon: n(819373),
     timestamp: t.timestamp,
-    children: g ? p.intl.format(h, {
+    children: h ? p.intl.format(g, {
       username: f.nick,
       usernameHook: _,
       channelName: t.content,

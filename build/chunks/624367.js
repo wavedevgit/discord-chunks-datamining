@@ -1,4 +1,4 @@
-/** Chunk was on 670 **/
+/** Chunk was on 62059 **/
 n.d(t, {
   Z: () => d
 }), n(388685);
@@ -21,15 +21,15 @@ function d(e) {
   } = e, {
     analyticsLocations: m
   } = (0, l.ZP)(i.Z.ACTIVITY_BOOKMARK), [f] = (0, s.Z)([t]), _ = null != f && (0, a.ye)(f), {
-    data: g,
-    error: h
+    data: h,
+    error: g
   } = (0, c.h)(null == f ? void 0 : f.id, p);
-  return null == f || !1 === _ ? null : null != p && null == h && null != g ? (0, r.jsx)(l.Gt, {
+  return null == f || !1 === _ ? null : null != p && null == g && null != h ? (0, r.jsx)(l.Gt, {
     value: m,
     children: (0, r.jsx)(u.b, {
       application: f,
       customId: n,
-      customLink: g,
+      customLink: h,
       referrerId: d
     })
   }) : (0, r.jsx)(l.Gt, {

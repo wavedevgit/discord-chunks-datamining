@@ -23,12 +23,12 @@ var r = n(255367),
   C = n(411198),
   x = n(683818),
   v = n(16853),
-  j = n(981631),
-  O = n(388032),
+  O = n(981631),
+  j = n(388032),
   E = n(901593),
   S = n(883760);
 
-function I(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ function I(e) {
   return e
 }
 
-function P(e, t) {
+function I(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -89,7 +89,7 @@ let N = e => {
       variant: "text-sm/semibold",
       color: "header-primary",
       className: E.addServerText,
-      children: O.intl.string(O.t.H9jxS0)
+      children: j.intl.string(j.t.H9jxS0)
     })]
   })
 };
@@ -106,24 +106,24 @@ function T(e) {
     }),
     children: (0, r.jsxs)(h.ZP, {
       children: [u ? (0, r.jsx)(c.ua7, {
-        text: O.intl.string(O.t.XnuOvL),
+        text: j.intl.string(j.t.XnuOvL),
         hideOnClick: !0,
         children: e => {
           var {
             onClick: i
           } = e, l = Z(e, ["onClick"]);
-          return (0, r.jsx)(h.zx, P(I({}, l), {
+          return (0, r.jsx)(h.zx, I(P({}, l), {
             onClick: () => {
               null == i || i(), (0, c.ZDy)(async () => {
                 let {
                   default: e
                 } = await n.e("34191").then(n.bind(n, 303647));
-                return n => (0, r.jsx)(e, P(I({}, n), {
+                return n => (0, r.jsx)(e, I(P({}, n), {
                   entry: t
                 }))
               })
             },
-            "aria-label": O.intl.string(O.t.XnuOvL),
+            "aria-label": j.intl.string(j.t.XnuOvL),
             children: (0, r.jsx)(c.vdY, {
               size: "xs",
               color: "currentColor",
@@ -142,18 +142,18 @@ function T(e) {
             onClick: t
           } = e, n = Z(e, ["onClick"]);
           return (0, r.jsx)(c.ua7, {
-            text: O.intl.string(O.t.UKOtz8),
+            text: j.intl.string(j.t.UKOtz8),
             hideOnClick: !0,
             children: e => {
               var {
                 onClick: i
               } = e, l = Z(e, ["onClick"]);
-              return (0, r.jsx)(h.zx, P(I({}, n, l), {
+              return (0, r.jsx)(h.zx, I(P({}, n, l), {
                 ref: s,
                 onClick: e => {
                   null == i || i(), t(e)
                 },
-                "aria-label": O.intl.string(O.t.UKOtz8),
+                "aria-label": j.intl.string(j.t.UKOtz8),
                 children: (0, r.jsx)(c.xhG, {
                   size: "md",
                   color: "currentColor",
@@ -175,7 +175,7 @@ let A = e => {
     h(!0);
     try {
       x ? (0, b.X)(l.guildId) : await d.Z.joinGuild(l.guildId, {
-        source: j.vtS.DIRECTORY_ENTRY
+        source: O.vtS.DIRECTORY_ENTRY
       })
     } finally {
       h(!1)
@@ -188,15 +188,15 @@ let A = e => {
     id: l.guildId,
     icon: l.icon,
     size: 40
-  })) ? t : void 0, N = O.intl.string(O.t.VJlc0d);
-  return x && (N = O.intl.string(O.t.cqWE2d)), (0, r.jsxs)("div", {
+  })) ? t : void 0, N = j.intl.string(j.t.VJlc0d);
+  return x && (N = j.intl.string(j.t.cqWE2d)), (0, r.jsxs)("div", {
     className: E.card,
     onContextMenu: e => {
       (0, u.jW)(e, async () => {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 643560));
-        return t => (0, r.jsx)(e, P(I({}, t), {
+        return t => (0, r.jsx)(e, I(P({}, t), {
           entry: l
         }))
       })
@@ -256,7 +256,7 @@ let A = e => {
           }), (0, r.jsx)(c.Text, {
             variant: "text-xs/normal",
             color: "header-secondary",
-            children: O.intl.format(O.t["LC+S+v"], {
+            children: j.intl.format(j.t["LC+S+v"], {
               membersOnline: l.approximatePresenceCount
             })
           })]
@@ -267,7 +267,7 @@ let A = e => {
           }), (0, r.jsx)(c.Text, {
             variant: "text-xs/normal",
             color: "header-secondary",
-            children: O.intl.format(O.t.zRl6XV, {
+            children: j.intl.format(j.t.zRl6XV, {
               count: l.approximateMemberCount
             })
           })]

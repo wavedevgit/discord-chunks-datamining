@@ -1,5 +1,5 @@
-/** Chunk was on 92233 **/
+/** Chunk was on 48812 **/
 n.d(t, {
-  Z: () => i
+  Z: () => r
 });
-let i = "https://dis.gd/appeal"
+let r = "https://dis.gd/appeal"

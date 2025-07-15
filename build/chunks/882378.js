@@ -21,7 +21,7 @@ var r = n(255367),
 let y = i.memo(function(e) {
   let {
     channel: t
-  } = e, y = (0, u.h)(t.id), C = (0, d.o)(t.id), x = (0, p.M)(t.id), v = (0, a.f9)(), j = (0, l.e7)([f.Z], () => f.Z.hasLayers()), O = i.useCallback(() => C ? b.intl.string(b.t["16QyDg"]) : null != x ? b.intl.string(b.t.kCN9i4) : null, [C, x]), E = i.useMemo(() => (C || null != x) && !v && !j, [C, x, v, j]), [S, I] = i.useState(O());
+  } = e, y = (0, u.h)(t.id), C = (0, d.o)(t.id), x = (0, p.M)(t.id), v = (0, a.f9)(), O = (0, l.e7)([f.Z], () => f.Z.hasLayers()), j = i.useCallback(() => C ? b.intl.string(b.t["16QyDg"]) : null != x ? b.intl.string(b.t.kCN9i4) : null, [C, x]), E = i.useMemo(() => (C || null != x) && !v && !O, [C, x, v, O]), [S, P] = i.useState(j());
   i.useEffect(() => {
     null != x && null != y && (o.uvj.announce(b.intl.string(b.t.acsXuL)), setTimeout(() => {
       (0, c.T)(t.id, [x.id])
@@ -45,10 +45,10 @@ let y = i.memo(function(e) {
       viewName: h.pb.SAFETY_TOOLS_BUTTON
     })
   }), i.useEffect(() => {
-    let e = O();
-    null != e && I(e)
-  }, [C, x, O]);
-  let P = i.useCallback(() => {
+    let e = j();
+    null != e && P(e)
+  }, [C, x, j]);
+  let I = i.useCallback(() => {
     null != x && (0, c.T)(t.id, [x.id]), null != y && ((0, o.ZDy)(async () => {
       let {
         default: e
@@ -87,7 +87,7 @@ let y = i.memo(function(e) {
     tooltipContentClassName: _.tooltipContent,
     children: () => (0, r.jsx)(m.ZP.Icon, {
       icon: o.b7C,
-      onClick: P,
+      onClick: I,
       tooltip: b.intl.string(b.t.rpc2qq),
       tooltipDisabled: null != x
     })

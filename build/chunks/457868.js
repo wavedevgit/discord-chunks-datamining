@@ -22,12 +22,12 @@ var r = n(255367),
   C = n(91218),
   x = n(623624),
   v = n(518738),
-  j = n(850020),
-  O = n(965376),
+  O = n(850020),
+  j = n(965376),
   E = n(159299),
   S = n(670188),
-  I = n(199902),
-  P = n(271383),
+  P = n(199902),
+  I = n(271383),
   Z = n(485386),
   N = n(158776),
   T = n(885110),
@@ -71,10 +71,10 @@ let W = U.ZP.getEnableHardwareAcceleration(),
       sectionId: l,
       userId: a,
       guildOwnerId: o
-    } = e, s = i.useRef(null), u = (0, p.e7)([A.Z], () => A.Z.isTyping(t.id, a)), h = (0, p.e7)([P.ZP], () => P.ZP.getMember(t.guild_id, a)), g = (0, p.e7)([Z.Z], () => {
+    } = e, s = i.useRef(null), u = (0, p.e7)([A.Z], () => A.Z.isTyping(t.id, a)), h = (0, p.e7)([I.ZP], () => I.ZP.getMember(t.guild_id, a)), g = (0, p.e7)([Z.Z], () => {
       var e;
       return (null == h ? void 0 : h.colorRoleId) != null ? null == (e = Z.Z.getRole(t.guild_id, h.colorRoleId)) ? void 0 : e.name : void 0
-    }, [t.guild_id, h]), b = (0, p.e7)([w.default], () => w.default.getUser(a)), _ = (0, p.e7)([w.default], () => w.default.getCurrentUser()), y = (null == b ? void 0 : b.id) === (null == _ ? void 0 : _.id), C = (0, p.e7)([N.Z, T.Z], () => y ? T.Z.getStatus() : N.Z.getStatus(a, t.guild_id)), v = (0, p.e7)([N.Z], () => N.Z.isMobileOnline(a)), O = (0, p.e7)([N.Z, T.Z], () => y ? T.Z.getActivities() : N.Z.getActivities(a, t.guild_id)), R = (0, p.e7)([I.Z], () => I.Z.getAnyStreamForUser(a)), M = (0, c.JA)(a), k = (0, p.e7)([E.Z], () => E.Z.canUserViewChannel(t.id, l, a)), U = (null == b ? void 0 : b.id) != null && b.id === o, G = i.useCallback(e => {
+    }, [t.guild_id, h]), b = (0, p.e7)([w.default], () => w.default.getUser(a)), _ = (0, p.e7)([w.default], () => w.default.getCurrentUser()), y = (null == b ? void 0 : b.id) === (null == _ ? void 0 : _.id), C = (0, p.e7)([N.Z, T.Z], () => y ? T.Z.getStatus() : N.Z.getStatus(a, t.guild_id)), v = (0, p.e7)([N.Z], () => N.Z.isMobileOnline(a)), j = (0, p.e7)([N.Z, T.Z], () => y ? T.Z.getActivities() : N.Z.getActivities(a, t.guild_id)), R = (0, p.e7)([P.Z], () => P.Z.getAnyStreamForUser(a)), M = (0, c.JA)(a), k = (0, p.e7)([E.Z], () => E.Z.canUserViewChannel(t.id, l, a)), U = (null == b ? void 0 : b.id) != null && b.id === o, G = i.useCallback(e => {
       null != b && (0, f.jW)(e, async () => {
         let {
           default: e
@@ -117,7 +117,7 @@ let W = U.ZP.getEnableHardwareAcceleration(),
           object: F.qAy.BOOST_GEM_ICON
         }
       })
-    }, [t.guild_id]), q = (0, j.K)({
+    }, [t.guild_id]), q = (0, O.K)({
       user: b
     }), [K, X] = i.useState(!1);
     if (null == b) return null;
@@ -159,7 +159,7 @@ let W = U.ZP.getEnableHardwareAcceleration(),
           currentUser: _,
           nick: null == h ? void 0 : h.nick,
           status: C,
-          activities: O,
+          activities: j,
           colorString: null == h ? void 0 : h.colorString,
           colorStrings: null == h ? void 0 : h.colorStrings,
           colorRoleName: g,
@@ -245,7 +245,7 @@ function Q(e) {
     guild: n
   } = e, l = "members-".concat(t.id), {
     analyticsLocations: o
-  } = (0, _.ZP)(b.Z.MEMBER_LIST), d = (0, O.D)(t.id, n), f = d.filter(e => e.userIds.length > 0).reverse()[0], {
+  } = (0, _.ZP)(b.Z.MEMBER_LIST), d = (0, j.D)(t.id, n), f = d.filter(e => e.userIds.length > 0).reverse()[0], {
     navigator: m,
     listRef: y
   } = function(e, t) {

@@ -22,12 +22,12 @@ var r = n(255367),
   C = n(536442),
   x = n(79390),
   v = n(216789),
-  j = n(665906),
-  O = n(695346),
+  O = n(665906),
+  j = n(695346),
   E = n(433355),
   S = n(819640),
-  I = n(375954),
-  P = n(496675),
+  P = n(375954),
+  I = n(496675),
   Z = n(885110),
   N = n(585483),
   T = n(358085),
@@ -87,7 +87,7 @@ let G = i.memo(function(e) {
     location: "ChannelAttachButton"
   }, {
     autoTrackExposure: !1
-  }), ei = (0, o.e7)([C.qc], () => C.qc.hasHotspot(C.v6.CLIPS_CHANNEL_ATTACH_REMINDER)), el = (0, u.s9z)(e => (0, u.DEQ)(e, k.Qr)), ea = (0, o.e7)([S.Z], () => S.Z.hasLayers()), eo = (0, o.e7)([b.Z], () => b.Z.hasClips()), [es, ec] = i.useState(null), eu = (0, g.Go)() && ($ || eo), ed = V.isPrivate(), ep = (0, o.e7)([P.Z], () => ed || P.Z.can(D.Plq.ATTACH_FILES, V) && P.Z.can(D.Plq.SEND_MESSAGES, V)), eh = (0, p.Z)(ee);
+  }), ei = (0, o.e7)([C.qc], () => C.qc.hasHotspot(C.v6.CLIPS_CHANNEL_ATTACH_REMINDER)), el = (0, u.s9z)(e => (0, u.DEQ)(e, k.Qr)), ea = (0, o.e7)([S.Z], () => S.Z.hasLayers()), eo = (0, o.e7)([b.Z], () => b.Z.hasClips()), [es, ec] = i.useState(null), eu = (0, g.Go)() && ($ || eo), ed = V.isPrivate(), ep = (0, o.e7)([I.Z], () => ed || I.Z.can(D.Plq.ATTACH_FILES, V) && I.Z.can(D.Plq.SEND_MESSAGES, V)), eh = (0, p.Z)(ee);
   (null == eh ? void 0 : eh.newClipIds.length) !== (null == ee ? void 0 : ee.newClipIds.length) && (null != (t = null == ee ? void 0 : ee.newClipIds.length) ? t : 0) > 0 && null == es && ei && en && !el && !er && !ea && ec("recentClips");
   let ef = (e, t, n) => {
       null != t && "ETOOLARGE" === t.code ? (0, A.G)(V, []) : (0, A.d)(e, V, z, {
@@ -95,7 +95,7 @@ let G = i.memo(function(e) {
         showLargeMessageDialog: n
       }), N.S.dispatchToLastSubscribed(D.CkL.TEXTAREA_FOCUS)
     },
-    em = (0, o.e7)([I.Z], () => I.Z.hasCurrentUserSentMessageSinceAppStart());
+    em = (0, o.e7)([P.Z], () => P.Z.hasCurrentUserSentMessageSinceAppStart());
 
   function eg() {
     (0, u.ZDy)(async () => {
@@ -118,16 +118,16 @@ let G = i.memo(function(e) {
       N.S.unsubscribe(D.CkL.UPLOAD_FILE, e)
     }
   });
-  let eb = (0, j.NE)(V),
-    e_ = (0, j.Xu)(V),
-    ey = !O.dN.useSetting() && !(0, T.isAndroidWeb)() && null != window.ResizeObserver,
+  let eb = (0, O.NE)(V),
+    e_ = (0, O.Xu)(V),
+    ey = !j.dN.useSetting() && !(0, T.isAndroidWeb)() && null != window.ResizeObserver,
     eC = (0, x.UI)(null != V ? V : void 0),
     ex = (0, f.qB)(),
     ev = (0, v.Us)({
       location: "ChannelAttachButton"
     }),
-    ej = null != (l = null == et ? void 0 : et.length) ? l : 0,
-    eO = (0, M.Z)({
+    eO = null != (l = null == et ? void 0 : et.length) ? l : 0,
+    ej = (0, M.Z)({
       canAttachFiles: ep,
       canStartThreads: eb || e_,
       useSlate: ey,
@@ -135,16 +135,16 @@ let G = i.memo(function(e) {
       canUseApplicationCommands: !q,
       channel: V,
       activities: J,
-      newClipsCount: ej,
+      newClipsCount: eO,
       canPostPolls: eC,
       canLaunchActivities: ex,
       appContext: K,
       canSendScheduledMessages: ev
     }),
     eE = (0, m.Z)("ChannelAttachButton");
-  if (0 === eO.length) return null;
+  if (0 === ej.length) return null;
   let eS = "refresh_sm",
-    eI = eE ? (0, r.jsx)(u.svS, {
+    eP = eE ? (0, r.jsx)(u.svS, {
       size: eS,
       color: "currentColor",
       colorClass: B.attachButtonPlus
@@ -153,7 +153,7 @@ let G = i.memo(function(e) {
       color: "currentColor",
       colorClass: B.attachButtonPlus
     }),
-    eP = (0, r.jsx)(u.yRy, {
+    eI = (0, r.jsx)(u.yRy, {
       targetElementRef: Q,
       shouldShow: null != es,
       animation: u.yRy.Animation.NONE,
@@ -180,7 +180,7 @@ let G = i.memo(function(e) {
           case "attachMenu":
             return (0, r.jsx)(R.Z, H(F({}, e), {
               onClose: () => ec(null),
-              options: eO,
+              options: ej,
               channel: V,
               onFileUpload: () => {
                 var e;
@@ -210,7 +210,7 @@ let G = i.memo(function(e) {
           offset: 8
         }
       }, e), {
-        children: eI
+        children: eP
       }))
     });
   return (0, r.jsxs)(r.Fragment, {
@@ -235,7 +235,7 @@ let G = i.memo(function(e) {
         animationContainerClassName: B.buttonAnimation,
         glowClassName: B.buttonAnimationGlow,
         trinketsClassName: B.buttonAnimationTrinkets,
-        children: eP
+        children: eI
       })
     })]
   })

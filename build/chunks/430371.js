@@ -1,6 +1,6 @@
 /** Chunk was on 51977 **/
 n.d(t, {
-  Z: () => P
+  Z: () => I
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -22,9 +22,9 @@ var r = n(255367),
   C = n(981631),
   x = n(354459),
   v = n(363987),
-  j = n(999976);
+  O = n(999976);
 
-function O(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -56,13 +56,13 @@ function E(e, t) {
   }), e
 }
 let S = 16 / 9,
-  I = 8 + y.cF;
+  P = 8 + y.cF;
 
-function P(e) {
+function I(e) {
   var t;
   let n, {
       onSelectParticipant: l,
-      onContextMenuParticipant: P,
+      onContextMenuParticipant: I,
       onFullscreenParticipant: Z,
       participants: N,
       filteredParticipants: T,
@@ -87,7 +87,7 @@ function P(e) {
     J = M.type === x.fO.ACTIVITY,
     $ = (0, u.Z)(J ? M.applicationId : void 0),
     ee = !J && null != M.streamId,
-    et = U <= 2 * I + 144,
+    et = U <= 2 * P + 144,
     en = D && !et,
     er = (0, c.Z)(en),
     ei = B === C.AEg.MINIMUM || B === C.AEg.NORMAL,
@@ -95,12 +95,12 @@ function P(e) {
     ea = (0, m.Z)(el, 100),
     eo = (null != (t = (0, c.Z)(M.id)) ? t : M.id) !== M.id,
     es = 0;
-  (J || en) && (es += 72), J && !en && (el ? es += 48 : es += 8), en && (es += .5 * I + 8);
+  (J || en) && (es += 72), J && !en && (el ? es += 48 : es += 8), en && (es += .5 * P + 8);
   let ec = i.useMemo(() => J && $ ? L / (U - 2 * es) : ee && null != z && z.width > 0 && z.height > 0 ? z.width / z.height : S, [ee, z, J, L, U, es, $]),
     eu = U - 2 * es,
     ed = J && $ ? L : eu * ec,
     ep = Math.floor(Math.min(L, ed) / ec),
-    eh = U > L / ec + 72 + I + 8;
+    eh = U > L / ec + 72 + P + 8;
   n = en || J ? en ? -16 : -8 : 40 + Math.max(0, 72 - (U - ep) / 2), i.useEffect(() => {
     let e = setTimeout(() => {
       K(!1)
@@ -114,7 +114,7 @@ function P(e) {
     eg = (0, s.q_F)({
       value: +!!en,
       delay: eh || !en ? 0 : 100,
-      config: E(O({}, o.config.stiff), {
+      config: E(j({}, o.config.stiff), {
         clamp: !0
       }),
       onStart: () => Q(!0),
@@ -125,25 +125,25 @@ function P(e) {
     }, em),
     eb = (0, s.q_F)({
       value: +!!en,
-      config: E(O({}, o.config.stiff), {
+      config: E(j({}, o.config.stiff), {
         clamp: !0
       })
     }, em),
     e_ = (0, s.q_F)({
       value: ed,
-      config: E(O({}, o.config.stiff), {
+      config: E(j({}, o.config.stiff), {
         clamp: !0
       })
     }, er === en && eb.value.idle && !ea || eo || ef ? "animate-never" : "animate-always"),
     ey = (0, s.q_F)({
       value: n,
-      config: E(O({}, o.config.stiff), {
+      config: E(j({}, o.config.stiff), {
         clamp: !0
       })
     }, em),
     eC = (0, s.Yzy)(M, {
       keys: e => null == e ? void 0 : e.id,
-      config: E(O({}, o.config.stiff), {
+      config: E(j({}, o.config.stiff), {
         clamp: !0
       }),
       initial: null,
@@ -162,26 +162,26 @@ function P(e) {
     }, []),
     ev = en ? [] : (0, _.n3)(N, M, V),
     {
-      visibleParticipants: ej,
-      participantTileWidth: eO
+      visibleParticipants: eO,
+      participantTileWidth: ej
     } = (0, y.ZB)(L, T);
   return (0, r.jsxs)("div", {
-    className: a()(j.root, v.flexCenter, k),
+    className: a()(O.root, v.flexCenter, k),
     children: [(0, r.jsxs)("div", {
-      className: j.tileWrapper,
+      className: O.tileWrapper,
       style: {
         opacity: ee && q ? 0 : 1
       },
       children: [(0, r.jsxs)(o.animated.div, {
-        className: j.videoFrame,
+        className: O.videoFrame,
         style: {
-          top: eb.value.to(e => -e * I / 2)
+          top: eb.value.to(e => -e * P / 2)
         },
         children: [(0, r.jsx)(o.animated.div, {
           style: {
             width: e_.value
           },
-          className: j.videoWrapper,
+          className: O.videoWrapper,
           children: (0, r.jsx)("div", {
             className: v.videoSizer,
             style: {
@@ -204,7 +204,7 @@ function P(e) {
                   participant: t,
                   onClick: l,
                   onDoubleClick: Z,
-                  onContextMenu: P,
+                  onContextMenu: I,
                   onVideoResize: ex,
                   inCall: w,
                   inPopout: H
@@ -213,8 +213,8 @@ function P(e) {
             })
           })
         }), el ? (0, r.jsx)(o.animated.div, {
-          className: a()(j.actionRow, {
-            [j.idle]: F
+          className: a()(O.actionRow, {
+            [O.idle]: F
           }),
           style: {
             bottom: ey.value
@@ -226,19 +226,19 @@ function P(e) {
           })
         }) : null]
       }), (0, r.jsx)(o.animated.div, {
-        className: j.participantsWrapperAnimated,
+        className: O.participantsWrapperAnimated,
         style: {
-          translateY: eg.value.to(e => e * I / 2),
+          translateY: eg.value.to(e => e * P / 2),
           opacity: eg.value,
           visibility: eg.value.to(e => 0 === e ? "hidden" : "visible")
         },
         children: (0, r.jsx)(y.ZP, {
           channel: R,
           onClick: l,
-          onContextMenu: P,
+          onContextMenu: I,
           onDoubleClick: Z,
-          participants: ej,
-          participantTileWidth: eO,
+          participants: eO,
+          participantTileWidth: ej,
           selectedParticipantId: M.id,
           inCall: w,
           popoutWindow: A,
@@ -246,7 +246,7 @@ function P(e) {
         })
       })]
     }), ev.length > 0 ? (0, r.jsx)(b.Z, {
-      onContextMenuParticipant: P,
+      onContextMenuParticipant: I,
       width: L,
       height: U,
       channel: R,

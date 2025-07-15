@@ -1,4 +1,4 @@
-/** Chunk was on 46989 **/
+/** Chunk was on 80393 **/
 n.d(t, {
   Mn: () => o,
   WM: () => c,
@@ -19,7 +19,7 @@ function u(e) {
     icon: l,
     onNavigate: u,
     className: c,
-    missingNavIcon: d
+    missingNavIcon: E
   } = e;
   return (0, r.jsxs)(s.P3F, {
     onClick: u,
@@ -40,9 +40,9 @@ function u(e) {
         width: o,
         height: o
       })
-    }), null == u && null != d && (0, r.jsx)("div", {
+    }), null == u && null != E && (0, r.jsx)("div", {
       className: a.modInfoItemActionIcon,
-      children: d
+      children: E
     })]
   })
 }

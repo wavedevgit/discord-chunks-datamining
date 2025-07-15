@@ -25,21 +25,21 @@ function b(e) {
     application: a,
     showAppLauncherPopup: s = !1
   } = e, [p, b] = r.useState(!1), _ = (0, i.e7)([l.ZP], () => l.ZP.getCurrentEmbeddedActivity()), y = s ? g.t.cpT0Cg : g.t["0hKkS0"], C = r.useMemo(() => null != n ? (0, d.XZ)(n.displayName) : g.intl.string(g.t["3xjX0d"]), [n]), x = void 0 !== a.flags && (0, f.yE)(a.flags, m.udG.EMBEDDED), v = null != _ && _.applicationId === a.id && (0, o.p)(_.location) === t.channel.id, {
-    analyticsLocations: j
-  } = (0, u.ZP)(c.Z.APP_DMS_ENTRY_POINT_COMMAND_BUTTON), O = null != t.channel.recipients ? t.channel.recipients[0] : void 0;
+    analyticsLocations: O
+  } = (0, u.ZP)(c.Z.APP_DMS_ENTRY_POINT_COMMAND_BUTTON), j = null != t.channel.recipients ? t.channel.recipients[0] : void 0;
   return {
     isExecutingLaunchInteraction: p,
     buttonText: (0, h.ms)({
       context: t,
       applicationId: a.id,
-      botUserId: O
+      botUserId: j
     }) && x ? v ? g.intl.string(g.t["Hi1/aW"]) : null != C ? C : g.intl.string(g.t.zKX8Nj) : g.intl.string(y),
     hasActiveMatchingEmbeddedActivity: v,
     isEmbeddedApp: x,
     currentEmbeddedActivity: _,
-    channelRecipientUserId: O,
+    channelRecipientUserId: j,
     setIsExecutingLaunchInteraction: b,
-    analyticsLocations: j
+    analyticsLocations: O
   }
 }
 

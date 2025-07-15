@@ -22,12 +22,12 @@ var r = n(255367),
   C = n(131951),
   x = n(496675),
   v = n(158776),
-  j = n(885110),
-  O = n(797258),
+  O = n(885110),
+  j = n(797258),
   E = n(606304),
   S = n(979651),
-  I = n(51144),
-  P = n(649739),
+  P = n(51144),
+  I = n(649739),
   Z = n(262317),
   N = n(981631),
   T = n(524484),
@@ -49,11 +49,11 @@ let w = i.memo(e => {
       userIds: t
     } = e;
     return t.has(w)
-  }), [w, g.id]), G = (0, p.Z)(null != H ? [H.applicationId] : []), V = (0, P.Hr)("voice_users_eligibility_check", !1), z = (0, o.e7)([v.Z, j.Z], () => R ? j.Z.getActivities() : v.Z.getActivities(w, g.guild_id)).find(e => null != e.application_id && e.type === N.IIU.PLAYING), W = (0, o.e7)([d.Z], () => (null == z ? void 0 : z.application_id) != null ? d.Z.getApplication(null == z ? void 0 : z.application_id) : void 0);
-  null != W && P.ZP.trackExposure({
+  }), [w, g.id]), G = (0, p.Z)(null != H ? [H.applicationId] : []), V = (0, I.Hr)("voice_users_eligibility_check", !1), z = (0, o.e7)([v.Z, O.Z], () => R ? O.Z.getActivities() : v.Z.getActivities(w, g.guild_id)).find(e => null != e.application_id && e.type === N.IIU.PLAYING), W = (0, o.e7)([d.Z], () => (null == z ? void 0 : z.application_id) != null ? d.Z.getApplication(null == z ? void 0 : z.application_id) : void 0);
+  null != W && I.ZP.trackExposure({
     location: "voice_users"
   });
-  let [Y, q] = (0, o.Wu)([b.Z], () => [b.Z.getStreamForUser(w, g.getGuildId()), b.Z.getActiveStreamForUser(w, g.getGuildId())], [g, w]), K = (0, o.e7)([O.Z], () => O.Z.getSessionById(x)), X = I.ZP.useName(s), Q = (0, o.e7)([S.Z], () => S.Z.getVoicePlatformForChannel(g.id, w), [g.id, w]), J = (0, m.Eu)(g.id, w);
+  let [Y, q] = (0, o.Wu)([b.Z], () => [b.Z.getStreamForUser(w, g.getGuildId()), b.Z.getActiveStreamForUser(w, g.getGuildId())], [g, w]), K = (0, o.e7)([j.Z], () => j.Z.getSessionById(x)), X = P.ZP.useName(s), Q = (0, o.e7)([S.Z], () => S.Z.getVoicePlatformForChannel(g.id, w), [g.id, w]), J = (0, m.Eu)(g.id, w);
   return (0, r.jsx)(f.Z, {
     shakeLocation: T.oZ.VOICE_USER,
     isShaking: U,
@@ -119,16 +119,16 @@ let R = [],
       location: b,
       numAudience: y,
       withGuildIcon: C = !1,
-      className: j,
-      children: O
-    } = e, [E, S] = i.useState(null), [I, P] = i.useState(!1), T = i.useRef(null), M = (0, m.Es)(l.id, null != c ? c : R), D = i.useRef(new s.sW(50, () => {
+      className: O,
+      children: j
+    } = e, [E, S] = i.useState(null), [P, I] = i.useState(!1), T = i.useRef(null), M = (0, m.Es)(l.id, null != c ? c : R), D = i.useRef(new s.sW(50, () => {
       S(T.current), T.current = null
     })), k = i.useRef(new s.sW(175, () => {
       S(null)
     })), L = i.useCallback(e => {
-      t && (P(!0), k.current.cancel(), T.current = e, D.current.delay())
+      t && (I(!0), k.current.cancel(), T.current = e, D.current.delay())
     }, [t]), U = i.useCallback(e => {
-      t && (D.current.cancel(), E === e && (P(!1), k.current.delay()))
+      t && (D.current.cancel(), E === e && (I(!1), k.current.delay()))
     }, [t, E]), B = (0, o.Wu)([v.Z], () => {
       if (u) return [];
       let e = new Set;
@@ -168,7 +168,7 @@ let R = [],
             canDrag: n && x.Z.can(N.Plq.MOVE_MEMBERS, l),
             showPreview: L,
             hidePreview: U,
-            previewIsOpen: I,
+            previewIsOpen: P,
             shouldShowPreview: E === a.id,
             tabIndex: f,
             location: b
@@ -181,12 +181,12 @@ let R = [],
         numUsers: M.length - d
       })), i
     })();
-    return null == F && null == O ? null : (0, r.jsxs)(g.eJ, {
-      className: a()(j, A.list, {
+    return null == F && null == j ? null : (0, r.jsxs)(g.eJ, {
+      className: a()(O, A.list, {
         [A.collapsed]: u,
         [A.withGuildIcon]: C
       }),
       collapsed: u,
-      children: [F, O]
+      children: [F, j]
     })
   }

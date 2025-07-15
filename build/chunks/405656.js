@@ -12,11 +12,11 @@ n.d(t, {
   X3: () => U,
   cl: () => R,
   g9: () => S,
+  i3: () => N,
   j2: () => P,
   jW: () => I,
   kG: () => D,
-  qc: () => A,
-  zV: () => N
+  qc: () => A
 }), n(35282), n(388685), n(781311);
 var r = n(392711),
   i = n.n(r),
@@ -196,17 +196,26 @@ function N(e, t) {
   return i()(e).forEach(e => {
     if (null == e || 0 === e.results.length) return;
     let r = e.group;
-    n = n.concat(e.results.map(e => {
-      let n = e.text;
-      if (null != e.channel && e.text.includes(" ") && (n = '"'.concat(n, '"')), t.type === m.Sap.FILTER_ALL) {
-        var i;
-        r = null != (i = e.group) ? i : r;
-        let t = o.ZP[r];
-        (null == t ? void 0 : t.key) != null && (null == t ? void 0 : t.key) !== "" && (n = "".concat(t.key, " ").concat(n))
+    n = n.concat(e.results.map(n => {
+      let i = n.text;
+      if (null != n.channel && n.text.includes(" ") && (i = '"'.concat(i, '"')), t.type === m.Sap.FILTER_ALL) {
+        var a;
+        r = null != (a = n.group) ? a : r;
+        let e = o.ZP[r];
+        (null == e ? void 0 : e.key) != null && (null == e ? void 0 : e.key) !== "" && (i = "".concat(e.key, " ").concat(i))
       }
-      return n
+      return {
+        result: n,
+        group: e.group,
+        resultText: i
+      }
     }))
-  }), n.filter(e => e)
+  }), n.filter(e => {
+    let {
+      resultText: t
+    } = e;
+    return t
+  })
 }
 
 function C(e) {

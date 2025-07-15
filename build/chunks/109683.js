@@ -1,8 +1,8 @@
-/** Chunk was on 95355 **/
+/** Chunk was on 49645 **/
 n.d(t, {
-  Wr: () => r
+  Wr: () => i
 });
 
-function r() {
+function i() {
   return !1
 }

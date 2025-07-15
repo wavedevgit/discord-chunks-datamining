@@ -1,4 +1,4 @@
-/** Chunk was on 670 **/
+/** Chunk was on 62059 **/
 n.d(t, {
   Z: () => _
 });
@@ -21,8 +21,8 @@ function _(e) {
     message: t,
     compact: n,
     usernameHook: i
-  } = e, _ = (0, s.ZP)(t), g = i(_), {
-    avatarSrc: h,
+  } = e, _ = (0, s.ZP)(t), h = i(_), {
+    avatarSrc: g,
     eventHandlers: {
       onMouseEnter: b,
       onMouseLeave: E
@@ -36,7 +36,7 @@ function _(e) {
         [f.compact]: n
       }),
       iconNode: n ? null : (0, r.jsx)(u.S, {
-        src: h
+        src: g
       }),
       iconContainerClassName: f.iconContainer,
       compact: n,
@@ -71,7 +71,7 @@ function _(e) {
           }),
           children: m.intl.format(m.t.qntXNT, {
             username: _.nick,
-            usernameHook: g
+            usernameHook: h
           })
         })]
       })

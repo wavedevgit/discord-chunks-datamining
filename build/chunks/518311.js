@@ -22,12 +22,12 @@ var r, i = n(255367),
   C = n(708690),
   x = n(194359),
   v = n(425493),
-  j = n(794433),
-  O = n(493773),
+  O = n(794433),
+  j = n(493773),
   E = n(40851),
   S = n(100527),
-  I = n(367907),
-  P = n(906732),
+  P = n(367907),
+  I = n(906732),
   Z = n(43267),
   N = n(933557),
   T = n(600164),
@@ -212,7 +212,7 @@ class eg extends(r = l.PureComponent) {
       channel: e
     } = this.props;
     m.Z.wait(() => C.Z.open(null == e ? void 0 : e.id));
-    let t = (0, I.v_)(e);
+    let t = (0, P.v_)(e);
     q.default.track(er.rMx.OPEN_POPOUT, ec(es({}, t), {
       type: this._getAnalyticsEntryPoint().entryPointType,
       source: this._getAnalyticsEntryPoint().entryPointSource,
@@ -330,13 +330,13 @@ class eg extends(r = l.PureComponent) {
       null != t && o.push($.ZP.getName(t))
     }), (0, i.jsxs)("div", {
       className: el.searchBar,
-      children: [(0, i.jsx)(j.Z, {
+      children: [(0, i.jsx)(O.Z, {
         ref: this.searchBarRef,
         className: el.searchBarComponent,
         autoFocus: !0,
         placeholder: 0 === a.size ? ei.intl.string(ei.t.Wxnb6u) : "",
         disabled: this.isPartyFull(),
-        size: j.Z.Sizes.MEDIUM,
+        size: O.Z.Sizes.MEDIUM,
         maxHeight: this.props.inBornThisNamedExperiment ? 110 : void 0,
         query: t,
         selectedRow: l,
@@ -642,7 +642,7 @@ class eg extends(r = l.PureComponent) {
     }), eo(this, "handleQueryChange", e => {
       let {
         channel: t
-      } = this.props, n = (0, I.v_)(t);
+      } = this.props, n = (0, P.v_)(t);
       C.Z.search(e, null == t ? void 0 : t.id), null != this._existingTimeout && clearTimeout(this._existingTimeout), this._existingTimeout = setTimeout(() => {
         q.default.track(er.rMx.SEARCH_USER_LIST_STARTED, ec(es({}, n), {
           entry_point_type: this._getAnalyticsEntryPoint().entryPointType,
@@ -689,7 +689,7 @@ class eg extends(r = l.PureComponent) {
         {
           channel: n
         } = this.props,
-        r = (0, I.v_)(n),
+        r = (0, P.v_)(n),
         i = !0;
       1 === e.length && (i = null == b.Z._openCachedDMChannel(e[0])), q.default.track(er.rMx.CREATE_DM_USER_LIST_CLICKED, ec(es({}, r), {
         is_new_dm: i,
@@ -715,7 +715,7 @@ class eg extends(r = l.PureComponent) {
       })
     }), eo(this, "pushToExistingDM", (e, t) => {
       let n = this._searchCounter,
-        r = (0, I.v_)(e),
+        r = (0, P.v_)(e),
         i = G.Z.getChannelId() === e.id;
       b.Z.addRecipients(e.id, t, er.Sbl.ADD_FRIENDS_TO_DM).then(n => {
         if (i) {
@@ -787,7 +787,7 @@ function eb(e) {
     onChange: o
   } = e, {
     analyticsLocations: s
-  } = (0, P.ZP)(S.Z.NEW_GROUP_DM_INVITE_MODAL);
+  } = (0, I.ZP)(S.Z.NEW_GROUP_DM_INVITE_MODAL);
   if (!(0, w.a)(S.Z.NEW_GROUP_DM_INVITE_MODAL)) return null;
   let c = (0, N.pT)(Array.from(t), Y.default, z.Z);
   return (0, i.jsxs)("div", {
@@ -851,14 +851,14 @@ function ey(e) {
     inBornThisNamedExperiment: _
   }))), {
     modalKey: y
-  }), [r, y, _]), v = l.useRef(null), [j, E] = l.useState(null != r && r.isGroupDM() && 0 === r.recipients.length), S = l.useCallback(() => _ ? C ? (0, f.Mr3)(y) : x() : E(e => !e), [_, C, y, x]);
+  }), [r, y, _]), v = l.useRef(null), [O, E] = l.useState(null != r && r.isGroupDM() && 0 === r.recipients.length), S = l.useCallback(() => _ ? C ? (0, f.Mr3)(y) : x() : E(e => !e), [_, C, y, x]);
   l.useEffect(() => (m && X.S.subscribe(er.CkL.TOGGLE_DM_CREATE, S), () => {
     X.S.unsubscribe(er.CkL.TOGGLE_DM_CREATE, S)
   }), [m, S, _]);
-  let I = (0, p.e7)([Y.default], () => Y.default.getUser(null == r ? void 0 : r.getRecipientId()));
-  return ((0, O.ZP)(() => {
+  let P = (0, p.e7)([Y.default], () => Y.default.getUser(null == r ? void 0 : r.getRecipientId()));
+  return ((0, j.ZP)(() => {
     (0, k._)()
-  }), null != (t = null == I ? void 0 : I.bot) && t || null != (n = null == I ? void 0 : I.isProvisional) && n) ? null : _ ? (0, i.jsx)(et.ZP.Icon, {
+  }), null != (t = null == P ? void 0 : P.bot) && t || null != (n = null == P ? void 0 : P.isProvisional) && n) ? null : _ ? (0, i.jsx)(et.ZP.Icon, {
     ref: v,
     onClick: x,
     icon: b,
@@ -874,7 +874,7 @@ function ey(e) {
       inBornThisNamedExperiment: _
     })),
     position: d,
-    shouldShow: j,
+    shouldShow: O,
     nudgeAlignIntoViewport: !0,
     autoInvert: !0,
     align: h,
@@ -901,7 +901,7 @@ function eC(e) {
     popoutPosition: r = "bottom",
     popoutAlign: a = "right"
   } = e;
-  (0, O.ZP)(() => {
+  (0, j.ZP)(() => {
     (0, k._)()
   });
   let o = (0, w.a)("PrivateChannelRecipientsInviteTextButton"),

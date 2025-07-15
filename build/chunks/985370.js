@@ -27,17 +27,17 @@ let g = e => {
     onMouseEnter: C,
     onMouseLeave: x,
     cancelTimers: v
-  } = (0, u.Z)(200, 300), [j, O] = i.useState(!1), E = (0, l.e7)([p.Z], () => p.Z.effectCooldownEndTime), S = i.useMemo(() => null != E ? (E.getTime() - Date.now()) / 1e3 : 0, [E]), {
-    seconds: I
-  } = (0, o.Z)(null != E ? E : new Date), P = I > 0, {
+  } = (0, u.Z)(200, 300), [O, j] = i.useState(!1), E = (0, l.e7)([p.Z], () => p.Z.effectCooldownEndTime), S = i.useMemo(() => null != E ? (E.getTime() - Date.now()) / 1e3 : 0, [E]), {
+    seconds: P
+  } = (0, o.Z)(null != E ? E : new Date), I = P > 0, {
     parentAnalyticsLocation: Z
   } = (0, s.ZP)(), N = i.useCallback(e => {
-    "focus" !== e.type && (j || P || C())
-  }, [j, P, C]), T = i.useCallback(() => {
-    j || x()
-  }, [x, j]), A = i.useCallback((e, t) => {
-    v(), O(!j), g === f.D.EMOJI ? null == b || b(void 0) : null == b || b(f.D.EMOJI), (!_ || j) && (null == t || t(e))
-  }, [v, j, _, b, g]), w = (_ || j) && (g === f.D.EMOJI || null == g), R = i.useRef(null);
+    "focus" !== e.type && (O || I || C())
+  }, [O, I, C]), T = i.useCallback(() => {
+    O || x()
+  }, [x, O]), A = i.useCallback((e, t) => {
+    v(), j(!O), g === f.D.EMOJI ? null == b || b(void 0) : null == b || b(f.D.EMOJI), (!_ || O) && (null == t || t(e))
+  }, [v, O, _, b, g]), w = (_ || O) && (g === f.D.EMOJI || null == g), R = i.useRef(null);
   return (0, r.jsx)(a.yRy, {
     targetElementRef: R,
     shouldShow: w,
@@ -47,7 +47,7 @@ let g = e => {
     align: "center",
     spacing: 16,
     onRequestClose: () => {
-      y(!1), O(!1), null == b || b(void 0)
+      y(!1), j(!1), null == b || b(void 0)
     },
     renderPopout: e => {
       let {
@@ -59,7 +59,7 @@ let g = e => {
         closePopout: n,
         onMouseEnter: C,
         onMouseLeave: T,
-        onFocus: () => O(!0)
+        onFocus: () => j(!0)
       })
     },
     children: e => {
@@ -69,9 +69,9 @@ let g = e => {
       } = e;
       return (0, r.jsx)(d.Z, {
         isCenterButton: !0,
-        color: j ? "primaryDark" : void 0,
+        color: O ? "primaryDark" : void 0,
         totalCooldownSeconds: S,
-        remainingCooldownSeconds: I,
+        remainingCooldownSeconds: P,
         className: n,
         onKeyDown: e => {
           e.keyCode === m.yXg.ENTER && e.keyCode === m.yXg.SPACE && A(e, i)
@@ -81,7 +81,7 @@ let g = e => {
         },
         onMouseEnter: N,
         onMouseLeave: T,
-        isActive: j,
+        isActive: O,
         ref: R
       })
     }

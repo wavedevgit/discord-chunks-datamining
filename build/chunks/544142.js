@@ -41,7 +41,7 @@ function v(e) {
   return e
 }
 
-function j(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -54,49 +54,49 @@ function j(e, t) {
   }), e
 }
 
-function O(e) {
+function j(e) {
   var t, l;
   let {
     userId: p,
     channel: _
   } = e, y = i.useRef(null), {
     analyticsLocations: C
-  } = (0, d.ZP)(u.Z.USERNAME), O = (0, o.e7)([g.default], () => g.default.getUser(p)), E = (0, o.e7)([m.ZP], () => null != p ? m.ZP.getMember(_.guild_id, p) : null), S = (0, h.X7)(_.guild_id, null != p ? p : void 0, null == E ? void 0 : E.colorStrings);
+  } = (0, d.ZP)(u.Z.USERNAME), j = (0, o.e7)([g.default], () => g.default.getUser(p)), E = (0, o.e7)([m.ZP], () => null != p ? m.ZP.getMember(_.guild_id, p) : null), S = (0, h.X7)(_.guild_id, null != p ? p : void 0, null == E ? void 0 : E.colorStrings);
 
-  function I(e) {
-    if (null == O) return null;
+  function P(e) {
+    if (null == j) return null;
     (0, c.jW)(e, async () => {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("70675")]).then(n.bind(n, 654663));
-      return t => (0, r.jsx)(e, j(v({}, t), {
-        user: O,
+      return t => (0, r.jsx)(e, O(v({}, t), {
+        user: j,
         guildId: _.guild_id,
         channel: _
       }))
     })
   }
-  let P = null != (l = null != (t = null == E ? void 0 : E.nick) ? t : b.ZP.getName(O)) ? l : "???",
+  let I = null != (l = null != (t = null == E ? void 0 : E.nick) ? t : b.ZP.getName(j)) ? l : "???",
     Z = null == E ? void 0 : E.colorString;
-  return null == O ? (0, r.jsx)("span", {
+  return null == j ? (0, r.jsx)("span", {
     className: a()(x.threadCreatorName, x.unknownCreatorName),
-    children: P
+    children: I
   }) : (0, r.jsx)(d.Gt, {
     value: C,
     children: (0, r.jsx)(f.Z, {
       targetElementRef: y,
-      user: O,
+      user: j,
       guildId: _.guild_id,
       channelId: _.id,
       roleId: null == E ? void 0 : E.colorRoleId,
       clickTrap: !0,
-      children: e => (0, r.jsx)(s.P3F, j(v({}, e), {
+      children: e => (0, r.jsx)(s.P3F, O(v({}, e), {
         innerRef: y,
         tag: "span",
         className: x.threadCreatorName,
-        onContextMenu: I,
+        onContextMenu: P,
         children: (0, r.jsx)(s.PUh, {
-          name: P,
+          name: I,
           color: null != Z ? Z : void 0,
           roleColors: S
         })
@@ -122,7 +122,7 @@ function E(e) {
       children: (0, r.jsx)("div", {
         className: x.subtitle,
         children: C.intl.format(C.t.imPXd3, {
-          usernameHook: (e, n) => (0, r.jsx)(O, {
+          usernameHook: (e, n) => (0, r.jsx)(j, {
             userId: t.ownerId,
             channel: t
           }, n)

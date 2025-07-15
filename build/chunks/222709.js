@@ -1,4 +1,4 @@
-/** Chunk was on 670 **/
+/** Chunk was on 62059 **/
 n.d(t, {
   Z: () => m
 });
@@ -20,7 +20,7 @@ let m = e => {
     s.Z.dismissPublishBump(n), (0, c.Z)(t, n)
   }, [t, n]), _ = i.useCallback(() => {
     s.Z.dismissPublishBump(n)
-  }, [n]), g = i.useCallback(() => {
+  }, [n]), h = i.useCallback(() => {
     s.Z.permanentlyHidePublishBump(t)
   }, [t]);
   return m ? (0, r.jsxs)("div", {
@@ -55,7 +55,7 @@ let m = e => {
       className: p.hidePermanently,
       variant: "text-sm/normal",
       children: (0, r.jsx)(o.P3F, {
-        onClick: g,
+        onClick: h,
         children: d.intl.string(d.t.efSkDg)
       })
     })]

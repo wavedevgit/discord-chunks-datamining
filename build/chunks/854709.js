@@ -1,10 +1,10 @@
-/** Chunk was on 36512 **/
-n.d(t, {
-  X: () => l
+/** Chunk was on 95336 **/
+r.d(t, {
+  X: () => s
 });
-var r = n(594174);
+var n = r(594174);
 
-function l() {
+function s() {
   var e, t;
-  return null != (t = null == (e = r.default.getCurrentUser()) ? void 0 : e.isStaff()) && t
+  return null != (t = null == (e = n.default.getCurrentUser()) ? void 0 : e.isStaff()) && t
 }

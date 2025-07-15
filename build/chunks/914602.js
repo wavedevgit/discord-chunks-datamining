@@ -1,4 +1,4 @@
-/** Chunk was on 670 **/
+/** Chunk was on 62059 **/
 n.d(t, {
   Z: () => y
 }), n(388685);
@@ -14,8 +14,8 @@ var r, i = n(255367),
   m = n(73346),
   f = n(568836),
   _ = n(345898),
-  g = n(981631),
-  h = n(817165);
+  h = n(981631),
+  g = n(817165);
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -56,15 +56,15 @@ class E extends(r = l.PureComponent) {
         showBuyInline: l
       } = this.props, a = (l || !t.requiresPayment) && !e;
       return null != n ? n() : (0, i.jsxs)("div", {
-        className: h.priceOs,
+        className: g.priceOs,
         children: [(0, i.jsx)(s.Z, {
           type: s.Z.Types.DIRECTORY_TILE,
           sku: t,
           inLibrary: e,
-          className: a && r ? h.tilePriceWithVisibleBuyButton : h.tilePrice
+          className: a && r ? g.tilePriceWithVisibleBuyButton : g.tilePrice
         }), (0, i.jsx)(c.n, {
-          systems: [g.TaA.WINDOWS],
-          className: h.platform
+          systems: [h.TaA.WINDOWS],
+          className: g.platform
         }), a ? (0, i.jsx)("div", {
           children: "deprecated!"
         }) : null]
@@ -81,8 +81,8 @@ class E extends(r = l.PureComponent) {
       } = this.props;
       return (0, i.jsxs)(l.Fragment, {
         children: [(0, i.jsx)(p.Z, {
-          className: o()(h.splashContainer, {
-            [h.splashContainerHorizontal]: s
+          className: o()(g.splashContainer, {
+            [g.splashContainerHorizontal]: s
           }),
           video: null != c.previewVideo ? (0, m._W)(a.applicationId, c.previewVideo) : void 0,
           image: null != c.thumbnail ? (0, m._W)(a.applicationId, c.thumbnail, 600) : null,
@@ -91,15 +91,15 @@ class E extends(r = l.PureComponent) {
           muted: t,
           placeholder: n,
           onToggleMute: r,
-          splashClassName: h.splashVideo,
-          splashPlaceholderClassName: h.splashPlaceholder
+          splashClassName: g.splashVideo,
+          splashPlaceholderClassName: g.splashPlaceholder
         }), a.exclusive ? (0, i.jsx)(d.Z, {
-          className: o()(h.exclusiveRegular, {
-            [h.exclusivePlaying]: e
+          className: o()(g.exclusiveRegular, {
+            [g.exclusivePlaying]: e
           })
         }) : a.isTheGameAwardsWinner ? (0, i.jsx)(u.Z, {
-          className: o()(h.exclusiveRegular, {
-            [h.exclusivePlaying]: e
+          className: o()(g.exclusiveRegular, {
+            [g.exclusivePlaying]: e
           })
         }) : null]
       })

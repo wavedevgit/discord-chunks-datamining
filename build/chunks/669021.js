@@ -1,4 +1,4 @@
-/** Chunk was on 670 **/
+/** Chunk was on 62059 **/
 n.d(t, {
   Z: () => b
 }), n(388685);
@@ -23,7 +23,7 @@ function _(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class g extends i.Component {
+class h extends i.Component {
   renderMedia() {
     let {
       src: e,
@@ -95,7 +95,7 @@ class g extends i.Component {
     })
   }
 }
-class h extends i.Component {
+class g extends i.Component {
   componentWillUnmount() {
     this.videoTimeout.stop()
   }
@@ -122,7 +122,7 @@ class h extends i.Component {
       title: i,
       splashClassName: l
     } = this.props;
-    return null == t ? (0, r.jsx)(g, {
+    return null == t ? (0, r.jsx)(h, {
       className: a()(f.splash, l),
       src: n,
       title: i
@@ -184,7 +184,7 @@ class h extends i.Component {
         muted: c,
         splashClassName: p,
         splashPlaceholderClassName: _,
-        renderMediaOverlay: h
+        renderMediaOverlay: g
       } = this.props, b = c ? d.OyP : d.gj8;
       return (0, r.jsxs)(i.Fragment, {
         children: [s.tq ? null : (0, r.jsx)(m.Z, {
@@ -200,7 +200,7 @@ class h extends i.Component {
             type: "video/mp4"
           })
         }), (0, r.jsx)(u.W, {
-          children: o && e ? null : (0, r.jsx)(g, {
+          children: o && e ? null : (0, r.jsx)(h, {
             className: a()(f.splashPlaceholder, _),
             src: n,
             title: l
@@ -208,7 +208,7 @@ class h extends i.Component {
         }), (0, r.jsx)(d.P3F, {
           className: a()(f.muteContainer, {
             [f.muteContainerPlaying]: o && e,
-            [f.muteContainerMediaOverlay]: null != h
+            [f.muteContainerMediaOverlay]: null != g
           }),
           onClick: this.handleToggleMute,
           children: o && e ? (0, r.jsx)(b, {
@@ -232,11 +232,11 @@ class h extends i.Component {
       } = this.props, {
         currentIndex: o
       } = this.state;
-      return i ? (0, r.jsx)(g, {
+      return i ? (0, r.jsx)(h, {
         className: a()(f.splash, l),
         src: e[o],
         title: n
-      }, o) : (0, r.jsx)(g, {
+      }, o) : (0, r.jsx)(h, {
         className: a()(f.splash, l),
         src: t,
         title: n
@@ -244,4 +244,4 @@ class h extends i.Component {
     })
   }
 }
-let b = h
+let b = g
