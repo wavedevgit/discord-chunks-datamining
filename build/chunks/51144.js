@@ -40,7 +40,7 @@ function c(e) {
 }
 let u = 864e5,
   d = "???",
-  f = e => "".concat(e[0], "..."),
+  f = e => "".concat(e[0], "…"),
   _ = e => "@".concat(e),
   p = {
     mode: "full",
@@ -164,7 +164,7 @@ function C() {
 let R = {
   getName: g,
   useName: E,
-  isNameConcealed: e => 4 === e.length && e.endsWith("..."),
+  isNameConcealed: e => 2 === e.length && e.endsWith("…"),
   getUserTag: A,
   useUserTag: function(e, t) {
     return S(e, c({}, p, t), (0, r.e7)([i.Z], () => i.Z.hidePersonalInformation))
