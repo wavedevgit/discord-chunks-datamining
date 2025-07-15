@@ -332,12 +332,12 @@ class w extends(r = a.Component) {
     } = this.props, {
       readyState: L,
       hasMouseOver: x,
-      hasFocus: k
-    } = this.state, M = null != n, j = this.getRatio(), U = (0, o.clamp)(Math.round(h * j), null != g ? g : 0, null != y ? y : 1 / 0), G = (0, o.clamp)(Math.round(m * j), null != E ? E : 0, null != O ? O : 1 / 0), B = {
+      hasFocus: M
+    } = this.state, k = null != n, j = this.getRatio(), U = (0, o.clamp)(Math.round(h * j), null != g ? g : 0, null != y ? y : 1 / 0), G = (0, o.clamp)(Math.round(m * j), null != E ? E : 0, null != O ? O : 1 / 0), B = {
       alt: e,
       readyState: L,
       onContextMenu: null != a ? a : void 0,
-      zoomable: M,
+      zoomable: k,
       className: u,
       imageClassName: d,
       minWidth: g,
@@ -373,14 +373,14 @@ class w extends(r = a.Component) {
       onBlur: this.onBlur
     };
     if (1 === B.width && 1 === B.height) return null;
-    switch ((M || null != I) && (B.onClick = this.onClick), r && (B.original = null != l && "" !== l ? l : B.src), L) {
+    switch ((k || null != I) && (B.onClick = this.onClick), r && (B.original = null != l && "" !== l ? l : B.src), L) {
       case b.zo9.LOADING:
         null != t && (B.src = t);
         break;
       case b.zo9.READY:
         if (w.isAnimated(this.props)) {
           B.onMouseLeave = this.onMouseLeave;
-          let e = (s || x || k) && (null == p || p) && w.visibilityObserver.isVisible(this);
+          let e = (s || x || M) && (null == p || p) && w.visibilityObserver.isVisible(this);
           e ? (B.src = this.getSrc(j), B.renderAccessory = T) : (B.src = this.getSrc(j, !_ || !s), B.renderAccessory = this.renderAccessory), null != f && (B.children = t => {
             let {
               src: n,

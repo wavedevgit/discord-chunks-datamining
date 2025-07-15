@@ -21,7 +21,7 @@ var n = r(255367),
   S = r(999650),
   x = r(933557),
   O = r(471445),
-  j = r(785232),
+  j = r(266076),
   v = r(778877),
   _ = r(592125),
   E = r(271383),
@@ -35,8 +35,8 @@ var n = r(255367),
   w = r(585483),
   Z = r(63063),
   A = r(405656),
-  M = r(51144),
-  L = r(854709),
+  L = r(51144),
+  M = r(854709),
   F = r(652399),
   D = r(14091),
   H = r(981631),
@@ -65,7 +65,7 @@ function z(e) {
   return e
 }
 
-function W(e, t) {
+function q(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -78,7 +78,7 @@ function W(e, t) {
   }), e
 }
 
-function q(e, t) {
+function W(e, t) {
   if (null == e) return {};
   var r, n, s = function(e, t) {
     if (null == e) return {};
@@ -110,7 +110,7 @@ let Q = h()("2015-05-15").local(),
     let c = k.default.getUser(o.id),
       u = _.Z.getChannel(e),
       d = (null == u ? void 0 : u.isPrivate()) ? C.Z.getNickname(o.id) : null,
-      h = null != (l = null != (s = E.ZP.getNick(e, o.id)) ? s : d) ? l : M.ZP.getName(o),
+      h = null != (l = null != (s = E.ZP.getNick(e, o.id)) ? s : d) ? l : L.ZP.getName(o),
       p = null != (a = null == c ? void 0 : c.getAvatarURL(e, 20)) ? a : o.getAvatarURL(null == u ? void 0 : u.guild_id, 20);
     return [(0, n.jsx)("img", {
       alt: "",
@@ -121,7 +121,7 @@ let Q = h()("2015-05-15").local(),
       children: h
     }, "display-nick-".concat(t, "-").concat(o.id)), (0, n.jsx)("span", {
       className: U.displayUsername,
-      children: M.ZP.getUserTag(o, {
+      children: L.ZP.getUserTag(o, {
         identifiable: N.Z.enabled && N.Z.hidePersonalInformation ? "never" : "always"
       })
     }, "display-username-".concat(t, "-").concat(o.id))]
@@ -143,16 +143,19 @@ let Q = h()("2015-05-15").local(),
             t = k.default.getUser(e);
           if (null == t) return null;
           let r = t.getAvatarURL(null, 20);
-          return (0, n.jsx)("img", {
-            alt: "",
+          return (0, n.jsx)(g.qEK, {
+            "aria-hidden": !0,
             className: U.searchResultDMChannelIcon,
+            size: g.EFr.SIZE_20,
             src: r
           })
         } {
           if (l.isGroupDM()) return (0, n.jsx)(j.Z, {
-            recipients: l.recipients,
+            "aria-hidden": !0,
+            className: U.searchResultGDMChannelIcon,
+            channel: l,
             size: g.EFr.SIZE_20,
-            className: U.searchResultGDMChannelIcon
+            experimentLocation: "search_popout"
           });
           let e = (0, O.KS)(l);
           return null == e ? null : (0, n.jsx)(e, {
@@ -170,7 +173,7 @@ let Q = h()("2015-05-15").local(),
             t = k.default.getUser(e);
           return null == t ? null : (0, n.jsx)("span", {
             className: U.searchResultDMUserName,
-            children: M.ZP.getUserTag(t, {
+            children: L.ZP.getUserTag(t, {
               identifiable: N.Z.enabled && N.Z.hidePersonalInformation ? "never" : "always"
             })
           })
@@ -225,7 +228,7 @@ let Q = h()("2015-05-15").local(),
       })]
     })
   },
-  Y = e => (0, n.jsx)(J, W(z({}, e), {
+  Y = e => (0, n.jsx)(J, q(z({}, e), {
     className: U.user,
     renderResult: V
   })),
@@ -246,7 +249,7 @@ let Q = h()("2015-05-15").local(),
     },
     [H.dCx.FILTER_IN]: {
       titleText: () => B.intl.string(B.t.vHyCgo),
-      component: e => (0, n.jsx)(J, W(z({}, e), {
+      component: e => (0, n.jsx)(J, q(z({}, e), {
         renderResult: X
       }))
     },
@@ -291,7 +294,7 @@ let Q = h()("2015-05-15").local(),
           searchId: i,
           renderResult: c,
           group: u
-        } = e, d = q(e, ["onSelect", "onFocus", "result", "showFilter", "searchId", "renderResult", "group"]);
+        } = e, d = W(e, ["onSelect", "onFocus", "result", "showFilter", "searchId", "renderResult", "group"]);
         let h = "",
           p = s.useMemo(() => {
             var e;
@@ -310,7 +313,7 @@ let Q = h()("2015-05-15").local(),
               children: t
             }, e.type + t)
           });
-        return (0, n.jsxs)(g.P3F, W(z({
+        return (0, n.jsxs)(g.P3F, q(z({
           className: U.option,
           onClick: t,
           onFocus: r
@@ -331,7 +334,7 @@ let Q = h()("2015-05-15").local(),
       groupTip: () => (0, n.jsx)(g.ua7, {
         text: B.intl.string(B.t.hvVgAQ),
         position: "left",
-        children: e => (0, n.jsx)("div", W(z({
+        children: e => (0, n.jsx)("div", q(z({
           className: U.searchLearnMore
         }, e), {
           children: (0, n.jsx)(g.eee, {
@@ -352,9 +355,9 @@ let Q = h()("2015-05-15").local(),
             showFilter: o,
             searchId: i
           } = e,
-          c = q(e, ["result", "onSelect", "onFocus", "showFilter", "searchId"]);
+          c = W(e, ["result", "onSelect", "onFocus", "showFilter", "searchId"]);
         let u = A.Ko(null != (t = r.token) ? t : "");
-        return (0, n.jsxs)(g.P3F, W(z({
+        return (0, n.jsxs)(g.P3F, q(z({
           className: a()(U.option, U.searchOption),
           onClick: s,
           onFocus: l
@@ -417,7 +420,7 @@ class ee extends s.PureComponent {
         searchEverywhere: !0
       }),
       renderNoResults: () => null,
-      searchFavorites: l === H.I_8 && (0, L.X)(),
+      searchFavorites: l === H.I_8 && (0, M.X)(),
       showSearchInSelectedChannel: this.shouldShowSearchInSelectedChannel(),
       channel: a,
       onSelectSearchInSelectedChannel: this.handleSearchInChannel,
@@ -661,7 +664,7 @@ let et = s.forwardRef((e, t) => {
         a = A.BU(l.autocompletes);
       return [s, l, a, n]
     });
-  return (0, n.jsx)(ee, W(z({}, e), {
+  return (0, n.jsx)(ee, q(z({}, e), {
     searchId: s,
     resultsState: l,
     totalResults: a,

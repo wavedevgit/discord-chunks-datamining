@@ -35,8 +35,8 @@ var r = n(255367),
   D = n(481932),
   L = n(195387),
   x = n(664794),
-  k = n(4517),
-  M = n(978395),
+  M = n(4517),
+  k = n(978395),
   j = n(161572),
   U = n(228168),
   G = n(388032),
@@ -230,7 +230,7 @@ function W(e) {
                 markAsDismissed: eE,
                 targetElementRef: eu,
                 onTryFeature: q,
-                children: () => (0, r.jsx)(k.Z, {
+                children: () => (0, r.jsx)(M.Z, {
                   ref: eu,
                   location: "UserProfilePopout",
                   user: t,
@@ -240,7 +240,7 @@ function W(e) {
                   onCloseProfile: q,
                   prompt: eO
                 })
-              }) : (0, r.jsx)(k.Z, {
+              }) : (0, r.jsx)(M.Z, {
                 ref: eb ? eu : void 0,
                 location: "UserProfilePopout",
                 user: t,
@@ -250,7 +250,7 @@ function W(e) {
                 onCloseProfile: q,
                 prompt: ey ? eO : null
               })]
-            }), (0, r.jsx)(M.Z, {
+            }), (0, r.jsx)(k.Z, {
               user: t,
               currentUser: n,
               displayProfile: eo,

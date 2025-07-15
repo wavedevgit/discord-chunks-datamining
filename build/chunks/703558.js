@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => k,
+  Z: () => M,
   d: () => E
 }), n(388685), n(781311);
 var r, i = n(392711),
@@ -256,7 +256,7 @@ _(x, "displayName", "DraftStore"), _(x, "persistKey", "DraftStore"), _(x, "migra
   for (let t in e) r[t] = e[t];
   return n
 }]);
-let k = new x(s.Z, {
+let M = new x(s.Z, {
   CONNECTION_OPEN: N,
   LOGOUT: w,
   MULTI_ACCOUNT_REMOVE_ACCOUNT: D,

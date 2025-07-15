@@ -100,8 +100,8 @@ let P = Object.freeze({
   D = {},
   L = null,
   x = new Set,
-  k = !1,
   M = !1,
+  k = !1,
   j = !1,
   U = new Set,
   G = !1,
@@ -347,12 +347,12 @@ function eE() {
 }
 
 function eb() {
-  k = !0
+  M = !0
 }
 
 function ey() {
   s.Z.addInterceptor(e => {
-    if (M || !H.has(e.type)) return !1;
+    if (k || !H.has(e.type)) return !1;
     if ("CHANNEL_SELECT" === e.type) {
       let {
         guildId: t,
@@ -390,7 +390,7 @@ function eO(e) {
       a.ZP.PersistedStore.initializeAll(e.states);
       break;
     case v.BmY.DISPATCH:
-      null != e.payloads && (M = !0, e.payloads.forEach(e => W(e)), M = !1)
+      null != e.payloads && (k = !0, e.payloads.forEach(e => W(e)), k = !1)
   }
 }
 
@@ -491,7 +491,7 @@ class eT extends(i = a.ZP.PersistedStore) {
     return j
   }
   get incompatibleApp() {
-    return k
+    return M
   }
   getActiveRegions() {
     return U

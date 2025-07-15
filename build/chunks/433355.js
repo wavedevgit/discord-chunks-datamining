@@ -71,7 +71,7 @@ function x() {
   S || u.S.dispatch(E.CkL.SEARCH_RESULTS_CLOSE), S = w(S)
 }
 
-function k(e) {
+function M(e) {
   let {
     sidebarType: t,
     guildId: n,
@@ -88,7 +88,7 @@ function k(e) {
   }, !0)
 }
 
-function M(e) {
+function k(e) {
   let {
     guildId: t
   } = e;
@@ -248,10 +248,10 @@ let K = new W(o.Z, {
   USER_PROFILE_SIDEBAR_TOGGLE_SECTION: x,
   CHANNEL_TOGGLE_SUMMARIES_SECTION: L,
   SIDEBAR_VIEW_CHANNEL: j,
-  SIDEBAR_VIEW_GUILD: k,
+  SIDEBAR_VIEW_GUILD: M,
   SIDEBAR_CREATE_THREAD: U,
   SIDEBAR_CLOSE: Z,
-  SIDEBAR_CLOSE_GUILD: M,
+  SIDEBAR_CLOSE_GUILD: k,
   CHANNEL_DELETE: G,
   CHANNEL_SELECT: Y,
   THREAD_CREATE: V,

@@ -5,7 +5,7 @@ n.d(t, {
   UN: () => P,
   cY: () => N,
   gz: () => C,
-  q4: () => M,
+  q4: () => k,
   s6: () => R
 }), n(388685);
 var r = n(255367),
@@ -176,8 +176,8 @@ function L(e) {
     popoutPosition: R = "bottom",
     popoutLayerContext: P,
     optionClassName: L,
-    closeOnSelect: k,
-    select: M,
+    closeOnSelect: M,
+    select: k,
     isSelected: j,
     serialize: U,
     clear: G,
@@ -201,11 +201,11 @@ function L(e) {
     }, [q, H]),
     Q = (0, h.O)(X),
     J = i.useCallback(e => {
-      if (M(e), k) {
+      if (k(e), M) {
         var t;
         null == (t = W.current) || t.focus()
       }
-    }, [M, k, W]),
+    }, [k, M, W]),
     $ = i.useCallback(e => {
       e.stopPropagation(), null == G || G()
     }, [G]),
@@ -234,7 +234,7 @@ function L(e) {
       } = e;
       return (0, r.jsx)(x, {
         className: C,
-        closeOnSelect: k,
+        closeOnSelect: M,
         maxVisibleItems: l,
         width: "auto" === f ? void 0 : null != f ? f : K,
         isSelected: j,
@@ -358,7 +358,7 @@ function x(e) {
     }, [a, n, c]),
     x = i.useMemo(() => _.map((e, t) => {
       var n;
-      return (0, r.jsx)(k, {
+      return (0, r.jsx)(M, {
         isSelected: d(e.value),
         value: e.value,
         label: g(e),
@@ -368,7 +368,7 @@ function x(e) {
         serialize: E
       }, null != (n = e.key) ? n : t)
     }), [L, d, y, _, g, E]),
-    M = _.length <= h ? f.xV : f.h2;
+    k = _.length <= h ? f.xV : f.h2;
   return (0, r.jsx)(l.bG, {
     navigator: w,
     children: (0, r.jsx)(l.SJ, {
@@ -377,7 +377,7 @@ function x(e) {
           ref: n
         } = e, i = T(e, ["ref"]);
         return (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(M, I(O({
+          children: [(0, r.jsx)(k, I(O({
             className: o()(b.popout, t, {
               [b.popoutPositionTop]: "top" === A
             }),
@@ -405,7 +405,7 @@ function x(e) {
   })
 }
 
-function k(e) {
+function M(e) {
   let {
     className: t,
     value: n,
@@ -438,7 +438,7 @@ function k(e) {
   }))
 }
 
-function M(e) {
+function k(e) {
   var {
     value: t,
     onChange: n

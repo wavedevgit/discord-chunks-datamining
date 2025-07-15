@@ -3,9 +3,9 @@ r.d(t, {
   FZ: () => N,
   Hl: () => F,
   NJ: () => Z,
-  R8: () => M,
+  R8: () => L,
   Sq: () => R,
-  Wg: () => L,
+  Wg: () => M,
   Zn: () => I,
   c2: () => k,
   eE: () => A,
@@ -168,12 +168,12 @@ function A(e) {
   return w(0, e)
 }
 
-function M(e) {
+function L(e) {
   let t = e.getSelection();
   return t = (t = t.set("focusOffset", 0)).set("isBackward", !0), n.EditorState.forceSelection(e, t)
 }
 
-function L(e) {
+function M(e) {
   let t = R(e),
     r = e.getSelection();
   return r = (r = r.set("focusOffset", t.length)).set("isBackward", !1), n.EditorState.forceSelection(e, r)

@@ -99,7 +99,7 @@ async function x() {
   L.clipsSettings.storageLocation = e, ei.emitChange()
 }
 
-function k(e) {
+function M(e) {
   let {
     classification: t
   } = e, n = L.hardwareClassification;
@@ -108,7 +108,7 @@ function k(e) {
   L.hardwareClassificationForDecoupled = t, L.hardwareClassificationForDecoupled === _.x.MEETS_AUTO_ENABLE && r !== _.x.MEETS_AUTO_ENABLE && L.clipsSettings.clipsEnabled && (L.clipsSettings.decoupledClipsEnabled = !0)
 }
 
-function M(e) {
+function k(e) {
   let {
     clip: t
   } = e;
@@ -462,11 +462,11 @@ let ei = new er(a.Z, {
     CLIPS_CLEAR_NEW_CLIP_IDS: $,
     CLIPS_LOAD_DIRECTORY_SUCCESS: X,
     CLIPS_DELETE_CLIP: Q,
-    CLIPS_UPDATE_METADATA: M,
+    CLIPS_UPDATE_METADATA: k,
     RTC_CONNECTION_FLAGS: ee,
     CLIPS_SHOW_CALL_WARNING: H,
     VOICE_CHANNEL_SELECT: Y,
-    CLIPS_CLASSIFY_HARDWARE: k,
+    CLIPS_CLASSIFY_HARDWARE: M,
     CLIPS_INIT: W,
     CLIPS_INIT_FAILURE: K,
     CLIPS_DISMISS_EDUCATION: en,

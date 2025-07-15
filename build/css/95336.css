@@ -1,6 +1,6 @@
 /**
   Module ID: 95336
-  Original File Name: aa7437a48cc429e6
+  Original File Name: 403f25159177429e
 **/
 .pro__30cbe {
     text-transform: uppercase
@@ -1128,17 +1128,21 @@
 }
 
 .searchResultDMChannelIcon__56fec {
-    border-radius: 50%
+    border-radius: 50%;
+    height: 20px;
+    width: 20px
 }
 
 .searchResultDMChannelIcon__56fec,.searchResultGDMChannelIcon__56fec {
     display: inline-block;
     flex-grow: 0;
     flex-shrink: 0;
-    height: 20px;
     margin-right: 4px;
-    vertical-align: top;
-    width: 20px
+    vertical-align: top
+}
+
+.searchResultGDMChannelIcon__56fec {
+    line-height: 0
 }
 
 .searchResultDMChannelName__56fec {
@@ -1724,4 +1728,4 @@
     margin-right: 8px
 }
 
-/*# sourceMappingURL=aa7437a48cc429e6.css.map*/
+/*# sourceMappingURL=403f25159177429e.css.map*/

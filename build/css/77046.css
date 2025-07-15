@@ -1,22 +1,9 @@
 /**
   Module ID: 77046
-  Original File Name: 7ca73cdd3daf19ea
+  Original File Name: 0a08d1497fe39cbd
 **/
 .animation_bdbb1b {
-    height: 150px;
-    margin-bottom: 24px;
-    margin-top: 24px
-}
-
-.modalContent_bdbb1b {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin: 0
-}
-
-.subheader_bdbb1b {
-    margin-top: 8px
+    height: 150px
 }
 
 .icon_bdbb1b {
@@ -58,13 +45,9 @@
     margin: 8px 0
 }
 
-.modalFooter_bdbb1b {
-    justify-content: space-between
-}
-
 .divider_bdbb1b {
     background-color: var(--border-faint);
     opacity: .5
 }
 
-/*# sourceMappingURL=7ca73cdd3daf19ea.css.map*/
+/*# sourceMappingURL=0a08d1497fe39cbd.css.map*/

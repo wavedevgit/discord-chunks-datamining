@@ -67,13 +67,13 @@ function x(e, t) {
   return n
 }
 
-function k(e, t) {
+function M(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function M(e, t) {
+function k(e, t) {
   if (null == e) return {};
   var n, r, i = j(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -108,7 +108,7 @@ function Z(e) {
   return (0, r.jsx)(d.ua7, {
     text: i,
     position: s,
-    children: e => (0, r.jsx)(d.P3F, k(L({}, e), {
+    children: e => (0, r.jsx)(d.P3F, M(L({}, e), {
       innerRef: l,
       "aria-label": i,
       className: o()(w.secondaryButton, {
@@ -156,7 +156,7 @@ function Y(e) {
   } = (0, p.ZP)(), s = (0, l.e7)([v.Z], () => v.Z.isFavoriteSound(t.soundId), [t.soundId]), c = i.useCallback(e => {
     e.stopPropagation(), e.currentTarget.blur(), s ? (0, O.hs)(t.soundId) : ((0, T.lF)({
       sound: t,
-      location: k(L({}, a), {
+      location: M(L({}, a), {
         object: N.qAy.SOUNDBOARD_SOUND
       })
     }), (0, O.TB)(t.soundId))
@@ -218,7 +218,7 @@ let K = i.forwardRef(function(e, t) {
       tooltipClassName: el,
       tooltipContentClassName: ec
     } = e,
-    eu = M(e, ["sound", "channel", "containerClassName", "className", "focused", "forceSecondaryActions", "interactive", "enableSecondaryActions", "suppressPlaySound", "onMouseEnter", "onSelectItem", "analyticsLocations", "buttonOverlay", "showLockForDisabledSound", "inNitroLockedSection", "isAnimated", "isPlayingSoundOverride", "isSoundmoji", "soundmojiVisualEffectRef", "tooltipOverride", "tooltipClassName", "tooltipContentClassName"]);
+    eu = k(e, ["sound", "channel", "containerClassName", "className", "focused", "forceSecondaryActions", "interactive", "enableSecondaryActions", "suppressPlaySound", "onMouseEnter", "onSelectItem", "analyticsLocations", "buttonOverlay", "showLockForDisabledSound", "inNitroLockedSection", "isAnimated", "isPlayingSoundOverride", "isSoundmoji", "soundmojiVisualEffectRef", "tooltipOverride", "tooltipClassName", "tooltipContentClassName"]);
   let {
     name: ed,
     emojiId: ef,
@@ -229,9 +229,9 @@ let K = i.forwardRef(function(e, t) {
     isPlayingSound: eE
   } = (0, S.Z)(N, null != (u = null == D ? void 0 : D.id) ? u : null, null != (p = ea ? b.AY.getSetting() : null == (n = b.kU.getSetting()) ? void 0 : n.volume) ? p : 100, !ea && (null == D ? void 0 : D.isVocal()) ? R.w.VOICE : R.w.DEFAULT), {
     createMultipleConfettiAt: eb
-  } = i.useContext(h.h), ey = i.useRef(null), eO = W(N.soundId, ey.current), ev = (0, l.e7)([_.Z], () => _.Z.useReducedMotion), eI = i.useRef(G), eT = i.useRef(new c.Xp), eS = N.soundId === U, eA = "sound-".concat(N.soundId), eN = (0, s.JA)(eA), eC = null != ef || null != e_, eR = !(0, T.Nq)(ep, N, D) && !ea, eP = K || q && !eR, ew = null != (O = m.Wq.useStore().bottomPosition) ? O : 0, eD = (null != (v = null == (a = ey.current) ? void 0 : a.getBoundingClientRect().bottom) ? v : 0) + 50 > ew ? "top" : "bottom", [eL, ex] = i.useState(!1), ek = eR && et;
+  } = i.useContext(h.h), ey = i.useRef(null), eO = W(N.soundId, ey.current), ev = (0, l.e7)([_.Z], () => _.Z.useReducedMotion), eI = i.useRef(G), eT = i.useRef(new c.Xp), eS = N.soundId === U, eA = "sound-".concat(N.soundId), eN = (0, s.JA)(eA), eC = null != ef || null != e_, eR = !(0, T.Nq)(ep, N, D) && !ea, eP = K || q && !eR, ew = null != (O = m.Wq.useStore().bottomPosition) ? O : 0, eD = (null != (v = null == (a = ey.current) ? void 0 : a.getBoundingClientRect().bottom) ? v : 0) + 50 > ew ? "top" : "bottom", [eL, ex] = i.useState(!1), eM = eR && et;
 
-  function eM() {
+  function ek() {
     X || em($)
   }
 
@@ -239,14 +239,14 @@ let K = i.forwardRef(function(e, t) {
     if (eS && !ev && (eI.current = Math.min(eI.current + V, B), Math.random() < eI.current && eb(eO.x, eO.y, void 0, void 0, {
         sprite: C.vv
       })), null != J) return void J(e);
-    eM()
+    ek()
   }
   let eU = H({
       sound: N,
       previewSound: eg,
       disabled: eR && !K
     }),
-    eG = e => X || eR ? ek ? (0, r.jsx)(d.mBM, {
+    eG = e => X || eR ? eM ? (0, r.jsx)(d.mBM, {
       size: "xs",
       color: "currentColor",
       className: o()(w.primaryIcon, w.lockIcon, e, {
@@ -261,7 +261,7 @@ let K = i.forwardRef(function(e, t) {
       sound: N,
       disabled: !z && !K
     }),
-    eV = () => ek && !en ? (0, r.jsxs)(r.Fragment, {
+    eV = () => eM && !en ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: w.buttonOverlayBackground
       }), eG(w.primaryIconTopLevel), (0, r.jsx)("div", {
@@ -339,8 +339,8 @@ let K = i.forwardRef(function(e, t) {
       position: eD,
       shouldShow: !eL,
       delay: 500,
-      children: e => (0, r.jsxs)(d.kL8, k(L(k(L({}, eu), {
-        buttonProps: k(L({}, eN), {
+      children: e => (0, r.jsxs)(d.kL8, M(L(M(L({}, eu), {
+        buttonProps: M(L({}, eN), {
           id: eA,
           role: "button"
         }),

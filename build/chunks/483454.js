@@ -225,12 +225,13 @@ let T = [u.h8.PAYMENT_ELEMENT],
       handleStepChange: n,
       paymentElementsEnabled: r,
       logger: a,
-      onBillingAddressChange: o
-    } = e, s = i.useRef(null), [l, d] = i.useState(!1), [f, _] = i.useState(null), h = r && (t === u.h8.PAYMENT_ELEMENT || t === u.h8.ADDRESS), m = i.useMemo(() => ({
+      onBillingAddressChange: o,
+      continueSessionToInitialStep: s
+    } = e, l = i.useRef(null), [d, f] = i.useState(!1), [_, h] = i.useState(s === u.h8.CREDIT_CARD_INFORMATION ? m.He.CARD : null), g = r && (t === u.h8.PAYMENT_ELEMENT || t === u.h8.ADDRESS), E = i.useMemo(() => ({
       onChange: e => {
-        a.log("PaymentElements onChange event:", e), d(e.complete), _((0, p.hR)(e.value.type))
+        a.log("PaymentElements onChange event:", e), f(e.complete), h((0, p.hR)(e.value.type))
       }
-    }), [a]), g = i.useMemo(() => ({
+    }), [a]), b = i.useMemo(() => ({
       onChange: e => {
         var t;
         let {
@@ -250,31 +251,31 @@ let T = [u.h8.PAYMENT_ELEMENT],
           postalCode: r.postal_code
         }, n)
       }
-    }), [o]), E = i.useCallback(function(e) {
+    }), [o]), y = i.useCallback(function(e) {
       let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
-      void 0 !== e && _(e), n(u.h8.PAYMENT_ELEMENT, t)
+      void 0 !== e && h(e), n(u.h8.PAYMENT_ELEMENT, t)
     }, [n]);
     i.useEffect(() => {
       if (!r) return;
       let e = () => {
-        E(void 0)
+        y(void 0)
       };
       return c.Z.subscribe("BRAINTREE_TOKENIZE_PAYPAL_FAIL_WINDOW_CLOSED", e), () => {
         c.Z.unsubscribe("BRAINTREE_TOKENIZE_PAYPAL_FAIL_WINDOW_CLOSED", e)
       }
-    }, [E, r]);
-    let b = i.useCallback(() => {
-      _(null), n(u.h8.PAYMENT_TYPE)
+    }, [y, r]);
+    let O = i.useCallback(() => {
+      h(null), n(u.h8.PAYMENT_TYPE)
     }, [n]);
     return {
-      shouldRenderPaymentElement: h,
-      stripePaymentElementProps: m,
-      stripeAddressElementProps: g,
-      combinedStripeElementsRef: s,
-      paymentElementReady: l,
-      paymentElementSelectedType: f,
-      setPaymentElementSelectedType: _,
-      handlePaymentElementStep: E,
-      onBackPaymentElement: b
+      shouldRenderPaymentElement: g,
+      stripePaymentElementProps: E,
+      stripeAddressElementProps: b,
+      combinedStripeElementsRef: l,
+      paymentElementReady: d,
+      paymentElementSelectedType: _,
+      setPaymentElementSelectedType: h,
+      handlePaymentElementStep: y,
+      onBackPaymentElement: O
     }
   }

@@ -5,7 +5,7 @@ n.d(t, {
   Ks: () => V,
   Ws: () => H,
   g2: () => U,
-  hf: () => M,
+  hf: () => k,
   k3: () => G,
   qN: () => Z,
   tP: () => j
@@ -73,13 +73,13 @@ function x(e, t) {
   return n
 }
 
-function k(e, t) {
+function M(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function M(e) {
+function k(e) {
   let {
     quest: t,
     questContent: n,
@@ -197,7 +197,7 @@ function V(e) {
     default:
       I = C.dr.CONFLICT_CHECKS
   }
-  let S = M({
+  let S = k({
       quest: n,
       questContent: o,
       questContentPosition: s,
@@ -308,10 +308,10 @@ function V(e) {
           tooltipText: null,
           onClick: S
         };
-        if (a) return k(L({}, i), {
+        if (a) return M(L({}, i), {
           text: w.intl.string(w.t.MAS7uL)
         });
-        if ((0, O.vQ)(n.config)) return k(L({}, i), {
+        if ((0, O.vQ)(n.config)) return M(L({}, i), {
           text: w.intl.string(w.t.vTgCW1)
         });
         if ((0, O.Bg)(n.config)) return {
@@ -324,7 +324,7 @@ function V(e) {
           text: w.intl.string(w.t.WYchdX),
           onClick: j
         };
-        return k(L({}, i), {
+        return M(L({}, i), {
           text: w.intl.string(w.t.bAGFz8)
         })
     }

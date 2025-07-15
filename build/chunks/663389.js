@@ -105,9 +105,9 @@ function x() {
   f = c.QZA.SUBMITTING
 }
 
-function k() {
+function M() {
   let e = l.default.getCurrentUser();
-  M(), null != e && (b = d({}, E = {
+  k(), null != e && (b = d({}, E = {
     [c.oAB.ACCOUNT]: {
       userId: e.id,
       username: e.username,
@@ -121,7 +121,7 @@ function k() {
   }))
 }
 
-function M() {
+function k() {
   f = c.QZA.OPEN, g = {}
 }
 
@@ -187,6 +187,6 @@ let G = new U(s.Z, {
   USER_SETTINGS_MODAL_CLEAR_SUBSECTION: w,
   USER_SETTINGS_MODAL_CLEAR_SCROLL_POSITION: D,
   USER_SETTINGS_MODAL_UPDATE_ACCOUNT: L,
-  USER_SETTINGS_MODAL_SUBMIT_COMPLETE: M,
-  USER_SETTINGS_MODAL_RESET: k
+  USER_SETTINGS_MODAL_SUBMIT_COMPLETE: k,
+  USER_SETTINGS_MODAL_RESET: M
 })

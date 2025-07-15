@@ -36,9 +36,9 @@ var n = r(255367),
   w = r(74551),
   Z = r(981631),
   A = r(388032),
-  M = r(585693);
+  L = r(585693);
 
-function L(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -83,7 +83,7 @@ function H(e) {
   return (0, n.jsx)(f.VqE, {
     "aria-label": A.intl.string(A.t["2pAkDA"]),
     children: (0, n.jsxs)("div", {
-      className: M.popoutContainer,
+      className: L.popoutContainer,
       children: [(0, n.jsx)(m.h4, {
         icon: f.plf,
         title: A.intl.string(A.t["2pAkDA"])
@@ -179,14 +179,14 @@ function G(e) {
           }
           return s
         }(e, ["ref"]);
-        return (0, n.jsx)(f.h21, F(L({
+        return (0, n.jsx)(f.h21, F(M({
           ref: e => {
             var t;
             l.current = e, s.current = null != (t = null == e ? void 0 : e.getScrollerNode()) ? t : null
           },
-          className: M.messagesScroller
+          className: L.messagesScroller
         }, a), {
-          children: t.map(e => (0, n.jsx)(W, {
+          children: t.map(e => (0, n.jsx)(q, {
             savedMessageKey: e,
             closePopout: r,
             throttledNow: o
@@ -213,9 +213,9 @@ function z(e) {
     })
   }, [r, t, o]), c = (0, p.e7)([j.Z], () => !!((null == o ? void 0 : o.type) === Z.d4z.UNKNOWN || (null == o ? void 0 : o.isPrivate())) || j.Z.can(Z.Plq.VIEW_CHANNEL, o));
   return null != o && null != t.message && c ? (0, n.jsxs)("div", {
-    className: M.messageContainer,
+    className: L.messageContainer,
     children: [(0, n.jsx)(f.P3F, {
-      className: M.clickableMessageBackground,
+      className: L.clickableMessageBackground,
       onClick: i,
       "aria-label": A.intl.string(A.t["+TSRGB"])
     }), null != t.saveData.dueAt ? (0, n.jsx)(w.Z, {
@@ -226,22 +226,22 @@ function z(e) {
     }), (0, n.jsx)(S.Z, {
       message: t.message,
       channel: o,
-      className: M.message,
+      className: L.message,
       compact: O.jU.getSetting(),
       animateAvatar: !1,
       focusProps: D,
       trackAnnouncementViews: !0
     }, t.message.id), (0, n.jsx)(x.ZP, {
-      className: M.hoverBar,
-      children: (0, n.jsx)(q, {
+      className: L.hoverBar,
+      children: (0, n.jsx)(W, {
         savedMessage: t,
         jumpToMessage: i
       })
     })]
   }) : (0, n.jsxs)("div", {
-    className: a()(M.messageContainer, M.deletedMessage),
+    className: a()(L.messageContainer, L.deletedMessage),
     children: [(0, n.jsx)("div", {
-      className: M.deleteIcon,
+      className: L.deleteIcon,
       children: (0, n.jsx)(f.P4T, {
         size: "xxs",
         color: f.TVs.colors.INTERACTIVE_ACTIVE
@@ -251,7 +251,7 @@ function z(e) {
       color: "header-secondary",
       children: null != t.saveData.dueAt ? A.intl.string(A.t["wuQm+v"]) : A.intl.string(A.t.o572FR)
     }), (0, n.jsx)(x.ZP, {
-      className: M.hoverBar,
+      className: L.hoverBar,
       children: (0, n.jsx)(x.sF, {
         label: A.intl.string(A.t.SvXS1d),
         icon: f.XHJ,
@@ -262,7 +262,7 @@ function z(e) {
   })
 }
 
-function W(e) {
+function q(e) {
   let {
     savedMessageKey: t,
     closePopout: r,
@@ -275,7 +275,7 @@ function W(e) {
   })
 }
 
-function q(e) {
+function W(e) {
   let {
     savedMessage: t,
     jumpToMessage: s
@@ -296,7 +296,7 @@ function q(e) {
         let {
           MessageReminderEditMenu: e
         } = await r.e("69818").then(r.bind(r, 898150));
-        return r => (0, n.jsx)(e, F(L({}, r), {
+        return r => (0, n.jsx)(e, F(M({}, r), {
           label: A.intl.string(A.t.roMu1N),
           message: t.message
         }))
@@ -318,7 +318,7 @@ function q(e) {
         let {
           MessageReminderEditMenu: e
         } = await r.e("69818").then(r.bind(r, 898150));
-        return r => (0, n.jsx)(e, F(L({}, r), {
+        return r => (0, n.jsx)(e, F(M({}, r), {
           label: A.intl.string(A.t.mJ3P0N),
           message: t.message
         }))

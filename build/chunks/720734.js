@@ -632,7 +632,7 @@ class td extends r.PureComponent {
             children: (0, i.jsx)(K.Z, {
               userName: e1.ZP.getName(t),
               displayNameStyles: e,
-              effectDisplayType: Y.Fb.STATIC
+              effectDisplayType: Y.F.STATIC
             })
           })
         }), (0, i.jsx)("div", {

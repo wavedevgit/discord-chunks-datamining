@@ -8,14 +8,14 @@ n.d(t, {
   Dd: () => C,
   Ft: () => D,
   TK: () => B,
-  X0: () => M,
+  X0: () => k,
   XA: () => j,
   Z8: () => v,
   bD: () => P,
   nG: () => A,
   qJ: () => U,
   t0: () => G,
-  tI: () => k
+  tI: () => M
 }), n(388685), n(953529), n(539854), n(361932), n(187205), n(35282), n(781311);
 var r = n(654861),
   i = n.n(r),
@@ -300,14 +300,14 @@ function x(e) {
   }
 }
 
-function k(e) {
+function M(e) {
   if (null != e)
     if (e.id === h.bi.BUILT_IN) return p.ub.BUILT_IN;
     else if (e.id === h.bi.FRECENCY) return p.ub.FRECENCY;
   else return p.ub.APP
 }
 
-function M(e, t) {
+function k(e, t) {
   var n, r;
   return {
     type: p.Qi.APPLICATION,
