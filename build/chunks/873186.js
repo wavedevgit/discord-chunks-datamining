@@ -1,43 +1,61 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  G: () => o
+  G: () => l
 });
 var r = n(818083),
-  i = n(480218);
-let a = (0, r.B)({
-  kind: "user",
-  id: "2025-07_resumable_attachment_uploads",
-  label: "Resumable attachment uploads",
-  defaultConfig: {
-    enableResumableUploads: !1
-  },
-  treatments: [{
-    id: 1,
-    label: "Control",
-    config: {
+  i = n(427164),
+  a = n(480218);
+let o = (0, r.B)({
+    kind: "user",
+    id: "2025-07_resumable_attachment_uploads",
+    label: "Resumable attachment uploads",
+    defaultConfig: {
       enableResumableUploads: !1
+    },
+    treatments: [{
+      id: 1,
+      label: "Control",
+      config: {
+        enableResumableUploads: !1
+      }
+    }, {
+      id: 2,
+      label: "Resumable Uploads Enabled",
+      config: {
+        enableResumableUploads: !0
+      }
+    }]
+  }),
+  s = (0, i.le)({
+    name: "2025-07-resumable-attachment-uploads",
+    kind: "user",
+    defaultConfig: {
+      enableResumableUploads: !1
+    },
+    variations: {
+      1: {
+        enableResumableUploads: !1
+      },
+      2: {
+        enableResumableUploads: !0
+      }
     }
-  }, {
-    id: 2,
-    label: "Resumable Uploads Enabled",
-    config: {
-      enableResumableUploads: !0
-    }
-  }]
-});
+  });
 
-function o(e) {
+function l(e) {
   let {
     location: t
   } = e, {
     isInHoldout: n
-  } = i._.getCurrentConfig({
+  } = a._.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: !0
   });
-  return a.getCurrentConfig({
+  return n || s.getConfig({
+    location: t
+  }), o.getCurrentConfig({
     location: t
   }, {
     disable: n,

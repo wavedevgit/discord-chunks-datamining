@@ -1,51 +1,22 @@
 /**
   Module ID: 4530
-  Original File Name: 2fbf57b0a5db9ded
+  Original File Name: 4796b07dc0ce87a7
 **/
-.modalRoot__4a43b {
-    background-color: var(--background-base-lower);
-    border-radius: 8px;
-    overflow: hidden
-}
-
-.header__4a43b {
-    display: flex;
-    flex-direction: column;
-    justify-content: center
-}
-
-.headerTitle__4a43b {
-    display: flex;
-    justify-content: space-between;
-    width: 100%
-}
-
-.modalContent__4a43b {
-    background-color: var(--background-base-lower);
-    padding: 16px 0
-}
-
 .searchBar__4a43b {
-    margin: 0 8px 16px 16px
+    margin: 0
 }
 
 .rowDivider__4a43b {
     background-color: var(--background-base-low);
-    height: 2px
-}
-
-.rowContainer__4a43b,.rowDivider__4a43b {
-    margin-left: 16px;
-    margin-right: 8px
+    height: 1px
 }
 
 .rowContainer__4a43b {
     align-items: center;
-    background-color: var(--background-base-lower);
     cursor: pointer;
     display: flex;
     justify-content: space-between;
-    padding: 8px 16px 8px 0
+    padding: 8px 0
 }
 
 .rowContainer__4a43b.disabled__4a43b {
@@ -98,26 +69,10 @@
     flex: 0 0 auto
 }
 
-.footer__4a43b {
-    background-color: transparent;
-    display: block;
-    margin: 0;
-    padding: 0
-}
-
-.copySendBar__4a43b {
-    background-color: var(--background-secondary-alt);
-    justify-content: space-between;
-    padding: 16px
-}
-
-.copyButton__4a43b,.copySendBar__4a43b {
-    align-items: center;
-    display: flex
-}
-
-.copyButton__4a43b {
-    gap: 4px
+.previewImage__4a43b {
+    max-height: 250px;
+    max-width: 400px;
+    object-fit: contain
 }
 
 .acronym__4a43b {
@@ -133,11 +88,4 @@
     width: 40px
 }
 
-.img__4a43b {
-    height: auto;
-    max-height: 250px;
-    max-width: 400px;
-    width: 100%
-}
-
-/*# sourceMappingURL=2fbf57b0a5db9ded.css.map*/
+/*# sourceMappingURL=4796b07dc0ce87a7.css.map*/

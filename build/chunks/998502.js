@@ -188,6 +188,12 @@ let z = {
         }), e => t(e.map(Y)))
       } catch (e) {}
     },
+    setRobloxSubgameDetectionConfig(e, t) {
+      this.getDiscordUtils().setRobloxSubgameDetectionConfig(e, t)
+    },
+    checkForRobloxSubgameUpdate() {
+      this.getDiscordUtils().checkForRobloxSubgameUpdate()
+    },
     setCandidateGamesCallback(e) {
       this.getDiscordUtils().setCandidateGamesCallback(t => e(t.map(Y)))
     },
