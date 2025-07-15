@@ -1,32 +1,32 @@
 /** Chunk was on 47495 **/
-n.d(t, {
+l.d(t, {
   Z: () => c
 });
-var l = n(255367),
-  s = n(481060),
-  r = n(698282),
-  i = n(388032),
-  o = n(454507);
+var n = l(255367),
+  s = l(481060),
+  r = l(698282),
+  i = l(388032),
+  o = l(454507);
 
 function c(e) {
   let {
     user: t,
-    selectedFontId: n,
+    selectedFontId: l,
     selectedEffectId: c,
     selectedColors: a,
     onClose: d,
     className: u
   } = e;
-  return (0, l.jsxs)(l.Fragment, {
-    children: [(0, l.jsx)(s.xBx, {
+  return (0, n.jsxs)(n.Fragment, {
+    children: [(0, n.jsx)(s.xBx, {
       separator: !1,
       className: o.modalHeaderPreview,
-      children: (0, l.jsx)(s.olH, {
+      children: (0, n.jsx)(s.olH, {
         onClick: d
       })
-    }), (0, l.jsx)("div", {
+    }), (0, n.jsx)("div", {
       className: u,
-      children: (0, l.jsx)(s.Text, {
+      children: (0, n.jsx)(s.Text, {
         variant: "text-md/semibold",
         children: i.intl.string(r.default.cAtmqa)
       })

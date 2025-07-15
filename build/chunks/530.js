@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => m
 });
 var r = n(255367);
 n(73800);
@@ -11,81 +11,87 @@ var i = n(120356),
   s = n(129861),
   l = n(406943),
   c = n(385499),
-  u = n(172751),
-  d = n(228168),
-  f = n(388032),
-  _ = n(438361);
+  u = n(821795),
+  d = n(892567),
+  f = n(172751),
+  _ = n(228168),
+  p = n(388032),
+  h = n(438361);
 
-function p(e) {
+function m(e) {
   let {
     user: t,
     usernameIcon: n,
     tags: i,
-    nickname: p,
-    nicknameIcons: h,
-    pronouns: m,
-    className: g,
-    tagClassName: E,
-    isTryItOut: b,
-    onOpenProfile: y,
-    onClose: O,
-    nicknameVariant: v = "heading-lg/bold"
-  } = e, I = e => null == y ? e : (0, r.jsx)(o.P3F, {
-    onClick: y,
-    className: _.clickableUsername,
+    nickname: m,
+    nicknameIcons: g,
+    pronouns: E,
+    className: b,
+    tagClassName: y,
+    isTryItOut: O,
+    onOpenProfile: v,
+    onClose: I,
+    nicknameVariant: T = "heading-lg/bold"
+  } = e, S = e => null == v ? e : (0, r.jsx)(o.P3F, {
+    onClick: v,
+    className: h.clickableUsername,
     children: e
-  }), T = null != m && m.length > 0, S = (0, l.D)(t);
+  }), A = null != E && E.length > 0, N = (0, l.D)(t);
   return (0, r.jsxs)("div", {
-    className: a()(_.container, {
-      [_.bot]: null != S
-    }, g),
+    className: a()(h.container, {
+      [h.bot]: null != N
+    }, b),
     children: [(0, r.jsxs)("div", {
-      className: _.usernameRow,
-      children: [I((0, r.jsx)(o.X6q, {
-        className: _.nickname,
-        variant: v,
-        children: p
-      })), null != S && (0, r.jsx)(c.Z, {
-        type: S,
+      className: h.usernameRow,
+      children: [S((0, r.jsx)(o.X6q, {
+        className: h.nickname,
+        variant: T,
+        children: (0, r.jsx)(d.Z, {
+          userName: m,
+          displayNameStyles: t.displayNameStyles,
+          effectDisplayType: u.Fb.ANIMATED
+        })
+      })), null != N && (0, r.jsx)(c.Z, {
+        type: N,
         verified: t.isVerifiedBot()
-      }), null != h && (0, r.jsx)("div", {
-        className: _.nicknameIcons,
-        children: h
+      }), null != g && (0, r.jsx)("div", {
+        className: h.nicknameIcons,
+        children: g
       })]
     }), (0, r.jsxs)("div", {
-      className: a()(_.tags, {
-        [_.pronouns]: T,
-        [_.bot]: null != S
+      className: a()(h.tags, {
+        [h.pronouns]: A,
+        [h.bot]: null != N
       }),
-      children: [!t.isProvisional && I((0, r.jsx)(s.Z, {
+      children: [!t.isProvisional && S((0, r.jsx)(s.Z, {
         user: t,
         usernameIcon: n,
         forceUsername: !0,
-        forcePomelo: b,
-        className: a()(_.userTag, E),
-        usernameClass: _.userTagUsername,
-        discriminatorClass: _.userTagDiscriminator,
+        forcePomelo: O,
+        className: a()(h.userTag, y),
+        usernameClass: h.userTagUsername,
+        discriminatorClass: h.userTagDiscriminator,
         hideBotTag: !0
-      })), T && (0, r.jsxs)(r.Fragment, {
+      })), A && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
           "aria-hidden": "true",
-          className: _.dotSpacer
+          className: h.dotSpacer
         }), (0, r.jsx)(o.DY3, {
-          className: _.pronounsTooltip,
-          text: f.intl.string(f.t.GI2A8P),
-          delay: d.vB,
+          className: h.pronounsTooltip,
+          text: p.intl.string(p.t.GI2A8P),
+          delay: _.vB,
           children: (0, r.jsx)(o.Text, {
-            className: a()(_.pronounsText, E),
+            className: a()(h.pronounsText, y),
             variant: "text-sm/medium",
             color: "header-primary",
-            children: m
+            children: E
           })
         })]
-      }), (0, r.jsx)(u.ZP, {
+      }), (0, r.jsx)(f.ZP, {
         userId: t.id,
-        onClose: O,
-        containerClassName: _.guildTagContainer,
-        className: _.guildTag
+        onClose: I,
+        containerClassName: h.guildTagContainer,
+        className: h.guildTag
       }), i]
     })]
   })

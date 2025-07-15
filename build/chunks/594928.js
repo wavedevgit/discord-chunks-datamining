@@ -1,18 +1,19 @@
-/** Chunk was on 91372 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  J: () => a,
-  f: () => s
+  J: () => o,
+  f: () => a
 });
-var i = n(818083),
-  r = n(987338);
-let s = (0, i.B)({
+var r = n(818083),
+  i = n(987338);
+let a = (0, r.B)({
     id: "2025-07_display_name_styles_viewer",
     kind: "user",
     label: "Display Name Styles Viewer",
     defaultConfig: {
       enabled: !1
     },
-    commonTriggerPoint: r.$P.CONNECTION_OPEN,
+    commonTriggerPoint: i.$P.CONNECTION_OPEN,
     treatments: [{
       id: 1,
       label: "Enables viewing display name styles set by other users.",
@@ -21,14 +22,14 @@ let s = (0, i.B)({
       }
     }]
   }),
-  a = (0, i.B)({
+  o = (0, r.B)({
     id: "2025-07_display_name_styles_setter",
     kind: "user",
     label: "Display Name Styles Setter",
     defaultConfig: {
       enabled: !1
     },
-    commonTriggerPoint: r.$P.CONNECTION_OPEN,
+    commonTriggerPoint: i.$P.CONNECTION_OPEN,
     treatments: [{
       id: 1,
       label: "Enables the UI for setting display name styles.",

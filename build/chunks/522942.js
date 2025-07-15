@@ -1,5 +1,8 @@
-/** Chunk was on 47495 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  m: () => s
+  m: () => r
 });
-var l, s = ((l = {})[l.SOLID = 1] = "SOLID", l[l.GRADIENT = 2] = "GRADIENT", l[l.NEON = 3] = "NEON", l[l.TOON = 4] = "TOON", l[l.POP = 5] = "POP", l)
+var r = function(e) {
+  return e[e.SOLID = 1] = "SOLID", e[e.GRADIENT = 2] = "GRADIENT", e[e.NEON = 3] = "NEON", e[e.TOON = 4] = "TOON", e[e.POP = 5] = "POP", e
+}({})
