@@ -90,8 +90,8 @@ function O(e) {
     disabled: S
   } = O, I = i.useRef(null), P = (0, s.e7)([d.Z], () => d.Z.getChatOpen(n), [n]), {
     isShowing: Z,
-    unreadCount: N,
-    mentionCount: T
+    unreadCount: T,
+    mentionCount: N
   } = function(e) {
     let {
       unreadCount: t,
@@ -144,9 +144,9 @@ function O(e) {
     }
   }, [M]);
   let L = [t = f && S ? x.intl.string(x.t.DPgc5u) : P ? x.intl.string(x.t.nthdxM) : x.intl.string(x.t["5KxXrK"])];
-  return T > 0 && L.push(x.intl.formatToPlainString(x.t["3l1GOz"], {
-    mentionCount: T
-  })), N > 0 && L.push(x.intl.string(x.t.x5zAGR)), (0, r.jsx)(y.Z, function(e) {
+  return N > 0 && L.push(x.intl.formatToPlainString(x.t["3l1GOz"], {
+    mentionCount: N
+  })), T > 0 && L.push(x.intl.string(x.t.x5zAGR)), (0, r.jsx)(y.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

@@ -30,10 +30,10 @@ function P() {
 }
 
 function Z(e) {
-  v = e, j = 0, N()
+  v = e, j = 0, T()
 }
 
-function N() {
+function T() {
   if (!x) return !1;
   let e = m.Z.getChannel(I);
   if (0 === v.trim().length) return null != r && r.clearQuery(), O = function(e) {
@@ -82,7 +82,7 @@ function N() {
   return !1
 }
 
-function T() {
+function N() {
   if (!x) return !1;
   let e = E;
   return (E = _.Z.getFriendCount() > 0) !== e
@@ -124,7 +124,7 @@ function R() {
 
 function M(e) {
   if (e.key !== C.vTt) return !1;
-  x = !0, T(), r = R(), I = null, Z("")
+  x = !0, N(), r = R(), I = null, Z("")
 }
 
 function D(e) {
@@ -137,7 +137,7 @@ function k() {
 }
 class L extends(i = o.ZP.Store) {
   initialize() {
-    this.waitFor(y.default, m.Z, _.Z, u.Z, g.Z), this.syncWith([y.default, m.Z], N), this.syncWith([_.Z], T)
+    this.waitFor(y.default, m.Z, _.Z, u.Z, g.Z), this.syncWith([y.default, m.Z], T), this.syncWith([_.Z], N)
   }
   getResults() {
     return O
@@ -178,12 +178,12 @@ let U = new L(s.Z, {
       } = e;
       if (null != t) return !1;
       let r = x;
-      return P(), x = r, I = n, N()
+      return P(), x = r, I = n, T()
     },
     MODAL_PUSH: M,
     SHOW_ACTION_SHEET: M,
     PRIVATE_CHANNEL_RECIPIENTS_INVITE_OPEN: function(e) {
-      x = !0, T(), r = R(), I = e.channelId, Z("")
+      x = !0, N(), r = R(), I = e.channelId, Z("")
     },
     MODAL_POP: D,
     HIDE_ACTION_SHEET: D,

@@ -105,8 +105,11 @@ let S = {
   x = 864e5,
   k = .001,
   M = performance.now(),
-  j = (0, s.X6)() ? (0, s.Ub)((0, o.R)()) : null,
-  U = [];
+  j = (0, s.X6)() ? (0, s.Ub)((0, o.R)()) : null;
+a.extendSuperProperties({
+  launch_signature: j
+});
+let U = [];
 
 function G(e) {
   U.push(e)

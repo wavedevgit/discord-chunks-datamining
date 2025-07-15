@@ -28,7 +28,7 @@ let m = e => {
           children: [(0, r.jsx)(a.Text, {
             variant: "text-md/medium",
             children: u.intl.format(u.t["Ks2/3d"], {
-              selectFileHook: (e, n) => (0, r.jsx)(p, {
+              selectFileHook: (e, n) => (0, r.jsx)(g, {
                 translatedContent: e,
                 setUserImage: t
               }, n)
@@ -49,7 +49,7 @@ let m = e => {
       })
     })
   },
-  p = e => {
+  g = e => {
     let {
       setUserImage: t,
       translatedContent: n

@@ -29,8 +29,8 @@ var r = n(255367),
   I = n(4517),
   P = n(277117),
   Z = n(52639),
-  N = n(228168),
-  T = n(388032),
+  T = n(228168),
+  N = n(388032),
   A = n(638414);
 
 function w(e) {
@@ -88,7 +88,7 @@ function R(e) {
           ref: F,
           user: t,
           displayProfile: D,
-          themeType: N.lY.SIDEBAR,
+          themeType: T.lY.SIDEBAR,
           themeOverride: k,
           children: [null != G.interactionType && (0, r.jsx)(l.animated.div, {
             style: V,
@@ -97,7 +97,7 @@ function R(e) {
             children: [(0, r.jsxs)(O.Z, {
               children: [(0, r.jsx)(E.Z, {
                 user: t,
-                themeType: N.lY.SIDEBAR,
+                themeType: T.lY.SIDEBAR,
                 shouldShowTooltip: null === G.interactionType
               }), t.bot ? (0, r.jsx)(j.Z, {
                 user: t
@@ -110,7 +110,7 @@ function R(e) {
               children: [(0, r.jsx)(C.Z, {
                 user: t,
                 displayProfile: D,
-                themeType: N.lY.SIDEBAR,
+                themeType: T.lY.SIDEBAR,
                 animateOnHover: !H,
                 className: A.banner
               }), (0, r.jsx)(x.Z, {
@@ -121,13 +121,13 @@ function R(e) {
                 user: t,
                 displayProfile: D,
                 channelId: R.id,
-                themeType: N.lY.SIDEBAR,
+                themeType: T.lY.SIDEBAR,
                 onOpenProfile: M ? void 0 : z
               }), (0, r.jsx)(I.Z, {
                 location: "UserProfileSiebar",
                 user: t,
                 channelId: R.id,
-                themeType: N.lY.SIDEBAR,
+                themeType: T.lY.SIDEBAR,
                 disableToolbar: t.bot
               })]
             }), (0, r.jsx)(P.Z, {
@@ -154,7 +154,7 @@ function R(e) {
                   analyticsLocations: U
                 }, B))
               },
-              children: T.intl.string(T.t["+Xp3ho"])
+              children: N.intl.string(N.t["+Xp3ho"])
             })
           }), (null == D ? void 0 : D.profileEffectId) != null && (0, r.jsx)(h.Z, {
             profileEffectId: null == D ? void 0 : D.profileEffectId,

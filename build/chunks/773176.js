@@ -29,8 +29,8 @@ var r = n(255367),
   I = n(328908),
   P = n(992970),
   Z = n(135793),
-  N = n(576645),
-  T = n(84040),
+  T = n(576645),
+  N = n(84040),
   A = n(222677),
   w = n(995774),
   R = n(931651),
@@ -211,9 +211,9 @@ function ef(e) {
     } = (0, u.cj)([z.Z], () => ({
       canAddNewReactions: y && z.Z.can(ei.Plq.ADD_REACTIONS, t),
       canManageMessages: z.Z.can(ei.Plq.MANAGE_MESSAGES, t)
-    }), [t, y]), j = (0, M.U)(t, n), O = (0, L.NE)(t, n), S = (0, L.Ek)(n), I = (0, u.e7)([E.Z], () => null != t.guild_id && E.Z.isLurking(t.guild_id), [t]), P = (0, u.e7)([H.ZP], () => null != t.guild_id && H.ZP.isCurrentUserGuest(t.guild_id), [t]), Z = s.id === p, N = (C || n.canDeleteOwnMessage(p)) && h && !ei.V$x.UNDELETABLE.has(n.type);
-    n.type === ei.uaV.AUTO_MODERATION_ACTION && (N = N && C);
-    let T = (0, X.a4)(n),
+    }), [t, y]), j = (0, M.U)(t, n), O = (0, L.NE)(t, n), S = (0, L.Ek)(n), I = (0, u.e7)([E.Z], () => null != t.guild_id && E.Z.isLurking(t.guild_id), [t]), P = (0, u.e7)([H.ZP], () => null != t.guild_id && H.ZP.isCurrentUserGuest(t.guild_id), [t]), Z = s.id === p, T = (C || n.canDeleteOwnMessage(p)) && h && !ei.V$x.UNDELETABLE.has(n.type);
+    n.type === ei.uaV.AUTO_MODERATION_ACTION && (T = T && C);
+    let N = (0, X.a4)(n),
       A = (0, J.Z)(n, t, C),
       w = !t.isSystemDM() && (0, Q.Z)(n, p) && h && !g,
       {
@@ -246,8 +246,8 @@ function ef(e) {
       message: n,
       canPin: A,
       canEdit: w,
-      canDelete: N,
-      canReport: T,
+      canDelete: T,
+      canReport: N,
       canReply: j,
       canStartThread: O,
       canViewThread: S,
@@ -295,10 +295,10 @@ function ef(e) {
   }, {
     autoTrackExposure: !0
   });
-  let eP = (0, T.Z)(t),
-    eZ = (0, N.Nt)(),
-    eN = eP && eZ && !n.hasPotions(),
-    eT = i.useCallback(e => {
+  let eP = (0, N.Z)(t),
+    eZ = (0, T.Nt)(),
+    eT = eP && eZ && !n.hasPotions(),
+    eN = i.useCallback(e => {
       try {
         (0, S.qc)(t.id, n.id, e)
       } catch (e) {
@@ -353,7 +353,7 @@ function ef(e) {
         isFocused: eu,
         channel: t,
         message: n
-      }), eN ? (0, r.jsx)(ee.sF, {
+      }), eT ? (0, r.jsx)(ee.sF, {
         label: eo.intl.string(eo.t.icaJW1),
         icon: p.l22,
         onClick: () => {
@@ -362,7 +362,7 @@ function ef(e) {
           }), (0, Z.s)({
             channelId: t.id,
             message: n,
-            onRedeem: eT,
+            onRedeem: eN,
             onClose: I.Qy,
             source: P.YD.MessageExpandingButtons
           })

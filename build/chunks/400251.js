@@ -1,7 +1,7 @@
 /** Chunk was on 19577 **/
 n.d(t, {
   Z: () => A,
-  m: () => N
+  m: () => T
 }), n(388685), n(953529);
 var r = n(255367),
   i = n(73800),
@@ -75,7 +75,7 @@ function Z(e, t) {
   }
   return i
 }
-let N = e => {
+let T = e => {
   let {
     onClick: t
   } = e;
@@ -94,7 +94,7 @@ let N = e => {
   })
 };
 
-function T(e) {
+function N(e) {
   let {
     entry: t
   } = e, [l, o] = i.useState(!1), s = i.useRef(null), {
@@ -188,8 +188,8 @@ let A = e => {
     id: l.guildId,
     icon: l.icon,
     size: 40
-  })) ? t : void 0, N = O.intl.string(O.t.VJlc0d);
-  return x && (N = O.intl.string(O.t.cqWE2d)), (0, r.jsxs)("div", {
+  })) ? t : void 0, T = O.intl.string(O.t.VJlc0d);
+  return x && (T = O.intl.string(O.t.cqWE2d)), (0, r.jsxs)("div", {
     className: E.card,
     onContextMenu: e => {
       (0, u.jW)(e, async () => {
@@ -277,9 +277,9 @@ let A = e => {
         className: E.joinButton,
         color: x ? s.zx.Colors.PRIMARY : s.zx.Colors.GREEN,
         onClick: v,
-        children: N
+        children: T
       })]
-    }), (0, r.jsx)(T, {
+    }), (0, r.jsx)(N, {
       entry: l
     })]
   })

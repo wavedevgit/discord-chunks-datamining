@@ -29,8 +29,8 @@ var r = n(255367),
   I = n(868671),
   P = n(82295),
   Z = n(91218),
-  N = n(313201),
-  T = n(623624),
+  T = n(313201),
+  N = n(623624),
   A = n(518738),
   w = n(570096),
   R = n(850020),
@@ -133,7 +133,7 @@ let et = Y.ZP.getEnableHardwareAcceleration(),
       isMobileOnline: v,
       premiumSince: j,
       nameplate: O
-    } = e, E = ee(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate"]), S = i.useRef(null), [I, P] = i.useState(!1), Z = null != j ? new Date(j) : null, N = i.useCallback(e => {
+    } = e, E = ee(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate"]), S = i.useRef(null), [I, P] = i.useState(!1), Z = null != j ? new Date(j) : null, T = i.useCallback(e => {
       (0, m.jW)(e, async () => {
         let {
           default: e
@@ -157,7 +157,7 @@ let et = Y.ZP.getEnableHardwareAcceleration(),
         rawText: t
       }), b.Z.startTyping(y.id)
     }, [u, y.id]), w = i.useCallback(e => {
-      null != C && (e.stopPropagation(), (0, T.f)({
+      null != C && (e.stopPropagation(), (0, N.f)({
         guildId: C,
         location: {
           section: q.jXE.MEMBER_LIST,
@@ -186,7 +186,7 @@ let et = Y.ZP.getEnableHardwareAcceleration(),
         return (0, r.jsx)(_.Z, J({
           ref: S,
           className: X.member,
-          onContextMenu: N,
+          onContextMenu: T,
           shouldAnimateStatus: et,
           user: u,
           currentUser: p,
@@ -328,7 +328,7 @@ class eo extends i.Component {
       sectionHeight: i
     } = this.props;
     return (0, r.jsx)(f.Wdt, {
-      children: l => (0, r.jsx)(N.FG, {
+      children: l => (0, r.jsx)(T.FG, {
         children: o => (0, r.jsx)("aside", {
           className: a()(X.membersWrap, X.hiddenMembers),
           "aria-labelledby": o,

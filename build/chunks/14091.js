@@ -29,8 +29,8 @@ var r = n(255367),
   I = n(861262),
   P = n(251285),
   Z = n(406326),
-  N = n(994463),
-  T = n(611004),
+  T = n(994463),
+  N = n(611004),
   A = n(619753),
   w = n(902733),
   R = n(981631),
@@ -130,18 +130,6 @@ class H extends i.PureComponent {
     }
   }
   render() {
-    let {
-      searchAnalyticsId: e,
-      searchType: t,
-      searchResults: n,
-      searchId: i
-    } = this.props, {
-      offset: l,
-      hasError: a,
-      totalResults: o,
-      isHistoricalIndexing: s,
-      isSearching: c
-    } = this.props.search;
     return (0, r.jsxs)("section", {
       className: k.searchResultsWrap,
       "aria-label": D.intl.string(D.t.zkoeq6),
@@ -149,18 +137,7 @@ class H extends i.PureComponent {
         ref: this.scrollerRef,
         className: k.scroller,
         children: this.renderContent()
-      }), this.renderFooter(), (0, r.jsx)(B, {
-        searchId: i,
-        searchType: t,
-        searchAnalyticsId: e,
-        searchResults: n,
-        searchOffset: l,
-        searchLimit: R.vpv,
-        searchHasError: a,
-        searchTotalResults: o,
-        searchIsIndexing: s,
-        isSearching: c
-      })]
+      }), this.renderFooter()]
     })
   }
   constructor(...e) {
@@ -232,7 +209,7 @@ class H extends i.PureComponent {
     }), L(this, "renderIndexing", () => {
       let e = this.props.searchType === R.aib.GUILD ? D.intl.string(D.t.AXPbZm) : D.intl.string(D.t.Q0JJjo);
       return (0, r.jsxs)(F, {
-        children: [(0, r.jsx)(N.Z, {}), (0, r.jsx)("div", {
+        children: [(0, r.jsx)(T.Z, {}), (0, r.jsx)("div", {
           className: (k.emptyResultsText, k.stillIndexing),
           children: e
         })]
@@ -341,22 +318,35 @@ function G(e) {
     let n = U(t);
     p.oO(t, e, n)
   }, [t, o.isSearching]), x = i.useDeferredValue(d), v = i.useDeferredValue(o);
-  return (0, r.jsx)(H, {
-    searchId: t,
-    search: v,
-    searchAnalyticsId: u,
-    searchType: s,
-    searchResults: x,
-    ignoreCount: h,
-    blockCount: f,
-    renderEmbeds: _.NA.useSetting(),
-    developerMode: _.Sb.useSetting(),
-    theme: l,
-    isFeedbackVisible: n,
-    dismissFeedbackEntrypoint: a,
-    onPageChange: y,
-    onSearchModeChange: b,
-    searchMode: m
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(H, {
+      searchId: t,
+      search: v,
+      searchAnalyticsId: u,
+      searchType: s,
+      searchResults: x,
+      ignoreCount: h,
+      blockCount: f,
+      renderEmbeds: _.NA.useSetting(),
+      developerMode: _.Sb.useSetting(),
+      theme: l,
+      isFeedbackVisible: n,
+      dismissFeedbackEntrypoint: a,
+      onPageChange: y,
+      onSearchModeChange: b,
+      searchMode: m
+    }), (0, r.jsx)(B, {
+      searchId: t,
+      searchType: s,
+      searchAnalyticsId: u,
+      searchResults: d,
+      searchOffset: o.offset,
+      searchLimit: R.vpv,
+      searchHasError: o.hasError,
+      searchTotalResults: o.totalResults,
+      searchIsIndexing: o.isHistoricalIndexing,
+      isSearching: o.isSearching
+    })]
   })
 }
 
@@ -400,7 +390,7 @@ function V(e) {
     j = i.useCallback(e => {
       v(e);
       let t = U(o);
-      T.Z.fetchCrossDMMessages({
+      N.Z.fetchCrossDMMessages({
         searchContext: a,
         selectedPageIndex: 0,
         queryString: null != t ? t : "",
@@ -409,29 +399,42 @@ function V(e) {
     }, [a, o, v]),
     O = i.useCallback(e => {
       var t;
-      d(e), T.Z.fetchCrossDMMessages({
+      d(e), N.Z.fetchCrossDMMessages({
         searchContext: a,
         queryString: null != (t = U(o)) ? t : "",
         selectedPageIndex: e,
         searchMode: x
       })
     }, [a, o, x]);
-  return (0, r.jsx)(H, {
-    searchId: R.aib.DMS,
-    search: p,
-    searchAnalyticsId: h,
-    searchType: R.aib.DMS,
-    searchResults: f,
-    ignoreCount: m,
-    blockCount: y,
-    renderEmbeds: _.NA.useSetting(),
-    developerMode: _.Sb.useSetting(),
-    theme: t,
-    isFeedbackVisible: n,
-    dismissFeedbackEntrypoint: l,
-    onPageChange: O,
-    onSearchModeChange: j,
-    searchMode: x
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(H, {
+      searchId: R.aib.DMS,
+      search: p,
+      searchAnalyticsId: h,
+      searchType: R.aib.DMS,
+      searchResults: f,
+      ignoreCount: m,
+      blockCount: y,
+      renderEmbeds: _.NA.useSetting(),
+      developerMode: _.Sb.useSetting(),
+      theme: t,
+      isFeedbackVisible: n,
+      dismissFeedbackEntrypoint: l,
+      onPageChange: O,
+      onSearchModeChange: j,
+      searchMode: x
+    }), (0, r.jsx)(B, {
+      searchId: R.aib.DMS,
+      searchType: R.aib.DMS,
+      searchAnalyticsId: h,
+      searchResults: f,
+      searchOffset: p.offset,
+      searchLimit: R.vpv,
+      searchHasError: p.hasError,
+      searchTotalResults: p.totalResults,
+      searchIsIndexing: p.isHistoricalIndexing,
+      isSearching: p.isSearching
+    })]
   })
 }
 

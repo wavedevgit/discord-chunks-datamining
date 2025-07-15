@@ -58,13 +58,13 @@ function b(e) {
     I = S.commands.filter(e => e.type === a.yU.PRIMARY_ENTRY_POINT && e.applicationId === E)[0],
     P = S.commands.filter(e => "0" !== e.id && !e.id.startsWith("-")),
     Z = S.loading,
-    N = null == (t = S.descriptors.find(e => {
+    T = null == (t = S.descriptors.find(e => {
       var t;
       return (null == (t = e.application) ? void 0 : t.id) === E
     })) ? void 0 : t.application,
-    T = r.useMemo(() => null != N ? h.ZP.createFromServer(N) : void 0, [N]),
-    A = (0, u.q)(null == T ? E : void 0),
-    w = null != (n = null != T ? T : A) ? n : void 0,
+    N = r.useMemo(() => null != T ? h.ZP.createFromServer(T) : void 0, [T]),
+    A = (0, u.q)(null == N ? E : void 0),
+    w = null != (n = null != N ? N : A) ? n : void 0,
     R = null == w || Z && 0 === P.length;
   return {
     application: w,

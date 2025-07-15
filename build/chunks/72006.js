@@ -4,9 +4,9 @@ n.d(t, {
   Hl: () => L,
   NJ: () => A,
   R8: () => F,
-  Sq: () => I,
+  Sq: () => P,
   Wg: () => M,
-  Zn: () => P,
+  Zn: () => I,
   c2: () => w,
   eE: () => Z,
   iE: () => D,
@@ -88,7 +88,7 @@ function C(e, t) {
   }
 }
 
-function P(e, t) {
+function I(e, t) {
   switch (e) {
     case "transpose-characters":
       return O()(t);
@@ -101,7 +101,7 @@ function P(e, t) {
   }
 }
 
-function I(e) {
+function P(e) {
   return e.getCurrentContent().getFirstBlock().getText()
 }
 
@@ -151,7 +151,7 @@ function N(e) {
 }
 
 function w(e, t) {
-  let n = I(t);
+  let n = P(t);
   return j(e, t, 0, n.length)
 }
 
@@ -174,14 +174,14 @@ function F(e) {
 }
 
 function M(e) {
-  let t = I(e),
+  let t = P(e),
     n = e.getSelection();
   return n = (n = n.set("focusOffset", t.length)).set("isBackward", !1), r.EditorState.forceSelection(e, n)
 }
 
 function L(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 512,
-    n = I(e);
+    n = P(e);
   if (n.length > t) {
     let l = e.getSelection();
     e = j("", e, t, n.length), l.getAnchorOffset() > t && (l = l.set("anchorOffset", t)), l.getFocusOffset() > t && (l = l.set("focusOffset", t)), e = r.EditorState.forceSelection(e, l)
@@ -208,5 +208,5 @@ function D(e) {
 }
 
 function H(e) {
-  return 0 === I(e).length
+  return 0 === P(e).length
 }

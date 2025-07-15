@@ -53,7 +53,7 @@ let y = [{
   S = 0;
 
 function I() {
-  if (null == O || !N(O)) return !1;
+  if (null == O || !T(O)) return !1;
   let e = Z(O);
   if (e.lastActionTime > Date.now() - d.Z.Millis.DAY && e.viewDuration > C) return !1;
   let t = Date.now();
@@ -74,15 +74,15 @@ function Z(e) {
   }), v.channels[e]
 }
 
-function N(e) {
+function T(e) {
   if (!u.ZP.useNewNotifications || j.has(e)) return !1;
   let t = o.Z.getBasicChannel(e);
-  if (null == t || null == t.guild_id || u.ZP.isGuildOrCategoryOrChannelMuted(t.guild_id, t.id) || T(t.guild_id, t.id) || T(t.guild_id, t.parent_id)) return !1;
+  if (null == t || null == t.guild_id || u.ZP.isGuildOrCategoryOrChannelMuted(t.guild_id, t.id) || N(t.guild_id, t.id) || N(t.guild_id, t.parent_id)) return !1;
   let n = u.ZP.resolveUnreadSetting(t);
   return u.ZP.getChannelUnreadSetting(t.guild_id, t.id) === g.i.UNSET && n !== g.i.ALL_MESSAGES
 }
 
-function T(e, t) {
+function N(e, t) {
   if (null == t) return !1;
   let n = u.ZP.getChannelOverrides(e)[t];
   return null != n && !!(null != n.message_notifications && n.message_notifications !== m.bL.NULL || null != n.flags && (0, p.EB)(n.flags, b.ic.UNREADS_ALL_MESSAGES | b.ic.UNREADS_ONLY_MENTIONS))
@@ -99,7 +99,7 @@ class A extends(r = i.ZP.PersistedStore) {
     return null != (n = null == (t = v.channels[e]) ? void 0 : t.lastActionTime) ? n : 0
   }
   maybeAutoUpgradeChannel(e) {
-    if (!N(e)) return !1;
+    if (!T(e)) return !1;
     let t = o.Z.getBasicChannel(e);
     return null != t && null != t.guild_id && !! function(e) {
       var t;
@@ -132,7 +132,7 @@ let w = new A(l.Z, {
     },
     MESSAGE_CREATE: function(e) {
       var t;
-      if (e.optimistic || e.isPushNotification || (null == (t = e.message.author) ? void 0 : t.id) !== a.default.getId() || !N(e.channelId)) return !1;
+      if (e.optimistic || e.isPushNotification || (null == (t = e.message.author) ? void 0 : t.id) !== a.default.getId() || !T(e.channelId)) return !1;
       let n = Z(e.channelId);
       n.lastActionTime = Date.now(), n.numSends++
     }

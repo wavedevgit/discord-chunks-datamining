@@ -29,8 +29,8 @@ var r = n(255367),
   I = n(317381),
   P = n(82888),
   Z = n(917107),
-  N = n(296797),
-  T = n(622822),
+  T = n(296797),
+  N = n(622822),
   A = n(100527),
   w = n(413523),
   R = n(358221),
@@ -83,8 +83,8 @@ var r = n(255367),
   eI = n(657218),
   eP = n(407908),
   eZ = n(66556),
-  eN = n(739830),
-  eT = n(377929),
+  eT = n(739830),
+  eN = n(377929),
   eA = n(900157),
   ew = n(108427),
   eR = n(892001),
@@ -220,7 +220,7 @@ class tc extends i.PureComponent {
       nsfwAllowed: n,
       nsfwAgree: r
     } = this.props;
-    return (!(0, T.aC)(e) || n && r) && t
+    return (!(0, N.aC)(e) || n && r) && t
   }
   renderCall() {
     let {
@@ -275,7 +275,7 @@ class tc extends i.PureComponent {
         guildId: n.id
       })
     });
-    if ((0, T.aC)(e) && (!i || !t)) return (0, r.jsx)(j.Z, {
+    if ((0, N.aC)(e) && (!i || !t)) return (0, r.jsx)(j.Z, {
       guild: n,
       channelId: e.id
     });
@@ -393,7 +393,7 @@ class tc extends i.PureComponent {
     } = this.props;
     if (null == l && null == i) return null;
     if (n === e5.ULH.SIDEBAR_CHAT && null != i) {
-      if ((0, T.aC)(t) && (!o || !a)) return null;
+      if ((0, N.aC)(t) && (!o || !a)) return null;
       switch (i.type) {
         case eO.tI.CREATE_THREAD:
           if (null == t ? void 0 : t.isForumLikeChannel()) return null;
@@ -627,7 +627,7 @@ class tc extends i.PureComponent {
             channel: t
           }, "browser")), e.isVocalThread() && o.push((0, r.jsx)(ep.Z, {
             channel: e
-          }, "thread-call")), o.push((0, r.jsx)(eN.Z, {
+          }, "thread-call")), o.push((0, r.jsx)(eT.Z, {
             channel: e
           }, "notifications")), o.push((0, r.jsx)(er.Z, {
             channel: e
@@ -635,7 +635,7 @@ class tc extends i.PureComponent {
             channelId: e.id
           }, "members")), null != t && (0, E.Lp)(e) && o.push((0, r.jsx)(ei.Z, {
             channel: e
-          }, "summaries")), o.push((0, r.jsx)(eT.Z, {
+          }, "summaries")), o.push((0, r.jsx)(eN.Z, {
             channel: e
           }, "threads-overflow"));
           break;
@@ -805,7 +805,7 @@ let tu = (0, O.Z)(tc),
     }, [o]), v = (0, z.Z)(), j = (0, p.e7)([eq.Z], () => {
       var e;
       return (null != (e = null == v ? void 0 : v.channelId) ? e : eq.Z.getVoiceChannelId()) === (null == c ? void 0 : c.id)
-    }), O = (0, p.e7)([I.ZP], () => null != c ? I.ZP.getSelfEmbeddedActivityForChannel(c.id) : null, [c]), P = (0, p.e7)([eW.Z], () => eW.Z.isConnected()), T = (0, S.Z)(P), A = P && !1 === T;
+    }), O = (0, p.e7)([I.ZP], () => null != c ? I.ZP.getSelfEmbeddedActivityForChannel(c.id) : null, [c]), P = (0, p.e7)([eW.Z], () => eW.Z.isConnected()), N = (0, S.Z)(P), A = P && !1 === N;
     i.useEffect(() => {
       j && A && null != O && null != c && b.Z.selectParticipant(c.id, (0, w.gN)({
         applicationId: O.applicationId,
@@ -844,7 +844,7 @@ let tu = (0, O.Z)(tc),
       eo = (0, eJ.ZP)(c, !0),
       es = null != c && s === c.id,
       ec = null != c && c.isGuildStageVoice();
-    (0, N.Z)({
+    (0, T.Z)({
       onTransition: void 0
     }), i.useEffect(() => {
       var e, t, n;

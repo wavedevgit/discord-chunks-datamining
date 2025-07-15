@@ -29,9 +29,9 @@ var r = n(255367),
   I = n(489887),
   P = n(388032),
   Z = n(725776);
-let N = RegExp("(.*)```(\\w+)\\n(.*)```(.*)", "s");
+let T = RegExp("(.*)```(\\w+)\\n(.*)```(.*)", "s");
 
-function T() {
+function N() {
   let e = (0, a.e7)([_.Z], () => _.Z.hasCurrentUserSentMessageSinceAppStart()),
     t = [];
   e && t.push(o.z.ACTIVITIES_CHAT_MENU_NEW_BADGE);
@@ -145,7 +145,7 @@ function A(e) {
     let e = w,
       n = "txt",
       r = "",
-      i = w.match(N);
+      i = w.match(T);
     null != i && (r = i[1], n = i[2], e = i[3], r += i[4]), (0, v.d)([(0, x.dp)(new Blob([e], {
       type: "text/plain"
     }), "message.".concat(n), "text/plain")], t, A), C.S.dispatchToLastSubscribed(E.CkL.CLEAR_TEXT), "" !== r && C.S.dispatchToLastSubscribed(E.CkL.INSERT_TEXT, {
@@ -265,7 +265,7 @@ function A(e) {
             id: "activity",
             label: i,
             action: H,
-            hint: (0, r.jsx)(T, {})
+            hint: (0, r.jsx)(N, {})
           }, "activity");
         case O.r.SCHEDULED_MESSAGE:
           return (0, r.jsx)(s.sNh, {

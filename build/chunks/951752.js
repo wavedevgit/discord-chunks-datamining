@@ -53,8 +53,8 @@ function h(e) {
   var t, n;
 
   function i(t) {
-    return (0, r.jsxs)(p, {
-      children: [(0, r.jsx)(e, function(e) {
+    return (0, r.jsx)(p, {
+      children: (0, r.jsx)(e, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -71,7 +71,7 @@ function h(e) {
           })
         }
         return e
-      }({}, t), "deeplink-wrapper"), ";"]
+      }({}, t), "deeplink-wrapper")
     })
   }
   return i.displayName = "Deeplink(".concat(null != (n = null != (t = e.displayName) ? t : e.name) ? n : "<Unknown>", ")"), i

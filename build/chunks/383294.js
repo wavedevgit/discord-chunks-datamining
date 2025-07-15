@@ -271,6 +271,6 @@ function R(e) {
       return t
     })(Object(t)).forEach(function(e) {
       Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(t, e))
-    }), n)), ";"]
+    }), n))]
   })
 }

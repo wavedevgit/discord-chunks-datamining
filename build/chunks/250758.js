@@ -87,7 +87,7 @@ function C(e, t) {
   }), Z.emitChange()
 }
 
-function P(e, t, n) {
+function I(e, t, n) {
   var r, l, s;
   let a, i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 10;
   if (null == e) return null;
@@ -127,7 +127,7 @@ function P(e, t, n) {
   }
 }
 
-function I(e, t) {
+function P(e, t) {
   let n = (null != e ? e.getFullMatch() : "").trim(),
     r = function(e) {
       let t = (0, u.g)(e),
@@ -152,7 +152,7 @@ function I(e, t) {
 
 function R(e, t) {
   let n = [];
-  return t.type === v.Sap.FILTER ? n.push(P(t.filter, t.token, e, 10)) : t.type === v.Sap.FILTER_ALL ? n = function(e, t) {
+  return t.type === v.Sap.FILTER ? n.push(I(t.filter, t.token, e, 10)) : t.type === v.Sap.FILTER_ALL ? n = function(e, t) {
     let n = (null != e ? e.getFullMatch() : "").trim(),
       r = [];
     return null != n && "" !== n && ((function(e) {
@@ -161,7 +161,7 @@ function R(e, t) {
       return x.Z.hidePersonalInformation || (n.push(v.dCx.FILTER_FROM), n.push(v.dCx.FILTER_MENTIONS)), (0, p.R6)(t) && n.push(v.dCx.FILTER_IN), n
     })(t).forEach(n => {
       if (null == n) return;
-      let l = P(n, e, t, 3);
+      let l = I(n, e, t, 3);
       null != l && r.push(l)
     }), r.push(function(e, t) {
       let n = (null != e ? e.getFullMatch() : "").trim();
@@ -175,8 +175,8 @@ function R(e, t) {
           results: [e, a, i]
         }
       }
-    }(e, t))), 5 > (0, p.BU)(r) && r.push(I(e, t)), r
-  }(t.token, e) : t.type === v.Sap.EMPTY && (n.push(I(t.token, e)), n.push(function(e) {
+    }(e, t))), 5 > (0, p.BU)(r) && r.push(P(e, t)), r
+  }(t.token, e) : t.type === v.Sap.EMPTY && (n.push(P(t.token, e)), n.push(function(e) {
     if (x.Z.hidePersonalInformation) return null;
     let t = y.Z.getHistory(e);
     return null == t ? null : {

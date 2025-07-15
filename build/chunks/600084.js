@@ -29,8 +29,8 @@ var r = n(255367),
   I = n(967128),
   P = n(320781),
   Z = n(269203),
-  N = n(86863),
-  T = n(558756),
+  T = n(86863),
+  N = n(558756),
   A = n(753898),
   w = n(734386),
   R = n(184279),
@@ -113,11 +113,11 @@ function V(e) {
     let e;
     return null != P && null != z ? null != W && (e = (0, r.jsxs)("div", {
       className: F.buttonContainer,
-      children: [(0, r.jsx)(T.W, {
+      children: [(0, r.jsx)(N.W, {
         className: F.button,
         channel: h,
         user: P
-      }), (0, r.jsx)(N.n, {
+      }), (0, r.jsx)(T.n, {
         className: F.button,
         user: P,
         application: z,

@@ -29,8 +29,8 @@ var r = n(255367),
   I = n(375954),
   P = n(496675),
   Z = n(885110),
-  N = n(585483),
-  T = n(358085),
+  T = n(585483),
+  N = n(358085),
   A = n(127654),
   w = n(316595),
   R = n(193910),
@@ -93,7 +93,7 @@ let G = i.memo(function(e) {
       null != t && "ETOOLARGE" === t.code ? (0, A.G)(V, []) : (0, A.d)(e, V, z, {
         requireConfirm: !0,
         showLargeMessageDialog: n
-      }), N.S.dispatchToLastSubscribed(D.CkL.TEXTAREA_FOCUS)
+      }), T.S.dispatchToLastSubscribed(D.CkL.TEXTAREA_FOCUS)
     },
     em = (0, o.e7)([I.Z], () => I.Z.hasCurrentUserSentMessageSinceAppStart());
 
@@ -114,13 +114,13 @@ let G = i.memo(function(e) {
       var e;
       return null == (e = X.current) ? void 0 : e.activateUploadDialogue()
     };
-    return N.S.subscribe(D.CkL.UPLOAD_FILE, e), () => {
-      N.S.unsubscribe(D.CkL.UPLOAD_FILE, e)
+    return T.S.subscribe(D.CkL.UPLOAD_FILE, e), () => {
+      T.S.unsubscribe(D.CkL.UPLOAD_FILE, e)
     }
   });
   let eb = (0, j.NE)(V),
     e_ = (0, j.Xu)(V),
-    ey = !O.dN.useSetting() && !(0, T.isAndroidWeb)() && null != window.ResizeObserver,
+    ey = !O.dN.useSetting() && !(0, N.isAndroidWeb)() && null != window.ResizeObserver,
     eC = (0, x.UI)(null != V ? V : void 0),
     ex = (0, f.qB)(),
     ev = (0, v.Us)({

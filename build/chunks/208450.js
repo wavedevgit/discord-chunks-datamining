@@ -26,8 +26,8 @@ var r = n(255367),
   E = n(944486),
   j = n(585483),
   C = n(72006),
-  P = n(405656),
-  I = n(181389),
+  I = n(405656),
+  P = n(181389),
   R = n(854709),
   T = n(652399),
   N = n(861262),
@@ -59,8 +59,8 @@ class H extends l.PureComponent {
       searchId: n
     } = this.props;
     if (t !== e.editorState) {
-      let e = (0, P.kG)(C.Sq(t)),
-        r = I.g9(e, t);
+      let e = (0, I.kG)(C.Sq(t)),
+        r = P.g9(e, t);
       h.u$(n, e, r), null != this._editorRef && C.iE(this._editorRef.editor)
     }
   }
@@ -68,7 +68,7 @@ class H extends l.PureComponent {
     j.S.unsubscribe(A.CkL.PERFORM_SEARCH, this.search), j.S.unsubscribe(A.CkL.SET_SEARCH_QUERY, this.handleSetSearchQuery), j.S.unsubscribe(A.CkL.FOCUS_SEARCH, this.handleFocusSearch)
   }
   tokenize(e) {
-    let t = (0, P.kG)(C.Sq(e)).filter(e => e.type !== f.ZP.NON_TOKEN_TYPE);
+    let t = (0, I.kG)(C.Sq(e)).filter(e => e.type !== f.ZP.NON_TOKEN_TYPE);
     return C.lv(t, e, g.ZP)
   }
   clearSearch() {
@@ -206,9 +206,9 @@ class H extends l.PureComponent {
         r = C.Sq(e)
       }
       if (null != t && !n) {
-        let e = (0, P.kG)(r),
-          t = (0, P.$G)(e);
-        for (let t = 0; t < e.length; t++)(0, P.Fr)(e[t], e[t + 1]) || (r = r.substring(0, e[t].start) + r.substring(e[t].end));
+        let e = (0, I.kG)(r),
+          t = (0, I.$G)(e);
+        for (let t = 0; t < e.length; t++)(0, I.Fr)(e[t], e[t + 1]) || (r = r.substring(0, e[t].start) + r.substring(e[t].end));
         if (0 === e.length || 0 === Object.keys(t).length) return !1;
         this.props.onSearch({
           queryString: r,
@@ -245,7 +245,7 @@ class H extends l.PureComponent {
         location: "SearchBar_handleFocusSearch"
       }), i = this.props.searchId === A.aib.DMS && a;
       if (r.isPrivate() && !i) return void this.focusEditor();
-      let o = (0, P.X3)(r);
+      let o = (0, I.X3)(r);
       if (null == o) return void this.focusEditor();
       (0, T.PJ)({
         searchType: s,
@@ -404,7 +404,7 @@ class H extends l.PureComponent {
         return this.setEditorState(e), !0
       }
       return C.q0(e)
-    }), (0, P.WU)()
+    }), (0, I.WU)()
   }
 }
 
@@ -497,7 +497,7 @@ function G(e) {
 function z(e) {
   let {
     className: t
-  } = e, n = (0, u.e7)([O.Z], () => O.Z.getCurrentSearchId()), s = (0, u.e7)([S.Z], () => S.Z.keyboardModeEnabled), a = (0, u.e7)([O.Z], () => null != n ? O.Z.getEditorState(n) : null), i = l.useMemo(() => null != a ? a : C.nR(I.Jl(g.ZP)), [a]), o = (0, x.U)({
+  } = e, n = (0, u.e7)([O.Z], () => O.Z.getCurrentSearchId()), s = (0, u.e7)([S.Z], () => S.Z.keyboardModeEnabled), a = (0, u.e7)([O.Z], () => null != n ? O.Z.getEditorState(n) : null), i = l.useMemo(() => null != a ? a : C.nR(P.Jl(g.ZP)), [a]), o = (0, x.U)({
     location: "Search"
   });
   return n === A.aib.DMS && o ? (0, r.jsx)(U, {

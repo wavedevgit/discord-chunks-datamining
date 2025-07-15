@@ -82,7 +82,7 @@ let Z = e => {
       })]
     })
   },
-  N = e => {
+  T = e => {
     var t;
     let {
       relationshipType: n,
@@ -181,7 +181,7 @@ let Z = e => {
         return null
     }
   },
-  T = e => {
+  N = e => {
     let {
       channelId: t,
       otherUserId: n
@@ -231,14 +231,14 @@ let Z = e => {
     } = e, {
       channelId: o
     } = (0, m._)(), s = (0, a.e7)([h.Z], () => null != o && h.Z.isSpam(o), [o]), c = (0, a.e7)([x.Z], () => x.Z.getRelationshipType(t), [t]), u = n.id === o, d = !l.tq && !u, p = !!l.tq || u || s, f = s || u ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(T, {
+      children: [(0, r.jsx)(N, {
         channelId: n.id,
         otherUserId: t
       }), (0, r.jsx)(g.Z, {
         channel: n
       })]
     }) : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(N, {
+      children: [(0, r.jsx)(T, {
         relationshipType: c,
         userId: t,
         showingBanner: i

@@ -34,8 +34,8 @@ function S(e) {
     onContextMenu: I,
     channel: P,
     className: Z,
-    inCall: N,
-    totalNumberOfParticipants: T
+    inCall: T,
+    totalNumberOfParticipants: N
   } = e, A = (0, c.bp)() === O.IlC.POPOUT, w = (0, o.e7)([_.Z], () => _.Z.getGuild(P.guild_id), [P.guild_id]), {
     dismissedActivityEntryPointTileChannel: R
   } = (0, v.d)(), M = (0, o.e7)([h.Z], () => h.Z.getUserParticipantCount(P.id), [P]), D = (0, b.bt)(P.id, t), k = i.useCallback(() => {
@@ -66,7 +66,7 @@ function S(e) {
       onClick: n,
       onDoubleClick: S,
       onContextMenu: I,
-      inCall: N,
+      inCall: T,
       width: t,
       inPopout: A
     }, e.id));
@@ -74,7 +74,7 @@ function S(e) {
     type: l.ImpressionTypes.VIEW,
     name: l.ImpressionNames.CHANNEL_CALL_VIDEO_GRID_VIEW,
     properties: {
-      total_participants: T,
+      total_participants: N,
       can_invite: L,
       is_afk_channel: U,
       channel_user_limit: P.userLimit

@@ -51,8 +51,8 @@ function v(e) {
   });
   let Z = i.useRef(S),
     {
-      currentDocument: N,
-      rootNode: T
+      currentDocument: T,
+      rootNode: N
     } = i.useMemo(() => {
       let e = null != p && O ? p.document : document,
         t = v.document.getElementById("app-mount");
@@ -68,21 +68,21 @@ function v(e) {
       r !== e && (o.Z.updateLayout(t.id, r, n), r === y.AEg.FULL_SCREEN && t.isPrivate() && g.S.dispatch(y.CkL.TEXTAREA_BLUR))
     }, [n, t]),
     M = i.useCallback(e => {
-      null != T && e === y.AEg.FULL_SCREEN && (R(e, Z.current), (0, _.Pr)(e => {
+      null != N && e === y.AEg.FULL_SCREEN && (R(e, Z.current), (0, _.Pr)(e => {
         Z.current = e
-      }, N))
-    }, [N, R, T]),
+      }, T))
+    }, [T, R, N]),
     D = i.useCallback(e => () => {
-      null != T && ((0, d.v)(j, d.d.FULL_SCREEN, e !== y.AEg.FULL_SCREEN), e !== y.AEg.FULL_SCREEN ? (Z.current = e, R(e, y.AEg.FULL_SCREEN), (0, _.Dj)(T)) : M(e))
-    }, [R, M, T, j]);
+      null != N && ((0, d.v)(j, d.d.FULL_SCREEN, e !== y.AEg.FULL_SCREEN), e !== y.AEg.FULL_SCREEN ? (Z.current = e, R(e, y.AEg.FULL_SCREEN), (0, _.Dj)(N)) : M(e))
+    }, [R, M, N, j]);
   i.useEffect(() => {
     let e = () => {
-      null != T && ((0, _.rB)(T, N) || S !== y.AEg.FULL_SCREEN || D(S)())
+      null != N && ((0, _.rB)(N, T) || S !== y.AEg.FULL_SCREEN || D(S)())
     };
-    return N.addEventListener(_.NO, e), () => {
-      N.removeEventListener(_.NO, e)
+    return T.addEventListener(_.NO, e), () => {
+      T.removeEventListener(_.NO, e)
     }
-  }, [N, S, D, T]);
+  }, [T, S, D, N]);
   let k = {
       channel: t,
       maybeLeaveFullScreen: M
@@ -118,12 +118,12 @@ function v(e) {
       O && (0, b.isMac)() || t(S)
     }
   }, [S, O]), i.useEffect(() => {
-    null != T && E.current === y.WtW.VIDEO && I === y.WtW.VOICE && (0, _.Pr)(T, N)
-  }, [N, I, E, T]), i.useEffect(() => {
+    null != N && E.current === y.WtW.VIDEO && I === y.WtW.VOICE && (0, _.Pr)(N, T)
+  }, [T, I, E, N]), i.useEffect(() => {
     !P && O && x()
   }, [P, O]), w) ? (0, r.jsx)(h.Z, {
     themeable: !1,
-    node: T,
+    node: N,
     guestWindow: p,
     className: C.rightTrayIcon,
     onClick: D(S)
