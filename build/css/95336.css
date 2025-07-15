@@ -1,6 +1,6 @@
 /**
   Module ID: 95336
-  Original File Name: 403f25159177429e
+  Original File Name: 55259c189e027a01
 **/
 .pro__30cbe {
     text-transform: uppercase
@@ -725,12 +725,20 @@
     z-index: 2
 }
 
+.searchHeaderWithSubtitle_f3b986 {
+    min-height: 58px
+}
+
 .searchHeaderTabList_f3b986 {
     align-items: center;
     display: grid;
     gap: 8px;
     grid-template-columns: repeat(3,-webkit-min-content);
     grid-template-columns: repeat(3,min-content)
+}
+
+.searchHeaderTabList_f3b986 .searchHeaderTab_f3b986 {
+    margin-bottom: 0
 }
 
 .helpdeskLink_f3b986 {
@@ -1728,4 +1736,4 @@
     margin-right: 8px
 }
 
-/*# sourceMappingURL=403f25159177429e.css.map*/
+/*# sourceMappingURL=55259c189e027a01.css.map*/

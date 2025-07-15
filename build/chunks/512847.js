@@ -70,9 +70,10 @@ function j() {
     } = t;
     if (!(0, d.O)()) return;
     let {
-      videoEnabled: i
+      videoEnabled: i,
+      inVoiceChannel: l
     } = e;
-    if (i !== n && r) return n ? "camera_on" : "camera_off"
+    if (i !== n && l && r) return n ? "camera_on" : "camera_off"
   }), null
 }
 
