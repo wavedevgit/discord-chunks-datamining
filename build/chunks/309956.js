@@ -5,28 +5,28 @@ r.d(t, {
 }), r(388685), r(539854);
 var n = r(73800),
   l = r(114858),
-  o = r(335818),
-  i = r(822857),
+  i = r(335818),
+  o = r(822857),
   a = r(870289),
   s = r(501431),
   c = r(215023),
   u = r(981631);
 let d = {
-    [c.AW.AVATAR_DECORATIONS]: o.G.AVATAR_DECORATION,
-    [c.AW.PROFILE_EFFECTS]: o.G.PROFILE_EFFECT,
-    [c.AW.NAMEPLATES]: o.G.NAMEPLATE,
-    [c.AW.BUNDLES]: o.G.BUNDLE
+    [c.AW.AVATAR_DECORATIONS]: i.G.AVATAR_DECORATION,
+    [c.AW.PROFILE_EFFECTS]: i.G.PROFILE_EFFECT,
+    [c.AW.NAMEPLATES]: i.G.NAMEPLATE,
+    [c.AW.BUNDLES]: i.G.BUNDLE
   },
   p = (e, t, r) => {
     let {
-      enabled: o
-    } = (0, i.WX)({
+      enabled: i
+    } = (0, o.WX)({
       location: "useShopViewTransition"
     }), p = (0, a.F)("CollectiblesBrowse"), {
       setItemTypeFilter: f,
       reset: g,
       setCurrentTab: h
-    } = (0, s.S)(), b = n.useMemo(() => t !== c.AW.ORBS || o ? (0, c.RE)(t) && p ? c.AW.CATALOG : t : c.AW.HOME, [t, o, p]), [m, _] = n.useState(b), [O, C] = n.useState(c.f7.VISIBLE);
+    } = (0, s.S)(), b = n.useMemo(() => t !== c.AW.ORBS || i ? (0, c.RE)(t) && p ? c.AW.CATALOG : t : c.AW.HOME, [t, i, p]), [m, _] = n.useState(b), [O, C] = n.useState(c.f7.VISIBLE);
     n.useEffect(() => {
       h(m)
     }, [m, h]), n.useEffect(() => {

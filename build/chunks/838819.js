@@ -5,8 +5,8 @@ r.r(t), r.d(t, {
 }), r(388685);
 var n = r(255367),
   l = r(73800),
-  o = r(120356),
-  i = r.n(o),
+  i = r(120356),
+  o = r.n(i),
   a = r(772848),
   s = r(399606),
   c = r(952265),
@@ -43,14 +43,14 @@ let Z = [N.AW.HOME, N.AW.ORBS],
       children: t,
       shouldAddEventListener: r,
       onClose: n
-    } = e, o = (0, c.f9)();
+    } = e, i = (0, c.f9)();
     return l.useEffect(() => {
-      if (!r || o) return;
+      if (!r || i) return;
       let e = e => {
         e.key === w.mR.Escape && n()
       };
       return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
-    }, [r, o, n]), t
+    }, [r, i, n]), t
   },
   D = function(e) {
     let {
@@ -58,7 +58,7 @@ let Z = [N.AW.HOME, N.AW.ORBS],
       tab: r = N.AW.HOME
     } = e;
     (0, b.z)(h.f);
-    let o = (0, p.Z)((0, a.Z)()),
+    let i = (0, p.Z)((0, a.Z)()),
       c = (0, s.e7)([C.default], () => C.default.getCurrentUser()),
       w = l.useRef(null),
       {
@@ -68,7 +68,7 @@ let Z = [N.AW.HOME, N.AW.ORBS],
       });
     l.useEffect(() => () => {
       D()
-    }, [o, D]);
+    }, [i, D]);
     let {
       onClose: M
     } = (0, k.Db)(), {
@@ -81,7 +81,7 @@ let Z = [N.AW.HOME, N.AW.ORBS],
       location: "CollectiblesShop.web",
       logPerf: !0
     }, {
-      sessionId: o,
+      sessionId: i,
       tab: V,
       isFullScreen: t
     });
@@ -104,25 +104,25 @@ let Z = [N.AW.HOME, N.AW.ORBS],
       } = (0, j.B)(w, V, t),
       {
         handleScroll: er
-      } = (0, g.z)(w, o, $);
-    (0, S.q3)(o, $, K, ee, X), (0, S.EB)($, c), (0, B.Z)(), l.useEffect(() => {
+      } = (0, g.z)(w, i, $);
+    (0, S.q3)(i, $, K, ee, X), (0, S.EB)($, c), (0, B.Z)(), l.useEffect(() => {
       t || (0, d.Y)(A.Z5c.COLLECTIBLES_SHOP)
     }, [t]);
     let en = (0, s.e7)([O.Z], () => O.Z.getLayers().includes(A.S9g.COLLECTIBLES_SHOP)),
       el = l.useRef(null),
-      eo = l.useRef(null);
+      ei = l.useRef(null);
     (0, u.Tbt)(el);
     let {
-      setFullScreenOpen: ei,
+      setFullScreenOpen: eo,
       fullScreenOpen: ea
     } = (0, T.S)();
     l.useEffect(() => {
-      if (t) return ei(!0), () => ei(!1);
+      if (t) return eo(!0), () => eo(!1);
       if (!t) {
         var e;
-        null == (e = eo.current) || e.focus()
+        null == (e = ei.current) || e.focus()
       }
-    }, [t, ei]);
+    }, [t, eo]);
     let {
       analyticsLocations: es
     } = (0, S.MV)($);
@@ -130,7 +130,7 @@ let Z = [N.AW.HOME, N.AW.ORBS],
       value: es,
       children: (0, n.jsx)(v.k0, {
         newValue: {
-          sessionId: o,
+          sessionId: i,
           pageCategory: K,
           pageSize: N.kN
         },
@@ -139,10 +139,10 @@ let Z = [N.AW.HOME, N.AW.ORBS],
           shouldAddEventListener: t && !en,
           children: (0, n.jsx)("div", {
             className: R.shop,
-            ref: t ? el : eo,
+            ref: t ? el : ei,
             tabIndex: -1,
             children: (0, n.jsxs)("div", {
-              className: i()(R.shopViewWrapper, {
+              className: o()(R.shopViewWrapper, {
                 [R.visible]: ee === N.f7.VISIBLE,
                 [R.in]: ee === N.f7.IN,
                 [R.out]: ee === N.f7.OUT

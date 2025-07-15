@@ -5,8 +5,8 @@ r.d(t, {
 }), r(388685), r(539854);
 var n = r(255367),
   l = r(73800),
-  o = r(120356),
-  i = r.n(o),
+  i = r(120356),
+  o = r.n(i),
   a = r(636977),
   s = r(442837),
   c = r(481060),
@@ -37,12 +37,12 @@ function k(e) {
     tab: t,
     displayText: r,
     selected: l,
-    handleTransition: o
+    handleTransition: i
   } = e;
   return (0, n.jsx)(h.Z.Title, {
-    onClick: () => o(t),
+    onClick: () => i(t),
     wrapperClassName: I.tabWrapper,
-    className: i()(I.tab, {
+    className: o()(I.tab, {
       [I.selected]: l
     }),
     children: r
@@ -53,7 +53,7 @@ function B(e) {
   let {
     tab: t,
     selected: r,
-    displayText: o,
+    displayText: i,
     handleTransition: a
   } = e, [s, u] = l.useState(!1), d = l.useRef(null), [p, b] = l.useState(0), m = l.useRef(!1), _ = e => {
     clearTimeout(p), b(setTimeout(() => {
@@ -112,12 +112,12 @@ function B(e) {
           onClick: () => a(t),
           onKeyDown: O,
           wrapperClassName: I.tabWrapper,
-          className: i()(I.tab, {
+          className: o()(I.tab, {
             [I.selected]: r
           }),
           children: (0, n.jsxs)("span", {
             className: I.tabWithChevron,
-            children: [o, p ? (0, n.jsx)(c.u04, {
+            children: [i, p ? (0, n.jsx)(c.u04, {
               size: "sm",
               color: "currentColor"
             }) : (0, n.jsx)(c.CJ0, {
@@ -144,7 +144,7 @@ function N(e) {
   let {
     isFullScreen: t,
     isLayer: r,
-    onClose: o,
+    onClose: i,
     selectedTab: f,
     handleTransition: g
   } = e, x = (0, p.ZP)(), N = (0, s.e7)([C.default], () => C.default.getCurrentUser()), A = (null == N ? void 0 : N.isStaff()) || (null == N ? void 0 : N.isStaffPersonal()) || !1, {
@@ -162,7 +162,7 @@ function N(e) {
     tab: T.AW.ORBS,
     displayText: L.intl.string(L.t.EBYkzs)
   });
-  let F = r ? E.DR : o,
+  let F = r ? E.DR : i,
     D = f === T.AW.ORBS ? P.ZY5.SHOP_ORBS_TAB : P.ZY5.COLLECTIBLES_SHOP,
     M = l.useCallback(() => {
       t && (F(), (0, u.Ou)()), (0, m.Y)({
@@ -178,7 +178,7 @@ function N(e) {
     theme: x,
     children: e => (0, n.jsxs)(h.Z, {
       disableDoubleClick: !0,
-      className: i()(e, I.headerBar, {
+      className: o()(e, I.headerBar, {
         [I.fullscreenHeaderBar]: t
       }),
       innerClassname: w ? I.headerBarInner : void 0,

@@ -5,8 +5,8 @@ r.d(t, {
 }), r(388685);
 var n = r(255367),
   l = r(73800),
-  o = r(120356),
-  i = r.n(o),
+  i = r(120356),
+  o = r.n(i),
   a = r(442837),
   s = r(481060),
   c = r(782568),
@@ -32,7 +32,7 @@ let P = e => {
   var t;
   let {
     isLoading: r,
-    sortedSkuIds: o,
+    sortedSkuIds: i,
     handleTransition: P,
     numVisibleItems: L,
     tab: I
@@ -43,7 +43,7 @@ let P = e => {
     sortOptions: Z,
     shuffleProducts: F,
     showRecommendationOption: D
-  } = (0, O.N)(o, B), M = (0, S.St)(R), H = (0, a.e7)([u.Z], () => u.Z.useReducedMotion), W = (0, a.e7)([p.Z], () => p.Z.isFocused()), V = !H && W, {
+  } = (0, O.N)(i, B), M = (0, S.St)(R), H = (0, a.e7)([u.Z], () => u.Z.useReducedMotion), W = (0, a.e7)([p.Z], () => p.Z.isFocused()), V = !H && W, {
     animationPhase: U,
     startAnimation: z
   } = (0, E.y)(), G = (0, b.sp)(), q = null != (t = null == G ? void 0 : G.sessionId) ? t : "", Y = l.useRef(null), K = l.useCallback(e => {
@@ -56,7 +56,7 @@ let P = e => {
     })
   }, [z, w, q]);
   return null == k ? null : (0, n.jsxs)("div", {
-    className: i()(T.popularPicksSection, T.centeredSection),
+    className: o()(T.popularPicksSection, T.centeredSection),
     children: [(0, n.jsxs)("div", {
       className: T.blockHeader,
       children: [(0, n.jsxs)("div", {

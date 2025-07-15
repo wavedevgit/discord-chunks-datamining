@@ -1,6 +1,7 @@
 /** Chunk was on 91372 **/
 e.exports = {
-  flyingWumpus: "flyingWumpus__12720",
+  flyingWumpusContainer: "flyingWumpusContainer__12720",
+  flyingWumpusAsset: "flyingWumpusAsset__12720",
   boltTrinket: "boltTrinket__12720",
   carTrinket: "carTrinket__12720",
   hammerTrinket: "hammerTrinket__12720",

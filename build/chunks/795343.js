@@ -5,8 +5,8 @@ r.d(t, {
 }), r(35282), r(388685);
 var n = r(255367),
   l = r(73800),
-  o = r(120356),
-  i = r.n(o),
+  i = r(120356),
+  o = r.n(i),
   a = r(399606),
   s = r(481060),
   c = r(594174),
@@ -26,7 +26,7 @@ function v(e) {
   var t;
   let {
     isFetchingCategories: r,
-    isFullScreen: o,
+    isFullScreen: i,
     scrollerRef: v,
     tab: E
   } = e, S = (0, u.sp)(), y = null != (t = null == S ? void 0 : S.sessionId) ? t : "", {
@@ -53,11 +53,11 @@ function v(e) {
       sessionId: y,
       checkpoint: h.a.SHOP_RENDERED,
       tab: E,
-      isFullScreen: o,
+      isFullScreen: i,
       unpublishedCategoriesShown: j,
       cacheDisabled: x
     })
-  }, [y, o, j, x, r, E]);
+  }, [y, i, j, x, r, E]);
   let Z = l.useRef(null),
     {
       setQueryPageSize: F,
@@ -73,7 +73,7 @@ function v(e) {
     if (null != Z.current) return e.observe(Z.current), () => e.disconnect()
   }, [F]), (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsxs)("div", {
-      className: i()({
+      className: o()({
         [C.productsEmpty]: W
       }),
       children: [W && (0, n.jsx)(O.Z, {}), (0, n.jsxs)("div", {

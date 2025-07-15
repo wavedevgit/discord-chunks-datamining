@@ -1,8 +1,8 @@
 /** Chunk was on 45620 **/
 "use strict";
 r.d(t, {
-  R: () => o
+  R: () => i
 });
 var n = r(442837),
   l = r(597688);
-let o = () => (0, n.e7)([l.Z], () => l.Z.isFetchingCategories)
+let i = () => (0, n.e7)([l.Z], () => l.Z.isFetchingCategories)

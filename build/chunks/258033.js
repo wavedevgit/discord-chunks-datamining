@@ -210,13 +210,14 @@ let E = e => {
       isMotionReduced: n
     } = e;
     return n ? (0, i.jsx)("div", {
-      className: m.flyingWumpus,
+      className: m.flyingWumpusContainer,
       children: (0, i.jsx)("img", {
         src: j.Z,
-        alt: ""
+        alt: "",
+        className: m.flyingWumpusAsset
       })
     }) : (0, i.jsx)("div", {
-      className: m.flyingWumpus,
+      className: m.flyingWumpusContainer,
       children: (0, i.jsx)(E, {
         scaleAnimationData: {
           startScale: .9,
@@ -231,12 +232,14 @@ let E = e => {
         animateXAxisWiggle: !0,
         children: t ? (0, i.jsx)("img", {
           src: x.Z,
-          alt: ""
+          alt: "",
+          className: m.flyingWumpusAsset
         }) : (0, i.jsx)(d.Z, {
           muted: !0,
           autoPlay: !0,
           playsInline: !0,
           loop: !0,
+          className: m.flyingWumpusAsset,
           children: (0, i.jsx)("source", {
             src: _.Z
           })

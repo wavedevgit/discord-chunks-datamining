@@ -24,7 +24,7 @@ function l(e) {
   return e
 }
 
-function o(e, t) {
+function i(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -36,7 +36,7 @@ function o(e, t) {
     Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
   }), e
 }
-let i = {
+let o = {
     skus: [],
     currentPage: 0,
     totalCount: 0,
@@ -44,15 +44,15 @@ let i = {
     searchError: null,
     isFetchingResults: !1
   },
-  a = (0, n.U)(e => o(l({}, i), {
+  a = (0, n.U)(e => i(l({}, o), {
     onSetResponse: t => {
       let r = Math.floor(t.pageOffset / t.pageLimit) + 1;
-      e(o(l({}, t), {
+      e(i(l({}, t), {
         currentPage: r
       }))
     },
     setSearchError: t => {
-      e(o(l({}, i), {
+      e(i(l({}, o), {
         searchError: t
       }))
     },
@@ -62,6 +62,6 @@ let i = {
       })
     },
     clear: () => {
-      e(l({}, i))
+      e(l({}, o))
     }
   }))

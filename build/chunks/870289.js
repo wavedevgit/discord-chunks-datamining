@@ -1,11 +1,11 @@
 /** Chunk was on 45620 **/
 "use strict";
 r.d(t, {
-  F: () => i
+  F: () => o
 });
 var n = r(818083),
   l = r(987338);
-let o = (0, n.B)({
+let i = (0, n.B)({
     kind: "user",
     id: "2025-06_collectibles_browse",
     label: "Collectibles Browse Experiment",
@@ -21,6 +21,6 @@ let o = (0, n.B)({
       }
     }]
   }),
-  i = e => o.useExperiment({
+  o = e => i.useExperiment({
     location: e
   }).collectiblesBrowseEnabled

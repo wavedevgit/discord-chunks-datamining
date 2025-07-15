@@ -5,8 +5,8 @@ r.d(t, {
 }), r(539854);
 var n = r(255367),
   l = r(73800),
-  o = r(120356),
-  i = r.n(o),
+  i = r(120356),
+  o = r.n(i),
   a = r(108542),
   s = r(873546),
   c = r(435935),
@@ -21,13 +21,13 @@ function g(e) {
   } = e, {
     days: r,
     hours: l,
-    minutes: o,
-    seconds: i
+    minutes: i,
+    seconds: o
   } = (0, d.Z)(t), a = function(e, t, r, n) {
     let l = (e, t) => "".concat(e.toString().padStart(2, "0")).concat(t),
-      o = [];
-    return e > 0 && o.push(l(e, p.intl.string(p.t.QJyuxc))), (t > 0 || o.length > 0) && o.push(l(t, p.intl.string(p.t["1LyF1t"]))), (r > 0 || o.length > 0) && o.push(l(r, p.intl.string(p.t.n7dksL))), o.push(l(n, p.intl.string(p.t["6m/6nJ"]))), o.join(":")
-  }(r, l, o, i);
+      i = [];
+    return e > 0 && i.push(l(e, p.intl.string(p.t.QJyuxc))), (t > 0 || i.length > 0) && i.push(l(t, p.intl.string(p.t["1LyF1t"]))), (r > 0 || i.length > 0) && i.push(l(r, p.intl.string(p.t.n7dksL))), i.push(l(n, p.intl.string(p.t["6m/6nJ"]))), i.join(":")
+  }(r, l, i, o);
   return (0, n.jsx)(u.Text, {
     variant: "heading-md/medium",
     className: f.countdown,
@@ -45,7 +45,7 @@ let h = l.memo(function(e) {
     record: t,
     isVisible: r,
     isFullScreen: l
-  } = e, o = (0, u.q_F)({
+  } = e, i = (0, u.q_F)({
     transform: "translateX(-50%) ".concat(r ? "translateY(-75%)" : "translateY(0%)"),
     opacity: +!!r,
     config: {
@@ -54,7 +54,7 @@ let h = l.memo(function(e) {
     }
   });
   return (0, n.jsxs)(a.animated.div, {
-    className: i()([f.countDownWrapper, l && f.fullScreenWrapper, s.tq && f.mobileWrapper]),
+    className: o()([f.countDownWrapper, l && f.fullScreenWrapper, s.tq && f.mobileWrapper]),
     role: "status",
     style: function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -73,7 +73,7 @@ let h = l.memo(function(e) {
         })
       }
       return e
-    }({}, o, null != t.bannerUrl && "" !== t.bannerUrl && {
+    }({}, i, null != t.bannerUrl && "" !== t.bannerUrl && {
       backgroundImage: "url(".concat(t.bannerUrl, ")"),
       backgroundSize: "cover",
       backgroundPosition: "top"

@@ -1,11 +1,11 @@
 /** Chunk was on 45620 **/
 "use strict";
 r.d(t, {
-  R: () => o
+  R: () => i
 });
 var n = r(818083),
   l = r(987338);
-let o = (0, n.B)({
+let i = (0, n.B)({
   kind: "user",
   id: "2025-07_mobile_shop_featured_page",
   label: "Mobile Shop Featured Page",

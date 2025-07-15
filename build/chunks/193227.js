@@ -5,8 +5,8 @@ r.d(t, {
 }), r(388685);
 var n = r(255367),
   l = r(73800),
-  o = r(120356),
-  i = r.n(o),
+  i = r(120356),
+  o = r.n(i),
   a = r(399606),
   s = r(481060),
   c = r(434650),
@@ -30,8 +30,8 @@ function y(e) {
     products: t,
     header: r,
     category: l
-  } = e, o = (0, a.e7)([u.default], () => u.default.getCurrentUser()), i = (0, v.St)(t);
-  return null == o || 0 === t.length ? null : (0, n.jsxs)("div", {
+  } = e, i = (0, a.e7)([u.default], () => u.default.getCurrentUser()), o = (0, v.St)(t);
+  return null == i || 0 === t.length ? null : (0, n.jsxs)("div", {
     children: [null != r ? (0, n.jsx)(s.Text, {
       className: S.itemTypeTitle,
       color: "header-secondary",
@@ -41,14 +41,14 @@ function y(e) {
       size: 24
     }), (0, n.jsx)("div", {
       className: S.cardsContainer,
-      children: i.map((e, t) => (0, n.jsx)(d.k0, {
+      children: o.map((e, t) => (0, n.jsx)(d.k0, {
         newValue: {
           tilePosition: t
         },
         children: (0, n.jsx)(_.Z, {
           category: l,
           product: e,
-          user: o,
+          user: i,
           tab: E.AW.CATALOG
         }, e.skuId)
       }, e.skuId))
@@ -70,8 +70,8 @@ function j(e) {
   let {
     category: t,
     isFullScreen: r
-  } = e, [o, i] = l.useState(!1), a = (0, c.O)(e => {
-    i(e)
+  } = e, [i, o] = l.useState(!1), a = (0, c.O)(e => {
+    o(e)
   }, r ? .13 : .15);
   return (0, n.jsxs)("div", {
     className: S.categoryWrapper,
@@ -89,7 +89,7 @@ function T(e) {
   var t;
   let {
     sortedCategories: r,
-    setCategoryRef: o,
+    setCategoryRef: i,
     isFullScreen: a,
     currentPage: c,
     handlePageChange: u
@@ -126,11 +126,11 @@ function T(e) {
   }, [b, a, v, _, g, x.length]);
   let T = (0, p.F)("CollectiblesBrowse");
   return g ? (0, n.jsx)(m.Z, {}) : (0, n.jsxs)("div", {
-    className: i()(S.categories, {
+    className: o()(S.categories, {
       [S.categoriesNoFilter]: !T
     }),
     children: [x.map((e, t) => (0, n.jsx)("div", {
-      ref: t => o(e.skuId, t),
+      ref: t => i(e.skuId, t),
       children: (0, n.jsx)(d.k0, {
         newValue: {
           categoryPosition: t

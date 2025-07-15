@@ -1,12 +1,12 @@
 /** Chunk was on 45620 **/
 "use strict";
 r.d(t, {
-  B: () => o,
-  S: () => i
+  B: () => i,
+  S: () => o
 });
 var n = r(818083),
   l = r(987338);
-let o = (0, n.B)({
+let i = (0, n.B)({
     kind: "user",
     id: "2025-05_shop_index_page_menu",
     label: "Shop Index Page Menu",
@@ -22,6 +22,6 @@ let o = (0, n.B)({
       }
     }]
   }),
-  i = e => o.useExperiment({
+  o = e => i.useExperiment({
     location: e
   }).showShopMenuWithIndexPage

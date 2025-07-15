@@ -1,16 +1,16 @@
 /** Chunk was on 45620 **/
 "use strict";
 r.d(t, {
-  Z: () => o
+  Z: () => i
 });
 var n = r(255367);
 r(73800);
 var l = r(325767);
 
-function o(e) {
+function i(e) {
   var t, r, {
-      width: o = 124,
-      height: i = 24,
+      width: i = 124,
+      height: o = 24,
       color: a = "currentColor",
       foreground: s
     } = e,
@@ -19,13 +19,13 @@ function o(e) {
       var r, n, l = function(e, t) {
         if (null == e) return {};
         var r, n, l = {},
-          o = Object.keys(e);
-        for (n = 0; n < o.length; n++) r = o[n], t.indexOf(r) >= 0 || (l[r] = e[r]);
+          i = Object.keys(e);
+        for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (l[r] = e[r]);
         return l
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var o = Object.getOwnPropertySymbols(e);
-        for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r])
+        var i = Object.getOwnPropertySymbols(e);
+        for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r])
       }
       return l
     }(e, ["width", "height", "color", "foreground"]);
@@ -47,8 +47,8 @@ function o(e) {
     }
     return e
   }({}, (0, l.Z)(c)), r = r = {
-    width: o,
-    height: i,
+    width: i,
+    height: o,
     viewBox: "0 0 124 24",
     children: (0, n.jsxs)("g", {
       fill: a,
