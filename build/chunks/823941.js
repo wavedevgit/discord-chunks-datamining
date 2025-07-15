@@ -119,7 +119,7 @@ function D(e) {
       }
     }) : (0, r.jsx)(c.LZC, {
       size: N
-    }), (0, r.jsx)(c.Text, {
+    }), "" !== t.summary && (0, r.jsx)(c.Text, {
       className: o()(A.summary, {
         [A.blackSummary]: T
       }),
