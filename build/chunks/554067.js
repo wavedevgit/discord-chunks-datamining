@@ -27,6 +27,7 @@ function u(e) {
   }, [p, d]), l.useEffect(() => {
     f(u)
   }, [u]), (0, n.jsx)(i.P3F, {
+    ignoreKeyPress: !0,
     onClick: () => {
       r !== a.AW.CATALOG && t(a.AW.CATALOG)
     },
