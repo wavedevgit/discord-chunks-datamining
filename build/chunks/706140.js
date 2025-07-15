@@ -35,7 +35,7 @@ function E(e, t, n, r) {
 function b(e, t, n, a) {
   let l = (0, f.ZP)(t => null != e && t.currentlyShown.has(e)),
     c = (0, o.xG)(),
-    u = (0, i.e7)([d.Z], () => null != e && d.Z.hasUserHitDCCap(e));
+    u = (0, i.e7)([d.Z], () => null != e && d.Z.hasUserHitDCCap(e, t));
   return r.useEffect(() => {
     if (null != e) return s.Z.hasLoaded(g.yP.PRELOADED_USER_SETTINGS) || E(e, t, n, a), (0, p.kk)(e, {
       groupName: n,

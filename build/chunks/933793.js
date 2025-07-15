@@ -1,27 +1,27 @@
 /** Chunk was on 78650 **/
-n.d(t, {
+e.d(n, {
   Z: () => h
 });
-var i = n(255367);
-n(73800);
-var r = n(442837),
-  l = n(481060),
-  a = n(240872),
-  o = n(456269),
-  s = n(346479),
-  d = n(665906),
-  u = n(592125),
-  c = n(176505),
-  f = n(388032);
+var i = e(255367);
+e(73800);
+var r = e(442837),
+  l = e(481060),
+  a = e(240872),
+  o = e(456269),
+  s = e(346479),
+  d = e(665906),
+  u = e(592125),
+  c = e(176505),
+  f = e(388032);
 
-function h(e) {
-  let t = (0, r.e7)([u.Z], () => u.Z.getChannel(e.parent_id)),
-    n = (0, d.Xb)(e),
-    h = (0, o.kF)(e);
-  return (null == t ? void 0 : t.isForumLikeChannel()) && n ? e.hasFlag(c.zZ.PINNED) ? (0, i.jsx)(l.sNh, {
+function h(t) {
+  let n = (0, r.e7)([u.Z], () => u.Z.getChannel(t.parent_id)),
+    e = (0, d.Xb)(t),
+    h = (0, o.kF)(t);
+  return (null == n ? void 0 : n.isForumLikeChannel()) && e ? t.hasFlag(c.zZ.PINNED) ? (0, i.jsx)(l.sNh, {
     id: "unpin-thread",
     label: f.intl.string(f.t.trD8am),
-    action: () => s.Z.unpin(e)
+    action: () => s.Z.unpin(t)
   }) : (0, i.jsx)(l.sNh, {
     id: "pin-thread",
     label: f.intl.string(f.t.EnaWho),
@@ -30,9 +30,9 @@ function h(e) {
         title: f.intl.string(f.t.IMbjxs),
         body: f.intl.string(f.t["mi5+Vl"]),
         onConfirm: async () => {
-          await s.Z.unpin(h), s.Z.pin(e)
+          await s.Z.unpin(h), s.Z.pin(t)
         }
-      }) : s.Z.pin(e)
+      }) : s.Z.pin(t)
     }
   }) : null
 }

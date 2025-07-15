@@ -20,7 +20,7 @@ let a = e => {
     handleRightClick: e => (0, l.jW)(e, async () => {
       let {
         default: e
-      } = await n.e("78650").then(n.bind(n, 422200));
+      } = await n.e("11300").then(n.bind(n, 422200));
       return t => {
         var n, s;
         return (0, r.jsx)(e, (n = function(e) {

@@ -1,27 +1,27 @@
 /** Chunk was on 78650 **/
-n.d(t, {
+e.d(n, {
   Z: () => d
 });
-var i = n(255367);
-n(73800);
-var r = n(481060),
-  l = n(216572),
-  a = n(346479),
-  o = n(665906),
-  s = n(388032);
+var i = e(255367);
+e(73800);
+var r = e(481060),
+  l = e(216572),
+  a = e(346479),
+  o = e(665906),
+  s = e(388032);
 
-function d(e) {
-  var t;
-  let n = (0, l.HL)(e),
-    d = (0, o.C7)(e),
-    u = (0, o.tc)(e);
-  if ((e.isArchivedThread() ? u : d) && !n) return (null == (t = e.threadMetadata) ? void 0 : t.archived) ? (0, i.jsx)(r.sNh, {
+function d(t) {
+  var n;
+  let e = (0, l.HL)(t),
+    d = (0, o.C7)(t),
+    u = (0, o.tc)(t);
+  if ((t.isArchivedThread() ? u : d) && !e) return (null == (n = t.threadMetadata) ? void 0 : n.archived) ? (0, i.jsx)(r.sNh, {
     id: "unarchive-thread",
-    label: e.isForumPost() ? s.intl.string(s.t.cnRubW) : s.intl.string(s.t.S9E4Gx),
-    action: () => a.Z.unarchiveThread(e, !1)
+    label: t.isForumPost() ? s.intl.string(s.t.cnRubW) : s.intl.string(s.t.S9E4Gx),
+    action: () => a.Z.unarchiveThread(t, !1)
   }) : (0, i.jsx)(r.sNh, {
     id: "archive-thread",
-    label: e.isForumPost() ? s.intl.string(s.t.BTs4KS) : s.intl.string(s.t.wiIevb),
-    action: () => a.Z.archiveThread(e, !1)
+    label: t.isForumPost() ? s.intl.string(s.t.BTs4KS) : s.intl.string(s.t.wiIevb),
+    action: () => a.Z.archiveThread(t, !1)
   })
 }

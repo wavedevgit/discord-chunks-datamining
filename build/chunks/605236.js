@@ -151,7 +151,7 @@ function R(e, t) {
 }
 
 function P(e, t, n) {
-  !((0, _.cI)(e) || f.Z.hasUserHitDCCap(e)) && (n || (i.Z.dispatch({
+  !((0, _.cI)(e) || f.Z.hasUserHitDCCap(e, null == t ? void 0 : t.guildId)) && (n || (i.Z.dispatch({
     type: "DCF_EVENT_LOGGED",
     eventType: c.D.DC_SHOW_REQUEST,
     dismissibleContent: e
@@ -161,7 +161,7 @@ function P(e, t, n) {
     onAdded: () => {
       var n;
       let [i, a] = (0, _.Aq)();
-      (0, d.cm)(e), s.default.track(E.rMx.DISMISSIBLE_CONTENT_SHOWN, {
+      (0, d.cm)(e, null == t ? void 0 : t.guildId), s.default.track(E.rMx.DISMISSIBLE_CONTENT_SHOWN, {
         type: r.z[e],
         content_count: i,
         fatigable_content_count: a,

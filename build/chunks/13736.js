@@ -1,23 +1,23 @@
 /** Chunk was on 78650 **/
-n.d(t, {
+e.d(n, {
   Z: () => s
 });
-var i = n(255367);
-n(73800);
-var r = n(481060),
-  l = n(787014),
-  a = n(665906),
-  o = n(388032);
+var i = e(255367);
+e(73800);
+var r = e(481060),
+  l = e(787014),
+  a = e(665906),
+  o = e(388032);
 
-function s(e) {
-  let t = (0, a.C7)(e),
-    n = (0, a.$R)(e),
-    s = (0, a.Gu)(e);
-  return !t || !n || s || e.isModeratorReportChannel() || __OVERLAY__ ? null : (0, i.jsx)(r.sNh, {
+function s(t) {
+  let n = (0, a.C7)(t),
+    e = (0, a.$R)(t),
+    s = (0, a.Gu)(t);
+  return !n || !e || s || t.isModeratorReportChannel() || __OVERLAY__ ? null : (0, i.jsx)(r.sNh, {
     id: "edit-thread",
-    label: e.isForumPost() ? o.intl.string(o.t.NP1yHB) : o.intl.string(o.t["2Mk1TE"]),
+    label: t.isForumPost() ? o.intl.string(o.t.NP1yHB) : o.intl.string(o.t["2Mk1TE"]),
     action: () => {
-      (0, r.pTH)(), l.ZP.open(e.id)
+      (0, r.pTH)(), l.ZP.open(t.id)
     }
   })
 }

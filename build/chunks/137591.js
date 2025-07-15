@@ -1,23 +1,23 @@
 /** Chunk was on 78650 **/
-n.d(t, {
+e.d(n, {
   Z: () => d
 });
-var i = n(255367);
-n(73800);
-var r = n(481060),
-  l = n(346479),
-  a = n(665906),
-  o = n(981631),
-  s = n(388032);
+var i = e(255367);
+e(73800);
+var r = e(481060),
+  l = e(346479),
+  a = e(665906),
+  o = e(981631),
+  s = e(388032);
 
-function d(e) {
-  var t, n;
-  if (!(0, a.Xb)(e) || e.type !== o.d4z.PRIVATE_THREAD) return null;
-  let d = null == (n = null == (t = e.threadMetadata) ? void 0 : t.invitable) || n;
+function d(t) {
+  var n, e;
+  if (!(0, a.Xb)(t) || t.type !== o.d4z.PRIVATE_THREAD) return null;
+  let d = null == (e = null == (n = t.threadMetadata) ? void 0 : n.invitable) || e;
   return (0, i.jsx)(r.S89, {
     id: "toggle-thread-invitable",
     label: s.intl.string(s.t.s2rpNT),
     checked: d,
-    action: () => l.Z.setInvitable(e, !d)
+    action: () => l.Z.setInvitable(t, !d)
   })
 }
