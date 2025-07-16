@@ -71,6 +71,8 @@ let g = u.ZP.getEnableHardwareAcceleration() ? s.Xo$ : s.qEK,
       avatarDecorationOverride: (null == t ? void 0 : t.type) === o.Z.AVATAR_DECORATION ? t : void 0,
       size: E,
       onlyAnimateOnHover: !i
+    }), v = d.intl.formatToPlainString(d.t.Do2lxM, {
+      a11y_text: t.label
     });
     return (0, r.jsx)(g, m(p({}, y), {
       avatarDecoration: b,
@@ -80,6 +82,6 @@ let g = u.ZP.getEnableHardwareAcceleration() ? s.Xo$ : s.qEK,
         [f.avatarPurchased]: u && !i
       }),
       size: _,
-      "aria-label": d.intl.string(d.t.lqaIxM)
+      "aria-label": v
     }))
   }
