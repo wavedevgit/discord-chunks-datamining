@@ -21,16 +21,16 @@ function x(e) {
   let {
     guildId: t,
     powerupSkuId: n
-  } = e, x = (0, o.e7)([u.Z], () => u.Z.getGuild(t)), b = (0, o.e7)([l.Z], () => l.Z.hasLoadedExperiments), v = (0, m.Z)(t), g = (0, d.At)(), h = (0, p.V)("GuildPowerupsPage"), E = !b || null == v || null == x, j = (0, a.ZP)(null != g ? g : []);
+  } = e, x = (0, o.e7)([u.Z], () => u.Z.getGuild(t)), b = (0, o.e7)([l.Z], () => l.Z.hasLoadedExperiments), v = (0, m.Z)(t), g = (0, d.At)(), h = (0, p.V)("GuildPowerupsPage"), j = !b || null == v || null == x, E = (0, a.ZP)(null != g ? g : []);
   return ((0, s.Z)({
     type: i.ImpressionTypes.VIEW,
     name: i.ImpressionNames.BOOST_SHOP_OPENED,
     properties: {
-      location_stack: j.analyticsLocations
+      location_stack: E.analyticsLocations
     }
   }, {
-    disableTrack: E
-  }), E) ? null : v || h ? (0, r.jsx)(_.Z, {
+    disableTrack: j
+  }), j) ? null : v || h ? (0, r.jsx)(_.Z, {
     guildId: t,
     powerupSkuId: n
   }) : (0, r.jsx)(c.Z, {

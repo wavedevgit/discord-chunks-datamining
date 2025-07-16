@@ -21,7 +21,7 @@ var r = n(255367),
   g = n(568413),
   h = n(117172);
 
-function E(e) {
+function j(e) {
   let t, {
     active: n,
     nextActive: i,
@@ -44,7 +44,7 @@ function E(e) {
   })
 }
 
-function j(e) {
+function E(e) {
   let {
     isActive: t,
     index: n
@@ -91,7 +91,7 @@ function C(e) {
     guildId: t,
     powerup: o,
     className: g.card,
-    children: [(0, r.jsx)(E, {
+    children: [(0, r.jsx)(j, {
       position: 0 === n ? "start" : null == a ? "end" : "middle",
       active: x,
       nextActive: null != a ? b : void 0
@@ -101,7 +101,7 @@ function C(e) {
         variant: "heading-md/bold",
         color: I,
         children: o.title
-      }), (0, r.jsx)(j, {
+      }), (0, r.jsx)(E, {
         isActive: x,
         index: n
       }), !v && (0, r.jsx)(u.u, {

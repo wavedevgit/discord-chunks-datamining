@@ -1,42 +1,42 @@
 /** Chunk was on 85668 **/
 n.d(e, {
-  X: () => r,
-  h: () => i
+  X: () => l,
+  h: () => r
 }), n(704826), n(35282), n(388685);
 var a = n(73800),
-  l = n(902676);
+  i = n(902676);
 
-function i(t) {
+function r(t) {
   let {
     protocol: e,
     hostname: n
   } = a.useMemo(() => ({
-    protocol: (0, l.E)(t),
-    hostname: (0, l.F)(t)
-  }), [t]), i = "//" === t.substr(e.length, 2) ? "//" : "", r = "".concat(e).concat(i).concat(n);
+    protocol: (0, i.E)(t),
+    hostname: (0, i.F)(t)
+  }), [t]), r = "//" === t.substr(e.length, 2) ? "//" : "", l = "".concat(e).concat(r).concat(n);
   return {
     protocol: e,
-    authorityPrefix: i,
+    authorityPrefix: r,
     hostname: n,
-    theRestOfTheUrl: t.replace(r, "")
+    theRestOfTheUrl: t.replace(l, "")
   }
 }
 
-function r(t) {
+function l(t) {
   let {
     url: e,
     trustUrl: n,
-    onConfirm: l,
-    onCancel: r,
+    onConfirm: i,
+    onCancel: l,
     onClose: s
   } = t, [o, c] = a.useState(!1), {
     protocol: d,
     authorityPrefix: x,
     hostname: m,
     theRestOfTheUrl: u
-  } = i(e), h = a.useCallback(() => {
-    o && n(e), null == s || s(), l()
-  }, [e, o, n, l, s]);
+  } = r(e), h = a.useCallback(() => {
+    o && n(e), null == s || s(), i()
+  }, [e, o, n, i, s]);
   return {
     protocol: d,
     authorityPrefix: x,
@@ -46,7 +46,7 @@ function r(t) {
     setShouldTrustUrl: c,
     handleConfirm: h,
     handleCancel: a.useCallback(() => {
-      null == s || s(), r()
-    }, [r, s])
+      null == s || s(), l()
+    }, [l, s])
   }
 }
