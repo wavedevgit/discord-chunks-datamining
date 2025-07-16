@@ -1,6 +1,6 @@
 /**
   Module ID: 61216
-  Original File Name: 2a2194915fd25f10
+  Original File Name: edc186ffe7ebebdc
 **/
 .wrapper__74bfa {
     align-items: center;
@@ -7843,12 +7843,6 @@ html .progress__61462 {
     width: 100%
 }
 
-.button_c96cb2 {
-    align-items: center;
-    display: flex;
-    gap: 8px
-}
-
 .artContainer_ade26d {
     border-radius: 8px;
     box-shadow: none;
@@ -10045,17 +10039,6 @@ html .progress__61462 {
     padding-top: 0
 }
 
-.inviteToSpeakButtonWrapper_e9ab2f {
-    padding-left: 8px;
-    padding-right: 8px
-}
-
-.inviteToSpeakButtonInner_e9ab2f {
-    align-items: center;
-    display: flex;
-    gap: 8px
-}
-
 .icon_b9588c {
     height: 1.125rem;
     width: 1.125rem
@@ -10339,4 +10322,4 @@ html .progress__61462 {
     background-image: url(/assets/abbc14555963e723.svg)
 }
 
-/*# sourceMappingURL=2a2194915fd25f10.css.map*/
+/*# sourceMappingURL=edc186ffe7ebebdc.css.map*/
