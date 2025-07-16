@@ -478,7 +478,8 @@ class ev extends d.Z {
           secure_frames_max_concurrent_transitions: this._secureFramesMaxConcurrentTransitions,
           secure_frames_transition_prepare_count: this._secureFramesTransitionPrepareCount,
           secure_frames_transition_execute_count: this._secureFramesTransitionExecuteCount,
-          vad_use_advanced_voice_activity: i.modeOptions.vadUseKrisp
+          vad_use_advanced_voice_activity: i.modeOptions.vadUseKrisp,
+          soundshare_experimental: x.Z.getExperimentalSoundshare()
         });
       Promise.all([(async () => {
         var e, t;
@@ -533,7 +534,7 @@ class ev extends d.Z {
         streamParameters: a,
         qosEnabled: x.Z.getQoS(),
         signingKeyId: c ? u : void 0
-      }, this._getExtraConnectionOptions()));
+      }, this.getExtraConnectionOptions()));
     d.setUseElectronVideo(l.supports(es.AN.ELECTRON_VIDEO)), x.Z.supports(es.AN.IMAGE_QUALITY_MEASUREMENT) && d.setVideoQualityMeasurement("imageQualityWebrtcPsnrDb:5000,imageQualityVmaf_v061:5000,hwdec");
     let p = ["unk"];
     this.context === es.Yn.STREAM && (p.push("nvRelaxRc=250"), p.push("nvNewPresets")), d.setVideoEncoderExperiments(p.join(",")), d.on(f.Sh.Speaking, (e, t, n) => {
@@ -1093,7 +1094,7 @@ class ev extends d.Z {
       body: "Error: ".concat(t, "! Please upload your logs in A/V settings and ask everyone in the call to do the same, and ping us in #av-e2ee in Core Tech!")
     })
   }
-  _getExtraConnectionOptions() {
+  getExtraConnectionOptions() {
     return {}
   }
   shouldReportPeriodicStats(e) {

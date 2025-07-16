@@ -1,6 +1,6 @@
 /** Chunk was on 95336 **/
 n.d(t, {
-  ZP: () => M,
+  ZP: () => L,
   h4: () => N,
   nH: () => k
 }), n(388685), n(539854);
@@ -82,7 +82,7 @@ let N = e => {
       })]
     })
   };
-class w extends s.PureComponent {
+class A extends s.PureComponent {
   renderJumpButton() {
     let {
       jumping: e
@@ -150,9 +150,9 @@ let Z = u.ZP.connectStores([j.Z], e => {
   return {
     canManageMessages: null != t && j.Z.can(C.Plq.MANAGE_MESSAGES, t)
   }
-})(w);
+})(A);
 
-function A(e) {
+function w(e) {
   let {
     analyticsName: t,
     items: n,
@@ -166,7 +166,7 @@ function A(e) {
     scrollerClassName: x,
     className: j,
     listName: N
-  } = e, k = s.useRef(null), w = (0, f.Z)(N, k), Z = (0, u.e7)([O.ZP], () => O.ZP.hasNotice()), A = (0, u.e7)([v.Z], () => v.Z.windowSize());
+  } = e, k = s.useRef(null), A = (0, f.Z)(N, k), Z = (0, u.e7)([O.ZP], () => O.ZP.hasNotice()), w = (0, u.e7)([v.Z], () => v.Z.windowSize());
   s.useEffect(() => {
     _.default.track(C.rMx.OPEN_POPOUT, {
       type: t
@@ -189,19 +189,19 @@ function A(e) {
       E.S.unsubscribe(C.CkL.SCROLL_PAGE_DOWN, t), E.S.unsubscribe(C.CkL.SCROLL_PAGE_UP, e)
     }
   }, []);
-  let M = s.useCallback(() => {
+  let L = s.useCallback(() => {
       var e;
       let t = null == (e = k.current) ? void 0 : e.getScrollerState();
       null != t && t.scrollHeight - t.scrollTop - t.offsetHeight < 250 && l && !o && (null == p || p())
     }, [l, p, o]),
     F = [],
-    L = !0;
+    M = !0;
   null == n || o && 0 === n.length ? F = [(0, r.jsx)("div", {
     className: a()(R.emptyPlaceholder, R.loadingPlaceholder),
     children: (0, r.jsx)(h.$jN, {})
   }, "spinner")] : 0 === n.length ? F.push((0, r.jsx)(s.Fragment, {
     children: b()
-  }, "empty-state")) : (L = !1, F = [], i().each(n, e => {
+  }, "empty-state")) : (M = !1, F = [], i().each(n, e => {
     F.push(...y(e))
   }));
   let D = null;
@@ -222,7 +222,7 @@ function A(e) {
     children: b()
   }));
   let H = null == S ? void 0 : S(),
-    B = L && null != H ? (0, r.jsx)("div", {
+    B = M && null != H ? (0, r.jsx)("div", {
       className: R.footer,
       children: (0, r.jsx)(g.Z, {
         style: {
@@ -234,7 +234,7 @@ function A(e) {
       })
     }) : null,
     U = {
-      maxHeight: A.height - 43 - 25 - 48
+      maxHeight: w.height - 43 - 25 - 48
     };
   Z && (U.maxHeight -= 40);
   let G = null != p && l;
@@ -248,10 +248,10 @@ function A(e) {
       component: m(),
       children: [(0, r.jsxs)(h.Den, {
         className: a()(R.messagesPopout, x),
-        onScroll: G ? M : void 0,
+        onScroll: G ? L : void 0,
         ref: k,
         children: [(0, r.jsx)(c.bG, {
-          navigator: w,
+          navigator: A,
           children: (0, r.jsx)(c.SJ, {
             children: e => {
               var t, n, {
@@ -305,7 +305,7 @@ function A(e) {
   })
 }
 
-function M(e) {
+function L(e) {
   let {
     analyticsName: t,
     onFetch: n,
@@ -345,7 +345,7 @@ function M(e) {
     message: e,
     channel: l
   })), [a, l]);
-  return (0, r.jsx)(A, {
+  return (0, r.jsx)(w, {
     className: _,
     scrollerClassName: v,
     items: N,

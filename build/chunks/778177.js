@@ -1,6 +1,6 @@
 /** Chunk was on 95336 **/
 n.d(t, {
-  ZP: () => et
+  ZP: () => en
 }), n(781311), n(35282), n(388685);
 var r = n(255367),
   s = n(73800),
@@ -32,18 +32,19 @@ var r = n(255367),
   T = n(914010),
   N = n(246946),
   k = n(594174),
-  w = n(585483),
+  A = n(585483),
   Z = n(63063),
-  A = n(405656),
-  M = n(51144),
+  w = n(405656),
+  L = n(51144),
   F = n(854709),
-  L = n(652399),
+  M = n(652399),
   D = n(14091),
-  H = n(981631),
-  B = n(388032),
-  U = n(290082);
+  H = n(723642),
+  B = n(981631),
+  U = n(388032),
+  G = n(290082);
 
-function G(e, t, n) {
+function W(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -52,20 +53,20 @@ function G(e, t, n) {
   }) : e[t] = n, e
 }
 
-function W(e) {
+function z(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      G(e, t, n[t])
+      W(e, t, n[t])
     })
   }
   return e
 }
 
-function z(e, t) {
+function q(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -78,7 +79,7 @@ function z(e, t) {
   }), e
 }
 
-function q(e, t) {
+function Q(e, t) {
   if (null == e) return {};
   var n, r, s = function(e, t) {
     if (null == e) return {};
@@ -93,12 +94,12 @@ function q(e, t) {
   }
   return s
 }
-let Q = h()("2015-05-15").local(),
-  K = (0, p.Un)({
+let K = h()("2015-05-15").local(),
+  V = (0, p.Un)({
     createPromise: () => Promise.resolve().then(n.bind(n, 547800)),
     webpackId: 547800
   }),
-  V = (e, t, n) => {
+  X = (e, t, n) => {
     var s, l, a;
     let {
       user: o,
@@ -110,23 +111,23 @@ let Q = h()("2015-05-15").local(),
     let c = k.default.getUser(o.id),
       u = _.Z.getChannel(e),
       d = (null == u ? void 0 : u.isPrivate()) ? C.Z.getNickname(o.id) : null,
-      h = null != (l = null != (s = E.ZP.getNick(e, o.id)) ? s : d) ? l : M.ZP.getName(o),
+      h = null != (l = null != (s = E.ZP.getNick(e, o.id)) ? s : d) ? l : L.ZP.getName(o),
       p = null != (a = null == c ? void 0 : c.getAvatarURL(e, 20)) ? a : o.getAvatarURL(null == u ? void 0 : u.guild_id, 20);
     return [(0, r.jsx)("img", {
       alt: "",
-      className: U.displayAvatar,
+      className: G.displayAvatar,
       src: p
     }, "avatar-".concat(t, "-").concat(o.id)), (0, r.jsx)("span", {
-      className: U.displayedNick,
+      className: G.displayedNick,
       children: h
     }, "display-nick-".concat(t, "-").concat(o.id)), (0, r.jsx)("span", {
-      className: U.displayUsername,
-      children: M.ZP.getUserTag(o, {
+      className: G.displayUsername,
+      children: L.ZP.getUserTag(o, {
         identifiable: N.Z.enabled && N.Z.hidePersonalInformation ? "never" : "always"
       })
     }, "display-username-".concat(t, "-").concat(o.id))]
   },
-  X = (e, t, n, s, l) => {
+  J = (e, t, n, s, l) => {
     let {
       channel: o,
       text: i
@@ -136,7 +137,7 @@ let Q = h()("2015-05-15").local(),
     });
     let c = _.Z.getChannel(o.parent_id);
     return (0, r.jsxs)("div", {
-      className: a()(U.resultChannel, s),
+      className: a()(G.resultChannel, s),
       children: [(() => {
         if (o.isDM()) {
           let e = o.getRecipientId(),
@@ -145,27 +146,27 @@ let Q = h()("2015-05-15").local(),
           let n = t.getAvatarURL(null, 20);
           return (0, r.jsx)(g.qEK, {
             "aria-hidden": !0,
-            className: U.searchResultDMChannelIcon,
+            className: G.searchResultDMChannelIcon,
             size: g.EFr.SIZE_20,
             src: n
           })
         } {
           if (o.isGroupDM()) return (0, r.jsx)(O.Z, {
             "aria-hidden": !0,
-            className: U.searchResultGDMChannelIcon,
+            className: G.searchResultGDMChannelIcon,
             channel: o,
             size: g.EFr.SIZE_20,
             experimentLocation: "search_popout"
           });
           let e = (0, j.KS)(o);
           return null == e ? null : (0, r.jsx)(e, {
-            className: U.searchResultChannelIcon
+            className: G.searchResultChannelIcon
           })
         }
       })(), (0, r.jsxs)("div", {
         className: l,
         children: [o.isDM() || o.isGroupDM() ? (0, r.jsx)("span", {
-          className: U.searchResultDMChannelName,
+          className: G.searchResultDMChannelName,
           children: (0, x.F6)(o, k.default, C.Z)
         }) : (0, r.jsx)("strong", {
           children: (0, x.F6)(o, k.default, C.Z)
@@ -174,21 +175,21 @@ let Q = h()("2015-05-15").local(),
             let e = o.getRecipientId(),
               t = k.default.getUser(e);
             return null == t ? null : (0, r.jsx)("span", {
-              className: U.searchResultDMUserName,
-              children: M.ZP.getUserTag(t, {
+              className: G.searchResultDMUserName,
+              children: L.ZP.getUserTag(t, {
                 identifiable: N.Z.enabled && N.Z.hidePersonalInformation ? "never" : "always"
               })
             })
           }
           if (null != c) return (0, r.jsx)("span", {
-            className: U.searchResultChannelCategory,
+            className: G.searchResultChannelCategory,
             children: (0, x.F6)(c, k.default, C.Z)
           })
         })()]
       })]
     })
   },
-  J = e => {
+  Y = e => {
     let t, n, {
       id: s,
       searchId: l,
@@ -206,7 +207,7 @@ let Q = h()("2015-05-15").local(),
     if (m) {
       var y, x;
       t = (0, r.jsx)("span", {
-        className: U.filter,
+        className: G.filter,
         children: null != (x = null == (y = S.ZP[i]) ? void 0 : y.key) ? x : "addme:"
       })
     }
@@ -214,7 +215,7 @@ let Q = h()("2015-05-15").local(),
       children: o.text
     }), (0, r.jsxs)(g.P3F, {
       tag: "li",
-      className: a()(U.option, c),
+      className: a()(G.option, c),
       onClick: p,
       onFocus: f,
       id: s,
@@ -222,51 +223,51 @@ let Q = h()("2015-05-15").local(),
       tabIndex: d,
       "aria-selected": h,
       children: [(0, r.jsxs)("div", {
-        className: U.content,
+        className: G.content,
         children: [t, n]
       }), (0, r.jsx)(g.qJs, {
         size: "sm",
         color: "currentColor",
-        className: U.plusIcon
+        className: G.plusIcon
       })]
     })
   },
-  Y = e => (0, r.jsx)(J, z(W({}, e), {
-    className: U.user,
-    renderResult: V
+  $ = e => (0, r.jsx)(Y, q(z({}, e), {
+    className: G.user,
+    renderResult: X
   })),
-  $ = {
-    [H.dCx.FILTER_FROM]: {
-      titleText: () => B.intl.string(B.t.catERE),
-      component: Y
+  ee = {
+    [B.dCx.FILTER_FROM]: {
+      titleText: () => U.intl.string(U.t.catERE),
+      component: $
     },
-    [H.dCx.FILTER_MENTIONS]: {
-      titleText: () => B.intl.string(B.t.l3K4Bw),
-      component: Y
+    [B.dCx.FILTER_MENTIONS]: {
+      titleText: () => U.intl.string(U.t.l3K4Bw),
+      component: $
     },
-    [H.dCx.FILTER_HAS]: {
-      titleText: () => B.intl.string(B.t.IC7gHB)
+    [B.dCx.FILTER_HAS]: {
+      titleText: () => U.intl.string(U.t.IC7gHB)
     },
-    [H.dCx.FILTER_FILE_TYPE]: {
-      titleText: () => B.intl.string(B.t.SXIfV1)
+    [B.dCx.FILTER_FILE_TYPE]: {
+      titleText: () => U.intl.string(U.t.SXIfV1)
     },
-    [H.dCx.FILTER_IN]: {
-      titleText: () => B.intl.string(B.t.vHyCgo),
-      component: e => (0, r.jsx)(J, z(W({}, e), {
-        renderResult: X
+    [B.dCx.FILTER_IN]: {
+      titleText: () => U.intl.string(U.t.vHyCgo),
+      component: e => (0, r.jsx)(Y, q(z({}, e), {
+        renderResult: J
       }))
     },
-    [H.rtL.DATES]: {
-      titleText: () => B.intl.string(B.t.UiL5e3)
+    [B.rtL.DATES]: {
+      titleText: () => U.intl.string(U.t.UiL5e3)
     },
-    [H.rtL.HISTORY]: {
-      titleText: () => B.intl.string(B.t.tSZd5e),
+    [B.rtL.HISTORY]: {
+      titleText: () => U.intl.string(U.t.tSZd5e),
       groupTip(e) {
         let {
           searchId: t
         } = e;
         return (0, r.jsx)(g.ua7, {
-          text: B.intl.string(B.t.dwAvX1),
+          text: U.intl.string(U.t.dwAvX1),
           position: "left",
           children: e => {
             let {
@@ -277,9 +278,9 @@ let Q = h()("2015-05-15").local(),
               onClick: () => (0, m.QQ)(t),
               onMouseEnter: n,
               onMouseLeave: s,
-              className: U.searchClearHistory,
-              title: B.intl.string(B.t.dwAvX1),
-              "aria-label": B.intl.string(B.t.dwAvX1),
+              className: G.searchClearHistory,
+              title: U.intl.string(U.t.dwAvX1),
+              "aria-label": U.intl.string(U.t.dwAvX1),
               children: (0, r.jsx)(g.XHJ, {
                 size: "md",
                 color: "currentColor"
@@ -297,52 +298,52 @@ let Q = h()("2015-05-15").local(),
           searchId: i,
           renderResult: c,
           group: u
-        } = e, d = q(e, ["onSelect", "onFocus", "result", "showFilter", "searchId", "renderResult", "group"]);
+        } = e, d = Q(e, ["onSelect", "onFocus", "result", "showFilter", "searchId", "renderResult", "group"]);
         let h = "",
           p = s.useMemo(() => {
             var e;
-            return e = l.text, A.kG(e).map((e, t, n) => A.Fr(e, n[t + 1]) ? e : new y.WU(e.getFullMatch(), y.Xe))
+            return e = l.text, w.kG(e).map((e, t, n) => w.Fr(e, n[t + 1]) ? e : new y.WU(e.getFullMatch(), y.Xe))
           }, [l.text]).map(e => {
             let t = e.getFullMatch();
             if ("" === t.trim()) return null;
-            let n = H.TNx.test(e.type),
-              s = H.KA4.test(e.type);
+            let n = B.TNx.test(e.type),
+              s = B.KA4.test(e.type);
             return h += t, (0, r.jsx)("span", {
-              className: a()(U.searchHistoryRow, {
-                [U.filter]: n,
-                [U.answer]: s,
-                [U.nonText]: !n && !s
+              className: a()(G.searchHistoryRow, {
+                [G.filter]: n,
+                [G.answer]: s,
+                [G.nonText]: !n && !s
               }),
               children: t
             }, e.type + t)
           });
-        return (0, r.jsxs)(g.P3F, z(W({
-          className: U.option,
+        return (0, r.jsxs)(g.P3F, q(z({
+          className: G.option,
           onClick: t,
           onFocus: n
         }, d), {
-          "aria-label": B.intl.formatToPlainString(B.t.WoiGra, {
+          "aria-label": U.intl.formatToPlainString(U.t.WoiGra, {
             suggestion: h
           }),
           children: [p, (0, r.jsx)(g.qJs, {
             size: "sm",
             color: "currentColor",
-            className: U.plusIcon
+            className: G.plusIcon
           })]
         }))
       }
     },
-    [H.rtL.SEARCH_OPTIONS]: {
-      titleText: () => B.intl.string(B.t["8Zkyw8"]),
+    [B.rtL.SEARCH_OPTIONS]: {
+      titleText: () => U.intl.string(U.t["8Zkyw8"]),
       groupTip: () => (0, r.jsx)(g.ua7, {
-        text: B.intl.string(B.t.hvVgAQ),
+        text: U.intl.string(U.t.hvVgAQ),
         position: "left",
-        children: e => (0, r.jsx)("div", z(W({
-          className: U.searchLearnMore
+        children: e => (0, r.jsx)("div", q(z({
+          className: G.searchLearnMore
         }, e), {
           children: (0, r.jsx)(g.eee, {
-            href: Z.Z.getArticleURL(H.BhN.USING_SEARCH),
-            title: B.intl.string(B.t.hvVgAQ),
+            href: Z.Z.getArticleURL(B.BhN.USING_SEARCH),
+            title: U.intl.string(U.t.hvVgAQ),
             children: (0, r.jsx)(g.idN, {
               size: "md",
               color: "currentColor"
@@ -358,31 +359,31 @@ let Q = h()("2015-05-15").local(),
             showFilter: o,
             searchId: i
           } = e,
-          c = q(e, ["result", "onSelect", "onFocus", "showFilter", "searchId"]);
-        let u = A.Ko(null != (t = n.token) ? t : "");
-        return (0, r.jsxs)(g.P3F, z(W({
-          className: a()(U.option, U.searchOption),
+          c = Q(e, ["result", "onSelect", "onFocus", "showFilter", "searchId"]);
+        let u = w.Ko(null != (t = n.token) ? t : "");
+        return (0, r.jsxs)(g.P3F, q(z({
+          className: a()(G.option, G.searchOption),
           onClick: s,
           onFocus: l
         }, c), {
           children: [(0, r.jsx)("span", {
-            className: U.filter,
+            className: G.filter,
             children: n.text
           }), (0, r.jsx)("span", {
             className: a()({
-              [U.answer]: u
+              [G.answer]: u
             }),
             children: u
           }), (0, r.jsx)(g.qJs, {
             size: "sm",
             color: "currentColor",
-            className: U.plusIcon
+            className: G.plusIcon
           })]
         }))
       }
     }
   };
-class ee extends s.PureComponent {
+class et extends s.PureComponent {
   componentDidUpdate(e, t) {
     let {
       resultsState: n,
@@ -392,7 +393,7 @@ class ee extends s.PureComponent {
     } = n, {
       resultsState: l
     } = e;
-    null != s.filter && null == l.mode.filter && r > 0 ? this.setSelectedIndex(0) : s.type === H.Sap.FILTER_ALL && l.mode.type !== s.type ? this.setSelectedIndex(-1) : this.keepCurrentOptionSelected(e, t)
+    null != s.filter && null == l.mode.filter && r > 0 ? this.setSelectedIndex(0) : s.type === B.Sap.FILTER_ALL && l.mode.type !== s.type ? this.setSelectedIndex(-1) : this.keepCurrentOptionSelected(e, t)
   }
   setSelectedIndex(e) {
     this.setState({
@@ -423,31 +424,34 @@ class ee extends s.PureComponent {
         searchEverywhere: !0
       }),
       renderNoResults: () => null,
-      searchFavorites: l === H.I_8 && (0, F.X)(),
+      searchFavorites: l === B.I_8 && (0, F.X)(),
       showSearchInSelectedChannel: this.shouldShowSearchInSelectedChannel(),
       channel: a,
-      onSelectSearchInSelectedChannel: this.handleSearchInChannel,
-      renderChannel: X
+      onSelectSearchInSelectedChannel: () => this.handleSearchInChannel({
+        searchAutocompleteSelectAction: H.Z.CLICK
+      }),
+      renderChannel: J
     })
   }
   constructor(...e) {
     var t;
-    super(...e), t = this, G(this, "state", {
+    super(...e), t = this, W(this, "state", {
       dateHint: (0, S.Pr)(),
       selectedIndex: -1
-    }), G(this, "handleDateChange", e => {
-      (0, L.bh)({
+    }), W(this, "handleDateChange", e => {
+      (0, M.bh)({
         searchId: this.props.searchId,
         searchQuery: R.Z.getQuery(this.props.searchId),
         searchQueryString: (0, D.$)(this.props.searchId),
         searchTokenType: this.props.resultsState.mode.filter,
-        searchAutocompleteGroup: H.rtL.DATES,
+        searchAutocompleteGroup: B.rtL.DATES,
         searchAutocompleteMode: this.props.resultsState.mode,
         isSearchFilterPrefix: !1,
         isSearchFilterAnswer: !0,
-        isSearchFilterComplete: !1
-      }), this.setSearchQuery(e.format(H.b2L) + " ", !0)
-    }), G(this, "keepCurrentOptionSelected", (e, t) => {
+        isSearchFilterComplete: !1,
+        searchAutocompleteSelectAction: H.Z.CLICK
+      }), this.setSearchQuery(e.format(B.b2L) + " ", !0)
+    }), W(this, "keepCurrentOptionSelected", (e, t) => {
       let {
         selectedIndex: n
       } = this.state, {
@@ -461,88 +465,95 @@ class ee extends s.PureComponent {
       } = e;
       if (l.type !== o.mode.type) this.setSelectedIndex(-1);
       else if (t.selectedIndex >= 0 && (t.selectedIndex === n || o.autocompletes.length !== a.length)) {
-        let e = A.i3(o.autocompletes, o.mode)[t.selectedIndex],
-          n = A.i3(a, l).findIndex(t => {
+        let e = w.i3(o.autocompletes, o.mode)[t.selectedIndex],
+          n = w.i3(a, l).findIndex(t => {
             let {
               resultText: n
             } = t;
             return n === (null == e ? void 0 : e.resultText)
           }); - 1 !== n ? this.setSelectedIndex(n) : t.selectedIndex >= s && this.setSelectedIndex(s - 1)
       }
-    }), G(this, "focusNextOption", () => {
+    }), W(this, "focusNextOption", () => {
       this.focusOtherOption(1)
-    }), G(this, "focusPreviousOption", () => {
+    }), W(this, "focusPreviousOption", () => {
       this.focusOtherOption(-1)
-    }), G(this, "focusOtherOption", e => {
+    }), W(this, "focusOtherOption", e => {
       let {
         selectedIndex: t
       } = this.state, {
         resultsState: n
       } = this.props;
-      A.Fz(n.mode.filter) || this.focusOption(t + e)
-    }), G(this, "focusOption", e => {
+      w.Fz(n.mode.filter) || this.focusOption(t + e)
+    }), W(this, "focusOption", e => {
       let t = e,
         {
           autocompletes: n
         } = this.props.resultsState,
         r = this.shouldShowSearchQuery(),
         s = this.shouldShowSearchInSelectedChannel();
-      t < -1 || !r && !s && t < 0 ? t = A.BU(n) - 1 : (r || s) && t >= A.BU(n) ? t = -1 : !r && t >= A.BU(n) && (t = 0), this.setSelectedIndex(t)
-    }), G(this, "selectOption", e => {
-      let t = e;
-      if (null == t && (t = this.state.selectedIndex), t < 0) return !1;
+      t < -1 || !r && !s && t < 0 ? t = w.BU(n) - 1 : (r || s) && t >= w.BU(n) ? t = -1 : !r && t >= w.BU(n) && (t = 0), this.setSelectedIndex(t)
+    }), W(this, "selectOption", e => {
       let {
-        autocompletes: n,
-        mode: r
+        selectedIndex: t,
+        searchAutocompleteSelectAction: n
+      } = e, r = t;
+      if (null == r && (r = this.state.selectedIndex), r < 0) return !1;
+      let {
+        autocompletes: s,
+        mode: l
       } = this.props.resultsState;
-      if (A.Fz(r.filter)) return;
-      let s = A.i3(n, r);
-      if (t >= s.length) return !1;
-      let l = s[t],
-        a = s.length;
-      if (l.group === H.rtL.HISTORY) {
-        let e = n.find(e => (null == e ? void 0 : e.group) === H.rtL.HISTORY);
+      if (w.Fz(l.filter)) return;
+      let a = w.i3(s, l);
+      if (r >= a.length) return !1;
+      let o = a[r],
+        i = a.length;
+      if (o.group === B.rtL.HISTORY) {
+        let e = s.find(e => (null == e ? void 0 : e.group) === B.rtL.HISTORY);
         if (null != e) {
-          let n = t - (a - e.results.length);
-          (0, L.$z)({
+          let t = r - (i - e.results.length);
+          (0, M.$z)({
             searchId: this.props.searchId,
-            searchHistoryIndex: n,
+            searchHistoryIndex: t,
             searchHistoryTotalResults: e.results.length
           })
         }
       } else {
-        var o;
+        var c, d;
         let e = this.props.resultsState.mode.type,
-          n = this.props.resultsState.mode.filter,
+          t = this.props.resultsState.mode.filter,
           {
-            token: r,
-            group: s
-          } = l.result,
-          i = null != r ? r : n,
-          c = (0, S._m)(l.group) ? l.group : null != s && (0, S._m)(s) ? s : null;
-        (0, L.bh)({
+            token: s,
+            group: l
+          } = o.result,
+          a = (0, S._m)(o.group) ? o.group : null != l && (0, S._m)(l) ? l : null,
+          u = null != (c = null != s ? s : t) ? c : a,
+          h = o.result.channel,
+          p = u === B.dCx.FILTER_IN && null != h && h.id === P.Z.getChannelId();
+        (0, M.bh)({
           searchId: this.props.searchId,
           searchQuery: R.Z.getQuery(this.props.searchId),
           searchQueryString: (0, D.$)(this.props.searchId),
-          searchTokenType: null != i ? i : c,
-          searchAutocompleteGroup: null != (o = l.group) ? o : s,
+          searchTokenType: u,
+          searchAutocompleteGroup: null != (d = o.group) ? d : l,
           searchAutocompleteMode: this.props.resultsState.mode,
-          searchAutocompleteResultIndex: t,
-          searchAutocompleteTotalResults: a,
-          isSearchFilterPrefix: e === H.Sap.EMPTY,
-          isSearchFilterAnswer: e === H.Sap.FILTER,
-          isSearchFilterComplete: e === H.Sap.FILTER_ALL
+          searchAutocompleteResultIndex: r,
+          searchAutocompleteTotalResults: i,
+          isSearchFilterPrefix: e === B.Sap.EMPTY,
+          isSearchFilterAnswer: e === B.Sap.FILTER,
+          isSearchFilterComplete: e === B.Sap.FILTER_ALL,
+          isInFilterForSelectedChannel: p,
+          searchAutocompleteSelectAction: n
         })
       }
-      let i = function(e) {
+      let h = function(e) {
         let t = !0,
           n = e.trim();
         return u()(S.ZP).forOwn(e => {
           "" !== e.key && null != e.key && n === e.key && (t = !1)
         }), t
-      }(l.resultText);
-      return this.setSearchQuery(l.resultText, i), !0
-    }), G(this, "setSearchQuery", function(e) {
+      }(o.resultText);
+      return this.setSearchQuery(o.resultText, h), !0
+    }), W(this, "setSearchQuery", function(e) {
       let n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
         {
           mode: r,
@@ -551,59 +562,66 @@ class ee extends s.PureComponent {
         l = 0;
       null != r.token ? l = r.token.start : (null == s ? void 0 : s.currentToken) != null && (l = s.currentToken.end);
       let a = null != r.token ? r.token.end : l;
-      w.S.dispatch(H.CkL.SET_SEARCH_QUERY, {
+      A.S.dispatch(B.CkL.SET_SEARCH_QUERY, {
         query: e,
         anchor: l,
         focus: a,
         performSearch: n
       }), t.setSelectedIndex(-1)
-    }), G(this, "shouldShowSearchQuery", () => {
+    }), W(this, "shouldShowSearchQuery", () => {
       let {
         mode: e
       } = this.props.resultsState;
-      return e.type !== H.Sap.FILTER && e.type !== H.Sap.EMPTY && !A.Fz(e.filter)
-    }), G(this, "shouldShowSearchInSelectedChannel", () => {
+      return e.type !== B.Sap.FILTER && e.type !== B.Sap.EMPTY && !w.Fz(e.filter)
+    }), W(this, "shouldShowSearchInSelectedChannel", () => {
       let {
         searchId: e,
         resultsState: {
           mode: t
         }
       } = this.props;
-      return e === H.aib.DMS && (0, A.R6)(e) && t.type === H.Sap.EMPTY && !A.Fz(t.filter)
-    }), G(this, "handleSearchInChannel", () => {
-      var e;
+      return e === B.aib.DMS && (0, w.R6)(e) && t.type === B.Sap.EMPTY && !w.Fz(t.filter)
+    }), W(this, "handleSearchInChannel", e => {
+      var t;
       let {
-        channel: t
+        searchAutocompleteSelectAction: n
+      } = e, {
+        channel: r,
+        searchId: s
       } = this.props;
-      if (!this.shouldShowSearchInSelectedChannel() || null == t) return !1;
-      let n = H.dCx.FILTER_IN,
-        r = S.ZP[n],
-        s = (0, A.X3)(t),
-        l = "".concat(null != (e = null == r ? void 0 : r.key) ? e : n.toString(), " ").concat(s);
-      return this.setSearchQuery(l, !0), !0
-    }), G(this, "renderDatePicker", () => (0, r.jsxs)("div", {
-      className: U.datePicker,
-      children: [(0, r.jsx)(K, {
+      if (!this.shouldShowSearchInSelectedChannel() || null == r) return !1;
+      (0, M.tA)({
+        searchId: s,
+        searchAutocompleteSelectAction: n
+      });
+      let l = B.dCx.FILTER_IN,
+        a = S.ZP[l],
+        o = (0, w.X3)(r),
+        i = "".concat(null != (t = null == a ? void 0 : a.key) ? t : l.toString(), " ").concat(o);
+      return this.setSearchQuery(i, !0), !0
+    }), W(this, "renderDatePicker", () => (0, r.jsxs)("div", {
+      className: G.datePicker,
+      children: [(0, r.jsx)(V, {
         onSelect: this.handleDateChange,
         maxDate: h()().local(),
-        minDate: Q
+        minDate: K
       }), (0, r.jsxs)("div", {
-        className: U.datePickerHint,
+        className: G.datePickerHint,
         children: [(0, r.jsxs)("span", {
-          className: U.hint,
-          children: [B.intl.string(B.t.fmtCi4), "\xa0"]
+          className: G.hint,
+          children: [U.intl.string(U.t.fmtCi4), "\xa0"]
         }), (0, r.jsx)(g.P3F, {
           tag: "span",
-          className: U.hintValue,
+          className: G.hintValue,
           onClick: this.handleHintClick,
           children: this.state.dateHint
         })]
       })]
-    })), G(this, "handleHintClick", () => {
+    })), W(this, "handleHintClick", () => {
       this.setSearchQuery(this.state.dateHint, !0)
-    }), G(this, "performSearch", e => {
-      w.S.dispatch(H.CkL.PERFORM_SEARCH, null != e ? e : {})
-    }), G(this, "renderAutocompletes", () => {
+    }), W(this, "performSearch", e => {
+      A.S.dispatch(B.CkL.PERFORM_SEARCH, null != e ? e : {})
+    }), W(this, "renderAutocompletes", () => {
       let {
         selectedIndex: e
       } = this.state, {
@@ -613,38 +631,41 @@ class ee extends s.PureComponent {
         autocompletes: s,
         mode: l
       } = this.props.resultsState;
-      if (A.Fz(l.filter)) return this.renderDatePicker();
+      if (w.Fz(l.filter)) return this.renderDatePicker();
       let a = -1;
       return s.map(s => {
         var o, i, c;
         let u, d;
         if (null == s || 0 === s.results.length) return null;
-        let h = null != (o = $[s.group]) ? o : {};
+        let h = null != (o = ee[s.group]) ? o : {};
         null != h.titleText && (d = "".concat(s.group, "-header"), u = (0, r.jsx)("div", {
           id: d,
-          className: U.header,
+          className: G.header,
           children: h.titleText()
         }));
         let p = null != (i = h.groupTip) ? i : null,
           f = null != p ? (0, r.jsx)(p, {
             searchId: n
           }) : null,
-          g = null != (c = h.component) ? c : J,
-          m = l.type === H.Sap.FILTER_ALL;
+          g = null != (c = h.component) ? c : Y,
+          m = l.type === B.Sap.FILTER_ALL;
         return (0, r.jsxs)("ul", {
           role: "group",
           "aria-labelledby": d,
-          className: U.resultsGroup,
+          className: G.resultsGroup,
           children: [u, f, s.results.map(l => {
             var o, i;
             if (null == l || null == s) return null;
             let c = e === (a += 1);
-            return (0, r.jsx)(g, W({
+            return (0, r.jsx)(g, z({
               searchId: n,
               group: null != (o = l.group) ? o : s.group,
               result: l,
               showFilter: m,
-              onSelect: this.selectOption.bind(null, a),
+              onSelect: this.selectOption.bind(null, {
+                selectedIndex: a,
+                searchAutocompleteSelectAction: H.Z.CLICK
+              }),
               onFocus: this.focusOption.bind(null, a)
             }, (0, b.M)(t, a, c)), "".concat(s.group, "-").concat(l.text, "-").concat(null != (i = l.key) ? i : ""))
           })]
@@ -653,7 +674,7 @@ class ee extends s.PureComponent {
     })
   }
 }
-let et = s.forwardRef((e, t) => {
+let en = s.forwardRef((e, t) => {
   let n = (0, v.U)({
       location: "SearchPopout"
     }),
@@ -661,13 +682,13 @@ let et = s.forwardRef((e, t) => {
       let e = T.Z.getGuildId(),
         t = P.Z.getChannelId(),
         r = _.Z.getChannel(t),
-        s = null != e ? e : n ? H.aib.DMS : t;
+        s = null != e ? e : n ? B.aib.DMS : t;
       i()(null != s, "SearchPopout.getStateFromStores - invalid searchId");
       let l = I.Z.getState(s),
-        a = A.BU(l.autocompletes);
+        a = w.BU(l.autocompletes);
       return [s, l, a, r]
     });
-  return (0, r.jsx)(ee, z(W({}, e), {
+  return (0, r.jsx)(et, q(z({}, e), {
     searchId: s,
     resultsState: l,
     totalResults: a,

@@ -1,6 +1,6 @@
 /** Chunk was on 95336 **/
 n.d(t, {
-  Z: () => M
+  Z: () => L
 }), n(388685), n(539854), n(781311), n(290780);
 var r, s, l, a = n(442837),
   o = n(570140),
@@ -84,7 +84,7 @@ function C(e, t) {
     tokens: u,
     cursorScope: d,
     autocompletes: h
-  }), A.emitChange()
+  }), w.emitChange()
 }
 
 function I(e, t, n) {
@@ -230,7 +230,7 @@ function k(e) {
   })
 }
 
-function w() {
+function A() {
   return k(y.Z.getCurrentSearchId())
 }
 class Z extends(r = a.ZP.Store) {
@@ -250,7 +250,7 @@ l = "SearchAutocompleteStore", (s = "displayName") in Z ? Object.defineProperty(
   configurable: !0,
   writable: !0
 }) : Z[s] = l;
-let A = new Z(o.Z, {
+let w = new Z(o.Z, {
     SEARCH_AUTOCOMPLETE_QUERY_UPDATE: function(e) {
       var t;
       let n, {
@@ -293,8 +293,8 @@ let A = new Z(o.Z, {
     },
     CHANNEL_CREATE: T,
     CHANNEL_DELETE: T,
-    STREAMER_MODE_UPDATE: w,
-    SEARCH_SCREEN_OPEN: w,
+    STREAMER_MODE_UPDATE: A,
+    SEARCH_SCREEN_OPEN: A,
     SEARCH_CLEAR_HISTORY: function(e) {
       let {
         searchId: t
@@ -323,4 +323,4 @@ let A = new Z(o.Z, {
       Object.keys(v).forEach(N)
     }
   }),
-  M = A
+  L = w
