@@ -1,25 +1,32 @@
 /** Chunk was on 2535 **/
 n.d(t, {
-  Z: () => s
-});
+  Z: () => u
+}), n(290780);
 var r = n(255367);
 n(73800);
 var i = n(442837),
   l = n(481060),
   a = n(857595),
   o = n(607070),
+  s = n(299363),
   c = n(388032);
 
-function s() {
+function u() {
   let {
     saturation: e,
     useReducedMotion: t,
-    roleStyle: n
+    roleStyle: n,
+    highContrastMode: u
   } = (0, i.cj)([o.Z], () => ({
     saturation: o.Z.saturation,
     useReducedMotion: o.Z.useReducedMotion,
-    roleStyle: o.Z.roleStyle
-  })), s = [{
+    roleStyle: o.Z.roleStyle,
+    highContrastMode: o.Z.isHighContrastModeEnabled
+  })), d = s.U.useExperiment({
+    location: "useAccessibilityItems"
+  }, {
+    autoTrackExposure: !0
+  }).enabled, p = [{
     name: c.intl.string(c.t.YEOEi4),
     value: "username"
   }, {
@@ -28,8 +35,7 @@ function s() {
   }, {
     name: c.intl.string(c.t.Ji2EVF),
     value: "hidden"
-  }];
-  return [(0, r.jsx)(l.kSQ, {
+  }], g = [(0, r.jsx)(l.kSQ, {
     children: (0, r.jsx)(l.S89, {
       id: "reduced-motion",
       label: c.intl.string(c.t.b3XBzs),
@@ -80,7 +86,7 @@ function s() {
     children: (0, r.jsx)(l.sNh, {
       id: "role-colors",
       label: c.intl.string(c.t.uSOPWl),
-      children: s.map(e => {
+      children: p.map(e => {
         let {
           name: t,
           value: i
@@ -94,5 +100,13 @@ function s() {
         }, i)
       })
     })
-  }, "role-colors")]
+  }, "role-colors")];
+  return d && g.unshift((0, r.jsx)(l.kSQ, {
+    children: (0, r.jsx)(l.S89, {
+      id: "high-contrast",
+      label: "Enable High Contrast Mode",
+      checked: u,
+      action: () => (0, a.vW)(u ? o.X.DEFAULT : o.X.HIGH)
+    })
+  }, "high-contrast")), g
 }

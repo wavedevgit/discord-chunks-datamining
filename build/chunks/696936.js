@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r = n(255367);
 n(73800);
-var s = n(120356),
-  i = n.n(s),
+var i = n(120356),
+  s = n.n(i),
   l = n(481060),
   o = n(956542);
 let a = {
@@ -20,7 +20,7 @@ function c(e) {
   let {
     color: t,
     icon: n,
-    children: s,
+    children: i,
     className: a
   } = e;
   return (0, r.jsx)(l.kzN, {
@@ -46,7 +46,7 @@ function c(e) {
       width: 20
     }, e)),
     iconClassName: o.messageBlockIcon,
-    className: i()(t, a),
-    children: s
+    className: s()(t, a),
+    children: i
   })
 }

@@ -1,6 +1,6 @@
 /**
   Module ID: 13653
-  Original File Name: 9505387c776f5418
+  Original File Name: 5b92bf1bc903162b
 **/
 .slowModeIcon_b21699 {
     display: block;
@@ -779,6 +779,10 @@
     padding: .3125rem .4375rem
 }
 
+.high-contrast-mode .reactionBtn__23977.forceShow__23977 {
+    border-color: var(--border-subtle)
+}
+
 .hideEmoji__23977 {
     opacity: 0
 }
@@ -816,6 +820,10 @@
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none
+}
+
+.high-contrast-mode .reaction__23977 {
+    border-color: var(--border-subtle)
 }
 
 .full-motion .reaction__23977.shakeReaction__23977 {
@@ -2702,4 +2710,4 @@
     pointer-events: none
 }
 
-/*# sourceMappingURL=9505387c776f5418.css.map*/
+/*# sourceMappingURL=5b92bf1bc903162b.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 80393
-  Original File Name: 7259847a0f39ea39
+  Original File Name: c618c6fb5339134f
 **/
 .pill_a2c9e8 {
     align-items: center;
@@ -2114,6 +2114,10 @@ div.profileThemedContainer__656be {
     font-weight: var(--font-weight-semibold-1x-light-theme,500)
 }
 
+.high-contrast-mode .modeConnected__2ea32 .name__2ea32,.high-contrast-mode .modeConnected__2ea32:hover .name__2ea32,.high-contrast-mode .modeSelected__2ea32 .name__2ea32,.high-contrast-mode .modeSelected__2ea32:hover .name__2ea32,.high-contrast-mode .modeUnreadImportant__2ea32 .name__2ea32,.high-contrast-mode .modeUnreadImportant__2ea32:hover .name__2ea32 {
+    font-weight: var(--font-weight-semibold)
+}
+
 .unreadImportant__2ea32 {
     background-color: var(--interactive-active)
 }
@@ -2209,4 +2213,4 @@ div.profileThemedContainer__656be {
     opacity: 1
 }
 
-/*# sourceMappingURL=7259847a0f39ea39.css.map*/
+/*# sourceMappingURL=c618c6fb5339134f.css.map*/

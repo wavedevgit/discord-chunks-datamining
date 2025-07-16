@@ -6,9 +6,9 @@ n.d(t, {
   _y: () => m
 });
 var r = n(255367),
-  s = n(73800),
-  i = n(120356),
-  l = n.n(i),
+  i = n(73800),
+  s = n(120356),
+  l = n.n(s),
   o = n(481060),
   a = n(774078),
   c = n(55935),
@@ -21,9 +21,9 @@ function g(e) {
   let {
     isTabSelected: t,
     expiresAt: n,
-    trialDuration: i,
+    trialDuration: s,
     className: u
-  } = e, d = s.useMemo(() => Date.parse(n), [n]), g = (0, a.Z)(d, 6e4);
+  } = e, d = i.useMemo(() => Date.parse(n), [n]), g = (0, a.Z)(d, 6e4);
   return Object.values(g).every(e => 0 === e) ? null : (0, r.jsx)(o.ua7, {
     text: (0, c.QX)(g, {
       days: f.t.qVGNkZ,
@@ -31,7 +31,7 @@ function g(e) {
       minutes: f.t.IzmIlZ
     }),
     children: e => {
-      var n, s;
+      var n, i;
       return (0, r.jsxs)("div", (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -49,7 +49,7 @@ function g(e) {
           })
         }
         return e
-      }({}, e), s = s = {
+      }({}, e), i = i = {
         className: l()(p.premiumTrialBadge, p.premiumTrialAcknowledgedBadge, u, {
           [p.premiumTrialBadgeSelected]: t
         }),
@@ -61,17 +61,17 @@ function g(e) {
           className: p.premiumTrialBadgeIcon
         }), (0, r.jsxs)(o.Text, {
           variant: "eyebrow",
-          children: [" ", i, " "]
+          children: [" ", s, " "]
         })]
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(s)).forEach(function(e) {
-        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(s, e))
+      })(Object(i)).forEach(function(e) {
+        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
       }), n))
     }
   })
@@ -81,15 +81,15 @@ function b(e) {
   var t;
   let {
     isTabSelected: n,
-    trialOffer: s
-  } = e, i = null == (t = (0, d.N)()) ? void 0 : t.subscription_trial, l = (0, u.a5)({
-    intervalType: null == i ? void 0 : i.interval,
-    intervalCount: null == i ? void 0 : i.interval_count
+    trialOffer: i
+  } = e, s = null == (t = (0, d.N)()) ? void 0 : t.subscription_trial, l = (0, u.a5)({
+    intervalType: null == s ? void 0 : s.interval,
+    intervalCount: null == s ? void 0 : s.interval_count
   });
   return (0, r.jsx)(m, {
     isTabSelected: n,
     badgeCopy: l,
-    offerExpiresAt: s.expires_at
+    offerExpiresAt: i.expires_at
   })
 }
 
@@ -97,13 +97,13 @@ function v(e) {
   let {
     isTabSelected: t,
     userDiscount: n,
-    includesAmountOff: s
-  } = e, i = f.intl.formatToPlainString(f.t.iiLbvr, {
+    includesAmountOff: i
+  } = e, s = f.intl.formatToPlainString(f.t.iiLbvr, {
     percent: n.discount.amount
   });
   return (0, r.jsx)(m, {
     isTabSelected: t,
-    badgeCopy: s ? i : f.intl.string(f.t["/DTtr6"]),
+    badgeCopy: i ? s : f.intl.string(f.t["/DTtr6"]),
     offerExpiresAt: n.expires_at
   })
 }
@@ -112,10 +112,10 @@ function m(e) {
   let {
     isTabSelected: t,
     badgeCopy: n,
-    offerExpiresAt: s
+    offerExpiresAt: i
   } = e;
-  return null != s ? (0, r.jsx)(g, {
-    expiresAt: s,
+  return null != i ? (0, r.jsx)(g, {
+    expiresAt: i,
     isTabSelected: t,
     trialDuration: n
   }) : (0, r.jsx)("div", {

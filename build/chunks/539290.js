@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r = n(255367);
 n(73800);
-var s = n(120356),
-  i = n.n(s),
+var i = n(120356),
+  s = n.n(i),
   l = n(780384),
   o = n(755721),
   a = n(481060),
@@ -24,7 +24,7 @@ function g(e) {
   let {
     className: t,
     color: n = u.W.YELLOW,
-    buttonPosition: s = p.BOTTOM,
+    buttonPosition: i = p.BOTTOM,
     notice: g,
     ctaLabel: b,
     ctaLoading: v,
@@ -33,12 +33,12 @@ function g(e) {
     onClick: O
   } = e, y = (0, c.ZP)();
   return (0, r.jsx)(d.Z, {
-    className: i()(f.statusWarningBlock, {
+    className: s()(f.statusWarningBlock, {
       [f.statusWarningBlockWithCta]: null != b
     }, t),
     color: (0, l.wj)(y) ? n : u.W.BROWN,
     children: (0, r.jsxs)("div", {
-      className: s,
+      className: i,
       children: [(0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: "interactive-active",
@@ -46,7 +46,7 @@ function g(e) {
       }), null != b && null != O && (0, r.jsx)("div", {
         className: f.ctaButtonContainer,
         children: (0, r.jsx)(o.zx, {
-          className: i()(f.ctaButton, (0, l.wj)(y) ? void 0 : f.ctaBlackButton, h),
+          className: s()(f.ctaButton, (0, l.wj)(y) ? void 0 : f.ctaBlackButton, h),
           color: (0, l.wj)(y) ? o.zx.Colors.WHITE : o.zx.Colors.CUSTOM,
           size: o.Ph.MEDIUM,
           onClick: O,

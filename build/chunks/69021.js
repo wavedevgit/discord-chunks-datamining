@@ -1,6 +1,6 @@
 /** Chunk was on 2535 **/
 n.d(t, {
-  Z: () => f
+  Z: () => h
 }), n(539854);
 var r = n(255367);
 n(73800);
@@ -8,8 +8,8 @@ var i = n(442837),
   l = n(481060),
   a = n(179658),
   o = n(230711),
-  c = n(482215),
-  s = n(906467),
+  s = n(482215),
+  c = n(906467),
   u = n(857192),
   d = n(594174),
   p = n(695346),
@@ -48,29 +48,29 @@ function O(e, t) {
   }), e
 }
 
-function f() {
+function h() {
   let {
     layoutDebuggingEnabled: e,
     isStaff: t,
     isDeveloper: n,
-    isLoggingGatewayEvents: f,
-    isLoggingOverlayEvents: h,
+    isLoggingGatewayEvents: h,
+    isLoggingOverlayEvents: f,
     isLoggingAnalyticsEvents: j,
     isAnalyticsDebuggerEnabled: v,
-    isTracingRequests: S,
-    isForcedCanary: E,
+    isTracingRequests: E,
+    isForcedCanary: S,
     isSourceMapsEnabled: P,
     isIdleStatusIndicatorEnabled: m,
     isAxeEnabled: x,
     preventPopoutClose: w,
     onlyShowPreviewAppCollections: k,
     disableAppCollectionsCache: D
-  } = (0, i.cj)([u.default, d.default, s.Z], () => {
+  } = (0, i.cj)([u.default, d.default, c.Z], () => {
     var e;
     return {
       layoutDebuggingEnabled: u.default.layoutDebuggingEnabled,
       isStaff: (null == (e = d.default.getCurrentUser()) ? void 0 : e.isStaff()) === !0,
-      isDeveloper: s.Z.isDeveloper,
+      isDeveloper: c.Z.isDeveloper,
       isLoggingGatewayEvents: u.default.isLoggingGatewayEvents,
       isLoggingOverlayEvents: u.default.isLoggingOverlayEvents,
       isLoggingAnalyticsEvents: u.default.isLoggingAnalyticsEvents,
@@ -89,10 +89,10 @@ function f() {
     verticalSpacing: A,
     maxHorizontalSpacing: C,
     maxVerticalSpacing: I
-  } = (0, c.i)(), {
+  } = (0, s.i)(), {
     setHorizontalSpacing: T,
     setVerticalSpacing: _
-  } = c.i.getState(), N = p.zY.useSetting(), R = [];
+  } = s.i.getState(), N = p.zY.useSetting(), R = [];
   return t && n && (R.push((0, r.jsx)(l.sNh, {
     id: "overrides",
     label: "Overrides",
@@ -114,19 +114,19 @@ function f() {
     children: [(0, r.jsx)(l.S89, {
       id: "tracing-requests",
       label: "Tracing Requests",
-      checked: S,
+      checked: E,
       action: () => {
         (0, a.y)({
-          trace: !S
+          trace: !E
         })
       }
     }, "tracing-requests"), (0, r.jsx)(l.S89, {
       id: "forced-canary",
       label: "Forced Canary",
-      checked: E,
+      checked: S,
       action: () => {
         (0, a.y)({
-          canary: !E
+          canary: !S
         })
       }
     }, "forced-canary"), (0, r.jsx)(l.S89, {
@@ -200,19 +200,19 @@ function f() {
     children: [(0, r.jsx)(l.S89, {
       id: "gateway-events",
       label: "Gateway Events",
-      checked: f,
+      checked: h,
       action: () => {
         (0, a.y)({
-          logGatewayEvents: !f
+          logGatewayEvents: !h
         })
       }
     }, "gateway-events"), (0, r.jsx)(l.S89, {
       id: "overlay-events",
       label: "Overlay RPC Events",
-      checked: h,
+      checked: f,
       action: () => {
         (0, a.y)({
-          logOverlayEvents: !h
+          logOverlayEvents: !f
         })
       }
     }, "overlay-events"), (0, r.jsx)(l.S89, {

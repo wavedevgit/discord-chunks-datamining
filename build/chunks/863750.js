@@ -3,8 +3,8 @@
 n.d(t, {
   Z: () => u
 }), n(388685);
-var r, s = n(442837),
-  i = n(570140);
+var r, i = n(442837),
+  s = n(570140);
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -24,7 +24,7 @@ let o = {
     channel_list_scrim: "Dim the channel list when chat appears"
   },
   a = {};
-class c extends(r = s.ZP.DeviceSettingsStore) {
+class c extends(r = i.ZP.DeviceSettingsStore) {
   getUserAgnosticState() {
     return {
       toggleStates: a
@@ -33,8 +33,8 @@ class c extends(r = s.ZP.DeviceSettingsStore) {
   initialize(e) {
     for (var t in o) {
       var n, r;
-      let s = null != (r = null == e || null == (n = e.toggleStates) ? void 0 : n[t]) && r;
-      a[t] = s
+      let i = null != (r = null == e || null == (n = e.toggleStates) ? void 0 : n[t]) && r;
+      a[t] = i
     }
   }
   get(e) {
@@ -55,7 +55,7 @@ class c extends(r = s.ZP.DeviceSettingsStore) {
   }
 }
 l(c, "displayName", "DevToolsDesignTogglesStore"), l(c, "persistKey", "DevToolsDesignTogglesStore");
-let u = new c(i.Z, {
+let u = new c(s.Z, {
   DEV_TOOLS_DESIGN_TOGGLE_SET: function(e) {
     a[e.toggle] = e.value
   }

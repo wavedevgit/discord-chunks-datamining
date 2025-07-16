@@ -1,6 +1,6 @@
 /**
   Module ID: 10801
-  Original File Name: eb80ef61be741262
+  Original File Name: 87d5c32da4086348
 **/
 @keyframes placeholderPulse_c8ffbb {
     0% {
@@ -9095,7 +9095,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 [data-collapsed=true]>.chat_f75fb0 {
     border-left: 1px solid var(--border-subtle);
     border-top-left-radius: var(--radius-md)
-}&.theme-midnight .content_f75fb0,&.theme-midnight .subtitleContainer_f75fb0 {
+}&.high-contrast-mode .content_f75fb0,&.high-contrast-mode .subtitleContainer_f75fb0,&.theme-midnight .content_f75fb0,&.theme-midnight .subtitleContainer_f75fb0 {
     border-left: 1px solid var(--border-subtle)
 }
 
@@ -10712,7 +10712,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     border-top: none
 }
 
-.theme-midnight .callContainer_cb9592 {
+.high-contrast-mode .callContainer_cb9592,.theme-midnight .callContainer_cb9592 {
     border-left: 1px solid var(--border-subtle)
 }
 
@@ -13270,4 +13270,4 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     position: relative
 }
 
-/*# sourceMappingURL=eb80ef61be741262.css.map*/
+/*# sourceMappingURL=87d5c32da4086348.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: 03b0b7cceca65998
+  Original File Name: e0911c69b87398f6
 **/
 .popover_f84418 {
     overflow: visible
@@ -1725,6 +1725,10 @@
     font-weight: var(--font-weight-semibold-1x-light-theme,500)
 }
 
+.high-contrast-mode .modeConnected__2ea32 .name__2ea32,.high-contrast-mode .modeConnected__2ea32:hover .name__2ea32,.high-contrast-mode .modeSelected__2ea32 .name__2ea32,.high-contrast-mode .modeSelected__2ea32:hover .name__2ea32,.high-contrast-mode .modeUnreadImportant__2ea32 .name__2ea32,.high-contrast-mode .modeUnreadImportant__2ea32:hover .name__2ea32 {
+    font-weight: var(--font-weight-semibold)
+}
+
 .unreadImportant__2ea32 {
     background-color: var(--interactive-active)
 }
@@ -2524,4 +2528,4 @@
     width: 96px
 }
 
-/*# sourceMappingURL=03b0b7cceca65998.css.map*/
+/*# sourceMappingURL=e0911c69b87398f6.css.map*/

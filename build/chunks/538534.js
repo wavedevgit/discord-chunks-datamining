@@ -329,40 +329,40 @@ function C(e) {
     radioItemClassName: r,
     collapsibleClassName: a,
     className: o,
-    value: s = null,
-    size: l = v.MEDIUM,
-    radioPosition: c = "left",
-    onChange: u = p.dG4,
-    disabled: f = !1,
-    options: _ = [],
-    "aria-labelledby": h,
-    orientation: m,
-    withTransparentBackground: E
-  } = e, O = (0, d.Gc)(), I = A({
-    labelledBy: null != h ? h : O.titleId,
-    orientation: m,
-    isDisabled: f
+    value: l = null,
+    size: c = v.MEDIUM,
+    radioPosition: u = "left",
+    onChange: f = p.dG4,
+    disabled: _ = !1,
+    options: m = [],
+    "aria-labelledby": E,
+    orientation: O,
+    withTransparentBackground: I
+  } = e, T = (0, d.Gc)(), N = A({
+    labelledBy: null != E ? E : T.titleId,
+    orientation: O,
+    isDisabled: _
   }), {
-    ref: T
-  } = I, N = y(I, ["ref"]), C = _.some(e => e.value === s);
-  return (0, i.jsx)("div", b(g({}, N), {
-    ref: T,
-    className: o,
-    children: _.map(e => (0, i.jsx)(S, {
-      hasSelection: C,
-      disabled: f,
-      checked: s === e.value,
+    ref: C
+  } = N, R = y(N, ["ref"]), P = m.some(e => e.value === l);
+  return (0, i.jsx)("div", b(g({}, R), {
+    ref: C,
+    className: s()(h.container, o),
+    children: m.map(e => (0, i.jsx)(S, {
+      hasSelection: P,
+      disabled: _,
+      checked: l === e.value,
       option: e,
-      onClick: u,
-      radioPosition: c,
-      size: l,
+      onClick: f,
+      radioPosition: u,
+      size: c,
       infoClassName: t,
       titleClassName: n,
       radioItemClassName: r,
       radioItemIconClassName: e.radioItemIconClassName,
       collapsibleClassName: a,
       radioBarClassName: e.radioBarClassName,
-      withTransparentBackground: E
+      withTransparentBackground: I
     }, e.value))
   }))
 }

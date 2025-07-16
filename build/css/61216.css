@@ -1,6 +1,6 @@
 /**
   Module ID: 61216
-  Original File Name: 3428b76d82e17d35
+  Original File Name: d82f59e20664130d
 **/
 .wrapper__74bfa {
     align-items: center;
@@ -8167,6 +8167,10 @@ html .progress__61462 {
     padding: .3125rem .4375rem
 }
 
+.high-contrast-mode .reactionBtn__23977.forceShow__23977 {
+    border-color: var(--border-subtle)
+}
+
 .hideEmoji__23977 {
     opacity: 0
 }
@@ -8204,6 +8208,10 @@ html .progress__61462 {
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none
+}
+
+.high-contrast-mode .reaction__23977 {
+    border-color: var(--border-subtle)
 }
 
 .full-motion .reaction__23977.shakeReaction__23977 {
@@ -10181,4 +10189,4 @@ html .progress__61462 {
     background-image: url(/assets/abbc14555963e723.svg)
 }
 
-/*# sourceMappingURL=3428b76d82e17d35.css.map*/
+/*# sourceMappingURL=d82f59e20664130d.css.map*/
