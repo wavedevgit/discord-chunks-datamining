@@ -154,11 +154,12 @@ function H(e) {
           children: c
         })]
       })]
-    }), "toggle" === l && !_ && (0, r.jsx)(h.XZJ, {
+    }), "toggle" === l && (0, r.jsx)(h.XZJ, {
       type: h.XZJ.Types.INVERTED,
       displayOnly: !0,
       size: 24,
       value: d,
+      disabled: _,
       className: k.checkbox
     }), "send" === l && !_ && (0, r.jsxs)("div", {
       className: k.actions,

@@ -1,6 +1,6 @@
 /**
   Module ID: 74590
-  Original File Name: 4c8ace22dd33c983
+  Original File Name: 5ac3a73699f7aca9
 **/
 .header__01c8c {
     align-items: flex-start;
@@ -18,12 +18,16 @@
     padding: 0
 }
 
+.body__01c8c {
+    margin-top: 12px
+}
+
 .content__01c8c {
     display: flex;
-    flex: 0 0 auto;
     flex-direction: row;
     height: 380px;
-    padding-left: 0
+    padding-left: 0;
+    width: 100%
 }
 
 .panel__01c8c {
@@ -39,12 +43,12 @@
 
 .votersListContainer__01c8c {
     display: flex;
+    flex: 1;
     flex-direction: column
 }
 
 .voters__01c8c {
-    flex: 1;
-    width: 410px
+    flex: 1
 }
 
 .voteDefault__01c8c,.voteSelected__01c8c {
@@ -187,4 +191,4 @@
     box-shadow: inset 0 -1px 0 hsl(var(--primary-300-hsl)/.3)
 }
 
-/*# sourceMappingURL=4c8ace22dd33c983.css.map*/
+/*# sourceMappingURL=5ac3a73699f7aca9.css.map*/

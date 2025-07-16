@@ -1,8 +1,5 @@
 /** Chunk was on 68784 **/
 e.exports = {
-  container: "container_d97f89",
-  header: "header_d97f89",
-  headerText: "headerText_d97f89",
   content: "content_d97f89",
   questionInput: "questionInput_d97f89",
   hasError: "hasError_d97f89",
@@ -18,9 +15,6 @@ e.exports = {
   addAnswerIconImageOnly: "addAnswerIconImageOnly_d97f89",
   duration: "duration_d97f89",
   durationSelect: "durationSelect_d97f89",
-  footer: "footer_d97f89",
   checkbox: "checkbox_d97f89",
-  postButton: "postButton_d97f89",
-  postButtonText: "postButtonText_d97f89",
   apiErrorBlock: "apiErrorBlock_d97f89"
 }

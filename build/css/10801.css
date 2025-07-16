@@ -1,6 +1,6 @@
 /**
   Module ID: 10801
-  Original File Name: 72eb7594df976787
+  Original File Name: ff36f6f5019f0dd1
 **/
 @keyframes placeholderPulse_c8ffbb {
     0% {
@@ -1198,6 +1198,22 @@ strong {
 
 .friendWrapper_bbd192 {
     cursor: pointer
+}
+
+.friendWrapper_bbd192.disabled_bbd192 {
+    cursor: not-allowed
+}
+
+.friendWrapper_bbd192:not(.disabled_bbd192):hover {
+    background-color: var(--background-modifier-hover)
+}
+
+.disabled_bbd192 .avatar_bbd192 {
+    opacity: 50%
+}
+
+.disabled_bbd192 .nickname_bbd192 {
+    color: var(--header-muted)
 }
 
 .friend_bbd192 {
@@ -13338,4 +13354,4 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     position: relative
 }
 
-/*# sourceMappingURL=72eb7594df976787.css.map*/
+/*# sourceMappingURL=ff36f6f5019f0dd1.css.map*/

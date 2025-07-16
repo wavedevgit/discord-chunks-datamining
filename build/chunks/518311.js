@@ -606,13 +606,14 @@ class eg extends(r = l.PureComponent) {
       let {
         user: c,
         comparator: u
-      } = s, d = l.has(c.id);
+      } = s, d = l.has(c.id), p = !d && 0 >= this.getRemaining();
       return (0, i.jsx)(en.Z, {
         row: n,
         user: c,
         hideDiscriminator: o,
         comparator: u,
         checked: d,
+        disabled: p,
         selected: n === a,
         onClick: this.handleClick,
         onMouseEnter: this.focusResult,
@@ -659,7 +660,7 @@ class eg extends(r = l.PureComponent) {
         query: n,
         channel: r
       } = this.props;
-      t.has(e) ? C.Z.removeUser(e) : (C.Z.addUser(e), n.length > 0 && C.Z.clear(null == r ? void 0 : r.id)), this.forceFocus()
+      t.has(e) ? C.Z.removeUser(e) : this.getRemaining() > 0 && (C.Z.addUser(e), n.length > 0 && C.Z.clear(null == r ? void 0 : r.id)), this.forceFocus()
     }), eo(this, "handleAddFriendNavigation", () => {
       _.Z.transitionToSection(er.pJs.ADD_FRIEND, {
         explicit: !0

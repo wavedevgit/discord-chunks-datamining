@@ -10,9 +10,9 @@ let i = e => {
   var t, n, {
       width: i = 24,
       height: o = 24,
-      color: s = a.Z.colors.INTERACTIVE_NORMAL
+      color: c = a.Z.colors.INTERACTIVE_NORMAL
     } = e,
-    c = function(e, t) {
+    s = function(e, t) {
       if (null == e) return {};
       var n, r, a = function(e, t) {
         if (null == e) return {};
@@ -44,12 +44,12 @@ let i = e => {
       })
     }
     return e
-  }({}, (0, l.Z)(c)), n = n = {
+  }({}, (0, l.Z)(s)), n = n = {
     xmlns: "http://www.w3.org/2000/svg",
     width: i,
     height: o,
     viewBox: "0 0 24 24",
-    fill: "string" == typeof s ? s : s.css,
+    fill: "string" == typeof c ? c : c.css,
     children: [(0, r.jsxs)("g", {
       "clip-path": "url(#clip0_1_16)",
       children: [(0, r.jsx)("path", {
