@@ -52,7 +52,7 @@ let Z = 15 * E.Z.Millis.MINUTE,
     } = t, m = p.length, b = h.length, E = f.length, O = g.length > 0, S = i.useCallback(() => {
       let e = f.filter(e => {
         var t, n;
-        return (null == (t = e.game) ? void 0 : t.name) != null && (null == (n = e.game) ? void 0 : n.type) === T.wW.GAME
+        return (null == (t = e.game) ? void 0 : t.name) != null && (null == (n = e.game) ? void 0 : n.type) === T.wW.DEPRECATED_GAME
       }).map(e => e.game.name);
       _.default.track(N.rMx.NOW_PLAYING_CARD_HOVERED, {
         num_users: m,
