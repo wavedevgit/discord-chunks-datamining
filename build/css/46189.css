@@ -1,6 +1,6 @@
 /**
   Module ID: 46189
-  Original File Name: 44824f58ae4737ef
+  Original File Name: 2e7f914ad21db74b
 **/
 .editCard_a25a68 {
     background-color: var(--background-surface-high);
@@ -10826,6 +10826,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     background-color: var(--input-background);
     border: 1px solid var(--input-border);
     border-radius: var(--radius-sm);
+    color: var(--text-default);
     cursor: text;
     padding: 11px;
     transition: border-color .2s ease
@@ -10839,11 +10840,11 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     border-color: var(--status-danger)
 }
 
-.prefixInput__9d137:hover {
-    border-color: var(--input-border)
+.prefixInput__9d137:hover,.prefixInput__9d137[readonly] {
+    border: 1px solid var(--input-border)
 }
 
-.prefixInput__9d137:not([readOnly]).focused__9d137:hover,.prefixInput__9d137:not([readOnly]):focus,.prefixInput__9d137:not([readOnly]):focus:hover {
+.prefixInput__9d137:not([readonly]).focused__9d137,.prefixInput__9d137:not([readonly]).focused__9d137:hover,.prefixInput__9d137:not([readonly]):focus,.prefixInput__9d137:not([readonly]):focus:hover {
     border-color: var(--text-link)
 }
 
@@ -10866,26 +10867,8 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     color: var(--input-placeholder-text)
 }
 
-.theme-light .prefixInput__9d137 {
-    background-color: hsl(var(--primary-500-hsl)/.02);
-    border-color: hsl(var(--primary-500-hsl)/.3)
-}
-
-.theme-light .prefixInput__9d137:hover {
-    border-color: hsl(var(--primary-500-hsl)/.6)
-}
-
 .theme-light .prefixInputPrefix__9d137 {
     color: hsl(var(--primary-400-hsl)/.6)
-}
-
-.theme-dark .prefixInput__9d137 {
-    background-color: var(--opacity-black-8);
-    border-color: var(--opacity-black-28)
-}
-
-.theme-dark .prefixInput__9d137:hover {
-    border-color: var(--opacity-black-60)
 }
 
 .theme-dark .prefixInputPrefix__9d137 {
@@ -12510,4 +12493,4 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     text-overflow: ellipsis
 }
 
-/*# sourceMappingURL=44824f58ae4737ef.css.map*/
+/*# sourceMappingURL=2e7f914ad21db74b.css.map*/
