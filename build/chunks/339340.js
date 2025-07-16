@@ -128,7 +128,9 @@ function P(e) {
   return w ? (0, r.jsx)(c.I, {
     transitionState: n,
     onClose: P,
-    graphic: N,
+    graphic: {
+      src: N
+    },
     title: S.intl.string(S.t["5CyJBQ"]),
     subtitle: S.intl.string(S.t.NRBYjo),
     actions: [{
