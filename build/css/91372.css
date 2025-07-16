@@ -1,6 +1,6 @@
 /**
   Module ID: 91372
-  Original File Name: 215f748184cb1bf9
+  Original File Name: c8d33b2765962455
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -4760,6 +4760,10 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
 .overflowTooltip__972a0 {
     max-width: 350px;
     width: auto
+}
+
+.withDisplayNameStyles__972a0 {
+    padding-right: 2px
 }
 
 .clanTag__972a0 {
@@ -20425,4 +20429,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=215f748184cb1bf9.css.map*/
+/*# sourceMappingURL=c8d33b2765962455.css.map*/
