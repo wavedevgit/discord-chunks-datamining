@@ -209,7 +209,7 @@ function u(e) {
       }, c(d)),
       sourceQuestContent: p
     })
-  }, [O, u, f, m, d, v, p]), I = r.useCallback(e => {
+  }, [O, u, f, m, d, v, p]), w = r.useCallback(e => {
     null != u.current && v({
       questId: O,
       event: e ? a.rMx.QUEST_VIDEO_FULLSCREEN_ENTERED : a.rMx.QUEST_VIDEO_FULLSCREEN_EXITED,
@@ -219,7 +219,7 @@ function u(e) {
       }, c(d)),
       sourceQuestContent: p
     })
-  }, [O, u, m, d, v, f, p]), w = r.useCallback(e => {
+  }, [O, u, m, d, v, f, p]), I = r.useCallback(e => {
     null != u.current && v({
       questId: O,
       event: a.rMx.QUEST_VIDEO_VOLUME_CHANGED,
@@ -243,8 +243,8 @@ function u(e) {
     trackQuestVideoBufferingStarted: D,
     trackQuestVideoBufferingEnded: T,
     trackWatchTimeAnalytics: N,
-    trackQuestVideoFullscreenChanged: I,
+    trackQuestVideoFullscreenChanged: w,
     trackQuestVideoError: k,
-    trackQuestVideoVolumeChanged: w
+    trackQuestVideoVolumeChanged: I
   }
 }

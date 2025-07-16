@@ -155,8 +155,8 @@ function _(e) {
     handleTranscriptBtnClick: P,
     handleCaptionBtnClick: N,
     handleFullScreenBtnClick: k,
-    handleSeekBackBtnClick: I,
-    handleSeekForwardBtnClick: w,
+    handleSeekBackBtnClick: w,
+    handleSeekForwardBtnClick: I,
     handleControlBarPendingInteraction: A,
     onVolumeChange: L
   } = e, R = (0, f.km)(e => e.volume), M = (0, f.km)(e => e.setVolume), V = (0, f.km)(e => e.muted), B = (0, f.km)(e => e.setMuted), F = (0, f.km)(e => e.transcriptEnabled), Z = (0, f.km)(e => e.captionEnabled), q = (0, f.km)(e => e.fullScreenEnabled), U = (0, s.e7)([m.Z], () => m.Z.useReducedMotion), Q = (0, s.e7)([m.Z], () => m.Z.keyboardModeEnabled), [G, Y] = l.useState(V ? 0 : R), [z, H] = l.useState(!1), [K, X] = l.useState(!1), [{
@@ -187,10 +187,10 @@ function _(e) {
         Q || (e.preventDefault(), T());
         break;
       case b.Y1.SEEK_BACK:
-        I();
+        w();
         break;
       case b.Y1.SEEK_FORWARD:
-        w();
+        I();
         break;
       case b.Y1.CAPTION:
         N();
@@ -201,7 +201,7 @@ function _(e) {
       case b.Y1.MUTE:
         et()
     }
-  }, [N, k, T, I, w, et, Q]);
+  }, [N, k, T, w, I, et, Q]);
   l.useEffect(() => {
     null != J.current && J.current.focus()
   }, []), l.useEffect(() => ($({
@@ -233,7 +233,7 @@ function _(e) {
         iconComponent: v.d,
         animationTime: h,
         visible: _,
-        onClick: I,
+        onClick: w,
         ariaLabel: O.intl.string(O.t.r9s3Ul),
         tooltipLabel: O.intl.string(O.t.r9s3Ul),
         shortcut: b.Y1.SEEK_BACK
@@ -241,7 +241,7 @@ function _(e) {
         iconComponent: g.o,
         animationTime: h,
         visible: _,
-        onClick: w,
+        onClick: I,
         disabled: !x,
         ariaLabel: x ? O.intl.string(O.t.zWDcND) : O.intl.string(O.t.xXh3y8),
         tooltipLabel: x ? O.intl.string(O.t.zWDcND) : O.intl.string(O.t.xXh3y8),
