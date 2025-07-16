@@ -1,6 +1,6 @@
 /**
   Module ID: 52432
-  Original File Name: 4d85c1305520c5db
+  Original File Name: 3edae8e1589e12ee
 **/
 .root__66e7e {
     background: var(--background-base-lower);
@@ -115,6 +115,10 @@
     background-image: url(/assets/8f1e1e90bea53650.svg)
 }
 
+.animatedFace__5c58b {
+    filter: none
+}
+
 .headerContainer__3131d {
     flex-direction: column
 }
@@ -174,4 +178,4 @@
     background-image: url(/assets/8f1e1e90bea53650.svg)
 }
 
-/*# sourceMappingURL=4d85c1305520c5db.css.map*/
+/*# sourceMappingURL=3edae8e1589e12ee.css.map*/

@@ -87,7 +87,7 @@ function I(e) {
       isLoopbackEnabled: t,
       toggleLoopback: n
     }
-  }(), E = C ? c.Iy5 : c.X_q, w = i.useCallback(() => (0, m.v6)(null), []), N = (0, c.dQu)(c.TVs.colors.BACKGROUND_BASE_LOWER).hex(), T = (0, c.dQu)(c.TVs.colors.WHITE).hex(), Z = i.useRef(0), A = n !== l ? Z.current + 1 : Z.current;
+  }(), E = C ? c.Iy5 : c.X_q, w = i.useCallback(() => (0, m.v6)(null), []), T = (0, c.dQu)(c.TVs.colors.BACKGROUND_BASE_LOWER).hex(), N = (0, c.dQu)(c.TVs.colors.WHITE).hex(), Z = i.useRef(0), A = n !== l ? Z.current + 1 : Z.current;
   i.useEffect(() => {
     Z.current = A
   }, [A]);
@@ -99,14 +99,14 @@ function I(e) {
       opacity: +!!D,
       height: 72 * !!D,
       pointerEvents: D ? "auto" : "none",
-      backgroundColor: null != (t = null == I ? void 0 : I.baseColor) ? t : N,
+      backgroundColor: null != (t = null == I ? void 0 : I.baseColor) ? t : T,
       config: e => "backgroundColor" === e ? {
         easing: O,
         duration: 200
       } : j,
       delay: 100 * !!L
     }, "respect-motion-settings"),
-    F = (0, c.Yzy)(null == I ? void 0 : I.id, {
+    U = (0, c.Yzy)(null == I ? void 0 : I.id, {
       key: A,
       from: {
         opacity: 0,
@@ -125,7 +125,7 @@ function I(e) {
         duration: L ? 250 : 200
       }
     }, "respect-motion-settings"),
-    [U] = (0, c.bYB)(2, e => ({
+    [F] = (0, c.bYB)(2, e => ({
       from: L ? {
         translateY: 0,
         opacity: 1
@@ -170,7 +170,7 @@ function I(e) {
         duration: 200
       } : D ? j : S
     }, "respect-motion-settings"),
-    B = (0, c.Yzy)(null == I ? void 0 : I.name, {
+    Y = (0, c.Yzy)(null == I ? void 0 : I.name, {
       key: A,
       from: {
         opacity: 0,
@@ -199,14 +199,14 @@ function I(e) {
         } : L ? j : x
       }
     }, "respect-motion-settings"),
-    Y = v.intl.string(C ? v.t.esVyo6 : v.t.UQqFCA);
+    W = v.intl.string(C ? v.t.esVyo6 : v.t.UQqFCA);
   return (0, r.jsxs)(o.animated.div, {
     className: b.voiceFilterHero,
     "aria-hidden": k,
     style: R,
     children: [(0, r.jsx)("div", {
       className: a()([b.bgGradient, b.bgGradientHighlight])
-    }), F(e => (0, r.jsx)(o.animated.div, {
+    }), U(e => (0, r.jsx)(o.animated.div, {
       className: b.bgGradient,
       style: e
     })), (0, r.jsx)("div", {
@@ -219,7 +219,7 @@ function I(e) {
       }, t))
     }), (0, r.jsx)("div", {
       className: b.descriptionWrapper,
-      children: B((e, t) => (0, r.jsxs)(o.animated.div, {
+      children: Y((e, t) => (0, r.jsxs)(o.animated.div, {
         className: b.description,
         style: e,
         children: [(0, r.jsx)(c.Text, {
@@ -236,7 +236,7 @@ function I(e) {
     }), (0, r.jsxs)("div", {
       className: b.buttonWrapper,
       children: [(0, r.jsx)(c.ua7, {
-        "aria-label": Y,
+        "aria-label": W,
         tooltipClassName: b.tooltip,
         tooltipContentClassName: b.tooltipContent,
         shouldShow: D,
@@ -245,7 +245,7 @@ function I(e) {
             variant: "heading-sm/normal",
             color: "header-primary",
             className: b.tooltipHeader,
-            children: Y
+            children: W
           }), (0, r.jsx)(c.Text, {
             variant: "text-xs/normal",
             color: "header-muted",
@@ -254,7 +254,7 @@ function I(e) {
         }),
         children: e => (0, r.jsx)(o.animated.div, {
           className: b.buttonWrapper,
-          style: U[0],
+          style: F[0],
           children: (0, r.jsx)(c.P3F, y(h({
             className: a()(b.button, {
               [b.loopbackEnabled]: C
@@ -270,7 +270,7 @@ function I(e) {
               size: "custom",
               width: 20,
               height: 20,
-              color: T
+              color: N
             })
           }))
         })
@@ -279,7 +279,7 @@ function I(e) {
         text: v.intl.string(v.t.UvMx7O),
         children: e => (0, r.jsx)(o.animated.div, {
           className: b.buttonWrapper,
-          style: U[1],
+          style: F[1],
           children: (0, r.jsx)(c.P3F, y(h({
             className: b.button,
             "aria-hidden": k,
@@ -293,7 +293,7 @@ function I(e) {
               size: "custom",
               width: 20,
               height: 20,
-              color: T
+              color: N
             })
           }))
         })

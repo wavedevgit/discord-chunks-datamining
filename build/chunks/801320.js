@@ -1,6 +1,6 @@
 /** Chunk was on 92806 **/
 o.d(t, {
-  default: () => d
+  default: () => p
 });
 var r = o(255367),
   n = o(73800),
@@ -30,12 +30,12 @@ function u(e) {
   }
   return e
 }
-let p = ["OTHER"];
+let d = ["OTHER"];
 
-function d(e) {
+function p(e) {
   let {
     analyticsData: t,
-    transitionState: d,
+    transitionState: p,
     onClose: m
   } = e;
   return n.useEffect(() => {
@@ -63,9 +63,9 @@ function d(e) {
       value: "OTHER",
       label: s.intl.string(s.t["emlT9/"])
     }],
-    freeformNeededProblems: p,
+    freeformNeededProblems: d,
     onSubmit: function(e) {
-      var n, i, p, d;
+      var n, i, d, p;
       let {
         rating: m,
         problem: f,
@@ -75,20 +75,20 @@ function d(e) {
       O && (0, a.Uv)({
         feedbackType: b.nw.VIDEO_BACKGROUND,
         location: "VideoBackgroundFeedbackModal"
-      }), null != m && (i = null != (n = null == f ? void 0 : f.value) ? n : null, l.default.track(_.rMx.VIDEO_BACKGROUND_FEEDBACK, (p = u({}, t), d = d = {
+      }), null != m && (i = null != (n = null == f ? void 0 : f.value) ? n : null, l.default.track(_.rMx.VIDEO_BACKGROUND_FEEDBACK, (d = u({}, t), p = p = {
         reason: i,
         rating: m,
         feedback: y
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(p, Object.getOwnPropertyDescriptors(d)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(d, Object.getOwnPropertyDescriptors(p)) : (function(e, t) {
         var o = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           o.push.apply(o, r)
         }
         return o
-      })(Object(d)).forEach(function(e) {
-        Object.defineProperty(p, e, Object.getOwnPropertyDescriptor(d, e))
-      }), p)), null != f && (0, c.ZDy)(async () => {
+      })(Object(p)).forEach(function(e) {
+        Object.defineProperty(d, e, Object.getOwnPropertyDescriptor(p, e))
+      }), d)), null != f && (0, c.ZDy)(async () => {
         let {
           default: e
         } = await o.e("14466").then(o.bind(o, 729328));
@@ -98,7 +98,7 @@ function d(e) {
       }))
     },
     onClose: m,
-    transitionState: d,
+    transitionState: p,
     otherKey: "OTHER"
   })
 }

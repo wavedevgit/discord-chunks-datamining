@@ -69,14 +69,14 @@ function y(e) {
       } = e;
       return t !== O.ownerId
     }).length > 0
-  })), I = (0, i.e7)([p.Z], () => p.Z.getChannel(null == O ? void 0 : O.channelId)), [P, C] = (0, u.wq)(I), E = (0, c.Aq)(), w = null != x && null != O && x.state !== g.jm8.ENDED && x.ownerId === O.ownerId, N = e => {
+  })), I = (0, i.e7)([p.Z], () => p.Z.getChannel(null == O ? void 0 : O.channelId)), [P, C] = (0, u.wq)(I), E = (0, c.Aq)(), w = null != x && null != O && x.state !== g.jm8.ENDED && x.ownerId === O.ownerId, T = e => {
     null != O && (null == j || j(), o.default.selectVoiceChannel(O.channelId), w || (0, s.iV)(O, {
       forceMultiple: e
     }), E.dispatch(g.CkL.POPOUT_CLOSE), f.S.dispatch(g.CkL.MODAL_CLOSE), a.Z.popAll())
   };
   if (null == O) return null;
-  let T = (0, u.P9)(C);
-  t ? T = _.intl.string(_.t.XvBdeX) : w && (T = _.intl.string(_.t.JH1SJy));
+  let N = (0, u.P9)(C);
+  t ? N = _.intl.string(_.t.XvBdeX) : w && (N = _.intl.string(_.t.JH1SJy));
   let Z = {
     color: n,
     look: y
@@ -84,20 +84,20 @@ function y(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(m.Z, h(b({
       disabled: t || w || !P,
-      onClick: () => N(!1)
+      onClick: () => T(!1)
     }, Z), {
       fullWidth: !0,
       children: [(0, r.jsx)(l.hGI, {
         size: "md",
         color: "currentColor",
         className: v.streamIcon
-      }), T]
+      }), N]
     }), "play"), S && !w ? (0, r.jsx)(l.ua7, {
       text: _.intl.string(_.t.wCrzur),
       children: e => (0, r.jsx)(m.Z, h(b(h(b({}, e), {
         onClick: () => {
           var t;
-          null == (t = e.onClick) || t.call(e), N(!0)
+          null == (t = e.onClick) || t.call(e), T(!0)
         }
       }), Z), {
         className: v.iconButton,

@@ -35,8 +35,8 @@ function I(e) {
     renderInputModes: C = !1,
     renderInputVolume: E = !1,
     renderOutputVolume: w = !1,
-    renderDeafen: N = !1,
-    minimal: T = !1,
+    renderDeafen: T = !1,
+    minimal: N = !1,
     onSelect: Z,
     appContext: A,
     onInteraction: D
@@ -51,15 +51,15 @@ function I(e) {
     }
   });
   let L = (0, y.Z)(A),
-    M = (0, b.Z)(k, T),
-    R = (0, h.Z)(k, T),
-    F = (0, l.e7)([_.Z], () => _.Z.getActiveInputProfile()),
-    U = (0, m.Z)(k),
+    M = (0, b.Z)(k, N),
+    R = (0, h.Z)(k, N),
+    U = (0, l.e7)([_.Z], () => _.Z.getActiveInputProfile()),
+    F = (0, m.Z)(k),
     V = (0, p.Z)(k),
-    B = (0, f.Z)(k),
-    Y = (0, g.Z)(k),
-    W = a.Yn.DEFAULT,
-    z = _.Z.isSelfDeaf(W),
+    Y = (0, f.Z)(k),
+    W = (0, g.Z)(k),
+    B = a.Yn.DEFAULT,
+    z = _.Z.isSelfDeaf(B),
     G = (0, l.e7)([_.Z], () => _.Z.getMode()),
     H = G === O.pM4.VOICE_ACTIVITY ? O.pM4.PUSH_TO_TALK : O.pM4.VOICE_ACTIVITY;
   return (0, r.jsx)(c.Z, {
@@ -71,26 +71,26 @@ function I(e) {
       onClose: t,
       navId: "audio-device-context",
       "aria-label": x.intl.string(x.t.ZR1Ss7),
-      children: [I ? M : null, n ? R : null, P ? U : null, !T && C && F !== j._.STUDIO ? (0, r.jsx)(o.kSQ, {
+      children: [I ? M : null, n ? R : null, P ? F : null, !N && C && U !== j._.STUDIO ? (0, r.jsx)(o.kSQ, {
         label: x.intl.string(x.t["pS+K2N"]),
         children: V
       }) : null, (0, r.jsxs)(o.kSQ, {
-        children: [E ? B : null, w ? Y : null, T ? (0, r.jsx)(o.Clw, {}) : null, T && N ? (0, r.jsx)(o.S89, {
+        children: [E ? Y : null, w ? W : null, N ? (0, r.jsx)(o.Clw, {}) : null, N && T ? (0, r.jsx)(o.S89, {
           id: "deafen",
           label: x.intl.string(x.t.wjcRFR),
           action: () => s.Z.toggleSelfDeaf({
-            context: W,
+            context: B,
             location: "AudioDeviceMenu"
           }),
           checked: z
-        }, "self-deafen") : null, T && I && v.isPlatformEmbedded ? (0, r.jsx)(o.S89, {
+        }, "self-deafen") : null, N && I && v.isPlatformEmbedded ? (0, r.jsx)(o.S89, {
           checked: G === O.pM4.PUSH_TO_TALK,
           id: "input-mode",
           label: x.intl.string(x.t.Q8gkVF),
           action: () => s.Z.setMode(H, void 0, void 0, {
             analyticsLocations: k
           }),
-          disabled: F === j._.STUDIO
+          disabled: U === j._.STUDIO
         }) : null, L]
       })]
     })

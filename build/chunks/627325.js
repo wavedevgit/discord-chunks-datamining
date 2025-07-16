@@ -32,7 +32,7 @@ function j(e) {
   } = e, o = S(), j = (0, s.e7)([p.default], () => (0, f.I5)(p.default.getCurrentUser())), I = P(a, j), C = Math.ceil(I.length / t), {
     isNativeModuleLoaded: E,
     isNativeModuleLoading: w,
-    catalogLastFetchTime: N
+    catalogLastFetchTime: T
   } = (0, s.cj)([g.Z], () => ({
     isNativeModuleLoaded: g.Z.isNativeModuleLoaded(),
     isNativeModuleLoading: g.Z.isNativeModuleLoading(),
@@ -68,7 +68,7 @@ function j(e) {
         onClick: E ? _.wV : _.r5
       })
     })]
-  }) : w || null == N ? (0, r.jsx)("div", {
+  }) : w || null == T ? (0, r.jsx)("div", {
     className: h.loading,
     children: (0, r.jsx)(u.$jN, {
       type: u.$jN.Type.CHASING_DOTS,

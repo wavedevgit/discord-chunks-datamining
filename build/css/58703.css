@@ -1,6 +1,6 @@
 /**
   Module ID: 58703
-  Original File Name: 6294dcf5bc2d89bc
+  Original File Name: 2085fa6fa166155e
 **/
 .root__66e7e {
     background: var(--background-base-lower);
@@ -113,6 +113,10 @@
 
 .thumbsUp__5c58b {
     background-image: url(/assets/8f1e1e90bea53650.svg)
+}
+
+.animatedFace__5c58b {
+    filter: none
 }
 
 .modalRoot__6c12c {
@@ -253,4 +257,4 @@
     margin-bottom: var(--space-16)
 }
 
-/*# sourceMappingURL=6294dcf5bc2d89bc.css.map*/
+/*# sourceMappingURL=2085fa6fa166155e.css.map*/

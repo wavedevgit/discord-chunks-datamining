@@ -1,6 +1,6 @@
 /**
   Module ID: 89
-  Original File Name: f86cca6d4ea7d959
+  Original File Name: 83e5340c886db0c9
 **/
 .root__66e7e {
     background: var(--background-base-lower);
@@ -115,6 +115,10 @@
     background-image: url(/assets/8f1e1e90bea53650.svg)
 }
 
+.animatedFace__5c58b {
+    filter: none
+}
+
 .modalRoot__6c12c {
     max-height: 900px
 }
@@ -184,4 +188,4 @@
     margin-bottom: var(--space-16)
 }
 
-/*# sourceMappingURL=f86cca6d4ea7d959.css.map*/
+/*# sourceMappingURL=83e5340c886db0c9.css.map*/

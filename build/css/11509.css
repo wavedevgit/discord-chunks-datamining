@@ -1,6 +1,6 @@
 /**
   Module ID: 11509
-  Original File Name: 2f582fe353b92968
+  Original File Name: a00cbab832217956
 **/
 .menu__43313 {
     max-height: 70vh
@@ -751,27 +751,11 @@
     background: var(--background-surface-high)
 }
 
-.voiceFiltersFooterButton_e2f668 {
-    background: var(--background-mod-faint);
-    border: 1px solid var(--border-subtle);
-    border-radius: 8px;
-    flex-grow: 0;
-    height: 40px;
-    width: 40px
-}
-
-.voiceFiltersFooterButton_e2f668:hover {
-    background: var(--background-mod-strong)
-}
-
-.resizeHandle_e2f668,.voiceFiltersFooterButton_e2f668 .voiceFiltersFooterButtonInner_e2f668 {
-    align-items: center;
-    display: flex;
-    justify-content: center
-}
-
 .resizeHandle_e2f668 {
+    align-items: center;
     cursor: ns-resize;
+    display: flex;
+    justify-content: center;
     margin-top: -2px;
     padding: 8px 0
 }
@@ -1751,4 +1735,4 @@ span.clanTag__07f91.isOverlay__07f91 {
     color: CanvasText
 }
 
-/*# sourceMappingURL=2f582fe353b92968.css.map*/
+/*# sourceMappingURL=a00cbab832217956.css.map*/

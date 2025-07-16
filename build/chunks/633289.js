@@ -164,7 +164,7 @@ class U extends(r = o.ZP.PersistedStore) {
         variantId: e.variantId,
         isOverride: !0
       }
-    })
+    }), this.trackExposureSuppression(e.experimentName, "client_override")
   }
   handleApexExperimentOverrideDelete(e) {
     let t = e.experimentName,
@@ -189,7 +189,7 @@ class U extends(r = o.ZP.PersistedStore) {
     e.isSwitchingAccount || this.clearAllServerAssignments(), s.K.remove(D), this.clearAllTrackedExposures()
   }
   registerExperiment(e) {
-    C[e.name] = e
+    C[e.name] = e, null != P[e.name] && this.trackExposureSuppression(e.name, "cookie_override")
   }
   getRegisteredExperiments() {
     return C
@@ -233,6 +233,14 @@ class U extends(r = o.ZP.PersistedStore) {
         unit_type: "user"
       }), k[n] = Date.now(), this.saveTrackedExposures(k))
     }
+  }
+  trackExposureSuppression(e, t) {
+    let n = C[e];
+    null != n && "user" === n.kind && f.default.track(h.rMx.EXPERIMENT_USER_EXPOSURE_SUPPRESSED, {
+      experiment: e,
+      unit_type: "user",
+      suppression_source: t
+    })
   }
   evaluationIds(e) {
     return Object.values(N[e]).map(e => e.evaluationId).filter(e => null != e)

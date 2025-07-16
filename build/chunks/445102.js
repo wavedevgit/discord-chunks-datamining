@@ -14,7 +14,7 @@ async function l(e, t) {
     variant: c,
     feedback: u,
     analyticsData: d
-  } = t, m = i.Z.getSettings(), b = i.Z.getInputDeviceId(), p = i.Z.getInputDevices()[b], _ = i.Z.getOutputDeviceId(), f = i.Z.getOutputDevices()[_], g = i.Z.getVideoDeviceId(), h = i.Z.getVideoDevices()[g], O = i.Z.getNoiseCancellation(), v = i.Z.getMediaEngine().getAudioSubsystem(), y = i.Z.getMediaEngine().getAudioLayer(), x = await o.Z.getKrispModel();
+  } = t, m = i.Z.getSettings(), b = i.Z.getInputDeviceId(), p = i.Z.getInputDevices()[b], _ = i.Z.getOutputDeviceId(), f = i.Z.getOutputDevices()[_], g = i.Z.getVideoDeviceId(), h = i.Z.getVideoDevices()[g], v = i.Z.getNoiseCancellation(), O = i.Z.getMediaEngine().getAudioSubsystem(), y = i.Z.getMediaEngine().getAudioLayer(), j = await o.Z.getKrispModel();
   r.default.track(e, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -47,13 +47,13 @@ async function l(e, t) {
     noise_suppression_enabled: m.noiseSuppression,
     automatic_gain_control_enabled: m.automaticGainControl,
     voice_output_volume: m.outputVolume,
-    noise_cancellation_enabled: O,
+    noise_cancellation_enabled: v,
     input_device_name: null == p ? void 0 : p.name,
     output_device_name: null == f ? void 0 : f.name,
     video_device_name: null == h ? void 0 : h.name,
-    audio_subsystem: v,
+    audio_subsystem: O,
     audio_layer: y,
     automatic_audio_subsystem: m.automaticAudioSubsystem,
-    krisp_nc_model: x
+    krisp_nc_model: j
   }, d))
 }

@@ -1,23 +1,23 @@
 /** Chunk was on 89 **/
-n.d(e, {
-  Z: () => a
+n.d(t, {
+  Z: () => o
 });
 var i = n(626135),
-  o = n(981631);
+  a = n(981631);
 
-function a(t) {
+function o(e) {
   let {
-    problem: e,
+    problem: t,
     channel: n,
-    embeddedActivityLocation: a,
+    embeddedActivityLocation: o,
     feedback: l,
     activityApplication: c,
     analyticsData: r = {},
     location: _,
     rating: d = null
-  } = t;
-  i.default.track(o.rMx.ACTIVITY_REPORT_PROBLEM, {
-    reason: e,
+  } = e;
+  i.default.track(a.rMx.ACTIVITY_REPORT_PROBLEM, {
+    reason: t,
     guild_id: null == n ? void 0 : n.getGuildId(),
     channel_id: null == n ? void 0 : n.id,
     application_id: null == c ? void 0 : c.id,
@@ -25,7 +25,7 @@ function a(t) {
     location: _,
     rating: d,
     feedback: l,
-    embedded_activity_location_kind: a.kind,
+    embedded_activity_location_kind: o.kind,
     rtc_connection_id: r.rtc_connection_id,
     media_session_id: r.media_session_id
   })
