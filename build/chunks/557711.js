@@ -1,4 +1,4 @@
-/** Chunk was on 86350 **/
+/** Chunk was on 11509 **/
 n.d(t, {
   Z: () => d
 });
@@ -18,29 +18,29 @@ function d(e) {
     user: n,
     channelId: i,
     guildId: d,
-    source: f,
-    size: p,
+    source: p,
+    size: f,
     look: m,
     color: g,
     className: _,
-    onAction: b
+    onAction: v
   } = e, {
-    tooltip: v,
+    tooltip: b,
     loading: h,
     disabled: y,
     onClick: O
-  } = (0, c.Fe)(t, n, f, s.ZP.getNickname(d, i, n)), j = () => {
-    null == b || b(), O()
+  } = (0, c.Fe)(t, n, p, s.ZP.getNickname(d, i, n)), j = () => {
+    null == v || v(), O()
   };
   return (0, r.jsx)(o.ua7, {
-    text: v,
+    text: b,
     children: e => {
       let {
         onMouseEnter: n,
         onMouseLeave: i
       } = e;
       return (0, r.jsx)(a.zx, {
-        size: p,
+        size: f,
         className: l()(u.syncButton, _),
         innerClassName: u.syncButtonInner,
         look: m,
@@ -50,7 +50,7 @@ function d(e) {
         onMouseLeave: i,
         disabled: y,
         submitting: h,
-        "aria-label": null != v ? v : t.name,
+        "aria-label": null != b ? b : t.name,
         children: (0, r.jsx)(o.iOO, {
           size: "xs",
           color: "currentColor"

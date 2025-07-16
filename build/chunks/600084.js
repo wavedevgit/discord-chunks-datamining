@@ -1,4 +1,4 @@
-/** Chunk was on 51977 **/
+/** Chunk was on 10801 **/
 n.d(t, {
   Z: () => V
 });
@@ -36,8 +36,8 @@ var r = n(255367),
   R = n(184279),
   M = n(438306),
   D = n(544142),
-  k = n(128557),
-  L = n(981631),
+  L = n(128557),
+  k = n(981631),
   U = n(176505),
   B = n(388032),
   F = n(906667),
@@ -55,7 +55,7 @@ function G(e) {
   if (C.Ec.has(n.type)) return (0, r.jsx)(D.Z, {
     channel: n
   });
-  if (a) return (0, r.jsx)(k.Z, {
+  if (a) return (0, r.jsx)(L.Z, {
     channel: n
   });
   if (i) return (0, r.jsx)(w.Z, {
@@ -77,15 +77,15 @@ function V(e) {
     canManageRoles: M,
     canReadMessageHistory: D
   } = (0, l.cj)([O.Z], () => ({
-    canManageRoles: O.Z.can(L.Plq.MANAGE_ROLES, h),
-    canReadMessageHistory: O.Z.can(L.Plq.READ_MESSAGE_HISTORY, h)
-  })), k = (0, l.e7)([_.Z], () => v === L.d4z.DM ? _.Z.getMutualGuilds(h.getRecipientId()) : null, [h, v]), {
+    canManageRoles: O.Z.can(k.Plq.MANAGE_ROLES, h),
+    canReadMessageHistory: O.Z.can(k.Plq.READ_MESSAGE_HISTORY, h)
+  })), L = (0, l.e7)([_.Z], () => v === k.d4z.DM ? _.Z.getMutualGuilds(h.getRecipientId()) : null, [h, v]), {
     systemDMRedesignEnabled: V
   } = b.Z.useExperiment({
     location: "bf1a4f_1"
   }, {
     autoTrackExposure: null != (t = h.isSystemDM()) && t
-  }), z = (0, d.Z)(null != (n = null == I ? void 0 : I.id) ? n : L.lds), {
+  }), z = (0, d.Z)(null != (n = null == I ? void 0 : I.id) ? n : k.lds), {
     authorizedAppToken: W,
     authorizedAppsFetchState: Y
   } = (0, l.cj)([x.Z], () => {
@@ -98,10 +98,10 @@ function V(e) {
     location: "EmptyMessages"
   }).enabledDesktop;
   if (i.useEffect(() => {
-      v === L.d4z.DM && null == k && null != I && s.Z.wait(() => (0, y.Z)(h.getRecipientId(), I.getAvatarURL(null, 80), {
+      v === k.d4z.DM && null == L && null != I && s.Z.wait(() => (0, y.Z)(h.getRecipientId(), I.getAvatarURL(null, 80), {
         withMutualGuilds: !0
       }))
-    }, [k, v, h, I]), i.useEffect(() => {
+    }, [L, v, h, I]), i.useEffect(() => {
       (null == I ? void 0 : I.bot) && Y === x.M.NOT_FETCHED && c.Z.fetch()
     }, [null == I ? void 0 : I.bot, Y]), h.isSystemDM()) return V ? (0, r.jsx)(R.Z, {
     channel: h
@@ -109,7 +109,7 @@ function V(e) {
     channel: h,
     children: B.intl.string(B.t.Rzvnio)
   });
-  if (v === L.d4z.DM) {
+  if (v === k.d4z.DM) {
     let e;
     return null != I && null != z ? null != W && (e = (0, r.jsxs)("div", {
       className: F.buttonContainer,

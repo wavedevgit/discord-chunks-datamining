@@ -5,7 +5,7 @@ n.d(t, {
   FZ: () => S,
   Hl: () => $,
   Je: () => R,
-  Jh: () => M,
+  Jh: () => k,
   KK: () => z,
   Oe: () => T,
   Qi: () => H,
@@ -22,7 +22,7 @@ n.d(t, {
   ig: () => N,
   nL: () => W,
   nW: () => w,
-  tb: () => k,
+  tb: () => M,
   tl: () => q,
   vx: () => U,
   y4: () => K,
@@ -273,18 +273,18 @@ function D(e) {
 let L = i().memoize(e => y.HO[E.Eu4.TIER_1].features.includes(e) ? E.Eu4.TIER_1 : y.HO[E.Eu4.TIER_2].features.includes(e) ? E.Eu4.TIER_2 : y.HO[E.Eu4.TIER_3].features.includes(e) ? E.Eu4.TIER_3 : null),
   x = e => e === E.Eu4.NONE ? E.Qqv.NONE : e === E.Eu4.TIER_1 ? E.Qqv.TIER_1 : e === E.Eu4.TIER_2 ? E.Qqv.TIER_2 : e === E.Eu4.TIER_3 ? E.Qqv.TIER_3 : null;
 
-function M(e) {
+function k(e) {
   var t;
   let n = null == (t = u.Z.getGuild(e)) ? void 0 : t.premiumTier;
   return null != n ? n : E.Eu4.NONE
 }
 
-function k(e, t) {
+function M(e, t) {
   return null == t || null != e && e >= t
 }
 
 function j(e, t) {
-  return k(e.premiumTier, t)
+  return M(e.premiumTier, t)
 }
 
 function U(e) {
@@ -344,7 +344,7 @@ function B(e) {
 function V(e, t) {
   var n;
   if ((null == (n = u.Z.getGuild(t)) ? void 0 : n.features.has(E.oNc.PREMIUM_TIER_3_OVERRIDE)) === !0) return 0;
-  let r = M(t),
+  let r = k(t),
     i = E.oCV[r],
     a = e.filter(e => null != e.endsAt);
   return i - (e.length - a.length)
@@ -373,7 +373,7 @@ function Z(e, t) {
       message: "Negative index while checking grace period ending date.",
       data: {
         subscriptionLength: e.length,
-        subscriptionsNeededForPremiumTier: E.oCV[M(t)],
+        subscriptionsNeededForPremiumTier: E.oCV[k(t)],
         endingSubscriptionLength: r.length
       }
     });

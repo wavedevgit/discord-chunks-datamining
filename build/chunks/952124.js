@@ -109,7 +109,7 @@ function v(e) {
       action: "COPY_APP_ID",
       analyticsLocations: S
     })
-  }), M = [
+  }), k = [
     [y], N ? [P] : [],
     [D, w, L],
     [(0, u.Z)({
@@ -121,7 +121,7 @@ function v(e) {
       })
     }), x]
   ];
-  return M.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(o.yRy, {
+  return k.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(o.yRy, {
     targetElementRef: I,
     renderPopout: e => {
       let {
@@ -132,7 +132,7 @@ function v(e) {
         onSelect: void 0,
         onClose: t,
         "aria-label": b.intl.string(b.t.AXIHpa),
-        children: M.map((e, t) => (0, r.jsx)(o.kSQ, {
+        children: k.map((e, t) => (0, r.jsx)(o.kSQ, {
           children: e.map(e => e)
         }, t))
       })

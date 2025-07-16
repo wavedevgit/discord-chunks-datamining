@@ -1,4 +1,4 @@
-/** Chunk was on 51977 **/
+/** Chunk was on 10801 **/
 e.exports = {
   trigger: "trigger__88a38",
   video: "video__88a38",

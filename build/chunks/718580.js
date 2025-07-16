@@ -137,13 +137,13 @@ function S(e) {
   });
   let {
     ref: x,
-    width: M = 0,
-    height: k = 0
+    width: k = 0,
+    height: M = 0
   } = (0, u.ZP)(N), j = m({}, O, T.springConfig, P.enabled ? {
     clamp: !0
   } : null), U = (0, c.q_F)({
-    width: null != (n = T.width) ? n : M,
-    height: k,
+    width: null != (n = T.width) ? n : k,
+    height: M,
     config: j
   }, null == C ? "animate-never" : "respect-motion-settings"), G = (0, c.Yzy)(N, {
     value: 0,

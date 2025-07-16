@@ -47,7 +47,7 @@ let x = () => (0, r.jsx)("div", {
       })]
     })
   }),
-  M = e => {
+  k = e => {
     let {
       markAsDismissed: t
     } = e, n = (0, N.q)(), i = () => {
@@ -69,7 +69,7 @@ let x = () => (0, r.jsx)("div", {
       })]
     })
   },
-  k = e => {
+  M = e => {
     var t, n, i;
     let {
       onSubscribeSuccess: a,
@@ -121,7 +121,7 @@ let x = () => (0, r.jsx)("div", {
     }, () => D.intl.string(D.t["dqH+qq"])).otherwise(() => D.intl.string(D.t.Olc2Ky));
     return (0, r.jsxs)("div", {
       className: L.editorFooter,
-      children: [a && (0, r.jsx)(k, {
+      children: [a && (0, r.jsx)(M, {
         onSubscribeSuccess: () => {
           c(!0)
         },
@@ -166,7 +166,7 @@ function U(e) {
       "data-app-right-panel": !0,
       className: o()(L.themeEditor, c ? L.editorAnimate : null),
       children: (0, r.jsxs)(d.y5t, {
-        children: [n ? (0, r.jsx)(x, {}) : (0, r.jsx)(M, {
+        children: [n ? (0, r.jsx)(x, {}) : (0, r.jsx)(k, {
           markAsDismissed: t
         }), (0, r.jsx)(d.Ttm, {
           className: L.editorBody,

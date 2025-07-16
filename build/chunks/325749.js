@@ -36,15 +36,15 @@ var r = t(255367),
   E = t(317381),
   R = t(426419),
   U = t(513202),
-  B = t(884338),
-  D = t(617552),
-  L = t(473179),
+  D = t(884338),
+  L = t(617552),
+  B = t(473179),
   Y = t(932174),
   z = t(225639),
   W = t(981631),
   K = t(388032),
   M = t(951927);
-let J = B.u8.SIZE_24;
+let J = D.u8.SIZE_24;
 
 function V(e) {
   let {
@@ -60,7 +60,7 @@ function V(e) {
     }), e
   }, [F]), X = o.useCallback((e, n) => {
     var t;
-    if (null == e || e === B.ag) return null;
+    if (null == e || e === D.ag) return null;
     let o = q.get(e.id),
       i = null != (t = null == o ? void 0 : o.nick) ? t : T.ZP.getName(e);
     return (0, r.jsx)(u.DY3, {
@@ -145,7 +145,7 @@ function V(e) {
             color: "text-muted",
             children: "."
           })
-        }), (0, r.jsx)(B.ZP, {
+        }), (0, r.jsx)(D.ZP, {
           renderIcon: !1,
           users: Q,
           size: J,
@@ -179,7 +179,7 @@ function V(e) {
             popoutOpen: !0,
             onOpenPopout: () => {},
             onClosePopout: () => {
-              (0, d.yw)(W.rMx.ACTIVITY_POPOUT_POP_IN_BUTTON_CLICKED), (0, D.Z)({
+              (0, d.yw)(W.rMx.ACTIVITY_POPOUT_POP_IN_BUTTON_CLICKED), (0, L.Z)({
                 onConfirm: () => {
                   U.Z.popInActivity()
                 }
@@ -197,7 +197,7 @@ function V(e) {
                 closePopout: n
               } = e;
               return (0, r.jsx)(j.Z, {
-                children: (0, r.jsx)(L.Z, {
+                children: (0, r.jsx)(B.Z, {
                   application: i,
                   channelId: t,
                   onClose: n

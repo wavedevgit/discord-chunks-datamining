@@ -1,4 +1,4 @@
-/** Chunk was on 86350 **/
+/** Chunk was on 11509 **/
 n.d(t, {
   Z: () => c
 });
@@ -17,21 +17,21 @@ function c(e) {
     source: c,
     className: u,
     size: d,
-    look: f,
-    color: p,
+    look: p,
+    color: f,
     fullWidth: m,
     onAction: g
   } = e, {
     label: _,
-    tooltip: b,
-    loading: v,
+    tooltip: v,
+    loading: b,
     disabled: h,
     onClick: y
   } = (0, o.Ih)(t, n, c), O = () => {
     null == g || g(), y()
   };
   return (0, r.jsx)(l.ua7, {
-    text: b,
+    text: v,
     children: e => {
       let {
         onMouseEnter: t,
@@ -41,14 +41,14 @@ function c(e) {
         className: u,
         innerClassName: s.playButtonInner,
         size: d,
-        look: f,
-        color: p,
+        look: p,
+        color: f,
         fullWidth: m,
         onClick: O,
         onMouseEnter: t,
         onMouseLeave: n,
         disabled: h,
-        submitting: v,
+        submitting: b,
         children: [(0, r.jsx)(a.Z, {
           width: 16,
           height: 16

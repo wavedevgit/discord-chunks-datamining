@@ -1,4 +1,4 @@
-/** Chunk was on 86350 **/
+/** Chunk was on 11509 **/
 n.d(t, {
   Z: () => _
 }), n(388685);
@@ -19,7 +19,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function p(e) {
   let {
     percentage: t,
     isSingleLine: n
@@ -38,7 +38,7 @@ function f(e) {
   })
 }
 
-function p(e) {
+function f(e) {
   return String(e).padStart(2, "0")
 }
 
@@ -47,7 +47,7 @@ function m(e) {
     time: t,
     padLargestUnit: n
   } = e, r = Math.floor(t) % 60, i = Math.floor(t / 60) % 60, l = Math.floor(t / 3600);
-  return 0 === l ? n ? "".concat(p(i), ":").concat(p(r)) : "".concat(i, ":").concat(p(r)) : n ? "".concat(p(l), ":").concat(p(i), ":").concat(p(r)) : "".concat(l, ":").concat(p(i), ":").concat(p(r))
+  return 0 === l ? n ? "".concat(f(i), ":").concat(f(r)) : "".concat(i, ":").concat(f(r)) : n ? "".concat(f(l), ":").concat(f(i), ":").concat(f(r)) : "".concat(l, ":").concat(f(i), ":").concat(f(r))
 }
 class g extends(r = l.PureComponent) {
   componentDidMount() {
@@ -82,7 +82,7 @@ class g extends(r = l.PureComponent) {
         })
       }), (0, i.jsx)("div", {
         className: u.barInSingleLine,
-        children: (0, i.jsx)(f, {
+        children: (0, i.jsx)(p, {
           percentage: d / s,
           isSingleLine: !0
         })
@@ -97,7 +97,7 @@ class g extends(r = l.PureComponent) {
       className: o()(n, {
         [u.themed]: r
       }),
-      children: [(0, i.jsx)(f, {
+      children: [(0, i.jsx)(p, {
         percentage: d / s,
         isSingleLine: !1
       }), (0, i.jsxs)(c.Z, {

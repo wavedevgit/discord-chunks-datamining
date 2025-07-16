@@ -172,8 +172,8 @@ function v(e, t, n, a) {
       renderSection: D,
       renderRow: L,
       renderFooter: x,
-      renderSidebar: M,
-      renderListHeader: k,
+      renderSidebar: k,
+      renderListHeader: M,
       stickyListHeader: j,
       wrapSection: U,
       getAnchorId: G,
@@ -303,7 +303,7 @@ function v(e, t, n, a) {
           containerRef: et,
           children: y({
             items: ec,
-            renderListHeader: k,
+            renderListHeader: M,
             stickyListHeader: j,
             renderSection: D,
             renderRow: L,
@@ -312,12 +312,12 @@ function v(e, t, n, a) {
             spacerTop: es
           })
         })
-      }), [J, W, K, z, q, X, el, Q, ec, k, j, D, L, x, U, es]), i.useMemo(() => O({
+      }), [J, W, K, z, q, X, el, Q, ec, M, j, D, L, x, U, es]), i.useMemo(() => O({
         isSidebarVisible: eu,
-        renderSidebar: M,
+        renderSidebar: k,
         sidebarHeight: P,
         isListVisible: 0 !== ec.length
-      }), [eu, M, P, ec.length])]
+      }), [eu, k, P, ec.length])]
     }))
   })
 }

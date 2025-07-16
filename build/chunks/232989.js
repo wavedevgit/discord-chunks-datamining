@@ -1,4 +1,4 @@
-/** Chunk was on 51977 **/
+/** Chunk was on 10801 **/
 e.exports = {
   button: "button__9db96",
   speaker: "speaker__9db96",

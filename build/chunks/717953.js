@@ -79,13 +79,13 @@ function v(e) {
     return {
       background: "var(--background-gradient), ".concat(e)
     }
-  }, [I, P]), D = (0, f.Sl)(g.Il.WHITE).hex, L = (0, f.Sl)(g.Il.RED_430).hex, x = C ? D : void 0, M = i.useCallback(() => {
+  }, [I, P]), D = (0, f.Sl)(g.Il.WHITE).hex, L = (0, f.Sl)(g.Il.RED_430).hex, x = C ? D : void 0, k = i.useCallback(() => {
     T && S(), null == v || v()
   }, [T, S, v]);
   return (0, r.jsxs)("div", {
     className: y.badgeContainer,
     children: [(0, r.jsxs)(h.S4, {
-      onSelect: a ? void 0 : M,
+      onSelect: a ? void 0 : k,
       isSelected: !1,
       showSelectionCircle: C,
       name: b.intl.string(E.default.KSBBpK),

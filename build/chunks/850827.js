@@ -1,4 +1,4 @@
-/** Chunk was on 86350 **/
+/** Chunk was on 11509 **/
 n.d(t, {
   Z: () => M
 });
@@ -12,45 +12,45 @@ var i = n(120356),
   c = n(755721),
   u = n(730749),
   d = n(726542),
-  f = n(40851),
-  p = n(600164),
+  p = n(40851),
+  f = n(600164),
   m = n(750154),
   g = n(892001),
   _ = n(594174),
-  b = n(374129),
-  v = n(639351),
+  v = n(374129),
+  b = n(639351),
   h = n(503438),
   y = n(802856),
   O = n(387903),
   j = n(606925),
-  S = n(719216),
-  x = n(429589),
+  x = n(719216),
+  S = n(429589),
   I = n(636245),
-  C = n(697761),
-  P = n(611459),
+  P = n(697761),
+  C = n(611459),
   E = n(544671),
   w = n(757182),
-  T = n(910424),
-  N = n(981631),
+  N = n(910424),
+  T = n(981631),
   Z = n(477839),
   A = n(388032),
   D = n(603571),
-  L = n(126485);
-let k = e => {
+  k = n(126485);
+let L = e => {
     let {
       user: t,
       color: n,
       look: i,
       activity: l,
       onAction: a
-    } = e, o = (0, f.Aq)();
-    return (0, r.jsx)(S.Z, {
+    } = e, o = (0, p.Aq)();
+    return (0, r.jsx)(x.Z, {
       user: t,
       color: n,
       look: i,
       activity: l,
       onAction: () => {
-        o.dispatch(N.CkL.POPOUT_CLOSE), (0, g.closeUserProfileModal)(), null == a || a()
+        o.dispatch(T.CkL.POPOUT_CLOSE), (0, g.closeUserProfileModal)(), null == a || a()
       }
     }, "custom-activity-button")
   },
@@ -61,7 +61,7 @@ let k = e => {
       user: i,
       applicationStream: a,
       className: u,
-      guildId: f,
+      guildId: p,
       channelId: g,
       source: M,
       color: R = c.zx.Colors.WHITE,
@@ -71,7 +71,7 @@ let k = e => {
     } = e, B = (0, s.e7)([_.default], () => {
       let e = _.default.getCurrentUser();
       return o()(null != e, "UserActivityActions: currentUser cannot be undefined"), e
-    }), Y = U === O.Y.STREAM_PREVIEW || null != a, W = (0, h.Z)(t), z = W || Y ? p.Z.Direction.HORIZONTAL : p.Z.Direction.VERTICAL;
+    }), Y = U === O.Y.STREAM_PREVIEW || null != a, W = (0, h.Z)(t), z = W || Y ? f.Z.Direction.HORIZONTAL : f.Z.Direction.VERTICAL;
     if ((null == t ? void 0 : t.application_id) === Z.bO) {
       var G, H;
       return G = function(e) {
@@ -105,7 +105,7 @@ let k = e => {
         return n
       })(Object(H)).forEach(function(e) {
         Object.defineProperty(G, e, Object.getOwnPropertyDescriptor(H, e))
-      }), t = G, (0, r.jsx)(k, {
+      }), t = G, (0, r.jsx)(L, {
         user: i,
         color: R,
         look: F,
@@ -113,40 +113,40 @@ let k = e => {
         onAction: V
       })
     }
-    let J = z === p.Z.Direction.VERTICAL;
-    return (0, r.jsx)(p.Z, {
+    let J = z === f.Z.Direction.VERTICAL;
+    return (0, r.jsx)(f.Z, {
       grow: 0,
-      align: p.Z.Align.STRETCH,
+      align: f.Z.Align.STRETCH,
       direction: z,
-      wrap: J ? p.Z.Wrap.WRAP : p.Z.Wrap.NO_WRAP,
-      className: l()(u, L.buttonsWrapper, J ? L.vertical : L.horizontal),
+      wrap: J ? f.Z.Wrap.WRAP : f.Z.Wrap.NO_WRAP,
+      className: l()(u, k.buttonsWrapper, J ? k.vertical : k.horizontal),
       children: (() => {
         if ((0, y.Z)(t)) return (0, r.jsx)(j.Z, {
-          platform: d.Z.get(N.ABu.XBOX),
+          platform: d.Z.get(T.ABu.XBOX),
           look: F,
           color: R,
-          onAction: V,
-          Icon: v.Z
-        }, "ConnectPlatformActivityButton");
-        if ((null == t ? void 0 : t.platform) === N.M7m.PS4 || (null == t ? void 0 : t.platform) === N.M7m.PS5) return (0, r.jsx)(j.Z, {
-          look: F,
-          color: R,
-          platform: d.Z.get(N.ABu.PLAYSTATION),
           onAction: V,
           Icon: b.Z
+        }, "ConnectPlatformActivityButton");
+        if ((null == t ? void 0 : t.platform) === T.M7m.PS4 || (null == t ? void 0 : t.platform) === T.M7m.PS5) return (0, r.jsx)(j.Z, {
+          look: F,
+          color: R,
+          platform: d.Z.get(T.ABu.PLAYSTATION),
+          onAction: V,
+          Icon: v.Z
         }, "ConnectPlatformActivityButton");
         if (W) {
           let e = (0, r.jsx)(E.Z, {
               activity: t,
               user: i,
-              guildId: f,
+              guildId: p,
               channelId: g,
               source: M,
               look: F,
               color: R,
               onAction: V
             }, "spotify-activity-sync-button"),
-            n = (0, r.jsx)(P.Z, {
+            n = (0, r.jsx)(C.Z, {
               activity: t,
               user: i,
               source: M,
@@ -168,7 +168,7 @@ let k = e => {
             onAction: V
           }, e.channelId)
         }
-        return Y ? (0, r.jsx)(T.Z, {
+        return Y ? (0, r.jsx)(N.Z, {
           isCurrentUser: B.id === i.id,
           color: R,
           look: F,
@@ -180,20 +180,20 @@ let k = e => {
             color: R,
             look: F,
             onAction: V
-          }, "watch-button"), (0, r.jsx)(x.Z, {
+          }, "watch-button"), (0, r.jsx)(S.Z, {
             activity: t,
             embeddedActivity: n,
             user: i,
             color: R,
             look: F,
             onAction: V
-          }, "join-activity-button"), (0, r.jsx)(C.Z, {
+          }, "join-activity-button"), (0, r.jsx)(P.Z, {
             activity: t,
             user: i,
             color: R,
             look: F,
             onAction: V
-          }, "notify-button"), (0, r.jsx)(S.Z, {
+          }, "notify-button"), (0, r.jsx)(x.Z, {
             user: i,
             color: R,
             look: F,

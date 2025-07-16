@@ -1,4 +1,4 @@
-/** Chunk was on 86350 **/
+/** Chunk was on 11509 **/
 n.d(t, {
   l: () => d
 }), n(388685);
@@ -13,11 +13,11 @@ var r = n(255367),
 
 function d() {
   let e = (0, a.e7)([s.Z], () => s.Z.getError());
-  return e ? (0, r.jsx)(f, {
+  return e ? (0, r.jsx)(p, {
     error: e
   }) : null
 }
-let f = e => {
+let p = e => {
   let {
     error: t
   } = e, [n, a] = (0, i.useState)(!1), d = (0, o.Yzy)(!n, {
@@ -33,7 +33,7 @@ let f = e => {
       opacity: 0,
       translateY: 80
     }
-  }, "respect-motion-settings"), f = (() => {
+  }, "respect-motion-settings"), p = (() => {
     switch (t) {
       case s.r.ERROR_DOWNLOADING_DEPENDENCY:
         return c.intl.string(c.t.D9neaG);
@@ -51,7 +51,7 @@ let f = e => {
       children: [(0, r.jsx)(o.Text, {
         variant: "text-sm/semibold",
         color: "always-white",
-        children: f
+        children: p
       }), (0, r.jsx)(o.RyX, {
         onClick: () => a(!0)
       })]

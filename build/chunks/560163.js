@@ -1,4 +1,4 @@
-/** Chunk was on 51977 **/
+/** Chunk was on 10801 **/
 e.exports = {
   buttonContainer: "buttonContainer_e6e74f",
   entrypointAnimation: "entrypointAnimation_e6e74f",

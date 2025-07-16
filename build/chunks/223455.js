@@ -53,7 +53,8 @@ function D(e) {
         }), (0, n.jsx)(g.Z, {
           channel: a
         }), (0, n.jsx)(c.Z, {
-          inPopoutWindow: !0
+          popoutWindowKey: t,
+          popoutWindowHasTitleBar: !0
         })]
       })
     })

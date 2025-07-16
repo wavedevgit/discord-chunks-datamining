@@ -78,8 +78,8 @@ let v = {
 function _() {
   let [e, t] = r.useState(!1), [a, l] = r.useState(s.a.PREMIUM_TIER_2_1_HOUR), [u, v] = r.useState([]), [_, y] = r.useState([]), {
     refreshEntitlementList: C,
-    grantFractionalPremium: O,
-    deleteFractionalPremium: N,
+    grantFractionalPremium: N,
+    deleteFractionalPremium: O,
     triggerNextEntitlementFulfillment: T,
     entitlements: E,
     loading: S
@@ -151,7 +151,7 @@ function _() {
         }), (0, n.jsx)(c.zxk, {
           variant: "primary",
           text: "Grant Fractional Nitro",
-          onClick: () => O(a)
+          onClick: () => N(a)
         })]
       }), (0, n.jsxs)("section", {
         className: h.section,
@@ -180,7 +180,7 @@ function _() {
               size: o.zx.Sizes.TINY,
               color: o.zx.Colors.RED,
               look: o.zx.Looks.OUTLINED,
-              onClick: () => N(),
+              onClick: () => O(),
               children: "Delete all"
             }), (0, n.jsx)(o.zx, {
               disabled: S,
@@ -207,7 +207,7 @@ function _() {
             children: u.map(e => (0, n.jsx)(j, {
               entitlement: e,
               active: !0,
-              onDelete: () => N(e.id)
+              onDelete: () => O(e.id)
             }, e.id))
           })]
         }), _.length > 0 && (0, n.jsxs)("div", {

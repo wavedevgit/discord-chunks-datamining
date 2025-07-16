@@ -1,4 +1,4 @@
-/** Chunk was on 51977 **/
+/** Chunk was on 10801 **/
 n.d(t, {
   Z: () => v
 });
@@ -83,18 +83,18 @@ function v(e) {
       N.removeEventListener(_.NO, e)
     }
   }, [N, S, D, T]);
-  let k = {
+  let L = {
       channel: t,
       maybeLeaveFullScreen: M
     },
-    L = i.useRef(k);
+    k = i.useRef(L);
   return (i.useEffect(() => {
-    L.current = k
+    k.current = L
   }), i.useEffect(() => {
     let {
       channel: e,
       maybeLeaveFullScreen: t
-    } = L.current;
+    } = k.current;
     return m.default.track(y.rMx.VIDEO_LAYOUT_TOGGLED, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},

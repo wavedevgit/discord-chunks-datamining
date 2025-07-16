@@ -82,13 +82,13 @@ let b = e => ({
             variant: "text-xs/normal",
             color: "text-tertiary",
             className: v.text,
-            children: x.intl.format(O ? x.t.SLhH39 : x.t.WkK72t, {
+            children: x.intl.format(x.t.WkK72t, {
               count: E[e.value]
             })
           })]
         })]
       })
-    }, [E, N, O]);
+    }, [E, N]);
     return l.useEffect(() => {
       var e;
       C.length < 1 ? d(h.ze.NO_PERMISSIONS) : null != n && (null != (e = null == E ? void 0 : E[n]) ? e : 0) < 1 ? d(f.evJ.TOO_MANY_EMOJI) : d(null)

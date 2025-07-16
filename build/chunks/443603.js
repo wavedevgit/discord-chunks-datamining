@@ -105,9 +105,9 @@ function O(e) {
     "aria-haspopup": D,
     "aria-controls": L,
     noHover: x
-  } = e, M = (0, c.Yzy)(null != E, g(h({}, y), {
+  } = e, k = (0, c.Yzy)(null != E, g(h({}, y), {
     keys: e => e ? "children" : "icon"
-  })), k = e => {
+  })), M = e => {
     let {
       component: t
     } = e;
@@ -150,20 +150,20 @@ function O(e) {
         bottom: 4
       }
     },
-    children: [M((e, t, n) => {
+    children: [k((e, t, n) => {
       let {
         key: i
       } = n;
       return t ? (0, r.jsx)(s.animated.div, {
         style: e,
         className: o()(_.buttonWrapper, a),
-        children: k({
+        children: M({
           component: E
         })
       }, i) : null != m ? (0, r.jsx)(s.animated.div, {
         style: e,
         className: o()(_.buttonWrapper, a),
-        children: k({
+        children: M({
           component: (0, r.jsx)(m, {
             className: o()(_.icon, p, {
               [_.pulseIcon]: N

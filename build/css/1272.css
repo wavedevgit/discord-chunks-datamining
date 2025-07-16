@@ -1,6 +1,6 @@
 /**
   Module ID: 1272
-  Original File Name: f73d3df33183c31c
+  Original File Name: a510386fc2d6f20f
 **/
 .container__74da2 {
     align-items: center;
@@ -3340,6 +3340,8 @@
 }
 
 .sectionTitle_dcc822 {
+    align-items: center;
+    display: flex;
     margin-bottom: 10px;
     margin-left: 10px
 }
@@ -8556,4 +8558,4 @@ html .tabBadge__35e86 {
     margin-bottom: 18px
 }
 
-/*# sourceMappingURL=f73d3df33183c31c.css.map*/
+/*# sourceMappingURL=a510386fc2d6f20f.css.map*/

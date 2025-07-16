@@ -1,4 +1,4 @@
-/** Chunk was on 51977 **/
+/** Chunk was on 10801 **/
 e.exports = {
   safetyBanner: "safetyBanner__51e4d",
   safetyShieldIcon: "safetyShieldIcon__51e4d",

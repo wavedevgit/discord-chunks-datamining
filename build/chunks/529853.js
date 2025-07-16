@@ -1,4 +1,4 @@
-/** Chunk was on 51977 **/
+/** Chunk was on 10801 **/
 e.exports = {
   summary: "summary__3af26",
   speakers: "speakers__3af26",

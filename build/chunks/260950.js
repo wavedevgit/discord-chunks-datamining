@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 a.d(t, {
-  Z: () => O
+  Z: () => N
 }), a(388685), a(642613);
 var n = a(255367),
   r = a(73800),
@@ -54,17 +54,17 @@ let y = async () => (await o.tn.get({
   value: j.xT
 }];
 
-function O() {
+function N() {
   let e = (0, s.e7)([h.Z], () => h.Z.getPremiumTypeSubscription()),
     t = (0, s.e7)([p.default], () => p.default.getCurrentUser()),
     [a, l] = r.useState("511651880837840896"),
     [x, j] = r.useState([]),
-    [O, N] = r.useState(!1),
+    [N, O] = r.useState(!1),
     T = r.useCallback(async () => {
       try {
-        N(!0), await (0, u.jg)(), await (0, m.In)(t.id), j(await y())
+        O(!0), await (0, u.jg)(), await (0, m.In)(t.id), j(await y())
       } finally {
-        N(!1)
+        O(!1)
       }
     }, [t]);
   r.useEffect(() => {
@@ -96,7 +96,7 @@ function O() {
           className: g.header,
           children: null != e ? "Active Subscription" : "Subscription Type"
         }), (0, n.jsx)(c.zx, {
-          disabled: O,
+          disabled: N,
           look: c.zx.Looks.BLANK,
           size: c.zx.Sizes.ICON,
           onClick: T,

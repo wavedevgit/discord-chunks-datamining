@@ -5,8 +5,8 @@ n.r(t), n.d(t, {
 var r = n(255367),
   s = n(73800),
   o = n(481060),
-  i = n(238246),
-  a = n(873164),
+  a = n(238246),
+  i = n(873164),
   c = n(799176),
   l = n(231338),
   u = n(603571),
@@ -16,9 +16,9 @@ function f(e) {
   let {
     windowKey: t
   } = e;
-  return s.useEffect(() => (a.Z.initialize(), () => {
-    a.Z.terminate()
-  }), []), (0, r.jsx)(i.Z, {
+  return s.useEffect(() => (i.Z.initialize(), () => {
+    i.Z.terminate()
+  }), []), (0, r.jsx)(a.Z, {
     withTitleBar: !0,
     windowKey: t,
     title: d.intl.string(u.default["7qZdOz"]),

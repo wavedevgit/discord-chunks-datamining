@@ -32,7 +32,7 @@ function c(e) {
   } = e;
   return (0, i.jsx)("div", {
     className: l.topBar,
-    children: (0, i.jsx)(r.T, {
+    children: (0, i.jsx)(r.TF, {
       leading: (0, i.jsxs)("div", {
         className: l.arrowButtons,
         children: [(0, i.jsx)(d, {

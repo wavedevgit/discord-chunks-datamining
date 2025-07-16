@@ -1,4 +1,4 @@
-/** Chunk was on 51977 **/
+/** Chunk was on 13653 **/
 e.exports = {
   slowModeIcon: "slowModeIcon_b21699",
   cooldownWrapper: "cooldownWrapper_b21699",

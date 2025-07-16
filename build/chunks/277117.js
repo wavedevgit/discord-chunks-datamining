@@ -1,4 +1,4 @@
-/** Chunk was on 51977 **/
+/** Chunk was on 10801 **/
 n.d(t, {
   Z: () => w
 });
@@ -43,8 +43,8 @@ function w(e) {
     isHovering: M,
     onOpenProfile: D
   } = e, {
-    relationshipType: k,
-    originApplicationId: L
+    relationshipType: L,
+    originApplicationId: k
   } = (0, l.cj)([u.Z], () => ({
     relationshipType: u.Z.getRelationshipType(t.id),
     originApplicationId: u.Z.getOriginApplicationId(t.id)
@@ -76,11 +76,11 @@ function w(e) {
           onOpenProfile: D
         })]
       })
-    }), k === N.OGo.PENDING_INCOMING && (0, r.jsx)(S.Z.Overlay, {
+    }), L === N.OGo.PENDING_INCOMING && (0, r.jsx)(S.Z.Overlay, {
       children: (0, r.jsx)(x.Z, {
         user: t,
         channelId: R.id,
-        applicationId: L
+        applicationId: k
       })
     }), U.map(e => (0, r.jsx)(S.Z.Overlay, {
       children: (0, r.jsx)(x.Z, {

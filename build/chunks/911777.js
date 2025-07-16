@@ -1,4 +1,4 @@
-/** Chunk was on 51977 **/
+/** Chunk was on 10801 **/
 e.exports = {
   attachWrapper: "attachWrapper__0923f",
   attachButton: "attachButton__0923f",

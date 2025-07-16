@@ -1,12 +1,12 @@
 /** Chunk was on 67544 **/
 n.d(t, {
-  Z: () => P
+  Z: () => _
 }), n(388685);
 var r = n(255367),
   s = n(73800),
   o = n(772848),
-  i = n(442837),
-  a = n(481060),
+  a = n(442837),
+  i = n(481060),
   c = n(359013),
   l = n(120421),
   u = n(284539),
@@ -41,38 +41,38 @@ function j(e) {
   return e
 }
 let N = n(748549),
-  _ = [b.FK.WEED];
+  P = [b.FK.WEED];
 
-function P(e) {
+function _(e) {
   var t, n;
   let {
-    height: P,
-    width: w,
-    isPaused: C
-  } = e, [Z, S] = (0, s.useState)({}), I = (0, s.useRef)(null), E = (0, i.e7)([l.Z], () => l.Z.hasPurchasedUpgrade(b.yN.WEEDS, b.uv.WEED_KILLER)), k = c.Mq[b.yN.WEEDS], [M, A] = (0, u.Z)(b.yN.WEEDS), R = null != (t = M.count) ? t : 0;
-  (0, d.Z)(_, R);
-  let B = (0, p.eR)(N),
-    T = e => {
+    height: _,
+    width: C,
+    isPaused: Z
+  } = e, [w, E] = (0, s.useState)({}), S = (0, s.useRef)(null), I = (0, a.e7)([l.Z], () => l.Z.hasPurchasedUpgrade(b.yN.WEEDS, b.uv.WEED_KILLER)), k = c.Mq[b.yN.WEEDS], [M, R] = (0, u.Z)(b.yN.WEEDS), A = null != (t = M.count) ? t : 0;
+  (0, d.Z)(P, A);
+  let T = (0, p.eR)(N),
+    L = e => {
       var t;
-      null == (t = I.current) || t.removeDrop(e), B(), A({
-        count: R + 1
+      null == (t = S.current) || t.removeDrop(e), T(), R({
+        count: A + 1
       })
     },
-    L = e => {
-      delete Z[e], S(j({}, Z))
+    B = e => {
+      delete w[e], E(j({}, w))
     };
-  return E ? null : (0, r.jsx)(g.Z, {
-    ref: I,
-    isPaused: C,
+  return I ? null : (0, r.jsx)(g.Z, {
+    ref: S,
+    isPaused: Z,
     itemId: b.yN.WEEDS,
     chance: .2,
     points: null != (n = k.points) ? n : 0,
-    height: P,
-    width: w,
+    height: _,
+    width: C,
     dropPadding: 60,
     onPointsAdded: () => {
       var e, t, n;
-      S((t = j({}, Z), n = n = {
+      E((t = j({}, w), n = n = {
         [(0, o.Z)()]: null != (e = k.points) ? e : 0
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
@@ -87,16 +87,16 @@ function P(e) {
     },
     children: e => (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(m.Z, {
-        renderedPoints: Z,
-        onRemovePoint: L
-      }), (0, r.jsx)(a.P3F, {
-        onClick: () => T(e),
+        renderedPoints: w,
+        onRemovePoint: B
+      }), (0, r.jsx)(i.P3F, {
+        onClick: () => L(e),
         className: x.clickable,
         children: (0, r.jsx)(f.Z, {
           sources: [v, O],
           className: x.weed,
           "aria-label": h.intl.string(y.default.QBujOj),
-          isPaused: C,
+          isPaused: Z,
           interval: 1e3
         })
       })]

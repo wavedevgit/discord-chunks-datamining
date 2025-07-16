@@ -1,4 +1,4 @@
-/** Chunk was on 51977 **/
+/** Chunk was on 10801 **/
 e.exports = {
   popoutContainer: "popoutContainer__7169b",
   image: "image__7169b",

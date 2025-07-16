@@ -1,4 +1,4 @@
-/** Chunk was on 51977 **/
+/** Chunk was on 10801 **/
 e.exports = {
   chatHeaderBar: "chatHeaderBar_a53846",
   chatHeaderBarInfo: "chatHeaderBarInfo_a53846",

@@ -100,8 +100,8 @@ function g(e, t, n) {
         padding: D,
         paddingVertical: L,
         paddingHorizontal: x,
-        fade: M = !1,
-        className: k,
+        fade: k = !1,
+        className: M,
         style: j,
         maxContentWidth: U,
         renderAccessory: G,
@@ -119,7 +119,7 @@ function g(e, t, n) {
       } = (0, c.T4)();
     (0, c.tT)({
       scrollerRef: K,
-      className: k,
+      className: M,
       specs: a,
       orientation: "vertical",
       dir: b
@@ -182,9 +182,9 @@ function g(e, t, n) {
     }, [ee, z]), (0, r.jsxs)("div", p(f({
       ref: K,
       onScroll: el,
-      className: o()(k, {
+      className: o()(M, {
         [e]: !0,
-        [t]: M,
+        [t]: k,
         [u.scrolling]: Y
       }),
       style: (0, c.uT)(j)

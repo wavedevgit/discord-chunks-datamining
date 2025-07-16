@@ -39,8 +39,8 @@ function x(e) {
   var t, n;
   let a, {
       handleStepChange: x,
-      trialId: M,
-      trialFooterMessageOverride: k,
+      trialId: k,
+      trialFooterMessageOverride: M,
       reviewWarningMessage: j,
       planGroup: U,
       openInvoiceId: G,
@@ -92,7 +92,7 @@ function x(e) {
   let eI = i.useRef(null),
     [eT, eS] = (0, s.Z)(!1, L);
   (0, p.t)();
-  let eA = null != (n = null != M ? M : F) ? n : null,
+  let eA = null != (n = null != k ? k : F) ? n : null,
     eN = null != eA && (!eu || R.nG[eA].skus.includes(er)) ? eA : null,
     eC = (0, d.N)(F),
     eR = (0, u.Ng)(),
@@ -115,7 +115,7 @@ function x(e) {
     eD = (0, S.m)(Q, X),
     eL = null != en && R.o4.has(en.id) && null != eD && !(0, l.aQ)(eD) ? Error(w.intl.string(w.t["2ik8io"])) : null,
     ex = i.useRef(null),
-    [eM, ek] = i.useState(null),
+    [ek, eM] = i.useState(null),
     ej = !eE && null != eC && null != er && R.nG[eC.trial_id].skus.includes(er),
     eU = null == eR || null == (t = eR.discount) ? void 0 : t.plan_ids,
     eG = !eE && null != eR && null != eU && null != en && eU.includes(en.id),
@@ -153,11 +153,11 @@ function x(e) {
     legalTermsNodeRef: ex,
     hasLegalTermsFlash: eT,
     trialId: eN,
-    trialFooterMessageOverride: k,
+    trialFooterMessageOverride: M,
     reviewWarningMessage: j,
     purchaseState: ec,
     referralTrialOfferId: F,
-    isTrial: ej || null != M && null != k,
+    isTrial: ej || null != k && null != M,
     isDiscount: eG,
     handleClose: Y
   })) : (o()(null != en, "Expected plan to be selected"), a = (0, r.jsx)(_.Z, {
@@ -172,7 +172,7 @@ function x(e) {
     setHasAcceptedTerms: ed,
     legalTermsNodeRef: ex,
     hasLegalTermsFlash: eT,
-    onInvoiceError: e => ek(e),
+    onInvoiceError: e => eM(e),
     planGroup: U,
     currencies: q,
     onCurrencyChange: e => ei(e),
@@ -197,7 +197,7 @@ function x(e) {
         onPurchaseError: e => es(e),
         legalTermsNodeRef: ex,
         flashLegalTerms: () => eS(!0),
-        invoiceError: eM,
+        invoiceError: ek,
         planError: eL,
         analyticsLocation: V,
         baseAnalyticsData: B,

@@ -39,8 +39,8 @@ let g = 280,
       align: D = "center",
       art: L,
       isPremiumEarlyAccess: x = !1,
-      maxWidth: M = g,
-      hideDismissButton: k = !1,
+      maxWidth: k = g,
+      hideDismissButton: M = !1,
       pointerClassName: j,
       dismissIconClassName: U,
       dismissIcon: G,
@@ -70,8 +70,8 @@ let g = 280,
     return i.useEffect(() => {
       var e, t;
       let n = (null != (t = null == (e = Y.current) ? void 0 : e.scrollWidth) ? t : 0) + 64;
-      !Z && n > M && H(!0)
-    }, [Z, W, Y, M]), i.useEffect(() => {
+      !Z && n > k && H(!0)
+    }, [Z, W, Y, k]), i.useEffect(() => {
       (0, f.kk)(P)
     }, [P]), (0, r.jsx)("div", {
       className: S,
@@ -126,7 +126,7 @@ let g = 280,
               },
               color: null != V ? V : N || x ? s.zx.Colors.BRAND_INVERTED : s.zx.Colors.WHITE,
               children: null != O ? O : h.intl.string(h.t.IHf1RE)
-            }), !k && (0, r.jsx)(s.zx, {
+            }), !M && (0, r.jsx)(s.zx, {
               className: m.button,
               size: F,
               onClick: e => {

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => M,
+  Z: () => k,
   u: () => D
 }), n(388685);
 var r = n(255367),
@@ -99,7 +99,7 @@ function x(e) {
     "--custom-emoji-sprite-col": e % R
   }
 }
-let M = function(e) {
+let k = function(e) {
   let {
     tabIndex: t,
     className: n,
@@ -108,8 +108,8 @@ let M = function(e) {
     onClick: N,
     "aria-controls": R,
     focusProps: P,
-    shouldShowSoundmojiCoachmark: M = !1,
-    ref: k
+    shouldShowSoundmojiCoachmark: k = !1,
+    ref: M
   } = e, [j, U] = i.useState(!1), [G, B] = i.useState(50), V = j || S, F = (0, b.l)(T, "emojiButton", V ? "Hovered" : "Normal"), Z = x(G), H = i.useCallback(() => {
     if (V) return;
     let e = Math.floor(Math.random() * w);
@@ -118,7 +118,7 @@ let M = function(e) {
     U(!1)
   }, [U]), W = i.useCallback(() => (0, p.x)(v.qR.EmojiButtonFocused), []), K = (0, h.B4)(), [z, q] = (0, _.US)(K ? [c.z.TRIAL_NUX_EMOJI_BUTTON] : [], void 0, !0), X = z === c.z.TRIAL_NUX_EMOJI_BUTTON, Q = !S && X, J = (0, l.e7)([f.Z], () => f.Z.useReducedMotion), [$, ee] = i.useState(!1), [et, en] = i.useState(!1), er = (0, m.V2)({
     location: "EmojiButton"
-  }), [ei, ea] = (0, _.US)(M && er ? [c.z.SOUNDMOJI_COACHMARK] : []), eo = !$ && ei === c.z.SOUNDMOJI_COACHMARK && !et, es = i.useRef(null), el = null != k ? k : es;
+  }), [ei, ea] = (0, _.US)(k && er ? [c.z.SOUNDMOJI_COACHMARK] : []), eo = !$ && ei === c.z.SOUNDMOJI_COACHMARK && !et, es = i.useRef(null), el = null != M ? M : es;
   return (0, r.jsx)(d.yRy, {
     targetElementRef: el,
     renderPopout: () => (0, r.jsx)(g.Z, {

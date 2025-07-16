@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(392711),
   s = n.n(r),
   o = n(570140),
-  i = n(317770),
-  a = n(120421),
+  a = n(317770),
+  i = n(120421),
   c = n(477839),
   l = n(981631),
   u = n(603571),
@@ -20,12 +20,12 @@ function f(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class p extends i.Z {
+class p extends a.Z {
   _initialize() {
-    this.loaded = !0, this.startingTime = Date.now(), a.Z.addChangeListener(this._onStoreChange)
+    this.loaded = !0, this.startingTime = Date.now(), i.Z.addChangeListener(this._onStoreChange)
   }
   _terminate() {
-    this.loaded = !1, a.Z.removeChangeListener(this._onStoreChange), o.Z.dispatch({
+    this.loaded = !1, i.Z.removeChangeListener(this._onStoreChange), o.Z.dispatch({
       type: "LOCAL_ACTIVITY_UPDATE",
       socketId: "clicker-game",
       activity: void 0
@@ -39,7 +39,7 @@ class p extends i.Z {
         type: l.IIU.PLAYING,
         name: d.intl.string(u.default["7qZdOz"]),
         details: d.intl.formatToPlainString(u.default["A3tW/f"], {
-          total: Math.round(a.Z.lifetimePoints)
+          total: Math.round(i.Z.lifetimePoints)
         }),
         state: function(e) {
           if (null == e) return d.intl.string(u.default.HXxY0N);
@@ -48,7 +48,7 @@ class p extends i.Z {
           });
           if ("purchase-item-upgrade" === e.type) {
             let t = (0, c.r7)()[e.id],
-              n = a.Z.getNumPurchasesForItemUpgrade(t.itemId, e.id),
+              n = i.Z.getNumPurchasesForItemUpgrade(t.itemId, e.id),
               r = "string" == typeof t.name ? t.name : d.intl.formatToPlainString(t.name, {
                 numPurchasing: n
               });
@@ -59,7 +59,7 @@ class p extends i.Z {
           return "unlock-achievement" === e.type ? d.intl.formatToPlainString(u.default.hUterq, {
             name: (0, c.EC)()[e.id].name
           }) : d.intl.string(u.default.HXxY0N)
-        }(a.Z.getLastAction()),
+        }(i.Z.getLastAction()),
         timestamps: {
           start: this.startingTime
         }

@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   s = n(359013),
   o = n(26141),
-  i = n(401258),
-  a = n(477839),
+  a = n(401258),
+  i = n(477839),
   c = n(364491),
   l = n(239956),
   u = n(658327);
@@ -14,13 +14,13 @@ var r = n(255367),
 function d(e) {
   let {
     isPaused: t
-  } = e, n = s.Mq[a.yN.ORCHID];
+  } = e, n = s.Mq[i.yN.ORCHID];
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(i.Z, {
+    children: [(0, r.jsx)(a.Z, {
       interval: 1e3,
       pointsPerInterval: n.points,
       isPaused: t,
-      itemId: a.yN.ORCHID
+      itemId: i.yN.ORCHID
     }), (0, r.jsx)(o.Z, {
       className: c.orchid,
       isPaused: t,

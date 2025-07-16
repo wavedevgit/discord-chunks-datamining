@@ -1,12 +1,12 @@
 /** Chunk was on 67544 **/
 n.d(t, {
-  Z: () => C
+  Z: () => Z
 }), n(388685);
 var r = n(255367),
   s = n(73800),
   o = n(120356),
-  i = n.n(o),
-  a = n(668826),
+  a = n.n(o),
+  i = n(668826),
   c = n(359013),
   l = n(284539),
   u = n(26141),
@@ -23,28 +23,28 @@ var r = n(255367),
   O = n(895401),
   j = n(191351),
   N = n(40050),
-  _ = n(236954);
-let P = {
+  P = n(236954);
+let _ = {
     0: [n(617627), n(200445), n(714530), n(9997), n(550796)],
     1: [n(731544), n(904194), n(96599), n(590881)],
     2: [h, x, v, O],
-    3: [j, N, _],
+    3: [j, N, P],
     4: [m, g, b, y]
   },
-  w = {
+  C = {
     state: 2
   };
 
-function C(e) {
+function Z(e) {
   var t;
   let {
     isPaused: n
-  } = e, [o, m] = (0, l.Z)(f.yN.PET_WUMPUS), g = null != (t = o.state) ? t : w.state, b = c.Mq[f.yN.PET_WUMPUS], y = P[g], h = (0, s.useCallback)(() => {
+  } = e, [o, m] = (0, l.Z)(f.yN.PET_WUMPUS), g = null != (t = o.state) ? t : C.state, b = c.Mq[f.yN.PET_WUMPUS], y = _[g], h = (0, s.useCallback)(() => {
     0 === g && m({
       state: 1
     })
   }, [m, g]), x = (0, s.useCallback)(() => {
-    2 === g ? ((0, a.KH)(f.yN.PET_WUMPUS, b.points), m({
+    2 === g ? ((0, i.KH)(f.yN.PET_WUMPUS, b.points), m({
       state: 3
     })) : 3 === g ? .2 > Math.random() ? m({
       state: 4
@@ -57,7 +57,7 @@ function C(e) {
     })
   }, [b.points, m, g]);
   return (0, r.jsx)(d.Z, {
-    className: i()(p.outer, {
+    className: a()(p.outer, {
       [p.clickable]: 0 === g
     }),
     onClick: h,

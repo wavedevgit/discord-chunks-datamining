@@ -42,8 +42,8 @@ var n, r, l = a(73800),
   _ = a(940172),
   y = a(81011),
   C = a(981613),
-  O = a(762399),
-  N = a(232112),
+  N = a(762399),
+  O = a(232112),
   T = a(53796),
   E = a(723757),
   S = a(375924),
@@ -58,7 +58,7 @@ var n, r, l = a(73800),
   L = a(521904),
   M = a(231338);
 
-function B(e) {
+function F(e) {
   for (var t = 1; t < arguments.length; t++) {
     var a = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(a);
@@ -77,7 +77,7 @@ function B(e) {
   return e
 }
 
-function F(e, t) {
+function B(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var a = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -108,8 +108,8 @@ let z = {
     Lab_D65: _.Z,
     Luv: y.Z,
     OKLCH: C.Z,
-    OKLab: O.Z,
-    P3: N.Z,
+    OKLab: N.Z,
+    P3: O.Z,
     ProPhoto: T.Z,
     REC_2020: E.Z,
     REC_2100_HLG: S.Z,
@@ -148,7 +148,7 @@ function K(e) {
 function X(e, t, a, n, r) {
   return {
     name: t,
-    colors: F(B({}, e.colors), {
+    colors: B(F({}, e.colors), {
       [r]: {
         color: a,
         opacity: n
@@ -159,7 +159,7 @@ function X(e, t, a, n, r) {
 }
 
 function Y(e) {
-  return F(B({}, e), {
+  return B(F({}, e), {
     highlight: !e.highlight
   })
 }
@@ -246,55 +246,55 @@ function er(e) {
 }
 
 function el(e, t, a) {
-  a(a => null == a.scales.find(t => t.name === e) ? a : F(B({}, a), {
+  a(a => null == a.scales.find(t => t.name === e) ? a : B(F({}, a), {
     scales: a.scales.map(a => a.name === e ? t(a) : a)
   }))
 }
 
 function ei(e, t, a) {
-  el(e, e => F(B({}, e), {
+  el(e, e => B(F({}, e), {
     darkness: t
   }), a)
 }
 
 function es(e, t, a) {
-  el(e, e => F(B({}, e), {
+  el(e, e => B(F({}, e), {
     lightness: t
   }), a)
 }
 
 function eo(e, t, a) {
-  el(e, e => F(B({}, e), {
+  el(e, e => B(F({}, e), {
     base: t
   }), a)
 }
 
 function ec(e, t, a) {
-  el(e, e => F(B({}, e), {
+  el(e, e => B(F({}, e), {
     colorSpace: t
   }), a)
 }
 
 function ed(e, t, a) {
-  el(e, e => F(B({}, e), {
+  el(e, e => B(F({}, e), {
     easingStrength: t
   }), a)
 }
 
 function eu(e, t, a) {
-  el(e, e => F(B({}, e), {
+  el(e, e => B(F({}, e), {
     showColumnarPalettePreview: t
   }), a)
 }
 
 function em(e, t, a) {
-  el(e, e => F(B({}, e), {
+  el(e, e => B(F({}, e), {
     useP3ColorSpace: t
   }), a)
 }
 
 function ex(e, t, a) {
-  el(e, e => F(B({}, e), {
+  el(e, e => B(F({}, e), {
     steps: t
   }), a)
 }

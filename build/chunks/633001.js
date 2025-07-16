@@ -23,8 +23,8 @@ var n = a(255367),
   _ = a(355863),
   y = a(449224),
   C = a(808506),
-  O = a(572004),
-  N = a(70956),
+  N = a(572004),
+  O = a(70956),
   T = a(145597),
   E = a(246992),
   S = a(981631),
@@ -116,13 +116,13 @@ function M(e) {
     color: c.zx.Colors.LINK,
     size: c.zx.Sizes.MIN,
     onClick: function() {
-      (0, O.JG)(t, () => l(!0))
+      (0, N.JG)(t, () => l(!0))
     },
     className: I.copyId,
     children: ["Application Id: ", t, " ", a ? w.intl.string(w.t["t5VZ8/"]) : null]
   })
 }
-let B = r.memo(function(e) {
+let F = r.memo(function(e) {
     let {
       trackedGame: t
     } = e, a = (0, o.e7)([h.ZP], () => h.ZP.getGameForPID(t.pid)), r = (0, o.e7)([y.Z], () => y.Z.getGameForPID(t.pid)), l = (0, o.e7)([h.ZP], () => null == a ? null : h.ZP.getGameOverlayStatus(a));
@@ -223,7 +223,7 @@ let B = r.memo(function(e) {
       })]
     })
   }),
-  F = r.memo(function(e) {
+  B = r.memo(function(e) {
     let {
       pid: t
     } = e, a = (0, o.cj)([C.default], () => C.default.getOverlayPIDStatuses()), r = (0, o.cj)([f.default], () => f.default.getTrackedGames()), l = (0, o.e7)([C.default], () => C.default.isInputLocked(t), [t]), i = (0, o.e7)([C.default], () => C.default.DEV_isInputLockedV3(t), [t]), s = (0, o.e7)([C.default], () => C.default.DEV_isInputLocked(t), [t]), c = (0, o.e7)([C.default], () => C.default.isReady(t), [t]);
@@ -434,7 +434,7 @@ let H = r.memo(function(e) {
           timestamp: i
         }]), e
       }, k({}, e)))
-    }, +N.Z.Millis.SECOND), () => clearInterval(l.current)), []), (0, n.jsx)(d.ua7, {
+    }, +O.Z.Millis.SECOND), () => clearInterval(l.current)), []), (0, n.jsx)(d.ua7, {
       position: "left",
       text: "The most recent screen types we've logged, indexed by pid",
       children: a => (0, n.jsx)("div", Z(k({}, a), {
@@ -480,7 +480,7 @@ let H = r.memo(function(e) {
         variant: "text-sm/normal",
         color: "text-default",
         children: "No tracked game times"
-      }), Object.values(a).map(e => (0, n.jsx)(F, {
+      }), Object.values(a).map(e => (0, n.jsx)(B, {
         pid: e.pid
       }, e.pid)), (0, n.jsxs)("div", {
         children: [(0, n.jsxs)(d.Text, {
@@ -670,7 +670,7 @@ let H = r.memo(function(e) {
               variant: "text-sm/normal",
               color: "text-default",
               children: "No running games"
-            }), Object.values(e).map(e => (0, n.jsx)(B, {
+            }), Object.values(e).map(e => (0, n.jsx)(F, {
               trackedGame: e
             }, e.pid))]
           })

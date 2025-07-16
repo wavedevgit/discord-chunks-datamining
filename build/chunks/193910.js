@@ -1,4 +1,4 @@
-/** Chunk was on 51977 **/
+/** Chunk was on 10801 **/
 n.d(t, {
   Z: () => w
 }), n(413496), n(433524), n(35282), n(539854), n(388685);
@@ -67,8 +67,8 @@ function w(e) {
     setValue: M,
     openClips: D
   } = e, {
-    analyticsLocations: k
-  } = (0, p.ZP)(), L = (0, g.Dt)({
+    analyticsLocations: L
+  } = (0, p.ZP)(), k = (0, g.Dt)({
     channel: t
   }), U = (0, E.Z)();
 
@@ -136,7 +136,7 @@ function w(e) {
     }), (0, d.Z)({
       channel: t,
       openInPopout: !1,
-      analyticsLocations: k
+      analyticsLocations: L
     }), (0, u.w1)({
       guildId: t.guild_id
     })
@@ -220,7 +220,7 @@ function w(e) {
                 channelId: t.id,
                 type: S.mFx.JOIN,
                 activity: n,
-                location: k[k.length - 1]
+                location: L[L.length - 1]
               })
             }
           }, "play");
@@ -234,7 +234,7 @@ function w(e) {
                 channelId: t.id,
                 type: S.mFx.LISTEN,
                 activity: n,
-                location: k[k.length - 1]
+                location: L[L.length - 1]
               })
             }
           }, "listen");
@@ -248,7 +248,7 @@ function w(e) {
                 channelId: t.id,
                 type: S.mFx.WATCH,
                 activity: n,
-                location: k[k.length - 1]
+                location: L[L.length - 1]
               })
             }
           }, "watch");
@@ -278,7 +278,7 @@ function w(e) {
             action: () => (0, g.$f)({
               channel: t
             }),
-            children: L
+            children: k
           }, "scheduled_message");
         default:
           return null

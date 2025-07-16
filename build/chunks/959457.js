@@ -60,11 +60,11 @@ function x() {
   })
 }
 
-function M(e) {
+function k(e) {
   r = e.sessionId, x()
 }
 
-function k() {
+function M() {
   r = null, x()
 }
 
@@ -320,8 +320,8 @@ class Q extends(i = c.ZP.Store) {
 }
 T(Q, "displayName", "StreamRTCConnectionStore");
 let J = new Q(d.Z, !b.Z.isSupported() || __OVERLAY__ ? {} : {
-  CONNECTION_OPEN: M,
-  CONNECTION_CLOSED: k,
+  CONNECTION_OPEN: k,
+  CONNECTION_CLOSED: M,
   RTC_CONNECTION_STATE: Y,
   RTC_CONNECTION_PING: Y,
   RTC_CONNECTION_LOSS_RATE: Y,

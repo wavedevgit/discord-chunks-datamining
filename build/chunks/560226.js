@@ -1,4 +1,5 @@
-/** Chunk was on 93886 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   animationWrapper: "animationWrapper_e8d31f",
   clickZone: "clickZone_e8d31f",

@@ -1,4 +1,4 @@
-/** Chunk was on 51977 **/
+/** Chunk was on 10801 **/
 e.exports = {
   pageContainer: "pageContainer__8893c",
   joinCtaTitle: "joinCtaTitle__8893c",

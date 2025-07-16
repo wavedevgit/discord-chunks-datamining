@@ -1,12 +1,12 @@
 /** Chunk was on 67544 **/
 n.d(t, {
-  Z: () => w
+  Z: () => C
 }), n(388685);
 var r = n(255367),
   s = n(73800),
   o = n(71347),
-  i = n(442837),
-  a = n(481060),
+  a = n(442837),
+  i = n(481060),
   c = n(313201),
   l = n(668826),
   u = n(120421),
@@ -27,7 +27,7 @@ function N(e) {
   return 0 === e ? 0 : Math.floor(-(1e3 * (1 - Math.pow(1.25, e)) / .25))
 }
 
-function _(e) {
+function P(e) {
   let {
     fill: t = !1,
     stroke: n = !1
@@ -41,10 +41,10 @@ function _(e) {
   })
 }
 
-function P(e) {
+function _(e) {
   let {
     percent: t
-  } = e, n = (0, c.Dt)(), s = (0, a.q_F)({
+  } = e, n = (0, c.Dt)(), s = (0, i.q_F)({
     width: t / 100 * 372
   });
   return (0, r.jsxs)("svg", {
@@ -55,7 +55,7 @@ function P(e) {
     children: [(0, r.jsx)("defs", {
       children: (0, r.jsx)("mask", {
         id: n,
-        children: (0, r.jsx)(_, {
+        children: (0, r.jsx)(P, {
           fill: !0
         })
       })
@@ -84,37 +84,37 @@ function P(e) {
       x: "0",
       y: "0",
       height: "24"
-    }), (0, r.jsx)(_, {
+    }), (0, r.jsx)(P, {
       stroke: !0
     })]
   })
 }
 
-function w() {
+function C() {
   var e, t;
-  let n = (0, i.e7)([u.Z], () => u.Z.lifetimePoints),
-    [o, a] = (0, f.Z)(y.yN.LEVELING),
+  let n = (0, a.e7)([u.Z], () => u.Z.lifetimePoints),
+    [o, i] = (0, f.Z)(y.yN.LEVELING),
     c = null != (e = null == o ? void 0 : o.lastLevelClaimed) ? e : 0,
-    _ = null != (t = null == o ? void 0 : o.pointsWhenUnlocked) ? t : n,
-    w = n - _,
-    C = function e(t, n) {
+    P = null != (t = null == o ? void 0 : o.pointsWhenUnlocked) ? t : n,
+    C = n - P,
+    Z = function e(t, n) {
       return t >= N(n) ? e(t, n + 1) : n
-    }(w, 1),
-    Z = N(C - 1),
-    S = N(C),
-    I = w - Z,
-    E = S - Z,
+    }(C, 1),
+    w = N(Z - 1),
+    E = N(Z),
+    S = C - w,
+    I = E - w,
     k = c + 1,
     M = Math.floor(.1 * (N(k) - N(k - 1))),
-    A = (0, g.eR)(O);
-  (0, p.Z)(j, C);
-  let R = (0, s.useCallback)(() => {
-    a({
+    R = (0, g.eR)(O);
+  (0, p.Z)(j, Z);
+  let A = (0, s.useCallback)(() => {
+    i({
       lastLevelClaimed: k
-    }), (0, l.KH)(y.yN.LEVELING, M), A()
-  }, [k, M, A, a]);
+    }), (0, l.KH)(y.yN.LEVELING, M), R()
+  }, [k, M, R, i]);
   return (0, s.useEffect)(() => {
-    (null == o ? void 0 : o.pointsWhenUnlocked) == null && a({
+    (null == o ? void 0 : o.pointsWhenUnlocked) == null && i({
       pointsWhenUnlocked: n
     })
   }, []), (0, r.jsxs)("div", {
@@ -125,15 +125,15 @@ function w() {
         variant: "text-lg/bold",
         color: "clicker-game-brand",
         children: x.intl.format(h.default.IG6UGB, {
-          level: C
+          level: Z
         })
       }), (0, r.jsx)(b.Z, {
         className: v.experience,
         variant: "text-sm/medium",
         color: "clicker-game-brand",
         children: x.intl.format(h.default.Rfy3Cg, {
-          currentExperience: Math.floor(I),
-          requiredExperience: E,
+          currentExperience: Math.floor(S),
+          requiredExperience: I,
           experienceHook: (e, t) => (0, r.jsx)("span", {
             className: v.monospace,
             children: e
@@ -141,11 +141,11 @@ function w() {
           grassIconHook: (e, t, n) => (0, d.Z)(e, t, n, v.experienceIcon)
         })
       })]
-    }), (0, r.jsx)(P, {
-      percent: I / E * 100
-    }), k < C ? (0, r.jsx)(m.Z, {
+    }), (0, r.jsx)(_, {
+      percent: S / I * 100
+    }), k < Z ? (0, r.jsx)(m.Z, {
       className: v.claimButton,
-      onClick: R,
+      onClick: A,
       children: x.intl.format(h.default.IUF6np, {
         points: M,
         grassIconHook: d.Z

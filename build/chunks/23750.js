@@ -181,9 +181,10 @@ class E extends m {
     return e.reduce((e, n) => {
       let {
         users: r,
-        emoji: i
+        emoji: i,
+        reactionType: a
       } = n;
-      return r.reduce((e, n) => e.addReaction(i, n === t), e)
+      return r.reduce((e, n) => e.addReaction(i, n === t, [], a), e)
     }, this)
   }
   removeReaction(e) {

@@ -41,7 +41,7 @@ let I = {
       pendingGlobalName: R,
       nameplatePreviewSize: P = "default",
       isPurchased: w = !1
-    } = e, D = (0, s.e7)([m.Z], () => (0, l.wj)(m.Z.theme)), L = null != n ? (0, b.EU)(n) : a, x = (0, s.e7)([g.Z], () => null != t ? g.Z.getStatus(t.id) : c.Skl.ONLINE), M = D ? "#706F74" : "#aaaab2", k = i.useRef(null), j = (0, f.j)({
+    } = e, D = (0, s.e7)([m.Z], () => (0, l.wj)(m.Z.theme)), L = null != n ? (0, b.EU)(n) : a, x = (0, s.e7)([g.Z], () => null != t ? g.Z.getStatus(t.id) : c.Skl.ONLINE), k = D ? "#706F74" : "#aaaab2", M = i.useRef(null), j = (0, f.j)({
       displayNameStyles: null == t ? void 0 : t.displayNameStyles
     }), U = I[P];
     return (0, r.jsxs)("div", {
@@ -57,13 +57,13 @@ let I = {
         nameplate: L,
         hovered: A,
         placement: p.i.PREVIEW,
-        content: C ? void 0 : k
+        content: C ? void 0 : M
       }, null == n ? void 0 : n.id), (0, r.jsxs)("div", {
         className: y.overlayContainer,
         children: [null != t ? (0, r.jsx)("div", {
           className: o()(y.avatarContainer, !C && y.avatarVisible),
           children: (0, r.jsx)(u.Z, {
-            ref: k,
+            ref: M,
             avatar: (0, r.jsx)(d.Z, {
               user: t,
               guildId: null,
@@ -85,7 +85,7 @@ let I = {
             size: U,
             "aria-hidden": !0,
             status: c.Skl.ONLINE,
-            statusColor: M,
+            statusColor: k,
             className: y.avatar
           }), (0, r.jsx)("div", {
             className: y.placeholderUsername

@@ -1,4 +1,4 @@
-/** Chunk was on 51977 **/
+/** Chunk was on 10801 **/
 e.exports = {
   members: "members__1ee8c",
   avatars: "avatars__1ee8c",

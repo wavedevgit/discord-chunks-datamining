@@ -1,6 +1,6 @@
-/** Chunk was on 51977 **/
+/** Chunk was on 10801 **/
 n.d(t, {
-  Z: () => k
+  Z: () => L
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -110,11 +110,11 @@ let w = i.memo(function(e) {
     (0, m.$)(M);
     let D = l.rtsState === E.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
 
-    function k() {
+    function L() {
       (0, v.DT)(t, l.user.id, !1)
     }
 
-    function L() {
+    function k() {
       (0, v.DT)(t, l.user.id, !0)
     }
     let U = e => {
@@ -174,7 +174,7 @@ let w = i.memo(function(e) {
           innerClassName: N.buttonContainer,
           look: u.zx.Looks.BLANK,
           size: u.zx.Sizes.NONE,
-          onClick: k,
+          onClick: L,
           disabled: D || C,
           children: (0, r.jsx)(d.Lrb, {
             size: "xs",
@@ -187,7 +187,7 @@ let w = i.memo(function(e) {
           innerClassName: a()(N.buttonContainer, N.buttonMargin),
           look: u.zx.Looks.BLANK,
           size: u.zx.Sizes.NONE,
-          onClick: L,
+          onClick: k,
           children: (0, r.jsx)(d.Dio, {
             size: "xs",
             color: "currentColor"
@@ -224,7 +224,7 @@ let w = i.memo(function(e) {
     })
   });
 
-function k(e) {
+function L(e) {
   let {
     channel: t,
     toggleRequestToSpeakSidebar: n,

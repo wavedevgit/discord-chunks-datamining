@@ -592,10 +592,10 @@ var w = r.forwardRef(function(e, t) {
         var o, s = R(null != (o = e.id) ? o : (0, i.Z)(), e, n, r, a);
         return L(s, t), s
       }, [L]),
-      M = r.useCallback(function(e) {
+      k = r.useCallback(function(e) {
         A.current.delete(e)
       }, []),
-      k = r.useCallback(function() {
+      M = r.useCallback(function() {
         return A.current.clear()
       }, []),
       j = r.useCallback(function() {
@@ -605,14 +605,14 @@ var w = r.forwardRef(function(e, t) {
       return {
         createConfetti: x,
         addConfetti: L,
-        deleteConfetti: M,
-        clearConfetti: k,
+        deleteConfetti: k,
+        clearConfetti: M,
         getCanvas: j,
         addReadyListener: I,
         removeReadyListener: T,
         isReady: v
       }
-    }, [x, L, M, k, j, I, T, v]);
+    }, [x, L, k, M, j, I, T, v]);
     var U = r.useCallback(function(e, t) {
         var n, r, i = t.clickHandler,
           o = t.mouseHandler;

@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   s = n(120356),
   o = n.n(s),
-  i = n(702319),
-  a = n(144931),
+  a = n(702319),
+  i = n(144931),
   c = n(763283),
   l = n(944548),
   u = n(488701),
@@ -38,13 +38,13 @@ function b(e) {
       description: n,
       pointsDescription: 0 !== o ? p.intl.format(s, {
         points: o,
-        grassIconHook: i.Z
+        grassIconHook: a.Z
       }) : null
     }),
     "aria-label": x,
     children: e => {
       var t, n;
-      return (0, r.jsxs)(a.Z, (t = function(e) {
+      return (0, r.jsxs)(i.Z, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);

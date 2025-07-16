@@ -99,7 +99,7 @@ function v(e) {
     onFocus: P,
     onUserClick: w,
     onUserPopoutRequestClose: D
-  } = e, [L, x] = i.useState(!1), M = y(v), k = i.useRef(null);
+  } = e, [L, x] = i.useState(!1), k = y(v), M = i.useRef(null);
 
   function j() {
     return (0, r.jsx)(u.VqE, {
@@ -141,7 +141,7 @@ function v(e) {
       f = l()(t).take(a).map((e, t) => {
         let n = p.ZP.getName(e),
           a = t === d && !i,
-          l = o()(h.avatar, M, a && h.isLast);
+          l = o()(h.avatar, k, a && h.isLast);
         return N ? (0, r.jsx)("div", {
           className: l,
           children: (0, r.jsx)(u.qEK, {
@@ -162,14 +162,14 @@ function v(e) {
     if (i) {
       let e = null != I ? I : O(v);
       f[f.length - 1] = (0, r.jsx)(u.yRy, {
-        targetElementRef: k,
+        targetElementRef: M,
         renderPopout: j,
         shouldShow: L,
         position: "bottom",
         onRequestClose: () => x(!1),
         children: () => (0, r.jsx)(c.zx, {
-          buttonRef: k,
-          className: o()(h.overflow, M, S),
+          buttonRef: M,
+          className: o()(h.overflow, k, S),
           onFocus: P,
           onClick: e => {
             null == R || R(e), x(!0)

@@ -1,4 +1,5 @@
-/** Chunk was on 93886 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   errorNotificationContainer: "errorNotificationContainer_e13eda",
   errorNotificationWrapper: "errorNotificationWrapper_e13eda",

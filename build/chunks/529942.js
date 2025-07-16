@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   s = n(73800),
   o = n(392711),
-  i = n.n(o),
-  a = n(71347),
+  a = n.n(o),
+  i = n(71347),
   c = n(748780),
   l = n(481060);
 let u = ["right", "left"];
@@ -26,8 +26,8 @@ function d(e) {
     maxSpeed: h,
     isPaused: x,
     children: v
-  } = e, [O, j] = (0, s.useState)(0), [N, _] = (0, s.useState)(null != (t = i().sample(u)) ? t : u[0]), P = (0, s.useRef)(i().random(y, h)), w = (0, s.useRef)(i().random(f, p)), C = "right" === N ? -d : o + d, Z = "right" === N ? o + d : -d, [S, I] = (0, l.q_F)(() => ({
-    x: i().random(o),
+  } = e, [O, j] = (0, s.useState)(0), [N, P] = (0, s.useState)(null != (t = a().sample(u)) ? t : u[0]), _ = (0, s.useRef)(a().random(y, h)), C = (0, s.useRef)(a().random(f, p)), Z = "right" === N ? -d : o + d, w = "right" === N ? o + d : -d, [E, S] = (0, l.q_F)(() => ({
+    x: a().random(o),
     y: 0,
     rotateZ: 0
   }));
@@ -35,21 +35,21 @@ function d(e) {
     let e = !1;
     return (async () => {
       var t, n;
-      let r = (Z - C) / w.current,
-        s = Math.abs((S.x.get() - C) / r),
-        a = w.current - s;
-      for (let n = 0; n < a && !e; n++) {
-        let e = S.x.get(),
-          n = S.y.get(),
-          s = (t = i().random(m, g), null != b && (n + t > b || n + t < -b) ? t < 0 ? -b : b : t),
-          o = S.x.get() + r,
-          a = "right" === N ? Math.min(o, Z) : Math.max(o, Z),
+      let r = (w - Z) / C.current,
+        s = Math.abs((E.x.get() - Z) / r),
+        i = C.current - s;
+      for (let n = 0; n < i && !e; n++) {
+        let e = E.x.get(),
+          n = E.y.get(),
+          s = (t = a().random(m, g), null != b && (n + t > b || n + t < -b) ? t < 0 ? -b : b : t),
+          o = E.x.get() + r,
+          i = "right" === N ? Math.min(o, w) : Math.max(o, w),
           l = s - n,
-          u = Math.abs(a - e),
+          u = Math.abs(i - e),
           d = 180 / Math.PI * Math.atan2(l, u) * ("right" === N ? 1 : -1),
-          f = Math.sqrt(u ** 2 + l ** 2) / P.current * 1e3;
-        await I({
-          x: a,
+          f = Math.sqrt(u ** 2 + l ** 2) / _.current * 1e3;
+        await S({
+          x: i,
           y: s,
           rotateZ: d,
           config: {
@@ -59,26 +59,26 @@ function d(e) {
         })
       }
       if (!e) {
-        w.current = i().random(f, p), P.current = i().random(y, h);
-        let e = null != (n = i().sample(u)) ? n : u[0],
+        C.current = a().random(f, p), _.current = a().random(y, h);
+        let e = null != (n = a().sample(u)) ? n : u[0],
           t = "right" === e ? -d : o + d;
-        await I({
+        await S({
           x: t,
           y: 0,
           rotateZ: 0,
           immediate: !0
-        }), _(e)
+        }), P(e)
       }
       j(O + 1)
     })(), () => {
       e = !0
     }
-  }, [S.x, S.y, N, Z, d, O, h, p, b, g, y, f, m, I, P, C, o]), (0, s.useEffect)(() => {
+  }, [E.x, E.y, N, w, d, O, h, p, b, g, y, f, m, S, _, Z, o]), (0, s.useEffect)(() => {
     try {
-      x ? (S.x.pause(), S.y.pause(), S.rotateZ.pause()) : (S.x.resume(), S.y.resume(), S.rotateZ.resume())
+      x ? (E.x.pause(), E.y.pause(), E.rotateZ.pause()) : (E.x.resume(), E.y.resume(), E.rotateZ.resume())
     } catch (e) {}
-  }, [S.rotateZ, S.x, S.y, x]), (0, r.jsx)(a.animated.div, {
-    style: S,
+  }, [E.rotateZ, E.x, E.y, x]), (0, r.jsx)(i.animated.div, {
+    style: E,
     className: n,
     children: v(N)
   })

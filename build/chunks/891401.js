@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 a.d(t, {
-  Z: () => O
+  Z: () => N
 }), a(49124);
 var n = a(255367),
   r = a(73800),
@@ -54,14 +54,14 @@ function C(e, t) {
   }), e
 }
 
-function O() {
+function N() {
   return (0, n.jsxs)(m.Ttm, {
     className: _.container,
-    children: [(0, n.jsx)(N, {}), (0, n.jsx)(T, {})]
+    children: [(0, n.jsx)(O, {}), (0, n.jsx)(T, {})]
   })
 }
 
-function N() {
+function O() {
   var e, t;
   let a = (0, c.e7)([j.Z], () => j.Z.getChannelId()),
     l = (0, b.Z)(a),
@@ -75,10 +75,10 @@ function N() {
     v = r.useCallback(e => {
       E(null == l ? void 0 : l.wallpaperId, e.target.value)
     }, [null == l ? void 0 : l.wallpaperId]),
-    O = r.useCallback(e => {
+    N = r.useCallback(e => {
       P(null == l ? void 0 : l.wallpaperId, e.target.value)
     }, [null == l ? void 0 : l.wallpaperId]),
-    N = r.useCallback(e => {
+    O = r.useCallback(e => {
       S(null == l ? void 0 : l.wallpaperId, e.target.value)
     }, [null == l ? void 0 : l.wallpaperId]),
     T = r.useCallback(() => E(null == l ? void 0 : l.wallpaperId, void 0), [null == l ? void 0 : l.wallpaperId]),
@@ -162,7 +162,7 @@ function N() {
         children: [(0, n.jsx)("input", {
           type: "color",
           value: d.secondary_color,
-          onChange: O
+          onChange: N
         }, "secondaryColor-".concat(d.secondary_color)), (0, n.jsx)(m.M0o, {
           color: "currentColor",
           tooltip: g.intl.string(g.t.N86XcH),
@@ -201,7 +201,7 @@ function N() {
         children: [(0, n.jsx)("input", {
           type: "color",
           value: d.link_color,
-          onChange: N
+          onChange: O
         }, "linkColor-".concat(d.link_color)), (0, n.jsx)(m.M0o, {
           color: "currentColor",
           tooltip: g.intl.string(g.t.N86XcH),

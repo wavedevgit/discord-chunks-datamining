@@ -2,10 +2,10 @@
 "use strict";
 n.d(t, {
   Ic: () => x,
-  O5: () => k,
+  O5: () => M,
   Zk: () => j,
   _3: () => L,
-  _F: () => M,
+  _F: () => k,
   _b: () => N,
   dA: () => w,
   jZ: () => D,
@@ -171,7 +171,7 @@ function x(e) {
   })
 }
 
-function M() {
+function k() {
   let e = (0, _.WD)();
 
   function t(t) {
@@ -197,8 +197,8 @@ function M() {
   return r.useCallback(t, [e])
 }
 
-function k() {
-  let e = M();
+function M() {
+  let e = k();
   return r.useCallback(t => {
     let {
       questId: n,

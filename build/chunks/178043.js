@@ -1,12 +1,12 @@
 /** Chunk was on 67544 **/
 n.d(t, {
-  Z: () => B
+  Z: () => T
 }), n(388685);
 var r = n(255367),
   s = n(73800),
   o = n(120356),
-  i = n.n(o),
-  a = n(10478),
+  a = n.n(o),
+  i = n(10478),
   c = n(442837),
   l = n(481060),
   u = n(496929),
@@ -23,15 +23,15 @@ var r = n(255367),
   O = n(3072),
   j = n(763283),
   N = n(944548),
-  _ = n(477839),
-  P = n(603571),
-  w = n(388032),
-  C = n(652202),
-  Z = n(300090),
-  S = n(965084),
-  I = n(702536);
+  P = n(477839),
+  _ = n(603571),
+  C = n(388032),
+  Z = n(652202),
+  w = n(300090),
+  E = n(965084),
+  S = n(702536);
 
-function E(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -66,7 +66,7 @@ function k(e, t) {
 function M() {
   let [e, t] = (0, s.useState)(!1);
   return (0, r.jsxs)("svg", {
-    className: C.mainImage,
+    className: Z.mainImage,
     xmlns: "http://www.w3.org/2000/svg",
     width: "387",
     height: "445",
@@ -189,10 +189,10 @@ function M() {
       text: (0, r.jsx)(j.Z, {
         variant: "text-xs/medium",
         color: "always-white",
-        className: C.tooltipText,
-        children: w.intl.format(P.default.HB1We3, {
+        className: Z.tooltipText,
+        children: C.intl.format(_.default.HB1We3, {
           thanksHook: (e, t) => (0, r.jsx)(v.Z, {
-            className: C.link,
+            className: Z.link,
             tag: "a",
             href: "https://neal.fun/",
             target: "_blank",
@@ -200,13 +200,13 @@ function M() {
           }, t)
         })
       }),
-      "aria-label": w.intl.formatToPlainString(P.default.HB1We3, {
+      "aria-label": C.intl.formatToPlainString(_.default.HB1We3, {
         thanksHook: e => e.join()
       }),
       shouldShow: e,
       forceOpen: e,
       disableTooltipPointerEvents: !1,
-      children: n => (0, r.jsxs)(v.Z, k(E({
+      children: n => (0, r.jsxs)(v.Z, k(I({
         tag: "g"
       }, n), {
         onClick: () => t(!e),
@@ -278,38 +278,38 @@ function M() {
     })]
   })
 }
-let A = e => [{
-  string: P.default.JsWx19,
+let R = e => [{
+  string: _.default.JsWx19,
   value: e.playTime
 }, {
-  string: P.default.kJVOLy,
+  string: _.default.kJVOLy,
   value: e.timesClicked
 }, {
-  string: P.default.sm0Dw8,
+  string: _.default.sm0Dw8,
   value: e.lifetimePoints
 }];
 
-function R() {
+function A() {
   let e = (0, c.e7)([p.default], () => p.default.locale),
-    [t, n, s] = (0, c.Wu)([y.Z], () => [(0, f.m)((y.Z.endTime - y.Z.startTime) / 1e3), (0, h.u)(y.Z.getContributionsForItem(_.yN.CLICKER_BUTTON), e), (0, h.u)(Math.floor(y.Z.lifetimePoints), e)], [e]),
-    o = A({
+    [t, n, s] = (0, c.Wu)([y.Z], () => [(0, f.m)((y.Z.endTime - y.Z.startTime) / 1e3), (0, h.u)(y.Z.getContributionsForItem(P.yN.CLICKER_BUTTON), e), (0, h.u)(Math.floor(y.Z.lifetimePoints), e)], [e]),
+    o = R({
       playTime: t,
       timesClicked: n,
       lifetimePoints: s
     });
   return (0, r.jsxs)("div", {
-    className: C.stats,
+    className: Z.stats,
     children: [(0, r.jsx)(j.Z, {
-      className: C.statsHeader,
+      className: Z.statsHeader,
       variant: "heading-xxl/medium",
       color: "none",
-      children: w.intl.string(P.default.Z84a2d)
+      children: C.intl.string(_.default.Z84a2d)
     }), o.map((e, t) => (0, r.jsx)(j.Z, {
       variant: "text-sm/medium",
       color: "always-white",
-      children: w.intl.format(e.string, {
+      children: C.intl.format(e.string, {
         valueHook: (t, n) => (0, r.jsx)("span", {
-          className: C.statValue,
+          className: Z.statValue,
           children: e.value
         }, n)
       })
@@ -317,47 +317,47 @@ function R() {
   })
 }
 
-function B(e) {
+function T(e) {
   let {
     className: t
   } = e, {
     analyticsLocations: o
-  } = (0, d.ZP)(), [f, p] = (0, s.useState)(!1), h = (0, c.e7)([y.Z], () => y.Z.isRedeemingPrize), v = (0, c.e7)([m.default], () => m.default.getCurrentUser()), [N, A] = (0, c.Wu)([g.Z], () => [g.Z.isEntitledToSku(v, _.VU, _.oK), g.Z.isFetchingForApplication(_.oK)]);
-  return (0, O.is)(a.Z, !1), (0, s.useEffect)(() => {
-    (0, u.yD)(_.oK)
+  } = (0, d.ZP)(), [f, p] = (0, s.useState)(!1), h = (0, c.e7)([y.Z], () => y.Z.isRedeemingPrize), v = (0, c.e7)([m.default], () => m.default.getCurrentUser()), [N, R] = (0, c.Wu)([g.Z], () => [g.Z.isEntitledToSku(v, P.VU, P.oK), g.Z.isFetchingForApplication(P.oK)]);
+  return (0, O.is)(i.Z, !1), (0, s.useEffect)(() => {
+    (0, u.yD)(P.oK)
   }, []), (0, r.jsxs)("div", {
-    className: i()(t, C.winScreen),
+    className: a()(t, Z.winScreen),
     children: [(0, r.jsx)(j.Z, {
-      className: C.header,
+      className: Z.header,
       variant: "heading-lg/medium",
       color: "always-white",
-      children: w.intl.string(P.default["4LK+4u"])
+      children: C.intl.string(_.default["4LK+4u"])
     }), (0, r.jsxs)("div", {
-      className: C.ground,
+      className: Z.ground,
       children: [(0, r.jsx)("div", {
-        className: C.groundLeft
+        className: Z.groundLeft
       }), (0, r.jsx)("div", {
-        className: C.groundRight
+        className: Z.groundRight
       })]
-    }), (0, r.jsx)(R, {}), (0, r.jsxs)("div", {
-      className: C.imagery,
+    }), (0, r.jsx)(A, {}), (0, r.jsxs)("div", {
+      className: Z.imagery,
       children: [(0, r.jsx)("img", {
-        className: C.windowImage,
-        src: I,
-        alt: ""
-      }), (0, r.jsx)(M, {}), (0, r.jsx)("img", {
-        className: C.windowImage,
-        src: I,
-        alt: ""
-      })]
-    }), (0, r.jsxs)("div", {
-      className: C.footer,
-      children: [(0, r.jsx)("img", {
-        className: f ? C.arrowRightActive : void 0,
+        className: Z.windowImage,
         src: S,
         alt: ""
+      }), (0, r.jsx)(M, {}), (0, r.jsx)("img", {
+        className: Z.windowImage,
+        src: S,
+        alt: ""
+      })]
+    }), (0, r.jsxs)("div", {
+      className: Z.footer,
+      children: [(0, r.jsx)("img", {
+        className: f ? Z.arrowRightActive : void 0,
+        src: E,
+        alt: ""
       }), (0, r.jsx)(x.Z, {
-        disabled: A || h,
+        disabled: R || h,
         color: "green",
         onMouseEnter: () => p(!0),
         onMouseLeave: () => p(!1),
@@ -366,7 +366,7 @@ function B(e) {
             let {
               default: e
             } = await n.e("31981").then(n.bind(n, 196742));
-            return t => (0, r.jsx)(e, k(E({}, t), {
+            return t => (0, r.jsx)(e, k(I({}, t), {
               analyticsLocations: o
             }))
           })
@@ -374,11 +374,11 @@ function B(e) {
         children: (0, r.jsx)(j.Z, {
           variant: "text-md/medium",
           color: "currentColor",
-          children: N ? w.intl.string(P.default["/A+1UF"]) : w.intl.string(P.default.k3KlbW)
+          children: N ? C.intl.string(_.default["/A+1UF"]) : C.intl.string(_.default.k3KlbW)
         })
       }), (0, r.jsx)("img", {
-        className: f ? C.arrowLeftActive : void 0,
-        src: Z,
+        className: f ? Z.arrowLeftActive : void 0,
+        src: w,
         alt: ""
       })]
     })]

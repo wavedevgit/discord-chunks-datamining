@@ -1,4 +1,4 @@
-/** Chunk was on 51977 **/
+/** Chunk was on 10801 **/
 n.d(t, {
   Z: () => T
 });
@@ -77,10 +77,10 @@ function T(e) {
       source: E.on.VOICE_AUTO_OPEN
     }))
   }, [D, M]);
-  let k = i.useRef(!1);
+  let L = i.useRef(!1);
   if (i.useEffect(() => {
-      if (null == A || k.current) return;
-      k.current = !0;
+      if (null == A || L.current) return;
+      L.current = !0;
       let e = (0, p.K)(C.Z.getChannel(A.id), !0);
       (0, d.yw)(S.rMx.CHANNEL_OPENED, N(Z({}, e, (0, d.$H)(A.id)), {
         channel_view: T
@@ -88,7 +88,7 @@ function T(e) {
         channelId: A.id
       })
     }, [A, T]), null == A || null == w) return null;
-  let L = (0, r.jsx)(j.Z, {
+  let k = (0, r.jsx)(j.Z, {
     channel: A,
     baseChannelId: l
   });
@@ -97,7 +97,7 @@ function T(e) {
       channel: A,
       draftType: x.d.ChannelMessage
     }), (0, r.jsx)(b.ZP, {
-      toolbar: L,
+      toolbar: k,
       "aria-label": P.intl.string(P.t.Pwe8tL),
       children: (0, _.ud)({
         channel: A,

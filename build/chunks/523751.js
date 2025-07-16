@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => M
+  Z: () => k
 });
 var r = n(255367),
   i = n(73800),
@@ -196,7 +196,7 @@ function x(e) {
   })
 }
 
-function M(e) {
+function k(e) {
   let t, n;
   var a, {
     guild: o,
@@ -215,10 +215,10 @@ function M(e) {
       let e = m.default.getCurrentUser();
       return h.ZP.isMember(null == o ? void 0 : o.id, null == e ? void 0 : e.id)
     }),
-    M = (0, s.e7)([p.Z], () => p.Z.theme),
-    k = (0, O.XX)(o),
-    j = (0, y.i)(k),
-    U = i.useMemo(() => k.premium && L && !A, [A, k.premium, L]),
+    k = (0, s.e7)([p.Z], () => p.Z.theme),
+    M = (0, O.XX)(o),
+    j = (0, y.i)(M),
+    U = i.useMemo(() => M.premium && L && !A, [A, M.premium, L]),
     G = i.useCallback(e => {
       U && (e.stopPropagation(), e.preventDefault(), (0, f.f)({
         guildId: o.id,
@@ -240,9 +240,9 @@ function M(e) {
     sizeAdjustment: K
   } = D[j];
   if (null == B) return null;
-  k.premium && (t = W, n = Y);
-  let z = (0, c.wj)(M) ? Z : H,
-    q = (0, c.wj)(M) ? V : F;
+  M.premium && (t = W, n = Y);
+  let z = (0, c.wj)(k) ? Z : H,
+    q = (0, c.wj)(k) ? V : F;
   t = null != t ? t : z, n = null != n ? n : q;
   let X = Math.floor(.75 * w) - (null != K ? K : 0);
   return (0, r.jsx)(u.ua7, {
@@ -251,7 +251,7 @@ function M(e) {
     "aria-label": C,
     text: (0, r.jsx)(x, {
       badgeType: j,
-      guildTraits: k
+      guildTraits: M
     }),
     tooltipContentClassName: S.tooltipRemovePadding,
     children: e => (0, r.jsx)(u.P3F, {

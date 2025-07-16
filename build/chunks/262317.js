@@ -1,4 +1,4 @@
-/** Chunk was on 51977 **/
+/** Chunk was on 10801 **/
 n.d(t, {
   XX: () => R,
   ZP: () => D,
@@ -113,8 +113,8 @@ let D = (0, p.$)(function(e) {
     channel: R,
     mute: M,
     localMute: D,
-    localVideoDisabled: k,
-    deaf: L,
+    localVideoDisabled: L,
+    deaf: k,
     video: U,
     embeddedApplication: B,
     serverMute: F,
@@ -183,13 +183,13 @@ let D = (0, p.$)(function(e) {
         disconnected: W,
         mute: M,
         localMute: D,
-        localVideoDisabled: k,
+        localVideoDisabled: L,
         isStreaming: K,
         isGuest: Q,
         video: U,
         priority: J,
         ringing: V,
-        deaf: L,
+        deaf: k,
         nick: G,
         collapsed: l,
         overlap: l,

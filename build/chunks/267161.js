@@ -166,7 +166,7 @@ let W = i.memo(function() {
   return a ? null : (0, r.jsx)(s.Wdt, {
     children: e => (0, r.jsx)(s.f6W, {
       theme: l,
-      children: i => (0, r.jsx)(R.T, {
+      children: i => (0, r.jsx)(R.TF, {
         className: i,
         leading: (0, r.jsxs)(r.Fragment, {
           children: [t && (0, r.jsxs)(r.Fragment, {

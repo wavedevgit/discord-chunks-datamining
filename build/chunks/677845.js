@@ -1,4 +1,4 @@
-/** Chunk was on 51977 **/
+/** Chunk was on 10801 **/
 n.d(t, {
   Z: () => S
 }), n(539854);
@@ -38,7 +38,7 @@ function S(e) {
     totalNumberOfParticipants: T
   } = e, A = (0, c.bp)() === j.IlC.POPOUT, w = (0, o.e7)([_.Z], () => _.Z.getGuild(I.guild_id), [I.guild_id]), {
     dismissedActivityEntryPointTileChannel: R
-  } = (0, v.d)(), M = (0, o.e7)([h.Z], () => h.Z.getUserParticipantCount(I.id), [I]), D = (0, b.bt)(I.id, t), k = i.useCallback(() => {
+  } = (0, v.d)(), M = (0, o.e7)([h.Z], () => h.Z.getUserParticipantCount(I.id), [I]), D = (0, b.bt)(I.id, t), L = i.useCallback(() => {
     (0, a.j)(() => {
       v.d.setState({
         dismissedActivityEntryPointTileChannel: I.id
@@ -52,7 +52,7 @@ function S(e) {
       })
     })
   }, [I.id, R]);
-  let L = (0, o.e7)([y.Z], () => I.isPrivate() || (0, m.b)(y.Z, w, I), [w, I]),
+  let k = (0, o.e7)([y.Z], () => I.isPrivate() || (0, m.b)(y.Z, w, I), [w, I]),
     U = (null == w ? void 0 : w.afkChannelId) === I.id,
     B = I.userLimit <= 0 || I.userLimit > 1,
     F = (0, o.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(I.id).length <= 0),
@@ -75,18 +75,18 @@ function S(e) {
     name: l.ImpressionNames.CHANNEL_CALL_VIDEO_GRID_VIEW,
     properties: {
       total_participants: T,
-      can_invite: L,
+      can_invite: k,
       is_afk_channel: U,
       channel_user_limit: I.userLimit
     }
   }, {
     trackOnInitialLoad: !0
-  }, []), null != w && !U && (!(M >= 2) || !F || G || H || V ? B && 1 === M && L && (F && !G ? z.push(e => (0, r.jsx)(C.h, {
+  }, []), null != w && !U && (!(M >= 2) || !F || G || H || V ? B && 1 === M && k && (F && !G ? z.push(e => (0, r.jsx)(C.h, {
     channel: I,
     guild: w,
     width: e,
     inPopout: A,
-    handleClose: k,
+    handleClose: L,
     userParticipantCount: M
   })) : z.push(e => (0, r.jsx)(O.Z, {
     width: e,
@@ -98,7 +98,7 @@ function S(e) {
     guild: w,
     width: e,
     inPopout: A,
-    handleClose: k,
+    handleClose: L,
     userParticipantCount: M
   })));
   let W = i.useCallback(e => {

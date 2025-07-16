@@ -96,8 +96,8 @@ class m extends i.Component {
         onControlsShow: D,
         onControlsHide: L,
         onVolumeChange: x,
-        onMute: M,
-        disableArrowKeySeek: k,
+        onMute: k,
+        disableArrowKeySeek: M,
         alt: j = c.intl.string(c.t.FlNoSU)
       } = e,
       U = p(e, ["src", "fileSize", "className", "mediaPlayerClassName", "poster", "fileName", "naturalWidth", "naturalHeight", "playable", "downloadable", "volume", "autoPlay", "autoMute", "responsive", "mediaLayoutType", "mimeType", "renderOverlayContent", "renderLinkComponent", "onClick", "onPlay", "onPause", "onEnded", "onControlsShow", "onControlsHide", "onVolumeChange", "onMute", "disableArrowKeySeek", "alt"]);
@@ -144,12 +144,12 @@ class m extends i.Component {
           onPause: P,
           onEnded: w,
           onVolumeChange: x,
-          onMute: M,
+          onMute: k,
           onControlsShow: D,
           onControlsHide: L,
           mimeType: S,
           downloadable: b,
-          disableArrowKeySeek: k
+          disableArrowKeySeek: M
         })
       }
     }))

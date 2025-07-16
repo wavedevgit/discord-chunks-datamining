@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   s = n(73800),
   o = n(392711),
-  i = n(772848),
-  a = n(755721),
+  a = n(772848),
+  i = n(755721),
   c = n(481060),
   l = n(377171),
   u = n(668826),
@@ -87,13 +87,13 @@ function O(e) {
   } = e, n = (0, s.useRef)(null), [l, b] = (0, s.useState)((0, o.sample)(v())), [y, O] = (0, s.useState)({}), [j, N] = (0, s.useState)({
     x: 0,
     y: 0
-  }), _ = (e, t) => {
+  }), P = (e, t) => {
     var n, r;
     N({
       x: e.clientX,
       y: e.clientY
     }), O((n = x({}, y), r = r = {
-      [(0, i.Z)()]: t
+      [(0, a.Z)()]: t
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -121,21 +121,21 @@ function O(e) {
           backgroundColor: null == l ? void 0 : l.color
         },
         children: [null == l ? void 0 : l.title, (null == l ? void 0 : l.primaryButtonCTA) != null && (0, r.jsx)(f.Z, {
-          size: a.zx.Sizes.TINY,
-          look: a.zx.Looks.OUTLINED,
-          color: a.zx.Colors.WHITE,
+          size: i.zx.Sizes.TINY,
+          look: i.zx.Looks.OUTLINED,
+          color: i.zx.Colors.WHITE,
           onClick: t => {
             var r;
-            _(t, l.primaryButtonPoints), null == (r = n.current) || r.removeDrop(e), b((0, o.sample)(v()))
+            P(t, l.primaryButtonPoints), null == (r = n.current) || r.removeDrop(e), b((0, o.sample)(v()))
           },
           children: l.primaryButtonCTA
         }), (null == l ? void 0 : l.secondaryButtonCTA) != null && (0, r.jsx)(f.Z, {
-          size: a.zx.Sizes.TINY,
-          look: a.zx.Looks.OUTLINED,
-          color: a.zx.Colors.WHITE,
+          size: i.zx.Sizes.TINY,
+          look: i.zx.Looks.OUTLINED,
+          color: i.zx.Colors.WHITE,
           onClick: t => {
             var r;
-            _(t, l.secondaryButtonPoints), null == (r = n.current) || r.removeDrop(e), b((0, o.sample)(v()))
+            P(t, l.secondaryButtonPoints), null == (r = n.current) || r.removeDrop(e), b((0, o.sample)(v()))
           },
           children: l.secondaryButtonCTA
         }), null != l && (0, r.jsx)(d.Z, {
@@ -145,7 +145,7 @@ function O(e) {
           },
           onClick: t => {
             var r;
-            _(t, l.closeButtonPoints), null == (r = n.current) || r.removeDrop(e), b((0, o.sample)(v()))
+            P(t, l.closeButtonPoints), null == (r = n.current) || r.removeDrop(e), b((0, o.sample)(v()))
           },
           children: (0, r.jsx)(c.Dio, {
             size: "md",

@@ -1,5 +1,5 @@
-/** Chunk was on 51977 **/
-e.exports = {
+/** Chunk was on 25784 **/
+n.exports = {
   cell: "cell_f70307",
   iconContainer: "iconContainer_f70307",
   icon: "icon_f70307",

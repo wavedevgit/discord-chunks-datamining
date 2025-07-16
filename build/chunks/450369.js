@@ -1,6 +1,6 @@
-/** Chunk was on 51977 **/
+/** Chunk was on 10801 **/
 n.d(t, {
-  Q: () => L,
+  Q: () => k,
   Z: () => F
 });
 var r = n(255367),
@@ -56,7 +56,7 @@ function D(e) {
   return e
 }
 
-function k(e, t) {
+function L(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -68,7 +68,7 @@ function k(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let L = 16 / 9,
+let k = 16 / 9,
   U = e => {
     let {
       stageParticipant: t,
@@ -93,13 +93,13 @@ let L = 16 / 9,
       guildId: a,
       channelId: l.id,
       clickTrap: !0,
-      children: e => (0, r.jsx)(c.P3F, k(D({
+      children: e => (0, r.jsx)(c.P3F, L(D({
         innerRef: h,
         onContextMenu: e => d(n, e)
       }, e), {
         children: (0, r.jsx)(T.Z, {
           participant: n,
-          aspectRatio: L,
+          aspectRatio: k,
           blocked: m,
           ignored: g,
           channel: l,
@@ -145,7 +145,7 @@ let L = 16 / 9,
     }, [O, l, j, S]);
     return (0, r.jsx)(T.Z, {
       participant: n,
-      aspectRatio: L,
+      aspectRatio: k,
       fit: n.type === R.fO.USER ? v.L.COVER : void 0,
       blocked: g,
       ignored: _,
@@ -193,7 +193,7 @@ let L = 16 / 9,
               let {
                 default: t
               } = await n.e("22183").then(n.bind(n, 987281));
-              return n => (0, r.jsx)(t, k(D({}, n), {
+              return n => (0, r.jsx)(t, L(D({}, n), {
                 stream: e.stream,
                 appContext: p,
                 exitFullscreen: () => {},
@@ -223,7 +223,7 @@ let L = 16 / 9,
               let {
                 default: e
               } = await Promise.all([n.e("79695"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("74800")]).then(n.bind(n, 757387));
-              return t => (0, r.jsx)(e, k(D({}, t), {
+              return t => (0, r.jsx)(e, L(D({}, t), {
                 user: x,
                 guildId: y,
                 channel: l,

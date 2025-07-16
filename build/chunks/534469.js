@@ -1,4 +1,4 @@
-/** Chunk was on 51977 **/
+/** Chunk was on 10801 **/
 n.d(t, {
   AP: () => et,
   Ru: () => en,
@@ -38,8 +38,8 @@ var r = n(255367),
   R = n(348238),
   M = n(62072),
   D = n(38267),
-  k = n(25015),
-  L = n(689674),
+  L = n(25015),
+  k = n(689674),
   U = n(438075),
   B = n(764893),
   F = n(481363),
@@ -188,7 +188,7 @@ function er(e) {
     onFocus: S
   } = E, I = ee(E, ["onFocus"]), {
     isFocused: T,
-    handleFocus: L,
+    handleFocus: k,
     handleBlur: B
   } = (0, R.bb)(S), {
     popouts: F,
@@ -206,7 +206,7 @@ function er(e) {
   }), es = (0, u.e7)([p.Z], () => p.Z.keyboardModeEnabled), ec = V || es && T, eu = ec || eo, {
     content: ed,
     hasSpoilerEmbeds: ep
-  } = (0, k.Z)(o, {
+  } = (0, L.Z)(o, {
     hideSimpleEmbedContent: et && en,
     isInteracting: eu,
     formatInline: !1,
@@ -240,7 +240,7 @@ function er(e) {
       }),
       zalgo: !0,
       onKeyDown: eh,
-      onFocus: L,
+      onFocus: k,
       onBlur: B,
       childrenRepliedMessage: o.type === q.uaV.REPLY && (0, z.Z)($(J({}, e), {
         setPopout: Q,
@@ -345,18 +345,18 @@ let ei = i.memo(function(e) {
     eR = (0, u.e7)([O.Z], () => x.hasFlag(q.iLy.HAS_THREAD) && O.Z.getChannel(S.default.castMessageIdAsChannelId(x.id))),
     eM = x.isFirstMessageInForumPost(Q),
     eD = (0, m.A)((null != (n = x.editedTimestamp) ? n : x.timestamp).valueOf()),
-    ek = (0, u.e7)([j.Z], () => j.Z.isDeveloper),
+    eL = (0, u.e7)([j.Z], () => j.Z.isDeveloper),
     {
-      content: eL,
+      content: ek,
       hasSpoilerEmbeds: eU
-    } = (0, k.Z)(x, {
+    } = (0, L.Z)(x, {
       hideSimpleEmbedContent: ep && eh,
       isInteracting: ew,
       formatInline: !1,
       allowList: eM || eD,
       allowHeading: eM || eD,
       allowLinks: !0,
-      allowDevLinks: ek,
+      allowDevLinks: eL,
       previewLinkTarget: !0
     }),
     eB = (0, M.Z)(I, et, eT),
@@ -375,13 +375,13 @@ let ei = i.memo(function(e) {
     ez = (0, w.iG)(x, el),
     eW = (0, w.Gx)(x),
     eY = (0, u.e7)([h.Z], () => h.Z.getMessage(I), [I]),
-    eq = (0, L.Z)({
+    eq = (0, k.Z)({
       message: x,
       channel: Q
     }),
     eK = null != eY,
     eX = i.useMemo(() => Object.values(em).some(e => e), [em]);
-  l = x.type === q.uaV.CUSTOM_GIFT ? "" : !eN && eK ? (0, B.Z)(e, eL) : (0, G.Z)(e, eL, eN);
+  l = x.type === q.uaV.CUSTOM_GIFT ? "" : !eN && eK ? (0, B.Z)(e, ek) : (0, G.Z)(e, ek, eN);
   let eQ = x.id === el,
     eJ = (0, r.jsx)(d.tEY, {
       offset: {
