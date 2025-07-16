@@ -9,8 +9,10 @@ n.d(t, {
   Yo: () => u,
   dj: () => d,
   hS: () => p,
+  mB: () => h,
   o4: () => o,
-  td: () => f
+  td: () => f,
+  wd: () => m
 });
 var r = n(818083),
   i = n(987338);
@@ -156,4 +158,29 @@ function p(e) {
   }, {
     autoTrackExposure: t
   })
+}
+let h = (0, r.B)({
+  kind: "user",
+  id: "2025-07_overlay_default_disable",
+  label: "Overlay Default Disable",
+  commonTriggerPoint: i.$P.CONNECTION_OPEN,
+  defaultConfig: {
+    enabled: !1
+  },
+  treatments: [{
+    id: 1,
+    label: "Enable Default Disable Behavior",
+    config: {
+      enabled: !0
+    }
+  }]
+});
+
+function m(e) {
+  let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
+  return h.getCurrentConfig({
+    location: e
+  }, {
+    autoTrackExposure: t
+  }).enabled
 }

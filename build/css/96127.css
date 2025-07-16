@@ -1,6 +1,6 @@
 /**
   Module ID: 96127
-  Original File Name: 25a3cf9f8a511f82
+  Original File Name: 831a115f9e69c3d1
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -1403,8 +1403,9 @@
 }
 
 .applicationHomeCard__6df1a {
-    height: 100%;
-    width: 342px
+    box-sizing: border-box;
+    height: 470px;
+    width: 390px
 }
 
 .card__6df1a {
@@ -8304,4 +8305,4 @@ div:has(>.positionLayer__4f4b6) {
     width: 96px
 }
 
-/*# sourceMappingURL=25a3cf9f8a511f82.css.map*/
+/*# sourceMappingURL=831a115f9e69c3d1.css.map*/

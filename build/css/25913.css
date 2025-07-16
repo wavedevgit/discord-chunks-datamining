@@ -1,6 +1,6 @@
 /**
   Module ID: 25913
-  Original File Name: 409d5f294aec3d61
+  Original File Name: 5c6ae8b3e6b5c04d
 **/
 .gradientOuterBorder__8f49b {
     align-items: center;
@@ -327,8 +327,9 @@
 }
 
 .applicationHomeCard__6df1a {
-    height: 100%;
-    width: 342px
+    box-sizing: border-box;
+    height: 470px;
+    width: 390px
 }
 
 .card__6df1a {
@@ -863,4 +864,4 @@
     flex-direction: row-reverse
 }
 
-/*# sourceMappingURL=409d5f294aec3d61.css.map*/
+/*# sourceMappingURL=5c6ae8b3e6b5c04d.css.map*/

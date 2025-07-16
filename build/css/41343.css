@@ -1,6 +1,6 @@
 /**
   Module ID: 41343
-  Original File Name: 37ed72a08053aa5b
+  Original File Name: f40629a3a15b78b1
 **/
 @value minColumnWidth: 460px;
 
@@ -1356,8 +1356,9 @@
 }
 
 .applicationHomeCard__6df1a {
-    height: 100%;
-    width: 342px
+    box-sizing: border-box;
+    height: 470px;
+    width: 390px
 }
 
 .card__6df1a {
@@ -1506,4 +1507,4 @@
     margin-left: var(--space-12)
 }
 
-/*# sourceMappingURL=37ed72a08053aa5b.css.map*/
+/*# sourceMappingURL=f40629a3a15b78b1.css.map*/

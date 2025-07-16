@@ -1,52 +1,52 @@
 /** Chunk was on 13965 **/
 n.d(t, {
-  default: () => j
+  default: () => O
 }), n(388685), n(953529);
 var r = n(255367),
   o = n(73800),
-  l = n(505266),
-  i = n(442837),
+  i = n(505266),
+  l = n(442837),
   a = n(481060),
-  u = n(607070),
-  s = n(530618),
-  c = n(372654),
+  s = n(607070),
+  c = n(530618),
+  u = n(372654),
   d = n(262212),
   p = n(795338),
   f = n(535396),
   b = n(93841),
   m = n(388032),
-  v = n(548197);
+  j = n(548197);
 
-function j(e) {
+function O(e) {
   var t, n, {
-      guildId: j,
-      powerup: g
+      guildId: O,
+      powerup: y
     } = e,
-    O = function(e, t) {
+    g = function(e, t) {
       if (null == e) return {};
       var n, r, o = function(e, t) {
         if (null == e) return {};
         var n, r, o = {},
-          l = Object.keys(e);
-        for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
+          i = Object.keys(e);
+        for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
         return o
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var l = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
+        var i = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
       }
       return o
     }(e, ["guildId", "powerup"]);
-  let x = (0, i.e7)([u.Z], () => u.Z.useReducedMotion),
-    y = o.useRef(null),
-    h = o.useRef(new l.qA),
-    [P, _] = o.useState(null),
-    w = f.uc.has(g.skuId);
+  let x = (0, l.e7)([s.Z], () => s.Z.useReducedMotion),
+    v = o.useRef(null),
+    C = o.useRef(new i.qA),
+    [h, _] = o.useState(null),
+    P = f.uc.has(y.skuId);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(l.O_, {
+    children: [(0, r.jsx)(i.O_, {
       ref: _,
-      className: v.confettiCanvas,
-      environment: h.current
+      className: j.confettiCanvas,
+      environment: C.current
     }), (0, r.jsxs)(a.Y0X, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -65,55 +65,55 @@ function j(e) {
       }
       return e
     }({
-      className: v.modal,
+      className: j.modal,
       size: a.CgR.DYNAMIC
-    }, O), n = n = {
+    }, g), n = n = {
       parentComponent: "GuildPowerupActivateModal",
       children: [(0, r.jsx)(a.hzk, {
-        className: v.modalContentContainer,
+        className: j.modalContentContainer,
         scrollbarType: "none",
         children: (0, r.jsxs)("div", {
-          className: v.container,
-          ref: y,
+          className: j.container,
+          ref: v,
           children: [(0, r.jsx)(p.m, {
-            className: v.image,
-            powerup: g
+            className: j.image,
+            powerup: y
           }), (0, r.jsxs)("div", {
-            className: v.contentContainer,
+            className: j.contentContainer,
             children: [(0, r.jsx)(a.X6q, {
               variant: "heading-xl/extrabold",
               children: m.intl.formatToPlainString(b.default.lFuOFB, {
-                perkName: g.title
+                perkName: y.title
               })
             }), (0, r.jsx)(a.Text, {
-              className: v.description,
+              className: j.description,
               variant: "text-sm/normal",
               children: m.intl.formatToPlainString(b.default.y3wHoq, {
-                perkName: g.title
+                perkName: y.title
               })
-            }), w ? (0, r.jsx)(d.ms, {
-              className: v.button,
-              guildId: j,
-              powerup: g,
-              onClick: O.onClose
+            }), P ? (0, r.jsx)(d.ms, {
+              className: j.button,
+              guildId: O,
+              powerup: y,
+              onClick: g.onClose
             }) : (0, r.jsx)("div", {
               "data-button-hoisted-classname-wrapper": !0,
-              className: v.button,
+              className: j.button,
               children: (0, r.jsx)(a.zxk, {
                 variant: "primary",
                 text: m.intl.string(m.t.cpT0Cg),
-                onClick: O.onClose
+                onClick: g.onClose
               })
             })]
           })]
         })
       }), (0, r.jsx)(a.olH, {
-        className: v.close,
-        onClick: O.onClose
-      }), !x && (0, r.jsx)(s.Z, {
-        confettiTarget: y.current,
-        confettiCanvas: P,
-        sprites: (0, c.vK)()
+        className: j.close,
+        onClick: g.onClose
+      }), !x && (0, r.jsx)(c.Z, {
+        confettiTarget: v.current,
+        confettiCanvas: h,
+        sprites: (0, u.vK)()
       })]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);

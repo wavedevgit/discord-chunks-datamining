@@ -1,16 +1,16 @@
 /** Chunk was on 99014 **/
 n.d(t, {
-  $: () => s,
-  w: () => a
+  $: () => l,
+  w: () => s
 });
 var r, o = n(73800),
-  i = n(626135),
-  l = n(981631),
-  a = ((r = {}).DETAIL = "Boost Perk Shop Details", r.DEACTIVATE = "Boost Perk Shop Disable", r);
+  a = n(626135),
+  i = n(981631),
+  s = ((r = {}).DETAIL = "Boost Perk Shop Details", r.DEACTIVATE = "Boost Perk Shop Disable", r);
 
-function s(e, t, n) {
+function l(e, t, n) {
   o.useEffect(() => {
-    i.default.track(l.rMx.OPEN_MODAL, {
+    a.default.track(i.rMx.OPEN_MODAL, {
       type: n,
       sku_id: t.skuId,
       guild_id: e
