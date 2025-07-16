@@ -232,8 +232,8 @@ function q(e) {
       })
     }
   }, [K, ea, X, o.id, Q, G.trackingCtx.content]), s.useEffect(() => {
-    K && ea && !X && !F && q && f.Z.stopTracking(o.id)
-  }, [K, ea, X, F, q, o.id]);
+    (!D || I) && f.Z.clearTracking(), K && ea && !X && !F && q && f.Z.stopTracking(o.id)
+  }, [D, I, K, ea, X, F, q, o.id]);
   let eS = (0, j.h)({
     location: T.dr.QUESTS_BAR,
     questConfig: o.config
