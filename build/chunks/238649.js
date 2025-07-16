@@ -81,7 +81,7 @@ let N = r.memo(r.forwardRef((e, t) => {
               variant: "expressive",
               size: "md",
               fullWidth: A,
-              text: R,
+              buttonTextOverride: R,
               subscriptionTier: D
             }), !A && (0, i.jsx)(h.Z, {
               variant: "secondary",

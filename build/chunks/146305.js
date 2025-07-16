@@ -158,7 +158,9 @@ let eb = {
           section: em.pNK.ROLES, impressionName: i.ImpressionNames.GUILD_SETTINGS_ROLES, label: ep.intl.string(ep.t.LPJmLy), element: L.Z, type: o.bT.MINIMAL, ariaLabel: ep.intl.string(ep.t.KXcECw), notice: {
             stores: [S.Z],
             element: L._
-          }, predicate: () => t.canManageRoles
+          }, predicate: () => t.canManageRoles, icon: t.pinPermissionMigrationAvailable ? (0, r.jsx)("div", {
+            className: ef.redDot
+          }) : void 0
         };
       case em.pNK.EMOJI:
         return {

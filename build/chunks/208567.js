@@ -81,8 +81,8 @@ class v extends(i = r.PureComponent) {
       showIcon: C,
       showIconDisabled: N,
       className: S,
-      imageClassName: O,
-      iconClassName: E,
+      imageClassName: E,
+      iconClassName: O,
       iconWrapperClassName: T,
       icon: w,
       hideSize: Z,
@@ -101,12 +101,12 @@ class v extends(i = r.PureComponent) {
       })), v) return (0, l.jsx)("div", {
       className: a()(p.imageUploader, p.disabled, S),
       children: (0, l.jsxs)("div", {
-        className: a()(p.imageUploaderInner, O),
+        className: a()(p.imageUploaderInner, E),
         style: j(x({}, R), {
           backgroundImage: n
         }),
         children: [i, N && (0, l.jsx)("div", {
-          className: a()(p.imageUploaderIcon, p.imageUploaderIconDisabled, E),
+          className: a()(p.imageUploaderIcon, p.imageUploaderIconDisabled, O),
           children: w
         })]
       })
@@ -129,7 +129,7 @@ class v extends(i = r.PureComponent) {
         children: (0, l.jsxs)("div", {
           className: C ? a()(p.imageUploaderIconWrapper, T) : void 0,
           children: [(0, l.jsxs)("div", {
-            className: a()(p.imageUploaderInner, O),
+            className: a()(p.imageUploaderInner, E),
             style: j(x({}, R), {
               backgroundImage: n
             }),
@@ -154,7 +154,7 @@ class v extends(i = r.PureComponent) {
             "aria-hidden": "true",
             children: o
           }), C && (0, l.jsx)(b, {
-            className: E,
+            className: O,
             icon: w
           })]
         })

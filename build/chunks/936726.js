@@ -44,7 +44,7 @@ function N(e) {
   return e
 }
 
-function I(e, t) {
+function E(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -56,7 +56,7 @@ function I(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let E = e => {
+let I = e => {
   if (null == e) return null;
   let t = new g.Z(e);
   return O.ZP.getUserTag(t)
@@ -88,7 +88,7 @@ function T(e) {
       (0, x.JG)(e)
     }, [n]),
     R = i.useCallback(() => {
-      (0, c.h7j)(e => (0, r.jsx)(c.ConfirmModal, I(N({}, e), {
+      (0, c.h7j)(e => (0, r.jsx)(c.ConfirmModal, E(N({}, e), {
         header: _.intl.formatToPlainString(_.t.QVFjHh, {
           name: n.name
         }),
@@ -120,7 +120,7 @@ function T(e) {
   null != n.user ? L.push({
     icon: c.T39,
     text: _.intl.formatToPlainString(_.t["7EcUbm"], {
-      user: E(n.user),
+      user: I(n.user),
       timestamp: j.default.extractTimestamp(n.id)
     })
   }) : L.push({
@@ -224,7 +224,7 @@ function T(e) {
               return (0, r.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
                 className: C.copyButton,
-                children: (0, r.jsx)(c.zxk, I(N({
+                children: (0, r.jsx)(c.zxk, E(N({
                   variant: "secondary",
                   size: "sm",
                   text: _.intl.string(_.t.Ae9rUV)

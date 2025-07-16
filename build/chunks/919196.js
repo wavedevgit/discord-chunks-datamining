@@ -1,6 +1,6 @@
 /** Chunk was on 7104 **/
 n.d(t, {
-  Z: () => I
+  Z: () => E
 }), n(388685), n(539854), n(953529);
 var r = n(255367),
   i = n(73800),
@@ -96,14 +96,14 @@ function N(e) {
   }), t))
 }
 
-function I(e) {
+function E(e) {
   var t;
   let {
     guild: n,
     applicationIntegration: s,
     selectableWebhookChannels: d,
-    editedWebhook: I,
-    errors: E,
+    editedWebhook: E,
+    errors: I,
     canNavigate: S
   } = e, {
     application: T,
@@ -177,9 +177,9 @@ function I(e) {
         title: y.intl.string(y.t["t9ZX/P"])
       }), P.length > 0 ? (0, r.jsx)(O.Z, {
         webhooks: P,
-        editedWebhook: I,
+        editedWebhook: E,
         selectableWebhookChannels: d,
-        errors: E,
+        errors: I,
         canNavigate: S
       }) : (0, r.jsx)(a.Zbd, {
         className: _.emptyCard,

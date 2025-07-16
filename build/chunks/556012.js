@@ -1,4 +1,4 @@
-/** Chunk was on 93375 **/
+/** Chunk was on 79381 **/
 n.d(t, {
   c: () => j
 });
@@ -54,7 +54,7 @@ let f = e => e !== o.jj.QUARANTINE_USER,
         return c.intl.string(c.t["/7nL5e"])
     }
   },
-  S = (e, t) => {
+  O = (e, t) => {
     var n, r, f;
     switch (e) {
       case o.jj.QUARANTINE_USER:
@@ -80,7 +80,7 @@ let f = e => e !== o.jj.QUARANTINE_USER,
       }
     }
   },
-  O = e => {
+  S = e => {
     switch (e) {
       case o.jj.BLOCK_MESSAGE:
         return r.k$p;
@@ -98,8 +98,8 @@ function j(e, t, n) {
   return E(e) ? {
     headerText: null != (l = g(e)) ? l : "",
     descriptionText: null != (i = d(e, n)) ? i : "",
-    helperText: null != (a = S(e, t)) ? a : null,
-    icon: null != (u = O(e)) ? u : r.k$p,
+    helperText: null != (a = O(e, t)) ? a : null,
+    icon: null != (u = S(e)) ? u : r.k$p,
     isEditable: f(e)
   } : null
 }

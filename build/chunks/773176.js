@@ -214,7 +214,7 @@ function ef(e) {
     }), [t, y]), O = (0, M.U)(t, n), j = (0, k.NE)(t, n), S = (0, k.Ek)(n), P = (0, u.e7)([E.Z], () => null != t.guild_id && E.Z.isLurking(t.guild_id), [t]), I = (0, u.e7)([H.ZP], () => null != t.guild_id && H.ZP.isCurrentUserGuest(t.guild_id), [t]), Z = s.id === p, N = (C || n.canDeleteOwnMessage(p)) && h && !ei.V$x.UNDELETABLE.has(n.type);
     n.type === ei.uaV.AUTO_MODERATION_ACTION && (N = N && C);
     let T = (0, X.a4)(n),
-      A = (0, J.Z)(n, t, C),
+      A = (0, J.Z)(n, t),
       w = !t.isSystemDM() && (0, Q.Z)(n, p) && h && !g,
       {
         disableReactionCreates: R

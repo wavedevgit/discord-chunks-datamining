@@ -1,6 +1,6 @@
 /** Chunk was on 7104 **/
 n.d(t, {
-  Z: () => g
+  Z: () => h
 }), n(415506), n(953529);
 var r = n(255367),
   i = n(73800),
@@ -11,9 +11,11 @@ var r = n(255367),
   c = n(208884),
   d = n(453628),
   u = n(996987),
-  p = n(326946),
-  m = n(20493);
-class b extends i.PureComponent {
+  p = n(231338),
+  m = n(388032),
+  b = n(326946),
+  g = n(20493);
+class f extends i.PureComponent {
   getOverwriteValue(e) {
     let {
       allow: t,
@@ -59,7 +61,7 @@ class b extends i.PureComponent {
           children: (0, r.jsx)(s.t6m, {
             size: "sm",
             color: "currentColor",
-            className: p.icon
+            className: b.icon
           })
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
@@ -74,39 +76,49 @@ class b extends i.PureComponent {
       }
     })
   }
+  renderTitleAccessory(e, t) {
+    return e === p.Pl.MANAGE_MESSAGES && t ? (0, r.jsx)(s.DY3, {
+      text: m.intl.string(m.t["2XIdPj"]),
+      className: b.accessory,
+      children: (0, r.jsx)(s.aNP, {
+        color: s.TVs.colors.STATUS_WARNING
+      })
+    }) : null
+  }
   renderComponent(e) {
+    var t;
     let {
-      title: t,
-      description: n,
-      helpdeskArticleId: i,
-      flag: l
+      title: n,
+      description: i,
+      helpdeskArticleId: l,
+      flag: a
     } = e, {
-      permissions: a,
-      locked: d,
+      permissions: d,
+      locked: p,
       permissionRender: m
-    } = this.props, b = null == m ? void 0 : m(l), g = !!(d || b), f = "string" == typeof b ? this.renderDisabledIndicator(b) : null, h = o()({
-      [p.title]: null != f
+    } = this.props, g = null != (t = this.props.inPinPermissionExperiment) && t, f = null == m ? void 0 : m(a), h = !!(p || f), x = "string" == typeof f ? this.renderDisabledIndicator(f) : null, j = o()({
+      [b.title]: null != x
     });
-    return null == a ? (0, r.jsxs)(u.Z, {
-      disabled: g,
-      value: this.getOverwriteValue(l),
-      onChange: e => this.handleChange(l, e),
-      note: (0, c._u)(n),
-      helpdeskArticleId: i,
-      children: [f, (0, r.jsx)("span", {
-        className: h,
-        children: t
-      })]
-    }, String(l)) : (0, r.jsxs)(s.j7V, {
-      disabled: g,
-      value: this.getPermissionValue(l, a),
-      onChange: e => this.handleChange(l, e),
-      note: (0, c._u)(n),
-      children: [f, (0, r.jsx)("span", {
-        className: h,
-        children: t
-      })]
-    }, String(l))
+    return null == d ? (0, r.jsxs)(u.Z, {
+      disabled: h,
+      value: this.getOverwriteValue(a),
+      onChange: e => this.handleChange(a, e),
+      note: (0, c._u)(i),
+      helpdeskArticleId: l,
+      children: [x, (0, r.jsx)("span", {
+        className: j,
+        children: n
+      }), this.renderTitleAccessory(a, g)]
+    }, String(a)) : (0, r.jsxs)(s.j7V, {
+      disabled: h,
+      value: this.getPermissionValue(a, d),
+      onChange: e => this.handleChange(a, e),
+      note: (0, c._u)(i),
+      children: [x, (0, r.jsx)("span", {
+        className: j,
+        children: n
+      }), this.renderTitleAccessory(a, g)]
+    }, String(a))
   }
   render() {
     let {
@@ -118,17 +130,17 @@ class b extends i.PureComponent {
       children: (0, r.jsxs)(s.y5t, {
         component: (0, r.jsx)(s.vwX, {
           tag: s.RB0.H5,
-          className: null != e.description ? m.marginBottom8 : m.marginBottom20,
+          className: null != e.description ? g.marginBottom8 : g.marginBottom20,
           children: e.title
         }),
         children: [null != e.description && (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
-          className: m.marginBottom20,
+          className: g.marginBottom20,
           children: e.description
         }), e.permissions.map(this.renderComponent, this)]
       })
     })
   }
 }
-let g = b
+let h = f

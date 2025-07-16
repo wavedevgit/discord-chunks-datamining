@@ -4,9 +4,9 @@ t.d(n, {
   YJ: () => d,
   zY: () => u
 });
-var l = t(255367);
+var i = t(255367);
 t(73800);
-var i = t(481060),
+var l = t(481060),
   a = t(489813),
   o = t(592286),
   r = t(388032),
@@ -21,7 +21,7 @@ function c(e) {
     autofocus: s,
     className: c
   } = e;
-  return (0, l.jsx)(i.oil, {
+  return (0, i.jsx)(l.oil, {
     inputClassName: c,
     maxLength: o.tL,
     value: null != n ? n : "",
@@ -36,9 +36,9 @@ function d(e) {
   let {
     formField: n
   } = e;
-  return (0, l.jsx)(a.CA, {
+  return (0, i.jsx)(a.CA, {
     title: n.label,
-    children: (0, l.jsx)(i.Kx8, {
+    children: (0, i.jsx)(l.Kx8, {
       className: s.disabledFieldBackground,
       value: n.response,
       disabled: !0,
@@ -52,12 +52,12 @@ function u(e) {
   let {
     formField: n,
     autofocus: t,
-    onChange: i
+    onChange: l
   } = e;
-  return (0, l.jsx)(a.hK, {
+  return (0, i.jsx)(a.hK, {
     title: n.label,
-    children: (0, l.jsx)(c, {
-      onChange: i,
+    children: (0, i.jsx)(c, {
+      onChange: l,
       value: n.response,
       autofocus: t,
       placeholder: r.intl.string(r.t["Sqn+Wl"])

@@ -2,7 +2,7 @@
 "use strict";
 r.d(t, {
   Z: () => v
-}), r(35282), r(388685);
+}), r(388685), r(35282);
 var n = r(255367),
   l = r(73800),
   i = r(120356),
@@ -20,7 +20,7 @@ var n = r(255367),
   m = r(709999),
   _ = r(81136),
   O = r(501638),
-  C = r(484920);
+  C = r(538314);
 
 function v(e) {
   var t;
@@ -64,8 +64,13 @@ function v(e) {
       setQueryPageOffset: D,
       queryPageSize: M
     } = (0, f.S)(),
-    H = r || k || null == T,
-    W = M > 0 && !H && 0 === R.length;
+    [H, W] = l.useState(!1),
+    V = r || k || null == T;
+  l.useEffect(() => {
+    if (V) return void W(!1);
+    R.length > 0 && W(!0)
+  }, [V, R.length]);
+  let U = M > 0 && !V && 0 === R.length;
   return l.useEffect(() => {
     let e = new ResizeObserver(() => {
       null != Z.current && F(Math.floor(5 * getComputedStyle(Z.current).gridTemplateColumns.split(/\s+/).length))
@@ -74,12 +79,14 @@ function v(e) {
   }, [F]), (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsxs)("div", {
       className: o()({
-        [C.productsEmpty]: W
+        [C.productsEmpty]: U
       }),
-      children: [W && (0, n.jsx)(O.Z, {}), (0, n.jsxs)("div", {
-        className: C.products,
+      children: [U && (0, n.jsx)(O.Z, {}), (0, n.jsxs)("div", {
+        className: o()(C.products, {
+          [C.loadIn]: H
+        }),
         ref: Z,
-        children: [H && [...Array(M)].map((e, t) => (0, n.jsx)(b.K, {}, t)), !H && R.map((e, t) => {
+        children: [V && [...Array(M)].map((e, t) => (0, n.jsx)(b.K, {}, t)), !V && R.map((e, t) => {
           let r = d.Z.getCategory(e.categorySkuId);
           return null == r ? null : (0, n.jsx)(u.k0, {
             newValue: {

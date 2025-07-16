@@ -53,8 +53,8 @@ let N = o.ZP.connectStores([m.Z], () => ({
       isApplicationBypassToggleEnabled: u,
       setInviteFlags: m,
       copyValue: S,
-      changePage: O,
-      inviteChannel: E,
+      changePage: E,
+      inviteChannel: O,
       source: T,
       code: w,
       guildScheduledEvent: Z,
@@ -69,14 +69,14 @@ let N = o.ZP.connectStores([m.Z], () => ({
     } = c, M = l.useCallback(() => {
       g.default.track(b.rMx.COPY_INSTANT_INVITE, {
         server: h.Z.getGuildId(),
-        channel: null == E ? void 0 : E.id,
-        channel_type: null == E ? void 0 : E.type,
+        channel: null == O ? void 0 : O.id,
+        channel_type: null == O ? void 0 : O.type,
         location: T,
         code: w,
         guild_scheduled_event_id: null == Z ? void 0 : Z.id,
         application_id: null == I ? void 0 : I.id
       })
-    }, [null == I ? void 0 : I.id, E, T, w, Z]);
+    }, [null == I ? void 0 : I.id, O, T, w, Z]);
     return (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(N, {
         value: S,
@@ -127,7 +127,7 @@ let N = o.ZP.connectStores([m.Z], () => ({
         variant: "text-xs/normal",
         className: s()(C.marginTop8, y.footerText),
         children: [(0, f.Vg)(_, P), " ", r ? (0, i.jsx)(d.eee, {
-          onClick: () => O(j.RV.SETTINGS),
+          onClick: () => E(j.RV.SETTINGS),
           children: v.intl.string(v.t.VNe8Pz)
         }) : null]
       }), !n && r && L ? (0, i.jsxs)(d.Text, {

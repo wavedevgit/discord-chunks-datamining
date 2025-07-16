@@ -1,16 +1,16 @@
-/** Chunk was on 93375 **/
+/** Chunk was on 79381 **/
 n.d(t, {
   Ar: () => N,
   DO: () => E,
   Fn: () => d,
-  Jq: () => O,
+  Jq: () => S,
   QO: () => A,
   Vb: () => _,
-  YN: () => y,
-  ZF: () => R,
+  YN: () => R,
+  ZF: () => y,
   ep: () => j,
   km: () => p,
-  nC: () => S,
+  nC: () => O,
   vo: () => g
 }), n(388685), n(415506);
 var r = n(581364),
@@ -25,8 +25,8 @@ let f = (e, t) => "".concat(e, "-").concat(t, "-new-rule"),
   E = e => (null == e ? void 0 : e.triggerType) === s.fX.KEYWORD,
   g = e => (null == e ? void 0 : e.triggerType) === s.fX.ML_SPAM,
   d = e => (null == e ? void 0 : e.triggerType) === s.fX.DEFAULT_KEYWORD_LIST,
-  S = e => (null == e ? void 0 : e.triggerType) === s.fX.MENTION_SPAM,
-  O = e => (null == e ? void 0 : e.triggerType) === s.fX.USER_PROFILE;
+  O = e => (null == e ? void 0 : e.triggerType) === s.fX.MENTION_SPAM,
+  S = e => (null == e ? void 0 : e.triggerType) === s.fX.USER_PROFILE;
 
 function j(e, t) {
   let n = o.I6[t],
@@ -88,7 +88,7 @@ function _(e) {
   return (0, r.BH)(null != (t = null == e ? void 0 : e.id) ? t : "INVALID_SNOWFLAKE")
 }
 
-function y(e) {
+function R(e) {
   switch (e) {
     case s.q4.MESSAGE_SEND:
       return c.intl.string(c.t.NlQW4O);
@@ -99,7 +99,7 @@ function y(e) {
   }
 }
 
-function R(e) {
+function y(e) {
   switch (e) {
     case s.jj.BLOCK_MESSAGE:
       return c.intl.string(c.t.d1ab8v);

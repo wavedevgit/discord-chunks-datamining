@@ -122,7 +122,7 @@ function w(e) {
             onClick: () => {
               x()
             },
-            text: H(),
+            buttonTextOverride: H(),
             variant: "expressive"
           })]
         })

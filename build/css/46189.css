@@ -1,6 +1,6 @@
 /**
   Module ID: 46189
-  Original File Name: 2e7f914ad21db74b
+  Original File Name: 327e6cdf8789874d
 **/
 .editCard_a25a68 {
     background-color: var(--background-surface-high);
@@ -6455,6 +6455,16 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     margin-top: 8px
 }
 
+.migrationInfoBox_db0ee9 {
+    margin-bottom: 24px
+}
+
+.migrateButton_db0ee9 {
+    display: block;
+    position: relative;
+    right: 4px
+}
+
 .searchContainer_db0ee9 {
     align-items: center;
     display: flex;
@@ -12493,4 +12503,11 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     text-overflow: ellipsis
 }
 
-/*# sourceMappingURL=2e7f914ad21db74b.css.map*/
+.redDot_cbe0b4 {
+    background-color: var(--status-danger);
+    border-radius: 4px;
+    height: 8px;
+    width: 8px
+}
+
+/*# sourceMappingURL=327e6cdf8789874d.css.map*/

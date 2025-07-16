@@ -94,8 +94,8 @@ function f(e) {
     theme: C,
     roleStyle: N,
     onContextMenu: S,
-    "aria-label": O
-  } = e, E = (0, h._f)(s.id, r, null == r ? void 0 : r.colorStrings);
+    "aria-label": E
+  } = e, O = (0, h._f)(s.id, r, null == r ? void 0 : r.colorStrings);
   return d ? (0, i.jsx)("div", {
     className: m.dragged
   }) : (0, i.jsx)(o.njP.Item, {
@@ -104,19 +104,19 @@ function f(e) {
     selectedItem: f,
     onItemSelect: x,
     itemType: j,
-    "aria-label": null != v ? "".concat(O, ", ").concat(v) : O,
+    "aria-label": null != v ? "".concat(E, ", ").concat(v) : E,
     onContextMenu: S,
     children: (0, i.jsxs)("div", {
       className: m.roleContent,
       children: ["dot" === N ? (0, i.jsx)(o.FhE, {
         color: null != t ? t : void 0,
-        colors: E,
+        colors: O,
         className: m.roleDot,
         background: !1,
         tooltip: !1
       }) : (0, i.jsx)(o.xko, {
         color: null != t ? t : void 0,
-        colors: E,
+        colors: O,
         className: m.roleCircle
       }), function() {
         if (!b) return null;

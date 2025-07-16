@@ -1,6 +1,6 @@
 /** Chunk was on 80393 **/
 n.d(t, {
-  Z: () => Z
+  Z: () => B
 }), n(583741), n(539854), n(388685), n(290780);
 var r, l, i, s = n(392711),
   a = n.n(s),
@@ -165,7 +165,7 @@ i = "GuildSettingsAuditLogStore", (l = "displayName") in z ? Object.defineProper
   configurable: !0,
   writable: !0
 }) : z[l] = i;
-let Z = new z(c.Z, {
+let B = new z(c.Z, {
   AUDIT_LOG_FETCH_START: function() {
     D = !0
   },

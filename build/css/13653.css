@@ -1,6 +1,6 @@
 /**
   Module ID: 13653
-  Original File Name: f244206b5c63ff03
+  Original File Name: 9505387c776f5418
 **/
 .slowModeIcon_b21699 {
     display: block;
@@ -2696,41 +2696,10 @@
     background-color: var(--background-base-lowest)
 }
 
-.modalRoot__02068 {
-    border-radius: var(--radius-sm)
-}
-
-.modal__02068 {
-    padding: 16px
-}
-
-.modalFooter__02068 {
-    flex-direction: row
-}
-
-.header__02068 {
-    margin-bottom: 8px
-}
-
 .forumPost__02068 {
     border: 1px solid var(--border-subtle);
     border-radius: var(--radius-md);
-    margin-top: 16px;
     pointer-events: none
 }
 
-.cancelButton__02068 {
-    color: var(--interactive-normal);
-    margin-left: -16px;
-    margin-right: auto
-}
-
-.cancelButton__02068:hover {
-    text-decoration: underline
-}
-
-.dontAddButton__02068 {
-    margin-right: 8px
-}
-
-/*# sourceMappingURL=f244206b5c63ff03.css.map*/
+/*# sourceMappingURL=9505387c776f5418.css.map*/

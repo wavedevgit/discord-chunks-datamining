@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 a.d(t, {
-  Z: () => Z
+  Z: () => A
 }), a(388685);
 var n = a(255367),
   r = a(73800),
@@ -91,7 +91,7 @@ function k(e) {
   })
 }
 
-function Z() {
+function A() {
   var e, t;
   let a = (0, u.e7)([O.Z], () => O.Z.getFeed(P.YN.GLOBAL_FEED)),
     l = (0, u.e7)([O.Z], () => O.Z.getDebugImpressionCappingDisabled()),
@@ -111,7 +111,7 @@ function Z() {
       var e;
       return (null == (e = O.Z.getFeedState(P.YN.GLOBAL_FEED)) ? void 0 : e.loading) === !0
     }),
-    [k, Z] = r.useState(""),
+    [k, A] = r.useState(""),
     D = (0, u.e7)([_.Z, h.Z], () => {
       var e, t, a;
       return parseInt(k) > 0 ? k : null != (a = null == (e = _.Z.getGameByName(k)) ? void 0 : e.id) ? a : null == (t = h.Z.getApplicationByName(k)) ? void 0 : t.id
@@ -206,9 +206,9 @@ function Z() {
           children: "Game Profile"
         }), (0, n.jsx)(x.oil, {
           placeholder: "App ID or full name",
-          onChange: e => (0 === e.length || e.length >= 18) && Z(e),
+          onChange: e => (0 === e.length || e.length >= 18) && A(e),
           onKeyDown: e => {
-            "Enter" === e.key && (k === e.currentTarget.value ? null == L || L(e) : Z(e.currentTarget.value))
+            "Enter" === e.key && (k === e.currentTarget.value ? null == L || L(e) : A(e.currentTarget.value))
           },
           error: k.length > 0 && null == L ? "No game profile for ".concat(null != D ? D : k + " - try by id", ".") : void 0,
           style: null != L ? {
@@ -216,7 +216,7 @@ function Z() {
           } : {}
         }), (0, n.jsx)("ul", {
           children: F.map(e => (0, n.jsx)("li", {
-            children: (0, n.jsx)(A, {
+            children: (0, n.jsx)(Z, {
               application: e
             })
           }, "follow-game-".concat(e.id)))
@@ -246,7 +246,7 @@ function Z() {
     })
   })
 }
-let A = e => {
+let Z = e => {
   let {
     application: t
   } = e, a = (0, g.Z)({

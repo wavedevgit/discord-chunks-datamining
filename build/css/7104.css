@@ -1,6 +1,6 @@
 /**
   Module ID: 7104
-  Original File Name: 7b116fef734890e5
+  Original File Name: f07785ac59880ec7
 **/
 .imageUploader_e4d0bf {
     font-size: 12px;
@@ -246,9 +246,17 @@
 }
 
 .icon__97dce {
-    position: relative;
-    top: 3px;
     fill: var(--text-default)
+}
+
+.accessory__97dce,.icon__97dce {
+    position: relative;
+    top: 3px
+}
+
+.accessory__97dce {
+    display: inline-block;
+    padding-left: 4px
 }
 
 .sidebarScrollable__53543 {
@@ -2012,4 +2020,4 @@
     box-shadow: 0 1px 0 0 hsl(var(--primary-500-hsl)/.04)
 }
 
-/*# sourceMappingURL=7b116fef734890e5.css.map*/
+/*# sourceMappingURL=f07785ac59880ec7.css.map*/

@@ -25,8 +25,8 @@ var i = n(255367),
   C = n(146085),
   N = n(192079),
   S = n(277053),
-  O = n(271383),
-  E = n(485386),
+  E = n(271383),
+  O = n(485386),
   T = n(430824),
   w = n(496675),
   Z = n(594174),
@@ -212,7 +212,7 @@ function G(e) {
     guild: t,
     channel: l,
     permissionUpdates: r
-  } = e, o = (0, a.e7)([E.Z], () => E.Z.getRoles(t.id)), d = _.RZ(t, o, l, C.yP, r), u = (0, a.e7)([O.ZP], () => _.cR(O.ZP.getMemberIds(t.id), l, t, C.yP, r)), h = (0, y.nG)(l.id);
+  } = e, o = (0, a.e7)([O.Z], () => O.Z.getRoles(t.id)), d = _.RZ(t, o, l, C.yP, r), u = (0, a.e7)([E.ZP], () => _.cR(E.ZP.getMemberIds(t.id), l, t, C.yP, r)), h = (0, y.nG)(l.id);
 
   function m() {
     (0, c.ZDy)(async () => {
@@ -387,7 +387,7 @@ function z(e) {
     })]
   })
 }
-let X = a.ZP.connectStores([S.Z, w.Z, O.ZP, T.Z, E.Z], () => {
+let X = a.ZP.connectStores([S.Z, w.Z, E.ZP, T.Z, O.Z], () => {
   let e, t = S.Z.channel,
     n = S.Z.category,
     i = [],
@@ -396,9 +396,9 @@ let X = a.ZP.connectStores([S.Z, w.Z, O.ZP, T.Z, E.Z], () => {
     s = !1;
   if (null != t) {
     e = T.Z.getGuild(t.getGuildId());
-    let n = O.ZP.getMemberIds(null == e ? void 0 : e.id);
+    let n = E.ZP.getMemberIds(null == e ? void 0 : e.id);
     if (null != e) {
-      let a = E.Z.getRoles(e.id);
+      let a = O.Z.getRoles(e.id);
       r = S.Z.editedPermissionIds.reduce((e, t) => {
         let n = S.Z.getPermissionOverwrite(t);
         return null != n && (e[t] = n), e

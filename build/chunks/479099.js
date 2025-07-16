@@ -98,7 +98,7 @@ function h(e) {
       color: "currentColor",
       children: C
     })]
-  }), Z = {
+  }), B = {
     key: t.id,
     className: a()(m.pill, {
       [m.disabled]: s,
@@ -113,8 +113,8 @@ function h(e) {
     onContextMenu: e => G(e),
     onMouseEnter: () => v && L(!0),
     onMouseLeave: () => v && L(!1)
-  }, B = (0, o.JA)("forum-tag-".concat(t.id));
-  return x ? (0, l.jsx)(c.P3F, O(f(O(f({}, B), {
+  }, Z = (0, o.JA)("forum-tag-".concat(t.id));
+  return x ? (0, l.jsx)(c.P3F, O(f(O(f({}, Z), {
     innerRef: y,
     focusProps: {
       ringTarget: y
@@ -124,9 +124,9 @@ function h(e) {
     }),
     role: "button",
     "aria-pressed": p
-  }), Z), {
+  }), B), {
     children: z
-  })) : (0, l.jsx)("div", O(f({}, Z), {
+  })) : (0, l.jsx)("div", O(f({}, B), {
     children: z
   }))
 }

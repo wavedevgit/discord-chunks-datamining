@@ -69,6 +69,8 @@ function E(e) {
         scrollerRef: r,
         sortedCategories: a,
         setCategoryRef: c
+      }), g && !m && (0, n.jsx)("div", {
+        className: v.divider
       }), g && !m && (0, n.jsx)(s.Ttm, {
         className: v.filterBar,
         children: (0, n.jsx)(h.Z, {})
@@ -100,9 +102,9 @@ let S = e => {
       null === P.current || null === B.current || P.current.contains(t) || B.current.contains(t) || E(!1)
     };
     return document.addEventListener("mousedown", e), () => document.removeEventListener("mousedown", e)
-  }, [r, i, E]), (0, n.jsxs)("div", {
+  }, [r, i, E]), (0, n.jsx)("div", {
     className: v.inventoryWrapper,
-    children: [(0, n.jsxs)("div", {
+    children: (0, n.jsxs)("div", {
       className: o()(v.inventory, {
         [v.inventoryFilter]: T,
         [v.pageFullscreen]: t
@@ -126,7 +128,6 @@ let S = e => {
             ref: B,
             children: (0, n.jsx)(a.zx, {
               onClick: () => E(e => !e),
-              look: a.iL.OUTLINED,
               color: a.Tt.PRIMARY,
               className: o()({
                 [v.responsiveFilterButton]: r,
@@ -169,8 +170,6 @@ let S = e => {
           handlePageChange: I
         })
       })]
-    }), i && !r && (0, n.jsx)("div", {
-      className: v.divider
-    })]
+    })
   })
 }

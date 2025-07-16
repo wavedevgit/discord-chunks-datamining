@@ -1,4 +1,4 @@
-/** Chunk was on 93375 **/
+/** Chunk was on 79381 **/
 n.d(t, {
   I2: () => p,
   RD: () => A,
@@ -47,7 +47,7 @@ function g(e, t) {
   }), e
 }
 let d = {},
-  S = e => {
+  O = e => {
     let t = {
       [c.fX.KEYWORD]: [],
       [c.fX.ML_SPAM]: [],
@@ -64,7 +64,7 @@ let d = {},
       null == (n = t[r]) || n.push(e)
     }), t
   },
-  O = (0, i.F)((e, t) => ({
+  S = (0, i.F)((e, t) => ({
     rules: {},
     fetching: !1,
     error: null,
@@ -76,7 +76,7 @@ let d = {},
         triggerType: o
       } = n, {
         rules: c
-      } = t(), f = null != (r = c[i]) ? r : {}, d = null != (l = f[o]) ? l : [], S = d.some(e => e.id === u), O = d.filter(e => !(0, s.U)(e.id) || e.triggerType !== o), j = S ? O.map(e => e.id === u ? n : e) : [...O, n];
+      } = t(), f = null != (r = c[i]) ? r : {}, d = null != (l = f[o]) ? l : [], O = d.some(e => e.id === u), S = d.filter(e => !(0, s.U)(e.id) || e.triggerType !== o), j = O ? S.map(e => e.id === u ? n : e) : [...S, n];
       (0, a.j)(() => {
         e({
           rules: g(E({}, c), {
@@ -115,7 +115,7 @@ let d = {},
         d[n] = Date.now();
         try {
           let r = await (0, o.$Y)(n),
-            l = S(r),
+            l = O(r),
             i = t().rules;
           (0, a.j)(() => {
             e({
@@ -138,11 +138,11 @@ let d = {},
   })),
   j = (e, t) => {
     var n, r;
-    return (null != (r = null == (n = O.getState().rules[e]) ? void 0 : n[t]) ? r : []).length
+    return (null != (r = null == (n = S.getState().rules[e]) ? void 0 : n[t]) ? r : []).length
   };
 
 function p(e) {
-  let [t, n] = r.useState(!1), [i, a] = O(e => [e.syncRules, e.fetching], l.X);
+  let [t, n] = r.useState(!1), [i, a] = S(e => [e.syncRules, e.fetching], l.X);
   return [t, r.useCallback(async () => {
     if (!a && null != e) try {
       n(!0), await i(e)
@@ -162,7 +162,7 @@ function A(e) {
 }
 
 function _(e) {
-  return O(t => {
+  return S(t => {
     var n;
     return {
       rulesByTriggerType: null != (n = t.rules[null != e ? e : f.lds]) ? n : {},
