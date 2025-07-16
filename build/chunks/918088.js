@@ -1,4 +1,4 @@
-/** Chunk was on 62059 **/
+/** Chunk was on 61216 **/
 n.d(t, {
   Tk: () => N,
   ZP: () => P,
@@ -100,14 +100,14 @@ function N(e, t) {
     w = null == (r = u.Z.getChannel(e.getChannelId())) || null == (n = r.getGuildId) ? void 0 : n.call(r),
     Z = null != w ? d.ZP.getSelfMember(w) : null,
     R = (0, s.EY)(Z),
-    k = (0, c.b)(Z),
-    L = !b && I && !N && m && !R && !k;
+    L = (0, c.b)(Z),
+    k = !b && I && !N && m && !R && !L;
   return {
     poll: o,
     canTapAnswers: A,
     canRemoveVote: N && m && !_,
     canShowVoteCounts: P,
-    canSubmitVote: L,
+    canSubmitVote: k,
     expirationLabel: f,
     hasSelectedAnswer: I,
     hasVoted: N,
@@ -148,8 +148,8 @@ function P(e, t) {
   let {
     canTapAnswers: Z,
     canRemoveVote: R,
-    canShowVoteCounts: k,
-    canSubmitVote: L,
+    canShowVoteCounts: L,
+    canSubmitVote: k,
     expirationLabel: D = O.intl.string(O.t["e+J3JS"]),
     hasSelectedAnswer: M,
     hasVoted: U,
@@ -229,7 +229,7 @@ function P(e, t) {
     }
   }), J = (0, r.EQ)({
     isExpired: B,
-    canSubmitVote: L,
+    canSubmitVote: k,
     hasVoted: U,
     isEditingVote: F,
     canRemoveVote: R,
@@ -264,7 +264,7 @@ function P(e, t) {
   })).otherwise(() => ({
     label: O.intl.string(O.t.JwkNU1),
     presentation: "button",
-    enabled: L,
+    enabled: k,
     type: "submit"
   })), $ = (0, h.isIOS)() ? O.intl.string(O.t.PVATMz) : O.intl.string(O.t.cHfFqq), ee = (0, r.EQ)({
     isExpired: B,
@@ -336,7 +336,7 @@ function P(e, t) {
     canTapAnswers: Z,
     canSelectMultipleAnswers: en,
     hasSelectedAnswer: M,
-    canShowVoteCounts: k,
+    canShowVoteCounts: L,
     hasVoted: U,
     isExpired: B,
     myAvatarUrl: T,

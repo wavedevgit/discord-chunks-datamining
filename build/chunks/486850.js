@@ -1,4 +1,4 @@
-/** Chunk was on 99546 **/
+/** Chunk was on 51977 **/
 e.exports = {
   base: "base_b88801",
   text: "text_b88801",

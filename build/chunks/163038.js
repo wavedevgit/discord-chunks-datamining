@@ -1,4 +1,4 @@
-/** Chunk was on 62059 **/
+/** Chunk was on 61216 **/
 n.d(t, {
   Z: () => H
 }), n(388685);
@@ -34,8 +34,8 @@ var r = n(255367),
   w = n(699516),
   Z = n(944486),
   R = n(594174),
-  k = n(626135),
-  L = n(22665),
+  L = n(626135),
+  k = n(22665),
   D = n(981631),
   M = n(959517),
   U = n(995717);
@@ -57,7 +57,7 @@ function F(e) {
       channelId: r.id,
       baseChannelId: l,
       guildId: r.guild_id
-    }), (0, O.Kh)(l), k.default.track(D.rMx.MODERATOR_REPORT_ORIGINAL_MESSAGE_LINK_CLICKED, {
+    }), (0, O.Kh)(l), L.default.track(D.rMx.MODERATOR_REPORT_ORIGINAL_MESSAGE_LINK_CLICKED, {
       moderator_report_id: t.channel_id,
       destination_channel_id: l,
       destination_message_id: t.id
@@ -116,7 +116,7 @@ function B(e) {
     }
   }(t, l);
   return (0, r.jsx)(h.Z, {
-    childrenExecutedCommand: (0, r.jsx)(L.Z, {
+    childrenExecutedCommand: (0, r.jsx)(k.Z, {
       reportingUserId: a,
       guildId: l.guild_id,
       channel: l,

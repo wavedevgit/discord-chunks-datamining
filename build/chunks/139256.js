@@ -1,10 +1,10 @@
-/** Chunk was on 62059 **/
+/** Chunk was on 61216 **/
 n.d(t, {
   $e: () => w,
   $w: () => D,
   Og: () => U,
   ZY: () => M,
-  sc: () => k,
+  sc: () => L,
   zs: () => F
 }), n(314940), n(953529);
 var r = n(255367),
@@ -276,7 +276,7 @@ function R(e) {
   })
 }
 
-function k(e) {
+function L(e) {
   let {
     className: t,
     emoji: n
@@ -289,7 +289,7 @@ function k(e) {
   })
 }
 
-function L(e, t) {
+function k(e, t) {
   return null != e ? (0, r.jsx)("div", {
     className: e,
     children: t
@@ -311,12 +311,12 @@ function D(e) {
       var n;
       return e.id === (null == (n = t.attachmentIds) ? void 0 : n[0])
     });
-    if (null != e) return L(n, (0, r.jsx)(R, {
+    if (null != e) return k(n, (0, r.jsx)(R, {
       className: i,
       attachment: e
     }))
   }
-  return null != t.emoji ? L(n, (0, r.jsx)(k, {
+  return null != t.emoji ? k(n, (0, r.jsx)(L, {
     className: l,
     emoji: t.emoji
   })) : void 0 !== a ? a : null

@@ -1,12 +1,12 @@
-/** Chunk was on 13268 **/
+/** Chunk was on 53 **/
 n.d(t, {
   Z: () => u
 });
 var r = n(255367),
   a = n(73800),
   i = n(755721),
-  l = n(481060),
-  o = n(600164),
+  o = n(481060),
+  l = n(600164),
   s = n(388032),
   c = n(130883),
   d = n(18537);
@@ -17,8 +17,8 @@ let u = e => {
       disableNext: m,
       onClick: p,
       canNavigateBack: _,
-      onBackClicked: g,
-      isModeratorReport: b
+      onBackClicked: b,
+      isModeratorReport: g
     } = e,
     x = a.useRef(null),
     h = null != n && "cancel" !== n.type,
@@ -31,10 +31,10 @@ let u = e => {
       }
     }, [null == n ? void 0 : n.type]), !v) return null;
   let j = s.intl.string(s.t.i4jeWV);
-  return (null == n ? void 0 : n.type) === "submit" ? (t = i.zx.Colors.RED, j = b ? s.intl.string(c.default.ZUyreX) : s.intl.string(s.t["G+vU8/"])) : (null == n ? void 0 : n.type) === "next" ? j = s.intl.string(s.t.PDTjLC) : (null == n ? void 0 : n.type) === "cancel" && (j = s.intl.string(s.t["ETE/oK"]), t = i.zx.Colors.TRANSPARENT), (0, r.jsxs)(l.mzw, {
-    direction: o.Z.Direction.HORIZONTAL,
+  return (null == n ? void 0 : n.type) === "submit" ? (t = i.zx.Colors.RED, j = g ? s.intl.string(c.default.ZUyreX) : s.intl.string(s.t["G+vU8/"])) : (null == n ? void 0 : n.type) === "next" ? j = s.intl.string(s.t.PDTjLC) : (null == n ? void 0 : n.type) === "cancel" && (j = s.intl.string(s.t["ETE/oK"]), t = i.zx.Colors.TRANSPARENT), (0, r.jsxs)(o.mzw, {
+    direction: l.Z.Direction.HORIZONTAL,
     children: [f && (0, r.jsx)(i.zx, {
-      onClick: g,
+      onClick: b,
       color: i.zx.Colors.TRANSPARENT,
       disabled: u,
       children: s.intl.string(s.t["13/7kZ"])

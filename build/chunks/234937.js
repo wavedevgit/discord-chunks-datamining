@@ -1,4 +1,4 @@
-/** Chunk was on 13268 **/
+/** Chunk was on 53 **/
 n.d(t, {
   Z: () => d
 });
@@ -6,14 +6,14 @@ var r = n(255367);
 n(73800);
 var a = n(442837),
   i = n(481060),
-  l = n(565138),
-  o = n(430824),
+  o = n(565138),
+  l = n(430824),
   s = n(388032),
   c = n(305636);
 let d = e => {
   let {
     event: t
-  } = e, n = (0, a.e7)([o.Z], () => o.Z.getGuild(t.guild_id));
+  } = e, n = (0, a.e7)([l.Z], () => l.Z.getGuild(t.guild_id));
   return null == n ? null : (0, r.jsxs)("div", {
     className: c.container,
     children: [(0, r.jsx)(i.X6q, {
@@ -24,9 +24,9 @@ let d = e => {
       className: c.guildContainer,
       children: [(0, r.jsxs)("div", {
         className: c.guildInfo,
-        children: [(0, r.jsx)(l.Z, {
+        children: [(0, r.jsx)(o.Z, {
           guild: n,
-          size: l.Z.Sizes.MINI,
+          size: o.Z.Sizes.MINI,
           className: c.guildIcon
         }), (0, r.jsx)(i.Text, {
           color: "header-secondary",

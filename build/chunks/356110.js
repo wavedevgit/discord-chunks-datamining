@@ -1,12 +1,12 @@
-/** Chunk was on 13268 **/
+/** Chunk was on 53 **/
 n.d(t, {
   Z: () => c
 }), n(388685);
 var r = n(255367),
   a = n(73800),
   i = n(481060),
-  l = n(843716),
-  o = n(20493);
+  o = n(843716),
+  l = n(20493);
 let s = e => {
     let {
       element: t,
@@ -25,13 +25,13 @@ let s = e => {
         null != e && (d(e), n(e))
       }, [n]);
     return (0, r.jsxs)("div", {
-      className: o.marginBottom8,
+      className: l.marginBottom8,
       children: [null != m && (0, r.jsx)("div", {
-        className: o.marginBottom8,
+        className: l.marginBottom8,
         children: (0, r.jsxs)(i.Text, {
           variant: "text-sm/bold",
           children: [m, t.should_submit_data && (0, r.jsx)("span", {
-            className: l.required,
+            className: o.required,
             children: "*"
           })]
         })
@@ -49,12 +49,12 @@ let s = e => {
       state: a
     } = e, i = t.map(e => {
       var t, i;
-      let l = e.name;
+      let o = e.name;
       return (0, r.jsx)(s, {
         element: e,
-        initialOption: null != (i = null == a || null == (t = a[l]) ? void 0 : t.value) ? i : void 0,
-        onChange: e => n(l, e)
-      }, l)
+        initialOption: null != (i = null == a || null == (t = a[o]) ? void 0 : t.value) ? i : void 0,
+        onChange: e => n(o, e)
+      }, o)
     });
     return (0, r.jsx)("div", {
       children: i

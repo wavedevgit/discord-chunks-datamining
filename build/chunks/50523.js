@@ -1,4 +1,4 @@
-/** Chunk was on 62059 **/
+/** Chunk was on 61216 **/
 n.d(t, {
   b: () => x
 }), n(539854), n(953529);
@@ -41,8 +41,8 @@ function x(e) {
     if (null == A) return;
     let e = g.ZP.getEmbeddedActivitiesForChannel(A).filter(e => e.applicationId === x.id);
     return e.length > 0 ? e[0].compositeInstanceId : void 0
-  }), R = (0, i.e7)([g.ZP], () => g.ZP.getCurrentEmbeddedActivity()), k = (0, b.Z)(), L = w === E.jy.CAN_LAUNCH, D = null != C ? C : v.customId, M = [];
-  L && M.push({
+  }), R = (0, i.e7)([g.ZP], () => g.ZP.getCurrentEmbeddedActivity()), L = (0, b.Z)(), k = w === E.jy.CAN_LAUNCH, D = null != C ? C : v.customId, M = [];
+  k && M.push({
     label: null == Z ? y.intl.string(y.t.RscU7O) : y.intl.string(y.t.VJlc0d),
     trackingArea: p.j_.PLAY,
     onClick() {
@@ -50,14 +50,14 @@ function x(e) {
         channelId: null != A ? A : void 0,
         applicationId: x.id,
         isStart: null == Z,
-        embeddedActivitiesManager: k,
+        embeddedActivitiesManager: L,
         customId: D,
         referrerId: j,
         analyticsLocations: P
       })
     },
     disabledReason: null != Z && (null == R ? void 0 : R.compositeInstanceId) === Z ? y.intl.string(y.t.wJNK8P) : void 0
-  }), N && !L && M.push({
+  }), N && !k && M.push({
     label: y.intl.string(y.t.JeK1Wl),
     trackingArea: p.j_.PLAY,
     onClick() {

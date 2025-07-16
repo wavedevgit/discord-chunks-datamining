@@ -1,11 +1,11 @@
-/** Chunk was on 13268 **/
+/** Chunk was on 53 **/
 n.d(t, {
   s: () => c
 });
 var r, a, i = n(255367);
 n(73800);
-var l = n(159635),
-  o = n.n(l),
+var o = n(159635),
+  l = n.n(o),
   s = n(481060);
 let c = (r = function(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -24,7 +24,7 @@ let c = (r = function(e) {
     })
   }
   return e
-}({}, o().defaultRules.link), a = a = {
+}({}, l().defaultRules.link), a = a = {
   react: function(e, t, n) {
     return (0, i.jsx)(s.eee, {
       href: e.target,

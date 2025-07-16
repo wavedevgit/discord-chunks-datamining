@@ -1,53 +1,53 @@
-/** Chunk was on 62059 **/
+/** Chunk was on 28467 **/
 n.d(t, {
   Z: () => u
 });
-var r = n(255367);
+var s = n(255367);
 n(73800);
-var i = n(120356),
-  l = n.n(i),
-  a = n(481060),
-  o = n(318713),
-  s = n(614507);
+var a = n(120356),
+  r = n.n(a),
+  l = n(481060),
+  i = n(318713),
+  o = n(614507);
 
 function c(e) {
   let {
     icon: t,
     iconNode: n,
-    timestamp: i,
-    timestampFormat: a,
+    timestamp: a,
+    timestampFormat: l,
     className: c,
     children: u,
-    contentClassName: d,
-    iconClassName: p,
-    iconContainerClassName: m,
-    timestampClassName: f,
-    compact: _ = !1
+    contentClassName: m,
+    iconClassName: d,
+    iconContainerClassName: p,
+    timestampClassName: g,
+    compact: h = !1
   } = e;
-  return (0, r.jsxs)("div", {
-    className: l()(c, {
-      [s.container]: !0,
-      [s.compact]: _,
-      [s.cozy]: !_
+  return (0, s.jsxs)("div", {
+    className: r()(c, {
+      [o.container]: !0,
+      [o.compact]: h,
+      [o.cozy]: !h
     }),
-    children: [null != n && (0, r.jsx)("div", {
-      className: l()(s.iconContainer, m),
+    children: [null != n && (0, s.jsx)("div", {
+      className: r()(o.iconContainer, p),
       children: n
-    }), null != t && (0, r.jsx)("div", {
-      className: s.iconContainer,
-      children: (0, r.jsx)("div", {
+    }), null != t && (0, s.jsx)("div", {
+      className: o.iconContainer,
+      children: (0, s.jsx)("div", {
         "data-accessibility": "desaturate",
-        className: l()(s.icon, s.iconSize, p),
+        className: r()(o.icon, o.iconSize, d),
         style: {
           backgroundImage: "url('".concat(t, "')")
         }
       })
-    }), (0, r.jsxs)("div", {
-      className: l()(d, s.content),
-      children: [u, null != i && (0, r.jsx)(o.Z, {
-        timestamp: i,
-        timestampFormat: a,
-        className: f
+    }), (0, s.jsxs)("div", {
+      className: r()(m, o.content),
+      children: [u, null != a && (0, s.jsx)(i.Z, {
+        timestamp: a,
+        timestampFormat: l,
+        className: g
       })]
     })]
   })
@@ -57,11 +57,11 @@ c.Action = e => {
     onClick: t,
     children: n
   } = e;
-  return (0, r.jsxs)("span", {
-    className: s.action,
-    children: ["—", (0, r.jsx)(a.eee, {
+  return (0, s.jsxs)("span", {
+    className: o.action,
+    children: ["—", (0, s.jsx)(l.eee, {
       onClick: t,
-      className: s.actionAnchor,
+      className: o.actionAnchor,
       children: n
     })]
   })

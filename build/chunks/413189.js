@@ -1,4 +1,4 @@
-/** Chunk was on 62059 **/
+/** Chunk was on 61216 **/
 n.d(t, {
   Z: () => O
 });
@@ -40,8 +40,8 @@ function O(e) {
     R = f.qM.useExperiment({
       location: "ChatWallpaperSetSystemMessage"
     }).lightMode,
-    k = (0, c.ZP)(N),
-    L = (0, o.wjy)((0, s.ZP)()),
+    L = (0, c.ZP)(N),
+    k = (0, o.wjy)((0, s.ZP)()),
     {
       chatWallpaper: D,
       isUpdatingChatWallpaperFlag: M,
@@ -62,9 +62,9 @@ function O(e) {
   }, [D]), null == w) ? null : (I = H ? C.intl.format(C.t.z847Tk, {
     wallpaper_name: null != (n = null == D ? void 0 : D.label) ? n : C.intl.string(C.t["UQMV/P"])
   }) : C.intl.format(C.t["+lKndX"], {
-    username: null == k ? void 0 : k.nick,
+    username: null == L ? void 0 : L.nick,
     wallpaper_name: null != (O = null == D ? void 0 : D.label) ? O : C.intl.string(C.t["UQMV/P"])
-  }), Z ? L || R ? z && B ? S = C.intl.formatToPlainString(C.t.PzTpVV, {
+  }), Z ? k || R ? z && B ? S = C.intl.formatToPlainString(C.t.PzTpVV, {
     wallpaperName: null != (j = null == D ? void 0 : D.label) ? j : C.intl.string(C.t["UQMV/P"])
   }) : H || V || !B || (S = C.intl.format(C.t.JwUhHh, {
     onClickNitro: () => {

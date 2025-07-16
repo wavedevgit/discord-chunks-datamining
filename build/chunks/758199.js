@@ -1,4 +1,4 @@
-/** Chunk was on 62059 **/
+/** Chunk was on 61216 **/
 n.d(t, {
   W: () => j,
   u: () => v
@@ -83,12 +83,12 @@ function j(e) {
     embedUrl: w,
     infoUrl: Z,
     actions: R = [],
-    trackingConfig: k,
-    onClickContent: L,
+    trackingConfig: L,
+    onClickContent: k,
     onClickBanner: D
   } = e;
-  k = {
-    id: null != (n = null == (t = k) ? void 0 : t.id) ? n : "0",
+  L = {
+    id: null != (n = null == (t = L) ? void 0 : t.id) ? n : "0",
     linkType: null != (r = null == t ? void 0 : t.linkType) ? r : g.Un.UNKNOWN,
     referrerId: null != (a = null == t ? void 0 : t.referrerId) ? a : _.default.getId(),
     activityCustomId: null == t ? void 0 : t.activityCustomId,
@@ -101,7 +101,7 @@ function j(e) {
   } = (0, m.Z)(null != A ? A : T), F = "linear-gradient(45deg, ".concat(M, ", ").concat(U, ")"), B = (0, s.e7)([p.Z], () => p.Z.useReducedMotion), G = l.useRef(!1), H = (0, d.O)(e => {
     if (!1 === G.current && e) {
       var t;
-      null == k || null == (t = k.onView) || t.call(k), (0, g.GF)(k.id, k.linkType, k.referrerId, k.activityCustomId), G.current = !0
+      null == L || null == (t = L.onView) || t.call(L), (0, g.GF)(L.id, L.linkType, L.referrerId, L.activityCustomId), G.current = !0
     }
   }, void 0), V = h.wS && null != w ? (0, i.jsx)(c.zx, {
     look: c.zx.Looks.BLANK,
@@ -109,7 +109,7 @@ function j(e) {
     "aria-label": E.intl.string(E.t.WqhZsr),
     className: y.linkIcon,
     onClick: () => {
-      (0, h.JG)(w, () => (0, u.showToast)((0, u.createToast)(E.intl.string(E.t["L/PwZW"]), u.ToastType.SUCCESS))), (0, g.Yu)(k.id, k.linkType)
+      (0, h.JG)(w, () => (0, u.showToast)((0, u.createToast)(E.intl.string(E.t["L/PwZW"]), u.ToastType.SUCCESS))), (0, g.Yu)(L.id, L.linkType)
     },
     children: (0, i.jsx)(u.xPt, {
       size: "xs",
@@ -127,14 +127,14 @@ function j(e) {
     let e = q.current;
     null != e && ("hidden" === getComputedStyle(e).visibility ? e.pause() : e.play())
   }, []), J = l.useMemo(() => !!K && new URL(N).pathname.endsWith(".gif"), [K, N]), $ = l.useMemo(() => {
-    if (null != L) return e => {
-      L(e), (0, g.KX)(k.id, k.linkType, g.j_.CONTENT, k.referrerId, k.activityCustomId)
+    if (null != k) return e => {
+      k(e), (0, g.KX)(L.id, L.linkType, g.j_.CONTENT, L.referrerId, L.activityCustomId)
     }
-  }, [L, k]), ee = l.useMemo(() => {
+  }, [k, L]), ee = l.useMemo(() => {
     if (null != D) return e => {
-      D(e), (0, g.KX)(k.id, k.linkType, g.j_.BANNER, k.referrerId, k.activityCustomId)
+      D(e), (0, g.KX)(L.id, L.linkType, g.j_.BANNER, L.referrerId, L.activityCustomId)
     }
-  }, [D, k]);
+  }, [D, L]);
   return (0, i.jsxs)("div", {
     ref: H,
     className: y.embed,
@@ -222,7 +222,7 @@ function j(e) {
               submitting: o,
               children: m,
               onClick(e) {
-                l(e), (0, g.KX)(k.id, k.linkType, s, k.referrerId, k.activityCustomId)
+                l(e), (0, g.KX)(L.id, L.linkType, s, L.referrerId, L.activityCustomId)
               }
             };
             return d ? (0, i.jsx)(u.ua7, {

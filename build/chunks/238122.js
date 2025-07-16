@@ -1,12 +1,12 @@
-/** Chunk was on 13268 **/
+/** Chunk was on 53 **/
 n.d(t, {
   Z: () => m
 }), n(388685), n(413496), n(433524), n(35282);
 var r = n(255367),
   a = n(73800),
   i = n(481060),
-  l = n(454585),
-  o = n(273744),
+  o = n(454585),
+  l = n(273744),
   s = n(388032),
   c = n(232890),
   d = n(20493);
@@ -18,13 +18,13 @@ let u = e => {
         subtitle: m,
         placeholder: p,
         rows: _,
-        character_limit: g,
-        pattern: b
+        character_limit: b,
+        pattern: g
       },
       onChange: x,
       initialText: h,
       isRequired: f
-    } = e, v = a.useRef(l.Z.reactParserFor((t = function(e) {
+    } = e, v = a.useRef(o.Z.reactParserFor((t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -41,8 +41,8 @@ let u = e => {
         })
       }
       return e
-    }({}, l.Z.defaultRules), n = n = {
-      link: o.s
+    }({}, o.Z.defaultRules), n = n = {
+      link: l.s
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -58,7 +58,7 @@ let u = e => {
       C(null != (e = null == h ? void 0 : h.value) ? e : "")
     }, [h]);
     let O = a.useCallback(e => {
-      let t = null != b ? new RegExp(b) : null;
+      let t = null != g ? new RegExp(g) : null;
       null == t || t.test(e) ? null != e && (I(null), C(e), x({
         value: e,
         isValid: !0
@@ -66,7 +66,7 @@ let u = e => {
         value: e,
         isValid: !1
       }))
-    }, [x, b]);
+    }, [x, g]);
     return (0, r.jsxs)("div", {
       className: d.marginBottom8,
       children: [null != u && (0, r.jsx)("div", {
@@ -79,7 +79,7 @@ let u = e => {
           })]
         })
       }), (0, r.jsx)(i.Kx8, {
-        maxLength: g,
+        maxLength: b,
         onChange: O,
         value: j,
         error: y,

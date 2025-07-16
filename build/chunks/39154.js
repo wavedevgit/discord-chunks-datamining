@@ -1,11 +1,11 @@
 /** Chunk was on 28467 **/
-s.d(t, {
-  Z: () => l
-}), s(997841);
-var n = s(978003);
+n.d(t, {
+  Z: () => a
+}), n(997841);
+var s = n(978003);
 
-function l(e, t) {
-  return null == (t = null != t ? t : (0, n.Z)(e) ? e.messageSnapshots[0] : void 0) ? e : e.merge({
+function a(e, t) {
+  return null == (t = null != t ? t : (0, s.Z)(e) ? e.messageSnapshots[0] : void 0) ? e : e.merge({
     content: t.message.content,
     attachments: t.message.attachments,
     embeds: t.message.embeds,
