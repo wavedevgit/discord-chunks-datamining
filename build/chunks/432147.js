@@ -26,14 +26,14 @@ function y(e) {
     message: t,
     compact: n
   } = e, i = (0, a.e7)([u.Z], () => u.Z.getChannel(d.default.castMessageIdAsChannelId(t.id)));
-  return null == i ? null : (0, r.jsx)(x, {
+  return null == i ? null : (0, r.jsx)(C, {
     channel: i,
     compact: n,
     isSystemMessage: (0, c.Z)(t)
   })
 }
 
-function x(e) {
+function C(e) {
   let {
     channel: t,
     compact: i,

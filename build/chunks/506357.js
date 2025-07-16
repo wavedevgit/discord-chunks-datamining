@@ -25,16 +25,16 @@ function m(e) {
   var t, m;
   let {
     onDismiss: A
-  } = e, g = (0, l.e7)([_.Z], () => _.Z.getGuildId()), R = (0, l.e7)([d.Z], () => null != g ? d.Z.getChannelId(g) : null, [g]), C = null != g ? g : null, P = (0, l.e7)([u.Z], () => null != C ? u.Z.getGuild(C) : null, [C]), {
+  } = e, g = (0, l.e7)([_.Z], () => _.Z.getGuildId()), R = (0, l.e7)([d.Z], () => null != g ? d.Z.getChannelId(g) : null, [g]), P = null != g ? g : null, C = (0, l.e7)([u.Z], () => null != P ? u.Z.getGuild(P) : null, [P]), {
     shouldShowIncidentActions: y,
     incidentData: b,
     isUnderLockdown: D
-  } = (0, I.mI)(C), h = (0, c.n2)(null != (t = null == P ? void 0 : P.id) ? t : T.lds), U = i.useCallback(() => null != P && (0, s._X)(P.id), [P]);
-  if (null == P || null == b || !y) return null;
+  } = (0, I.mI)(P), h = (0, c.n2)(null != (t = null == C ? void 0 : C.id) ? t : T.lds), U = i.useCallback(() => null != C && (0, s._X)(C.id), [C]);
+  if (null == C || null == b || !y) return null;
   let M = e => {
       if (e && h && R !== S.oC.MEMBER_SAFETY && U()) return void E.default.track(T.rMx.APP_NOTICE_PRIMARY_CTA_OPENED, {
         notice_type: T.kVF.GUILD_RAID_NOTIFICATION,
-        guild_id: P.id
+        guild_id: C.id
       });
       (0, a.ZDy)(async () => {
         let e = {
@@ -64,7 +64,7 @@ function m(e) {
             }
             return e
           }({}, n), l = l = {
-            guildId: P.id,
+            guildId: C.id,
             analyticsData: e
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);
@@ -81,10 +81,10 @@ function m(e) {
     },
     v = (0, r.jsx)(o.Z, {
       className: f.guildIcon,
-      guild: P,
+      guild: C,
       size: o.Z.Sizes.MINI
     }),
-    Z = (0, p.OY)(b, P.name);
+    Z = (0, p.OY)(b, C.name);
   if (null != (null != (m = b.dmsDisabledUntil) ? m : b.invitesDisabledUntil) && D) return (0, r.jsxs)(a.qXd, {
     className: f.notice,
     color: a.DM8.NEUTRAL,
@@ -106,11 +106,11 @@ function m(e) {
     })]
   });
   let L = (0, p.CG)(b) ? N.intl.formatToPlainString(N.t.tZTx2N, {
-      guildName: P.name
+      guildName: C.name
     }) : (0, p.kk)(b) ? N.intl.formatToPlainString(N.t["1bSmxs"], {
-      guildName: P.name
+      guildName: C.name
     }) : N.intl.formatToPlainString(N.t.W87xDA, {
-      guildName: P.name
+      guildName: C.name
     }),
     j = h && R === S.oC.MEMBER_SAFETY;
   return (0, r.jsxs)(a.qXd, {

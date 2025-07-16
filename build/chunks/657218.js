@@ -22,8 +22,8 @@ var r = n(255367),
   C = n(893718),
   x = n(303628),
   v = n(313201),
-  O = n(967128),
-  j = n(665149),
+  j = n(967128),
+  O = n(665149),
   E = n(294218),
   S = n(913663),
   P = n(268350),
@@ -116,17 +116,17 @@ function X(e) {
     });
     (0, B.NK)(t)
   }, [t]);
-  return (0, r.jsxs)(j.ZP, {
-    toolbar: (0, r.jsx)(j.ZP.Icon, {
+  return (0, r.jsxs)(O.ZP, {
+    toolbar: (0, r.jsx)(O.ZP.Icon, {
       icon: c.Dio,
       tooltip: V.intl.string(V.t.cpT0Cg),
       onClick: n
     }),
-    children: [(0, r.jsx)(j.ZP.Icon, {
+    children: [(0, r.jsx)(O.ZP.Icon, {
       icon: c.or_,
       disabled: !0,
       "aria-label": V.intl.string(V.t["7Xm5QE"])
-    }), (0, r.jsx)(j.ZP.Title, {
+    }), (0, r.jsx)(O.ZP.Title, {
       children: V.intl.string(V.t["4WNcpq"])
     })]
   })
@@ -188,7 +188,7 @@ function Q(e) {
   }(t, f), C = (0, k.vH)(t), {
     isGeneratingAI: x,
     enableAIFeatures: v,
-    renderAiGenerateButton: j
+    renderAiGenerateButton: O
   } = (0, F.U)({
     parentChannel: t,
     parentMessageId: n,
@@ -290,7 +290,7 @@ function Q(e) {
           fade: !0,
           children: (0, r.jsxs)("div", {
             className: z.scrollerInner,
-            children: [(0, r.jsxs)(O.ZP, {
+            children: [(0, r.jsxs)(j.ZP, {
               channelId: "create-thread-null",
               children: [(0, r.jsx)("div", {
                 className: W.iconWrapper,
@@ -306,7 +306,7 @@ function Q(e) {
                 disabled: T,
                 isGeneratingAI: x,
                 enableAIFeatures: v,
-                renderAiGenerateButton: j
+                renderAiGenerateButton: O
               }), t.type === G.d4z.GUILD_TEXT ? (0, r.jsx)(J, {
                 startedFromMessage: null != n,
                 threadSettings: p,

@@ -50,7 +50,7 @@ function C(e) {
   } = e, _ = (0, i.e7)([a.Z], () => a.Z.useReducedMotion), C = null != (t = (0, c.ZP)(h)) ? t : "", {
     avatarDecorationSrc: x,
     eventHandlers: v,
-    isAnimating: O
+    isAnimating: j
   } = (0, m.Z)({
     userId: null == b ? void 0 : b.id,
     size: l.EFr.SIZE_80,
@@ -77,7 +77,7 @@ function C(e) {
     channelId: h.id
   }, v), u = u = {
     children: [(() => {
-      let e = !_ && O;
+      let e = !_ && j;
       return h.isMultiUserDM() ? (0, r.jsx)(p.v, {
         channel: h,
         editable: !0,

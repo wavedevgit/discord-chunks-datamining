@@ -1,6 +1,6 @@
 /**
   Module ID: 10801
-  Original File Name: ff36f6f5019f0dd1
+  Original File Name: eb80ef61be741262
 **/
 @keyframes placeholderPulse_c8ffbb {
     0% {
@@ -10637,90 +10637,6 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     width: 24px
 }
 
-.popoutContainer__7169b {
-    align-items: center;
-    background: var(--background-surface-high);
-    border-radius: var(--radius-lg);
-    box-shadow: var(--elevation-high);
-    box-sizing: border-box;
-    display: flex;
-    filter: drop-shadow(0 0 12px #a944b0);
-    flex-direction: column;
-    opacity: 1;
-    overflow: hidden;
-    padding: 0;
-    text-align: center;
-    transform: translate3d(0,-24px,0);
-    width: 300px
-}
-
-.full-motion .popoutContainer__7169b {
-    transition: all .25s
-}
-
-.image__7169b {
-    background-color: #000
-}
-
-.image__7169b,.infoContainerParent__7169b {
-    width: 100%
-}
-
-.infoContainer__7169b {
-    margin: var(--space-12)
-}
-
-.infoText__7169b {
-    margin-left: 24px;
-    margin-right: 24px;
-    text-align: center
-}
-
-.closeButton__7169b {
-    position: absolute;
-    right: var(--space-12);
-    top: var(--space-12)
-}
-
-.closeIcon__7169b {
-    background-color: rgba(0,0,0,.44);
-    border-radius: var(--radius-round);
-    padding: var(--space-4)
-}
-
-.hidden__7169b {
-    opacity: 0;
-    pointer-events: none;
-    transform: translate3d(0,-14px,0)
-}
-
-.poweredByNitroContainer__7169b {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    gap: var(--space-4);
-    margin-top: var(--space-8)
-}
-
-.heading__7169b {
-    margin-top: 13px
-}
-
-.buttonContainer__7169b {
-    align-items: center;
-    box-sizing: border-box;
-    direction: column;
-    display: flex;
-    margin-bottom: 27px;
-    margin-left: 24px;
-    margin-right: 24px
-}
-
-.button__7169b {
-    height: 7px;
-    width: 100%
-}
-
 .actionBarButton__18c2e {
     border-radius: 8px;
     height: 24px;
@@ -13354,4 +13270,4 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     position: relative
 }
 
-/*# sourceMappingURL=ff36f6f5019f0dd1.css.map*/
+/*# sourceMappingURL=eb80ef61be741262.css.map*/

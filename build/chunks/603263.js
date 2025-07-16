@@ -1,12 +1,12 @@
 /** Chunk was on 61216 **/
 n.d(t, {
-  Gn: () => x,
+  Gn: () => C,
   Nz: () => f,
   QQ: () => h,
   QY: () => y,
   Vj: () => m,
   Vs: () => v,
-  h7: () => C,
+  h7: () => x,
   j8: () => g,
   oO: () => _,
   qt: () => b,
@@ -147,14 +147,14 @@ function y(e, t) {
   })
 }
 
-function x(e) {
+function C(e) {
   r.Z.dispatch({
     type: "SEARCH_SET_SHOW_NO_RESULTS_ALT",
     searchId: e
   })
 }
 
-function C(e, t) {
+function x(e, t) {
   r.Z.dispatch({
     type: "SEARCH_ADD_HISTORY",
     searchId: e,

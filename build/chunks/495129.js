@@ -21,8 +21,8 @@ var i = n(120356),
   b = n(594174),
   E = n(938475),
   y = n(5192),
-  x = n(981631),
-  C = n(388032),
+  C = n(981631),
+  x = n(388032),
   v = n(653072);
 
 function O(e) {
@@ -45,21 +45,21 @@ function O(e) {
       rawName: t
     } = e;
     return "voice_user_ids" === t
-  })) ? void 0 : T.rawValue, W = null != z ? z.split(",") : [], K = (0, a.Wu)([b.default], () => W.map(e => b.default.getUser(e)).filter(Boolean)), Y = M && null != F ? C.intl.formatToPlainString(C.t["er/cHx"], {
+  })) ? void 0 : T.rawValue, W = null != z ? z.split(",") : [], K = (0, a.Wu)([b.default], () => W.map(e => b.default.getUser(e)).filter(Boolean)), Y = M && null != F ? x.intl.formatToPlainString(x.t["er/cHx"], {
     username: G
-  }) : C.intl.formatToPlainString(C.t.noNjkZ, {
+  }) : x.intl.formatToPlainString(x.t.noNjkZ, {
     username: B.nick
   }), X = null != L && null != k, q = null;
-  q = X ? M || V ? C.intl.format(C.t.CaLQqK, {
+  q = X ? M || V ? x.intl.format(x.t.CaLQqK, {
     channelHook: (e, t) => (0, r.jsx)(m.Z, {
       channel: null != k ? k : void 0
     }, t)
-  }) : C.intl.format(C.t.VugXpK, {
+  }) : x.intl.format(x.t.VugXpK, {
     channelHook: (e, t) => (0, r.jsx)(m.Z, {
       channel: null != k ? k : void 0
     }, t)
-  }) : C.intl.string(C.t["tHT/Vl"]), 0 === H.length && (q = M ? C.intl.string(C.t.IE2uZW) : C.intl.string(C.t.QVhmGx));
-  let Q = M ? C.intl.string(C.t["00XIbm"]) : C.intl.string(C.t["7CrE9/"]);
+  }) : x.intl.string(x.t["tHT/Vl"]), 0 === H.length && (q = M ? x.intl.string(x.t.IE2uZW) : x.intl.string(x.t.QVhmGx));
+  let Q = M ? x.intl.string(x.t["00XIbm"]) : x.intl.string(x.t["7CrE9/"]);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsxs)("div", {
       className: v.card,
@@ -101,7 +101,7 @@ function O(e) {
       children: [(0, r.jsxs)(o.zx, {
         color: o.zx.Colors.BRAND,
         onClick: () => {
-          null != R && null != Z && ((0, _.uL)(x.Z5c.CHANNEL(Z, R)), u.default.selectVoiceChannel(R))
+          null != R && null != Z && ((0, _.uL)(C.Z5c.CHANNEL(Z, R)), u.default.selectVoiceChannel(R))
         },
         className: v.button,
         innerClassName: v.buttonInner,
@@ -109,7 +109,7 @@ function O(e) {
         children: [(0, r.jsx)(s.gj8, {
           size: "md",
           color: "currentColor"
-        }), C.intl.string(C.t.zIeJq6)]
+        }), x.intl.string(x.t.zIeJq6)]
       }), (0, r.jsx)(o.zx, {
         color: o.zx.Colors.PRIMARY,
         onClick: () => {

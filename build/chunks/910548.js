@@ -19,8 +19,8 @@ var r, i = n(255367),
   b = n(267642),
   E = n(739566),
   y = n(834129),
-  x = n(981631),
-  C = n(388032),
+  C = n(981631),
+  x = n(388032),
   v = n(573510);
 
 function O(e) {
@@ -173,7 +173,7 @@ function M(e) {
   }()), {
     createMultipleConfettiAt: h,
     confettiCanvas: g
-  } = l.useContext(f.h), [b, E] = l.useState(null), y = (0, s.uR)(g, b), x = function(e, t) {
+  } = l.useContext(f.h), [b, E] = l.useState(null), y = (0, s.uR)(g, b), C = function(e, t) {
     if (null == e) return "enter";
     switch (e) {
       case "enter":
@@ -188,7 +188,7 @@ function M(e) {
       case "exit":
         return "enter"
     }
-  }(d, _), C = T.includes(_), O = C && "exit" === d, j = l.useCallback(e => {
+  }(d, _), x = T.includes(_), O = x && "exit" === d, j = l.useCallback(e => {
     m(e)
   }, []), P = l.useCallback(() => {
     "exit" === d && (null == t || t())
@@ -227,7 +227,7 @@ function M(e) {
       })
     }
   }, [h, _, d, a]), l.useEffect(() => {
-    if (C && "leaf_fall" === d) {
+    if (x && "leaf_fall" === d) {
       let e = A[_].leafRotationDirection;
       y.createConfetti({
         id: "".concat(w, "-").concat((0, c.Z)()),
@@ -277,7 +277,7 @@ function M(e) {
         sprite: "TOP_LEFT" === _ ? R : L
       })
     }
-  }, [C, y, _, d]), (0, i.jsxs)(i.Fragment, {
+  }, [x, y, _, d]), (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(s.Ji, {
       ref: E,
       sprites: k,
@@ -297,7 +297,7 @@ function M(e) {
         className: o()(v.easterEggAnimation, {
           [v.easterEggAnimationHideLeaf]: O
         }),
-        nextScene: x,
+        nextScene: C,
         sceneSegments: I,
         onScenePlay: j,
         onSceneComplete: P,
@@ -318,12 +318,12 @@ function U(e) {
     } = e,
     c = function(e) {
       switch (e.type) {
-        case x.uaV.GUILD_BOOST_TIER_1:
-          return x.Eu4.TIER_1;
-        case x.uaV.GUILD_BOOST_TIER_2:
-          return x.Eu4.TIER_2;
-        case x.uaV.GUILD_BOOST_TIER_3:
-          return x.Eu4.TIER_3
+        case C.uaV.GUILD_BOOST_TIER_1:
+          return C.Eu4.TIER_1;
+        case C.uaV.GUILD_BOOST_TIER_2:
+          return C.Eu4.TIER_2;
+        case C.uaV.GUILD_BOOST_TIER_3:
+          return C.Eu4.TIER_3
       }
       return null
     }(n),
@@ -340,20 +340,20 @@ function U(e) {
     N = (0, E.ZP)(n),
     P = N.nick,
     A = o(N);
-  t = null == c || null == a ? u > 1 ? C.intl.format(C.t.yfC9dn, {
+  t = null == c || null == a ? u > 1 ? x.intl.format(x.t.yfC9dn, {
     username: P,
     usernameHook: A,
     numSubscriptions: u
-  }) : C.intl.format(C.t["57St//"], {
+  }) : x.intl.format(x.t["57St//"], {
     username: P,
     usernameHook: A
-  }) : u > 1 ? C.intl.format(C.t.PO9uJC, {
+  }) : u > 1 ? x.intl.format(x.t.PO9uJC, {
     username: P,
     usernameHook: A,
     numSubscriptions: u,
     guildName: a.name,
     newTierName: (0, b.nW)(c)
-  }) : C.intl.format(C.t.cUfTTE, {
+  }) : x.intl.format(x.t.cUfTTE, {
     username: P,
     usernameHook: A,
     guildName: a.name,
@@ -374,7 +374,7 @@ function U(e) {
     L = l.useCallback(() => {
       (0, h.AI)({
         settingsVisible: !0
-      }), m.Z.open(x.oAB.POGGERMODE), I(!1)
+      }), m.Z.open(C.oAB.POGGERMODE), I(!1)
     }, []),
     k = l.useCallback((e, t) => {
       (null == t ? void 0 : t.id.startsWith(w)) && L()

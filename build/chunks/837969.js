@@ -37,15 +37,15 @@ function d(e) {
   } = e, y = r.useCallback((e, t) => {
     let n = (0, i.Z)(e, t);
     return null != E && E(e, n, t), n
-  }, [E]), [x, C] = r.useReducer(y, {
+  }, [E]), [C, x] = r.useReducer(y, {
     focusedIndex: d,
     itemCount: n
   }), {
     itemCount: v,
     focusedIndex: O
-  } = x, [j] = r.useState(() => (0, a.P2)(C, 16));
+  } = C, [j] = r.useState(() => (0, a.P2)(x, 16));
   return r.useEffect(() => {
-      C({
+      x({
         type: i.G.UPDATE_ITEM_COUNT,
         itemCount: n
       })
@@ -64,9 +64,9 @@ function d(e) {
         focusOnMount: b,
         enabled: E,
         makeId: y = a.qR,
-        getIndexFromId: x
-      } = e, C = r.useRef(n), v = r.useRef(x);
-      v.current = x, C.current = n;
+        getIndexFromId: C
+      } = e, x = r.useRef(n), v = r.useRef(C);
+      v.current = C, x.current = n;
       let O = r.useRef(E);
       r.useEffect(() => {
         O.current = E
@@ -166,7 +166,7 @@ function d(e) {
           } = e;
           return {
             role: "listitem",
-            "aria-setsize": g ? C.current : void 0,
+            "aria-setsize": g ? x.current : void 0,
             "aria-posinset": g ? n + 1 : void 0,
             id: y(t, n),
             tabIndex: h && n === d ? 0 : -1,

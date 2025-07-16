@@ -38,15 +38,15 @@ let E = e => {
       return (null == (e = d.activity) ? void 0 : e.type) === _.mFx.JOIN_REQUEST && (t = t === E && n.isPrivate() ? n.getRecipientId() : E), f.Z.getApplicationActivity(t, d.application.id)
     }
   }, [d, n, E]), {
-    enabled: x
+    enabled: C
   } = a.m.useExperiment({
     location: "ActivityInviteEmbed"
   }, {
     autoTrackExposure: !0
-  }), C = b(d), {
+  }), x = b(d), {
     data: v
-  } = (0, u.IX)(null == (t = d.application) ? void 0 : t.id), O = null != v ? v : C;
-  return null != O && x ? (0, r.jsx)(o.c, {
+  } = (0, u.IX)(null == (t = d.application) ? void 0 : t.id), O = null != v ? v : x;
+  return null != O && C ? (0, r.jsx)(o.c, {
     app: O,
     channel: n,
     message: d,

@@ -126,8 +126,8 @@ function E(e) {
     onUnpublishProduct: m,
     onDeleteProduct: E,
     onCopyProductLink: y,
-    onTestDownload: x,
-    onReportProduct: C
+    onTestDownload: C,
+    onReportProduct: x
   } = e, v = i.useRef(null);
   return (0, r.jsx)("div", {
     onClick: e => {
@@ -152,8 +152,8 @@ function E(e) {
         onUnpublishProduct: m,
         onDeleteProduct: E,
         onCopyLink: y,
-        onTestDownload: x,
-        onReportProduct: C
+        onTestDownload: C,
+        onReportProduct: x
       })),
       children: (e, n) => {
         let {
@@ -186,8 +186,8 @@ function y(e) {
     onEditProduct: i,
     onUnpublishProduct: l,
     onDeleteProduct: y,
-    onCopyProductLink: x,
-    onTestDownload: C,
+    onCopyProductLink: C,
+    onTestDownload: x,
     disabled: v = !1
   } = e, O = (0, c.U)(t, 600), j = null !== t.price_tier ? (0, u.T4)(t.price_tier, m.pK.USD) : void 0, I = (0, d.C)(t);
   return (0, r.jsxs)(o.kL8, {
@@ -210,8 +210,8 @@ function y(e) {
         onEditProduct: i,
         onUnpublishProduct: l,
         onDeleteProduct: y,
-        onCopyLink: x,
-        onTestDownload: C,
+        onCopyLink: C,
+        onTestDownload: x,
         onReportProduct: () => {}
       }))))
     },
@@ -263,8 +263,8 @@ function y(e) {
         onEditProduct: i,
         onUnpublishProduct: l,
         onDeleteProduct: y,
-        onCopyProductLink: x,
-        onTestDownload: C,
+        onCopyProductLink: C,
+        onTestDownload: x,
         onReportProduct: () => {}
       })]
     })]

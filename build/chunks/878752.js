@@ -1,68 +1,55 @@
 /** Chunk was on 10801 **/
 n.d(t, {
-  Z: () => v
-}), n(388685);
-var r = n(255367),
-  i = n(73800),
-  l = n(704215),
-  a = n(100527),
-  o = n(906732),
-  s = n(779618),
-  c = n(243778),
-  u = n(446226),
-  d = n(441167),
-  p = n(301164),
-  h = n(576645),
-  f = n(822183),
-  m = n(131951),
-  g = n(213652),
-  b = n(320427),
-  _ = n(145010),
-  y = n(361057),
-  C = n(159909),
-  x = n(531675);
+  Z: () => g
+});
+var r = n(255367);
+n(73800);
+var i = n(100527),
+  l = n(906732),
+  a = n(779618),
+  o = n(446226),
+  s = n(441167),
+  c = n(822183),
+  u = n(131951),
+  d = n(213652),
+  p = n(320427),
+  h = n(145010),
+  f = n(159909),
+  m = n(531675);
 
-function v(e) {
+function g(e) {
   let {
     channel: t,
     hasActiveStream: n,
-    showRightDivider: v
+    showRightDivider: g
   } = e, {
-    analyticsLocations: O
-  } = (0, o.ZP)(a.Z.VOICE_CONTROL_TRAY), j = (0, h.Ou)(t), E = i.useRef(null), S = (0, u.Z)(), {
-    isSharedCanvasEnabled: P
-  } = f.Z.useExperiment({
+    analyticsLocations: b
+  } = (0, l.ZP)(i.Z.VOICE_CONTROL_TRAY), _ = (0, o.Z)(), {
+    isSharedCanvasEnabled: y
+  } = c.Z.useExperiment({
     guildId: null == t ? void 0 : t.guild_id,
     location: "b7309a_1"
   }), {
-    enableViewerClipping: I
-  } = d.Z.useExperiment({
+    enableViewerClipping: C
+  } = s.Z.useExperiment({
     location: "VoiceEffectsActionBar"
   }, {
     autoTrackExposure: !1
-  }), Z = (0, s.Z)(m.Z), N = (0, h.Zm)(t, "VoiceEffectsActionBar") ? [l.z.CONSUMABLE_HD_POTION_UPSELL] : [], [T, A] = (0, c.US)(N, void 0, !0), w = T === l.z.CONSUMABLE_HD_POTION_UPSELL;
-  if (null == t || null != S) return null;
-  let R = I && Z,
-    M = P && n;
-  return (0, r.jsxs)(o.Gt, {
-    value: O,
+  }), x = (0, a.Z)(u.Z);
+  if (null == t || null != _) return null;
+  let v = C && x,
+    j = y && n;
+  return (0, r.jsxs)(l.Gt, {
+    value: b,
     children: [(0, r.jsxs)("div", {
-      className: x.voiceEffectsActionBar,
-      children: [R && (0, r.jsx)(g.Z, {
+      className: m.voiceEffectsActionBar,
+      children: [v && (0, r.jsx)(d.Z, {
         channel: t
-      }), w && (0, r.jsx)(p.t, {
-        potionRef: E,
-        channel: t,
-        markAsDismissed: A
-      }), j && (0, r.jsx)(y.Z, {
-        ref: E,
-        channel: t,
-        glow: w
-      }), M && (0, r.jsx)(b.Z, {}), M && (0, r.jsx)(_.Z, {
+      }), j && (0, r.jsx)(p.Z, {}), j && (0, r.jsx)(h.Z, {
         channel: t
-      }), M && (0, r.jsx)(C.Z, {})]
-    }), v && (R || w || j || M) && (0, r.jsx)("div", {
-      className: x.divider
+      }), j && (0, r.jsx)(f.Z, {})]
+    }), g && (v || j) && (0, r.jsx)("div", {
+      className: m.divider
     })]
   })
 }

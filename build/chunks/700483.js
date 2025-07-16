@@ -22,8 +22,8 @@ var r = n(255367),
   C = n(258609),
   x = n(74299),
   v = n(924301),
-  O = n(459502),
-  j = n(856691),
+  j = n(459502),
+  O = n(856691),
   E = n(357156),
   S = n(923973),
   P = n(829750),
@@ -125,7 +125,7 @@ function ed(e) {
     canManageGuildEvent: f
   } = (0, E.XJ)(t), m = (0, o.e7)([K.Z], () => K.Z.getStageInstanceByChannel(t.id), [t.id]), g = (0, o.e7)([v.ZP], () => v.ZP.getGuildScheduledEvent(null == m ? void 0 : m.guild_scheduled_event_id)), b = (0, o.e7)([F.Z], () => F.Z.getVoiceChannelId() === t.id, [t.id]), {
     suppress: C
-  } = (0, Z.Z)(t), x = k.default.getId(), [O] = (0, er.Z)(t), j = q.ZP.isModerator(x, t.id), S = (0, W.B)(t.id), P = f(g), {
+  } = (0, Z.Z)(t), x = k.default.getId(), [j] = (0, er.Z)(t), O = q.ZP.isModerator(x, t.id), S = (0, W.B)(t.id), P = f(g), {
     parentAnalyticsLocation: I
   } = (0, h.ZP)(), N = i.useRef(null);
   if (!b) return (0, r.jsx)(s.zx, {
@@ -159,7 +159,7 @@ function ed(e) {
     channel: t,
     appContext: l
   });
-  return (j || P) && null != m ? (0, r.jsx)(c.yRy, {
+  return (O || P) && null != m ? (0, r.jsx)(c.yRy, {
     targetElementRef: N,
     renderPopout: e => {
       let {
@@ -202,7 +202,7 @@ function ed(e) {
         popoutOpen: i
       })
     }
-  }) : C && !S || O ? (0, r.jsx)(M.Z, {
+  }) : C && !S || j ? (0, r.jsx)(M.Z, {
     label: ea.intl.string(ea.t.SMKyio),
     onClick: T
   }) : (0, r.jsx)(M.Z, {
@@ -266,9 +266,9 @@ let ef = i.memo(function(e) {
     cameraUnavailable: p,
     enabled: _
   } = (0, S.Z)(), v = (0, I.Z)(t), {
-    limit: O,
-    reachedLimit: j
-  } = (0, P.Z)(t), E = (0, o.e7)([H.default], () => H.default.getCurrentUser()), R = (0, o.e7)([U.Z], () => (0, x.Z)(U.Z)), M = (0, o.e7)([F.Z], () => F.Z.getVoiceChannelId() === t.id, [t.id]), k = (0, o.e7)([f.Z], () => f.Z.getStreamParticipants(t.id)[0], [t.id]), B = (0, X.PK)(t.id), G = O > 0, V = j && !B || null != k && k.user.id !== (null == E ? void 0 : E.id), z = (0, y.u)("AudioDeviceMenu", n, {
+    limit: j,
+    reachedLimit: O
+  } = (0, P.Z)(t), E = (0, o.e7)([H.default], () => H.default.getCurrentUser()), R = (0, o.e7)([U.Z], () => (0, x.Z)(U.Z)), M = (0, o.e7)([F.Z], () => F.Z.getVoiceChannelId() === t.id, [t.id]), k = (0, o.e7)([f.Z], () => f.Z.getStreamParticipants(t.id)[0], [t.id]), B = (0, X.PK)(t.id), G = j > 0, V = O && !B || null != k && k.user.id !== (null == E ? void 0 : E.id), z = (0, y.u)("AudioDeviceMenu", n, {
     entrypoint: el.A5.CARET
   }), Y = i.useRef(null), q = i.useRef(null);
   if (null == E) return null;
@@ -306,8 +306,8 @@ let ef = i.memo(function(e) {
         cameraUnavailable: p,
         onChange: N.r,
         onCameraUnavailable: A.Z,
-        channelLimitReached: j,
-        channelLimit: O,
+        channelLimitReached: O,
+        channelLimit: j,
         popoutOpen: i,
         onPopoutClick: n
       })
@@ -413,11 +413,11 @@ let eg = i.memo(function(e) {
     className: eo.containerColumn,
     children: [(0, r.jsxs)("div", {
       className: eo.eventPrompts,
-      children: [u ? (0, r.jsx)(O.Z, {
+      children: [u ? (0, r.jsx)(j.Z, {
         channelId: null == t ? void 0 : t.id
       }) : null, (0, r.jsx)("div", {
         className: eo.separator
-      }), u && a ? (0, r.jsx)(j.Z, {
+      }), u && a ? (0, r.jsx)(O.Z, {
         highlight: !0,
         channel: t
       }) : null, (0, r.jsx)("div", {

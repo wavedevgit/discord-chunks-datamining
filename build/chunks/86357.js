@@ -84,7 +84,7 @@ let _ = e => {
       })]
     })
   },
-  x = e => {
+  C = e => {
     let {
       className: t
     } = e;
@@ -93,7 +93,7 @@ let _ = e => {
       children: p.intl.string(p.t.QQsaCQ)
     })
   };
-class C extends(r = o.PureComponent) {
+class x extends(r = o.PureComponent) {
   getState() {
     let {
       inLibrary: e,
@@ -115,7 +115,7 @@ class C extends(r = o.PureComponent) {
     } = this.props;
     switch (e) {
       case 5:
-        return (0, a.jsx)(x, {
+        return (0, a.jsx)(C, {
           className: c()(t, n)
         });
       case 1:
@@ -146,7 +146,7 @@ class C extends(r = o.PureComponent) {
     } = this.props;
     switch (e) {
       case 5:
-        return (0, a.jsx)(x, {
+        return (0, a.jsx)(C, {
           className: t
         });
       case 3:
@@ -173,7 +173,7 @@ class C extends(r = o.PureComponent) {
     } = this.props;
     switch (e) {
       case 5:
-        t = (0, a.jsx)(x, {});
+        t = (0, a.jsx)(C, {});
         break;
       case 2:
         t = (0, a.jsxs)(o.Fragment, {
@@ -217,10 +217,10 @@ class C extends(r = o.PureComponent) {
         throw Error("Invalid Price Unit Type")
     }
   }
-}(l = "Types") in C ? Object.defineProperty(C, l, {
+}(l = "Types") in x ? Object.defineProperty(x, l, {
   value: f,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : C[l] = f;
-let v = C
+}) : x[l] = f;
+let v = x

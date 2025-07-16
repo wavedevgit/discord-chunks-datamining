@@ -22,8 +22,8 @@ var r = n(255367),
   C = n(867176),
   x = n(451834),
   v = n(502762),
-  O = n(952124),
-  j = n(544989),
+  j = n(952124),
+  O = n(544989),
   E = n(481932),
   S = n(664794),
   P = n(4517),
@@ -94,12 +94,12 @@ function R(e) {
             style: V,
             className: A.backdrop
           }), (0, r.jsxs)(a.u2, {
-            children: [(0, r.jsxs)(j.Z, {
+            children: [(0, r.jsxs)(O.Z, {
               children: [(0, r.jsx)(E.Z, {
                 user: t,
                 themeType: N.lY.SIDEBAR,
                 shouldShowTooltip: null === G.interactionType
-              }), t.bot ? (0, r.jsx)(O.Z, {
+              }), t.bot ? (0, r.jsx)(j.Z, {
                 user: t
               }) : (0, r.jsx)(S.Z, {
                 type: "banner",

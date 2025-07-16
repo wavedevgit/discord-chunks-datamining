@@ -35,8 +35,8 @@ var r = n(255367),
   b = n(585483),
   E = n(5967),
   y = n(630388),
-  x = n(358085),
-  C = n(51144),
+  C = n(358085),
+  x = n(51144),
   v = n(91047),
   O = n(50284),
   j = n(804063),
@@ -55,7 +55,7 @@ function T(e, t, n) {
     let i = g.default.getUser(e);
     if (null == i) return;
     if (r.preventDefault(), r.stopPropagation(), !r.shiftKey) return void n();
-    let l = "@".concat(C.ZP.getUserTag(i, {
+    let l = "@".concat(x.ZP.getUserTag(i, {
         decoration: "never"
       })),
       a = "<@".concat(e, ">");
@@ -113,7 +113,7 @@ function D(e, t, a, o) {
   } = e, p = (0, y.yE)(d, I.iLy.EPHEMERAL), m = (0, s.bp)();
   return i.useCallback((e, t) => {
     if (p) return;
-    if (!x.isPlatformEmbedded) {
+    if (!C.isPlatformEmbedded) {
       let t = e.target;
       if ("A" === t.tagName && "" !== t.textContent || null == window.getSelection) return;
       let n = window.getSelection();
@@ -243,17 +243,17 @@ function G(e) {
     }
   }, [t, n])), [E, y] = i.useState(a);
   h.current = E || h.current;
-  let x = i.useCallback(e => {
+  let C = i.useCallback(e => {
       s && (0, m.T6)(), E || (b.S.dispatchKeyed(I.LPv.ANIMATE_CHAT_AVATAR, _, !0), g(e), y(!0))
     }, [E, _, s, g]),
-    C = i.useCallback(() => {
+    x = i.useCallback(() => {
       b.S.dispatchKeyed(I.LPv.ANIMATE_CHAT_AVATAR, _, !1), y(!1)
     }, [_]);
   return {
     hasHovered: h.current,
     isHovered: E,
-    handleMouseEnter: x,
-    handleMouseLeave: C
+    handleMouseEnter: C,
+    handleMouseLeave: x
   }
 }
 

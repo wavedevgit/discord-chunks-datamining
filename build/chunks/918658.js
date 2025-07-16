@@ -25,8 +25,8 @@ var r = n(255367),
   A = n(962086),
   g = n(160404),
   R = n(889695),
-  C = n(981631),
-  P = n(176505),
+  P = n(981631),
+  C = n(176505),
   y = n(302463),
   b = n(293810),
   D = n(388032),
@@ -79,23 +79,23 @@ function v() {
   if (null == l || null == t) return null;
   let v = function(e) {
       switch (e) {
-        case C.pNK.INTEGRATIONS:
+        case P.pNK.INTEGRATIONS:
           return D.intl.string(D.t.k7LGdn);
-        case C.pNK.ROLE_SUBSCRIPTIONS:
+        case P.pNK.ROLE_SUBSCRIPTIONS:
           return D.intl.string(D.t.bRqiqa);
-        case C.pNK.ONBOARDING:
+        case P.pNK.ONBOARDING:
           return D.intl.string(D.t.qZpU3d);
         default:
           return D.intl.string(D.t.MTIXho)
       }
     }(a),
-    Z = a === C.pNK.ROLE_SUBSCRIPTIONS ? D.intl.string(D.t.hZUCzc) : D.intl.string(D.t["/djIh4"]),
-    L = n === P.oC.GUILD_ONBOARDING,
+    Z = a === P.pNK.ROLE_SUBSCRIPTIONS ? D.intl.string(D.t.hZUCzc) : D.intl.string(D.t["/djIh4"]),
+    L = n === C.oC.GUILD_ONBOARDING,
     j = e => {
       let {
         backToSettings: n
       } = e;
-      null != t && (g.Z.isFullServerPreview(t) && (0, p.uL)(C.Z5c.CHANNEL(t)), _.ZP.shouldShowOnboarding(t) && (d.Z.finishOnboarding(t), (0, E.EI)(t)), (0, A.mL)(t), n && O.Z.open(t, a), a === C.pNK.ROLE_SUBSCRIPTIONS && (0, I.GN)(t))
+      null != t && (g.Z.isFullServerPreview(t) && (0, p.uL)(P.Z5c.CHANNEL(t)), _.ZP.shouldShowOnboarding(t) && (d.Z.finishOnboarding(t), (0, E.EI)(t)), (0, A.mL)(t), n && O.Z.open(t, a), a === P.pNK.ROLE_SUBSCRIPTIONS && (0, I.GN)(t))
     };
   return (0, r.jsxs)(u.qXd, {
     color: u.DM8.BRAND,
@@ -165,7 +165,7 @@ function v() {
           color: c.Z.unsafe_rawColors.YELLOW_300.css
         })
       })]
-    }), s || a === C.pNK.ROLE_SUBSCRIPTIONS ? null : (0, r.jsx)(M, {
+    }), s || a === P.pNK.ROLE_SUBSCRIPTIONS ? null : (0, r.jsx)(M, {
       onClick: () => j({
         backToSettings: !1
       })

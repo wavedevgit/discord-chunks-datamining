@@ -22,8 +22,8 @@ var r = n(255367),
   C = n(410030),
   x = n(857595),
   v = n(607070),
-  O = n(367907),
-  j = n(450936),
+  j = n(367907),
+  O = n(450936),
   E = n(993766),
   S = n(499254),
   P = n(541099),
@@ -76,8 +76,8 @@ var r = n(255367),
   eC = n(45251),
   ex = n(705533),
   ev = n(618857),
-  eO = n(268350),
-  ej = n(155409),
+  ej = n(268350),
+  eO = n(155409),
   eE = n(163612),
   eS = n(314897),
   eP = n(433355),
@@ -207,7 +207,7 @@ class tn extends i.PureComponent {
     let {
       channel: t
     } = this.props;
-    f.Z.startEditMessage(t.id, e.id, e.content), O.ZP.trackWithMetadata(e0.rMx.MESSAGE_EDIT_UP_ARROW)
+    f.Z.startEditMessage(t.id, e.id, e.content), j.ZP.trackWithMetadata(e0.rMx.MESSAGE_EDIT_UP_ARROW)
   }
   handleRecallLastCommand(e) {
     if (null == e.interactionData) return;
@@ -556,7 +556,7 @@ class tn extends i.PureComponent {
             shouldRefocus: !1
           }
         } else f.Z.sendMessage(c.id, y, void 0, C);
-        return this.setState((0, B.H2)()), (0, eb.A6)(c.id), (0, eO.qB)(c.id, d.drafts.type), {
+        return this.setState((0, B.H2)()), (0, eb.A6)(c.id), (0, ej.qB)(c.id, d.drafts.type), {
           shouldClear: !0,
           shouldRefocus: !0
         }
@@ -618,8 +618,8 @@ class tr extends i.PureComponent {
         shakeIntensity: C,
         poggermodeEnabled: x,
         isSelectedResourceChannel: v,
-        showAutomodUserProfileChatBlocker: O,
-        showAppLauncherButton: j,
+        showAutomodUserProfileChatBlocker: j,
+        showAppLauncherButton: O,
         showAppDMsUI: E,
         isInitialLoading: S,
         pendingScheduledMessage: P,
@@ -643,7 +643,7 @@ class tr extends i.PureComponent {
       }),
       B = (0, r.jsxs)("div", {
         className: e3.channelBottomBarArea,
-        children: [(0, r.jsx)(ej.Z, {
+        children: [(0, r.jsx)(eO.Z, {
           childRef: this.containerDomRef,
           tutorialId: "writing-messages",
           position: "left",
@@ -676,7 +676,7 @@ class tr extends i.PureComponent {
       F = E && S,
       H = F && S ? k : B,
       G = a()({
-        [e7.barWithAppLauncherButton]: j,
+        [e7.barWithAppLauncherButton]: O,
         [e7.barWithAppsDMsUI]: E
       }),
       {
@@ -751,7 +751,7 @@ class tr extends i.PureComponent {
                   showQuarantinedUserBanner: m,
                   guild: l,
                   communicationDisabledUntil: y,
-                  showAutomodUserProfileChatBlocker: O
+                  showAutomodUserProfileChatBlocker: j
                 })) ? t : (0, r.jsxs)("form", {
                   ref: this.inputFormRef,
                   onSubmit: e6,
@@ -914,7 +914,7 @@ let ti = i.memo(function(e) {
   }), g = (0, d.e7)([ep.Z], () => ep.Z.isEnabled()), _ = (0, em.Z)(t.id), y = (0, er.Z)(t.id), x = (0, Z.R)({
     channel: t,
     chatInputType: l
-  }), O = (0, k.Q)(t.id), S = (0, ex.k)(t.id), I = (0, C.ZP)(), N = (0, K.Z)(t.id), T = (0, q.Z)(null == N ? void 0 : N.wallpaperId), {
+  }), j = (0, k.Q)(t.id), S = (0, ex.k)(t.id), I = (0, C.ZP)(), N = (0, K.Z)(t.id), T = (0, q.Z)(null == N ? void 0 : N.wallpaperId), {
     isInitialLoading: A,
     primaryEntryPointCommand: w,
     isProfileFetching: R,
@@ -922,7 +922,7 @@ let ti = i.memo(function(e) {
     applicationId: D,
     channelId: L,
     commands: U
-  } = (0, j.Z)({
+  } = (0, O.Z)({
     context: {
       channel: t,
       type: "channel"
@@ -963,7 +963,7 @@ let ti = i.memo(function(e) {
     isSelectedResourceChannel: y,
     showAutomodUserProfileChatBlocker: h && !m,
     showAppLauncherButton: x,
-    showAppDMsUI: O,
+    showAppDMsUI: j,
     isInitialLoading: A,
     showEntryPointAppCommandButton: null != w,
     entryPointCommandButtonRef: B,

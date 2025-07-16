@@ -22,8 +22,8 @@ var r = n(255367),
   C = n(216337),
   x = n(920888),
   v = n(287151),
-  O = n(799903),
-  j = n(501517),
+  j = n(799903),
+  O = n(501517),
   E = n(982168),
   S = n(216572),
   P = n(817608),
@@ -77,7 +77,7 @@ function G(e) {
   let {
     channel: t
   } = e, l = t.isArchivedThread(), a = (0, E.P0)(t), [o, d] = i.useState(!1), p = () => {
-    d(!0), j.Z.resolveFlag(t.id).then(() => {
+    d(!0), O.Z.resolveFlag(t.id).then(() => {
       d(!1)
     })
   };
@@ -86,7 +86,7 @@ function G(e) {
     look: c.zx.Looks.FILLED,
     color: c.zx.Colors.PRIMARY,
     onClick: () => {
-      !0 === s.K.get(O.F) ? p() : (0, u.ZDy)(async () => {
+      !0 === s.K.get(j.F) ? p() : (0, u.ZDy)(async () => {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 799903));
@@ -122,8 +122,8 @@ function V(e) {
     isLastItem: l = !1,
     parentChannelId: s
   } = e, {
-    ref: O,
-    width: j
+    ref: j,
+    width: O
   } = (0, h.ZP)(), [E, k] = i.useState(3), [V, z] = i.useState(!n), [W, Y] = (0, f.Z)(!1, 2e3), q = (0, o.e7)([N.Z], () => N.Z.getChannel(t), [t]), {
     firstMessage: K
   } = (0, R.cl)(q), X = (0, o.e7)([I.Z], () => I.Z.hasJoined(t)), {
@@ -141,7 +141,7 @@ function V(e) {
     }
   }, [n]);
   i.useLayoutEffect(() => {
-    let e = O.current;
+    let e = j.current;
     if (null == e || !n) return;
     let t = new IntersectionObserver(ea, {
       threshold: 1
@@ -152,8 +152,8 @@ function V(e) {
   });
   let [eo, es] = i.useState(!0);
   if (i.useEffect(() => {
-      null != j && (k(Math.floor((j - 280) / 58)), es(!1))
-    }, [j]), null == q || null == K) return null;
+      null != O && (k(Math.floor((O - 280) / 58)), es(!1))
+    }, [O]), null == q || null == K) return null;
   let ec = K.reactions.length > 0,
     eu = () => {
       X ? Z.Z.leaveThread(q, "Forum Toolbar") : Z.Z.joinThread(q, "Forum Toolbar")
@@ -180,7 +180,7 @@ function V(e) {
       className: a()(U.container, {
         [U.header]: V
       }),
-      ref: O,
+      ref: j,
       children: [en ? (0, r.jsx)("div", {
         className: U.reportedMessageActions,
         children: (0, r.jsx)(P.Z, {

@@ -102,7 +102,7 @@ function y(e) {
   })
 }
 
-function x(e) {
+function C(e) {
   let {
     action: t,
     channelId: n,
@@ -146,7 +146,7 @@ function x(e) {
   })
 }
 
-function C(e) {
+function x(e) {
   let {
     message: t,
     poll: n,
@@ -180,18 +180,18 @@ function C(e) {
         })]
       }), c, (0, r.jsxs)("div", {
         className: h.bottomBar,
-        children: [(0, r.jsx)(x, {
+        children: [(0, r.jsx)(C, {
           channelId: t.getChannelId(),
           messageId: t.id,
           action: n.secondaryAction,
           className: h.secondaryAction,
           isInteractive: n.isInteractive
-        }), (0, r.jsx)(x, {
+        }), (0, r.jsx)(C, {
           channelId: t.getChannelId(),
           messageId: t.id,
           action: n.tertiaryAction,
           className: h.tertiaryAction
-        }), (0, r.jsx)(x, {
+        }), (0, r.jsx)(C, {
           channelId: t.getChannelId(),
           messageId: t.id,
           action: n.primaryAction
@@ -211,7 +211,7 @@ function v(e) {
     message: t,
     poll: n,
     children: (0, r.jsx)(f.Pk, {
-      children: (0, r.jsx)(C, {
+      children: (0, r.jsx)(x, {
         message: t,
         poll: n,
         className: i

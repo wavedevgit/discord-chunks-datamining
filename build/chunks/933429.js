@@ -26,8 +26,8 @@ var r, i = n(913527),
   A = n(38618),
   g = n(569545),
   R = n(528011),
-  C = n(487419),
-  P = n(715903),
+  P = n(487419),
+  C = n(715903),
   y = n(223606),
   b = n(160404),
   D = n(41776),
@@ -80,8 +80,8 @@ var r, i = n(913527),
   eA = n(436181),
   eg = n(941128),
   eR = n(981631),
-  eC = n(188785),
-  eP = n(474936),
+  eP = n(188785),
+  eC = n(474936),
   ey = n(46140),
   eb = n(231338),
   eD = n(65154);
@@ -204,7 +204,7 @@ let eB = [eR.kVF.QUARANTINED, eR.kVF.AUTOMOD_QUARANTINED_USER_PROFILE, eR.kVF.VI
         } = e;
         if (null == n) return !1;
         let r = J.ZP.getMember(n, t.id);
-        return null != r && !r.isPending && (0, P.EY)(r)
+        return null != r && !r.isPending && (0, C.EY)(r)
       }
     },
     [eR.kVF.QUARANTINED]: {
@@ -406,17 +406,17 @@ let eB = [eR.kVF.QUARANTINED, eR.kVF.AUTOMOD_QUARANTINED_USER_PROFILE, eR.kVF.VI
       predicate: () => X.Z.isSuggestedAccountType(eR.ABu.PLAYSTATION) && null == X.Z.getAccount(null, eR.ABu.PLAYSTATION) && !eV(eR.kVF.CONNECT_PLAYSTATION)
     },
     [eR.kVF.PREMIUM_TIER_2_TRIAL_ENDING]: {
-      predicate: () => ep.Z.getAlmostExpiringTrialOffers([eP.Si.TIER_2]).length > 0 && !eV(eR.kVF.PREMIUM_TIER_2_TRIAL_ENDING)
+      predicate: () => ep.Z.getAlmostExpiringTrialOffers([eC.Si.TIER_2]).length > 0 && !eV(eR.kVF.PREMIUM_TIER_2_TRIAL_ENDING)
     },
     [eR.kVF.PREMIUM_TIER_0_TRIAL_ENDING]: {
-      predicate: () => ep.Z.getAlmostExpiringTrialOffers([eP.Si.TIER_0]).length > 0 && !eV(eR.kVF.PREMIUM_TIER_0_TRIAL_ENDING)
+      predicate: () => ep.Z.getAlmostExpiringTrialOffers([eC.Si.TIER_0]).length > 0 && !eV(eR.kVF.PREMIUM_TIER_0_TRIAL_ENDING)
     },
     [eR.kVF.PREMIUM_UNCANCEL]: {
       predicate: e => {
         let {
           premiumSubscription: t,
           currentUser: n
-        } = e, r = null != t ? l()(t.currentPeriodEnd).diff(l()().startOf("day"), "days") : 0, i = (null == t ? void 0 : t.canceledAt) != null && (null == t ? void 0 : t.status) === eR.O0b.CANCELED && 1 >= l()().diff(l()(t.canceledAt), "days"), a = null != t && l()(t.currentPeriodEnd).isBefore(l()()), o = null != t && t.status === eR.O0b.CANCELED && !a && r <= 7 && r >= 0 && (0, ef.M5)(n, eP.p9.TIER_2) && !i && !n.hasFreePremium() && !t.isPurchasedExternally;
+        } = e, r = null != t ? l()(t.currentPeriodEnd).diff(l()().startOf("day"), "days") : 0, i = (null == t ? void 0 : t.canceledAt) != null && (null == t ? void 0 : t.status) === eR.O0b.CANCELED && 1 >= l()().diff(l()(t.canceledAt), "days"), a = null != t && l()(t.currentPeriodEnd).isBefore(l()()), o = null != t && t.status === eR.O0b.CANCELED && !a && r <= 7 && r >= 0 && (0, ef.M5)(n, eC.p9.TIER_2) && !i && !n.hasFreePremium() && !t.isPurchasedExternally;
         return !eV(eR.kVF.PREMIUM_UNCANCEL) && o
       },
       metadata: e => {
@@ -436,7 +436,7 @@ let eB = [eR.kVF.QUARANTINED, eR.kVF.AUTOMOD_QUARANTINED_USER_PROFILE, eR.kVF.VI
         let {
           premiumSubscription: t,
           currentUser: n
-        } = e, r = null != t ? l()(t.currentPeriodEnd).diff(l()().startOf("day"), "days") : 0, i = null != t ? l()(t.currentPeriodEnd).diff(l()(t.currentPeriodStart).startOf("day"), "days") : 0, a = null != t && l()(t.currentPeriodEnd).isBefore(l()()), o = eT.Z.applicationIdsFetched.has(eP.CL), c = eT.Z.getForApplication(eP.CL), s = null != t ? (0, ef.Af)(t) : null, u = null != s ? ef.ZP.getSkuIdForPlan(s.planId) : null, d = null != c && null != s && Array.from(c).filter(e => {
+        } = e, r = null != t ? l()(t.currentPeriodEnd).diff(l()().startOf("day"), "days") : 0, i = null != t ? l()(t.currentPeriodEnd).diff(l()(t.currentPeriodStart).startOf("day"), "days") : 0, a = null != t && l()(t.currentPeriodEnd).isBefore(l()()), o = eT.Z.applicationIdsFetched.has(eC.CL), c = eT.Z.getForApplication(eC.CL), s = null != t ? (0, ef.Af)(t) : null, u = null != s ? ef.ZP.getSkuIdForPlan(s.planId) : null, d = null != c && null != s && Array.from(c).filter(e => {
           let {
             skuId: t,
             consumed: n
@@ -644,7 +644,7 @@ function ez() {
     a = ea.Z.getGuildId(),
     o = el.Z.getVoiceChannelId(),
     c = null != o ? e_.Z.getVoiceStateForChannel(o) : null;
-  for (let n of eC.a ? eW : eB)
+  for (let n of eP.a ? eW : eB)
     if (null != eH[n] && eH[n].predicate({
         selectedGuildId: a,
         voiceChannelId: o,
@@ -697,7 +697,7 @@ function eY() {
 }
 class eK extends(r = a.ZP.Store) {
   initialize() {
-    this.syncWith([es.Z, er.Z, Q.Z, ea.Z, L.Z, ep.Z, Y.Z, X.Z, W.Z, C.Z, x.Z, H.Z], ez), this.waitFor(ed.default, eo.Z, $.Z, J.ZP, ei.Z, ee.Z, ec.Z, f.Z, ea.Z, eu.Z, V.Z, m.ZP, er.Z, em.Z, eA.Z, eS.Z, et.Z, eO.Z, eg.Z, Q.Z, eI.Z, en.Z, L.Z, eT.Z, ep.Z, X.Z, D.Z, O.Z, k.Z, x.Z, H.Z)
+    this.syncWith([es.Z, er.Z, Q.Z, ea.Z, L.Z, ep.Z, Y.Z, X.Z, W.Z, P.Z, x.Z, H.Z], ez), this.waitFor(ed.default, eo.Z, $.Z, J.ZP, ei.Z, ee.Z, ec.Z, f.Z, ea.Z, eu.Z, V.Z, m.ZP, er.Z, em.Z, eA.Z, eS.Z, et.Z, eO.Z, eg.Z, Q.Z, eI.Z, en.Z, L.Z, eT.Z, ep.Z, X.Z, D.Z, O.Z, k.Z, x.Z, H.Z)
   }
   hasNotice() {
     return null != eF && null != eF.type
