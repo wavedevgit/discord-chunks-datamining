@@ -1,6 +1,6 @@
 /**
   Module ID: 91372
-  Original File Name: 92964da3af09b96b
+  Original File Name: e93a74b583db280e
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -824,7 +824,7 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .markdown_d285a6 {
-    font-size: 1rem;
+    font-size: 16px;
     -webkit-user-select: text;
     -moz-user-select: text;
     user-select: text
@@ -18350,7 +18350,9 @@ div.nagbar_d74ef8 {
 
 .guildBoostBadge__5dba5 {
     color: var(--guild-boosting-pink);
-    margin-right: 6px
+    height: 16px;
+    margin-right: 6px;
+    width: 16px
 }
 
 .sparkle__5dba5 {
@@ -18611,7 +18613,9 @@ div.nagbar_d74ef8 {
 
 .boostIcon__37ae5 {
     color: var(--guild-boosting-pink);
-    margin-right: 4px
+    height: 16px;
+    margin-right: 4px;
+    width: 16px
 }
 
 .wrapper__51537 {
@@ -20401,4 +20405,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=92964da3af09b96b.css.map*/
+/*# sourceMappingURL=e93a74b583db280e.css.map*/

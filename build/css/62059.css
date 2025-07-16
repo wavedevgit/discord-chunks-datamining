@@ -1,6 +1,6 @@
 /**
   Module ID: 62059
-  Original File Name: 2e1c773f15a8e57c
+  Original File Name: 53651ed7017fa8c8
 **/
 .wrapper__74bfa {
     align-items: center;
@@ -3910,7 +3910,9 @@ html .progress__61462 {
 }
 
 .boosterBadge__8641f {
-    margin-right: 3px
+    height: 14px;
+    margin-right: 3px;
+    width: 14px
 }
 
 .container__62119 {
@@ -10337,4 +10339,4 @@ html .progress__61462 {
     background-image: url(/assets/abbc14555963e723.svg)
 }
 
-/*# sourceMappingURL=2e1c773f15a8e57c.css.map*/
+/*# sourceMappingURL=53651ed7017fa8c8.css.map*/

@@ -26,7 +26,7 @@ function g(e) {
   } = e, n = (0, o.e7)([d.Z], () => d.Z.getGuild(t)), {
     available: g,
     spent: h,
-    total: j
+    total: E
   } = (0, p.Z)(t);
   if (null != n) return (0, r.jsxs)("div", {
     className: v.container,
@@ -52,7 +52,7 @@ function g(e) {
         count: h,
         type: _.b.SPENT
       }), (0, r.jsx)(_.Z, {
-        count: j,
+        count: E,
         type: _.b.TOTAL
       })]
     }), (0, r.jsx)(l.Z, {

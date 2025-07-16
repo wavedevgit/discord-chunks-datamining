@@ -1,6 +1,6 @@
 /**
   Module ID: 26179
-  Original File Name: f81179421900e370
+  Original File Name: 4603b0b96250ad8a
 **/
 @use postcss-pxtorem;
 
@@ -1700,7 +1700,9 @@
 }
 
 .boosterBadge__8641f {
-    margin-right: 3px
+    height: 14px;
+    margin-right: 3px;
+    width: 14px
 }
 
 .classificationEvidenceCard_f57acb {
@@ -1864,4 +1866,4 @@
     margin: 0 var(--space-40)
 }
 
-/*# sourceMappingURL=f81179421900e370.css.map*/
+/*# sourceMappingURL=4603b0b96250ad8a.css.map*/

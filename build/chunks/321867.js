@@ -1,6 +1,6 @@
 /** Chunk was on 77942 **/
 n.d(e, {
-  Z: () => x
+  Z: () => C
 });
 var o = n(255367),
   r = n(73800),
@@ -12,27 +12,27 @@ var o = n(255367),
   u = n(411477),
   _ = n(594174),
   d = n(626135),
-  m = n(74538),
-  f = n(981631),
+  f = n(74538),
+  m = n(981631),
   p = n(486324),
   b = n(474936),
   g = n(388032),
   v = n(886563);
 
-function x(t) {
+function C(t) {
   let {
     analyticsSection: e,
     type: n
-  } = t, x = (0, i.e7)([_.default], () => _.default.getCurrentUser()), y = m.ZP.canUseAnimatedAvatar(x), C = m.ZP.canUsePremiumProfileCustomization(x), h = n === p.pC.BANNER && C || n === p.pC.AVATAR && y, {
-    sourceAnalyticsLocations: A
+  } = t, C = (0, i.e7)([_.default], () => _.default.getCurrentUser()), x = f.ZP.canUseAnimatedAvatar(C), y = f.ZP.canUsePremiumProfileCustomization(C), N = n === p.pC.BANNER && y || n === p.pC.AVATAR && x, {
+    sourceAnalyticsLocations: h
   } = (0, c.ZP)(l.Z.PREMIUM_PREVIEW_UPSELL_HEADER);
   if (r.useEffect(() => {
-      h || d.default.track(f.rMx.PREMIUM_UPSELL_VIEWED, {
+      N || d.default.track(m.rMx.PREMIUM_UPSELL_VIEWED, {
         type: e,
-        location_stack: A
+        location_stack: h
       })
-    }, [h, e, A]), h) return null;
-  let N = (0, o.jsx)(s.Z, {
+    }, [N, e, h]), N) return null;
+  let A = (0, o.jsx)(s.Z, {
     className: v.__invalid_getNitroLink,
     size: a.zx.Sizes.SMALL,
     look: a.zx.Looks.LINK,
@@ -44,7 +44,7 @@ function x(t) {
     showIcon: !1,
     premiumModalAnalyticsLocation: {
       section: e,
-      object: f.qAy.BUTTON_CTA
+      object: m.qAy.BUTTON_CTA
     },
     disableShine: !0
   });
@@ -52,6 +52,6 @@ function x(t) {
     reducedRightPadding: !0,
     className: v.nitroPreviewUpsell,
     text: g.intl.format(g.t.Og8039, {}),
-    button: N
+    button: A
   })
 }

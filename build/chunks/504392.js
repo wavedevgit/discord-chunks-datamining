@@ -20,8 +20,8 @@ var r = n(255367),
   v = n(279604),
   g = n(332538),
   h = n(535396),
-  j = n(93841),
-  E = n(388032),
+  E = n(93841),
+  j = n(388032),
   C = n(782285);
 let N = [h.Us.LEVEL, h.Us.PERK];
 
@@ -51,7 +51,7 @@ function I(e) {
         icon: l.$Eu,
         "aria-label": ""
       }), (0, r.jsx)(c.Z.Title, {
-        children: E.intl.string(j.default.yv3DJC)
+        children: j.intl.string(E.default.yv3DJC)
       })]
     }), (0, r.jsxs)("div", {
       className: C.contentContainer,
@@ -67,11 +67,11 @@ function I(e) {
             switch (e) {
               case h.Us.LEVEL:
                 return {
-                  title: E.intl.string(j.default["TXY/b2"]), description: E.intl.string(j.default.aJv4PD)
+                  title: j.intl.string(E.default["TXY/b2"]), description: j.intl.string(E.default.aJv4PD)
                 };
               case h.Us.PERK:
                 return {
-                  title: E.intl.string(j.default.TV3Vm5), description: E.intl.string(j.default.STx9ho)
+                  title: j.intl.string(E.default.TV3Vm5), description: j.intl.string(E.default.STx9ho)
                 }
             }
           }(e), c = e === h.Us.LEVEL ? l.zJl : "div";

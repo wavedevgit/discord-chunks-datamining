@@ -1,6 +1,6 @@
 /** Chunk was on 72891 **/
 n.d(t, {
-  c: () => p
+  c: () => g
 });
 var i = n(255367);
 n(73800);
@@ -14,7 +14,7 @@ var a = n(481060),
   u = n(388032),
   f = n(309818);
 
-function g(e) {
+function _(e) {
   let {
     guild: t,
     banner: n
@@ -41,7 +41,7 @@ function g(e) {
   })
 }
 
-function p(e) {
+function g(e) {
   let {
     analyticsLocations: t,
     analyticsLocation: n,
@@ -63,7 +63,7 @@ function p(e) {
           targetLevelOrPlan: n
         })
       }(f, o),
-      image: (0, i.jsx)(g, {
+      image: (0, i.jsx)(_, {
         guild: a,
         banner: r
       })

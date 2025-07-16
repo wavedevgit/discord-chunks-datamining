@@ -1,6 +1,6 @@
 /** Chunk was on 12009 **/
 t.d(n, {
-  Z: () => O
+  Z: () => N
 });
 var l = t(255367),
   r = t(73800),
@@ -17,15 +17,14 @@ var l = t(255367),
   g = t(434404),
   p = t(159300),
   x = t(496675),
-  b = t(709586),
-  j = t(768581),
-  C = t(981631),
-  _ = t(388032),
-  v = t(18314),
-  I = t(63190),
-  Z = t(102219);
-let y = e => {
-  let n = r.useMemo(() => null == e ? null : j.ZP.getGuildHomeHeaderURL({
+  b = t(768581),
+  j = t(981631),
+  C = t(388032),
+  _ = t(18314),
+  v = t(63190),
+  I = t(102219);
+let Z = e => {
+  let n = r.useMemo(() => null == e ? null : b.ZP.getGuildHomeHeaderURL({
     id: e.id,
     homeHeader: e.homeHeader
   }), [e]);
@@ -36,15 +35,15 @@ let y = e => {
   }
 };
 
-function N(e) {
+function y(e) {
   let {
     guild: n
   } = e, t = () => {
-    g.Z.open(n.id, C.pNK.ONBOARDING, void 0, C.KsC.SERVER_GUIDE)
+    g.Z.open(n.id, j.pNK.ONBOARDING, void 0, j.KsC.SERVER_GUIDE)
   };
-  return n.features.has(C.oNc.BANNER) ? (0, l.jsxs)(o.zx, {
-    className: v.editButton,
-    innerClassName: v.editButtonInner,
+  return n.features.has(j.oNc.BANNER) ? (0, l.jsxs)(o.zx, {
+    className: _.editButton,
+    innerClassName: _.editButtonInner,
     type: "button",
     size: o.zx.Sizes.MEDIUM,
     color: o.zx.Colors.BRAND,
@@ -52,54 +51,55 @@ function N(e) {
     children: [(0, l.jsx)(d.FmF, {
       size: "xs",
       color: c.Z.unsafe_rawColors.WHITE_500.css
-    }), _.intl.string(_.t.b0y3DA)]
+    }), C.intl.string(C.t.b0y3DA)]
   }) : (0, l.jsxs)(d.gtL, {
     color: o.zx.Colors.GREEN,
-    className: v.editButton,
-    innerClassName: v.editButtonInner,
+    className: _.editButton,
+    innerClassName: _.editButtonInner,
     onClick: t,
-    children: [(0, l.jsx)(b.Z, {
+    children: [(0, l.jsx)(d.$Eu, {
+      size: "custom",
       height: 16,
       width: 16
-    }), _.intl.string(_.t["+7XY39"])]
+    }), C.intl.string(C.t["+7XY39"])]
   })
 }
-let O = r.memo(function(e) {
+let N = r.memo(function(e) {
   let {
     guild: n,
     titleClassName: r
   } = e, {
     homeHeaderImage: a,
     isHomeHeaderImageSet: c
-  } = y(n), o = (0, f.b$)(n.id), g = (0, s.e7)([x.Z], () => (0, p.b)(x.Z, n)), b = (0, u.ZP)();
+  } = Z(n), o = (0, f.b$)(n.id), g = (0, s.e7)([x.Z], () => (0, p.b)(x.Z, n)), b = (0, u.ZP)();
   return (0, l.jsxs)("div", {
-    className: v.header,
+    className: _.header,
     children: [(0, l.jsxs)("div", {
-      className: v.headerArtWrapper,
+      className: _.headerArtWrapper,
       children: [(0, l.jsx)("div", {
-        className: i()(v.headerArt, {
-          [v.headerArtPlaceholder]: !c
+        className: i()(_.headerArt, {
+          [_.headerArtPlaceholder]: !c
         }),
         style: {
-          backgroundImage: "url(".concat(c ? a : "dark" === b ? I : Z, ")")
+          backgroundImage: "url(".concat(c ? a : "dark" === b ? v : I, ")")
         }
-      }), o && (0, l.jsx)(N, {
+      }), o && (0, l.jsx)(y, {
         guild: n
       })]
     }), (0, l.jsx)("div", {
-      className: v.titleWrapper,
+      className: _.titleWrapper,
       children: (0, l.jsxs)("div", {
         className: r,
         children: [(0, l.jsx)(m.Z, {
-          className: v.headerIcon,
+          className: _.headerIcon,
           guild: n,
           size: m.Z.Sizes.XLARGE,
           active: !0
         }), (0, l.jsx)(d.y5t, {
           children: (0, l.jsxs)("div", {
-            className: v.headerName,
+            className: _.headerName,
             children: [(0, l.jsx)(d.X6q, {
-              className: v.headerName,
+              className: _.headerName,
               variant: "heading-xxl/bold",
               children: n.name
             }), (0, l.jsx)(h.Z, {
@@ -109,10 +109,10 @@ let O = r.memo(function(e) {
               tooltipColor: d.ua7.Colors.PRIMARY
             }), g && (0, l.jsx)("div", {
               "data-button-hoisted-classname-wrapper": !0,
-              className: v.inviteButton,
+              className: _.inviteButton,
               children: (0, l.jsx)(d.zxk, {
                 variant: "secondary",
-                text: _.intl.string(_.t.VINpSE),
+                text: C.intl.string(C.t.VINpSE),
                 onClick: () => (0, d.ZDy)(async () => {
                   let {
                     default: e
@@ -138,7 +138,7 @@ let O = r.memo(function(e) {
                       return e
                     }({}, t), a = a = {
                       guild: n,
-                      source: C.t4x.GUILD_HOME
+                      source: j.t4x.GUILD_HOME
                     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(a)) : (function(e, n) {
                       var t = Object.keys(e);
                       if (Object.getOwnPropertySymbols) {

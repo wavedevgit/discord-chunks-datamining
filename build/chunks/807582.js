@@ -1,88 +1,89 @@
 /** Chunk was on 85449 **/
 n.d(t, {
-  Z: () => p
+  Z: () => f
 }), n(953529);
-var i = n(255367);
+var r = n(255367);
 n(73800);
-var r = n(120356),
-  o = n.n(r),
+var i = n(120356),
+  o = n.n(i),
   a = n(481060),
   c = n(158638),
-  l = n(709586),
-  d = n(267642),
-  s = n(981631),
-  _ = n(388032),
-  f = n(721641);
-let p = e => {
-  let t, n, r, {
-      guildFeature: p,
-      guild: u,
-      className: m,
-      hideTooltip: b = !1,
-      tooltipPosition: g = "left",
-      onClick: v
+  l = n(267642),
+  d = n(981631),
+  s = n(388032),
+  _ = n(721641);
+let f = e => {
+  let t, n, i, {
+      guildFeature: f,
+      guild: p,
+      className: u,
+      hideTooltip: m = !1,
+      tooltipPosition: b = "left",
+      onClick: g
     } = e,
-    h = u.features.has(p),
-    y = (0, c.AR)(u.id, "GuildSettingsBoostPerks"),
-    j = (0, d._p)(p);
-  return !h && p === s.oNc.VANITY_URL && y ? null : (h ? (null != j && (r = _.intl.string(_.t.hUgjyM)), t = (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(l.Z, {
-      className: f.unlockedIcon
-    }), (0, i.jsx)(a.X6q, {
+    v = p.features.has(f),
+    h = (0, c.AR)(p.id, "GuildSettingsBoostPerks"),
+    y = (0, l._p)(f);
+  return !v && f === d.oNc.VANITY_URL && h ? null : (v ? (null != y && (i = s.intl.string(s.t.hUgjyM)), t = (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(a.$Eu, {
+      color: a.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
+      className: _.unlockedIcon
+    }), (0, r.jsx)(a.X6q, {
       variant: "eyebrow",
-      className: f.description,
-      children: _.intl.string(_.t["0O+87u"])
+      className: _.description,
+      children: s.intl.string(s.t["0O+87u"])
     })]
-  })) : (null != j && (r = _.intl.string(_.t.L2wYYm)), t = (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(l.Z, {
-      className: f.icon
-    }), (0, i.jsx)(a.X6q, {
+  })) : (null != y && (i = s.intl.string(s.t.L2wYYm)), t = (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(a.$Eu, {
+      color: "currentColor",
+      className: _.icon
+    }), (0, r.jsx)(a.X6q, {
       variant: "eyebrow",
-      className: f.description,
-      children: null != j && (0, d.e9)(j)
+      className: _.description,
+      children: null != y && (0, l.e9)(y)
     })]
-  })), n = b || null == r ? (0, i.jsx)("div", {
-    className: o()(f.availabilityIndicator, m),
+  })), n = m || null == i ? (0, r.jsx)("div", {
+    className: o()(_.availabilityIndicator, u),
     children: t
-  }) : (0, i.jsx)(a.ua7, {
-    position: g,
-    text: r,
+  }) : (0, r.jsx)(a.ua7, {
+    position: b,
+    text: i,
     children: e => {
-      var n, r;
-      return (0, i.jsx)("div", (n = function(e) {
+      var n, i;
+      return (0, r.jsx)("div", (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
-            i = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), i.forEach(function(t) {
-            var i;
-            i = n[t], t in e ? Object.defineProperty(e, t, {
-              value: i,
+          }))), r.forEach(function(t) {
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+              value: r,
               enumerable: !0,
               configurable: !0,
               writable: !0
-            }) : e[t] = i
+            }) : e[t] = r
           })
         }
         return e
-      }({}, e), r = r = {
-        className: o()(f.availabilityIndicator, m),
+      }({}, e), i = i = {
+        className: o()(_.availabilityIndicator, u),
         children: t
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var i = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, i)
+          var r = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, r)
         }
         return n
-      })(Object(r)).forEach(function(e) {
-        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
+      })(Object(i)).forEach(function(e) {
+        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
       }), n))
     }
-  }), null == v || h) ? n : (0, i.jsx)(a.P3F, {
-    onClick: v,
-    className: f.clickable,
+  }), null == g || v) ? n : (0, r.jsx)(a.P3F, {
+    onClick: g,
+    className: _.clickable,
     children: n
   })
 }

@@ -1,6 +1,6 @@
 /**
   Module ID: 13268
-  Original File Name: bf13d2d25928418a
+  Original File Name: e2c3b66a64084016
 **/
 .actionButton__5d9ef {
     margin-left: auto
@@ -1706,7 +1706,9 @@
 }
 
 .boosterBadge__8641f {
-    margin-right: 3px
+    height: 14px;
+    margin-right: 3px;
+    width: 14px
 }
 
 .wrapper__74bfa {
@@ -2039,4 +2041,4 @@
     }
 }
 
-/*# sourceMappingURL=bf13d2d25928418a.css.map*/
+/*# sourceMappingURL=e2c3b66a64084016.css.map*/

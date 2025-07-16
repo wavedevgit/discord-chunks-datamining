@@ -1,6 +1,6 @@
 /**
   Module ID: 46189
-  Original File Name: e779f9ef6842c742
+  Original File Name: 44824f58ae4737ef
 **/
 .editCard_a25a68 {
     background-color: var(--background-surface-high);
@@ -5607,6 +5607,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 }
 
 .roleStyleUpsell__981c8 {
+    align-items: center;
     background-color: var(--background-mod-subtle);
     border: 1px solid var(--border-faint);
     border-radius: var(--radius-sm);
@@ -5629,9 +5630,10 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 }
 
 .roleStyleUpsellButtonContents__981c8 {
+    align-items: center;
     display: flex;
     flex-direction: row;
-    gap: var(--space-8)
+    gap: var(--space-4)
 }
 
 .guildBoostBadge__981c8,.roleStyleUpsellButtonContents__981c8 {
@@ -12488,7 +12490,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 }
 
 .serverBoostTabItem_cbe0b4[aria-selected=true] .icon_cbe0b4 {
-    fill: var(--white-500)!important
+    color: var(--white-500)!important
 }
 
 .landingPageTabLink_cbe0b4 {
@@ -12508,4 +12510,4 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     text-overflow: ellipsis
 }
 
-/*# sourceMappingURL=e779f9ef6842c742.css.map*/
+/*# sourceMappingURL=44824f58ae4737ef.css.map*/

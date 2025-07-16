@@ -1,16 +1,15 @@
 /** Chunk was on 27063 **/
 n.d(t, {
-  P: () => o
+  P: () => d
 });
 var r = n(255367);
 n(73800);
 var i = n(755721),
   a = n(481060),
-  s = n(709586),
-  l = n(388032),
-  d = n(476128);
+  s = n(388032),
+  l = n(476128);
 
-function o(e) {
+function d(e) {
   let {
     onClick: t,
     className: n
@@ -18,12 +17,14 @@ function o(e) {
   return (0, r.jsxs)(a.gtL, {
     color: i.zx.Colors.GREEN,
     className: n,
-    innerClassName: d.upsellButton,
+    innerClassName: l.upsellButton,
     onClick: t,
-    children: [(0, r.jsx)(s.Z, {
+    children: [(0, r.jsx)(a.$Eu, {
+      color: "white",
+      size: "custom",
       height: 16,
       width: 16,
-      className: d.premiumUpsellBadge
-    }), " ", l.intl.string(l.t["+7XY39"])]
+      className: l.premiumUpsellBadge
+    }), s.intl.string(s.t["+7XY39"])]
   })
 }
