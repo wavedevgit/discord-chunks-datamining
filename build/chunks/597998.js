@@ -19,8 +19,8 @@ var r = n(255367),
   g = n(522651),
   _ = n(795318),
   b = n(194082),
-  h = n(925329),
-  v = n(340044),
+  v = n(925329),
+  h = n(340044),
   y = n(880395),
   O = n(314897),
   j = n(592125),
@@ -80,8 +80,8 @@ function k(e) {
     video: m,
     isStreaming: g,
     disabled: _,
-    isWatching: h,
-    iconClassName: v,
+    isWatching: v,
+    iconClassName: h,
     embeddedApplication: y,
     otherClientSessionType: O,
     voicePlatform: j,
@@ -100,7 +100,7 @@ function k(e) {
   if (p || _) return null;
   let M = [],
     U = (0, r.jsx)(F, {
-      iconClassName: v,
+      iconClassName: h,
       mute: n,
       localMute: i,
       serverMute: o,
@@ -113,7 +113,7 @@ function k(e) {
     children: (0, r.jsx)(s.Amn, {
       size: "md",
       color: "currentColor",
-      className: a()(A.icon, v),
+      className: a()(A.icon, h),
       colorClass: A.strikethrough
     })
   }, "video")) : M.push((0, r.jsx)(s.DY3, {
@@ -122,13 +122,13 @@ function k(e) {
     children: (0, r.jsx)(s.Odl, {
       size: "md",
       color: "currentColor",
-      className: a()(A.icon, v)
+      className: a()(A.icon, h)
     })
   }, "video"))), L && M.push((0, r.jsx)(s.DY3, {
     className: A.iconSpacing,
     text: Z.intl.string(Z.t.HFwRpq),
     children: (0, r.jsx)(s.P4T, {
-      className: a()(A.icon, v),
+      className: a()(A.icon, h),
       color: s.TVs.colors.STATUS_WARNING_BACKGROUND
     })
   }, "disconnected"));
@@ -139,25 +139,25 @@ function k(e) {
     children: (0, r.jsx)(V, {
       size: "md",
       color: "currentColor",
-      className: a()(A.icon, v)
+      className: a()(A.icon, h)
     })
   }, "activity")), O === N.YE.XBOX || j === T.wR.XBOX ? M.push((0, r.jsx)("div", {
     className: A.iconSpacing,
     children: (0, r.jsx)(C.Z, {
-      className: a()(A.icon, v)
+      className: a()(A.icon, h)
     })
   }, "xbox")) : (O === N.YE.PLAYSTATION || j === T.wR.PLAYSTATION) && M.push((0, r.jsx)("div", {
     className: A.iconSpacing,
     children: (0, r.jsx)(I.Z, {
-      className: a()(A.icon, v)
+      className: a()(A.icon, h)
     })
-  }, "playstation")), h && M.push((0, r.jsx)(s.DY3, {
+  }, "playstation")), v && M.push((0, r.jsx)(s.DY3, {
     className: A.iconSpacing,
     text: Z.intl.string(Z.t.JH1SJy),
     children: (0, r.jsx)(s.tEF, {
       size: "xs",
       color: "currentColor",
-      className: a()(A.icon, v)
+      className: a()(A.icon, h)
     })
   }, "watch")), g && M.push((0, r.jsx)("div", {
     className: a()(A.iconSpacing, A.liveIconSpacing),
@@ -175,7 +175,7 @@ function k(e) {
       className: A.iconGroup,
       children: (0, r.jsx)(R, {
         application: S,
-        iconClassName: v,
+        iconClassName: h,
         guildId: x,
         channelId: E,
         userId: D.id
@@ -192,7 +192,7 @@ let M = i.forwardRef(function(e, t) {
       disabled: p = !1,
       isOverlay: b = !1
     } = e,
-    h = function(e, t) {
+    v = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -229,7 +229,7 @@ let M = i.forwardRef(function(e, t) {
     ringing: q,
     user: K,
     channelId: Q
-  } = h, {
+  } = v, {
     parentAnalyticsLocation: $
   } = (0, m.ZP)(), ee = (0, u.bp)(), et = null != Q ? j.Z.getChannel(Q) : null, en = (0, o.e7)([O.default, S.Z], () => S.Z.isInChannel(Q, O.default.getId())), [er, ei] = i.useState(!1);
   return i.useEffect(() => {
@@ -315,7 +315,7 @@ let M = i.forwardRef(function(e, t) {
               source: b ? w.jXE.OVERLAY : w.Sbl.VOICE_PANEL
             }
           };
-        return !U || b ? (0, r.jsx)(v.Z, (e = D({}, i), t = t = {
+        return !U || b ? (0, r.jsx)(h.Z, (e = D({}, i), t = t = {
           children: n
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
           var n = Object.keys(e);
@@ -329,7 +329,7 @@ let M = i.forwardRef(function(e, t) {
         }), e)) : null
       }(), (0, r.jsx)(k, D({
         disabled: p
-      }, h)), !U && en ? (0, r.jsx)(s.DY3, {
+      }, v)), !U && en ? (0, r.jsx)(s.DY3, {
         text: Z.intl.string(Z.t["+1H47u"]),
         className: a()(A.optionsButtonContainer, {
           [A.optionsContainerActive]: er
@@ -385,10 +385,10 @@ function R(e) {
     className: A.iconSpacing,
     children: (0, r.jsx)("div", {
       ref: m,
-      children: (0, r.jsx)(h.Z, {
+      children: (0, r.jsx)(v.Z, {
         className: a()(A.icon, n),
         game: t,
-        size: h.Z.Sizes.XSMALL,
+        size: v.Z.Sizes.XSMALL,
         onMouseEnter: () => {
           p.ZP.trackWithMetadata(w.rMx.VOICE_CHANNEL_GAME_ACTIVITY_INDICATOR_HOVERED, {
             channel_id: o,

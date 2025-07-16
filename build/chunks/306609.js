@@ -17,8 +17,8 @@ var r = n(255367),
   g = n(906732),
   _ = n(659580),
   b = n(795318),
-  h = n(53691),
-  v = n(457165),
+  v = n(53691),
+  h = n(457165),
   y = n(594174),
   O = n(626135),
   j = n(111361),
@@ -196,11 +196,11 @@ function Y(e) {
               y: el.y,
               opacity: el.y.to(e => +(50 !== e))
             },
-            children: (0, r.jsx)(h.p, {
+            children: (0, r.jsx)(v.p, {
               showUpsell: !0,
               text: F.intl.format(F.t["XMDm8/"], {
                 nitroTierName: (0, S.Px)(M.p9.TIER_2),
-                onClick: () => (0, v.i)()
+                onClick: () => (0, h.i)()
               }),
               button: F.intl.string(F.t.cRCCJy),
               buttonAnalyticsObject: {

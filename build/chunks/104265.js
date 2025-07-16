@@ -26,9 +26,9 @@ function _(e) {
     onSelect: _,
     hideMemberCount: C,
     canBeNew: j
-  } = e, b = (0, d.wj)((0, h.ZP)()), [v, y] = r.useState(!1), O = v && !C, I = r.useRef(null), {
+  } = e, b = (0, d.wj)((0, h.ZP)()), [v, y] = r.useState(!1), O = v && !C, Z = r.useRef(null), {
     reducedMotion: N
-  } = r.useContext(u.Sfi), Z = (0, s.e7)([p.ZP], () => {
+  } = r.useContext(u.Sfi), I = (0, s.e7)([p.ZP], () => {
     var e, n, l, r;
     return (null == (e = t.emoji) ? void 0 : e.id) != null && null != (r = null == (n = p.ZP.getCustomEmojiById(null == (l = t.emoji) ? void 0 : l.id)) ? void 0 : n.animated) && r
   }), w = (0, f.Z)(n, 1e3), P = null == w || null == t.roleIds ? 0 : Math.max(...t.roleIds.map(e => w[e])), E = j && !i && t.isUnseen, S = (0, u.q_F)({
@@ -66,10 +66,10 @@ function _(e) {
     }
   }, "animate-always"), [R, D] = r.useState(!1);
   r.useEffect(() => {
-    if (O) return I.current = setTimeout(() => {
-      y(!1), I.current = null
+    if (O) return Z.current = setTimeout(() => {
+      y(!1), Z.current = null
     }, 3e3), () => {
-      null != I.current && clearTimeout(I.current)
+      null != Z.current && clearTimeout(Z.current)
     }
   }, [O]);
   let L = a()(x.optionButtonWrapper, {
@@ -90,7 +90,7 @@ function _(e) {
       onMouseDown: () => D(!0),
       onMouseUp: () => D(!1),
       children: [null != t.emoji && (null != t.emoji.id || null != t.emoji.name) ? (0, l.jsx)(m.Z, {
-        animated: t.emoji.animated || Z,
+        animated: t.emoji.animated || I,
         className: x.buttonEmoji,
         emojiId: t.emoji.id,
         emojiName: t.emoji.name

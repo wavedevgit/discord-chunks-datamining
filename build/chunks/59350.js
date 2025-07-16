@@ -24,9 +24,9 @@ var l = t(255367),
   v = t(402235),
   y = t(703656),
   O = t(687158),
-  I = t(287008),
+  Z = t(287008),
   N = t(484459),
-  Z = t(271383),
+  I = t(271383),
   w = t(485386),
   P = t(430824),
   E = t(306680),
@@ -43,8 +43,8 @@ var l = t(255367),
   U = t(521941),
   G = t(614328),
   W = t(104265),
-  z = t(588632),
-  F = t(290511),
+  F = t(588632),
+  z = t(290511),
   q = t(981631),
   X = t(176505),
   V = t(490897),
@@ -83,7 +83,7 @@ function et(e) {
     avatarSrc: u,
     eventHandlers: h,
     isAvatarAnimating: p
-  } = (0, I.Z)({
+  } = (0, Z.Z)({
     user: o,
     guildId: i.id,
     size: 120
@@ -93,7 +93,7 @@ function et(e) {
     user: o,
     size: (0, x.y9)(ee),
     onlyAnimateOnHover: !p
-  }), C = (0, d.e7)([Z.ZP], () => Z.ZP.getSelfMember(i.id)), j = (0, d.Wu)([Z.ZP], () => Z.ZP.getMemberRoleWithPendingUpdates(i.id, o.id)), y = (0, d.e7)([w.Z], () => w.Z.getRoles(i.id)), P = (0, v.ZP)(i.id, o.id), E = s()(j).filter(e => y.hasOwnProperty(e)).map(e => y[e]).orderBy("position", "desc").value(), S = (0, O.ZP)(o.id, i.id);
+  }), C = (0, d.e7)([I.ZP], () => I.ZP.getSelfMember(i.id)), j = (0, d.Wu)([I.ZP], () => I.ZP.getMemberRoleWithPendingUpdates(i.id, o.id)), y = (0, d.e7)([w.Z], () => w.Z.getRoles(i.id)), P = (0, v.ZP)(i.id, o.id), E = s()(j).filter(e => y.hasOwnProperty(e)).map(e => y[e]).orderBy("position", "desc").value(), S = (0, O.ZP)(o.id, i.id);
   (0, f.ZP)(() => {
     (0, N.Z)(o.id, o.getAvatarURL(i.id, (0, m.pxk)(ee)), {
       guildId: i.id
@@ -210,7 +210,7 @@ function el(e) {
         }),
         children: "*"
       }) : null]
-    }), (0, l.jsx)(z.Z, {
+    }), (0, l.jsx)(F.Z, {
       options: b,
       value: v,
       onChange: e => {
@@ -312,7 +312,7 @@ function ei(e) {
     newOnboardingPrompts: b,
     onboardingPromptsWithNewAnswers: v,
     newAnswersCount: O,
-    onboardingPrompts: I
+    onboardingPrompts: Z
   } = (0, U.Z)(n);
   r.useEffect(() => {
     (null == o ? void 0 : o.id) != null && !j.Z.isFullServerPreview(o.id) && (D.Z.shouldFetchPrompts(o.id) || x) && (0, R.eM)(o.id)
@@ -324,12 +324,12 @@ function ei(e) {
   let N = r.useCallback(e => {
     if (null == o) return null;
     switch (e.type) {
-      case F.FN.MULTIPLE_CHOICE:
+      case z.FN.MULTIPLE_CHOICE:
         return (0, l.jsx)(er, {
           prompt: e,
           guild: o
         }, e.id);
-      case F.FN.DROPDOWN:
+      case z.FN.DROPDOWN:
         return (0, l.jsx)(el, {
           prompt: e,
           guild: o
@@ -380,20 +380,20 @@ function ei(e) {
         }), b.map(N), v.map(N), (0, l.jsx)("div", {
           className: Q.sectionSeparator
         })]
-      }), I.length > 0 && (0, l.jsxs)(l.Fragment, {
+      }), Z.length > 0 && (0, l.jsxs)(l.Fragment, {
         children: [(0, l.jsxs)("div", {
           children: [(0, l.jsx)(m.X6q, {
             variant: "heading-md/semibold",
             color: "header-primary",
             children: J.intl.format(J.t["8IV8Ky"], {
-              count: I.length
+              count: Z.length
             })
           }), (0, l.jsx)(m.Text, {
             variant: "text-xs/normal",
             color: "text-muted",
             children: J.intl.string(J.t.Ecz7T0)
           })]
-        }), I.map(N)]
+        }), Z.map(N)]
       })]
     }), c && (0, l.jsx)(et, {
       guild: o,

@@ -20,7 +20,7 @@ var i = n(442837),
   _ = n(981631),
   b = n(66569);
 
-function h(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,7 +39,7 @@ function h(e) {
   return e
 }
 
-function v(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -118,7 +118,7 @@ let O = o.Z.Types,
           else return c.Z.getApplicationByName(t.name);
         return null
       });
-    return (null == t ? void 0 : t.type) === _.IIU.HANG_STATUS ? null : (0, r.jsx)(o.Z, v(h({}, O), {
+    return (null == t ? void 0 : t.type) === _.IIU.HANG_STATUS ? null : (0, r.jsx)(o.Z, h(v({}, O), {
       activity: t,
       user: n,
       application: C,
@@ -126,7 +126,7 @@ let O = o.Z.Types,
       activityGuild: null != x ? x : I,
       showChannelDetails: b,
       channel: b ? j : void 0,
-      renderActions: s ? () => (0, r.jsx)(y, v(h({}, O), {
+      renderActions: s ? () => (0, r.jsx)(y, h(v({}, O), {
         applicationStream: S,
         activity: t,
         user: n

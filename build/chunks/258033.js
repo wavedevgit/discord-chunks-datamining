@@ -26,10 +26,11 @@ let E = e => {
       blurAnimationData: a,
       scaleAnimationData: c,
       yAxisAnimationData: d,
-      animateXAxisWiggle: u = !1,
-      isMotionReduced: m = !1,
-      children: p
-    } = e, g = (0, l.q_F)(null != d ? {
+      parallaxAnimationData: u,
+      animateXAxisWiggle: m = !1,
+      isMotionReduced: p = !1,
+      children: g
+    } = e, h = (0, l.q_F)(null != d ? {
       from: {
         y: 0
       },
@@ -42,58 +43,65 @@ let E = e => {
       loop: !0
     } : {
       y: 0
-    }), h = (null == d ? void 0 : d.path) === "sine" ? Math.sin : Math.cos, [f, b] = (0, r.useState)(1), x = (0, l.q_F)(null != c ? {
+    }), f = (null == d ? void 0 : d.path) === "sine" ? Math.sin : Math.cos, [b, x] = (0, r.useState)(1), _ = (0, l.q_F)(null != c ? {
       from: {
-        scale: f > 0 ? c.startScale : c.endScale
+        scale: b > 0 ? c.startScale : c.endScale
       },
       to: {
-        scale: f > 0 ? c.endScale : c.startScale
+        scale: b > 0 ? c.endScale : c.startScale
       },
       config: {
         duration: c.duration
       },
-      onRest: () => b(e => -1 * e)
+      onRest: () => x(e => -1 * e)
     } : {
       scale: 1
-    }), [_, j] = (0, r.useState)(1), E = (0, l.q_F)(null != a ? {
+    }), [j, E] = (0, r.useState)(1), O = (0, l.q_F)(null != a ? {
       from: {
-        blur: _ > 0 ? a.startBlurRadius : a.endBlurRadius
+        blur: j > 0 ? a.startBlurRadius : a.endBlurRadius
       },
       to: {
-        blur: _ > 0 ? a.endBlurRadius : a.startBlurRadius
+        blur: j > 0 ? a.endBlurRadius : a.startBlurRadius
       },
       config: {
         duration: a.duration
       },
-      onRest: () => j(e => -1 * e)
+      onRest: () => E(e => -1 * e)
     } : {
       blur: 0
-    }), [O, C] = (0, r.useState)(0), v = (0, l.q_F)({
-      xOffset: O,
+    }), [C, v] = (0, r.useState)(0), S = (0, l.q_F)({
+      xOffset: C,
       config: {
         tension: 500,
         friction: 20
       }
     });
     return ((0, o.Z)(() => {
-      C((Math.random() - .5) * 4)
-    }, 250), m) ? p : (0, i.jsx)(s.animated.div, {
+      v((Math.random() - .5) * 4)
+    }, 250), p) ? g : (0, i.jsx)(s.animated.div, {
       style: {
-        transform: null == (t = g.y) ? void 0 : t.to(e => {
+        transform: null == (t = h.y) ? void 0 : t.to(e => {
           if (null == d) return "translateY(0px)";
-          let t = h(e * Math.PI * 2) * d.range;
-          return "translateY(".concat(t, "px)")
+          let t = f(e * Math.PI * 2) * d.range,
+            n = 0;
+          if (null != u) {
+            let e = u.range * (1 - u.containerVisibilityPercentage);
+            n = "up" === u.pathDirection ? -e : e
+          }
+          return "translateY(".concat(t + n, "px)")
         }),
-        translateX: u ? v.xOffset.to(e => "".concat(e, "px")) : 0,
-        scale: x.scale,
-        filter: null == (n = E.blur) ? void 0 : n.to(e => "blur(".concat(e, "px)"))
+        translateX: m ? S.xOffset.to(e => "".concat(e, "px")) : 0,
+        scale: _.scale,
+        filter: null == (n = O.blur) ? void 0 : n.to(e => "blur(".concat(e, "px)")),
+        opacity: null != u && u.changeOpacity ? u.containerVisibilityPercentage : 1
       },
-      children: p
+      children: g
     })
   },
   O = e => {
     let {
-      isMotionReduced: t
+      isMotionReduced: t,
+      containerVisibilityPercentage: n
     } = e;
     return (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)("div", {
@@ -114,6 +122,12 @@ let E = e => {
             duration: 3e3,
             path: "cosine"
           },
+          parallaxAnimationData: {
+            pathDirection: "up",
+            range: 125,
+            containerVisibilityPercentage: n,
+            changeOpacity: !0
+          },
           animateXAxisWiggle: !0,
           isMotionReduced: t,
           children: (0, i.jsx)("img", {
@@ -129,6 +143,12 @@ let E = e => {
             duration: 3e3,
             path: "sine"
           },
+          parallaxAnimationData: {
+            pathDirection: "down",
+            range: 50,
+            containerVisibilityPercentage: n,
+            changeOpacity: !0
+          },
           animateXAxisWiggle: !0,
           isMotionReduced: t,
           children: (0, i.jsx)("img", {
@@ -143,6 +163,12 @@ let E = e => {
             range: 15,
             duration: 3e3,
             path: "sine"
+          },
+          parallaxAnimationData: {
+            pathDirection: "down",
+            range: 120,
+            containerVisibilityPercentage: n,
+            changeOpacity: !0
           },
           animateXAxisWiggle: !0,
           isMotionReduced: t,
@@ -169,6 +195,12 @@ let E = e => {
             duration: 3e3,
             path: "sine"
           },
+          parallaxAnimationData: {
+            pathDirection: "up",
+            range: 200,
+            containerVisibilityPercentage: n,
+            changeOpacity: !0
+          },
           animateXAxisWiggle: !0,
           isMotionReduced: t,
           children: (0, i.jsx)("img", {
@@ -194,6 +226,12 @@ let E = e => {
             duration: 2e3,
             path: "cosine"
           },
+          parallaxAnimationData: {
+            pathDirection: "up",
+            range: 50,
+            containerVisibilityPercentage: n,
+            changeOpacity: !0
+          },
           animateXAxisWiggle: !0,
           isMotionReduced: t,
           children: (0, i.jsx)("img", {
@@ -207,7 +245,8 @@ let E = e => {
   C = e => {
     let {
       supportHEVCAlpha: t,
-      isMotionReduced: n
+      isMotionReduced: n,
+      containerVisibilityPercentage: r
     } = e;
     return n ? (0, i.jsx)("div", {
       className: m.flyingWumpusContainer,
@@ -229,6 +268,12 @@ let E = e => {
           duration: 2e3,
           path: "sine"
         },
+        parallaxAnimationData: {
+          pathDirection: "up",
+          range: 200,
+          containerVisibilityPercentage: r,
+          changeOpacity: !1
+        },
         animateXAxisWiggle: !0,
         children: t ? (0, i.jsx)("img", {
           src: x.Z,
@@ -247,15 +292,18 @@ let E = e => {
       })
     })
   },
-  v = () => {
-    let e = (0, a.e7)([c.Z], () => c.Z.useReducedMotion),
-      t = (0, u.rO)();
+  v = e => {
+    let {
+      containerVisibilityPercentage: t
+    } = e, n = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), r = (0, u.rO)();
     return (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(C, {
-        supportHEVCAlpha: t,
-        isMotionReduced: e
+        supportHEVCAlpha: r,
+        isMotionReduced: n,
+        containerVisibilityPercentage: t
       }), (0, i.jsx)(O, {
-        isMotionReduced: e
+        isMotionReduced: n,
+        containerVisibilityPercentage: t
       })]
     })
   }

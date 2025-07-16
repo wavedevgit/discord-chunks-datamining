@@ -1,6 +1,6 @@
 /**
   Module ID: 58121
-  Original File Name: 23bb0a7ade68645a
+  Original File Name: 7f82b44c20566a2f
 **/
 .coverContainer__2f300 {
     align-items: center;
@@ -559,12 +559,12 @@
     margin-bottom: 8px
 }
 
-.tip_bc0d35 {
-    margin-top: 4px
+.description_bc0d35 {
+    margin-bottom: 16px
 }
 
-.checkItOut_bc0d35 {
-    margin-top: 16px
+.tip_bc0d35 {
+    margin-top: 4px
 }
 
 .categoryRow_e4503a {
@@ -688,7 +688,7 @@
     margin: -1px 16px 0
 }
 
-.viewChannelButton_e4503a {
+.viewChannelButtonWrapper_e4503a {
     display: none;
     margin-right: 16px
 }
@@ -697,7 +697,7 @@
     margin-top: 4px
 }
 
-.channelRow_e4503a:hover .viewChannelButton_e4503a {
+.channelRow_e4503a:hover .viewChannelButtonWrapper_e4503a {
     display: block
 }
 
@@ -720,6 +720,7 @@
 
 .header__41ed7 {
     display: flex;
+    gap: 16px;
     margin: 0 32px 16px 16px;
     margin-bottom: var(--space-md);
     margin-left: var(--space-8);
@@ -730,20 +731,6 @@
     border-radius: 8px;
     flex-grow: 1;
     flex-shrink: 0
-}
-
-.createButton__41ed7 {
-    border-radius: 8px;
-    margin-left: 16px
-}
-
-.createButtonInner__41ed7 {
-    align-items: center;
-    display: flex
-}
-
-.createIcon__41ed7 {
-    margin-right: 8px
 }
 
 .browser__41ed7 {
@@ -1179,4 +1166,4 @@
     width: 16px
 }
 
-/*# sourceMappingURL=23bb0a7ade68645a.css.map*/
+/*# sourceMappingURL=7f82b44c20566a2f.css.map*/

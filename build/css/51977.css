@@ -1,6 +1,6 @@
 /**
   Module ID: 51977
-  Original File Name: b968ffb6487e0093
+  Original File Name: f7aaaec37fca3ff0
 **/
 .debugMode_fa952e {
     background-color: rgba(255,0,0,.25);
@@ -8957,23 +8957,12 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .chatHeaderBarText_dc83f5 {
-    flex: 1
+    flex: 1;
+    margin-right: 16px
 }
 
 .narrow_dc83f5 .nudgeBarText_dc83f5 {
     max-width: 325px
-}
-
-.chatHeaderBarButton_dc83f5 {
-    flex: 0 0 auto;
-    margin-left: 16px;
-    padding: 2px 8px
-}
-
-.chatHeaderBarButtonInner_dc83f5 {
-    align-items: center;
-    display: flex;
-    gap: 4px
 }
 
 .nudgeAction_dc83f5:hover {
@@ -13562,4 +13551,4 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     position: relative
 }
 
-/*# sourceMappingURL=b968ffb6487e0093.css.map*/
+/*# sourceMappingURL=f7aaaec37fca3ff0.css.map*/

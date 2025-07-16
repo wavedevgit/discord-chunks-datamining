@@ -24,8 +24,8 @@ function c(e) {
   } = e, {
     label: _,
     tooltip: b,
-    loading: h,
-    disabled: v,
+    loading: v,
+    disabled: h,
     onClick: y
   } = (0, o.Ih)(t, n, c), O = () => {
     null == g || g(), y()
@@ -47,8 +47,8 @@ function c(e) {
         onClick: O,
         onMouseEnter: t,
         onMouseLeave: n,
-        disabled: v,
-        submitting: h,
+        disabled: h,
+        submitting: v,
         children: [(0, r.jsx)(a.Z, {
           width: 16,
           height: 16
