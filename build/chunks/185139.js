@@ -28,53 +28,54 @@ function O(e) {
     steps: t,
     currentStep: n,
     body: o,
-    paymentError: O,
-    header: v,
-    footer: I,
-    isGift: T = !1,
-    giftMessage: S = E.intl.string(E.t.DrgnS0),
-    hideBreadcrumbs: A = !1,
-    isLoading: N = !1,
-    purchaseError: C,
-    purchaseErrorBlockRef: R,
-    planError: P,
-    onScroll: w,
-    scrollerClassName: D,
-    hasCurrencies: L = !1
-  } = e, x = null;
-  null != O && null == (0, p.ly)(O) ? x = O : null != C ? x = C : null != P && (x = P);
-  let k = null != x ? x.message : "";
-  null != x && x instanceof d.HF && (x.code === f.SM.CARD_DECLINED && L && (k += " ".concat(E.intl.string(E.t.iWvwQU))), x.code === f.SM.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED && (k = E.intl.string(E.t.ypuSd3)), x.code === g.evJ.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE && (k = E.intl.string(E.t.mXMmWF)));
+    overrideKey: O,
+    paymentError: v,
+    header: I,
+    footer: T,
+    isGift: S = !1,
+    giftMessage: A = E.intl.string(E.t.DrgnS0),
+    hideBreadcrumbs: N = !1,
+    isLoading: C = !1,
+    purchaseError: R,
+    purchaseErrorBlockRef: P,
+    planError: w,
+    onScroll: D,
+    scrollerClassName: L,
+    hasCurrencies: x = !1
+  } = e, k = null;
+  null != v && null == (0, p.ly)(v) ? k = v : null != R ? k = R : null != w && (k = w);
+  let M = null != k ? k.message : "";
+  null != k && k instanceof d.HF && (k.code === f.SM.CARD_DECLINED && x && (M += " ".concat(E.intl.string(E.t.iWvwQU))), k.code === f.SM.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED && (M = E.intl.string(E.t.ypuSd3)), k.code === g.evJ.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE && (M = E.intl.string(E.t.mXMmWF)));
   let {
-    stripe: M
+    stripe: j
   } = (0, _.JL)();
-  N = N || null == M;
-  let j = i.useRef(new l.V7);
+  C = C || null == j;
+  let U = i.useRef(new l.V7);
   i.useEffect(() => {
-    let e = j.current;
-    return null != M || e.isStarted() ? null != M && e.stop() : e.start(10 * m.Z.Millis.SECOND, () => {
+    let e = U.current;
+    return null != j || e.isStarted() ? null != j && e.stop() : e.start(10 * m.Z.Millis.SECOND, () => {
       let e = Error("Stripe took too long to load");
       (0, h.q2)(e)
     }), () => {
       e.stop()
     }
-  }, [M]);
-  let U = t.includes(p.h8.PAYMENT_TYPE) ? p.h8.PAYMENT_TYPE : p.h8.ADD_PAYMENT_STEPS;
+  }, [j]);
+  let G = t.includes(p.h8.PAYMENT_TYPE) ? p.h8.PAYMENT_TYPE : p.h8.ADD_PAYMENT_STEPS;
   return (0, r.jsxs)(a.Elements, {
     options: g.OBo,
-    stripe: M,
-    children: [v, (0, r.jsxs)("div", {
+    stripe: j,
+    children: [I, (0, r.jsxs)("div", {
       className: s()("paymentModalContent", b.content),
-      children: [T && n !== p.h8.CONFIRM ? (0, r.jsx)(u.Z, {
+      children: [S && n !== p.h8.CONFIRM ? (0, r.jsx)(u.Z, {
         className: b.paymentNote,
         iconSize: u.Z.Sizes.SMALL,
         icon: c.OgN,
-        color: null == S ? u.Z.Colors.PRIMARY : u.Z.Colors.SECONDARY,
-        children: S
-      }) : null, A ? null : (0, r.jsx)("div", {
+        color: null == A ? u.Z.Colors.PRIMARY : u.Z.Colors.SECONDARY,
+        children: A
+      }) : null, N ? null : (0, r.jsx)("div", {
         className: b.breadcrumbsWrapper,
         children: (0, r.jsx)(c.OoM, {
-          activeId: p.Ck.has(n) ? U : n,
+          activeId: p.Ck.has(n) ? G : n,
           breadcrumbs: t.filter(e => !p.Ck.has(e) && !y.has(e)).map(e => ({
             id: e,
             label: (0, p.DJ)(e)
@@ -82,16 +83,17 @@ function O(e) {
         })
       }), (0, r.jsxs)("div", {
         className: b.bodyWrapper,
-        children: [null == x ? null : (0, r.jsx)("div", {
+        children: [null == k ? null : (0, r.jsx)("div", {
           className: b.errorBlockWrapper,
           children: (0, r.jsx)(c.kzN, {
-            ref: R,
-            children: k
+            ref: P,
+            children: M
           })
-        }), N ? (0, r.jsx)(c.$jN, {
+        }), C ? (0, r.jsx)(c.$jN, {
           className: b.loadingBlock
         }) : (0, r.jsx)(c.qBt, {
           className: b.sequencer,
+          overrideKey: O,
           staticClassName: b.sequencerStatic,
           animatedNodeClassName: b.sequencerAnimatedNode,
           fillParent: !0,
@@ -99,12 +101,12 @@ function O(e) {
           steps: t,
           sideMargin: 20,
           children: (0, r.jsx)(c.h21, {
-            onScroll: w,
-            className: s()(b.scroller, D),
+            onScroll: D,
+            className: s()(b.scroller, L),
             children: o
           })
         })]
       })]
-    }), I]
+    }), T]
   })
 }
