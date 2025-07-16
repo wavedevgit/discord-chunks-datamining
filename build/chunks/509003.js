@@ -1,10 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  I8: () => _,
-  ON: () => f,
-  yA: () => d
-});
+  I8: () => p,
+  ON: () => _,
+  sD: () => h,
+  x3: () => c,
+  yA: () => f
+}), n(49124);
 var r = n(392711),
   i = n.n(r),
   a = n(817788),
@@ -33,6 +35,14 @@ function l(e) {
 }
 
 function c(e) {
+  if (e.distributor === o.GQo.ROBLOX && null != e.sku) {
+    var t, n;
+    return "".concat(e.sku, ":").concat(null != (n = null == (t = e.gameMetadata) ? void 0 : t[a.wF.PLACE_ID]) ? n : "")
+  }
+  return null
+}
+
+function u(e) {
   var t, n, r;
   return e.distributor !== o.GQo.ROBLOX || null == e.gameMetadata || null == e.sku ? null : {
     placeId: null != (t = e.gameMetadata.placeId) ? t : null,
@@ -42,17 +52,17 @@ function c(e) {
   }
 }
 
-function u(e, t) {
-  return e.distributor === o.GQo.ROBLOX && d(c(e), t)
-}
-
 function d(e, t) {
-  return null == e && null != t || null != e && null == t || null != e && null != t && !i().isEqual(e, t)
+  return e.distributor === o.GQo.ROBLOX && f(u(e), t)
 }
 
 function f(e, t) {
+  return null == e && null != t || null != e && null == t || null != e && null != t && !i().isEqual(e, t)
+}
+
+function _(e, t) {
   let n = l({}, e);
-  if (u(e, t)) {
+  if (d(e, t)) {
     if (null == t) n.gameMetadata = void 0, n.sku = void 0;
     else {
       var r;
@@ -65,11 +75,17 @@ function f(e, t) {
   return e
 }
 
-function _(e) {
+function p(e) {
   return null == e[a.SQ.UNIVERSE_ID] || null == e[a.SQ.PLACE_ID] || null == e[a.SQ.JOB_ID] || null == e[a.SQ.USER_ID] ? null : {
     universeId: e[a.SQ.UNIVERSE_ID],
     placeId: e[a.SQ.PLACE_ID],
     jobId: e[a.SQ.JOB_ID],
     robloxUserId: e[a.SQ.USER_ID]
   }
+}
+
+function h(e) {
+  return e.distributor === o.GQo.ROBLOX && null != e.gameMetadata && null != e.gameMetadata[a.wF.PLACE_ID] ? JSON.stringify({
+    placeId: e.gameMetadata[a.wF.PLACE_ID]
+  }) : null
 }

@@ -290,7 +290,9 @@ class M extends s.Z {
       gameName: s,
       gameId: l,
       exe: c,
-      distributor: u
+      distributor: u,
+      sku: d,
+      gameMetadata: _
     } = (0, f.G8)(t);
     return {
       channel_id: this.channelId,
@@ -308,6 +310,8 @@ class M extends s.Z {
       share_application_id: l,
       share_application_executable: c,
       share_application_distributor: u,
+      share_application_distributor_game_id: d,
+      share_application_game_metadata: _,
       video_layout: this._videoStreamStats.getLayout(),
       client_event_source: r,
       voice_backend_version: this.voiceVersion,
