@@ -36,8 +36,8 @@ var R = n(587061),
   D = n(22205),
   L = n(746106),
   x = n(892071),
-  k = n(358085),
-  M = n(62883),
+  M = n(358085),
+  k = n(62883),
   j = n(998502),
   U = n(473159),
   G = n(928518),
@@ -89,14 +89,14 @@ function K(e) {
     withTitleBar: t,
     isFullScreen: n
   } = e;
-  return t && k.isPlatformEmbedded && !n
+  return t && M.isPlatformEmbedded && !n
 }
 class z extends(r = a.Component) {
   componentDidMount() {
     let {
       guestWindow: e
     } = this.props, t = e.document;
-    null == t.querySelector("title") && null != t.head && t.head.appendChild(t.createElement("title")), this.updateTitle(), this.updateClientTheme(), (0, U.O)(e), e.addEventListener("blur", this.handleBlur), k.isPlatformEmbedded ? t.addEventListener("contextmenu", M.contextMenuCallbackNative, !1) : t.addEventListener("contextmenu", M.contextMenuCallbackWeb, !1), e.addEventListener("beforeunload", this.beforeUnload), this.registerPopoutGlobalKeybinds()
+    null == t.querySelector("title") && null != t.head && t.head.appendChild(t.createElement("title")), this.updateTitle(), this.updateClientTheme(), (0, U.O)(e), e.addEventListener("blur", this.handleBlur), M.isPlatformEmbedded ? t.addEventListener("contextmenu", k.contextMenuCallbackNative, !1) : t.addEventListener("contextmenu", k.contextMenuCallbackWeb, !1), e.addEventListener("beforeunload", this.beforeUnload), this.registerPopoutGlobalKeybinds()
   }
   componentDidUpdate(e) {
     let {
@@ -109,7 +109,7 @@ class z extends(r = a.Component) {
     let {
       guestWindow: e
     } = this.props, t = e.document;
-    this.unregisterPopoutGlobalKeybinds(), e.removeEventListener("blur", this.handleBlur), k.isPlatformEmbedded ? t.removeEventListener("contextmenu", M.contextMenuCallbackNative) : t.removeEventListener("contextmenu", M.contextMenuCallbackWeb), (0, f.j)(() => p.s9z.setState(e => W(H({}, e), {
+    this.unregisterPopoutGlobalKeybinds(), e.removeEventListener("blur", this.handleBlur), M.isPlatformEmbedded ? t.removeEventListener("contextmenu", k.contextMenuCallbackNative) : t.removeEventListener("contextmenu", k.contextMenuCallbackWeb), (0, f.j)(() => p.s9z.setState(e => W(H({}, e), {
       [p.u1M]: []
     }))), e.removeEventListener("beforeunload", this.beforeUnload)
   }
@@ -158,7 +158,7 @@ class z extends(r = a.Component) {
       contentClassName: f,
       hideModals: _ = !1
     } = this.props;
-    (0, k.getPlatform)();
+    (0, M.getPlatform)();
     let m = K({
         withTitleBar: o,
         isFullScreen: a
@@ -204,7 +204,7 @@ class z extends(r = a.Component) {
       let {
         onBeforeUnload: t
       } = this.props, n = () => {
-        G.Z.unmountWindow(this.props.windowKey), k.isPlatformEmbedded && j.ZP.close(this.props.windowKey)
+        G.Z.unmountWindow(this.props.windowKey), M.isPlatformEmbedded && j.ZP.close(this.props.windowKey)
       };
       null != t ? t({
         e,

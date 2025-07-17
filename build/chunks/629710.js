@@ -9,7 +9,7 @@ n.d(t, {
   SI: () => C,
   UJ: () => N,
   X6: () => O,
-  aQ: () => M,
+  aQ: () => k,
   g4: () => A,
   hi: () => w,
   kC: () => y,
@@ -49,7 +49,7 @@ let h = -1,
   },
   b = e => {
     let t = m();
-    return null == e ? p.qn.NONE : R(t.map(t => M(t.getUserSettingsWithDefaults()[e]) ? t.harmType : null).filter(d.lm))
+    return null == e ? p.qn.NONE : R(t.map(t => k(t.getUserSettingsWithDefaults()[e]) ? t.harmType : null).filter(d.lm))
   };
 
 function y(e) {
@@ -211,7 +211,7 @@ function D(e, t) {
   return !(0 === t.length || null == e || 0 === t.filter(t => !C(t, {
     type: f.l.Embed,
     media: e
-  })).length || "video" in e && null != e.video && (null == (n = e.video) ? void 0 : n.width) === 0 && (null == (r = e.video) ? void 0 : r.height) === 0 || "thumbnail" in e && null != e.thumbnail && (null == (i = e.thumbnail) ? void 0 : i.width) === 0 && (null == (a = e.thumbnail) ? void 0 : a.height) === 0 || "image" in e && null != e.image && (null == (o = e.image) ? void 0 : o.width) === 0 && (null == (s = e.image) ? void 0 : s.height) === 0 || "images" in e && (null == (l = e.images) ? void 0 : l.some(e => null != e && 0 === e.width && 0 === e.height))) && k(U(e), t)
+  })).length || "video" in e && null != e.video && (null == (n = e.video) ? void 0 : n.width) === 0 && (null == (r = e.video) ? void 0 : r.height) === 0 || "thumbnail" in e && null != e.thumbnail && (null == (i = e.thumbnail) ? void 0 : i.width) === 0 && (null == (a = e.thumbnail) ? void 0 : a.height) === 0 || "image" in e && null != e.image && (null == (o = e.image) ? void 0 : o.width) === 0 && (null == (s = e.image) ? void 0 : s.height) === 0 || "images" in e && (null == (l = e.images) ? void 0 : l.some(e => null != e && 0 === e.width && 0 === e.height))) && M(U(e), t)
 }
 
 function L(e, t) {
@@ -219,7 +219,7 @@ function L(e, t) {
   return 0 !== t.length && 0 !== t.filter(t => !C(t, {
     type: f.l.Attachment,
     media: e
-  })).length && k(null != (n = e.content_scan_version) ? n : e.contentScanVersion, t)
+  })).length && M(null != (n = e.content_scan_version) ? n : e.contentScanVersion, t)
 }
 
 function x(e, t) {
@@ -227,15 +227,15 @@ function x(e, t) {
   return 0 !== t.length && 0 !== t.filter(t => !C(t, {
     type: f.l.GenericMedia,
     media: e
-  })).length && k(null == (n = e.contentScanMetadata) ? void 0 : n.version, t)
+  })).length && M(null == (n = e.contentScanMetadata) ? void 0 : n.version, t)
 }
 
-function k(e, t) {
+function M(e, t) {
   let n = _.Z.validContentScanVersion;
   return e !== h && (t.includes(p._.GORE) ? null == e || e < n : null == e)
 }
 
-function M(e) {
+function k(e) {
   return null != e && [r.Q4.BLOCK, r.Q4.BLUR].includes(e)
 }
 

@@ -7,7 +7,7 @@ n.d(t, {
   CW: () => eD,
   Cr: () => eh,
   DC: () => eo,
-  Ex: () => eM,
+  Ex: () => ek,
   Fg: () => $,
   G6: () => ef,
   H1: () => x,
@@ -32,9 +32,9 @@ n.d(t, {
   T4: () => L,
   UP: () => eu,
   Wp: () => eR,
-  Wz: () => ek,
+  Wz: () => eM,
   Xc: () => V,
-  Xk: () => k,
+  Xk: () => M,
   Xr: () => ed,
   YC: () => eK,
   YT: () => S,
@@ -69,7 +69,7 @@ n.d(t, {
   l4: () => eY,
   mX: () => K,
   nc: () => eO,
-  qF: () => M,
+  qF: () => k,
   rN: () => ev,
   tU: () => eg,
   uL: () => G,
@@ -169,13 +169,13 @@ let S = (0, d.Zc)("notifications", "gameActivityNotifications", e => null != e ?
   }, e => o.D5.create({
     value: e
   })),
-  k = (0, d.Zc)("textAndImages", "showCommandSuggestions", e => {
+  M = (0, d.Zc)("textAndImages", "showCommandSuggestions", e => {
     var t;
     return null == (t = null == e ? void 0 : e.value) || t
   }, e => o.D5.create({
     value: e
   })),
-  M = (0, d.Zc)("voiceAndVideo", "alwaysPreviewVideo", e => {
+  k = (0, d.Zc)("voiceAndVideo", "alwaysPreviewVideo", e => {
     var t;
     return null != (t = null == e ? void 0 : e.value) && t
   }, e => o.D5.create({
@@ -469,14 +469,14 @@ let eS = (0, d.KM)((0, d.Zc)("appearance", "developerMode", e => null != e && e,
   eD = (0, d.Zc)("privacy", "activityRestrictedGuildIds", e => null != e ? e : eP, e => e, p.fy.FREQUENT_USER_ACTION),
   eL = [],
   ex = (0, d.Zc)("privacy", "activityJoiningRestrictedGuildIds", e => null != e ? e : eL, e => e),
-  ek = (0, d.TG)({
+  eM = (0, d.TG)({
     baseSetting: (0, d.Zc)("privacy", "defaultGuildsActivityRestricted", e => e, e => null != e ? e : a.E5.OFF),
     isEligible: () => (0, c.o0)("user_settings"),
     useIsEligible: () => (0, c.Yd)("user_settings"),
     ineligibleDefault: a.E5.OFF,
     eligibleDefault: () => a.E5.ON
   }),
-  eM = (0, d.Zc)("privacy", "familyCenterEnabledV2", e => null == e ? void 0 : e.value, e => o.D5.create({
+  ek = (0, d.Zc)("privacy", "familyCenterEnabledV2", e => null == e ? void 0 : e.value, e => o.D5.create({
     value: e
   })),
   ej = (0, d.Zc)("privacy", "hideLegacyUsername", e => {

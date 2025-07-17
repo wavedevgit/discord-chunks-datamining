@@ -1,24 +1,24 @@
 /** Chunk was on 55616 **/
-v.d(g, {
-  S: () => C
+g.d(t, {
+  S: () => h
 });
-var t = v(255367);
-v(73800);
-var B = v(172751),
-  e = v(510918),
-  f = v(131085),
-  r = v(668271);
+var v = g(255367);
+g(73800);
+var e = g(172751),
+  r = g(510918),
+  f = g(131085),
+  B = g(668271);
 
-function C(A) {
-  let g = null === A.tag || 0 === A.tag.length ? "WUMP" : A.tag;
-  return (0, t.jsx)("div", {
-    className: r.badgeContainer,
-    children: (0, t.jsx)(B.m0, {
+function h(A) {
+  let t = null === A.tag || 0 === A.tag.length ? "WUMP" : A.tag;
+  return (0, v.jsx)("div", {
+    className: B.badgeContainer,
+    children: (0, v.jsx)(e.m0, {
       guildId: A.guildId,
-      textClassName: r.tagText,
-      guildTag: g,
-      guildBadge: "string" == typeof A.badge ? A.badge : (0, t.jsx)(e.v, {
-        className: r.badgePreview,
+      textClassName: B.tagText,
+      guildTag: t,
+      guildBadge: "string" == typeof A.badge ? A.badge : (0, v.jsx)(r.v, {
+        className: B.badgePreview,
         badge: A.badge,
         width: f.Gg.SIZE_12,
         height: f.Gg.SIZE_12,

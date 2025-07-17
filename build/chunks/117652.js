@@ -57,14 +57,14 @@ function L(e) {
 }
 let x = {
   key: S.h8.GIFT_CUSTOMIZATION,
-  renderStep: e => (0, r.jsx)(M, L({}, e)),
+  renderStep: e => (0, r.jsx)(k, L({}, e)),
   options: {
     isLargeModal: !0,
     useBreadcrumbLabel: () => R.intl.string(R.t["W685+f"])
   }
 };
 
-function k(e) {
+function M(e) {
   let {
     onStepChange: t,
     onBackClick: n,
@@ -86,7 +86,7 @@ function k(e) {
   })
 }
 
-function M(e) {
+function k(e) {
   let {
     handleStepChange: t,
     handleClose: n
@@ -99,7 +99,7 @@ function M(e) {
     giftRecipient: D,
     recommendedGiftSkuIds: L,
     giftingOrigin: x,
-    setValidatingGiftRecipient: M
+    setValidatingGiftRecipient: k
   } = (0, I.wD)(), {
     selectedSkuId: U,
     setSelectedSkuId: G,
@@ -114,7 +114,7 @@ function M(e) {
   }, {
     autoTrackExposure: !1
   }), W = H && x === C.Wt.DM_CHANNEL, K = Y === p.u.POPULAR ? R.intl.string(R.t.Kwgrrq) : R.intl.string(R.t.r1huYW), z = async (e, t) => {
-    M(!0), null != c && g(), await (0, u.B1)(e.id, t) || g(R.intl.string(R.t["4kgVqa"])), M(!1)
+    k(!0), null != c && g(), await (0, u.B1)(e.id, t) || g(R.intl.string(R.t["4kgVqa"])), k(!1)
   };
   (0, s.ZP)(() => {
     null != U && null != D && (O.default.track(N.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
@@ -205,7 +205,7 @@ function M(e) {
       children: (0, r.jsx)(o.mzw, {
         justify: _.Z.Justify.BETWEEN,
         align: _.Z.Align.CENTER,
-        children: (0, r.jsx)(k, {
+        children: (0, r.jsx)(M, {
           onStepChange: t,
           onBackClick: n,
           disabled: null != c || null == D || D.id === (null == Z ? void 0 : Z.id) || a.length > C.$n,

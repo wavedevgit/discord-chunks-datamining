@@ -4,7 +4,7 @@ let r;
 n.d(t, {
   Ek: () => D,
   ZP: () => eg,
-  s4: () => M
+  s4: () => k
 }), n(415506), n(539854), n(388685), n(704826), n(35282);
 var i, a = n(348327),
   o = n.n(a),
@@ -83,7 +83,7 @@ function L() {
   return "+" === t ? t = "plus" : 0 === t.length && (t = "`"), "shift+".concat(t)
 }
 let x = "1001",
-  k = function(e) {
+  M = function(e) {
     let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
     return {
       id: x,
@@ -94,7 +94,7 @@ let x = "1001",
       params: {}
     }
   },
-  M = e => {
+  k = e => {
     let t = (0, O.UR)("shift");
     return null == t || 1 === e.length && e[0][1] === t
   },
@@ -117,16 +117,16 @@ let x = "1001",
       n = (0, O.UR)("shift");
     if (null == n) return j(Error("Unable to get shift code"), e, t, {
       shiftCode: n
-    }), k(t, !1);
-    if (0 === t.length) return j(Error("Default overlay keybind combo is empty"), e, t), k(t, !1);
-    if (M(t)) {
+    }), M(t, !1);
+    if (0 === t.length) return j(Error("Default overlay keybind combo is empty"), e, t), M(t, !1);
+    if (k(t)) {
       let n = (0, O.UR)("`");
-      if (null == n) return j(Error("Unable to get backtick code"), e, t), k(t, !1);
+      if (null == n) return j(Error("Unable to get backtick code"), e, t), M(t, !1);
       j(Error("Default overlay keybind combo is only shift"), e, t, {
         rawBacktickCode: n
       }), t.push([I.MoX.KEYBOARD_KEY, n, (0, O.dU)()])
     }
-    return k(t)
+    return M(t)
   },
   G = {},
   B = {},

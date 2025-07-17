@@ -120,11 +120,11 @@ function x(e) {
   })
 }
 
-function k(e) {
+function M(e) {
   P(e.relationship.id), null != h[e.relationship.id] && (h = u({}, h), delete h[e.relationship.id]), null != m[e.relationship.id] && (m = u({}, m), delete m[e.relationship.id]), null != y[e.relationship.id] && (y = u({}, y), delete y[e.relationship.id]), e.relationship.userIgnored || E.delete(e.relationship.id), b.delete(e.relationship.id), g.delete(e.relationship.id), w()
 }
 
-function M(e) {
+function k(e) {
   let {
     relationship: t
   } = e;
@@ -261,8 +261,8 @@ let B = new G(a.Z, {
   CONNECTION_OPEN: D,
   OVERLAY_INITIALIZE: L,
   RELATIONSHIP_ADD: x,
-  RELATIONSHIP_REMOVE: k,
-  RELATIONSHIP_UPDATE: M,
+  RELATIONSHIP_REMOVE: M,
+  RELATIONSHIP_UPDATE: k,
   RELATIONSHIP_PENDING_INCOMING_REMOVED: j,
   UPDATE_STRANGER_STATUS: U
 })

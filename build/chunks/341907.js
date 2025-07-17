@@ -7,8 +7,8 @@ n.r(t), n.d(t, {
   openAppWithQuest: () => Z,
   openDisclosureModal: () => j,
   openQuestInGameRewardModal: () => x,
-  openQuestMinorEnrollmentBlockModal: () => M,
-  openQuestOrbsRewardModal: () => k,
+  openQuestMinorEnrollmentBlockModal: () => k,
+  openQuestOrbsRewardModal: () => M,
   openQuestsNitroRewardModal: () => L,
   openQuestsRewardCodeModal: () => D,
   openVideoQuestModal: () => V
@@ -129,7 +129,7 @@ function x(e, t, i) {
   })
 }
 
-function k(e, t) {
+function M(e, t) {
   (0, s.ZDy)(async () => {
     let {
       default: i
@@ -141,7 +141,7 @@ function k(e, t) {
   })
 }
 
-function M(e, t, i) {
+function k(e, t, i) {
   (0, s.ZDy)(async () => {
     let {
       default: a

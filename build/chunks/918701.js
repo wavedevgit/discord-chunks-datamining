@@ -47,7 +47,7 @@ n.d(t, {
   b7: () => eW,
   bA: () => tE,
   f$: () => tc,
-  f2: () => ek,
+  f2: () => eM,
   fY: () => e9,
   gI: () => te,
   hF: () => tO,
@@ -129,7 +129,7 @@ function x(e) {
   return e
 }
 
-function k(e, t) {
+function M(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -140,8 +140,8 @@ function k(e, t) {
   return n
 }
 
-function M(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
+function k(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -485,8 +485,8 @@ function ev(e, t) {
 }
 
 function eI(e, t) {
-  O.Z.captureException(e, M(x({}, t), {
-    tags: M(x({}, null == t ? void 0 : t.tags), {
+  O.Z.captureException(e, k(x({}, t), {
+    tags: k(x({}, null == t ? void 0 : t.tags), {
       app_context: "quests"
     })
   }))
@@ -568,7 +568,7 @@ function ex(e, t) {
     sourceQuestContent: t.sourceQuestContent
   }), g.S.dispatch(P.CkL.QUEST_GAME_LINK_OPENED), (0, f.Z)(n)
 }
-let ek = (e, t) => {
+let eM = (e, t) => {
     (0, v._3)({
       questId: e,
       questContent: t.content,
@@ -578,7 +578,7 @@ let ek = (e, t) => {
       sourceQuestContent: t.sourceQuestContent
     }), (0, m.JG)(es(e))
   },
-  eM = (e, t) => e > 0 ? (0, i.floor)(Math.min(t / e, 1), 4) : 0,
+  ek = (e, t) => e > 0 ? (0, i.floor)(Math.min(t / e, 1), 4) : 0,
   ej = e => e6(e) || T.Z.isProgressingOnDesktop(e.id),
   eU = (e, t) => {
     var n, r, a, o;
@@ -619,7 +619,7 @@ let ek = (e, t) => {
       progressSeconds: d,
       targetSeconds: u,
       targetMinutes: Math.ceil(u / E.Z.Seconds.MINUTE),
-      percentComplete: eM(u, d),
+      percentComplete: ek(u, d),
       taskType: l
     }
   },
@@ -686,7 +686,7 @@ function eW(e) {
   let a = N.r.build(e.config).defaultInGameTask;
   if (null == a) return null;
   let o = null != (i = null == (r = e.userStatus) || null == (n = r.progress) || null == (t = n[a.eventName]) ? void 0 : t.value) ? i : 0,
-    s = eM(a.target, o);
+    s = ek(a.target, o);
   return {
     title: a.messages.taskTitle,
     description: a.messages.taskDescription,

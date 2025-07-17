@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Kh: () => G,
-  Tm: () => k
+  Tm: () => M
 }), n(388685), n(781311), n(415506);
 var r = n(512722),
   i = n.n(r),
@@ -74,7 +74,7 @@ let L = n(227419).Z,
     var n;
     return null == (n = e.find(e => e.name === t)) ? void 0 : n.value
   },
-  k = {
+  M = {
     [S.bi.BUILT_IN]: {
       id: S.bi.BUILT_IN,
       type: T.Qi.BUILT_IN,
@@ -90,7 +90,7 @@ let L = n(227419).Z,
       }
     }
   },
-  M = [...L, {
+  k = [...L, {
     id: "-1",
     untranslatedName: "shrug",
     displayName: "shrug",
@@ -689,8 +689,8 @@ let L = n(227419).Z,
       })
     }
   }],
-  U = M.filter(e => ["gif", "tenor", "tts", "me", "tableflip", "unflip", "shrug", "spoiler", "nick"].includes(e.untranslatedName)),
+  U = k.filter(e => ["gif", "tenor", "tts", "me", "tableflip", "unflip", "shrug", "spoiler", "nick"].includes(e.untranslatedName)),
   G = (e, t, n) => {
-    let r = t ? M : U;
+    let r = t ? k : U;
     return r.filter(t => e.includes(t.type) && (!n || t.inputType === T.iw.BUILT_IN_TEXT || t.inputType === T.iw.BUILT_IN_INTEGRATION))
   }

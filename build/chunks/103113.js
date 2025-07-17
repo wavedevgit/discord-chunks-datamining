@@ -61,11 +61,11 @@ function R(e) {
     setPopoutRef: D,
     closePopout: L,
     disableUserProfileLink: x = __OVERLAY__,
-    newAnalyticsLocations: k = [],
-    disableAutoFocus: M = !1
+    newAnalyticsLocations: M = [],
+    disableAutoFocus: k = !1
   } = e, j = (0, p.ZP)(t.id, n), {
     analyticsLocations: U
-  } = (0, l.ZP)([...k, s.Z.USER_PROFILE_POPOUT]), G = (0, f.ZB)({
+  } = (0, l.ZP)([...M, s.Z.USER_PROFILE_POPOUT]), G = (0, f.ZB)({
     layout: "POPOUT",
     userId: t.id,
     guildId: n,
@@ -93,7 +93,7 @@ function R(e) {
         }, G))
       }
     }) : null,
-    Y = M ? "div" : a.VqE;
+    Y = k ? "div" : a.VqE;
   return (0, r.jsx)(l.Gt, {
     value: U,
     children: (0, r.jsx)(f.Mt, {

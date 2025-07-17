@@ -49,11 +49,11 @@ let T = "SELECTABLE",
       name: "Uncategorized"
     })
   },
-  L = M(v.kod),
+  L = k(v.kod),
   x = [],
-  k = {};
+  M = {};
 
-function M(e) {
+function k(e) {
   return {
     id: e,
     [T]: [],
@@ -129,7 +129,7 @@ function H() {
 }
 
 function Y(e) {
-  let t = M(e);
+  let t = k(e);
   return N[e] = t, w[e] = [], Z(t), G(t), W(t), en(e), t
 }
 
@@ -353,7 +353,7 @@ class el extends(r = s.ZP.Store) {
   }
   getTextChannelNameDisambiguations(e) {
     var t;
-    return null != e && null != (t = C[e]) ? t : k
+    return null != e && null != (t = C[e]) ? t : M
   }
 }
 I(el, "displayName", "GuildChannelStore");
