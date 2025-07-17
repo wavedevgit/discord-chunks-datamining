@@ -168,15 +168,15 @@ function x(e) {
   null != n.searchFetcher && n.searchFetcher.cancel(), delete b[t]
 }
 
-function M(e) {
+function k(e) {
   if (e === N) return !1;
   null != e && null == b[e] && y(e), N = e
 }
 
-function k() {
+function M() {
   S = !0, null != N && (0, d.g)(N) === m.aib.CHANNEL && (0, f.a)({
     location: "SearchStore_handleConnectionOpen"
-  }) && M(m.aib.DMS)
+  }) && k(m.aib.DMS)
 }
 
 function j(e) {
@@ -184,17 +184,17 @@ function j(e) {
     guildId: t,
     channelId: n
   } = e;
-  null != t ? M(t) : (0, f.a)({
+  null != t ? k(t) : (0, f.a)({
     location: "SearchStore_handleChannelSelect",
     autoTrackExposure: S
-  }) ? M(m.aib.DMS) : M(n)
+  }) ? k(m.aib.DMS) : k(n)
 }
 
 function U(e) {
   let {
     searchId: t
   } = e;
-  M(t)
+  k(t)
 }
 
 function G(e) {
@@ -350,7 +350,7 @@ class K extends(r = o.ZP.Store) {
 }
 g(K, "displayName", "SearchStore");
 let z = new K(l.Z, {
-  CONNECTION_OPEN: k,
+  CONNECTION_OPEN: M,
   SEARCH_START: P,
   SEARCH_INDEXING: D,
   SEARCH_FINISH: L,

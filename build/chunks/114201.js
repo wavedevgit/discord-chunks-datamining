@@ -135,8 +135,8 @@ function R(e) {
     leaderboardId: p,
     statisticId: a.E.LOL_TOTAL_KILLS
   }), {
-    disabled: M,
-    subtext: k
+    disabled: k,
+    subtext: M
   } = C(L, x), j = (0, o.e7)([f.Z, d.Z], () => {
     let e = d.Z.getGuild(t);
     return f.Z.can(y.Plq.ADMINISTRATOR, e)
@@ -162,8 +162,8 @@ function R(e) {
             id: "refresh-my-data",
             label: O.intl.string(O.t.iopWUV),
             action: w,
-            disabled: M,
-            subtext: k
+            disabled: k,
+            subtext: M
           }), (0, r.jsx)(s.sNh, {
             id: "leaderboard-modal",
             label: D,

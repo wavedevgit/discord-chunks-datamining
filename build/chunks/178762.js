@@ -39,9 +39,9 @@ var r = n(255367),
   D = n(268010),
   L = n(797342),
   x = n(206583),
-  M = n(921944);
+  k = n(921944);
 
-function k(e, t, n) {
+function M(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -57,7 +57,7 @@ function j(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      k(e, t, n[t])
+      M(e, t, n[t])
     })
   }
   return e
@@ -230,7 +230,7 @@ let Y = e => {
     i.useEffect(() => {
       C && D && w(!0)
     }, [C, D]);
-    let k = i.useCallback(e => {
+    let M = i.useCallback(e => {
         I && (0, f.jW)(e, async () => {
           let {
             default: e
@@ -263,7 +263,7 @@ let Y = e => {
       ref: p,
       onMouseEnter: () => {
         m.entry.content_type !== l.s.LEADERBOARD || (0, h.zu)(u.z.LEADERBOARD_NUX_COACHMARK) || (0, h.Q3)(u.z.LEADERBOARD_NUX_COACHMARK, {
-          dismissAction: M.L.SECONDARY
+          dismissAction: k.L.SECONDARY
         }), N.current = !0, setTimeout(() => {
           N.current && R(!0), F(A)
         }, 100)
@@ -309,7 +309,7 @@ let Y = e => {
             onClick: () => {
               C || R(!0)
             },
-            onContextMenu: k,
+            onContextMenu: M,
             children: (0, r.jsx)(Y, G(j({}, m), {
               selected: n,
               hovered: N.current

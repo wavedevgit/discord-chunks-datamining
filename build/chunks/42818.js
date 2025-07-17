@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  As: () => k,
+  As: () => M,
   By: () => j,
   Lu: () => U,
   e9: () => Y,
@@ -128,7 +128,7 @@ function x(e, t, n, r) {
   throw Error("Unexpected invoice plan: ".concat(e.subscriptionPlanId))
 }
 
-function M(e) {
+function k(e) {
   var t;
   let {
     invoiceItem: n,
@@ -176,7 +176,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function M(e) {
   let {
     label: t,
     tooltipText: n,
@@ -205,7 +205,7 @@ function j(e) {
     isPrepaidPaymentSource: n
   } = e, i = (0, y.j)(t.invoiceItems), a = i.find(e => !(0, g.Z8)(e.subscriptionPlanId) && e.amount >= 0), o = i.find(e => (0, g.Z8)(e.subscriptionPlanId) && e.amount >= 0), s = (0, c.e7)([p.Z], () => null != o ? p.Z.get(o.subscriptionPlanId) : null), l = null != o ? o.amount : 0, u = (0, E.T4)(l, t.currency), d = null != s ? (0, E.og)(u, s.interval, s.intervalCount) : 0;
   return (0, r.jsxs)(r.Fragment, {
-    children: [null != a ? (0, r.jsx)(M, {
+    children: [null != a ? (0, r.jsx)(k, {
       invoiceItem: a,
       currency: t.currency,
       isPrepaidPaymentSource: n
@@ -240,14 +240,14 @@ function U(e) {
     h = s.amount + (null != c ? c.amount : 0) - p + (null != u ? u.amount : 0),
     m = o.filter(e => e.subscriptionPlanId === T.Xh.PREMIUM_MONTH_GUILD || e.subscriptionPlanId === T.Xh.PREMIUM_YEAR_GUILD).reduce((e, t) => e + t.amount, 0);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(M, {
+    children: [(0, r.jsx)(k, {
       invoiceItem: s,
       currency: t.currency,
       overrideAmount: p,
       isPrepaidPaymentSource: i,
       referralTrialOfferId: a
     }), 0 === h || f ? null : (0, r.jsx)(v.B1, {
-      label: (0, r.jsx)(k, {
+      label: (0, r.jsx)(M, {
         label: A.intl.formatToPlainString(A.t.ZSVgeX, {
           planName: (0, g.PV)(n.id) ? (0, g.aq)(n.id) : n.name
         }),
@@ -255,7 +255,7 @@ function U(e) {
       }),
       value: (0, E.T4)(h, t.currency)
     }), 0 !== m ? (0, r.jsx)(v.B1, {
-      label: (0, r.jsx)(k, {
+      label: (0, r.jsx)(M, {
         label: A.intl.string(A.t["+as5ZW"]),
         tooltipText: A.intl.format(A.t.UDop9f, {}),
         tooltipAriaLabel: A.intl.string(A.t.P68ePD)
@@ -326,7 +326,7 @@ function F(e) {
     }), null != n ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(v.Z9, {
         children: A.intl.string(A.t.tuqjWV)
-      }), B(G((0, y.j)(n.invoiceItems))).map(e => (0, r.jsx)(M, {
+      }), B(G((0, y.j)(n.invoiceItems))).map(e => (0, r.jsx)(k, {
         invoiceItem: e,
         currency: n.currency,
         inTrialPeriod: a
@@ -337,7 +337,7 @@ function F(e) {
       children: A.intl.string(A.t.qxVrh4)
     }), B(G((0, y.j)(i.invoiceItems))).map(e => {
       let n = null != s && !s.some(t => t.subscriptionPlanId === e.subscriptionPlanId && t.quantity === e.quantity);
-      return (0, r.jsx)(M, {
+      return (0, r.jsx)(k, {
         invoiceItem: e,
         currency: i.currency,
         showGuildSubscriptionAdjustmentTooltip: d && (e.subscriptionPlanId === T.Xh.PREMIUM_MONTH_GUILD || e.subscriptionPlanId === T.Xh.PREMIUM_YEAR_GUILD || e.subscriptionPlanId === T.Xh.PREMIUM_3_MONTH_GUILD || e.subscriptionPlanId === T.Xh.PREMIUM_6_MONTH_GUILD),

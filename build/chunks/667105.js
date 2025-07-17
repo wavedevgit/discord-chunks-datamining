@@ -5,10 +5,10 @@ n.d(t, {
   Ks: () => B,
   Ws: () => Z,
   g2: () => j,
-  hf: () => M,
+  hf: () => k,
   k3: () => U,
   qN: () => F,
-  tP: () => k
+  tP: () => M
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -78,7 +78,7 @@ function x(e, t) {
   }), e
 }
 
-function M(e) {
+function k(e) {
   let {
     quest: t,
     questContent: n,
@@ -103,7 +103,7 @@ function M(e) {
   }, [t, d, n, r, a, c, u, s])
 }
 
-function k(e) {
+function M(e) {
   var t;
   let n = (0, o.Wu)([u.ZP], () => u.ZP.getGamesSeen(!1)).find(t => (null == t ? void 0 : t.id) === e);
   return null != n && Date.now() - 2592e7 <= (null != (t = n.lastLaunched) ? t : 0)
@@ -185,7 +185,7 @@ function B(e) {
     isVideoQuest: p,
     inGameQuest: b,
     sourceQuestContent: y
-  } = e, v = M({
+  } = e, v = k({
     quest: n,
     questContent: o,
     questContentPosition: s,
@@ -207,7 +207,7 @@ function B(e) {
       analyticsSource: l.Z.QUEST_HOME_PAGE
     })
   }, []), L = null == (t = (0, m.WD)()) ? void 0 : t.getId(), {
-    launchInGameActivity: k
+    launchInGameActivity: M
   } = (0, E.zB)(n);
   return i.useMemo(() => {
     if ((0, O.HJ)(n) && r !== E.OH.COMPLETED && r !== E.OH.CLAIMED) {
@@ -238,7 +238,7 @@ function B(e) {
             }), p ? (0, A.openVideoQuestModal)({
               quest: n,
               sourceQuestContent: y
-            }) : b && n.config.features.includes(N.S7.START_QUEST_CTA) && k()
+            }) : b && n.config.features.includes(N.S7.START_QUEST_CTA) && M()
           }
         };
       case E.OH.ACCEPTED:
@@ -273,7 +273,7 @@ function B(e) {
             text: e,
             tooltipText: P.intl.string(P.t.hsbwjo),
             onClick: () => {
-              n.config.features.includes(N.S7.START_QUEST_CTA) && k()
+              n.config.features.includes(N.S7.START_QUEST_CTA) && M()
             }
           }
         }
@@ -309,7 +309,7 @@ function B(e) {
           text: P.intl.string(P.t.bAGFz8)
         })
     }
-  }, [r, p, I, _, v, a, n, o, s, u, L, T, S, w, b, k, y])
+  }, [r, p, I, _, v, a, n, o, s, u, L, T, S, w, b, M, y])
 }
 
 function V() {

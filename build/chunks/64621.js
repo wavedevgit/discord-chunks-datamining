@@ -48,8 +48,8 @@ function A(e) {
   })), D = () => !P && C === g.lY.POPOUT && (t === g.n_.AVATAR ? R && null == w : t === g.n_.STATUS ? R : t === g.n_.ACTIVITY && !R), [L, x] = i.useState(!1);
   (0, c.Z)(() => x(!0), D() ? I : null);
   let {
-    asset: M,
-    assetClassName: k,
+    asset: k,
+    assetClassName: M,
     className: j,
     content: U,
     header: G,
@@ -92,8 +92,8 @@ function A(e) {
           className: j,
           asset: (0, r.jsx)("img", {
             alt: "",
-            src: M,
-            className: k
+            src: k,
+            className: M
           }),
           buttonCTA: b.intl.string(b.t["+IrDzM"]),
           buttonLayout: f._F.STACKED,

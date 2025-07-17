@@ -35,8 +35,8 @@ var r = n(654861),
   D = n(314897),
   L = n(592125),
   x = n(131951),
-  M = n(19780),
-  k = n(226961),
+  k = n(19780),
+  M = n(226961),
   j = n(936349),
   U = n(594174),
   G = n(626135),
@@ -374,7 +374,7 @@ class ev extends d.Z {
       connect_count: this._connectCount,
       code: n,
       reason: r
-    })), this._encountered_socket_failure = !0), M.Z.getRemoteDisconnectVoiceChannelId() === this.channelId && (null == (l = this._connection) || l.wasRemoteDisconnected());
+    })), this._encountered_socket_failure = !0), k.Z.getRemoteDisconnectVoiceChannelId() === this.channelId && (null == (l = this._connection) || l.wasRemoteDisconnected());
     let A = "Force Close" !== r;
     if (A) {
       let e = this._backoff.fail(this.reconnect);
@@ -1224,7 +1224,7 @@ class ev extends d.Z {
         this.logger.info("Go Live Media sink wants: ".concat(JSON.stringify(e))), this._socket.mediaSinkWants(e), null == (t = this._connection) || t.setLocalVideoSinkWants(e)
       }
     }));
-    this._remoteVideoSinkWants = Q.Yy, ea.w.on(ea.e.IncomingVideoEnabledChanged, this.incomingVideoEnabledChanged), ea.w.on(ea.e.WindowVisibilityChanged, this.windowVisibilityChanged), k.ZP.shouldRecordNextConnection() ? (this._recordingEnabled = !0, g.TC(!1)) : this._recordingEnabled = !1, this._soundshareStats = new J.Z, F.Z.addOnlineCallback(this._handleNetworkOnline), F.Z.addOfflineCallback(this._handleNetworkOffline), (0, Z.isDesktop)() && (this.powerMonitorListener = W.Z.remotePowerMonitor.on("resume", this._handlePowerResume)), this._supportedBandwidthEstimationExperiments = [], this._bandwidthEstimationExperiment = null, x.Z.getMediaEngine().getSupportedBandwidthEstimationExperiments(e => {
+    this._remoteVideoSinkWants = Q.Yy, ea.w.on(ea.e.IncomingVideoEnabledChanged, this.incomingVideoEnabledChanged), ea.w.on(ea.e.WindowVisibilityChanged, this.windowVisibilityChanged), M.ZP.shouldRecordNextConnection() ? (this._recordingEnabled = !0, g.TC(!1)) : this._recordingEnabled = !1, this._soundshareStats = new J.Z, F.Z.addOnlineCallback(this._handleNetworkOnline), F.Z.addOfflineCallback(this._handleNetworkOffline), (0, Z.isDesktop)() && (this.powerMonitorListener = W.Z.remotePowerMonitor.on("resume", this._handlePowerResume)), this._supportedBandwidthEstimationExperiments = [], this._bandwidthEstimationExperiment = null, x.Z.getMediaEngine().getSupportedBandwidthEstimationExperiments(e => {
       this._supportedBandwidthEstimationExperiments = e
     })
   }

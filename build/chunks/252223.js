@@ -77,11 +77,11 @@ function x(e) {
   }) : C.intl.string(C.t.eXan7O)
 }
 
-function M(e, t) {
+function k(e, t) {
   return (e.isDM() || e.isGroupDM() ? C.intl.string(C.t["9FaEzs"]) : e.isGuildStageVoice() ? C.intl.string(C.t.QygGCA) : C.intl.string(C.t.msxteH)) + (null != t ? " (".concat(t, ")") : "")
 }
 
-function k(e) {
+function M(e) {
   let {
     streamActivity: t,
     otherActivities: n,
@@ -100,7 +100,7 @@ function k(e) {
       tooltip: t
     } = (0, y.Z)(e, l);
     null != t && i.push(t)
-  }), null == t && null != r && i.push(M(r, s)), i.length > 0 ? i.join(", ") : ""
+  }), null == t && null != r && i.push(k(r, s)), i.length > 0 ? i.join(", ") : ""
 }
 
 function j(e) {
@@ -146,7 +146,7 @@ function G(e) {
   } = e;
   (0, f.Z)(null == t ? void 0 : t.id);
   let x = (null == a ? void 0 : a.discoverable) !== !1 ? a : null,
-    M = (0, g.Cf)(x),
+    k = (0, g.Cf)(x),
     G = i.useMemo(() => {
       var e, t;
       let r = null == n ? void 0 : n.find(e => {
@@ -166,10 +166,10 @@ function G(e) {
           type: t,
           name: n
         } = e;
-        return t !== N.IIU.CUSTOM_STATUS && t !== N.IIU.HANG_STATUS && n !== (null == M ? void 0 : M.name)
+        return t !== N.IIU.CUSTOM_STATUS && t !== N.IIU.HANG_STATUS && n !== (null == k ? void 0 : k.name)
       })) ? e : [], (e, t) => null != e.application_id && null != t.application_id && e.application_id === t.application_id || null != e.name && null != t.name && e.name === t.name)
-    }, [n, null == M ? void 0 : M.name]),
-    V = null == n ? void 0 : n.find(e => e.name === (null == M ? void 0 : M.name)),
+    }, [n, null == k ? void 0 : k.name]),
+    V = null == n ? void 0 : n.find(e => e.name === (null == k ? void 0 : k.name)),
     F = (null == t ? void 0 : t.bot) === !0,
     Z = (0, c.e7)([E.Z], () => E.Z.isBlockedOrIgnored(null == t ? void 0 : t.id)),
     H = (0, p.Z)({
@@ -181,7 +181,7 @@ function G(e) {
     z = B.length + (W || K ? 1 : 0),
     q = z > 1,
     X = (null == G ? void 0 : G.state) != null && "xs" === b,
-    Q = k({
+    Q = M({
       streamActivity: V,
       otherActivities: B,
       voiceActivityChannel: K ? l : null

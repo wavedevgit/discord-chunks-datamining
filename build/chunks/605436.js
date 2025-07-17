@@ -6,7 +6,7 @@ n.d(t, {
   GJ: () => O,
   Gy: () => C,
   RD: () => X,
-  RZ: () => M,
+  RZ: () => k,
   Tj: () => $,
   W: () => T,
   Wx: () => w,
@@ -149,12 +149,12 @@ function x(e, t, n, r, i) {
   return 0 === (a = D(e, t, n, r, i).sort(T).map(e => I(e))).length ? S(E.intl.string(E.t.nZfHsb)) : a
 }
 
-function M(e, t, n, i, a) {
+function k(e, t, n, i, a) {
   let o = [];
   return 0 === (o = L(e, t, n, i, a).sort(T).map(e => I(e, r.e$(e.permissions, i)))).length ? S(E.intl.string(E.t.nZfHsb)) : o
 }
 
-function k(e, t) {
+function M(e, t) {
   var n;
   return null != (n = c.ZP.getNick(t.id, e.id)) ? n : h.ZP.getName(e)
 }
@@ -172,7 +172,7 @@ function G(e, t) {
   let r = U(e, t);
   return {
     rowType: r,
-    name: k(e, t),
+    name: M(e, t),
     nickname: null != (n = c.ZP.getNick(t.id, e.id)) ? n : null,
     username: h.ZP.getName(e),
     id: e.id,
@@ -190,7 +190,7 @@ function B(e, t) {
 
 function V(e, t, n, r) {
   let i = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : () => !0;
-  return e.map(u.default.getUser).filter(f.lm).filter(e => !(0, l.eM)(n, e) && A(t, e.id, r) && (i(k(e, n)) || i(e.username) || i(e.discriminator))).map(e => G(e, n)).sort(B)
+  return e.map(u.default.getUser).filter(f.lm).filter(e => !(0, l.eM)(n, e) && A(t, e.id, r) && (i(M(e, n)) || i(e.username) || i(e.discriminator))).map(e => G(e, n)).sort(B)
 }
 
 function F(e, t, n, r, i) {

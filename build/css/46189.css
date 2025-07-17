@@ -1,6 +1,6 @@
 /**
   Module ID: 46189
-  Original File Name: e5d1defbf3a96731
+  Original File Name: 70e5eb6021f88605
 **/
 .editCard_a25a68 {
     background-color: var(--background-surface-high);
@@ -8404,7 +8404,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     padding-top: 8px
 }
 
-.header_d2b0e4 {
+.bannerDescription_d2b0e4,.header_d2b0e4 {
     margin-bottom: 8px
 }
 
@@ -8595,15 +8595,8 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     margin-bottom: 16px
 }
 
-.uploadButton_d2b0e4,.upsellButton_d2b0e4 {
+.uploadButton_d2b0e4 {
     margin-top: 8px
-}
-
-.upsellButtonInner_d2b0e4 {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    gap: 8px
 }
 
 .editResources_d2b0e4 {
@@ -12476,4 +12469,4 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     width: 8px
 }
 
-/*# sourceMappingURL=e5d1defbf3a96731.css.map*/
+/*# sourceMappingURL=70e5eb6021f88605.css.map*/

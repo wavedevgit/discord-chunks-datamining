@@ -59,8 +59,8 @@ let T = 25,
   x = {
     state: "uninitialized"
   },
-  M = _.Z.getState(),
-  k = (0, E.H)(),
+  k = _.Z.getState(),
+  M = (0, E.H)(),
   j = d.default.getToken();
 
 function U() {
@@ -145,7 +145,7 @@ function H() {}
 
 function Y() {
   let e = [];
-  return null != j && (k && e.push("foregrounded"), M !== O.hes.DISCONNECTED && M !== O.hes.RTC_DISCONNECTED && e.push("rtc_connected")), {
+  return null != j && (M && e.push("foregrounded"), k !== O.hes.DISCONNECTED && k !== O.hes.RTC_DISCONNECTED && e.push("rtc_connected")), {
     active: e.length > 0,
     ver: T,
     reasons: e
@@ -207,25 +207,25 @@ function ee() {
 }
 
 function et() {
-  M = _.Z.getState(), K()
+  k = _.Z.getState(), K()
 }
 
 function en(e) {
   let {
     focused: t
   } = e;
-  k = t, K()
+  M = t, K()
 }
 
 function er(e) {
   let {
     state: t
   } = e;
-  k = t === O.$7l.ACTIVE, K()
+  M = t === O.$7l.ACTIVE, K()
 }
 
 function ei() {
-  M = _.Z.getState(), k = (0, E.H)(), ee()
+  k = _.Z.getState(), M = (0, E.H)(), ee()
 }
 
 function ea() {

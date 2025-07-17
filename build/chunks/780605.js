@@ -99,8 +99,8 @@ function A(e) {
       loading: D,
       loadingStartedLabel: L,
       loadingFinishedLabel: x,
-      rounded: M = !1,
-      type: k = "button",
+      rounded: k = !1,
+      type: M = "button",
       rel: j,
       onClick: U,
       onDoubleClick: G,
@@ -167,11 +167,11 @@ function A(e) {
         className: o()(g.button, g[q], g[d], {
           [g.hasText]: J,
           [g.fullWidth]: X,
-          [g.rounded]: M
+          [g.rounded]: k
         }),
         ref: ee,
         rel: j,
-        type: k,
+        type: M,
         onClick: eo ? e => e.preventDefault() : U,
         onDoubleClick: eo ? e => e.preventDefault() : G,
         onMouseUp: eo ? void 0 : B,

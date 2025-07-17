@@ -67,12 +67,12 @@ function x(e, t) {
   return n
 }
 
-function M(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let k = 10,
+let M = 10,
   j = 15e5,
   U = 15e5,
   G = 5 * S.Z.Millis.SECOND;
@@ -169,7 +169,7 @@ class V extends l.Z {
       })) ? void 0 : n.stats;
     if (null != E && h) {
       let e = E.transport.inboundBitrateEstimate;
-      null != e && e < 1e8 && (this.bandwidthSamples.push(e), this.bandwidthSamples.length > k && this.bandwidthSamples.shift(), this.bandwidthSamples.length === k && ((p = i().mean(this.bandwidthSamples)) > U ? g = "HQ" : p < j && (g = "LQ")))
+      null != e && e < 1e8 && (this.bandwidthSamples.push(e), this.bandwidthSamples.length > M && this.bandwidthSamples.shift(), this.bandwidthSamples.length === M && ((p = i().mean(this.bandwidthSamples)) > U ? g = "HQ" : p < j && (g = "LQ")))
     }
     let b = null != (a = null == (r = this._goLiveQualityManager) ? void 0 : r.isDowngraded()) && a;
     if ("HQ" === g && b ? (this.logger.info("Attempting to upgrade to HQ simulcast stream, bandwidth estimate: ".concat(p)), null == (o = this._goLiveQualityManager) || o.setGoLiveStreamDowngraded(!1)) : "LQ" === g && !b && m && (this.logger.info("Attempting to downgrade to LQ simulcast stream, bandwidth estimate: ".concat(p)), null == (s = this._goLiveQualityManager) || s.setGoLiveStreamDowngraded(!0)), h) {
@@ -183,7 +183,7 @@ class V extends l.Z {
   initializeEvents() {
     let e = !1;
     this.on(c.z.State, (e, t, n) => {
-      if (s.Z.dispatch(M(L({
+      if (s.Z.dispatch(k(L({
           type: "RTC_CONNECTION_STATE",
           state: e
         }, t, n), {
@@ -219,7 +219,7 @@ class V extends l.Z {
                 gameName: R,
                 gameId: D,
                 exe: x,
-                distributor: M
+                distributor: k
               } = (0, _.G8)(C);
             I.default.track(P.rMx.SCREENSHARE_FINISHED, L({
               screenshare_frames: e,
@@ -246,7 +246,7 @@ class V extends l.Z {
               share_game_name: R,
               share_game_id: D,
               share_game_exe: x,
-              share_game_distributor: M,
+              share_game_distributor: k,
               picker_type_used: null != this.analyticsContext.nativePickerStyleUsed ? "native" : "internal",
               duration: this.analyticsContext.getDuration()
             }, A))
@@ -381,7 +381,7 @@ class V extends l.Z {
   }
   trackVideoStartStats() {
     let e = this.isOwner ? (0, R.Z)() : null;
-    I.default.track(P.rMx.VIDEO_STREAM_STARTED, M(L({}, this.getStreamAnalyticsProperties(), e), {
+    I.default.track(P.rMx.VIDEO_STREAM_STARTED, k(L({}, this.getStreamAnalyticsProperties(), e), {
       connection_type: b.Z.getType(),
       effective_connection_speed: b.Z.getEffectiveConnectionSpeed(),
       service_provider: b.Z.getServiceProvider(),
@@ -411,7 +411,7 @@ class V extends l.Z {
       } : {};
     o.getOutboundStats().forEach(t => {
       var r;
-      (null != (r = t.num_frames) ? r : 0) > 0 && I.default.track(P.rMx.VIDEO_STREAM_ENDED, M(L({}, a, i, s, this.videoStreamStats.getStats(), t, this._soundshareStats.getStats(), this.getStreamAnalyticsProperties(), _, p), {
+      (null != (r = t.num_frames) ? r : 0) > 0 && I.default.track(P.rMx.VIDEO_STREAM_ENDED, k(L({}, a, i, s, this.videoStreamStats.getStats(), t, this._soundshareStats.getStats(), this.getStreamAnalyticsProperties(), _, p), {
         app_hardware_acceleration_enabled: T.Z.getAppHardwareAccelerationEnabled(),
         channel_type: n,
         reason: e,
@@ -424,7 +424,7 @@ class V extends l.Z {
     }), o.getInboundParticipants().forEach(t => {
       var r;
       let l = o.getInboundStats(t);
-      (null != (r = null == l ? void 0 : l.num_frames) ? r : 0) > 0 && I.default.track(P.rMx.VIDEO_STREAM_ENDED, M(L({}, a, i, s, this.videoStreamStats.getStats(), l, this._soundshareStats.getStats(), this.getStreamAnalyticsProperties(), _, p), {
+      (null != (r = null == l ? void 0 : l.num_frames) ? r : 0) > 0 && I.default.track(P.rMx.VIDEO_STREAM_ENDED, k(L({}, a, i, s, this.videoStreamStats.getStats(), l, this._soundshareStats.getStats(), this.getStreamAnalyticsProperties(), _, p), {
         app_hardware_acceleration_enabled: T.Z.getAppHardwareAccelerationEnabled(),
         channel_type: n,
         reason: e,

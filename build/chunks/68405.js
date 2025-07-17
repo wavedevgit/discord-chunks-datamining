@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   PF: () => F,
-  R7: () => k,
+  R7: () => M,
   Tg: () => U,
   UU: () => G,
   gK: () => j,
@@ -11,7 +11,7 @@ n.d(t, {
   mO: () => x,
   t1: () => R,
   uL: () => V,
-  v2: () => M,
+  v2: () => k,
   yC: () => L
 }), n(704826), n(35282);
 var r = n(392711),
@@ -156,7 +156,7 @@ let D = i().debounce(w, N);
 function L(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
     r = arguments.length > 3 ? arguments[3] : void 0;
-  "" === e ? M() : (l.Z.dispatch({
+  "" === e ? k() : (l.Z.dispatch({
     type: "GIF_PICKER_QUERY",
     query: e
   }), n ? w(e, t, r) : D(e, t, r))
@@ -183,14 +183,14 @@ function x(e) {
   })
 }
 
-function M() {
+function k() {
   l.Z.dispatch({
     type: "GIF_PICKER_QUERY",
     query: ""
   })
 }
 
-function k(e) {
+function M(e) {
   let {
     type: t,
     index: n,

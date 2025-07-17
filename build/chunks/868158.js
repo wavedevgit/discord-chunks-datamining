@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Eb: () => D,
-  Fx: () => M,
+  Fx: () => k,
   IM: () => L,
   J2: () => V,
   r$: () => w
@@ -94,10 +94,10 @@ function w(e, t) {
       merged_presences: a
     } = e,
     o = S(e, ["guilds", "merged_members", "merged_presences"]);
-  let s = k(P, null == a ? void 0 : a.friends),
+  let s = M(P, null == a ? void 0 : a.friends),
     l = null != (n = null == r ? void 0 : r.map((e, t) => {
-      let n = k(P, null == a ? void 0 : a.guilds[t]),
-        r = k(P, null == i ? void 0 : i[t]);
+      let n = M(P, null == a ? void 0 : a.guilds[t]),
+        r = M(P, null == i ? void 0 : i[t]);
       return T(v({}, e), {
         unavailable: void 0 === e.voice_states,
         presences: n,
@@ -141,12 +141,12 @@ function L(e, t, n) {
     } = e,
     d = S(e, ["users", "relationships", "private_channels", "merged_members", "guilds"]);
   U(n);
-  let f = k(P = o().keyBy(a, e => e.id), s);
+  let f = M(P = o().keyBy(a, e => e.id), s);
   null == l || l.forEach(e => {
     let t = e.recipient_ids;
     null != t && (e.recipients = t.map(e => (i()(null != P[e], "Missing user in compressed ready payload"), P[e]))), delete e.recipient_ids
   });
-  let _ = null != (r = null == u ? void 0 : u.map((e, t) => !0 === e.unavailable ? e : (e.members = k(P, null == c ? void 0 : c[t]), B(e)))) ? r : [],
+  let _ = null != (r = null == u ? void 0 : u.map((e, t) => !0 === e.unavailable ? e : (e.members = M(P, null == c ? void 0 : c[t]), B(e)))) ? r : [],
     p = x(t, u, e => B(e));
   return null != p && _.push(p), T(v({}, d), {
     users: a,
@@ -161,7 +161,7 @@ function x(e, t, n) {
   return null == R || R.identifyTime !== e || null != t && t.some(e => e.id === R.guild.id) ? null : n(R.guild)
 }
 
-function M(e, t) {
+function k(e, t) {
   var n, r, i;
   let a = E.Z.getGuild(e.id),
     o = V(e, null == a ? void 0 : {
@@ -176,7 +176,7 @@ function M(e, t) {
   }, o
 }
 
-function k(e, t) {
+function M(e, t) {
   let n = [];
   return null == t || t.forEach(t => {
     if (null == t) return;

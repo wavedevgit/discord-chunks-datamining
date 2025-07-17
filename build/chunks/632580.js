@@ -77,8 +77,8 @@ async function y(e) {
     openInvoiceId: D,
     premiumSubscription: L,
     onNext: x,
-    metadata: M,
-    sku: k,
+    metadata: k,
+    sku: M,
     skuPricePreview: j,
     purchaseType: U,
     referralCode: G,
@@ -97,7 +97,7 @@ async function y(e) {
         expected_currency: null == F ? void 0 : F.currency,
         duration_ms: Date.now() - S
       })), E) return;
-    if (U === p.GZQ.ONE_TIME) i()(null != k, "SKU must exist and be fetched."), i()(null != j, "SKUPricePreview must exist."), e = await (0, c.ZZ)(k.applicationId, k.id, {
+    if (U === p.GZQ.ONE_TIME) i()(null != M, "SKU must exist and be fetched."), i()(null != j, "SKUPricePreview must exist."), e = await (0, c.ZZ)(M.applicationId, M.id, {
       expectedAmount: j.amount,
       expectedCurrency: j.currency,
       isGift: O,
@@ -146,7 +146,7 @@ async function y(e) {
         currency: R.currency,
         paymentSource: P,
         trialId: C,
-        metadata: M,
+        metadata: k,
         referralCode: G,
         loadId: B,
         expectedInvoicePrice: t,

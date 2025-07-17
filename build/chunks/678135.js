@@ -45,8 +45,8 @@ function A(e) {
     pendingThemeColors: D,
     pendingProfileEffectId: L,
     pendingLegacyUsernameDisabled: x,
-    avatarClassName: M,
-    containerClassName: k,
+    avatarClassName: k,
+    containerClassName: M,
     isTryItOutFlow: j = !1,
     disabledInputs: U = !1,
     hideCustomStatus: G = !1,
@@ -86,7 +86,7 @@ function A(e) {
       displayProfile: z,
       themeType: I.lY.POPOUT,
       pendingThemeColors: D,
-      className: a()(S.container, k),
+      className: a()(S.container, M),
       forceShowPremium: i,
       children: [(0, r.jsxs)("header", {
         className: S.header,
@@ -111,7 +111,7 @@ function A(e) {
           previewAvatarDecoration: X,
           previewTheme: J,
           previewPrimaryColor: $,
-          className: M,
+          className: k,
           disabledInputs: U,
           isTryItOutFlow: j,
           onUpsellClick: () => null == o ? void 0 : o({
