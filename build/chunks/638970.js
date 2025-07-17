@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => k
+  Z: () => M
 }), n(388685), n(539854);
 var r = n(255367),
   i = n(73800),
@@ -95,7 +95,7 @@ let x = {
   height: "auto"
 };
 
-function k(e) {
+function M(e) {
   let {
     user: t,
     currentUser: n,
@@ -106,9 +106,9 @@ function k(e) {
   } = e, {
     analyticsLocations: P
   } = (0, f.ZP)(), {
-    trackUserProfileAction: k
+    trackUserProfileAction: M
   } = (0, m.KZ)(), {
-    live: M,
+    live: k,
     stream: j
   } = (0, g.Z)(t.id), {
     voiceChannel: U,
@@ -136,7 +136,7 @@ function k(e) {
     location: "UserProfileStackedActivity",
     stream: j,
     profileGuildId: null == a ? void 0 : a.guildId
-  }, er), "stream")), M.forEach((e, t) => {
+  }, er), "stream")), k.forEach((e, t) => {
     en.push((0, r.jsx)(y.Z, C({
       activity: e,
       profileGuildId: null == a ? void 0 : a.guildId
@@ -150,7 +150,7 @@ function k(e) {
     color: l.zx.Colors.TRANSPARENT,
     className: o()(A.viewAllButton, et && A.isShown),
     onClick: () => {
-      k({
+      M({
         action: "PRESS_VIEW_PROFILE",
         analyticsLocations: P
       }), N({
@@ -164,7 +164,7 @@ function k(e) {
     })
   }) : null, el = i.useCallback(() => {
     if (null == W.current || null == z.current) return;
-    k({
+    M({
       action: "PRESS_SHOW_MORE_ACTIVITY",
       analyticsLocations: P
     });
@@ -185,7 +185,7 @@ function k(e) {
         }), null == (e = K.current) || e.focus()
       }, w)
     })
-  }, [P, k]);
+  }, [P, M]);
   return ((0, u.zq)(() => {
     null != q.current && window.clearTimeout(q.current)
   }), V || 0 === en.length) ? null : (0, r.jsxs)(r.Fragment, {

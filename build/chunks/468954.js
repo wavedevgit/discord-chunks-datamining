@@ -77,8 +77,8 @@ function p(e) {
     listPaddingRight: D,
     itemNodeMargin: L,
     listPadding: x,
-    gridNavigatorId: k,
-    gridNotice: M,
+    gridNavigatorId: M,
+    gridNotice: k,
     renderHeader: j,
     renderUpsell: U
   } = e, G = i.useRef(null), B = i.useRef(null), V = i.useRef(null), F = 0 === t.length, Z = (0, a.Iu)(e => e.searchQuery), H = f.useStore(e => e.inspectedExpressionPosition), Y = (0, o.ep)({
@@ -110,7 +110,7 @@ function p(e) {
     expressionsGrid: W,
     onSelectItem: p,
     store: f,
-    gridNavigatorId: k
+    gridNavigatorId: M
   }), en = i.useCallback((e, t) => y(W[e], J(e), {
     isUsingKeyboardNavigation: et.current,
     gutterWidth: X,
@@ -137,7 +137,7 @@ function p(e) {
       hasSendableExpressions: !0,
       onKeyDown: ee,
       expressionsListRef: B,
-      gridNavigatorId: k,
+      gridNavigatorId: M,
       defaultSearchPlaceholder: g,
       emptySearchPlaceholder: E
     }), null == N ? void 0 : N()]
@@ -147,13 +147,13 @@ function p(e) {
       className: c.header,
       children: [" ", es, " "]
     }), F && null != b ? b(c.emptyState) : (0, r.jsxs)(r.Fragment, {
-      children: [A(B), null != M && (0, r.jsx)("div", {
+      children: [A(B), null != k && (0, r.jsx)("div", {
         className: c.gridNoticeWrapper,
-        children: M
+        children: k
       }), (0, r.jsx)("div", _(d({
         ref: G,
         className: c.listWrapper,
-        id: k
+        id: M
       }, $), {
         children: null != Y ? (0, r.jsx)(s.Z, {
           categories: t,

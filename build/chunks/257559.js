@@ -1,6 +1,6 @@
 /** Chunk was on 16705 **/
 n.d(t, {
-  Z: () => P
+  Z: () => C
 }), n(997841), n(388685);
 var i = n(255367),
   l = n(73800),
@@ -23,8 +23,8 @@ var i = n(255367),
   S = n(630388),
   x = n(970257),
   D = n(981631),
-  _ = n(388032),
-  M = n(130883),
+  M = n(388032),
+  _ = n(130883),
   j = n(739788);
 
 function b(e, t, n) {
@@ -95,15 +95,15 @@ class y extends l.PureComponent {
       v = o.type === D.d4z.GUILD_ANNOUNCEMENT && (0, S.yE)(d.flags, D.iLy.CROSSPOSTED);
     u && (e = (0, i.jsx)(h.Z, {
       className: j.spacingTop,
-      children: _.intl.format(_.t.IxY7Ex, {})
+      children: M.intl.format(M.t.IxY7Ex, {})
     })), (0, x.vc)(d) && (t = (0, i.jsx)(c.j7V, {
       value: l,
       onChange: this.handleToggleReport,
       hideBorder: !0,
       className: j.spacingTop,
-      children: _.intl.string(_.t.x0jzo6)
+      children: M.intl.string(M.t.x0jzo6)
     }));
-    let N = v ? _.intl.string(_.t["2kHABQ"]) : _.intl.string(_.t.AMvpS0),
+    let N = v ? M.intl.string(M.t["2kHABQ"]) : M.intl.string(M.t.AMvpS0),
       O = (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
           className: j.message,
@@ -140,7 +140,7 @@ class y extends l.PureComponent {
                 onClick: E.onClose
               }), (0, i.jsx)(c.X6q, {
                 variant: "heading-xl/bold",
-                children: _.intl.string(_.t.MWMcg4)
+                children: M.intl.string(M.t.MWMcg4)
               })]
             })
           }), (0, i.jsx)(c.hzk, {
@@ -149,13 +149,13 @@ class y extends l.PureComponent {
             children: [(0, i.jsx)(c.zxk, {
               variant: "critical-primary",
               size: "sm",
-              text: _.intl.string(_.t.oyYWHB),
+              text: M.intl.string(M.t.oyYWHB),
               type: "submit",
               onClick: this.handleDelete
             }), !e && (0, i.jsx)(c.XZJ, {
               value: r,
               onChange: (e, t) => this.handleToggleResolveFlag(t),
-              children: _.intl.string(M.default["8yIKen"])
+              children: M.intl.string(_.default["8yIKen"])
             })]
           })]
         }))
@@ -164,14 +164,14 @@ class y extends l.PureComponent {
     return (0, i.jsx)(m.Z.Provider, {
       value: o.guild_id,
       children: n ? (0, i.jsx)(a.u, {
-        title: v ? _.intl.string(_.t.aIz1oa) : _.intl.string(_.t.MWMcg4),
+        title: v ? M.intl.string(M.t.aIz1oa) : M.intl.string(M.t.MWMcg4),
         subtitle: N,
         actions: [{
-          text: _.intl.string(_.t["ETE/oK"]),
+          text: M.intl.string(M.t["ETE/oK"]),
           onClick: E.onClose,
           variant: "secondary"
         }, {
-          text: _.intl.string(_.t.oyYWHB),
+          text: M.intl.string(M.t.oyYWHB),
           onClick: this.handleDeleteMana,
           variant: "critical-primary"
         }],
@@ -179,9 +179,9 @@ class y extends l.PureComponent {
         transitionState: E.transitionState,
         children: O
       }) : (0, i.jsx)(c.ConfirmModal, I(A({
-        header: v ? _.intl.string(_.t.aIz1oa) : _.intl.string(_.t.MWMcg4),
-        confirmText: _.intl.string(_.t.oyYWHB),
-        cancelText: _.intl.string(_.t["ETE/oK"]),
+        header: v ? M.intl.string(M.t.aIz1oa) : M.intl.string(M.t.MWMcg4),
+        confirmText: M.intl.string(M.t.oyYWHB),
+        cancelText: M.intl.string(M.t["ETE/oK"]),
         onConfirm: this.handleDelete
       }, E), {
         children: b
@@ -229,18 +229,18 @@ class y extends l.PureComponent {
     })
   }
 }
-let P = {
+let C = {
   confirmPin: function(e, t) {
     (0, c.h7j)(n => {
       let l, r = (0, g.F6)(e, O.default, N.Z);
-      return l = e.isPrivate() ? _.intl.string(_.t.hMRngI) : _.intl.formatToPlainString(_.t["3IRluL"], {
+      return l = e.isPrivate() ? M.intl.string(M.t.hMRngI) : M.intl.formatToPlainString(M.t["3IRluL"], {
         channelName: r
       }), (0, i.jsx)(m.Z.Provider, {
         value: e.guild_id,
         children: (0, i.jsxs)(c.ConfirmModal, I(A({
-          header: _.intl.string(_.t.bKMaZW),
-          confirmText: _.intl.string(_.t.rOQ5BQ),
-          cancelText: _.intl.string(_.t["ETE/oK"]),
+          header: M.intl.string(M.t.bKMaZW),
+          confirmText: M.intl.string(M.t.rOQ5BQ),
+          cancelText: M.intl.string(M.t["ETE/oK"]),
           confirmButtonColor: o.zx.Colors.BRAND,
           onConfirm: () => d.Z.pinMessage(e, t.id)
         }, n), {
@@ -265,15 +265,15 @@ let P = {
     (0, c.h7j)(n => (0, i.jsx)(m.Z.Provider, {
       value: e.guild_id,
       children: (0, i.jsxs)(c.ConfirmModal, I(A({
-        header: _.intl.string(_.t.CFF2vL),
-        confirmText: _.intl.string(_.t.lAU5jI),
-        cancelText: _.intl.string(_.t["ETE/oK"]),
+        header: M.intl.string(M.t.CFF2vL),
+        confirmText: M.intl.string(M.t.lAU5jI),
+        cancelText: M.intl.string(M.t["ETE/oK"]),
         onConfirm: () => d.Z.unpinMessage(e, t.id)
       }, n), {
         children: [(0, i.jsx)(c.Text, {
           variant: "text-md/normal",
           className: j.spacing,
-          children: _.intl.string(_.t.NjEPp6)
+          children: M.intl.string(M.t.NjEPp6)
         }), (0, i.jsx)("div", {
           className: s()(j.message, j.spacing),
           children: (0, i.jsx)(p.Z, {
@@ -282,7 +282,7 @@ let P = {
             disableInteraction: !0
           })
         }), (0, i.jsx)(h.Z, {
-          children: _.intl.format(_.t.oCVB3d, {})
+          children: M.intl.format(M.t.oCVB3d, {})
         })]
       }))
     }))
@@ -299,9 +299,9 @@ let P = {
   },
   confirmEdit: function(e, t, n) {
     (0, c.h7j)(l => (0, i.jsx)(c.ConfirmModal, I(A({
-      header: _.intl.string(_.t.aIz1oa),
-      confirmText: _.intl.string(_.t["cY+Ooa"]),
-      cancelText: _.intl.string(_.t["ETE/oK"]),
+      header: M.intl.string(M.t.aIz1oa),
+      confirmText: M.intl.string(M.t["cY+Ooa"]),
+      cancelText: M.intl.string(M.t["ETE/oK"]),
       confirmButtonColor: o.zx.Colors.BRAND,
       onConfirm: () => u.Z.editMessage(e, t, {
         content: n
@@ -310,7 +310,7 @@ let P = {
       children: (0, i.jsx)(c.Text, {
         variant: "text-md/normal",
         className: j.spacing,
-        children: _.intl.string(_.t.grBcMz)
+        children: M.intl.string(M.t.grBcMz)
       })
     })))
   }

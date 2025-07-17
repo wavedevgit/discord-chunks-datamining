@@ -157,8 +157,8 @@ class T extends(r = a.PureComponent) {
       getAriaValueText: D,
       barClassName: L,
       grabberClassName: x,
-      grabberStyles: k = {},
-      markerPosition: M = 0,
+      grabberStyles: M = {},
+      markerPosition: k = 0,
       "aria-hidden": j,
       "aria-label": U,
       "aria-labelledby": G,
@@ -173,8 +173,8 @@ class T extends(r = a.PureComponent) {
         return (0, i.jsx)("div", {
           className: s()(m.mark, {
             [m.defaultValue]: r,
-            [m.markAbove]: 0 === M,
-            [m.markBelow]: 1 === M
+            [m.markAbove]: 0 === k,
+            [m.markBelow]: 1 === k
           }),
           style: {
             left: "".concat(e, "%")
@@ -250,7 +250,7 @@ class T extends(r = a.PureComponent) {
                 forceOpen: n || r && h.Z.keyboardModeEnabled,
                 children: e => (0, i.jsx)("div", y(E({}, e), {
                   className: s()(m.grabber, x),
-                  style: y(E({}, k), {
+                  style: y(E({}, M), {
                     left: F
                   }),
                   onMouseDown: this.handleMouseDown,

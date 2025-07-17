@@ -1,6 +1,6 @@
 /**
   Module ID: 68784
-  Original File Name: 204a717944a430dd
+  Original File Name: 1cb2bf18b3371575
 **/
 .answerRow__7b848 {
     align-items: center;
@@ -58,27 +58,6 @@
     font-size: 12px;
     padding: 0 12px 7px 0;
     pointer-events: none
-}
-
-.imageOnlyContainer__7b848 {
-    position: relative
-}
-
-.imageOnlyContainer__7b848:focus-within .imageOnlyAnswerActionBar__7b848,.imageOnlyContainer__7b848:hover .imageOnlyAnswerActionBar__7b848 {
-    opacity: 1
-}
-
-.imageOnlyAnswerActionBar__7b848 {
-    background: var(--background-base-low);
-    border-radius: var(--radius-xs);
-    box-shadow: var(--shadow-low);
-    display: flex;
-    opacity: 0;
-    overflow: hidden;
-    position: absolute;
-    right: -5px;
-    top: -5px;
-    transition: opacity var(--custom-button-transition-duration) ease
 }
 
 .imagePreviewContainer__7b848 {
@@ -179,11 +158,6 @@
     width: 38px
 }
 
-.expressionPickerButtonImageOnly__7b848 {
-    height: 100%;
-    width: 100%
-}
-
 .expressionPickerIconDefault__7b848 {
     color: var(--interactive-normal);
     margin-left: 6px
@@ -191,13 +165,6 @@
 
 .expressionPickerIconDefault__7b848:hover {
     color: var(--interactive-active)
-}
-
-.expressionPickerIconImageOnly__7b848 {
-    color: var(--text-muted);
-    cursor: pointer;
-    height: 36px;
-    width: 36px
 }
 
 .emojiPicker__7b848 {
@@ -210,19 +177,8 @@
     width: 22px
 }
 
-.emojiJumbo__7b848 {
-    height: 48px;
-    width: 48px
-}
-
 .gif__7b848 {
     transition: opacity var(--custom-button-transition-duration) ease
-}
-
-.gifJumbo__7b848 {
-    height: 100%;
-    object-fit: cover;
-    width: 100%
 }
 
 .gifDefault__7b848 {
@@ -244,11 +200,6 @@
     width: 48px
 }
 
-.spinnerWrapperImageOnly__7b848 {
-    height: 100%;
-    width: 100%
-}
-
 .menuContainer__7b848 {
     margin: -16px 0 0 6px
 }
@@ -267,36 +218,6 @@
     height: 24px;
     transition: color var(--custom-button-transition-duration) ease;
     width: 24px
-}
-
-.container__20987 {
-    display: flex;
-    flex-direction: row
-}
-
-.option__20987 {
-    align-items: center;
-    background-color: var(--background-secondary-alt);
-    border: 1px solid transparent;
-    border-radius: 25px;
-    cursor: pointer;
-    display: inline-flex;
-    margin-right: 8px;
-    padding: 8px 20px;
-    transition: background-color .2s var(--custom-button-transition-duration) ease,border-color var(--custom-button-transition-duration) ease
-}
-
-.option__20987:hover,.optionSelected__20987 {
-    background-color: var(--background-surface-high)
-}
-
-.optionSelected__20987 {
-    border: 2px solid var(--brand-500)
-}
-
-.icon__20987 {
-    color: var(--interactive-normal);
-    width: 16px
 }
 
 .content_d97f89 {
@@ -325,12 +246,6 @@
 
 .defaultContainer_d97f89 {
     flex-direction: column
-}
-
-.imageOnlyContainer_d97f89 {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 16px
 }
 
 .addAnswerButton_d97f89 {
@@ -363,12 +278,6 @@
     background-color: var(--background-mod-normal)
 }
 
-.addAnswerButtonImageOnly_d97f89 {
-    height: 175px;
-    justify-content: center;
-    padding: 0
-}
-
 .addAnswerIconDefault_d97f89 {
     color: var(--text-muted);
     height: 28px;
@@ -377,12 +286,6 @@
 
 .addAnswerButtonLabel_d97f89 {
     padding: 13px 0
-}
-
-.addAnswerIconImageOnly_d97f89 {
-    color: var(--interactive-muted);
-    height: 48px;
-    width: 48px
 }
 
 .duration_d97f89 {
@@ -408,4 +311,4 @@
     margin-bottom: 24px
 }
 
-/*# sourceMappingURL=204a717944a430dd.css.map*/
+/*# sourceMappingURL=1cb2bf18b3371575.css.map*/

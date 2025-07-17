@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => k
+  ZP: () => M
 }), n(388685);
 var r, i = n(392711),
   a = n.n(i),
@@ -164,7 +164,7 @@ class x extends(r = o.ZP.Store) {
   }
 }
 g(x, "displayName", "StageChannelRoleStore");
-let k = new x(s.Z, {
+let M = new x(s.Z, {
   CHANNEL_UPDATES: N,
   CONNECTION_OPEN: D,
   GUILD_MEMBER_REMOVE: R,

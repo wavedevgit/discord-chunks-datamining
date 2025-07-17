@@ -36,8 +36,8 @@ var r = n(255367),
   A = n(619753),
   Z = n(902733),
   w = n(981631),
-  L = n(531578),
-  F = n(388032),
+  F = n(531578),
+  L = n(388032),
   M = n(682065);
 
 function D(e, t, n) {
@@ -134,7 +134,7 @@ class G extends s.PureComponent {
   render() {
     return (0, r.jsxs)("section", {
       className: M.searchResultsWrap,
-      "aria-label": F.intl.string(F.t.zkoeq6),
+      "aria-label": L.intl.string(L.t.zkoeq6),
       children: [this.renderHeader(), (0, r.jsx)(u.Den, {
         ref: this.scrollerRef,
         className: M.scroller,
@@ -209,7 +209,7 @@ class G extends s.PureComponent {
         documentsIndexed: a
       })
     }), D(this, "renderIndexing", () => {
-      let e = this.props.searchType === w.aib.GUILD ? F.intl.string(F.t.AXPbZm) : F.intl.string(F.t.Q0JJjo);
+      let e = this.props.searchType === w.aib.GUILD ? L.intl.string(L.t.AXPbZm) : L.intl.string(L.t.Q0JJjo);
       return (0, r.jsxs)(U, {
         children: [(0, r.jsx)(N.Z, {}), (0, r.jsx)("div", {
           className: (M.emptyResultsText, M.stillIndexing),
@@ -219,7 +219,7 @@ class G extends s.PureComponent {
     }), D(this, "renderNoResults", () => {
       let {
         showNoResultsAlt: e
-      } = this.props.search, t = e ? F.intl.string(F.t["VrK/2d"]) : F.intl.string(F.t.V6nAfH);
+      } = this.props.search, t = e ? L.intl.string(L.t["VrK/2d"]) : L.intl.string(L.t.V6nAfH);
       return (0, r.jsxs)(U, {
         children: [(0, r.jsx)("div", {
           className: a()(M.noResultsImage, {
@@ -237,7 +237,7 @@ class G extends s.PureComponent {
         className: M.errorImage
       }), (0, r.jsx)("div", {
         className: a()(M.emptyResultsText, M.errorMessage),
-        children: F.intl.string(F.t.uvDZBQ)
+        children: L.intl.string(L.t.uvDZBQ)
       })]
     })), D(this, "handleSearchResultClick", (e, t) => {
       let n = x.Z.getChannel(e.channel_id),
@@ -446,7 +446,7 @@ function q(e) {
   s.useEffect(() => {
     c && u && i(!0)
   }, [u, c]), s.useEffect(() => {
-    c && (u || t !== a.current && (a.current = t, f.Z.possiblyShowFeedbackModal(L.nw.SEARCH_RESULTS, () => i(!0), () => i(!1))))
+    c && (u || t !== a.current && (a.current = t, f.Z.possiblyShowFeedbackModal(F.nw.SEARCH_RESULTS, () => i(!0), () => i(!1))))
   }, [c, u, t]);
   let d = s.useCallback(() => {
     i(!1)

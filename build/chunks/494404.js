@@ -1,6 +1,6 @@
 /** Chunk was on 95336 **/
 n.d(t, {
-  ZP: () => L,
+  ZP: () => F,
   h4: () => N,
   nH: () => k
 }), n(388685), n(539854);
@@ -189,20 +189,20 @@ function w(e) {
       E.S.unsubscribe(C.CkL.SCROLL_PAGE_DOWN, t), E.S.unsubscribe(C.CkL.SCROLL_PAGE_UP, e)
     }
   }, []);
-  let L = s.useCallback(() => {
+  let F = s.useCallback(() => {
       var e;
       let t = null == (e = k.current) ? void 0 : e.getScrollerState();
       null != t && t.scrollHeight - t.scrollTop - t.offsetHeight < 250 && l && !o && (null == p || p())
     }, [l, p, o]),
-    F = [],
+    L = [],
     M = !0;
-  null == n || o && 0 === n.length ? F = [(0, r.jsx)("div", {
+  null == n || o && 0 === n.length ? L = [(0, r.jsx)("div", {
     className: a()(R.emptyPlaceholder, R.loadingPlaceholder),
     children: (0, r.jsx)(h.$jN, {})
-  }, "spinner")] : 0 === n.length ? F.push((0, r.jsx)(s.Fragment, {
+  }, "spinner")] : 0 === n.length ? L.push((0, r.jsx)(s.Fragment, {
     children: b()
-  }, "empty-state")) : (M = !1, F = [], i().each(n, e => {
-    F.push(...y(e))
+  }, "empty-state")) : (M = !1, L = [], i().each(n, e => {
+    L.push(...y(e))
   }));
   let D = null;
   null != n && n.length > 0 && null != p && (D = o ? (0, r.jsx)("div", {
@@ -248,7 +248,7 @@ function w(e) {
       component: m(),
       children: [(0, r.jsxs)(h.Den, {
         className: a()(R.messagesPopout, x),
-        onScroll: G ? L : void 0,
+        onScroll: G ? F : void 0,
         ref: k,
         children: [(0, r.jsx)(c.bG, {
           navigator: A,
@@ -286,7 +286,7 @@ function w(e) {
               }({
                 ref: s
               }, l), n = n = {
-                children: F
+                children: L
               }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
@@ -305,7 +305,7 @@ function w(e) {
   })
 }
 
-function L(e) {
+function F(e) {
   let {
     analyticsName: t,
     onFetch: n,

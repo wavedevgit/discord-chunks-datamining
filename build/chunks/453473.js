@@ -36,9 +36,9 @@ var r = n(255367),
   A = n(74551),
   Z = n(981631),
   w = n(388032),
-  L = n(585693);
+  F = n(585693);
 
-function F(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -83,7 +83,7 @@ function H(e) {
   return (0, r.jsx)(f.VqE, {
     "aria-label": w.intl.string(w.t["2pAkDA"]),
     children: (0, r.jsxs)("div", {
-      className: L.popoutContainer,
+      className: F.popoutContainer,
       children: [(0, r.jsx)(m.h4, {
         icon: f.plf,
         title: w.intl.string(w.t["2pAkDA"])
@@ -179,12 +179,12 @@ function G(e) {
           }
           return s
         }(e, ["ref"]);
-        return (0, r.jsx)(f.h21, M(F({
+        return (0, r.jsx)(f.h21, M(L({
           ref: e => {
             var t;
             l.current = e, s.current = null != (t = null == e ? void 0 : e.getScrollerNode()) ? t : null
           },
-          className: L.messagesScroller
+          className: F.messagesScroller
         }, a), {
           children: t.map(e => (0, r.jsx)(z, {
             savedMessageKey: e,
@@ -213,9 +213,9 @@ function W(e) {
     })
   }, [n, t, o]), c = (0, p.e7)([O.Z], () => !!((null == o ? void 0 : o.type) === Z.d4z.UNKNOWN || (null == o ? void 0 : o.isPrivate())) || O.Z.can(Z.Plq.VIEW_CHANNEL, o));
   return null != o && null != t.message && c ? (0, r.jsxs)("div", {
-    className: L.messageContainer,
+    className: F.messageContainer,
     children: [(0, r.jsx)(f.P3F, {
-      className: L.clickableMessageBackground,
+      className: F.clickableMessageBackground,
       onClick: i,
       "aria-label": w.intl.string(w.t["+TSRGB"])
     }), null != t.saveData.dueAt ? (0, r.jsx)(A.Z, {
@@ -226,22 +226,22 @@ function W(e) {
     }), (0, r.jsx)(S.Z, {
       message: t.message,
       channel: o,
-      className: L.message,
+      className: F.message,
       compact: j.jU.getSetting(),
       animateAvatar: !1,
       focusProps: D,
       trackAnnouncementViews: !0
     }, t.message.id), (0, r.jsx)(x.ZP, {
-      className: L.hoverBar,
+      className: F.hoverBar,
       children: (0, r.jsx)(q, {
         savedMessage: t,
         jumpToMessage: i
       })
     })]
   }) : (0, r.jsxs)("div", {
-    className: a()(L.messageContainer, L.deletedMessage),
+    className: a()(F.messageContainer, F.deletedMessage),
     children: [(0, r.jsx)("div", {
-      className: L.deleteIcon,
+      className: F.deleteIcon,
       children: (0, r.jsx)(f.P4T, {
         size: "xxs",
         color: f.TVs.colors.INTERACTIVE_ACTIVE
@@ -251,7 +251,7 @@ function W(e) {
       color: "header-secondary",
       children: null != t.saveData.dueAt ? w.intl.string(w.t["wuQm+v"]) : w.intl.string(w.t.o572FR)
     }), (0, r.jsx)(x.ZP, {
-      className: L.hoverBar,
+      className: F.hoverBar,
       children: (0, r.jsx)(x.sF, {
         label: w.intl.string(w.t.SvXS1d),
         icon: f.XHJ,
@@ -296,7 +296,7 @@ function q(e) {
         let {
           MessageReminderEditMenu: e
         } = await n.e("69818").then(n.bind(n, 898150));
-        return n => (0, r.jsx)(e, M(F({}, n), {
+        return n => (0, r.jsx)(e, M(L({}, n), {
           label: w.intl.string(w.t.roMu1N),
           message: t.message
         }))
@@ -318,7 +318,7 @@ function q(e) {
         let {
           MessageReminderEditMenu: e
         } = await n.e("69818").then(n.bind(n, 898150));
-        return n => (0, r.jsx)(e, M(F({}, n), {
+        return n => (0, r.jsx)(e, M(L({}, n), {
           label: w.intl.string(w.t.mJ3P0N),
           message: t.message
         }))

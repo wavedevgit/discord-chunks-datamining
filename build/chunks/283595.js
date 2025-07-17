@@ -119,7 +119,7 @@ function x(e) {
   O[r] = n, I.delete(r)
 }
 
-function k(e) {
+function M(e) {
   let {
     applicationId: t,
     branchId: n,
@@ -128,7 +128,7 @@ function k(e) {
   S[(0, d.Tu)(t, n)] = r, N()
 }
 
-function M(e) {
+function k(e) {
   let {
     applicationId: t,
     branchId: n
@@ -234,8 +234,8 @@ let Z = new F(l.Z, {
   LIBRARY_APPLICATION_FLAGS_UPDATE_START: L,
   LIBRARY_APPLICATION_FLAGS_UPDATE_SUCCESS: x,
   LIBRARY_APPLICATION_UPDATE: x,
-  LIBRARY_APPLICATION_ACTIVE_LAUNCH_OPTION_UPDATE: k,
-  LIBRARY_APPLICATION_ACTIVE_BRANCH_UPDATE: M,
+  LIBRARY_APPLICATION_ACTIVE_LAUNCH_OPTION_UPDATE: M,
+  LIBRARY_APPLICATION_ACTIVE_BRANCH_UPDATE: k,
   LIBRARY_APPLICATIONS_TEST_MODE_ENABLED: j,
   DEVELOPER_TEST_MODE_RESET: U
 })

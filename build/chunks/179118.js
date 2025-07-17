@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => k
+  Z: () => M
 }), n(388685), n(642613);
 var r = n(255367),
   i = n(73800),
@@ -36,7 +36,7 @@ var r = n(255367),
   L = n(136266);
 let x = 1500;
 
-function k(e) {
+function M(e) {
   let {
     giftCode: t,
     application: n,
@@ -48,7 +48,7 @@ function k(e) {
     giftRecipient: m,
     giftMessageError: b,
     isSendingMessage: y
-  } = e, [v, T] = i.useState(d.kO8.Modes.DEFAULT), k = (0, c.e7)([I.Z], () => I.Z.enabled), j = _ || null != l && null != m, U = (null == a ? void 0 : a.productLine) === P.POd.COLLECTIBLES, G = (0, E.Z)(), {
+  } = e, [v, T] = i.useState(d.kO8.Modes.DEFAULT), M = (0, c.e7)([I.Z], () => I.Z.enabled), j = _ || null != l && null != m, U = (null == a ? void 0 : a.productLine) === P.POd.COLLECTIBLES, G = (0, E.Z)(), {
     selectedGiftingPromotionReward: B
   } = (0, R.wD)(), V = null == G ? void 0 : G.giftPurchaseConfirmation, F = (0, g.tK)(null == B ? void 0 : B.skuId), Z = (0, g.a5)(s) && null != F && null != V, H = () => null != s ? s.skuId : null != a ? a.id : null, Y = () => {
     let e;
@@ -81,7 +81,7 @@ function k(e) {
       children: [(0, r.jsx)(d.vwX, {
         children: D.intl.string(D.t["/dG4ND"])
       }), null != t && (0, r.jsx)(d.kO8, {
-        hideMessage: k ? D.intl.string(D.t["0RLn4+"]) : null,
+        hideMessage: M ? D.intl.string(D.t["0RLn4+"]) : null,
         value: (0, A.Nz)(t),
         mode: v,
         text: e,
@@ -99,7 +99,7 @@ function k(e) {
     children: [(0, r.jsx)("div", {
       className: L.blurb,
       children: Y()
-    }), null == b && (0, r.jsx)(M, {
+    }), null == b && (0, r.jsx)(k, {
       giftCode: t,
       onClose: f
     }), (0, r.jsx)("div", {
@@ -151,7 +151,7 @@ function k(e) {
     }), _ && null != m && null == b || j ? X() : q()]
   })
 }
-let M = e => {
+let k = e => {
   let {
     giftCode: t,
     onClose: n

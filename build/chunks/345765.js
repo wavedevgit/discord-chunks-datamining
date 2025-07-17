@@ -128,12 +128,12 @@ async function x(e) {
   }
 }
 
-function k() {
+function M() {
   L()
 }
 
-function M() {
-  k()
+function k() {
+  M()
 }
 
 function j() {
@@ -177,11 +177,11 @@ function V() {
 class F extends o.Z {
   constructor(...e) {
     super(...e), b(this, "actions", {
-      POST_CONNECTION_OPEN: M,
+      POST_CONNECTION_OPEN: k,
       CONNECTION_CLOSED: j,
-      WINDOW_FOCUS: k,
-      IDLE: k,
-      CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN: k,
+      WINDOW_FOCUS: M,
+      IDLE: M,
+      CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN: M,
       CONTENT_INVENTORY_MANUAL_REFRESH: U,
       CONTENT_INVENTORY_INBOX_STALE: G,
       SPOTIFY_NEW_TRACK: B,

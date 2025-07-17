@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Q8: () => k,
+  Q8: () => M,
   ZP: () => j
 }), n(388685), n(539854);
 var r = n(255367),
@@ -106,7 +106,7 @@ let N = new p.Z("ChoosePaymentSourceType"),
   L = "40c266_1",
   x = 1e3;
 
-function k(e) {
+function M(e) {
   let {
     enabledPaymentTypes: t,
     forceCountryCode: n,
@@ -128,7 +128,7 @@ function k(e) {
     remainingPaymentMethods: o
   }
 }
-class M extends i.PureComponent {
+class k extends i.PureComponent {
   componentDidMount() {
     var e;
     (0, u.GE)(), (null != (e = this.props.paymentRequestWallets) ? e : []).length > 0 && setTimeout(() => {
@@ -215,12 +215,12 @@ class M extends i.PureComponent {
         a = "".concat(e, "-").concat(t);
       return "applePay" === e ? (0, r.jsx)(_.Ch, T({}, h, i), a) : (0, r.jsx)(_.Tr, T({}, h, i), a)
     }), g = [], E = [], b = void 0 === s || this.arePaymentRequestWalletsLoading();
-    if (l) g.push(...this.createPaymentButtons(k("ALL").countryPaymentMethods));
+    if (l) g.push(...this.createPaymentButtons(M("ALL").countryPaymentMethods));
     else {
       let {
         countryPaymentMethods: e,
         remainingPaymentMethods: t
-      } = k(s);
+      } = M(s);
       g.push(...this.createPaymentButtons(e)), E.push(...this.createPaymentButtons(t))
     }
     let I = (0, r.jsxs)("div", {
@@ -274,4 +274,4 @@ let j = s.ZP.connectStores([g.Z], () => ({
   ipCountryCode: g.Z.ipCountryCode,
   ipCountryCodeHasError: g.Z.ipCountryCodeHasError,
   localizedPromo: g.Z.localizedPricingPromo
-}))(M)
+}))(k)
