@@ -177,9 +177,12 @@ function Z(e) {
         }), null == Y || Y()
       }
     });
-    if ((0, c.Z)(i)) return (0, r.jsx)(R.Z, {
-      variant: "text-xs/normal",
-      text: i.details
+    if ((0, c.Z)(i)) return (0, r.jsx)(p._, {
+      href: i.details_url,
+      children: (0, r.jsx)(R.Z, {
+        variant: "text-xs/normal",
+        text: i.details
+      })
     });
     if ((0, b.dS)(i)) {
       var e;
@@ -220,9 +223,12 @@ function Z(e) {
     var e, t, n, a;
     return (null == (e = i.party) ? void 0 : e.size) == null && i.application_id === M.Zc ? (0, r.jsxs)("div", {
       className: U.gameState,
-      children: [(0, r.jsx)(R.Z, {
-        variant: "text-xs/normal",
-        text: i.state
+      children: [(0, r.jsx)(p._, {
+        href: i.state_url,
+        children: (0, r.jsx)(R.Z, {
+          variant: "text-xs/normal",
+          text: i.state
+        })
       }), (0, r.jsx)(R.Z, {
         variant: "text-xs/normal",
         text: j.intl.formatToPlainString(j.t["u//9Bw"], {
@@ -232,9 +238,12 @@ function Z(e) {
       })]
     }) : (0, l.Z)(i) && (null == (t = i.party) ? void 0 : t.size) != null && (null == (n = i.party) ? void 0 : n.size.length) >= 2 ? (0, r.jsxs)("div", {
       className: U.gameState,
-      children: [(0, r.jsx)(R.Z, {
-        variant: "text-xs/normal",
-        text: i.state
+      children: [(0, r.jsx)(p._, {
+        href: i.state_url,
+        children: (0, r.jsx)(R.Z, {
+          variant: "text-xs/normal",
+          text: i.state
+        })
       }), (0, r.jsx)(R.Z, {
         variant: "text-xs/normal",
         text: 0 === i.party.size[1] ? j.intl.formatToPlainString(j.t.IM4J4e, {
@@ -244,9 +253,12 @@ function Z(e) {
           max: i.party.size[1]
         })
       })]
-    }) : null == i.party ? (0, r.jsx)(R.Z, {
-      variant: "text-xs/normal",
-      text: i.state
+    }) : null == i.party ? (0, r.jsx)(p._, {
+      href: i.state_url,
+      children: (0, r.jsx)(R.Z, {
+        variant: "text-xs/normal",
+        text: i.state
+      })
     }) : null
   }, eu = () => {
     if (!(0, I.Z)(i)) return null;

@@ -207,7 +207,9 @@ async function tP(t, e) {
     name: tl.ZP.getName(null, null, i),
     activity: t.name
   }), "", {
-    notif_type: "game_notif"
+    notif_type: "game_notif",
+    application_id: t.id,
+    affine_user_id: e
   }, {
     onClick: t => {
       d.Z.openPrivateChannel({
