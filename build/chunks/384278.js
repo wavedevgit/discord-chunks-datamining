@@ -1,7 +1,8 @@
 /** Chunk was on 36006 **/
 "use strict";
 n.d(t, {
-  M1: () => c
+  M1: () => c,
+  NM: () => a
 });
 var r = n(70956),
   i = n(818083),
@@ -67,6 +68,8 @@ let o = (0, s.le)({
       inExperiment: n
     } = a.getCurrentConfig({
       location: e
+    }, {
+      autoTrackExposure: !0
     });
     if (n) return {
       delayMs: t,
