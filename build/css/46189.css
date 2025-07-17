@@ -1,6 +1,6 @@
 /**
   Module ID: 46189
-  Original File Name: 327e6cdf8789874d
+  Original File Name: e5d1defbf3a96731
 **/
 .editCard_a25a68 {
     background-color: var(--background-surface-high);
@@ -2670,17 +2670,6 @@
     text-transform: uppercase
 }
 
-.closeButton__8079d {
-    position: absolute;
-    right: 12px;
-    top: 12px
-}
-
-.modalContent__8079d {
-    padding-bottom: 16px;
-    padding-top: 16px
-}
-
 .emojiInputContainer__8079d {
     position: relative
 }
@@ -2701,29 +2690,6 @@
 .emojiText__8079d {
     cursor: pointer;
     padding-left: calc(var(--custom-edit-benefit-modal-emoji-margin) + var(--custom-edit-benefit-modal-emoji-size) + var(--custom-edit-benefit-modal-emoji-margin))
-}
-
-.primaryButtons__8079d {
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 24px
-}
-
-.deleteButton__8079d {
-    color: var(--interactive-normal)
-}
-
-.deleteButton__8079d:hover {
-    color: var(--interactive-hover)
-}
-
-.deleteButton__8079d:active {
-    color: var(--interactive-active)
-}
-
-.cancelButton__8079d {
-    min-width: 0;
-    padding: 0
 }
 
 .container_d28fa1 {
@@ -12510,4 +12476,4 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     width: 8px
 }
 
-/*# sourceMappingURL=327e6cdf8789874d.css.map*/
+/*# sourceMappingURL=e5d1defbf3a96731.css.map*/

@@ -85,21 +85,20 @@ function F(e) {
     nick: _,
     colorString: O
   } = (0, y.ZP)(t), {
-    avatarDecorationSrc: v,
-    avatarSrc: C,
-    eventHandlers: x
+    avatarSrc: v,
+    eventHandlers: C
   } = (0, P.Z)({
     userId: t.author.id,
     size: u.EFr.SIZE_32,
     guildId: null == f ? void 0 : f.id,
     animateOnHover: !0
-  }), S = n.type !== M.d4z.GUILD_ANNOUNCEMENT || null == f, I = (0, j.x)({
+  }), x = n.type !== M.d4z.GUILD_ANNOUNCEMENT || null == f, S = (0, j.x)({
     channel: n,
     message: t,
     user: t.author,
     compact: !0,
     isRepliedMessage: !0
-  }), N = (0, r.jsx)("div", {
+  }), I = (0, r.jsx)("div", {
     className: G.usernameTagContainer,
     children: (0, r.jsx)(E.Z, {
       channel: n,
@@ -113,8 +112,8 @@ function F(e) {
     null != f && T.Z.requestMember(f.id, t.author.id)
   }, [f, t.author.id]), (0, r.jsx)(u.tEY, V(B({}, l), {
     children: (0, r.jsxs)("div", {
-      onMouseLeave: x.onMouseLeave,
-      onMouseEnter: x.onMouseEnter,
+      onMouseLeave: C.onMouseLeave,
+      onMouseEnter: C.onMouseEnter,
       className: G.messageContainer,
       children: [a && (0, r.jsx)("div", {
         className: G.unreadDot
@@ -124,14 +123,13 @@ function F(e) {
           width: "fit-content",
           marginTop: "4px"
         },
-        children: S ? (0, r.jsx)(L.q, {
+        children: x ? (0, r.jsx)(L.q, {
           "aria-label": "User Avatar",
-          src: C,
+          src: v,
           size: u.EFr.SIZE_32,
           cornerIconUrl: null != f ? (0, w.EB)(f, 24) : void 0,
           cornerIconOffsetX: 4,
-          cornerIconOffsetY: 3,
-          avatarDecoration: v
+          cornerIconOffsetY: 3
         }) : (0, r.jsx)(L.E, {
           "aria-label": "Guild Icon",
           src: (0, w.EB)(f, 32),
@@ -153,7 +151,7 @@ function F(e) {
             minWidth: 0,
             justifyContent: "space-between"
           },
-          children: [S ? (0, r.jsxs)("div", {
+          children: [x ? (0, r.jsxs)("div", {
             className: G.usernameOuterContainer,
             children: [(0, r.jsx)("div", {
               className: G.username,
@@ -161,9 +159,9 @@ function F(e) {
                 color: O
               },
               children: (0, r.jsx)(b.Z, {
-                children: N
+                children: I
               })
-            }), I]
+            }), S]
           }) : (0, r.jsx)(b.Z, {
             children: (0, r.jsx)(u.X6q, {
               variant: "text-md/semibold",
@@ -209,7 +207,7 @@ function F(e) {
               [G.unread]: a,
               [G.selected]: s
             }),
-            children: [p, !S && " \xb7 ".concat(_)]
+            children: [p, !x && " \xb7 ".concat(_)]
           })]
         }), (0, r.jsx)(W, {
           message: t,

@@ -1,6 +1,6 @@
 /**
   Module ID: 96127
-  Original File Name: 9a613d0f706598ab
+  Original File Name: f07b1c0f218af543
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -2599,17 +2599,6 @@
 .caughtUpText_ea5470 {
     flex: 1 0 auto;
     text-align: center
-}
-
-.caughtUpCloseIcon_ea5470 {
-    align-items: center;
-    bottom: auto;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    right: 16px;
-    top: auto
 }
 
 .full-motion .headerButton_ea5470 {
@@ -8305,4 +8294,4 @@ div:has(>.positionLayer__4f4b6) {
     width: 96px
 }
 
-/*# sourceMappingURL=9a613d0f706598ab.css.map*/
+/*# sourceMappingURL=f07b1c0f218af543.css.map*/
