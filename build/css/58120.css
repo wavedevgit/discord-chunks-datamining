@@ -1,6 +1,6 @@
 /**
   Module ID: 58120
-  Original File Name: 3185f3a642a2db13
+  Original File Name: e0ae585e277e0b45
 **/
 .container_f89b2c {
     background-color: var(--input-background);
@@ -206,21 +206,6 @@
     }
 }
 
-.closeButton__915cb {
-    position: absolute;
-    right: 4px;
-    top: 4px
-}
-
-.content__915cb {
-    padding-bottom: 32px
-}
-
-.header__915cb {
-    text-align: center;
-    width: 100%
-}
-
 .warning__915cb {
     margin-bottom: 16px
 }
@@ -245,4 +230,4 @@
     margin-top: 8px
 }
 
-/*# sourceMappingURL=3185f3a642a2db13.css.map*/
+/*# sourceMappingURL=e0ae585e277e0b45.css.map*/
