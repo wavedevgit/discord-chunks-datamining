@@ -1,7 +1,7 @@
 /** Chunk was on 28467 **/
 n.d(t, {
-  Z: () => A,
-  f: () => D
+  Z: () => D,
+  f: () => A
 }), n(388685);
 var s = n(255367),
   a = n(73800),
@@ -25,16 +25,16 @@ var s = n(255367),
   b = n(55935),
   y = n(823379),
   P = n(453687),
-  E = n(930282),
-  N = n(123145),
+  N = n(930282),
+  E = n(123145),
   S = n(223021),
   I = n(217702),
   T = n(981631),
   M = n(388032),
   k = n(848697),
-  L = n(73433);
+  w = n(73433);
 
-function w(e) {
+function L(e) {
   let {
     width: t = 12,
     height: n = 8,
@@ -75,7 +75,7 @@ function _(e) {
   })
 }
 
-function D(e, t, n, a, r, i) {
+function A(e, t, n, a, r, i) {
   let o, u, m, d, f = (0, h.Z)(e),
     {
       trailingIconClass: C,
@@ -84,10 +84,10 @@ function D(e, t, n, a, r, i) {
     } = i,
     y = null == t || "" === t || Array.isArray(t) && 0 === t.length,
     P = (0, O.cv)(f).length > 0,
-    N = null != f.interaction,
+    E = null != f.interaction,
     S = f.hasFlag(T.iLy.IS_VOICE_MESSAGE),
     I = f.isPoll(),
-    w = f.type === T.uaV.POLL_RESULT;
+    L = f.type === T.uaV.POLL_RESULT;
   if ((0, g.Z)(e) && (d = (0, s.jsx)(j.Z, {
       size: "custom",
       className: v,
@@ -102,19 +102,19 @@ function D(e, t, n, a, r, i) {
   });
   else if (y)
     if (I) {
-      var _, D;
+      var _, A;
       u = (0, s.jsx)("div", {
-        className: l()(k.repliedTextContent, L.markup),
-        children: null == f || null == (D = f.poll) || null == (_ = D.question) ? void 0 : _.text
+        className: l()(k.repliedTextContent, w.markup),
+        children: null == f || null == (A = f.poll) || null == (_ = A.question) ? void 0 : _.text
       })
-    } else w ? o = (0, x.N4)(f) : P ? o = M.intl.string(M.t.kHdYCQ) : N ? o = M.intl.string(M.t["E+6SSU"]) : S ? o = M.intl.string(M.t["XC3A5+"]) : f.hasFlag(T.iLy.IS_COMPONENTS_V2) ? o = M.intl.string(M.t.Xxat6e) : (o = M.intl.string(M.t["6hGo0d"]), m = (0, s.jsx)(c.XBm, {
+    } else L ? o = (0, x.N4)(f) : P ? o = M.intl.string(M.t.kHdYCQ) : E ? o = M.intl.string(M.t["E+6SSU"]) : S ? o = M.intl.string(M.t["XC3A5+"]) : f.hasFlag(T.iLy.IS_COMPONENTS_V2) ? o = M.intl.string(M.t.Xxat6e) : (o = M.intl.string(M.t["6hGo0d"]), m = (0, s.jsx)(c.XBm, {
       size: "custom",
       color: "currentColor",
       className: C,
       width: b,
       height: b
     }));
-  else u = (0, s.jsx)(E.ZP, {
+  else u = (0, s.jsx)(N.ZP, {
     message: f,
     content: t,
     className: r,
@@ -126,7 +126,7 @@ function D(e, t, n, a, r, i) {
     className: C,
     width: b,
     height: b
-  }) : N ? m = (0, s.jsx)(c.SsZ, {
+  }) : E ? m = (0, s.jsx)(c.SsZ, {
     size: "custom",
     color: "currentColor",
     className: C,
@@ -138,7 +138,7 @@ function D(e, t, n, a, r, i) {
     className: C,
     width: 19 / 24 * b,
     height: b
-  }) : (f.attachments.length > 0 || f.embeds.length > 0) && !w && (m = (0, s.jsx)(c.XBm, {
+  }) : (f.attachments.length > 0 || f.embeds.length > 0) && !L && (m = (0, s.jsx)(c.XBm, {
     size: "custom",
     color: "currentColor",
     className: C,
@@ -152,7 +152,7 @@ function D(e, t, n, a, r, i) {
   }
 }
 
-function A(e) {
+function D(e) {
   let t, {
       repliedAuthor: n,
       baseAuthor: r,
@@ -169,9 +169,9 @@ function A(e) {
     }, {
       autoTrackExposure: !1
     }),
-    [O, E] = a.useState(!1),
-    L = a.useMemo(() => null != g && p.state === f.Y.LOADED ? e => g(e, p.message) : void 0, [p, g]),
-    A = a.useCallback(() => E(e => !e), []),
+    [O, N] = a.useState(!1),
+    w = a.useMemo(() => null != g && p.state === f.Y.LOADED ? e => g(e, p.message) : void 0, [p, g]),
+    D = a.useCallback(() => N(e => !e), []),
     R = function(e, t, n) {
       let {
         referencedMessage: r,
@@ -193,7 +193,7 @@ function A(e) {
         })
       }) : (0, s.jsx)("div", {
         className: k.replyBadge,
-        children: (0, s.jsx)(w, {
+        children: (0, s.jsx)(L, {
           className: k.replyIcon
         })
       });
@@ -243,7 +243,7 @@ function A(e) {
         value: C,
         children: b()
       })
-    }(e, L, i.type),
+    }(e, w, i.type),
     Z = function(e, t) {
       let {
         baseMessage: n,
@@ -254,7 +254,7 @@ function A(e) {
         onContextMenu: o,
         onPopoutRequestClose: c
       } = e, u = (null == r ? void 0 : r.state) === f.Y.LOADED ? r.message : void 0;
-      return null == u || u.type === T.uaV.USER_JOIN || u.type === T.uaV.ROLE_SUBSCRIPTION_PURCHASE || u.type === T.uaV.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION || u.type === T.uaV.GUILD_DEADCHAT_REVIVE_PROMPT || u.type === T.uaV.GUILD_GAMING_STATS_PROMPT || u.type === T.uaV.POLL_RESULT ? null : (0, s.jsx)(N.Z, {
+      return null == u || u.type === T.uaV.USER_JOIN || u.type === T.uaV.ROLE_SUBSCRIPTION_PURCHASE || u.type === T.uaV.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION || u.type === T.uaV.GUILD_DEADCHAT_REVIVE_PROMPT || u.type === T.uaV.GUILD_GAMING_STATS_PROMPT || u.type === T.uaV.POLL_RESULT ? null : (0, s.jsx)(E.Z, {
         message: u,
         channel: a,
         compact: !0,
@@ -266,8 +266,8 @@ function A(e) {
         onPopoutRequestClose: c,
         isRepliedMessage: !0
       })
-    }(e, L),
-    U = function(e, t, n) {
+    }(e, w),
+    V = function(e, t, n) {
       let {
         content: a,
         referencedMessage: r,
@@ -282,7 +282,7 @@ function A(e) {
             renderedContent: u,
             trailingIcon: d,
             leadingIcon: p
-          } = D(r.message, a, i, o, k.repliedTextContent, {
+          } = A(r.message, a, i, o, k.repliedTextContent, {
             trailingIconClass: k.repliedTextContentTrailingIcon,
             leadingIconClass: k.repliedTextContentLeadingIcon,
             iconSize: I.WW
@@ -324,16 +324,16 @@ function A(e) {
         default:
           (0, y.vE)(r)
       }
-    }(e, O, A),
-    V = a.useMemo(() => e.compact ? (0, S.Z)((0, b.vc)(o()(), "LT")) : null, [e.compact]);
+    }(e, O, D),
+    U = a.useMemo(() => e.compact ? (0, S.Z)((0, b.vc)(o()(), "LT")) : null, [e.compact]);
   null != n && null != r && (t = M.intl.formatToPlainString(M.t.RhbQ2N, {
     author: null == r ? void 0 : r.nick,
     repliedAuthor: null == n ? void 0 : n.nick
   }));
-  let z = i.type === T.uaV.CONTEXT_MENU_COMMAND;
+  let G = i.type === T.uaV.CONTEXT_MENU_COMMAND;
   return (0, s.jsxs)("div", {
     id: (0, P.Gq)(i),
-    className: l()(k.repliedMessage, V, z ? k.contextCommandMessage : {
+    className: l()(k.repliedMessage, U, G ? k.contextCommandMessage : {
       [k.messageSpine]: !x || !h && j
     }),
     "aria-label": t,
@@ -344,8 +344,8 @@ function A(e) {
         [k.repliedMessageContentHovered]: O
       }),
       onClick: e.onClickReply,
-      onMouseEnter: A,
-      onMouseLeave: A
-    }), R, Z, U]
+      onMouseEnter: D,
+      onMouseLeave: D
+    }), R, Z, V]
   })
 }
