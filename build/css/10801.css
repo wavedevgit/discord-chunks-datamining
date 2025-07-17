@@ -1,6 +1,6 @@
 /**
   Module ID: 10801
-  Original File Name: 87d5c32da4086348
+  Original File Name: 6400fbc17da25b1c
 **/
 @keyframes placeholderPulse_c8ffbb {
     0% {
@@ -485,7 +485,8 @@
 }
 
 .align-chat-input .inTextChannel_b88801 .text_b88801>strong {
-    color: var(--text-default)
+    color: var(--text-default);
+    font-weight: var(--font-weight-semibold)
 }
 
 .typing_b88801 {
@@ -7056,19 +7057,23 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .align-chat-input .scroller__36d07::-webkit-scrollbar-track {
-    margin-bottom: 32px
+    margin-bottom: 40px
+}
+
+.align-chat-input .scroller__36d07:not(:hover)::-webkit-scrollbar-thumb {
+    background: transparent
 }
 
 .align-chat-input .scrollerSpacer__36d07 {
-    height: 40px
+    height: 44px
 }
 
 .align-chat-input .scrollerSpacer__36d07.empty__36d07 {
-    height: 40px
+    height: 44px
 }
 
 .align-chat-input .scrollerSpacer__36d07.emptyForum__36d07 {
-    height: 32px
+    height: 36px
 }
 
 .scroller__36d07 {
@@ -8569,6 +8574,10 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     margin-left: 8px;
     min-height: var(--custom-channel-textarea-text-area-height);
     min-width: var(--custom-app-dm-chat-input-primary-button-width)
+}
+
+.align-chat-input .entryPointAppCommandButton_a83188 {
+    height: 100%
 }
 
 .buttonContainer_e6e74f {
@@ -13270,4 +13279,4 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     position: relative
 }
 
-/*# sourceMappingURL=87d5c32da4086348.css.map*/
+/*# sourceMappingURL=6400fbc17da25b1c.css.map*/

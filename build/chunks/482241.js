@@ -278,14 +278,14 @@ let h = {
     rejectWithError: !1
   }),
   deleteRecurrence(e, t, n, r) {
-    if (null != r) this.updateGuildEventException({
+    if (null != r) return this.updateGuildEventException({
       scheduled_start_time: r.scheduled_start_time,
       scheduled_end_time: r.scheduled_end_time,
       is_canceled: !0
     }, e, t, n);
-    else {
+    {
       let r = l.default.extractTimestamp(n);
-      this.createGuildEventException({
+      return this.createGuildEventException({
         original_scheduled_start_time: new Date(r).toISOString(),
         is_canceled: !0
       }, e, t)

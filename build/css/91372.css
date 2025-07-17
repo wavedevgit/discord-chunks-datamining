@@ -1,6 +1,6 @@
 /**
   Module ID: 91372
-  Original File Name: c8d33b2765962455
+  Original File Name: e775a4514932689e
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -4406,7 +4406,7 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
 .align-chat-input .avatarWrapper__37e49 {
     border-radius: var(--radius-xs);
     margin-left: calc(var(--custom-panels-spacing) - var(--custom-guild-list-padding) + 4px);
-    padding: 6px calc(var(--custom-guild-list-padding) - var(--custom-panels-spacing) - 4px)
+    padding: 5px calc(var(--custom-guild-list-padding) - var(--custom-panels-spacing) - 4px)
 }
 
 .refresh-fast-follow-avatars .container__37e49 {
@@ -20429,4 +20429,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=c8d33b2765962455.css.map*/
+/*# sourceMappingURL=e775a4514932689e.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 13653
-  Original File Name: 5b92bf1bc903162b
+  Original File Name: 836bebf56dd38bb7
 **/
 .slowModeIcon_b21699 {
     display: block;
@@ -130,7 +130,8 @@
 }
 
 .align-chat-input .inTextChannel_b88801 .text_b88801>strong {
-    color: var(--text-default)
+    color: var(--text-default);
+    font-weight: var(--font-weight-semibold)
 }
 
 .typing_b88801 {
@@ -2710,4 +2711,4 @@
     pointer-events: none
 }
 
-/*# sourceMappingURL=5b92bf1bc903162b.css.map*/
+/*# sourceMappingURL=836bebf56dd38bb7.css.map*/

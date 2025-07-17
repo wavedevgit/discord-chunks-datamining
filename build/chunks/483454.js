@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  M: () => R,
+  M: () => P,
   h: () => C
 }), n(467055), n(388685);
 var r = n(255367),
@@ -219,7 +219,8 @@ let T = [u.h8.PAYMENT_ELEMENT],
       children: (0, r.jsx)(N, b({}, n))
     })
   },
-  R = e => {
+  R = ["city", "country", "line1", "postalCode", "state"],
+  P = e => {
     let {
       step: t,
       handleStepChange: n,
@@ -240,8 +241,7 @@ let T = [u.h8.PAYMENT_ELEMENT],
             address: r,
             name: i
           }
-        } = e;
-        o({
+        } = e, a = {
           name: i,
           country: r.country,
           city: r.city,
@@ -249,7 +249,11 @@ let T = [u.h8.PAYMENT_ELEMENT],
           line2: null != (t = r.line2) ? t : "",
           state: r.state,
           postalCode: r.postal_code
-        }, n)
+        }, s = R.every(e => {
+          let t = a[e];
+          return null != t && "" !== t
+        }) && n;
+        o(a, s)
       }
     }), [o]), y = i.useCallback(function(e) {
       let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
