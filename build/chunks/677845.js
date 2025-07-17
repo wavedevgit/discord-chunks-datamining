@@ -1,4 +1,4 @@
-/** Chunk was on 10801 **/
+/** Chunk was on 2016 **/
 n.d(t, {
   Z: () => S
 }), n(539854);
@@ -22,8 +22,8 @@ var r = n(255367),
   C = n(434488),
   x = n(27457),
   v = n(251564),
-  j = n(695492),
-  O = n(981631),
+  O = n(695492),
+  j = n(981631),
   E = n(600295);
 
 function S(e) {
@@ -34,9 +34,9 @@ function S(e) {
     onContextMenu: P,
     channel: I,
     className: Z,
-    inCall: N,
-    totalNumberOfParticipants: T
-  } = e, A = (0, c.bp)() === O.IlC.POPOUT, w = (0, o.e7)([_.Z], () => _.Z.getGuild(I.guild_id), [I.guild_id]), {
+    inCall: T,
+    totalNumberOfParticipants: N
+  } = e, A = (0, c.bp)() === j.IlC.POPOUT, w = (0, o.e7)([_.Z], () => _.Z.getGuild(I.guild_id), [I.guild_id]), {
     dismissedActivityEntryPointTileChannel: R
   } = (0, v.d)(), M = (0, o.e7)([h.Z], () => h.Z.getUserParticipantCount(I.id), [I]), D = (0, b.bt)(I.id, t), L = i.useCallback(() => {
     (0, a.j)(() => {
@@ -66,7 +66,7 @@ function S(e) {
       onClick: n,
       onDoubleClick: S,
       onContextMenu: P,
-      inCall: N,
+      inCall: T,
       width: t,
       inPopout: A
     }, e.id));
@@ -74,7 +74,7 @@ function S(e) {
     type: l.ImpressionTypes.VIEW,
     name: l.ImpressionNames.CHANNEL_CALL_VIDEO_GRID_VIEW,
     properties: {
-      total_participants: T,
+      total_participants: N,
       can_invite: k,
       is_afk_channel: U,
       channel_user_limit: I.userLimit
@@ -88,7 +88,7 @@ function S(e) {
     inPopout: A,
     handleClose: L,
     userParticipantCount: M
-  })) : z.push(e => (0, r.jsx)(j.Z, {
+  })) : z.push(e => (0, r.jsx)(O.Z, {
     width: e,
     channel: I,
     guild: w,

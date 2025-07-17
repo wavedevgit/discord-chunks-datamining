@@ -1,4 +1,4 @@
-/** Chunk was on 10801 **/
+/** Chunk was on 2016 **/
 n.d(t, {
   Z: () => E
 }), n(388685), n(358797);
@@ -22,7 +22,7 @@ var r = n(255367),
   C = n(989830),
   x = n(388032),
   v = n(837265);
-let j = i.memo(function(e) {
+let O = i.memo(function(e) {
     let {
       channelId: t,
       width: n
@@ -55,7 +55,7 @@ let j = i.memo(function(e) {
       })
     })
   }),
-  O = i.memo(function(e) {
+  j = i.memo(function(e) {
     let {
       value: t,
       multiplier: n
@@ -145,21 +145,21 @@ let j = i.memo(function(e) {
     }, [P]);
     let {
       multiplier: Z,
-      value: N
+      value: T
     } = i.useMemo(() => ({
       value: E ? P.value : I.current.value,
       multiplier: E ? P.multiplier : I.current.multiplier
     }), [E, P, I]);
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(j, {
+      children: [(0, r.jsx)(O, {
         channelId: t,
         width: m
       }), (0, r.jsx)(o.animated.div, {
         ref: p,
         className: v.combo,
         style: S,
-        children: (0, r.jsx)(O, {
-          value: N,
+        children: (0, r.jsx)(j, {
+          value: T,
           multiplier: Z
         })
       })]

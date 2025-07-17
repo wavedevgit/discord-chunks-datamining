@@ -1,4 +1,4 @@
-/** Chunk was on 10801 **/
+/** Chunk was on 2016 **/
 n.d(t, {
   M: () => S
 }), n(539854);
@@ -22,8 +22,8 @@ var r = n(255367),
   C = n(579185),
   x = n(301076),
   v = n(127379),
-  j = n(981631),
-  O = n(921944),
+  O = n(981631),
+  j = n(921944),
   E = n(388032);
 
 function S(e) {
@@ -32,16 +32,16 @@ function S(e) {
     idle: n,
     whichPopoutIsOpen: S,
     setWhichPopoutIsOpen: P
-  } = e, I = (0, l.e7)([u.ZP], () => u.ZP.isLaunchingActivity()), Z = (0, p.KF)(t.id), N = (0, p.g5)(Z), T = Z !== p.jy.CAN_LAUNCH || I, {
+  } = e, I = (0, l.e7)([u.ZP], () => u.ZP.isLaunchingActivity()), Z = (0, p.KF)(t.id), T = (0, p.g5)(Z), N = Z !== p.jy.CAN_LAUNCH || I, {
     isHovered: A,
     setIsHovered: w,
     onMouseEnter: R,
     onMouseLeave: M
   } = (0, C.Z)(200, 300), D = (0, d.p)({
     surface: s.eR.VOICE_LAUNCHER
-  }), L = (0, l.e7)([u.ZP], () => null != u.ZP.getSelfEmbeddedActivityForLocation(u.ZP.getConnectedActivityLocation())), k = !T, U = i.useCallback(e => {
+  }), L = (0, l.e7)([u.ZP], () => null != u.ZP.getSelfEmbeddedActivityForLocation(u.ZP.getConnectedActivityLocation())), k = !N, U = i.useCallback(e => {
     "focus" !== e.type && R()
-  }, [R]), B = (0, c.bp)() === j.IlC.POPOUT, {
+  }, [R]), B = (0, c.bp)() === O.IlC.POPOUT, {
     analyticsLocations: F,
     parentAnalyticsLocation: H
   } = (0, b.ZP)(), G = i.useCallback(() => {
@@ -51,7 +51,7 @@ function S(e) {
       analyticsLocations: F
     })
   }, [F, t, B, H]), V = [];
-  T || V.push(a.z.ACTIVITIES_MINI_SHELF_SPARKLES), (0, h.Z)(t.id) && !T && V.push(a.z.ACTIVITY_GDM_ROCKET_SPARKLE), T || V.push(a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP);
+  N || V.push(a.z.ACTIVITIES_MINI_SHELF_SPARKLES), (0, h.Z)(t.id) && !N && V.push(a.z.ACTIVITY_GDM_ROCKET_SPARKLE), N || V.push(a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP);
   let z = i.useRef(!1),
     W = i.useRef(null);
   return (0, r.jsx)(y.ZP, {
@@ -61,7 +61,7 @@ function S(e) {
         visibleContent: i,
         markAsDismissed: l
       } = e, s = i === a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP && !n && !A;
-      return z.current && !s && l(O.L.AUTO_DISMISS), z.current !== s && (z.current = s), (0, r.jsx)(o.yRy, {
+      return z.current && !s && l(j.L.AUTO_DISMISS), z.current !== s && (z.current = s), (0, r.jsx)(o.yRy, {
         targetElementRef: W,
         fixed: !0,
         shouldShow: A && (S === v.D.ACTIVITY || null == S),
@@ -87,7 +87,7 @@ function S(e) {
             onMouseEnter: R,
             onMouseLeave: M,
             isHovered: A,
-            onClick: () => l(O.L.UNKNOWN)
+            onClick: () => l(j.L.UNKNOWN)
           }) : (0, r.jsx)(r.Fragment, {})
         },
         children: () => (0, r.jsx)(y.Xf, {
@@ -127,12 +127,12 @@ function S(e) {
                     ref: W
                   }, e), s = s = {
                     children: (0, r.jsx)(x.Z, {
-                      disabled: T,
-                      "aria-label": N,
-                      label: k ? void 0 : N,
+                      disabled: N,
+                      "aria-label": T,
+                      label: k ? void 0 : T,
                       isActivityActive: L,
                       onClick: () => {
-                        G(), (i === a.z.ACTIVITIES_MINI_SHELF_SPARKLES || i === a.z.ACTIVITY_GDM_ROCKET_SPARKLE || i === a.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES || i === a.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES || i === a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP) && l(O.L.TAKE_ACTION), t === a.z.ACTIVITIES_VOICE_LAUNCHER_BADGE && n(O.L.TAKE_ACTION)
+                        G(), (i === a.z.ACTIVITIES_MINI_SHELF_SPARKLES || i === a.z.ACTIVITY_GDM_ROCKET_SPARKLE || i === a.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES || i === a.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES || i === a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP) && l(j.L.TAKE_ACTION), t === a.z.ACTIVITIES_VOICE_LAUNCHER_BADGE && n(j.L.TAKE_ACTION)
                       },
                       onMouseEnter: U,
                       onMouseLeave: M

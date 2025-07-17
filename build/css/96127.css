@@ -1,6 +1,6 @@
 /**
   Module ID: 96127
-  Original File Name: f07b1c0f218af543
+  Original File Name: 0f85fe8a5a331dca
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -5689,52 +5689,6 @@ div:has(>.repositionLayerSidebarPopout_fc71d3) {
     margin-top: 2px
 }
 
-.container__8ce85 {
-    border-radius: var(--radius-sm);
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    overflow: hidden;
-    position: relative
-}
-
-.videoContainer__8ce85 {
-    margin-left: 8px
-}
-
-.videoContainer__8ce85:before {
-    background: linear-gradient(270deg,rgba(206,122,232,.5),hsla(0,0%,100%,0) 45%);
-    border-radius: calc(var(--radius-sm) - 1px);
-    content: "";
-    inset: 1px;
-    -webkit-mask: linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
-    mask: linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    padding: 1px
-}
-
-.video__8ce85,.videoContainer__8ce85:before {
-    margin-left: 8px;
-    pointer-events: none;
-    position: absolute
-}
-
-.video__8ce85 {
-    border-radius: var(--radius-sm);
-    height: 100%;
-    left: 0;
-    object-fit: cover;
-    opacity: 15%;
-    padding: 1px 0;
-    top: 0;
-    width: 100%
-}
-
-.content__8ce85 {
-    z-index: 1
-}
-
 .container_b1bfd4 {
     align-items: center;
     background: var(--background-base-lowest);
@@ -8294,4 +8248,4 @@ div:has(>.positionLayer__4f4b6) {
     width: 96px
 }
 
-/*# sourceMappingURL=f07b1c0f218af543.css.map*/
+/*# sourceMappingURL=0f85fe8a5a331dca.css.map*/

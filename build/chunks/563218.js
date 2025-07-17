@@ -1,6 +1,6 @@
-/** Chunk was on 83976 **/
+/** Chunk was on 24255 **/
 n.d(t, {
-  Z: () => h
+  Z: () => v
 });
 var r = n(255367),
   l = n(73800),
@@ -14,25 +14,25 @@ var r = n(255367),
   f = n(917107),
   p = n(716600),
   m = n(918559),
-  g = n(981631);
-let E = (e, t) => {
+  E = n(981631);
+let g = (e, t) => {
   a.Z.wait(() => {
     (0, o.Cz)(e, t)
   })
 };
 
-function h(e) {
+function v(e) {
   let t, {
       embedId: n,
       className: a,
       style: o
     } = e,
-    h = (0, i.e7)([u.Z], () => u.Z.getWindow(g.KJ3.CHANNEL_CALL_POPOUT)),
-    v = (0, p.Z)(),
+    v = (0, i.e7)([u.Z], () => u.Z.getWindow(E.KJ3.CHANNEL_CALL_POPOUT)),
+    h = (0, p.Z)(),
     S = (0, i.e7)([c.ZP], () => c.ZP.getActivityPanelMode());
-  if (null == v || (0, f.Z)((0, d.p)(v.location)) || S !== m.Ez.PANEL) {
+  if (null == h || (0, f.Z)((0, d.p)(h.location)) || S !== m.Ez.PANEL) {
     var b;
-    t = null != (b = null == h ? void 0 : h.window) ? b : window
+    t = null != (b = null == v ? void 0 : v.window) ? b : window
   } else t = window;
   let O = l.useRef(null),
     y = l.useMemo(() => {
@@ -40,12 +40,12 @@ function h(e) {
       return () => {
         null == e && (e = t.requestAnimationFrame(() => {
           var t, r;
-          E(n, null != (r = null == (t = O.current) ? void 0 : t.getBoundingClientRect()) ? r : null), e = null
+          g(n, null != (r = null == (t = O.current) ? void 0 : t.getBoundingClientRect()) ? r : null), e = null
         }))
       }
     }, [n, t]);
-  return l.useEffect(() => (t.addEventListener("resize", y), s.S.subscribe(g.CkL.REMEASURE_TARGET, y), () => {
-    t.removeEventListener("resize", y), s.S.unsubscribe(g.CkL.REMEASURE_TARGET, y)
+  return l.useEffect(() => (t.addEventListener("resize", y), s.S.subscribe(E.CkL.REMEASURE_TARGET, y), () => {
+    t.removeEventListener("resize", y), s.S.unsubscribe(E.CkL.REMEASURE_TARGET, y)
   }), [y, t]), l.useLayoutEffect(() => {
     let e = O.current;
     if (null == e) return;
@@ -54,7 +54,7 @@ function h(e) {
     y();
     let r = new t.ResizeObserver(y);
     return r.observe(e), () => {
-      r.disconnect(), E(n, null)
+      r.disconnect(), g(n, null)
     }
   }, [n, y]), (0, r.jsx)("div", {
     ref: O,

@@ -1,10 +1,10 @@
-/** Chunk was on 7839 **/
+/** Chunk was on 16766 **/
 n.d(e, {
   PA: () => m,
   Tn: () => c,
   _i: () => I,
   eI: () => _,
-  vp: () => N,
+  vp: () => f,
   y8: () => T
 });
 var r = n(367907),
@@ -29,7 +29,7 @@ function c(t) {
   } = t, {
     content: a,
     formatParams: u
-  } = f({
+  } = N({
     username: e,
     usernameOnClickHandler: n,
     roleSubscriptionOnClickHandler: r,
@@ -49,7 +49,7 @@ function m(t) {
   } = t, {
     content: a,
     formatParams: u
-  } = f({
+  } = N({
     username: e,
     usernameOnClickHandler: n,
     roleSubscriptionOnClickHandler: r,
@@ -71,7 +71,7 @@ function d(t, e) {
   }
 }
 
-function f(t) {
+function N(t) {
   let {
     username: e,
     usernameOnClickHandler: n = s,
@@ -82,10 +82,10 @@ function f(t) {
     guild: a,
     totalMonthsSubscribed: c,
     showWithDuration: m,
-    isRenewal: f
+    isRenewal: N
   } = d(l, i);
   return {
-    content: m ? f ? o.t.Iy66Mz : o.t.eCgb2d : f ? o.t.mPTTdn : o.t.mYjFFx,
+    content: m ? N ? o.t.Iy66Mz : o.t.eCgb2d : N ? o.t.mPTTdn : o.t.mYjFFx,
     formatParams: {
       username: e,
       usernameHook: n,
@@ -97,7 +97,7 @@ function f(t) {
   }
 }
 
-function N(t) {
+function f(t) {
   let e, {
       username: n,
       usernameOnClickHandler: r = s,
@@ -108,10 +108,10 @@ function N(t) {
     {
       guild: c,
       totalMonthsSubscribed: m,
-      showWithDuration: f,
-      isRenewal: N
+      showWithDuration: N,
+      isRenewal: f
     } = d(i, a);
-  return e = f ? N ? o.t.OQ0OU1 : o.t["+N9bxs"] : N ? o.t.OxP1ND : o.t["6Z1E+/"], o.intl.formatToParts(e, {
+  return e = N ? f ? o.t.OQ0OU1 : o.t["+N9bxs"] : f ? o.t.OxP1ND : o.t["6Z1E+/"], o.intl.formatToParts(e, {
     guildName: null == c ? void 0 : c.name,
     tierName: null == a ? void 0 : a.tier_name,
     username: n,

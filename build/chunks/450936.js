@@ -1,4 +1,4 @@
-/** Chunk was on 10801 **/
+/** Chunk was on 2016 **/
 n.d(t, {
   Z: () => b
 });
@@ -28,10 +28,10 @@ function b(e) {
   }, [y]), x = (0, i.e7)([d.Z], () => {
     var e;
     return d.Z.isFetchingProfile(null != (e = null == C ? void 0 : C.id) ? e : m.lds)
-  }), v = (0, o.Z)(x), j = (0, i.e7)([c.Z], () => c.Z.getAppIdForBotUserId(null == C ? void 0 : C.id)), O = (0, i.e7)([d.Z], () => {
+  }), v = (0, o.Z)(x), O = (0, i.e7)([c.Z], () => c.Z.getAppIdForBotUserId(null == C ? void 0 : C.id)), j = (0, i.e7)([d.Z], () => {
     var e;
     return null !== C ? null == (e = d.Z.getUserProfile(null == C ? void 0 : C.id)) ? void 0 : e.application : void 0
-  }), E = null != j ? j : null == O ? void 0 : O.id;
+  }), E = null != O ? O : null == j ? void 0 : j.id;
   r.useEffect(() => {
     if (null == E) {
       var e;
@@ -58,13 +58,13 @@ function b(e) {
     P = S.commands.filter(e => e.type === a.yU.PRIMARY_ENTRY_POINT && e.applicationId === E)[0],
     I = S.commands.filter(e => "0" !== e.id && !e.id.startsWith("-")),
     Z = S.loading,
-    N = null == (t = S.descriptors.find(e => {
+    T = null == (t = S.descriptors.find(e => {
       var t;
       return (null == (t = e.application) ? void 0 : t.id) === E
     })) ? void 0 : t.application,
-    T = r.useMemo(() => null != N ? h.ZP.createFromServer(N) : void 0, [N]),
-    A = (0, u.q)(null == T ? E : void 0),
-    w = null != (n = null != T ? T : A) ? n : void 0,
+    N = r.useMemo(() => null != T ? h.ZP.createFromServer(T) : void 0, [T]),
+    A = (0, u.q)(null == N ? E : void 0),
+    w = null != (n = null != N ? N : A) ? n : void 0,
     R = null == w || Z && 0 === I.length;
   return {
     application: w,

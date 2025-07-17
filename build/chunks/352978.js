@@ -1,4 +1,4 @@
-/** Chunk was on 83976 **/
+/** Chunk was on 24255 **/
 n.d(t, {
   L: () => p,
   Z: () => m
@@ -21,20 +21,20 @@ let m = i.memo(function(e) {
     videoComponent: a,
     className: p,
     fit: m = "contain",
-    mirror: g = !1,
-    paused: E = !1,
-    streamPreviewURL: h,
-    videoSpinnerContext: v,
+    mirror: E = !1,
+    paused: g = !1,
+    streamPreviewURL: v,
+    videoSpinnerContext: h,
     userId: S,
     streamKey: b
   } = e, [O, y] = i.useState(!0);
   (0, c.Z)({
     location: "VideoStream",
-    videoSpinnerContext: v,
+    videoSpinnerContext: h,
     userId: S,
     streamId: t,
     loading: O,
-    paused: E
+    paused: g
   });
   let {
     onReady: Z
@@ -42,9 +42,9 @@ let m = i.memo(function(e) {
     streamId: t,
     userId: S,
     loading: O,
-    videoSpinnerContext: v,
+    videoSpinnerContext: h,
     streamKey: b,
-    paused: E
+    paused: g
   }), j = i.useCallback(() => {
     y(!1), Z()
   }, [Z]);
@@ -52,19 +52,19 @@ let m = i.memo(function(e) {
     className: o()(f.wrapper, r),
     children: [null != t && (0, l.jsx)(a, {
       className: o()(f.video, (0, d.l)(f, "video", m), {
-        [f.mirror]: g
+        [f.mirror]: E
       }, p),
       streamId: t,
       onResize: n,
       onReady: j,
-      paused: E
-    }), E ? null : (0, l.jsx)("div", {
+      paused: g
+    }), g ? null : (0, l.jsx)("div", {
       className: o()(f.previewWrapper, {
         [f.loading]: O
       }),
       children: O && (0, l.jsxs)(i.Fragment, {
-        children: [null != h ? (0, l.jsx)("img", {
-          src: h,
+        children: [null != v ? (0, l.jsx)("img", {
+          src: v,
           alt: "",
           className: f.previewImage
         }) : (0, l.jsx)("div", {

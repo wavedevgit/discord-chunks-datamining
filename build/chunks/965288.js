@@ -1,7 +1,7 @@
-/** Chunk was on 10801 **/
+/** Chunk was on 2016 **/
 n.d(t, {
-  Z: () => T,
-  y: () => N
+  Z: () => N,
+  y: () => T
 });
 var r = n(255367),
   i = n(73800),
@@ -23,8 +23,8 @@ var r = n(255367),
   C = n(314897),
   x = n(271383),
   v = n(5192),
-  j = n(590415),
-  O = n(354459),
+  O = n(590415),
+  j = n(354459),
   E = n(387147);
 
 function S(e) {
@@ -99,7 +99,7 @@ let I = i.memo(function(e) {
       blocked: c,
       ignored: u,
       rtsState: d
-    } = n, h = d === j.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK, f = d === j.xO.REQUESTED_TO_SPEAK || h;
+    } = n, h = d === O.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK, f = d === O.xO.REQUESTED_TO_SPEAK || h;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
         className: E.avatarContainer,
@@ -127,19 +127,19 @@ let I = i.memo(function(e) {
       })]
     })
   }),
-  N = () => (0, r.jsx)("div", {
+  T = () => (0, r.jsx)("div", {
     className: E.tileBaseContainer
   }),
-  T = i.memo(function(e) {
+  N = i.memo(function(e) {
     let {
       participant: t,
       channel: l
     } = e, {
       user: o,
       blocked: d
-    } = t, v = l.getGuildId(), j = C.default.getId(), {
+    } = t, v = l.getGuildId(), O = C.default.getId(), {
       newestAnalyticsLocation: I
-    } = (0, g.ZP)(m.Z.AUDIENCE_TILE), N = (0, f.bp)(), T = (0, u.e7)([x.ZP], () => {
+    } = (0, g.ZP)(m.Z.AUDIENCE_TILE), T = (0, f.bp)(), N = (0, u.e7)([x.ZP], () => {
       var e;
       return null != v && (null == (e = x.ZP.getMember(v, o.id)) ? void 0 : e.premiumSince) != null
     }, [v, o.id]), A = i.useRef(null);
@@ -150,8 +150,8 @@ let I = i.memo(function(e) {
         name: c.ImpressionNames.CALL_TILE_CONTEXT_MENU,
         properties: {
           location: "AudienceTile",
-          is_tile_owner: o.id === j,
-          tile_type: O.TH.USER
+          is_tile_owner: o.id === O,
+          tile_type: j.TH.USER
         }
       }), (0, h.jW)(e, async () => {
         let {
@@ -166,13 +166,13 @@ let I = i.memo(function(e) {
           showChatItems: !1,
           onInteraction: (0, _.u)("GuildChannelUserContextMenu", I, {
             targetUserId: o.id,
-            tileType: O.TH.USER
+            tileType: j.TH.USER
           })
         }))
       }, {
-        context: N
+        context: T
       })
-    }, [o, j, N, v, l, I]);
+    }, [o, O, T, v, l, I]);
     return (0, r.jsx)(y.Z, {
       targetElementRef: A,
       user: o,
@@ -182,8 +182,8 @@ let I = i.memo(function(e) {
       children: e => (0, r.jsx)(p.P3F, P(S({
         innerRef: A,
         className: a()(E.tileContainer, {
-          [E.singleIcon]: T || d,
-          [E.doubleIcon]: T && d
+          [E.singleIcon]: N || d,
+          [E.doubleIcon]: N && d
         }),
         onContextMenu: w
       }, e), {
@@ -191,7 +191,7 @@ let I = i.memo(function(e) {
           participant: t,
           guildId: v,
           channel: l,
-          isPremium: T
+          isPremium: N
         })
       }))
     })

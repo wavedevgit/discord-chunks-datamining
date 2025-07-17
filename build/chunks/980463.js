@@ -5,7 +5,6 @@ n.d(t, {
   SN: () => g,
   gA: () => p,
   qc: () => h,
-  x8: () => E,
   zI: () => m
 }), n(415506);
 var r = n(544891),
@@ -101,10 +100,5 @@ let f = {
     a.Z.dispatch({
       type: "CONSUMABLES_CLEAR_ERROR",
       skuId: e
-    })
-  }, E = e => {
-    a.Z.dispatch({
-      type: "SET_PREVIOUS_GO_LIVE_SETTINGS",
-      previousGoLiveSettings: e
     })
   }

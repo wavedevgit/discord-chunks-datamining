@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: e0911c69b87398f6
+  Original File Name: 5424d0c7f3b0a1c3
 **/
 .popover_f84418 {
     overflow: visible
@@ -1941,25 +1941,6 @@
     }
 }
 
-.demoEffectOverlay__40460 {
-    height: 120%;
-    left: 50%;
-    opacity: 1;
-    pointer-events: none;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    width: 120%;
-    z-index: 10090
-}
-
-.demoEffectImg__40460 {
-    height: 100%;
-    object-fit: fill;
-    pointer-events: none;
-    width: 100%
-}
-
 .voiceChannelEffectEmojiContainer__66db8 {
     background: var(--background-surface-high);
     border-radius: 50%;
@@ -2528,4 +2509,4 @@
     width: 96px
 }
 
-/*# sourceMappingURL=e0911c69b87398f6.css.map*/
+/*# sourceMappingURL=5424d0c7f3b0a1c3.css.map*/

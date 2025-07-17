@@ -1,4 +1,4 @@
-/** Chunk was on 10801 **/
+/** Chunk was on 2016 **/
 n.d(t, {
   Z: () => d
 }), n(539854), n(388685);
@@ -25,8 +25,8 @@ function d(e) {
     C = null != f ? a.default.extractTimestamp(f) : null,
     x = null;
   return h.forEach(e => {
-    var i, v, j;
-    let O, E;
+    var i, v, O;
+    let j, E;
     if (null != g && g.length > 0) {
       let t = a.default.extractTimestamp(e.id);
       for (let e = 0; i = e < (null == g ? void 0 : g.length), i; e++) {
@@ -54,32 +54,32 @@ function d(e) {
       I = null,
       Z = (0, s.DQ)(e);
     y = y || Z;
-    let N = function(e, t, n) {
+    let T = function(e, t, n) {
       if (r.V.NON_COLLAPSIBLE.has(t.type));
       else if (t.blocked) return u.ys_.MESSAGE_GROUP_BLOCKED;
       else if (t.ignored) return u.ys_.MESSAGE_GROUP_IGNORED;
       else if ((0, s.P1)(e) && n) return u.ys_.MESSAGE_GROUP_SPAMMER;
       return null
     }(p, e, Z && m);
-    (null !== N && ([I, P] = (E = v = P, null == v || v.type !== N ? (O = {
-      type: N,
+    (null !== T && ([I, P] = (E = v = P, null == v || v.type !== T ? (j = {
+      type: T,
       content: [],
       key: e.id
-    }, _.push(O)) : E = (O = v).content[O.content.length - 1], [O, E])), f === e.id && null != C) ? (null != P && P.type === u.ys_.DIVIDER ? P.unreadId = e.id : null !== I ? (j = I, e.isFirstMessageInForumPost(p) || j.content.push({
+    }, _.push(j)) : E = (j = v).content[j.content.length - 1], [j, E])), f === e.id && null != C) ? (null != P && P.type === u.ys_.DIVIDER ? P.unreadId = e.id : null !== I ? (O = I, e.isFirstMessageInForumPost(p) || O.content.push({
       type: u.ys_.DIVIDER,
       unreadId: e.id
-    }), j.hasUnread = !0) : e.isFirstMessageInForumPost(p) || _.push({
+    }), O.hasUnread = !0) : e.isFirstMessageInForumPost(p) || _.push({
       type: u.ys_.DIVIDER,
       unreadId: e.id
     }), C = null) : null != C && a.default.extractTimestamp(e.id) > C && (e.isFirstMessageInForumPost(p) || _.push({
       type: u.ys_.DIVIDER,
       unreadId: e.id
     }), C = null);
-    let T = (0, c.f)(e, p);
-    null != T && _.push({
+    let N = (0, c.f)(e, p);
+    null != N && _.push({
       type: u.ys_.MESSAGE,
-      content: T,
-      groupId: T.id
+      content: N,
+      groupId: N.id
     });
     let A = (null == P ? void 0 : P.type) === u.ys_.MESSAGE ? d : P;
     (0, o.J)(p, A, e) && (n = e.id);

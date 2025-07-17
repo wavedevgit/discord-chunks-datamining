@@ -1,4 +1,4 @@
-/** Chunk was on 10801 **/
+/** Chunk was on 2016 **/
 n.d(t, {
   Z: () => m
 }), n(35282);
@@ -28,8 +28,8 @@ function m(e) {
     disabled: C = !1,
     inlineUsername: x = !0,
     onClick: v,
-    onMouseEnter: j,
-    "aria-setsize": O,
+    onMouseEnter: O,
+    "aria-setsize": j,
     "aria-posinset": E
   } = e, S = (0, o.e7)([p.Z], () => p.Z.getStatus(i.id)), P = (0, a.JA)(String(i.id));
   return (0, r.jsx)(s.P3F, (t = function(e) {
@@ -58,13 +58,13 @@ function m(e) {
       null != v && v(i.id)
     },
     onMouseEnter: () => {
-      null != j && j(m)
+      null != O && O(m)
     }
   }, P), n = n = {
     role: "option",
     "aria-selected": y,
     "aria-disabled": C,
-    "aria-setsize": O,
+    "aria-setsize": j,
     "aria-posinset": E,
     children: (0, r.jsxs)(d.Z, {
       align: d.Z.Align.CENTER,

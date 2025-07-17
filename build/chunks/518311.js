@@ -1,4 +1,4 @@
-/** Chunk was on 10801 **/
+/** Chunk was on 2016 **/
 n.d(t, {
   Z: () => ey,
   l: () => eC
@@ -22,15 +22,15 @@ var r, i = n(255367),
   C = n(708690),
   x = n(194359),
   v = n(425493),
-  j = n(794433),
-  O = n(493773),
+  O = n(794433),
+  j = n(493773),
   E = n(40851),
   S = n(100527),
   P = n(367907),
   I = n(906732),
   Z = n(43267),
-  N = n(933557),
-  T = n(600164),
+  T = n(933557),
+  N = n(600164),
   A = n(313201),
   w = n(429090),
   R = n(912114),
@@ -119,10 +119,10 @@ function eh(e) {
     className: t,
     children: n
   } = e;
-  return (0, i.jsxs)(T.Z, {
-    align: T.Z.Align.CENTER,
-    justify: T.Z.Justify.CENTER,
-    direction: T.Z.Direction.VERTICAL,
+  return (0, i.jsxs)(N.Z, {
+    align: N.Z.Align.CENTER,
+    justify: N.Z.Justify.CENTER,
+    direction: N.Z.Direction.VERTICAL,
     className: o()(el.errorState, t),
     children: [(0, i.jsx)("div", {
       className: o()(el.errorStateIcon, ea.marginBottom20)
@@ -134,7 +134,7 @@ let ef = e => {
     let {
       channel: n,
       onClose: r
-    } = e, l = null != (t = (0, N.ZP)(n)) ? t : "", a = (0, p.e7)([V.ZP], () => {
+    } = e, l = null != (t = (0, T.ZP)(n)) ? t : "", a = (0, p.e7)([V.ZP], () => {
       var e;
       return null != (e = V.ZP.lastMessageId(n.id)) ? e : n.id
     });
@@ -330,13 +330,13 @@ class eg extends(r = l.PureComponent) {
       null != t && o.push($.ZP.getName(t))
     }), (0, i.jsxs)("div", {
       className: el.searchBar,
-      children: [(0, i.jsx)(j.Z, {
+      children: [(0, i.jsx)(O.Z, {
         ref: this.searchBarRef,
         className: el.searchBarComponent,
         autoFocus: !0,
         placeholder: 0 === a.size ? ei.intl.string(ei.t.Wxnb6u) : "",
         disabled: this.isPartyFull(),
-        size: j.Z.Sizes.MEDIUM,
+        size: O.Z.Sizes.MEDIUM,
         maxHeight: this.props.inBornThisNamedExperiment ? 110 : void 0,
         query: t,
         selectedRow: l,
@@ -361,8 +361,8 @@ class eg extends(r = l.PureComponent) {
     let e = null != this.scrollerRef.current && this.state.separator,
       t = this.isNotFriends() ? ei.intl.string(ei.t.Xjlbvr) : ei.intl.string(ei.t.CdNhGR);
     return (0, i.jsxs)(f.xBx, {
-      direction: T.Z.Direction.VERTICAL,
-      align: T.Z.Align.STRETCH,
+      direction: N.Z.Direction.VERTICAL,
+      align: N.Z.Align.STRETCH,
       className: el.header,
       separator: e,
       children: [d.tq ? this.renderMobileCloseButton() : null, (0, i.jsx)(f.X6q, {
@@ -790,7 +790,7 @@ function eb(e) {
     analyticsLocations: s
   } = (0, I.ZP)(S.Z.NEW_GROUP_DM_INVITE_MODAL);
   if (!(0, w.a)(S.Z.NEW_GROUP_DM_INVITE_MODAL)) return null;
-  let c = (0, N.pT)(Array.from(t), Y.default, z.Z);
+  let c = (0, T.pT)(Array.from(t), Y.default, z.Z);
   return (0, i.jsxs)("div", {
     className: el.customizationContainer,
     children: [(0, i.jsx)(R.B, {
@@ -852,12 +852,12 @@ function ey(e) {
     inBornThisNamedExperiment: _
   }))), {
     modalKey: y
-  }), [r, y, _]), v = l.useRef(null), [j, E] = l.useState(null != r && r.isGroupDM() && 0 === r.recipients.length), S = l.useCallback(() => _ ? C ? (0, f.Mr3)(y) : x() : E(e => !e), [_, C, y, x]);
+  }), [r, y, _]), v = l.useRef(null), [O, E] = l.useState(null != r && r.isGroupDM() && 0 === r.recipients.length), S = l.useCallback(() => _ ? C ? (0, f.Mr3)(y) : x() : E(e => !e), [_, C, y, x]);
   l.useEffect(() => (m && X.S.subscribe(er.CkL.TOGGLE_DM_CREATE, S), () => {
     X.S.unsubscribe(er.CkL.TOGGLE_DM_CREATE, S)
   }), [m, S, _]);
   let P = (0, p.e7)([Y.default], () => Y.default.getUser(null == r ? void 0 : r.getRecipientId()));
-  return ((0, O.ZP)(() => {
+  return ((0, j.ZP)(() => {
     (0, L._)()
   }), null != (t = null == P ? void 0 : P.bot) && t || null != (n = null == P ? void 0 : P.isProvisional) && n) ? null : _ ? (0, i.jsx)(et.ZP.Icon, {
     ref: v,
@@ -875,7 +875,7 @@ function ey(e) {
       inBornThisNamedExperiment: _
     })),
     position: d,
-    shouldShow: j,
+    shouldShow: O,
     nudgeAlignIntoViewport: !0,
     autoInvert: !0,
     align: h,
@@ -902,7 +902,7 @@ function eC(e) {
     popoutPosition: r = "bottom",
     popoutAlign: a = "right"
   } = e;
-  (0, O.ZP)(() => {
+  (0, j.ZP)(() => {
     (0, L._)()
   });
   let o = (0, w.a)("PrivateChannelRecipientsInviteTextButton"),

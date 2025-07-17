@@ -1,4 +1,4 @@
-/** Chunk was on 83976 **/
+/** Chunk was on 24255 **/
 n.d(t, {
   Z: () => m
 });
@@ -52,9 +52,9 @@ function m(e, t, n) {
     m = r.useCallback(r => {
       r.lastUpdatedAt = Date.now(), (0, u.gr)(r, e, n), (0, u.BR)(t, n, r)
     }, [t, n, e]),
-    g = r.useCallback((r, o, p) => {
+    E = r.useCallback((r, o, p) => {
       l.current = (0, a.Z)();
-      let g = f(d({}, r), {
+      let E = f(d({}, r), {
         id: l.current,
         x: o,
         y: p,
@@ -62,10 +62,10 @@ function m(e, t, n) {
         state: s.f.START,
         lastUpdatedAt: Date.now()
       });
-      (0, u.BR)(t, n, g), (0, u.gr)(g, e, n), i.current.start(c.FO, () => m(g))
+      (0, u.BR)(t, n, E), (0, u.gr)(E, e, n), i.current.start(c.FO, () => m(E))
     }, [e, t, n, m]),
-    E = r.useCallback((r, a, o) => {
-      let g = f(d({}, r), {
+    g = r.useCallback((r, a, o) => {
+      let E = f(d({}, r), {
         id: l.current,
         x: a,
         y: o,
@@ -73,9 +73,9 @@ function m(e, t, n) {
         state: s.f.START,
         lastUpdatedAt: Date.now()
       });
-      p(t, n, g), (0, u.gr)(g, e, n), i.current.start(c.FO, () => m(g))
+      p(t, n, E), (0, u.gr)(E, e, n), i.current.start(c.FO, () => m(E))
     }, [e, t, n, m]),
-    h = r.useCallback((r, a, o) => {
+    v = r.useCallback((r, a, o) => {
       p.cancel(), (0, u.Df)(t, n, l.current), (0, u.gr)(f(d({}, r), {
         id: l.current,
         x: a,
@@ -85,11 +85,11 @@ function m(e, t, n) {
         lastUpdatedAt: Date.now()
       }), e, n), i.current.stop()
     }, [t, n, e]),
-    v = r.useCallback((e, t, n) => E(e, t, n), [E]);
+    h = r.useCallback((e, t, n) => g(e, t, n), [g]);
   return r.useMemo(() => ({
-    handleMouseDown: g,
-    handleMouseMove: E,
-    handleMouseUp: h,
-    handleMouseEnter: v
-  }), [g, v, E, h])
+    handleMouseDown: E,
+    handleMouseMove: g,
+    handleMouseUp: v,
+    handleMouseEnter: h
+  }), [E, h, g, v])
 }

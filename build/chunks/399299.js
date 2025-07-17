@@ -29,8 +29,8 @@ var r = n(255367),
   w = n(823379),
   I = n(63063),
   N = n(358085),
-  T = n(653255),
-  E = n(989941),
+  E = n(653255),
+  T = n(989941),
   P = n(618407),
   R = n(586290),
   A = n(233037),
@@ -39,8 +39,8 @@ var r = n(255367),
   L = n(641115),
   D = n(143135),
   B = n(70722),
-  U = n(981631),
-  G = n(526761),
+  G = n(981631),
+  U = n(526761),
   W = n(388032),
   F = n(14383),
   z = n(347226);
@@ -51,7 +51,7 @@ function H(e) {
     selectSource: n,
     sourceChanged: i,
     onChangeSource: l
-  } = e, s = (0, o.e7)([h.ZP, O.Z], () => (0, N.isWindows)() ? (0, E.Z)(h.ZP, O.Z) : null), d = (0, o.e7)([u.Z], () => (null == s ? void 0 : s.id) != null ? u.Z.getApplication(s.id) : null), f = (0, o.e7)([h.ZP], () => h.ZP.getRunningGames()), m = (0, o.Wu)([u.Z], () => f.map(e => null != e.id ? u.Z.getApplication(e.id) : null).filter(w.lm), [f]), x = null;
+  } = e, s = (0, o.e7)([h.ZP, O.Z], () => (0, N.isWindows)() ? (0, T.Z)(h.ZP, O.Z) : null), d = (0, o.e7)([u.Z], () => (null == s ? void 0 : s.id) != null ? u.Z.getApplication(s.id) : null), f = (0, o.e7)([h.ZP], () => h.ZP.getRunningGames()), m = (0, o.Wu)([u.Z], () => f.map(e => null != e.id ? u.Z.getApplication(e.id) : null).filter(w.lm), [f]), x = null;
   if (null != t ? x = t.name : null != s && (x = s.name), null == x) return null;
   let g = (0, D.Z)(s, t, f),
     _ = i ? m.find(e => {
@@ -142,7 +142,7 @@ function X(e) {
     var e;
     return null != (e = j.Z.getMemberCount(t)) ? e : 0
   }), l = g.eo.useSetting(), a = i.useCallback((e, t) => {
-    g.eo.updateSetting(t), Z.default.track(U.rMx.NOTIFY_STREAM_SETTING_UPDATE, {
+    g.eo.updateSetting(t), Z.default.track(G.rMx.NOTIFY_STREAM_SETTING_UPDATE, {
       value: t
     })
   }, []);
@@ -223,11 +223,11 @@ function q(e) {
     onChangeSelectedPreset: Z,
     onChangeSelectedChannelId: w,
     onChangeSource: N,
-    onChangeAudioDevice: E,
+    onChangeAudioDevice: T,
     onChangeGuild: M,
     onChangeSound: D,
     onChangePreviewDisabled: B
-  } = e, z = (0, o.e7)([C.Z, v.Z], () => v.Z.getChannel(C.Z.getVoiceChannelId())), q = (0, o.e7)([T.Z], () => T.Z.GPUDriversOutdated), Q = (0, o.e7)([T.Z], () => T.Z.problematicGPUDriver), $ = (0, o.e7)([y.default], () => y.default.getCurrentUser()), ee = (0, P.Z)();
+  } = e, z = (0, o.e7)([C.Z, v.Z], () => v.Z.getChannel(C.Z.getVoiceChannelId())), q = (0, o.e7)([E.Z], () => E.Z.GPUDriversOutdated), Q = (0, o.e7)([E.Z], () => E.Z.problematicGPUDriver), $ = (0, o.e7)([y.default], () => y.default.getCurrentUser()), ee = (0, P.Z)();
   null != t && t.id.startsWith("screen") && !S.Z.supportsScreenSoundshare() && (ee = W.intl.string(W.t["1b0Gm5"]));
   let et = !!(null == t ? void 0 : t.id.startsWith("camera")),
     en = null != $ && $.verified && !$.bot,
@@ -237,7 +237,7 @@ function q(e) {
     children: [et ? (0, r.jsx)(R.Z, {
       selectedSource: t,
       onChangeVideoDeviceSource: N,
-      onChangeAudioDevice: E
+      onChangeAudioDevice: T
     }) : (0, r.jsxs)("div", {
       children: [(0, r.jsx)(H, {
         selectSource: h,
@@ -266,15 +266,15 @@ function q(e) {
       text: W.intl.string(W.t.q65tS0)
     }) : null, Q ? (0, r.jsx)(Y, {
       text: W.intl.format(W.t.RrLvub, {
-        helpCenterLink: I.Z.getArticleURL(U.BhN.NVIDIA_DRIVER_ISSUES)
+        helpCenterLink: I.Z.getArticleURL(G.BhN.NVIDIA_DRIVER_ISSUES)
       })
     }) : null, ei && (0, r.jsx)(_.Z, {
       look: _.z.WARNING,
       className: F.hardwareWarning,
       children: W.intl.format(W.t.zCLXws, {
         onClick: () => {
-          j(), d.Z.open(U.oAB.VOICE, G.gP, {
-            scrollPosition: G.KQ.VoiceAndVideoScrollPositions.HARDWARE_ACCELERATION
+          j(), d.Z.open(G.oAB.VOICE, U.gP, {
+            scrollPosition: U.KQ.VoiceAndVideoScrollPositions.HARDWARE_ACCELERATION
           })
         }
       })

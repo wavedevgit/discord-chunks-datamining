@@ -1,4 +1,4 @@
-/** Chunk was on 10801 **/
+/** Chunk was on 2016 **/
 n.d(t, {
   Z: () => V
 }), n(388685);
@@ -22,15 +22,15 @@ var r = n(255367),
   C = n(216337),
   x = n(920888),
   v = n(287151),
-  j = n(799903),
-  O = n(501517),
+  O = n(799903),
+  j = n(501517),
   E = n(982168),
   S = n(216572),
   P = n(817608),
   I = n(569471),
   Z = n(346479),
-  N = n(592125),
-  T = n(934415),
+  T = n(592125),
+  N = n(934415),
   A = n(572004),
   w = n(456269),
   R = n(109590),
@@ -77,7 +77,7 @@ function G(e) {
   let {
     channel: t
   } = e, l = t.isArchivedThread(), a = (0, E.P0)(t), [o, d] = i.useState(!1), p = () => {
-    d(!0), O.Z.resolveFlag(t.id).then(() => {
+    d(!0), j.Z.resolveFlag(t.id).then(() => {
       d(!1)
     })
   };
@@ -86,7 +86,7 @@ function G(e) {
     look: c.zx.Looks.FILLED,
     color: c.zx.Colors.PRIMARY,
     onClick: () => {
-      !0 === s.K.get(j.F) ? p() : (0, u.ZDy)(async () => {
+      !0 === s.K.get(O.F) ? p() : (0, u.ZDy)(async () => {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 799903));
@@ -122,9 +122,9 @@ function V(e) {
     isLastItem: l = !1,
     parentChannelId: s
   } = e, {
-    ref: j,
-    width: O
-  } = (0, h.ZP)(), [E, k] = i.useState(3), [V, z] = i.useState(!n), [W, Y] = (0, f.Z)(!1, 2e3), q = (0, o.e7)([N.Z], () => N.Z.getChannel(t), [t]), {
+    ref: O,
+    width: j
+  } = (0, h.ZP)(), [E, k] = i.useState(3), [V, z] = i.useState(!n), [W, Y] = (0, f.Z)(!1, 2e3), q = (0, o.e7)([T.Z], () => T.Z.getChannel(t), [t]), {
     firstMessage: K
   } = (0, R.cl)(q), X = (0, o.e7)([I.Z], () => I.Z.hasJoined(t)), {
     disableReactionUpdates: Q,
@@ -132,7 +132,7 @@ function V(e) {
     isLurking: $,
     isGuest: ee,
     isPendingMember: et
-  } = (0, _.Z)(q), en = (0, S.nw)(q), er = (0, o.e7)([N.Z], () => N.Z.getChannel(s)), ei = (0, w.Bs)(er), el = (0, o.e7)([m.Z], () => m.Z.shouldDisplayPrompt(t) && !0 === n, [t, n]), ea = i.useCallback(e => {
+  } = (0, _.Z)(q), en = (0, S.nw)(q), er = (0, o.e7)([T.Z], () => T.Z.getChannel(s)), ei = (0, w.Bs)(er), el = (0, o.e7)([m.Z], () => m.Z.shouldDisplayPrompt(t) && !0 === n, [t, n]), ea = i.useCallback(e => {
     let t = e[0];
     if (null != t && n) {
       let e = t.intersectionRect,
@@ -141,7 +141,7 @@ function V(e) {
     }
   }, [n]);
   i.useLayoutEffect(() => {
-    let e = j.current;
+    let e = O.current;
     if (null == e || !n) return;
     let t = new IntersectionObserver(ea, {
       threshold: 1
@@ -152,8 +152,8 @@ function V(e) {
   });
   let [eo, es] = i.useState(!0);
   if (i.useEffect(() => {
-      null != O && (k(Math.floor((O - 280) / 58)), es(!1))
-    }, [O]), null == q || null == K) return null;
+      null != j && (k(Math.floor((j - 280) / 58)), es(!1))
+    }, [j]), null == q || null == K) return null;
   let ec = K.reactions.length > 0,
     eu = () => {
       X ? Z.Z.leaveThread(q, "Forum Toolbar") : Z.Z.joinThread(q, "Forum Toolbar")
@@ -164,7 +164,7 @@ function V(e) {
         location: {
           section: D.jXE.CHANNEL_HEADER
         }
-      }), (0, A.JG)((0, T.EO)(q, er), () => Y(!0))
+      }), (0, A.JG)((0, N.EO)(q, er), () => Y(!0))
     },
     ep = () => {
       d.Z.jumpToMessage({
@@ -180,7 +180,7 @@ function V(e) {
       className: a()(U.container, {
         [U.header]: V
       }),
-      ref: j,
+      ref: O,
       children: [en ? (0, r.jsx)("div", {
         className: U.reportedMessageActions,
         children: (0, r.jsx)(P.Z, {

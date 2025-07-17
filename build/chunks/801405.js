@@ -1,4 +1,4 @@
-/** Chunk was on 10801 **/
+/** Chunk was on 2016 **/
 n.d(t, {
   Z: () => v
 });
@@ -32,8 +32,8 @@ function v(e) {
     popoutWindow: p,
     currentWindow: v
   } = e, {
-    parentAnalyticsLocation: j
-  } = (0, c.ZP)(), O = n === y.IlC.POPOUT, E = i.useRef(null), {
+    parentAnalyticsLocation: O
+  } = (0, c.ZP)(), j = n === y.IlC.POPOUT, E = i.useRef(null), {
     currentLayout: S,
     mode: P
   } = (0, l.cj)([u.Z], () => {
@@ -51,38 +51,38 @@ function v(e) {
   });
   let Z = i.useRef(S),
     {
-      currentDocument: N,
-      rootNode: T
+      currentDocument: T,
+      rootNode: N
     } = i.useMemo(() => {
-      let e = null != p && O ? p.document : document,
+      let e = null != p && j ? p.document : document,
         t = v.document.getElementById("app-mount");
       return {
         currentWindow: v,
         currentDocument: e,
         rootNode: t
       }
-    }, [p, O, v]),
-    A = a && !O,
+    }, [p, j, v]),
+    A = a && !j,
     w = P === y.WtW.VIDEO && I && !A,
     R = i.useCallback((e, r) => {
       r !== e && (o.Z.updateLayout(t.id, r, n), r === y.AEg.FULL_SCREEN && t.isPrivate() && g.S.dispatch(y.CkL.TEXTAREA_BLUR))
     }, [n, t]),
     M = i.useCallback(e => {
-      null != T && e === y.AEg.FULL_SCREEN && (R(e, Z.current), (0, _.Pr)(e => {
+      null != N && e === y.AEg.FULL_SCREEN && (R(e, Z.current), (0, _.Pr)(e => {
         Z.current = e
-      }, N))
-    }, [N, R, T]),
+      }, T))
+    }, [T, R, N]),
     D = i.useCallback(e => () => {
-      null != T && ((0, d.v)(j, d.d.FULL_SCREEN, e !== y.AEg.FULL_SCREEN), e !== y.AEg.FULL_SCREEN ? (Z.current = e, R(e, y.AEg.FULL_SCREEN), (0, _.Dj)(T)) : M(e))
-    }, [R, M, T, j]);
+      null != N && ((0, d.v)(O, d.d.FULL_SCREEN, e !== y.AEg.FULL_SCREEN), e !== y.AEg.FULL_SCREEN ? (Z.current = e, R(e, y.AEg.FULL_SCREEN), (0, _.Dj)(N)) : M(e))
+    }, [R, M, N, O]);
   i.useEffect(() => {
     let e = () => {
-      null != T && ((0, _.rB)(T, N) || S !== y.AEg.FULL_SCREEN || D(S)())
+      null != N && ((0, _.rB)(N, T) || S !== y.AEg.FULL_SCREEN || D(S)())
     };
-    return N.addEventListener(_.NO, e), () => {
-      N.removeEventListener(_.NO, e)
+    return T.addEventListener(_.NO, e), () => {
+      T.removeEventListener(_.NO, e)
     }
-  }, [N, S, D, T]);
+  }, [T, S, D, N]);
   let L = {
       channel: t,
       maybeLeaveFullScreen: M
@@ -113,17 +113,17 @@ function v(e) {
       }
       return e
     }({
-      video_layout: O ? "popout" : S
+      video_layout: j ? "popout" : S
     }, (0, s.AB)(e.id))), () => {
-      O && (0, b.isMac)() || t(S)
+      j && (0, b.isMac)() || t(S)
     }
-  }, [S, O]), i.useEffect(() => {
-    null != T && E.current === y.WtW.VIDEO && P === y.WtW.VOICE && (0, _.Pr)(T, N)
-  }, [N, P, E, T]), i.useEffect(() => {
-    !I && O && x()
-  }, [I, O]), w) ? (0, r.jsx)(h.Z, {
+  }, [S, j]), i.useEffect(() => {
+    null != N && E.current === y.WtW.VIDEO && P === y.WtW.VOICE && (0, _.Pr)(N, T)
+  }, [T, P, E, N]), i.useEffect(() => {
+    !I && j && x()
+  }, [I, j]), w) ? (0, r.jsx)(h.Z, {
     themeable: !1,
-    node: T,
+    node: N,
     guestWindow: p,
     className: C.rightTrayIcon,
     onClick: D(S)

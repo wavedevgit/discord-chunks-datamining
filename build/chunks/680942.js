@@ -18,8 +18,8 @@ var n = r(255367),
   f = r(67409),
   m = r(981631),
   h = r(474936),
-  g = r(388032),
-  y = r(846165);
+  y = r(388032),
+  g = r(846165);
 let O = e => {
   let {
     product: t,
@@ -32,7 +32,7 @@ let O = e => {
     analyticsLocations: P
   } = (0, s.ZP)(), w = i.useRef(null), C = (0, v.hv)("CollectiblesShopGiftButton"), S = (0, d.sp)(), I = (0, b.Z)();
   return (0, p.x6)(t) ? null : (0, n.jsx)(o.ua7, {
-    text: g.intl.string(g.t["JCFN//"]),
+    text: y.intl.string(y.t["JCFN//"]),
     delay: _,
     children: e => {
       var i, s;
@@ -55,11 +55,11 @@ let O = e => {
         return e
       }({}, e), s = s = {
         buttonRef: w,
-        className: y.giftButton,
+        className: g.giftButton,
         color: x,
         look: a.zx.Looks.FILLED,
         size: a.Ph.ICON,
-        innerClassName: y.giftButtonInner,
+        innerClassName: g.giftButtonInner,
         onClick: e => {
           e.stopPropagation(), u.default.track(m.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
             collectibles_shop_session_id: null == S ? void 0 : S.sessionId,

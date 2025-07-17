@@ -1,4 +1,4 @@
-/** Chunk was on 10801 **/
+/** Chunk was on 2016 **/
 n.d(t, {
   h: () => d
 }), n(388685);
@@ -30,8 +30,8 @@ function d(e) {
     }
   }, [C, x, f]);
   let {
-    preventIdle: j,
-    allowIdle: O
+    preventIdle: O,
+    allowIdle: j
   } = (0, u.Y)("popup");
   return (null == t ? void 0 : t.current) == null ? null : (0, r.jsx)(o.ZP, {
     children: (0, r.jsx)(a.jRF, {
@@ -43,10 +43,10 @@ function d(e) {
       nudgeAlignIntoViewport: h,
       children: () => (0, r.jsx)("div", {
         ref: x,
-        onMouseOver: j,
-        onFocus: j,
-        onBlur: O,
-        onMouseLeave: O,
+        onMouseOver: O,
+        onFocus: O,
+        onBlur: j,
+        onMouseLeave: j,
         children: p({
           hidden: _ || m || n,
           onDismiss: d

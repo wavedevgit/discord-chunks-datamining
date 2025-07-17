@@ -1,4 +1,4 @@
-/** Chunk was on 10801 **/
+/** Chunk was on 2016 **/
 n.d(t, {
   Z: () => M
 }), n(388685);
@@ -22,15 +22,15 @@ var r = n(255367),
   C = n(434404),
   x = n(454585),
   v = n(485386),
-  j = n(430824),
-  O = n(496675),
+  O = n(430824),
+  j = n(496675),
   E = n(594174),
   S = n(700785),
   P = n(51144),
   I = n(396769),
   Z = n(967128),
-  N = n(318374),
-  T = n(981631),
+  T = n(318374),
+  N = n(981631),
   A = n(388032),
   w = n(279078),
   R = n(73433);
@@ -38,9 +38,9 @@ var r = n(255367),
 function M(e) {
   let {
     channel: t
-  } = e, [n, l] = i.useState(!1), o = (0, m.ZP)(t, !0), M = t.guild_id, D = (0, d.e7)([v.Z], () => null != M ? v.Z.getRoles(M) : void 0), L = (0, d.e7)([E.default, j.Z], () => {
+  } = e, [n, l] = i.useState(!1), o = (0, m.ZP)(t, !0), M = t.guild_id, D = (0, d.e7)([v.Z], () => null != M ? v.Z.getRoles(M) : void 0), L = (0, d.e7)([E.default, O.Z], () => {
     var e;
-    return E.default.getUser(null == (e = j.Z.getGuild(M)) ? void 0 : e.ownerId)
+    return E.default.getUser(null == (e = O.Z.getGuild(M)) ? void 0 : e.ownerId)
   }), k = i.useMemo(() => null != M ? s()(D).sortBy(e => -e.position).filter(e => !(0, g.pM)(M, e.id)).value() : [], [M, D]), U = i.useMemo(() => s()(k).filter(e => {
     if (null == M) return !1;
     let n = S.I0({
@@ -49,7 +49,7 @@ function M(e) {
       },
       context: t
     });
-    return c.e$(n, T.Plq.ADMINISTRATOR) || c.e$(n, T.Plq.VIEW_CHANNEL)
+    return c.e$(n, N.Plq.ADMINISTRATOR) || c.e$(n, N.Plq.VIEW_CHANNEL)
   }).value(), [t, M, k]), B = (0, d.Wu)([E.default], () => {
     let e = {};
     for (let n of (null != L && (e[L.id] = L), Object.values(t.permissionOverwrites))) {
@@ -60,15 +60,15 @@ function M(e) {
     return s()(e).filter(e => {
       var n;
       let r = S.BT({
-          permission: T.Plq.ADMINISTRATOR,
+          permission: N.Plq.ADMINISTRATOR,
           user: e,
           context: t
         }),
         i = null != (n = t.permissionOverwrites[e.id]) ? n : S.Hn,
-        l = c.e$(i.allow, T.Plq.VIEW_CHANNEL);
+        l = c.e$(i.allow, N.Plq.VIEW_CHANNEL);
       return r || l
     }).value()
-  }, [t, L]), F = O.Z.can(T.Plq.MANAGE_CHANNELS, t) || O.Z.can(T.Plq.MANAGE_ROLES, t), H = i.useCallback(() => l(!1), []);
+  }, [t, L]), F = j.Z.can(N.Plq.MANAGE_CHANNELS, t) || j.Z.can(N.Plq.MANAGE_ROLES, t), H = i.useCallback(() => l(!1), []);
   return (0, r.jsxs)(Z.ZP, {
     channelId: t.id,
     children: [(0, r.jsx)(Z.Kq, {
@@ -108,7 +108,7 @@ function M(e) {
     }) : null, (0, r.jsxs)("div", {
       className: w.members,
       children: [function() {
-        if (1 !== B.length || U.length > 0) return (0, r.jsx)(N.Z, {
+        if (1 !== B.length || U.length > 0) return (0, r.jsx)(T.Z, {
           guildId: t.guild_id,
           className: w.avatars,
           maxUsers: 5,
@@ -136,7 +136,7 @@ function M(e) {
         })
       }(), U.map((e, n) => {
         var i, l;
-        let o = null != (l = e.colorString) ? l : (0, u.Rf)(T.p6O),
+        let o = null != (l = e.colorString) ? l : (0, u.Rf)(N.p6O),
           s = (null == (i = e.tags) ? void 0 : i.guild_connections) !== void 0;
         return F ? (0, r.jsx)(_.Z, {
           className: a()(w.role, {
@@ -147,7 +147,7 @@ function M(e) {
           disabled: !F,
           verified: s,
           onClick: () => {
-            C.Z.open(t.guild_id, T.pNK.MEMBERS), C.Z.selectRole(e.id)
+            C.Z.open(t.guild_id, N.pNK.MEMBERS), C.Z.selectRole(e.id)
           }
         }, e.id) : (0, r.jsx)(y.Z, {
           className: a()(w.role, {

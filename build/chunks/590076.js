@@ -1,6 +1,6 @@
-/** Chunk was on 83976 **/
+/** Chunk was on 24255 **/
 n.d(t, {
-  Z: () => g
+  Z: () => E
 });
 var r = n(255367),
   l = n(73800),
@@ -20,16 +20,16 @@ function m(e) {
     channelId: n,
     streamerId: i,
     stream: c
-  } = e, m = l.useRef(null), g = (0, o.e7)([s.default], () => s.default.getCurrentUser());
-  a()(null != g, "user cannot be null"), (0, f.Z)(m, g, i, n);
+  } = e, m = l.useRef(null), E = (0, o.e7)([s.default], () => s.default.getCurrentUser());
+  a()(null != E, "user cannot be null"), (0, f.Z)(m, E, i, n);
   let {
-    handleClick: E,
-    handleMouseDown: h,
-    handleMouseEnter: v,
+    handleClick: g,
+    handleMouseDown: v,
+    handleMouseEnter: h,
     handleMouseMove: S,
     handleMouseUp: b
   } = (0, d.Z)({
-    user: g,
+    user: E,
     channelId: n,
     streamerId: i,
     stream: c,
@@ -39,9 +39,9 @@ function m(e) {
   return (0, r.jsx)(u.Z, {
     children: (0, r.jsx)("canvas", {
       ref: m,
-      onClick: E,
-      onMouseDown: h,
-      onMouseEnter: v,
+      onClick: g,
+      onMouseDown: v,
+      onMouseEnter: h,
       onMouseMove: S,
       onMouseUp: b,
       className: p.sharedCanvas
@@ -49,7 +49,7 @@ function m(e) {
   })
 }
 
-function g(e) {
+function E(e) {
   let {
     isSharedCanvasEnabled: t
   } = c.Z.useExperiment({

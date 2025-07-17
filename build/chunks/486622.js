@@ -1,4 +1,4 @@
-/** Chunk was on 10801 **/
+/** Chunk was on 2016 **/
 n.d(t, {
   m: () => b
 }), n(388685);
@@ -23,7 +23,7 @@ function b(e) {
     onAcceptSuccess: n,
     onRejectSuccess: i,
     onError: b
-  } = e, _ = (0, f.Z)(), [y, C] = r.useState(!1), [x, v] = r.useState(!1), [j, O] = r.useState(!1), [E, S] = r.useState(!1), [P, I] = r.useState(!1), Z = y || x || j, N = r.useCallback(async e => {
+  } = e, _ = (0, f.Z)(), [y, C] = r.useState(!1), [x, v] = r.useState(!1), [O, j] = r.useState(!1), [E, S] = r.useState(!1), [P, I] = r.useState(!1), Z = y || x || O, T = r.useCallback(async e => {
     if (!Z) {
       C(!0);
       try {
@@ -35,7 +35,7 @@ function b(e) {
         C(!1)
       }
     }
-  }, [Z, n, b]), T = r.useCallback(async e => {
+  }, [Z, n, b]), N = r.useCallback(async e => {
     if (!Z) {
       v(!0);
       try {
@@ -63,14 +63,14 @@ function b(e) {
   }, [Z, i, b]), w = r.useCallback(async e => {
     if (Z) return;
     if (null != t && null == s.Z.getMutualGuilds(t.id)) {
-      O(!0);
+      j(!0);
       try {
         await (0, c.Z)(t.id, t.getAvatarURL(void 0, 80), {
           withMutualGuilds: !0,
           withMutualFriendsCount: !0
         })
       } catch (e) {} finally {
-        O(!1)
+        j(!1)
       }
     }
     let n = async () => {
@@ -81,7 +81,7 @@ function b(e) {
         channel_id: e,
         mutual_guild_ids: null != r ? r : [],
         other_user_id: null == t ? void 0 : t.id
-      }), await N(e)
+      }), await T(e)
     };
     (0, h.H)({
       channelId: e,
@@ -97,9 +97,9 @@ function b(e) {
         })
       }
     })
-  }, [N, Z, t]), R = r.useCallback((e, t, n) => {
+  }, [T, Z, t]), R = r.useCallback((e, t, n) => {
     let r = (r, i) => {
-        i && u.kJ.updateSetting(r), r && null != t && (0, o.zd)(t), N(e.id), d.default.track(g.rMx.MESSAGE_REQUEST_ACTION, {
+        i && u.kJ.updateSetting(r), r && null != t && (0, o.zd)(t), T(e.id), d.default.track(g.rMx.MESSAGE_REQUEST_ACTION, {
           action: m.cl.ACCEPT_HAM_CONFIRMATION_PROMPT,
           channel_id: e.id,
           is_dont_show_again_checked: i,
@@ -117,15 +117,15 @@ function b(e) {
         })
       }
     }) : r(i)
-  }, [N]);
+  }, [T]);
   return {
-    acceptMessageRequest: _ ? w : N,
-    rejectMessageRequest: T,
+    acceptMessageRequest: _ ? w : T,
+    rejectMessageRequest: N,
     rejectAll: A,
     markAsNotSpam: R,
     isAcceptLoading: y,
     isRejectLoading: x,
-    isUserProfileLoading: j,
+    isUserProfileLoading: O,
     isOptimisticAccepted: E,
     isOptimisticRejected: P
   }

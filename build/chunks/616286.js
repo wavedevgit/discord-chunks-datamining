@@ -1,6 +1,6 @@
-/** Chunk was on 10801 **/
+/** Chunk was on 2016 **/
 n.d(t, {
-  T: () => O
+  T: () => j
 }), n(388685), n(539854);
 var r = n(255367),
   i = n(73800),
@@ -40,7 +40,7 @@ function v(e) {
   }
 }
 
-function j(e) {
+function O(e) {
   let {
     className: t,
     channelId: n
@@ -59,7 +59,7 @@ function j(e) {
   })
 }
 
-function O(e) {
+function j(e) {
   let t;
   var {
     channelId: n,
@@ -69,7 +69,7 @@ function O(e) {
     inPopout: f,
     showRequestToSpeakSidebar: m,
     toggleRequestToSpeakSidebar: _
-  } = e, O = function(e, t) {
+  } = e, j = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -88,10 +88,10 @@ function O(e) {
     parentAnalyticsLocation: E
   } = (0, u.ZP)(), {
     disabled: S
-  } = O, P = i.useRef(null), I = (0, s.e7)([d.Z], () => d.Z.getChatOpen(n), [n]), {
+  } = j, P = i.useRef(null), I = (0, s.e7)([d.Z], () => d.Z.getChatOpen(n), [n]), {
     isShowing: Z,
-    unreadCount: N,
-    mentionCount: T
+    unreadCount: T,
+    mentionCount: N
   } = function(e) {
     let {
       unreadCount: t,
@@ -117,7 +117,7 @@ function O(e) {
     let {
       className: t
     } = e;
-    return (0, r.jsx)(j, {
+    return (0, r.jsx)(O, {
       className: t,
       channelId: n
     })
@@ -144,9 +144,9 @@ function O(e) {
     }
   }, [M]);
   let k = [t = f && S ? x.intl.string(x.t.DPgc5u) : I ? x.intl.string(x.t.nthdxM) : x.intl.string(x.t["5KxXrK"])];
-  return T > 0 && k.push(x.intl.formatToPlainString(x.t["3l1GOz"], {
-    mentionCount: T
-  })), N > 0 && k.push(x.intl.string(x.t.x5zAGR)), (0, r.jsx)(y.Z, function(e) {
+  return N > 0 && k.push(x.intl.formatToPlainString(x.t["3l1GOz"], {
+    mentionCount: N
+  })), T > 0 && k.push(x.intl.string(x.t.x5zAGR)), (0, r.jsx)(y.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -174,5 +174,5 @@ function O(e) {
       [o]: Z
     }),
     forceTooltipOpen: M
-  }, O))
+  }, j))
 }

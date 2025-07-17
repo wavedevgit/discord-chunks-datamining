@@ -1,4 +1,4 @@
-/** Chunk was on 10801 **/
+/** Chunk was on 2016 **/
 e.exports = {
   friendWrapper: "friendWrapper_bbd192",
   disabled: "disabled_bbd192",

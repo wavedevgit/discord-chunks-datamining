@@ -1,4 +1,4 @@
-/** Chunk was on 10801 **/
+/** Chunk was on 2016 **/
 n.d(t, {
   Z: () => m
 }), n(539854), n(388685);
@@ -39,11 +39,11 @@ function m() {
   var e;
   let [t, m] = i.useState([]), [g, b] = i.useState(!1), [_, y] = i.useState(!1), [C, x] = i.useState(null), v = o.C.useExperiment({
     location: "ChannelAttachMenu"
-  }), j = null != (e = null == v ? void 0 : v.enableAIFeatures) && e;
+  }), O = null != (e = null == v ? void 0 : v.enableAIFeatures) && e;
   i.useEffect(() => () => {
     m([]), b(!1), y(!1), x(null)
   }, []);
-  let O = i.useCallback(async (e, t) => {
+  let j = i.useCallback(async (e, t) => {
     b(!0), m([]);
     let n = function(e, t) {
       let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 10,
@@ -65,8 +65,8 @@ function m() {
     }
   }, []);
   return i.useEffect(() => {
-    _ && null != C && j && O(C.channel, C.editorTextContent)
-  }, [_, C, j, O]), i.useCallback((e, i) => j ? (_ || (x({
+    _ && null != C && O && j(C.channel, C.editorTextContent)
+  }, [_, C, O, j]), i.useCallback((e, i) => O ? (_ || (x({
     channel: e,
     editorTextContent: i
   }), y(!0)), g) ? (0, r.jsx)(a.sNh, {
@@ -144,5 +144,5 @@ function m() {
         modalKey: d.$z
       })
     }
-  }, "poll-suggestions-".concat(i))) : null, [j, _, g, t])
+  }, "poll-suggestions-".concat(i))) : null, [O, _, g, t])
 }

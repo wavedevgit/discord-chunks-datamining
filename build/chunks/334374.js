@@ -1,4 +1,4 @@
-/** Chunk was on 83976 **/
+/** Chunk was on 24255 **/
 n.d(t, {
   Z: () => u
 }), n(388685), n(35282), n(784620), n(973216);
@@ -12,17 +12,17 @@ function u(e) {
   let {
     currentUserId: t,
     participant: n
-  } = e, u = (0, i.Z)(n.type), [s, c] = l.useState(), [d, f] = l.useState(), [p, m] = l.useState(), g = n.id.split(":").at(-1), E = t === g, h = l.useCallback((e, t, n) => {
+  } = e, u = (0, i.Z)(n.type), [s, c] = l.useState(), [d, f] = l.useState(), [p, m] = l.useState(), E = n.id.split(":").at(-1), g = t === E, v = l.useCallback((e, t, n) => {
     var r, l, i;
     let o = n ? a.ZP.getOutboundStats(t) : a.ZP.getInboundStats(e, t);
     c(null != (r = null == o ? void 0 : o.codec) ? r : "unknown"), f(void 0 === (l = null == o ? void 0 : o.resolution) || 0 === l.width && 0 === l.height ? "unknown" : l.width + " x " + l.height), m((null == o ? void 0 : o.bitrateEstimate) !== void 0 ? (i = o.bitrateEstimate, "".concat((i / 1e3).toFixed(2), " Kbps")) : "unknown")
   }, []);
   return l.useEffect(() => {
-    let e = () => h(g, u, E);
+    let e = () => v(E, u, g);
     e();
     let t = setInterval(e, 1e3);
     return () => clearInterval(t)
-  }, [E, g, u, h]), (0, r.jsxs)("div", {
+  }, [g, E, u, v]), (0, r.jsxs)("div", {
     className: o.streamInfoContainer,
     children: [(0, r.jsx)("div", {
       children: (0, r.jsx)("strong", {
@@ -42,7 +42,7 @@ function u(e) {
       }), (0, r.jsx)("strong", {
         children: d
       })]
-    }), E && (0, r.jsxs)("div", {
+    }), g && (0, r.jsxs)("div", {
       className: o.infoRow,
       children: [(0, r.jsx)("span", {
         children: "Bitrate Estimate: "

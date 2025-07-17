@@ -1,4 +1,4 @@
-/** Chunk was on 10801 **/
+/** Chunk was on 2016 **/
 n.d(t, {
   Z: () => eg
 }), n(388685);
@@ -22,15 +22,15 @@ var r = n(255367),
   C = n(258609),
   x = n(74299),
   v = n(924301),
-  j = n(459502),
-  O = n(856691),
+  O = n(459502),
+  j = n(856691),
   E = n(357156),
   S = n(923973),
   P = n(829750),
   I = n(189771),
   Z = n(294629),
-  N = n(793319),
-  T = n(987329),
+  T = n(793319),
+  N = n(987329),
   A = n(560688),
   w = n(390322),
   R = n(871499),
@@ -92,7 +92,7 @@ let ec = i.memo(function(e) {
         channelId: t.id
       }), n ? (0, r.jsx)(es, {
         channel: t
-      }) : null, (0, r.jsx)(T.Z, {
+      }) : null, (0, r.jsx)(N.Z, {
         channel: t
       })]
     }), (0, r.jsx)(ed, {
@@ -125,9 +125,9 @@ function ed(e) {
     canManageGuildEvent: f
   } = (0, E.XJ)(t), m = (0, o.e7)([K.Z], () => K.Z.getStageInstanceByChannel(t.id), [t.id]), g = (0, o.e7)([v.ZP], () => v.ZP.getGuildScheduledEvent(null == m ? void 0 : m.guild_scheduled_event_id)), b = (0, o.e7)([F.Z], () => F.Z.getVoiceChannelId() === t.id, [t.id]), {
     suppress: C
-  } = (0, Z.Z)(t), x = k.default.getId(), [j] = (0, er.Z)(t), O = q.ZP.isModerator(x, t.id), S = (0, W.B)(t.id), P = f(g), {
+  } = (0, Z.Z)(t), x = k.default.getId(), [O] = (0, er.Z)(t), j = q.ZP.isModerator(x, t.id), S = (0, W.B)(t.id), P = f(g), {
     parentAnalyticsLocation: I
-  } = (0, h.ZP)(), N = i.useRef(null);
+  } = (0, h.ZP)(), T = i.useRef(null);
   if (!b) return (0, r.jsx)(s.zx, {
     size: s.zx.Sizes.MEDIUM,
     color: s.zx.Colors.GREEN,
@@ -148,7 +148,7 @@ function ed(e) {
       })]
     })
   });
-  let T = () => (function(e) {
+  let N = () => (function(e) {
     let {
       channel: t,
       appContext: n
@@ -159,8 +159,8 @@ function ed(e) {
     channel: t,
     appContext: l
   });
-  return (O || P) && null != m ? (0, r.jsx)(c.yRy, {
-    targetElementRef: N,
+  return (j || P) && null != m ? (0, r.jsx)(c.yRy, {
+    targetElementRef: T,
     renderPopout: e => {
       let {
         closePopout: i
@@ -195,19 +195,19 @@ function ed(e) {
         isShown: i
       } = t;
       return (0, r.jsx)(M.Z, {
-        ref: N,
+        ref: T,
         label: ea.intl.string(ea.t.c6qKws),
-        onClick: T,
+        onClick: N,
         onPopoutClick: n,
         popoutOpen: i
       })
     }
-  }) : C && !S || j ? (0, r.jsx)(M.Z, {
+  }) : C && !S || O ? (0, r.jsx)(M.Z, {
     label: ea.intl.string(ea.t.SMKyio),
-    onClick: T
+    onClick: N
   }) : (0, r.jsx)(M.Z, {
     label: ea.intl.string(ea.t.c6qKws),
-    onClick: T
+    onClick: N
   })
 }
 
@@ -266,9 +266,9 @@ let ef = i.memo(function(e) {
     cameraUnavailable: p,
     enabled: _
   } = (0, S.Z)(), v = (0, I.Z)(t), {
-    limit: j,
-    reachedLimit: O
-  } = (0, P.Z)(t), E = (0, o.e7)([H.default], () => H.default.getCurrentUser()), R = (0, o.e7)([U.Z], () => (0, x.Z)(U.Z)), M = (0, o.e7)([F.Z], () => F.Z.getVoiceChannelId() === t.id, [t.id]), k = (0, o.e7)([f.Z], () => f.Z.getStreamParticipants(t.id)[0], [t.id]), B = (0, X.PK)(t.id), G = j > 0, V = O && !B || null != k && k.user.id !== (null == E ? void 0 : E.id), z = (0, y.u)("AudioDeviceMenu", n, {
+    limit: O,
+    reachedLimit: j
+  } = (0, P.Z)(t), E = (0, o.e7)([H.default], () => H.default.getCurrentUser()), R = (0, o.e7)([U.Z], () => (0, x.Z)(U.Z)), M = (0, o.e7)([F.Z], () => F.Z.getVoiceChannelId() === t.id, [t.id]), k = (0, o.e7)([f.Z], () => f.Z.getStreamParticipants(t.id)[0], [t.id]), B = (0, X.PK)(t.id), G = O > 0, V = j && !B || null != k && k.user.id !== (null == E ? void 0 : E.id), z = (0, y.u)("AudioDeviceMenu", n, {
     entrypoint: el.A5.CARET
   }), Y = i.useRef(null), q = i.useRef(null);
   if (null == E) return null;
@@ -304,10 +304,10 @@ let ef = i.memo(function(e) {
         hasPermission: v,
         enabled: _,
         cameraUnavailable: p,
-        onChange: N.r,
+        onChange: T.r,
         onCameraUnavailable: A.Z,
-        channelLimitReached: O,
-        channelLimit: j,
+        channelLimitReached: j,
+        channelLimit: O,
         popoutOpen: i,
         onPopoutClick: n
       })
@@ -362,7 +362,7 @@ let ef = i.memo(function(e) {
       }), G && K]
     }) : null, (0, r.jsxs)("div", {
       className: eo.buttonSection,
-      children: [M && !l && G ? (0, r.jsx)(N.NZ, {
+      children: [M && !l && G ? (0, r.jsx)(T.NZ, {
         channel: t,
         currentUser: E,
         exitFullScreen: () => null,
@@ -377,7 +377,7 @@ let ef = i.memo(function(e) {
         channel: t
       }), M && !l && (0, r.jsx)(ep, {
         channel: t
-      }), (0, r.jsx)(T.Z, {
+      }), (0, r.jsx)(N.Z, {
         channel: t
       })]
     }), (0, r.jsx)(ed, {
@@ -413,11 +413,11 @@ let eg = i.memo(function(e) {
     className: eo.containerColumn,
     children: [(0, r.jsxs)("div", {
       className: eo.eventPrompts,
-      children: [u ? (0, r.jsx)(j.Z, {
+      children: [u ? (0, r.jsx)(O.Z, {
         channelId: null == t ? void 0 : t.id
       }) : null, (0, r.jsx)("div", {
         className: eo.separator
-      }), u && a ? (0, r.jsx)(O.Z, {
+      }), u && a ? (0, r.jsx)(j.Z, {
         highlight: !0,
         channel: t
       }) : null, (0, r.jsx)("div", {

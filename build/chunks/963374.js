@@ -1,22 +1,22 @@
-/** Chunk was on 61636 **/
+/** Chunk was on 80416 **/
 n.d(t, {
   nC: () => d
 }), n(388685), n(704826), n(35282), n(539854);
-var i = n(392711),
-  r = n.n(i),
-  l = n(697741);
-let o = new Set(["a", "an", "and", "are", "as", "at", "be", "but", "by", "for", "if", "in", "into", "is", "it", "no", "not", "of", "on", "or", "such", "that", "the", "their", "then", "there", "these", "they", "this", "to", "was", "will", "with"]);
+var a = n(392711),
+  i = n.n(a),
+  o = n(697741);
+let r = new Set(["a", "an", "and", "are", "as", "at", "be", "but", "by", "for", "if", "in", "into", "is", "it", "no", "not", "of", "on", "or", "such", "that", "the", "their", "then", "there", "these", "they", "this", "to", "was", "will", "with"]);
 
-function s(e) {
+function c(e) {
   return e.replace(/('|\u2019|\uFF07)(s|S)$/, "")
 }
 
-function a(e) {
+function l(e) {
   return e.toLowerCase()
 }
 
-function c(e) {
-  return o.has(e)
+function s(e) {
+  return r.has(e)
 }
 
 function u(e) {
@@ -24,24 +24,24 @@ function u(e) {
 }
 
 function d(e) {
-  let t = new Set(r()(e.split(/\W+/)).map(s).reject(u).map(a).reject(c).map(l.$).value());
+  let t = new Set(i()(e.split(/\W+/)).map(c).reject(u).map(l).reject(s).map(o.$).value());
   return e => (function e(t, n) {
     if (Array.isArray(t)) t.forEach(t => e(t, n));
     else if ("string" == typeof t.content && "codeBlock" !== t.type) {
       let e = [],
-        i = "";
+        a = "";
       t.content.split(/(\W+)/g).forEach(t => {
-        var r;
-        !u(r = a(s(r = t))) && !c(r) && n.has((0, l.$)(r)) ? (i.length > 0 && e.push({
+        var i;
+        !u(i = l(c(i = t))) && !s(i) && n.has((0, o.$)(i)) ? (a.length > 0 && e.push({
           type: "text",
-          content: i
+          content: a
         }), e.push({
           type: "highlight",
           content: t
-        }), i = "") : i += t
-      }), e.length > 0 && (i.length > 0 && e.push({
+        }), a = "") : a += t
+      }), e.length > 0 && (a.length > 0 && e.push({
         type: "text",
-        content: i
+        content: a
       }), "text" === t.type ? t.content = e : t.content = [{
         type: "text",
         content: e

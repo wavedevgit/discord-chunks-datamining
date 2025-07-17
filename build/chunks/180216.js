@@ -1,4 +1,4 @@
-/** Chunk was on 10801 **/
+/** Chunk was on 2016 **/
 n.d(t, {
   Z: () => b
 }), n(388685), n(953529);
@@ -24,7 +24,7 @@ function b(e) {
   } = e, b = (0, u.C)({
     guildId: t,
     channelId: n
-  }), _ = (0, c.GG)(t), y = (0, c.YB)(t), C = (0, l.e7)([s.Z], () => s.Z.getGuild(t), [t]), x = null == C ? void 0 : C.name, v = (0, l.e7)([o.Z], () => o.Z.getChannel(n)), j = i.useMemo(() => {
+  }), _ = (0, c.GG)(t), y = (0, c.YB)(t), C = (0, l.e7)([s.Z], () => s.Z.getGuild(t), [t]), x = null == C ? void 0 : C.name, v = (0, l.e7)([o.Z], () => o.Z.getChannel(n)), O = i.useMemo(() => {
     let e = {};
     for (let t of _)
       for (let n of t.subscription_listings_ids) e[n] = t.id;
@@ -55,10 +55,10 @@ function b(e) {
       children: null == y ? void 0 : y.description
     }), (0, r.jsx)(p.Z, {
       guildId: t,
-      children: b.filter(e => null != j[e.id]).map(e => (0, r.jsx)(h.Z, {
+      children: b.filter(e => null != O[e.id]).map(e => (0, r.jsx)(h.Z, {
         guildId: t,
         listingId: e.id,
-        groupListingId: j[e.id],
+        groupListingId: O[e.id],
         analyticsLocation: f.Sbl.ROLE_SUBSCRIPTION_GATED_CHANNEL
       }, e.id))
     })]

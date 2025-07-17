@@ -1,72 +1,72 @@
-/** Chunk was on 93955 **/
-n.d(t, {
-  default: () => g
+/** Chunk was on 59500 **/
+t.d(i, {
+  default: () => h
 });
-var a = n(255367);
-n(73800);
-var r = n(481060),
-  i = n(546957),
-  o = n(190014),
-  c = n(301812),
-  s = n(988043),
-  l = n(919539),
-  u = n(526761),
-  d = n(388032),
-  p = n(671364);
+var s = t(255367);
+t(73800);
+var e = t(481060),
+  r = t(546957),
+  a = t(190014),
+  c = t(301812),
+  d = t(988043),
+  l = t(919539),
+  o = t(526761),
+  x = t(388032),
+  u = t(671364);
 
-function _(e) {
+function g(n) {
   let {
-    guildId: t
-  } = e;
-  return (0, a.jsxs)(i.Z, {
-    children: [(0, a.jsx)(s.Z, {
-      ingress: u.f4.SERVER_PRIVACY_MODAL,
-      guildId: t
-    }), (0, a.jsx)(l.Z, {
-      ingress: u.f4.SERVER_PRIVACY_MODAL,
-      guildId: t
-    }), (0, a.jsx)(c.Z, {
-      ingress: u.f4.SERVER_PRIVACY_MODAL,
-      guildId: t
-    }), (0, a.jsx)(o.Z, {
-      ingress: u.f4.SERVER_PRIVACY_MODAL,
-      guildId: t
-    }), (0, a.jsx)(r.Text, {
+    guildId: i
+  } = n;
+  return (0, s.jsxs)(r.Z, {
+    children: [(0, s.jsx)(d.Z, {
+      ingress: o.f4.SERVER_PRIVACY_MODAL,
+      guildId: i
+    }), (0, s.jsx)(l.Z, {
+      ingress: o.f4.SERVER_PRIVACY_MODAL,
+      guildId: i
+    }), (0, s.jsx)(c.Z, {
+      ingress: o.f4.SERVER_PRIVACY_MODAL,
+      guildId: i
+    }), (0, s.jsx)(a.Z, {
+      ingress: o.f4.SERVER_PRIVACY_MODAL,
+      guildId: i
+    }), (0, s.jsx)(e.Text, {
       color: "header-secondary",
       variant: "text-sm/normal",
-      children: d.intl.format(d.t.LNsV09, {
+      children: x.intl.format(x.t.LNsV09, {
         policyLink: "https://discord.com/safety/360043709612-our-policies"
       })
     })]
   })
 }
 
-function g(e) {
+function h(n) {
   let {
-    guild: t,
-    transitionState: n,
-    onClose: i
-  } = e, o = "".concat(d.intl.string(d.t.BayiAg), "—").concat(null != t ? t.name : "??");
-  return (0, a.jsxs)(r.Y0X, {
-    transitionState: n,
-    size: r.CgR.SMALL,
-    "aria-label": o,
+    guild: i,
+    transitionState: t,
+    onClose: r
+  } = n, a = "".concat(x.intl.string(x.t.BayiAg), "—").concat(null != i ? i.name : "??");
+  return (0, s.jsxs)(e.Y0X, {
+    transitionState: t,
+    size: e.CgR.SMALL,
+    "aria-label": a,
     parentComponent: "PrivacySettings",
-    children: [(0, a.jsx)(r.xBx, {
-      children: (0, a.jsx)(r.X6q, {
+    children: [(0, s.jsx)(e.xBx, {
+      children: (0, s.jsx)(e.X6q, {
         variant: "heading-lg/semibold",
-        children: o
+        children: a
       })
-    }), (0, a.jsx)(r.hzk, {
-      className: p.content,
-      children: (0, a.jsx)(_, {
-        guildId: t.id
+    }), (0, s.jsx)(e.hzk, {
+      className: u.content,
+      children: (0, s.jsx)(g, {
+        guildId: i.id
       })
-    }), (0, a.jsx)(r.mzw, {
-      children: (0, a.jsx)(r.zxk, {
+    }), (0, s.jsx)(e.mzw, {
+      children: (0, s.jsx)(e.zxk, {
         variant: "primary",
-        text: d.intl.string(d.t.i4jeWV),
-        onClick: () => i()
+        text: x.intl.string(x.t.i4jeWV),
+        onClick: () => r()
       })
     })]
   })

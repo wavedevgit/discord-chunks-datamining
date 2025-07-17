@@ -1,6 +1,6 @@
 /** Chunk was on 46746 **/
 n.d(t, {
-  Z: () => E
+  Z: () => T
 }), n(35282), n(539854), n(388685), n(387201), n(642613);
 var r = n(255367),
   i = n(73800),
@@ -30,7 +30,7 @@ var r = n(255367),
   I = n(388032),
   N = n(152965);
 
-function T(e) {
+function E(e) {
   let {
     result: t,
     onSelectChannel: n
@@ -66,7 +66,7 @@ function T(e) {
   })
 }
 
-function E(e) {
+function T(e) {
   let {
     onSelectChannel: t,
     className: n
@@ -96,11 +96,11 @@ function E(e) {
     }
     for (let n of g.Z.getFrequentlyWithoutFetchingLatest()) n instanceof h.Sf && n.type === Z.d4z.GUILD_VOICE && !t.has(n.id) && (0, O.JL)(n, v.Z, j.Z) && (t.add(n.id), e.push(n));
     return e
-  }), E = i.useMemo(() => {
+  }), T = i.useMemo(() => {
     let e = new Set(C.map(e => e.id)),
       t = new Set(S.map(e => e.id));
     return [...S.toSorted((t, n) => e.has(t.id) && !e.has(n.id) ? -1 : e.has(n.id) && !e.has(t.id) ? 1 : 0).map(e => (0, d.Z)(e.id)).filter(y.lm), ...C.filter(e => !t.has(e.id)).map(e => (0, d.Z)(e.id)).filter(y.lm)]
-  }, [C, S]), R = "" !== u ? p : E;
+  }, [C, S]), R = "" !== u ? p : T;
   return (0, r.jsxs)("div", {
     className: s()(N.root, n),
     children: [(0, r.jsx)(a.E1j, {
@@ -132,7 +132,7 @@ function E(e) {
         let {
           rowIndex: n
         } = e, i = R[n];
-        return (0, r.jsx)(T, {
+        return (0, r.jsx)(E, {
           result: i,
           onSelectChannel: t
         }, i.record.id)

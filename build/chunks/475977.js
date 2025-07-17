@@ -59,16 +59,16 @@ let f = () => {
         color: j ? "redesign-button-overlay-text" : "currentColor",
         children: x
       })]
-    }), (0, i.jsx)(s.zx, {
+    }), (0, i.jsx)(a.zxk, {
       onClick: () => {
         (0, d.mK)({
           analyticsLocations: e,
           analyticsSource: l.Z.COLLECTIBLES_PROFILE_SETTINGS_UPSELL
         })
       },
-      className: h.ctaButton,
-      color: s.zx.Colors.BRAND_INVERTED,
-      children: g.intl.string(g.t.fYfGgI)
+      variant: "overlay-primary",
+      color: s.Tt.BRAND_INVERTED,
+      text: g.intl.string(g.t.fYfGgI)
     })]
   })
 }

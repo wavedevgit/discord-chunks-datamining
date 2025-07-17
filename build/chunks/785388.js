@@ -1,4 +1,4 @@
-/** Chunk was on 38626 **/
+/** Chunk was on 73057 **/
 n.d(t, {
   default: () => et
 }), n(388685), n(539854), n(642613), n(358797), n(415506);
@@ -35,8 +35,8 @@ var i = n(255367),
   A = n(375954),
   M = n(496675),
   _ = n(699516),
-  L = n(594174),
-  k = n(768581),
+  k = n(594174),
+  L = n(768581),
   D = n(176354),
   U = n(5192),
   V = n(709054),
@@ -135,7 +135,7 @@ let Y = e => {
       reactionType: s,
       colors: u
     } = e, d = r.useMemo(() => X(t), [t]), p = r.useMemo(() => (function(e, t, n, r) {
-      let l = null == e.id ? D.ZP.getURL(e.name) : k.ZP.getEmojiURL({
+      let l = null == e.id ? D.ZP.getURL(e.name) : L.ZP.getEmojiURL({
         id: e.id,
         animated: e.animated,
         size: 24
@@ -215,7 +215,7 @@ function $(e) {
     reactionType: a,
     onRemoveReactor: s,
     disableManage: c = !1
-  } = e, d = (0, u.e7)([P.default], () => P.default.getId()), p = (0, u.e7)([L.default], () => L.default.getUser(n.id), [n]), g = (0, I.$R)(l), j = (0, u.e7)([M.Z], () => M.Z.can(G.Plq.MANAGE_MESSAGES, l) && g) || d === n.id, O = (0, u.e7)([w.ZP, C.Z, _.Z], () => U.ZP.getName(o, l.id, n));
+  } = e, d = (0, u.e7)([P.default], () => P.default.getId()), p = (0, u.e7)([k.default], () => k.default.getUser(n.id), [n]), g = (0, I.$R)(l), j = (0, u.e7)([M.Z], () => M.Z.can(G.Plq.MANAGE_MESSAGES, l) && g) || d === n.id, O = (0, u.e7)([w.ZP, C.Z, _.Z], () => U.ZP.getName(o, l.id, n));
   return (0, i.jsxs)(b.Z, {
     className: W.reactorDefault,
     onContextMenu: e => (0, B.Pv)(e, n, l),

@@ -1,4 +1,4 @@
-/** Chunk was on 83976 **/
+/** Chunk was on 24255 **/
 n.d(t, {
   Z: () => b
 });
@@ -15,7 +15,7 @@ var r = n(255367),
   p = n(314910),
   m = n(83773);
 
-function g(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -33,14 +33,14 @@ function g(e) {
   }
   return e
 }
-let E = {
+let g = {
     visibility: "hidden"
   },
-  h = {
+  v = {
     precision: 1e-4,
     duration: 300
   },
-  v = {
+  h = {
     tension: 150,
     friction: 20,
     precision: 1e-4,
@@ -63,7 +63,7 @@ function b(e) {
   let w = () => {
       var e;
       let t = null == (e = O.current) ? void 0 : e.getBoundingClientRect();
-      return null == t || n ? E : {
+      return null == t || n ? g : {
         width: t.width,
         height: t.height,
         top: t.top,
@@ -72,7 +72,7 @@ function b(e) {
     },
     P = e => {
       let t = null == y ? void 0 : y.getBoundingClientRect();
-      if (I.current = t, e.timestamp !== j || null == t || n) return E;
+      if (I.current = t, e.timestamp !== j || null == t || n) return g;
       let {
         top: r,
         left: l
@@ -94,24 +94,24 @@ function b(e) {
       enter: {
         opacity: 0
       },
-      config: h
+      config: v
     }, "animate-always"),
     R = (0, l.useRef)(null),
-    N = (0, u.Yzy)(_, {
+    C = (0, u.Yzy)(_, {
       ref: R,
       keys: e => e.timestamp,
-      from: e => g({
+      from: e => E({
         position: "fixed",
         visibility: "hidden",
         opacity: 1
       }, b.enabled ? P(e) : w()),
-      enter: e => [g({
+      enter: e => [E({
         opacity: 1,
         visibility: "visible"
       }, P(e))],
-      leave: g({
+      leave: E({
         opacity: 0
-      }, !b.enabled && g({
+      }, !b.enabled && E({
         height: 0,
         width: 0
       }, (() => {
@@ -120,7 +120,7 @@ function b(e) {
           left: I.current.left + 12
         }
       })())),
-      config: b.enabled ? S : v,
+      config: b.enabled ? S : h,
       onRest: (e, t) => {
         null != t.item && null != _.find(e => e.timestamp === t.item.timestamp) && (0, c.Gh)(Z, t.item.timestamp)
       }
@@ -135,7 +135,7 @@ function b(e) {
     })), (0, r.jsx)(p.ZP, {
       children: (0, r.jsx)("div", {
         className: m.hidden,
-        children: N((e, t, n, l) => (null == t ? void 0 : t.thumbnail) != null && (0, r.jsx)(i.animated.img, {
+        children: C((e, t, n, l) => (null == t ? void 0 : t.thumbnail) != null && (0, r.jsx)(i.animated.img, {
           src: t.thumbnail,
           className: m.movingImage,
           style: e

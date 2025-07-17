@@ -1,4 +1,4 @@
-/** Chunk was on 10801 **/
+/** Chunk was on 2016 **/
 n.d(t, {
   Z: () => E
 });
@@ -22,9 +22,9 @@ var r = n(255367),
   C = n(228168),
   x = n(388032),
   v = n(443773),
-  j = n(268293);
+  O = n(268293);
 
-function O(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -50,20 +50,20 @@ function E(e) {
     onHide: E
   } = e, S = (0, m.ZP)(t.id), P = (0, s.ZP)(), I = (0, a.e7)([d.Z], () => d.Z.isBlocked(t.id)), {
     analyticsLocations: Z
-  } = (0, u.ZP)(I ? c.Z.BLOCKED_PROFILE_PANEL : c.Z.IGNORED_PROFILE_PANEL), N = (0, h.ZB)({
+  } = (0, u.ZP)(I ? c.Z.BLOCKED_PROFILE_PANEL : c.Z.IGNORED_PROFILE_PANEL), T = (0, h.ZB)({
     layout: "SIDEBAR",
     userId: t.id,
     channelId: n.id
-  }), T = i.useRef(null);
+  }), N = i.useRef(null);
   return (0, r.jsx)(u.Gt, {
     value: Z,
     children: (0, r.jsx)(h.Mt, {
-      value: N,
+      value: T,
       fetchStartedAt: null == S ? void 0 : S.fetchStartedAt,
       fetchEndedAt: null == S ? void 0 : S.fetchEndedAt,
       isLoaded: null == S ? void 0 : S.isLoaded,
       children: (0, r.jsx)(b.Z, {
-        ref: T,
+        ref: N,
         user: t,
         displayProfile: S,
         themeType: C.lY.SIDEBAR,
@@ -73,7 +73,7 @@ function E(e) {
             className: v.container,
             children: [(0, r.jsx)("img", {
               alt: "",
-              src: j,
+              src: O,
               className: v.preview,
               "aria-hidden": !0
             }), (0, r.jsxs)("div", {
@@ -96,18 +96,18 @@ function E(e) {
                 children: [(0, r.jsx)(y.Z, {
                   isBlocked: I,
                   onClick: () => {
-                    E(), (0, f.pQ)(O({
+                    E(), (0, f.pQ)(j({
                       action: I ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
                       analyticsLocations: Z
-                    }, N))
+                    }, T))
                   }
                 }), (0, r.jsx)(_.Z, {
                   userId: t.id,
                   onClick: () => {
-                    E(), (0, f.pQ)(O({
+                    E(), (0, f.pQ)(j({
                       action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
                       analyticsLocations: Z
-                    }, N))
+                    }, T))
                   }
                 })]
               })]

@@ -1,4 +1,4 @@
-/** Chunk was on 61216 **/
+/** Chunk was on 80416 **/
 e.exports = {
   artContainer: "artContainer_ade26d",
   modalContainer: "modalContainer_ade26d",

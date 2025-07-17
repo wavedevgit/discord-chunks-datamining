@@ -1,4 +1,4 @@
-/** Chunk was on 10801 **/
+/** Chunk was on 2016 **/
 n.d(t, {
   Z: () => w
 });
@@ -22,15 +22,15 @@ var r = n(255367),
   C = n(867176),
   x = n(280885),
   v = n(900927),
-  j = n(678738),
-  O = n(502762),
+  O = n(678738),
+  j = n(502762),
   E = n(530),
   S = n(679332),
   P = n(544989),
   I = n(228168),
   Z = n(388032),
-  N = n(638414),
-  T = n(283189);
+  T = n(638414),
+  N = n(283189);
 
 function A(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -75,7 +75,7 @@ function w(e) {
       fetchStartedAt: null == R ? void 0 : R.fetchStartedAt,
       fetchEndedAt: null == R ? void 0 : R.fetchEndedAt,
       isLoaded: null == R ? void 0 : R.isLoaded,
-      children: (0, r.jsxs)(O.Z, {
+      children: (0, r.jsxs)(j.Z, {
         ref: U,
         user: t,
         displayProfile: R,
@@ -87,7 +87,7 @@ function w(e) {
               user: t
             })
           }), (0, r.jsxs)("header", {
-            className: N.header,
+            className: T.header,
             children: [(0, r.jsx)(C.Z, {
               user: t,
               displayProfile: R,
@@ -101,7 +101,7 @@ function w(e) {
               onOpenProfile: w ? void 0 : F
             })]
           }), (0, r.jsxs)("div", {
-            className: T.body,
+            className: N.body,
             children: [(0, r.jsx)(E.Z, {
               user: t,
               nickname: h.ZP.getName(null, n.id, t),
@@ -111,9 +111,9 @@ function w(e) {
                 displayProfile: R,
                 themeType: I.lY.SIDEBAR
               })
-            }), (0, r.jsxs)(O.Z.Overlay, {
-              className: T.overlay,
-              children: [(0, r.jsx)(j.Z, {
+            }), (0, r.jsxs)(j.Z.Overlay, {
+              className: N.overlay,
+              children: [(0, r.jsx)(O.Z, {
                 heading: Z.intl.string(Z.t["61W33d"]),
                 headingColor: "header-primary",
                 children: (0, r.jsx)(x.Z, {
@@ -122,7 +122,7 @@ function w(e) {
                   animateOnHover: !0,
                   isHovering: B
                 })
-              }), (0, r.jsx)(j.Z, {
+              }), (0, r.jsx)(O.Z, {
                 heading: Z.intl.string(Z.t["A//N4u"]),
                 headingColor: "header-primary",
                 children: (0, r.jsx)(v.Z, {
@@ -132,12 +132,12 @@ function w(e) {
             })]
           })]
         }), !w && (0, r.jsx)("footer", {
-          className: N.footer,
+          className: T.footer,
           children: (0, r.jsx)(a.zx, {
             fullWidth: !0,
             size: a.zx.Sizes.LARGE,
             look: a.zx.Looks.BLANK,
-            color: N.footerButtonColor,
+            color: T.footerButtonColor,
             onClick: () => {
               F(), (0, m.pQ)(A({
                 action: "PRESS_VIEW_PROFILE",

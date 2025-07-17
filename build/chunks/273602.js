@@ -1,4 +1,4 @@
-/** Chunk was on 13653 **/
+/** Chunk was on 80416 **/
 n.d(t, {
   default: () => P
 }), n(388685), n(953529);
@@ -22,8 +22,8 @@ var a = n(255367),
   y = n(861990),
   C = n(127654),
   x = n(979956),
-  E = n(228392),
-  O = n(404616),
+  O = n(228392),
+  E = n(404616),
   v = n(470623),
   I = n(981631),
   S = n(231338),
@@ -39,16 +39,16 @@ async function w(e) {
       onClose: _
     } = e,
     g = T.default.castChannelIdAsMessageId(o.id),
-    E = new d.Z;
-  E.on("progress", e => {
+    O = new d.Z;
+  O.on("progress", e => {
     let t = (0, h.dg)(p.id);
-    e.currentSize > t && (E.cancel(), l(!1), _(), (0, C.G)(o, (0, x.KZ)(c)))
+    e.currentSize > t && (O.cancel(), l(!1), _(), (0, C.G)(o, (0, x.KZ)(c)))
   });
-  let O = b.Z.getMessage(o.id, g),
-    v = null != O ? O.attachments : [];
+  let E = b.Z.getMessage(o.id, g),
+    v = null != E ? E.attachments : [];
   l(!0);
   try {
-    i = await E.uploadFiles(c)
+    i = await O.uploadFiles(c)
   } catch (e) {
     l(!1);
     return
@@ -81,19 +81,19 @@ function P(e) {
   }, [h]);
   let C = null != h && null != T ? {
       src: T,
-      width: O.TJ,
-      height: O.Lp,
+      width: E.TJ,
+      height: E.Lp,
       spoiler: r[0].spoiler,
       alt: r[0].description
     } : null,
     [x, I] = i.useState(!1),
     P = i.useCallback(() => {
-      (0, E.xI)({
+      (0, O.xI)({
         added: !1
       }), s(), d()
     }, [s, d]),
     N = i.useCallback(() => {
-      null != m && null != f && ((0, E.xI)({
+      null != m && null != f && ((0, O.xI)({
         added: !0
       }), w({
         thread: m,
@@ -128,7 +128,7 @@ function P(e) {
     }],
     children: (0, a.jsx)(v.oL, {
       channel: b,
-      children: (0, a.jsx)(O.ZP, {
+      children: (0, a.jsx)(E.ZP, {
         threadId: n,
         goToThread: S.dG,
         overrideMedia: C,

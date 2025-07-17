@@ -1,4 +1,4 @@
-/** Chunk was on 10801 **/
+/** Chunk was on 2016 **/
 n.d(t, {
   Z: () => f
 });
@@ -26,11 +26,11 @@ let h = i.memo(function(e) {
     setPopout: x
   } = e, {
     isInteractionUserBlocked: v,
-    isInteractionUserIgnored: j
+    isInteractionUserIgnored: O
   } = (0, l.cj)([c.Z], () => ({
     isInteractionUserBlocked: c.Z.isBlockedForMessage(h),
     isInteractionUserIgnored: c.Z.isIgnoredForMessage(h)
-  }), [h]), O = (0, l.e7)([s.Z], () => s.Z.getMessageByReference(null == h ? void 0 : h.messageReference)), E = (0, d.wq)(null == (t = h.interaction) ? void 0 : t.user.id, f.id), S = (0, d.Nk)(h.interaction, f, g, x), P = (0, d.NU)(b, x), I = (0, o.t0)(h), Z = (null == I ? void 0 : I.type) === a.B8.APPLICATION_COMMAND ? null == (n = I.target_user) ? void 0 : n.id : void 0, N = (0, d.wq)(Z, f.id), T = (0, d.JC)(Z, f, y, x), A = (0, d.rY)(C, x), w = (0, d.Xn)(_, x), R = i.useCallback(() => {
+  }), [h]), j = (0, l.e7)([s.Z], () => s.Z.getMessageByReference(null == h ? void 0 : h.messageReference)), E = (0, d.wq)(null == (t = h.interaction) ? void 0 : t.user.id, f.id), S = (0, d.Nk)(h.interaction, f, g, x), P = (0, d.NU)(b, x), I = (0, o.t0)(h), Z = (null == I ? void 0 : I.type) === a.B8.APPLICATION_COMMAND ? null == (n = I.target_user) ? void 0 : n.id : void 0, T = (0, d.wq)(Z, f.id), N = (0, d.JC)(Z, f, y, x), A = (0, d.rY)(C, x), w = (0, d.Xn)(_, x), R = i.useCallback(() => {
     x({
       interactionUsernameProfile: !1,
       interactionAvatarProfile: !1,
@@ -46,16 +46,16 @@ let h = i.memo(function(e) {
     referencedAvatarProfile: C,
     referencedUsernameProfile: y,
     replyReference: h.messageReference,
-    replyMessage: O,
+    replyMessage: j,
     isReplySpineClickable: !1,
     showReplySpine: !1
-  }), [f, m, h, C, O, y, x]);
+  }), [f, m, h, C, j, y, x]);
   return (0, r.jsx)(u.Z, {
     message: h,
     channel: f,
     compact: m,
     isInteractionUserBlocked: v,
-    isInteractionUserIgnored: j,
+    isInteractionUserIgnored: O,
     showAvatarPopout: b,
     showUsernamePopout: g,
     showDataPopout: _,
@@ -66,8 +66,8 @@ let h = i.memo(function(e) {
     onClickCommand: w,
     onUserContextMenu: E,
     onClickTargetAvatar: A,
-    onClickTargetUsername: T,
-    onTargetUserContextMenu: N,
+    onClickTargetUsername: N,
+    onTargetUserContextMenu: T,
     onPopoutRequestClose: R,
     renderTargetMessage: M
   })

@@ -1,4 +1,4 @@
-/** Chunk was on 10801 **/
+/** Chunk was on 2016 **/
 n.d(t, {
   Z: () => I
 }), n(388685);
@@ -22,9 +22,9 @@ var r = n(255367),
   C = n(981631),
   x = n(354459),
   v = n(363987),
-  j = n(999976);
+  O = n(999976);
 
-function O(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -64,8 +64,8 @@ function I(e) {
       onSelectParticipant: l,
       onContextMenuParticipant: I,
       onFullscreenParticipant: Z,
-      participants: N,
-      filteredParticipants: T,
+      participants: T,
+      filteredParticipants: N,
       popoutWindow: A,
       inCall: w,
       channel: R,
@@ -114,7 +114,7 @@ function I(e) {
     eg = (0, s.q_F)({
       value: +!!en,
       delay: eh || !en ? 0 : 100,
-      config: E(O({}, o.config.stiff), {
+      config: E(j({}, o.config.stiff), {
         clamp: !0
       }),
       onStart: () => Q(!0),
@@ -125,25 +125,25 @@ function I(e) {
     }, em),
     eb = (0, s.q_F)({
       value: +!!en,
-      config: E(O({}, o.config.stiff), {
+      config: E(j({}, o.config.stiff), {
         clamp: !0
       })
     }, em),
     e_ = (0, s.q_F)({
       value: ed,
-      config: E(O({}, o.config.stiff), {
+      config: E(j({}, o.config.stiff), {
         clamp: !0
       })
     }, er === en && eb.value.idle && !ea || eo || ef ? "animate-never" : "animate-always"),
     ey = (0, s.q_F)({
       value: n,
-      config: E(O({}, o.config.stiff), {
+      config: E(j({}, o.config.stiff), {
         clamp: !0
       })
     }, em),
     eC = (0, s.Yzy)(M, {
       keys: e => null == e ? void 0 : e.id,
-      config: E(O({}, o.config.stiff), {
+      config: E(j({}, o.config.stiff), {
         clamp: !0
       }),
       initial: null,
@@ -160,20 +160,20 @@ function I(e) {
     ex = i.useCallback(e => {
       W(e), K(!1)
     }, []),
-    ev = en ? [] : (0, _.n3)(N, M, V),
+    ev = en ? [] : (0, _.n3)(T, M, V),
     {
-      visibleParticipants: ej,
-      participantTileWidth: eO
-    } = (0, y.ZB)(k, T);
+      visibleParticipants: eO,
+      participantTileWidth: ej
+    } = (0, y.ZB)(k, N);
   return (0, r.jsxs)("div", {
-    className: a()(j.root, v.flexCenter, L),
+    className: a()(O.root, v.flexCenter, L),
     children: [(0, r.jsxs)("div", {
-      className: j.tileWrapper,
+      className: O.tileWrapper,
       style: {
         opacity: ee && q ? 0 : 1
       },
       children: [(0, r.jsxs)(o.animated.div, {
-        className: j.videoFrame,
+        className: O.videoFrame,
         style: {
           top: eb.value.to(e => -e * P / 2)
         },
@@ -181,7 +181,7 @@ function I(e) {
           style: {
             width: e_.value
           },
-          className: j.videoWrapper,
+          className: O.videoWrapper,
           children: (0, r.jsx)("div", {
             className: v.videoSizer,
             style: {
@@ -213,8 +213,8 @@ function I(e) {
             })
           })
         }), el ? (0, r.jsx)(o.animated.div, {
-          className: a()(j.actionRow, {
-            [j.idle]: F
+          className: a()(O.actionRow, {
+            [O.idle]: F
           }),
           style: {
             bottom: ey.value
@@ -226,7 +226,7 @@ function I(e) {
           })
         }) : null]
       }), (0, r.jsx)(o.animated.div, {
-        className: j.participantsWrapperAnimated,
+        className: O.participantsWrapperAnimated,
         style: {
           translateY: eg.value.to(e => e * P / 2),
           opacity: eg.value,
@@ -237,8 +237,8 @@ function I(e) {
           onClick: l,
           onContextMenu: I,
           onDoubleClick: Z,
-          participants: ej,
-          participantTileWidth: eO,
+          participants: eO,
+          participantTileWidth: ej,
           selectedParticipantId: M.id,
           inCall: w,
           popoutWindow: A,

@@ -1,4 +1,4 @@
-/** Chunk was on 10801 **/
+/** Chunk was on 2016 **/
 n.d(t, {
   Z: () => R
 });
@@ -22,15 +22,15 @@ var r = n(255367),
   C = n(867176),
   x = n(451834),
   v = n(502762),
-  j = n(952124),
-  O = n(544989),
+  O = n(952124),
+  j = n(544989),
   E = n(481932),
   S = n(664794),
   P = n(4517),
   I = n(277117),
   Z = n(52639),
-  N = n(228168),
-  T = n(388032),
+  T = n(228168),
+  N = n(388032),
   A = n(638414);
 
 function w(e) {
@@ -88,18 +88,18 @@ function R(e) {
           ref: F,
           user: t,
           displayProfile: D,
-          themeType: N.lY.SIDEBAR,
+          themeType: T.lY.SIDEBAR,
           themeOverride: L,
           children: [null != G.interactionType && (0, r.jsx)(l.animated.div, {
             style: V,
             className: A.backdrop
           }), (0, r.jsxs)(a.u2, {
-            children: [(0, r.jsxs)(O.Z, {
+            children: [(0, r.jsxs)(j.Z, {
               children: [(0, r.jsx)(E.Z, {
                 user: t,
-                themeType: N.lY.SIDEBAR,
+                themeType: T.lY.SIDEBAR,
                 shouldShowTooltip: null === G.interactionType
-              }), t.bot ? (0, r.jsx)(j.Z, {
+              }), t.bot ? (0, r.jsx)(O.Z, {
                 user: t
               }) : (0, r.jsx)(S.Z, {
                 type: "banner",
@@ -110,7 +110,7 @@ function R(e) {
               children: [(0, r.jsx)(C.Z, {
                 user: t,
                 displayProfile: D,
-                themeType: N.lY.SIDEBAR,
+                themeType: T.lY.SIDEBAR,
                 animateOnHover: !H,
                 className: A.banner
               }), (0, r.jsx)(x.Z, {
@@ -121,13 +121,13 @@ function R(e) {
                 user: t,
                 displayProfile: D,
                 channelId: R.id,
-                themeType: N.lY.SIDEBAR,
+                themeType: T.lY.SIDEBAR,
                 onOpenProfile: M ? void 0 : z
               }), (0, r.jsx)(P.Z, {
                 location: "UserProfileSiebar",
                 user: t,
                 channelId: R.id,
-                themeType: N.lY.SIDEBAR,
+                themeType: T.lY.SIDEBAR,
                 disableToolbar: t.bot
               })]
             }), (0, r.jsx)(I.Z, {
@@ -154,7 +154,7 @@ function R(e) {
                   analyticsLocations: U
                 }, B))
               },
-              children: T.intl.string(T.t["+Xp3ho"])
+              children: N.intl.string(N.t["+Xp3ho"])
             })
           }), (null == D ? void 0 : D.profileEffectId) != null && (0, r.jsx)(h.Z, {
             profileEffectId: null == D ? void 0 : D.profileEffectId,

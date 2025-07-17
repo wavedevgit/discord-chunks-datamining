@@ -389,7 +389,7 @@ class q extends l.PureComponent {
           return (0, d.jW)(e, async () => {
             let {
               default: e
-            } = await Promise.all([n.e("79695"), n.e("53912"), n.e("2016")]).then(n.bind(n, 354741));
+            } = await Promise.all([n.e("79695"), n.e("53912"), n.e("47355")]).then(n.bind(n, 354741));
             return n => (0, i.jsx)(e, U(k({}, n), {
               channel: t.record,
               selected: E.Z.getChannelId() === t.record.id,

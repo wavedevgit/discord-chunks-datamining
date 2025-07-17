@@ -1,9 +1,9 @@
-/** Chunk was on 83976 **/
+/** Chunk was on 24255 **/
 n.d(t, {
   P7: () => m,
   RR: () => p,
   UN: () => c,
-  bg: () => g,
+  bg: () => E,
   hn: () => d,
   np: () => f
 });
@@ -50,7 +50,7 @@ function m(e) {
   return e.type === u.W.LINE
 }
 
-function g(e, t, n, r) {
+function E(e, t, n, r) {
   var u;
   let c = o.default.getUser(e),
     d = null == c ? void 0 : c.getAvatarURL(null, s.Ks),

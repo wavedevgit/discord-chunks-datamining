@@ -63,8 +63,8 @@ function O(e) {
     fps: w,
     muteStreamAudio: I,
     selectedSource: N,
-    sourceType: T,
-    audioSourceId: E
+    sourceType: E,
+    audioSourceId: T
   }] = (0, g.E_)(), {
     twoClickVariant: P
   } = (0, m.a)({
@@ -72,7 +72,7 @@ function O(e) {
     autoTrackExposure: !1
   }), R = (0, d.zX)({
     location: "StreamSettingsSummary"
-  }), [A, k] = null != (i = (0, _.Z)(O)) ? i : [Z, w], M = (0, h.L)(O), L = (0, p.M)(A), D = T === s.vA.CAMERA, B = null != N || !!P && (!x || D), U = null != N ? null == N || null == (t = N.id) ? void 0 : t.startsWith(s.vA.CAMERA) : D, G = B ? void 0 : O === v.tI.PRESET_VIDEO ? b.intl.string(j.default.MuHUFR) : O === v.tI.PRESET_DOCUMENTS ? b.intl.string(j.default.y0JuYW) : void 0, W = (0, o.e7)([u.Z], () => u.Z.getUseSystemScreensharePicker() && (0, f.isLinux)());
+  }), [A, k] = null != (i = (0, _.Z)(O)) ? i : [Z, w], M = (0, h.L)(O), L = (0, p.M)(A), D = E === s.vA.CAMERA, B = null != N || !!P && (!x || D), G = null != N ? null == N || null == (t = N.id) ? void 0 : t.startsWith(s.vA.CAMERA) : D, U = B ? void 0 : O === v.tI.PRESET_VIDEO ? b.intl.string(j.default.MuHUFR) : O === v.tI.PRESET_DOCUMENTS ? b.intl.string(j.default.y0JuYW) : void 0, W = (0, o.e7)([u.Z], () => u.Z.getUseSystemScreensharePicker() && (0, f.isLinux)());
   return (0, r.jsxs)("div", {
     className: S.root,
     children: [B && (0, r.jsx)(y, {
@@ -97,9 +97,9 @@ function O(e) {
               color: "currentColor"
             }), M]
           }), (0, r.jsx)(C, {})]
-        }), null != G && (0, r.jsxs)(r.Fragment, {
+        }), null != U && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)("span", {
-            children: G
+            children: U
           }), (0, r.jsx)(C, {})]
         }), (0, r.jsx)("span", {
           children: L
@@ -114,15 +114,15 @@ function O(e) {
               color: "currentColor"
             }), b.intl.string(j.default.FzMGWV)]
           })]
-        }), !I && !U && W && (0, r.jsxs)(r.Fragment, {
+        }), !I && !G && W && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(C, {}), b.intl.string(j.default["n9/rUl"])]
-        }), U ? (0, r.jsxs)(r.Fragment, {
+        }), G ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(C, {}), (0, r.jsx)("span", {
             children: null == (n = R.find(e => {
               let {
                 id: t
               } = e;
-              return E === t
+              return T === t
             })) ? void 0 : n.name
           })]
         }) : null]

@@ -72,13 +72,13 @@ function y(e) {
     hidePreview: w,
     muteStreamAudio: I,
     preset: N,
-    resolution: T,
-    fps: E,
+    resolution: E,
+    fps: T,
     sourceType: P,
     audioSourceId: R
   }, A] = (0, m.E_)(), k = (0, o.zX)({
     location: "StreamOptionsMenu"
-  }), M = (0, f.Z)(), [L, D] = null != (n = (0, p.Z)(x.tI.PRESET_VIDEO)) ? n : [x.LY.RESOLUTION_720, x.ws.FPS_30], [B, U] = null != (v = (0, p.Z)(x.tI.PRESET_DOCUMENTS)) ? v : [x.LY.RESOLUTION_SOURCE, x.ws.FPS_15];
+  }), M = (0, f.Z)(), [L, D] = null != (n = (0, p.Z)(x.tI.PRESET_VIDEO)) ? n : [x.LY.RESOLUTION_720, x.ws.FPS_30], [B, G] = null != (v = (0, p.Z)(x.tI.PRESET_DOCUMENTS)) ? v : [x.LY.RESOLUTION_SOURCE, x.ws.FPS_15];
   return (0, r.jsxs)(l.v2r, {
     "aria-label": _.intl.string(_.t["+1H47u"]),
     navId: "stream-options",
@@ -110,7 +110,7 @@ function y(e) {
               case x.tI.PRESET_DOCUMENTS:
                 return _.intl.format(g.default["8tcFLy"], {
                   resolution: (0, u.M)(B),
-                  frameRate: U
+                  frameRate: G
                 });
               case x.tI.PRESET_CUSTOM:
                 return;
@@ -140,12 +140,12 @@ function y(e) {
           return (0, r.jsx)(l.k5B, {
             group: "resolution",
             id: "stream-option-resolution-".concat(t),
-            checked: T === t,
+            checked: E === t,
             label: t !== x.LY.RESOLUTION_720 ? (0, r.jsx)(C, {
               label: (0, u.M)(t)
             }) : (0, u.M)(t),
             action: () => (function(e) {
-              if (!(0, c.Z)(N, e, E, a.default.getCurrentUser(), M)) return y(), (0, h.E)({
+              if (!(0, c.Z)(N, e, T, a.default.getCurrentUser(), M)) return y(), (0, h.E)({
                 analyticsLocation: s.Z.GO_LIVE_MODAL_SETTINGS_SELECTION
               });
               A({
@@ -161,12 +161,12 @@ function y(e) {
         children: S.map(e => (0, r.jsx)(l.k5B, {
           group: "frame-rate",
           id: "stream-option-frame-rate-".concat(e),
-          checked: E === e,
+          checked: T === e,
           label: e === x.ws.FPS_60 ? (0, r.jsx)(C, {
             label: "".concat(e, "fps")
           }) : "".concat(e, "fps"),
           action: () => (function(e) {
-            if (!(0, c.Z)(N, T, e, a.default.getCurrentUser(), M)) return y(), (0, h.E)({
+            if (!(0, c.Z)(N, E, e, a.default.getCurrentUser(), M)) return y(), (0, h.E)({
               analyticsLocation: s.Z.GO_LIVE_MODAL_SETTINGS_SELECTION
             });
             A({

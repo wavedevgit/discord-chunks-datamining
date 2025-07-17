@@ -1,4 +1,4 @@
-/** Chunk was on 10801 **/
+/** Chunk was on 2016 **/
 n.d(t, {
   Z: () => E
 });
@@ -23,7 +23,7 @@ var r = n(255367),
   x = n(388032),
   v = n(941188);
 
-function j(e) {
+function O(e) {
   let {
     onClick: t,
     className: n
@@ -47,7 +47,7 @@ function j(e) {
   })
 }
 
-function O(e) {
+function j(e) {
   let {
     channel: t
   } = e, {
@@ -118,12 +118,12 @@ function E(e) {
       }) : null, u ? (0, r.jsx)(p.Z, {
         className: v.eventPrompt,
         guildId: s
-      }) : null, l ? (0, r.jsx)(j, {
+      }) : null, l ? (0, r.jsx)(O, {
         className: a()({
           [v.eventPrompt]: !0
         }),
         onClick: n
-      }) : null, (0, r.jsx)(O, {
+      }) : null, (0, r.jsx)(j, {
         channel: t
       })]
     })]
