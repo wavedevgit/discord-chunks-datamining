@@ -2,7 +2,7 @@
 "use strict";
 let r, i, a, o, s, l, c, u, d, f, _, p, h, m, g, E, b, y, O, v, I;
 n.d(t, {
-  Z: () => eM
+  Z: () => ek
 }), n(388685);
 var T, S = n(392711),
   A = n(754700),
@@ -15,7 +15,7 @@ var T, S = n(392711),
   L = n(5881),
   x = n(46140);
 
-function M(e, t, n) {
+function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -24,14 +24,14 @@ function M(e, t, n) {
   }) : e[t] = n, e
 }
 
-function k(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      M(e, t, n[t])
+      k(e, t, n[t])
     })
   }
   return e
@@ -70,7 +70,7 @@ function Z(e, t) {
 function H(e, t) {
   let n = (o = new Map(o)).get(e);
   if (null != n) {
-    let r = k({}, n, t);
+    let r = M({}, n, t);
     Z(e, t), o.set(e, r)
   }
 }
@@ -85,7 +85,7 @@ function W(e, t) {
   let n = o.get(e),
     r = null == n ? void 0 : n.userStatus;
   null != r && null == r.claimedAt && H(e, {
-    userStatus: U(k({}, r), {
+    userStatus: U(M({}, r), {
       claimedAt: t.claimedAt
     })
   })
@@ -110,7 +110,7 @@ function z(e, t) {
       entitlements: t
     });
     null != n && Y(e, n), H(e, {
-      userStatus: U(k({}, i), {
+      userStatus: U(M({}, i), {
         claimedAt: t.claimedAt,
         claimedTier: null != (a = null == n ? void 0 : n.tier) ? a : null
       })
@@ -484,7 +484,7 @@ class eL extends(T = C.ZP.Store) {
     return null != (t = v.get(e)) && t
   }
 }
-M(eL, "displayName", "QuestsStore");
+k(eL, "displayName", "QuestsStore");
 let ex = new eL(R.Z, {
     LOGOUT: X,
     QUESTS_FETCH_CURRENT_QUESTS_BEGIN: Q,
@@ -519,4 +519,4 @@ let ex = new eL(R.Z, {
     QUESTS_UPDATE_OPTIMISTIC_PROGRESS: eA,
     QUESTS_USER_COMPLETION_UPDATE: eD
   }),
-  eM = ex
+  ek = ex

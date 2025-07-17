@@ -96,8 +96,8 @@ let A = i.forwardRef((e, t) => {
     mediaLayoutType: D,
     limitResponsiveWidth: L = !0,
     accessory: x,
-    zoomable: M = !0,
-    original: k,
+    zoomable: k = !0,
+    original: M,
     children: j = e => {
       let {
         src: t,
@@ -157,18 +157,18 @@ let A = i.forwardRef((e, t) => {
     children: (0, r.jsxs)("div", I(O({
       ref: t,
       className: o()("imageWrapper", g.imageWrapper, {
-        [g.imageZoom]: M,
+        [g.imageZoom]: k,
         [g.imageWrapperBackground]: c !== p.zo9.READY,
         [g.clickable]: null != G
       }, a),
       style: C(K, L, F, D)
     }, H), {
-      children: [null != k && (0, r.jsx)("a", {
+      children: [null != M && (0, r.jsx)("a", {
         tabIndex: -1,
         onClick: G,
         "aria-hidden": !0,
         className: g.originalLink,
-        href: k,
+        href: M,
         ref: Y,
         "data-role": "img",
         "data-safe-src": null != V ? V : f

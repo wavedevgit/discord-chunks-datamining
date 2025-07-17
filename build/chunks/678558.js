@@ -94,8 +94,8 @@ let D = e => {
     closeLayer: D = () => {},
     pauseAnimation: L = !1,
     applicationId: x,
-    handleSubscribeModalClose: M,
-    withHighlight: k = !1,
+    handleSubscribeModalClose: k,
+    withHighlight: M = !1,
     icon: j,
     intent: U
   } = e, G = P(e, ["analyticsLocation", "analyticsSourceLocation", "guild", "buttonText", "targetBoostedGuildTier", "onClose", "closeLayer", "pauseAnimation", "applicationId", "handleSubscribeModalClose", "withHighlight", "icon", "intent"]), {
@@ -122,7 +122,7 @@ let D = e => {
         closeLayer: D,
         inPopout: V,
         applicationId: x,
-        handleSubscribeModalClose: M,
+        handleSubscribeModalClose: k,
         intent: U
       }), Z(!1)
     }, J = b.Z.getPremiumTypeSubscription(), $ = (0, r.jsxs)("div", {
@@ -149,7 +149,7 @@ let D = e => {
     size: l.zx.Sizes.SMALL
   }, G), {
     className: o()(G.className, {
-      [S.buttonHighlighted]: k
+      [S.buttonHighlighted]: M
     }),
     submitting: F,
     onClick: Q,

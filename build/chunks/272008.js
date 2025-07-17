@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  AH: () => M,
+  AH: () => k,
   Ag: () => Y,
   CS: () => P,
   EW: () => Z,
   OR: () => H,
-  QB: () => k,
+  QB: () => M,
   T0: () => F,
   Wf: () => B,
   cT: () => z,
@@ -216,7 +216,7 @@ async function x(e) {
     })
   }
 }
-async function M(e, t) {
+async function k(e, t) {
   if (null != t.questContentCTA && (0, _._3)({
       questId: e,
       questContent: t.questContent,
@@ -249,7 +249,7 @@ async function M(e, t) {
     }
   }
 }
-async function k(e, t, n) {
+async function M(e, t, n) {
   if (!m.Z.isClaimingReward(e)) {
     a.Z.dispatch({
       type: "QUESTS_CLAIM_REWARD_BEGIN",

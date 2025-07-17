@@ -84,8 +84,8 @@ let N = function(e) {
     isEligibleForTrial: v = !1,
     showTrialBadge: N = !1,
     showDiscountBadge: C = !1
-  } = e, R = (0, s.apv)((0, l.ZP)()), P = O === g.p9.TIER_2, w = (0, d.Fv)(v), D = (0, h.Ng)(), L = null == D || null == (t = D.discount) ? void 0 : t.amount, x = P ? T : I, M = P ? p.Z : _.Z, {
-    step: k,
+  } = e, R = (0, s.apv)((0, l.ZP)()), P = O === g.p9.TIER_2, w = (0, d.Fv)(v), D = (0, h.Ng)(), L = null == D || null == (t = D.discount) ? void 0 : t.amount, x = P ? T : I, k = P ? p.Z : _.Z, {
+    step: M,
     breadcrumbs: j,
     startedPaymentFlowWithPaymentSourcesRef: U
   } = (0, c.JL)();
@@ -104,10 +104,10 @@ let N = function(e) {
       let t = e.id !== u.h8.ADD_PAYMENT_STEPS,
         n = e.id === u.h8.ADD_PAYMENT_STEPS && !U.current;
       return !v || v && (t || n)
-    })).find(e => e.id === k),
+    })).find(e => e.id === M),
     V = null != (i = null == B || null == (n = B.sectionHeaderText) ? void 0 : n.call(B)) ? i : null == B ? void 0 : B.label,
-    F = null != V && null != k,
-    Z = w && F && k === u.h8.REVIEW;
+    F = null != V && null != M,
+    Z = w && F && M === u.h8.REVIEW;
   return (0, r.jsxs)("div", {
     className: E.container,
     children: [(0, r.jsxs)(o.$, {
@@ -127,7 +127,7 @@ let N = function(e) {
         className: Z ? E.bigWumpus : E.wumpus
       }), (0, r.jsx)("div", {
         className: E.textContainer,
-        children: (0, r.jsx)(M, {
+        children: (0, r.jsx)(k, {
           color: R ? "black" : "white",
           className: E.wordmark
         })
@@ -137,7 +137,7 @@ let N = function(e) {
     }), F && (0, r.jsx)(S, {
       isOneStepCheckout: w,
       headerText: V,
-      step: k,
+      step: M,
       filteredBreadcrumbs: G
     }), Z && (0, r.jsx)("div", {
       className: E.bodyGradientContainer,

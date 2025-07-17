@@ -32,13 +32,13 @@ var r = n(507604),
   D = a("".indexOf),
   L = a("".slice),
   x = /^\?<[^\s\d!#%&*+<=>@^][^\s!#%&*+<=>@^]*>/,
-  M = /a/g,
   k = /a/g,
-  j = new A(M) !== M,
+  M = /a/g,
+  j = new A(k) !== k,
   U = h.MISSED_STICKY,
   G = h.UNSUPPORTED_Y,
   B = r && (!j || U || I || T || E(function() {
-    return k[S] = !1, A(M) !== M || A(k) === k || "/a/i" !== String(A(M, "i"))
+    return M[S] = !1, A(k) !== k || A(M) === M || "/a/i" !== String(A(k, "i"))
   })),
   V = function(e) {
     for (var t, n = e.length, r = 0, i = "", a = !1; r <= n; r++) {
@@ -79,7 +79,7 @@ if (o("RegExp", B)) {
         g = [],
         E = e;
       if (!u && h && m && e.constructor === Z) return e;
-      if ((h || d(N, e)) && (e = e.source, m && (t = p(E))), e = void 0 === e ? "" : _(e), t = void 0 === t ? "" : _(t), E = e, I && "dotAll" in M && (r = !!t && D(t, "s") > -1) && (t = w(t, /s/g, "")), n = t, U && "sticky" in M && (i = !!t && D(t, "y") > -1) && G && (t = w(t, /y/g, "")), T && (e = (a = F(e))[0], g = a[1]), o = s(A(e, t), u ? this : N, Z), (r || i || g.length) && (c = y(o), r && (c.dotAll = !0, c.raw = Z(V(e), n)), i && (c.sticky = !0), g.length && (c.groups = g)), e !== E) try {
+      if ((h || d(N, e)) && (e = e.source, m && (t = p(E))), e = void 0 === e ? "" : _(e), t = void 0 === t ? "" : _(t), E = e, I && "dotAll" in k && (r = !!t && D(t, "s") > -1) && (t = w(t, /s/g, "")), n = t, U && "sticky" in k && (i = !!t && D(t, "y") > -1) && G && (t = w(t, /y/g, "")), T && (e = (a = F(e))[0], g = a[1]), o = s(A(e, t), u ? this : N, Z), (r || i || g.length) && (c = y(o), r && (c.dotAll = !0, c.raw = Z(V(e), n)), i && (c.sticky = !0), g.length && (c.groups = g)), e !== E) try {
         l(o, "source", "" === E ? "(?:)" : E)
       } catch (e) {}
       return o

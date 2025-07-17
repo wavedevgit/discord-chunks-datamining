@@ -68,8 +68,8 @@ var r = n(73800),
   D = n(475595),
   L = n(566078),
   x = n(46140),
-  M = n(981631),
-  k = n(474936),
+  k = n(981631),
+  M = n(474936),
   j = n(388032);
 let U = -1,
   G = 1;
@@ -379,8 +379,8 @@ function ed() {
     xboxAndPlaystationAccounts: a
   } = r.useMemo(() => {
     let e = t.filter(e => !1 === e.revoked),
-      n = e.filter(e => e.type === M.ABu.XBOX),
-      r = e.filter(e => e.type === M.ABu.PLAYSTATION),
+      n = e.filter(e => e.type === k.ABu.XBOX),
+      r = e.filter(e => e.type === k.ABu.PLAYSTATION),
       i = n.concat(r);
     return {
       xboxAccounts: n,
@@ -432,7 +432,7 @@ let ef = e => {
     let {
       xboxAccounts: e,
       playstationAccounts: t
-    } = ed(), n = e.length > 0, r = t.length > 0, i = n && !r || !n && r, a = y.Z.getArticleURL(M.BhN.QUEST_HOW_TO_PLAYSTATION), o = y.Z.getArticleURL(M.BhN.QUEST_HOW_TO_XBOX), s = j.intl.format(j.t.beN4DA, {
+    } = ed(), n = e.length > 0, r = t.length > 0, i = n && !r || !n && r, a = y.Z.getArticleURL(k.BhN.QUEST_HOW_TO_PLAYSTATION), o = y.Z.getArticleURL(k.BhN.QUEST_HOW_TO_XBOX), s = j.intl.format(j.t.beN4DA, {
       psHelpdeskArticle: a,
       xboxHelpdeskArticle: o
     }), l = j.intl.format(j.t.HVS7np, {
@@ -662,7 +662,7 @@ function eN(e, t) {
     i = (0, d.ZP)(),
     a = r.useMemo(() => (null == n ? void 0 : n.config.features.includes(x.S7.QUESTS_CDN)) === !0, [n]);
   return r.useMemo(() => (null == n ? void 0 : n.config.cosponsorMetadata) == null ? null : (0, D.Rt)(e, n.config.cosponsorMetadata.logotype, {
-    theme: null != t ? t : (0, c.wj)(i) ? M.BRd.DARK : M.BRd.LIGHT,
+    theme: null != t ? t : (0, c.wj)(i) ? k.BRd.DARK : k.BRd.LIGHT,
     newCdn: a
   }), [i, t, e, null == n ? void 0 : n.config.cosponsorMetadata, a])
 }
@@ -674,7 +674,7 @@ function eC(e) {
     i = (0, R._p)(e),
     a = (0, R.f$)(e),
     o = (0, u.e7)([E.default], () => E.default.getCurrentUser()),
-    s = (0, I.I5)(o, k.p9.TIER_2);
+    s = (0, I.I5)(o, M.p9.TIER_2);
   if (null == n) return j.intl.formatToPlainString(j.t.l9uXLy, {
     decorationName: t
   });
@@ -706,7 +706,7 @@ function eR(e) {
   let t = (0, u.e7)([f.ZP], () => f.ZP.getCurrentEmbeddedActivity());
   return {
     launchInGameActivity: r.useCallback(() => {
-      null != t && t.applicationId === e.config.application.id ? (0, _.Z)("guild_id" in t.location ? t.location.guild_id : null, t.location) : (0, h.uL)(M.Z5c.ACTIVITY_DETAILS(e.config.application.id))
+      null != t && t.applicationId === e.config.application.id ? (0, _.Z)("guild_id" in t.location ? t.location.guild_id : null, t.location) : (0, h.uL)(k.Z5c.ACTIVITY_DETAILS(e.config.application.id))
     }, [t, e.config.application.id])
   }
 }

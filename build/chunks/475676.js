@@ -85,15 +85,15 @@ function S(e) {
       return [n, r]
     }, [R, P, w]),
     x = (0, a.e7)([d.default], () => d.default.getUser(null == D ? void 0 : D.userId)),
-    M = _.ZP.getName(C, void 0, x);
+    k = _.ZP.getName(C, void 0, x);
   T({
     leaderboard: R,
     guildId: C
   });
-  let k = (0, s.q)(null == R || null == (t = R.settings) ? void 0 : t.application_id);
-  if (null == R || null == k) return null;
+  let M = (0, s.q)(null == R || null == (t = R.settings) ? void 0 : t.application_id);
+  if (null == R || null == M) return null;
   if (0 === R.users.length || null == D || null == x) return (0, r.jsx)(A, {
-    application: k,
+    application: M,
     selected: v
   });
   let {
@@ -105,12 +105,12 @@ function S(e) {
     rank: G
   }) : O.intl.formatToPlainString(O.t["8BLSQ0"], {
     rank: G,
-    username: M
+    username: k
   }), (0, r.jsxs)(c.Zb, {
     selected: v,
     children: [(0, r.jsxs)(c.e$, {
       children: [(0, r.jsx)(I, {
-        application: k
+        application: M
       }), (0, r.jsx)(o.LZC, {
         size: 2
       }), (0, r.jsx)(c.ll, {

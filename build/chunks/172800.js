@@ -93,8 +93,8 @@ let x = e => {
     onSelectSoundmoji: P,
     onInspect: L,
     surrogateCodePoint: x,
-    getEmojiItemProps: M,
-    getEmojiRowProps: k,
+    getEmojiItemProps: k,
+    getEmojiRowProps: M,
     isScrolling: j,
     isUsingKeyboardNavigation: U,
     rowIndex: G,
@@ -139,7 +139,7 @@ let x = e => {
           } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, {
             visibleRowIndex: _,
             columnIndex: p
-          } = e, h = null != (n = M(p, G)) ? n : {}, {
+          } = e, h = null != (n = k(p, G)) ? n : {}, {
             ref: m,
             tabIndex: g,
             onFocus: E
@@ -233,7 +233,7 @@ let x = e => {
             onSelect: C,
             onInspect: L,
             channelGuildId: F,
-            getEmojiItemProps: M,
+            getEmojiItemProps: k,
             isMediumSize: ep,
             isLargeSize: e_,
             pulseItemKey: eu,
@@ -249,7 +249,7 @@ let x = e => {
           return
       }
     },
-    em = e => (0, r.jsx)("ul", w(R({}, k(G)), {
+    em = e => (0, r.jsx)("ul", w(R({}, M(G)), {
       className: o()(N.emojiListRow, {
         [N.emojiListRowLargeSize]: e_,
         [N.emojiListRowMediumSize]: ep

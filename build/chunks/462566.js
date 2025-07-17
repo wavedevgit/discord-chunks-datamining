@@ -152,7 +152,7 @@ let y = function(e) {
     T[t] || "" === e || (r[t] = !0), n[t] = e, r[t] && "" === e ? "name" === t && (i.name = _.intl.string(_.t.lIkVsr)) : delete i[t], I(n), S(r), N(i)
   }
 
-  function M() {
+  function k() {
     var e;
     return (null == (e = u.default.getCurrentUser()) ? void 0 : e.nsfwAllowed) ? (0, r.jsxs)("div", {
       className: p.cardBrands,
@@ -191,7 +191,7 @@ let y = function(e) {
     })
   }
   return (0, r.jsxs)("div", {
-    children: [M(), (0, r.jsx)(d.Z, {
+    children: [k(), (0, r.jsx)(d.Z, {
       form: L,
       errors: A,
       formError: n,
