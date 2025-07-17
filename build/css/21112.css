@@ -1,18 +1,7 @@
 /**
   Module ID: 21112
-  Original File Name: acadd2108a7a0a03
+  Original File Name: 0c79836decaf40ab
 **/
-.closeButton__9cef2 {
-    position: absolute;
-    right: 12px;
-    top: 12px
-}
-
-.modalContent__9cef2 {
-    padding-bottom: 16px;
-    padding-top: 16px
-}
-
 .emojiContainer__9cef2 {
     background-color: var(--background-secondary-alt);
     border-radius: 4px;
@@ -65,13 +54,4 @@
     opacity: .3
 }
 
-.modalFooter__9cef2 {
-    justify-content: space-between
-}
-
-.cancelButton__9cef2 {
-    min-width: 0;
-    padding: 0
-}
-
-/*# sourceMappingURL=acadd2108a7a0a03.css.map*/
+/*# sourceMappingURL=0c79836decaf40ab.css.map*/
