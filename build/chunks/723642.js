@@ -1,5 +1,5 @@
 /** Chunk was on 95336 **/
-n.d(t, {
+r.d(t, {
   Z: () => s
 });
-var r, s = ((r = {}).KEY_PRESS = "key_press", r.CLICK = "click", r)
+var n, s = ((n = {}).KEY_PRESS = "key_press", n.CLICK = "click", n)

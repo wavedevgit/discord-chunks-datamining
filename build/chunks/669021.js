@@ -15,7 +15,7 @@ var r = n(255367),
   m = n(70097),
   f = n(422461);
 
-function _(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -68,34 +68,34 @@ class h extends i.Component {
     })
   }
   constructor(...e) {
-    super(...e), _(this, "_animatedValue", new o.Z.Value(1)), _(this, "state", {
+    super(...e), g(this, "_animatedValue", new o.Z.Value(1)), g(this, "state", {
       imageLoadError: !1,
       imageLoading: !0
-    }), _(this, "componentWillEnter", e => {
+    }), g(this, "componentWillEnter", e => {
       this._animatedValue.setValue(0), o.Z.timing(this._animatedValue, {
         toValue: 1,
         duration: 400
       }).start(e)
-    }), _(this, "componentWillLeave", e => {
+    }), g(this, "componentWillLeave", e => {
       o.Z.timing(this._animatedValue, {
         toValue: 0,
         duration: 400
       }).start(e)
-    }), _(this, "getImageStyle", () => ({
+    }), g(this, "getImageStyle", () => ({
       opacity: this._animatedValue
-    })), _(this, "handleImageError", () => {
+    })), g(this, "handleImageError", () => {
       this.setState({
         imageLoadError: !0,
         imageLoading: !1
       })
-    }), _(this, "handleImageLoaded", () => {
+    }), g(this, "handleImageLoaded", () => {
       this.setState({
         imageLoading: !1
       })
     })
   }
 }
-class g extends i.Component {
+class _ extends i.Component {
   componentWillUnmount() {
     this.videoTimeout.stop()
   }
@@ -155,25 +155,25 @@ class g extends i.Component {
     })
   }
   constructor(...e) {
-    super(...e), _(this, "state", {
+    super(...e), g(this, "state", {
       currentIndex: 0,
       videoLoadError: !1,
       videoLoaded: !1
-    }), _(this, "_video", i.createRef()), _(this, "videoTimeout", new c.V7), _(this, "videoPlaying", !1), _(this, "handleToggleMute", e => {
+    }), g(this, "_video", i.createRef()), g(this, "videoTimeout", new c.V7), g(this, "videoPlaying", !1), g(this, "handleToggleMute", e => {
       e.stopPropagation(), e.preventDefault();
       let {
         onToggleMute: t
       } = this.props;
       null == t || t(e)
-    }), _(this, "handleVideoError", () => {
+    }), g(this, "handleVideoError", () => {
       this.setState({
         videoLoadError: !0
       })
-    }), _(this, "handleVideoLoaded", () => {
+    }), g(this, "handleVideoLoaded", () => {
       this.setState({
         videoLoaded: !0
       })
-    }), _(this, "renderTypeVideo", () => {
+    }), g(this, "renderTypeVideo", () => {
       let {
         videoLoaded: e
       } = this.state, {
@@ -183,8 +183,8 @@ class g extends i.Component {
         playing: o,
         muted: c,
         splashClassName: p,
-        splashPlaceholderClassName: _,
-        renderMediaOverlay: g
+        splashPlaceholderClassName: g,
+        renderMediaOverlay: _
       } = this.props, b = c ? d.OyP : d.gj8;
       return (0, r.jsxs)(i.Fragment, {
         children: [s.tq ? null : (0, r.jsx)(m.Z, {
@@ -201,14 +201,14 @@ class g extends i.Component {
           })
         }), (0, r.jsx)(u.W, {
           children: o && e ? null : (0, r.jsx)(h, {
-            className: a()(f.splashPlaceholder, _),
+            className: a()(f.splashPlaceholder, g),
             src: n,
             title: l
           }, 0)
         }), (0, r.jsx)(d.P3F, {
           className: a()(f.muteContainer, {
             [f.muteContainerPlaying]: o && e,
-            [f.muteContainerMediaOverlay]: null != g
+            [f.muteContainerMediaOverlay]: null != _
           }),
           onClick: this.handleToggleMute,
           children: o && e ? (0, r.jsx)(b, {
@@ -216,14 +216,14 @@ class g extends i.Component {
           }) : null
         })]
       })
-    }), _(this, "nextItem", () => {
+    }), g(this, "nextItem", () => {
       let {
         slideImages: e
       } = this.props;
       null != e && this.setState({
         currentIndex: (this.state.currentIndex + 1) % e.length
       })
-    }), _(this, "renderSlideItem", e => {
+    }), g(this, "renderSlideItem", e => {
       let {
         image: t,
         title: n,
@@ -244,4 +244,4 @@ class g extends i.Component {
     })
   }
 }
-let b = g
+let b = _

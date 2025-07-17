@@ -1,6 +1,6 @@
 /** Chunk was on 61216 **/
 n.d(t, {
-  Z: () => y,
+  Z: () => x,
   m: () => E
 });
 var r = n(255367),
@@ -15,7 +15,7 @@ var r = n(255367),
   p = n(48691),
   m = n(231338),
   f = n(388032),
-  _ = n(306846);
+  g = n(306846);
 
 function h(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -36,7 +36,7 @@ function h(e) {
   return e
 }
 
-function g(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -63,14 +63,14 @@ function b(e) {
     onCopyLink: p,
     onTestDownload: m,
     onReportProduct: h,
-    closePopout: g,
+    closePopout: _,
     onSelect: b
   } = e;
   return (0, r.jsx)("div", {
-    className: _.menuContainer,
+    className: g.menuContainer,
     children: (0, r.jsxs)(o.v2r, {
       navId: "guild-product-context",
-      onClose: g,
+      onClose: _,
       "aria-label": f.intl.string(f.t.Z146dH),
       onSelect: b,
       children: [(0, r.jsxs)(o.kSQ, {
@@ -125,21 +125,21 @@ function E(e) {
     onEditProduct: p,
     onUnpublishProduct: m,
     onDeleteProduct: E,
-    onCopyProductLink: y,
+    onCopyProductLink: x,
     onTestDownload: C,
-    onReportProduct: x
-  } = e, v = i.useRef(null);
+    onReportProduct: v
+  } = e, y = i.useRef(null);
   return (0, r.jsx)("div", {
     onClick: e => {
       e.stopPropagation()
     },
     children: (0, r.jsx)(o.yRy, {
-      targetElementRef: v,
+      targetElementRef: y,
       position: "right",
       align: "top",
       spacing: -8,
       animation: o.yRy.Animation.FADE,
-      renderPopout: e => (0, r.jsx)(b, g(h({}, e), {
+      renderPopout: e => (0, r.jsx)(b, _(h({}, e), {
         guildId: n,
         productId: t.id,
         showEditProduct: l,
@@ -151,26 +151,26 @@ function E(e) {
         onEditProduct: p,
         onUnpublishProduct: m,
         onDeleteProduct: E,
-        onCopyLink: y,
+        onCopyLink: x,
         onTestDownload: C,
-        onReportProduct: x
+        onReportProduct: v
       })),
       children: (e, n) => {
         let {
           isShown: i
         } = n;
-        return (0, r.jsx)(o.P3F, g(h({}, e), {
-          innerRef: v,
+        return (0, r.jsx)(o.P3F, _(h({}, e), {
+          innerRef: y,
           "aria-label": f.intl.formatToPlainString(f.t.RtqjeH, {
             productName: t.name
           }),
           "aria-haspopup": "listbox",
           "aria-expanded": i,
-          className: _.productActionMenuButton,
+          className: g.productActionMenuButton,
           children: (0, r.jsx)(o.Huf, {
             size: "md",
             color: "currentColor",
-            className: _.productActionMenuIcon,
+            className: g.productActionMenuIcon,
             "aria-hidden": !0
           })
         }))
@@ -179,25 +179,25 @@ function E(e) {
   })
 }
 
-function y(e) {
+function x(e) {
   let {
     product: t,
     guildId: n,
     onEditProduct: i,
     onUnpublishProduct: l,
-    onDeleteProduct: y,
+    onDeleteProduct: x,
     onCopyProductLink: C,
-    onTestDownload: x,
-    disabled: v = !1
+    onTestDownload: v,
+    disabled: y = !1
   } = e, O = (0, c.U)(t, 600), j = null !== t.price_tier ? (0, u.T4)(t.price_tier, m.pK.USD) : void 0, I = (0, d.C)(t);
   return (0, r.jsxs)(o.kL8, {
     tag: "article",
-    className: a()(_.productCardClickable, _.productCard, {
-      [_.disabled]: v
+    className: a()(g.productCardClickable, g.productCard, {
+      [g.disabled]: y
     }),
-    onClick: v ? void 0 : i,
+    onClick: y ? void 0 : i,
     onContextMenu: function(e) {
-      (0, s.jW)(e, () => Promise.resolve(e => (0, r.jsx)(b, g(h({}, e), {
+      (0, s.jW)(e, () => Promise.resolve(e => (0, r.jsx)(b, _(h({}, e), {
         closePopout: s.Zy,
         guildId: n,
         productId: t.id,
@@ -209,9 +209,9 @@ function y(e) {
         showReportProduct: !1,
         onEditProduct: i,
         onUnpublishProduct: l,
-        onDeleteProduct: y,
+        onDeleteProduct: x,
         onCopyLink: C,
-        onTestDownload: x,
+        onTestDownload: v,
         onReportProduct: () => {}
       }))))
     },
@@ -221,27 +221,27 @@ function y(e) {
     children: [(0, r.jsx)("img", {
       alt: "",
       src: O,
-      className: _.productThumbnail
+      className: g.productThumbnail
     }), (0, r.jsxs)("div", {
-      className: _.productInfo,
+      className: g.productInfo,
       children: [(0, r.jsxs)("div", {
-        className: _.productInfoContent,
+        className: g.productInfoContent,
         children: [(0, r.jsx)(o.X6q, {
           variant: "text-md/semibold",
           color: "header-primary",
-          className: _.productName,
+          className: g.productName,
           children: t.name
         }), (0, r.jsx)(o.LZC, {
           size: 8
         }), (0, r.jsxs)("div", {
-          className: _.productDetails,
+          className: g.productDetails,
           children: [(0, r.jsx)(o.Text, {
             variant: "text-md/normal",
             color: "header-secondary",
             children: j
           }), null != I ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)("div", {
-              className: _.dotSeparator
+              className: g.dotSeparator
             }), (0, r.jsx)(o.Text, {
               variant: "text-md/normal",
               color: "header-secondary",
@@ -251,7 +251,7 @@ function y(e) {
         }), (0, r.jsx)(o.LZC, {
           size: 16
         }), t.published ? (0, r.jsx)(p.t, {}) : (0, r.jsx)(p.b, {})]
-      }), !v && (0, r.jsx)(E, {
+      }), !y && (0, r.jsx)(E, {
         product: t,
         guildId: n,
         showEditProduct: !0,
@@ -262,9 +262,9 @@ function y(e) {
         showReportProduct: !1,
         onEditProduct: i,
         onUnpublishProduct: l,
-        onDeleteProduct: y,
+        onDeleteProduct: x,
         onCopyProductLink: C,
-        onTestDownload: x,
+        onTestDownload: v,
         onReportProduct: () => {}
       })]
     })]

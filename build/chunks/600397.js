@@ -20,10 +20,10 @@ function f(e) {
     message: t,
     channel: n,
     author: f,
-    compact: _
+    compact: g
   } = e, {
     nick: h
-  } = (0, s.Sw)(f, n), g = (0, c.l)({
+  } = (0, s.Sw)(f, n), _ = (0, c.l)({
     user: f,
     channelId: n.id,
     guildId: void 0,
@@ -32,7 +32,7 @@ function f(e) {
   if (null == b) return null;
   let E = p.intl.format(p.t.m7Lwam, {
     username: h,
-    usernameHook: g,
+    usernameHook: _,
     gameName: b.name,
     gameIconHook: e => (0, r.jsxs)("span", {
       className: m.gameContainer,
@@ -48,7 +48,7 @@ function f(e) {
     iconNode: (0, r.jsx)(i.iWm, {
       size: "sm"
     }),
-    compact: _,
+    compact: g,
     contentClassName: m.content,
     children: (0, r.jsx)("div", {
       children: E

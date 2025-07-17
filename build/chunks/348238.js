@@ -3,7 +3,7 @@ n.d(t, {
   $3: () => V,
   Go: () => B,
   JC: () => w,
-  NU: () => k,
+  NU: () => L,
   Nk: () => A,
   R9: () => R,
   RN: () => U,
@@ -12,7 +12,7 @@ n.d(t, {
   Xn: () => z,
   bb: () => H,
   qo: () => D,
-  rY: () => L,
+  rY: () => k,
   sR: () => F,
   tn: () => G,
   wq: () => M
@@ -29,15 +29,15 @@ var r = n(255367),
   p = n(235894),
   m = n(675478),
   f = n(592125),
-  _ = n(323873),
+  g = n(323873),
   h = n(375954),
-  g = n(594174),
+  _ = n(594174),
   b = n(585483),
   E = n(5967),
-  y = n(630388),
+  x = n(630388),
   C = n(358085),
-  x = n(51144),
-  v = n(91047),
+  v = n(51144),
+  y = n(91047),
   O = n(50284),
   j = n(804063),
   I = n(981631);
@@ -52,10 +52,10 @@ function S(e, t, n) {
 
 function T(e, t, n) {
   return i.useCallback(r => {
-    let i = g.default.getUser(e);
+    let i = _.default.getUser(e);
     if (null == i) return;
     if (r.preventDefault(), r.stopPropagation(), !r.shiftKey) return void n();
-    let l = "@".concat(x.ZP.getUserTag(i, {
+    let l = "@".concat(v.ZP.getUserTag(i, {
         decoration: "never"
       })),
       a = "<@".concat(e, ">");
@@ -96,11 +96,11 @@ function R(e, t) {
   return Z(S("avatarProfile", e, t))
 }
 
-function L(e, t) {
+function k(e, t) {
   return Z(S("referencedAvatarProfile", e, t))
 }
 
-function k(e, t) {
+function L(e, t) {
   return Z(S("interactionAvatarProfile", e, t))
 }
 
@@ -110,7 +110,7 @@ function D(e, t, a, o) {
   } = t, {
     id: u,
     flags: d
-  } = e, p = (0, y.yE)(d, I.iLy.EPHEMERAL), m = (0, s.bp)();
+  } = e, p = (0, x.yE)(d, I.iLy.EPHEMERAL), m = (0, s.bp)();
   return i.useCallback((e, t) => {
     if (p) return;
     if (!C.isPlatformEmbedded) {
@@ -121,7 +121,7 @@ function D(e, t, a, o) {
     }
     let i = f.Z.getChannel(c),
       s = h.Z.getMessage(c, u),
-      d = _.Z.isEditing(c, u);
+      d = g.Z.isEditing(c, u);
     null == i || null == s || d || (a({
       contextMenu: !0
     }), (0, l.jW)(e, async () => {
@@ -174,17 +174,17 @@ function D(e, t, a, o) {
 
 function M(e, t) {
   return i.useCallback(n => {
-    let r = g.default.getUser(e),
+    let r = _.default.getUser(e),
       i = f.Z.getChannel(t);
-    null != r && null != i && (n.stopPropagation(), (0, v.Pv)(n, r, i))
+    null != r && null != i && (n.stopPropagation(), (0, y.Pv)(n, r, i))
   }, [e, t])
 }
 
 function U(e, t, n) {
   return i.useCallback(r => {
-    let i = g.default.getUser(e),
+    let i = _.default.getUser(e),
       l = f.Z.getChannel(t);
-    null != i && null != l && (r.stopPropagation(), (0, v._j)(r, {
+    null != i && null != l && (r.stopPropagation(), (0, y._j)(r, {
       user: i,
       channel: l,
       moderationAlertId: n
@@ -194,9 +194,9 @@ function U(e, t, n) {
 
 function F(e, t) {
   return i.useCallback(n => {
-    let r = g.default.getUser(e),
+    let r = _.default.getUser(e),
       i = f.Z.getChannel(t);
-    null != r && null != i && (n.stopPropagation(), (0, v.xS)(n, r, i.guild_id))
+    null != r && null != i && (n.stopPropagation(), (0, y.xS)(n, r, i.guild_id))
   }, [e, t])
 }
 
@@ -224,7 +224,7 @@ function G(e) {
     location: "useHoveredMessage"
   }, {
     autoTrackExposure: !1
-  }), f = l.author.id, _ = "".concat(r, ":").concat(f), h = i.useRef(a), g = (t = l, n = o, i.useCallback(e => {
+  }), f = l.author.id, g = "".concat(r, ":").concat(f), h = i.useRef(a), _ = (t = l, n = o, i.useCallback(e => {
     if (null == e || !(e.nativeEvent instanceof MouseEvent) || Object.values(n).some(e => e)) return;
     let r = e.target;
     if ((0, p.Uw)(t)) {
@@ -241,19 +241,19 @@ function G(e) {
         h: l
       }, !1, u.LL.UserTriggered)
     }
-  }, [t, n])), [E, y] = i.useState(a);
+  }, [t, n])), [E, x] = i.useState(a);
   h.current = E || h.current;
   let C = i.useCallback(e => {
-      s && (0, m.T6)(), E || (b.S.dispatchKeyed(I.LPv.ANIMATE_CHAT_AVATAR, _, !0), g(e), y(!0))
-    }, [E, _, s, g]),
-    x = i.useCallback(() => {
-      b.S.dispatchKeyed(I.LPv.ANIMATE_CHAT_AVATAR, _, !1), y(!1)
-    }, [_]);
+      s && (0, m.T6)(), E || (b.S.dispatchKeyed(I.LPv.ANIMATE_CHAT_AVATAR, g, !0), _(e), x(!0))
+    }, [E, g, s, _]),
+    v = i.useCallback(() => {
+      b.S.dispatchKeyed(I.LPv.ANIMATE_CHAT_AVATAR, g, !1), x(!1)
+    }, [g]);
   return {
     hasHovered: h.current,
     isHovered: E,
     handleMouseEnter: C,
-    handleMouseLeave: x
+    handleMouseLeave: v
   }
 }
 

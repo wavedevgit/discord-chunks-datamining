@@ -19,7 +19,7 @@ let u = e => {
     onTransitionToInviteChannel: m,
     onAcceptInstantInvite: f
   } = e, {
-    analyticsLocations: _
+    analyticsLocations: g
   } = (0, o.ZP)(a.Z.INVITE_EMBED), h = i.useCallback(() => {
     let e = "noop";
     p ? (m(), e = "transition") : (f(), e = "accept"), (0, l.r$)({
@@ -27,8 +27,8 @@ let u = e => {
       action: e,
       inviter_id: d.author.id,
       invite_message_id: d.id
-    }, _)
-  }, [t, d, _, p, m, f]);
+    }, g)
+  }, [t, d, g, p, m, f]);
   return (0, r.jsx)(c.Z, {
     children: (0, r.jsx)(s.Z, {
       isEmbed: !0,

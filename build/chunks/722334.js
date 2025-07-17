@@ -1,6 +1,6 @@
 /** Chunk was on 61216 **/
 n.d(t, {
-  W: () => y
+  W: () => x
 });
 var r = n(255367);
 n(73800);
@@ -15,9 +15,9 @@ var i = n(120356),
   p = n(266843),
   m = n(341907),
   f = n(46140),
-  _ = n(981631),
+  g = n(981631),
   h = n(388032),
-  g = n(355060),
+  _ = n(355060),
   b = n(87181);
 
 function E(e) {
@@ -25,14 +25,14 @@ function E(e) {
     questId: t
   } = e;
   return (0, r.jsx)("div", {
-    className: g.buttonContainer,
+    className: _.buttonContainer,
     children: (0, r.jsx)(o.zx, {
-      className: g.button,
+      className: _.button,
       color: o.Tt.BRAND,
       onClick: () => {
         (0, m.navigateToQuestHome)({
           fromContent: d.jn.EXCLUDED_QUEST_EMBED
-        }), c.default.track(_.rMx.QUEST_CONTENT_CLICKED, function(e) {
+        }), c.default.track(g.rMx.QUEST_CONTENT_CLICKED, function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -61,7 +61,7 @@ function E(e) {
   })
 }
 
-function y(e) {
+function x(e) {
   let {
     questId: t
   } = e, {
@@ -72,12 +72,12 @@ function y(e) {
     ref: e => {
       n.current = e
     },
-    className: l()(g.container, {
-      [g.wide]: "lg" === i,
-      [g.tall]: "lg" !== i
+    className: l()(_.container, {
+      [_.wide]: "lg" === i,
+      [_.tall]: "lg" !== i
     }),
     children: [(0, r.jsxs)("div", {
-      className: g.contentContainer,
+      className: _.contentContainer,
       children: [(0, r.jsx)(s.X6q, {
         variant: "lg" === i ? "heading-xl/bold" : "heading-lg/bold",
         color: "header-primary",
@@ -85,17 +85,17 @@ function y(e) {
       }), (0, r.jsx)(s.Text, {
         variant: "lg" === i ? "text-sm/medium" : "text-xs/medium",
         color: "text-default",
-        className: g.__invalid_mobileWebCopy,
+        className: _.__invalid_mobileWebCopy,
         children: h.intl.string(h.t.nuWSYW)
       }), (0, r.jsx)(E, {
         questId: t
       })]
     }), (0, r.jsx)("div", {
-      className: g.imgContainer,
+      className: _.imgContainer,
       children: (0, r.jsx)("img", {
         src: b,
         alt: "",
-        className: g.missingQuestImage
+        className: _.missingQuestImage
       })
     })]
   })

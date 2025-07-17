@@ -1,6 +1,6 @@
 /** Chunk was on 61216 **/
 n.d(t, {
-  Z: () => g
+  Z: () => _
 });
 var r = n(255367);
 n(73800);
@@ -15,32 +15,32 @@ var i = n(120356),
   p = n(605568),
   m = n(834129),
   f = n(674563),
-  _ = n(388032),
+  g = n(388032),
   h = n(126759);
 
-function g(e) {
+function _(e) {
   var t;
   let {
     message: n,
     compact: i,
-    usernameHook: g,
+    usernameHook: _,
     channel: b
-  } = e, E = (0, a.e7)([c.Z], () => c.Z.getGuild(b.guild_id)), y = (0, u.ZP)(n), C = g(y), {
-    avatarSrc: x,
+  } = e, E = (0, a.e7)([c.Z], () => c.Z.getGuild(b.guild_id)), x = (0, u.ZP)(n), C = _(x), {
+    avatarSrc: v,
     eventHandlers: {
-      onMouseEnter: v,
+      onMouseEnter: y,
       onMouseLeave: O
     }
   } = (0, p.m)(!0);
   return (0, r.jsx)("div", {
-    onMouseEnter: v,
+    onMouseEnter: y,
     onMouseLeave: O,
     children: (0, r.jsx)(m.Z, {
       className: l()(h.mainContainer, {
         [h.compact]: i
       }),
       iconNode: i ? null : (0, r.jsx)(p.S, {
-        src: x
+        src: v
       }),
       iconContainerClassName: h.iconContainer,
       compact: i,
@@ -61,7 +61,7 @@ function g(e) {
               color: "text-brand",
               tag: "span",
               className: h.username,
-              children: _.intl.string(_.t.hG1StL)
+              children: g.intl.string(g.t.hG1StL)
             }), (0, r.jsx)(s.Z, {
               type: f.Hb.SYSTEM_DM,
               className: h.systemTag
@@ -73,8 +73,8 @@ function g(e) {
           className: l()(h.__invalid_messageContent, {
             [h.compact]: i
           }),
-          children: _.intl.format(_.t.W0UBIy, {
-            username: y.nick,
+          children: g.intl.format(g.t.W0UBIy, {
+            username: x.nick,
             usernameHook: C,
             guildName: null != (t = null == E ? void 0 : E.name) ? t : ""
           })

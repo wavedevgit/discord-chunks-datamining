@@ -14,15 +14,15 @@ var r = n(255367),
   p = n(601964),
   m = n(271383),
   f = n(485386),
-  _ = n(430824),
+  g = n(430824),
   h = n(594174),
-  g = n(700785),
+  _ = n(700785),
   b = n(709054),
   E = n(962086),
-  y = n(160404),
+  x = n(160404),
   C = n(225675),
-  x = n(981631),
-  v = n(388032),
+  v = n(981631),
+  y = n(388032),
   O = n(318135);
 
 function j(e) {
@@ -38,12 +38,12 @@ function j(e) {
 function I(e) {
   let {
     guildId: t
-  } = e, n = (0, u.e7)([h.default], () => h.default.getCurrentUser()), l = (0, u.e7)([_.Z], () => _.Z.getGuild(t)), o = (0, u.e7)([f.Z], () => f.Z.getRoles(t)), {
+  } = e, n = (0, u.e7)([h.default], () => h.default.getCurrentUser()), l = (0, u.e7)([g.Z], () => g.Z.getGuild(t)), o = (0, u.e7)([f.Z], () => f.Z.getRoles(t)), {
     impersonateType: I,
     viewingRoles: S
-  } = (0, u.cj)([y.Z], () => ({
-    impersonateType: y.Z.getImpersonateType(t),
-    viewingRoles: y.Z.getViewingRoles(t)
+  } = (0, u.cj)([x.Z], () => ({
+    impersonateType: x.Z.getImpersonateType(t),
+    viewingRoles: x.Z.getViewingRoles(t)
   })), T = I === C.z.SERVER_SHOP, N = (0, u.e7)([m.ZP], () => null != n ? m.ZP.getTrueMember(t, n.id) : null), [P, A] = (0, d.A7R)(null == S ? [] : b.default.keys(S)), w = i.useRef(l);
   i.useEffect(() => {
     let e = {},
@@ -62,19 +62,19 @@ function I(e) {
     R = i.useMemo(() => null != l && null != n ? Object.values(o).filter(e => e.id !== l.id).filter(e => {
       var t;
       return !T || (null == (t = e.tags) ? void 0 : t.subscription_listing_id) != null
-    }).filter(e => (null == Z ? void 0 : Z.id) === e.id || g.r6(l, n.id, Z, e)) : [], [l, n, T, Z, o]);
+    }).filter(e => (null == Z ? void 0 : Z.id) === e.id || _.r6(l, n.id, Z, e)) : [], [l, n, T, Z, o]);
   if (null == n || null == l || null == N) return null;
-  let L = {};
+  let k = {};
   return (N.roles.forEach(e => {
     let t = o[e];
-    null != t && (L[t.id] = t)
-  }), c.e$(g.I0({
-    forceRoles: L,
+    null != t && (k[t.id] = t)
+  }), c.e$(_.I0({
+    forceRoles: k,
     context: l
-  }), c.$e(x.Plq.MANAGE_GUILD, x.Plq.MANAGE_ROLES)) || (0, p.eM)(l, n)) ? (0, r.jsx)("div", {
+  }), c.$e(v.Plq.MANAGE_GUILD, v.Plq.MANAGE_ROLES)) || (0, p.eM)(l, n)) ? (0, r.jsx)("div", {
     className: O.container,
     children: (0, r.jsx)(d.hQY, {
-      placeholder: v.intl.string(v.t.Sojqsr),
+      placeholder: y.intl.string(y.t.Sojqsr),
       value: P,
       onChange: A,
       autoFocus: !0,
@@ -99,6 +99,6 @@ function I(e) {
     })
   }) : (0, r.jsx)(d.Text, {
     variant: "text-md/medium",
-    children: v.intl.string(v.t.MNSTbW)
+    children: y.intl.string(y.t.MNSTbW)
   })
 }

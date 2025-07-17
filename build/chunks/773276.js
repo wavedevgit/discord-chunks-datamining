@@ -20,7 +20,7 @@ function m(e) {
     messageId: n,
     transitionState: m,
     onClose: f
-  } = e, _ = (0, i.e7)([c.Z], () => c.Z.getFpMessageInfo(n)), h = _.attachments.map(e => e.id), g = _.attachments.map(e => e.filename), {
+  } = e, g = (0, i.e7)([c.Z], () => c.Z.getFpMessageInfo(n)), h = g.attachments.map(e => e.id), _ = g.attachments.map(e => e.filename), {
     reportFalsePositive: b,
     isReportFalsePositiveLoading: E
   } = (0, u.$)({
@@ -31,10 +31,10 @@ function m(e) {
       (0, l.showToast)((0, l.createToast)(p.intl.string(p.t.R0RpRU), l.ToastType.FAILURE))
     },
     report: () => {
-      (0, o.Eq)(t, n, h, g)
+      (0, o.Eq)(t, n, h, _)
     }
   });
-  return _.attachments.length > 0 || f(), (0, r.jsx)(d.$, {
+  return g.attachments.length > 0 || f(), (0, r.jsx)(d.$, {
     messageId: n,
     channelId: t,
     isReportFalsePositiveLoading: E,

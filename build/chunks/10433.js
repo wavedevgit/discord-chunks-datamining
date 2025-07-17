@@ -14,21 +14,21 @@ var r = n(255367),
   p = n(626135),
   m = n(471518),
   f = n(370210),
-  _ = n(981631),
+  g = n(981631),
   h = n(388032),
-  g = n(280306);
+  _ = n(280306);
 
 function b(e) {
   let {
     code: t,
     message: n
-  } = e, [b, E, y] = (0, a.Wu)([f.Z], () => [f.Z.getApplication(t), f.Z.isInvalidApplication(t), f.Z.getApplicationFetchState(t)], [t]), C = (0, a.e7)([d.Z], () => {
+  } = e, [b, E, x] = (0, a.Wu)([f.Z], () => [f.Z.getApplication(t), f.Z.isInvalidApplication(t), f.Z.getApplicationFetchState(t)], [t]), C = (0, a.e7)([d.Z], () => {
     var e;
     return null != (e = d.Z.getGuildId()) ? e : void 0
-  }), [x, v] = i.useState(!1), O = i.useCallback(e => {
-    e && v(!0)
+  }), [v, y] = i.useState(!1), O = i.useCallback(e => {
+    e && y(!0)
   }, []), j = (0, o.O)(O), I = i.useCallback(() => {
-    p.default.track(_.rMx.APP_DIRECTORY_PROFILE_EMBED_VIEWED, {
+    p.default.track(g.rMx.APP_DIRECTORY_PROFILE_EMBED_VIEWED, {
       application_id: t,
       device_platform: l.tq ? "mobile_web" : "desktop_web",
       sender_user_id: n.author.id,
@@ -39,21 +39,21 @@ function b(e) {
   return (i.useEffect(() => {
     (0, m.gZ)(t)
   }, [t]), i.useEffect(() => {
-    x && y === f.M.FETCHED && I()
-  }, [x, y, I]), i.useEffect(() => {
-    x && E && p.default.track(_.rMx.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
+    v && x === f.M.FETCHED && I()
+  }, [v, x, I]), i.useEffect(() => {
+    v && E && p.default.track(g.rMx.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
       device_platform: l.tq ? "mobile_web" : "desktop_web",
       sender_user_id: n.author.id,
       guild_id: C,
       channel_id: n.channel_id
     })
-  }, [x, C, E, n.author.id, n.channel_id]), E) ? (0, r.jsxs)(c.Z, {
+  }, [v, C, E, n.author.id, n.channel_id]), E) ? (0, r.jsxs)(c.Z, {
     containerRef: j,
     children: [(0, r.jsx)(c.Z.Header, {
       text: h.intl.string(h.t.j4KtLS)
     }), (0, r.jsx)(c.Z.Body, {
       children: (0, r.jsxs)("div", {
-        className: g.invalidBody,
+        className: _.invalidBody,
         children: [(0, r.jsx)(c.Z.Icon, {
           expired: !0
         }), (0, r.jsx)(c.Z.Info, {
@@ -63,7 +63,7 @@ function b(e) {
         })]
       })
     })]
-  }) : null == b || y === f.M.FETCHING ? (0, r.jsxs)(c.Z, {
+  }) : null == b || x === f.M.FETCHING ? (0, r.jsxs)(c.Z, {
     containerRef: j,
     children: [(0, r.jsx)(c.Z.Header, {
       text: h.intl.string(h.t.m9hXGR)

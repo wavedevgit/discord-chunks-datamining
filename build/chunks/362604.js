@@ -1,6 +1,6 @@
 /** Chunk was on 61216 **/
 n.d(t, {
-  Z: () => y
+  Z: () => x
 }), n(388685), n(472816), n(794429);
 var r = n(255367),
   i = n(73800),
@@ -14,37 +14,37 @@ var r = n(255367),
   p = n(926491),
   m = n(419922),
   f = n(626135),
-  _ = n(585483),
+  g = n(585483),
   h = n(115610),
-  g = n(981631),
+  _ = n(981631),
   b = n(388032),
   E = n(711643);
 
-function y(e) {
+function x(e) {
   let {
     message: t,
     channel: l,
-    compact: y
-  } = e, C = (0, o.Wu)([p.Z], () => Array.from(p.Z.getAllGuildStickers().values()).flat()).slice(0, 20), [x, v] = i.useState(null);
+    compact: x
+  } = e, C = (0, o.Wu)([p.Z], () => Array.from(p.Z.getAllGuildStickers().values()).flat()).slice(0, 20), [v, y] = i.useState(null);
   return (i.useEffect(() => {
     let e = setInterval(() => {
-      C.length > 0 && v(C[Math.floor(Math.random() * C.length)])
+      C.length > 0 && y(C[Math.floor(Math.random() * C.length)])
     }, 500);
     return () => clearInterval(e)
   }, [C]), null == l.guild_id) ? null : (0, r.jsxs)("div", {
     children: [(0, r.jsx)(u.Z, {
       className: a()(E.mainContainer, {
-        [E.compact]: y
+        [E.compact]: x
       }),
       icon: n(570111),
-      compact: y,
+      compact: x,
       children: (0, r.jsx)("div", {
         className: a()(E.__invalid_content, {
-          [E.compact]: y
+          [E.compact]: x
         }),
         children: (0, r.jsx)("div", {
           className: a()(E.__invalid_messageContent, {
-            [E.compact]: y
+            [E.compact]: x
           }),
           children: "" !== t.content ? t.content : b.intl.string(b.t.wnn1DQ)
         })
@@ -56,12 +56,12 @@ function y(e) {
         children: (0, r.jsx)(s.zx, {
           color: s.zx.Colors.PRIMARY,
           onClick: () => {
-            f.default.track(g.rMx.CHANNEL_PROMPT_ACTION_CLICKED, {
+            f.default.track(_.rMx.CHANNEL_PROMPT_ACTION_CLICKED, {
               message_id: t.id,
               channel_id: l.id,
               guild_id: l.guild_id,
               action_type: "upload_file"
-            }), _.S.dispatch(g.CkL.UPLOAD_FILE), (0, d.fE)({
+            }), g.S.dispatch(_.CkL.UPLOAD_FILE), (0, d.fE)({
               message: t,
               channel: l,
               shouldMention: !0
@@ -77,16 +77,16 @@ function y(e) {
         children: (0, r.jsx)(s.zx, {
           color: s.zx.Colors.PRIMARY,
           onClick: () => {
-            f.default.track(g.rMx.CHANNEL_PROMPT_ACTION_CLICKED, {
+            f.default.track(_.rMx.CHANNEL_PROMPT_ACTION_CLICKED, {
               message_id: t.id,
               channel_id: l.id,
               guild_id: l.guild_id,
               action_type: "sticker"
             }), (0, h.O)(t.id, l)
           },
-          children: null != x ? (0, r.jsx)(m.Z, {
+          children: null != v ? (0, r.jsx)(m.Z, {
             size: 32,
-            sticker: x
+            sticker: v
           }) : (0, r.jsx)(c.EO4, {
             size: "md",
             color: "currentColor"

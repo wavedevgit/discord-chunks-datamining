@@ -1,6 +1,6 @@
 /** Chunk was on 61216 **/
 n.d(t, {
-  Z: () => _
+  Z: () => g
 });
 var r = n(255367);
 n(73800);
@@ -16,13 +16,13 @@ var i = n(120356),
   m = n(388032),
   f = n(126759);
 
-function _(e) {
+function g(e) {
   let {
     message: t,
     compact: n,
     usernameHook: i
-  } = e, _ = (0, s.ZP)(t), h = i(_), {
-    avatarSrc: g,
+  } = e, g = (0, s.ZP)(t), h = i(g), {
+    avatarSrc: _,
     eventHandlers: {
       onMouseEnter: b,
       onMouseLeave: E
@@ -36,7 +36,7 @@ function _(e) {
         [f.compact]: n
       }),
       iconNode: n ? null : (0, r.jsx)(u.S, {
-        src: g
+        src: _
       }),
       iconContainerClassName: f.iconContainer,
       compact: n,
@@ -70,7 +70,7 @@ function _(e) {
             [f.compact]: n
           }),
           children: m.intl.format(m.t.qntXNT, {
-            username: _.nick,
+            username: g.nick,
             usernameHook: h
           })
         })]

@@ -1,4 +1,4 @@
-/** Chunk was on 48812 **/
+/** Chunk was on 61636 **/
 e.exports = {
   notice: "notice__36c3e",
   guildIcon: "guildIcon__36c3e",

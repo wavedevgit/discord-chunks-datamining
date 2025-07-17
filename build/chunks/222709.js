@@ -18,7 +18,7 @@ let m = e => {
     messageId: n
   } = e, m = (0, l.e7)([u.Z], () => u.Z.shouldShowBump(n), [n]), f = i.useCallback(() => {
     s.Z.dismissPublishBump(n), (0, c.Z)(t, n)
-  }, [t, n]), _ = i.useCallback(() => {
+  }, [t, n]), g = i.useCallback(() => {
     s.Z.dismissPublishBump(n)
   }, [n]), h = i.useCallback(() => {
     s.Z.permanentlyHidePublishBump(t)
@@ -43,7 +43,7 @@ let m = e => {
         onClick: f,
         children: d.intl.string(d.t["MFGE5+"])
       }), (0, r.jsx)(o.P3F, {
-        onClick: _,
+        onClick: g,
         children: (0, r.jsx)(o.k$p, {
           size: "xs",
           color: "currentColor",

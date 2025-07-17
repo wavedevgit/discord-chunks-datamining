@@ -1,42 +1,36 @@
 /** Chunk was on 51164 **/
 r.d(t, {
-  Z: () => s
+  Z: () => o
 });
 var n = r(603263),
   l = r(977885),
-  i = r(416638),
-  a = r(652399),
-  o = r(981631),
+  a = r(416638),
+  i = r(981631),
   c = r(862825);
-let s = {
+let o = {
   fetchCrossDMMessages: function(e) {
     let {
       searchContext: t,
       selectedPageIndex: r,
-      queryString: s,
-      searchMode: u
-    } = e, b = (0, i.WJ)(t);
-    n.Gn(b), n.QY(b, !1), n.h7(b, s), l.Z.clearSearchState(b), l.Z.fetchMessages({
+      queryString: o,
+      searchMode: s
+    } = e, u = (0, a.WJ)(t);
+    n.Gn(u), n.QY(u, !1), n.h7(u, o), l.Z.clearSearchState(u), l.Z.fetchMessages({
       searchContext: t,
       searchTabs: [c.sR.MESSAGES],
-      searchQueryString: s,
-      searchMode: u,
-      getId: () => b,
-      getLimit: () => o.vpv,
+      searchQueryString: o,
+      searchMode: s,
+      getId: () => u,
+      getLimit: () => i.vpv,
       onFetchStart: e => {
         let {
-          searchQueryString: l,
-          searchQuery: i
+          searchQueryString: t,
+          searchQuery: l
         } = e;
-        n.Vs(b, l, i, r * o.vpv), (0, a.tI)({
-          searchType: t.type,
-          searchId: b,
-          query: i,
-          queryString: l
-        })
+        n.Vs(u, t, l, r * i.vpv)
       },
       pagination: {
-        offset: r * o.vpv
+        offset: r * i.vpv
       },
       trackExactTotalHits: !0
     })

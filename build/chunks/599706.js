@@ -93,8 +93,8 @@ let m = e => {
     for (let e = 0; e < s && f.length < l; e++) f.push((0, r.jsx)(m, {
       guildId: o
     }, "unknown-member-".concat(e)));
-    let _ = c - u - s;
-    for (let e = 0; e < _ && f.length < l; e++) f.push((0, r.jsx)(m, {
+    let g = c - u - s;
+    for (let e = 0; e < g && f.length < l; e++) f.push((0, r.jsx)(m, {
       empty: !0,
       guildId: o
     }, "empty-member-".concat(e)));

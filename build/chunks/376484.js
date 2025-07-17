@@ -43,7 +43,7 @@ function f(e) {
       className: l()(m.__invalid_embedContent, {
         [m.compact]: o
       }),
-      children: (0, r.jsx)(_, {
+      children: (0, r.jsx)(g, {
         message: t
       })
     }), (0, r.jsx)("div", {
@@ -59,7 +59,7 @@ function f(e) {
   })
 }
 
-function _(e) {
+function g(e) {
   var t;
   let {
     message: n

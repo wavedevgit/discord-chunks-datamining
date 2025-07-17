@@ -14,15 +14,15 @@ var r = n(255367),
   p = n(670188),
   m = n(237583),
   f = n(598077),
-  _ = n(63063),
+  g = n(63063),
   h = n(153066),
-  g = n(51144),
+  _ = n(51144),
   b = n(620662),
   E = n(994339),
-  y = n(503438),
+  x = n(503438),
   C = n(981631),
-  x = n(616922),
-  v = n(388032),
+  v = n(616922),
+  y = n(388032),
   O = n(638128);
 
 function j(e, t, n) {
@@ -88,7 +88,7 @@ function T(e) {
     children: e => {
       var i;
       return (0, r.jsx)(s.ua7, {
-        text: null != (i = t.nick) ? i : g.ZP.getName(t.user),
+        text: null != (i = t.nick) ? i : _.ZP.getName(t.user),
         children: i => (0, r.jsx)(s.P3F, S(I({
           innerRef: d,
           className: O.partyMemberKnown
@@ -175,7 +175,7 @@ class N extends i.PureComponent {
     let {
       partyId: e
     } = this.props;
-    return null != e && (0, x.Ps)(e) ? C.BhN.SPOTIFY_CONNECTION : C.BhN.RICH_PRESENCE_INTRODUCTION
+    return null != e && (0, v.Ps)(e) ? C.BhN.SPOTIFY_CONNECTION : C.BhN.RICH_PRESENCE_INTRODUCTION
   }
   renderHeaderText() {
     let {
@@ -184,18 +184,18 @@ class N extends i.PureComponent {
     } = this.props;
     switch (e) {
       case C.mFx.LISTEN:
-        return v.intl.formatToPlainString(v.t["/8czHx"], {
+        return y.intl.formatToPlainString(y.t["/8czHx"], {
           name: t
         });
       case C.mFx.WATCH:
-        return v.intl.formatToPlainString(v.t.BBJXVl, {
+        return y.intl.formatToPlainString(y.t.BBJXVl, {
           name: t
         });
       case C.mFx.JOIN:
-        return v.intl.string(v.t["hC/Ze3"]);
+        return y.intl.string(y.t["hC/Ze3"]);
       case C.mFx.JOIN_REQUEST:
       default:
-        return v.intl.string(v.t.Ckxb6u)
+        return y.intl.string(y.t.Ckxb6u)
     }
   }
   renderPartyStatus() {
@@ -210,15 +210,15 @@ class N extends i.PureComponent {
     } = this.props, [c, u] = this.getPartySize();
     if (this.isDeadInvite()) switch (e) {
       case C.mFx.LISTEN:
-        return v.intl.string(v.t["84qx9v"]);
+        return y.intl.string(y.t["84qx9v"]);
       case C.mFx.WATCH:
-        return v.intl.string(v.t.B9kbnZ);
+        return y.intl.string(y.t.B9kbnZ);
       case C.mFx.JOIN:
       case C.mFx.JOIN_REQUEST:
       default:
-        return v.intl.string(v.t["2Gbof3"])
+        return y.intl.string(y.t["2Gbof3"])
     }
-    return !l || i || this.isEmbeddedActivityApplication() || e !== C.mFx.JOIN ? this.isActionType(C.mFx.LISTEN) || this.isActionType(C.mFx.WATCH) ? null != o && null != o.details && null != o.state && (0, y.Z)(o) ? [(0, r.jsx)("div", {
+    return !l || i || this.isEmbeddedActivityApplication() || e !== C.mFx.JOIN ? this.isActionType(C.mFx.LISTEN) || this.isActionType(C.mFx.WATCH) ? null != o && null != o.details && null != o.state && (0, x.Z)(o) ? [(0, r.jsx)("div", {
       className: O.details,
       children: (0, r.jsx)(s.eee, {
         className: O.textLink,
@@ -227,7 +227,7 @@ class N extends i.PureComponent {
       })
     }, "details"), (0, r.jsx)("div", {
       className: O.state,
-      children: v.intl.format(v.t.uU9le3, {
+      children: y.intl.format(y.t.uU9le3, {
         artists: o.state,
         artistsHook: (e, t) => null != o.state ? (0, r.jsx)(d.Z, {
           artists: o.state,
@@ -236,13 +236,13 @@ class N extends i.PureComponent {
           onOpenSpotifyArtist: this.handleOpenSpotifyArtist
         }, t) : null
       })
-    }, "state")] : this.isActionType(C.mFx.LISTEN) ? v.intl.string(v.t.gXYoq6) : v.intl.string(v.t.eyKDl5) : this.isActionType(C.mFx.JOIN_REQUEST) ? this.isPartyFull() ? v.intl.string(v.t.jfrMtr) : this.hasPartySize() && 0 !== u ? v.intl.formatToPlainString(v.t.XWapnZ, {
+    }, "state")] : this.isActionType(C.mFx.LISTEN) ? y.intl.string(y.t.gXYoq6) : y.intl.string(y.t.eyKDl5) : this.isActionType(C.mFx.JOIN_REQUEST) ? this.isPartyFull() ? y.intl.string(y.t.jfrMtr) : this.hasPartySize() && 0 !== u ? y.intl.formatToPlainString(y.t.XWapnZ, {
       number: u - c
-    }) : null : this.isInParty() ? v.intl.string(v.t.KC26NT) : t || n || i || this.isEmbeddedActivityApplication() ? this.isPartyFull() ? v.intl.string(v.t.jfrMtr) : this.hasPartySize() && 0 !== u ? v.intl.formatToPlainString(v.t.XWapnZ, {
+    }) : null : this.isInParty() ? y.intl.string(y.t.KC26NT) : t || n || i || this.isEmbeddedActivityApplication() ? this.isPartyFull() ? y.intl.string(y.t.jfrMtr) : this.hasPartySize() && 0 !== u ? y.intl.formatToPlainString(y.t.XWapnZ, {
       number: u - c
-    }) : null : v.intl.formatToPlainString(v.t.SqJBnJ, {
+    }) : null : y.intl.formatToPlainString(y.t.SqJBnJ, {
       name: a
-    }) : v.intl.string(v.t.c3EWuL)
+    }) : y.intl.string(y.t.c3EWuL)
   }
   renderActionButton() {
     let {
@@ -259,27 +259,27 @@ class N extends i.PureComponent {
       className: O.actionButton,
       size: o.zx.Sizes.SMALL
     }, p = null != u ? u(d) : null;
-    return null != p ? p : !this.isDeadInvite() && this.isActionType(C.mFx.LISTEN) && null != l && null != s && null != a && (0, x.Ps)(l) ? c(S(I({}, d), {
+    return null != p ? p : !this.isDeadInvite() && this.isActionType(C.mFx.LISTEN) && null != l && null != s && null != a && (0, v.Ps)(l) ? c(S(I({}, d), {
       activity: a,
       user: s.author
     })) : (0, r.jsx)(o.zx, S(I({}, d, t || !e || this.isDeadInvite() || this.isEmbeddedActivityApplication() ? this.canJoin() ? {
-      children: v.intl.string(v.t.VJlc0d),
+      children: y.intl.string(y.t.VJlc0d),
       onClick: this.handleJoin
     } : this.canSync() ? {
-      children: v.intl.string(v.t.VJlc0d),
+      children: y.intl.string(y.t.VJlc0d),
       onClick: this.handleSync
     } : this.canSendInvite() ? {
-      children: v.intl.string(v.t["hC/Ze3"]),
+      children: y.intl.string(y.t["hC/Ze3"]),
       onClick: this.handleInvite,
       disabled: i
     } : this.isInParty() ? {
-      children: v.intl.string(v.t.KC26NT),
+      children: y.intl.string(y.t.KC26NT),
       disabled: !0
     } : {
-      children: this.isActionType(C.mFx.JOIN_REQUEST) ? v.intl.string(v.t["hC/Ze3"]) : v.intl.string(v.t.VJlc0d),
+      children: this.isActionType(C.mFx.JOIN_REQUEST) ? y.intl.string(y.t["hC/Ze3"]) : y.intl.string(y.t.VJlc0d),
       disabled: !0
     } : {
-      children: v.intl.string(v.t.gUZonZ),
+      children: y.intl.string(y.t.gUZonZ),
       onClick: this.handleDownloadApp
     }), {
       color: (e || n) && !this.isDeadInvite() ? o.zx.Colors.GREEN : o.zx.Colors.PRIMARY,
@@ -333,7 +333,7 @@ class N extends i.PureComponent {
       src: t,
       className: (0, h.l)(O, "artwork", this.getActionableMode())
     });
-    let d = null != i && null != c && null != i.assets && null != i.assets.large_text && "" !== i.assets.large_text && !o && (0, y.Z)(i) ? i.assets.large_text : null,
+    let d = null != i && null != c && null != i.assets && null != i.assets.large_text && "" !== i.assets.large_text && !o && (0, x.Z)(i) ? i.assets.large_text : null,
       p = null != d ? (0, r.jsx)(s.ua7, {
         text: d,
         children: e => {
@@ -388,7 +388,7 @@ class N extends i.PureComponent {
           })]
         }), p]
       }), (0, r.jsx)(s.eee, {
-        href: _.Z.getArticleURL(this.getHelpdeskArticleURL()),
+        href: g.Z.getArticleURL(this.getHelpdeskArticleURL()),
         className: O.helpIcon,
         children: (0, r.jsx)(s.idN, {
           color: "currentColor",

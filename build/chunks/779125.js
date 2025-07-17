@@ -15,9 +15,9 @@ var i = n(442837),
   p = n(592125),
   m = n(430824),
   f = n(699516),
-  _ = n(594174),
+  g = n(594174),
   h = n(934415),
-  g = n(900849),
+  _ = n(900849),
   b = n(981631);
 
 function E(e) {
@@ -25,11 +25,11 @@ function E(e) {
     channel: t,
     onClick: n,
     beforeTransition: E,
-    className: y,
+    className: x,
     openChatWithoutConnecting: C
-  } = e, x = (0, i.e7)([_.default, f.Z], () => null == t ? "" : (0, s.F6)(t, _.default, f.Z), [t]);
+  } = e, v = (0, i.e7)([g.default, f.Z], () => null == t ? "" : (0, s.F6)(t, g.default, f.Z), [t]);
   return (0, r.jsx)(l.ua7, {
-    text: x,
+    text: v,
     position: "top",
     children: e => {
       let {
@@ -38,13 +38,13 @@ function E(e) {
       } = e;
       return (0, r.jsx)(c.Z, {
         role: "link",
-        className: y,
+        className: x,
         onClick: e => {
           e.stopPropagation(), null != n ? n() : (null != E && E(), (0, l.pTH)(), function(e, t) {
             let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
             if (null == e || null == t) return;
             let r = m.Z.getGuild(e);
-            if ((null == r ? void 0 : r.joinedAt) == null) return g.Ub(e, {}, {
+            if ((null == r ? void 0 : r.joinedAt) == null) return _.Ub(e, {}, {
               channelId: t
             });
             let i = p.Z.getChannel(t);
@@ -61,7 +61,7 @@ function E(e) {
         onMouseEnter: i,
         onMouseLeave: s,
         iconType: (0, h.wl)(t),
-        children: x
+        children: v
       })
     }
   })

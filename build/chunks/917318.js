@@ -23,7 +23,7 @@ let m = {
     [i.u.REPORT_TO_MOD_CLOSED_REPORT]: () => d.default.UE81zc
   };
 
-function _(e) {
+function g(e) {
   let {
     type: t
   } = e, n = null;
@@ -59,26 +59,26 @@ function h(e) {
     author: d,
     mentions: f,
     type: h
-  } = n, g = (0, o.ZP)(n), b = n.getChannelId(), E = (0, l.e7)([u.default], () => u.default.getUser(f[0]), [f]), y = (0, o.JZ)(d, i), C = (0, s.l)({
+  } = n, _ = (0, o.ZP)(n), b = n.getChannelId(), E = (0, l.e7)([u.default], () => u.default.getUser(f[0]), [f]), x = (0, o.JZ)(d, i), C = (0, s.l)({
     user: d,
     channelId: b,
     guildId: i.guild_id,
     messageId: n.id
-  })(y), x = (0, o.Sw)(E, i), v = (0, s.l)({
+  })(x), v = (0, o.Sw)(E, i), y = (0, s.l)({
     user: E,
     channelId: b,
     guildId: i.guild_id,
     messageId: n.id
-  })(x), O = null != (t = m[h]) ? t : null;
+  })(v), O = null != (t = m[h]) ? t : null;
   if (null == O) return null;
   let j = p.intl.format(O(), {
-    actorName: g.nick,
+    actorName: _.nick,
     actorHook: C,
-    targetName: null == x ? void 0 : x.nick,
-    targetHook: v
+    targetName: null == v ? void 0 : v.nick,
+    targetHook: y
   });
   return (0, r.jsx)(c.Z, {
-    iconNode: (0, r.jsx)(_, {
+    iconNode: (0, r.jsx)(g, {
       type: h
     }),
     timestamp: n.timestamp,
@@ -87,7 +87,7 @@ function h(e) {
   })
 }
 
-function g(e) {
+function _(e) {
   var t;
   let {
     message: n,
@@ -96,7 +96,7 @@ function g(e) {
   } = e, {
     author: a,
     type: u
-  } = n, d = (0, o.ZP)(n), m = n.getChannelId(), h = (0, o.JZ)(a, i), g = (0, s.l)({
+  } = n, d = (0, o.ZP)(n), m = n.getChannelId(), h = (0, o.JZ)(a, i), _ = (0, s.l)({
     user: a,
     channelId: m,
     guildId: i.guild_id,
@@ -105,10 +105,10 @@ function g(e) {
   if (null == b) return null;
   let E = p.intl.format(b(), {
     actorName: d.nick,
-    actorHook: g
+    actorHook: _
   });
   return (0, r.jsx)(c.Z, {
-    iconNode: (0, r.jsx)(_, {
+    iconNode: (0, r.jsx)(g, {
       type: u
     }),
     timestamp: n.timestamp,
@@ -129,7 +129,7 @@ function b(e) {
     message: t,
     channel: n,
     compact: l
-  }) : (0, r.jsx)(g, {
+  }) : (0, r.jsx)(_, {
     message: t,
     channel: n,
     compact: l

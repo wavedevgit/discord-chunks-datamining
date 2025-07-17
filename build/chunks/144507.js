@@ -1,8 +1,8 @@
 /** Chunk was on 61216 **/
 n.d(t, {
   $D: () => h,
-  H2: () => g,
-  MO: () => _,
+  H2: () => _,
+  MO: () => g,
   X$: () => f,
   d5: () => p
 });
@@ -45,7 +45,7 @@ function f(e) {
   return 0 !== m(e)
 }
 
-function _(e) {
+function g(e) {
   let t = (0, u.Bt)(null == e ? void 0 : e.id),
     n = (0, l.Ob)(e),
     r = (0, l.gS)(null == e ? void 0 : e.id),
@@ -71,9 +71,9 @@ function _(e) {
 }
 
 function h(e) {
-  return (0, i.e7)([s.Z], () => g(e), [e])
+  return (0, i.e7)([s.Z], () => _(e), [e])
 }
 
-function g(e) {
+function _(e) {
   return null != e && s.Z.can(d.Plq.ADMINISTRATOR, e)
 }

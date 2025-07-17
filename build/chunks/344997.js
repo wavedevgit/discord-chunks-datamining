@@ -48,7 +48,7 @@ function f(e) {
   })
 }
 
-function _(e) {
+function g(e) {
   let {
     ctaType: t,
     classificationId: n,
@@ -88,7 +88,7 @@ function h(e) {
   }) : null
 }
 
-function g(e) {
+function _(e) {
   let {
     children: t,
     theme: n
@@ -134,9 +134,9 @@ function b(e) {
           children: i.body
         })
       })]
-    }), (0, r.jsx)(g, {
+    }), (0, r.jsx)(_, {
       theme: i.theme,
-      children: null == (t = i.ctas) ? void 0 : t.map(e => (0, r.jsx)(_, {
+      children: null == (t = i.ctas) ? void 0 : t.map(e => (0, r.jsx)(g, {
         ctaType: e,
         classificationId: i.classification_id,
         learnMoreLink: i.learn_more_link

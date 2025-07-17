@@ -15,15 +15,15 @@ var r = n(255367),
   p = n(906732),
   m = n(915346),
   f = n(783097),
-  _ = n(812236),
+  g = n(812236),
   h = n(561308),
-  g = n(567409),
+  _ = n(567409),
   b = n(706454),
   E = n(314897),
-  y = n(699516),
+  x = n(699516),
   C = n(914010),
-  x = n(594174),
-  v = n(768581),
+  v = n(594174),
+  y = n(768581),
   O = n(433534),
   j = n(506895),
   I = n(758199),
@@ -44,9 +44,9 @@ function R(e) {
     activityReferrerId: s,
     onView: h
   } = e, {
-    name: g,
+    name: _,
     bot: b
-  } = t = (0, N.O)(t), y = null == b ? void 0 : b.id, C = (0, f.ye)(t), x = v.ZP.getApplicationIconURL({
+  } = t = (0, N.O)(t), x = null == b ? void 0 : b.id, C = (0, f.ye)(t), v = y.ZP.getApplicationIconURL({
     id: t.id,
     icon: t.icon,
     bot: b
@@ -61,13 +61,13 @@ function R(e) {
     instanceId: U,
     isCurrentlyInInstance: F,
     canLaunchInChannel: B
-  } = (0, j.c)(t.id), G = (0, u.Z)(), H = (0, _.ms)({
+  } = (0, j.c)(t.id), G = (0, u.Z)(), H = (0, g.ms)({
     context: {
       type: "contextless"
     },
     applicationId: t.id,
     botUserId: null == b ? void 0 : b.id
-  }), V = null != y && C && H, z = B && C, W = (0, A.G)(t), K = (0, A.z)(t), Y = i.useMemo(() => {
+  }), V = null != x && C && H, z = B && C, W = (0, A.G)(t), K = (0, A.z)(t), Y = i.useMemo(() => {
     let e = [];
     return C ? (z && e.push({
       label: null == U ? w.intl.string(w.t.RscU7O) : w.intl.string(w.t.VJlc0d),
@@ -90,25 +90,25 @@ function R(e) {
       onClick() {
         (0, m.W)({
           appId: t.id,
-          botId: y,
+          botId: x,
           analyticsLocations: D,
           customId: a,
           referrerId: R
         })
       }
     })) : null != K && e.push(K), e
-  }, [z, V, U, F, M, t.id, G, a, R, D, C, K, y]), X = C ? (0, r.jsx)(k, {
+  }, [z, V, U, F, M, t.id, G, a, R, D, C, K, x]), X = C ? (0, r.jsx)(L, {
     app: t
-  }) : (0, r.jsx)(L, {
+  }) : (0, r.jsx)(k, {
     app: t
   });
   return (0, r.jsx)(I.W, {
-    title: g,
+    title: _,
     staticBannerSrc: O,
     videoBannerSrc: S,
     onClickBanner: W,
     bannerAspectRatio: Z,
-    iconSrc: x,
+    iconSrc: v,
     embedUrl: n,
     info: X,
     actions: Y,
@@ -123,7 +123,7 @@ function R(e) {
   })
 }
 
-function L(e) {
+function k(e) {
   var t, n, a;
   let {
     app: c
@@ -162,7 +162,7 @@ function L(e) {
   })
 }
 
-function k(e) {
+function L(e) {
   let {
     app: t
   } = e, {
@@ -171,12 +171,12 @@ function k(e) {
   } = t, c = (0, o.e7)([C.Z], () => {
     var e;
     return null != (e = C.Z.getGuildId()) ? e : void 0
-  }, []), u = (0, g.N)(t.id), d = (0, o.Wu)([x.default, y.Z], () => {
+  }, []), u = (0, _.N)(t.id), d = (0, o.Wu)([v.default, x.Z], () => {
     let e = [];
     for (let [t, n] of u.entries()) {
       if (t >= 5) break;
-      let r = x.default.getUser(n.author_id),
-        i = y.Z.isFriend(n.author_id);
+      let r = v.default.getUser(n.author_id),
+        i = x.Z.isFriend(n.author_id);
       null != r && i && e.push(r)
     }
     return e

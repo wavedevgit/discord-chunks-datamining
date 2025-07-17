@@ -14,12 +14,12 @@ var r = n(255367),
   p = n(377171),
   m = n(739566),
   f = n(942951),
-  _ = n(834129),
+  g = n(834129),
   h = n(809026),
-  g = n(139256),
+  _ = n(139256),
   b = n(489887),
   E = n(388032),
-  y = n(271629);
+  x = n(271629);
 
 function C() {
   return (0, r.jsx)("svg", {
@@ -37,7 +37,7 @@ function C() {
   })
 }
 
-function x(e) {
+function v(e) {
   let t, {
     hasNoVotes: n,
     victorEmoji: i
@@ -52,12 +52,12 @@ function x(e) {
     })
   }
   return null != t ? (0, r.jsx)("div", {
-    className: y.imageContainer,
+    className: x.imageContainer,
     children: t
   }) : null
 }
 
-function v(e) {
+function y(e) {
   let t;
   var {
     type: n
@@ -92,16 +92,16 @@ function v(e) {
       } = i;
       t = (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
-          className: y.victorAnswer,
+          className: x.victorAnswer,
           children: [(0, r.jsx)(c.Text, {
             variant: "text-sm/semibold",
             color: "text-default",
-            className: y.victorAnswerText,
+            className: x.victorAnswerText,
             scaleFontToUserSetting: !0,
             children: a
-          }), (0, r.jsx)(g.ZY, {
+          }), (0, r.jsx)(_.ZY, {
             size: 16,
-            className: y.victorIcon,
+            className: x.victorIcon,
             isVictor: !0,
             isExpired: !0
           })]
@@ -132,7 +132,7 @@ function v(e) {
       })
   }
   return (0, r.jsx)("div", {
-    className: y.description,
+    className: x.description,
     children: t
   })
 }
@@ -158,13 +158,13 @@ function O(e) {
     }
   })(n), [n]), u = null != n.victorEmoji || "NO_VOTES" === o.type;
   return (0, r.jsxs)("div", {
-    className: a()(y.container, {
-      [y.containerWithImage]: u
+    className: a()(x.container, {
+      [x.containerWithImage]: u
     }, t),
-    children: [(0, r.jsx)(x, {
+    children: [(0, r.jsx)(v, {
       hasNoVotes: "NO_VOTES" === o.type,
       victorEmoji: n.victorEmoji
-    }), (0, r.jsx)(v, function(e) {
+    }), (0, r.jsx)(y, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -182,7 +182,7 @@ function O(e) {
       }
       return e
     }({}, o)), null != l && (0, r.jsx)(s.zx, {
-      className: y.button,
+      className: x.button,
       size: s.zx.Sizes.TINY,
       onClick: l,
       color: s.zx.Colors.PRIMARY,
@@ -203,21 +203,21 @@ function j(e) {
     channel: l,
     compact: a,
     disableInteraction: s = !1
-  } = e, d = n.embeds[0], p = i.useMemo(() => (0, h.Z)(d), [d]), g = (0, o.aF)(null != (t = null == p ? void 0 : p.questionText) ? t : "", b.Dv), C = (0, m.ZP)(n), x = (0, f.l)({
+  } = e, d = n.embeds[0], p = i.useMemo(() => (0, h.Z)(d), [d]), _ = (0, o.aF)(null != (t = null == p ? void 0 : p.questionText) ? t : "", b.Dv), C = (0, m.ZP)(n), v = (0, f.l)({
     user: n.author,
     channelId: l.id,
     guildId: l.guild_id,
     messageId: n.id
-  }), v = n.messageReference, j = i.useCallback(() => {
-    null != v && u.Z.jumpToMessage({
-      channelId: v.channel_id,
-      messageId: v.message_id,
+  }), y = n.messageReference, j = i.useCallback(() => {
+    null != y && u.Z.jumpToMessage({
+      channelId: y.channel_id,
+      messageId: y.message_id,
       flash: !0,
       returnMessageId: n.id
     })
-  }, [n.id, v]);
+  }, [n.id, y]);
   return null == p ? null : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(_.Z, {
+    children: [(0, r.jsx)(g.Z, {
       iconNode: (0, r.jsx)(c.QDj, {
         size: "xs"
       }),
@@ -225,12 +225,12 @@ function j(e) {
       compact: a,
       children: E.intl.format(E.t["VJcK4+"], {
         username: C.nick,
-        usernameHook: x(C),
-        title: g,
+        usernameHook: v(C),
+        title: _,
         titleOnClick: j
       })
     }), (0, r.jsx)(O, {
-      className: y.embed,
+      className: x.embed,
       data: p,
       onClickPollLink: s ? void 0 : j
     })]

@@ -14,15 +14,15 @@ var r = n(255367),
   p = n(317381),
   m = n(100527),
   f = n(906732),
-  _ = n(758199),
+  g = n(758199),
   h = n(943762),
-  g = n(914498),
+  _ = n(914498),
   b = n(880251),
   E = n(515344),
-  y = n(835473),
+  x = n(835473),
   C = n(471445),
-  x = n(111028),
-  v = n(592125),
+  v = n(111028),
+  y = n(592125),
   O = n(430824),
   j = n(496675),
   I = n(594174),
@@ -35,7 +35,7 @@ var r = n(255367),
   Z = n(388032),
   R = n(582909);
 
-function L(e) {
+function k(e) {
   let {
     members: t,
     membersOnline: n,
@@ -71,7 +71,7 @@ function L(e) {
   })
 }
 
-function k(e) {
+function L(e) {
   let {
     channel: t,
     guild: n,
@@ -88,7 +88,7 @@ function k(e) {
         className: R.channelIcon,
         size: "xs",
         color: "currentColor"
-      }) : null, (0, r.jsx)(x.Z, {
+      }) : null, (0, r.jsx)(v.Z, {
         children: (0, r.jsx)(u.Text, {
           variant: "text-xs/normal",
           color: l,
@@ -104,7 +104,7 @@ function k(e) {
     className: a()(R.channel, {
       [R.ended]: i
     }),
-    children: (0, r.jsx)(x.Z, {
+    children: (0, r.jsx)(v.Z, {
       children: (0, r.jsx)(u.Text, {
         variant: "text-xs/normal",
         color: l,
@@ -124,12 +124,12 @@ function D(e) {
       getAcceptInviteContext: u
     } = e,
     {
-      approximate_member_count: _,
+      approximate_member_count: g,
       approximate_presence_count: h,
-      target_type: g,
+      target_type: _,
       target_application: b
     } = a;
-  s()(g === w.Iq.EMBEDDED_APPLICATION && null != b, "invalid application invite");
+  s()(_ === w.Iq.EMBEDDED_APPLICATION && null != b, "invalid application invite");
   let E = i.useCallback(() => {
       var e;
       S.default.track(A.rMx.EMBEDDED_APPLICATION_INVITE_EMBED_VIEWED, {
@@ -138,7 +138,7 @@ function D(e) {
       })
     }, [null == (t = a.inviter) ? void 0 : t.id, b.id]),
     C = (0, c.e7)([O.Z], () => null != a.guild ? O.Z.getGuild(a.guild.id) : null, [a]),
-    x = (0, y.Z)([b.id])[0],
+    v = (0, x.Z)([b.id])[0],
     T = (0, c.e7)([p.ZP], () => {
       var e;
       return (null == a ? void 0 : a.channel) != null && (null == (e = p.ZP.getSelfEmbeddedActivityForChannel(a.channel.id)) ? void 0 : e.applicationId) === b.id
@@ -152,12 +152,12 @@ function D(e) {
         return b.id === t
       })
     }),
-    L = v.Z.getChannel(null == (n = a.channel) ? void 0 : n.id),
-    k = (0, c.e7)([j.Z], () => null != L && j.Z.can(A.Plq.USE_EMBEDDED_ACTIVITIES, L), [L]),
+    k = y.Z.getChannel(null == (n = a.channel) ? void 0 : n.id),
+    L = (0, c.e7)([j.Z], () => null != k && j.Z.can(A.Plq.USE_EMBEDDED_ACTIVITIES, k), [k]),
     {
       analyticsLocations: D
     } = (0, f.ZP)(m.Z.INVITE_EMBED),
-    U = (0, c.Wu)([p.ZP], () => null != L ? p.ZP.getEmbeddedActivitiesForChannel(L.id).filter(e => e.applicationId === b.id).flatMap(e => Array.from(e.userIds)) : [], [L, b.id]),
+    U = (0, c.Wu)([p.ZP], () => null != k ? p.ZP.getEmbeddedActivitiesForChannel(k.id).filter(e => e.applicationId === b.id).flatMap(e => Array.from(e.userIds)) : [], [k, b.id]),
     F = (0, c.Wu)([I.default], () => U.map(e => I.default.getUser(e)).filter(e => null != e), [U]),
     B = i.useCallback(() => {
       (0, d.r$)({
@@ -177,16 +177,16 @@ function D(e) {
     if (null == a.guild) return (0, r.jsx)(P.Z, {});
     C = (0, N.Qs)(a.guild)
   }
-  let V = H && !k || H && T;
-  return (H && T && (l = Z.intl.string(Z.t.wJNK8P)), k || (l = Z.intl.string(Z.t.hHGrW1)), null == a.code || "" === a.code || null == x) ? null : (0, r.jsx)(f.Gt, {
+  let V = H && !L || H && T;
+  return (H && T && (l = Z.intl.string(Z.t.wJNK8P)), L || (l = Z.intl.string(Z.t.hHGrW1)), null == a.code || "" === a.code || null == v) ? null : (0, r.jsx)(f.Gt, {
     value: D,
     children: (0, r.jsx)(M, {
-      app: x,
+      app: v,
       activityUsers: F,
       isMember: H,
-      channel: L,
+      channel: k,
       guild: C,
-      members: _,
+      members: g,
       membersOnline: h,
       isActivityActive: R,
       submitting: G,
@@ -211,24 +211,24 @@ function M(e) {
     isActivityActive: p,
     submitting: m,
     isDisabled: f,
-    tooltip: y,
+    tooltip: x,
     handleAcceptInvite: C,
-    onView: x
+    onView: v
   } = e, {
-    bot: v,
+    bot: y,
     icon: O
   } = l, j = T.ZP.getApplicationIconURL({
     id: l.id,
     icon: O,
-    bot: v
+    bot: y
   }), I = (0, E.G)(l), S = (0, b.E)(l), N = a.length, P = i.useMemo(() => [{
     label: o ? p ? Z.intl.string(Z.t.VJlc0d) : Z.intl.string(Z.t.RscU7O) : Z.intl.string(Z.t["2BP08P"]),
-    trackingArea: o ? g.j_.PLAY : g.j_.JOIN_SERVER,
+    trackingArea: o ? _.j_.PLAY : _.j_.JOIN_SERVER,
     submitting: m,
-    disabledReason: f && null != y ? y : void 0,
+    disabledReason: f && null != x ? x : void 0,
     onClick: C
-  }], [C, p, f, o, m, y]);
-  return (0, r.jsx)(_.W, (t = function(e) {
+  }], [C, p, f, o, m, x]);
+  return (0, r.jsx)(g.W, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -253,7 +253,7 @@ function M(e) {
     onClickBanner: I,
     info: (0, r.jsxs)("div", {
       className: R.infoWrapper,
-      children: [(0, r.jsx)(k, {
+      children: [(0, r.jsx)(L, {
         channel: s,
         guild: c,
         hasEnded: !p,
@@ -262,7 +262,7 @@ function M(e) {
         activityUsers: a,
         guildId: c.id,
         activityText: Z.intl.string(Z.t.BMTj29)
-      }) : (0, r.jsx)(L, {
+      }) : (0, r.jsx)(k, {
         members: u,
         membersOnline: d,
         textColor: "none"
@@ -272,8 +272,8 @@ function M(e) {
     onClickContent: I,
     trackingConfig: {
       id: l.id,
-      linkType: g.Un.ACTIVITY_INVITE,
-      onView: x
+      linkType: _.Un.ACTIVITY_INVITE,
+      onView: v
     }
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

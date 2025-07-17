@@ -15,16 +15,16 @@ var i = n(512722),
   p = n(240864),
   m = n(57949),
   f = n(400916),
-  _ = n(388032);
+  g = n(388032);
 
 function h(e) {
   let {
     guildId: t,
     guildProductListingId: n,
     sourceAnalyticsLocations: i
-  } = e, h = (0, a.e7)([p.Z], () => p.Z.getGuildProduct(n)), g = (0, a.e7)([c.Z], () => c.Z.getGuild(t), [t]), b = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), E = (0, u.n)();
-  return (l()(null != g, "guild cannot be null"), l()(null != h, "guildProductListing cannot be null"), (0, d.SO)(g)) ? (0, r.jsx)(o.ua7, {
-    text: _.intl.string(_.t.sAJr9f),
+  } = e, h = (0, a.e7)([p.Z], () => p.Z.getGuildProduct(n)), _ = (0, a.e7)([c.Z], () => c.Z.getGuild(t), [t]), b = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), E = (0, u.n)();
+  return (l()(null != _, "guild cannot be null"), l()(null != h, "guildProductListing cannot be null"), (0, d.SO)(_)) ? (0, r.jsx)(o.ua7, {
+    text: g.intl.string(g.t.sAJr9f),
     children: e => {
       var t, n;
       return (0, r.jsx)(o.zxk, (t = function(e) {
@@ -46,7 +46,7 @@ function h(e) {
         return e
       }({
         variant: "primary",
-        text: _.intl.string(_.t.xUi3BA)
+        text: g.intl.string(g.t.xUi3BA)
       }, e), n = n = {
         disabled: !0
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -61,20 +61,20 @@ function h(e) {
       }), t))
     }
   }) : h.has_entitlement ? null != h.attachments ? (0, r.jsx)(f.Z, {
-    guildId: g.id,
+    guildId: _.id,
     productId: h.id
   }) : (0, r.jsx)(o.zxk, {
     variant: "secondary",
-    text: _.intl.string(_.t.RcTOGB),
+    text: g.intl.string(g.t.RcTOGB),
     disabled: !0
   }) : (0, r.jsx)(o.gtL, {
     shineSize: o.gtL.ShineSizes.SMALL,
     pauseAnimation: b || !E,
     onClick: () => (0, m.z)({
       guildProductListing: h,
-      guildId: g.id,
+      guildId: _.id,
       sourceAnalyticsLocations: i
     }),
-    children: _.intl.string(_.t.xUi3BA)
+    children: g.intl.string(g.t.xUi3BA)
   })
 }

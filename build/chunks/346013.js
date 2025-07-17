@@ -14,15 +14,15 @@ var r = n(255367),
   p = n(607070),
   m = n(100527),
   f = n(367907),
-  _ = n(676742),
+  g = n(676742),
   h = n(1585),
-  g = n(841762),
+  _ = n(841762),
   b = n(336197),
   E = n(406432),
-  y = n(348238),
+  x = n(348238),
   C = n(38267),
-  x = n(884902),
-  v = n(670188),
+  v = n(884902),
+  y = n(670188),
   O = n(695346),
   j = n(271383),
   I = n(594174),
@@ -34,8 +34,8 @@ var r = n(255367),
   w = n(981631),
   Z = n(959517),
   R = n(388032),
-  L = n(70249),
-  k = n(527455);
+  k = n(70249),
+  L = n(527455);
 
 function D(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -77,13 +77,13 @@ function U(e) {
     channel: G
   } = e, H = i.useRef(null), V = i.useRef(null), z = (0, A.J)(F, B), {
     setPopout: W
-  } = (0, C.Z)(B.id, Z.d$), K = (0, y.qo)(B, G, W, !0), Y = O.QK.useSetting(), X = (0, N.n)(), [q, Q] = i.useState(!1), [J, $] = i.useState((null == z ? void 0 : z.coverImage) == null), ee = (0, c.e7)([p.Z], () => p.Z.useReducedMotion), et = (0, c.e7)([j.ZP, I.default], () => {
+  } = (0, C.Z)(B.id, Z.d$), K = (0, x.qo)(B, G, W, !0), Y = O.QK.useSetting(), X = (0, N.n)(), [q, Q] = i.useState(!1), [J, $] = i.useState((null == z ? void 0 : z.coverImage) == null), ee = (0, c.e7)([p.Z], () => p.Z.useReducedMotion), et = (0, c.e7)([j.ZP, I.default], () => {
     var e;
     return j.ZP.isMember(null == z ? void 0 : z.guildId, null == (e = I.default.getCurrentUser()) ? void 0 : e.id)
-  }, [z]), en = (0, c.e7)([j.ZP], () => (null == z ? void 0 : z.authorId) != null ? j.ZP.getMember(z.guildId, z.authorId) : null), er = (0, _.Z)((null == en ? void 0 : en.avatarDecoration) != null ? null == en ? void 0 : en.avatarDecoration : null == z || null == (t = z.user) ? void 0 : t.avatarDecoration), [ei, el, ea] = i.useMemo(() => {
+  }, [z]), en = (0, c.e7)([j.ZP], () => (null == z ? void 0 : z.authorId) != null ? j.ZP.getMember(z.guildId, z.authorId) : null), er = (0, g.Z)((null == en ? void 0 : en.avatarDecoration) != null ? null == en ? void 0 : en.avatarDecoration : null == z || null == (t = z.user) ? void 0 : t.avatarDecoration), [ei, el, ea] = i.useMemo(() => {
     var e;
     return [null != (e = null == en ? void 0 : en.colorString) ? e : "inherit", null == en ? void 0 : en.colorStrings, null == en ? void 0 : en.colorRoleId]
-  }, [en]), eo = (0, x.X7)(null == en ? void 0 : en.guildId, null != (l = null == z ? void 0 : z.authorId) ? l : void 0, el), {
+  }, [en]), eo = (0, v.X7)(null == en ? void 0 : en.guildId, null != (l = null == z ? void 0 : z.authorId) ? l : void 0, el), {
     reducedMotion: es
   } = i.useContext(d.Sfi), [ec, eu] = i.useState(!1), ed = i.useCallback(() => {
     Q(!0)
@@ -105,43 +105,43 @@ function U(e) {
       size: (0, h.y9)(d.EFr.SIZE_40),
       canAnimate: ec
     }),
-    e_ = null == (n = z.user) ? void 0 : n.getAvatarURL(z.guildId, 40, ec),
+    eg = null == (n = z.user) ? void 0 : n.getAvatarURL(z.guildId, 40, ec),
     eh = () => {
       es.enabled || eu(e => !e)
     },
-    eg = z.coverImage,
-    eb = null != eg && (0, E.d$)(eg);
+    e_ = z.coverImage,
+    eb = null != e_ && (0, E.d$)(e_);
   return (0, r.jsxs)("div", {
-    className: L.postPreviewContainer,
+    className: k.postPreviewContainer,
     children: [(0, r.jsxs)("div", {
-      className: L.thumbnailContainer,
+      className: k.thumbnailContainer,
       onMouseEnter: ed,
       onMouseLeave: ep,
       children: [!J && (!0 === z.shouldShowBlurredThumbnailImage ? (0, r.jsx)("img", {
-        src: k,
+        src: L,
         alt: R.intl.string(R.t.rIbh8P),
-        className: a()(L.thumbnail, {
-          [L.spoiler]: z.shouldSpoiler
+        className: a()(k.thumbnail, {
+          [k.spoiler]: z.shouldSpoiler
         }),
         onContextMenu: K,
         onError: () => $(!0)
-      }) : (0, r.jsx)(g.Z, {
-        src: !(X && (Y || q)) && eb ? "".concat(eg, "?format=png") : eg,
-        backgroundSrc: "".concat(eg, "?format=png"),
+      }) : (0, r.jsx)(_.Z, {
+        src: !(X && (Y || q)) && eb ? "".concat(e_, "?format=png") : e_,
+        backgroundSrc: "".concat(e_, "?format=png"),
         alt: R.intl.string(R.t.rIbh8P),
         aspectRatio: 16 / 9,
-        className: a()(L.thumbnail, {
-          [L.spoiler]: z.shouldSpoiler
+        className: a()(k.thumbnail, {
+          [k.spoiler]: z.shouldSpoiler
         }),
-        imageChildClassName: L.thumbnailImage,
+        imageChildClassName: k.thumbnailImage,
         onContextMenu: K,
         onError: () => $(!0)
       })), null != z.coverImageOverlayText && (0, r.jsx)(d.P3F, {
         onClick: em,
         children: (0, r.jsx)("div", {
-          className: L.thumbnailOverlay,
+          className: k.thumbnailOverlay,
           children: (0, r.jsxs)("div", {
-            className: L.thumbnailOverlayCta,
+            className: k.thumbnailOverlayCta,
             children: [(0, r.jsx)(P.Z, {
               color: s.Z.WHITE
             }), (0, r.jsx)(d.Text, {
@@ -153,23 +153,23 @@ function U(e) {
         })
       })]
     }), (0, r.jsxs)("div", {
-      className: L.descriptionContainer,
+      className: k.descriptionContainer,
       children: [(0, r.jsxs)("div", {
-        className: L.descriptionHeader,
+        className: k.descriptionHeader,
         children: [(0, r.jsx)(d.Text, {
           variant: "text-md/semibold",
           color: "text-default",
-          className: L.descriptionHeaderText,
+          className: k.descriptionHeaderText,
           children: z.title
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
-          className: a()(L.descriptionHeaderText, L.descriptionSubtitle),
+          className: a()(k.descriptionHeaderText, k.descriptionSubtitle),
           children: z.subtitle
         })]
       }), (0, r.jsxs)("div", {
-        className: L.descriptionFooter,
-        children: [null != z.authorId && null != e_ && (0, r.jsx)(v.Z, {
+        className: k.descriptionFooter,
+        children: [null != z.authorId && null != eg && (0, r.jsx)(y.Z, {
           targetElementRef: V,
           userId: z.authorId,
           guildId: z.guildId,
@@ -185,22 +185,22 @@ function U(e) {
             children: (0, r.jsx)(d.qEK, M(D({}, e), {
               ref: V,
               size: d.EFr.SIZE_40,
-              src: e_,
+              src: eg,
               "aria-label": R.intl.string(R.t.KXz3XF),
               avatarDecoration: ef
             }))
           })
         }), (0, r.jsxs)("div", {
-          className: L.descriptionFooterContainer,
+          className: k.descriptionFooterContainer,
           children: [(0, r.jsxs)("div", {
-            className: L.descriptionFooterChannelName,
+            className: k.descriptionFooterChannelName,
             children: [null != z.channelName && (0, r.jsx)(d.EAQ, {
               size: "md",
               color: "currentColor",
-              className: L.mediaChannelIcon
+              className: k.mediaChannelIcon
             }), (0, r.jsx)(d.P3F, {
               onClick: em,
-              className: L.channelName,
+              className: k.channelName,
               children: (0, r.jsx)(d.X6q, {
                 variant: "heading-md/semibold",
                 color: "header-primary",
@@ -210,15 +210,15 @@ function U(e) {
           }), null != z.authorName && (0, r.jsx)(d.Text, {
             variant: "text-sm/medium",
             color: "text-muted",
-            className: L.descriptionFooterAuthorContainer,
+            className: k.descriptionFooterAuthorContainer,
             children: R.intl.format(R.t.voIDKS, {
               authorName: z.authorName,
               authorNameHook: () => null == z.authorId ? (0, r.jsx)(d.rz2, {
                 name: z.authorName,
                 color: ei,
                 roleColors: eo,
-                className: L.authorName
-              }) : (0, r.jsx)(v.Z, {
+                className: k.authorName
+              }) : (0, r.jsx)(y.Z, {
                 targetElementRef: H,
                 userId: z.authorId,
                 guildId: z.guildId,
@@ -232,7 +232,7 @@ function U(e) {
                   name: z.authorName,
                   color: ei,
                   roleColors: eo,
-                  className: L.authorName
+                  className: k.authorName
                 }))
               }, (0, o.Z)())
             })
@@ -248,7 +248,7 @@ function U(e) {
         }) : (0, r.jsx)(d.gtL, {
           pauseAnimation: ee,
           onClick: em,
-          className: a()(L.__invalid_ctaButtonContent, L.subscribeButton),
+          className: a()(k.__invalid_ctaButtonContent, k.subscribeButton),
           color: u.zx.Colors.CUSTOM,
           children: (0, r.jsx)(d.Text, {
             variant: "text-sm/medium",

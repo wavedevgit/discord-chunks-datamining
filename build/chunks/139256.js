@@ -4,7 +4,7 @@ n.d(t, {
   $w: () => D,
   Og: () => U,
   ZY: () => M,
-  sc: () => L,
+  sc: () => k,
   zs: () => F
 }), n(314940), n(953529);
 var r = n(255367),
@@ -19,15 +19,15 @@ var r = n(255367),
   p = n(124347),
   m = n(695346),
   f = n(186523),
-  _ = n(553826),
+  g = n(553826),
   h = n(506071),
-  g = n(203143),
+  _ = n(203143),
   b = n(79390),
   E = n(839963),
-  y = n(294608),
+  x = n(294608),
   C = n(65145),
-  x = n(981631),
-  v = n(388032),
+  v = n(981631),
+  y = n(388032),
   O = n(56228);
 
 function j(e) {
@@ -68,7 +68,7 @@ function S(e) {
     children: n
   } = e;
   return (0, r.jsx)("ul", {
-    "aria-label": v.intl.string(v.t.sJpqBQ),
+    "aria-label": y.intl.string(y.t.sJpqBQ),
     className: t,
     children: n
   })
@@ -80,7 +80,7 @@ function T(e) {
     children: n
   } = e;
   return (0, r.jsx)("div", {
-    "aria-label": v.intl.string(v.t.sJpqBQ),
+    "aria-label": y.intl.string(y.t.sJpqBQ),
     role: "group",
     className: t,
     children: n
@@ -111,7 +111,7 @@ function N(e) {
     return i
   }(i, ["ref"]);
   return (0, r.jsx)("div", I(j({
-    "aria-label": v.intl.string(v.t.sJpqBQ),
+    "aria-label": y.intl.string(y.t.sJpqBQ),
     ref: l
   }, a), {
     className: t,
@@ -222,8 +222,8 @@ function Z(e) {
   } = e, {
     channelId: u,
     messageId: d
-  } = (0, y.pE)(), p = (0, y.$B)(n.style), m = !0 === n.isSelected, f = i.useCallback(() => {
-    g.Z.handlePollAnswerTapped({
+  } = (0, x.pE)(), p = (0, x.$B)(n.style), m = !0 === n.isSelected, f = i.useCallback(() => {
+    _.Z.handlePollAnswerTapped({
       channelId: u,
       messageId: d,
       answerId: n.answerId
@@ -276,7 +276,7 @@ function R(e) {
   })
 }
 
-function L(e) {
+function k(e) {
   let {
     className: t,
     emoji: n
@@ -289,7 +289,7 @@ function L(e) {
   })
 }
 
-function k(e, t) {
+function L(e, t) {
   return null != e ? (0, r.jsx)("div", {
     className: e,
     children: t
@@ -305,18 +305,18 @@ function D(e) {
     fallback: a
   } = e, {
     message: o
-  } = (0, y.GF)();
+  } = (0, x.GF)();
   if (null != t.attachmentIds && t.attachmentIds.length > 0) {
     let e = o.attachments.find(e => {
       var n;
       return e.id === (null == (n = t.attachmentIds) ? void 0 : n[0])
     });
-    if (null != e) return k(n, (0, r.jsx)(R, {
+    if (null != e) return L(n, (0, r.jsx)(R, {
       className: i,
       attachment: e
     }))
   }
-  return null != t.emoji ? k(n, (0, r.jsx)(L, {
+  return null != t.emoji ? L(n, (0, r.jsx)(k, {
     className: l,
     emoji: t.emoji
   })) : void 0 !== a ? a : null
@@ -339,7 +339,7 @@ function M(e) {
     isVictor: !0
   }, () => ({
     color: d.Z.BUTTON_POSITIVE_BACKGROUND,
-    backgroundColor: (0, u.Lq)(x.Ilk.WHITE_500)
+    backgroundColor: (0, u.Lq)(v.Ilk.WHITE_500)
   })).with({
     isExpired: !0,
     isVictor: !1
@@ -347,8 +347,8 @@ function M(e) {
     color: d.Z.ICON_PRIMARY,
     backgroundColor: d.Z.BACKGROUND_MOD_FAINT
   })).otherwise(() => ({
-    color: (0, u.Lq)(x.Ilk.BRAND_500),
-    backgroundColor: (0, u.Lq)(x.Ilk.WHITE_500)
+    color: (0, u.Lq)(v.Ilk.BRAND_500),
+    backgroundColor: (0, u.Lq)(v.Ilk.WHITE_500)
   }));
   return (0, r.jsx)(s.owK, {
     size: "custom",
@@ -372,7 +372,7 @@ function U(e) {
     background: O.radioBackground,
     "aria-hidden": !0
   };
-  return t ? (0, r.jsx)(_.Z, I(j({}, l), {
+  return t ? (0, r.jsx)(g.Z, I(j({}, l), {
     foreground: O.radioForeground,
     className: i
   })) : (0, r.jsx)(f.Z, I(j({}, l), {
@@ -399,7 +399,7 @@ function F(e) {
       size: "custom",
       width: l,
       height: l,
-      color: (0, u.Lq)(x.Ilk.WHITE_500)
+      color: (0, u.Lq)(v.Ilk.WHITE_500)
     })
   })
 }

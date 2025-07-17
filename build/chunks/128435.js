@@ -1,6 +1,6 @@
 /** Chunk was on 61216 **/
 n.d(t, {
-  Z: () => v
+  Z: () => y
 }), n(314940);
 var r = n(255367),
   i = n(73800),
@@ -14,10 +14,10 @@ var r = n(255367),
   p = n(365206),
   m = n(294608),
   f = n(65145),
-  _ = n(920557),
+  g = n(920557),
   h = n(484953);
 
-function g(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -72,7 +72,7 @@ function E(e) {
   })
 }
 
-function y(e) {
+function x(e) {
   let {
     buttonLabel: t,
     secondaryLabel: n,
@@ -112,7 +112,7 @@ function C(e) {
   } = e, {
     actionButtonRef: p,
     manageFocusOnAction: m
-  } = (0, f.dv)(), _ = i.useCallback(async () => {
+  } = (0, f.dv)(), g = i.useCallback(async () => {
     (null == t ? void 0 : t.type) != null && (await d.Z.handlePollActionTapped({
       channelId: n,
       messageId: l,
@@ -121,7 +121,7 @@ function C(e) {
   }, [null == t ? void 0 : t.type, n, l, m]);
   return null == t ? null : "button" === t.presentation || "secondaryButton" === t.presentation ? (0, r.jsx)(c.zx, {
     buttonRef: p,
-    onClick: _,
+    onClick: g,
     disabled: !t.enabled,
     color: "secondaryButton" === t.presentation ? c.zx.Colors.CUSTOM : c.zx.Colors.BRAND,
     size: c.zx.Sizes.SMALL,
@@ -134,19 +134,19 @@ function C(e) {
     })
   }, t.presentation) : "textButton" === t.presentation ? (0, r.jsx)(E, {
     buttonRef: p,
-    onClick: _,
+    onClick: g,
     className: s,
     children: t.label
-  }) : (0, r.jsx)(y, {
+  }) : (0, r.jsx)(x, {
     buttonLabel: t.label,
     secondaryLabel: t.secondaryLabel,
-    handleClick: _,
+    handleClick: g,
     isInteractive: o,
     className: s
   })
 }
 
-function x(e) {
+function v(e) {
   let {
     message: t,
     poll: n,
@@ -162,7 +162,7 @@ function x(e) {
       myAvatarUrl: t.myAvatarUrl,
       canShowVoteCounts: t.canShowVoteCounts
     };
-    return (0, o.EQ)(t.layoutType).with(s.C.DEFAULT, () => (0, r.jsx)(_.K, g({}, n))).with(s.C.IMAGE_ONLY_ANSWERS, () => (0, r.jsx)(p.Z, g({}, n))).otherwise(() => null)
+    return (0, o.EQ)(t.layoutType).with(s.C.DEFAULT, () => (0, r.jsx)(g.K, _({}, n))).with(s.C.IMAGE_ONLY_ANSWERS, () => (0, r.jsx)(p.Z, _({}, n))).otherwise(() => null)
   }(0, n);
   return null == c ? null : (0, r.jsx)("div", {
     className: a()(h.container, l, i),
@@ -201,7 +201,7 @@ function x(e) {
   })
 }
 
-function v(e) {
+function y(e) {
   let {
     message: t,
     poll: n,
@@ -211,7 +211,7 @@ function v(e) {
     message: t,
     poll: n,
     children: (0, r.jsx)(f.Pk, {
-      children: (0, r.jsx)(x, {
+      children: (0, r.jsx)(v, {
         message: t,
         poll: n,
         className: i
