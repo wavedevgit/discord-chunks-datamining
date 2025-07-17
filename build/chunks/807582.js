@@ -9,8 +9,8 @@ var i = n(120356),
   a = n(481060),
   c = n(158638),
   l = n(267642),
-  d = n(981631),
-  s = n(388032),
+  s = n(981631),
+  d = n(388032),
   _ = n(721641);
 let f = e => {
   let t, n, i, {
@@ -24,16 +24,16 @@ let f = e => {
     v = p.features.has(f),
     h = (0, c.AR)(p.id, "GuildSettingsBoostPerks"),
     y = (0, l._p)(f);
-  return !v && f === d.oNc.VANITY_URL && h ? null : (v ? (null != y && (i = s.intl.string(s.t.hUgjyM)), t = (0, r.jsxs)(r.Fragment, {
+  return !v && f === s.oNc.VANITY_URL && h ? null : (v ? (null != y && (i = d.intl.string(d.t.hUgjyM)), t = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.$Eu, {
       color: a.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
       className: _.unlockedIcon
     }), (0, r.jsx)(a.X6q, {
       variant: "eyebrow",
       className: _.description,
-      children: s.intl.string(s.t["0O+87u"])
+      children: d.intl.string(d.t["0O+87u"])
     })]
-  })) : (null != y && (i = s.intl.string(s.t.L2wYYm)), t = (0, r.jsxs)(r.Fragment, {
+  })) : (null != y && (i = d.intl.string(d.t.L2wYYm)), t = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.$Eu, {
       color: "currentColor",
       className: _.icon

@@ -1,6 +1,6 @@
 /**
   Module ID: 63993
-  Original File Name: 57b8ee2801d19dfb
+  Original File Name: 5549e98e318bfd6f
 **/
 .modal__038c3 {
     width: 650px
@@ -112,10 +112,13 @@
 }
 
 .deleteButton__1df30 {
+    align-items: center;
     background-color: var(--background-base-lowest);
     color: var(--text-danger);
     cursor: pointer;
+    display: flex;
     height: 28px;
+    justify-content: center;
     opacity: 0;
     right: -6px;
     top: -6px;
@@ -150,12 +153,6 @@
 
 .deleteButton__1df30:focus {
     transition: none
-}
-
-.deleteButtonInner__1df30 {
-    align-items: center;
-    display: flex;
-    justify-content: center
 }
 
 .full-motion .deleteIcon__1df30 {
@@ -358,4 +355,4 @@
     margin: 0
 }
 
-/*# sourceMappingURL=57b8ee2801d19dfb.css.map*/
+/*# sourceMappingURL=5549e98e318bfd6f.css.map*/
