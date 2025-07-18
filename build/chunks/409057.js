@@ -292,7 +292,8 @@ function Z(e) {
       activity: i,
       user: t,
       onAction: J,
-      onClose: Y
+      onClose: Y,
+      application: G
     })
   });
   return (0, r.jsx)(f.Gt, {
