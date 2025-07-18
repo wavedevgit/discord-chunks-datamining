@@ -1,36 +1,66 @@
-/** Chunk was on 80437 **/
-e.exports = {
-  flipCardContainer: "flipCardContainer_f8e6bf",
-  noFlipCardContainer: "noFlipCardContainer_f8e6bf",
-  noFlipCardContainerCarousel: "noFlipCardContainerCarousel_f8e6bf",
-  forceShadow: "forceShadow_f8e6bf",
-  card: "card_f8e6bf",
-  partialFlipCard: "partialFlipCard_f8e6bf",
-  rotateCard: "rotateCard_f8e6bf",
-  ultraFlipCard: "ultraFlipCard_f8e6bf",
-  flipCard: "flipCard_f8e6bf",
-  clickable: "clickable_f8e6bf",
-  cover: "cover_f8e6bf",
-  flipped: "flipped_f8e6bf",
-  flipCardButtonContainer: "flipCardButtonContainer_f8e6bf",
-  reducedMotion: "reducedMotion_f8e6bf",
-  flipCardBack: "flipCardBack_f8e6bf",
-  flipCardFront: "flipCardFront_f8e6bf",
-  flipCardHidden: "flipCardHidden_f8e6bf",
-  cardComponent: "cardComponent_f8e6bf",
-  cardDescription: "cardDescription_f8e6bf",
-  cardImage: "cardImage_f8e6bf",
-  carouselCardImage: "carouselCardImage_f8e6bf",
-  carouselCardImageGrayscale: "carouselCardImageGrayscale_f8e6bf",
-  hideOverflow: "hideOverflow_f8e6bf",
-  pill: "pill_f8e6bf",
-  cardHeading: "cardHeading_f8e6bf",
-  cardSubtitle: "cardSubtitle_f8e6bf",
-  imageOverlayTextContainer: "imageOverlayTextContainer_f8e6bf",
-  imageOverlayText: "imageOverlayText_f8e6bf",
-  cardIllustrationNoHover: "cardIllustrationNoHover_f8e6bf",
-  above: "above_f8e6bf",
-  below: "below_f8e6bf",
-  topCover: "topCover_f8e6bf",
-  relative: "relative_f8e6bf"
+/** Chunk was on 18864 **/
+"use strict";
+var o = Object.assign || function(t) {
+    for (var e = 1; e < arguments.length; e++) {
+      var r = arguments[e];
+      for (var o in r) Object.prototype.hasOwnProperty.call(r, o) && (t[o] = r[o])
+    }
+    return t
+  },
+  n = f(r(459721)),
+  i = f(r(933982)),
+  a = f(r(639519)),
+  u = r(73800),
+  s = f(u),
+  l = f(r(361813));
+
+function f(t) {
+  return t && t.__esModule ? t : {
+    default: t
+  }
 }
+var h = {
+    bgColor: a.default.oneOfType([a.default.object, a.default.string]),
+    fgColor: a.default.oneOfType([a.default.object, a.default.string]),
+    level: a.default.string,
+    size: a.default.number,
+    value: a.default.string.isRequired
+  },
+  g = (0, u.forwardRef)(function(t, e) {
+    var r = t.bgColor,
+      a = t.fgColor,
+      u = t.level,
+      f = t.size,
+      h = t.value,
+      g = function(t, e) {
+        var r = {};
+        for (var o in t) !(e.indexOf(o) >= 0) && Object.prototype.hasOwnProperty.call(t, o) && (r[o] = t[o]);
+        return r
+      }(t, ["bgColor", "fgColor", "level", "size", "value"]),
+      c = new n.default(-1, i.default[u]);
+    c.addData(h), c.make();
+    var d = c.modules;
+    return s.default.createElement(l.default, o({}, g, {
+      bgColor: r,
+      bgD: d.map(function(t, e) {
+        return t.map(function(t, r) {
+          return t ? "" : "M " + r + " " + e + " l 1 0 0 1 -1 0 Z"
+        }).join(" ")
+      }).join(" "),
+      fgColor: a,
+      fgD: d.map(function(t, e) {
+        return t.map(function(t, r) {
+          return t ? "M " + r + " " + e + " l 1 0 0 1 -1 0 Z" : ""
+        }).join(" ")
+      }).join(" "),
+      ref: e,
+      size: f,
+      viewBoxSize: d.length
+    }))
+  });
+g.displayName = "QRCode", g.propTypes = h, g.defaultProps = {
+  bgColor: "#FFFFFF",
+  fgColor: "#000000",
+  level: "L",
+  size: 256
+}, e.default = g
