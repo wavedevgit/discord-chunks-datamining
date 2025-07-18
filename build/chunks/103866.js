@@ -16,11 +16,22 @@ function d(e) {
   let {
     controls: t,
     children: n
+  } = e;
+  return null == n && null == t ? null : (0, r.jsx)(f, {
+    controls: t,
+    children: n
+  })
+}
+
+function f(e) {
+  let {
+    controls: t,
+    children: n
   } = e, [a, d] = i.useState(!1), [f, _] = i.useState(!1), p = i.useRef(null), h = i.useRef(null), m = (0, s.throttle)(() => {
     var e;
     (null == p ? void 0 : p.current) != null && null != t && d((null == (e = p.current) ? void 0 : e.getDistanceFromTop()) > 12)
   }, 200);
-  return (i.useLayoutEffect(() => {
+  return i.useLayoutEffect(() => {
     var e, t;
     let n = new ResizeObserver(() => {
         var e, t;
@@ -31,7 +42,7 @@ function d(e) {
       }),
       r = null != (t = null == p || null == (e = p.current) ? void 0 : e.getScrollerNode()) ? t : null;
     return null != r && n.observe(r), (null == h ? void 0 : h.current) != null && n.observe(h.current), () => n.disconnect()
-  }, []), null == n && null == t) ? null : (0, r.jsxs)(l.y5, {
+  }, []), (0, r.jsxs)(l.y5, {
     children: [(0, r.jsx)("div", {
       className: o()(u.bodySpacerTop, {
         [u.bodySpacerTopBorder]: f && null == t

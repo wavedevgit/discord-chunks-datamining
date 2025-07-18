@@ -12,7 +12,7 @@ let i = {
   TEXTUAL: new Set([0, 1, 2, 3, 5, 10, 11, 12, 13]),
   GUILD_THREADS_ONLY: new Set([15, 16]),
   STICKERS: new Set([0, 1, 2, 3, 5, 10, 11, 12, 13, 15, 16]),
-  READABLE: new Set([0, 1, 2, 3, 5, 10, 11, 12, 13, 14, 15, 16, 17]),
+  READABLE: new Set([0, 1, 2, 3, 5, 10, 11, 12, 13, 14, 15, 16, 17, 18]),
   GUILD: new Set([0, 2, 4, 5, 6, 10, 11, 12, 13, 14, 15, 16]),
   GUILD_CHANNEL: new Set([0, 2, 4, 5, 6, 13, 14, 15, 16]),
   THREADS: new Set([10, 11, 12]),
@@ -46,5 +46,5 @@ let i = {
   CONTENT_ENTRY_EMBEDS: new Set([0, 1, 5]),
   POLLS: new Set([0, 1, 2, 3, 5, 10, 11, 12, 13]),
   ACTIVITY_LAUNCHABLE: new Set([0, 1, 2, 3]),
-  ALL: new Set([0, 1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14, 15, 16, 17])
+  ALL: new Set([0, 1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14, 15, 16, 17, 18])
 }
