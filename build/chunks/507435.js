@@ -36,7 +36,7 @@ function x() {
   })
 }
 
-function v(e) {
+function C(e) {
   let t, {
     hasNoVotes: n,
     victorEmoji: i
@@ -56,7 +56,7 @@ function v(e) {
   }) : null
 }
 
-function C(e) {
+function v(e) {
   let t;
   var {
     type: n
@@ -160,10 +160,10 @@ function y(e) {
     className: a()(E.container, {
       [E.containerWithImage]: c
     }, t),
-    children: [(0, r.jsx)(v, {
+    children: [(0, r.jsx)(C, {
       hasNoVotes: "NO_VOTES" === o.type,
       victorEmoji: n.victorEmoji
-    }), (0, r.jsx)(C, function(e) {
+    }), (0, r.jsx)(v, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -196,7 +196,7 @@ function O(e) {
     channel: l,
     compact: a,
     disableInteraction: u = !1
-  } = e, d = n.embeds[0], h = i.useMemo(() => (0, g.Z)(d), [d]), x = (0, o.aF)(null != (t = null == h ? void 0 : h.questionText) ? t : "", _.Dv), v = (0, p.ZP)(n), C = (0, m.l)({
+  } = e, d = n.embeds[0], h = i.useMemo(() => (0, g.Z)(d), [d]), x = (0, o.aF)(null != (t = null == h ? void 0 : h.questionText) ? t : "", _.Dv), C = (0, p.ZP)(n), v = (0, m.l)({
     user: n.author,
     channelId: l.id,
     guildId: l.guild_id,
@@ -217,8 +217,8 @@ function O(e) {
       timestamp: n.timestamp,
       compact: a,
       children: b.intl.format(b.t["VJcK4+"], {
-        username: v.nick,
-        usernameHook: C(v),
+        username: C.nick,
+        usernameHook: v(C),
         title: x,
         titleOnClick: j
       })

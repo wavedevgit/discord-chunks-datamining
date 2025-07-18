@@ -1,21 +1,21 @@
-/** Chunk was on 87427 **/
+/** Chunk was on 87048 **/
 "use strict";
 n.d(t, {
-  Z: () => E
+  Z: () => S
 }), n(388685);
 var r = n(255367),
   o = n(73800),
   i = n(120356),
   a = n.n(i),
-  s = n(913527),
-  l = n.n(s),
+  l = n(913527),
+  s = n.n(l),
   c = n(481060),
   d = n(446411),
   u = n(468846),
   p = n(600164),
   m = n(70097),
-  _ = n(299379),
-  b = n(454585),
+  b = n(299379),
+  _ = n(454585),
   g = n(524444),
   h = n(55406),
   f = n(981631),
@@ -31,7 +31,7 @@ function k(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let j = b.Z.reactParserFor(h.default.getDefaultRules(O)),
+let j = _.Z.reactParserFor(h.default.getDefaultRules(O)),
   C = {};
 class v extends o.PureComponent {
   track(e, t, n) {
@@ -43,7 +43,7 @@ class v extends o.PureComponent {
       children: [(0, r.jsx)(c.eee, {
         "aria-label": y.intl.string(y.t["/84uiI"]),
         className: O.socialLink,
-        href: (0, _.Z)(f.RK.TWITTER),
+        href: (0, b.Z)(f.RK.TWITTER),
         target: "blank",
         children: (0, r.jsx)(c.TAi, {
           size: "xs",
@@ -194,11 +194,11 @@ class v extends o.PureComponent {
           variant: "text-xs/normal",
           className: O.date,
           children: y.intl.format(y.t.Fb8xx8, {
-            date: null != e.date && "" !== e.date ? l()(e.date).toDate() : new Date
+            date: null != e.date && "" !== e.date ? s()(e.date).toDate() : new Date
           })
         })]
       })
     })
   }
 }
-let E = v
+let S = v

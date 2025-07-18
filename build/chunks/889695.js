@@ -20,8 +20,8 @@ var r = n(255367),
   b = n(709054),
   E = n(962086),
   x = n(160404),
-  v = n(225675),
-  C = n(981631),
+  C = n(225675),
+  v = n(981631),
   y = n(388032),
   O = n(318135);
 
@@ -44,7 +44,7 @@ function I(e) {
   } = (0, u.cj)([x.Z], () => ({
     impersonateType: x.Z.getImpersonateType(t),
     viewingRoles: x.Z.getViewingRoles(t)
-  })), T = I === v.z.SERVER_SHOP, N = (0, u.e7)([m.ZP], () => null != n ? m.ZP.getTrueMember(t, n.id) : null), [P, A] = (0, d.A7R)(null == S ? [] : b.default.keys(S)), w = i.useRef(l);
+  })), T = I === C.z.SERVER_SHOP, N = (0, u.e7)([m.ZP], () => null != n ? m.ZP.getTrueMember(t, n.id) : null), [P, A] = (0, d.A7R)(null == S ? [] : b.default.keys(S)), w = i.useRef(l);
   i.useEffect(() => {
     let e = {},
       t = w.current;
@@ -71,7 +71,7 @@ function I(e) {
   }), c.e$(_.I0({
     forceRoles: k,
     context: l
-  }), c.$e(C.Plq.MANAGE_GUILD, C.Plq.MANAGE_ROLES)) || (0, p.eM)(l, n)) ? (0, r.jsx)("div", {
+  }), c.$e(v.Plq.MANAGE_GUILD, v.Plq.MANAGE_ROLES)) || (0, p.eM)(l, n)) ? (0, r.jsx)("div", {
     className: O.container,
     children: (0, r.jsx)(d.hQY, {
       placeholder: y.intl.string(y.t.Sojqsr),

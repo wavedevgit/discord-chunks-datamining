@@ -36,11 +36,11 @@ let g = {},
     g[n] = r, h++
   },
   x = e => g[e],
-  v = e => {
+  C = e => {
     null != g[e] && delete g[e], h++
   };
 
-function C(e) {
+function v(e) {
   let {
     messageData: t,
     errorResponseBody: n
@@ -110,13 +110,13 @@ let j = new O(l.Z, {
     let r = (0, o.e5)(n);
     return !!(0, p.nY)(r) && !!(0, p.OP)(r) && (b[t] = r.id, !0)
   },
-  MESSAGE_SEND_FAILED_AUTOMOD: C,
-  MESSAGE_EDIT_FAILED_AUTOMOD: C,
+  MESSAGE_SEND_FAILED_AUTOMOD: v,
+  MESSAGE_EDIT_FAILED_AUTOMOD: v,
   REMOVE_AUTOMOD_MESSAGE_NOTICE: function(e) {
     let {
       messageId: t
     } = e;
-    return v(t), !0
+    return C(t), !0
   },
   MESSAGE_END_EDIT: function(e) {
     let {
@@ -125,7 +125,7 @@ let j = new O(l.Z, {
     if ((null == t ? void 0 : t.body) == null || t.body.code === m.evJ.AUTOMOD_MESSAGE_BLOCKED) return !1;
     let n = t.body.id;
     if (null == n) return !1;
-    v(n)
+    C(n)
   },
   AUTO_MODERATION_MENTION_RAID_DETECTION: function(e) {
     let {

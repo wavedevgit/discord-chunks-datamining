@@ -1,4 +1,4 @@
-/** Chunk was on 87427 **/
+/** Chunk was on 87048 **/
 "use strict";
 n.r(t), n.d(t, {
   baseRules: () => x,
@@ -8,15 +8,15 @@ var r = n(255367),
   o = n(73800),
   i = n(120356),
   a = n.n(i),
-  s = n(159635),
-  l = n.n(s),
+  l = n(159635),
+  s = n.n(l),
   c = n(481060),
   d = n(37234),
   u = n(230711),
   p = n(454585),
   m = n(703656),
-  _ = n(626135),
-  b = n(981631),
+  b = n(626135),
+  _ = n(981631),
   g = n(596401);
 
 function h(e) {
@@ -37,9 +37,9 @@ function h(e) {
   }
   return e
 }
-let f = l().defaultRules.link,
+let f = s().defaultRules.link,
   y = {
-    section: b.jXE.SETTINGS_CHANGELOG
+    section: _.jXE.SETTINGS_CHANGELOG
   },
   O = e => {
     let {
@@ -47,8 +47,8 @@ let f = l().defaultRules.link,
       children: n,
       className: r = null,
       styleSheet: i = {}
-    } = e, s = (0, c.xSt)(), l = parseInt(t, 10), d = isNaN(l) ? 1 : l;
-    return o.createElement("h".concat(s + d - 1), {
+    } = e, l = (0, c.xSt)(), s = parseInt(t, 10), d = isNaN(s) ? 1 : s;
+    return o.createElement("h".concat(l + d - 1), {
       className: a()(...null == r ? [] : r.split(" ").map(e => i[e]))
     }, n)
   },
@@ -58,22 +58,22 @@ let f = l().defaultRules.link,
       parse(e, t, n) {
         var r, o;
         let i, a = e[2],
-          s = a.startsWith("https://discordapp.com/nitro") || a.startsWith("https://discord.com/nitro"),
-          l = a.startsWith("https://discordapp.com/hypesquad") || a.startsWith("https://discord.com/hypesquad"),
+          l = a.startsWith("https://discordapp.com/nitro") || a.startsWith("https://discord.com/nitro"),
+          s = a.startsWith("https://discordapp.com/hypesquad") || a.startsWith("https://discord.com/hypesquad"),
           p = a.startsWith("/shop/fullscreen?source=1") || a.startsWith("/activities");
-        return i = s || l ? e => {
-          _.default.track(b.rMx.PREMIUM_PROMOTION_OPENED, {
+        return i = l || s ? e => {
+          b.default.track(_.rMx.PREMIUM_PROMOTION_OPENED, {
             location: y
-          }), s ? u.Z.open(b.oAB.PREMIUM) : l && u.Z.open(b.oAB.HYPESQUAD_ONLINE), n.changeLog.track(b.rMx.CHANGE_LOG_CTA_CLICKED, {
+          }), l ? u.Z.open(_.oAB.PREMIUM) : s && u.Z.open(_.oAB.HYPESQUAD_ONLINE), n.changeLog.track(_.rMx.CHANGE_LOG_CTA_CLICKED, {
             cta_type: "nitro"
           }), (0, c.Mr3)(g.Xd), e.preventDefault()
         } : p ? e => {
-          (0, m.uL)(a), n.changeLog.track(b.rMx.CHANGE_LOG_CTA_CLICKED, h({}, _.default.getCampaignParams(a))), (0, d.Ou)(), (0, c.Mr3)(g.Xd), e.preventDefault()
+          (0, m.uL)(a), n.changeLog.track(_.rMx.CHANGE_LOG_CTA_CLICKED, h({}, b.default.getCampaignParams(a))), (0, d.Ou)(), (0, c.Mr3)(g.Xd), e.preventDefault()
         } : () => {
-          n && "function" == typeof n.onLinkClick && n.onLinkClick(a), n.changeLog.track(b.rMx.CHANGE_LOG_CTA_CLICKED, h({
+          n && "function" == typeof n.onLinkClick && n.onLinkClick(a), n.changeLog.track(_.rMx.CHANGE_LOG_CTA_CLICKED, h({
             target: a,
             cta_type: "inline_link"
-          }, _.default.getCampaignParams(a)))
+          }, b.default.getCampaignParams(a)))
         }, r = h({}, f.parse(e, t, n)), o = o = {
           callToAction: i
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
@@ -88,7 +88,7 @@ let f = l().defaultRules.link,
         }), r
       },
       react: (e, t, n) => (0, r.jsx)(c.eee, {
-        href: l().sanitizeUrl(e.target),
+        href: s().sanitizeUrl(e.target),
         title: e.title,
         onClick: e.callToAction,
         target: "_blank",

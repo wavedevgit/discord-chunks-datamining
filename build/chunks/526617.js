@@ -197,7 +197,7 @@ function eu(e) {
         children: (0, r.jsxs)("div", {
           className: q.sectionHeaderContent,
           children: [u(), (0, r.jsx)(c.X6q, {
-            variant: "eyebrow",
+            variant: "text-sm/semibold",
             color: "none",
             className: q.sectionTitle,
             children: d()

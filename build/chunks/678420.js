@@ -1,4 +1,4 @@
-/** Chunk was on 87427 **/
+/** Chunk was on 87048 **/
 "use strict";
 n.d(t, {
   default: () => h
@@ -7,15 +7,15 @@ var r = n(255367),
   o = n(73800),
   i = n(481060),
   a = n(661111),
-  s = n(766411),
-  l = n(626135),
+  l = n(766411),
+  s = n(626135),
   c = n(388080),
   d = n(981631),
   u = n(596401),
   p = n(388032),
   m = n(104313);
 
-function _(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -24,14 +24,14 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
@@ -45,7 +45,7 @@ class g extends o.PureComponent {
   }
   render() {
     var e, t;
-    return (0, r.jsx)(c.Z, (e = b({}, this.props), t = t = {
+    return (0, r.jsx)(c.Z, (e = _({}, this.props), t = t = {
       onClose: this.close,
       onScroll: this.handleScroll,
       track: this.track
@@ -62,16 +62,16 @@ class g extends o.PureComponent {
   }
   constructor(...e) {
     var t;
-    super(...e), t = this, _(this, "maxScrolledPercentage", 0), _(this, "mountedAt", 0), _(this, "close", () => {
+    super(...e), t = this, b(this, "maxScrolledPercentage", 0), b(this, "mountedAt", 0), b(this, "close", () => {
       (0, i.Mr3)(u.Xd)
-    }), _(this, "handleScroll", e => {
+    }), b(this, "handleScroll", e => {
       let {
         offsetHeight: t,
         scrollHeight: n,
         scrollTop: r
       } = e.getScrollerState();
       this.maxScrolledPercentage = Math.min(Math.max(this.maxScrolledPercentage, r / (n - t)), 1)
-    }), _(this, "track", function(e) {
+    }), b(this, "track", function(e) {
       let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
         r = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
         {
@@ -81,13 +81,13 @@ class g extends o.PureComponent {
           date: i,
           revision: a
         } = o,
-        s = b({
+        l = _({
           change_log_id: "".concat(i, ":").concat(a)
         }, n);
-      r || (s = b({
+      r || (l = _({
         seconds_open: Math.round((Date.now() - t.mountedAt) / 1e3),
         max_scrolled_percentage: 100 * parseInt(t.maxScrolledPercentage.toPrecision(4), 10)
-      }, s)), l.default.track(e, s)
+      }, l)), s.default.track(e, l)
     })
   }
 }
@@ -96,11 +96,11 @@ function h(e) {
   let {
     changelog: t,
     loaded: n,
-    clientTooOld: l
-  } = (0, s.E)();
+    clientTooOld: s
+  } = (0, l.E)();
   if (o.useEffect(() => {
       if (n && null != t) return () => a.Z.markChangelogAsSeen(t.id, t.date)
-    }, [n, t]), l) return (0, r.jsx)(i.Y0X, {
+    }, [n, t]), s) return (0, r.jsx)(i.Y0X, {
     transitionState: e.transitionState,
     parentComponent: "ChangeLog",
     children: (0, r.jsx)("div", {

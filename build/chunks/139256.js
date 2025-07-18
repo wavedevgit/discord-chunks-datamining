@@ -25,8 +25,8 @@ var r = n(255367),
   b = n(79390),
   E = n(839963),
   x = n(294608),
-  v = n(65145),
-  C = n(981631),
+  C = n(65145),
+  v = n(981631),
   y = n(388032),
   O = n(56228);
 
@@ -128,7 +128,7 @@ function P(e) {
     children: o
   } = e, {
     pollAnswerRef: c
-  } = (0, v.dv)();
+  } = (0, C.dv)();
   return (0, r.jsx)(s.P3F, {
     role: "checkbox",
     className: a()(t, O.enabled),
@@ -149,7 +149,7 @@ function A(e) {
     isFirstAnswer: c
   } = e, {
     pollAnswerRef: u
-  } = (0, v.dv)();
+  } = (0, C.dv)();
   return (0, r.jsx)(s.P3F, {
     role: "radio",
     className: a()(t, O.enabled),
@@ -339,7 +339,7 @@ function M(e) {
     isVictor: !0
   }, () => ({
     color: d.Z.BUTTON_POSITIVE_BACKGROUND,
-    backgroundColor: (0, u.Lq)(C.Ilk.WHITE_500)
+    backgroundColor: (0, u.Lq)(v.Ilk.WHITE_500)
   })).with({
     isExpired: !0,
     isVictor: !1
@@ -347,8 +347,8 @@ function M(e) {
     color: d.Z.ICON_PRIMARY,
     backgroundColor: d.Z.BACKGROUND_MOD_FAINT
   })).otherwise(() => ({
-    color: (0, u.Lq)(C.Ilk.BRAND_500),
-    backgroundColor: (0, u.Lq)(C.Ilk.WHITE_500)
+    color: (0, u.Lq)(v.Ilk.BRAND_500),
+    backgroundColor: (0, u.Lq)(v.Ilk.WHITE_500)
   }));
   return (0, r.jsx)(s.owK, {
     size: "custom",
@@ -399,7 +399,7 @@ function F(e) {
       size: "custom",
       width: l,
       height: l,
-      color: (0, u.Lq)(C.Ilk.WHITE_500)
+      color: (0, u.Lq)(v.Ilk.WHITE_500)
     })
   })
 }

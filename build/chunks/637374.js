@@ -20,8 +20,8 @@ var r = n(255367),
   b = n(600164),
   E = n(479446),
   x = n(930114),
-  v = n(981632),
-  C = n(108989),
+  C = n(981632),
+  v = n(108989),
   y = n(703656),
   O = n(314897),
   j = n(82142),
@@ -385,12 +385,12 @@ class W extends i.Component {
         });
       return (0, r.jsxs)("div", {
         className: l,
-        children: [!t && M.eZ.includes(e.giftStyle) && (0, r.jsx)(C.Z, {
+        children: [!t && M.eZ.includes(e.giftStyle) && (0, r.jsx)(v.Z, {
           className: F.snow,
           wind: 5
         }), i && (0, r.jsx)(P.Z, {
           className: F.headerIcon
-        }), null != e.giftStyle && (0, r.jsx)(v.Z, {
+        }), null != e.giftStyle && (0, r.jsx)(C.Z, {
           defaultAnimationState: e.redeemed ? E.SR.LOOP : E.SR.IDLE,
           giftStyle: e.giftStyle,
           className: o

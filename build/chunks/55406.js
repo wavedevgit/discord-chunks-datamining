@@ -1,15 +1,15 @@
-/** Chunk was on 87427 **/
+/** Chunk was on 87048 **/
 "use strict";
 let r;
 n.r(t), n.d(t, {
-  default: () => E,
-  renderChangelogMessageMarkup: () => S
+  default: () => S,
+  renderChangelogMessageMarkup: () => E
 }), n(35282), n(704826);
 var o = n(159635),
   i = n.n(o),
   a = n(800927),
-  s = n(945884),
-  l = n(594199),
+  l = n(945884),
+  s = n(594199),
   c = n(454585);
 
 function d(e) {
@@ -45,8 +45,8 @@ function u(e, t) {
 }
 let p = i().defaultRules.lheading,
   m = i().defaultRules.heading,
-  _ = i().defaultRules.link,
-  b = i().defaultRules.image,
+  b = i().defaultRules.link,
+  _ = i().defaultRules.image,
   g = i().defaultRules.list,
   h = i().defaultRules.blockQuote,
   f = i().defaultRules.paragraph,
@@ -68,11 +68,11 @@ let x = e => {
     }
   },
   k = e => u(d({}, r.baseRules), {
-    image: d({}, b, "function" == typeof r.customRules.image ? r.customRules.image(e) : r.customRules.image),
-    link: d({}, _, "function" == typeof r.customRules.link ? r.customRules.link(e) : r.customRules.link),
+    image: d({}, _, "function" == typeof r.customRules.image ? r.customRules.image(e) : r.customRules.image),
+    link: d({}, b, "function" == typeof r.customRules.link ? r.customRules.link(e) : r.customRules.link),
     list: d({}, g, "function" == typeof r.customRules.list ? r.customRules.list(e) : r.customRules.list),
     interpolation: {
-      order: l.ZP.order,
+      order: s.ZP.order,
       match: e => O.exec(e),
       parse(e, t, n) {
         let r = n.interpolations[e[1]];
@@ -104,21 +104,21 @@ let x = e => {
   }),
   C = e => u(d({}, k(e)), {
     newline: d({}, i().defaultRules.newline),
-    text: l.ZP,
+    text: s.ZP,
     list: a.Z,
-    subtext: s.Z
+    subtext: l.Z
   });
 
 function v(e) {
   return d({}, k(e))
 }
-let E = {
+let S = {
   getDefaultRules: v,
   getSpecialRules: e => d({}, k(e), j(e)),
   getMessageRules: e => d({}, C(e))
 };
 
-function S(e, t, n) {
+function E(e, t, n) {
   return {
     hasSpoilerEmbeds: !1,
     content: c.Z.reactParserFor(v(t))(e.content, !1, null != n ? {
