@@ -1,4 +1,4 @@
-/** Chunk was on 91372 **/
+/** Chunk was on 9268 **/
 e.exports = {
   animationObj: "animationObj__6b4ea"
 }

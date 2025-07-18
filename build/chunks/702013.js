@@ -1,4 +1,4 @@
-/** Chunk was on 91372 **/
+/** Chunk was on 9268 **/
 e.exports = {
   flyingWumpusContainer: "flyingWumpusContainer__12720",
   flyingWumpusAsset: "flyingWumpusAsset__12720",

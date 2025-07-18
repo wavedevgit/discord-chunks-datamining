@@ -1,24 +1,24 @@
-/** Chunk was on 91372 **/
+/** Chunk was on 58120 **/
 n.d(t, {
-  Z: () => O,
-  c: () => _
+  Z: () => v,
+  c: () => y
 }), n(388685);
 var i, r = n(255367),
   s = n(73800),
-  a = n(120356),
-  l = n.n(a),
-  o = n(879443),
-  c = n.n(o),
+  o = n(120356),
+  a = n.n(o),
+  l = n(879443),
+  c = n.n(l),
   d = n(392711),
   u = n.n(d),
-  m = n(755721),
+  h = n(755721),
   p = n(481060),
-  g = n(600164),
-  h = n(13140),
-  f = n(388032),
-  b = n(556707);
+  b = n(600164),
+  f = n(13140),
+  g = n(388032),
+  m = n(556707);
 
-function x(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -26,12 +26,12 @@ function x(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-var _ = ((i = {}).DEFAULT = "DEFAULT", i.RECORDING = "RECORDING", i);
-let j = {
-  DEFAULT: b.__invalid_default,
-  RECORDING: b.recording
+var y = ((i = {}).DEFAULT = "DEFAULT", i.RECORDING = "RECORDING", i);
+let E = {
+  DEFAULT: m.__invalid_default,
+  RECORDING: m.recording
 };
-class E extends s.PureComponent {
+class D extends s.PureComponent {
   componentWillUnmount() {
     null != this._unregisterNativeRecorder && this._unregisterNativeRecorder()
   }
@@ -57,9 +57,9 @@ class E extends s.PureComponent {
         value: n,
         disabled: i
       } = this.props,
-      s = (0, h.BB)(n, !0);
-    e = "RECORDING" === t ? f.intl.string(f.t.bmOri4) : 0 === n.length ? f.intl.string(f.t.co3wt7) : f.intl.string(f.t.idFMvL);
-    let a = "DEFAULT" === t && n.length > 0;
+      s = (0, f.BB)(n, !0);
+    e = "RECORDING" === t ? g.intl.string(g.t.bmOri4) : 0 === n.length ? g.intl.string(g.t.co3wt7) : g.intl.string(g.t.idFMvL);
+    let o = "DEFAULT" === t && n.length > 0;
     return (0, r.jsx)(p.tEY, {
       focusTarget: this._inputRef,
       ringTarget: this._containerRef,
@@ -67,42 +67,42 @@ class E extends s.PureComponent {
         onClick: this.handleClick,
         onMouseDown: this.handleMouseDown,
         ref: this._containerRef,
-        className: l()(b.recorderContainer, j[t], {
-          [b.hasValue]: a,
-          [b.containerDisabled]: i
+        className: a()(m.recorderContainer, E[t], {
+          [m.hasValue]: o,
+          [m.containerDisabled]: i
         }),
-        children: (0, r.jsxs)(g.Z, {
-          className: b.recorderLayout,
-          children: [(0, r.jsx)(g.Z.Child, {
-            className: b.keybindInput,
+        children: (0, r.jsxs)(b.Z, {
+          className: m.recorderLayout,
+          children: [(0, r.jsx)(b.Z.Child, {
+            className: m.keybindInput,
             children: (0, r.jsx)("input", {
               id: this._inputId,
-              placeholder: f.intl.string(f.t.nWRdnp),
+              placeholder: g.intl.string(g.t.nWRdnp),
               type: "text",
               ref: this.setInputRef,
               readOnly: !0,
               value: s,
               disabled: "RECORDING" !== this.props.mode || i
             })
-          }), (0, r.jsx)(g.Z, {
+          }), (0, r.jsx)(b.Z, {
             shrink: 1,
             grow: 0,
             style: {
               margin: 0
             },
-            children: (0, r.jsxs)(m.zx, {
-              className: b.addKeybindButton,
+            children: (0, r.jsxs)(h.zx, {
+              className: m.addKeybindButton,
               disabled: i,
               onClick: e => {
                 e.stopPropagation(), e.preventDefault(), this.handleClick(e)
               },
-              size: m.zx.Sizes.MIN,
-              color: m.Tt.PRIMARY,
+              size: h.zx.Sizes.MIN,
+              color: h.Tt.PRIMARY,
               children: [(0, r.jsx)("span", {
-                className: b.text,
+                className: m.text,
                 children: e
               }), (0, r.jsx)("span", {
-                className: b.editIcon
+                className: m.editIcon
               })]
             })
           })]
@@ -111,7 +111,7 @@ class E extends s.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), x(this, "_inputId", u().uniqueId("key-recorder-")), x(this, "_unregisterNativeRecorder", null), x(this, "_mousedownMode", null), x(this, "_inputRef", s.createRef()), x(this, "_containerRef", s.createRef()), x(this, "setInputRef", e => {
+    super(...e), _(this, "_inputId", u().uniqueId("key-recorder-")), _(this, "_unregisterNativeRecorder", null), _(this, "_mousedownMode", null), _(this, "_inputRef", s.createRef()), _(this, "_containerRef", s.createRef()), _(this, "setInputRef", e => {
       var t;
       let {
         registerNativeRecorder: n,
@@ -123,16 +123,16 @@ class E extends s.PureComponent {
         } catch (e) {
           this._unregisterNativeRecorder = null
         } else null != i && (new(c())(e).handleKey = i)
-    }), x(this, "handleClick", e => {
+    }), _(this, "handleClick", e => {
       e.stopPropagation(), e.preventDefault();
       let {
         onClick: t,
         disableOnClickWhileRecording: n
       } = this.props;
       n && "RECORDING" === this._mousedownMode || t()
-    }), x(this, "handleMouseDown", () => {
+    }), _(this, "handleMouseDown", () => {
       this._mousedownMode = this.props.mode
     })
   }
 }
-let O = E
+let v = D

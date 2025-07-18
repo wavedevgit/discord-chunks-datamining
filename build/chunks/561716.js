@@ -1,11 +1,11 @@
-/** Chunk was on 91372 **/
-n.d(t, {
-  $: () => s
+/** Chunk was on 91081 **/
+n.d(e, {
+  $: () => c
 });
-var i = n(51596),
-  r = n(819640);
-let s = {
+var l = n(51596),
+  i = n(819640);
+let c = {
   binds: ["mod+k", "mod+t"],
   comboKeysBindGlobal: !0,
-  action: () => (r.Z.hasLayers() || (0, i.$Z)(), !1)
+  action: () => (i.Z.hasLayers() || (0, l.$Z)(), !1)
 }

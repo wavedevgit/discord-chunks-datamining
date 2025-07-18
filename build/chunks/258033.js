@@ -1,4 +1,4 @@
-/** Chunk was on 91372 **/
+/** Chunk was on 9268 **/
 n.d(t, {
   Z: () => v
 }), n(388685);
@@ -69,16 +69,17 @@ let E = e => {
       onRest: () => E(e => -1 * e)
     } : {
       blur: 0
-    }), [C, v] = (0, r.useState)(0), S = (0, l.q_F)({
-      xOffset: C,
+    }), C = (0, r.useMemo)(() => Math.round(750 + (200 * Math.random() - 100)), []), [v, S] = (0, r.useState)(0), [T, N] = (0, r.useState)(1), I = (0, l.q_F)({
+      xOffset: v,
       config: {
-        tension: 500,
-        friction: 20
+        tension: 10,
+        friction: 10,
+        duration: C
       }
     });
     return ((0, o.Z)(() => {
-      v((Math.random() - .5) * 4)
-    }, 250), p) ? g : (0, i.jsx)(s.animated.div, {
+      S(T * (.5 * Math.random() * 5 + 2.5)), N(e => -1 * e)
+    }, C), p) ? g : (0, i.jsx)(s.animated.div, {
       style: {
         transform: null == (t = h.y) ? void 0 : t.to(e => {
           if (null == d) return "translateY(0px)";
@@ -90,7 +91,7 @@ let E = e => {
           }
           return "translateY(".concat(t + n, "px)")
         }),
-        translateX: m ? S.xOffset.to(e => "".concat(e, "px")) : 0,
+        translateX: m ? I.xOffset.to(e => "".concat(e, "px")) : 0,
         scale: _.scale,
         filter: null == (n = O.blur) ? void 0 : n.to(e => "blur(".concat(e, "px)")),
         opacity: null != u && u.changeOpacity ? u.containerVisibilityPercentage : 1
@@ -110,16 +111,16 @@ let E = e => {
           blurAnimationData: {
             startBlurRadius: 10,
             endBlurRadius: 0,
-            duration: 1500
+            duration: 3e3
           },
           scaleAnimationData: {
             startScale: .85,
             endScale: 1,
-            duration: 1500
+            duration: 3e3
           },
           yAxisAnimationData: {
             range: 15,
-            duration: 3e3,
+            duration: 6e3,
             path: "cosine"
           },
           parallaxAnimationData: {
@@ -140,7 +141,7 @@ let E = e => {
         children: (0, i.jsx)(E, {
           yAxisAnimationData: {
             range: 15,
-            duration: 3e3,
+            duration: 6e3,
             path: "sine"
           },
           parallaxAnimationData: {
@@ -161,7 +162,7 @@ let E = e => {
         children: (0, i.jsx)(E, {
           yAxisAnimationData: {
             range: 15,
-            duration: 3e3,
+            duration: 6e3,
             path: "sine"
           },
           parallaxAnimationData: {
@@ -183,16 +184,16 @@ let E = e => {
           blurAnimationData: {
             startBlurRadius: 5,
             endBlurRadius: 0,
-            duration: 2e3
+            duration: 4e3
           },
           scaleAnimationData: {
             startScale: .85,
             endScale: 1,
-            duration: 2e3
+            duration: 4e3
           },
           yAxisAnimationData: {
             range: 15,
-            duration: 3e3,
+            duration: 6e3,
             path: "sine"
           },
           parallaxAnimationData: {
@@ -214,16 +215,16 @@ let E = e => {
           blurAnimationData: {
             startBlurRadius: 0,
             endBlurRadius: 2,
-            duration: 1500
+            duration: 3e3
           },
           scaleAnimationData: {
             startScale: 1,
             endScale: .85,
-            duration: 1500
+            duration: 3e3
           },
           yAxisAnimationData: {
             range: 20,
-            duration: 2e3,
+            duration: 4e3,
             path: "cosine"
           },
           parallaxAnimationData: {
@@ -261,11 +262,11 @@ let E = e => {
         scaleAnimationData: {
           startScale: .9,
           endScale: 1,
-          duration: 1500
+          duration: 3e3
         },
         yAxisAnimationData: {
           range: 20,
-          duration: 2e3,
+          duration: 4e3,
           path: "sine"
         },
         parallaxAnimationData: {
