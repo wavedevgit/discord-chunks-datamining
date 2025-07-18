@@ -125,7 +125,7 @@ function R(e) {
           null != e && (0, O.HP)(e)
         }
       }), (0, i.jsx)(g.Z, {
-        previewTitle: I.intl.formatToPlainString(I.t.Tc0slJ, {
+        profilePreviewTitle: I.intl.formatToPlainString(I.t.Tc0slJ, {
           guildName: null == t ? void 0 : t.name
         }),
         profilePreview: (0, i.jsx)(h.Z, A(y({}, L), {

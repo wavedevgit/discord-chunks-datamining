@@ -37,7 +37,7 @@ function p(e, t) {
         category_position: null == p ? void 0 : p.categoryPosition
       })
     }, [null == p ? void 0 : p.sessionId, null == p ? void 0 : p.categoryPosition, null == p ? void 0 : p.pageCategory, null == p ? void 0 : p.pageSection, null == p ? void 0 : p.tilePosition, f, t, v, e, r]),
-    y = n.useCallback(e => {
+    g = n.useCallback(e => {
       e ? null === m.current && (m.current = setTimeout(() => {
         h(), m.current = null
       }, 1e3)) : null !== m.current && (clearTimeout(m.current), m.current = null)
@@ -45,6 +45,6 @@ function p(e, t) {
   return n.useEffect(() => () => {
     null !== m.current && (clearTimeout(m.current), m.current = null)
   }, []), {
-    handleCardVisibilityChange: y
+    handleCardVisibilityChange: g
   }
 }

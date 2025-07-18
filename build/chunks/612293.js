@@ -1,7 +1,7 @@
 /** Chunk was on 55864 **/
 "use strict";
 r.d(t, {
-  default: () => g
+  default: () => y
 }), r(388685);
 var n = r(255367),
   i = r(73800),
@@ -18,9 +18,9 @@ var n = r(255367),
   f = r(576386),
   m = r(981631),
   h = r(388032),
-  y = r(637635);
+  g = r(637635);
 
-function g(e) {
+function y(e) {
   let {
     transitionState: t,
     analyticsLocations: r,
@@ -30,9 +30,9 @@ function g(e) {
   } = (0, s.ZP)(r, o.Z.EDIT_NAMEPLATE_MODAL), {
     available: f,
     purchased: h,
-    isFetchingCategories: g,
+    isFetchingCategories: y,
     isFetchingPurchases: j
-  } = (0, u.yV)("NameplateModal"), _ = g || j && 0 === h.length;
+  } = (0, u.yV)("NameplateModal"), _ = y || j && 0 === h.length;
   return (0, i.useEffect)(() => {
     v.default.track(m.rMx.OPEN_MODAL, {
       type: m.jXE.NAMEPLATE_CUSTOMIZATION,
@@ -45,7 +45,7 @@ function g(e) {
       size: _ ? a.CgR.DYNAMIC : a.CgR.MEDIUM,
       parentComponent: "NameplateModal",
       children: _ ? (0, n.jsx)(a.$jN, {
-        className: y.spinner,
+        className: g.spinner,
         type: a.$jN.Type.SPINNING_CIRCLE
       }) : (0, n.jsx)(O, {
         user: d,
@@ -70,7 +70,7 @@ function O(e) {
     return e.skuId === (null == t || null == (n = t.collectibles) || null == (r = n.nameplate) ? void 0 : r.skuId)
   }), {
     pendingNameplate: v
-  } = (0, d._A)(), [m, g] = (0, i.useState)(() => void 0 !== v ? v : null != p ? p : null), [O, j] = (0, i.useState)(null != m), _ = (0, i.useCallback)(e => {
+  } = (0, d._A)(), [m, y] = (0, i.useState)(() => void 0 !== v ? v : null != p ? p : null), [O, j] = (0, i.useState)(null != m), _ = (0, i.useCallback)(e => {
     u(), (0, c.mK)({
       analyticsLocations: s,
       analyticsSource: o.Z.EDIT_NAMEPLATE_MODAL,
@@ -80,21 +80,21 @@ function O(e) {
   return (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsxs)(a.xBx, {
       separator: !1,
-      className: y.header,
+      className: g.header,
       children: [(0, n.jsx)(a.X6q, {
         variant: "heading-lg/semibold",
         children: h.intl.string(h.t.BwdeMz)
       }), (0, n.jsx)(a.olH, {
-        className: y.closeButton,
+        className: g.closeButton,
         onClick: u
       })]
     }), (0, n.jsxs)(a.hzk, {
-      className: y.content,
+      className: g.content,
       scrollbarType: "none",
       children: [(0, n.jsx)(f.Z, {
         selected: m,
         onSelect: (e, t) => {
-          g(e), j(null != t && t)
+          y(e), j(null != t && t)
         },
         onOpenShop: _,
         available: r,

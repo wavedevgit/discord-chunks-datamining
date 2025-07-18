@@ -1,6 +1,6 @@
 /**
   Module ID: 9268
-  Original File Name: ba0514a88f20b63b
+  Original File Name: 1342de8856b15182
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -12087,12 +12087,6 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
     max-width: 348px
 }
 
-@media (max-width:485px) {
-    .preview__44061 {
-        margin-left: 0
-    }
-}
-
 .topSpacing__5273b {
     margin-top: 24px
 }
@@ -12743,6 +12737,10 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
     display: flex;
     flex-direction: row;
     gap: var(--space-4)
+}
+
+.nameplatePreview__39749 {
+    background: var(--background-mod-normal)
 }
 
 .divider_d6f9e9 {
@@ -19931,4 +19929,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=ba0514a88f20b63b.css.map*/
+/*# sourceMappingURL=1342de8856b15182.css.map*/
