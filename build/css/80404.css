@@ -1,6 +1,6 @@
 /**
   Module ID: 80404
-  Original File Name: 6b666c0253149770
+  Original File Name: 77b51cdb50b0c660
 **/
 .container_db5301 {
     border: 1px solid var(--border-subtle);
@@ -75,27 +75,8 @@
     width: 4px
 }
 
-.modalHeader_da1bc3 {
-    padding-bottom: 8px
-}
-
-.subtitle_da1bc3 {
-    margin-bottom: 16px
-}
-
 .buttonRow_da1bc3 {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
     margin: 16px 0
 }
 
-.removeButton_da1bc3 {
-    margin-left: 16px
-}
-
-.button_da1bc3 {
-    margin-left: 8px
-}
-
-/*# sourceMappingURL=6b666c0253149770.css.map*/
+/*# sourceMappingURL=77b51cdb50b0c660.css.map*/

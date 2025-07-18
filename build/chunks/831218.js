@@ -27,7 +27,7 @@ var r, i = n(255367),
   S = n(355298),
   I = n(869404),
   P = n(333984),
-  N = n(210887),
+  N = n(984802),
   w = n(592125),
   Z = n(158776),
   T = n(55589),
@@ -431,16 +431,14 @@ let B = e => {
   (0, E.z)(j.R);
   let {
     analyticsLocations: y
-  } = (0, b.ZP)(g.Z.CONTACTS_LIST), {
-    theme: v,
+  } = (0, b.ZP)(g.Z.CONTACTS_LIST), v = (0, N.Ll)(), {
     keyboardModeEnabled: x,
     version: Z
-  } = (0, u.cj)([f.Z, N.Z, w.Z], () => ({
-    theme: N.Z.darkSidebar ? A.BRd.DARK : r,
+  } = (0, u.cj)([f.Z, w.Z], () => ({
     keyboardModeEnabled: f.Z.keyboardModeEnabled,
     version: null != n ? "".concat(n, ":").concat(w.Z.getPrivateChannelsVersion()) : w.Z.getPrivateChannelsVersion()
-  })), R = l.useRef(null), D = null != d ? d : R, L = l.useCallback(e => {
-    let t = D.current,
+  })), A = l.useRef(null), R = null != d ? d : A, D = l.useCallback(e => {
+    let t = R.current,
       n = document.querySelector(e);
     null != t && null != n && t.scrollIntoViewNode({
       node: n,
@@ -453,38 +451,38 @@ let B = e => {
         })
       }
     })
-  }, [D]), U = l.useCallback(() => new Promise(e => {
-    let t = D.current;
+  }, [R]), L = l.useCallback(() => new Promise(e => {
+    let t = R.current;
     if (null == t) return e();
     t.scrollToTop({
       callback: () => requestAnimationFrame(() => e())
     })
-  }), [D]), B = l.useCallback(() => new Promise(e => {
-    let t = D.current;
+  }), [R]), U = l.useCallback(() => new Promise(e => {
+    let t = R.current;
     if (null == t) return e();
     t.scrollToBottom({
       callback() {
         requestAnimationFrame(() => setTimeout(e, 100))
       }
     })
-  }), [D]), V = (0, C.Dt)(), F = (0, c.ZP)({
-    id: "private-channels-".concat(V),
+  }), [R]), B = (0, C.Dt)(), V = (0, c.ZP)({
+    id: "private-channels-".concat(B),
     isEnabled: x,
-    scrollToStart: U,
-    scrollToEnd: B,
+    scrollToStart: L,
+    scrollToEnd: U,
     defaultFocused: (p + +!!s).toString(),
-    setFocus: L
+    setFocus: D
   });
   return (0, i.jsx)(b.Gt, {
     value: y,
     children: (0, i.jsx)(a.bG, {
-      navigator: F,
+      navigator: V,
       children: (0, i.jsx)(G, k(M({}, e), {
         density: t,
         channels: _,
         privateChannelIds: O,
-        listRef: D,
-        theme: v,
+        listRef: R,
+        theme: null != v ? v : r,
         version: Z
       }))
     })

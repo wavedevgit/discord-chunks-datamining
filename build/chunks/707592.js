@@ -1,12 +1,12 @@
 /** Chunk was on 95140 **/
 t.d(n, {
   Gi: () => c,
-  YJ: () => d,
-  zY: () => u
+  YJ: () => u,
+  zY: () => d
 });
-var i = t(255367);
+var l = t(255367);
 t(73800);
-var l = t(481060),
+var i = t(481060),
   a = t(489813),
   o = t(592286),
   r = t(388032),
@@ -21,7 +21,7 @@ function c(e) {
     autofocus: s,
     className: c
   } = e;
-  return (0, i.jsx)(l.oil, {
+  return (0, l.jsx)(i.oil, {
     inputClassName: c,
     maxLength: o.tL,
     value: null != n ? n : "",
@@ -32,13 +32,13 @@ function c(e) {
   })
 }
 
-function d(e) {
+function u(e) {
   let {
     formField: n
   } = e;
-  return (0, i.jsx)(a.CA, {
+  return (0, l.jsx)(a.CA, {
     title: n.label,
-    children: (0, i.jsx)(l.Kx8, {
+    children: (0, l.jsx)(i.Kx8, {
       className: s.disabledFieldBackground,
       value: n.response,
       disabled: !0,
@@ -48,16 +48,16 @@ function d(e) {
   })
 }
 
-function u(e) {
+function d(e) {
   let {
     formField: n,
     autofocus: t,
-    onChange: l
+    onChange: i
   } = e;
-  return (0, i.jsx)(a.hK, {
+  return (0, l.jsx)(a.hK, {
     title: n.label,
-    children: (0, i.jsx)(c, {
-      onChange: l,
+    children: (0, l.jsx)(c, {
+      onChange: i,
       value: n.response,
       autofocus: t,
       placeholder: r.intl.string(r.t["Sqn+Wl"])
