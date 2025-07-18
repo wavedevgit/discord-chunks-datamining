@@ -1,11 +1,11 @@
-/** Chunk was on 88622 **/
+/** Chunk was on 17218 **/
 n.d(t, {
   Z: () => h
 });
 var r = n(255367);
 n(73800);
-var s = n(120356),
-  o = n.n(s),
+var o = n(120356),
+  s = n.n(o),
   a = n(104721),
   i = n(481060),
   l = n(113434),
@@ -21,7 +21,7 @@ let h = function(e) {
   var t;
   let {
     className: n,
-    expansionSpring: s,
+    expansionSpring: o,
     isExpanded: h,
     isExpansionAnimationComplete: b,
     quest: j,
@@ -31,12 +31,12 @@ let h = function(e) {
   } = (0, l.Rf)(j), C = (0, l.Jf)(j), O = null != C ? C.percentComplete > 0 : y > 0;
   return (0, r.jsxs)(a.animated.div, {
     "aria-hidden": h && b,
-    className: o()(n, x.contentCollapsed, {
+    className: s()(n, x.contentCollapsed, {
       [x.contentCollapsedExpanded]: h,
       [x.contentCollapsedAccepted]: v
     }),
     style: {
-      opacity: s.to({
+      opacity: o.to({
         range: [0, 1],
         output: [1, 0]
       })

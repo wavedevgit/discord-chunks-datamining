@@ -64,7 +64,7 @@ function h(e) {
         }), n))
       }
     })
-  }, [x, g]), y = new Intl.NumberFormat(b.intl.currentLocale).format(h), O = (0, d.nX)(t.id), _ = (0, d.xC)(t.id), H = l.useMemo(() => 1 + +!!O + +!!_, [O, _]);
+  }, [x, g]), O = new Intl.NumberFormat(b.intl.currentLocale).format(h), y = (0, d.nX)(t.id), _ = (0, d.xC)(t.id), H = l.useMemo(() => 1 + +!!y + +!!_, [y, _]);
   return 0 === h ? null : (0, r.jsxs)("tr", {
     className: f.newMembersNotice,
     onClick: v,
@@ -74,7 +74,7 @@ function h(e) {
         variant: "text-sm/normal",
         color: "always-white",
         children: b.intl.format(b.t["/i5uJy"], {
-          count: y,
+          count: O,
           date: j
         })
       })

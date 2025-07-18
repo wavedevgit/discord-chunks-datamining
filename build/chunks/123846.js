@@ -21,8 +21,8 @@ var r = n(255367),
   g = n(327999),
   x = n(734557),
   v = n(981631),
-  y = n(388032),
-  O = n(23),
+  O = n(388032),
+  y = n(23),
   _ = n(906944);
 
 function H(e) {
@@ -56,7 +56,7 @@ function w(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let N = [g.gq.DISCOVERY, g.gq.VANITY_URL, g.gq.BOT, g.gq.HUB, g.gq.MANUAL_MEMBER_VERIFICATION];
+let N = [g.gq.DISCOVERY, g.gq.VANITY_URL, g.gq.BOT, g.gq.HUB, g.gq.MANUAL_MEMBER_VERIFICATION, g.gq.SOCIAL_LAYER_INTEGRATION_LINKED_CHANNEL];
 
 function S(e) {
   let {
@@ -71,7 +71,7 @@ function S(e) {
         return (0, r.jsx)(C.wGt, {
           size: "custom",
           color: "currentColor",
-          className: O.icon,
+          className: y.icon,
           height: t,
           width: t
         });
@@ -79,7 +79,7 @@ function S(e) {
         return (0, r.jsx)(C.tYf, {
           size: "custom",
           color: "currentColor",
-          className: O.icon,
+          className: y.icon,
           height: t,
           width: t
         });
@@ -87,7 +87,7 @@ function S(e) {
         return (0, r.jsx)(C.Jmo, {
           size: "custom",
           color: "currentColor",
-          className: O.icon,
+          className: y.icon,
           height: t,
           width: t
         });
@@ -95,7 +95,7 @@ function S(e) {
         return (0, r.jsx)(C.aVH, {
           size: "custom",
           color: "currentColor",
-          className: O.icon,
+          className: y.icon,
           height: t,
           width: t
         });
@@ -104,13 +104,21 @@ function S(e) {
         return (0, r.jsx)(C.xPt, {
           size: "custom",
           color: "currentColor",
-          className: O.icon,
+          className: y.icon,
           height: t,
           width: t
         });
       case g.gq.MANUAL_MEMBER_VERIFICATION:
         return (0, r.jsx)(p.Z, {
-          className: O.icon,
+          className: y.icon,
+          height: t,
+          width: t
+        });
+      case g.gq.SOCIAL_LAYER_INTEGRATION_LINKED_CHANNEL:
+        return (0, r.jsx)(C.iWm, {
+          size: "custom",
+          color: "currentColor",
+          className: y.icon,
           height: t,
           width: t
         });
@@ -119,12 +127,12 @@ function S(e) {
     }
   }(t, s), u = (0, g.bE)(t, o);
   return (0, r.jsxs)("div", {
-    className: O.labelWithIconContainer,
+    className: y.labelWithIconContainer,
     "aria-label": u,
     children: [null != c ? c : null, (0, r.jsx)(C.Text, {
       variant: 12 === s ? "text-xs/medium" : "text-sm/medium",
-      className: i()(O.labelText, {
-        [O.focused]: a
+      className: i()(y.labelText, {
+        [y.focused]: a
       }),
       children: n
     })]
@@ -138,8 +146,8 @@ function D(e) {
     onClose: o
   } = e, a = (0, d.e7)([h.Z], () => h.Z.getSearchStateByGuildId(n), [n], u()), {
     inviteCodes: c
-  } = (0, x.s)(n), p = (0, d.e7)([m.Z], () => m.Z.getGuild(n)), D = null != (t = null == p ? void 0 : p.vanityURLCode) ? t : null, [Z, R] = l.useState(!1), {
-    selectedSourceInviteCode: L,
+  } = (0, x.s)(n), p = (0, d.e7)([m.Z], () => m.Z.getGuild(n)), D = null != (t = null == p ? void 0 : p.vanityURLCode) ? t : null, [Z, L] = l.useState(!1), {
+    selectedSourceInviteCode: R,
     selectedJoinSourceType: I
   } = a, P = null != I && I !== g.gq.UNSPECIFIED, M = (0, d.e7)([b.Z], () => b.Z.hideInstantInvites, []);
   M && (c = []);
@@ -167,7 +175,7 @@ function D(e) {
       }) : (0, j.Dr)(n, {
         selectedSourceInviteCode: null,
         selectedJoinSourceType: e
-      }), R(!1)
+      }), L(!1)
     }, [n, I]),
     k = l.useCallback(e => {
       (0, j.Dr)(n, {
@@ -180,24 +188,24 @@ function D(e) {
     onClose: () => {
       o()
     },
-    "aria-label": y.intl.string(y.t["u/7RdX"]),
+    "aria-label": O.intl.string(O.t["u/7RdX"]),
     onSelect: v.dG4,
     children: Z ? (0, r.jsxs)(C.kSQ, {
       children: [(0, r.jsx)(C.sNh, {
         id: "back",
-        action: () => R(!1),
+        action: () => L(!1),
         render: e => (0, r.jsxs)("span", w(H({}, e), {
-          className: O.customLabelContainer,
+          className: y.customLabelContainer,
           children: [(0, r.jsx)(C.V7D, {
             size: "custom",
             color: "currentColor",
             width: 16,
             height: 16,
-            className: O.__invalid_caret
+            className: y.__invalid_caret
           }), (0, r.jsx)(C.Text, {
             variant: "eyebrow",
             color: "header-primary",
-            children: y.intl.string(y.t["Kz/cho"])
+            children: O.intl.string(O.t["Kz/cho"])
           })]
         }))
       }), N.map(e => (0, r.jsx)(C.k5B, {
@@ -216,15 +224,15 @@ function D(e) {
       children: [(0, r.jsx)(C.II_, {
         id: "members-table-invite-code-search",
         control: (e, t) => (0, r.jsx)(C.ne, w(H({}, e), {
-          query: null != L ? L : "",
+          query: null != R ? R : "",
           onChange: k,
           ref: t,
-          placeholder: y.intl.string(y.t.YwJnGx)
+          placeholder: O.intl.string(O.t.YwJnGx)
         }))
       }, "invite-code-filter-search"), (0, r.jsx)(C.Clw, {}), (0, r.jsx)(C.k5B, {
         id: "join-source-type-option-all",
-        label: y.intl.string(y.t.an9Ry8),
-        checked: null == L && null == I,
+        label: O.intl.string(O.t.an9Ry8),
+        checked: null == R && null == I,
         disabled: !1,
         action: () => T(null),
         group: "join-source-type-options"
@@ -235,25 +243,25 @@ function D(e) {
           vanityUrl: D,
           text: e
         })),
-        checked: L === e,
+        checked: R === e,
         disabled: !1,
         action: () => E(e),
         group: "join-source-type-options"
       }, "join-source-type-option-".concat(e))), (0, r.jsx)(C.Clw, {}), (0, r.jsx)(C.sNh, {
         id: "other-join-methods",
-        action: () => R(!0),
+        action: () => L(!0),
         render: e => (0, r.jsxs)("div", {
-          className: i()(O.containerWithRightCaret, O.customLabelContainer),
+          className: i()(y.containerWithRightCaret, y.customLabelContainer),
           children: [(0, r.jsxs)("div", {
             className: _.label,
             children: [(0, r.jsx)(C.Text, {
               variant: "text-sm/medium",
-              className: i()(O.__invalid_selectedRadio, O.labelText, {
-                [O.focused]: e.isFocused
+              className: i()(y.__invalid_selectedRadio, y.labelText, {
+                [y.focused]: e.isFocused
               }),
-              children: y.intl.string(y.t["Kz/cho"])
+              children: O.intl.string(O.t["Kz/cho"])
             }), P ? (0, r.jsx)("div", {
-              className: O.selectedOption,
+              className: y.selectedOption,
               children: (0, r.jsx)(S, w(H({}, e), {
                 size: 12,
                 text: (0, g.bE)(I, D, M),
@@ -262,8 +270,8 @@ function D(e) {
               }))
             }) : null]
           }), P ? (0, r.jsx)(f.Z, {
-            background: O.__invalid_radio,
-            foreground: O.radioSelection,
+            background: y.__invalid_radio,
+            foreground: y.radioSelection,
             width: 16,
             height: 16
           }) : (0, r.jsx)(C.Fbu, {
@@ -271,7 +279,7 @@ function D(e) {
             color: "currentColor",
             width: 16,
             height: 16,
-            className: O.__invalid_caret
+            className: y.__invalid_caret
           })]
         })
       }, "other-join-methods")]

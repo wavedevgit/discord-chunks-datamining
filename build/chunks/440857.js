@@ -1,6 +1,6 @@
 /** Chunk was on 6850 **/
 n.d(t, {
-  Z: () => O
+  Z: () => y
 }), n(388685);
 var r = n(255367),
   l = n(73800),
@@ -40,7 +40,7 @@ function v(e) {
   return e
 }
 
-function y(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -53,16 +53,16 @@ function y(e, t) {
   }), e
 }
 
-function O(e) {
+function y(e) {
   let {
     guildId: t
-  } = e, O = (0, f.xC)(t), {
+  } = e, y = (0, f.xC)(t), {
     selectedUserIds: _,
     clearSelection: H
   } = (0, h.Z)(t), w = _.size > 0, N = async (e, t, n, r) => {
     try {
       let l = await u.Z.banMultipleUsers(e, t, n, r);
-      (0, c.showToast)((0, c.createToast)(g.intl.string(g.t.AsCe5O), c.ToastType.SUCCESS)), b.default.track(j.rMx.BULK_MODERATION_ACTION_COMPLETED, y(v({}, (0, C.hH)(e)), {
+      (0, c.showToast)((0, c.createToast)(g.intl.string(g.t.AsCe5O), c.ToastType.SUCCESS)), b.default.track(j.rMx.BULK_MODERATION_ACTION_COMPLETED, O(v({}, (0, C.hH)(e)), {
         action_type: p.jQ.BAN,
         target_user_ids: [..._],
         mod_user_id: m.default.getId(),
@@ -108,13 +108,13 @@ function O(e) {
       children: g.intl.string(g.t["2a50fH"])
     })]
   });
-  return O ? (0, r.jsx)(i.W, {
+  return y ? (0, r.jsx)(i.W, {
     component: "div",
     className: x.saveNoticeContainer,
     children: w && (0, r.jsx)(c.oXn, {
       children: (0, r.jsx)(d.Z, {
         onSave: () => {
-          b.default.track(j.rMx.BULK_MODERATION_ACTION_STARTED, y(v({}, (0, C.hH)(t)), {
+          b.default.track(j.rMx.BULK_MODERATION_ACTION_STARTED, O(v({}, (0, C.hH)(t)), {
             action_type: p.jQ.BAN,
             target_user_ids: [..._],
             mod_user_id: m.default.getId(),
@@ -123,9 +123,9 @@ function O(e) {
             let {
               default: e
             } = await n.e("4114").then(n.bind(n, 98746));
-            return n => (0, r.jsx)(e, y(v({}, n), {
+            return n => (0, r.jsx)(e, O(v({}, n), {
               guildId: t,
-              canBulkBan: O,
+              canBulkBan: y,
               userIds: _,
               onBanMultiple: N
             }))

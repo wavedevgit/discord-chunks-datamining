@@ -1,11 +1,11 @@
-/** Chunk was on 88622 **/
+/** Chunk was on 17218 **/
 n.d(t, {
   Z: () => j
 }), n(388685);
 var r = n(255367),
-  s = n(73800),
-  o = n(120356),
-  a = n.n(o),
+  o = n(73800),
+  s = n(120356),
+  a = n.n(s),
   i = n(505266),
   l = n(867309),
   c = n(104721),
@@ -22,22 +22,22 @@ let b = ["#51BC9D"],
     var t;
     let {
       expansionSpring: n,
-      overlayRef: o,
+      overlayRef: s,
       quest: j,
       progressBarRef: _,
       isExpanded: v
     } = e, {
       completionSpring: y,
       startCompletionAnimation: C
-    } = (0, f.G)(), O = (null == (t = j.userStatus) ? void 0 : t.completedAt) != null, E = s.useRef(!1), S = (0, u.e7)([p.Z], () => p.Z.useReducedMotion), w = s.useRef(null), P = (0, u.e7)([m.Z], () => m.Z.hasLayers()), T = (0, d.Z)(P), [N, A] = s.useState(null), [R, B] = s.useState(null), k = s.useRef(new i.qA({
+    } = (0, f.G)(), O = (null == (t = j.userStatus) ? void 0 : t.completedAt) != null, E = o.useRef(!1), w = (0, u.e7)([p.Z], () => p.Z.useReducedMotion), S = o.useRef(null), T = (0, u.e7)([m.Z], () => m.Z.hasLayers()), P = (0, d.Z)(T), [A, N] = o.useState(null), [R, B] = o.useState(null), k = o.useRef(new i.qA({
       gravity: 0,
       wind: 0
-    })), q = (0, i.uR)(N, R), I = s.useCallback(() => {
-      if (S) return;
+    })), I = (0, i.uR)(A, R), q = o.useCallback(() => {
+      if (w) return;
       let e = _.current,
-        t = w.current;
-      if (null != t && null != e && q.isReady) {
-        var n, r, s, o, a, i;
+        t = S.current;
+      if (null != t && null != e && I.isReady) {
+        var n, r, o, s, a, i;
         let {
           x: l,
           y: c
@@ -45,7 +45,7 @@ let b = ["#51BC9D"],
           x: u,
           y: d
         } = t.getBoundingClientRect();
-        q.createMultipleConfetti((n = l - u, r = c - d, s = e.clientHeight, o = e.clientWidth, a = function(e) {
+        I.createMultipleConfetti((n = l - u, r = c - d, o = e.clientHeight, s = e.clientWidth, a = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -70,8 +70,8 @@ let b = ["#51BC9D"],
               y: r
             },
             maxValue: {
-              x: n + s,
-              y: r + o
+              x: n + o,
+              y: r + s
             }
           },
           velocity: {
@@ -110,19 +110,19 @@ let b = ["#51BC9D"],
           Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(i, e))
         }), a), 100)
       }
-    }, [_, w, q, S]), D = (0, d.Z)(v);
-    return (s.useEffect(() => {
-      O && v && !D && (C(), I())
-    }, [v, O, C, I, D]), s.useEffect(() => {
-      O && !P && T && setTimeout(() => {
-        C(), I()
+    }, [_, S, I, w]), D = (0, d.Z)(v);
+    return (o.useEffect(() => {
+      O && v && !D && (C(), q())
+    }, [v, O, C, q, D]), o.useEffect(() => {
+      O && !T && P && setTimeout(() => {
+        C(), q()
       }, 200)
-    }, [O, T, P, C, I]), s.useEffect(() => {
-      q.isReady && (!E.current && O && (C(), I()), E.current = O)
-    }, [O, E, I, C, q]), S) ? null : (0, r.jsxs)("div", {
+    }, [O, P, T, C, q]), o.useEffect(() => {
+      I.isReady && (!E.current && O && (C(), q()), E.current = O)
+    }, [O, E, q, C, I]), w) ? null : (0, r.jsxs)("div", {
       className: x.wrapper,
       "aria-hidden": "true",
-      ref: w,
+      ref: S,
       children: [(0, r.jsx)(c.animated.div, {
         className: x.background,
         style: {
@@ -142,7 +142,7 @@ let b = ["#51BC9D"],
           }).to(e => "translateY(".concat(e, "px)"))
         },
         children: [(0, r.jsx)(i.O_, {
-          ref: A,
+          ref: N,
           className: x.confetti,
           environment: k.current
         }), (0, r.jsx)(i.Ji, {
@@ -151,12 +151,12 @@ let b = ["#51BC9D"],
           colors: b,
           spriteWidth: g.Ko,
           spriteHeight: g.Ko
-        }), null != o.current && (0, l.createPortal)((0, r.jsx)(c.animated.div, {
+        }), null != s.current && (0, l.createPortal)((0, r.jsx)(c.animated.div, {
           className: a()(x.borders, x.bordersBottom),
           style: {
             opacity: y
           }
-        }), o.current)]
+        }), s.current)]
       })]
     })
   }

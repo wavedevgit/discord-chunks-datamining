@@ -20,7 +20,7 @@ var l = n(120356),
   g = n(388032),
   m = n(12740);
 
-function f() {
+function N() {
   return (0, r.jsxs)("div", {
     className: m.header,
     children: [(0, r.jsxs)("div", {
@@ -49,25 +49,25 @@ function O(e) {
     location: l,
     className: c,
     onNavigate: g
-  } = e, O = (0, s.e7)([u.default], () => u.default.getUser(t), [t]), N = (0, s.e7)([o.ZP], () => o.ZP.getMember(n, t), [n, t]);
-  return null == O || null == N ? null : (0, r.jsxs)("div", {
+  } = e, O = (0, s.e7)([u.default], () => u.default.getUser(t), [t]), f = (0, s.e7)([o.ZP], () => o.ZP.getMember(n, t), [n, t]);
+  return null == O || null == f ? null : (0, r.jsxs)("div", {
     className: i()(m.container, c),
-    children: [(0, r.jsx)(f, {}), (0, r.jsxs)(a.Ttm, {
+    children: [(0, r.jsx)(N, {}), (0, r.jsxs)(a.Ttm, {
       className: m.innerContainer,
       children: [(0, r.jsx)(T.Z, {
-        member: N
+        member: f
       }), (0, r.jsx)(I.Z, {
         userId: t,
         guildId: n
       }), (0, r.jsx)(A.Z, {
-        member: N,
+        member: f,
         onNavigate: g
       }), (0, r.jsx)(d.Z, {
-        member: N
+        member: f
       }), (0, r.jsx)(E.Z, {
-        member: N
+        member: f
       }), (0, r.jsx)(_.Z, {
-        member: N
+        member: f
       })]
     })]
   })

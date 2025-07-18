@@ -2,7 +2,7 @@
 "use strict";
 let r, i, a, o, s, l, c, u, d, f, _, p, h, m, g, E, b, y, O, v, I;
 n.d(t, {
-  Z: () => ek
+  Z: () => eM
 }), n(388685);
 var T, S = n(392711),
   A = n(754700),
@@ -58,7 +58,7 @@ let G = new Map,
   V = 1e3;
 
 function F() {
-  r = !1, i = !1, a = !1, o = new Map, s = new Map, l = new Map, c = 0, u = 0, d = new Set, f = new Set, _ = new Set, p = new Set, G = new Map, m = new Map, g = new Map, E = new Map, b = null, y = new Map, h = new Set, O = new Map, v = new Map, ew(), I = null
+  r = !1, i = !1, a = !1, o = new Map, s = new Map, l = new Map, c = 0, u = 0, d = new Set, f = new Set, _ = new Set, p = new Set, G = new Map, m = new Map, g = new Map, E = new Map, b = null, y = new Map, h = new Set, O = new Map, v = new Map, eD(), I = null
 }
 
 function Z(e, t) {
@@ -123,7 +123,7 @@ function q(e) {
 }
 
 function X() {
-  ew(), F()
+  eD(), F()
 }
 
 function Q() {
@@ -142,7 +142,7 @@ function J(e) {
     location: x.dr.QUESTS_STORE
   }).log("Delivered ".concat(e.config.messages.questName, " (").concat(e.id, ")"));
   for (let e of (v = a, s = new Map, n)) s.set(e.id, e);
-  eP(), I = null != i ? new Date(i) : null
+  ew(), I = null != i ? new Date(i) : null
 }
 
 function $() {
@@ -365,6 +365,13 @@ function eA(e) {
 
 function eN(e) {
   let {
+    questId: t
+  } = e;
+  G.has(t) && G.delete(t), D.ZP.getState().resetQuest(t)
+}
+
+function eC(e) {
+  let {
     quest: t,
     placement: n,
     adDecisionData: r
@@ -375,39 +382,39 @@ function eN(e) {
   })
 }
 
-function eC(e) {
+function eR(e) {
   let {
     placement: t
   } = e;
   O.delete(t), u = Date.now(), i = !1
 }
 
-function eR() {
+function eP() {
   let e = !1,
     t = new Map(v);
   o.forEach((n, r) => {
     !0 !== t.get(r) && ((0, w.zi)(n) ? (t.set(r, !0), e = !0) : t.has(r) || t.set(r, !1))
-  }), e && (v = t, ex.emitChange())
-}
-
-function eP() {
-  null === B && (eR(), B = setInterval(() => {
-    eR()
-  }, V))
+  }), e && (v = t, ek.emitChange())
 }
 
 function ew() {
+  null === B && (eP(), B = setInterval(() => {
+    eP()
+  }, V))
+}
+
+function eD() {
   null !== B && (clearInterval(B), B = null)
 }
 
-function eD(e) {
+function eL(e) {
   let {
     quest_enrollment_blocked_until: t
   } = e;
   I = null != t ? new Date(t) : null
 }
 F();
-class eL extends(T = C.ZP.Store) {
+class ex extends(T = C.ZP.Store) {
   get quests() {
     return o
   }
@@ -484,8 +491,8 @@ class eL extends(T = C.ZP.Store) {
     return null != (t = v.get(e)) && t
   }
 }
-k(eL, "displayName", "QuestsStore");
-let ex = new eL(R.Z, {
+k(ex, "displayName", "QuestsStore");
+let ek = new ex(R.Z, {
     LOGOUT: X,
     QUESTS_FETCH_CURRENT_QUESTS_BEGIN: Q,
     QUESTS_FETCH_CURRENT_QUESTS_SUCCESS: J,
@@ -494,8 +501,8 @@ let ex = new eL(R.Z, {
     QUESTS_FETCH_CLAIMED_QUESTS_SUCCESS: en,
     QUESTS_FETCH_CLAIMED_QUESTS_FAILURE: er,
     QUESTS_FETCH_QUEST_TO_DELIVER_BEGIN: ee,
-    QUESTS_FETCH_QUEST_TO_DELIVER_SUCCESS: eN,
-    QUESTS_FETCH_QUEST_TO_DELIVER_FAILURE: eC,
+    QUESTS_FETCH_QUEST_TO_DELIVER_SUCCESS: eC,
+    QUESTS_FETCH_QUEST_TO_DELIVER_FAILURE: eR,
     QUESTS_SEND_HEARTBEAT_SUCCESS: ei,
     QUESTS_SEND_HEARTBEAT_FAILURE: ea,
     QUESTS_ENROLL_BEGIN: el,
@@ -517,6 +524,7 @@ let ex = new eL(R.Z, {
     QUESTS_DELIVERY_OVERRIDE: eT,
     QUESTS_SELECT_TASK_PLATFORM: eS,
     QUESTS_UPDATE_OPTIMISTIC_PROGRESS: eA,
-    QUESTS_USER_COMPLETION_UPDATE: eD
+    QUESTS_RESET_OPTIMISTIC_PROGRESS: eN,
+    QUESTS_USER_COMPLETION_UPDATE: eL
   }),
-  ek = ex
+  eM = ek

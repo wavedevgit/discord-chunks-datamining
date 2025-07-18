@@ -90,20 +90,24 @@ class v {
         sourceInviteCode: u,
         joinSourceType: f,
         inviterId: p,
-        integrationType: m
+        integrationType: m,
+        joinSourceApplicationId: g,
+        joinSourceChannelId: E
       } = this._computeMemberSupplementals(e.userId, e.unusualDMActivityUntil),
-      g = s.default.getUser(e.userId);
+      b = s.default.getUser(e.userId);
     return _(h(_({
       hasUnusualDmActivity: a,
       hasUnusualAccountActivity: o,
       sourceInviteCode: u,
       joinSourceType: f,
       inviterId: p,
-      integrationType: m
+      integrationType: m,
+      joinSourceApplicationId: g,
+      joinSourceChannelId: E
     }, e), {
       isCurrentGuildMemberByTimestamp: i <= this.newMemberTimestamp,
       isIncludedInSearchResults: !1,
-      user: g,
+      user: b,
       sort: (0, d.b)(e, null != (n = t.selectedSort) ? n : c.d$.ORDER_BY_UNSPECIFIED),
       joinedAtTimestamp: i
     }), r)
@@ -114,13 +118,17 @@ class v {
       sourceInviteCode: r,
       joinSourceType: i,
       inviterId: a,
-      integrationType: s
+      integrationType: s,
+      joinSourceApplicationId: l,
+      joinSourceChannelId: c
     } = null != (n = (0, u.W2)(this.guildId)[e]) ? n : {};
     return {
       sourceInviteCode: null != r ? r : null,
       joinSourceType: null != i ? i : null,
       inviterId: null != a ? a : null,
       integrationType: null != s ? s : null,
+      joinSourceApplicationId: null != l ? l : null,
+      joinSourceChannelId: null != c ? c : null,
       hasUnusualDmActivity: O(t),
       hasUnusualAccountActivity: (0, o.He)(e)
     }
@@ -140,9 +148,11 @@ class v {
         hasUnusualAccountActivity: c,
         joinSourceType: u,
         inviterId: d,
-        integrationType: f
+        integrationType: f,
+        joinSourceApplicationId: p,
+        joinSourceChannelId: h
       } = this._computeMemberSupplementals(r.userId, null != (n = a.unusualDMActivityUntil) ? n : r.unusualDMActivityUntil);
-    for (let e in r.sourceInviteCode !== s && (a.sourceInviteCode = s), r.hasUnusualDmActivity !== l && (a.hasUnusualDmActivity = l), r.hasUnusualAccountActivity !== c && (a.hasUnusualAccountActivity = c), r.joinSourceType !== u && (a.joinSourceType = u), r.inviterId !== d && (a.inviterId = d), r.integrationType !== f && (a.integrationType = f), a) {
+    for (let e in r.sourceInviteCode !== s && (a.sourceInviteCode = s), r.hasUnusualDmActivity !== l && (a.hasUnusualDmActivity = l), r.hasUnusualAccountActivity !== c && (a.hasUnusualAccountActivity = c), r.joinSourceType !== u && (a.joinSourceType = u), r.joinSourceApplicationId !== p && (a.joinSourceApplicationId = p), r.joinSourceChannelId !== h && (a.joinSourceChannelId = h), r.inviterId !== d && (a.inviterId = d), r.integrationType !== f && (a.integrationType = f), a) {
       let t = e,
         n = a[t],
         s = r[t];

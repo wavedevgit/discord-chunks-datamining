@@ -19,7 +19,7 @@ var r = n(255367),
   g = n(50493),
   m = n(981631);
 
-function f(e, t) {
+function N(e, t) {
   return n => {
     if (0 === n) return "auto";
     let r = "forwards" === t.current,
@@ -34,7 +34,7 @@ function O(e) {
   let {
     userId: n,
     guildId: O,
-    onClose: N,
+    onClose: f,
     analyticsLocation: h,
     className: R
   } = e, p = (0, s.e7)([d.ZP], () => d.ZP.getGuildSidebarState(O), [O]), S = null != (t = null == p ? void 0 : p.details.modViewPanel) ? t : g.k.INFO, C = (0, u.Z)(n), b = null == S ? null : S === g.k.INFO ? "backwards" : "forwards", D = (0, E.Z)(b), {
@@ -47,9 +47,9 @@ function O(e) {
     [m.EkH.CLOSE_MODAL]: {
       binds: ["esc"],
       comboKeysBindGlobal: !0,
-      action: () => S === g.k.INFO ? N() : U(g.k.INFO)
+      action: () => S === g.k.INFO ? f() : U(g.k.INFO)
     }
-  }), [N, S, U]);
+  }), [f, S, U]);
   l.useEffect(() => (c.Z.enable(), c.Z.enableTemp(L), () => c.Z.disableTemp()), [L]);
   let M = (0, o.Yzy)(S, {
     value: 0,
@@ -103,8 +103,8 @@ function O(e) {
         }, v.enabled ? {
           opacity: null == (s = e.value) ? void 0 : s.to(e => 1 - Math.abs(e))
         } : {
-          left: null == (a = e.value) ? void 0 : a.to(f("left", D)),
-          right: null == (o = e.value) ? void 0 : o.to(f("right", D))
+          left: null == (a = e.value) ? void 0 : a.to(N("left", D)),
+          right: null == (o = e.value) ? void 0 : o.to(N("right", D))
         }),
         children: function(e) {
           switch (e) {

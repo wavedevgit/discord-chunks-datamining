@@ -18,9 +18,9 @@ var r = n(255367),
   I = n(909746),
   g = n(501801),
   m = n(884902),
-  f = n(271383),
+  N = n(271383),
   O = n(430824),
-  N = n(5192),
+  f = n(5192),
   h = n(776767),
   R = n(981631),
   p = n(388032),
@@ -36,7 +36,7 @@ function D(e) {
     guild: a
   } = e, {
     analyticsLocations: E
-  } = (0, d.ZP)(), T = I.nm(n), O = I.QM(n), h = null == (t = I.V$(R.zUn.REASON, n)) ? void 0 : t.newValue, b = I.J5(n), D = (0, _.LJ)(n.id), v = (0, u.e7)([f.ZP], () => null != n.userId ? f.ZP.getMember(i.guildId, n.userId) : null, [i.guildId, n.userId]), U = (0, m.X7)(null == v ? void 0 : v.guildId, null == v ? void 0 : v.userId, null == v ? void 0 : v.colorStrings), L = l.useCallback(e => t => {
+  } = (0, d.ZP)(), T = I.nm(n), O = I.QM(n), h = null == (t = I.V$(R.zUn.REASON, n)) ? void 0 : t.newValue, b = I.J5(n), D = (0, _.LJ)(n.id), v = (0, u.e7)([N.ZP], () => null != n.userId ? N.ZP.getMember(i.guildId, n.userId) : null, [i.guildId, n.userId]), U = (0, m.X7)(null == v ? void 0 : v.guildId, null == v ? void 0 : v.userId, null == v ? void 0 : v.colorStrings), L = l.useCallback(e => t => {
     t.preventDefault(), t.stopPropagation(), null != e && (0, A.RE)(e, E)
   }, [E]), M = l.useCallback(() => null == n.user ? null : (0, r.jsx)(c.ua7, {
     text: p.intl.string(p.t.mvsi9v),
@@ -56,7 +56,7 @@ function D(e) {
           variant: "text-sm/medium",
           tag: "span",
           children: ["@", (0, r.jsx)(c.PUh, {
-            name: N.ZP.getName(i.guildId, null, n.user),
+            name: f.ZP.getName(i.guildId, null, n.user),
             color: null != (t = null == v ? void 0 : v.colorString) ? t : void 0,
             roleColors: U
           })]

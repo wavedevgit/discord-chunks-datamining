@@ -454,7 +454,7 @@ function em(e) {
     a = (null == (n = e.userStatus) ? void 0 : n.completedAt) != null,
     o = (null == (r = e.userStatus) ? void 0 : r.claimedAt) != null,
     s = er(e).percentComplete > 0;
-  return o ? 4 : a ? 3 : s ? 2 : 1 * !!i
+  return o ? 4 : a ? 3 : s && i ? 2 : 1 * !!i
 }
 
 function eg(e) {

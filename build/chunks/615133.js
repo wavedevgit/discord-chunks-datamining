@@ -2,6 +2,8 @@
 e.exports = {
   inviteContainer: "inviteContainer__23437",
   inviterTooltipContainer: "inviterTooltipContainer__23437",
+  linkedChannelContainer: "linkedChannelContainer__23437",
+  linkedChannelApplicationName: "linkedChannelApplicationName__23437",
   robot: "robot__23437",
   integrationIcon: "integrationIcon__23437",
   unknownInvite: "unknownInvite__23437",

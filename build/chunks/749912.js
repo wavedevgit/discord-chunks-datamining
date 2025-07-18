@@ -1,11 +1,11 @@
-/** Chunk was on 88622 **/
+/** Chunk was on 17218 **/
 n.d(t, {
   Z: () => d
 }), n(467055), n(388685);
 var r = n(255367);
 n(73800);
-var s = n(754700),
-  o = n(481060),
+var o = n(754700),
+  s = n(481060),
   a = n(70956),
   i = n(987144);
 
@@ -66,12 +66,12 @@ let u = [{
       taskConfigV2: d
     } = e;
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsxs)(o.xJW, {
-        children: [(0, r.jsx)(o.vwX, {
-          tag: o.RB0.H5,
+      children: [(0, r.jsxs)(s.xJW, {
+        children: [(0, r.jsx)(s.vwX, {
+          tag: s.RB0.H5,
           children: "Task Type(s)"
-        }), (0, r.jsx)(o.R94, {
-          children: (0, r.jsx)(o.PhF, {
+        }), (0, r.jsx)(s.R94, {
+          children: (0, r.jsx)(s.PhF, {
             className: i.taskPresetSelect,
             placeholder: "Select Task Preset",
             options: u,
@@ -82,12 +82,12 @@ let u = [{
               children: e.label
             }),
             isSelected: e => e === function(e) {
-              let t = s.X.PLAY_ON_PLAYSTATION in e || s.X.PLAY_ON_XBOX in e,
-                n = s.X.PLAY_ON_DESKTOP in e || s.X.PLAY_ON_DESKTOP_V2 in e,
-                r = s.X.STREAM_ON_DESKTOP in e,
-                o = s.X.WATCH_VIDEO in e,
-                a = s.X.PLAY_ACTIVITY in e;
-              return t && n ? 4 : t ? 3 : n ? 0 : r ? 1 : o ? 2 : a ? 5 : void 0
+              let t = o.X.PLAY_ON_PLAYSTATION in e || o.X.PLAY_ON_XBOX in e,
+                n = o.X.PLAY_ON_DESKTOP in e || o.X.PLAY_ON_DESKTOP_V2 in e,
+                r = o.X.STREAM_ON_DESKTOP in e,
+                s = o.X.WATCH_VIDEO in e,
+                a = o.X.PLAY_ACTIVITY in e;
+              return t && n ? 4 : t ? 3 : n ? 0 : r ? 1 : s ? 2 : a ? 5 : void 0
             }(d.tasks),
             select: e => {
               t(c(l({}, d), {
@@ -95,45 +95,45 @@ let u = [{
                   let n = {};
                   switch (e) {
                     case 1:
-                      n[s.X.STREAM_ON_DESKTOP] = {
-                        type: s.X.STREAM_ON_DESKTOP,
+                      n[o.X.STREAM_ON_DESKTOP] = {
+                        type: o.X.STREAM_ON_DESKTOP,
                         target: t
                       };
                       break;
                     case 0:
-                      n[s.X.PLAY_ON_DESKTOP] = {
-                        type: s.X.PLAY_ON_DESKTOP,
+                      n[o.X.PLAY_ON_DESKTOP] = {
+                        type: o.X.PLAY_ON_DESKTOP,
                         target: t
                       };
                       break;
                     case 3:
-                      n[s.X.PLAY_ON_PLAYSTATION] = {
-                        type: s.X.PLAY_ON_PLAYSTATION,
+                      n[o.X.PLAY_ON_PLAYSTATION] = {
+                        type: o.X.PLAY_ON_PLAYSTATION,
                         target: t,
                         externalIds: []
-                      }, n[s.X.PLAY_ON_XBOX] = {
-                        type: s.X.PLAY_ON_XBOX,
+                      }, n[o.X.PLAY_ON_XBOX] = {
+                        type: o.X.PLAY_ON_XBOX,
                         target: t,
                         externalIds: []
                       };
                       break;
                     case 4:
-                      n[s.X.PLAY_ON_DESKTOP] = {
-                        type: s.X.PLAY_ON_DESKTOP,
+                      n[o.X.PLAY_ON_DESKTOP] = {
+                        type: o.X.PLAY_ON_DESKTOP,
                         target: t
-                      }, n[s.X.PLAY_ON_PLAYSTATION] = {
-                        type: s.X.PLAY_ON_PLAYSTATION,
+                      }, n[o.X.PLAY_ON_PLAYSTATION] = {
+                        type: o.X.PLAY_ON_PLAYSTATION,
                         target: t,
                         externalIds: []
-                      }, n[s.X.PLAY_ON_XBOX] = {
-                        type: s.X.PLAY_ON_XBOX,
+                      }, n[o.X.PLAY_ON_XBOX] = {
+                        type: o.X.PLAY_ON_XBOX,
                         target: t,
                         externalIds: []
                       };
                       break;
                     case 2:
-                      n[s.X.WATCH_VIDEO] = {
-                        type: s.X.WATCH_VIDEO,
+                      n[o.X.WATCH_VIDEO] = {
+                        type: o.X.WATCH_VIDEO,
                         target: t,
                         assets: {
                           video: {
@@ -146,8 +146,8 @@ let u = [{
                       };
                       break;
                     case 5:
-                      n[s.X.PLAY_ACTIVITY] = {
-                        type: s.X.PLAY_ACTIVITY,
+                      n[o.X.PLAY_ACTIVITY] = {
+                        type: o.X.PLAY_ACTIVITY,
                         target: t
                       }
                   }
@@ -158,12 +158,12 @@ let u = [{
             serialize: String
           })
         })]
-      }), (0, r.jsxs)(o.xJW, {
-        children: [(0, r.jsx)(o.vwX, {
-          tag: o.RB0.H5,
+      }), (0, r.jsxs)(s.xJW, {
+        children: [(0, r.jsx)(s.vwX, {
+          tag: s.RB0.H5,
           children: "Task Duration"
-        }), (0, r.jsx)(o.R94, {
-          children: (0, r.jsx)(o.oil, {
+        }), (0, r.jsx)(s.R94, {
+          children: (0, r.jsx)(s.oil, {
             value: String(n / a.Z.Seconds.MINUTE),
             onChange: function(e) {
               let n = Number(e);

@@ -22,7 +22,7 @@ function A(e) {
     messagesCount: T,
     linksCount: I,
     mediaCount: g
-  } = (0, u.P2)(t, n), m = new Intl.NumberFormat(d.intl.currentLocale).format(T), f = new Intl.NumberFormat(d.intl.currentLocale).format(I), O = new Intl.NumberFormat(d.intl.currentLocale).format(g), N = l.useCallback(async e => {
+  } = (0, u.P2)(t, n), m = new Intl.NumberFormat(d.intl.currentLocale).format(T), N = new Intl.NumberFormat(d.intl.currentLocale).format(I), O = new Intl.NumberFormat(d.intl.currentLocale).format(g), f = l.useCallback(async e => {
     if (null == A) return;
     let r = (0, u.Ow)(t, e, {
       include_nsfw: !0
@@ -56,7 +56,7 @@ function A(e) {
           color: "interactive-normal",
           children: m
         }),
-        onNavigate: T > 0 ? () => N(u.mw.MESSAGES) : void 0
+        onNavigate: T > 0 ? () => f(u.mw.MESSAGES) : void 0
       }), (0, r.jsx)(c._2, {
         icon: (0, r.jsx)(s.xPt, {
           size: "custom",
@@ -74,9 +74,9 @@ function A(e) {
         }) : (0, r.jsx)(s.Text, {
           variant: "text-sm/semibold",
           color: "interactive-normal",
-          children: f
+          children: N
         }),
-        onNavigate: I > 0 ? () => N(u.mw.LINKS) : void 0
+        onNavigate: I > 0 ? () => f(u.mw.LINKS) : void 0
       }), (0, r.jsx)(c._2, {
         icon: (0, r.jsx)(s.Ka2, {
           size: "custom",
@@ -96,7 +96,7 @@ function A(e) {
           color: "interactive-normal",
           children: O
         }),
-        onNavigate: g > 0 ? () => N(u.mw.MEDIA) : void 0
+        onNavigate: g > 0 ? () => f(u.mw.MEDIA) : void 0
       })]
     })
   })

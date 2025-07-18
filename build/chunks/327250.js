@@ -19,9 +19,9 @@ var l = n(120356),
   I = n(314897),
   g = n(592125),
   m = n(271383),
-  f = n(430824),
+  N = n(430824),
   O = n(496675),
-  N = n(158776),
+  f = n(158776),
   h = n(944486),
   R = n(885110),
   p = n(594174),
@@ -69,7 +69,7 @@ function x(e) {
     user: t,
     guildId: n,
     onClose: l
-  } = e, i = t.id, o = (0, s.e7)([R.Z, N.Z, I.default], () => i === I.default.getId() ? R.Z.getStatus() : N.Z.getStatus(i, n), [i, n]);
+  } = e, i = t.id, o = (0, s.e7)([R.Z, f.Z, I.default], () => i === I.default.getId() ? R.Z.getStatus() : f.Z.getStatus(i, n), [i, n]);
   return (0, r.jsxs)("div", {
     className: U.topRow,
     children: [(0, r.jsxs)("div", {
@@ -166,14 +166,14 @@ function j(e) {
     user: t,
     member: l,
     guildId: i
-  } = e, T = (0, s.e7)([f.Z], () => f.Z.getGuild(i)), {
+  } = e, T = (0, s.e7)([N.Z], () => N.Z.getGuild(i)), {
     canKickUser: m,
-    canBanUser: N,
+    canBanUser: f,
     canModerateMembers: R
-  } = (0, s.cj)([O.Z, p.default, f.Z], () => ({
+  } = (0, s.cj)([O.Z, p.default, N.Z], () => ({
     canKickUser: (0, _.BK)(t, T),
     canBanUser: (0, _.mm)(t, T),
-    canModerateMembers: null != T && (0, d.F)(T.id, t.id, [p.default, f.Z, O.Z])
+    canModerateMembers: null != T && (0, d.F)(T.id, t.id, [p.default, N.Z, O.Z])
   }), [t, T]), C = (0, c.b)(l), {
     analyticsLocations: b,
     newestAnalyticsLocation: D
@@ -226,7 +226,7 @@ function j(e) {
         color: a.TVs.colors.TEXT_DEFAULT.css
       })
     }), (0, r.jsx)(P, {
-      disabled: !N,
+      disabled: !f,
       text: v.intl.string(v.t["5MBJ5O"]),
       onClick: () => {
         (0, a.ZDy)(async () => {

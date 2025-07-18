@@ -1,6 +1,6 @@
 /** Chunk was on 80393 **/
 n.d(t, {
-  Z: () => f
+  Z: () => N
 }), n(642613);
 var r = n(255367),
   l = n(73800),
@@ -19,13 +19,13 @@ var r = n(255367),
   g = n(388032),
   m = n(12740);
 
-function f(e) {
+function N(e) {
   let {
     member: t
-  } = e, n = (0, a.e7)([_.Z], () => _.Z.getGuild(t.guildId)), i = (0, a.e7)([d.Z], () => d.Z.getRoles(t.guildId)), f = l.useMemo(() => null == n ? [] : null == t.highestRoleId ? t.roles : Object.values(i).filter(e => e.id !== t.highestRoleId && t.roles.includes(e.id)).sort((e, t) => {
+  } = e, n = (0, a.e7)([_.Z], () => _.Z.getGuild(t.guildId)), i = (0, a.e7)([d.Z], () => d.Z.getRoles(t.guildId)), N = l.useMemo(() => null == n ? [] : null == t.highestRoleId ? t.roles : Object.values(i).filter(e => e.id !== t.highestRoleId && t.roles.includes(e.id)).sort((e, t) => {
     var n, r;
     return null != (r = null != (n = null == e ? void 0 : e.position) ? n : 0 - (null == t ? void 0 : t.position)) ? r : 0
-  }).map(e => e.id), [t.roles, t.highestRoleId, n, i]), O = (0, a.e7)([u.Z], () => u.Z.getEnhancedMember(t.guildId, t.userId), [t.guildId, t.userId]), N = (0, c.zq)(O), h = (0, c.vN)(t), R = (0, a.e7)([A.Z], () => A.Z.can(I.Plq.MANAGE_ROLES, n), [n]);
+  }).map(e => e.id), [t.roles, t.highestRoleId, n, i]), O = (0, a.e7)([u.Z], () => u.Z.getEnhancedMember(t.guildId, t.userId), [t.guildId, t.userId]), f = (0, c.zq)(O), h = (0, c.vN)(t), R = (0, a.e7)([A.Z], () => A.Z.can(I.Plq.MANAGE_ROLES, n), [n]);
   return null == n ? null : (0, r.jsx)(o.xJW, {
     title: g.intl.string(g.t.LPJmLy),
     titleClassName: m.infoTitle,
@@ -47,12 +47,12 @@ function f(e) {
                 onMouseLeave: l,
                 children: (0, r.jsx)(E.Z, {
                   className: s()(m.roleTooltipItem, m.highestRole),
-                  role: N,
+                  role: f,
                   guildId: t.guildId
                 })
               })
             }
-          }), f.map(e => (0, r.jsx)(E.Z, {
+          }), N.map(e => (0, r.jsx)(E.Z, {
             className: m.roleTooltipItem,
             role: i[e],
             guildId: t.guildId

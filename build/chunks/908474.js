@@ -21,8 +21,8 @@ function A(e) {
     if (null == e) return null;
     let t = new Date(e).getTime();
     return (0, u.fv)(t, u.jq.JOINED_AT)
-  }, []), m = l.useMemo(() => null == t ? null : g(I), [t, g, I]), f = l.useMemo(() => (0, o.J)(t.communicationDisabledUntil), [t.communicationDisabledUntil]), O = l.useMemo(() => null == t.communicationDisabledUntil ? new Date : new Date(t.communicationDisabledUntil), [t.communicationDisabledUntil]);
-  return null != I || f ? (0, r.jsx)(s.xJW, {
+  }, []), m = l.useMemo(() => null == t ? null : g(I), [t, g, I]), N = l.useMemo(() => (0, o.J)(t.communicationDisabledUntil), [t.communicationDisabledUntil]), O = l.useMemo(() => null == t.communicationDisabledUntil ? new Date : new Date(t.communicationDisabledUntil), [t.communicationDisabledUntil]);
+  return null != I || N ? (0, r.jsx)(s.xJW, {
     title: d.intl.string(d.t["7V375+"]),
     titleClassName: _.infoTitle,
     children: (0, r.jsxs)(E.WM, {
@@ -43,7 +43,7 @@ function A(e) {
           color: "text-default",
           children: m
         })
-      }), f && null != O && (0, r.jsx)(E._2, {
+      }), N && null != O && (0, r.jsx)(E._2, {
         icon: (0, r.jsx)(s.YlB, {
           size: "custom",
           color: "currentColor",

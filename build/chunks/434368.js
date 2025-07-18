@@ -64,7 +64,7 @@ function j(e) {
     o.requireUnusualAccountActivity || j(u.aY.UNUSUAL_ACCOUNT_ACTIVITY), (0, C.Dr)(t, h(f({}, o), {
       requireUnusualAccountActivity: !o.requireUnusualAccountActivity
     }))
-  }, [t, o, j]), y = l.useCallback(() => {
+  }, [t, o, j]), O = l.useCallback(() => {
     o.requireUsernameQuarantined || j(u.aY.USERNAME_QUARANTINED), (0, C.Dr)(t, h(f({}, o), {
       requireUsernameQuarantined: !o.requireUsernameQuarantined
     }))
@@ -128,7 +128,7 @@ function j(e) {
               className: p.quarantinedLabelIcon
             }), b.intl.string(b.t.Jloklp)]
           }),
-          action: y,
+          action: O,
           checked: o.requireUsernameQuarantined
         })]
       })]

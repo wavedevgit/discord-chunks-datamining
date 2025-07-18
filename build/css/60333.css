@@ -1,6 +1,6 @@
 /**
   Module ID: 60333
-  Original File Name: d7beea9eafe3efbe
+  Original File Name: 85466c5665940eb2
 **/
 .ctaButtons_a77fde {
     display: grid;
@@ -28,7 +28,7 @@
 }
 
 .iconButtonLarge_a77fde:hover {
-    background-color: var(--background-modifier-accent)
+    background-color: var(--border-subtle)
 }
 
 .iconButton_a77fde {
@@ -37,7 +37,7 @@
 }
 
 .iconButton_a77fde:hover {
-    background-color: var(--background-modifier-accent)
+    background-color: var(--border-subtle)
 }
 
 .iconButtonInner_a77fde {
@@ -132,7 +132,7 @@
 }
 
 .progressTextOverlay_bb1069 {
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     opacity: .75;
     z-index: 1
 }
@@ -156,13 +156,13 @@
 }
 
 .modalBg_de2fa0 {
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border-radius: 12px;
     overflow: hidden
 }
 
 .modalContent_de2fa0 {
-    background-color: var(--bg-base-tertiary);
+    background-color: var(--background-base-lowest);
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -293,6 +293,7 @@
 }
 
 .videoControlsBtnCont_de2fa0 {
+    border-radius: 4px;
     height: 24px
 }
 
@@ -462,7 +463,7 @@
 
 .transcriptCont_de2fa0 {
     align-items: flex-start;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border: 1px solid var(--alpha-primary-500048,rgba(78,80,88,.48));
     border-radius: 16px;
     bottom: 24px;
@@ -652,7 +653,7 @@
 .pauseText_de2fa0 {
     -webkit-backdrop-filter: blur(15.85px);
     backdrop-filter: blur(15.85px);
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     border-radius: 12px;
     left: 50%;
     opacity: .9;
@@ -682,6 +683,26 @@
 
 .theme-light .footerBtn_de2fa0:hover {
     background-color: var(--white-600)!important
+}
+
+:-webkit-full-screen .endScreenPanel_de2fa0:focus-visible,:-webkit-full-screen .videoControlsBtnCont_de2fa0:focus-visible {
+    outline: 4px solid var(--blue-345);
+    outline-offset: 2px
+}
+
+:fullscreen .endScreenPanel_de2fa0:focus-visible,:fullscreen .videoControlsBtnCont_de2fa0:focus-visible {
+    outline: 4px solid var(--blue-345);
+    outline-offset: 2px
+}
+
+:-webkit-full-screen .volumeSlider_de2fa0:focus-within {
+    outline: 4px solid var(--blue-345);
+    outline-offset: 2px
+}
+
+:fullscreen .volumeSlider_de2fa0:focus-within {
+    outline: 4px solid var(--blue-345);
+    outline-offset: 2px
 }
 
 .endScreenOverlay_afedfc {
@@ -855,6 +876,16 @@
     width: 100%
 }
 
+:-webkit-full-screen .hitboxArea__370d1:focus-visible .progress__370d1 {
+    outline: 4px solid var(--blue-345);
+    outline-offset: 2px
+}
+
+:fullscreen .hitboxArea__370d1:focus-visible .progress__370d1 {
+    outline: 4px solid var(--blue-345);
+    outline-offset: 2px
+}
+
 .progressGlow__370d1 {
     box-shadow: 0 0 27.8px 2px var(--white)
 }
@@ -898,4 +929,4 @@
     background-color: var(--white)
 }
 
-/*# sourceMappingURL=d7beea9eafe3efbe.css.map*/
+/*# sourceMappingURL=85466c5665940eb2.css.map*/

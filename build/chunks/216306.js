@@ -23,9 +23,9 @@ var r = n(73800),
   I = n(703656),
   g = n(592125),
   m = n(324067),
-  f = n(306680),
+  N = n(306680),
   O = n(709054),
-  N = n(981631),
+  f = n(981631),
   h = n(176505),
   R = n(443063),
   p = n(490897),
@@ -38,13 +38,13 @@ function C(e, t) {
 function b(e, t, n, l) {
   l = l.toLowerCase();
   let s = (0, _.g)(e),
-    a = r.useCallback((e, t) => !(s && e.channel.hasFlag(h.zZ.IS_GUILD_RESOURCE_CHANNEL)) && e.channel.type !== N.d4z.GUILD_DIRECTORY && (0 === t.length || i()(t, e.channel.name.toLowerCase()) || e.channel.topic.toLowerCase().includes(t)), [s]);
+    a = r.useCallback((e, t) => !(s && e.channel.hasFlag(h.zZ.IS_GUILD_RESOURCE_CHANNEL)) && e.channel.type !== f.d4z.GUILD_DIRECTORY && (0 === t.length || i()(t, e.channel.name.toLowerCase()) || e.channel.topic.toLowerCase().includes(t)), [s]);
   return r.useMemo(() => {
     let e = {
       null: [],
       _categories: []
     };
-    return n[N.d4z.GUILD_CATEGORY].forEach(n => {
+    return n[f.d4z.GUILD_CATEGORY].forEach(n => {
       let {
         channel: r
       } = n;
@@ -74,8 +74,8 @@ function v(e, t) {
   (0, T.n)(e, t), (0, c.y5)(t.map(e => ({
     channelId: e,
     readStateType: p.W.CHANNEL,
-    messageId: f.ZP.lastMessageId(e)
-  }))), null != n && (0, I.uL)(N.Z5c.CHANNEL(e, n))
+    messageId: N.ZP.lastMessageId(e)
+  }))), null != n && (0, I.uL)(f.Z5c.CHANNEL(e, n))
 }
 
 function U(e, t, n, r) {
@@ -120,6 +120,6 @@ function L(e) {
 function M(e) {
   var t;
   return S.intl.formatToPlainString(S.t["8N0BHR"], {
-    timeAgo: a()(O.default.extractTimestamp(null != (t = f.ZP.lastMessageId(e)) ? t : e)).fromNow()
+    timeAgo: a()(O.default.extractTimestamp(null != (t = N.ZP.lastMessageId(e)) ? t : e)).fromNow()
   })
 }

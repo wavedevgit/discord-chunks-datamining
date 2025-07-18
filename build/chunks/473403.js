@@ -21,9 +21,9 @@ var o = n(442837),
   I = n(690221),
   g = n(430824),
   m = n(158776),
-  f = n(111583),
+  N = n(111583),
   O = n(594174),
-  N = n(998502),
+  f = n(998502),
   h = n(981631),
   R = n(490897),
   p = n(915887),
@@ -72,7 +72,7 @@ let D = {
 function v(e) {
   e.preventDefault(), e.stopPropagation()
 }
-let U = N.ZP.getEnableHardwareAcceleration() ? u.Xo$ : u.qEK;
+let U = f.ZP.getEnableHardwareAcceleration() ? u.Xo$ : u.qEK;
 
 function L(e) {
   let {
@@ -90,7 +90,7 @@ function M(e) {
   let {
     channel: t,
     size: n = u.EFr.SIZE_20
-  } = e, l = (0, o.e7)([O.default], () => O.default.getUser(null == t ? void 0 : t.recipients[0])), i = (0, o.e7)([f.Z], () => !(null == l || null == t || t.isMultiUserDM()) && null != f.Z.getTypingUsers(null == t ? void 0 : t.id)[null == l ? void 0 : l.id]), {
+  } = e, l = (0, o.e7)([O.default], () => O.default.getUser(null == t ? void 0 : t.recipients[0])), i = (0, o.e7)([N.Z], () => !(null == l || null == t || t.isMultiUserDM()) && null != N.Z.getTypingUsers(null == t ? void 0 : t.id)[null == l ? void 0 : l.id]), {
     status: s,
     isMobile: a
   } = (0, o.cj)([m.Z], () => null == l || null == t || t.isMultiUserDM() ? {
@@ -179,9 +179,9 @@ let x = e => {
       connected: T,
       unread: g,
       locked: m,
-      hasActiveThreads: f,
+      hasActiveThreads: N,
       onClick: O,
-      onMouseDown: N,
+      onMouseDown: f,
       onMouseUp: U,
       onContextMenu: L,
       connectDragPreview: M,
@@ -192,9 +192,9 @@ let x = e => {
       channel: {
         type: G
       },
-      onMouseEnter: z,
-      onMouseLeave: B,
-      "aria-label": Z,
+      onMouseEnter: Z,
+      onMouseLeave: z,
+      "aria-label": B,
       children: F,
       guild: V,
       channelTypeOverride: H,
@@ -233,7 +233,7 @@ let x = e => {
         className: S.link,
         onClick: () => null == O ? void 0 : O(i)
       }, ee), {
-        "aria-label": Z,
+        "aria-label": B,
         focusProps: {
           enabled: !1
         },
@@ -243,7 +243,7 @@ let x = e => {
             className: j,
             channel: i,
             guild: V,
-            hasActiveThreads: f,
+            hasActiveThreads: N,
             locked: m,
             withGuildIcon: Y
           }), (0, r.jsx)(_.Z, {
@@ -280,7 +280,7 @@ let x = e => {
       },
       children: (0, r.jsxs)("div", {
         ref: t,
-        className: s()(P, null != O || null != U || null != N || k ? S.wrapper : S.notInteractive, (() => {
+        className: s()(P, null != O || null != U || null != f || k ? S.wrapper : S.notInteractive, (() => {
           if (d) return s()(p.selectedChannel, D.SELECTED);
           if (T) return s()(p.selectedChannel, D.CONNECTED);
           if (m) return D.LOCKED;
@@ -308,10 +308,10 @@ let x = e => {
           }
         }(null != H ? H : G)),
         onMouseUp: e => null == U ? void 0 : U(e, i),
-        onMouseDown: e => null == N ? void 0 : N(e, i),
+        onMouseDown: e => null == f ? void 0 : f(e, i),
         onContextMenu: e => null == L ? void 0 : L(e, i),
-        onMouseEnter: z,
-        onMouseLeave: B,
+        onMouseEnter: Z,
+        onMouseLeave: z,
         children: [c || !g ? null : (0, r.jsx)("div", {
           className: s()(S.unread, X ? S.unreadImportant : void 0)
         }), null != (n = null == M ? void 0 : M(ea)) ? n : ea]

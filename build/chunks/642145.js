@@ -1,8 +1,8 @@
-/** Chunk was on 88622 **/
-n.d(t, {
-  Y: () => r
+/** Chunk was on 27458 **/
+r.d(t, {
+  Y: () => n
 });
-let r = {
+let n = {
   tension: 250,
   friction: 20
 }

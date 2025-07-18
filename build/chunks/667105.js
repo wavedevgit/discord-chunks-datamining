@@ -237,7 +237,9 @@ function B(e) {
               sourceQuestContent: y
             }), p ? (0, A.openVideoQuestModal)({
               quest: n,
-              sourceQuestContent: y
+              questContent: o,
+              sourceQuestContent: y,
+              sourceQuestContentCTA: h.jZ.ACCEPT_QUEST
             }) : b && n.config.features.includes(N.S7.START_QUEST_CTA) && M()
           }
         };
@@ -262,7 +264,9 @@ function B(e) {
           tooltipText: P.intl.string(P.t.hsbwjo),
           onClick: () => (0, A.openVideoQuestModal)({
             quest: n,
-            sourceQuestContent: y
+            questContent: o,
+            sourceQuestContent: y,
+            sourceQuestContentCTA: h.jZ.WATCH_VIDEO
           })
         };
         if (b && n.config.features.includes(N.S7.START_QUEST_CTA)) {

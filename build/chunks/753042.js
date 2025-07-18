@@ -21,7 +21,7 @@ var r = n(255367),
 function m(e) {
   let {
     member: t
-  } = e, n = (0, i.e7)([E.Z], () => E.Z.getGuild(t.guildId), [t.guildId]), m = (0, u.mh)(t.userId, t.guildId), f = (0, u.mV)(t.userId, t.guildId), O = (0, u.LD)(t.userId), N = (0, u.wi)(t.userId, t.guildId);
+  } = e, n = (0, i.e7)([E.Z], () => E.Z.getGuild(t.guildId), [t.guildId]), m = (0, u.mh)(t.userId, t.guildId), N = (0, u.mV)(t.userId, t.guildId), O = (0, u.LD)(t.userId), f = (0, u.wi)(t.userId, t.guildId);
   return (l.useEffect(() => {
     (0, o.zO)(t.guildId)
   }, [t.guildId]), null == n) ? null : (0, r.jsx)(s.xJW, {
@@ -50,7 +50,7 @@ function m(e) {
           height: A.Mn,
           color: s.TVs.colors.STATUS_DANGER
         })
-      }), f !== u.qc.NO_GATE && (0, r.jsx)(A._2, {
+      }), N !== u.qc.NO_GATE && (0, r.jsx)(A._2, {
         icon: (0, r.jsx)(s.snC, {
           size: "custom",
           width: A.Mn,
@@ -61,7 +61,7 @@ function m(e) {
           color: "text-default",
           children: I.intl.string(I.t["93hqlp"])
         }),
-        description: f === u.qc.AGREED ? (0, r.jsx)(s.sV5, {
+        description: N === u.qc.AGREED ? (0, r.jsx)(s.sV5, {
           size: "custom",
           width: A.Mn,
           height: A.Mn,
@@ -104,7 +104,7 @@ function m(e) {
         description: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "text-default",
-          children: N
+          children: f
         })
       }), (0, r.jsx)(A._2, {
         icon: (0, r.jsx)(s.ejJ, {
@@ -123,7 +123,7 @@ function m(e) {
           children: (0, r.jsx)(c.ZP, {
             userId: t.userId,
             guildId: t.guildId,
-            showInviterAsFooter: !0,
+            showJoinMethodContextAsFooter: !0,
             onClickInviter: e => {
               let n = d.Z.getChannelId();
               (0, _.r)(t.guildId, e.id, null != n ? n : T.lds)

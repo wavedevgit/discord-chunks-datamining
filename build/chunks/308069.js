@@ -1,11 +1,11 @@
-/** Chunk was on 88622 **/
+/** Chunk was on 17218 **/
 n.d(t, {
   Z: () => j
 });
 var r = n(255367),
-  s = n(73800),
-  o = n(120356),
-  a = n.n(o),
+  o = n(73800),
+  s = n(120356),
+  a = n.n(s),
   i = n(104721),
   l = n(481060),
   c = n(617136),
@@ -22,29 +22,29 @@ let j = e => {
   let {
     quest: t,
     expansionSpring: n,
-    onCtxMenuSelect: o,
+    onCtxMenuSelect: s,
     onCtxMenuOpen: j,
     onCtxMenuClose: _,
     useReducedMotion: v,
     isExpanded: y,
     isExpansionAnimationComplete: C
-  } = e, O = (0, u.aM)(), E = s.useCallback(() => {
+  } = e, O = (0, u.aM)(), E = o.useCallback(() => {
     (0, g.openDisclosureModal)(t, {
       content: d.jn.QUEST_BAR_V2,
       ctaContent: c.jZ.OPEN_DISCLOSURE,
       sourceQuestContent: d.jn.QUEST_BAR_V2
     })
-  }, [t]), S = s.useCallback(() => {
+  }, [t]), w = o.useCallback(() => {
     (0, p.nc)(t, {
       content: d.jn.QUEST_BAR_V2,
       ctaContent: c.jZ.OPEN_GAME_LINK,
       impressionId: O,
       sourceQuestContent: d.jn.QUEST_BAR_V2
     })
-  }, [O, t]), w = y && C, P = (0, r.jsx)(l.P3F, {
-    onClick: S,
+  }, [O, t]), S = y && C, T = (0, r.jsx)(l.P3F, {
+    onClick: w,
     className: a()(b.clickable, {
-      [b.logo]: w
+      [b.logo]: S
     }),
     children: (0, r.jsx)(m.ZP, {
       quest: t,
@@ -54,7 +54,7 @@ let j = e => {
   });
   return (0, r.jsxs)(i.animated.div, {
     className: a()(b.wrapper, b.rewardHighlightWrapper, {
-      [b.interactable]: w
+      [b.interactable]: S
     }),
     style: {
       transform: (0, i.to)([n.to({
@@ -73,8 +73,8 @@ let j = e => {
     }), (0, r.jsx)(x.Z, {
       quest: t,
       expansionSpring: n,
-      isFullyExpanded: w,
-      partnerBranding: P,
+      isFullyExpanded: S,
+      partnerBranding: T,
       useReducedMotion: v
     }), (0, r.jsxs)(i.animated.div, {
       className: b.promotedBadgeWrapper,
@@ -98,7 +98,7 @@ let j = e => {
       }), (0, r.jsx)(f.r, {
         onOpen: j,
         onClose: _,
-        onSelect: o,
+        onSelect: s,
         questContent: d.jn.QUEST_BAR_V2,
         quest: t,
         shouldShowDisclosure: !0,

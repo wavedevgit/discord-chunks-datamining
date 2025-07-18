@@ -18,9 +18,9 @@ var r = n(255367),
   I = n(433355),
   g = n(271383),
   m = n(594174),
-  f = n(189432),
+  N = n(189432),
   O = n(356778),
-  N = n(370595),
+  f = n(370595),
   h = n(50493),
   R = n(12740),
   p = n(450355);
@@ -48,14 +48,14 @@ function S(e) {
     }
   });
   let w = l.useCallback(e => {
-      null != U && (L.current = e.target.scrollTop, (0, f.r)(S, i, U.baseChannelId, {
+      null != U && (L.current = e.target.scrollTop, (0, N.r)(S, i, U.baseChannelId, {
         modViewPanel: h.k.MESSAGE_HISTORY,
         additionalSearchQuery: M,
         scrollOffset: L.current
       }))
     }, [S, i, U, M]),
     G = (0, a.throttle)(w, 300),
-    z = l.useCallback(e => {
+    Z = l.useCallback(e => {
       var t, n;
       if (null == U) return;
       let r = (t = function(e) {
@@ -87,14 +87,14 @@ function S(e) {
       })(Object(n)).forEach(function(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t);
-      x(r), (0, f.r)(S, i, U.baseChannelId, {
+      x(r), (0, N.r)(S, i, U.baseChannelId, {
         modViewPanel: h.k.MESSAGE_HISTORY,
         additionalSearchQuery: r,
         scrollOffset: L.current
       })
     }, [S, i, U, M]),
-    B = null != (n = null == M ? void 0 : M.offset) ? n : 0,
-    Z = (0, o.e7)([d.Z], () => {
+    z = null != (n = null == M ? void 0 : M.offset) ? n : 0,
+    B = (0, o.e7)([d.Z], () => {
       if (null == P.result) return [];
       let e = P.result.messages,
         t = (0, E.nC)("");
@@ -118,7 +118,7 @@ function S(e) {
         isSearching: !0,
         isIndexing: !1,
         isHistoricalIndexing: !1,
-        offset: B,
+        offset: z,
         totalResults: 0,
         hasError: !1,
         showBlockedResults: !1,
@@ -128,16 +128,16 @@ function S(e) {
         isSearching: !1,
         isIndexing: null != (t = P.result.doing_deep_historical_index) && t,
         isHistoricalIndexing: null != (n = P.result.doing_deep_historical_index) && n,
-        offset: B,
+        offset: z,
         totalResults: null != (r = P.result.total_results) ? r : 0,
         hasError: !1,
         showBlockedResults: !1,
         showNoResultsAlt: !1
       }
-    }, [P.result, B]);
+    }, [P.result, z]);
   return null == j || null == y || null == F ? null : (0, r.jsxs)("div", {
     className: s()(R.container, b),
-    children: [(0, r.jsx)(N.Z, {
+    children: [(0, r.jsx)(f.Z, {
       guildId: S,
       userId: i,
       onNavigate: D
@@ -146,14 +146,14 @@ function S(e) {
       ref: v,
       onScroll: G,
       children: (0, r.jsx)(T.Z, {
-        searchResults: Z,
+        searchResults: B,
         search: F,
         searchId: i,
         renderEmbeds: !0,
         blockCount: 0,
         ignoreCount: 0,
         scrollTo: () => {},
-        onPageChange: z
+        onPageChange: Z
       })
     })]
   })

@@ -1,10 +1,10 @@
-/** Chunk was on 88622 **/
+/** Chunk was on 17218 **/
 n.d(t, {
   Z: () => c
 });
 var r = n(255367),
-  s = n(755721),
-  o = n(481060),
+  o = n(755721),
+  s = n(481060),
   a = n(388032),
   i = n(374578);
 
@@ -13,7 +13,7 @@ function l(e) {
     onClick: t,
     children: n
   } = e;
-  return (0, r.jsx)(s.zx, {
+  return (0, r.jsx)(o.zx, {
     onClick: t,
     className: i.button,
     innerClassName: i.buttonInner,
@@ -30,12 +30,12 @@ let c = function(e) {
     className: i.buttons,
     children: [(0, r.jsxs)(l, {
       onClick: t,
-      children: [a.intl.string(a.t.QXc019), (0, r.jsx)(o.pzj, {
+      children: [a.intl.string(a.t.QXc019), (0, r.jsx)(s.pzj, {
         size: "sm"
       })]
     }), (0, r.jsxs)(l, {
       onClick: n,
-      children: [a.intl.string(a.t["8lAfuL"]), (0, r.jsx)(o.iWm, {
+      children: [a.intl.string(a.t["8lAfuL"]), (0, r.jsx)(s.iWm, {
         size: "sm"
       })]
     })]

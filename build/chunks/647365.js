@@ -1,11 +1,11 @@
-/** Chunk was on 88622 **/
+/** Chunk was on 17218 **/
 n.d(t, {
   Z: () => i
 });
 var r = n(255367);
 n(73800);
-var s = n(453217),
-  o = n(578080),
+var o = n(453217),
+  s = n(578080),
   a = n(665600);
 let i = function(e) {
   let {
@@ -20,7 +20,7 @@ let i = function(e) {
     quest: m,
     useReducedMotion: f
   } = e;
-  return (0, r.jsx)(o.Z, {
+  return (0, r.jsx)(s.Z, {
     expansionSpring: i,
     className: a.content,
     collapsedHeight: t,
@@ -32,7 +32,7 @@ let i = function(e) {
     quest: m,
     useReducedMotion: f,
     ref: n,
-    children: (0, r.jsx)(s.Z, {
+    children: (0, r.jsx)(o.Z, {
       className: a.content,
       expansionSpring: i,
       isExpanded: l,

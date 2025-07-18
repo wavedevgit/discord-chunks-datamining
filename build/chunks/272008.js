@@ -9,18 +9,19 @@ n.d(t, {
   QB: () => M,
   T0: () => F,
   Wf: () => B,
-  cT: () => z,
+  cT: () => q,
   eT: () => V,
-  gU: () => X,
+  gU: () => Q,
   gl: () => U,
   is: () => w,
   it: () => D,
-  lL: () => q,
+  lL: () => X,
+  lx: () => K,
   m0: () => x,
   nE: () => G,
   pf: () => j,
   qm: () => W,
-  w: () => K,
+  w: () => z,
   xw: () => L
 }), n(415506);
 var r = n(990547),
@@ -452,7 +453,14 @@ function W(e, t, n) {
     progress: n
   })
 }
-async function K(e) {
+
+function K(e) {
+  a.Z.dispatch({
+    type: "QUESTS_RESET_OPTIMISTIC_PROGRESS",
+    questId: e
+  })
+}
+async function z(e) {
   var t, n, r, u, f, _, m;
   a.Z.dispatch({
     type: "QUESTS_FETCH_QUEST_TO_DELIVER_BEGIN",
@@ -500,7 +508,7 @@ async function K(e) {
     })
   }
 }
-async function z(e, t) {
+async function q(e, t) {
   var n;
   await f.Z.post({
     url: I.ANM.QUESTS_VIDEO_PROGRESS(e),
@@ -518,7 +526,7 @@ async function z(e, t) {
     rejectWithError: !1
   })
 }
-async function q(e, t) {
+async function X(e, t) {
   let n = (0, y.z0)(e, t, y.n1.VIDEO, y.O.TRANSCRIPT);
   if (null == n) return void b.ZP.getState().setTranscriptAsset({
     questId: e.id,
@@ -545,7 +553,7 @@ async function q(e, t) {
     })
   }
 }
-async function X(e) {
+async function Q(e) {
   let t = await i.tn.get({
     url: I.ANM.QUEST(e),
     rejectWithError: !1

@@ -16,8 +16,8 @@ n.d(t, {
   N5: () => eg,
   QM: () => eT,
   V$: () => eE,
-  _$: () => eN,
-  cT: () => ef,
+  _$: () => ef,
+  cT: () => eN,
   em: () => em,
   hQ: () => eO,
   hx: () => W,
@@ -26,7 +26,7 @@ n.d(t, {
   nm: () => e_,
   oD: () => k,
   pA: () => en,
-  pY: () => Z,
+  pY: () => B,
   pi: () => et,
   rK: () => el,
   uB: () => ee,
@@ -50,9 +50,9 @@ var r = n(654861),
   I = n(236413),
   g = n(45966),
   m = n(563534),
-  f = n(427679),
+  N = n(427679),
   O = n(926491),
-  N = n(387667),
+  f = n(387667),
   h = n(592125),
   R = n(485386),
   p = n(699516),
@@ -100,11 +100,11 @@ function w(e, t) {
   }), e
 }
 let G = new A.Z("AuditLogUtils"),
-  z = [E.J6.DAYS, E.J6.HOURS, E.J6.MINUTES, E.J6.SECONDS],
-  B = () => ({
+  Z = [E.J6.DAYS, E.J6.HOURS, E.J6.MINUTES, E.J6.SECONDS],
+  z = () => ({
     [L.zUn.REASON]: () => j.t["2IW3Cw"]
   }),
-  Z = () => y({
+  B = () => y({
     [L.zUn.NAME]: () => j.t.CkDiND,
     [L.zUn.DESCRIPTION]: eD(j.t.RP3Ey8, j.t.QAVj1d),
     [L.zUn.ICON_HASH]: () => j.t.iLZ8Q0,
@@ -148,7 +148,7 @@ let G = new A.Z("AuditLogUtils"),
     [L.zUn.SYSTEM_CHANNEL_FLAG_PREMIUM_SUBSCRIPTIONS]: () => j.t["+fQAen"],
     [L.zUn.SYSTEM_CHANNEL_FLAG_REMINDER_NOTIFICATIONS]: () => j.t.E1fc4u,
     [L.zUn.SYSTEM_CHANNEL_FLAG_JOIN_NOTIFICATION_REPLIES]: () => j.t.XbwtSE
-  }, B()),
+  }, z()),
   F = () => ({
     [L.zUn.NAME]: eb(j.t.f8Rh0d, j.t.ebD4Qk),
     [L.zUn.POSITION]: eb(j.t.isS8tb, j.t.t5uBio),
@@ -181,7 +181,7 @@ let G = new A.Z("AuditLogUtils"),
     [L.zUn.COMMUNICATION_DISABLED_UNTIL]: ev(j.t.LXTQr6, j.t.LXTQr6, j.t.ULSdnJ),
     [L.zUn.BYPASSES_VERIFICATION]: eU(j.t.NBPBur, j.t.zATosr),
     [L.zUn.AUTO_MODERATION_TRIGGERED_RULE_NAME]: () => j.t.YbouFB
-  }, B()),
+  }, z()),
   H = () => y({
     [L.zUn.NAME]: eb(j.t.QBmlaG, j.t.Lfs4r6),
     [L.zUn.DESCRIPTION]: eb(j.t.XeYKWF, j.t.PSfeIi),
@@ -195,21 +195,21 @@ let G = new A.Z("AuditLogUtils"),
     [L.zUn.MENTIONABLE]: eU(j.t.LL8VFB, j.t.Z7xzmJ),
     [L.zUn.ICON_HASH]: () => j.t["iEE79/"],
     [L.zUn.UNICODE_EMOJI]: () => j.t.KiLMMz
-  }, B()),
-  k = () => w(y({}, B()), {
+  }, z()),
+  k = () => w(y({}, z()), {
     [L.zUn.TITLE]: eb(j.t.sNpuy8, j.t["3Ukc/v"]),
     [L.zUn.DESCRIPTION]: eb(j.t.PP1q09, j.t.z7pYLi),
     [L.zUn.OPTIONS]: () => j.t["3G5C9/"],
     [L.zUn.SINGLE_SELECT]: eU(j.t.v4WnR0, j.t["6Qg3uL"]),
     [L.zUn.REQUIRED]: eU(j.t["0MPAMz"], j.t.pwsXio)
   }),
-  K = () => w(y({}, B()), {
+  K = () => w(y({}, z()), {
     [L.zUn.DEFAULT_CHANNEL_IDS]: () => j.t["8M+D2t"],
     [L.zUn.ENABLE_DEFAULT_CHANNELS]: eU(j.t["EYd/lp"], j.t["36OZeX"]),
     [L.zUn.ENABLE_ONBOARDING_PROMPTS]: eU(j.t.V3u8PT, j.t.r66lc3),
     [L.zUn.ENABLED]: eU(j.t.SODVIi, j.t.u8HY5e)
   }),
-  W = () => w(y({}, B()), {
+  W = () => w(y({}, z()), {
     [L.zUn.WELCOME_MESSAGE]: () => j.t.dKQ1xc,
     [L.zUn.NEW_MEMBER_ACTIONS]: () => j.t.jDUInp,
     [L.zUn.RESOURCE_CHANNELS]: () => j.t.SIX0mp
@@ -227,7 +227,7 @@ let G = new A.Z("AuditLogUtils"),
     [L.zUn.FLAGS]: eL({
       [o.$.IS_GUEST_INVITE]: j.t.XYZMbG
     })
-  }, B()),
+  }, z()),
   Y = () => ({
     [L.zUn.CHANNEL_ID]: eb(j.t.jhPpra, j.t.ar4qYG),
     [L.zUn.NAME]: eb(j.t.ZVGrzc, j.t.tywdZW),
@@ -236,12 +236,12 @@ let G = new A.Z("AuditLogUtils"),
   }),
   J = () => y({
     [L.zUn.NAME]: eb(j.t.ahU1o6, j.t["wxs+vb"])
-  }, B()),
+  }, z()),
   X = () => y({
     [L.zUn.NAME]: eb(j.t.cdl0Ym, j.t.o3W2l5),
     [L.zUn.TAGS]: eb(j.t["zwL+S0"], j.t.VYfKAw),
     [L.zUn.DESCRIPTION]: eb(j.t.XeYKWF, j.t.PSfeIi)
-  }, B()),
+  }, z()),
   Q = () => y({
     [L.zUn.ENABLE_EMOTICONS]: eU(j.t["FI0m5+"], j.t.olpKCw),
     [L.zUn.EXPIRE_BEHAVIOR]: eL({
@@ -249,14 +249,14 @@ let G = new A.Z("AuditLogUtils"),
       1: j.t.vjlW6u
     }),
     [L.zUn.EXPIRE_GRACE_PERIOD]: () => j.t.iovXMT
-  }, B()),
+  }, z()),
   $ = () => y({
     [L.zUn.TOPIC]: eb(j.t["m+veAg"], j.t.esQcxs),
     [L.zUn.PRIVACY_LEVEL]: eL({
       [P.j8.GUILD_ONLY]: j.t["EC+CDg"],
       [P.j8.PUBLIC]: j.t["pK/WGx"]
     })
-  }, B()),
+  }, z()),
   ee = () => y({
     [L.zUn.NAME]: () => j.t["21EXHR"],
     [L.zUn.DESCRIPTION]: () => j.t.Vm1of3,
@@ -279,7 +279,7 @@ let G = new A.Z("AuditLogUtils"),
     [L.zUn.CHANNEL_ID]: eD(j.t.yJBIcX, j.t["+PqSsr"]),
     [L.zUn.LOCATION]: eD(j.t.GaMBHx, j.t.PsICk5),
     [L.zUn.IMAGE_HASH]: eD(j.t.S3vcRE, j.t.KQu47O)
-  }, B()),
+  }, z()),
   et = () => y({
     [L.zUn.SCHEDULED_START_TIME]: eD(j.t.zMIYVl, j.t.fzF8GR),
     [L.zUn.SCHEDULED_END_TIME]: eD(j.t.vONSQE, j.t.IlIti4),
@@ -289,7 +289,7 @@ let G = new A.Z("AuditLogUtils"),
         else if (e.oldValue && !e.newValue) return j.t.dRNTWV
       }
     }
-  }, B()),
+  }, z()),
   en = () => y({
     [L.zUn.NAME]: eb(j.t.tUKRzc, j.t.kPCHOD),
     [L.zUn.ARCHIVED]: eU(j.t.jDi9FB, j.t.F6dvbW),
@@ -298,9 +298,9 @@ let G = new A.Z("AuditLogUtils"),
     [L.zUn.AUTO_ARCHIVE_DURATION]: eb(j.t.LuaG39, j.t["18d9qq"]),
     [L.zUn.RATE_LIMIT_PER_USER]: eb(j.t["7lirhI"], j.t.j4CCJS),
     [L.zUn.FLAGS]: () => j.t.sSAQtr
-  }, B()),
+  }, z()),
   er = e => {
-    let t = y({}, B());
+    let t = y({}, z());
     return null == e || e.forEach(e => {
       e.newValue ? e.newValue.permission ? t[e.key] = () => j.t["JH+89P"] : t[e.key] = () => j.t.HUrFDg : t[e.key] = () => j.t.vynxnZ
     }), t
@@ -323,20 +323,20 @@ let G = new A.Z("AuditLogUtils"),
     [L.zUn.AUTO_MODERATION_REMOVE_REGEX_PATTERNS]: () => j.t.OQDadX,
     [L.zUn.AUTO_MODERATION_ADD_ALLOW_LIST]: () => j.t["FvvR+P"],
     [L.zUn.AUTO_MODERATION_REMOVE_ALLOW_LIST]: () => j.t.p5nSv7
-  }, B()),
+  }, z()),
   ei = () => y({
     [L.zUn.NAME]: eb(j.t.VOtRSE, j.t.OK7B8P),
     [L.zUn.VOLUME]: eb(j.t.igrDBw, j.t.L5lDFB),
     [L.zUn.EMOJI_NAME]: ev(j.t.IIanaW, j.t.z4w4U1, j.t.V8Tfyc),
     [L.zUn.EMOJI_ID]: ev(j.t.ainxMD, j.t["2NPsYm"], j.t["8crtnp"])
-  }, B()),
+  }, z()),
   es = () => y({
     [L.zUn.VERIFICATION_ENABLED]: e => !0 === e.newValue ? j.t.fnkzDQ : j.t.WYT6kZ,
     [L.zUn.MANUAL_APPROVAL_ENABLED]: e => !0 === e.newValue ? j.t.jzSvVV : j.t.WxyOtr
-  }, B()),
+  }, z()),
   ea = () => y({
     [L.zUn.STATUS]: () => j.t.HyCSnJ
-  }, B()),
+  }, z()),
   eo = () => ({
     [L.zUn.DESCRIPTION]: () => j.t.nsUZKS,
     [L.zUn.BRAND_COLOR_PRIMARY]: () => j.t.qe9mgI,
@@ -630,7 +630,7 @@ function eT(e) {
     if ((null == t ? void 0 : t.newValue) != null) {
       let n = new Date(null == t ? void 0 : t.newValue).getTime() - v.default.extractTimestamp(e.id),
         r = Math.round(n / 1e3 / 60),
-        l = (0, E.CI)(r, z);
+        l = (0, E.CI)(r, Z);
       if (null == l.unit || null == l.time) return null;
       if (l.unit in eA) {
         let e = l.unit,
@@ -883,7 +883,7 @@ function em(e) {
   return null
 }
 
-function ef(e) {
+function eN(e) {
   switch (e) {
     case M.zZ.GUILD_FEED_REMOVED:
       return j.intl.string(j.t.S5kuWV);
@@ -997,7 +997,7 @@ function eO(e, t) {
   return null
 }
 
-function eN(e, t) {
+function ef(e, t) {
   let n = [];
   return e.forEach(e => {
     let r = function(e, t) {
@@ -1032,7 +1032,7 @@ function eN(e, t) {
           case L.KFR.STAGE_INSTANCE:
             return eS(e, L.zUn.TOPIC, e => {
               var n;
-              return null == (n = Object.values(f.Z.getStageInstancesByGuild(t.id))) ? void 0 : n.find(t => t.id === e)
+              return null == (n = Object.values(N.Z.getStageInstancesByGuild(t.id))) ? void 0 : n.find(t => t.id === e)
             }, e => e.topic);
           case L.KFR.GUILD_SCHEDULED_EVENT:
           case L.KFR.GUILD_SCHEDULED_EVENT_EXCEPTION:
@@ -1137,11 +1137,11 @@ function eN(e, t) {
                     removed: r
                   } = eh(e.oldValue, e.newValue);
                 if (n.length > 0) {
-                  let e = new N.ms(L.zUn.PERMISSIONS_GRANTED, null, n);
+                  let e = new f.ms(L.zUn.PERMISSIONS_GRANTED, null, n);
                   t.push(e)
                 }
                 if (r.length > 0) {
-                  let e = new N.ms(L.zUn.PERMISSIONS_DENIED, null, r);
+                  let e = new f.ms(L.zUn.PERMISSIONS_DENIED, null, r);
                   t.push(e)
                 }
                 return t
@@ -1154,11 +1154,11 @@ function eN(e, t) {
                     removed: r
                   } = eh(e.oldValue, e.newValue);
                 if (n.length > 0) {
-                  let r = new N.ms(e.key, null, n);
+                  let r = new f.ms(e.key, null, n);
                   t.push(r)
                 }
                 if (r.length > 0) {
-                  let e = new N.ms(L.zUn.PERMISSIONS_RESET, r, r);
+                  let e = new f.ms(L.zUn.PERMISSIONS_RESET, r, r);
                   t.push(e)
                 }
                 return t
@@ -1185,11 +1185,11 @@ function eN(e, t) {
                     }
                   }(e.oldValue, e.newValue);
                 if (n.length > 0) {
-                  let r = new N.ms(e.key, null, n);
+                  let r = new f.ms(e.key, null, n);
                   t.push(r)
                 }
                 if (r.length > 0) {
-                  let n = new N.ms(e.key, r, null);
+                  let n = new f.ms(e.key, r, null);
                   t.push(n)
                 }
                 return t
@@ -1213,7 +1213,7 @@ function eN(e, t) {
                   let n = (e.oldValue & t) === t,
                     l = (e.newValue & t) === t;
                   if (n === l) return;
-                  let s = new N.ms(r[t], !n, !l);
+                  let s = new f.ms(r[t], !n, !l);
                   i.push(s)
                 }), i;
               case L.zUn.AUTO_MODERATION_ACTIONS:
@@ -1259,16 +1259,16 @@ function eN(e, t) {
                       s[e.id] = e
                     }), r.length < l.length) {
                     for (let e in s)
-                      if (null == i[e]) return new N.ms(L.zUn.AVAILABLE_TAG_ADD, null, eR(s[e]))
+                      if (null == i[e]) return new f.ms(L.zUn.AVAILABLE_TAG_ADD, null, eR(s[e]))
                   }
                   if (r.length > l.length) {
                     for (let e in i)
-                      if (null == s[e]) return new N.ms(L.zUn.AVAILABLE_TAG_DELETE, null, eR(i[e]))
+                      if (null == s[e]) return new f.ms(L.zUn.AVAILABLE_TAG_DELETE, null, eR(i[e]))
                   }
                   for (let e in i) {
                     let t = i[e],
                       n = s[e];
-                    if ((null == n ? void 0 : n.name) !== t.name || (null == n ? void 0 : n.emoji_id) !== t.emoji_id || (null == n ? void 0 : n.emoji_name) !== t.emoji_name) return new N.ms(L.zUn.AVAILABLE_TAG_EDIT, eR(t), eR(n))
+                    if ((null == n ? void 0 : n.name) !== t.name || (null == n ? void 0 : n.emoji_id) !== t.emoji_id || (null == n ? void 0 : n.emoji_name) !== t.emoji_name) return new f.ms(L.zUn.AVAILABLE_TAG_EDIT, eR(t), eR(n))
                   }
                   return e
                 }(e);
@@ -1316,7 +1316,7 @@ function eR(e) {
 function ep(e, t, n) {
   let r = e.newValue,
     l = e.oldValue;
-  return null != e.newValue && (r = t(e.newValue), null != n && null != r && (r = n(r))), null != e.oldValue && (l = t(e.oldValue), null != n && null != l && (l = n(l))), new N.ms(e.key, l || e.oldValue, r || e.newValue)
+  return null != e.newValue && (r = t(e.newValue), null != n && null != r && (r = n(r))), null != e.oldValue && (l = t(e.oldValue), null != n && null != l && (l = n(l))), new f.ms(e.key, l || e.oldValue, r || e.newValue)
 }
 
 function eS(e, t, n, r, l) {

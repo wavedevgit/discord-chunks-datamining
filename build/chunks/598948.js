@@ -21,8 +21,8 @@ var r = n(255367),
   g = n(827657),
   x = n(472596),
   v = n(201756),
-  y = n(66747),
-  O = n(852479),
+  O = n(66747),
+  y = n(852479),
   _ = n(420212),
   H = n(172796);
 let w = {
@@ -43,8 +43,8 @@ let w = {
     tension: 260
   },
   Z = e => e.shiftKey || e.key === _.vn.SHIFT,
-  R = e => e.metaKey || e.ctrlKey || ["Meta", "Control"].includes(e.key),
-  L = l.memo(function(e) {
+  L = e => e.metaKey || e.ctrlKey || ["Meta", "Control"].includes(e.key),
+  R = l.memo(function(e) {
     let {
       members: t,
       guild: n,
@@ -53,15 +53,15 @@ let w = {
       compact: s,
       onSelectRow: m,
       onResetForNewMembers: b
-    } = e, f = (0, c.e7)([C.Z], () => C.Z.useReducedMotion), _ = (0, u.f9)(), L = (0, p.n)(), [I, P] = l.useState(!1), [M, V] = l.useState(!1), E = !_ && I && M;
+    } = e, f = (0, c.e7)([C.Z], () => C.Z.useReducedMotion), _ = (0, u.f9)(), R = (0, p.n)(), [I, P] = l.useState(!1), [M, V] = l.useState(!1), E = !_ && I && M;
     l.useEffect(() => {
-      L || (P(!1), V(!1))
-    }, [L]), l.useLayoutEffect(() => {
+      R || (P(!1), V(!1))
+    }, [R]), l.useLayoutEffect(() => {
       let e = e => {
-          Z(e) && P(!0), R(e) && V(!0)
+          Z(e) && P(!0), L(e) && V(!0)
         },
         t = e => {
-          Z(e) && P(!1), R(e) && V(!1)
+          Z(e) && P(!1), L(e) && V(!1)
         };
       return window.addEventListener("keydown", e), window.addEventListener("keyup", t), () => {
         window.removeEventListener("keydown", e), window.removeEventListener("keyup", t)
@@ -91,10 +91,10 @@ let w = {
         currentPagedMembers: t
       }), (0, r.jsx)("tbody", {
         children: a === x.po.SUCCESS_FULL || a === x.po.LOADING ? (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(O.Z, {
+          children: [(0, r.jsx)(y.Z, {
             guild: n,
             onSubmit: b
-          }), k((e, t) => (0, r.jsx)(y.Z, {
+          }), k((e, t) => (0, r.jsx)(O.Z, {
             userId: t,
             guildId: n.id,
             style: e,
@@ -138,7 +138,7 @@ let w = {
       v = null != (n = null == x ? void 0 : x[0]) ? n : null;
     return l.useEffect(() => {
       (0, f.h1)(o.id, v)
-    }, [o.id, v]), (0, r.jsx)(L, {
+    }, [o.id, v]), (0, r.jsx)(R, {
       members: g,
       guild: o,
       className: i,

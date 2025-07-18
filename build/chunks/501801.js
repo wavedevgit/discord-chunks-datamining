@@ -20,9 +20,9 @@ var r = n(255367),
   I = n(592125),
   g = n(485386),
   m = n(594174),
-  f = n(934415),
+  N = n(934415),
   O = n(823379),
-  N = n(624138),
+  f = n(624138),
   h = n(51144),
   R = n(909746),
   p = n(981631),
@@ -64,7 +64,7 @@ class L extends l.PureComponent {
       targetType: t,
       action: n,
       themeOverride: l
-    } = this.props, i = null != l ? C["themeOverride".concat((0, N.De)(l))] : null, a = s()(C.icon, D[e], n === p.rsA.MESSAGE_DELETE ? C.targetMessage : n === p.rsA.AUTO_MODERATION_BLOCK_MESSAGE || n === p.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL || n === p.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || n === p.rsA.AUTO_MODERATION_QUARANTINE_USER ? C.autoModerationBlockMessage : ({
+    } = this.props, i = null != l ? C["themeOverride".concat((0, f.De)(l))] : null, a = s()(C.icon, D[e], n === p.rsA.MESSAGE_DELETE ? C.targetMessage : n === p.rsA.AUTO_MODERATION_BLOCK_MESSAGE || n === p.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL || n === p.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || n === p.rsA.AUTO_MODERATION_QUARANTINE_USER ? C.autoModerationBlockMessage : ({
       [p.KFR.ALL]: C.targetAll,
       [p.KFR.GUILD]: C.targetGuild,
       [p.KFR.CHANNEL]: C.targetChannel,
@@ -115,10 +115,10 @@ function M(e) {
           if ((t.action === p.rsA.CHANNEL_UPDATE || t.action === p.rsA.CHANNEL_CREATE) && i.key === p.zUn.TYPE) {
             var e, n;
             return {
-              oldValue: null != (e = i.oldValue) ? e : (0, f.a5)({
+              oldValue: null != (e = i.oldValue) ? e : (0, N.a5)({
                 type: i.oldValue
               }),
-              newValue: null != (n = i.newValue) ? n : (0, f.a5)({
+              newValue: null != (n = i.newValue) ? n : (0, N.a5)({
                 type: i.newValue
               })
             }
@@ -415,7 +415,7 @@ function M(e) {
             }
           }(i, t);
           return null
-        })(), N = e[i.key];
+        })(), f = e[i.key];
         return function(e) {
           var t, n;
           let {
@@ -505,7 +505,7 @@ function M(e) {
             })]
           }, a)
         }({
-          changeItem: "function" == typeof N ? N(i) : N,
+          changeItem: "function" == typeof f ? f(i) : f,
           subChanges: A,
           changeNumber: ++u,
           log: t,

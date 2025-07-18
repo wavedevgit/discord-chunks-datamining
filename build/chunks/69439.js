@@ -1,11 +1,11 @@
-/** Chunk was on 88622 **/
+/** Chunk was on 17218 **/
 n.d(t, {
   Z: () => O
 }), n(388685);
 var r = n(255367),
-  s = n(73800),
-  o = n(120356),
-  a = n.n(o),
+  o = n(73800),
+  s = n(120356),
+  a = n.n(s),
   i = n(442837),
   l = n(755721),
   c = n(481060),
@@ -35,9 +35,9 @@ let y = [{
 
 function C(e) {
   let t, n, {
-    value: s
+    value: o
   } = e;
-  switch (s) {
+  switch (o) {
     case j.cd.DESKTOP:
       n = (0, r.jsx)(c.pzj, {}), t = _.intl.string(_.t.QXc019);
       break;
@@ -54,19 +54,19 @@ function C(e) {
 }
 
 function O(e) {
-  var t, n, o, O;
+  var t, n, s, O;
   let {
     quest: E,
-    questContent: S,
-    onReceiveErrorHints: w,
-    contentPosition: P,
-    rowIndex: T,
-    sourceQuestContent: N
-  } = e, A = (0, i.e7)([u.Z], () => u.Z.useReducedMotion), R = (0, x.g2)({
-    useReducedMotion: A
+    questContent: w,
+    onReceiveErrorHints: S,
+    contentPosition: T,
+    rowIndex: P,
+    sourceQuestContent: A
+  } = e, N = (0, i.e7)([u.Z], () => u.Z.useReducedMotion), R = (0, x.g2)({
+    useReducedMotion: N
   }), B = (0, d.O5)(), k = (0, p._s)({
     quest: E
-  }), q = (0, p.z)(E), I = (0, p.B6)(E.config.expiresAt, {
+  }), I = (0, p.z)(E), q = (0, p.B6)(E.config.expiresAt, {
     month: "numeric",
     day: "numeric"
   }), {
@@ -77,22 +77,22 @@ function O(e) {
     isClaiming: m.Z.isClaimingReward(E.id) || m.Z.isFetchingRewardCode(E.id),
     isEnrolling: m.Z.isEnrolling(E.id),
     isQuestEnrollmentBlocked: null != m.Z.questEnrollmentBlockedUntil
-  })), L = (null == (t = E.userStatus) ? void 0 : t.enrolledAt) != null, M = (null == (n = E.userStatus) ? void 0 : n.completedAt) != null, W = M && (null == (o = E.userStatus) ? void 0 : o.claimedAt) == null, Z = (0, g.iQ)(E), U = !(0, g.zi)(E), H = (0, p._Q)(E), z = (0, g.Xv)(E.config), F = (0, g.PB)(E), X = (0, g.HJ)(E), K = (0, g.Vl)(E), Y = s.useRef(null), G = (0, p.Rf)(E), [J, $, ee] = (0, p.me)(E, G), et = U && H === p.OH.ACCEPTED, en = et && J === f.LI.SELECT, er = et && !en && $.length > 1, es = s.useCallback(e => {
-    ee(e), e === j.cd.DESKTOP && w([])
-  }, [ee, w]), {
-    text: eo,
+  })), L = (null == (t = E.userStatus) ? void 0 : t.enrolledAt) != null, M = (null == (n = E.userStatus) ? void 0 : n.completedAt) != null, W = M && (null == (s = E.userStatus) ? void 0 : s.claimedAt) == null, Z = (0, g.iQ)(E), U = !(0, g.zi)(E), H = (0, p._Q)(E), z = (0, g.Xv)(E.config), F = (0, g.PB)(E), X = (0, g.HJ)(E), K = (0, g.Vl)(E), Y = o.useRef(null), G = (0, p.Rf)(E), [J, $, ee] = (0, p.me)(E, G), et = U && H === p.OH.ACCEPTED, en = et && J === f.LI.SELECT, er = et && !en && $.length > 1, eo = o.useCallback(e => {
+    ee(e), e === j.cd.DESKTOP && S([])
+  }, [ee, S]), {
+    text: es,
     onClick: ea
   } = (0, x.Ks)({
     progressState: H,
     quest: E,
-    questContent: S,
+    questContent: w,
     isCollectibleQuest: z,
-    questContentPosition: P,
-    questContentRowIndex: T,
+    questContentPosition: T,
+    questContentRowIndex: P,
     inGiftInventory: !0,
     isVideoQuest: F,
     inGameQuest: K,
-    sourceQuestContent: N
+    sourceQuestContent: A
   }), {
     startingConsoleQuest: ei,
     startConsoleQuest: el
@@ -101,15 +101,15 @@ function O(e) {
     beforeRequest: () => {
       R.startAnimation(), B({
         questId: E.id,
-        questContent: S,
+        questContent: w,
         questContentCTA: d.jZ.DEFIBRILLATOR,
-        questContentPosition: P,
-        questContentRowIndex: T,
-        sourceQuestContent: N
+        questContentPosition: T,
+        questContentRowIndex: P,
+        sourceQuestContent: A
       })
     },
     afterRequest: e => {
-      R.stopAnimation(), w(e)
+      R.stopAnimation(), S(e)
     }
   }), ec = (null == (O = E.userStatus) ? void 0 : O.claimedAt) != null, eu = null;
   return (Z && W ? eu = (0, r.jsx)(l.zx, {
@@ -117,7 +117,7 @@ function O(e) {
     submitting: D,
     onClick: null != ea ? ea : void 0,
     className: v.button,
-    children: eo
+    children: es
   }) : M ? eu = F ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.zx, {
       color: l.Tt.PRIMARY,
@@ -128,7 +128,10 @@ function O(e) {
       onClick: () => {
         (0, h.openVideoQuestModal)({
           quest: E,
-          sourceQuestContent: N
+          questContent: w,
+          sourceQuestContent: A,
+          sourceQuestContentCTA: d.jZ.WATCH_VIDEO,
+          skipEnrollmentCheck: !0
         })
       },
       children: (0, r.jsxs)("div", {
@@ -143,19 +146,19 @@ function O(e) {
       color: l.Tt.BRAND,
       className: v.button,
       onClick: null != ea ? ea : void 0,
-      children: eo
+      children: es
     })]
   }) : (0, r.jsx)(l.zx, {
     color: l.Tt.BRAND,
     className: v.button,
     onClick: null != ea ? ea : void 0,
-    children: eo
+    children: es
   }) : U ? U && W ? eu = (0, r.jsx)(l.zx, {
     color: l.Tt.BRAND,
     submitting: D,
     onClick: null != ea ? ea : void 0,
     className: v.button,
-    children: eo
+    children: es
   }) : X ? eu = (0, r.jsx)(l.zx, {
     color: l.Tt.PRIMARY,
     disabled: !0,
@@ -167,7 +170,7 @@ function O(e) {
     options: y,
     placeholder: _.intl.string(_.t.drVw4e),
     renderOptionLabel: C,
-    select: es,
+    select: eo,
     serialize: e => {
       switch (e) {
         case j.cd.DESKTOP:
@@ -176,11 +179,11 @@ function O(e) {
           return _.intl.string(_.t["8lAfuL"])
       }
     }
-  }) : (0, g.$J)(E) && !q && J !== f.LI.DESKTOP ? k ? (0, r.jsx)(l.zx, {
+  }) : (0, g.$J)(E) && !I && J !== f.LI.DESKTOP ? k ? (0, r.jsx)(l.zx, {
     color: l.Tt.PRIMARY,
     className: v.button,
     onClick: null != ea ? ea : void 0,
-    children: eo
+    children: es
   }) : (0, r.jsx)(l.zx, {
     color: l.Tt.PRIMARY,
     onClick: el,
@@ -194,7 +197,7 @@ function O(e) {
     color: l.Tt.BRAND,
     onClick: null != ea ? ea : void 0,
     className: v.button,
-    children: eo
+    children: es
   }) : (0, r.jsx)(l.zx, {
     color: l.Tt.PRIMARY,
     disabled: !0,
@@ -209,7 +212,7 @@ function O(e) {
     }), (0, r.jsx)(l.zx, {
       color: l.Tt.BRAND,
       className: v.button,
-      onClick: () => (0, h.openQuestMinorEnrollmentBlockModal)(E, S, N),
+      onClick: () => (0, h.openQuestMinorEnrollmentBlockModal)(E, w, A),
       children: _.intl.string(_.t.vY9GgI)
     })]
   }) : (0, r.jsx)(l.zx, {
@@ -217,19 +220,19 @@ function O(e) {
     color: l.Tt.BRAND,
     onClick: null != ea ? ea : void 0,
     className: v.button,
-    children: eo
+    children: es
   })) : eu = (0, r.jsx)(l.zx, {
     color: l.Tt.PRIMARY,
     disabled: !0,
     className: v.button,
     children: _.intl.format(_.t["14o6QU"], {
-      expiryDate: I
+      expiryDate: q
     })
   }), null == eu) ? null : (0, r.jsxs)("div", {
     className: v.container,
     children: [eu, er && (0, r.jsx)(b.U, {
       popoutTargetRef: Y,
-      onSelect: es,
+      onSelect: eo,
       quest: E,
       questContent: f.jn.ACTIVITY_PANEL,
       children: e => {
