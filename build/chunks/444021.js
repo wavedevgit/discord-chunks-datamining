@@ -1,5 +1,5 @@
-/** Chunk was on 80393 **/
-e.exports = {
+/** Chunk was on 3496 **/
+A.exports = {
   permissionsGroupContainer: "permissionsGroupContainer__3f11f",
   permissionItemContainer: "permissionItemContainer__3f11f",
   permissionsItemContainer: "permissionsItemContainer__3f11f",

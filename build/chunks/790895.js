@@ -14,5 +14,6 @@ n.r(e.exports = {
   medium: "medium_b0db00",
   small: "small_b0db00",
   boxContainer: "boxContainer_b0db00",
-  textBox: "textBox_b0db00"
+  textBox: "textBox_b0db00",
+  gradientBackground: "gradientBackground_b0db00"
 })

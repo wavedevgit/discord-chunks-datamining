@@ -1,17 +1,17 @@
 /** Chunk was on 44799 **/
 n.d(t, {
-  Z: () => u
+  Z: () => d
 });
 var r = n(255367),
-  i = n(793030),
-  o = n(481060),
-  a = n(921944),
-  s = n(93841),
+  o = n(793030),
+  i = n(481060),
+  s = n(921944),
+  a = n(93841),
   l = n(388032),
   c = n(305063),
-  d = n(719119);
+  u = n(719119);
 
-function u(e) {
+function d(e) {
   let {
     markAsDismissed: t
   } = e;
@@ -20,20 +20,20 @@ function u(e) {
     children: [(0, r.jsx)("img", {
       alt: "",
       className: c.image,
-      src: d
-    }), (0, r.jsx)(i.xv, {
+      src: u
+    }), (0, r.jsx)(o.xv, {
       color: "always-white",
       variant: "text-md/semibold",
-      children: l.intl.string(s.default.diMhWV)
-    }), (0, r.jsx)(i.xv, {
+      children: l.intl.string(a.default.diMhWV)
+    }), (0, r.jsx)(o.xv, {
       color: "always-white",
       variant: "text-sm/medium",
-      children: l.intl.string(s.default.pycxTk)
-    }), (0, r.jsx)(o.olH, {
+      children: l.intl.string(a.default.pycxTk)
+    }), (0, r.jsx)(i.olH, {
       className: c.close,
       innerClassName: c.innerClose,
       onClick: () => {
-        t(a.L.USER_DISMISS)
+        t(s.L.USER_DISMISS)
       }
     })]
   })

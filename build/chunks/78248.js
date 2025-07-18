@@ -1,5 +1,5 @@
-/** Chunk was on 80393 **/
-e.exports = {
+/** Chunk was on 3496 **/
+A.exports = {
   root: "root__48c1c",
   role: "role__48c1c",
   roleRemoveButton: "roleRemoveButton__48c1c",

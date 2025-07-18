@@ -1,7 +1,7 @@
-/** Chunk was on 80393 **/
+/** Chunk was on 72374 **/
 n.d(t, {
-  q: () => a,
-  z: () => s
+  q: () => u,
+  z: () => o
 });
 var r = n(255367);
 n(73800);
@@ -26,12 +26,12 @@ function i(e) {
   return e
 }
 
-function s(e) {
+function o(e) {
   let {
     guildId: t,
-    userId: s,
-    anaylticsLocations: a,
-    modReportId: o
+    userId: o,
+    anaylticsLocations: u,
+    modReportId: a
   } = e;
   (0, l.ZDy)(async () => {
     let {
@@ -39,18 +39,18 @@ function s(e) {
     } = await n.e("72920").then(n.bind(n, 109730));
     return n => (0, r.jsx)(e, i({
       guildId: t,
-      userId: s,
-      anaylticsLocations: a,
-      modReportId: o
+      userId: o,
+      anaylticsLocations: u,
+      modReportId: a
     }, n))
   })
 }
 
-function a(e) {
+function u(e) {
   let {
     guildId: t,
-    userId: s,
-    anaylticsLocations: a
+    userId: o,
+    anaylticsLocations: u
   } = e;
   (0, l.ZDy)(async () => {
     let {
@@ -58,8 +58,8 @@ function a(e) {
     } = await n.e("76233").then(n.bind(n, 171494));
     return n => (0, r.jsx)(e, i({
       guildId: t,
-      userId: s,
-      anaylticsLocations: a
+      userId: o,
+      anaylticsLocations: u
     }, n))
   })
 }

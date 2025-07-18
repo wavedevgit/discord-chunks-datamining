@@ -1,6 +1,6 @@
 /**
   Module ID: 44799
-  Original File Name: 8e3f486682565209
+  Original File Name: 603cc9dc1e500341
 **/
 .parentContainer__98cbd {
     display: flex;
@@ -478,74 +478,6 @@
     margin-right: 2px
 }
 
-.container__11014 {
-    background-color: var(--background-base-lowest);
-    border-radius: var(--radius-xs);
-    display: flex;
-    flex-direction: column;
-    padding: var(--space-12);
-    row-gap: var(--space-12);
-    width: 288px
-}
-
-.unfocusedMessage__11014 {
-    opacity: .2
-}
-
-.badgeContainer__11014 {
-    height: 100%
-}
-
-.badgeContainer__11014,.tagText__11014 {
-    align-items: center;
-    display: flex
-}
-
-.tagText__11014 {
-    flex-direction: row;
-    gap: 2px
-}
-
-.badgePreview__11014 {
-    margin-right: 2px
-}
-
-.messageContainer__11014 {
-    display: flex;
-    flex-direction: row
-}
-
-.avatarContainer__11014 {
-    background-color: var(--bg-brand);
-    height: 40px;
-    margin-right: var(--space-12);
-    width: 40px
-}
-
-.avatar__11014,.avatarContainer__11014 {
-    border-radius: var(--radius-round)
-}
-
-.avatar__11014 {
-    overflow: hidden
-}
-
-.contentContainer__11014 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between
-}
-
-.decorationsContainer__11014,.usernameContainer__11014 {
-    display: flex;
-    flex-direction: row
-}
-
-.decorationsContainer__11014 {
-    align-items: center;
-    margin-left: var(--space-4)
-}
-
 .container__6c253 {
     background-color: var(--background-base-low);
     border: 1px solid var(--border-subtle);
@@ -735,4 +667,4 @@
     transition: padding-left .2s ease
 }
 
-/*# sourceMappingURL=8e3f486682565209.css.map*/
+/*# sourceMappingURL=603cc9dc1e500341.css.map*/

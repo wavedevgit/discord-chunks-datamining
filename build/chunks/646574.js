@@ -102,10 +102,7 @@ function v(e) {
       className: o()(g.label, {
         [g.labelChecked]: t
       }),
-      children: [t ? (0, r.jsx)(u.ZX5, {
-        className: g.shine,
-        shinePaused: v
-      }) : null, (0, r.jsx)(w, {
+      children: [(0, r.jsx)(w, {
         style: v ? void 0 : R,
         size: "custom",
         width: b,

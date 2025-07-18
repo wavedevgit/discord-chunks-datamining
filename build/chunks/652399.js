@@ -1,9 +1,9 @@
 /** Chunk was on 95336 **/
 r.d(t, {
   $z: () => k,
-  Fs: () => g,
   I1: () => O,
   IZ: () => I,
+  LQ: () => g,
   PJ: () => N,
   Qb: () => C,
   Yc: () => R,
@@ -52,7 +52,7 @@ function f(e) {
 }
 
 function g(e) {
-  p(e, e => a.Z.refreshQueryId(e))
+  p(e, e => a.Z.refreshSearchQueryAnalyticsId(e))
 }
 
 function m(e) {

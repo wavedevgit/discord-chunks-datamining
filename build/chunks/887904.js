@@ -1,6 +1,6 @@
 /** Chunk was on 12519 **/
 n.d(t, {
-  Z: () => d
+  Z: () => o
 });
 var i = n(255367);
 n(73800);
@@ -8,7 +8,7 @@ var a = n(481060),
   r = n(557239),
   l = n(388032);
 
-function d(e) {
+function o(e) {
   let {
     guildFriendsEnabled: t
   } = r.Z.useExperiment({

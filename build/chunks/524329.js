@@ -1,78 +1,78 @@
-/** Chunk was on 80393 **/
-n.d(t, {
-  Es: () => E,
-  RM: () => a,
-  VP: () => c,
-  Xb: () => o,
-  sm: () => u,
-  y0: () => s
-}), n(953529);
-var r = n(544891),
-  l = n(570140),
-  i = n(981631);
-let s = function(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-    l.Z.dispatch({
+/** Chunk was on 3496 **/
+t.d(e, {
+  Es: () => f,
+  RM: () => s,
+  VP: () => g,
+  Xb: () => a,
+  sm: () => o,
+  y0: () => i
+}), t(953529);
+var n = t(544891),
+  r = t(570140),
+  l = t(981631);
+let i = function(A) {
+    let e = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+    r.Z.dispatch({
       type: "WELCOME_SCREEN_VIEW",
-      guildId: e,
-      isLurking: t
+      guildId: A,
+      isLurking: e
     })
   },
-  a = async e => {
-    l.Z.dispatch({
+  s = async A => {
+    r.Z.dispatch({
       type: "WELCOME_SCREEN_FETCH_START"
     });
     try {
-      let t = await r.tn.get({
-        url: i.ANM.GUILD_WELCOME_SCREEN(e),
+      let e = await n.tn.get({
+        url: l.ANM.GUILD_WELCOME_SCREEN(A),
         oldFormErrors: !0,
         rejectWithError: !0
       });
-      return l.Z.dispatch({
+      return r.Z.dispatch({
         type: "WELCOME_SCREEN_FETCH_SUCCESS",
-        guildId: e,
-        welcomeScreen: t.body
-      }), t.body
-    } catch (e) {
-      l.Z.dispatch({
+        guildId: A,
+        welcomeScreen: e.body
+      }), e.body
+    } catch (A) {
+      r.Z.dispatch({
         type: "WELCOME_SCREEN_FETCH_FAIL"
       })
     }
-  }, o = () => {
-    l.Z.dispatch({
+  }, a = () => {
+    r.Z.dispatch({
       type: "WELCOME_SCREEN_SETTINGS_RESET"
     })
-  }, u = () => {
-    l.Z.dispatch({
+  }, o = () => {
+    r.Z.dispatch({
       type: "WELCOME_SCREEN_SETTINGS_CLEAR"
     })
-  }, c = e => {
-    l.Z.dispatch({
+  }, g = A => {
+    r.Z.dispatch({
       type: "WELCOME_SCREEN_SETTINGS_UPDATE",
-      settings: e
+      settings: A
     })
-  }, E = async (e, t) => {
-    l.Z.dispatch({
+  }, f = async (A, e) => {
+    r.Z.dispatch({
       type: "WELCOME_SCREEN_SUBMIT"
     });
     try {
-      let n = await r.tn.patch({
-        url: i.ANM.GUILD_WELCOME_SCREEN(e),
+      let t = await n.tn.patch({
+        url: l.ANM.GUILD_WELCOME_SCREEN(A),
         body: {
-          description: t.description,
-          welcome_channels: t.channels,
-          enabled: t.enabled
+          description: e.description,
+          welcome_channels: e.channels,
+          enabled: e.enabled
         },
         oldFormErrors: !0,
         rejectWithError: !0
       });
-      l.Z.dispatch({
+      r.Z.dispatch({
         type: "WELCOME_SCREEN_SUBMIT_SUCCESS",
-        guildId: e,
-        welcomeScreen: n.body
+        guildId: A,
+        welcomeScreen: t.body
       })
-    } catch (e) {
-      l.Z.dispatch({
+    } catch (A) {
+      r.Z.dispatch({
         type: "WELCOME_SCREEN_SUBMIT_FAILURE"
       })
     }

@@ -1,17 +1,17 @@
 /** Chunk was on 12519 **/
 n.d(t, {
-  Z: () => c
+  Z: () => d
 });
 var i = n(255367);
 n(73800);
 var a = n(481060),
   r = n(456100),
   l = n(749681),
-  d = n(258971),
-  o = n(49898),
-  s = n(388032);
+  o = n(258971),
+  s = n(49898),
+  c = n(388032);
 
-function c(e) {
+function d(e) {
   let {
     enabled: t
   } = r.c.useExperiment({
@@ -22,15 +22,15 @@ function c(e) {
   return (0, i.jsx)(a.sNh, {
     id: "application-directory",
     label: (0, i.jsx)(i.Fragment, {
-      children: s.intl.string(s.t.AKcFUl)
+      children: c.intl.string(c.t.AKcFUl)
     }),
     icon: n,
     action: () => {
       (0, l.transitionToGlobalDiscovery)({
-        tab: o.GlobalDiscoveryTab.APPS,
+        tab: s.GlobalDiscoveryTab.APPS,
         newSessionState: {
           entrypoint: {
-            name: d.xF.GUILD_HEADER_POPOUT
+            name: o.xF.GUILD_HEADER_POPOUT
           },
           guildId: e.id
         }

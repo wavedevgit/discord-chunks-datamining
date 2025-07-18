@@ -1,17 +1,22 @@
-/** Chunk was on 44799 **/
+/** Chunk was on 96127 **/
 n.d(t, {
-  _: () => l,
-  r: () => s
+  _k: () => c,
+  oC: () => a,
+  rm: () => s
 });
 var r, i = n(93841),
-  o = n(388032),
-  a = n(128647),
+  l = n(388032),
+  o = n(128647),
   s = ((r = {}).ENHANCED_ROLE_COLORS = "ENHANCED_ROLE_COLORS", r);
-let l = {
-  ENHANCED_ROLE_COLORS: {
-    assetUrl: a.Z,
-    title: o.intl.string(i.default["6dwTi4"]),
-    description: o.intl.string(i.default.lwfWIy),
-    cta: o.intl.string(i.default.RDH5zc)
+let a = {
+    primary_color: 0xf47fff,
+    secondary_color: 0xb44cff
+  },
+  c = {
+    ENHANCED_ROLE_COLORS: {
+      assetUrl: o.Z,
+      title: l.intl.string(i.default["6dwTi4"]),
+      description: l.intl.string(i.default.lwfWIy),
+      cta: l.intl.string(i.default.RDH5zc)
+    }
   }
-}

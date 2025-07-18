@@ -448,7 +448,7 @@ function U(e) {
       queryString: t,
       query: r
     } = e;
-    (0, T.Fs)(k.aib.DMS), (0, T.tI)({
+    (0, T.LQ)(k.aib.DMS), (0, T.tI)({
       searchType: (0, P.g)(k.aib.DMS),
       searchId: k.aib.DMS,
       query: r,
@@ -490,7 +490,7 @@ function W(e) {
       query: r,
       searchEverywhere: n
     } = e;
-    null != a && ((0, T.Fs)(a), (0, T.tI)({
+    null != a && ((0, T.LQ)(a), (0, T.tI)({
       searchType: (0, P.g)(a),
       searchId: a,
       query: r,

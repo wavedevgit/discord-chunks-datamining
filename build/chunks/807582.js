@@ -1,52 +1,53 @@
-/** Chunk was on 85449 **/
+/** Chunk was on 88388 **/
+"use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => m
 }), n(953529);
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  o = n.n(i),
-  a = n(481060),
-  c = n(158638),
-  l = n(267642),
-  s = n(981631),
+  l = n.n(i),
+  s = n(481060),
+  a = n(158638),
+  o = n(267642),
+  c = n(981631),
   d = n(388032),
-  _ = n(721641);
-let f = e => {
+  u = n(721641);
+let m = e => {
   let t, n, i, {
-      guildFeature: f,
-      guild: p,
-      className: u,
-      hideTooltip: m = !1,
-      tooltipPosition: b = "left",
-      onClick: g
+      guildFeature: m,
+      guild: g,
+      className: p,
+      hideTooltip: f = !1,
+      tooltipPosition: h = "left",
+      onClick: x
     } = e,
-    v = p.features.has(f),
-    h = (0, c.AR)(p.id, "GuildSettingsBoostPerks"),
-    y = (0, l._p)(f);
-  return !v && f === s.oNc.VANITY_URL && h ? null : (v ? (null != y && (i = d.intl.string(d.t.hUgjyM)), t = (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(a.$Eu, {
-      color: a.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
-      className: _.unlockedIcon
-    }), (0, r.jsx)(a.X6q, {
+    b = g.features.has(m),
+    j = (0, a.AR)(g.id, "GuildSettingsBoostPerks"),
+    _ = (0, o._p)(m);
+  return !b && m === c.oNc.VANITY_URL && j ? null : (b ? (null != _ && (i = d.intl.string(d.t.hUgjyM)), t = (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(s.$Eu, {
+      color: s.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
+      className: u.unlockedIcon
+    }), (0, r.jsx)(s.X6q, {
       variant: "eyebrow",
-      className: _.description,
+      className: u.description,
       children: d.intl.string(d.t["0O+87u"])
     })]
-  })) : (null != y && (i = d.intl.string(d.t.L2wYYm)), t = (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(a.$Eu, {
+  })) : (null != _ && (i = d.intl.string(d.t.L2wYYm)), t = (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(s.$Eu, {
       color: "currentColor",
-      className: _.icon
-    }), (0, r.jsx)(a.X6q, {
+      className: u.icon
+    }), (0, r.jsx)(s.X6q, {
       variant: "eyebrow",
-      className: _.description,
-      children: null != y && (0, l.e9)(y)
+      className: u.description,
+      children: null != _ && (0, o.e9)(_)
     })]
-  })), n = m || null == i ? (0, r.jsx)("div", {
-    className: o()(_.availabilityIndicator, u),
+  })), n = f || null == i ? (0, r.jsx)("div", {
+    className: l()(u.availabilityIndicator, p),
     children: t
-  }) : (0, r.jsx)(a.ua7, {
-    position: b,
+  }) : (0, r.jsx)(s.ua7, {
+    position: h,
     text: i,
     children: e => {
       var n, i;
@@ -68,7 +69,7 @@ let f = e => {
         }
         return e
       }({}, e), i = i = {
-        className: o()(_.availabilityIndicator, u),
+        className: l()(u.availabilityIndicator, p),
         children: t
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);
@@ -81,9 +82,9 @@ let f = e => {
         Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
       }), n))
     }
-  }), null == g || v) ? n : (0, r.jsx)(a.P3F, {
-    onClick: g,
-    className: _.clickable,
+  }), null == x || b) ? n : (0, r.jsx)(s.P3F, {
+    onClick: x,
+    className: u.clickable,
     children: n
   })
 }

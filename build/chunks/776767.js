@@ -1,58 +1,58 @@
-/** Chunk was on 80393 **/
-n.d(t, {
-  Mn: () => o,
-  WM: () => c,
-  _2: () => u
-}), n(953529);
-var r = n(255367);
-n(73800);
-var l = n(120356),
-  i = n.n(l),
-  s = n(481060),
-  a = n(44946);
-let o = 16;
+/** Chunk was on 3496 **/
+t.d(e, {
+  Mn: () => a,
+  WM: () => g,
+  _2: () => o
+}), t(953529);
+var n = t(255367);
+t(73800);
+var r = t(120356),
+  l = t.n(r),
+  i = t(481060),
+  s = t(44946);
+let a = 16;
 
-function u(e) {
+function o(A) {
   let {
-    description: t,
-    name: n,
-    icon: l,
-    onNavigate: u,
-    className: c,
-    missingNavIcon: E
-  } = e;
-  return (0, r.jsxs)(s.P3F, {
-    onClick: u,
-    className: i()(a.modInfoItem, null != u && a.modInfoAction, c),
-    children: [null != l && (0, r.jsx)("div", {
-      className: a.modInfoItemIcon,
-      children: l
-    }), null != n && (0, r.jsx)("div", {
-      className: a.modInfoItemName,
-      children: n
-    }), (0, r.jsx)("div", {
-      className: a.modInfoItemDescription,
+    description: e,
+    name: t,
+    icon: r,
+    onNavigate: o,
+    className: g,
+    missingNavIcon: f
+  } = A;
+  return (0, n.jsxs)(i.P3F, {
+    onClick: o,
+    className: l()(s.modInfoItem, null != o && s.modInfoAction, g),
+    children: [null != r && (0, n.jsx)("div", {
+      className: s.modInfoItemIcon,
+      children: r
+    }), null != t && (0, n.jsx)("div", {
+      className: s.modInfoItemName,
       children: t
-    }), null != u && (0, r.jsx)("div", {
-      className: a.modInfoItemActionIcon,
-      children: (0, r.jsx)(s.LJT, {
+    }), (0, n.jsx)("div", {
+      className: s.modInfoItemDescription,
+      children: e
+    }), null != o && (0, n.jsx)("div", {
+      className: s.modInfoItemActionIcon,
+      children: (0, n.jsx)(i.LJT, {
         size: "custom",
-        width: o,
-        height: o
+        width: a,
+        height: a
       })
-    }), null == u && null != E && (0, r.jsx)("div", {
-      className: a.modInfoItemActionIcon,
-      children: E
+    }), null == o && null != f && (0, n.jsx)("div", {
+      className: s.modInfoItemActionIcon,
+      children: f
     })]
   })
 }
 
-function c(e) {
+function g(A) {
   let {
-    children: t
-  } = e;
-  return (0, r.jsx)("div", {
-    className: a.modInfoItemContainer,
-    children: t
+    children: e
+  } = A;
+  return (0, n.jsx)("div", {
+    className: s.modInfoItemContainer,
+    children: e
   })
 }

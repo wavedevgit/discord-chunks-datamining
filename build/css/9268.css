@@ -1,6 +1,6 @@
 /**
   Module ID: 9268
-  Original File Name: 1f4810147c3534c3
+  Original File Name: c17379d3eeca94e5
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -5927,6 +5927,10 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
 
 .textBox_b0db00.small_b0db00 {
     margin-top: var(--space-12)
+}
+
+.gradientBackground_b0db00:before {
+    opacity: .3
 }
 
 @container premium-marketing-home-container (max-width: 820px) {
@@ -19922,4 +19926,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=1f4810147c3534c3.css.map*/
+/*# sourceMappingURL=c17379d3eeca94e5.css.map*/

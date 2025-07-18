@@ -1,25 +1,25 @@
 /** Chunk was on 27063 **/
-n.d(t, {
-  P: () => d
+t.d(r, {
+  P: () => o
 });
-var r = n(255367);
-n(73800);
-var i = n(755721),
-  a = n(481060),
-  s = n(388032),
-  l = n(476128);
+var n = t(255367);
+t(73800);
+var a = t(755721),
+  i = t(481060),
+  s = t(388032),
+  l = t(476128);
 
-function d(e) {
+function o(e) {
   let {
-    onClick: t,
-    className: n
+    onClick: r,
+    className: t
   } = e;
-  return (0, r.jsxs)(a.gtL, {
-    color: i.zx.Colors.GREEN,
-    className: n,
+  return (0, n.jsxs)(i.gtL, {
+    color: a.zx.Colors.GREEN,
+    className: t,
     innerClassName: l.upsellButton,
-    onClick: t,
-    children: [(0, r.jsx)(a.$Eu, {
+    onClick: r,
+    children: [(0, n.jsx)(i.$Eu, {
       color: "white",
       size: "custom",
       height: 16,

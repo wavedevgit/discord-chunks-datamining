@@ -1,12 +1,12 @@
-/** Chunk was on 96793 **/
+/** Chunk was on 6397 **/
 r.d(t, {
   Z: () => d
 }), r(388685);
 var n = r(255367),
   o = r(73800),
   a = r(481060),
-  i = r(927160),
-  s = r(203377),
+  s = r(927160),
+  i = r(203377),
   l = r(93841),
   c = r(388032),
   u = r(606055);
@@ -41,7 +41,7 @@ function d() {
               variant: "text-sm/medium",
               color: "text-tertiary",
               className: u.baseUrl,
-              children: "".concat(s.mf, "/")
+              children: "".concat(i.mf, "/")
             }), (0, n.jsx)(a.Text, {
               variant: "text-sm/medium",
               color: "text-link",
@@ -69,7 +69,7 @@ function d() {
             })]
           })]
         })]
-      }), (0, n.jsx)(i.Z, {
+      }), (0, n.jsx)(s.Z, {
         value: e,
         onChange: t,
         className: u.vanityUrlInput

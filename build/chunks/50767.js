@@ -1,5 +1,5 @@
-/** Chunk was on 80393 **/
-e.exports = {
+/** Chunk was on 3496 **/
+A.exports = {
   sidebarContainer: "sidebarContainer__656be",
   loadingContainer: "loadingContainer__656be",
   profileThemedContainer: "profileThemedContainer__656be",
