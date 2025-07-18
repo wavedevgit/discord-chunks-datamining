@@ -173,7 +173,7 @@ function ey(e) {
     className: J.body,
     children: [(0, r.jsx)(W.Y, {
       paymentRestrictionBannerType: n
-    }), (0, r.jsx)(p.ZP, et({}, e))]
+    }), (0, r.jsx)(p.Z, et({}, e))]
   })
 }
 
@@ -436,6 +436,7 @@ function eP(e) {
       paymentElementsEnabled: eP,
       handleStepChange: e0,
       logger: eo,
+      shouldLogOnChangeEvents: ew || !1,
       onBillingAddressChange: (e, t) => {
         e9({
           info: et({}, e7.info, e),
@@ -543,11 +544,11 @@ function eP(e) {
       });
       break;
     case C.h8.PAYMENT_ELEMENT:
-      if (!eP) throw (0, d.SQ)("Payment Elements not enabled, invalid step");
+      if (!eP) throw (0, d.PP)("Payment Elements not enabled, invalid step", !0);
       let tx = () => {
         te(!0);
         try {
-          if (null == tT || !(0, v.qH)(tT, ew)) throw (0, d.SQ)("Valid Payment Element source type not found");
+          if (null == tT || !(0, v.qH)(tT, ew)) throw (0, d.PP)("Valid Payment Element source type not found", !0);
           let {
             steps: e,
             methodType: t

@@ -205,7 +205,7 @@ function y() {
     }), (0, i.jsx)(f.E_, {
       label: "All Payment Request Wallets Enabled",
       children: (0, i.jsx)(I, {
-        children: (0, i.jsx)(d.ZP, O(E({}, e), {
+        children: (0, i.jsx)(d.Z, O(E({}, e), {
           onChooseType: () => {},
           paymentRequestWallets: ["googlePay", "applePay"]
         }))
@@ -213,7 +213,7 @@ function y() {
     }), (0, i.jsx)(f.E_, {
       label: "No Payment Wallets Enabled",
       children: (0, i.jsx)(I, {
-        children: (0, i.jsx)(d.ZP, O(E({}, e), {
+        children: (0, i.jsx)(d.Z, O(E({}, e), {
           onChooseType: () => {},
           paymentRequestWallets: []
         }))
@@ -221,7 +221,7 @@ function y() {
     }), (0, i.jsx)(f.E_, {
       label: "Is Eligible for Trial",
       children: (0, i.jsx)(I, {
-        children: (0, i.jsx)(d.ZP, O(E({}, e), {
+        children: (0, i.jsx)(d.Z, O(E({}, e), {
           isEligibleForTrial: !0,
           onChooseType: () => {},
           paymentRequestWallets: []
@@ -230,7 +230,7 @@ function y() {
     }), (0, i.jsx)(f.E_, {
       label: "Only Stripe Card Enabled",
       children: (0, i.jsx)(I, {
-        children: (0, i.jsx)(d.ZP, O(E({}, e), {
+        children: (0, i.jsx)(d.Z, O(E({}, e), {
           onChooseType: () => {},
           paymentRequestWallets: [],
           paymentSourceTypeRestrictions: [b.He.CARD.valueOf()]
