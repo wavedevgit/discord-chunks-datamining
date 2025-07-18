@@ -19,8 +19,8 @@ var n = r(255367),
   b = r(381585),
   m = r(597688),
   _ = r(315066),
-  O = r(243126),
-  C = r(38900),
+  C = r(243126),
+  O = r(38900),
   v = r(709999),
   E = r(328626),
   S = r(619899),
@@ -35,18 +35,18 @@ let P = e => {
     sortedSkuIds: i,
     handleTransition: P,
     numVisibleItems: L,
-    tab: I
-  } = e, k = (0, a.e7)([d.default], () => d.default.getCurrentUser()), B = h.ZP.canUseCollectibles(k), N = (0, _.s)("useShopHomeSorting") && I === y.AW.HOME, {
-    sortType: A,
+    tab: k
+  } = e, I = (0, a.e7)([d.default], () => d.default.getCurrentUser()), N = h.ZP.canUseCollectibles(I), A = (0, _.s)("useShopHomeSorting") && k === y.AW.HOME, {
+    sortType: B,
     setSortType: w,
     sortedItems: R,
     sortOptions: Z,
     shuffleProducts: F,
     showRecommendationOption: D
-  } = (0, O.N)(i, B), M = (0, S.St)(R), H = (0, a.e7)([u.Z], () => u.Z.useReducedMotion), W = (0, a.e7)([p.Z], () => p.Z.isFocused()), V = !H && W, {
+  } = (0, C.N)(i, N), M = (0, S.St)(R), H = (0, a.e7)([u.Z], () => u.Z.useReducedMotion), W = (0, a.e7)([p.Z], () => p.Z.isFocused()), V = !H && W, {
     animationPhase: U,
     startAnimation: z
-  } = (0, E.y)(), G = (0, b.sp)(), q = null != (t = null == G ? void 0 : G.sessionId) ? t : "", Y = l.useRef(null), K = l.useCallback(e => {
+  } = (0, E.y)(), G = (0, b.sp)(), q = null != (t = null == G ? void 0 : G.sessionId) ? t : "", K = l.useRef(null), Y = l.useCallback(e => {
     z({
       isShuffling: !1,
       onOutroComplete: () => w(e)
@@ -55,7 +55,7 @@ let P = e => {
       sort_type: e
     })
   }, [z, w, q]);
-  return null == k ? null : (0, n.jsxs)("div", {
+  return null == I ? null : (0, n.jsxs)("div", {
     className: o()(T.popularPicksSection, T.centeredSection),
     children: [(0, n.jsxs)("div", {
       className: T.blockHeader,
@@ -63,7 +63,7 @@ let P = e => {
         className: T.headerLeft,
         children: [(0, n.jsx)(s.X6q, {
           variant: "heading-lg/semibold",
-          children: I === y.AW.ORBS ? j.intl.string(j.t.dFgeub) : j.intl.string(j.t.NSv5KS)
+          children: k === y.AW.ORBS ? j.intl.string(j.t.dFgeub) : j.intl.string(j.t.NSv5KS)
         }), D && (0, n.jsx)(s.ua7, {
           text: j.intl.string(j.t["3taPdn"]),
           position: "top",
@@ -107,26 +107,26 @@ let P = e => {
         })]
       }), (0, n.jsxs)("div", {
         className: T.headerRight,
-        children: [N && (0, n.jsxs)(n.Fragment, {
+        children: [A && (0, n.jsxs)(n.Fragment, {
           children: [(0, n.jsx)(s.Text, {
             variant: "text-md/medium",
             children: j.intl.string(j.t.uaX709)
           }), (0, n.jsx)(s.PhF, {
             options: Z,
-            select: K,
+            select: Y,
             className: T.sortSelect,
-            isSelected: e => e === A,
+            isSelected: e => e === B,
             serialize: e => e
           })]
-        }), I === y.AW.HOME && (N ? (0, n.jsx)(s.zxk, {
+        }), k === y.AW.HOME && (A ? (0, n.jsx)(s.zxk, {
           variant: "secondary",
           text: j.intl.string(j.t.X3tnc3),
-          buttonRef: Y,
+          buttonRef: K,
           onClick: () => {
             z({
               isShuffling: !0,
               onOutroComplete: F,
-              returnRef: Y
+              returnRef: K
             }), f.default.track(x.rMx.COLLECTIBLES_SHOP_FEED_SHUFFLE_CLICKED, {
               page_session_id: q
             })
@@ -141,7 +141,7 @@ let P = e => {
     }), (0, n.jsx)("div", {
       className: T.feed,
       children: r ? (0, n.jsx)(n.Fragment, {
-        children: [...Array(12)].map((e, t) => (0, n.jsx)(C.K, {}, t + 1))
+        children: [...Array(12)].map((e, t) => (0, n.jsx)(O.K, {}, t + 1))
       }) : M.slice(0, L).map((e, t) => {
         let r, l = m.Z.getCategoryForProduct(e.skuId);
         if (null == e || null == l) return null;
@@ -159,8 +159,8 @@ let P = e => {
           children: (0, n.jsx)(v.Z, {
             product: e,
             category: l,
-            user: k,
-            tab: I,
+            user: I,
+            tab: k,
             className: r
           })
         }, null == e ? void 0 : e.skuId)

@@ -19,7 +19,7 @@ var n = r(255367),
   m = r(388032),
   h = r(820612);
 
-function g(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -38,7 +38,7 @@ function g(e) {
   return e
 }
 
-function y(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -95,7 +95,7 @@ let j = s()(e => {
       text: m.intl.string(m.t["6cfuDg"]),
       "aria-label": !1,
       shouldShow: !_ && x,
-      children: e => (0, n.jsx)(p.P3F, y(g({}, C), {
+      children: e => (0, n.jsx)(p.P3F, g(y({}, C), {
         tag: "li",
         onMouseEnter: () => {
           var t;
@@ -156,7 +156,7 @@ let j = s()(e => {
               ref: r
             } = e,
             c = O(e, ["ref"]);
-          return (0, n.jsxs)("div", y(g({
+          return (0, n.jsxs)("div", g(y({
             ref: r
           }, c), {
             className: a()(h.variantsPanel, l, {

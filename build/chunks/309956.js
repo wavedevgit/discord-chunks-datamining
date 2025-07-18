@@ -27,12 +27,12 @@ let p = {
       setItemTypeFilter: g,
       reset: h,
       setCurrentTab: b
-    } = (0, s.S)(), m = n.useMemo(() => t !== u.AW.ORBS || i ? (0, u.RE)(t) && f ? u.AW.CATALOG : t : u.AW.HOME, [t, i, f]), [_, O] = n.useState(m), [C, v] = n.useState(u.f7.VISIBLE);
+    } = (0, s.S)(), m = n.useMemo(() => t !== u.AW.ORBS || i ? (0, u.RE)(t) && f ? u.AW.CATALOG : t : u.AW.HOME, [t, i, f]), [_, C] = n.useState(m), [O, v] = n.useState(u.f7.VISIBLE);
     n.useEffect(() => {
       b(_)
     }, [_, b]), n.useEffect(() => {
-      O(m), C !== u.f7.VISIBLE && v(u.f7.VISIBLE)
-    }, [m, C]);
+      C(m), O !== u.f7.VISIBLE && v(u.f7.VISIBLE)
+    }, [m, O]);
     let E = e => new Promise(t => setTimeout(t, e)),
       {
         clearError: S
@@ -47,7 +47,7 @@ let p = {
         if (_ === t) return;
         n && (v(u.f7.OUT), await E(1.1 * u.lb));
         let l = f && ![u.AW.HOME, u.AW.ORBS].includes(t) ? u.AW.CATALOG : t;
-        O(l), n && v(u.f7.IN), r || y.push(d.Z5c.COLLECTIBLES_SHOP_WITH_TAB(l), {
+        C(l), n && v(u.f7.IN), r || y.push(d.Z5c.COLLECTIBLES_SHOP_WITH_TAB(l), {
           shallow: !0
         }), null != e.current && e.current.scrollTo({
           to: 0
@@ -55,7 +55,7 @@ let p = {
       }, [y, r, e, f, g, h, _, S]);
     return {
       selectedTab: _,
-      transitionState: C,
+      transitionState: O,
       transitionToTab: x
     }
   }

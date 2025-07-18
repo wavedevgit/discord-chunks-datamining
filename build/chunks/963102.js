@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 r.d(t, {
-  I: () => N
+  I: () => A
 }), r(388685), r(539854);
 var n = r(255367),
   l = r(73800),
@@ -19,8 +19,8 @@ var n = r(255367),
   b = r(341907),
   m = r(507808),
   _ = r(822857),
-  O = r(775451),
-  C = r(594174),
+  C = r(775451),
+  O = r(594174),
   v = r(471731),
   E = r(335131),
   S = r(870289),
@@ -30,9 +30,9 @@ var n = r(255367),
   T = r(215023),
   P = r(981631),
   L = r(388032),
-  I = r(774457);
+  k = r(774457);
 
-function k(e) {
+function I(e) {
   let {
     tab: t,
     displayText: r,
@@ -41,15 +41,15 @@ function k(e) {
   } = e;
   return (0, n.jsx)(h.Z.Title, {
     onClick: () => i(t),
-    wrapperClassName: I.tabWrapper,
-    className: o()(I.tab, {
-      [I.selected]: l
+    wrapperClassName: k.tabWrapper,
+    className: o()(k.tab, {
+      [k.selected]: l
     }),
     children: r
   })
 }
 
-function B(e) {
+function N(e) {
   let {
     tab: t,
     selected: r,
@@ -59,11 +59,11 @@ function B(e) {
     clearTimeout(p), b(setTimeout(() => {
       u(e)
     }, 100)), e && (m.current = g.Z.keyboardModeEnabled)
-  }, O = e => {
+  }, C = e => {
     ("Enter" === e.key || " " === e.key) && (e.preventDefault(), _(!0))
   };
   return (0, n.jsx)("div", {
-    className: I.tabWithMenuContainer,
+    className: k.tabWithMenuContainer,
     onMouseEnter: () => _(!0),
     onMouseLeave: () => _(!1),
     children: (0, n.jsx)(c.yRy, {
@@ -110,13 +110,13 @@ function B(e) {
         }({}, e), u = u = {
           ref: d,
           onClick: () => a(t),
-          onKeyDown: O,
-          wrapperClassName: I.tabWrapper,
-          className: o()(I.tab, {
-            [I.selected]: r
+          onKeyDown: C,
+          wrapperClassName: k.tabWrapper,
+          className: o()(k.tab, {
+            [k.selected]: r
           }),
           children: (0, n.jsxs)("span", {
-            className: I.tabWithChevron,
+            className: k.tabWithChevron,
             children: [i, p ? (0, n.jsx)(c.u04, {
               size: "sm",
               color: "currentColor"
@@ -140,14 +140,14 @@ function B(e) {
   })
 }
 
-function N(e) {
+function A(e) {
   let {
     isFullScreen: t,
     isLayer: r,
     onClose: i,
     selectedTab: f,
     handleTransition: g
-  } = e, x = (0, p.ZP)(), N = (0, s.e7)([C.default], () => C.default.getCurrentUser()), A = (null == N ? void 0 : N.isStaff()) || (null == N ? void 0 : N.isStaffPersonal()) || !1, {
+  } = e, x = (0, p.ZP)(), A = (0, s.e7)([O.default], () => O.default.getCurrentUser()), B = (null == A ? void 0 : A.isStaff()) || (null == A ? void 0 : A.isStaffPersonal()) || !1, {
     enabled: w
   } = (0, _.WX)({
     location: "collectibles_shop_header_bar"
@@ -178,33 +178,33 @@ function N(e) {
     theme: x,
     children: e => (0, n.jsxs)(h.Z, {
       disableDoubleClick: !0,
-      className: o()(e, I.headerBar, {
-        [I.fullscreenHeaderBar]: t
+      className: o()(e, k.headerBar, {
+        [k.fullscreenHeaderBar]: t
       }),
-      innerClassname: w ? I.headerBarInner : void 0,
-      toolbar: t || !A ? null : (0, n.jsx)(l.Fragment, {}),
+      innerClassname: w ? k.headerBarInner : void 0,
+      toolbar: t || !B ? null : (0, n.jsx)(l.Fragment, {}),
       children: [(0, n.jsxs)(c.P3F, {
-        className: I.shopHomeLink,
+        className: k.shopHomeLink,
         onClick: () => g(T.AW.HOME),
         "aria-label": L.intl.string(L.t.pWG4zc) + " home",
         children: [(0, n.jsx)(v.Z, {
-          className: I.discordLogo
+          className: k.discordLogo
         }), (0, n.jsx)(h.Z.Title, {
           children: L.intl.string(L.t.pWG4zc)
         })]
       }), (0, n.jsx)("div", {
-        className: I.tabs,
+        className: k.tabs,
         children: Z.map(e => {
           let {
             tab: t,
             displayText: r
           } = e;
-          return t === T.AW.CATALOG && R ? (0, n.jsx)(B, {
+          return t === T.AW.CATALOG && R ? (0, n.jsx)(N, {
             tab: t,
             selected: (0, T.RE)(f) || f === t,
             displayText: r,
             handleTransition: g
-          }, t) : (0, n.jsx)(k, {
+          }, t) : (0, n.jsx)(I, {
             tab: t,
             displayText: r,
             selected: f === t,
@@ -212,17 +212,17 @@ function N(e) {
           }, t)
         })
       }), (w || t || H) && (0, n.jsxs)("div", {
-        className: I.alignedRightContent,
+        className: k.alignedRightContent,
         children: [H && (0, n.jsx)(j.Z, {
           handleTransition: g,
           selectedTab: f
-        }), w && (0, n.jsx)(O.V9, {
+        }), w && (0, n.jsx)(C.V9, {
           anchorPillType: t ? "SHOP_FULLSCREEN" : "SHOP",
           analyticsPage: D,
-          cardAlignment: O.V9.CardAlignment.END,
+          cardAlignment: C.V9.CardAlignment.END,
           ctaText: L.intl.string(L.t.VC4Mq6),
           ctaOnClick: M,
-          className: I.balanceWidgetMenu
+          className: k.balanceWidgetMenu
         }), t && (0, n.jsx)(d.Z, {
           closeAction: F,
           keybind: "ESC"

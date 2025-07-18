@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: dc4582ce7eb3993f
+  Original File Name: 4ceedea554663567
 **/
 .shopWrapper__6db1d {
     background: var(--background-base-low);
@@ -266,13 +266,6 @@
     width: 100%
 }
 
-.cardButtonInner_c3d04b {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    gap: 4px
-}
-
 .shopCardDark_c3d04b {
     background-color: var(--background-surface-high)
 }
@@ -350,15 +343,6 @@
     display: flex;
     gap: 8px;
     width: 100%
-}
-
-.previewButton_c3d04b {
-    padding: 0 7px
-}
-
-.previewButtonInner_c3d04b {
-    max-height: 24px;
-    max-width: 24px
 }
 
 .premiumWheelTooltipContent_c3d04b {
@@ -591,6 +575,11 @@
     opacity: .35
 }
 
+.orbIconAligned_c3d04b {
+    margin-top: 1px;
+    vertical-align: top
+}
+
 .partialOwnStateContainer__0d2da {
     align-items: center;
     display: flex;
@@ -611,19 +600,6 @@
     color: var(--interactive-active);
     height: 16px;
     width: 16px
-}
-
-.giftButton_f3c9fa {
-    padding: 0 7px
-}
-
-.giftButton_f3c9fa:hover {
-    opacity: .8
-}
-
-.giftButtonInner_f3c9fa {
-    max-height: 24px;
-    max-width: 24px
 }
 
 .striked_e77b99 {
@@ -915,12 +891,6 @@
     width: 100%
 }
 
-.resetButton__11877 {
-    margin-bottom: 8px;
-    max-width: 220px;
-    width: 100%
-}
-
 .container__8b924 {
     align-items: center;
     display: flex;
@@ -1045,27 +1015,6 @@
         justify-content: flex-end;
         visibility: visible
     }
-
-    .responsiveFilterButton__1feb0 {
-        position: relative;
-        z-index: 1001
-    }
-}
-
-.filterButtonActive__1feb0 {
-    background-color: var(--brand-500);
-    border-color: var(--brand-500);
-    color: var(--white)
-}
-
-.filterButtonActive__1feb0 .filterButton__1feb0 {
-    color: var(--white)
-}
-
-.filterButton__1feb0 {
-    align-items: center;
-    display: flex;
-    gap: 4px
 }
 
 .filterBar__1feb0 {
@@ -1410,15 +1359,10 @@
     width: fit-content
 }
 
-.featuredBlockButton__08415 {
+.featuredBlockButtonContainer__08415 {
     bottom: 24px;
     left: 24px;
     position: absolute
-}
-
-.featuredBlockButton__08415:hover {
-    background: #ebedef;
-    filter: drop-shadow(0 8px 10px rgba(0,0,0,.14))
 }
 
 .heroBlock__08415 {
@@ -1547,11 +1491,6 @@
     justify-content: flex-end
 }
 
-.heroHeaderButton__08415:hover {
-    background: #ebedef;
-    box-shadow: 0 12px 32px 0 rgba(0,0,0,.24)
-}
-
 .limitedTimeBadge__08415 {
     background-color: var(--white-500);
     color: var(--black-500);
@@ -1650,17 +1589,9 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
-    margin: 64px
-}
-
-.endOfFeedButton__08415 {
+    margin: 64px;
     min-height: 55px;
-    min-width: 356px;
-    padding: 10px 25px
-}
-
-.endOfFeedButton__08415:hover {
-    box-shadow: 0 12px 32px 0 rgba(0,0,0,.24)
+    min-width: 320px
 }
 
 .backToTop__08415 {
@@ -1739,11 +1670,6 @@
     bottom: 24px;
     position: absolute;
     right: 24px
-}
-
-.wideBannerBlockButton__08415:hover {
-    background: #ebedef;
-    filter: drop-shadow(0 8px 10px rgba(0,0,0,.14))
 }
 
 .wideBannerTextContainer__08415 {
@@ -1978,4 +1904,4 @@
     cursor: pointer
 }
 
-/*# sourceMappingURL=dc4582ce7eb3993f.css.map*/
+/*# sourceMappingURL=4ceedea554663567.css.map*/

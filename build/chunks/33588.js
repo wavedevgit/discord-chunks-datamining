@@ -2,7 +2,6 @@
 "use strict";
 e.exports = {
   shopCard: "shopCard_c3d04b",
-  cardButtonInner: "cardButtonInner_c3d04b",
   shopCardDark: "shopCardDark_c3d04b shopCard_c3d04b",
   shopCardHighlighted: "shopCardHighlighted_c3d04b",
   shopCardDarkHighlighted: "shopCardDarkHighlighted_c3d04b",
@@ -14,8 +13,6 @@ e.exports = {
   lightCardBackground: "lightCardBackground_c3d04b",
   priceTag: "priceTag_c3d04b",
   buttonsContainer: "buttonsContainer_c3d04b",
-  previewButton: "previewButton_c3d04b",
-  previewButtonInner: "previewButtonInner_c3d04b",
   premiumWheelTooltipContent: "premiumWheelTooltipContent_c3d04b",
   premiumWheelBadge: "premiumWheelBadge_c3d04b",
   premiumWheel: "premiumWheel_c3d04b",
@@ -40,5 +37,6 @@ e.exports = {
   placeholderItem: "placeholderItem_c3d04b",
   placeholderBar: "placeholderBar_c3d04b",
   fadeOut: "fadeOut_c3d04b",
-  externalProductDimmed: "externalProductDimmed_c3d04b"
+  externalProductDimmed: "externalProductDimmed_c3d04b",
+  orbIconAligned: "orbIconAligned_c3d04b"
 }

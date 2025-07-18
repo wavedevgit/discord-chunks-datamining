@@ -1,6 +1,6 @@
 /**
   Module ID: 55864
-  Original File Name: 816b948ebc2713ec
+  Original File Name: 268e77e7213545fa
 **/
 .partialOwnStateContainer__0d2da {
     align-items: center;
@@ -22,19 +22,6 @@
     color: var(--interactive-active);
     height: 16px;
     width: 16px
-}
-
-.giftButton_f3c9fa {
-    padding: 0 7px
-}
-
-.giftButton_f3c9fa:hover {
-    opacity: .8
-}
-
-.giftButtonInner_f3c9fa {
-    max-height: 24px;
-    max-width: 24px
 }
 
 .striked_e77b99 {
@@ -254,13 +241,6 @@
     width: 100%
 }
 
-.cardButtonInner_c3d04b {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    gap: 4px
-}
-
 .shopCardDark_c3d04b {
     background-color: var(--background-surface-high)
 }
@@ -338,15 +318,6 @@
     display: flex;
     gap: 8px;
     width: 100%
-}
-
-.previewButton_c3d04b {
-    padding: 0 7px
-}
-
-.previewButtonInner_c3d04b {
-    max-height: 24px;
-    max-width: 24px
 }
 
 .premiumWheelTooltipContent_c3d04b {
@@ -579,6 +550,11 @@
     opacity: .35
 }
 
+.orbIconAligned_c3d04b {
+    margin-top: 1px;
+    vertical-align: top
+}
+
 .previewContents__36852 {
     height: 100%;
     position: relative;
@@ -727,4 +703,4 @@
     justify-content: space-between
 }
 
-/*# sourceMappingURL=816b948ebc2713ec.css.map*/
+/*# sourceMappingURL=268e77e7213545fa.css.map*/
