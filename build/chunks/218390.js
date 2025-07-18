@@ -51,8 +51,8 @@ var i = n(255367),
   K = n(823188),
   q = n(504865),
   X = n(179984),
-  J = n(386733),
-  Q = n(474936),
+  Q = n(386733),
+  J = n(474936),
   $ = n(981631),
   ee = n(388032),
   et = n(133525),
@@ -69,7 +69,7 @@ function eo(e) {
     isDiscountApplied: n,
     activeDiscountInfo: r,
     theme: s
-  } = e, a = t.hasActiveTrial, l = t.planIdFromItems === Q.Xh.PREMIUM_YEAR_TIER_2, c = n || a, d = null != t.trialEndsAt ? o()(t.trialEndsAt).diff(o()(), "d") : 0, m = Q.GP[t.planIdFromItems], g = k.ZP.formatPriceString(k.ZP.getDefaultPrice(m.id), m.interval);
+  } = e, a = t.hasActiveTrial, l = t.planIdFromItems === J.Xh.PREMIUM_YEAR_TIER_2, c = n || a, d = null != t.trialEndsAt ? o()(t.trialEndsAt).diff(o()(), "d") : 0, m = J.GP[t.planIdFromItems], g = k.ZP.formatPriceString(k.ZP.getDefaultPrice(m.id), m.interval);
   if (c) {
     var h, f, b;
     return (0, i.jsxs)(i.Fragment, {
@@ -87,19 +87,19 @@ function eo(e) {
           remainingTime: d,
           price: g
         }) : l ? ee.intl.format(ee.t["+qqh6u"], {
-          percent: null != (h = null == r ? void 0 : r.percentage) ? h : Q.Bo,
+          percent: null != (h = null == r ? void 0 : r.percentage) ? h : J.Bo,
           regularPrice: g
         }) : ee.intl.formatToPlainString(ee.t["3Ziutb"], {
-          percent: null != (f = null == r ? void 0 : r.percentage) ? f : Q.M_,
+          percent: null != (f = null == r ? void 0 : r.percentage) ? f : J.M_,
           regularPrice: g,
-          numMonths: null != (b = null == r ? void 0 : r.duration) ? b : Q.rt
+          numMonths: null != (b = null == r ? void 0 : r.duration) ? b : J.rt
         })
       })]
     })
   }
   return (0, i.jsx)(q.Z, {
     variant: void 0,
-    subscriptionTier: Q.Si.TIER_2,
+    subscriptionTier: J.Si.TIER_2,
     interval: m.interval
   })
 }
@@ -362,7 +362,7 @@ let em = function() {
     children: (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsxs)("div", {
         className: et.__invalid_container,
-        children: [(0, i.jsx)(ec, {}), y && (0, i.jsx)(J.Z, {
+        children: [(0, i.jsx)(ec, {}), y && (0, i.jsx)(Q.Z, {
           isInSettings: !0
         }), (0, i.jsx)(eu, {}), (0, i.jsx)(X.Z, {
           className: et.__invalid_planComparisonTable,
@@ -370,7 +370,7 @@ let em = function() {
           headingOverride: ee.intl.string(ee.t.dnVvQU),
           hidePill: !L,
           selectedPlanColumnClassName: et.tier2PlanComparisonTableBackground,
-          selectedPlanTier: Q.p9.TIER_2
+          selectedPlanTier: J.p9.TIER_2
         })]
       }), (0, i.jsx)(d.$, {
         innerRef: E,

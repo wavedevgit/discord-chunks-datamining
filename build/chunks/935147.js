@@ -54,7 +54,7 @@ function V(e) {
     tryItOutAvatar: K,
     tryItOutBanner: q,
     tryItOutProfileEffectId: X,
-    tryItOutAvatarDecoration: J
+    tryItOutAvatarDecoration: Q
   } = (0, s.cj)([S.Z], () => {
     var e, t;
     let n = S.Z.getAllPending(),
@@ -88,7 +88,7 @@ function V(e) {
     })(Object(t)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
-  }), Q = (0, g.Z)(X), {
+  }), J = (0, g.Z)(X), {
     preset: $,
     onShuffle: ee
   } = (0, b.Z)(), et = r.useRef(null);
@@ -99,9 +99,9 @@ function V(e) {
     sourceAnalyticsLocations: er
   } = (0, c.ZP)(o.Z.USER_SETTINGS_TRY_OUT_PREMIUM), es = e => {
     if (e) {
-      if ((0, l.I5)(K), (0, C.z5)(Y), (0, C.ho)(q), null != J) {
-        let e = u.Z.getProduct(J.skuId);
-        null != e && (0, p.G1)(e) ? (0, d.fK)(e.skuId).then(() => (0, l.cV)(J)) : null != m.Z.getPurchase(J.skuId) && (0, l.cV)(J)
+      if ((0, l.I5)(K), (0, C.z5)(Y), (0, C.ho)(q), null != Q) {
+        let e = u.Z.getProduct(Q.skuId);
+        null != e && (0, p.G1)(e) ? (0, d.fK)(e.skuId).then(() => (0, l.cV)(Q)) : null != m.Z.getPurchase(Q.skuId) && (0, l.cV)(Q)
       }
       T.default.track(k.rMx.TRY_IT_OUT_PRESET_SELECTED, {
         preset: $
@@ -188,7 +188,7 @@ function V(e) {
           }, "decoration"), (0, i.jsx)(D.Z, {
             className: U.customizationSection,
             isTryItOutFlow: !0,
-            initialSelectedEffectId: Q,
+            initialSelectedEffectId: J,
             user: V,
             sectionTitle: M.intl.string(M.t.wR5wOj)
           }, "effect"), !ea && (0, i.jsx)(a.Text, {

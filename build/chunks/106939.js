@@ -245,8 +245,8 @@ function K() {
     }, [l, t]), r.useEffect(() => {
       K && (0, g.mN)(B.L0.FAMILY_CENTER)
     }, [K]), K) return null;
-  let J = Z !== k.dG.SETTINGS ? Z : k.dG.ACTIVITY,
-    Q = H[J];
+  let Q = Z !== k.dG.SETTINGS ? Z : k.dG.ACTIVITY,
+    J = H[Q];
   return (0, i.jsx)(f.Gt, {
     value: e,
     children: (0, i.jsxs)("main", {
@@ -256,18 +256,18 @@ function K() {
         location: V.intl.string(U.default.RZqaJi)
       }), (0, i.jsx)(W, {
         theme: D,
-        section: J,
+        section: Q,
         handleItemSelect: e => {
           w(e)
         }
       }), (0, i.jsx)(u.njP.Panel, {
-        id: J,
+        id: Q,
         "aria-labelledby": F,
         className: G.contentPanel,
         children: (0, i.jsx)(u.Ttm, {
           children: (0, i.jsx)("div", {
             className: G.sideNavContent,
-            children: Q()
+            children: J()
           })
         })
       })]

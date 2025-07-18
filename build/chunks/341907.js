@@ -228,7 +228,7 @@ function Y(e) {
   if ((0, O.D)(N.dr.VIDEO_MODAL) && !u && (null == (t = n.userStatus) ? void 0 : t.enrolledAt) == null && !(0, b.zi)(n)) {
     g.Z.isEnrolling(n.id) || (0, m.AH)(n.id, {
       questContent: a,
-      questContentCTA: l,
+      questContentCTA: h.jZ.ACCEPT_QUEST,
       sourceQuestContent: o
     });
     let e = y.ZP.getState().getVideoProgress(n.id);

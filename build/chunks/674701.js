@@ -20,8 +20,8 @@ var r, i = n(255367),
   b = n(541716),
   E = n(28546),
   x = n(963249),
-  C = n(594174),
-  v = n(626135),
+  v = n(594174),
+  C = n(626135),
   y = n(51144),
   O = n(479446),
   j = n(795448),
@@ -47,7 +47,7 @@ function k(e) {
     analyticsSection: D,
     glow: M,
     giftIntentSecondaryAction: U
-  } = e, F = (0, c.e7)([C.default], () => C.default.getCurrentUser()), {
+  } = e, F = (0, c.e7)([v.default], () => v.default.getCurrentUser()), {
     analyticsLocations: B
   } = (0, h.ZP)(), G = (0, c.e7)([I.Z], () => I.Z.getFriendAnniversaryYears(r.id));
   l.useEffect(() => {
@@ -122,7 +122,7 @@ function k(e) {
         children: [null != U && (0, i.jsx)(d.zx, {
           className: o()(Z.button, J),
           onClick: e => {
-            e.stopPropagation(), v.default.track(N.rMx.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
+            e.stopPropagation(), C.default.track(N.rMx.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
               gift_intent_type: t,
               cta_type: U
             }), U === T.X2.VIEW_ALL ? f.Z.transitionToSection(N.pJs.ALL, {

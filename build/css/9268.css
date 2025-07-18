@@ -1,6 +1,6 @@
 /**
   Module ID: 9268
-  Original File Name: c17379d3eeca94e5
+  Original File Name: ba0514a88f20b63b
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -6644,8 +6644,9 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
 }
 
 .buttonContainer_d38e00 {
-    background-color: var(--background-surface-high);
+    background-color: var(--background-surface-higher);
     border-radius: var(--radius-md);
+    box-shadow: var(--shadow-low);
     display: flex;
     flex-direction: row;
     gap: var(--space-12);
@@ -6777,6 +6778,10 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
     left: 0;
     position: absolute;
     top: 0
+}
+
+.nitroWheelIconColor_cbfae2 {
+    fill: var(--icon-primary)
 }
 
 .heroHeadingContainer__81281 {
@@ -7081,6 +7086,10 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
 .nitroWheelIcon__88ef1 {
     margin-right: var(--space-24);
     margin-top: 3px
+}
+
+.nitroWheelIconColor__88ef1 {
+    fill: var(--icon-primary)
 }
 
 .navBarContent__88ef1 {
@@ -13595,10 +13604,6 @@ div.nagbar_d74ef8 {
     flex-direction: row
 }
 
-.disableButton_d286c5 {
-    margin-right: 16px
-}
-
 .accountProfileCard__1fed1 {
     background-color: var(--background-base-lowest);
     border-radius: var(--radius-sm);
@@ -19926,4 +19931,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=c17379d3eeca94e5.css.map*/
+/*# sourceMappingURL=ba0514a88f20b63b.css.map*/

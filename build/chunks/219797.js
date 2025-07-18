@@ -27,7 +27,7 @@ var r = n(255367),
   E = n(388032),
   x = n(324846);
 
-function C(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function C(e) {
   return e
 }
 
-function v(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -62,7 +62,7 @@ function v(e, t) {
 function y(e) {
   var t;
   let n = e.item.originalItem;
-  return (0, _.Yi)(v(C({}, e), {
+  return (0, _.Yi)(C(v({}, e), {
     alt: n.description,
     src: (0, m.q)({
       proxyURL: n.proxy_url,
@@ -105,7 +105,7 @@ function O(e) {
       }) : null
     }, [n]),
     c = g.Z.toURLSafe(n.proxy_url);
-  return null == c ? null : (c.searchParams.append("format", "webp"), (0, _.lV)(v(C({}, e), {
+  return null == c ? null : (c.searchParams.append("format", "webp"), (0, _.lV)(C(v({}, e), {
     alt: n.description,
     poster: c.toString(),
     fileSize: n.size,
@@ -129,7 +129,7 @@ function O(e) {
 
 function j(e) {
   let t = e.item.originalItem;
-  return (0, _.hX)(v(C({}, e), {
+  return (0, _.hX)(C(v({}, e), {
     fileSize: t.size,
     fileName: (0, h.Z)(t),
     src: t.url
@@ -150,7 +150,7 @@ function I(e) {
     var n;
     (0, d.Np)(t.id, null != (n = null == e ? void 0 : e.message) ? n : null)
   }, [t]);
-  return (0, _.wj)(v(C({}, e), {
+  return (0, _.wj)(C(v({}, e), {
     fileSize: r.size,
     fileName: (0, h.Z)(r),
     src: r.url,
@@ -165,7 +165,7 @@ function I(e) {
 
 function S(e) {
   let t = e.item.originalItem;
-  return (0, _.xi)(v(C({}, e), {
+  return (0, _.xi)(C(v({}, e), {
     url: t.url,
     fileName: (0, h.Z)(t),
     fileSize: t.size,
@@ -175,7 +175,7 @@ function S(e) {
 
 function T(e) {
   let t = e.item.originalItem;
-  return (0, _.ur)(v(C({}, e), {
+  return (0, _.ur)(C(v({}, e), {
     url: t.url,
     fileName: (0, h.Z)(t),
     fileSize: t.size

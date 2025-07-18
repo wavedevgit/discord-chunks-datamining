@@ -20,8 +20,8 @@ var r = n(255367),
   b = n(937889),
   E = n(804063),
   x = n(703656),
-  C = n(359110),
-  v = n(695346),
+  v = n(359110),
+  C = n(695346),
   y = n(131704),
   O = n(592125),
   j = n(430824),
@@ -81,8 +81,8 @@ let U = i.memo(function(e) {
     onPageChange: _,
     onClick: b
   } = e, {
-    offset: C,
-    totalResults: v,
+    offset: v,
+    totalResults: C,
     isSearching: y,
     showBlockedResults: j
   } = n, I = i.useCallback((e, t) => {
@@ -138,11 +138,11 @@ let U = i.memo(function(e) {
       highlighter: z,
       startIndex: i,
       resultRefs: P,
-      totalResults: v,
+      totalResults: C,
       scrollTo: m,
       searchId: l,
       renderEmbeds: a,
-      offset: C,
+      offset: v,
       jumpToMessage: I,
       listNavigator: G,
       favoriteSearch: V
@@ -185,8 +185,8 @@ let U = i.memo(function(e) {
       })]
     }) : null, !y && !V && (0, r.jsx)(w.Z, {
       onPageChange: _,
-      offset: C,
-      totalCount: v,
+      offset: v,
+      totalCount: C,
       pageSize: R.vpv
     })]
   })
@@ -240,10 +240,10 @@ function B(e) {
     jumpToMessage: A,
     listNavigator: w,
     favoriteSearch: k
-  } = e, U = v.cC.useSetting(), B = (0, h.p)(), G = i.useCallback(e => {
+  } = e, U = C.cC.useSetting(), B = (0, h.p)(), G = i.useCallback(e => {
     if (e === N.Z.getChannelId()) return;
     let t = O.Z.getChannel(e);
-    null != t && (I.Z.can(R.Plq.VIEW_CHANNEL, t) || t.isPrivate()) && (0, C.Kh)(t.id)
+    null != t && (I.Z.can(R.Plq.VIEW_CHANNEL, t) || t.isPrivate()) && (0, v.Kh)(t.id)
   }, []), H = null != a ? (0, m.F6)(a, P.default, S.Z, !1) : "???", V = k && null != a.guild_id ? null == (t = j.Z.getGuild(a.guild_id)) ? void 0 : t.name : null, z = (null == a ? void 0 : a.parent_id) != null ? O.Z.getChannel(a.parent_id) : null, W = null != (n = null == z ? void 0 : z.name) ? n : null, K = null != (l = (0, f.KS)(a)) ? l : s.VL1, Y = I.Z.can(R.Plq.MANAGE_MESSAGES, a), {
     content: X
   } = (0, b.ZP)({

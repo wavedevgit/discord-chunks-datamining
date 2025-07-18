@@ -20,8 +20,8 @@ var r = n(255367),
   b = n(594174),
   E = n(630388),
   x = n(74538),
-  C = n(566006),
-  v = n(981631),
+  v = n(566006),
+  C = n(981631),
   y = n(185923),
   O = n(474936),
   j = n(388032),
@@ -60,8 +60,8 @@ class P extends i.Component {
       tabIndex: o = 0
     } = this.props, {
       isReactionPickerActive: s
-    } = this.state, c = t.state === v.yb.SENDING, f = e === C.O.BURST;
-    if (c || (0, E.yE)(t.flags, v.iLy.EPHEMERAL)) return null;
+    } = this.state, c = t.state === C.yb.SENDING, f = e === v.O.BURST;
+    if (c || (0, E.yE)(t.flags, C.iLy.EPHEMERAL)) return null;
     let g = b.default.getCurrentUser(),
       h = (0, x.I5)(g),
       _ = f ? j.intl.string(j.t.Kfcszs) : j.intl.string(j.t.lfIHs7);
@@ -74,7 +74,7 @@ class P extends i.Component {
         color: "currentColor",
         className: O.icon
       };
-    return t.type === v.uaV.EMOJI_ADDED && 0 === t.reactions.length ? (0, r.jsx)(p.e, {
+    return t.type === C.uaV.EMOJI_ADDED && 0 === t.reactions.length ? (0, r.jsx)(p.e, {
       message: t,
       className: a()(O.reactionBtn, n)
     }) : (0, r.jsx)(u.yRy, {
@@ -143,12 +143,12 @@ class P extends i.Component {
       } = this.props;
       e.stopPropagation();
       let r = b.default.getCurrentUser();
-      t !== C.O.BURST || (0, x.I5)(r) || (0, f.m)({
+      t !== v.O.BURST || (0, x.I5)(r) || (0, f.m)({
         analytics: {
           type: O.cd.BURST_REACTION_UPSELL,
-          page: null != n.getGuildId() ? v.ZY5.GUILD_CHANNEL : v.ZY5.DM_CHANNEL,
+          page: null != n.getGuildId() ? C.ZY5.GUILD_CHANNEL : C.ZY5.DM_CHANNEL,
           section: (0, h.s4)(n),
-          object: v.qAy.INLINE_REACTION_PICKER_UPSELL
+          object: C.qAy.INLINE_REACTION_PICKER_UPSELL
         }
       }), this.handleReactionPickerToggle()
     }), T(this, "renderReactionPopout", e => {
@@ -160,11 +160,11 @@ class P extends i.Component {
         message: l
       } = this.props, a = N({
         openPopoutType: "message_reaction_emoji_picker"
-      }, n === C.O.BURST && {
+      }, n === v.O.BURST && {
         openPopoutType: "message_super_reaction_emoji_picker",
-        page: null != i.getGuildId() ? v.ZY5.GUILD_CHANNEL : v.ZY5.DM_CHANNEL,
+        page: null != i.getGuildId() ? C.ZY5.GUILD_CHANNEL : C.ZY5.DM_CHANNEL,
         section: (0, h.s4)(i),
-        object: v.qAy.REACTION_RAIL
+        object: C.qAy.REACTION_RAIL
       }), o = (0, r.jsx)(_.$, {
         closePopout: t,
         channel: i,

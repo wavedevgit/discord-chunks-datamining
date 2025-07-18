@@ -51,13 +51,13 @@ function x(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let C = {
+let v = {
     hiddenSurveys: {},
     surveyOverride: null,
     lastFetched: null,
     lastSeen: null
   },
-  v = C,
+  C = v,
   y = {},
   O = null,
   j = !1,
@@ -66,11 +66,11 @@ var S = ((i = S || {}).IS_OWNER = "is_owner", i.IS_ADMIN = "is_admin", i.IS_COMM
 let T = new Set(Object.values(S));
 
 function N() {
-  return null == v.lastFetched || Date.now() - v.lastFetched >= I
+  return null == C.lastFetched || Date.now() - C.lastFetched >= I
 }
 
 function P() {
-  !j && (N() || null != v.surveyOverride) && (j = !0, (0, d.wk)(v.surveyOverride, !0))
+  !j && (N() || null != C.surveyOverride) && (j = !0, (0, d.wk)(C.surveyOverride, !0))
 }
 
 function A(e) {
@@ -125,9 +125,9 @@ function w(e) {
   let {
     survey: t
   } = e;
-  j = !1, v.lastFetched = Date.now(), null == v.hiddenSurveys && (v.hiddenSurveys = {});
+  j = !1, C.lastFetched = Date.now(), null == C.hiddenSurveys && (C.hiddenSurveys = {});
   let n = null != t,
-    r = n && null == v.hiddenSurveys[t.key],
+    r = n && null == C.hiddenSurveys[t.key],
     i = n && A(t);
   var l = 0;
   let o = c.K.get(_.z7k);
@@ -144,19 +144,19 @@ function Z() {
 }
 class R extends(r = s.ZP.PersistedStore) {
   initialize(e) {
-    v = null != e ? e : C, this.syncWith([g.Z], Z)
+    C = null != e ? e : v, this.syncWith([g.Z], Z)
   }
   getState() {
-    return v
+    return C
   }
   getCurrentSurvey() {
     return N() ? null : O
   }
   getSurveyOverride() {
-    return v.surveyOverride
+    return C.surveyOverride
   }
   getLastSeenTimestamp() {
-    return v.lastSeen
+    return C.lastSeen
   }
 }
 b(R, "displayName", "SurveyStore"), b(R, "persistKey", "SurveyStore"), b(R, "migrations", [e => {
@@ -181,20 +181,20 @@ let k = new R(u.Z, {
     let {
       key: t
     } = e;
-    v.hiddenSurveys[t] = !0, O = null, y = null != y ? y : {}, delete y[t]
+    C.hiddenSurveys[t] = !0, O = null, y = null != y ? y : {}, delete y[t]
   },
   SURVEY_OVERRIDE: function(e) {
     let {
       id: t
     } = e;
-    v.surveyOverride = t, null != t && delete v.hiddenSurveys[t], (0, d.wk)(v.surveyOverride, !0)
+    C.surveyOverride = t, null != t && delete C.hiddenSurveys[t], (0, d.wk)(C.surveyOverride, !0)
   },
   PUSH_NOTIFICATION_CLICK: function() {},
   DISPLAYED_INVITE_SHOW: function() {},
   LOGOUT: function() {
-    v.hiddenSurveys = {}
+    C.hiddenSurveys = {}
   },
   SURVEY_SEEN: function() {
-    v.lastSeen = Date.now()
+    C.lastSeen = Date.now()
   }
 })

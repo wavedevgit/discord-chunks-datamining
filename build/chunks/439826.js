@@ -181,7 +181,7 @@ function D(e) {
   } = o.useContext(w.k), F = o.useCallback(() => {
     Q && ((0, b.zi)(d) || U || (0, g.AH)(d.id, {
       questContent: h.jn.QUEST_HOME_DESKTOP,
-      questContentCTA: f.jZ.QUEST_HOME_TILE_HEADER_WATCH_VIDEO,
+      questContentCTA: f.jZ.ACCEPT_QUEST,
       sourceQuestContent: D
     }), (0, E.openVideoQuestModal)({
       quest: d,

@@ -78,8 +78,8 @@ function F() {
     q = k.dN.useSetting() && null != H ? j.ZP.parse(void 0, H).content : H,
     X = Z.ZP.canUsePremiumProfileCustomization(n),
     {
-      analyticsLocations: J,
-      newestAnalyticsLocation: Q
+      analyticsLocations: Q,
+      newestAnalyticsLocation: J
     } = (0, f.ZP)(h.Z.USER_SETTINGS_USER_PROFILE),
     $ = (0, I.T)({
       location: "UserSettingsProfileCustomization"
@@ -103,7 +103,7 @@ function F() {
     location: "UserSettingsProfileCustomization"
   }), ec = !X, ed = r.useRef(null);
   return s ? (0, i.jsx)(g.Z, {}) : (0, i.jsxs)(f.Gt, {
-    value: J,
+    value: Q,
     children: [(0, i.jsx)(b.Z, {}), (0, i.jsx)(C.Z, {
       showViewFullProfileButton: eo,
       profilePreview: (0, i.jsx)(v.Z, (e = function(e) {
@@ -161,7 +161,7 @@ function F() {
       showUpsell: ec && !es,
       text: V.intl.format(V.t.TmfgIy, {
         onClick: () => (0, O.y)({
-          analyticsSource: Q
+          analyticsSource: J
         })
       }),
       textVariant: "heading-md/medium",

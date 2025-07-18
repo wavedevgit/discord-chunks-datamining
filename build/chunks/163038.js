@@ -20,8 +20,8 @@ var r = n(255367),
   b = n(464891),
   E = n(507418),
   x = n(348238),
-  C = n(38267),
-  v = n(25015),
+  v = n(38267),
+  C = n(25015),
   y = n(438075),
   O = n(359110),
   j = n(6025),
@@ -99,7 +99,7 @@ function B(e) {
     let {
       popouts: n,
       setPopout: r
-    } = (0, C.Z)(e.id, M.d$), {
+    } = (0, v.Z)(e.id, M.d$), {
       usernameProfile: l,
       avatarProfile: a
     } = n, o = (0, x.XO)(e, t, l, r);
@@ -175,8 +175,8 @@ function G(e) {
     E = (0, f.A)((null != (l = g.editedTimestamp) ? l : g.timestamp).valueOf()),
     {
       content: x,
-      hasSpoilerEmbeds: C
-    } = (0, v.Z)(g, {
+      hasSpoilerEmbeds: v
+    } = (0, C.Z)(g, {
       hideSimpleEmbedContent: h && _,
       isInteracting: !1,
       formatInline: !1,
@@ -203,7 +203,7 @@ function G(e) {
           channel: O,
           compact: !1
         },
-        hasSpoilerEmbeds: C,
+        hasSpoilerEmbeds: v,
         isInteracting: !1,
         isMessageSnapshot: !0,
         renderThreadAccessory: !1,

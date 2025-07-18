@@ -110,8 +110,8 @@ function V() {
     }),
     q = (0, r.e7)([S.Z], () => S.Z.hasLibraryApplication()),
     X = (0, r.e7)([C.default], () => C.default.hasTOTPEnabled()),
-    J = R.Sb.useSetting(),
-    Q = (0, g.Z)(),
+    Q = R.Sb.useSetting(),
+    J = (0, g.Z)(),
     {
       hypeSquadRemoved: $
     } = m.Z.useExperiment({
@@ -157,10 +157,10 @@ function V() {
     isInapproprateConversationsDefaultOn: W,
     paymentsBlocked: Y,
     isEligibleForQuests: K,
-    isStricterMessageRequestsEnabled: Q,
+    isStricterMessageRequestsEnabled: J,
     hasLibraryApplication: q,
     hasTOTPEnabled: X,
-    developerMode: J,
+    developerMode: Q,
     isAdultUser: ee,
     hasSecureFramesVerifiedUserIds: et,
     hypeSquadRemoved: $,
@@ -172,7 +172,7 @@ function V() {
     activeInputProfile: el,
     isInputProfileCustom: eo,
     isGoreContentFilteringEnabled: ec
-  }), [J, V, en, ei, q, et, X, $, k, ee, K, W, z, F, M, H, Q, L, Y, G, P, v, er, es, ea, el, eo, ec])
+  }), [Q, V, en, ei, q, et, X, $, k, ee, K, W, z, F, M, H, J, L, Y, G, P, v, er, es, ea, el, eo, ec])
 }
 
 function G(e) {

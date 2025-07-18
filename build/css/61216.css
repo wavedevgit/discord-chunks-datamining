@@ -1,6 +1,6 @@
 /**
   Module ID: 61216
-  Original File Name: d82f59e20664130d
+  Original File Name: 8e143767e40999f2
 **/
 .wrapper__74bfa {
     align-items: center;
@@ -6263,12 +6263,6 @@ html .progress__61462 {
     margin: 4px 0 0
 }
 
-.infoButton__0be77 {
-    align-self: flex-start;
-    cursor: pointer;
-    grid-area: infoIcon
-}
-
 .detailsText__0be77 {
     display: flex;
     white-space: nowrap
@@ -6277,15 +6271,6 @@ html .progress__61462 {
 .detailsText__0be77>:not(:first-child):before {
     content: "\2219";
     margin: 0 .5rem
-}
-
-.detailsTextButton__0be77 {
-    color: var(--text-muted)
-}
-
-.detailsTextButton__0be77.interactive__0be77:hover {
-    color: var(--interactive-active);
-    text-decoration: underline
 }
 
 .bottomBar__0be77 {
@@ -6309,14 +6294,6 @@ html .progress__61462 {
 
 .tertiaryAction__0be77 :hover {
     text-decoration: underline
-}
-
-.buttonPresentation__0be77 {
-    color: var(--redesign-button-secondary-text)
-}
-
-.secondaryButtonPresentation__0be77 {
-    background-color: var(--background-secondary-alt)
 }
 
 .theme-light .container__0be77 {
@@ -9050,7 +9027,7 @@ html .progress__61462 {
     white-space: nowrap
 }
 
-.button_f69538,.victorIcon_f69538 {
+.victorIcon_f69538 {
     flex-shrink: 0
 }
 
@@ -10189,4 +10166,4 @@ html .progress__61462 {
     background-image: url(/assets/abbc14555963e723.svg)
 }
 
-/*# sourceMappingURL=d82f59e20664130d.css.map*/
+/*# sourceMappingURL=8e143767e40999f2.css.map*/

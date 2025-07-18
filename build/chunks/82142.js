@@ -17,8 +17,8 @@ let g = {},
   b = [],
   E = [],
   x = new Set,
-  C = {},
   v = {},
+  C = {},
   y = new Set;
 
 function O(e) {
@@ -88,7 +88,7 @@ class P extends(r = s.ZP.Store) {
     return null == t || t.isExpired() ? null : t
   }
   getError(e) {
-    return null != e ? v[e] : null
+    return null != e ? C[e] : null
   }
   getForGifterSKUAndPlan(e, t, n) {
     return Array.from(h.values()).filter(r => r.userId === e && r.skuId === t && (null == n || r.subscriptionPlanId === n) && !r.isExpired())
@@ -106,7 +106,7 @@ class P extends(r = s.ZP.Store) {
     return x.has((0, m.Bg)(e, t))
   }
   getUserGiftCodesLoadedAtForSKUAndPlan(e, t) {
-    return C[(0, m.Bg)(e, t)]
+    return v[(0, m.Bg)(e, t)]
   }
   getResolvingCodes() {
     return _
@@ -171,7 +171,7 @@ let A = new P(u.Z, {
       } = e;
       b = b.filter(e => e !== t);
       let r = h.get(t);
-      if (v[t] = n, null != r) switch (n.code) {
+      if (C[t] = n, null != r) switch (n.code) {
         case f.evJ.UNKNOWN_GIFT_CODE:
           h.set(t, r.set("revoked", !0));
           break;
@@ -208,7 +208,7 @@ let A = new P(u.Z, {
       } = e;
       t.forEach(O);
       let i = (0, m.Bg)(n, r);
-      C[i] = Date.now(), x.delete(i)
+      v[i] = Date.now(), x.delete(i)
     },
     GIFT_CODES_FETCH_FAILURE: function(e) {
       let {

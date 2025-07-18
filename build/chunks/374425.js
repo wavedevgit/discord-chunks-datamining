@@ -50,8 +50,8 @@ function x(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let C = (0, d.Mg)(l.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
-  v = e => {
+let v = (0, d.Mg)(l.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
+  C = e => {
     null != e && s.ZP.trackWithMetadata(h.rMx.EXPRESSION_TOOLTIP_VIEWED, {
       type: _.cd.STICKER_IN_MESSAGE_HOVER,
       expression_id: e.id,
@@ -99,7 +99,7 @@ let C = (0, d.Mg)(l.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
             text: (0, u.Y)(j),
             "aria-label": !1,
             onTooltipShow: () => {
-              v(y)
+              C(y)
             },
             children: e => (0, r.jsx)(a.P3F, x(E({}, e), {
               innerRef: s,
@@ -110,7 +110,7 @@ let C = (0, d.Mg)(l.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
               tag: "span",
               children: (0, r.jsx)(f.Z, {
                 isInteracting: l,
-                size: C,
+                size: v,
                 sticker: null != y ? y : t
               })
             }))

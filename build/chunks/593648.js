@@ -71,7 +71,7 @@ function X(e) {
   return e
 }
 
-function J(e, t) {
+function Q(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -84,7 +84,7 @@ function J(e, t) {
   }), e
 }
 
-function Q(e) {
+function J(e) {
   let {
     label: t,
     enabled: n,
@@ -236,7 +236,7 @@ function $(e) {
           sound: s,
           focusModeDisabled: a
         } = e;
-        return (0, i.jsx)(Q, {
+        return (0, i.jsx)(J, {
           label: r,
           disabled: n || !0 === a,
           tooltip: a ? W.intl.string(W.t.cIRG0t) : void 0,
@@ -576,7 +576,7 @@ async function es(e) {
 
 function ea(e) {
   let t = (0, v.p)();
-  return (0, i.jsx)(et, J(X({}, e), {
+  return (0, i.jsx)(et, Q(X({}, e), {
     focusMode: t
   }))
 }
@@ -591,7 +591,7 @@ function el() {
     ttsType: w.Z.getTTSType(),
     notifyMessagesInSelectedChannel: w.Z.getNotifyMessagesInSelectedChannel()
   }));
-  return (0, i.jsx)(ea, J(X({}, e), {
+  return (0, i.jsx)(ea, Q(X({}, e), {
     afkTimeout: U.CM.useSetting()
   }))
 }

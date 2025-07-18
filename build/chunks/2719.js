@@ -324,7 +324,7 @@ function X(e) {
   })
 }
 
-function J(e) {
+function Q(e) {
   let t, {
     className: r,
     user: s
@@ -399,7 +399,7 @@ function J(e) {
   })
 }
 
-function Q(e) {
+function J(e) {
   let {
     user: t
   } = e, n = (0, j.Z)({
@@ -517,7 +517,7 @@ function et() {
             user: t,
             className: F.userTag,
             discriminatorClass: F.discriminator
-          }), (0, i.jsx)(Q, {
+          }), (0, i.jsx)(J, {
             user: t
           })]
         }), (0, i.jsx)(y.Z, {
@@ -559,7 +559,7 @@ function et() {
           })
         }), (0, i.jsx)(S.F, {
           setting: B.s6.ACCOUNT_PHONE_NUMBER,
-          children: (0, i.jsx)(J, {
+          children: (0, i.jsx)(Q, {
             className: F.fieldSpacer,
             user: t
           })
