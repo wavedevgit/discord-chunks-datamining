@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  AR: () => l,
-  g1: () => s,
+  AR: () => c,
+  g1: () => l,
   sT: () => o
 });
 var r = n(818083),
@@ -13,19 +13,32 @@ let o = (0, r.B)({
   id: "2025-06_vanity_url_perk",
   label: "Vanity URL Standalone Perk",
   defaultConfig: {
-    enabled: !1
+    enabled: !1,
+    rollbackEnabled: !1
   },
   treatments: [{
     id: 1,
     label: "Enable ability to purchase Vanity URL Standalone Perk",
     config: {
-      enabled: !0
+      enabled: !0,
+      rollbackEnabled: !1
+    }
+  }, {
+    id: 2,
+    label: "Rollback UI for Vanity URL Standalone Perk",
+    config: {
+      enabled: !0,
+      rollbackEnabled: !0
     }
   }]
 });
 
-function s(e, t) {
-  let n = null != e && e !== a._ && e !== i.I_8;
+function s(e) {
+  return null != e && e !== a._ && e !== i.I_8
+}
+
+function l(e, t) {
+  let n = s(e);
   return o.useExperiment({
     guildId: e,
     location: t
@@ -35,8 +48,8 @@ function s(e, t) {
   }).enabled
 }
 
-function l(e, t) {
-  return null != e && e !== a._ && e !== i.I_8 && o.getCurrentConfig({
+function c(e, t) {
+  return !!s(e) && o.getCurrentConfig({
     guildId: e,
     location: t
   }, {
