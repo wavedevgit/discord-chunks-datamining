@@ -24,8 +24,8 @@ var r = n(255367),
   C = n(869765),
   x = n(703656),
   v = n(695346),
-  O = n(592125),
-  j = n(906467),
+  j = n(592125),
+  O = n(906467),
   E = n(323873),
   S = n(709054),
   P = n(786761),
@@ -184,8 +184,8 @@ function ei(e) {
     compact: b = !1,
     className: _,
     groupId: y,
-    viewingChannelId: O
-  } = e, j = o.type === q.uaV.REPLY ? o.messageReference : void 0, E = (0, c.JA)(null != (t = e.id) ? t : ""), {
+    viewingChannelId: j
+  } = e, O = o.type === q.uaV.REPLY ? o.messageReference : void 0, E = (0, c.JA)(null != (t = e.id) ? t : ""), {
     onFocus: S
   } = E, I = et(E, ["onFocus"]), {
     isFocused: N,
@@ -195,7 +195,7 @@ function ei(e) {
     popouts: F,
     selected: V,
     setPopout: Q
-  } = (0, D.Z)(o.id, Y.d$), J = v.RS.useSetting(), en = v.NA.useSetting(), er = (0, u.e7)([C.Z], () => C.Z.getMessageByReference(j)), ei = (0, m.A)((null != (n = o.editedTimestamp) ? n : o.timestamp).valueOf()), {
+  } = (0, D.Z)(o.id, Y.d$), J = v.RS.useSetting(), en = v.NA.useSetting(), er = (0, u.e7)([C.Z], () => C.Z.getMessageByReference(O)), ei = (0, m.A)((null != (n = o.editedTimestamp) ? n : o.timestamp).valueOf()), {
     handleMouseEnter: el,
     handleMouseLeave: ea,
     isHovered: eo
@@ -215,7 +215,7 @@ function ei(e) {
     allowHeading: ei,
     allowLinks: !0,
     previewLinkTarget: !0,
-    viewingChannelId: O
+    viewingChannelId: j
   }), eh = (0, M.Z)(s, h, es), ef = (0, T.ZP)(o), em = (0, w.iG)(o, y), eg = (0, w.Gx)(o), eb = (0, G.Z)(e, ed, !1), e_ = i.useCallback(() => (0, x.XU)(g, h, s), [g, h, s]), ey = (0, f.p9)({
     guildId: g,
     roleId: ef.iconRoleId
@@ -247,7 +247,7 @@ function ei(e) {
         setPopout: Q,
         referencedUsernameProfile: F.referencedUsernameProfile,
         referencedAvatarProfile: F.referencedAvatarProfile,
-        replyReference: j,
+        replyReference: O,
         replyMessage: er,
         isReplySpineClickable: !0
       })),
@@ -255,7 +255,7 @@ function ei(e) {
         messageProps: e,
         setPopout: Q,
         messagePopouts: F,
-        replyReference: j,
+        replyReference: O,
         author: ef,
         repliedMessage: er,
         roleIcon: ey
@@ -319,8 +319,8 @@ let el = i.memo(function(e) {
     {
       handleMouseEnter: ex,
       handleMouseLeave: ev,
-      hasHovered: eO,
-      isHovered: ej
+      hasHovered: ej,
+      isHovered: eO
     } = (0, R.tn)({
       groupId: ea,
       message: x,
@@ -342,11 +342,11 @@ let el = i.memo(function(e) {
     eN = (0, u.e7)([E.Z], () => E.Z.isEditing(en, I), [en, I]),
     eA = (0, u.e7)([p.Z], () => p.Z.keyboardModeEnabled),
     ew = eb || eN || eA && eE,
-    eR = ew || ej,
-    eM = (0, u.e7)([O.Z], () => x.hasFlag(q.iLy.HAS_THREAD) && O.Z.getChannel(S.default.castMessageIdAsChannelId(x.id))),
+    eR = ew || eO,
+    eM = (0, u.e7)([j.Z], () => x.hasFlag(q.iLy.HAS_THREAD) && j.Z.getChannel(S.default.castMessageIdAsChannelId(x.id))),
     eD = x.isFirstMessageInForumPost(J),
     eL = (0, m.A)((null != (n = x.editedTimestamp) ? n : x.timestamp).valueOf()),
-    ek = (0, u.e7)([j.Z], () => j.Z.isDeveloper),
+    ek = (0, u.e7)([O.Z], () => O.Z.isDeveloper),
     {
       content: eU,
       hasSpoilerEmbeds: eB
@@ -396,7 +396,7 @@ let el = i.memo(function(e) {
         children: [(0, _.Uw)(x) && (0, r.jsx)(g.Z, {
           compact: er,
           message: x,
-          hovering: ej && !eN && !eQ
+          hovering: eO && !eN && !eQ
         }), (0, r.jsx)(A.Z, ee($({}, ed), {
           "aria-setsize": -1,
           "aria-roledescription": K.intl.string(K.t.BAB0yM),
@@ -424,7 +424,7 @@ let el = i.memo(function(e) {
             [X.editing]: eN,
             [X.hasOpenPopouts]: eQ,
             [X.potioned]: (0, _.Uw)(x) && ep,
-            [Q.forceAnimate]: ej
+            [Q.forceAnimate]: eO
           }),
           zalgo: !eN,
           childrenRepliedMessage: eo || x.type !== q.uaV.REPLY ? void 0 : (0, z.Z)(ee($({}, e), {
@@ -453,11 +453,11 @@ let el = i.memo(function(e) {
             isAutomodBlockedMessage: eX,
             forceAddReactions: x.type === q.uaV.EMOJI_ADDED
           }),
-          childrenButtons: eO || eS ? (0, F.Z)({
+          childrenButtons: ej || eS ? (0, F.Z)({
             buttonProps: e,
             setPopout: e_,
             messagePopouts: eg,
-            isFocused: ej || eE
+            isFocused: eO || eE
           }) : void 0,
           childrenSystemMessage: (0, W.Z)(e),
           childrenMessageContent: l,

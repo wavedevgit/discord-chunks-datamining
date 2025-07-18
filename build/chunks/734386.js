@@ -22,8 +22,8 @@ var r = n(255367),
   C = n(434404),
   x = n(454585),
   v = n(485386),
-  O = n(430824),
-  j = n(496675),
+  j = n(430824),
+  O = n(496675),
   E = n(594174),
   S = n(700785),
   P = n(51144),
@@ -38,9 +38,9 @@ var r = n(255367),
 function M(e) {
   let {
     channel: t
-  } = e, [n, l] = i.useState(!1), o = (0, m.ZP)(t, !0), M = t.guild_id, D = (0, d.e7)([v.Z], () => null != M ? v.Z.getRoles(M) : void 0), L = (0, d.e7)([E.default, O.Z], () => {
+  } = e, [n, l] = i.useState(!1), o = (0, m.ZP)(t, !0), M = t.guild_id, D = (0, d.e7)([v.Z], () => null != M ? v.Z.getRoles(M) : void 0), L = (0, d.e7)([E.default, j.Z], () => {
     var e;
-    return E.default.getUser(null == (e = O.Z.getGuild(M)) ? void 0 : e.ownerId)
+    return E.default.getUser(null == (e = j.Z.getGuild(M)) ? void 0 : e.ownerId)
   }), k = i.useMemo(() => null != M ? s()(D).sortBy(e => -e.position).filter(e => !(0, g.pM)(M, e.id)).value() : [], [M, D]), U = i.useMemo(() => s()(k).filter(e => {
     if (null == M) return !1;
     let n = S.I0({
@@ -68,7 +68,7 @@ function M(e) {
         l = c.e$(i.allow, N.Plq.VIEW_CHANNEL);
       return r || l
     }).value()
-  }, [t, L]), F = j.Z.can(N.Plq.MANAGE_CHANNELS, t) || j.Z.can(N.Plq.MANAGE_ROLES, t), H = i.useCallback(() => l(!1), []);
+  }, [t, L]), F = O.Z.can(N.Plq.MANAGE_CHANNELS, t) || O.Z.can(N.Plq.MANAGE_ROLES, t), H = i.useCallback(() => l(!1), []);
   return (0, r.jsxs)(Z.ZP, {
     channelId: t.id,
     children: [(0, r.jsx)(Z.Kq, {

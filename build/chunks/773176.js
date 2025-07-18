@@ -22,8 +22,8 @@ var r = n(255367),
   C = n(856985),
   x = n(868643),
   v = n(245216),
-  O = n(223606),
-  j = n(188597),
+  j = n(223606),
+  O = n(188597),
   E = n(41776),
   S = n(980463),
   P = n(328908),
@@ -182,8 +182,8 @@ function ef(e) {
     canPublish: b,
     canReact: y,
     canConfigureJoin: C,
-    canReply: O,
-    canStartThread: j,
+    canReply: j,
+    canStartThread: O,
     canViewThread: A,
     canForward: w,
     isExpanded: R,
@@ -211,7 +211,7 @@ function ef(e) {
     } = (0, u.cj)([z.Z], () => ({
       canAddNewReactions: y && z.Z.can(ei.Plq.ADD_REACTIONS, t),
       canManageMessages: z.Z.can(ei.Plq.MANAGE_MESSAGES, t)
-    }), [t, y]), O = (0, M.U)(t, n), j = (0, k.NE)(t, n), S = (0, k.Ek)(n), P = (0, u.e7)([E.Z], () => null != t.guild_id && E.Z.isLurking(t.guild_id), [t]), I = (0, u.e7)([H.ZP], () => null != t.guild_id && H.ZP.isCurrentUserGuest(t.guild_id), [t]), Z = s.id === p, T = (C || n.canDeleteOwnMessage(p)) && h && !ei.V$x.UNDELETABLE.has(n.type);
+    }), [t, y]), j = (0, M.U)(t, n), O = (0, k.NE)(t, n), S = (0, k.Ek)(n), P = (0, u.e7)([E.Z], () => null != t.guild_id && E.Z.isLurking(t.guild_id), [t]), I = (0, u.e7)([H.ZP], () => null != t.guild_id && H.ZP.isCurrentUserGuest(t.guild_id), [t]), Z = s.id === p, T = (C || n.canDeleteOwnMessage(p)) && h && !ei.V$x.UNDELETABLE.has(n.type);
     n.type === ei.uaV.AUTO_MODERATION_ACTION && (T = T && C);
     let N = (0, X.a4)(n),
       A = (0, J.Z)(n, t),
@@ -248,8 +248,8 @@ function ef(e) {
       canEdit: w,
       canDelete: T,
       canReport: N,
-      canReply: O,
-      canStartThread: j,
+      canReply: j,
+      canStartThread: O,
       canViewThread: S,
       canForward: K,
       canCopy: Y.wS,
@@ -277,10 +277,10 @@ function ef(e) {
     ea({
       emojiPicker: !q
     })
-  }, [q, ea]), eg = (0, k.$R)(t), e_ = n.hasFlag(ei.iLy.CROSSPOSTED), [ey, eC] = (0, g.cv)(w ? [d.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE] : []), ex = ey === d.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE, [ev, eO] = i.useState(!1), ej = i.useCallback(() => {
-    eO(!0)
+  }, [q, ea]), eg = (0, k.$R)(t), e_ = n.hasFlag(ei.iLy.CROSSPOSTED), [ey, eC] = (0, g.cv)(w ? [d.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE] : []), ex = ey === d.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE, [ev, ej] = i.useState(!1), eO = i.useCallback(() => {
+    ej(!0)
   }, []), eE = i.useCallback(() => {
-    eO(!1)
+    ej(!1)
   }, []), eS = i.useCallback((e, t) => {
     eC(el.L.TAKE_ACTION), (0, et.ts)(e, t)
   }, [eC]), {
@@ -331,11 +331,11 @@ function ef(e) {
         label: n.pinned ? eo.intl.string(eo.t["Bse+Fx"]) : eo.intl.string(eo.t["CvQ18/"]),
         icon: p.qQX,
         onClick: e => (0, et.rY)(t, n, e)
-      }, "pin") : null, j && w ? (0, r.jsx)(ee.sF, {
+      }, "pin") : null, O && w ? (0, r.jsx)(ee.sF, {
         label: eo.intl.string(eo.t.rBIGBA),
         icon: p.or_,
         onClick: () => (0, et.gK)(t, n)
-      }, "thread") : null, O && h ? (0, r.jsx)(ee.sF, {
+      }, "thread") : null, j && h ? (0, r.jsx)(ee.sF, {
         label: eo.intl.string(eo.t["5IEsGx"]),
         icon: p.n$P,
         onClick: e => (0, et.HH)(t, n, e)
@@ -368,7 +368,7 @@ function ef(e) {
           })
         }
       }, "add-confetti-potion") : null]
-    }) : null, O && !h ? (0, r.jsx)(ee.sF, {
+    }) : null, j && !h ? (0, r.jsx)(ee.sF, {
       label: eo.intl.string(eo.t["5IEsGx"]),
       icon: p.n$P,
       onClick: e => (0, et.HH)(t, n, e)
@@ -380,14 +380,14 @@ function ef(e) {
       label: eo.intl.string(eo.t.I3ltXF),
       icon: v.Z,
       onClick: () => eS(t, n),
-      onTooltipShow: ej,
+      onTooltipShow: eO,
       onTooltipHide: eE,
       showNewBadge: !ev && ex
-    }, "forward") : null, j && !w ? (0, r.jsx)(ee.sF, {
+    }, "forward") : null, O && !w ? (0, r.jsx)(ee.sF, {
       label: eo.intl.string(eo.t.rBIGBA),
       icon: p.or_,
       onClick: () => (0, et.gK)(t, n)
-    }, "thread") : null, !j && A ? (0, r.jsx)(ee.sF, {
+    }, "thread") : null, !O && A ? (0, r.jsx)(ee.sF, {
       label: eo.intl.string(eo.t["39d0Wl"]),
       icon: p.or_,
       onClick: () => (0, et.qe)(t, n)
@@ -458,7 +458,7 @@ function em(e) {
   let {
     channel: t,
     message: n
-  } = e, i = (0, u.e7)([O.Z], () => null != O.Z.getMessage(n.id), [n.id]), l = null == n.interaction || null != n.interactionData && (0, j.$s)(n.interactionData);
+  } = e, i = (0, u.e7)([j.Z], () => null != j.Z.getMessage(n.id), [n.id]), l = null == n.interaction || null != n.interactionData && (0, O.$s)(n.interactionData);
   return (0, r.jsxs)(r.Fragment, {
     children: [!i && l && (0, r.jsx)(ee.sF, {
       label: eo.intl.string(eo.t["5911LS"]),

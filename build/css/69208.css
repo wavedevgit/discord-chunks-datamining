@@ -1,23 +1,7 @@
 /**
   Module ID: 69208
-  Original File Name: f51055077f7ae667
+  Original File Name: 277bfa20636935dc
 **/
-.content__5003d {
-    display: flex;
-    flex-direction: column
-}
-
-.header__5003d {
-    align-self: center;
-    margin-top: 32px;
-    max-width: 280px;
-    text-align: center
-}
-
-.body__5003d {
-    margin-top: 8px
-}
-
 .keybindHintKeys__5003d {
     display: inline-block
 }
@@ -26,14 +10,8 @@
     height: 20px
 }
 
-.closeButton__5003d {
-    position: absolute;
-    right: 20px;
-    top: 20px
-}
-
 .soundWheel__5003d {
     margin-bottom: 32px
 }
 
-/*# sourceMappingURL=f51055077f7ae667.css.map*/
+/*# sourceMappingURL=277bfa20636935dc.css.map*/

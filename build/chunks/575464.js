@@ -28,8 +28,8 @@ function m(e) {
     disabled: C = !1,
     inlineUsername: x = !0,
     onClick: v,
-    onMouseEnter: O,
-    "aria-setsize": j,
+    onMouseEnter: j,
+    "aria-setsize": O,
     "aria-posinset": E
   } = e, S = (0, o.e7)([p.Z], () => p.Z.getStatus(i.id)), P = (0, a.JA)(String(i.id));
   return (0, r.jsx)(s.P3F, (t = function(e) {
@@ -58,13 +58,13 @@ function m(e) {
       null != v && v(i.id)
     },
     onMouseEnter: () => {
-      null != O && O(m)
+      null != j && j(m)
     }
   }, P), n = n = {
     role: "option",
     "aria-selected": y,
     "aria-disabled": C,
-    "aria-setsize": j,
+    "aria-setsize": O,
     "aria-posinset": E,
     children: (0, r.jsxs)(d.Z, {
       align: d.Z.Align.CENTER,

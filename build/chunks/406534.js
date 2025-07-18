@@ -22,8 +22,8 @@ var r = n(255367),
   C = n(359110),
   x = n(359119),
   v = n(13279),
-  O = n(248789),
-  j = n(88101),
+  j = n(248789),
+  O = n(88101),
   E = n(576954),
   S = n(765104),
   P = n(122707),
@@ -131,11 +131,11 @@ function en(e) {
     eg = B.length > 0 && (null == (t = B.first()) ? void 0 : t.isFirstMessageInForumPost(f)),
     eb = (0, c.ts)(f),
     e_ = (0, l.e7)([S.Z], () => S.Z.shouldShowTopicsBar() && !ed),
-    ey = (0, j.P)(f.id),
+    ey = (0, O.P)(f.id),
     eC = (0, v.z)(f.id, Q.zr),
     ex = (0, p.k)(f.id),
     ev = (0, k.Z)(),
-    eO = function(e, t) {
+    ej = function(e, t) {
       if (e.isDM() && null != t)
         if (t.type === x.pj.STRANGER_DANGER) return (0, r.jsx)(E.M, {
           channelId: e.id,
@@ -147,14 +147,14 @@ function en(e) {
         warningId: t.id,
         senderId: e.getRecipientId()
       });
-      else return (0, r.jsx)(O.Y, {
+      else return (0, r.jsx)(j.Y, {
         channelId: e.id,
         warningId: t.id,
         senderId: e.getRecipientId()
       });
       return null
     }(f, null != (n = null != ey ? ey : eC) ? n : ex),
-    ej = f.isForumPost() && !eg ? (0, r.jsx)(g.Z, {
+    eO = f.isForumPost() && !eg ? (0, r.jsx)(g.Z, {
       postId: f.id
     }) : null,
     eE = (0, _.Z)(f.id),
@@ -389,7 +389,7 @@ function en(e) {
     channelStreamMarkup: eI,
     newMessagesBar: i,
     jumpToPresentBar: s,
-    forumPostActionBar: ej,
-    safetyWarningBanner: eO
+    forumPostActionBar: eO,
+    safetyWarningBanner: ej
   }
 }

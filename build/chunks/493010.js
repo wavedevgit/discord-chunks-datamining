@@ -34,7 +34,7 @@ let x = function(e) {
   let v = i.useCallback(() => {
       o.Z.updateChatOpen(t.id, !1), m.S.safeDispatch(b.CkL.FOCUS_CHAT_BUTTON)
     }, [t.id]),
-    O = (0, r.jsx)(h.ZP.Icon, {
+    j = (0, r.jsx)(h.ZP.Icon, {
       icon: a.Dio,
       tooltip: y.intl.string(y.t.cpT0Cg),
       onClick: v
@@ -47,7 +47,7 @@ let x = function(e) {
       channel: t,
       draftType: f.d.ChannelMessage
     }), (0, r.jsxs)(h.ZP, {
-      toolbar: O,
+      toolbar: j,
       "aria-label": y.intl.string(y.t.BIYAqa),
       children: [(0, r.jsx)(h.ZP.Icon, {
         icon: a.kBi,

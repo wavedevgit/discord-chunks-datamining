@@ -23,21 +23,21 @@ let y = e => {
     message: t,
     hovering: n,
     compact: l
-  } = e, y = i.useRef((0, o.random)(-6, 24)).current, C = (0, s.e7)([h.Z], () => h.Z.confettiMode), x = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), v = i.useRef(0), O = i.useRef(null), j = i.useRef(null), [E, S] = i.useState(!1), P = i.useMemo(() => !n && !C && !x, [C, n, x]);
+  } = e, y = i.useRef((0, o.random)(-6, 24)).current, C = (0, s.e7)([h.Z], () => h.Z.confettiMode), x = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), v = i.useRef(0), j = i.useRef(null), O = i.useRef(null), [E, S] = i.useState(!1), P = i.useMemo(() => !n && !C && !x, [C, n, x]);
   if (i.useEffect(() => {
       n || S(!1), n && C && S(!0)
     }, [n, C]), i.useEffect(() => {
-      !x && (E || (!1 === n && (v.current = 0, null != O.current && (clearTimeout(O.current), O.current = null)), v.current = Date.now(), O.current = setTimeout(() => {
+      !x && (E || (!1 === n && (v.current = 0, null != j.current && (clearTimeout(j.current), j.current = null)), v.current = Date.now(), j.current = setTimeout(() => {
         let e = v.current;
         if (0 !== e && !1 !== n && !(Date.now() - e < 1e3) && !C) {
-          if (null != j.current) {
+          if (null != O.current) {
             var r;
             let {
               x: e,
               y: n,
               width: i,
               height: l
-            } = null == (r = j.current) ? void 0 : r.getBoundingClientRect();
+            } = null == (r = O.current) ? void 0 : r.getBoundingClientRect();
             (0, g.Z)(t, {
               x: e,
               y: n - 20,
@@ -66,7 +66,7 @@ let y = e => {
       forcePNG: !0
     });
   return (0, r.jsxs)("div", {
-    ref: j,
+    ref: O,
     className: _.emojiWrapper,
     style: {
       right: "".concat(256 + y, "px")

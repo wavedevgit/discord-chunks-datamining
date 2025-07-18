@@ -1,7 +1,7 @@
 /** Chunk was on 2016 **/
 n.d(t, {
-  V: () => O,
-  Z: () => j
+  V: () => j,
+  Z: () => O
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -55,7 +55,7 @@ function v(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class O extends i.PureComponent {
+class j extends i.PureComponent {
   componentDidMount() {
     this.updateCache()
   }
@@ -130,7 +130,7 @@ class O extends i.PureComponent {
     } = this.state, C = {
       left: null != b ? i.x + b : void 0,
       top: null != _ ? i.y + _ : void 0
-    }, O = e => {
+    }, j = e => {
       let t = n && !e;
       return !0 !== u ? null : (0, r.jsxs)("div", {
         children: [(0, r.jsx)("div", {
@@ -145,7 +145,7 @@ class O extends i.PureComponent {
           })
         })]
       })
-    }, j = e => {
+    }, O = e => {
       let t = n && !e;
       return {
         [y.animating]: t,
@@ -175,11 +175,11 @@ class O extends i.PureComponent {
           style: C,
           innerRef: this.contentRef,
           children: (0, r.jsxs)("div", {
-            className: a()(y.animationContainer, j(n)),
-            children: [O(n), (0, r.jsx)("div", {
-              className: a()(y.innerCircle, j(n))
+            className: a()(y.animationContainer, O(n)),
+            children: [j(n), (0, r.jsx)("div", {
+              className: a()(y.innerCircle, O(n))
             }), (0, r.jsx)("div", {
-              className: a()(y.outerCircle, j(n))
+              className: a()(y.outerCircle, O(n))
             })]
           })
         }))
@@ -195,7 +195,7 @@ class O extends i.PureComponent {
     })
   }
 }
-let j = 12633 == n.j ? function() {
+let O = 12633 == n.j ? function() {
   let {
     indicators: e,
     tutorialData: t,
@@ -210,7 +210,7 @@ let j = 12633 == n.j ? function() {
   return i ? (0, r.jsx)(r.Fragment, {
     children: Object.entries(e).map(e => {
       let [i, l] = e, a = t[i];
-      return s()(null != a, "Missing tutorial definition for ".concat(i)), (0, r.jsx)(O, x({
+      return s()(null != a, "Missing tutorial definition for ".concat(i)), (0, r.jsx)(j, x({
         tutorialId: i,
         tutorialDefinition: a,
         focused: n

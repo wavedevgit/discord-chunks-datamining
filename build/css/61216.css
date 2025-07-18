@@ -1,6 +1,6 @@
 /**
   Module ID: 61216
-  Original File Name: 8e143767e40999f2
+  Original File Name: ebf34db489e5a589
 **/
 .wrapper__74bfa {
     align-items: center;
@@ -15,21 +15,6 @@
 
 .errorIcon__74bfa {
     color: var(--status-danger)
-}
-
-.tooltipTextContainer__0ca35 {
-    align-items: center;
-    display: flex;
-    justify-content: center
-}
-
-.nitroWheel__0ca35 {
-    flex: 1;
-    min-width: 16px
-}
-
-.tooltipText__0ca35 {
-    padding-left: 6px
 }
 
 @use postcss-pxtorem;
@@ -7820,6 +7805,21 @@ html .progress__61462 {
     width: 100%
 }
 
+.tooltipTextContainer__0ca35 {
+    align-items: center;
+    display: flex;
+    justify-content: center
+}
+
+.nitroWheel__0ca35 {
+    flex: 1;
+    min-width: 16px
+}
+
+.tooltipText__0ca35 {
+    padding-left: 6px
+}
+
 .artContainer_ade26d {
     border-radius: 8px;
     box-shadow: none;
@@ -10166,4 +10166,4 @@ html .progress__61462 {
     background-image: url(/assets/abbc14555963e723.svg)
 }
 
-/*# sourceMappingURL=8e143767e40999f2.css.map*/
+/*# sourceMappingURL=ebf34db489e5a589.css.map*/

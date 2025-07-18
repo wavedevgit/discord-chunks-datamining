@@ -22,8 +22,8 @@ var r = n(255367),
   C = n(944543),
   x = n(410575),
   v = n(393238),
-  O = n(110924),
-  j = n(40851),
+  j = n(110924),
+  O = n(40851),
   E = n(636449),
   S = n(115130),
   P = n(317381),
@@ -76,8 +76,8 @@ var r = n(255367),
   eC = n(998502),
   ex = n(228488),
   ev = n(358221),
-  eO = n(414910),
-  ej = n(887012),
+  ej = n(414910),
+  eO = n(887012),
   eE = n(909820),
   eS = n(493010),
   eP = n(742603),
@@ -626,7 +626,7 @@ class ez extends i.PureComponent {
       } = this.viewProperties;
       return (0, r.jsxs)(r.Fragment, {
         children: [null != i && i.type !== eD.fO.ACTIVITY && i.user.id !== n ? (0, r.jsx)(ei.Z, {
-          context: (0, eO.Z)(i.type),
+          context: (0, ej.Z)(i.type),
           userId: i.user.id,
           currentWindow: this.inPopout ? null != e ? e : void 0 : window,
           sliderClassName: eU.volumeSlider,
@@ -727,7 +727,7 @@ let eW = function(e) {
     ref: f
   } = (0, v.ZP)(), {
     ref: m
-  } = (0, v.ZP)(), g = (0, j.bp)(), b = (0, L.Z)(), _ = (0, u.e7)([eh.Z], () => {
+  } = (0, v.ZP)(), g = (0, O.bp)(), b = (0, L.Z)(), _ = (0, u.e7)([eh.Z], () => {
     var e;
     return (null != (e = null == b ? void 0 : b.channelId) ? e : eh.Z.getVoiceChannelId()) === n.id
   }), {
@@ -770,7 +770,7 @@ let eW = function(e) {
     y.ZP.updatedUnsyncedSettings({
       callHeaderHeight: e
     })
-  }, []), er = null != (t = null == W ? void 0 : W.id) ? t : null, ei = (0, I.Z)(er, n.id), el = (0, u.e7)([S.Z], () => S.Z.getFetchState(), []), ef = (0, O.Z)(el);
+  }, []), er = null != (t = null == W ? void 0 : W.id) ? t : null, ei = (0, I.Z)(er, n.id), el = (0, u.e7)([S.Z], () => S.Z.getFetchState(), []), ef = (0, j.Z)(el);
   i.useEffect(() => {
     el === S.O.ERROR && ef !== S.O.ERROR && (0, h.showToast)((0, h.createToast)(ek.intl.string(ek.t.AlJyIy), h.ToastType.FAILURE))
   }, [el, ef]);
@@ -785,7 +785,7 @@ let eW = function(e) {
     }
   }, [_, N]);
   let eg = (0, k.S)(),
-    eb = (0, ej.Z)(n, !0),
+    eb = (0, eO.Z)(n, !0),
     {
       hasParticipantsPanel: e_
     } = (0, eT.Z)({
@@ -795,7 +795,7 @@ let eW = function(e) {
     {
       analyticsLocations: ex
     } = (0, A.ZP)(T.Z.CHANNEL_CALL),
-    eO = P.ZP.getEmbeddedActivitiesForChannel(n.id),
+    ej = P.ZP.getEmbeddedActivitiesForChannel(n.id),
     {
       theme: eS
     } = (0, h.TCT)();
@@ -847,7 +847,7 @@ let eW = function(e) {
             maxHeight: a,
             forceShowControls: ey,
             awaitingRemoteSessionInfo: ee,
-            currentChannelActivities: eO,
+            currentChannelActivities: ej,
             theme: eS
           }), !n.isPrivate() && (0, r.jsx)(eA.YR, {}), (0, r.jsx)(eE.H_, {})]
         })

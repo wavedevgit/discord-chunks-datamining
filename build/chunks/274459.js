@@ -25,7 +25,7 @@ function v(e) {
   } = e, {
     emoji: v,
     sentAt: h
-  } = n, S = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), [b, O] = l.useState(!0), y = !S, Z = (0, o.Yzy)(b, {
+  } = n, S = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), [b, O] = l.useState(!0), y = !S, _ = (0, o.Yzy)(b, {
     from: {
       rotate: -120
     },
@@ -50,7 +50,7 @@ function v(e) {
     }, y ? m : p), () => {
       null != e && clearTimeout(e)
     }
-  }, [h, t, y]), y) ? null : Z((e, t) => {
+  }, [h, t, y]), y) ? null : _((e, t) => {
     var n;
     let {
       rotate: l

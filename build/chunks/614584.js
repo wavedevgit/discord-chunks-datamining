@@ -23,7 +23,7 @@ var r = n(255367),
   x = n(981631),
   v = n(388032);
 
-function O(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,7 +42,7 @@ function O(e) {
   return e
 }
 
-function j(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -97,11 +97,11 @@ let E = i.memo(function(e) {
           allowLinks: !0,
           shouldFilterKeywords: M
         },
-        n = e.isFirstMessageInForumPost(S) ? j(O({}, t), {
+        n = e.isFirstMessageInForumPost(S) ? O(j({}, t), {
           noStyleAndInteraction: !0,
           allowHeading: !0,
           allowList: !0
-        }) : j(O({}, t), {
+        }) : O(j({}, t), {
           formatInline: !0,
           allowHeading: D,
           allowList: D

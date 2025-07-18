@@ -37,7 +37,7 @@ let m = i.memo(function(e) {
     paused: g
   });
   let {
-    onReady: Z
+    onReady: _
   } = (0, s.Z)({
     streamId: t,
     userId: S,
@@ -45,9 +45,9 @@ let m = i.memo(function(e) {
     videoSpinnerContext: h,
     streamKey: b,
     paused: g
-  }), j = i.useCallback(() => {
-    y(!1), Z()
-  }, [Z]);
+  }), Z = i.useCallback(() => {
+    y(!1), _()
+  }, [_]);
   return (0, l.jsxs)("div", {
     className: o()(f.wrapper, r),
     children: [null != t && (0, l.jsx)(a, {
@@ -56,7 +56,7 @@ let m = i.memo(function(e) {
       }, p),
       streamId: t,
       onResize: n,
-      onReady: j,
+      onReady: Z,
       paused: g
     }), g ? null : (0, l.jsx)("div", {
       className: o()(f.previewWrapper, {

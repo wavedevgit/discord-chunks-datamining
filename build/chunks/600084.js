@@ -22,8 +22,8 @@ var r = n(255367),
   C = n(131704),
   x = n(881998),
   v = n(984933),
-  O = n(496675),
-  j = n(594174),
+  j = n(496675),
+  O = n(594174),
   E = n(51144),
   S = n(7782),
   P = n(967128),
@@ -73,12 +73,12 @@ function V(e) {
     showingBanner: f
   } = e, C = (0, p.ZP)(h), {
     type: v
-  } = h, I = (0, l.e7)([j.default], () => h.isPrivate() ? j.default.getUser(h.getRecipientId()) : null), w = E.ZP.useUserTag(I), {
+  } = h, I = (0, l.e7)([O.default], () => h.isPrivate() ? O.default.getUser(h.getRecipientId()) : null), w = E.ZP.useUserTag(I), {
     canManageRoles: M,
     canReadMessageHistory: D
-  } = (0, l.cj)([O.Z], () => ({
-    canManageRoles: O.Z.can(k.Plq.MANAGE_ROLES, h),
-    canReadMessageHistory: O.Z.can(k.Plq.READ_MESSAGE_HISTORY, h)
+  } = (0, l.cj)([j.Z], () => ({
+    canManageRoles: j.Z.can(k.Plq.MANAGE_ROLES, h),
+    canReadMessageHistory: j.Z.can(k.Plq.READ_MESSAGE_HISTORY, h)
   })), L = (0, l.e7)([_.Z], () => v === k.d4z.DM ? _.Z.getMutualGuilds(h.getRecipientId()) : null, [h, v]), {
     systemDMRedesignEnabled: V
   } = b.Z.useExperiment({

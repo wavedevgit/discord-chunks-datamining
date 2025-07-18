@@ -56,10 +56,10 @@ function b(e) {
     inPopout: n
   } = e, {
     reducedMotion: b
-  } = l.useContext(o.Sf), O = (0, l.useRef)(null), y = d.n.getState().clipsButtonRef, Z = (0, f.V9)(t), j = (0, a.e7)([s.Z], () => s.Z.getActiveAnimation()), _ = (0, a.Wu)([s.Z], () => s.Z.getStreamClipAnimations(Z)), I = (0, l.useRef)(void 0);
+  } = l.useContext(o.Sf), O = (0, l.useRef)(null), y = d.n.getState().clipsButtonRef, _ = (0, f.V9)(t), Z = (0, a.e7)([s.Z], () => s.Z.getActiveAnimation()), j = (0, a.Wu)([s.Z], () => s.Z.getStreamClipAnimations(_)), I = (0, l.useRef)(void 0);
   l.useEffect(() => () => {
-    (0, c.Gh)(Z)
-  }, [Z]);
+    (0, c.Gh)(_)
+  }, [_]);
   let w = () => {
       var e;
       let t = null == (e = O.current) ? void 0 : e.getBoundingClientRect();
@@ -72,7 +72,7 @@ function b(e) {
     },
     P = e => {
       let t = null == y ? void 0 : y.getBoundingClientRect();
-      if (I.current = t, e.timestamp !== j || null == t || n) return g;
+      if (I.current = t, e.timestamp !== Z || null == t || n) return g;
       let {
         top: r,
         left: l
@@ -85,7 +85,7 @@ function b(e) {
       }
     },
     A = (0, l.useRef)(null),
-    x = (0, u.Yzy)(_, {
+    C = (0, u.Yzy)(j, {
       keys: e => e.timestamp,
       ref: A,
       from: {
@@ -96,9 +96,9 @@ function b(e) {
       },
       config: v
     }, "animate-always"),
-    R = (0, l.useRef)(null),
-    C = (0, u.Yzy)(_, {
-      ref: R,
+    x = (0, l.useRef)(null),
+    R = (0, u.Yzy)(j, {
+      ref: x,
       keys: e => e.timestamp,
       from: e => E({
         position: "fixed",
@@ -122,20 +122,20 @@ function b(e) {
       })())),
       config: b.enabled ? S : h,
       onRest: (e, t) => {
-        null != t.item && null != _.find(e => e.timestamp === t.item.timestamp) && (0, c.Gh)(Z, t.item.timestamp)
+        null != t.item && null != j.find(e => e.timestamp === t.item.timestamp) && (0, c.Gh)(_, t.item.timestamp)
       }
     }, "animate-always");
-  return (0, i.useChain)([A, R], [0, .1], 3e3), (0, r.jsxs)(r.Fragment, {
+  return (0, i.useChain)([A, x], [0, .1], 3e3), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: m.hidden,
       ref: O
-    }), x((e, t) => null != t && (0, r.jsx)(i.animated.div, {
+    }), C((e, t) => null != t && (0, r.jsx)(i.animated.div, {
       className: m.whiteFlash,
       style: e
     })), (0, r.jsx)(p.ZP, {
       children: (0, r.jsx)("div", {
         className: m.hidden,
-        children: C((e, t, n, l) => (null == t ? void 0 : t.thumbnail) != null && (0, r.jsx)(i.animated.img, {
+        children: R((e, t, n, l) => (null == t ? void 0 : t.thumbnail) != null && (0, r.jsx)(i.animated.img, {
           src: t.thumbnail,
           className: m.movingImage,
           style: e

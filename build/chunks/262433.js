@@ -46,11 +46,11 @@ function v(e) {
     fallbackColor: b,
     outlineColorDark: O,
     outlineColorLight: y,
-    streamerId: Z,
-    deadDrawables: j
+    streamerId: _,
+    deadDrawables: Z
   } = e;
   v.save();
-  let _ = s.Z.getEmojiImage(null != (n = null != (t = a.emojiId) ? t : a.emojiName) ? n : ""),
+  let j = s.Z.getEmojiImage(null != (n = null != (t = a.emojiId) ? t : a.emojiName) ? n : ""),
     I = (0, d.np)(a.x, h),
     w = (0, d.np)(a.y, S),
     {
@@ -92,5 +92,5 @@ function v(e) {
         l = n.x - r / 2 * window.devicePixelRatio,
         i = n.y - 1.2 * r * window.devicePixelRatio;
       e.globalAlpha = n.opacity, e.drawImage(t, r / 2 + l, r / 2 + i, r, r)
-    })(v, _, e)), a.lastUpdatedAt + p.FO < Date.now() && (0, u.ZZ)(Z, a), a.state !== c.f.STOP || Object.keys(null != (r = E.getState().particles[a.id]) ? r : {}).length > 0 || j.push(a), v.restore()
+    })(v, j, e)), a.lastUpdatedAt + p.FO < Date.now() && (0, u.ZZ)(_, a), a.state !== c.f.STOP || Object.keys(null != (r = E.getState().particles[a.id]) ? r : {}).length > 0 || Z.push(a), v.restore()
 }

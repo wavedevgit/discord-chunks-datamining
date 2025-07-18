@@ -41,7 +41,7 @@ function v(e) {
   return e
 }
 
-function O(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -53,7 +53,7 @@ function O(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let j = e => {
+let O = e => {
     let {
       channel: t
     } = e;
@@ -61,7 +61,7 @@ let j = e => {
       channelId: t.id
     }) ? (0, r.jsx)(o.ua7, {
       text: C.intl.string(C.t.QyZ4TU),
-      children: e => (0, r.jsx)(o.tQf, O(v({}, e), {
+      children: e => (0, r.jsx)(o.tQf, j(v({}, e), {
         size: "xs",
         "aria-label": C.intl.string(C.t.VHXh8f),
         color: o.TVs.colors.INTERACTIVE_NORMAL
@@ -97,14 +97,14 @@ let j = e => {
           }
           return i
         }(e, ["onMouseEnter"]);
-        return (0, r.jsx)(o.P3F, O(v({}, p), {
+        return (0, r.jsx)(o.P3F, j(v({}, p), {
           className: s,
           onClick: a,
           onContextMenu: e => (0, c.jW)(e, () => Promise.all([n.e("79695"), n.e("70205"), n.e("53912"), n.e("52495")]).then(n.bind(n, 354741)).then(e => {
             let {
               default: n
             } = e;
-            return e => (0, r.jsx)(n, O(v({}, e), {
+            return e => (0, r.jsx)(n, j(v({}, e), {
               channel: t,
               selected: !0
             }))
@@ -153,7 +153,7 @@ let j = e => {
               size: "xs",
               color: "currentColor"
             })]
-          }), (0, r.jsx)(j, {
+          }), (0, r.jsx)(O, {
             channel: t
           })]
         }) : (0, r.jsx)("form", {
@@ -239,7 +239,7 @@ let j = e => {
           onFocus: o,
           onBlur: a,
           onMouseEnter: c
-        }), (0, r.jsx)(j, {
+        }), (0, r.jsx)(O, {
           channel: t
         })]
       })]

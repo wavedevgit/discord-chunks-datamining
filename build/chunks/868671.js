@@ -31,16 +31,16 @@ function v(e) {
       version: x
     },
     channelId: v,
-    guildId: O
-  } = e, [j, E] = r.useState(!1), {
+    guildId: j
+  } = e, [O, E] = r.useState(!1), {
     requestId: S,
     entries: P,
     impressionCappedEntryIds: I,
     hasLeaderboardEntry: Z
-  } = (0, m.Z)(v), T = (0, i.e7)([p.Z], () => p.Z.hidden), N = (0, i.e7)([c.Z], () => c.Z.isFocused()), A = (0, i.e7)([o.Z], () => o.Z.getChannel(v)), w = (0, i.e7)([s.Z], () => s.Z.getGuild(O), [O]), R = (0, h.E)(w), M = null != R && R && (null == A ? void 0 : A.isForumChannel()) === !1, [D, L, k, U] = r.useMemo(() => {
+  } = (0, m.Z)(v), T = (0, i.e7)([p.Z], () => p.Z.hidden), N = (0, i.e7)([c.Z], () => c.Z.isFocused()), A = (0, i.e7)([o.Z], () => o.Z.getChannel(v)), w = (0, i.e7)([s.Z], () => s.Z.getGuild(j), [j]), R = (0, h.E)(w), M = null != R && R && (null == A ? void 0 : A.isForumChannel()) === !1, [D, L, k, U] = r.useMemo(() => {
     let e;
     if (null == P || 0 === P.length || null == S || !M) return [t, n, x];
-    let r = j ? P.length : Z ? 4 : 3,
+    let r = O ? P.length : Z ? 4 : 3,
       i = P.slice(0, r);
     e = T ? [{
       type: a.so.HIDDEN_CONTENT_INVENTORY
@@ -61,12 +61,12 @@ function v(e) {
           let t = !e;
           return u.default.track(y.rMx.MEMBERLIST_CONTENT_FEED_TOGGLED, {
             channel_id: v,
-            guild_id: O,
+            guild_id: j,
             expanded: t
           }), t
         })
       },
-      expanded: j,
+      expanded: O,
       expandedCount: P.length,
       feedHeight: e.map(g.iZ).reduce((e, t) => e + t, 0)
     };
@@ -74,7 +74,7 @@ function v(e) {
       [l, ...t],
       [...n, l, ...e], Math.random(), e
     ]
-  }, [v, P, j, t, O, S, n, x, T, M, Z]), B = r.useRef(0), F = r.useRef(P), H = r.useRef(void 0), G = r.useRef({
+  }, [v, P, O, t, j, S, n, x, T, M, Z]), B = r.useRef(0), F = r.useRef(P), H = r.useRef(void 0), G = r.useRef({
     impressionCappedEntryIds: I
   }), V = r.useCallback(e => {
     var t;
@@ -99,14 +99,14 @@ function v(e) {
       item_ids: r,
       surface_type: b.Kd.GUILD_MEMBER_LIST,
       channel_id: v,
-      guild_id: O,
+      guild_id: j,
       all_item_ids: n,
       impression_capped_item_ids: [...G.current.impressionCappedEntryIds]
     }), (0, d.wm)("useInjectContentInventoryFeed") && l.Z.dispatch({
       type: "CONTENT_INVENTORY_TRACK_ITEM_IMPRESSIONS",
       itemIds: r
     }))
-  }), [S, v, O, T, N, M]), {
+  }), [S, v, j, T, N, M]), {
     groups: D,
     rows: L,
     version: k,

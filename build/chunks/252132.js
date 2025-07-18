@@ -28,7 +28,7 @@ function o(e) {
     pulseSpeakingIndicator: C,
     participant: x,
     width: v
-  } = e, O = function(e, t) {
+  } = e, j = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -43,7 +43,7 @@ function o(e) {
     }
     return i
   }(e, ["aspectRatio", "blocked", "ignored", "channel", "className", "focused", "children", "inCall", "inPopout", "noBorder", "onClick", "onContextMenu", "onDoubleClick", "onVideoResize", "paused", "pulseSpeakingIndicator", "participant", "width"]);
-  let j = l.Z.getVideoComponent();
+  let O = l.Z.getVideoComponent();
   return (0, r.jsx)("div", {
     style: {
       width: v
@@ -87,9 +87,9 @@ function o(e) {
         participant: x,
         paused: y,
         pulseSpeakingIndicator: C,
-        videoComponent: j,
+        videoComponent: O,
         width: v
-      }, O)), d]
+      }, j)), d]
     })
   })
 }

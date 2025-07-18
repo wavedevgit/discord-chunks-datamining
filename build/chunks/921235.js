@@ -1,6 +1,6 @@
 /** Chunk was on 2016 **/
 n.d(t, {
-  Z: () => O
+  Z: () => j
 }), n(388685), n(583741);
 var r = n(255367),
   i = n(73800),
@@ -23,15 +23,15 @@ var r = n(255367),
   x = n(900170);
 let v = "749054660769218631";
 
-function O(e) {
+function j(e) {
   var t;
   let {
     channel: n
-  } = e, [l, O] = i.useState("");
+  } = e, [l, j] = i.useState("");
   i.useEffect(() => {
     (0, u.FQ)("847199849233514549", !0)
   }, []);
-  let j = (0, o.e7)([f.Z, h.default], () => !!a()(f.Z.getMessages(n.id).toArray()).reverse().find(e => e.author.id !== h.default.getId() && e.state === y.yb.SENT && !(0, _.Z)(e))),
+  let O = (0, o.e7)([f.Z, h.default], () => !!a()(f.Z.getMessages(n.id).toArray()).reverse().find(e => e.author.id !== h.default.getId() && e.state === y.yb.SENT && !(0, _.Z)(e))),
     E = (0, o.e7)([m.default], () => m.default.getUser(n.isPrivate() ? n.getRecipientId() : null)),
     S = null != (t = b.ZP.useName(E)) ? t : C.intl.string(C.t.y1Wu2d),
     P = (0, o.e7)([d.Z], () => d.Z.getStickerById(v)),
@@ -44,7 +44,7 @@ function O(e) {
           type: "Send wave"
         })
       } catch (e) {
-        e.ok || 429 !== e.status || O(C.intl.string(C.t["Whhv4+"]))
+        e.ok || 429 !== e.status || j(C.intl.string(C.t["Whhv4+"]))
       }
     }, [n.id, n.type, l]),
     Z = C.intl.formatToPlainString(C.t.m0zYbW, {
@@ -56,7 +56,7 @@ function O(e) {
       variant: "text-sm/normal",
       children: l
     }) : null;
-  return j ? (0, r.jsxs)("div", {
+  return O ? (0, r.jsxs)("div", {
     className: x.containerCompact,
     children: [(0, r.jsxs)(s.P3F, {
       className: null != l && "" !== l ? x.compactButtonDisabled : x.compactButton,

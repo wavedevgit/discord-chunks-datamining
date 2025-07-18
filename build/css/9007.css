@@ -1,31 +1,11 @@
 /**
   Module ID: 9007
-  Original File Name: ba70ead0c8681217
+  Original File Name: 5a7587aa2bc226ef
 **/
 .seperator__6bf29 {
     border-bottom: 1px solid var(--border-subtle);
     margin: 0 16px;
     width: calc(100% - 32px)
-}
-
-.closeButton__6bf29 {
-    position: absolute;
-    right: 10px;
-    top: 10
-}
-
-.headerContent__6bf29 {
-    display: flex
-}
-
-.modalContent__6bf29 {
-    margin: 16px 0
-}
-
-.checklistContainer__6bf29 {
-    background-color: var(--background-base-lower);
-    border-radius: 4px;
-    overflow: hidden
 }
 
 .checklistRow__6bf29 {
@@ -48,4 +28,4 @@
     background-color: var(--background-secondary-alt)
 }
 
-/*# sourceMappingURL=ba70ead0c8681217.css.map*/
+/*# sourceMappingURL=5a7587aa2bc226ef.css.map*/
