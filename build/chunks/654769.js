@@ -69,14 +69,14 @@ function L(e, t) {
   }), e
 }
 let x = N.isPlatformEmbedded && (0, N.isWindows)(),
-  k = x && 10 > parseFloat(l.Z.os.release),
-  M = !0;
-if (x && !k) {
+  M = x && 10 > parseFloat(l.Z.os.release),
+  k = !0;
+if (x && !M) {
   let [e, , t] = l.Z.os.release.split(".");
-  M = parseInt(e) > 10 || parseInt(t) >= 15063
+  k = parseInt(e) > 10 || parseInt(t) >= 15063
 }
 let j = new u.Z("NotificationUtils"),
-  U = x && M || "Chrome" === s().name && 47 > parseFloat(s().version) || "Firefox" === s().name && 52 > parseFloat(s().version);
+  U = x && k || "Chrome" === s().name && 47 > parseFloat(s().version) || "Firefox" === s().name && 52 > parseFloat(s().version);
 async function G() {
   if (null === l.Z || void 0 === l.Z ? void 0 : l.Z.features.supports("notifications")) try {
     return await C.ZP.invoke("NOTIFICATIONS_GET_SETTINGS")
@@ -115,7 +115,7 @@ function H() {
 }
 x && (window.addEventListener("focus", H), C.ZP.on("MAIN_WINDOW_FOCUS", H));
 let Y = window.Notification;
-if (k) {
+if (M) {
   let e = {};
   C.ZP.on("NOTIFICATION_CLICK", (t, n) => {
     let r = e[n];
@@ -200,13 +200,13 @@ async function Q(e, t, n, r, i) {
   var a, o, s, l, u, h, m;
   let g, P = await G(),
     D = (null == P ? void 0 : P.authorizationStatus) === "authorized" || (null == P ? void 0 : P.authorizationStatus) === "provisional",
-    k = null != P ? D : await z(),
+    M = null != P ? D : await z(),
     B = D && (!x || (0, f.R)({
       location: "showNotification"
     }).enabled),
     F = v.Z.disableNotifications && null == i.overrideStreamerMode,
     Z = !N.isPlatformEmbedded || (0, N.isMac)() && B || C.ZP.shouldDisplayNotifications(),
-    H = !F && k && Z,
+    H = !F && M && Z,
     K = L(w({}, r), {
       action: void 0,
       ping: void 0,
@@ -308,7 +308,7 @@ async function Q(e, t, n, r, i) {
     }, r)), T.default.track(R.rMx.NOTIFICATION_CLICKED, q));
     let n = "";
     null == (t = i.onClick) || t.call(i, n)
-  }, M) ? {
+  }, k) ? {
     notification: g,
     trackingProps: r
   } : {

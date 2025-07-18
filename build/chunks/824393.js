@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
   default: () => j,
-  h: () => M,
-  j: () => k
+  h: () => k,
+  j: () => M
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -86,10 +86,10 @@ function L(e) {
         }) : "error" === C.state ? (0, r.jsx)(x, {
           errorReason: C.errorReason,
           onClose: p
-        }) : L ? (0, r.jsx)(k, {
+        }) : L ? (0, r.jsx)(M, {
           duration: (0, T.kb)(null != (u = null == (n = C.entitlements) ? void 0 : n.items) ? u : []),
           onClose: p
-        }) : (0, r.jsx)(M, {
+        }) : (0, r.jsx)(k, {
           duration: (0, T.kb)(null != (d = null == (a = C.entitlements) ? void 0 : a.items) ? d : []),
           onClose: p
         })
@@ -136,7 +136,7 @@ function x(e) {
   })
 }
 
-function k(e) {
+function M(e) {
   let {
     duration: t,
     onClose: n
@@ -200,7 +200,7 @@ function k(e) {
   })
 }
 
-function M(e) {
+function k(e) {
   let {
     duration: t,
     onClose: n

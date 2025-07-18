@@ -67,12 +67,12 @@ function x(e, t) {
   return n
 }
 
-function k(e, t) {
+function M(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let M = 190,
+let k = 190,
   j = 178,
   U = "MESSAGE_CONFETTI_POTION_MODAL_KEY",
   G = e => {
@@ -90,7 +90,7 @@ let M = 190,
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 135793));
-      return t => (0, r.jsx)(e, k(L({}, t), {
+      return t => (0, r.jsx)(e, M(L({}, t), {
         channel: d,
         message: i,
         onRedeem: a,
@@ -174,11 +174,11 @@ function V(e) {
       }
       return 0
     }, [E, R, s]),
-    k = (0, i.useMemo)(() => 0 === x ? 1 : u ? 2 : 3 * (null == _), [u, _, x]);
+    M = (0, i.useMemo)(() => 0 === x ? 1 : u ? 2 : 3 * (null == _), [u, _, x]);
   return (0, r.jsx)(F, {
     channel: t,
     buttonPurchaseState: x,
-    buttonDisabledState: k,
+    buttonDisabledState: M,
     price: p,
     onActionClick: L,
     loading: P,
@@ -421,7 +421,7 @@ let F = e => {
       tooltipContentClassName: P.tooltip,
       text: d,
       shouldShow: !!s,
-      children: e => (0, r.jsx)(l.zx, k(L({}, e), {
+      children: e => (0, r.jsx)(l.zx, M(L({}, e), {
         onClick: o,
         disabled: s,
         children: (0, r.jsx)("div", {
@@ -438,7 +438,7 @@ let F = e => {
       children: [(0, r.jsx)(c.Eep, {
         src: w,
         width: j,
-        height: M
+        height: k
       }), (0, r.jsx)(c.Text, {
         variant: "text-md/normal",
         children: R.intl.string(R.t.oKJdSk)

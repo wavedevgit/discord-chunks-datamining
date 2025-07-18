@@ -35,8 +35,8 @@ var r = n(255367),
   D = n(74538),
   L = n(624138),
   x = n(543241),
-  k = n(883661),
-  M = n(880949),
+  M = n(883661),
+  k = n(880949),
   j = n(784222),
   U = n(172800),
   G = n(149203),
@@ -158,11 +158,11 @@ let Y = 0,
           sectionId: l
         } = n;
         if (s === G.En.SEARCH_RESULTS) return;
-        let c = s === G.En.GUILD ? null != i ? (0, r.jsx)(M.Z, {
+        let c = s === G.En.GUILD ? null != i ? (0, r.jsx)(k.Z, {
             guild: i,
             height: $,
             width: $
-          }) : null : null != a ? (0, r.jsx)(k.Z, {
+          }) : null : null != a ? (0, r.jsx)(M.Z, {
             categoryId: a,
             height: $,
             width: $,
@@ -247,8 +247,8 @@ let Y = 0,
       rowCount: N,
       isUsingKeyboardNavigation: L,
       channelGuildId: x,
-      channelId: k,
-      messageId: M,
+      channelId: M,
+      messageId: k,
       isBurstReaction: U,
       listHeaderClassName: G
     } = e, V = i.useRef(!1), W = E.kJ.useStore(e => e.activeCategoryIndex), K = (0, b.Iu)(e => e.searchQuery), z = C.Yk.useSetting(), q = (0, u.e7)([R.default], () => R.default.getCurrentUser()), X = (0, w.I5)(q), {
@@ -280,8 +280,8 @@ let Y = 0,
       isUsingKeyboardNavigation: L,
       allowAnimatedEmoji: z,
       channelGuildId: x,
-      channelId: k,
-      messageId: M,
+      channelId: M,
+      messageId: k,
       isBurstReaction: U,
       listHeaderClassName: G,
       activeSectionIndex: $,

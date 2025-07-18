@@ -70,8 +70,8 @@ let C = new h.Z("ChannelStore"),
   D = {},
   L = null,
   x = {},
-  k = {},
-  M = 0,
+  M = {},
+  k = 0,
   j = {},
   U = {},
   G = new Set,
@@ -172,7 +172,7 @@ function J(e) {
 
 function $(e) {
   if (null != e.recipients.find(e => (0, p.Z)(e))) return !1;
-  D[e.id] = e, e.type === I.d4z.DM && (k[e.getRecipientId()] = e.id), M += 1
+  D[e.id] = e, e.type === I.d4z.DM && (M[e.getRecipientId()] = e.id), k += 1
 }
 
 function ee(e) {
@@ -200,7 +200,7 @@ function en(e) {
 }
 
 function er(e) {
-  if (null == e.guild_id || g.Ec.has(e.type))(0, g.hv)(e.type) && (M += 1);
+  if (null == e.guild_id || g.Ec.has(e.type))(0, g.hv)(e.type) && (k += 1);
   else {
     var t;
     j[e.guild_id] = (null != (t = j[e.guild_id]) ? t : 0) + 1
@@ -209,7 +209,7 @@ function er(e) {
 
 function ei(e) {
   let t = w;
-  for (let n of (k = {}, P = {}, w = {}, x = {}, j = {}, F = {}, B = {}, V = Date.now(), L = e.initialPrivateChannels, e.initialPrivateChannels.forEach($), e.guilds)) "partial" === n.dataMode && (a().forEach(t[n.id], et), C.fileOnly("Restoring guild channels for ".concat(n.id, " #:").concat(eL(n.id)))), ea(n);
+  for (let n of (M = {}, P = {}, w = {}, x = {}, j = {}, F = {}, B = {}, V = Date.now(), L = e.initialPrivateChannels, e.initialPrivateChannels.forEach($), e.guilds)) "partial" === n.dataMode && (a().forEach(t[n.id], et), C.fileOnly("Restoring guild channels for ".concat(n.id, " #:").concat(eL(n.id)))), ea(n);
   eP()
 }
 
@@ -264,7 +264,7 @@ function el(e) {
 }
 
 function ec() {
-  C.fileOnly("initializeClear()"), k = {}, P = {}, w = {}, j = {}, D = {}, F = {}, x = {}, G = new Set, B = {}, V = Date.now()
+  C.fileOnly("initializeClear()"), M = {}, P = {}, w = {}, j = {}, D = {}, F = {}, x = {}, G = new Set, B = {}, V = Date.now()
 }
 
 function eu(e) {
@@ -358,7 +358,7 @@ function eb(e) {
 function ey(e) {
   if ("basicPermissions" in e || e.type !== I.d4z.DM) return;
   let t = e.getRecipientId();
-  k[t] === e.id && delete k[t]
+  M[t] === e.id && delete M[t]
 }
 
 function eO(e) {
@@ -468,19 +468,19 @@ class eD extends(r = s.ZP.Store) {
     return a()(D).values().sort((e, t) => b.default.compare(e.lastMessageId, t.lastMessageId)).reverse().value()
   }
   getDMFromUserId(e) {
-    if (null != e) return k[e]
+    if (null != e) return M[e]
   }
   getDMChannelFromUserId(e) {
-    if (null != e) return this.getChannel(k[e])
+    if (null != e) return this.getChannel(M[e])
   }
   getMutableDMsByUserIds() {
-    return k
+    return M
   }
   getDMUserIds() {
-    return b.default.keys(k)
+    return b.default.keys(M)
   }
   getPrivateChannelsVersion() {
-    return M
+    return k
   }
   getGuildChannelsVersion(e) {
     var t;

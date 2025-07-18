@@ -11,9 +11,9 @@ n.d(t, {
   Zt: () => I,
   Zv: () => S,
   _V: () => A,
-  cv: () => M,
+  cv: () => k,
   gM: () => B,
-  jl: () => k,
+  jl: () => M,
   sM: () => C,
   z: () => w
 }), n(413496), n(433524), n(35282), n(415506), n(781311);
@@ -114,7 +114,7 @@ let {
     default:
       return !1
   }
-}, x = e => e.type === d.n0.GUILD, k = e => e.type === d.n0.STANDARD, M = e => e.stickerItems.length > 0 ? e.stickerItems : e.stickers.length > 0 ? e.stickers : [], j = e => {
+}, x = e => e.type === d.n0.GUILD, M = e => e.type === d.n0.STANDARD, k = e => e.stickerItems.length > 0 ? e.stickerItems : e.stickers.length > 0 ? e.stickers : [], j = e => {
   if (null === e) return !1;
   let t = e.guild_id;
   return void 0 !== a.Z.getGuild(t)

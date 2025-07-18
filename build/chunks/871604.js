@@ -91,8 +91,8 @@ function R(e) {
     x = (0, s.Z)({
       context: L
     }),
-    k = t.id,
-    M = i.useCallback(() => {
+    M = t.id,
+    k = i.useCallback(() => {
       if (null != R)
         if (x) {
           let e = h.Z.getCurrentlySelectedChannelId(),
@@ -100,13 +100,13 @@ function R(e) {
             r = null != _.ZP.getSidebarState(e) || (null == t ? void 0 : t.isGuildVocal()) ? f.Ie.SIDEBAR : f.Ie.NORMAL;
           l.__(c._b.TEXT, r, {
             applicationId: R.id
-          }), (0, o.Mr3)((0, O.z)(k, D)), null == n || n(), m.default.track(I.rMx.APP_PROFILE_OPEN_APP_BUTTON_CLICKED, {
+          }), (0, o.Mr3)((0, O.z)(M, D)), null == n || n(), m.default.track(I.rMx.APP_PROFILE_OPEN_APP_BUTTON_CLICKED, {
             application_id: R.id
           })
         } else(0, b.L)(A({
           applicationId: R.id
         }, R))
-    }, [x, R, k, D, n]),
+    }, [x, R, M, D, n]),
     j = x ? T.intl.string(T.t["Cia+Aw"]) : T.intl.string(T.t.NgXl3N);
   if (null == R || !(0, d.Eb)(R)) return null;
   let {
@@ -142,13 +142,13 @@ function R(e) {
         text: j,
         icon: B,
         onContextMenu: t,
-        onClick: M
+        onClick: k
       }, n, S))
     }
   }) : (0, r.jsx)(v.tG, A({
     action: "PRESS_ADD_APP",
     text: j,
     icon: B,
-    onClick: M
+    onClick: k
   }, S))
 }

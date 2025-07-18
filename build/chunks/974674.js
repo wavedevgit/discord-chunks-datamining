@@ -320,7 +320,7 @@ function x(e, t, n, i) {
   })
 }
 
-function k(e) {
+function M(e) {
   let {
     status: t,
     isMobile: n,
@@ -337,7 +337,7 @@ function k(e) {
   }))
 }
 
-function M(e) {
+function k(e) {
   let {
     children: t,
     size: n,
@@ -446,8 +446,8 @@ function U(e) {
     "aria-label": S,
     imageClassName: A,
     ref: N
-  } = e, C = n !== m.Skl.UNKNOWN ? n : null, R = (0, h.UC)(i), P = null != C ? Math.ceil((R.status * h.D6 - R.status) / 2) : 0, L = R.size + P, k = (0, u.vj)(C, a);
-  return (0, r.jsx)(M, I(O({}, e), {
+  } = e, C = n !== m.Skl.UNKNOWN ? n : null, R = (0, h.UC)(i), P = null != C ? Math.ceil((R.status * h.D6 - R.status) / 2) : 0, L = R.size + P, M = (0, u.vj)(C, a);
+  return (0, r.jsx)(k, I(O({}, e), {
     ariaLabel: S,
     ariaHidden: T,
     status: C,
@@ -480,7 +480,7 @@ function U(e) {
         delay: y,
         children: e => (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)("rect", I(O({}, e, D(R, C, s, l)), {
-            fill: k,
+            fill: M,
             mask: "url(#".concat((0, u.rs)(C, s, l), ")"),
             className: b.pointerEvents
           })), l ? (0, r.jsx)(c.b, {
@@ -533,14 +533,14 @@ function V(e) {
     pulseStatusIcon: V
   } = e, F = (0, u.vj)(v, S), Z = i.useId(), H = i.useId(), [Y] = i.useState(() => O({
     fill: a
-  }, k({
+  }, M({
     size: E,
     status: n,
     isMobile: t,
     isTyping: !1
   }))), W = i.useMemo(() => O({
     fill: F
-  }, k({
+  }, M({
     size: E,
     status: v,
     isMobile: l,
@@ -573,7 +573,7 @@ function V(e) {
       scale: 1
     }] : []
   }, N() ? "animate-always" : "animate-never", [V, v]);
-  return (0, r.jsx)(M, I(O({}, e), {
+  return (0, r.jsx)(k, I(O({}, e), {
     ariaLabel: L,
     ariaHidden: D,
     typingOffset: ea,

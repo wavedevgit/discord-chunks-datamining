@@ -1,6 +1,6 @@
 /**
   Module ID: 9268
-  Original File Name: b1c986408825d28d
+  Original File Name: 1f4810147c3534c3
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -4073,20 +4073,35 @@ button.button__67645,span.button__67645 {
     width: 32px
 }
 
+.high-contrast-mode button.button__67645,.high-contrast-mode span.button__67645 {
+    border: 1px solid transparent;
+    box-sizing: border-box
+}
+
 button.button__67645.orangeGlow__67645,span.button__67645.orangeGlow__67645 {
-    background-color: hsl(var(--orange-400-hsl)/.1)
+    background-color: var(--opacity-orange-12)
 }
 
 button.button__67645.orangeGlow__67645:hover,span.button__67645.orangeGlow__67645:hover {
-    background-color: hsl(var(--orange-400-hsl)/.2)
+    background-color: var(--opacity-orange-24)
+}
+
+.high-contrast-mode button.button__67645.orangeGlow__67645,.high-contrast-mode span.button__67645.orangeGlow__67645 {
+    border: 1px solid var(--opacity-orange-48);
+    box-sizing: border-box
 }
 
 button.button__67645.redGlow__67645,span.button__67645.redGlow__67645 {
-    background-color: hsl(var(--red-400-hsl)/.1)
+    background-color: var(--opacity-red-12)
 }
 
 button.button__67645.redGlow__67645:hover,span.button__67645.redGlow__67645:hover {
-    background-color: hsl(var(--red-400-hsl)/.2)
+    background-color: var(--opacity-red-24)
+}
+
+.high-contrast-mode button.button__67645.redGlow__67645,.high-contrast-mode span.button__67645.redGlow__67645 {
+    border: 1px solid var(--opacity-red-52);
+    box-sizing: border-box
 }
 
 button.button__67645.enabled__67645:hover,span.button__67645.enabled__67645:hover {
@@ -4095,11 +4110,11 @@ button.button__67645.enabled__67645:hover,span.button__67645.enabled__67645:hove
 }
 
 button.button__67645.enabled__67645:hover.orangeGlow__67645,span.button__67645.enabled__67645:hover.orangeGlow__67645 {
-    background-color: hsl(var(--orange-400-hsl)/.2)
+    background-color: var(--opacity-orange-24)
 }
 
 button.button__67645.enabled__67645:hover.redGlow__67645,span.button__67645.enabled__67645:hover.redGlow__67645 {
-    background-color: hsl(var(--red-400-hsl)/.2)
+    background-color: var(--opacity-red-24)
 }
 
 button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
@@ -4107,11 +4122,11 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 button.button__67645.enabled__67645.orangeGlow__67645:hover,span.button__67645.enabled__67645.orangeGlow__67645:hover {
-    background-color: hsl(var(--orange-400-hsl)/.2)
+    background-color: var(--opacity-orange-24)
 }
 
 button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enabled__67645.redGlow__67645:hover {
-    background-color: hsl(var(--red-400-hsl)/.2)
+    background-color: var(--opacity-red-24)
 }
 
 .align-chat-input button.button__67645,.align-chat-input span.button__67645 {
@@ -15044,6 +15059,10 @@ div.nagbar_d74ef8 {
     gap: var(--space-8)
 }
 
+.high-contrast-mode .radioGroup__963c3 {
+    gap: 0
+}
+
 .radioGroupItem__963c3 {
     margin-bottom: 0
 }
@@ -19903,4 +19922,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=b1c986408825d28d.css.map*/
+/*# sourceMappingURL=1f4810147c3534c3.css.map*/

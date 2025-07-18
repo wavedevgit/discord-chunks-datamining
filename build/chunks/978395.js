@@ -40,10 +40,10 @@ function D(e) {
     displayProfile: D,
     guild: L,
     isHovering: x,
-    onOpenProfile: k,
-    channelId: M,
+    onOpenProfile: M,
+    channelId: k,
     onClose: j
-  } = e, U = u.ZP.useName(null == L ? void 0 : L.id, M, t), {
+  } = e, U = u.ZP.useName(null == L ? void 0 : L.id, k, t), {
     relationshipType: G,
     originApplicationId: B
   } = (0, i.cj)([l.Z], () => ({
@@ -57,7 +57,7 @@ function D(e) {
     className: w.body,
     children: [(0, r.jsx)(v.Z, {
       user: t,
-      onOpenProfile: k,
+      onOpenProfile: M,
       onClose: j,
       usernameIcon: t.hasAvatarForGuild(null == L ? void 0 : L.id) && (0, r.jsx)(S.Z, {
         user: t,
@@ -76,14 +76,14 @@ function D(e) {
         }), !F && (0, r.jsx)(I.Z, {
           userId: t.id,
           isHovering: x,
-          onOpenProfile: k
+          onOpenProfile: M
         })]
       })
     }), G === R.OGo.PENDING_INCOMING && (0, r.jsx)(O.Z.Overlay, {
       children: (0, r.jsx)(g.Z, {
         user: t,
         guildId: null == L ? void 0 : L.id,
-        channelId: M,
+        channelId: k,
         applicationId: B
       })
     }), V.map(e => (0, r.jsx)(O.Z.Overlay, {
@@ -91,13 +91,13 @@ function D(e) {
         user: t,
         isGameRelationship: !0,
         applicationId: e.applicationId,
-        channelId: M
+        channelId: k
       })
     }, e.applicationId)), (0, r.jsx)(E.Z, {
       user: t
     }), !H && (0, r.jsx)(N.Z, {
       user: t,
-      onOpenProfile: e => null == k ? void 0 : k({
+      onOpenProfile: e => null == M ? void 0 : M({
         section: e
       })
     }), t.isProvisional ? (0, r.jsx)(O.Z.Overlay, {
@@ -126,7 +126,7 @@ function D(e) {
       currentUser: n,
       displayProfile: D,
       guildId: null == L ? void 0 : L.id,
-      onOpenUserProfileModal: k,
+      onOpenUserProfileModal: M,
       onClose: j
     }) : (0, r.jsx)(h.Z, {
       user: t,

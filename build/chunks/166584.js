@@ -104,7 +104,7 @@ function L(e) {
     onRemoveRole: I
   } = e, S = i.useRef({}), C = (e, t) => {
     null != t ? S.current[e] = t : delete S.current[e]
-  }, [L, x] = i.useState(d), [k, M] = i.useState(P), [j, U] = i.useState(!1), G = i.useRef(null), B = i.useRef(null), V = i.useRef(0);
+  }, [L, x] = i.useState(d), [M, k] = i.useState(P), [j, U] = i.useState(!1), G = i.useRef(null), B = i.useRef(null), V = i.useRef(0);
   i.useLayoutEffect(() => {
     V.current = 0
   }, [d]), i.useLayoutEffect(() => {
@@ -127,7 +127,7 @@ function L(e) {
         e += o + R, n.push(i)
       }
     }
-    x(n.length === L.length ? L : n), M(r), V.current++
+    x(n.length === L.length ? L : n), k(r), V.current++
   }, [d, L, j]);
   let F = i.useMemo(() => "roles-".concat((0, a.Z)()), []),
     Z = (0, o.ZP)({
@@ -147,7 +147,7 @@ function L(e) {
         role: e,
         guildId: l.id,
         style: {
-          maxWidth: j || i !== L.length - 1 ? P : k
+          maxWidth: j || i !== L.length - 1 ? P : M
         },
         disableBorderColor: !0,
         ref: t => C(e.id, t),

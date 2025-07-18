@@ -1088,6 +1088,7 @@ function eZ(e) {
                 isShown: n
               } = t;
               return (0, r.jsxs)(x.zx, ej(eb({}, e), {
+                "data-migration-pending": !0,
                 buttonRef: eE,
                 size: x.zx.Sizes.MIN,
                 color: x.zx.Colors.CUSTOM,
@@ -1119,6 +1120,7 @@ function eZ(e) {
               }))
             }
           }), (0, r.jsxs)(x.zx, {
+            "data-migration-pending": !0,
             size: x.zx.Sizes.MIN,
             color: x.zx.Colors.CUSTOM,
             className: l()(ep.tagsButton, ep.tagsButtonPlaceholder),
@@ -1177,6 +1179,7 @@ function ek(e) {
         isShown: i
       } = t;
       return (0, r.jsxs)(x.zx, ej(eb({}, e), {
+        "data-migration-pending": !0,
         buttonRef: a,
         size: x.zx.Sizes.MIN,
         color: x.zx.Colors.CUSTOM,

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => M
+  Z: () => k
 }), n(539854), n(388685);
 var r, i = n(392711),
   a = n.n(i),
@@ -145,7 +145,7 @@ function x() {
     autoTrackExposure: !1
   }).canSeeFrequentlyPlayed
 }
-class k extends(r = l.ZP.PersistedStore) {
+class M extends(r = l.ZP.PersistedStore) {
   initialize(e) {
     this.waitFor(f.default, p.Z), (null == e ? void 0 : e.recentlyHeardCache) != null && I.load(e.recentlyHeardCache), (null == e ? void 0 : e.playedEventsPendingFlush) != null && (v = e.playedEventsPendingFlush), this.syncWith([d.Z], w)
   }
@@ -168,8 +168,8 @@ class k extends(r = l.ZP.PersistedStore) {
     return T.frequently
   }
 }
-E(k, "displayName", "SoundboardEventStore"), E(k, "persistKey", "SoundboardEventStore");
-let M = new k(c.Z, {
+E(M, "displayName", "SoundboardEventStore"), E(M, "persistKey", "SoundboardEventStore");
+let k = new M(c.Z, {
   GUILD_SOUNDBOARD_SOUND_PLAY_LOCALLY: S,
   GUILD_SOUNDBOARD_SOUND_PLAY_START: A,
   USER_SETTINGS_PROTO_UPDATE: D

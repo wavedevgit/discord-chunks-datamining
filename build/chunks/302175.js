@@ -71,14 +71,14 @@ function x(e, t) {
   }), e
 }
 
-function k(e) {
+function M(e) {
   let {
     guildId: t,
     powerup: n,
     onClose: a
   } = e, {
     analyticsLocations: l
-  } = (0, p.ZP)(), c = (0, I.Z)(t, n).type !== S.A3.INACTIVE, E = (0, v.Z)(t), [b, y] = i.useState(!1), [w, L] = i.useState(!1), k = w, M = i.useCallback(() => {
+  } = (0, p.ZP)(), c = (0, I.Z)(t, n).type !== S.A3.INACTIVE, E = (0, v.Z)(t), [b, y] = i.useState(!1), [w, L] = i.useState(!1), M = w, k = i.useCallback(() => {
     let e = g.Z.getGuild(t);
     null != e && (0, h.u)({
       analyticsLocation: {
@@ -95,16 +95,16 @@ function k(e) {
     tension: 400,
     friction: 30
   }, G = (0, d.q_F)({
-    transform: k ? "translateX(-50%) translateY(16px) scale(1)" : "translateX(-50%) translateY(24px) scale(1.40)",
+    transform: M ? "translateX(-50%) translateY(16px) scale(1)" : "translateX(-50%) translateY(24px) scale(1.40)",
     borderRadius: "0px",
     transformOrigin: "center 0%",
     config: U
   }), B = (0, d.q_F)({
-    y: k ? -25 : 0,
+    y: M ? -25 : 0,
     config: U
   }), V = (0, d.q_F)({
-    opacity: +!!k,
-    transform: k ? "translateY(0)" : "translateY(20px)",
+    opacity: +!!M,
+    transform: M ? "translateY(0)" : "translateY(20px)",
     config: U
   }), F = i.useCallback(e => {
     e && y(!0)
@@ -143,7 +143,7 @@ function k(e) {
         className: P.buttonsContainer,
         children: [(0, r.jsx)(u.zx, {
           grow: !0,
-          onClick: M,
+          onClick: k,
           color: u.zx.Colors.BRAND,
           className: P.button,
           children: C.intl.string(C.t["oPAx7+"])
@@ -163,7 +163,7 @@ function k(e) {
     })]
   })
 }
-let M = i.forwardRef((e, t) => {
+let k = i.forwardRef((e, t) => {
   var n, a;
   let {
     guild: o,
@@ -187,7 +187,7 @@ let M = i.forwardRef((e, t) => {
       })
     }), (0, r.jsx)("div", {
       className: R.powerupsContainer,
-      children: d.map(e => (0, r.jsx)(k, {
+      children: d.map(e => (0, r.jsx)(M, {
         guildId: o.id,
         powerup: e,
         onClose: s
@@ -195,5 +195,5 @@ let M = i.forwardRef((e, t) => {
     })]
   })
 });
-M.displayName = "GuildPowerupsMarketingPowerupCards";
-let j = M
+k.displayName = "GuildPowerupsMarketingPowerupCards";
+let j = k

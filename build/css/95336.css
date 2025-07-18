@@ -1,6 +1,6 @@
 /**
   Module ID: 95336
-  Original File Name: 6d4cb6aca93ab705
+  Original File Name: 3322487d0d4260af
 **/
 .pro__30cbe {
     text-transform: uppercase
@@ -1371,7 +1371,7 @@
 }
 
 .search__97492 .DraftEditor-root .public-DraftEditorPlaceholder-root {
-    color: var(--text-muted);
+    color: var(--input-placeholder-text);
     padding-left: 4px
 }
 
@@ -1739,4 +1739,4 @@
     margin-right: 8px
 }
 
-/*# sourceMappingURL=6d4cb6aca93ab705.css.map*/
+/*# sourceMappingURL=3322487d0d4260af.css.map*/

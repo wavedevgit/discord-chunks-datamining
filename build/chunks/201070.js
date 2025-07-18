@@ -147,11 +147,11 @@ function x(e) {
   })
 }
 
-function k(e) {
+function M(e) {
   P(T(e))
 }
 
-function M(e) {
+function k(e) {
   return null != e && e.length > 1
 }
 
@@ -161,7 +161,7 @@ function j(e) {
     {
       query: r
     } = e;
-  if (M(r)) {
+  if (k(r)) {
     let [e, n] = (0, p.C)(r);
     e.length > 0 && (t.usernames = {
       or_query: e
@@ -360,13 +360,13 @@ class K extends c.Z {
     let {
       guildId: t
     } = e;
-    return k(t), H(t)
+    return M(t), H(t)
   }
   handleGuildDelete(e) {
     let {
       guild: t
     } = e;
-    return k(t.id)
+    return M(t.id)
   }
   handleSearchStateUpdate(e) {
     let {

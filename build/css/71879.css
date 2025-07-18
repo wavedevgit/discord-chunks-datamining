@@ -1,6 +1,6 @@
 /**
   Module ID: 71879
-  Original File Name: 0aa30e95e8099ee2
+  Original File Name: 9232e1128eb785e4
 **/
 .obscuredIcon__43090 {
     height: 32px;
@@ -917,6 +917,7 @@
 
 .header_f369db {
     align-items: center;
+    background-color: var(--input-background);
     border-bottom: 1px solid var(--input-border);
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
@@ -2716,4 +2717,4 @@
     color: var(--text-link)
 }
 
-/*# sourceMappingURL=0aa30e95e8099ee2.css.map*/
+/*# sourceMappingURL=9232e1128eb785e4.css.map*/

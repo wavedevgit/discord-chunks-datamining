@@ -28,8 +28,8 @@ var u, d = n(512722),
   D = n(646047),
   L = n(594190),
   x = n(502286),
-  k = n(822253),
-  M = n(355552),
+  M = n(822253),
+  k = n(355552),
   j = n(294473),
   U = n(706629),
   G = n(166884),
@@ -117,11 +117,11 @@ let eN = new C.Z("MediaEngineStore"),
   eD = 1,
   eL = 1,
   ex = .5,
-  ek = {
+  eM = {
     left: 1,
     right: 1
   },
-  eM = 500,
+  ek = 500,
   ej = 5 * en.Z.Millis.SECOND,
   eU = -60,
   eG = 100,
@@ -348,7 +348,7 @@ function tL() {
           useLoopback: r.getExperimentalSoundshare(),
           useQuartzCapturer: !0,
           allowScreenCaptureKit: tG(),
-          videoHookStaleFrameTimeoutMs: eM,
+          videoHookStaleFrameTimeoutMs: ek,
           graphicsCaptureStaleFrameTimeoutMs: ej,
           hdrCaptureMode: t
         },
@@ -378,7 +378,7 @@ function tx(e) {
   }
 }
 
-function tk(e) {
+function tM(e) {
   let t = tC(),
     n = t.inputDeviceId;
   if (e.setEchoCancellation(eu.Z.hasEchoCancellation(n) || t.echoCancellation), e.setNoiseSuppression(eu.Z.hasNoiseSuppression(n) || t.noiseSuppression), e.setAutomaticGainControl(eu.Z.hasAutomaticGainControl(n) || t.automaticGainControl), e.setNoiseCancellation(t.noiseCancellation), e.setVoiceFilterId(tu), (0, er.isWeb)()) {
@@ -387,10 +387,10 @@ function tk(e) {
   }
 }
 
-function tM() {
+function tk() {
   eH.on(b.aB.Connection, e => {
     var t, n;
-    tR(e), tw(e), tk(e);
+    tR(e), tw(e), tM(e);
     let i = tC();
     e.setAttenuation(i.attenuation, i.attenuateWhileSpeakingSelf, i.attenuateWhileSpeakingOthers), e.setQoS(i.qos), e.setExperimentalEncoders(i.experimentalEncoders), e.setHardwareH264(null == (t = i.hardwareEncoding) || t), e.setSoftwareH264(null == (n = i.openH264) || n);
     let o = ef.Z.getGuildId(),
@@ -425,7 +425,7 @@ function tM() {
       }).enabled;
       e.setGoLiveUsePixelCounts(r)
     }(0, er.isWindows)() ? (null == tI ? void 0 : tI.startsWith("NVIDIA")) || (null == tI ? void 0 : tI.startsWith("AMD")) ? e.setExperimentFlag(eO.V8.SIGNAL_AV1, !0): e.setExperimentFlag(eO.V8.SIGNAL_AV1_DECODE, !0): ((0, er.isMac)() || (0, er.isLinux)()) && e.setExperimentFlag(eO.V8.SIGNAL_AV1_DECODE, !0), (0, er.isWindows)() && e.setExperimentFlag(eO.V8.SIGNAL_AV1_HARDWARE_DECODE, !0), eH.setHasFullbandPerformance((0, R.Z)());
-    let f = (0, M.D)("setupMediaEngine").enabled;
+    let f = (0, k.D)("setupMediaEngine").enabled;
     if (e.setRemoteAudioHistory(1e3 * !!f), (0, N.Z)(r)) {
       let t = A.Z.getSettings();
       e.setExperimentFlag(eO.V8.STREAMER_CLIP, t.clipsEnabled);
@@ -889,7 +889,7 @@ function t3(e) {
   if (tB() && (tV() ? n2(eO.iA.AUTOMATIC) : t.automaticAudioSubsystem && n3()), eH.supports(eO.AN.OFFLOAD_ADM_CONTROLS)) {
     let {
       enabled: e
-    } = k.S.getCurrentConfig({
+    } = M.S.getCurrentConfig({
       location: "handleConnectionOpen"
     }, {
       autoTrackExposure: !0
@@ -1342,11 +1342,11 @@ function nx(e) {
   }), tF.update()
 }
 
-function nk(e) {
+function nM(e) {
   eH.setDebugLogging(e.enabled)
 }
 
-function nM(e) {
+function nk(e) {
   let {
     level: t
   } = e;
@@ -1624,7 +1624,7 @@ function re(e) {
       useLoopback: r.getExperimentalSoundshare(),
       useQuartzCapturer: !0,
       allowScreenCaptureKit: tG(),
-      videoHookStaleFrameTimeoutMs: eM,
+      videoHookStaleFrameTimeoutMs: ek,
       graphicsCaptureStaleFrameTimeoutMs: ej,
       hdrCaptureMode: f
     },
@@ -1705,7 +1705,7 @@ function rr(e) {
 }
 
 function ri() {
-  return eH.eachConnection(tk), !1
+  return eH.eachConnection(tM), !1
 }
 
 function ra(e) {
@@ -1780,7 +1780,7 @@ function rh(e) {
 }
 class rm extends(u = E.ZP.Store) {
   initialize() {
-    tM(), tZ(), nq(), no(), tv = {
+    tk(), tZ(), nq(), no(), tv = {
       [eO.AN.VIDEO]: eH.supports(eO.AN.VIDEO),
       [eO.AN.DESKTOP_CAPTURE]: eH.supports(eO.AN.DESKTOP_CAPTURE),
       [eO.AN.HYBRID_VIDEO]: eH.supports(eO.AN.HYBRID_VIDEO)
@@ -1949,7 +1949,7 @@ class rm extends(u = E.ZP.Store) {
   getLocalPan(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : eO.Yn.DEFAULT,
       n = tC(t).localPans[e];
-    return null != n ? n : ek
+    return null != n ? n : eM
   }
   getLocalVolume(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : eO.Yn.DEFAULT,
@@ -2266,8 +2266,8 @@ let rE = r = new rm(v.Z, {
   AUDIO_SET_NOISE_CANCELLATION: nR,
   AUDIO_SET_KRISP_MODEL_OVERRIDE: nP,
   AUDIO_SET_DISPLAY_SILENCE_WARNING: nx,
-  AUDIO_SET_DEBUG_LOGGING: nk,
-  AUDIO_SET_KRISP_SUPPRESSION_LEVEL: nM,
+  AUDIO_SET_DEBUG_LOGGING: nM,
+  AUDIO_SET_KRISP_SUPPRESSION_LEVEL: nk,
   AUDIO_SET_NOISE_CANCELLATION_ENABLE_STATS: nw,
   MEDIA_ENGINE_SET_VIDEO_HOOK: nj,
   MEDIA_ENGINE_SET_EXPERIMENTAL_SOUNDSHARE: nU,

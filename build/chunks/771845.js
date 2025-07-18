@@ -176,7 +176,7 @@ function x(e) {
   return o !== a.joinedAt && null != o && C()
 }
 
-function k(e) {
+function M(e) {
   let {
     folderId: t
   } = e, n = T.getNode(t), r = p.Z.isFolderExpanded(t);
@@ -184,7 +184,7 @@ function k(e) {
   U(n, r)
 }
 
-function M(e) {
+function k(e) {
   let {
     folderId: t,
     expanded: n
@@ -263,8 +263,8 @@ class Z extends E.Z {
       GUILD_FOLDER_CREATE_LOCAL: w,
       GUILD_FOLDER_EDIT_LOCAL: D,
       GUILD_FOLDER_DELETE_LOCAL: L,
-      TOGGLE_GUILD_FOLDER_EXPAND: k,
-      SET_GUILD_FOLDER_EXPANDED: M,
+      TOGGLE_GUILD_FOLDER_EXPAND: M,
+      SET_GUILD_FOLDER_EXPANDED: k,
       GUILD_FOLDER_COLLAPSE: j
     }), O(this, "loadCache", () => {
       let e = this.readSnapshot(Z.LATEST_SNAPSHOT_VERSION),

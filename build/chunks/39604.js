@@ -3,11 +3,11 @@
 n.d(t, {
   C1: () => H,
   Gh: () => Y,
-  N0: () => M,
+  N0: () => k,
   T1: () => j,
   Tm: () => W,
   UW: () => J,
-  _Q: () => k,
+  _Q: () => M,
   eL: () => K,
   eU: () => G,
   em: () => x,
@@ -115,7 +115,7 @@ async function x(e) {
   }))
 }
 
-function k(e) {
+function M(e) {
   let {
     enabled: t,
     trackAnalytics: n = !1
@@ -134,7 +134,7 @@ function k(e) {
   }))
 }
 
-function M(e) {
+function k(e) {
   a.Z.dispatch({
     type: "CLIPS_SETTINGS_UPDATE",
     settings: {

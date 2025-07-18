@@ -1,6 +1,6 @@
 /**
   Module ID: 2016
-  Original File Name: ba6dac3c58803f8c
+  Original File Name: 1c6448cab3bacc33
 **/
 @keyframes placeholderPulse_c8ffbb {
     0% {
@@ -2545,8 +2545,8 @@ input[type=checked]:focus-visible+.label_df4aaf {
 }
 
 .buttonSection__1405b {
-    background: var(--plum-23);
-    border: 1px solid hsl(var(--plum-11-hsl)/.06);
+    background: var(--background-surface-high);
+    border: 1px solid var(--border-faint);
     border-radius: 12px;
     gap: 8px;
     padding: 4px
@@ -13155,4 +13155,4 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     position: relative
 }
 
-/*# sourceMappingURL=ba6dac3c58803f8c.css.map*/
+/*# sourceMappingURL=1c6448cab3bacc33.css.map*/

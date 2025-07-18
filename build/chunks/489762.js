@@ -35,8 +35,8 @@ var r = n(255367),
   D = n(419922),
   L = n(1450),
   x = n(491173),
-  k = n(515005),
-  M = n(652136),
+  M = n(515005),
+  k = n(652136),
   j = n(981631),
   U = n(957825),
   G = n(388032),
@@ -153,7 +153,7 @@ let W = (0, T.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
             sticker_pack_id: l,
             location: u,
             location_stack: o
-          }), (0, M.Z)({
+          }), (0, k.Z)({
             stickerPack: e,
             analyticsLocations: o
           }));
@@ -194,11 +194,11 @@ let W = (0, T.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
       onSelectSticker: a,
       channel: S,
       currentUser: N
-    }), [M, V] = i.useState(!1), F = i.useCallback(e => {
+    }), [k, V] = i.useState(!1), F = i.useCallback(e => {
       y._O.updateSetting(Array.from(e))
     }, []), Z = i.useCallback(e => {
       let t = m[e];
-      return null != t ? (0, r.jsx)(k.Z, {
+      return null != t ? (0, r.jsx)(M.Z, {
         getStickerItemProps: s,
         getStickerRowProps: c,
         gutterWidth: d,
@@ -342,10 +342,10 @@ let W = (0, T.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
           className: B.emptyGuildUpsell,
           guildId: n.id,
           channel: S,
-          shouldTrackUpsellViewed: !M,
+          shouldTrackUpsellViewed: !k,
           setTrackedUpsellViewed: V
         }, "sticker-picker-empty-guild-inline-upsell-".concat(n.id))
-      }, [g, t, E, S, M]),
+      }, [g, t, E, S, k]),
       sectionFooterHeight: i.useCallback(e => {
         let n = g[e],
           r = t.has(n.id);
@@ -371,8 +371,8 @@ let W = (0, T.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
     } = e, A = i.useRef(!1), N = i.useRef(null), [C, P] = h.ZN.useStore(e => [e.activeCategoryIndex, e.inspectedExpressionPosition], a.X), {
       analyticsLocations: w
     } = (0, f.ZP)(d.Z.STICKER_PICKER), D = (0, m.Iu)(e => e.searchQuery), L = (0, o.e7)([R.Z], () => R.Z.getPremiumPacks()), {
-      renderRow: k,
-      renderSection: M,
+      renderRow: M,
+      renderSection: k,
       renderSectionFooter: j,
       sectionFooterHeight: U,
       renderSectionHeader: F,
@@ -455,8 +455,8 @@ let W = (0, T.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
           role: "none presentation",
           listPadding: null != l ? ec : el,
           onScroll: H,
-          renderRow: k,
-          renderSection: null == l ? M : void 0,
+          renderRow: M,
+          renderSection: null == l ? k : void 0,
           renderSectionHeader: F,
           renderSectionFooter: j,
           rowCount: O,

@@ -5,7 +5,7 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(442837),
-  a = n(755721),
+  a = n(481060),
   o = n(695346),
   s = n(699516),
   l = n(388032);
@@ -19,11 +19,11 @@ function c(e) {
   let c = () => {
     o.Rt.updateSetting(!0), n()
   };
-  return (0, r.jsx)(a.zx, {
-    look: a.iL.LINK,
-    size: a.Ph.MIN,
+  return (0, r.jsx)(a.Avr, {
     onClick: c,
-    color: a.Tt.LINK,
-    children: l.intl.string(l.t.QbcRCA)
+    variant: "primary",
+    size: "sm",
+    textVariant: "text-sm/medium",
+    text: l.intl.string(l.t.QbcRCA)
   })
 }

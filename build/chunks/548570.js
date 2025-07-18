@@ -35,8 +35,8 @@ var r = n(512722),
   D = n(91247),
   L = n(508569),
   x = n(183139),
-  k = n(645436),
-  M = n(866483),
+  M = n(645436),
+  k = n(866483),
   j = n(833508),
   U = n(981631);
 
@@ -87,8 +87,8 @@ function Y(e) {
     reason: n
   } = e;
   if (!(0, P.n)()) return;
-  let r = k.a(),
-    i = M.Pf(),
+  let r = M.a(),
+    i = k.Pf(),
     a = m.Z.getState(),
     o = i.length > 0 ? "".concat(n, " + ").concat(i) : n,
     s = r ? "paused" : "request_state";
@@ -104,7 +104,7 @@ function Y(e) {
       client_app_state: m.Z.getState(),
       skip_context: s,
       original_connect_reason: o,
-      gateway_connect_reasons: M.Pf()
+      gateway_connect_reasons: k.Pf()
     })
   }, 200)
 }
@@ -200,8 +200,8 @@ class ei extends x.Z {
   }
   _connect(e) {
     if (!this.willReconnect()) return void Z.verbose("Skipping _connect because willReconnect is false");
-    let t = k.a();
-    if ((t || !M.RZ()) && (Z.info("Skipping _connect because socket is paused"), Y({
+    let t = M.a();
+    if ((t || !k.RZ()) && (Z.info("Skipping _connect because socket is paused"), Y({
         reason: e
       }), t)) return;
     this.connectionState = N.Z.CONNECTING, this.nextReconnectIsImmediate = !1;
@@ -526,7 +526,7 @@ class ei extends x.Z {
   }
   networkStateChange(e, t) {
     let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2];
-    M.RZ() || Y({
+    k.RZ() || Y({
       reason: t,
       actuallySkipped: !1
     }), this.expeditedHeartbeat(e, t, n, !1)
