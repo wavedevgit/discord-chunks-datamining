@@ -82,7 +82,7 @@ function O() {
     unreadRecentMentionsCount: (0, d.e7)([p.ZP, s.Z, u.Z], () => {
       var t, n;
       return null != (n = null == e || null == (t = e.filter(t => {
-        let n = s.Z.getChannel(t.channel_id);
+        let n = s.Z.getBasicChannel(t.channel_id);
         return null != n && E({
           messageId: t.id,
           channelId: t.channel_id,
