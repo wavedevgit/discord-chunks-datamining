@@ -1,6 +1,6 @@
 /**
   Module ID: 2026
-  Original File Name: 9f46cbaaa17c8d53
+  Original File Name: 9dc5af85c9dbbae4
 **/
 .container__12f17 {
     border: .5px solid var(--white-500);
@@ -519,4 +519,9 @@
     width: 350px
 }
 
-/*# sourceMappingURL=9f46cbaaa17c8d53.css.map*/
+.orbIconAligned_c50f62 {
+    margin-top: 1px;
+    vertical-align: top
+}
+
+/*# sourceMappingURL=9dc5af85c9dbbae4.css.map*/

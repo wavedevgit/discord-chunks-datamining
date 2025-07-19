@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => p
+  Z: () => h
 }), n(388685), n(290780), n(539854);
 var r = n(255367),
   i = n(73800),
@@ -10,9 +10,10 @@ var r = n(255367),
   s = n(497505),
   c = n(415104),
   u = n(46140),
-  d = n(204997);
+  d = n(388032),
+  p = n(204997);
 
-function p(e) {
+function h(e) {
   let {
     quests: t,
     isFetching: n
@@ -36,18 +37,18 @@ function p(e) {
         break
       }
   }, [t, l]);
-  let p = null != l,
-    [h, f] = i.useState(window.innerWidth);
+  let h = null != l,
+    [f, g] = i.useState(window.innerWidth);
   i.useEffect(() => {
     let e = () => {
-      f(window.innerWidth)
+      g(window.innerWidth)
     };
     return window.addEventListener("resize", e), () => {
       window.removeEventListener("resize", e)
     }
   }, []);
-  let g = h >= 1610 ? 3 : h >= 1340 ? 2 : 1,
-    m = i.useMemo(() => {
+  let m = f >= 1610 ? 3 : f >= 1340 ? 2 : 1,
+    b = i.useMemo(() => {
       let e = [];
       for (let r of t) {
         var n;
@@ -56,22 +57,32 @@ function p(e) {
       return e
     }, [t]);
   return n && 0 === t.length ? (0, r.jsx)(o.$jN, {
-    className: d.spinner
+    className: p.spinner
+  }) : 0 === t.length ? (0, r.jsxs)("div", {
+    className: p.emptyStateContainer,
+    children: [(0, r.jsx)(o.X6q, {
+      variant: "heading-xl/semibold",
+      children: d.intl.string(d.t["NqFP6+"])
+    }), (0, r.jsx)(o.Text, {
+      variant: "text-md/normal",
+      color: "text-secondary",
+      children: d.intl.string(d.t.LhD4yM)
+    })]
   }) : (0, r.jsx)("div", {
-    className: d.container,
-    children: m.map((e, t) => {
-      let n = Math.floor(t / g);
+    className: p.container,
+    children: b.map((e, t) => {
+      let n = Math.floor(t / m);
       return (0, r.jsx)(c.Z, {
         quest: e,
         questContent: s.jn.QUEST_HOME_DESKTOP,
         contentPosition: t,
         rowIndex: n,
-        className: a()(d.questTile, {
-          [d.selected]: p && e.id === l,
-          [d.unselected]: p && e.id !== l
+        className: a()(p.questTile, {
+          [p.selected]: h && e.id === l,
+          [p.unselected]: h && e.id !== l
         }),
         sourceQuestContent: s.jn.QUEST_HOME_DESKTOP
       }, e.id)
     })
-  }, null != l ? l : "")
+  }, l)
 }

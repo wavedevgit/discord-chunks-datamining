@@ -484,7 +484,7 @@ let Y = () => (0, r.jsx)(B, {
       onClick: () => m.A1(t.applicationId, t.branchId)
     })
   },
-  Q = e => {
+  X = e => {
     let {
       item: t
     } = e;
@@ -494,7 +494,7 @@ let Y = () => (0, r.jsx)(B, {
       onClick: () => m.al(t.applicationId, t.branchId)
     })
   },
-  X = [{
+  Q = [{
     key: "name",
     cellClassName: k.nameCell,
     render: e => (0, r.jsxs)(I.Z, {
@@ -531,9 +531,9 @@ let Y = () => (0, r.jsx)(B, {
         item: e
       }) : null != t && t.paused ? (0, r.jsx)(Y, {}) : (0, r.jsx)(K, {
         item: e
-      }), i = (0, r.jsx)(Q, {
+      }), i = (0, r.jsx)(X, {
         item: e
-      })) : i = (0, r.jsx)(Q, {
+      })) : i = (0, r.jsx)(X, {
         item: e
       }), (0, r.jsxs)(I.Z, {
         justify: I.Z.Justify.END,
@@ -585,7 +585,7 @@ class J extends i.PureComponent {
         })]
       }), (0, r.jsx)(v.Z, {
         hasHeader: !1,
-        columns: X,
+        columns: Q,
         data: e,
         className: k.table,
         rowClassName: k.row,

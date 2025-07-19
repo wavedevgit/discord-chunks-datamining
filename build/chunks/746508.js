@@ -49,8 +49,8 @@ var r = n(255367),
   Y = n(810788),
   K = n(160404),
   q = n(703656),
-  Q = n(917405),
-  X = n(641015),
+  X = n(917405),
+  Q = n(641015),
   J = n(848543),
   $ = n(565799),
   ee = n(501655),
@@ -220,7 +220,7 @@ function eq() {
   })
 }
 
-function eQ() {
+function eX() {
   let {
     parentAnalyticsLocation: e
   } = (0, x.ZP)(), t = (0, u.e7)([ei.Z], () => ei.Z.isMuted()), n = t ? eG.intl.string(eG.t.ScHlfn) : eG.intl.string(eG.t.zqxfra);
@@ -234,14 +234,14 @@ function eQ() {
   })
 }
 
-function eX(e) {
+function eQ(e) {
   let {
     channel: t,
     enableActivities: n,
     disabled: l
   } = e, o = i.useRef(null), {
     parentAnalyticsLocation: s
-  } = (0, x.ZP)(), c = (0, eo.Z)(), d = (0, ec.Z)(t), p = (0, u.e7)([C.ZP], () => null != C.ZP.getSelfEmbeddedActivityForLocation(C.ZP.getConnectedActivityLocation())), f = (0, X.Z)(t), {
+  } = (0, x.ZP)(), c = (0, eo.Z)(), d = (0, ec.Z)(t), p = (0, u.e7)([C.ZP], () => null != C.ZP.getSelfEmbeddedActivityForLocation(C.ZP.getConnectedActivityLocation())), f = (0, Q.Z)(t), {
     reachedLimit: _,
     limit: E
   } = (0, es.Z)(t), O = i.useCallback(() => {
@@ -432,7 +432,7 @@ function e$(e) {
     b = (0, ec.Z)(n),
     _ = n.getGuildId(),
     E = (0, u.cj)([C.ZP], () => null != C.ZP.getSelfEmbeddedActivityForChannel(n.id)),
-    O = (0, X.Z)(n),
+    O = (0, Q.Z)(n),
     y = i.useCallback(() => {
       (0, eh.Z)(_, n.id, eD.jXE.ACTIVITY_PANEL)
     }, [_, n.id]),
@@ -529,7 +529,7 @@ class e0 extends i.PureComponent {
     } = this.props;
     if (null == t) return null;
     let u = (0, k.F6)(t, eS.default, eC.Z);
-    return null != n ? (e = eD.Z5c.CHANNEL(n.id, t.id), u = "".concat(u, " / ").concat(n.name)) : e = eD.Z5c.CHANNEL(eD.ME, t.id), (0, r.jsx)(Q.Z, {
+    return null != n ? (e = eD.Z5c.CHANNEL(n.id, t.id), u = "".concat(u, " / ").concat(n.name)) : e = eD.Z5c.CHANNEL(eD.ME, t.id), (0, r.jsx)(X.Z, {
       channelId: t.id,
       quality: i,
       state: l,
@@ -564,7 +564,7 @@ class e0 extends i.PureComponent {
       channel: l,
       voiceStates: a
     } = this.props;
-    return null != i ? null : (null == l ? void 0 : l.isGuildStageVoice()) && null == a.find(e => e.user.id === eb.default.getId() && (0, el.gf)(e.voiceState) === el.xO.ON_STAGE) && (0, er.U5)(l.id) ? (0, r.jsx)(eQ, {}) : !n && t ? (0, r.jsx)(m.ua7, {
+    return null != i ? null : (null == l ? void 0 : l.isGuildStageVoice()) && null == a.find(e => e.user.id === eb.default.getId() && (0, el.gf)(e.voiceState) === el.xO.ON_STAGE) && (0, er.U5)(l.id) ? (0, r.jsx)(eX, {}) : !n && t ? (0, r.jsx)(m.ua7, {
       text: eG.intl.string(eG.t["i+SO/f"]),
       tooltipClassName: eB.noiseCancellationTooltip,
       forceOpen: !0,
@@ -635,7 +635,7 @@ class e0 extends i.PureComponent {
       h = (0, et.xJ)(e.id);
     return (0, r.jsxs)("div", {
       className: eB.actionButtons,
-      children: [(0, r.jsx)(eX, {
+      children: [(0, r.jsx)(eQ, {
         channel: e,
         enableActivities: d,
         disabled: !h && p
@@ -647,7 +647,7 @@ class e0 extends i.PureComponent {
       }), d && !c ? (0, r.jsx)(eJ, {
         channel: e,
         enableActivities: i
-      }) : null, (0, X.Z)(e) && !s ? (0, r.jsx)(J.Z, {
+      }) : null, (0, Q.Z)(e) && !s ? (0, r.jsx)(J.Z, {
         channel: e,
         focusProps: eY
       }) : null]

@@ -70,7 +70,7 @@ function y(e) {
   let {
     subscription: O,
     onUpdated: T
-  } = e, [E, S] = r.useState(!1), [P, w] = r.useState(!1), [I, R] = r.useState(!1), [k, A] = r.useState(!1), [Z, D] = r.useState(null), L = e => (null == e && (e = O.status), e in j) ? j[e] : "Unknown status ".concat(e), M = e => {
+  } = e, [E, S] = r.useState(!1), [P, w] = r.useState(!1), [I, R] = r.useState(!1), [k, Z] = r.useState(!1), [A, D] = r.useState(null), L = e => (null == e && (e = O.status), e in j) ? j[e] : "Unknown status ".concat(e), M = e => {
     let t = new Date(e);
     return u.default.fromTimestamp(t.getTime())
   }, F = async e => {
@@ -107,7 +107,7 @@ function y(e) {
       body: r,
       rejectWithError: !1
     }), T()
-  }, B = async () => {
+  }, U = async () => {
     try {
       await s.tn.post({
         url: "/debug/subscriptions/".concat(O.id, "/transition"),
@@ -123,9 +123,9 @@ function y(e) {
       D(e.body.message)
     }
     T()
-  }, z = (null == (t = b.GP[O.planIdFromItems]) ? void 0 : t.premiumType) === b.p9.TIER_0, U = null == (a = O.metadata) ? void 0 : a.ended_at, G = null != U ? new Date(U).toISOString().substring(0, 10) : "", V = O.hasActiveTrial, H = (null == (l = O.metadata) ? void 0 : l.active_discount_id) != null;
+  }, B = (null == (t = b.GP[O.planIdFromItems]) ? void 0 : t.premiumType) === b.p9.TIER_0, z = null == (a = O.metadata) ? void 0 : a.ended_at, G = null != z ? new Date(z).toISOString().substring(0, 10) : "", V = O.hasActiveTrial, H = (null == (l = O.metadata) ? void 0 : l.active_discount_id) != null;
   return (0, n.jsxs)("div", {
-    className: i()(f.card, z ? f.gradientWrapperTier0 : f.gradientWrapperTier2),
+    className: i()(f.card, B ? f.gradientWrapperTier0 : f.gradientWrapperTier2),
     children: [V && (0, n.jsx)(o.P3F, {
       className: v.badge,
       children: (0, n.jsx)(o.Text, {
@@ -205,7 +205,7 @@ function y(e) {
       className: v.collapsablePane,
       children: [(0, n.jsxs)(o.P3F, {
         onClick: () => {
-          A(!k)
+          Z(!k)
         },
         className: v.collapsablePaneHeader,
         children: [(0, n.jsx)("div", {
@@ -303,11 +303,11 @@ function y(e) {
             variant: "primary",
             size: "sm",
             text: "Renew Subscription",
-            onClick: e => B()
-          }), null !== Z && (0, n.jsx)(o.kzN, {
+            onClick: e => U()
+          }), null !== A && (0, n.jsx)(o.kzN, {
             className: v.error,
             onDismiss: () => D(null),
-            children: Z
+            children: A
           })]
         }), (0, n.jsxs)(o.hjN, {
           title: "Premium Streak Start Date",
