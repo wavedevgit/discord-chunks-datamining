@@ -1,0 +1,1 @@
+{"id":"266661","type":"experiment","data":{"kind":"user","id":"2025-07_krisp_vad_negative_test","label":"Krisp VAD Negative Experiment","commonTriggerPoint":"i.$P.VOICE_CALL","defaultConfig":"c","treatments":[{"id":1,"label":"Disable Krisp VAD","config":"l(o({}, c), { disableKrispVAD: !0 })"}]},"fromModule":{"id":"web.js"}}
