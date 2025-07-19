@@ -1,6 +1,6 @@
 /**
   Module ID: 2016
-  Original File Name: 0d5bed3bf49d484e
+  Original File Name: bf0f433588fea055
 **/
 @keyframes placeholderPulse_c8ffbb {
     0% {
@@ -4643,12 +4643,6 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     pointer-events: none;
     position: absolute;
     z-index: 4
-}
-
-.loadingContainer_db93b3 {
-    align-items: center;
-    display: flex;
-    gap: 8px
 }
 
 .menu__77820 {
@@ -13021,4 +13015,4 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     position: relative
 }
 
-/*# sourceMappingURL=0d5bed3bf49d484e.css.map*/
+/*# sourceMappingURL=bf0f433588fea055.css.map*/
