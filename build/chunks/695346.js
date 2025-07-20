@@ -474,7 +474,7 @@ let eS = (0, d.KM)((0, d.Zc)("appearance", "developerMode", e => null != e && e,
     isEligible: () => (0, c.o0)("user_settings"),
     useIsEligible: () => (0, c.Yd)("user_settings"),
     ineligibleDefault: a.E5.OFF,
-    eligibleDefault: () => a.E5.ON
+    eligibleDefault: () => a.E5.ON_FOR_LARGE_GUILDS
   }),
   ek = (0, d.Zc)("privacy", "familyCenterEnabledV2", e => null == e ? void 0 : e.value, e => o.D5.create({
     value: e

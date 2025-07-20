@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Yd: () => s,
-  o0: () => o
+  Yd: () => l,
+  o0: () => s
 });
-var r = n(818083);
-let i = (0, r.B)({
+var r = n(818083),
+  i = n(128064);
+let a = (0, r.B)({
     kind: "user",
     id: "2025-01_default_activity_status",
     label: "Guild activity status defaults",
@@ -20,7 +21,7 @@ let i = (0, r.B)({
       }
     }]
   }),
-  a = (0, r.B)({
+  o = (0, r.B)({
     kind: "user",
     id: "2025-01_default_activity_status_new_users",
     label: "Guild activity status defaults",
@@ -35,25 +36,26 @@ let i = (0, r.B)({
       }
     }]
   }),
-  o = e => i.getCurrentConfig({
+  s = e => a.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: !1
-  }).enabled || a.getCurrentConfig({
+  }).enabled || o.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: !1
-  }).enabled,
-  s = e => {
-    let t = i.useExperiment({
+  }).enabled || (0, i.c_)("DefaultGuildActivityExperiment"),
+  l = e => {
+    let t = a.useExperiment({
         location: e
       }, {
         autoTrackExposure: !1
       }).enabled,
-      n = a.useExperiment({
+      n = o.useExperiment({
         location: e
       }, {
         autoTrackExposure: !1
-      }).enabled;
-    return t || n
+      }).enabled,
+      r = (0, i.pY)("DefaultGuildActivityExperiment");
+    return t || n || r
   }
