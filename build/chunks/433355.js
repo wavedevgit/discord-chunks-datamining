@@ -60,7 +60,7 @@ function w(e) {
 }
 
 function D() {
-  T && (T = w(T)), I = w(I)
+  A && u.S.dispatch(E.CkL.SEARCH_RESULTS_CLOSE), T && (T = w(T)), I = w(I)
 }
 
 function L() {
