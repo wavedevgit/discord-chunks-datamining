@@ -1,6 +1,6 @@
 /**
   Module ID: 31649
-  Original File Name: 171d3cb14bf24d64
+  Original File Name: a97bb060cf48f4e5
 **/
 .formGroup__9b8f6 {
     margin-bottom: 20px
@@ -8,6 +8,11 @@
 
 .formDivider__9b8f6 {
     margin-bottom: 16px
+}
+
+.modalFooter__9b8f6 {
+    align-items: center;
+    gap: 24px
 }
 
 .modalRoot__9b8f6 {
@@ -68,6 +73,7 @@
 }
 
 .clearButton__9b8f6:focus,.clearButton__9b8f6:hover {
+    cursor: pointer;
     opacity: 1
 }
 
@@ -348,4 +354,4 @@
     text-transform: uppercase
 }
 
-/*# sourceMappingURL=171d3cb14bf24d64.css.map*/
+/*# sourceMappingURL=a97bb060cf48f4e5.css.map*/

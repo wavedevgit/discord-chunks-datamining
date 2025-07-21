@@ -27,8 +27,8 @@ var l = n(255367),
   T = n(745579),
   P = n(74340),
   y = n(166655),
-  N = n(676035),
-  w = n(346565),
+  w = n(676035),
+  N = n(346565),
   E = n(562577),
   D = n(926563),
   I = n(875425),
@@ -45,20 +45,20 @@ function B(t) {
     onClose: B,
     sourceAnalyticsContext: M,
     sourceAnalyticsLocations: U = [],
-    prompt: Y = null,
-    showLabelSelectorNewTooltip: z = !1
-  } = t, F = (0, x.p)({
+    prompt: F = null,
+    showLabelSelectorNewTooltip: Y = !1
+  } = t, z = (0, x.p)({
     location: "CustomStatusModalWithPreview"
   }), H = (0, g.P)({
     location: "CustomStatusModalWithPreview"
   }), W = (0, O.Z)({
     location: "CustomStatusModalWithPreview"
   }), {
-    analyticsLocations: K
-  } = (0, h.ZP)(U, f.Z.CUSTOM_STATUS_MODAL), V = (0, o.e7)([S.default], () => {
+    analyticsLocations: V
+  } = (0, h.ZP)(U, f.Z.CUSTOM_STATUS_MODAL), K = (0, o.e7)([S.default], () => {
     var t;
     return null != (t = S.default.getCurrentUser()) ? t : null
-  }), G = (0, N.a)(), [q, X] = a.useState(null != (e = null == G ? void 0 : G.state) ? e : ""), [Q, $] = a.useState(null != (n = null == G ? void 0 : G.emoji) ? n : null), [J, tt] = a.useState((0, C.Z)()), te = a.useRef(null), tn = a.useRef(null), tl = a.useRef(null), [ta, tr] = a.useState(null != G && W ? (0, P.Z)(G) : null), [ti, to] = a.useState(z), [ts, tu] = a.useState(() => F && null != Y ? Y.label() : L.intl.string(L.t["xod36+"])), [tc, td] = a.useState(ts), {
+  }), G = (0, w.a)(), [q, X] = a.useState(null != (e = null == G ? void 0 : G.state) ? e : ""), [Q, $] = a.useState(null != (n = null == G ? void 0 : G.emoji) ? n : null), [J, tt] = a.useState((0, C.Z)()), te = a.useRef(null), tn = a.useRef(null), tl = a.useRef(null), [ta, tr] = a.useState(null != G && W ? (0, P.Z)(G) : null), [ti, to] = a.useState(Y), [ts, tu] = a.useState(() => z && null != F ? F.label() : L.intl.string(L.t["xod36+"])), [tc, td] = a.useState(ts), {
     ref: tm,
     width: tf
   } = (0, d.ZP)(ts);
@@ -77,9 +77,9 @@ function B(t) {
   }, [tf, ts]), a.useEffect(() => {
     j.default.track(Z.rMx.OPEN_MODAL, {
       type: f.Z.CUSTOM_STATUS_MODAL,
-      location_stack: K
+      location_stack: V
     })
-  }, [K]), (0, m.ZP)(() => {
+  }, [V]), (0, m.ZP)(() => {
     var t, e;
     null == (t = te.current) || t.focus(), null == (e = te.current) || e.setSelection(q.length, q.length)
   });
@@ -99,9 +99,9 @@ function B(t) {
         text: q,
         emojiInfo: Q,
         clearAfter: J,
-        prompt: Y,
+        prompt: F,
         customStatusLabel: ta,
-        analyticsLocations: K,
+        analyticsLocations: V,
         analyticsContext: M
       }), B())
     },
@@ -111,7 +111,7 @@ function B(t) {
       emojiName: Q.name,
       animated: !!Q.animated
     }),
-    tS = F ? L.intl.string(L.t.rp0aho) : L.intl.string(L.t.UcdRn5),
+    tS = z ? L.intl.string(L.t.rp0aho) : L.intl.string(L.t.UcdRn5),
     tj = "custom-status-placeholder-text";
   return (0, l.jsxs)(u.Y0X, {
     transitionState: r,
@@ -132,10 +132,10 @@ function B(t) {
         })
       })]
     }), (0, l.jsxs)(u.hzk, {
-      children: [null != V && (0, l.jsx)("div", {
+      children: [null != K && (0, l.jsx)("div", {
         className: k.profilePreview,
         children: (0, l.jsx)(D.Z, {
-          user: V,
+          user: K,
           previewText: q,
           previewEmoji: Q,
           placeHolderText: ts,
@@ -257,7 +257,7 @@ function B(t) {
             inputRef: te
           }, null != ta ? "with-label" : "without-label"), null != ta && (0, l.jsx)("div", {
             className: k.inputCustomStatusLabelRow,
-            children: (0, l.jsx)(w.Z, {
+            children: (0, l.jsx)(N.Z, {
               label: ta
             })
           }), (0, l.jsx)(u.nn4, {
