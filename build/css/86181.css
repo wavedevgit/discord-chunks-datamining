@@ -1,6 +1,6 @@
 /**
   Module ID: 86181
-  Original File Name: d3293f971868da70
+  Original File Name: 2fde8f1de3b923f6
 **/
 .discountOfferContainer__5521c {
     align-content: center;
@@ -13,6 +13,10 @@
 .discountOfferContent__5521c {
     display: flex;
     flex-direction: column
+}
+
+.nitroIcon__5521c {
+    border-radius: var(--radius-sm)
 }
 
 .offerDetailContainer__11ee8 {
@@ -125,6 +129,10 @@
     margin-bottom: 16px;
     margin-top: 16px;
     row-gap: 8px
+}
+
+.whatYouLoseItemContainer__89307.premiumRebrand__89307 {
+    margin-top: 0
 }
 
 .whatYouLoseItem__89307 {
@@ -299,7 +307,7 @@
 }
 
 .previewContainer__70c78 {
-    padding: 26px 0
+    padding: 0 0 var(--space-6) 0
 }
 
 .confettiCanvas__6c43c {
@@ -548,4 +556,4 @@ html .invoiceCancelRow_b9f95d {
     width: 100%
 }
 
-/*# sourceMappingURL=d3293f971868da70.css.map*/
+/*# sourceMappingURL=2fde8f1de3b923f6.css.map*/

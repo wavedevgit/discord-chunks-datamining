@@ -1,6 +1,6 @@
 /** Chunk was on 86181 **/
 n.d(t, {
-  n: () => I
+  n: () => j
 }), n(539854);
 var r = n(255367),
   i = n(73800),
@@ -22,7 +22,7 @@ var r = n(255367),
   b = n(515622),
   g = n(997892),
   v = n(234286);
-let j = e => {
+let I = e => {
     let {
       churnUserDiscountOffer: t
     } = e;
@@ -33,7 +33,7 @@ let j = e => {
       })
     })
   },
-  I = () => {
+  j = () => {
     let {
       transitionState: e,
       onClose: t,
@@ -41,7 +41,7 @@ let j = e => {
       setStep: o,
       expressive: f,
       churnUserDiscountOffer: b,
-      isFetchingChurnDiscountOffer: I
+      isFetchingChurnDiscountOffer: j
     } = (0, h.a)(), T = (0, s.e7)([m.default], () => {
       let e = m.default.getCurrentUser();
       return a()(null != e, "ProfileItem: currentUser cannot be undefined"), e
@@ -51,7 +51,7 @@ let j = e => {
     }, [T]);
     let E = (0, p.Z)(),
       P = "US" === E.ipCountryCode && "CA" === E.ipSubdivisionCode;
-    if (I) return (0, r.jsx)(c.u, {
+    if (j) return (0, r.jsx)(c.u, {
       transitionState: e,
       title: "",
       actions: [],
@@ -77,7 +77,9 @@ let j = e => {
       let i = n === x.p9.TIER_2;
       return (0, r.jsx)(l.I, {
         gradientColor: i ? "nitro-pink" : "nitro-green",
-        graphic: i ? v : g,
+        graphic: {
+          src: i ? v : g
+        },
         title: y.intl.string(y.t.PWq8TE),
         subtitle: y.intl.format(y.t.nsGVzs, {}),
         actions: O,
@@ -96,7 +98,7 @@ let j = e => {
       title: y.intl.string(y.t.PWq8TE),
       subtitle: y.intl.format(y.t.nsGVzs, {}),
       actions: O,
-      preview: (0, r.jsx)(j, {
+      preview: (0, r.jsx)(I, {
         churnUserDiscountOffer: b
       }),
       onClose: async () => t(),

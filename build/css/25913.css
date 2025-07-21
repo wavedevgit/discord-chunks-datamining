@@ -1,6 +1,6 @@
 /**
   Module ID: 25913
-  Original File Name: 8be2a1bee8196374
+  Original File Name: bff2c3057b7f470d
 **/
 .gradientOuterBorder__8f49b {
     align-items: center;
@@ -759,6 +759,10 @@
     row-gap: 8px
 }
 
+.whatYouLoseItemContainer__89307.premiumRebrand__89307 {
+    margin-top: 0
+}
+
 .whatYouLoseItem__89307 {
     background: var(--background-base-lowest);
     border-radius: 8px;
@@ -935,4 +939,4 @@
     flex-direction: row-reverse
 }
 
-/*# sourceMappingURL=8be2a1bee8196374.css.map*/
+/*# sourceMappingURL=bff2c3057b7f470d.css.map*/

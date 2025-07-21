@@ -27,7 +27,8 @@ let p = e => {
     className: d.discountOfferContainer,
     children: [(0, r.jsx)("img", {
       alt: "",
-      src: m
+      src: m,
+      className: d.nitroIcon
     }), (0, r.jsxs)("div", {
       className: d.discountOfferContent,
       children: [(0, r.jsx)(i.xv, {

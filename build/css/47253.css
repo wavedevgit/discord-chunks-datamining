@@ -1,6 +1,6 @@
 /**
   Module ID: 47253
-  Original File Name: 92195f6650cfc8f1
+  Original File Name: b57a7e13235733ae
 **/
 .gradientOuterBorder__8f49b {
     align-items: center;
@@ -473,6 +473,10 @@
     row-gap: 8px
 }
 
+.whatYouLoseItemContainer__89307.premiumRebrand__89307 {
+    margin-top: 0
+}
+
 .whatYouLoseItem__89307 {
     background: var(--background-base-lowest);
     border-radius: 8px;
@@ -649,4 +653,4 @@
     flex-direction: row-reverse
 }
 
-/*# sourceMappingURL=92195f6650cfc8f1.css.map*/
+/*# sourceMappingURL=b57a7e13235733ae.css.map*/

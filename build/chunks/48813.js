@@ -27,16 +27,16 @@ let v = e => {
     analyticsLocation: n,
     analyticsLocations: a,
     onClose: v,
-    transitionState: j,
-    premiumSubscription: I,
+    transitionState: I,
+    premiumSubscription: j,
     expressive: T
   } = e, {
     initialStep: E
-  } = e, P = i.useRef(new o.qA), [O, S] = i.useState(null), N = null == (t = (0, u.Af)(I)) ? void 0 : t.planId, R = null != N ? u.ZP.getPremiumType(N) : null;
+  } = e, P = i.useRef(new o.qA), [O, S] = i.useState(null), N = null == (t = (0, u.Af)(j)) ? void 0 : t.planId, R = null != N ? u.ZP.getPremiumType(N) : null;
   s()(null != R, "Should not be cancelling Nitro without premiumType");
   let D = R === y.p9.TIER_0 || R === y.p9.TIER_1 || R === y.p9.TIER_2;
   null == E && (E = D ? f.R.WHAT_YOU_LOSE : f.R.CONFIRM);
-  let [w, A, k, L] = (0, x.q)(E, I, a), M = (0, d.UV)(), {
+  let [w, A, k, L] = (0, x.q)(E, j, a), M = (0, d.UV)(), {
     churnUserDiscountOffer: U,
     isFetchingChurnDiscountOffer: F
   } = (0, d.WR)(!M || w !== f.R.WHAT_YOU_LOSE), B = e => {
@@ -63,7 +63,7 @@ let v = e => {
       step_duration_ms: Date.now() - k,
       flow_duration_ms: Date.now() - L,
       location_stack: a
-    }, (0, x.b)(I)))
+    }, (0, x.b)(j)))
   }, Z = i.useCallback(() => {
     switch (w) {
       case f.R.CONFIRM:
@@ -84,8 +84,8 @@ let v = e => {
         setStep: A,
         premiumType: R,
         onClose: () => B(w),
-        transitionState: j,
-        premiumSubscription: I,
+        transitionState: I,
+        premiumSubscription: j,
         analyticsLocations: a,
         analyticsLocation: n,
         confettiCanvas: O,

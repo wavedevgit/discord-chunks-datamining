@@ -24,8 +24,8 @@ var t = r(255367),
   N = r(906411),
   T = r(565138),
   v = r(822179),
-  E = r(419922),
-  b = r(687158),
+  b = r(419922),
+  E = r(687158),
   _ = r(484459),
   L = r(813549),
   y = r(867176),
@@ -167,7 +167,7 @@ function eu(e) {
       premiumType: n,
       onClose: i
     } = e,
-    a = (0, b.ZP)(r.id),
+    a = (0, E.ZP)(r.id),
     o = (0, m.e7)([I.Z], () => I.Z.useReducedMotion),
     l = n === D.p9.TIER_1;
   return s = (null == a ? void 0 : a.premiumType) === D.p9.TIER_2 ? (0, t.jsxs)(A.Z, {
@@ -251,7 +251,7 @@ function em(e) {
         className: G.personalizedEmoji,
         alt: "",
         src: e
-      }) : null), o ? null : i.map(e => (0, t.jsx)(E.Z, {
+      }) : null), o ? null : i.map(e => (0, t.jsx)(b.Z, {
         disableAnimation: r,
         sticker: e,
         size: 58,
@@ -387,11 +387,12 @@ function ej(e) {
     currentUser: s,
     premiumType: r,
     onClose: i,
-    isDowngrade: a = !1
-  } = e, o = (0, k.Z)(), c = (0, V.U)(), u = n.useMemo(() => {
+    isDowngrade: o = !1,
+    isPremiumRebrand: c = !1
+  } = e, u = (0, k.Z)(), m = (0, V.U)(), d = n.useMemo(() => {
     let e = [];
-    switch (c && (l()(null != o, "Subscription billing country should not be null"), e.push((0, t.jsx)(ef, {
-        country: o
+    switch (m && (l()(null != u, "Subscription billing country should not be null"), e.push((0, t.jsx)(ef, {
+        country: u
       }))), r) {
       case D.p9.TIER_0:
         e.push((0, t.jsx)(em, {
@@ -401,7 +402,7 @@ function ej(e) {
         }));
         break;
       case D.p9.TIER_1:
-        a ? e.push((0, t.jsx)(eu, {
+        o ? e.push((0, t.jsx)(eu, {
           currentUser: s,
           premiumType: r,
           onClose: i
@@ -422,7 +423,7 @@ function ej(e) {
         }));
         break;
       case D.p9.TIER_2:
-        a ? e.push((0, t.jsx)(eu, {
+        o ? e.push((0, t.jsx)(eu, {
           currentUser: s,
           premiumType: r,
           onClose: i
@@ -443,10 +444,12 @@ function ej(e) {
         }))
     }
     return e
-  }, [r, s, i, a, c, o]);
+  }, [r, s, i, o, m, u]);
   return (0, t.jsx)("div", {
-    className: G.whatYouLoseItemContainer,
-    children: u
+    className: a()(G.whatYouLoseItemContainer, {
+      [G.premiumRebrand]: c
+    }),
+    children: d
   })
 }
 let eC = function(e) {

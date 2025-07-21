@@ -1,6 +1,6 @@
 /**
   Module ID: 13453
-  Original File Name: 753308efe1ca8967
+  Original File Name: ddfba04bae4b4982
 **/
 .churnFooterContainer__64988 {
     overflow-x: clip;
@@ -102,6 +102,10 @@
     margin-bottom: 16px;
     margin-top: 16px;
     row-gap: 8px
+}
+
+.whatYouLoseItemContainer__89307.premiumRebrand__89307 {
+    margin-top: 0
 }
 
 .whatYouLoseItem__89307 {
@@ -341,4 +345,4 @@
     margin-top: 18px
 }
 
-/*# sourceMappingURL=753308efe1ca8967.css.map*/
+/*# sourceMappingURL=ddfba04bae4b4982.css.map*/
