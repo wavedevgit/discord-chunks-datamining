@@ -34,7 +34,7 @@ function P(e) {
   let {
     transitionState: k,
     onClose: D
-  } = e, T = r.useRef(null), W = r.useRef(null), [N, A] = r.useState(""), [L, R] = r.useState(""), [I, Z] = r.useState(), [z, J] = r.useState(""), [M, q] = r.useState([]), [B, V] = r.useState(), [G, H] = r.useState(), [X, U] = r.useState(!1), [K, Y] = r.useState(""), [F, Q] = r.useState(function(e) {
+  } = e, T = r.useRef(null), W = r.useRef(null), [N, A] = r.useState(""), [R, L] = r.useState(""), [I, Z] = r.useState(), [z, J] = r.useState(""), [M, q] = r.useState([]), [B, V] = r.useState(), [G, H] = r.useState(), [X, U] = r.useState(!1), [K, Y] = r.useState(""), [F, Q] = r.useState(function(e) {
     switch (e) {
       case "windows":
         return "Windows";
@@ -54,8 +54,8 @@ function P(e) {
       },
       rejectWithError: !0
     }).then(e => {
-      if (null != e.body && "8983beb1d565f53380dd8d958dd88e57fae45eae" !== e.body.hash) {
-        let e = new Date("1753130393600"),
+      if (null != e.body && "dec72d5c0a737ab882854bb47df858f5d6ca0cee" !== e.body.hash) {
+        let e = new Date("1753131118526"),
           t = new Date,
           n = (0, j.TD)(t, e);
         n.hours > 6 && ef(n.hours)
@@ -78,7 +78,7 @@ function P(e) {
     };
   async function ej() {
     var e, t;
-    if (em(!1), "" === N || "" === L || null == I) return void es(!0);
+    if (em(!1), "" === N || "" === R || null == I) return void es(!0);
     let r = null == B || null == (e = B.features) ? void 0 : e.find(e => (0, b.pD)(e) === G);
     ec(!0), es(!1);
     let l = (0, O.D)(M.map(e => {
@@ -89,7 +89,7 @@ function P(e) {
       })),
       a = await (0, b.ZD)({
         name: N,
-        description: L,
+        description: R,
         priority: I,
         feature: r,
         url: z,
@@ -215,13 +215,13 @@ function P(e) {
               onChange: A
             })
           }), (0, i.jsxs)(u.xJW, {
-            error: eo && "" === L ? S.intl.string(S.t.EkokLy) : null,
+            error: eo && "" === R ? S.intl.string(S.t.EkokLy) : null,
             title: S.intl.string(S.t["1SplHx"]),
             children: [(0, i.jsx)(u.Kx8, {
               placeholder: "What did you expect to see?",
-              value: L,
-              onChange: R
-            }), (0, i.jsx)(u.R94, {
+              value: R,
+              onChange: L
+            }), ep && (0, i.jsx)(u.R94, {
               type: u.geA.DESCRIPTION,
               children: "You can add additional information/media on the ticket after submitting"
             })]
@@ -401,7 +401,7 @@ function P(e) {
         justify: "end",
         children: [(0, i.jsx)(u.zxk, {
           variant: "primary",
-          text: "Submit and Open Report",
+          text: ep ? "Submit and Open Report" : "Submit Report",
           loading: eu,
           onClick: ej
         }), (0, i.jsx)(u.zxk, {
