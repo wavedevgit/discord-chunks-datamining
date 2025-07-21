@@ -3,6 +3,7 @@
 n.d(t, {
   A3: () => A,
   Cp: () => m,
+  Du: () => N,
   Fq: () => h,
   H2: () => y,
   Hk: () => T,
@@ -10,6 +11,7 @@ n.d(t, {
   If: () => b,
   KW: () => O,
   NO: () => u,
+  O5: () => C,
   Q1: () => g,
   Rx: () => S,
   Us: () => c,
@@ -128,5 +130,11 @@ let u = "1340102344645283891",
     [r.A$]: s.Eu4.TIER_3
   };
 var A = function(e) {
-  return e.INACTIVE = "inactive", e.POWERUP_ACTIVATED = "powerup_activated", e.LEVEL_ACTIVATED = "level_activated", e.TIER_OVERRIDE_ACTIVATED = "tier_override_activated", e
-}({})
+    return e.INACTIVE = "inactive", e.POWERUP_ACTIVATED = "powerup_activated", e.LEVEL_ACTIVATED = "level_activated", e.TIER_OVERRIDE_ACTIVATED = "tier_override_activated", e
+  }({}),
+  N = function(e) {
+    return e[e.VANITY_URL = 1] = "VANITY_URL", e
+  }({});
+let C = {
+  1: r.A$
+}
