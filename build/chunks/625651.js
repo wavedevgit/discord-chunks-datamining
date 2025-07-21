@@ -77,7 +77,7 @@ function j(e) {
             perk: t.title
           });
           break;
-        case a.A:
+        case a.A$:
           e = b ? (0, r.jsx)(s.Text, {
             color: "text-danger",
             variant: "text-sm/semibold",

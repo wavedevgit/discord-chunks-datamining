@@ -25,7 +25,7 @@ function b(e) {
     powerup: n
   } = e, [b, j] = o.useState(void 0);
   (0, _.KT)(b);
-  let [E, h] = o.useState(!1), C = (0, u.Z)(t, n).type !== x.A3.INACTIVE, I = (0, f.d)(C), N = (0, c.g1)(t, "GuildPowerupPerkCard"), Z = n.skuId === s.A;
+  let [E, h] = o.useState(!1), C = (0, u.Z)(t, n).type !== x.A3.INACTIVE, I = (0, f.d)(C), N = (0, c.g1)(t, "GuildPowerupPerkCard"), Z = n.skuId === s.A$;
   return (0, r.jsxs)(d.Z, {
     onHover: e => h(e),
     guildId: t,

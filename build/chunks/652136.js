@@ -49,7 +49,7 @@ function c(e) {
   }), (0, i.ZDy)(async () => {
     let {
       default: e
-    } = await n.e("39511").then(n.bind(n, 433550));
+    } = await n.e("656").then(n.bind(n, 861348));
     return n => (0, r.jsx)(e, l({
       stickerPack: t
     }, n))

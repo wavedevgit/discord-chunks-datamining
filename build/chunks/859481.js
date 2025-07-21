@@ -104,7 +104,7 @@ function N(e) {
   } = e, {
     analyticsLocations: p
   } = (0, c.ZP)(), b = (0, u.g1)(t.id, "GuildSettingsBoostPerks"), v = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), b ? (g.Z.close(), (0, m.Z)(t.id, o.Z.GUILD_POWERUPS_GUILD_SETTINGS_VANITY_URL, l.A)) : (0, x.E6)({
+    e.preventDefault(), e.stopPropagation(), b ? (g.Z.close(), (0, m.Z)(t.id, o.Z.GUILD_POWERUPS_GUILD_SETTINGS_VANITY_URL, l.A$)) : (0, x.E6)({
       guild: t,
       analyticsLocations: p,
       analyticsSection: j.jXE.GUILD_SETTINGS_VANITY_URL,

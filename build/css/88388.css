@@ -1,6 +1,6 @@
 /**
   Module ID: 88388
-  Original File Name: 07f647a55f47b8b1
+  Original File Name: 081bbbbf31b68802
 **/
 .editCard_a25a68 {
     background-color: var(--background-surface-high);
@@ -9722,39 +9722,39 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     color: var(--primary-400)
 }
 
-.content_f15dca {
+.content_a36dee {
     display: flex
 }
 
-.progress_f15dca {
+.progress_a36dee {
     position: absolute
 }
 
-.progressWithSubscriptions_f15dca {
+.progressWithSubscriptions_a36dee {
     margin-top: var(--custom-guild-settings-premium-tier-status-progress-with-subscriptions-margin-top)
 }
 
-.tiers_f15dca {
+.tiers_a36dee {
     margin-left: 38px;
     width: 100%
 }
 
-.subscriberCount_f15dca {
+.subscriberCount_a36dee {
     color: var(--text-muted-on-default);
     margin-bottom: 24px;
     margin-top: 8px
 }
 
-.subscriberCount_f15dca strong {
+.subscriberCount_a36dee strong {
     color: var(--text-default);
     font-weight: var(--font-weight-medium)
 }
 
-.subscribers_f15dca .subscriberMask_f15dca {
+.subscribers_a36dee .subscriberMask_a36dee {
     margin-right: -8px
 }
 
-.moreSubscribers_f15dca {
+.moreSubscribers_a36dee {
     background-color: var(--primary-700);
     border-radius: 50%;
     color: var(--white-500);
@@ -9767,7 +9767,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     width: 30px
 }
 
-.subscribersPopout_f15dca {
+.subscribersPopout_a36dee {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 16px;
@@ -9779,7 +9779,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     padding: 16px
 }
 
-.subscribersPopoutUser_f15dca {
+.subscribersPopoutUser_a36dee {
     align-items: center;
     color: var(--text-muted-on-default);
     display: flex;
@@ -9787,7 +9787,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     line-height: 18px
 }
 
-.subscribersPopoutUsername_f15dca {
+.subscribersPopoutUsername_a36dee {
     margin-left: 8px;
     max-width: 200px;
     overflow: hidden;
@@ -9795,53 +9795,53 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     white-space: nowrap
 }
 
-.tierDefaultUnlocked_f15dca {
+.tierDefaultUnlocked_a36dee {
     margin-bottom: 16px
 }
 
-.tierDefaultUnlockedDescription_f15dca {
+.tierDefaultUnlockedDescription_a36dee {
     margin-top: 10px
 }
 
-.tier_f15dca {
+.tier_a36dee {
     background-color: var(--background-mod-faint);
     border: 1px solid var(--border-subtle);
     border-radius: var(--radius-sm);
     box-shadow: var(--shadow-low)
 }
 
-.tierBottomMargin_f15dca {
+.tierBottomMargin_a36dee {
     margin-bottom: 24px
 }
 
-.tierHeader_f15dca {
+.tierHeader_a36dee {
     border-bottom: 1px solid var(--border-subtle);
     border-radius: 8px 8px 0 0;
     position: relative
 }
 
-.tierHeaderWithoutCardBody_f15dca {
+.tierHeaderWithoutCardBody_a36dee {
     border-radius: 8px;
     margin-bottom: 16px
 }
 
-.tierHeaderContent_f15dca {
+.tierHeaderContent_a36dee {
     align-items: center;
     display: flex;
     padding: 16px;
     transform: translateZ(0)
 }
 
-.tierHeaderLocked_f15dca {
+.tierHeaderLocked_a36dee {
     background-color: var(--background-mod-subtle)
 }
 
-.tierHeaderUnlocked_f15dca {
+.tierHeaderUnlocked_a36dee {
     background-color: var(--background-mod-faint);
     overflow: hidden
 }
 
-.tierHeaderUnlockedBackground_f15dca {
+.tierHeaderUnlockedBackground_a36dee {
     bottom: 0;
     left: 0;
     position: absolute;
@@ -9849,18 +9849,18 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     top: 0
 }
 
-.tierIcon_f15dca {
+.tierIcon_a36dee {
     color: var(--guild-boosting-pink);
     height: 32px;
     margin-right: 16px;
     width: 32px
 }
 
-.tierIconLocked_f15dca {
+.tierIconLocked_a36dee {
     color: var(--primary-500)
 }
 
-.tierTitle_f15dca {
+.tierTitle_a36dee {
     color: var(--interactive-normal);
     flex: 1;
     font-family: var(--font-display);
@@ -9869,22 +9869,22 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     line-height: 20px
 }
 
-.tierTitleActive_f15dca {
+.tierTitleActive_a36dee {
     color: var(--interactive-active)
 }
 
-.tierRequirement_f15dca {
+.tierRequirement_a36dee {
     font-size: 16px
 }
 
-.tierLock_f15dca {
+.tierLock_a36dee {
     color: var(--interactive-muted);
     height: 30px;
     margin-left: 16px;
     width: 30px
 }
 
-.tierUnlocked_f15dca {
+.tierUnlocked_a36dee {
     background-image: linear-gradient(90deg,var(--guild-boosting-blue-for-gradients),var(--guild-boosting-purple-for-gradients));
     border-radius: 10px;
     color: var(--white-500);
@@ -9894,7 +9894,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     text-transform: uppercase
 }
 
-.tierClose_f15dca {
+.tierClose_a36dee {
     align-items: center;
     display: flex;
     height: 100%;
@@ -9903,12 +9903,12 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     width: 100%
 }
 
-.tierCloseMechaWumpus_f15dca {
+.tierCloseMechaWumpus_a36dee {
     height: 70px;
     width: 90px
 }
 
-.tierCloseHint_f15dca {
+.tierCloseHint_a36dee {
     border-radius: 4px;
     font-size: 12px;
     line-height: 16px;
@@ -9918,7 +9918,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     position: relative
 }
 
-.tierCloseHint_f15dca:before {
+.tierCloseHint_a36dee:before {
     border: 8px solid transparent;
     content: "";
     left: -16px;
@@ -9926,7 +9926,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     top: calc(50% - 8px)
 }
 
-.tierCloseClose_f15dca {
+.tierCloseClose_a36dee {
     align-self: flex-start;
     color: var(--text-default);
     cursor: pointer;
@@ -9934,17 +9934,17 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     margin-top: 4px
 }
 
-.tierCloseCloseIcon_f15dca {
+.tierCloseCloseIcon_a36dee {
     height: 16px;
     width: 16px
 }
 
-.hidden_f15dca {
+.hidden_a36dee {
     opacity: 0;
     pointer-events: none
 }
 
-.tierBody_f15dca {
+.tierBody_a36dee {
     background-color: var(--card-primary-bg);
     border-radius: 0 0 8px 8px;
     box-sizing: border-box;
@@ -9953,13 +9953,13 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     padding: 16px
 }
 
-.previousPerks_f15dca {
+.previousPerks_a36dee {
     font-size: 14px;
     line-height: 18px;
     margin-bottom: 16px
 }
 
-.perks_f15dca {
+.perks_a36dee {
     display: grid;
     -webkit-user-select: text;
     -moz-user-select: text;
@@ -9969,67 +9969,67 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     grid-template-columns: repeat(auto-fit,minmax(280px,1fr))
 }
 
-.perk_f15dca {
+.perk_a36dee {
     display: flex
 }
 
-.perkIcon_f15dca {
+.perkIcon_a36dee {
     flex-shrink: 0;
     height: 20px;
     width: 20px
 }
 
-.perkText_f15dca {
+.perkText_a36dee {
     font-size: 12px;
     line-height: 16px;
     margin-left: 10px
 }
 
-.perkTitle_f15dca {
+.perkTitle_a36dee {
     color: var(--text-primary);
     font-weight: var(--font-weight-semibold);
     text-transform: uppercase
 }
 
-.perkDescription_f15dca {
+.perkDescription_a36dee {
     color: var(--text-secondary);
     margin-top: 4px
 }
 
-.avatar_f15dca {
+.avatar_a36dee {
     height: 30px!important;
     width: 30px!important
 }
 
-.newBadge_f15dca {
+.newBadge_a36dee {
     display: inline-block;
     flex: 0 0 auto;
     margin-left: 4px;
     vertical-align: bottom
 }
 
-.enable-forced-colors .tier_f15dca {
+.enable-forced-colors .tier_a36dee {
     border: 1px solid CanvasText
 }
 
-.enable-forced-colors .tierHeaderContent_f15dca {
+.enable-forced-colors .tierHeaderContent_a36dee {
     border-bottom: 1px solid CanvasText
 }
 
-.tierCloseHint_f15dca {
+.tierCloseHint_a36dee {
     background-color: var(--brand-500);
     color: var(--white-500)
 }
 
-.tierCloseHint_f15dca:before {
+.tierCloseHint_a36dee:before {
     border-right-color: var(--brand-500)
 }
 
-.tierHeaderUnlocked_f15dca {
+.tierHeaderUnlocked_a36dee {
     background-color: var(--background-surface-high)
 }
 
-.tierHeaderUnlockedBackground_f15dca {
+.tierHeaderUnlockedBackground_a36dee {
     background-image: linear-gradient(to right,var(--guild-boosting-blue-for-gradients),var(--guild-boosting-purple-for-gradients))
 }
 
@@ -12395,4 +12395,4 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     width: 8px
 }
 
-/*# sourceMappingURL=07f647a55f47b8b1.css.map*/
+/*# sourceMappingURL=081bbbbf31b68802.css.map*/
