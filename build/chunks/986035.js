@@ -1,66 +1,66 @@
-/** Chunk was on 57951 **/
+/** Chunk was on 60173 **/
 n.d(t, {
-  Z: () => g
+  Z: () => p
 }), n(953529);
 var r = n(255367),
   i = n(73800),
-  o = n(120356),
-  c = n.n(o),
-  a = n(755721),
-  l = n(481060),
-  s = n(480916),
+  l = n(120356),
+  a = n.n(l),
+  o = n(755721),
+  s = n(481060),
+  c = n(480916),
   u = n(352075),
-  p = n(20493);
-let g = function(e) {
+  d = n(20493);
+let p = function(e) {
   let {
     title: t,
     description: n,
-    agreement: o,
-    disagreement: g,
-    onAgree: d,
+    agreement: l,
+    disagreement: p,
+    onAgree: h,
     onDisagree: f,
-    imageClassName: b,
-    agreementButtonColor: m = a.zx.Colors.RED,
-    modalType: y,
-    channelId: O,
-    guildId: j
+    imageClassName: m,
+    agreementButtonColor: g = o.zx.Colors.RED,
+    modalType: b,
+    channelId: _,
+    guildId: y
   } = e;
   i.useEffect(() => {
-    (0, s.YT)(y, O, j)
-  }, [y, O, j]);
-  let v = i.useCallback(() => {
-      (0, s.qd)(s.iP.NSFW_CHANNEL_DISAGREE_CTA, y, O, j), null == f || f()
-    }, [f, y, O, j]),
+    (0, c.YT)(b, _, y)
+  }, [b, _, y]);
+  let C = i.useCallback(() => {
+      (0, c.qd)(c.iP.NSFW_CHANNEL_DISAGREE_CTA, b, _, y), null == f || f()
+    }, [f, b, _, y]),
     x = i.useCallback(() => {
-      (0, s.qd)(s.iP.NSFW_CHANNEL_AGREE_CTA, y, O, j), null == d || d()
-    }, [d, y, O, j]);
-  return (0, r.jsxs)(l.Kqy, {
+      (0, c.qd)(c.iP.NSFW_CHANNEL_AGREE_CTA, b, _, y), null == h || h()
+    }, [h, b, _, y]);
+  return (0, r.jsxs)(s.Kqy, {
     className: u.gatedContent,
     justify: "center",
     align: "center",
     direction: "vertical",
     children: [(0, r.jsx)("div", {
-      className: c()(u.image, b)
+      className: a()(u.image, m)
     }), (0, r.jsx)("div", {
-      className: c()(u.title, p.marginBottom8),
+      className: a()(u.title, d.marginBottom8),
       children: t
-    }), (0, r.jsx)(l.Text, {
+    }), (0, r.jsx)(s.Text, {
       variant: "text-md/medium",
-      className: c()(u.description, p.marginBottom20),
+      className: a()(u.description, d.marginBottom20),
       children: n
-    }), (0, r.jsxs)(l.Kqy, {
+    }), (0, r.jsxs)(s.Kqy, {
       direction: "horizontal",
       justify: "center",
       align: "center",
       gap: 16,
-      children: [null != g && null != f ? (0, r.jsx)(l.zxk, {
+      children: [null != p && null != f ? (0, r.jsx)(s.zxk, {
         variant: "secondary",
-        text: g,
-        onClick: v
-      }) : null, null != o && null != d ? (0, r.jsx)(a.zx, {
-        color: m,
+        text: p,
+        onClick: C
+      }) : null, null != l && null != h ? (0, r.jsx)(o.zx, {
+        color: g,
         onClick: x,
-        children: o
+        children: l
       }) : null]
     })]
   })

@@ -43,10 +43,10 @@ function u(A) {
           className: h.decorationsContainer,
           children: A.decorations
         })]
-      }), (0, n.jsx)(i.Text, {
+      }), null != A.message && (0, n.jsx)(i.Text, {
         variant: "text-md/medium",
         children: A.message
-      })]
+      }), A.asset]
     })]
   })
 }

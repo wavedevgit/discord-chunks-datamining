@@ -1,6 +1,6 @@
 /**
   Module ID: 96127
-  Original File Name: e6d76569a5fcdab9
+  Original File Name: 7d6d642c57f7ca88
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -4009,7 +4009,7 @@ div:has(>.repositionLayerSidebarPopout_fc71d3) {
 
 .container__53b23 {
     background-color: var(--bg-surface-overlay);
-    box-shadow: var(--shadow-low);
+    box-shadow: var(--shadow-high);
     padding: var(--space-8)
 }
 
@@ -8320,4 +8320,4 @@ div:has(>.positionLayer__4f4b6) {
     width: 96px
 }
 
-/*# sourceMappingURL=e6d76569a5fcdab9.css.map*/
+/*# sourceMappingURL=7d6d642c57f7ca88.css.map*/

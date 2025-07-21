@@ -1,4 +1,4 @@
-/** Chunk was on 2016 **/
+/** Chunk was on 60173 **/
 e.exports = {
   bannerIcon: "bannerIcon_cbe8c4",
   bannerContainer: "bannerContainer_cbe8c4",

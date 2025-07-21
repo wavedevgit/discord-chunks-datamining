@@ -1,4 +1,4 @@
-/** Chunk was on 2016 **/
+/** Chunk was on 60173 **/
 e.exports = {
   emojiWrapper: "emojiWrapper__21d2d",
   emoji: "emoji__21d2d",

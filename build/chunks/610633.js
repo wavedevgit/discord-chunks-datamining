@@ -1,4 +1,4 @@
-/** Chunk was on 2016 **/
+/** Chunk was on 60173 **/
 e.exports = {
   avatar: "avatar__49508",
   divider: "divider__49508",

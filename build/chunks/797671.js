@@ -1,4 +1,4 @@
-/** Chunk was on 99927 **/
+/** Chunk was on 55151 **/
 n.d(t, {
   default: () => k
 }), n(539854), n(953529), n(388685), n(457542);
@@ -22,8 +22,8 @@ var a = n(255367),
   g = n(430824),
   j = n(259580),
   C = n(934415),
-  B = n(700785),
-  N = n(573261),
+  N = n(700785),
+  B = n(573261),
   v = n(981631),
   L = n(231338),
   w = n(388032),
@@ -123,11 +123,11 @@ function k(e) {
         permission_overwrites: [{
           id: k,
           type: u.BN.ROLE,
-          allow: B.Hn,
+          allow: N.Hn,
           deny: v.Plq.VIEW_CHANNEL
         }]
       };
-      N.Z.post({
+      B.Z.post({
         url: v.ANM.GUILD_CHANNELS(k),
         body: t,
         oldFormErrors: !0,

@@ -1,4 +1,4 @@
-/** Chunk was on 2016 **/
+/** Chunk was on 60173 **/
 e.exports = {
   animationMiddle: "animationMiddle__8177b",
   animationContainer: "animationContainer__8177b",

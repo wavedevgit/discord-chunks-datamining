@@ -1,4 +1,4 @@
-/** Chunk was on 2016 **/
+/** Chunk was on 60173 **/
 e.exports = {
   wrapper: "wrapper__4d3a9",
   icon: "icon__4d3a9"

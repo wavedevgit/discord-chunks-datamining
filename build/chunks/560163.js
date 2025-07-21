@@ -1,4 +1,4 @@
-/** Chunk was on 2016 **/
+/** Chunk was on 60173 **/
 e.exports = {
   buttonContainer: "buttonContainer_e6e74f",
   entrypointAnimation: "entrypointAnimation_e6e74f",

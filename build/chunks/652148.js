@@ -1,4 +1,4 @@
-/** Chunk was on 2016 **/
+/** Chunk was on 60173 **/
 e.exports = {
   indicator: "indicator_ffc7aa",
   animationContainer: "animationContainer_ffc7aa",

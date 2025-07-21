@@ -1,4 +1,4 @@
-/** Chunk was on 2016 **/
+/** Chunk was on 60173 **/
 e.exports = {
   containerExpanded: "containerExpanded__7ff28",
   stickerExpanded: "stickerExpanded__7ff28",

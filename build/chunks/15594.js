@@ -1,4 +1,4 @@
-/** Chunk was on 2016 **/
+/** Chunk was on 60173 **/
 e.exports = {
   gradientBackground: "gradientBackground__41626",
   leftDarkEllipse: "leftDarkEllipse__41626",

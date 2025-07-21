@@ -1,5 +1,4 @@
-/** Chunk was on 41629 **/
-"use strict";
+/** Chunk was on 60173 **/
 e.exports = {
   wrapper: "wrapper_f563df",
   button: "button_f563df",

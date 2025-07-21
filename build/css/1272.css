@@ -1,6 +1,6 @@
 /**
   Module ID: 1272
-  Original File Name: 4804163034dab577
+  Original File Name: 9bcfd29226700881
 **/
 .container__74da2 {
     align-items: center;
@@ -4849,6 +4849,10 @@
         overflow: auto
     }
 
+    .high-contrast-mode .page_c48ade {
+        border-left: 1px solid var(--border-subtle)
+    }
+
     .sidebar_c48ade {
         display: grid;
         grid-column: start/channelsEnd;
@@ -8545,4 +8549,4 @@ html .tabBadge__35e86 {
     margin-bottom: 18px
 }
 
-/*# sourceMappingURL=4804163034dab577.css.map*/
+/*# sourceMappingURL=9bcfd29226700881.css.map*/

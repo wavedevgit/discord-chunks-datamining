@@ -1,6 +1,6 @@
 /**
   Module ID: 7104
-  Original File Name: f07785ac59880ec7
+  Original File Name: 6a36e89078f93822
 **/
 .imageUploader_e4d0bf {
     font-size: 12px;
@@ -1043,6 +1043,7 @@
 
 .card_dc2e44 {
     background-color: var(--card-primary-bg);
+    border-color: var(--border-subtle);
     border-radius: var(--radius-sm);
     margin-bottom: 16px;
     padding: 20px 16px
@@ -1063,14 +1064,6 @@
 
 .clickable_dc2e44 {
     cursor: pointer
-}
-
-.theme-light .card_dc2e44 {
-    border-color: var(--background-base-lowest)
-}
-
-.theme-dark .card_dc2e44 {
-    border-color: var(--background-secondary-alt)
 }
 
 .headerDivider__774bc {
@@ -1906,6 +1899,7 @@
 }
 
 .inviteSettingsInviteRow__1de14 {
+    box-shadow: 0 1px 0 0 var(--border-subtle);
     color: var(--text-default);
     font-size: 16px;
     height: 62px;
@@ -2012,12 +2006,4 @@
     margin-bottom: 20px
 }
 
-.theme-dark .inviteSettingsInviteRow__1de14 {
-    box-shadow: 0 1px 0 0 var(--opacity-white-4)
-}
-
-.theme-light .inviteSettingsInviteRow__1de14 {
-    box-shadow: 0 1px 0 0 hsl(var(--primary-500-hsl)/.04)
-}
-
-/*# sourceMappingURL=f07785ac59880ec7.css.map*/
+/*# sourceMappingURL=6a36e89078f93822.css.map*/

@@ -1,46 +1,46 @@
-/** Chunk was on 6310 **/
-t.d(n, {
+/** Chunk was on 60173 **/
+n.d(t, {
   Z: () => u
 });
-var s, l, i, o = t(442837),
-  a = t(570140);
-let r = {};
-class c extends(i = o.ZP.Store) {
+var r, i, l, a = n(442837),
+  o = n(570140);
+let s = {};
+class c extends(l = a.ZP.Store) {
   getFollowerStatsForChannel(e) {
-    return r[e]
+    return s[e]
   }
 }
-l = "ChannelFollowerStatsStore", (s = "displayName") in c ? Object.defineProperty(c, s, {
-  value: l,
+i = "ChannelFollowerStatsStore", (r = "displayName") in c ? Object.defineProperty(c, r, {
+  value: i,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : c[s] = l;
-let u = new c(a.Z, {
+}) : c[r] = i;
+let u = new c(o.Z, {
   CONNECTION_OPEN: function() {
-    r = {}
+    s = {}
   },
   CHANNEL_FOLLOWER_STATS_FETCH_SUCCESS: function(e) {
     let {
-      channelId: n,
-      stats: t
+      channelId: t,
+      stats: n
     } = e;
-    t = null != t ? t : {}, r[n] = {
+    n = null != n ? n : {}, s[t] = {
       loadingStatus: "succeeded",
       lastFetched: Date.now(),
-      channelsFollowing: t.channels_following,
-      guildMembers: t.guild_members,
-      guildsFollowing: t.guilds_following,
-      usersSeenEver: t.users_seen_ever,
-      subscribersGainedSinceLastPost: t.subscribers_gained_since_last_post,
-      subscribersLostSinceLastPost: t.subscribers_lost_since_last_post
+      channelsFollowing: n.channels_following,
+      guildMembers: n.guild_members,
+      guildsFollowing: n.guilds_following,
+      usersSeenEver: n.users_seen_ever,
+      subscribersGainedSinceLastPost: n.subscribers_gained_since_last_post,
+      subscribersLostSinceLastPost: n.subscribers_lost_since_last_post
     }
   },
   CHANNEL_FOLLOWER_STATS_FETCH_FAILURE: function(e) {
     let {
-      channelId: n
+      channelId: t
     } = e;
-    r[n] = {
+    s[t] = {
       loadingStatus: "failed",
       lastFetched: Date.now(),
       channelsFollowing: 0,

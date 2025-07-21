@@ -1,4 +1,4 @@
-/** Chunk was on 2016 **/
+/** Chunk was on 60173 **/
 e.exports = {
   chatHeaderBar: "chatHeaderBar_dc83f5",
   chatHeaderBarText: "chatHeaderBarText_dc83f5",

@@ -1,4 +1,4 @@
-/** Chunk was on 2016 **/
+/** Chunk was on 60173 **/
 e.exports = {
   arrow: "arrow__6c50b",
   up: "up__6c50b"
