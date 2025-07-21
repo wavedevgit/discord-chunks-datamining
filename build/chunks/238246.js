@@ -135,12 +135,13 @@ class z extends(r = a.Component) {
     o.setAttribute(T.PQ, "true"), o.textContent = e, i.appendChild(o)
   }
   registerPopoutGlobalKeybinds() {
+    var e;
     let {
-      guestWindow: e
-    } = this.props, t = e.document;
-    for (let e of (this._combokeys = (0, P.r)(t.documentElement), [g.iN, g.oV, m.f]))
-      if (e.comboKeysBindGlobal)
-        for (let t of e.binds) this._combokeys.bindGlobal(t, (t, n) => ("function" == typeof e.action && e.action(t, n), !1))
+      guestWindow: t
+    } = this.props, n = t.document;
+    for (let t of (this._combokeys = (0, P.r)(n.documentElement), [g.iN, g.oV, m.f, ...null != (e = this.props.keybinds) ? e : []]))
+      if (t.comboKeysBindGlobal)
+        for (let e of t.binds) this._combokeys.bindGlobal(e, (e, n) => ("function" == typeof t.action && t.action(e, n), !1))
   }
   unregisterPopoutGlobalKeybinds() {
     null != this._combokeys && this._combokeys.reset()
