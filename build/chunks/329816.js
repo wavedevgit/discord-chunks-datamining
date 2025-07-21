@@ -109,12 +109,12 @@ let X = (0, B.Un)({
                               children: [(0, r.jsx)("div", {
                                 className: o()(u ? q.mobileApp : q.app),
                                 children: t
-                              }), (0, r.jsx)(I.Z, {}), (0, r.jsx)(_.Z, {}), (0, r.jsx)(d.nKe, {}), (0, r.jsx)(p.Z, {}), (0, r.jsx)(D.Ox, {}), (0, r.jsx)(w.Un, {}), (0, r.jsx)(L.ot, {}), (0, r.jsx)(d.Ixi, {}), (0, r.jsx)(v.Z, {}), (0, r.jsx)(x.Z, {}), (0, r.jsx)(X, {}), (0, r.jsx)(Q, {})]
+                              }), (0, r.jsx)(f.Z, {}), (0, r.jsx)(I.Z, {}), (0, r.jsx)(_.Z, {}), (0, r.jsx)(d.nKe, {}), (0, r.jsx)(p.Z, {}), (0, r.jsx)(D.Ox, {}), (0, r.jsx)(w.Un, {}), (0, r.jsx)(L.ot, {}), (0, r.jsx)(d.Ixi, {}), (0, r.jsx)(v.Z, {}), (0, r.jsx)(x.Z, {}), (0, r.jsx)(X, {}), (0, r.jsx)(Q, {})]
                             })
                           })
                         })
                       })
-                    }), (0, r.jsx)(T.Z, {}), (0, r.jsx)(f.Z, {}), (0, r.jsx)(Z.Z, {}), (0, r.jsx)(V.Z, {}), (0, r.jsx)(R.Z, {
+                    }), (0, r.jsx)(T.Z, {}), (0, r.jsx)(Z.Z, {}), (0, r.jsx)(V.Z, {}), (0, r.jsx)(R.Z, {
                       mobile: u
                     })]
                   }), !1]

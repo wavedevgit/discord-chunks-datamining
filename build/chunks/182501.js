@@ -73,20 +73,18 @@ let a = (0, r.Z)({
       inExperiment: r
     } = a.getCurrentConfig({
       location: e
-    });
-    if (r) return {
-      enabled: t,
-      delayMs: n,
-      inExperiment: !0
-    };
-    let {
+    }), {
       enabled: i,
       delayMs: s,
       inExperiment: l
     } = o.getConfig({
       location: e
     });
-    return {
+    return r ? {
+      enabled: t,
+      delayMs: n,
+      inExperiment: !0
+    } : {
       enabled: i,
       delayMs: s,
       inExperiment: l

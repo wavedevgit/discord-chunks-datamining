@@ -13,6 +13,6 @@ function l(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
     l = !n && null != e && !i.O.has(e);
   r.useEffect(() => () => {
-    l && (a.Z.lastDCDismissed !== e || (0, o.Vc)(e)) && t(s.L.AUTO_DISMISS, !0)
+    l && (a.Z.lastDCDismissed !== e || (0, o.fn)(e)) && t(s.L.AUTO_DISMISS, !0)
   }, [l, t, e])
 }
