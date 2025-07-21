@@ -1,26 +1,26 @@
 /** Chunk was on 74673 **/
 e.d(n, {
-  Z: () => c
+  Z: () => r
 }), e(388685);
 var i = e(73800),
   a = e(881052);
 
-function c(t) {
+function r(t) {
   let {
     onSubmit: n,
     onClose: e
-  } = t, [c, r] = i.useState(!1), [o, s] = i.useState(null), l = i.useCallback(async () => {
-    if (!c) {
-      r(!0), s(null);
+  } = t, [r, c] = i.useState(!1), [o, s] = i.useState(null), l = i.useCallback(async () => {
+    if (!r) {
+      c(!0), s(null);
       try {
         await n(), e()
       } catch (t) {
-        s(new a.Hx(t).getAnyErrorMessage()), r(!1)
+        s(new a.Hx(t).getAnyErrorMessage()), c(!1)
       }
     }
-  }, [e, n, c]);
+  }, [e, n, r]);
   return {
-    submitting: c,
+    submitting: r,
     errorMessage: o,
     onSubmit: l
   }

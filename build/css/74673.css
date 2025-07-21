@@ -1,27 +1,17 @@
 /**
   Module ID: 74673
-  Original File Name: 485ca6cb16f4f64f
+  Original File Name: 914da5839aa292cb
 **/
-.container_b8ffc2 {
-    min-height: auto
-}
-
 .content_b8ffc2 {
     padding: 16px
 }
 
-.descriptionText_b8ffc2 {
-    margin-top: 8px
-}
-
-.manualApprovalDescriptionText_b8ffc2 {
-    margin-bottom: 14px;
+.actionText_b8ffc2,.descriptionText_b8ffc2 {
     margin-top: 8px
 }
 
 .actionText_b8ffc2 {
-    cursor: pointer;
-    margin-top: 8px
+    cursor: pointer
 }
 
-/*# sourceMappingURL=485ca6cb16f4f64f.css.map*/
+/*# sourceMappingURL=914da5839aa292cb.css.map*/

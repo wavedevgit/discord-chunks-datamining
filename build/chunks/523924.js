@@ -1,84 +1,84 @@
-/** Chunk was on 3378 **/
-e.d(t, {
-  Z: () => u
+/** Chunk was on 1272 **/
+n.d(t, {
+  Z: () => d
 });
-var i = e(255367),
-  l = e(73800),
-  a = e(442837),
-  o = e(481060),
-  r = e(693546),
-  s = e(937111),
-  c = e(388032),
-  d = e(568410);
-let u = n => {
+var r = n(255367),
+  i = n(73800),
+  l = n(442837),
+  a = n(481060),
+  o = n(693546),
+  s = n(937111),
+  c = n(388032),
+  u = n(568410);
+let d = e => {
   let {
     headerId: t,
-    reapplyText: e,
-    onReapply: u,
-    confirmText: m,
-    onWithdrawApplication: f,
-    rejectionReason: x = null,
-    guild: h = null
-  } = n, p = (0, a.e7)([s.Z], () => {
-    var n;
-    return s.Z.getCooldown(null != (n = null == h ? void 0 : h.id) ? n : "0")
+    reapplyText: n,
+    onReapply: d,
+    confirmText: p,
+    onWithdrawApplication: h,
+    rejectionReason: f = null,
+    guild: g = null
+  } = e, m = (0, l.e7)([s.Z], () => {
+    var e;
+    return s.Z.getCooldown(null != (e = null == g ? void 0 : g.id) ? e : "0")
   });
-  l.useEffect(() => {
-    null == p && null != h && r.Z.fetchJoinRequestCooldown(h.id)
-  }, [p, h]);
-  let g = (null != p ? p : 0) > 0,
-    j = g && null != p ? Math.ceil((1e3 * p - Date.now()) / 864e5) : 0;
-  return (0, i.jsxs)("div", {
-    className: d.confirmation,
-    children: [(0, i.jsx)("div", {
-      className: d.iconWrapper,
-      children: (0, i.jsx)(o.P$X, {
+  i.useEffect(() => {
+    null == m && null != g && o.Z.fetchJoinRequestCooldown(g.id)
+  }, [m, g]);
+  let b = (null != m ? m : 0) > 0,
+    _ = b && null != m ? Math.ceil((1e3 * m - Date.now()) / 864e5) : 0;
+  return (0, r.jsxs)("div", {
+    className: u.confirmation,
+    children: [(0, r.jsx)("div", {
+      className: u.iconWrapper,
+      children: (0, r.jsx)(a.P$X, {
         size: "md",
-        color: o.TVs.colors.INTERACTIVE_ACTIVE
+        color: a.TVs.colors.INTERACTIVE_ACTIVE
       })
-    }), (0, i.jsxs)("div", {
-      className: d.statusTextContainer,
-      children: [(0, i.jsx)(o.X6q, {
+    }), (0, r.jsxs)("div", {
+      className: u.statusTextContainer,
+      children: [(0, r.jsx)(a.X6q, {
         id: t,
         variant: "heading-lg/semibold",
         color: "header-primary",
-        children: (null == h ? void 0 : h.name) != null ? c.intl.formatToPlainString(c.t["P+/gzM"], {
-          guildName: h.name
+        children: (null == g ? void 0 : g.name) != null ? c.intl.formatToPlainString(c.t["P+/gzM"], {
+          guildName: g.name
         }) : c.intl.string(c.t.gBPcuL)
-      }), null != x && "" !== x ? (0, i.jsxs)(o.Text, {
+      }), null != f && "" !== f ? (0, r.jsxs)(a.Text, {
         variant: "text-md/medium",
         color: "header-secondary",
-        children: [(0, i.jsx)("span", {
-          className: d.rejectionReasonLabel,
+        children: [(0, r.jsx)("span", {
+          className: u.rejectionReasonLabel,
           children: c.intl.string(c.t.cf1psb)
-        }), (0, i.jsx)("span", {
-          children: x
+        }), (0, r.jsx)("span", {
+          children: f
         })]
       }) : null]
-    }), (0, i.jsxs)("div", {
-      className: d.confirmationButtonRow,
-      children: [(0, i.jsx)(o.DY3, {
-        className: d.confirmationButton,
-        text: g ? c.intl.formatToPlainString(c.t.A0f0Pz, {
-          days: j
+    }), (0, r.jsxs)("div", {
+      className: u.confirmationButtonRow,
+      children: [(0, r.jsx)(a.DY3, {
+        className: u.confirmationButton,
+        text: b ? c.intl.formatToPlainString(c.t.A0f0Pz, {
+          days: _
         }) : null,
-        "aria-label": g ? c.intl.formatToPlainString(c.t.A0f0Pz, {
-          days: j
+        "aria-label": b ? c.intl.formatToPlainString(c.t.A0f0Pz, {
+          days: _
         }) : void 0,
-        children: (0, i.jsx)(o.zxk, {
-          onClick: u,
+        children: (0, r.jsx)(a.zxk, {
+          onClick: d,
           variant: "secondary",
           size: "md",
-          loading: null == p,
-          disabled: g,
-          text: e,
+          loading: null == m,
+          disabled: b,
+          text: n,
           fullWidth: !0
         })
-      }), (0, i.jsx)(o.zxk, {
-        onClick: f,
+      }), (0, r.jsx)(a.zxk, {
+        onClick: h,
         variant: "critical-primary",
         size: "md",
-        text: m,
+        text: p,
         fullWidth: !0
       })]
     })]

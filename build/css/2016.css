@@ -1,6 +1,6 @@
 /**
   Module ID: 2016
-  Original File Name: bf0f433588fea055
+  Original File Name: e8104a4826043ed7
 **/
 @keyframes placeholderPulse_c8ffbb {
     0% {
@@ -8670,11 +8670,6 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     width: 256px
 }
 
-.modal__8177b {
-    margin-bottom: -120px;
-    min-height: 200px
-}
-
 .animationContainer__8177b {
     position: relative;
     width: 100%
@@ -8691,33 +8686,16 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     margin: 0
 }
 
-.container__8177b {
-    margin: 32px 0 24px
-}
-
-.container__8177b,.manaContainer__8177b {
+.manaContainer__8177b {
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 28px;
     text-align: center
 }
 
-.manaContainer__8177b {
-    margin-top: 28px
-}
-
-.buttonContainer__8177b {
-    display: flex;
-    margin-top: 24px;
-    width: 100%
-}
-
 @media (max-height:500px) {
-    .modal__8177b {
-        margin-bottom: 0
-    }
-
     .animationContainer__8177b {
         display: none
     }
@@ -13015,4 +12993,4 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     position: relative
 }
 
-/*# sourceMappingURL=bf0f433588fea055.css.map*/
+/*# sourceMappingURL=e8104a4826043ed7.css.map*/
