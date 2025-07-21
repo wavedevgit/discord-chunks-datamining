@@ -333,44 +333,38 @@ class ea extends s.PureComponent {
         })
       }) : null,
       u = this.getIconComponent(),
-      p = e => {
-        let {
-          id: t
-        } = e;
-        return (0, i.jsx)(m.oil, {
-          value: this.state.name,
-          onChange: this.handleNameChange,
-          id: t,
-          inputRef: this.setInputRef,
-          maxLength: 100,
-          placeholder: function(e) {
-            switch (e) {
-              case Y.d4z.GUILD_CATEGORY:
-                return $.intl.string($.t.eTVbt7);
-              case Y.d4z.GUILD_FORUM:
-                return $.intl.string($.t["5z1Xam"]);
-              default:
-                return $.intl.string($.t["bw/b8P"])
-            }
-          }(o),
-          className: l()(ee.inputWrapper, {
-            [ee.inputWrapperWithEmojiPicker]: r
-          }),
-          inputClassName: d ? void 0 : l()(ee.inputInner, {
-            [ee.inputInnerWithEmojiPicker]: r
-          }),
-          prefixElement: d ? null : (0, i.jsx)(u, {
-            className: ee.inputPrefix,
-            size: "xs",
-            color: "currentColor"
-          }),
-          autoFocus: !0,
-          focusProps: {
-            offset: {
-              right: r ? -30 : 0
-            }
+      p = {
+        value: this.state.name,
+        onChange: this.handleNameChange,
+        inputRef: this.setInputRef,
+        maxLength: 100,
+        placeholder: function(e) {
+          switch (e) {
+            case Y.d4z.GUILD_CATEGORY:
+              return $.intl.string($.t.eTVbt7);
+            case Y.d4z.GUILD_FORUM:
+              return $.intl.string($.t["5z1Xam"]);
+            default:
+              return $.intl.string($.t["bw/b8P"])
           }
-        })
+        }(o),
+        className: l()(ee.inputWrapper, {
+          [ee.inputWrapperWithEmojiPicker]: r
+        }),
+        inputClassName: d ? void 0 : l()(ee.inputInner, {
+          [ee.inputInnerWithEmojiPicker]: r
+        }),
+        prefixElement: d ? null : (0, i.jsx)(u, {
+          className: ee.inputPrefix,
+          size: "xs",
+          color: "currentColor"
+        }),
+        autoFocus: !0,
+        focusProps: {
+          offset: {
+            right: r ? -30 : 0
+          }
+        }
       };
     return (0, i.jsx)(_.FG, {
       children: t => (0, i.jsxs)(m.xJW, {
@@ -381,16 +375,16 @@ class ea extends s.PureComponent {
         className: ee.name,
         children: [r ? (0, i.jsxs)("div", {
           className: ee.nameInput,
-          children: [(0, i.jsx)(p, {
+          children: [(0, i.jsx)(m.oil, en({
             id: t
-          }), (0, i.jsx)(el, {
+          }, p), t), (0, i.jsx)(el, {
             onEmojiPicked: this.insertEmojiAtPosition,
             isPrivateChannel: this.state.isPrivate,
             guildId: s
           })]
-        }) : (0, i.jsx)(p, {
+        }) : (0, i.jsx)(m.oil, en({
           id: t
-        }), e, h]
+        }, p), t), e, h]
       })
     })
   }
