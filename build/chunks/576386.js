@@ -15,27 +15,29 @@ var n = r(255367),
   p = r(388032),
   v = r(908998);
 let b = e => {
+    var t;
     let {
-      nameplate: t,
-      isPurchased: r = !1,
-      isSelected: l = !1,
-      onClick: p
-    } = e, b = (0, o.e7)([d.default], () => d.default.getCurrentUser()), [f, m] = (0, i.useState)(!1);
-    return null == b ? null : (0, n.jsxs)(s.P3F, {
+      nameplate: r,
+      isPurchased: l = !1,
+      isSelected: b = !1,
+      onClick: f
+    } = e, m = (0, o.e7)([d.default], () => d.default.getCurrentUser()), [h, y] = (0, i.useState)(!1);
+    return null == m ? null : (0, n.jsxs)(s.P3F, {
+      "aria-label": null != (t = r.label) ? t : p.intl.string(p.t.x5CoXV),
       className: v.nameplateItem,
-      onClick: p,
-      onMouseEnter: () => m(!0),
-      onMouseLeave: () => m(!1),
+      onClick: f,
+      onMouseEnter: () => y(!0),
+      onMouseLeave: () => y(!1),
       children: [(0, n.jsx)(c.Z, {
-        nameplate: t,
-        user: b,
+        nameplate: r,
+        user: m,
         showPlaceholderUser: !0,
-        isHighlighted: f
+        isHighlighted: h
       }), (0, n.jsx)("div", {
         className: a()(v.nameplateItemOverlay, {
-          [v.selected]: l
+          [v.selected]: b
         })
-      }), !r && (0, n.jsx)(s.G2e, {
+      }), !l && (0, n.jsx)(s.G2e, {
         icon: () => (0, n.jsx)(s.mBM, {
           size: "xxs",
           color: "currentColor"

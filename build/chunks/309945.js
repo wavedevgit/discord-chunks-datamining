@@ -1,6 +1,6 @@
 /** Chunk was on 44799 **/
 n.d(t, {
-  Z: () => _
+  Z: () => f
 });
 var r = n(255367),
   o = n(73800),
@@ -13,26 +13,26 @@ var r = n(255367),
   d = n(905128),
   p = n(93841),
   m = n(388032),
-  f = n(45355);
+  _ = n(45355);
 
-function _(e) {
+function f(e) {
   let {
     guildId: t,
     powerups: n
-  } = e, _ = (0, l.e7)([d.Z], () => {
+  } = e, f = (0, l.e7)([d.Z], () => {
     var e, n;
     return null != (n = null == (e = d.Z.getStateForGuild(t)) ? void 0 : e.appliedBoosts) ? n : 0
-  }), x = (0, l.e7)([u.Z], () => u.Z.getAppliedGuildBoostsForGuild(t), [t]), v = _ - o.useMemo(() => {
+  }), x = (0, l.e7)([u.Z], () => u.Z.getAppliedGuildBoostsForGuild(t), [t]), v = f - o.useMemo(() => {
     var e, t, n;
     return null != (n = null == x || null == (t = x.filter) || null == (e = t.call(x, e => !e.ended && null == e.endsAt)) ? void 0 : e.length) ? n : 0
   }, [x]);
   if (v <= 0) return null;
   let g = n.some(e => e.skuId === i.A);
   return (0, r.jsxs)("div", {
-    className: f.container,
+    className: _.container,
     children: [(0, r.jsx)(s.P4T, {
       color: c.Z.colors.TEXT_FEEDBACK_WARNING,
-      className: f.icon
+      className: _.icon
     }), (0, r.jsx)(a.xv, {
       variant: "text-md/semibold",
       color: "text-feedback-warning",

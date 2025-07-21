@@ -13,8 +13,8 @@ var r = n(255367),
   d = n(905128),
   p = n(639777),
   m = n(27237),
-  f = n(51859),
-  _ = n(184478),
+  _ = n(51859),
+  f = n(184478),
   x = n(877362),
   v = n(460608),
   g = n(279604),
@@ -104,7 +104,7 @@ function N(e) {
                       nextPowerup: n[o + 1]
                     }, "powerup-".concat(e.skuId));
                   case j.Us.PERK:
-                    return (0, r.jsx)(f.Z, {
+                    return (0, r.jsx)(_.Z, {
                       guildId: t,
                       powerup: e
                     }, "powerup-".concat(e.skuId))
@@ -115,7 +115,7 @@ function N(e) {
         })
       }), (0, r.jsxs)("div", {
         className: C.sidebarContainer,
-        children: [N ? (0, r.jsx)(_.Z, {
+        children: [N ? (0, r.jsx)(f.Z, {
           guildId: t
         }) : (0, r.jsx)(x.Z, {
           guildId: t

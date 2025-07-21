@@ -1,6 +1,6 @@
 /**
   Module ID: 88388
-  Original File Name: b856d21568c1304d
+  Original File Name: 07f647a55f47b8b1
 **/
 .editCard_a25a68 {
     background-color: var(--background-surface-high);
@@ -2979,11 +2979,6 @@
 
 .disabled__99486 .uploaderIcon__99486 {
     display: none
-}
-
-.iconUploaderContainer_b4d1aa {
-    display: flex;
-    gap: 16px
 }
 
 .previewContainer_b4d1aa {
@@ -12400,4 +12395,4 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     width: 8px
 }
 
-/*# sourceMappingURL=b856d21568c1304d.css.map*/
+/*# sourceMappingURL=07f647a55f47b8b1.css.map*/

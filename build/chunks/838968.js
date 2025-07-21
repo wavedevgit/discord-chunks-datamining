@@ -1,7 +1,7 @@
 /** Chunk was on 44799 **/
 n.d(t, {
   Z: () => x,
-  u: () => _
+  u: () => f
 });
 var r = n(255367);
 n(73800);
@@ -16,7 +16,7 @@ var o = n(120356),
   p = n(388032),
   m = n(117172);
 
-function f(e) {
+function _(e) {
   let {
     dateString: t
   } = e;
@@ -35,17 +35,17 @@ function f(e) {
   })
 }
 
-function _(e) {
+function f(e) {
   var t, n, o;
   let {
     guildId: l,
     powerup: c,
-    className: _
+    className: f
   } = e, x = (0, a.Z)(l, c), v = x.type !== u.A3.LEVEL_ACTIVATED, g = v ? m.labelContainer : m.labelContainerEnd, b = x.type === u.A3.LEVEL_ACTIVATED ? p.intl.formatToPlainString(d.default.WRRYUV, {
     perkName: null != (o = null == (t = x.sourcePowerup) ? void 0 : t.title) ? o : p.intl.string(p.t.BfF6EB)
   }) : x.type === u.A3.POWERUP_ACTIVATED ? p.intl.string(d.default.FFLkm5) : void 0;
   return (0, r.jsxs)("div", {
-    className: i()(g, _),
+    className: i()(g, f),
     children: [v && (0, r.jsxs)("div", {
       className: i()(m.inline, m.inlineBoost),
       children: [(0, r.jsx)(s.$Eu, {
@@ -60,7 +60,7 @@ function _(e) {
           required: c.cost
         })
       })]
-    }), (null == (n = x.sourceEntitlement) ? void 0 : n.ends_at) != null ? (0, r.jsx)(f, {
+    }), (null == (n = x.sourceEntitlement) ? void 0 : n.ends_at) != null ? (0, r.jsx)(_, {
       dateString: x.sourceEntitlement.ends_at
     }) : null != b ? (0, r.jsxs)("div", {
       className: m.inline,
@@ -84,7 +84,7 @@ function x(e) {
     className: l,
     onHover: d,
     children: p
-  } = e, f = (0, a.Z)(n, o), _ = f.type !== u.A3.INACTIVE, x = (null == (t = f.sourceEntitlement) ? void 0 : t.ends_at) != null, {
+  } = e, _ = (0, a.Z)(n, o), f = _.type !== u.A3.INACTIVE, x = (null == (t = _.sourceEntitlement) ? void 0 : t.ends_at) != null, {
     onShowMore: v
   } = (0, c.ZP)(n, o);
   return (0, r.jsx)("div", {
@@ -95,7 +95,7 @@ function x(e) {
       onMouseOver: () => null == d ? void 0 : d(!0),
       onMouseLeave: () => null == d ? void 0 : d(!1),
       className: i()(m.container, {
-        [m.active]: _,
+        [m.active]: f,
         [m.warning]: x
       }, l),
       children: p

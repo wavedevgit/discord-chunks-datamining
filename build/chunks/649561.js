@@ -173,7 +173,7 @@ class k extends r.PureComponent {
         pid: i
       }]
     }), setImmediate(() => window.addEventListener("click", N));
-    let o = (0, E.V)(e, f.gl.Hook, {
+    let o = (0, E.V6)(e, f.gl.Hook, {
       extra: t
     });
     p.Z.track(j.rMx.APP_CRASHED, {

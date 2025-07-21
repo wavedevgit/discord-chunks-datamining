@@ -1,6 +1,6 @@
 /** Chunk was on 44799 **/
 n.d(t, {
-  Z: () => f
+  Z: () => _
 });
 var r = n(255367);
 n(73800);
@@ -15,12 +15,12 @@ var o = n(793030),
   p = n(388032),
   m = n(326319);
 
-function f(e) {
+function _(e) {
   let {
     boost: t
   } = e, n = new Date(c.default.extractTimestamp(t.id)), {
-    username: f,
-    roleColor: _,
+    username: _,
+    roleColor: f,
     roleColorStrings: x
   } = (0, i.cj)([l.ZP], () => {
     var e, n;
@@ -49,8 +49,8 @@ function f(e) {
       children: [(0, r.jsx)(s.PUh, {
         className: m.boostMessageUser,
         variant: "text-md/semibold",
-        name: f,
-        color: null != _ ? _ : void 0,
+        name: _,
+        color: null != f ? f : void 0,
         roleColors: v
       }), (0, r.jsx)(o.xv, {
         variant: "text-md/medium",
