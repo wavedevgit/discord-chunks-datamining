@@ -1,6 +1,6 @@
 /**
   Module ID: 95336
-  Original File Name: 3322487d0d4260af
+  Original File Name: 8a7aa4f8bc890d8c
 **/
 .pro__30cbe {
     text-transform: uppercase
@@ -563,53 +563,44 @@
     top: 6px
 }
 
-.searchAnswer_bd8186 {
-    border-radius: 0 2px 2px 0;
-    margin-left: -2px;
-    margin-right: 2px;
-    padding: 0 2px
-}
-
-.searchFilter_bd8186 {
-    border-radius: 2px 0 0 2px;
-    font-weight: var(--font-weight-semibold);
-    padding: 0 2px
-}
-
-.searchFilter_bd8186+.searchFilter_bd8186 {
-    margin-left: unset;
-    padding-left: 2px
-}
-
-.searchFilter_bd8186:first-child {
-    margin-left: unset
-}
-
-.searchAnswer_bd8186,.searchFilter_bd8186 {
+.searchToken_bd8186 {
     background-color: var(--background-surface-highest);
     border: 1px solid var(--border-faint);
     border-radius: var(--radius-xs);
     color: var(--header-primary);
     display: inline-block;
     height: 22px;
-    margin-left: unset;
+    margin-left: unset
+}
+
+.searchAnswer_bd8186 {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    margin-left: -2px;
+    margin-right: 2px
+}
+
+.searchAnswer_bd8186,.searchFilter_bd8186 {
     padding: 1px var(--space-4)
 }
 
-.searchAnswer_bd8186:first-child,.searchFilter_bd8186:first-child {
+.searchFilter_bd8186 {
     border-bottom-right-radius: 0;
-    border-top-right-radius: 0
+    border-top-right-radius: 0;
+    font-weight: var(--font-weight-semibold)
 }
 
-.searchAnswer_bd8186:nth-child(2),.searchFilter_bd8186:nth-child(2) {
-    border-bottom-left-radius: 0;
-    border-left: none;
-    border-top-left-radius: 0;
-    padding-left: 0
+.searchFilter_bd8186+.searchFilter_bd8186 {
+    padding-left: 2px
 }
 
-.searchFilter_bd8186:has(+.searchAnswer_bd8186),.searchFilter_bd8186:has(+.searchFilter_bd8186) {
+.searchFilter_bd8186:has(+.searchAnswer_bd8186) {
     border-right: none
+}
+
+.searchFilter_bd8186+.searchAnswer_bd8186 {
+    border-left: none;
+    padding-left: 0
 }
 
 .container__55c99 {
@@ -1739,4 +1730,4 @@
     margin-right: 8px
 }
 
-/*# sourceMappingURL=3322487d0d4260af.css.map*/
+/*# sourceMappingURL=8a7aa4f8bc890d8c.css.map*/
