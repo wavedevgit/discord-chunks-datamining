@@ -10,8 +10,8 @@ var r = n(120356),
   l = n.n(r),
   o = n(708816),
   a = n(368072),
-  s = n(777207),
-  u = n(692547),
+  u = n(777207),
+  s = n(692547),
   c = n(330711),
   d = n(812743),
   p = n(820468);
@@ -28,7 +28,7 @@ function S(t) {
     benefitItems: b,
     benefitsSummary: g,
     subtitle: _,
-    maxBenefits: P = f
+    maxBenefits: y = f
   } = t;
   return (0, i.jsx)(o.tE, {
     children: (0, i.jsxs)("div", {
@@ -44,7 +44,7 @@ function S(t) {
         className: d.card,
         children: (0, i.jsxs)("div", {
           className: d.body,
-          children: [(0, i.jsx)(s.x, {
+          children: [(0, i.jsx)(u.x, {
             tag: "div",
             variant: "heading-lg/semibold",
             children: O
@@ -54,17 +54,16 @@ function S(t) {
               src: n.toString(),
               alt: ""
             }) : (0, i.jsx)(a.V, {
-              color: u.Z.colors.ICON_PRIMARY,
+              color: s.Z.colors.ICON_PRIMARY,
               size: "custom",
               height: 48,
               width: 48
             })
           }), null != r ? r({
-            className: d.purchaseBtn,
             onClick: t => {
               t.stopPropagation(), null == S || S()
             }
-          }) : null, _, null != e && "" !== e && (0, i.jsx)(s.x, {
+          }) : null, _, null != e && "" !== e && (0, i.jsx)(u.x, {
             className: d.description,
             color: "text-default",
             variant: "text-sm/medium",
@@ -73,7 +72,7 @@ function S(t) {
         })
       }), null != g && (0, i.jsx)("div", {
         className: d.benefitsSummary,
-        children: (0, i.jsx)(s.x, {
+        children: (0, i.jsx)(u.x, {
           color: "interactive-normal",
           variant: "text-sm/medium",
           children: c.Z.Messages.STOREFRONT_BENEFITS_SUMMARY.format({
@@ -86,16 +85,16 @@ function S(t) {
           className: d.benefitsContainer,
           children: (0, i.jsxs)("div", {
             className: d.benefitsList,
-            children: [(0, i.jsx)(s.x, {
+            children: [(0, i.jsx)(u.x, {
               color: "header-secondary",
               variant: "eyebrow",
               children: c.Z.Messages.STOREFRONT_BENEFITS_TITLE
-            }), b.length > P ? (0, i.jsxs)(i.Fragment, {
-              children: [b.slice(0, P), (0, i.jsx)(s.x, {
+            }), b.length > y ? (0, i.jsxs)(i.Fragment, {
+              children: [b.slice(0, y), (0, i.jsx)(u.x, {
                 variant: "text-md/semibold",
                 color: "text-secondary",
                 children: c.Z.Messages.STOREFRONT_MORE_BENEFITS.format({
-                  count: b.length - P
+                  count: b.length - y
                 })
               })]
             }) : b]
@@ -118,11 +117,11 @@ function O(t) {
       className: d.cardBenefitIcon,
       children: e
     }), (0, i.jsxs)("div", {
-      children: [null != n && (0, i.jsx)(s.x, {
+      children: [null != n && (0, i.jsx)(u.x, {
         variant: "text-md/semibold",
         color: "header-primary",
         children: n
-      }), (0, i.jsx)(s.x, {
+      }), (0, i.jsx)(u.x, {
         variant: "text-sm/normal",
         children: r
       })]

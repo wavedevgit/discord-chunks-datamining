@@ -1,18 +1,18 @@
 /** Chunk was on 74891 **/
 n.d(e, {
-  Z: () => u
+  Z: () => s
 }), n(388685);
 var i = n(255367),
   r = n(73800),
   l = n(120356),
   o = n.n(l),
   a = n(349361),
-  s = n(806726);
+  u = n(806726);
 
-function u(t) {
+function s(t) {
   var e, n, {
       children: l,
-      gradientClassName: u
+      gradientClassName: s
     } = t,
     c = function(t, e) {
       if (null == t) return {};
@@ -71,7 +71,7 @@ function u(t) {
     })(Object(n)).forEach(function(t) {
       Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
     }), e)), (0, i.jsx)("div", {
-      className: o()(s.containerScrollGradient, u),
+      className: o()(u.containerScrollGradient, s),
       "data-shown": p
     })]
   })

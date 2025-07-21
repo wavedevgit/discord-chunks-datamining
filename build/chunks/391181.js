@@ -1,4 +1,4 @@
-/** Chunk was on 61216 **/
+/** Chunk was on 51308 **/
 n.d(t, {
   Z: () => x,
   m: () => E
@@ -126,8 +126,8 @@ function E(e) {
     onUnpublishProduct: m,
     onDeleteProduct: E,
     onCopyProductLink: x,
-    onTestDownload: C,
-    onReportProduct: v
+    onTestDownload: v,
+    onReportProduct: C
   } = e, y = i.useRef(null);
   return (0, r.jsx)("div", {
     onClick: e => {
@@ -152,8 +152,8 @@ function E(e) {
         onUnpublishProduct: m,
         onDeleteProduct: E,
         onCopyLink: x,
-        onTestDownload: C,
-        onReportProduct: v
+        onTestDownload: v,
+        onReportProduct: C
       })),
       children: (e, n) => {
         let {
@@ -186,8 +186,8 @@ function x(e) {
     onEditProduct: i,
     onUnpublishProduct: l,
     onDeleteProduct: x,
-    onCopyProductLink: C,
-    onTestDownload: v,
+    onCopyProductLink: v,
+    onTestDownload: C,
     disabled: y = !1
   } = e, O = (0, c.U)(t, 600), j = null !== t.price_tier ? (0, u.T4)(t.price_tier, m.pK.USD) : void 0, I = (0, d.C)(t);
   return (0, r.jsxs)(o.kL8, {
@@ -210,8 +210,8 @@ function x(e) {
         onEditProduct: i,
         onUnpublishProduct: l,
         onDeleteProduct: x,
-        onCopyLink: C,
-        onTestDownload: v,
+        onCopyLink: v,
+        onTestDownload: C,
         onReportProduct: () => {}
       }))))
     },
@@ -263,8 +263,8 @@ function x(e) {
         onEditProduct: i,
         onUnpublishProduct: l,
         onDeleteProduct: x,
-        onCopyProductLink: C,
-        onTestDownload: v,
+        onCopyProductLink: v,
+        onTestDownload: C,
         onReportProduct: () => {}
       })]
     })]

@@ -1,4 +1,4 @@
-/** Chunk was on 61216 **/
+/** Chunk was on 51308 **/
 n.d(t, {
   Z: () => k
 }), n(415506), n(388685);
@@ -18,8 +18,8 @@ var r, i, l = n(255367),
   b = n(417363),
   E = n(941128),
   x = n(780570),
-  C = n(358085),
-  v = n(814225),
+  v = n(358085),
+  C = n(814225),
   y = n(346329),
   O = n(701560),
   j = n(981631),
@@ -111,7 +111,7 @@ class R extends(r = a.Component) {
     if (e.isHidden()) return "add_to_library";
     if (e.isPreorder()) return "preorder_wait";
     let r = null != n ? w[n] : null;
-    return null != r ? r : null != t && t.type === j.vxO.UNINSTALLING ? "uninstalling" : (0, C.isWeb)() ? "play" : "unsupported_os"
+    return null != r ? r : null != t && t.type === j.vxO.UNINSTALLING ? "uninstalling" : (0, v.isWeb)() ? "play" : "unsupported_os"
   }
   renderPlayButton() {
     let {
@@ -208,7 +208,7 @@ class R extends(r = a.Component) {
     } = this.props, n = this.getButtonState();
     if ("play" === n) return this.renderPlayButton();
     if ("preorder_wait" === n) return this.renderDisabledButton(n, function(e) {
-      let t = v.en(e.sku);
+      let t = C.en(e.sku);
       return null != t ? I.intl.formatToPlainString(I.t.Aqe2ZG, {
         date: t
       }) : null

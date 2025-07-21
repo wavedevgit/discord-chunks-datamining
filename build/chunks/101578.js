@@ -1,4 +1,4 @@
-/** Chunk was on 61216 **/
+/** Chunk was on 51308 **/
 n.d(t, {
   Z: () => E
 });
@@ -38,15 +38,15 @@ let E = e => {
       return (null == (e = d.activity) ? void 0 : e.type) === g.mFx.JOIN_REQUEST && (t = t === E && n.isPrivate() ? n.getRecipientId() : E), f.Z.getApplicationActivity(t, d.application.id)
     }
   }, [d, n, E]), {
-    enabled: C
+    enabled: v
   } = a.m.useExperiment({
     location: "ActivityInviteEmbed"
   }, {
     autoTrackExposure: !0
-  }), v = b(d), {
+  }), C = b(d), {
     data: y
-  } = (0, u.IX)(null == (t = d.application) ? void 0 : t.id), O = null != y ? y : v;
-  return null != O && C ? (0, r.jsx)(o.c, {
+  } = (0, u.IX)(null == (t = d.application) ? void 0 : t.id), O = null != y ? y : C;
+  return null != O && v ? (0, r.jsx)(o.c, {
     app: O,
     channel: n,
     message: d,

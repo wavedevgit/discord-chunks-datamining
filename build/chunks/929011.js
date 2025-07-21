@@ -8,8 +8,8 @@ var i = n(255367),
   l = n(724870),
   o = n(87484),
   a = n(509545),
-  s = n(78839),
-  u = n(55563),
+  u = n(78839),
+  s = n(55563),
   c = n(270144),
   d = n(171246),
   p = n(689011),
@@ -25,7 +25,7 @@ async function S(t) {
     disableGuildSelector: g = !1
   } = t, {
     promise: _,
-    resolve: P
+    resolve: y
   } = Promise.withResolvers();
   if ((0, d.KK)(o.flags) && !1 === g) {
     let {
@@ -45,18 +45,18 @@ async function S(t) {
       })
     }), O = await t
   }
-  let y = u.Z.getParentSKU(o.id),
-    m = null;
-  return null != y && ([m] = (0, c.E8)({
-    groupSku: y,
-    SubscriptionStore: s.Z,
+  let P = s.Z.getParentSKU(o.id),
+    v = null;
+  return null != P && ([v] = (0, c.E8)({
+    groupSku: P,
+    SubscriptionStore: u.Z,
     SubscriptionPlanStore: a.Z,
     mapSubscriptionItems: c.ec,
     guildId: O
   })), (0, l.h)({
     initialPlanId: e,
     skuId: o.id,
-    activeSubscription: m,
+    activeSubscription: v,
     applicationId: o.applicationId,
     planGroup: S,
     guildId: O,
@@ -67,7 +67,7 @@ async function S(t) {
     analyticsSubscriptionType: f.NYc.APPLICATION,
     analyticsLocations: I,
     analyticsLocation: b,
-    onComplete: P,
+    onComplete: y,
     showBenefitsFirst: !1,
     forcesTransitionToGuild: !1
   }), _

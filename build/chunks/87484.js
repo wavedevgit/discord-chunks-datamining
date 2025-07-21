@@ -8,8 +8,8 @@ var r = n(772848),
   l = n(481060),
   o = n(159351),
   a = n(667),
-  s = n(626135),
-  u = n(981631);
+  u = n(626135),
+  s = n(981631);
 
 function c(t) {
   let {
@@ -87,9 +87,9 @@ function c(t) {
   }, {
     contextKey: O,
     onCloseCallback: () => {
-      I || s.default.track(u.rMx.PAYMENT_FLOW_CANCELED, {
+      I || u.default.track(s.rMx.PAYMENT_FLOW_CANCELED, {
         load_id: b,
-        payment_type: u.Zuq[u.GZQ.ONE_TIME],
+        payment_type: s.Zuq[s.GZQ.ONE_TIME],
         location: S,
         is_gift: !1,
         sku_id: c,
@@ -97,6 +97,6 @@ function c(t) {
         location_stack: f
       }), (0, o.fw)(), (0, a.p)(), null == d || d(I)
     },
-    onCloseRequest: u.dG4
+    onCloseRequest: s.dG4
   })
 }

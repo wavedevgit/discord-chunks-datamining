@@ -1,4 +1,4 @@
-/** Chunk was on 61216 **/
+/** Chunk was on 51308 **/
 n.d(t, {
   Z: () => ee
 }), n(642613);
@@ -20,8 +20,8 @@ var r = n(255367),
   b = n(226192),
   E = n(36459),
   x = n(336197),
-  C = n(359110),
-  v = n(726033),
+  v = n(359110),
+  C = n(726033),
   y = n(496675),
   O = n(594174),
   j = n(5192),
@@ -119,7 +119,7 @@ function W(e, t) {
 
 function K(e, t, n) {
   return i.useMemo(() => {
-    if (null != t && null != n) return i => (0, r.jsx)(v.Z, V(H({}, i), {
+    if (null != t && null != n) return i => (0, r.jsx)(C.Z, V(H({}, i), {
       user: t,
       currentUser: n,
       guildId: e.guild_id,
@@ -293,7 +293,7 @@ function ee(e) {
     message: o,
     channel: s
   } = e, {
-    avatarSrc: v,
+    avatarSrc: C,
     eventHandlers: {
       onMouseEnter: O,
       onMouseLeave: j
@@ -328,10 +328,10 @@ function ee(e) {
       guildId: ee.guild_id,
       channelId: e,
       messageId: o.id
-    }), (0, C.Kh)(e))
+    }), (0, v.Kh)(e))
   }, [o, ee]), eb = i.useCallback(() => {
     (0, E.Xx)(o.id, s, h.d.DELETE_USER_MESSAGE)
-  }, [s, o.id]), eE = (0, F.L9)(Number(ea)), ex = null != eo, eC = q && null != el && (null == es || !es.actions.hasOwnProperty(h.d.DELETE_USER_MESSAGE)), ev = o.embeds.length > 0 ? null == (t = o.embeds[0].fields.find(e => "channel_id" === e.rawName)) ? void 0 : t.rawValue : null, ey = null != ev;
+  }, [s, o.id]), eE = (0, F.L9)(Number(ea)), ex = null != eo, ev = q && null != el && (null == es || !es.actions.hasOwnProperty(h.d.DELETE_USER_MESSAGE)), eC = o.embeds.length > 0 ? null == (t = o.embeds[0].fields.find(e => "channel_id" === e.rawName)) ? void 0 : t.rawValue : null, ey = null != eC;
   return (0, r.jsx)("div", {
     onMouseEnter: O,
     onMouseLeave: j,
@@ -340,7 +340,7 @@ function ee(e) {
         [G.compact]: l
       }),
       iconNode: l ? null : (0, r.jsx)(k.S, {
-        src: v
+        src: C
       }),
       iconContainerClassName: G.iconContainer,
       compact: l,
@@ -480,7 +480,7 @@ function ee(e) {
               }), (0, r.jsx)("div", {
                 className: G.footerAction,
                 children: (0, r.jsx)(p.Avr, {
-                  onClick: () => e_(ev),
+                  onClick: () => e_(eC),
                   variant: "primary",
                   size: "sm",
                   textVariant: "text-xs/normal",
@@ -498,7 +498,7 @@ function ee(e) {
                 textVariant: "text-xs/normal",
                 text: B.intl.string(B.t["94JbMz"])
               })
-            }), eC ? (0, r.jsxs)(r.Fragment, {
+            }), ev ? (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsx)("div", {
                 className: G.dot
               }), (0, r.jsx)("div", {

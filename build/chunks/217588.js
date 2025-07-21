@@ -1,4 +1,4 @@
-/** Chunk was on 61216 **/
+/** Chunk was on 51308 **/
 n.d(t, {
   Z: () => V
 }), n(953529), n(388685);
@@ -20,8 +20,8 @@ var r = n(255367),
   b = n(524444),
   E = n(98278),
   x = n(767714),
-  C = n(430824),
-  v = n(594174),
+  v = n(430824),
+  C = n(594174),
   y = n(626135),
   O = n(74538),
   j = n(453070),
@@ -188,9 +188,9 @@ let B = e => {
       } = e,
       [j, I] = i.useState(null),
       [S, N] = i.useState(!1),
-      D = v.default.getCurrentUser(),
+      D = C.default.getCurrentUser(),
       M = O.ZP.canUseCustomStickersEverywhere(D),
-      B = (0, o.e7)([C.Z], () => C.Z.getGuild(n.guild_id)),
+      B = (0, o.e7)([v.Z], () => v.Z.getGuild(n.guild_id)),
       G = null != B,
       [H, V] = i.useState(!1),
       [z, W] = i.useState(null),
