@@ -3,9 +3,9 @@ t.d(n, {
   S: () => g
 });
 var i = t(255367),
-  l = t(73800),
-  r = t(512722),
-  s = t.n(r),
+  r = t(73800),
+  l = t(512722),
+  s = t.n(l),
   a = t(442837),
   o = t(481060),
   C = t(204418),
@@ -26,15 +26,15 @@ function g(e) {
     handleStepChange: n,
     handleClose: t
   } = e, {
-    selectedPlan: r,
+    selectedPlan: l,
     selectedSkuId: g,
     step: y
   } = (0, h.JL)(), {
     setSelectedGiftingPromotionReward: E,
     selectedGiftingPromotionReward: S,
     claimableRewards: v
-  } = (0, x.wD)(), Z = (0, a.e7)([u.default], () => u.default.getCurrentUser());
-  l.useEffect(() => {
+  } = (0, x.wD)(), b = (0, a.e7)([u.default], () => u.default.getCurrentUser());
+  r.useEffect(() => {
     let e = null != v && v.length > 0;
     null == S && e && E(v[0])
   }, [v, S, E]);
@@ -48,31 +48,31 @@ function g(e) {
       className: L.giftSelectItem
     }, n)
   };
-  s()(null != r, "Expected plan to selected"), s()(null != g, "Expected selectedSkuId"), s()(null != y, "Step should be set");
-  let b = null == v ? void 0 : v.map(e => P(e)),
-    I = null != S && null != Z ? (0, i.jsx)(C.Z, {
+  s()(null != l, "Expected plan to selected"), s()(null != g, "Expected selectedSkuId"), s()(null != y, "Step should be set");
+  let Z = null == v ? void 0 : v.map(e => P(e)),
+    O = null != S && null != b ? (0, i.jsx)(C.Z, {
       avatarDecorationOverride: {
         asset: S.assetId
       },
-      user: Z,
+      user: b,
       guildId: null,
       avatarSize: o.EFr.SIZE_152
     }) : null,
-    O = (0, i.jsx)(j.O3, {
+    I = (0, i.jsx)(j.O3, {
       children: (0, i.jsx)(o.mzw, {
         className: L.modalFooter,
         children: (0, i.jsx)(c.y, {
           onStepChange: e => {
-            null != Z && null != S && p.default.track(m.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
-              user_id: Z.id,
+            null != b && null != S && p.default.track(m.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
+              user_id: b.id,
               reward_sku_id: S.skuId
             }), n(e)
           },
           onBackClick: () => n(f.h8.PLAN_SELECT),
           shouldRenderUpdatedPaymentModal: !0,
           showBackButton: !0,
-          planOptions: [r.id],
-          selectedPlanId: r.id
+          planOptions: [l.id],
+          selectedPlanId: l.id
         })
       })
     }),
@@ -99,14 +99,14 @@ function g(e) {
         padding: {
           top: 24
         },
-        children: [I, (0, i.jsx)(o.Kqy, {
+        children: [O, (0, i.jsx)(o.Kqy, {
           gap: 8,
           padding: {
             top: 12
           },
-          children: b
+          children: Z
         })]
       })
-    }), O]
+    }), I]
   })
 }

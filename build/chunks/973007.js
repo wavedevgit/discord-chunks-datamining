@@ -4,8 +4,8 @@ t.d(n, {
 });
 var i = t(255367);
 t(73800);
-var l = t(481060),
-  r = t(744129),
+var r = t(481060),
+  l = t(744129),
   s = t(823188),
   a = t(474936),
   o = t(894838);
@@ -18,12 +18,12 @@ function C(e) {
     showPromotionalGiftBanner: C,
     enablePremiumBrandRefresh: d
   } = e;
-  return d ? (0, i.jsx)(l.P3F, {
+  return d ? (0, i.jsx)(r.P3F, {
     onClick: n,
     style: {
       cursor: "pointer"
     },
-    children: (0, i.jsx)(r.IL, {
+    children: (0, i.jsx)(l.IL, {
       ctaButton: null,
       showPromotionalGiftBanner: C,
       showYearlyPrice: !0,
@@ -31,7 +31,7 @@ function C(e) {
       isModal: !0,
       priceOptions: a
     })
-  }) : (0, i.jsx)(l.P3F, {
+  }) : (0, i.jsx)(r.P3F, {
     onClick: n,
     style: {
       cursor: "pointer"
@@ -56,19 +56,19 @@ function d(e) {
     priceOptions: a,
     enablePremiumBrandRefresh: C
   } = e;
-  return C ? (0, i.jsx)(l.P3F, {
+  return C ? (0, i.jsx)(r.P3F, {
     onClick: n,
     style: {
       cursor: "pointer"
     },
-    children: (0, i.jsx)(r.UQ, {
+    children: (0, i.jsx)(l.UQ, {
       className: o.premiumBrandRefreshTier0Card,
       ctaButton: null,
       showYearlyPrice: !0,
       isGift: t,
       priceOptions: a
     })
-  }) : (0, i.jsx)(l.P3F, {
+  }) : (0, i.jsx)(r.P3F, {
     onClick: n,
     style: {
       cursor: "pointer"
@@ -87,21 +87,21 @@ let c = function(e) {
   let {
     onSelectSku: n,
     isGift: t,
-    priceOptions: l,
-    showPromotionalGiftBanner: r,
+    priceOptions: r,
+    showPromotionalGiftBanner: l,
     enablePremiumBrandRefresh: s
   } = e;
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(C, {
       onClick: () => n(a.Si.TIER_2),
       isGift: t,
-      priceOptions: l,
-      showPromotionalGiftBanner: r,
+      priceOptions: r,
+      showPromotionalGiftBanner: l,
       enablePremiumBrandRefresh: s
     }), (0, i.jsx)(d, {
       onClick: () => n(a.Si.TIER_0),
       isGift: t,
-      priceOptions: l,
+      priceOptions: r,
       enablePremiumBrandRefresh: s
     })]
   })

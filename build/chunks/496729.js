@@ -1,7 +1,7 @@
 /** Chunk was on 61636 **/
 n.d(t, {
   ZZ: () => _,
-  sT: () => d,
+  sT: () => u,
   v3: () => h
 });
 var i = n(255367),
@@ -12,7 +12,7 @@ var i = n(255367),
   a = n(592125),
   c = n(305587);
 
-function u(e) {
+function d(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -31,7 +31,7 @@ function u(e) {
   return e
 }
 
-function d(e) {
+function u(e) {
   let {
     channelId: t,
     location: n
@@ -47,7 +47,7 @@ function _() {
     let {
       default: e
     } = await Promise.all([n.e("60137"), n.e("37332")]).then(n.bind(n, 180970));
-    return t => (0, i.jsx)(e, u({}, t))
+    return t => (0, i.jsx)(e, d({}, t))
   })
 }
 
@@ -56,6 +56,6 @@ function h() {
     let {
       default: e
     } = await Promise.all([n.e("60137"), n.e("46355")]).then(n.bind(n, 746147));
-    return t => (0, i.jsx)(e, u({}, t))
+    return t => (0, i.jsx)(e, d({}, t))
   })
 }

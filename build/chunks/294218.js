@@ -9,8 +9,8 @@ var i = n(255367),
   s = n(91192),
   a = n(442837),
   c = n(518738),
-  u = n(628238),
-  d = n(869765),
+  d = n(628238),
+  u = n(869765),
   _ = n(592125),
   h = n(709054),
   E = n(786761),
@@ -88,16 +88,16 @@ let D = r.memo(function(e) {
       for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
     }
     return r
-  }(e, ["message", "compact", "className", "onContextMenu", "onClick", "hideSimpleEmbedContent", "channel", "isGroupStart", "animateAvatar", "subscribeToComponentDispatch", "renderThreadAccessory", "trackAnnouncementViews"]), V = r.type === A.uaV.POLL_RESULT || null != (t = e.disableInteraction) && t, G = r.isFirstMessageInForumPost(L), B = (0, u.A)((null != (n = r.editedTimestamp) ? n : r.timestamp).valueOf()), {
-    content: W,
-    hasSpoilerEmbeds: H
+  }(e, ["message", "compact", "className", "onContextMenu", "onClick", "hideSimpleEmbedContent", "channel", "isGroupStart", "animateAvatar", "subscribeToComponentDispatch", "renderThreadAccessory", "trackAnnouncementViews"]), V = r.type === A.uaV.POLL_RESULT || null != (t = e.disableInteraction) && t, G = r.isFirstMessageInForumPost(L), B = (0, d.A)((null != (n = r.editedTimestamp) ? n : r.timestamp).valueOf()), {
+    content: H,
+    hasSpoilerEmbeds: W
   } = (0, O.Z)(r, {
     hideSimpleEmbedContent: M,
     allowList: G || B,
     allowHeading: G || B,
     allowLinks: !0,
     previewLinkTarget: !0
-  }), z = r.type === A.uaV.REPLY ? r.messageReference : void 0, Y = (0, a.e7)([d.Z], () => d.Z.getMessageByReference(z)), K = (0, s.JA)(r.id), q = (0, I.ZP)(r), X = (0, a.e7)([_.Z], () => r.hasFlag(A.iLy.HAS_THREAD) && _.Z.getChannel(h.default.castMessageIdAsChannelId(r.id))), Q = (0, c.p9)({
+  }), z = r.type === A.uaV.REPLY ? r.messageReference : void 0, Y = (0, a.e7)([u.Z], () => u.Z.getMessageByReference(z)), K = (0, s.JA)(r.id), q = (0, I.ZP)(r), X = (0, a.e7)([_.Z], () => r.hasFlag(A.iLy.HAS_THREAD) && _.Z.getChannel(h.default.castMessageIdAsChannelId(r.id))), Q = (0, c.p9)({
     guildId: L.guild_id,
     roleId: q.iconRoleId
   }), J = (0, T.Z)({
@@ -119,8 +119,8 @@ let D = r.memo(function(e) {
       author: q,
       roleIcon: Q
     })),
-    childrenAccessories: e.hideAccessories ? void 0 : (0, g.Q)(e, H),
-    childrenMessageContent: (0, S.Z)(e, W),
+    childrenAccessories: e.hideAccessories ? void 0 : (0, g.Q)(e, W),
+    childrenMessageContent: (0, S.Z)(e, H),
     childrenSystemMessage: (0, N.Z)(b(P({}, e), {
       disableInteraction: V
     })),

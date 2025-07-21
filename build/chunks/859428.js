@@ -9,8 +9,8 @@ var i = n(255367),
   s = n(442837),
   a = n(755721),
   c = n(481060),
-  u = n(749210),
-  d = n(703656),
+  d = n(749210),
+  u = n(703656),
   _ = n(430824),
   h = n(914010),
   E = n(900849),
@@ -26,7 +26,7 @@ let T = 12633 == n.j ? () => {
   let T = async () => {
     l(!0);
     try {
-      E.mT(t.id), await u.Z.joinGuild(t.id, {
+      E.mT(t.id), await d.Z.joinGuild(t.id, {
         source: I.vtS.NOTICE_BAR
       })
     } catch (e) {
@@ -42,7 +42,7 @@ let T = 12633 == n.j ? () => {
       className: o()(C.button, C.back),
       innerClassName: C.iconButton,
       onClick: () => {
-        (0, d.s1)().goBack()
+        (0, u.s1)().goBack()
       },
       children: [(0, i.jsx)(c.whL, {
         size: "xs",

@@ -9,8 +9,8 @@ var i = n(255367),
   s = n(704215),
   a = n(481060),
   c = n(230711),
-  u = n(2052),
-  d = n(906732),
+  d = n(2052),
+  u = n(906732),
   _ = n(963249),
   h = n(163684),
   E = n(518638),
@@ -37,9 +37,9 @@ let m = e => {
     disable: m
   }), {
     location: P
-  } = (0, u.O)(), {
+  } = (0, d.O)(), {
     analyticsLocations: b
-  } = (0, d.ZP)(), D = r.useCallback(() => {
+  } = (0, u.ZP)(), D = r.useCallback(() => {
     var e, t;
     (0, _.Z)({
       subscriptionTier: O.ZP.getSkuIdForPremiumType(f.p9.TIER_2),

@@ -4,7 +4,7 @@ n.d(t, {
   Nz: () => _,
   QQ: () => E,
   QY: () => O,
-  Vj: () => d,
+  Vj: () => u,
   Vs: () => S,
   h7: () => g,
   j8: () => I,
@@ -12,7 +12,7 @@ n.d(t, {
   qt: () => p,
   u$: () => C,
   yC: () => c,
-  zH: () => u
+  zH: () => d
 });
 var i = n(570140),
   r = n(768119),
@@ -61,7 +61,7 @@ function c(e, t, n, r) {
   })
 }
 
-function u(e) {
+function d(e) {
   switch (e) {
     case o.QIO.MOST_RELEVANT:
       return {
@@ -79,13 +79,13 @@ function u(e) {
   }
 }
 
-function d(e) {
+function u(e) {
   return null == e.sort_by || null == e.sort_order ? o.QIO.NEWEST : "relevance" === e.sort_by ? o.QIO.MOST_RELEVANT : "asc" === e.sort_order ? o.QIO.OLDEST : o.QIO.NEWEST
 }
 
 function _(e, t, n) {
   let i = r.Z.getQuery(e);
-  return c(e, a(s({}, i, u(t)), {
+  return c(e, a(s({}, i, d(t)), {
     offset: 0
   }), n)
 }
@@ -93,12 +93,12 @@ function _(e, t, n) {
 function h(e, t, n) {
   var i = e,
     l = t * o.vpv,
-    u = n;
-  let d = r.Z.getQuery(i),
+    d = n;
+  let u = r.Z.getQuery(i),
     _ = r.Z.getTotalResults(i);
-  return l < 0 || l > _ ? void 0 : c(i, a(s({}, d), {
+  return l < 0 || l > _ ? void 0 : c(i, a(s({}, u), {
     offset: l
-  }), u)
+  }), d)
 }
 
 function E(e) {

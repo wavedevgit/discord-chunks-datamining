@@ -4,8 +4,8 @@ t.d(n, {
 });
 var i = t(255367);
 t(73800);
-var l = t(442837),
-  r = t(755721),
+var r = t(442837),
+  l = t(755721),
   s = t(481060),
   a = t(607070),
   o = t(906732),
@@ -23,7 +23,7 @@ function j(e) {
     onClose: n,
     selectedPromotionalDecoPurchaseRecord: t,
     selectedGiftingPromotionReward: j
-  } = e, m = (0, l.e7)([p.default], () => p.default.getCurrentUser()), _ = (0, l.e7)([a.Z], () => a.Z.useReducedMotion), {
+  } = e, m = (0, r.e7)([p.default], () => p.default.getCurrentUser()), _ = (0, r.e7)([a.Z], () => a.Z.useReducedMotion), {
     analyticsLocations: L
   } = (0, o.ZP)(), g = s.EFr.SIZE_32, y = (0, C.Z)(null == j ? void 0 : j.assetId, g, !_), E = (0, u.Z)(), S = null == E ? void 0 : E.giftPurchaseConfirmation;
   return null == t || null == S ? null : (0, i.jsx)(x.O3, {
@@ -36,7 +36,7 @@ function j(e) {
           size: g,
           src: null == m ? void 0 : m.getAvatarURL(void 0, (0, s.pxk)(g), !_),
           avatarDecoration: y
-        }), (0, i.jsx)(r.zx, {
+        }), (0, i.jsx)(l.zx, {
           onClick: () => {
             n(), (0, d.Z)({
               product: t,

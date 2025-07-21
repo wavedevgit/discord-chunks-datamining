@@ -1,7 +1,7 @@
 /** Chunk was on 61636 **/
 let i;
 n.d(t, {
-  Z: () => u
+  Z: () => d
 });
 var r, l = n(442837),
   o = n(570140);
@@ -30,7 +30,7 @@ class c extends(r = l.ZP.DeviceSettingsStore) {
   }
 }
 s(c, "displayName", "ApplicationSubscriptionChannelNoticeStore"), s(c, "persistKey", "ApplicationSubscriptionChannelNoticeStore");
-let u = new c(o.Z, {
+let d = new c(o.Z, {
   APPLICATION_SUBSCRIPTIONS_CHANNEL_NOTICE_DISMISSED: function(e) {
     let {
       guildId: t

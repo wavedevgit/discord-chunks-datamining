@@ -10,8 +10,8 @@ var i = n(255367),
   s = n(399606),
   a = n(704215),
   c = n(367907),
-  u = n(266454),
-  d = n(584825),
+  d = n(266454),
+  u = n(584825),
   _ = n(994592),
   h = n(160404),
   E = n(703656),
@@ -37,7 +37,7 @@ function A(e) {
     children: n,
     initialTab: l,
     guildId: o
-  } = e, m = (0, s.e7)([p.Z], () => p.Z.getGuild(o)), A = (0, s.e7)([h.Z], () => h.Z.isViewingServerShop(o)), y = (0, T.g)(m, "guild_shop_page"), P = (0, O.RF)(o, "guild_shop_page"), b = (null == m ? void 0 : m.features.has(N.oNc.PRODUCTS_AVAILABLE_FOR_PURCHASE)) === !0, D = (0, _.mY)(null == m ? void 0 : m.id), v = null == (t = (0, d.YB)(o)) ? void 0 : t.server_shop_tab_order, U = [], M = g.y.GUILD_SHOP_FULL_PREVIEW;
+  } = e, m = (0, s.e7)([p.Z], () => p.Z.getGuild(o)), A = (0, s.e7)([h.Z], () => h.Z.isViewingServerShop(o)), y = (0, T.g)(m, "guild_shop_page"), P = (0, O.RF)(o, "guild_shop_page"), b = (null == m ? void 0 : m.features.has(N.oNc.PRODUCTS_AVAILABLE_FOR_PURCHASE)) === !0, D = (0, _.mY)(null == m ? void 0 : m.id), v = null == (t = (0, u.YB)(o)) ? void 0 : t.server_shop_tab_order, U = [], M = g.y.GUILD_SHOP_FULL_PREVIEW;
   A || b && D ? (U.push(v === S.a3.PRODUCTS_FIRST ? g.y.GUILD_PRODUCTS : g.y.GUILD_ROLE_SUBSCRIPTIONS), U.push(v === S.a3.PRODUCTS_FIRST ? g.y.GUILD_ROLE_SUBSCRIPTIONS : g.y.GUILD_PRODUCTS), M = U[0]) : b && !D ? (U.push(g.y.GUILD_PRODUCTS), M = g.y.GUILD_PRODUCTS) : !b && D && (U.push(g.y.GUILD_ROLE_SUBSCRIPTIONS), M = g.y.GUILD_ROLE_SUBSCRIPTIONS, y && U.push(g.y.GUILD_PRODUCTS_PREVIEW)), l = null != l ? l : M;
   let [L, Z] = r.useState(l), k = y && !(D && P) || L === g.y.GUILD_PRODUCTS_PREVIEW;
   return r.useEffect(() => {
@@ -49,7 +49,7 @@ function A(e) {
       categoryTabs: U,
       isPhantomPreview: k,
       handlePreviewDismiss: e => {
-        (0, u.Q3)(a.z.SERVER_SHOP_PHANTOM_PREVIEW);
+        (0, d.Q3)(a.z.SERVER_SHOP_PHANTOM_PREVIEW);
         let t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},

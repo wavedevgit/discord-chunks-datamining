@@ -2,7 +2,7 @@
 n.d(t, {
   Hr: () => s,
   P4: () => c,
-  TR: () => u,
+  TR: () => d,
   mz: () => l,
   tM: () => a,
   xv: () => o
@@ -12,4 +12,4 @@ var i, r, l = ((i = {}).GET_STARTED_CLICK = "get_started_click", i.DISMISS_FULL_
 let s = "hasClickedGuildShopProductPreviewTab",
   a = "hasClickedGuildShopChannelRow",
   c = "https://discord.com/servershop",
-  u = "1 GB"
+  d = "1 GB"

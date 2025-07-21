@@ -28,7 +28,7 @@ function c(e) {
   return e
 }
 
-function u(e, t) {
+function d(e, t) {
   if (null == e) return {};
   var n, i, r = function(e, t) {
     if (null == e) return {};
@@ -44,14 +44,14 @@ function u(e, t) {
   return r
 }
 
-function d(e) {
+function u(e) {
   var t, n, {
       alt: l
     } = e,
-    o = u(e, ["alt"]);
-  let [d, _] = r.useState(!0);
+    o = d(e, ["alt"]);
+  let [u, _] = r.useState(!0);
   return (0, i.jsxs)(i.Fragment, {
-    children: [d && (0, i.jsx)(s.$jN, {
+    children: [u && (0, i.jsx)(s.$jN, {
       type: s.$jN.Type.LOW_MOTION,
       className: a.loader
     }), (0, i.jsx)("img", (t = c({}, o), n = n = {
@@ -78,7 +78,7 @@ function _(e) {
     aspectRatio: l,
     className: s,
     imageChildClassName: _
-  } = e, h = u(e, ["src", "backgroundSrc", "alt", "aspectRatio", "className", "imageChildClassName"]);
+  } = e, h = d(e, ["src", "backgroundSrc", "alt", "aspectRatio", "className", "imageChildClassName"]);
   return (0, i.jsxs)("div", {
     className: o()(a.container, s),
     children: [(0, i.jsx)("img", {
@@ -92,7 +92,7 @@ function _(e) {
         aspectRatio: l
       },
       className: a.imageContainer,
-      children: (0, i.jsx)(d, c({
+      children: (0, i.jsx)(u, c({
         src: t,
         alt: r,
         className: o()(a.image, _)

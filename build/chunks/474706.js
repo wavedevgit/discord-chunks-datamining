@@ -3,8 +3,8 @@ t.d(n, {
   f: () => c
 });
 var i = t(255367),
-  l = t(442837),
-  r = t(481060),
+  r = t(442837),
+  l = t(481060),
   s = t(607070),
   a = t(987209),
   o = t(286961),
@@ -12,7 +12,7 @@ var i = t(255367),
   d = t(263562);
 
 function c() {
-  let e = (0, l.e7)([s.Z], () => s.Z.useReducedMotion),
+  let e = (0, r.e7)([s.Z], () => s.Z.useReducedMotion),
     {
       claimableRewards: n
     } = (0, a.wD)(),
@@ -25,15 +25,15 @@ function c() {
       children: (0, i.jsx)(C.Z, {
         maxRewardImageSrc: c.getImageUrl(!0, e),
         claimableRewards: n,
-        size: r.EFr.SIZE_48
+        size: l.EFr.SIZE_48
       })
     }), (0, i.jsxs)("div", {
       className: d.textSection,
-      children: [(0, i.jsx)(r.Text, {
+      children: [(0, i.jsx)(l.Text, {
         variant: "text-md/medium",
         color: "text-primary",
         children: c.heading()
-      }), null != c.subheading && n.length > 1 && (0, i.jsx)(r.Text, {
+      }), null != c.subheading && n.length > 1 && (0, i.jsx)(l.Text, {
         variant: "text-md/medium",
         className: d.subheading,
         children: c.subheading(n.length)
