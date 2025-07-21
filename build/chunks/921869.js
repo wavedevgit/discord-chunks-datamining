@@ -4,8 +4,8 @@ t.d(a, {
 });
 var r = t(255367),
   s = t(73800),
-  l = t(442837),
-  n = t(481060),
+  n = t(442837),
+  l = t(481060),
   i = t(600164),
   o = t(553795),
   c = t(424071),
@@ -24,29 +24,29 @@ function h(e) {
     body: j,
     learnMoreLink: p,
     valueProps: v
-  } = e, k = (0, l.e7)([o.Z], () => {
+  } = e, k = (0, n.e7)([o.Z], () => {
     let e = o.Z.getAccount(null, a);
     return (null == e ? void 0 : e.twoWayLink) === !1
   });
   return (0, r.jsxs)(c.Z, {
-    children: [(0, r.jsxs)(n.xBx, {
+    children: [(0, r.jsxs)(l.xBx, {
       direction: i.Z.Direction.VERTICAL,
       className: u.header,
       separator: !1,
       children: [(0, r.jsxs)("div", {
         className: u.illustration,
         children: [m, " "]
-      }), (0, r.jsx)(n.X6q, {
+      }), (0, r.jsx)(l.X6q, {
         className: u.title,
         variant: "heading-xl/extrabold",
         children: k && null != C ? C : N
-      }), (0, r.jsx)(n.olH, {
+      }), (0, r.jsx)(l.olH, {
         className: u.closeButton,
         onClick: h
       })]
-    }), (0, r.jsxs)(n.hzk, {
+    }), (0, r.jsxs)(l.hzk, {
       className: u.body,
-      children: [(0, r.jsx)(n.Text, {
+      children: [(0, r.jsx)(l.Text, {
         tag: "p",
         variant: "text-md/normal",
         color: "header-secondary",
@@ -56,20 +56,20 @@ function h(e) {
         children: v.map((e, a) => {
           let {
             label: t,
-            subLabel: l,
-            icon: n
+            subLabel: n,
+            icon: l
           } = e;
           return (0, r.jsxs)(s.Fragment, {
             children: [(0, r.jsx)(d.Z, {
               label: t,
-              subLabel: l,
-              icon: n
+              subLabel: n,
+              icon: l
             }, t), a !== v.length - 1 && (0, r.jsx)("div", {
               className: u.valuePropDivider
             })]
           }, t)
         })
-      }), null != p ? (0, r.jsx)(n.Text, {
+      }), null != p ? (0, r.jsx)(l.Text, {
         tag: "p",
         variant: "text-sm/normal",
         color: "header-secondary",
@@ -77,12 +77,12 @@ function h(e) {
           helpCenterLink: p
         })
       }) : null]
-    }), (0, r.jsx)(n.mzw, {
+    }), (0, r.jsx)(l.mzw, {
       className: u.footer,
       children: (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": !0,
         className: u.footerButton,
-        children: (0, r.jsx)(n.zxk, {
+        children: (0, r.jsx)(l.zxk, {
           variant: "primary",
           text: x.intl.string(x.t["3PatS0"]),
           onClick: t

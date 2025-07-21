@@ -77,8 +77,8 @@ function H() {
       image: W
     }),
     X = (0, l.e7)([R.Z], () => R.Z.showNotice()),
-    Q = L.dN.useSetting() && null != z ? E.ZP.parse(void 0, z).content : z,
-    J = w.ZP.canUsePremiumProfileCustomization(n),
+    J = L.dN.useSetting() && null != z ? E.ZP.parse(void 0, z).content : z,
+    Q = w.ZP.canUsePremiumProfileCustomization(n),
     {
       analyticsLocations: $,
       newestAnalyticsLocation: ee
@@ -103,7 +103,7 @@ function H() {
     location: "profile customization"
   }), ed = (0, A.q)({
     location: "UserSettingsProfileCustomization"
-  }), eu = !J, em = r.useRef(null);
+  }), eu = !Q, em = r.useRef(null);
   return s ? (0, i.jsx)(g.Z, {}) : (0, i.jsxs)(f.Gt, {
     value: $,
     children: [(0, i.jsx)(b.Z, {}), (0, i.jsx)(v.Z, {
@@ -127,9 +127,9 @@ function H() {
         return e
       }({
         user: n,
-        canUsePremiumCustomization: J,
+        canUsePremiumCustomization: Q,
         onUpsellClick: B.Z,
-        pendingBio: Q
+        pendingBio: J
       }, K), t = t = {
         pendingAvatar: q,
         showViewFullProfileButton: ed

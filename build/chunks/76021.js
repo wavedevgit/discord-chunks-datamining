@@ -58,7 +58,7 @@ function g(e, t, _) {
   if (d.isPlatformEmbedded)(0, i.ZDy)(async () => {
     let {
       default: t
-    } = await Promise.all([n.e("46746"), n.e("64796")]).then(n.bind(n, 60594));
+    } = await Promise.all([n.e("46746"), n.e("11224")]).then(n.bind(n, 60594));
     return n => (0, r.jsx)(t, m(p({}, n), {
       guildId: e,
       analyticsLocation: _

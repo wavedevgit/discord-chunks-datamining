@@ -1,6 +1,6 @@
 /**
   Module ID: 10667
-  Original File Name: 5c82cf3fb520126a
+  Original File Name: 84a826cac0f3683f
 **/
 .modal__4b2e7 {
     width: 408px
@@ -38,11 +38,16 @@
     margin-bottom: 16px
 }
 
-.body__4b2e7,.consentContent__4b2e7 {
+.consentContent__4b2e7 {
     padding-bottom: 16px
 }
 
+.consentHeader__4b2e7 {
+    padding: 32px 0
+}
+
 .body__4b2e7 {
+    padding-bottom: 16px;
     text-align: center
 }
 
@@ -106,4 +111,4 @@
     max-height: clamp(200px,calc(100vh - 80px),720px)
 }
 
-/*# sourceMappingURL=5c82cf3fb520126a.css.map*/
+/*# sourceMappingURL=84a826cac0f3683f.css.map*/

@@ -85,35 +85,35 @@ let Y = {
   K = (0, O.hQ)(),
   q = (0, O.hQ)(),
   X = (0, O.hQ)(),
-  Q = "1337",
-  J = e => {
+  J = "1337",
+  Q = e => {
     let t = 0;
     return [(0, v.e5)(W(z({}, (0, S.ZP)({
-      channelId: Q,
+      channelId: J,
       content: V.intl.string(V.t.oZxkEh)
     })), {
       state: B.yb.SENT,
       id: "".concat(t++)
     })), (0, v.e5)(W(z({}, (0, S.ZP)({
-      channelId: Q,
+      channelId: J,
       content: (0, d.wj)(e) ? V.intl.string(V.t["WGb/v7"]) : V.intl.string(V.t["62m4m5"])
     })), {
       state: B.yb.SENT,
       id: "".concat(t++)
     })), (0, v.e5)(W(z({}, (0, S.ZP)({
-      channelId: Q,
+      channelId: J,
       content: V.intl.string(V.t.a0Byo6)
     })), {
       state: B.yb.SENT,
       id: "".concat(t++)
     })), (0, v.e5)(W(z({}, (0, S.ZP)({
-      channelId: Q,
+      channelId: J,
       content: V.intl.string(V.t.bmwEWF)
     })), {
       state: B.yb.SENT,
       id: "".concat(t++)
     })), (0, v.e5)(W(z({}, (0, S.ZP)({
-      channelId: Q,
+      channelId: J,
       content: V.intl.string(V.t.hK9QW1)
     })), {
       state: B.yb.SENT,
@@ -436,7 +436,7 @@ class ee extends r.Component {
     (0, f.cq)(e)
   }
   constructor(...e) {
-    super(...e), H(this, "darkMessages", J(B.BRd.DARK)), H(this, "lightMessages", J(B.BRd.LIGHT)), H(this, "handleDisplayCompactAvatarsChanged", e => {
+    super(...e), H(this, "darkMessages", Q(B.BRd.DARK)), H(this, "lightMessages", Q(B.BRd.LIGHT)), H(this, "handleDisplayCompactAvatarsChanged", e => {
       m.ZP.updatedUnsyncedSettings({
         displayCompactAvatars: e
       })

@@ -1,37 +1,37 @@
 /** Chunk was on 49078 **/
-n.d(t, {
-  default: () => c
+r.d(t, {
+  default: () => o
 });
-var r = n(255367);
-n(73800);
-var i = n(435935),
-  s = n(481060),
-  a = n(115849),
-  l = n(388032),
-  u = n(334062);
+var n = r(255367);
+r(73800);
+var l = r(435935),
+  i = r(481060),
+  s = r(115849),
+  a = r(388032),
+  u = r(334062);
 
-function c(e) {
+function o(e) {
   let {
     transitionState: t,
-    onClose: n
+    onClose: r
   } = e;
-  return (0, r.jsxs)(s.Y0X, {
-    size: s.CgR.SMALL,
+  return (0, n.jsxs)(i.Y0X, {
+    size: i.CgR.SMALL,
     transitionState: t,
     parentComponent: "AddFriendModal",
-    children: [(0, r.jsxs)(s.xBx, {
-      justify: i.k.Justify.BETWEEN,
-      children: [(0, r.jsx)(s.X6q, {
+    children: [(0, n.jsxs)(i.xBx, {
+      justify: l.k.Justify.BETWEEN,
+      children: [(0, n.jsx)(i.X6q, {
         variant: "heading-lg/semibold",
-        children: l.intl.string(l.t.w5uwoK)
-      }), (0, r.jsx)(s.olH, {
-        onClick: n
+        children: a.intl.string(a.t.w5uwoK)
+      }), (0, n.jsx)(i.olH, {
+        onClick: r
       })]
-    }), (0, r.jsx)(s.hzk, {
-      children: (0, r.jsx)("div", {
+    }), (0, n.jsx)(i.hzk, {
+      children: (0, n.jsx)("div", {
         className: u.content,
-        children: (0, r.jsx)(a.Z, {
-          placeholder: l.intl.string(l.t.IEpCBQ)
+        children: (0, n.jsx)(s.Z, {
+          placeholder: a.intl.string(a.t.IEpCBQ)
         })
       })
     })]

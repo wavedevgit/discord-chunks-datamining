@@ -1,6 +1,6 @@
 /**
   Module ID: 51308
-  Original File Name: faf248df139c10f0
+  Original File Name: e2ab7230b7bfcf7c
 **/
 .wrapper__74bfa {
     align-items: center;
@@ -6268,24 +6268,8 @@ html .progress__61462 {
     align-items: center;
     display: flex;
     flex-direction: row;
-    gap: 5px;
+    gap: 8px;
     white-space: nowrap
-}
-
-.voteCount__4c520 {
-    padding: 2px 4px
-}
-
-.voteCountButton__4c520 {
-    color: var(--interactive-active);
-    cursor: pointer;
-    padding-left: 0;
-    padding-right: 0
-}
-
-.voteCountButton__4c520 :hover {
-    color: var(--interactive-active);
-    text-decoration: underline
 }
 
 .answerSelectionIcon__4c520 {
@@ -10160,4 +10144,4 @@ html .progress__61462 {
     background-image: url(/assets/abbc14555963e723.svg)
 }
 
-/*# sourceMappingURL=faf248df139c10f0.css.map*/
+/*# sourceMappingURL=e2ab7230b7bfcf7c.css.map*/

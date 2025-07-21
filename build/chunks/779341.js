@@ -1,17 +1,17 @@
 /** Chunk was on 4419 **/
-e.d(t, {
+t.d(e, {
   Z: () => l
 });
-var o = e(255367);
-e(73800);
-var i = e(585183),
-  r = e(728151),
-  s = e(981631);
+var o = t(255367);
+t(73800);
+var i = t(585183),
+  r = t(728151),
+  s = t(981631);
 
 function l(n) {
   let {
-    authToken: t,
-    onContinue: e,
+    authToken: e,
+    onContinue: t,
     onError: l,
     onClose: a
   } = n;
@@ -19,8 +19,8 @@ function l(n) {
     platformType: s.ABu.CRUNCHYROLL,
     clientId: r.sp,
     scopes: r.Ii,
-    authToken: t,
-    onContinue: e,
+    authToken: e,
+    onContinue: t,
     onError: l,
     onClose: a
   })

@@ -51,8 +51,8 @@ var i = n(255367),
   K = n(258609),
   q = n(53891),
   X = n(291533),
-  Q = n(427347),
-  J = n(50697),
+  J = n(427347),
+  Q = n(50697),
   $ = n(90042),
   ee = n(78933),
   et = n(850020),
@@ -105,8 +105,8 @@ var i = n(255367),
   eK = n(70956),
   eq = n(823379),
   eX = n(74538),
-  eQ = n(374023),
-  eJ = n(51144),
+  eJ = n(374023),
+  eQ = n(51144),
   e$ = n(998502),
   e0 = n(578817),
   e1 = n(870569),
@@ -346,7 +346,7 @@ class tl extends r.PureComponent {
       hoverText: a,
       forceHover: e,
       children: (0, i.jsx)(T.Z, {
-        text: eJ.ZP.humanizeStatus(s)
+        text: eQ.ZP.humanizeStatus(s)
       })
     }) : a
   }
@@ -462,7 +462,7 @@ class tl extends r.PureComponent {
             handleOpenAccountSettings: this.handleOpenAccountSettings,
             handleOpenSettingsContextMenu: this.handleOpenSettingsContextMenu
           }))]
-        }), (0, i.jsx)(Q.Z, {}), (0, i.jsx)(G.Z, {})]
+        }), (0, i.jsx)(J.Z, {}), (0, i.jsx)(G.Z, {})]
       })
     })
   }
@@ -574,7 +574,7 @@ class tl extends r.PureComponent {
         copiedStreak: n
       } = this.state;
       if (null == e) return;
-      (0, ez.JG)(eJ.ZP.getUserTag(e, {
+      (0, ez.JG)(eQ.ZP.getUserTag(e, {
         decoration: "never",
         identifiable: "always"
       })), eF.default.track(e8.rMx.TEXT_COPIED, {
@@ -627,7 +627,7 @@ class tl extends r.PureComponent {
           className: e9.panelTitleContainer,
           children: (0, i.jsx)(e6.Z, {
             children: (0, i.jsx)(Y.Z, {
-              userName: eJ.ZP.getName(t),
+              userName: eQ.ZP.getName(t),
               displayNameStyles: e,
               effectDisplayType: W.F.STATIC
             })
@@ -729,7 +729,7 @@ function tc() {
     c = (0, E.Z)({
       userId: n
     }),
-    m = eJ.ZP.useUserTag(t, {
+    m = eQ.ZP.useUserTag(t, {
       decoration: "never"
     }),
     p = (0, d.e7)([eU.Z], () => eU.Z.hidePersonalInformation),
@@ -754,7 +754,7 @@ function tc() {
     T = (0, d.e7)([ek.Z], () => ek.Z.getSpeakingWhileMuted()),
     N = (0, d.e7)([Z.Z], () => Z.Z.isFullscreenInContext()),
     A = (0, d.e7)([ew.Z], () => ew.Z.hasLayers()),
-    P = (0, f.s9z)(f.JQI) || A || eQ.s.isDisallowPopupsSet() || N,
+    P = (0, f.s9z)(f.JQI) || A || eJ.s.isDisallowPopupsSet() || N,
     w = (0, es.b)(),
     k = (0, d.e7)([K.Z], () => null != K.Z.getAwaitingRemoteSessionInfo()),
     L = (0, d.e7)([eB.Z], () => eB.Z.getGuildId()),
@@ -767,7 +767,7 @@ function tc() {
     } = (0, C.U)({
       location: "Account"
     }),
-    F = (0, J.m)(),
+    F = (0, Q.m)(),
     [H, z] = (0, X.G)(null != L ? L : null),
     {
       analyticsLocations: W
@@ -778,7 +778,7 @@ function tc() {
     q = (0, eo.Ws)({
       location: e7.dr.CONFLICT_CHECKS
     }),
-    Q = (0, d.e7)([em.Z, eV.default, eZ.Z], () => {
+    J = (0, d.e7)([em.Z, eV.default, eZ.Z], () => {
       let e, t = em.Z.getSyncingWith(),
         n = em.Z.getActivity(),
         i = [];
@@ -822,7 +822,7 @@ function tc() {
       nameplate: Y,
       selectedGuildId: L,
       isQuestBarEmpty: q,
-      isListenAlongVisible: Q
+      isListenAlongVisible: J
     })
   })
 }
@@ -918,7 +918,7 @@ function tu(e) {
       j(e, H)
     }, [j, H]),
     [q, X] = r.useState(!1),
-    Q = r.useCallback(e => {
+    J = r.useCallback(e => {
       var t;
       if ((0, c.k)(null == e ? void 0 : e.target, Node) && (null == (t = v.current) ? void 0 : t.contains(e.target))) return h.F;
       X(!1)
@@ -929,7 +929,7 @@ function tu(e) {
       X(!0)
     }
   });
-  let [J, $] = r.useState(!1);
+  let [Q, $] = r.useState(!1);
   r.useEffect(() => {
     let e;
     return w && D && (e = setTimeout(() => {
@@ -991,7 +991,7 @@ function tu(e) {
         useMouseEnter: !0,
         ignoreModalClicks: !0,
         onRequestOpen: ee,
-        onRequestClose: Q,
+        onRequestClose: J,
         shouldShow: q,
         renderPopout: e => {
           let {
@@ -1045,10 +1045,10 @@ function tu(e) {
                 let c = () => (0, i.jsx)(e1.Z, tt({
                   ref: S,
                   plated: null != E,
-                  tooltipForceOpen: J,
-                  tooltipColor: J ? f.FGA.GREEN : void 0,
-                  tooltipContentClassName: J ? e9.voiceFilterWarning : void 0,
-                  tooltipText: J ? (0, i.jsxs)(i.Fragment, {
+                  tooltipForceOpen: Q,
+                  tooltipColor: Q ? f.FGA.GREEN : void 0,
+                  tooltipContentClassName: Q ? e9.voiceFilterWarning : void 0,
+                  tooltipText: Q ? (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)("img", {
                       alt: null != Z ? e4.intl.string(Z.name) : "",
                       src: null == Z ? void 0 : Z.iconURL,

@@ -1,27 +1,27 @@
 /** Chunk was on 51343 **/
 t.d(a, {
-  Z: () => n
+  Z: () => l
 });
 var r = t(255367);
 t(73800);
 var s = t(481060),
-  l = t(475286);
-let n = function(e) {
+  n = t(475286);
+let l = function(e) {
   let {
     label: a,
     subLabel: t,
-    icon: n
+    icon: l
   } = e;
   return (0, r.jsxs)("div", {
-    className: l.valueProp,
+    className: n.valueProp,
     children: [(0, r.jsx)("div", {
-      className: l.valuePropIconContainer,
-      children: (0, r.jsx)(n, {
+      className: n.valuePropIconContainer,
+      children: (0, r.jsx)(l, {
         size: "md",
         color: "currentColor"
       })
     }), (0, r.jsxs)("div", {
-      className: l.valuePropText,
+      className: n.valuePropText,
       children: [(0, r.jsx)(s.Text, {
         variant: "text-sm/medium",
         color: "text-default",

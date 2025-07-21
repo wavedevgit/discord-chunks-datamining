@@ -1,16 +1,16 @@
 /** Chunk was on 4419 **/
-e.d(t, {
+t.d(e, {
   Z: () => C
 });
-var o = e(255367);
-e(73800);
-var i = e(481060),
-  r = e(63063),
-  s = e(376340),
-  l = e(981631),
-  a = e(388032),
-  c = e(28901),
-  d = e(38920);
+var o = t(255367);
+t(73800);
+var i = t(481060),
+  r = t(63063),
+  s = t(376340),
+  l = t(981631),
+  a = t(388032),
+  c = t(28901),
+  d = t(38920);
 
 function u() {
   return (0, o.jsx)("div", {
@@ -31,7 +31,7 @@ function u() {
 
 function C(n) {
   let {
-    onClose: t
+    onClose: e
   } = n;
   return (0, o.jsx)(s.L, {
     img: (0, o.jsx)("img", {
@@ -43,6 +43,6 @@ function C(n) {
     title: a.intl.string(a.t.Fnvxvr),
     body: a.intl.string(a.t.YwXcen),
     content: (0, o.jsx)(u, {}),
-    onClose: t
+    onClose: e
   })
 }

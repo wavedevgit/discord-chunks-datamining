@@ -59,9 +59,9 @@ let V = e => {
       [H, z] = r.useState(!1),
       [W, Y] = r.useState(!1),
       [K, q] = r.useState(!1),
-      [X, Q] = r.useState(!1),
-      J = (0, l.e7)([f.Z], () => f.Z.getPremiumTypeSubscription()),
-      $ = null != J ? (0, x.Af)(J) : null,
+      [X, J] = r.useState(!1),
+      Q = (0, l.e7)([f.Z], () => f.Z.getPremiumTypeSubscription()),
+      $ = null != Q ? (0, x.Af)(Q) : null,
       ee = null != $ ? x.ZP.getSkuIdForPlan($.planId) : null,
       et = null !== ee && ee !== w.Si.TIER_2 ? w.Si.TIER_2 : null,
       en = (0, O.n)(),
@@ -76,7 +76,7 @@ let V = e => {
         analyticsLocations: ed
       } = (0, p.ZP)(m.Z.PREMIUM_MARKETING);
     r.useEffect(() => {
-      Q(!0)
+      J(!0)
     }, []);
     let eu = (0, i.jsx)("div", {
       className: M.premiumTierCardsContainerSettings,
@@ -120,7 +120,7 @@ let V = e => {
       className: M.container,
       "data-cy": "tier-0-marketing-page",
       children: [(0, i.jsx)(y.Z, {
-        premiumSubscription: J,
+        premiumSubscription: Q,
         className: a()(M.existingSubscriberSpacing, {
           [M.zIndex1]: ea
         })
@@ -142,7 +142,7 @@ let V = e => {
               [M.settingsHeroNoBackground]: ea,
               [M.trialMarketingMargin]: ea,
               [M.settingsHeroBogoHeight]: el,
-              [M.noTopPaddingOverride]: null != J
+              [M.noTopPaddingOverride]: null != Q
             }),
             isDarkMode: F
           })

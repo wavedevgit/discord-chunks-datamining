@@ -43,9 +43,9 @@ let E = e => {
     location: "ActivityInviteEmbed"
   }, {
     autoTrackExposure: !0
-  }), C = b(d), {
-    data: y
-  } = (0, u.IX)(null == (t = d.application) ? void 0 : t.id), O = null != y ? y : C;
+  }), y = b(d), {
+    data: C
+  } = (0, u.IX)(null == (t = d.application) ? void 0 : t.id), O = null != C ? C : y;
   return null != O && v ? (0, r.jsx)(o.c, {
     app: O,
     channel: n,

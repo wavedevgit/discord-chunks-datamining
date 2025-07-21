@@ -1,12 +1,12 @@
 /** Chunk was on 51343 **/
 t.d(a, {
-  Z: () => l
+  Z: () => n
 });
 var r = t(255367);
 t(73800);
 var s = t(475286);
 
-function l(e) {
+function n(e) {
   let {
     children: a
   } = e;

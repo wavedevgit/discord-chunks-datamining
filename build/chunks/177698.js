@@ -81,35 +81,23 @@ let E = (0, h.Z)(e => {
       D = l => {
         let {
           clientId: o,
-          location: u
+          location: s
         } = l;
         if (null == o || o === n) {
-          if (R = !0, null == u) {
+          if (R = !0, null == s) {
             t(new p.Z({
               errorCode: g.lTL.OAUTH2_ERROR
             }, "OAuth2 Error: No location provided")), a.lock();
             return
           }
-          if (e(u), null == O || null == L) return void a.lock();
-          null == new URL(u).searchParams.get("error") ? (0, i.h7j)(e => (0, r.jsx)(s.j, _(b({}, e), {
-            footer: (0, r.jsx)(c.qN, {
-              application: L,
-              onClose: e.onClose
-            }),
-            children: (0, r.jsx)(c._0, {
-              application: L
-            })
-          })), {
+          if (e(s), null == O || null == L) return void a.lock();
+          null == new URL(s).searchParams.get("error") ? (0, i.h7j)(e => (0, r.jsx)(c.$0, b({
+            application: L
+          }, e)), {
             onCloseCallback: () => {
               a.lock()
             }
-          }, w) : (0, i.h7j)(e => (0, r.jsx)(s.j, _(b({}, e), {
-            footer: (0, r.jsx)(c.qN, {
-              application: L,
-              onClose: e.onClose
-            }),
-            children: (0, r.jsx)(c.Mx, {})
-          })), {
+          }, w) : (0, i.h7j)(e => (0, r.jsx)(c.ks, b({}, e)), {
             onCloseCallback: () => {
               a.lock()
             }
@@ -121,10 +109,12 @@ let E = (0, h.Z)(e => {
       } = function(e, t) {
         function n() {
           (0, i.Mr3)(e) && (0, i.h7j)(e => (0, r.jsx)(s.j, _(b({}, e), {
-            children: (0, r.jsx)(c.Lk, {
-              message: m.intl.string(m.t["4LKmNz"]),
-              onClose: e.onClose
-            })
+            title: m.intl.string(m.t.j2d6Ki),
+            subtitle: m.intl.string(m.t["4LKmNz"]),
+            actions: [{
+              text: m.intl.string(m.t.cpT0Cg),
+              onClick: e.onClose
+            }]
           })))
         }
         return null == t || t.addEventListener("abort", n), {

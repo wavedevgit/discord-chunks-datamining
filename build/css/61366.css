@@ -1,6 +1,6 @@
 /**
   Module ID: 61366
-  Original File Name: 5aa1551827884107
+  Original File Name: 4b8afb99742c77b2
 **/
 .modal__4b2e7 {
     width: 408px
@@ -38,11 +38,16 @@
     margin-bottom: 16px
 }
 
-.body__4b2e7,.consentContent__4b2e7 {
+.consentContent__4b2e7 {
     padding-bottom: 16px
 }
 
+.consentHeader__4b2e7 {
+    padding: 32px 0
+}
+
 .body__4b2e7 {
+    padding-bottom: 16px;
     text-align: center
 }
 
@@ -179,4 +184,4 @@
     width: 20px
 }
 
-/*# sourceMappingURL=5aa1551827884107.css.map*/
+/*# sourceMappingURL=4b8afb99742c77b2.css.map*/

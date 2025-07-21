@@ -22,8 +22,8 @@ var r = n(512722),
   E = n(869765),
   x = n(314897),
   v = n(592125),
-  C = n(703558),
-  y = n(607744),
+  y = n(703558),
+  C = n(607744),
   O = n(375954),
   j = n(117530),
   I = n(553803),
@@ -193,7 +193,7 @@ async function F(e) {
     title: A.intl.string(A.t.Qic1FB),
     body: A.intl.string(A.t["5sHHo6"])
   });
-  if (!y.Z.canChatInGuild(r.guild_id)) return void d.Z.show({
+  if (!C.Z.canChatInGuild(r.guild_id)) return void d.Z.show({
     title: A.intl.string(A.t.p245ws),
     body: A.intl.string(A.t["U/uodn"])
   });
@@ -431,7 +431,7 @@ let H = {
       duration: l,
       layout: a,
       onClose: s
-    } = e, c = j.Z.getUploads(t.id, C.d.Poll), u = r.map(e => {
+    } = e, c = j.Z.getUploads(t.id, y.d.Poll), u = r.map(e => {
       var t, n;
       let r = null == c ? void 0 : c.findIndex(t => t.id === e.localCreationAnswerId),
         i = {

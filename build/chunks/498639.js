@@ -97,9 +97,9 @@ let k = function() {
       analyticsLocations: Y
     } = (0, g.ZP)(p.Z.PAYMENT_FLOW_TEST_PAGE),
     [K, q] = r.useState(""),
-    [X, Q] = r.useState(A.lds),
+    [X, J] = r.useState(A.lds),
     {
-      balance: J,
+      balance: Q,
       isFetching: $,
       error: ee
     } = (0, T.A)(),
@@ -315,7 +315,7 @@ let k = function() {
               variant: "text-sm/normal",
               children: ["Error fetching Virtual Currency Balance: ", ee.message]
             }), (0, i.jsx)(N.A4, {
-              balance: null != J ? J : 0,
+              balance: null != Q ? Q : 0,
               balanceWidgetMode: N.b6.SELECTED
             })]
           })]
@@ -379,7 +379,7 @@ let k = function() {
           }), (0, i.jsx)(c.oil, {
             placeholder: "Sku Id",
             value: X,
-            onChange: e => Q(e)
+            onChange: e => J(e)
           }), (0, i.jsx)(c.zxk, {
             variant: "primary",
             text: "Open App Subs Modal for Activity",
