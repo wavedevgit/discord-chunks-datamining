@@ -1,12 +1,12 @@
 /**
   Module ID: 11509
-  Original File Name: a00cbab832217956
+  Original File Name: 2662a8cf18e816b8
 **/
 .menu__43313 {
     max-height: 70vh
 }
 
-.selector_e1dc93 {
+.selector__12eef {
     background: transparent;
     border: 1px solid var(--border-subtle);
     border-radius: 8px;
@@ -15,13 +15,13 @@
     padding: 0 10px
 }
 
-.selectedDevice_e1dc93 {
+.selectedDevice__12eef {
     display: flex;
     gap: 8px;
     min-width: 0
 }
 
-.selectedDevice_e1dc93 svg {
+.selectedDevice__12eef svg {
     flex-shrink: 0
 }
 
@@ -1735,4 +1735,4 @@ span.clanTag__07f91.isOverlay__07f91 {
     color: CanvasText
 }
 
-/*# sourceMappingURL=a00cbab832217956.css.map*/
+/*# sourceMappingURL=2662a8cf18e816b8.css.map*/

@@ -122,7 +122,7 @@ function M(e) {
     children: ["Application Id: ", t, " ", a ? w.intl.string(w.t["t5VZ8/"]) : null]
   })
 }
-let F = r.memo(function(e) {
+let U = r.memo(function(e) {
     let {
       trackedGame: t
     } = e, a = (0, o.e7)([h.ZP], () => h.ZP.getGameForPID(t.pid)), r = (0, o.e7)([y.Z], () => y.Z.getGameForPID(t.pid)), l = (0, o.e7)([h.ZP], () => null == a ? null : h.ZP.getGameOverlayStatus(a));
@@ -223,7 +223,7 @@ let F = r.memo(function(e) {
       })]
     })
   }),
-  U = r.memo(function(e) {
+  F = r.memo(function(e) {
     let {
       pid: t
     } = e, a = (0, o.cj)([C.default], () => C.default.getOverlayPIDStatuses()), r = (0, o.cj)([f.default], () => f.default.getTrackedGames()), l = (0, o.e7)([C.default], () => C.default.isInputLocked(t), [t]), i = (0, o.e7)([C.default], () => C.default.DEV_isInputLockedV3(t), [t]), s = (0, o.e7)([C.default], () => C.default.DEV_isInputLocked(t), [t]), c = (0, o.e7)([C.default], () => C.default.isReady(t), [t]);
@@ -480,7 +480,7 @@ let H = r.memo(function(e) {
         variant: "text-sm/normal",
         color: "text-default",
         children: "No tracked game times"
-      }), Object.values(a).map(e => (0, n.jsx)(U, {
+      }), Object.values(a).map(e => (0, n.jsx)(F, {
         pid: e.pid
       }, e.pid)), (0, n.jsxs)("div", {
         children: [(0, n.jsxs)(d.Text, {
@@ -670,7 +670,7 @@ let H = r.memo(function(e) {
               variant: "text-sm/normal",
               color: "text-default",
               children: "No running games"
-            }), Object.values(e).map(e => (0, n.jsx)(F, {
+            }), Object.values(e).map(e => (0, n.jsx)(U, {
               trackedGame: e
             }, e.pid))]
           })

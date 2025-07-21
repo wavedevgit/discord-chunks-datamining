@@ -1,6 +1,6 @@
 /** Chunk was on 46746 **/
 n.d(t, {
-  Z: () => S
+  Z: () => b
 }), n(361932), n(187205);
 var r = n(255367);
 n(73800);
@@ -22,7 +22,7 @@ var i = n(120356),
   v = n(347226),
   j = n(213510);
 
-function b(e) {
+function S(e) {
   let {
     guildId: t,
     onClick: n
@@ -50,7 +50,7 @@ function b(e) {
   }) : null
 }
 
-function S(e) {
+function b(e) {
   let {
     onSelectGuild: t
   } = e, n = (0, a.e7)([h.ZP], () => h.ZP.getGuildFolders());
@@ -61,7 +61,7 @@ function S(e) {
       let {
         guildIds: n
       } = e;
-      return n.map(e => (0, r.jsx)(b, {
+      return n.map(e => (0, r.jsx)(S, {
         guildId: e,
         onClick: t
       }, e))

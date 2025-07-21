@@ -34,7 +34,7 @@ function _(e) {
   return e
 }
 let p = {},
-  h = {};
+  h = new Map;
 
 function m(e, t) {
   var n;
@@ -46,16 +46,16 @@ function g(e, t) {
   if (null == n) return;
   let r = p[e];
   delete r[t], a().isEmpty(r) && delete p[e];
-  let i = h[n];
-  null != i && (i.delete(e), 0 === i.size && delete h[n])
+  let i = h.get(n);
+  null != i && (i.delete(e), 0 === i.size && h.delete(n))
 }
 
 function E(e, t, n) {
   var r;
   let i = p[e];
   if (null == i && (i = p[e] = {}), i[t] = n, c.Z.isBlocked(e) || c.Z.isIgnored(e)) return;
-  let a = null != (r = h[n]) ? r : new Set;
-  h[n] = a, a.add(e)
+  let a = null != (r = h.get(n)) ? r : new Set;
+  h.set(n, a), a.add(e)
 }
 
 function b(e, t, n, r) {
@@ -92,7 +92,7 @@ function O(e) {
     parties: t,
     userParties: n
   } = e;
-  h = {}, p = _({}, n), Object.keys(t).forEach(e => h[e] = new Set(t[e]))
+  h = new Map, p = _({}, n), Object.keys(t).forEach(e => h.set(e, new Set(t[e])))
 }
 
 function v(e) {
@@ -172,7 +172,7 @@ function R(e) {
   let n = p[t.id];
   if (null == n) return !1;
   for (let e of a().values(n)) {
-    let n = h[e];
+    let n = h.get(e);
     null != n && n.delete(t.id)
   }
 }
@@ -183,7 +183,7 @@ function P(e) {
   } = e, n = p[t.id];
   if (null == n) return !1;
   for (let e of a().values(n)) {
-    let n = h[e];
+    let n = h.get(e);
     null != n && n.add(t.id)
   }
 }
@@ -192,7 +192,7 @@ class w extends(r = o.ZP.Store) {
     this.syncWith([u.Z], C), this.waitFor(u.Z, c.Z)
   }
   getParty(e) {
-    return null != e && null != h[e] ? h[e] : null
+    return null != e && h.has(e) ? h.get(e) : null
   }
   getUserParties() {
     return p

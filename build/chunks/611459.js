@@ -17,7 +17,7 @@ function c(e) {
     source: c,
     look: u,
     color: d,
-    onAction: p
+    onAction: f
   } = e;
   return null != t && (0, l.Z)(t, o.xjy.PLAY) && (0, a.Z)(t) ? (0, r.jsx)(i.Z, {
     className: s.button,
@@ -28,6 +28,6 @@ function c(e) {
     activity: t,
     user: n,
     source: c,
-    onAction: p
+    onAction: f
   }, "play") : null
 }

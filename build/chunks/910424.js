@@ -1,6 +1,6 @@
 /** Chunk was on 11509 **/
 n.d(t, {
-  Z: () => y
+  Z: () => h
 }), n(388685);
 var r = n(255367);
 n(73800);
@@ -12,8 +12,8 @@ var i = n(442837),
   c = n(40851),
   u = n(102172),
   d = n(199902),
-  p = n(592125),
-  f = n(585483),
+  f = n(592125),
+  p = n(585483),
   m = n(915863),
   g = n(981631),
   _ = n(388032),
@@ -38,7 +38,7 @@ function b(e) {
   return e
 }
 
-function h(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -51,16 +51,16 @@ function h(e, t) {
   }), e
 }
 
-function y(e) {
+function h(e) {
   let {
     isCurrentUser: t,
     color: n,
-    look: y,
+    look: h,
     applicationStream: O,
     onAction: j
   } = e, {
-    activeStream: x,
-    watchingOtherStream: S
+    activeStream: S,
+    watchingOtherStream: x
   } = (0, i.cj)([d.Z], () => ({
     activeStream: d.Z.getActiveStreamForApplicationStream(O),
     watchingOtherStream: null != O && d.Z.getAllActiveStreamsForChannel(O.channelId).filter(e => {
@@ -69,21 +69,21 @@ function y(e) {
       } = e;
       return t !== O.ownerId
     }).length > 0
-  })), I = (0, i.e7)([p.Z], () => p.Z.getChannel(null == O ? void 0 : O.channelId)), [P, C] = (0, u.wq)(I), E = (0, c.Aq)(), w = null != x && null != O && x.state !== g.jm8.ENDED && x.ownerId === O.ownerId, T = e => {
-    null != O && (null == j || j(), o.default.selectVoiceChannel(O.channelId), w || (0, s.iV)(O, {
+  })), I = (0, i.e7)([f.Z], () => f.Z.getChannel(null == O ? void 0 : O.channelId)), [P, C] = (0, u.wq)(I), w = (0, c.Aq)(), E = null != S && null != O && S.state !== g.jm8.ENDED && S.ownerId === O.ownerId, T = e => {
+    null != O && (null == j || j(), o.default.selectVoiceChannel(O.channelId), E || (0, s.iV)(O, {
       forceMultiple: e
-    }), E.dispatch(g.CkL.POPOUT_CLOSE), f.S.dispatch(g.CkL.MODAL_CLOSE), a.Z.popAll())
+    }), w.dispatch(g.CkL.POPOUT_CLOSE), p.S.dispatch(g.CkL.MODAL_CLOSE), a.Z.popAll())
   };
   if (null == O) return null;
   let N = (0, u.P9)(C);
-  t ? N = _.intl.string(_.t.XvBdeX) : w && (N = _.intl.string(_.t.JH1SJy));
+  t ? N = _.intl.string(_.t.XvBdeX) : E && (N = _.intl.string(_.t.JH1SJy));
   let Z = {
     color: n,
-    look: y
+    look: h
   };
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(m.Z, h(b({
-      disabled: t || w || !P,
+    children: [(0, r.jsxs)(m.Z, y(b({
+      disabled: t || E || !P,
       onClick: () => T(!1)
     }, Z), {
       fullWidth: !0,
@@ -92,9 +92,9 @@ function y(e) {
         color: "currentColor",
         className: v.streamIcon
       }), N]
-    }), "play"), S && !w ? (0, r.jsx)(l.ua7, {
+    }), "play"), x && !E ? (0, r.jsx)(l.ua7, {
       text: _.intl.string(_.t.wCrzur),
-      children: e => (0, r.jsx)(m.Z, h(b(h(b({}, e), {
+      children: e => (0, r.jsx)(m.Z, y(b(y(b({}, e), {
         onClick: () => {
           var t;
           null == (t = e.onClick) || t.call(e), T(!0)

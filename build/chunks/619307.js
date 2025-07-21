@@ -350,11 +350,11 @@ function x(e) {
     var e, t;
     let n = null == (t = R.current) || null == (e = t.getBoundingClientRect()) ? void 0 : e.height;
     null != n && C(n)
-  }, [h]), i.useEffect(() => {
+  }, [h, _.length]), i.useEffect(() => {
     S()
   }, [S, N]);
-  let L = i.useCallback(e => {
-      n(e), c && a()
+  let L = i.useCallback((e, t) => {
+      n(e), c && !t && a()
     }, [a, n, c]),
     x = i.useMemo(() => _.map((e, t) => {
       var n;
@@ -365,6 +365,7 @@ function x(e) {
         onSelect: L,
         className: y,
         isDisabled: e.disabled,
+        preventCloseOnSelect: e.preventCloseOnSelect,
         serialize: E
       }, null != (n = e.key) ? n : t)
     }), [L, d, y, _, g, E]),
@@ -413,8 +414,9 @@ function M(e) {
     onSelect: a,
     isSelected: s,
     isDisabled: u,
-    serialize: d
-  } = e, f = (0, l.JA)(d(n));
+    preventCloseOnSelect: d,
+    serialize: f
+  } = e, p = (0, l.JA)(f(n));
   return (0, r.jsxs)(c.P, I(O({
     focusProps: {
       enabled: !1
@@ -422,8 +424,8 @@ function M(e) {
     className: o()(b.option, t, {
       [b.optionDisabled]: u
     }),
-    onClick: () => !u && a(n)
-  }, f), {
+    onClick: () => !u && a(n, d)
+  }, p), {
     "aria-selected": s,
     "aria-disabled": u,
     role: "option",

@@ -21,7 +21,7 @@ function d(e) {
     [c._.VOICE_ISOLATION]: u.intl.string(u.t.cjPbpa),
     [c._.STUDIO]: u.intl.string(u.t.VZPR0d),
     [c._.CUSTOM]: u.intl.string(u.t["N/PQjo"])
-  }, d = (0, i.e7)([o.Z], () => o.Z.getActiveInputProfile()), p = t.map(t => (0, r.jsx)(l.k5B, {
+  }, d = (0, i.e7)([o.Z], () => o.Z.getActiveInputProfile()), f = t.map(t => (0, r.jsx)(l.k5B, {
     id: t,
     group: "input-profiles",
     label: n[t],
@@ -34,6 +34,6 @@ function d(e) {
     id: "input-profiles",
     label: u.intl.string(u.t.LM3U3t),
     subtext: n[null != d ? d : c._.CUSTOM],
-    children: p
+    children: f
   })
 }

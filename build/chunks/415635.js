@@ -11,8 +11,8 @@ var r = n(255367),
   c = n(367907),
   u = n(37091),
   d = n(721264),
-  p = n(963838),
-  f = n(39127),
+  f = n(963838),
+  p = n(39127),
   m = n(981631),
   g = n(490650);
 
@@ -22,7 +22,7 @@ function _(e) {
     guildId: n,
     userId: _,
     containerDimensions: v
-  } = e, b = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), [h, y] = i.useState([]), O = h.length < 50;
+  } = e, b = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), [y, h] = i.useState([]), O = y.length < 50;
   i.useEffect(() => {
     function e(e) {
       var r;
@@ -31,22 +31,22 @@ function _(e) {
         userId: a,
         emoji: o,
         animationType: s,
-        animationId: f
+        animationId: p
       } = e;
       if (null != _ && _ !== a || u.Z.getEnabled() && (0, d.Z)(null != (r = null == o ? void 0 : o.name) ? r : "")) return;
-      let g = null != o && null != s && null != f;
+      let g = null != o && null != s && null != p;
       if (i === t && !b && O && g) {
-        let e = (0, p._r)(o),
+        let e = (0, f._r)(o),
           r = null != o.id && !o.animated,
           i = {
             id: (0, l.Z)(),
             animationType: s,
-            animationId: f,
+            animationId: p,
             shouldResize: r,
             url: e,
             userId: a
           };
-        y(e => [...e, i]), c.ZP.trackWithMetadata(m.rMx.VOICE_CHANNEL_EFFECT_VIEWED, {
+        h(e => [...e, i]), c.ZP.trackWithMetadata(m.rMx.VOICE_CHANNEL_EFFECT_VIEWED, {
           channel_id: t,
           guild_id: n
         })
@@ -57,7 +57,7 @@ function _(e) {
     }
   }, [t, n, _, b, O]);
   let j = i.useCallback(e => {
-    y(t => {
+    h(t => {
       let n = [...t],
         r = n.findIndex(t => t.id === e);
       return n.splice(r, 1), n
@@ -70,7 +70,7 @@ function _(e) {
     },
     children: (0, r.jsx)("div", {
       className: g.effects,
-      children: h.map(e => (0, r.jsx)(f.Z, {
+      children: y.map(e => (0, r.jsx)(p.Z, {
         containerDimensions: v,
         effect: e,
         onComplete: j

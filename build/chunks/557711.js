@@ -18,18 +18,18 @@ function d(e) {
     user: n,
     channelId: i,
     guildId: d,
-    source: p,
-    size: f,
+    source: f,
+    size: p,
     look: m,
     color: g,
     className: _,
     onAction: v
   } = e, {
     tooltip: b,
-    loading: h,
-    disabled: y,
+    loading: y,
+    disabled: h,
     onClick: O
-  } = (0, c.Fe)(t, n, p, s.ZP.getNickname(d, i, n)), j = () => {
+  } = (0, c.Fe)(t, n, f, s.ZP.getNickname(d, i, n)), j = () => {
     null == v || v(), O()
   };
   return (0, r.jsx)(o.ua7, {
@@ -40,7 +40,7 @@ function d(e) {
         onMouseLeave: i
       } = e;
       return (0, r.jsx)(a.zx, {
-        size: f,
+        size: p,
         className: l()(u.syncButton, _),
         innerClassName: u.syncButtonInner,
         look: m,
@@ -48,8 +48,8 @@ function d(e) {
         onClick: j,
         onMouseEnter: n,
         onMouseLeave: i,
-        disabled: y,
-        submitting: h,
+        disabled: h,
+        submitting: y,
         "aria-label": null != b ? b : t.name,
         children: (0, r.jsx)(o.iOO, {
           size: "xs",

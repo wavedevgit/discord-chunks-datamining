@@ -17,18 +17,18 @@ function c(e) {
     source: c,
     className: u,
     size: d,
-    look: p,
-    color: f,
+    look: f,
+    color: p,
     fullWidth: m,
     onAction: g
   } = e, {
     label: _,
     tooltip: v,
     loading: b,
-    disabled: h,
-    onClick: y
+    disabled: y,
+    onClick: h
   } = (0, o.Ih)(t, n, c), O = () => {
-    null == g || g(), y()
+    null == g || g(), h()
   };
   return (0, r.jsx)(l.ua7, {
     text: v,
@@ -41,13 +41,13 @@ function c(e) {
         className: u,
         innerClassName: s.playButtonInner,
         size: d,
-        look: p,
-        color: f,
+        look: f,
+        color: p,
         fullWidth: m,
         onClick: O,
         onMouseEnter: t,
         onMouseLeave: n,
-        disabled: h,
+        disabled: y,
         submitting: b,
         children: [(0, r.jsx)(a.Z, {
           width: 16,

@@ -17,15 +17,15 @@ function c(e) {
     guildId: c,
     channelId: u,
     source: d,
-    look: p,
-    color: f,
+    look: f,
+    color: p,
     onAction: m
   } = e;
   return null != t && (0, l.Z)(t, o.xjy.SYNC) && (0, a.Z)(t) ? (0, r.jsx)(i.Z, {
     className: s.button,
     size: s.buttonSize,
-    look: p,
-    color: f,
+    look: f,
+    color: p,
     user: n,
     activity: t,
     guildId: null != c ? c : void 0,

@@ -60,6 +60,7 @@ function g(e) {
     case s.m.POP:
       return h.pop;
     case s.m.SOLID:
+      return h.solid;
     default:
       return ""
   }

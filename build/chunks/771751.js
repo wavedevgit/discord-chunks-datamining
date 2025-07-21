@@ -118,11 +118,11 @@ function S(e) {
   let D = null != w,
     L = null != w && new Date(w).getTime() < Date.now(),
     M = (null == k ? void 0 : k.sku_id) === j.Si.TIER_0,
-    F = async () => {
-      T(!0), D ? await U({
+    U = async () => {
+      T(!0), D ? await F({
         expiresAt: null
       }) : await (0, d.a)(m), b(), T(!1)
-    }, U = async e => {
+    }, F = async e => {
       T(!0);
       try {
         await s.tn.patch({
@@ -239,7 +239,7 @@ function S(e) {
       }), (0, n.jsx)("input", {
         type: "date",
         value: null != w ? w.substring(0, 10) : "",
-        onChange: e => U({
+        onChange: e => F({
           expiresAt: e.target.value
         })
       })]
@@ -252,14 +252,14 @@ function S(e) {
       }), (0, n.jsx)("input", {
         type: "text",
         value: null != (u = null == Z ? void 0 : Z.id) ? u : "",
-        onChange: e => U({
+        onChange: e => F({
           referrerId: e.target.value
         })
       })]
     }), (0, n.jsxs)("div", {
       className: _.badgeContainer,
       children: [(0, n.jsx)(c.P3F, {
-        onClick: F,
+        onClick: U,
         className: i()(_.badge, _.clickable, {
           [_.acked]: D,
           [_.expired]: L
@@ -468,12 +468,12 @@ function P(e) {
 function w() {
   let [e, t] = r.useState([]), [a, l] = r.useState([]), [i, s] = r.useState(), [x, p] = r.useState(), [j, N] = r.useState([]), [w, I] = r.useState([]), [R, k] = r.useState(!0), [Z, A] = r.useState(10080), [D, L] = r.useState([]), {
     entitlements: M,
-    deleteFractionalPremium: F,
-    refreshEntitlementList: U
+    deleteFractionalPremium: U,
+    refreshEntitlementList: F
   } = (0, f.m)();
   r.useEffect(() => {
-    U()
-  }, [U]);
+    F()
+  }, [F]);
   let B = e => e.filter(e => e.sourceType === v.kNB.REVERSE_TRIAL && null != e.endsAt && e.endsAt > new Date);
   r.useEffect(() => {
     L(B(M))
@@ -502,7 +502,7 @@ function w() {
     await T(), k(!0)
   }, H = async () => {
     let e = new Date(Date.now() + 60 * Z * 1e3).toISOString();
-    await E(e), U()
+    await E(e), F()
   };
   return (0, n.jsx)(c.zJl, {
     className: g.panel,
@@ -638,7 +638,7 @@ function w() {
           children: D.map(e => (0, n.jsx)(h.D, {
             entitlement: e,
             active: !0,
-            onDelete: () => F(e.id)
+            onDelete: () => U(e.id)
           }, e.id))
         })]
       })]
