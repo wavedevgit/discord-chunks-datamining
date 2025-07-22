@@ -303,19 +303,19 @@ function ea() {
   return !b.Z.hidePersonalInformation
 }
 
-function eo(e, t, n) {
-  let r = O.ZP.queryGroupDMs({
+function eo(e, t) {
+  let n = O.ZP.queryGroupDMs({
       query: e,
-      limit: n,
+      limit: t,
       fuzzy: !0,
       boosters: (0, O.Cq)(c.h8.GROUP_DM)
     }),
-    i = O.ZP.queryDMChannels({
+    r = O.ZP.queryDMChannels({
       query: e,
-      limit: n,
+      limit: t,
       boosters: (0, O.Cq)(c.h8.USER)
     }),
-    a = o()(r.concat(i)).sort(c.qU).map(e => {
+    i = o()(n.concat(r)).sort(c.qU).map(e => {
       let {
         record: t,
         comparator: n
@@ -324,23 +324,23 @@ function eo(e, t, n) {
         text: n,
         channel: t
       }
-    }).value();
+    }).filter(e => null != e.text && null != e.channel).value();
   if ("" === e.trim()) {
     let e = g.Z.getChannelId(),
       t = f.Z.getChannel(e);
     if (null != t && t.isPrivate()) {
-      let n = a.findIndex(t => {
+      let n = i.findIndex(t => {
         let {
           channel: n
         } = t;
         return n.id === e
       });
       if (-1 !== n) {
-        let e = a[n];
-        a.splice(n, 1), a.unshift(e)
+        let e = i[n];
+        i.splice(n, 1), i.unshift(e)
       } else if (t.isGroupDM()) {
         let e = (0, u.F6)(t, y.default, h.Z);
-        a.unshift({
+        i.unshift({
           text: e,
           channel: t
         })
@@ -349,7 +349,7 @@ function eo(e, t, n) {
           n = y.default.getUser(e);
         if (null != n) {
           let e = T.ZP.getUserTag(n);
-          a.unshift({
+          i.unshift({
             text: e,
             channel: t
           })
@@ -357,7 +357,7 @@ function eo(e, t, n) {
       }
     }
   }
-  return a.slice(0, n)
+  return i.slice(0, t)
 }
 
 function es(e, t, n) {
@@ -401,7 +401,7 @@ function el(e, t, n) {
   let i = (0, _.a)({
     location: "getInFilterAutocompletions"
   });
-  return r === A.aib.DMS && i ? eo(e, t, n) : []
+  return r === A.aib.DMS && i ? eo(e, n) : []
 }
 let ec = /^(?:\s*(\d{17,20}|@me|([^@#:]+)#([0-9]{4})|([a-z0-9_.]{2,32})))/i;
 var eu = function(e) {
@@ -610,16 +610,17 @@ function ep(e) {
 }
 
 function eh(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : Object.keys(e_).length;
-  return o()(e_).keys().filter(ep).filter(e => null != e_[e].key).map(e => ({
-    token: e,
-    text: e_[e].key
-  })).filter(t => {
-    let {
-      text: n
-    } = t;
-    return i()(e.toLowerCase(), n)
-  }).take(t).value()
+  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : Object.keys(e_).length,
+    n = [];
+  for (let r of Object.keys(e_)) {
+    if (n.length >= t) break;
+    let a = e_[r].key;
+    ep(r) && null != a && i()(e.toLowerCase(), a) && n.push({
+      token: r,
+      text: a
+    })
+  }
+  return n
 }
 
 function em(e) {

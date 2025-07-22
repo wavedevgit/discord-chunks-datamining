@@ -196,25 +196,27 @@ function T(e, t, n) {
     }), s.push(function(e, t) {
       let n = (null != e ? e.getFullMatch() : "").trim();
       if (null != n && "" !== n) {
-        var r, s, l;
-        let e = null == (r = o.ZP[E.dCx.FILTER_BEFORE]) ? void 0 : r.getAutocompletions({
+        var r, s, l, a, i, c, u, d, h;
+        let e = null == (l = o.ZP[E.dCx.FILTER_BEFORE]) || null == (s = l.getAutocompletions) || null == (r = s.call(l, {
             query: n,
             searchId: t,
             maxResults: 1
-          })[0],
-          a = null == (s = o.ZP[E.dCx.FILTER_ON]) ? void 0 : s.getAutocompletions({
+          })) ? void 0 : r[0],
+          p = null == (c = o.ZP[E.dCx.FILTER_ON]) || null == (i = c.getAutocompletions) || null == (a = i.call(c, {
             query: n,
             searchId: t,
             maxResults: 1
-          })[0],
-          i = null == (l = o.ZP[E.dCx.FILTER_AFTER]) ? void 0 : l.getAutocompletions({
+          })) ? void 0 : a[0],
+          f = null == (h = o.ZP[E.dCx.FILTER_AFTER]) || null == (d = h.getAutocompletions) || null == (u = d.call(h, {
             query: n,
             searchId: t,
             maxResults: 1
-          })[0];
-        return null == e ? null : {
+          })) ? void 0 : u[0];
+        if (null == e) return null;
+        let g = [e];
+        return null != p && g.push(p), null != f && g.push(f), {
           group: E.rtL.DATES,
-          results: [e, a, i]
+          results: g
         }
       }
     }(e, t))), 5 > (0, p.BU)(s) && s.push(R(e, t)), s

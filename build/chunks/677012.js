@@ -3,8 +3,8 @@ n.d(t, {
   default: () => w
 });
 var r = n(255367),
-  o = n(73800),
-  a = n(477690),
+  a = n(73800),
+  o = n(477690),
   i = n(755721),
   c = n(481060),
   l = n(208156),
@@ -14,15 +14,15 @@ var r = n(255367),
   f = n(624138),
   p = n(293979),
   b = n(674563),
-  O = n(388032),
-  h = n(243114);
-let m = (0, f.Mg)(a.Z.INTERACTION_IFRAME_MODAL_MODAL_MIN_WIDTH),
-  v = (0, f.Mg)(a.Z.INTERACTION_IFRAME_MODAL_MODAL_MAX_WIDTH),
-  g = (0, f.Mg)(a.Z.INTERACTION_IFRAME_MODAL_MODAL_MARGIN),
-  j = (0, f.Mg)(a.Z.INTERACTION_IFRAME_MODAL_MODAL_HEADER_HEIGHT);
+  m = n(388032),
+  O = n(243114);
+let h = (0, f.Mg)(o.Z.INTERACTION_IFRAME_MODAL_MODAL_MIN_WIDTH),
+  g = (0, f.Mg)(o.Z.INTERACTION_IFRAME_MODAL_MODAL_MAX_WIDTH),
+  v = (0, f.Mg)(o.Z.INTERACTION_IFRAME_MODAL_MODAL_MARGIN),
+  j = (0, f.Mg)(o.Z.INTERACTION_IFRAME_MODAL_MODAL_HEADER_HEIGHT);
 
 function w(e) {
-  var t, n, a;
+  var t, n, o;
   let {
     title: f,
     onClose: w
@@ -34,9 +34,9 @@ function w(e) {
   } = (0, p.b8)(e), {
     width: M,
     height: N
-  } = (0, d.Z)(), A = o.useMemo(() => {
-    let e = Math.min((N - j - 2 * g) * 16 / 9, v);
-    return Math.max(m, Math.min(M - 2 * g, e))
+  } = (0, d.Z)(), A = a.useMemo(() => {
+    let e = Math.min((N - j - 2 * v) * 16 / 9, g);
+    return Math.max(h, Math.min(M - 2 * v, e))
   }, [M, N]);
   return (0, r.jsx)(c.Y0X, (n = function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -55,24 +55,26 @@ function w(e) {
       })
     }
     return e
-  }({}, e), a = a = {
+  }({}, e), o = o = {
     size: c.CgR.DYNAMIC,
-    className: h.root,
+    className: O.root,
     parentComponent: "InteractionIframeModal",
+    "data-migration-pending": !0,
     children: (0, r.jsxs)("div", {
       style: {
         width: A
       },
       children: [(0, r.jsxs)(c.xBx, {
         separator: !1,
-        className: h.modalHeader,
+        className: O.modalHeader,
+        "data-migration-pending": !0,
         children: [(0, r.jsx)(c.qEK, {
           src: _,
           size: c.EFr.SIZE_32,
           "aria-label": y,
-          className: h.applicationIcon
+          className: O.applicationIcon
         }), (0, r.jsxs)("div", {
-          className: h.flexRow,
+          className: O.flexRow,
           children: [(0, r.jsxs)("div", {
             children: [(0, r.jsx)(c.X6q, {
               variant: "heading-sm/bold",
@@ -84,20 +86,21 @@ function w(e) {
             })]
           }), (0, r.jsx)(s.Z, {
             type: b.Hb.BOT,
-            className: h.botTag,
+            className: O.botTag,
             verified: null == (t = e.application.bot) ? void 0 : t.verified
           })]
         }), (0, r.jsx)(i.zx, {
           onClick: w,
-          innerClassName: h.closeButton,
-          className: h.closeButtonContainer,
+          innerClassName: O.closeButton,
+          className: O.closeButtonContainer,
           look: i.zx.Looks.BLANK,
           size: i.zx.Sizes.NONE,
-          "aria-label": O.intl.string(O.t.WAI6xs),
+          "aria-label": m.intl.string(m.t.WAI6xs),
+          "data-migration-pending": !0,
           children: (0, r.jsx)(c.Dio, {
             size: "md",
             color: "currentColor",
-            className: h.closeIcon
+            className: O.closeIcon
           })
         })]
       }), (0, r.jsx)(u.Z, {
@@ -105,19 +108,19 @@ function w(e) {
         children: (0, r.jsx)(l.J, {
           url: I,
           shouldRefocus: !0,
-          className: h.iframe,
+          className: O.iframe,
           queryParams: x
         })
       })]
     })
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
       var r = Object.getOwnPropertySymbols(e);
       n.push.apply(n, r)
     }
     return n
-  })(Object(a)).forEach(function(e) {
-    Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(a, e))
+  })(Object(o)).forEach(function(e) {
+    Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(o, e))
   }), n))
 }

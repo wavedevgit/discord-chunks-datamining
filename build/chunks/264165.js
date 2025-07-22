@@ -4,18 +4,18 @@ n.d(t, {
 });
 var r = n(255367);
 n(73800);
-var o = n(120356),
-  a = n.n(o),
+var a = n(120356),
+  o = n.n(a),
   i = n(965860);
 let c = e => {
   let {
     aspectRatio: t,
     style: n,
-    className: o,
+    className: a,
     children: c
   } = e;
   return (0, r.jsx)("div", {
-    className: a()(i.outer, o),
+    className: o()(i.outer, a),
     style: function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
