@@ -18,9 +18,9 @@ function c(e) {
     purchases: d
   } = (0, s.ZP)({
     location: e
-  }), [f, p, m] = (0, i.Wu)([o.Z], () => [o.Z.isFetching, o.Z.fetchError, o.Z.profileEffects]);
+  }), [f, p, m] = (0, i.Wu)([o.Z], () => [o.Z.isFetchingAll, o.Z.fetchError, o.Z.profileEffects]);
   return n.useEffect(() => {
-    (0, l.z)(!0)
+    (0, l.r)(!0)
   }, []), {
     isFetching: r || f,
     combinedError: null != (t = null != c ? c : a) ? t : p,

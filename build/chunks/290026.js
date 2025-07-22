@@ -16,6 +16,6 @@ let c = () => {
       let t = e.items[0].id;
       return null != t && null == s.Z.getProfileEffectById(t)
     });
-    (0, a.z)(t)
+    (0, a.r)(t)
   }, [e])
 }

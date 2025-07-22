@@ -11,6 +11,6 @@ let s = e => {
   let t = (0, i.e7)([o.Z], () => o.Z.getProfileEffectById(e)),
     n = null != t;
   return r.useEffect(() => {
-    null == e || n || (0, a.z)(!0)
+    null == e || n || (0, a.r)(!0)
   }, [e, n]), t
 }

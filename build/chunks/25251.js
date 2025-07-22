@@ -36,12 +36,12 @@ let u = [],
       }
     }), p = t
   },
-  O = () => {
+  O = e => {
     f = !0
   },
   v = e => {
     let {
-      profileEffects: t
+      presets: t
     } = e;
     r = void 0, i = Date.now() + g, m = 0, y(0 === t.length ? u : t), f = !1
   },
@@ -64,7 +64,7 @@ let u = [],
     S()
   };
 class N extends(a = s.ZP.Store) {
-  get isFetching() {
+  get isFetchingAll() {
     return f
   }
   get fetchError() {
@@ -88,9 +88,9 @@ class N extends(a = s.ZP.Store) {
 }
 c(N, "displayName", "ProfileEffectStore");
 let C = new N(l.Z, {
-  USER_PROFILE_EFFECTS_FETCH: O,
-  USER_PROFILE_EFFECTS_FETCH_SUCCESS: v,
-  USER_PROFILE_EFFECTS_FETCH_FAILURE: I,
+  PROFILE_EFFECTS_FETCH_ALL: O,
+  PROFILE_EFFECTS_FETCH_ALL_SUCCESS: v,
+  PROFILE_EFFECTS_FETCH_ALL_FAILURE: I,
   PROFILE_EFFECTS_SET_TRY_IT_OUT: T,
   LOGOUT: A
 })

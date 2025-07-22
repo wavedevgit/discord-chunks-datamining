@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  z: () => m
+  r: () => m
 });
 var r = n(544891),
   i = n(570140),
@@ -80,9 +80,9 @@ let h = e => {
   },
   m = async function() {
     let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-    if (!(!e && s.Z.hasFetched()) && !s.Z.isFetching && s.Z.canFetch()) {
+    if (!(!e && s.Z.hasFetched()) && !s.Z.isFetchingAll && s.Z.canFetch()) {
       i.Z.dispatch({
-        type: "USER_PROFILE_EFFECTS_FETCH"
+        type: "PROFILE_EFFECTS_FETCH_ALL"
       });
       try {
         let {
@@ -92,13 +92,13 @@ let h = e => {
           rejectWithError: !1
         }), t = (null == e ? void 0 : e.profile_effect_configs).map(h);
         i.Z.dispatch({
-          type: "USER_PROFILE_EFFECTS_FETCH_SUCCESS",
-          profileEffects: t
+          type: "PROFILE_EFFECTS_FETCH_ALL_SUCCESS",
+          presets: t
         })
       } catch (t) {
         let e = new a.Z(t);
         (0, o.G)(e), i.Z.dispatch({
-          type: "USER_PROFILE_EFFECTS_FETCH_FAILURE",
+          type: "PROFILE_EFFECTS_FETCH_ALL_FAILURE",
           error: e
         })
       }

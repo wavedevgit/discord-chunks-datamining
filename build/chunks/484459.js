@@ -42,7 +42,7 @@ function _(e, t) {
     M = null == v ? null == A : null == C,
     k = !M && (N || x);
   if (!M && !k) return Promise.resolve();
-  (0, s.z)(), null != t && (0, a.vM)(t);
+  (0, s.r)(), null != t && (0, a.vM)(t);
   let j = {
     type: m,
     withMutualGuilds: g,
