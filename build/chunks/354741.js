@@ -1,156 +1,92 @@
 /** Chunk was on 52495 **/
 n.r(t), n.d(t, {
   default: () => S
-}), n(388685);
+});
 var i = n(255367);
 n(73800);
 var r = n(481060),
-  o = n(493683),
-  a = n(239091),
-  l = n(883385),
-  c = n(108843),
-  s = n(947440),
-  f = n(100527),
-  u = n(906732),
-  d = n(658138),
-  b = n(299206),
-  p = n(895563),
-  O = n(212205),
-  _ = n(62420),
-  N = n(641360),
+  o = n(239091),
+  a = n(883385),
+  l = n(108843),
+  c = n(947440),
+  s = n(100527),
+  f = n(658138),
+  u = n(299206),
+  d = n(895563),
+  b = n(212205),
+  p = n(62420),
   g = n(769409),
-  y = n(140106),
-  T = n(122074),
-  E = n(314897),
-  h = n(626135),
-  j = n(858687),
-  P = n(461535),
-  I = n(776568),
+  y = n(122074),
+  O = n(314897),
+  N = n(858687),
+  _ = n(461535),
+  h = n(776568),
   m = n(981631),
-  C = n(388032);
-
-function v(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
-      var i;
-      i = n[t], t in e ? Object.defineProperty(e, t, {
-        value: i,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-      }) : e[t] = i
-    })
-  }
-  return e
-}
-let S = (0, c.Z)((0, l.Z)(function(e) {
+  v = n(388032);
+let S = (0, l.Z)((0, a.Z)(function(e) {
   let {
     channel: t,
-    selected: l,
-    onSelect: c
-  } = e, S = t.isOwner(E.default.getId()), A = (0, P.Z)(t), U = (0, I.ZP)(t), Z = (0, T.Uf)(m.aIL, t.id, "top"), w = (0, j.Z)(t, l), x = (0, b.Z)({
+    selected: a,
+    onSelect: l
+  } = e, S = t.isOwner(O.default.getId()), T = (0, _.Z)(t), j = (0, h.ZP)(t), A = (0, y.Uf)(m.aIL, t.id, "top"), I = (0, N.Z)(t, a), C = (0, u.Z)({
     id: t.id,
-    label: C.intl.string(C.t.gFHI3t)
-  }), M = (0, s.Z)(t), D = (0, p.l)(t), R = (0, p.P)(t), k = (0, O.Z)(t), F = (0, _.Z)(t), G = (0, d.D)(t), {
-    analyticsLocations: Q
-  } = (0, u.ZP)(f.Z.GROUP_DM_CONTEXT_MENU), X = (0, N.p1)(f.Z.GROUP_DM_CONTEXT_MENU, t.id), L = (0, N.I3)(f.Z.GROUP_DM_CONTEXT_MENU, t.id);
+    label: v.intl.string(v.t.gFHI3t)
+  }), E = (0, c.Z)(t), P = (0, d.l)(t), w = (0, d.P)(t), x = (0, b.Z)(t), Z = (0, p.Z)(t), U = (0, f.D)(t);
   return null == t || t.isManaged() ? null : (0, i.jsxs)(r.v2r, {
     navId: "gdm-context",
-    "aria-label": C.intl.string(C.t.Xm41aW),
-    onClose: a.Zy,
-    onSelect: c,
+    "aria-label": v.intl.string(v.t.Xm41aW),
+    onClose: o.Zy,
+    onSelect: l,
     children: [(0, i.jsx)(r.kSQ, {
-      children: A
+      children: T
     }), (0, i.jsxs)(r.kSQ, {
-      children: [D, k, F]
+      children: [P, x, Z]
     }), (0, i.jsxs)(r.kSQ, {
       children: [S ? (0, i.jsx)(r.sNh, {
         id: "instant-invites",
-        label: C.intl.string(C.t.ngRFjY),
+        label: v.intl.string(v.t.ngRFjY),
         action: () => (0, r.ZDy)(async () => {
           let {
             default: e
           } = await n.e("97573").then(n.bind(n, 892382));
-          return n => (0, i.jsx)(e, v({
+          return n => (0, i.jsx)(e, function(e) {
+            for (var t = 1; t < arguments.length; t++) {
+              var n = null != arguments[t] ? arguments[t] : {},
+                i = Object.keys(n);
+              "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                return Object.getOwnPropertyDescriptor(n, e).enumerable
+              }))), i.forEach(function(t) {
+                var i;
+                i = n[t], t in e ? Object.defineProperty(e, t, {
+                  value: i,
+                  enumerable: !0,
+                  configurable: !0,
+                  writable: !0
+                }) : e[t] = i
+              })
+            }
+            return e
+          }({
             channelId: t.id
           }, n))
         })
-      }) : null, X && (L ? (0, i.jsx)(r.sNh, {
-        id: "change-icon",
-        label: C.intl.string(C.t["6yrpFR"]),
-        action: () => (0, y.P5)(t.id, f.Z.GROUP_DM_CONTEXT_MENU)
-      }) : (0, i.jsx)(r.II_, {
-        id: "change-icon",
-        showDefaultFocus: !0,
-        control: (e, n) => {
-          var a, l;
-          return (0, i.jsx)(r.TEe, (a = v({
-            onChange: n => {
-              var i;
-              let {
-                imageUri: r
-              } = n;
-              o.Z.setIcon(t.id, r), null == (i = e.onClose) || i.call(e)
-            },
-            multiple: !1,
-            "aria-label": C.intl.string(C.t["6yrpFR"])
-          }, e), l = l = {
-            onInteraction: () => {
-              var n;
-              null == (n = e.onInteraction) || n.call(e), h.default.track(m.rMx.GDM_EDIT_INTERACTED, {
-                action: "open",
-                channel_id: t.id,
-                channel_type: m.d4z.GROUP_DM,
-                location: f.Z.GROUP_DM_CONTEXT_MENU,
-                location_stack: [...Q, f.Z.GROUP_DM_CONTEXT_MENU_CHANGE_ICON]
-              })
-            },
-            ref: n
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
-            var n = Object.keys(e);
-            if (Object.getOwnPropertySymbols) {
-              var i = Object.getOwnPropertySymbols(e);
-              n.push.apply(n, i)
-            }
-            return n
-          })(Object(l)).forEach(function(e) {
-            Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(l, e))
-          }), a))
-        },
-        label: C.intl.string(C.t["6yrpFR"])
-      })), X && null != t.icon ? (0, i.jsx)(r.sNh, {
-        id: "remove-icon",
-        label: C.intl.string(C.t["uY+Nk5"]),
-        action: () => {
-          h.default.track(m.rMx.GDM_EDIT_INTERACTED, {
-            action: "open",
-            channel_id: t.id,
-            channel_type: m.d4z.GROUP_DM,
-            location: f.Z.GROUP_DM_CONTEXT_MENU,
-            location_stack: [...Q, f.Z.GROUP_DM_CONTEXT_MENU_REMOVE_ICON]
-          }), o.Z.setIcon(t.id, null)
-        }
-      }) : null, L && (0, i.jsx)(r.sNh, {
+      }) : null, (0, i.jsx)(r.sNh, {
         id: "edit-gdm",
-        label: C.intl.string(C.t["5Q9+/P"]),
-        action: () => (0, g.B)(t.id, f.Z.GROUP_DM_CONTEXT_MENU)
-      }), G]
+        label: v.intl.string(v.t["5Q9+/P"]),
+        action: () => (0, g.B)(t.id, s.Z.GROUP_DM_CONTEXT_MENU)
+      }), U]
     }), (0, i.jsx)(r.kSQ, {
-      children: M
+      children: E
     }), (0, i.jsxs)(r.kSQ, {
-      children: [U, Z]
+      children: [j, A]
+    }), (0, i.jsx)(r.kSQ, {
+      children: I
     }), (0, i.jsx)(r.kSQ, {
       children: w
     }), (0, i.jsx)(r.kSQ, {
-      children: R
-    }), (0, i.jsx)(r.kSQ, {
-      children: x
+      children: C
     })]
   })
 }, {
   object: m.qAy.CONTEXT_MENU
-}), [f.Z.CONTEXT_MENU, f.Z.GROUP_DM_MENU])
+}), [s.Z.CONTEXT_MENU, s.Z.GROUP_DM_MENU])
