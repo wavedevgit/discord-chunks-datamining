@@ -15,7 +15,7 @@ var r, i = n(442837),
   u = n(981631),
   d = n(65154);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -24,14 +24,14 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -79,10 +79,10 @@ class v {
   }
   put(e, t, n, r) {
     if ("" === r) {
-      let r = _({}, this.state);
+      let r = f({}, this.state);
       return delete r[y(e, t, n)], new v(r)
     }
-    return new v(_({
+    return new v(f({
       [y(e, t, n)]: r
     }, this.state))
   }
@@ -91,7 +91,7 @@ class v {
     return null != r ? r : null
   }
   constructor(e) {
-    f(this, "state", void 0), this.state = e
+    _(this, "state", void 0), this.state = e
   }
 }
 let I = v.empty(),
@@ -296,7 +296,7 @@ class Z extends(r = i.ZP.Store) {
     return g.has(n) ? g.get(n) : d.Z.NO_OVERRIDE
   }
 }
-f(Z, "displayName", "RTCDebugStore");
+_(Z, "displayName", "RTCDebugStore");
 let H = new Z(o.Z, {
   RTC_DEBUG_MODAL_OPEN: P,
   RTC_DEBUG_MODAL_CLOSE: w,

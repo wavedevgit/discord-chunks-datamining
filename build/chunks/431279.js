@@ -11,9 +11,9 @@ var r, i = n(255367),
   c = n(124347),
   u = n(730606),
   d = n(312097),
-  f = n(506071);
+  _ = n(506071);
 
-function _(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -29,7 +29,7 @@ function p(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
@@ -84,7 +84,7 @@ class b extends(r = a.PureComponent) {
     }))
   }
   constructor(...e) {
-    super(...e), _(this, "onMouseEnter", e => {
+    super(...e), f(this, "onMouseEnter", e => {
       let {
         src: t,
         width: n,
@@ -99,9 +99,9 @@ class b extends(r = a.PureComponent) {
         height: r,
         options: this.props
       })
-    }), _(this, "modalContext", (0, s.VnL)(this.props.appContext)), _(this, "onCloseImage", () => {
+    }), f(this, "modalContext", (0, s.VnL)(this.props.appContext)), f(this, "onCloseImage", () => {
       (0, s.Mr3)(d.Q, this.modalContext)
-    }), _(this, "onZoom", (e, t) => {
+    }), f(this, "onZoom", (e, t) => {
       let {
         zoomThumbnailPlaceholder: n,
         trigger: r
@@ -114,8 +114,8 @@ class b extends(r = a.PureComponent) {
         width: l,
         height: c,
         animated: u,
-        srcIsAnimated: f,
-        children: _,
+        srcIsAnimated: _,
+        children: f,
         shouldHideMediaOptions: p = !1,
         sourceMetadata: h,
         analyticsSource: m
@@ -127,8 +127,8 @@ class b extends(r = a.PureComponent) {
         alt: i,
         zoomThumbnailPlaceholder: n,
         animated: u,
-        srcIsAnimated: f,
-        children: _,
+        srcIsAnimated: _,
+        children: f,
         trigger: r,
         sourceMetadata: h,
         original: null != s ? s : a
@@ -146,13 +146,13 @@ class b extends(r = a.PureComponent) {
 
 function y(e) {
   let t = (0, l.bp)(),
-    n = (0, f.n)();
+    n = (0, _.n)();
   return (0, i.jsx)(b, m(p({}, e), {
     isWindowFocused: n,
     appContext: t
   }))
 }
-_(b, "defaultProps", {
+f(b, "defaultProps", {
   shouldLink: !0,
   autoPlay: !1,
   animated: !1

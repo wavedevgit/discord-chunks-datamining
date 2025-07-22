@@ -19,7 +19,7 @@ function s(e, t, n) {
 let {
   NativeModules: l
 } = {}, c = {}, u = 65535, d = [];
-class f {
+class _ {
   static canUse() {
     return !1
   }
@@ -32,7 +32,7 @@ class f {
     s(this, "_onDataReady", void 0), s(this, "_gatewayEncoding", void 0), this._onDataReady = null, this._gatewayEncoding = e
   }
 }
-d.push(class extends f {
+d.push(class extends _ {
   static canUse() {
     return (0, o.N)()
   }
@@ -52,7 +52,7 @@ d.push(class extends f {
   constructor(e) {
     super(e), s(this, "_decoder", null), s(this, "_stream", void 0), this._gatewayEncoding.wantsString() ? this._decoder = new TextDecoder("utf-8") : this._decoder = null, this._stream = (0, o.G)()
   }
-}), d.push(class extends f {
+}), d.push(class extends _ {
   static canUse() {
     return void 0 !== window.Uint8Array
   }
@@ -101,7 +101,7 @@ d.push(class extends f {
       to: this._gatewayEncoding.wantsString() ? "string" : ""
     }), this._inflate.onEnd = this.handleFlushEnd.bind(this)
   }
-}), d.push(class extends f {
+}), d.push(class extends _ {
   static canUse() {
     return !0
   }
@@ -122,7 +122,7 @@ d.push(class extends f {
   constructor(...e) {
     super(...e), s(this, "_pako", n(457854))
   }
-}), d.push(class extends f {
+}), d.push(class extends _ {
   static canUse() {
     return !1
   }
@@ -147,7 +147,7 @@ d.push(class extends f {
     super(e), s(this, "_socketId", void 0), this._socketId = null
   }
 });
-class _ extends f {
+class f extends _ {
   static canUse() {
     return !0
   }
@@ -165,9 +165,9 @@ class _ extends f {
 }
 
 function p(e) {
-  if (a.s.isDiscordGatewayPlaintextSet()) return new _(e);
+  if (a.s.isDiscordGatewayPlaintextSet()) return new f(e);
   for (var t of d)
     if (t.canUse()) return new t(e);
-  return new _(e)
+  return new f(e)
 }
-d.push(_)
+d.push(f)

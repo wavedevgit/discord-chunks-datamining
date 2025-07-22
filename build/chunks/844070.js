@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   T: () => d,
-  z: () => f
+  z: () => _
 });
 var r = n(493683),
   i = n(529103),
@@ -39,7 +39,7 @@ function d(e) {
   })
 }
 
-function f(e) {
+function _(e) {
   u(e, c.intl.string(c.t.MYr3KS), () => {
     r.Z.openPrivateChannel({
       recipientIds: e.id

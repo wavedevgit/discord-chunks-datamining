@@ -18,8 +18,8 @@ function d(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let f = "MaskedLinkStore",
-  _ = new Set,
+let _ = "MaskedLinkStore",
+  f = new Set,
   p = new Set,
   h = null == (r = window.GLOBAL_ENV.MEDIA_PROXY_ENDPOINT) ? void 0 : r.replace("//", "");
 
@@ -34,7 +34,7 @@ function m(e) {
     case location.hostname:
       return !0;
     default:
-      return u.SD.includes(t) || l.Z.isDiscordHostname(t) || _.has(t)
+      return u.SD.includes(t) || l.Z.isDiscordHostname(t) || f.has(t)
   }
 }
 
@@ -48,8 +48,8 @@ function E(e) {
     url: t
   } = e;
   if (m(t)) return !1;
-  _.add((0, c.F)(t)), o.K.set(f, {
-    trustedDomains: _,
+  f.add((0, c.F)(t)), o.K.set(_, {
+    trustedDomains: f,
     trustedProtocols: p
   })
 }
@@ -59,22 +59,22 @@ function b(e) {
     url: t
   } = e;
   if (g(t)) return !1;
-  p.add((0, c.E)(t)), o.K.set(f, {
-    trustedDomains: _,
+  p.add((0, c.E)(t)), o.K.set(_, {
+    trustedDomains: f,
     trustedProtocols: p
   })
 }
 class y extends(i = a.ZP.Store) {
   initialize() {
     var e;
-    let t = null != (e = o.K.get(f)) ? e : {};
-    if (Array.isArray(t)) _ = new Set(null != t ? Array.from(t) : null), p = new Set;
+    let t = null != (e = o.K.get(_)) ? e : {};
+    if (Array.isArray(t)) f = new Set(null != t ? Array.from(t) : null), p = new Set;
     else {
       let {
         trustedDomains: e,
         trustedProtocols: n
       } = t;
-      _ = new Set(null != e ? Array.from(e) : null), p = new Set(null != n ? Array.from(n) : null)
+      f = new Set(null != e ? Array.from(e) : null), p = new Set(null != n ? Array.from(n) : null)
     }
   }
   isTrustedDomain(e) {

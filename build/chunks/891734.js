@@ -16,14 +16,14 @@ function s(e, t) {
     c = n.rootBoundary,
     u = n.padding,
     d = n.flipVariations,
-    f = n.allowedAutoPlacements,
-    _ = void 0 === f ? i.Ct : f,
+    _ = n.allowedAutoPlacements,
+    f = void 0 === _ ? i.Ct : _,
     p = (0, r.Z)(s),
     h = p ? d ? i.bw : i.bw.filter(function(e) {
       return (0, r.Z)(e) === p
     }) : i.mv,
     m = h.filter(function(e) {
-      return _.indexOf(e) >= 0
+      return f.indexOf(e) >= 0
     });
   0 === m.length && (m = h);
   var g = m.reduce(function(t, n) {

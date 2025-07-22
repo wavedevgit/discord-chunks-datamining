@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  B1: () => _,
+  B1: () => f,
   P7: () => g,
   UN: () => h,
-  Z9: () => f,
+  Z9: () => _,
   aO: () => d,
   az: () => m,
   i$: () => p
@@ -30,7 +30,7 @@ function d(e) {
   })
 }
 
-function f(e) {
+function _(e) {
   let {
     children: t
   } = e;
@@ -40,7 +40,7 @@ function f(e) {
   })
 }
 
-function _(e) {
+function f(e) {
   let {
     label: t,
     value: n,
@@ -65,17 +65,17 @@ function p(e) {
     discounts: i,
     originalAmount: a,
     interval: d,
-    currency: f,
+    currency: _,
     className: p,
     intervalCount: h,
     inTrialPeriod: m
-  } = e, g = e => null != i ? i.find(t => t.type === e) : null, E = g(s.eW.SUBSCRIPTION_PLAN), b = g(s.eW.ENTITLEMENT), y = null != E ? Math.floor(E.amount / a * 100) : null, O = (0, l.T4)(a, f);
+  } = e, g = e => null != i ? i.find(t => t.type === e) : null, E = g(s.eW.SUBSCRIPTION_PLAN), b = g(s.eW.ENTITLEMENT), y = null != E ? Math.floor(E.amount / a * 100) : null, O = (0, l.T4)(a, _);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(_, {
+    children: [(0, r.jsx)(f, {
       label: t,
       value: (0, r.jsxs)(r.Fragment, {
         children: [m ? c.intl.formatToPlainString(c.t.hXcaLS, {
-          price: (0, l.T4)(0, f)
+          price: (0, l.T4)(0, _)
         }) : n, null != y ? (0, r.jsxs)("div", {
           className: u.rowPercentDiscount,
           children: ["-", y, "%"]

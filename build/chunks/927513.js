@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 }), n(953529);
 var r = n(255367),
   i = n(120356),
@@ -12,26 +12,26 @@ var r = n(255367),
   c = n(586502),
   u = n(787528),
   d = n(388032),
-  f = n(381054);
-let _ = e => {
+  _ = n(381054);
+let f = e => {
   let {
     profileBadge: t,
     tenureBadge: n
-  } = e, i = (0, c.Z)(), _ = (0, u.J)(n.id, {
+  } = e, i = (0, c.Z)(), f = (0, u.J)(n.id, {
     ambient: i
   });
   return (0, r.jsxs)(s.Z, {
     assetComponent: (0, r.jsx)("img", {
-      src: _,
+      src: f,
       alt: "",
-      className: a()(f.badgeImage, {
-        [f.ambient]: i
+      className: a()(_.badgeImage, {
+        [_.ambient]: i
       }),
       height: i ? 80 : void 0
     }),
     tooltipWordmarkComponent: (0, r.jsx)(l.Z, {
       width: 56,
-      className: f.tooltipWordmark
+      className: _.tooltipWordmark
     }),
     children: [(0, r.jsx)(o.X6, {
       variant: "heading-xl/extrabold",
@@ -39,7 +39,7 @@ let _ = e => {
     }), (0, r.jsx)(o.xv, {
       variant: "text-xs/normal",
       color: "text-muted",
-      className: f.tooltipDescription,
+      className: _.tooltipDescription,
       children: t.description
     })]
   })

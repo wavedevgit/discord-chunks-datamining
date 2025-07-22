@@ -1,6 +1,6 @@
 /**
   Module ID: 95336
-  Original File Name: 5627df09b4582407
+  Original File Name: f4f2a0fac004a8a8
 **/
 .pro__30cbe {
     text-transform: uppercase
@@ -1068,6 +1068,14 @@
     text-transform: none
 }
 
+.searchDMQueryText__55c99 {
+    align-self: center;
+    flex: 1 1 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
 .keyCombo__55c99 {
     flex-grow: 0;
     flex-shrink: 0;
@@ -1730,4 +1738,4 @@
     margin-right: 8px
 }
 
-/*# sourceMappingURL=5627df09b4582407.css.map*/
+/*# sourceMappingURL=f4f2a0fac004a8a8.css.map*/

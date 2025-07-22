@@ -34,12 +34,12 @@ let c = () => ({
     icon: i.Ka2,
     description: l.intl.string(l.t["n/HqCg"])
   }),
-  f = () => ({
+  _ = () => ({
     color: r.Z.unsafe_rawColors.PREMIUM_PERK_GREEN.css,
     icon: i.OUq,
     description: l.intl.string(l.t.AU0zcX)
   }),
-  _ = () => ({
+  f = () => ({
     color: r.Z.unsafe_rawColors.PREMIUM_PERK_ORANGE.css,
     icon: i.lZ8,
     description: l.intl.string(l.t.zZe94u)
@@ -122,11 +122,11 @@ let c = () => ({
   };
 
 function T() {
-  return [_(), d(), p(), O()]
+  return [f(), d(), p(), O()]
 }
 
 function S() {
-  return [_(), h(s.Eu4.TIER_2), I(), O()]
+  return [f(), h(s.Eu4.TIER_2), I(), O()]
 }
 
 function A() {
@@ -134,7 +134,7 @@ function A() {
 }
 
 function N() {
-  return [m(), f(), h(s.Eu4.TIER_3), O()]
+  return [m(), _(), h(s.Eu4.TIER_3), O()]
 }
 
 function C() {

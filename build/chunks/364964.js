@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.r(t), n.d(t, {
-  default: () => _
+  default: () => f
 }), n(388685), n(35282), n(415506), n(704826);
 var r = n(466332),
   i = n(392711),
@@ -24,10 +24,10 @@ for (let e of u) {
 for (let [e, t] of d)
   if (null == e.match(c)) throw Error("Language name does not match regex: ".concat(e));
 
-function f(e) {
+function _(e) {
   return d.get(e.toLowerCase())
 }
-let _ = {
+let f = {
     highlight(e, t, n) {
       if (!h(t, e)) return null;
       Date.now();
@@ -39,7 +39,7 @@ let _ = {
     },
     hasLanguage: e => null != r.Z.getLanguage(e),
     isKnownLanguage: e => d.has(e.toLowerCase()),
-    resolveLanguageName: f
+    resolveLanguageName: _
   },
   p = a().repeat("/", 15);
 
@@ -52,7 +52,7 @@ function h(e, t) {
     let e = t.match(/[/]/g);
     if (null != e && (n += e.length) > 30) return !1
   }
-  let r = f(t);
+  let r = _(t);
   if (null != r && l.has(r)) {
     var i;
     let t = e.replace(/\s*/g, "").match(s);

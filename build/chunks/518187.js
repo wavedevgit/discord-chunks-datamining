@@ -10,27 +10,27 @@ var r = n(580983),
   c = s("species"),
   u = RegExp.prototype;
 e.exports = function(e, t, n, d) {
-  var f = s(e),
-    _ = !o(function() {
+  var _ = s(e),
+    f = !o(function() {
       var t = {};
-      return t[f] = function() {
+      return t[_] = function() {
         return 7
       }, 7 !== "" [e](t)
     }),
-    p = _ && !o(function() {
+    p = f && !o(function() {
       var t = !1,
         n = /a/;
       return "split" === e && ((n = {}).constructor = {}, n.constructor[c] = function() {
         return n
-      }, n.flags = "", n[f] = /./ [f]), n.exec = function() {
+      }, n.flags = "", n[_] = /./ [_]), n.exec = function() {
         return t = !0, null
-      }, n[f](""), !t
+      }, n[_](""), !t
     });
-  if (!_ || !p || n) {
-    var h = /./ [f],
-      m = t(f, "" [e], function(e, t, n, i, o) {
+  if (!f || !p || n) {
+    var h = /./ [_],
+      m = t(_, "" [e], function(e, t, n, i, o) {
         var s = t.exec;
-        return s === a || s === u.exec ? _ && !o ? {
+        return s === a || s === u.exec ? f && !o ? {
           done: !0,
           value: r(h, t, n, i)
         } : {
@@ -40,7 +40,7 @@ e.exports = function(e, t, n, d) {
           done: !1
         }
       });
-    i(String.prototype, e, m[0]), i(u, f, m[1])
+    i(String.prototype, e, m[0]), i(u, _, m[1])
   }
-  d && l(u[f], "sham", !0)
+  d && l(u[_], "sham", !0)
 }

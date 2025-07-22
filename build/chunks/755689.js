@@ -61,7 +61,7 @@ e.exports = function(e) {
         begin: /\.(parameter|forwardhelptargetname|forwardhelpcategory|remotehelprunspace|externalhelp)\s+\S+/
       }]
     },
-    f = e.inherit(e.COMMENT(null, null), {
+    _ = e.inherit(e.COMMENT(null, null), {
       variants: [{
         begin: /#/,
         end: /$/
@@ -71,7 +71,7 @@ e.exports = function(e) {
       }],
       contains: [d]
     }),
-    _ = {
+    f = {
       className: "built_in",
       variants: [{
         begin: "(".concat(n, ")+(-)[\\w\\d]+")
@@ -147,7 +147,7 @@ e.exports = function(e) {
         endsParent: !0
       })]
     },
-    y = [b, f, o, e.NUMBER_MODE, c, u, _, s, l, E],
+    y = [b, _, o, e.NUMBER_MODE, c, u, f, s, l, E],
     O = {
       begin: /\[/,
       end: /\]/,

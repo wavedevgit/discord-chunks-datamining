@@ -12,15 +12,15 @@ var r = n(255367),
   c = n(226690),
   u = n(146187),
   d = n(304789),
-  f = n(667137),
-  _ = n(946598);
+  _ = n(667137),
+  f = n(946598);
 
 function p(e) {
   let {
     shouldColorMix: t = !1
   } = e, {
     onClose: n
-  } = (0, f.v)();
+  } = (0, _.v)();
   return (0, r.jsx)(u.P, {
     onClick: n,
     colorMix: t
@@ -36,10 +36,10 @@ function h(e) {
   } = e;
   return (0, r.jsxs)(r.Fragment, {
     children: [null != t && (0, r.jsx)("div", {
-      className: _.headerLeading,
+      className: f.headerLeading,
       children: t
     }), a, (0, r.jsxs)("div", {
-      className: _.headerTrailing,
+      className: f.headerTrailing,
       children: [null != n && n, (0, r.jsx)(p, {
         shouldColorMix: i
       })]
@@ -53,13 +53,13 @@ function m(e) {
     trailing: n,
     hasGradient: a,
     children: s
-  } = e, [l, c] = i.useState(24), [u, d] = i.useState(24), f = i.useRef(null), h = i.useRef(null);
+  } = e, [l, c] = i.useState(24), [u, d] = i.useState(24), _ = i.useRef(null), h = i.useRef(null);
   return i.useLayoutEffect(() => {
     let e = new ResizeObserver(() => {
       let e = 0,
         t = 0;
-      if (null != f && null != f.current) {
-        let n = f.current.getBoundingClientRect();
+      if (null != _ && null != _.current) {
+        let n = _.current.getBoundingClientRect();
         e = Math.max(e, n.height), t = Math.max(t, n.width)
       }
       if (null != h && null != h.current) {
@@ -68,27 +68,27 @@ function m(e) {
       }
       d(Math.ceil(t)), c(Math.ceil(e))
     });
-    return null != f.current && e.observe(f.current), null != h.current && e.observe(h.current), () => e.disconnect()
+    return null != _.current && e.observe(_.current), null != h.current && e.observe(h.current), () => e.disconnect()
   }, []), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      ref: f,
-      className: o()(_.headerLeading, _.headerLeadingAbsolute),
+      ref: _,
+      className: o()(f.headerLeading, f.headerLeadingAbsolute),
       children: t
     }), (0, r.jsx)("div", {
-      className: _.headerLeadingSpacer,
+      className: f.headerLeadingSpacer,
       style: {
         height: l,
         width: u
       }
     }), s, (0, r.jsx)("div", {
-      className: _.headerTrailingSpacer,
+      className: f.headerTrailingSpacer,
       style: {
         height: l,
         width: u
       }
     }), (0, r.jsxs)("div", {
       ref: h,
-      className: o()(_.headerTrailing, _.headerTrailingAbsolute),
+      className: o()(f.headerTrailing, f.headerTrailingAbsolute),
       children: [null != n && n, (0, r.jsx)(p, {
         shouldColorMix: a
       })]
@@ -118,7 +118,7 @@ function b(e) {
     autoplay: !0,
     shouldAnimate: !n.enabled,
     importData: t.lottie,
-    className: _.lottie
+    className: f.lottie
   }) : null
 }
 
@@ -134,8 +134,8 @@ function y(e) {
     trailing: p
   } = e, {
     headingId: g
-  } = (0, f.v)(), E = null != t, y = c ? m : h, O = (0, r.jsx)("div", {
-    className: _.headerGraphic,
+  } = (0, _.v)(), E = null != t, y = c ? m : h, O = (0, r.jsx)("div", {
+    className: f.headerGraphic,
     children: (0, r.jsx)(b, {
       graphic: n
     })
@@ -149,20 +149,20 @@ function y(e) {
     color: "text-secondary",
     children: l
   }), T = (0, r.jsx)("header", {
-    className: o()(_.section, _.header, {
-      [_.headerCentered]: c
+    className: o()(f.section, f.header, {
+      [f.headerCentered]: c
     }),
     children: (0, r.jsxs)(s.Kq, {
       gap: 8,
       children: [(0, r.jsx)("div", {
-        className: _.headerLayout,
+        className: f.headerLayout,
         children: (0, r.jsx)(y, {
           leading: u,
           trailing: p,
           hasGradient: E,
           children: (0, r.jsxs)(s.Kq, {
             gap: 8,
-            className: _.headerMain,
+            className: f.headerMain,
             children: [null != n && O, null == n && null != i && v]
           })
         })
@@ -171,7 +171,7 @@ function y(e) {
   });
   return E ? (0, r.jsx)(d.$, {
     color: t,
-    className: _.headerGradient,
+    className: f.headerGradient,
     children: T
   }) : T
 }

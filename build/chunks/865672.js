@@ -3,8 +3,8 @@
 n.d(t, {
   De: () => p,
   EJ: () => h,
-  Ic: () => _,
-  JU: () => f
+  Ic: () => f,
+  JU: () => _
 }), n(413496), n(433524), n(35282), n(539854);
 var r = n(255367),
   i = n(73800),
@@ -16,7 +16,7 @@ var r = n(255367),
   u = n(183375);
 let d = RegExp("\\p{Emoji_Presentation}", "gu");
 
-function f(e) {
+function _(e) {
   var t, n;
   let {
     primaryColor: r,
@@ -25,8 +25,8 @@ function f(e) {
     useReducedMotion: s,
     roleStyle: l,
     includeConvenienceGlow: d,
-    animateGradient: f
-  } = e, _ = "username" === l, p = "dot" === l, h = _ && d;
+    animateGradient: _
+  } = e, f = "username" === l, p = "dot" === l, h = f && d;
   return {
     gradientStyle: {
       "--custom-gradient-color-1": null != r ? r : c.p6O,
@@ -34,21 +34,21 @@ function f(e) {
       "--custom-gradient-color-3": null != (n = null != a ? a : r) ? n : c.p6O
     },
     gradientClassname: o()(null != a ? u.threeColorGradient : u.twoColorGradient, {
-      [u.usernameGradient]: _,
+      [u.usernameGradient]: f,
       [u.convenienceGlowGradient]: h,
-      [u.convenienceGlowGradientActive]: h && f,
+      [u.convenienceGlowGradientActive]: h && _,
       [u.gradientDotAnimation]: !s && p,
-      [u.animateGradient]: f && _
+      [u.animateGradient]: _ && f
     }),
     gradientGlowClassname: o()(null != a ? u.threeColorGradient : u.twoColorGradient, u.usernameGlow, {
-      [u.usernameGradient]: _,
-      [u.animateGradient]: f && _,
-      [u.usernameGlowActive]: _ && f
+      [u.usernameGradient]: f,
+      [u.animateGradient]: _ && f,
+      [u.usernameGlowActive]: f && _
     })
   }
 }
 
-function _(e) {
+function f(e) {
   let {
     primaryColor: t,
     secondaryColor: n,
@@ -57,7 +57,7 @@ function _(e) {
     includeConvenienceGlow: o,
     animateGradient: c
   } = e, u = (0, s.e7)([l.Z], () => l.Z.useReducedMotion);
-  return i.useMemo(() => f({
+  return i.useMemo(() => _({
     primaryColor: t,
     secondaryColor: n,
     tertiaryColor: r,

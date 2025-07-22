@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Y9: () => d,
-  rT: () => f
+  rT: () => _
 });
 var r = n(46973),
   i = n(569545),
@@ -41,10 +41,10 @@ function d() {
     mediaSessionId: null != (e = o.Z.getMediaSessionId()) ? e : void 0,
     rtcConnectionId: o.Z.getRTCConnectionId(),
     mediaContext: r.Yn.DEFAULT
-  }, _())
+  }, f())
 }
 
-function f(e) {
+function _(e) {
   var t;
   let {
     channelId: n
@@ -55,10 +55,10 @@ function f(e) {
     rtcConnectionId: null == a ? void 0 : a.getRTCConnectionId(),
     mediaContext: r.Yn.STREAM,
     streamKey: e
-  }, _())
+  }, f())
 }
 
-function _() {
+function f() {
   var e, t, n;
   return {
     videoDeviceName: null == (e = a.Z.getVideoDevices()[a.Z.getVideoDeviceId()]) ? void 0 : e.name,

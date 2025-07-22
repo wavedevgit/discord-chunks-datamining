@@ -33,7 +33,7 @@ function d(e) {
   return e
 }
 
-function f(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -44,8 +44,8 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
+function f(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -81,7 +81,7 @@ function m(e, t) {
     });
   return i.forwardRef(function(t, u) {
     var {
-      children: f,
+      children: _,
       className: h,
       onResize: m,
       contentClassName: g,
@@ -121,7 +121,7 @@ function m(e, t) {
       onUpdate: m,
       resizeObserver: a,
       listenerMap: n
-    }), (0, r.jsx)("div", _(d({
+    }), (0, r.jsx)("div", f(d({
       ref: C,
       className: o()(h, {
         [c.fade]: y,
@@ -139,7 +139,7 @@ function m(e, t) {
         children: (0, r.jsxs)("div", {
           ref: S,
           className: o()(g, c.content),
-          children: [f, A && (0, r.jsx)("div", {
+          children: [_, A && (0, r.jsx)("div", {
             className: c.pointerCover
           })]
         })

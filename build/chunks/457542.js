@@ -9,13 +9,13 @@ var r = n(98405),
   c = n(733375),
   u = n(423582),
   d = n(556585),
-  f = a && a.prototype;
+  _ = a && a.prototype;
 if (r({
     target: "Promise",
     proto: !0,
     real: !0,
     forced: !!a && o(function() {
-      f.finally.call({
+      _.finally.call({
         then: function() {}
       }, function() {})
     })
@@ -34,8 +34,8 @@ if (r({
       } : e)
     }
   }), !i && l(a)) {
-  var _ = s("Promise").prototype.finally;
-  f.finally !== _ && d(f, "finally", _, {
+  var f = s("Promise").prototype.finally;
+  _.finally !== f && d(_, "finally", f, {
     unsafe: !0
   })
 }

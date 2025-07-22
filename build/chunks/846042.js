@@ -4,11 +4,11 @@ n.d(t, {
   DA: () => s,
   Db: () => u,
   RQ: () => d,
-  WG: () => f,
+  WG: () => _,
   ZL: () => c,
   ie: () => o,
   jg: () => a,
-  kT: () => _,
+  kT: () => f,
   n8: () => l
 });
 var r = n(250327),
@@ -95,7 +95,7 @@ function d(e) {
   }
 }
 
-function f(e, t) {
+function _(e, t) {
   var n, r = t > 0,
     i = r ? t : 1 - t;
   if (i <= 50) n = e || 100;
@@ -108,6 +108,6 @@ function f(e, t) {
   return r ? n : 1 - n
 }
 
-function _(e) {
+function f(e) {
   return e % 400 == 0 || e % 4 == 0 && e % 100 != 0
 }

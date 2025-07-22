@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(91192),
   u = n(442837),
   d = n(477690),
-  f = n(481060),
-  _ = n(2052),
+  _ = n(481060),
+  f = n(2052),
   p = n(607070),
   h = n(806966),
   m = n(254494),
@@ -92,8 +92,8 @@ function K(e) {
     category: l,
     handleCategorySelect: u,
     isWindowFocused: d,
-    useReducedMotion: _
-  } = e, p = (0, c.JA)("expression-guild-".concat(n)), h = l.type === S.En.GUILD ? null : l.id, m = t === n, E = l.type === S.En.GUILD ? l.guild : null, y = (0, r.jsxs)(f.P3F, L(w({}, p), {
+    useReducedMotion: f
+  } = e, p = (0, c.JA)("expression-guild-".concat(n)), h = l.type === S.En.GUILD ? null : l.id, m = t === n, E = l.type === S.En.GUILD ? l.guild : null, y = (0, r.jsxs)(_.P3F, L(w({}, p), {
     "aria-label": (0, O.Nf)(l, E),
     className: o()({
       [R.categoryItemGuildCategory]: null != E,
@@ -111,7 +111,7 @@ function K(e) {
     children: [null != E ? (0, r.jsx)(I.Z, {
       guild: E,
       isSelected: m,
-      shouldAnimate: !_ && d,
+      shouldAnimate: !f && d,
       isLocked: l.isNitroLocked
     }) : null, null == E && null != h ? (0, r.jsx)(v.Z, {
       categoryId: h,
@@ -145,7 +145,7 @@ let z = e => {
   } = e, b = h.kJ.useStore(e => e.activeCategoryIndex), y = (0, T.Ni)({
     sectionDescriptors: a,
     emojiListRef: n
-  }), v = (0, _.O)(), I = (0, O.kI)(s, c, null == c ? void 0 : c.guild_id, d), A = i.useMemo(() => g ? (0, O.ZF)() : I, [I, g]), N = i.useRef(null), P = (0, u.e7)([E.Z], () => E.Z.isFocused()), w = (0, u.e7)([p.Z], () => p.Z.useReducedMotion, []), D = i.useMemo(() => l().memoize((e, t) => {
+  }), v = (0, f.O)(), I = (0, O.kI)(s, c, null == c ? void 0 : c.guild_id, d), A = i.useMemo(() => g ? (0, O.ZF)() : I, [I, g]), N = i.useRef(null), P = (0, u.e7)([E.Z], () => E.Z.isFocused()), w = (0, u.e7)([p.Z], () => p.Z.useReducedMotion, []), D = i.useMemo(() => l().memoize((e, t) => {
     let n = A[t];
     if (null != n) return (0, r.jsx)(K, {
       activeIndex: b,
@@ -229,7 +229,7 @@ let z = e => {
     categoryHeight: x,
     getScrollOffsetForIndex: et,
     rowCountBySection: X,
-    children: e => U >= W && (0, r.jsx)(f.P3F, {
+    children: e => U >= W && (0, r.jsx)(_.P3F, {
       "aria-hidden": !Q,
       "aria-label": C.intl.string(C.t.dT0ct7),
       className: o()(R.unicodeShortcut, {
@@ -237,7 +237,7 @@ let z = e => {
       }),
       tabIndex: Q ? 0 : -1,
       onClick: () => ee(e),
-      children: (0, r.jsx)(f.EO4, {
+      children: (0, r.jsx)(_.EO4, {
         size: "custom",
         color: "currentColor",
         height: k,

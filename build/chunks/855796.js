@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => _
 });
 var r = n(544891),
   i = n(780384),
@@ -52,7 +52,7 @@ async function d(e) {
     c(e)
   }
 }
-let f = {
+let _ = {
   removeGameFriend: async function(e) {
     let {
       userId: t,

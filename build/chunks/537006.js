@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(755721),
   u = n(481060),
   d = n(906732),
-  f = n(335131),
-  _ = n(211644),
+  _ = n(335131),
+  f = n(211644),
   p = n(266454),
   h = n(605236),
   m = n(767714),
@@ -108,7 +108,7 @@ function R(e) {
         size: t ? c.zx.Sizes.TINY : c.zx.Sizes.SMALL,
         className: N.upsellButton,
         onClick: () => {
-          (0, f.mK)({
+          (0, _.mK)({
             analyticsLocations: a,
             openInLayer: !1,
             analyticsSource: o
@@ -126,14 +126,14 @@ function P(e) {
     className: a
   } = e, {
     themeType: c
-  } = (0, y.z)(), d = c === v.lY.MODAL, f = (0, p.Nj)(l.z.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS), m = (0, s.e7)([E.Z], () => E.Z.getGuildId());
+  } = (0, y.z)(), d = c === v.lY.MODAL, _ = (0, p.Nj)(l.z.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS), m = (0, s.e7)([E.Z], () => E.Z.getGuildId());
   if (i.useEffect(() => {
-      if (!f) return (0, h.kk)(l.z.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS), () => {
-        (0, _.gE)({
+      if (!_) return (0, h.kk)(l.z.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS), () => {
+        (0, f.gE)({
           content: l.z.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS
         }, !1)
       }
-    }, [f]), f) return null;
+    }, [_]), _) return null;
   let g = (0, r.jsx)("div", {
       children: (0, r.jsx)(u.Text, {
         variant: "text-sm/normal",

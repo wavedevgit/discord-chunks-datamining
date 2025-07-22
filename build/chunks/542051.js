@@ -1,7 +1,7 @@
 /** Chunk was on 95336 **/
 n.d(t, {
-  M: () => _,
-  Z: () => y
+  M: () => S,
+  Z: () => b
 }), n(415506), n(781311), n(388685);
 var r, s = n(255367),
   l = n(73800),
@@ -47,12 +47,59 @@ function g(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
+let m = e => {
+  let {
+    query: t,
+    searchFavorites: n,
+    showDMQueryText: r
+  } = e, {
+    filterCount: a,
+    queryContent: i,
+    isQueryEmpty: c
+  } = l.useMemo(() => {
+    var e, n, r;
+    let s = (0, u.kG)(t),
+      l = (0, u.$G)(s),
+      a = null != (n = l.content) ? n : "";
+    return {
+      filterCount: null != (r = null == (e = l.channel_id) ? void 0 : e.length) ? r : 0,
+      isQueryEmpty: 0 === a.length,
+      queryContent: a
+    }
+  }, [t]);
+  return n ? (0, s.jsx)("div", {
+    className: h.queryText,
+    children: d.intl.string(d.t["6RVtLC"])
+  }) : r ? a > 0 ? (0, s.jsx)(o.Text, {
+    variant: "text-sm/medium",
+    color: "text-secondary",
+    className: h.searchDMQueryText,
+    children: c ? d.intl.format(d.t.iV2ftr, {
+      filterCount: a
+    }) : d.intl.format(d.t["5CTmUl"], {
+      filterCount: a,
+      value: i
+    })
+  }) : (0, s.jsx)(o.Text, {
+    variant: "text-sm/medium",
+    color: "text-secondary",
+    className: h.searchDMQueryText,
+    children: c ? d.intl.string(d.t.w39VdH) : d.intl.format(d.t["9gKPv7"], {
+      value: i
+    })
+  }) : (0, s.jsx)("div", {
+    className: h.queryText,
+    children: d.intl.format(d.t.ub226e, {
+      value: t
+    })
+  })
+};
 
-function m(e) {
+function _(e) {
   e.stopPropagation(), e.preventDefault()
 }
 
-function _(e, t, n) {
+function S(e, t, n) {
   return {
     id: "".concat(e, "-").concat(t),
     role: "option",
@@ -60,7 +107,7 @@ function _(e, t, n) {
     "aria-selected": n
   }
 }
-class S extends(r = l.PureComponent) {
+class y extends(r = l.PureComponent) {
   renderQuery(e) {
     let {
       query: t,
@@ -70,23 +117,23 @@ class S extends(r = l.PureComponent) {
       onSelectSearchEverywhere: a,
       onHighlightQuery: c,
       hideQuery: u,
-      searchFavorites: p
+      searchFavorites: p,
+      showDMQueryText: _
     } = this.props;
     if (e || u) return null;
-    let m = -1 === r;
+    let y = -1 === r;
     return (0, s.jsxs)(s.Fragment, {
       children: [(0, s.jsxs)(o.P3F, g(f({
         className: i()(h.queryContainer, {
-          [h.focused]: m
+          [h.focused]: y
         })
-      }, _(n, -1, m)), {
+      }, S(n, -1, y)), {
         onMouseEnter: c,
         onClick: l,
-        children: [(0, s.jsx)("div", {
-          className: h.queryText,
-          children: p ? d.intl.string(d.t["6RVtLC"]) : d.intl.format(d.t.ub226e, {
-            value: t
-          })
+        children: [(0, s.jsx)(m, {
+          query: t,
+          searchFavorites: p,
+          showDMQueryText: _
         }), (0, s.jsx)("div", {
           className: h.queryShortcut,
           "aria-hidden": !0,
@@ -98,9 +145,9 @@ class S extends(r = l.PureComponent) {
         })]
       })), p && (0, s.jsxs)(o.P3F, g(f({
         className: i()(h.queryContainer, {
-          [h.focused]: m
+          [h.focused]: y
         })
-      }, _(n, -1, m)), {
+      }, S(n, -1, y)), {
         onMouseEnter: c,
         onClick: a,
         children: [(0, s.jsx)("div", {
@@ -146,7 +193,7 @@ class S extends(r = l.PureComponent) {
       style: {
         width: r
       },
-      onMouseDown: m,
+      onMouseDown: _,
       role: "listbox",
       id: n,
       tabIndex: -1,
@@ -173,7 +220,7 @@ class S extends(r = l.PureComponent) {
           channelContainerClassName: h.channelContainer,
           textContainerClassName: h.searchResultNameContainer
         });
-      return (0, s.jsx)(o.P3F, g(f({}, _(e, -1, -1 === r)), {
+      return (0, s.jsx)(o.P3F, g(f({}, S(e, -1, -1 === r)), {
         className: h.inChannelOptionContainer,
         onClick: l,
         children: (0, s.jsx)(o.Text, {
@@ -188,9 +235,9 @@ class S extends(r = l.PureComponent) {
     })
   }
 }
-p(S, "defaultProps", {
+p(y, "defaultProps", {
   renderInitialState: () => null,
   hideQuery: !1,
   width: 320
 });
-let y = S
+let b = y

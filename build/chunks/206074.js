@@ -21,18 +21,18 @@ function c(e) {
     location: n
   }, {
     autoTrackExposure: !0
-  }), d = (0, l.Z)(t), f = null == d ? void 0 : d.id, {
-    data: _
-  } = (0, o.IX)(f), {
+  }), d = (0, l.Z)(t), _ = null == d ? void 0 : d.id, {
+    data: f
+  } = (0, o.IX)(_), {
     bot: p
-  } = null != _ ? _ : {
+  } = null != f ? f : {
     bot: null
   };
-  return r.useMemo(() => u && null != f && null != p && null != _ && (0, a.ye)(_) ? () => {
+  return r.useMemo(() => u && null != _ && null != p && null != f && (0, a.ye)(f) ? () => {
     (0, i.W)({
-      appId: f,
+      appId: _,
       botId: p.id,
       analyticsLocations: null != c ? c : []
     })
-  } : null, [c, u, _, p, f])
+  } : null, [c, u, f, p, _])
 }

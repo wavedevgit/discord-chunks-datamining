@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 });
 var r = n(255367);
 n(73800);
@@ -13,7 +13,7 @@ var i = n(120356),
   c = n(149203),
   u = n(388032),
   d = n(669486);
-let f = e => {
+let _ = e => {
     let {
       emojiSubCategory: t
     } = e;
@@ -30,14 +30,14 @@ let f = e => {
       })]
     })
   },
-  _ = e => {
+  f = e => {
     let {
       className: t,
       graphicPrimary: n,
       graphicSecondary: i,
       titlePrimary: s,
       titleSecondary: l,
-      isFavorite: _ = !1,
+      isFavorite: f = !1,
       emojiSubCategory: p = c.t0.NONE
     } = e;
     return (0, r.jsxs)("div", {
@@ -51,10 +51,10 @@ let f = e => {
         children: [(0, r.jsxs)(o.Text, {
           className: d.titlePrimary,
           variant: "text-md/semibold",
-          children: [_ ? (0, r.jsx)(o.r7p, {
+          children: [f ? (0, r.jsx)(o.r7p, {
             size: "custom",
             color: "currentColor",
-            "aria-label": _ ? u.intl.formatToPlainString(u.t["+fdUkZ"], {
+            "aria-label": f ? u.intl.formatToPlainString(u.t["+fdUkZ"], {
               names: s
             }) : void 0,
             width: 15,
@@ -70,7 +70,7 @@ let f = e => {
         className: d.graphicSecondary,
         "aria-hidden": !0,
         children: i
-      }) : (0, r.jsx)(f, {
+      }) : (0, r.jsx)(_, {
         emojiSubCategory: p
       })]
     })

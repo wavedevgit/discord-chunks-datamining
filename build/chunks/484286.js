@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => _
 }), n(388685);
 var r, i = n(255367),
   a = n(73800),
@@ -131,4 +131,4 @@ class d extends(r = a.PureComponent) {
 c(d, "defaultProps", {
   paused: !0
 });
-let f = d
+let _ = d

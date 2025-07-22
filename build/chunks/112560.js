@@ -24,14 +24,14 @@ function d(e) {
     header: i,
     description: u,
     errorCodeMessage: d,
-    size: f,
-    className: _,
+    size: _,
+    className: f,
     artURL: p,
     noArt: h = !1,
     selected: m = !1
   } = e;
   return (0, r.jsxs)(l.Z, {
-    className: _,
+    className: f,
     justify: l.Z.Justify.CENTER,
     align: l.Z.Align.CENTER,
     direction: l.Z.Direction.VERTICAL,
@@ -39,7 +39,7 @@ function d(e) {
       padding: 4
     },
     children: [!h && null != p && (0, r.jsx)("div", {
-      className: a()(c.art, c[f]),
+      className: a()(c.art, c[_]),
       style: {
         backgroundImage: "url(".concat(p, ")")
       }
@@ -54,7 +54,7 @@ function d(e) {
       color: "text-muted",
       selectable: !0,
       children: d
-    }) : null, null != u && (null == d || "small" !== f) ? (0, r.jsx)(s.Text, {
+    }) : null, null != u && (null == d || "small" !== _) ? (0, r.jsx)(s.Text, {
       color: "none",
       className: c.description,
       variant: "text-sm/medium",

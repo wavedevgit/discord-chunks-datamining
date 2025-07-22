@@ -12,8 +12,8 @@ var r = n(392711),
   c = n(781792),
   u = n(962086),
   d = n(160404),
-  f = n(152376),
-  _ = n(592125),
+  _ = n(152376),
+  f = n(592125),
   p = n(271383),
   h = n(594174),
   m = n(626135),
@@ -150,9 +150,9 @@ let L = {
       i = (0, v.L6)(r),
       a = (0, v.dX)(r),
       o = O.Z.getEnabled(e) ? O.Z.getDefaultChannelIds(e) : [],
-      [c, f] = (0, v.Ee)(e, t, o),
+      [c, _] = (0, v.Ee)(e, t, o),
       b = [...a, ...o],
-      N = b.map(e => _.Z.getChannel(e)).filter(E.lm),
+      N = b.map(e => f.Z.getChannel(e)).filter(E.lm),
       R = (0, I.v)(e, new Set(b), N, !0).length,
       D = null == n ? [] : n.options.map(e => e.id);
     if (m.default.track(T.rMx.GUILD_ONBOARDING_STEP_COMPLETED, P(C({}, (0, l.hH)(e)), {
@@ -165,7 +165,7 @@ let L = {
         roles_granted: i.size,
         channels_granted: R,
         guild_onboarding_covered_channel_ids: c.map(e => e.id),
-        guild_onboarding_uncovered_channel_ids: f.map(e => e.id)
+        guild_onboarding_uncovered_channel_ids: _.map(e => e.id)
       })), (0, s.Ju)(e, A.W.GUILD_ONBOARDING_QUESTION, y.default.fromTimestamp(Date.now())), w(e, !0), d.Z.isFullServerPreview(e)) {
       (0, u.zS)(e, b, []), (0, u.aq)(e, {
         optInEnabled: !0
@@ -184,7 +184,7 @@ let L = {
   },
   onboardExistingMember(e, t) {
     let n = new Set(t);
-    (O.Z.getEnabled(e) ? O.Z.getDefaultChannelIds(e) : []).forEach(e => n.add(e)), n.size > 0 && (0, f.Mo)(e, Array.from(n), !0, {
+    (O.Z.getEnabled(e) ? O.Z.getDefaultChannelIds(e) : []).forEach(e => n.add(e)), n.size > 0 && (0, _.Mo)(e, Array.from(n), !0, {
       page: T.ZY5.GUILD_ONBOARDING
     })
   },

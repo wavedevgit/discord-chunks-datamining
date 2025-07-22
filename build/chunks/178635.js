@@ -13,8 +13,8 @@ var r = n(392711),
   c = n(695346),
   u = n(19780),
   d = n(115470),
-  f = n(250454),
-  _ = n(102824),
+  _ = n(250454),
+  f = n(102824),
   p = n(681926),
   h = n(531578);
 
@@ -92,7 +92,7 @@ let y = 200,
     [h.nw.IN_APP_REPORTS]: {
       cooldown: 1728e5,
       chance: .5,
-      group: h.FB.SOCIAL,
+      group: h.FB.SAFETY,
       hotspot: o.v6.IN_APP_REPORTS_FEEDBACK,
       storageKey: "inAppReportsFeedback",
       feedbackType: h.nw.IN_APP_REPORTS
@@ -100,7 +100,7 @@ let y = 200,
     [h.nw.USER_DM_MUTE]: {
       cooldown: 6048e5,
       chance: 1,
-      group: h.FB.SOCIAL,
+      group: h.FB.SAFETY,
       hotspot: o.v6.USER_DM_MUTE_FEEDBACK,
       storageKey: "userDmMute",
       feedbackType: h.nw.USER_DM_MUTE
@@ -108,7 +108,7 @@ let y = 200,
     [h.nw.BLOCK_USER]: {
       cooldown: 0,
       chance: 1,
-      group: h.FB.SOCIAL,
+      group: h.FB.SAFETY,
       hotspot: o.v6.BLOCK_USER_FEEDBACK,
       storageKey: "blockUser",
       feedbackType: h.nw.BLOCK_USER
@@ -126,7 +126,15 @@ let y = 200,
       storageKey: "searchResultsFeedback",
       feedbackType: h.nw.SEARCH_RESULTS,
       eligibilityChecks: [R]
-    })
+    }),
+    [h.nw.AGE_VERIFICATION]: {
+      cooldown: 0,
+      chance: 1,
+      group: h.FB.SAFETY,
+      hotspot: o.v6.AGE_VERIFICATION_FEEDBACK,
+      storageKey: "ageVerificationFeedback",
+      feedbackType: h.nw.AGE_VERIFICATION
+    }
   };
 
 function I(e) {
@@ -134,7 +142,7 @@ function I(e) {
   if (__OVERLAY__) return !1;
   let {
     overrideEligibility: r
-  } = (0, _.j)({
+  } = (0, f.j)({
     location: "FeedbackManager"
   });
   if (r) return !0;
@@ -153,7 +161,7 @@ function I(e) {
 function T(e) {
   let {
     persistToBackend: t
-  } = (0, f.O)({
+  } = (0, _.O)({
     location: "FeedbackManager/".concat(e.feedbackType)
   });
   if (!t) return s.Z.hasHotspot(e.hotspot);
@@ -177,7 +185,7 @@ function S(e) {
 function A(e, t) {
   let {
     persistToBackend: n
-  } = (0, f.O)({
+  } = (0, _.O)({
     location: "FeedbackManager/".concat(e.feedbackType)
   });
   if (n) {
@@ -220,7 +228,7 @@ function R(e) {
 function P(e) {
   let {
     persistToBackend: t
-  } = (0, f.O)({
+  } = (0, _.O)({
     location: "FeedbackManager/".concat(e)
   });
   if (t) c.A2.updateSetting(t => b(g({}, t), {

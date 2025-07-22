@@ -13,8 +13,8 @@ var i = n(392711),
   c = n(687516),
   u = n(928518),
   d = n(314897),
-  f = n(592125),
-  _ = n(158776),
+  _ = n(592125),
+  f = n(158776),
   p = n(19780),
   h = n(959457),
   m = n(178635),
@@ -68,7 +68,8 @@ class I extends m.Z {
       EMBEDDED_ACTIVITY_CLOSE: e => this.handleActivityClose(e),
       IN_APP_REPORTS_SHOW_FEEDBACK: e => this.handleInAppReportsFeedback(e),
       USER_DM_MUTE_SHOW_FEEDBACK: e => this.handleUserDmMuteFeedback(e),
-      BLOCK_USER_SHOW_FEEDBACK: () => this.handleBlockUserFeedback()
+      BLOCK_USER_SHOW_FEEDBACK: () => this.handleBlockUserFeedback(),
+      AGE_VERIFICATION_SHOW_FEEDBACK: () => this.handleAgeVerificationFeedback()
     }), b(this, "handleVoiceChannelFeedback", e => {
       let {
         analyticsData: t
@@ -97,7 +98,7 @@ class I extends m.Z {
       let {
         streamKey: o,
         canShowFeedback: s
-      } = e, u = (0, l.my)(o), f = (0, c.L2)(u, _.Z), p = null != (i = h.Z.getVideoStats(o)) ? i : {}, m = y({
+      } = e, u = (0, l.my)(o), _ = (0, c.L2)(u, f.Z), p = null != (i = h.Z.getVideoStats(o)) ? i : {}, m = y({
         media_session_id: h.Z.getMediaSessionId(o),
         rtc_connection_id: h.Z.getRtcConnectionId(o),
         stream_region: h.Z.getRegion(o),
@@ -111,7 +112,7 @@ class I extends m.Z {
           } = await Promise.all([n.e("60137"), n.e("50461")]).then(n.bind(n, 142402));
           return t => (0, r.jsx)(e, v(y({
             stream: u,
-            streamApplication: f,
+            streamApplication: _,
             isStreamer: u.ownerId === d.default.getId()
           }, t), {
             analyticsData: m
@@ -137,7 +138,7 @@ class I extends m.Z {
         applicationId: t,
         location: i,
         showFeedback: l
-      } = e, c = s.Z.getApplication(t), d = (0, o.p)(i), _ = f.Z.getChannel(d), h = {
+      } = e, c = s.Z.getApplication(t), d = (0, o.p)(i), f = _.Z.getChannel(d), h = {
         rtc_connection_id: p.Z.getRTCConnectionId(),
         media_session_id: p.Z.getMediaSessionId()
       }, m = u.Z.getWindowOpen(E.KJ3.CHANNEL_CALL_POPOUT) ? a.u1M : a.z1l;
@@ -148,7 +149,7 @@ class I extends m.Z {
           } = await Promise.all([n.e("60137"), n.e("89")]).then(n.bind(n, 450634));
           return t => (0, r.jsx)(e, v(y({}, t), {
             activityApplication: c,
-            channel: _,
+            channel: f,
             embeddedActivityLocation: i,
             analyticsData: h
           }))
@@ -195,7 +196,7 @@ class I extends m.Z {
           return t => (0, r.jsx)(e, y({}, t))
         })
       })
-    })
+    }), b(this, "handleAgeVerificationFeedback", () => {})
   }
 }
 let T = new I

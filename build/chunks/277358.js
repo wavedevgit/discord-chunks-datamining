@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 }), n(388685);
 var r = n(570140),
   i = n(147913),
@@ -36,7 +36,7 @@ let d = {
   }],
   leaveGameLogPrefix: "[FLog::SingleSurfaceApp] returnToLuaApp:"
 };
-class f extends i.Z {
+class _ extends i.Z {
   constructor(...e) {
     super(...e), u(this, "currentInterval_", null), u(this, "currentSubgameInfo_", null), u(this, "actions", {
       POST_CONNECTION_OPEN: () => this.handlePostConnectionOpen(),
@@ -61,4 +61,4 @@ class f extends i.Z {
     })
   }
 }
-let _ = new f
+let f = new _

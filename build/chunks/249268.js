@@ -13,8 +13,8 @@ var i = n(442837),
   c = n(864138),
   u = n(986398),
   d = n(69589),
-  f = n(388032),
-  _ = n(734842);
+  _ = n(388032),
+  f = n(734842);
 
 function p(e) {
   let {
@@ -27,7 +27,7 @@ function p(e) {
   return (0, r.jsx)(c.z, {
     imageUrl: h,
     children: (0, r.jsxs)("div", {
-      className: _.userContainer,
+      className: f.userContainer,
       children: [(0, r.jsx)(d.Z, {
         user: p,
         rank: 1,
@@ -37,22 +37,22 @@ function p(e) {
         horizontal: !0
       }), (0, r.jsxs)("div", {
         children: [(0, r.jsxs)("div", {
-          className: _.userNameContainer,
+          className: f.userNameContainer,
           children: [(0, r.jsx)(a.Text, {
             variant: "text-sm/semibold",
-            className: _.userName,
+            className: f.userName,
             children: m
           }), (0, r.jsx)(a.LZC, {
             size: 4,
             horizontal: !0
           }), (0, r.jsx)(u.Z, {
-            className: _.winnerImage,
+            className: f.winnerImage,
             leaderboard: n
           })]
         }), (0, r.jsx)(a.Text, {
           variant: "text-xs/normal",
-          className: _.userSubtitle,
-          children: f.intl.string(f.t["0ScUkZ"])
+          className: f.userSubtitle,
+          children: _.intl.string(_.t["0ScUkZ"])
         })]
       })]
     })

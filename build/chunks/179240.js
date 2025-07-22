@@ -12,7 +12,7 @@ var i, a = n(255367),
   u = n(84735),
   d = n(283574);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -21,14 +21,14 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -159,9 +159,9 @@ class y extends(i = o.PureComponent) {
       } = e,
       i = m(e, ["style", "className", "onResize"]);
     delete i.fontWidthEstimate;
-    let o = _({}, this.state, t);
+    let o = f({}, this.state, t);
     return (0, a.jsx)(u.t, {
-      children: (0, a.jsx)("textarea", h(_({}, i), {
+      children: (0, a.jsx)("textarea", h(f({}, i), {
         className: l()(n, d.scrollbarGhostHairline),
         ref: this.handleSetRef,
         style: o,
@@ -170,9 +170,9 @@ class y extends(i = o.PureComponent) {
     })
   }
   constructor(e) {
-    super(e), f(this, "_textArea", void 0), f(this, "handleSetRef", e => {
+    super(e), _(this, "_textArea", void 0), _(this, "handleSetRef", e => {
       this._textArea = e
-    }), f(this, "handleChange", e => {
+    }), _(this, "handleChange", e => {
       let {
         onChange: t
       } = this.props;
@@ -182,7 +182,7 @@ class y extends(i = o.PureComponent) {
     }
   }
 }
-f(y, "defaultProps", {
+_(y, "defaultProps", {
   autoFocus: !1,
   disabled: !1,
   autoCorrect: "off"

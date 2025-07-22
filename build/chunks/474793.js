@@ -17,10 +17,10 @@ e.exports = function(e) {
     c = t.either(i, a, o, s),
     u = t.concat(t.optional(/\.|\.\/|\//), c, t.anyNumberOfTimes(t.concat(l, c))),
     d = t.concat("(", o, "|", s, ")(?==)"),
-    f = {
+    _ = {
       begin: u
     },
-    _ = e.inherit(f, {
+    f = e.inherit(_, {
       keywords: r
     }),
     p = {
@@ -35,7 +35,7 @@ e.exports = function(e) {
         begin: /=/,
         end: /=/,
         starts: {
-          contains: [e.NUMBER_MODE, e.QUOTE_STRING_MODE, e.APOS_STRING_MODE, _, p]
+          contains: [e.NUMBER_MODE, e.QUOTE_STRING_MODE, e.APOS_STRING_MODE, f, p]
         }
       }
     },
@@ -50,28 +50,28 @@ e.exports = function(e) {
       }]
     },
     g = {
-      contains: [e.NUMBER_MODE, e.QUOTE_STRING_MODE, e.APOS_STRING_MODE, m, h, _, p],
+      contains: [e.NUMBER_MODE, e.QUOTE_STRING_MODE, e.APOS_STRING_MODE, m, h, f, p],
       returnEnd: !0
     };
-  p.contains = [e.inherit(f, {
+  p.contains = [e.inherit(_, {
     className: "name",
     keywords: n,
     starts: e.inherit(g, {
       end: /\)/
     })
   })];
-  let E = e.inherit(f, {
+  let E = e.inherit(_, {
       keywords: n,
       className: "name",
       starts: e.inherit(g, {
         end: /\}\}/
       })
     }),
-    b = e.inherit(f, {
+    b = e.inherit(_, {
       keywords: n,
       className: "name"
     }),
-    y = e.inherit(f, {
+    y = e.inherit(_, {
       className: "name",
       keywords: n,
       starts: e.inherit(g, {

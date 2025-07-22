@@ -13,8 +13,8 @@ var i = n(120356),
   c = n(206295),
   u = n(594174),
   d = n(5192),
-  f = n(528567),
-  _ = n(371583),
+  _ = n(528567),
+  f = n(371583),
   p = n(388032),
   h = n(445232);
 
@@ -41,8 +41,8 @@ function g(e) {
     sort_by_statistic_id: O
   } = E.guild_settings, v = null != (o = null == y || null == (i = y.statistics) || null == (n = i[O]) ? void 0 : n.value) ? o : 0, I = p.intl.formatToPlainString(p.t.yhdo8v, {
     value: v,
-    statisticName: (0, f.C)(O)
-  }), T = (0, _.j)(E), {
+    statisticName: (0, _.C)(O)
+  }), T = (0, f.j)(E), {
     primaryColor: S,
     secondaryColor: A
   } = (0, c.Z)("".concat(T, "?forColors")), N = (0, s.e7)([u.default], () => u.default.getUser(null == y ? void 0 : y.user_id));

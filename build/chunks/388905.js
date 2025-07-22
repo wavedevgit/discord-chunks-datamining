@@ -27,8 +27,8 @@ var i = n(120356),
   c = n(905656),
   u = n(600164),
   d = n(313201),
-  f = n(565138),
-  _ = n(361207),
+  _ = n(565138),
+  f = n(361207),
   p = n(63063),
   h = n(981631),
   m = n(388032),
@@ -147,7 +147,7 @@ let N = e => {
       animate: i = !1,
       className: a
     } = e;
-    return (0, r.jsx)(f.Z, {
+    return (0, r.jsx)(_.Z, {
       active: !0,
       guild: t,
       size: n,
@@ -155,7 +155,7 @@ let N = e => {
       className: a
     })
   };
-C.Sizes = f.Z.Sizes;
+C.Sizes = _.Z.Sizes;
 let R = e => {
   let {
     className: t,
@@ -179,8 +179,8 @@ let P = e => {
       className: l,
       inputClassName: c,
       setRef: u,
-      type: f = "text",
-      onChange: _,
+      type: _ = "text",
+      onChange: f,
       autoComplete: p,
       autoFocus: h,
       maxLength: m,
@@ -200,7 +200,7 @@ let P = e => {
       htmlFor: T,
       children: [(0, r.jsx)(s.oil, {
         name: b,
-        type: f,
+        type: _,
         value: o,
         inputRef: u,
         placeholder: i,
@@ -208,7 +208,7 @@ let P = e => {
           [g.inputError]: null != n
         }),
         "aria-label": t,
-        onChange: _,
+        onChange: f,
         autoComplete: p,
         autoFocus: h,
         maxLength: m,
@@ -329,9 +329,9 @@ let P = e => {
     return (0, r.jsxs)(w, {
       className: t,
       children: [(0, r.jsx)(o.zx, {
-        onClick: () => window.open((0, _.t3)()),
+        onClick: () => window.open((0, f.t3)()),
         children: m.intl.format(m.t.JoS1i4, {
-          platform: (0, _.DW)()
+          platform: (0, f.DW)()
         })
       }), (0, r.jsx)(D, {
         className: g.downloadButtonSubtext,

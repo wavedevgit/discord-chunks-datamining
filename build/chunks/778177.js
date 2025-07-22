@@ -383,7 +383,8 @@ class $ extends s.PureComponent {
       channel: a,
       onSelectSearchInSelectedChannel: () => this.handleSearchInChannel({
         searchAutocompleteSelectAction: D.Z.CLICK
-      })
+      }),
+      showDMQueryText: l === F.aib.DMS && (0, A.R6)(l)
     })
   }
   constructor(...e) {

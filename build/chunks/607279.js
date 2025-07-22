@@ -20,7 +20,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -32,7 +32,7 @@ function f(e) {
   }
   return e
 }
-let _ = 100,
+let f = 100,
   p = "search";
 class h extends(r = a.Component) {
   render() {
@@ -44,7 +44,7 @@ class h extends(r = a.Component) {
       inputClassName: a,
       className: o,
       onChange: d,
-      onFocus: f,
+      onFocus: _,
       onBlur: h,
       onKeyPress: m,
       autoComplete: g,
@@ -65,11 +65,11 @@ class h extends(r = a.Component) {
             enabled: !1
           },
           name: p,
-          maxLength: _,
+          maxLength: f,
           className: u.searchBoxInputWrapper,
           inputClassName: s()(u.searchBoxInput, a),
           onChange: d,
-          onFocus: f,
+          onFocus: _,
           onBlur: h,
           onKeyPress: m,
           value: v ? r : "",
@@ -115,6 +115,6 @@ class h extends(r = a.Component) {
 d(h, "defaultProps", {
   autoComplete: !1
 });
-let m = a.forwardRef((e, t) => (0, i.jsx)(h, f({
+let m = a.forwardRef((e, t) => (0, i.jsx)(h, _({
   forwardedRef: t
 }, e)))

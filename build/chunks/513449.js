@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Ku: () => _,
+  Ku: () => f,
   MV: () => p,
-  ZP: () => f
+  ZP: () => _
 });
 var r = n(73800),
   i = n(97519),
@@ -16,9 +16,9 @@ var r = n(73800),
 let d = (0, i.U)(e => ({
     isOnStartStageScreen: !0
   })),
-  f = d;
+  _ = d;
 
-function _(e) {
+function f(e) {
   (0, a.j)(() => d.setState({
     isOnStartStageScreen: e
   }))
@@ -30,6 +30,6 @@ function p(e) {
     i = (0, u.Z)(e.id),
     a = n && !i;
   r.useEffect(() => {
-    t ? a || _(!1) : _(a)
+    t ? a || f(!1) : f(a)
   }, [t, a])
 }

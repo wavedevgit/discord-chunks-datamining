@@ -3,11 +3,11 @@
 let r;
 n.d(t, {
   XZ: () => p,
-  az: () => _,
+  az: () => f,
   d2: () => d,
   eH: () => u,
   oe: () => h,
-  rI: () => f
+  rI: () => _
 }), n(35282), n(388685);
 var i = n(36140),
   a = n(544891),
@@ -41,11 +41,11 @@ function d() {
   return null != r ? Promise.resolve(r) : (0, i.loadStripe)(s.Ai1.STRIPE.KEY).then(e => (r = e, e))
 }
 
-function f() {
+function _() {
   return null == s.Ai1.STRIPE.KEY ? (l.warn("getStripeClientMode() called before PaymentSettings.STRIPE.KEY initialized: ", s.Ai1.STRIPE.KEY), "unknown") : s.Ai1.STRIPE.KEY.startsWith("pk_live") ? "live" : s.Ai1.STRIPE.KEY.startsWith("pk_test") ? "test" : (l.warn("Unexpected value for Stripe public key: ", s.Ai1.STRIPE.KEY), "unknown")
 }
 
-function _(e) {
+function f(e) {
   var t, n, r, i, a, o, s, l;
   let {
     billing_details: c

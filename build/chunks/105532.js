@@ -9,11 +9,11 @@ var r = n(286233),
   c = a.apply(l()),
   u = n(340535),
   d = o("Array.prototype.slice"),
-  f = function(e, t) {
+  _ = function(e, t) {
     return i(e), c(e, d(arguments, 1))
   };
-r(f, {
+r(_, {
   getPolyfill: l,
   implementation: s,
   shim: u
-}), e.exports = f
+}), e.exports = _

@@ -13,7 +13,7 @@ var r = n(255367),
   u = n(594174),
   d = n(388032);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,14 +22,14 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -55,7 +55,7 @@ function h(e, t) {
 function m(e) {
   let {
     user: t,
-    location: f = "ContextMenu",
+    location: _ = "ContextMenu",
     onFriendRequestSent: p,
     onFriendRemove: m,
     appContext: g
@@ -76,7 +76,7 @@ function m(e) {
       let {
         ConfirmModal: e
       } = await Promise.resolve().then(n.bind(n, 878678));
-      return t => (0, r.jsx)(e, h(_({
+      return t => (0, r.jsx)(e, h(f({
         header: d.intl.formatToPlainString(d.t.fPLvZW, {
           name: b
         }),
@@ -84,7 +84,7 @@ function m(e) {
         cancelText: d.intl.string(d.t["ETE/oK"]),
         onConfirm: () => {
           s.Z.removeFriend(E, {
-            location: f
+            location: _
           }), A(!1), null == m || m()
         }
       }, t), {
@@ -110,7 +110,7 @@ function m(e) {
       S || (s.Z.addRelationship({
         userId: E,
         context: {
-          location: f
+          location: _
         }
       }), A(!0), null == p || p())
     },

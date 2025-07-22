@@ -18,7 +18,7 @@ let c = 16,
       icon: a,
       isCollapsed: u,
       onClick: d,
-      "aria-label": f
+      "aria-label": _
     } = e;
     return (0, r.jsxs)("div", {
       className: o()(l.wrapper, i),
@@ -29,7 +29,7 @@ let c = 16,
           [l.interactive]: null != u
         }),
         "aria-expanded": null != u ? !u : void 0,
-        "aria-label": f,
+        "aria-label": _,
         children: [null != a && (0, r.jsx)("div", {
           "aria-hidden": !0,
           className: l.headerIcon,

@@ -15,8 +15,8 @@ var r = n(255367),
   c = n(866442),
   u = n(1561),
   d = n(507274),
-  f = n(84735),
-  _ = n(463208),
+  _ = n(84735),
+  f = n(463208),
   p = n(481060),
   h = n(408886),
   m = n(44315),
@@ -98,12 +98,12 @@ function w(e) {
     disabled: l = !1,
     style: u = {},
     onClick: d,
-    isGradient: _ = !1,
+    isGradient: f = !1,
     "aria-label": h,
     gradientStart: g,
     gradientEnd: b
   } = e, O = (0, s.JA)("color-".concat(t)), I = {};
-  if (_ && null != g && null != b) {
+  if (f && null != g && null != b) {
     let e = (0, c.Rf)(g),
       t = (0, c.Rf)(b);
     I = {
@@ -112,7 +112,7 @@ function w(e) {
   } else I = {
     backgroundColor: null != t ? (0, c.Rf)(t) : u.backgroundColor
   };
-  let S = _ ? g : t,
+  let S = f ? g : t,
     A = !1;
 
   function N() {
@@ -125,7 +125,7 @@ function w(e) {
       color: (0, m.Lq)(A ? E.Ilk.WHITE_500 : E.Ilk.BLACK_500)
     })
   }
-  return i && !a ? A = !0 : (i || a) && (A = (0, c.Bd)(null != S ? S : E.p6O) > .1), (0, r.jsx)(f.t, {
+  return i && !a ? A = !0 : (i || a) && (A = (0, c.Bd)(null != S ? S : E.p6O) > .1), (0, r.jsx)(_.t, {
     offset: -2,
     children: (0, r.jsxs)("button", T(v({
       type: "button",
@@ -133,16 +133,16 @@ function w(e) {
         [y.disabled]: l,
         [y.default]: n,
         [y.custom]: i,
-        [y.noColor]: null == t && !_,
-        [y.gradientPreset]: _
+        [y.noColor]: null == t && !f,
+        [y.gradientPreset]: f
       }),
       disabled: l,
-      onClick: () => null == d ? void 0 : d(_ ? {
+      onClick: () => null == d ? void 0 : d(f ? {
         start: g,
         end: b
       } : t),
       style: v({}, u, I),
-      "aria-label": null != h ? h : _ ? "Gradient ".concat(g, "-").concat(b) : I.backgroundColor
+      "aria-label": null != h ? h : f ? "Gradient ".concat(g, "-").concat(b) : I.backgroundColor
     }, O), {
       children: [i ? (0, r.jsx)(p.vdY, {
         size: "custom",
@@ -197,7 +197,7 @@ function x(e) {
     onChange: a,
     onClose: s,
     suggestedColors: l,
-    middle: f,
+    middle: _,
     footer: m,
     showEyeDropper: E,
     wrapperComponentType: O,
@@ -266,7 +266,7 @@ function x(e) {
           },
           color: L.pending.hsl
         })
-      }), f, (0, r.jsxs)("div", {
+      }), _, (0, r.jsxs)("div", {
         className: y.customColorPickerInputContainer,
         children: [E && null != S && (0, r.jsx)(g.JO, {
           onClick: k,
@@ -274,7 +274,7 @@ function x(e) {
           tooltipPosition: "top",
           className: y.customColorPickerEyeDropper,
           icon: p.ilE
-        }), (0, r.jsx)(_.o, {
+        }), (0, r.jsx)(f.o, {
           className: y.customColorPickerInput,
           value: L.input,
           onChange: M,
@@ -309,8 +309,8 @@ function k(e) {
     value: c,
     secondaryValue: u,
     disabled: d,
-    onChange: f,
-    renderDefaultButton: _,
+    onChange: _,
+    renderDefaultButton: f,
     renderCustomButton: p,
     colorContainerClassName: h,
     isGradient: m,
@@ -322,14 +322,14 @@ function k(e) {
       gradientEnd: e.end,
       color: 0,
       isSelected: c === e.start && u === e.end,
-      onClick: () => f(e.start, e.end),
+      onClick: () => _(e.start, e.end),
       disabled: d,
       isGradient: !0,
       "aria-label": e.name
     }, "".concat(e.start, "-").concat(e.end))) : e.map(e => (0, r.jsx)(w, {
       color: e,
       isSelected: e === c,
-      onClick: f,
+      onClick: _,
       disabled: d,
       isGradient: !1
     }, e))
@@ -355,10 +355,10 @@ function k(e) {
           children: [!m && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)("div", {
               className: o()(y.defaultContainer, h),
-              children: _({
+              children: f({
                 value: c,
                 color: n,
-                onChange: f,
+                onChange: _,
                 disabled: d
               })
             }), (0, r.jsx)("div", {

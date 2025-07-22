@@ -8,7 +8,7 @@ n.r(t), n.d(t, {
 var r = n(650557);
 
 function i(e) {
-  return f(e) ? {
+  return _(e) ? {
     anchorNode: e.anchorNode,
     anchorOffset: e.anchorOffset,
     focusNode: e.focusNode,
@@ -31,21 +31,21 @@ let a = !1;
       anchorOffset: c,
       focusNode: u,
       focusOffset: d
-    } = i(t), f = s(l, c, u, d);
+    } = i(t), _ = s(l, c, u, d);
     if (null == l || null == u || null == c || null == d) {
       if (o) return null;
       throw Error("Cannot resolve a Slate range from DOM range")
     }
-    let _ = r.F3.toSlatePoint(e, [l, c], {
+    let f = r.F3.toSlatePoint(e, [l, c], {
         exactMatch: a,
         suppressThrow: o
       }),
-      p = f ? _ : r.F3.toSlatePoint(e, [u, d], {
+      p = _ ? f : r.F3.toSlatePoint(e, [u, d], {
         exactMatch: a,
         suppressThrow: o
       });
-    return null != _ && null != p ? {
-      anchor: _,
+    return null != f && null != p ? {
+      anchor: f,
       focus: p
     } : null
   };
@@ -113,19 +113,19 @@ function c(e, t, n) {
 }
 
 function u(e) {
-  return _(e) && 8 === e.nodeType
+  return f(e) && 8 === e.nodeType
 }
 
 function d(e) {
-  return _(e) && 1 === e.nodeType
+  return f(e) && 1 === e.nodeType
 }
 
-function f(e) {
+function _(e) {
   let t = e && e.anchorNode && p(e.anchorNode);
   return null != t && e instanceof t.Selection
 }
 
-function _(e) {
+function f(e) {
   let t = p(e);
   return null != t && e instanceof t.Node
 }

@@ -12,9 +12,9 @@ var r = n(147913),
   c = n(944486),
   u = n(885110),
   d = n(649739),
-  f = n(981631);
+  _ = n(981631);
 
-function _(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -24,7 +24,7 @@ function _(e, t, n) {
 }
 
 function p(e) {
-  return e.filter(e => e.type === f.IIU.PLAYING && e.application_id).map(e => e.application_id)
+  return e.filter(e => e.type === _.IIU.PLAYING && e.application_id).map(e => e.application_id)
 }
 async function h(e) {
   await a.ZP.fetchApplications(e, !1)
@@ -38,7 +38,7 @@ async function m(e) {
   let r = p([...n]);
   await h([...r]);
   let a = o.Z.getApplication(r[0]);
-  null != a && i.ZP.trackWithMetadata(f.rMx.VOICE_CHANNEL_GAME_ACTIVITY_INDICATOR_SET, {
+  null != a && i.ZP.trackWithMetadata(_.rMx.VOICE_CHANNEL_GAME_ACTIVITY_INDICATOR_SET, {
     channel_id: e,
     guild_id: t.guild_id,
     game_name: a.name,
@@ -56,7 +56,7 @@ class g extends r.Z {
     m(t)
   }
   constructor(...e) {
-    super(...e), _(this, "actions", {
+    super(...e), f(this, "actions", {
       RUNNING_GAMES_CHANGE: this.handleRunningGamesChange,
       VOICE_CHANNEL_SELECT: this.handleVoiceChannelSelect
     })

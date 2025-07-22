@@ -5,8 +5,8 @@ n.d(t, {
   Xh: () => h,
   aQ: () => d,
   m_: () => u,
-  xF: () => f,
-  z8: () => _
+  xF: () => _,
+  z8: () => f
 }), n(65234), n(111804), n(490233), n(97749), n(388685);
 var r = n(114858),
   i = n(972959),
@@ -19,10 +19,10 @@ var r = n(114858),
     return e.HOME = "home", e.SEARCH = "search", e.APPLICATION = "application", e.CATEGORY = "category", e
   }({});
 let d = (0, i.H)(() => ({}));
-var f = function(e) {
+var _ = function(e) {
   return e.EXTERNAL = "External", e.KEYBOARD_SHORTCUT = "Keyboard Shortcut", e.APPLICATION_DIRECTORY_URL = "Application Directory URL", e.APPLICATION_MESSAGE_EMBED = "Application Message Embed", e.APPLICATION_DIRECTORY_UPSELL_MODAL = "Application Directory Upsell Modal", e.GUILD_HEADER_POPOUT = "Guild Header Popout", e.GUILD_SETTINGS = "Guild Settings", e.GUILD_INTEGRATION_SETTINGS = "Guild Integration Settings", e.GUILD_CONTEXT_MENU = "Guild Context Menu", e.OAUTH2_EMBED = "OAuth2 Embed", e.GLOBAL_DISCOVERY_BUTTON = "Global Discovery Button", e.GLOBAL_DISCOVERY_SIDEBAR = "Global Discovery Sidebar", e
 }({});
-let _ = (0, i.H)(() => ({
+let f = (0, i.H)(() => ({
   sessionId: null,
   guildId: null,
   entrypoint: null,
@@ -72,13 +72,13 @@ function h() {
       exact: !0
     }),
     {
-      categoryId: f
+      categoryId: _
     } = null != (e = null == d ? void 0 : d.params) ? e : {};
-  if (null != d && null != f) return {
+  if (null != d && null != _) return {
     type: "category",
-    categoryId: f
+    categoryId: _
   };
-  let _ = (0, r.LX)(i, {
+  let f = (0, r.LX)(i, {
       path: [c.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE(":applicationId"), c.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(":applicationId", ":section"), c.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(":applicationId", ":skuId")],
       exact: !0
     }),
@@ -86,8 +86,8 @@ function h() {
       applicationId: p,
       section: h,
       skuId: m
-    } = null != (t = null == _ ? void 0 : _.params) ? t : {};
-  if (null != _ && null != p) {
+    } = null != (t = null == f ? void 0 : f.params) ? t : {};
+  if (null != f && null != p) {
     let e = null == (n = o.Z.getApplication(p)) ? void 0 : n.name;
     return {
       type: "application",

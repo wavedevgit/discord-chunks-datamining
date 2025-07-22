@@ -13,7 +13,7 @@ var i = n(120356),
   c = n(474936),
   u = n(388032),
   d = n(235831);
-let f = {
+let _ = {
   XXSMALL: d.xxsmall,
   XSMALL: d.xsmall,
   SMALL: d.small,
@@ -22,17 +22,17 @@ let f = {
   XLARGE: d.xlarge
 };
 
-function _(e) {
+function f(e) {
   switch (e) {
-    case f.XXSMALL:
+    case _.XXSMALL:
       return 16;
-    case f.XSMALL:
+    case _.XSMALL:
       return 24;
-    case f.SMALL:
+    case _.SMALL:
       return 30;
-    case f.MEDIUM:
+    case _.MEDIUM:
       return 40;
-    case f.LARGE:
+    case _.LARGE:
       return 60;
     default:
       return 80
@@ -58,14 +58,14 @@ function p(e) {
 
 function h(e) {
   switch (e) {
-    case f.XSMALL:
+    case _.XSMALL:
       return l.Z.Sizes.SMALLER;
-    case f.SMALL:
+    case _.SMALL:
       return l.Z.Sizes.SMALL;
-    case f.LARGE:
+    case _.LARGE:
       return l.Z.Sizes.LARGE;
     default:
-    case f.MEDIUM:
+    case _.MEDIUM:
       return l.Z.Sizes.MEDIUM
   }
 }
@@ -77,10 +77,10 @@ let m = e => {
     pid: m,
     className: g,
     guildClassName: E,
-    size: b = f.MEDIUM,
+    size: b = _.MEDIUM,
     allowUnknownGameIcon: y = !0
   } = e;
-  if (null != c && (t = p(c)), null != n && null == t && (t = n.getIconURL(_(b))), null == (t = (0, s.Z)(m, t)) && null != i) {
+  if (null != c && (t = p(c)), null != n && null == t && (t = n.getIconURL(f(b))), null == (t = (0, s.Z)(m, t)) && null != i) {
     let e = h(b);
     return (0, r.jsx)(l.Z, {
       className: a()(d.gameIcon, E, g),
@@ -103,5 +103,5 @@ let m = e => {
     className: a()(d.gameIcon, b, g)
   })
 };
-m.Sizes = f;
+m.Sizes = _;
 let g = m

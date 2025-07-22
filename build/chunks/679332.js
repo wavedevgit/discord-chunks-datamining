@@ -13,7 +13,7 @@ var r = n(255367),
   u = n(475413),
   d = n(388032);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,14 +22,14 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -39,7 +39,7 @@ function p(e) {
   let {
     user: t,
     viewProfileItem: n
-  } = e, f = i.useRef(null), {
+  } = e, _ = i.useRef(null), {
     trackUserProfileAction: p
   } = (0, c.KZ)(), {
     analyticsLocations: h
@@ -55,7 +55,7 @@ function p(e) {
     })]
   ];
   return m.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(a.yRy, {
-    targetElementRef: f,
+    targetElementRef: _,
     renderPopout: e => {
       let {
         closePopout: t
@@ -70,8 +70,8 @@ function p(e) {
         }, t))
       })
     },
-    children: e => (0, r.jsx)(u.oY, _({
-      ref: f,
+    children: e => (0, r.jsx)(u.oY, f({
+      ref: _,
       action: "PRESS_OPTIONS",
       icon: a.xhG,
       tooltipText: d.intl.string(d.t.UKOtz8)

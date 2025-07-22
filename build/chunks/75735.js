@@ -79,12 +79,12 @@ let u = {
         let n = "enable" === e ? "hover_disabled" : "hover_enabled";
         t.current.play(n)
       }, [e]),
-      f = i.useCallback(() => {
+      _ = i.useCallback(() => {
         if (null == t.current) return;
         let n = "enable" === e ? "hover_disabled" : "hover_enabled";
         t.current.stopIfPlaying(n)
       }, [e]),
-      _ = i.useCallback(e => (0, r.jsx)(a.L, c(s({}, e), {
+      f = i.useCallback(e => (0, r.jsx)(a.L, c(s({}, e), {
         src: () => n.e("8366").then(n.t.bind(n, 553427, 19)),
         ref: t,
         initialAnimation: o.current,
@@ -94,7 +94,7 @@ let u = {
       events: {
         onClick: l,
         onMouseEnter: d,
-        onMouseLeave: f
+        onMouseLeave: _
       },
       play: l,
       getDuration: i.useCallback(() => {
@@ -105,6 +105,6 @@ let u = {
         var e, n;
         return null != (n = null == (e = t.current) ? void 0 : e.getCurrentFrame()) ? n : null
       }, []),
-      Component: _
+      Component: f
     }
   }

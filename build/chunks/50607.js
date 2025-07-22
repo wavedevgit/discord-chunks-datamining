@@ -15,9 +15,9 @@ let o = (e, t) => {
     setFragmentData: c,
     insertData: u,
     insertFragmentData: d,
-    insertTextData: f
+    insertTextData: _
   } = e;
-  return (e = (0, r.BU)(e)).addMark = n, e.removeMark = o, e.setFragmentData = c, e.insertData = u, e.insertFragmentData = d, e.insertTextData = f, e.deleteBackward = n => {
+  return (e = (0, r.BU)(e)).addMark = n, e.removeMark = o, e.setFragmentData = c, e.insertData = u, e.insertFragmentData = d, e.insertTextData = _, e.deleteBackward = n => {
     if ("line" !== n || t) s(n);
     else {
       let t = a.lP.getLineActionRange(e, !0);

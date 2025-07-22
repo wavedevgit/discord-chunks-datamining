@@ -4,13 +4,13 @@ n.d(t, {
   CG: () => u,
   OY: () => E,
   SG: () => g,
-  T1: () => f,
+  T1: () => _,
   i9: () => c,
   kk: () => d,
   lk: () => p,
   pQ: () => l,
   sN: () => m,
-  sO: () => _,
+  sO: () => f,
   ur: () => h
 }), n(539854);
 var r = n(913527),
@@ -37,11 +37,11 @@ function d(e) {
   return null != e.dmSpamDetectedAt && i()(e.dmSpamDetectedAt).add(o.lp, "hours") > i()()
 }
 
-function f(e) {
+function _(e) {
   return null == e ? void 0 : u(e) ? a.Hl.JOIN_RAID : a.Hl.DM_RAID
 }
 
-function _(e, t) {
+function f(e, t) {
   let n = [];
   return e && n.push(a.dj.INVITES_DISABLED), t && n.push(a.dj.DMS_DISABLED), n
 }

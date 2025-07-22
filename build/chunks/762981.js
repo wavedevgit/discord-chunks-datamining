@@ -13,9 +13,9 @@ var r = n(255367),
   c = n(770278),
   u = n(724723),
   d = n(257465),
-  f = n(574697);
+  _ = n(574697);
 
-function _(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -31,7 +31,7 @@ function p(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
@@ -66,9 +66,9 @@ function m(e) {
     }
   }, "instant" === n ? "animate-never" : "animate-always")((e, n) => n ? (0, r.jsx)(s.animated.div, {
     role: "none",
-    className: o()(f.scrim, {
-      [f.lightbox]: "lightbox" === t,
-      [f.pointerEventsNone]: u
+    className: o()(_.scrim, {
+      [_.lightbox]: "lightbox" === t,
+      [_.pointerEventsNone]: u
     }),
     style: e,
     onClick: c ? void 0 : i
