@@ -7,8 +7,8 @@ r(73800);
 var i = r(780384),
   l = r(481060),
   a = r(239091),
-  s = r(44315),
-  o = r(111028),
+  o = r(44315),
+  s = r(111028),
   c = r(565138),
   u = r(5192),
   d = r(652853),
@@ -85,7 +85,7 @@ function j(e) {
       guild: j,
       showBadge: !0,
       className: null != j.icon ? p.icon : p.noIcon,
-      badgeStrokeColor: (0, s.Lq)((0, i.wj)(O) ? b.Ilk.PRIMARY_600 : b.Ilk.WHITE_500),
+      badgeStrokeColor: (0, o.Lq)((0, i.wj)(O) ? b.Ilk.PRIMARY_600 : b.Ilk.WHITE_500),
       badgeTooltipColor: l.FGA.PRIMARY,
       badgeTooltipDelay: m.vB,
       size: c.Z.Sizes.MEDIUM,
@@ -104,14 +104,14 @@ function j(e) {
           "aria-hidden": !0
         }), (0, n.jsx)(l.Text, {
           variant: "text-xs/medium",
-          children: (0, n.jsx)(o.Z, {
+          children: (0, n.jsx)(s.Z, {
             delay: m.vB,
             children: null != x ? x : u.ZP.getName(j.id, void 0, t)
           })
         })]
       }), !y && null != x && (0, n.jsx)(l.Text, {
         variant: "text-xs/medium",
-        children: (0, n.jsx)(o.Z, {
+        children: (0, n.jsx)(s.Z, {
           delay: m.vB,
           children: x
         })

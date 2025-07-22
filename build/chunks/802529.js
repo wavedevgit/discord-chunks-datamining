@@ -1,11 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  f: () => o
+  f: () => i
 });
-var r = n(818083),
-  i = n(772209);
-let a = (0, r.B)({
+let r = (0, n(818083).B)({
     kind: "user",
     id: "2025-03_activity_status_descriptive_text",
     label: "Activity Status Descriptive Text",
@@ -20,18 +18,14 @@ let a = (0, r.B)({
       }
     }]
   }),
-  o = e => {
+  i = e => {
     let {
       location: t,
       autoTrackExposure: n = !0
-    } = e, r = (0, i.q)({
-      location: t,
-      autoTrackExposure: n
-    });
-    return a.useExperiment({
+    } = e;
+    return r.useExperiment({
       location: t
     }, {
-      autoTrackExposure: n,
-      disable: r
+      autoTrackExposure: n
     })
   }

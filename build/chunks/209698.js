@@ -1,11 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  b: () => o
+  b: () => i
 });
-var r = n(818083),
-  i = n(772209);
-let a = (0, r.B)({
+let r = (0, n(818083).B)({
   kind: "user",
   id: "2025-04_stacked_activity_cards",
   label: "User Profile Stacked Activity Cards",
@@ -21,20 +19,16 @@ let a = (0, r.B)({
   }]
 });
 
-function o(e) {
+function i(e) {
   let {
     location: t,
     autoTrackExposure: n = !0
-  } = e, r = (0, i.q)({
-    location: t,
-    autoTrackExposure: n
-  }), {
-    enabled: o
-  } = a.useExperiment({
+  } = e, {
+    enabled: i
+  } = r.useExperiment({
     location: t
   }, {
-    autoTrackExposure: n,
-    disable: r
+    autoTrackExposure: n
   });
-  return o
+  return i
 }

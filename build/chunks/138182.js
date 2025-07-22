@@ -1,10 +1,8 @@
 /** Chunk was on 1268 **/
 r.d(t, {
-  a: () => a
+  a: () => i
 });
-var n = r(818083),
-  i = r(772209);
-let l = (0, n.B)({
+let n = (0, r(818083).B)({
     kind: "user",
     id: "2025-02_voice_activity_status_mobile",
     label: "Voice Activity Status (Mobile)",
@@ -19,18 +17,14 @@ let l = (0, n.B)({
       }
     }]
   }),
-  a = e => {
+  i = e => {
     let {
       location: t,
       autoTrackExposure: r = !0
-    } = e, n = (0, i.q)({
-      location: t,
-      autoTrackExposure: r
-    });
-    return l.useExperiment({
+    } = e;
+    return n.useExperiment({
       location: t
     }, {
-      autoTrackExposure: r,
-      disable: n
+      autoTrackExposure: r
     })
   }

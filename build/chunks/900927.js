@@ -7,8 +7,8 @@ r(73800);
 var i = r(399606),
   l = r(481060),
   a = r(275759),
-  s = r(565138),
-  o = r(706454),
+  o = r(565138),
+  s = r(706454),
   c = r(271383),
   u = r(430824),
   d = r(709054),
@@ -53,7 +53,7 @@ function j(e) {
     guildId: r,
     textClassName: j,
     tooltipDelay: x
-  } = e, v = (0, i.e7)([o.default], () => o.default.locale), O = (0, i.e7)([u.Z], () => null != r ? u.Z.getGuild(r) : null), h = (0, i.e7)([c.ZP], () => null != r ? c.ZP.getMember(r, t) : null), y = (0, a.FI)(d.default.extractTimestamp(t), v), g = (0, a.FI)(null == h ? void 0 : h.joinedAt, v);
+  } = e, v = (0, i.e7)([s.default], () => s.default.locale), O = (0, i.e7)([u.Z], () => null != r ? u.Z.getGuild(r) : null), h = (0, i.e7)([c.ZP], () => null != r ? c.ZP.getMember(r, t) : null), y = (0, a.FI)(d.default.extractTimestamp(t), v), g = (0, a.FI)(null == h ? void 0 : h.joinedAt, v);
   return null == O || null == h ? (0, n.jsx)(l.Text, {
     variant: "text-sm/normal",
     className: j,
@@ -85,9 +85,9 @@ function j(e) {
       children: [(0, n.jsx)(l.ua7, {
         text: O.name,
         delay: x,
-        children: e => (0, n.jsx)(s.Z, f(p({}, e), {
+        children: e => (0, n.jsx)(o.Z, f(p({}, e), {
           guild: O,
-          size: s.Z.Sizes.SMOL,
+          size: o.Z.Sizes.SMOL,
           className: b.guildIcon
         }))
       }), (0, n.jsx)(l.Text, {
