@@ -4,7 +4,7 @@ n.d(t, {
   Qz: () => u,
   RZ: () => d,
   s_: () => c,
-  vU: () => f
+  vU: () => _
 });
 var r = n(73800),
   i = n(493773),
@@ -61,7 +61,7 @@ function d(e) {
   })
 }
 
-function _(e) {
+function f(e) {
   let {
     unreadsCount: t,
     totalMessagesCount: n
@@ -72,7 +72,7 @@ function _(e) {
   })
 }
 
-function f(e) {
+function _(e) {
   let {
     notificationCenterVariant: t,
     messages: n,
@@ -93,7 +93,7 @@ function f(e) {
     }
   }, [n, a]), (0, i.zq)(() => {
     var e, t;
-    _({
+    f({
       unreadsCount: null != (e = null == a ? void 0 : a.length) ? e : 0,
       totalMessagesCount: null != (t = null == n ? void 0 : n.length) ? t : 0
     })

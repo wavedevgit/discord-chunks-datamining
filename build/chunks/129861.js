@@ -13,8 +13,8 @@ var i = n(120356),
   c = n(813549),
   u = n(246946),
   d = n(51144),
-  _ = n(388032),
-  f = n(350651);
+  f = n(388032),
+  _ = n(350651);
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -90,24 +90,24 @@ let O = e => {
       showStreamerModeTooltip: E
     } = e;
     return (0, r.jsxs)("div", {
-      className: a()(f.info, u),
+      className: a()(_.info, u),
       children: [(0, r.jsx)(s.ua7, {
-        text: _.intl.string(_.t.Br1ls7),
+        text: f.intl.string(f.t.Br1ls7),
         shouldShow: E,
         "aria-label": !!E && void 0,
         children: e => (0, r.jsx)("span", g(h({}, e), {
-          className: a()(f.__invalid_username, d),
+          className: a()(_.__invalid_username, d),
           style: null != p ? {
             color: p
           } : void 0,
           children: t
         }))
       }), null != n ? (0, r.jsx)("span", {
-        className: a()(f.infoSpacing, c),
+        className: a()(_.infoSpacing, c),
         children: n
       }) : void 0, null != i && (0, r.jsx)(l.Z, {
         type: i,
-        className: a()(f.infoSpacing, m),
+        className: a()(_.infoSpacing, m),
         verified: o
       })]
     })
@@ -120,13 +120,13 @@ let O = e => {
       showAccountIdentifier: a,
       overrideDiscriminator: s,
       forcePomelo: l,
-      hideBotTag: _ = !1,
-      hideDiscriminator: f = !1
+      hideBotTag: f = !1,
+      hideDiscriminator: _ = !1
     } = e, p = E(e, ["user", "nick", "forceUsername", "showAccountIdentifier", "overrideDiscriminator", "forcePomelo", "hideBotTag", "hideDiscriminator"]);
     let m = (0, o.e7)([u.Z], () => u.Z.hidePersonalInformation),
-      g = m || f || t.isNonUserBot(),
+      g = m || _ || t.isNonUserBot(),
       b = t.toString(),
-      v = _ ? null : y(t),
+      v = f ? null : y(t),
       I = t.isVerifiedBot(),
       T = d.ZP.getName(t),
       S = i ? b : null != n ? n : T,

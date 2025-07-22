@@ -165,7 +165,7 @@ function N(e) {
         title: y.intl.string(y.t["0HbEQ0"]),
         className: b.topicFormItem,
         required: !0,
-        children: [(0, l.jsx)(o.oil, {
+        children: [(0, l.jsx)(s.Is, {
           className: b.textInput,
           onChange: e => {
             P({

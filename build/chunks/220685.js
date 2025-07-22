@@ -141,7 +141,7 @@ let S = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
         children: [(0, r.jsx)(f.R94, {
           disabled: z,
           children: I.intl.string(I.t["amd99/"])
-        }), (0, r.jsx)(f.oil, {
+        }), (0, r.jsx)(p.Is, {
           value: null != D ? D : void 0,
           onChange: e => A("" === e ? null : e),
           error: L ? null : I.intl.string(I.t["1kL79f"]),

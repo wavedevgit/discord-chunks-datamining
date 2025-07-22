@@ -13,8 +13,8 @@ var r = n(255367),
   c = n(442837),
   u = n(481060),
   d = n(456100),
-  _ = n(317381),
-  f = n(884338),
+  f = n(317381),
+  _ = n(884338),
   p = n(470883),
   h = n(666188),
   m = n(372769),
@@ -117,7 +117,7 @@ function V(e) {
       });
       return (0, p.dq)(n, s)
     })),
-    f = (0, c.e7)([I.Z], () => {
+    _ = (0, c.e7)([I.Z], () => {
       let e = 0;
       for (let t of a) e += I.Z.getParticipantCount(t, T.pV.AUDIENCE);
       return e
@@ -126,8 +126,8 @@ function V(e) {
       let e = N.Z.getAllApplicationStreams().filter(e => e.guildId === t).map(e => e.ownerId);
       return (0, p._j)(e, s)
     }, [s, t]),
-    m = (0, c.Wu)([_.ZP], () => {
-      let e = _.ZP.getEmbeddedActivitiesForGuild(t).flatMap(e => Array.from(e.userIds));
+    m = (0, c.Wu)([f.ZP], () => {
+      let e = f.ZP.getEmbeddedActivitiesForGuild(t).flatMap(e => Array.from(e.userIds));
       return (0, p._j)(e, s)
     }, [t, s]),
     g = (0, c.Wu)([w.default], () => {
@@ -142,7 +142,7 @@ function V(e) {
   return {
     voiceUsersToShow: y,
     stageSpeakers: d,
-    numStageListeners: f,
+    numStageListeners: _,
     streamUsersToShow: O,
     embeddedActivitiesUsers: g,
     hasActivity: v
@@ -155,7 +155,7 @@ function F(e, t, n) {
     children: [(0, r.jsx)(e, {
       className: M.activityIcon,
       color: "currentColor"
-    }), (0, r.jsx)(f.ZP, {
+    }), (0, r.jsx)(_.ZP, {
       guildId: n,
       users: t,
       max: 6
@@ -170,7 +170,7 @@ function Z(e, t, n) {
       size: "lg",
       color: "currentColor",
       className: M.activityIcon
-    }), (0, r.jsx)(f.ZP, {
+    }), (0, r.jsx)(_.ZP, {
       guildId: e,
       users: t,
       max: 3
@@ -218,9 +218,9 @@ function Y(e) {
     voiceUsersToShow: a,
     stageSpeakers: s,
     numStageListeners: l,
-    streamUsersToShow: _,
-    embeddedActivitiesUsers: f
-  } = V(t), p = F(u.gj8, a, n), h = Z(n, s, l), m = F(u.hGI, _, n), g = F(i ? u.iWm : u.nG3, f, n), {
+    streamUsersToShow: f,
+    embeddedActivitiesUsers: _
+  } = V(t), p = F(u.gj8, a, n), h = Z(n, s, l), m = F(u.hGI, f, n), g = F(i ? u.iWm : u.nG3, _, n), {
     isMuted: E,
     muteConfig: b
   } = (0, c.cj)([P.ZP], () => ({
@@ -270,7 +270,7 @@ function z(e) {
     guildJoinRequestStatus: a
   }) : null, l = n ? (0, r.jsx)(Y, {
     guild: t
-  }) : null, d = (0, c.e7)([O.Z], () => O.Z.isViewingRoles(t.id)), _ = null != s ? s : l, f = (0, y.Ij)(t);
+  }) : null, d = (0, c.e7)([O.Z], () => O.Z.isViewingRoles(t.id)), f = null != s ? s : l, _ = (0, y.Ij)(t);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: o()(M.row, M.rowGuildName),
@@ -287,7 +287,7 @@ function z(e) {
         }),
         children: t.name
       })]
-    }), f ? (0, r.jsx)(u.Text, {
+    }), _ ? (0, r.jsx)(u.Text, {
       className: M.invitesDisabledTooltip,
       color: "header-secondary",
       variant: "text-sm/medium",
@@ -297,7 +297,7 @@ function z(e) {
       color: "text-default",
       variant: "text-xs/normal",
       children: x.intl.string(x.t["5LwN8/"])
-    }) : _]
+    }) : f]
   })
 }
 

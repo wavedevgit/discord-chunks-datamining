@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(906732),
   u = n(430824),
   d = n(785717),
-  _ = n(221292),
-  f = n(687158),
+  f = n(221292),
+  _ = n(687158),
   p = n(892001),
   h = n(899007),
   m = n(867176),
@@ -72,7 +72,7 @@ function C(e) {
     channelId: C,
     messageId: R,
     roleId: P
-  }), G = (0, f.ZP)(t.id, A), B = (0, a.e7)([u.Z], () => null != A ? u.Z.getGuild(A) : null), V = i.useRef(null), F = (0, s.Z)(V);
+  }), G = (0, _.ZP)(t.id, A), B = (0, a.e7)([u.Z], () => null != A ? u.Z.getGuild(A) : null), V = i.useRef(null), F = (0, s.Z)(V);
   i.useEffect(() => {
     null == L || L(null == V ? void 0 : V.current)
   }, [V, L]);
@@ -86,7 +86,7 @@ function C(e) {
       id: "view-profile",
       label: T.intl.string(T.t["+Xp3ho"]),
       action: () => {
-        Z(), (0, _.pQ)(N({
+        Z(), (0, f.pQ)(N({
           action: "PRESS_VIEW_PROFILE",
           analyticsLocations: j
         }, U))

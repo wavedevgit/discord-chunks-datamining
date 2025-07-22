@@ -45,13 +45,13 @@ function d(e, t) {
   return n
 }
 
-function _(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function f(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -74,16 +74,16 @@ function h(e) {
     text: t,
     onClick: n,
     component: c
-  } = e, d = f(e, ["text", "onClick", "component"]);
+  } = e, d = _(e, ["text", "onClick", "component"]);
   let {
     themeType: p
   } = (0, o.z)(), h = "string" == typeof t ? t.trim() : t;
   if (null == h || "" === h) return null;
-  let m = () => p === s.lY.MODAL || p === s.lY.MODAL_V2 ? (0, r.jsx)(c, _(u({
+  let m = () => p === s.lY.MODAL || p === s.lY.MODAL_V2 ? (0, r.jsx)(c, f(u({
     color: "text-default"
   }, d), {
     children: h
-  })) : (0, r.jsx)(c, _(u({
+  })) : (0, r.jsx)(c, f(u({
     color: "text-default"
   }, d), {
     children: (0, r.jsx)(a.Z, {

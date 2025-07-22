@@ -4,8 +4,8 @@ n.d(t, {
 }), n(953529), n(388685);
 var r = n(255367),
   l = n(73800),
-  i = n(82659),
-  a = n(481060),
+  a = n(82659),
+  i = n(481060),
   o = n(388032),
   c = n(98847);
 
@@ -28,7 +28,7 @@ function s(e) {
       b(!1)
     }
   }, [p]);
-  return (0, r.jsxs)(i.u, {
+  return (0, r.jsxs)(a.u, {
     transitionState: u,
     onClose: d,
     title: n,
@@ -43,7 +43,7 @@ function s(e) {
       variant: "primary",
       loading: m
     }],
-    children: [g, null != t && "" !== t ? (0, r.jsx)(a.Text, {
+    children: [g, null != t && "" !== t ? (0, r.jsx)(i.Text, {
       className: c.errorText,
       variant: "text-xs/normal",
       color: "text-danger",

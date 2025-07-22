@@ -17,8 +17,8 @@ let u = i.forwardRef(function(e, t) {
     unicodeEmoji: a,
     name: u,
     size: d = 20,
-    enableTooltip: _ = !0,
-    enableHeight: f = !0,
+    enableTooltip: f = !0,
+    enableHeight: _ = !0,
     onClick: p
   } = e;
   if (null == i && null == a) return null;
@@ -32,7 +32,7 @@ let u = i.forwardRef(function(e, t) {
       className: o()(c.roleIcon, n, {
         [c.clickable]: null != p
       }),
-      height: f ? d : void 0,
+      height: _ ? d : void 0,
       src: i,
       width: d
     });
@@ -43,7 +43,7 @@ let u = i.forwardRef(function(e, t) {
       className: o()(c.roleIcon, n, {
         [c.clickable]: null != p
       }),
-      height: f ? d : void 0,
+      height: _ ? d : void 0,
       src: a.url,
       width: d
     })), null == p) ? (0, r.jsx)(s.tEY, {
@@ -65,7 +65,7 @@ let u = i.forwardRef(function(e, t) {
   return (0, r.jsx)(s.DY3, {
     text: u,
     "aria-label": !1,
-    shouldShow: _,
+    shouldShow: f,
     element: "span",
     children: h()
   })

@@ -15,10 +15,10 @@ function o(e, t) {
     deleteFragment: l,
     insertData: u,
     insertText: d,
-    onChange: _
+    onChange: f
   } = e;
 
-  function f(n) {
+  function _(n) {
     let i = r.T.currentEntry(e);
     if (null != i && (i.mergeable = !1), n >= e.history.stack.length) return;
     e.history.index = n;
@@ -35,11 +35,11 @@ function o(e, t) {
     let {
       history: t
     } = e;
-    0 === t.stack.length && (t.stack = [c(e)], t.index = 0), null != e.selection && (r.T.currentEntry(e).selection = e.selection), h = null, _()
+    0 === t.stack.length && (t.stack = [c(e)], t.index = 0), null != e.selection && (r.T.currentEntry(e).selection = e.selection), h = null, f()
   }, e.undo = () => {
-    e.history.index > 0 && f(e.history.index - 1)
+    e.history.index > 0 && _(e.history.index - 1)
   }, e.redo = () => {
-    e.history.index < e.history.stack.length - 1 && f(e.history.index + 1)
+    e.history.index < e.history.stack.length - 1 && _(e.history.index + 1)
   };
   let p = null,
     h = null,

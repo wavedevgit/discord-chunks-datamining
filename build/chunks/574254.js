@@ -26,10 +26,10 @@ function d(e) {
   u++, c = t
 }
 
-function _() {
+function f() {
   c = null
 }
-class f extends(r = i.ZP.Store) {
+class _ extends(r = i.ZP.Store) {
   isOpen() {
     return null != c
   }
@@ -43,11 +43,11 @@ class f extends(r = i.ZP.Store) {
     return !!this.isOpen() && (o.S.dispatch(s.CkL.CONTEXT_MENU_CLOSE), !0)
   }
 }
-l(f, "displayName", "ContextMenuStore");
-let p = new f(a.Z, {
+l(_, "displayName", "ContextMenuStore");
+let p = new _(a.Z, {
   CONTEXT_MENU_OPEN: d,
-  LAYER_PUSH: _,
-  CONTEXT_MENU_CLOSE: _,
-  OVERLAY_SET_INPUT_LOCKED: _,
-  OVERLAY_DEACTIVATE_ALL_REGIONS: _
+  LAYER_PUSH: f,
+  CONTEXT_MENU_CLOSE: f,
+  OVERLAY_SET_INPUT_LOCKED: f,
+  OVERLAY_DEACTIVATE_ALL_REGIONS: f
 })

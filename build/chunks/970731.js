@@ -24,7 +24,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function _(e) {
   return e
 }
 
-function f(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,7 +49,7 @@ function f(e, t) {
 }
 
 function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -78,7 +78,7 @@ function y(e) {
     className: n,
     header: i,
     headerClassName: d,
-    content: f,
+    content: _,
     contentClassName: h,
     buttonCTA: m,
     secondaryButtonCTA: y,
@@ -118,17 +118,17 @@ function y(e) {
       color: b[t],
       className: a()(h, u.content),
       variant: "text-sm/normal",
-      children: f
+      children: _
     }), null != m || P ? (0, r.jsxs)("div", {
       className: a()(u.upsellButtonsContainer, {
         [u.upsellButtonsAdjacent]: 0 === R,
         [u.upsellButtonsStacked]: 1 === R
       }),
-      children: [P ? (0, r.jsx)(o.zx, p(_({}, T), {
+      children: [P ? (0, r.jsx)(o.zx, p(f({}, T), {
         fullWidth: 1 === R,
         onClick: D,
         children: y
-      })) : null, null == m ? null : (0, r.jsx)(o.zx, p(_({}, I), {
+      })) : null, null == m ? null : (0, r.jsx)(o.zx, p(f({}, I), {
         fullWidth: !P || 1 === R,
         onClick: w,
         children: m

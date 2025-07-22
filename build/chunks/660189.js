@@ -32,7 +32,7 @@ function d(e) {
   return e
 }
 
-function _(e, t) {
+function f(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -43,8 +43,8 @@ function _(e, t) {
   return n
 }
 
-function f(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -91,7 +91,7 @@ function y(e) {
   if (e.message.id !== e.message.channel_id) return !1;
   let t = p[c.default.castMessageIdAsChannelId(e.message.id)];
   if (null == t || null == t.firstMessage) return !1;
-  p[c.default.castMessageIdAsChannelId(e.message.id)] = f(d({}, t), {
+  p[c.default.castMessageIdAsChannelId(e.message.id)] = _(d({}, t), {
     firstMessage: (0, o.wi)(t.firstMessage, e.message)
   })
 }
@@ -124,9 +124,9 @@ function I(e) {
   } = e, c = p[n];
   if (null == c || null == c.firstMessage || r !== c.firstMessage.id) return !1;
   let u = l.default.getCurrentUser(),
-    _ = null != u && u.id === i;
-  if (o && !_) return !1;
-  p[n] = d({}, c), "MESSAGE_REACTION_ADD" === t ? p[n].firstMessage = c.firstMessage.addReaction(a, _, e.colors, s) : p[n].firstMessage = c.firstMessage.removeReaction(a, _, s)
+    f = null != u && u.id === i;
+  if (o && !f) return !1;
+  p[n] = d({}, c), "MESSAGE_REACTION_ADD" === t ? p[n].firstMessage = c.firstMessage.addReaction(a, f, e.colors, s) : p[n].firstMessage = c.firstMessage.removeReaction(a, f, s)
 }
 
 function T(e) {
@@ -138,7 +138,7 @@ function T(e) {
   if (null == i || null == i.firstMessage || n !== i.firstMessage.id) return !1;
   let a = l.default.getCurrentUser(),
     o = i.firstMessage.addReactionBatch(r, null == a ? void 0 : a.id);
-  p[t] = f(d({}, i), {
+  p[t] = _(d({}, i), {
     firstMessage: o
   })
 }
@@ -149,7 +149,7 @@ function S(e) {
     messageId: n
   } = e, r = p[t];
   if (null == r || null == r.firstMessage || n !== r.firstMessage.id) return !1;
-  p[t] = f(d({}, r), {
+  p[t] = _(d({}, r), {
     firstMessage: r.firstMessage.set("reactions", [])
   })
 }
@@ -161,7 +161,7 @@ function A(e) {
     emoji: r
   } = e, i = p[t];
   if (null == i || null == i.firstMessage || n !== i.firstMessage.id) return !1;
-  p[t] = f(d({}, i), {
+  p[t] = _(d({}, i), {
     firstMessage: i.firstMessage.removeReactionsForEmoji(r)
   })
 }

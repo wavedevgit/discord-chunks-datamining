@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(442837),
-  o = n(430824),
-  s = n(594174),
+  s = n(430824),
+  o = n(594174),
   a = n(246364),
   c = n(990686),
   u = n(118346),
@@ -55,9 +55,9 @@ function v(e) {
     guildId: t,
     formFields: n,
     updateFormFields: i
-  } = e, s = (0, l.e7)([o.Z], () => {
+  } = e, o = (0, l.e7)([s.Z], () => {
     var e;
-    return null == (e = o.Z.getGuild(t)) ? void 0 : e.rulesChannelId
+    return null == (e = s.Z.getGuild(t)) ? void 0 : e.rulesChannelId
   }), c = (e, t) => {
     let r = n[e];
     i([...n.slice(0, e), b(g({}, r), {
@@ -79,7 +79,7 @@ function v(e) {
     switch (e.field_type) {
       case a.QJ.TERMS:
         return (0, r.jsx)(h.dd, {
-          channelId: s,
+          channelId: o,
           formField: e,
           onChange: (e, n) => c(t, n)
         }, t);
@@ -111,10 +111,10 @@ function _(e) {
   let t, {
       guildId: n,
       formFields: i,
-      updateFormFields: o,
+      updateFormFields: s,
       disableVerification: a
     } = e,
-    d = (0, l.e7)([s.default], () => s.default.getCurrentUser()),
+    d = (0, l.e7)([o.default], () => o.default.getCurrentUser()),
     m = (0, c.i)({
       guildId: n
     });
@@ -122,7 +122,7 @@ function _(e) {
     children: [!a && null != t && (0, r.jsx)(t, {}), (0, r.jsx)(v, {
       guildId: n,
       formFields: i,
-      updateFormFields: o
+      updateFormFields: s
     })]
   })
 }
@@ -130,11 +130,11 @@ function _(e) {
 function j(e) {
   let t, {
       guildId: n,
-      formFields: o,
+      formFields: s,
       updateFormFields: a,
       disableVerification: d
     } = e,
-    m = (0, l.e7)([s.default], () => s.default.getCurrentUser()),
+    m = (0, l.e7)([o.default], () => o.default.getCurrentUser()),
     h = (0, c.i)({
       guildId: n
     }),
@@ -148,7 +148,7 @@ function j(e) {
       isUserVerified: b
     }), (0, r.jsx)(v, {
       guildId: n,
-      formFields: o,
+      formFields: s,
       updateFormFields: a
     })]
   })

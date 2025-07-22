@@ -93,7 +93,7 @@ e.exports = function(e) {
     d = e.COMMENT("/\\*", "\\*/", {
       contains: [e.C_BLOCK_COMMENT_MODE]
     }),
-    _ = {
+    f = {
       variants: [{
         className: "type",
         begin: e.UNDERSCORE_IDENT_RE
@@ -103,8 +103,8 @@ e.exports = function(e) {
         contains: []
       }]
     },
-    f = _;
-  return f.variants[1].contains = [_], _.variants[1].contains = [f], {
+    _ = f;
+  return _.variants[1].contains = [f], f.variants[1].contains = [_], {
     name: "Kotlin",
     aliases: ["kt", "kts"],
     keywords: t,
@@ -144,7 +144,7 @@ e.exports = function(e) {
           begin: /:/,
           end: /[=,\/]/,
           endsWithParent: !0,
-          contains: [_, e.C_LINE_COMMENT_MODE, d],
+          contains: [f, e.C_LINE_COMMENT_MODE, d],
           relevance: 0
         }, e.C_LINE_COMMENT_MODE, d, l, c, s, e.C_NUMBER_MODE]
       }, d]

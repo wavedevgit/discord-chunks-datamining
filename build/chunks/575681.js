@@ -2,7 +2,7 @@
 n.d(t, {
   n: () => a
 });
-let l = (0, n(818083).B)({
+let s = (0, n(818083).B)({
     kind: "user",
     id: "2023-06_unique_username_live_check_in_settings",
     label: "Username Livecheck in Settings",
@@ -20,7 +20,7 @@ let l = (0, n(818083).B)({
   a = () => {
     let {
       enabled: e
-    } = l.useExperiment({
+    } = s.useExperiment({
       location: "7e1108_1"
     }, {
       autoTrackExposure: !0

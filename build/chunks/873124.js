@@ -4,8 +4,8 @@ n.d(t, {
 }), n(388685), n(457542);
 var l = n(255367),
   r = n(73800),
-  i = n(481060),
-  s = n(507453),
+  s = n(481060),
+  i = n(507453),
   a = n(388032);
 
 function o(e) {
@@ -33,12 +33,12 @@ function o(e) {
         h(!1)
       })
     },
-    children: [(0, l.jsx)(s.Z.SlideHeader, {
+    children: [(0, l.jsx)(i.Z.SlideHeader, {
       onClose: d
-    }), (0, l.jsx)(s.Z.SlideContent, {
-      children: (0, l.jsxs)(i.xJW, {
+    }), (0, l.jsx)(i.Z.SlideContent, {
+      children: (0, l.jsxs)(s.xJW, {
         title: a.intl.string(a.t["CIGa+/"]),
-        children: [(0, l.jsx)(i.oil, {
+        children: [(0, l.jsx)(s.oil, {
           inputRef: p,
           onChange: x,
           value: g,
@@ -46,11 +46,11 @@ function o(e) {
           autoComplete: "password",
           spellCheck: "false",
           disabled: u
-        }), (0, l.jsx)(s.Z.SlideError, {
+        }), (0, l.jsx)(i.Z.SlideError, {
           error: f
         })]
       })
-    }), (0, l.jsx)(s.Z.SlideFooter, {
+    }), (0, l.jsx)(i.Z.SlideFooter, {
       mfaChallenge: t,
       setSlide: o,
       showConfirm: !0,

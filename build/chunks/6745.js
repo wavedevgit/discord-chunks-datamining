@@ -33,7 +33,7 @@ function d(e) {
   return e
 }
 
-function _(e, t) {
+function f(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -44,8 +44,8 @@ function _(e, t) {
   return n
 }
 
-function f(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -74,19 +74,19 @@ function m(e) {
     placeholder: n,
     value: a,
     onChange: u,
-    onClose: _,
+    onClose: f,
     showScrollbar: h,
     className: m,
     multiSelect: g
   } = e, E = p(e, ["children", "placeholder", "value", "onChange", "onClose", "showScrollbar", "className", "multiSelect"]);
   let b = i.useCallback(e => {
-    u(e), g || null == _ || _()
-  }, [u, _, g]);
+    u(e), g || null == f || f()
+  }, [u, f, g]);
   return (0, r.jsx)(s.V, {
     className: o()(c.container, m, {
       [c.scroller]: h
     }),
-    children: (0, r.jsx)(l.hQ, f(d({}, E), {
+    children: (0, r.jsx)(l.hQ, _(d({}, E), {
       showScrollbar: h,
       value: a,
       multiSelect: g,

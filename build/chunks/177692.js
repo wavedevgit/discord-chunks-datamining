@@ -16,7 +16,7 @@ async function d() {
     try {
       await (0, i.e)();
       let e = (0, r.rs)(6, 7);
-      c.info("The answer for life the universe and everything is:", e), _()
+      c.info("The answer for life the universe and everything is:", e), f()
     } catch (e) {
       p(e)
     }
@@ -24,7 +24,7 @@ async function d() {
   }
 }
 
-function _() {
+function f() {
   let e = [];
   s.Re.forEach(t => {
     let n = t.getEnabledFeatureName();
@@ -35,7 +35,7 @@ function _() {
   })
 }
 
-function f(e) {
+function _(e) {
   let t = "",
     n = null;
   return (e instanceof Error ? (t = e.message, n = e.name) : t = null != e ? String(e) : "Unknown error", t.length > 1e3 && (t = t.substring(0, 997) + "..."), null != n) ? "".concat(n, ": ").concat(t) : t
@@ -43,7 +43,7 @@ function f(e) {
 
 function p(e) {
   c.error("Failed to execute smoke test:", e);
-  let t = f(e);
+  let t = _(e);
   o.default.track(l.rMx.LIBDISCORE_LOADED, {
     success: !1,
     error: t

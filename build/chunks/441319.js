@@ -14,8 +14,8 @@ var r = n(997945),
   c = n(749834),
   u = n(760260),
   d = n(448578),
-  _ = n(946185),
-  f = n(480423),
+  f = n(946185),
+  _ = n(480423),
   p = n(273593),
   h = n(665801),
   m = n(818143),
@@ -94,7 +94,7 @@ function P() {
     name: i.intl.string(i.t["s+KoXF"])
   }, {
     id: r.Ru.CHERRY_BLOSSOM,
-    iconSource: _,
+    iconSource: f,
     isPremium: !0,
     name: i.intl.string(i.t["ta/5RE"])
   }, {
@@ -109,7 +109,7 @@ function P() {
     name: i.intl.string(i.t["2Tf+c3"])
   }, {
     id: r.Ru.CIRCUIT,
-    iconSource: f,
+    iconSource: _,
     isPremium: !0,
     name: i.intl.string(i.t.dUpxKS)
   }, {

@@ -7,13 +7,13 @@ var r = n(255367);
 n(73800);
 var i = n(481060),
   l = n(144114),
-  o = n(489813),
-  s = n(815660),
+  s = n(489813),
+  o = n(815660),
   a = n(388032),
   c = n(667084);
 
 function u() {
-  return (0, r.jsx)(o.PU, {
+  return (0, r.jsx)(s.PU, {
     className: c.editableRequirementContainer,
     icon: i.AtH,
     text: a.intl.string(a.t.woMjLS),
@@ -35,7 +35,7 @@ function d(e) {
   let {
     isUserVerified: t
   } = e, u = t ? a.intl.string(a.t.WWzQtb) : a.intl.string(a.t.woMjLS);
-  return (0, r.jsx)(o.PU, {
+  return (0, r.jsx)(s.PU, {
     className: c.editableRequirementContainer,
     icon: i.AtH,
     text: u,
@@ -71,7 +71,7 @@ function d(e) {
             reason: l.L.GUILD_PHONE_REQUIRED
           }, t))
         }, {
-          modalKey: s.M
+          modalKey: o.M
         })
       }
     })

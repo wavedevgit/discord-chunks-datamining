@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  _: () => _
+  _: () => f
 });
 var r, i = n(255367),
   a = n(73800),
@@ -23,7 +23,7 @@ let u = Object.freeze({
     LARGE: 4
   }),
   d = 20;
-class _ extends(r = a.Component) {
+class f extends(r = a.Component) {
   renderCircle() {
     let {
       strokeSize: e,
@@ -74,6 +74,6 @@ class _ extends(r = a.Component) {
     })
   }
 }
-c(_, "StrokeSizes", u), c(_, "defaultProps", {
+c(f, "StrokeSizes", u), c(f, "defaultProps", {
   strokeSize: u.MEDIUM
 })

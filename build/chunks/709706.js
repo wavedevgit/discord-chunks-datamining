@@ -13,7 +13,7 @@ var r, i = n(315008),
   u = n(750180),
   d = n(999224);
 
-function _(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,14 +22,14 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
@@ -120,7 +120,7 @@ function S(e) {
   let i = {},
     a = v(E.limitedTimeVoices);
   if (E.catalogUpdateTime = a.catalogUpdateTime, r)
-    for (let e of Object.keys(d.x)) i[e] = h(f({}, d.x[e]), {
+    for (let e of Object.keys(d.x)) i[e] = h(_({}, d.x[e]), {
       id: e,
       modelIds: void 0,
       available: !0
@@ -130,7 +130,7 @@ function S(e) {
       models: n,
       available: o
     }
-    of t.voices) Object.hasOwn(d.x, e) && (i[e] = h(f({}, d.x[e]), {
+    of t.voices) Object.hasOwn(d.x, e) && (i[e] = h(_({}, d.x[e]), {
     id: e,
     modelIds: n,
     available: !!r || o,
@@ -217,7 +217,7 @@ function R(e) {
   let {
     modelId: t
   } = e;
-  E.modelState[t] = h(f({}, E.modelState[t]), {
+  E.modelState[t] = h(_({}, E.modelState[t]), {
     status: u.L.DOWNLOADING,
     downloadedBytes: 0
   })
@@ -229,7 +229,7 @@ function P(e) {
     downloadedBytes: n,
     totalBytes: r
   } = e;
-  E.modelState[t] = h(f({}, E.modelState[t]), {
+  E.modelState[t] = h(_({}, E.modelState[t]), {
     downloadedBytes: n,
     totalBytes: r
   })
@@ -241,7 +241,7 @@ function w(e) {
     modelId: n,
     error: r
   } = e;
-  (null == (t = E.modelState[n]) ? void 0 : t.status) !== u.L.DOWNLOADED && (E.modelState[n] = h(f({}, E.modelState[n]), {
+  (null == (t = E.modelState[n]) ? void 0 : t.status) !== u.L.DOWNLOADED && (E.modelState[n] = h(_({}, E.modelState[n]), {
     status: u.L.MISSING
   }), "USER_CANCELED_DOWNLOAD" in (null != r ? r : {}) || (E.error = "ERROR_DOWNLOADING_DEPENDENCY"))
 }
@@ -250,7 +250,7 @@ function D(e) {
   let {
     modelId: t
   } = e;
-  E.modelState[t] = h(f({}, E.modelState[t]), {
+  E.modelState[t] = h(_({}, E.modelState[t]), {
     status: u.L.DOWNLOADED,
     downloadedBytes: void 0
   })
@@ -278,7 +278,7 @@ function k() {
 function j() {
   b = Date.now()
 }
-_(N, "displayName", "VoiceFilterStore");
+f(N, "displayName", "VoiceFilterStore");
 let U = new N(s.Z, {
   VOICE_FILTER_DOWNLOAD_STARTED: R,
   VOICE_FILTER_DOWNLOAD_PROGRESS: P,

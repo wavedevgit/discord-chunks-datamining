@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(477690),
   u = n(481060),
   d = n(2052),
-  _ = n(100527),
-  f = n(906732),
+  f = n(100527),
+  _ = n(906732),
   p = n(806966),
   h = n(28546),
   m = n(98528),
@@ -103,7 +103,7 @@ let Z = (0, v.Mg)(c.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
       location: V
     } = (0, d.O)(), {
       analyticsLocations: z
-    } = (0, f.ZP)(_.Z.STICKER_PICKER), q = (null == (a = (0, E.N)()) ? void 0 : a.subscription_trial) != null, X = i.useRef(null), ee = i.useRef(null), er = i.useRef(null), ei = (0, I.Q)(e => e.showPremiumUpsell), [ea, eo] = (0, h.Iu)(e => [e.searchQuery, e.isSearchSuggestion], s.X), es = i.useRef("");
+    } = (0, _.ZP)(f.Z.STICKER_PICKER), q = (null == (a = (0, E.N)()) ? void 0 : a.subscription_trial) != null, X = i.useRef(null), ee = i.useRef(null), er = i.useRef(null), ei = (0, I.Q)(e => e.showPremiumUpsell), [ea, eo] = (0, h.Iu)(e => [e.searchQuery, e.isSearchSuggestion], s.X), es = i.useRef("");
     i.useImperativeHandle(t, () => ({
       onPickerOpen: ex
     }));
@@ -117,9 +117,9 @@ let Z = (0, v.Mg)(c.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
         listScrollbarWidth: $
       }),
       ed = b._O.useSetting(),
-      e_ = i.useMemo(() => new Set(ed), [ed]),
-      ef = (0, l.e7)([y.default], () => y.default.getCurrentUser()),
-      ep = i.useMemo(() => (0, x.S)(ea, ef, c), [ea, ef, c]),
+      ef = i.useMemo(() => new Set(ed), [ed]),
+      e_ = (0, l.e7)([y.default], () => y.default.getCurrentUser()),
+      ep = i.useMemo(() => (0, x.S)(ea, e_, c), [ea, e_, c]),
       eh = (0, A.RJ)(),
       em = (0, A.LZ)(),
       eg = (0, l.cj)([N.Z], () => N.Z.getAllGuildStickers()),
@@ -141,7 +141,7 @@ let Z = (0, v.Mg)(c.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
       } = (0, A.el)({
         filteredStickers: ep,
         stickersCategories: el,
-        collapsedStickersCategories: e_,
+        collapsedStickersCategories: ef,
         listWidth: eu,
         listPaddingRight: Y,
         stickerNodeMargin: ev ? W : K,
@@ -166,9 +166,9 @@ let Z = (0, v.Mg)(c.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
             });
             break;
           case C.al.STICKER:
-            null != e.sticker && (0, T.kl)(e.sticker, ef, c) && eO(e)
+            null != e.sticker && (0, T.kl)(e.sticker, e_, c) && eO(e)
         }
-      }, [V, ef, c, eO]),
+      }, [V, e_, c, eO]),
       {
         getItemProps: eR,
         getRowProps: eP,
@@ -216,7 +216,7 @@ let Z = (0, v.Mg)(c.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
         location_section: j.jXE.STICKER_PICKER_UPSELL
       }), (0, g.z)()
     }, [G]);
-    return (0, r.jsxs)(f.Gt, {
+    return (0, r.jsxs)(_.Gt, {
       value: z,
       children: [!(q && ec) && (0, r.jsx)("div", {
         className: U.header,
@@ -237,7 +237,7 @@ let Z = (0, v.Mg)(c.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
         }, ew), {
           children: null != eu ? (0, r.jsx)(D.Z, {
             ref: ee,
-            collapsedStickersCategories: e_,
+            collapsedStickersCategories: ef,
             filteredStickers: ep,
             getStickerItemProps: eR,
             getStickerRowProps: eP,

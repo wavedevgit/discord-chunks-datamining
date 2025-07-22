@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(314897),
   u = n(430824),
   d = n(785717),
-  _ = n(475413),
-  f = n(388032),
+  f = n(475413),
+  _ = n(388032),
   p = n(206435);
 
 function h(e, t, n) {
@@ -50,9 +50,9 @@ function g(e) {
   }), v = (0, l.Z)({}), {
     trackUserProfileAction: I
   } = (0, d.KZ)(), T = i.useRef(null);
-  return b ? null == y ? (0, r.jsx)(_.tG, {
+  return b ? null == y ? (0, r.jsx)(f.tG, {
     action: "EDIT_PROFILE",
-    text: f.intl.string(f.t.s5vZlZ),
+    text: _.intl.string(_.t.s5vZlZ),
     icon: o.vdY,
     autoFocus: !0,
     fullWidth: h,
@@ -72,11 +72,11 @@ function g(e) {
         onClose: () => {
           t(), null == E || E()
         },
-        "aria-label": f.intl.string(f.t.AXIHpa),
+        "aria-label": _.intl.string(_.t.AXIHpa),
         children: [(0, r.jsx)(o.sNh, {
           id: "edit-server-profile",
-          label: f.intl.string(f.t["PKQB/P"]),
-          subtext: f.intl.string(f.t.VYHWKC),
+          label: _.intl.string(_.t["PKQB/P"]),
+          subtext: _.intl.string(_.t.VYHWKC),
           action: () => {
             I({
               action: "EDIT_GUILD_PROFILE"
@@ -84,8 +84,8 @@ function g(e) {
           }
         }), (0, r.jsx)(o.sNh, {
           id: "edit-main-profile",
-          label: f.intl.string(f.t.HmFaFB),
-          subtext: f.intl.string(f.t["+EERMj"]),
+          label: _.intl.string(_.t.HmFaFB),
+          subtext: _.intl.string(_.t["+EERMj"]),
           action: () => {
             I({
               action: "EDIT_PROFILE"
@@ -94,9 +94,9 @@ function g(e) {
         })]
       })
     },
-    children: e => (0, r.jsx)(_.tG, m({
+    children: e => (0, r.jsx)(f.tG, m({
       ref: T,
-      text: f.intl.string(f.t.s5vZlZ),
+      text: _.intl.string(_.t.s5vZlZ),
       icon: o.vdY,
       autoFocus: !0,
       fullWidth: h

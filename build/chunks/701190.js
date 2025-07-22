@@ -46,22 +46,22 @@ function d(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = new Map,
-  f = new Map,
+let f = new Map,
+  _ = new Map,
   p = {};
 
 function h(e, t) {
   var n;
   e = null != e ? e : "";
   let r = (0, o.fU)(e),
-    i = _.get(e),
+    i = f.get(e),
     a = null != i ? c({
       state: s.r2o.RESOLVING
     }, i) : {
       state: s.r2o.RESOLVING,
       code: r.baseCode
     };
-  t(a), (_ = new Map(_)).set(e, a), (null == (n = a.guild) ? void 0 : n.id) != null && (p = d(c({}, p), {
+  t(a), (f = new Map(f)).set(e, a), (null == (n = a.guild) ? void 0 : n.id) != null && (p = d(c({}, p), {
     [a.guild.id]: e
   }))
 }
@@ -70,7 +70,7 @@ function m(e) {
   let {
     code: t
   } = e, n = (0, o.fU)(t);
-  (_ = new Map(_)).set(t, {
+  (f = new Map(f)).set(t, {
     code: n.baseCode,
     state: s.r2o.RESOLVING
   })
@@ -121,7 +121,7 @@ function I(e) {
 }
 
 function T(e) {
-  return f.set(e.code, e.error), h(e.code, e => {
+  return _.set(e.code, e.error), h(e.code, e => {
     e.state = s.r2o.ERROR
   })
 }
@@ -145,13 +145,13 @@ function N(e) {
 }
 class C extends(r = i.ZP.Store) {
   getInvite(e) {
-    return _.get(e)
-  }
-  getInviteError(e) {
     return f.get(e)
   }
+  getInviteError(e) {
+    return _.get(e)
+  }
   getInvites() {
-    return _
+    return f
   }
   getInviteKeyForGuildId(e) {
     return p[e]

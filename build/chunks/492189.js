@@ -9,8 +9,8 @@ var r = n(98405),
   c = n(391246),
   u = n(170322),
   d = n(530575),
-  _ = n(436207),
-  f = n(186868),
+  f = n(436207),
+  _ = n(186868),
   p = n(554148),
   h = n(730383),
   m = n(425105),
@@ -62,7 +62,7 @@ var r = n(98405),
     return T(Z, e) || "ArrayBuffer" === (t = y(e)) || "SharedArrayBuffer" === t
   },
   ee = function(e, t) {
-    return q(e) && !v(t) && t in e && f(+t) && t >= 0
+    return q(e) && !v(t) && t in e && _(+t) && t >= 0
   },
   et = function(e, t) {
     return ee(e, t = E(t)) ? d(2, e[t]) : B(e, t)
@@ -82,8 +82,8 @@ o ? (Y || (D.f = et, w.f = en, J(z, "buffer"), J(z, "byteOffset"), J(z, "byteLen
     l = e + (n ? "Clamped" : "") + "Array",
     c = "get" + e,
     d = "set" + e,
-    f = i[l],
-    E = f,
+    _ = i[l],
+    E = _,
     b = E && E.prototype,
     y = {},
     v = function(e, t) {
@@ -107,10 +107,10 @@ o ? (Y || (D.f = et, w.f = en, J(z, "buffer"), J(z, "byteOffset"), J(z, "byteLen
     };
   Y ? s && (E = t(function(e, t, n, r) {
     return u(e, b), M(function() {
-      return O(t) ? $(t) ? void 0 !== r ? new f(t, m(n, o), r) : void 0 !== n ? new f(t, m(n, o)) : new f(t) : q(t) ? L(E, t) : a(N, E, t) : new f(h(t))
+      return O(t) ? $(t) ? void 0 !== r ? new _(t, m(n, o), r) : void 0 !== n ? new _(t, m(n, o)) : new _(t) : q(t) ? L(E, t) : a(N, E, t) : new _(h(t))
     }(), e, E)
-  }), S && S(E, K), C(A(f), function(e) {
-    e in E || _(E, e, f[e])
+  }), S && S(E, K), C(A(_), function(e) {
+    e in E || f(E, e, _[e])
   }), E.prototype = b) : (E = t(function(e, t, n, r) {
     u(e, b);
     var i, s, l, c = 0,
@@ -118,10 +118,10 @@ o ? (Y || (D.f = et, w.f = en, J(z, "buffer"), J(z, "byteOffset"), J(z, "byteLen
     if (O(t))
       if ($(t)) {
         i = t, d = m(n, o);
-        var _ = t.byteLength;
+        var f = t.byteLength;
         if (void 0 === r) {
-          if (_ % o || (s = _ - d) < 0) throw new V(Q)
-        } else if ((s = p(r) * o) + d > _) throw new V(Q);
+          if (f % o || (s = f - d) < 0) throw new V(Q)
+        } else if ((s = p(r) * o) + d > f) throw new V(Q);
         l = s / o
       } else if (q(t)) return L(E, t);
     else return a(N, E, t);
@@ -133,12 +133,12 @@ o ? (Y || (D.f = et, w.f = en, J(z, "buffer"), J(z, "byteOffset"), J(z, "byteLen
         length: l,
         view: new H(i)
       }); c < l;) P(e, c++)
-  }), S && S(E, K), b = E.prototype = I(z)), b.constructor !== E && _(b, "constructor", E), U(b).TypedArrayConstructor = E, W && _(b, W, l);
-  var w = E !== f;
+  }), S && S(E, K), b = E.prototype = I(z)), b.constructor !== E && f(b, "constructor", E), U(b).TypedArrayConstructor = E, W && f(b, W, l);
+  var w = E !== _;
   y[l] = E, r({
     global: !0,
     constructor: !0,
     forced: w,
     sham: !Y
-  }, y), X in E || _(E, X, o), X in b || _(b, X, o), R(l)
+  }, y), X in E || f(E, X, o), X in b || f(b, X, o), R(l)
 }) : e.exports = function() {}

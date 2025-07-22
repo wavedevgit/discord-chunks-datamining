@@ -166,7 +166,7 @@ function P(e) {
           title: U ? S.intl.string(S.t["0HbEQ0"]) : S.intl.string(S.t["5FPBOD"]),
           className: T.topicFormItem,
           required: !0,
-          children: [(0, r.jsx)(c.oil, {
+          children: [(0, r.jsx)(s.Is, {
             className: T.textInput,
             onChange: e => H(e),
             placeholder: S.intl.string(S.t.ZwWrub),

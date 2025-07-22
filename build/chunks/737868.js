@@ -37,8 +37,8 @@ let Z = e => {
     welcomeChannel: w,
     transitionState: B,
     onSave: D,
-    onClose: z
-  } = e, I = i.useRef(null), H = (0, j.Dt)(), [L, R] = i.useState(null != w ? w.channel_id : null), [A, M] = i.useState(null != w ? w.description : ""), [W, q] = i.useState(null != w ? {
+    onClose: I
+  } = e, z = i.useRef(null), H = (0, j.Dt)(), [L, R] = i.useState(null != w ? w.channel_id : null), [A, M] = i.useState(null != w ? w.description : ""), [W, q] = i.useState(null != w ? {
     id: w.emoji_id,
     name: w.emoji_name
   } : null), [G, K] = i.useState(!1), V = (0, o.e7)([b.ZP], () => (null == W ? void 0 : W.id) != null ? b.ZP.getUsableCustomEmojiById(W.id) : null), X = (0, o.e7)([C.ZP], () => C.ZP.getChannels(Z)[C.sH], [Z]), Y = (0, o.e7)([y.Z], () => y.Z.get(Z)), $ = null != (t = null == Y || null == (n = Y.welcome_channels) ? void 0 : n.map(e => e.channel_id)) ? t : [], [U, F] = i.useState(!1);
@@ -56,7 +56,7 @@ let Z = e => {
     })
   });
   let Q = () => {
-      F(!1), z()
+      F(!1), I()
     },
     ee = i.useCallback(e => M(e), []),
     en = e => {
@@ -119,7 +119,7 @@ let Z = e => {
           children: P.intl.string(P.t.bBw6HR)
         }), (0, l.jsx)(s.hjN, {
           className: T.__invalid_formGroup,
-          children: (0, l.jsx)(s.oil, {
+          children: (0, l.jsx)(a.Is, {
             maxLength: 42,
             value: A,
             inputClassName: T.input,
@@ -144,7 +144,7 @@ let Z = e => {
               hasSetEmoji: null != W,
               onClick: en,
               children: (0, l.jsx)(s.yRy, {
-                targetElementRef: I,
+                targetElementRef: z,
                 renderPopout: e => {
                   let {
                     closePopout: n
@@ -196,7 +196,7 @@ let Z = e => {
                       }
                       return e
                     }({}, e), i = i = {
-                      ref: I,
+                      ref: z,
                       onClick: n => {
                         var t;
                         et(), null == (t = e.onClick) || t.call(e, n)

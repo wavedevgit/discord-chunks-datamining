@@ -39,14 +39,14 @@ function u(e) {
 }
 let d = !1;
 
-function _() {
+function f() {
   let e = {};
   for (let t of c) u(t.gpus) && (e = s({}, e, t.experiment.getCurrentConfig({
     location: "updateFlags"
   })));
   a.ZP.setChromiumSwitches(e)
 }
-class f extends r.Z {
+class _ extends r.Z {
   constructor(...e) {
     super(...e), o(this, "actions", {
       POST_CONNECTION_OPEN: async () => {
@@ -56,11 +56,11 @@ class f extends r.Z {
           for (let e of null != (r = null == (n = (await i.Z.processUtils.getSystemInfo()).electronGPUInfo) ? void 0 : n.gpuDevice) ? r : []) !0 === e.active && (l = [e.vendorId, e.deviceId]);
           for (let e of (d = !0, c)) u(e.gpus) && e.experiment.subscribe({
             location: "GPU experiment subscription"
-          }, _);
-          _()
+          }, f);
+          f()
         } catch (e) {}
       }
     })
   }
 }
-let p = new f
+let p = new _

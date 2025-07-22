@@ -32,7 +32,7 @@ function d(e) {
   return e
 }
 
-function _(e, t) {
+function f(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -43,8 +43,8 @@ function _(e, t) {
   return n
 }
 
-function f(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -111,9 +111,9 @@ u(g, "displayName", "SelectivelySyncedUserSettingsStore"), u(g, "persistKey", "S
   }), i
 }, e => {
   var t, n;
-  if ((null == e || null == (n = e.appearance) || null == (t = n.settings) ? void 0 : t.theme) === "amoled") return f(d({}, e), {
-    appearance: f(d({}, e.appearance), {
-      settings: f(d({}, e.appearance.settings), {
+  if ((null == e || null == (n = e.appearance) || null == (t = n.settings) ? void 0 : t.theme) === "amoled") return _(d({}, e), {
+    appearance: _(d({}, e.appearance), {
+      settings: _(d({}, e.appearance.settings), {
         theme: "midnight"
       })
     })

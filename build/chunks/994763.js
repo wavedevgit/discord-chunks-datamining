@@ -44,7 +44,7 @@ function A(e) {
     location: t
   })
 }
-let k = {
+let I = {
   canManageGuild: !1,
   canManageChannels: !1,
   canManageRoles: !1,
@@ -59,7 +59,7 @@ let k = {
   isOwnerWithRequiredMfaLevel: !1,
   isGuildAdmin: !1
 };
-class I extends i.PureComponent {
+class k extends i.PureComponent {
   componentDidMount() {
     A(this.props.section, null, this.props.analyticsLocation)
   }
@@ -137,12 +137,12 @@ class I extends i.PureComponent {
         pinPermissionMigrationAvailable: x
       }),
       A = (null == (n = N.find(e => e.section === a)) || null == (e = n.predicate) ? void 0 : e.call(n)) !== !1,
-      k = (0, G.r)();
+      I = (0, G.r)();
     return (0, l.jsxs)("div", {
       children: [(0, l.jsx)(r.ZP, {
         theme: t,
         sidebarTheme: i,
-        section: A && null != a ? a : k,
+        section: A && null != a ? a : I,
         onSetSection: M.Z.setSection,
         onClose: o.xf,
         title: "" !== s.name ? s.name : T.intl.string(T.t["154/bG"]),
@@ -164,7 +164,7 @@ function B() {
     isGuildMetadataLoaded: _
   } = (0, a.cj)([S.Z], () => S.Z.getProps()), {
     analyticsLocations: G
-  } = (0, u.ZP)(s.Z.GUILD_SETTINGS), T = (0, a.e7)([O.Z], () => O.Z.theme), A = (0, v.Ll)(), B = (0, a.e7)([w.ZP], () => null != o ? w.ZP.getChannels(o.id).SELECTABLE : null, [o]), D = (0, a.cj)([P.Z], () => null != o ? P.Z.getGuildPermissionProps(o) : k), L = null == o ? void 0 : o.id, R = (0, a.e7)([P.Z], () => null != o && P.Z.canAccessGuildSettings(o));
+  } = (0, u.ZP)(s.Z.GUILD_SETTINGS), T = (0, a.e7)([O.Z], () => O.Z.theme), A = (0, v.Ll)(), B = (0, a.e7)([w.ZP], () => null != o ? w.ZP.getChannels(o.id).SELECTABLE : null, [o]), D = (0, a.cj)([P.Z], () => null != o ? P.Z.getGuildPermissionProps(o) : I), L = null == o ? void 0 : o.id, R = (0, a.e7)([P.Z], () => null != o && P.Z.canAccessGuildSettings(o));
   i.useEffect(() => {
     _ || null == L || (0, d.aC)(L)
   }, [_, L]);
@@ -191,7 +191,7 @@ function B() {
     J = (0, C.Y)(o);
   return (0, l.jsx)(u.Gt, {
     value: G,
-    children: (0, l.jsx)(I, (n = function(e) {
+    children: (0, l.jsx)(k, (n = function(e) {
       for (var n = 1; n < arguments.length; n++) {
         var t = null != arguments[n] ? arguments[n] : {},
           l = Object.keys(t);

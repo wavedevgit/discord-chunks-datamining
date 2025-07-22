@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(215569),
-  o = n(146187),
-  s = n(257465),
+  s = n(146187),
+  o = n(257465),
   a = n(755721),
   c = n(481060),
   u = n(852860),
@@ -46,14 +46,14 @@ let v = () => (0, r.jsx)(u.Z, {
     return (i.useEffect(() => {
       C && j === m.t && a()
     }, [C, a, j]), j === m.t) ? null : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsxs)(s.IX, {
+      children: [(0, r.jsxs)(o.IX, {
         transitionState: t,
         "aria-labelledby": O,
         size: "xl",
         onClose: a,
         children: [(0, r.jsx)("div", {
           className: b.closeButton,
-          children: (0, r.jsx)(o.P, {
+          children: (0, r.jsx)(s.P, {
             onClick: () => a(!1)
           })
         }), (0, r.jsx)("div", {

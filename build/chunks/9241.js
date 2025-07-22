@@ -89,12 +89,12 @@ e.exports = function(e) {
       }]
     },
     d = "[1-9](_?[0-9])*|0",
-    _ = "[0-9](_?[0-9])*",
-    f = {
+    f = "[0-9](_?[0-9])*",
+    _ = {
       className: "number",
       relevance: 0,
       variants: [{
-        begin: `\\b(${d})(\\.(${_}))?([eE][+-]?(${_})|r)?i?\\b`
+        begin: `\\b(${d})(\\.(${f}))?([eE][+-]?(${f})|r)?i?\\b`
       }, {
         begin: "\\b0[dD][0-9](_?[0-9])*r?i?\\b"
       }, {
@@ -171,7 +171,7 @@ e.exports = function(e) {
         begin: n
       }],
       relevance: 0
-    }, f, {
+    }, _, {
       className: "variable",
       begin: "(\\$\\W)|((\\$|@@?)(\\w+))(?=[^@$?])(?![A-Za-z])(?![@$?'])"
     }, {

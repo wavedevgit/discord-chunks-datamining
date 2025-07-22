@@ -52,7 +52,7 @@ e.exports = function(e) {
       }],
       relevance: 0
     },
-    _ = {
+    f = {
       beforeMatch: /(^|\{|;)\s*/,
       begin: RegExp(`${i}(\\.${i})*\\s*=(?!=)`),
       returnBegin: !0,
@@ -63,7 +63,7 @@ e.exports = function(e) {
         relevance: .2
       }]
     },
-    f = {
+    _ = {
       scope: "subst",
       begin: /\$\{/,
       end: /\}/,
@@ -81,7 +81,7 @@ e.exports = function(e) {
         contains: [{
           scope: "char.escape",
           match: /''\$/
-        }, f, {
+        }, _, {
           scope: "char.escape",
           match: /'''/
         }, p]
@@ -91,7 +91,7 @@ e.exports = function(e) {
         contains: [{
           scope: "char.escape",
           match: /\\\$/
-        }, f, p]
+        }, _, p]
       }]
     },
     m = {
@@ -101,8 +101,8 @@ e.exports = function(e) {
     g = [u, e.HASH_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, e.COMMENT(/\/\*\*(?!\/)/, /\*\//, {
       subLanguage: "markdown",
       relevance: 0
-    }), r, h, a, s, m, _, d, c];
-  return f.contains = g, {
+    }), r, h, a, s, m, f, d, c];
+  return _.contains = g, {
     name: "Nix",
     aliases: ["nixos"],
     keywords: n,

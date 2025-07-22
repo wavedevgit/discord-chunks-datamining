@@ -26,8 +26,8 @@ function u(e) {
       channel: n,
       unread: u = !1,
       mentionCount: d = 0,
-      userCount: _,
-      embeddedActivitiesCount: f,
+      userCount: f,
+      embeddedActivitiesCount: _,
       isSubscriptionGated: p,
       needSubscriptionToAccess: h
     } = e,
@@ -54,17 +54,17 @@ function u(e) {
       })];
       if (d > 0 && g.push(l.intl.formatToPlainString(l.t["3l1GOz"], {
           mentionCount: d
-        })), u && g.push(l.intl.string(l.t.x5zAGR)), null != _) {
+        })), u && g.push(l.intl.string(l.t.x5zAGR)), null != f) {
         let e = n.userLimit;
         null != e && e > 0 ? g.push(l.intl.formatToPlainString(l.t["6qgTOD"], {
-          userCount: _,
+          userCount: f,
           limit: e
         })) : g.push(l.intl.formatToPlainString(l.t.GNIiAA, {
-          userCount: _
+          userCount: f
         }))
       }
-      null != f && f > 0 && g.push(l.intl.formatToPlainString(l.t.O6PLYW, {
-        activitiesCount: f
+      null != _ && _ > 0 && g.push(l.intl.formatToPlainString(l.t.O6PLYW, {
+        activitiesCount: _
       }));
       let E = c({
         isSubscriptionGated: p,

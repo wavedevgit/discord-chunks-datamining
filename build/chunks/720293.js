@@ -28,11 +28,11 @@ function s(e, t, n, a) {
   let d = (0, r.Q2)(e.id, l, {
       newCdn: c
     }),
-    _ = r.N0.includes(u);
+    f = r.N0.includes(u);
   return {
     url: d,
     mimetype: u,
-    isAnimated: _
+    isAnimated: f
   }
 }
 let l = {

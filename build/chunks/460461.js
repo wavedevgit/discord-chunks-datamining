@@ -437,7 +437,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         value: H[t],
                         onChange: e => q(e, t),
                         isDisabled: !Z
-                      }, "dropdown-" + t), (0, r.jsx)(o.oil, {
+                      }, "dropdown-" + t), (0, r.jsx)(a.Is, {
                         value: e,
                         className: A.isPublished ? T.socialLinksMax : T.socialLinksMin,
                         onChange: e => Q(e, t),

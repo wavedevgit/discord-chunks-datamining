@@ -12,8 +12,8 @@ var r = n(46973),
   c = n(695346),
   u = n(314897),
   d = n(131951),
-  _ = n(19780),
-  f = n(959457),
+  f = n(19780),
+  _ = n(959457),
   p = n(704806),
   h = n(626135),
   m = n(358085),
@@ -48,7 +48,7 @@ class S extends a.Z {
         ownerId: e
       } = (0, s.my)(i);
       if (e !== a) return;
-      let t = f.Z.getRTCConnection(i);
+      let t = _.Z.getRTCConnection(i);
       if (null == t) return;
       this.applyStreamRecording(a, t)
     }
@@ -67,7 +67,7 @@ class S extends a.Z {
       guildId: r
     } = e;
     this.maybeShowClipsWarning(t), this.applyUserVoiceRecording(t);
-    let i = f.Z.getRTCConnection(s.V9({
+    let i = _.Z.getRTCConnection(s.V9({
       streamType: null != r ? I.lo.GUILD : I.lo.CALL,
       ownerId: t,
       channelId: n,
@@ -86,7 +86,7 @@ class S extends a.Z {
     })
   }
   maybeShowClipsWarning(e) {
-    let t = _.Z.getChannelId();
+    let t = f.Z.getChannelId();
     !(null == t || E.Z.getClipsWarningShown(t)) && e !== u.default.getId() && E.Z.isClipsEnabledForUser(e) && c.tU.getSetting() && (i.Z.dispatch({
       type: "CLIPS_SHOW_CALL_WARNING",
       channelId: t
@@ -94,7 +94,7 @@ class S extends a.Z {
   }
   handleClipsAllowVoiceRecordingUpdate() {
     var e;
-    null == (e = _.Z.getUserIds()) || e.forEach(e => this.maybeShowClipsWarning(e))
+    null == (e = f.Z.getUserIds()) || e.forEach(e => this.maybeShowClipsWarning(e))
   }
   handlePostConnectionOpen() {
     if ((0, y.Z)(d.Z)) {
@@ -117,7 +117,7 @@ class S extends a.Z {
       guildId: a
     } = e;
     if (n !== r.Yn.STREAM || !(0, y.Z)(d.Z)) return;
-    let o = f.Z.getRTCConnection(s.V9({
+    let o = _.Z.getRTCConnection(s.V9({
       streamType: null != a ? I.lo.GUILD : I.lo.CALL,
       ownerId: t,
       channelId: i,
@@ -172,7 +172,7 @@ class S extends a.Z {
   }
   applyUserVoiceRecording(e) {
     if (!(0, y.Z)(d.Z)) return;
-    let t = _.Z.getRTCConnection();
+    let t = f.Z.getRTCConnection();
     if (null == t) return;
     if (e === u.default.getId()) return void t.setClipRecordUser(e, "audio", E.Z.getSettings().clipsEnabled);
     let n = E.Z.isVoiceRecordingAllowedForUser(e);

@@ -19,30 +19,30 @@ function d(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let _ = [],
-  f = {},
+let f = [],
+  _ = {},
   p = null;
 
 function h(e) {
   let t = new Set([...null != e ? e : []]);
-  return [..._].reduce((e, n) => t.has(n) ? e : m(n) || e, !1)
+  return [...f].reduce((e, n) => t.has(n) ? e : m(n) || e, !1)
 }
 
 function m(e) {
-  let t = _.indexOf(e);
+  let t = f.indexOf(e);
   if (t > -1) {
-    let n = [..._];
-    return n.splice(t, 1), _ = n, delete f[e], !0
+    let n = [...f];
+    return n.splice(t, 1), f = n, delete _[e], !0
   }
   return !1
 }
 
 function g(e) {
-  return !(e === u.ME || _.includes(e)) && (_ = [..._, e], !0)
+  return !(e === u.ME || f.includes(e)) && (f = [...f, e], !0)
 }
 
 function E(e, t) {
-  null != t && (f[e] = t)
+  null != t && (_[e] = t)
 }
 
 function b(e) {
@@ -78,7 +78,7 @@ function y(e) {
   let {
     guild: t
   } = e;
-  return !!(null != t.joined_at && _.includes(t.id)) && (m(t.id), p = null, !0)
+  return !!(null != t.joined_at && f.includes(t.id)) && (m(t.id), p = null, !0)
 }
 
 function O(e) {
@@ -88,14 +88,14 @@ function O(e) {
     joinedAt: r,
     user: i
   } = e, a = i.id === (null == (t = c.default.getCurrentUser()) ? void 0 : t.id), o = null == r;
-  return !!a && !o && !!_.includes(n) && (m(n), p = null, !0)
+  return !!a && !o && !!f.includes(n) && (m(n), p = null, !0)
 }
 
 function v(e) {
   let {
     guild: t
   } = e;
-  return !!_.includes(t.id) && (m(t.id), p = null, !0)
+  return !!f.includes(t.id) && (m(t.id), p = null, !0)
 }
 
 function I(e) {
@@ -114,17 +114,17 @@ function T(e) {
 }
 
 function S() {
-  _ = l.Z.getGuildsArray().filter(e => (0, o.zN)(e)).map(e => e.id)
+  f = l.Z.getGuildsArray().filter(e => (0, o.zN)(e)).map(e => e.id)
 }
 class A extends(r = i.ZP.Store) {
   initialize() {
     this.waitFor(l.Z, c.default)
   }
   lurkingGuildIds() {
-    return _
+    return f
   }
   mostRecentLurkedGuildId() {
-    return 0 === _.length ? null : _[_.length - 1]
+    return 0 === f.length ? null : f[f.length - 1]
   }
   isLurking(e) {
     let t = l.Z.getGuild(e);
@@ -137,7 +137,7 @@ class A extends(r = i.ZP.Store) {
     return p
   }
   getLoadId(e) {
-    return null != e ? f[e] : null
+    return null != e ? _[e] : null
   }
 }
 d(A, "displayName", "LurkingStore");

@@ -13,7 +13,7 @@ var r = n(654861),
   u = n(70956),
   d = n(709054);
 
-function _(e, t, n) {
+function f(e, t, n) {
   let r, a, o;
   try {
     r = i()(e), a = null != t ? i()(t) : null, o = null != n ? i()(n) : null
@@ -23,7 +23,7 @@ function _(e, t, n) {
   return !(null != a && r.lesser(a) || null != o && r.greater(o))
 }
 
-function f(e) {
+function _(e) {
   let t, n;
   for (let [r, i] of e) switch (r) {
     case o().v3("min_id"):
@@ -47,24 +47,24 @@ let p = {
     let {
       min: t,
       max: n
-    } = f(e);
-    return e => _(e, t, n)
+    } = _(e);
+    return e => f(e, t, n)
   },
   [o().v3("guild_age_range_days")]: e => {
     let {
       min: t,
       max: n
-    } = f(e);
-    return e => _(Math.floor(d.default.age(e) / u.Z.Millis.DAY), t, n)
+    } = _(e);
+    return e => f(Math.floor(d.default.age(e) / u.Z.Millis.DAY), t, n)
   },
   [o().v3("guild_member_count_range")]: e => {
     let {
       min: t,
       max: n
-    } = f(e);
+    } = _(e);
     return e => {
       let r = l.Z.getMemberCount(e);
-      return null != r && _(r, t, n)
+      return null != r && f(r, t, n)
     }
   },
   [o().v3("guild_has_feature")]: e => {

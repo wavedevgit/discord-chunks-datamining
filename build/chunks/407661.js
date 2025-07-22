@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(367907),
   u = n(739566),
   d = n(884902),
-  _ = n(623292),
-  f = n(703656),
+  f = n(623292),
+  _ = n(703656),
   p = n(665906),
   h = n(488131),
   m = n(375954),
@@ -46,7 +46,7 @@ function T(e) {
   } = e;
 
   function o() {
-    (0, _.A6)(t.id), (0, h.R6)(t, n, "Reply Chain Nudge")
+    (0, f.A6)(t.id), (0, h.R6)(t, n, "Reply Chain Nudge")
   }
   let s = i.useRef(a);
   return i.useEffect(() => {
@@ -99,14 +99,14 @@ function S(e) {
     colorStrings: S,
     colorRoleName: A,
     authorId: N
-  } = (0, u.ZP)(a), C = (0, d.X7)(h, N, S), R = I(i, a), P = (0, p.NE)(i, a), w = n.showThreadPromptOnReply && R >= O && P, D = () => (0, f.uL)(E.Z5c.CHANNEL(i.getGuildId(), i.id, a.id));
+  } = (0, u.ZP)(a), C = (0, d.X7)(h, N, S), R = I(i, a), P = (0, p.NE)(i, a), w = n.showThreadPromptOnReply && R >= O && P, D = () => (0, _.uL)(E.Z5c.CHANNEL(i.getGuildId(), i.id, a.id));
 
   function L(e) {
-    e.stopPropagation(), (0, _.qx)(i.id, !s)
+    e.stopPropagation(), (0, f.qx)(i.id, !s)
   }
 
   function x(e) {
-    e.stopPropagation(), (0, _.A6)(i.id)
+    e.stopPropagation(), (0, f.A6)(i.id)
   }
   return (0, r.jsx)("div", {
     className: y.clipContainer,

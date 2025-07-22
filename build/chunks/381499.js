@@ -5,7 +5,7 @@ n.d(t, {
   D5: () => y,
   Gm: () => v,
   T4: () => m,
-  r1: () => _,
+  r1: () => f,
   wA: () => p,
   yC: () => E
 }), n(980754), n(388685), n(415506), n(410992), n(227481), n(730884), n(20464), n(341884), n(364341), n(629680), n(505025), n(918970), n(121784), n(644351), n(146733);
@@ -151,8 +151,8 @@ class d extends s.C {
     }])
   }
 }
-let _ = new d;
-class f extends s.C {
+let f = new d;
+class _ extends s.C {
   internalJsonWrite(e, t) {
     return this.refJsonWriter.scalar(r.wx.UINT64, e.value, "value", !1, !0)
   }
@@ -197,7 +197,7 @@ class f extends s.C {
     }])
   }
 }
-let p = new f;
+let p = new _;
 class h extends s.C {
   internalJsonWrite(e, t) {
     return this.refJsonWriter.scalar(5, e.value, "value", !1, !0)

@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(555573),
   u = n(998698),
   d = n(459273),
-  _ = n(358085),
-  f = n(62883),
+  f = n(358085),
+  _ = n(62883),
   p = n(752305),
   h = n(981631);
 
@@ -157,8 +157,8 @@ class v extends i.PureComponent {
       className: l,
       id: c,
       submitting: u,
-      textAreaPaddingClassName: _,
-      spellcheckEnabled: f,
+      textAreaPaddingClassName: f,
+      spellcheckEnabled: _,
       "aria-controls": p,
       "aria-expanded": m,
       "aria-activedescendant": g
@@ -169,7 +169,7 @@ class v extends i.PureComponent {
         handler: this.handleGlobalPaste
       }), (0, r.jsx)(s.lcI, {
         ref: this.handleSetRef,
-        className: o()(l, _),
+        className: o()(l, f),
         id: c,
         rows: 1,
         fontWidthEstimate: 6,
@@ -188,7 +188,7 @@ class v extends i.PureComponent {
         onContextMenu: this.handleContextMenu,
         value: t ? "" : e,
         tabIndex: 0,
-        spellCheck: f,
+        spellCheck: _,
         "aria-controls": p,
         "aria-expanded": m,
         "aria-activedescendant": g,
@@ -268,12 +268,12 @@ class v extends i.PureComponent {
     }), m(this, "handleClick", () => {
       this.props.maybeShowAutocomplete()
     }), m(this, "handleContextMenu", e => {
-      _.isPlatformEmbedded && (0, l.jW)(e, async () => {
+      f.isPlatformEmbedded && (0, l.jW)(e, async () => {
         let {
           default: e
         } = await n.e("99989").then(n.bind(n, 889662));
         return t => (0, r.jsx)(e, b(g({}, t), {
-          text: (0, f.getSelectionText)()
+          text: (0, _.getSelectionText)()
         }))
       }, {
         align: "bottom",

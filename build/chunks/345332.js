@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  F: () => f,
-  Y: () => _
+  F: () => _,
+  Y: () => f
 });
 var r = n(255367),
   i = n(73800),
@@ -68,7 +68,7 @@ function d(e) {
   }
 }
 
-function _(e, t) {
+function f(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : c.si,
     {
       position: r = c.si.position,
@@ -86,7 +86,7 @@ function _(e, t) {
     }
   }
 }
-let f = i.memo(function(e) {
+let _ = i.memo(function(e) {
   let {
     message: t,
     type: n,

@@ -28,37 +28,37 @@ function f(e) {
     channelId: y,
     guildId: C,
     tag: N
-  } = e, O = i.useRef(null), k = (0, s.Dt)(), _ = null != N, [P, w] = i.useState(null != (n = null == N ? void 0 : N.name) ? n : ""), [B, E] = i.useState(null != N ? {
+  } = e, O = i.useRef(null), k = (0, s.Dt)(), _ = null != N, [P, I] = i.useState(null != (n = null == N ? void 0 : N.name) ? n : ""), [w, B] = i.useState(null != N ? {
     id: N.emojiId,
     name: N.emojiName
-  } : null), [I, z] = i.useState(null == N ? void 0 : N.moderated), T = (0, o.e7)([j.ZP], () => (null == B ? void 0 : B.id) != null ? j.ZP.getUsableCustomEmojiById(B.id) : null), Z = (null == N ? void 0 : N.name) !== P || (null == N ? void 0 : N.emojiId) !== (null == B ? void 0 : B.id) || (null == N ? void 0 : N.emojiName) !== (null == B ? void 0 : B.name) || I !== (null == N ? void 0 : N.moderated), S = () => {
+  } : null), [E, z] = i.useState(null == N ? void 0 : N.moderated), T = (0, o.e7)([j.ZP], () => (null == w ? void 0 : w.id) != null ? j.ZP.getUsableCustomEmojiById(w.id) : null), Z = (null == N ? void 0 : N.name) !== P || (null == N ? void 0 : N.emojiId) !== (null == w ? void 0 : w.id) || (null == N ? void 0 : N.emojiName) !== (null == w ? void 0 : w.name) || E !== (null == N ? void 0 : N.moderated), S = () => {
     if (null != P && Z) {
       if (_) {
         v.Z.updateForumTag({
           id: N.id,
           name: P,
-          emojiId: null == B ? void 0 : B.id,
-          emojiName: null == B ? void 0 : B.name,
-          moderated: I
+          emojiId: null == w ? void 0 : w.id,
+          emojiName: null == w ? void 0 : w.name,
+          moderated: E
         }, y), f();
         return
       }
       v.Z.createForumTag({
         name: P,
-        emojiId: null == B ? void 0 : B.id,
-        emojiName: null == B ? void 0 : B.name,
-        moderated: I
+        emojiId: null == w ? void 0 : w.id,
+        emojiName: null == w ? void 0 : w.name,
+        moderated: E
       }, y), f()
     }
   }, D = e => {
-    null != e && E(null != e.id ? {
+    null != e && B(null != e.id ? {
       id: e.id,
       name: e.name
     } : {
       id: void 0,
       name: e.optionallyDiverseSequence
     })
-  }, R = i.useCallback(e => w(e), []), F = i.useRef(null);
+  }, R = i.useCallback(e => I(e), []), F = i.useRef(null);
   return (0, c.ZP)(() => {
     null != F.current && F.current.focus()
   }), (0, l.jsxs)(r.Y0X, {
@@ -135,10 +135,10 @@ function f(e) {
                 active: o,
                 className: h.emojiButton,
                 tabIndex: 0,
-                renderButtonContents: null != B && (null != B.id || null != B.name) ? () => (0, l.jsx)(u.Z, {
+                renderButtonContents: null != w && (null != w.id || null != w.name) ? () => (0, l.jsx)(u.Z, {
                   className: h.emoji,
-                  emojiId: B.id,
-                  emojiName: B.name,
+                  emojiId: w.id,
+                  emojiName: w.name,
                   animated: !!(null == T ? void 0 : T.animated)
                 }) : null
               }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, n) {
@@ -153,7 +153,7 @@ function f(e) {
               }), t))
             }
           })
-        }), (0, l.jsx)(r.oil, {
+        }), (0, l.jsx)(a.Is, {
           inputRef: F,
           maxLength: 20,
           value: P,
@@ -164,11 +164,11 @@ function f(e) {
           onKeyDown: e => {
             e.keyCode === x.yXg.ENTER && P.length > 0 && (P.length > 0 && S(), e.preventDefault())
           }
-        }), P.length > 0 || null != B ? (0, l.jsx)(a.zx, {
+        }), P.length > 0 || null != w ? (0, l.jsx)(a.zx, {
           "aria-label": g.intl.string(g.t.o8lsHR),
           className: h.clearButton,
           onClick: () => {
-            w(""), E(null)
+            I(""), B(null)
           },
           look: a.zx.Looks.BLANK,
           size: a.zx.Sizes.NONE,
@@ -182,7 +182,7 @@ function f(e) {
     }), (0, l.jsx)(r.XZJ, {
       type: r.XZJ.Types.INVERTED,
       size: 18,
-      value: null != I && I,
+      value: null != E && E,
       onChange: (e, n) => z(n || (null == N ? void 0 : N.moderated) == null && void 0),
       className: h.moderatedCheckbox,
       children: (0, l.jsx)(r.Text, {

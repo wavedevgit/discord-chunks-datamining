@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   W: () => u,
-  Z: () => _
+  Z: () => f
 });
 var r = n(255367),
   i = n(73800),
@@ -18,9 +18,9 @@ let u = [s.OV, s.EE, s.Af, s.U9, s.wO, s.f, s.n8, s.v1, s.pQ],
       entry: n,
       channel: i,
       selected: d,
-      hovered: _
+      hovered: f
     } = e, {
-      largeImage: f
+      largeImage: _
     } = (0, a.rv)({
       entry: n,
       showCoverImage: !1
@@ -38,16 +38,16 @@ let u = [s.OV, s.EE, s.Af, s.U9, s.wO, s.f, s.n8, s.v1, s.pQ],
           location: s.Gt.CARD,
           children: u.map((e, t) => (0, r.jsx)(e, {
             entry: n,
-            hovered: _
+            hovered: f
           }, t))
         })]
       }), (0, r.jsx)(o.f, {
-        alt: null != (t = null == f ? void 0 : f.text) ? t : null == f ? void 0 : f.alt,
-        src: null == f ? void 0 : f.src,
+        alt: null != (t = null == _ ? void 0 : _.text) ? t : null == _ ? void 0 : _.alt,
+        src: null == _ ? void 0 : _.src,
         size: 48,
         className: c.thumbnail,
-        showTooltip: (null == f ? void 0 : f.text) != null
+        showTooltip: (null == _ ? void 0 : _.text) != null
       })]
     })
   },
-  _ = i.memo(d)
+  f = i.memo(d)

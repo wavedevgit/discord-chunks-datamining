@@ -42,19 +42,19 @@
       var d = function(t, r) {
           var i = [];
           for (n = r = r || n; t;) {
-            for (var l = null, c = null, u = null, _ = -1e5, f = 1e5, p = [o.get(t.charCodeAt(0)), s], h = 0; h < p.length; h++) {
+            for (var l = null, c = null, u = null, f = -1e5, _ = 1e5, p = [o.get(t.charCodeAt(0)), s], h = 0; h < p.length; h++) {
               var m = p[h];
               if (null != m)
                 for (var g = 0; g < m.length; g++) {
                   var E = m[g],
                     b = e[E],
                     y = b.order;
-                  if (y > f) break;
+                  if (y > _) break;
                   var O = null == r.prevCapture ? "" : r.prevCapture[0],
                     v = b.match(t, r, O);
                   if (v) {
                     var I = b.quality ? b.quality(v, r, O) : 0;
-                    (y < f || I > _) && (l = E, c = b, u = v, _ = I, f = y)
+                    (y < _ || I > f) && (l = E, c = b, u = v, f = I, _ = y)
                   }
                 }
             }
@@ -65,10 +65,10 @@
           }
           return i
         },
-        _ = function(e, a) {
+        f = function(e, a) {
           return (n = i(a, t)).inline || n.disableAutoBlockNewlines || (e += "\n\n"), n.prevCapture = null, d(r(e), n)
         };
-      return d.rules = e, _.rules = e, _
+      return d.rules = e, f.rules = e, f
     },
     o = function(e) {
       var t = function(t, n) {
@@ -109,8 +109,8 @@
       var s = "<" + e + i + ">";
       return r ? s + t + "</" + e + ">" : s
     },
-    _ = {},
-    f = function(e) {
+    f = {},
+    _ = function(e) {
       if (null == e) return null;
       try {
         var t = new URL(e, "https://localhost").protocol;
@@ -306,7 +306,7 @@
         match: s(/^( *[-*_]){3,} *(?:\n *)+\n/),
         parse: v,
         react: function(e, t, n) {
-          return u("hr", n.key, _)
+          return u("hr", n.key, f)
         },
         html: function(e, t, n) {
           return "<hr>"
@@ -392,11 +392,11 @@
                 u = r === o.length - 1,
                 d = -1 !== c.indexOf("\n\n") || u && s;
               s = d;
-              var _ = n.inline,
-                f = n._list;
+              var f = n.inline,
+                _ = n._list;
               n._list = !0, d ? (n.inline = !1, i = c.replace(P, "\n\n")) : (n.inline = !0, i = c.replace(P, ""));
               var p = t(i, n);
-              return n.inline = _, n._list = f, p
+              return n.inline = f, n._list = _, p
             })
           }
         },
@@ -629,14 +629,14 @@
         },
         react: function(e, t, n) {
           return u("a", n.key, {
-            href: f(e.target),
+            href: _(e.target),
             title: e.title,
             children: t(e.content, n)
           })
         },
         html: function(e, t, n) {
           var r = {
-            href: f(e.target),
+            href: _(e.target),
             title: e.title
           };
           return d("a", t(e.content, n), r)
@@ -654,14 +654,14 @@
         },
         react: function(e, t, n) {
           return u("img", n.key, {
-            src: f(e.target),
+            src: _(e.target),
             alt: e.alt,
             title: e.title
           })
         },
         html: function(e, t, n) {
           return d("img", "", {
-            src: f(e.target),
+            src: _(e.target),
             alt: e.alt,
             title: e.title
           }, !1)
@@ -783,7 +783,7 @@
         match: l(/^ {2,}\n/),
         parse: v,
         react: function(e, t, n) {
-          return u("br", n.key, _)
+          return u("br", n.key, f)
         },
         html: function(e, t, n) {
           return "<br>"
@@ -885,7 +885,7 @@
     defaultHtmlOutput: X,
     preprocess: r,
     sanitizeText: m,
-    sanitizeUrl: f,
+    sanitizeUrl: _,
     unescapeUrl: E,
     htmlTag: d,
     reactElement: u,

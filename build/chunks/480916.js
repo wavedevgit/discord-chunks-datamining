@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   YT: () => p,
-  Z7: () => f,
+  Z7: () => _,
   cU: () => a,
   d_: () => o,
   iP: () => u,
@@ -12,7 +12,7 @@ n.d(t, {
   o6: () => m,
   qd: () => h,
   sU: () => s,
-  x3: () => _,
+  x3: () => f,
   zi: () => g
 });
 var r = n(626135),
@@ -44,7 +44,7 @@ function d(e, t, n) {
   })
 }
 
-function _(e, t, n) {
+function f(e, t, n) {
   r.default.track(i.rMx.AGE_VERIFICATION_MODAL_CLICKED, {
     modal_session_id: e,
     modal_version: t,
@@ -52,7 +52,7 @@ function _(e, t, n) {
   })
 }
 
-function f(e, t) {
+function _(e, t) {
   r.default.track(i.rMx.AGE_VERIFICATION_DM_CLICKED, {
     cta: e,
     channel_id: t

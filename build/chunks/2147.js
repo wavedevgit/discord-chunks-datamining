@@ -649,7 +649,7 @@ class eI extends l.PureComponent {
         title: j,
         children: this.props.isEmojiInChannelNamesEnabled ? (0, i.jsxs)("div", {
           className: ec.nameInput,
-          children: [(0, i.jsx)(g.oil, {
+          children: [(0, i.jsx)(m.Is, {
             inputRef: this.nameInputRef,
             value: t,
             onChange: this.handleChangeName,
@@ -671,7 +671,7 @@ class eI extends l.PureComponent {
             channel: e,
             guildId: null == e ? void 0 : e.guild_id
           })]
-        }) : (0, i.jsx)(g.oil, {
+        }) : (0, i.jsx)(m.Is, {
           inputRef: this.nameInputRef,
           value: t,
           onChange: this.handleChangeName,

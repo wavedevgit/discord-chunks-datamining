@@ -1,13 +1,13 @@
 /** Chunk was on 77025 **/
 n.d(t, {
-  i: () => s
+  i: () => o
 });
 var r = n(442837),
   i = n(430824),
   l = n(944163),
-  o = n(981631);
+  s = n(981631);
 
-function s(e) {
+function o(e) {
   let {
     guildId: t
   } = e;
@@ -15,9 +15,9 @@ function s(e) {
     var e;
     let n = l.Z.get(t),
       r = null == n ? void 0 : n.guild,
-      s = i.Z.getGuild(t),
-      a = null == s ? void 0 : s.verificationLevel,
+      o = i.Z.getGuild(t),
+      a = null == o ? void 0 : o.verificationLevel,
       c = null == r ? void 0 : r.verification_level;
-    return null != (e = null != a ? a : c) ? e : o.sFg.NONE
+    return null != (e = null != a ? a : c) ? e : s.sFg.NONE
   }, [t])
 }

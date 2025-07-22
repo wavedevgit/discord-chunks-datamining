@@ -56,11 +56,11 @@ function d(e) {
       disableTrack: u
     } = e,
     d = c(e, ["impressionName", "impressionProperties", "disableTrack"]);
-  let _ = s;
-  return "function" == typeof _ && (_ = _(d)), (0, o.Z)({
+  let f = s;
+  return "function" == typeof f && (f = f(d)), (0, o.Z)({
     type: a.ImpressionTypes.PAGE,
     name: n,
-    properties: _
+    properties: f
   }, {
     disableTrack: u
   }, [null == (t = d.location) ? void 0 : t.pathname]), (0, r.jsx)(i.AW, l({}, d))

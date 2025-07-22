@@ -41,13 +41,13 @@ function d(e) {
   }
 }
 
-function _(e) {
+function f(e) {
   return Array.isArray(e) ? e[0] : e
 }
 
-function f(e, t) {
+function _(e, t) {
   var n, a, l = "__create-react-context-" + c() + "__",
-    f = function(e) {
+    _ = function(e) {
       function n() {
         var t;
         return t = e.apply(this, arguments) || this, t.emitter = d(t.props.value), t
@@ -66,7 +66,7 @@ function f(e, t) {
         return this.props.children
       }, n
     }(r.Component);
-  (n = {})[l] = o().object.isRequired, f.childContextTypes = n;
+  (n = {})[l] = o().object.isRequired, _.childContextTypes = n;
   var p = function(t) {
     function n() {
       var e;
@@ -91,12 +91,12 @@ function f(e, t) {
     }, r.getValue = function() {
       return this.context[l] ? this.context[l].get() : e
     }, r.render = function() {
-      return _(this.props.children)(this.state.value)
+      return f(this.props.children)(this.state.value)
     }, n
   }(r.Component);
   return (a = {})[l] = o().object, p.contextTypes = a, {
-    Provider: f,
+    Provider: _,
     Consumer: p
   }
 }
-let p = r.createContext || f
+let p = r.createContext || _

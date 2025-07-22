@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  O: () => f
+  O: () => _
 });
 var r = n(255367);
 n(73800);
@@ -50,7 +50,7 @@ function u(e, t) {
 
 function d(e, t) {
   if (null == e) return {};
-  var n, r, i = _(e, t);
+  var n, r, i = f(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -58,25 +58,25 @@ function d(e, t) {
   return i
 }
 
-function _(e, t) {
+function f(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let f = e => {
+let _ = e => {
   var t, n, {
       size: s = "md",
       width: c,
-      height: _,
-      color: f = i.Z.colors.INTERACTIVE_NORMAL,
+      height: f,
+      color: _ = i.Z.colors.INTERACTIVE_NORMAL,
       colorClass: p = ""
     } = e,
     h = d(e, ["size", "width", "height", "color", "colorClass"]);
   let m = (0, o.m)(s),
     g = null != (t = null == m ? void 0 : m.width) ? t : c,
-    E = null != (n = null == m ? void 0 : m.height) ? n : _;
+    E = null != (n = null == m ? void 0 : m.height) ? n : f;
   return (0, r.jsxs)("svg", u(l({}, (0, a.Z)(h)), {
     xmlns: "http://www.w3.org/2000/svg",
     width: g,
@@ -84,11 +84,11 @@ let f = e => {
     fill: "none",
     viewBox: "0 0 24 24",
     children: [(0, r.jsx)("path", {
-      fill: "string" == typeof f ? f : f.css,
+      fill: "string" == typeof _ ? _ : _.css,
       d: "M22.52 13.17c-.2.41-.87.35-1.15 0a3.02 3.02 0 0 0-.45-.48.47.47 0 0 1-.13-.54c.04-.1.04-.2-.01-.31-.4-.9-1.18-2.4-2.4-3.76C16.89 6.38 14.82 5 12 5 9.2 5 7.13 6.38 5.61 8.08a15.05 15.05 0 0 0-2.37 3.72.48.48 0 0 0 0 .4c.4.9 1.18 2.37 2.37 3.72a8.46 8.46 0 0 0 5.89 3.07c.28.01.5.24.54.5.05.31.15.6.29.87.13.27-.03.64-.33.64-7.11 0-10.27-7.11-10.89-8.7a.83.83 0 0 1 0-.6C1.73 10.1 4.9 3 12 3c7.11 0 10.27 7.11 10.89 8.7.07.2.07.4 0 .6-.08.21-.2.5-.37.87Z",
       className: p
     }), (0, r.jsx)("path", {
-      fill: "string" == typeof f ? f : f.css,
+      fill: "string" == typeof _ ? _ : _.css,
       d: "M15.56 11.77c.2-.1.44.02.44.23a4 4 0 1 1-4-4c.21 0 .33.25.23.44a2.5 2.5 0 0 0 3.32 3.32ZM19 14a1 1 0 0 1 1 1v3h3a1 1 0 1 1 0 2h-3v3a1 1 0 1 1-2 0v-3h-3a1 1 0 1 1 0-2h3v-3a1 1 0 0 1 1-1Z",
       className: p
     })]

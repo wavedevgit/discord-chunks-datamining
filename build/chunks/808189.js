@@ -14,21 +14,21 @@ var i = n(120356),
   c = n(31698),
   u = n(528771),
   d = n(267642),
-  _ = n(981631),
-  f = n(474936),
+  f = n(981631),
+  _ = n(474936),
   p = n(388032),
   h = n(539964);
 let m = [{
-    tier: _.Eu4.TIER_1,
+    tier: f.Eu4.TIER_1,
     perks: [{
       icon: s.EO4,
       getCopy: () => p.intl.formatToPlainString(p.t.Tlz0x8, {
-        numEmojiSlots: f.HO[_.Eu4.TIER_1].limits.emoji
+        numEmojiSlots: _.HO[f.Eu4.TIER_1].limits.emoji
       })
     }, {
       icon: s.KY1,
       getCopy: () => p.intl.formatToPlainString(p.t["v+MIfn"], {
-        numSoundboardSlots: f.HO[_.Eu4.TIER_1].limits.soundboardSounds
+        numSoundboardSlots: _.HO[f.Eu4.TIER_1].limits.soundboardSounds
       }),
       isNew: !0
     }, {
@@ -39,7 +39,7 @@ let m = [{
       getCopy: () => p.intl.string(p.t["WH+OeH"])
     }]
   }, {
-    tier: _.Eu4.TIER_2,
+    tier: f.Eu4.TIER_2,
     perks: [{
       icon: s.hGI,
       getCopy: () => p.intl.string(p.t.y4ft4O)
@@ -56,7 +56,7 @@ let m = [{
       getCopy: () => p.intl.string(p.t["1a5rjo"])
     }]
   }, {
-    tier: _.Eu4.TIER_3,
+    tier: f.Eu4.TIER_3,
     perks: [{
       icon: s.xPt,
       getCopy: () => p.intl.string(p.t.adNGjY)
@@ -74,7 +74,7 @@ let m = [{
     }, {
       icon: s.ewx,
       getCopy: () => p.intl.formatToPlainString(p.t.hsZ88f, {
-        numStageSeats: _.RcX
+        numStageSeats: f.RcX
       })
     }]
   }],
@@ -86,7 +86,7 @@ let m = [{
       className: h.tierCards,
       children: m.map(e => (0, r.jsxs)("div", {
         className: h.tierCard,
-        children: [e.tier === _.Eu4.TIER_3 && (0, r.jsxs)(r.Fragment, {
+        children: [e.tier === f.Eu4.TIER_3 && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)("div", {
             className: a()(h.tierCardBorderHighlight, h.tierCardBorderHighlightTopRight)
           }), (0, r.jsx)("div", {
@@ -126,7 +126,7 @@ let m = [{
             variant: "text-md/normal",
             color: "always-white",
             children: p.intl.format(p.t.vbAsAw, {
-              numBoostsRequired: _.oCV[e.tier]
+              numBoostsRequired: f.oCV[e.tier]
             })
           })]
         }), (0, r.jsx)("ul", {

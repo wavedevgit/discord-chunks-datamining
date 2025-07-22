@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  B: () => f,
-  y: () => _
+  B: () => _,
+  y: () => f
 });
 var r = n(255367);
 n(73800);
@@ -35,16 +35,16 @@ function d(e) {
   return e
 }
 
-function _(e) {
+function f(e) {
   return (0, o.dX)(e) ? c.intl.string(c.t["4f8iur"]) : (0, o.y0)(e) ? c.intl.string(c.t.yX2hNz) : (0, o.kq)(e) ? c.intl.string(c.t.oSs8en) : c.intl.string(c.t.bK9GT0)
 }
 
-function f(e) {
+function _(e) {
   let {
     user: t,
     entry: c,
     display: u,
-    onAction: f,
+    onAction: _,
     onClose: p
   } = e, h = (0, l.Z)({
     onClose: p
@@ -58,16 +58,16 @@ function f(e) {
       return n => (0, r.jsx)(e, d({
         entry: c,
         user: t,
-        onAction: f,
+        onAction: _,
         onOpenGameSettings: h
       }, n))
     })
   };
   return (0, r.jsx)(a.sNh, {
     id: "delete-entry-history",
-    label: _(c),
+    label: f(c),
     action: () => {
-      null == f || f({
+      null == _ || _({
         action: "PRESS_DELETE_HISTORY_MENU_ITEM"
       }), g()
     },

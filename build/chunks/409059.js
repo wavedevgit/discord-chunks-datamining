@@ -32,7 +32,7 @@ function c(e) {
 let u = new Map,
   d = null;
 
-function _(e, t) {
+function f(e, t) {
   if (null == e) return;
   let n = u.get(e),
     r = null != n ? c({}, n) : {
@@ -42,7 +42,7 @@ function _(e, t) {
   t(r), (u = new Map(u)).set(e, r)
 }
 
-function f(e) {
+function _(e) {
   let {
     code: t
   } = e;
@@ -57,7 +57,7 @@ function p(e) {
 }
 
 function h(e) {
-  return _(e.code, t => {
+  return f(e.code, t => {
     let n = (0, o.Z)(e);
     for (let e in n) t[e] = n[e]
   })
@@ -71,26 +71,26 @@ function m(e) {
 }
 
 function g(e) {
-  return _(e.code, e => {
+  return f(e.code, e => {
     e.state = s.Rj.EXPIRED
   })
 }
 
 function E(e) {
-  return _(e.code, e => {
+  return f(e.code, e => {
     e.state = s.Rj.ACCEPTING
   })
 }
 
 function b(e) {
-  return _(e.code, e => {
+  return f(e.code, e => {
     var t;
     e.state = s.Rj.ACCEPTED, e.usageCount = (null != (t = e.usageCount) ? t : 0) + 1
   })
 }
 
 function y(e) {
-  return _(e.code, e => {
+  return f(e.code, e => {
     e.state = s.Rj.RESOLVED
   })
 }
@@ -121,7 +121,7 @@ class I extends(r = i.ZP.Store) {
 }
 l(I, "displayName", "GuildTemplateStore");
 let T = new I(a.Z, {
-  GUILD_TEMPLATE_RESOLVE: f,
+  GUILD_TEMPLATE_RESOLVE: _,
   GUILD_TEMPLATE_CREATE_SUCCESS: p,
   GUILD_TEMPLATE_SYNC_SUCCESS: p,
   GUILD_TEMPLATE_RESOLVE_SUCCESS: p,

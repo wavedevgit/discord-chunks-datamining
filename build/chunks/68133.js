@@ -35,7 +35,7 @@ async function u(e, t) {
   return (0, i.oY)(e, HTMLCanvasElement) ? s(e) : (0, i.oY)(e, HTMLVideoElement) ? l(e, t) : (0, i.oY)(e, HTMLIFrameElement) ? c(e) : e.cloneNode(!1)
 }
 let d = e => null != e.tagName && "SLOT" === e.tagName.toUpperCase();
-async function _(e, t, n) {
+async function f(e, t, n) {
   var r, a;
   let o = [];
   return 0 === (o = d(e) && e.assignedNodes ? (0, i.qo)(e.assignedNodes()) : (0, i.oY)(e, HTMLIFrameElement) && (null == (r = e.contentDocument) ? void 0 : r.body) ? (0, i.qo)(e.contentDocument.body.childNodes) : (0, i.qo)((null != (a = e.shadowRoot) ? a : e).childNodes)).length || (0, i.oY)(e, HTMLVideoElement) || await o.reduce((e, r) => e.then(() => E(r, n)).then(e => {
@@ -43,7 +43,7 @@ async function _(e, t, n) {
   }), Promise.resolve()), t
 }
 
-function f(e, t) {
+function _(e, t) {
   let n = t.style;
   if (!n) return;
   let r = window.getComputedStyle(e);
@@ -68,7 +68,7 @@ function h(e, t) {
 }
 
 function m(e, t) {
-  return (0, i.oY)(t, Element) && (f(e, t), (0, r.b)(e, t), p(e, t), h(e, t)), t
+  return (0, i.oY)(t, Element) && (_(e, t), (0, r.b)(e, t), p(e, t), h(e, t)), t
 }
 async function g(e, t) {
   let n = e.querySelectorAll ? e.querySelectorAll("use") : [];
@@ -95,5 +95,5 @@ async function g(e, t) {
   return e
 }
 async function E(e, t, n) {
-  return n || !t.filter || t.filter(e) ? Promise.resolve(e).then(e => u(e, t)).then(n => _(e, n, t)).then(t => m(e, t)).then(e => g(e, t)) : null
+  return n || !t.filter || t.filter(e) ? Promise.resolve(e).then(e => u(e, t)).then(n => f(e, n, t)).then(t => m(e, t)).then(e => g(e, t)) : null
 }

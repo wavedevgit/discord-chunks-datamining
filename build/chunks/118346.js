@@ -6,17 +6,17 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(481060),
-  o = n(893776),
-  s = n(489813),
+  s = n(893776),
+  o = n(489813),
   a = n(388032),
   c = n(667084);
 
 function u() {
-  let [e, t] = i.useState(!1), [n, s] = i.useState(!1), [u, d] = i.useState(!1);
+  let [e, t] = i.useState(!1), [n, o] = i.useState(!1), [u, d] = i.useState(!1);
   i.useEffect(() => {
     let e;
     return n && (e = setTimeout(() => {
-      s(!1)
+      o(!1)
     }, 2e3)), () => {
       null != e && clearTimeout(e)
     }
@@ -25,7 +25,7 @@ function u() {
     if (!e) {
       t(!0);
       try {
-        await o.Z.verifyResend(), s(!0), d(!0)
+        await s.Z.verifyResend(), o(!0), d(!0)
       } catch (e) {} finally {
         t(!1)
       }
@@ -46,7 +46,7 @@ function u() {
 }
 
 function d() {
-  return (0, r.jsx)(s.PU, {
+  return (0, r.jsx)(o.PU, {
     className: c.editableRequirementContainer,
     icon: l._XJ,
     text: a.intl.string(a.t.c6EUJC),
@@ -68,7 +68,7 @@ function m(e) {
   let {
     isUserVerified: t
   } = e, n = t ? a.intl.string(a.t.qY1jHB) : a.intl.string(a.t.c6EUJC);
-  return (0, r.jsx)(s.PU, {
+  return (0, r.jsx)(o.PU, {
     className: c.editableRequirementContainer,
     icon: l._XJ,
     text: n,

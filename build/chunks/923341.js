@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  p: () => f,
+  p: () => _,
   t: () => p
 });
 var r = n(697171),
@@ -22,8 +22,8 @@ var r = n(697171),
   d = function(e) {
     return void 0 === e && (e = 0), Date.now() + e
   },
-  _ = !1,
-  f = new(function() {
+  f = !1,
+  _ = new(function() {
     function e() {
       var e = this;
       this.stopped = !0, this.listener = function() {
@@ -32,15 +32,15 @@ var r = n(697171),
     }
     return e.prototype.run = function(e) {
       var t = this;
-      if (void 0 === e && (e = l), !_) {
-        _ = !0;
+      if (void 0 === e && (e = l), !f) {
+        f = !0;
         var n = d(e);
         (0, a.p)(function() {
           var i = !1;
           try {
             i = (0, r.N)()
           } finally {
-            if (_ = !1, e = n - d(), !s()) return;
+            if (f = !1, e = n - d(), !s()) return;
             i ? t.run(1e3) : e > 0 ? t.run(e) : t.start()
           }
         })
@@ -66,5 +66,5 @@ var r = n(697171),
     }, e
   }()),
   p = function(e) {
-    !o && e > 0 && f.start(), (o += e) || f.stop()
+    !o && e > 0 && _.start(), (o += e) || _.stop()
   }

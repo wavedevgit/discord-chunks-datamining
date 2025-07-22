@@ -11,9 +11,9 @@ var r, i = n(442837),
   c = n(496675),
   u = n(19780),
   d = n(979651),
-  _ = n(981631);
+  f = n(981631);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -34,7 +34,7 @@ function g() {
   else {
     let n = s.Z.getChannel(t),
       r = d.Z.getVoiceState(null == n ? void 0 : n.getGuildId(), o.default.getId());
-    e = l.Z.getMode() !== _.pM4.VOICE_ACTIVITY || null == n || n.isPrivate() || n.isGuildStageVoice() || c.Z.can(_.Plq.USE_VAD, n) || m(r)
+    e = l.Z.getMode() !== f.pM4.VOICE_ACTIVITY || null == n || n.isPrivate() || n.isGuildStageVoice() || c.Z.can(f.Plq.USE_VAD, n) || m(r)
   }
   if (p === e) return !1;
   h = e, p = e, a.Z.dispatch({
@@ -73,7 +73,7 @@ class O extends(r = i.ZP.Store) {
     return p
   }
 }
-f(O, "displayName", "PermissionVADStore");
+_(O, "displayName", "PermissionVADStore");
 let v = new O(a.Z, {
   RTC_CONNECTION_STATE: g,
   MEDIA_ENGINE_SET_AUDIO_ENABLED: g,

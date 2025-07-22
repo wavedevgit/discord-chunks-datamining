@@ -12,9 +12,9 @@ var r = n(152057),
   c = n(451478),
   u = n(425128),
   d = n(994752),
-  _ = n(276344);
+  f = n(276344);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -39,7 +39,7 @@ function v(e, t) {
   let r = O(e, t);
   if (b.has(r) || (null != (n = y.get(r)) ? n : 0) > h) return !1;
   if (l.Z.getGuildId() !== e) return;
-  if (!(0, _.NM)({
+  if (!(0, f.NM)({
       guildId: e,
       location: "GuildLeaderboardManager"
     }) || !c.Z.isFocused() || !o.Z.isConnected()) return !1;
@@ -124,7 +124,7 @@ class C extends a.Z {
     return S(e)
   }
   constructor(...e) {
-    super(...e), f(this, "actions", {
+    super(...e), _(this, "actions", {
       POST_CONNECTION_OPEN: N,
       CONNECTION_CLOSED: A,
       WINDOW_FOCUS: A,

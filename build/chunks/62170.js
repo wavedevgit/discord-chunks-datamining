@@ -53,20 +53,20 @@ let u = i.forwardRef(function(e, t) {
     playing: c,
     playbackRate: u
   } = e, d = l(e, ["muted", "volume", "playing", "playbackRate"]);
-  let [_, f] = (0, a.Z)(t);
+  let [f, _] = (0, a.Z)(t);
   return i.useEffect(() => {
-    let e = _.current;
+    let e = f.current;
     null != e && void 0 !== n && (e.muted = n)
-  }, [_, n]), i.useEffect(() => {
-    let e = _.current;
+  }, [f, n]), i.useEffect(() => {
+    let e = f.current;
     null != e && void 0 !== o && (e.volume = o)
-  }, [_, o]), i.useEffect(() => {
-    let e = _.current;
+  }, [f, o]), i.useEffect(() => {
+    let e = f.current;
     null != e && null != u && (e.playbackRate = u)
-  }, [_, u]), i.useEffect(() => {
-    let e = _.current;
+  }, [f, u]), i.useEffect(() => {
+    let e = f.current;
     null != e && void 0 !== c && (c ? e.play() : e.pause())
-  }, [_, c]), (0, r.jsx)("audio", s({
-    ref: f
+  }, [f, c]), (0, r.jsx)("audio", s({
+    ref: _
   }, d))
 })

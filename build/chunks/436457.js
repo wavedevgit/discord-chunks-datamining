@@ -88,7 +88,7 @@ function C(e) {
             titleClassName: l()(x.formTitle, {
               [x.error]: null != T
             }),
-            children: (0, o.jsx)(d.oil, {
+            children: (0, o.jsx)(c.Is, {
               value: i,
               onChange: C,
               className: x.input,

@@ -9,8 +9,8 @@ var r = n(255367);
 n(73800);
 var i = n(120356),
   l = n.n(i),
-  o = n(481060),
-  s = n(454585),
+  s = n(481060),
+  o = n(454585),
   a = n(489813),
   c = n(388032),
   u = n(667084);
@@ -25,14 +25,14 @@ function d(e) {
     className: l()(u.termsFieldBody, i),
     children: t.map((e, t) => (0, r.jsxs)("div", {
       className: u.termsRow,
-      children: [(0, r.jsx)(o.Text, {
+      children: [(0, r.jsx)(s.Text, {
         variant: "text-md/normal",
         color: "text-muted",
         children: "".concat(t + 1, ".")
-      }), (0, r.jsx)(o.Text, {
+      }), (0, r.jsx)(s.Text, {
         variant: "text-md/normal",
         className: u.termsRowContent,
-        children: s.Z.parseGuildVerificationFormRule(e, !0, {
+        children: o.Z.parseGuildVerificationFormRule(e, !0, {
           channelId: n
         })
       })]
@@ -46,9 +46,9 @@ function m(e) {
     checked: n,
     disabled: i
   } = e;
-  return (0, r.jsx)(o.XZJ, {
+  return (0, r.jsx)(s.XZJ, {
     size: 24,
-    type: o.XZJ.Types.INVERTED,
+    type: s.XZJ.Types.INVERTED,
     value: n,
     onChange: t,
     disabled: i,
@@ -56,7 +56,7 @@ function m(e) {
       borderWidth: 2
     },
     className: u.checkbox,
-    children: (0, r.jsx)(o.Text, {
+    children: (0, r.jsx)(s.Text, {
       variant: "text-md/normal",
       children: c.intl.string(c.t["2EXfGB"])
     })
@@ -68,7 +68,7 @@ function f(e) {
     formField: t
   } = e;
   return (0, r.jsx)(a.Ih, {
-    icon: o.snC,
+    icon: s.snC,
     text: c.intl.string(c.t["2xbmoK"]),
     meetsRequirement: !!t.response
   })

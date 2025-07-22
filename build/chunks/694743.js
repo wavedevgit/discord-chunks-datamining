@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  E: () => f
+  E: () => _
 });
 var r = n(255367),
   i = n(73800),
@@ -34,15 +34,15 @@ function u(e) {
 var d = function(e) {
   return e.XXSMALL = "xxsmall", e.XSMALL = "xsmall", e.SMALL = "small", e.LARGE = "large", e
 }(d || {});
-let _ = "indeterminate";
+let f = "indeterminate";
 
-function f(e) {
+function _(e) {
   let t, {
       className: n,
       percent: a,
       size: c = "small",
       foregroundColor: d = s.Z.unsafe_rawColors.BRAND_500.css,
-      backgroundColor: f = "var(--background-modifier-active)",
+      backgroundColor: _ = "var(--background-modifier-active)",
       foregroundGradientColor: p,
       animate: h = !0
     } = e,
@@ -54,9 +54,9 @@ function f(e) {
   }, (0, r.jsx)("div", {
     className: o()(n, l.progress, l[c]),
     style: {
-      backgroundColor: f
+      backgroundColor: _
     },
-    children: m !== _ && "number" == typeof m ? (0, r.jsx)("div", {
+    children: m !== f && "number" == typeof m ? (0, r.jsx)("div", {
       className: o()(l.progressBar, l[c], {
         [l.animating]: h
       }),
@@ -78,4 +78,4 @@ function f(e) {
     })
   })
 }
-f.Sizes = d, f.INDETERMINATE = _
+_.Sizes = d, _.INDETERMINATE = f

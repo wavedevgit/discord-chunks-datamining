@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685), n(415506);
 var l = n(255367),
   r = n(73800),
-  i = n(481060),
-  s = n(447097),
+  s = n(481060),
+  i = n(447097),
   a = n(873124),
   o = n(248902),
   d = n(160511),
@@ -70,32 +70,32 @@ function g(e) {
     setSlide: y,
     onClose: x
   };
-  return (0, l.jsxs)(i.MyZ, {
+  return (0, l.jsxs)(s.MyZ, {
     activeSlide: b,
     width: j,
     onSlideReady: v,
-    children: [(0, l.jsx)(i.Mi4, {
+    children: [(0, l.jsx)(s.Mi4, {
       id: "select",
       children: (0, l.jsx)(o.Z, f({}, Z))
-    }), (0, l.jsx)(i.Mi4, {
+    }), (0, l.jsx)(s.Mi4, {
       id: "webauthn",
       children: (0, l.jsx)(u.Z, f({}, Z))
-    }), (0, l.jsx)(i.Mi4, {
+    }), (0, l.jsx)(s.Mi4, {
       id: "totp",
       children: (0, l.jsx)(c.Z, m(f({}, Z), {
         isSlideReady: "totp" === S
       }))
-    }), (0, l.jsx)(i.Mi4, {
+    }), (0, l.jsx)(s.Mi4, {
       id: "sms",
       children: (0, l.jsx)(d.Z, m(f({}, Z), {
         isSlideReady: "sms" === S
       }))
-    }), (0, l.jsx)(i.Mi4, {
+    }), (0, l.jsx)(s.Mi4, {
       id: "backup",
-      children: (0, l.jsx)(s.Z, m(f({}, Z), {
+      children: (0, l.jsx)(i.Z, m(f({}, Z), {
         isSlideReady: "backup" === S
       }))
-    }), (0, l.jsx)(i.Mi4, {
+    }), (0, l.jsx)(s.Mi4, {
       id: "password",
       children: (0, l.jsx)(a.Z, m(f({}, Z), {
         isSlideReady: "password" === S
@@ -109,24 +109,24 @@ function x(e) {
     mfaChallenge: t,
     finish: n,
     transitionState: r,
-    onClose: s
+    onClose: i
   } = e;
-  return (0, l.jsx)(i.Y0X, {
+  return (0, l.jsx)(s.Y0X, {
     transitionState: r,
-    size: i.CgR.SMALL,
+    size: s.CgR.SMALL,
     "aria-label": h.intl.string(h.t.saHocH),
     parentComponent: "MFAModal",
     children: (0, l.jsx)(g, {
       mfaChallenge: t,
       mfaFinish: n,
-      onClose: s,
-      onEarlyClose: s
+      onClose: i,
+      onEarlyClose: i
     })
   })
 }
 
 function p(e, t, n) {
-  (0, i.h7j)(n => (0, l.jsx)(x, f({
+  (0, s.h7j)(n => (0, l.jsx)(x, f({
     finish: t,
     mfaChallenge: e
   }, n)), {

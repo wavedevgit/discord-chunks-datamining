@@ -153,29 +153,29 @@ function O(e) {
     fieldTextHook: a,
     metadataField: o,
     existingPendingConfiguration: c,
-    platform: d,
-    applicationId: m,
-    onConfigurationChange: g,
-    locked: p,
-    operator: f
-  } = e, j = (null == c ? void 0 : c.configuration) != null, _ = null != (n = null == c ? void 0 : c.index) ? n : -1, [v, O] = function(e, t) {
+    platform: m,
+    applicationId: g,
+    onConfigurationChange: p,
+    locked: f,
+    operator: j
+  } = e, _ = (null == c ? void 0 : c.configuration) != null, v = null != (n = null == c ? void 0 : c.index) ? n : -1, [O, C] = function(e, t) {
     let n = null != t ? t : h.iO.GREATER_THAN,
       r = Math.round(Number(null != e ? e : 0));
     return n === h.iO.GREATER_THAN ? r = Math.max(1, r + 1) : n === h.iO.LESS_THAN && (r = Math.max(0, r - 1)), [r.toString(), n]
-  }(null == c || null == (t = c.configuration) ? void 0 : t.value, f), [C, y] = i.useState(v), N = null != a ? x.intl.format(a, {
-    count: C,
-    metadataHook: () => C
+  }(null == c || null == (t = c.configuration) ? void 0 : t.value, j), [y, N] = i.useState(O), I = null != a ? x.intl.format(a, {
+    count: y,
+    metadataHook: () => y
   }) : (0, r.jsx)("span", {
     className: b.fieldText,
     children: s
-  }), I = i.useId();
+  }), E = i.useId();
   return (0, r.jsxs)("tr", {
     className: b.ruleContainer,
     children: [(0, r.jsx)("th", {
       scope: "row",
       children: (0, r.jsx)(u.nn4, {
         children: (0, r.jsx)("label", {
-          htmlFor: I,
+          htmlFor: E,
           children: l
         })
       })
@@ -189,51 +189,51 @@ function O(e) {
         className: b.numericalRuleSubItemContainer,
         children: (0, r.jsx)(u.Text, {
           variant: "text-md/normal",
-          children: N
+          children: I
         })
       })]
     }), (0, r.jsx)("td", {
-      children: (0, r.jsx)(u.oil, {
+      children: (0, r.jsx)(d.Is, {
         "aria-label": x.intl.string(x.t["FTmi9/"]),
         type: "number",
         className: b.numericalRuleInput,
-        value: C,
+        value: y,
         onChange: e => {
-          if (y(e), null == c) return;
+          if (N(e), null == c) return;
           let [t, n] = function(e, t) {
             let n = null != t ? t : h.iO.GREATER_THAN,
               r = Math.round(Number(null != e ? e : 0));
             return n === h.iO.GREATER_THAN ? r = Math.max(0, r - 1) : n === h.iO.LESS_THAN && (r = Math.max(1, r + 1)), [r.toString(), n]
-          }(e, f);
+          }(e, j);
           if ("" !== e) {
             var r;
-            g({
-              connectionType: null != (r = null == d ? void 0 : d.type) ? r : h.Kt,
-              applicationId: m,
+            p({
+              connectionType: null != (r = null == m ? void 0 : m.type) ? r : h.Kt,
+              applicationId: g,
               connectionMetadataField: o,
               operator: n,
               value: t
-            }, _)
+            }, v)
           }
         },
-        disabled: p || !j
+        disabled: f || !_
       })
     }), (0, r.jsx)("td", {
       children: (0, r.jsx)(u.rsf, {
-        id: I,
-        checked: j,
+        id: E,
+        checked: _,
         onChange: e => {
           var t, n;
           let r = null;
           e && (r = {
-            connectionType: null != (t = null == d ? void 0 : d.type) ? t : h.Kt,
-            applicationId: m,
+            connectionType: null != (t = null == m ? void 0 : m.type) ? t : h.Kt,
+            applicationId: g,
             connectionMetadataField: o,
-            operator: O,
-            value: C
-          }), g(r, null != (n = null == c ? void 0 : c.index) ? n : -1)
+            operator: C,
+            value: y
+          }), p(r, null != (n = null == c ? void 0 : c.index) ? n : -1)
         },
-        disabled: p
+        disabled: f
       })
     })]
   }, o)

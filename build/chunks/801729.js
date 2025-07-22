@@ -56,9 +56,9 @@ function d(e, t) {
   }), e
 }
 
-function _(e, t) {
+function f(e, t) {
   if (null == e) return {};
-  var n, r, i = f(e, t);
+  var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -66,7 +66,7 @@ function _(e, t) {
   return i
 }
 
-function f(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -105,15 +105,15 @@ let E = e => {
       disableColor: i = !1,
       shape: l = p.ROUND,
       className: u,
-      style: f
-    } = e, E = _(e, ["count", "color", "disableColor", "shape", "className", "style"]);
+      style: _
+    } = e, E = f(e, ["count", "color", "disableColor", "shape", "className", "style"]);
     return (0, r.jsx)("div", d(c({
       className: a()(u, s.numberBadge, l),
       style: c({
         backgroundColor: i ? void 0 : n,
         width: m(t),
         paddingRight: h(t)
-      }, f)
+      }, _)
     }, E), {
       children: g(t)
     }))
@@ -125,13 +125,13 @@ let E = e => {
       color: i = o.Z.STATUS_DANGER,
       shape: l = p.ROUND,
       disableColor: u = !1,
-      style: f
-    } = e, h = _(e, ["text", "className", "color", "shape", "disableColor", "style"]);
+      style: _
+    } = e, h = f(e, ["text", "className", "color", "shape", "disableColor", "style"]);
     return (0, r.jsx)("div", d(c({
       className: a()(n, s.textBadge, l),
       style: c({
         backgroundColor: u ? void 0 : i
-      }, f)
+      }, _)
     }, h), {
       children: t
     }))
@@ -140,7 +140,7 @@ let E = e => {
     var {
       text: t,
       className: n
-    } = e, i = _(e, ["text", "className"]);
+    } = e, i = f(e, ["text", "className"]);
     return (0, r.jsx)(b, c({
       className: a()(s.premiumBadge, n),
       text: t
@@ -173,7 +173,7 @@ let E = e => {
       shape: i = p.ROUND,
       disableColor: l = !1,
       style: u
-    } = e, d = _(e, ["className", "color", "shape", "disableColor", "style"]);
+    } = e, d = f(e, ["className", "color", "shape", "disableColor", "style"]);
     return (0, r.jsx)("div", c({
       className: a()(t, s.circleBadge, i),
       style: c({

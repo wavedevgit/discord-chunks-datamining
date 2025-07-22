@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 });
 var r = n(255367);
 n(73800);
@@ -53,22 +53,22 @@ function d(e) {
   return e ? o.intl.string(o.t.S5anIS) : o.intl.string(o.t.q3O3Jy)
 }
 
-function _(e) {
+function f(e) {
   var {
     isSelfStream: t,
     centerButton: n = !1,
     onMouseEnter: o,
     onMouseLeave: s
   } = e, u = c(e, ["isSelfStream", "centerButton", "onMouseEnter", "onMouseLeave"]);
-  let _ = n ? a.d : a.Z,
+  let f = n ? a.d : a.Z,
     {
-      Component: f,
+      Component: _,
       events: p
     } = (0, i.P)("disable");
-  return (0, r.jsx)(_, l({
+  return (0, r.jsx)(f, l({
     label: d(t),
     isTrayButton: !1,
-    iconComponent: f,
+    iconComponent: _,
     onMouseEnter: e => {
       null == o || o(e), p.onMouseEnter()
     },

@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
   FW: () => u,
-  fZ: () => _,
-  py: () => f
+  fZ: () => f,
+  py: () => _
 }), n(388685), n(415506);
 var r = n(911969),
   i = n(581364),
@@ -22,8 +22,8 @@ function u(e) {
     canMentionChannels: c = !0,
     canMentionEveryone: u,
     useNewSlashCommands: d,
-    canOnlyUseTextCommands: _,
-    canSendStickers: f,
+    canOnlyUseTextCommands: f,
+    canSendStickers: _,
     canSendSoundmoji: p,
     hideMentionDescription: h,
     hidePersonalInformation: m,
@@ -41,7 +41,7 @@ function u(e) {
       user: l.h3.DENY
     },
     commands: l.L8.DISABLED,
-    allowStickers: !0 === f,
+    allowStickers: !0 === _,
     allowSoundmoji: !0 === p,
     forNonStringCommandOption: null != n && n.type !== r.jw.STRING,
     hideMentionDescription: !0 === h,
@@ -66,7 +66,7 @@ function u(e) {
     let e = (0, i.$z)(n);
     e.canMentionChannels && (I.mentions.channel = l.nS.ALLOW_SELECTABLE), e.canMentionEveryone && (I.mentions.global = e.canMentionHere ? l.VV.ALLOW_EVERYONE_OR_HERE : l.VV.ALLOW_EVERYONE), e.canMentionRoles && (I.mentions.role = e.canMentionNonMentionableRoles ? l.Fw.ALLOW_ALL : l.Fw.ALLOW_MENTIONABLE), e.canMentionUsers && (I.mentions.user = e.canMentionAnyGuildUser ? l.h3.ALLOW_GUILD : l.h3.ALLOW_CHANNEL), I.hideMentionDescription = !0
   } else c && (I.mentions.channel = l.nS.ALLOW_SELECTABLE), s && (I.mentions.role = l.Fw.ALLOW_MENTIONABLE), o && (I.mentions.user = l.h3.ALLOW_CHANNEL), u && (I.mentions.global = l.VV.ALLOW_EVERYONE_OR_HERE);
-  return (null == (t = g.commands) ? void 0 : t.enabled) && (d ? I.commands = _ ? l.L8.NEW_TEXT_ONLY : l.L8.NEW : I.commands = l.L8.OLD_BUILT_INS), null != n && null != n.channelTypes && (I.allowedChannelTypes = n.channelTypes), I
+  return (null == (t = g.commands) ? void 0 : t.enabled) && (d ? I.commands = f ? l.L8.NEW_TEXT_ONLY : l.L8.NEW : I.commands = l.L8.OLD_BUILT_INS), null != n && null != n.channelTypes && (I.allowedChannelTypes = n.channelTypes), I
 }
 
 function d(e) {
@@ -85,7 +85,7 @@ function d(e) {
   return null == l.matches || !!l.matches(n, r, i, a, o)
 }
 
-function _(e) {
+function f(e) {
   let {
     channel: t,
     guild: n,
@@ -93,8 +93,8 @@ function _(e) {
     currentWord: i,
     currentWordIsAtStart: a,
     textValue: u,
-    optionText: _
-  } = e, f = null;
+    optionText: f
+  } = e, _ = null;
   for (let e of s.R) {
     var p, h, m, g, E, b;
     let y = s.W[e];
@@ -108,7 +108,7 @@ function _(e) {
             isAtStart: !1,
             options: r
           })) {
-          f = {
+          _ = {
             type: e,
             typeInfo: y,
             query: u
@@ -119,26 +119,26 @@ function _(e) {
           type: e,
           channel: t,
           guild: n,
-          query: _,
+          query: f,
           isAtStart: !1,
           options: r
         })) return {
         type: e,
         typeInfo: y,
-        query: _
+        query: f
       }
     } else if (e === l.eq.STICKERS) {
       if (d({
           type: e,
           channel: t,
           guild: n,
-          query: _,
+          query: f,
           isAtStart: !1,
           options: r
         })) return {
         type: e,
         typeInfo: y,
-        query: _
+        query: f
       }
     } else if (e === l.eq.COMMANDS && r.commands !== l.L8.OLD_BUILT_INS) {
       if (d({
@@ -149,7 +149,7 @@ function _(e) {
           isAtStart: !0,
           options: r
         })) {
-        f = {
+        _ = {
           type: e,
           typeInfo: y,
           query: u.substring(null != (h = null == (p = y.sentinel) ? void 0 : p.length) ? h : 0)
@@ -165,7 +165,7 @@ function _(e) {
           isAtStart: a,
           options: r
         })) {
-        f = {
+        _ = {
           type: e,
           typeInfo: y,
           query: u
@@ -181,7 +181,7 @@ function _(e) {
           isAtStart: a,
           options: r
         })) {
-        f = {
+        _ = {
           type: e,
           typeInfo: y,
           query: i.substring(null != (g = null == (m = y.sentinel) ? void 0 : m.length) ? g : 0)
@@ -196,7 +196,7 @@ function _(e) {
         isAtStart: a,
         options: r
       })) {
-      f = {
+      _ = {
         type: e,
         typeInfo: y,
         query: i.substring(null != (b = null == (E = y.sentinel) ? void 0 : E.length) ? b : 0)
@@ -204,10 +204,10 @@ function _(e) {
       break
     }
   }
-  return null == f ? null : (f.query = f.query.toLocaleLowerCase(), f)
+  return null == _ ? null : (_.query = _.query.toLocaleLowerCase(), _)
 }
 
-function f(e, t) {
+function _(e, t) {
   let n;
   if (null == t || null == e) return null;
   if (null != e.choices || e.autocomplete) n = l.eq.CHOICES;

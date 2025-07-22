@@ -33,7 +33,7 @@ function d(e) {
   return e
 }
 
-function _(e, t) {
+function f(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -44,8 +44,8 @@ function _(e, t) {
   return n
 }
 
-function f(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -55,7 +55,7 @@ function p(e) {
     categories: t,
     collapsedCategories: n,
     containerWidth: u,
-    store: _,
+    store: f,
     onSelectItem: p,
     onSearchExpressions: h,
     hasSearchResults: m,
@@ -81,7 +81,7 @@ function p(e) {
     gridNotice: k,
     renderHeader: j,
     renderUpsell: U
-  } = e, G = i.useRef(null), B = i.useRef(null), V = i.useRef(null), F = 0 === t.length, Z = (0, a.Iu)(e => e.searchQuery), H = _.useStore(e => e.inspectedExpressionPosition), Y = (0, o.ep)({
+  } = e, G = i.useRef(null), B = i.useRef(null), V = i.useRef(null), F = 0 === t.length, Z = (0, a.Iu)(e => e.searchQuery), H = f.useStore(e => e.inspectedExpressionPosition), Y = (0, o.ep)({
     gridWrapperRef: G,
     containerWidth: u,
     showingEmptyState: F
@@ -109,7 +109,7 @@ function p(e) {
     expressionsListRef: B,
     expressionsGrid: W,
     onSelectItem: p,
-    store: _,
+    store: f,
     gridNavigatorId: M
   }), en = i.useCallback((e, t) => y(W[e], J(e), {
     isUsingKeyboardNavigation: et.current,
@@ -117,7 +117,7 @@ function p(e) {
     rowIndex: e,
     totalRowCount: K,
     sectionIndex: t.sectionIndex
-  }, t => Q(e, t), t => _.setInspectedExpressionPosition(t, e)), [W, Q, J, X, et, y, _, K]), er = i.useCallback(e => null == O ? void 0 : O(t[e]), [t, O]), ei = i.useCallback(e => null == v ? void 0 : v(t[e], e), [t, v]), ea = i.useCallback(e => null == I ? void 0 : I(t[e], e), [t, I]), eo = i.useCallback(() => {
+  }, t => Q(e, t), t => f.setInspectedExpressionPosition(t, e)), [W, Q, J, X, et, y, f, K]), er = i.useCallback(e => null == O ? void 0 : O(t[e]), [t, O]), ei = i.useCallback(e => null == v ? void 0 : v(t[e], e), [t, v]), ea = i.useCallback(e => null == I ? void 0 : I(t[e], e), [t, I]), eo = i.useCallback(() => {
     var e;
     return null == T ? void 0 : T(null == W || null == (e = W[H.rowIndex]) ? void 0 : e[H.columnIndex])
   }, [W, H.columnIndex, H.rowIndex, T]);
@@ -125,15 +125,15 @@ function p(e) {
     h(Z)
   }, [h, Z]), i.useEffect(() => {
     var e, t;
-    _.setBottomPosition(null != (t = null == (e = G.current) ? void 0 : e.getBoundingClientRect().bottom) ? t : null)
-  }), i.useEffect(() => _.resetStoreState, [_.resetStoreState]), i.useLayoutEffect(() => {
+    f.setBottomPosition(null != (t = null == (e = G.current) ? void 0 : e.getBoundingClientRect().bottom) ? t : null)
+  }), i.useEffect(() => f.resetStoreState, [f.resetStoreState]), i.useLayoutEffect(() => {
     var e;
     null == (e = V.current) || e.focus()
   }, []);
   let es = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.Z, {
       ref: V,
-      store: _,
+      store: f,
       hasSendableExpressions: !0,
       onKeyDown: ee,
       expressionsListRef: B,
@@ -150,7 +150,7 @@ function p(e) {
       children: [A(B), null != k && (0, r.jsx)("div", {
         className: c.gridNoticeWrapper,
         children: k
-      }), (0, r.jsx)("div", f(d({
+      }), (0, r.jsx)("div", _(d({
         ref: G,
         className: c.listWrapper,
         id: M
@@ -158,7 +158,7 @@ function p(e) {
         children: null != Y ? (0, r.jsx)(s.Z, {
           categories: t,
           ref: B,
-          store: _,
+          store: f,
           hasSearchResults: m,
           listPadding: x,
           renderRow: en,

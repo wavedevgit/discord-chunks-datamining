@@ -1,0 +1,1 @@
+{"id":"624030","type":"store","data":{"name":"ActivityInviteEducationExperimentStore","functions":[{"name":"initialize","args":["t"]},{"name":"getState","args":[]},{"name":"shouldShowEducation","args":["t"]}],"events":["ACTIVITY_INVITE_EDUCATION_DISMISS"]},"fromModule":{"id":"46653"}}

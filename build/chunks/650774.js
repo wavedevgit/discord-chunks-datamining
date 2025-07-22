@@ -43,14 +43,14 @@ function d(e) {
   l = s({}, e.guildMemberCounts)
 }
 
-function _(e) {
+function f(e) {
   let {
     guild: t
   } = e;
   l[t.id] = t.member_count
 }
 
-function f(e) {
+function _(e) {
   let {
     guild: t
   } = e;
@@ -101,8 +101,8 @@ o(g, "displayName", "GuildMemberCountStore");
 let E = new g(a.Z, {
   CONNECTION_OPEN: u,
   OVERLAY_INITIALIZE: d,
-  GUILD_CREATE: _,
-  GUILD_DELETE: f,
+  GUILD_CREATE: f,
+  GUILD_DELETE: _,
   GUILD_MEMBER_LIST_UPDATE: p,
   INVITE_ACCEPT_SUCCESS: h,
   INVITE_RESOLVE_SUCCESS: h,

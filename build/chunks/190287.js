@@ -73,7 +73,7 @@ let h = e => {
         })
       }), (0, r.jsxs)("div", {
         className: f.inputContainer,
-        children: [(0, r.jsx)(a.oil, {
+        children: [(0, r.jsx)(s.Is, {
           inputClassName: f.reason,
           placeholder: _,
           value: n,

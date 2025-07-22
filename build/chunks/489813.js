@@ -9,8 +9,8 @@ var r = n(255367);
 n(73800);
 var i = n(120356),
   l = n.n(i),
-  o = n(692547),
-  s = n(481060),
+  s = n(692547),
+  o = n(481060),
   a = n(396561);
 
 function c(e) {
@@ -20,7 +20,7 @@ function c(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: a.questionContainer,
-    children: [(0, r.jsx)(s.Text, {
+    children: [(0, r.jsx)(o.Text, {
       className: a.questionTitle,
       variant: "text-md/normal",
       color: "header-primary",
@@ -36,7 +36,7 @@ function u(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: a.disabledQuestionContainer,
-    children: [(0, r.jsx)(s.Text, {
+    children: [(0, r.jsx)(o.Text, {
       className: a.questionTitle,
       variant: "text-sm/medium",
       color: "text-muted",
@@ -59,20 +59,20 @@ function d(e) {
       width: 16,
       size: "custom",
       color: "currentColor"
-    }), (0, r.jsx)(s.Text, {
+    }), (0, r.jsx)(o.Text, {
       className: a.requirementText,
       variant: "text-sm/medium",
       children: n
-    }), i ? (0, r.jsx)(s.owK, {
+    }), i ? (0, r.jsx)(o.owK, {
       size: "sm",
       color: "currentColor",
       className: a.requirementSuccess,
-      secondaryColor: o.Z.colors.WHITE.css
-    }) : (0, r.jsx)(s.k$p, {
+      secondaryColor: s.Z.colors.WHITE.css
+    }) : (0, r.jsx)(o.k$p, {
       size: "sm",
       color: "currentColor",
       className: a.requirementFailure,
-      secondaryColor: o.Z.colors.WHITE.css
+      secondaryColor: s.Z.colors.WHITE.css
     })]
   })
 }
@@ -95,17 +95,17 @@ function m(e) {
         width: 20,
         size: "custom",
         color: "currentColor"
-      }), (0, r.jsx)(s.Text, {
+      }), (0, r.jsx)(o.Text, {
         className: a.requirementText,
         variant: "text-md/normal",
         children: n
-      }), c ? (0, r.jsx)(s.owK, {
+      }), c ? (0, r.jsx)(o.owK, {
         size: "md",
         color: "currentColor",
         className: a.requirementSuccess,
-        secondaryColor: o.Z.colors.WHITE.css
+        secondaryColor: s.Z.colors.WHITE.css
       }) : u]
-    }), null != i && (0, r.jsx)(s.Text, {
+    }), null != i && (0, r.jsx)(o.Text, {
       color: "header-secondary",
       className: a.footnote,
       variant: "text-xs/normal",

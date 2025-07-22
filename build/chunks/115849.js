@@ -1,6 +1,6 @@
 /** Chunk was on 49078 **/
 r.d(t, {
-  Z: () => v
+  Z: () => w
 }), r(388685), r(781311), r(35282);
 var n = r(255367),
   l = r(73800),
@@ -8,17 +8,18 @@ var n = r(255367),
   s = r.n(i),
   a = r(512722),
   u = r.n(a),
-  o = r(481060),
-  c = r(194359),
-  f = r(313201),
-  d = r(657682),
-  p = r(981631),
-  x = r(420212),
-  y = r(388032),
-  g = r(28898),
-  b = r(20493);
+  o = r(755721),
+  c = r(481060),
+  f = r(194359),
+  d = r(313201),
+  p = r(657682),
+  x = r(981631),
+  y = r(420212),
+  g = r(388032),
+  b = r(28898),
+  h = r(20493);
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -37,7 +38,7 @@ function h(e) {
   return e
 }
 
-function m(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,125 +50,125 @@ function m(e, t) {
     Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
   }), e
 }
-let _ = r(349181),
-  O = {
+let O = r(349181),
+  R = {
     canSend: !1,
     hint: null,
     success: null,
     error: null
   },
-  R = (0, f.hQ)(),
-  j = "".concat(R, "-decription"),
-  E = "".concat(R, "-error");
+  j = (0, d.hQ)(),
+  E = "".concat(j, "-decription"),
+  S = "".concat(j, "-error");
 
-function S(e, t) {
+function v(e, t) {
   switch (t.type) {
     case "RESET":
-      return O;
+      return R;
     case "SUCCESS":
-      return m(h({}, O), {
+      return _(m({}, R), {
         success: t.text
       });
     case "HINT":
-      return m(h({}, O), {
+      return _(m({}, R), {
         canSend: !0,
         hint: t.text
       });
     case "ERROR":
-      return m(h({}, e), {
+      return _(m({}, e), {
         canSend: !0,
         error: t.text
       })
   }
 }
 
-function v(e) {
+function w(e) {
   let {
-    placeholder: t = y.intl.string(y.t["Rn/sLi"])
-  } = e, r = l.useRef(null), i = l.useRef(null), [a, f] = l.useReducer(S, O), {
-    canSend: h,
-    hint: m,
-    success: v,
-    error: w
+    placeholder: t = g.intl.string(g.t["Rn/sLi"])
+  } = e, r = l.useRef(null), i = l.useRef(null), [a, d] = l.useReducer(v, R), {
+    canSend: m,
+    hint: _,
+    success: w,
+    error: C
   } = a;
   return l.useEffect(() => {
-    null != v && (u()(null != r.current, "Input is submitting when not mounted"), r.current.value = "", r.current.focus())
-  }, [v, r]), (0, n.jsxs)("form", {
+    null != w && (u()(null != r.current, "Input is submitting when not mounted"), r.current.value = "", r.current.focus())
+  }, [w, r]), (0, n.jsxs)("form", {
     onSubmit: e => {
       e.preventDefault(), u()(null != r.current, "Input is submitted when not mounted");
       let t = r.current.value.trim();
       !t.includes("#") && t.startsWith("@") && (t = t.substring(1));
-      let n = (0, d.Zy)(t);
-      if (null != n) return void f({
+      let n = (0, p.Zy)(t);
+      if (null != n) return void d({
         type: "ERROR",
         text: n
       });
-      c.Z.sendRequest({
+      f.Z.sendRequest({
         discordTag: t,
         context: {
           location: "Add Friend"
         }
-      }).then(() => f({
+      }).then(() => d({
         type: "SUCCESS",
-        text: y.intl.format(y.t.Rtl1Eh, {
+        text: g.intl.format(g.t.Rtl1Eh, {
           discordTag: t
         })
       }), e => {
         var r;
-        return f({
+        return d({
           type: "ERROR",
-          text: (0, d.NF)(null == (r = e.body) ? void 0 : r.code, t)
+          text: (0, p.NF)(null == (r = e.body) ? void 0 : r.code, t)
         })
       })
     },
     autoComplete: "off",
     children: [(0, n.jsxs)("div", {
-      className: g.addFriendWumpusWrapper,
-      children: [(0, n.jsx)(o.R94, {
-        id: j,
-        type: o.R94.Types.DESCRIPTION,
-        children: (0, n.jsx)(o.Text, {
+      className: b.addFriendWumpusWrapper,
+      children: [(0, n.jsx)(c.R94, {
+        id: E,
+        type: c.R94.Types.DESCRIPTION,
+        children: (0, n.jsx)(c.Text, {
           tag: "div",
           variant: "heading-md/normal",
-          children: y.intl.string(y.t["Rn/sLi"])
+          children: g.intl.string(g.t["Rn/sLi"])
         })
       }), (0, n.jsx)("img", {
-        src: _,
+        src: O,
         alt: "Wumpus Waving"
       })]
-    }), (0, n.jsx)(o.tEY, {
+    }), (0, n.jsx)(c.tEY, {
       focusTarget: r,
       ringTarget: i,
-      ringClassName: g.ring,
+      ringClassName: b.ring,
       children: (0, n.jsxs)("div", {
         ref: i,
-        className: s()(g.addFriendInputWrapper, {
-          [g.success]: v,
-          [g.error]: w
+        className: s()(b.addFriendInputWrapper, {
+          [b.success]: w,
+          [b.error]: C
         }),
-        children: [(0, n.jsx)(o.oil, {
-          id: R,
+        children: [(0, n.jsx)(o.Is, {
+          id: j,
           inputRef: r,
-          className: g.addFriendInput,
-          inputClassName: g.input,
+          className: b.addFriendInput,
+          inputClassName: b.input,
           onKeyPress: e => {
             let t = e.currentTarget.value;
-            if (e.key !== x.mR.Enter && t.includes("#")) {
+            if (e.key !== y.mR.Enter && t.includes("#")) {
               u()(null != r.current, "Input is handling keypress when not mounted");
               let n = t.indexOf("#"),
                 l = r.current.selectionStart,
-                i = e.key === x.mR.Backspace || e.key === x.mR.ArrowRight || e.key === x.mR.ArrowLeft,
+                i = e.key === y.mR.Backspace || e.key === y.mR.ArrowRight || e.key === y.mR.ArrowLeft,
                 s = e.which >= 48 && e.which <= 57;
               null != l && l > n && /^(.+?#\d{4})$/.test(t) && !i ? e.preventDefault() : null == l || !(l > n) || s || i || e.preventDefault()
             }
           },
           onChange: e => {
-            if (e.length <= 0) return void f({
+            if (e.length <= 0) return void d({
               type: "RESET"
             });
             let t = "",
               [, r] = e.split("#");
-            null != r && (t = e + p.LYt.slice(null != r ? r.length + 1 : 0)), f({
+            null != r && (t = e + x.LYt.slice(null != r ? r.length + 1 : 0)), d({
               type: "HINT",
               text: t
             })
@@ -181,31 +182,31 @@ function v(e) {
           "data-1p-ignore": !0,
           placeholder: t,
           "aria-label": t,
-          "aria-invalid": null != w || void 0,
-          "aria-describedby": null != w ? E : j
-        }), null != m && (0, n.jsx)("div", {
-          className: g.addFriendHint,
+          "aria-invalid": null != C || void 0,
+          "aria-describedby": null != C ? S : E
+        }), null != _ && (0, n.jsx)("div", {
+          className: b.addFriendHint,
           "aria-hidden": !0,
-          children: m
-        }), (0, n.jsx)(o.zxk, {
+          children: _
+        }), (0, n.jsx)(c.zxk, {
           variant: "primary",
           size: "sm",
-          text: y.intl.string(y.t["PMsq/f"]),
-          disabled: !h,
+          text: g.intl.string(g.t["PMsq/f"]),
+          disabled: !m,
           type: "submit"
         })]
       })
-    }), null != w && (0, n.jsx)(o.R94, {
+    }), null != C && (0, n.jsx)(c.R94, {
       role: "alert",
-      id: E,
-      type: o.R94.Types.ERROR,
-      className: b.marginTop8,
-      children: w
-    }), null != v && (0, n.jsx)(o.R94, {
+      id: S,
+      type: c.R94.Types.ERROR,
+      className: h.marginTop8,
+      children: C
+    }), null != w && (0, n.jsx)(c.R94, {
       role: "status",
-      type: o.R94.Types.SUCCESS,
-      className: b.marginTop8,
-      children: v
+      type: c.R94.Types.SUCCESS,
+      className: h.marginTop8,
+      children: w
     })]
   })
 }
