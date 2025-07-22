@@ -46,19 +46,19 @@ function v(e) {
   } = n, f = t.getGuildId(), g = (0, l.e7)([p.Z], () => p.Z.getGuild(f), [f]), b = t.type === y.d4z.GUILD_ANNOUNCEMENT, v = null != g && g.features.has(y.oNc.NEWS), O = b && v, {
     editingMessage: E,
     editingTextValue: S,
-    editingRichValue: P
+    editingRichValue: I
   } = (0, l.cj)([d.Z], () => ({
     editingMessage: d.Z.getEditingMessage(s),
     editingTextValue: d.Z.getEditingTextValue(s),
     editingRichValue: d.Z.getEditingRichValue(s)
-  }), [s]), I = (0, l.e7)([u.default], () => u.default.getId()), Z = i.useCallback((e, n, r) => {
+  }), [s]), P = (0, l.e7)([u.default], () => u.default.getId()), Z = i.useCallback((e, n, r) => {
     let {
       content: i
     } = r, l = h.Z.can(y.Plq.MANAGE_MESSAGES, t), s = null != E && null != E.author ? E.author.id : null;
-    return O && (s === I || l) && null != E && (0, m.yE)(E.flags, y.iLy.CROSSPOSTED) ? o.Z.confirmEdit(e, n, i) : a.Z.editMessage(e, n, {
+    return O && (s === P || l) && null != E && (0, m.yE)(E.flags, y.iLy.CROSSPOSTED) ? o.Z.confirmEdit(e, n, i) : a.Z.editMessage(e, n, {
       content: i
     }), Promise.resolve()
-  }, [E, O, I, t]), T = i.useCallback(e => {
+  }, [E, O, P, t]), T = i.useCallback(e => {
     var t, n;
     return (0, i.createElement)(j, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -91,12 +91,12 @@ function v(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))
   }, [c]);
-  return null != S && null != P ? (0, r.jsx)(_.Z, {
+  return null != S && null != I ? (0, r.jsx)(_.Z, {
     ref: void 0,
     channel: t,
     message: n,
     textValue: S,
-    richValue: P,
+    richValue: I,
     onCancel: a.Z.endEditMessage,
     onChange: a.Z.updateEditMessage,
     onConfirmDelete: o.Z.confirmDelete,

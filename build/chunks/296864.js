@@ -45,7 +45,7 @@ function j(e) {
         onSuccess: L
       })
     };
-  return (0, i.jsxs)(a.u, {
+  return (0, i.jsxs)(a.Modal, {
     transitionState: t,
     onClose: f,
     title: j.name,

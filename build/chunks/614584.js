@@ -60,13 +60,13 @@ let E = i.memo(function(e) {
     baseMessage: n,
     referencedMessage: E,
     channel: S,
-    compact: P = !1,
-    referencedUsernameProfile: I,
+    compact: I = !1,
+    referencedUsernameProfile: P,
     referencedAvatarProfile: Z,
     setPopout: T,
     isReplySpineClickable: N,
     showReplySpine: A
-  } = e, w = E.state === h.Y.LOADED ? E.message : void 0, R = (0, b.Uj)(w), M = (0, c.p)(), D = (0, u.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), L = i.useMemo(() => {
+  } = e, w = E.state === h.Y.LOADED ? E.message : void 0, R = (0, b.Uj)(w), M = (0, c.p)(), D = (0, u.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), k = i.useMemo(() => {
     if (null == w) return null;
     let e = (0, o.Z)(w);
     if (e.type === x.uaV.USER_JOIN) return (0, a.Rp)(v.intl.formatToParts(m.Z.getSystemMessageUserJoin(e.id), {
@@ -110,12 +110,12 @@ let E = i.memo(function(e) {
     }
     return null
   }, [w, R, S, D, M]), {
-    isReplyAuthorBlocked: k,
+    isReplyAuthorBlocked: L,
     isReplyAuthorIgnored: U
   } = (0, l.cj)([f.Z], () => ({
     isReplyAuthorBlocked: null != w && f.Z.isBlockedForMessage(w),
     isReplyAuthorIgnored: null != w && f.Z.isIgnoredForMessage(w)
-  }), [w]), B = (0, C.wq)(null == w ? void 0 : w.author.id, S.id), F = (0, C.$3)(n, w), H = (0, C.Wl)(w, S, I, T), G = (0, C.rY)(Z, T), V = i.useCallback(() => {
+  }), [w]), B = (0, C.wq)(null == w ? void 0 : w.author.id, S.id), F = (0, C.$3)(n, w), H = (0, C.Wl)(w, S, P, T), G = (0, C.rY)(Z, T), V = i.useCallback(() => {
     T({
       referencedUsernameProfile: !1,
       referencedAvatarProfile: !1
@@ -127,12 +127,12 @@ let E = i.memo(function(e) {
     channel: S,
     baseAuthor: z,
     referencedMessage: E,
-    content: L,
-    compact: P,
-    isReplyAuthorBlocked: k,
+    content: k,
+    compact: I,
+    isReplyAuthorBlocked: L,
     isReplyAuthorIgnored: U,
     showAvatarPopout: Z,
-    showUsernamePopout: I,
+    showUsernamePopout: P,
     renderPopout: y.Z,
     onClickAvatar: G,
     onClickUsername: H,

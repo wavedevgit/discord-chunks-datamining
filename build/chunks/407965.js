@@ -51,7 +51,7 @@ let I = e => {
     }, [T]);
     let E = (0, p.Z)(),
       P = "US" === E.ipCountryCode && "CA" === E.ipSubdivisionCode;
-    if (j) return (0, r.jsx)(c.u, {
+    if (j) return (0, r.jsx)(c.Modal, {
       transitionState: e,
       title: "",
       actions: [],
@@ -93,7 +93,7 @@ let I = e => {
         })
       })
     }
-    return (0, r.jsx)(c.u, {
+    return (0, r.jsx)(c.Modal, {
       transitionState: e,
       title: y.intl.string(y.t.PWq8TE),
       subtitle: y.intl.format(y.t.nsGVzs, {}),

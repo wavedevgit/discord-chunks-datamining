@@ -31,8 +31,8 @@ let _ = (0, l.Z)(e => {
     hasConnectPermission: O,
     className: E,
     inCall: S,
-    showParticipants: P = !0,
-    width: I,
+    showParticipants: I = !0,
+    width: P,
     height: Z,
     idle: T,
     mode: N,
@@ -42,7 +42,7 @@ let _ = (0, l.Z)(e => {
   } = e;
   i.useEffect(() => {
     c.S.dispatch(m.CkL.REMEASURE_TARGET)
-  }, [I, Z, R.width, R.height]);
+  }, [P, Z, R.width, R.height]);
   let M = i.useMemo(() => n.filter(e => e.type !== g.fO.ACTIVITY || !e.participants.some(e => (0, a.J)(e))), [n, _]);
   return (null == w ? void 0 : w.channelId) === j.id ? (0, r.jsx)(d.Z, {
     height: Z
@@ -52,7 +52,7 @@ let _ = (0, l.Z)(e => {
     hasConnectPermission: O
   }) : N === m.WtW.VOICE ? (0, r.jsx)(o.Z, {
     guildId: j.guild_id,
-    width: I,
+    width: P,
     className: b.voiceCallWrapper,
     participants: t,
     onContextMenu: x
@@ -83,10 +83,10 @@ let _ = (0, l.Z)(e => {
     className: E,
     idle: T,
     height: Z,
-    width: I,
+    width: P,
     layout: y,
     inCall: S,
     channel: j,
-    showParticipants: P
+    showParticipants: I
   })
 })

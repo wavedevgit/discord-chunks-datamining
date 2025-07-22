@@ -1,6 +1,6 @@
-/** Chunk was on 94363 **/
+/** Chunk was on 83075 **/
 n.d(t, {
-  Z: () => s
+  Z: () => o
 });
 var r = n(388032);
 let i = ["a", "b", "c", "d"],
@@ -12,7 +12,7 @@ function a(e, t) {
   for (let l = 0; l < r; ++l) n[i[l]] = (n, r) => t(e[l], r);
   return n
 }
-class s {
+class o {
   asString() {
     return this.transformed(l)
   }

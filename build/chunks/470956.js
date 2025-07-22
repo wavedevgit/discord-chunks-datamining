@@ -1,8 +1,8 @@
 /** Chunk was on 11509 **/
 n.d(t, {
   Es: () => v,
-  Eu: () => y,
-  bt: () => b
+  Eu: () => b,
+  bt: () => h
 }), n(388685), n(539854);
 var r = n(73800),
   i = n(392711),
@@ -55,7 +55,7 @@ function v(e, t) {
   })(n, t, v), [n, t, v])
 }
 
-function b(e, t) {
+function h(e, t) {
   let n = (0, l.e7)([f.Z, p.Z], () => e === p.Z.getChannelId() ? f.Z.getDesyncedParticipants() : null);
   return r.useMemo(() => (function(e, t) {
     if (null == e || 0 === e.length) return t;
@@ -66,7 +66,7 @@ function b(e, t) {
   })(n, t), [n, t])
 }
 
-function y(e, t) {
+function b(e, t) {
   let n = (0, l.e7)([c.default], () => c.default.getId() === t),
     i = (0, l.e7)([p.Z], () => p.Z.getChannelId()),
     a = r.useRef(null),

@@ -87,7 +87,7 @@ let p = {
             null == m || m(), e.onClose()
           },
           variant: p
-        }), (0, r.jsx)(a.u, _(d({}, e), {
+        }), (0, r.jsx)(a.Modal, _(d({}, e), {
           size: "sm",
           title: t,
           subtitle: n,

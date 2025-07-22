@@ -37,14 +37,14 @@ function y(e) {
     onBeforeDispatchNewListing: S,
     onAfterDispatchNewListing: T
   } = e, [P, w] = i.useState(a), R = (0, c.e7)([f.Z], () => f.Z.getSubscriptionListing(P)), Z = null == R, [D, A] = i.useState(Z), L = null == R ? void 0 : R.subscription_plans[0], k = null != (t = null == R ? void 0 : R.published) && t, M = null != (n = null == R ? void 0 : R.archived) && n, G = !M && !k && void 0 !== R, U = void 0 === R, B = (0, h.mY)(), [F] = b._T(P), [H] = b.mR(P), [z] = b.PK(P), [W] = b.d9(P, 1024), V = "" !== F ? F : O.intl.string(O.t.QWhe9P), Y = "" !== F && null != W && "" !== z && null != H && !B, K = b.rU(P), {
-    loading: X,
-    error: q,
+    loading: q,
+    error: X,
     handleCreateOrUpdateFromEditState: J
   } = b.Xo(), {
     submitting: Q,
     error: $,
     publishSubscriptionListing: ee
-  } = (0, p.HQ)(), et = X || Q;
+  } = (0, p.HQ)(), et = q || Q;
   return (0, r.jsxs)("div", {
     className: C.container,
     children: [(0, r.jsxs)("div", {
@@ -129,7 +129,7 @@ function y(e) {
         allSubscriptionListings: y,
         priceTiers: N,
         loading: et,
-        error: null != q ? q : $,
+        error: null != X ? X : $,
         handlePublishTier: () => {
           o()(null != E, "group listing doesnt exist"), o()(null != R, "subscription listing doesnt exist"), ee({
             guildId: l,

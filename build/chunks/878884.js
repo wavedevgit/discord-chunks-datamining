@@ -1,6 +1,6 @@
 /** Chunk was on 11509 **/
 n.d(t, {
-  Z: () => w
+  Z: () => E
 }), n(388685);
 var r, i, l, a = n(442837),
   o = n(46973),
@@ -14,9 +14,9 @@ var r, i, l, a = n(442837),
   g = n(594174),
   _ = n(979651),
   v = n(938475),
-  b = n(981631),
-  y = n(354459);
-let h = new c.Z,
+  h = n(981631),
+  b = n(354459);
+let y = new c.Z,
   O = new c.Z,
   j = new Set;
 
@@ -25,10 +25,10 @@ function S(e, t, n) {
       userId: e.id,
       channelId: n
     }),
-    i = (0, v.PH)(r, null != t ? t : b.ME, e.id);
-  h.set(e.id, i);
+    i = (0, v.PH)(r, null != t ? t : h.ME, e.id);
+  y.set(e.id, i);
   let l = {
-    type: y.fO.USER,
+    type: b.fO.USER,
     user: e,
     id: e.id,
     streamId: null,
@@ -46,7 +46,7 @@ function S(e, t, n) {
 }
 
 function x(e) {
-  let t = h.delete(e),
+  let t = y.delete(e),
     n = O.delete(e),
     r = j.delete(e);
   return t || n || r
@@ -66,20 +66,20 @@ function I() {
 }
 
 function P() {
-  h.clear(), O.clear(), j.clear()
+  y.clear(), O.clear(), j.clear()
 }
 class C extends(r = a.ZP.Store) {
   initialize() {
     this.waitFor(_.Z, g.default, p.Z, m.Z), this.syncWith([g.default], I)
   }
   get desyncedVoiceStatesCount() {
-    return h.size()
+    return y.size()
   }
   getDesyncedUserIds() {
-    return h.keys()
+    return y.keys()
   }
   getDesyncedVoiceStates() {
-    return h.values()
+    return y.values()
   }
   getDesyncedParticipants() {
     return O.values()
@@ -91,7 +91,7 @@ l = "RTCConnectionDesyncStore", (i = "displayName") in C ? Object.defineProperty
   configurable: !0,
   writable: !0
 }) : C[i] = l;
-let w = new C(s.Z, {
+let E = new C(s.Z, {
   CONNECTION_OPEN: function() {
     P()
   },
@@ -101,7 +101,7 @@ let w = new C(s.Z, {
       state: t,
       context: n
     } = e;
-    if (n !== o.Yn.DEFAULT || t !== b.hes.DISCONNECTED) return !1;
+    if (n !== o.Yn.DEFAULT || t !== h.hes.DISCONNECTED) return !1;
     P()
   },
   VOICE_STATE_UPDATES: function(e) {

@@ -1,0 +1,40 @@
+/**
+  Module ID: 1631
+  Original File Name: 18e8871f7ab014f4
+**/
+.form__2d5a9 {
+    display: flex;
+    gap: var(--space-16)
+}
+
+.emojiButton__2d5a9 {
+    align-items: center;
+    background-color: var(--background-modifier-hover);
+    background-image: radial-gradient(hsla(0,0%,100%,.05) 20%,transparent 0),radial-gradient(hsla(0,0%,100%,.05) 20%,transparent 0);
+    background-position: 0 0,4px 4px;
+    background-size: 8px 8px;
+    border-radius: 8px;
+    display: flex;
+    height: 32px;
+    justify-content: center;
+    padding: var(--space-32);
+    width: 32px
+}
+
+.emojiButton__2d5a9>div {
+    scale: 1.4
+}
+
+.customInputGroup__2d5a9 {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: var(--space-8)
+}
+
+.emoji__2d5a9 {
+    height: 28px;
+    width: 28px
+}
+
+/*# sourceMappingURL=18e8871f7ab014f4.css.map*/

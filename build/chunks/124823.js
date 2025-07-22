@@ -26,8 +26,8 @@ var r = n(255367),
   O = n(502762),
   E = n(530),
   S = n(679332),
-  P = n(544989),
-  I = n(228168),
+  I = n(544989),
+  P = n(228168),
   Z = n(388032),
   T = n(638414),
   N = n(283189);
@@ -56,21 +56,21 @@ function w(e) {
     user: t,
     channel: n
   } = e, w = __OVERLAY__ || !(0, d.Z)(t.id), R = (0, g.ZP)(t.id), M = (0, s.ZP)(), D = i.useRef(Date.now()), {
-    analyticsLocations: L
-  } = (0, u.ZP)(c.Z.USER_PROFILE_SIDEBAR), k = (0, f.ZB)({
+    analyticsLocations: k
+  } = (0, u.ZP)(c.Z.USER_PROFILE_SIDEBAR), L = (0, f.ZB)({
     layout: "SIDEBAR",
     userId: t.id,
     channelId: n.id
   }), U = i.useRef(null), B = (0, o.Z)(U), F = e => {
     (0, b.openUserProfileModal)(A({
-      sourceAnalyticsLocations: L,
+      sourceAnalyticsLocations: k,
       hideRestrictedProfile: !0
-    }, k, e))
+    }, L, e))
   };
   return (0, r.jsx)(u.Gt, {
-    value: L,
+    value: k,
     children: (0, r.jsx)(f.Mt, {
-      value: k,
+      value: L,
       openedAt: D.current,
       fetchStartedAt: null == R ? void 0 : R.fetchStartedAt,
       fetchEndedAt: null == R ? void 0 : R.fetchEndedAt,
@@ -79,10 +79,10 @@ function w(e) {
         ref: U,
         user: t,
         displayProfile: R,
-        themeType: I.lY.SIDEBAR,
+        themeType: P.lY.SIDEBAR,
         themeOverride: M,
         children: [(0, r.jsxs)(l.u2, {
-          children: [(0, r.jsx)(P.Z, {
+          children: [(0, r.jsx)(I.Z, {
             children: (0, r.jsx)(S.Z, {
               user: t
             })
@@ -91,13 +91,13 @@ function w(e) {
             children: [(0, r.jsx)(C.Z, {
               user: t,
               displayProfile: R,
-              themeType: I.lY.SIDEBAR,
+              themeType: P.lY.SIDEBAR,
               animateOnHover: !B
             }), (0, r.jsx)(_.Z, {
               user: t,
               displayProfile: R,
               channelId: n.id,
-              themeType: I.lY.SIDEBAR,
+              themeType: P.lY.SIDEBAR,
               onOpenProfile: w ? void 0 : F
             })]
           }), (0, r.jsxs)("div", {
@@ -109,7 +109,7 @@ function w(e) {
               onOpenProfile: w ? void 0 : F,
               tags: (0, r.jsx)(y.Z, {
                 displayProfile: R,
-                themeType: I.lY.SIDEBAR
+                themeType: P.lY.SIDEBAR
               })
             }), (0, r.jsxs)(O.Z.Overlay, {
               className: N.overlay,
@@ -141,8 +141,8 @@ function w(e) {
             onClick: () => {
               F(), (0, m.pQ)(A({
                 action: "PRESS_VIEW_PROFILE",
-                analyticsLocations: L
-              }, k))
+                analyticsLocations: k
+              }, L))
             },
             children: Z.intl.string(Z.t["+Xp3ho"])
           })

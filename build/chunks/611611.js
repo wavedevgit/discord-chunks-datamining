@@ -134,8 +134,8 @@ function R(e) {
       handleAnswerTextChange: K,
       handleEmojiSelect: z,
       canAddMoreAnswers: F,
-      handleRemoveAnswerImage: W,
-      canRemoveMoreAnswers: M,
+      handleRemoveAnswerImage: M,
+      canRemoveMoreAnswers: W,
       handleAddAnswer: q,
       handleRemoveAnswer: H,
       createPollError: G,
@@ -232,7 +232,7 @@ function R(e) {
       submitting: J,
       text: O.intl.string(O.t.JOj8Zm)
     }], [ea, J]);
-  return (0, r.jsx)(c.u, {
+  return (0, r.jsx)(c.Modal, {
     transitionState: n,
     onClose: l,
     title: O.intl.string(O.t["GD/8X1"]),
@@ -272,14 +272,14 @@ function R(e) {
           index: n,
           isLastAnswer: n === N.length - 1,
           onEmojiSelect: z,
-          onEmojiRemove: W,
+          onEmojiRemove: M,
           onAnswerTextChange: K,
           onRemoveAnswer: H,
           addAnswer: q,
           submitPoll: ea,
           answerTextInputRefs: A,
           error: null == V ? void 0 : V["answer-".concat(e.localCreationAnswerId)],
-          canRemoveAnswer: M,
+          canRemoveAnswer: W,
           ref: e => {
             k.current[n] = e
           },
@@ -291,7 +291,7 @@ function R(e) {
           }
         }, e.localCreationAnswerId)), F && (0, r.jsxs)(u.P3F, {
           className: i()(y.addAnswerButtonDefault, {
-            [y.canRemoveMoreAnswers]: M
+            [y.canRemoveMoreAnswers]: W
           }),
           onClick: F ? q : void 0,
           "aria-label": O.intl.string(O.t.B2UvmZ),

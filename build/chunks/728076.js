@@ -102,12 +102,12 @@ function b(e, t, n, b) {
         l = null == (r = a.image) ? void 0 : r.mediaAttachmentState;
       null != l && l.mediaURL !== n && s.P(e, a.localCreationAnswerId, (0, i.Yk)(a.localCreationAnswerId, l.mediaURL))
     }, [w]),
-    W = r.useCallback(async (e, t, n) => {
+    M = r.useCallback(async (e, t, n) => {
       let r = w[t].localCreationAnswerId;
       if (F(e, t), z(g(n, o._.PREPARING), t), null == await s.IV(e, r, n)) return void z(g(n, o._.ERROR), t);
       z(g(n, o._.READY_TO_UPLOAD), t)
     }, [w, z, F]),
-    M = r.useCallback((e, t, n) => {
+    W = r.useCallback((e, t, n) => {
       let r = w[t].localCreationAnswerId,
         a = URL.createObjectURL(n);
       F(e, t), z(g(a, o._.PREPARING), t), s.fH(e, r, n), z(g(a, o._.READY_TO_UPLOAD), t)
@@ -178,9 +178,9 @@ function b(e, t, n, b) {
     canRemoveMoreAnswers: Z,
     handleQuestionChange: Y,
     handleAnswerTextChange: K,
-    handleGifSelect: W,
+    handleGifSelect: M,
     handleEmojiSelect: q,
-    handleCustomUpload: M,
+    handleCustomUpload: W,
     handleAddAnswer: G,
     handleRemoveAnswer: X,
     handleRemoveAnswerImage: H,

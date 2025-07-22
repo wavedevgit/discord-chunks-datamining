@@ -1,18 +1,18 @@
 /** Chunk was on 42358 **/
 r.d(t, {
-  default: () => a
+  default: () => c
 });
 var n = r(255367),
   l = r(73800),
   i = r(82659),
   o = r(434404),
-  u = r(388032);
-let a = e => {
+  a = r(388032);
+let c = e => {
   var {
     name: t,
     guildId: r,
-    onClose: a
-  } = e, c = function(e, t) {
+    onClose: c
+  } = e, u = function(e, t) {
     if (null == e) return {};
     var r, n, l = function(e, t) {
       if (null == e) return {};
@@ -28,17 +28,17 @@ let a = e => {
     return l
   }(e, ["name", "guildId", "onClose"]);
   let s = l.useCallback(() => {
-      null == a || a(), o.Z.leaveGuild(r)
-    }, [r, a]),
+      null == c || c(), o.Z.leaveGuild(r)
+    }, [r, c]),
     f = l.useMemo(() => [{
       variant: "secondary",
-      text: u.intl.string(u.t.J2TBi4),
+      text: a.intl.string(a.t.J2TBi4),
       onClick: s
     }, {
-      text: u.intl.string(u.t.TyCVIi),
-      onClick: a
-    }], [s, a]);
-  return (0, n.jsx)(i.u, function(e) {
+      text: a.intl.string(a.t.TyCVIi),
+      onClick: c
+    }], [s, c]);
+  return (0, n.jsx)(i.Modal, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
         n = Object.keys(r);
@@ -56,11 +56,11 @@ let a = e => {
     }
     return e
   }({
-    title: u.intl.string(u.t.aCAiGh),
-    subtitle: u.intl.format(u.t["4cJV9f"], {
+    title: a.intl.string(a.t.aCAiGh),
+    subtitle: a.intl.format(a.t["4cJV9f"], {
       serverName: t
     }),
     actions: f,
-    onClose: a
-  }, c))
+    onClose: c
+  }, u))
 }

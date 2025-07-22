@@ -79,7 +79,7 @@ function p(e) {
       rows: r,
       columns: i
     }
-  })(y, C, x), [y, C, x]), S = E + 1, P = S * j + (S - 1) * 8 <= b, I = Math.floor(j / c) + 8, Z = Math.max(0, x - I * O) / 2;
+  })(y, C, x), [y, C, x]), S = E + 1, I = S * j + (S - 1) * 8 <= b, P = Math.floor(j / c) + 8, Z = Math.max(0, x - P * O) / 2;
   return (0, r.jsx)(o.Z, {
     fade: !0,
     className: n,
@@ -95,7 +95,7 @@ function p(e) {
           return (0, r.jsx)("div", {
             style: v,
             className: a()(s.tile, {
-              [s.padColumn]: P,
+              [s.padColumn]: I,
               [s.noVerticalMargin]: l >= (O - 1) * E,
               [s.noHorizontalMargin]: (l + 1) % E == 0 || l === y - 1
             }),
@@ -109,7 +109,7 @@ function p(e) {
     },
     rowCount: O,
     rowCountBySection: [O],
-    rowHeight: I,
+    rowHeight: P,
     onResize: g
   })
 }

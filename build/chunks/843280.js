@@ -15,5 +15,6 @@ e.exports = {
   activityCounter: "activityCounter_c9d15c",
   emoji: "emoji_c9d15c",
   dot: "dot_c9d15c",
-  questsIcon: "questsIcon_c9d15c"
+  questsIcon: "questsIcon_c9d15c",
+  hangStatusIcon: "hangStatusIcon_c9d15c"
 }

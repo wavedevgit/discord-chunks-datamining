@@ -205,7 +205,7 @@ function H(e) {
       };
       return () => t()
     };
-  return null == W ? (0, a.jsx)(m.$jN, {}) : (0, a.jsx)(u.u, (t = function(e) {
+  return null == W ? (0, a.jsx)(m.$jN, {}) : (0, a.jsx)(u.Modal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         a = Object.keys(n);

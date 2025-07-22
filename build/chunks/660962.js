@@ -74,7 +74,7 @@ function K(e) {
   })
 }
 
-function X(e) {
+function q(e) {
   let {
     role: t,
     guildId: n,
@@ -162,7 +162,7 @@ function X(e) {
           variant: "text-sm/semibold",
           color: "button-outline-primary-text",
           children: U.intl.format(B.default.VpEDJS, {
-            magical: (0, r.jsx)(q, {})
+            magical: (0, r.jsx)(X, {})
           })
         }), (0, r.jsx)(p.Text, {
           variant: "text-xs/medium",
@@ -191,7 +191,7 @@ function X(e) {
   })
 }
 
-function q() {
+function X() {
   let e = (0, d.e7)([x.Z], () => x.Z.useReducedMotion),
     {
       gradientStyle: t,
@@ -393,7 +393,7 @@ function ee(e) {
         })
       }), (0, r.jsx)(p.$i$, {
         className: F.divider
-      }), (a || c) && null != u && (0, r.jsx)(X, {
+      }), (a || c) && null != u && (0, r.jsx)(q, {
         role: n,
         guildId: t.id,
         selectedStyle: u,

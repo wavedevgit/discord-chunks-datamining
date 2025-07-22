@@ -29,8 +29,8 @@ function C(e) {
     user: j
   } = e, O = (0, i.e7)([s.Z], () => s.Z.useReducedMotion), E = null != (t = (0, d.ZP)(x)) ? t : "", {
     avatarDecorationSrc: S,
-    eventHandlers: P,
-    isAnimating: I
+    eventHandlers: I,
+    isAnimating: P
   } = (0, g.Z)({
     userId: null == j ? void 0 : j.id,
     size: o.EFr.SIZE_80,
@@ -55,9 +55,9 @@ function C(e) {
     return e
   }({
     channelId: x.id
-  }, P), C = C = {
+  }, I), C = C = {
     children: [(() => {
-      let e = !O && I;
+      let e = !O && P;
       return x.isMultiUserDM() ? (0, r.jsx)(h.v, {
         channel: x,
         editable: !0,

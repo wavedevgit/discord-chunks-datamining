@@ -126,7 +126,7 @@ let E = e => {
       }
     })
   },
-  P = e => {
+  I = e => {
     let {
       channel: t,
       children: n,
@@ -205,7 +205,7 @@ let E = e => {
       })]
     })
   },
-  I = e => {
+  P = e => {
     let {
       channel: t,
       children: n
@@ -254,7 +254,7 @@ let E = e => {
       enabled: i,
       unifiedEditing: l
     } = (0, f.Ae)("header_bar", t.id);
-    return (0, r.jsx)(i ? P : I, {
+    return (0, r.jsx)(i ? I : P, {
       channel: t,
       inlineEditor: !l,
       children: (0, r.jsx)(g.v, {

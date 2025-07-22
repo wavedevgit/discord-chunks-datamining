@@ -26,8 +26,8 @@ var r = n(255367),
   O = n(657352),
   E = n(33154),
   S = n(144114),
-  P = n(703656),
-  I = n(210887),
+  I = n(703656),
+  P = n(210887),
   Z = n(606956),
   T = n(271383),
   N = n(430824),
@@ -36,8 +36,8 @@ var r = n(255367),
   R = n(594174),
   M = n(700785),
   D = n(862679),
-  L = n(981631),
-  k = n(815660),
+  k = n(981631),
+  L = n(815660),
   U = n(388032),
   B = n(628829);
 
@@ -140,9 +140,9 @@ class V extends i.PureComponent {
       default:
         O.message = U.intl.string(U.t.rEBKvr), O.buttonText = U.intl.string(U.t["r8/DT0"]), O.buttonColor = s.Tt.BRAND, O.onButtonClick = this.handleShowMemberVerification
     } else i && !C ? (O.message = U.intl.string(U.t["2dThMD"]), O.buttonText = U.intl.string(U.t["50gfOj"]), O.onButtonClick = this.handleVerifyPhone) : l ? (O.message = U.intl.string(U.t.FkGPS0), O.buttonText = U.intl.string(U.t.lm1UKi), O.onButtonClick = this.handleResendVerification) : a ? (O.message = U.intl.formatToPlainString(U.t.IH7RMD, {
-      min: L.YeM.MEMBER_AGE
+      min: k.YeM.MEMBER_AGE
     }), O.countdown = o) : u && (O.message = U.intl.formatToPlainString(U.t["2JA2GB"], {
-      min: L.YeM.ACCOUNT_AGE
+      min: k.YeM.ACCOUNT_AGE
     }), O.countdown = d);
     return (0, r.jsx)(c.yRy, {
       targetElementRef: this.textAreaContainerRef,
@@ -232,7 +232,7 @@ class V extends i.PureComponent {
           reason: S.L.GUILD_PHONE_REQUIRED
         }, t))
       }, {
-        modalKey: k.M
+        modalKey: L.M
       })
     }), F(this, "handleResendVerification", () => {
       var e;
@@ -263,7 +263,7 @@ class V extends i.PureComponent {
       let e = this.props.channel.getGuildId();
       try {
         await p.Z.joinGuild(e, {
-          source: L.vtS.CHAT_INPUT_BLOCKER
+          source: k.vtS.CHAT_INPUT_BLOCKER
         })
       } catch (e) {
         this.setState({
@@ -273,7 +273,7 @@ class V extends i.PureComponent {
     }), F(this, "handleGoBack", () => {
       this.setState({
         submitting: !0
-      }), (0, P.s1)().goBack()
+      }), (0, I.s1)().goBack()
     }), F(this, "handleFollowAnnouncement", () => {
       let {
         channel: e
@@ -324,16 +324,16 @@ function z(e) {
   let {
     channel: i,
     children: l
-  } = e, a = i.getGuildId(), s = (0, o.e7)([N.Z], () => N.Z.getGuild(a)), c = (0, o.e7)([A.Z], () => A.Z.getCheck(a)), u = i.type === L.d4z.GUILD_ANNOUNCEMENT && null != s && s.features.has(L.oNc.NEWS), d = (0, o.e7)([Z.Z], () => u ? Z.Z.getFollowerStatsForChannel(i.id) : null), p = (0, o.e7)([j.Z], () => j.Z.isLurking(a)), f = (0, o.e7)([R.default], () => R.default.getCurrentUser()), m = null != (t = null == f ? void 0 : f.isStaff()) && t, g = (0, o.e7)([T.ZP], () => {
+  } = e, a = i.getGuildId(), s = (0, o.e7)([N.Z], () => N.Z.getGuild(a)), c = (0, o.e7)([A.Z], () => A.Z.getCheck(a)), u = i.type === k.d4z.GUILD_ANNOUNCEMENT && null != s && s.features.has(k.oNc.NEWS), d = (0, o.e7)([Z.Z], () => u ? Z.Z.getFollowerStatsForChannel(i.id) : null), p = (0, o.e7)([j.Z], () => j.Z.isLurking(a)), f = (0, o.e7)([R.default], () => R.default.getCurrentUser()), m = null != (t = null == f ? void 0 : f.isStaff()) && t, g = (0, o.e7)([T.ZP], () => {
     var e, t;
     return null != f && null != (t = null == (e = T.ZP.getMember(a, f.id)) ? void 0 : e.isPending) && t
-  }), b = !!(0, y.Dc)(s), x = (0, o.e7)([v.Z], () => v.Z.shouldShowPopout(a)), O = (0, o.e7)([w.Z], () => w.Z.can(L.Plq.SEND_MESSAGES, i)), E = (0, o.e7)([C.Z], () => C.Z.getRequest(a)), S = G(H({}, c), {
+  }), b = !!(0, y.Dc)(s), x = (0, o.e7)([v.Z], () => v.Z.shouldShowPopout(a)), O = (0, o.e7)([w.Z], () => w.Z.can(k.Plq.SEND_MESSAGES, i)), E = (0, o.e7)([C.Z], () => C.Z.getRequest(a)), S = G(H({}, c), {
     guild: s,
     isLurking: p,
     isFollowable: u,
     shouldShowLurkerModeSuccessPopout: x,
-    showLurkerModeUpsellPopout: p && null != s && M.Uu(L.Plq.SEND_MESSAGES, i),
-    theme: I.Z.theme,
+    showLurkerModeUpsellPopout: p && null != s && M.Uu(k.Plq.SEND_MESSAGES, i),
+    theme: P.Z.theme,
     canSendMessages: O,
     channelFollowingUsersSeen: null != d ? d.usersSeenEver : null,
     hasVerificationGate: b,

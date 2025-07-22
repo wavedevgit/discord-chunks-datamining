@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  u: () => h
+  Modal: () => h
 });
 var r = n(255367);
 n(73800);

@@ -50,7 +50,7 @@ class p extends s.Z {
     } = e, p = s === a.IlC.POPOUT ? l.u1M : l.z1l;
     o ? (0, l.h7j)(e => {
       var n, o;
-      return (0, r.jsx)(i.u, (n = u({
+      return (0, r.jsx)(i.Modal, (n = u({
         title: c.intl.formatToPlainString(c.t["2tN7io"], {
           name: t.name
         }),

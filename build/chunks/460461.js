@@ -118,7 +118,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
           discoverySplash: e
         })
       },
-      X = e => {
+      q = e => {
         let t = () => {
           (0, p.W1)(u.id, e), e ? (0, p.Vv)({
             guildId: u.id,
@@ -152,7 +152,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
           e.default.open(t)
         }) : t()
       },
-      q = (e, t) => {
+      X = (e, t) => {
         let n = [...A.socialLinks],
           r = [...H],
           i = [...k];
@@ -435,7 +435,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         options: W(H[t]),
                         placeholder: S.intl.string(S.t.xSALIC),
                         value: H[t],
-                        onChange: e => q(e, t),
+                        onChange: e => X(e, t),
                         isDisabled: !Z
                       }, "dropdown-" + t), (0, r.jsx)(a.Is, {
                         value: e,
@@ -491,7 +491,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         variant: "critical-primary",
                         size: "sm",
                         text: S.intl.string(S.t["DCHd/P"]),
-                        onClick: () => X(!1),
+                        onClick: () => q(!1),
                         disabled: !Z
                       })]
                     })]
@@ -506,7 +506,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                     title: S.intl.string(S.t["2kCyn5"]),
                     children: et,
                     buttonLabel: S.intl.string(S.t.tVK6S0),
-                    buttonCallback: () => X(!0),
+                    buttonCallback: () => q(!0),
                     disabled: !Z || !G
                   })
                 })]

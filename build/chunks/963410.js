@@ -191,7 +191,7 @@ function Z(e) {
       onClick: A,
       variant: "secondary"
     };
-  return w ? (0, n.jsx)(u.u, I(C({
+  return w ? (0, n.jsx)(u.Modal, I(C({
     onClose: A
   }, H), {
     actions: [ee, $],

@@ -25,7 +25,7 @@ function l(e) {
   }).enabled, m = () => {
     h(), null == p || p()
   };
-  return u ? (0, n.jsx)(i.u, {
+  return u ? (0, n.jsx)(i.Modal, {
     title: l,
     subtitle: d,
     transitionState: t,

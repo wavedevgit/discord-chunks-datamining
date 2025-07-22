@@ -17,9 +17,9 @@ var r = n(255367),
   g = n(778033),
   _ = n(967021),
   v = n(709706),
-  b = n(56848),
-  y = n(378441),
-  h = n(981631),
+  h = n(56848),
+  b = n(378441),
+  y = n(981631),
   O = n(509571),
   j = n(388032),
   S = n(905490);
@@ -63,11 +63,11 @@ let P = e => {
   } = e, {
     activeVoice: P,
     mostRecentlyRequestedVoiceId: C
-  } = (0, y.o)(), w = (0, b.z)(t.id), E = t.id === P, T = !t.available && !t.temporarilyAvailable, N = t.temporarilyAvailable && !n && !E, Z = !E && t.id === C, [D, A] = i.useState(!1);
+  } = (0, b.o)(), E = (0, h.z)(t.id), w = t.id === P, T = !t.available && !t.temporarilyAvailable, N = t.temporarilyAvailable && !n && !w, Z = !w && t.id === C, [A, D] = i.useState(!1);
   i.useEffect(() => {
-    let e = Z ? setTimeout(() => A(Z), 200) : void 0;
+    let e = Z ? setTimeout(() => D(Z), 200) : void 0;
     return () => {
-      clearTimeout(e), A(!1)
+      clearTimeout(e), D(!1)
     }
   }, [Z]);
   let k = (0, _.J_)({
@@ -76,35 +76,35 @@ let P = e => {
       disable: !p.ZP.canCheckVoiceFilterFilesExist()
     }),
     L = (0, o.e7)([v.Z], () => v.Z.isVoiceFilterDownloaded(t.id), [t]),
-    M = null == w ? void 0 : w.previewSoundURLs,
-    [R, U] = i.useState(0),
+    M = null == E ? void 0 : E.previewSoundURLs,
+    [U, R] = i.useState(0),
     {
       isPlaying: V,
       playSound: F,
       stopSound: W,
       preloadSound: Y
-    } = (0, d.Z)(null != M ? M[R] : null, {
+    } = (0, d.Z)(null != M ? M[U] : null, {
       soundId: t.id
     }),
     B = S[t.styleKey],
-    z = i.useCallback(() => {
-      n || !T ? ((0, m.v6)(P === t.id ? null : t.id, l), N && f.default.track(h.rMx.VOICE_FILTER_LIMITED_TIME_VOICE_SELECTED, x({
+    G = i.useCallback(() => {
+      n || !T ? ((0, m.v6)(P === t.id ? null : t.id, l), N && f.default.track(y.rMx.VOICE_FILTER_LIMITED_TIME_VOICE_SELECTED, x({
         voice_filter_id: t.id
       }, (0, g.w)(l)))) : (0, u.i)()
     }, [n, T, P, t.id, l, N]),
-    G = i.useCallback(() => {
-      f.default.track(h.rMx.VOICE_FILTER_PREVIEW_PLAYED, x({
+    H = i.useCallback(() => {
+      f.default.track(y.rMx.VOICE_FILTER_PREVIEW_PLAYED, x({
         voice_filter_id: t.id
       }, (0, g.w)(l))), F({
         volume: .5,
         outputChannel: O.w.VOICE
-      }), (.25 > Math.random() || R > 0) && null != M && U(e => (e + 1) % M.length)
-    }, [l, F, R, M, t.id]),
-    H = null != w ? j.intl.string(w.name) : "";
+      }), (.25 > Math.random() || U > 0) && null != M && R(e => (e + 1) % M.length)
+    }, [l, F, U, M, t.id]),
+    z = null != E ? j.intl.string(E.name) : "";
   return (0, r.jsxs)("div", {
     className: a()(S.filter, B, {
-      [S.selected]: E,
-      [S.locked]: T && !E
+      [S.selected]: w,
+      [S.locked]: T && !w
     }),
     children: [(0, r.jsx)(c.ua7, {
       shouldShow: k && !L,
@@ -124,7 +124,7 @@ let P = e => {
       }, e), {
         onClick: () => {
           var t;
-          z(), null == e || null == (t = e.onClick) || t.call(e)
+          G(), null == e || null == (t = e.onClick) || t.call(e)
         },
         onMouseEnter: () => {
           var t;
@@ -139,12 +139,12 @@ let P = e => {
             children: [(0, r.jsx)("img", {
               className: S.thumbnail,
               alt: "",
-              src: null == w ? void 0 : w.iconURL,
+              src: null == E ? void 0 : E.iconURL,
               draggable: !1
             }), (0, r.jsx)("div", {
               className: S.insetBorder
             })]
-          }), E && (0, r.jsx)("div", {
+          }), w && (0, r.jsx)("div", {
             className: S.iconCircle,
             children: (0, r.jsx)(c.owK, {
               size: "md",
@@ -152,7 +152,7 @@ let P = e => {
               colorClass: S.checkmark,
               secondaryColor: s.Z.unsafe_rawColors.WHITE_500.css
             })
-          }), T && !E && (0, r.jsx)("div", {
+          }), T && !w && (0, r.jsx)("div", {
             className: a()([S.iconCircle, S.lockedCircle]),
             children: (0, r.jsx)(c.mBM, {
               size: "custom",
@@ -173,7 +173,7 @@ let P = e => {
                 colorClass: S.clockIcon
               })
             })
-          }), D && (0, r.jsx)("div", {
+          }), A && (0, r.jsx)("div", {
             className: S.spinnerWrapper,
             children: (0, r.jsx)(c.$jN, {
               type: c.$jN.Type.CHASING_DOTS,
@@ -186,7 +186,7 @@ let P = e => {
           children: [(0, r.jsxs)(c.Text, {
             variant: "text-xs/medium",
             color: t.underDevelopment ? "header-muted" : "header-primary",
-            children: [t.underDevelopment ? "\uD83D\uDEA7 " : "", H]
+            children: [t.underDevelopment ? "\uD83D\uDEA7 " : "", z]
           }), k && !L ? (0, r.jsx)(c._8t, {
             size: "xxs"
           }) : null]
@@ -198,9 +198,9 @@ let P = e => {
         className: a()([S.hoverButtonCircle, S.previewButton], {
           [S.visible]: V
         }),
-        onClick: V ? W : G,
+        onClick: V ? W : H,
         "aria-label": j.intl.formatToPlainString(j.t.gDzvjY, {
-          voiceFilterName: H
+          voiceFilterName: z
         }),
         children: V ? (0, r.jsx)(c.wNq, {
           size: "custom",

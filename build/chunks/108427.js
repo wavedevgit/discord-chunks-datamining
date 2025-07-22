@@ -1,14 +1,14 @@
-/** Chunk was on 94363 **/
+/** Chunk was on 83075 **/
 n.d(t, {
-  e: () => d
+  e: () => u
 }), n(388685), n(35282);
 var r = n(772848),
   i = n(579806),
   l = n(626135),
   a = n(998502),
-  s = n(981631);
+  o = n(981631);
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -21,14 +21,14 @@ let c = new class {
     let t = Date.now();
     requestIdleCallback(() => {
       var n, r;
-      l.default.track(s.rMx.APP_UI_VIEWED, (n = function(e) {
+      l.default.track(o.rMx.APP_UI_VIEWED, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
           "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
           }))), r.forEach(function(t) {
-            o(e, t, n[t])
+            s(e, t, n[t])
           })
         }
         return e
@@ -86,10 +86,10 @@ let c = new class {
     }
   }
   constructor() {
-    o(this, "loadId", (0, r.Z)()), o(this, "appUIViewed", !1)
+    s(this, "loadId", (0, r.Z)()), s(this, "appUIViewed", !1)
   }
 };
 
-function d(e) {
+function u(e) {
   c.trackAppUIViewed(e)
 }

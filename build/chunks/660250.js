@@ -104,7 +104,7 @@ let x = function(e) {
       })
     })]
   });
-  return _ ? (0, n.jsx)(i.u, v(O({}, S), {
+  return _ ? (0, n.jsx)(i.Modal, v(O({}, S), {
     onClose: g,
     actions: [],
     children: N

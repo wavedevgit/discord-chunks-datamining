@@ -183,7 +183,7 @@ function k(e) {
       handleReviewPermissions: Z,
       onClose: a
     })
-  }) : (0, t.jsxs)(o.u, {
+  }) : (0, t.jsxs)(o.Modal, {
     title: g.intl.string(g.t.y77PiY),
     subtitle: g.intl.string(g.t.ZSzBe3),
     actions: A,

@@ -145,7 +145,7 @@ function k(e) {
     imageCTA: W,
     imageAriaLabel: V,
     setFilename: Y
-  } = (0, N.Z)(null == a ? void 0 : a.cover_image_asset), K = (0, b.Dt)(), X = (0, b.Dt)(), q = (0, b.Dt)();
+  } = (0, N.Z)(null == a ? void 0 : a.cover_image_asset), K = (0, b.Dt)(), q = (0, b.Dt)(), X = (0, b.Dt)();
 
   function J(e, t) {
     o()(null != e, "Null value not allowed"), null != t && Y(t.name), k(e)
@@ -210,7 +210,7 @@ function k(e) {
       })]
     }), (0, r.jsx)(p.hjN, {
       title: P.intl.string(P.t["1+Ho1d"]),
-      titleId: X,
+      titleId: q,
       disabled: ee,
       children: (0, r.jsx)(p.Kx8, {
         placeholder: l ? P.intl.string(P.t.SD6LRU) : P.intl.string(P.t["aVhW/f"]),
@@ -219,7 +219,7 @@ function k(e) {
         rows: 2,
         autosize: !0,
         onChange: O,
-        "aria-labelledby": X,
+        "aria-labelledby": q,
         disabled: ee
       })
     }), (0, r.jsx)(p.$i$, {
@@ -260,7 +260,7 @@ function k(e) {
         className: w.divider
       }), (0, r.jsxs)(p.hjN, {
         title: P.intl.string(P.t.aaZ9pK),
-        titleId: q,
+        titleId: X,
         disabled: ee,
         children: [(0, r.jsx)(p.R94, {
           type: p.R94.Types.DESCRIPTION,
@@ -279,7 +279,7 @@ function k(e) {
         className: w.divider
       }), (0, r.jsxs)(p.hjN, {
         title: P.intl.string(P.t["+dtmw8"]),
-        titleId: q,
+        titleId: X,
         disabled: ee,
         children: [(0, r.jsx)(p.R94, {
           type: p.R94.Types.DESCRIPTION,

@@ -46,11 +46,11 @@ function x(e) {
     embeddedActivitiesManager: f.Z,
     assetNames: _,
     commandOrigin: v
-  }), [P, I] = l.useState(!1), Z = l.useCallback(() => {
-    I(!0)
-  }, [I]), T = l.useCallback(() => {
-    I(!1)
-  }, [I]), N = l.useMemo(() => (0, i.jsx)("div", {
+  }), [I, P] = l.useState(!1), Z = l.useCallback(() => {
+    P(!0)
+  }, [P]), T = l.useCallback(() => {
+    P(!1)
+  }, [P]), N = l.useMemo(() => (0, i.jsx)("div", {
     className: b.overlayBadge,
     children: (0, i.jsx)("div", {
       className: b.badgeContainer,
@@ -105,7 +105,7 @@ function x(e) {
         value: 0
       },
       to: {
-        value: +!!P
+        value: +!!I
       },
       children: e => {
         let {

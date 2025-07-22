@@ -26,9 +26,9 @@ var r = n(255367),
   O = n(981631),
   E = n(388032),
   S = n(413384),
-  P = n(359165);
+  I = n(359165);
 
-function I(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -135,7 +135,7 @@ function N(e) {
             }
             return i
           }(e, ["onClick"]);
-          return (0, r.jsx)(u.P3F, Z(I({}, n), {
+          return (0, r.jsx)(u.P3F, Z(P({}, n), {
             className: S.clickableTile,
             onClick: () => {
               null == t || t(), d()
@@ -199,7 +199,7 @@ function A(e) {
       let {
         default: e
       } = await Promise.all([n.e("7654"), n.e("34946")]).then(n.bind(n, 560114));
-      return n => (0, r.jsx)(e, Z(I({}, n), {
+      return n => (0, r.jsx)(e, Z(P({}, n), {
         guild: l,
         channel: t,
         source: O.t4x.ACTIVITY_ENTRY_POINT_TILE
@@ -226,7 +226,7 @@ function A(e) {
       children: e => (0, r.jsxs)(j.Z, {
         className: a()(S.root, S.singleUserRoot, e),
         children: [(0, r.jsx)("img", {
-          src: P,
+          src: I,
           className: S.art,
           alt: ""
         }), (0, r.jsxs)("div", {

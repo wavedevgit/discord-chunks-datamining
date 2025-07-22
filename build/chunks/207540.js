@@ -4,8 +4,8 @@ e.d(n, {
 }), e(388685);
 var i = e(255367),
   l = e(73800),
-  r = e(442837),
-  d = e(82659),
+  d = e(442837),
+  r = e(82659),
   a = e(481060),
   s = e(933557),
   _ = e(724723),
@@ -29,9 +29,9 @@ let y = t => {
     onClose: e,
     onConfirm: y,
     transitionState: O
-  } = t, S = (0, s.ZP)(n, !0), z = n.id, A = n.isForumPost(), f = (0, r.e7)([U.Z], () => U.Z.getGuild(n.getGuildId())), h = (0, u.u1)(z), {
+  } = t, S = (0, s.ZP)(n, !0), z = n.id, A = n.isForumPost(), f = (0, d.e7)([U.Z], () => U.Z.getGuild(n.getGuildId())), h = (0, u.u1)(z), {
     isSubscriptionGated: v
-  } = (0, T.Z)(n.id), R = (0, I.Z)(f, n), [N, x] = l.useState(), H = (0, r.e7)([g.default], () => n.isOwner(g.default.getId()), [n]), B = (0, _.q)("DeleteChannelConfirm"), b = (0, r.e7)([C.Z], () => C.Z.can(n.isThread() ? L.Plq.MANAGE_THREADS : L.Plq.MANAGE_CHANNELS, n), [n]), M = (0, r.e7)([m.Z], () => {
+  } = (0, T.Z)(n.id), R = (0, I.Z)(f, n), [N, x] = l.useState(), H = (0, d.e7)([g.default], () => n.isOwner(g.default.getId()), [n]), B = (0, _.q)("DeleteChannelConfirm"), b = (0, d.e7)([C.Z], () => C.Z.can(n.isThread() ? L.Plq.MANAGE_THREADS : L.Plq.MANAGE_CHANNELS, n), [n]), M = (0, d.e7)([m.Z], () => {
     var t;
     return null != (t = m.Z.getCount(n.id)) ? t : 0
   }, [n.id]), j = A && (b || H && M < 1), P = h.length > 0 && (n.type === L.d4z.GUILD_VOICE || n.type === L.d4z.GUILD_STAGE_VOICE);
@@ -78,7 +78,7 @@ let y = t => {
           onClick: l
         })
     }
-    return B ? (0, i.jsx)(d.u, {
+    return B ? (0, i.jsx)(r.Modal, {
       title: D.intl.string(D.t["TY/V+P"]),
       onClose: e,
       subtitle: t,
@@ -144,7 +144,7 @@ let y = t => {
       channelName: S
     })
   };
-  return B ? (0, i.jsx)(d.u, {
+  return B ? (0, i.jsx)(r.Modal, {
     size: "sm",
     onClose: e,
     transitionState: O,

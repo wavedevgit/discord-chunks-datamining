@@ -171,7 +171,7 @@ function O(e) {
       disabled: !ei,
       loading: H
     }], [eo, ei, H, ea, Z]);
-  return (0, l.jsxs)(u.u, {
+  return (0, l.jsxs)(u.Modal, {
     onClose: Z,
     transitionState: M,
     title: ea ? N.intl.string(N.t.HmsZGR) : N.intl.string(N.t["ioD/9P"]),

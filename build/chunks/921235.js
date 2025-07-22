@@ -34,8 +34,8 @@ function j(e) {
   let O = (0, o.e7)([f.Z, h.default], () => !!a()(f.Z.getMessages(n.id).toArray()).reverse().find(e => e.author.id !== h.default.getId() && e.state === y.yb.SENT && !(0, _.Z)(e))),
     E = (0, o.e7)([m.default], () => m.default.getUser(n.isPrivate() ? n.getRecipientId() : null)),
     S = null != (t = b.ZP.useName(E)) ? t : C.intl.string(C.t.y1Wu2d),
-    P = (0, o.e7)([d.Z], () => d.Z.getStickerById(v)),
-    I = i.useCallback(async () => {
+    I = (0, o.e7)([d.Z], () => d.Z.getStickerById(v)),
+    P = i.useCallback(async () => {
       if (null == l || "" === l) try {
         await c.Z.sendGreetMessage(n.id, v), g.default.track(y.rMx.DM_EMPTY_ACTION, {
           channel_id: n.id,
@@ -61,9 +61,9 @@ function j(e) {
     children: [(0, r.jsxs)(s.P3F, {
       className: null != l && "" !== l ? x.compactButtonDisabled : x.compactButton,
       "aria-label": C.intl.string(C.t.pJObYG),
-      onClick: I,
+      onClick: P,
       children: [(0, r.jsx)(p.Z, {
-        sticker: P,
+        sticker: I,
         size: 24
       }), (0, r.jsx)(s.Text, {
         className: x.text,
@@ -74,14 +74,14 @@ function j(e) {
   }) : (0, r.jsxs)("div", {
     className: x.containerExpanded,
     children: [(0, r.jsx)(p.Z, {
-      sticker: P,
+      sticker: I,
       size: 160,
       className: x.stickerExpanded
     }), (0, r.jsx)(s.zxk, {
       fullWidth: !0,
       variant: "primary",
       size: "md",
-      onClick: I,
+      onClick: P,
       disabled: !!l,
       text: Z
     }), T]

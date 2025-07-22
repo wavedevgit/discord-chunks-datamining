@@ -1,6 +1,6 @@
 /**
   Module ID: 3496
-  Original File Name: 3220546e3c0df807
+  Original File Name: fae9961e98c71aa4
 **/
 .pill_a2c9e8 {
     align-items: center;
@@ -1954,6 +1954,10 @@ div.profileThemedContainer__656be {
     width: 4px
 }
 
+.unread__2ea32.unreadWithHangStatus__2ea32 {
+    top: 25%
+}
+
 .children__2ea32 {
     align-items: center;
     display: flex;
@@ -2128,4 +2132,4 @@ div.profileThemedContainer__656be {
     opacity: 1
 }
 
-/*# sourceMappingURL=3220546e3c0df807.css.map*/
+/*# sourceMappingURL=fae9961e98c71aa4.css.map*/

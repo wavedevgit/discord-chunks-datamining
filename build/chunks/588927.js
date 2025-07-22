@@ -1,14 +1,14 @@
-/** Chunk was on 9268 **/
+/** Chunk was on 83075 **/
 n.d(t, {
-  R: () => r,
-  Z: () => i
+  R: () => i,
+  Z: () => r
 });
-let i = {
+let r = {
     mass: 1,
     tension: 800,
     friction: 32
   },
-  r = {
+  i = {
     mass: 1,
     tension: 1200,
     friction: 48

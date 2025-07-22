@@ -163,7 +163,7 @@ class y extends l.PureComponent {
     }
     return (0, i.jsx)(m.Z.Provider, {
       value: o.guild_id,
-      children: n ? (0, i.jsx)(a.u, {
+      children: n ? (0, i.jsx)(a.Modal, {
         title: v ? M.intl.string(M.t.aIz1oa) : M.intl.string(M.t.MWMcg4),
         subtitle: N,
         actions: [{

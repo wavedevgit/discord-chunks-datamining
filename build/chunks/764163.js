@@ -166,7 +166,7 @@ function N(e) {
     disabled: !C
   }), (0, r.jsx)("form", {
     onSubmit: N,
-    children: (0, r.jsx)(o.u, {
+    children: (0, r.jsx)(o.Modal, {
       transitionState: p,
       onClose: f,
       title: _.intl.string(_.t["2qf9EB"]),

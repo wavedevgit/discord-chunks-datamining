@@ -26,8 +26,8 @@ var r = n(255367),
   O = n(544989),
   E = n(481932),
   S = n(664794),
-  P = n(4517),
-  I = n(277117),
+  I = n(4517),
+  P = n(277117),
   Z = n(52639),
   T = n(228168),
   N = n(388032),
@@ -57,7 +57,7 @@ function R(e) {
     user: t,
     currentUser: n,
     channel: R
-  } = e, M = __OVERLAY__, D = (0, g.ZP)(t.id), L = (0, u.ZP)(), k = i.useRef(Date.now()), {
+  } = e, M = __OVERLAY__, D = (0, g.ZP)(t.id), k = (0, u.ZP)(), L = i.useRef(Date.now()), {
     analyticsLocations: U
   } = (0, p.ZP)(d.Z.USER_PROFILE_SIDEBAR), B = (0, f.ZB)({
     layout: "SIDEBAR",
@@ -78,7 +78,7 @@ function R(e) {
     value: U,
     children: (0, r.jsx)(f.Mt, {
       value: B,
-      openedAt: k.current,
+      openedAt: L.current,
       fetchStartedAt: null == D ? void 0 : D.fetchStartedAt,
       fetchEndedAt: null == D ? void 0 : D.fetchEndedAt,
       isLoaded: null == D ? void 0 : D.isLoaded,
@@ -89,7 +89,7 @@ function R(e) {
           user: t,
           displayProfile: D,
           themeType: T.lY.SIDEBAR,
-          themeOverride: L,
+          themeOverride: k,
           children: [null != G.interactionType && (0, r.jsx)(l.animated.div, {
             style: V,
             className: A.backdrop
@@ -123,14 +123,14 @@ function R(e) {
                 channelId: R.id,
                 themeType: T.lY.SIDEBAR,
                 onOpenProfile: M ? void 0 : z
-              }), (0, r.jsx)(P.Z, {
+              }), (0, r.jsx)(I.Z, {
                 location: "UserProfileSiebar",
                 user: t,
                 channelId: R.id,
                 themeType: T.lY.SIDEBAR,
                 disableToolbar: t.bot
               })]
-            }), (0, r.jsx)(I.Z, {
+            }), (0, r.jsx)(P.Z, {
               user: t,
               currentUser: n,
               displayProfile: D,

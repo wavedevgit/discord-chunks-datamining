@@ -262,7 +262,7 @@ let z = d().throttle(h.OQ, 1e3),
       }, e.id))]
     })
   },
-  X = e => {
+  q = e => {
     let t, n, i, {
         staticEmojiCount: l,
         animatedEmojiCount: s,
@@ -290,7 +290,7 @@ let z = d().throttle(h.OQ, 1e3),
       }
     }))
   },
-  q = () => (0, r.jsxs)("div", {
+  X = () => (0, r.jsxs)("div", {
     children: [(0, r.jsx)(p.vwX, {
       tag: p.RB0.H2,
       className: B.emojiUploadUploadRequirementsHeading,
@@ -403,7 +403,7 @@ let z = d().throttle(h.OQ, 1e3),
       }), (0, r.jsxs)(p.hjN, {
         tag: p.RB0.H1,
         title: U.intl.string(U.t.sMOuub),
-        children: [(0, r.jsx)(X, {
+        children: [(0, r.jsx)(q, {
           guild: e,
           staticEmojiCount: G.length,
           animatedEmojiCount: F.length
@@ -430,7 +430,7 @@ let z = d().throttle(h.OQ, 1e3),
               children: U.intl.string(U.t.EgNCTk)
             })]
           }) : (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(q, {}), (0, r.jsxs)(g.zx, {
+            children: [(0, r.jsx)(X, {}), (0, r.jsxs)(g.zx, {
               tabIndex: -1,
               size: g.zx.Sizes.MEDIUM,
               onClick: () => {

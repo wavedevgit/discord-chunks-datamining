@@ -25,15 +25,15 @@ function d(e) {
     className: _,
     onAction: v
   } = e, {
-    tooltip: b,
-    loading: y,
-    disabled: h,
+    tooltip: h,
+    loading: b,
+    disabled: y,
     onClick: O
   } = (0, c.Fe)(t, n, f, s.ZP.getNickname(d, i, n)), j = () => {
     null == v || v(), O()
   };
   return (0, r.jsx)(o.ua7, {
-    text: b,
+    text: h,
     children: e => {
       let {
         onMouseEnter: n,
@@ -48,9 +48,9 @@ function d(e) {
         onClick: j,
         onMouseEnter: n,
         onMouseLeave: i,
-        disabled: h,
-        submitting: y,
-        "aria-label": null != b ? b : t.name,
+        disabled: y,
+        submitting: b,
+        "aria-label": null != h ? h : t.name,
         children: (0, r.jsx)(o.iOO, {
           size: "xs",
           color: "currentColor"

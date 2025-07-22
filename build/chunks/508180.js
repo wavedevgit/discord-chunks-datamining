@@ -51,7 +51,7 @@ let h = () => {
       let e = u.Z.getCurrentConfig({
         location: "InteractionRequired"
       }).enabled;
-      t.current = (0, s.h7j)(t => e ? (0, r.jsx)(o.u, p({
+      t.current = (0, s.h7j)(t => e ? (0, r.jsx)(o.Modal, p({
         title: f.intl.string(f.t.dLLxCw),
         subtitle: f.intl.string(f.t["64lmt7"]),
         actions: [{

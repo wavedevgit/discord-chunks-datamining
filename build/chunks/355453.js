@@ -76,7 +76,7 @@ function g(e) {
     onClick: D,
     variant: "primary"
   }], [g, D]);
-  return (0, i.jsxs)(o.u, {
+  return (0, i.jsxs)(o.Modal, {
     transitionState: n,
     title: f.intl.string(f.t["0Osu39"]),
     actions: C,

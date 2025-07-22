@@ -1,6 +1,6 @@
 /**
   Module ID: 88388
-  Original File Name: f3030099390da132
+  Original File Name: 471e02f8b25e3d9b
 **/
 .editCard_a25a68 {
     background-color: var(--background-surface-high);
@@ -2389,8 +2389,8 @@
     width: 24px
 }
 
-.deleteListingButton__490eb {
-    align-self: flex-start
+.warning__490eb {
+    font-style: italic
 }
 
 .formSplit__4ecd1 {
@@ -12382,4 +12382,4 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     width: 8px
 }
 
-/*# sourceMappingURL=f3030099390da132.css.map*/
+/*# sourceMappingURL=471e02f8b25e3d9b.css.map*/

@@ -210,12 +210,12 @@ function G(e) {
     className: s()(R.roleRow, R.roleRowDragging)
   });
 
-  function X() {
+  function q() {
     I(d.id)
   }
 
-  function q() {
-    X(), S(T.ZI.MEMBERS)
+  function X() {
+    q(), S(T.ZI.MEMBERS)
   }
   return (0, r.jsxs)(m.P3F, {
     className: s()(R.roleRow, {
@@ -223,7 +223,7 @@ function G(e) {
       [R.containerDragBefore]: null != W && h < W,
       [R.containerDragAfter]: null != W && h > W
     }),
-    onClick: X,
+    onClick: q,
     onContextMenu: Y,
     innerRef: e => {
       H(V(e))
@@ -275,7 +275,7 @@ function G(e) {
       position: "right",
       children: e => (0, r.jsxs)(m.P3F, A(D({}, e), {
         className: s()(R.memberCountContainer, Z.memberSpacing),
-        onClick: q,
+        onClick: X,
         children: [(0, r.jsx)(m.Text, {
           variant: "text-md/normal",
           color: "none",
@@ -306,7 +306,7 @@ function G(e) {
           width: 20,
           height: 20
         }),
-        onClick: X
+        onClick: q
       }), (0, r.jsx)(m.M0o, {
         className: R.circleButton,
         tooltip: w.intl.string(w.t.UKOtz8),

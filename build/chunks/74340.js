@@ -6,7 +6,7 @@ n.d(t, {
 var r = n(134632);
 
 function i(e) {
-  switch (e.details) {
+  switch (null == e ? void 0 : e.details) {
     case r.w.QUESTION:
       return r.w.QUESTION;
     case r.w.EXCITED:

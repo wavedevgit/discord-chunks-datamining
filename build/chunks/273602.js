@@ -103,7 +103,7 @@ function P(e) {
         onClose: d
       }))
     }, [m, r, I, f, d]);
-  return null == b ? null : (0, a.jsx)(l.u, {
+  return null == b ? null : (0, a.jsx)(l.Modal, {
     title: M.intl.string(M.t.hMWWMT),
     subtitle: M.intl.string(M.t.zMsUsr),
     transitionState: u,

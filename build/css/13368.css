@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: 5424d0c7f3b0a1c3
+  Original File Name: b278d3c27fe63bc4
 **/
 .popover_f84418 {
     overflow: visible
@@ -1650,6 +1650,10 @@
     width: 4px
 }
 
+.unread__2ea32.unreadWithHangStatus__2ea32 {
+    top: 25%
+}
+
 .children__2ea32 {
     align-items: center;
     display: flex;
@@ -2509,4 +2513,4 @@
     width: 96px
 }
 
-/*# sourceMappingURL=5424d0c7f3b0a1c3.css.map*/
+/*# sourceMappingURL=b278d3c27fe63bc4.css.map*/
