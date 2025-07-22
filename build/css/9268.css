@@ -1,6 +1,6 @@
 /**
   Module ID: 9268
-  Original File Name: e71e7d911f20385a
+  Original File Name: e014f5eea415df87
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -9573,7 +9573,7 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
 }
 
 .header__61e0e {
-    font-size: 64px;
+    font-size: 72px;
     font-style: italic;
     font-weight: 900;
     letter-spacing: -1.28px;
@@ -9581,19 +9581,11 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
     text-transform: uppercase
 }
 
-@container premium-marketing-home-container (max-width: 960px) {
-    .header__61e0e {
-        font-size: 52px;
-        letter-spacing: -1.04px;
-        line-height: 54px
-    }
-}
-
 @container premium-marketing-home-container (max-width: 720px) {
     .header__61e0e {
-        font-size: 38px;
-        letter-spacing: -.76px;
-        line-height: 38px
+        font-size: 42px;
+        letter-spacing: -.84px;
+        line-height: 90%
     }
 }
 
@@ -10003,7 +9995,7 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
 }
 
 .sectionTitle_cbfae2 {
-    margin: var(--space-32) 0
+    margin-top: 42px
 }
 
 .planComparisonItem_cbfae2 {
@@ -10055,6 +10047,10 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
     top: 1px;
     transform: translate(-50%,-50%);
     z-index: 2
+}
+
+.pill_cbfae2.pillGradient_cbfae2 {
+    background: linear-gradient(90deg,rgba(155,29,165,.84),rgba(30,35,83,.84) 120%)
 }
 
 .gradientBackgroundContainer_cbfae2 {
@@ -10405,6 +10401,7 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
 
 .sectionClickable__88ef1 {
     align-items: center;
+    cursor: pointer;
     display: flex;
     height: 100%;
     position: relative
@@ -10443,7 +10440,7 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
 }
 
 .containerBackground_f48ee4 {
-    background: var(--background-base-lower)
+    background: var(--background-base-lowest)
 }
 
 .responsiveContainer_f48ee4 {
@@ -20019,4 +20016,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=e71e7d911f20385a.css.map*/
+/*# sourceMappingURL=e014f5eea415df87.css.map*/

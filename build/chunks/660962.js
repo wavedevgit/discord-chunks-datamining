@@ -45,8 +45,8 @@ var r = n(255367),
   F = n(275302),
   H = n(877248),
   z = n(179517),
-  V = n(79829);
-let W = (0, _.Un)({
+  W = n(79829);
+let V = (0, _.Un)({
     createPromise: () => n.e("4848").then(n.bind(n, 797967)),
     webpackId: 797967
   }),
@@ -87,7 +87,7 @@ function X(e) {
       name: t.name
     },
     light: {
-      src: V,
+      src: W,
       name: t.name
     }
   };
@@ -245,7 +245,7 @@ function J(e) {
     children: [(0, r.jsx)(p.R94, {
       className: F.colorDescription,
       children: U.intl.string(U.t["9UCxlZ"])
-    }), (0, r.jsx)(W, {
+    }), (0, r.jsx)(V, {
       defaultColor: M.p6O,
       colors: s === T.g.GRADIENT && a ? G.tl : M.pmI,
       value: i.color,
@@ -291,7 +291,7 @@ function Q(e) {
     src: z,
     name: a.name
   }, h = {
-    src: V,
+    src: W,
     name: a.name
   }, x = (0, O.oC)(o, a), b = [M.BRd.DARK, M.BRd.DARKER, M.BRd.MIDNIGHT, M.BRd.LIGHT];
   return (0, r.jsx)(p.Rny, {

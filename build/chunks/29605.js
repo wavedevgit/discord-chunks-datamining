@@ -65,7 +65,7 @@ function H(e) {
   return e
 }
 let z = d().throttle(h.OQ, 1e3),
-  V = e => {
+  W = e => {
     let {
       guildId: t,
       emoji: n,
@@ -167,7 +167,7 @@ let z = d().throttle(h.OQ, 1e3),
       })]
     })
   },
-  W = e => {
+  V = e => {
     let {
       isLoading: t,
       staticEmojis: i,
@@ -254,7 +254,7 @@ let z = d().throttle(h.OQ, 1e3),
           className: B.columnLabel,
           children: U.intl.string(U.t.edavpq)
         })]
-      }), a.map(e => (0, r.jsx)(V, {
+      }), a.map(e => (0, r.jsx)(W, {
         guildId: n.id,
         emoji: e,
         onEdit: l,
@@ -347,7 +347,7 @@ let z = d().throttle(h.OQ, 1e3),
           [n, r] = d().partition(t, e => !e.animated);
         return [n, r]
       }, [f, e.id]),
-      V = Math.max(D - G.length, D - F.length),
+      W = Math.max(D - G.length, D - F.length),
       {
         enabled: Y
       } = (0, O.q)({
@@ -397,7 +397,7 @@ let z = d().throttle(h.OQ, 1e3),
       }, et = (0, v.l)(e);
     return (0, r.jsxs)("div", {
       className: B.emojiSettings,
-      children: [0 === V ? null : (0, r.jsx)(j.Z, {
+      children: [0 === W ? null : (0, r.jsx)(j.Z, {
         className: B.emojiUploadContainer,
         onDrop: ee
       }), (0, r.jsxs)(p.hjN, {
@@ -424,7 +424,7 @@ let z = d().throttle(h.OQ, 1e3),
               variant: "primary",
               text: U.intl.string(U.t.DU0dy8),
               onClick: K,
-              disabled: 0 === V
+              disabled: 0 === W
             }), (0, r.jsx)(p.Text, {
               variant: "text-xs/normal",
               children: U.intl.string(U.t.EgNCTk)
@@ -440,13 +440,13 @@ let z = d().throttle(h.OQ, 1e3),
                   upload_id: t
                 })
               },
-              disabled: N || 0 === V || !a,
+              disabled: N || 0 === W || !a,
               submitting: N,
               focusProps: {
                 within: !0
               },
-              children: [U.intl.string(U.t.DU0dy8), V > 0 ? (0, r.jsx)(E.ZP, {
-                disabled: N || 0 === V || !a,
+              children: [U.intl.string(U.t.DU0dy8), W > 0 ? (0, r.jsx)(E.ZP, {
+                disabled: N || 0 === W || !a,
                 tabIndex: 0,
                 onChange: J,
                 setLoading: w,
@@ -454,7 +454,7 @@ let z = d().throttle(h.OQ, 1e3),
               }) : null]
             })]
           })]
-        }), (0, r.jsx)(W, {
+        }), (0, r.jsx)(V, {
           isLoading: null == f,
           staticEmojis: G,
           animatedEmojis: F,

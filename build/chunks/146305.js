@@ -45,8 +45,8 @@ var r = n(255367),
   F = n(579648),
   H = n(460461),
   z = n(29605),
-  V = n(365307),
-  W = n(324330),
+  W = n(365307),
+  V = n(324330),
   Y = n(495300),
   K = n(651780),
   X = n(279542),
@@ -192,9 +192,9 @@ let eb = {
         };
       case em.pNK.INTEGRATIONS:
         return {
-          section: em.pNK.INTEGRATIONS, impressionName: i.ImpressionNames.GUILD_SETTINGS_INTEGRATION, label: ep.intl.string(ep.t.CIsNZ2), ariaLabel: ep.intl.string(ep.t.CIsNZ2), element: V.Z, notice: {
+          section: em.pNK.INTEGRATIONS, impressionName: i.ImpressionNames.GUILD_SETTINGS_INTEGRATION, label: ep.intl.string(ep.t.CIsNZ2), ariaLabel: ep.intl.string(ep.t.CIsNZ2), element: W.Z, notice: {
             stores: [E.default, T.Z],
-            element: V.j
+            element: W.j
           }, predicate: () => t.canManageGuild || t.canManageWebhooks || t.canUnlinkChannels
         };
       case em.pNK.APP_DIRECTORY:
@@ -307,7 +307,7 @@ let eb = {
         };
       case em.pNK.MEMBERS:
         return {
-          section: em.pNK.MEMBERS, impressionName: i.ImpressionNames.GUILD_SETTINGS_MEMBERS, label: (0, r.jsx)(W.$, {}), ariaLabel: ep.intl.string(ep.t["9Oq93t"]), element: W.Z, type: o.bT.CUSTOM, predicate: () => t.canAccessMembersPage
+          section: em.pNK.MEMBERS, impressionName: i.ImpressionNames.GUILD_SETTINGS_MEMBERS, label: (0, r.jsx)(V.$, {}), ariaLabel: ep.intl.string(ep.t["9Oq93t"]), element: V.Z, type: o.bT.CUSTOM, predicate: () => t.canAccessMembersPage
         };
       case em.pNK.DELETE:
         return {

@@ -21,8 +21,8 @@ var r = n(255367),
   E = n(825829),
   x = n(226192),
   v = n(36459),
-  C = n(434404),
-  y = n(518950),
+  y = n(434404),
+  C = n(518950),
   O = n(670188),
   j = n(592125),
   I = n(271383),
@@ -166,7 +166,7 @@ function G(e) {
     avatarSrc: u,
     avatarDecorationSrc: d,
     eventHandlers: p
-  } = (0, y.Z)({
+  } = (0, C.Z)({
     userId: null == a ? void 0 : a.id,
     guildId: o,
     size: 12
@@ -244,9 +244,9 @@ function H(e) {
     dmsSent: u,
     raidType: g,
     resolvedReason: h
-  } = (0, E.FL)(n), v = (0, p.e7)([j.Z], () => j.Z.getChannel(n.channel_id), [n.channel_id]), C = null != (t = null == v ? void 0 : v.guild_id) ? t : null, {
-    shouldShowIncidentActions: y
-  } = (0, _.mI)(C), O = (0, N.sR)(n.author.id, n.channel_id), I = i.useCallback(() => {
+  } = (0, E.FL)(n), v = (0, p.e7)([j.Z], () => j.Z.getChannel(n.channel_id), [n.channel_id]), y = null != (t = null == v ? void 0 : v.guild_id) ? t : null, {
+    shouldShowIncidentActions: C
+  } = (0, _.mI)(y), O = (0, N.sR)(n.author.id, n.channel_id), I = i.useCallback(() => {
     let e = null == v ? void 0 : v.guild_id;
     null != e && (0, x.kW)(n.id, e)
   }, [n.id, v]), S = g === d.$.DM_RAID, T = S ? f.P4T : f.b6m;
@@ -291,7 +291,7 @@ function H(e) {
         dateTime: o.toLocaleString(R.intl.currentLocale, b.pQ)
       })
     }) : null,
-    footerButtons: y ? (0, r.jsxs)("div", {
+    footerButtons: C ? (0, r.jsxs)("div", {
       className: k.footerRow,
       children: [(0, r.jsxs)("div", {
         className: k.footerAction,
@@ -380,7 +380,7 @@ function V(e) {
           size: "sm",
           text: R.intl.string(R.t["1R7QIy"]),
           onClick: function() {
-            null != a && C.Z.open(a, w.pNK.GUILD_AUTOMOD, void 0, w.KsC.AUTOMOD_MENTION_SPAM)
+            null != a && y.Z.open(a, w.pNK.GUILD_AUTOMOD, void 0, w.KsC.AUTOMOD_MENTION_SPAM)
           }
         })
       })]

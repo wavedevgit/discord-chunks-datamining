@@ -1,6 +1,6 @@
 /**
   Module ID: 88388
-  Original File Name: ebaf44094703806c
+  Original File Name: f3030099390da132
 **/
 .editCard_a25a68 {
     background-color: var(--background-surface-high);
@@ -5127,24 +5127,23 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 .headerHeading_d80a13 {
     align-items: center;
     display: flex;
-    flex-direction: row;
-    margin-bottom: 8px
+    flex-direction: row
 }
 
 .headerNoConfigContainer_d80a13 {
     display: flex;
-    flex-direction: column
-}
-
-.headerNoConfigHeading_d80a13 {
-    align-items: center;
-    margin-bottom: 8px
+    flex-direction: column;
+    gap: 8px
 }
 
 .headerTitleTextContainer_d80a13 {
     align-items: center;
     display: flex;
     flex: 1
+}
+
+.headerNoConfigSubtitle_d80a13 {
+    margin-bottom: 8px
 }
 
 .betaTag_d80a13 {
@@ -5213,33 +5212,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     margin-bottom: 8px
 }
 
-.headerTitleButton_d80a13 {
-    padding: 0
-}
-
-.configurationsContainer_d80a13 {
-    margin-top: 16px
-}
-
-.addVerificationButton_d80a13 {
-    margin-top: 16px;
-    width: 100%
-}
-
-.addVerificationButtonAppend_d80a13 {
-    border: 2px dashed var(--interactive-muted);
-    border-radius: var(--radius-sm);
-    color: var(--text-link)
-}
-
-.addVerificationButtonAppendTextContainer_d80a13 {
-    align-items: center;
-    display: flex;
-    flex: 1;
-    gap: 4px
-}
-
-.operatorContainer_d80a13 {
+.configurationsContainer_d80a13,.operatorContainer_d80a13 {
     margin-top: 16px
 }
 
@@ -12409,4 +12382,4 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     width: 8px
 }
 
-/*# sourceMappingURL=ebaf44094703806c.css.map*/
+/*# sourceMappingURL=f3030099390da132.css.map*/

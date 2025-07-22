@@ -94,7 +94,7 @@ function B(e) {
       return (0, r.jsx)(V, {
         Icon: l,
         text: a(),
-        className: t ? U.itemApplicationHome : void 0,
+        className: t && !i ? U.itemApplicationHome : void 0,
         textVariant: t && !i ? "text-sm/normal" : void 0,
         enablePremiumBrandRefresh: i,
         isApplicationHome: t

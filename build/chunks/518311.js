@@ -898,51 +898,50 @@ function ey(e) {
 function eC(e) {
   let {
     channel: t,
-    className: n,
-    popoutPosition: r = "bottom",
-    popoutAlign: a = "right"
+    popoutPosition: n = "bottom",
+    popoutAlign: r = "right"
   } = e;
   (0, O.ZP)(() => {
     (0, L._)()
   });
-  let o = (0, w.a)("PrivateChannelRecipientsInviteTextButton"),
-    s = l.useRef(null),
-    [c, u] = l.useState(!1),
-    d = l.useCallback(() => u(e => !e), []),
-    p = l.useCallback(() => (0, f.ZDy)(() => Promise.resolve(e => (0, i.jsx)(e_, ec(es({}, e), {
+  let a = (0, w.a)("PrivateChannelRecipientsInviteTextButton"),
+    o = l.useRef(null),
+    [s, c] = l.useState(!1),
+    u = l.useCallback(() => c(e => !e), []),
+    d = l.useCallback(() => (0, f.ZDy)(() => Promise.resolve(e => (0, i.jsx)(e_, ec(es({}, e), {
       channel: t,
-      inBornThisNamedExperiment: o
-    })))), [t, o]);
-  return o ? (0, i.jsx)(h.zx, {
-    onClick: p,
-    look: h.zx.Looks.OUTLINED,
-    buttonRef: s,
-    size: h.Ph.MEDIUM,
-    className: n,
-    children: ei.intl.string(ei.t["6Qgren"])
+      inBornThisNamedExperiment: a
+    })))), [t, a]);
+  return a ? (0, i.jsx)(f.zxk, {
+    onClick: d,
+    variant: "primary",
+    buttonRef: o,
+    text: ei.intl.string(ei.t["6Qgren"]),
+    "aria-label": ei.intl.string(ei.t["6Qgren"]),
+    icon: f.ejJ
   }) : (0, i.jsx)(f.yRy, {
-    targetElementRef: s,
+    targetElementRef: o,
     renderPopout: e => (0, i.jsx)(e_, ec(es({}, e), {
       onClose: e.closePopout,
       channel: t,
-      inBornThisNamedExperiment: o
+      inBornThisNamedExperiment: a
     })),
-    position: r,
-    shouldShow: c,
+    position: n,
+    shouldShow: s,
     nudgeAlignIntoViewport: !0,
     autoInvert: !0,
-    align: a,
-    onRequestClose: () => u(!1),
+    align: r,
+    onRequestClose: () => c(!1),
     animation: f.yRy.Animation.NONE,
     ignoreModalClicks: !0,
     clickTrap: !0,
-    children: e => (0, i.jsx)(h.zx, ec(es({}, e), {
-      look: h.zx.Looks.OUTLINED,
-      buttonRef: s,
-      size: h.Ph.MEDIUM,
-      onClick: d,
-      className: n,
-      children: ei.intl.string(ei.t["6Qgren"])
+    children: e => (0, i.jsx)(f.zxk, ec(es({}, e), {
+      onClick: u,
+      variant: "primary",
+      buttonRef: o,
+      text: ei.intl.string(ei.t["6Qgren"]),
+      "aria-label": ei.intl.string(ei.t["6Qgren"]),
+      icon: f.ejJ
     }))
   })
 }

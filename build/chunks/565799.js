@@ -108,7 +108,7 @@ function V() {
 function F(e, t, n) {
   if (null == n || e.has(n)) return;
   let r = p.Z.getChannel(n);
-  (null == r ? void 0 : r.isGuildStageVoice()) && (t.add(n), e.add(n))
+  (null == r ? void 0 : r.isGuildStageVoice()) && (t.add(n), null == R[n] && e.add(n))
 }
 
 function Z(e) {

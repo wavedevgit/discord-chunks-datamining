@@ -78,7 +78,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
       canManageGuild: Z
     } = (0, l.cj)([b.Z], () => ({
       canManageGuild: b.Z.can(E.Plq.MANAGE_GUILD, u)
-    })), D = (0, l.e7)([O.Z], () => O.Z.isGuildMetadataLoaded()), A = (0, l.e7)([O.Z], () => null != u ? O.Z.getMetadata() : null), L = (0, l.e7)([O.Z], () => null != u && (null == A ? void 0 : A.isPublished) ? O.Z.getSlug() : null), [k, M] = i.useState([!0]), [G, U] = i.useState(!0), [B, F] = i.useState([!1]), [H, z] = i.useState([""]), V = e => {
+    })), D = (0, l.e7)([O.Z], () => O.Z.isGuildMetadataLoaded()), A = (0, l.e7)([O.Z], () => null != u ? O.Z.getMetadata() : null), L = (0, l.e7)([O.Z], () => null != u && (null == A ? void 0 : A.isPublished) ? O.Z.getSlug() : null), [k, M] = i.useState([!0]), [G, U] = i.useState(!0), [B, F] = i.useState([!1]), [H, z] = i.useState([""]), W = e => {
       let t = Object.entries(I.z).filter(e => !H.includes(e[1].presentation)).map(e => ({
         label: e[1].presentation,
         value: e[0]
@@ -87,7 +87,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
         label: e,
         value: e
       })
-    }, W = e => {
+    }, V = e => {
       try {
         var t, n, r, i;
         let l = new URL(e).hostname.split(".");
@@ -105,7 +105,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
           t = [];
         A.socialLinks.forEach((n, r) => {
           if ("" !== n) {
-            let i = W(n);
+            let i = V(n);
             null !== i ? (t[r] = i, e[r] = !0) : e[r] = !1
           } else e[r] = !0
         }), z(t), M(e), U(e.every(e => !0 === e))
@@ -432,7 +432,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       onBlur: () => en(t, !1),
                       children: [(0, r.jsx)(o.q4e, {
                         className: A.isPublished ? T.socialLinksDropdownMax : T.socialLinksDropdownMin,
-                        options: V(H[t]),
+                        options: W(H[t]),
                         placeholder: S.intl.string(S.t.xSALIC),
                         value: H[t],
                         onChange: e => q(e, t),

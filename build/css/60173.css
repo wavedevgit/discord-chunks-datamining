@@ -1,6 +1,6 @@
 /**
   Module ID: 60173
-  Original File Name: 221c51b590e0c066
+  Original File Name: d54efdbda8dc9101
 **/
 @keyframes placeholderPulse_c8ffbb {
     0% {
@@ -1098,14 +1098,11 @@ strong {
 }
 
 .header__46773 {
-    padding: unset;
-    text-align: center
-}
-
-.header__46773,.iconSection__46773 {
     align-items: center;
     display: flex;
-    justify-content: center
+    justify-content: flex-start;
+    padding: unset;
+    text-align: center
 }
 
 .iconSection__46773 {
@@ -1113,12 +1110,15 @@ strong {
     gap: 12px
 }
 
-.iconContainer__46773 {
+.iconContainer__46773,.iconSection__46773 {
     align-items: center;
-    cursor: pointer;
     display: flex;
+    justify-content: center
+}
+
+.iconContainer__46773 {
+    cursor: pointer;
     height: 120px;
-    justify-content: center;
     margin: 0 auto;
     position: relative;
     width: 120px
@@ -1161,7 +1161,7 @@ strong {
     align-items: center;
     background-color: var(--background-mod-subtle);
     border-radius: 50%;
-    color: var(--interactive-muted);
+    color: var(--background-mod-normal);
     display: flex;
     height: 100%;
     justify-content: center;
@@ -1169,7 +1169,8 @@ strong {
 }
 
 .iconContainer__46773:hover .iconPlaceholder__46773 {
-    color: var(--interactive-normal)
+    background-color: var(--background-mod-normal);
+    outline: 1px solid var(--border-faint)
 }
 
 .iconImage__46773 {
@@ -12987,4 +12988,4 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     position: relative
 }
 
-/*# sourceMappingURL=221c51b590e0c066.css.map*/
+/*# sourceMappingURL=d54efdbda8dc9101.css.map*/

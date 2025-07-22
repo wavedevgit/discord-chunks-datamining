@@ -127,14 +127,14 @@ function E(e) {
     onDeleteProduct: E,
     onCopyProductLink: x,
     onTestDownload: v,
-    onReportProduct: C
-  } = e, y = i.useRef(null);
+    onReportProduct: y
+  } = e, C = i.useRef(null);
   return (0, r.jsx)("div", {
     onClick: e => {
       e.stopPropagation()
     },
     children: (0, r.jsx)(o.yRy, {
-      targetElementRef: y,
+      targetElementRef: C,
       position: "right",
       align: "top",
       spacing: -8,
@@ -153,14 +153,14 @@ function E(e) {
         onDeleteProduct: E,
         onCopyLink: x,
         onTestDownload: v,
-        onReportProduct: C
+        onReportProduct: y
       })),
       children: (e, n) => {
         let {
           isShown: i
         } = n;
         return (0, r.jsx)(o.P3F, _(h({}, e), {
-          innerRef: y,
+          innerRef: C,
           "aria-label": f.intl.formatToPlainString(f.t.RtqjeH, {
             productName: t.name
           }),
@@ -187,15 +187,15 @@ function x(e) {
     onUnpublishProduct: l,
     onDeleteProduct: x,
     onCopyProductLink: v,
-    onTestDownload: C,
-    disabled: y = !1
+    onTestDownload: y,
+    disabled: C = !1
   } = e, O = (0, c.U)(t, 600), j = null !== t.price_tier ? (0, u.T4)(t.price_tier, m.pK.USD) : void 0, I = (0, d.C)(t);
   return (0, r.jsxs)(o.kL8, {
     tag: "article",
     className: a()(g.productCardClickable, g.productCard, {
-      [g.disabled]: y
+      [g.disabled]: C
     }),
-    onClick: y ? void 0 : i,
+    onClick: C ? void 0 : i,
     onContextMenu: function(e) {
       (0, s.jW)(e, () => Promise.resolve(e => (0, r.jsx)(b, _(h({}, e), {
         closePopout: s.Zy,
@@ -211,7 +211,7 @@ function x(e) {
         onUnpublishProduct: l,
         onDeleteProduct: x,
         onCopyLink: v,
-        onTestDownload: C,
+        onTestDownload: y,
         onReportProduct: () => {}
       }))))
     },
@@ -251,7 +251,7 @@ function x(e) {
         }), (0, r.jsx)(o.LZC, {
           size: 16
         }), t.published ? (0, r.jsx)(p.t, {}) : (0, r.jsx)(p.b, {})]
-      }), !y && (0, r.jsx)(E, {
+      }), !C && (0, r.jsx)(E, {
         product: t,
         guildId: n,
         showEditProduct: !0,
@@ -264,7 +264,7 @@ function x(e) {
         onUnpublishProduct: l,
         onDeleteProduct: x,
         onCopyProductLink: v,
-        onTestDownload: C,
+        onTestDownload: y,
         onReportProduct: () => {}
       })]
     })]

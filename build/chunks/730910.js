@@ -107,11 +107,11 @@ function A(e) {
     }
   }, [H]);
   let z = (0, d.dQu)(a.Z.colors.BACKGROUND_SURFACE_HIGH).hex(),
-    V = (0, d.dQu)(a.Z.unsafe_rawColors.PRIMARY_160).hex(),
-    W = (0, c.wj)(U) ? z : V,
+    W = (0, d.dQu)(a.Z.unsafe_rawColors.PRIMARY_160).hex(),
+    V = (0, c.wj)(U) ? z : W,
     Y = F.to({
       range: [0, 1],
-      output: [W, (0, d.dQu)(a.Z.colors.STATUS_DANGER).hex()]
+      output: [V, (0, d.dQu)(a.Z.colors.STATUS_DANGER).hex()]
     });
   if (A) {
     if (D === C.PG.DEFAULT_CHANNELS) return (0, r.jsx)(I.j, {});

@@ -199,8 +199,8 @@ let w = (e, t) => e < (0, _.A3)(I.Eu4.NONE) ? I.Eu4.NONE : e < (0, _.A3)(I.Eu4.T
           F = Z < m.tier,
           H = w(d.length, t),
           z = b && !F && H === m.tier && R !== U.length,
-          V = z || U.length > 0,
-          W = R - y,
+          W = z || U.length > 0,
+          V = R - y,
           Y = n(872732),
           K = G - U.length,
           X = z ? Math.min(5 - (U.length + 0) % 5, K) : 0,
@@ -236,11 +236,11 @@ let w = (e, t) => e < (0, _.A3)(I.Eu4.NONE) ? I.Eu4.NONE : e < (0, _.A3)(I.Eu4.T
           onSetRef: u,
           isAnimatedTo: a,
           hasBottomMargin: x !== p.length - 1,
-          withCardBody: !V,
+          withCardBody: !W,
           headerButton: l,
           showHeaderLockStatus: en,
           guildId: t.id,
-          children: [V && (0, r.jsxs)("div", {
+          children: [W && (0, r.jsxs)("div", {
             className: T.grid,
             children: [U.map(e => (0, r.jsx)(C.Z, {
               isDisabled: F,
@@ -265,9 +265,9 @@ let w = (e, t) => e < (0, _.A3)(I.Eu4.NONE) ? I.Eu4.NONE : e < (0, _.A3)(I.Eu4.T
               variant: "text-md/normal",
               color: "header-secondary",
               children: m.tier === I.Eu4.TIER_1 ? S.intl.formatToPlainString(S.t.psMYu7, {
-                numAdditional: W
+                numAdditional: V
               }) : S.intl.formatToPlainString(S.t.bLykER, {
-                numAdditional: W,
+                numAdditional: V,
                 numTotal: R
               })
             }), (0, r.jsx)(c.ua7, {

@@ -142,8 +142,8 @@ function k(e) {
     error: H,
     updateSubscriptionsSettings: z
   } = (0, C.QV)(), {
-    imageCTA: V,
-    imageAriaLabel: W,
+    imageCTA: W,
+    imageAriaLabel: V,
     setFilename: Y
   } = (0, N.Z)(null == a ? void 0 : a.cover_image_asset), K = (0, b.Dt)(), X = (0, b.Dt)(), q = (0, b.Dt)();
 
@@ -234,7 +234,7 @@ function k(e) {
         children: P.intl.string(P.t.i2rCwc)
       }), (0, r.jsx)(_.Z, {
         image: A,
-        hint: V,
+        hint: W,
         showIcon: !0,
         showRemoveButton: !1,
         hideSize: !0,
@@ -243,14 +243,14 @@ function k(e) {
         imageClassName: w.coverImageUploaderInner,
         iconClassName: w.coverImageUploaderIcon,
         onChange: J,
-        "aria-label": W,
+        "aria-label": V,
         disabled: ee
       }), (0, r.jsx)(p.LZC, {
         size: 16
       }), (0, r.jsx)(j.Z, {
         onChange: J,
-        buttonCTA: V,
-        "aria-label": W,
+        buttonCTA: W,
+        "aria-label": V,
         disabled: ee,
         look: g.zx.Looks.OUTLINED,
         color: g.zx.Colors.PRIMARY

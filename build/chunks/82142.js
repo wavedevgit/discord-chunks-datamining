@@ -18,8 +18,8 @@ let g = {},
   E = [],
   x = new Set,
   v = {},
-  C = {},
-  y = new Set;
+  y = {},
+  C = new Set;
 
 function O(e) {
   let t = p.Z.createFromServer(e),
@@ -44,7 +44,7 @@ function O(e) {
 
 function j(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-  if (t && !y.has(e.channel_id)) return !1;
+  if (t && !C.has(e.channel_id)) return !1;
   let n = (0, m.Fp)(e) ? (0, m.Q_)((null == e ? void 0 : e.embeds) != null ? null == e ? void 0 : e.embeds[0].url : void 0) : (0, m.Q_)(e.content);
   return 0 !== n.length && (n.forEach(e => {
     _.includes(e) || E.includes(e) || (I({
@@ -72,7 +72,7 @@ function T(e) {
     channelId: t,
     messages: n
   } = e;
-  y.add(t), n.forEach(e => j(e, !0))
+  C.add(t), n.forEach(e => j(e, !0))
 }
 
 function N(e) {
@@ -88,7 +88,7 @@ class P extends(r = s.ZP.Store) {
     return null == t || t.isExpired() ? null : t
   }
   getError(e) {
-    return null != e ? C[e] : null
+    return null != e ? y[e] : null
   }
   getForGifterSKUAndPlan(e, t, n) {
     return Array.from(h.values()).filter(r => r.userId === e && r.skuId === t && (null == n || r.subscriptionPlanId === n) && !r.isExpired())
@@ -126,13 +126,13 @@ l = "GiftCodeStore", (i = "displayName") in P ? Object.defineProperty(P, i, {
 }) : P[i] = l;
 let A = new P(u.Z, {
     CONNECTION_OPEN: function() {
-      return y.clear(), !1
+      return C.clear(), !1
     },
     CHANNEL_SELECT: function(e) {
       let {
         channelId: t
       } = e;
-      return null != t && y.add(t), !1
+      return null != t && C.add(t), !1
     },
     GIFT_CODE_RESOLVE: I,
     GIFT_CODE_RESOLVE_SUCCESS: function(e) {
@@ -171,7 +171,7 @@ let A = new P(u.Z, {
       } = e;
       b = b.filter(e => e !== t);
       let r = h.get(t);
-      if (C[t] = n, null != r) switch (n.code) {
+      if (y[t] = n, null != r) switch (n.code) {
         case f.evJ.UNKNOWN_GIFT_CODE:
           h.set(t, r.set("revoked", !0));
           break;
