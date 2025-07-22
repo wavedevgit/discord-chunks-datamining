@@ -271,7 +271,7 @@ function L(e) {
           i(e), q(!H)
         },
         onKeyDown: e => {
-          "ArrowDown" === e.key ? q(!0) : "Escape" === e.key && (e.stopPropagation(), q(!1)), l(e)
+          "ArrowDown" === e.key ? q(!0) : "Escape" === e.key && d && (e.stopPropagation(), q(!1)), l(e)
         }
       }, u), {
         className: o()(b.select, a, {
