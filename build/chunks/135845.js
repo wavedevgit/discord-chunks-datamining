@@ -1,6 +1,6 @@
 /** Chunk was on 51308 **/
 n.d(t, {
-  Z: () => y
+  Z: () => C
 });
 var r = n(255367),
   i = n(73800),
@@ -22,10 +22,10 @@ var r = n(255367),
   x = n(388032),
   v = n(273254);
 
-function y(e) {
+function C(e) {
   let t, n, l, {
-      invite: y,
-      currentUserId: C,
+      invite: C,
+      currentUserId: y,
       guild: O,
       message: j,
       onTransitionToInviteChannel: I,
@@ -33,36 +33,36 @@ function y(e) {
     } = e,
     T = null == O ? void 0 : O.id,
     N = (0, o.e7)([f.Z], () => f.Z.getGuildId()),
-    P = (0, o.e7)([m.Z], () => null != y && null != y.target_user ? m.Z.getActiveStreamForUser(y.target_user.id, T) : null, [y, T]),
-    A = (0, o.e7)([m.Z], () => null != y && null != y.target_user ? m.Z.getStreamForUser(y.target_user.id, T) : null, [y, T]),
+    P = (0, o.e7)([m.Z], () => null != C && null != C.target_user ? m.Z.getActiveStreamForUser(C.target_user.id, T) : null, [C, T]),
+    A = (0, o.e7)([m.Z], () => null != C && null != C.target_user ? m.Z.getStreamForUser(C.target_user.id, T) : null, [C, T]),
     {
       analyticsLocations: w
     } = (0, u.ZP)(c.Z.INVITE_EMBED),
-    Z = null != y && y.target_type === E.Iq.STREAM && null != y.target_user && null != P,
-    R = null != y && null != A && null != y.channel && null != y.guild && A.channelId === y.channel.id && A.guildId === y.guild.id;
-  a()(null != y, "Invite cannot be null");
+    Z = null != C && C.target_type === E.Iq.STREAM && null != C.target_user && null != P,
+    R = null != C && null != A && null != C.channel && null != C.guild && A.channelId === C.channel.id && A.guildId === C.guild.id;
+  a()(null != C, "Invite cannot be null");
   let {
     target_type: k,
     target_user: L
-  } = y;
+  } = C;
   a()(k === E.Iq.STREAM && null != L, "invalid streaming invite");
-  let D = C === L.id,
-    M = y.state === b.r2o.ACCEPTING,
+  let D = y === L.id,
+    M = C.state === b.r2o.ACCEPTING,
     U = i.useCallback(() => {
       let e = "noop";
       Z ? (I(), e = "transition") : (S(), e = "accept"), (0, s.r$)({
-        invite: y,
+        invite: C,
         action: e,
         inviter_id: j.author.id,
         invite_message_id: j.id
       }, w)
-    }, [y, j, w, Z, I, S]),
+    }, [C, j, w, Z, I, S]),
     F = null != O;
   if (null == O) {
-    if (null == y.guild) return (0, r.jsx)(_.Z, {});
-    O = (0, g.Qs)(y.guild)
+    if (null == C.guild) return (0, r.jsx)(_.Z, {});
+    O = (0, g.Qs)(C.guild)
   }
-  let B = null != y.channel ? (0, p.jD)(y.channel) : null,
+  let B = null != C.channel ? (0, p.jD)(C.channel) : null,
     G = h.ZP.getName(L);
   F && !R ? l = D ? x.intl.string(x.t.oBLoZG) : x.intl.formatToPlainString(x.t["0QJmAw"], {
     name: G

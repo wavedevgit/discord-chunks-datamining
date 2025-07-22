@@ -100,14 +100,14 @@ function v(e) {
     channel: f,
     message: _,
     author: E
-  }), y = (null == (t = _.roleSubscriptionData) ? void 0 : t.total_months_subscribed) != null && (null == (l = _.roleSubscriptionData) ? void 0 : l.total_months_subscribed) <= 1;
+  }), C = (null == (t = _.roleSubscriptionData) ? void 0 : t.total_months_subscribed) != null && (null == (l = _.roleSubscriptionData) ? void 0 : l.total_months_subscribed) <= 1;
   return null == v ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.Z, {
       icon: n(570111),
       timestamp: _.timestamp,
       compact: b,
       children: v
-    }), y && (0, r.jsx)(x, {
+    }), C && (0, r.jsx)(x, {
       guildId: f.guild_id,
       user: _.author,
       username: E.nick

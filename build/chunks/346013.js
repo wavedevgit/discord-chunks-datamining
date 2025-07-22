@@ -21,8 +21,8 @@ var r = n(255367),
   E = n(406432),
   x = n(348238),
   v = n(38267),
-  y = n(884902),
-  C = n(670188),
+  C = n(884902),
+  y = n(670188),
   O = n(695346),
   j = n(271383),
   I = n(594174),
@@ -83,7 +83,7 @@ function U(e) {
   }, [z]), en = (0, c.e7)([j.ZP], () => (null == z ? void 0 : z.authorId) != null ? j.ZP.getMember(z.guildId, z.authorId) : null), er = (0, g.Z)((null == en ? void 0 : en.avatarDecoration) != null ? null == en ? void 0 : en.avatarDecoration : null == z || null == (t = z.user) ? void 0 : t.avatarDecoration), [ei, el, ea] = i.useMemo(() => {
     var e;
     return [null != (e = null == en ? void 0 : en.colorString) ? e : "inherit", null == en ? void 0 : en.colorStrings, null == en ? void 0 : en.colorRoleId]
-  }, [en]), eo = (0, y.X7)(null == en ? void 0 : en.guildId, null != (l = null == z ? void 0 : z.authorId) ? l : void 0, el), {
+  }, [en]), eo = (0, C.X7)(null == en ? void 0 : en.guildId, null != (l = null == z ? void 0 : z.authorId) ? l : void 0, el), {
     reducedMotion: es
   } = i.useContext(d.Sfi), [ec, eu] = i.useState(!1), ed = i.useCallback(() => {
     Q(!0)
@@ -169,7 +169,7 @@ function U(e) {
         })]
       }), (0, r.jsxs)("div", {
         className: k.descriptionFooter,
-        children: [null != z.authorId && null != eg && (0, r.jsx)(C.Z, {
+        children: [null != z.authorId && null != eg && (0, r.jsx)(y.Z, {
           targetElementRef: V,
           userId: z.authorId,
           guildId: z.guildId,
@@ -218,7 +218,7 @@ function U(e) {
                 color: ei,
                 roleColors: eo,
                 className: k.authorName
-              }) : (0, r.jsx)(C.Z, {
+              }) : (0, r.jsx)(y.Z, {
                 targetElementRef: H,
                 userId: z.authorId,
                 guildId: z.guildId,

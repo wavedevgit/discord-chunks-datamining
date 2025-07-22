@@ -21,7 +21,7 @@ var r, i = n(255367),
   x = n(388032),
   v = n(637214);
 
-function y(e, t, n) {
+function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,14 +30,14 @@ function y(e, t, n) {
   }) : e[t] = n, e
 }
 
-function C(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      C(e, t, n[t])
     })
   }
   return e
@@ -57,7 +57,7 @@ function O(e, t) {
 }
 class j extends(r = l.PureComponent) {
   get analyticsLocation() {
-    return O(C({}, this.props.analyticsContext.location), {
+    return O(y({}, this.props.analyticsContext.location), {
       object: E.qAy.BUTTON_CTA
     })
   }
@@ -98,7 +98,7 @@ class j extends(r = l.PureComponent) {
       }), (0, i.jsx)(u.ua7, {
         text: t,
         position: o,
-        children: e => (0, i.jsx)("div", C({
+        children: e => (0, i.jsx)("div", y({
           className: v.disabledButtonOverlay
         }, e))
       })]
@@ -134,7 +134,7 @@ class j extends(r = l.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), y(this, "handleDropdownClick", e => {
+    super(...e), C(this, "handleDropdownClick", e => {
       e.stopPropagation();
       let {
         libraryApplication: t,
@@ -146,14 +146,14 @@ class j extends(r = l.PureComponent) {
         let {
           default: e
         } = await n.e("53195").then(n.bind(n, 918306));
-        return n => (0, i.jsx)(e, O(C({}, n), {
+        return n => (0, i.jsx)(e, O(y({}, n), {
           libraryApplication: t,
           onPlay: this.handleClick
         }))
       }, {
         onClose: l
       })
-    }), y(this, "handleClick", () => {
+    }), C(this, "handleClick", () => {
       let {
         applicationId: e,
         libraryApplication: t,
@@ -176,7 +176,7 @@ function I(e) {
     applicationId: t,
     libraryApplication: n
   } = e, r = (0, p.O)(), [l, a] = (0, s.Wu)([g.Z, f.Z, h.Z], () => [g.Z.isConnected(t) || f.Z.isLaunchable(t) || null != n && h.Z.isLaunchable(n.id, n.branchId), f.Z.launchingGames.has(t)], [t, n]), o = (0, s.e7)([m.ZP], () => new Set(m.ZP.getRunningVerifiedApplicationIds()).has(t), [t]), c = (0, s.e7)([h.Z], () => null != n ? h.Z.getState(n.id, n.branchId) : null, [n]);
-  return (0, i.jsx)(j, O(C({}, e), {
+  return (0, i.jsx)(j, O(y({}, e), {
     analyticsContext: r,
     isLaunchable: l,
     isLaunching: a,
@@ -184,7 +184,7 @@ function I(e) {
     dispatchState: c
   }))
 }
-y(j, "defaultProps", {
+C(j, "defaultProps", {
   fullWidth: !1,
   size: c.zx.Sizes.LARGE,
   tooltipPosition: "top",

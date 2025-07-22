@@ -45,7 +45,7 @@ function x(e) {
     assets: u,
     currentUser: t,
     message: l
-  }), [u, t, l]), y = i.useCallback(async () => {
+  }), [u, t, l]), C = i.useCallback(async () => {
     let {
       valid: e
     } = await (0, h.v)({
@@ -117,7 +117,7 @@ function x(e) {
     color: a.Tt.PRIMARY,
     onMouseEnter: () => _(!0),
     onMouseLeave: () => _(!1),
-    onClick: y,
+    onClick: C,
     children: [(0, r.jsx)(c.Z, {
       className: b.CTAMessageSticker,
       isInteracting: g,

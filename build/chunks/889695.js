@@ -21,8 +21,8 @@ var r = n(255367),
   E = n(962086),
   x = n(160404),
   v = n(225675),
-  y = n(981631),
-  C = n(388032),
+  C = n(981631),
+  y = n(388032),
   O = n(318135);
 
 function j(e) {
@@ -71,10 +71,10 @@ function I(e) {
   }), c.e$(_.I0({
     forceRoles: k,
     context: l
-  }), c.$e(y.Plq.MANAGE_GUILD, y.Plq.MANAGE_ROLES)) || (0, p.eM)(l, n)) ? (0, r.jsx)("div", {
+  }), c.$e(C.Plq.MANAGE_GUILD, C.Plq.MANAGE_ROLES)) || (0, p.eM)(l, n)) ? (0, r.jsx)("div", {
     className: O.container,
     children: (0, r.jsx)(d.hQY, {
-      placeholder: C.intl.string(C.t.Sojqsr),
+      placeholder: y.intl.string(y.t.Sojqsr),
       value: P,
       onChange: A,
       autoFocus: !0,
@@ -99,6 +99,6 @@ function I(e) {
     })
   }) : (0, r.jsx)(d.Text, {
     variant: "text-md/medium",
-    children: C.intl.string(C.t.MNSTbW)
+    children: y.intl.string(y.t.MNSTbW)
   })
 }

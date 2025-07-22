@@ -20,8 +20,8 @@ var r, i = n(255367),
   E = n(739566),
   x = n(834129),
   v = n(981631),
-  y = n(388032),
-  C = n(573510);
+  C = n(388032),
+  y = n(573510);
 
 function O(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -188,7 +188,7 @@ function M(e) {
       case "exit":
         return "enter"
     }
-  }(d, g), y = T.includes(g), O = y && "exit" === d, j = l.useCallback(e => {
+  }(d, g), C = T.includes(g), O = C && "exit" === d, j = l.useCallback(e => {
     m(e)
   }, []), P = l.useCallback(() => {
     "exit" === d && (null == t || t())
@@ -227,7 +227,7 @@ function M(e) {
       })
     }
   }, [h, g, d, a]), l.useEffect(() => {
-    if (y && "leaf_fall" === d) {
+    if (C && "leaf_fall" === d) {
       let e = A[g].leafRotationDirection;
       x.createConfetti({
         id: "".concat(w, "-").concat((0, c.Z)()),
@@ -277,7 +277,7 @@ function M(e) {
         sprite: "TOP_LEFT" === g ? R : k
       })
     }
-  }, [y, x, g, d]), (0, i.jsxs)(i.Fragment, {
+  }, [C, x, g, d]), (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(s.Ji, {
       ref: E,
       sprites: L,
@@ -286,16 +286,16 @@ function M(e) {
       spriteHeight: 45
     }), (0, i.jsx)(p.P3F, {
       onClick: n,
-      className: o()(C.easterEggAnimationClickTarget, {
-        [C.easterEggAnimationClickTargetTopLeft]: "TOP_LEFT" === g,
-        [C.easterEggAnimationClickTargetTopRight]: "TOP_RIGHT" === g,
-        [C.easterEggAnimationClickTargetBottomLeft]: "BOTTOM_LEFT" === g,
-        [C.easterEggAnimationClickTargetBottomRight]: "BOTTOM_RIGHT" === g
+      className: o()(y.easterEggAnimationClickTarget, {
+        [y.easterEggAnimationClickTargetTopLeft]: "TOP_LEFT" === g,
+        [y.easterEggAnimationClickTargetTopRight]: "TOP_RIGHT" === g,
+        [y.easterEggAnimationClickTargetBottomLeft]: "BOTTOM_LEFT" === g,
+        [y.easterEggAnimationClickTargetBottomRight]: "BOTTOM_RIGHT" === g
       }),
       children: (0, i.jsx)(p.kci, {
         animationRef: M,
-        className: o()(C.easterEggAnimation, {
-          [C.easterEggAnimationHideLeaf]: O
+        className: o()(y.easterEggAnimation, {
+          [y.easterEggAnimationHideLeaf]: O
         }),
         nextScene: v,
         sceneSegments: I,
@@ -340,20 +340,20 @@ function U(e) {
     N = (0, E.ZP)(n),
     P = N.nick,
     A = o(N);
-  t = null == c || null == a ? u > 1 ? y.intl.format(y.t.yfC9dn, {
+  t = null == c || null == a ? u > 1 ? C.intl.format(C.t.yfC9dn, {
     username: P,
     usernameHook: A,
     numSubscriptions: u
-  }) : y.intl.format(y.t["57St//"], {
+  }) : C.intl.format(C.t["57St//"], {
     username: P,
     usernameHook: A
-  }) : u > 1 ? y.intl.format(y.t.PO9uJC, {
+  }) : u > 1 ? C.intl.format(C.t.PO9uJC, {
     username: P,
     usernameHook: A,
     numSubscriptions: u,
     guildName: a.name,
     newTierName: (0, b.nW)(c)
-  }) : y.intl.format(y.t.cUfTTE, {
+  }) : C.intl.format(C.t.cUfTTE, {
     username: P,
     usernameHook: A,
     guildName: a.name,
@@ -381,12 +381,12 @@ function U(e) {
     }, [k]);
   l.useEffect(() => O(L));
   let D = (0, i.jsx)(p.P3F, {
-    className: C.iconWrapper,
+    className: y.iconWrapper,
     innerRef: S,
     onClick: s,
     children: (0, i.jsx)(p.$Eu, {
       color: p.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
-      className: C.icon,
+      className: y.icon,
       onMouseEnter: Z
     })
   });
@@ -396,11 +396,11 @@ function U(e) {
     compact: r,
     children: [(0, i.jsx)("div", {
       onClick: s,
-      className: C.message,
+      className: y.message,
       children: t
     }), j ? (0, i.jsx)(g.ZP, {
       children: (0, i.jsx)("div", {
-        className: C.cannonWrapper,
+        className: y.cannonWrapper,
         children: (0, i.jsx)(M, {
           onAnimationComplete: R,
           onClick: k

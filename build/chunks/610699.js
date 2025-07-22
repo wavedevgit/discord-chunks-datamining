@@ -21,8 +21,8 @@ var r = n(255367),
   E = n(515344),
   x = n(835473),
   v = n(471445),
-  y = n(111028),
-  C = n(592125),
+  C = n(111028),
+  y = n(592125),
   O = n(430824),
   j = n(496675),
   I = n(594174),
@@ -88,7 +88,7 @@ function L(e) {
         className: R.channelIcon,
         size: "xs",
         color: "currentColor"
-      }) : null, (0, r.jsx)(y.Z, {
+      }) : null, (0, r.jsx)(C.Z, {
         children: (0, r.jsx)(u.Text, {
           variant: "text-xs/normal",
           color: l,
@@ -104,7 +104,7 @@ function L(e) {
     className: a()(R.channel, {
       [R.ended]: i
     }),
-    children: (0, r.jsx)(y.Z, {
+    children: (0, r.jsx)(C.Z, {
       children: (0, r.jsx)(u.Text, {
         variant: "text-xs/normal",
         color: l,
@@ -138,7 +138,7 @@ function D(e) {
       })
     }, [null == (t = a.inviter) ? void 0 : t.id, b.id]),
     v = (0, c.e7)([O.Z], () => null != a.guild ? O.Z.getGuild(a.guild.id) : null, [a]),
-    y = (0, x.Z)([b.id])[0],
+    C = (0, x.Z)([b.id])[0],
     T = (0, c.e7)([p.ZP], () => {
       var e;
       return (null == a ? void 0 : a.channel) != null && (null == (e = p.ZP.getSelfEmbeddedActivityForChannel(a.channel.id)) ? void 0 : e.applicationId) === b.id
@@ -152,7 +152,7 @@ function D(e) {
         return b.id === t
       })
     }),
-    k = C.Z.getChannel(null == (n = a.channel) ? void 0 : n.id),
+    k = y.Z.getChannel(null == (n = a.channel) ? void 0 : n.id),
     L = (0, c.e7)([j.Z], () => null != k && j.Z.can(A.Plq.USE_EMBEDDED_ACTIVITIES, k), [k]),
     {
       analyticsLocations: D
@@ -178,10 +178,10 @@ function D(e) {
     v = (0, N.Qs)(a.guild)
   }
   let V = H && !L || H && T;
-  return (H && T && (l = Z.intl.string(Z.t.wJNK8P)), L || (l = Z.intl.string(Z.t.hHGrW1)), null == a.code || "" === a.code || null == y) ? null : (0, r.jsx)(f.Gt, {
+  return (H && T && (l = Z.intl.string(Z.t.wJNK8P)), L || (l = Z.intl.string(Z.t.hHGrW1)), null == a.code || "" === a.code || null == C) ? null : (0, r.jsx)(f.Gt, {
     value: D,
     children: (0, r.jsx)(M, {
-      app: y,
+      app: C,
       activityUsers: F,
       isMember: H,
       channel: k,
@@ -213,14 +213,14 @@ function M(e) {
     isDisabled: f,
     tooltip: x,
     handleAcceptInvite: v,
-    onView: y
+    onView: C
   } = e, {
-    bot: C,
+    bot: y,
     icon: O
   } = l, j = T.ZP.getApplicationIconURL({
     id: l.id,
     icon: O,
-    bot: C
+    bot: y
   }), I = (0, E.G)(l), S = (0, b.E)(l), N = a.length, P = i.useMemo(() => [{
     label: o ? p ? Z.intl.string(Z.t.VJlc0d) : Z.intl.string(Z.t.RscU7O) : Z.intl.string(Z.t["2BP08P"]),
     trackingArea: o ? _.j_.PLAY : _.j_.JOIN_SERVER,
@@ -273,7 +273,7 @@ function M(e) {
     trackingConfig: {
       id: l.id,
       linkType: _.Un.ACTIVITY_INVITE,
-      onView: y
+      onView: C
     }
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

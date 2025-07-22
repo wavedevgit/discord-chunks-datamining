@@ -27,14 +27,14 @@ let v = e => {
     compact: l,
     channel: o,
     messageId: v,
-    reportedTimestamp: y
-  } = e, C = f.default.getUser(t), O = i.useMemo(() => l ? (0, p.Z)((0, g.vc)(s()(), "LT")) : null, [l]), j = (0, m.l)({
-    user: C,
+    reportedTimestamp: C
+  } = e, y = f.default.getUser(t), O = i.useMemo(() => l ? (0, p.Z)((0, g.vc)(s()(), "LT")) : null, [l]), j = (0, m.l)({
+    user: y,
     channelId: o.id,
     guildId: n,
     messageId: v
-  })((0, u.JZ)(C, o)), I = null != C ? C.getAvatarURL(n, (0, c.pxk)(c.EFr.SIZE_16)) : x, S = null != C ? _.intl.format(h.default["+zqXZm"], {
-    username: C.username,
+  })((0, u.JZ)(y, o)), I = null != y ? y.getAvatarURL(n, (0, c.pxk)(c.EFr.SIZE_16)) : x, S = null != y ? _.intl.format(h.default["+zqXZm"], {
+    username: y.username,
     onUserClick: j
   }) : _.intl.string(h.default.xpRjfX);
   return (0, r.jsxs)("div", {
@@ -56,7 +56,7 @@ let v = e => {
         className: b.timestampSeparator,
         children: "•"
       }), (0, r.jsx)(d.Z, {
-        timestamp: y,
+        timestamp: C,
         className: b.timestamp
       })]
     })]

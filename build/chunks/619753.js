@@ -21,8 +21,8 @@ var r = n(255367),
   E = n(804063),
   x = n(703656),
   v = n(359110),
-  y = n(695346),
-  C = n(131704),
+  C = n(695346),
+  y = n(131704),
   O = n(592125),
   j = n(430824),
   I = n(496675),
@@ -82,8 +82,8 @@ let U = i.memo(function(e) {
     onClick: b
   } = e, {
     offset: v,
-    totalResults: y,
-    isSearching: C,
+    totalResults: C,
+    isSearching: y,
     showBlockedResults: j
   } = n, I = i.useCallback((e, t) => {
     if (null == b || b(e, t), (0, E.Z)(e)) {
@@ -138,7 +138,7 @@ let U = i.memo(function(e) {
       highlighter: z,
       startIndex: i,
       resultRefs: P,
-      totalResults: y,
+      totalResults: C,
       scrollTo: m,
       searchId: l,
       renderEmbeds: a,
@@ -159,7 +159,7 @@ let U = i.memo(function(e) {
     children: [(0, r.jsx)("div", M(D({
       ref: K
     }, G.getContainerProps(), Y), {
-      "aria-busy": C,
+      "aria-busy": y,
       children: W
     })), g > 0 || h > 0 ? (0, r.jsxs)(s.P3F, {
       tag: "div",
@@ -183,10 +183,10 @@ let U = i.memo(function(e) {
           count: h
         })
       })]
-    }) : null, !C && !V && (0, r.jsx)(w.Z, {
+    }) : null, !y && !V && (0, r.jsx)(w.Z, {
       onPageChange: _,
       offset: v,
-      totalCount: y,
+      totalCount: C,
       pageSize: R.vpv
     })]
   })
@@ -212,7 +212,7 @@ function F(e) {
       children: t.name
     })]
   });
-  return (0, C.Em)(t.type) ? (0, r.jsx)(s.P3F, {
+  return (0, y.Em)(t.type) ? (0, r.jsx)(s.P3F, {
     className: a()(L.parentChannelName, L.parentChannelNameClickable),
     onClick: e => {
       e.stopPropagation(), n(t.id)
@@ -235,12 +235,12 @@ function B(e) {
     totalResults: p,
     scrollTo: E,
     searchId: x,
-    renderEmbeds: C,
+    renderEmbeds: y,
     offset: T,
     jumpToMessage: A,
     listNavigator: w,
     favoriteSearch: k
-  } = e, U = y.cC.useSetting(), B = (0, h.p)(), G = i.useCallback(e => {
+  } = e, U = C.cC.useSetting(), B = (0, h.p)(), G = i.useCallback(e => {
     if (e === N.Z.getChannelId()) return;
     let t = O.Z.getChannel(e);
     null != t && (I.Z.can(R.Plq.VIEW_CHANNEL, t) || t.isPrivate()) && (0, v.Kh)(t.id)
@@ -294,7 +294,7 @@ function B(e) {
           totalResults: p,
           scrollTo: E,
           searchId: x,
-          renderEmbeds: C,
+          renderEmbeds: y,
           searchOffset: T,
           pageResultsLength: o.length,
           result: e,

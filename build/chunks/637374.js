@@ -21,8 +21,8 @@ var r = n(255367),
   E = n(479446),
   x = n(930114),
   v = n(981632),
-  y = n(108989),
-  C = n(703656),
+  C = n(108989),
+  y = n(703656),
   O = n(314897),
   j = n(82142),
   I = n(283595),
@@ -328,7 +328,7 @@ class W extends i.Component {
       let {
         libraryApplication: t
       } = this.props;
-      e.preventDefault(), null != t && t.isHidden() ? (0, C.uL)(D.Z5c.APPLICATION_LIBRARY_SETTINGS) : (0, C.uL)(D.Z5c.APPLICATION_LIBRARY, {
+      e.preventDefault(), null != t && t.isHidden() ? (0, y.uL)(D.Z5c.APPLICATION_LIBRARY_SETTINGS) : (0, y.uL)(D.Z5c.APPLICATION_LIBRARY, {
         state: {
           applicationId: null != t ? t.id : void 0
         }
@@ -385,7 +385,7 @@ class W extends i.Component {
         });
       return (0, r.jsxs)("div", {
         className: l,
-        children: [!t && M.eZ.includes(e.giftStyle) && (0, r.jsx)(y.Z, {
+        children: [!t && M.eZ.includes(e.giftStyle) && (0, r.jsx)(C.Z, {
           className: F.snow,
           wind: 5
         }), i && (0, r.jsx)(P.Z, {

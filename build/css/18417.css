@@ -1,9 +1,11 @@
 /**
   Module ID: 18417
-  Original File Name: e061f8a53b596ab5
+  Original File Name: fdf70ae74722f306
 **/
 .container_ee8e87 {
-    background-color: var(--background-secondary-alt);
+    align-items: stretch;
+    background-color: var(--background-gradient-chat,var(--background-base-lowest));
+    border: 1px solid var(--border-normal);
     border-radius: var(--radius-md);
     display: flex;
     margin-top: 24px
@@ -42,6 +44,7 @@
 
 .post_ee8e87 {
     background-color: var(--background-base-low);
+    border: 1px solid var(--border-subtle);
     border-radius: var(--radius-md);
     display: flex;
     gap: var(--custom-demo-forum-channel-gap-size);
@@ -77,7 +80,7 @@
 }
 
 .previewContainer_ee8e87 {
-    background-color: var(--background-surface-high);
+    border-left: 1px solid var(--border-normal);
     border-radius: 0 12px 12px 0;
     display: flex;
     flex-shrink: 0;
@@ -87,9 +90,11 @@
 
 .preview_ee8e87 {
     background-color: var(--background-base-low);
+    border: 1px solid var(--border-subtle);
     border-radius: var(--radius-md);
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    justify-content: flex-end
 }
 
 .forumPostIcon_ee8e87 {
@@ -176,68 +181,9 @@
     gap: 4px
 }
 
-.theme-light .container_ee8e87 {
-    background-color: var(--brand-130)
-}
-
-.theme-light .previewContainer_ee8e87 {
-    background-color: var(--brand-200)
-}
-
-.header__0b5a5 {
-    display: flex;
-    justify-content: space-between;
-    padding: 24px 24px 8px
-}
-
-.content__0b5a5 {
-    padding: 0 16px 24px 8px
-}
-
-.tabBar__0b5a5 {
-    border-bottom: 1px solid var(--border-subtle);
-    margin-top: 24px
-}
-
 .tags__0b5a5 {
     align-items: stretch;
-    display: flex;
-    gap: 32px;
-    height: 36px
+    gap: 32px
 }
 
-.unselected__0b5a5 {
-    background-color: var(--background-base-low);
-    border: 1px solid var(--border-subtle);
-    box-sizing: border-box
-}
-
-.demoImage__0b5a5 {
-    border-radius: var(--radius-lg);
-    margin-top: 24px;
-    max-width: 100%
-}
-
-.button__0b5a5 {
-    color: var(--interactive-normal)
-}
-
-.button__0b5a5:hover {
-    color: var(--interactive-hover)
-}
-
-.button__0b5a5:active {
-    color: var(--interactive-active)
-}
-
-.footer__0b5a5 {
-    justify-content: space-between
-}
-
-.buttons__0b5a5 {
-    align-items: center;
-    display: flex;
-    gap: 8px
-}
-
-/*# sourceMappingURL=e061f8a53b596ab5.css.map*/
+/*# sourceMappingURL=fdf70ae74722f306.css.map*/
