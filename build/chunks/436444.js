@@ -14,8 +14,8 @@ var i = n(120356),
   c = n(975298),
   u = n(471885),
   d = n(267642),
-  f = n(879892),
-  _ = n(198466),
+  _ = n(879892),
+  f = n(198466),
   p = n(981631),
   h = n(474936),
   m = n(388032),
@@ -123,7 +123,7 @@ let T = {
     });
 
     function B() {
-      L && (j || (0, f.u)({
+      L && (j || (0, _.u)({
         analyticsLocations: R,
         analyticsLocation: {
           page: p.ZY5.PREMIUM_GUILD_USER_MODAL,
@@ -170,7 +170,7 @@ let T = {
       }, e, Z), {
         children: [!x && (0, r.jsx)("div", {
           className: E.boostedTierIconBackground
-        }), x && A === p.Eu4.TIER_3 ? (0, r.jsx)(_.m, {
+        }), x && A === p.Eu4.TIER_3 ? (0, r.jsx)(f.m, {
           confettiTriggerRef: n,
           setConfettiCount: O,
           setShouldFireConfetti: S,

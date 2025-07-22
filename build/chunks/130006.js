@@ -9,8 +9,8 @@ var r = n(98405),
   c = n(961050),
   u = n(769827),
   d = n(25124),
-  f = n(436207),
-  _ = n(556585),
+  _ = n(436207),
+  f = n(556585),
   p = n(751736),
   h = n(933121),
   m = n(112493),
@@ -48,7 +48,7 @@ e.exports = function(e, t, n, o, p, m, A) {
     x = L[O] || L["@@iterator"] || p && L[p],
     M = !y && x || P(p),
     k = "Array" === t && L.entries || x;
-  if (k && (N = c(k.call(new e))) !== Object.prototype && N.next && (!a && c(N) !== b && (u ? u(N, b) : s(N[O]) || _(N, O, S)), d(N, w, !0, !0), a && (h[w] = S)), g && p === I && x && x.name !== I && (!a && E ? f(L, "name", I) : (D = !0, M = function() {
+  if (k && (N = c(k.call(new e))) !== Object.prototype && N.next && (!a && c(N) !== b && (u ? u(N, b) : s(N[O]) || f(N, O, S)), d(N, w, !0, !0), a && (h[w] = S)), g && p === I && x && x.name !== I && (!a && E ? _(L, "name", I) : (D = !0, M = function() {
       return i(x, this)
     })), p)
     if (C = {
@@ -56,13 +56,13 @@ e.exports = function(e, t, n, o, p, m, A) {
         keys: m ? M : P(v),
         entries: P(T)
       }, A)
-      for (R in C) !y && !D && R in L || _(L, R, C[R]);
+      for (R in C) !y && !D && R in L || f(L, R, C[R]);
     else r({
       target: t,
       proto: !0,
       forced: y || D
     }, C);
-  return (!a || A) && L[O] !== M && _(L, O, M, {
+  return (!a || A) && L[O] !== M && f(L, O, M, {
     name: p
   }), h[t] = M, C
 }

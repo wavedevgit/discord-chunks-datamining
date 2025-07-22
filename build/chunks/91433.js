@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(906732),
   u = n(835473),
   d = n(925329),
-  f = n(743056),
-  _ = n(5192),
+  _ = n(743056),
+  f = n(5192),
   p = n(785717),
   h = n(652853),
   m = n(228168),
@@ -30,14 +30,14 @@ function b(e) {
     className: O
   } = e, {
     themeType: v
-  } = (0, h.z)(), I = v === m.lY.MODAL_V2, T = _.ZP.getName(n, a, t), {
+  } = (0, h.z)(), I = v === m.lY.MODAL_V2, T = f.ZP.getName(n, a, t), {
     trackUserProfileAction: S
   } = (0, p.KZ)(), {
     newestAnalyticsLocation: A
   } = (0, c.ZP)(), {
     acceptFriendRequest: N,
     cancelFriendRequest: C
-  } = (0, f.u)({
+  } = (0, _.u)({
     userId: t.id,
     applicationId: b,
     isGameRelationship: y,

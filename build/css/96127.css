@@ -1,6 +1,6 @@
 /**
   Module ID: 96127
-  Original File Name: 338dfdffdfc4437c
+  Original File Name: 08946308983e8a97
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -1553,17 +1553,7 @@
     order: 1
 }
 
-@container premium-marketing-home-container (max-width: 820px) {
-    .applicationHomeCard__6df1a {
-        width: 350px
-    }
-}
-
-@container premium-marketing-home-container (max-width: 620px) {
-    .premiumCardsContainer__6df1a {
-        width: 100%
-    }
-
+@container premium-marketing-home-container (max-width: 720px) {
     .premiumCards__6df1a {
         flex-direction: column
     }
@@ -1574,10 +1564,6 @@
 
     .tier2CardOrder__6df1a {
         order: 0
-    }
-
-    .applicationHomeCard__6df1a {
-        width: 100%
     }
 }
 
@@ -8484,4 +8470,4 @@ div:has(>.positionLayer__4f4b6) {
     width: 96px
 }
 
-/*# sourceMappingURL=338dfdffdfc4437c.css.map*/
+/*# sourceMappingURL=08946308983e8a97.css.map*/

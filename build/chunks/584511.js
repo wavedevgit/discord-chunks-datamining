@@ -22,7 +22,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,9 +34,9 @@ function f(e) {
   }
   return e
 }
-var _ = function(e) {
+var f = function(e) {
   return e[e.OUTGOING = 0] = "OUTGOING", e[e.INCOMING = 1] = "INCOMING", e
-}(_ || {});
+}(f || {});
 
 function p(e) {
   let {
@@ -44,7 +44,7 @@ function p(e) {
     size: n,
     speaking: i = !1,
     muted: d = !1,
-    deafen: _ = !1,
+    deafen: f = !1,
     src: p,
     disabled: h = !1,
     ringing: m,
@@ -56,8 +56,8 @@ function p(e) {
     onContextMenu: v,
     className: I
   } = e, T = (0, o.e7)([c.Z], () => null != t && c.Z.isLocalMute(t)), S = () => {
-    let e = T ? s.v0G : _ ? s.wE8 : s.nRN;
-    return d || _ || T ? (0, r.jsx)("div", {
+    let e = T ? s.v0G : f ? s.wE8 : s.nRN;
+    return d || f || T ? (0, r.jsx)("div", {
       className: u.statusContainer,
       children: (0, r.jsx)(e, {
         className: u.status,
@@ -70,7 +70,7 @@ function p(e) {
     })
   }, "border"), N = () => d && i ? (0, r.jsxs)(r.Fragment, {
     children: [A(), S()]
-  }) : d || _ || T ? (0, r.jsx)(r.Fragment, {
+  }) : d || f || T ? (0, r.jsx)(r.Fragment, {
     children: S()
   }) : (0, r.jsx)(r.Fragment, {
     children: A()
@@ -85,7 +85,7 @@ function p(e) {
       });
     if (h) return t;
     let i = l.QS.AVATAR_DEFAULT;
-    return null != b ? i = n === s.EFr.SIZE_32 ? l.QS.AVATAR_CALL_ICON_32 : l.QS.AVATAR_CALL_ICON : (d || _ || T) && (i = l.QS.AVATAR_VOICE_CALL_80), (0, r.jsxs)("div", {
+    return null != b ? i = n === s.EFr.SIZE_32 ? l.QS.AVATAR_CALL_ICON_32 : l.QS.AVATAR_CALL_ICON : (d || f || T) && (i = l.QS.AVATAR_VOICE_CALL_80), (0, r.jsxs)("div", {
       className: u.callAvatarMaskContainer,
       children: [(0, r.jsxs)(l.ZP, {
         className: u.callAvatarMask,
@@ -99,7 +99,7 @@ function p(e) {
     [u.clickable]: null != O,
     [u.ringingOutgoing]: m && 0 === g,
     [u.ringingIncoming]: m && 1 === g
-  }, I), P = (0, s.pxk)(n), w = f({
+  }, I), P = (0, s.pxk)(n), w = _({
     height: P,
     width: P
   }, y);
@@ -110,5 +110,5 @@ function p(e) {
     children: C()
   })
 }
-p.RingingType = _;
+p.RingingType = f;
 let h = p

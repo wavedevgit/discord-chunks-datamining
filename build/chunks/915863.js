@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => _
 });
 var r = n(255367);
 n(73800);
@@ -50,7 +50,7 @@ function d(e, t) {
   return i
 }
 
-function f(e) {
+function _(e) {
   let {
     className: t,
     size: n

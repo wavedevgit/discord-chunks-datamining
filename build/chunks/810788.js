@@ -27,7 +27,7 @@ function d(e) {
   c.add(t)
 }
 
-function f(e) {
+function _(e) {
   let {
     location: t,
     enabled: n
@@ -35,7 +35,7 @@ function f(e) {
   u[t] = n
 }
 
-function _(e) {
+function f(e) {
   let {
     location: t
   } = e;
@@ -78,6 +78,6 @@ l(h, "displayName", "HotspotStore"), l(h, "persistKey", "hotspots"), l(h, "migra
 let m = new h(a.Z, {
   OVERLAY_INITIALIZE: p,
   HOTSPOT_HIDE: d,
-  HOTSPOT_OVERRIDE_SET: f,
-  HOTSPOT_OVERRIDE_CLEAR: _
+  HOTSPOT_OVERRIDE_SET: _,
+  HOTSPOT_OVERRIDE_CLEAR: f
 })

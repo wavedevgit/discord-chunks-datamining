@@ -12,7 +12,7 @@ var a = n(213919),
   u = n(726745),
   d = n(981631);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -20,7 +20,7 @@ function f(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let _ = !1;
+let f = !1;
 class p extends s.Z {
   _initialize() {
     o.Z.subscribe("CONNECTION_OPEN", () => this.handleConnectionOpen()), this.handleConnectionOpen()
@@ -34,10 +34,10 @@ class p extends s.Z {
     onSwitchError: n,
     onTokenSet: o
   }) {
-    super(), f(this, "onSwitchStart", void 0), f(this, "onSwitchSuccess", void 0), f(this, "onSwitchError", void 0), f(this, "onTokenSet", void 0), f(this, "actions", {
+    super(), _(this, "onSwitchStart", void 0), _(this, "onSwitchSuccess", void 0), _(this, "onSwitchError", void 0), _(this, "onTokenSet", void 0), _(this, "actions", {
       LOGOUT: e => this.handleLogout(e)
-    }), f(this, "handleConnectionOpen", () => {
-      var e, t, n, o, s, f;
+    }), _(this, "handleConnectionOpen", () => {
+      var e, t, n, o, s, _;
       let p = l.default.getCurrentUser();
       if (null == p) return;
       if (null != i) {
@@ -51,18 +51,18 @@ class p extends s.Z {
           c.default.track(d.rMx.MULTI_ACCOUNT_SWITCH_SUCCESS, {
             from_user_id: i,
             linked_user_ids: e
-          }), null == (n = (o = this).onSwitchSuccess) || n.call(o, p, _)
-        } else c.default.track(d.rMx.MULTI_ACCOUNT_SWITCH_FAILURE), null == (s = (f = this).onSwitchError) || s.call(f, p);
+          }), null == (n = (o = this).onSwitchSuccess) || n.call(o, p, f)
+        } else c.default.track(d.rMx.MULTI_ACCOUNT_SWITCH_FAILURE), null == (s = (_ = this).onSwitchError) || s.call(_, p);
         i = null
       }
       r = p.id;
       let h = a.getToken();
       null != h && "" !== h && a.setToken(h, p.id), null == (e = (t = this).onTokenSet) || e.call(t, p)
-    }), f(this, "handleLogout", e => {
+    }), _(this, "handleLogout", e => {
       if (e.isSwitchingAccount) {
         var t, n;
-        i = r, null == (t = (n = this).onSwitchStart) || t.call(n), _ = !!e.goHomeAfterSwitching
-      } else _ = !1, a.removeToken(r);
+        i = r, null == (t = (n = this).onSwitchStart) || t.call(n), f = !!e.goHomeAfterSwitching
+      } else f = !1, a.removeToken(r);
       r = null
     }), this.onSwitchStart = e, this.onSwitchSuccess = t, this.onSwitchError = n, this.onTokenSet = o
   }

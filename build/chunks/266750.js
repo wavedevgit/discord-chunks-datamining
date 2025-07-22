@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 }), n(467055);
 var r = n(392711),
   i = n.n(r),
@@ -20,7 +20,7 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 let d = new o.Z("NonGuildVersions");
-class f {
+class _ {
   async getCommittedVersions() {
     try {
       let e = c.Z.nonGuildVersions();
@@ -55,4 +55,4 @@ class f {
     }, 10 * l.Z.Millis.SECOND))
   }
 }
-let _ = new f
+let f = new _

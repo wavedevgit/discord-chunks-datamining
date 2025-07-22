@@ -25,7 +25,7 @@ function s(e) {
   r.useLayoutEffect(() => {
     -1 !== c.current && clearTimeout(c.current)
   }, []);
-  let [, u] = r.useState(a), d = r.useRef(null), f = r.useMemo(() => {
+  let [, u] = r.useState(a), d = r.useRef(null), _ = r.useMemo(() => {
     var e;
     let r = new Set(null == (e = d.current) ? void 0 : e.keys()),
       a = new Map(d.current);
@@ -80,11 +80,11 @@ function s(e) {
     }
     return a
   }, [t, i, n, l]);
-  r.useInsertionEffect(() => (d.current = f, () => {
+  r.useInsertionEffect(() => (d.current = _, () => {
     var e;
     return null == (e = d.current) ? void 0 : e.clear()
-  }), [f]);
-  let _ = [];
-  for (let [, e] of f) _.push(e.children);
-  return _.length > 0 ? s(_, t) : null
+  }), [_]);
+  let f = [];
+  for (let [, e] of _) f.push(e.children);
+  return f.length > 0 ? s(f, t) : null
 }

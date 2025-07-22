@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  i: () => _
+  i: () => f
 });
 var r = n(255367);
 n(73800);
@@ -50,7 +50,7 @@ function u(e, t) {
 
 function d(e, t) {
   if (null == e) return {};
-  var n, r, i = f(e, t);
+  var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -58,19 +58,19 @@ function d(e, t) {
   return i
 }
 
-function f(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let _ = e => {
+let f = e => {
   var t, n, {
       size: s = "md",
       width: c,
-      height: f,
-      secondaryColor: _ = "transparent",
+      height: _,
+      secondaryColor: f = "transparent",
       secondaryColorClass: p = "",
       color: h = i.Z.colors.INTERACTIVE_NORMAL,
       colorClass: m = ""
@@ -78,7 +78,7 @@ let _ = e => {
     g = d(e, ["size", "width", "height", "secondaryColor", "secondaryColorClass", "color", "colorClass"]);
   let E = (0, o.m)(s),
     b = null != (t = null == E ? void 0 : E.width) ? t : c,
-    y = null != (n = null == E ? void 0 : E.height) ? n : f;
+    y = null != (n = null == E ? void 0 : E.height) ? n : _;
   return (0, r.jsxs)("svg", u(l({}, (0, a.Z)(g)), {
     xmlns: "http://www.w3.org/2000/svg",
     width: b,
@@ -89,7 +89,7 @@ let _ = e => {
       cx: "12",
       cy: "12",
       r: "10",
-      fill: "string" == typeof _ ? _ : _.css,
+      fill: "string" == typeof f ? f : f.css,
       className: p
     }), (0, r.jsx)("path", {
       fill: "string" == typeof h ? h : h.css,

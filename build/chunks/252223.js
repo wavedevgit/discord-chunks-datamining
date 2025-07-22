@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(442837),
   u = n(481060),
   d = n(833664),
-  f = n(545957),
-  _ = n(933557),
+  _ = n(545957),
+  f = n(933557),
   p = n(359588),
   h = n(74340),
   m = n(482798),
@@ -94,7 +94,7 @@ function k(e) {
     enableTopNavButton: o
   } = (0, m.Cq)({
     location: "StackedActivityStatus"
-  }), s = (0, _.ZP)(r), l = a || o;
+  }), s = (0, f.ZP)(r), l = a || o;
   return null != t && i.push(x(t)), n.forEach(e => {
     let {
       tooltip: t
@@ -136,7 +136,7 @@ function G(e) {
     activities: n,
     applicationStream: a,
     voiceChannel: l,
-    textClassName: _,
+    textClassName: f,
     iconClassName: m,
     textSize: b = "xs",
     animateEmoji: y = !0,
@@ -144,7 +144,7 @@ function G(e) {
     hideEmoji: P = !1,
     hideTooltip: D = !1
   } = e;
-  (0, f.Z)(null == t ? void 0 : t.id);
+  (0, _.Z)(null == t ? void 0 : t.id);
   let x = (null == a ? void 0 : a.discoverable) !== !1 ? a : null,
     M = (0, g.Cf)(x),
     G = i.useMemo(() => {
@@ -194,7 +194,7 @@ function G(e) {
         stream: x,
         game: V,
         textVariant: "text-".concat(b, "/medium"),
-        textClassName: _,
+        textClassName: f,
         iconClassName: m,
         hideText: X,
         hideIcon: F,
@@ -204,7 +204,7 @@ function G(e) {
       return null != n ? (0, r.jsx)(T.Z, {
         activity: n,
         textVariant: "text-".concat(b, "/medium"),
-        textClassName: _,
+        textClassName: f,
         iconClassName: m,
         hideText: X,
         hideIcon: F,
@@ -212,7 +212,7 @@ function G(e) {
       }) : null != l ? (0, r.jsx)(S.Z, {
         channel: l,
         textVariant: "text-".concat(b, "/medium"),
-        textClassName: _,
+        textClassName: f,
         iconClassName: m,
         hideText: X,
         hideTooltip: t
@@ -244,7 +244,7 @@ function G(e) {
     },
     ee = () => (0, r.jsx)(j, {
       textVariant: "text-".concat(b, "/medium"),
-      className: _,
+      className: f,
       hasCustomStatusText: Y,
       totalActivityCount: z
     }),
@@ -272,7 +272,7 @@ function G(e) {
       animateEmoji: y,
       hideEmoji: P,
       hideTooltip: D,
-      textClassName: _,
+      textClassName: f,
       iconClassName: m,
       tooltipClassName: en
     });
@@ -280,7 +280,7 @@ function G(e) {
     className: en,
     children: [et(), null != G && z > 0 && (0, r.jsx)(U, {
       textVariant: "text-".concat(b, "/normal"),
-      className: _
+      className: f
     }), er(), C && (0, r.jsx)(O.Z, {})]
   })
 }

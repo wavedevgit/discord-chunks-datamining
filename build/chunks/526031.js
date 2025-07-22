@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(906732),
   u = n(765585),
   d = n(429467),
-  f = n(921944),
-  _ = n(388032),
+  _ = n(921944),
+  f = n(388032),
   p = n(385255);
 
 function h(e, t, n) {
@@ -62,7 +62,7 @@ function b(e) {
   } = e, {
     analyticsLocations: g
   } = (0, c.ZP)(l.Z.CUSTOM_STATUS_TAGS_COACHMARK), b = () => {
-    null == h || h(), t(f.L.TAKE_ACTION), (0, s.ZDy)(async () => {
+    null == h || h(), t(_.L.TAKE_ACTION), (0, s.ZDy)(async () => {
       let {
         default: e
       } = await n.e("31649").then(n.bind(n, 475613)), t = (0, d.Z)();
@@ -80,20 +80,20 @@ function b(e) {
     tryItText: (0, r.jsx)(s.Text, {
       variant: "text-xs/semibold",
       color: "always-white",
-      children: _.intl.string(_.t.RzWDqa)
+      children: f.intl.string(f.t.RzWDqa)
     }),
     tryItButtonColor: o.Tt.BRAND,
     onTryFeature: b,
     header: (0, r.jsx)(s.X6q, {
       variant: "heading-sm/bold",
       color: "text-primary",
-      children: _.intl.string(_.t.jrzHRk)
+      children: f.intl.string(f.t.jrzHRk)
     }),
     body: (0, r.jsx)(s.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
       className: p.body,
-      children: _.intl.string(_.t.hA60Ul)
+      children: f.intl.string(f.t.hA60Ul)
     }),
     position: "top",
     align: "center",
@@ -104,7 +104,7 @@ function b(e) {
       size: "xs"
     }),
     dismissIconClassName: p.dismissIcon,
-    onDismissIconClick: () => t(f.L.USER_DISMISS)
+    onDismissIconClick: () => t(_.L.USER_DISMISS)
   })
 }
 
@@ -118,7 +118,7 @@ function y(e) {
   } = e;
   return (0, r.jsx)(s.yRy, {
     targetElementRef: i,
-    onRequestClose: () => n(f.L.INDIRECT_ACTION),
+    onRequestClose: () => n(_.L.INDIRECT_ACTION),
     position: "top",
     align: "center",
     shouldShow: !0,

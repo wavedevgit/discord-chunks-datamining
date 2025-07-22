@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(481060),
   u = n(806966),
   d = n(28546),
-  f = n(149203),
-  _ = n(981631),
+  _ = n(149203),
+  f = n(981631),
   p = n(388032),
   h = n(539490);
 let m = i.forwardRef(function(e, t) {
@@ -28,15 +28,15 @@ let m = i.forwardRef(function(e, t) {
       defaultSearchPlaceholder: O
     } = e, v = i.useRef(null), I = (0, d.Iu)(e => e.searchQuery), [T, S] = u.kJ.useStore(e => [e.inspectedExpressionPosition, e.searchPlaceholder], s.X), A = i.useCallback(e => {
       var t;
-      u.kJ.setActiveCategoryIndex("" === e ? 0 : f.c), u.kJ.setInspectedExpressionPosition(0, 0), u.kJ.setSearchPlaceholder(null), (0, d.ql)(e), null == (t = n.current) || t.scrollTo(0)
+      u.kJ.setActiveCategoryIndex("" === e ? 0 : _.c), u.kJ.setInspectedExpressionPosition(0, 0), u.kJ.setSearchPlaceholder(null), (0, d.ql)(e), null == (t = n.current) || t.scrollTo(0)
     }, [n]), N = i.useCallback(() => {
       (0, d.ql)("")
     }, []), C = e => {
       switch (e.keyCode) {
-        case _.yXg.ARROW_LEFT:
-        case _.yXg.ARROW_RIGHT:
-        case _.yXg.ARROW_UP:
-        case _.yXg.ARROW_DOWN:
+        case f.yXg.ARROW_LEFT:
+        case f.yXg.ARROW_RIGHT:
+        case f.yXg.ARROW_UP:
+        case f.yXg.ARROW_DOWN:
           document.activeElement !== e.target && e.preventDefault()
       }
       g(e)

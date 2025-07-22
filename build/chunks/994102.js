@@ -19,21 +19,21 @@ function d(e) {
     onAction: n,
     onClose: d
   } = e, {
-    themeType: f
-  } = (0, s.z)(), _ = (0, o.Z)({
+    themeType: _
+  } = (0, s.z)(), f = (0, o.Z)({
     application: t,
     location: "User Profile Activity"
   });
-  return null == _ ? null : (0, r.jsx)(l.tG, {
+  return null == f ? null : (0, r.jsx)(l.tG, {
     icon: a.v3n,
     text: u.intl.string(u.t["jaYS/v"]),
-    size: f === c.lY.MODAL_V2 ? i.Ph.TINY : void 0,
-    fullWidth: f !== c.lY.MODAL_V2,
+    size: _ === c.lY.MODAL_V2 ? i.Ph.TINY : void 0,
+    fullWidth: _ !== c.lY.MODAL_V2,
     themeColor: "secondary",
     onClick: e => {
       e.stopPropagation(), null == n || n({
         action: "PRESS_CLOUD_PLAY_BUTTON"
-      }), _(), null == d || d()
+      }), f(), null == d || d()
     }
   })
 }

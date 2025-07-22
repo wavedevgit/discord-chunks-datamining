@@ -12,9 +12,9 @@ var r, i = n(31775),
   c = n(786761),
   u = n(592125),
   d = n(375954),
-  f = n(981631);
+  _ = n(981631);
 
-function _(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -46,10 +46,10 @@ class g {
     return this._cachedMessageIds
   }
   constructor() {
-    _(this, "_cachedMessages", new(a())({
+    f(this, "_cachedMessages", new(a())({
       max: 100,
       dispose: (e, t) => this.handleCacheDisposed(e, t)
-    })), _(this, "_cachedMessageIds", new Set)
+    })), f(this, "_cachedMessageIds", new Set)
   }
 }
 class E {
@@ -89,14 +89,14 @@ class E {
     this._channelCaches.clear()
   }
   constructor() {
-    _(this, "_channelCaches", new Map)
+    f(this, "_channelCaches", new Map)
   }
 }
 let b = new E;
 
 function y(e) {
   let t = !1;
-  if (b.updateExistingMessageIfCached(e) && (t = !0), f.OBS.has(e.type)) {
+  if (b.updateExistingMessageIfCached(e) && (t = !0), _.OBS.has(e.type)) {
     let n = e.message_reference;
     if (null == n) return t;
     let r = n.message_id;
@@ -106,7 +106,7 @@ function y(e) {
       null != t ? (b.set(t.channel_id, t.id, {
         state: 0,
         message: (0, c.e5)(t)
-      }), e.type === f.uaV.THREAD_STARTER_MESSAGE && y(t)) : b.set(e.channel_id, r, {
+      }), e.type === _.uaV.THREAD_STARTER_MESSAGE && y(t)) : b.set(e.channel_id, r, {
         state: 2
       })
     } else {
@@ -262,7 +262,7 @@ class j extends(r = o.ZP.Store) {
     return null != e && (t = b.getCachedMessageIdsForChannel(e)), null != t ? t : m
   }
 }
-_(j, "displayName", "ReferencedMessageStore");
+f(j, "displayName", "ReferencedMessageStore");
 let U = new j(s.Z, {
   CACHE_LOADED: I,
   LOCAL_MESSAGES_LOADED: v,

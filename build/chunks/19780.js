@@ -10,8 +10,8 @@ var a, o = n(442837),
   c = n(764976),
   u = n(258609),
   d = n(338336),
-  f = n(314897),
-  _ = n(938475),
+  _ = n(314897),
+  f = n(938475),
   p = n(981631),
   h = n(65154);
 
@@ -48,7 +48,7 @@ let E = [],
 
 function N(e, t) {
   if (null == i) throw Error("Creating RTCConnection without session.");
-  let r = f.default.getId(),
+  let r = _.default.getId(),
     a = new(n(861687)).Z({
       userId: r,
       sessionId: i,
@@ -143,7 +143,7 @@ function N(e, t) {
         userIds: e
       })
     })
-  }), O = new c.Z(f.default.getId(), t), v = null, I = !1, T = !1, a
+  }), O = new c.Z(_.default.getId(), t), v = null, I = !1, T = !1, a
 }
 
 function C() {
@@ -168,7 +168,7 @@ function w(e) {
   } = e;
   return t.reduce((e, t) => {
     var n, a, o;
-    if (null == O || O.updateVoiceStates(t.userId, t.channelId), I = I || (null != (n = null == O ? void 0 : O.getStats().max_voice_state_count) ? n : 0) > 1, f.default.getId() !== t.userId) return !1;
+    if (null == O || O.updateVoiceStates(t.userId, t.channelId), I = I || (null != (n = null == O ? void 0 : O.getStats().max_voice_state_count) ? n : 0) > 1, _.default.getId() !== t.userId) return !1;
     if (null != r) t.sessionId === i ? null != t.guildId && t.guildId === r.guildId || null == t.guildId && t.channelId === r.channelId ? null == t.channelId ? C() : (r.channelId = t.channelId, A = !0) : (t.guildId !== r.guildId && null == t.channelId || C(), null != t.channelId && (b = null, y = null, r = N(t.guildId, t.channelId), I = (null != (a = null == O ? void 0 : O.getStats().max_voice_state_count) ? a : 0) > 1)) : t.guildId === r.guildId && ((null == u.Z.getAwaitingRemoteSessionInfo() || null == u.Z.getRemoteSessionId()) && (b = r.channelId), C());
     else {
       if (t.sessionId !== i || null == t.channelId) return e;
@@ -274,7 +274,7 @@ function W(e) {
 }
 class K extends(a = o.ZP.Store) {
   initialize() {
-    this.waitFor(_.ZP), (0, d.r)(this.getRTCConnectionId, this.getMediaSessionId)
+    this.waitFor(f.ZP), (0, d.r)(this.getRTCConnectionId, this.getMediaSessionId)
   }
   getRTCConnection() {
     return r

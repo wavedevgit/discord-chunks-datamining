@@ -1,6 +1,6 @@
 /**
   Module ID: 67032
-  Original File Name: f90bb9b62c76249d
+  Original File Name: c6334c1dd35c0b49
 **/
 @value minColumnWidth: 460px;
 
@@ -1506,17 +1506,7 @@
     order: 1
 }
 
-@container premium-marketing-home-container (max-width: 820px) {
-    .applicationHomeCard__6df1a {
-        width: 350px
-    }
-}
-
-@container premium-marketing-home-container (max-width: 620px) {
-    .premiumCardsContainer__6df1a {
-        width: 100%
-    }
-
+@container premium-marketing-home-container (max-width: 720px) {
     .premiumCards__6df1a {
         flex-direction: column
     }
@@ -1527,10 +1517,6 @@
 
     .tier2CardOrder__6df1a {
         order: 0
-    }
-
-    .applicationHomeCard__6df1a {
-        width: 100%
     }
 }
 
@@ -1578,4 +1564,4 @@
     margin-left: var(--space-12)
 }
 
-/*# sourceMappingURL=f90bb9b62c76249d.css.map*/
+/*# sourceMappingURL=c6334c1dd35c0b49.css.map*/

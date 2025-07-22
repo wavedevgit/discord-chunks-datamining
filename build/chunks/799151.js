@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  c: () => _
+  c: () => f
 });
 var r = n(255367),
   i = n(73800),
@@ -12,9 +12,9 @@ var r = n(255367),
   c = n(607070),
   u = n(79320),
   d = n(388032),
-  f = n(74927);
+  _ = n(74927);
 
-function _() {
+function f() {
   let e = [{
       keybinds: ["Spacebar", "Enter"],
       name: d.intl.string(d.t["cs/HVF"])
@@ -44,9 +44,9 @@ function _() {
     },
     config: a.config.stiff
   }, "animate-always")((t, n) => n ? (0, r.jsx)("div", {
-    className: f.positioner,
+    className: _.positioner,
     children: (0, r.jsx)(a.animated.div, {
-      className: f.container,
+      className: _.container,
       style: t,
       children: e.map((t, n) => {
         let {
@@ -56,13 +56,13 @@ function _() {
         return (0, r.jsxs)(i.Fragment, {
           children: [(0, r.jsx)(l.Text, {
             variant: "text-md/semibold",
-            className: f.bindName,
+            className: _.bindName,
             children: o
           }), a.map(e => (0, r.jsx)(s.M, {
             shortcut: e,
-            className: f.shortcut
+            className: _.shortcut
           }, e)), n < e.length - 1 ? (0, r.jsx)("span", {
-            className: f.separator
+            className: _.separator
           }) : null]
         }, o)
       })

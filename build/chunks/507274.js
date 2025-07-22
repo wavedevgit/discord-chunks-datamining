@@ -44,13 +44,13 @@ function d(e, t) {
   return n
 }
 
-function f(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function _(e, t) {
+function f(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -77,7 +77,7 @@ let h = i.createContext({
       impression: d,
       disableTrack: p,
       returnRef: m
-    } = e, g = _(e, ["children", "impressionType", "impression", "disableTrack", "returnRef"]), E = i.useRef(null), b = i.useRef(null), [y, O] = i.useState(!1), v = y ? b : E;
+    } = e, g = f(e, ["children", "impressionType", "impression", "disableTrack", "returnRef"]), E = i.useRef(null), b = i.useRef(null), [y, O] = i.useState(!1), v = y ? b : E;
     (0, a.T)(v, {
       returnRef: m
     }), i.useContext(l.Z)({
@@ -95,7 +95,7 @@ let h = i.createContext({
         inDialog: !0,
         setFocusLockDisabled: I
       },
-      children: (0, r.jsx)("div", f(u({}, g), {
+      children: (0, r.jsx)("div", _(u({}, g), {
         ref: E,
         role: "dialog",
         tabIndex: -1,

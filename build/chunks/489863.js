@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Iq: () => _,
+  Iq: () => f,
   UR: () => h,
   Ww: () => p,
   c$: () => m,
-  g: () => f,
+  g: () => _,
   i2: () => b,
   tR: () => E,
   tV: () => g
@@ -30,7 +30,7 @@ function d() {
   }
 }
 
-function f(e) {
+function _(e) {
   return i.tn.post({
     url: l.ANM.OAUTH2_WHITELIST_ACCEPT,
     query: {
@@ -40,7 +40,7 @@ function f(e) {
     rejectWithError: !1
   })
 }
-async function _(e) {
+async function f(e) {
   let {
     authorize: t,
     clientId: n,
@@ -50,8 +50,8 @@ async function _(e) {
     codeChallenge: s,
     codeChallengeMethod: c,
     state: u,
-    permissions: f,
-    guildId: _,
+    permissions: _,
+    guildId: f,
     channelId: p,
     integrationType: h,
     nonce: m,
@@ -70,10 +70,10 @@ async function _(e) {
       nonce: m
     },
     body: {
-      guild_id: _,
-      webhook_channel_id: null != _ && null != p ? p : void 0,
-      channel_id: null == _ && null != p ? p : void 0,
-      permissions: f,
+      guild_id: f,
+      webhook_channel_id: null != f && null != p ? p : void 0,
+      channel_id: null == f && null != p ? p : void 0,
+      permissions: _,
       authorize: t,
       integration_type: h,
       location_context: d(),
@@ -96,7 +96,7 @@ async function p(e) {
     state: c,
     integrationType: u,
     nonce: d,
-    signal: f
+    signal: _
   } = e;
   return (await i.tn.get({
     url: l.ANM.OAUTH2_AUTHORIZE,
@@ -111,7 +111,7 @@ async function p(e) {
       integration_type: u,
       nonce: d
     },
-    signal: f,
+    signal: _,
     retries: 3,
     oldFormErrors: !0,
     rejectWithError: !1

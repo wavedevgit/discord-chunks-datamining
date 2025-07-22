@@ -13,7 +13,7 @@ var r = n(255367),
   u = n(65154),
   d = n(388032);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,14 +22,14 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -78,7 +78,7 @@ function g(e) {
     analyticsLocations: n,
     asSubmenu: o = !1,
     onDeviceSelect: u,
-    showAllDevices: f = !1,
+    showAllDevices: _ = !1,
     selectedDeviceId: p,
     menuGroupOverrideProps: g,
     menuItemOverrideProps: E,
@@ -87,7 +87,7 @@ function g(e) {
     setDevice: y,
     getLabel: O,
     getLocation: v
-  } = m(t), [I, T] = i.useState(f), S = v(n[n.length - 1]), [A, N] = (0, l.L)(t, {
+  } = m(t), [I, T] = i.useState(_), S = v(n[n.length - 1]), [A, N] = (0, l.L)(t, {
     location: S
   }), C = I ? A.concat(N) : A, {
     id: R,
@@ -98,7 +98,7 @@ function g(e) {
       disabled: o,
       name: s
     } = e;
-    return (0, r.jsx)(a.k5B, _({
+    return (0, r.jsx)(a.k5B, f({
       id: "".concat(t, "-").concat(i),
       group: "".concat(t, "-devices"),
       disabled: o,
@@ -125,13 +125,13 @@ function g(e) {
       })
     }
   }), x = !I && (null == N ? void 0 : N.length) > 0;
-  return o ? (0, r.jsxs)(a.sNh, h(_({
+  return o ? (0, r.jsxs)(a.sNh, h(f({
     id: "".concat(t, "-devices"),
     label: O(),
     subtext: P
   }, E), {
     children: [D, x && L]
-  })) : (0, r.jsxs)(a.kSQ, h(_({
+  })) : (0, r.jsxs)(a.kSQ, h(f({
     label: O()
   }, g), {
     children: [D, x && L]

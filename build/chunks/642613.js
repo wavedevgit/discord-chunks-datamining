@@ -9,8 +9,8 @@ var r = n(98405),
   c = n(382698),
   u = n(621523),
   d = n(992914),
-  f = n(72570),
-  _ = n(358932),
+  _ = n(72570),
+  f = n(358932),
   p = n(635464),
   h = n(287353),
   m = n(920542),
@@ -23,10 +23,10 @@ var r = n(98405),
   O = u(function() {
     g.sort(null)
   }),
-  v = f("sort"),
+  v = _("sort"),
   I = !u(function() {
     if (h) return h < 70;
-    if (!_ || !(_ > 3)) {
+    if (!f || !(f > 3)) {
       if (p) return !0;
       if (m) return m < 603;
       var e, t, n, r, i = "";

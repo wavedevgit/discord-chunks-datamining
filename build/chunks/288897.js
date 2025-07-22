@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(40851),
   u = n(358085),
   d = n(960048),
-  f = n(752305),
-  _ = n(53529),
+  _ = n(752305),
+  f = n(53529),
   p = n(789952),
   h = n(436660),
   m = n(887490),
@@ -177,7 +177,7 @@ class P extends i.PureComponent {
           exactMatch: !1,
           suppressThrow: !0
         });
-        null != t && null != e.data && (m.M8.isExpanded(t) ? _.T.withSingleEntry(n, () => {
+        null != t && null != e.data && (m.M8.isExpanded(t) ? f.T.withSingleEntry(n, () => {
           n.selection = t, n.deleteFragment(), n.insertText(e.data), e.preventDefault()
         }) : (n.insertText(e.data), e.preventDefault()))
       }
@@ -352,8 +352,8 @@ class P extends i.PureComponent {
         placeholder: c,
         channelId: u,
         guildId: d,
-        onChange: f,
-        onFocus: _,
+        onChange: _,
+        onFocus: f,
         onBlur: p,
         onKeyDown: h,
         onKeyUp: m,
@@ -397,7 +397,7 @@ class P extends i.PureComponent {
   }
   constructor(e) {
     super(e), T(this, "containerRef", i.createRef()), T(this, "state", void 0), this.decorate = this.decorate.bind(this), this.renderElement = this.renderElement.bind(this), this.renderLeaf = this.renderLeaf.bind(this), this.handleOnChange = this.handleOnChange.bind(this), this.handleKeyDown = this.handleKeyDown.bind(this), this.handleKeyUp = this.handleKeyUp.bind(this), this.handleBeforeInput = this.handleBeforeInput.bind(this), this.handleCompositionStart = this.handleCompositionStart.bind(this), this.handleCompositionEnd = this.handleCompositionEnd.bind(this), this.handleFocusCapture = this.handleFocusCapture.bind(this), this.handleBlurCapture = this.handleBlurCapture.bind(this), this.handleContextMenu = this.handleContextMenu.bind(this), this.handlePasteCapture = this.handlePasteCapture.bind(this), m.bN.isEditorEmpty(e.editor) ? this.state = {
-      initialValue: (0, f.H2)().richValue,
+      initialValue: (0, _.H2)().richValue,
       showPlaceholder: !0
     } : this.state = {
       initialValue: m.bN.richValue(e.editor),

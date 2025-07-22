@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 }), n(388685);
 var r, i = n(442837),
   a = n(570140);
@@ -38,7 +38,7 @@ function d(e) {
   } = e;
   s.delete(t)
 }
-class f extends(r = i.ZP.Store) {
+class _ extends(r = i.ZP.Store) {
   get launchingGames() {
     return s
   }
@@ -52,8 +52,8 @@ class f extends(r = i.ZP.Store) {
     }), !1)
   }
 }
-o(f, "displayName", "LaunchableGameStore");
-let _ = new f(a.Z, {
+o(_, "displayName", "LaunchableGameStore");
+let f = new _(a.Z, {
   GAME_LAUNCHABLE_UPDATE: c,
   GAME_CLOUD_SYNC_START: u,
   GAME_LAUNCH_START: u,

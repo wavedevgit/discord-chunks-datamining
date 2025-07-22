@@ -48,8 +48,8 @@ let u = {
     enabled: !1
   },
   d = {},
-  f = {},
-  _ = !1;
+  _ = {},
+  f = !1;
 
 function p(e) {
   let {
@@ -75,7 +75,7 @@ function m(e) {
   let {
     enabled: t
   } = e;
-  _ = t
+  f = t
 }
 
 function g(e) {
@@ -87,7 +87,7 @@ function g(e) {
     channelId: a
   } = e, o = null != (t = d[a]) ? t : {}, l = o[i];
   if (delete o[i], null == l) return !1;
-  f[a] = c(s({}, f[a]), {
+  _[a] = c(s({}, _[a]), {
     [i]: [l, n],
     [r]: [n, l]
   })
@@ -99,13 +99,13 @@ function E(e) {
     firstUserId: n,
     secondUserId: r,
     channelId: i
-  } = e, a = null != (t = f[i]) ? t : {};
+  } = e, a = null != (t = _[i]) ? t : {};
   delete a[n], delete a[r]
 }
 class b extends(r = i.ZP.DeviceSettingsStore) {
   initialize() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : u;
-    _ = e.enabled
+    f = e.enabled
   }
   getWaitingHighFive(e, t) {
     var n;
@@ -113,14 +113,14 @@ class b extends(r = i.ZP.DeviceSettingsStore) {
   }
   getCompletedHighFive(e, t) {
     var n;
-    return null == (n = f[e]) ? void 0 : n[t]
+    return null == (n = _[e]) ? void 0 : n[t]
   }
   getEnabled() {
-    return _
+    return f
   }
   getUserAgnosticState() {
     return {
-      enabled: _
+      enabled: f
     }
   }
 }

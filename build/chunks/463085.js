@@ -17,8 +17,8 @@ function o(e) {
     flags: c,
     contrast: u,
     saturation: d,
-    density: f,
-    disableAdaptiveTheme: _,
+    density: _,
+    disableAdaptiveTheme: f,
     reduceAdaptiveTheme: p
   } = e, h = i.useContext(a.Ni);
   a.qF;
@@ -30,10 +30,10 @@ function o(e) {
     flags: null != c ? c : h.flags,
     contrast: null != u ? u : h.contrast,
     saturation: null != d ? d : h.saturation,
-    density: null != f ? f : h.density,
-    disableAdaptiveTheme: null != _ ? _ : h.disableAdaptiveTheme,
+    density: null != _ ? _ : h.density,
+    disableAdaptiveTheme: null != f ? f : h.disableAdaptiveTheme,
     reduceAdaptiveTheme: null != p ? p : h.reduceAdaptiveTheme
-  }), [n, h.theme, h.primaryColor, h.secondaryColor, h.gradient, h.flags, h.contrast, h.saturation, h.density, h.disableAdaptiveTheme, h.reduceAdaptiveTheme, o, s, l, c, u, d, f, _, p]);
+  }), [n, h.theme, h.primaryColor, h.secondaryColor, h.gradient, h.flags, h.contrast, h.saturation, h.density, h.disableAdaptiveTheme, h.reduceAdaptiveTheme, o, s, l, c, u, d, _, f, p]);
   return (0, r.jsx)(a.Ni.Provider, {
     value: m,
     children: t

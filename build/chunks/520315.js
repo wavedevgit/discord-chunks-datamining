@@ -15,7 +15,7 @@ function o(e) {
     minHeightOverride: s,
     maxHeightOverride: l,
     maxAnimationHeight: c
-  } = e, u = (0, i.e7)([a.Z], () => a.Z.useReducedMotion), [d, f] = r.useState(null), _ = r.useCallback(() => {}, []), p = u ? _ : f, h = r.useRef(null), m = r.useRef(null), g = r.useRef(t), E = r.useRef(o);
+  } = e, u = (0, i.e7)([a.Z], () => a.Z.useReducedMotion), [d, _] = r.useState(null), f = r.useCallback(() => {}, []), p = u ? f : _, h = r.useRef(null), m = r.useRef(null), g = r.useRef(t), E = r.useRef(o);
   E.current = o;
   let b = r.useRef(s);
   b.current = s;
@@ -39,13 +39,13 @@ function o(e) {
     if (g.current = t, null == o || null == s || l) return;
     let c = Math.min(null != (i = O.current) ? i : s, s),
       u = n ? o : c,
-      f = n ? c : o;
-    if (u === f) return;
+      _ = n ? c : o;
+    if (u === _) return;
     I(!0), d.style.height = "".concat(u, "px"), d.style.transition = "";
-    let _ = null;
-    return _ = requestAnimationFrame(() => {
-      _ = null, d.style.height = "".concat(f, "px"), d.style.transition = "height ".concat(E.current, "ms ease-in-out")
-    }), () => null != _ ? cancelAnimationFrame(_) : void 0
+    let f = null;
+    return f = requestAnimationFrame(() => {
+      f = null, d.style.height = "".concat(_, "px"), d.style.transition = "height ".concat(E.current, "ms ease-in-out")
+    }), () => null != f ? cancelAnimationFrame(f) : void 0
   }, [t, d, n]), r.useLayoutEffect(() => {
     null == d || v || (d.style.height = "", d.style.transition = "")
   }, [t, d, v]), {

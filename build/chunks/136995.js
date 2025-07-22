@@ -12,9 +12,9 @@ var r = n(255367),
   c = n(585483),
   u = n(871499),
   d = n(981631),
-  f = n(388032);
+  _ = n(388032);
 
-function _(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,7 +30,7 @@ function p(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
@@ -75,13 +75,13 @@ function b(e) {
   var {
     channel: t,
     centerButton: n = !1,
-    onCallJoined: _
+    onCallJoined: f
   } = e, h = g(e, ["channel", "centerButton", "onCallJoined"]);
   let {
     parentAnalyticsLocation: E
-  } = (0, s.ZP)(), b = n ? u.d : u.Z, y = t.isManaged() || !t.isPrivate() ? f.intl.string(f.t.S0W8Z2) : f.intl.string(f.t["0D/6R0"]), O = i.useCallback(() => {
-    null == _ || _(), (0, l.v)(E, l.d.JOIN_CALL), o.default.selectVoiceChannel(t.id)
-  }, [t.id, _, E]);
+  } = (0, s.ZP)(), b = n ? u.d : u.Z, y = t.isManaged() || !t.isPrivate() ? _.intl.string(_.t.S0W8Z2) : _.intl.string(_.t["0D/6R0"]), O = i.useCallback(() => {
+    null == f || f(), (0, l.v)(E, l.d.JOIN_CALL), o.default.selectVoiceChannel(t.id)
+  }, [t.id, f, E]);
   return i.useEffect(() => (c.S.subscribe(d.CkL.CALL_ACCEPT, O), () => {
     c.S.unsubscribe(d.CkL.CALL_ACCEPT, O)
   }), [O]), (0, r.jsx)(b, m(p({}, h), {

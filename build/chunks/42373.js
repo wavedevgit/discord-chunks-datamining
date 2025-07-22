@@ -62,10 +62,13 @@ let v = e => {
     } = e, l = (0, p.ZP)(), c = (0, d.wj)(l), m = c ? u.Tt.WHITE : u.Tt.BRAND, g = () => {
       r(), n()
     };
-    return s ? (0, i.jsx)(o.z, {
-      variant: "secondary",
-      onClick: g,
-      text: t
+    return s ? (0, i.jsx)("div", {
+      className: E.bentoBoxButton,
+      children: (0, i.jsx)(o.z, {
+        variant: "secondary",
+        onClick: g,
+        text: t
+      })
     }) : (0, i.jsx)(u.zx, {
       look: u.iL.OUTLINED,
       color: m,

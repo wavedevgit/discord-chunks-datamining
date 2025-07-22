@@ -14,8 +14,8 @@ var r = n(255367),
   c = n(991621),
   u = n(936141),
   d = n(629710),
-  f = n(134432),
-  _ = n(124347),
+  _ = n(134432),
+  f = n(124347),
   p = n(52824),
   h = n(585483),
   m = n(956664),
@@ -44,7 +44,7 @@ function N(e) {
     width: n,
     height: r
   });
-  _.ZP.preloadImage({
+  f.ZP.preloadImage({
     src: t,
     dimensions: {
       maxWidth: o,
@@ -90,7 +90,7 @@ function R(e) {
 
 function P(e, t) {
   if ("IMAGE" === e.type) {
-    if (!(0, m._H)(e)) return void(0, f.po)(e.url);
+    if (!(0, m._H)(e)) return void(0, _.po)(e.url);
     N({
       src: (0, p.q)({
         proxyURL: e.proxyUrl,
@@ -111,11 +111,11 @@ function w(e) {
     startIndex: a = 0,
     enabledContentHarmTypeFlags: l = 0,
     shouldHideMediaOptions: u = !1
-  } = e, [f, _] = i.useState(a), p = i.useRef(a), {
+  } = e, [_, f] = i.useState(a), p = i.useRef(a), {
     zoomed: m,
     setZoomed: N
   } = (0, E.Y)(), P = i.useCallback(e => {
-    _(e = C(e, t.length)), p.current = e, null == n || n(e), N(!1)
+    f(e = C(e, t.length)), p.current = e, null == n || n(e), N(!1)
   }, [n, t, N]);
   i.useEffect(() => {
     let e = () => P(p.current + 1),
@@ -124,7 +124,7 @@ function w(e) {
       h.S.unsubscribe(T.CkL.MODAL_CAROUSEL_NEXT, e), h.S.unsubscribe(T.CkL.MODAL_CAROUSEL_PREV, t)
     }
   }, [P, N]);
-  let w = t[f],
+  let w = t[_],
     D = (0, d.g4)({
       type: c.l.GenericMedia,
       media: w
@@ -154,7 +154,7 @@ function w(e) {
       }) : void 0
     }), (0, r.jsx)(b.Z, {
       items: t,
-      currentIndex: f,
+      currentIndex: _,
       children: (e, t) => (0, r.jsx)(R, {
         isObscured: !m && D,
         src: w.url,
@@ -169,7 +169,7 @@ function w(e) {
     }), x && (0, r.jsx)(y.ZP, {
       children: e => (0, r.jsx)(O.Z, {
         items: t,
-        currentIndex: f,
+        currentIndex: _,
         onGalleryItemClick: P,
         className: e
       })

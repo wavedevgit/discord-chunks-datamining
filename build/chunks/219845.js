@@ -16,21 +16,21 @@ var r = n(644387),
   d = function(e) {
     return parseFloat(e || "0")
   },
-  f = function(e, t, n) {
+  _ = function(e, t, n) {
     return void 0 === e && (e = 0), void 0 === t && (t = 0), void 0 === n && (n = !1), Object.freeze({
       inlineSize: (n ? t : e) || 0,
       blockSize: (n ? e : t) || 0
     })
   },
-  _ = Object.freeze({
-    devicePixelContentBoxSize: f(),
-    borderBoxSize: f(),
-    contentBoxSize: f(),
+  f = Object.freeze({
+    devicePixelContentBoxSize: _(),
+    borderBoxSize: _(),
+    contentBoxSize: _(),
     contentRect: new i.N(0, 0, 0, 0)
   }),
   p = function(e) {
     if (s.has(e)) return s.get(e);
-    if ((0, a.xj)(e)) return s.set(e, _), _;
+    if ((0, a.xj)(e)) return s.set(e, f), f;
     var t = getComputedStyle(e),
       n = (0, a.zd)(e) && e.ownerSVGElement && e.getBBox(),
       r = !u && "border-box" === t.boxSizing,
@@ -58,9 +58,9 @@ var r = n(644387),
       x = D + T + R + A,
       M = L + S + C + N,
       k = Object.freeze({
-        devicePixelContentBoxSize: f(Math.round(D * devicePixelRatio), Math.round(L * devicePixelRatio), o),
-        borderBoxSize: f(x, M, o),
-        contentBoxSize: f(D, L, o),
+        devicePixelContentBoxSize: _(Math.round(D * devicePixelRatio), Math.round(L * devicePixelRatio), o),
+        borderBoxSize: _(x, M, o),
+        contentBoxSize: _(D, L, o),
         contentRect: new i.N(b, m, D, L)
       });
     return s.set(e, k), k

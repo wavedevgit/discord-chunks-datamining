@@ -13,8 +13,8 @@ var r = n(255367),
   c = n(667202),
   u = n(755721),
   d = n(481060),
-  f = n(787014),
-  _ = n(904245),
+  _ = n(787014),
+  f = n(904245),
   p = n(12498),
   h = n(541716),
   m = n(752305),
@@ -60,7 +60,7 @@ function P(e) {
       if (null != n && n.length > 0) {
         let {
           errorMessage: e
-        } = _.Z.validateMessage(n, B, t.id);
+        } = f.Z.validateMessage(n, B, t.id);
         return G(e), j(!1), {
           hasErrors: !0
         }
@@ -79,7 +79,7 @@ function P(e) {
         } = Z(i);
       if (!o) {
         try {
-          let e = await f.ZP.updateVoiceChannelStatus(t.id, i.content);
+          let e = await _.ZP.updateVoiceChannelStatus(t.id, i.content);
           204 === e.status ? (I.default.track(T.rMx.VOICE_CHANNEL_TOPIC_SET, {
             guild_id: t.guild_id,
             channel_id: t.id,

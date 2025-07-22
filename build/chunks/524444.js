@@ -28,8 +28,8 @@ var r = n(255367),
   c = n(374470),
   u = n(442837),
   d = n(481060),
-  f = n(904245),
-  _ = n(45114),
+  _ = n(904245),
+  f = n(45114),
   p = n(431279),
   h = n(794295),
   m = n(593472),
@@ -138,14 +138,14 @@ function J(e) {
     renderOverlayContent: c
   } = e, u = K(e, ["onVolumeChange", "onMute", "volume", "autoMute", "alt", "renderAdjacentContent", "renderOverlayContent"]);
   let d = X(t),
-    f = Q(n);
+    _ = Q(n);
   return a = null == a ? M.FC : a, o = null == o ? M.rs : o, (0, r.jsxs)(i.Fragment, {
     children: [(0, r.jsx)(I.Z, W(H({}, u), {
       alt: s,
       volume: a,
       autoMute: o,
       onVolumeChange: d,
-      onMute: f,
+      onMute: _,
       renderLinkComponent: en,
       renderOverlayContent: c
     })), null != l && l()]
@@ -164,7 +164,7 @@ function $(e) {
   let u = X(t),
     d = Q(a);
   n = null == n ? M.FC : n;
-  let f = () => !1;
+  let _ = () => !1;
   return (0, r.jsxs)(i.Fragment, {
     children: [(0, r.jsx)(v.Z, W(H({}, c), {
       onVolumeChange: u,
@@ -172,7 +172,7 @@ function $(e) {
       onVolumeShow: o,
       onVolumeHide: s,
       volume: n,
-      autoMute: f,
+      autoMute: _,
       renderLinkComponent: en
     })), null != l && l()]
   })
@@ -202,10 +202,10 @@ function et(e) {
     imageContainerClassName: l,
     disableAltTextDisplay: c = !1,
     reducedSizeAltTextButton: u = !1,
-    mediaLayoutType: f,
-    imageContainerStyle: _,
+    mediaLayoutType: _,
+    imageContainerStyle: f,
     mosaicStyleAlt: h
-  } = e, m = f === j.hV.MOSAIC || !0 === h, g = !c && C.H1.getSetting() && null != t && "" !== t && !0 !== n, E = e => {
+  } = e, m = _ === j.hV.MOSAIC || !0 === h, g = !c && C.H1.getSetting() && null != t && "" !== t && !0 !== n, E = e => {
     let {
       altText: t
     } = e;
@@ -231,7 +231,7 @@ function et(e) {
     className: o()(F.imageContent, s),
     children: [(0, r.jsxs)("div", {
       className: o()(F.imageContainer, l),
-      style: _,
+      style: f,
       children: [(0, r.jsx)(p.Z, H({}, e)), null != a && a()]
     }), m && g && (0, r.jsx)("div", {
       className: F.mediaMosaicAltTextContainer,
@@ -370,19 +370,19 @@ function eu(e) {
     channelId: n
   } = e, [a] = i.useState(() => (0, y.hQ)("NewMessagesBarJumpToNewMessages_")), s = i.useCallback(() => {
     let e = P.ZP.ackMessageId(n);
-    null != e ? f.Z.jumpToMessage({
+    null != e ? _.Z.jumpToMessage({
       channelId: n,
       messageId: e,
       offset: 1,
       context: "Mark As Read"
-    }) : f.Z.jumpToMessage({
+    }) : _.Z.jumpToMessage({
       channelId: n,
       messageId: k.default.castChannelIdAsMessageId(n),
       offset: 1,
       context: "Mark As Read"
     })
   }, [n]), l = i.useCallback(() => {
-    (0, _.In)(n, {
+    (0, f.In)(n, {
       section: U.jXE.NEW_MESSAGES_BANNER,
       object: U.qAy.MARK_CHANNEL_AS_READ_BUTTON,
       objectType: U.Qqv.ACK_MANUAL
@@ -457,7 +457,7 @@ function ed(e) {
           return null != (t = w.default.getUser(e)) ? t : null
         }).filter(x.lm)
       })) ? e : []
-    }, [M], e_),
+    }, [M], ef),
     Z = null != (n = (0, u.e7)([A.Z], () => A.Z.visibleSummaryIndex())) ? n : -1,
     H = null == M || null == (t = M[Z]) ? void 0 : t.topic;
   null == H && null == y && (null == M ? void 0 : M.length) >= 1 && (H = null == (a = M[0]) ? void 0 : a.topic);
@@ -503,7 +503,7 @@ function ed(e) {
         guild_id: s.guild_id,
         channel_id: s.id,
         channel_type: s.type
-      }), f.Z.jumpToMessage({
+      }), _.Z.jumpToMessage({
         channelId: s.id,
         messageId: n.startId,
         flash: !0,
@@ -556,12 +556,12 @@ function ed(e) {
     }), [M, G, Q, J, s]),
     et = i.useCallback(() => {
       let e = P.ZP.ackMessageId(s.id);
-      null != e ? f.Z.jumpToMessage({
+      null != e ? _.Z.jumpToMessage({
         channelId: s.id,
         messageId: e,
         offset: 1,
         context: "Mark As Read"
-      }) : f.Z.jumpToMessage({
+      }) : _.Z.jumpToMessage({
         channelId: s.id,
         messageId: k.default.castChannelIdAsMessageId(s.id),
         offset: 1,
@@ -569,7 +569,7 @@ function ed(e) {
       })
     }, [s.id]),
     en = i.useCallback(() => {
-      (0, _.In)(s.id, {
+      (0, f.In)(s.id, {
         section: U.jXE.NEW_TOPICS_BAR,
         object: U.qAy.MARK_CHANNEL_AS_READ_BUTTON,
         objectType: U.Qqv.ACK_MANUAL
@@ -660,19 +660,19 @@ function ed(e) {
   })
 }
 
-function ef(e, t) {
+function e_(e, t) {
   return null != t && e.length === t.length && !e.some((e, n) => t[n] !== e)
 }
 
-function e_(e, t) {
-  return null != t && e.length === t.length && !e.some((e, n) => !ef(e, t[n]))
+function ef(e, t) {
+  return null != t && e.length === t.length && !e.some((e, n) => !e_(e, t[n]))
 }
 
 function ep(e) {
   var t, n, a;
   let {
     channel: s,
-    scrollManager: _
+    scrollManager: f
   } = e, {
     disableInteractions: p
   } = i.useContext(b.G), [h, E] = i.useState(null), y = i.useRef(null), [v, I] = i.useState(null), T = i.useRef(null), C = (0, u.Wu)([A.Z], () => {
@@ -700,7 +700,7 @@ function ep(e) {
           return null != (t = w.default.getUser(e)) ? t : null
         }).filter(x.lm)
       })) ? e : []
-    }, [C], e_),
+    }, [C], ef),
     M = null != (n = (0, u.e7)([A.Z], () => A.Z.visibleSummaryIndex())) ? n : -1,
     k = null == C || null == (t = C[M]) ? void 0 : t.topic;
   null == k && null == h && (null == C ? void 0 : C.length) >= 1 && (k = null == (a = C[0]) ? void 0 : a.topic);
@@ -738,17 +738,17 @@ function ep(e) {
       if (null == n) return;
       (0, S.wv)(s.id, n.id), (0, S.yK)(s.id, n.id);
       let r = () => {
-        _.removeScrollCompleteCallback(r), setTimeout(() => {
-          _.addAutomaticAnchorCallback(Y, !1)
+        f.removeScrollCompleteCallback(r), setTimeout(() => {
+          f.addAutomaticAnchorCallback(Y, !1)
         }, 100)
       };
-      _.removeAutomaticAnchorCallback(Y), _.addScrollCompleteCallback(r), L.default.track(U.rMx.SUMMARIES_TOPIC_CLICKED, {
+      f.removeAutomaticAnchorCallback(Y), f.addScrollCompleteCallback(r), L.default.track(U.rMx.SUMMARIES_TOPIC_CLICKED, {
         source: t,
         message_id: n.startId,
         guild_id: s.guild_id,
         channel_id: s.id,
         channel_type: s.type
-      }), f.Z.jumpToMessage({
+      }), _.Z.jumpToMessage({
         channelId: s.id,
         messageId: n.startId,
         flash: !0,
@@ -756,7 +756,7 @@ function ep(e) {
         jumpType: m.SR.ANIMATED,
         context: "Summary Jump"
       })
-    }, [C, s, Y, _]),
+    }, [C, s, Y, f]),
     X = i.useCallback(() => {
       q(M - 1, B.DZ.PILL_NEXT_ARROW)
     }, [q, M]),
@@ -791,9 +791,9 @@ function ep(e) {
       channel_type: s.type
     }), J(!1))
   }, [W, C, s, J]);
-  i.useEffect(() => (_.addAutomaticAnchorCallback(Y), () => {
-    _.removeAutomaticAnchorCallback(Y)
-  }), [_, Y]), i.useEffect(() => {
+  i.useEffect(() => (f.addAutomaticAnchorCallback(Y), () => {
+    f.removeAutomaticAnchorCallback(Y)
+  }), [f, Y]), i.useEffect(() => {
     (0, S.G1)(s.id)
   }, [s.id]), i.useEffect(() => (document.addEventListener("mousedown", $), () => {
     document.removeEventListener("mousedown", $)

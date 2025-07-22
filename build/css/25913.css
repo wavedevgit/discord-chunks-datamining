@@ -1,6 +1,6 @@
 /**
   Module ID: 25913
-  Original File Name: bff2c3057b7f470d
+  Original File Name: 7d4c076f4de88a07
 **/
 .gradientOuterBorder__8f49b {
     align-items: center;
@@ -477,17 +477,7 @@
     order: 1
 }
 
-@container premium-marketing-home-container (max-width: 820px) {
-    .applicationHomeCard__6df1a {
-        width: 350px
-    }
-}
-
-@container premium-marketing-home-container (max-width: 620px) {
-    .premiumCardsContainer__6df1a {
-        width: 100%
-    }
-
+@container premium-marketing-home-container (max-width: 720px) {
     .premiumCards__6df1a {
         flex-direction: column
     }
@@ -498,10 +488,6 @@
 
     .tier2CardOrder__6df1a {
         order: 0
-    }
-
-    .applicationHomeCard__6df1a {
-        width: 100%
     }
 }
 
@@ -939,4 +925,4 @@
     flex-direction: row-reverse
 }
 
-/*# sourceMappingURL=bff2c3057b7f470d.css.map*/
+/*# sourceMappingURL=7d4c076f4de88a07.css.map*/

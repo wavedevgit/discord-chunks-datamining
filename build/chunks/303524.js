@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => _
 });
 var r = n(255367),
   i = n(120356),
@@ -13,7 +13,7 @@ var r = n(255367),
 let u = 14,
   d = l.Il.BRAND_345;
 
-function f(e) {
+function _(e) {
   let {
     className: t
   } = e, n = (0, s.Sl)(d).hex;

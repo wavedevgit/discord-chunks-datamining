@@ -48,8 +48,8 @@ let {
   paragraph: c,
   url: u,
   link: d,
-  strong: f,
-  u: _,
+  strong: _,
+  u: f,
   br: p,
   em: h,
   image: m,
@@ -64,8 +64,8 @@ let {
       return r.context = n.context, r
     }
   }),
-  strong: f,
-  u: _,
+  strong: _,
+  u: f,
   br: p,
   em: h,
   image: m,

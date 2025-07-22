@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(28546),
   u = n(443603),
   d = n(957825),
-  f = n(388032),
-  _ = n(302195);
+  _ = n(388032),
+  f = n(302195);
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -66,16 +66,16 @@ function E(e, t) {
     play: T
   } = (0, l.z)();
   return n ? null : (0, r.jsx)("div", {
-    className: o()(d.CT, _.buttonContainer),
+    className: o()(d.CT, f.buttonContainer),
     ref: t,
     children: (0, r.jsx)(u.Z, g(h({
-      innerClassName: o()(_.button, _.stickerButton)
+      innerClassName: o()(f.button, f.stickerButton)
     }, I), {
       onClick: () => {
         O(), T()
       },
       isActive: b,
-      "aria-label": f.intl.string(f.t.rZpidX),
+      "aria-label": _.intl.string(_.t.rZpidX),
       "aria-expanded": b,
       "aria-haspopup": "dialog",
       "aria-controls": m,

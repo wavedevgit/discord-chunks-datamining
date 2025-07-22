@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(442837),
   u = n(377108),
   d = n(692547),
-  f = n(481060),
-  _ = n(68405),
+  _ = n(481060),
+  f = n(68405),
   p = n(527429),
   h = n(656733),
   m = n(251625),
@@ -73,14 +73,14 @@ function R(e) {
   return {
     type: O.wI2.FAVORITES,
     name: v.intl.string(v.t.y3LQCA),
-    icon: f.r7p,
+    icon: _.r7p,
     src: null != n ? n.src : "https://media.giphy.com/media/1TOSaJsWtnhe0/giphy.gif",
     format: null != (t = null == n ? void 0 : n.format) ? t : u.EO.IMAGE
   }
 }
 class P extends i.PureComponent {
   componentDidMount() {
-    0 === this.props.trendingCategories.length && (0, _.Tg)()
+    0 === this.props.trendingCategories.length && (0, f.Tg)()
   }
   getData() {
     return this.memoizedData(this.state.favoritesTile, this.props.trendingCategories, this.props.hideFavoritesTile)
@@ -95,7 +95,7 @@ class P extends i.PureComponent {
         className: n === O.wI2.FAVORITES ? I.categoryFadeBlurple : I.categoryFade
       }), (0, r.jsxs)("div", {
         className: I.categoryText,
-        children: [n === O.wI2.TRENDING_GIFS ? (0, r.jsx)(f.IeX, {
+        children: [n === O.wI2.TRENDING_GIFS ? (0, r.jsx)(_.IeX, {
           className: I.categoryIcon,
           color: "currentColor"
         }) : null, (0, r.jsx)("span", {
@@ -183,7 +183,7 @@ class P extends i.PureComponent {
         columns: e,
         width: t,
         renderColumn: C
-      }) : (0, r.jsx)(f.GMG, {
+      }) : (0, r.jsx)(_.GMG, {
         ref: this._masonryRef,
         fade: !0,
         className: o()(I.container, i),

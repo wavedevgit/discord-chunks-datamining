@@ -22,10 +22,10 @@ function d(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let f = "default",
-  _ = .6,
+let _ = "default",
+  f = .6,
   p = /^( Device)?( \([^()]+\))+$/,
-  h = f;
+  h = _;
 
 function m(e, t) {
   return !!t.startsWith(e) && null != t.substring(e.length).match(p)
@@ -43,7 +43,7 @@ async function E() {
       r = i()(n).sortBy(e => e.index).findIndex(e => e.id === l.Z.getOutputDeviceId()),
       o = n[l.Z.getOutputDeviceId()];
     if (null == o) {
-      h = f;
+      h = _;
       return
     }
     let s = t.filter(e => "audiooutput" === e.kind && "communications" !== e.deviceId),
@@ -52,13 +52,13 @@ async function E() {
       h = c.deviceId;
       return
     }
-    if (c = i()(s).maxBy(e => (0, a.stringSimilarity)(e.label, o.name)), null == c || (0, a.stringSimilarity)(c.label, o.name) < _) {
-      h = f;
+    if (c = i()(s).maxBy(e => (0, a.stringSimilarity)(e.label, o.name)), null == c || (0, a.stringSimilarity)(c.label, o.name) < f) {
+      h = _;
       return
     }
     h = c.deviceId
   } catch (e) {
-    h = f
+    h = _
   }
 }
 c.isPlatformEmbedded && (l.Z.addChangeListener(E), E());
@@ -105,7 +105,7 @@ let b = class {
     return this._audio = null != (e = this._audio) ? e : new Promise((e, t) => {
       let r = new Audio;
       r.src = n(451343)("./".concat(this.name, ".mp3")), r.onloadeddata = () => {
-        r.volume = Math.min(l.Z.getOutputVolume() / 100 * this._volume, 1), c.isPlatformEmbedded && r.setSinkId(this.outputChannel === u.w.DEFAULT ? f : h), e(r)
+        r.volume = Math.min(l.Z.getOutputVolume() / 100 * this._volume, 1), c.isPlatformEmbedded && r.setSinkId(this.outputChannel === u.w.DEFAULT ? _ : h), e(r)
       }, r.onerror = () => t(Error("could not play audio")), r.onended = () => this.destroyAudio(), r.load()
     }), this._audio
   }

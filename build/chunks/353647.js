@@ -46,8 +46,8 @@ function u(e, t) {
   }), e
 }
 let d = new Map,
-  f = new Set,
-  _ = null,
+  _ = new Set,
+  f = null,
   p = !1,
   h = !1;
 
@@ -55,7 +55,7 @@ function m(e) {
   let {
     userId: t
   } = e;
-  f.add(t)
+  _.add(t)
 }
 
 function g(e) {
@@ -65,18 +65,18 @@ function g(e) {
   } = e;
   d.set(n, u(l({}, t), {
     lastFetched: Date.now()
-  })), f.delete(n)
+  })), _.delete(n)
 }
 
 function E(e) {
   let {
     userId: t
   } = e;
-  f.delete(t)
+  _.delete(t)
 }
 
 function b() {
-  _ = null, p = !0
+  f = null, p = !0
 }
 
 function y(e) {
@@ -84,7 +84,7 @@ function y(e) {
     entry: t,
     userId: n
   } = e;
-  _ = null;
+  f = null;
   let r = d.get(n);
   if (null == r) return !1;
   let i = r.entries.filter(e => e.id !== t.id);
@@ -97,15 +97,15 @@ function O(e) {
   let {
     error: t
   } = e;
-  _ = t, p = !1
+  f = t, p = !1
 }
 
 function v() {
-  _ = null, p = !1
+  f = null, p = !1
 }
 
 function I() {
-  d = new Map, f = new Set, _ = null, p = !1
+  d = new Map, _ = new Set, f = null, p = !1
 }
 
 function T() {
@@ -127,10 +127,10 @@ class A extends(r = i.ZP.Store) {
     return d.get(e)
   }
   isFetchingUserOutbox(e) {
-    return f.has(e)
+    return _.has(e)
   }
   get deleteOutboxEntryError() {
-    return _
+    return f
   }
   get isDeletingEntryHistory() {
     return p

@@ -11,8 +11,8 @@ var r, i = n(392711),
   c = n(840877),
   u = n(353926),
   d = n(861262),
-  f = n(778877),
-  _ = n(952537),
+  _ = n(778877),
+  f = n(952537),
   p = n(592125),
   h = n(430824),
   m = n(981631);
@@ -88,14 +88,14 @@ function P(e) {
   } = e, s = y(i);
   null != s.searchFetcher && (s.searchFetcher.cancel(), s.searchFetcher = null);
   let u = i,
-    f = (0, d.g)(i),
-    h = new c.ZP(u, f, o);
+    _ = (0, d.g)(i),
+    h = new c.ZP(u, _, o);
   s.searchFetcher = h, s.isSearching = !0, s.rawResults = null, s.analyticsId = null, s.query = a().omit(o, "type"), s.offset = null != (n = o.offset) ? n : 0, s.showBlockedResults = !1, s.searchResultsQueryString = r, w({
     type: "SEARCH_ADD_HISTORY",
     searchId: i,
     query: r
   });
-  let g = i === m.I_8 ? null == (t = p.Z.getChannel(u)) ? void 0 : t.guild_id : f === m.aib.GUILD ? i : null;
+  let g = i === m.I_8 ? null == (t = p.Z.getChannel(u)) ? void 0 : t.guild_id : _ === m.aib.GUILD ? i : null;
   h.fetch(e => {
     var t, n;
     l.Z.dispatch({
@@ -106,7 +106,7 @@ function P(e) {
       totalResults: e.body.total_results,
       messages: e.body.messages,
       threads: null != (t = e.body.threads) ? t : [],
-      members: (null != (n = e.body.members) ? n : []).map(e => (0, _.Z)(e)),
+      members: (null != (n = e.body.members) ? n : []).map(e => (0, f.Z)(e)),
       hasError: !1,
       doingHistoricalIndex: e.body.doing_deep_historical_index,
       documentsIndexed: e.body.documents_indexed
@@ -174,7 +174,7 @@ function M(e) {
 }
 
 function k() {
-  S = !0, null != N && (0, d.g)(N) === m.aib.CHANNEL && (0, f.a)({
+  S = !0, null != N && (0, d.g)(N) === m.aib.CHANNEL && (0, _.a)({
     location: "SearchStore_handleConnectionOpen"
   }) && M(m.aib.DMS)
 }
@@ -184,7 +184,7 @@ function j(e) {
     guildId: t,
     channelId: n
   } = e;
-  null != t ? M(t) : (0, f.a)({
+  null != t ? M(t) : (0, _.a)({
     location: "SearchStore_handleChannelSelect",
     autoTrackExposure: S
   }) ? M(m.aib.DMS) : M(n)

@@ -13,8 +13,8 @@ var r = n(255367),
   c = n(611144),
   u = n(442837),
   d = n(704215),
-  f = n(477690),
-  _ = n(481060),
+  _ = n(477690),
+  f = n(481060),
   p = n(80932),
   h = n(410575),
   m = n(2052),
@@ -95,8 +95,8 @@ function ei(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let ea = (0, j.Mg)(f.Z.EMOJI_PICKER_CONSTANTS_EMOJI_CONTAINER_PADDING_HORIZONTAL),
-  eo = (0, j.Mg)(f.Z.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_LEFT),
+let ea = (0, j.Mg)(_.Z.EMOJI_PICKER_CONSTANTS_EMOJI_CONTAINER_PADDING_HORIZONTAL),
+  eo = (0, j.Mg)(_.Z.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_LEFT),
   es = 8,
   el = e => e.stopPropagation();
 var ec = function(e) {
@@ -115,7 +115,7 @@ let eu = (e, t) => {
       emojiList: s,
       channelGuildId: l,
       isBurstReaction: d
-    } = e, f = (0, u.e7)([O.ZP], () => O.ZP.getDisambiguatedEmojiContext(l), [l]), _ = i.useCallback((e, r) => {
+    } = e, _ = (0, u.e7)([O.ZP], () => O.ZP.getDisambiguatedEmojiContext(l), [l]), f = i.useCallback((e, r) => {
       switch (e.type) {
         case Y.ld.CREATE_EMOJI:
           a({
@@ -124,7 +124,7 @@ let eu = (e, t) => {
           }), R.Z.open(e.guildId, Q.pNK.EMOJI);
           return;
         case Y.ld.EMOJI: {
-          if (null != e.emoji && r.altKey) return void(f.isFavoriteEmojiWithoutFetchingLatest(e.emoji) ? (0, p.Xe)(e.emoji) : ((0, U.J1)({
+          if (null != e.emoji && r.altKey) return void(_.isFavoriteEmojiWithoutFetchingLatest(e.emoji) ? (0, p.Xe)(e.emoji) : ((0, U.J1)({
             emoji: e.emoji,
             location: ei(en({}, t), {
               object: Q.qAy.EMOJI
@@ -153,7 +153,7 @@ let eu = (e, t) => {
           })
         }
       }
-    }, [a, l, n, f, t, d]), {
+    }, [a, l, n, _, t, d]), {
       gridDispatch: h,
       getItemProps: m,
       getRowProps: g,
@@ -165,7 +165,7 @@ let eu = (e, t) => {
       gridNavigatorId: X.Vr,
       itemGrid: o,
       itemList: s,
-      onGridNavigatorItemSelect: _,
+      onGridNavigatorItemSelect: f,
       onGridNavigatorPositionChange: eu
     });
     return i.useEffect(() => T.kJ.subscribe(e => e.inspectedExpressionPosition, e => {
@@ -188,7 +188,7 @@ let eu = (e, t) => {
       isUsingKeyboardNavigation: y
     }
   },
-  ef = (e, t) => {
+  e_ = (e, t) => {
     let [n, r] = i.useState(null);
     i.useEffect(() => {
       if (null != n) {
@@ -199,7 +199,7 @@ let eu = (e, t) => {
       r(T.kJ.getState().activeCategoryIndex)
     }, [e])
   },
-  e_ = (e, t, n, r) => {
+  ef = (e, t, n, r) => {
     i.useLayoutEffect(() => {
       if (r) {
         var e;
@@ -220,7 +220,7 @@ let eu = (e, t) => {
     let s, {
         pickerIntention: l,
         channel: c,
-        guildId: f,
+        guildId: _,
         closePopout: p,
         emojiSize: A = X.Su.MEDIUM,
         hasTabWrapper: R = !1,
@@ -251,7 +251,7 @@ let eu = (e, t) => {
         autoFocus: ex = !0,
         accessory: eM
       } = ev,
-      ek = (0, u.e7)([L.ZP], () => null != f ? L.ZP.getDefaultChannel(f) : null, [f]),
+      ek = (0, u.e7)([L.ZP], () => null != _ ? L.ZP.getDefaultChannel(_) : null, [_]),
       [ej, eU] = i.useState(null),
       eG = i.useRef(""),
       eB = (0, S.Iu)(e => e.searchQuery),
@@ -259,7 +259,7 @@ let eu = (e, t) => {
       eF = i.useRef(null),
       eZ = i.useRef(null);
     null == c && null != ek && (c = ek);
-    let eH = null != (a = null != (n = null == c ? void 0 : c.getGuildId()) ? n : f) ? a : null,
+    let eH = null != (a = null != (n = null == c ? void 0 : c.getGuildId()) ? n : _) ? a : null,
       [eY, eW] = i.useState(!1),
       eK = x.default.getCurrentUser(),
       ez = (0, k.I5)(eK);
@@ -367,7 +367,7 @@ let eu = (e, t) => {
         getRowProps: tc,
         gridContainerProps: tu,
         handleGridContainerKeyDown: td,
-        isUsingKeyboardNavigation: tf
+        isUsingKeyboardNavigation: t_
       } = ed({
         pickerIntention: l,
         analyticsLocation: e1,
@@ -378,7 +378,7 @@ let eu = (e, t) => {
         channelGuildId: eH,
         isBurstReaction: eY
       });
-    ef(eu, eF), e_(eu, e3, eZ, ex), i.useEffect(() => {
+    e_(eu, eF), ef(eu, e3, eZ, ex), i.useEffect(() => {
       eE || (0, S.ql)("")
     }, [eE]), i.useEffect(() => (M.default.track(Q.rMx.OPEN_POPOUT, en({
       type: null != e$ ? e$ : "Emoji Picker",
@@ -399,7 +399,7 @@ let eu = (e, t) => {
       }
       eG.current = eB
     }, [eB, e1, e5, e4, l]);
-    let t_ = null != eI ? eI : R ? "div" : _.VqE,
+    let tf = null != eI ? eI : R ? "div" : f.VqE,
       tp = null != e9;
     if ((null == ej ? void 0 : ej.type) === Y.Bg.PREMIUM) {
       let e = w.p.NONE;
@@ -449,7 +449,7 @@ let eu = (e, t) => {
       tE = [];
     l === $.Hz.REACTION && tE.push(d.z.SUPER_REACTIONS_NITRO_MARKETING), O.ZP.hasFavoriteEmojis(eH) || tE.push(d.z.EMOJI_PICKER_FAVORITE_EMOJIS_TIP);
     let tb = (0, r.jsx)(h.Z, ei(en({}, e1), {
-      children: (0, r.jsxs)(t_, {
+      children: (0, r.jsxs)(tf, {
         id: X.cZ,
         "aria-labelledby": R ? X.td : void 0,
         role: R ? "tabpanel" : void 0,
@@ -490,7 +490,7 @@ let eu = (e, t) => {
                 getEmojiItemProps: tl,
                 getEmojiRowProps: tc,
                 gridWidth: e9,
-                isUsingKeyboardNavigation: tf,
+                isUsingKeyboardNavigation: t_,
                 onEmojiSelect: th,
                 onSelectSoundmoji: ec,
                 setUpsellConfigs: eU,

@@ -45,13 +45,13 @@ function d(e, t) {
   return n
 }
 
-function f(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function _(e, t) {
+function f(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -86,8 +86,8 @@ let m = i.forwardRef(function(e, t) {
       children: d,
       disabled: p = !1,
       dangerous: h
-    } = e, m = _(e, ["onClick", "onContextMenu", "className", "selected", "children", "disabled", "dangerous"]);
-    return (0, r.jsx)(s.P3F, f(u({
+    } = e, m = f(e, ["onClick", "onContextMenu", "className", "selected", "children", "disabled", "dangerous"]);
+    return (0, r.jsx)(s.P3F, _(u({
       innerRef: t,
       onClick: p ? void 0 : n,
       onContextMenu: p ? void 0 : i,
@@ -105,8 +105,8 @@ let m = i.forwardRef(function(e, t) {
     var {
       className: t,
       children: n
-    } = e, i = _(e, ["className", "children"]);
-    return (0, r.jsx)("div", f(u({
+    } = e, i = f(e, ["className", "children"]);
+    return (0, r.jsx)("div", _(u({
       className: o()(t, l.wrapper)
     }, i), {
       children: n

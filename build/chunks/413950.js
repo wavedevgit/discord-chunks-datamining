@@ -126,13 +126,13 @@ e.exports = function(e) {
     d = e.inherit(c, {
       contains: []
     }),
-    f = e.inherit(u, {
+    _ = e.inherit(u, {
       contains: []
     });
-  c.contains.push(f), u.contains.push(d);
-  let _ = [n, l];
-  return [c, u, d, f].forEach(e => {
-    e.contains = e.contains.concat(_)
+  c.contains.push(_), u.contains.push(d);
+  let f = [n, l];
+  return [c, u, d, _].forEach(e => {
+    e.contains = e.contains.concat(f)
   }), {
     name: "Markdown",
     aliases: ["md", "mkdown", "mkd"],
@@ -141,7 +141,7 @@ e.exports = function(e) {
       variants: [{
         begin: "^#{1,6}",
         end: "$",
-        contains: _ = _.concat(c, u)
+        contains: f = f.concat(c, u)
       }, {
         begin: "(?=^.+?\\n[=-]{2,}$)",
         contains: [{
@@ -149,13 +149,13 @@ e.exports = function(e) {
         }, {
           begin: "^",
           end: "\\n",
-          contains: _
+          contains: f
         }]
       }]
     }, n, a, c, u, {
       className: "quote",
       begin: "^>\\s+",
-      contains: _,
+      contains: f,
       end: "$"
     }, i, r, l, o, {
       scope: "literal",

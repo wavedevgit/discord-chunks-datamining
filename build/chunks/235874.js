@@ -21,7 +21,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,7 +34,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function f(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -46,7 +46,7 @@ function _(e, t) {
 }
 
 function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -104,8 +104,8 @@ class y extends(r = a.Component) {
       onShiftClick: c,
       positionKey: u,
       popoutKey: d,
-      preload: f,
-      disablePointerEvents: _,
+      preload: _,
+      disablePointerEvents: f,
       ignoreModalClicks: p,
       closeOnScroll: h,
       useMouseEnter: m,
@@ -120,7 +120,7 @@ class y extends(r = a.Component) {
     return (0, i.jsx)(l.H, {
       ref: this.ref,
       targetElementRef: this.props.targetElementRef,
-      preload: f,
+      preload: _,
       position: y,
       align: null != a ? a : b(y),
       autoInvert: O,
@@ -135,7 +135,7 @@ class y extends(r = a.Component) {
       onShiftClick: c,
       positionKey: u,
       popoutKey: d,
-      disablePointerEvents: _,
+      disablePointerEvents: f,
       ignoreModalClicks: p,
       closeOnScroll: h,
       useMouseEnter: m,
@@ -187,10 +187,10 @@ function O(e) {
     let e = setTimeout(t, 20 + 20 * Math.random());
     return () => clearTimeout(e)
   });
-  let _ = a.useRef(!1);
+  let f = a.useRef(!1);
   async function m() {
-    if (!_.current) {
-      _.current = !0;
+    if (!f.current) {
+      f.current = !0;
       let e = setTimeout(() => {
           b(() => g), c(e => e + 1)
         }, 300),
@@ -215,10 +215,10 @@ function O(e) {
   return a.useEffect(() => {
     O.current = d
   }), a.useEffect(() => {
-    _.current ? t().then(e => {
+    f.current ? t().then(e => {
       b(() => e), c(e => e + 1)
     }) : b(() => O.current)
-  }, [t]), (0, i.jsx)(y, p(f({
+  }, [t]), (0, i.jsx)(y, p(_({
     ref: r
   }, n), {
     renderPopout: E

@@ -42,13 +42,13 @@ function d(e, t) {
   return n
 }
 
-function f(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function _(e, t) {
+function f(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -77,7 +77,7 @@ class h extends(r = a.Component) {
         tabIndex: s,
         ignoreKeyPress: l
       } = e,
-      c = _(e, ["tag", "focusProps", "innerRef", "onClick", "role", "tabIndex", "ignoreKeyPress"]);
+      c = f(e, ["tag", "focusProps", "innerRef", "onClick", "role", "tabIndex", "ignoreKeyPress"]);
     return a.createElement(t, u({
       ref: this.setRef
     }, c))
@@ -93,7 +93,7 @@ class h extends(r = a.Component) {
         innerRef: s,
         ignoreKeyPress: l
       } = e,
-      c = _(e, ["tag", "onClick", "className", "children", "focusProps", "innerRef", "ignoreKeyPress"]);
+      c = f(e, ["tag", "onClick", "className", "children", "focusProps", "innerRef", "ignoreKeyPress"]);
     return null == n ? a.createElement(t, u({
       ref: this.setRef,
       className: r
@@ -105,7 +105,7 @@ class h extends(r = a.Component) {
     }, c), i)
   }
   render() {
-    return this.context ? this.renderNonInteractive() : (0, i.jsx)(s.t, f(u({}, this.props.focusProps), {
+    return this.context ? this.renderNonInteractive() : (0, i.jsx)(s.t, _(u({}, this.props.focusProps), {
       children: this.renderInner()
     }))
   }

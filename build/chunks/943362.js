@@ -13,8 +13,8 @@ var i = n(120356),
   c = n(364640),
   u = n(124072),
   d = n(198620),
-  f = n(746878),
-  _ = n(981631),
+  _ = n(746878),
+  f = n(981631),
   p = n(833845),
   h = n(606629);
 
@@ -63,7 +63,7 @@ function y(e) {
       let E = m.noStyleAndInteraction ? void 0 : async n => {
         let r = await (0, d.B_)(t.attachmentUrl);
         e.shouldStopPropagation && (null == n || n.stopPropagation()), c.Z.trackLinkClicked(r), e.shouldCloseDefaultModals && (0, o.pTH)(), (0, l.Z)(r)
-      }, y = m.noStyleAndInteraction ? _.dG4 : e => {
+      }, y = m.noStyleAndInteraction ? f.dG4 : e => {
         (0, s.jW)(e, async () => {
           let {
             default: e
@@ -84,7 +84,7 @@ function y(e) {
           size: "xs",
           className: a()(h.icon, p.icon),
           color: "currentColor"
-        }), (0, f.S)(t, i, m)]
+        }), (0, _.S)(t, i, m)]
       }, m.key)
     }
   }

@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(481060),
   u = n(749210),
   d = n(434404),
-  f = n(271383),
-  _ = n(485386),
+  _ = n(271383),
+  f = n(485386),
   p = n(496675),
   h = n(259580),
   m = n(700785),
@@ -98,8 +98,8 @@ function L(e) {
     guild: l,
     guildMember: u,
     roles: d,
-    highestRole: f,
-    canManageRoles: _,
+    highestRole: _,
+    canManageRoles: f,
     onAddRole: p,
     onRemoveRole: I
   } = e, S = i.useRef({}), C = (e, t) => {
@@ -152,7 +152,7 @@ function L(e) {
         disableBorderColor: !0,
         ref: t => C(e.id, t),
         onRemove: () => I(e),
-        canRemove: (null == (a = e.tags) ? void 0 : a.guild_connections) === null ? t.id === n.id : _ && m.r6(l, n.id, f, e)
+        canRemove: (null == (a = e.tags) ? void 0 : a.guild_connections) === null ? t.id === n.id : f && m.r6(l, n.id, _, e)
       }, e.id)
     }),
     {
@@ -202,12 +202,12 @@ function L(e) {
                 children: "+".concat(d.length - L.length)
               })
             })
-          }) : null, _ && null != u ? (0, r.jsx)(b.Z, {
+          }) : null, f && null != u ? (0, r.jsx)(b.Z, {
             buttonRef: B,
             guild: l,
             guildMember: u,
             numRoles: H,
-            highestRole: f,
+            highestRole: _,
             onAddRole: p
           }) : null]
         }))
@@ -223,7 +223,7 @@ function x(e) {
     guild: a
   } = e, {
     trackUserProfileAction: o
-  } = (0, g.KZ)(), s = (0, l.e7)([f.ZP], () => f.ZP.getMember(a.id, t.id)), c = (0, l.e7)([_.Z], () => _.Z.getRoles(a.id)), h = null == s ? void 0 : s.roles, E = i.useMemo(() => null == h || 0 === h.length ? [] : Object.values(c).filter(e => h.includes(e.id)).sort((e, t) => {
+  } = (0, g.KZ)(), s = (0, l.e7)([_.ZP], () => _.ZP.getMember(a.id, t.id)), c = (0, l.e7)([f.Z], () => f.Z.getRoles(a.id)), h = null == s ? void 0 : s.roles, E = i.useMemo(() => null == h || 0 === h.length ? [] : Object.values(c).filter(e => h.includes(e.id)).sort((e, t) => {
     var n, r;
     let i = (null == (n = e.tags) ? void 0 : n.guild_connections) !== null,
       a = (null == (r = t.tags) ? void 0 : r.guild_connections) !== null;
