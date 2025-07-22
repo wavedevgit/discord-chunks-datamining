@@ -25,9 +25,9 @@ var r = n(255367),
   _ = n(496675),
   C = n(626135),
   N = n(768581),
-  E = n(63063),
+  S = n(63063),
   I = n(709054),
-  S = n(51144),
+  E = n(51144),
   T = n(466070),
   w = n(585835),
   P = n(997787),
@@ -76,8 +76,8 @@ function W(e) {
     canCreateWebhook: q,
     onManageBuiltIn: Y,
     onManageCustomWebhooks: X,
-    onManageFollowedChannels: $,
-    onManageApplication: J,
+    onManageFollowedChannels: J,
+    onManageApplication: $,
     onManageLobbiesLinked: Q
   } = e, ee = (0, m.ZP)(), [et, en] = i.useState(""), {
     isFetchingConnections: er,
@@ -148,7 +148,7 @@ function W(e) {
         icon: u.T39,
         text: k.intl.formatToPlainString(k.t.Nu9sam, {
           timestamp: I.default.extractTimestamp(l.id),
-          user: S.ZP.getUserTag(l.user)
+          user: E.ZP.getUserTag(l.user)
         })
       }) : o.push({
         icon: u.T39,
@@ -162,7 +162,7 @@ function W(e) {
         buttonText: k.intl.string(k.t["Z/qRnJ"]),
         hasNextSection: !0,
         onButtonClick: () => {
-          J(i.id), C.default.track(Z.rMx.APP_MANAGE_CTA_CLICKED, {
+          $(i.id), C.default.track(Z.rMx.APP_MANAGE_CTA_CLICKED, {
             application_id: i.id,
             guild_id: null == W ? void 0 : W.id,
             is_admin: null != W ? _.Z.can(Z.Plq.ADMINISTRATOR, W) : void 0
@@ -174,7 +174,7 @@ function W(e) {
         canShowMigrationTooltip: n
       }, "integration-".concat(l.id))
     }),
-    eE = (0, r.jsx)("div", {
+    eS = (0, r.jsx)("div", {
       className: D.footerImage
     });
   0 === eN.length && eo && (eN = function(e, t, n) {
@@ -230,9 +230,9 @@ function W(e) {
         })
       });
     return t > 0 ? l : o
-  }(ee, ef, null == W ? void 0 : W.id), eE = null);
-  let eI = E.Z.getArticleURL(Z.BhN.INTEGRATIONS),
-    eS = null != H ? k.t.YV0vh4 : k.t.FnZEJi,
+  }(ee, ef, null == W ? void 0 : W.id), eS = null);
+  let eI = S.Z.getArticleURL(Z.BhN.INTEGRATIONS),
+    eE = null != H ? k.t.YV0vh4 : k.t.FnZEJi,
     eT = [];
   if (el) {
     let e, t, i, o, a;
@@ -253,7 +253,7 @@ function W(e) {
       }]
     }, "webhooks"))), (null == H ? void 0 : H.type) === Z.d4z.GUILD_VOICE || (null == H ? void 0 : H.type) != null && Z.TPd.GUILD_THREADS_ONLY.has(H.type) || eT.push((l = V.length, l > 0 ? (a = (0, r.jsx)(u.LJT, {
       size: "xs"
-    }), o = $) : (i = k.intl.string(k.t["ZwSt+f"]), o = () => open(E.Z.getArticleURL(Z.BhN.CHANNEL_FOLLOWING))), (0, r.jsx)(w.Z, {
+    }), o = J) : (i = k.intl.string(k.t["ZwSt+f"]), o = () => open(S.Z.getArticleURL(Z.BhN.CHANNEL_FOLLOWING))), (0, r.jsx)(w.Z, {
       name: k.intl.string(k.t.OrV60t),
       icon: u.AsW,
       buttonText: i,
@@ -327,10 +327,10 @@ function W(e) {
   }(eu, em, Y));
   let ew = null != H && ea && null != es;
   return (0, r.jsxs)(u.hjN, {
-    className: o()(null != eE ? D.footerPlaceholder : null),
+    className: o()(null != eS ? D.footerPlaceholder : null),
     children: [(0, r.jsx)(u.R94, {
       type: u.geA.DESCRIPTION,
-      children: k.intl.format(eS, {
+      children: k.intl.format(eE, {
         helpdeskArticle: eI
       })
     }), (0, r.jsx)(u.$i$, {
@@ -368,7 +368,7 @@ function W(e) {
           query: et,
           setQuery: en
         }) : null, eN]
-      }) : null, eE]
+      }) : null, eS]
     })]
   })
 }

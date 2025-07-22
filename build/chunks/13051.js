@@ -25,9 +25,9 @@ var r = n(255367),
   _ = n(768581),
   C = n(709054),
   N = n(486199),
-  E = n(981631),
+  S = n(981631),
   I = n(388032),
-  S = n(796920),
+  E = n(796920),
   T = n(20493);
 
 function w(e) {
@@ -94,7 +94,7 @@ function P(e) {
       h.Z.syncIntegration(n.id, l.id)
     }, [n.id, l.id]),
     H = i.useCallback(() => {
-      null != l.role_id && (h.Z.setSection(E.pNK.ROLES), h.Z.selectRole(l.role_id))
+      null != l.role_id && (h.Z.setSection(S.pNK.ROLES), h.Z.selectRole(l.role_id))
     }, [l.role_id]),
     {
       serviceName: G,
@@ -170,18 +170,18 @@ function P(e) {
       })
     }]
   }
-  let $ = (0, r.jsxs)(g.Z, {
-      className: S.header,
+  let J = (0, r.jsxs)(g.Z, {
+      className: E.header,
       align: g.Z.Align.CENTER,
       children: [(0, r.jsx)(N.Z, {
         name: "".concat(l.name),
-        detailsClassName: S.description,
+        detailsClassName: E.description,
         details: t
       }), l.enabled ? (0, r.jsx)(g.Z.Child, {
         shrink: 0,
         grow: 0,
         children: (0, r.jsx)(v.Z, {
-          className: S.expandIcon,
+          className: E.expandIcon,
           expanded: P && !R,
           "aria-hidden": !0
         })
@@ -202,12 +202,12 @@ function P(e) {
         })
       })]
     }),
-    J = null;
-  return P && !R && null != a && (J = (0, r.jsxs)(g.Z, {
-    className: S.body,
+    $ = null;
+  return P && !R && null != a && ($ = (0, r.jsxs)(g.Z, {
+    className: E.body,
     direction: g.Z.Direction.VERTICAL,
     children: [(0, r.jsx)(p.$i$, {
-      className: S.topDivider
+      className: E.topDivider
     }), function(e) {
       let {
         integration: t,
@@ -224,7 +224,7 @@ function P(e) {
             className: T.marginBottom8,
             children: I.intl.string(I.t.eBtNBQ)
           }), (0, r.jsx)(p.Text, {
-            className: S.syncedRole,
+            className: E.syncedRole,
             color: "header-primary",
             variant: "text-sm/normal",
             children: o
@@ -265,7 +265,7 @@ function P(e) {
       roleLink: q,
       onSync: W
     }), (0, r.jsx)(p.$i$, {
-      className: S.midDivider
+      className: E.midDivider
     }), function(e) {
       let {
         integration: t,
@@ -349,7 +349,7 @@ function P(e) {
           })
         }), (0, r.jsx)(g.Z, {
           wrap: g.Z.Wrap.WRAP,
-          className: S.__invalid_twitchEmojis,
+          className: E.__invalid_twitchEmojis,
           children: n.map((e, t) => (0, r.jsx)(p.ua7, {
             text: e.name,
             children: t => (0, r.jsx)("img", w({
@@ -357,7 +357,7 @@ function P(e) {
                 name: e.name
               }),
               draggable: !1,
-              className: o()(S.emoji, "emoji", "jumboable"),
+              className: o()(E.emoji, "emoji", "jumboable"),
               src: _.ZP.getEmojiURL({
                 id: e.id,
                 animated: e.animated,
@@ -376,10 +376,10 @@ function P(e) {
         })
       }
     }) : null, (0, r.jsx)(p.$i$, {
-      className: S.bottomDivider
+      className: E.bottomDivider
     }), (0, r.jsx)(g.Z, {
       children: (0, r.jsx)(u.zx, {
-        className: S.disableButton,
+        className: E.disableButton,
         size: u.zx.Sizes.SMALL,
         color: u.zx.Colors.RED,
         look: u.zx.Looks.LINK,
@@ -389,15 +389,15 @@ function P(e) {
     })]
   })), (0, r.jsx)(p.Zbd, {
     editable: !0,
-    className: S.card,
+    className: E.card,
     children: (0, r.jsxs)(g.Z, {
       direction: g.Z.Direction.VERTICAL,
       children: [l.enabled ? (0, r.jsx)(p.P3F, {
-        className: S.expandableHeader,
+        className: E.expandableHeader,
         "aria-expanded": P && !R,
         onClick: Z,
-        children: $
-      }) : $, J]
+        children: J
+      }) : J, $]
     })
   })
 }

@@ -25,7 +25,7 @@ var r = n(255367),
   _ = n(51144),
   C = n(981631),
   N = n(388032),
-  E = n(555781);
+  S = n(555781);
 
 function I(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -46,7 +46,7 @@ function I(e) {
   return e
 }
 
-function S(e, t) {
+function E(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -73,7 +73,7 @@ function T(e) {
       let {
         default: e
       } = await n.e("5396").then(n.bind(n, 731646));
-      return t => (0, r.jsx)(e, S(I({}, t), {
+      return t => (0, r.jsx)(e, E(I({}, t), {
         id: l,
         label: N.intl.string(N.t.oJ1Mu7)
       }))
@@ -135,20 +135,20 @@ function w(e) {
   }, [c, n, s]);
   return null == p || null == m ? null : (0, r.jsxs)("div", {
     onContextMenu: h,
-    className: E.identifier,
+    className: S.identifier,
     children: [(0, r.jsx)(p, {
       size: "custom",
       width: 20,
       height: 20,
       color: "currentColor",
-      className: o()(E.channelIcon, E.image)
+      className: o()(S.channelIcon, S.image)
     }), (0, r.jsx)(u.Text, {
-      className: E.roleName,
+      className: S.roleName,
       color: "header-primary",
       variant: "text-md/normal",
       children: m
     }), null != f ? (0, r.jsxs)(u.Text, {
-      className: E.tag,
+      className: S.tag,
       variant: "text-sm/normal",
       children: ["(", f, ")"]
     }) : null, l ? (0, r.jsx)(A, {
@@ -173,7 +173,7 @@ function P(e) {
       let {
         default: e
       } = await n.e("14486").then(n.bind(n, 786746));
-      return t => (0, r.jsx)(e, S(I({}, t), {
+      return t => (0, r.jsx)(e, E(I({}, t), {
         guild: l,
         role: b
       }))
@@ -181,17 +181,17 @@ function P(e) {
   }, [l, b]);
   return (null == b ? void 0 : b.name) == null ? null : (0, r.jsxs)("div", {
     onContextMenu: x,
-    className: E.identifier,
+    className: S.identifier,
     children: [null != g ? (0, r.jsx)(f.Z, I({
-      className: o()(E.__invalid_icon, E.image)
+      className: o()(S.__invalid_icon, S.image)
     }, g)) : (0, r.jsx)(u.lZ8, {
       size: "custom",
       width: 23,
       height: 23,
-      className: o()(E.shield, E.image),
+      className: o()(S.shield, S.image),
       color: null != (t = b.colorString) ? t : (0, c.Rf)(C.p6O)
     }), (0, r.jsx)(u.Text, {
-      className: E.roleName,
+      className: S.roleName,
       color: "header-primary",
       variant: "text-md/normal",
       children: b.name
@@ -214,19 +214,19 @@ function Z(e) {
   }, [t.id, n]), c = (0, d.e7)([v.Z], () => v.Z.hidePersonalInformation);
   return null == a ? null : (0, r.jsxs)("div", {
     onContextMenu: o,
-    className: E.identifier,
+    className: S.identifier,
     children: [(0, r.jsx)(u.qEK, {
-      className: E.image,
+      className: S.image,
       src: a.getAvatarURL(t.id, 24),
       "aria-label": a.username,
       size: u.EFr.SIZE_24
     }), (0, r.jsx)(u.Text, {
-      className: E.roleName,
+      className: S.roleName,
       color: "header-primary",
       variant: "text-md/normal",
       children: null != s ? s : a.username
     }), c ? null : (0, r.jsx)(u.Text, {
-      className: E.tag,
+      className: S.tag,
       variant: "text-sm/normal",
       children: _.ZP.getUserTag(a)
     }), i ? (0, r.jsx)(A, {
@@ -241,8 +241,8 @@ function A(e) {
   } = e;
   return (0, r.jsx)(u.ua7, {
     text: t,
-    children: e => (0, r.jsx)("div", S(I({
-      className: E.lockIcon
+    children: e => (0, r.jsx)("div", E(I({
+      className: S.lockIcon
     }, e), {
       children: (0, r.jsx)(u.mBM, {
         size: "xs",

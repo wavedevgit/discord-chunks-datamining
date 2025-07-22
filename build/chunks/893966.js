@@ -305,13 +305,17 @@ function X(e) {
         member: n,
         source_invite_code: r,
         join_source_type: i,
-        inviter_id: a
-      } = t, o = n.user;
-      return e.memberIds.push(o.id), e.memberSupplementals.push({
-        userId: o.id,
+        join_source_application_id: a,
+        join_source_channel_id: o,
+        inviter_id: s
+      } = t, l = n.user;
+      return e.memberIds.push(l.id), e.memberSupplementals.push({
+        userId: l.id,
         sourceInviteCode: r,
         joinSourceType: i,
-        inviterId: a
+        joinSourceApplicationId: a,
+        joinSourceChannelId: o,
+        inviterId: s
       }), e
     }, {
       memberIds: [],

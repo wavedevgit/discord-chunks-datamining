@@ -1,6 +1,6 @@
 /**
   Module ID: 7104
-  Original File Name: 6a36e89078f93822
+  Original File Name: ddc57f0777eca4c4
 **/
 .imageUploader_e4d0bf {
     font-size: 12px;
@@ -1967,6 +1967,7 @@
 }
 
 .inviteCode__1de14 {
+    font-family: var(--font-code);
     overflow: hidden;
     text-overflow: ellipsis;
     -webkit-user-select: text;
@@ -1975,7 +1976,25 @@
     white-space: nowrap
 }
 
-.countdown__1de14,.inviteCode__1de14,.uses__1de14 {
+.inviteSourceContainer__1de14 {
+    max-width: 100%;
+    overflow: hidden
+}
+
+.linkedChannelJoinSource__1de14 {
+    align-items: center;
+    display: flex;
+    gap: 4px
+}
+
+.linkedChannelJoinSourceText__1de14 {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.countdown__1de14,.uses__1de14 {
     font-family: var(--font-code)
 }
 
@@ -2006,4 +2025,4 @@
     margin-bottom: 20px
 }
 
-/*# sourceMappingURL=6a36e89078f93822.css.map*/
+/*# sourceMappingURL=ddc57f0777eca4c4.css.map*/

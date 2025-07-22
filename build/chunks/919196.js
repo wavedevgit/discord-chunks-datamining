@@ -1,6 +1,6 @@
 /** Chunk was on 7104 **/
 n.d(t, {
-  Z: () => E
+  Z: () => S
 }), n(388685), n(539854), n(953529);
 var r = n(255367),
   i = n(73800),
@@ -96,26 +96,26 @@ function N(e) {
   }), t))
 }
 
-function E(e) {
+function S(e) {
   var t;
   let {
     guild: n,
     applicationIntegration: s,
     selectableWebhookChannels: d,
-    editedWebhook: E,
+    editedWebhook: S,
     errors: I,
-    canNavigate: S
+    canNavigate: E
   } = e, {
     application: T,
     integration: w,
     webhooks: P
   } = s, [Z, A] = (0, o.Wu)([m.Z], () => [m.Z.can(v.Plq.MANAGE_ROLES, n), null == T.bot || m.Z.canManageUser(v.Plq.MANAGE_GUILD, T.bot.id, n)], [T.bot, n]), k = (0, o.e7)([m.Z], () => m.Z.can(v.Plq.MANAGE_WEBHOOKS, n), [n]), D = i.useCallback(() => {
-    S() && (0, a.h7j)(e => (0, r.jsx)(N, C({
+    E() && (0, a.h7j)(e => (0, r.jsx)(N, C({
       guild: n,
       application: T,
       integration: w
     }, e)))
-  }, [T, S, n, w]), R = i.useMemo(() => {
+  }, [T, E, n, w]), R = i.useMemo(() => {
     let e = [{
       icon: a.T39,
       text: y.intl.formatToPlainString(y.t.gcdJ8P, {
@@ -154,7 +154,7 @@ function E(e) {
       className: _.headerDescription
     }) : null, Z ? (0, r.jsx)(u.Z, {
       application: T,
-      canNavigate: S,
+      canNavigate: E,
       guildId: n.id
     }) : null, (0, r.jsx)(a.$i$, {
       className: _.headerDivider
@@ -177,10 +177,10 @@ function E(e) {
         title: y.intl.string(y.t["t9ZX/P"])
       }), P.length > 0 ? (0, r.jsx)(O.Z, {
         webhooks: P,
-        editedWebhook: E,
+        editedWebhook: S,
         selectableWebhookChannels: d,
         errors: I,
-        canNavigate: S
+        canNavigate: E
       }) : (0, r.jsx)(a.Zbd, {
         className: _.emptyCard,
         editable: !0,

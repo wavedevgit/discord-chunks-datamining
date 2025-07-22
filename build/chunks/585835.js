@@ -29,9 +29,9 @@ function _(e) {
     name: _,
     icon: C,
     imageSrc: N,
-    iconBackgroundColor: E,
+    iconBackgroundColor: S,
     iconClassName: I,
-    iconWrapperClassName: S,
+    iconWrapperClassName: E,
     details: T,
     integration: w,
     buttonText: P,
@@ -120,14 +120,14 @@ function _(e) {
     }),
     Y = (0, p.LD)(D, !0),
     X = (null == w ? void 0 : w.application) != null && Object.keys(null != (l = null == (n = Y.result) || null == (t = n.sections[w.application.id]) ? void 0 : t.commands) ? l : {}).length > 0,
-    $ = (0, r.jsxs)(m.Z, {
+    J = (0, r.jsxs)(m.Z, {
       children: [(0, r.jsx)(x.Z, {
         name: _,
         icon: C,
         imageSrc: N,
-        iconBackgroundColor: E,
+        iconBackgroundColor: S,
         iconClassName: I,
-        iconWrapperClassName: S,
+        iconWrapperClassName: E,
         details: T,
         isPremium: q.length > 0
       }), (0, r.jsx)(m.Z.Child, {
@@ -188,11 +188,11 @@ function _(e) {
     children: (0, r.jsx)(d.Zbd, {
       editable: !0,
       className: o()(y.card, y.clickable),
-      children: $
+      children: J
     })
   }) : (0, r.jsx)(d.Zbd, {
     editable: !0,
     className: y.card,
-    children: $
+    children: J
   })
 }

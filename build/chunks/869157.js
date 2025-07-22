@@ -25,9 +25,9 @@ var r = n(255367),
   _ = n(5192),
   C = n(709054),
   N = n(360606),
-  E = n(905753),
+  S = n(905753),
   I = n(399860),
-  S = n(335049),
+  E = n(335049),
   T = n(617012),
   w = n(981631),
   P = n(388032),
@@ -76,7 +76,7 @@ function D(e) {
   } = e, h = (0, c.e7)([O.Z], () => O.Z.getGuild(l));
   o()(null != h, "");
   let x = (0, c.e7)([j.Z], () => j.Z.getRoles(l)),
-    [y, S] = i.useState(new Set),
+    [y, E] = i.useState(new Set),
     T = i.useMemo(() => {
       let e = (0, b.bD)(l),
         t = s()(x).sortBy(e => e.position).reduce((e, t, n) => (e[t.id] = n, e), {});
@@ -124,9 +124,9 @@ function D(e) {
     }, [n, p]);
   i.useEffect(() => {
     let e = Object.values(p).filter(e => e.type === m.Kw.USER && !e.canRead && !y.has(e.id)).map(e => e.id);
-    0 !== e.length && (u.Z.requestMembersById(l, e, !1), S(t => new Set([...t, ...e])))
-  }, [l, p, y, S]);
-  let A = (0, c.e7)([E.Z], () => E.Z.getApplicationId()),
+    0 !== e.length && (u.Z.requestMembersById(l, e, !1), E(t => new Set([...t, ...e])))
+  }, [l, p, y, E]);
+  let A = (0, c.e7)([S.Z], () => S.Z.getApplicationId()),
     k = (0, c.e7)([N.default], () => null == A ? void 0 : N.default.integrations.find(e => {
       var t;
       return (null == (t = e.application) ? void 0 : t.id) === A
@@ -166,8 +166,8 @@ function R(e) {
     _ = f.id === a.id || f.id === (0, b.bD)(a.id),
     C = null == j || null == (n = j.application) || null == (t = n.bot) ? void 0 : t.username,
     N = !f.canWrite || !v,
-    E = x.default.getId();
-  v ? f.canWrite || (f.type === m.Kw.USER ? o = f.id === E ? P.intl.string(P.t["1VF/09"]) : P.intl.string(P.t.P1GnER) : f.type === m.Kw.ROLE && (o = P.intl.string(P.t.mcAijY))) : o = null != s ? P.intl.string(P.t.tybdam) : P.intl.string(P.t.z2hjk5);
+    S = x.default.getId();
+  v ? f.canWrite || (f.type === m.Kw.USER ? o = f.id === S ? P.intl.string(P.t["1VF/09"]) : P.intl.string(P.t.P1GnER) : f.type === m.Kw.ROLE && (o = P.intl.string(P.t.mcAijY))) : o = null != s ? P.intl.string(P.t.tybdam) : P.intl.string(P.t.z2hjk5);
   let I = O && null != j && f.id === a.id && void 0 !== C && !f.permission;
   i.useEffect(() => {
     if (I) {
@@ -223,7 +223,7 @@ function R(e) {
     className: Z.entryItem,
     children: [(0, r.jsx)("div", {
       className: Z.entryName,
-      children: (0, r.jsx)(S.Z, {
+      children: (0, r.jsx)(E.Z, {
         guild: a,
         id: f.id,
         type: f.type,
