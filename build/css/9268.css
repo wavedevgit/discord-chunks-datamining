@@ -1,6 +1,6 @@
 /**
   Module ID: 9268
-  Original File Name: 766641aa3f195830
+  Original File Name: e326b41bf6503b82
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -9640,13 +9640,6 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
     position: relative
 }
 
-.gradientBackground__15b9a {
-    bottom: 0;
-    position: absolute;
-    transform: rotate(180deg);
-    z-index: 1
-}
-
 .contentContainer__15b9a {
     max-width: 800px;
     position: relative;
@@ -9944,12 +9937,6 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
     transform: translateX(-50%)
 }
 
-.gradientBackground__3849c {
-    position: absolute;
-    top: 0;
-    z-index: 0
-}
-
 .affinitiesContainer__3849c,.referrerAttributionContainer__3849c {
     margin: 0 auto
 }
@@ -9958,7 +9945,6 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
     bottom: 0;
     display: flex;
     justify-content: center;
-    margin-bottom: -100%;
     position: -webkit-sticky;
     position: sticky;
     z-index: 1
@@ -10510,6 +10496,17 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
 .scroller_f48ee4 {
     background-color: var(--background-base-low);
     contain: layout size
+}
+
+.topOfPageGradient_f48ee4 {
+    position: absolute;
+    top: 0
+}
+
+.bottomOfPageGradient_f48ee4 {
+    bottom: 0;
+    position: absolute;
+    transform: rotate(180deg)
 }
 
 .container_c880e8 {
@@ -20036,4 +20033,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=766641aa3f195830.css.map*/
+/*# sourceMappingURL=e326b41bf6503b82.css.map*/
