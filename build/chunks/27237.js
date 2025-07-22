@@ -6,15 +6,15 @@ var r = n(255367),
   o = n(73800),
   i = n(120356),
   s = n.n(i),
-  a = n(793030),
-  l = n(481060),
+  l = n(793030),
+  a = n(481060),
   c = n(808189),
   u = n(973772),
   d = n(838968),
   p = n(262212),
   m = n(279604),
-  _ = n(279475),
-  f = n(535396),
+  f = n(279475),
+  _ = n(535396),
   x = n(981631),
   v = n(93841),
   g = n(388032),
@@ -36,7 +36,7 @@ function E(e) {
         [b.boostContainerActive]: n,
         [j.active]: n
       }),
-      children: (0, r.jsx)(l.$Eu, {
+      children: (0, r.jsx)(a.$Eu, {
         size: "sm",
         color: "white"
       })
@@ -48,7 +48,7 @@ function h(e) {
   let {
     isActive: t,
     index: n
-  } = e, i = (0, _.d)(t), s = (0, _.u)(t), l = o.useMemo(() => {
+  } = e, i = (0, f.d)(t), s = (0, f.u)(t), a = o.useMemo(() => {
     let e = c.C[n];
     if (null == e) return [];
     let t = e.tier === x.Eu4.TIER_3 ? e.perks.slice(0, -1) : e.perks;
@@ -57,7 +57,7 @@ function h(e) {
       children: [(0, r.jsx)(e.icon, {
         color: s,
         size: "sm"
-      }), (0, r.jsx)(a.xv, {
+      }), (0, r.jsx)(l.xv, {
         className: b.perkText,
         color: i,
         variant: "text-sm/medium",
@@ -67,9 +67,9 @@ function h(e) {
   }, [n, s, i]);
   return (0, r.jsxs)("div", {
     className: b.perkRowContainer,
-    children: [l, (0, r.jsx)("div", {
+    children: [a, (0, r.jsx)("div", {
       className: b.perkRow,
-      children: (0, r.jsx)(a.xv, {
+      children: (0, r.jsx)(l.xv, {
         color: i,
         variant: "text-sm/medium",
         children: g.intl.string(v.default.nIj3LS)
@@ -84,9 +84,9 @@ function C(e) {
     index: n,
     powerup: i,
     nextPowerup: s
-  } = e, l = (0, u.Z)(t, i), c = (0, u.Z)(t, s), x = l.type !== f.A3.INACTIVE, v = c.type !== f.A3.INACTIVE, g = l.type === f.A3.TIER_OVERRIDE_ACTIVATED, [C, I] = o.useState(void 0);
+  } = e, a = (0, u.Z)(t, i), c = (0, u.Z)(t, s), x = a.type !== _.A3.INACTIVE, v = c.type !== _.A3.INACTIVE, g = a.type === _.A3.TIER_OVERRIDE_ACTIVATED, [C, I] = o.useState(void 0);
   (0, m.KT)(C);
-  let N = (0, _.d)(x);
+  let N = (0, f.d)(x);
   return (0, r.jsxs)(d.Z, {
     guildId: t,
     powerup: i,
@@ -97,7 +97,7 @@ function C(e) {
       nextActive: null != s ? v : void 0
     }), (0, r.jsxs)("div", {
       className: j.contentContainer,
-      children: [(0, r.jsx)(a.X6, {
+      children: [(0, r.jsx)(l.X6, {
         variant: "heading-md/bold",
         color: N,
         children: i.title

@@ -1,6 +1,6 @@
 /**
   Module ID: 88388
-  Original File Name: 740e3b9454b84274
+  Original File Name: 0f8c35458bc8b3f3
 **/
 .editCard_a25a68 {
     background-color: var(--background-surface-high);
@@ -2311,6 +2311,14 @@
     min-width: auto
 }
 
+.headerActions_d7a3d0 {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: flex-end
+}
+
 .formDescription_d7a3d0 {
     margin-bottom: 16px
 }
@@ -2330,10 +2338,6 @@
 
 .headerExpanded_d7a3d0 {
     background-color: var(--background-base-lowest)
-}
-
-.cancel_d7a3d0 {
-    color: var(--interactive-active)
 }
 
 .headerImageContainer_d7a3d0 {
@@ -12400,4 +12404,4 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     width: 8px
 }
 
-/*# sourceMappingURL=740e3b9454b84274.css.map*/
+/*# sourceMappingURL=0f8c35458bc8b3f3.css.map*/
