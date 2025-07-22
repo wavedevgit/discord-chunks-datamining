@@ -1,6 +1,6 @@
 /**
   Module ID: 88388
-  Original File Name: 0f8c35458bc8b3f3
+  Original File Name: ebaf44094703806c
 **/
 .editCard_a25a68 {
     background-color: var(--background-surface-high);
@@ -3807,9 +3807,14 @@
 }
 
 .buttonPreview__3c9fa {
+    align-items: center;
+    border-radius: var(--radius-sm);
     color: var(--white-500);
+    cursor: pointer;
+    display: flex;
     flex-grow: 1;
-    height: auto
+    height: auto;
+    justify-content: center
 }
 
 .hideColorButtons__3c9fa {
@@ -12404,4 +12409,4 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     width: 8px
 }
 
-/*# sourceMappingURL=0f8c35458bc8b3f3.css.map*/
+/*# sourceMappingURL=ebaf44094703806c.css.map*/
