@@ -5,7 +5,7 @@ n.d(t, {
 });
 let r = (0, n(818083).B)({
   kind: "user",
-  id: "2025-07_guild_profile_invite_embed_holdout",
+  id: "2025-07_guild_profile_invite_embed_holdout_two",
   label: "Holdout for guild profile invite embeds",
   defaultConfig: {
     enabled: !1
