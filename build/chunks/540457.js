@@ -12,9 +12,21 @@ function s(e) {
   let {
     text: t,
     tooltipText: n,
-    onClick: s
+    onClick: s,
+    disabled: a
   } = e;
-  return (0, r.jsx)(i.ua7, {
+  return a ? (0, r.jsxs)("div", {
+    className: l.container,
+    children: [(0, r.jsx)(i.qJs, {
+      size: "md",
+      color: "currentColor",
+      className: l.icon
+    }), (0, r.jsx)(i.Text, {
+      color: "interactive-active",
+      variant: "text-md/semibold",
+      children: t
+    })]
+  }) : (0, r.jsx)(i.ua7, {
     text: n,
     shouldShow: null != n,
     children: e => {

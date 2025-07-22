@@ -43,7 +43,7 @@ function o(e) {
           className: l()(a.pill, {
             [a.disabled]: e.disabled
           }, n),
-          onClick: e.onClick,
+          onClick: e.disabled ? void 0 : e.onClick,
           children: (0, r.jsx)(s.Text, {
             tag: "span",
             variant: "text-sm/medium",

@@ -477,14 +477,31 @@ let eK = (0, Y.oH)((e, t, n) => {
         filter: n,
         boosters: r,
         limit: i = 10,
-        request: a = !0
+        users: a
       } = e;
-      return a && t.length > 0 && z.Z.requestMembers(null, t, i), eU({
+      return eU({
         query: t,
-        members: s()(Z.default.getUsers()).values().value(),
+        members: a,
         limit: i,
         filter: n,
         boosters: r
+      })
+    },
+    queryAllUsers(e) {
+      let {
+        query: t,
+        filter: n,
+        boosters: r,
+        limit: i = 10,
+        request: a = !0
+      } = e;
+      return a && t.length > 0 && z.Z.requestMembers(null, t, i), this.queryUsers({
+        query: t,
+        limit: i,
+        request: a,
+        filter: n,
+        boosters: r,
+        users: s()(Z.default.getUsers()).values().value()
       })
     },
     queryChannels(e) {

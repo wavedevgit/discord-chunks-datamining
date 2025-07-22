@@ -1,6 +1,6 @@
 /**
   Module ID: 88358
-  Original File Name: 3b21a2421fde495b
+  Original File Name: 0551b3ea604405a2
 **/
 .root__11e4a {
     width: 400px
@@ -48,8 +48,9 @@
     margin-bottom: 32px
 }
 
-.button__11e4a {
+.buttonContainer__11e4a {
+    align-self: center;
     margin: 0 8px 24px
 }
 
-/*# sourceMappingURL=3b21a2421fde495b.css.map*/
+/*# sourceMappingURL=0551b3ea604405a2.css.map*/
