@@ -64,19 +64,19 @@ let P = function(e) {
     G = (0, i.e7)([p.Z], () => p.Z.getSimilarApplications({
       applicationId: null == A ? void 0 : A.id
     })),
-    z = a.useMemo(() => null == G ? void 0 : G.applications.slice(0, 3), [G]),
-    B = {
-      displayedSimilarApplications: z,
+    B = a.useMemo(() => null == G ? void 0 : G.applications.slice(0, 3), [G]),
+    U = {
+      displayedSimilarApplications: B,
       previousView: k
     },
-    U = a.useRef(B);
+    z = a.useRef(U);
   a.useEffect(() => {
-    U.current = B
+    z.current = U
   }), a.useEffect(() => {
     let {
       displayedSimilarApplications: e,
       previousView: t
-    } = U.current;
+    } = z.current;
     (null == A ? void 0 : A.id) != null && M !== p.M.FETCHING && (0, m.zZ)(I.rMx.APP_DIRECTORY_PAGE_VIEWED, {
       current_page: f.m_.APPLICATION,
       previous_page: null == t ? void 0 : t.type,
@@ -145,7 +145,7 @@ let P = function(e) {
             }), V, (0, r.jsx)(C.Z, {
               applicationId: t,
               fetchState: M,
-              similarApplications: z,
+              similarApplications: B,
               onSelectApplication: D,
               similarLoadId: null == G ? void 0 : G.loadId
             })]

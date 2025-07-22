@@ -49,7 +49,7 @@ function T(e) {
       page: a,
       categoryId: null != (t = Number(n.get("category_id"))) ? t : P.GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID
     }
-  }, [R.search]), M = (0, o.e7)([_.Z], () => _.Z.getCategories()), G = a.useMemo(() => null == M ? void 0 : M.find(e => e.id === k), [M, k]), z = a.useCallback(e => {
+  }, [R.search]), M = (0, o.e7)([_.Z], () => _.Z.getCategories()), G = a.useMemo(() => null == M ? void 0 : M.find(e => e.id === k), [M, k]), B = a.useCallback(e => {
     (0, v.zZ)(E.rMx.APP_DIRECTORY_SEARCHED, {
       search_term: w,
       num_results: e,
@@ -76,12 +76,12 @@ function T(e) {
         pageSize: P.PAGE_SIZE,
         source: s.F.APP_DIRECTORY
       },
-      onSuccessCallback: z
+      onSuccessCallback: B
     })
-  }, [k, D, w, z]);
+  }, [k, D, w, B]);
   let {
-    fetchState: B,
-    searchResults: U
+    fetchState: U,
+    searchResults: z
   } = (0, o.cj)([b.Z], () => ({
     fetchState: b.Z.getFetchState({
       query: w,
@@ -122,7 +122,7 @@ function T(e) {
     }({
       [x.MU]: e.totalCount
     }, e.countsByCategory) : {}
-  }), V = (0, d.Z)(U), H = a.useMemo(() => B === f.M.FETCHING ? V : U, [B, V, U]), Y = a.useCallback(e => {
+  }), V = (0, d.Z)(z), H = a.useMemo(() => U === f.M.FETCHING ? V : z, [U, V, z]), Y = a.useCallback(e => {
     (0, I.pR)({
       query: w,
       categoryId: k,
@@ -166,8 +166,8 @@ function T(e) {
                 onSelectCategory: W
               })
             }), (0, r.jsx)(C.Z, {
-              loading: B === f.M.FETCHING,
-              children: B === f.M.FETCHED && (null == H || (null == H ? void 0 : H.results.length) === 0) ? (0, r.jsx)(S.Z, {
+              loading: U === f.M.FETCHING,
+              children: U === f.M.FETCHED && (null == H || (null == H ? void 0 : H.results.length) === 0) ? (0, r.jsx)(S.Z, {
                 selectedCategoryId: null != k ? k : K.id,
                 searchAllCategories: () => W(K)
               }) : (0, r.jsx)("div", {

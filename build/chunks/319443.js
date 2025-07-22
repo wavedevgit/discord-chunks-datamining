@@ -1,6 +1,6 @@
 /** Chunk was on 88934 **/
 n.r(t), n.d(t, {
-  default: () => U
+  default: () => z
 }), n(388685), n(781311);
 var r = n(255367),
   a = n(73800),
@@ -40,7 +40,7 @@ var r = n(255367),
   M = n(388032),
   G = n(691133);
 
-function z(e) {
+function B(e) {
   let {
     applicationId: t,
     hideDetailHeaderButtons: n,
@@ -77,7 +77,7 @@ function z(e) {
   })
 }
 
-function B() {
+function U() {
   let e = a.useCallback(() => {
       (0, S.qF)()
     }, []),
@@ -111,7 +111,7 @@ function B() {
     })]
   })
 }
-let U = function() {
+let z = function() {
   var e;
   let t = (0, o.e7)([b.default], () => !b.default.isAuthenticated()),
     {
@@ -120,7 +120,7 @@ let U = function() {
       resetScrollPosition: y
     } = (0, u.M)(),
     R = (0, N.Xh)(),
-    U = (0, S.nu)(),
+    z = (0, S.nu)(),
     F = (null == R ? void 0 : R.type) === N.m_.CATEGORY ? R.categoryId : void 0,
     {
       applicationId: V,
@@ -161,8 +161,8 @@ let U = function() {
   }, [er, en, null == ea ? void 0 : ea.id]), a.useEffect(() => {
     C.CP()
   }, []), a.useEffect(() => {
-    U && C.g5()
-  }, [U]), a.useEffect(() => N.aQ.setState({
+    z && C.g5()
+  }, [z]), a.useEffect(() => N.aQ.setState({
     lastItem: R
   }), [R]);
   let {
@@ -218,13 +218,13 @@ let U = function() {
     className: l()(G.outerContainer, {
       [G.loggedOutContainer]: t
     }),
-    children: [t ? (0, r.jsx)(B, {}) : null, (0, r.jsxs)("div", {
+    children: [t ? (0, r.jsx)(U, {}) : null, (0, r.jsxs)("div", {
       className: G.innerContainer,
       children: [(0, r.jsxs)(m.ZP, {
         variant: eb ? m._6.RELATIVE : m._6.OVERLAY,
         children: [!eb && (0, r.jsx)(m.z6, {
           scrollPosition: i
-        }), el ? (0, r.jsx)(z, {
+        }), el ? (0, r.jsx)(B, {
           applicationId: V,
           hideDetailHeaderButtons: ee,
           onClickBack: ex
