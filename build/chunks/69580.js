@@ -180,7 +180,7 @@ function es() {
   return (0, r.jsx)(X.G, {
     removeChildWrapper: !0,
     children: (0, r.jsx)(el, eo(ei({
-      transitionState: m.Dv.ENTERED
+      transitionState: m.D.ENTERED
     }, t), {
       showLogout: !0,
       isExternalStandaloneOAuthPage: !0,

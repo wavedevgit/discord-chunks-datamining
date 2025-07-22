@@ -101,7 +101,7 @@ function I(e) {
       hideHeader: i
     } = e,
     a = y(e, ["hideHeader"]);
-  return (0, r.jsxs)(o.IX, b(g({}, a), {
+  return (0, r.jsxs)(o.I, b(g({}, a), {
     onClose: () => {
       var e;
       return Promise.resolve(null == (e = a.onClose) ? void 0 : e.call(a))

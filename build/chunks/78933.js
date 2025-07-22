@@ -308,7 +308,7 @@ function ea(e) {
                             }
                             return r
                           }(e, ["onClose"]);
-                        return (0, i.jsx)(o.IX, (t = es({
+                        return (0, i.jsx)(o.I, (t = es({
                           onClose: r
                         }, s), n = n = {
                           size: "sm",

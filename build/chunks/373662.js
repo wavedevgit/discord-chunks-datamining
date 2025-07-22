@@ -63,8 +63,8 @@ let g = s.forwardRef(function(e, t) {
     disabled: x,
     dangerous: E,
     separator: C,
-    sparkle: O,
-    showNewBadge: v,
+    sparkle: v,
+    showNewBadge: O,
     buttonClassName: I,
     children: j
   } = e, R = f(e, ["label", "ariaLabel", "tooltipText", "tooltipColor", "icon", "iconProps", "onClick", "onTooltipShow", "onTooltipHide", "disabled", "dangerous", "separator", "sparkle", "showNewBadge", "buttonClassName", "children"]);
@@ -115,7 +115,7 @@ let g = s.forwardRef(function(e, t) {
           }, _)) : null, null != j ? (0, r.jsx)("div", {
             className: a()(h.icon, h.buttonContent),
             children: j
-          }) : null, O && (0, r.jsx)(i.K1N, {}), v && (0, r.jsx)(i.IGR, {
+          }) : null, v && (0, r.jsx)(i.K1N, {}), O && (0, r.jsx)(i.IGR, {
             text: d.intl.string(d.t.y2b7CA),
             color: o.Z.BG_BRAND,
             className: h.newBadge

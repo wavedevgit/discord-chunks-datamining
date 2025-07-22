@@ -46,7 +46,7 @@ let v = () => (0, r.jsx)(u.Z, {
     return (i.useEffect(() => {
       C && j === m.t && a()
     }, [C, a, j]), j === m.t) ? null : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsxs)(o.IX, {
+      children: [(0, r.jsxs)(o.I, {
         transitionState: t,
         "aria-labelledby": O,
         size: "xl",

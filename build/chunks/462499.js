@@ -43,7 +43,7 @@ function f(e) {
     onSave: y,
     onDelete: G,
     onIconUpload: S
-  } = e, [X, P] = r.useState(null != (n = null == N ? void 0 : N.title) ? n : ""), [U, B] = r.useState(null != (l = null == N ? void 0 : N.description) ? l : ""), [R, T] = r.useState(function(e) {
+  } = e, [P, U] = r.useState(null != (n = null == N ? void 0 : N.title) ? n : ""), [X, B] = r.useState(null != (l = null == N ? void 0 : N.description) ? l : ""), [R, T] = r.useState(function(e) {
     if (null == e) return null;
     let n = p.Z.getChannel(e.channelId);
     return null == n ? null : {
@@ -56,9 +56,9 @@ function f(e) {
   }), q = (0, s.Wu)([C.Z], () => {
     var e, n;
     return (null != (n = null == (e = C.Z.getSettings()) ? void 0 : e.resourceChannels) ? n : []).map(e => e.channelId)
-  }), w = X.length < h.n || null == R, H = r.useCallback(() => {
-    null == R || X.length <= 0 || (y(b(R, X, U, W)), f())
-  }, [y, f, X, R, W, U]), K = r.useCallback(() => {
+  }), w = P.length < h.n || null == R, H = r.useCallback(() => {
+    null == R || P.length <= 0 || (y(b(R, P, X, W)), f())
+  }, [y, f, P, R, W, X]), K = r.useCallback(() => {
     null == G || G(), f()
   }, [G, f]), L = r.useCallback(e => {
     T(e)
@@ -77,8 +77,8 @@ function f(e) {
       className: _.channelIcon
     })
   }, [Z]), E = r.useCallback(e => {
-    null != S && null != R && S(b(R, X, U), e)
-  }, [R, X, S, U]), J = r.useCallback(() => null == W || null == R ? null : j.ZP.getResourceChannelIconURL({
+    null != S && null != R && S(b(R, P, X), e)
+  }, [R, P, S, X]), J = r.useCallback(() => null == W || null == R ? null : j.ZP.getResourceChannelIconURL({
     channelId: R.value,
     icon: W
   }), [R, W]), z = r.useMemo(() => [{
@@ -91,7 +91,7 @@ function f(e) {
     onClick: H,
     disabled: w
   }], [H, w, f]);
-  return (0, a.jsxs)(c.IX, {
+  return (0, a.jsxs)(c.I, {
     transitionState: i,
     onClose: f,
     children: [(0, a.jsx)("div", {
@@ -136,8 +136,8 @@ function f(e) {
           color: "header-primary",
           children: [I.intl.string(I.t["lFy+aW"]), (0, a.jsx)(k.Z, {})]
         }), (0, a.jsx)(u.oil, {
-          value: X,
-          onChange: P,
+          value: P,
+          onChange: U,
           placeholder: I.intl.string(I.t.XKUimJ),
           maxLength: h.am
         })]
@@ -150,7 +150,7 @@ function f(e) {
           color: "header-primary",
           children: I.intl.string(I.t.CnkilJ)
         }), (0, a.jsx)(u.Kx8, {
-          value: U,
+          value: X,
           onChange: B,
           placeholder: I.intl.string(I.t.na0V4O),
           maxLength: h.Vu

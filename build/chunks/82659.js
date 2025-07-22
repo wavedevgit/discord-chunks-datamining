@@ -80,7 +80,7 @@ function h(e) {
     children: g
   } = e, E = _(e, ["size", "title", "subtitle", "input", "preview", "actions", "actionBarInput", "children"]);
   let b = null != t ? t : null != d || null != g ? "md" : "sm";
-  return (0, r.jsxs)(i.IX, f(u({}, E), {
+  return (0, r.jsxs)(i.I, f(u({}, E), {
     size: b,
     children: [(0, r.jsx)(l.x, {
       title: n,

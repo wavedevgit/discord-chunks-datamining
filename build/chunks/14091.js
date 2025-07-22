@@ -24,8 +24,8 @@ var r = n(255367),
   x = n(944486),
   E = n(585483),
   C = n(72006),
-  O = n(965996),
-  v = n(652399),
+  v = n(965996),
+  O = n(652399),
   I = n(970850),
   j = n(861262),
   R = n(251285),
@@ -73,13 +73,13 @@ class H extends s.Component {
         l = 0;
       null != t.props.searchResults && o()(t.props.searchResults).flatten().filter(e => e.isSearchHit).forEach(e => {
         null != e.content && "" !== e.content && (n++, /https?:\/\/[^\s]+/.test(e.content) && l++), null != e.embeds && e.embeds.length > 0 && s++, null != e.attachments && e.attachments.length > 0 && r++
-      }), 0 === n ? (0, v.Qb)({
+      }), 0 === n ? (0, O.Qb)({
         searchId: t.props.searchId,
         searchType: t.props.searchType,
         searchAnalyticsId: t.props.searchAnalyticsId,
         searchQueryString: F(t.props.searchId),
         searchQuery: b.Z.getQuery(t.props.searchId)
-      }) : (0, v.hM)({
+      }) : (0, O.hM)({
         searchType: t.props.searchType,
         searchId: t.props.searchId,
         searchAnalyticsId: t.props.searchAnalyticsId,
@@ -169,7 +169,7 @@ class U extends s.PureComponent {
         onSearchModeChange: l,
         searchMode: a
       } = this.props;
-      e === a || r || ((0, v.zW)({
+      e === a || r || ((0, O.zW)({
         searchId: t,
         searchType: n,
         searchAnalyticsId: s,
@@ -250,7 +250,7 @@ class U extends s.PureComponent {
           offset: i,
           totalResults: o
         } = this.props.search;
-      (0, v.sL)({
+      (0, O.sL)({
         searchId: s,
         searchType: l,
         searchAnalyticsId: a,
@@ -272,7 +272,7 @@ class U extends s.PureComponent {
         searchType: n,
         searchAnalyticsId: r
       } = this.props;
-      (0, v.t6)({
+      (0, O.t6)({
         searchId: t,
         searchType: n,
         searchAnalyticsId: r,
@@ -450,7 +450,7 @@ function q(e) {
   }), a = s.useRef(null), [i, o] = s.useState(!1), {
     enabled: c,
     force: u
-  } = (0, O.f)({
+  } = (0, v.f)({
     location: "SearchResults"
   });
   s.useEffect(() => {

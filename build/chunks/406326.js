@@ -27,7 +27,17 @@ function m(e) {
     documentsIndexed: y
   } = e, b = (0, c.U)({
     location: "SearchHeader"
-  }), x = (0, i.e7)([u.Z], () => u.Z.getSearchResultsQueryString(t)), E = s.useMemo(() => t === p.aib.DMS && b ? (0, h.j2)(null != x ? x : "", p.dCx.FILTER_IN) ? null : f.intl.string(f.t.tc619f) : null, [t, b, x]);
+  }), x = (0, i.e7)([u.Z], () => u.Z.getSearchResultsQueryString(t)), E = s.useMemo(() => {
+    if (t === p.aib.DMS && b) {
+      var e, n;
+      let t = (0, h.kG)(null != x ? x : ""),
+        r = null != (n = null == (e = (0, h.$G)(t).channel_id) ? void 0 : e.length) ? n : 0;
+      return r > 0 ? f.intl.format(f.t.A2dqWF, {
+        filterCount: r
+      }) : f.intl.string(f.t.tc619f)
+    }
+    return null
+  }, [t, b, x]);
   return (0, r.jsxs)("header", {
     className: a()(g.searchHeader, {
       [g.searchHeaderWithSubtitle]: null != E
@@ -167,10 +177,10 @@ function x(e) {
   });
   return null != n ? (0, r.jsxs)("div", {
     className: g.totalResultsWithSubtitle,
-    children: [a, null != n && (0, r.jsx)(o.Text, {
+    children: [a, (0, r.jsx)(o.Text, {
       variant: "text-xs/medium",
       color: "text-secondary",
-      children: f.intl.string(f.t.tc619f)
+      children: n
     })]
   }) : a
 }

@@ -49,10 +49,10 @@ function S(e) {
   }), [D, q] = r.useState(() => {
     var e;
     return new Set(null != (e = null == f ? void 0 : f.channelIds) ? e : [])
-  }), [Q, X] = r.useState(() => {
+  }), [Q, z] = r.useState(() => {
     var e;
     return new Set(null != (e = null == f ? void 0 : f.roleIds) ? e : [])
-  }), [z, Y] = r.useState({}), A = r.useRef(null);
+  }), [X, Y] = r.useState({}), A = r.useRef(null);
   r.useLayoutEffect(() => {
     var e;
     return null == (e = A.current) ? void 0 : e.focus()
@@ -84,7 +84,7 @@ function S(e) {
       onClick: F,
       variant: "primary"
     }], [F, n]);
-  return (0, i.jsxs)(c.IX, {
+  return (0, i.jsxs)(c.I, {
     transitionState: t,
     onClose: n,
     children: [(0, i.jsx)("div", {
@@ -118,7 +118,7 @@ function S(e) {
         maxLength: O.NE,
         autoFocus: !0
       }), (0, i.jsx)(m.pdY, {
-        error: z.title
+        error: X.title
       }), (0, i.jsx)(u.Is, {
         className: P.descriptionInput,
         placeholder: C.intl.string(C.t.mIjgJC),
@@ -143,12 +143,12 @@ function S(e) {
         selectedRoleIds: Q,
         disableEveryoneRole: !0,
         placeholder: C.intl.string(C.t.aFO1Iy),
-        onChange: X,
+        onChange: z,
         helperText: C.intl.string(C.t.Mbvpv7),
         className: P.searchInput,
         selectableRoleFilter: e => !e.managed
-      }), null == z.roles ? null : (0, i.jsx)(m.pdY, {
-        error: z.roles
+      }), null == X.roles ? null : (0, i.jsx)(m.pdY, {
+        error: X.roles
       }), (0, i.jsx)(_, {
         guild: b,
         roleIds: Q
