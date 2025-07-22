@@ -1,6 +1,6 @@
 /** Chunk was on 3496 **/
 t.d(e, {
-  L: () => c
+  L: () => f
 });
 var n = t(255367);
 t(73800);
@@ -17,17 +17,17 @@ let i = ["#008456", "#6BE473"],
   }],
   o = ["#FFB84B", "#FFE361"],
   g = [.4, .8],
-  f = [{
+  v = [{
     base: 5,
     tint: 1
   }, {
     base: 3,
     tint: 1
   }],
-  c = A => {
+  f = A => {
     var e, t, {
-        width: c = 24,
-        height: v = 24,
+        width: f = 24,
+        height: c = 24,
         primaryTintColor: h,
         secondaryTintColor: u
       } = A,
@@ -57,7 +57,7 @@ let i = ["#008456", "#6BE473"],
       secondaryBaseColors: o,
       secondaryTintColor: u,
       secondaryTintLuminances: g,
-      secondaryLuminanceWeights: f
+      secondaryLuminanceWeights: v
     });
     return (0, n.jsxs)("svg", (e = function(A) {
       for (var e = 1; e < arguments.length; e++) {
@@ -77,8 +77,8 @@ let i = ["#008456", "#6BE473"],
       }
       return A
     }({}, (0, r.Z)(E)), t = t = {
-      width: c,
-      height: v,
+      width: f,
+      height: c,
       viewBox: "0 0 16 16",
       fill: "none",
       xmlns: "http://www.w3.org/2000/svg",

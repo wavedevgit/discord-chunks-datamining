@@ -1,4 +1,4 @@
-/** Chunk was on 36006 **/
+/** Chunk was on 88625 **/
 "use strict";
 n.d(t, {
   E: () => p,
@@ -27,8 +27,8 @@ function g(e) {
     buttonPosition: i = p.BOTTOM,
     notice: g,
     ctaLabel: b,
-    ctaLoading: v,
-    ctaDisabled: m,
+    ctaLoading: m,
+    ctaDisabled: v,
     ctaClassName: h,
     onClick: O
   } = e, y = (0, c.ZP)();
@@ -50,8 +50,8 @@ function g(e) {
           color: (0, l.wj)(y) ? o.zx.Colors.WHITE : o.zx.Colors.CUSTOM,
           size: o.Ph.MEDIUM,
           onClick: O,
-          disabled: m,
-          submitting: v,
+          disabled: v,
+          submitting: m,
           children: (0, r.jsx)(a.Text, {
             className: f.ctaButtonText,
             variant: "text-sm/medium",

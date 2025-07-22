@@ -1,4 +1,4 @@
-/** Chunk was on 36006 **/
+/** Chunk was on 88625 **/
 "use strict";
 n.d(t, {
   Z: () => h
@@ -16,8 +16,8 @@ var r = n(255367),
   p = n(594174),
   g = n(5192),
   b = n(981631),
-  v = n(388032),
-  m = n(264700);
+  m = n(388032),
+  v = n(264700);
 
 function h(e) {
   var t;
@@ -25,9 +25,9 @@ function h(e) {
     guildId: n,
     role: s,
     theme: h,
-    content: O = v.intl.string(v.t["6OSasb"]),
+    content: O = m.intl.string(m.t["6OSasb"]),
     className: y
-  } = e, E = (0, o.e7)([p.default], () => p.default.getCurrentUser()), j = g.ZP.useName(n, null, E), S = (0, c.Kz)(s), x = i.useMemo(() => {
+  } = e, E = (0, o.e7)([p.default], () => p.default.getCurrentUser()), S = g.ZP.useName(n, null, E), j = (0, c.Kz)(s), x = i.useMemo(() => {
     var e, t;
     return (0, u.e5)((e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -67,18 +67,18 @@ function h(e) {
     })(Object(t)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e))
-  }, [E, O]), P = {
-    nick: j,
+  }, [E, O]), C = {
+    nick: S,
     colorString: null != (t = s.colorString) ? t : void 0
   };
   return (0, r.jsx)(a.f6W, {
     theme: h,
     children: e => (0, r.jsx)("div", {
-      className: l()(e, m.container, y),
+      className: l()(e, v.container, y),
       children: (0, r.jsx)(f.Z, {
         hideTimestamp: !0,
-        author: P,
-        roleIcon: S,
+        author: C,
+        roleIcon: j,
         message: x,
         isGroupStart: !0,
         disableInteraction: !0

@@ -1,4 +1,4 @@
-/** Chunk was on 61636 **/
+/** Chunk was on 67032 **/
 n.d(t, {
   Z: () => s
 });
@@ -25,7 +25,7 @@ function s(e, t, n) {
         callback: () => requestAnimationFrame(() => e())
       })
     }), [t]),
-    d = i.useCallback(() => new Promise(e => {
+    u = i.useCallback(() => new Promise(e => {
       let n = t.current;
       if (null == n) return e();
       n.scrollTo({
@@ -38,7 +38,7 @@ function s(e, t, n) {
     isEnabled: s,
     setFocus: a,
     scrollToStart: c,
-    scrollToEnd: d,
+    scrollToEnd: u,
     orientation: null == n ? void 0 : n.orientation
   })
 }

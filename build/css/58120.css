@@ -1,6 +1,6 @@
 /**
   Module ID: 58120
-  Original File Name: e0ae585e277e0b45
+  Original File Name: a7098798ed3b432d
 **/
 .container_f89b2c {
     background-color: var(--input-background);
@@ -85,14 +85,6 @@
     cursor: pointer
 }
 
-.recorderContainer__2636e.hasValue__2636e .addKeybindButton__2636e {
-    width: 34px
-}
-
-.recorderContainer__2636e.hasValue__2636e:not(.containerDisabled__2636e):focus-within .addKeybindButton__2636e,.recorderContainer__2636e.hasValue__2636e:not(.containerDisabled__2636e):hover .addKeybindButton__2636e {
-    width: 128px
-}
-
 .recorderContainer__2636e:not(.containerDisabled__2636e):focus-within,.recorderContainer__2636e:not(.containerDisabled__2636e):hover {
     border-color: hsl(var(--red-400-hsl)/.3)
 }
@@ -148,50 +140,6 @@
     user-select: none
 }
 
-.editIcon__2636e {
-    background-image: url(/assets/fcbc6283c85dd170.svg);
-    height: 24px;
-    left: 50%;
-    margin-left: -12px;
-    margin-top: -12px;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    width: 24px
-}
-
-.full-motion .editIcon__2636e {
-    transition: opacity .2s ease-in-out,transform .2s ease-in-out
-}
-
-.hasValue__2636e .editIcon__2636e {
-    opacity: 1;
-    transform: translateZ(0)
-}
-
-.hasValue__2636e:not(.containerDisabled__2636e):focus-within .editIcon__2636e,.hasValue__2636e:not(.containerDisabled__2636e):hover .editIcon__2636e {
-    opacity: 0;
-    transform: translate3d(-200%,0,0)
-}
-
-.text__2636e {
-    opacity: 1
-}
-
-.full-motion .text__2636e {
-    transition: opacity .2s ease-in-out,transform .2s ease-in-out
-}
-
-.hasValue__2636e .text__2636e {
-    opacity: 0;
-    transform: translate3d(200%,0,0)
-}
-
-.hasValue__2636e:not(.containerDisabled__2636e):focus-within .text__2636e,.hasValue__2636e:not(.containerDisabled__2636e):hover .text__2636e {
-    opacity: 1;
-    transform: translateZ(0)
-}
-
 @keyframes shadowPulse__2636e {
     0% {
         box-shadow: 0 0 6px hsl(var(--red-400-hsl)/.3)
@@ -204,6 +152,11 @@
     to {
         box-shadow: 0 0 6px hsl(var(--red-400-hsl)/.3)
     }
+}
+
+.buttonContainer__2636e {
+    max-width: 128px;
+    padding: 4px
 }
 
 .warning__915cb {
@@ -230,4 +183,4 @@
     margin-top: 8px
 }
 
-/*# sourceMappingURL=e0ae585e277e0b45.css.map*/
+/*# sourceMappingURL=a7098798ed3b432d.css.map*/

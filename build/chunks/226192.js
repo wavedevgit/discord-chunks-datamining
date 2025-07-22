@@ -1,8 +1,8 @@
-/** Chunk was on 61636 **/
+/** Chunk was on 67032 **/
 n.d(t, {
   UV: () => _,
-  _s: () => d,
-  kW: () => u,
+  _s: () => u,
+  kW: () => d,
   km: () => c
 });
 var i = n(255367);
@@ -67,10 +67,10 @@ function c(e) {
       (0, r.ZDy)(async () => {
         let {
           default: r
-        } = await n.e("74543").then(n.bind(n, 643611)), d = t.actions.find(e => e.type === l.jj.FLAG_TO_CHANNEL);
+        } = await n.e("74543").then(n.bind(n, 643611)), u = t.actions.find(e => e.type === l.jj.FLAG_TO_CHANNEL);
         return n => (0, i.jsx)(r, a(s({
           action: o,
-          isEdit: null != d,
+          isEdit: null != u,
           triggerType: t.triggerType,
           guildId: e,
           onEditChannel: e => {
@@ -101,7 +101,7 @@ function c(e) {
   }
 }
 
-function d(e, t, l, o) {
+function u(e, t, l, o) {
   (0, r.ZDy)(async () => {
     let {
       default: r
@@ -117,7 +117,7 @@ function d(e, t, l, o) {
   })
 }
 
-function u(e, t) {
+function d(e, t) {
   (0, r.ZDy)(async () => {
     let {
       default: r

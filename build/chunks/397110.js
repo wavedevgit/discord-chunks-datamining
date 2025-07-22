@@ -19,9 +19,9 @@ let i = ["#847D8B", "#D1CDD5"],
     var e, t, {
         width: o = 24,
         height: g = 24,
-        primaryTintColor: f
+        primaryTintColor: v
       } = A,
-      c = function(A, e) {
+      f = function(A, e) {
         if (null == A) return {};
         var t, n, r = function(A, e) {
           if (null == A) return {};
@@ -37,10 +37,10 @@ let i = ["#847D8B", "#D1CDD5"],
         return r
       }(A, ["width", "height", "primaryTintColor"]);
     let {
-      primaryColorsTransformed: v
+      primaryColorsTransformed: c
     } = (0, l.s)({
       primaryBaseColors: i,
-      primaryTintColor: f,
+      primaryTintColor: v,
       primaryTintLuminances: s,
       primaryLuminanceWeights: a
     });
@@ -61,7 +61,7 @@ let i = ["#847D8B", "#D1CDD5"],
         })
       }
       return A
-    }({}, (0, r.Z)(c)), t = t = {
+    }({}, (0, r.Z)(f)), t = t = {
       width: o,
       height: g,
       viewBox: "0 0 16 16",
@@ -71,7 +71,7 @@ let i = ["#847D8B", "#D1CDD5"],
         "clip-path": "url(#clip0_290_14574)",
         children: [(0, n.jsx)("path", {
           d: "M13 8V6H14V4H15V1H11V3H10V7H11V8H5V7H6V3H5V1H1V4H2V6H3V8H4V9H3V10H2V12H1V14H2V15H14V14H15V12H14V10H13V9H12V8H13Z",
-          fill: v[1]
+          fill: c[1]
         }), (0, n.jsx)("path", {
           d: "M5 8H4V6H3V4H2V2H4V4H5V8Z",
           fill: "#FF7FC0"
@@ -97,10 +97,10 @@ let i = ["#847D8B", "#D1CDD5"],
           fill: "black"
         }), (0, n.jsx)("path", {
           d: "M2 14H1V13H2V14Z",
-          fill: v[0]
+          fill: c[0]
         }), (0, n.jsx)("path", {
           d: "M15 14H14V13H15V14Z",
-          fill: v[0]
+          fill: c[0]
         }), (0, n.jsx)("path", {
           d: "M1 14H0V12H1V14Z",
           fill: "black"
@@ -166,10 +166,10 @@ let i = ["#847D8B", "#D1CDD5"],
           fill: "black"
         }), (0, n.jsx)("path", {
           d: "M14 14H12V15H14V14Z",
-          fill: v[0]
+          fill: c[0]
         }), (0, n.jsx)("path", {
           d: "M4 14H2V15H4V14Z",
-          fill: v[0]
+          fill: c[0]
         })]
       }), (0, n.jsx)("defs", {
         children: (0, n.jsx)("clipPath", {

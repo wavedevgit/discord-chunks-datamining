@@ -1,8 +1,8 @@
-/** Chunk was on 61636 **/
+/** Chunk was on 67032 **/
 n.d(t, {
   Hr: () => s,
   P4: () => c,
-  TR: () => d,
+  TR: () => u,
   mz: () => l,
   tM: () => a,
   xv: () => o
@@ -12,4 +12,4 @@ var i, r, l = ((i = {}).GET_STARTED_CLICK = "get_started_click", i.DISMISS_FULL_
 let s = "hasClickedGuildShopProductPreviewTab",
   a = "hasClickedGuildShopChannelRow",
   c = "https://discord.com/servershop",
-  d = "1 GB"
+  u = "1 GB"

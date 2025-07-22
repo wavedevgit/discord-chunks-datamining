@@ -1,9 +1,9 @@
 /** Chunk was on 3496 **/
 t.d(e, {
-  RE: () => c,
+  RE: () => f,
   RN: () => h,
   po: () => E,
-  vN: () => v,
+  vN: () => c,
   xb: () => d,
   zq: () => u
 });
@@ -14,8 +14,8 @@ var n, r = t(73800),
   a = t(485386),
   o = t(430824),
   g = t(594174),
-  f = t(91047);
-let c = (A, e) => {
+  v = t(91047);
+let f = (A, e) => {
   let {
     guildId: t,
     userId: n,
@@ -29,14 +29,14 @@ let c = (A, e) => {
   })
 };
 
-function v(A, e, t, n) {
+function c(A, e, t, n) {
   let {
     analyticsLocations: l
   } = (0, i.ZP)();
   return r.useCallback(r => {
     if (null == A) return;
     let i = g.default.getUser(A.userId);
-    null != i && (r.stopPropagation(), (0, f.nm)(r, {
+    null != i && (r.stopPropagation(), (0, v.nm)(r, {
       user: i,
       guildId: A.guildId,
       analyticsLocations: null != t ? [t] : l,
@@ -53,7 +53,7 @@ function h(A, e, t) {
   return r.useCallback(r => {
     if (null == A) return;
     let l = g.default.getUser(A.userId);
-    null != l && (r.stopPropagation(), (0, f._j)(r, {
+    null != l && (r.stopPropagation(), (0, v._j)(r, {
       user: l,
       guildId: A.guildId,
       analyticsLocations: null != e ? [e] : n,

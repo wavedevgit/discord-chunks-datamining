@@ -1,6 +1,6 @@
 /**
   Module ID: 58121
-  Original File Name: 7f82b44c20566a2f
+  Original File Name: 2ee1fd0993ee3921
 **/
 .coverContainer__2f300 {
     align-items: center;
@@ -1099,25 +1099,6 @@
     background: var(--background-gradient-chat,var(--home-background))
 }
 
-.returnButton__0b563 {
-    margin-left: 8px;
-    margin-right: 0;
-    max-width: 200px;
-    padding: 2px 8px
-}
-
-.returnButtonText__0b563 {
-    display: flex;
-    flex-direction: row
-}
-
-.returnIcon__0b563 {
-    height: 16px;
-    margin-left: 4px;
-    margin-right: -2px;
-    width: 16px
-}
-
 .container__0b563 {
     display: flex;
     flex-direction: column
@@ -1156,14 +1137,4 @@
     display: none
 }
 
-.returnButton__0b563 .returnIcon__0b563 {
-    color: inherit
-}
-
-.returnIconContainer__0b563 {
-    height: 16px;
-    margin-right: 6px;
-    width: 16px
-}
-
-/*# sourceMappingURL=7f82b44c20566a2f.css.map*/
+/*# sourceMappingURL=2ee1fd0993ee3921.css.map*/

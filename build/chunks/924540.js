@@ -1,9 +1,9 @@
-/** Chunk was on 36006 **/
+/** Chunk was on 88625 **/
 "use strict";
 n.d(t, {
   $H: () => b,
-  GN: () => v,
-  _y: () => m
+  GN: () => m,
+  _y: () => v
 });
 var r = n(255367),
   i = n(73800),
@@ -86,14 +86,14 @@ function b(e) {
     intervalType: null == s ? void 0 : s.interval,
     intervalCount: null == s ? void 0 : s.interval_count
   });
-  return (0, r.jsx)(m, {
+  return (0, r.jsx)(v, {
     isTabSelected: n,
     badgeCopy: l,
     offerExpiresAt: i.expires_at
   })
 }
 
-function v(e) {
+function m(e) {
   let {
     isTabSelected: t,
     userDiscount: n,
@@ -101,14 +101,14 @@ function v(e) {
   } = e, s = f.intl.formatToPlainString(f.t.iiLbvr, {
     percent: n.discount.amount
   });
-  return (0, r.jsx)(m, {
+  return (0, r.jsx)(v, {
     isTabSelected: t,
     badgeCopy: i ? s : f.intl.string(f.t["/DTtr6"]),
     offerExpiresAt: n.expires_at
   })
 }
 
-function m(e) {
+function v(e) {
   let {
     isTabSelected: t,
     badgeCopy: n,

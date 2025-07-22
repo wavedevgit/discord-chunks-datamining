@@ -164,11 +164,11 @@ function N(e) {
     containerWidth: a - 200
   }), P = (0, s.e7)([f.ZP], () => null != f.ZP.getGuildSidebarState(t), [t]), R = (0, h.L)({
     guildId: t
-  }), y = l.useMemo(() => n === p.e.ALL_MEMBERS ? P : null != R && null != R.user, [n, P, R]), w = l.useMemo(() => E.slice(0, S + 1), [S, E]), A = l.useMemo(() => E.slice(S + 1), [S, E]), Z = (0, m.Z)(e => {
+  }), y = l.useMemo(() => n === p.e.ALL_MEMBERS ? P : null != R && null != R.user, [n, P, R]), w = l.useMemo(() => E.slice(0, S + 1), [S, E]), A = l.useMemo(() => E.slice(S + 1), [S, E]), M = (0, m.Z)(e => {
     let t = e.contentRect.width;
     null != t && C.current !== t && (c(t), C.current = t)
   });
-  return (0, u.s)(x, Z, [y]), (0, r.jsxs)(r.Fragment, {
+  return (0, u.s)(x, M, [y]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(b.Z.Divider, {
       className: v.divider
     }), (0, r.jsxs)("div", {

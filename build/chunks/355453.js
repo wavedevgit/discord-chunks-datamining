@@ -1,6 +1,6 @@
 /** Chunk was on 58120 **/
 n.d(t, {
-  default: () => m
+  default: () => g
 }), n(388685);
 var i = n(255367),
   r = n(73800),
@@ -15,18 +15,18 @@ var i = n(255367),
   p = n(710111),
   b = n(981631),
   f = n(388032),
-  g = n(267205);
+  m = n(267205);
 
-function m(e) {
+function g(e) {
   var t;
   let {
     transitionState: n,
-    onClose: m
-  } = e, _ = (0, s.e7)([u.ZP], () => u.ZP.getKeybindForAction(b.kg4.SOUNDBOARD_HOLD)), [y, E] = r.useState(null != (t = null == _ ? void 0 : _.shortcut) ? t : []), D = r.useCallback(() => {
-    if (0 === y.length) return null != _ && l.Z.deleteKeybind(_.id), m();
+    onClose: g
+  } = e, _ = (0, s.e7)([u.ZP], () => u.ZP.getKeybindForAction(b.kg4.SOUNDBOARD_HOLD)), [E, y] = r.useState(null != (t = null == _ ? void 0 : _.shortcut) ? t : []), D = r.useCallback(() => {
+    if (0 === E.length) return null != _ && l.Z.deleteKeybind(_.id), g();
     if (null == _) l.Z.addKeybind({
       action: b.kg4.SOUNDBOARD_HOLD,
-      shortcut: y,
+      shortcut: E,
       enabled: !0,
       params: {}
     });
@@ -50,7 +50,7 @@ function m(e) {
         }
         return e
       }({}, _), t = t = {
-        shortcut: y
+        shortcut: E
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -62,53 +62,53 @@ function m(e) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
       }), e))
     }
-    m()
-  }, [_, m, y]);
+    g()
+  }, [_, g, E]);
   r.useEffect(() => (d.Z.disable(), () => {
     d.Z.enable()
   }), []);
-  let v = r.useMemo(() => [{
+  let C = r.useMemo(() => [{
     text: f.intl.string(f.t["ETE/oK"]),
-    onClick: m,
+    onClick: g,
     variant: "secondary"
   }, {
     text: f.intl.string(f.t.R3BPHx),
     onClick: D,
     variant: "primary"
-  }], [m, D]);
+  }], [g, D]);
   return (0, i.jsxs)(o.u, {
     transitionState: n,
     title: f.intl.string(f.t["0Osu39"]),
-    actions: v,
-    onClose: m,
+    actions: C,
+    onClose: g,
     children: [(0, i.jsx)(a.Wn, {
-      className: g.warning,
+      className: m.warning,
       messageType: a.QYI.WARNING,
       children: f.intl.string(f.t["O2v/eH"])
     }), (0, i.jsx)(a.X6q, {
-      className: g.formHeader,
+      className: m.formHeader,
       variant: "eyebrow",
       color: "header-secondary",
       children: f.intl.string(f.t.UUpADw)
     }), (0, i.jsx)(a.Text, {
-      className: g.action,
+      className: m.action,
       variant: "text-md/normal",
       children: f.intl.string(f.t["1xFbPz"])
     }), (0, i.jsx)(a.Text, {
-      className: g.actionDescription,
+      className: m.actionDescription,
       variant: "text-sm/normal",
       children: f.intl.string(f.t.laNlTk)
     }), (0, i.jsx)(a.X6q, {
-      className: g.formHeader,
+      className: m.formHeader,
       variant: "eyebrow",
       color: "header-secondary",
       children: f.intl.string(f.t["1La4tL"])
     }), (0, i.jsx)(c.Z, {
-      defaultValue: y,
-      onChange: E
+      defaultValue: E,
+      onChange: y
     }), (0, i.jsx)(a.eee, {
-      className: g.resetButton,
-      onClick: () => E((0, h.Kd)(p.D_)),
+      className: m.resetButton,
+      onClick: () => y((0, h.Kd)(p.D_)),
       children: f.intl.string(f.t["s7+2ra"])
     })]
   })

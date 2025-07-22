@@ -23,7 +23,7 @@ class g extends r.Component {
       var t;
       null == (t = this.inputRef.current) || t.focus()
     }
-    null !== this.props.value && this.props.value !== A.value && this.props.value !== this.state.value && f(this.props.value, this.props, this.state) && this.setState({
+    null !== this.props.value && this.props.value !== A.value && this.props.value !== this.state.value && v(this.props.value, this.props, this.state) && this.setState({
       value: this.props.value
     })
   }
@@ -92,7 +92,7 @@ class g extends r.Component {
         lastGoodValue: A.currentTarget.value
       }), null == e || e(A)
     }), o(this, "handleBlur", A => {
-      if (f("", this.props, this.state)) {
+      if (v("", this.props, this.state)) {
         this.setState({
           focused: !1
         });
@@ -118,7 +118,7 @@ class g extends r.Component {
   }
 }
 
-function f() {
+function v() {
   let A = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "",
     e = arguments.length > 1 ? arguments[1] : void 0,
     t = arguments.length > 2 ? arguments[2] : void 0,

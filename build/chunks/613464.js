@@ -10,9 +10,9 @@ var n = t(255367),
   a = t(481060),
   o = t(749210),
   g = t(110924),
-  f = t(410030),
-  c = t(616780),
-  v = t(100527),
+  v = t(410030),
+  f = t(616780),
+  c = t(100527),
   h = t(906732),
   u = t(527379),
   E = t(687158),
@@ -35,7 +35,7 @@ function H(A) {
     style: Q
   } = A, O = (0, D.m)(t), P = (0, s.e7)([w.default], () => w.default.getUser(e), [e]), V = (0, s.e7)([B.ZP], () => B.ZP.getMember(t, e), [t, e]), [j, T] = r.useState(null == P || null == V), y = (0, g.Z)(V), m = r.useRef(null), {
     analyticsLocations: L
-  } = (0, h.ZP)(v.Z.GUILD_MEMBER_MOD_VIEW), x = (0, E.ZP)(e, t), Z = (0, f.ZP)();
+  } = (0, h.ZP)(c.Z.GUILD_MEMBER_MOD_VIEW), x = (0, E.ZP)(e, t), Z = (0, v.ZP)();
   return (r.useEffect(() => {
     O || l()
   }, [O, l]), r.useEffect(() => {
@@ -47,7 +47,7 @@ function H(A) {
     return !j && A && (m.current = window.setTimeout(l, 500)), () => {
       null != m.current && window.clearTimeout(m.current)
     }
-  }, [j, V, l]), (0, c.$)({
+  }, [j, V, l]), (0, f.$)({
     [t]: [e]
   }), r.useEffect(() => {
     !async function() {

@@ -1,4 +1,4 @@
-/** Chunk was on 61636 **/
+/** Chunk was on 67032 **/
 n.d(t, {
   q: () => h
 }), n(953529);
@@ -10,8 +10,8 @@ var r = n(704215),
   s = n(963249),
   a = n(286961),
   c = n(644916),
-  d = n(243778),
-  u = n(921944),
+  u = n(243778),
+  d = n(921944),
   _ = n(131715);
 let h = e => {
   let {
@@ -20,10 +20,10 @@ let h = e => {
   } = e, {
     analyticsLocations: h
   } = (0, o.ZP)(), E = (0, a.Z)();
-  return (0, i.jsx)(d.Xf, {
+  return (0, i.jsx)(u.Xf, {
     contentType: t,
     latestVersion: (0, c.t)(t),
-    groupName: u.R.NOTICE_BAR,
+    groupName: d.R.NOTICE_BAR,
     bypassAutoDismiss: !0,
     children: e => {
       let {
@@ -35,7 +35,7 @@ let h = e => {
         return (0, i.jsxs)(l.qXd, {
           color: l.DM8.PREMIUM_TIER_2,
           children: [(0, i.jsx)(l.RyX, {
-            onClick: () => o(u.L.USER_DISMISS),
+            onClick: () => o(d.L.USER_DISMISS),
             noticeType: n
           }), (0, i.jsx)(l.OgN, {
             size: "custom",

@@ -22,9 +22,9 @@ function i(A) {
     secondaryTintColor: s,
     secondaryTintLuminances: a,
     secondaryLuminanceWeights: o
-  } = A, g = null != t ? l(n, t, r) : e, f = [];
-  return null != i && null != a && null != o && (f = null != s ? l(a, s, o) : i), {
+  } = A, g = null != t ? l(n, t, r) : e, v = [];
+  return null != i && null != a && null != o && (v = null != s ? l(a, s, o) : i), {
     primaryColorsTransformed: g,
-    secondaryColorsTransformed: f
+    secondaryColorsTransformed: v
   }
 }

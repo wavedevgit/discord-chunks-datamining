@@ -1,6 +1,6 @@
 /**
   Module ID: 9924
-  Original File Name: 4c888778038f54a6
+  Original File Name: 9cde2e95afae698f
 **/
 .formItem_d48a51 {
     margin-bottom: 24px;
@@ -521,25 +521,6 @@
     flex-shrink: 0
 }
 
-.returnButton_c791b2 {
-    margin-left: 8px;
-    margin-right: 16px;
-    max-width: 200px;
-    padding: 2px 8px
-}
-
-.returnButtonText_c791b2 {
-    display: flex;
-    flex-direction: row
-}
-
-.returnIcon_c791b2 {
-    height: 16px;
-    margin-left: 4px;
-    margin-right: -2px;
-    width: 16px
-}
-
 .container_c791b2 {
     display: flex;
     flex-direction: column;
@@ -593,4 +574,4 @@
     position: relative
 }
 
-/*# sourceMappingURL=4c888778038f54a6.css.map*/
+/*# sourceMappingURL=9cde2e95afae698f.css.map*/

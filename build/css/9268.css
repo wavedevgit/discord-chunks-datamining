@@ -1,6 +1,6 @@
 /**
   Module ID: 9268
-  Original File Name: e326b41bf6503b82
+  Original File Name: f9b433d00469c13a
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -1124,14 +1124,6 @@ h1.title_feb59c,h2.title_feb59c {
     cursor: pointer
 }
 
-.recorderContainer__2636e.hasValue__2636e .addKeybindButton__2636e {
-    width: 34px
-}
-
-.recorderContainer__2636e.hasValue__2636e:not(.containerDisabled__2636e):focus-within .addKeybindButton__2636e,.recorderContainer__2636e.hasValue__2636e:not(.containerDisabled__2636e):hover .addKeybindButton__2636e {
-    width: 128px
-}
-
 .recorderContainer__2636e:not(.containerDisabled__2636e):focus-within,.recorderContainer__2636e:not(.containerDisabled__2636e):hover {
     border-color: hsl(var(--red-400-hsl)/.3)
 }
@@ -1187,50 +1179,6 @@ h1.title_feb59c,h2.title_feb59c {
     user-select: none
 }
 
-.editIcon__2636e {
-    background-image: url(/assets/fcbc6283c85dd170.svg);
-    height: 24px;
-    left: 50%;
-    margin-left: -12px;
-    margin-top: -12px;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    width: 24px
-}
-
-.full-motion .editIcon__2636e {
-    transition: opacity .2s ease-in-out,transform .2s ease-in-out
-}
-
-.hasValue__2636e .editIcon__2636e {
-    opacity: 1;
-    transform: translateZ(0)
-}
-
-.hasValue__2636e:not(.containerDisabled__2636e):focus-within .editIcon__2636e,.hasValue__2636e:not(.containerDisabled__2636e):hover .editIcon__2636e {
-    opacity: 0;
-    transform: translate3d(-200%,0,0)
-}
-
-.text__2636e {
-    opacity: 1
-}
-
-.full-motion .text__2636e {
-    transition: opacity .2s ease-in-out,transform .2s ease-in-out
-}
-
-.hasValue__2636e .text__2636e {
-    opacity: 0;
-    transform: translate3d(200%,0,0)
-}
-
-.hasValue__2636e:not(.containerDisabled__2636e):focus-within .text__2636e,.hasValue__2636e:not(.containerDisabled__2636e):hover .text__2636e {
-    opacity: 1;
-    transform: translateZ(0)
-}
-
 @keyframes shadowPulse__2636e {
     0% {
         box-shadow: 0 0 6px hsl(var(--red-400-hsl)/.3)
@@ -1243,6 +1191,11 @@ h1.title_feb59c,h2.title_feb59c {
     to {
         box-shadow: 0 0 6px hsl(var(--red-400-hsl)/.3)
     }
+}
+
+.buttonContainer__2636e {
+    max-width: 128px;
+    padding: 4px
 }
 
 .inputItem__3b8e9 {
@@ -2208,10 +2161,10 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .statusPickerModal_ce8328 {
-    border-radius: 4px;
-    overflow: hidden;
-    position: relative;
-    width: 300px
+    background: unset;
+    border: none;
+    box-shadow: none;
+    width: 100%
 }
 
 .statusPickerModalMenu_ce8328 {
@@ -20033,4 +19986,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=e326b41bf6503b82.css.map*/
+/*# sourceMappingURL=f9b433d00469c13a.css.map*/

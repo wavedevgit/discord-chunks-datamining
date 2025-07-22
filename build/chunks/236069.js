@@ -1,4 +1,4 @@
-/** Chunk was on 61636 **/
+/** Chunk was on 67032 **/
 n.d(t, {
   Z: () => C
 }), n(388685);
@@ -10,8 +10,8 @@ var r = n(442837),
   s = n(314897),
   a = n(271383),
   c = n(715903),
-  d = n(295474),
-  u = n(372897),
+  u = n(295474),
+  d = n(372897),
   _ = n(526761),
   h = n(388032);
 
@@ -39,7 +39,7 @@ function I(e) {
     guildId: t,
     analyticsLocations: n,
     analyticsLocation: r
-  } = e, [o, s] = (0, d.ww)({
+  } = e, [o, s] = (0, u.ww)({
     guildId: t,
     analyticsLocations: n,
     analyticsLocation: r,
@@ -73,5 +73,5 @@ function C(e) {
     let t = s.default.getId();
     return (0, c.no)(a.ZP.getMember(e.guildId, t))
   }, [e.guildId]);
-  return t.has(u.q.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) || t.has(u.q.AUTOMOD_QUARANTINED_BIO) ? (0, i.jsx)(I, E({}, e)) : t.has(u.q.AUTOMOD_QUARANTINED_SERVER_TAG) ? (0, i.jsx)(p, {}) : (0, i.jsx)(I, E({}, e))
+  return t.has(d.q.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) || t.has(d.q.AUTOMOD_QUARANTINED_BIO) ? (0, i.jsx)(I, E({}, e)) : t.has(d.q.AUTOMOD_QUARANTINED_SERVER_TAG) ? (0, i.jsx)(p, {}) : (0, i.jsx)(I, E({}, e))
 }

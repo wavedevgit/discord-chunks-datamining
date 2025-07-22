@@ -1,5 +1,5 @@
-/** Chunk was on 41984 **/
-var s = {
+/** Chunk was on 88625 **/
+var r = {
   "./bg.png": "135316",
   "./cs.png": "107217",
   "./da.png": "120273",
@@ -33,17 +33,17 @@ var s = {
   "./zh-TW.png": "408999"
 };
 
-function a(t) {
-  return n(r(t))
+function i(e) {
+  return n(s(e))
 }
 
-function r(t) {
-  if (!n.o(s, t)) {
-    var e = Error("Cannot find module '" + t + "'");
-    throw e.code = "MODULE_NOT_FOUND", e
+function s(e) {
+  if (!n.o(r, e)) {
+    var t = Error("Cannot find module '" + e + "'");
+    throw t.code = "MODULE_NOT_FOUND", t
   }
-  return s[t]
+  return r[e]
 }
-a.keys = function() {
-  return Object.keys(s)
-}, a.resolve = r, t.exports = a, a.id = 621287
+i.keys = function() {
+  return Object.keys(r)
+}, i.resolve = s, e.exports = i, i.id = 621287

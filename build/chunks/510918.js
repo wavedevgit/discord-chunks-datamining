@@ -11,9 +11,9 @@ var r = t(397110),
   a = t(819837),
   o = t(165440),
   g = t(21822),
-  f = t(285916),
-  c = t(168646),
-  v = t(470831),
+  v = t(285916),
+  f = t(168646),
+  c = t(470831),
   h = t(96824),
   u = t(187485),
   E = t(713897),
@@ -111,7 +111,7 @@ let Z = A => {
         primaryTintColor: t
       }, N));
     case L.x_.FIRE:
-      return (0, n.jsx)(c.G, x({
+      return (0, n.jsx)(f.G, x({
         primaryTintColor: t
       }, N));
     case L.x_.COMPASS:
@@ -125,7 +125,7 @@ let Z = A => {
         secondaryTintColor: Z
       }, N));
     case L.x_.FLOWER:
-      return (0, n.jsx)(v.N, x({
+      return (0, n.jsx)(c.N, x({
         primaryTintColor: t,
         secondaryTintColor: Z
       }, N));
@@ -214,7 +214,7 @@ let Z = A => {
         primaryTintColor: t
       }, N));
     case L.x_.DOLLAR_SIGN:
-      return (0, n.jsx)(f.W, x({
+      return (0, n.jsx)(v.W, x({
         primaryTintColor: t
       }, N))
   }

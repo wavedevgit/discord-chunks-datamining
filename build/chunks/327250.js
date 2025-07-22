@@ -11,9 +11,9 @@ var r = t(120356),
   a = t(493683),
   o = t(906732),
   g = t(69882),
-  f = t(251794),
-  c = t(386696),
-  v = t(946273),
+  v = t(251794),
+  f = t(386696),
+  c = t(946273),
   h = t(910693),
   u = t(172751),
   E = t(314897),
@@ -171,9 +171,9 @@ function L(A) {
     canBanUser: D,
     canModerateMembers: I
   } = (0, i.cj)([w.Z, p.default, B.Z], () => ({
-    canKickUser: (0, v.BK)(e, u),
-    canBanUser: (0, v.mm)(e, u),
-    canModerateMembers: null != u && (0, c.F)(u.id, e.id, [p.default, B.Z, w.Z])
+    canKickUser: (0, c.BK)(e, u),
+    canBanUser: (0, c.mm)(e, u),
+    canModerateMembers: null != u && (0, f.F)(u.id, e.id, [p.default, B.Z, w.Z])
   }), [e, u]), b = (0, g.b)(r), {
     analyticsLocations: Q,
     newestAnalyticsLocation: O
@@ -251,11 +251,11 @@ function L(A) {
       disabled: !I,
       text: b ? P.intl.string(P.t.N86XcH) : P.intl.string(P.t.kTlLr6),
       onClick: () => {
-        b ? (0, f.q)({
+        b ? (0, v.q)({
           guildId: r.guildId,
           userId: r.userId,
           anaylticsLocations: Q
-        }) : (0, f.z)({
+        }) : (0, v.z)({
           guildId: r.guildId,
           userId: r.userId,
           anaylticsLocations: Q,

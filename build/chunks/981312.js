@@ -1,13 +1,14 @@
-/** Chunk was on 39767 **/
+/** Chunk was on 88625 **/
+"use strict";
 n.d(t, {
-  U: () => a
+  U: () => s
 });
-var i = n(442837),
-  r = n(594174);
+var r = n(442837),
+  i = n(594174);
 
-function a() {
-  return !1 === (0, i.e7)([r.default], () => {
+function s() {
+  return !1 === (0, r.e7)([i.default], () => {
     var e;
-    return null == (e = r.default.getCurrentUser()) ? void 0 : e.nsfwAllowed
+    return null == (e = i.default.getCurrentUser()) ? void 0 : e.nsfwAllowed
   })
 }
