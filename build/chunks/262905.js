@@ -1,0 +1,2 @@
+/** Chunk was on 22712 **/
+p.exports = JSON.parse('{"RPb8Zm":"Tvoje zpětn\xe1 vazba n\xe1m pomůže vylepšit funkce pro zabezpečen\xed Discordu.","KZw6kp":"Co nefungovalo dobře?","ep5SQk":"Něco jin\xe9ho","Q5cQ4+":"Popiš svůj probl\xe9m","zApKaW":"Chceš n\xe1m k\xa0tomu sdělit v\xedc?","4djgOz":"Děkujeme za zpětnou vazbu!"}')

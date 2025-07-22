@@ -1,0 +1,2 @@
+/** Chunk was on 51636 **/
+a.exports = JSON.parse('{"RPb8Zm":"Palautteesi auttaa meit\xe4 parantamaan Discordin turvallisuustoimintoja.","KZw6kp":"Mik\xe4 ei toimi hyvin?","ep5SQk":"Jokin muu","Q5cQ4+":"Kuvaile ongelmasi","zApKaW":"Haluatko kertoa t\xe4st\xe4 tarkemmin?","4djgOz":"Kiitos palautteesta!"}')

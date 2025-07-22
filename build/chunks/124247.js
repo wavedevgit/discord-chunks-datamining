@@ -1,0 +1,2 @@
+/** Chunk was on 49460 **/
+s.exports = JSON.parse('{"RPb8Zm":"A visszajelz\xe9seddel jav\xedthatunk a Discord biztons\xe1gi funkci\xf3in.","KZw6kp":"Mi nem műk\xf6dik j\xf3l?","ep5SQk":"Valami m\xe1s","Q5cQ4+":"A probl\xe9ma le\xedr\xe1sa","zApKaW":"Sz\xedvesen megosztan\xe1l vel\xfcnk n\xe9h\xe1ny tov\xe1bbi r\xe9szletet?","4djgOz":"K\xf6sz\xf6nj\xfck a visszajelz\xe9st!"}')

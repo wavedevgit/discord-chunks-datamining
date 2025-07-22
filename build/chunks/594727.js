@@ -1,0 +1,2 @@
+/** Chunk was on 60119 **/
+i.exports = JSON.parse('{"RPb8Zm":"Geri bildirimin Discord g\xfcvenlik \xf6zelliklerini geliştirmemize yardımcı oluyor.","KZw6kp":"Hangi \xf6zellik gerektiği gibi \xe7alışmıyor?","ep5SQk":"Başka bir şey","Q5cQ4+":"Sorununu a\xe7ıkla","zApKaW":"Bize daha fazla bilgi vermek ister misin?","4djgOz":"Geri bildirim i\xe7in teşekk\xfcrler!"}')

@@ -1,0 +1,2 @@
+/** Chunk was on 97748 **/
+i.exports = JSON.parse('{"RPb8Zm":"Opinie użytkownik\xf3w pomagają nam ulepszać funkcje bezpieczeństwa Discorda.","KZw6kp":"Co nie działa dobrze?","ep5SQk":"Coś innego","Q5cQ4+":"Opisz sw\xf3j problem","zApKaW":"Czy chcesz podzielić się szczeg\xf3łami?","4djgOz":"Dzięki za informacje zwrotne!"}')

@@ -1,7 +1,2 @@
-/** Chunk was on 20447 **/
-e.exports = {
-  container: "container__8cc9a",
-  circle: "circle__8cc9a",
-  icon: "icon__8cc9a",
-  header: "header__8cc9a"
-}
+/** Chunk was on 91085 **/
+n.exports = JSON.parse('{"RPb8Zm":"Phản hồi của bạn gi\xfap ch\xfang t\xf4i cải thiện c\xe1c t\xednh năng an to\xe0n của Discord.","KZw6kp":"Những điểm g\xec chưa tốt?","ep5SQk":"Một điều g\xec kh\xe1c","Q5cQ4+":"H\xe3y m\xf4 tả vấn đề m\xe0 bạn gặp phải","zApKaW":"Bạn c\xf3 muốn cung cấp th\xeam th\xf4ng tin cho ch\xfang t\xf4i kh\xf4ng?","4djgOz":"Cảm ơn v\xec đ\xe3 gửi phản hồi!"}')

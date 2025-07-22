@@ -1,0 +1,2 @@
+/** Chunk was on 22833 **/
+e.exports = JSON.parse('{"RPb8Zm":"Din feedback hj\xe4lper oss att f\xf6rb\xe4ttra Discords s\xe4kerhetsfunktioner.","KZw6kp":"Vad fungerar inte bra?","ep5SQk":"N\xe5got annat","Q5cQ4+":"Beskriv ditt problem","zApKaW":"Vill du ber\xe4tta mer f\xf6r oss?","4djgOz":"Tack f\xf6r feedbacken!"}')
