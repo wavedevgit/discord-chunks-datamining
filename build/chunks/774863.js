@@ -32,7 +32,7 @@ function d(e) {
   return e
 }
 
-function _(e, t) {
+function f(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -43,8 +43,8 @@ function _(e, t) {
   return n
 }
 
-function f(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -75,9 +75,9 @@ function O(e) {
     messageId: t,
     channelId: n
   } = e, r = b[n];
-  null != r && (b[n] = r.map(e => e.messageId === t ? f(d({}, e), {
+  null != r && (b[n] = r.map(e => e.messageId === t ? _(d({}, e), {
     reportSubmit: !0
-  }) : e), E[t] = f(d({}, E[t]), {
+  }) : e), E[t] = _(d({}, E[t]), {
     reportSubmit: !0
   }))
 }

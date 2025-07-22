@@ -40,7 +40,7 @@ function c(e) {
     width: n,
     height: c,
     disabled: u
-  } = e, [d, _] = i.useState();
+  } = e, [d, f] = i.useState();
   return i.useEffect(() => {
     let e = l({
       deviceId: t,
@@ -49,7 +49,7 @@ function c(e) {
       disabled: u
     }).then(e => {
       let t = null != e ? (0, a.N7)(e) : null;
-      return _(t), {
+      return f(t), {
         stream: e,
         streamId: t
       }

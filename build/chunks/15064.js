@@ -48,7 +48,7 @@ function c(e, t) {
 }
 var u = n(73800),
   d = n(222142),
-  _ = n(805194);
+  f = n(805194);
 e.exports = function(e) {
   var t = function(t) {
     function n() {
@@ -62,7 +62,7 @@ e.exports = function(e) {
     }, {
       key: "setNativeProps",
       value: function(e) {
-        !1 === _.current(this.componentRef, e, this) && this.forceUpdate()
+        !1 === f.current(this.componentRef, e, this) && this.forceUpdate()
       }
     }, {
       key: "componentWillMount",
@@ -75,7 +75,7 @@ e.exports = function(e) {
         var t = this,
           n = this._propsAnimated,
           r = function() {
-            !1 === _.current(t.componentRef, t._propsAnimated.__getAnimatedValue(), t) && t.forceUpdate()
+            !1 === f.current(t.componentRef, t._propsAnimated.__getAnimatedValue(), t) && t.forceUpdate()
           };
         this._propsAnimated = new d(e, r), n && n.__detach()
       }
@@ -92,7 +92,7 @@ e.exports = function(e) {
           a = n.style,
           s = o(n, ["style"]);
         return u.createElement(e, r({}, s, {
-          style: _.transformStyles(a),
+          style: f.transformStyles(a),
           ref: function(e) {
             t.componentRef = e
           },

@@ -13,8 +13,8 @@ var i = n(442837),
   c = n(592125),
   u = n(430824),
   d = n(979651),
-  _ = n(81570),
-  f = n(409057),
+  f = n(81570),
+  _ = n(409057),
   p = n(443375),
   h = n(128277),
   m = n(263059),
@@ -28,7 +28,7 @@ function E(e) {
     className: b,
     onClose: y,
     profileGuildId: O
-  } = e, v = (0, _.T)({
+  } = e, v = (0, f.T)({
     location: "UserProfileActivityCardWrapper"
   }), I = t.id === n.id, T = v && !I && !t.bot, {
     voiceGuild: S,
@@ -68,7 +68,7 @@ function E(e) {
     profileGuildId: O,
     className: b,
     onClose: y
-  }) : (0, r.jsx)(f.Z, {
+  }) : (0, r.jsx)(_.Z, {
     user: t,
     currentUser: n,
     activity: E,

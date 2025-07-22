@@ -47,8 +47,8 @@ function d(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = 1e4,
-  f = null,
+let f = 1e4,
+  _ = null,
   p = () => {
     let e = a.ZP.getCommunicationDisabledUserMap();
     Object.keys(e).forEach(t => {
@@ -60,7 +60,7 @@ let _ = 1e4,
     })
   },
   h = (e, t) => {
-    var n, i, l, u, _, f;
+    var n, i, l, u, f, _;
     let p = a.ZP.getMember(e, t),
       h = o.default.getUser(t);
     if (null == p || null == h || (0, s.b)(p)) return;
@@ -72,8 +72,8 @@ let _ = 1e4,
       premiumSince: null != (l = p.premiumSince) ? l : void 0,
       isPending: null != (u = p.isPending) && u,
       user: d(c({}, h), {
-        email: null != (_ = h.email) ? _ : void 0,
-        phone: null != (f = h.phone) ? f : void 0
+        email: null != (f = h.email) ? f : void 0,
+        phone: null != (_ = h.phone) ? _ : void 0
       }),
       communicationDisabledUntil: null
     });
@@ -83,10 +83,10 @@ let _ = 1e4,
   };
 class m extends i.Z {
   _initialize() {
-    f = setInterval(() => p(), _)
+    _ = setInterval(() => p(), f)
   }
   _terminate() {
-    clearInterval(f)
+    clearInterval(_)
   }
   constructor(...e) {
     super(...e), l(this, "clearGuildMemberTimeout", h)

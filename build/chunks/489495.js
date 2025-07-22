@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  $j: () => f,
+  $j: () => _,
   Xv: () => s,
   cq: () => l,
   i0: () => u,
@@ -55,14 +55,14 @@ let c = (e, t) => ({
       n += '\n              {\n                  "src": "'.concat(e.name, '",\n                  "loop": ').concat(e.loop, ',\n                  "width": ').concat(e.width, ',\n                  "height": ').concat(e.height, ',\n                  "start": ').concat(e.start, ',\n                  "duration": ').concat(e.duration, ',\n                  "loop_delay": ').concat(e.loopDelay, ',\n                  "position": {\n                    "x": 0,\n                    "y": 0\n                  },\n                  "zIndex": ').concat(e.zIndex, ",\n              },\n          ")
     }), n += "\n]"
   },
-  _ = e => {
+  f = e => {
     let [t, n] = e.split(","), r = atob(n), i = t.split(";")[0], a = new Uint8Array(r.length);
     for (let e = 0; e < r.length; e++) a[e] = r.charCodeAt(e);
     return new Blob([a], {
       type: i
     })
   },
-  f = e => {
-    let t = _(e);
+  _ = e => {
+    let t = f(e);
     return URL.createObjectURL(t)
   }

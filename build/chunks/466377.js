@@ -19,8 +19,8 @@ var r = n(255367),
   c = n(748780),
   u = n(197723),
   d = n(143450),
-  _ = n(186325),
-  f = n(693789),
+  f = n(186325),
+  _ = n(693789),
   p = n(507274),
   h = n(84735),
   m = n(742746),
@@ -107,7 +107,7 @@ function x(e) {
       transitionState: n,
       children: a,
       size: u = "small",
-      role: f = "dialog",
+      role: _ = "dialog",
       className: m,
       fullscreenOnMobile: g = !0,
       hideShadow: E = !1,
@@ -127,7 +127,7 @@ function x(e) {
   });
   let {
     reducedMotion: L
-  } = i.useContext(_.S), x = (0, d.q)({
+  } = i.useContext(f.S), x = (0, d.q)({
     opacity: +!!w,
     transform: w || L.enabled || "subtle" === S ? "scale(1)" : "scale(0.7)",
     config: {
@@ -144,7 +144,7 @@ function x(e) {
     value: B,
     children: (0, r.jsx)(p.V, C(A({
       className: T.focusLock,
-      role: f,
+      role: _,
       returnRef: I,
       impressionType: l.ImpressionTypes.MODAL,
       "aria-labelledby": k ? void 0 : B.headerId
@@ -233,11 +233,11 @@ function U(e) {
 }
 
 function G(e) {
-  return (0, r.jsx)(f.zx, {
+  return (0, r.jsx)(_.zx, {
     focusProps: e.focusProps,
     "aria-label": I.intl.string(I.t.cpT0Cg),
-    look: f.zx.Looks.BLANK,
-    size: f.zx.Sizes.NONE,
+    look: _.zx.Looks.BLANK,
+    size: _.zx.Sizes.NONE,
     onClick: e.onClick,
     innerClassName: o()(e.innerClassName, {
       [T.closeWithCircleBackground]: e.withCircleBackground

@@ -2,9 +2,9 @@
 "use strict";
 n.d(t, {
   $0: () => d,
-  Tm: () => _,
+  Tm: () => f,
   ZP: () => p,
-  oT: () => f
+  oT: () => _
 }), n(388685), n(539854);
 var r = n(73800),
   i = n(399606),
@@ -17,10 +17,10 @@ var r = n(73800),
   d = function(e) {
     return e.PURCHASE = "purchase", e.PREMIUM_PURCHASE = "premium_purchase", e.PREVIEW = "preview", e.PREMIUM_PREVIEW = "premium_preview", e
   }({});
-let _ = {
+let f = {
     id: "None"
   },
-  f = {
+  _ = {
     id: "Shop"
   },
   p = () => {
@@ -41,7 +41,7 @@ let _ = {
       });
       return [{
         section: "purchase",
-        items: [_, f, ...e.purchase],
+        items: [f, _, ...e.purchase],
         height: 12,
         header: u.intl.string(u.t.VqmVqK)
       }, {

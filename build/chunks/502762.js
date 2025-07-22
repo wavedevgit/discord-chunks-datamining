@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 });
 var r = n(255367),
   i = n(73800),
@@ -12,13 +12,13 @@ var r = n(255367),
   c = n(213053),
   u = n(652853),
   d = n(750883);
-let _ = Object.assign(i.forwardRef(function(e, t) {
+let f = Object.assign(i.forwardRef(function(e, t) {
   let {
     user: n,
     displayProfile: i,
     themeType: a,
-    className: _,
-    pendingThemeColors: f,
+    className: f,
+    pendingThemeColors: _,
     themeOverride: p,
     children: h,
     forceShowPremium: m = !1
@@ -29,7 +29,7 @@ let _ = Object.assign(i.forwardRef(function(e, t) {
   } = (0, l.Z)({
     user: n,
     displayProfile: i,
-    pendingThemeColors: f,
+    pendingThemeColors: _,
     isPreview: m
   }), {
     profileThemeStyle: y,
@@ -41,7 +41,7 @@ let _ = Object.assign(i.forwardRef(function(e, t) {
     secondaryColor: b
   });
   return (0, r.jsx)("div", {
-    className: o()(d.outer, O, _),
+    className: o()(d.outer, O, f),
     style: y,
     ref: t,
     children: (0, r.jsx)("div", {

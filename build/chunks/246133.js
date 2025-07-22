@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => _
 });
 var r = n(381499),
   i = n(601992),
@@ -43,12 +43,12 @@ function d(e, t) {
   return n
 }
 
-function _(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-async function f(e) {
+async function _(e) {
   let {
     nextStatus: t,
     prevStatus: n,
@@ -60,11 +60,11 @@ async function f(e) {
       value: t
     }), e.statusExpiresAtMs = null != d ? "".concat(Date.now() + d) : "0"
   }, a.fy.INFREQUENT_USER_ACTION);
-  let f = u({
+  let _ = u({
     next_status: t,
     prev_status: n
   }, i.Z.getGlobalStats());
-  null != d && (f = _(u({}, f), {
+  null != d && (_ = f(u({}, _), {
     expire_duration_minutes: null != d ? d / 6e4 : null
-  })), null != c && (f = u({}, f, c)), s.default.track(l.rMx.USER_STATUS_UPDATED, f)
+  })), null != c && (_ = u({}, _, c)), s.default.track(l.rMx.USER_STATUS_UPDATED, _)
 }

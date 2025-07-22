@@ -40,8 +40,8 @@ function c(e) {
 }
 let u = 864e5,
   d = "???",
-  _ = e => "".concat(e[0], "…"),
-  f = e => "@".concat(e),
+  f = e => "".concat(e[0], "…"),
+  _ = e => "@".concat(e),
   p = {
     mode: "full",
     decoration: "never",
@@ -62,7 +62,7 @@ function g(e) {
   if (null == e) return;
   let n = i.Z.hidePersonalInformation,
     r = m(e);
-  return n && r.toLocaleLowerCase() === (null == (t = e.username) ? void 0 : t.toLocaleLowerCase()) && "0" === e.discriminator && (r = _(r)), r
+  return n && r.toLocaleLowerCase() === (null == (t = e.username) ? void 0 : t.toLocaleLowerCase()) && "0" === e.discriminator && (r = f(r)), r
 }
 
 function E(e) {
@@ -70,7 +70,7 @@ function E(e) {
   let n = (0, r.e7)([i.Z], () => i.Z.hidePersonalInformation);
   if (null == e) return;
   let a = m(e);
-  return n && a.toLocaleLowerCase() === (null == (t = e.username) ? void 0 : t.toLocaleLowerCase()) && "0" === e.discriminator && (a = _(a)), a
+  return n && a.toLocaleLowerCase() === (null == (t = e.username) ? void 0 : t.toLocaleLowerCase()) && "0" === e.discriminator && (a = f(a)), a
 }
 
 function b(e) {
@@ -141,8 +141,8 @@ function S(e, t, n) {
   if (!h(e.username)) return d;
   let r = n;
   if ("always" === t.identifiable ? r = !1 : "never" === t.identifiable && (r = !0), "0" !== e.discriminator && e.discriminator !== o.fo$ && !t.forcePomelo) return "username" === t.mode || r ? e.username : "".concat(e.username, "#").concat(e.discriminator);
-  let i = r ? _(e.username) : e.username;
-  return "never" !== t.decoration ? f(i) : i
+  let i = r ? f(e.username) : e.username;
+  return "never" !== t.decoration ? _(i) : i
 }
 
 function A(e, t) {

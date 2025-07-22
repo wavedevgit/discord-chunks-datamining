@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(570140),
   u = n(100527),
   d = n(906732),
-  _ = n(597688),
-  f = n(197831),
+  f = n(597688),
+  _ = n(197831),
   p = n(317951),
   h = n(987209),
   m = n(563132),
@@ -91,7 +91,7 @@ function M(e) {
   } = (0, d.ZP)([...V, u.Z.COLLECTIBLES_PAYMENT_MODAL]), H = i.useRef(new s.qA), [Y, W] = i.useState(null), [K, z] = i.useState(!1), q = i.useMemo(() => (0, N.UY)({
     purchaseType: C.o8.FIAT,
     skuId: k
-  }), [k]), X = (0, l.Wu)([_.Z], () => _.Z.recommendedGiftSkuIds, []), Q = null != k ? [k] : X, J = null != (t = Q[0]) ? t : null, $ = null != k && p.Rm.has(k), ee = i.useCallback(() => {
+  }), [k]), X = (0, l.Wu)([f.Z], () => f.Z.recommendedGiftSkuIds, []), Q = null != k ? [k] : X, J = null != (t = Q[0]) ? t : null, $ = null != k && p.Rm.has(k), ee = i.useCallback(() => {
     z(!0), null == a || a()
   }, [a]), et = i.useCallback(e => {
     z(!1), n(e), c.Z.dispatch({
@@ -123,7 +123,7 @@ function M(e) {
       ref: W,
       className: P.confettiCanvas,
       environment: H.current
-    }), (0, r.jsx)(f.i, {
+    }), (0, r.jsx)(_.i, {
       options: q,
       className: o()(P.customConfetti, {
         [P.hidden]: !K

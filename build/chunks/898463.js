@@ -13,8 +13,8 @@ var r = n(255367),
   c = n(166459),
   u = n(95152),
   d = n(476326),
-  _ = n(543651),
-  f = n(377171),
+  f = n(543651),
+  _ = n(377171),
   p = n(95398),
   h = n(70097),
   m = n(592125),
@@ -107,7 +107,7 @@ function R(e) {
     spoiler: a,
     size: s = y.q.MEDIUM,
     onMouseEnter: c
-  } = e, [u, d] = i.useState(), [_, f] = i.useState({
+  } = e, [u, d] = i.useState(), [f, _] = i.useState({
     width: 0,
     height: 0
   }), p = s === y.q.SMALL;
@@ -121,12 +121,12 @@ function R(e) {
         width: e,
         height: t
       } = (0, g.zp)(n.width, n.height);
-      f({
+      _({
         width: e,
         height: t
       })
     }, n.src = e, () => {
-      d(void 0), f({
+      d(void 0), _({
         width: 0,
         height: 0
       }), URL.revokeObjectURL(e)
@@ -142,9 +142,9 @@ function R(e) {
         }),
         "aria-hidden": !0,
         alt: null != n ? n : "",
-        style: t ? _ : {}
+        style: t ? f : {}
       })
-    }, [u, p, n, _]),
+    }, [u, p, n, f]),
     m = i.useCallback(() => {
       null != u && (0, l.h7j)(e => (0, r.jsx)(l.Y0X, A(T({
         className: v.__invalid_modal
@@ -181,7 +181,7 @@ function P(e) {
     size: s = y.q.MEDIUM,
     onMouseEnter: l,
     onVideoLoadError: c
-  } = e, [u, d] = i.useState(), _ = i.useRef(null);
+  } = e, [u, d] = i.useState(), f = i.useRef(null);
   return i.useEffect(() => {
     if (null == t) return;
     let e = URL.createObjectURL(t);
@@ -196,7 +196,7 @@ function P(e) {
       alt: n,
       spoiler: a,
       renderContent: e => (0, r.jsx)(h.Z, {
-        ref: _,
+        ref: f,
         src: u,
         className: o()(v.media, {
           [v.spoiler]: e,
@@ -351,7 +351,7 @@ function D(e) {
         children: null != p ? p : a.filename
       })
     }), N && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(_.Z, {
+      children: [(0, r.jsx)(f.Z, {
         className: v.clipsFooter,
         createdAt: E.default.extractTimestamp(S.id),
         participantIds: S.users,
@@ -359,7 +359,7 @@ function D(e) {
         title: S.name,
         guildId: R
       }), (0, r.jsx)(l.IGR, {
-        color: f.Z.BG_BRAND,
+        color: _.Z.BG_BRAND,
         className: v.clipsBadge,
         text: O.intl.string(O.t.oA4afH)
       })]

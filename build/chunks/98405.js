@@ -8,14 +8,14 @@ var r = n(127849),
   l = n(190289),
   c = n(275717);
 e.exports = function(e, t) {
-  var n, u, d, _, f, p = e.target,
+  var n, u, d, f, _, p = e.target,
     h = e.global,
     m = e.stat;
   if (n = h ? r : m ? r[p] || s(p, {}) : r[p] && r[p].prototype)
     for (u in t) {
-      if (_ = t[u], d = e.dontCallGetSet ? (f = i(n, u)) && f.value : n[u], !c(h ? u : p + (m ? "." : "#") + u, e.forced) && void 0 !== d) {
-        if (typeof _ == typeof d) continue;
-        l(_, d)
-      }(e.sham || d && d.sham) && a(_, "sham", !0), o(n, u, _, e)
+      if (f = t[u], d = e.dontCallGetSet ? (_ = i(n, u)) && _.value : n[u], !c(h ? u : p + (m ? "." : "#") + u, e.forced) && void 0 !== d) {
+        if (typeof f == typeof d) continue;
+        l(f, d)
+      }(e.sham || d && d.sham) && a(f, "sham", !0), o(n, u, f, e)
     }
 }

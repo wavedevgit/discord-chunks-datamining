@@ -12,8 +12,8 @@ var i = n(512722),
   c = n(992774),
   u = n(649754),
   d = n(376398),
-  _ = n(846519),
-  f = n(570140),
+  f = n(846519),
+  _ = n(570140),
   p = n(710845),
   h = n(695346),
   m = n(199902),
@@ -27,7 +27,7 @@ var i = n(512722),
 let T = 3e5,
   S = 6e4,
   A = {},
-  N = new _.V7,
+  N = new f.V7,
   C = !1,
   R = window.document.createElement("canvas"),
   P = 512,
@@ -67,7 +67,7 @@ async function k(e, t) {
     let n = await j(e, 60);
     await M(n);
     let r = R.toDataURL("image/jpeg");
-    if (f.Z.dispatch({
+    if (_.Z.dispatch({
         type: "STREAM_PREVIEW_FETCH_SUCCESS",
         streamKey: t,
         previewURL: r
@@ -147,7 +147,7 @@ function G(e, t) {
 }
 let B = {
   init() {
-    f.Z.subscribe("CONNECTION_OPEN", L), f.Z.subscribe("LOGOUT", L), f.Z.subscribe("STREAM_DELETE", L), f.Z.subscribe("RTC_CONNECTION_VIDEO", e => {
+    _.Z.subscribe("CONNECTION_OPEN", L), _.Z.subscribe("LOGOUT", L), _.Z.subscribe("STREAM_DELETE", L), _.Z.subscribe("RTC_CONNECTION_VIDEO", e => {
       let {
         guildId: t,
         channelId: n,
@@ -156,7 +156,7 @@ let B = {
         context: o
       } = e;
       null == a || o !== I.Yn.STREAM || i !== g.default.getId() || __OVERLAY__ || (L(), r = a, x(a, t, n, i))
-    }), f.Z.subscribe("MEDIA_ENGINE_VIDEO_STATE_CHANGED", e => {
+    }), _.Z.subscribe("MEDIA_ENGINE_VIDEO_STATE_CHANGED", e => {
       let {
         videoState: t
       } = e;

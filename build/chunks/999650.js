@@ -3,7 +3,7 @@
 n.d(t, {
   Pr: () => ee,
   Qe: () => eu,
-  WK: () => ef,
+  WK: () => e_,
   ZP: () => eg,
   _m: () => ep,
   co: () => em,
@@ -18,8 +18,8 @@ var r = n(658722),
   c = n(212819),
   u = n(933557),
   d = n(861262),
-  _ = n(778877),
-  f = n(592125),
+  f = n(778877),
+  _ = n(592125),
   p = n(984933),
   h = n(699516),
   m = n(768119),
@@ -152,7 +152,7 @@ function q(e, t, n) {
 }
 
 function X(e, t) {
-  let n = Object.values(f.Z.getMutablePrivateChannels()).find(e => {
+  let n = Object.values(_.Z.getMutablePrivateChannels()).find(e => {
     if (t === (0, u.F6)(e, y.default, h.Z)) return !0;
     if (e.isDM()) {
       let n = e.getRecipientId(),
@@ -170,7 +170,7 @@ function Q(e) {
     r = m.Z.getCurrentSearchId(),
     i = (0, d.g)(r);
   if (i === A.aib.GUILD) return q(e, t, n);
-  let a = (0, _.a)({
+  let a = (0, f.a)({
     location: "channelValidator"
   });
   return i === A.aib.DMS && !!a && X(e, t)
@@ -226,7 +226,7 @@ function er(e) {
     },
     i = [];
   return n.forEach(e => {
-    let t = f.Z.getChannel(e);
+    let t = _.Z.getChannel(e);
     if (null != t)
       if (t.isDM()) {
         let e = t.getRecipientId();
@@ -277,13 +277,13 @@ function ei(e) {
       return []
   }
   let u = y.default.getCurrentUser(),
-    _ = n.toLowerCase().replace(/^@/, ""),
-    f = null != u && n.length > 0 && (N.intl.string(N.t.Qf3ptr).startsWith(_) || A.ME.substr(1).startsWith(_)),
+    f = n.toLowerCase().replace(/^@/, ""),
+    _ = null != u && n.length > 0 && (N.intl.string(N.t.Qf3ptr).startsWith(f) || A.ME.substr(1).startsWith(f)),
     p = t.filter(e => {
       let {
         record: t
       } = e;
-      return !h.Z.isBlockedOrIgnored(t.id) && (!f || t.id !== (null == u ? void 0 : u.id))
+      return !h.Z.isBlockedOrIgnored(t.id) && (!_ || t.id !== (null == u ? void 0 : u.id))
     }).map(e => {
       let {
         record: t
@@ -293,7 +293,7 @@ function ei(e) {
         user: t
       }
     });
-  return f && p.unshift({
+  return _ && p.unshift({
     text: A.ME,
     user: u
   }), p
@@ -327,7 +327,7 @@ function eo(e, t) {
     }).filter(e => null != e.text && null != e.channel).value();
   if ("" === e.trim()) {
     let e = g.Z.getChannelId(),
-      t = f.Z.getChannel(e);
+      t = _.Z.getChannel(e);
     if (null != t && t.isPrivate()) {
       let n = i.findIndex(t => {
         let {
@@ -398,7 +398,7 @@ function el(e, t, n) {
   e.startsWith('"') && e.endsWith('"') ? e = e.substring(1, e.length - 1) : e.startsWith('"') && (e = e.substring(1)), "#" === e[0] && (e = e.substring(1));
   let r = (0, d.g)(t);
   if (r === A.aib.GUILD) return es(e, t, n);
-  let i = (0, _.a)({
+  let i = (0, f.a)({
     location: "getInFilterAutocompletions"
   });
   return r === A.aib.DMS && i ? eo(e, n) : []
@@ -599,10 +599,10 @@ function ed() {
     }
   }
 }
-let e_ = {};
+let ef = {};
 
-function ef() {
-  Object.assign(e_, ed())
+function e_() {
+  Object.assign(ef, ed())
 }
 
 function ep(e) {
@@ -610,11 +610,11 @@ function ep(e) {
 }
 
 function eh(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : Object.keys(e_).length,
+  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : Object.keys(ef).length,
     n = [];
-  for (let r of Object.keys(e_)) {
+  for (let r of Object.keys(ef)) {
     if (n.length >= t) break;
-    let a = e_[r].key;
+    let a = ef[r].key;
     ep(r) && null != a && i()(e.toLowerCase(), a) && n.push({
       token: r,
       text: a
@@ -628,4 +628,4 @@ function em(e) {
   let t = e.toLowerCase().replace(/^@/, "");
   return N.intl.string(N.t.Qf3ptr).startsWith(t) || A.ME.substring(1).startsWith(t)
 }
-let eg = e_
+let eg = ef

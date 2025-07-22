@@ -11,9 +11,9 @@ var r, i = n(442837),
   c = n(592125),
   u = n(984933),
   d = n(430824),
-  _ = n(981631);
+  f = n(981631);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -50,7 +50,7 @@ function y(e) {
         index: -1
       })
     };
-  return t[_.d4z.GUILD_CATEGORY].forEach(e => {
+  return t[f.d4z.GUILD_CATEGORY].forEach(e => {
     let {
       channel: t
     } = e;
@@ -160,7 +160,7 @@ function D(e) {
 }
 
 function L() {
-  y(_.I_8)
+  y(f.I_8)
 }
 
 function x(e) {
@@ -175,7 +175,7 @@ class M extends(r = i.ZP.Store) {
     return null != e ? x(e) : E
   }
 }
-f(M, "displayName", "GuildCategoryStore");
+_(M, "displayName", "GuildCategoryStore");
 let k = new M(a.Z, {
   CHANNEL_SELECT: D,
   CONNECTION_OPEN: O,

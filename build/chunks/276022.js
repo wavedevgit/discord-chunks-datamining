@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(213459),
   u = n(434404),
   d = n(795594),
-  _ = n(881998),
-  f = n(430824),
+  f = n(881998),
+  _ = n(430824),
   p = n(496675),
   h = n(981631),
   m = n(388032);
@@ -26,9 +26,9 @@ function g(e) {
     guildId: b,
     context: y,
     onItemClick: O
-  } = e, v = null != (t = null == E ? void 0 : E.id) ? t : null == g ? void 0 : g.id, I = f.Z.getGuild(b), T = (0, a.e7)([p.Z], () => null != I ? p.Z.can(h.Plq.MANAGE_GUILD, I) : null), S = !0, A = !0, N = (0, c.LD)(b, A), C = (0, c.PL)(S, A), R = (0, a.e7)([_.Z], () => {
+  } = e, v = null != (t = null == E ? void 0 : E.id) ? t : null == g ? void 0 : g.id, I = _.Z.getGuild(b), T = (0, a.e7)([p.Z], () => null != I ? p.Z.can(h.Plq.MANAGE_GUILD, I) : null), S = !0, A = !0, N = (0, c.LD)(b, A), C = (0, c.PL)(S, A), R = (0, a.e7)([f.Z], () => {
     var e;
-    return null != v && (null == (e = _.Z.getApps()) ? void 0 : e.find(e => e.application.id === v)) != null
+    return null != v && (null == (e = f.Z.getApps()) ? void 0 : e.find(e => e.application.id === v)) != null
   }), {
     isUserApp: P,
     isGuildApp: w

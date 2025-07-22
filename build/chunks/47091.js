@@ -21,7 +21,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,7 +34,7 @@ function _(e) {
   return e
 }
 
-function f(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -46,7 +46,7 @@ function f(e, t) {
 }
 
 function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -54,7 +54,7 @@ function p(e, t) {
 function h(e) {
   let {
     user: t
-  } = e, d = (0, o.ML)(t.id), f = l.ZP.useName(t), h = i.useCallback(e => {
+  } = e, d = (0, o.ML)(t.id), _ = l.ZP.useName(t), h = i.useCallback(e => {
     let {
       id: i,
       name: o
@@ -63,9 +63,9 @@ function h(e) {
       let {
         ConfirmModal: e
       } = await Promise.resolve().then(n.bind(n, 481060));
-      return n => (0, r.jsx)(e, p(_({
+      return n => (0, r.jsx)(e, p(f({
         header: u.intl.formatToPlainString(u.t["GOFk9/"], {
-          name: f
+          name: _
         }),
         confirmText: u.intl.string(u.t["cY+Ooa"]),
         cancelText: u.intl.string(u.t["ETE/oK"]),
@@ -78,13 +78,13 @@ function h(e) {
         children: (0, r.jsx)(a.Text, {
           variant: "text-md/normal",
           children: u.intl.format(u.t.dsU5bm, {
-            name: f,
+            name: _,
             gameName: o
           })
         })
       }))
     })
-  }, [f, t]);
+  }, [_, t]);
   return (0, c.Z)({
     user: t,
     gameRelationships: d,

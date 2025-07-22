@@ -11,8 +11,8 @@ var r, i = n(392711),
   c = n(274616),
   u = n(57513),
   d = n(51025),
-  _ = n(812206),
-  f = n(695346),
+  f = n(812206),
+  _ = n(695346),
   p = n(581883),
   h = n(283595),
   m = n(417363),
@@ -45,11 +45,11 @@ function D(e) {
 }
 
 function L() {
-  return !f.bm.getSetting() && (D(R), x())
+  return !_.bm.getSetting() && (D(R), x())
 }
 
 function x() {
-  if (!(0, y.Q)() || f.bm.getSetting()) return !1;
+  if (!(0, y.Q)() || _.bm.getSetting()) return !1;
   let e = h.Z.entitledBranchIds,
     t = [];
   for (let n of e) N.hasOwnProperty(n) || (N[n] = null, t.push(n));
@@ -64,7 +64,7 @@ function M() {
       applicationId: t,
       branchId: n
     } = (0, b.CP)(e);
-    null != _.Z.getApplication(t) && (A.delete(e), k(t, n))
+    null != f.Z.getApplication(t) && (A.delete(e), k(t, n))
   }
 }
 
@@ -74,7 +74,7 @@ function k(e, t) {
       r = n.manifestIds,
       i = m.Z.getState(e, t);
     null != i && i.shouldPatch && (i.buildId !== n.id || !a().isEqual(i.manifestIds, r)) && l.Z.wait(() => {
-      let i = _.Z.getApplication(e);
+      let i = f.Z.getApplication(e);
       null != i ? (A.delete((0, b.Tu)(e, t)), (0, d.li)(i, t, n.id, r, !0)) : A.add((0, b.Tu)(e, t))
     })
   }
@@ -184,7 +184,7 @@ function W(e) {
 }
 class K extends(r = o.ZP.Store) {
   initialize() {
-    this.syncWith([h.Z], x), this.waitFor(m.Z, h.Z, _.Z, p.Z)
+    this.syncWith([h.Z], x), this.waitFor(m.Z, h.Z, f.Z, p.Z)
   }
   getTargetBuildId(e, t) {
     return null == I[t] ? null : I[t].id

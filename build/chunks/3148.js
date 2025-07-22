@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   ZP: () => d,
-  cs: () => _,
+  cs: () => f,
   pe: () => u
 }), n(997841), n(539854);
 var r = n(512722),
@@ -38,8 +38,8 @@ function d(e) {
     content: n,
     tts: r = !1,
     type: d = c.uaV.DEFAULT,
-    messageReference: _,
-    allowedMentions: f,
+    messageReference: f,
+    allowedMentions: _,
     author: p,
     flags: h,
     nonce: m,
@@ -48,8 +48,8 @@ function d(e) {
     giftingPrompt: b,
     state: y
   } = e, O = [];
-  if (d === c.uaV.REPLY && (i()(null != _, "Replies must have a message reference"), null == f || f.replied_user)) {
-    let e = a.Z.getMessageByReference(_);
+  if (d === c.uaV.REPLY && (i()(null != f, "Replies must have a message reference"), null == _ || _.replied_user)) {
+    let e = a.Z.getMessageByReference(f);
     (null == e ? void 0 : e.state) === a.Y.LOADED && O.push(u(e.message.author))
   }
   return null == p && (p = s.default.getCurrentUser()), p instanceof o.Z && (p = u(p)), i()(null != p, "createMessage: author cannot be undefined"), {
@@ -68,7 +68,7 @@ function d(e) {
     timestamp: new Date().toISOString(),
     state: y || c.yb.SENDING,
     tts: r,
-    message_reference: _,
+    message_reference: f,
     message_snapshots: [],
     flags: h,
     nonce: m,
@@ -78,7 +78,7 @@ function d(e) {
   }
 }
 
-function _(e) {
+function f(e) {
   let {
     messageId: t,
     channelId: n,

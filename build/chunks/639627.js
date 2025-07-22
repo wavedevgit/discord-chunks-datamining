@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  T: () => _
+  T: () => f
 });
 var r = n(255367),
   i = n(73800),
@@ -47,13 +47,13 @@ function d(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = i.forwardRef(function(e, t) {
+let f = i.forwardRef(function(e, t) {
   let {
     onInteraction: l,
     onChange: u
-  } = e, _ = i.useRef(null);
+  } = e, f = i.useRef(null);
 
-  function f(e, t) {
+  function _(e, t) {
     (0, o.ZD)(async () => {
       let {
         default: i
@@ -73,15 +73,15 @@ let _ = i.forwardRef(function(e, t) {
     focus: () => null,
     activate: () => {
       var e;
-      return null == l || l(a.U.IMAGE_UPLOAD), null == (e = _.current) || e.activateUploadDialogue(), !1
+      return null == l || l(a.U.IMAGE_UPLOAD), null == (e = f.current) || e.activateUploadDialogue(), !1
     }
   }), [l]), (0, r.jsx)("div", {
     style: {
       position: "relative"
     },
     children: (0, r.jsx)(s.ZP, d(c({}, e), {
-      ref: _,
-      onChange: f,
+      ref: f,
+      onChange: _,
       onClick: p
     }))
   })

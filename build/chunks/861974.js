@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Q: () => c,
-  W: () => _
+  W: () => f
 });
 var r = n(255367);
 n(73800);
@@ -44,19 +44,19 @@ function d(e) {
   }
 }
 
-function _(e) {
+function f(e) {
   let {
     children: t,
     messageType: n,
     className: i,
     textColor: o = "text-default",
     textVariant: c = "text-sm/medium"
-  } = e, _ = u(n), f = d(n);
+  } = e, f = u(n), _ = d(n);
   return (0, r.jsxs)("div", {
-    className: a()(l.container, f, i),
+    className: a()(l.container, _, i),
     children: [(0, r.jsx)("div", {
       className: l.iconDiv,
-      children: _ && (0, r.jsx)(_, {
+      children: f && (0, r.jsx)(f, {
         className: l.icon,
         color: "currentColor"
       })

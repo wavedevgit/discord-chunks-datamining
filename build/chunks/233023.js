@@ -13,8 +13,8 @@ var i = n(120356),
   c = n(74340),
   u = n(19391),
   d = n(584973),
-  _ = n(556638),
-  f = n(843280);
+  f = n(556638),
+  _ = n(843280);
 
 function p(e) {
   let {
@@ -38,7 +38,7 @@ function p(e) {
     return E || e ? (0, r.jsxs)(r.Fragment, {
       children: [I, A, N]
     }) : (0, r.jsxs)(s.Z, {
-      delay: _.X,
+      delay: f.X,
       tooltipClassName: p,
       children: [I, A, N]
     })
@@ -46,7 +46,7 @@ function p(e) {
   return (0, r.jsx)(o.Text, {
     variant: "text-".concat(h, "/medium"),
     color: "none",
-    className: a()(f.truncated, n),
+    className: a()(_.truncated, n),
     children: C()
   })
 }

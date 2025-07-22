@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(727637),
   u = n(980591),
   d = n(616780),
-  _ = n(100527),
-  f = n(906732),
+  f = n(100527),
+  _ = n(906732),
   p = n(359588),
   h = n(368326),
   m = n(429467),
@@ -99,7 +99,7 @@ function W(e) {
     disableAutoFocus: ee = !1
   } = e, {
     analyticsLocations: et
-  } = (0, f.ZP)([...J, _.Z.USER_PROFILE_POPOUT]), en = (0, v.ZB)({
+  } = (0, _.ZP)([...J, f.Z.USER_PROFILE_POPOUT]), en = (0, v.ZB)({
     layout: "POPOUT",
     userId: t.id,
     guildId: V,
@@ -124,8 +124,8 @@ function W(e) {
     null == X || X(null == ea ? void 0 : ea.current)
   }, [ea, X]);
   let eu = i.useRef(null),
-    [ed, e_] = i.useState(String(Date.now())),
-    [ef, ep] = i.useState(!1);
+    [ed, ef] = i.useState(String(Date.now())),
+    [e_, ep] = i.useState(!1);
   (0, u.Z)(() => {
     ep(!0)
   }, Y), (0, y.fu)({
@@ -134,7 +134,7 @@ function W(e) {
       let {
         hasElementPositionChanged: t
       } = e;
-      t && e_(String(Date.now()))
+      t && ef(String(Date.now()))
     }
   });
   let eh = (0, p.Z)({
@@ -167,7 +167,7 @@ function W(e) {
       }
     }),
     eT = ee ? "div" : l.VqE;
-  return (0, r.jsx)(f.Gt, {
+  return (0, r.jsx)(_.Gt, {
     value: et,
     children: (0, r.jsx)(v.Mt, {
       value: en,
@@ -225,7 +225,7 @@ function W(e) {
                 channelId: Z,
                 themeType: U.lY.POPOUT,
                 onOpenProfile: Q ? void 0 : ev
-              }), eb && ef ? (0, r.jsx)(g.Z, {
+              }), eb && e_ ? (0, r.jsx)(g.Z, {
                 positionKey: ed,
                 markAsDismissed: eE,
                 targetElementRef: eu,

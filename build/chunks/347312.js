@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(393238),
   u = n(206678),
   d = n(302221),
-  _ = n(328187),
-  f = n(607889),
+  f = n(328187),
+  _ = n(607889),
   p = n(94432),
   h = n(864595);
 let m = 40,
@@ -48,7 +48,7 @@ function R(e, t) {
       let n = t - e.length;
       return e.concat(Array(n).fill(0))
     }
-    return (0, _.Z)(e, t)
+    return (0, f.Z)(e, t)
   }
 }
 
@@ -115,13 +115,13 @@ function j(e, t) {
     o = (0, l.dQu)(s.Z.unsafe_rawColors.WHITE_500).hex(),
     c = t ? a : n,
     [u, d] = k(c, t, e),
-    [_, f] = k(t ? o : e ? i : r, t, e),
+    [f, _] = k(t ? o : e ? i : r, t, e),
     [p, h] = k(e ? c : r, t, e);
   return {
     lastBackgroundFillColor: u,
     backgroundFillColor: d,
-    lastActiveFillColor: _,
-    activeFillColor: f,
+    lastActiveFillColor: f,
+    activeFillColor: _,
     lastInactiveFillColor: p,
     inactiveFillColor: h
   }
@@ -141,7 +141,7 @@ function G(e) {
     duration: s,
     played: l,
     playing: d,
-    onDrag: _,
+    onDrag: f,
     onDragStart: p,
     onDragEnd: m
   } = e, {
@@ -172,7 +172,7 @@ function G(e) {
       duration: t,
       numSegments: O.length
     });
-    y.current = O.map((e, t) => new f.Z(t < r ? e : 0))
+    y.current = O.map((e, t) => new _.Z(t < r ? e : 0))
   }, [O]), i.useEffect(() => {
     let e = y.current;
     if (null == e) return;
@@ -213,14 +213,14 @@ function G(e) {
         constrainMin: !0
       });
       i.fill();
-      let [_, f] = U(G, B, n, A.current);
-      o = o || f;
+      let [f, _] = U(G, B, n, A.current);
+      o = o || _;
       let [p, h] = U(D, k, n, A.current);
       o = o || h;
       for (let e = 0; e < a.length; e++) {
         let t = a[e],
           n = Math.max(t.getCurrentValue(), O[e] - .1);
-        i.beginPath(), i.fillStyle = t.isReset ? _ : p, x({
+        i.beginPath(), i.fillStyle = t.isReset ? f : p, x({
           context: i,
           devicePixelRatio: C,
           canvasHeight: s,
@@ -237,7 +237,7 @@ function G(e) {
   }, [g, C, O, E, a, s, l, d, R, w, D, k, G, B]);
   let [, Z] = (0, u.Z)({
     ref: g,
-    onDrag: _,
+    onDrag: f,
     onDragStart: p,
     onDragEnd: m
   });

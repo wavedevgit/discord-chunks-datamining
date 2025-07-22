@@ -19,8 +19,8 @@ function c(e, t, n) {
 }
 let u = new Map,
   d = new Set,
-  _ = new Set,
   f = new Set,
+  _ = new Set,
   p = new Map,
   h = new Map,
   m = null,
@@ -32,10 +32,10 @@ let u = new Map,
     u.set(e.skuId, e.price), d.delete(e.skuId)
   },
   y = e => {
-    d.delete(e.skuId), f.add(e.skuId)
+    d.delete(e.skuId), _.add(e.skuId)
   },
   O = e => {
-    f.delete(e.skuId)
+    _.delete(e.skuId)
   },
   v = e => {
     if (1 !== e.entitlements.length) return;
@@ -43,13 +43,13 @@ let u = new Map,
     l.Rm.has(t.sku_id) && p.set(e.skuId, s.Z.createFromServer(t))
   },
   I = e => {
-    _.delete(e.skuId), p.set(e.skuId, e.entitlement), null != e.numPotions && h.set(e.skuId, e.numPotions)
+    f.delete(e.skuId), p.set(e.skuId, e.entitlement), null != e.numPotions && h.set(e.skuId, e.numPotions)
   },
   T = e => {
-    f.add(e.skuId), _.delete(e.skuId)
+    _.add(e.skuId), f.delete(e.skuId)
   },
   S = e => {
-    _.add(e.skuId)
+    f.add(e.skuId)
   },
   A = e => {
     m = e.previousGoLiveSettings
@@ -85,7 +85,7 @@ class P extends(i = a.ZP.Store) {
     return d.has(e)
   }
   getErrored(e) {
-    return f.has(e)
+    return _.has(e)
   }
   getEntitlement(e) {
     return p.get(e)
@@ -97,7 +97,7 @@ class P extends(i = a.ZP.Store) {
     return p.has(e)
   }
   isEntitlementFetching(e) {
-    return _.has(e)
+    return f.has(e)
   }
   getPreviousGoLiveSettings() {
     return m

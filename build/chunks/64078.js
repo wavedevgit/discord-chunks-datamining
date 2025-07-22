@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  AI: () => _,
+  AI: () => f,
   EL: () => h,
-  SE: () => f,
+  SE: () => _,
   ew: () => p
 });
 var r = n(570140),
@@ -51,7 +51,7 @@ function d(e, t) {
   }), e
 }
 
-function _(e) {
+function f(e) {
   r.Z.dispatch({
     type: "POGGERMODE_SETTINGS_UPDATE",
     settings: e
@@ -60,7 +60,7 @@ function _(e) {
   (0, s.Z)(t)
 }
 
-function f(e) {
+function _(e) {
   r.Z.dispatch(c({
     type: "POGGERMODE_UPDATE_COMBO"
   }, e))

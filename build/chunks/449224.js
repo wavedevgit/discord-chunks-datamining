@@ -2,7 +2,7 @@
 "use strict";
 let r;
 n.d(t, {
-  Z: () => f
+  Z: () => _
 });
 var i, a = n(442837),
   o = n(570140),
@@ -25,7 +25,7 @@ function u(e) {
 function d(e) {
   r = e.associatedGame
 }
-class _ extends(i = a.ZP.Store) {
+class f extends(i = a.ZP.Store) {
   getGameForPID(e) {
     var t;
     if (__OVERLAY__ || null == e) return null;
@@ -36,8 +36,8 @@ class _ extends(i = a.ZP.Store) {
     return r
   }
 }
-c(_, "displayName", "OverlayRunningGameStore");
-let f = new _(o.Z, {
+c(f, "displayName", "OverlayRunningGameStore");
+let _ = new f(o.Z, {
   OVERLAY_INITIALIZE: u,
   OVERLAY_SET_ASSOCIATED_GAME: d
 })

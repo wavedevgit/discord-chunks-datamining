@@ -5,11 +5,11 @@ n.d(t, {
   EB: () => u,
   VI: () => l,
   Y2: () => g,
-  eM: () => _,
+  eM: () => f,
   gM: () => d,
   kH: () => m,
   lV: () => h,
-  yn: () => f,
+  yn: () => _,
   zN: () => p
 }), n(388685);
 var r = n(311929),
@@ -73,13 +73,13 @@ function d(e) {
   return (0, o.Zg)(e.name)
 }
 
-function _(e, t) {
+function f(e, t) {
   let n = "string" == typeof t ? t : null != t ? t.id : null;
   return e.ownerId === n
 }
 
-function f(e, t) {
-  return (!!t.mfaEnabled || e.mfaLevel !== s.BpS.ELEVATED) && _(e, t)
+function _(e, t) {
+  return (!!t.mfaEnabled || e.mfaLevel !== s.BpS.ELEVATED) && f(e, t)
 }
 
 function p(e) {

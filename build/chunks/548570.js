@@ -12,8 +12,8 @@ var r = n(512722),
   c = n(903772),
   u = n(442837),
   d = n(544891),
-  _ = n(570140),
-  f = n(406966),
+  f = n(570140),
+  _ = n(406966),
   p = n(795513),
   h = n(266750),
   m = n(15624),
@@ -123,18 +123,18 @@ function W(e) {
     c = !1,
     u = !1,
     d = null,
-    _ = null;
+    f = null;
   if (window._ws = null, null != l)
     if (t = l.ws, l.state.gateway !== n) Z.verbose("[FAST CONNECT] gatewayURL mismatch: ".concat(l.state.gateway, " !== ").concat(n)), t.close(1e3), t = null;
     else {
-      var f;
+      var _;
       let e = B({}, l.state);
       null != e.messages && (e.messages = e.messages.map(e => null != e.data && "string" == typeof e.data ? F(B({}, e), {
         data: e.data.substring(0, 100)
       }) : e)), Z.log("[FAST CONNECT] successfully took over websocket, state:", F(B({}, e), {
-        messages: null == (f = e.messages) ? void 0 : f.length
-      })), c = l.state.open, u = l.state.identify, d = l.state.messages, _ = l.state.clientState
-    } null == t && ((t = (0, j.Z)(n)).binaryType = "arraybuffer"), r(t), c && i(u, _), null != d && d.forEach(a), t.onopen = () => i(u, _), t.onmessage = a, t.onclose = s, t.onerror = o
+        messages: null == (_ = e.messages) ? void 0 : _.length
+      })), c = l.state.open, u = l.state.identify, d = l.state.messages, f = l.state.clientState
+    } null == t && ((t = (0, j.Z)(n)).binaryType = "arraybuffer"), r(t), c && i(u, f), null != d && d.forEach(a), t.onopen = () => i(u, f), t.onmessage = a, t.onclose = s, t.onerror = o
 }
 
 function K() {}
@@ -405,7 +405,7 @@ class ei extends x.Z {
     this.connectionState = N.Z.IDENTIFYING;
     let t = Date.now();
     this.identifyStartTime = t;
-    let [n, r, i] = await Promise.all([(0, g.O)() ? f.Z.getCommittedVersions() : {}, (0, g.O)() ? h.Z.getCommittedVersions() : {}, !!(0, g.O)() && p.Z.canUseGuildVersions()]), o = i ? {
+    let [n, r, i] = await Promise.all([(0, g.O)() ? _.Z.getCommittedVersions() : {}, (0, g.O)() ? h.Z.getCommittedVersions() : {}, !!(0, g.O)() && p.Z.canUseGuildVersions()]), o = i ? {
       guild_versions: n,
       highest_last_message_id: r.highest_last_message_id,
       read_state_version: r.read_state_version,
@@ -503,7 +503,7 @@ class ei extends x.Z {
       action: t
     }), this._cleanup(e => e.close()), this._reset(!0, 1e3, "Resetting socket due to error."), this.dispatcher.clear(), this.connectionState = N.Z.WILL_RECONNECT, this.dispatchExceptionBackoff.cancel();
     let a = e.clearCache || this.dispatchExceptionBackoff._fails > 0;
-    0 === this.dispatchExceptionBackoff._fails ? (Z.verbose("Triggering fast reconnect"), this.dispatchExceptionBackoff.fail(() => {}), setTimeout(() => this._connect("resetSocketOnErrorImmediate"), 0)) : this.dispatchExceptionBackoff.fail(() => this._connect("resetSocketOnError")), a && (this.didForceClearGuildHashes = !0, _.Z.dispatch({
+    0 === this.dispatchExceptionBackoff._fails ? (Z.verbose("Triggering fast reconnect"), this.dispatchExceptionBackoff.fail(() => {}), setTimeout(() => this._connect("resetSocketOnErrorImmediate"), 0)) : this.dispatchExceptionBackoff.fail(() => this._connect("resetSocketOnError")), a && (this.didForceClearGuildHashes = !0, f.Z.dispatch({
       type: "CLEAR_CACHES",
       reason: "Socket reset during ".concat(t)
     })), clearTimeout(this.dispatchSuccessTimer), this.dispatchSuccessTimer = setTimeout(() => this.dispatchExceptionBackoff.succeed(), 2 * ee)

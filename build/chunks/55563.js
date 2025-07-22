@@ -19,15 +19,15 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 let d = new Map,
-  _ = new Set,
   f = new Set,
+  _ = new Set,
   p = new Map,
   h = new Map,
   m = new Map;
 
 function g(e) {
   var t;
-  p.set(e.id, l.Z.createFromServer(e)), _.delete(e.id), f.delete(e.id), null == (t = e.bundled_sku_ids) || t.forEach(t => {
+  p.set(e.id, l.Z.createFromServer(e)), f.delete(e.id), _.delete(e.id), null == (t = e.bundled_sku_ids) || t.forEach(t => {
     d.set(t, e.id)
   }), h.has(e.application_id) || h.set(e.application_id, new Set), h.get(e.application_id).add(e.id)
 }
@@ -40,28 +40,28 @@ function b(e) {
   let {
     skuId: t
   } = e;
-  _.add(t)
+  f.add(t)
 }
 
 function y(e) {
   let {
     skuId: t
   } = e;
-  _.add(t)
+  f.add(t)
 }
 
 function O(e) {
   let {
     skuId: t
   } = e;
-  _.delete(t), f.add(t)
+  f.delete(t), _.add(t)
 }
 
 function v(e) {
   let {
     skuId: t
   } = e;
-  _.delete(t), f.add(t)
+  f.delete(t), _.add(t)
 }
 
 function I(e) {
@@ -114,7 +114,7 @@ function R(e) {
 }
 
 function P() {
-  d = new Map, _ = new Set, f = new Set, p = new Map, h = new Map, m = new Map
+  d = new Map, f = new Set, _ = new Set, p = new Map, h = new Map, m = new Map
 }
 
 function w() {
@@ -133,7 +133,7 @@ class D extends(i = a.yh) {
     return null == t ? [] : Array.from(t).map(e => p.get(e))
   }
   isFetching(e) {
-    return _.has(e)
+    return f.has(e)
   }
   getSKUs() {
     return Object.fromEntries(p)
@@ -143,7 +143,7 @@ class D extends(i = a.yh) {
     if (null != t) return this.get(t)
   }
   didFetchingSkuFail(e) {
-    return f.has(e)
+    return _.has(e)
   }
 }
 u(D, "displayName", "SKUStore");

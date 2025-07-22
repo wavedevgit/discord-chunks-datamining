@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  z: () => _
+  z: () => f
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -13,13 +13,13 @@ var r = n(255367),
   u = n(397974);
 let d = 100;
 
-function _(e) {
+function f(e) {
   let {
     children: t,
     className: n,
     collapsibleContent: a,
-    isExpanded: _
-  } = e, [f, p] = i.useState(!1), [h, m] = i.useState(!0), [g, E] = i.useState(!1), b = null != _ ? _ : f, {
+    isExpanded: f
+  } = e, [_, p] = i.useState(!1), [h, m] = i.useState(!0), [g, E] = i.useState(!1), b = null != f ? f : _, {
     ref: y,
     height: O = 0
   } = (0, c.ZP)(), {
@@ -30,8 +30,8 @@ function _(e) {
     config: s.config.stiff,
     onRest: () => E(!0)
   }, h ? "animate-never" : "respect-motion-settings"), S = i.useCallback(() => {
-    p(!f)
-  }, [f, p]);
+    p(!_)
+  }, [_, p]);
   return i.useLayoutEffect(() => {
     let e = setTimeout(() => {
       m(!1)

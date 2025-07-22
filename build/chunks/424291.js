@@ -54,7 +54,7 @@ function d(e) {
     channelId: o,
     onAgree: l,
     onDisagree: d
-  } = e, _ = null != (0, a.ZP)({
+  } = e, f = null != (0, a.ZP)({
     application: t,
     channelId: o
   }) ? i.u1M : i.z1l;
@@ -70,6 +70,6 @@ function d(e) {
     }))
   }, {
     modalKey: u,
-    contextKey: _
+    contextKey: f
   }), Promise.resolve()
 }

@@ -34,7 +34,7 @@ function d(e) {
   return e
 }
 
-function _(e, t) {
+function f(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -45,8 +45,8 @@ function _(e, t) {
   return n
 }
 
-function f(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -75,14 +75,14 @@ function m(e) {
     className: n,
     variant: i = "text-xs/medium",
     hideTooltip: u = !1,
-    canTruncate: _ = !0
+    canTruncate: f = !0
   } = e, h = p(e, ["children", "className", "variant", "hideTooltip", "canTruncate"]);
-  return (0, r.jsx)(o.xv, f(d({
+  return (0, r.jsx)(o.xv, _(d({
     variant: i,
     color: "none",
-    className: a()(_ && c.truncated, n)
+    className: a()(f && c.truncated, n)
   }, h), {
-    children: _ && !u ? (0, r.jsx)(s.Z, {
+    children: f && !u ? (0, r.jsx)(s.Z, {
       delay: l.X,
       children: t
     }) : t

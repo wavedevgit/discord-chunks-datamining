@@ -9,7 +9,7 @@ var r = n(745872),
   c = i("Map.prototype.set", !0),
   u = i("Map.prototype.has", !0),
   d = i("Map.prototype.delete", !0),
-  _ = i("Map.prototype.size", !0);
+  f = i("Map.prototype.size", !0);
 e.exports = !!s && function() {
   var e, t = {
     assert: function(e) {
@@ -18,7 +18,7 @@ e.exports = !!s && function() {
     delete: function(t) {
       if (e) {
         var n = d(e, t);
-        return 0 === _(e) && (e = void 0), n
+        return 0 === f(e) && (e = void 0), n
       }
       return !1
     },

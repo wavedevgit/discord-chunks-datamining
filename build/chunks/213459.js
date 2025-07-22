@@ -19,8 +19,8 @@ var r, i = n(73800),
   c = n(749210),
   u = n(911969),
   d = n(822245),
-  _ = n(710845),
-  f = n(399860),
+  f = n(710845),
+  _ = n(399860),
   p = n(706454),
   h = n(675478),
   m = n(314897),
@@ -79,7 +79,7 @@ function k(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let j = new _.Z("ApplicationCommandIndexStore"),
+let j = new f.Z("ApplicationCommandIndexStore"),
   U = Symbol("currentUser"),
   G = Symbol("stale"),
   B = Symbol("current"),
@@ -212,7 +212,7 @@ function er(e) {
     } else null != e.bot && (l[e.bot.id] = e.id);
     let t = {
       descriptor: k(x({}, (0, C.X0)(eP(e))), {
-        permissions: null != e.permissions ? (0, f.tk)(ex(e.permissions, o)) : void 0,
+        permissions: null != e.permissions ? (0, _.tk)(ex(e.permissions, o)) : void 0,
         botId: e.bot_id
       }),
       commands: {}
@@ -367,17 +367,17 @@ function ed(e) {
   return n
 }
 
-function e_() {
+function ef() {
   let e = p.default.locale;
   return e !== ep.oldLocale && (Q(), ep.collator = new Intl.Collator(e, {
     sensitivity: "accent",
     numeric: !0
   }), ep.oldLocale = e, !0)
 }
-class ef extends(r = s.ZP.Store) {
+class e_ extends(r = s.ZP.Store) {
   initialize() {
     this.waitFor(p.default), this.waitFor(m.default), this.syncWith([p.default], () => {
-      e_()
+      ef()
     })
   }
   getContextState(e) {
@@ -442,7 +442,7 @@ class ef extends(r = s.ZP.Store) {
       type: "application",
       applicationId: n.applicationId
     }), d = !0));
-    let _ = eS({
+    let f = eS({
       permissionContext: l,
       text: t.text,
       allowApplicationCommands: u,
@@ -456,7 +456,7 @@ class ef extends(r = s.ZP.Store) {
       singleApplicationId: n.applicationId,
       installOnDemand: n.installOnDemand
     });
-    return _.loading = _.loading || d, _
+    return f.loading = f.loading || d, f
   }
   queryInstallOnDemandApp(e, t) {
     let n = g.Z.getChannel(t);
@@ -478,8 +478,8 @@ class ef extends(r = s.ZP.Store) {
     super(...e), L(this, "indices", {}), L(this, "applicationIndices", new Map), L(this, "applicationIndicesVersion", 0), L(this, "oldLocale", p.default.locale), L(this, "collator", new Intl.Collator(p.default.locale, Y))
   }
 }
-L(ef, "displayName", "ApplicationCommandIndexStore");
-let ep = new ef(l.Z, {
+L(e_, "displayName", "ApplicationCommandIndexStore");
+let ep = new e_(l.Z, {
     LOGOUT: Q,
     CONNECTION_OPEN: $,
     APPLICATION_COMMAND_INDEX_FETCH_REQUEST: ee,
@@ -639,8 +639,8 @@ function eS(e) {
   let {
     permissionContext: c,
     contextState: u,
-    userState: _,
-    applicationStates: f,
+    userState: f,
+    applicationStates: _,
     text: p,
     builtIns: m = A.D.ALLOW,
     allowApplicationCommands: g = !0,
@@ -658,7 +658,7 @@ function eS(e) {
     allowEmptySections: y,
     scoreMethod: O,
     installOnDemand: S
-  }, j = null != (i = null == (t = u.result) ? void 0 : t.sections) ? i : {}, U = null != (a = null == (n = _.result) ? void 0 : n.sections) ? a : {}, G = new Set;
+  }, j = null != (i = null == (t = u.result) ? void 0 : t.sections) ? i : {}, U = null != (a = null == (n = f.result) ? void 0 : n.sections) ? a : {}, G = new Set;
   if (g) {
     if (c.hasBaseAccessPermissions)
       for (let e in j) {
@@ -671,7 +671,7 @@ function eS(e) {
     }
   }
   let B = new Map;
-  for (let [e, t] of f)
+  for (let [e, t] of _)
     if (null == b || e === b) {
       let e = null == (s = t.result) ? void 0 : s.sections;
       if (null != e)
@@ -744,7 +744,7 @@ function eS(e) {
     commands: V,
     descriptors: L.map(e => e.section),
     sectionedCommands: L,
-    loading: (null == u ? void 0 : u.fetchState.fetching) === !0 || (null == _ ? void 0 : _.fetchState.fetching) === !0 || null != b && (null == (r = f.get(b)) ? void 0 : r.fetchState.fetching) === !0
+    loading: (null == u ? void 0 : u.fetchState.fetching) === !0 || (null == f ? void 0 : f.fetchState.fetching) === !0 || null != b && (null == (r = _.get(b)) ? void 0 : r.fetchState.fetching) === !0
   }
 }
 
@@ -758,13 +758,13 @@ function eA(e, t, n, r, i) {
       installOnDemand: d
     } = i,
     {
-      context: _,
-      userId: f,
+      context: f,
+      userId: _,
       roleIds: p,
       isImpersonating: h
     } = u,
-    m = (null == _ ? void 0 : _.guild_id) != null ? P.ML(e.permissions, _.guild_id, f, p, h) : null,
-    g = (null == _ ? void 0 : _.guild_id) != null ? P.ZJ(e.permissions, _, _.guild_id) : null,
+    m = (null == f ? void 0 : f.guild_id) != null ? P.ML(e.permissions, f.guild_id, _, p, h) : null,
+    g = (null == f ? void 0 : f.guild_id) != null ? P.ZJ(e.permissions, f, f.guild_id) : null,
     E = [];
   for (let i of t) P.Ft(i, u, {
     applicationAllowedForUser: m,
@@ -919,10 +919,10 @@ function eG(e, t) {
     isUserInstalled: !0
   };
   let d = ep.getContextState(e),
-    _ = ep.getUserState(),
-    f = null != (o = null == (n = d.result) ? void 0 : n.sections) ? o : {},
-    p = null != (s = null == (r = _.result) ? void 0 : r.sections) ? s : {},
-    h = f[t],
+    f = ep.getUserState(),
+    _ = null != (o = null == (n = d.result) ? void 0 : n.sections) ? o : {},
+    p = null != (s = null == (r = f.result) ? void 0 : r.sections) ? s : {},
+    h = _[t],
     m = p[t],
     g = null == (a = ep.getApplicationState(t).result) || null == (i = a.sections) ? void 0 : i[t];
   if (null != h && null != m) {

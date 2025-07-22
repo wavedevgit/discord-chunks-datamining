@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(906732),
   u = n(365710),
   d = n(174604),
-  _ = n(302175),
-  f = n(626135),
+  f = n(302175),
+  _ = n(626135),
   p = n(724884),
   h = n(355045),
   m = n(290799),
@@ -39,7 +39,7 @@ let A = function(e) {
       animate: !0
     })
   }, []), k = i.useCallback(() => {
-    null == A || A(), f.default.track(I.rMx.MODAL_DISMISSED, {
+    null == A || A(), _.default.track(I.rMx.MODAL_DISMISSED, {
       type: I.ZY5.PREMIUM_GUILD_USER_MODAL,
       location_stack: w,
       location_section: t.section,
@@ -48,7 +48,7 @@ let A = function(e) {
       duration_open_ms: Date.now() - P
     })
   }, [A, t, w, P, n.id]), j = i.useCallback(e => {
-    e && !R.current && (f.default.track(I.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+    e && !R.current && (_.default.track(I.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
       type: I.ZY5.PREMIUM_GUILD_USER_MODAL,
       location_stack: w,
       location_section: t.section,
@@ -57,7 +57,7 @@ let A = function(e) {
     }), R.current = !0)
   }, [t, w, n.id]);
   i.useEffect(() => {
-    f.default.track(I.rMx.OPEN_MODAL, {
+    _.default.track(I.rMx.OPEN_MODAL, {
       type: I.ZY5.PREMIUM_GUILD_USER_MODAL,
       location_stack: w,
       location_section: t.section,
@@ -110,7 +110,7 @@ let A = function(e) {
         }), (0, r.jsx)(v.O, {})]
       }), (0, r.jsxs)("div", {
         className: S.middleBodyContentWrapper,
-        children: [!U && (0, r.jsx)(O.ZP, {}), (0, r.jsx)(_.Z, {
+        children: [!U && (0, r.jsx)(O.ZP, {}), (0, r.jsx)(f.Z, {
           ref: x,
           guild: e.guild,
           onClose: k

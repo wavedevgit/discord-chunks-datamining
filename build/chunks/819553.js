@@ -27,11 +27,11 @@ function c(e) {
 let u = {},
   d = {};
 
-function _() {
+function f() {
   u = {}, d = {}
 }
 
-function f(e) {
+function _(e) {
   let {
     guildId: t
   } = e;
@@ -96,9 +96,9 @@ class y extends(r = i.ZP.Store) {
 }
 s(y, "displayName", "GuildOnboardingStore");
 let O = new y(a.Z, {
-  LOGOUT: _,
+  LOGOUT: f,
   GUILD_DELETE: g,
-  GUILD_ONBOARDING_START: f,
+  GUILD_ONBOARDING_START: _,
   GUILD_ONBOARDING_PROMPTS_FETCH_SUCCESS: p,
   GUILD_ONBOARDING_PROMPTS_FETCH_FAILURE: h,
   GUILD_ONBOARDING_COMPLETE: m,

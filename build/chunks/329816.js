@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(442837),
   u = n(335854),
   d = n(481060),
-  _ = n(721037),
-  f = n(490173),
+  f = n(721037),
+  _ = n(490173),
   p = n(114250),
   h = n(735246),
   m = n(315263),
@@ -109,7 +109,7 @@ let X = (0, B.Un)({
                               children: [(0, r.jsx)("div", {
                                 className: o()(u ? q.mobileApp : q.app),
                                 children: t
-                              }), (0, r.jsx)(_.Z, {}), (0, r.jsx)(I.Z, {}), (0, r.jsx)(f.Z, {}), (0, r.jsx)(d.nKe, {}), (0, r.jsx)(p.Z, {}), (0, r.jsx)(D.Ox, {}), (0, r.jsx)(w.Un, {}), (0, r.jsx)(L.ot, {}), (0, r.jsx)(d.Ixi, {}), (0, r.jsx)(v.Z, {}), (0, r.jsx)(x.Z, {}), (0, r.jsx)(X, {}), (0, r.jsx)(Q, {})]
+                              }), (0, r.jsx)(f.Z, {}), (0, r.jsx)(I.Z, {}), (0, r.jsx)(_.Z, {}), (0, r.jsx)(d.nKe, {}), (0, r.jsx)(p.Z, {}), (0, r.jsx)(D.Ox, {}), (0, r.jsx)(w.Un, {}), (0, r.jsx)(L.ot, {}), (0, r.jsx)(d.Ixi, {}), (0, r.jsx)(v.Z, {}), (0, r.jsx)(x.Z, {}), (0, r.jsx)(X, {}), (0, r.jsx)(Q, {})]
                             })
                           })
                         })

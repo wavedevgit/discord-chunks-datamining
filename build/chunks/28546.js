@@ -3,7 +3,7 @@
 let r;
 n.d(t, {
   Iu: () => b,
-  PG: () => f,
+  PG: () => _,
   RO: () => m,
   _Q: () => p,
   hr: () => g,
@@ -30,13 +30,13 @@ let d = Object.freeze({
     isNitroLockedSectionVisible: !1,
     areOnlyNitroLockedSectionsVisible: !1
   }),
-  _ = (0, s.F)()((0, o.tJ)((e, t) => d, {
+  f = (0, s.F)()((0, o.tJ)((e, t) => d, {
     name: "expression-picker-last-active-view",
     partialize: e => ({
       lastActiveView: e.lastActiveView
     })
   })),
-  f = (e, t) => {
+  _ = (e, t) => {
     if (e === u.X1.GIF) {
       if (null != r) return;
       let {
@@ -45,50 +45,50 @@ let d = Object.freeze({
       } = (0, c.Kr)("gif-picker");
       if (n) {
         r = setTimeout(() => {
-          r = null, (0, l.j)(() => _.setState({
+          r = null, (0, l.j)(() => f.setState({
             activeView: e,
             activeViewType: t,
-            lastActiveView: _.getState().activeView
+            lastActiveView: f.getState().activeView
           }))
         }, i);
         return
       }
     } else null != r && (clearTimeout(r), r = null);
-    (0, l.j)(() => _.setState({
+    (0, l.j)(() => f.setState({
       activeView: e,
       activeViewType: t,
-      lastActiveView: _.getState().activeView
+      lastActiveView: f.getState().activeView
     }))
   },
   p = e => {
-    let t = _.getState();
-    (void 0 === e || e === t.activeViewType) && null !== t.activeView && (0, l.j)(() => _.setState({
+    let t = f.getState();
+    (void 0 === e || e === t.activeViewType) && null !== t.activeView && (0, l.j)(() => f.setState({
       activeView: null,
       activeViewType: null,
       lastActiveView: t.activeView
     }))
   },
   h = e => {
-    let t = _.getState();
+    let t = f.getState();
     if (null == t.activeView) {
       var n;
-      f(null != (n = t.lastActiveView) ? n : u.X1.EMOJI, e)
+      _(null != (n = t.lastActiveView) ? n : u.X1.EMOJI, e)
     } else p()
   },
   m = (e, t) => {
-    _.getState().activeView === e ? p() : f(e, t)
+    f.getState().activeView === e ? p() : _(e, t)
   },
   g = e => {
-    (0, l.j)(() => _.setState({
+    (0, l.j)(() => f.setState({
       activeView: e,
-      lastActiveView: _.getState().activeView
+      lastActiveView: f.getState().activeView
     }))
   },
   E = function(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-    (0, l.j)(() => _.setState({
+    (0, l.j)(() => f.setState({
       searchQuery: e,
       isSearchSuggestion: t
     }))
   },
-  b = _
+  b = f

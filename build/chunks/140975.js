@@ -19,7 +19,7 @@ function o() {
 }
 
 function s(e, t) {
-  return _(e) || d(e, t) || c(e, t) || l()
+  return f(e) || d(e, t) || c(e, t) || l()
 }
 
 function l() {
@@ -62,11 +62,11 @@ function d(e, t) {
   }
 }
 
-function _(e) {
+function f(e) {
   if (Array.isArray(e)) return e
 }
 
-function f(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -86,7 +86,7 @@ function p(e, t) {
 var h = (0, r.createContext)(null),
   m = function(e) {
     var t = e.portal,
-      n = f(e, ["portal"]),
+      n = _(e, ["portal"]),
       l = s((0, r.useState)(null), 2),
       c = l[0],
       u = l[1];

@@ -96,7 +96,7 @@ function M(A, e, t) {
     return r.useEffect(() => {
       if (u !== s) {
         let n = D(A, t, l),
-          r = new g.ZP(e, f.aib.GUILD, n);
+          r = new g.Yn(e, f.aib.GUILD, n);
         B(s, {
           searchFetcher: r,
           messageCount: h,

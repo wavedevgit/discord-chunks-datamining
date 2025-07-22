@@ -62,14 +62,14 @@ e.exports = function(e) {
         contains: [u(t.end), s, a]
       }))
     },
-    _ = {
+    f = {
       className: "string",
       begin: "~[A-Z](?=" + l + ")",
       contains: c.map(t => e.inherit(t, {
         contains: [u(t.end)]
       }))
     },
-    f = {
+    _ = {
       className: "regex",
       variants: [{
         begin: "~r(?=" + l + ")",
@@ -132,7 +132,7 @@ e.exports = function(e) {
       beginKeywords: "defimpl defmodule defprotocol defrecord",
       end: /\bdo\b|$|;/
     }),
-    g = [p, f, _, d, e.HASH_COMMENT_MODE, m, h, {
+    g = [p, _, f, d, e.HASH_COMMENT_MODE, m, h, {
       begin: "::"
     }, {
       className: "symbol",

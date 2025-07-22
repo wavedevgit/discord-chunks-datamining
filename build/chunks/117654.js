@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  O: () => _
+  O: () => f
 });
 var r = n(573736),
   i = n(592014),
@@ -68,7 +68,7 @@ function d(e) {
   return l().withScope(() => e(l().getIsolationScope()))
 }
 
-function _() {
+function f() {
   return {
     withIsolationScope: d,
     withScope: c,

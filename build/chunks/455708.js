@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(481060),
   u = n(570140),
   d = n(68405),
-  _ = n(600164),
-  f = n(28546),
+  f = n(600164),
+  _ = n(28546),
   p = n(656733),
   h = n(985375),
   m = n(653235),
@@ -124,8 +124,8 @@ class N extends i.PureComponent {
         size: "md",
         color: "currentColor"
       })
-    })), (0, r.jsxs)(_.Z, {
-      align: _.Z.Align.CENTER,
+    })), (0, r.jsxs)(f.Z, {
+      align: f.Z.Align.CENTER,
       children: [t, this.renderHeaderContent()]
     })
   }
@@ -192,14 +192,14 @@ class N extends i.PureComponent {
       } = this.state;
       e.keyCode === E.yXg.ESCAPE && null != t && (e.stopPropagation(), e.preventDefault(), this.handleClearQuery())
     }), v(this, "handleChangeQuery", e => {
-      (0, f.ql)(e), this.search(e, E.wI2.SEARCH)
+      (0, _.ql)(e), this.search(e, E.wI2.SEARCH)
     }), v(this, "handleSelectSuggestion", e => {
-      (0, f.ql)(""), d.v2(), this.search(e, E.wI2.SEARCH_SUGGESTION, !0)
+      (0, _.ql)(""), d.v2(), this.search(e, E.wI2.SEARCH_SUGGESTION, !0)
     }), v(this, "handleClearQuery", () => {
       let {
         current: e
       } = this.props.searchBarRef;
-      (0, f.ql)(""), d.v2(), this.setState({
+      (0, _.ql)(""), d.v2(), this.setState({
         resultType: null
       }), null != e && e.focus()
     }), v(this, "handleSelectGIF", e => {
@@ -225,7 +225,7 @@ class N extends i.PureComponent {
   }
 }
 let C = i.forwardRef((e, t) => {
-  e.persistSearch || (0, f.ql)("");
+  e.persistSearch || (0, _.ql)("");
   let {
     query: n,
     resultQuery: a,
@@ -239,10 +239,10 @@ let C = i.forwardRef((e, t) => {
   })), {
     expressionPickerQuery: u,
     isSearchSuggestion: d
-  } = (0, f.Iu)(e => ({
+  } = (0, _.Iu)(e => ({
     expressionPickerQuery: e.searchQuery,
     isSearchSuggestion: e.isSearchSuggestion
-  }), s.X), _ = null != u && "" !== u ? u : n, m = (0, h.HI)(), g = i.useRef(null);
+  }), s.X), f = null != u && "" !== u ? u : n, m = (0, h.HI)(), g = i.useRef(null);
   return i.useLayoutEffect(() => {
     if (d) {
       var e;
@@ -250,7 +250,7 @@ let C = i.forwardRef((e, t) => {
     }
   }, [d, g]), (0, r.jsx)(N, S(I({}, e), {
     forwardedRef: t,
-    query: _,
+    query: f,
     resultQuery: a,
     resultItems: o,
     suggestions: c,

@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(833664),
   u = n(545957),
   d = n(699516),
-  _ = n(303524),
-  f = n(329520),
+  f = n(303524),
+  _ = n(329520),
   p = n(233023),
   h = n(868781),
   m = n(122943),
@@ -53,7 +53,7 @@ function y(e) {
   let P = (null == t ? void 0 : t.bot) === !0,
     w = (null == R ? void 0 : R.state) != null && "xs" === I,
     D = () => {
-      if (null != C) return (0, r.jsx)(f.Z, {
+      if (null != C) return (0, r.jsx)(_.Z, {
         stream: C,
         game: null == n ? void 0 : n.find(c.Z),
         textVariant: "text-".concat(I, "/medium"),
@@ -106,6 +106,6 @@ function y(e) {
       variant: "text-".concat(I, "/normal"),
       className: o()(b.truncated, b.dot, O),
       children: g.l
-    }), x(), S && (0, r.jsx)(_.Z, {})]
+    }), x(), S && (0, r.jsx)(f.Z, {})]
   })
 }

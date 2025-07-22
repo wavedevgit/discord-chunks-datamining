@@ -13,8 +13,8 @@ var r = n(255367),
   c = n(596454),
   u = n(100527),
   d = n(906732),
-  _ = n(266454),
-  f = n(688465),
+  f = n(266454),
+  _ = n(688465),
   p = n(333867),
   h = n(592125),
   m = n(63063),
@@ -83,7 +83,7 @@ let M = 190,
       buttonUseState: c = "activate",
       source: u
     } = e, d = h.Z.getChannel(t);
-    null != d && ((0, _.Q3)(s.z.CONFETTI_POTION_UPSELL, {
+    null != d && ((0, f.Q3)(s.z.CONFETTI_POTION_UPSELL, {
       dismissAction: N.L.INDIRECT_ACTION
     }), (0, l.ZDy)(async () => {
       let {
@@ -137,7 +137,7 @@ function B(e) {
     message: n,
     onRedeem: a,
     buttonUseState: s
-  } = e, c = null != n, _ = c && (0, I.Uw)(n), f = (0, b.Qj)(t.id, c), {
+  } = e, c = null != n, f = c && (0, I.Uw)(n), _ = (0, b.Qj)(t.id, c), {
     price: h,
     fetchingPrice: m,
     error: g
@@ -152,8 +152,8 @@ function B(e) {
     N && (0, E.SN)(O.D1)
   }, [N, c]);
   let w = (0, i.useCallback)(() => {
-      null != f && ((0, l.pTH)(), a(f))
-    }, [f, a]),
+      null != _ && ((0, l.pTH)(), a(_))
+    }, [_, a]),
     D = (0, i.useCallback)(() => {
       (0, p.Z)({
         skuId: O.D1,
@@ -173,7 +173,7 @@ function B(e) {
       }
       return 0
     }, [y, R, s]),
-    M = (0, i.useMemo)(() => 0 === x ? 1 : _ ? 2 : 3 * (null == f), [_, f, x]);
+    M = (0, i.useMemo)(() => 0 === x ? 1 : f ? 2 : 3 * (null == _), [f, _, x]);
   return (0, r.jsx)(V, {
     channel: t,
     buttonPurchaseState: x,
@@ -181,7 +181,7 @@ function B(e) {
     price: h,
     onActionClick: L,
     loading: P,
-    selectedEmoji: null != f ? f : void 0,
+    selectedEmoji: null != _ ? _ : void 0,
     isReaction: c
   })
 }
@@ -246,7 +246,7 @@ let V = e => {
           children: [(0, r.jsx)(l.X6q, {
             variant: "heading-lg/bold",
             children: C.intl.string(C.t["5/knv7"])
-          }), (0, r.jsx)(f.Z, {})]
+          }), (0, r.jsx)(_.Z, {})]
         }), (0, r.jsx)(l.Text, {
           variant: "text-sm/normal",
           children: C.intl.string(C.t.NFTQoa)
@@ -280,8 +280,8 @@ let V = e => {
     } = e, [o, s] = (0, i.useState)(!1), u = (0, i.useCallback)(() => {
       s(!1)
     }, []), d = (0, i.useCallback)(e => (0, b.t0)(e, t.id, a), [a, t.id]), {
-      emojiName: _,
-      selectionText: f
+      emojiName: f,
+      selectionText: _
     } = (0, i.useMemo)(() => null == n ? {
       emojiName: null,
       selectionText: C.intl.string(C.t.KgK5qq)
@@ -313,13 +313,13 @@ let V = e => {
               }) : (0, r.jsx)(c.Z, {
                 animated: !1,
                 emojiId: n.id,
-                emojiName: _,
+                emojiName: f,
                 className: R.emojiIcon
               })
             }), (0, r.jsx)(l.Text, {
               color: "interactive-active",
               variant: "text-sm/normal",
-              children: f
+              children: _
             })]
           }), o ? (0, r.jsx)(l.u04, {
             color: "currentColor",

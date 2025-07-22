@@ -1,14 +1,14 @@
-/** Chunk was on 51164 **/
+/** Chunk was on 88448 **/
 r.d(t, {
-  Tm: () => a,
-  WJ: () => i,
+  Tm: () => i,
+  WJ: () => a,
   s5: () => c
 }), r(539854), r(997841), r(913527);
 var n = r(592125);
 r(630388), r(862825);
 var l = r(981631);
 
-function a(e) {
+function i(e) {
   switch (e.type) {
     case l.aib.GUILD:
       return e.guildId;
@@ -22,7 +22,7 @@ function a(e) {
   }
 }
 
-function i(e) {
+function a(e) {
   switch (e.type) {
     case l.aib.GUILD:
     case l.aib.GUILD_CHANNEL:

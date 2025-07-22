@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  KZ: () => f,
+  KZ: () => _,
   Mt: () => d,
-  ZB: () => _
+  ZB: () => f
 });
 var r = n(255367),
   i = n(73800),
@@ -40,18 +40,18 @@ let u = i.createContext(null),
       openedAt: a,
       fetchStartedAt: l,
       fetchEndedAt: d,
-      isLoaded: _ = !1
+      isLoaded: f = !1
     } = e, {
-      analyticsLocations: f
+      analyticsLocations: _
     } = (0, o.ZP)(), p = i.useRef(void 0), h = {
-      analyticsLocations: f,
+      analyticsLocations: _,
       value: t
     }, m = i.useRef(h);
     return i.useEffect(() => {
       m.current = h
     }), i.useEffect(() => {
       let e = Date.now();
-      if (null == p.current && null != a && (p.current = e - a), !_) return;
+      if (null == p.current && null != a && (p.current = e - a), !f) return;
       let {
         analyticsLocations: t,
         value: n
@@ -68,12 +68,12 @@ let u = i.createContext(null),
         fetchStartedAt: l,
         analyticsLocations: t
       }, n))
-    }, [_]), (0, r.jsx)(u.Provider, {
+    }, [f]), (0, r.jsx)(u.Provider, {
       value: t,
       children: n
     })
   },
-  _ = e => {
+  f = e => {
     var t;
     let {
       layout: n,
@@ -83,21 +83,21 @@ let u = i.createContext(null),
       messageId: l,
       roleId: c,
       sourceSessionId: d,
-      showGuildProfile: _ = !0
-    } = e, f = null == (t = i.useContext(u)) ? void 0 : t.sessionId;
+      showGuildProfile: f = !0
+    } = e, _ = null == (t = i.useContext(u)) ? void 0 : t.sessionId;
     return i.useMemo(() => ({
       sessionId: (0, a.Z)(),
-      sourceSessionId: null != d ? d : f,
+      sourceSessionId: null != d ? d : _,
       layout: n,
       userId: r,
       guildId: o,
       channelId: s,
       messageId: l,
       roleId: c,
-      showGuildProfile: _
-    }), [f, n, r, o, s, l, c, d, _])
+      showGuildProfile: f
+    }), [_, n, r, o, s, l, c, d, f])
   },
-  f = () => {
+  _ = () => {
     let e = i.useContext(u),
       {
         analyticsLocations: t

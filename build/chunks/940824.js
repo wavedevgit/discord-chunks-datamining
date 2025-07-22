@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => _
 });
 var r = n(255367);
 n(73800);
@@ -13,13 +13,13 @@ var i = n(481060),
   c = n(335131),
   u = n(981631),
   d = n(388032),
-  _ = n(279248);
-let f = e => {
+  f = n(279248);
+let _ = e => {
   let {
     onClose: t
   } = e, {
     analyticsLocations: n
-  } = (0, s.ZP)(), f = () => {
+  } = (0, s.ZP)(), _ = () => {
     t(), (0, l.uL)(u.Z5c.COLLECTIBLES_SHOP), (0, c.mK)({
       openInLayer: !1,
       analyticsSource: o.Z.PREMIUM_PAYMENT_MODAL,
@@ -27,9 +27,9 @@ let f = e => {
     }), (0, a.xf)()
   };
   return (0, r.jsxs)("div", {
-    className: _.container,
+    className: f.container,
     children: [(0, r.jsx)("div", {
-      className: _.iconBackground,
+      className: f.iconBackground,
       children: (0, r.jsx)(i.EOn, {
         size: "custom",
         width: 20,
@@ -41,8 +41,8 @@ let f = e => {
       color: "header-primary",
       children: d.intl.format(d.t.twSHtb, {
         checkItOut: e => (0, r.jsx)(i.P3F, {
-          className: _.link,
-          onClick: f,
+          className: f.link,
+          onClick: _,
           children: e
         })
       })

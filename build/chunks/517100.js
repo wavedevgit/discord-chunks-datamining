@@ -11,8 +11,8 @@ var r, i = n(442837),
   c = n(70956),
   u = n(358085),
   d = n(314897),
-  _ = n(981631),
-  f = n(65154);
+  f = n(981631),
+  _ = n(65154);
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -34,7 +34,7 @@ function O() {
 }
 
 function v() {
-  Date.now() - h > Math.min(l.CM.getSetting() * c.Z.Millis.SECOND, _.OSm) || O() ? g || a.Z.dispatch({
+  Date.now() - h > Math.min(l.CM.getSetting() * c.Z.Millis.SECOND, f.OSm) || O() ? g || a.Z.dispatch({
     type: "AFK",
     afk: !0
   }) : g && a.Z.dispatch({
@@ -44,7 +44,7 @@ function v() {
 }
 
 function I() {
-  Date.now() - h > _.OSm || O() ? m || a.Z.dispatch({
+  Date.now() - h > f.OSm || O() ? m || a.Z.dispatch({
     type: "IDLE",
     idle: !0,
     idleSince: h
@@ -82,14 +82,14 @@ function C(e) {
     userId: t,
     speakingFlags: n
   } = e;
-  return n !== f.Dg.NONE && t === d.default.getId() && P({}), !1
+  return n !== _.Dg.NONE && t === d.default.getId() && P({}), !1
 }
 
 function R(e) {
   let {
     state: t
   } = e;
-  return y = t === _.$7l.BACKGROUND, h = Date.now(), T(), !1
+  return y = t === f.$7l.BACKGROUND, h = Date.now(), T(), !1
 }
 
 function P(e) {

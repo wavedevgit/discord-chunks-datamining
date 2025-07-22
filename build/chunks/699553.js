@@ -15,10 +15,10 @@ var r = n(544891),
   c = n(406218),
   u = n(314852),
   d = n(981631);
-let _ = 6e4;
+let f = 6e4;
 
-function f(e) {
-  return Date.now() - (null != e ? e : 0) > _
+function _(e) {
+  return Date.now() - (null != e ? e : 0) > f
 }
 
 function p(e, t) {
@@ -26,7 +26,7 @@ function p(e, t) {
   let n = u.Z.getFetchStatus(e) === u.a.FETCHING,
     o = u.Z.getLastSyncTimestamp(e),
     s = u.Z.getProfile(e),
-    l = f(o);
+    l = _(o);
   return n && !t ? Promise.resolve(null) : null == s || l || t ? (i.Z.dispatch({
     type: "GUILD_PROFILE_FETCH",
     guildId: e

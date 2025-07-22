@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(963249),
   u = n(109213),
   d = n(51144),
-  _ = n(443603),
-  f = n(981631),
+  f = n(443603),
+  _ = n(981631),
   p = n(388032),
   h = n(302195);
 
@@ -72,7 +72,7 @@ function y(e) {
     location: "gift-button"
   }, {
     autoTrackExposure: !1
-  }), T = i.type === f.d4z.DM;
+  }), T = i.type === _.d4z.DM;
   if (t) return null;
   let S = () => {
     I && T && null != E ? (0, o.ZDy)(async () => {
@@ -81,10 +81,10 @@ function y(e) {
       } = await n.e("59207").then(n.bind(n, 435626));
       return t => (0, r.jsx)(e, g({
         analyticsObject: {
-          page: f.ZY5.DM_CHANNEL,
-          section: f.jXE.CHANNEL_TEXT_AREA,
-          object: f.qAy.BUTTON_ICON,
-          objectType: f.Qqv.GIFT
+          page: _.ZY5.DM_CHANNEL,
+          section: _.jXE.CHANNEL_TEXT_AREA,
+          object: _.qAy.BUTTON_ICON,
+          objectType: _.Qqv.GIFT
         },
         analyticsLocations: m,
         giftRecipient: E
@@ -95,16 +95,16 @@ function y(e) {
       initialPlanId: null,
       analyticsLocations: m,
       analyticsObject: {
-        page: i.isPrivate() ? f.ZY5.DM_CHANNEL : f.ZY5.GUILD_CHANNEL,
-        section: f.jXE.CHANNEL_TEXT_AREA,
-        object: f.qAy.BUTTON_ICON,
-        objectType: f.Qqv.GIFT
+        page: i.isPrivate() ? _.ZY5.DM_CHANNEL : _.ZY5.GUILD_CHANNEL,
+        section: _.jXE.CHANNEL_TEXT_AREA,
+        object: _.qAy.BUTTON_ICON,
+        objectType: _.Qqv.GIFT
       }
     })
   };
   return (0, r.jsx)(o.ua7, {
     text: p.intl.string(p.t.sWtWDQ),
-    children: e => (0, r.jsx)(_.Z, b(g(b(g({}, e), {
+    children: e => (0, r.jsx)(f.Z, b(g(b(g({}, e), {
       innerClassName: h.button,
       isActive: !1,
       "aria-label": p.intl.string(p.t.Z1RnTk),

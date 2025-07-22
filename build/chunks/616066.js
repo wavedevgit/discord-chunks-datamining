@@ -13,9 +13,9 @@ var i = n(120356),
   c = n(125988),
   u = n(998502),
   d = n(388032),
-  _ = n(614490);
+  f = n(614490);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -31,7 +31,7 @@ function p(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -60,9 +60,9 @@ let g = u.ZP.getEnableHardwareAcceleration() ? s.Xo$ : s.qEK,
       user: n,
       isHighlighted: i = !1,
       isPurchased: u = !1,
-      avatarSize: f = s.EFr.SIZE_152,
+      avatarSize: _ = s.EFr.SIZE_152,
       avatarPlaceholderSrc: h
-    } = e, E = (0, l.y9)(f), {
+    } = e, E = (0, l.y9)(_), {
       avatarDecorationSrc: b,
       eventHandlers: y,
       avatarPlaceholderSrc: O
@@ -77,11 +77,11 @@ let g = u.ZP.getEnableHardwareAcceleration() ? s.Xo$ : s.qEK,
     return (0, r.jsx)(g, m(p({}, y), {
       avatarDecoration: b,
       src: i ? null == n ? void 0 : n.getAvatarURL(void 0, 152, !0) : null != h ? h : O,
-      imageClassName: i ? _.fadeInAvatarImg : void 0,
-      className: a()(_.avatar, {
-        [_.avatarPurchased]: u && !i
+      imageClassName: i ? f.fadeInAvatarImg : void 0,
+      className: a()(f.avatar, {
+        [f.avatarPurchased]: u && !i
       }),
-      size: f,
+      size: _,
       "aria-label": v
     }))
   }

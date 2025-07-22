@@ -52,8 +52,8 @@ if (t.unstable_now = void 0, "object" == typeof performance && "function" == typ
 }
 var u = [],
   d = [],
-  _ = 1,
-  f = null,
+  f = 1,
+  _ = null,
   p = 3,
   h = !1,
   m = !1,
@@ -101,20 +101,20 @@ function C() {
         var a = p;
         try {
           a: {
-            for (O(e), f = r(u); null !== f && !(f.expirationTime > e && N());) {
-              var s = f.callback;
+            for (O(e), _ = r(u); null !== _ && !(_.expirationTime > e && N());) {
+              var s = _.callback;
               if ("function" == typeof s) {
-                f.callback = null, p = f.priorityLevel;
-                var l = s(f.expirationTime <= e);
+                _.callback = null, p = _.priorityLevel;
+                var l = s(_.expirationTime <= e);
                 if (e = t.unstable_now(), "function" == typeof l) {
-                  f.callback = l, O(e), n = !0;
+                  _.callback = l, O(e), n = !0;
                   break a
                 }
-                f === r(u) && i(u), O(e)
+                _ === r(u) && i(u), O(e)
               } else i(u);
-              f = r(u)
+              _ = r(u)
             }
-            if (null !== f) n = !0;
+            if (null !== _) n = !0;
             else {
               var c = r(d);
               null !== c && D(v, c.startTime - e), n = !1
@@ -123,7 +123,7 @@ function C() {
           break e
         }
         finally {
-          f = null, p = a, h = !1
+          _ = null, p = a, h = !1
         }
       }
     }
@@ -218,7 +218,7 @@ t.unstable_IdlePriority = 5, t.unstable_ImmediatePriority = 1, t.unstable_LowPri
       s = 5e3
   }
   return s = a + s, e = {
-    id: _++,
+    id: f++,
     callback: i,
     priorityLevel: e,
     startTime: a,

@@ -12,8 +12,8 @@ var r, i = n(255367),
   c = n.n(l),
   u = n(84735),
   d = n(710260),
-  _ = n(472558),
-  f = n(585483),
+  f = n(472558),
+  _ = n(585483),
   p = n(872801),
   h = n(302901),
   m = n(981631),
@@ -367,7 +367,7 @@ class D extends(r = a.Component) {
       isPositioned: !0
     }, this.calculateState()));
     let i = this.elementRef.current;
-    c()(null != i, "Missing elementRef"), null != n.current && v.set(i, n.current), f.S.subscribe(m.CkL.LAYER_POP_START, this.handleLayerPopStart), f.S.subscribe(m.CkL.LAYER_POP_COMPLETE, this.handleLayerPopComplete), null == i || null == (t = i.ownerDocument) || null == (e = t.defaultView) || e.addEventListener("resize", this.handleLayerPopComplete), null == r || r()
+    c()(null != i, "Missing elementRef"), null != n.current && v.set(i, n.current), _.S.subscribe(m.CkL.LAYER_POP_START, this.handleLayerPopStart), _.S.subscribe(m.CkL.LAYER_POP_COMPLETE, this.handleLayerPopComplete), null == i || null == (t = i.ownerDocument) || null == (e = t.defaultView) || e.addEventListener("resize", this.handleLayerPopComplete), null == r || r()
   }
   componentDidUpdate(e, t) {
     if (S(e) === S(this.props) && w(e, this.props) || this.updatePosition(), t.position !== this.state.position) {
@@ -378,7 +378,7 @@ class D extends(r = a.Component) {
   componentWillUnmount() {
     var e, t, n, r;
     let i = this.elementRef.current;
-    c()(null != i, "Missing elementRef"), v.delete(i), f.S.unsubscribe(m.CkL.LAYER_POP_START, this.handleLayerPopStart), f.S.unsubscribe(m.CkL.LAYER_POP_COMPLETE, this.handleLayerPopComplete), null == i || null == (t = i.ownerDocument) || null == (e = t.defaultView) || e.removeEventListener("resize", this.handleLayerPopComplete), null == (n = (r = this.props).onUnmount) || n.call(r)
+    c()(null != i, "Missing elementRef"), v.delete(i), _.S.unsubscribe(m.CkL.LAYER_POP_START, this.handleLayerPopStart), _.S.unsubscribe(m.CkL.LAYER_POP_COMPLETE, this.handleLayerPopComplete), null == i || null == (t = i.ownerDocument) || null == (e = t.defaultView) || e.removeEventListener("resize", this.handleLayerPopComplete), null == (n = (r = this.props).onUnmount) || n.call(r)
   }
   render() {
     let {
@@ -391,7 +391,7 @@ class D extends(r = a.Component) {
     } = this.props, {
       position: l,
       isPositioned: c,
-      isSettingsLayerTransitioning: f,
+      isSettingsLayerTransitioning: _,
       nudge: p
     } = this.state;
     return (0, i.jsx)("div", {
@@ -407,9 +407,9 @@ class D extends(r = a.Component) {
           } = o;
           return (0, i.jsx)("div", {
             id: e,
-            className: s()(t, (0, _.Q)(d), g.layer, {
+            className: s()(t, (0, f.Q)(d), g.layer, {
               [g.emptyError]: !1,
-              [g.layerHidden]: f,
+              [g.layerHidden]: _,
               [g.disabledPointerEvents]: a,
               "disable-adaptive-theme": h
             }),

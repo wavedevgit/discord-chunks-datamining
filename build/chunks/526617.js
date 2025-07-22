@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   O: () => ec,
-  Z: () => e_
+  Z: () => ef
 }), n(388685), n(856094), n(472816), n(794429);
 var r = n(255367),
   i = n(73800),
@@ -13,8 +13,8 @@ var r = n(255367),
   c = n(481060),
   u = n(239091),
   d = n(788911),
-  _ = n(2052),
-  f = n(100527),
+  f = n(2052),
+  _ = n(100527),
   p = n(906732),
   h = n(213609),
   m = n(313201),
@@ -99,12 +99,12 @@ let ee = 16,
   eo = 150,
   es = "3",
   el = {
-    [M.bg.SEARCH]: f.Z.SOUNDBOARD_SEARCH_RESULTS_SECTION,
-    [M.bg.DEFAULTS]: f.Z.SOUNDBOARD_DEFAULT_SOUNDS_SECTION,
-    [M.bg.GUILD]: f.Z.SOUNDBOARD_GUILD_SOUNDS_SECTION,
-    [M.bg.FAVORITES]: f.Z.SOUNDBOARD_FAVORITES_SECTION,
-    [M.bg.RECENTLY_HEARD]: f.Z.SOUNDBOARD_RECENTLY_HEARD_SECTION,
-    [M.bg.FREQUENTLY_USED]: f.Z.SOUNDBOARD_FREQUENTLY_USED_SECTION
+    [M.bg.SEARCH]: _.Z.SOUNDBOARD_SEARCH_RESULTS_SECTION,
+    [M.bg.DEFAULTS]: _.Z.SOUNDBOARD_DEFAULT_SOUNDS_SECTION,
+    [M.bg.GUILD]: _.Z.SOUNDBOARD_GUILD_SOUNDS_SECTION,
+    [M.bg.FAVORITES]: _.Z.SOUNDBOARD_FAVORITES_SECTION,
+    [M.bg.RECENTLY_HEARD]: _.Z.SOUNDBOARD_RECENTLY_HEARD_SECTION,
+    [M.bg.FREQUENTLY_USED]: _.Z.SOUNDBOARD_FREQUENTLY_USED_SECTION
   };
 
 function ec(e, t, n) {
@@ -217,7 +217,7 @@ function ed() {
   })
 }
 
-function e_(e) {
+function ef(e) {
   let {
     guildId: t,
     channel: a,
@@ -228,8 +228,8 @@ function e_(e) {
     suppressPlaySound: X = !1,
     shouldShowUpsell: J = !0,
     gridNotice: ee,
-    soundButtonOverlay: e_,
-    listPadding: ef,
+    soundButtonOverlay: ef,
+    listPadding: e_,
     renderHeader: ep,
     defaultSoundsOnly: eh = !1,
     inExpressionPicker: em,
@@ -240,9 +240,9 @@ function e_(e) {
     analyticsLocations: eb
   } = (0, p.ZP)(), {
     analyticsLocations: ey
-  } = (0, p.ZP)(f.Z.PREMIUM_UPSELL), {
+  } = (0, p.ZP)(_.Z.PREMIUM_UPSELL), {
     location: eO
-  } = (0, _.O)(), ev = i.useMemo(() => $(Q({}, eO), {
+  } = (0, f.O)(), ev = i.useMemo(() => $(Q({}, eO), {
     section: Y.jXE.SOUNDBOARD_SOUND_PICKER
   }), [eO]), [eI, eT] = i.useState(null), eS = (0, l.e7)([C.default], () => C.default.getCurrentUser()), eA = (0, D.I5)(eS, K.p9.TIER_2), eN = (0, l.e7)([R.Z], () => {
     var e;
@@ -304,13 +304,13 @@ function e_(e) {
         getItemProps: s,
         onSelectItem: eq,
         onItemMouseEnter: l,
-        buttonOverlay: e_,
+        buttonOverlay: ef,
         isNitroLocked: u,
         shouldShowUpsell: J,
         inExpressionPicker: em
       }, t))
     }), "row-".concat(n["aria-rowindex"]))
-  }, [eB, J, eA, t, X, eq, a, eY, eW, eC, eb, e_, eF, em]), eQ = i.useCallback((e, t) => {
+  }, [eB, J, eA, t, X, eq, a, eY, eW, eC, eb, ef, eF, em]), eQ = i.useCallback((e, t) => {
     if (e <= 0 || !J) return !1;
     let n = eB[e],
       r = eB[e - 1],
@@ -397,10 +397,10 @@ function e_(e) {
     soundboardListRef: e,
     categories: eL,
     shouldUpsellLockedCategories: eF,
-    listPadding: ef,
+    listPadding: e_,
     guildId: t,
     inExpressionPicker: em
-  }), [eL, eF, ef, t, em]), e7 = i.useCallback(() => eF ? (0, r.jsx)(v.p, {
+  }), [eL, eF, e_, t, em]), e7 = i.useCallback(() => eF ? (0, r.jsx)(v.p, {
     showUpsell: eD.alwaysStickyUpsell || eG,
     text: e$(),
     button: z.intl.string(z.t.pj0XBA),

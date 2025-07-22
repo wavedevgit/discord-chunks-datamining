@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 }), n(49124);
 var r = n(255367),
   i = n(73800),
@@ -22,7 +22,7 @@ let d = async e => {
   return u.assets[0].p = o ? await (0, l.lv)(i) : i, u
 };
 
-function _(e) {
+function f(e) {
   let {
     containerDimensions: t,
     effect: n,
