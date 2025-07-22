@@ -1,19 +1,19 @@
-/** Chunk was on 27063 **/
-t.d(r, {
-  Eg: () => a,
-  SK: () => n,
-  tl: () => i
+/** Chunk was on 96812 **/
+r.d(t, {
+  Eg: () => n,
+  SK: () => l,
+  tl: () => o
 });
-let n = {
+let l = {
     primary_color: 0xa9c9ff,
     secondary_color: 0xffbbec,
     tertiary_color: 0xffc3a0
   },
-  a = {
+  n = {
     primary_color: 0x9e6bff,
     secondary_color: 0x9fc1ff
   },
-  i = [{
+  o = [{
     start: 0xaa3b3b,
     end: 0xff4848,
     name: "fire"

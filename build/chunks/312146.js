@@ -1,11 +1,11 @@
-/** Chunk was on 85352 **/
-r.d(t, {
+/** Chunk was on 55305 **/
+a.d(t, {
   Ui: () => i,
   p$: () => c
 });
-var a = r(818083),
-  n = r(981631);
-let o = (0, a.B)({
+var r = a(818083),
+  n = a(981631);
+let o = (0, r.B)({
   kind: "guild",
   id: "2023-03_guild_media_channel",
   label: "Media Channel",
@@ -24,16 +24,16 @@ let o = (0, a.B)({
 function i(e) {
   var t;
   let {
-    enabled: r
+    enabled: a
   } = o.useExperiment({
     guildId: null != (t = null == e ? void 0 : e.id) ? t : n.lds,
     location: "96e84c_1"
   }, {
     autoTrackExposure: !0
   });
-  return (null == e ? void 0 : e.id) != null && r
+  return (null == e ? void 0 : e.id) != null && a
 }
-let l = (0, a.B)({
+let l = (0, r.B)({
   kind: "user",
   id: "2023-04_guild_media_channel_post_preview_embed_users",
   label: "Guild Role Subscription Users",

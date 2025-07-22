@@ -147,10 +147,10 @@ function k(e) {
     setFilename: Y
   } = (0, N.Z)(null == a ? void 0 : a.cover_image_asset), K = (0, b.Dt)(), X = (0, b.Dt)(), q = (0, b.Dt)();
 
-  function Q(e, t) {
+  function J(e, t) {
     o()(null != e, "Null value not allowed"), null != t && Y(t.name), k(e)
   }
-  let J = i.useMemo(() => {
+  let Q = i.useMemo(() => {
       var e;
       return null != x && x !== (null != (e = null == a ? void 0 : a.description) ? e : "") || (null == A ? void 0 : A.startsWith("data:")) === !0 || m !== s || (null == a ? void 0 : a.store_page_guild_products_default_sort) !== M || (null == a ? void 0 : a.server_shop_tab_order) !== U
     }, [A, s, x, a, m, M, U]),
@@ -242,13 +242,13 @@ function k(e) {
         iconWrapperClassName: w.coverImageUploaderIconWrapper,
         imageClassName: w.coverImageUploaderInner,
         iconClassName: w.coverImageUploaderIcon,
-        onChange: Q,
+        onChange: J,
         "aria-label": W,
         disabled: ee
       }), (0, r.jsx)(p.LZC, {
         size: 16
       }), (0, r.jsx)(j.Z, {
-        onChange: Q,
+        onChange: J,
         buttonCTA: V,
         "aria-label": W,
         disabled: ee,
@@ -296,7 +296,7 @@ function k(e) {
     }), (0, r.jsx)(u.W, {
       component: "div",
       className: w.contentRegion,
-      children: J && (0, r.jsx)(p.oXn, {
+      children: Q && (0, r.jsx)(p.oXn, {
         children: (0, r.jsx)(f.Z, {
           submitting: F,
           disabled: !$,

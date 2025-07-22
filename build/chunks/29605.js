@@ -3,7 +3,7 @@
 n.d(t, {
   FT: () => K,
   L3: () => Y,
-  ZP: () => Q
+  ZP: () => J
 }), n(388685), n(583741);
 var r = n(255367),
   i = n(73800),
@@ -322,7 +322,7 @@ let z = d().throttle(h.OQ, 1e3),
       })]
     })]
   }),
-  Q = () => {
+  J = () => {
     let e = (0, m.e7)([k.Z], () => k.Z.getGuild()),
       [t, l] = i.useState("");
     o()(null != e, "ConnectedGuildSettingsEmoji must be rendered within a guild context");
@@ -367,7 +367,7 @@ let z = d().throttle(h.OQ, 1e3),
           section: M.jXE.GUILD_SETTINGS_EMOJI_ADD_BUTTON
         }
       }), []),
-      Q = (n, r, i) => (0, y.G)({
+      J = (n, r, i) => (0, y.G)({
         data: n,
         file: r,
         image: i,
@@ -378,11 +378,11 @@ let z = d().throttle(h.OQ, 1e3),
           page: M.ZY5.GUILD_SETTINGS
         }
       }),
-      J = async n => {
+      Q = async n => {
         l((0, u.Z)()), P.default.track(M.rMx.EMOJI_UPLOAD_STARTED, {
           guild_id: e.id,
           upload_id: t
-        }), await (0, E._j)(n, Q), b(!0)
+        }), await (0, E._j)(n, J), b(!0)
       }, $ = () => {
         null !== R.current && ((0, p.Mr3)(R.current), R.current = null)
       }, ee = async e => {
@@ -391,7 +391,7 @@ let z = d().throttle(h.OQ, 1e3),
             default: t
           } = await n.e("16169").then(n.bind(n, 935333));
           return n => (0, r.jsx)(t, H({
-            processFiles: () => J(e)
+            processFiles: () => Q(e)
           }, n))
         })
       }, et = (0, v.l)(e);
@@ -448,7 +448,7 @@ let z = d().throttle(h.OQ, 1e3),
               children: [U.intl.string(U.t.DU0dy8), V > 0 ? (0, r.jsx)(E.ZP, {
                 disabled: N || 0 === V || !a,
                 tabIndex: 0,
-                onChange: Q,
+                onChange: J,
                 setLoading: w,
                 multiple: !0
               }) : null]

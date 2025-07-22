@@ -56,8 +56,8 @@ let c = {
   generateChannelPermissionSpec: function(t, i, n, E) {
     var l, N, a, I;
     let c = (0, r.Eg)(t),
-      u = (0, R.IG)(i, n, c, E),
-      D = p(t),
+      D = (0, R.IG)(i, n, c, E),
+      u = p(t),
       C = g.tM.getCurrentConfig({
         guildId: t,
         location: "3ad37d_1"
@@ -74,41 +74,41 @@ let c = {
       }).enabled;
     switch (i.type) {
       case M.d4z.GUILD_CATEGORY:
-        return [A.zO(u, O.intl.string(O.t.AkPxc3)), A.Ny(u, O.intl.string(O.t.Ny49TE)), A.vq(u, O.intl.string(O.t.cKobOz), {
+        return [A.zO(D, O.intl.string(O.t.AkPxc3)), A.Ny(D, O.intl.string(O.t.Ny49TE)), A.vq(D, O.intl.string(O.t.cKobOz), {
           showPrivateThreads: !0,
           showCreateThreads: !0,
           inSoundmojiExperiment: L,
           inPinPermissionExperiment: G
-        }), A.WV(u, O.intl.string(O.t["46Ra1d"])), A.xU(u, O.intl.string(O.t["rrh/W1"])), ...(l = D.showStageChannelPermissions, N = () => A.kv(u, O.intl.string(O.t.yniaur)), l ? [N()] : []), A.uu(u, O.intl.string(O.t.b8lplZ))];
+        }), A.WV(D, O.intl.string(O.t["46Ra1d"])), A.xU(D, O.intl.string(O.t["rrh/W1"])), ...(l = u.showStageChannelPermissions, N = () => A.kv(D, O.intl.string(O.t.yniaur)), l ? [N()] : []), A.uu(D, O.intl.string(O.t.b8lplZ))];
       case M.d4z.GUILD_VOICE:
-        return [A.zO(u, O.intl.string(O.t.ouHggI), {
+        return [A.zO(D, O.intl.string(O.t.ouHggI), {
           showManageWebhooks: !0
-        }), A.Ny(u, O.intl.string(O.t.Ny49TE)), A.WV(u, O.intl.string(O.t["46Ra1d"])), A.aW(u, O.intl.string(O.t.iqlsnJ), {
+        }), A.Ny(D, O.intl.string(O.t.Ny49TE)), A.WV(D, O.intl.string(O.t["46Ra1d"])), A.aW(D, O.intl.string(O.t.iqlsnJ), {
           sectionDescription: f ? O.intl.format(O.t["4Z9FbW"], {
             setUpAutomod: () => {
               s.Z.open(t, M.pNK.GUILD_AUTOMOD)
             }
           }) : void 0,
           inSoundmojiExperiment: L
-        }), A.uu(u, O.intl.string(O.t.b8lplZ)), A.xU(u, O.intl.string(O.t["rrh/W1"]))];
+        }), A.uu(D, O.intl.string(O.t.b8lplZ)), A.xU(D, O.intl.string(O.t["rrh/W1"]))];
       case M.d4z.GUILD_STAGE_VOICE:
-        return [A.zO(u, O.intl.string(O.t.ouHggI), {
+        return [A.zO(D, O.intl.string(O.t.ouHggI), {
           showManageWebhooks: !1
-        }), A.Ny(u, O.intl.string(O.t.Ny49TE)), A.FX(u, O.intl.string(O.t["46Ra1d"]), d), A.kv(u, O.intl.string(O.t.yniaur)), A.uu(u, O.intl.string(O.t.b8lplZ)), A.aW(u, O.intl.string(O.t.iqlsnJ), {
+        }), A.Ny(D, O.intl.string(O.t.Ny49TE)), A.FX(D, O.intl.string(O.t["46Ra1d"]), d), A.kv(D, O.intl.string(O.t.yniaur)), A.uu(D, O.intl.string(O.t.b8lplZ)), A.aW(D, O.intl.string(O.t.iqlsnJ), {
           sectionDescription: f ? O.intl.format(O.t["4Z9FbW"], {
             setUpAutomod: () => {
               s.Z.open(t, M.pNK.GUILD_AUTOMOD)
             }
           }) : void 0,
           inSoundmojiExperiment: L
-        }), A.xU(u, O.intl.string(O.t["rrh/W1"]), {
+        }), A.xU(D, O.intl.string(O.t["rrh/W1"]), {
           showActivities: !1
         })];
       case M.d4z.GUILD_FORUM:
       case M.d4z.GUILD_MEDIA:
         let h = U ? O.intl.string(O.t.aSjPg4) : O.intl.string(O.t.TS7CnZ),
           m = U ? O.t.YjJTtL : O.t["1MTnqa"];
-        return [A.zO(u, O.intl.string(O.t.ouHggI)), A.Ny(u, O.intl.string(O.t.Ny49TE)), A.vq(u, h, {
+        return [A.zO(D, O.intl.string(O.t.ouHggI)), A.Ny(D, O.intl.string(O.t.Ny49TE)), A.vq(D, h, {
           showPrivateThreads: !1,
           showCreateThreads: !1,
           sectionDescription: f ? O.intl.format(m, {
@@ -118,14 +118,14 @@ let c = {
           }) : void 0,
           inSoundmojiExperiment: L,
           inPinPermissionExperiment: G
-        }), A.xU(u, O.intl.string(O.t["rrh/W1"])), ...(a = () => A.WV(u, O.intl.string(O.t["46Ra1d"])), C ? [a()] : [])];
+        }), A.xU(D, O.intl.string(O.t["rrh/W1"])), ...(a = () => A.WV(D, O.intl.string(O.t["46Ra1d"])), C ? [a()] : [])];
       default:
-        return [A.zO(u, O.intl.string(O.t.ouHggI)), A.Ny(u, O.intl.string(O.t.Ny49TE)), A.vq(u, O.intl.string(O.t.cKobOz), {
+        return [A.zO(D, O.intl.string(O.t.ouHggI)), A.Ny(D, O.intl.string(O.t.Ny49TE)), A.vq(D, O.intl.string(O.t.cKobOz), {
           showPrivateThreads: i.type !== M.d4z.GUILD_ANNOUNCEMENT,
           showCreateThreads: !0,
           inSoundmojiExperiment: L,
           inPinPermissionExperiment: G
-        }), A.xU(u, O.intl.string(O.t["rrh/W1"])), ...(I = () => A.WV(u, O.intl.string(O.t["46Ra1d"])), C ? [I()] : [])]
+        }), A.xU(D, O.intl.string(O.t["rrh/W1"])), ...(I = () => A.WV(D, O.intl.string(O.t["46Ra1d"])), C ? [I()] : [])]
     }
   },
   generateGuildPermissionSpec: function(t) {

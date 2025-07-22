@@ -206,14 +206,14 @@ let w = (e, t) => e < (0, _.A3)(I.Eu4.NONE) ? I.Eu4.NONE : e < (0, _.A3)(I.Eu4.T
           X = z ? Math.min(5 - (U.length + 0) % 5, K) : 0,
           q = [];
         for (let e = 0; e < X; e++) q.push((0, r.jsx)(D, {}, "placeholder-".concat(e)));
-        let Q = t.premiumTier < m.tier && j >= I.oCV[m.tier],
-          J = S.intl.string(S.t.dtFw5e),
+        let J = t.premiumTier < m.tier && j >= I.oCV[m.tier],
+          Q = S.intl.string(S.t.dtFw5e),
           $ = () => M(Math.max(1, I.oCV[m.tier] - j), m.tier),
           ee = !1;
-        Q && (k ? ($ = () => {
+        J && (k ? ($ = () => {
           let e = E.Cp[m.tier];
           null != e && (0, h.H6)(t.id, e)
-        }, J = S.intl.string(S.t.g7lkra), t.premiumTier + 1 !== m.tier && (ee = !0, i = S.intl.string(S.t.mTMkY2))) : (ee = !0, i = S.intl.string(S.t.hwPEJS)));
+        }, Q = S.intl.string(S.t.g7lkra), t.premiumTier + 1 !== m.tier && (ee = !0, i = S.intl.string(S.t.mTMkY2))) : (ee = !0, i = S.intl.string(S.t.hwPEJS)));
         let et = H === x + 1 && H > Z,
           en = z || et || x > Z;
         return et ? l = (0, r.jsx)(g.Z, {
@@ -278,7 +278,7 @@ let w = (e, t) => e < (0, _.A3)(I.Eu4.NONE) ? I.Eu4.NONE : e < (0, _.A3)(I.Eu4.T
                 var t, n;
                 return (0, r.jsx)(c.zxk, (t = P({
                   variant: "active",
-                  text: J
+                  text: Q
                 }, e), n = n = {
                   disabled: ee,
                   onClick: $

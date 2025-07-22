@@ -1,29 +1,29 @@
-/** Chunk was on 27063 **/
+/** Chunk was on 67649 **/
 t.d(r, {
-  Z: () => g
+  Z: () => x
 }), t(388685);
 var n = t(255367),
-  a = t(73800),
-  i = t(120356),
-  s = t.n(i),
+  i = t(73800),
+  a = t(120356),
+  s = t.n(a),
   l = t(866442),
   o = t(481060),
-  d = t(229190),
-  c = t(510918),
+  c = t(229190),
+  d = t(510918),
   u = t(434404),
-  f = t(254925),
-  m = t(131085),
-  p = t(195196),
-  h = t(388032),
-  x = t(602268);
-let g = function(e) {
+  m = t(254925),
+  p = t(131085),
+  h = t(195196),
+  f = t(388032),
+  g = t(602268);
+let x = function(e) {
   let {
     className: r,
     guildId: t,
-    badge: i,
-    primaryColor: g,
+    badge: a,
+    primaryColor: x,
     secondaryColor: y
-  } = e, [j, v] = a.useState(!1), b = a.useRef(null), C = a.useMemo(() => f.go.every(e => e.primary !== g || e.secondary !== y), [g, y]);
+  } = e, [j, v] = i.useState(!1), C = i.useRef(null), b = i.useMemo(() => m.go.every(e => e.primary !== x || e.secondary !== y), [x, y]);
 
   function N(e) {
     let r = {};
@@ -32,27 +32,27 @@ let g = function(e) {
   return (0, n.jsxs)("div", {
     className: r,
     children: [(0, n.jsx)(o.vwX, {
-      className: x.sectionTitle,
-      children: h.intl.string(p.default.zSbMdX)
+      className: g.sectionTitle,
+      children: f.intl.string(h.default.zSbMdX)
     }), (0, n.jsxs)("div", {
-      className: x.pickerGrid,
-      children: [f.go.map(e => (0, n.jsx)(o.P3F, {
-        className: s()(x.pickerItem, {
-          [x.pickerItemSelected]: e.primary === g && e.secondary === y
+      className: g.pickerGrid,
+      children: [m.go.map(e => (0, n.jsx)(o.P3F, {
+        className: s()(g.pickerItem, {
+          [g.pickerItemSelected]: e.primary === x && e.secondary === y
         }),
         onClick: () => N(e),
-        children: (0, n.jsx)(c.v, {
-          badge: i,
+        children: (0, n.jsx)(d.v, {
+          badge: a,
           width: 32,
           height: 32,
           primaryTintColor: e.primary,
           secondaryTintColor: e.secondary
         })
-      }, "".concat(e.primary).concat(e.secondary))), (0, n.jsx)(d.Z, {
-        popoutTargetRef: b,
-        showSecondaryColor: m.ER[i] >= 2,
+      }, "".concat(e.primary).concat(e.secondary))), (0, n.jsx)(c.Z, {
+        popoutTargetRef: C,
+        showSecondaryColor: p.ER[a] >= 2,
         palette: {
-          primary: g,
+          primary: x,
           secondary: y
         },
         onPrimaryColorChange: e => {
@@ -87,12 +87,12 @@ let g = function(e) {
             }
             return e
           }({}, e), t = t = {
-            innerRef: b,
+            innerRef: C,
             onClick: () => {
               v(e => !e)
             },
-            className: s()(x.pickerItem, {
-              [x.pickerItemSelected]: C
+            className: s()(g.pickerItem, {
+              [g.pickerItemSelected]: b
             }),
             children: (0, n.jsx)(o.ilE, {
               size: "custom",

@@ -1,4 +1,4 @@
-/** Chunk was on 85352 **/
+/** Chunk was on 55305 **/
 e.exports = {
   image: "image__5b754"
 }
