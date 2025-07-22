@@ -12,8 +12,8 @@ var r = n(392711),
   c = n(984933),
   u = n(594174),
   d = n(483360),
-  f = n(892880),
-  _ = n(591759),
+  _ = n(892880),
+  f = n(591759),
   p = n(279779),
   h = n(620490),
   m = n(727785);
@@ -153,7 +153,7 @@ class I {
     let {
       userFilters: i
     } = this.options;
-    void 0 !== t && f.Z.requestMembers(t, e, 100), r.setLimit(n), r.setQuery({
+    void 0 !== t && _.Z.requestMembers(t, e, 100), r.setLimit(n), r.setQuery({
       query: e,
       filters: i,
       blacklist: this._userBlacklist,
@@ -193,8 +193,8 @@ class I {
       pathname: i,
       hostname: a = "",
       host: s
-    } = n, c = _.Z.isDiscordHostname(a) || window.location.host === s;
-    return null !== i && c && _.Z.isAppRoute(i) ? [{
+    } = n, c = f.Z.isDiscordHostname(a) || window.location.host === s;
+    return null !== i && c && f.Z.isAppRoute(i) ? [{
       type: m.h8.LINK,
       record: l.Z.fromPath(i),
       score: 1

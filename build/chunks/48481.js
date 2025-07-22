@@ -24,7 +24,7 @@ var r = n(647943),
   u = n(526761),
   d = n(981631);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -33,14 +33,14 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -80,7 +80,7 @@ function y(e, t) {
 }
 
 function O(e, t, n) {
-  for (let e in t = _({}, t), n) delete t[e];
+  for (let e in t = f({}, t), n) delete t[e];
   return e.mergePartial(t, n), t
 }
 

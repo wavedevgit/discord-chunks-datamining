@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(524437),
   u = n(755721),
   d = n(481060),
-  f = n(153867),
-  _ = n(230711),
+  _ = n(153867),
+  f = n(230711),
   p = n(351773),
   h = n(607070),
   m = n(100527),
@@ -76,7 +76,7 @@ let x = () => (0, r.jsx)("div", {
       markAsDismissed: o
     } = e, {
       analyticsLocations: s
-    } = (0, g.ZP)(m.Z.CLIENT_THEMES_EDITOR), [d, _] = (0, l.Wu)([v.default, S.Z], () => [S.Z.gradientPreset, T.ZP.isPremium(v.default.getCurrentUser())]), p = (0, b.N)(), h = (0, T.Rt)({
+    } = (0, g.ZP)(m.Z.CLIENT_THEMES_EDITOR), [d, f] = (0, l.Wu)([v.default, S.Z], () => [S.Z.gradientPreset, T.ZP.isPremium(v.default.getCurrentUser())]), p = (0, b.N)(), h = (0, T.Rt)({
       intervalType: null == p || null == (t = p.subscription_trial) ? void 0 : t.interval,
       intervalCount: null == p || null == (n = p.subscription_trial) ? void 0 : n.interval_count
     }), E = e => {
@@ -84,7 +84,7 @@ let x = () => (0, r.jsx)("div", {
         isPersisted: !0,
         themeName: c.Us[d.id],
         analyticsLocations: s
-      }), (0, f.ZI)({
+      }), (0, _.ZI)({
         backgroundGradientPresetId: d.id,
         theme: d.theme
       })))
@@ -92,7 +92,7 @@ let x = () => (0, r.jsx)("div", {
     return (0, r.jsx)(y.Z, {
       size: u.zx.Sizes.MEDIUM,
       textOptions: {
-        textOverride: _ ? D.intl.string(D.t.IJI7ys) : (null == p || null == (i = p.subscription_trial) ? void 0 : i.sku_id) === w.Si.TIER_2 ? h : D.intl.string(D.t.mr4K7O)
+        textOverride: f ? D.intl.string(D.t.IJI7ys) : (null == p || null == (i = p.subscription_trial) ? void 0 : i.sku_id) === w.Si.TIER_2 ? h : D.intl.string(D.t.mr4K7O)
       },
       subscriptionTier: w.Si.TIER_2,
       onSubscribeModalClose: E
@@ -106,8 +106,8 @@ let x = () => (0, r.jsx)("div", {
       isPreview: a
     } = (0, l.cj)([S.Z], () => ({
       isPreview: S.Z.isPreview
-    })), [o, c] = i.useState(!1), d = (0, N.q)(), f = () => {
-      null != t && t(P.L.DISMISS), d(R.rMx.CLIENT_THEME_PREVIEW_CLOSED), (0, A.C)(), n || _.Z.open()
+    })), [o, c] = i.useState(!1), d = (0, N.q)(), _ = () => {
+      null != t && t(P.L.DISMISS), d(R.rMx.CLIENT_THEME_PREVIEW_CLOSED), (0, A.C)(), n || f.Z.open()
     }, p = (0, s.EQ)({
       isPreview: a,
       isCoachmark: n,
@@ -128,7 +128,7 @@ let x = () => (0, r.jsx)("div", {
         markAsDismissed: t
       }), (0, r.jsx)(u.zx, {
         className: L.footerButton,
-        onClick: f,
+        onClick: _,
         color: u.zx.Colors.PRIMARY,
         size: u.zx.Sizes.MEDIUM,
         children: p
@@ -148,18 +148,18 @@ function U(e) {
   } = (0, l.cj)([S.Z, h.Z], () => ({
     isPreview: S.Z.isPreview,
     shouldEditorAnimate: n && !h.Z.useReducedMotion
-  })), u = (0, E.oq)().activePanel === E.wh.CLIENT_THEMES, f = (0, N.q)();
-  i.useEffect(() => f(R.rMx.CLIENT_THEME_PREVIEW_VIEWED), [f]), i.useEffect(() => {
+  })), u = (0, E.oq)().activePanel === E.wh.CLIENT_THEMES, _ = (0, N.q)();
+  i.useEffect(() => _(R.rMx.CLIENT_THEME_PREVIEW_VIEWED), [_]), i.useEffect(() => {
     s && I.default.track(R.rMx.PREMIUM_UPSELL_VIEWED, {
       type: w.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
       location_stack: a
     })
   }, [s, a]);
-  let _ = (0, N.J)(),
-    b = (0, p.Z)(null, s ? _ : R.dG4);
+  let f = (0, N.J)(),
+    b = (0, p.Z)(null, s ? f : R.dG4);
   return i.useEffect(() => {
-    if (s && !u) return _
-  }, [s, u, _]), (0, r.jsx)(g.Gt, {
+    if (s && !u) return f
+  }, [s, u, f]), (0, r.jsx)(g.Gt, {
     value: a,
     children: (0, r.jsx)("div", {
       ref: b,

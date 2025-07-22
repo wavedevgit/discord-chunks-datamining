@@ -22,7 +22,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function f(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -63,7 +63,7 @@ let h = e => {
     confirmationFooter: g,
     paymentModalBanner: E,
     color: b
-  } = e, y = _(e, ["textOptions", "subscriptionTier", "hasActivePromotion", "isPersistentCTA", "useShorterCTA", "showGradient", "confirmationFooter", "paymentModalBanner", "color"]);
+  } = e, y = f(e, ["textOptions", "subscriptionTier", "hasActivePromotion", "isPersistentCTA", "useShorterCTA", "showGradient", "confirmationFooter", "paymentModalBanner", "color"]);
   let O = (0, o.ZP)(),
     {
       buttonText: v,
@@ -78,9 +78,9 @@ let h = e => {
     S = null == T ? void 0 : T.subscription_trial,
     A = null != S && I === S.sku_id,
     N = null != b ? b : (0, i.wj)(O) ? a.Tt.BRAND_INVERTED : a.Tt.BRAND;
-  return (0, r.jsx)(l.Z, f({
+  return (0, r.jsx)(l.Z, _({
     color: N,
-    textOptions: f({
+    textOptions: _({
       textOverride: v,
       textClassName: A ? u.freeTrialText : void 0
     }, t),

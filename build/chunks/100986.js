@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => _
 });
 var r = n(594190),
   i = n(592125),
@@ -16,13 +16,13 @@ function d(e, t) {
   return e.guildId === l.X8 ? "default" : t ? "custom-external" : "custom"
 }
 
-function f(e, t, n, f) {
-  var _;
+function _(e, t, n, _) {
+  var f;
   let p = i.Z.getChannel(o.Z.getVoiceChannelId()),
     h = null == p ? void 0 : p.getGuildId(),
     m = a.Z.getMediaSessionId(),
     g = a.Z.getRTCConnectionId(),
-    E = null == (_ = r.ZP.getCurrentGameForAnalytics()) ? void 0 : _.name,
+    E = null == (f = r.ZP.getCurrentGameForAnalytics()) ? void 0 : f.name,
     b = h !== n.guildId && n.guildId !== l.X8,
     y = d(n, b);
   s.default.track(c.rMx.PREMIUM_FEATURE_USAGE, {
@@ -38,6 +38,6 @@ function f(e, t, n, f) {
     emoji_count: +(null != n.emojiId || null != n.emojiName),
     feature_selection: y,
     feature_selection_id: n.soundId,
-    sound_type: f
+    sound_type: _
   })
 }

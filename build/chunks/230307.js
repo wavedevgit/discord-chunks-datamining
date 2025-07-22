@@ -20,11 +20,11 @@ let l = {},
   u = 864e5,
   d = 36e5;
 
-function f() {
+function _() {
   l = {}, c = null
 }
 
-function _(e) {
+function f(e) {
   let {
     statistics: t
   } = e;
@@ -84,7 +84,7 @@ class h extends(r = i.ZP.Store) {
 }
 s(h, "displayName", "LibraryApplicationStatisticsStore");
 let m = new h(a.Z, {
-  USER_ACTIVITY_STATISTICS_FETCH_SUCCESS: _,
+  USER_ACTIVITY_STATISTICS_FETCH_SUCCESS: f,
   ACTIVITY_UPDATE_START: p,
-  LOGOUT: f
+  LOGOUT: _
 })

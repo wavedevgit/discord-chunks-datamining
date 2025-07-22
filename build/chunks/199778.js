@@ -13,8 +13,8 @@ var i = n(120356),
   c = n(975298),
   u = n(125529),
   d = n(124570),
-  f = n(501862),
-  _ = n(594174),
+  _ = n(501862),
+  f = n(594174),
   p = n(63063),
   h = n(981631),
   m = n(388032),
@@ -67,7 +67,7 @@ function v(e) {
   } = e, {
     fractionalState: E,
     endsAt: y
-  } = (0, c.Z)(), v = (0, o.e7)([_.default], () => _.default.getCurrentUser()), I = (0, l.ZP)(y, l.aj.LONG_TIME_LEFT);
+  } = (0, c.Z)(), v = (0, o.e7)([f.default], () => f.default.getCurrentUser()), I = (0, l.ZP)(y, l.aj.LONG_TIME_LEFT);
   if (!0 === t || !(0, d.y)("guild_boosting_fractional_premium_pill", v, E)) return null;
   let T = m.intl.format(m.t["4RgA6O"], {
     helpCenterLink: p.Z.getArticleURL(h.BhN.FRACTIONAL_PREMIUM_ABOUT)
@@ -83,7 +83,7 @@ function v(e) {
         variant: "text-sm/bold",
         className: g.unavailableCounterPillText,
         children: m.intl.string(m.t["5nrJDA"]).toUpperCase()
-      }), (0, r.jsx)(f.Z, {
+      }), (0, r.jsx)(_.Z, {
         countdownText: I,
         className: g.countDownText
       })]

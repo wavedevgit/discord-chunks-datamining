@@ -13,7 +13,7 @@ var r = n(73800),
   u = n(185923),
   d = n(981631);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,14 +22,14 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -38,19 +38,19 @@ let p = e => {
   let {
     emojiId: t,
     currentGuildId: n,
-    popoutData: f,
+    popoutData: _,
     nonce: p,
     demoMode: h
   } = e, {
     current: m
-  } = r.useRef(_({
+  } = r.useRef(f({
     guild_id: n,
     emoji_id: t
   }, (0, a.v_)(o.Z.getChannel(s.Z.getChannelId(n)))));
   return (0, i.ZP)(() => {
     var e;
-    (0, c.x)(u.qR.TrackOpenPopoutUsed), h || l.default.track(d.rMx.OPEN_POPOUT, _({
-      type: null != (e = null == f ? void 0 : f.analyticsType) ? e : "Standard Emoji Popout",
+    (0, c.x)(u.qR.TrackOpenPopoutUsed), h || l.default.track(d.rMx.OPEN_POPOUT, f({
+      type: null != (e = null == _ ? void 0 : _.analyticsType) ? e : "Standard Emoji Popout",
       nonce: p
     }, m))
   }), m

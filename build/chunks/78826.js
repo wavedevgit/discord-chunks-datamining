@@ -3,7 +3,7 @@
 n.d(t, {
   Fl: () => p,
   d7: () => h,
-  p: () => _
+  p: () => f
 }), n(415506), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -26,17 +26,17 @@ function d(e) {
   return (0, a.k)(e, HTMLImageElement) ? "load" : (0, a.k)(e, HTMLVideoElement) ? "canplaythrough" : ((0, a.k)(e, HTMLDivElement), "load")
 }
 
-function f(e) {
+function _(e) {
   var t, n;
   return (0, a.k)(e, HTMLImageElement) ? e.getAttribute("src") : (0, a.k)(e, HTMLVideoElement) ? null != (n = null == (t = e.querySelectorAll("source")[0]) ? void 0 : t.getAttribute("src")) ? n : "video" : ((0, a.k)(e, HTMLDivElement), e.tagName)
 }
 
-function _(e) {
+function f(e) {
   let {
     children: t,
     isPreview: n = !1,
     source: a,
-    questId: _
+    questId: f
   } = e, [p, h] = i.useState(!1), [m, g] = i.useState(new Set), [E, b] = i.useState(!1), y = i.useRef(!1);
   i.useEffect(() => {
     let e = new Set;
@@ -52,14 +52,14 @@ function _(e) {
       } = e;
       n || null == a || (o.default.track(l.rMx.QUEST_ASSET_LOADING_FAILURE, {
         source: a,
-        quest_id: _,
-        asset_id: f(t)
-      }), s.Z.captureException(Error("".concat(i, ": ").concat(null != c ? "".concat(c, ", ") : "").concat(f(t), ", ").concat(r)), {
+        quest_id: f,
+        asset_id: _(t)
+      }), s.Z.captureException(Error("".concat(i, ": ").concat(null != c ? "".concat(c, ", ") : "").concat(_(t), ", ").concat(r)), {
         tags: {
           source: a
         }
       }), h(!0))
-    }, [n, a, _]),
+    }, [n, a, f]),
     v = i.useCallback(e => {
       g(t => {
         let n = new Set(t);

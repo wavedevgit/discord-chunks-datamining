@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  PQ: () => f,
+  PQ: () => _,
   ZP: () => h,
   e3: () => l.e3
 });
@@ -14,8 +14,8 @@ var r = n(73800),
   c = n(233398),
   u = n(514361),
   d = n(803038);
-let f = "data-client-themes",
-  _ = () => {
+let _ = "data-client-themes",
+  f = () => {
     let e = (0, a.e7)([u.Z], () => u.Z.gradientPreset);
     return r.useMemo(() => {
       if (null == e) return null;
@@ -32,8 +32,8 @@ function p() {
     {
       colors: n,
       chassisMixAmount: u,
-      gradientAngle: f,
-      setAll: _
+      gradientAngle: _,
+      setAll: f
     } = (0, c.Ig)(),
     p = (0, a.e7)([s.Z], () => {
       var e, t;
@@ -43,17 +43,17 @@ function p() {
   return r.useEffect(() => {
     if (!(0, i.isEqual)(p, h.current)) {
       var e, t, n;
-      h.current = p, _({
+      h.current = p, f({
         colors: null != (e = null == p ? void 0 : p.colors) ? e : [],
         gradientAngle: null != (t = null == p ? void 0 : p.gradientAngle) ? t : 0,
         chassisMixAmount: null != (n = null == p ? void 0 : p.baseMix) ? n : c.BH
       })
     }
-  }, [p, _]), r.useMemo(() => e && 0 !== n.length ? (0, l.gj)(n, f, u, t) : null, [n, u, f, e, t])
+  }, [p, f]), r.useMemo(() => e && 0 !== n.length ? (0, l.gj)(n, _, u, t) : null, [n, u, _, e, t])
 }
 
 function h() {
-  let e = _(),
+  let e = f(),
     t = p();
   return null != t ? {
     clientThemesCSS: t,

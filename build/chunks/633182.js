@@ -14,36 +14,36 @@ var r = n(592125),
 function u(e, t, n) {
   var u;
   let d = i.default.getUser(t),
-    f = r.Z.getChannel(n),
-    _ = null != (u = a.ZP.getName(null == f ? void 0 : f.guild_id, null == f ? void 0 : f.id, d)) ? u : o.ZP.getGlobalName(d);
+    _ = r.Z.getChannel(n),
+    f = null != (u = a.ZP.getName(null == _ ? void 0 : _.guild_id, null == _ ? void 0 : _.id, d)) ? u : o.ZP.getGlobalName(d);
   switch (e) {
     case s.wQ.IGNORE_SUCCESS:
       return l.intl.formatToPlainString(l.t["+joqrK"], {
-        username: _
+        username: f
       });
     case s.wQ.UNIGNORE_SUCCESS:
       return l.intl.formatToPlainString(l.t.THExKS, {
-        username: _
+        username: f
       });
     case s.wQ.BLOCK_SUCCESS:
       return l.intl.formatToPlainString(l.t.XXPrIi, {
-        username: _
+        username: f
       });
     case s.wQ.UNBLOCK_SUCCESS:
       return l.intl.formatToPlainString(l.t.uExcGR, {
-        username: _
+        username: f
       });
     case s.wQ.MUTE_SUCCESS:
       return l.intl.formatToPlainString(l.t.X4NtYW, {
-        username: _
+        username: f
       });
     case s.wQ.UNMUTE_SUCCESS:
       return l.intl.formatToPlainString(l.t.tRaBfX, {
-        username: _
+        username: f
       });
     case s.wQ.REPORT_SUCCESS:
       return l.intl.formatToPlainString(l.t.FOptFR, {
-        username: _
+        username: f
       });
     case s.wQ.TIGGER_PAWTECT_ERROR:
       return l.intl.string(l.t.c6kn6O);

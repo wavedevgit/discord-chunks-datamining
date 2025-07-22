@@ -11,9 +11,9 @@ var r, i = n(392711),
   c = n(581883),
   u = n(70956),
   d = n(926491),
-  f = n(526761);
+  _ = n(526761);
 
-function _(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -29,7 +29,7 @@ function p(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
@@ -100,7 +100,7 @@ function T(e) {
     },
     wasSaved: n
   } = e;
-  if (t !== f.yP.FRECENCY_AND_FAVORITES_SETTINGS || !n) return !1;
+  if (t !== _.yP.FRECENCY_AND_FAVORITES_SETTINGS || !n) return !1;
   g.pendingUsages = []
 }
 class S extends(r = o.ZP.PersistedStore) {
@@ -117,7 +117,7 @@ class S extends(r = o.ZP.PersistedStore) {
     return b
   }
 }
-_(S, "displayName", "StickersPersistedStore"), _(S, "persistKey", "StickersPersistedStoreV2");
+f(S, "displayName", "StickersPersistedStore"), f(S, "persistKey", "StickersPersistedStoreV2");
 let A = new S(s.Z, {
   STICKER_TRACK_USAGE: O,
   USER_SETTINGS_PROTO_UPDATE: T

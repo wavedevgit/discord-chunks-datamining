@@ -14,8 +14,8 @@ var i = n(512722),
   c = n(906732),
   u = n(563132),
   d = n(630388),
-  f = n(74538),
-  _ = n(296848),
+  _ = n(74538),
+  f = n(296848),
   p = n(244923),
   h = n(981631),
   m = n(231338),
@@ -80,7 +80,7 @@ function T(e) {
   if (a()(null != n, "Subscription plan must be selected to render SubscriptionReviewButton"), i === h.POd.BOOST) return g.intl.string(g.t.eUEeCg);
   if (o) return g.intl.string(g.t.ouo4FB);
   if (c) return g.intl.string(g.t.LQVQIi);
-  if ((0, f.PV)(n.id)) return l ? g.intl.string(g.t.cRCCJy) : null != r ? r.isPausedAllowsResumeButNotUpdates ? g.intl.string(g.t.zpi5pq) : (0, _.R4)(r, n.id, s) ? g.intl.string(g.t.IJI7ys) : g.intl.string(g.t.VPuTc3) : (0, f.W_)(null, n);
+  if ((0, _.PV)(n.id)) return l ? g.intl.string(g.t.cRCCJy) : null != r ? r.isPausedAllowsResumeButNotUpdates ? g.intl.string(g.t.zpi5pq) : (0, f.R4)(r, n.id, s) ? g.intl.string(g.t.IJI7ys) : g.intl.string(g.t.VPuTc3) : (0, _.W_)(null, n);
   return g.intl.string(g.t.YScQSE)
 }
 
@@ -96,8 +96,8 @@ function A(e) {
     legalTermsNodeRef: n,
     invoiceError: i,
     planError: a,
-    disablePurchase: f,
-    flashLegalTerms: _,
+    disablePurchase: _,
+    flashLegalTerms: f,
     isSubmitting: m,
     premiumSubscription: y,
     isGift: v,
@@ -131,7 +131,7 @@ function A(e) {
   }), {
     analyticsLocations: Z
   } = (0, c.ZP)();
-  if (null != i || null != a || f) return (0, r.jsx)(s.zxk, {
+  if (null != i || null != a || _) return (0, r.jsx)(s.zxk, {
     variant: "active",
     text: F,
     disabled: !0
@@ -172,7 +172,7 @@ function A(e) {
   if (C) return (0, r.jsxs)(s.gtL, {
     innerClassName: E.innerButton,
     "data-testid": k ? "purchase" : "submitButton",
-    onClick: k ? R : () => S(n, _),
+    onClick: k ? R : () => S(n, f),
     color: o.zx.Colors.GREEN,
     submitting: m,
     children: [(0, r.jsx)("img", {
@@ -188,7 +188,7 @@ function A(e) {
       text: F
     }, e), {
       type: "submit",
-      onClick: () => S(n, _),
+      onClick: () => S(n, f),
       "data-testid": "submitButton"
     }))
   });

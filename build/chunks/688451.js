@@ -20,7 +20,7 @@ function a(e) {
     if (null === t) return !0;
     var n = Object.hasOwnProperty.call(t, "constructor") && t.constructor;
     return n === Object || "function" == typeof n && Function.toString.call(n) === z
-  }(e) || Array.isArray(e) || !!e[Y] || !!(null == (t = e.constructor) ? void 0 : t[Y]) || f(e) || _(e))
+  }(e) || Array.isArray(e) || !!e[Y] || !!(null == (t = e.constructor) ? void 0 : t[Y]) || _(e) || f(e))
 }
 
 function o(e, t, n) {
@@ -33,7 +33,7 @@ function o(e, t, n) {
 
 function s(e) {
   var t = e[W];
-  return t ? t.i > 3 ? t.i - 4 : t.i : Array.isArray(e) ? 1 : f(e) ? 2 : 3 * !!_(e)
+  return t ? t.i > 3 ? t.i - 4 : t.i : Array.isArray(e) ? 1 : _(e) ? 2 : 3 * !!f(e)
 }
 
 function l(e, t) {
@@ -53,11 +53,11 @@ function d(e, t) {
   return e === t ? 0 !== e || 1 / e == 1 / t : e != e && t != t
 }
 
-function f(e) {
+function _(e) {
   return V && e instanceof Map
 }
 
-function _(e) {
+function f(e) {
   return F && e instanceof Set
 }
 
@@ -202,7 +202,7 @@ function x(e) {
 }
 
 function M(e, t, n) {
-  var r = f(t) ? b("MapSet").F(t, n) : _(t) ? b("MapSet").T(t, n) : e.O ? function(e, t) {
+  var r = _(t) ? b("MapSet").F(t, n) : f(t) ? b("MapSet").T(t, n) : e.O ? function(e, t) {
     var n = Array.isArray(e),
       r = {
         i: +!!n,
@@ -375,9 +375,9 @@ var ee = new(function() {
         }
         if (!e || "object" != typeof e) {
           if (void 0 === (o = n(e)) && (o = e), o === H && (o = void 0), t.D && m(o, !0), i) {
-            var f = [],
-              _ = [];
-            b("Patches").M(e, o, f, _), i(f, _)
+            var _ = [],
+              f = [];
+            b("Patches").M(e, o, _, f), i(_, f)
           }
           return o
         }

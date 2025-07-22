@@ -14,8 +14,8 @@ var i = n(120356),
   c = n(213734),
   u = n(37148),
   d = n(481060),
-  f = n(252618),
-  _ = n(981631),
+  _ = n(252618),
+  f = n(981631),
   p = n(388032),
   h = n(484618);
 
@@ -82,10 +82,10 @@ function v(e) {
     removeChildWrapper: n,
     wrapperClassName: i
   } = e;
-  return (0, f.Tt)({
+  return (0, _.Tt)({
     location: p.intl.string(p.t["3S249/"])
   }), (0, r.jsx)(d.f6W, {
-    theme: _.BRd.DARK,
+    theme: f.BRd.DARK,
     children: e => (0, r.jsx)("div", {
       className: a()(e, h.oauth2PageWrapper, i),
       children: !0 === n ? t : (0, r.jsx)("div", {

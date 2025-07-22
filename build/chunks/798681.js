@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   e: () => d,
-  w: () => _
+  w: () => f
 });
 var r = n(47770),
   i = n(846519),
@@ -23,7 +23,7 @@ function u(e, t, n) {
 var d = function(e) {
   return e.WindowVisibilityChanged = "window-visibility-changed", e.IncomingVideoEnabledChanged = "incoming-video-enabled-changed", e
 }({});
-class f extends r.Z {
+class _ extends r.Z {
   isIncomingVideoEnabled() {
     return this.incomingVideoEnabled
   }
@@ -42,4 +42,4 @@ class f extends r.Z {
     }), a.Z.subscribe("WINDOW_VISIBILITY_CHANGE", this.update), a.Z.subscribe("APP_STATE_UPDATE", this.update), s.Z.addOnPipModeChangedListener(this.update)
   }
 }
-let _ = new f
+let f = new _

@@ -31,8 +31,8 @@ function d(e) {
   }
   return e
 }
-let f = c.QZA.CLOSED,
-  _ = null,
+let _ = c.QZA.CLOSED,
+  f = null,
   p = null,
   h = {},
   m = {},
@@ -55,7 +55,7 @@ function C(e) {
   var t, n, r, i, a, o;
   let s = l.default.getCurrentUser();
   if (null == s) return R();
-  p = null != (t = e.section) ? t : p, S = null != (n = e.section) ? n : p, null != e.subsection && null != p && (h[p] = e.subsection), null != e.scrollPosition && null != p && (m[p] = e.scrollPosition), O = !!e.openWithoutBackstack, f = c.QZA.OPEN, g = {}, b = d({}, E = {
+  p = null != (t = e.section) ? t : p, S = null != (n = e.section) ? n : p, null != e.subsection && null != p && (h[p] = e.subsection), null != e.scrollPosition && null != p && (m[p] = e.scrollPosition), O = !!e.openWithoutBackstack, _ = c.QZA.OPEN, g = {}, b = d({}, E = {
     [c.oAB.ACCOUNT]: {
       userId: s.id,
       username: s.username,
@@ -70,12 +70,12 @@ function C(e) {
 }
 
 function R() {
-  f = c.QZA.CLOSED, y = !1, E = null, S = null, b = null, _ = null, p = null, h = {}, m = {}, v = null, I = null, T = [], A = null
+  _ = c.QZA.CLOSED, y = !1, E = null, S = null, b = null, f = null, p = null, h = {}, m = {}, v = null, I = null, T = [], A = null
 }
 
 function P(e) {
   var t;
-  _ = p, p = e.section, I = null, T = null != (t = e.analyticsLocations) ? t : [], null != e.subsection && (h[p] = e.subsection)
+  f = p, p = e.section, I = null, T = null != (t = e.analyticsLocations) ? t : [], null != e.subsection && (h[p] = e.subsection)
 }
 
 function w(e) {
@@ -102,7 +102,7 @@ function L(e) {
 }
 
 function x() {
-  f = c.QZA.SUBMITTING
+  _ = c.QZA.SUBMITTING
 }
 
 function M() {
@@ -122,13 +122,13 @@ function M() {
 }
 
 function k() {
-  f = c.QZA.OPEN, g = {}
+  _ = c.QZA.OPEN, g = {}
 }
 
 function j(e) {
   var t;
-  if (f !== c.QZA.SUBMITTING) return !1;
-  f = c.QZA.OPEN, p = c.oAB.ACCOUNT, g = null != (t = e.errors) ? t : {}
+  if (_ !== c.QZA.SUBMITTING) return !1;
+  _ = c.QZA.OPEN, p = c.oAB.ACCOUNT, g = null != (t = e.errors) ? t : {}
 }
 class U extends(r = o.ZP.Store) {
   initialize() {
@@ -141,7 +141,7 @@ class U extends(r = o.ZP.Store) {
     return y
   }
   getPreviousSection() {
-    return _
+    return f
   }
   getSection() {
     return p
@@ -157,7 +157,7 @@ class U extends(r = o.ZP.Store) {
   }
   getProps() {
     return {
-      submitting: f === c.QZA.SUBMITTING,
+      submitting: _ === c.QZA.SUBMITTING,
       section: p,
       subsection: null != p ? h[p] : null,
       scrollPosition: null != p ? m[p] : null,

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 });
 var r = n(255367);
 n(73800);
@@ -50,7 +50,7 @@ function u(e, t) {
 
 function d(e, t) {
   if (null == e) return {};
-  var n, r, i = f(e, t);
+  var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -58,25 +58,25 @@ function d(e, t) {
   return i
 }
 
-function f(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let _ = e => {
+let f = e => {
   var t, n, {
       size: s = "md",
       width: c,
-      height: f,
-      color: _ = i.Z.colors.INTERACTIVE_NORMAL,
+      height: _,
+      color: f = i.Z.colors.INTERACTIVE_NORMAL,
       colorClass: p = ""
     } = e,
     h = d(e, ["size", "width", "height", "color", "colorClass"]);
   let m = (0, o.m)(s),
     g = null != (t = null == m ? void 0 : m.width) ? t : c,
-    E = null != (n = null == m ? void 0 : m.height) ? n : f;
+    E = null != (n = null == m ? void 0 : m.height) ? n : _;
   return (0, r.jsxs)("svg", u(l({}, (0, a.Z)(h)), {
     xmlns: "http://www.w3.org/2000/svg",
     width: g,
@@ -84,11 +84,11 @@ let _ = e => {
     fill: "none",
     viewBox: "0 0 24 24",
     children: [(0, r.jsx)("path", {
-      fill: "string" == typeof _ ? _ : _.css,
+      fill: "string" == typeof f ? f : f.css,
       d: "M20.52 18.96c.32-.4-.01-.96-.52-.96A11 11 0 0 1 9.77 2.94c.31-.78-.3-1.68-1.1-1.43a11 11 0 1 0 11.85 17.45Z",
       className: p
     }), (0, r.jsx)("path", {
-      fill: "string" == typeof _ ? _ : _.css,
+      fill: "string" == typeof f ? f : f.css,
       d: "m17.73 9.27-.76-2.02a.5.5 0 0 0-.94 0l-.76 2.02-2.02.76a.5.5 0 0 0 0 .94l2.02.76.76 2.02a.5.5 0 0 0 .94 0l.76-2.02 2.02-.76a.5.5 0 0 0 0-.94l-2.02-.76ZM19.73 2.62l.45 1.2 1.2.45c.21.08.21.38 0 .46l-1.2.45-.45 1.2a.25.25 0 0 1-.46 0l-.45-1.2-1.2-.45a.25.25 0 0 1 0-.46l1.2-.45.45-1.2a.25.25 0 0 1 .46 0Z",
       className: p
     })]

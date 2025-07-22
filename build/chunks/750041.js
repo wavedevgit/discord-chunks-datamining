@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 }), n(539854);
 var r, i = n(512722),
   a = n.n(i),
@@ -42,14 +42,14 @@ function d(e, t) {
   return n
 }
 
-function f(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class _ extends(r = o.ZP.Store) {
+class f extends(r = o.ZP.Store) {
   static clearAll() {
-    _.allStores.forEach(e => e.clear())
+    f.allStores.forEach(e => e.clear())
   }
   get persistKey() {
     return "".concat(this.getClass().displayName, "-snapshot")
@@ -68,10 +68,10 @@ class _ extends(r = o.ZP.Store) {
     return this.constructor
   }
   constructor(e, t) {
-    super(l.Z, f(u({}, e), {
+    super(l.Z, _(u({}, e), {
       CLEAR_CACHES: () => (this.clear(), !1),
       WRITE_CACHES: () => (this.save(), !1)
-    }), t), a()(null != this.getClass().displayName, "Snapshot stores need a display name"), a()(!("CLEAR_CACHES" in e), "MobileCacheSnapshotStores cannot use the 'CLEAR_CACHES' action"), a()(!("WRITE_CACHES" in e), "MobileCacheSnapshotStores cannot use the 'WRITE_CACHES' action"), _.allStores.push(this)
+    }), t), a()(null != this.getClass().displayName, "Snapshot stores need a display name"), a()(!("CLEAR_CACHES" in e), "MobileCacheSnapshotStores cannot use the 'CLEAR_CACHES' action"), a()(!("WRITE_CACHES" in e), "MobileCacheSnapshotStores cannot use the 'WRITE_CACHES' action"), f.allStores.push(this)
   }
 }
-c(_, "allStores", [])
+c(f, "allStores", [])

@@ -20,7 +20,7 @@ function d(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class f {
+class _ {
   format(e) {
     if (!this.hasMarkdown) return this.intlMessage.format(e);
     let [t, n] = this.getContext(e);
@@ -48,7 +48,7 @@ class f {
   }
 }
 
-function _(e, t) {
+function f(e, t) {
   let n = l().parserFor(t(e)),
     r = l().reactFor(l().ruleOutput(e, "react"));
   return (e, t, i) => {
@@ -71,7 +71,7 @@ function p(e) {
 }
 
 function h(e) {
-  r = _(c.j, e), i = p(c.j)
+  r = f(c.j, e), i = p(c.j)
 }
 
 function m(e, t) {
@@ -79,5 +79,5 @@ function m(e, t) {
   null == r && h(n(281071).Z), e = e.replace(/^\n+|\n+$/g, "");
   let i = u.aT.test(e),
     a = u.b9.test(e);
-  return i || a ? new f(e, t, a) : e
+  return i || a ? new _(e, t, a) : e
 }

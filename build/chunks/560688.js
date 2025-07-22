@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => _
 });
 var r = n(255367);
 n(73800);
@@ -49,7 +49,7 @@ function d(e, t) {
   }), e
 }
 
-function f(e) {
+function _(e) {
   a.Z.supports(o.AN.VIDEO) ? (0, i.ZDy)(async () => {
     let {
       default: t

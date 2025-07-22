@@ -64,29 +64,29 @@ function d(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let f = {
+let _ = {
     UP: a.directionUp,
     RIGHT: a.directionRight,
     DOWN: a.directionDown,
     LEFT: a.directionLeft
   },
-  _ = e => {
+  f = e => {
     var {
-      direction: t = f.DOWN,
+      direction: t = _.DOWN,
       width: n = 24,
       height: a = 24,
       color: o = "currentColor",
       className: l,
       foreground: d,
-      expanded: _
+      expanded: f
     } = e, p = u(e, ["direction", "width", "height", "color", "className", "foreground", "expanded"]);
     let h = t;
-    !0 === _ ? h = f.DOWN : !1 === _ && (h = f.RIGHT);
+    !0 === f ? h = _.DOWN : !1 === f && (h = _.RIGHT);
     let m = {
-      [f.UP]: i.u04,
-      [f.DOWN]: i.CJ0,
-      [f.LEFT]: i.V7D,
-      [f.RIGHT]: i.Fbu
+      [_.UP]: i.u04,
+      [_.DOWN]: i.CJ0,
+      [_.LEFT]: i.V7D,
+      [_.RIGHT]: i.Fbu
     } [h];
     return (0, r.jsx)(m, c(s({}, p), {
       className: l,
@@ -97,5 +97,5 @@ let f = {
       colorClass: d
     }))
   };
-_.Directions = f;
-let p = _
+f.Directions = _;
+let p = f

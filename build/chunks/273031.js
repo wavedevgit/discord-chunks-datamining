@@ -18,7 +18,7 @@ function u(e) {
     tooltip: a,
     dangerous: u = !1,
     className: d,
-    "aria-label": f
+    "aria-label": _
   } = e;
   return (0, r.jsx)(s.ua7, {
     text: a,
@@ -26,17 +26,17 @@ function u(e) {
     children: e => {
       let {
         onMouseEnter: s,
-        onMouseLeave: _,
+        onMouseLeave: f,
         onClick: p
       } = e;
       return (0, r.jsx)(l.zx, {
         onMouseEnter: s,
-        onMouseLeave: _,
+        onMouseLeave: f,
         onClick: e => {
           e.stopPropagation(), null == p || p(), t(e)
         },
         dangerous: u,
-        "aria-label": null != f ? f : a,
+        "aria-label": null != _ ? _ : a,
         className: d,
         children: i.Children.map(n, e => i.isValidElement(e) ? i.cloneElement(e, {
           className: o()(e.props.className, c.actionBarIcon)

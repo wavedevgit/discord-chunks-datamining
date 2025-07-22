@@ -12,8 +12,8 @@ var r = n(544891),
   c = n(592125),
   u = n(569611),
   d = n(710845),
-  f = n(104639),
-  _ = n(202680),
+  _ = n(104639),
+  f = n(202680),
   p = n(691895),
   h = n(889911),
   m = n(981631);
@@ -65,7 +65,7 @@ async function T(e) {
       a = "System Logs failed ".concat(e)
     }
     try {
-      o = await (0, _.Z)().then(e => (0, h.Z)(e, !0))
+      o = await (0, f.Z)().then(e => (0, h.Z)(e, !0))
     } catch (e) {
       o = "Push logs failed: ".concat(e)
     }
@@ -81,7 +81,7 @@ async function T(e) {
       n = n.slice(n.length - Math.floor(n.length * e)), a = a.slice(a.length - Math.floor(a.length * e)), o = o.slice(o.length - Math.floor(o.length * e)), s = s.slice(s.length - Math.floor(s.length * e))
     }
     let E = (null == O ? void 0 : O.AppOpenedTimestamp) != null ? O.AppOpenedTimestamp : null,
-      b = "\n    ".concat((0, p.Z)(E), "\n\n    ").concat((0, l.EA)(), "\n\n    Metadata:\n    ").concat(JSON.stringify((0, f.Z)(), void 0, 2), "\n\n    ChannelStore:\n    ").concat(JSON.stringify(c.Z.getDebugInfo(), void 0, 2), "\n\n    Logs:\n    ").concat(n, "\n\n    System logs:\n    ").concat(a, "\n\n    LibDiscore logs:\n    ").concat(s, "\n\n    Push Notifications:\n    ").concat(o, "\n    ");
+      b = "\n    ".concat((0, p.Z)(E), "\n\n    ").concat((0, l.EA)(), "\n\n    Metadata:\n    ").concat(JSON.stringify((0, _.Z)(), void 0, 2), "\n\n    ChannelStore:\n    ").concat(JSON.stringify(c.Z.getDebugInfo(), void 0, 2), "\n\n    Logs:\n    ").concat(n, "\n\n    System logs:\n    ").concat(a, "\n\n    LibDiscore logs:\n    ").concat(s, "\n\n    Push Notifications:\n    ").concat(o, "\n    ");
     u.ZH();
     let v = m.ANM.DEBUG_LOG(e, "discord_app_logs");
     await r.tn.post({

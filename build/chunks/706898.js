@@ -10,8 +10,8 @@ var r, i, a = n(255367),
   c = n(372817),
   u = n(866442),
   d = n(692547),
-  f = n(1561),
-  _ = n(993365),
+  _ = n(1561),
+  f = n(993365),
   p = n(981631),
   h = n(619552);
 
@@ -84,7 +84,7 @@ let v = {
       "aria-expanded": o,
       "aria-controls": s
     } = e;
-    return (0, a.jsx)(f.P, {
+    return (0, a.jsx)(_.P, {
       innerRef: t,
       tabIndex: null == r ? -1 : 0,
       className: l()(h.header, n),
@@ -96,7 +96,7 @@ let v = {
           top: -6
         }
       },
-      children: (0, a.jsx)(_.x, {
+      children: (0, a.jsx)(f.x, {
         variant: "eyebrow",
         color: "none",
         className: h.headerText,
@@ -186,15 +186,15 @@ class C extends(r = o.Component) {
       onContextMenu: c,
       clickableRef: u,
       clickableInnerRef: d,
-      look: _,
+      look: f,
       disableItemStyles: p
     } = this.props, m = this.props["aria-label"], g = r === n;
-    return (0, a.jsx)(f.P, {
+    return (0, a.jsx)(_.P, {
       className: l()(t, {
         [h.item]: !p,
-        [h.brand]: "brand" === _,
+        [h.brand]: "brand" === f,
         [h.selected]: null == i && g,
-        [h.themed]: "grey" === _,
+        [h.themed]: "grey" === f,
         [h.disabled]: null == i && s,
         [h.destructive]: "destructive" === o
       }),

@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(906732),
   u = n(362721),
   d = n(117358),
-  f = n(12498),
-  _ = n(454585),
+  _ = n(12498),
+  f = n(454585),
   p = n(869768),
   h = n(626135),
   m = n(652853),
@@ -32,7 +32,7 @@ function v(e) {
     themeType: v
   } = (0, m.z)(), {
     analyticsLocations: I
-  } = (0, c.ZP)(), T = (0, p.W)(t), S = (0, u.ZP)(t, !0), A = (0, s.e7)([f.Z], () => f.Z.getChannelStatus(t)), N = i.useMemo(() => null == A || "" === A ? null : _.Z.parseVoiceChannelStatus(A, !0, {
+  } = (0, c.ZP)(), T = (0, p.W)(t), S = (0, u.ZP)(t, !0), A = (0, s.e7)([_.Z], () => _.Z.getChannelStatus(t)), N = i.useMemo(() => null == A || "" === A ? null : f.Z.parseVoiceChannelStatus(A, !0, {
     channelId: t.id
   }), [A, t.id]);
   i.useEffect(() => {

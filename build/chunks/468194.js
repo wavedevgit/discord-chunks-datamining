@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   De: () => o,
-  Fv: () => f,
+  Fv: () => _,
   Mg: () => r.M,
   TZ: () => d,
   Zg: () => l,
@@ -48,4 +48,4 @@ function d(e) {
   for (let e of n) r += 1;
   return r
 }
-let f = null == String.prototype.normalize ? e => e : u
+let _ = null == String.prototype.normalize ? e => e : u

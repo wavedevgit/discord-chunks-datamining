@@ -17,8 +17,8 @@ let u = i.forwardRef(function(e, t) {
     isUnread: a,
     children: u,
     id: d,
-    role: f,
-    "aria-label": _
+    role: _,
+    "aria-label": f
   } = e;
   return (0, r.jsxs)("div", {
     className: o()(n, {
@@ -28,8 +28,8 @@ let u = i.forwardRef(function(e, t) {
     }),
     ref: t,
     id: d,
-    role: f,
-    "aria-label": _,
+    role: _,
+    "aria-label": f,
     children: [null != u ? (0, r.jsx)("span", {
       className: o()(c.content, i),
       children: u

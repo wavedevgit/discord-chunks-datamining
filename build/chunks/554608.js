@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   P: () => s,
-  Z: () => _
+  Z: () => f
 });
 var r, i = n(442837),
   a = n(570140);
@@ -31,13 +31,13 @@ function u() {
 function d() {
   l = 3
 }
-class f extends(r = i.ZP.Store) {
+class _ extends(r = i.ZP.Store) {
   getMigrationStatus() {
     return l
   }
 }
-o(f, "displayName", "DomainMigrationStore");
-let _ = new f(a.Z, {
+o(_, "displayName", "DomainMigrationStore");
+let f = new _(a.Z, {
   DOMAIN_MIGRATION_START: c,
   DOMAIN_MIGRATION_FAILURE: u,
   DOMAIN_MIGRATION_SKIP: d

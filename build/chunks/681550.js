@@ -47,15 +47,15 @@ function d(e, t) {
   })(e, t)
 }
 
-function f(e) {
+function _(e) {
   var t = h();
   return function() {
     var n, r = m(e);
-    return n = t ? Reflect.construct(r, arguments, m(this).constructor) : r.apply(this, arguments), _(this, n)
+    return n = t ? Reflect.construct(r, arguments, m(this).constructor) : r.apply(this, arguments), f(this, n)
   }
 }
 
-function _(e, t) {
+function f(e, t) {
   return t && ("object" === o(t) || "function" == typeof t) ? t : p(e)
 }
 
@@ -92,7 +92,7 @@ var E = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31],
   b = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31],
   y = function(e) {
     u(n, e);
-    var t = f(n);
+    var t = _(n);
 
     function n() {
       var e;

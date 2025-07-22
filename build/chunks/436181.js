@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 });
 var r, i = n(442837),
   a = n(570140);
@@ -37,7 +37,7 @@ function u() {
 function d() {
   l = !0
 }
-class f extends(r = i.ZP.Store) {
+class _ extends(r = i.ZP.Store) {
   getLastProgress() {
     return s
   }
@@ -45,8 +45,8 @@ class f extends(r = i.ZP.Store) {
     return l
   }
 }
-o(f, "displayName", "DispatchApplicationLaunchSetupStore");
-let _ = new f(a.Z, {
+o(_, "displayName", "DispatchApplicationLaunchSetupStore");
+let f = new _(a.Z, {
   DISPATCH_APPLICATION_LAUNCH_SETUP_START: d,
   DISPATCH_APPLICATION_INSTALL_SCRIPTS_PROGRESS_UPDATE: c,
   DISPATCH_APPLICATION_LAUNCH_SETUP_COMPLETE: u

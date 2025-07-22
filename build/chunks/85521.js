@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => _
 }), n(997841);
 var r = n(913527),
   i = n.n(r),
@@ -20,9 +20,9 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 let d = "master";
-class f extends a.Z {
+class _ extends a.Z {
   static createFromServer(e) {
-    return new f({
+    return new _({
       id: e.application.id,
       branchId: e.branch_id,
       entitlements: null != e.entitlements ? e.entitlements.map(e => l.Z.createFromServer(e)) : [],
@@ -39,7 +39,7 @@ class f extends a.Z {
     })
   }
   static createForTestMode(e) {
-    return new f({
+    return new _({
       id: e.id,
       entitlements: [],
       branchId: e.branch.id,

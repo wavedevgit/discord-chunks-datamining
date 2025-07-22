@@ -34,7 +34,7 @@ function d(e) {
   return e
 }
 
-function f(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -45,8 +45,8 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
+function f(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -56,7 +56,7 @@ let p = {
       title: t,
       body: n,
       confirmColor: u,
-      confirmText: f,
+      confirmText: _,
       confirmVariant: p = "primary",
       cancelText: h,
       onConfirm: m,
@@ -82,23 +82,23 @@ let p = {
           },
           variant: "secondary"
         }), i.push({
-          text: null != f ? f : c.intl.string(c.t.BddRzc),
+          text: null != _ ? _ : c.intl.string(c.t.BddRzc),
           onClick: () => {
             null == m || m(), e.onClose()
           },
           variant: p
-        }), (0, r.jsx)(a.Modal, _(d({}, e), {
+        }), (0, r.jsx)(a.Modal, f(d({}, e), {
           size: "sm",
           title: t,
           subtitle: n,
           actions: i
         }))
       }
-      return (0, r.jsx)(s.default, _(d({}, e), {
+      return (0, r.jsx)(s.default, f(d({}, e), {
         title: t,
         body: n,
         confirmColor: "critical-primary" === p ? o.Tt.RED : o.Tt.BRAND,
-        confirmText: f,
+        confirmText: _,
         cancelText: h,
         onConfirm: m,
         onCancel: g,

@@ -4,8 +4,8 @@ var r, i, a, o, s, l = n(127849),
   c = n(242606),
   u = n(48657),
   d = n(390827).set,
-  f = n(557655),
-  _ = n(266782),
+  _ = n(557655),
+  f = n(266782),
   p = n(225991),
   h = n(787898),
   m = n(426625),
@@ -15,7 +15,7 @@ var r, i, a, o, s, l = n(127849),
   y = l.Promise,
   O = c("queueMicrotask");
 if (!O) {
-  var v = new f,
+  var v = new _,
     I = function() {
       var e, t;
       for (m && (e = b.domain) && e.exit(); t = v.get();) try {
@@ -25,7 +25,7 @@ if (!O) {
       }
       e && e.enter()
     };
-  _ || m || h || !g || !E ? !p && y && y.resolve ? ((o = y.resolve(void 0)).constructor = y, s = u(o.then, o), r = function() {
+  f || m || h || !g || !E ? !p && y && y.resolve ? ((o = y.resolve(void 0)).constructor = y, s = u(o.then, o), r = function() {
     s(I)
   }) : m ? r = function() {
     b.nextTick(I)

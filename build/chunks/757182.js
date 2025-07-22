@@ -49,9 +49,9 @@ function d(e, t) {
   }), e
 }
 
-function f(e, t) {
+function _(e, t) {
   if (null == e) return {};
-  var n, r, i = _(e, t);
+  var n, r, i = f(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -59,7 +59,7 @@ function f(e, t) {
   return i
 }
 
-function _(e, t) {
+function f(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -72,15 +72,15 @@ function p(e) {
     activity: t,
     onAction: n,
     ButtonComponent: l = o.Z
-  } = e, u = f(e, ["activity", "onAction", "ButtonComponent"]);
+  } = e, u = _(e, ["activity", "onAction", "ButtonComponent"]);
   if (!(0, a.Z)(t)) return null;
-  let _ = () => {
+  let f = () => {
     null == n || n();
     let e = (0, i.Z)(t);
     return window.open(null != e ? e : void 0)
   };
   return (0, r.jsx)(l, d(c({
-    onClick: _,
+    onClick: f,
     fullWidth: !0
   }, u), {
     children: s.intl.string(s.t["I6JG4+"])

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => _
 });
 var r = n(73800),
   i = n(719711),
@@ -17,7 +17,7 @@ function d(e) {
   return null == e || null == (t = e._state) ? void 0 : t.lastTestTimestamp
 }
 
-function f() {
+function _() {
   return r.useEffect(() => {
     window.location.origin === window.GLOBAL_ENV.MIGRATION_DESTINATION_ORIGIN && !0 !== a.K.get(i.SV) && l.ZP.supportsFeature(u.eRX.USER_DATA_CACHE) && (c.Te(), o.Z.userDataCache.getCached().then(e => {
       if (null == e) {
@@ -33,15 +33,15 @@ function f() {
         n = 0 !== t.length,
         r = null != e.token,
         l = null == e.RTCRegionStore ? null : JSON.parse(e.RTCRegionStore),
-        f = null == l || null == d(l) || d(l) <= d(a.K.get("RTCRegionStore"));
-      n && r && !f && (a.K.clear(), t.forEach(t => {
+        _ = null == l || null == d(l) || d(l) <= d(a.K.get("RTCRegionStore"));
+      n && r && !_ && (a.K.clear(), t.forEach(t => {
         let n = e[t];
         try {
           a.K.set(t, JSON.parse(n))
         } catch (e) {}
       })), s.default.track(u.rMx.DOMAIN_MIGRATED, {
         success: !0,
-        current_is_newer: f,
+        current_is_newer: _,
         has_data: n
       }, {
         flush: !0

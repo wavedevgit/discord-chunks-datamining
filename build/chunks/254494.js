@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => _
 });
 var r = n(255367),
   i = n(73800),
@@ -32,14 +32,14 @@ let d = e => {
       categoryListRef: n
     }
   },
-  f = function(e) {
+  _ = function(e) {
     let {
       categoryListRef: t,
       expressionsListRef: n,
       categories: a,
       store: c,
-      children: f,
-      className: _,
+      children: _,
+      className: f,
       listPadding: p,
       rowCount: h,
       getScrollOffsetForIndex: m,
@@ -67,7 +67,7 @@ let d = e => {
       T = i.useCallback(e => b(a[e], e, () => I(e), v === e), [v, a, I, b]),
       S = i.useMemo(() => "function" == typeof g ? e => g(a[e], e) : g, [a, g]);
     return (0, r.jsxs)("div", {
-      className: o()(u.wrapper, _),
+      className: o()(u.wrapper, f),
       children: [(0, r.jsx)(s.Z, {
         listPadding: p,
         onScroll: E,
@@ -78,6 +78,6 @@ let d = e => {
         hideScrollbar: !0,
         rowCountBySection: y,
         renderSection: O
-      }), null == f ? void 0 : f(I)]
+      }), null == _ ? void 0 : _(I)]
     })
   }

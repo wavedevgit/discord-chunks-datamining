@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => k
+  Z: () => M
 }), n(388685);
 var r = n(570140),
   i = n(846027),
@@ -285,26 +285,27 @@ let L = {
     }
   },
   R = null;
-class D extends u.Z {
+
+function D() {
+  x.clear(), y.Z.getMediaEngine().eachConnection(e => {
+    e.setForceAudioInput(!1, !1), e.setForceAudioInput(!1, !0)
+  }, Z.Yn.DEFAULT)
+}
+class k extends u.Z {
   _initialize() {
     r.Z.wait(() => r.Z.dispatch({
       type: "KEYBINDS_REGISTER_GLOBAL_KEYBIND_ACTIONS",
       keybinds: L
-    })), r.Z.subscribe("AUDIO_SET_MODE", this.resetPTTState), r.Z.subscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect)
+    })), r.Z.subscribe("AUDIO_SET_MODE", D), r.Z.subscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect)
   }
   _terminate() {
-    r.Z.unsubscribe("AUDIO_SET_MODE", this.resetPTTState), r.Z.unsubscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect)
+    r.Z.unsubscribe("AUDIO_SET_MODE", D), r.Z.unsubscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect)
   }
   handleVoiceChannelSelect(e) {
     let {
       currentVoiceChannelId: t
     } = e;
-    t !== R && this.resetPTTState(), R = t
-  }
-  resetPTTState() {
-    x.clear(), y.Z.getMediaEngine().eachConnection(e => {
-      e.setForceAudioInput(!1, !1), e.setForceAudioInput(!1, !0)
-    }, Z.Yn.DEFAULT)
+    t !== R && D(), R = t
   }
 }
-let k = new D
+let M = new k

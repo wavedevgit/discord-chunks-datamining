@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => _
 });
 var r = n(255367);
 n(73800);
@@ -49,7 +49,7 @@ function d(e, t) {
   }), e
 }
 
-function f(e) {
+function _(e) {
   return (0, r.jsx)(a.Y0, d(c({}, e), {
     "aria-label": o.intl.string(o.t.ZTNur6),
     size: a.Cg.SMALL,

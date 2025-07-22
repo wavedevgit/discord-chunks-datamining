@@ -9,8 +9,8 @@
     c = 0,
     u = !1,
     d = 7,
-    f = 35,
-    _ = 125,
+    _ = 35,
+    f = 125,
     p = 0,
     h = 0,
     m = 0,
@@ -24,7 +24,7 @@
       }
     },
     E = b(function() {
-      d = 22, _ = 66, f = 0
+      d = 22, f = 66, _ = 0
     });
 
   function b(e) {
@@ -43,7 +43,7 @@
   }
 
   function O() {
-    125 != _ && (d = 7, _ = 125, f = 35, u && (y(), T())), E()
+    125 != f && (d = 7, f = 125, _ = 35, u && (y(), T())), E()
   }
 
   function v() {
@@ -55,7 +55,7 @@
   }
 
   function T() {
-    u || (t = _ - (Date.now() - h), e = Date.now(), u = !0, f && t < f && (t = f), t > 9 ? r = setTimeout(I, t) : (t = 0, I()))
+    u || (t = f - (Date.now() - h), e = Date.now(), u = !0, _ && t < _ && (t = _), t > 9 ? r = setTimeout(I, t) : (t = 0, I()))
   }
 
   function S() {

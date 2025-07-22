@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => _
 }), n(388685);
 var r = n(73800),
   i = n(663507),
@@ -56,14 +56,14 @@ let d = Object.freeze({
   }
 });
 
-function f(e) {
+function _(e) {
   let {
     sections: t,
     columns: n,
     getItemKey: s,
     getItemHeight: c,
-    getSectionHeight: f,
-    chunkSize: _ = 250,
+    getSectionHeight: _,
+    chunkSize: f = 250,
     getScrollerState: p,
     maxBufferWidth: h,
     itemGutter: m,
@@ -79,7 +79,7 @@ function f(e) {
     chunkEnd: w,
     forceUpdateOnChunkChange: D
   } = (0, o.Z)({
-    chunkSize: _,
+    chunkSize: f,
     getScrollerState: p,
     forceUpdate: I
   });
@@ -88,7 +88,7 @@ function f(e) {
     columns: n,
     getItemKey: s,
     getItemHeight: c,
-    getSectionHeight: f,
+    getSectionHeight: _,
     bufferWidth: N,
     itemGutter: m,
     removeEdgeItemGutters: g,
@@ -98,7 +98,7 @@ function f(e) {
     paddingHorizontal: O,
     marginLeft: C / 2,
     dir: v
-  }), S.computeVisibleSections(Math.max(0, P * _), w * _), S.getState()), [R, S, t, n, s, c, f, P, w, _, m, g, E, b, y, O, N, v]), u(l({}, T.current), {
+  }), S.computeVisibleSections(Math.max(0, P * f), w * f), S.getState()), [R, S, t, n, s, c, _, P, w, f, m, g, E, b, y, O, N, v]), u(l({}, T.current), {
     masonryComputer: S,
     forceUpdateOnChunkChange: D,
     forceUpdate: I

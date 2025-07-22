@@ -9,8 +9,8 @@ var r = n(444675),
   c = Symbol.for("react.consumer"),
   u = Symbol.for("react.context"),
   d = Symbol.for("react.forward_ref"),
-  f = Symbol.for("react.suspense"),
-  _ = Symbol.for("react.memo"),
+  _ = Symbol.for("react.suspense"),
+  f = Symbol.for("react.memo"),
   p = Symbol.for("react.lazy"),
   h = Symbol.iterator;
 
@@ -204,7 +204,7 @@ t.Children = {
     if (!R(e)) throw Error("React.Children.only expected to receive a single React element child.");
     return e
   }
-}, t.Component = y, t.Fragment = o, t.Profiler = l, t.PureComponent = v, t.StrictMode = s, t.Suspense = f, t.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE = S, t.act = function() {
+}, t.Component = y, t.Fragment = o, t.Profiler = l, t.PureComponent = v, t.StrictMode = s, t.Suspense = _, t.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE = S, t.act = function() {
   throw Error("act(...) is not supported in production builds of React.")
 }, t.cache = function(e) {
   return function() {
@@ -270,7 +270,7 @@ t.Children = {
   }
 }, t.memo = function(e, t) {
   return {
-    $$typeof: _,
+    $$typeof: f,
     type: e,
     compare: void 0 === t ? null : t
   }

@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(287734),
   u = n(872810),
   d = n(110924),
-  f = n(833664),
-  _ = n(579630),
+  _ = n(833664),
+  f = n(579630),
   p = n(100527),
   h = n(906732),
   m = n(194082),
@@ -65,7 +65,7 @@ function Y(e) {
       user: t
     } = e;
     return t
-  }) : []), en = (0, s.e7)([I.Z], () => I.Z.findActivity(t.id, e => (0, f.Z)(e) && !(0, _.Z)(e))), {
+  }) : []), en = (0, s.e7)([I.Z], () => I.Z.findActivity(t.id, e => (0, _.Z)(e) && !(0, f.Z)(e))), {
     analyticsLocations: er
   } = (0, h.ZP)(p.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), ei = (0, S.Z)({
     display: "live",
@@ -79,18 +79,18 @@ function Y(e) {
   }), [eo, es] = (0, b.wq)(ee), {
     previewUrl: el,
     isLoading: ec
-  } = (0, E.Z)(a.guildId, a.channelId, a.ownerId), eu = (0, s.e7)([v.Z], () => null != ee && v.Z.canBasicChannel(G.S7T.CONNECT, ee)), ed = (0, d.Z)(ec ? null : el), ef = ec || null == el ? ed : el;
+  } = (0, E.Z)(a.guildId, a.channelId, a.ownerId), eu = (0, s.e7)([v.Z], () => null != ee && v.Z.canBasicChannel(G.S7T.CONNECT, ee)), ed = (0, d.Z)(ec ? null : el), e_ = ec || null == el ? ed : el;
   if (null == $ || null == ee || !1 === a.discoverable || null === q) return null;
-  let e_ = () => {
+  let ef = () => {
       let e = e => {
         e.stopPropagation(), eo && (ei({
           action: "PRESS_IMAGE"
         }), c.default.selectVoiceChannel(a.channelId), (0, u.iV)(a), null == W || W())
       };
-      return null == ef && ec ? (0, r.jsx)("div", {
+      return null == e_ && ec ? (0, r.jsx)("div", {
         className: F.preview,
         children: (0, r.jsx)(l.$jN, {})
-      }) : null == ef ? (0, r.jsxs)(l.P3F, {
+      }) : null == e_ ? (0, r.jsxs)(l.P3F, {
         className: o()(F.preview, F.overlay, eo ? F.clickable : F.disabled),
         onClick: e,
         "aria-label": (0, b.gR)(es),
@@ -116,7 +116,7 @@ function Y(e) {
         "aria-disabled": !eo,
         children: [(0, r.jsx)("img", {
           alt: "",
-          src: ef,
+          src: e_,
           className: F.image
         }), q !== U.lY.MODAL && q !== U.lY.MODAL_V2 && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(l.Text, {
@@ -222,7 +222,7 @@ function Y(e) {
               className: V.body,
               children: [(0, r.jsxs)("div", {
                 className: V.content,
-                children: [e_(), ep(), q === U.lY.MODAL && em()]
+                children: [ef(), ep(), q === U.lY.MODAL && em()]
               }), eh()]
             }), q !== U.lY.MODAL && q !== U.lY.MODAL_V2 && em()]
           })

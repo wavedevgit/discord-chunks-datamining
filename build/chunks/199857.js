@@ -11,8 +11,8 @@ var r, i = n(74514),
   c = n.n(l),
   u = n(579092),
   d = n(46973),
-  f = n(912095),
-  _ = n(405475),
+  _ = n(912095),
+  f = n(405475),
   p = n(886848),
   h = n(586021),
   m = n(649318),
@@ -34,7 +34,7 @@ let y = 10,
 function I(e, t) {
   e.sender.replaceTrack(t), e.direction = null != t ? "sendrecv" : "recvonly"
 }
-class T extends f.Z {
+class T extends _.Z {
   destroy() {
     super.destroy(), "closed" !== this.signalingState && this.pc.close()
   }
@@ -96,7 +96,7 @@ class T extends f.Z {
   }
   setBitRate(e) {
     this.voiceBitrate !== e && (super.setBitRate(e), this.setAudioEncoderParameters([{
-      parameter: f.p.AUDIO_BITRATE,
+      parameter: _.p.AUDIO_BITRATE,
       value: e
     }]))
   }
@@ -178,7 +178,7 @@ class T extends f.Z {
   }
   setAudioEncoderParameters(e) {
     let t = {
-        [f.p.AUDIO_BITRATE]: "maxBitrate"
+        [_.p.AUDIO_BITRATE]: "maxBitrate"
       },
       n = [];
     for (let {
@@ -197,9 +197,9 @@ class T extends f.Z {
   }
   setVideoEncoderParameters(e) {
     let t = {
-        [f.p.VIDEO_BITRATE]: "maxBitrate",
-        [f.p.VIDEO_RESOLUTION_SCALE]: "scaleResolutionDownBy",
-        [f.p.VIDEO_FRAMERATE]: "maxFramerate"
+        [_.p.VIDEO_BITRATE]: "maxBitrate",
+        [_.p.VIDEO_RESOLUTION_SCALE]: "scaleResolutionDownBy",
+        [_.p.VIDEO_FRAMERATE]: "maxFramerate"
       },
       n = [];
     for (let {
@@ -300,10 +300,10 @@ class T extends f.Z {
       c = this.videoPayloadType,
       u = this.videoSupported && (null == (a = this.videoTransceiver) || null == (i = a.sender) ? void 0 : i.track) != null,
       d = this.rtxPayloadType,
-      f = this.sdp;
-    if (null == o || null == s || null == l || null == c || null == d || null == f) throw Error("Invalid payload: audioCodec: ".concat(o, ", audioPayloadType: ").concat(null == s ? "null" : s, ", videoCodec: ").concat(l, ", videoCodecPayloadType: ").concat(null == c ? "null" : c, ", rtxPayloadType: ").concat(null == d ? "null" : d, ", sdp: ").concat(null == f ? "null" : f));
+      _ = this.sdp;
+    if (null == o || null == s || null == l || null == c || null == d || null == _) throw Error("Invalid payload: audioCodec: ".concat(o, ", audioPayloadType: ").concat(null == s ? "null" : s, ", videoCodec: ").concat(l, ", videoCodecPayloadType: ").concat(null == c ? "null" : c, ", rtxPayloadType: ").concat(null == d ? "null" : d, ", sdp: ").concat(null == _ ? "null" : _));
     let {
-      ssrcs: _,
+      ssrcs: f,
       remainingAudioStreams: p,
       remainingVideoStreams: h
     } = this.buildSSRCsFromOutboundStreams(e, t, n, r);
@@ -312,7 +312,7 @@ class T extends f.Z {
       remainingVideoStreams: h,
       answer: (0, m.Rx)({
         type: "answer",
-        baseSDP: f,
+        baseSDP: _,
         audioCodec: o,
         audioPayloadType: s,
         audioBitRate: this.voiceBitrate,
@@ -321,7 +321,7 @@ class T extends f.Z {
         videoBitRate: 2500,
         sendingVideo: u,
         rtxPayloadType: d,
-        ssrcs: _,
+        ssrcs: f,
         extensions: this.extensions,
         enableAudioNack: this.enableAudioNack
       })
@@ -366,16 +366,16 @@ class T extends f.Z {
       sdp: l,
       outboundStreams: c,
       codecs: u,
-      audioSSRC: f,
-      videoSSRC: _,
+      audioSSRC: _,
+      videoSSRC: f,
       rtxSSRC: p,
       extensions: h
     } = this.parseLocalDescription();
-    if (this.codecs = u, this.extensions = h, f !== this.audioSSRC || _ !== this.videoSSRC) {
+    if (this.codecs = u, this.extensions = h, _ !== this.audioSSRC || f !== this.videoSSRC) {
       var g;
-      null == (g = this.daveSessionManager) || g.updateSsrcs(this.userId, f, [_])
+      null == (g = this.daveSessionManager) || g.updateSsrcs(this.userId, _, [f])
     }
-    this.audioSSRC = f, this.videoSSRC = _, this.videoReady = _ > 0 && p > 0, (this.videoStreamParameters[0].ssrc !== _ || this.videoStreamParameters[0].rtxSsrc !== p || this.videoReady) && (this.videoStreamParameters[0].ssrc = 0 === _ ? this.videoStreamParameters[0].ssrc : _, this.videoStreamParameters[0].rtxSsrc = 0 === p ? this.videoStreamParameters[0].rtxSsrc : p, this.videoStreamParameters[0].active = this.videoReady, this.emit(d.Sh.Video, this.userId, this.input.getVideoStreamId(), this.audioSSRC, _, p, this.videoStreamParameters)), null == this.sdp ? this.emit(d.Sh.Connected, "webrtc", (0, m.sc)(l)) : this.setRemoteAnswer(c, t, n, r)
+    this.audioSSRC = _, this.videoSSRC = f, this.videoReady = f > 0 && p > 0, (this.videoStreamParameters[0].ssrc !== f || this.videoStreamParameters[0].rtxSsrc !== p || this.videoReady) && (this.videoStreamParameters[0].ssrc = 0 === f ? this.videoStreamParameters[0].ssrc : f, this.videoStreamParameters[0].rtxSsrc = 0 === p ? this.videoStreamParameters[0].rtxSsrc : p, this.videoStreamParameters[0].active = this.videoReady, this.emit(d.Sh.Video, this.userId, this.input.getVideoStreamId(), this.audioSSRC, f, p, this.videoStreamParameters)), null == this.sdp ? this.emit(d.Sh.Connected, "webrtc", (0, m.sc)(l)) : this.setRemoteAnswer(c, t, n, r)
   }
   constructor(e) {
     var t;
@@ -438,7 +438,7 @@ class T extends f.Z {
       }
     }), this.logger = new u.Yd("UnifiedConnection(".concat(e.context, ")"));
     let n = e.dave;
-    null == n || (0, h.IT)() || (this.logger.warn("DAVE is initialized but encoded transforms are not supported"), n = null), null != n && (this.daveSessionManager = new _.j(n, e.transientKeys, this.userId), this.daveSessionManager.on(d.Sh.MLSFailure, (e, t) => {
+    null == n || (0, h.IT)() || (this.logger.warn("DAVE is initialized but encoded transforms are not supported"), n = null), null != n && (this.daveSessionManager = new f.j(n, e.transientKeys, this.userId), this.daveSessionManager.on(d.Sh.MLSFailure, (e, t) => {
       this.emit(d.Sh.MLSFailure, e, t)
     }), this.daveSessionManager.on(d.Sh.SecureFramesUpdate, e => {
       this.emit(d.Sh.SecureFramesUpdate, e)

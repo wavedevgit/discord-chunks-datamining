@@ -13,8 +13,8 @@ var r = n(255367),
   c = n(898188),
   u = n(328908),
   d = n(832820),
-  f = n(841284),
-  _ = n(541716),
+  _ = n(841284),
+  f = n(541716),
   p = n(407661),
   h = n(302195);
 
@@ -35,7 +35,7 @@ function m(e) {
   return i.useMemo(() => {
     let e = [],
       i = [];
-    return null != t.guild_id && n === _.Ie.NORMAL && i.push((0, r.jsx)(c.Z, {
+    return null != t.guild_id && n === f.Ie.NORMAL && i.push((0, r.jsx)(c.Z, {
       guildId: t.guild_id,
       channel: t,
       className: h.newMemberActionBar
@@ -49,7 +49,7 @@ function m(e) {
       chatInputType: n
     })), O && e.push((0, r.jsx)(l.V, {})), v && e.push((0, r.jsx)(d.Z, {
       channel: t
-    })), null != E && e.push((0, r.jsx)(f.y, {
+    })), null != E && e.push((0, r.jsx)(_.y, {
       pendingScheduledMessage: E
     })), {
       stacked: e,

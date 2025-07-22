@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(911969),
   u = n(998698),
   d = n(703558),
-  f = n(117530),
-  _ = n(91313),
+  _ = n(117530),
+  f = n(91313),
   p = n(436660),
   h = n(887490),
   m = n(388032),
@@ -71,21 +71,21 @@ function v(e, t, n) {
         c = 0;
       if (null != s && s.id === o.command.id) {
         var d;
-        let t = _.cu(e);
+        let t = f.cu(e);
         for (let e of null != (d = s.options) ? d : []) t.includes(e.name) ? c++ : l++
       }
-      let f = {};
+      let _ = {};
       if (l > 0) {
         let e;
         e = c > 0 ? m.intl.formatToPlainString(m.t.BP8N0N, {
           count: l
         }) : m.intl.formatToPlainString(m.t.lziVCw, {
           count: l
-        }), f["data-trailing-placeholder"] = e
+        }), _["data-trailing-placeholder"] = e
       }
       return (0, r.jsx)("div", O(b({
         className: g.applicationCommand
-      }, i, f), {
+      }, i, _), {
         children: a
       }));
     case "applicationCommandOption":
@@ -103,7 +103,7 @@ let I = e => {
   let t, {
       channelId: n,
       element: a,
-      attributes: _,
+      attributes: f,
       children: E
     } = e,
     y = (0, s.vt)(),
@@ -119,7 +119,7 @@ let I = e => {
         errored: (null == (r = u.Z.getOptionState(n, a.optionName)) || null == (t = r.lastValidationResult) ? void 0 : t.success) !== !0
       }
     }, [n, a.optionName]),
-    A = (0, l.e7)([f.Z], () => f.Z.getUpload(n, a.optionName, d.d.SlashCommand), [n, a.optionName]),
+    A = (0, l.e7)([_.Z], () => _.Z.getUpload(n, a.optionName, d.d.SlashCommand), [n, a.optionName]),
     N = a.children[a.children.length - 1],
     C = null != N && h.LC.isText(N) && N.text.endsWith("\n"),
     R = o()(g.inlineElement, g.optionPill, {
@@ -143,7 +143,7 @@ let I = e => {
       className: g.newLine,
       contentEditable: !1
     }) : null]
-  }), (0, r.jsxs)("span", O(b({}, _), {
+  }), (0, r.jsxs)("span", O(b({}, f), {
     className: R,
     children: [(0, r.jsxs)("span", {
       className: g.optionPillKey,

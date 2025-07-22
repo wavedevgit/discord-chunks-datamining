@@ -18,17 +18,17 @@ function u(e) {
     className: a,
     size: u,
     botIconFirst: d,
-    fallbackAvatar: f,
-    rendersPlaceholder: _ = !1
+    fallbackAvatar: _,
+    rendersPlaceholder: f = !1
   } = e, p = i.useMemo(() => null != t ? s.ZP.getApplicationIconURL({
     id: t.id,
     icon: t.icon,
     bot: t.bot,
     size: u,
     botIconFirst: d,
-    fallbackAvatar: f
-  }) : n, [t, n, u, d, f]);
-  return null == p ? _ ? (0, r.jsx)("div", {
+    fallbackAvatar: _
+  }) : n, [t, n, u, d, _]);
+  return null == p ? f ? (0, r.jsx)("div", {
     className: o()(c.icon, c.placeholder, a)
   }) : null : (0, r.jsx)("img", {
     className: o()(c.icon, a),

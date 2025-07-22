@@ -21,7 +21,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e, t) {
+function _(e, t) {
   let n = 0,
     r = null;
   for (var [i, {
@@ -29,7 +29,7 @@ function f(e, t) {
     }] of Object.entries(e)) a <= t && a > n && (n = a, r = i);
   return r
 }
-class _ extends a.Z {
+class f extends a.Z {
   constructor(...e) {
     super(...e), d(this, "actions", {
       POST_CONNECTION_OPEN: e => this.handleConnectionOpen(e)
@@ -38,20 +38,20 @@ class _ extends a.Z {
         let e = await i.Z.fetchChangelogConfig(),
           t = e.body,
           n = (0, c.b)(),
-          a = f(t, n);
+          a = _(t, n);
         if (r.Z.dispatch({
             type: "CHANGE_LOG_SET_CONFIG",
             config: e.body,
             latestChangelogId: a
           }), null == a || !0 !== t[a].show_on_startup) return;
         let d = l.Z.lastSeenChangelogId(),
-          _ = l.Z.lastSeenChangelogDate();
+          f = l.Z.lastSeenChangelogDate();
         if (null != d && 0 >= s.default.compare(a, d)) return;
         let p = await i.Z.fetchChangelog(a, o.default.locale);
         if (null == p) return;
-        if (null == _ || null == l.Z.lastSeenChangelogDate()) return void i.Z.markChangelogAsSeen(a, p.date);
+        if (null == f || null == l.Z.lastSeenChangelogDate()) return void i.Z.markChangelogAsSeen(a, p.date);
         if (l.Z.isLocked()) return;
-        new Date(p.date) > new Date(_) && (0, u.Z)()
+        new Date(p.date) > new Date(f) && (0, u.Z)()
       } finally {
         r.Z.dispatch({
           type: "CHANGE_LOG_RESOLVED"
@@ -60,4 +60,4 @@ class _ extends a.Z {
     })
   }
 }
-let p = new _
+let p = new f

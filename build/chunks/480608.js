@@ -36,11 +36,11 @@ async function u(e) {
 async function d(e) {
   l.Z.shouldFetch(e) && await u(e)
 }
-let f = new(i())({
+let _ = new(i())({
   maxAge: 1e4
 });
 
-function _(e, t) {
+function f(e, t) {
   return a.tn.get({
     url: c.ANM.GUILD_ROLE_MEMBER_IDS(e, t),
     rejectWithError: !1
@@ -50,5 +50,5 @@ function _(e, t) {
 function p(e, t) {
   let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
     r = "".concat(e, "-").concat(t);
-  return n && null != f.get(r) ? Promise.resolve(null) : (f.set(r, !0), _(e, t))
+  return n && null != _.get(r) ? Promise.resolve(null) : (_.set(r, !0), f(e, t))
 }

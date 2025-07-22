@@ -13,8 +13,8 @@ var i = n(120356),
   c = n(747613),
   u = n(533432),
   d = n(149203),
-  f = n(185923),
-  _ = n(539490);
+  _ = n(185923),
+  f = n(539490);
 let p = e => {
   let {
     channel: t,
@@ -36,7 +36,7 @@ let p = e => {
       emojiListRef: h,
       gridNavigatorId: d.Vr,
       onKeyDown: m,
-      className: _.searchBar,
+      className: f.searchBar,
       ref: b,
       isFullRow: !1,
       onFocus: g,
@@ -44,17 +44,17 @@ let p = e => {
       defaultSearchPlaceholder: (0, s.nV)(i, O)
     }), T && (0, r.jsx)(l.Z, {
       channel: t
-    }), i === f.Hz.REACTION ? (0, r.jsx)(o.Z, {
+    }), i === _.Hz.REACTION ? (0, r.jsx)(o.Z, {
       checked: O,
       onClick: v
     }) : null, null != n ? n : (0, r.jsx)(c.Z, {
       searchBarRef: b,
-      className: _.diversitySelector,
+      className: f.diversitySelector,
       selectedSurrogate: y
     })]
   });
   return (0, r.jsx)("div", {
-    className: a()(_.header, p),
+    className: a()(f.header, p),
     children: null != I ? I(S) : S
   })
 }

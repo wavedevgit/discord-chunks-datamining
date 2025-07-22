@@ -22,8 +22,8 @@ function l(e) {
   (0 === c || Number.isNaN(c)) && (l = s);
   let u = r ? s.set("hsl.s", 1) : l.set("hsl.s", 1),
     d = u.get("hsl.h"),
-    f = d >= 200 && d <= 300 ? r ? .8 : .25 : r ? .95 : .15;
-  return u = u.set("hsl.l", f), {
+    _ = d >= 200 && d <= 300 ? r ? .8 : .25 : r ? .95 : .15;
+  return u = u.set("hsl.l", _), {
     base: r ? l.set("hsl.s", 1).set("hsl.l", .05) : s.set("hsl.s", 1).set("hsl.l", .9),
     text: u
   }
@@ -44,8 +44,8 @@ function c(e) {
     secondaryColor: r,
     isDarkTheme: !0
   }), {
-    base: f,
-    text: _
+    base: _,
+    text: f
   } = l({
     primaryColor: n,
     secondaryColor: r,
@@ -54,9 +54,9 @@ function c(e) {
   return {
     "--custom-theme-base-color-amount": "".concat(t ? i : 0, "%"),
     "--custom-theme-text-color-amount": "".concat(t ? a : 0, "%"),
-    "--custom-theme-base-color-light-hsl": u(f),
-    "--custom-theme-base-color-light": f.css(),
-    "--custom-theme-text-color-light": _.css(),
+    "--custom-theme-base-color-light-hsl": u(_),
+    "--custom-theme-base-color-light": _.css(),
+    "--custom-theme-text-color-light": f.css(),
     "--custom-theme-base-color-dark-hsl": u(c),
     "--custom-theme-base-color-dark": c.css(),
     "--custom-theme-text-color-dark": d.css()

@@ -58,10 +58,10 @@ e.exports = function(e) {
       contains: [c, l, a, o]
     }),
     d = /[a-z_]+/,
-    f = u(i, {
+    _ = u(i, {
       relevance: 2
     }),
-    _ = u([d], {
+    f = u([d], {
       relevance: 1
     });
   return {
@@ -69,7 +69,7 @@ e.exports = function(e) {
     aliases: ["craftcms"],
     case_insensitive: !0,
     subLanguage: "xml",
-    contains: [e.COMMENT(/\{#/, /#\}/), f, _, {
+    contains: [e.COMMENT(/\{#/, /#\}/), _, f, {
       className: "template-variable",
       begin: /\{\{/,
       end: /\}\}/,

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 });
 var r = n(588468),
   i = n(496675),
@@ -13,10 +13,10 @@ var r = n(588468),
   u = n(185923),
   d = n(388032);
 
-function f(e) {
+function _(e) {
   return "".concat(l.a4).concat(e.name).concat(l.jp)
 }
-let _ = {
+let f = {
   sentinel: l.a4,
   matches(e, t, n, r, a) {
     var o, s;
@@ -72,7 +72,7 @@ let _ = {
       index: n,
       options: r
     } = e, i = t[n];
-    return r.sendMessage(f(i)), {
+    return r.sendMessage(_(i)), {
       type: s.z2.REACTION
     }
   }

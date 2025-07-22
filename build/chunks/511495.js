@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  X: () => _,
-  e: () => f
+  X: () => f,
+  e: () => _
 });
 var r = n(579092),
   i = n(128813);
@@ -29,7 +29,7 @@ function d(e) {
   o.trace(e)
 }
 
-function f() {
+function _() {
   return null == a && (a = (async () => {
     await i.mX();
     let e = i.Qw();
@@ -37,6 +37,6 @@ function f() {
   })()), a
 }
 
-function _() {
+function f() {
   return void 0 !== window._libdiscoreWasm
 }
