@@ -25,8 +25,8 @@ var r = i(255367),
   O = i(876917),
   P = i(210887),
   b = i(822857),
-  j = i(960919),
-  y = i(275388),
+  y = i(960919),
+  j = i(275388),
   I = i(626135),
   A = i(74538),
   S = i(335131),
@@ -360,7 +360,7 @@ function ev(e) {
           tile_type: p.Z[t.type],
           tile_position: String(null == O ? void 0 : O.tilePosition),
           cta_name: "claim with orbs button"
-        }), (0, y.q)({
+        }), (0, j.q)({
           skuId: (0, J.S)({
             product: t,
             selectedVariantIndex: a
@@ -388,7 +388,7 @@ function ev(e) {
         variant: "primary",
         text: en.intl.format(en.t.kAgx5O, {
           orbPrice: K[0].amount,
-          orbIconHook: () => (0, r.jsx)(j.Z, {
+          orbIconHook: () => (0, r.jsx)(y.Z, {
             className: eo.orbIconAligned
           })
         }),
@@ -506,6 +506,7 @@ function ev(e) {
             pageCategory: i === el.AW.HOME || null == O ? void 0 : O.pageCategory
           },
           children: (0, r.jsx)(z.Z, {
+            primary: !0,
             product: t,
             selectedVariantIndex: a,
             returnRef: s,
@@ -528,8 +529,8 @@ let ex = 12633 == i.j ? l.memo(function(e) {
       selectedVariantIndex: E,
       handleEntering: O,
       handleLeaving: b,
-      previewingVariantIndex: j,
-      className: y
+      previewingVariantIndex: y,
+      className: j
     } = e, {
       analyticsLocations: S
     } = (0, f.ZP)([C.Z.COLLECTIBLES_SHOP_CARD]), T = (0, k.sp)(), N = (0, v.Z)(c), [R, Z] = l.useState(!1), G = N || R, B = (0, H.T)(t), z = (0, h.e7)([x.Z], () => x.Z.useReducedMotion), V = A.ZP.canUseCollectibles(i), q = l.useMemo(() => (0, L.BH)(t, V), [t, V]), Q = (0, L.G1)(t), Y = (0, h.e7)([P.Z], () => (0, m.wjy)(P.Z.theme)), J = (0, L.Yq)(t.skuId), $ = a.skuId === u.T.ANIME_V3 && (0, L.WW)(t.skuId), {
@@ -539,7 +540,7 @@ let ex = 12633 == i.j ? l.memo(function(e) {
       isPartiallyOwnedBundle: er
     } = (0, M.L)(g), {
       isDisabled: es
-    } = (0, W.G)(g.skuId), ep = null !== j ? j : E, [eg, em] = l.useState(!1);
+    } = (0, W.G)(g.skuId), ep = null !== y ? y : E, [eg, em] = l.useState(!1);
     l.useEffect(() => {
       let {
         current: e
@@ -590,7 +591,7 @@ let ex = 12633 == i.j ? l.memo(function(e) {
       eE = e_(C.Z.COLLECTIBLES_SHOP_CARD);
     return 0 === eC.length || (0, L.x6)(t) && null != q && q.discountPercentage < 0 ? null : (0, r.jsx)(m.tEY, {
       children: (0, r.jsxs)(m.kL8, {
-        className: s()(y, Y ? eo.shopCardDark : eo.shopCard, {
+        className: s()(j, Y ? eo.shopCardDark : eo.shopCard, {
           [eo.partiallyOwned]: er && !G,
           [eo.shopCardAnimation]: !z && ee !== w.D.NO_MOVEMENT,
           [Y ? eo.shopCardDarkHighlighted : eo.shopCardHighlighted]: G
@@ -716,7 +717,7 @@ let ex = 12633 == i.j ? l.memo(function(e) {
           }), t.type === p.Z.VARIANTS_GROUP ? (0, r.jsx)(K.P, {
             variantGroupProduct: t,
             previewingVariantIndexProps: {
-              previewingVariantIndex: j,
+              previewingVariantIndex: y,
               handleEntering: O,
               handleLeaving: b
             },

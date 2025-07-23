@@ -20,8 +20,8 @@ var s = n(442837),
   C = n(981631),
   O = n(176505),
   g = n(388032),
-  T = n(246752),
-  S = n(240211);
+  S = n(246752),
+  T = n(240211);
 
 function f(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -53,7 +53,7 @@ let N = 12633 == n.j ? () => {
     b = null,
     P = null,
     D = null,
-    v = [T.notice, S.notice];
+    v = [S.notice, T.notice];
   switch (y) {
     case E.wB.SUBMITTED:
       b = g.intl.string(g.t["5iLvS0"]), P = g.intl.string(g.t.mqtdmZ), D = () => {
@@ -93,7 +93,7 @@ let N = 12633 == n.j ? () => {
             guildId: N.id
           }, t))
         })
-      }, v.push(T.error);
+      }, v.push(S.error);
       break;
     default:
       b = g.intl.string(g.t.G5YKXF), P = g.intl.string(g.t["r8/DT0"]), D = () => {
@@ -103,7 +103,7 @@ let N = 12633 == n.j ? () => {
   return (0, i.jsxs)("div", {
     className: l()(...v),
     children: [(0, i.jsx)(c.Text, {
-      className: T.header,
+      className: S.header,
       variant: "text-sm/normal",
       children: b
     }), (0, i.jsx)(c.zxk, {

@@ -21,16 +21,17 @@ var n = r(255367),
 let y = e => {
   let {
     product: t,
-    selectedVariantIndex: r,
-    returnRef: y,
-    onSuccess: g,
-    tooltipDelay: O
+    primary: r,
+    selectedVariantIndex: y,
+    returnRef: g,
+    onSuccess: O,
+    tooltipDelay: j
   } = e, {
-    analyticsLocations: j
-  } = (0, o.ZP)(), _ = i.useRef(null), x = (0, p.hv)("CollectiblesShopGiftButton"), P = (0, u.sp)(), w = (0, v.Z)();
+    analyticsLocations: _
+  } = (0, o.ZP)(), x = i.useRef(null), P = (0, p.hv)("CollectiblesShopGiftButton"), w = (0, u.sp)(), C = (0, v.Z)();
   return (0, d.x6)(t) ? null : (0, n.jsx)(a.ua7, {
     text: h.intl.string(h.t["JCFN//"]),
-    delay: O,
+    delay: j,
     children: e => {
       var i, o;
       return (0, n.jsx)(a.hU, (i = function(e) {
@@ -52,32 +53,32 @@ let y = e => {
         return e
       }({}, e), o = o = {
         "aria-label": h.intl.string(h.t["JCFN//"]),
-        buttonRef: _,
-        variant: "primary",
+        buttonRef: x,
+        variant: r ? "primary" : "secondary",
         icon: a.OgN,
         size: "md",
         onClick: e => {
           e.stopPropagation(), c.default.track(f.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-            collectibles_shop_session_id: null == P ? void 0 : P.sessionId,
+            collectibles_shop_session_id: null == w ? void 0 : w.sessionId,
             sku_id: t.skuId,
-            page_section: null == P ? void 0 : P.pageSection,
-            page_category: null == P ? void 0 : P.pageCategory,
+            page_section: null == w ? void 0 : w.pageSection,
+            page_category: null == w ? void 0 : w.pageCategory,
             tile_type: l.Z[t.type],
-            tile_position: String(null == P ? void 0 : P.tilePosition),
+            tile_position: String(null == w ? void 0 : w.tilePosition),
             cta_name: "gift button",
-            page_type: w || "home"
+            page_type: C || "home"
           }), (0, s.Z)({
             skuId: (0, b.S)({
               product: t,
-              selectedVariantIndex: r
+              selectedVariantIndex: y
             }),
             isGift: !0,
             giftingOrigin: m.Wt.SHOP_PAGE,
-            analyticsLocations: j,
-            returnRef: y,
-            variantsReturnStyle: x,
-            onClose: null != g ? e => {
-              e && g()
+            analyticsLocations: _,
+            returnRef: g,
+            variantsReturnStyle: P,
+            onClose: null != O ? e => {
+              e && O()
             } : void 0
           })
         }

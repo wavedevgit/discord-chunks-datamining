@@ -359,6 +359,7 @@ let eN = e => {
             text: a,
             fullWidth: !0
           }), n && (0, r.jsx)(el.Z, {
+            primary: t,
             product: S,
             onSuccess: m
           })]

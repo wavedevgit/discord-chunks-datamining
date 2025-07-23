@@ -9,8 +9,8 @@ n.d(t, {
   h7: () => m,
   j8: () => g,
   oO: () => C,
-  qt: () => T,
-  u$: () => S,
+  qt: () => S,
+  u$: () => T,
   yC: () => h,
   zH: () => E
 });
@@ -166,14 +166,14 @@ function g(e, t) {
   })
 }
 
-function T(e) {
+function S(e) {
   i.Z.wait(() => i.Z.dispatch({
     type: "SEARCH_EDITOR_STATE_CLEAR",
     searchId: e
   }))
 }
 
-function S(e, t, n) {
+function T(e, t, n) {
   null != e && i.Z.dispatch({
     type: "SEARCH_AUTOCOMPLETE_QUERY_UPDATE",
     searchId: e,
