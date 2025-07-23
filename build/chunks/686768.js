@@ -24,7 +24,7 @@ let L = function(t) {
   } = t, {
     loading: T,
     initiateAgeVerification: S
-  } = (0, E.WD)(L), C = i.useMemo(() => (0, r.Z)(), []);
+  } = (0, E.WD)(L, !0), C = i.useMemo(() => (0, r.Z)(), []);
   i.useEffect(() => {
     (0, d.lA)(C, d.d_.RETRY, n)
   }, [C, n]);

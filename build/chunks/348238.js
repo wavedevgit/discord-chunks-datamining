@@ -3,7 +3,7 @@ n.d(t, {
   $3: () => V,
   Go: () => B,
   JC: () => w,
-  NU: () => L,
+  NU: () => k,
   Nk: () => A,
   R9: () => R,
   RN: () => U,
@@ -12,7 +12,7 @@ n.d(t, {
   Xn: () => z,
   bb: () => H,
   qo: () => D,
-  rY: () => k,
+  rY: () => L,
   sR: () => F,
   tn: () => G,
   wq: () => M
@@ -29,13 +29,13 @@ var r = n(255367),
   p = n(235894),
   m = n(675478),
   f = n(592125),
-  g = n(323873),
-  h = n(375954),
+  h = n(323873),
+  g = n(375954),
   _ = n(594174),
   b = n(585483),
   E = n(5967),
-  x = n(630388),
-  y = n(358085),
+  y = n(630388),
+  x = n(358085),
   v = n(51144),
   C = n(91047),
   O = n(50284),
@@ -96,11 +96,11 @@ function R(e, t) {
   return Z(S("avatarProfile", e, t))
 }
 
-function k(e, t) {
+function L(e, t) {
   return Z(S("referencedAvatarProfile", e, t))
 }
 
-function L(e, t) {
+function k(e, t) {
   return Z(S("interactionAvatarProfile", e, t))
 }
 
@@ -110,18 +110,18 @@ function D(e, t, a, o) {
   } = t, {
     id: u,
     flags: d
-  } = e, p = (0, x.yE)(d, I.iLy.EPHEMERAL), m = (0, s.bp)();
+  } = e, p = (0, y.yE)(d, I.iLy.EPHEMERAL), m = (0, s.bp)();
   return i.useCallback((e, t) => {
     if (p) return;
-    if (!y.isPlatformEmbedded) {
+    if (!x.isPlatformEmbedded) {
       let t = e.target;
       if ("A" === t.tagName && "" !== t.textContent || null == window.getSelection) return;
       let n = window.getSelection();
       if (null != n && !n.isCollapsed && (n.focusNode === e.target || t.contains(n.focusNode))) return
     }
     let i = f.Z.getChannel(c),
-      s = h.Z.getMessage(c, u),
-      d = g.Z.isEditing(c, u);
+      s = g.Z.getMessage(c, u),
+      d = h.Z.isEditing(c, u);
     null == i || null == s || d || (a({
       contextMenu: !0
     }), (0, l.jW)(e, async () => {
@@ -224,7 +224,7 @@ function G(e) {
     location: "useHoveredMessage"
   }, {
     autoTrackExposure: !1
-  }), f = l.author.id, g = "".concat(r, ":").concat(f), h = i.useRef(a), _ = (t = l, n = o, i.useCallback(e => {
+  }), f = l.author.id, h = "".concat(r, ":").concat(f), g = i.useRef(a), _ = (t = l, n = o, i.useCallback(e => {
     if (null == e || !(e.nativeEvent instanceof MouseEvent) || Object.values(n).some(e => e)) return;
     let r = e.target;
     if ((0, p.Uw)(t)) {
@@ -241,18 +241,18 @@ function G(e) {
         h: l
       }, !1, u.LL.UserTriggered)
     }
-  }, [t, n])), [E, x] = i.useState(a);
-  h.current = E || h.current;
-  let y = i.useCallback(e => {
-      s && (0, m.T6)(), E || (b.S.dispatchKeyed(I.LPv.ANIMATE_CHAT_AVATAR, g, !0), _(e), x(!0))
-    }, [E, g, s, _]),
+  }, [t, n])), [E, y] = i.useState(a);
+  g.current = E || g.current;
+  let x = i.useCallback(e => {
+      s && (0, m.T6)(), E || (b.S.dispatchKeyed(I.LPv.ANIMATE_CHAT_AVATAR, h, !0), _(e), y(!0))
+    }, [E, h, s, _]),
     v = i.useCallback(() => {
-      b.S.dispatchKeyed(I.LPv.ANIMATE_CHAT_AVATAR, g, !1), x(!1)
-    }, [g]);
+      b.S.dispatchKeyed(I.LPv.ANIMATE_CHAT_AVATAR, h, !1), y(!1)
+    }, [h]);
   return {
-    hasHovered: h.current,
+    hasHovered: g.current,
     isHovered: E,
-    handleMouseEnter: y,
+    handleMouseEnter: x,
     handleMouseLeave: v
   }
 }

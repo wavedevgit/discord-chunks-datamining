@@ -1,6 +1,6 @@
 /**
   Module ID: 96127
-  Original File Name: 2b8ac5ef419e579b
+  Original File Name: 0fe001b5377b5366
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -2704,7 +2704,7 @@ div:has(>.repositionLayerSidebarPopout_fc71d3) {
     min-height: 0;
     min-width: 320px;
     overflow: hidden;
-    width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) + 38px)
+    width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) + 10px)
 }
 
 .container_fc71d3.titleBarEntrypointVariant_fc71d3 {
@@ -8470,4 +8470,4 @@ div:has(>.positionLayer__4f4b6) {
     width: 96px
 }
 
-/*# sourceMappingURL=2b8ac5ef419e579b.css.map*/
+/*# sourceMappingURL=0fe001b5377b5366.css.map*/

@@ -4,7 +4,7 @@ n.d(t, {
   $w: () => D,
   Og: () => U,
   ZY: () => M,
-  sc: () => k,
+  sc: () => L,
   zs: () => F
 }), n(314940), n(953529);
 var r = n(255367),
@@ -19,13 +19,13 @@ var r = n(255367),
   p = n(124347),
   m = n(695346),
   f = n(186523),
-  g = n(553826),
-  h = n(506071),
+  h = n(553826),
+  g = n(506071),
   _ = n(203143),
   b = n(79390),
   E = n(839963),
-  x = n(294608),
-  y = n(65145),
+  y = n(294608),
+  x = n(65145),
   v = n(981631),
   C = n(388032),
   O = n(56228);
@@ -128,7 +128,7 @@ function P(e) {
     children: o
   } = e, {
     pollAnswerRef: c
-  } = (0, y.dv)();
+  } = (0, x.dv)();
   return (0, r.jsx)(s.P3F, {
     role: "checkbox",
     className: a()(t, O.enabled),
@@ -149,7 +149,7 @@ function A(e) {
     isFirstAnswer: c
   } = e, {
     pollAnswerRef: u
-  } = (0, y.dv)();
+  } = (0, x.dv)();
   return (0, r.jsx)(s.P3F, {
     role: "radio",
     className: a()(t, O.enabled),
@@ -222,7 +222,7 @@ function Z(e) {
   } = e, {
     channelId: u,
     messageId: d
-  } = (0, x.pE)(), p = (0, x.$B)(n.style), m = !0 === n.isSelected, f = i.useCallback(() => {
+  } = (0, y.pE)(), p = (0, y.$B)(n.style), m = !0 === n.isSelected, f = i.useCallback(() => {
     _.Z.handlePollAnswerTapped({
       channelId: u,
       messageId: d,
@@ -261,7 +261,7 @@ function R(e) {
   let {
     attachment: n,
     className: i
-  } = e, l = (0, h.n)(), a = m.QK.useSetting();
+  } = e, l = (0, g.n)(), a = m.QK.useSetting();
   return (0, r.jsx)(p.ZP, {
     className: i,
     imageClassName: O.attachmentImage,
@@ -276,7 +276,7 @@ function R(e) {
   })
 }
 
-function k(e) {
+function L(e) {
   let {
     className: t,
     emoji: n
@@ -289,7 +289,7 @@ function k(e) {
   })
 }
 
-function L(e, t) {
+function k(e, t) {
   return null != e ? (0, r.jsx)("div", {
     className: e,
     children: t
@@ -305,18 +305,18 @@ function D(e) {
     fallback: a
   } = e, {
     message: o
-  } = (0, x.GF)();
+  } = (0, y.GF)();
   if (null != t.attachmentIds && t.attachmentIds.length > 0) {
     let e = o.attachments.find(e => {
       var n;
       return e.id === (null == (n = t.attachmentIds) ? void 0 : n[0])
     });
-    if (null != e) return L(n, (0, r.jsx)(R, {
+    if (null != e) return k(n, (0, r.jsx)(R, {
       className: i,
       attachment: e
     }))
   }
-  return null != t.emoji ? L(n, (0, r.jsx)(k, {
+  return null != t.emoji ? k(n, (0, r.jsx)(L, {
     className: l,
     emoji: t.emoji
   })) : void 0 !== a ? a : null
@@ -372,7 +372,7 @@ function U(e) {
     background: O.radioBackground,
     "aria-hidden": !0
   };
-  return t ? (0, r.jsx)(g.Z, I(j({}, l), {
+  return t ? (0, r.jsx)(h.Z, I(j({}, l), {
     foreground: O.radioForeground,
     className: i
   })) : (0, r.jsx)(f.Z, I(j({}, l), {

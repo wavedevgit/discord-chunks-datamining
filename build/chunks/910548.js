@@ -13,13 +13,13 @@ var r, i = n(255367),
   p = n(481060),
   m = n(230711),
   f = n(745510),
-  g = n(549006),
-  h = n(64078),
+  h = n(549006),
+  g = n(64078),
   _ = n(29270),
   b = n(267642),
   E = n(739566),
-  x = n(834129),
-  y = n(981631),
+  y = n(834129),
+  x = n(981631),
   v = n(388032),
   C = n(573510);
 
@@ -141,8 +141,8 @@ let T = ["TOP_LEFT", "TOP_RIGHT"],
   w = "falling-leaf",
   Z = ["#61D5B2"],
   R = n(303893),
-  k = n(313226),
-  L = [R, k];
+  L = n(313226),
+  k = [R, L];
 
 function D() {
   return n.e("77843").then(n.t.bind(n, 931152, 19)).then(e => {
@@ -159,7 +159,7 @@ function M(e) {
     onClick: n,
     position: r,
     size: a
-  } = e, u = l.useRef(null), [d, m] = l.useState(null), [g] = l.useState(null != r ? r : function() {
+  } = e, u = l.useRef(null), [d, m] = l.useState(null), [h] = l.useState(null != r ? r : function() {
     switch (Math.floor(Math.random() * Object.keys(S).length)) {
       case 0:
         return "TOP_LEFT";
@@ -171,9 +171,9 @@ function M(e) {
         return "BOTTOM_RIGHT"
     }
   }()), {
-    createMultipleConfettiAt: h,
+    createMultipleConfettiAt: g,
     confettiCanvas: _
-  } = l.useContext(f.h), [b, E] = l.useState(null), x = (0, s.uR)(_, b), y = function(e, t) {
+  } = l.useContext(f.h), [b, E] = l.useState(null), y = (0, s.uR)(_, b), x = function(e, t) {
     if (null == e) return "enter";
     switch (e) {
       case "enter":
@@ -188,7 +188,7 @@ function M(e) {
       case "exit":
         return "enter"
     }
-  }(d, g), v = T.includes(g), O = v && "exit" === d, j = l.useCallback(e => {
+  }(d, h), v = T.includes(h), O = v && "exit" === d, j = l.useCallback(e => {
     m(e)
   }, []), P = l.useCallback(() => {
     "exit" === d && (null == t || t())
@@ -199,7 +199,7 @@ function M(e) {
     if ("confetti" === d) {
       let {
         confettiVelocityDirection: e
-      } = A[g], t = function(e, t) {
+      } = A[h], t = function(e, t) {
         let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : N,
           r = null == e ? void 0 : e.getBoundingClientRect();
         if (null == r) return {
@@ -211,8 +211,8 @@ function M(e) {
           x: r.left + i.x,
           y: r.top + i.y
         }
-      }(u.current, g, a);
-      h(t.x, t.y, {
+      }(u.current, h, a);
+      g(t.x, t.y, {
         velocity: {
           type: "static-random",
           minValue: {
@@ -226,10 +226,10 @@ function M(e) {
         }
       })
     }
-  }, [h, g, d, a]), l.useEffect(() => {
+  }, [g, h, d, a]), l.useEffect(() => {
     if (v && "leaf_fall" === d) {
-      let e = A[g].leafRotationDirection;
-      x.createConfetti({
+      let e = A[h].leafRotationDirection;
+      y.createConfetti({
         id: "".concat(w, "-").concat((0, c.Z)()),
         position: {
           type: "static",
@@ -244,7 +244,7 @@ function M(e) {
               x: n.left + r.leafPosition.x,
               y: n.top + r.leafPosition.y
             }
-          }(u.current, g)
+          }(u.current, h)
         },
         size: {
           type: "static",
@@ -274,30 +274,30 @@ function M(e) {
           }
         }
       }, {
-        sprite: "TOP_LEFT" === g ? R : k
+        sprite: "TOP_LEFT" === h ? R : L
       })
     }
-  }, [v, x, g, d]), (0, i.jsxs)(i.Fragment, {
+  }, [v, y, h, d]), (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(s.Ji, {
       ref: E,
-      sprites: L,
+      sprites: k,
       colors: Z,
       spriteWidth: 45,
       spriteHeight: 45
     }), (0, i.jsx)(p.P3F, {
       onClick: n,
       className: o()(C.easterEggAnimationClickTarget, {
-        [C.easterEggAnimationClickTargetTopLeft]: "TOP_LEFT" === g,
-        [C.easterEggAnimationClickTargetTopRight]: "TOP_RIGHT" === g,
-        [C.easterEggAnimationClickTargetBottomLeft]: "BOTTOM_LEFT" === g,
-        [C.easterEggAnimationClickTargetBottomRight]: "BOTTOM_RIGHT" === g
+        [C.easterEggAnimationClickTargetTopLeft]: "TOP_LEFT" === h,
+        [C.easterEggAnimationClickTargetTopRight]: "TOP_RIGHT" === h,
+        [C.easterEggAnimationClickTargetBottomLeft]: "BOTTOM_LEFT" === h,
+        [C.easterEggAnimationClickTargetBottomRight]: "BOTTOM_RIGHT" === h
       }),
       children: (0, i.jsx)(p.kci, {
         animationRef: M,
         className: o()(C.easterEggAnimation, {
           [C.easterEggAnimationHideLeaf]: O
         }),
-        nextScene: y,
+        nextScene: x,
         sceneSegments: I,
         onScenePlay: j,
         onSceneComplete: P,
@@ -318,12 +318,12 @@ function U(e) {
     } = e,
     c = function(e) {
       switch (e.type) {
-        case y.uaV.GUILD_BOOST_TIER_1:
-          return y.Eu4.TIER_1;
-        case y.uaV.GUILD_BOOST_TIER_2:
-          return y.Eu4.TIER_2;
-        case y.uaV.GUILD_BOOST_TIER_3:
-          return y.Eu4.TIER_3
+        case x.uaV.GUILD_BOOST_TIER_1:
+          return x.Eu4.TIER_1;
+        case x.uaV.GUILD_BOOST_TIER_2:
+          return x.Eu4.TIER_2;
+        case x.uaV.GUILD_BOOST_TIER_3:
+          return x.Eu4.TIER_3
       }
       return null
     }(n),
@@ -371,15 +371,15 @@ function U(e) {
     R = l.useCallback(() => {
       I(!1)
     }, []),
-    k = l.useCallback(() => {
-      (0, h.AI)({
+    L = l.useCallback(() => {
+      (0, g.AI)({
         settingsVisible: !0
-      }), m.Z.open(y.oAB.POGGERMODE), I(!1)
+      }), m.Z.open(x.oAB.POGGERMODE), I(!1)
     }, []),
-    L = l.useCallback((e, t) => {
-      (null == t ? void 0 : t.id.startsWith(w)) && k()
-    }, [k]);
-  l.useEffect(() => O(L));
+    k = l.useCallback((e, t) => {
+      (null == t ? void 0 : t.id.startsWith(w)) && L()
+    }, [L]);
+  l.useEffect(() => O(k));
   let D = (0, i.jsx)(p.P3F, {
     className: C.iconWrapper,
     innerRef: S,
@@ -390,7 +390,7 @@ function U(e) {
       onMouseEnter: Z
     })
   });
-  return (0, i.jsxs)(x.Z, {
+  return (0, i.jsxs)(y.Z, {
     iconNode: D,
     timestamp: n.timestamp,
     compact: r,
@@ -398,12 +398,12 @@ function U(e) {
       onClick: s,
       className: C.message,
       children: t
-    }), j ? (0, i.jsx)(g.ZP, {
+    }), j ? (0, i.jsx)(h.ZP, {
       children: (0, i.jsx)("div", {
         className: C.cannonWrapper,
         children: (0, i.jsx)(M, {
           onAnimationComplete: R,
-          onClick: k
+          onClick: L
         })
       })
     }) : null]

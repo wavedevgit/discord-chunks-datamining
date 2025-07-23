@@ -24,12 +24,12 @@ function f(e) {
     customInstallUrl: n.customInstallUrl,
     installParams: n.installParams,
     integrationTypesConfig: n.integrationTypesConfig
-  })) ? (0, r.jsx)(g, {
+  })) ? (0, r.jsx)(h, {
     application: n
   }) : null
 }
 
-function g(e) {
+function h(e) {
   let {
     application: t
   } = e, n = i.useCallback(() => {

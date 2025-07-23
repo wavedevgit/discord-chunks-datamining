@@ -1,6 +1,6 @@
 /** Chunk was on 23045 **/
 n.d(t, {
-  r: () => g
+  r: () => h
 });
 var r = n(933557),
   i = n(356264),
@@ -39,39 +39,39 @@ function f(e, t) {
     })
   }
 }
-class g {
+class h {
   getForwardInfo() {
     var e, t, n, u;
     let m = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : l.Z,
-      g = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : c.default,
-      h = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : s.Z,
+      h = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : c.default,
+      g = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : s.Z,
       _ = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : o.Z,
       b = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : a.Z,
       E = arguments.length > 5 && void 0 !== arguments[5] ? arguments[5] : i.Z,
       {
-        snapshotIndex: x,
-        parentMessage: y,
+        snapshotIndex: y,
+        parentMessage: x,
         messageSnapshot: v
       } = this,
       C = (0, d.Xf)(v.message.timestamp),
       O = m.getChannel(this.parentMessage.channel_id);
-    if (null != O && O.guild_id === (null == (e = y.messageReference) ? void 0 : e.guild_id)) {
-      let e = m.getChannel(null == (n = y.messageReference) ? void 0 : n.channel_id);
+    if (null != O && O.guild_id === (null == (e = x.messageReference) ? void 0 : e.guild_id)) {
+      let e = m.getChannel(null == (n = x.messageReference) ? void 0 : n.channel_id);
       if (null == e) {
         let e = b.getGuild(O.guild_id);
         return null == e ? {
-          snapshotIndex: x
+          snapshotIndex: y
         } : {
-          snapshotIndex: x,
+          snapshotIndex: y,
           footerInfo: f(e, C)
         }
       }
       if (!_.can(e.accessPermissions, e)) return {
-        snapshotIndex: x
+        snapshotIndex: y
       };
-      let t = (0, r.F6)(e, g, h, !0);
+      let t = (0, r.F6)(e, h, g, !0);
       return {
-        snapshotIndex: x,
+        snapshotIndex: y,
         footerInfo: {
           originLabel: t,
           timestampLabel: C,
@@ -82,15 +82,15 @@ class g {
         }
       }
     }
-    let j = null == (t = y.messageReference) ? void 0 : t.guild_id;
+    let j = null == (t = x.messageReference) ? void 0 : t.guild_id;
     if (null == j) return {
-      snapshotIndex: x
+      snapshotIndex: y
     };
     let I = null != (u = b.getGuild(j)) ? u : E.getGuild(j);
     return null == I ? {
-      snapshotIndex: x
+      snapshotIndex: y
     } : {
-      snapshotIndex: x,
+      snapshotIndex: y,
       footerInfo: f(I, C)
     }
   }

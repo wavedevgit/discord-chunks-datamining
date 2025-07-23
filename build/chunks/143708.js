@@ -1,6 +1,6 @@
 /** Chunk was on 23045 **/
 n.d(t, {
-  Z: () => h
+  Z: () => g
 });
 var r = n(255367);
 n(73800);
@@ -15,17 +15,17 @@ var i = n(442837),
   p = n(51144),
   m = n(981631),
   f = n(388032),
-  g = n(273254);
+  h = n(273254);
 
-function h(e) {
-  let t, n, h, {
+function g(e) {
+  let t, n, g, {
       author: _,
       banned: b,
       channelId: E
     } = e,
-    x = (0, i.e7)([s.default], () => s.default.getId()),
-    y = p.ZP.useName(_),
-    v = x === _.id,
+    y = (0, i.e7)([s.default], () => s.default.getId()),
+    x = p.ZP.useName(_),
+    v = y === _.id,
     C = (0, i.e7)([c.Z, u.Z], () => {
       let e = c.Z.getChannel(E);
       if (null == e) return !1;
@@ -37,8 +37,8 @@ function h(e) {
       }
       return u.Z.can(m.Plq.SEND_MESSAGES, e)
     });
-  return v ? (t = f.intl.string(f.t["F/OLvL"]), h = f.intl.string(f.t.C89OLC)) : (h = f.intl.string(f.t["YVub5+"]), b ? t = f.intl.string(f.t["57nBt7"]) : null != y && C ? (t = f.intl.formatToPlainString(f.t["9Akp1t"], {
-    username: y
+  return v ? (t = f.intl.string(f.t["F/OLvL"]), g = f.intl.string(f.t.C89OLC)) : (g = f.intl.string(f.t["YVub5+"]), b ? t = f.intl.string(f.t["57nBt7"]) : null != x && C ? (t = f.intl.formatToPlainString(f.t["9Akp1t"], {
+    username: x
   }), n = (0, r.jsx)(a.Z.Button, {
     onClick: function() {
       let {
@@ -54,10 +54,10 @@ function h(e) {
     children: f.intl.string(f.t.P8tvKC)
   })) : t = f.intl.string(f.t["SMJr+f"])), (0, r.jsxs)(a.Z, {
     children: [(0, r.jsx)(a.Z.Header, {
-      text: h
+      text: g
     }), (0, r.jsxs)(a.Z.Body, {
       children: [(0, r.jsxs)("div", {
-        className: g.headerLine,
+        className: h.headerLine,
         children: [(0, r.jsx)(a.Z.Icon, {
           expired: !0
         }), (0, r.jsx)(a.Z.Info, {

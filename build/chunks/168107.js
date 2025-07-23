@@ -96,6 +96,7 @@ let h = {
         entryPoint: e
       }))
     }, {
+      modalKey: s.ux,
       backdropStyle: p(e)
     });
     (0, i.ZDy)(async () => {
@@ -106,6 +107,7 @@ let h = {
         entryPoint: e
       }))
     }, {
+      modalKey: s.ux,
       backdropStyle: p(e)
     })
   },

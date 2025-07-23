@@ -23,7 +23,7 @@ let m = {
     [i.u.REPORT_TO_MOD_CLOSED_REPORT]: () => d.default.UE81zc
   };
 
-function g(e) {
+function h(e) {
   let {
     type: t
   } = e, n = null;
@@ -49,7 +49,7 @@ function g(e) {
   }) : null
 }
 
-function h(e) {
+function g(e) {
   var t;
   let {
     message: n,
@@ -58,28 +58,28 @@ function h(e) {
   } = e, {
     author: d,
     mentions: f,
-    type: h
-  } = n, _ = (0, o.ZP)(n), b = n.getChannelId(), E = (0, l.e7)([u.default], () => u.default.getUser(f[0]), [f]), x = (0, o.JZ)(d, i), y = (0, s.l)({
+    type: g
+  } = n, _ = (0, o.ZP)(n), b = n.getChannelId(), E = (0, l.e7)([u.default], () => u.default.getUser(f[0]), [f]), y = (0, o.JZ)(d, i), x = (0, s.l)({
     user: d,
     channelId: b,
     guildId: i.guild_id,
     messageId: n.id
-  })(x), v = (0, o.Sw)(E, i), C = (0, s.l)({
+  })(y), v = (0, o.Sw)(E, i), C = (0, s.l)({
     user: E,
     channelId: b,
     guildId: i.guild_id,
     messageId: n.id
-  })(v), O = null != (t = m[h]) ? t : null;
+  })(v), O = null != (t = m[g]) ? t : null;
   if (null == O) return null;
   let j = p.intl.format(O(), {
     actorName: _.nick,
-    actorHook: y,
+    actorHook: x,
     targetName: null == v ? void 0 : v.nick,
     targetHook: C
   });
   return (0, r.jsx)(c.Z, {
-    iconNode: (0, r.jsx)(g, {
-      type: h
+    iconNode: (0, r.jsx)(h, {
+      type: g
     }),
     timestamp: n.timestamp,
     compact: a,
@@ -96,19 +96,19 @@ function _(e) {
   } = e, {
     author: a,
     type: u
-  } = n, d = (0, o.ZP)(n), m = n.getChannelId(), h = (0, o.JZ)(a, i), _ = (0, s.l)({
+  } = n, d = (0, o.ZP)(n), m = n.getChannelId(), g = (0, o.JZ)(a, i), _ = (0, s.l)({
     user: a,
     channelId: m,
     guildId: i.guild_id,
     messageId: n.id
-  })(h), b = null != (t = f[u]) ? t : null;
+  })(g), b = null != (t = f[u]) ? t : null;
   if (null == b) return null;
   let E = p.intl.format(b(), {
     actorName: d.nick,
     actorHook: _
   });
   return (0, r.jsx)(c.Z, {
-    iconNode: (0, r.jsx)(g, {
+    iconNode: (0, r.jsx)(h, {
       type: u
     }),
     timestamp: n.timestamp,
@@ -125,7 +125,7 @@ function b(e) {
   } = e, {
     type: a
   } = t;
-  return a === i.u.REPORT_TO_MOD_BAN_USER || a === i.u.REPORT_TO_MOD_KICK_USER || a === i.u.REPORT_TO_MOD_TIMEOUT_USER ? (0, r.jsx)(h, {
+  return a === i.u.REPORT_TO_MOD_BAN_USER || a === i.u.REPORT_TO_MOD_KICK_USER || a === i.u.REPORT_TO_MOD_TIMEOUT_USER ? (0, r.jsx)(g, {
     message: t,
     channel: n,
     compact: l

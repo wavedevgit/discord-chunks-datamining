@@ -19,22 +19,22 @@ let u = e => {
     onTransitionToInviteChannel: m,
     onAcceptInstantInvite: f
   } = e, {
-    analyticsLocations: g
-  } = (0, o.ZP)(a.Z.INVITE_EMBED), h = i.useCallback(() => {
+    analyticsLocations: h
+  } = (0, o.ZP)(a.Z.INVITE_EMBED), g = i.useCallback(() => {
     let e = "noop";
     p ? (m(), e = "transition") : (f(), e = "accept"), (0, l.r$)({
       invite: t,
       action: e,
       inviter_id: d.author.id,
       invite_message_id: d.id
-    }, g)
-  }, [t, d, g, p, m, f]);
+    }, h)
+  }, [t, d, h, p, m, f]);
   return (0, r.jsx)(c.Z, {
     children: (0, r.jsx)(s.Z, {
       isEmbed: !0,
       stageInstance: n,
       guild: u,
-      onClick: h
+      onClick: g
     })
   })
 }

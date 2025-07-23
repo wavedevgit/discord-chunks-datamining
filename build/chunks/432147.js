@@ -1,6 +1,6 @@
 /** Chunk was on 23045 **/
 n.d(t, {
-  Z: () => x
+  Z: () => y
 });
 var r = n(255367);
 n(73800);
@@ -15,25 +15,25 @@ var i = n(120356),
   p = n(723774),
   m = n(144140),
   f = n(91159),
-  g = n(576799),
-  h = n(488131),
+  h = n(576799),
+  g = n(488131),
   _ = n(981631),
   b = n(388032),
   E = n(955344);
 
-function x(e) {
+function y(e) {
   let {
     message: t,
     compact: n
   } = e, i = (0, a.e7)([u.Z], () => u.Z.getChannel(d.default.castMessageIdAsChannelId(t.id)));
-  return null == i ? null : (0, r.jsx)(y, {
+  return null == i ? null : (0, r.jsx)(x, {
     channel: i,
     compact: n,
     isSystemMessage: (0, c.Z)(t)
   })
 }
 
-function y(e) {
+function x(e) {
   let {
     channel: t,
     compact: i,
@@ -51,7 +51,7 @@ function y(e) {
         children: (0, f.Ye)(l)
       })]
     }) : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(g.Z, {
+      children: [(0, r.jsx)(h.Z, {
         message: n,
         channel: e
       }), (0, r.jsx)("span", {
@@ -59,7 +59,7 @@ function y(e) {
         children: (0, f.Ye)(l)
       })]
     })
-  }(t), x = null != u && u > 0;
+  }(t), y = null != u && u > 0;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: l()(E.spine, {
@@ -68,13 +68,13 @@ function y(e) {
       })
     }), (0, r.jsx)(o.P3F, {
       onClick: function(e) {
-        e.stopPropagation(), (0, h.ok)(t, e.shiftKey)
+        e.stopPropagation(), (0, g.ok)(t, e.shiftKey)
       },
       onKeyDown: function(e) {
         e.stopPropagation();
         let n = !e.altKey && !e.ctrlKey && !e.metaKey && !e.shiftKey,
           r = e.shiftKey && !(e.altKey || e.ctrlKey || e.metaKey);
-        (e.which === _.yXg.SPACE || e.which === _.yXg.ENTER) && (e.preventDefault(), (n || r) && (0, h.ok)(t, r))
+        (e.which === _.yXg.SPACE || e.which === _.yXg.ENTER) && (e.preventDefault(), (n || r) && (0, g.ok)(t, r))
       },
       onContextMenu: function(e) {
         (0, s.jW)(e, async () => {
@@ -117,7 +117,7 @@ function y(e) {
             children: t.name
           }), (0, r.jsx)("span", {
             className: E.cta,
-            "aria-hidden": !x,
+            "aria-hidden": !y,
             children: (0, p.WE)(u, t.id)
           })]
         }), (0, r.jsx)(o.Text, {

@@ -38,7 +38,7 @@ function m(e) {
       })]
     })]
   });
-  let g = __OVERLAY__ ? (0, r.jsx)(a.Z.Button, {
+  let h = __OVERLAY__ ? (0, r.jsx)(a.Z.Button, {
     isDisabled: !0,
     color: a.Z.Button.Colors.PRIMARY,
     children: u.intl.string(u.t.W7NTWl)
@@ -100,7 +100,7 @@ function m(e) {
             usageCount: String(null != (t = f.usageCount) ? t : 0)
           })
         })]
-      }), g]
+      }), h]
     })]
   })
 }

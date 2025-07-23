@@ -1,7 +1,7 @@
 /** Chunk was on 23045 **/
 n.d(t, {
   Z: () => _,
-  y: () => h
+  y: () => g
 }), n(953529);
 var r = n(255367),
   i = n(73800),
@@ -15,7 +15,7 @@ var r = n(255367),
   p = n(411198),
   m = n(388032),
   f = n(515230);
-let g = e => {
+let h = e => {
     var t;
     let {
       speaker: n,
@@ -37,7 +37,7 @@ let g = e => {
       })]
     })
   },
-  h = e => {
+  g = e => {
     let {
       guild: t,
       onlineCount: n
@@ -96,16 +96,16 @@ let g = e => {
       stageInstance: n,
       guild: l,
       isCard: d = !1,
-      isEmbed: h = !1,
+      isEmbed: g = !1,
       onClick: _
     } = e, b = i.useMemo(() => null == l ? null : p.lM(l) ? l : p.Qs(l), [l]);
     if (null == n || null == b) return null;
     let {
       topic: E,
-      speaker_count: x,
-      participant_count: y
-    } = n, v = null != (t = n.members) ? t : [], C = h ? v.slice(0, 3) : v, O = x - C.length;
-    return h && (O += v.length - C.length), (0, r.jsxs)("div", {
+      speaker_count: y,
+      participant_count: x
+    } = n, v = null != (t = n.members) ? t : [], C = g ? v.slice(0, 3) : v, O = y - C.length;
+    return g && (O += v.length - C.length), (0, r.jsxs)("div", {
       children: [(0, r.jsxs)("div", {
         className: f.flex,
         children: [(0, r.jsxs)("div", {
@@ -132,12 +132,12 @@ let g = e => {
           }), (0, r.jsx)(s.X6q, {
             className: a()(f.__invalid_label, f.listeners),
             variant: "heading-sm/semibold",
-            children: y
+            children: x
           })]
         })]
-      }), h && (0, r.jsxs)("div", {
+      }), g && (0, r.jsxs)("div", {
         className: a()(f.guild, {
-          [f.embed]: h
+          [f.embed]: g
         }),
         children: [(0, r.jsx)(c.ZP, {
           mask: c.ZP.Masks.SQUIRCLE,
@@ -155,42 +155,42 @@ let g = e => {
           children: b.name
         })]
       }), (0, r.jsx)(s.X6q, {
-        variant: d || h ? "heading-md/semibold" : "heading-lg/semibold",
+        variant: d || g ? "heading-md/semibold" : "heading-lg/semibold",
         className: a()(f.header, {
-          [f.embed]: h
+          [f.embed]: g
         }),
         children: E
       }), (0, r.jsxs)("div", {
         className: a()(f.members, {
-          [f.embed]: h
+          [f.embed]: g
         }),
         children: [C.length > 0 && (0, r.jsxs)("div", {
           className: f.speakers,
-          children: [C.map(e => (0, r.jsx)(g, {
+          children: [C.map(e => (0, r.jsx)(h, {
             speaker: e,
             guildId: b.id,
-            isEmbed: h
+            isEmbed: g
           }, e.user.id)), O > 0 ? (0, r.jsxs)("div", {
             className: f.speaker,
             children: [(0, r.jsx)("div", {
               className: a()(f.icon, {
-                [f.embed]: h
+                [f.embed]: g
               }),
               children: (0, r.jsx)(s.S6n, {
                 size: "custom",
                 color: "currentColor",
-                height: h ? 12 : 14,
+                height: g ? 12 : 14,
                 className: f.listeners
               })
             }), (0, r.jsxs)(s.Text, {
-              variant: h ? "text-xs/normal" : "text-sm/normal",
+              variant: g ? "text-xs/normal" : "text-sm/normal",
               color: "text-secondary",
               children: ["+", m.intl.format(m.t.L1pCBQ, {
                 count: O
               })]
             })]
           }) : null]
-        }), h && (0, r.jsx)(o.zx, {
+        }), g && (0, r.jsx)(o.zx, {
           color: o.zx.Colors.GREEN,
           onClick: _,
           className: f.joinButton,

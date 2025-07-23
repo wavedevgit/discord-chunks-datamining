@@ -19,19 +19,19 @@ function c(e) {
     onJoinStream: d,
     usernameHook: p,
     compact: m
-  } = e, f = (0, a.ZP)(n), g = null == (t = n.call) ? void 0 : t.duration, h = p(f), _ = s.intl.format(s.t.FKXvaG, {
+  } = e, f = (0, a.ZP)(n), h = null == (t = n.call) ? void 0 : t.duration, g = p(f), _ = s.intl.format(s.t.FKXvaG, {
     username: f.nick,
     activityName: null != u ? u.name : "unknown",
     onJoinStream: d,
-    usernameHook: h
+    usernameHook: g
   });
-  return null != g && (_ = s.intl.format(s.t.NEFxtb, {
+  return null != h && (_ = s.intl.format(s.t.NEFxtb, {
     username: f.nick,
-    duration: g.humanize(),
+    duration: h.humanize(),
     channelName: c.name,
-    usernameHook: h
+    usernameHook: g
   })), (0, r.jsx)(o.Z, {
-    iconNode: null != g ? (0, r.jsx)(i.g5r, {
+    iconNode: null != h ? (0, r.jsx)(i.g5r, {
       size: "custom",
       color: "currentColor",
       width: 20,

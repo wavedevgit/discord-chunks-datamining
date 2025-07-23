@@ -15,13 +15,13 @@ var i = n(120356),
   p = n(739566),
   m = n(779125),
   f = n(599706),
-  g = n(703656),
-  h = n(592125),
+  h = n(703656),
+  g = n(592125),
   _ = n(430824),
   b = n(594174),
   E = n(938475),
-  x = n(5192),
-  y = n(981631),
+  y = n(5192),
+  x = n(981631),
   v = n(388032),
   C = n(653072);
 
@@ -40,7 +40,7 @@ function O(e) {
       rawName: t
     } = e;
     return "channel_id" === t
-  })) ? void 0 : O.rawValue, k = (0, a.e7)([_.Z], () => _.Z.getGuild(Z)), L = (0, a.e7)([h.Z], () => h.Z.getChannel(R)), D = (0, a.e7)([b.default], () => b.default.getCurrentUser()), M = (0, a.e7)([], () => A.author.id === (null == D ? void 0 : D.id)), U = null == (S = w.recipients) ? void 0 : S.find(e => e !== A.author.id), F = (0, a.e7)([b.default], () => null != U ? b.default.getUser(U) : null), B = (0, p.ZP)(A), G = (0, x._T)(w.getGuildId(), w.id, F), H = (0, a.Wu)([E.ZP], () => null != L ? E.ZP.getVoiceStatesForChannel(L) : [], [L]), V = H.some(e => e.user.id === (null == D ? void 0 : D.id)), z = null == (P = A.embeds[0]) || null == (N = P.fields) || null == (T = N.find(e => {
+  })) ? void 0 : O.rawValue, L = (0, a.e7)([_.Z], () => _.Z.getGuild(Z)), k = (0, a.e7)([g.Z], () => g.Z.getChannel(R)), D = (0, a.e7)([b.default], () => b.default.getCurrentUser()), M = (0, a.e7)([], () => A.author.id === (null == D ? void 0 : D.id)), U = null == (S = w.recipients) ? void 0 : S.find(e => e !== A.author.id), F = (0, a.e7)([b.default], () => null != U ? b.default.getUser(U) : null), B = (0, p.ZP)(A), G = (0, y._T)(w.getGuildId(), w.id, F), H = (0, a.Wu)([E.ZP], () => null != k ? E.ZP.getVoiceStatesForChannel(k) : [], [k]), V = H.some(e => e.user.id === (null == D ? void 0 : D.id)), z = null == (P = A.embeds[0]) || null == (N = P.fields) || null == (T = N.find(e => {
     let {
       rawName: t
     } = e;
@@ -49,14 +49,14 @@ function O(e) {
     username: G
   }) : v.intl.formatToPlainString(v.t.noNjkZ, {
     username: B.nick
-  }), X = null != k && null != L, q = null;
+  }), X = null != L && null != k, q = null;
   q = X ? M || V ? v.intl.format(v.t.CaLQqK, {
     channelHook: (e, t) => (0, r.jsx)(m.Z, {
-      channel: null != L ? L : void 0
+      channel: null != k ? k : void 0
     }, t)
   }) : v.intl.format(v.t.VugXpK, {
     channelHook: (e, t) => (0, r.jsx)(m.Z, {
-      channel: null != L ? L : void 0
+      channel: null != k ? k : void 0
     }, t)
   }) : v.intl.string(v.t["tHT/Vl"]), 0 === H.length && (q = M ? v.intl.string(v.t.IE2uZW) : v.intl.string(v.t.QVhmGx));
   let Q = M ? v.intl.string(v.t["00XIbm"]) : v.intl.string(v.t["7CrE9/"]);
@@ -101,7 +101,7 @@ function O(e) {
       children: [(0, r.jsxs)(o.zx, {
         color: o.zx.Colors.BRAND,
         onClick: () => {
-          null != R && null != Z && ((0, g.uL)(y.Z5c.CHANNEL(Z, R)), u.default.selectVoiceChannel(R))
+          null != R && null != Z && ((0, h.uL)(x.Z5c.CHANNEL(Z, R)), u.default.selectVoiceChannel(R))
         },
         className: C.button,
         innerClassName: C.buttonInner,

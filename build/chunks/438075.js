@@ -23,8 +23,8 @@ function a(e) {
     renderThreadAccessory: p,
     renderSuppressEmbeds: m,
     renderReactions: f,
-    forceAddReactions: g,
-    disableComponentInteractivity: h,
+    forceAddReactions: h,
+    disableComponentInteractivity: g,
     className: _
   } = e;
   return u ? null : (0, r.jsx)(i.Z, {
@@ -39,9 +39,9 @@ function a(e) {
       isMessageSnapshot: d,
       onMediaItemContextMenu: s,
       renderThreadAccessory: p,
-      disableComponentInteractivity: h,
+      disableComponentInteractivity: g,
       renderSuppressEmbeds: m,
-      forceAddReactions: g,
+      forceAddReactions: h,
       renderReactions: f
     })
   })

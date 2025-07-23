@@ -16,7 +16,7 @@ function o(e, t, n) {
   }) : e[t] = n, e
 }
 var s = function(e) {
-  return e[e.MESSAGING = 0] = "MESSAGING", e[e.OVERLAYS = 1] = "OVERLAYS", e[e.PREMIUM = 2] = "PREMIUM", e[e.REPORTING = 3] = "REPORTING", e[e.APP_COLLECTIONS = 4] = "APP_COLLECTIONS", e[e.SHOP = 5] = "SHOP", e
+  return e[e.MESSAGING = 0] = "MESSAGING", e[e.OVERLAYS = 1] = "OVERLAYS", e[e.PREMIUM = 2] = "PREMIUM", e[e.REPORTING = 3] = "REPORTING", e[e.APP_COLLECTIONS = 4] = "APP_COLLECTIONS", e[e.SHOP = 5] = "SHOP", e[e.LIBDISCORE = 6] = "LIBDISCORE", e
 }({});
 let l = {
     visual_effect_view_overrides: {
@@ -70,11 +70,16 @@ let l = {
     bypass_google_sku_sync: {
       label: "Bypass Google SKU sync in collectibles shop",
       category: 5
+    },
+    libdiscore_verbose_telemetry_logging: {
+      label: "Enable verbose telemetry logging for libdiscore",
+      category: 6
     }
   },
   c = {};
 
 function u(e) {
+  if (!1 === e.value) return void delete c[e.toggle];
   c[e.toggle] = e.value
 }
 class d extends(r = i.ZP.DeviceSettingsStore) {
@@ -87,17 +92,14 @@ class d extends(r = i.ZP.DeviceSettingsStore) {
     for (var t in l) {
       var n, r;
       let i = null != (r = null == e || null == (n = e.toggleStates) ? void 0 : n[t]) && r;
-      c[t] = i
+      i && (c[t] = i)
     }
   }
   get(e) {
     var t;
     return null != (t = c[e]) && t
   }
-  set(e, t) {
-    return c[e] = t, t
-  }
-  all() {
+  enabled() {
     return c
   }
   allByCategory(e) {
@@ -105,8 +107,9 @@ class d extends(r = i.ZP.DeviceSettingsStore) {
       let [n, r] = t;
       return r.category === e
     }).map(e => {
-      let [t, n] = e;
-      return [t, c[t], n]
+      var t;
+      let [n, r] = e;
+      return [n, null != (t = c[n]) && t, r]
     })
   }
 }

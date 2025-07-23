@@ -14,13 +14,13 @@ var r = n(255367),
   p = n(230711),
   m = n(568836),
   f = n(730749),
-  g = n(112724),
-  h = n(607070),
+  h = n(112724),
+  g = n(607070),
   _ = n(884697),
   b = n(600164),
   E = n(479446),
-  x = n(930114),
-  y = n(981632),
+  y = n(930114),
+  x = n(981632),
   v = n(108989),
   C = n(703656),
   O = n(314897),
@@ -34,8 +34,8 @@ var r = n(255367),
   w = n(669079),
   Z = n(74538),
   R = n(296848),
-  k = n(51144),
-  L = n(626799),
+  L = n(51144),
+  k = n(626799),
   D = n(981631),
   M = n(474936),
   U = n(388032),
@@ -202,7 +202,7 @@ class W extends i.Component {
       sku: r
     } = this.props;
     return this.isCustomGiftMessage() && !n ? U.intl.formatToPlainString(U.t.t1SOIS, {
-      recipientDisplayName: k.ZP.getName(t)
+      recipientDisplayName: L.ZP.getName(t)
     }) : null == r ? null : e.isSubscription ? n ? U.intl.string(U.t["2PJ1ND"]) : U.intl.string(U.t.hrnGnp) : n ? U.intl.string(U.t.QLEMlZ) : U.intl.string(U.t.W4DBc3)
   }
   renderBody(e) {
@@ -236,11 +236,11 @@ class W extends i.Component {
     });
     if (e.isExistingPremiumSubscriptionDisallowed) return U.intl.string(U.t["UCIU9/"]);
     if (e.hasMultipleCopies) return null != i ? e.isSubscription ? U.intl.format(U.t.l3VxgI, {
-      username: k.ZP.getUserTag(i),
+      username: L.ZP.getUserTag(i),
       maxUses: e.maxUses,
       skuName: o
     }) : U.intl.format(U.t["9cYrw8"], {
-      username: k.ZP.getUserTag(i),
+      username: L.ZP.getUserTag(i),
       totalCopies: e.maxUses,
       skuName: o
     }) : e.isSubscription ? U.intl.formatToPlainString(U.t.svrO3d, {
@@ -255,7 +255,7 @@ class W extends i.Component {
       if (null != i) {
         let e = l.interval === M.rV.MONTH ? U.t["/RDIEB"] : U.t["3CX6Eh"];
         return U.intl.format(e, {
-          username: k.ZP.getUserTag(i),
+          username: L.ZP.getUserTag(i),
           skuName: o,
           intervalCount: l.intervalCount
         })
@@ -267,7 +267,7 @@ class W extends i.Component {
       })
     }
     return null != i ? U.intl.format(U.t["3HsdQ0"], {
-      username: k.ZP.getUserTag(i)
+      username: L.ZP.getUserTag(i)
     }) : U.intl.string(U.t.Jdnjjo)
   }
   renderPromotionActions() {
@@ -283,7 +283,7 @@ class W extends i.Component {
       giftCode: e,
       width: t
     } = this.props;
-    return null == e ? null : (0, r.jsx)(L.$, {
+    return null == e ? null : (0, r.jsx)(k.$, {
       skuId: e.skuId,
       onEmbedClick: this.handleEmbedClick,
       analyticsSection: D.jXE.GIFT_CODE_EMBED,
@@ -301,7 +301,7 @@ class W extends i.Component {
       width: n,
       isSelfGift: i
     } = this.props;
-    if (null != e && null != e.promotion) return (0, r.jsx)(L.$, {
+    if (null != e && null != e.promotion) return (0, r.jsx)(k.$, {
       skuId: e.skuId,
       onEmbedClick: this.handleClaimPromotion,
       analyticsSection: D.jXE.GIFT_CODE_EMBED,
@@ -350,7 +350,7 @@ class W extends i.Component {
         })
       });
       let a = i !== D.uaV.CUSTOM_GIFT ? void 0 : r;
-      (0, x.V)({
+      (0, y.V)({
         processedCode: n,
         channelContext: t,
         customGiftMessage: a,
@@ -390,7 +390,7 @@ class W extends i.Component {
           wind: 5
         }), i && (0, r.jsx)(P.Z, {
           className: F.headerIcon
-        }), null != e.giftStyle && (0, r.jsx)(y.Z, {
+        }), null != e.giftStyle && (0, r.jsx)(x.Z, {
           defaultAnimationState: e.redeemed ? E.SR.LOOP : E.SR.IDLE,
           giftStyle: e.giftStyle,
           className: o
@@ -399,13 +399,13 @@ class W extends i.Component {
     })
   }
 }
-let K = (0, g.Z)((0, f.Z)(W)),
-  Y = c.ZP.connectStores([j.Z, N.Z, S.default, I.Z, T.Z, O.default, h.Z], e => {
+let K = (0, h.Z)((0, f.Z)(W)),
+  Y = c.ZP.connectStores([j.Z, N.Z, S.default, I.Z, T.Z, O.default, g.Z], e => {
     let {
       code: t,
       author: n,
       currentUser: r
-    } = e, i = j.Z.get(t), l = null != i ? N.Z.get(i.skuId) : null, a = null != i && null != i.userId ? S.default.getUser(i.userId) : null, o = h.Z.useReducedMotion;
+    } = e, i = j.Z.get(t), l = null != i ? N.Z.get(i.skuId) : null, a = null != i && null != i.userId ? S.default.getUser(i.userId) : null, o = g.Z.useReducedMotion;
     return {
       sku: l,
       giftCode: i,

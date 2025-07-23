@@ -1,6 +1,6 @@
 /** Chunk was on 23045 **/
 n.d(t, {
-  W: () => x
+  W: () => y
 });
 var r = n(255367);
 n(73800);
@@ -15,8 +15,8 @@ var i = n(120356),
   p = n(266843),
   m = n(341907),
   f = n(46140),
-  g = n(981631),
-  h = n(388032),
+  h = n(981631),
+  g = n(388032),
   _ = n(355060),
   b = n(87181);
 
@@ -32,7 +32,7 @@ function E(e) {
       onClick: () => {
         (0, m.navigateToQuestHome)({
           fromContent: d.jn.EXCLUDED_QUEST_EMBED
-        }), c.default.track(g.rMx.QUEST_CONTENT_CLICKED, function(e) {
+        }), c.default.track(h.rMx.QUEST_CONTENT_CLICKED, function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -56,12 +56,12 @@ function E(e) {
           is_targeted: !1
         }, (0, u.mH)(d.jn.EXCLUDED_QUEST_EMBED)))
       },
-      children: h.intl.string(h.t.GURBQk)
+      children: g.intl.string(g.t.GURBQk)
     })
   })
 }
 
-function x(e) {
+function y(e) {
   let {
     questId: t
   } = e, {
@@ -81,12 +81,12 @@ function x(e) {
       children: [(0, r.jsx)(s.X6q, {
         variant: "lg" === i ? "heading-xl/bold" : "heading-lg/bold",
         color: "header-primary",
-        children: h.intl.string(h.t.vnP31d)
+        children: g.intl.string(g.t.vnP31d)
       }), (0, r.jsx)(s.Text, {
         variant: "lg" === i ? "text-sm/medium" : "text-xs/medium",
         color: "text-default",
         className: _.__invalid_mobileWebCopy,
-        children: h.intl.string(h.t.nuWSYW)
+        children: g.intl.string(g.t.nuWSYW)
       }), (0, r.jsx)(E, {
         questId: t
       })]

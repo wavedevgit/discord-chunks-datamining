@@ -15,13 +15,13 @@ var r = n(255367),
   p = n(565138),
   m = n(353254),
   f = n(695346),
-  g = n(271383),
-  h = n(594174),
+  h = n(271383),
+  g = n(594174),
   _ = n(671533),
   b = n(51144),
   E = n(506071),
-  x = n(696014),
-  y = n(847033),
+  y = n(696014),
+  x = n(847033),
   v = n(544978),
   C = n(893182),
   O = n(388032),
@@ -83,11 +83,11 @@ function T(e) {
   } = e, m = l.id, {
     nickname: f,
     nickcolor: _
-  } = (0, o.cj)([g.ZP, h.default], () => {
+  } = (0, o.cj)([h.ZP, g.default], () => {
     var e, t;
-    let n = h.default.getCurrentUser();
+    let n = g.default.getCurrentUser();
     a()(null != n, "user cannot be null");
-    let r = g.ZP.getMember(m, n.id);
+    let r = h.ZP.getMember(m, n.id);
     return {
       nickname: null != (e = null == r ? void 0 : r.nick) ? e : b.ZP.getName(n),
       nickcolor: null != (t = null == r ? void 0 : r.colorString) ? t : void 0
@@ -95,10 +95,10 @@ function T(e) {
   }, [m]), {
     isTruncated: E,
     ExpandableTextContainer: T
-  } = (0, x.s)(), N = (null != (n = null == d || null == (t = d.description) ? void 0 : t.trim().length) ? n : 0) > 0, [P, A] = i.useState(1), w = (0, c.Z)("(max-width: 1439px)"), {
+  } = (0, y.s)(), N = (null != (n = null == d || null == (t = d.description) ? void 0 : t.trim().length) ? n : 0) > 0, [P, A] = i.useState(1), w = (0, c.Z)("(max-width: 1439px)"), {
     selectedTab: Z,
     isPhantomPreview: R
-  } = (0, y.m)(), k = Z === v.y.GUILD_PRODUCTS_PREVIEW ? O.intl.string(O.t["LvXy/P"]) : O.intl.string(O.t.XyqKh4), L = N ? (0, r.jsxs)(r.Fragment, {
+  } = (0, x.m)(), L = Z === v.y.GUILD_PRODUCTS_PREVIEW ? O.intl.string(O.t["LvXy/P"]) : O.intl.string(O.t.XyqKh4), k = N ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(T, {
       lineClamp: w || 2 === P ? 2 : 3,
       children: (0, r.jsx)(s.Text, {
@@ -118,7 +118,7 @@ function T(e) {
   }) : (0, r.jsx)(s.Text, {
     variant: "text-sm/normal",
     color: "text-default",
-    children: R ? k : O.intl.string(O.t["NY/FIS"])
+    children: R ? L : O.intl.string(O.t["NY/FIS"])
   });
   return (0, r.jsxs)("div", {
     className: j.container,
@@ -164,7 +164,7 @@ function T(e) {
           })
         }), (0, r.jsx)(s.LZC, {
           size: 9
-        }), L]
+        }), k]
       })]
     }), (0, r.jsx)(S, {
       coverImageAsset: null == d ? void 0 : d.cover_image_asset,

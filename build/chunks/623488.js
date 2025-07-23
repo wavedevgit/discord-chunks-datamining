@@ -1,6 +1,6 @@
 /** Chunk was on 23045 **/
 n.d(t, {
-  Z: () => g
+  Z: () => h
 }), n(953529);
 var r = n(255367);
 n(73800);
@@ -70,19 +70,19 @@ function f(e) {
   })
 }
 
-function g(e) {
+function h(e) {
   let {
     imageUrl: t,
     name: n,
     description: i,
     formattedPrice: c,
-    role: g,
-    ctaComponent: h,
+    role: h,
+    ctaComponent: g,
     shouldShowFullDescriptionButton: _ = !0,
     onShowFullDescription: b,
     productType: E,
-    onTapCard: x,
-    actionMenu: y,
+    onTapCard: y,
+    actionMenu: x,
     showOpaqueBackground: v = !1,
     hideRoleTag: C = !1,
     lineClamp: O = 1,
@@ -123,14 +123,14 @@ function g(e) {
         }), _ && (0, r.jsx)(f, {
           onShowFullDescription: b,
           variant: T
-        }), C || null == g || "" === g.name ? null : (0, r.jsxs)(r.Fragment, {
+        }), C || null == h || "" === h.name ? null : (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(a.LZC, {
             size: 16
           }), (0, r.jsx)(u.Z, {
-            role: g
+            role: h
           })]
         })]
-      }), y]
+      }), x]
     }), (0, r.jsxs)("div", {
       className: p.purchaseDetails,
       children: [(0, r.jsx)(a.Text, {
@@ -148,11 +148,11 @@ function g(e) {
         onClick: e => {
           e.stopPropagation()
         },
-        children: h
+        children: g
       })]
     })]
   });
-  return null == x ? (0, r.jsx)("article", {
+  return null == y ? (0, r.jsx)("article", {
     className: l()(p.productCard, v ? p.opaqueBackground : p.solidBackground),
     "aria-labelledby": P,
     children: A
@@ -167,7 +167,7 @@ function g(e) {
         productName: n
       }),
       className: l()(p.productCard, v ? p.opaqueBackground : p.solidBackground, p.cardClickableContainer),
-      onClick: x,
+      onClick: y,
       children: A
     })
   })

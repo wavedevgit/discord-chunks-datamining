@@ -1,6 +1,6 @@
 /** Chunk was on 23045 **/
 n.d(t, {
-  Z: () => y
+  Z: () => x
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -14,8 +14,8 @@ var r = n(255367),
   p = n(496675),
   m = n(594174),
   f = n(626135),
-  g = n(709054),
-  h = n(838440),
+  h = n(709054),
+  g = n(838440),
   _ = n(981631),
   b = n(18485);
 
@@ -24,11 +24,11 @@ function E(e) {
     assets: t,
     currentUser: n,
     message: r
-  } = e, i = (g.default.extractTimestamp(n.id) + g.default.extractTimestamp(r.id)) % t.length;
+  } = e, i = (h.default.extractTimestamp(n.id) + h.default.extractTimestamp(r.id)) % t.length;
   return t[i]
 }
 
-function x(e) {
+function y(e) {
   let {
     currentUser: t,
     channel: n,
@@ -37,18 +37,18 @@ function x(e) {
     stickers: d,
     event: p,
     eventProperties: m
-  } = e, [g, _] = i.useState(!1), x = i.useMemo(() => E({
+  } = e, [h, _] = i.useState(!1), y = i.useMemo(() => E({
     assets: d,
     currentUser: t,
     message: l
-  }), [d, t, l]), y = i.useMemo(() => E({
+  }), [d, t, l]), x = i.useMemo(() => E({
     assets: u,
     currentUser: t,
     message: l
   }), [u, t, l]), v = i.useCallback(async () => {
     let {
       valid: e
-    } = await (0, h.v)({
+    } = await (0, g.v)({
       type: s.Ie.FORM,
       content: "",
       channel: n
@@ -68,7 +68,7 @@ function x(e) {
     }({
       channel: n,
       message: l,
-      sticker: x
+      sticker: y
     }), function(e) {
       var t, n;
       let {
@@ -106,11 +106,11 @@ function x(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t))
     }({
-      sticker: x,
+      sticker: y,
       event: p,
       eventProperties: m
     }))
-  }, [n, l, x, p, m]);
+  }, [n, l, y, p, m]);
   return (0, r.jsxs)(a.zx, {
     className: b.CTAMessageButtonOuter,
     innerClassName: b.CTAMessageButton,
@@ -120,14 +120,14 @@ function x(e) {
     onClick: v,
     children: [(0, r.jsx)(c.Z, {
       className: b.CTAMessageSticker,
-      isInteracting: g,
-      sticker: x,
+      isInteracting: h,
+      sticker: y,
       size: 28
-    }), y]
+    }), x]
   })
 }
 
-function y(e) {
+function x(e) {
   let {
     channel: t,
     message: n,
@@ -158,7 +158,7 @@ function y(e) {
   });
   return null != c && f ? (0, r.jsx)("div", {
     className: b.CTAMessage,
-    children: (0, r.jsx)(x, {
+    children: (0, r.jsx)(y, {
       currentUser: c,
       channel: t,
       message: n,

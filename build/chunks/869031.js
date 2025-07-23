@@ -1,6 +1,7 @@
-/** Chunk was on 46355 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  nZ: () => o
+  nZ: () => i
 });
 let r = (0, n(818083).B)({
   kind: "user",
@@ -18,7 +19,7 @@ let r = (0, n(818083).B)({
   }]
 });
 
-function o(e) {
+function i(e) {
   let {
     enabled: t
   } = r.getCurrentConfig({

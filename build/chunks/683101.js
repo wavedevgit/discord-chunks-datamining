@@ -23,7 +23,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function g(e) {
   return e
 }
 
-function h(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -65,7 +65,7 @@ class _ extends i.PureComponent {
       ringTarget: this.hitRef,
       ringClassName: m.__invalid_searchResultFocusRing,
       offset: 4,
-      children: (0, r.jsxs)("li", h(g({
+      children: (0, r.jsxs)("li", g(h({
         className: m.container
       }, t), {
         "aria-posinset": 1 + n + i,
@@ -112,7 +112,7 @@ class _ extends i.PureComponent {
         let {
           default: e
         } = await Promise.all([n.e("16705"), n.e("17982")]).then(n.bind(n, 858341));
-        return n => (0, r.jsx)(e, h(g({}, n), {
+        return n => (0, r.jsx)(e, g(h({}, n), {
           message: t,
           channel: i
         }))
