@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(587446),
   u = n(996073),
   d = n(737604),
-  f = n(401460),
-  _ = n(441319),
+  _ = n(401460),
+  f = n(441319),
   p = n(526761),
   h = n(388032),
   m = n(888090),
@@ -127,12 +127,12 @@ function T(e) {
           }), null == y ? void 0 : y()]
         }), (0, r.jsx)("div", {
           className: m.presets,
-          children: (0, _.wu)().filter(e => {
+          children: (0, f.wu)().filter(e => {
             let {
               isHidden: t
             } = e;
             return !t
-          }).map((e, t) => (0, r.jsx)(f.Z, {
+          }).map((e, t) => (0, r.jsx)(_.Z, {
             icon: e,
             isSelected: I === e.id,
             onSelect: e => R(e),

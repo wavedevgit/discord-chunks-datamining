@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Fq: () => f,
+  Fq: () => _,
   ZP: () => p,
   Zj: () => u
 }), n(388685);
@@ -37,7 +37,7 @@ function d(e, t) {
   }
 }
 
-function f(e, t, n) {
+function _(e, t, n) {
   d(e, r => {
     if (e.type === s.m.MP4) return t(r, e);
     let i = new Image;
@@ -48,7 +48,7 @@ function f(e, t, n) {
     }
   })
 }
-class _ extends(r = a.PureComponent) {
+class f extends(r = a.PureComponent) {
   componentDidMount() {
     this._isMounted = !0
   }
@@ -90,7 +90,7 @@ class _ extends(r = a.PureComponent) {
             null == t || t(n, i.size);
             continue
           }
-          f(i, this.handleFileRead, this.handleFileError)
+          _(i, this.handleFileRead, this.handleFileError)
         }
     }), c(this, "handleFileRead", (e, t) => {
       let {
@@ -108,9 +108,9 @@ class _ extends(r = a.PureComponent) {
     })
   }
 }
-c(_, "defaultProps", {
+c(f, "defaultProps", {
   multiple: !0,
   tabIndex: -1,
   maxFileSizeBytes: 1 / 0
 });
-let p = _
+let p = f

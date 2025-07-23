@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _,
+  Z: () => f,
   h: () => c
 });
 var r, i = n(442837),
@@ -45,7 +45,7 @@ let c = 360,
 function d(e) {
   o.Z.isDeveloper && (u = l({}, u, e.settings))
 }
-class f extends(r = i.ZP.DeviceSettingsStore) {
+class _ extends(r = i.ZP.DeviceSettingsStore) {
   initialize(e) {
     u = null != e ? e : u, a.Z.actionLogger.persist = o.Z.isDeveloper
   }
@@ -72,7 +72,7 @@ class f extends(r = i.ZP.DeviceSettingsStore) {
     return u.sortedScreenKeys
   }
 }
-s(f, "displayName", "DevToolsSettingsStore"), s(f, "persistKey", "DevToolsSettingsStore");
-let _ = new f(a.Z, {
+s(_, "displayName", "DevToolsSettingsStore"), s(_, "persistKey", "DevToolsSettingsStore");
+let f = new _(a.Z, {
   DEV_TOOLS_SETTINGS_UPDATE: d
 })

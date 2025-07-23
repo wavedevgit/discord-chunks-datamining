@@ -12,8 +12,8 @@ var r = n(754700),
   c = n(77498),
   u = n(938475),
   d = n(70956),
-  f = n(823379),
-  _ = n(272008),
+  _ = n(823379),
+  f = n(272008),
   p = n(569984),
   h = n(918701),
   m = n(5881),
@@ -55,7 +55,7 @@ class T extends i.Z {
       case r.X.PLAY_ACTIVITY:
         return this.getActivelyProgressingActivityQuestIds();
       default:
-        (0, f.vE)(e)
+        (0, _.vE)(e)
     }
   }
   getActivelyProgressingPlayOnDesktopQuestIds() {
@@ -134,11 +134,11 @@ class T extends i.Z {
               return
             }
             let r = (0, s.V9)(n);
-            v.log("~ initiateHeartbeat -> Sending heartbeat for questId: ".concat(e)), (0, _.m0)({
+            v.log("~ initiateHeartbeat -> Sending heartbeat for questId: ".concat(e)), (0, f.m0)({
               questId: e,
               streamKey: r
             })
-          } else v.log("~ initiateHeartbeat -> Sending heartbeat for questId: ".concat(e)), (0, _.m0)({
+          } else v.log("~ initiateHeartbeat -> Sending heartbeat for questId: ".concat(e)), (0, f.m0)({
             questId: e
           });
           let a = this.calculateHeartbeatDurationMs(e),
@@ -154,7 +154,7 @@ class T extends i.Z {
       if (null != i) {
         v.log("~ terminateHeartbeat -> Terminating heartbeat for questId: ".concat(e)), window.clearTimeout(i), n.delete(e);
         let t = r.get(e);
-        null != t && I(t) && (v.log("~ terminateHeartbeat -> Sending terminal heartbeat for questId: ".concat(e)), (0, _.m0)({
+        null != t && I(t) && (v.log("~ terminateHeartbeat -> Sending terminal heartbeat for questId: ".concat(e)), (0, f.m0)({
           questId: e,
           terminal: !0
         }))

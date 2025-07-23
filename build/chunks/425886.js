@@ -19,8 +19,8 @@ class s extends i.PureComponent {
       renderLinkComponent: c,
       onVolumeChange: u,
       onVolumeShow: d,
-      onVolumeHide: f,
-      autoMute: _,
+      onVolumeHide: _,
+      autoMute: f,
       onMute: p,
       mimeType: h,
       onPlay: m
@@ -35,10 +35,10 @@ class s extends i.PureComponent {
       playable: s,
       volume: l,
       onMute: p,
-      autoMute: _,
+      autoMute: f,
       onVolumeChange: u,
       onVolumeShow: d,
-      onVolumeHide: f,
+      onVolumeHide: _,
       renderLinkComponent: c,
       mimeType: h,
       onPlay: m

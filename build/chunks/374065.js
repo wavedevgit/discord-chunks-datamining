@@ -3,9 +3,9 @@
 n.d(t, {
   Hn: () => p,
   KF: () => h,
-  e4: () => _,
+  e4: () => f,
   g5: () => m,
-  jy: () => f
+  jy: () => _
 });
 var r = n(442837),
   i = n(592125),
@@ -16,11 +16,11 @@ var r = n(442837),
   c = n(701488),
   u = n(981631),
   d = n(388032),
-  f = function(e) {
+  _ = function(e) {
     return e[e.CAN_LAUNCH = 0] = "CAN_LAUNCH", e[e.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION = 1] = "NO_USE_EMBEDDED_ACTIVITIES_PERMISSION", e[e.NO_CHANNEL_CONNECT_PERMISSION = 2] = "NO_CHANNEL_CONNECT_PERMISSION", e[e.NO_CHANNEL = 3] = "NO_CHANNEL", e[e.NO_GUILD = 4] = "NO_GUILD", e[e.IS_AFK_CHANNEL = 5] = "IS_AFK_CHANNEL", e[e.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS = 6] = "ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS", e[e.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_CHANNEL = 7] = "ACTIVITIES_FEATURE_NOT_ENABLED_FOR_CHANNEL", e
   }({});
 
-function _(e) {
+function f(e) {
   let {
     channelId: t,
     ChannelStore: n,
@@ -45,7 +45,7 @@ function _(e) {
 }
 
 function p(e) {
-  return _({
+  return f({
     channelId: e,
     ChannelStore: i.Z,
     GuildStore: a.Z,
@@ -55,7 +55,7 @@ function p(e) {
 }
 
 function h(e) {
-  return (0, r.e7)([i.Z, a.Z, o.Z, s.Z], () => _({
+  return (0, r.e7)([i.Z, a.Z, o.Z, s.Z], () => f({
     channelId: e,
     ChannelStore: i.Z,
     GuildStore: a.Z,

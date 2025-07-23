@@ -84,7 +84,7 @@ e.exports = function(e) {
       illegal: "\\n",
       relevance: 0
     },
-    f = [r, {
+    _ = [r, {
       className: "meta",
       begin: "^---\\s*$",
       relevance: 10
@@ -130,11 +130,11 @@ e.exports = function(e) {
       begin: e.C_NUMBER_RE + "\\b",
       relevance: 0
     }, u, d, a, o],
-    _ = [...f];
-  return _.pop(), _.push(s), c.contains = _, {
+    f = [..._];
+  return f.pop(), f.push(s), c.contains = f, {
     name: "YAML",
     case_insensitive: !0,
     aliases: ["yml"],
-    contains: f
+    contains: _
   }
 }

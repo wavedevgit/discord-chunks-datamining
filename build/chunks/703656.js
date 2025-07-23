@@ -30,7 +30,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,7 +42,7 @@ function f(e) {
   }
   return e
 }
-let _ = new s.Z("Routing/Utils"),
+let f = new s.Z("Routing/Utils"),
   p = [u.E07.DEVELOPER_PORTAL];
 r = __OVERLAY__ ? (0, o.PP)() : (0, o.lX)();
 let h = !1,
@@ -55,19 +55,19 @@ function g() {
 }
 
 function E(e, t) {
-  return !!("string" == typeof e && p.some(t => e.startsWith(t))) && (_.log("".concat(t, " - route to external path ").concat(e)), window.dispatchEvent(new Event("beforeunload")), window.location[t](e), !0)
+  return !!("string" == typeof e && p.some(t => e.startsWith(t))) && (f.log("".concat(t, " - route to external path ").concat(e)), window.dispatchEvent(new Event("beforeunload")), window.location[t](e), !0)
 }
 
 function b(e, t) {
   if (E(e, "assign")) return;
-  _.log("transitionTo - Transitioning to ".concat(e));
+  f.log("transitionTo - Transitioning to ".concat(e));
   let n = null == t ? void 0 : t.source;
   null == t || delete t.source;
   let o = null == t ? void 0 : t.sourceLocationStack;
   if (null == t || delete t.sourceLocationStack, null == t) r.push(e);
   else {
     let n = new URL(e, "https:".concat(window.GLOBAL_ENV.WEBAPP_ENDPOINT));
-    r.push(f({
+    r.push(_({
       pathname: n.pathname,
       search: n.search,
       hash: n.hash
@@ -77,7 +77,7 @@ function b(e, t) {
 }
 
 function y(e, t, n, r) {
-  _.log("transitionToGuild - Transitioning to ".concat(JSON.stringify({
+  f.log("transitionToGuild - Transitioning to ".concat(JSON.stringify({
     guildId: e,
     channelId: t,
     messageId: n
@@ -89,7 +89,7 @@ function O() {
 }
 
 function v(e, t, n) {
-  E(e, "replace") || (_.log("Replacing route with ".concat(e)), "string" == typeof e ? r.replace(e, t) : r.replace(e), i = n)
+  E(e, "replace") || (f.log("Replacing route with ".concat(e)), "string" == typeof e ? r.replace(e, t) : r.replace(e), i = n)
 }
 
 function I() {

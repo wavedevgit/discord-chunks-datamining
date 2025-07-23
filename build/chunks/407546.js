@@ -18,9 +18,9 @@ function d(e) {
     error: t,
     selectedGuildId: n,
     onGuildChange: d,
-    guilds: f,
-    disabled: _ = !1
-  } = e, p = f.filter(e => i.e$(e.permissions, s.Plq.MANAGE_GUILD)).map(e => ({
+    guilds: _,
+    disabled: f = !1
+  } = e, p = _.filter(e => i.e$(e.permissions, s.Plq.MANAGE_GUILD)).map(e => ({
     value: e.id,
     label: e.name
   }));
@@ -40,7 +40,7 @@ function d(e) {
       placeholder: l.intl.string(l.t.oM4E1N),
       options: p,
       onChange: d,
-      isDisabled: _,
+      isDisabled: f,
       value: n
     }), (0, r.jsx)(a.x, {
       variant: "text-xs/medium",

@@ -25,7 +25,7 @@ let d = {
       n = e.options,
       a = e.name;
     if (!t.modifiersData[a]._skip) {
-      for (var d = n.mainAxis, f = void 0 === d || d, _ = n.altAxis, p = void 0 === _ || _, h = n.fallbackPlacements, m = n.padding, g = n.boundary, E = n.rootBoundary, b = n.altBoundary, y = n.flipVariations, O = void 0 === y || y, v = n.allowedAutoPlacements, I = t.options.placement, T = (0, i.Z)(I), S = T === I, A = h || (S || !O ? [(0, r.Z)(I)] : u(I)), N = [I].concat(A).reduce(function(e, n) {
+      for (var d = n.mainAxis, _ = void 0 === d || d, f = n.altAxis, p = void 0 === f || f, h = n.fallbackPlacements, m = n.padding, g = n.boundary, E = n.rootBoundary, b = n.altBoundary, y = n.flipVariations, O = void 0 === y || y, v = n.allowedAutoPlacements, I = t.options.placement, T = (0, i.Z)(I), S = T === I, A = h || (S || !O ? [(0, r.Z)(I)] : u(I)), N = [I].concat(A).reduce(function(e, n) {
           return e.concat((0, i.Z)(n) === l.d7 ? (0, s.Z)(t, {
             placement: n,
             boundary: g,
@@ -51,7 +51,7 @@ let d = {
         C[U] > R[U] && (B = (0, r.Z)(B));
         var V = (0, r.Z)(B),
           F = [];
-        if (f && F.push(G[M] <= 0), p && F.push(G[B] <= 0, G[V] <= 0), F.every(function(e) {
+        if (_ && F.push(G[M] <= 0), p && F.push(G[B] <= 0, G[V] <= 0), F.every(function(e) {
             return e
           })) {
           D = x, w = !1;

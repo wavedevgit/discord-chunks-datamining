@@ -34,8 +34,8 @@ var a = /^\s*class\b/,
   c = "[object Object]",
   u = "[object Function]",
   d = "[object GeneratorFunction]",
-  f = "[object HTMLAllCollection]",
-  _ = "[object HTML document.all class]",
+  _ = "[object HTMLAllCollection]",
+  f = "[object HTML document.all class]",
   p = "[object HTMLCollection]",
   h = "function" == typeof Symbol && !!Symbol.toStringTag,
   m = !(0 in [, ]),
@@ -47,7 +47,7 @@ if ("object" == typeof document) {
   l.call(E) === l.call(document.all) && (g = function(e) {
     if ((m || !e) && (void 0 === e || "object" == typeof e)) try {
       var t = l.call(e);
-      return (t === f || t === _ || t === p || t === c) && null == e("")
+      return (t === _ || t === f || t === p || t === c) && null == e("")
     } catch (e) {}
     return !1
   })

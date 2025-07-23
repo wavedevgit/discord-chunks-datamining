@@ -13,8 +13,8 @@ var i = n(120356),
   c = n(833664),
   u = n(420660),
   d = n(100527),
-  f = n(906732),
-  _ = n(379357),
+  _ = n(906732),
+  f = n(379357),
   p = n(264832),
   h = n(358696),
   m = n(649700),
@@ -93,7 +93,7 @@ function Z(e) {
     appContext: W
   } = e, K = (0, g.Dt)(), z = (0, g.Dt)(), {
     analyticsLocations: q
-  } = (0, f.ZP)(d.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), {
+  } = (0, _.ZP)(d.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), {
     themeType: X
   } = (0, T.z)(), Q = (0, m.Z)({
     activity: i,
@@ -110,7 +110,7 @@ function Z(e) {
   }), ee = (0, v.Z)(i), et = null != ee.text && "" !== ee.text, {
     largeImage: en,
     smallImage: er
-  } = (0, _.FO)(i, G), ei = (0, L.Z)({
+  } = (0, f.FO)(i, G), ei = (0, L.Z)({
     location: "UserProfileActivityCard",
     user: t,
     currentUser: n,
@@ -280,13 +280,13 @@ function Z(e) {
       }), ei(e)
     },
     children: [eo(), es(), el()]
-  }), ef = () => null == V || null == Z ? null : (0, r.jsx)(P.Z, {
+  }), e_ = () => null == V || null == Z ? null : (0, r.jsx)(P.Z, {
     user: t,
     guild: V,
     channel: Z,
     onAction: J,
     onClose: Y
-  }), e_ = () => t.id === n.id ? null : (0, r.jsx)("div", {
+  }), ef = () => t.id === n.id ? null : (0, r.jsx)("div", {
     className: U.actions,
     children: (0, r.jsx)(S.Z, {
       activity: i,
@@ -296,7 +296,7 @@ function Z(e) {
       application: G
     })
   });
-  return (0, r.jsx)(f.Gt, {
+  return (0, r.jsx)(_.Gt, {
     value: q,
     children: (0, r.jsxs)(N.Z, {
       ref: $,
@@ -325,10 +325,10 @@ function Z(e) {
               user: t,
               activity: i,
               className: U.badges
-            }), eu(), X === x.lY.MODAL_V2 && e_()]
-          }), X === x.lY.MODAL && e_()]
-        }), ef()]
-      }), X !== x.lY.MODAL && X !== x.lY.MODAL_V2 && e_()]
+            }), eu(), X === x.lY.MODAL_V2 && ef()]
+          }), X === x.lY.MODAL && ef()]
+        }), e_()]
+      }), X !== x.lY.MODAL && X !== x.lY.MODAL_V2 && ef()]
     })
   })
 }

@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(992970),
   u = n(443603),
   d = n(957825),
-  f = n(388032),
-  _ = n(302195);
+  _ = n(388032),
+  f = n(302195);
 
 function p(e, t) {
   let {
@@ -23,16 +23,16 @@ function p(e, t) {
     (0, l.Rg)(a.id, c.MG.MessageComposerButtons)
   }, [a.id]);
   return n ? null : (0, r.jsx)("div", {
-    className: o()(d.CT, _.buttonContainer),
+    className: o()(d.CT, f.buttonContainer),
     ref: t,
     children: (0, r.jsx)(u.Z, {
-      innerClassName: o()(_.button, _.messageConfettiButton),
-      childClassName: o()(_.messageConfettiIcon, {
-        [_.active]: p
+      innerClassName: o()(f.button, f.messageConfettiButton),
+      childClassName: o()(f.messageConfettiIcon, {
+        [f.active]: p
       }),
       onClick: h,
       isActive: p,
-      "aria-label": f.intl.string(f.t.yvN8bG),
+      "aria-label": _.intl.string(_.t.yvN8bG),
       "aria-haspopup": "false",
       children: (0, r.jsx)(s.l22, {
         size: "refresh_sm",

@@ -53,20 +53,20 @@ function u(e, t) {
   }), e
 }
 let d = e => {
-    if ("card" === e) return a.He.CARD;
+    if ("card" === e || "link_card_brand" === e) return a.He.CARD;
     if ("ideal" === e) return a.He.IDEAL;
     let t = T[(0, r.rI)()];
     return e in t ? t[e] : null
   },
-  f = new Set([a.He.CARD, a.He.PAYPAL]),
-  _ = new Set([a.He.IDEAL, a.He.GOPAY_WALLET, a.He.KAKAOPAY]);
+  _ = new Set([a.He.CARD, a.He.PAYPAL]),
+  f = new Set([a.He.IDEAL, a.He.GOPAY_WALLET, a.He.KAKAOPAY]);
 
 function p(e, t) {
   let n = null != t ? t : (0, i.vP)(),
-    a = f.has(e);
+    a = _.has(e);
   if (!n) return a;
   let o = (0, r.rI)();
-  return (!h(e) || "live" !== o || null != b(e, o)) && (a || _.has(e))
+  return (!h(e) || "live" !== o || null != b(e, o)) && (a || f.has(e))
 }
 
 function h(e) {

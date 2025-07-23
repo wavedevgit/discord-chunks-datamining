@@ -20,14 +20,14 @@ let l = {},
   c = new Set,
   u = new Set,
   d = 18e5,
-  f = async e => {
+  _ = async e => {
     if (!(0 === a.ZP.getGuildScheduledEventsForGuild(e).length || c.has(e)) && !u.has(e)) try {
       c.add(e), await o.Z.getGuildEventsForCurrentUser(e), u.add(e)
     } catch (t) {
       c.delete(e)
     }
   };
-class _ extends r.Z {
+class f extends r.Z {
   async getGuildEventUserCounts(e, t, n) {
     let r = n.filter(n => null == l["".concat(e, "-").concat(t, "-").concat(n)] || Date.now() - l["".concat(e, "-").concat(t, "-").concat(n)] > d);
     if (!(Date.now() - l["".concat(e, "-").concat(t)] < d) || 0 !== r.length) {
@@ -41,7 +41,7 @@ class _ extends r.Z {
     return o.Z.fetchUsersForGuildEvent(e, t, n)
   }
   getGuildEventsForCurrentUser(e) {
-    return f(e)
+    return _(e)
   }
   async handleConnectionOpen() {
     c.clear(), u.clear(), l = {}, i.Z.getLastSelectedGuildId()
@@ -63,7 +63,7 @@ class _ extends r.Z {
     let {
       invite: n
     } = e, r = n.guild_scheduled_event, i = null == (t = n.guild) ? void 0 : t.id;
-    null != r && null != i && f(i)
+    null != r && null != i && _(i)
   }
   async handleChannelSelect(e) {
     let {
@@ -86,4 +86,4 @@ class _ extends r.Z {
     })
   }
 }
-let p = new _
+let p = new f

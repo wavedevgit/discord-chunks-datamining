@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Ay: () => u,
-  He: () => f,
+  He: () => _,
   K_: () => l,
   Qh: () => s,
   ZB: () => d
@@ -50,6 +50,6 @@ function d(e, t) {
   }
 }
 
-function f(e, t) {
+function _(e, t) {
   return null != t ? "<t:".concat(e, ":").concat(t, ">") : "<t:".concat(e, ">")
 }

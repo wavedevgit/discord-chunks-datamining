@@ -17,8 +17,8 @@ function s(e) {
     gradient: c = null,
     flags: u = 0,
     contrast: d = 1,
-    saturation: f = 1,
-    density: _ = "compact",
+    saturation: _ = 1,
+    density: f = "compact",
     disableAdaptiveTheme: p = !1,
     reduceAdaptiveTheme: h = !1
   } = e, m = i.useMemo(() => (0, a.TT)({
@@ -28,11 +28,11 @@ function s(e) {
     gradient: c,
     flags: u,
     contrast: d,
-    saturation: f,
-    density: _,
+    saturation: _,
+    density: f,
     disableAdaptiveTheme: p,
     reduceAdaptiveTheme: h
-  }), [n, s, l, c, u, d, f, _, p, h]);
+  }), [n, s, l, c, u, d, _, f, p, h]);
   return (0, r.jsx)(a.Ni.Provider, {
     value: m,
     children: t

@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   E: () => p,
-  T: () => _
+  T: () => f
 });
 var r, i = n(73800),
   a = n(670481),
@@ -47,20 +47,20 @@ function d(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let f = null != (r = document.getElementById("app-mount")) ? r : document;
+let _ = null != (r = document.getElementById("app-mount")) ? r : document;
 
-function _(e) {
+function f(e) {
   var t, n, r;
   let l = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
     u = (0, o.e7)([s.Z], () => s.Z.keyboardModeEnabled),
-    _ = i.useRef(!1);
-  return _.current = !u, (0, a.ZP)(e, d(c({}, l), {
-    disableReturnRef: _,
-    attachTo: null != (r = null != (n = l.attachTo) ? n : null == (t = e.current) ? void 0 : t.ownerDocument) ? r : f,
+    f = i.useRef(!1);
+  return f.current = !u, (0, a.ZP)(e, d(c({}, l), {
+    disableReturnRef: f,
+    attachTo: null != (r = null != (n = l.attachTo) ? n : null == (t = e.current) ? void 0 : t.ownerDocument) ? r : _,
     returnRef: l.returnRef
   }))
 }
 
 function p(e) {
-  return _(e.containerRef), e.children
+  return f(e.containerRef), e.children
 }

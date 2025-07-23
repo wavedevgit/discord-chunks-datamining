@@ -26,8 +26,8 @@ var r = n(392711),
   c = n(160404),
   u = n(41776),
   d = n(569471),
-  f = n(131704),
-  _ = n(601964),
+  _ = n(131704),
+  f = n(601964),
   p = n(314897),
   h = n(592125),
   m = n(271383),
@@ -106,14 +106,14 @@ function x(e) {
     lurkerPermissionsMask: c = N
   } = e;
   if (l) return L(r.id, n, T, i);
-  let d = (o = null != o ? I({}, g.Z.getRoles(r.id), o) : g.Z.getRoles(r.id))[(0, _.lV)(r)],
-    f = null != d ? d.permissions : A;
+  let d = (o = null != o ? I({}, g.Z.getRoles(r.id), o) : g.Z.getRoles(r.id))[(0, f.lV)(r)],
+    _ = null != d ? d.permissions : A;
   if (null != n)
     for (let e = 0; e < n.roles.length; e++) {
       let t = o[n.roles[e]];
-      void 0 !== t && (f = a.IH(f, t.permissions))
+      void 0 !== t && (_ = a.IH(_, t.permissions))
     }
-  return f = a.e$(f, O.Plq.ADMINISTRATOR) ? S : L(r.id, n, f, i), (u.Z.isLurking(r.id) || (null == n ? void 0 : n.isPending)) && (f = a.hX(f, c)), m.ZP.isCurrentUserGuest(r.id) && (f = a.hX(f, C)), D(f, r, t, s)
+  return _ = a.e$(_, O.Plq.ADMINISTRATOR) ? S : L(r.id, n, _, i), (u.Z.isLurking(r.id) || (null == n ? void 0 : n.isPending)) && (_ = a.hX(_, c)), m.ZP.isCurrentUserGuest(r.id) && (_ = a.hX(_, C)), D(_, r, t, s)
 }
 
 function M(e) {
@@ -126,10 +126,10 @@ function M(e) {
       excludeGuildPermissions: s
     } = e,
     l = N;
-  if (r instanceof f.Sf) {
+  if (r instanceof _.Sf) {
     var c;
     if (r.isScheduledForDeletion()) return T;
-    if (f.Ec.has(r.type)) {
+    if (_.Ec.has(r.type)) {
       let e = h.Z.getChannel(r.parent_id);
       return null == e ? T : j(r, M({
         forceRoles: n,
@@ -184,9 +184,9 @@ function k(e) {
   if (null == a) return T;
   let g = "string" == typeof a ? a : a.id,
     y = N;
-  if (o instanceof f.Sf) {
+  if (o instanceof _.Sf) {
     if (o.isScheduledForDeletion()) return T;
-    if (f.Ec.has(o.type)) {
+    if (_.Ec.has(o.type)) {
       let e = h.Z.getChannel(o.parent_id);
       if (null == e || e.isScheduledForDeletion()) return T;
       let t = g === (null == (n = b.default.getCurrentUser()) ? void 0 : n.id) && d.Z.hasJoined(o.id);
@@ -204,7 +204,7 @@ function k(e) {
     i = null != e ? E.Z.getGuild(e) : null
   } else s = null != s ? s : {}, i = o;
   if (null == i) return T;
-  if (!(g === (null == (t = b.default.getCurrentUser()) ? void 0 : t.id) && c.Z.isViewingRoles(i.id)) && (0, _.eM)(i, g)) return D(S, i, g, u);
+  if (!(g === (null == (t = b.default.getCurrentUser()) ? void 0 : t.id) && c.Z.isViewingRoles(i.id)) && (0, f.eM)(i, g)) return D(S, i, g, u);
   let O = m.ZP.getMember(i.id, g);
   return x({
     userId: g,
@@ -223,7 +223,7 @@ function j(e, t, n) {
 }
 
 function U(e, t) {
-  if (f.Ec.has(e.type)) return !0;
+  if (_.Ec.has(e.type)) return !0;
   let {
     guild_id: n
   } = e;
@@ -243,7 +243,7 @@ function G(e) {
 }
 
 function B(e, t, n, r) {
-  if (null != t && (0, _.eM)(e, t)) return !0;
+  if (null != t && (0, f.eM)(e, t)) return !0;
   if (null == n) return !1;
   let a = i()(g.Z.getRoles(e.id)).sortBy(e => e.position).map(e => e.id).value();
   return a.indexOf(n.id) > (null != r ? a.indexOf(r.id) : -1)
@@ -288,8 +288,8 @@ function H(e) {
 
 function Y(e, t) {
   let n, r = {};
-  if (t instanceof f.Sf) {
-    if (t.type === O.d4z.PRIVATE_THREAD || f.Ec.has(t.type) && null == (t = h.Z.getChannel(t.parent_id))) return !1;
+  if (t instanceof _.Sf) {
+    if (t.type === O.d4z.PRIVATE_THREAD || _.Ec.has(t.type) && null == (t = h.Z.getChannel(t.parent_id))) return !1;
     r = t.permissionOverwrites;
     let e = t.getGuildId();
     n = null != e ? E.Z.getGuild(e) : null
@@ -302,8 +302,8 @@ function Y(e, t) {
 
 function W(e, t) {
   let n, r = {};
-  if (t instanceof f.Sf) {
-    if (t.type === O.d4z.PRIVATE_THREAD || f.Ec.has(t.type) && null == (t = h.Z.getChannel(t.parent_id))) return !1;
+  if (t instanceof _.Sf) {
+    if (t.type === O.d4z.PRIVATE_THREAD || _.Ec.has(t.type) && null == (t = h.Z.getChannel(t.parent_id))) return !1;
     r = t.permissionOverwrites;
     let e = t.getGuildId();
     n = null != e ? E.Z.getGuild(e) : null

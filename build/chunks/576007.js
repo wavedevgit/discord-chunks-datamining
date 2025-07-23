@@ -21,10 +21,10 @@ function c(e) {
 let u = 3;
 async function d(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
-    f = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 0;
-  if (f > u) throw Error("Unable to search guild members after max retries");
+    _ = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 0;
+  if (_ > u) throw Error("Unable to search guild members after max retries");
   let {
-    autoRetry: _ = !0,
+    autoRetry: f = !0,
     signal: p
   } = n;
   try {
@@ -36,11 +36,11 @@ async function d(e, t) {
     });
     if (a.status === s.t) {
       if (null == a.body.retry_after) throw Error("Indexing response did not include retry_after");
-      if (!_) throw Error("Indexing response received but autoRetry is disabled");
+      if (!f) throw Error("Indexing response received but autoRetry is disabled");
       return await i.Z.dispatch({
         type: "MEMBER_SAFETY_GUILD_MEMBER_SEARCH_STILL_INDEXING",
         guildId: e
-      }), await new Promise(e => setTimeout(e, a.body.retry_after * o.Z.Millis.SECOND)), d(e, t, n, f + 1)
+      }), await new Promise(e => setTimeout(e, a.body.retry_after * o.Z.Millis.SECOND)), d(e, t, n, _ + 1)
     }
     return {
       type: s.d.SUCCESSFUL_QUERY,

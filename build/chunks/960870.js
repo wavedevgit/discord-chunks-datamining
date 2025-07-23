@@ -38,8 +38,8 @@ function d(e) {
     display: n,
     activity: c,
     entry: d,
-    stream: f,
-    voiceChannelId: _,
+    stream: _,
+    voiceChannelId: f,
     analyticsLocations: p
   } = e, {
     context: h,
@@ -59,10 +59,10 @@ function d(e) {
       display: n,
       activity: c,
       entry: d,
-      stream: f,
+      stream: _,
       outbox: b,
-      voiceChannelId: _,
+      voiceChannelId: f,
       analyticsLocations: E
     }, h))
-  }, [m, h, n, c, f, d, b, _, E])
+  }, [m, h, n, c, _, d, b, f, E])
 }

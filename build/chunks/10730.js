@@ -34,7 +34,7 @@ var o = n(161796),
     return i(e, null, [{
       key: "create",
       value: function(e) {
-        if (e.outputRange && "string" == typeof e.outputRange[0]) return _(e);
+        if (e.outputRange && "string" == typeof e.outputRange[0]) return f(e);
         var t = e.outputRange;
         g("outputRange", t);
         var n = e.inputRange;
@@ -68,20 +68,20 @@ function d(e) {
   var t = o(e);
   return null === t ? e : "rgba(" + ((0xff000000 & (t = t || 0)) >>> 24) + ", " + ((0xff0000 & t) >>> 16) + ", " + ((65280 & t) >>> 8) + ", " + (255 & t) / 255 + ")"
 }
-var f = /[0-9\.-]+/g;
+var _ = /[0-9\.-]+/g;
 
-function _(e) {
+function f(e) {
   var t = e.outputRange;
   s(t.length >= 2, "Bad output range"), p(t = t.map(d));
-  var n = t[0].match(f).map(function() {
+  var n = t[0].match(_).map(function() {
     return []
   });
   t.forEach(function(e) {
-    e.match(f).forEach(function(e, t) {
+    e.match(_).forEach(function(e, t) {
       n[t].push(+e)
     })
   });
-  var i = t[0].match(f).map(function(t, i) {
+  var i = t[0].match(_).map(function(t, i) {
       return c.create(r({}, e, {
         outputRange: n[i]
       }))
@@ -89,7 +89,7 @@ function _(e) {
     a = /^rgb/.test(t[0]);
   return function(e) {
     var n = 0;
-    return t[0].replace(f, function() {
+    return t[0].replace(_, function() {
       var t = i[n++](e);
       return String(a && n < 4 ? Math.round(t) : t)
     })
@@ -97,7 +97,7 @@ function _(e) {
 }
 
 function p(e) {
-  for (var t = e[0].replace(f, ""), n = 1; n < e.length; ++n) s(t === e[n].replace(f, ""), "invalid pattern " + e[0] + " and " + e[n])
+  for (var t = e[0].replace(_, ""), n = 1; n < e.length; ++n) s(t === e[n].replace(_, ""), "invalid pattern " + e[0] + " and " + e[n])
 }
 
 function h(e, t) {

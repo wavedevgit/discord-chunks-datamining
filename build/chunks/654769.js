@@ -11,8 +11,8 @@ var r, i = n(392711),
   c = n(933557),
   u = n(710845),
   d = n(811627),
-  f = n(330619),
-  _ = n(863065),
+  _ = n(330619),
+  f = n(863065),
   p = n(691294),
   h = n(460181),
   m = n(474873),
@@ -201,7 +201,7 @@ async function Q(e, t, n, r, i) {
   let g, P = await G(),
     D = (null == P ? void 0 : P.authorizationStatus) === "authorized" || (null == P ? void 0 : P.authorizationStatus) === "provisional",
     M = null != P ? D : await z(),
-    B = D && (!x || (0, f.R)({
+    B = D && (!x || (0, _.R)({
       location: "showNotification"
     }).enabled),
     F = v.Z.disableNotifications && null == i.overrideStreamerMode,
@@ -215,7 +215,7 @@ async function Q(e, t, n, r, i) {
     }),
     q = K,
     Q = K;
-  if (r.banner = await (0, _.K)(), !H) {
+  if (r.banner = await (0, f.K)(), !H) {
     null != i.sound && !1 !== i.playSoundIfDisabled && (X(i.sound, null != (a = i.volume) ? a : 1, i.soundpack), r.ping = !0, i.omitViewTracking || T.default.track(R.rMx.NOTIFICATION_ACTION, w({
       action: "VIEW"
     }, r)));

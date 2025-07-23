@@ -56,19 +56,19 @@ function d(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let f = {
+let _ = {
     id: "NO_LIST",
     setFocus() {}
   },
-  _ = {
+  f = {
     id: "NO_LIST",
     onKeyDown() {},
     orientation: o.hy.VERTICAL,
     ref: i.createRef(),
     tabIndex: -1
   },
-  p = i.createContext(f),
-  h = i.createContext(_);
+  p = i.createContext(_),
+  h = i.createContext(f);
 
 function m() {
   return i.useContext(p)
@@ -167,7 +167,7 @@ function T(e) {
   } = n, d = i.useMemo(() => ({
     id: a,
     setFocus: o
-  }), [a, o]), f = i.useMemo(() => ({
+  }), [a, o]), _ = i.useMemo(() => ({
     onKeyDown: s,
     orientation: u,
     ref: l,
@@ -175,7 +175,7 @@ function T(e) {
     tabIndex: c
   }), [s, u, l, a, c]);
   return (0, r.jsxs)(h.Provider, {
-    value: f,
+    value: _,
     children: [(0, r.jsx)(p.Provider, {
       value: d,
       children: t

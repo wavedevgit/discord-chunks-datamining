@@ -76,36 +76,36 @@ let o = e => t => {
       c = !1,
       u = new Set,
       d = new Set,
-      f = l.storage;
-    if (!f) return e((...e) => {
+      _ = l.storage;
+    if (!_) return e((...e) => {
       console.warn(`[zustand persist middleware] Unable to update item '${l.name}', the given storage is currently unavailable.`), n(...e)
     }, r, i);
-    let _ = () => {
+    let f = () => {
         let e = l.partialize({
           ...r()
         });
-        return f.setItem(l.name, {
+        return _.setItem(l.name, {
           state: e,
           version: l.version
         })
       },
       p = i.setState;
     i.setState = (e, t) => {
-      p(e, t), _()
+      p(e, t), f()
     };
     let h = e((...e) => {
-      n(...e), _()
+      n(...e), f()
     }, r, i);
     i.getInitialState = () => h;
     let m = () => {
       var e, t;
-      if (!f) return;
+      if (!_) return;
       c = !1, u.forEach(e => {
         var t;
         return e(null != (t = r()) ? t : h)
       });
       let i = (null == (t = l.onRehydrateStorage) ? void 0 : t.call(l, null != (e = r()) ? e : h)) || void 0;
-      return o(f.getItem.bind(f))(l.name).then(e => {
+      return o(_.getItem.bind(_))(l.name).then(e => {
         if (e)
           if ("number" != typeof e.version || e.version === l.version) return [!1, e.state];
           else {
@@ -115,7 +115,7 @@ let o = e => t => {
       }).then(e => {
         var t;
         let [i, a] = e;
-        if (n(s = l.merge(a, null != (t = r()) ? t : h), !0), i) return _()
+        if (n(s = l.merge(a, null != (t = r()) ? t : h), !0), i) return f()
       }).then(() => {
         null == i || i(s, void 0), s = r(), c = !0, d.forEach(e => e(s))
       }).catch(e => {
@@ -127,10 +127,10 @@ let o = e => t => {
         l = {
           ...l,
           ...e
-        }, e.storage && (f = e.storage)
+        }, e.storage && (_ = e.storage)
       },
       clearStorage: () => {
-        null == f || f.removeItem(l.name)
+        null == _ || _.removeItem(l.name)
       },
       getOptions: () => l,
       rehydrate: () => m(),

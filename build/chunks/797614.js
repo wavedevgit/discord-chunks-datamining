@@ -43,18 +43,18 @@ function d(e, t) {
   return n
 }
 
-function f(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = new Set(["darwin", "linux", "win32", "ios", "android"]);
+let f = new Set(["darwin", "linux", "win32", "ios", "android"]);
 
 function p() {
   if ((0, a.isWeb)()) return "web";
   {
     let e = (0, a.getPlatformName)();
-    return _.has(e) ? e : null
+    return f.has(e) ? e : null
   }
 }
 
@@ -89,7 +89,7 @@ class E {
   }
   distribution(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-      r = f(u({}, this._getMetricWithDefaults(e, "distribution")), {
+      r = _(u({}, this._getMetricWithDefaults(e, "distribution")), {
         value: t
       });
     this._metrics.push(r), (n || this._metrics.length >= g) && this._flush()
@@ -102,8 +102,8 @@ class E {
         body: {
           metrics: e,
           client_info: {
-            built_at: "1753283994317",
-            build_number: "422016"
+            built_at: "1753287700956",
+            build_number: "422038"
           }
         },
         retries: 1,

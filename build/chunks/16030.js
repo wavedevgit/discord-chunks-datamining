@@ -50,20 +50,20 @@ let c = function(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
   return function(n) {
     var a, l, c, u, d, {
-        color: f
+        color: _
       } = n,
-      _ = s(n, ["color"]);
+      f = s(n, ["color"]);
     let p = "currentColor";
-    null != f && (p = "string" != typeof f && "css" in f ? f.css : f);
-    let h = null != (a = _.size) ? a : "md",
+    null != _ && (p = "string" != typeof _ && "css" in _ ? _.css : _);
+    let h = null != (a = f.size) ? a : "md",
       m = (0, i.m)(h),
       g = {
         color: p,
-        width: null != (c = null != (l = null == m ? void 0 : m.width) ? l : _.width) ? c : 24,
-        height: null != (d = null != (u = null == m ? void 0 : m.height) ? u : _.height) ? d : 24,
-        foreground: _.colorClass
+        width: null != (c = null != (l = null == m ? void 0 : m.width) ? l : f.width) ? c : 24,
+        height: null != (d = null != (u = null == m ? void 0 : m.height) ? u : f.height) ? d : 24,
+        foreground: f.colorClass
       };
-    for (let [e, n] of Object.entries(t)) null != _[e] && (g[n] = _[e]);
-    return (0, r.jsx)(e, o({}, _, g))
+    for (let [e, n] of Object.entries(t)) null != f[e] && (g[n] = f[e]);
+    return (0, r.jsx)(e, o({}, f, g))
   }
 }

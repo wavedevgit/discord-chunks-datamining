@@ -12,8 +12,8 @@ var r = n(392711),
   c = n(442741),
   u = n(695346),
   d = n(199902),
-  f = n(314897),
-  _ = n(592125),
+  _ = n(314897),
+  f = n(592125),
   p = n(650774),
   h = n(936349),
   m = n(944486),
@@ -65,7 +65,7 @@ function L(e) {
 
 function x(e, t) {
   if (m.Z.getVoiceChannelId() !== e) return !1;
-  let n = _.Z.getChannel(e);
+  let n = f.Z.getChannel(e);
   if (null == n || !n.isDM() && !n.isGuildStageVoice() || null != d.Z.getActiveStreamForUser(t, n.getGuildId())) return !1;
   let r = d.Z.getStreamForUser(t, n.getGuildId());
   if (null == r) return !1;
@@ -99,22 +99,22 @@ class j extends s.Z {
         allowMultiple: n
       } = e, {
         channelId: r
-      } = (0, y.my)(t), i = _.Z.getChannel(r);
+      } = (0, y.my)(t), i = f.Z.getChannel(r);
       k(t, null == i ? void 0 : i.isGuildStageVoice()), D(t), n || d.Z.getAllActiveStreams().forEach(e => {
         let n = (0, y.V9)(e);
-        e.ownerId !== f.default.getId() && n !== t && (0, o.g)(n, !1)
+        e.ownerId !== _.default.getId() && n !== t && (0, o.g)(n, !1)
       })
     }), I(this, "handleStreamStart", e => {
       let {
         channelId: t,
         streamType: n,
         guildId: r
-      } = e, i = _.Z.getChannel(t);
+      } = e, i = f.Z.getChannel(t);
       k((0, y.V9)({
         streamType: n,
         guildId: r,
         channelId: t,
-        ownerId: f.default.getId()
+        ownerId: _.default.getId()
       }), null == i ? void 0 : i.isGuildStageVoice()), this.platformHandleStreamStart(e)
     }), I(this, "handleStreamCreate", e => {
       var t;
@@ -157,7 +157,7 @@ class j extends s.Z {
         let {
           ownerId: t
         } = e;
-        return t !== f.default.getId()
+        return t !== _.default.getId()
       })[0];
       null != n && x(t, n.ownerId)
     }), I(this, "handleVoiceStateUpdates", e => {
@@ -171,7 +171,7 @@ class j extends s.Z {
           guildId: r,
           selfStream: a
         } = e;
-        if (this.platformHandleVoiceStateUpdate(e), t !== f.default.getId() && null != n) {
+        if (this.platformHandleVoiceStateUpdate(e), t !== _.default.getId() && null != n) {
           if (a && x(n, t)) return;
           let e = d.Z.getActiveStreamForUser(t, r);
           if (null != e && e.channelId === n) {

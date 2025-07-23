@@ -10,7 +10,7 @@ var o, s = n(392711),
   u = n(570140),
   d = n(981631);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -19,14 +19,14 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -110,7 +110,7 @@ function v(e) {
 }
 class I extends(o = c.ZP.PersistedStore) {
   initialize(e) {
-    m = _({}, g(), null != e ? e : {})
+    m = f({}, g(), null != e ? e : {})
   }
   getState() {
     return m
@@ -131,7 +131,7 @@ class I extends(o = c.ZP.PersistedStore) {
     return null == r ? null : a
   }
 }
-f(I, "displayName", "HangStatusStore"), f(I, "persistKey", "HangStatusStore");
+_(I, "displayName", "HangStatusStore"), _(I, "persistKey", "HangStatusStore");
 let T = new I(u.Z, {
   LOGOUT: E,
   UPDATE_HANG_STATUS: b,

@@ -33,7 +33,7 @@ function d(e) {
   return e
 }
 
-function f(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -44,8 +44,8 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
+function f(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -72,7 +72,7 @@ let m = e => {
     href: t,
     className: n,
     iconClassName: u,
-    rel: f,
+    rel: _,
     target: h,
     mimeType: m,
     fileName: g,
@@ -86,21 +86,21 @@ let m = e => {
         attachment_subtype: null == m ? void 0 : m[1]
       }), null == b || b(), null == O || O(e)
     }, [O, m, b]);
-  return null != g ? (0, r.jsx)(o.eee, _(d({
+  return null != g ? (0, r.jsx)(o.eee, f(d({
     href: t,
     onClick: v,
     target: h,
-    rel: f,
+    rel: _,
     className: n,
     "aria-label": c.intl.string(c.t["1WjMbG"]),
     focusProps: E
   }, y), {
     children: g
-  })) : (0, r.jsx)(o.eee, _(d({
+  })) : (0, r.jsx)(o.eee, f(d({
     href: t,
     onClick: v,
     target: h,
-    rel: f,
+    rel: _,
     className: n,
     "aria-label": c.intl.string(c.t["1WjMbG"]),
     focusProps: E

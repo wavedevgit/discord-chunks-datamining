@@ -44,13 +44,13 @@ function d(e, t) {
   return n
 }
 
-function f(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function _(e, t) {
+function f(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -80,8 +80,8 @@ function h(e) {
     children: e => {
       var {
         onClick: s
-      } = e, c = _(e, ["onClick"]);
-      return (0, r.jsx)(o.zx, f(u({}, c), {
+      } = e, c = f(e, ["onClick"]);
+      return (0, r.jsx)(o.zx, _(u({}, c), {
         onClick: e => {
           null == n || n(e), null == s || s()
         },

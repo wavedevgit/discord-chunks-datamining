@@ -18,9 +18,9 @@ let u = e => {
     className: u
   } = e, d = (0, s.ZP)();
   if (null == t.unpublishedAt) return null;
-  let f = (0, l.OT)(t.unpublishedAt);
+  let _ = (0, l.OT)(t.unpublishedAt);
 
-  function _(e) {
+  function f(e) {
     return (0, r.jsx)(o.IGR, {
       disableColor: !0,
       text: e,
@@ -34,9 +34,9 @@ let u = e => {
       }
     })
   }
-  return (0, i.EQ)([n, f > 1]).with(["card", !0], () => null).with(["banner", !0], () => _(c.intl.formatToPlainString(c.t["8gsP5O"], {
-    days: f
-  }))).with(["modal", !0], () => _(c.intl.formatToPlainString(c.t.Io7ozs, {
-    days: f
-  }))).otherwise(() => _(c.intl.string(c.t.Bc13HB)))
+  return (0, i.EQ)([n, _ > 1]).with(["card", !0], () => null).with(["banner", !0], () => f(c.intl.formatToPlainString(c.t["8gsP5O"], {
+    days: _
+  }))).with(["modal", !0], () => f(c.intl.formatToPlainString(c.t.Io7ozs, {
+    days: _
+  }))).otherwise(() => f(c.intl.string(c.t.Bc13HB)))
 }

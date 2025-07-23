@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  j: () => _
+  j: () => f
 });
 var r = n(255367),
   i = n(73800),
@@ -12,14 +12,14 @@ var r = n(255367),
   c = n(981729),
   u = n(770102),
   d = n(534542),
-  f = n(538285);
+  _ = n(538285);
 
-function _(e) {
+function f(e) {
   let {
     value: t,
     disabled: n = !1,
     hideBorder: a = !1,
-    tooltipNote: _,
+    tooltipNote: f,
     onChange: p,
     className: h,
     style: m,
@@ -40,8 +40,8 @@ function _(e) {
   return (0, r.jsxs)("div", {
     ref: y,
     style: m,
-    className: o()(f.container, h, {
-      [f.disabled]: n
+    className: o()(_.container, h, {
+      [_.disabled]: n
     }),
     children: [(0, r.jsx)(s.t, {
       within: !0,
@@ -49,35 +49,35 @@ function _(e) {
       focusTarget: O,
       ringTarget: v,
       children: (0, r.jsxs)("div", {
-        className: f.labelRow,
+        className: _.labelRow,
         ref: v,
         children: [(0, r.jsx)("label", {
           htmlFor: I,
-          className: f.title,
+          className: _.title,
           children: E
         }), (0, r.jsx)("div", {
-          className: f.control,
-          children: null != _ ? (0, r.jsx)(c.DY, {
-            text: _,
+          className: _.control,
+          children: null != f ? (0, r.jsx)(c.DY, {
+            text: f,
             children: T
           }) : T
         })]
       })
     }), null != g && (0, r.jsx)("div", {
-      className: f.note,
+      className: _.note,
       children: (0, r.jsx)(d.R, {
         disabled: n,
         type: d.g.DESCRIPTION,
         children: g
       })
     }), n && null != b && (0, r.jsx)("div", {
-      className: f.disabledText,
+      className: _.disabledText,
       children: (0, r.jsx)(d.R, {
         type: d.g.ERROR,
         children: b
       })
     }), !a && (0, r.jsx)(u.$, {
-      className: f.dividerDefault
+      className: _.dividerDefault
     })]
   })
 }

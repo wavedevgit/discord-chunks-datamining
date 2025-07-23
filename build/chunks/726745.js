@@ -12,7 +12,7 @@ var a, o = n(213919),
   u = n(988965),
   d = n(71509);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -21,14 +21,14 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -144,7 +144,7 @@ function A(e) {
     userId: t,
     pushSyncToken: n
   } = e;
-  g = g.map(e => e.id === t ? h(_({}, e), {
+  g = g.map(e => e.id === t ? h(f({}, e), {
     pushSyncToken: n
   }) : e)
 }
@@ -153,7 +153,7 @@ function N(e) {
   let {
     invalidPushSyncTokens: t
   } = e;
-  g = g.map(e => null != e.pushSyncToken && t.includes(e.pushSyncToken) ? h(_({}, e), {
+  g = g.map(e => null != e.pushSyncToken && t.includes(e.pushSyncToken) ? h(f({}, e), {
     pushSyncToken: null
   }) : e)
 }
@@ -206,7 +206,7 @@ class C extends(a = s.ZP.PersistedStore) {
     return E
   }
 }
-f(C, "displayName", "MultiAccountStore"), f(C, "persistKey", "MultiAccountStore"), f(C, "migrations", [e => {
+_(C, "displayName", "MultiAccountStore"), _(C, "persistKey", "MultiAccountStore"), _(C, "migrations", [e => {
   if (null != e) {
     var t;
     return {

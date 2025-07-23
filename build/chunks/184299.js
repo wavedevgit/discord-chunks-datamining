@@ -52,7 +52,7 @@ function u(e, t) {
 
 function d(e, t) {
   if (null == e) return {};
-  var n, r, i = f(e, t);
+  var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -60,7 +60,7 @@ function d(e, t) {
   return i
 }
 
-function f(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -68,7 +68,7 @@ function f(e, t) {
   return i
 }
 
-function _(e, t) {
+function f(e, t) {
   if ("object" !== h(e) || null === e) return e;
   var n = e[Symbol.toPrimitive];
   if (void 0 !== n) {
@@ -80,7 +80,7 @@ function _(e, t) {
 }
 
 function p(e) {
-  var t = _(e, "string");
+  var t = f(e, "string");
   return "symbol" === h(t) ? t : String(t)
 }
 

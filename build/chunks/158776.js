@@ -12,8 +12,8 @@ var r, i = n(348327),
   c = n(570140),
   u = n(122810),
   d = n(106301),
-  f = n(709054),
-  _ = n(314897),
+  _ = n(709054),
+  f = n(314897),
   p = n(594174),
   h = n(981631);
 
@@ -116,7 +116,7 @@ function x(e) {
     hiddenActivities: s,
     processedAtTimestamp: l
   } = e;
-  if (n === _.default.getId()) return !1;
+  if (n === f.default.getId()) return !1;
   let c = r === h.Skl.OFFLINE && (null == s || 0 === s.length),
     u = E[n];
   if (null == u) {
@@ -154,7 +154,7 @@ function M(e) {
     hiddenActivities: o,
     processedAtTimestamp: s
   } = e;
-  if (n === _.default.getId()) return;
+  if (n === f.default.getId()) return;
   let l = r === h.Skl.OFFLINE && (null == o || 0 === o.length),
     c = E[n];
   if (null == c) {
@@ -181,14 +181,14 @@ function M(e) {
 }
 
 function k(e, t) {
-  if (t === _.default.getId()) return !1;
+  if (t === f.default.getId()) return !1;
   let n = E[t];
   if (null == n || null == n[e]) return !1;
   delete n[e], 0 === Object.keys(n).length && delete E[t], w(t)
 }
 
 function j(e) {
-  for (let t of f.default.keys(E)) k(e, t)
+  for (let t of _.default.keys(E)) k(e, t)
 }
 
 function U() {
@@ -199,7 +199,7 @@ function G(e) {
   let {
     guilds: t,
     presences: n
-  } = e, r = _.default.getId();
+  } = e, r = f.default.getId();
   E = {}, I = {}, b = {
     [r]: b[r]
   }, y = {
@@ -386,7 +386,7 @@ function K(e) {
 }
 
 function z(e) {
-  let t = _.default.getId();
+  let t = f.default.getId();
   if (b[t] === e.status && y[t] === e.activities && O[t] === e.hiddenActivities) return !1;
   b[t] = e.status, y[t] = [...e.activities].sort(P), O[t] = [...e.hiddenActivities].sort(P), delete I[t]
 }
@@ -400,10 +400,10 @@ function q(e) {
 }
 class X extends(r = l.ZP.Store) {
   initialize() {
-    this.waitFor(_.default, d.Z)
+    this.waitFor(f.default, d.Z)
   }
   setCurrentUserOnConnectionOpen(e, t) {
-    b[_.default.getId()] = e, y[_.default.getId()] = [...t].sort(P)
+    b[f.default.getId()] = e, y[f.default.getId()] = [...t].sort(P)
   }
   getStatus(e) {
     var t, n;
@@ -434,7 +434,7 @@ class X extends(r = l.ZP.Store) {
   }
   getAllApplicationActivities(e) {
     let t = [];
-    for (let n of f.default.keys(y))
+    for (let n of _.default.keys(y))
       for (let r of y[n]) r.application_id === e && t.push({
         userId: n,
         activity: r
@@ -456,7 +456,7 @@ class X extends(r = l.ZP.Store) {
     return I[e]
   }
   getUserIds() {
-    return f.default.keys(y)
+    return _.default.keys(y)
   }
   isMobileOnline(e) {
     let t = v[e];

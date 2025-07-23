@@ -11,8 +11,8 @@ var r, i = n(442837),
   c = n(271383),
   u = n(485386),
   d = n(430824),
-  f = n(594174),
-  _ = n(981631),
+  _ = n(594174),
+  f = n(981631),
   p = n(372897);
 
 function h(e, t, n) {
@@ -38,8 +38,8 @@ function b(e) {
   let t;
   y(e), g.add(e);
   let n = d.Z.getGuild(e),
-    r = f.default.getCurrentUser();
-  if (null == n || n.verificationLevel === _.sFg.NONE || null == r || (0, o.eM)(n, r) || r.isPhoneVerified()) return;
+    r = _.default.getCurrentUser();
+  if (null == n || n.verificationLevel === f.sFg.NONE || null == r || (0, o.eM)(n, r) || r.isPhoneVerified()) return;
   let i = c.ZP.getMember(n.id, r.id);
   if (null != i) {
     var l;
@@ -51,16 +51,16 @@ function b(e) {
     }
     let t = new Date("2022-12-02 00:00:00"),
       r = null == i.joinedAt || new Date(i.joinedAt) < t;
-    if (!(n.features.has(_.oNc.GUILD_ONBOARDING_EVER_ENABLED) && !r) && e.size > 0) return
+    if (!(n.features.has(f.oNc.GUILD_ONBOARDING_EVER_ENABLED) && !r) && e.size > 0) return
   }
-  let h = +r.createdAt + 6e4 * _.YeM.ACCOUNT_AGE - Date.now(),
-    m = +n.joinedAt + 6e4 * _.YeM.MEMBER_AGE - Date.now(),
-    b = n.verificationLevel >= _.sFg.LOW && !r.isClaimed(),
+  let h = +r.createdAt + 6e4 * f.YeM.ACCOUNT_AGE - Date.now(),
+    m = +n.joinedAt + 6e4 * f.YeM.MEMBER_AGE - Date.now(),
+    b = n.verificationLevel >= f.sFg.LOW && !r.isClaimed(),
     O = !1,
     v = !1,
     I = !1,
     T = !1;
-  r.isPhoneVerified() || r.isStaff() || (O = n.verificationLevel >= _.sFg.LOW && !r.verified, v = n.verificationLevel >= _.sFg.VERY_HIGH, I = n.verificationLevel >= _.sFg.MEDIUM && h > 0, T = n.verificationLevel >= _.sFg.HIGH && m > 0);
+  r.isPhoneVerified() || r.isStaff() || (O = n.verificationLevel >= f.sFg.LOW && !r.verified, v = n.verificationLevel >= f.sFg.VERY_HIGH, I = n.verificationLevel >= f.sFg.MEDIUM && h > 0, T = n.verificationLevel >= f.sFg.HIGH && m > 0);
   let S = [];
   T && S.push(m), I && S.push(h), S.length > 0 && (t = setTimeout(() => a.Z.dispatch({
     type: "GUILD_VERIFICATION_CHECK",
@@ -108,7 +108,7 @@ function S(e) {
     guildId: n,
     user: r
   } = e;
-  if (r.id !== (null == (t = f.default.getCurrentUser()) ? void 0 : t.id)) return !1;
+  if (r.id !== (null == (t = _.default.getCurrentUser()) ? void 0 : t.id)) return !1;
   g.delete(n)
 }
 
@@ -124,7 +124,7 @@ function N(e) {
 }
 class C extends(r = i.ZP.Store) {
   initialize() {
-    this.waitFor(d.Z, u.Z, f.default)
+    this.waitFor(d.Z, u.Z, _.default)
   }
   getCheck(e) {
     var t;

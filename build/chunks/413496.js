@@ -9,8 +9,8 @@ var r = n(507604),
   c = n(713411),
   u = n(264750).f,
   d = n(568033),
-  f = n(933009),
-  _ = n(382698),
+  _ = n(933009),
+  f = n(382698),
   p = n(817282),
   h = n(751954),
   m = n(316096),
@@ -74,12 +74,12 @@ var r = n(507604),
 if (o("RegExp", B)) {
   for (var Z = function(e, t) {
       var n, r, i, a, o, c, u = d(N, this),
-        h = f(e),
+        h = _(e),
         m = void 0 === t,
         g = [],
         E = e;
       if (!u && h && m && e.constructor === Z) return e;
-      if ((h || d(N, e)) && (e = e.source, m && (t = p(E))), e = void 0 === e ? "" : _(e), t = void 0 === t ? "" : _(t), E = e, I && "dotAll" in M && (r = !!t && D(t, "s") > -1) && (t = w(t, /s/g, "")), n = t, U && "sticky" in M && (i = !!t && D(t, "y") > -1) && G && (t = w(t, /y/g, "")), T && (e = (a = F(e))[0], g = a[1]), o = s(A(e, t), u ? this : N, Z), (r || i || g.length) && (c = y(o), r && (c.dotAll = !0, c.raw = Z(V(e), n)), i && (c.sticky = !0), g.length && (c.groups = g)), e !== E) try {
+      if ((h || d(N, e)) && (e = e.source, m && (t = p(E))), e = void 0 === e ? "" : f(e), t = void 0 === t ? "" : f(t), E = e, I && "dotAll" in M && (r = !!t && D(t, "s") > -1) && (t = w(t, /s/g, "")), n = t, U && "sticky" in M && (i = !!t && D(t, "y") > -1) && G && (t = w(t, /y/g, "")), T && (e = (a = F(e))[0], g = a[1]), o = s(A(e, t), u ? this : N, Z), (r || i || g.length) && (c = y(o), r && (c.dotAll = !0, c.raw = Z(V(e), n)), i && (c.sticky = !0), g.length && (c.groups = g)), e !== E) try {
         l(o, "source", "" === E ? "(?:)" : E)
       } catch (e) {}
       return o

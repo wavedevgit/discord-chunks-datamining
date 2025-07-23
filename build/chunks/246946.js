@@ -37,7 +37,7 @@ function d(e, t) {
     automatic: t
   })
 }
-let f = {
+let _ = {
     enabled: !1,
     autoToggle: !0,
     hideInstantInvites: !0,
@@ -46,20 +46,20 @@ let f = {
     disableNotifications: !0,
     enableContentProtection: !1
   },
-  _ = {},
-  p = u({}, f);
+  f = {},
+  p = u({}, _);
 
 function h(e) {
-  let t = _[e];
-  return null == t && (t = _[e] = u({}, f)), t
+  let t = f[e];
+  return null == t && (t = f[e] = u({}, _)), t
 }
 
 function m(e) {
-  e.isSwitchingAccount || (_ = {})
+  e.isSwitchingAccount || (f = {})
 }
 
 function g(e) {
-  e.userId in _ && delete _[e.userId]
+  e.userId in f && delete f[e.userId]
 }
 
 function E(e) {
@@ -91,13 +91,13 @@ function b(e) {
 }
 class y extends(r = i.ZP.PersistedStore) {
   initialize(e) {
-    Object.assign(_, e), this.syncWith([s.default], () => {
+    Object.assign(f, e), this.syncWith([s.default], () => {
       let e = s.default.getId();
-      p = null != e ? h(e) : u({}, f)
+      p = null != e ? h(e) : u({}, _)
     })
   }
   getState() {
-    return _
+    return f
   }
   getSettings() {
     return p

@@ -52,7 +52,7 @@ async function u(e) {
   let n = [];
   o.intl.setLocale(e), n.push(), n.push((async () => {
     await (0, s.f)(), await (0, i.loadAllMessagesInLocale)(e)
-  })()), null != r && (r.setLocale(e), n.push(r.loadPromise)), n.push(d(e)), n.push(f(e)), n.push(_(e)), await Promise.all(n).catch(n => t.setLoadingFailed(n, e)), t.setLoadingSucceeded(e)
+  })()), null != r && (r.setLocale(e), n.push(r.loadPromise)), n.push(d(e)), n.push(_(e)), n.push(f(e)), await Promise.all(n).catch(n => t.setLoadingFailed(n, e)), t.setLoadingSucceeded(e)
 }
 async function d(e) {
   let t = n(602473).q[e];
@@ -65,7 +65,7 @@ async function d(e) {
     t(e, r)
   }
 }
-async function f(e) {
+async function _(e) {
   let t = n(352968).y[e];
   null != t && await t();
   let r = [],
@@ -74,7 +74,7 @@ async function f(e) {
   r.push("en-US"), n(913527).locale(r)
 }
 
-function _(e) {
+function f(e) {
   let {
     setTags: t
   } = n(960048).Z;

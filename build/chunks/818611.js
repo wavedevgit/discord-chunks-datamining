@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(399606),
   u = n(481060),
   d = n(727637),
-  f = n(597688),
-  _ = n(884697),
+  _ = n(597688),
+  f = n(884697),
   p = n(74538),
   h = n(864106),
   m = n(439959),
@@ -104,11 +104,11 @@ let A = 3,
       section: o,
       isSelected: s = !1
     } = e, h = T(e, ["user", "avatarDecoration", "innerRef", "section", "isSelected"]);
-    let y = (0, c.e7)([f.Z], () => {
-        let e = f.Z.getProduct(n.skuId);
-        return (0, _.G1)(e)
+    let y = (0, c.e7)([_.Z], () => {
+        let e = _.Z.getProduct(n.skuId);
+        return (0, f.G1)(e)
       }),
-      v = (0, _.Yq)(n.skuId),
+      v = (0, f.Yq)(n.skuId),
       S = p.ZP.canUseCollectibles(t),
       A = o === m.$0.PREMIUM_PURCHASE && !S,
       C = i.useRef(null),
@@ -163,13 +163,13 @@ let A = 3,
       selectedAvatarDecorationRef: a,
       onSelect: o,
       onOpenShop: l
-    } = e, c = (0, m.ZP)(), d = (e, d, f, _) => {
+    } = e, c = (0, m.ZP)(), d = (e, d, _, f) => {
       let {
         section: p,
         items: g
       } = c[e];
       return (0, s.EQ)(g[d]).with(m.Tm, () => (0, r.jsxs)(w, {
-        style: O({}, f),
+        style: O({}, _),
         isSelected: null === i,
         onSelect: () => o(null),
         children: [(0, r.jsx)(u.t6m, {
@@ -181,8 +181,8 @@ let A = 3,
           color: "header-primary",
           children: (0, h.ad)(t, n) ? E.intl.string(E.t.CHf9iI) : E.intl.string(E.t.PoWNfX)
         })]
-      }, _)).with(m.oT, () => (0, r.jsxs)(w, {
-        style: f,
+      }, f)).with(m.oT, () => (0, r.jsxs)(w, {
+        style: _,
         onSelect: l,
         children: [(0, r.jsx)(u.EOn, {
           size: "custom",
@@ -195,19 +195,19 @@ let A = 3,
           color: "header-primary",
           children: E.intl.string(E.t.pWG4zc)
         })]
-      }, _)).otherwise(e => {
+      }, f)).otherwise(e => {
         let n = (null == i ? void 0 : i.id) === e.id;
         return (0, r.jsx)(D, {
-          style: O({}, f),
+          style: O({}, _),
           user: t,
           avatarDecoration: e,
           section: p,
           innerRef: n ? a : void 0,
           isSelected: n,
           onSelect: () => o(e)
-        }, _)
+        }, f)
       })
-    }, f = (e, t) => {
+    }, _ = (e, t) => {
       let {
         header: n
       } = c[e];
@@ -237,7 +237,7 @@ let A = 3,
       paddingVertical: 0,
       removeEdgeItemGutters: !0,
       renderItem: d,
-      renderSection: f,
+      renderSection: _,
       getSectionHeight: e => c[e].height,
       getItemKey: (e, t) => c[e].items[t].id,
       getItemHeight: P

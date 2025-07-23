@@ -13,8 +13,8 @@ var r = n(73800),
   c = n(5881),
   u = n(566078),
   d = n(46140),
-  f = n(474936),
-  _ = n(388032);
+  _ = n(474936),
+  f = n(388032);
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -57,7 +57,7 @@ function g(e, t) {
 let E = (0, c.T)({});
 
 function b(e, t, n) {
-  return n ? _.intl.formatToParts(e, t) : _.intl.formatToPlainString(e, t)
+  return n ? f.intl.formatToParts(e, t) : f.intl.formatToPlainString(e, t)
 }
 
 function y(e) {
@@ -73,9 +73,9 @@ function y(e) {
       targetMinutes: c
     } = r,
     d = n.config.messages.gameTitle,
-    f = (0, l.f$)(n.config),
+    _ = (0, l.f$)(n.config),
     p = (0, l._p)(n.config);
-  return b(t = a && f ? p ? _.t["eb/SnZ"] : _.t.ziB0HB : f || null != o ? _.t.AwuMRU : _.t.NIimTk, {
+  return b(t = a && _ ? p ? f.t["eb/SnZ"] : f.t.ziB0HB : _ || null != o ? f.t.AwuMRU : f.t.NIimTk, {
     gameTitle: d,
     streamingDurationRequirement: c,
     rewardNameWithArticle: s,
@@ -97,9 +97,9 @@ function O(e) {
       targetMinutes: c
     } = r,
     d = n.config.messages.gameTitle,
-    f = (0, l.f$)(n.config),
+    _ = (0, l.f$)(n.config),
     p = (0, l._p)(n.config);
-  return b(t = a && f ? p ? _.t["eb/SnZ"] : _.t.ziB0HB : f || null != o ? _.t.AwuMRU : _.t.NIimTk, {
+  return b(t = a && _ ? p ? f.t["eb/SnZ"] : f.t.ziB0HB : _ || null != o ? f.t.AwuMRU : f.t.NIimTk, {
     gameTitle: d,
     targetMinutes: c,
     rewardNameWithArticle: s,
@@ -121,9 +121,9 @@ function v(e) {
       targetMinutes: c
     } = r,
     d = n.config.messages.gameTitle,
-    f = (0, l.f$)(n.config),
+    _ = (0, l.f$)(n.config),
     p = (0, l._p)(n.config);
-  return b(t = a && f ? p ? _.t["eb/SnZ"] : _.t.ziB0HB : f || null != o ? _.t.AwuMRU : _.t.FZL5Q0, {
+  return b(t = a && _ ? p ? f.t["eb/SnZ"] : f.t.ziB0HB : _ || null != o ? f.t.AwuMRU : f.t.FZL5Q0, {
     gameTitle: d,
     streamingDurationRequirement: c,
     rewardNameWithArticle: s,
@@ -140,7 +140,7 @@ function I(e) {
   } = e, {
     targetMinutes: i
   } = n, a = t.config.messages.gameTitle;
-  return b(_.t["a/ia7O"], {
+  return b(f.t["a/ia7O"], {
     gameTitle: a,
     streamingDurationRequirement: i
   }, r)
@@ -151,9 +151,9 @@ function T(e, t, n, r) {
   let a, o = u.r.build(e.config).defaultWatchVideoTask,
     s = null != (i = null == o ? void 0 : o.messages.videoTitle) ? i : "video",
     c = u.r.build(e.config).defaultRewardNameWithArticle,
-    f = (0, l.f$)(e.config),
+    _ = (0, l.f$)(e.config),
     p = (0, l._p)(e.config);
-  return b(a = f && n ? p ? _.t["xqX+r6"] : _.t["vs/xBg"] : f || null != t ? _.t["W/HkLC"] : e.id === d.V6 ? _.t.Rsd5bG : _.t["g+InPD"], {
+  return b(a = _ && n ? p ? f.t["xqX+r6"] : f.t["vs/xBg"] : _ || null != t ? f.t["W/HkLC"] : e.id === d.V6 ? f.t.Rsd5bG : f.t["g+InPD"], {
     videoTitle: s,
     rewardNameWithArticle: c,
     duration: t
@@ -166,7 +166,7 @@ function S(e) {
     taskDetails: n,
     withoutMarkdown: r
   } = e, i = n.targetMinutes, a = u.r.build(t.config).defaultRewardNameWithArticle;
-  return b(_.t.VYwSSk, {
+  return b(f.t.VYwSSk, {
     streamingDurationRequirement: i,
     questReward: a
   }, r)
@@ -185,9 +185,9 @@ function A(e) {
       targetMinutes: c
     } = r,
     d = n.config.messages.gameTitle,
-    f = (0, l.f$)(n.config),
+    _ = (0, l.f$)(n.config),
     p = (0, l._p)(n.config);
-  return b(t = a && f ? p ? _.t["X8Yt//"] : _.t.smG9qq : f || null != o ? _.t.BLyDvL : _.t["hkJ+Gh"], {
+  return b(t = a && _ ? p ? f.t["X8Yt//"] : f.t.smG9qq : _ || null != o ? f.t.BLyDvL : f.t["hkJ+Gh"], {
     gameTitle: d,
     streamingDurationRequirement: c,
     duration: o,
@@ -202,7 +202,7 @@ function N(e) {
     thirdPartyTaskDetails: r,
     withoutMarkdown: i,
     currentUser: a
-  } = e, s = (0, o.I5)(a, f.p9.TIER_2), c = (0, l.Kr)(t.config);
+  } = e, s = (0, o.I5)(a, _.p9.TIER_2), c = (0, l.Kr)(t.config);
   if ((0, l.$J)(t) && (0, l.$H)(t)) return y({
     quest: t,
     taskDetails: n,
@@ -302,10 +302,10 @@ function L(e) {
   switch (D(t)) {
     case 0:
     case 1:
-      return _.intl.string(_.t.l7E81t);
+      return f.intl.string(f.t.l7E81t);
     case 2:
-      return _.intl.string(_.t.umdNio);
+      return f.intl.string(f.t.umdNio);
     case 3:
-      return t.config.features.includes(d.S7.START_QUEST_CTA) ? _.intl.string(_.t.ToGcxM) : _.intl.string(_.t.l7E81t)
+      return t.config.features.includes(d.S7.START_QUEST_CTA) ? f.intl.string(f.t.ToGcxM) : f.intl.string(f.t.l7E81t)
   }
 }

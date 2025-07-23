@@ -29,20 +29,20 @@ function u(e) {
     (0, s.Mr)(c, u)
   }));
   let d = r.useRef(!0),
-    f = {
+    _ = {
       contextKey: u,
       modalKey: c,
       onCloseCallback: i
     },
-    _ = r.useRef(f);
+    f = r.useRef(_);
   return r.useEffect(() => {
-    _.current = f
+    f.current = _
   }), r.useLayoutEffect(() => {
     let {
       contextKey: e,
       modalKey: r,
       onCloseCallback: i
-    } = _.current;
+    } = f.current;
     d.current || (0, s.o)(r, t, n, i, e), d.current = !1
   }, [t, n]), null
 }
