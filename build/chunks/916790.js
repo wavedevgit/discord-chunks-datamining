@@ -1,7 +1,7 @@
 /** Chunk was on 93886 **/
 a.d(t, {
   Z: () => Z
-}), a(35282), a(388685), a(49124), a(781311);
+}), a(35282), a(388685), a(49124), a(975844), a(781311);
 var n = a(255367),
   r = a(73800),
   l = a(120356),
@@ -207,6 +207,15 @@ let R = [{
       } = e;
       return "".concat(E(t.totalTime), " ms")
     }
+  }, {
+    key: "timestamp",
+    cellClassName: O.totalTimeColumn,
+    render(e) {
+      let {
+        actionLog: t
+      } = e;
+      return c()(t.createdAt).format("HH:mm:ss.SSS")
+    }
   }],
   k = {
     searchType: p.S.REGEX,
@@ -235,7 +244,7 @@ function Z() {
     o = r.useMemo(() => l.map(e => ({
       key: e.id.toString(),
       actionLog: e
-    })), [l]),
+    })).toReversed(), [l]),
     [c, d] = r.useState(o),
     [x, p] = r.useState(o),
     [b, f] = r.useState(!1),
