@@ -93,8 +93,8 @@ let R = [P.x_.LEAF, P.x_.SWORD, P.x_.HEART, P.x_.FIRE, P.x_.WATER_DROP, P.x_.SKU
     });
     if (null == k || null == _) return null;
     let A = a.Y.VISIBLE.has(_.visibility),
-      L = (0, p.up)(k),
-      F = !L || (null == _ ? void 0 : _.tag) == null,
+      F = (0, p.up)(k),
+      L = !F || (null == _ ? void 0 : _.tag) == null,
       D = null != (e = _.badge) ? e : R[0],
       B = null != (r = _.badgeColorPrimary) ? r : O[0].primary,
       M = null != (t = _.badgeColorSecondary) ? t : O[0].secondary,
@@ -102,7 +102,7 @@ let R = [P.x_.LEAF, P.x_.SWORD, P.x_.HEART, P.x_.FIRE, P.x_.WATER_DROP, P.x_.SKU
         children: [(0, n.jsx)(v.Z, {
           className: T.section,
           guildId: k.id,
-          isDisabled: F,
+          isDisabled: L,
           tag: null != (P = _.tag) ? P : "",
           badge: D,
           primaryColor: B,
@@ -150,7 +150,7 @@ let R = [P.x_.LEAF, P.x_.SWORD, P.x_.HEART, P.x_.FIRE, P.x_.WATER_DROP, P.x_.SKU
                 })
               })
             })]
-          }), L ? (0, n.jsxs)("div", {
+          }), F ? (0, n.jsxs)("div", {
             className: T.enableSwitchContainer,
             children: [(0, n.jsx)("label", {
               htmlFor: "enable-server-tag",
@@ -161,9 +161,9 @@ let R = [P.x_.LEAF, P.x_.SWORD, P.x_.HEART, P.x_.FIRE, P.x_.WATER_DROP, P.x_.SKU
               })
             }), (0, n.jsx)(o.rsf, {
               id: "enable-server-tag",
-              checked: !F,
+              checked: !L,
               onChange: () => {
-                if (F) {
+                if (L) {
                   var e;
                   g.Z.updateGuildProfile(k.id, {
                     tag: null != (e = _.tag) ? e : "",
@@ -183,7 +183,7 @@ let R = [P.x_.LEAF, P.x_.SWORD, P.x_.HEART, P.x_.FIRE, P.x_.WATER_DROP, P.x_.SKU
                 (0, h.Z)(k.id, c.Z.GUILD_POWERUPS_GUILD_SETTINGS_TAGS), g.Z.close()
               }
             })
-          }), F ? (0, n.jsx)(o.nuw, {
+          }), L ? (0, n.jsx)(o.nuw, {
             children: (0, n.jsx)("div", {
               className: T.disabledForm,
               children: U
@@ -197,7 +197,7 @@ let R = [P.x_.LEAF, P.x_.SWORD, P.x_.HEART, P.x_.FIRE, P.x_.WATER_DROP, P.x_.SKU
             badge: D,
             primaryColor: B,
             secondaryColor: M
-          }), !F && (0, n.jsx)(b.Z, {
+          }), !L && (0, n.jsx)(b.Z, {
             guildId: k.id
           })]
         })]

@@ -12,7 +12,8 @@ function s(e) {
     onChange: t,
     error: s,
     disabled: l,
-    className: o
+    className: o,
+    autoFocus: c = !1
   } = e;
   return (0, n.jsx)(i.Z, {
     prefix: "".concat(a.mf, "/"),
@@ -23,6 +24,7 @@ function s(e) {
     maxLength: 25,
     error: s,
     disabled: l,
-    className: o
+    className: o,
+    autoFocus: c
   })
 }
