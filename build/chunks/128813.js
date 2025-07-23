@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Qw: () => u,
-  ZP: () => f,
+  ZP: () => _,
   mX: () => o,
   oC: () => l
 }), n(415506);
@@ -36,7 +36,7 @@ function o() {
         webpackId: 718493
       }))
     })();
-    return _(e), e
+    return f(e), e
   }
 }
 
@@ -62,7 +62,7 @@ function d() {
   return null != (e = window._libdiscoreInitPromise) ? e : null
 }
 
-function _(e) {
+function f(e) {
   window._libdiscoreInitPromise = e
 }
-let f = u
+let _ = u

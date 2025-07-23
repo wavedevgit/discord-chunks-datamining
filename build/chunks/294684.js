@@ -10,8 +10,8 @@ var r = n(98405),
   c = n(507604),
   u = n(394227),
   d = n(556585),
-  _ = n(573078),
-  f = n(477732),
+  f = n(573078),
+  _ = n(477732),
   p = n(25124),
   h = n(280481),
   m = n(199838),
@@ -127,7 +127,7 @@ var r = n(98405),
     return n
   },
   ed = /[!'()~]|%20/g,
-  e_ = {
+  ef = {
     "!": "%21",
     "'": "%27",
     "(": "%28",
@@ -135,11 +135,11 @@ var r = n(98405),
     "~": "%7E",
     "%20": "+"
   },
-  ef = function(e) {
-    return e_[e]
+  e_ = function(e) {
+    return ef[e]
   },
   ep = function(e) {
-    return J(Y(e), ed, ef)
+    return J(Y(e), ed, e_)
   },
   eh = h(function(e, t) {
     k(this, {
@@ -211,7 +211,7 @@ var eg = function() {
     c || (this.size = t.entries.length)
   },
   eE = eg.prototype;
-if (f(eE, {
+if (_(eE, {
     append: function(e, t) {
       var n = j(this);
       P(arguments.length, 2), Q(n.entries, {
@@ -283,7 +283,7 @@ if (f(eE, {
     return j(this).serialize()
   }, {
     enumerable: !0
-  }), c && _(eE, "size", {
+  }), c && f(eE, "size", {
     get: function() {
       return j(this).entries.length
     },

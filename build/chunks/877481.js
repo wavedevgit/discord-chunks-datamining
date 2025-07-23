@@ -12,8 +12,8 @@ var r = n(274616),
   c = n(906467),
   u = n(6132),
   d = n(830168),
-  _ = n(358085),
-  f = n(591759),
+  f = n(358085),
+  _ = n(591759),
   p = n(998502),
   h = n(981631);
 
@@ -64,7 +64,7 @@ let y = new i.Z("Games"),
   A = 36e5;
 
 function N() {
-  return null != I ? Promise.resolve(I) : (0, _.isDesktop)() ? p.ZP.ensureModule("discord_game_utils").then(() => {
+  return null != I ? Promise.resolve(I) : (0, f.isDesktop)() ? p.ZP.ensureModule("discord_game_utils").then(() => {
     let e = p.ZP.getGameUtils();
     return null != e && null != e.findLaunchable ? (I = e, e) : Promise.reject(Error("game utils not found"))
   }) : Promise.reject(Error("not desktop client"))
@@ -75,7 +75,7 @@ function C(e) {
       id: e.id,
       name: e.name,
       thirdPartySkus: e.thirdPartySkus,
-      executables: e.executables.filter(e => e.os === (0, _.getPlatformName)()).map(e => e.name)
+      executables: e.executables.filter(e => e.os === (0, f.getPlatformName)()).map(e => e.name)
     },
     n = e.aliases.map(e => b(g({}, t), {
       name: e
@@ -117,7 +117,7 @@ function w(e, t, n) {
 
 function D(e) {
   return y.info("launch", e), new Promise((t, n) => {
-    null == f.Z.safeParseWithQuery(e.launchTarget) ? n(Error("Failed to parse launch target. ".concat(e.launchTarget))) : (window.open(e.launchTarget), t([]))
+    null == _.Z.safeParseWithQuery(e.launchTarget) ? n(Error("Failed to parse launch target. ".concat(e.launchTarget))) : (window.open(e.launchTarget), t([]))
   })
 }
 let L = {
@@ -131,13 +131,13 @@ let L = {
     let {
       launchOptions: l,
       defaultLaunchOptionId: c,
-      installPath: _,
-      applicationId: f,
+      installPath: f,
+      applicationId: _,
       branchId: p,
       buildId: m,
       shouldPatch: g
     } = e;
-    if (null == l || null == c || null == _) throw Error("Couldn't construct launchable for ".concat(e.applicationId));
+    if (null == l || null == c || null == f) throw Error("Couldn't construct launchable for ".concat(e.applicationId));
     null == o && (o = c);
     let E = l[o];
     if (null == E) throw Error("Couldn't construct launchable for ".concat(e.applicationId, ". No launch option."));
@@ -148,8 +148,8 @@ let L = {
         liveBuildId: n
       } = t;
       if (g && n !== m) return Promise.reject(Error("live build id changed"))
-    }).then(() => d.Z.runLaunchSetup(f, p)).then(() => {
-      let e = (0, a.Z)(_),
+    }).then(() => d.Z.runLaunchSetup(_, p)).then(() => {
+      let e = (0, a.Z)(f),
         r = {
           DISCORD_INSTANCE_ID: u.Z.getId().toString(),
           DISCORD_ACCESS_TOKEN: null != t ? t : "",
@@ -157,15 +157,15 @@ let L = {
           DISCORD_CURRENT_BRANCH: i,
           DISCORD_STORAGE_PATH: h.SRg.ROOT_STORAGE_PATH(e, s.default.getId())
         };
-      return d.Z.launch(f, p, E.name, r)
+      return d.Z.launch(_, p, E.name, r)
     })
   },
-  removeShortcuts: e => (0, _.isWindows)() ? N().then(t => {
+  removeShortcuts: e => (0, f.isWindows)() ? N().then(t => {
     var n, r;
     return null != (r = null == (n = t.removeShortcuts) ? void 0 : n.call(t, e)) && r
   }) : Promise.resolve(!1),
   createShortcuts(e, t, n, r, i) {
-    if (null == i || !(0, _.isWindows)()) return Promise.resolve(!1);
+    if (null == i || !(0, f.isWindows)()) return Promise.resolve(!1);
     let a = "discord:///library/".concat(r, "/launch"),
       o = "".concat(i, "\\icon.ico");
     return N().then(r => {

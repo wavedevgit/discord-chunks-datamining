@@ -30,8 +30,8 @@ var a, o = n(348327),
   u = n(264344),
   d = n.n(u);
 n(804098);
-var _ = n(903772),
-  f = n(627420),
+var f = n(903772),
+  _ = n(627420),
   p = n(433517),
   h = n(298444),
   m = n(979675),
@@ -91,7 +91,7 @@ if (null != P) {
     o = P.os.arch,
     s = P.os.appArch,
     l = P.remoteApp.getReleaseChannel(),
-    c = (0, f.qf)();
+    c = (0, _.qf)();
   switch (n) {
     case "win32":
       e = "Windows";
@@ -114,7 +114,7 @@ if (null != P) {
       os_arch: o,
       app_arch: s,
       system_locale: c,
-      has_client_mods: (0, _.e)(),
+      has_client_mods: (0, f.e)(),
       client_launch_id: g.s
     }, (null == (a = d().name) ? void 0 : a.toLocaleLowerCase()) === "electron" && (r.browser_user_agent = d().ua || "", r.browser_version = d().version || ""), "linux" === n) {
     let e = P.crashReporter.getMetadata();
@@ -210,7 +210,7 @@ function G() {
 
 function B() {
   let e = {};
-  return e.os = j(), e.browser = k(), e.device = U(), e.system_locale = (0, f.qf)(), e.has_client_mods = (0, _.e)(), e
+  return e.os = j(), e.browser = k(), e.device = U(), e.system_locale = (0, _.qf)(), e.has_client_mods = (0, f.e)(), e
 }
 
 function V() {
@@ -254,10 +254,10 @@ function W() {
   let n = {},
     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
   r && (null == n.release_channel || "" === n.release_channel) && (n.release_channel = r.split("-")[0]);
-  let i = parseInt("422038", 10);
+  let i = parseInt("422061", 10);
   isNaN(i) || (n.client_build_number = i);
   let a = null == P || null == (e = (t = P.remoteApp).getBuildNumber) ? void 0 : e.call(t);
-  return isNaN(a) || (n.native_build_number = a), n.client_event_source = Y(), n.has_client_mods = (0, _.e)(), n.client_launch_id = g.s, n
+  return isNaN(a) || (n.native_build_number = a), n.client_event_source = Y(), n.has_client_mods = (0, f.e)(), n.client_launch_id = g.s, n
 }
 
 function K(e) {

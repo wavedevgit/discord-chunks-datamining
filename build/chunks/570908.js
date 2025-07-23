@@ -17,19 +17,19 @@ let c = i.forwardRef((e, t) => {
     decorators: c,
     name: u,
     subText: d,
-    avatarClassName: _,
-    innerClassName: f,
+    avatarClassName: f,
+    innerClassName: _,
     displayNameStyles: p,
     displayNameStyleEffects: h
   } = e;
   return (0, r.jsxs)("div", {
     ref: t,
-    className: o()(l.layout, f, {
+    className: o()(l.layout, _, {
       [l.muted]: n,
       [l.highlighted]: i
     }),
     children: [(0, r.jsx)("div", {
-      className: o()(l.avatar, _),
+      className: o()(l.avatar, f),
       children: a
     }), (0, r.jsxs)("div", {
       className: l.content,

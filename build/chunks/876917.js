@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => _
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -12,15 +12,15 @@ var r = n(255367),
   c = n(313305),
   u = n(241822);
 let d = .1,
-  _ = 250,
-  f = e => {
+  f = 250,
+  _ = e => {
     let {
       profileEffectId: t,
       isHovering: n,
       forCollectedModal: a = !1,
-      isPurchased: f,
+      isPurchased: _,
       removeSetHeight: p = !1
-    } = e, h = a ? _ : d, [m, g] = i.useState(!0);
+    } = e, h = a ? f : d, [m, g] = i.useState(!0);
     return (i.useEffect(() => {
       if (!0 !== a) g(!1);
       else {
@@ -42,7 +42,7 @@ let d = .1,
         className: a ? c.previewForCollected : c.preview,
         "aria-hidden": !0
       }), !m && (0, r.jsx)("div", {
-        className: f ? c.purchasedEffect : void 0,
+        className: _ ? c.purchasedEffect : void 0,
         children: (0, r.jsx)(l.Z, {
           profileEffectId: t,
           useThumbnail: !0,

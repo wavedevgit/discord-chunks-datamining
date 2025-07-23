@@ -32,7 +32,7 @@ function c(e) {
 let u = {},
   d = {};
 
-function _() {
+function f() {
   var e, t, n, r, i, a;
   let o = s.Z.settings;
   return {
@@ -42,8 +42,8 @@ function _() {
   }
 }
 
-function f() {
-  return d = _(), !1
+function _() {
+  return d = f(), !1
 }
 
 function p() {
@@ -69,7 +69,7 @@ function g(e) {
 }
 
 function E() {
-  let e = _(),
+  let e = f(),
     t = !1;
   for (let n in e) {
     let r = n;
@@ -79,7 +79,7 @@ function E() {
 }
 class b extends(r = i.ZP.PersistedStore) {
   initialize(e) {
-    u = null != e ? e : {}, this.syncWith([s.Z], f)
+    u = null != e ? e : {}, this.syncWith([s.Z], _)
   }
   getState() {
     return u

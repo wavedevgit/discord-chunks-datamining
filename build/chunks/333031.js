@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(772848),
   u = n(442837),
   d = n(902704),
-  _ = n(13245),
-  f = n(928518),
+  f = n(13245),
+  _ = n(928518),
   p = n(237997),
   h = n(358085),
   m = n(306381),
@@ -45,7 +45,7 @@ class I {
     var t;
     if (null == this.resizeObserver && (this.resizeObserver = new this.window.ResizeObserver(this.handleResize)), null == this.mutationObserver) {
       this.mutationObserver = new MutationObserver(this.handleMutations);
-      let e = f.Z.getWindow(b.$J);
+      let e = _.Z.getWindow(b.$J);
       null != e && this.mutationObserver.observe(null == e ? void 0 : e.document.body, {
         subtree: !0,
         attributes: !0
@@ -65,8 +65,8 @@ class I {
   }
   updateZones() {
     if (!h.isPlatformEmbedded) return;
-    let e = f.Z.getWindow(b.$J);
-    null != e && _.Z.setClickZones(Array.from(this.zones.values()).map(t => {
+    let e = _.Z.getWindow(b.$J);
+    null != e && f.Z.setClickZones(Array.from(this.zones.values()).map(t => {
       let {
         zone: n
       } = t;
@@ -114,8 +114,8 @@ function S(e) {
     style: a,
     children: s
   } = e, l = i.useContext(T), c = (0, u.e7)([g.ZP], () => g.ZP.hasRenderDebugMode(m.G.ClickZones)), d = (0, u.e7)([p.default], () => p.default.disableClickableRegions), [{
-    refHandler: _,
-    setObserve: f
+    refHandler: f,
+    setObserve: _
   }] = i.useState(() => {
     let e = null;
     return {
@@ -128,9 +128,9 @@ function S(e) {
     }
   });
   return i.useLayoutEffect(() => {
-    d ? f(!1) : f(t)
-  }, [t, f, d]), (0, r.jsx)("div", {
-    ref: _,
+    d ? _(!1) : _(t)
+  }, [t, _, d]), (0, r.jsx)("div", {
+    ref: f,
     style: a,
     className: o()(n, y.clickable, c && y.debugMode),
     "data-click-zone": !0,

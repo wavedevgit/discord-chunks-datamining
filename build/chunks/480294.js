@@ -32,14 +32,14 @@ let l = !1,
   u = {},
   d = null;
 
-function _(e) {
+function f(e) {
   let {
     consents: t
   } = e;
   null != t && (u = s({}, u, t), c = !0)
 }
 
-function f(e) {
+function _(e) {
   let {
     consents: t
   } = e;
@@ -79,8 +79,8 @@ class g extends(r = i.ZP.Store) {
 }
 o(g, "displayName", "ConsentStore");
 let E = new g(a.Z, {
-  CONNECTION_OPEN: _,
-  OVERLAY_INITIALIZE: f,
+  CONNECTION_OPEN: f,
+  OVERLAY_INITIALIZE: _,
   UPDATE_CONSENTS: p,
   SET_CONSENT_REQUIRED: h,
   LOGOUT: m

@@ -13,8 +13,8 @@ var r = n(159635),
   c = n(139674),
   u = n(702321),
   d = n(900460),
-  _ = n(627714),
-  f = n(364640),
+  f = n(627714),
+  _ = n(364640),
   p = n(772096),
   h = n(982806),
   m = n(540709),
@@ -95,7 +95,7 @@ function R(e, t) {
       target: M
     })
   }
-  if (f.Z.trackLinkClicked(M), null != C) {
+  if (_.Z.trackLinkClicked(M), null != C) {
     if (C(t)) return
   } else {
     let {
@@ -107,7 +107,7 @@ function R(e, t) {
     if (null != i && i(t)) return
   }
   let H = () => {
-      if (j && f.Z.trackAnnouncementMessageLinkClicked({
+      if (j && _.Z.trackAnnouncementMessageLinkClicked({
           messageId: U,
           channelId: L,
           guildId: k,
@@ -125,14 +125,14 @@ function R(e, t) {
     null == t || t.preventDefault(), m.Z.show(M);
     return
   }
-  if ((0, _.I)(M)) {
+  if ((0, f.I)(M)) {
     null == t || t.preventDefault(), d.Z.show(M);
     return
   }
   let W = "function" == typeof T ? T() : T,
     K = (0, O.E)(M),
     z = "http:" !== K && "https:" !== K;
-  if (!z && (W || y.Z.isTrustedDomain(M)) || z && y.Z.isTrustedProtocol(M)) return void(null == t || null != w && w ? H() : j && f.Z.trackAnnouncementMessageLinkClicked({
+  if (!z && (W || y.Z.isTrustedDomain(M)) || z && y.Z.isTrustedProtocol(M)) return void(null == t || null != w && w ? H() : j && _.Z.trackAnnouncementMessageLinkClicked({
     messageId: U,
     channelId: L,
     guildId: k,

@@ -44,27 +44,27 @@ function o(e) {
     green: n,
     blue: r,
     alpha: i
-  } = e, a = t / 255, o = n / 255, s = r / 255, l = Math.max(a, o, s), c = Math.min(a, o, s), u = l - c, d = (l + c) / 2, _ = u > 0 ? u / (1 - Math.abs(2 * d - 1)) : 0;
+  } = e, a = t / 255, o = n / 255, s = r / 255, l = Math.max(a, o, s), c = Math.min(a, o, s), u = l - c, d = (l + c) / 2, f = u > 0 ? u / (1 - Math.abs(2 * d - 1)) : 0;
   if (0 === u) return {
     hue: 0,
-    saturation: _,
+    saturation: f,
     lightness: d,
     alpha: i
   };
-  let f = 0;
+  let _ = 0;
   switch (l) {
     case a:
-      f = (o - s) / u % 6;
+      _ = (o - s) / u % 6;
       break;
     case o:
-      f = (s - a) / u + 2;
+      _ = (s - a) / u + 2;
       break;
     case s:
-      f = (o - s) / u + 4
+      _ = (o - s) / u + 4
   }
   return {
-    hue: 60 * f,
-    saturation: _,
+    hue: 60 * _,
+    saturation: f,
     lightness: d,
     alpha: i
   }

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => _
 });
 var r = n(255367);
 n(73800);
@@ -44,23 +44,23 @@ function d(e, t) {
   return n
 }
 
-function _(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function f(e) {
+function _(e) {
   let {
     icon: t,
     tooltipText: n,
     tooltipAriaLabel: i,
     className: c,
     onTooltipShow: d
-  } = e, f = (0, o.vjg)(o.Skl.ONLINE);
+  } = e, _ = (0, o.vjg)(o.Skl.ONLINE);
   return null == n ? (0, r.jsx)(t, {
     size: "custom",
-    color: f,
+    color: _,
     className: a()(l.icon, c)
   }) : (0, r.jsx)(o.ua7, {
     text: n,
@@ -68,9 +68,9 @@ function f(e) {
     tooltipContentClassName: l.container,
     delay: s.X,
     onTooltipShow: d,
-    children: e => (0, r.jsx)(t, _(u({}, e), {
+    children: e => (0, r.jsx)(t, f(u({}, e), {
       size: "custom",
-      color: f,
+      color: _,
       className: a()(l.icon, c)
     }))
   })

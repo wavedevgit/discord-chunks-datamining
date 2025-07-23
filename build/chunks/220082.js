@@ -17,7 +17,7 @@ var r = n(73800),
   u = n(302221),
   d = n(956664);
 
-function _(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -26,14 +26,14 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
@@ -69,7 +69,7 @@ async function E(e) {
 async function b(e) {
   if (!m.getState().fetching[e]) {
     (0, s.j)(() => m.setState(t => ({
-      fetching: h(f({}, t.fetching), {
+      fetching: h(_({}, t.fetching), {
         [e]: !0
       })
     })));
@@ -78,17 +78,17 @@ async function b(e) {
         n = (0, u.WY)(t[0]);
       (0, s.j)(() => {
         m.setState(r => ({
-          fetching: h(f({}, r.fetching), {
+          fetching: h(_({}, r.fetching), {
             [e]: !1
           }),
-          palette: h(f({}, r.palette), {
+          palette: h(_({}, r.palette), {
             [e]: [...t.slice(0, 2), ...n]
           })
         }))
       })
     } catch (t) {
       (0, s.j)(() => m.setState(t => ({
-        fetching: h(f({}, t.fetching), {
+        fetching: h(_({}, t.fetching), {
           [e]: !1
         })
       })))

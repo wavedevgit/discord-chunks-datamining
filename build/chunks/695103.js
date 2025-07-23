@@ -9,9 +9,9 @@ var o, s = n(442837),
   c = n(238514),
   u = n(695346),
   d = n(581883),
-  _ = n(283595);
+  f = n(283595);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -27,7 +27,7 @@ function p(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -79,7 +79,7 @@ function T(e) {
 }
 class S extends(o = s.ZP.PersistedStore) {
   initialize(e) {
-    r = (m = p({}, null != e ? e : h)).applicationId, i = m.originURL, this.waitFor(d.Z, c.Z), this.syncWith([d.Z, c.Z], () => !0), _.Z.whenInitialized(() => {
+    r = (m = p({}, null != e ? e : h)).applicationId, i = m.originURL, this.waitFor(d.Z, c.Z), this.syncWith([d.Z, c.Z], () => !0), f.Z.whenInitialized(() => {
       E = !0
     })
   }
@@ -119,7 +119,7 @@ class S extends(o = s.ZP.PersistedStore) {
     })
   }
 }
-f(S, "displayName", "TestModeStore"), f(S, "persistKey", "TestModeStore");
+_(S, "displayName", "TestModeStore"), _(S, "persistKey", "TestModeStore");
 let A = new S(l.Z, {
   DEVELOPER_TEST_MODE_AUTHORIZATION_START: O,
   DEVELOPER_TEST_MODE_AUTHORIZATION_SUCCESS: v,

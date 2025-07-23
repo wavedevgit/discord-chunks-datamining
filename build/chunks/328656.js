@@ -13,7 +13,7 @@ var r = n(255367),
   u = n(463194),
   d = n(541195);
 
-function _(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,14 +22,14 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
@@ -41,9 +41,9 @@ function p(e) {
     className: n
   } = e, {
     gamesToDisplay: a,
-    lastGameToDisplay: _,
+    lastGameToDisplay: f,
     remainingGames: p
-  } = (0, l.Z)(t), h = i.useMemo(() => t.traits.map((e, t) => f({
+  } = (0, l.Z)(t), h = i.useMemo(() => t.traits.map((e, t) => _({
     key: "trait-".concat(t)
   }, e)).filter(e => e.label.length > 0), [t]), m = t.description.length > 0;
   return m || a.length > 0 || h.length > 0 ? (0, r.jsxs)("div", {
@@ -54,7 +54,7 @@ function p(e) {
       children: t.description
     }) : null, (0, r.jsx)(c.Z, {
       gamesToDisplay: a,
-      lastGameToDisplay: _,
+      lastGameToDisplay: f,
       remainingGames: p,
       activity: t.gameActivity
     }), (0, r.jsx)(u.F, {

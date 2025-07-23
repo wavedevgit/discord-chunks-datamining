@@ -23,7 +23,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function _(e) {
   return e
 }
 
-function f(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,7 +48,7 @@ function f(e, t) {
 }
 
 function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -902,15 +902,15 @@ function eo(e) {
     children: l,
     className: c,
     style: d,
-    "aria-label": f
+    "aria-label": _
   } = e, m = h(e, ["mask", "width", "height", "rightOverhang", "bottomOverhang", "children", "className", "style", "aria-label"]);
-  return (0, r.jsx)("svg", p(_({
+  return (0, r.jsx)("svg", p(f({
     width: n + a,
     height: i + s,
     className: o()(u.svg, c),
     viewBox: "0 0 ".concat(n + a, " ").concat(i + s),
     style: d,
-    "aria-label": f
+    "aria-label": _
   }, m), {
     children: (0, r.jsx)("foreignObject", {
       x: 0,

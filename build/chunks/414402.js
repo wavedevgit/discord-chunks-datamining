@@ -19,23 +19,23 @@ function d(e) {
     activity: n,
     onAction: d
   } = e, {
-    themeType: _
+    themeType: f
   } = (0, o.z)();
   if (!(0, i.Z)(n, c.xjy.INSTANCE)) return null;
-  let f = e => {
+  let _ = e => {
     e.stopPropagation(), null == d || d({
       action: "PRESS_NOTIFY_BUTTON"
     }), new a.Z("UserActivityActions").log("notify", t.id, n)
   };
-  return _ === l.lY.MODAL_V2 ? (0, r.jsx)(s.tG, {
+  return f === l.lY.MODAL_V2 ? (0, r.jsx)(s.tG, {
     text: u.intl.string(u.t.vwl1PD),
     size: "tiny",
     themeColor: "secondary",
-    onClick: f
+    onClick: _
   }) : (0, r.jsx)(s.tG, {
     text: u.intl.string(u.t.vwl1PD),
     themeColor: "secondary",
     fullWidth: !0,
-    onClick: f
+    onClick: _
   })
 }

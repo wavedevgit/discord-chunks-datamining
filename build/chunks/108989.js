@@ -47,8 +47,8 @@ function c(e, t) {
 }
 let u = [n(123353)],
   d = ["#FFFFFF"],
-  _ = 6,
-  f = 1e3 / 60,
+  f = 6,
+  _ = 1e3 / 60,
   p = {
     velocity: {
       type: "static-random",
@@ -118,17 +118,17 @@ function h(e) {
         type: "static-random",
         minValue: {
           x: -t.width / 2,
-          y: -_
+          y: -f
         },
         maxValue: {
           x: t.width,
-          y: -_
+          y: -f
         }
       }
     }))
   }, [O, b, m]);
   return i.useEffect(() => {
-    let e = n ? setInterval(I, f) : null;
+    let e = n ? setInterval(I, _) : null;
     return () => clearInterval(e)
   }, [n, I]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.O_, {
@@ -139,8 +139,8 @@ function h(e) {
       ref: E,
       colors: h,
       sprites: l,
-      spriteWidth: _,
-      spriteHeight: _
+      spriteWidth: f,
+      spriteHeight: f
     })]
   })
 }

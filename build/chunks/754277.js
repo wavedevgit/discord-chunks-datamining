@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => _
 });
 var r, i = n(442837),
   a = n(570140);
@@ -34,7 +34,7 @@ function u(e) {
 function d() {
   l = !1
 }
-class _ extends(r = i.ZP.DeviceSettingsStore) {
+class f extends(r = i.ZP.DeviceSettingsStore) {
   initialize(e) {
     null != e && (s = e)
   }
@@ -48,8 +48,8 @@ class _ extends(r = i.ZP.DeviceSettingsStore) {
     return s
   }
 }
-o(_, "displayName", "StageMusicStore"), o(_, "persistKey", "StageMusicStore");
-let f = new _(a.Z, {
+o(f, "displayName", "StageMusicStore"), o(f, "persistKey", "StageMusicStore");
+let _ = new f(a.Z, {
   STAGE_MUSIC_MUTE: c,
   STAGE_MUSIC_PLAY: u,
   VOICE_CHANNEL_SELECT: d

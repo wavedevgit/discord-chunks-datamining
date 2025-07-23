@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(933557),
   u = n(209698),
   d = n(592125),
-  _ = n(814454),
-  f = n(473919),
+  f = n(814454),
+  _ = n(473919),
   p = n(170187),
   h = n(532657),
   m = n(981631),
@@ -55,7 +55,7 @@ function y(e) {
   } = e, I = (0, a.e7)([d.Z], () => d.Z.getChannel(t.channelId)), T = (0, c.ZP)(I), {
     analyticsLocations: S
   } = (0, s.ZP)(), A = i.useCallback(() => {
-    (0, _.A)({
+    (0, f.A)({
       analyticsLocations: S,
       activityType: m.IIU.STREAMING,
       voiceChannelId: t.channelId
@@ -68,7 +68,7 @@ function y(e) {
     }) : g.intl.string(g.t.eXan7O),
     R = !O && null != I && null != T;
   return (0, r.jsxs)(r.Fragment, {
-    children: [!b && (0, r.jsx)(f.Z, {
+    children: [!b && (0, r.jsx)(_.Z, {
       icon: o.ARS,
       tooltipText: R ? T : void 0,
       tooltipAriaLabel: R ? (0, l.ZP)({
@@ -94,7 +94,7 @@ function O(e) {
     textClassName: s,
     iconClassName: l,
     hideIcon: u = !1,
-    hideText: _ = !1,
+    hideText: f = !1,
     hideTooltip: p = !1,
     canTruncate: m = !0,
     showChannelName: E = !1
@@ -106,7 +106,7 @@ function O(e) {
     children: [v, " (", y, ")"]
   }) : v, S = E ? T : v, A = null != y ? "".concat(I, " (").concat(y, ")") : I;
   return (0, r.jsx)(h.Z, {
-    icon: u ? void 0 : (0, r.jsx)(f.Z, {
+    icon: u ? void 0 : (0, r.jsx)(_.Z, {
       icon: o.ARS,
       className: l
     }),
@@ -117,7 +117,7 @@ function O(e) {
     canTruncate: m,
     hideTooltip: p,
     "aria-label": A,
-    hideText: _
+    hideText: f
   })
 }
 

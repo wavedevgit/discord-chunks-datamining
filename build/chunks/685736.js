@@ -13,7 +13,7 @@ var r = n(348326),
   u = n(989263),
   d = n(513418);
 
-function _(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,14 +22,14 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
@@ -51,7 +51,7 @@ class h {
     }
   }
   constructor(e) {
-    if (_(this, "connectionId", null), _(this, "users", []), _(this, "members", []), _(this, "messages", []), e.length > 0) {
+    if (f(this, "connectionId", null), f(this, "users", []), f(this, "members", []), f(this, "messages", []), e.length > 0) {
       var t;
       let n = null == (t = e[0]) ? void 0 : t.connectionId,
         [r, i] = h.computeUsersAndMembers(e);
@@ -126,7 +126,7 @@ class m {
     let i = s.Z.messages(r.database),
       o = await i.get(e, t, n.id),
       c = a.Z.lastTimeConnectedChanged();
-    null != o && i.put(e, t, l.a.fromMessage(e, t, f({}, o.message, n), c))
+    null != o && i.put(e, t, l.a.fromMessage(e, t, _({}, o.message, n), c))
   }
   deleteOne(e, t, n, r) {
     s.Z.messagesTransaction(r).deleteMessage(e, t, n)
@@ -138,7 +138,7 @@ class m {
     s.Z.messagesTransaction(t).deleteGuild(e)
   }
   constructor() {
-    _(this, "actions", {
+    f(this, "actions", {
       CHANNEL_DELETE: (e, t) => this.handleChannelDelete(e, t),
       GUILD_DELETE: (e, t) => this.handleGuildDelete(e, t),
       LOAD_MESSAGES_SUCCESS: (e, t) => this.handleLoadMessagesSuccess(e, t),

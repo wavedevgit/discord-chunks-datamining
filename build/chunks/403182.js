@@ -21,8 +21,8 @@ var r = n(255367),
   c = n(594174),
   u = n(424218),
   d = n(74538),
-  _ = n(981631),
-  f = n(474936),
+  f = n(981631),
+  _ = n(474936),
   p = n(388032);
 let h = 524288e3,
   m = 524288e3;
@@ -100,7 +100,7 @@ function I(e) {
     n = d.ZP.getUserMaxFileSize(t);
   if (null == e) return n;
   let r = l.Z.getGuild(e);
-  return Math.max(null != r ? f.HO[r.premiumTier].limits.fileSize : _.mBz, n)
+  return Math.max(null != r ? _.HO[r.premiumTier].limits.fileSize : f.mBz, n)
 }
 
 function T(e, t) {
@@ -129,7 +129,7 @@ function C(e) {
     onClick: n
   } = e, i = (0, u.BU)(I(t) / 1024, {
     useKibibytes: !0
-  }), a = (0, u.BU)(f.Uq / 1024, {
+  }), a = (0, u.BU)(_.Uq / 1024, {
     useKibibytes: !0
   }), o = p.intl.formatToPlainString(p.t.q5fTZm, {
     maxSize: i

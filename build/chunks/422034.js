@@ -13,8 +13,8 @@ var r = n(255367),
   c = n(518950),
   u = n(357355),
   d = n(182294),
-  _ = n(388032),
-  f = n(556921);
+  f = n(388032),
+  _ = n(556921);
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -49,12 +49,12 @@ function m(e) {
     affinity: e,
     applyMask: t !== h.length - 1,
     size: p ? d.EF.SIZE_24 : d.EF.SIZE_32
-  }, e.id)), E = e => null != e.globalName ? e.globalName : e.username, b = i.useMemo(() => 3 === h.length ? _.intl.formatToPlainString(_.t.c7ETJC, {
+  }, e.id)), E = e => null != e.globalName ? e.globalName : e.username, b = i.useMemo(() => 3 === h.length ? f.intl.formatToPlainString(f.t.c7ETJC, {
     username: E(h[2])
-  }) : 2 === h.length ? _.intl.formatToPlainString(_.t.st8Rh4, {
+  }) : 2 === h.length ? f.intl.formatToPlainString(f.t.st8Rh4, {
     username: E(h[1]),
     otherUsername: E(h[0])
-  }) : 1 === h.length ? _.intl.formatToPlainString(_.t.dpjXPD, {
+  }) : 1 === h.length ? f.intl.formatToPlainString(f.t.dpjXPD, {
     username: E(h[0])
   }) : "", [h]);
   if (0 === h.length) return null;
@@ -75,14 +75,14 @@ function m(e) {
     })
   }
   return (0, r.jsxs)("div", {
-    className: o()(p ? f.premiumBrandRefreshContainer : f.container, n, {
-      [f.v2Container]: !p && c
+    className: o()(p ? _.premiumBrandRefreshContainer : _.container, n, {
+      [_.v2Container]: !p && c
     }),
     children: [(0, r.jsx)("div", {
-      className: f.iconContainer,
+      className: _.iconContainer,
       children: m
     }), (0, r.jsx)("div", {
-      className: f.textContainer,
+      className: _.textContainer,
       children: (0, r.jsx)(y, {})
     })]
   })
@@ -102,8 +102,8 @@ function g(e) {
     animateOnHover: !0
   });
   return (0, r.jsx)(l.qEK, h({
-    className: o()(f.icon, {
-      [f.mask]: n
+    className: o()(_.icon, {
+      [_.mask]: n
     }),
     src: a,
     "aria-label": t.username,

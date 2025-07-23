@@ -13,8 +13,8 @@ var r = n(73800),
   c = n(944486),
   u = n(176354),
   d = n(304852),
-  _ = n(199257),
-  f = n(981631),
+  f = n(199257),
+  _ = n(981631),
   p = n(185923),
   h = n(957825);
 
@@ -77,7 +77,7 @@ function b(e) {
     {
       topEmojis: P,
       newlyAddedEmojis: w
-    } = (0, _._)({
+    } = (0, f._)({
       guildId: null == y ? void 0 : y.getGuildId(),
       pickerIntention: n
     }),
@@ -89,7 +89,7 @@ function b(e) {
       newlyAddedEmojis: w,
       rowSize: m
     });
-  i.ZP.trackWithMetadata(n === p.Hz.REACTION ? f.rMx.REACTION_PICKER_OPENED : f.rMx.EXPRESSION_PICKER_OPENED, g({
+  i.ZP.trackWithMetadata(n === p.Hz.REACTION ? _.rMx.REACTION_PICKER_OPENED : _.rMx.EXPRESSION_PICKER_OPENED, g({
     width: r,
     tab: h.X1.EMOJI,
     badged: !1,

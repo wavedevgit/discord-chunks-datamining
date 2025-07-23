@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(592125),
   u = n(496675),
   d = n(449605),
-  _ = n(981631),
-  f = n(388032),
+  f = n(981631),
+  _ = n(388032),
   p = n(269363);
 
 function h(e) {
@@ -35,7 +35,7 @@ function h(e) {
         variant: "text-sm/normal",
         color: "none",
         className: p.emptyPreviewText,
-        children: null != a ? a : f.intl.string(f.t.uQZTBQ)
+        children: null != a ? a : _.intl.string(_.t.uQZTBQ)
       })]
     })
   })
@@ -47,7 +47,7 @@ function m(e) {
     className: n,
     noText: a = !1,
     noImage: o = !1
-  } = e, l = (0, s.e7)([c.Z], () => c.Z.getBasicChannel(t.channelId)), m = (0, s.e7)([u.Z], () => null != l && u.Z.canBasicChannel(_.S7T.CONNECT, l)), {
+  } = e, l = (0, s.e7)([c.Z], () => c.Z.getBasicChannel(t.channelId)), m = (0, s.e7)([u.Z], () => null != l && u.Z.canBasicChannel(f.S7T.CONNECT, l)), {
     previewUrl: g,
     isLoading: E
   } = (0, d.Z)(t.guildId, t.channelId, t.ownerId), b = i.useRef(E ? null : g);
@@ -60,7 +60,7 @@ function m(e) {
     isLoading: E,
     noText: a,
     noImage: o,
-    previewText: m ? void 0 : f.intl.string(f.t.pgUTZG)
+    previewText: m ? void 0 : _.intl.string(_.t.pgUTZG)
   }) : (0, r.jsx)("div", {
     className: n,
     children: (0, r.jsx)("img", {

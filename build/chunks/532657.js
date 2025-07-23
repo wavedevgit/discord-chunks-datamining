@@ -33,7 +33,7 @@ function d(e) {
   return e
 }
 
-function _(e, t) {
+function f(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -44,8 +44,8 @@ function _(e, t) {
   return n
 }
 
-function f(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -56,7 +56,7 @@ function p(e) {
     tooltipText: n,
     textVariant: a = "text-xs/medium",
     textClassName: u,
-    "aria-label": _,
+    "aria-label": f,
     icon: p,
     canTruncate: h = !0,
     hideTooltip: m = !1,
@@ -78,7 +78,7 @@ function p(e) {
   }, O = null != t && null == n && h, v = !m && (null != n || O || g);
   return null == p && g ? null : v ? (0, r.jsx)(s.ua7, {
     text: b(),
-    "aria-label": _,
+    "aria-label": f,
     tooltipContentClassName: o()(c.container, c.activitiesTooltip),
     delay: l.X,
     children: e => {
@@ -95,7 +95,7 @@ function p(e) {
           (null != n || t || g) && (null == i || i())
         },
         onMouseLeave: a,
-        children: [p, !g && (0, r.jsx)(s.Text, f(d({
+        children: [p, !g && (0, r.jsx)(s.Text, _(d({
           ref: E
         }, y), {
           children: t
@@ -103,7 +103,7 @@ function p(e) {
       })
     }
   }) : (0, r.jsxs)(r.Fragment, {
-    children: [p, !g && (0, r.jsx)(s.Text, f(d({}, y), {
+    children: [p, !g && (0, r.jsx)(s.Text, _(d({}, y), {
       children: t
     }))]
   })

@@ -13,7 +13,7 @@ var r = n(570140),
   u = n(914010),
   d = n(981631);
 
-function _(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -21,7 +21,7 @@ function _(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class f extends a.Z {
+class _ extends a.Z {
   handleGuildCreate(e) {
     let {
       guild: t
@@ -47,11 +47,11 @@ class f extends a.Z {
     })
   }
   constructor(...e) {
-    super(...e), _(this, "actions", {
+    super(...e), f(this, "actions", {
       GUILD_CREATE: this.handleGuildCreate,
       CHANNEL_CREATE: this.handleChannelCreate,
       LOGOUT: this.handleLogout
     })
   }
 }
-let p = new f
+let p = new _

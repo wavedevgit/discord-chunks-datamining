@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 }), n(388685);
 var r, i = n(442837),
   a = n(570140);
@@ -41,7 +41,7 @@ class d extends(r = i.ZP.Store) {
   }
 }
 o(d, "displayName", "LayerStore");
-let _ = new d(a.Z, {
+let f = new d(a.Z, {
   LAYER_PUSH: l,
   LAYER_POP: c,
   LAYER_POP_ALL: u,

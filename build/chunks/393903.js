@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  s: () => _,
-  y: () => f
+  s: () => f,
+  y: () => _
 }), n(368063), n(358797), n(388685);
 var r = n(73800),
   i = n(889711),
@@ -56,14 +56,14 @@ function c(e) {
         return o(d, ["toJSON"])
       }
     },
-    _ = getComputedStyle(l),
-    f = [{
+    f = getComputedStyle(l),
+    _ = [{
       inlineSize: d.width,
       blockSize: d.height
     }],
     p = [{
-      inlineSize: d.width - (parseFloat(_.paddingLeft) + parseFloat(_.paddingRight)),
-      blockSize: d.height - (parseFloat(_.paddingTop) + parseFloat(_.paddingBottom))
+      inlineSize: d.width - (parseFloat(f.paddingLeft) + parseFloat(f.paddingRight)),
+      blockSize: d.height - (parseFloat(f.paddingTop) + parseFloat(f.paddingBottom))
     }],
     h = null != (s = window.devicePixelRatio) ? s : 1,
     m = [{
@@ -72,7 +72,7 @@ function c(e) {
     }];
   return {
     target: l,
-    borderBoxSize: f,
+    borderBoxSize: _,
     contentBoxSize: p,
     devicePixelContentBoxSize: m,
     contentRect: d
@@ -108,7 +108,7 @@ function d(e) {
   }, [t, e]), l(t, n.current), [a, n]
 }
 
-function _(e, t) {
+function f(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [],
     a = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {},
     o = (0, r.useId)(),
@@ -125,7 +125,7 @@ function _(e, t) {
   }, [s, o, t, e, ...n])
 }
 
-function f(e) {
+function _(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [],
     n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
     {

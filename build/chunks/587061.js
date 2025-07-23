@@ -12,8 +12,8 @@ var r = n(73800),
   c = n(607070),
   u = n(627845),
   d = n(556296),
-  _ = n(5967),
-  f = n(13140),
+  f = n(5967),
+  _ = n(13140),
   p = n(981631),
   h = n(420212);
 
@@ -23,15 +23,15 @@ function m(e) {
 }
 
 function g(e) {
-  let t = f.C$("shift"),
-    n = f.C$("tab");
+  let t = _.C$("shift"),
+    n = _.C$("tab");
   if (e.key === h.mR.Tab && e.shiftKey && null != t && null != n) return [
     [p.MoX.KEYBOARD_KEY, t],
     [p.MoX.KEYBOARD_KEY, n]
   ];
   let r = h.el.get(e.key);
   if (null != r) {
-    let e = f.C$(r);
+    let e = _.C$(r);
     if (null != e) return [
       [p.MoX.KEYBOARD_KEY, e]
     ]
@@ -41,10 +41,10 @@ function g(e) {
 
 function E(e, t) {
   var n, r;
-  let i = (0, _.VG)(null == (n = (0, _.uB)(e)) ? void 0 : n.activeElement);
+  let i = (0, f.VG)(null == (n = (0, f.uB)(e)) ? void 0 : n.activeElement);
   if (i && e.key !== h.mR.Tab || e.ctrlKey || e.altKey || e.metaKey || e.key !== h.mR.Tab && e.shiftKey) return;
   let a = g(e);
-  null == a || d.ZP.hasExactKeybind(a) || s.Z.hasBind(null != (r = f.H9(a[0])) ? r : "") || ((0, l.Qj)(), i && !t && e.preventDefault())
+  null == a || d.ZP.hasExactKeybind(a) || s.Z.hasBind(null != (r = _.H9(a[0])) ? r : "") || ((0, l.Qj)(), i && !t && e.preventDefault())
 }
 
 function b() {

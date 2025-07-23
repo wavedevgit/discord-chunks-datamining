@@ -14,8 +14,8 @@ var r = n(570140),
   c = n(626135),
   u = n(358085),
   d = n(998502),
-  _ = n(789465),
-  f = n(981631);
+  f = n(789465),
+  _ = n(981631);
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -77,7 +77,7 @@ async function y() {
 function O(e) {
   if (null == e.setFlags) return;
   let t = 0,
-    n = _.Z.getCurrentConfig({
+    n = f.Z.getCurrentConfig({
       location: "edd7d3_1"
     }, {
       autoTrackExposure: !1
@@ -92,21 +92,21 @@ function v(e, t) {
     var l;
     let u = null == (l = o.ZP.getGameForPID(e)) ? void 0 : l.name,
       d = s.Z.getGameByName(u),
-      _ = null;
+      f = null;
     return new Promise(s => {
       let l = (e, n) => {
-          c.default.track(f.rMx.HOOK_RESULT, h({
+          c.default.track(_.rMx.HOOK_RESULT, h({
             game_name: u,
             game_id: null == d ? null : d.id,
             success: n,
             error: e
-          }, t)), null != _ && (clearTimeout(_), _ = null), n ? s() : s(e = null != e ? e : "Unknown hook error")
+          }, t)), null != f && (clearTimeout(f), f = null), n ? s() : s(e = null != e ? e : "Unknown hook error")
         },
         p = o.ZP.getOverlayOptionsForPID(e),
         m = g(h({}, a.r, p), {
           elevate: o.ZP.shouldElevateProcessForPID(e)
         });
-      null == m.allowHook || m.allowHook ? (_ = setTimeout(() => {
+      null == m.allowHook || m.allowHook ? (f = setTimeout(() => {
         n.cancelAttachToProcess(e), l("Timed out waiting for hook response", !1)
       }, 12e4), n.attachToProcess(e, m, l), r.Z.wait(() => i.Z.clearElevatedProcess())) : s("Hook is disabled for this game")
     })

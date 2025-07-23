@@ -13,7 +13,7 @@ var r = n(255367),
   u = n(433409),
   d = n(970952);
 
-function _(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,14 +22,14 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
@@ -75,7 +75,7 @@ function E(e) {
     section: t,
     isSelected: n,
     width: a,
-    height: _,
+    height: f,
     className: p,
     selectable: g = !1,
     isSquircle: E,
@@ -102,7 +102,7 @@ function E(e) {
       size: a
     })
   }, [t, a]);
-  return (0, r.jsx)("div", h(f({}, I), {
+  return (0, r.jsx)("div", h(_({}, I), {
     className: o()(u.wrapper, p, {
       [u.selectable]: g,
       [u.selected]: g && n
@@ -115,13 +115,13 @@ function E(e) {
       className: u.mask,
       mask: E || g && (n || T) ? s.QS.SQUIRCLE : s.QS.AVATAR_DEFAULT,
       width: a,
-      height: _,
+      height: f,
       children: (0, r.jsx)("img", {
         alt: "",
         className: u.icon,
         style: {
           width: a,
-          height: _
+          height: f
         },
         src: P
       })

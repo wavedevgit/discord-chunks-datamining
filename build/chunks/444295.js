@@ -6,9 +6,9 @@ n.d(t, {
   Qu: () => h,
   Ws: () => g,
   bk: () => m,
-  ee: () => _,
+  ee: () => f,
   ou: () => d,
-  zi: () => f
+  zi: () => _
 }), n(388685);
 var r = n(73800),
   i = n(615287),
@@ -34,23 +34,23 @@ function u(e) {
 
 function d(e, t, r) {
   var o, c, d;
-  let _ = null != r ? a.Z.getDetectableGame(r) : null,
+  let f = null != r ? a.Z.getDetectableGame(r) : null,
     {
-      default: f
+      default: _
     } = n(371651),
-    p = null != (o = null == f ? void 0 : f.getMostRecentOverlayRenderMethod()) ? o : void 0,
+    p = null != (o = null == _ ? void 0 : _.getMostRecentOverlayRenderMethod()) ? o : void 0,
     h = null != p ? i.gl[p] : void 0;
   s.default.track(l.rMx.OVERLAY_TOGGLED, {
     enabled: e,
     setting_type: u(t),
     client_setting_type: t,
-    application_id: null != (c = null == _ ? void 0 : _.id) ? c : void 0,
-    application_name: null != (d = null == _ ? void 0 : _.name) ? d : void 0,
+    application_id: null != (c = null == f ? void 0 : f.id) ? c : void 0,
+    application_name: null != (d = null == f ? void 0 : f.name) ? d : void 0,
     most_recent_overlay_render_method: h
   })
 }
 
-function _(e, t) {
+function f(e, t) {
   let [n, i] = r.useState(e()), a = r.useRef(e);
   return r.useEffect(() => {
     a.current = e
@@ -67,7 +67,7 @@ function _(e, t) {
   }, t), n
 }
 
-function f(e, t) {
+function _(e, t) {
   var n, r, i;
   let {
     locked: a,

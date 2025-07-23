@@ -14,13 +14,13 @@ var r = n(73800),
   c = n(553795),
   u = n(594174),
   d = n(70956),
-  _ = n(981631),
-  f = n(420212);
+  f = n(981631),
+  _ = n(420212);
 let p = {
-    [_.ABu.INSTAGRAM]: ["1036753656588017764"]
+    [f.ABu.INSTAGRAM]: ["1036753656588017764"]
   },
   h = new Map([
-    [_.ABu.INSTAGRAM, new Date(2023, 1, 18).getTime()]
+    [f.ABu.INSTAGRAM, new Date(2023, 1, 18).getTime()]
   ]),
   m = 30 * d.Z.Millis.DAY;
 
@@ -34,7 +34,7 @@ function g(e) {
   }).allowPlayStationStaging;
   return e => {
     var i;
-    return e.type === _.ABu.PLAYSTATION_STAGING ? r : !!(void 0 !== n && (null == (i = p[e.type]) ? void 0 : i.includes(n.id))) || !!t || e.enabled
+    return e.type === f.ABu.PLAYSTATION_STAGING ? r : !!(void 0 !== n && (null == (i = p[e.type]) ? void 0 : i.includes(n.id))) || !!t || e.enabled
   }
 }
 
@@ -50,7 +50,7 @@ function E() {
   return r.useMemo(() => a().sortBy(s.Z.filter(t), [e => {
     var t;
     return !(h.has(e.type) && Date.now() < (null != (t = h.get(e.type)) ? t : 0) + m)
-  }, e => n.has(e.type), e => e.hasMetadata, e => !_.vbS.has(e.type), e => e.name]), [n, t])
+  }, e => n.has(e.type), e => e.hasMetadata, e => !f.vbS.has(e.type), e => e.name]), [n, t])
 }
 
 function b(e) {
@@ -60,17 +60,17 @@ function b(e) {
     let {
       key: t
     } = e;
-    t === f.vn.SHIFT && n(!0)
+    t === _.vn.SHIFT && n(!0)
   }
 
   function a(e) {
     let {
       key: t
     } = e;
-    t === f.vn.SHIFT && n(!1)
+    t === _.vn.SHIFT && n(!1)
   }
   return (r.useEffect(() => (window.addEventListener("keydown", i), window.addEventListener("keyup", a), () => {
     window.removeEventListener("keydown", i), window.removeEventListener("keyup", a)
-  }), []), t && e === _.ABu.TWITTER) ? _.ABu.TWITTER_LEGACY : e
+  }), []), t && e === f.ABu.TWITTER) ? f.ABu.TWITTER_LEGACY : e
 }
-_.ABu.PLAYSTATION, _.ABu.XBOX, _.ABu.SPOTIFY, _.ABu.STEAM, _.ABu.TWITCH
+f.ABu.PLAYSTATION, f.ABu.XBOX, f.ABu.SPOTIFY, f.ABu.STEAM, f.ABu.TWITCH

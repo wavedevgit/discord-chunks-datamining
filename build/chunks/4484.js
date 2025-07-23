@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(998698),
   u = n(117530),
   d = n(459273),
-  _ = n(585483),
-  f = n(541716),
+  f = n(585483),
+  _ = n(541716),
   p = n(91313),
   h = n(53529),
   m = n(288897),
@@ -70,8 +70,8 @@ let D = i.forwardRef(function(e, t) {
     "aria-controls": ec,
     "aria-invalid": eu,
     "aria-describedby": ed,
-    "aria-labelledby": e_,
-    "aria-autocomplete": ef
+    "aria-labelledby": ef,
+    "aria-autocomplete": e_
   } = e, ep = i.useRef(null), eh = i.useRef(null), em = i.useRef(!0), eg = i.useRef(!0), eE = M || k, eb = i.useCallback((e, t, n) => {
     var r;
     let {
@@ -79,7 +79,7 @@ let D = i.forwardRef(function(e, t) {
       selection: a
     } = n, o = b.bN.richValue(e), s = e.selection, l = !1;
     if (void 0 !== i && i !== o) {
-      if (e.children = i, "parent" === t && !e.previewMarkdown && e.chatInputType === f.Ie.EDIT) {
+      if (e.children = i, "parent" === t && !e.previewMarkdown && e.chatInputType === _.Ie.EDIT) {
         try {
           e.previewMarkdown = !0, (0, N.KH)(e, D.guild_id, D.id)
         } finally {
@@ -142,7 +142,7 @@ let D = i.forwardRef(function(e, t) {
       if (a.length > 0) {
         var n, r;
         let e = a[0];
-        E.Q.selectCommandOption(ev, e.name), _.S.dispatch(P.CkL.SHAKE_APP, {
+        E.Q.selectCommandOption(ev, e.name), f.S.dispatch(P.CkL.SHAKE_APP, {
           duration: 200,
           intensity: 2
         }), (0, l.yw)(P.rMx.APPLICATION_COMMAND_VALIDATION_FAILED, {
@@ -233,10 +233,10 @@ let D = i.forwardRef(function(e, t) {
         "aria-expanded": eo,
         "aria-activedescendant": el,
         "aria-controls": ec,
-        "aria-labelledby": e_,
+        "aria-labelledby": ef,
         "aria-describedby": ed,
         "aria-invalid": eu,
-        "aria-autocomplete": ef,
+        "aria-autocomplete": e_,
         "aria-required": U
       })
     })]

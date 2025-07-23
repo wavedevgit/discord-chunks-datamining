@@ -19,8 +19,8 @@ var r = n(255367),
   c = n(335131),
   u = n(594190),
   d = n(98278),
-  _ = n(507808),
-  f = n(594174),
+  f = n(507808),
+  _ = n(594174),
   p = n(78839),
   h = n(617136),
   m = n(915750),
@@ -85,7 +85,7 @@ function M(e) {
     questContentPosition: r,
     questContentRowIndex: a,
     sourceQuestContent: s
-  } = e, l = (0, o.e7)([f.default], () => f.default.getCurrentUser()), c = null == l ? void 0 : l.hasVerifiedEmailOrPhone(), u = null == l ? void 0 : l.verified, d = (0, h.O5)();
+  } = e, l = (0, o.e7)([_.default], () => _.default.getCurrentUser()), c = null == l ? void 0 : l.hasVerifiedEmailOrPhone(), u = null == l ? void 0 : l.verified, d = (0, h.O5)();
   return i.useCallback(() => {
     null != t && (d({
       questId: t.id,
@@ -181,7 +181,7 @@ function B(e) {
     questContent: o,
     questContentPosition: s,
     questContentRowIndex: u,
-    inGiftInventory: f,
+    inGiftInventory: _,
     isVideoQuest: p,
     inGameQuest: b,
     sourceQuestContent: y
@@ -196,7 +196,7 @@ function B(e) {
   }), T = (0, E.Rf)(n), S = i.useCallback(() => {
     (0, d.$)()
   }, []), w = i.useCallback(() => {
-    (0, _.Y)({
+    (0, f.Y)({
       pageType: C.ZY5.GLOBAL_DISCOVERY_QUESTS,
       sectionType: C.jXE.QUEST_TILE_CTA,
       ctaObject: C.qAy.CTA_TO_ORBS_SHOP
@@ -245,7 +245,7 @@ function B(e) {
         };
       case E.OH.ACCEPTED:
       case E.OH.IN_PROGRESS:
-        if (I && f) return {
+        if (I && _) return {
           text: P.intl.string(P.t.Cfye4u),
           tooltipText: null,
           onClick: () => (0, O.gI)({
@@ -313,7 +313,7 @@ function B(e) {
           text: P.intl.string(P.t.bAGFz8)
         })
     }
-  }, [r, p, I, f, v, a, n, o, s, u, L, T, S, w, b, k, y])
+  }, [r, p, I, _, v, a, n, o, s, u, L, T, S, w, b, k, y])
 }
 
 function V() {
@@ -354,14 +354,14 @@ function F(e) {
     }
   }
   let d = (null == (t = r.userStatus) ? void 0 : t.claimedAt) != null,
-    _ = !u && null != r.userStatus && (0, O.zE)(r.userStatus, y.jn.QUEST_BAR);
+    f = !u && null != r.userStatus && (0, O.zE)(r.userStatus, y.jn.QUEST_BAR);
   return d ? {
     isQuestBarVisible: !1,
     reason: "quest_claimed"
   } : a ? {
     isQuestBarVisible: !1,
     reason: "quest_expired"
-  } : i ? _ ? {
+  } : i ? f ? {
     isQuestBarVisible: !1,
     reason: "quest_dismissed"
   } : {

@@ -75,14 +75,14 @@ function s(e, t, n) {
         callback: u
       } = e, {
         scrollPosition: d,
-        offsetSize: _
+        offsetSize: f
       } = a(t(), r);
-      n -= l, i += l, n >= d && i <= d + _ ? null != u && u() : n < d || o ? s({
+      n -= l, i += l, n >= d && i <= d + f ? null != u && u() : n < d || o ? s({
         to: n,
         animate: c,
         callback: u
       }) : s({
-        to: i - _,
+        to: i - f,
         animate: c,
         callback: u
       })
@@ -105,11 +105,11 @@ function s(e, t, n) {
       if (null == u) return;
       let {
         offset: d,
-        offsetSize: _
+        offsetSize: f
       } = i(n, r, u);
       l({
         start: d,
-        end: d + _,
+        end: d + f,
         shouldScrollToStart: a,
         padding: o,
         animate: s,

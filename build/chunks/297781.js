@@ -30,8 +30,8 @@ var r = n(255367),
   c = n(876215),
   u = n(884439),
   d = n(705512),
-  _ = n(481060),
-  f = n(456100),
+  f = n(481060),
+  _ = n(456100),
   p = n(70956),
   h = n(823379),
   m = n(709054),
@@ -139,14 +139,14 @@ function k(e) {
     defaultIconColor: l,
     location: c
   } = x();
-  return (0, r.jsx)(_.ua7, {
+  return (0, r.jsx)(f.ua7, {
     text: a,
     shouldShow: o,
     children: e => (0, r.jsxs)(M, C(A({}, e), {
       children: [(0, r.jsx)(t, {
         size: "xxs",
         color: null != i ? i : l
-      }), (0, r.jsx)(_.Text, {
+      }), (0, r.jsx)(f.Text, {
         variant: "text-xs/normal",
         color: s,
         className: T.badgeLabel,
@@ -166,7 +166,7 @@ function j(e) {
     location: i
   } = x();
   return null == n || (0, h.Hi)(i, [1, 2, 3, 4]) ? null : (0, r.jsx)(k, {
-    Icon: _.gj8,
+    Icon: f.gj8,
     text: n.name
   })
 }
@@ -179,15 +179,15 @@ function U(e) {
     defaultTextColor: i,
     defaultIconColor: a,
     location: o
-  } = x(), s = (0, b.Jg)(t) && (0, h.Hi)(o, [0, 4, 7, 9]), l = s ? _.TVs.colors.TEXT_FEEDBACK_POSITIVE : a, c = s ? "text-feedback-positive" : i, {
+  } = x(), s = (0, b.Jg)(t) && (0, h.Hi)(o, [0, 4, 7, 9]), l = s ? f.TVs.colors.TEXT_FEEDBACK_POSITIVE : a, c = s ? "text-feedback-positive" : i, {
     streamPreviewUrl: u
   } = (0, E.Z)(t), {
     enabled: d
-  } = f.c.useExperiment({
+  } = _.c.useExperiment({
     location: "GameTimestampBadge"
   }, {
     autoTrackExposure: !0
-  }), p = null != u ? _.hGI : (0, g.Mq)(t) && !d ? _.jje : _.iWm;
+  }), p = null != u ? f.hGI : (0, g.Mq)(t) && !d ? f.jje : f.iWm;
   return (0, r.jsxs)(M, {
     children: [(0, r.jsx)(p, {
       size: "xxs",
@@ -213,10 +213,10 @@ function G(e) {
     party: o
   } = (0, y.n)(t), s = (0, b.bT)(a, o);
   return null == s ? null : (0, r.jsxs)(M, {
-    children: [(0, r.jsx)(_.BFJ, {
+    children: [(0, r.jsx)(f.BFJ, {
       size: "xxs",
       color: i
-    }), (0, r.jsx)(_.Text, {
+    }), (0, r.jsx)(f.Text, {
       variant: "text-xs/normal",
       color: n,
       lineClamp: 1,
@@ -233,10 +233,10 @@ function B(e) {
     defaultTextColor: i,
     defaultIconColor: a,
     location: o
-  } = x(), s = (0, b.Jg)(t) && (0, h.Hi)(o, [0, 4]), l = s ? _.TVs.colors.TEXT_FEEDBACK_POSITIVE : a, c = s ? "text-feedback-positive" : i;
+  } = x(), s = (0, b.Jg)(t) && (0, h.Hi)(o, [0, 4]), l = s ? f.TVs.colors.TEXT_FEEDBACK_POSITIVE : a, c = s ? "text-feedback-positive" : i;
   return (0, r.jsxs)("div", {
     className: T.badgeContainer,
-    children: [(0, r.jsx)(_.RZG, {
+    children: [(0, r.jsx)(f.RZG, {
       size: "xxs",
       color: l
     }), (0, r.jsx)(O.ZP, {
@@ -253,9 +253,9 @@ function V(e) {
     entry: t
   } = e, {
     location: n
-  } = x(), i = (0, h.Hi)(n, [0, 3]) ? _.TVs.colors.STATUS_POSITIVE : void 0;
+  } = x(), i = (0, h.Hi)(n, [0, 3]) ? f.TVs.colors.STATUS_POSITIVE : void 0;
   return (0, b.Ol)(t) ? (0, r.jsx)(k, {
-    Icon: _._IE,
+    Icon: f._IE,
     text: I.intl.string(I.t.keY6mZ),
     iconColor: i
   }) : null
@@ -275,7 +275,7 @@ function F(e) {
       tooltipText: s
     } = (0, b.zo)(t);
   return null == o ? null : (0, r.jsx)(k, {
-    Icon: _.ANZ,
+    Icon: f.ANZ,
     text: o,
     tooltipText: s,
     showTooltip: a
@@ -291,7 +291,7 @@ function Z(e) {
   if (null == a) return null;
   let o = (0, b.GE)(a);
   return (0, r.jsx)(k, {
-    Icon: _.Oe7,
+    Icon: f.Oe7,
     showTooltip: !i,
     tooltipText: o,
     text: i ? o : I.intl.string(I.t.adnLsL)
@@ -305,7 +305,7 @@ function H(e) {
     location: n
   } = x(), i = (0, b.vU)(t);
   return (0, b.q_)(t) ? (0, r.jsx)(k, {
-    Icon: _.qOE,
+    Icon: f.qOE,
     showTooltip: 0 === n,
     text: I.intl.formatToPlainString(I.t["Klie/P"], {
       days: i
@@ -326,7 +326,7 @@ function Y(e) {
   let o = i ? " — " : ": ",
     s = i ? I.t.C0Axoa : I.t.SDRHgo;
   return (0, r.jsx)(k, {
-    Icon: _.rm8,
+    Icon: f.rm8,
     text: (0, r.jsxs)(r.Fragment, {
       children: [I.intl.string(I.t["/50eHh"]), o, I.intl.format(s, {
         hours: Math.round(a / p.Z.Seconds.HOUR)
@@ -349,7 +349,7 @@ function W(e) {
     count: a
   });
   return (0, r.jsx)(k, {
-    Icon: _.rm8,
+    Icon: f.rm8,
     text: o
   })
 }
@@ -363,7 +363,7 @@ function K(e) {
   if (3 === n) return null;
   let i = (0, b.ig)(t);
   return null == i || i === d.o.TRENDING_TYPE_UNSPECIFIED ? null : (0, r.jsx)(k, {
-    Icon: _.YqE,
+    Icon: f.YqE,
     text: I.intl.string(I.t.kAlUs7)
   })
 }
@@ -377,7 +377,7 @@ function z(e) {
   if (3 === n) return null;
   let i = m.default.extractTimestamp(t.extra.application_id);
   return l()().diff(l()(i), "days") > v.G ? null : (0, r.jsx)(k, {
-    Icon: _.rIT,
+    Icon: f.rIT,
     text: I.intl.string(I.t.vYuyWV)
   })
 }
@@ -390,10 +390,10 @@ function q(e) {
     defaultTextColor: i,
     defaultIconColor: a,
     location: o
-  } = x(), s = (0, b.Jg)(t) && 4 === o, l = s ? _.TVs.colors.TEXT_FEEDBACK_POSITIVE : a, c = s ? "text-feedback-positive" : i;
+  } = x(), s = (0, b.Jg)(t) && 4 === o, l = s ? f.TVs.colors.TEXT_FEEDBACK_POSITIVE : a, c = s ? "text-feedback-positive" : i;
   return (0, r.jsxs)("div", {
     className: T.badgeContainer,
-    children: [(0, r.jsx)(_.ARS, {
+    children: [(0, r.jsx)(f.ARS, {
       size: "xxs",
       color: l
     }), (0, r.jsx)(O.ZP, {
@@ -410,7 +410,7 @@ function X(e) {
     entry: t
   } = e, n = (0, b.ap)(t.extra.media_assets_large_text);
   return null == n ? null : (0, r.jsx)(k, {
-    Icon: _.sVe,
+    Icon: f.sVe,
     text: n
   })
 }
@@ -423,14 +423,14 @@ function Q(e) {
   } = e;
   return t = (0, h.Hi)(n, [1, 5, 6]) ? {
     defaultTextColor: "content-inventory-overlay-text-secondary",
-    defaultIconColor: _.TVs.colors.CONTENT_INVENTORY_OVERLAY_TEXT_SECONDARY
+    defaultIconColor: f.TVs.colors.CONTENT_INVENTORY_OVERLAY_TEXT_SECONDARY
   } : 2 === n ? {
     defaultTextColor: "interactive-normal"
   } : 3 === n ? {
     defaultTextColor: "text-muted"
   } : 4 === n ? {
     defaultTextColor: "text-secondary",
-    defaultIconColor: _.TVs.colors.TEXT_SECONDARY
+    defaultIconColor: f.TVs.colors.TEXT_SECONDARY
   } : {
     defaultTextColor: "text-secondary"
   }, (0, r.jsx)(L.Provider, {

@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(482798),
   u = n(750154),
   d = n(209698),
-  _ = n(802529),
-  f = n(11133),
+  f = n(802529),
+  _ = n(11133),
   p = n(814454),
   h = n(473919),
   m = n(170187),
@@ -64,7 +64,7 @@ function v(e) {
     autoTrackExposure: !0
   }), {
     descriptiveTextEnabled: y
-  } = (0, _.f)({
+  } = (0, f.f)({
     location: "PresenceActivityStatus"
   }), {
     enableTopNavButton: v
@@ -83,7 +83,7 @@ function v(e) {
   let {
     text: S,
     tooltip: A
-  } = (0, f.Z)(t, y || v), N = O(t, b), C = d && !g && null != A;
+  } = (0, _.Z)(t, y || v), N = O(t, b), C = d && !g && null != A;
   return (0, r.jsxs)(r.Fragment, {
     children: [!u && null != N && (0, r.jsx)(h.Z, {
       icon: N,
@@ -118,7 +118,7 @@ function I(e) {
     autoTrackExposure: !0
   }), {
     descriptiveTextEnabled: m
-  } = (0, _.f)({
+  } = (0, f.f)({
     location: "PresenceActivityStatusWithCombinedTooltip"
   }), {
     enableTopNavButton: E
@@ -127,7 +127,7 @@ function I(e) {
   }), {
     text: b,
     tooltip: y
-  } = (0, f.Z)(t, m || E), v = O(t, p), I = null != v && !s;
+  } = (0, _.Z)(t, m || E), v = O(t, p), I = null != v && !s;
   return (0, r.jsx)(g.Z, {
     icon: I ? (0, r.jsx)(h.Z, {
       icon: v,

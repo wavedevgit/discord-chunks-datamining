@@ -53,12 +53,12 @@ let u = i.forwardRef(function(e, t) {
     onShowToolbar: c
   } = e, u = l(e, ["children", "className", "onShowToolbar"]);
   let d = t,
-    [_, f] = i.useState(!1),
+    [f, _] = i.useState(!1),
     p = () => {
-      null == c || c(), f(!0)
+      null == c || c(), _(!0)
     },
     h = () => {
-      f(!1)
+      _(!1)
     };
   return (0, r.jsxs)("div", {
     className: o,
@@ -76,7 +76,7 @@ let u = i.forwardRef(function(e, t) {
     ref: d,
     children: [n, (0, r.jsx)(a.ZP, s({
       targetRef: d,
-      isVisible: _,
+      isVisible: f,
       isExpandable: !1
     }, u))]
   })

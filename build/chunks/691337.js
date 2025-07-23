@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => _
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -20,7 +20,7 @@ function d(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class _ extends i.PureComponent {
+class f extends i.PureComponent {
   handleClick(e) {
     let {
       onBreadcrumbClick: t
@@ -46,9 +46,9 @@ class _ extends i.PureComponent {
         breadcrumbs: a,
         renderCustomBreadcrumb: l,
         separatorClassName: d
-      } = this.props, _ = e.id === n, f = () => this.handleClick(e), p = t === a.length - 1, h = null != l ? l(e, _) : (0, r.jsx)("span", {
+      } = this.props, f = e.id === n, _ = () => this.handleClick(e), p = t === a.length - 1, h = null != l ? l(e, f) : (0, r.jsx)("span", {
         className: o()(u.breadcrumb, {
-          [u.activeBreadcrumb]: _,
+          [u.activeBreadcrumb]: f,
           [u.interactiveBreadcrumb]: null != i
         }),
         children: e.label
@@ -59,7 +59,7 @@ class _ extends i.PureComponent {
         }),
         children: [null != i ? (0, r.jsx)(s.P3F, {
           tag: "span",
-          onClick: f,
+          onClick: _,
           className: u.breadcrumbClickWrapper,
           children: h
         }) : h, p ? null : (0, r.jsx)(c.Z, {
@@ -70,4 +70,4 @@ class _ extends i.PureComponent {
     })
   }
 }
-let f = _
+let _ = f

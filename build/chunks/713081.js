@@ -3,8 +3,8 @@
 n.d(t, {
   Fm: () => p,
   H6: () => h,
-  Qh: () => _,
-  Sn: () => f,
+  Qh: () => f,
+  Sn: () => _,
   Th: () => m,
   jd: () => d
 }), n(642613), n(539854);
@@ -24,13 +24,13 @@ function d(e) {
   })
 }
 
-function _() {
+function f() {
   i.Z.dispatch({
     type: "GUILD_POWERUPS_RESET_NOTIFICATIONS"
   })
 }
 
-function f(e, t) {
+function _(e, t) {
   if (!0 === t) {
     let t = s.G.concat(s.W),
       n = {};

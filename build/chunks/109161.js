@@ -34,7 +34,7 @@ function d(e) {
   return e
 }
 
-function _(e, t) {
+function f(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -45,8 +45,8 @@ function _(e, t) {
   return n
 }
 
-function f(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -59,7 +59,7 @@ function p(e) {
     className: s,
     background: u = !0,
     hoverOverride: d
-  } = e, [_, f] = i.useState(!1), p = null != (t = null == a ? void 0 : a.primaryColor) ? t : n, {
+  } = e, [f, _] = i.useState(!1), p = null != (t = null == a ? void 0 : a.primaryColor) ? t : n, {
     hasGradient: h,
     stops: m,
     gradientId: g,
@@ -70,10 +70,10 @@ function p(e) {
     viewBox: "0 0 20 20",
     fill: "none",
     onMouseEnter: () => {
-      f(!0)
+      _(!0)
     },
     onMouseLeave: () => {
-      f(!1)
+      _(!1)
     },
     children: [h && (0, r.jsxs)("defs", {
       children: [(0, r.jsx)("linearGradient", {
@@ -124,7 +124,7 @@ function p(e) {
       cx: "10",
       cy: "10",
       r: "5",
-      fill: h ? "url(#".concat(d || _ ? E : g, ")") : p
+      fill: h ? "url(#".concat(d || f ? E : g, ")") : p
     })]
   })
 }
@@ -138,7 +138,7 @@ function h(e) {
   } = e;
   return null == t && null == n ? null : a ? (0, r.jsx)(s.u, {
     text: i,
-    children: t => (0, r.jsx)("span", f(d({}, t), {
+    children: t => (0, r.jsx)("span", _(d({}, t), {
       "aria-hidden": !0,
       children: (0, r.jsx)(p, d({}, e))
     }))
@@ -161,13 +161,13 @@ function m(e) {
   });
   if (null == t && null == n) return null;
   let u = null != n && null != n.primaryColor && null != n.secondaryColor,
-    _ = d({}, u ? a : {
+    f = d({}, u ? a : {
       backgroundColor: t
     });
   return (0, r.jsx)("span", {
     className: o()(c.roleCircle, i, {
       [s]: u
     }),
-    style: _
+    style: f
   })
 }

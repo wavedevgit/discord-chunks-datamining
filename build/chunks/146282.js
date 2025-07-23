@@ -19,9 +19,9 @@ function l(e, t, n) {
 let c = new Map,
   u = new Map,
   d = new Map,
-  _ = !1;
+  f = !1;
 
-function f(e) {
+function _(e) {
   e(c), c = new Map(c)
 }
 
@@ -30,7 +30,7 @@ function p(e) {
     feedId: t,
     feed: n
   } = e;
-  f(e => e.set(t, n)), d.set(t, new Date)
+  _(e => e.set(t, n)), d.set(t, new Date)
 }
 
 function h(e) {
@@ -50,7 +50,7 @@ function g(e) {
     feedId: t
   } = e;
   if (!c.has(t)) return !1;
-  f(e => e.delete(t))
+  _(e => e.delete(t))
 }
 
 function E(e) {
@@ -61,7 +61,7 @@ function E(e) {
 }
 
 function b() {
-  _ = !_
+  f = !f
 }
 class y extends(i = a.ZP.Store) {
   getFeeds() {
@@ -84,7 +84,7 @@ class y extends(i = a.ZP.Store) {
     return null == (t = this.getFeed(e)) ? void 0 : t.request_id
   }
   getDebugImpressionCappingDisabled() {
-    return _
+    return f
   }
   getMatchingInboxEntry(e) {
     let {

@@ -4,8 +4,8 @@ let r;
 n.d(t, {
   M3: () => p,
   aD: () => d,
-  bF: () => f,
-  f0: () => _
+  bF: () => _,
+  f0: () => f
 });
 var i = n(544891),
   a = n(314897),
@@ -34,7 +34,7 @@ async function d(e) {
     return e
   }
 }
-async function _(e) {
+async function f(e) {
   try {
     let t = await i.tn.put({
       url: (0, s.pU)(u),
@@ -51,7 +51,7 @@ async function _(e) {
     return e
   }
 }
-async function f() {
+async function _() {
   let e = await i.tn.del({
     url: (0, s.pU)(l),
     oldFormErrors: !0,

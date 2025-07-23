@@ -22,9 +22,9 @@ var c = function(e) {
 }({});
 let u = 0,
   d = null,
-  _ = null;
+  f = null;
 
-function f(e) {
+function _(e) {
   let {
     error: t
   } = e, n = t instanceof o.ZP ? t : new o.ZP(t);
@@ -32,11 +32,11 @@ function f(e) {
 }
 
 function p(e) {
-  u = 2, d = e.purchaseTokenHash, _ = e.expiresAt
+  u = 2, d = e.purchaseTokenHash, f = e.expiresAt
 }
 
 function h() {
-  u = 0, d = null, _ = null
+  u = 0, d = null, f = null
 }
 class m extends(r = i.ZP.Store) {
   get purchaseTokenAuthState() {
@@ -46,13 +46,13 @@ class m extends(r = i.ZP.Store) {
     return d
   }
   get expiresAt() {
-    return _
+    return f
   }
 }
 l(m, "displayName", "PurchaseTokenAuthStore");
 let g = new m(a.Z, {
-  SKU_PURCHASE_FAIL: f,
-  PREMIUM_PAYMENT_SUBSCRIBE_FAIL: f,
+  SKU_PURCHASE_FAIL: _,
+  PREMIUM_PAYMENT_SUBSCRIBE_FAIL: _,
   USER_PAYMENT_CLIENT_ADD: p,
   BILLING_PURCHASE_TOKEN_AUTH_CLEAR_STATE: h,
   BILLING_SUBSCRIPTION_UPDATE_START: h,

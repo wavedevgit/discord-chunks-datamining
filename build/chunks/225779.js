@@ -19,7 +19,7 @@ var i = n(120356),
   u = n(388032),
   d = n(240211);
 
-function _(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -28,14 +28,14 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
@@ -98,7 +98,7 @@ function b(e) {
     minor: i = !1
   } = e, o = m(e, ["children", "className", "minor"]);
   return (0, r.jsx)(s.tEY, {
-    children: (0, r.jsx)("button", h(f({
+    children: (0, r.jsx)("button", h(_({
       className: a()(d.button, n, {
         [d.buttonMinor]: i
       })
@@ -109,7 +109,7 @@ function b(e) {
 }
 
 function y(e, t) {
-  null != e && l.default.track(c.rMx.APP_NOTICE_PRIMARY_CTA_OPENED, f({
+  null != e && l.default.track(c.rMx.APP_NOTICE_PRIMARY_CTA_OPENED, _({
     notice_type: e
   }, t))
 }
@@ -126,7 +126,7 @@ function v(e) {
     noticeType: n,
     additionalTrackingProps: i
   } = e, a = m(e, ["children", "noticeType", "additionalTrackingProps"]);
-  return (0, r.jsx)(b, h(f({}, a), {
+  return (0, r.jsx)(b, h(_({}, a), {
     onClick: e => {
       null != a.onClick && a.onClick(e), y(n, i)
     },
@@ -139,7 +139,7 @@ function I(e) {
     children: t,
     href: n
   } = e, i = m(e, ["children", "href"]);
-  return (0, r.jsx)(s.eee, h(f({}, i), {
+  return (0, r.jsx)(s.eee, h(_({}, i), {
     className: d.button,
     href: n,
     children: t

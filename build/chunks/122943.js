@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(201895),
   u = n(933557),
   d = n(482798),
-  _ = n(209698),
-  f = n(788858),
+  f = n(209698),
+  _ = n(788858),
   p = n(814454),
   h = n(170187),
   m = n(532657),
@@ -65,7 +65,7 @@ function T(e) {
     channel: t,
     textVariant: n,
     textClassName: a,
-    iconClassName: _,
+    iconClassName: f,
     hideText: m = !1,
     hideTooltip: y = !1,
     canTruncate: v = !0,
@@ -82,11 +82,11 @@ function T(e) {
       activityType: "VOICE",
       voiceChannelId: t.id
     })
-  }, [P, t.id]), D = () => y || N ? (0, r.jsx)(f.Z, {
+  }, [P, t.id]), D = () => y || N ? (0, r.jsx)(_.Z, {
     size: "custom",
     color: S,
     channel: t,
-    className: o()(b.icon, _)
+    className: o()(b.icon, f)
   }) : (0, r.jsx)(s.ua7, {
     text: A,
     "aria-label": (0, c.ZP)({
@@ -94,11 +94,11 @@ function T(e) {
     }),
     delay: g.X,
     onTooltipShow: w,
-    children: e => (0, r.jsx)(f.Z, I(O({}, e), {
+    children: e => (0, r.jsx)(_.Z, I(O({}, e), {
       size: "custom",
       color: S,
       channel: t,
-      className: o()(b.icon, _)
+      className: o()(b.icon, f)
     }))
   }), L = () => C ? A : N ? E.intl.string(E.t["9FaEzs"]) : t.isGuildStageVoice() ? E.intl.string(E.t.QygGCA) : E.intl.string(E.t.msxteH);
   return (0, r.jsxs)(r.Fragment, {
@@ -120,7 +120,7 @@ function S(e) {
     iconClassName: a,
     hideText: l = !1,
     hideTooltip: c = !1,
-    canTruncate: _ = !0,
+    canTruncate: f = !0,
     showChannelName: p = !1
   } = e, h = (0, s.vjg)(s.Skl.ONLINE), g = (0, u.ZP)(t), y = t.isDM() || t.isGroupDM(), {
     enableTopNavButton: O
@@ -128,7 +128,7 @@ function S(e) {
     location: "VoiceActivityStatusWithCombinedTooltip"
   }), v = O && null != g ? g : y ? E.intl.string(E.t["9FaEzs"]) : t.isGuildStageVoice() ? E.intl.string(E.t.QygGCA) : E.intl.string(E.t.msxteH), I = null == g || O ? v : "".concat(v, " (").concat(g, ")"), T = p ? I : v;
   return (0, r.jsx)(m.Z, {
-    icon: (0, r.jsx)(f.Z, {
+    icon: (0, r.jsx)(_.Z, {
       size: "custom",
       color: h,
       channel: t,
@@ -139,14 +139,14 @@ function S(e) {
     textVariant: n,
     textClassName: i,
     hideTooltip: c,
-    canTruncate: _,
+    canTruncate: f,
     "aria-label": I,
     hideText: l
   })
 }
 
 function A(e) {
-  return (0, _.b)({
+  return (0, f.b)({
     location: "VoiceActivityStatusExperimentWrapper"
   }) ? (0, r.jsx)(S, O({}, e)) : (0, r.jsx)(T, O({}, e))
 }

@@ -12,8 +12,8 @@ var r = n(475179),
   c = n(317381),
   u = n(531826),
   d = n(16609),
-  _ = n(917107),
-  f = n(918559),
+  f = n(917107),
+  _ = n(918559),
   p = n(981631);
 
 function h(e, t) {
@@ -26,8 +26,8 @@ function h(e, t) {
       channelId: m
     });
   if (null != g) return void(0, o.Z)(g);
-  null != m && ((0, s.uL)(p.Z5c.CHANNEL(e, m)), (0, _.Z)(m) ? (r.Z.selectParticipant(m, (0, a.gN)({
+  null != m && ((0, s.uL)(p.Z5c.CHANNEL(e, m)), (0, f.Z)(m) ? (r.Z.selectParticipant(m, (0, a.gN)({
     applicationId: n.applicationId,
     instanceId: null == n ? void 0 : n.compositeInstanceId
-  })), r.Z.updateLayout(m, p.AEg.NO_CHAT)) : (0, l.tg)(f.Ez.PANEL))
+  })), r.Z.updateLayout(m, p.AEg.NO_CHAT)) : (0, l.tg)(_.Ez.PANEL))
 }

@@ -42,19 +42,19 @@ function d(e, t) {
   return n
 }
 
-function _(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let f = {
+let _ = {
     lastSeenNewlyAddedEmojiIds: {}
   },
-  p = f,
+  p = _,
   h = {};
 
 function m() {
-  p = f, h = {}
+  p = _, h = {}
 }
 
 function g(e) {
@@ -67,7 +67,7 @@ function g(e) {
     id: r,
     lastSeen: Date.now(),
     acknowledged: !0
-  } : h[n] = _(u({}, i), {
+  } : h[n] = f(u({}, i), {
     acknowledged: !0
   })
 }
@@ -90,11 +90,11 @@ function b() {
 }
 
 function y() {
-  p = f, b()
+  p = _, b()
 }
 class O extends(r = o.ZP.PersistedStore) {
   initialize(e) {
-    p = null != e ? e : f
+    p = null != e ? e : _
   }
   getState() {
     return p
