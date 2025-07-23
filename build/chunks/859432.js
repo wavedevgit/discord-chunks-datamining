@@ -130,7 +130,7 @@ let X = a.memo(function(e) {
     {
       isFavoritesPerk: ey
     } = (0, h.z)("GuildHeaderPopout"),
-    ex = (0, G.Y)(t),
+    ex = (0, G.o)(t),
     {
       triggerDeadchat: eO
     } = b.Z.useExperiment({

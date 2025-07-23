@@ -186,9 +186,9 @@ function B() {
   }, [R]);
   let W = (0, a.e7)([x.Z], () => x.Z.getCurrentPage()),
     V = (0, a.e7)([g.Z], () => null != L && g.Z.getEnabled(L)),
-    Y = (0, a.e7)([j.Z], () => null != L && j.Z.isEmpty(L)),
-    q = (0, y.F)(L).length > 0,
-    J = (0, C.Y)(o);
+    q = (0, a.e7)([j.Z], () => null != L && j.Z.isEmpty(L)),
+    Y = (0, y.F)(L).length > 0,
+    J = (0, C.o)(o);
   return (0, l.jsx)(u.Gt, {
     value: G,
     children: (0, l.jsx)(k, (n = function(e) {
@@ -218,11 +218,11 @@ function B() {
       analyticsLocation: c,
       memberCount: U
     }, D), t = t = {
-      canUnlinkChannels: q,
+      canUnlinkChannels: Y,
       canViewGuildAnalytics: D.canViewGuildAnalytics,
       onboardingStep: W,
       onboardingEnabled: V,
-      welcomeScreenEmpty: Y,
+      welcomeScreenEmpty: q,
       guildMetadata: f,
       pinPermissionMigrationAvailable: J
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(t)) : (function(e, n) {

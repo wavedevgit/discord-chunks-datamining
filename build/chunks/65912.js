@@ -1,6 +1,6 @@
 /** Chunk was on 79381 **/
 n.d(t, {
-  V: () => y,
+  V: () => N,
   w: () => R
 });
 var r = n(392711),
@@ -19,7 +19,7 @@ var r = n(392711),
   S = n(981631),
   j = n(388032);
 
-function p(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function p(e) {
   }
   return e
 }
-let A = Object.freeze({
+let p = Object.freeze({
     editingRule: null,
     hasChanges: !1,
     isLoading: !1,
@@ -51,7 +51,7 @@ let A = Object.freeze({
       let a = t().editingRule,
         o = null != n && null != a && n.id === a.id,
         c = l().cloneDeep(n);
-      null != c && (r = p({}, c), i = i = {
+      null != c && (r = A({}, c), i = i = {
         actions: c.actions.filter(s.lm)
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);
@@ -69,7 +69,7 @@ let A = Object.freeze({
       }))
     },
     createNewEditingRule: (t, n, r) => {
-      let l = p({}, (0, f.ep)(t, n), null != r ? r : {});
+      let l = A({}, (0, f.ep)(t, n), null != r ? r : {});
       return (0, u.j)(() => e({
         editingRule: l,
         hasChanges: !1
@@ -78,10 +78,10 @@ let A = Object.freeze({
     isLoading: !1,
     errorMessage: null,
     cancelEditingRule: () => {
-      (0, u.j)(() => e(p({}, A)))
+      (0, u.j)(() => e(A({}, p)))
     },
     saveRule: async (t, n) => {
-      if (null == t) return (0, u.j)(() => e(p({}, A))), null;
+      if (null == t) return (0, u.j)(() => e(A({}, p))), null;
       try {
         var r, l, i;
         (0, f.DO)(t) && (t.triggerMetadata.keywordFilter = (0, d.cb)((0, d.Ze)(null != (r = t.triggerMetadata.keywordFilter) ? r : [])), t.triggerMetadata.allowList = (0, d.cb)((0, d.Ze)(null != (l = t.triggerMetadata.allowList) ? l : []))), (0, f.Fn)(t) && (t.triggerMetadata.allowList = (0, d.cb)((0, d.Ze)(null != (i = t.triggerMetadata.allowList) ? i : []))), (0, E.yU)(t, n), (0, f.QO)(t)
@@ -110,7 +110,7 @@ let A = Object.freeze({
           })
         });
         let n = null;
-        return n = (0, f.Vb)(t) && !(0, O.U)(t.id) ? await (0, g.Je)(t) : await (0, g.JK)(t), (0, u.j)(() => e(p({}, A))), n
+        return n = (0, f.Vb)(t) && !(0, O.U)(t.id) ? await (0, g.Je)(t) : await (0, g.JK)(t), (0, u.j)(() => e(A({}, p))), n
       } catch (n) {
         let t = new o.Hx(n);
         (0, u.j)(() => {
@@ -149,7 +149,7 @@ function R() {
   }), i.X)
 }
 
-function y() {
+function N() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
     t = _(e => ({
       hasChanges: e.hasChanges,
