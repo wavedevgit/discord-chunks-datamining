@@ -24,8 +24,8 @@ a(381996);
 var _ = a(392750),
   y = a(926976),
   C = a(789654),
-  N = a(719672),
-  O = a(691867),
+  O = a(719672),
+  N = a(691867),
   T = a(916790),
   E = a(645973),
   S = a(903502),
@@ -34,8 +34,8 @@ var _ = a(392750),
   I = a(272193),
   R = a(685560),
   k = a(735959),
-  A = a(572444),
-  Z = a(246992),
+  Z = a(572444),
+  A = a(246992),
   D = a(484662),
   L = a(496025),
   M = a(442954),
@@ -158,7 +158,7 @@ function ei(e) {
       id: "design_toggles",
       name: "Design Toggles",
       group: ee.v0.UI,
-      render: () => (0, n.jsx)(O.Z, {})
+      render: () => (0, n.jsx)(N.Z, {})
     }), e.push({
       id: "overlays",
       name: "Dev Overlays",
@@ -207,7 +207,7 @@ function ei(e) {
       id: "dcf",
       name: "DCF",
       group: ee.v0.EXPERIMENTS,
-      render: () => (0, n.jsx)(N.Z, {})
+      render: () => (0, n.jsx)(O.Z, {})
     }), e.push({
       id: "perks",
       name: "Perks",
@@ -252,7 +252,7 @@ function ei(e) {
       id: "krisp_tester",
       name: "Krisp Tester",
       group: ee.v0.AUDIO_VIDEO,
-      render: () => (0, n.jsx)(A.Z, {})
+      render: () => (0, n.jsx)(Z.Z, {})
     }), e.push({
       id: "skill_trees",
       name: "Skill Trees",
@@ -278,7 +278,7 @@ function ei(e) {
     properties: {
       panel: d
     }
-  }), (0, n.jsxs)(Z.Gk, {
+  }), (0, n.jsxs)(A.Gk, {
     children: [(0, n.jsxs)(x.ZP, {
       className: er.headerBar,
       toolbar: a ? null : (0, n.jsxs)(n.Fragment, {
@@ -311,7 +311,7 @@ function ei(e) {
       }), (0, n.jsx)(x.ZP.Title, {
         children: "DevTools"
       })]
-    }), (0, n.jsx)(i, {}), o(), (0, n.jsx)(Z.Br, {
+    }), (0, n.jsx)(i, {}), o(), (0, n.jsx)(A.Br, {
       className: en.layerContainer
     })]
   })

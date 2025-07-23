@@ -57,11 +57,11 @@ let {
   SemanticColors: C
 } = d.V;
 
-function N(e) {
+function O(e) {
   return e.replaceAll(/_|\./g, "-").toLowerCase()
 }
 
-function O(e) {
+function N(e) {
   return e.replaceAll(/_|-/g, ".").toLowerCase()
 }
 
@@ -84,7 +84,7 @@ function E() {
     {
       semanticColorOverrides: v,
       rawColorOverrides: C,
-      tab: O,
+      tab: N,
       scales: E
     } = t,
     P = r.useMemo(() => {
@@ -94,9 +94,9 @@ function E() {
             highlight: l
           } = n, i = r[e];
           if (null == i) return "";
-          let s = N(a);
+          let s = O(a);
           if (l) return "--".concat(s, ": magenta !important;");
-          let o = N(i.color),
+          let o = O(i.color),
             c = i.opacity,
             d = c < 1 ? "hsl(var(--".concat(o, "-hsl) / ").concat(c, ")") : "var(--".concat(o, ")");
           return "--".concat(s, ": color-mix(\n        in oklab,\n        ").concat(d, " 100%,\n        var(--theme-base-color, black) var(--theme-base-color-amount, 0%)\n      );")
@@ -143,7 +143,7 @@ function E() {
         className: g.tabBar,
         type: "top",
         look: "brand",
-        selectedItem: O,
+        selectedItem: N,
         onItemSelect: e => {
           a(t => y(_({}, t), {
             tab: e
@@ -214,14 +214,14 @@ function E() {
       })]
     }), (0, n.jsx)("div", {
       className: g.tab,
-      hidden: O !== j.H8.TOKENS,
+      hidden: N !== j.H8.TOKENS,
       children: (0, n.jsx)(S, {
         state: t,
         setState: a
       })
     }), (0, n.jsx)("div", {
       className: g.tab,
-      hidden: O !== j.H8.PALETTES,
+      hidden: N !== j.H8.PALETTES,
       children: (0, n.jsx)(f.P, {
         state: t,
         setState: a
@@ -293,7 +293,7 @@ function S(e) {
     })
   }, [a]), b = Object.keys(C).map(e => ({
     value: e,
-    label: N(e)
+    label: O(e)
   })), f = Object.keys(u.b).map(e => ({
     value: e,
     label: e
@@ -320,12 +320,12 @@ function S(e) {
       children: Object.entries(i).map(e => {
         let [t, r] = e, i = r.colors[l];
         if (null == i) return null;
-        let s = O(i.color),
+        let s = N(i.color),
           c = i.opacity,
           d = j.jC[t][l];
         return (0, n.jsx)(P, {
-          title: N(t),
-          subtitle: 1 === d.opacity ? O(d.raw) : "".concat(O(d.raw), " @ ").concat(100 * d.opacity, "%"),
+          title: O(t),
+          subtitle: 1 === d.opacity ? N(d.raw) : "".concat(N(d.raw), " @ ").concat(100 * d.opacity, "%"),
           highlight: r.highlight,
           onReset: () => {
             a(e => {

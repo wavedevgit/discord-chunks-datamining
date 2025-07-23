@@ -1,7 +1,7 @@
 /** Chunk was on 88448 **/
 r.d(t, {
   O: () => E,
-  Z: () => I
+  Z: () => D
 }), r(35282);
 var n = r(255367);
 r(73800);
@@ -22,9 +22,9 @@ var l = r(873546),
   m = r(665149),
   j = r(981631),
   P = r(176505),
-  v = r(220705);
+  h = r(220705);
 
-function h(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -63,7 +63,7 @@ async function E(e) {
   }
 }
 
-function S(e) {
+function Z(e) {
   let {
     children: t,
     className: r,
@@ -71,12 +71,12 @@ function S(e) {
     channelType: o,
     guildId: y,
     innerClassname: g,
-    transparent: h = !1,
+    transparent: v = !1,
     showToolbar: w = !0,
-    toolbar: S,
-    mobileToolbar: Z,
-    "aria-label": D,
-    "aria-labelledby": I,
+    toolbar: Z,
+    mobileToolbar: S,
+    "aria-label": I,
+    "aria-labelledby": D,
     scrollable: N,
     role: x,
     hideSearch: C,
@@ -96,31 +96,31 @@ function S(e) {
     className: r,
     innerClassName: g,
     toolbar: function() {
-      if (null == S) return null;
+      if (null == Z) return null;
       let e = null != c && !C;
-      return l.tq ? Z : (0, n.jsxs)(n.Fragment, {
-        children: [S, e ? (0, n.jsx)(p.Z, {
-          className: v.search
+      return l.tq ? S : (0, n.jsxs)(n.Fragment, {
+        children: [Z, e ? (0, n.jsx)(p.Z, {
+          className: h.search
         }, null != y ? y : c) : null, k && (0, n.jsx)(m.ZP.Divider, {}), _ && !L ? (0, n.jsx)(f.Z, {}) : null, G && A && null != T && !M && o === j.d4z.GROUP_DM && (0, n.jsxs)("div", {
-          className: v.controlButtonWrapper,
+          className: h.controlButtonWrapper,
           children: [(0, n.jsx)(m.ZP.Divider, {}), (0, n.jsx)(d.Z, {
             onClick: () => a.Z.toggleParticipantsList(T, !M)
           })]
         })]
       })
     }(),
-    transparent: h,
+    transparent: v,
     showToolbar: w,
     onDoubleClick: () => E(R),
-    "aria-label": D,
-    "aria-labelledby": I,
+    "aria-label": I,
+    "aria-labelledby": D,
     role: x,
     scrollable: N,
     children: t
   })
 }
 
-function Z(e) {
+function S(e) {
   let {
     children: t,
     className: r,
@@ -139,7 +139,7 @@ function Z(e) {
   })
 }
 
-function D(e) {
+function I(e) {
   var {
     isAuthenticated: t = !0
   } = e, r = function(e, t) {
@@ -162,12 +162,12 @@ function D(e) {
   } = (0, o.ZP)(c.Z.HEADER_BAR);
   return (0, n.jsx)(o.Gt, {
     value: l,
-    children: t ? (0, n.jsx)(S, w(h({}, r), {
+    children: t ? (0, n.jsx)(Z, w(v({}, r), {
       className: r.className
-    })) : (0, n.jsx)(Z, w(h({}, r), {
+    })) : (0, n.jsx)(S, w(v({}, r), {
       className: r.className
     }))
   })
 }
-D.Title = m.ZP.Title, D.Icon = m.ZP.Icon, D.Divider = m.ZP.Divider, D.Caret = m.ZP.Caret;
-let I = D
+I.Title = m.ZP.Title, I.Icon = m.ZP.Icon, I.ChannelIcon = m.ZP.ChannelIcon, I.Divider = m.ZP.Divider, I.Caret = m.ZP.Caret;
+let D = I

@@ -1,6 +1,6 @@
 /**
   Module ID: 60173
-  Original File Name: eb1a1f6fa0cd2806
+  Original File Name: d9b366ac53734df9
 **/
 @keyframes placeholderPulse_c8ffbb {
     0% {
@@ -5845,7 +5845,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     flex: 0 0 auto;
     flex-direction: column;
     justify-content: flex-end;
-    margin: 16px
+    margin: var(--custom-message-margin-horizontal)
 }
 
 .header__00de6 {
@@ -9080,7 +9080,6 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .avatar_f75fb0 {
-    margin-left: var(--space-4);
     margin-right: var(--space-8)
 }
 
@@ -9094,11 +9093,14 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 
 .title_f75fb0 {
     flex: 0 0 auto;
-    padding-left: calc(var(--custom-message-margin-horizontal) - var(--space-4) + var(--custom-chat-aligned-icon-offset) - 1px)!important;
     padding-right: var(--space-xs);
     padding-top: var(--space-8);
     position: relative;
     z-index: 100
+}
+
+.gdm_f75fb0 {
+    padding-left: calc(var(--custom-message-margin-horizontal)/2)
 }
 
 .followButton_f75fb0 {
@@ -9133,8 +9135,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .guildBreadcrumbIcon_f75fb0 {
-    margin-left: 8px;
-    margin-right: 8px
+    margin-right: var(--space-4)
 }
 
 .loader_f75fb0 {
@@ -9153,6 +9154,10 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 
 .forumPostTitle_f75fb0 {
     margin-left: 8px
+}
+
+.forumPostSidebarTitle_f75fb0 {
+    margin-left: 0
 }
 
 .subtitleContainer_f75fb0 {
@@ -9451,12 +9456,8 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     border-radius: 8px;
     cursor: pointer;
     gap: 4px;
-    height: 32px
-}
-
-.hoverableContainer__754bd .newGdmIcon__754bd {
-    margin-left: 8px;
-    margin-right: 4px
+    height: 32px;
+    padding-left: calc(var(--custom-message-margin-horizontal)/2)
 }
 
 .hoverableContainer__754bd:hover:not(.editing__754bd) {
@@ -9475,10 +9476,11 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 .clickableTitle__754bd {
     align-items: center;
     align-self: stretch;
+    border: none;
     cursor: pointer;
     display: flex;
     flex-direction: row;
-    gap: 4px;
+    gap: calc(var(--custom-message-margin-horizontal)/2);
     padding-right: 8px;
     white-space: nowrap
 }
@@ -13100,4 +13102,4 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     position: relative
 }
 
-/*# sourceMappingURL=eb1a1f6fa0cd2806.css.map*/
+/*# sourceMappingURL=d9b366ac53734df9.css.map*/

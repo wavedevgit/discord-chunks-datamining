@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: 87e91fb659dcf40c
+  Original File Name: 2c5f209ab8f65671
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -2630,22 +2630,6 @@
     margin-top: 12px
 }
 
-.modalRoot__5d321 {
-    max-width: 600px;
-    padding: 8px
-}
-
-.modalHeader__5d321 {
-    justify-content: center;
-    margin-bottom: 8px
-}
-
-.modalContent__5d321 {
-    display: flex;
-    flex-direction: column;
-    gap: 8px
-}
-
 .instructionsList__5d321 {
     margin-left: 16px
 }
@@ -2655,6 +2639,12 @@
     list-style-position: inside;
     list-style-type: disc;
     margin-bottom: 8px
+}
+
+.modalContent__5d321 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px
 }
 
 .uploadArea_dae93f {
@@ -3012,4 +3002,4 @@
     width: 100%
 }
 
-/*# sourceMappingURL=87e91fb659dcf40c.css.map*/
+/*# sourceMappingURL=2c5f209ab8f65671.css.map*/

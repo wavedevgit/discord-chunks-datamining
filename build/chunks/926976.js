@@ -23,8 +23,8 @@ var n = a(255367),
   _ = a(257785),
   y = a(484036),
   C = a(681619),
-  N = a(621060),
-  O = a(388032),
+  O = a(621060),
+  N = a(388032),
   T = a(459100),
   E = a(616257);
 let S = [{
@@ -112,7 +112,7 @@ let I = new Set(["client_performance_cpu", "client_performance_memory"]),
   k = [{
     id: "details",
     name: "Details",
-    group: N.v0.NONE,
+    group: O.v0.NONE,
     render: e => {
       let {
         loggedEvent: {
@@ -228,10 +228,10 @@ let I = new Set(["client_performance_cpu", "client_performance_memory"]),
       })
     }
   }],
-  A = {
+  Z = {
     events: {
       label: "Events",
-      filter: e => Object.entries(A).filter(e => {
+      filter: e => Object.entries(Z).filter(e => {
         let [t] = e;
         return "events" !== t
       }).map(t => {
@@ -254,7 +254,7 @@ let I = new Set(["client_performance_cpu", "client_performance_memory"]),
       filter: e => e.event.startsWith("network_action")
     }
   },
-  Z = {
+  A = {
     searchType: p.S.REGEX,
     searchStringGenerator: e => {
       let {
@@ -270,15 +270,15 @@ function D() {
   let e = r.useRef(null),
     [t, a] = r.useState(""),
     l = (0, c.e7)([j.Z], () => j.Z.loggedEventsVersion),
-    [s, o] = r.useState(() => Object.keys(A)),
+    [s, o] = r.useState(() => Object.keys(Z)),
     [m, x] = r.useState(j.Z.loggedEvents),
     p = r.useCallback(e => {
       x(e)
     }, []);
-  (0, h.BO)(t, j.Z.loggedEvents, p, Z, [l]);
+  (0, h.BO)(t, j.Z.loggedEvents, p, A, [l]);
   let b = m.filter(e => {
       for (let t of s)
-        if (A[t].filter(e)) return !0;
+        if (Z[t].filter(e)) return !0;
       return !1
     }),
     [f, v] = r.useState(void 0),
@@ -286,7 +286,7 @@ function D() {
     {
       TabBar: P,
       renderSelectedTab: w
-    } = (0, N.ZP)({
+    } = (0, O.ZP)({
       tabs: k
     }, []);
   return (0, n.jsxs)("div", {
@@ -300,18 +300,18 @@ function D() {
         size: d.zx.Sizes.ICON,
         onClick: g.Zw,
         children: (0, n.jsx)("span", {
-          title: O.intl.string(O.t.VkKicX),
+          title: N.intl.string(N.t.VkKicX),
           children: (0, n.jsx)(u.XHJ, {
             size: "md",
             color: "currentColor",
-            "aria-label": O.intl.string(O.t.VkKicX)
+            "aria-label": N.intl.string(N.t.VkKicX)
           })
         })
       }), (0, n.jsx)("div", {
         className: T.toolbarDivider
       }), (0, n.jsx)("div", {
         className: T.filters,
-        children: Object.entries(A).map(e => {
+        children: Object.entries(Z).map(e => {
           let [t, a] = e;
           return (0, n.jsx)(u.P3F, {
             className: i()(T.filter, s.includes(t) && T.activeFilter),

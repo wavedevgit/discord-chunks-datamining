@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  JO: () => E,
-  ZP: () => v,
-  iz: () => b
+  JO: () => v,
+  ZP: () => N,
+  iz: () => T
 });
 var r = n(255367),
   i = n(73800),
@@ -38,8 +38,43 @@ function h(e) {
   }
   return e
 }
-let m = 24,
-  g = e => {
+
+function m(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function g(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function E(e, t) {
+  if (null == e) return {};
+  var n, r, i = b(e, t);
+  if (Object.getOwnPropertySymbols) {
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+  }
+  return i
+}
+
+function b(e, t) {
+  if (null == e) return {};
+  var n, r, i = {},
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+  return i
+}
+let y = 24,
+  O = e => {
     let {
       className: t,
       wrapperClassName: n,
@@ -78,7 +113,7 @@ let m = 24,
       children: h
     })
   },
-  E = i.forwardRef(function(e, t) {
+  v = i.forwardRef(function(e, t) {
     let {
       className: n,
       iconClassName: i,
@@ -88,10 +123,10 @@ let m = 24,
       showBadge: u = !1,
       badgePosition: _ = "bottom",
       color: p,
-      foreground: g,
-      background: E,
-      icon: b,
-      iconSize: y = m,
+      foreground: m,
+      background: g,
+      icon: E,
+      iconSize: b = y,
       onClick: O,
       onContextMenu: v,
       tooltip: I = null,
@@ -108,16 +143,16 @@ let m = 24,
       "aria-expanded": x,
       "aria-haspopup": M,
       "data-jump-section": k
-    } = e, j = null != E ? {
-      secondaryColorClass: E
-    } : {}, U = (0, r.jsx)(b, h({
+    } = e, j = null != g ? {
+      secondaryColorClass: g
+    } : {}, U = (0, r.jsx)(E, h({
       x: 0,
       y: 0,
-      width: y,
-      height: y,
+      width: b,
+      height: b,
       size: "custom",
       className: o()(i, f.icon),
-      colorClass: null != g ? g : void 0,
+      colorClass: null != m ? m : void 0,
       color: null != p ? p : "currentColor"
     }, j)), G = w;
     return null == G && "string" == typeof I && (G = I), (0, r.jsx)(c.ua7, {
@@ -130,8 +165,8 @@ let m = 24,
       spacing: C,
       children: e => {
         let {
-          onMouseEnter: m,
-          onMouseLeave: E,
+          onMouseEnter: g,
+          onMouseLeave: y,
           onFocus: I,
           onBlur: T
         } = e;
@@ -140,18 +175,18 @@ let m = 24,
           className: o()(n, f.iconWrapper, {
             [f.iconDisabled]: l
           }),
-          children: (0, r.jsx)(b, h({
+          children: (0, r.jsx)(E, h({
             x: 0,
             y: 0,
-            width: y,
-            height: y,
+            width: b,
+            height: b,
             size: "custom",
             className: o()(i, f.icon),
-            colorClass: null != g ? g : void 0,
+            colorClass: null != m ? m : void 0,
             color: null != p ? p : "currentColor",
             "aria-hidden": D,
-            onMouseEnter: m,
-            onMouseLeave: E,
+            onMouseEnter: g,
+            onMouseLeave: y,
             onFocus: I,
             onBlur: T
           }, j))
@@ -160,8 +195,8 @@ let m = 24,
           tag: "div",
           onClick: l ? void 0 : O,
           onContextMenu: l ? void 0 : v,
-          onMouseEnter: m,
-          onMouseLeave: E,
+          onMouseEnter: g,
+          onMouseLeave: y,
           onFocus: I,
           onBlur: T,
           className: o()(n, {
@@ -180,8 +215,8 @@ let m = 24,
           "data-jump-section": k,
           children: [u ? (0, r.jsx)(d.ZP, {
             mask: "top" === _ ? d.ZP.Masks.HEADER_BAR_BADGE_TOP : d.ZP.Masks.HEADER_BAR_BADGE_BOTTOM,
-            height: y,
-            width: y,
+            height: b,
+            width: b,
             children: U
           }) : U, u ? (0, r.jsx)("span", {
             className: o()(f.iconBadge, "top" === _ ? f.iconBadgeTop : f.iconBadgeBottom)
@@ -190,7 +225,16 @@ let m = 24,
       }
     })
   }),
-  b = e => {
+  I = i.forwardRef(function(e, t) {
+    var {
+      className: n
+    } = e, i = E(e, ["className"]);
+    return (0, r.jsx)(v, g(h({}, i), {
+      className: o()(f.channelIcon, n),
+      ref: t
+    }))
+  }),
+  T = e => {
     let {
       className: t
     } = e;
@@ -199,7 +243,7 @@ let m = 24,
     })
   };
 
-function y(e) {
+function S(e) {
   let {
     direction: t = "right"
   } = e;
@@ -213,7 +257,7 @@ function y(e) {
     className: f.caret
   })
 }
-let O = e => {
+let A = e => {
   let {
     className: t,
     innerClassName: n,
@@ -265,5 +309,5 @@ let O = e => {
     })
   })
 };
-O.Icon = E, O.Title = g, O.Divider = b, O.Caret = y;
-let v = O
+A.Icon = v, A.ChannelIcon = I, A.Title = O, A.Divider = T, A.Caret = S;
+let N = A

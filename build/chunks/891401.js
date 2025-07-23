@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 a.d(t, {
-  Z: () => N
+  Z: () => O
 }), a(49124);
 var n = a(255367),
   r = a(73800),
@@ -54,14 +54,14 @@ function C(e, t) {
   }), e
 }
 
-function N() {
+function O() {
   return (0, n.jsxs)(m.Ttm, {
     className: _.container,
-    children: [(0, n.jsx)(O, {}), (0, n.jsx)(T, {})]
+    children: [(0, n.jsx)(N, {}), (0, n.jsx)(T, {})]
   })
 }
 
-function O() {
+function N() {
   var e, t;
   let a = (0, c.e7)([j.Z], () => j.Z.getChannelId()),
     l = (0, b.Z)(a),
@@ -75,10 +75,10 @@ function O() {
     v = r.useCallback(e => {
       E(null == l ? void 0 : l.wallpaperId, e.target.value)
     }, [null == l ? void 0 : l.wallpaperId]),
-    N = r.useCallback(e => {
+    O = r.useCallback(e => {
       P(null == l ? void 0 : l.wallpaperId, e.target.value)
     }, [null == l ? void 0 : l.wallpaperId]),
-    O = r.useCallback(e => {
+    N = r.useCallback(e => {
       S(null == l ? void 0 : l.wallpaperId, e.target.value)
     }, [null == l ? void 0 : l.wallpaperId]),
     T = r.useCallback(() => E(null == l ? void 0 : l.wallpaperId, void 0), [null == l ? void 0 : l.wallpaperId]),
@@ -92,8 +92,8 @@ function O() {
     k = r.useCallback(() => {
       null != s && (0, p.i)(s, null)
     }, [s]),
-    A = null != (e = null == d ? void 0 : d.opacity) ? e : 1,
-    Z = null != (t = null == d ? void 0 : d.token_mix_amount) ? t : 100;
+    Z = null != (e = null == d ? void 0 : d.opacity) ? e : 1,
+    A = null != (t = null == d ? void 0 : d.token_mix_amount) ? t : 100;
   return (0, n.jsxs)("div", {
     children: [(0, n.jsx)(o.X6, {
       className: _.header,
@@ -120,12 +120,12 @@ function O() {
         }))
       }), (0, n.jsx)(m.iRW, {
         className: _.slider,
-        initialValue: A,
+        initialValue: Z,
         defaultValue: 1,
         minValue: 0,
         maxValue: 1,
         onValueChange: f
-      }, "opacity-".concat(A)), (0, n.jsx)(m.ua7, {
+      }, "opacity-".concat(Z)), (0, n.jsx)(m.ua7, {
         text: "The most prominent color in the wallpaper. This will be used to adjust the color tokens.",
         children: e => (0, n.jsx)(o.X6, C(y({
           className: i()(_.subheader, _.hasTooltip),
@@ -162,7 +162,7 @@ function O() {
         children: [(0, n.jsx)("input", {
           type: "color",
           value: d.secondary_color,
-          onChange: N
+          onChange: O
         }, "secondaryColor-".concat(d.secondary_color)), (0, n.jsx)(m.M0o, {
           color: "currentColor",
           tooltip: g.intl.string(g.t.N86XcH),
@@ -183,12 +183,12 @@ function O() {
         }))
       }), (0, n.jsx)(m.iRW, {
         className: _.slider,
-        initialValue: Z,
+        initialValue: A,
         defaultValue: 100,
         minValue: 0,
         maxValue: 100,
         onValueChange: R
-      }, "tokenMixAmount-".concat(Z)), (0, n.jsx)(m.ua7, {
+      }, "tokenMixAmount-".concat(A)), (0, n.jsx)(m.ua7, {
         text: "The color used for hyperlinks.",
         children: e => (0, n.jsx)(o.X6, C(y({
           className: i()(_.subheader, _.hasTooltip),
@@ -201,7 +201,7 @@ function O() {
         children: [(0, n.jsx)("input", {
           type: "color",
           value: d.link_color,
-          onChange: O
+          onChange: N
         }, "linkColor-".concat(d.link_color)), (0, n.jsx)(m.M0o, {
           color: "currentColor",
           tooltip: g.intl.string(g.t.N86XcH),

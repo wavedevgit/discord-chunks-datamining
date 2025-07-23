@@ -261,7 +261,8 @@ function L(e) {
           onClick: u,
           className: a()({
             [R.cursorPointer]: s,
-            [R.forumPostTitle]: O
+            [R.forumPostTitle]: O,
+            [R.forumPostSidebarTitle]: s && O
           }),
           children: x
         })]
@@ -271,8 +272,7 @@ function L(e) {
         guildName: n
       }) : n;
       return (0, r.jsxs)(i.Fragment, {
-        children: [null !== b ? (0, r.jsx)(Z.Z.Icon, {
-          iconClassName: R.__invalid_icon,
+        children: [null !== b ? (0, r.jsx)(Z.Z.ChannelIcon, {
           icon: b,
           "aria-hidden": !0
         }) : null, (0, r.jsxs)(Z.Z.Title, {
@@ -331,8 +331,7 @@ function B(e, t) {
 
 function F(e, t) {
   return (0, r.jsxs)(r.Fragment, {
-    children: [null !== e && (0, r.jsx)(Z.Z.Icon, {
-      iconClassName: R.__invalid_icon,
+    children: [null !== e && (0, r.jsx)(Z.Z.ChannelIcon, {
       icon: e,
       "aria-hidden": !0
     }), (0, r.jsx)(c.nn4, {

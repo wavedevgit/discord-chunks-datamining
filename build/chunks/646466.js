@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 a.d(t, {
-  O: () => O
+  O: () => N
 }), a(388685);
 var n = a(255367),
   r = a(73800),
@@ -186,8 +186,8 @@ let p = [{
         children: [(0, n.jsx)(l.X6q, {
           variant: "heading-lg/bold",
           children: "Ignored Files"
-        }), (0, n.jsx)(l.Avr, {
-          variant: "secondary",
+        }), (0, n.jsx)(l.zxk, {
+          variant: "primary",
           size: "sm",
           onClick: a,
           text: "Clear"
@@ -226,8 +226,8 @@ let p = [{
           variant: "text-md/normal",
           color: p ? "text-feedback-warning" : "text-default",
           children: "".concat(d.length, " warnings")
-        }), (0, n.jsx)(l.Avr, {
-          variant: "secondary",
+        }), (0, n.jsx)(l.zxk, {
+          variant: "primary",
           size: "sm",
           onClick: t,
           text: "Reset"
@@ -296,7 +296,7 @@ let p = [{
       })]
     })
   },
-  N = () => {
+  O = () => {
     let {
       previewEnabled: e,
       setPreviewEnabled: t,
@@ -339,7 +339,7 @@ let p = [{
       })]
     })
   },
-  O = () => {
+  N = () => {
     let [e, t] = r.useState("preview");
     return (0, n.jsxs)("div", {
       className: m.container,
@@ -356,7 +356,7 @@ let p = [{
         optionClassName: m.panelModeControlOption
       }), (0, n.jsx)(l.LZC, {
         size: 8
-      }), "preview" === e && (0, n.jsx)(N, {}), "validate" === e && (0, n.jsx)(C, {}), (0, n.jsx)(l.LZC, {
+      }), "preview" === e && (0, n.jsx)(O, {}), "validate" === e && (0, n.jsx)(C, {}), (0, n.jsx)(l.LZC, {
         size: 16
       })]
     })

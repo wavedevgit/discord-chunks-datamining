@@ -23,11 +23,11 @@ var n = a(255367),
   _ = a(681619),
   y = a(621060),
   C = a(388032),
-  N = a(459100),
-  O = a(616257);
+  O = a(459100),
+  N = a(616257);
 let T = [{
     key: "id",
-    cellClassName: N.eventColumn,
+    cellClassName: O.eventColumn,
     render(e) {
       let {
         experimentId: t
@@ -36,7 +36,7 @@ let T = [{
     }
   }, {
     key: "bucket",
-    cellClassName: N.locationColumn,
+    cellClassName: O.locationColumn,
     render(e) {
       let {
         descriptor: t
@@ -45,7 +45,7 @@ let T = [{
     }
   }, {
     key: "timestamp",
-    cellClassName: N.locationColumn,
+    cellClassName: O.locationColumn,
     render(e) {
       let {
         timestamp: t
@@ -71,7 +71,7 @@ let T = [{
       } = e, u = d()(s);
       return (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsxs)(h.ZP, {
-          className: i()(O.headerBar, N.subPanelHeaderBar),
+          className: i()(N.headerBar, O.subPanelHeaderBar),
           children: [(0, n.jsx)(h.ZP.Icon, {
             icon: x.IeX,
             tooltip: t
@@ -79,7 +79,7 @@ let T = [{
             children: t
           })]
         }), (0, n.jsxs)(j.E, {
-          className: N.commonProperties,
+          className: O.commonProperties,
           children: [(0, n.jsx)(j.Z9, {
             name: "Timestamp (local)",
             children: (0, n.jsx)("time", {
@@ -147,19 +147,19 @@ function S() {
   }, []);
   return (0, n.jsxs)("div", {
     ref: a,
-    className: i()(O.panel, N.panel),
+    className: i()(N.panel, O.panel),
     children: [(0, n.jsxs)("div", {
-      className: N.toolbar,
+      className: O.toolbar,
       children: [(0, n.jsx)("div", {
         title: "Enables tracking of all triggers",
-        className: N.triggersEnable,
+        className: O.triggersEnable,
         children: (0, n.jsx)(x.rsf, {
           checked: S,
           onChange: P,
-          className: N.__invalid_toolbarSwitch
+          className: O.__invalid_toolbarSwitch
         })
       }), (0, n.jsx)(m.zx, {
-        className: N.toolbarButton,
+        className: O.toolbarButton,
         look: m.zx.Looks.BLANK,
         size: m.zx.Sizes.ICON,
         onClick: v.Zw,
@@ -172,7 +172,7 @@ function S() {
           })
         })
       }), (0, n.jsx)(x.E1j, {
-        className: N.searchBar,
+        className: O.searchBar,
         query: e,
         onChange: t,
         onClear: () => t(""),
@@ -184,7 +184,7 @@ function S() {
       selectedRowKey: c,
       onClickRow: e => d(e.key)
     }), null != h && (0, n.jsxs)(g.Z, {
-      className: N.subPanel,
+      className: O.subPanel,
       minHeight: 100,
       initialHeight: null != a.current ? a.current.clientHeight / 2 : 300,
       children: [(0, n.jsx)(b, {}), j({

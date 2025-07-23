@@ -23,9 +23,9 @@ var n = a(255367),
   _ = a(444048);
 let y = [o.z.GUILD_POWERUP_PERKS_COACHMARK, o.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK, o.z.GUILD_POWERUP_NOTIFICATION, o.z.GUILD_TAG_AVAILABLE_COACHMARK],
   C = [o.C.GUILD_POWERUP_LEVEL_1_COACHMARK, o.C.GUILD_POWERUP_LEVEL_2_COACHMARK, o.C.GUILD_POWERUP_LEVEL_3_COACHMARK, o.C.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, o.C.GUILD_POWERUP_CHOICE_SKU_PURCHASE_COACHMARK],
-  N = [o.C.ADOPT_CLAN_IDENTITY_NOTICE];
+  O = [o.C.ADOPT_CLAN_IDENTITY_NOTICE];
 
-function O(e) {
+function N(e) {
   switch (e) {
     case o.C.GUILD_POWERUP_LEVEL_1_COACHMARK:
       return "GUILD_POWERUP_LEVEL_1_COACHMARK";
@@ -64,7 +64,7 @@ function S() {
       var e;
       return null == (e = v.Z.getGuild(t)) ? void 0 : e.name
     }),
-    r = (0, i.Wu)([b.Z], () => [...C, ...N].filter(e => null != t && (0, x.OY)(e, t))),
+    r = (0, i.Wu)([b.Z], () => [...C, ...O].filter(e => null != t && (0, x.OY)(e, t))),
     l = null != (e = (0, i.e7)([b.Z], () => {
       var e;
       return null == (e = b.Z.settings.userContent) ? void 0 : e.dismissedContents
@@ -151,7 +151,7 @@ function S() {
         value: r.includes(e),
         children: (0, n.jsx)(c.Text, {
           variant: "text-sm/normal",
-          children: O(e)
+          children: N(e)
         })
       }, e))]
     }), (0, n.jsxs)("div", {
@@ -159,7 +159,7 @@ function S() {
       children: [(0, n.jsx)(c.Text, {
         variant: "eyebrow",
         children: "Reset Server Tag Guild Level DCs"
-      }), N.map(e => (0, n.jsx)(c.j7V, {
+      }), O.map(e => (0, n.jsx)(c.j7V, {
         className: _.formSwitch,
         onChange: a => {
           a ? (0, x.Qd)(e, t, !1) : ((0, h.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, x.c7)(e, t))
@@ -167,7 +167,7 @@ function S() {
         value: r.includes(e),
         children: (0, n.jsx)(c.Text, {
           variant: "text-sm/normal",
-          children: O(e)
+          children: N(e)
         })
       }, e))]
     }), (0, n.jsxs)("div", {

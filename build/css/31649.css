@@ -1,6 +1,6 @@
 /**
   Module ID: 31649
-  Original File Name: a97bb060cf48f4e5
+  Original File Name: 6f05fe0452884e10
 **/
 .formGroup__9b8f6 {
     margin-bottom: 20px
@@ -250,6 +250,7 @@
 }
 
 .clearButtonWrapper_dbc4b7 {
+    align-items: center;
     display: flex;
     height: 100%;
     max-height: 50px;
@@ -267,6 +268,7 @@
 }
 
 .clearButton_dbc4b7:focus,.clearButton_dbc4b7:hover {
+    cursor: pointer;
     opacity: 1
 }
 
@@ -354,4 +356,4 @@
     text-transform: uppercase
 }
 
-/*# sourceMappingURL=a97bb060cf48f4e5.css.map*/
+/*# sourceMappingURL=6f05fe0452884e10.css.map*/

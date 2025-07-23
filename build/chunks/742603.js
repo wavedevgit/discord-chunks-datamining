@@ -242,9 +242,8 @@ function W(e) {
           isChatOpen: d,
           exitFullScreen: g
         }),
-        children: [null != S ? (0, r.jsx)(C.ZP.Icon, {
+        children: [null != S ? (0, r.jsx)(C.ZP.ChannelIcon, {
           icon: S,
-          disabled: !0,
           "aria-label": N
         }) : null, (0, r.jsx)(C.ZP.Title, {
           children: (0, r.jsxs)(r.Fragment, {

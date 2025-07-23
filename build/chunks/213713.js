@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 a.d(t, {
-  Z: () => A
+  Z: () => Z
 }), a(388685);
 var n = a(255367),
   r = a(73800),
@@ -23,8 +23,8 @@ var n = a(255367),
   _ = a(77498),
   y = a(823379),
   C = a(550532),
-  N = a(71585),
-  O = a(146282),
+  O = a(71585),
+  N = a(146282),
   T = a(780106),
   E = a(650613),
   S = a(789086),
@@ -74,7 +74,7 @@ function k(e) {
   var t, a;
   let {
     type: r
-  } = e, l = (0, u.e7)([O.Z], () => O.Z.getFilters()), i = null != (a = null == l || null == (t = l.types) ? void 0 : t.has(r)) && a;
+  } = e, l = (0, u.e7)([N.Z], () => N.Z.getFilters()), i = null != (a = null == l || null == (t = l.types) ? void 0 : t.has(r)) && a;
   return (0, n.jsx)(x.XZJ, {
     value: i,
     onClick: function() {
@@ -91,11 +91,11 @@ function k(e) {
   })
 }
 
-function A() {
+function Z() {
   var e, t;
-  let a = (0, u.e7)([O.Z], () => O.Z.getFeed(P.YN.GLOBAL_FEED)),
-    l = (0, u.e7)([O.Z], () => O.Z.getDebugImpressionCappingDisabled()),
-    i = (0, u.e7)([N.Z], () => N.Z.getDebugFastImpressionCappingEnabled()),
+  let a = (0, u.e7)([N.Z], () => N.Z.getFeed(P.YN.GLOBAL_FEED)),
+    l = (0, u.e7)([N.Z], () => N.Z.getDebugImpressionCappingDisabled()),
+    i = (0, u.e7)([O.Z], () => O.Z.getDebugFastImpressionCappingEnabled()),
     s = function(e) {
       let t = o().groupBy(e, e => e.content_type);
       return Object.keys(t).map(e => {
@@ -107,11 +107,11 @@ function A() {
         }
       })
     }(null == a || null == (e = a.entries) ? void 0 : e.map(e => e.content)),
-    c = (0, u.e7)([O.Z], () => {
+    c = (0, u.e7)([N.Z], () => {
       var e;
-      return (null == (e = O.Z.getFeedState(P.YN.GLOBAL_FEED)) ? void 0 : e.loading) === !0
+      return (null == (e = N.Z.getFeedState(P.YN.GLOBAL_FEED)) ? void 0 : e.loading) === !0
     }),
-    [k, A] = r.useState(""),
+    [k, Z] = r.useState(""),
     D = (0, u.e7)([_.Z, h.Z], () => {
       var e, t, a;
       return parseInt(k) > 0 ? k : null != (a = null == (e = _.Z.getGameByName(k)) ? void 0 : e.id) ? a : null == (t = h.Z.getApplicationByName(k)) ? void 0 : t.id
@@ -206,9 +206,9 @@ function A() {
           children: "Game Profile"
         }), (0, n.jsx)(x.oil, {
           placeholder: "App ID or full name",
-          onChange: e => (0 === e.length || e.length >= 18) && A(e),
+          onChange: e => (0 === e.length || e.length >= 18) && Z(e),
           onKeyDown: e => {
-            "Enter" === e.key && (k === e.currentTarget.value ? null == L || L(e) : A(e.currentTarget.value))
+            "Enter" === e.key && (k === e.currentTarget.value ? null == L || L(e) : Z(e.currentTarget.value))
           },
           error: k.length > 0 && null == L ? "No game profile for ".concat(null != D ? D : k + " - try by id", ".") : void 0,
           style: null != L ? {
@@ -216,7 +216,7 @@ function A() {
           } : {}
         }), (0, n.jsx)("ul", {
           children: U.map(e => (0, n.jsx)("li", {
-            children: (0, n.jsx)(Z, {
+            children: (0, n.jsx)(A, {
               application: e
             })
           }, "follow-game-".concat(e.id)))
@@ -246,7 +246,7 @@ function A() {
     })
   })
 }
-let Z = e => {
+let A = e => {
   let {
     application: t
   } = e, a = (0, g.Z)({

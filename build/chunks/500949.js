@@ -42,8 +42,8 @@ var n, r, l = a(73800),
   _ = a(940172),
   y = a(81011),
   C = a(981613),
-  N = a(762399),
-  O = a(232112),
+  O = a(762399),
+  N = a(232112),
   T = a(53796),
   E = a(723757),
   S = a(375924),
@@ -52,8 +52,8 @@ var n, r, l = a(73800),
   I = a(856308),
   R = a(665352),
   k = a(394900),
-  A = a(661105),
-  Z = a(525169),
+  Z = a(661105),
+  A = a(525169),
   D = a(433517),
   L = a(521904),
   M = a(231338);
@@ -108,8 +108,8 @@ let B = {
     Lab_D65: _.Z,
     Luv: y.Z,
     OKLCH: C.Z,
-    OKLab: N.Z,
-    P3: O.Z,
+    OKLab: O.Z,
+    P3: N.Z,
     ProPhoto: T.Z,
     REC_2020: E.Z,
     REC_2100_HLG: S.Z,
@@ -165,7 +165,7 @@ function Y(e) {
 }
 
 function J(e) {
-  return (0, k.Z)((0, A.Z)(e, i.Z), {
+  return (0, k.Z)((0, Z.Z)(e, i.Z), {
     format: "hex"
   })
 }
@@ -216,18 +216,18 @@ function er(e) {
     darkness: r,
     lightness: l,
     easingStrength: s = 1
-  } = e, o = B[e.colorSpace], c = (0, A.Z)(a, o), d = (0, Z.CD)(c, "white", 1 - r, {
+  } = e, o = B[e.colorSpace], c = (0, Z.Z)(a, o), d = (0, A.CD)(c, "white", 1 - r, {
     space: o,
     outputSpace: i.Z
-  }), u = (0, Z.CD)(c, "black", 1 - l, {
+  }), u = (0, A.CD)(c, "black", 1 - l, {
     space: o,
     outputSpace: i.Z
-  }), m = Math.floor(n / 2), x = n - m, p = (0, Z.w6)(d, c, {
+  }), m = Math.floor(n / 2), x = n - m, p = (0, A.w6)(d, c, {
     steps: m,
     outputSpace: o,
     space: o,
     progression: e => e ** s
-  }), h = (0, Z.w6)(u, c, {
+  }), h = (0, A.w6)(u, c, {
     steps: x,
     outputSpace: o,
     space: o,
