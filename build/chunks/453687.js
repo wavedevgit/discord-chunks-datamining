@@ -47,14 +47,14 @@ function m(e, t, n) {
     g = e.components.length > 0,
     b = e.hasFlag(o.iLy.HAS_THREAD),
     h = m || p || _ || f || b || g || e.type === o.uaV.THREAD_CREATED,
-    T = m && e.content === e.embeds[0].url && e.embeds[0].type === o.hBH.GIFV,
-    y = e.type !== o.uaV.DEFAULT || !T && "" !== e.content,
+    y = m && e.content === e.embeds[0].url && e.embeds[0].type === o.hBH.GIFV,
+    T = e.type !== o.uaV.DEFAULT || !y && "" !== e.content,
     C = (0, i.Z)(e),
-    x = !C && (null == n ? void 0 : n.hasTimestamp) !== !1,
-    O = l(e, t),
-    E = c(e),
-    v = C ? "" : "".concat(u ? E : O, " ").concat(a.Z0);
-  if (y) {
+    E = !C && (null == n ? void 0 : n.hasTimestamp) !== !1,
+    x = l(e, t),
+    O = c(e),
+    v = C ? "" : "".concat(u ? O : x, " ").concat(a.Z0);
+  if (T) {
     let t = r(e);
     v += " ".concat(t)
   }
@@ -62,7 +62,7 @@ function m(e, t, n) {
     let t = d(e);
     v += " ".concat(t)
   }
-  if (x) {
+  if (E) {
     let t = s(e);
     v += " ".concat(a.fy, " ").concat(t)
   }

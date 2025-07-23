@@ -1,6 +1,6 @@
 /** Chunk was on 23045 **/
 n.d(t, {
-  Z: () => x
+  Z: () => y
 }), n(997841), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -19,10 +19,10 @@ var r = n(255367),
   _ = n(358595),
   b = n(981631),
   E = n(388032),
-  y = n(273254);
+  x = n(273254);
 
-function x(e) {
-  var t, x, v;
+function y(e) {
+  var t, y, v;
   let C, O, j, {
       onTransitionToInviteChannel: I,
       onAcceptInstantInvite: S,
@@ -44,7 +44,7 @@ function x(e) {
     F = null != D && D.isGuildVocal(),
     B = null != D && D.isGuildStageVoice(),
     G = (0, f.yE)(null != (t = N.flags) ? t : 0, l.$.IS_GUEST_INVITE),
-    H = null != (x = null == T ? void 0 : T.features.has(b.oNc.HUB)) && x,
+    H = null != (y = null == T ? void 0 : T.features.has(b.oNc.HUB)) && y,
     V = null == T ? void 0 : T.id,
     {
       analyticsLocations: z
@@ -77,7 +77,7 @@ function x(e) {
     isStream: !1
   });
   return O = (0, r.jsxs)("span", {
-    className: y.infoTitle,
+    className: x.infoTitle,
     children: [(0, r.jsx)(u.Z, {
       guildId: T.id,
       name: T.name,
@@ -89,7 +89,7 @@ function x(e) {
         ref: X
       })
     }), (0, r.jsx)("span", {
-      className: y.infoBadge,
+      className: x.infoBadge,
       children: (0, r.jsx)(d.Z, {
         guild: T,
         isBannerVisible: !1,
@@ -97,21 +97,21 @@ function x(e) {
       })
     })]
   }), G && (j = (0, r.jsx)(a.DY3, {
-    className: y.tooltipContainer,
+    className: x.tooltipContainer,
     text: E.intl.string(E.t["/FeTKy"]),
     children: (0, r.jsx)(a.d3s, {
       size: "md",
       color: "currentColor",
-      className: y.infoIcon
+      className: x.infoIcon
     })
   })), F ? (O = (0, r.jsx)(p.Z.Channel, {
     channel: D
   }), C = (0, r.jsxs)("span", {
-    className: y.infoTitle,
+    className: x.infoTitle,
     children: [E.intl.format(E.t["2wimj4"], {
       guildName: T.name
     }), (0, r.jsx)("span", {
-      className: y.infoBadge,
+      className: x.infoBadge,
       children: (0, r.jsx)(d.Z, {
         guild: T,
         isBannerVisible: !1
@@ -131,7 +131,7 @@ function x(e) {
       extra: j
     }), (0, r.jsxs)(p.Z.Body, {
       children: [(0, r.jsxs)("div", {
-        className: y.headerLine,
+        className: x.headerLine,
         children: [(0, r.jsx)(p.Z.Icon, {
           guild: T
         }), (0, r.jsx)(p.Z.Info, {
@@ -147,7 +147,7 @@ function x(e) {
       })]
     }), T.features.has(b.oNc.HUB) && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
-        className: y.separator
+        className: x.separator
       }), (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",

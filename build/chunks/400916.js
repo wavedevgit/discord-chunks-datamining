@@ -21,7 +21,7 @@ function h(e) {
   let {
     guildId: g,
     productId: _
-  } = e, b = (0, a.e7)([u.Z], () => u.Z.getGuildProduct(_)), E = (null != (h = null == b || null == (t = b.attachments) ? void 0 : t.length) ? h : 0) > 1, y = null == b || null == (i = b.attachments) || null == (n = i[0]) ? void 0 : n.id;
+  } = e, b = (0, a.e7)([u.Z], () => u.Z.getGuildProduct(_)), E = (null != (h = null == b || null == (t = b.attachments) ? void 0 : t.length) ? h : 0) > 1, x = null == b || null == (i = b.attachments) || null == (n = i[0]) ? void 0 : n.id;
   return E ? (0, r.jsxs)(o.zx, {
     onClick: function() {
       d.Z.open({
@@ -40,10 +40,10 @@ function h(e) {
       height: 16,
       direction: c.Z.Directions.RIGHT
     })]
-  }) : (l()(null != y, "No attachment"), (0, r.jsxs)(p.Z, {
+  }) : (l()(null != x, "No attachment"), (0, r.jsxs)(p.Z, {
     guildId: g,
     productId: _,
-    attachmentId: y,
+    attachmentId: x,
     innerClassName: f.textWithIcon,
     children: [(0, r.jsx)("div", {
       children: m.intl.string(m.t.t9bE9f)

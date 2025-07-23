@@ -1,6 +1,6 @@
 /** Chunk was on 86181 **/
 n.d(t, {
-  o: () => p
+  o: () => _
 });
 var r = n(255367);
 n(73800);
@@ -13,15 +13,15 @@ var i = n(793030),
   u = n(388032),
   d = n(930280),
   m = n(947866);
-let p = e => {
+let _ = e => {
   let {
     userDiscountOffer: t,
     applied: n = !1
   } = e, {
-    premiumSubscription: p
-  } = (0, l.a)(), _ = (0, s._)(p, c.Xh.PREMIUM_MONTH_TIER_2, t), f = (0, o.aS)(c.Xh.PREMIUM_MONTH_TIER_2, !1, !1, {
-    currency: p.currency,
-    paymentSourceId: p.paymentSourceId
+    premiumSubscription: _
+  } = (0, l.a)(), p = (0, s._)(_, c.Xh.PREMIUM_MONTH_TIER_2, t), f = (0, o.aS)(c.Xh.PREMIUM_MONTH_TIER_2, !1, !1, {
+    currency: _.currency,
+    paymentSourceId: _.paymentSourceId
   }), C = (0, a.T4)(f.amount, f.currency);
   return (0, r.jsxs)("div", {
     className: d.discountOfferContainer,
@@ -41,7 +41,7 @@ let p = e => {
         color: "text-secondary",
         children: u.intl.format(u.t.gPzMHR, {
           numMonths: t.discount.user_usage_limit,
-          discountedPrice: _,
+          discountedPrice: p,
           regularPrice: C
         })
       }), !n && (0, r.jsx)(i.xv, {

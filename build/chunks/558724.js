@@ -39,7 +39,7 @@ function E(e) {
   return e
 }
 
-function y(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -51,13 +51,13 @@ function y(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let x = {
+let y = {
     hiddenSurveys: {},
     surveyOverride: null,
     lastFetched: null,
     lastSeen: null
   },
-  v = x,
+  v = y,
   C = {},
   O = null,
   j = !1,
@@ -144,7 +144,7 @@ function Z() {
 }
 class R extends(r = s.ZP.PersistedStore) {
   initialize(e) {
-    v = null != e ? e : x, this.syncWith([h.Z], Z)
+    v = null != e ? e : y, this.syncWith([h.Z], Z)
   }
   getState() {
     return v
@@ -164,12 +164,12 @@ b(R, "displayName", "SurveyStore"), b(R, "persistKey", "SurveyStore"), b(R, "mig
   return delete t.validSurveys, delete t.currentSurvey, delete t.iosIsPushNotificationClicked, delete t.iosIsInviteShown, delete t.iosFirstRunDate, t
 }, e => {
   var t;
-  return y(E({}, e), {
+  return x(E({}, e), {
     lastSeen: null != (t = e.lastSeen) ? t : null
   })
 }, e => {
   var t;
-  return y(E({}, e), {
+  return x(E({}, e), {
     hiddenSurveys: null != (t = e.hiddenSurveys) ? t : {}
   })
 }]);

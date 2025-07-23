@@ -81,8 +81,8 @@ function h(e) {
     shouldShowFullDescriptionButton: _ = !0,
     onShowFullDescription: b,
     productType: E,
-    onTapCard: y,
-    actionMenu: x,
+    onTapCard: x,
+    actionMenu: y,
     showOpaqueBackground: v = !1,
     hideRoleTag: C = !1,
     lineClamp: O = 1,
@@ -130,7 +130,7 @@ function h(e) {
             role: h
           })]
         })]
-      }), x]
+      }), y]
     }), (0, r.jsxs)("div", {
       className: p.purchaseDetails,
       children: [(0, r.jsx)(a.Text, {
@@ -152,7 +152,7 @@ function h(e) {
       })]
     })]
   });
-  return null == y ? (0, r.jsx)("article", {
+  return null == x ? (0, r.jsx)("article", {
     className: l()(p.productCard, v ? p.opaqueBackground : p.solidBackground),
     "aria-labelledby": P,
     children: A
@@ -167,7 +167,7 @@ function h(e) {
         productName: n
       }),
       className: l()(p.productCard, v ? p.opaqueBackground : p.solidBackground, p.cardClickableContainer),
-      onClick: y,
+      onClick: x,
       children: A
     })
   })

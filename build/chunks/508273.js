@@ -19,8 +19,8 @@ var r = n(255367),
   _ = n(174161),
   b = n(798476),
   E = n(358595),
-  y = n(981631),
-  x = n(388032),
+  x = n(981631),
+  y = n(388032),
   v = n(583136);
 
 function C(e) {
@@ -30,7 +30,7 @@ function C(e) {
     message: l,
     onTransitionToInviteChannel: c,
     onAcceptInstantInvite: d
-  } = e, p = i.useRef(null), [f, g] = i.useState(!0), [C, j] = i.useState(!1), I = t.state === y.r2o.ACCEPTING, S = (0, o.e7)([u.Z], () => u.Z.useReducedMotion);
+  } = e, p = i.useRef(null), [f, g] = i.useState(!0), [C, j] = i.useState(!1), I = t.state === x.r2o.ACCEPTING, S = (0, o.e7)([u.Z], () => u.Z.useReducedMotion);
   i.useLayoutEffect(() => {
     var e, t;
     j((null != (t = null == (e = p.current) ? void 0 : e.clientHeight) ? t : 0) > 292)
@@ -76,7 +76,7 @@ function C(e) {
         variant: "secondary",
         size: "sm",
         onClick: P,
-        text: x.intl.string(x.t.xdCLeH)
+        text: y.intl.string(y.t.xdCLeH)
       })
     }) : null, (0, r.jsxs)("div", {
       className: a()(v.footer, {

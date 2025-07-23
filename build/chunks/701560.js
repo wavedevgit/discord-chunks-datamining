@@ -18,8 +18,8 @@ var r, i = n(255367),
   _ = n(358085),
   b = n(346329),
   E = n(981631),
-  y = n(388032),
-  x = n(637214);
+  x = n(388032),
+  y = n(637214);
 
 function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -66,15 +66,15 @@ class j extends(r = l.PureComponent) {
       dispatchState: e
     } = this.props;
     return null != e && null != e.launchOptions && Object.keys(e.launchOptions).length > 1 ? (0, i.jsxs)(u.P3F, {
-      "aria-label": y.intl.string(y.t.KTPVLC),
-      className: x.dropdownArrowHitbox,
+      "aria-label": x.intl.string(x.t.KTPVLC),
+      className: y.dropdownArrowHitbox,
       onClick: this.handleDropdownClick,
       children: [(0, i.jsx)("div", {
-        className: x.arrowSeparator
+        className: y.arrowSeparator
       }), (0, i.jsx)(u.CJ0, {
         size: "md",
         color: "currentColor",
-        className: x.dropdownArrow
+        className: y.dropdownArrow
       })]
     }) : null
   }
@@ -87,19 +87,19 @@ class j extends(r = l.PureComponent) {
       tooltipPosition: o
     } = this.props;
     return (0, i.jsxs)("div", {
-      className: x.disabledButtonWrapper,
+      className: y.disabledButtonWrapper,
       children: [(0, i.jsx)(c.zx, {
         className: n,
         fullWidth: r,
         size: l,
-        color: null != a ? a : x.disabledButtonColor,
+        color: null != a ? a : y.disabledButtonColor,
         disabled: !0,
         children: e
       }), (0, i.jsx)(u.ua7, {
         text: t,
         position: o,
         children: e => (0, i.jsx)("div", C({
-          className: x.disabledButtonOverlay
+          className: y.disabledButtonOverlay
         }, e))
       })]
     })
@@ -116,20 +116,20 @@ class j extends(r = l.PureComponent) {
       isShiny: d,
       hideNotLaunchable: p
     } = this.props;
-    if (!l) return p ? null : this.renderDisabledButton(y.intl.string(y.t["359PbW"]), _.isPlatformEmbedded ? y.intl.string(y.t.NASLa2) : y.intl.string(y.t.o1bhkJ));
-    if (s) return this.renderDisabledButton(y.intl.string(y.t["3elwAA"]));
+    if (!l) return p ? null : this.renderDisabledButton(x.intl.string(x.t["359PbW"]), _.isPlatformEmbedded ? x.intl.string(x.t.NASLa2) : x.intl.string(x.t.o1bhkJ));
+    if (s) return this.renderDisabledButton(x.intl.string(x.t["3elwAA"]));
     let m = d ? u.gtL : c.zx;
     return (0, i.jsxs)(m, {
-      className: o()(x.playButton, e),
-      innerClassName: x.playButtonContents,
+      className: o()(y.playButton, e),
+      innerClassName: y.playButtonContents,
       fullWidth: t,
       size: n,
       color: null != r ? r : c.zx.Colors.GREEN,
       submitting: a,
       onClick: this.handleClick,
       children: [(0, i.jsx)("div", {
-        className: x.buttonText,
-        children: y.intl.string(y.t["359PbW"])
+        className: y.buttonText,
+        children: x.intl.string(x.t["359PbW"])
       }), this.renderDropdown()]
     })
   }

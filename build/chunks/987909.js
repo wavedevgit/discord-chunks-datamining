@@ -1,55 +1,57 @@
 /** Chunk was on 23045 **/
 n.d(t, {
-  Z: () => x
+  Z: () => C
 }), n(388685);
 var r = n(255367),
   i = n(73800),
   l = n(442837),
-  a = n(755721),
-  o = n(904245),
-  s = n(541716),
-  c = n(419922),
-  u = n(665906),
-  d = n(271383),
-  p = n(496675),
-  m = n(594174),
-  f = n(626135),
-  h = n(709054),
-  g = n(838440),
-  _ = n(981631),
-  b = n(18485);
+  a = n(159691),
+  o = n(755721),
+  s = n(904245),
+  c = n(541716),
+  u = n(419922),
+  d = n(665906),
+  p = n(223750),
+  m = n(271383),
+  f = n(496675),
+  h = n(594174),
+  g = n(626135),
+  _ = n(709054),
+  b = n(838440),
+  E = n(981631),
+  x = n(18485);
 
-function E(e) {
+function y(e) {
   let {
     assets: t,
     currentUser: n,
     message: r
-  } = e, i = (h.default.extractTimestamp(n.id) + h.default.extractTimestamp(r.id)) % t.length;
+  } = e, i = (_.default.extractTimestamp(n.id) + _.default.extractTimestamp(r.id)) % t.length;
   return t[i]
 }
 
-function y(e) {
+function v(e) {
   let {
     currentUser: t,
     channel: n,
     message: l,
-    buttonLabels: u,
-    stickers: d,
-    event: p,
-    eventProperties: m
-  } = e, [h, _] = i.useState(!1), y = i.useMemo(() => E({
+    buttonLabels: d,
+    stickers: m,
+    event: f,
+    eventProperties: h
+  } = e, _ = (0, p.t)(), [E, v] = i.useState(!1), C = i.useMemo(() => y({
+    assets: m,
+    currentUser: t,
+    message: l
+  }), [m, t, l]), O = i.useMemo(() => y({
     assets: d,
     currentUser: t,
     message: l
-  }), [d, t, l]), x = i.useMemo(() => E({
-    assets: u,
-    currentUser: t,
-    message: l
-  }), [u, t, l]), v = i.useCallback(async () => {
+  }), [d, t, l]), j = i.useCallback(async () => {
     let {
       valid: e
-    } = await (0, g.v)({
-      type: s.Ie.FORM,
+    } = await (0, b.v)({
+      type: c.Ie.FORM,
       content: "",
       channel: n
     });
@@ -59,7 +61,7 @@ function y(e) {
         message: n,
         sticker: r
       } = e;
-      o.Z.sendGreetMessage(t.id, r.id, o.Z.getSendMessageOptionsForReply({
+      s.Z.sendGreetMessage(t.id, r.id, s.Z.getSendMessageOptionsForReply({
         channel: t,
         message: n,
         shouldMention: !0,
@@ -68,7 +70,7 @@ function y(e) {
     }({
       channel: n,
       message: l,
-      sticker: y
+      sticker: C
     }), function(e) {
       var t, n;
       let {
@@ -76,7 +78,7 @@ function y(e) {
         event: i,
         eventProperties: l
       } = e;
-      null != i && f.default.track(i, (t = function(e) {
+      null != i && g.default.track(i, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -106,28 +108,34 @@ function y(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t))
     }({
-      sticker: y,
-      event: p,
-      eventProperties: m
+      sticker: C,
+      event: f,
+      eventProperties: h
     }))
-  }, [n, l, y, p, m]);
-  return (0, r.jsxs)(a.zx, {
-    className: b.CTAMessageButtonOuter,
-    innerClassName: b.CTAMessageButton,
-    color: a.Tt.PRIMARY,
-    onMouseEnter: () => _(!0),
-    onMouseLeave: () => _(!1),
-    onClick: v,
-    children: [(0, r.jsx)(c.Z, {
-      className: b.CTAMessageSticker,
-      isInteracting: h,
-      sticker: y,
+  }, [n, l, C, f, h]);
+  return _ ? (0, r.jsx)(a.zx, {
+    variant: "secondary",
+    size: "md",
+    onClick: j,
+    text: O
+  }) : (0, r.jsxs)(o.zx, {
+    "data-migration-pending": !0,
+    className: x.CTAMessageButtonOuter,
+    innerClassName: x.CTAMessageButton,
+    color: o.Tt.PRIMARY,
+    onMouseEnter: () => v(!0),
+    onMouseLeave: () => v(!1),
+    onClick: j,
+    children: [(0, r.jsx)(u.Z, {
+      className: x.CTAMessageSticker,
+      isInteracting: E,
+      sticker: C,
       size: 28
-    }), x]
+    }), O]
   })
 }
 
-function x(e) {
+function C(e) {
   let {
     channel: t,
     message: n,
@@ -135,19 +143,19 @@ function x(e) {
     stickers: a,
     event: o,
     eventProperties: s
-  } = e, c = m.default.getCurrentUser(), f = function(e) {
+  } = e, c = h.default.getCurrentUser(), u = function(e) {
     let {
       channel: t,
       message: n,
       currentUser: r
     } = e;
-    return (0, l.e7)([p.Z, d.ZP], () => {
+    return (0, l.e7)([f.Z, m.ZP], () => {
       var e;
       let i = t.guild_id;
       if (null == r || null == i) return !1;
-      let l = (0, u.xl)(t),
-        a = p.Z.can(_.Plq.SEND_MESSAGES, t),
-        o = null == (e = d.ZP.getMember(i, r.id)) ? void 0 : e.isPending,
+      let l = (0, d.xl)(t),
+        a = f.Z.can(E.Plq.SEND_MESSAGES, t),
+        o = null == (e = m.ZP.getMember(i, r.id)) ? void 0 : e.isPending,
         s = n.author.bot;
       return a && !l && !o && !s
     })
@@ -156,9 +164,9 @@ function x(e) {
     message: n,
     currentUser: c
   });
-  return null != c && f ? (0, r.jsx)("div", {
-    className: b.CTAMessage,
-    children: (0, r.jsx)(y, {
+  return null != c && u ? (0, r.jsx)("div", {
+    className: x.CTAMessage,
+    children: (0, r.jsx)(v, {
       currentUser: c,
       channel: t,
       message: n,

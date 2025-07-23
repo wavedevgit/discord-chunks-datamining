@@ -1,6 +1,6 @@
 /** Chunk was on 23045 **/
 n.d(t, {
-  Z: () => y,
+  Z: () => x,
   m: () => E
 });
 var r = n(255367),
@@ -125,8 +125,8 @@ function E(e) {
     onEditProduct: p,
     onUnpublishProduct: m,
     onDeleteProduct: E,
-    onCopyProductLink: y,
-    onTestDownload: x,
+    onCopyProductLink: x,
+    onTestDownload: y,
     onReportProduct: v
   } = e, C = i.useRef(null);
   return (0, r.jsx)("div", {
@@ -151,8 +151,8 @@ function E(e) {
         onEditProduct: p,
         onUnpublishProduct: m,
         onDeleteProduct: E,
-        onCopyLink: y,
-        onTestDownload: x,
+        onCopyLink: x,
+        onTestDownload: y,
         onReportProduct: v
       })),
       children: (e, n) => {
@@ -179,14 +179,14 @@ function E(e) {
   })
 }
 
-function y(e) {
+function x(e) {
   let {
     product: t,
     guildId: n,
     onEditProduct: i,
     onUnpublishProduct: l,
-    onDeleteProduct: y,
-    onCopyProductLink: x,
+    onDeleteProduct: x,
+    onCopyProductLink: y,
     onTestDownload: v,
     disabled: C = !1
   } = e, O = (0, c.U)(t, 600), j = null !== t.price_tier ? (0, u.T4)(t.price_tier, m.pK.USD) : void 0, I = (0, d.C)(t);
@@ -209,8 +209,8 @@ function y(e) {
         showReportProduct: !1,
         onEditProduct: i,
         onUnpublishProduct: l,
-        onDeleteProduct: y,
-        onCopyLink: x,
+        onDeleteProduct: x,
+        onCopyLink: y,
         onTestDownload: v,
         onReportProduct: () => {}
       }))))
@@ -262,8 +262,8 @@ function y(e) {
         showReportProduct: !1,
         onEditProduct: i,
         onUnpublishProduct: l,
-        onDeleteProduct: y,
-        onCopyProductLink: x,
+        onDeleteProduct: x,
+        onCopyProductLink: y,
         onTestDownload: v,
         onReportProduct: () => {}
       })]

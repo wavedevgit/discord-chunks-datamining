@@ -1,7 +1,7 @@
 /** Chunk was on 23045 **/
 n.d(t, {
-  G: () => y,
-  z: () => x
+  G: () => x,
+  z: () => y
 });
 var r = n(73800),
   i = n(442837),
@@ -49,7 +49,7 @@ function E(e) {
   }
 }
 
-function y(e, t) {
+function x(e, t) {
   let {
     canViewApp: n,
     canOpenAppLauncher: i,
@@ -82,11 +82,11 @@ function y(e, t) {
   } : void 0, [e.id, i, n, c, u, d, l, t, p])
 }
 
-function x(e) {
+function y(e) {
   let {
     canViewApp: t,
     isInstallable: n
-  } = E(e), i = y(e);
+  } = E(e), i = x(e);
   return r.useMemo(() => t && null != i ? {
     label: b.intl.string(b.t.hvVgAQ),
     trackingArea: h.j_.VIEW,

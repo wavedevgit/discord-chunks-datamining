@@ -18,8 +18,8 @@ var r, i = n(255367),
   _ = n(29270),
   b = n(267642),
   E = n(739566),
-  y = n(834129),
-  x = n(981631),
+  x = n(834129),
+  y = n(981631),
   v = n(388032),
   C = n(573510);
 
@@ -173,7 +173,7 @@ function M(e) {
   }()), {
     createMultipleConfettiAt: g,
     confettiCanvas: _
-  } = l.useContext(f.h), [b, E] = l.useState(null), y = (0, s.uR)(_, b), x = function(e, t) {
+  } = l.useContext(f.h), [b, E] = l.useState(null), x = (0, s.uR)(_, b), y = function(e, t) {
     if (null == e) return "enter";
     switch (e) {
       case "enter":
@@ -229,7 +229,7 @@ function M(e) {
   }, [g, h, d, a]), l.useEffect(() => {
     if (v && "leaf_fall" === d) {
       let e = A[h].leafRotationDirection;
-      y.createConfetti({
+      x.createConfetti({
         id: "".concat(w, "-").concat((0, c.Z)()),
         position: {
           type: "static",
@@ -277,7 +277,7 @@ function M(e) {
         sprite: "TOP_LEFT" === h ? R : L
       })
     }
-  }, [v, y, h, d]), (0, i.jsxs)(i.Fragment, {
+  }, [v, x, h, d]), (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(s.Ji, {
       ref: E,
       sprites: k,
@@ -297,7 +297,7 @@ function M(e) {
         className: o()(C.easterEggAnimation, {
           [C.easterEggAnimationHideLeaf]: O
         }),
-        nextScene: x,
+        nextScene: y,
         sceneSegments: I,
         onScenePlay: j,
         onSceneComplete: P,
@@ -318,12 +318,12 @@ function U(e) {
     } = e,
     c = function(e) {
       switch (e.type) {
-        case x.uaV.GUILD_BOOST_TIER_1:
-          return x.Eu4.TIER_1;
-        case x.uaV.GUILD_BOOST_TIER_2:
-          return x.Eu4.TIER_2;
-        case x.uaV.GUILD_BOOST_TIER_3:
-          return x.Eu4.TIER_3
+        case y.uaV.GUILD_BOOST_TIER_1:
+          return y.Eu4.TIER_1;
+        case y.uaV.GUILD_BOOST_TIER_2:
+          return y.Eu4.TIER_2;
+        case y.uaV.GUILD_BOOST_TIER_3:
+          return y.Eu4.TIER_3
       }
       return null
     }(n),
@@ -374,7 +374,7 @@ function U(e) {
     L = l.useCallback(() => {
       (0, g.AI)({
         settingsVisible: !0
-      }), m.Z.open(x.oAB.POGGERMODE), I(!1)
+      }), m.Z.open(y.oAB.POGGERMODE), I(!1)
     }, []),
     k = l.useCallback((e, t) => {
       (null == t ? void 0 : t.id.startsWith(w)) && L()
@@ -390,7 +390,7 @@ function U(e) {
       onMouseEnter: Z
     })
   });
-  return (0, i.jsxs)(y.Z, {
+  return (0, i.jsxs)(x.Z, {
     iconNode: D,
     timestamp: n.timestamp,
     compact: r,

@@ -41,17 +41,17 @@ let h = i.memo(function(e) {
     onUpdate: p,
     contentRef: b,
     compact: h
-  } = e, T = o.state === m.yb.SEND_FAILED, y = o.state === m.yb.SENDING, C = o.isCommandType(), x = null == (t = o.editedTimestamp) ? void 0 : t.toString(), O = i.useRef(!1);
+  } = e, y = o.state === m.yb.SEND_FAILED, T = o.state === m.yb.SENDING, C = o.isCommandType(), E = null == (t = o.editedTimestamp) ? void 0 : t.toString(), x = i.useRef(!1);
   return i.useLayoutEffect(() => {
-    O.current ? null != p && p() : O.current = !0
-  }, [p, o.content, s, x, c]), (0, a.jsxs)("div", {
+    x.current ? null != p && p() : x.current = !0
+  }, [p, o.content, s, E, c]), (0, a.jsxs)("div", {
     id: (0, u.ut)(o),
     ref: b,
     className: r()(n, f.markup, {
       [_.messageContent]: !0,
-      [_.isSending]: y && !C,
+      [_.isSending]: T && !C,
       [_.markupRtl]: "rtl" === l()(o.content),
-      [_.isFailed]: T,
+      [_.isFailed]: y,
       [_.isUnsupported]: o.isUnsupported
     }),
     children: [null != c ? c : g(o, s), (0, a.jsx)(d.Z, {

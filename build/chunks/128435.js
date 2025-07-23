@@ -1,6 +1,6 @@
 /** Chunk was on 23045 **/
 n.d(t, {
-  Z: () => x
+  Z: () => y
 }), n(314940);
 var r = n(255367),
   i = n(73800),
@@ -115,7 +115,7 @@ function E(e) {
   })
 }
 
-function y(e) {
+function x(e) {
   let {
     message: t,
     poll: n,
@@ -170,7 +170,7 @@ function y(e) {
   })
 }
 
-function x(e) {
+function y(e) {
   let {
     message: t,
     poll: n,
@@ -180,7 +180,7 @@ function x(e) {
     message: t,
     poll: n,
     children: (0, r.jsx)(m.Pk, {
-      children: (0, r.jsx)(y, {
+      children: (0, r.jsx)(x, {
         message: t,
         poll: n,
         className: i

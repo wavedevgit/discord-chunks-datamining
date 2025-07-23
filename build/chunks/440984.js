@@ -12,8 +12,8 @@ var r = n(255367),
   u = n(530618),
   d = n(74538),
   m = n(937615),
-  p = n(230916),
-  _ = n(798769),
+  _ = n(230916),
+  p = n(798769),
   f = n(474936),
   C = n(388032),
   h = n(583532),
@@ -26,17 +26,17 @@ function b(e) {
     premiumType: n,
     onClose: b,
     confettiCanvas: g,
-    userWasChurned: v = !1,
-    userDiscountOffer: I
-  } = e, j = (0, l.ZP)(), T = (0, a.wj)(j) ? x : y, E = i.useRef(null), [P, O] = i.useState(!1), S = (0, p._)(t, f.Xh.PREMIUM_MONTH_TIER_2, I), N = (0, d.aS)(f.Xh.PREMIUM_MONTH_TIER_2, !1, !1, {
+    userWasChurned: j = !1,
+    userDiscountOffer: v
+  } = e, I = (0, l.ZP)(), T = (0, a.wj)(I) ? x : y, E = i.useRef(null), [P, O] = i.useState(!1), S = (0, _._)(t, f.Xh.PREMIUM_MONTH_TIER_2, v), N = (0, d.aS)(f.Xh.PREMIUM_MONTH_TIER_2, !1, !1, {
     currency: t.currency,
     paymentSourceId: t.paymentSourceId
   }), R = (0, m.T4)(N.amount, N.currency), D = (0, o.e7)([c.Z], () => c.Z.useReducedMotion);
   if (i.useEffect(() => {
       null != E.current && null != S && O(!0)
-    }, [E, P, S]), null == I || null == S) return null;
+    }, [E, P, S]), null == v || null == S) return null;
   let w = C.intl.format(C.t.gPzMHR, {
-      numMonths: I.discount.user_usage_limit,
+      numMonths: v.discount.user_usage_limit,
       discountedPrice: S,
       regularPrice: R
     }),
@@ -49,7 +49,7 @@ function b(e) {
       })
     });
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(_.Z, {
+    children: [(0, r.jsx)(p.Z, {
       premiumType: n,
       className: h.cancellationHeader,
       onClose: b
@@ -66,7 +66,7 @@ function b(e) {
               className: h.nitroIcon
             }), (0, r.jsx)(s.X6q, {
               variant: "heading-xl/bold",
-              children: v ? C.intl.string(C.t.gOOPaG) : C.intl.string(C.t.PZSyRk)
+              children: j ? C.intl.string(C.t.gOOPaG) : C.intl.string(C.t.PZSyRk)
             })]
           }), (0, r.jsx)("div", {
             className: h.bodyString,

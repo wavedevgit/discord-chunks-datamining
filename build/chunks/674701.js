@@ -19,8 +19,8 @@ var r, i = n(255367),
   _ = n(213609),
   b = n(541716),
   E = n(28546),
-  y = n(963249),
-  x = n(594174),
+  x = n(963249),
+  y = n(594174),
   v = n(626135),
   C = n(51144),
   O = n(479446),
@@ -47,7 +47,7 @@ function L(e) {
     analyticsSection: D,
     glow: M,
     giftIntentSecondaryAction: U
-  } = e, F = (0, c.e7)([x.default], () => x.default.getCurrentUser()), {
+  } = e, F = (0, c.e7)([y.default], () => y.default.getCurrentUser()), {
     analyticsLocations: B
   } = (0, g.ZP)(), G = (0, c.e7)([I.Z], () => I.Z.getFriendAnniversaryYears(r.id));
   l.useEffect(() => {
@@ -162,7 +162,7 @@ function L(e) {
           onClick: e => {
             e.stopPropagation();
             let i = (0, S.F)(t);
-            (0, y.Z)({
+            (0, x.Z)({
               isGift: !0,
               initialPlanId: null,
               giftRecipient: r,

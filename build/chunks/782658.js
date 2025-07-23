@@ -19,8 +19,8 @@ var r = n(255367),
   _ = n(885714),
   b = n(314897),
   E = n(430824),
-  y = n(701190),
-  x = n(411198),
+  x = n(701190),
+  y = n(411198),
   v = n(610699),
   C = n(313876),
   O = n(778333),
@@ -42,9 +42,9 @@ function R(e) {
   } = e, {
     invite: L,
     inviteError: k
-  } = (0, l.cj)([y.Z], () => ({
-    invite: y.Z.getInvite(t),
-    inviteError: y.Z.getInviteError(t)
+  } = (0, l.cj)([x.Z], () => ({
+    invite: x.Z.getInvite(t),
+    inviteError: x.Z.getInviteError(t)
   }), [t]), D = null == L;
   i.useEffect(() => {
     D && a.ZP.resolveInvite(t)
@@ -68,7 +68,7 @@ function R(e) {
     },
     z = () => {
       if (null == B && (null == L ? void 0 : L.guild) != null) {
-        let e = x.Qs(L.guild);
+        let e = y.Qs(L.guild);
         if ((0, c.bN)() && (0, c.Yt)(e)) return void(0, s.mN)(Z.L0.NSFW_SERVER_INVITE_EMBED)
       }(0, g.yU)() ? (0, _.Z)({
         analyticsSource: {

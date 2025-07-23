@@ -17,8 +17,8 @@ var r, i, l = n(255367),
   _ = n(293245),
   b = n(417363),
   E = n(941128),
-  y = n(780570),
-  x = n(358085),
+  x = n(780570),
+  y = n(358085),
   v = n(814225),
   C = n(346329),
   O = n(701560),
@@ -111,7 +111,7 @@ class R extends(r = a.Component) {
     if (e.isHidden()) return "add_to_library";
     if (e.isPreorder()) return "preorder_wait";
     let r = null != n ? w[n] : null;
-    return null != r ? r : null != t && t.type === j.vxO.UNINSTALLING ? "uninstalling" : (0, x.isWeb)() ? "play" : "unsupported_os"
+    return null != r ? r : null != t && t.type === j.vxO.UNINSTALLING ? "uninstalling" : (0, y.isWeb)() ? "play" : "unsupported_os"
   }
   renderPlayButton() {
     let {
@@ -172,9 +172,9 @@ class R extends(r = a.Component) {
       dispatchState: t
     } = this.props;
     if (e) return null;
-    let n = y.KJ(t);
+    let n = x.KJ(t);
     if (null == n) return null;
-    let r = n.type === j.vxO.UNINSTALLING ? u.Exd.INDETERMINATE : y.xI(Number(n.progress), Number(n.total));
+    let r = n.type === j.vxO.UNINSTALLING ? u.Exd.INDETERMINATE : x.xI(Number(n.progress), Number(n.total));
     return (0, l.jsx)(u.Exd, {
       percent: r,
       size: u.Exd.Sizes.XSMALL,

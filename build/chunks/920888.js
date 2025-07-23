@@ -51,11 +51,11 @@ function E(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let y = (e, t) => null == e && null == t || e === t,
-  x = (e, t) => e.findIndex(e => y(e.emoji.id, null == t ? void 0 : t.id) && y(e.emoji.name, null == t ? void 0 : t.name)),
+let x = (e, t) => null == e && null == t || e === t,
+  y = (e, t) => e.findIndex(e => x(e.emoji.id, null == t ? void 0 : t.id) && x(e.emoji.name, null == t ? void 0 : t.name)),
   v = (e, t) => {
     if (null == t) return e;
-    let n = x(e, t);
+    let n = y(e, t);
     return n < 0 ? e : [e[n], ...e.slice(0, n), ...e.slice(n + 1)]
   };
 class C extends i.PureComponent {
@@ -78,8 +78,8 @@ class C extends i.PureComponent {
       isPendingMember: _,
       isForumToolbar: b,
       channel: E,
-      className: y,
-      forceAddReactions: x,
+      className: x,
+      forceAddReactions: y,
       reactionClassName: v,
       useChatFontScaling: C,
       forceHideReactionCreates: O,
@@ -89,11 +89,11 @@ class C extends i.PureComponent {
     } = this.props, {
       disableTransitionAppear: T
     } = this.state, N = C ? g : h, P = S > 0;
-    if (!P && !x) return null;
-    let A = x || P;
+    if (!P && !y) return null;
+    let A = y || P;
     return (0, r.jsxs)(o.W, {
       component: "div",
-      className: a()(N.reactions, y),
+      className: a()(N.reactions, x),
       transitionAppear: !T,
       role: "group",
       transitionLeave: !1,
