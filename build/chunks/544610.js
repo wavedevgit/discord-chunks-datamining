@@ -119,7 +119,7 @@ function w(e) {
 }
 
 function R() {
-  return null != r && (r.destroy(), r = null), c.Z.getSearchContext(w, 1e3)
+  return null != r && (r.destroy(), r = null), c.Z.getUserSearchContext(w, 1e3)
 }
 
 function M(e) {

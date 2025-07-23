@@ -48,7 +48,7 @@ function v(e, t) {
 }
 class I {
   createSearchContext() {
-    null == this.userSearchContext && (this.userSearchContext = p.Z.getSearchContext(this.parseUserResults, this._limit))
+    null == this.userSearchContext && (this.userSearchContext = p.Z.getUserSearchContext(this.parseUserResults, this._limit))
   }
   setLimit(e) {
     let {
