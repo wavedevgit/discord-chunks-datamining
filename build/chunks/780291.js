@@ -12,9 +12,9 @@ var r = n(255367),
   c = n(576125),
   u = n(112843),
   d = n(524484),
-  _ = n(675654);
+  f = n(675654);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,7 +30,7 @@ function p(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -44,13 +44,13 @@ function g(e) {
     editorHeight: r,
     textValue: c,
     channelId: d
-  } = e, f = i.useRef(c), p = (0, o.Z)({
+  } = e, _ = i.useRef(c), p = (0, o.Z)({
     editorHeight: r
   }), g = (0, u.Z)(), E = (0, a.e7)([l.ZP, s.default], () => l.ZP.isComboing(s.default.getId(), d)), b = null != (t = null == p ? void 0 : p.left) ? t : 0, y = (null != (n = null == p ? void 0 : p.top) ? n : 0) - h, O = 0 === c.length, v = i.useMemo(() => Math.random() < m, [O]);
   return i.useEffect(() => {
-    0 !== c.length && c !== f.current && E && (g.fire(b, y, v ? {
-      sprite: _.vv
-    } : null), f.current = c)
+    0 !== c.length && c !== _.current && E && (g.fire(b, y, v ? {
+      sprite: f.vv
+    } : null), _.current = c)
   }, [c, E, b, y, v, g]), null
 }
 

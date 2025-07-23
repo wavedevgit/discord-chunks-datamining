@@ -43,13 +43,13 @@ function d(e, t) {
   return n
 }
 
-function _(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function f(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -79,7 +79,7 @@ function h(e) {
   } = e, g = i.useRef(null), E = i.useRef(null), b = i.useRef(null), y = i.useRef(null), {
     isUsingKeyboardNavigation: O,
     focusIndex: v
-  } = c, I = f(c, ["isUsingKeyboardNavigation", "focusIndex"]);
+  } = c, I = _(c, ["isUsingKeyboardNavigation", "focusIndex"]);
   i.useLayoutEffect(() => {
     var e;
     n && ((0, o.F)(g), null == (e = b.current) || e.focus())
@@ -105,7 +105,7 @@ function h(e) {
       align: "top",
       children: () => d.length > 0 && (0, r.jsx)("div", {
         className: l.submenuPaddingContainer,
-        children: (0, r.jsx)("div", _(u({
+        children: (0, r.jsx)("div", f(u({
           className: l.submenu
         }, I), {
           ref: b,

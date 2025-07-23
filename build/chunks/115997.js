@@ -1,4 +1,4 @@
-/** Chunk was on 51308 **/
+/** Chunk was on 22755 **/
 e.exports = {
   embedCard: "embedCard__44c9a",
   compact: "compact__44c9a",

@@ -1,8 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  AR: () => u,
+  AR: () => d,
   g1: () => l,
+  q8: () => u,
   qI: () => c,
   sT: () => o
 });
@@ -62,6 +63,17 @@ function c(e, t) {
 }
 
 function u(e, t) {
+  let n = s(e);
+  return o.useExperiment({
+    guildId: e,
+    location: t
+  }, {
+    disable: !n,
+    autoTrackExposure: !1
+  }).rollbackEnabled
+}
+
+function d(e, t) {
   return !!s(e) && o.getCurrentConfig({
     guildId: e,
     location: t

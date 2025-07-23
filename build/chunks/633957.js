@@ -1,4 +1,4 @@
-/** Chunk was on 51308 **/
+/** Chunk was on 22755 **/
 n.d(t, {
   Z: () => F
 }), n(388685);
@@ -20,8 +20,8 @@ var r = n(255367),
   b = n(895924),
   E = n(758199),
   x = n(943762),
-  v = n(914498),
-  y = n(515344),
+  y = n(914498),
+  v = n(515344),
   C = n(429551),
   O = n(973616),
   j = n(314897),
@@ -123,7 +123,7 @@ let F = i.memo(function(e) {
         analyticsLocations: F,
         componentId: en
       })
-    }, el = et.disabled ? D.intl.string(D.t.JBnc7O) : D.intl.string(D.t.cX9uLS), ea = (0, y.G)(J, () => {
+    }, el = et.disabled ? D.intl.string(D.t.JBnc7O) : D.intl.string(D.t.cX9uLS), ea = (0, v.G)(J, () => {
       N.default.track(k.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
         application_id: C.id,
         channel_id: A,
@@ -141,7 +141,7 @@ let F = i.memo(function(e) {
     eu = (0, x.r)(q),
     ed = [{
       label: ee ? D.intl.string(D.t.RscU7O) : D.intl.string(D.t.VJlc0d),
-      trackingArea: v.j_.PLAY,
+      trackingArea: y.j_.PLAY,
       onClick: ei,
       disabledReason: d,
       submitting: er
@@ -199,7 +199,7 @@ let F = i.memo(function(e) {
     onClickContent: ea,
     trackingConfig: {
       id: C.id,
-      linkType: v.Un.ACTIVITY_INSTANCE
+      linkType: y.Un.ACTIVITY_INSTANCE
     }
   })
 })

@@ -1,4 +1,4 @@
-/** Chunk was on 51308 **/
+/** Chunk was on 22755 **/
 e.exports = {
   searchResultGroup: "searchResultGroup_c68065",
   channelNameContainer: "channelNameContainer_c68065",

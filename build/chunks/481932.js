@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 });
 var r = n(255367);
 n(73800);
@@ -14,13 +14,13 @@ var i = n(442837),
   u = n(228168),
   d = n(981631);
 
-function _(e) {
+function f(e) {
   let {
     user: t,
     themeType: n,
-    shouldShowTooltip: _ = !1
+    shouldShowTooltip: f = !1
   } = e, {
-    newestAnalyticsLocation: f
+    newestAnalyticsLocation: _
   } = (0, a.ZP)(), p = (0, i.e7)([o.default], () => o.default.getId() === t.id), h = (0, i.e7)([s.Z], () => s.Z.getRelationshipType(t.id)), {
     gameFriends: m,
     hasOutgoingPendingGameFriends: g,
@@ -35,8 +35,8 @@ function _(e) {
     gameFriends: m,
     hasOutgoingPendingGameFriends: g,
     hasIncomingPendingGameFriends: E,
-    analyticsLocation: f,
-    shouldShowTooltip: _
+    analyticsLocation: _,
+    shouldShowTooltip: f
   });
   switch (h) {
     case d.OGo.FRIEND:
@@ -47,16 +47,16 @@ function _(e) {
         type: "banner",
         user: t,
         relationshipType: h,
-        analyticsLocation: f,
-        shouldShowTooltip: _
+        analyticsLocation: _,
+        shouldShowTooltip: f
       });
     default:
       if (n === u.lY.MODAL) return null;
       return (0, r.jsx)(l.Z7, {
         type: "banner",
         userId: t.id,
-        shouldShowTooltip: _,
-        analyticsLocation: f
+        shouldShowTooltip: f,
+        analyticsLocation: _
       })
   }
 }

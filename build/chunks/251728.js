@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Y: () => _
+  Y: () => f
 });
 var r = n(685816),
   i = n(549616),
@@ -20,9 +20,9 @@ function d(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class _ {
+class f {
   static fromServer(e) {
-    return new _(e)
+    return new f(e)
   }
   constructor(e) {
     d(this, "shopBlocks", void 0), d(this, "categories", void 0), this.shopBlocks = e.shop_blocks.map(e => {

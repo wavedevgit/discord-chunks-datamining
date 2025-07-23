@@ -6,14 +6,14 @@ var r = n(255367);
 n(73800);
 var o = n(793030),
   i = n(442837),
-  s = n(755721),
-  l = n(481060),
+  l = n(755721),
+  s = n(481060),
   a = n(678558),
   c = n(343649),
   u = n(430824),
   d = n(63063),
-  p = n(317169),
-  m = n(639660),
+  m = n(317169),
+  p = n(639660),
   f = n(767218),
   _ = n(981631),
   x = n(93841),
@@ -27,7 +27,7 @@ function b(e) {
     available: b,
     spent: j,
     total: E
-  } = (0, p.Z)(t);
+  } = (0, m.Z)(t);
   if (null != n) return (0, r.jsxs)("div", {
     className: g.container,
     children: [(0, r.jsxs)("div", {
@@ -62,15 +62,15 @@ function b(e) {
         page: _.ZY5.GUILD_POWERUPS_OVERVIEW,
         section: _.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR
       },
-      color: s.Tt.CUSTOM,
-      size: s.Ph.LARGE,
+      color: l.Tt.CUSTOM,
+      size: l.Ph.LARGE,
       intent: c.P.NONE,
-      icon: (0, r.jsx)(l.$Eu, {
+      icon: (0, r.jsx)(s.$Eu, {
         className: g.boostButtonIcon,
         size: "sm",
-        color: l.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
+        color: s.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
       })
-    }), (0, r.jsx)(m.Z, {
+    }), (0, r.jsx)(p.Z, {
       guildId: t
     })]
   })

@@ -1,4 +1,4 @@
-/** Chunk was on 51308 **/
+/** Chunk was on 22755 **/
 n.d(t, {
   $: () => w,
   Z: () => A
@@ -20,8 +20,8 @@ var r, i = n(255367),
   b = n(283595),
   E = n(558314),
   x = n(55563),
-  v = n(551428),
-  y = n(73346),
+  y = n(551428),
+  v = n(73346),
   C = n(981631),
   O = n(388032),
   j = n(228016);
@@ -130,7 +130,7 @@ class S extends(r = l.Component) {
         sku: e
       } = this.props;
       if (null == e) throw Error("Should not be link to ApplicationStoreListing without SKU");
-      return (0, y.ZI)(e.id, {
+      return (0, v.ZI)(e.id, {
         slug: e.slug,
         analyticsSource: this.analyticsLocation
       })
@@ -200,7 +200,7 @@ class S extends(r = l.Component) {
 I(S, "defaultProps", {
   renderFallback: C.dG4
 });
-let T = [x.Z, E.Z, b.Z, v.Z];
+let T = [x.Z, E.Z, b.Z, y.Z];
 
 function N(e) {
   let {
@@ -211,7 +211,7 @@ function N(e) {
     application: r,
     fetchFailed: x.Z.didFetchingSkuFail(t),
     inLibrary: null != n && b.Z.hasApplication(n.applicationId, n.applicationId, !0),
-    storeListing: null != n ? v.Z.getForSKU(n.id) : null,
+    storeListing: null != n ? y.Z.getForSKU(n.id) : null,
     libraryApplication: null != n ? b.Z.getLibraryApplication(n.applicationId, n.applicationId, !0) : null
   }
 }

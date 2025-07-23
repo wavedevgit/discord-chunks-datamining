@@ -13,9 +13,9 @@ var r, i = n(392711),
   u = n(581883);
 n(689079);
 var d = n(674563),
-  _ = n(526761);
+  f = n(526761);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -31,7 +31,7 @@ function p(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -85,7 +85,7 @@ function v(e) {
     },
     wasSaved: n
   } = e;
-  if (t !== _.yP.FRECENCY_AND_FAVORITES_SETTINGS || !n) return !1;
+  if (t !== f.yP.FRECENCY_AND_FAVORITES_SETTINGS || !n) return !1;
   E.pendingUsages = []
 }
 
@@ -130,7 +130,7 @@ class S extends(r = o.ZP.PersistedStore) {
     return b.frequently
   }
 }
-f(S, "displayName", "ApplicationCommandFrecencyStore"), f(S, "persistKey", "ApplicationCommandFrecencyV2");
+_(S, "displayName", "ApplicationCommandFrecencyStore"), _(S, "persistKey", "ApplicationCommandFrecencyV2");
 let A = new S(s.Z, {
   APPLICATION_COMMAND_USED: I,
   USER_SETTINGS_PROTO_UPDATE: v

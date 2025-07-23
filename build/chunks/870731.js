@@ -17,7 +17,7 @@ function i() {
     u = l.asyncIterator || "@@asyncIterator",
     d = l.toStringTag || "@@toStringTag";
 
-  function _(e, t, n) {
+  function f(e, t, n) {
     return Object.defineProperty(e, t, {
       value: n,
       enumerable: !0,
@@ -26,14 +26,14 @@ function i() {
     }), e[t]
   }
   try {
-    _({}, "")
+    f({}, "")
   } catch (e) {
-    _ = function(e, t, n) {
+    f = function(e, t, n) {
       return e[t] = n
     }
   }
 
-  function f(e, t, n, r) {
+  function _(e, t, n, r) {
     var i = Object.create((t && t.prototype instanceof y ? t : y).prototype);
     return s(i, "_invoke", {
       value: R(e, n, new L(r || []))
@@ -53,7 +53,7 @@ function i() {
       }
     }
   }
-  n.wrap = f;
+  n.wrap = _;
   var h = "suspendedStart",
     m = "suspendedYield",
     g = "executing",
@@ -66,7 +66,7 @@ function i() {
 
   function v() {}
   var I = {};
-  _(I, c, function() {
+  f(I, c, function() {
     return this
   });
   var T = Object.getPrototypeOf,
@@ -76,7 +76,7 @@ function i() {
 
   function N(e) {
     ["next", "throw", "return"].forEach(function(t) {
-      _(e, t, function(e) {
+      f(e, t, function(e) {
         return this._invoke(t, e)
       })
     })
@@ -204,26 +204,26 @@ function i() {
   }), s(v, "constructor", {
     value: O,
     configurable: !0
-  }), O.displayName = _(v, d, "GeneratorFunction"), n.isGeneratorFunction = function(e) {
+  }), O.displayName = f(v, d, "GeneratorFunction"), n.isGeneratorFunction = function(e) {
     var t = "function" == typeof e && e.constructor;
     return !!t && (t === O || "GeneratorFunction" === (t.displayName || t.name))
   }, n.mark = function(e) {
-    return Object.setPrototypeOf ? Object.setPrototypeOf(e, v) : (e.__proto__ = v, _(e, d, "GeneratorFunction")), e.prototype = Object.create(A), e
+    return Object.setPrototypeOf ? Object.setPrototypeOf(e, v) : (e.__proto__ = v, f(e, d, "GeneratorFunction")), e.prototype = Object.create(A), e
   }, n.awrap = function(e) {
     return {
       __await: e
     }
-  }, N(C.prototype), _(C.prototype, u, function() {
+  }, N(C.prototype), f(C.prototype, u, function() {
     return this
   }), n.AsyncIterator = C, n.async = function(e, t, r, i, a) {
     void 0 === a && (a = Promise);
-    var o = new C(f(e, t, r, i), a);
+    var o = new C(_(e, t, r, i), a);
     return n.isGeneratorFunction(t) ? o : o.next().then(function(e) {
       return e.done ? e.value : o.next()
     })
-  }, N(A), _(A, d, "Generator"), _(A, c, function() {
+  }, N(A), f(A, d, "Generator"), f(A, c, function() {
     return this
-  }), _(A, "toString", function() {
+  }), f(A, "toString", function() {
     return "[object Generator]"
   }), n.keys = function(e) {
     var t = Object(e),

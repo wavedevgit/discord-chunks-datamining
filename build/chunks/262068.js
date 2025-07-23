@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   vg: () => p,
-  w7: () => f
+  w7: () => _
 });
 var r = n(961742),
   i = n(295415),
@@ -33,7 +33,7 @@ async function d(e, t, n, o, s) {
   return e
 }
 
-function _(e, {
+function f(e, {
   preferredFontFormat: t
 }) {
   return t ? e.replace(l, e => {
@@ -45,11 +45,11 @@ function _(e, {
   }) : e
 }
 
-function f(e) {
+function _(e) {
   return -1 !== e.search(o)
 }
 async function p(e, t, n) {
-  if (!f(e)) return e;
-  let r = _(e, n);
+  if (!_(e)) return e;
+  let r = f(e, n);
   return u(r).reduce((e, r) => e.then(e => d(e, r, t, n)), Promise.resolve(r))
 }

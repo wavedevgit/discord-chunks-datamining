@@ -5,14 +5,14 @@ n.d(t, {
 var r = n(255367),
   o = n(73800),
   i = n(494497),
-  s = n(657707),
-  l = n(793030),
+  l = n(657707),
+  s = n(793030),
   a = n(442837),
   c = n(692547),
   u = n(899667),
   d = n(905128),
-  p = n(93841),
-  m = n(388032),
+  m = n(93841),
+  p = n(388032),
   f = n(45355);
 
 function _(e) {
@@ -30,22 +30,22 @@ function _(e) {
   let g = n.some(e => e.skuId === i.A$);
   return (0, r.jsxs)("div", {
     className: f.container,
-    children: [(0, r.jsx)(s.P4T, {
+    children: [(0, r.jsx)(l.P4T, {
       color: c.Z.colors.TEXT_FEEDBACK_WARNING,
       className: f.icon
-    }), (0, r.jsx)(l.xv, {
+    }), (0, r.jsx)(s.xv, {
       variant: "text-md/semibold",
       color: "text-feedback-warning",
-      children: m.intl.string(p.default.n5hQhY)
-    }), (0, r.jsxs)(l.xv, {
+      children: p.intl.string(m.default.n5hQhY)
+    }), (0, r.jsxs)(s.xv, {
       variant: "text-sm/medium",
-      children: [m.intl.formatToPlainString(p.default.iAaAiI, {
+      children: [p.intl.formatToPlainString(m.default.iAaAiI, {
         boostCount: v,
         perksString: n.map(e => e.title).join(", ")
-      }), g && (0, r.jsx)(l.xv, {
+      }), g && (0, r.jsx)(s.xv, {
         variant: "text-sm/medium",
         color: "text-feedback-warning",
-        children: m.intl.string(p.default.Sfr0Jy)
+        children: p.intl.string(m.default.Sfr0Jy)
       })]
     })]
   })

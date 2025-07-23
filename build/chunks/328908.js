@@ -60,12 +60,12 @@ let d = Object.freeze({
     messageSendConfetti: {},
     messageReactionConfetti: void 0
   }),
-  _ = (0, r.U)(() => d),
-  f = (e, t) => {
+  f = (0, r.U)(() => d),
+  _ = (e, t) => {
     a.default.track(o.rMx.CONFETTI_POTION_ENTRYPOINT_CLICKED, {
       location: t
     }), (0, i.j)(() => {
-      _.setState(t => {
+      f.setState(t => {
         let {
           messageSendConfetti: n
         } = t;
@@ -83,7 +83,7 @@ let d = Object.freeze({
   },
   p = e => {
     (0, i.j)(() => {
-      _.setState(t => {
+      f.setState(t => {
         let {
           messageSendConfetti: n
         } = t, r = l({}, n);
@@ -94,20 +94,20 @@ let d = Object.freeze({
     })
   },
   h = (e, t) => {
-    null != _.getState().messageSendConfetti[e] ? p(e) : f(e, t)
+    null != f.getState().messageSendConfetti[e] ? p(e) : _(e, t)
   },
   m = e => {
-    let t = _.getState();
+    let t = f.getState();
     null != t.messageSendConfetti[e] && 0 === t.messageSendConfetti[e].state && (t.messageSendConfetti[e].hasAutoPopped = !0)
   };
 
 function g(e) {
-  return _(t => null != t.messageSendConfetti[e])
+  return f(t => null != t.messageSendConfetti[e])
 }
 
 function E(e, t) {
   return (0, i.j)(() => {
-    _.setState(n => {
+    f.setState(n => {
       let {
         messageSendConfetti: r
       } = n;
@@ -124,7 +124,7 @@ function E(e, t) {
 }
 
 function b(e) {
-  return _(t => {
+  return f(t => {
     var n;
     return null == (n = t.messageSendConfetti[e]) ? void 0 : n.emoji
   })
@@ -132,12 +132,12 @@ function b(e) {
 
 function y(e) {
   var t;
-  return null == (t = _.getState().messageSendConfetti[e]) ? void 0 : t.emoji
+  return null == (t = f.getState().messageSendConfetti[e]) ? void 0 : t.emoji
 }
 
 function O(e) {
   return (0, i.j)(() => {
-    _.setState(() => ({
+    f.setState(() => ({
       messageReactionConfetti: e
     }))
   })
@@ -145,7 +145,7 @@ function O(e) {
 
 function v() {
   return (0, i.j)(() => {
-    _.setState(() => ({
+    f.setState(() => ({
       messageReactionConfetti: void 0
     }))
   })
@@ -156,14 +156,14 @@ function I(e, t, n) {
 }
 
 function T(e, t) {
-  return _(n => {
+  return f(n => {
     var r;
     return t ? n.messageReactionConfetti : null == (r = n.messageSendConfetti[e]) ? void 0 : r.emoji
   })
 }
 
 function S(e) {
-  return _(t => {
+  return f(t => {
     let n = t.messageSendConfetti[e];
     if ((null == n ? void 0 : n.state) === 0) return n.hasAutoPopped
   })

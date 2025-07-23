@@ -18,15 +18,15 @@ var r = n(73800),
   c = n(468194),
   u = n(477690),
   d = n(691251),
-  _ = n(981631);
-let f = (0, c.Mg)(u.Z.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_LEFT),
+  f = n(981631);
+let _ = (0, c.Mg)(u.Z.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_LEFT),
   p = 8,
   h = e => {
     let {
       gridWrapperRef: t,
       containerWidth: n,
       showingEmptyState: i,
-      listPaddingLeft: o = f,
+      listPaddingLeft: o = _,
       listScrollbarWidth: s = p
     } = e, [l, c] = r.useState(void 0), u = r.useCallback(() => {
       if (null == t.current) return null;
@@ -117,9 +117,9 @@ let f = (0, c.Mg)(u.Z.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_LEFT),
       scrollOffset: s = 0,
       onActiveCategoryIndexChange: l,
       disableForSearch: c = !0
-    } = e, u = r.useRef(_.xAR), d = r.useMemo(() => a().debounce(() => {
+    } = e, u = r.useRef(f.xAR), d = r.useMemo(() => a().debounce(() => {
       i.current = !1
-    }, 250), [i]), f = r.useMemo(() => a().debounce(e => {
+    }, 250), [i]), _ = r.useMemo(() => a().debounce(e => {
       "" !== o && c || (window.cancelAnimationFrame(u.current), u.current = window.requestAnimationFrame(() => {
         var r;
         let i = null == (r = n.current) ? void 0 : r.getSectionDescriptors();
@@ -135,8 +135,8 @@ let f = (0, c.Mg)(u.Z.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_LEFT),
       }))
     }, 0), [o, n, t, s, l, c]);
     return r.useCallback(e => {
-      i.current = !0, d(), f(e)
-    }, [i, d, f])
+      i.current = !0, d(), _(e)
+    }, [i, d, _])
   },
   b = e => {
     let {
@@ -149,7 +149,7 @@ let f = (0, c.Mg)(u.Z.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_LEFT),
     } = e, u = r.useRef(!1), d = r.useCallback((e, t) => {
       let n = i[t];
       if (null != n) return n[e]
-    }, [i]), _ = r.useCallback(e => {
+    }, [i]), f = r.useCallback(e => {
       let {
         focusedX: t,
         focusedY: n
@@ -162,7 +162,7 @@ let f = (0, c.Mg)(u.Z.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_LEFT),
         columnIndex: o
       } = r;
       c(o, i), null != a.current && a.current.scrollRowIntoView(n)
-    }, [d, a, c]), f = r.useCallback((e, t, n) => {
+    }, [d, a, c]), _ = r.useCallback((e, t, n) => {
       switch (n.type) {
         case o.Us.NAVIGATE_UP:
         case o.Us.NAVIGATE_DOWN:
@@ -174,9 +174,9 @@ let f = (0, c.Mg)(u.Z.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_LEFT),
         case o.Us.NAVIGATE_END:
         case o.Us.NAVIGATE_CROSSLINE_START:
         case o.Us.NAVIGATE_CROSSLINE_END:
-          _(t)
+          f(t)
       }
-    }, [_]), p = r.useCallback((e, t, n) => {
+    }, [f]), p = r.useCallback((e, t, n) => {
       let r = d(e, t);
       null != r && l(r, n)
     }, [d, l]), {
@@ -187,7 +187,7 @@ let f = (0, c.Mg)(u.Z.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_LEFT),
     } = (0, s.Z)({
       navId: n,
       columnCounts: t,
-      onDispatch: f,
+      onDispatch: _,
       onSelect: p,
       autoFocusElement: !1,
       useVirtualFocus: !0
@@ -232,27 +232,27 @@ function y(e) {
       c = [],
       u = [],
       d = 0,
-      _ = 0,
-      f = 0;
+      f = 0,
+      _ = 0;
     if (0 !== i) {
       let r = function(t, n) {
         let r = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
           i = Math.ceil(t.length / e);
-        c[_] = r ? 0 : i;
+        c[f] = r ? 0 : i;
         for (let a = 0; a < i; a++) {
           let i = a * e,
             o = i + e,
             s = t.slice(i, o).map((e, t) => ({
               item: e,
-              gridSectionIndex: _,
+              gridSectionIndex: f,
               rowIndex: d,
               columnIndex: t,
-              visibleRowIndex: f,
+              visibleRowIndex: _,
               category: n
             }));
-          r || (f++, u.push(s), l.push(s.length)), d++
+          r || (_++, u.push(s), l.push(s.length)), d++
         }
-        _++
+        f++
       };
       for (let e of t)
         if (e.items.length > 0) {
@@ -281,8 +281,8 @@ function O(e) {
   } = e, {
     gridDispatch: c,
     getItemProps: u,
-    getRowProps: _,
-    gridContainerProps: f,
+    getRowProps: f,
+    gridContainerProps: _,
     handleGridContainerKeyDown: p,
     isUsingKeyboardNavigation: h
   } = b({
@@ -307,8 +307,8 @@ function O(e) {
     })
   }), [c, a]), {
     getItemProps: u,
-    getRowProps: _,
-    gridContainerProps: f,
+    getRowProps: f,
+    gridContainerProps: _,
     handleGridContainerKeyDown: p,
     isUsingKeyboardNavigation: h
   }

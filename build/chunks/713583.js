@@ -12,9 +12,9 @@ var r = n(255367),
   c = n(555573),
   u = n(761652),
   d = n(388032),
-  _ = n(168362);
+  f = n(168362);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,7 +30,7 @@ function p(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -55,7 +55,7 @@ function m(e, t) {
 
 function g(e) {
   var t;
-  let a, f, h, {
+  let a, _, h, {
       className: g,
       activeCommand: E,
       activeOption: b,
@@ -86,25 +86,25 @@ function g(e) {
   if (null == E) return null;
   if (null != b) {
     let e = y[b.name].lastValidationResult;
-    a = b.displayName, f = b.displayDescription, h = (null == e ? void 0 : e.success) ? null : null == e ? void 0 : e.error
-  } else a = "".concat(u.GI).concat(E.displayName), f = E.displayDescription, h = null;
+    a = b.displayName, _ = b.displayDescription, h = (null == e ? void 0 : e.success) ? null : null == e ? void 0 : e.error
+  } else a = "".concat(u.GI).concat(E.displayName), _ = E.displayDescription, h = null;
   return (0, r.jsxs)("div", {
-    className: o()(g, _.bar),
+    className: o()(g, f.bar),
     onContextMenu: v,
     children: [(0, r.jsxs)("div", {
-      className: _.commandInfo,
+      className: f.commandInfo,
       children: [(0, r.jsx)("span", {
-        className: _.name,
+        className: f.name,
         children: a
       }), null != h ? (0, r.jsx)("span", {
-        className: _.error,
+        className: f.error,
         children: h
       }) : (0, r.jsx)("span", {
-        className: _.description,
-        children: f
+        className: f.description,
+        children: _
       })]
     }), (0, r.jsx)("div", {
-      className: _.actions,
+      className: f.actions,
       children: (0, r.jsx)(l.B, {
         onClick: I
       })

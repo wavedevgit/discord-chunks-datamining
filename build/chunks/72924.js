@@ -10,8 +10,8 @@ var r = n(512722),
   s = n(558381),
   a = n(821849),
   c = n(531826),
-  u = n(15640),
-  d = n(724870),
+  d = n(15640),
+  u = n(724870),
   _ = n(87484),
   h = n(928518),
   E = n(106976),
@@ -31,7 +31,7 @@ async function O(e) {
     let e = (await (0, s.oJ)(T)).find(e => e.sku.id === S);
     l()(null != e, "Could not find store listing for sku"), e.sku.type === C.epS.SUBSCRIPTION_GROUP && await (0, E.rx)(T, e.id)
   }
-  R = null != R ? R : p.Z.get(S), l()(null != R && R.applicationId === T, "SKU must belong to application"), R.type !== C.epS.SUBSCRIPTION || (0, u.a)([R.id]) || await (0, a.GZ)(R.id);
+  R = null != R ? R : p.Z.get(S), l()(null != R && R.applicationId === T, "SKU must belong to application"), R.type !== C.epS.SUBSCRIPTION || (0, d.a)([R.id]) || await (0, a.GZ)(R.id);
   let A = function(e) {
     let t = (0, c.jA)({
         applicationId: e
@@ -55,7 +55,7 @@ async function O(e) {
       }
     })
   });
-  await (t = T, n = S, r = f, O = m, g = N, (0, d.m)({
+  await (t = T, n = S, r = f, O = m, g = N, (0, u.m)({
     applicationId: t,
     skuId: n,
     initialPlanId: r,

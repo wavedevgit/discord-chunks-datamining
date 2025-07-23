@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(520315),
   u = n(688465),
   d = n(314583),
-  _ = n(388032),
-  f = n(639746),
+  f = n(388032),
+  _ = n(639746),
   p = n(73433),
   h = n(413097);
 
@@ -52,27 +52,27 @@ function b(e) {
   }), [t]), m = i.useMemo(() => [{
     type: a.Y.USER_INSTALL,
     icon: o.oLu,
-    title: _.intl.string(_.t.aCg60N),
-    subtitle: _.intl.string(_.t.YeiIUV),
+    title: f.intl.string(f.t.aCg60N),
+    subtitle: f.intl.string(f.t.YeiIUV),
     beta: !1
   }, {
     type: a.Y.GUILD_INSTALL,
     icon: o.QTo,
-    title: _.intl.string(_.t.E64YCw),
-    subtitle: _.intl.string(_.t.bbtoKi),
+    title: f.intl.string(f.t.E64YCw),
+    subtitle: f.intl.string(f.t.bbtoKi),
     beta: !1
   }].filter(e => {
     var n, r;
     return (null == (r = t.integrationTypesConfig) || null == (n = r[e.type]) ? void 0 : n.oauth2InstallParams) != null
   }), [t.integrationTypesConfig]);
   return (0, r.jsxs)("div", {
-    className: f.container,
+    className: _.container,
     children: [(0, r.jsxs)("header", {
       id: c,
-      className: f.header,
+      className: _.header,
       children: [(0, r.jsx)(l.Z, {
         src: p,
-        className: f.appIcon,
+        className: _.appIcon,
         rendersPlaceholder: !0
       }), (0, r.jsx)(O, {
         application: t
@@ -80,19 +80,19 @@ function b(e) {
         application: t
       })]
     }), (0, r.jsx)("ul", {
-      className: f.rows,
+      className: _.rows,
       children: m.map(e => (0, r.jsxs)(o.P3F, {
         tag: "li",
-        className: f.row,
+        className: _.row,
         onClick: () => n(e.type),
         children: [(0, r.jsx)(e.icon, {
           size: "md",
           color: "currentColor",
-          className: f.leftIcon
+          className: _.leftIcon
         }), (0, r.jsxs)("div", {
-          className: f.rowInner,
+          className: _.rowInner,
           children: [(0, r.jsxs)("div", {
-            className: f.rowDetails,
+            className: _.rowDetails,
             children: [(0, r.jsx)(o.Text, {
               variant: "text-md/medium",
               color: "interactive-active",
@@ -105,7 +105,7 @@ function b(e) {
           }), e.beta && (0, r.jsx)(u.Z, {}), (0, r.jsx)(o.Fbu, {
             size: "md",
             color: "currentColor",
-            className: f.rightIcon
+            className: _.rightIcon
           })]
         })]
       }, e.type))
@@ -118,9 +118,9 @@ function y(e) {
     application: t
   } = e, n = t.description;
   return null == n || 0 === n.length ? null : (0, r.jsx)("div", {
-    className: f.detailsContainer,
+    className: _.detailsContainer,
     children: (0, r.jsx)("div", {
-      className: f.overviewContainerNoVideo,
+      className: _.overviewContainerNoVideo,
       children: null != n && n.length > 0 ? (0, r.jsx)(I, {
         description: n
       }) : null
@@ -133,17 +133,17 @@ function O(e) {
     application: t
   } = e, n = t.name, i = (0, s.vJ)(t);
   return (0, r.jsxs)("div", {
-    className: f.titleContainer,
+    className: _.titleContainer,
     children: [(0, r.jsx)(o.X6q, {
       variant: "heading-xl/extrabold",
       lineClamp: 1,
       children: n
     }), i ? (0, r.jsx)("div", {
-      className: f.partnerLabelContainer,
+      className: _.partnerLabelContainer,
       children: (0, r.jsx)(o.Text, {
         variant: "text-xs/medium",
         color: "text-default",
-        children: _.intl.string(_.t.LO4f0N)
+        children: f.intl.string(f.t.LO4f0N)
       })
     }) : null]
   })
@@ -186,10 +186,10 @@ function I(e) {
     }, m)),
     O = a || b;
   return (0, r.jsxs)("div", {
-    className: f.descriptionContainer,
+    className: _.descriptionContainer,
     children: [(0, r.jsx)("div", {
       ref: E,
-      className: f.overflowHidden,
+      className: _.overflowHidden,
       onTransitionEnd: y,
       children: (0, r.jsx)(o.Text, {
         ref: u,
@@ -202,12 +202,12 @@ function I(e) {
         children: l
       })
     }), null != h && h > v ? (0, r.jsxs)(o.P3F, {
-      className: f.expandableDescriptionClickable,
+      className: _.expandableDescriptionClickable,
       onClick: () => s(e => !e),
       children: [(0, r.jsx)(o.Text, {
         variant: "text-sm/semibold",
         color: "text-brand",
-        children: O ? _.intl.string(_.t.u4YJ8v) : _.intl.string(_.t["N/tajI"])
+        children: O ? f.intl.string(f.t.u4YJ8v) : f.intl.string(f.t["N/tajI"])
       }), O ? (0, r.jsx)(o.u04, {
         size: "sm",
         color: o.TVs.colors.TEXT_BRAND

@@ -33,7 +33,7 @@ function d(e) {
   return e
 }
 
-function _(e, t) {
+function f(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -44,8 +44,8 @@ function _(e, t) {
   return n
 }
 
-function f(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -110,7 +110,7 @@ function I(e, t) {
       loop: l,
       reverse: c,
       invert: u,
-      callback: _,
+      callback: f,
       type: h = "spring",
       shouldLoop: m,
       durationMin: g,
@@ -120,7 +120,7 @@ function I(e, t) {
     y = e._value,
     O = v(t.duration, g, E),
     T = v(t.toValue, i, a),
-    S = r[h](e, f(d({}, b), {
+    S = r[h](e, _(d({}, b), {
       toValue: T,
       tension: o,
       friction: s,
@@ -129,7 +129,7 @@ function I(e, t) {
     A = S;
   if (c || u) {
     let i = v(t.duration, g, E);
-    n = r[h](e, f(d({}, b), {
+    n = r[h](e, _(d({}, b), {
       toValue: c ? y : -T,
       tension: o,
       friction: s,
@@ -137,8 +137,8 @@ function I(e, t) {
     })), A = r.sequence([S, n])
   }
   l ? A.start(() => {
-    (!m || m && m()) && (_ ? _(I.bind(null, e, t)) : I(e, t))
-  }) : A.start(_)
+    (!m || m && m()) && (f ? f(I.bind(null, e, t)) : I(e, t))
+  }) : A.start(f)
 }
 
 function T(e) {
@@ -152,7 +152,7 @@ r.inject.ApplyAnimatedValues(y, e => e);
 let S = {
     CLAMP: "clamp"
   },
-  A = f(d({}, r), {
+  A = _(d({}, r), {
     Easing: a(),
     accelerate: O,
     animate: I,

@@ -20,12 +20,12 @@ function c(e, t, n) {
     expiresAt: c,
     validForUserIds: u,
     allowedVersions: d,
-    targetBuildOverride: _
-  } = e, f = Object.keys(_);
-  if (0 === i().intersection(f, t).length) return {
+    targetBuildOverride: f
+  } = e, _ = Object.keys(f);
+  if (0 === i().intersection(_, t).length) return {
     valid: !1,
     reason: l.intl.formatToPlainString(l.t.wySUzs, {
-      requestedTargets: f.map(e => {
+      requestedTargets: _.map(e => {
         var t;
         return null != (t = o.o0[e]) ? t : "unknown"
       }).join(", ")

@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   dO: () => l,
-  pq: () => f
+  pq: () => _
 }), n(388685);
 var r = n(688619),
   i = n.n(r);
@@ -29,15 +29,15 @@ function l(e, t, n) {
 let c = [1.3, .7],
   u = [.98, 1],
   d = [.75, 1.5],
-  _ = [1.45, .45];
+  f = [1.45, .45];
 
-function f(e, t, n, r) {
+function _(e, t, n, r) {
   switch (t) {
     case "background":
     case "border":
       return i()(e).set("hsl.l", "*".concat(a(s, "light" === n ? u : c, r))).hex();
     case "text":
-      return i()(e).set("hsl.l", "*".concat(a(s, "light" === n ? _ : d, r))).hex();
+      return i()(e).set("hsl.l", "*".concat(a(s, "light" === n ? f : d, r))).hex();
     default:
       return e
   }

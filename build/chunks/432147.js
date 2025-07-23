@@ -1,4 +1,4 @@
-/** Chunk was on 51308 **/
+/** Chunk was on 22755 **/
 n.d(t, {
   Z: () => x
 });
@@ -26,14 +26,14 @@ function x(e) {
     message: t,
     compact: n
   } = e, i = (0, a.e7)([u.Z], () => u.Z.getChannel(d.default.castMessageIdAsChannelId(t.id)));
-  return null == i ? null : (0, r.jsx)(v, {
+  return null == i ? null : (0, r.jsx)(y, {
     channel: i,
     compact: n,
     isSystemMessage: (0, c.Z)(t)
   })
 }
 
-function v(e) {
+function y(e) {
   let {
     channel: t,
     compact: i,

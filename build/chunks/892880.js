@@ -12,11 +12,11 @@ var i = n(31775),
   c = n(70956),
   u = n(51144),
   d = n(388032);
-let _ = new(a())({
+let f = new(a())({
   maxAge: +c.Z.Millis.MINUTE
 });
 
-function f(e, t, n) {
+function _(e, t, n) {
   null != r && clearTimeout(r), r = setTimeout(() => {
     let r = [],
       i = e => {
@@ -37,9 +37,9 @@ function f(e, t, n) {
 
 function p(e, t) {
   let n = "".concat(null != e ? e : "", ":").concat(t),
-    r = _.get(n);
+    r = f.get(n);
   if (null != r) return r;
-  _.set(n, !0)
+  f.set(n, !0)
 }
 let h = {
   getGuildNameSuggestion: function(e) {
@@ -56,6 +56,6 @@ let h = {
       a = !1;
     r ? e.forEach(e => {
       null == p(e, t) && i.push(e)
-    }) : null == p(e, t) && (a = !0), i.length > 0 && r ? f(i, t, n) : a && f(e, t, n)
+    }) : null == p(e, t) && (a = !0), i.length > 0 && r ? _(i, t, n) : a && _(e, t, n)
   }
 }

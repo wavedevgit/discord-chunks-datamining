@@ -23,8 +23,8 @@ function d(e) {
     themeType: n,
     pendingLegacyUsernameDisabled: c,
     pendingBadges: d,
-    onClose: _,
-    shouldOpenBadgeTooltip: f,
+    onClose: f,
+    shouldOpenBadgeTooltip: _,
     shouldGlowTenureBadge: p
   } = e, h = (0, o.Z)(t, c), m = i.useMemo(() => {
     if (null == d) return (0, s.w)(h);
@@ -36,8 +36,8 @@ function d(e) {
     children: (0, a.chunk)(m, u[n]).map(e => (0, r.jsx)(l.Z, {
       badges: e,
       displayProfile: t,
-      onClose: _,
-      shouldOpenBadgeTooltip: f,
+      onClose: f,
+      shouldOpenBadgeTooltip: _,
       shouldGlowTenureBadge: p
     }, e[0].id))
   })

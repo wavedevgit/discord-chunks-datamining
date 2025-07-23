@@ -1,11 +1,10 @@
-/** Chunk was on web.js **/
-"use strict";
+/** Chunk was on 22755 **/
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(840877),
   i = n(170216);
-class a extends i.L {
+class l extends i.L {
   create(e) {
     let {
       id: t,
@@ -13,8 +12,8 @@ class a extends i.L {
       searchQuery: i
     } = e;
     this.cancel(t);
-    let a = new r.Yn(t, n, i);
-    return this.set(t, a), a
+    let l = new r.Yn(t, n, i);
+    return this.set(t, l), l
   }
 }
-let o = new a
+let a = new l

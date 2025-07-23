@@ -55,7 +55,7 @@ function c(e, n) {
     seen: [],
     stylize: d
   };
-  return arguments.length >= 3 && (r.depth = arguments[2]), arguments.length >= 4 && (r.colors = arguments[3]), y(n) ? r.showHidden = n : n && t._extend(r, n), T(r.showHidden) && (r.showHidden = !1), T(r.depth) && (r.depth = 2), T(r.colors) && (r.colors = !1), T(r.customInspect) && (r.customInspect = !0), r.colors && (r.stylize = u), f(r, e, r.depth)
+  return arguments.length >= 3 && (r.depth = arguments[2]), arguments.length >= 4 && (r.colors = arguments[3]), y(n) ? r.showHidden = n : n && t._extend(r, n), T(r.showHidden) && (r.showHidden = !1), T(r.depth) && (r.depth = 2), T(r.colors) && (r.colors = !1), T(r.customInspect) && (r.customInspect = !0), r.colors && (r.stylize = u), _(r, e, r.depth)
 }
 
 function u(e, t) {
@@ -67,22 +67,22 @@ function d(e, t) {
   return e
 }
 
-function _(e) {
+function f(e) {
   var t = {};
   return e.forEach(function(e, n) {
     t[e] = !0
   }), t
 }
 
-function f(e, n, r) {
+function _(e, n, r) {
   if (e.customInspect && n && R(n.inspect) && n.inspect !== t.inspect && !(n.constructor && n.constructor.prototype === n)) {
     var i, a = n.inspect(r, e);
-    return I(a) || (a = f(e, a, r)), a
+    return I(a) || (a = _(e, a, r)), a
   }
   var o = p(e, n);
   if (o) return o;
   var s = Object.keys(n),
-    l = _(s);
+    l = f(s);
   if (e.showHidden && (s = Object.getOwnPropertyNames(n)), C(n) && (s.indexOf("message") >= 0 || s.indexOf("description") >= 0)) return h(n);
   if (0 === s.length) {
     if (R(n)) {
@@ -129,7 +129,7 @@ function g(e, t, n, r, i, a) {
   var o, s, l;
   if ((l = Object.getOwnPropertyDescriptor(t, i) || {
       value: t[i]
-    }).get ? s = l.set ? e.stylize("[Getter/Setter]", "special") : e.stylize("[Getter]", "special") : l.set && (s = e.stylize("[Setter]", "special")), x(r, i) || (o = "[" + i + "]"), !s && (0 > e.seen.indexOf(l.value) ? (s = O(n) ? f(e, l.value, null) : f(e, l.value, n - 1)).indexOf("\n") > -1 && (s = a ? s.split("\n").map(function(e) {
+    }).get ? s = l.set ? e.stylize("[Getter/Setter]", "special") : e.stylize("[Getter]", "special") : l.set && (s = e.stylize("[Setter]", "special")), x(r, i) || (o = "[" + i + "]"), !s && (0 > e.seen.indexOf(l.value) ? (s = O(n) ? _(e, l.value, null) : _(e, l.value, n - 1)).indexOf("\n") > -1 && (s = a ? s.split("\n").map(function(e) {
       return "  " + e
     }).join("\n").slice(2) : "\n" + s.split("\n").map(function(e) {
       return "   " + e

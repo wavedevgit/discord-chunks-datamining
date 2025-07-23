@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 }), n(388685), n(539854);
 var r = n(255367);
 n(73800);
@@ -14,16 +14,16 @@ var i = n(442837),
   u = n(231338),
   d = n(113024);
 
-function _() {
+function f() {
   var e;
   let t = (0, i.e7)([s.default], () => s.default.isIdleStatusIndicatorEnabled),
     n = (0, i.e7)([c.default], () => {
       var e, t;
       return null != (t = null == (e = c.default.getCurrentUser()) ? void 0 : e.isStaff()) && t
     }),
-    [_, f] = (0, i.Wu)([l.Z], () => [l.Z.isIdle(), l.Z.isAFK()]),
+    [f, _] = (0, i.Wu)([l.Z], () => [l.Z.isIdle(), l.Z.isAFK()]),
     p = [];
-  return _ || f || p.push("ACTIVE"), _ && p.push("IDLE"), f && p.push("AFK"), n && t ? (0, r.jsx)(o.ZP, {
+  return f || _ || p.push("ACTIVE"), f && p.push("IDLE"), _ && p.push("AFK"), n && t ? (0, r.jsx)(o.ZP, {
     children: (0, r.jsxs)("div", {
       className: d.container,
       children: [(0, r.jsxs)("div", {
@@ -41,7 +41,7 @@ function _() {
             children: p.join(" + ")
           })
         })]
-      }), _ && (0, r.jsxs)(a.Text, {
+      }), f && (0, r.jsxs)(a.Text, {
         variant: "text-md/normal",
         children: ["Idle since:", " ", new Date(null != (e = l.Z.getIdleSince()) ? e : 0).toLocaleDateString(void 0, {
           year: "numeric",

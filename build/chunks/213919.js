@@ -27,8 +27,8 @@ function c(e) {
 let u = null,
   d = window.DiscordNative;
 null != d && (u = d.safeStorage);
-let _ = !1,
-  f = {},
+let f = !1,
+  _ = {},
   p = {},
   h = !1,
   m = !1;
@@ -65,12 +65,12 @@ function y() {
     decryptedToken: e,
     wasEncrypted: t
   } = E(i);
-  _ = t, r = e, f = c(Object.entries(p).map(e => {
+  f = t, r = e, _ = c(Object.entries(p).map(e => {
     let [t, n] = e, {
       decryptedToken: r,
       wasEncrypted: i
     } = E(n);
-    return _ = i || _, [t, r]
+    return f = i || f, [t, r]
   }).filter(e => {
     let [t, n] = e;
     return null != n
@@ -82,7 +82,7 @@ function O() {
 }
 
 function v(e) {
-  return (y(), null != e) ? f[e] : r
+  return (y(), null != e) ? _[e] : r
 }
 
 function I(e) {
@@ -96,7 +96,7 @@ function T(e, t) {
 }
 
 function S(e, t) {
-  null != t && (f[t] = e), _ ? P() : (i = r, p = f, g())
+  null != t && (_[t] = e), f ? P() : (i = r, p = _, g())
 }
 
 function A() {
@@ -109,7 +109,7 @@ function N() {
 
 function C(e) {
   let t = r;
-  return null != e && (t = f[e], delete f[e], delete p[e]), t === r && (r = null, i = null), g(), null != t
+  return null != e && (t = _[e], delete _[e], delete p[e]), t === r && (r = null, i = null), g(), null != t
 }
 
 function R() {
@@ -117,8 +117,8 @@ function R() {
 }
 
 function P() {
-  (null == u ? void 0 : u.isEncryptionAvailable()) ? (null != r && (i = b(r)), p = c(Object.entries(f).map(e => {
+  (null == u ? void 0 : u.isEncryptionAvailable()) ? (null != r && (i = b(r)), p = c(Object.entries(_).map(e => {
     let [t, n] = e;
     return [t, b(n)]
-  })), _ = !0) : (i = r, p = f), g()
+  })), f = !0) : (i = r, p = _), g()
 }

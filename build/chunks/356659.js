@@ -1,11 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  A5: () => x,
-  Bg: () => f,
+  Bg: () => _,
   D5: () => l,
   D_: () => c,
-  EF: () => _,
+  EF: () => f,
   G$: () => u,
   HW: () => E,
   Hp: () => g,
@@ -18,7 +17,6 @@ n.d(t, {
   WM: () => p,
   X9: () => s,
   XH: () => b,
-  _U: () => D,
   dJ: () => o,
   f_: () => I,
   i$: () => P,
@@ -28,8 +26,6 @@ n.d(t, {
   mg: () => m,
   nU: () => h,
   wD: () => T,
-  xd: () => L,
-  xx: () => w,
   yl: () => A
 });
 var r = n(710845),
@@ -49,8 +45,8 @@ var r = n(710845),
 let c = "alt+c",
   u = 6 * i.Z.Millis.SECOND,
   d = new r.Z("Clips"),
-  _ = e => "Discord_Clip_".concat(e, ".mp4"),
-  f = 3,
+  f = e => "Discord_Clip_".concat(e, ".mp4"),
+  _ = 3,
   p = 2,
   h = /(NVIDIA GeForce GTX (98|10|16).*|Radeon RX 5(500|600|).*|Radeon RX5.*)/,
   m = /(NVIDIA GeForce (RTX (20|30|40|50).*))|(.*Radeon RX (57|58|59|6|7|9).*)/,
@@ -67,8 +63,5 @@ let c = "alt+c",
   N = 15,
   C = 3e4,
   R = 30,
-  P = 10,
-  w = 14 * i.Z.Millis.DAY,
-  D = 5,
-  L = 5,
-  x = 1
+  P = 10;
+i.Z.Millis.DAY

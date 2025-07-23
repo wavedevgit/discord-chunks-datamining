@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 });
 var r, i = n(255367),
   a = n(73800),
@@ -31,7 +31,7 @@ function d(e) {
   }
   return e
 }
-class _ extends(r = a.Component) {
+class f extends(r = a.Component) {
   renderProvider(e) {
     var t, n;
     let {
@@ -65,6 +65,6 @@ class _ extends(r = a.Component) {
     }))), null != e.loadId ? this._loadId = e.loadId : e.root && (this._loadId = (0, o.Z)())
   }
 }
-u(_, "Pages", c.ZY5), u(_, "Sections", c.jXE), u(_, "Objects", c.qAy), u(_, "ObjectTypes", c.Qqv), u(_, "defaultProps", {
+u(f, "Pages", c.ZY5), u(f, "Sections", c.jXE), u(f, "Objects", c.qAy), u(f, "ObjectTypes", c.Qqv), u(f, "defaultProps", {
   root: !1
 })

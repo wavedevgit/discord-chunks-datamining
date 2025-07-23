@@ -3,11 +3,11 @@
 n.d(t, {
   IS: () => d,
   MH: () => p,
-  UE: () => f,
+  UE: () => _,
   as: () => l,
   fP: () => u,
   m1: () => c,
-  wz: () => _
+  wz: () => f
 });
 var r = n(772848),
   i = n(146282),
@@ -38,7 +38,7 @@ let u = () => (0, r.Z)(),
       request_id: i.Z.getFeedRequestId(s.YN.GLOBAL_FEED)
     }), t
   },
-  _ = e => {
+  f = e => {
     let {
       viewId: t,
       gameName: n,
@@ -59,7 +59,7 @@ let u = () => (0, r.Z)(),
       official_guild_id: d
     })
   },
-  f = e => {
+  _ = e => {
     let {
       gameName: t,
       applicationId: n,

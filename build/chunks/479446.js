@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Ou: () => _,
+  Ou: () => f,
   SR: () => u,
   YD: () => d
 }), n(415506);
@@ -29,4 +29,4 @@ let d = async (e, t) => {
   return o.Z.sendMessage(n.id, s.ZP.parse(n, r), void 0, {
     isGiftLinkSentOnBehalfOfUser: !0
   })
-}, _ = e => {}
+}, f = e => {}

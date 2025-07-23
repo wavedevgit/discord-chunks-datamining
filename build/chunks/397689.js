@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(906732),
   u = n(1585),
   d = n(158776),
-  _ = n(998502),
-  f = n(445924),
+  f = n(998502),
+  _ = n(445924),
   p = n(654904),
   h = n(486324),
   m = n(25931);
@@ -56,14 +56,14 @@ function y(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let O = _.ZP.getEnableHardwareAcceleration() ? l.Xo$ : l.qEK;
+let O = f.ZP.getEnableHardwareAcceleration() ? l.Xo$ : l.qEK;
 
 function v(e) {
   let {
     user: t,
     guild: n,
     displayProfile: a,
-    canUsePremiumCustomization: _,
+    canUsePremiumCustomization: f,
     previewAvatar: g,
     previewAvatarDecoration: b,
     previewTheme: v,
@@ -75,7 +75,7 @@ function v(e) {
   } = e, C = i.useRef(null), {
     analyticsLocations: R,
     newestAnalyticsLocation: P
-  } = (0, c.ZP)(), w = (0, s.e7)([d.Z], () => d.Z.getStatus(t.id)), D = null == n || (null == a ? void 0 : a.canUsePremiumProfileCustomization) || _, L = (0, r.jsx)(O, {
+  } = (0, c.ZP)(), w = (0, s.e7)([d.Z], () => d.Z.getStatus(t.id)), D = null == n || (null == a ? void 0 : a.canUsePremiumProfileCustomization) || f, L = (0, r.jsx)(O, {
     src: g,
     avatarDecoration: b,
     imageClassName: o()(T, {
@@ -96,7 +96,7 @@ function v(e) {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(f.Z, {
+      return (0, r.jsx)(_.Z, {
         className: m.menu,
         onClose: t,
         onChangeAvatar: () => (0, p.$r)({

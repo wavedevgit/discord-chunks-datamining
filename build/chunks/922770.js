@@ -34,7 +34,7 @@ function d(e) {
   return e
 }
 
-function _(e, t) {
+function f(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -45,8 +45,8 @@ function _(e, t) {
   return n
 }
 
-function f(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -88,17 +88,17 @@ function E(e) {
     animated: n = !0,
     className: a,
     itemClassName: u,
-    "aria-label": _
+    "aria-label": f
   } = e, h = p(e, ["type", "animated", "className", "itemClassName", "aria-label"]);
   let {
     reducedMotion: m
   } = i.useContext(s.S), E = m.enabled ? g(t) : t;
-  if (_ = null != _ ? _ : l.intl.string(l.t.ZTNur6), "spinningCircle" === E || "spinningCircleSimple" === E) return (0, r.jsx)("div", f(d({
+  if (f = null != f ? f : l.intl.string(l.t.ZTNur6), "spinningCircle" === E || "spinningCircleSimple" === E) return (0, r.jsx)("div", _(d({
     className: o()(c.spinner, c[E], a, {
       [c.stopAnimation]: !n
     }),
     role: "img",
-    "aria-label": _
+    "aria-label": f
   }, h), {
     children: (0, r.jsx)("div", {
       className: c.spinningCircleInner,
@@ -127,12 +127,12 @@ function E(e) {
     })
   }));
   let b = o()(c.item, u);
-  return (0, r.jsx)("span", f(d({
+  return (0, r.jsx)("span", _(d({
     className: o()(c.spinner, a, {
       [c.stopAnimation]: !n
     }),
     role: "img",
-    "aria-label": _
+    "aria-label": f
   }, h), {
     children: (0, r.jsxs)("span", {
       className: o()(c.inner, c[E]),

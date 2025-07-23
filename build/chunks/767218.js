@@ -1,19 +1,19 @@
 /** Chunk was on 44799 **/
 n.d(t, {
-  Z: () => p,
+  Z: () => m,
   b: () => d
 });
 var r, o = n(255367);
 n(73800);
 var i = n(657707),
-  s = n(793030),
-  l = n(692547),
+  l = n(793030),
+  s = n(692547),
   a = n(93841),
   c = n(388032),
   u = n(154142),
   d = ((r = {})[r.AVAILABLE = 0] = "AVAILABLE", r[r.SPENT = 1] = "SPENT", r[r.TOTAL = 2] = "TOTAL", r);
 
-function p(e) {
+function m(e) {
   let {
     count: t,
     type: n
@@ -24,13 +24,13 @@ function p(e) {
       className: u.headerContainer,
       children: [(0, o.jsx)(i.$Eu, {
         size: "sm",
-        color: 0 !== n ? l.Z.colors.HEADER_MUTED : l.Z.unsafe_rawColors.GUILD_BOOSTING_PINK
-      }), (0, o.jsx)(s.X6, {
+        color: 0 !== n ? s.Z.colors.HEADER_MUTED : s.Z.unsafe_rawColors.GUILD_BOOSTING_PINK
+      }), (0, o.jsx)(l.X6, {
         color: 0 !== n ? "header-muted" : "header-primary",
         variant: "heading-lg/semibold",
         children: t
       })]
-    }), (0, o.jsx)(s.xv, {
+    }), (0, o.jsx)(l.xv, {
       color: "header-muted",
       variant: "text-sm/medium",
       children: (() => {

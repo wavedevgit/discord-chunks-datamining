@@ -6,8 +6,8 @@ var r, i, a, o = n(848120),
   c = n(880181),
   u = n(434431),
   d = n(77025),
-  _ = n(214027),
-  f = n(449285),
+  f = n(214027),
+  _ = n(449285),
   p = n(436207),
   h = n(556585),
   m = n(573078),
@@ -30,7 +30,7 @@ var r, i, a, o = n(848120),
   L = y("toStringTag"),
   x = O("TYPED_ARRAY_TAG"),
   M = "TypedArrayConstructor",
-  k = o && !!b && "Opera" !== _(l.opera),
+  k = o && !!b && "Opera" !== f(l.opera),
   j = !1,
   U = {
     Int8Array: 1,
@@ -49,7 +49,7 @@ var r, i, a, o = n(848120),
   },
   B = function(e) {
     if (!u(e)) return !1;
-    var t = _(e);
+    var t = f(e);
     return "DataView" === t || d(U, t) || d(G, t)
   },
   V = function(e) {
@@ -61,7 +61,7 @@ var r, i, a, o = n(848120),
   },
   F = function(e) {
     if (!u(e)) return !1;
-    var t = _(e);
+    var t = f(e);
     return d(U, t) || d(G, t)
   },
   Z = function(e) {
@@ -70,7 +70,7 @@ var r, i, a, o = n(848120),
   },
   H = function(e) {
     if (c(e) && (!b || g(R, e))) return e;
-    throw new D(f(e) + " is not a typed array constructor")
+    throw new D(_(e) + " is not a typed array constructor")
   },
   Y = function(e, t, n, r) {
     if (s) {

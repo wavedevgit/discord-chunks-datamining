@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  D5: () => _,
+  D5: () => f,
   Ft: () => d,
   IT: () => u,
-  Yk: () => f
+  Yk: () => _
 }), n(415506);
 var r = n(579092),
   i = n(436620);
@@ -26,7 +26,7 @@ function d() {
   return "object" == typeof WebAssembly
 }
 
-function _() {
+function f() {
   return null != o ? o : o = new Promise((e, t) => {
     Promise.all([n.e("69418"), n.e("13263")]).then(n.bind(n, 129487)).then(n => {
       let {
@@ -43,7 +43,7 @@ function _() {
   })
 }
 
-function f() {
+function _() {
   if (null == s) throw Error("DAVE module not loaded");
   return null == l && (l = new s.TransientKeys), l
 }

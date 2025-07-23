@@ -1,18 +1,8 @@
-/** Chunk was on web.js **/
-"use strict";
-
-function r(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
-  }) : e[t] = n, e
-}
+/** Chunk was on 22755 **/
 n.d(t, {
-  L: () => i
+  L: () => r
 }), n(388685);
-class i {
+class r {
   cleanUp(e) {
     this.cancel(e), this.delete(e)
   }
@@ -30,6 +20,12 @@ class i {
     this.searchFetchers.set(e, t)
   }
   constructor() {
-    r(this, "searchFetchers", new Map)
+    var e, t;
+    e = "searchFetchers", t = new Map, e in this ? Object.defineProperty(this, e, {
+      value: t,
+      enumerable: !0,
+      configurable: !0,
+      writable: !0
+    }) : this[e] = t
   }
 }

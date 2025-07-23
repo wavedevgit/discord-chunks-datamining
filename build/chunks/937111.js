@@ -20,8 +20,8 @@ function c(e, t, n) {
 }
 let u = null,
   d = {},
-  _ = !1,
-  f = {},
+  f = !1,
+  _ = {},
   p = {};
 
 function h(e) {
@@ -49,7 +49,7 @@ function g(e) {
   let {
     guildJoinRequests: t
   } = e;
-  _ = !1, f = {}, d = {}, t.forEach(e => {
+  f = !1, _ = {}, d = {}, t.forEach(e => {
     let {
       guild_id: t
     } = e;
@@ -112,7 +112,7 @@ function v(e) {
       features: o,
       splash: s
     } = n;
-    f[t] = {
+    _[t] = {
       id: t,
       name: i,
       icon: a,
@@ -126,7 +126,7 @@ function I(e) {
   let {
     guilds: t
   } = e;
-  _ = !0, t.forEach(e => {
+  f = !0, t.forEach(e => {
     let {
       id: t,
       name: n,
@@ -134,7 +134,7 @@ function I(e) {
       icon: i,
       splash: a
     } = e;
-    f[t] = {
+    _[t] = {
       id: t,
       name: n,
       features: r,
@@ -165,7 +165,7 @@ function S(e) {
       features: a,
       splash: o
     } = t.guild;
-    f[n] = {
+    _[n] = {
       id: e,
       name: r,
       icon: i,
@@ -200,10 +200,10 @@ class R extends(r = i.ZP.Store) {
     return Object.values(d).map(e => null == e ? void 0 : e.guildId).filter(e => null != e)
   }
   getJoinRequestGuild(e) {
-    return null != f[e] ? (0, s.yS)(f[e]) : null
+    return null != _[e] ? (0, s.yS)(_[e]) : null
   }
   get hasFetchedRequestToJoinGuilds() {
-    return _
+    return f
   }
   hasJoinRequestCoackmark() {
     return null != u

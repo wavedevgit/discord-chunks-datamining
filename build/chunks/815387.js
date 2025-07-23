@@ -1,4 +1,4 @@
-/** Chunk was on 51308 **/
+/** Chunk was on 22755 **/
 n.d(t, {
   Z: () => ek
 }), n(415506);
@@ -20,8 +20,8 @@ var r = n(255367),
   b = n(825829),
   E = n(623624),
   x = n(29887),
-  v = n(533694),
-  y = n(345114),
+  y = n(533694),
+  v = n(345114),
   C = n(924301),
   O = n(225890),
   j = n(434404),
@@ -74,8 +74,8 @@ var r = n(255367),
   eb = n(614972),
   eE = n(701181),
   ex = n(29338),
-  ev = n(461135),
-  ey = n(296571),
+  ey = n(461135),
+  ev = n(296571),
   eC = n(587737),
   eO = n(482239),
   ej = n(328749),
@@ -465,7 +465,7 @@ let eR = Object.freeze({
           }
         })
       }, [t]);
-      return (0, r.jsx)(ey.Z, {
+      return (0, r.jsx)(ev.Z, {
         message: t,
         compact: s,
         usernameHook: c,
@@ -526,7 +526,7 @@ let eR = Object.freeze({
         usernameHook: l
       })
     },
-    [eT.uaV.ROLE_SUBSCRIPTION_PURCHASE]: y.Z,
+    [eT.uaV.ROLE_SUBSCRIPTION_PURCHASE]: v.Z,
     [eT.uaV.PURCHASE_NOTIFICATION]: function(e) {
       var t;
       let {
@@ -534,7 +534,7 @@ let eR = Object.freeze({
         channel: i,
         compact: l
       } = e;
-      return (null == (t = n.purchaseNotification) ? void 0 : t.type) === d.Eh.GUILD_PRODUCT ? (0, r.jsx)(v.Z, {
+      return (null == (t = n.purchaseNotification) ? void 0 : t.type) === d.Eh.GUILD_PRODUCT ? (0, r.jsx)(y.Z, {
         message: n,
         channel: i,
         compact: l
@@ -634,7 +634,7 @@ let eR = Object.freeze({
         guildId: n.guild_id,
         messageId: t.id
       });
-      return (0, r.jsx)(ev.Z, {
+      return (0, r.jsx)(ey.Z, {
         message: t,
         compact: i,
         usernameHook: l

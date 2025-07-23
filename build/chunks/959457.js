@@ -11,8 +11,8 @@ var i, a = n(512722),
   c = n(442837),
   u = n(46973),
   d = n(570140),
-  _ = n(594190),
-  f = n(444852),
+  f = n(594190),
+  _ = n(444852),
   p = n(569545),
   h = n(687516),
   m = n(139656),
@@ -42,7 +42,7 @@ let S = {},
   D = {};
 
 function L(e, t, n, i) {
-  return o()(null != r, "Creating RTCConnection without session."), new f.Z({
+  return o()(null != r, "Creating RTCConnection without session."), new _.Z({
     sessionId: r,
     streamKey: e,
     serverId: t,
@@ -91,7 +91,7 @@ function j(e) {
       } = e;
       t.setActionContext(i), t.setNativePickerStyleUsed(s), n && t.trackStart()
     }), C[u] = o, N[u] = a, null != a) {
-    let e = _.ZP.getGameForPID(a);
+    let e = f.ZP.getGameForPID(a);
     null != e && (A[u] = {
       name: e.name,
       id: e.id,
@@ -130,7 +130,7 @@ function G(e) {
     null == N[t] && (A[t] = null);
     let e = (0, p.my)(t);
     null == A[t] && null == C[t] && (A[t] = (0, h.L2)(e, y.Z));
-    let s = new f.A({
+    let s = new _.A({
       streamRegion: i,
       streamApplication: A[t],
       streamSourceType: X(C[t]),

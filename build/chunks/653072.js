@@ -1,4 +1,4 @@
-/** Chunk was on 51308 **/
+/** Chunk was on 22755 **/
 e.exports = {
   card: "card_a8610c",
   participants: "participants_a8610c",

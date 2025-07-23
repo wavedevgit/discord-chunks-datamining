@@ -1,4 +1,4 @@
-/** Chunk was on 51308 **/
+/** Chunk was on 22755 **/
 n.d(t, {
   Z: () => b
 }), n(388685);
@@ -22,32 +22,32 @@ function b(e) {
   let {
     code: t,
     message: n
-  } = e, [b, E, x] = (0, a.Wu)([f.Z], () => [f.Z.getApplication(t), f.Z.isInvalidApplication(t), f.Z.getApplicationFetchState(t)], [t]), v = (0, a.e7)([d.Z], () => {
+  } = e, [b, E, x] = (0, a.Wu)([f.Z], () => [f.Z.getApplication(t), f.Z.isInvalidApplication(t), f.Z.getApplicationFetchState(t)], [t]), y = (0, a.e7)([d.Z], () => {
     var e;
     return null != (e = d.Z.getGuildId()) ? e : void 0
-  }), [y, C] = i.useState(!1), O = i.useCallback(e => {
+  }), [v, C] = i.useState(!1), O = i.useCallback(e => {
     e && C(!0)
   }, []), j = (0, o.O)(O), I = i.useCallback(() => {
     p.default.track(g.rMx.APP_DIRECTORY_PROFILE_EMBED_VIEWED, {
       application_id: t,
       device_platform: l.tq ? "mobile_web" : "desktop_web",
       sender_user_id: n.author.id,
-      guild_id: v,
+      guild_id: y,
       channel_id: n.channel_id
     })
-  }, [t, v, n.author.id, n.channel_id]);
+  }, [t, y, n.author.id, n.channel_id]);
   return (i.useEffect(() => {
     (0, m.gZ)(t)
   }, [t]), i.useEffect(() => {
-    y && x === f.M.FETCHED && I()
-  }, [y, x, I]), i.useEffect(() => {
-    y && E && p.default.track(g.rMx.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
+    v && x === f.M.FETCHED && I()
+  }, [v, x, I]), i.useEffect(() => {
+    v && E && p.default.track(g.rMx.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
       device_platform: l.tq ? "mobile_web" : "desktop_web",
       sender_user_id: n.author.id,
-      guild_id: v,
+      guild_id: y,
       channel_id: n.channel_id
     })
-  }, [y, v, E, n.author.id, n.channel_id]), E) ? (0, r.jsxs)(c.Z, {
+  }, [v, y, E, n.author.id, n.channel_id]), E) ? (0, r.jsxs)(c.Z, {
     containerRef: j,
     children: [(0, r.jsx)(c.Z.Header, {
       text: h.intl.string(h.t.j4KtLS)

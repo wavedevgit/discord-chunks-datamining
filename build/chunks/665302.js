@@ -15,11 +15,11 @@ function c(e) {
     buttonText: t,
     onGoBack: n,
     onDismiss: c,
-    showCloseButton: u
+    showCloseButton: d
   } = e;
   return (0, i.jsxs)(l.qXd, {
     className: a.backNotice,
-    children: [u && (0, i.jsx)(l.RyX, {
+    children: [d && (0, i.jsx)(l.RyX, {
       onClick: c,
       noticeType: s.kVF.BACK_TO_PREVIOUS_SCREEN
     }), (0, i.jsxs)(r.zx, {

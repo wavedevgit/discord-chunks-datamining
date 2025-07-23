@@ -21,7 +21,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,7 +34,7 @@ function _(e) {
   return e
 }
 
-function f(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -46,7 +46,7 @@ function f(e, t) {
 }
 
 function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -74,7 +74,7 @@ let g = e => {
     children: n,
     className: a,
     color: d,
-    roleColors: f,
+    roleColors: _,
     iconType: m,
     onMouseEnter: g,
     onMouseLeave: E
@@ -83,9 +83,9 @@ let g = e => {
     gradientStyle: v,
     gradientClassname: I
   } = (0, l.Icv)({
-    primaryColor: null == f ? void 0 : f.primaryColor,
-    secondaryColor: null == f ? void 0 : f.secondaryColor,
-    tertiaryColor: null == f ? void 0 : f.tertiaryColor,
+    primaryColor: null == _ ? void 0 : _.primaryColor,
+    secondaryColor: null == _ ? void 0 : _.secondaryColor,
+    tertiaryColor: null == _ ? void 0 : _.tertiaryColor,
     roleStyle: "username",
     animateGradient: y
   }), T = i.useCallback(e => {
@@ -96,7 +96,7 @@ let g = e => {
   return null != d && (A = {
     color: (0, s.Rf)(d),
     backgroundColor: y ? (0, s.br)(d, .3) : (0, s.br)(d, .1)
-  }), (0, r.jsx)(l.P3F, p(_({}, b), {
+  }), (0, r.jsx)(l.P3F, p(f({}, b), {
     innerRef: t,
     tag: "span",
     className: o()(a, {
@@ -110,8 +110,8 @@ let g = e => {
     children: null != m ? (0, r.jsx)(c.Z, {
       iconType: m,
       children: n
-    }) : null != f ? (0, r.jsx)("span", {
-      style: _({}, v),
+    }) : null != _ ? (0, r.jsx)("span", {
+      style: f({}, v),
       className: I,
       children: n
     }) : n

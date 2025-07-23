@@ -12,8 +12,8 @@ var r = n(873546),
   c = n(566620),
   u = n(122613),
   d = n(649256),
-  _ = n(574952),
-  f = n(367907),
+  f = n(574952),
+  _ = n(367907),
   p = n(421474),
   h = n(812206),
   m = n(506895),
@@ -115,7 +115,7 @@ function B(e) {
     let {
       code: r,
       url: i
-    } = C, a = h.Z.getApplication(r), l = new URL(i), f = null != (t = l.searchParams.get("referrer_id")) ? t : void 0, p = (0, _.Z)(), {
+    } = C, a = h.Z.getApplication(r), l = new URL(i), _ = null != (t = l.searchParams.get("referrer_id")) ? t : void 0, p = (0, f.Z)(), {
       currentChannelId: g,
       instanceId: E,
       isCurrentlyInInstance: b,
@@ -131,7 +131,7 @@ function B(e) {
         isStart: null == E,
         embeddedActivitiesManager: p,
         customId: t,
-        referrerId: f,
+        referrerId: _,
         analyticsLocations: s
       })
     }).catch(() => {}), !0);
@@ -148,7 +148,7 @@ function B(e) {
           channelId: e,
           analyticsLocations: s,
           customId: t,
-          referrerId: f
+          referrerId: _
         })
       }).catch(() => {}), !0)
     }
@@ -221,7 +221,7 @@ function B(e) {
       getOAuth2AuthorizeProps: t,
       openOAuth2ModalWithCreateGuildModal: r
     } = n(69580), i = t(e);
-    if (null != i) return e => (null == e || e.preventDefault(), null != C && C.type === g.g.APP_OAUTH2_LINK && f.ZP.trackWithMetadata(M.rMx.APP_OAUTH2_LINK_EMBED_URL_CLICKED, {
+    if (null != i) return e => (null == e || e.preventDefault(), null != C && C.type === g.g.APP_OAUTH2_LINK && _.ZP.trackWithMetadata(M.rMx.APP_OAUTH2_LINK_EMBED_URL_CLICKED, {
       application_id: i.clientId
     }), r(i), !0)
   }

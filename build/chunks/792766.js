@@ -1,4 +1,4 @@
-/** Chunk was on 51308 **/
+/** Chunk was on 22755 **/
 n.d(t, {
   Z: () => _,
   y: () => h
@@ -103,9 +103,9 @@ let g = e => {
     let {
       topic: E,
       speaker_count: x,
-      participant_count: v
-    } = n, y = null != (t = n.members) ? t : [], C = h ? y.slice(0, 3) : y, O = x - C.length;
-    return h && (O += y.length - C.length), (0, r.jsxs)("div", {
+      participant_count: y
+    } = n, v = null != (t = n.members) ? t : [], C = h ? v.slice(0, 3) : v, O = x - C.length;
+    return h && (O += v.length - C.length), (0, r.jsxs)("div", {
       children: [(0, r.jsxs)("div", {
         className: f.flex,
         children: [(0, r.jsxs)("div", {
@@ -132,7 +132,7 @@ let g = e => {
           }), (0, r.jsx)(s.X6q, {
             className: a()(f.__invalid_label, f.listeners),
             variant: "heading-sm/semibold",
-            children: v
+            children: y
           })]
         })]
       }), h && (0, r.jsxs)("div", {

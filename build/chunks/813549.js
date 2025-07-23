@@ -20,8 +20,8 @@ let c = e => {
     className: c,
     botType: u,
     usernameClass: d,
-    discriminatorClass: _,
-    botClass: f,
+    discriminatorClass: f,
+    botClass: _,
     botVerified: p = !1,
     style: h,
     useRemSizes: m = !1,
@@ -37,12 +37,12 @@ let c = e => {
       } : void 0,
       children: [g, t]
     }), null != n ? (0, r.jsxs)("span", {
-      className: null != _ ? _ : void 0,
+      className: null != f ? f : void 0,
       children: ["#", n]
     }) : null, null != u ? (0, r.jsx)(o.Z, {
       type: u,
       invertColor: i,
-      className: a()(f, l.bot),
+      className: a()(_, l.bot),
       verified: p,
       useRemSizes: m
     }) : null]

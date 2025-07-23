@@ -1,6 +1,6 @@
-/** Chunk was on 51308 **/
+/** Chunk was on 22755 **/
 n.d(t, {
-  Z: () => v
+  Z: () => y
 }), n(314940);
 var r = n(255367),
   i = n(73800),
@@ -170,7 +170,7 @@ function x(e) {
   })
 }
 
-function v(e) {
+function y(e) {
   let {
     message: t,
     poll: n,

@@ -13,7 +13,7 @@ var r = n(224706),
   u = n(70956),
   d = n(358085);
 
-function _(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -21,7 +21,7 @@ function _(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class f extends a.Z {
+class _ extends a.Z {
   handlePostConnectionOpen() {
     ((0, d.isDesktop)() || (0, o.l)() || s.d.getCurrentConfig({
       location: "DetectableGamesManager.handlePostConnectionOpen"
@@ -31,9 +31,9 @@ class f extends a.Z {
     null != this.intervalId && (clearInterval(this.intervalId), this.intervalId = void 0)
   }
   constructor(...e) {
-    super(...e), _(this, "intervalId", void 0), _(this, "actions", {
+    super(...e), f(this, "intervalId", void 0), f(this, "actions", {
       POST_CONNECTION_OPEN: () => this.handlePostConnectionOpen()
     })
   }
 }
-let p = new f
+let p = new _

@@ -5,8 +5,8 @@ r.d(t, {
 var n = r(255367),
   o = r(73800),
   a = r(494497),
-  s = r(442837),
-  i = r(304789),
+  i = r(442837),
+  s = r(304789),
   l = r(481060),
   c = r(905128),
   u = r(870246),
@@ -25,7 +25,7 @@ function y(e) {
       guildId: y,
       powerup: v
     } = e,
-    h = function(e, t) {
+    C = function(e, t) {
       if (null == e) return {};
       var r, n, o = function(e, t) {
         if (null == e) return {};
@@ -40,7 +40,7 @@ function y(e) {
       }
       return o
     }(e, ["guildId", "powerup"]);
-  let [C, O] = o.useState(void 0), k = o.useMemo(() => {
+  let [h, O] = o.useState(void 0), k = o.useMemo(() => {
     switch (v.skuId) {
       case b.IN:
         return (0, n.jsx)(f.E, {
@@ -58,7 +58,7 @@ function y(e) {
   let P = (0, d.Z)(y),
     w = b.Rx[v.skuId],
     S = null != w ? b.Cp[w] : null,
-    E = (0, s.e7)([c.Z], () => c.Z.getStateForGuild(y)),
+    E = (0, i.e7)([c.Z], () => c.Z.getStateForGuild(y)),
     I = null != S ? null == E ? void 0 : E.allPowerups[S] : null;
   return (0, n.jsxs)(l.Y0X, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -80,14 +80,14 @@ function y(e) {
   }({
     className: x.modal,
     size: l.CgR.DYNAMIC
-  }, h), r = r = {
+  }, C), r = r = {
     parentComponent: "GuildPowerupPerkModal",
     children: [(0, n.jsxs)(l.hzk, {
       className: x.modalContentContainer,
       scrollbarType: "none",
       children: [(0, n.jsxs)("div", {
         className: x.sidebar,
-        children: [(0, n.jsx)(i.$, {
+        children: [(0, n.jsx)(s.$, {
           className: x.powerupImage,
           children: (0, n.jsx)(m.m, {
             powerup: v
@@ -107,11 +107,11 @@ function y(e) {
             children: j.intl.formatToPlainString(g.default.NAFGkJ, {
               level: I.title
             })
-          }), null != C && (0, n.jsx)(l.Text, {
+          }), null != h && (0, n.jsx)(l.Text, {
             className: x.error,
             color: "status-danger",
             variant: "text-sm/semibold",
-            children: C
+            children: h
           }), P && (0, n.jsx)(p.ZP, {
             className: x.footer,
             guildId: y,
@@ -125,7 +125,7 @@ function y(e) {
       })]
     }), (0, n.jsx)(l.olH, {
       className: x.close,
-      onClick: h.onClose
+      onClick: C.onClose
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
     var r = Object.keys(e);

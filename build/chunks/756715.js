@@ -12,9 +12,9 @@ var r = n(255367),
   c = n(84735),
   u = n(335854),
   d = n(645499),
-  _ = n(486044);
+  f = n(486044);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,7 +30,7 @@ function p(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -76,7 +76,7 @@ function b(e) {
     href: t,
     onClick: n,
     className: a,
-    children: f,
+    children: _,
     rel: h,
     target: E,
     useDefaultUnderlineStyles: b = !0,
@@ -88,8 +88,8 @@ function b(e) {
   null != t && null == n && (n = u.X.getDefaultLinkInterceptor(t));
   let S = i.useContext(s.g),
     A = {
-      className: o()(_.anchor, {
-        [_.anchorUnderlineOnHover]: b
+      className: o()(f.anchor, {
+        [f.anchorUnderlineOnHover]: b
       }, a),
       href: t,
       onClick: n,
@@ -104,11 +104,11 @@ function b(e) {
     onClick: n,
     focusProps: v,
     innerRef: I,
-    children: f
+    children: _
   })) : (0, r.jsx)(c.t, m(p({}, v), {
     children: (0, r.jsx)("a", m(p({}, T, A), {
       ref: I,
-      children: f
+      children: _
     }))
   }))
 }

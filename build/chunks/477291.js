@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => _
 });
 var r = n(255367);
 n(73800);
@@ -49,7 +49,7 @@ function d(e, t) {
   }), e
 }
 
-function _(e, t, n) {
+function f(e, t, n) {
   var r;
   let {
     rating: o,
@@ -67,7 +67,7 @@ function _(e, t, n) {
   }), (0, i.showToast)((0, i.createToast)(s.intl.string(s.t["d9+vQ0"]), i.ToastType.SUCCESS))
 }
 
-function f(e) {
+function _(e) {
   let {
     summary: t,
     channel: a,
@@ -78,10 +78,10 @@ function f(e) {
       default: e
     } = await Promise.all([n.e("60137"), n.e("96114")]).then(n.bind(n, 580584));
     return n => (0, r.jsx)(e, d(c({}, n), {
-      onSubmit: e => _(t, a, e),
+      onSubmit: e => f(t, a, e),
       startRating: s
     }))
-  }) : _(t, a, {
+  }) : f(t, a, {
     rating: s,
     problem: null,
     feedback: "",

@@ -1,4 +1,4 @@
-/** Chunk was on 51308 **/
+/** Chunk was on 22755 **/
 n.d(t, {
   Z: () => C
 }), n(388685);
@@ -20,8 +20,8 @@ var r = n(255367),
   b = n(798476),
   E = n(358595),
   x = n(981631),
-  v = n(388032),
-  y = n(583136);
+  y = n(388032),
+  v = n(583136);
 
 function C(e) {
   let {
@@ -50,46 +50,46 @@ function C(e) {
       } : {}
     }, [f, C, S]);
   return null == T ? (0, r.jsx)(E.Z, {}) : (0, r.jsxs)(s.P3F, {
-    className: a()(y.guildInviteContainer, {
-      [y.clickable]: C && f
+    className: a()(v.guildInviteContainer, {
+      [v.clickable]: C && f
     }),
     onClick: N,
     style: A,
     children: [(0, r.jsxs)("div", {
-      className: y.cardHeightMeasure,
+      className: v.cardHeightMeasure,
       ref: p,
       children: [(0, r.jsx)(b.Z7, {
         profile: T,
-        className: y.banner
+        className: v.banner
       }), (0, r.jsx)(b.N3, {
         profile: T
       }), (0, r.jsx)(_.Z, {
         profile: T
       }), (0, r.jsx)(g.E, {
         profile: T,
-        className: y.mainContent
+        className: v.mainContent
       })]
     }), C && !f ? (0, r.jsx)("div", {
-      className: y.hideDetailsButtonContainer,
+      className: v.hideDetailsButtonContainer,
       children: (0, r.jsx)(s.Avr, {
         textVariant: "text-xs/medium",
         variant: "secondary",
         size: "sm",
         onClick: P,
-        text: v.intl.string(v.t.xdCLeH)
+        text: y.intl.string(y.t.xdCLeH)
       })
     }) : null, (0, r.jsxs)("div", {
-      className: a()(y.footer, {
-        [y.floatingFooter]: C
+      className: a()(v.footer, {
+        [v.floatingFooter]: C
       }),
       children: [C && f ? (0, r.jsx)("div", {
-        className: y.gradient
+        className: v.gradient
       }) : null, (0, r.jsx)("div", {
-        className: a()(y.footerContent, {
-          [y.collapsedFooterContent]: C && f
+        className: a()(v.footerContent, {
+          [v.collapsedFooterContent]: C && f
         }),
         children: (0, r.jsx)("div", {
-          className: y.buttonContainer,
+          className: v.buttonContainer,
           children: (0, r.jsx)(O, {
             invite: t,
             profile: T,

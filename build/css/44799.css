@@ -1,6 +1,6 @@
 /**
   Module ID: 44799
-  Original File Name: bc90aa6280995729
+  Original File Name: f27eeb1ac46f015f
 **/
 .parentContainer__98cbd {
     display: flex;
@@ -26,6 +26,10 @@
 
 .parentContainer__98cbd:hover .labelContainer__98cbd {
     opacity: 0
+}
+
+.parentContainer__98cbd:hover.rollbackInactive__98cbd .labelContainer__98cbd {
+    opacity: 1
 }
 
 .parentContainer__98cbd:hover .boostProgressBackground__98cbd {
@@ -127,6 +131,12 @@
 
 .inline__98cbd {
     gap: 6px
+}
+
+.rollbackInline__98cbd {
+    align-items: center;
+    display: flex;
+    gap: 4px
 }
 
 .price__98cbd {
@@ -671,4 +681,4 @@
     transition: padding-left .2s ease
 }
 
-/*# sourceMappingURL=bc90aa6280995729.css.map*/
+/*# sourceMappingURL=f27eeb1ac46f015f.css.map*/

@@ -15,8 +15,8 @@ var r = n(255367),
   c = n(481060),
   u = n(914010),
   d = n(594174),
-  _ = n(36703),
-  f = n(74538),
+  f = n(36703),
+  _ = n(74538),
   p = n(125900),
   h = n(824690),
   m = n(240479),
@@ -78,7 +78,7 @@ function S() {
     }), (0, r.jsx)(c.iRW, {
       onValueChange: t,
       className: b.slider,
-      initialValue: (0, _.P)(e),
+      initialValue: (0, f.P)(e),
       maxValue: 100
     })]
   })
@@ -90,7 +90,7 @@ function A(e) {
     forceShowBetaLabel: n = !1
   } = e, i = (0, p.V2)({
     location: "SoundmojiBanner"
-  }), a = (0, l.e7)([d.default], () => f.ZP.canUseSoundboardEverywhere(d.default.getCurrentUser())), o = (0, l.e7)([u.Z], () => u.Z.getGuildId());
+  }), a = (0, l.e7)([d.default], () => _.ZP.canUseSoundboardEverywhere(d.default.getCurrentUser())), o = (0, l.e7)([u.Z], () => u.Z.getGuildId());
   return n || a || t.guildId === g.X8 || t.guildId === o || !i ? (0, r.jsx)(c.IGR, {
     text: "BETA",
     color: s.Z.BG_BRAND,
@@ -158,10 +158,10 @@ function C(e) {
     children: o,
     setTooltipShowing: s,
     clickableClassName: l
-  } = e, [u, d] = i.useState(!1), [_, f] = i.useState(String(Date.now())), p = i.useCallback(e => {
+  } = e, [u, d] = i.useState(!1), [f, _] = i.useState(String(Date.now())), p = i.useCallback(e => {
     e.stopPropagation(), d(!u)
   }, [u]), h = i.useCallback(() => {
-    f(String(Date.now()))
+    _(String(Date.now()))
   }, []), m = i.useRef(null);
   i.useEffect(() => {
     var e, t;
@@ -183,7 +183,7 @@ function C(e) {
     shouldShow: u,
     onRequestClose: () => d(!1),
     animationPosition: "bottom",
-    positionKey: _,
+    positionKey: f,
     closeOnScroll: !0,
     children: e => (0, r.jsx)(c.ua7, {
       onTooltipHide: () => {

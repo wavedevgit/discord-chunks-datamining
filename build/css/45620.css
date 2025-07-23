@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: 4ceedea554663567
+  Original File Name: c18da561735edaa9
 **/
 .shopWrapper__6db1d {
     background: var(--background-base-low);
@@ -1399,6 +1399,11 @@
     padding-top: 3px
 }
 
+.heroHeaderContainer__08415.responsive__08415 {
+    padding-left: 30px;
+    padding-right: 30px
+}
+
 .heroHeaderBadgeLogoSummaryContainer__08415 {
     display: flex;
     flex: 1;
@@ -1904,4 +1909,4 @@
     cursor: pointer
 }
 
-/*# sourceMappingURL=4ceedea554663567.css.map*/
+/*# sourceMappingURL=c18da561735edaa9.css.map*/

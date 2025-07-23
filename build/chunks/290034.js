@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 });
 var r = n(255367);
 n(73800);
@@ -24,7 +24,7 @@ let u = {
     [l.Eu4.TIER_3]: c.iconTierThree
   };
 
-function _(e) {
+function f(e) {
   let {
     premiumTier: t,
     iconBackgroundClassName: n,

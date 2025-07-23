@@ -1,6 +1,6 @@
 /**
   Module ID: 1272
-  Original File Name: 9bcfd29226700881
+  Original File Name: bfdb74544609c1ba
 **/
 .container__74da2 {
     align-items: center;
@@ -1934,50 +1934,6 @@
     #guild-role-subscription-overview-notice__808a1,.headerBar__808a1 {
         display: none
     }
-}
-
-.container__81977 {
-    background: var(--background-secondary-alt);
-    padding: var(--space-16);
-    padding-top: var(--space-24);
-    position: relative;
-    text-align: center
-}
-
-.containerEnabled__81977 {
-    background: linear-gradient(to right,var(--premium-tier-2-purple-for-gradients) 0,var(--premium-tier-2-purple-for-gradients-2) 50.24%,var(--premium-tier-2-pink-for-gradients) 100%)
-}
-
-.buttonClose__81977 {
-    line-height: 0;
-    position: absolute;
-    right: var(--space-8);
-    top: var(--space-8)
-}
-
-.buttonCTA__81977 {
-    display: inline-block;
-    margin-top: var(--space-16)
-}
-
-.dismissIcon__81977 {
-    color: var(--interactive-normal)
-}
-
-.containerEnabled__81977 .dismissIcon__81977 {
-    color: var(--white-500)
-}
-
-.errorWarningIcon__81977 {
-    color: var(--status-warning);
-    height: 18px;
-    margin-right: var(--space-4);
-    vertical-align: bottom;
-    width: 18px
-}
-
-.keyCombo__81977 {
-    display: inline-block
 }
 
 .container__2f3c8 {
@@ -8549,4 +8505,4 @@ html .tabBadge__35e86 {
     margin-bottom: 18px
 }
 
-/*# sourceMappingURL=9bcfd29226700881.css.map*/
+/*# sourceMappingURL=bfdb74544609c1ba.css.map*/

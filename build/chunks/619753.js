@@ -1,4 +1,4 @@
-/** Chunk was on 51308 **/
+/** Chunk was on 22755 **/
 n.d(t, {
   Z: () => U
 }), n(35282), n(539854), n(388685);
@@ -20,8 +20,8 @@ var r = n(255367),
   b = n(937889),
   E = n(804063),
   x = n(703656),
-  v = n(359110),
-  y = n(695346),
+  y = n(359110),
+  v = n(695346),
   C = n(131704),
   O = n(592125),
   j = n(430824),
@@ -81,8 +81,8 @@ let U = i.memo(function(e) {
     onPageChange: _,
     onClick: b
   } = e, {
-    offset: v,
-    totalResults: y,
+    offset: y,
+    totalResults: v,
     isSearching: C,
     showBlockedResults: j
   } = n, I = i.useCallback((e, t) => {
@@ -138,11 +138,11 @@ let U = i.memo(function(e) {
       highlighter: z,
       startIndex: i,
       resultRefs: P,
-      totalResults: y,
+      totalResults: v,
       scrollTo: m,
       searchId: l,
       renderEmbeds: a,
-      offset: v,
+      offset: y,
       jumpToMessage: I,
       listNavigator: G,
       favoriteSearch: V
@@ -185,8 +185,8 @@ let U = i.memo(function(e) {
       })]
     }) : null, !C && !V && (0, r.jsx)(w.Z, {
       onPageChange: _,
-      offset: v,
-      totalCount: y,
+      offset: y,
+      totalCount: v,
       pageSize: R.vpv
     })]
   })
@@ -240,10 +240,10 @@ function B(e) {
     jumpToMessage: A,
     listNavigator: w,
     favoriteSearch: k
-  } = e, U = y.cC.useSetting(), B = (0, h.p)(), G = i.useCallback(e => {
+  } = e, U = v.cC.useSetting(), B = (0, h.p)(), G = i.useCallback(e => {
     if (e === N.Z.getChannelId()) return;
     let t = O.Z.getChannel(e);
-    null != t && (I.Z.can(R.Plq.VIEW_CHANNEL, t) || t.isPrivate()) && (0, v.Kh)(t.id)
+    null != t && (I.Z.can(R.Plq.VIEW_CHANNEL, t) || t.isPrivate()) && (0, y.Kh)(t.id)
   }, []), H = null != a ? (0, m.F6)(a, P.default, S.Z, !1) : "???", V = k && null != a.guild_id ? null == (t = j.Z.getGuild(a.guild_id)) ? void 0 : t.name : null, z = (null == a ? void 0 : a.parent_id) != null ? O.Z.getChannel(a.parent_id) : null, W = null != (n = null == z ? void 0 : z.name) ? n : null, K = null != (l = (0, f.KS)(a)) ? l : s.VL1, Y = I.Z.can(R.Plq.MANAGE_MESSAGES, a), {
     content: X
   } = (0, b.ZP)({

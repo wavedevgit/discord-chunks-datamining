@@ -25,7 +25,7 @@ function s(e, t, n) {
         callback: () => requestAnimationFrame(() => e())
       })
     }), [t]),
-    u = i.useCallback(() => new Promise(e => {
+    d = i.useCallback(() => new Promise(e => {
       let n = t.current;
       if (null == n) return e();
       n.scrollTo({
@@ -38,7 +38,7 @@ function s(e, t, n) {
     isEnabled: s,
     setFocus: a,
     scrollToStart: c,
-    scrollToEnd: u,
+    scrollToEnd: d,
     orientation: null == n ? void 0 : n.orientation
   })
 }

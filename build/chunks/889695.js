@@ -1,4 +1,4 @@
-/** Chunk was on 51308 **/
+/** Chunk was on 22755 **/
 n.d(t, {
   Z: () => I
 }), n(388685), n(539854);
@@ -20,8 +20,8 @@ var r = n(255367),
   b = n(709054),
   E = n(962086),
   x = n(160404),
-  v = n(225675),
-  y = n(981631),
+  y = n(225675),
+  v = n(981631),
   C = n(388032),
   O = n(318135);
 
@@ -44,7 +44,7 @@ function I(e) {
   } = (0, u.cj)([x.Z], () => ({
     impersonateType: x.Z.getImpersonateType(t),
     viewingRoles: x.Z.getViewingRoles(t)
-  })), T = I === v.z.SERVER_SHOP, N = (0, u.e7)([m.ZP], () => null != n ? m.ZP.getTrueMember(t, n.id) : null), [P, A] = (0, d.A7R)(null == S ? [] : b.default.keys(S)), w = i.useRef(l);
+  })), T = I === y.z.SERVER_SHOP, N = (0, u.e7)([m.ZP], () => null != n ? m.ZP.getTrueMember(t, n.id) : null), [P, A] = (0, d.A7R)(null == S ? [] : b.default.keys(S)), w = i.useRef(l);
   i.useEffect(() => {
     let e = {},
       t = w.current;
@@ -71,7 +71,7 @@ function I(e) {
   }), c.e$(_.I0({
     forceRoles: k,
     context: l
-  }), c.$e(y.Plq.MANAGE_GUILD, y.Plq.MANAGE_ROLES)) || (0, p.eM)(l, n)) ? (0, r.jsx)("div", {
+  }), c.$e(v.Plq.MANAGE_GUILD, v.Plq.MANAGE_ROLES)) || (0, p.eM)(l, n)) ? (0, r.jsx)("div", {
     className: O.container,
     children: (0, r.jsx)(d.hQY, {
       placeholder: C.intl.string(C.t.Sojqsr),

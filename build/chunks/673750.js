@@ -15,8 +15,8 @@ var r = n(512722),
   c = n(432877),
   u = n(873741),
   d = n(931301),
-  _ = n(314897),
-  f = n(866960),
+  f = n(314897),
+  _ = n(866960),
   p = n(70956),
   h = n(403182),
   m = n(651655),
@@ -151,10 +151,10 @@ class D extends m.Z {
       analyticsLocation: i
     } = e, o = S(e, ["channelId", "analyticsLocation"]), s = null != (n = (0, d.Z)()) ? n : i, l = null != s ? {
       location: s
-    } : void 0, _ = (0, u.d)(), p = v({
-      mobile_network_type: f.Z.getType()
-    }, o, null != _ && {
-      signal_strength: _
+    } : void 0, f = (0, u.d)(), p = v({
+      mobile_network_type: _.Z.getType()
+    }, o, null != f && {
+      signal_strength: f
     });
     if (c.ZP.get("send_fail_100")) {
       this.logger.log("Skipping message send because send_fail_100 is enabled"), t(null, {
@@ -190,7 +190,7 @@ class D extends m.Z {
         data: c,
         nonce: u,
         attachments: d,
-        maxSizeCallback: f,
+        maxSizeCallback: _,
         analytics_location: p,
         sectionName: m,
         source: y
@@ -200,7 +200,7 @@ class D extends m.Z {
         application_id: r,
         guild_id: s,
         channel_id: l,
-        session_id: _.default.getSessionId(),
+        session_id: f.default.getSessionId(),
         data: c,
         nonce: u,
         analytics_location: p,
@@ -227,7 +227,7 @@ class D extends m.Z {
           let {
             total: t
           } = e, n = (0, h.dg)(s);
-          null != t && t > n && (this.cancelRequest(u), null == f || f(n))
+          null != t && t > n && (this.cancelRequest(u), null == _ || _(n))
         })
       }
     }, this.createResponseHandler(u, t))

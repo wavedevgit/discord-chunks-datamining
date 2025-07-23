@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(481060),
   u = n(26151),
   d = n(922555),
-  _ = n(287734),
-  f = n(249e3),
+  f = n(287734),
+  _ = n(249e3),
   p = n(100527),
   h = n(367907),
   m = n(906732),
@@ -140,7 +140,7 @@ function eo(e) {
   } = (0, m.ZP)(), {
     cameraUnavailable: l,
     enabled: d
-  } = (0, T.Z)(), f = (0, S.Z)(n), p = i.useRef(null), g = a > 1;
+  } = (0, T.Z)(), _ = (0, S.Z)(n), p = i.useRef(null), g = a > 1;
   return (0, r.jsxs)("div", {
     className: o()(z.wrapper, z.actions),
     children: [(0, r.jsx)(N.Z, {
@@ -184,7 +184,7 @@ function eo(e) {
           }),
           color: "green",
           centerButton: !0,
-          hasPermission: f,
+          hasPermission: _,
           cameraUnavailable: l,
           channel: n,
           onPopoutClick: g ? i : null,
@@ -195,7 +195,7 @@ function eo(e) {
             (0, V.v)(s, V.d.JOIN_VIDEO_CALL), k.default.track(H.rMx.RING_CALL_ACCEPTED, Q({
               location: s,
               guild_id: n.guild_id
-            }, (0, h.v_)(n))), _.default.selectVoiceChannel(n.id, !0), (0, y.XU)(null != (e = n.guild_id) ? e : H.ME, n.id)
+            }, (0, h.v_)(n))), f.default.selectVoiceChannel(n.id, !0), (0, y.XU)(null != (e = n.guild_id) ? e : H.ME, n.id)
           }
         })
       }
@@ -217,7 +217,7 @@ function es(e) {
   let {
     animatedStyle: n,
     y: a,
-    x: _,
+    x: f,
     channel: h
   } = e, {
     analyticsLocations: y
@@ -288,11 +288,11 @@ function es(e) {
     el = (0, l.e7)([M.Z], () => M.Z.windowSize());
   return (0, r.jsx)(m.Gt, {
     value: y,
-    children: (0, r.jsx)(f.Z, {
+    children: (0, r.jsx)(_.Z, {
       className: z.wrapper,
       selector: ".".concat(z.root),
       initialPosition: {
-        left: _,
+        left: f,
         top: a
       },
       maxX: el.width,

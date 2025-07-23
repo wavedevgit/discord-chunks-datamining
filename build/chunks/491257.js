@@ -15,9 +15,9 @@ e.exports = function(e, n, r, i) {
   var l = e.length;
   s > 0 && l > s && (l = s);
   for (var c = 0; c < l; ++c) {
-    var u, d, _, f, p = e[c].replace(o, "%20"),
+    var u, d, f, _, p = e[c].replace(o, "%20"),
       h = p.indexOf(r);
-    h >= 0 ? (u = p.substr(0, h), d = p.substr(h + 1)) : (u = p, d = ""), _ = decodeURIComponent(u), f = decodeURIComponent(d), t(a, _) ? Array.isArray(a[_]) ? a[_].push(f) : a[_] = [a[_], f] : a[_] = f
+    h >= 0 ? (u = p.substr(0, h), d = p.substr(h + 1)) : (u = p, d = ""), f = decodeURIComponent(u), _ = decodeURIComponent(d), t(a, f) ? Array.isArray(a[f]) ? a[f].push(_) : a[f] = [a[f], _] : a[f] = _
   }
   return a
 }

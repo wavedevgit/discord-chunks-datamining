@@ -12,25 +12,25 @@ var r = n(544891),
   c = n(626135),
   u = n(668781),
   d = n(194359),
-  _ = n(287734),
-  f = n(981631),
+  f = n(287734),
+  _ = n(981631),
   p = n(388032);
 let h = {
   call(e, t, n, i, a) {
     let o = n => {
-      _.default.selectVoiceChannel(e, t), n && this.ring(e), null == a || a(e)
+      f.default.selectVoiceChannel(e, t), n && this.ring(e), null == a || a(e)
     };
     if (null != i) {
       if (s.Z.isBlocked(i)) return;
       let t = l.default.getUser(i);
       r.tn.get({
-        url: f.ANM.CALL(e),
+        url: _.ANM.CALL(e),
         oldFormErrors: !0,
         rejectWithError: !0
       }).then(e => {
         o(n && e.body.ringable)
       }, () => {
-        c.default.track(f.rMx.OPEN_POPOUT, {
+        c.default.track(_.rMx.OPEN_POPOUT, {
           type: "Not Friend",
           source: "Call"
         }), u.Z.show({
@@ -56,17 +56,17 @@ let h = {
     let s = o.Z.getChannel(e);
     if (null == s) return;
     let l = (0, a.V)(s),
-      c = f.TPd.CALLABLE.has(s.type);
+      c = _.TPd.CALLABLE.has(s.type);
     if (l) {
       r.tn.post({
-        url: f.ANM.CALL_RING(e),
+        url: _.ANM.CALL_RING(e),
         body: {
           recipients: t,
           analytics_location: n
         },
         oldFormErrors: !0,
         rejectWithError: !0
-      }), s.type === f.d4z.GUILD_VOICE && null != t && i.Z.dispatch({
+      }), s.type === _.d4z.GUILD_VOICE && null != t && i.Z.dispatch({
         type: "GUILD_LOCAL_RING_START",
         ringing: t,
         guildId: s.guild_id
@@ -80,7 +80,7 @@ let h = {
     })
   },
   stopRinging: (e, t) => r.tn.post({
-    url: f.ANM.CALL_STOP_RINGING(e),
+    url: _.ANM.CALL_STOP_RINGING(e),
     body: {
       recipients: t
     },

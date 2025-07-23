@@ -31,10 +31,10 @@ function d(e) {
   }
   return e
 }
-let _ = 1e13;
+let f = 1e13;
 
-function f(e) {
-  if (null == e) return _;
+function _(e) {
+  if (null == e) return f;
   try {
     return new Date(e).getTime()
   } catch (t) {
@@ -43,7 +43,7 @@ function f(e) {
 }
 
 function p(e) {
-  return f(e.dueAt) - f(e.savedAt)
+  return _(e.dueAt) - _(e.savedAt)
 }
 let h = new a.h(e => {
     let {

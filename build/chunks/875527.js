@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Hu: () => _,
+  Hu: () => f,
   wt: () => d
 }), n(388685);
 var r = n(442837),
@@ -66,7 +66,7 @@ function d(e) {
   return r
 }
 
-function _(e) {
+function f(e) {
   let {
     location: t,
     autoTrackExposure: n
@@ -77,6 +77,6 @@ function _(e) {
     location: t
   }, {
     autoTrackExposure: n
-  }), d = (0, r.e7)([o.Z, a.Z], () => a.Z.getChannel(o.Z.getVoiceChannelId())), _ = !s || null != d && l.has(d.guild_id);
-  return !__OVERLAY__ && i && u() && _
+  }), d = (0, r.e7)([o.Z, a.Z], () => a.Z.getChannel(o.Z.getVoiceChannelId())), f = !s || null != d && l.has(d.guild_id);
+  return !__OVERLAY__ && i && u() && f
 }

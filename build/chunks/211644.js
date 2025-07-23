@@ -57,8 +57,8 @@ function c(e, t) {
 }
 let u = new(n(499303)).I,
   d = 3e5,
-  _ = 36e5,
-  f = () => ({
+  f = 36e5,
+  _ = () => ({
     candidates: new Map,
     shownFatigableCandidate: null,
     prevFatigableCandidate: null,
@@ -68,7 +68,7 @@ let u = new(n(499303)).I,
     lastWinnerTime: 0,
     postConnectionOpen: !1
   }),
-  p = (0, r.F)(f),
+  p = (0, r.F)(_),
   h = e => c(s({}, e), {
     candidates: new Map(e.candidates),
     currentlyShown: new Set(e.currentlyShown),
@@ -112,7 +112,7 @@ let u = new(n(499303)).I,
   S = () => A(p.getState()),
   A = e => {
     let t = new Date().getTime();
-    return null == e.shownFatigableCandidate && t - e.lastWinnerTime < _
+    return null == e.shownFatigableCandidate && t - e.lastWinnerTime < f
   },
   N = e => {
     let t = a.O.has(e.content);
@@ -148,7 +148,7 @@ let u = new(n(499303)).I,
   x = () => {
     (0, i.j)(() => {
       p.setState(() => {
-        let e = f();
+        let e = _();
         return e.postConnectionOpen = !0, e
       })
     }), u.unschedule()

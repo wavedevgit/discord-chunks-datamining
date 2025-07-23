@@ -19,7 +19,7 @@ let d = e => {
     stripePaymentMethod: i
   } = e, {
     card: d
-  } = null != i ? i : {}, _ = null != d ? l.ZP.getType(d.brand) : l.ZP.Types.UNKNOWN;
+  } = null != i ? i : {}, f = null != d ? l.ZP.getType(d.brand) : l.ZP.Types.UNKNOWN;
   return (0, r.jsx)(s.hjN, {
     className: t,
     title: c.intl.string(c.t.mmDvV1),
@@ -29,7 +29,7 @@ let d = e => {
         className: a()(u.cardIcon, {
           [u.submitting]: n
         }),
-        type: _
+        type: f
       }), (0, r.jsx)(o.Is, {
         value: n && null != d ? c.intl.formatToPlainString(c.t.bCynoK, d) : void 0,
         editable: !1,

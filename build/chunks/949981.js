@@ -1,4 +1,4 @@
-/** Chunk was on 51308 **/
+/** Chunk was on 22755 **/
 n.d(t, {
   Z: () => x
 }), n(539854);
@@ -25,8 +25,8 @@ function x(e) {
       invite: n,
       message: l,
       currentUserId: x,
-      onTransitionToInviteChannel: v,
-      onAcceptInstantInvite: y
+      onTransitionToInviteChannel: y,
+      onAcceptInstantInvite: v
     } = e,
     C = x === l.author.id,
     O = n.state === _.r2o.ACCEPTING,
@@ -36,13 +36,13 @@ function x(e) {
     analyticsLocations: I
   } = (0, u.ZP)(c.Z.INVITE_EMBED), S = null != j, T = i.useCallback(() => {
     let e = "noop";
-    S ? (v(), e = "transition") : (y(), e = "accept"), (0, s.r$)({
+    S ? (y(), e = "transition") : (v(), e = "accept"), (0, s.r$)({
       invite: n,
       action: e,
       inviter_id: l.author.id,
       invite_message_id: l.id
     }, I)
-  }, [n, l, I, S, v, y]);
+  }, [n, l, I, S, y, v]);
   if (null == j) {
     if (null == n.channel) return (0, r.jsx)(h.Z, {});
     j = (0, p.jD)(n.channel), t = null != n.channel && null != n.channel.recipients ? n.channel.recipients : []

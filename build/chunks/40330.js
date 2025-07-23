@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => p,
-  p: () => f
+  p: () => _
 });
 var r = n(255367);
 n(73800);
@@ -14,7 +14,7 @@ var i = n(120356),
   c = n(403182),
   u = n(388032),
   d = n(634690);
-let _ = e => {
+let f = e => {
     let {
       filename: t
     } = e, i = (0, c.uV)(t), a = n(148660)("./icon-file-".concat(i, ".svg"));
@@ -27,7 +27,7 @@ let _ = e => {
       title: i
     })
   },
-  f = e => {
+  _ = e => {
     let {
       filename: t,
       size: n,
@@ -35,12 +35,12 @@ let _ = e => {
       onCancelUpload: a,
       onClick: o,
       onContextMenu: c
-    } = e, f = 100 === i, p = !f && n > 0;
+    } = e, _ = 100 === i, p = !_ && n > 0;
     return (0, r.jsx)("div", {
       className: d.fileWrapper,
       children: (0, r.jsxs)("div", {
         className: d.file,
-        children: [(0, r.jsx)(_, {
+        children: [(0, r.jsx)(f, {
           filename: t
         }), (0, r.jsxs)("div", {
           className: d.fileInner,
@@ -57,12 +57,12 @@ let _ = e => {
             }) : null]
           }), (0, r.jsx)("div", {
             className: d.progressContainer,
-            children: f ? u.intl.string(u.t.jfKTen) : (0, r.jsx)(l.Exd, {
+            children: _ ? u.intl.string(u.t.jfKTen) : (0, r.jsx)(l.Exd, {
               className: d.progress,
               percent: i
             })
           })]
-        }), f ? null : (0, r.jsx)(l.P3F, {
+        }), _ ? null : (0, r.jsx)(l.P3F, {
           onClick: a,
           children: (0, r.jsx)(l.Dio, {
             size: "md",
@@ -81,13 +81,13 @@ let _ = e => {
       fileSize: o,
       onClick: c,
       onContextMenu: u,
-      renderAdjacentContent: f
+      renderAdjacentContent: _
     } = e;
     return (0, r.jsxs)("div", {
       className: a()(d.fileWrapper, t),
       children: [(0, r.jsxs)("div", {
         className: d.file,
-        children: [(0, r.jsx)(_, {
+        children: [(0, r.jsx)(f, {
           filename: i
         }), (0, r.jsxs)("div", {
           className: d.fileInner,
@@ -106,6 +106,6 @@ let _ = e => {
             children: s().filesize(o)
           })]
         })]
-      }), null != f && f()]
+      }), null != _ && _()]
     })
   }

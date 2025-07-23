@@ -12,8 +12,8 @@ n(541049);
 var c = n(36645),
   u = n(874893),
   d = n(981631),
-  _ = n(957825),
-  f = n(969943);
+  f = n(957825),
+  _ = n(969943);
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -97,7 +97,7 @@ class N extends(r = o.ZP.DeviceSettingsStore) {
   }
   get expressionPickerWidth() {
     var e;
-    return null != (e = y.expressionPickerWidth) ? e : _._j.MIN
+    return null != (e = y.expressionPickerWidth) ? e : f._j.MIN
   }
   get messageRequestSidebarWidth() {
     var e;
@@ -191,7 +191,7 @@ class N extends(r = o.ZP.DeviceSettingsStore) {
   }
   get listDensity() {
     var e;
-    return null != (e = y.listDensity) ? e : f.fx.COZY
+    return null != (e = y.listDensity) ? e : _.fx.COZY
   }
 }
 p(N, "displayName", "UnsyncedUserSettingsStore"), p(N, "persistKey", "UnsyncedUserSettingsStore"), p(N, "migrations", [() => {

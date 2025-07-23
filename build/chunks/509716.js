@@ -17,10 +17,10 @@ function l(e) {
     channelId: c,
     allowEmptyValues: u,
     commandOrigin: d = i.bB.CHAT
-  } = e, _ = null != n ? (0, r.KF)({
+  } = e, f = null != n ? (0, r.KF)({
     content: n
-  }, "content").trim() : "", f = t.required, p = "" === _;
-  if (null == n) return f ? {
+  }, "content").trim() : "", _ = t.required, p = "" === f;
+  if (null == n) return _ ? {
     success: !1,
     error: s.intl.string(s.t.JZJQLy)
   } : {
@@ -28,7 +28,7 @@ function l(e) {
   };
   if (p) return u ? {
     success: !0
-  } : f ? {
+  } : _ ? {
     success: !1,
     error: s.intl.string(s.t.JZJQLy)
   } : {
@@ -37,7 +37,7 @@ function l(e) {
   };
   let h = n.length > 1 ? {
       type: "text",
-      text: _
+      text: f
     } : n[0],
     m = a.Z[t.type](h, t, c, l, d);
   return m.success || null != m.error || (m.error = (0, o.al)(t)), m

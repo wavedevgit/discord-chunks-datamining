@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(466377),
   u = n(993365),
   d = n(481060),
-  _ = n(600164),
-  f = n(388032),
+  f = n(600164),
+  _ = n(388032),
   p = n(551988);
 let h = e => {
   let t, n, a, {
@@ -21,7 +21,7 @@ let h = e => {
       cancelText: m,
       className: g,
       confirmColor: E,
-      confirmText: b = f.intl.string(f.t.BddRzc),
+      confirmText: b = _.intl.string(_.t.BddRzc),
       secondaryConfirmText: y,
       onCancel: O,
       onClose: v,
@@ -86,9 +86,9 @@ let h = e => {
         })
       }), (0, r.jsx)(c.hz, {
         className: p.modalContent,
-        children: (0, r.jsx)(_.Z, {
-          direction: _.Z.Direction.VERTICAL,
-          justify: _.Z.Justify.START,
+        children: (0, r.jsx)(f.Z, {
+          direction: f.Z.Direction.VERTICAL,
+          justify: f.Z.Justify.START,
           className: p.content,
           children: null != h && (0, r.jsx)(u.x, {
             variant: "text-md/normal",
@@ -99,7 +99,7 @@ let h = e => {
         })
       }), (0, r.jsxs)(c.mz, {
         justify: void 0,
-        wrap: _.Z.Wrap.WRAP,
+        wrap: f.Z.Wrap.WRAP,
         className: p.modalFooter,
         children: [n, t, a]
       })]

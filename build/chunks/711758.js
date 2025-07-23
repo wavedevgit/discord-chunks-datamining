@@ -1,9 +1,9 @@
-/** Chunk was on 51308 **/
+/** Chunk was on 46355 **/
 n.d(t, {
   Z: () => u
 });
-var r, i = n(442837),
-  l = n(570140);
+var r, o = n(442837),
+  i = n(570140);
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -13,17 +13,17 @@ function a(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let o = s();
+let l = c();
 
-function s() {
+function c() {
   return {
     ignoreTimestamps: {}
   }
 }
-class c extends(r = i.ZP.PersistedStore) {
+class s extends(r = o.ZP.PersistedStore) {
   initialize(e) {
     var t, n, r;
-    let i = null != (t = null == e ? void 0 : e.ignoreTimestamps) ? t : {};
+    let o = null != (t = null == e ? void 0 : e.ignoreTimestamps) ? t : {};
     n = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -35,8 +35,8 @@ class c extends(r = i.ZP.PersistedStore) {
         })
       }
       return e
-    }({}, s()), r = r = {
-      ignoreTimestamps: i
+    }({}, c()), r = r = {
+      ignoreTimestamps: o
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -46,22 +46,22 @@ class c extends(r = i.ZP.PersistedStore) {
       return n
     })(Object(r)).forEach(function(e) {
       Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
-    }), o = n
+    }), l = n
   }
   getState() {
-    return o
+    return l
   }
   getIgnoreTimestamps() {
-    return o.ignoreTimestamps
+    return l.ignoreTimestamps
   }
 }
-a(c, "displayName", "IgnoreNoticeStore"), a(c, "persistKey", "IgnoreNoticeStore");
-let u = new c(l.Z, {
+a(s, "displayName", "IgnoreNoticeStore"), a(s, "persistKey", "IgnoreNoticeStore");
+let u = new s(i.Z, {
   RELATIONSHIP_IGNORE_USER_SUCCESS: function(e) {
     let {
       userId: t,
       timestamp: n
     } = e;
-    o.ignoreTimestamps[t] = n
+    l.ignoreTimestamps[t] = n
   }
 })

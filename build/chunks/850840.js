@@ -50,11 +50,11 @@ let d = {
   hasAcceptedEulaIds: []
 };
 
-function _() {
+function f() {
   r.hasAcceptedStoreTerms = !0
 }
 
-function f(e) {
+function _(e) {
   let {
     eulaId: t
   } = e;
@@ -79,6 +79,6 @@ s(p, "displayName", "ApplicationStoreUserSettingsStore"), s(p, "persistKey", "Ap
   hasAcceptedEulaIds: []
 }) : e]);
 let h = new p(o.Z, {
-  APPLICATION_STORE_ACCEPT_STORE_TERMS: _,
-  APPLICATION_STORE_ACCEPT_EULA: f
+  APPLICATION_STORE_ACCEPT_STORE_TERMS: f,
+  APPLICATION_STORE_ACCEPT_EULA: _
 })
