@@ -6,8 +6,8 @@ var n = r(255367),
   l = r(73800),
   i = r(442837),
   u = r(82659),
-  s = r(481060),
-  a = r(377171),
+  a = r(481060),
+  s = r(377171),
   o = r(724723),
   c = r(592125),
   d = r(594174),
@@ -16,8 +16,8 @@ var n = r(255367),
   y = r(630759),
   g = r(539067),
   p = r(802063),
-  b = r(210975),
-  m = r(301107),
+  m = r(210975),
+  b = r(301107),
   _ = r(65692),
   S = r(540247),
   h = r(785792),
@@ -65,7 +65,7 @@ function x(e) {
     badgeText: t,
     badgeColor: r
   } = e, i = l.useRef(t), u = l.useRef(r);
-  return (0, n.jsx)(s.IGR, {
+  return (0, n.jsx)(a.IGR, {
     text: i.current,
     color: u.current
   })
@@ -89,7 +89,7 @@ function Z(e) {
     userKey: F
   } = (0, _.q)({
     userId: r
-  }), V = (0, m.W)({
+  }), V = (0, b.W)({
     fingerprintBase64: M,
     chunkSize: j.iQ,
     desiredLength: j.KN
@@ -98,7 +98,7 @@ function Z(e) {
       userId: r,
       channelId: Z
     })
-  }, [Z, r]), K = (0, b.wV)({
+  }, [Z, r]), K = (0, m.wV)({
     userId: r,
     channelId: Z
   });
@@ -118,7 +118,7 @@ function Z(e) {
     null != F && ((0, y.TQ)(r, F, Y, Z, N.Sbl.E2EE_USER_VERIFY_MODAL), A())
   }, [F, r, Y, Z, A]), G = l.useCallback(() => {
     null != F && ((0, y.LO)(r, F, Y), A())
-  }, [F, r, Y, A]), [J, W] = l.useMemo(() => K ? [R.intl.string(R.t.UNUuen), a.Z.BG_BRAND] : [R.intl.string(R.t.y2b7CA), a.Z.STATUS_DANGER], [K]), X = l.useMemo(() => (0, y.kK)({
+  }, [F, r, Y, A]), [J, W] = l.useMemo(() => K ? [R.intl.string(R.t.UNUuen), s.Z.BG_BRAND] : [R.intl.string(R.t.y2b7CA), s.Z.STATUS_DANGER], [K]), X = l.useMemo(() => (0, y.kK)({
     isCurrentUserKeyPersistent: L,
     isOtherUserKeyPersistent: Y,
     otherUserNickname: U
@@ -142,28 +142,28 @@ function Z(e) {
     Q = (0, n.jsxs)(n.Fragment, {
       children: [(0, n.jsxs)("div", {
         className: T.verification,
-        children: [q > 0 && (0, n.jsx)(s.Wn, {
-          messageType: s.QYI.INFO,
+        children: [q > 0 && (0, n.jsx)(a.Wn, {
+          messageType: a.QYI.INFO,
           className: T.helpMessage,
           children: R.intl.format(R.t.uZDkz8, {
             count: q
           })
         }), (0, n.jsxs)("div", {
           className: T.header,
-          children: [(0, n.jsx)(s.X6q, {
+          children: [(0, n.jsx)(a.X6q, {
             variant: "text-sm/bold",
             color: "header-primary",
             children: R.intl.string(R.t["/WPGnJ"])
           }), null != V && (0, n.jsx)(O.H, {
             className: T.copyIcon,
             chunks: V,
-            color: s.TVs.colors.INTERACTIVE_NORMAL,
+            color: a.TVs.colors.INTERACTIVE_NORMAL,
             onCopy: D
           }), (0, n.jsx)("div", {
             className: T.codeStatus,
-            children: null == V ? (0, n.jsx)(s.$jN, {
+            children: null == V ? (0, n.jsx)(a.$jN, {
               className: T.spinner,
-              type: s.RAz.SPINNING_CIRCLE
+              type: a.RAz.SPINNING_CIRCLE
             }) : (0, n.jsx)(x, {
               badgeText: J,
               badgeColor: W
@@ -174,7 +174,7 @@ function Z(e) {
           chunks: V,
           columns: j.ak
         })]
-      }), (0, n.jsx)(s.Text, {
+      }), (0, n.jsx)(a.Text, {
         className: T.footer,
         variant: "text-sm/normal",
         color: "text-muted",
@@ -200,10 +200,10 @@ function Z(e) {
     children: [Q, (0, n.jsx)("div", {
       "data-button-hoisted-classname-wrapper": !0,
       className: T.verifiedButton,
-      children: (0, n.jsx)(s.zxk, I(C({}, $), {
+      children: (0, n.jsx)(a.zxk, I(C({}, $), {
         fullWidth: !0
       }))
-    }), (0, n.jsx)(s.zxk, I(C({}, ee), {
+    }), (0, n.jsx)(a.zxk, I(C({}, ee), {
       fullWidth: !0
     }))]
   }))

@@ -22,7 +22,7 @@ function o(e) {
     light2: r,
     dark1: o,
     dark2: s
-  } = (0, i.h)(e);
+  } = (0, i.hX)(e);
   return {
     [a.MAIN]: t,
     [a.LIGHT_1]: n,

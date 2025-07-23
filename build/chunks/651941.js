@@ -5,9 +5,9 @@ r.d(t, {
 var n, l = r(442837),
   i = r(974167),
   u = r(570140),
-  s = r(709054);
+  a = r(709054);
 
-function a(e, t, r) {
+function s(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
     value: r,
     enumerable: !0,
@@ -35,13 +35,13 @@ class c extends(n = l.ZP.PersistedStore) {
     return null != this.getKeyTrustedAt(e, t)
   }
   getUserIds() {
-    return s.default.keys(o)
+    return a.default.keys(o)
   }
   getUserVerifiedKeys(e) {
     return o[e]
   }
 }
-a(c, "displayName", "VerifiedKeyStore"), a(c, "persistKey", "VerifiedKeyStore");
+s(c, "displayName", "VerifiedKeyStore"), s(c, "persistKey", "VerifiedKeyStore");
 let d = new c(u.Z, {
   SECURE_FRAMES_VERIFIED_KEY_CREATE: function(e) {
     let {

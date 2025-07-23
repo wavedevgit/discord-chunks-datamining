@@ -13,11 +13,12 @@ function l(e) {
     transitionState: t,
     title: r,
     subtitle: l,
-    children: s
-  } = e, a = (0, c.Dt)();
+    children: a
+  } = e, s = (0, c.Dt)();
   return (0, n.jsxs)(o.Y0X, {
+    "data-migration-pending": !0,
     transitionState: t,
-    "aria-labelledby": a,
+    "aria-labelledby": s,
     parentComponent: "SecureFramesVerificationModal",
     children: [(0, n.jsx)("div", {
       className: i.shieldIconContainer,
@@ -42,7 +43,7 @@ function l(e) {
         variant: "text-md/normal",
         color: "header-secondary",
         children: l
-      }), s]
+      }), a]
     })]
   })
 }

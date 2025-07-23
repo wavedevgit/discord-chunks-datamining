@@ -17,8 +17,8 @@ function i(e) {
       n = (0, c.Dq)(e, i, r);
     if (null == n) return null;
     let l = RegExp(".{1,".concat(r, "}"), "g"),
-      s = n.match(l);
-    return null == s ? null : Array.from(s)
+      a = n.match(l);
+    return null == a ? null : Array.from(a)
   }, [r, t, i]);
   if (null != t && "" !== t && null == l) throw Error("[useReadableSecureFramesCode] Failed to parse base 64 code.");
   return l

@@ -1,33 +1,33 @@
 /** Chunk was on 96812 **/
-r.d(t, {
-  F: () => S,
+l.d(t, {
+  F: () => p,
   Z: () => h
-}), r(539854), r(388685);
-var l, n, o = r(255367),
-  i = r(73800),
-  a = r(120356),
-  s = r.n(a),
-  u = r(481060),
-  c = r(565138),
-  d = r(981631),
-  E = r(388032),
-  f = r(910788);
+}), l(539854), l(388685);
+var r, n, o = l(255367),
+  i = l(73800),
+  a = l(120356),
+  s = l.n(a),
+  u = l(481060),
+  c = l(565138),
+  E = l(981631),
+  d = l(388032),
+  S = l(910788);
 
-function _(e, t, r) {
+function g(e, t, l) {
   return t in e ? Object.defineProperty(e, t, {
-    value: r,
+    value: l,
     enumerable: !0,
     configurable: !0,
     writable: !0
-  }) : e[t] = r, e
+  }) : e[t] = l, e
 }
-let g = Object.freeze({
-  SMALL: f.small,
-  MEDIUM: f.medium,
-  LARGE: f.large
+let _ = Object.freeze({
+  SMALL: S.small,
+  MEDIUM: S.medium,
+  LARGE: S.large
 });
-var S = ((n = {}).MEMBER = "MEMBER", n.ROLE = "ROLE", n.CHANNEL = "CHANNEL", n.GUILD = "GUILD", n.USER = "USER", n);
-class p extends(l = i.Component) {
+var p = ((n = {}).MEMBER = "MEMBER", n.ROLE = "ROLE", n.CHANNEL = "CHANNEL", n.GUILD = "GUILD", n.USER = "USER", n);
+class f extends(r = i.Component) {
   componentDidMount() {
     let e = this.containerRef.current;
     null != e && (this.previousHeight = e.offsetHeight)
@@ -35,25 +35,25 @@ class p extends(l = i.Component) {
   componentDidUpdate(e) {
     let {
       focusAfterReady: t,
-      isReady: r
+      isReady: l
     } = this.props;
-    t && !e.isReady && r && this.focus(), (e.tags !== this.props.tags || e.query !== this.props.query) && this.handleHeightChange()
+    t && !e.isReady && l && this.focus(), (e.tags !== this.props.tags || e.query !== this.props.query) && this.handleHeightChange()
   }
   handleHeightChange() {
     let e = this.containerRef.current;
     if (null == e) return;
     let t = e.offsetHeight,
-      r = t - this.previousHeight;
-    if (0 !== r) {
-      var l, n;
-      this.previousHeight = t, null == (l = (n = this.props).onHeightChange) || l.call(n, r)
+      l = t - this.previousHeight;
+    if (0 !== l) {
+      var r, n;
+      this.previousHeight = t, null == (r = (n = this.props).onHeightChange) || r.call(n, l)
     }
   }
   handleKeyDownGrid(e) {
     let {
       selectedRow: t,
-      selectedColumn: r,
-      sections: l,
+      selectedColumn: l,
+      sections: r,
       query: n,
       tags: o,
       onSelectionChange: i,
@@ -61,41 +61,41 @@ class p extends(l = i.Component) {
       onRemoveTag: s,
       preventEscapePropagation: u
     } = this.props;
-    if (0 !== l.length) {
+    if (0 !== r.length) {
       switch (e.keyCode) {
-        case d.yXg.BACKSPACE:
+        case E.yXg.BACKSPACE:
           (null == n || 0 === n.length) && null != o && o.length > 0 && (e.preventDefault(), e.stopPropagation(), null == s || s(o.length - 1));
           break;
-        case d.yXg.ARROW_DOWN:
-          e.preventDefault(), e.stopPropagation(), -1 === t ? (t = 0, r = 0) : ((t += 1) >= l.length && (t = l.length - 1), r >= l[t] && (r = l[t] - 1));
+        case E.yXg.ARROW_DOWN:
+          e.preventDefault(), e.stopPropagation(), -1 === t ? (t = 0, l = 0) : ((t += 1) >= r.length && (t = r.length - 1), l >= r[t] && (l = r[t] - 1));
           break;
-        case d.yXg.ARROW_UP:
-          e.preventDefault(), e.stopPropagation(), (t -= 1) < 0 ? (t = 0, r = 0) : r >= l[t] && (r = l[t] - 1);
+        case E.yXg.ARROW_UP:
+          e.preventDefault(), e.stopPropagation(), (t -= 1) < 0 ? (t = 0, l = 0) : l >= r[t] && (l = r[t] - 1);
           break;
-        case d.yXg.ARROW_LEFT:
-          e.preventDefault(), e.stopPropagation(), -1 === t && (t = 0), (r -= 1) < 0 && ((t -= 1) >= 0 ? r = l[t] - 1 : t < 0 && (t = 0, r = 0));
+        case E.yXg.ARROW_LEFT:
+          e.preventDefault(), e.stopPropagation(), -1 === t && (t = 0), (l -= 1) < 0 && ((t -= 1) >= 0 ? l = r[t] - 1 : t < 0 && (t = 0, l = 0));
           break;
-        case d.yXg.ARROW_RIGHT:
-          e.preventDefault(), e.stopPropagation(), -1 === t && (t = 0), (r += 1) >= l[t] && (r = 0, (t += 1) >= l.length && (t = l.length - 1, r = l[t] - 1));
+        case E.yXg.ARROW_RIGHT:
+          e.preventDefault(), e.stopPropagation(), -1 === t && (t = 0), (l += 1) >= r[t] && (l = 0, (t += 1) >= r.length && (t = r.length - 1, l = r[t] - 1));
           break;
-        case d.yXg.ENTER:
-          if (e.preventDefault(), e.stopPropagation(), -1 === t && (t = 0), -1 === r && (r = 0), t >= l.length || r >= l[t]) return;
-          null != a && a(t, r, e);
+        case E.yXg.ENTER:
+          if (e.preventDefault(), e.stopPropagation(), -1 === t && (t = 0), -1 === l && (l = 0), t >= r.length || l >= r[t]) return;
+          null != a && a(t, l, e);
           return;
-        case d.yXg.ESCAPE:
+        case E.yXg.ESCAPE:
           e.preventDefault(), u && e.stopPropagation(), null != a && a(null, null, e);
           return;
         default:
           return
       }
-      null != i && i(t, r)
+      null != i && i(t, l)
     }
   }
   handleKeyDownList(e) {
     let {
       sections: t,
-      selectedSection: r,
-      selectedRow: l,
+      selectedSection: l,
+      selectedRow: r,
       onSelect: n,
       onSelectionChange: o,
       query: i,
@@ -105,22 +105,22 @@ class p extends(l = i.Component) {
       current: u
     } = this.ref;
     if (null != u) switch (e.keyCode) {
-      case d.yXg.BACKSPACE:
+      case E.yXg.BACKSPACE:
         if ((null == i || 0 === i.length) && null != a && a.length > 0) {
-          var c, E;
-          e.preventDefault(), e.stopPropagation(), null == (c = (E = this.props).onRemoveTag) || c.call(E, a.length - 1)
+          var c, d;
+          e.preventDefault(), e.stopPropagation(), null == (c = (d = this.props).onRemoveTag) || c.call(d, a.length - 1)
         }
         break;
-      case d.yXg.ARROW_DOWN:
-        e.preventDefault(), e.stopPropagation(), t.length > r && ++l >= t[r] && (++r >= t.length && (r = 0), l = 0), null == o || o(r, l);
+      case E.yXg.ARROW_DOWN:
+        e.preventDefault(), e.stopPropagation(), t.length > l && ++r >= t[l] && (++l >= t.length && (l = 0), r = 0), null == o || o(l, r);
         break;
-      case d.yXg.ARROW_UP:
-        e.preventDefault(), e.stopPropagation(), --l < 0 && (--r < 0 && (r = t.length - 1), l = t[r] - 1), null == o || o(r, l);
+      case E.yXg.ARROW_UP:
+        e.preventDefault(), e.stopPropagation(), --r < 0 && (--l < 0 && (l = t.length - 1), r = t[l] - 1), null == o || o(l, r);
         break;
-      case d.yXg.ENTER:
-        e.preventDefault(), e.stopPropagation(), t.length > r && t[r] > l && (null == n || n(r, l, e));
+      case E.yXg.ENTER:
+        e.preventDefault(), e.stopPropagation(), t.length > l && t[l] > r && (null == n || n(l, r, e));
         break;
-      case d.yXg.ESCAPE:
+      case E.yXg.ESCAPE:
         e.preventDefault(), s && e.stopPropagation(), null == n || n(null, null, e), u.blur()
     }
   }
@@ -128,38 +128,38 @@ class p extends(l = i.Component) {
     let {
       autoFocus: e,
       query: t,
-      placeholder: r = E.intl.string(E.t.LzcpeX),
-      themeOverride: l,
+      placeholder: l = d.intl.string(d.t.LzcpeX),
+      themeOverride: r,
       disabled: n,
       size: i,
       maxHeight: a,
-      tags: d,
-      onActivate: g,
-      className: S,
-      inputProps: p,
+      tags: E,
+      onActivate: _,
+      className: p,
+      inputProps: f,
       focusAfterReady: h
     } = this.props, I = !1, R = [];
-    return null != d && d.length > 0 && ("string" == typeof d[0] ? d.forEach((e, t) => R.push((0, o.jsxs)(u.eee, {
+    return null != E && E.length > 0 && ("string" == typeof E[0] ? E.forEach((e, t) => R.push((0, o.jsxs)(u.eee, {
       focusProps: {
         offset: 4
       },
-      className: f.tag,
+      className: S.tag,
       onClick: this.handleRemoveTag.bind(this, t),
       children: [e, (0, o.jsx)(u.Dio, {
         size: "md",
         color: "currentColor",
-        className: f.close,
-        "aria-label": E.intl.string(E.t.N86XcH)
+        className: S.close,
+        "aria-label": d.intl.string(d.t.N86XcH)
       })]
-    }, t))) : (I = !0, d.forEach((e, t) => R.push((0, o.jsxs)(u.eee, {
-      className: s()(f.tag, f.richTag),
+    }, t))) : (I = !0, E.forEach((e, t) => R.push((0, o.jsxs)(u.eee, {
+      className: s()(S.tag, S.richTag),
       onClick: this.handleRemoveTag.bind(this, t),
       children: [("MEMBER" === e.type || "USER" === e.type) && null != e.avatar && (0, o.jsx)(u.qEK, {
         src: e.avatar,
         "aria-hidden": !0,
         size: u.EFr.SIZE_16
       }), "ROLE" === e.type && null != e.color && (0, o.jsx)("span", {
-        className: f.tagRoleColor,
+        className: S.tagRoleColor,
         style: {
           backgroundColor: e.color
         }
@@ -168,48 +168,48 @@ class p extends(l = i.Component) {
         active: !0,
         size: c.Z.Sizes.SMOL
       }), (0, o.jsx)("span", {
-        className: f.tagLabel,
+        className: S.tagLabel,
         children: e.label
       }), (0, o.jsx)(u.Dio, {
         size: "md",
         color: "currentColor",
-        className: f.close,
-        "aria-label": E.intl.string(E.t.N86XcH)
+        className: S.close,
+        "aria-label": d.intl.string(d.t.N86XcH)
       })]
     }, t))))), (0, o.jsx)(u.tEY, {
       focusTarget: this.ref,
       ringTarget: this.containerRef,
       children: (0, o.jsx)(u.f6W, {
-        theme: l,
-        children: l => (0, o.jsx)("div", {
+        theme: r,
+        children: r => (0, o.jsx)("div", {
           ref: this.containerRef,
-          className: s()(S, f.container, i, l, {
-            [f.disabled]: n
+          className: s()(p, S.container, i, r, {
+            [S.disabled]: n
           }),
           children: (0, o.jsxs)(u.zJl, {
-            className: f.inner,
+            className: S.inner,
             style: {
               maxHeight: a
             },
             children: [R, (0, o.jsx)("input", function(e) {
               for (var t = 1; t < arguments.length; t++) {
-                var r = null != arguments[t] ? arguments[t] : {},
-                  l = Object.keys(r);
-                "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-                  return Object.getOwnPropertyDescriptor(r, e).enumerable
-                }))), l.forEach(function(t) {
-                  _(e, t, r[t])
+                var l = null != arguments[t] ? arguments[t] : {},
+                  r = Object.keys(l);
+                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(l).filter(function(e) {
+                  return Object.getOwnPropertyDescriptor(l, e).enumerable
+                }))), r.forEach(function(t) {
+                  g(e, t, l[t])
                 })
               }
               return e
             }({
-              className: s()(f.input, {
-                [f.richTagInput]: I
+              className: s()(S.input, {
+                [S.richTagInput]: I
               }),
               type: "text",
               ref: this.ref,
               spellCheck: "false",
-              placeholder: r,
+              placeholder: l,
               value: t,
               onChange: this.handleChange,
               onKeyDown: this.handleKeyDown,
@@ -217,54 +217,54 @@ class p extends(l = i.Component) {
               disabled: n,
               "aria-disabled": n,
               autoFocus: !h && e,
-              onMouseDown: g
-            }, this.defaultInputProps, p))]
+              onMouseDown: _
+            }, this.defaultInputProps, f))]
           })
         })
       })
     })
   }
   constructor(...e) {
-    super(...e), _(this, "defaultInputProps", {
+    super(...e), g(this, "defaultInputProps", {
       role: "combobox",
       "aria-haspopup": "listbox",
       "aria-autocomplete": "list"
-    }), _(this, "ref", i.createRef()), _(this, "containerRef", i.createRef()), _(this, "previousHeight", 0), _(this, "handleKeyDown", e => {
+    }), g(this, "ref", i.createRef()), g(this, "containerRef", i.createRef()), g(this, "previousHeight", 0), g(this, "handleKeyDown", e => {
       let {
         onActivate: t,
-        onKeyDown: r,
-        onQueryChange: l,
+        onKeyDown: l,
+        onQueryChange: r,
         useKeyboardNavigation: n
       } = this.props;
-      null != r && r(e);
+      null != l && l(e);
       let {
         current: o
       } = this.ref;
       if (null == o || null != t) {
-        e.keyCode !== d.yXg.TAB && null != t && t(e);
+        e.keyCode !== E.yXg.TAB && null != t && t(e);
         return
       }
-      if (e.keyCode === d.yXg.ESCAPE && null != o.value && "" !== o.value && o.value.length > 0) {
-        o.value = "", null != l && l("");
+      if (e.keyCode === E.yXg.ESCAPE && null != o.value && "" !== o.value && o.value.length > 0) {
+        o.value = "", null != r && r("");
         return
       }
       n && (this.props.gridResults ? this.handleKeyDownGrid(e) : this.handleKeyDownList(e))
-    }), _(this, "handleChange", e => {
+    }), g(this, "handleChange", e => {
       let {
         onQueryChange: t
       } = this.props;
       null != t && t(e.currentTarget.value)
-    }), _(this, "handleFocus", e => {
+    }), g(this, "handleFocus", e => {
       let {
         onFocus: t
       } = this.props;
       null != t && t(e)
-    }), _(this, "handleRemoveTag", e => {
+    }), g(this, "handleRemoveTag", e => {
       let {
         onRemoveTag: t
       } = this.props;
       null == t || t(e)
-    }), _(this, "focus", () => {
+    }), g(this, "focus", () => {
       let {
         current: e
       } = this.ref;
@@ -272,8 +272,8 @@ class p extends(l = i.Component) {
     })
   }
 }
-_(p, "Sizes", g), _(p, "defaultProps", {
-  size: g.SMALL,
+g(f, "Sizes", _), g(f, "defaultProps", {
+  size: _.SMALL,
   query: "",
   sections: [],
   selectedSection: 0,
@@ -285,4 +285,4 @@ _(p, "Sizes", g), _(p, "defaultProps", {
   preventEscapePropagation: !0,
   useKeyboardNavigation: !0
 });
-let h = p
+let h = f

@@ -18,24 +18,25 @@ function l(e) {
     confirmText: x,
     onClose: h,
     onConfirm: p
-  } = e, u = r.Z.useExperiment({
+  } = e, m = r.Z.useExperiment({
     location: "VideoDevicesWarningModal"
   }, {
     autoTrackExposure: !0
-  }).enabled, m = () => {
+  }).enabled, u = () => {
     h(), null == p || p()
   };
-  return u ? (0, n.jsx)(i.Modal, {
+  return m ? (0, n.jsx)(i.Modal, {
     title: l,
     subtitle: d,
     transitionState: t,
     onClose: h,
     actions: [{
       text: x,
-      onClick: m,
+      onClick: u,
       variant: "primary"
     }]
   }) : (0, n.jsxs)(s.Y0X, {
+    "data-migration-pending": !0,
     transitionState: t,
     "aria-label": l,
     parentComponent: "VideoDevicesWarningModal",
@@ -60,7 +61,7 @@ function l(e) {
           variant: "primary",
           size: "sm",
           text: x,
-          onClick: m
+          onClick: u
         }), (0, n.jsx)(s.zxk, {
           variant: "secondary",
           size: "sm",

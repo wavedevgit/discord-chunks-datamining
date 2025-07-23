@@ -3,8 +3,8 @@ r.d(t, {
   Z: () => R
 }), r(388685), r(410992), r(227481), r(730884), r(20464), r(341884), r(364341), r(629680), r(505025), r(918970), r(121784), r(644351), r(146733);
 var n, l, i, u = r(442837),
-  s = r(46973),
-  a = r(570140),
+  a = r(46973),
+  s = r(570140),
   o = r(569545),
   c = r(314897),
   d = r(19780),
@@ -13,8 +13,8 @@ var n, l, i, u = r(442837),
   y = r(729303),
   g = r(651941),
   p = r(981631);
-let b = new Map,
-  m = new Map,
+let m = new Map,
+  b = new Map,
   _ = !1,
   S = null;
 
@@ -22,8 +22,8 @@ function h() {
   return f.Z.getAllActiveStreamKeys().reduce((e, t) => {
     let {
       ownerId: r
-    } = (0, o.my)(t), n = !0 === b.get(r), l = m.get(t) !== n;
-    return m.set(t, n), !!l || e
+    } = (0, o.my)(t), n = !0 === m.get(r), l = b.get(t) !== n;
+    return b.set(t, n), !!l || e
   }, !1)
 }
 
@@ -33,7 +33,7 @@ function O() {
     r = c.default.getId(),
     n = !0;
   for (let e of t)
-    if (r !== e && !0 !== b.get(e)) {
+    if (r !== e && !0 !== m.get(e)) {
       n = !1;
       break
     } let l = n !== _;
@@ -52,8 +52,8 @@ function v(e) {
         n = g.Z.isKeyVerified(e, r) || y.Z.isKeyVerified(e, r),
         l = (0, E.UB)(e, [d.Z, f.Z]),
         i = n && !l,
-        u = i !== b.get(e);
-      return b.set(e, i), u
+        u = i !== m.get(e);
+      return m.set(e, i), u
     }(t),
     n = h(),
     l = O();
@@ -61,7 +61,7 @@ function v(e) {
 }
 
 function j() {
-  b.clear(), m.clear(), _ = !1
+  m.clear(), b.clear(), _ = !1
 }
 class N extends(n = u.ZP.Store) {
   initialize() {
@@ -71,10 +71,10 @@ class N extends(n = u.ZP.Store) {
     return _
   }
   isStreamVerified(e) {
-    return m.get(e)
+    return b.get(e)
   }
   isUserVerified(e) {
-    return b.get(e)
+    return m.get(e)
   }
 }
 i = "SecureFramesVerifiedStore", (l = "displayName") in N ? Object.defineProperty(N, l, {
@@ -83,7 +83,7 @@ i = "SecureFramesVerifiedStore", (l = "displayName") in N ? Object.definePropert
   configurable: !0,
   writable: !0
 }) : N[l] = i;
-let R = new N(a.Z, {
+let R = new N(s.Z, {
   CONNECTION_OPEN: j,
   VOICE_CHANNEL_SELECT: function(e) {
     let {
@@ -100,10 +100,10 @@ let R = new N(a.Z, {
     } = e;
     if (r !== p.hes.DISCONNECTED) return !1;
     switch (n) {
-      case s.Yn.STREAM:
+      case a.Yn.STREAM:
         if (null == t) return !1;
-        return m.delete(t), O();
-      case s.Yn.DEFAULT:
+        return b.delete(t), O();
+      case a.Yn.DEFAULT:
         j()
     }
   },

@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  b: () => o,
-  h: () => a
+  bN: () => o,
+  hX: () => a
 });
 var r = n(688619),
   i = n.n(r);
@@ -26,3 +26,4 @@ function o(e) {
     colors: e.colors
   }
 }
+n(522942), n(660662)

@@ -1,19 +1,20 @@
-/** Chunk was on 96812 **/
-r.d(t, {
-  Eg: () => n,
-  SK: () => l,
-  tl: () => o
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
+  Eg: () => i,
+  SK: () => r,
+  tl: () => a
 });
-let l = {
+let r = {
     primary_color: 0xa9c9ff,
     secondary_color: 0xffbbec,
     tertiary_color: 0xffc3a0
   },
-  n = {
+  i = {
     primary_color: 0x9e6bff,
     secondary_color: 0x9fc1ff
   },
-  o = [{
+  a = [{
     start: 0xaa3b3b,
     end: 0xff4848,
     name: "fire"

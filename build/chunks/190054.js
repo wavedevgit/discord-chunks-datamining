@@ -7,8 +7,8 @@ var n = r(255367),
   c = r(120356),
   i = r.n(c),
   l = r(481060),
-  s = r(572004),
-  a = r(388032),
+  a = r(572004),
+  s = r(388032),
   u = r(798665);
 
 function d(e) {
@@ -34,19 +34,19 @@ function d(e) {
   let f = o.useMemo(() => null == t ? void 0 : t.join(" "), [t]),
     [p, b] = o.useState(!1),
     h = o.useCallback(() => {
-      (0, s.JG)(f, () => {
+      (0, a.JG)(f, () => {
         b(!0), null == c || c()
       })
     }, [c, f]),
-    y = p ? l.owK : l.TIy;
+    m = p ? l.owK : l.TIy;
   return (0, n.jsx)(l.P3F, {
     className: i()(u.container, r),
     onClick: h,
     children: (0, n.jsx)(l.ua7, {
-      text: p ? a.intl.string(a.t["t5VZ8/"]) : a.intl.string(a.t.OpuAlJ),
+      text: p ? s.intl.string(s.t["t5VZ8/"]) : s.intl.string(s.t.OpuAlJ),
       children: e => {
         var t, r;
-        return (0, n.jsx)(y, (t = function(e) {
+        return (0, n.jsx)(m, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var r = null != arguments[t] ? arguments[t] : {},
               n = Object.keys(r);
