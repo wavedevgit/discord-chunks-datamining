@@ -13,7 +13,7 @@ var r = n(255367),
   u = n(388032),
   d = n(165005);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,14 +22,14 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -88,7 +88,7 @@ function b(e) {
       className: n,
       inputClassName: a,
       disabled: l = !1,
-      editable: f,
+      editable: _,
       inputRef: p,
       prefixElement: g,
       focusProps: b,
@@ -122,16 +122,16 @@ function b(e) {
   }, [N, P, A, I, null == T ? void 0 : T.length]), j = null != N && "" !== N || null != k;
   return (0, r.jsxs)("div", {
     className: o()(d.inputWrapper, n),
-    children: [null != g && g, (0, r.jsx)(s.t, h(_({}, b), {
-      children: (0, r.jsx)("input", h(_({
+    children: [null != g && g, (0, r.jsx)(s.t, h(f({}, b), {
+      children: (0, r.jsx)("input", h(f({
         name: y,
         className: o()(d.input, a, {
           [d.error]: j,
           [d.disabled]: l,
-          [d.editable]: f
+          [d.editable]: _
         }),
         disabled: l,
-        readOnly: !1 === f || void 0,
+        readOnly: !1 === _ || void 0,
         type: O,
         placeholder: v,
         maxLength: I,

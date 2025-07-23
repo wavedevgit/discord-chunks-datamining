@@ -12,7 +12,7 @@ var r, i = n(255367),
   u = n(451478),
   d = n(555712);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -21,14 +21,14 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -129,23 +129,23 @@ class E extends(r = a.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), f(this, "animationRef", null), f(this, "animation", void 0), f(this, "currentScene", this.props.nextScene), f(this, "isUnmounted", !1), f(this, "handleLoopComplete", () => {
+    super(...e), _(this, "animationRef", null), _(this, "animation", void 0), _(this, "currentScene", this.props.nextScene), _(this, "isUnmounted", !1), _(this, "handleLoopComplete", () => {
       let {
         onSceneComplete: e,
         nextScene: t
       } = this.props;
       null != e && e(this.currentScene), this.playScene(t)
-    }), f(this, "handleComplete", () => {
+    }), _(this, "handleComplete", () => {
       let {
         onSceneComplete: e
       } = this.props;
       null != e && e(this.currentScene)
-    }), f(this, "handleEnterFrame", e => {
+    }), _(this, "handleEnterFrame", e => {
       let {
         onEnterFrame: t
       } = this.props;
       null == t || t(this.currentScene, e)
-    }), f(this, "handleSetRef", e => {
+    }), _(this, "handleSetRef", e => {
       this.animationRef = e;
       let {
         animationRef: t
@@ -154,7 +154,7 @@ class E extends(r = a.PureComponent) {
     })
   }
 }
-f(E, "defaultProps", {
+_(E, "defaultProps", {
   pauseWhileUnfocused: !0,
   pause: !1
 });
@@ -165,7 +165,7 @@ let b = e => {
   } = e, r = m(e, ["componentRef", "ignoreReducedMotion"]);
   let a = (0, l.e7)([u.Z], () => u.Z.isFocused()),
     o = (0, l.e7)([c.Z], () => c.Z.useReducedMotion);
-  return (0, i.jsx)(E, h(_({}, r), {
+  return (0, i.jsx)(E, h(f({}, r), {
     isWindowFocused: a,
     useReducedMotion: o && !n,
     ref: t

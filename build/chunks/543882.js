@@ -19,8 +19,8 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 let d = 12e4,
-  f = 1e4,
-  _ = 5,
+  _ = 1e4,
+  f = 5,
   p = {},
   h = {},
   m = new Set;
@@ -47,7 +47,7 @@ function b(e) {
   } = e;
   p[t] = {
     url: null,
-    expires: Date.now() + (null != n ? n : f * h[t])
+    expires: Date.now() + (null != n ? n : _ * h[t])
   }, m.delete(t)
 }
 
@@ -101,7 +101,7 @@ class v extends(r = o.ZP.Store) {
       a = p[i],
       o = null != (r = h[i]) ? r : 0,
       s = null != a && Date.now() > a.expires;
-    return (null == a && o < _ || s) && !m.has(i)
+    return (null == a && o < f || s) && !m.has(i)
   }
   getPreviewURLForStreamKey(e) {
     let {

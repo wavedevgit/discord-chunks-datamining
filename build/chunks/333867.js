@@ -13,8 +13,8 @@ var i = n(772848),
   c = n(335131),
   u = n(626135),
   d = n(409813),
-  f = n(608579),
-  _ = n(981631);
+  _ = n(608579),
+  f = n(981631);
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -104,7 +104,7 @@ function I(e) {
       onClose: t,
       returnRef: i
     } = e, a = E(e, ["onClose", "returnRef"]);
-    return (0, r.jsx)(f.Z, g(h({}, a), {
+    return (0, r.jsx)(_.Z, g(h({}, a), {
       loadId: R,
       skuId: n,
       isGift: d,
@@ -124,9 +124,9 @@ function I(e) {
   }, {
     modalKey: w,
     onCloseCallback: () => {
-      C || u.default.track(_.rMx.PAYMENT_FLOW_CANCELED, {
+      C || u.default.track(f.rMx.PAYMENT_FLOW_CANCELED, {
         load_id: R,
-        payment_type: _.Zuq[_.GZQ.ONE_TIME],
+        payment_type: f.Zuq[f.GZQ.ONE_TIME],
         location: S,
         is_gift: d,
         sku_id: n,

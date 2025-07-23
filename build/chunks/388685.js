@@ -25,5 +25,5 @@ var r = n(127849),
       }
     }
   };
-for (var f in i) d(r[f] && r[f].prototype, f);
+for (var _ in i) d(r[_] && r[_].prototype, _);
 d(a, "DOMTokenList")

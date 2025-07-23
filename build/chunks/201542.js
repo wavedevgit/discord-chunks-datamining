@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(607070),
   u = n(621593),
   d = n(177751),
-  f = n(62170),
-  _ = n(640108),
+  _ = n(62170),
+  f = n(640108),
   p = n(793148),
   h = n(585483),
   m = n(70956),
@@ -36,7 +36,7 @@ function S(e) {
     played: t,
     duration: n,
     currentTime: i
-  } = e, a = null == n ? "--:--" : t ? (0, _.yv)(Math.ceil(n - i)) : (0, _.yv)(Math.ceil(n));
+  } = e, a = null == n ? "--:--" : t ? (0, f.yv)(Math.ceil(n - i)) : (0, f.yv)(Math.ceil(n));
   return (0, r.jsx)(l.Text, {
     variant: "text-sm/normal",
     className: v.duration,
@@ -79,7 +79,7 @@ let C = i.memo(function(e) {
   let t, {
       src: n,
       volume: a = 1,
-      onVolumeChange: _,
+      onVolumeChange: f,
       onMute: h,
       waveform: b,
       durationSecs: y,
@@ -136,15 +136,15 @@ let C = i.memo(function(e) {
     }, [D]),
     eu = i.useCallback(e => {
       let t = (0, g.A)(e, 1);
-      H(0 === t), ee(t), null == _ || _(t)
-    }, [_]),
+      H(0 === t), ee(t), null == f || f(t)
+    }, [f]),
     ed = i.useCallback(() => {
       H(!Z), null == h || h(!Z)
     }, [Z, h]),
-    ef = i.useCallback(() => {
+    e_ = i.useCallback(() => {
       z(!0)
     }, []),
-    e_ = i.useCallback(() => {
+    ef = i.useCallback(() => {
       z(!1), G === V && eo(), ea(G)
     }, [G, V, eo, ea]),
     ep = i.useCallback(e => {
@@ -212,7 +212,7 @@ let C = i.memo(function(e) {
       volume: $,
       playbackRate: k
     })
-  }) : (0, r.jsx)(f.Z, {
+  }) : (0, r.jsx)(_.Z, {
     ref: x,
     className: v.audioElement,
     controls: !1,
@@ -258,8 +258,8 @@ let C = i.memo(function(e) {
       playing: Y,
       played: j,
       onDrag: ep,
-      onDragStart: ef,
-      onDragEnd: e_
+      onDragStart: e_,
+      onDragEnd: ef
     }), (0, r.jsx)(S, {
       played: j,
       currentTime: G,

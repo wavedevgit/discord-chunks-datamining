@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Nq: () => d,
-  O1: () => f,
+  O1: () => _,
   US: () => o,
   XR: () => s,
   Xf: () => u,
@@ -79,7 +79,7 @@ function d(e) {
   })
 }
 
-function f(e) {
+function _(e) {
   let {
     contentType: t,
     newSnowflakeId: n,

@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   J: () => d,
-  Z: () => _
+  Z: () => f
 }), n(388685);
 var r = n(298444),
   i = n(570140),
@@ -21,7 +21,7 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 let d = "guestInviteToAccept";
-class f extends o.Z {
+class _ extends o.Z {
   constructor(...e) {
     super(...e), u(this, "actions", {
       POST_CONNECTION_OPEN: () => this.handleConnectionOpen()
@@ -43,4 +43,4 @@ class f extends o.Z {
     })
   }
 }
-let _ = new f
+let f = new _

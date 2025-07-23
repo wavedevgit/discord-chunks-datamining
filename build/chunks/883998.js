@@ -22,8 +22,8 @@ function d(e) {
     shouldShow: s,
     onRequestClose: l,
     position: d,
-    align: f,
-    positionRef: _,
+    align: _,
+    positionRef: f,
     children: p
   } = e, h = i.useCallback(e => {
     let {
@@ -34,8 +34,8 @@ function d(e) {
   return (0, r.jsx)(a.yRy, {
     shouldShow: s,
     position: d,
-    targetElementRef: _,
-    align: f,
+    targetElementRef: f,
+    align: _,
     onRequestClose: l,
     renderPopout: e => {
       let {

@@ -14,9 +14,9 @@ var r = n(255367),
   c = n(867309),
   u = n(251625),
   d = n(872801),
-  f = n(36344);
+  _ = n(36344);
 
-function _(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -32,12 +32,12 @@ function p(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
 }
-let h = f.layerContainer;
+let h = _.layerContainer;
 class m extends i.Component {
   componentWillUnmount() {
     this.state.layerContainerElement = null
@@ -55,13 +55,13 @@ class m extends i.Component {
     })
   }
   constructor(...e) {
-    super(...e), _(this, "state", {
+    super(...e), f(this, "state", {
       layerContainerElement: null
-    }), _(this, "setLayerContainerElement", e => {
+    }), f(this, "setLayerContainerElement", e => {
       this.setState({
         layerContainerElement: e
       })
-    }), _(this, "getContextValue", (0, u.oH)(e => [e, this.setLayerContainerElement]))
+    }), f(this, "getContextValue", (0, u.oH)(e => [e, this.setLayerContainerElement]))
   }
 }
 let g = e => {
@@ -78,7 +78,7 @@ let g = e => {
 };
 
 function E(e) {
-  let t = (0, d.Z)(e, f.layerContainer);
+  let t = (0, d.Z)(e, _.layerContainer);
   return l()(null != t, "Unexpected missing parent container"), t
 }
 

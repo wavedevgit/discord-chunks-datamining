@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => d,
-  q: () => f
+  q: () => _
 });
 var r = n(73800),
   i = n(392711),
@@ -21,7 +21,7 @@ function d(e) {
   }, [e, t]), (0, o.Wu)([u.Z], () => e.map(e => null != e ? u.Z.getApplication(e) : void 0))
 }
 
-function f(e) {
+function _(e) {
   let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
   return d(null != e ? [e] : [], t)[0]
 }

@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(873546),
   u = n(374470),
   d = n(442837),
-  f = n(704215),
-  _ = n(952265),
+  _ = n(704215),
+  f = n(952265),
   p = n(481060),
   h = n(153867),
   m = n(410575),
@@ -131,7 +131,7 @@ let q = M.Om + U.Su.MEDIUM,
       positionContainerRef: t,
       drawerRef: n,
       orientation: r
-    } = e, a = (0, d.e7)([P.ZP], () => P.ZP.expressionPickerWidth), [o, s] = i.useState(window.innerWidth), [c, u] = i.useState(null != a ? a : M._j.MIN), f = i.useMemo(() => {
+    } = e, a = (0, d.e7)([P.ZP], () => P.ZP.expressionPickerWidth), [o, s] = i.useState(window.innerWidth), [c, u] = i.useState(null != a ? a : M._j.MIN), _ = i.useMemo(() => {
       switch (c) {
         case M._j.MIN:
           return M.Om;
@@ -140,17 +140,17 @@ let q = M.Om + U.Su.MEDIUM,
         default:
           return c
       }
-    }, [c]), _ = i.useCallback(e => {
+    }, [c]), f = i.useCallback(e => {
       let t = e >= o ? M._j.MAX : e <= M.Om ? M._j.MIN : e;
       null == t && null != n.current && (n.current.style.width = ""), h.ZP.updatedUnsyncedSettings({
         expressionPickerWidth: t
       }), u(t)
     }, [n, o]), p = (0, g.Z)({
-      initialElementDimension: f,
+      initialElementDimension: _,
       maxDimension: o,
       minDimension: M.Om,
       resizableDomNodeRef: n,
-      onElementResize: _,
+      onElementResize: f,
       orientation: r
     });
     return i.useEffect(() => {
@@ -163,7 +163,7 @@ let q = M.Om + U.Su.MEDIUM,
     }, [t]), i.useLayoutEffect(() => {
       null != t.current && s(t.current.offsetWidth)
     }, [t]), {
-      drawerWidth: f,
+      drawerWidth: _,
       handleDrawerResizeHandleMouseDown: i.useCallback(e => {
         e.stopPropagation(), null != t.current && s(t.current.offsetWidth), p(e)
       }, [t, p])
@@ -196,10 +196,10 @@ function J(e) {
     orientation: "left" === $ ? g.y.HORIZONTAL_RIGHT : g.y.HORIZONTAL_LEFT
   }), ec = (0, x.Iu)(e => e.activeView), eu = (0, N.fQ)(K), {
     renderWindow: ed,
-    windowDispatch: ef
-  } = i.useContext(E.ZP), e_ = (0, d.e7)([C.Z], () => !C.Z.hasLoadedStickerPacks), ep = (0, S.V2)({
+    windowDispatch: e_
+  } = i.useContext(E.ZP), ef = (0, d.e7)([C.Z], () => !C.Z.hasLoadedStickerPacks), ep = (0, S.V2)({
     location: "expression_picker"
-  }), eh = (0, d.e7)([w.Z], () => w.Z.isOpen()), em = null != en, eg = (0, _.Jw)(null != en ? en : ""), eE = (null == (t = z.gifs) ? void 0 : t.allowSending) && !c.tq && null != Z, eb = (null == (n = z.stickers) ? void 0 : n.allowSending) && null != Y, ey = !(null == (a = z.expressionPicker) ? void 0 : a.onlyEmojis) && (eE || eb), {
+  }), eh = (0, d.e7)([w.Z], () => w.Z.isOpen()), em = null != en, eg = (0, f.Jw)(null != en ? en : ""), eE = (null == (t = z.gifs) ? void 0 : t.allowSending) && !c.tq && null != Z, eb = (null == (n = z.stickers) ? void 0 : n.allowSending) && null != Y, ey = !(null == (a = z.expressionPicker) ? void 0 : a.onlyEmojis) && (eE || eb), {
     showExpressionPickerButton: eO
   } = (0, v.q)({
     location: "expression_picker",
@@ -207,7 +207,7 @@ function J(e) {
     disable: !ey || ec !== M.X1.EMOJI
   }), ev = i.useCallback(e => {
     var t;
-    if (!em && (0, _.$s)() || em && !(eg && et) || eh || e.defaultPrevented) return;
+    if (!em && (0, f.$s)() || em && !(eg && et) || eh || e.defaultPrevented) return;
     let {
       target: n
     } = e;
@@ -226,11 +226,11 @@ function J(e) {
     let e = () => {
       ec === M.X1.GIF && (0, x._Q)()
     };
-    return ed.addEventListener("mousedown", ev), ed.addEventListener("contextmenu", ev), ef.subscribe(k.CkL.POPOUT_CLOSE, eI), D.S.subscribe(k.CkL.CLOSE_GIF_PICKER, e), () => {
-      ed.removeEventListener("mousedown", ev), ed.removeEventListener("contextmenu", ev), ef.unsubscribe(k.CkL.POPOUT_CLOSE, eI), D.S.unsubscribe(k.CkL.CLOSE_GIF_PICKER, e)
+    return ed.addEventListener("mousedown", ev), ed.addEventListener("contextmenu", ev), e_.subscribe(k.CkL.POPOUT_CLOSE, eI), D.S.subscribe(k.CkL.CLOSE_GIF_PICKER, e), () => {
+      ed.removeEventListener("mousedown", ev), ed.removeEventListener("contextmenu", ev), e_.unsubscribe(k.CkL.POPOUT_CLOSE, eI), D.S.unsubscribe(k.CkL.CLOSE_GIF_PICKER, e)
     }
-  }, [ec, eI, ev, ed, ef]), (0, p.Tbt)(er);
-  let [eT, eS] = (0, y.US)(ep ? [f.z.SOUNDMOJI_BADGE] : [], void 0, !1), [eA, eN] = i.useState(!1);
+  }, [ec, eI, ev, ed, e_]), (0, p.Tbt)(er);
+  let [eT, eS] = (0, y.US)(ep ? [_.z.SOUNDMOJI_BADGE] : [], void 0, !1), [eA, eN] = i.useState(!1);
   i.useEffect(() => {
     ec === M.X1.SOUNDBOARD && eN(!0)
   }, [ec]), i.useEffect(() => () => {
@@ -238,11 +238,11 @@ function J(e) {
   }, [eA, eS]), i.useEffect(() => {
     (0, x.ql)("")
   }, []), i.useEffect(() => {
-    (!em && (0, _.$s)() || em && !eg) && (0, x._Q)()
+    (!em && (0, f.$s)() || em && !eg) && (0, x._Q)()
   }, [eg, em]), i.useEffect(() => {
     if (null != eo.current && !ei.current) {
       var e, t, n, r;
-      ec === M.X1.EMOJI ? (null == ea || null == (e = ea.current) ? void 0 : e.onPickerOpen) != null && (null == ea || null == (t = ea.current) || t.onPickerOpen(), ei.current = !0) : ec === M.X1.STICKER ? (null == ea || null == (n = ea.current) ? void 0 : n.onPickerOpen) == null || e_ || (null == ea || null == (r = ea.current) || r.onPickerOpen(), ei.current = !0) : (b.ZP.trackWithMetadata(k.rMx.EXPRESSION_PICKER_OPENED, {
+      ec === M.X1.EMOJI ? (null == ea || null == (e = ea.current) ? void 0 : e.onPickerOpen) != null && (null == ea || null == (t = ea.current) || t.onPickerOpen(), ei.current = !0) : ec === M.X1.STICKER ? (null == ea || null == (n = ea.current) ? void 0 : n.onPickerOpen) == null || ef || (null == ea || null == (r = ea.current) || r.onPickerOpen(), ei.current = !0) : (b.ZP.trackWithMetadata(k.rMx.EXPRESSION_PICKER_OPENED, {
         width: eo.current.offsetWidth,
         tab: ec,
         badged: !1
@@ -337,7 +337,7 @@ function J(e) {
                   })]
                 })
               }) : null, ec === M.X1.STICKER && eb ? (0, r.jsx)(R.Z, {
-                isLoading: e_,
+                isLoading: ef,
                 channel: K,
                 containerWidth: es,
                 onSelectSticker: Y,

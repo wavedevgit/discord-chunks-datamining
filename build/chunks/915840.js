@@ -9,19 +9,19 @@ let {
   SemanticColorHighContrast: {
     APP_BORDER_FRAME: {
       [r.DARK]: {
-        raw: "NEUTRAL_31",
+        raw: "NEUTRAL_12",
         opacity: 1
       },
       [r.LIGHT]: {
-        raw: "NEUTRAL_32",
+        raw: "NEUTRAL_49",
         opacity: 1
       },
       [r.MIDNIGHT]: {
-        raw: "NEUTRAL_41",
+        raw: "NEUTRAL_23",
         opacity: 1
       },
       [r.DARKER]: {
-        raw: "NEUTRAL_38",
+        raw: "NEUTRAL_19",
         opacity: 1
       }
     },
@@ -131,6 +131,96 @@ let {
       [r.DARKER]: {
         raw: "OPACITY_YELLOW_20",
         opacity: .2
+      }
+    },
+    BACKGROUND_MENTIONED_HOVER: {
+      [r.DARK]: {
+        raw: "OPACITY_YELLOW_24",
+        opacity: .23921568627450981
+      },
+      [r.LIGHT]: {
+        raw: "OPACITY_YELLOW_16",
+        opacity: .1607843137254902
+      },
+      [r.MIDNIGHT]: {
+        raw: "OPACITY_YELLOW_28",
+        opacity: .2784313725490196
+      },
+      [r.DARKER]: {
+        raw: "OPACITY_YELLOW_24",
+        opacity: .23921568627450981
+      }
+    },
+    BACKGROUND_MESSAGE_AUTOMOD: {
+      [r.DARK]: {
+        raw: "OPACITY_RED_20",
+        opacity: .2
+      },
+      [r.LIGHT]: {
+        raw: "OPACITY_RED_12",
+        opacity: .12156862745098039
+      },
+      [r.MIDNIGHT]: {
+        raw: "OPACITY_RED_24",
+        opacity: .23921568627450981
+      },
+      [r.DARKER]: {
+        raw: "OPACITY_RED_20",
+        opacity: .2
+      }
+    },
+    BACKGROUND_MESSAGE_AUTOMOD_HOVER: {
+      [r.DARK]: {
+        raw: "OPACITY_RED_24",
+        opacity: .23921568627450981
+      },
+      [r.LIGHT]: {
+        raw: "OPACITY_RED_16",
+        opacity: .1607843137254902
+      },
+      [r.MIDNIGHT]: {
+        raw: "OPACITY_RED_28",
+        opacity: .2784313725490196
+      },
+      [r.DARKER]: {
+        raw: "OPACITY_RED_24",
+        opacity: .23921568627450981
+      }
+    },
+    BACKGROUND_MESSAGE_HIGHLIGHT: {
+      [r.DARK]: {
+        raw: "OPACITY_BLURPLE_20",
+        opacity: .2
+      },
+      [r.LIGHT]: {
+        raw: "OPACITY_BLURPLE_20",
+        opacity: .2
+      },
+      [r.MIDNIGHT]: {
+        raw: "OPACITY_BLURPLE_20",
+        opacity: .2
+      },
+      [r.DARKER]: {
+        raw: "OPACITY_BLURPLE_20",
+        opacity: .2
+      }
+    },
+    BACKGROUND_MESSAGE_HIGHLIGHT_HOVER: {
+      [r.DARK]: {
+        raw: "OPACITY_BLURPLE_24",
+        opacity: .23921568627450981
+      },
+      [r.LIGHT]: {
+        raw: "OPACITY_BLURPLE_24",
+        opacity: .23921568627450981
+      },
+      [r.MIDNIGHT]: {
+        raw: "OPACITY_BLURPLE_24",
+        opacity: .23921568627450981
+      },
+      [r.DARKER]: {
+        raw: "OPACITY_BLURPLE_24",
+        opacity: .23921568627450981
       }
     },
     BACKGROUND_MESSAGE_HOVER: {
@@ -279,42 +369,6 @@ let {
     },
     BORDER_FAINT: {
       [r.DARK]: {
-        raw: "NEUTRAL_35",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "NEUTRAL_28",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "NEUTRAL_45",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "NEUTRAL_41",
-        opacity: 1
-      }
-    },
-    BORDER_NORMAL: {
-      [r.DARK]: {
-        raw: "NEUTRAL_28",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "NEUTRAL_35",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "NEUTRAL_38",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "NEUTRAL_34",
-        opacity: 1
-      }
-    },
-    BORDER_STRONG: {
-      [r.DARK]: {
         raw: "NEUTRAL_25",
         opacity: 1
       },
@@ -331,21 +385,57 @@ let {
         opacity: 1
       }
     },
-    BORDER_SUBTLE: {
+    BORDER_NORMAL: {
       [r.DARK]: {
-        raw: "NEUTRAL_31",
+        raw: "NEUTRAL_5",
         opacity: 1
       },
       [r.LIGHT]: {
-        raw: "NEUTRAL_32",
+        raw: "NEUTRAL_59",
         opacity: 1
       },
       [r.MIDNIGHT]: {
-        raw: "NEUTRAL_41",
+        raw: "NEUTRAL_17",
         opacity: 1
       },
       [r.DARKER]: {
-        raw: "NEUTRAL_38",
+        raw: "NEUTRAL_13",
+        opacity: 1
+      }
+    },
+    BORDER_STRONG: {
+      [r.DARK]: {
+        raw: "NEUTRAL_1",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "NEUTRAL_72",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "NEUTRAL_10",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "NEUTRAL_5",
+        opacity: 1
+      }
+    },
+    BORDER_SUBTLE: {
+      [r.DARK]: {
+        raw: "NEUTRAL_12",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "NEUTRAL_49",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "NEUTRAL_23",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "NEUTRAL_19",
         opacity: 1
       }
     },
@@ -459,19 +549,19 @@ let {
     },
     CHECKBOX_BORDER_DEFAULT: {
       [r.DARK]: {
-        raw: "NEUTRAL_25",
+        raw: "NEUTRAL_1",
         opacity: 1
       },
       [r.LIGHT]: {
-        raw: "NEUTRAL_38",
+        raw: "NEUTRAL_72",
         opacity: 1
       },
       [r.MIDNIGHT]: {
-        raw: "NEUTRAL_35",
+        raw: "NEUTRAL_10",
         opacity: 1
       },
       [r.DARKER]: {
-        raw: "NEUTRAL_32",
+        raw: "NEUTRAL_5",
         opacity: 1
       }
     },
@@ -873,181 +963,181 @@ let {
     },
     CONTROL_BORDER_ICON_ONLY_ACTIVE: {
       [r.DARK]: {
-        raw: "NEUTRAL_35",
+        raw: "NEUTRAL_25",
         opacity: 1
       },
       [r.LIGHT]: {
-        raw: "NEUTRAL_28",
+        raw: "NEUTRAL_38",
         opacity: 1
       },
       [r.MIDNIGHT]: {
-        raw: "NEUTRAL_45",
+        raw: "NEUTRAL_35",
         opacity: 1
       },
       [r.DARKER]: {
-        raw: "NEUTRAL_41",
+        raw: "NEUTRAL_32",
         opacity: 1
       }
     },
     CONTROL_BORDER_ICON_ONLY_HOVER: {
       [r.DARK]: {
-        raw: "NEUTRAL_35",
+        raw: "NEUTRAL_25",
         opacity: 1
       },
       [r.LIGHT]: {
-        raw: "NEUTRAL_28",
+        raw: "NEUTRAL_38",
         opacity: 1
       },
       [r.MIDNIGHT]: {
-        raw: "NEUTRAL_45",
+        raw: "NEUTRAL_35",
         opacity: 1
       },
       [r.DARKER]: {
-        raw: "NEUTRAL_41",
+        raw: "NEUTRAL_32",
         opacity: 1
       }
     },
     CONTROL_BORDER_OVERLAY_PRIMARY_ACTIVE: {
       [r.DARK]: {
-        raw: "NEUTRAL_31",
+        raw: "NEUTRAL_12",
         opacity: 1
       },
       [r.LIGHT]: {
-        raw: "NEUTRAL_32",
+        raw: "NEUTRAL_49",
         opacity: 1
       },
       [r.MIDNIGHT]: {
-        raw: "NEUTRAL_41",
+        raw: "NEUTRAL_23",
         opacity: 1
       },
       [r.DARKER]: {
-        raw: "NEUTRAL_38",
+        raw: "NEUTRAL_19",
         opacity: 1
       }
     },
     CONTROL_BORDER_OVERLAY_PRIMARY_DEFAULT: {
       [r.DARK]: {
-        raw: "NEUTRAL_31",
+        raw: "NEUTRAL_12",
         opacity: 1
       },
       [r.LIGHT]: {
-        raw: "NEUTRAL_32",
+        raw: "NEUTRAL_49",
         opacity: 1
       },
       [r.MIDNIGHT]: {
-        raw: "NEUTRAL_41",
+        raw: "NEUTRAL_23",
         opacity: 1
       },
       [r.DARKER]: {
-        raw: "NEUTRAL_38",
+        raw: "NEUTRAL_19",
         opacity: 1
       }
     },
     CONTROL_BORDER_OVERLAY_PRIMARY_HOVER: {
       [r.DARK]: {
-        raw: "NEUTRAL_31",
+        raw: "NEUTRAL_12",
         opacity: 1
       },
       [r.LIGHT]: {
-        raw: "NEUTRAL_32",
+        raw: "NEUTRAL_49",
         opacity: 1
       },
       [r.MIDNIGHT]: {
-        raw: "NEUTRAL_41",
+        raw: "NEUTRAL_23",
         opacity: 1
       },
       [r.DARKER]: {
-        raw: "NEUTRAL_38",
+        raw: "NEUTRAL_19",
         opacity: 1
       }
     },
     CONTROL_BORDER_OVERLAY_PRIMARY_LOADING: {
       [r.DARK]: {
-        raw: "NEUTRAL_31",
+        raw: "NEUTRAL_12",
         opacity: 1
       },
       [r.LIGHT]: {
-        raw: "NEUTRAL_32",
+        raw: "NEUTRAL_49",
         opacity: 1
       },
       [r.MIDNIGHT]: {
-        raw: "NEUTRAL_41",
+        raw: "NEUTRAL_23",
         opacity: 1
       },
       [r.DARKER]: {
-        raw: "NEUTRAL_38",
+        raw: "NEUTRAL_19",
         opacity: 1
       }
     },
     CONTROL_BORDER_OVERLAY_SECONDARY_ACTIVE: {
       [r.DARK]: {
-        raw: "NEUTRAL_35",
+        raw: "NEUTRAL_25",
         opacity: 1
       },
       [r.LIGHT]: {
-        raw: "NEUTRAL_28",
+        raw: "NEUTRAL_38",
         opacity: 1
       },
       [r.MIDNIGHT]: {
-        raw: "NEUTRAL_45",
+        raw: "NEUTRAL_35",
         opacity: 1
       },
       [r.DARKER]: {
-        raw: "NEUTRAL_41",
+        raw: "NEUTRAL_32",
         opacity: 1
       }
     },
     CONTROL_BORDER_OVERLAY_SECONDARY_DEFAULT: {
       [r.DARK]: {
-        raw: "NEUTRAL_35",
+        raw: "NEUTRAL_25",
         opacity: 1
       },
       [r.LIGHT]: {
-        raw: "NEUTRAL_28",
+        raw: "NEUTRAL_38",
         opacity: 1
       },
       [r.MIDNIGHT]: {
-        raw: "NEUTRAL_45",
+        raw: "NEUTRAL_35",
         opacity: 1
       },
       [r.DARKER]: {
-        raw: "NEUTRAL_41",
+        raw: "NEUTRAL_32",
         opacity: 1
       }
     },
     CONTROL_BORDER_OVERLAY_SECONDARY_HOVER: {
       [r.DARK]: {
-        raw: "NEUTRAL_35",
+        raw: "NEUTRAL_25",
         opacity: 1
       },
       [r.LIGHT]: {
-        raw: "NEUTRAL_28",
+        raw: "NEUTRAL_38",
         opacity: 1
       },
       [r.MIDNIGHT]: {
-        raw: "NEUTRAL_45",
+        raw: "NEUTRAL_35",
         opacity: 1
       },
       [r.DARKER]: {
-        raw: "NEUTRAL_41",
+        raw: "NEUTRAL_32",
         opacity: 1
       }
     },
     CONTROL_BORDER_OVERLAY_SECONDARY_LOADING: {
       [r.DARK]: {
-        raw: "NEUTRAL_35",
+        raw: "NEUTRAL_25",
         opacity: 1
       },
       [r.LIGHT]: {
-        raw: "NEUTRAL_28",
+        raw: "NEUTRAL_38",
         opacity: 1
       },
       [r.MIDNIGHT]: {
-        raw: "NEUTRAL_45",
+        raw: "NEUTRAL_35",
         opacity: 1
       },
       [r.DARKER]: {
-        raw: "NEUTRAL_41",
+        raw: "NEUTRAL_32",
         opacity: 1
       }
     },
@@ -1125,73 +1215,73 @@ let {
     },
     CONTROL_BORDER_SECONDARY_ACTIVE: {
       [r.DARK]: {
-        raw: "NEUTRAL_36",
+        raw: "NEUTRAL_25",
         opacity: 1
       },
       [r.LIGHT]: {
-        raw: "NEUTRAL_34",
+        raw: "NEUTRAL_46",
         opacity: 1
       },
       [r.MIDNIGHT]: {
-        raw: "NEUTRAL_42",
+        raw: "NEUTRAL_31",
         opacity: 1
       },
       [r.DARKER]: {
-        raw: "NEUTRAL_38",
+        raw: "NEUTRAL_28",
         opacity: 1
       }
     },
     CONTROL_BORDER_SECONDARY_DEFAULT: {
       [r.DARK]: {
-        raw: "NEUTRAL_36",
+        raw: "NEUTRAL_25",
         opacity: 1
       },
       [r.LIGHT]: {
-        raw: "NEUTRAL_34",
+        raw: "NEUTRAL_46",
         opacity: 1
       },
       [r.MIDNIGHT]: {
-        raw: "NEUTRAL_42",
+        raw: "NEUTRAL_31",
         opacity: 1
       },
       [r.DARKER]: {
-        raw: "NEUTRAL_38",
+        raw: "NEUTRAL_28",
         opacity: 1
       }
     },
     CONTROL_BORDER_SECONDARY_HOVER: {
       [r.DARK]: {
-        raw: "NEUTRAL_36",
+        raw: "NEUTRAL_25",
         opacity: 1
       },
       [r.LIGHT]: {
-        raw: "NEUTRAL_34",
+        raw: "NEUTRAL_46",
         opacity: 1
       },
       [r.MIDNIGHT]: {
-        raw: "NEUTRAL_42",
+        raw: "NEUTRAL_31",
         opacity: 1
       },
       [r.DARKER]: {
-        raw: "NEUTRAL_38",
+        raw: "NEUTRAL_28",
         opacity: 1
       }
     },
     CONTROL_BORDER_SECONDARY_LOADING: {
       [r.DARK]: {
-        raw: "NEUTRAL_35",
+        raw: "NEUTRAL_25",
         opacity: 1
       },
       [r.LIGHT]: {
-        raw: "NEUTRAL_28",
+        raw: "NEUTRAL_38",
         opacity: 1
       },
       [r.MIDNIGHT]: {
-        raw: "NEUTRAL_45",
+        raw: "NEUTRAL_35",
         opacity: 1
       },
       [r.DARKER]: {
-        raw: "NEUTRAL_41",
+        raw: "NEUTRAL_32",
         opacity: 1
       }
     },
@@ -1809,19 +1899,19 @@ let {
     },
     INPUT_BORDER: {
       [r.DARK]: {
-        raw: "NEUTRAL_36",
+        raw: "NEUTRAL_25",
         opacity: 1
       },
       [r.LIGHT]: {
-        raw: "NEUTRAL_34",
+        raw: "NEUTRAL_46",
         opacity: 1
       },
       [r.MIDNIGHT]: {
-        raw: "NEUTRAL_42",
+        raw: "NEUTRAL_31",
         opacity: 1
       },
       [r.DARKER]: {
-        raw: "NEUTRAL_38",
+        raw: "NEUTRAL_28",
         opacity: 1
       }
     },
@@ -1989,19 +2079,19 @@ let {
     },
     REDESIGN_BUTTON_SECONDARY_BORDER: {
       [r.DARK]: {
-        raw: "NEUTRAL_31",
+        raw: "NEUTRAL_12",
         opacity: 1
       },
       [r.LIGHT]: {
-        raw: "NEUTRAL_32",
+        raw: "NEUTRAL_49",
         opacity: 1
       },
       [r.MIDNIGHT]: {
-        raw: "NEUTRAL_41",
+        raw: "NEUTRAL_23",
         opacity: 1
       },
       [r.DARKER]: {
-        raw: "NEUTRAL_38",
+        raw: "NEUTRAL_19",
         opacity: 1
       }
     },
@@ -2043,19 +2133,19 @@ let {
     },
     SPINE_DEFAULT: {
       [r.DARK]: {
-        raw: "NEUTRAL_25",
+        raw: "NEUTRAL_1",
         opacity: 1
       },
       [r.LIGHT]: {
-        raw: "NEUTRAL_38",
+        raw: "NEUTRAL_72",
         opacity: 1
       },
       [r.MIDNIGHT]: {
-        raw: "NEUTRAL_35",
+        raw: "NEUTRAL_10",
         opacity: 1
       },
       [r.DARKER]: {
-        raw: "NEUTRAL_32",
+        raw: "NEUTRAL_5",
         opacity: 1
       }
     },
@@ -2529,19 +2619,19 @@ let {
     },
     USER_PROFILE_BORDER: {
       [r.DARK]: {
-        raw: "NEUTRAL_31",
+        raw: "NEUTRAL_12",
         opacity: 1
       },
       [r.LIGHT]: {
-        raw: "NEUTRAL_32",
+        raw: "NEUTRAL_49",
         opacity: 1
       },
       [r.MIDNIGHT]: {
-        raw: "NEUTRAL_41",
+        raw: "NEUTRAL_23",
         opacity: 1
       },
       [r.DARKER]: {
-        raw: "NEUTRAL_38",
+        raw: "NEUTRAL_19",
         opacity: 1
       }
     },
@@ -2565,19 +2655,19 @@ let {
     },
     USER_PROFILE_TOOLBAR_BORDER: {
       [r.DARK]: {
-        raw: "NEUTRAL_35",
+        raw: "NEUTRAL_25",
         opacity: 1
       },
       [r.LIGHT]: {
-        raw: "NEUTRAL_28",
+        raw: "NEUTRAL_38",
         opacity: 1
       },
       [r.MIDNIGHT]: {
-        raw: "NEUTRAL_45",
+        raw: "NEUTRAL_35",
         opacity: 1
       },
       [r.DARKER]: {
-        raw: "NEUTRAL_41",
+        raw: "NEUTRAL_32",
         opacity: 1
       }
     }

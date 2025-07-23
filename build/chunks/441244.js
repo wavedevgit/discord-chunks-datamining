@@ -30,7 +30,7 @@ function l(e) {
   return e
 }
 let c = function(e, t, n) {
-  return null != n && n.forwardRef ? d(e, t) : f(e, t)
+  return null != n && n.forwardRef ? d(e, t) : _(e, t)
 };
 
 function u(e) {
@@ -42,7 +42,7 @@ function d(e, t) {
   return n => {
     var c;
     let d = "FluxContainer(".concat(u(n), ")");
-    class f extends(c = i.Component) {
+    class _ extends(c = i.Component) {
       componentDidMount() {
         this.listener.attach(d)
       }
@@ -59,14 +59,14 @@ function d(e, t) {
         }, t, i))
       }
       constructor(...n) {
-        super(...n), s(this, "memoizedGetStateFromStores", _(t)), s(this, "listener", new o.F(e, () => {
+        super(...n), s(this, "memoizedGetStateFromStores", f(t)), s(this, "listener", new o.F(e, () => {
           let e = this.memoizedGetStateFromStores.getCachedResult(this.props.childProps);
           null != e && (this.memoizedGetStateFromStores.clear(), (0, a.Z)(this.memoizedGetStateFromStores(this.props.childProps), e)) || this.forceUpdate()
         }))
       }
     }
-    s(f, "displayName", d);
-    let p = i.forwardRef((e, t) => (0, r.jsx)(f, {
+    s(_, "displayName", d);
+    let p = i.forwardRef((e, t) => (0, r.jsx)(_, {
       childProps: e,
       forwardedConnectStoresRef: t
     }));
@@ -74,11 +74,11 @@ function d(e, t) {
   }
 }
 
-function f(e, t) {
+function _(e, t) {
   return n => {
     var c;
     let d = "FluxContainer(".concat(u(n), ")");
-    class f extends(c = i.Component) {
+    class _ extends(c = i.Component) {
       componentDidMount() {
         this.listener.attach(d)
       }
@@ -90,17 +90,17 @@ function f(e, t) {
         return (0, r.jsx)(n, l({}, this.props, e))
       }
       constructor(...n) {
-        super(...n), s(this, "memoizedGetStateFromStores", _(t)), s(this, "listener", new o.F(e, () => {
+        super(...n), s(this, "memoizedGetStateFromStores", f(t)), s(this, "listener", new o.F(e, () => {
           let e = this.memoizedGetStateFromStores.getCachedResult(this.props);
           null != e && (this.memoizedGetStateFromStores.clear(), (0, a.Z)(this.memoizedGetStateFromStores(this.props), e)) || this.forceUpdate()
         }))
       }
     }
-    return s(f, "displayName", d), f
+    return s(_, "displayName", d), _
   }
 }
 
-function _(e) {
+function f(e) {
   let t = null,
     n = null,
     r = e => null != t && null != n && (0, a.Z)(t, e) ? n : null != t && null != n && (0, a.Z)(t, e) ? (t = e, n) : null,

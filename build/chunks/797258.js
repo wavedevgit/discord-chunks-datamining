@@ -20,12 +20,12 @@ function c(e, t, n) {
 let u = Object.freeze([]),
   d = {};
 
-function f(e) {
+function _(e) {
   d = {}, e.sessions.forEach(e => {
     d[e.sessionId] = e
   })
 }
-class _ extends(r = o.ZP.Store) {
+class f extends(r = o.ZP.Store) {
   initialize() {
     this.waitFor(l.default)
   }
@@ -58,8 +58,8 @@ class _ extends(r = o.ZP.Store) {
     })
   }
 }
-c(_, "displayName", "SessionsStore");
-let p = new _(s.Z, {
-  CONNECTION_OPEN: f,
-  SESSIONS_REPLACE: f
+c(f, "displayName", "SessionsStore");
+let p = new f(s.Z, {
+  CONNECTION_OPEN: _,
+  SESSIONS_REPLACE: _
 })

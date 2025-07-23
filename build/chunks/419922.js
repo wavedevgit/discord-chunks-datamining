@@ -13,8 +13,8 @@ var r = n(255367),
   c = n(42133),
   u = n(442837),
   d = n(622535),
-  f = n(481060),
-  _ = n(607070),
+  _ = n(481060),
+  f = n(607070),
   p = n(134432),
   h = n(314910),
   m = n(506071),
@@ -68,13 +68,13 @@ let P = e => {
       },
       children: [n ? (0, r.jsxs)("div", {
         className: O.error,
-        children: [(0, r.jsx)(f.r8p, {
+        children: [(0, r.jsx)(_.r8p, {
           size: "custom",
           width: 20,
           height: 20,
           color: "currentColor",
           className: O.errorIcon
-        }), c && (0, r.jsx)(f.Text, {
+        }), c && (0, r.jsx)(_.Text, {
           className: O.errorText,
           color: "header-secondary",
           variant: "text-sm/normal",
@@ -94,8 +94,8 @@ let P = e => {
       assetData: c,
       isFocused: u,
       className: d,
-      maskAsset: f,
-      positionRef: _,
+      maskAsset: _,
+      positionRef: f,
       withLoadingIndicator: h,
       onError: m
     } = e, g = i.useRef(null), E = i.useRef(null), [v, I] = i.useState(!0), [T, S] = i.useState(!1), A = i.useRef(!1);
@@ -134,11 +134,11 @@ let P = e => {
       role: "img",
       className: d,
       "aria-label": T ? y.intl.string(y.t.yEvsKy) : R(o),
-      ref: _,
+      ref: f,
       children: (0, r.jsx)(P, {
         hasError: T,
         isLoading: v,
-        maskAsset: f,
+        maskAsset: _,
         size: a,
         withLoadingIndicator: h,
         children: C((0, r.jsx)("canvas", {
@@ -157,9 +157,9 @@ let P = e => {
       className: l,
       maskAsset: c,
       positionRef: u,
-      withLoadingIndicator: f,
-      fileUri: _
-    } = e, [p, h] = i.useState(!1), [m, g] = i.useState(!0), [E, y] = i.useState(!1), T = i.useRef(null), S = i.useRef(null), A = null != _ ? _ : (0, b.Q6)(n, {
+      withLoadingIndicator: _,
+      fileUri: f
+    } = e, [p, h] = i.useState(!1), [m, g] = i.useState(!0), [E, y] = i.useState(!1), T = i.useRef(null), S = i.useRef(null), A = null != f ? f : (0, b.Q6)(n, {
       isPreview: !t || !p || !a,
       size: s
     }), N = i.useCallback(() => {
@@ -190,7 +190,7 @@ let P = e => {
           isLoading: m,
           maskAsset: c,
           size: s,
-          withLoadingIndicator: f,
+          withLoadingIndicator: _,
           children: C((0, r.jsx)("img", {
             className: O.pngImage,
             alt: R(n),
@@ -214,10 +214,10 @@ let P = e => {
       positionRef: s,
       size: l,
       sticker: d
-    } = e, p = (0, u.e7)([_.Z], () => _.Z.useReducedMotion), m = i.useRef(null), g = {
+    } = e, p = (0, u.e7)([f.Z], () => f.Z.useReducedMotion), m = i.useRef(null), g = {
       transform: "scale(".concat(p ? 1 : 1 / n, ")"),
       opacity: 0
-    }, E = (0, f.Yzy)(o, {
+    }, E = (0, _.Yzy)(o, {
       ref: m,
       from: g,
       enter: {
@@ -226,7 +226,7 @@ let P = e => {
       },
       leave: g,
       config: A
-    }), b = i.useRef(null), y = (0, f.q_F)({
+    }), b = i.useRef(null), y = (0, _.q_F)({
       ref: b,
       transform: o || p ? "translateY(0)" : "translateY(-25px)",
       opacity: +!!o,
@@ -256,7 +256,7 @@ let P = e => {
         }), a && (0, r.jsx)(c.animated.div, {
           className: O.overlayLabelWrapper,
           style: y,
-          children: (0, r.jsx)(f.Text, {
+          children: (0, r.jsx)(_.Text, {
             variant: "text-sm/medium",
             className: O.overlayLabel,
             children: d.name
@@ -276,8 +276,8 @@ let P = e => {
       size: c,
       sticker: u,
       className: d,
-      withLoadingIndicator: f,
-      assetData: _,
+      withLoadingIndicator: _,
+      assetData: f,
       fileUri: p,
       onError: h
     } = e, b = (0, m.n)(), y = (0, g.t$)(t) && !n, O = i.useRef(null);
@@ -292,8 +292,8 @@ let P = e => {
         className: d,
         maskAsset: l,
         positionRef: O,
-        withLoadingIndicator: f,
-        assetData: _,
+        withLoadingIndicator: _,
+        assetData: f,
         fileUri: p,
         onError: h
       }), a && (0, r.jsx)(L, {

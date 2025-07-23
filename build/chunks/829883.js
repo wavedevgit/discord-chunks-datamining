@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   _b: () => h,
-  o: () => f,
+  o: () => _,
   zt: () => p,
   zy: () => d
 }), n(704826), n(35282);
@@ -18,12 +18,12 @@ let l = "".concat(location.protocol, "//").concat(window.GLOBAL_ENV.CDN_HOST, "/
     if (null == e) return null;
     let n = null != e.unicodeEmoji ? r.ZP.getByName(r.ZP.convertSurrogateToName(e.unicodeEmoji, !1)) : void 0;
     return {
-      customIconSrc: _(e, t),
+      customIconSrc: f(e, t),
       unicodeEmoji: null != n ? n : void 0
     }
   },
-  f = (e, t) => e.replace(/size=[0-9]+/g, "size=".concat((0, i.oO)(t * (0, i.x_)()))),
-  _ = (e, t) => {
+  _ = (e, t) => e.replace(/size=[0-9]+/g, "size=".concat((0, i.oO)(t * (0, i.x_)()))),
+  f = (e, t) => {
     let {
       id: n,
       icon: r
@@ -32,8 +32,8 @@ let l = "".concat(location.protocol, "//").concat(window.GLOBAL_ENV.CDN_HOST, "/
     if (r.startsWith("data:")) return r;
     let o = a.$k ? "webp" : "png",
       d = "",
-      f = "quality=lossless";
-    return (null != t && (d = "size=" + (0, i.oO)(t * (0, i.x_)()), f = u ? "" : "&" + f), null != window.GLOBAL_ENV.CDN_HOST) ? "".concat(l, "/").concat(n, "/").concat(r, ".").concat(o, "?").concat(d).concat(f) : "".concat(c).concat(s.ANM.ROLE_ICON(n, r), "?").concat(d)
+      _ = "quality=lossless";
+    return (null != t && (d = "size=" + (0, i.oO)(t * (0, i.x_)()), _ = u ? "" : "&" + _), null != window.GLOBAL_ENV.CDN_HOST) ? "".concat(l, "/").concat(n, "/").concat(r, ".").concat(o, "?").concat(d).concat(_) : "".concat(c).concat(s.ANM.ROLE_ICON(n, r), "?").concat(d)
   },
   p = e => e.startsWith(l) || e.startsWith("".concat(c, "/roles")) && e.includes("/icons/"),
   h = (e, t) => {

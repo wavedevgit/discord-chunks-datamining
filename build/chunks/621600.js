@@ -22,9 +22,9 @@ var l = n(630388),
   c = n(981631),
   u = n(468788),
   d = n(490897),
-  f = n(526761);
+  _ = n(526761);
 
-function _(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -40,7 +40,7 @@ function p(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
@@ -87,7 +87,7 @@ let E = {
 
 function y(e, t, n, a, o) {
   var s, d;
-  let _ = function(e) {
+  let f = function(e) {
       var t, n, r, i, a, o, s;
       let l = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
         c = null != l.mute_config && null != l.mute_config.end_time ? new Date(l.mute_config.end_time).getTime() : e.guild_muted_until,
@@ -104,12 +104,12 @@ function y(e, t, n, a, o) {
         guild_scheduled_events_muted: null != (s = l.mute_scheduled_events) ? s : e.guild_scheduled_events_muted
       }
     },
-    h = _(n),
-    g = _(T(e), t),
+    h = f(n),
+    g = f(T(e), t),
     E = O(h, g, "RETURN_PREVIOUS_WHEN_CHANGED"),
     y = null != (s = E("guild_flags")) ? s : 0,
     v = (null != (d = g.guild_flags) ? d : 0) ^ y,
-    I = 0 === (0, l.M1)(v, f.vc.OPT_IN_CHANNELS_OFF, f.vc.OPT_IN_CHANNELS_ON);
+    I = 0 === (0, l.M1)(v, _.vc.OPT_IN_CHANNELS_OFF, _.vc.OPT_IN_CHANNELS_ON);
   r.ZP.trackWithMetadata(c.rMx.NOTIFICATION_SETTINGS_UPDATED, m(p({}, g, i.Z.getStats(e)), {
     location: o,
     guild_id: e,
@@ -140,7 +140,7 @@ function v(e) {
 function I(e) {
   var t, n, s, d;
   let {
-    updateType: _ = u.I.CHANNEL,
+    updateType: f = u.I.CHANNEL,
     guildId: h,
     channelId: g,
     applicationId: E,
@@ -161,12 +161,12 @@ function I(e) {
       channel_message_notification_settings: a,
       channel_muted_until: v(r.mute_config)
     }
-  }, C = N(I), R = N(A(h, g), y), P = O(C, R, "RETURN_PREVIOUS_WHEN_CHANGED"), w = a.Z.getChannel(g), D = null != (n = P("channel_flags")) ? n : 0, L = (null != (s = R.channel_flags) ? s : 0) ^ D, x = 0 === (0, l.M1)(L, f.ic.FAVORITED, f.ic.OPT_IN_ENABLED), M = null != (d = null == (t = o.Z.getLastMessage(g)) ? void 0 : t.type) ? d : null;
+  }, C = N(I), R = N(A(h, g), y), P = O(C, R, "RETURN_PREVIOUS_WHEN_CHANGED"), w = a.Z.getChannel(g), D = null != (n = P("channel_flags")) ? n : 0, L = (null != (s = R.channel_flags) ? s : 0) ^ D, x = 0 === (0, l.M1)(L, _.ic.FAVORITED, _.ic.OPT_IN_ENABLED), M = null != (d = null == (t = o.Z.getLastMessage(g)) ? void 0 : t.type) ? d : null;
   r.ZP.trackWithMetadata(c.rMx.NOTIFICATION_SETTINGS_UPDATED, m(p({}, R, i.Z.getStats(h)), {
     location: S,
     guild_id: h,
     channel_id: g,
-    update_type: _,
+    update_type: f,
     label: T,
     parent_id: null != w ? w.parent_id : null,
     channel_flags_old: P("channel_flags"),

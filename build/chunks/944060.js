@@ -10,7 +10,7 @@ var r = n(255367),
   s = ["children"];
 
 function l(e, t) {
-  return _(e) || f(e, t) || u(e, t) || c()
+  return f(e) || _(e, t) || u(e, t) || c()
 }
 
 function c() {
@@ -32,7 +32,7 @@ function d(e, t) {
   return r
 }
 
-function f(e, t) {
+function _(e, t) {
   var n, r, i = null == e ? null : "undefined" != typeof Symbol && e[Symbol.iterator] || e["@@iterator"];
   if (null != i) {
     var a = [],
@@ -53,7 +53,7 @@ function f(e, t) {
   }
 }
 
-function _(e) {
+function f(e) {
   if (Array.isArray(e)) return e
 }
 

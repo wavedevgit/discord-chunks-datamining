@@ -50,7 +50,7 @@ let d = {
     t.forEach(e => {
       (e.required ? u : d).push(e)
     });
-    let f = u.length > 0 ? (0, o.HI)({
+    let _ = u.length > 0 ? (0, o.HI)({
         query: i,
         selectedIndex: n,
         autocompletes: u,
@@ -67,7 +67,7 @@ let d = {
         getQuery: e => e,
         key: "required-options"
       }) : null,
-      _ = d.length > 0 ? (0, o.HI)({
+      f = d.length > 0 ? (0, o.HI)({
         query: i,
         selectedIndex: n,
         autocompletes: d,
@@ -86,7 +86,7 @@ let d = {
         indexOffset: u.length
       }) : null;
     return (0, r.jsxs)(r.Fragment, {
-      children: [f, _]
+      children: [_, f]
     })
   },
   onSelect(e) {

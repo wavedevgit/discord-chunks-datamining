@@ -31,14 +31,14 @@ function d(e) {
   }
   return e
 }
-let f = {};
+let _ = {};
 
-function _(e) {
-  f = a().omitBy(f, t => t.guildId === e)
+function f(e) {
+  _ = a().omitBy(_, t => t.guildId === e)
 }
 
 function p(e) {
-  f = a().omitBy(f, t => t.parentId === e)
+  _ = a().omitBy(_, t => t.parentId === e)
 }
 
 function h(e) {
@@ -47,16 +47,16 @@ function h(e) {
 }
 
 function m(e) {
-  if (!(e.id in f)) {
+  if (!(e.id in _)) {
     var t, n;
-    f[e.id] = {
+    _[e.id] = {
       guildId: e.guild_id,
       parentId: e.parent_id,
       memberCount: null != (t = e.memberCount) ? t : 0,
       memberIdsPreview: null != (n = e.memberIdsPreview) ? n : []
     }
   }
-  return f[e.id]
+  return _[e.id]
 }
 
 function g(e) {
@@ -66,14 +66,14 @@ function g(e) {
 }
 
 function E(e) {
-  f = {}, e.guilds.forEach(h)
+  _ = {}, e.guilds.forEach(h)
 }
 
 function b(e) {
   let {
     threadMembers: t
   } = e;
-  f = d({}, t)
+  _ = d({}, t)
 }
 
 function y(e) {
@@ -87,7 +87,7 @@ function O(e) {
   let {
     guild: t
   } = e;
-  _(t.id)
+  f(t.id)
 }
 
 function v(e) {
@@ -122,7 +122,7 @@ function A(e) {
   let {
     channel: t
   } = e;
-  delete f[t.id]
+  delete _[t.id]
 }
 
 function N(e) {
@@ -141,7 +141,7 @@ function C(e) {
 }
 
 function R(e) {
-  if (null != e && !(e.id in f)) {
+  if (null != e && !(e.id in _)) {
     let t = c.Z.getChannel(e.id);
     if (null != t) return g(t), !0
   }
@@ -149,7 +149,7 @@ function R(e) {
 }
 
 function P(e) {
-  let t = f[e.id];
+  let t = _[e.id];
   if (null == t) return !1;
   null != e.memberIdsPreview && (t.memberIdsPreview = e.memberIdsPreview), t.memberCount = e.memberCount
 }
@@ -159,14 +159,14 @@ class w extends(r = o.ZP.Store) {
   }
   getMemberCount(e) {
     var t, n;
-    return null != (n = null == (t = f[e]) ? void 0 : t.memberCount) ? n : null
+    return null != (n = null == (t = _[e]) ? void 0 : t.memberCount) ? n : null
   }
   getMemberIdsPreview(e) {
     var t, n;
-    return null != (n = null == (t = f[e]) ? void 0 : t.memberIdsPreview) ? n : null
+    return null != (n = null == (t = _[e]) ? void 0 : t.memberIdsPreview) ? n : null
   }
   getInitialOverlayState() {
-    return f
+    return _
   }
 }
 u(w, "displayName", "ThreadMembersStore");

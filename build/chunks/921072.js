@@ -156,7 +156,7 @@ class u extends o.C {
   }
 }
 let d = new u;
-class f extends o.C {
+class _ extends o.C {
   create(e) {
     let t = {
       ackedDisclosures: []
@@ -196,4 +196,4 @@ class f extends o.C {
     }])
   }
 }
-new f
+new _

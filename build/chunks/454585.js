@@ -43,20 +43,20 @@ function d(e, t) {
   return n
 }
 
-function f(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = null;
+let f = null;
 
 function p(e, t) {
   let n = {};
-  return null != e.mention && null != _ && (n = {
-    mention: _
+  return null != e.mention && null != f && (n = {
+    mention: f
   }), (0, l.Z)([e, ...t, n])
 }
-_ = n(878611).Z;
+f = n(878611).Z;
 let h = {
     enableBuildOverrides: !1,
     enableEmojiClick: !0
@@ -65,14 +65,14 @@ let h = {
     enableBuildOverrides: !0
   })]),
   g = i().omit(p(s.Z.RULES, [(0, o.Z)(h)]), "paragraph", "newline"),
-  E = p(s.Z.CHANNEL_TOPIC_RULES, [(0, o.Z)(f(u({}, h), {
+  E = p(s.Z.CHANNEL_TOPIC_RULES, [(0, o.Z)(_(u({}, h), {
     emojiTooltipPosition: "bottom"
   })), {
     codeBlock: {
       react: s.Z.RULES.text.react
     }
   }]),
-  b = p(s.Z.VOICE_CHANNEL_STATUS_RULES, [(0, o.Z)(f(u({}, h), {
+  b = p(s.Z.VOICE_CHANNEL_STATUS_RULES, [(0, o.Z)(_(u({}, h), {
     enableEmojiClick: !1
   }))]),
   y = p(s.Z.EMBED_TITLE_RULES, [(0, o.Z)(h)]),

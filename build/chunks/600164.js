@@ -43,13 +43,13 @@ function d(e, t) {
   return n
 }
 
-function f(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function _(e, t) {
+function f(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -102,8 +102,8 @@ let h = {
       grow: p = 1,
       basis: b = "auto",
       style: y
-    } = e, O = _(e, ["children", "className", "direction", "justify", "align", "wrap", "shrink", "grow", "basis", "style"]);
-    return (0, r.jsx)("div", f(u({
+    } = e, O = f(e, ["children", "className", "direction", "justify", "align", "wrap", "shrink", "grow", "basis", "style"]);
+    return (0, r.jsx)("div", _(u({
       style: u({
         flexShrink: d,
         flexGrow: p,
@@ -123,7 +123,7 @@ b.Child = e => {
     basis: c = "auto",
     style: d,
     wrap: p = !1
-  } = e, h = _(e, ["children", "className", "shrink", "grow", "basis", "style", "wrap"]);
+  } = e, h = f(e, ["children", "className", "shrink", "grow", "basis", "style", "wrap"]);
   let m = u({
     className: n = null != n ? n : s.flexChild,
     style: u({
@@ -136,7 +136,7 @@ b.Child = e => {
     let e = i.Children.only(t);
     return m.style = u({}, m.style, e.props.style), m.className = o()(e.props.className, n), i.cloneElement(e, m)
   }
-  return (0, r.jsx)("div", f(u({}, m), {
+  return (0, r.jsx)("div", _(u({}, m), {
     children: t
   }))
 }, b.Direction = h, b.Align = g, b.Justify = m, b.Wrap = E;

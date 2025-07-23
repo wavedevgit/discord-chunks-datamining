@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 });
 var r = n(255367),
   i = n(73800),
@@ -12,28 +12,28 @@ var r = n(255367),
   c = n(580552),
   u = n(249458),
   d = n(240991),
-  f = n(73433);
+  _ = n(73433);
 
-function _(e) {
+function f(e) {
   let {
     userBio: t,
     className: n,
     animateOnHover: a = !1,
-    isHovering: _ = !1,
+    isHovering: f = !1,
     lineClamp: p = 6,
     setLineClamp: h = !0,
     textColor: m,
     userId: g
   } = e, E = i.useMemo(() => (0, c.Z)(g) ? (0, r.jsx)(l.Z, {}) : null == t || "" === t ? null : (0, d.parseBioReact)(t), [g, t]);
   return null == E ? null : (0, r.jsx)("div", {
-    className: o()(n, f.markup),
+    className: o()(n, _.markup),
     children: (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
       lineClamp: h ? p : void 0,
       color: void 0 !== m ? m : void 0,
       children: (0, r.jsx)(u.G.Provider, {
         value: {
-          disableAnimations: a && !_,
+          disableAnimations: a && !f,
           disableInteractions: !1
         },
         children: E

@@ -2,9 +2,9 @@
 "use strict";
 n.d(t, {
   Jj: () => u,
-  Lz: () => f,
+  Lz: () => _,
   gS: () => d,
-  s$: () => _,
+  s$: () => f,
   wV: () => s
 });
 var r = n(829883),
@@ -23,11 +23,11 @@ function d(e, t) {
   return o.ZP.canSaveImage(e, t) && a.Z.isDiscordAssetUrl(e) && u(e)
 }
 
-function f(e, t) {
+function _(e, t) {
   return o.ZP.canCopyImage(e, t) && a.Z.isDiscordAssetUrl(e) && u(e)
 }
 
-function _(e, t, n) {
+function f(e, t, n) {
   let r = a.Z.toURLSafe(e);
   if (null == r || r.host === c) return e;
   let i = (0, o.mD)(e, t);

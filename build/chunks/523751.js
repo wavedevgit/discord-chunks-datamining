@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(780384),
   u = n(481060),
   d = n(436774),
-  f = n(623624),
-  _ = n(297700),
+  _ = n(623624),
+  f = n(297700),
   p = n(210887),
   h = n(271383),
   m = n(594174),
@@ -220,7 +220,7 @@ function M(e) {
     j = (0, y.i)(k),
     U = i.useMemo(() => k.premium && L && !A, [A, k.premium, L]),
     G = i.useCallback(e => {
-      U && (e.stopPropagation(), e.preventDefault(), (0, f.f)({
+      U && (e.stopPropagation(), e.preventDefault(), (0, _.f)({
         guildId: o.id,
         location: {
           section: I.jXE.GUILD_HEADER,
@@ -257,7 +257,7 @@ function M(e) {
     children: e => (0, r.jsx)(u.P3F, {
       onClick: G,
       tabIndex: U ? 0 : -1,
-      children: (0, r.jsx)(_.Z, R(N({}, e), {
+      children: (0, r.jsx)(f.Z, R(N({}, e), {
         className: g,
         flowerStarClassName: E,
         allowFullSizedIcon: !0,

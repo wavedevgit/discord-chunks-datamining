@@ -14,8 +14,8 @@ var r = n(255367),
   c = n(375954),
   u = n(378364),
   d = n(197344),
-  f = n(978636),
-  _ = n(643420),
+  _ = n(978636),
+  f = n(643420),
   p = n(131333),
   h = n(981631);
 
@@ -68,7 +68,7 @@ function b(e) {
           children: e
         });
       case u.O.SNOW:
-        return (0, r.jsx)(_.k, {
+        return (0, r.jsx)(f.k, {
           children: e
         })
     }
@@ -88,12 +88,12 @@ function y(e) {
     triggerAnimation: l
   } = i.useContext(g);
   return i.useEffect(() => {
-    if (!u.Z.triggerEmojiAnimationFromSentMessage || (null == s ? void 0 : s.state) !== h.yb.SENT || (0, f.JL)(r)) return;
+    if (!u.Z.triggerEmojiAnimationFromSentMessage || (null == s ? void 0 : s.state) !== h.yb.SENT || (0, _.JL)(r)) return;
     let {
       top: e,
       bottom: n
     } = t.getBoundingClientRect();
-    e >= 0 && n <= window.innerHeight && (l(o), (0, f.i9)(r))
+    e >= 0 && n <= window.innerHeight && (l(o), (0, _.i9)(r))
   }, [o, t, null == s ? void 0 : s.state, r, l]), null
 }
 
@@ -104,8 +104,8 @@ function O(e) {
     emojiName: i,
     disable: l,
     emojiRef: c
-  } = e, u = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), f = d.Z.useIsEligible(), _ = (0, o.bp)();
-  return l || _ === h.IlC.OVERLAY || !f || null == n || null == t || u || null == c || !m(i) ? null : (0, r.jsx)(y, {
+  } = e, u = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), _ = d.Z.useIsEligible(), f = (0, o.bp)();
+  return l || f === h.IlC.OVERLAY || !_ || null == n || null == t || u || null == c || !m(i) ? null : (0, r.jsx)(y, {
     emojiRef: c,
     channelId: t,
     messageId: n,

@@ -11,8 +11,8 @@ var r, i = n(392711),
   c = n(89892),
   u = n(673750),
   d = n(710845),
-  f = n(247206),
-  _ = n(723352),
+  _ = n(247206),
+  f = n(723352),
   p = n(160404),
   h = n(786761),
   m = n(418476),
@@ -117,8 +117,8 @@ function Z(e) {
     isStale: l,
     truncate: u,
     avoidInitialScroll: d
-  } = e, f = c.Z.getOrCreate(t);
-  f = f.loadComplete({
+  } = e, _ = c.Z.getOrCreate(t);
+  _ = _.loadComplete({
     newMessages: s,
     isBefore: n,
     isAfter: r,
@@ -128,7 +128,7 @@ function Z(e) {
     cached: l,
     hasFetched: !0,
     avoidInitialScroll: d
-  }), null != u && (n || r) && (!n || !r) && (f = f.truncate(n, r)), c.Z.commit(f)
+  }), null != u && (n || r) && (!n || !r) && (_ = _.truncate(n, r)), c.Z.commit(_)
 }
 
 function H(e) {
@@ -237,7 +237,7 @@ function J(e) {
     channelId: n
   } = e, r = c.Z.get(n);
   if (null == r || !r.has(t)) return !1;
-  r = r.update(t, f.Cm), c.Z.commit(r)
+  r = r.update(t, _.Cm), c.Z.commit(r)
 }
 
 function $(e) {
@@ -326,7 +326,7 @@ function el(e) {
   if (!o.has(i)) return !1;
   o = o.update(i, e => {
     var n;
-    return (null == (n = e.embeds) ? void 0 : n.filter(_.K).length) > 0 && (e = e.set("embeds", [])), "MESSAGE_SEND_FAILED_AUTOMOD" === t && (e = e.set("flags", (0, b.pj)(e.flags, D.iLy.EPHEMERAL))), e
+    return (null == (n = e.embeds) ? void 0 : n.filter(f.K).length) > 0 && (e = e.set("embeds", [])), "MESSAGE_SEND_FAILED_AUTOMOD" === t && (e = e.set("flags", (0, b.pj)(e.flags, D.iLy.EPHEMERAL))), e
   }), c.Z.commit(o)
 }
 
@@ -355,14 +355,14 @@ function ed() {
   }), x.clear()
 }
 
-function ef(e) {
+function e_(e) {
   for (let [t, n] of y.default.entries(e.messages)) {
     let e = c.Z.getOrCreate(t).addCachedMessages(n, !0);
     c.Z.commit(e)
   }
 }
 
-function e_(e) {
+function ef(e) {
   let t = c.Z.getOrCreate(e.channelId);
   (t.cached || !t.ready) && c.Z.commit(t.addCachedMessages(e.messages, e.stale))
 }
@@ -442,12 +442,12 @@ let em = new eh(s.Z, {
   BACKGROUND_SYNC_CHANNEL_MESSAGES: U,
   CONNECTION_OPEN: j,
   OVERLAY_INITIALIZE: j,
-  CACHE_LOADED: ef,
+  CACHE_LOADED: e_,
   LOAD_MESSAGES: G,
   LOAD_MESSAGES_SUCCESS: Z,
   LOAD_MESSAGES_FAILURE: H,
   LOAD_MESSAGES_SUCCESS_CACHED: F,
-  LOCAL_MESSAGES_LOADED: e_,
+  LOCAL_MESSAGES_LOADED: ef,
   LOAD_MESSAGE_INTERACTION_DATA_SUCCESS: $,
   TRUNCATE_MESSAGES: B,
   CLEAR_MESSAGES: V,

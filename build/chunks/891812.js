@@ -2,7 +2,7 @@
 "use strict";
 let r;
 n.d(t, {
-  Z: () => _
+  Z: () => f
 }), n(388685);
 var i = n(46973),
   a = n(846027),
@@ -20,7 +20,7 @@ function d(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class f extends o.Z {
+class _ extends o.Z {
   constructor(...e) {
     super(...e), d(this, "handlePostConnectionOpen", () => {
       null == r || r(), (0, l.isWeb)() || (r = c.g.subscribe({
@@ -44,4 +44,4 @@ class f extends o.Z {
     })
   }
 }
-let _ = new f
+let f = new _

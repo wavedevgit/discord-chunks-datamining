@@ -33,14 +33,14 @@ let c = {
     } = e;
     if (!a) return n;
     let {
-      border: f,
-      background: _
+      border: _,
+      background: f
     } = c[i];
     return (0, r.jsx)("div", {
       ref: t,
-      className: o()(f, u),
+      className: o()(_, u),
       children: (0, r.jsx)("div", {
-        className: o()(l ? _ : s.background, d),
+        className: o()(l ? f : s.background, d),
         children: n
       })
     })

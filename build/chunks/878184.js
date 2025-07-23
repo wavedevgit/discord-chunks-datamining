@@ -16,7 +16,7 @@ function u(e) {
   let {
     name: t,
     onRetry: n
-  } = e, u = (0, s.nv)(), d = (0, s.dG)(u.hex()), f = null != t ? t : l.intl.string(l.t.DmIUGB);
+  } = e, u = (0, s.nv)(), d = (0, s.dG)(u.hex()), _ = null != t ? t : l.intl.string(l.t.DmIUGB);
   return (0, r.jsxs)("div", {
     className: c.container,
     children: [(0, r.jsx)("div", {
@@ -33,7 +33,7 @@ function u(e) {
         children: (0, r.jsx)("div", {
           className: c.avatarWrapper,
           children: (0, r.jsx)(o.R$, {
-            guildName: f,
+            guildName: _,
             iconSize: 64
           })
         })
@@ -43,7 +43,7 @@ function u(e) {
       children: [(0, r.jsx)(i.X6q, {
         variant: "heading-lg/medium",
         color: "header-primary",
-        children: f
+        children: _
       }), (0, r.jsxs)(i.P3F, {
         className: c.error,
         onClick: n,

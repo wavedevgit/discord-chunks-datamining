@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => f,
-  r: () => _
+  Z: () => _,
+  r: () => f
 }), n(415506), n(388685);
 var r = n(73800),
   i = n(134158),
@@ -54,14 +54,14 @@ let d = Object.freeze({
   isSidebarVisible: !1
 });
 
-function f(e) {
+function _(e) {
   let {
     sections: t,
     sectionHeight: n,
     rowHeight: s,
     footerHeight: c,
-    sidebarHeight: f,
-    listHeaderHeight: _,
+    sidebarHeight: _,
+    listHeaderHeight: f,
     chunkSize: p = 256,
     paddingTop: h = 0,
     paddingBottom: m = 0,
@@ -97,18 +97,18 @@ function f(e) {
   }
   let R = (0, r.useMemo)(() => {
       let e = Math.max(0, I * p);
-      return null != f && e < f
-    }, [p, I, f]),
+      return null != _ && e < _
+    }, [p, I, _]),
     P = (0, r.useMemo)(() => v > 0 ? y.current : (O.mergeProps({
       sectionHeight: n,
       rowHeight: s,
       footerHeight: c,
-      listHeaderHeight: _,
+      listHeaderHeight: f,
       paddingBottom: m,
       paddingTop: h,
       sections: t,
       getAnchorId: E
-    }), O.compute(Math.max(0, I * p), T * p)), [v, I, T, n, s, c, _, m, h, t, O, p, E]);
+    }), O.compute(Math.max(0, I * p), T * p)), [v, I, T, n, s, c, f, m, h, t, O, p, E]);
   return (0, r.useLayoutEffect)(() => void(y.current = P)), u(l({}, P), {
     listComputer: O,
     forceUpdateOnChunkChange: S,
@@ -117,7 +117,7 @@ function f(e) {
   })
 }
 
-function _(e) {
+function f(e) {
   let {
     scrollerRef: t,
     anchor: n,

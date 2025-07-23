@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(481060),
   u = n(493773),
   d = n(468363),
-  f = n(906732),
-  _ = n(158776),
+  _ = n(906732),
+  f = n(158776),
   p = n(885110),
   h = n(823379),
   m = n(785717),
@@ -105,7 +105,7 @@ function M(e) {
     onClose: R
   } = e, {
     analyticsLocations: P
-  } = (0, f.ZP)(), {
+  } = (0, _.ZP)(), {
     trackUserProfileAction: M
   } = (0, m.KZ)(), {
     live: k,
@@ -116,8 +116,8 @@ function M(e) {
   } = (0, E.Z)({
     userId: t.id,
     guildId: h
-  }), B = t.id === n.id, V = (0, s.e7)([p.Z, _.Z], () => {
-    let e = B ? p.Z.getStatus() : _.Z.getStatus(t.id, h);
+  }), B = t.id === n.id, V = (0, s.e7)([p.Z, f.Z], () => {
+    let e = B ? p.Z.getStatus() : f.Z.getStatus(t.id, h);
     return e === T.Sk.OFFLINE || e === T.Sk.INVISIBLE
   }), {
     voiceActivityStatusEnabled: F

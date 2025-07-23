@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  M: () => _,
+  M: () => f,
   Z: () => O
 });
 var r, i = n(31775),
@@ -47,8 +47,8 @@ function d(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let f = 20;
-var _ = function(e) {
+let _ = 20;
+var f = function(e) {
   return e[e.NOT_FETCHED = 0] = "NOT_FETCHED", e[e.FETCHING = 1] = "FETCHING", e[e.FETCHED = 2] = "FETCHED", e[e.ERROR = 3] = "ERROR", e
 }({});
 
@@ -61,7 +61,7 @@ function p(e) {
   return "applicationId:".concat(t, " guildId:").concat(n, " page:").concat(r)
 }
 let h = new(a())({
-    max: f
+    max: _
   }),
   m = {};
 

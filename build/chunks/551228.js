@@ -3,7 +3,7 @@
 n.d(t, {
   ZP: () => m,
   pi: () => p,
-  te: () => _
+  te: () => f
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -14,8 +14,8 @@ var r = n(255367),
   c = n(442550),
   u = n(297781),
   d = n(443487),
-  f = n(522314);
-let _ = [u.XF];
+  _ = n(522314);
+let f = [u.XF];
 
 function p(e) {
   var t, n, r, i;
@@ -24,12 +24,12 @@ function p(e) {
   if (null == s || null == c) return {};
   let u = e.extra.entries[0],
     d = null != (r = null != (n = s.state) ? n : null == (t = u.media.artists[0]) ? void 0 : t.name) ? r : u.media.title,
-    f = null != (i = s.details) ? i : u.media.title;
+    _ = null != (i = s.details) ? i : u.media.title;
   return {
     activity: s,
     artist: d,
     currentEntry: u,
-    title: f,
+    title: _,
     user: c
   }
 }
@@ -59,7 +59,7 @@ function h(e) {
         children: l
       }), (0, r.jsx)(u.Gk, {
         location: u.Gt.CARD,
-        children: _.map((e, n) => (0, r.jsx)(e, {
+        children: f.map((e, n) => (0, r.jsx)(e, {
           entry: t,
           hovered: a
         }, n))
@@ -67,7 +67,7 @@ function h(e) {
     }), (0, r.jsx)(c.f, {
       src: null == h ? void 0 : h.src,
       size: 48,
-      className: f.thumbnail
+      className: _.thumbnail
     })]
   })
 }

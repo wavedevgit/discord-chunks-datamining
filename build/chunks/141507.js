@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(339085),
   u = n(906411),
   d = n(438332),
-  f = n(664437),
-  _ = n(806966),
+  _ = n(664437),
+  f = n(806966),
   p = n(65029),
   h = n(210887),
   m = n(695346),
@@ -57,7 +57,7 @@ let P = e => {
       }, {
         autoTrackExposure: !1
       }),
-      G = _.kJ.useStore(e => e.inspectedExpressionPosition),
+      G = f.kJ.useStore(e => e.inspectedExpressionPosition),
       B = i.useMemo(() => {
         var e;
         let {
@@ -101,7 +101,7 @@ let P = e => {
     if (i.useEffect(() => {
         let e = Date.now();
         return () => {
-          Date.now() - e >= C && R(t) && z !== S.t0.NONE && (z === S.t0.NEWLY_ADDED_EMOJI && null !== t && t.type === u.B.GUILD && (0, f.Zg)(t.guildId, K[0].id), null != G.source && (0, O.Gn)({
+          Date.now() - e >= C && R(t) && z !== S.t0.NONE && (z === S.t0.NEWLY_ADDED_EMOJI && null !== t && t.type === u.B.GUILD && (0, _.Zg)(t.guildId, K[0].id), null != G.source && (0, O.Gn)({
             emoji: t,
             subCategory: z,
             position: B.columnIndex + 1,
