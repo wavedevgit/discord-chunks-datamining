@@ -1,4 +1,5 @@
-/** Chunk was on 60173 **/
+/** Chunk was on 98786 **/
+"use strict";
 e.exports = {
   wrapper: "wrapper_fc8177",
   compact: "compact_fc8177",

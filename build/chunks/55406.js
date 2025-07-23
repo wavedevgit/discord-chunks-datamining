@@ -1,4 +1,4 @@
-/** Chunk was on 87048 **/
+/** Chunk was on 98786 **/
 "use strict";
 let r;
 n.r(t), n.d(t, {
@@ -45,15 +45,15 @@ function u(e, t) {
 }
 let p = i().defaultRules.lheading,
   m = i().defaultRules.heading,
-  b = i().defaultRules.link,
-  _ = i().defaultRules.image,
+  _ = i().defaultRules.link,
+  b = i().defaultRules.image,
   g = i().defaultRules.list,
   h = i().defaultRules.blockQuote,
   f = i().defaultRules.paragraph,
   y = /\{(.+?)}/,
-  O = /^\$(\w+?)\$/;
+  x = /^\$(\w+?)\$/;
 r = n(235375);
-let x = e => {
+let O = e => {
     let {
       transformUpperCase: t = !1
     } = e;
@@ -68,12 +68,12 @@ let x = e => {
     }
   },
   k = e => u(d({}, r.baseRules), {
-    image: d({}, _, "function" == typeof r.customRules.image ? r.customRules.image(e) : r.customRules.image),
-    link: d({}, b, "function" == typeof r.customRules.link ? r.customRules.link(e) : r.customRules.link),
+    image: d({}, b, "function" == typeof r.customRules.image ? r.customRules.image(e) : r.customRules.image),
+    link: d({}, _, "function" == typeof r.customRules.link ? r.customRules.link(e) : r.customRules.link),
     list: d({}, g, "function" == typeof r.customRules.list ? r.customRules.list(e) : r.customRules.list),
     interpolation: {
       order: s.ZP.order,
-      match: e => O.exec(e),
+      match: e => x.exec(e),
       parse(e, t, n) {
         let r = n.interpolations[e[1]];
         return null == r ? {
@@ -87,7 +87,7 @@ let x = e => {
       react: e => e.renderer()
     },
     lheading: d(u(d({}, p), {
-      parse: x({
+      parse: O({
         transformUpperCase: !0
       })
     }), "function" == typeof r.customRules.lheading ? r.customRules.lheading(e) : r.customRules.lheading),
@@ -97,7 +97,7 @@ let x = e => {
   }),
   j = e => ({
     lheading: d(u(d({}, p), {
-      parse: x({
+      parse: O({
         transformUpperCase: !1
       })
     }), "function" == typeof r.customRules.lheading ? r.customRules.lheading(e) : r.customRules.lheading)

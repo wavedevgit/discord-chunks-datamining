@@ -1,4 +1,4 @@
-/** Chunk was on 87048 **/
+/** Chunk was on 98786 **/
 "use strict";
 n.d(t, {
   default: () => h
@@ -15,7 +15,7 @@ var r = n(255367),
   p = n(388032),
   m = n(104313);
 
-function b(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -24,14 +24,14 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -45,7 +45,7 @@ class g extends o.PureComponent {
   }
   render() {
     var e, t;
-    return (0, r.jsx)(c.Z, (e = _({}, this.props), t = t = {
+    return (0, r.jsx)(c.Z, (e = b({}, this.props), t = t = {
       onClose: this.close,
       onScroll: this.handleScroll,
       track: this.track
@@ -62,16 +62,16 @@ class g extends o.PureComponent {
   }
   constructor(...e) {
     var t;
-    super(...e), t = this, b(this, "maxScrolledPercentage", 0), b(this, "mountedAt", 0), b(this, "close", () => {
+    super(...e), t = this, _(this, "maxScrolledPercentage", 0), _(this, "mountedAt", 0), _(this, "close", () => {
       (0, i.Mr3)(u.Xd)
-    }), b(this, "handleScroll", e => {
+    }), _(this, "handleScroll", e => {
       let {
         offsetHeight: t,
         scrollHeight: n,
         scrollTop: r
       } = e.getScrollerState();
       this.maxScrolledPercentage = Math.min(Math.max(this.maxScrolledPercentage, r / (n - t)), 1)
-    }), b(this, "track", function(e) {
+    }), _(this, "track", function(e) {
       let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
         r = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
         {
@@ -81,10 +81,10 @@ class g extends o.PureComponent {
           date: i,
           revision: a
         } = o,
-        l = _({
+        l = b({
           change_log_id: "".concat(i, ":").concat(a)
         }, n);
-      r || (l = _({
+      r || (l = b({
         seconds_open: Math.round((Date.now() - t.mountedAt) / 1e3),
         max_scrolled_percentage: 100 * parseInt(t.maxScrolledPercentage.toPrecision(4), 10)
       }, l)), s.default.track(e, l)

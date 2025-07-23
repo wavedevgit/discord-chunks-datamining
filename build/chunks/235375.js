@@ -1,7 +1,7 @@
-/** Chunk was on 87048 **/
+/** Chunk was on 98786 **/
 "use strict";
 n.r(t), n.d(t, {
-  baseRules: () => x,
+  baseRules: () => O,
   customRules: () => k
 }), n(35282), n(388685);
 var r = n(255367),
@@ -15,8 +15,8 @@ var r = n(255367),
   u = n(230711),
   p = n(454585),
   m = n(703656),
-  b = n(626135),
-  _ = n(981631),
+  _ = n(626135),
+  b = n(981631),
   g = n(596401);
 
 function h(e) {
@@ -39,9 +39,9 @@ function h(e) {
 }
 let f = s().defaultRules.link,
   y = {
-    section: _.jXE.SETTINGS_CHANGELOG
+    section: b.jXE.SETTINGS_CHANGELOG
   },
-  O = e => {
+  x = e => {
     let {
       level: t,
       children: n,
@@ -52,7 +52,7 @@ let f = s().defaultRules.link,
       className: a()(...null == r ? [] : r.split(" ").map(e => i[e]))
     }, n)
   },
-  x = null != p.Z ? p.Z.defaultRules : null,
+  O = null != p.Z ? p.Z.defaultRules : null,
   k = {
     link: {
       parse(e, t, n) {
@@ -62,18 +62,18 @@ let f = s().defaultRules.link,
           s = a.startsWith("https://discordapp.com/hypesquad") || a.startsWith("https://discord.com/hypesquad"),
           p = a.startsWith("/shop/fullscreen?source=1") || a.startsWith("/activities");
         return i = l || s ? e => {
-          b.default.track(_.rMx.PREMIUM_PROMOTION_OPENED, {
+          _.default.track(b.rMx.PREMIUM_PROMOTION_OPENED, {
             location: y
-          }), l ? u.Z.open(_.oAB.PREMIUM) : s && u.Z.open(_.oAB.HYPESQUAD_ONLINE), n.changeLog.track(_.rMx.CHANGE_LOG_CTA_CLICKED, {
+          }), l ? u.Z.open(b.oAB.PREMIUM) : s && u.Z.open(b.oAB.HYPESQUAD_ONLINE), n.changeLog.track(b.rMx.CHANGE_LOG_CTA_CLICKED, {
             cta_type: "nitro"
           }), (0, c.Mr3)(g.Xd), e.preventDefault()
         } : p ? e => {
-          (0, m.uL)(a), n.changeLog.track(_.rMx.CHANGE_LOG_CTA_CLICKED, h({}, b.default.getCampaignParams(a))), (0, d.Ou)(), (0, c.Mr3)(g.Xd), e.preventDefault()
+          (0, m.uL)(a), n.changeLog.track(b.rMx.CHANGE_LOG_CTA_CLICKED, h({}, _.default.getCampaignParams(a))), (0, d.Ou)(), (0, c.Mr3)(g.Xd), e.preventDefault()
         } : () => {
-          n && "function" == typeof n.onLinkClick && n.onLinkClick(a), n.changeLog.track(_.rMx.CHANGE_LOG_CTA_CLICKED, h({
+          n && "function" == typeof n.onLinkClick && n.onLinkClick(a), n.changeLog.track(b.rMx.CHANGE_LOG_CTA_CLICKED, h({
             target: a,
             cta_type: "inline_link"
-          }, b.default.getCampaignParams(a)))
+          }, _.default.getCampaignParams(a)))
         }, r = h({}, f.parse(e, t, n)), o = o = {
           callToAction: i
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
@@ -97,7 +97,7 @@ let f = s().defaultRules.link,
       }, n.key)
     },
     lheading: e => ({
-      react: (t, n, o) => (0, r.jsx)(O, {
+      react: (t, n, o) => (0, r.jsx)(x, {
         level: t.level,
         className: t.className,
         styleSheet: e,
@@ -105,7 +105,7 @@ let f = s().defaultRules.link,
       }, o.key)
     }),
     heading: {
-      react: (e, t, n) => (0, r.jsx)(O, {
+      react: (e, t, n) => (0, r.jsx)(x, {
         level: e.level,
         children: t(e.content, n)
       }, n.key)
@@ -120,7 +120,7 @@ let f = s().defaultRules.link,
       }
     },
     blockQuote: {
-      react: null == x ? void 0 : x.blockQuote.react
+      react: null == O ? void 0 : O.blockQuote.react
     },
     paragraph: {
       react: (e, t, n) => (0, r.jsx)("p", {

@@ -1,35 +1,35 @@
 /** Chunk was on 53937 **/
 t.d(l, {
-  Z: () => d
+  Z: () => u
 }), t(853839), t(570086), t(479048);
-var n = t(255367),
-  r = t(73800),
+var r = t(255367),
+  n = t(73800),
   i = t(70097),
   s = t(947849),
   a = t(981631),
   o = t(388032);
 
-function u(e) {
+function d(e) {
   let {
     poster: l,
     src: t,
     width: s,
     height: o,
-    naturalWidth: u,
-    naturalHeight: d,
+    naturalWidth: d,
+    naturalHeight: u,
     play: c = !0,
     className: h,
     alt: m,
     responsive: p
-  } = e, g = r.useRef(null);
-  return (r.useEffect(() => {
+  } = e, g = n.useRef(null);
+  return (n.useEffect(() => {
     let {
       current: e
     } = g;
     null != e && (c ? e.play().catch(e => {
       if (!(e instanceof DOMException) || "NotAllowedError" !== e.name) throw e
     }) : e.pause())
-  }, [c]), u <= a.N_j && d <= a.XKF || u <= a.XKF && d <= a.N_j) ? (0, n.jsx)(i.Z, {
+  }, [c]), d <= a.N_j && u <= a.XKF || d <= a.XKF && u <= a.N_j) ? (0, r.jsx)(i.Z, {
     ref: g,
     className: h,
     poster: l,
@@ -43,7 +43,7 @@ function u(e) {
     playsInline: !0,
     preload: "none",
     "aria-label": m
-  }) : (0, n.jsx)("img", {
+  }) : (0, r.jsx)("img", {
     alt: "",
     src: l,
     width: s,
@@ -51,14 +51,14 @@ function u(e) {
   })
 }
 
-function d(e) {
+function u(e) {
   var {
     src: l,
     poster: t,
-    naturalWidth: r,
+    naturalWidth: n,
     naturalHeight: i,
     responsive: a,
-    autoPlay: d,
+    autoPlay: u,
     className: c,
     playable: h = !0,
     renderImageComponent: m,
@@ -66,36 +66,36 @@ function d(e) {
     sourceMetadata: g
   } = e, b = function(e, l) {
     if (null == e) return {};
-    var t, n, r = function(e, l) {
+    var t, r, n = function(e, l) {
       if (null == e) return {};
-      var t, n, r = {},
+      var t, r, n = {},
         i = Object.keys(e);
-      for (n = 0; n < i.length; n++) t = i[n], l.indexOf(t) >= 0 || (r[t] = e[t]);
-      return r
+      for (r = 0; r < i.length; r++) t = i[r], l.indexOf(t) >= 0 || (n[t] = e[t]);
+      return n
     }(e, l);
     if (Object.getOwnPropertySymbols) {
       var i = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < i.length; n++) t = i[n], !(l.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (r[t] = e[t])
+      for (r = 0; r < i.length; r++) t = i[r], !(l.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (n[t] = e[t])
     }
-    return r
+    return n
   }(e, ["src", "poster", "naturalWidth", "naturalHeight", "responsive", "autoPlay", "className", "playable", "renderImageComponent", "alt", "sourceMetadata"]);
-  return (0, n.jsx)(s.h.Consumer, {
+  return (0, r.jsx)(s.h.Consumer, {
     children: e => {
       var s, o;
       return m((s = function(e) {
         for (var l = 1; l < arguments.length; l++) {
           var t = null != arguments[l] ? arguments[l] : {},
-            n = Object.keys(t);
-          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+            r = Object.keys(t);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
             return Object.getOwnPropertyDescriptor(t, e).enumerable
-          }))), n.forEach(function(l) {
-            var n;
-            n = t[l], l in e ? Object.defineProperty(e, l, {
-              value: n,
+          }))), r.forEach(function(l) {
+            var r;
+            r = t[l], l in e ? Object.defineProperty(e, l, {
+              value: r,
               enumerable: !0,
               configurable: !0,
               writable: !0
-            }) : e[l] = n
+            }) : e[l] = r
           })
         }
         return e
@@ -103,7 +103,7 @@ function d(e) {
         alt: p,
         src: t,
         containerClassName: c,
-        autoPlay: d,
+        autoPlay: u,
         animated: h,
         responsive: a,
         renderAccessory: e,
@@ -114,16 +114,16 @@ function d(e) {
             src: t,
             size: s,
             animating: o,
-            alt: d
+            alt: u
           } = e;
-          return (0, n.jsx)(u, {
-            alt: d,
+          return (0, r.jsx)(d, {
+            alt: u,
             className: c,
             poster: t,
             src: l,
             width: s.width,
             height: s.height,
-            naturalWidth: r,
+            naturalWidth: n,
             naturalHeight: i,
             responsive: a,
             play: h && o
@@ -134,8 +134,8 @@ function d(e) {
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(s, Object.getOwnPropertyDescriptors(o)) : (function(e, l) {
         var t = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e);
-          t.push.apply(t, n)
+          var r = Object.getOwnPropertySymbols(e);
+          t.push.apply(t, r)
         }
         return t
       })(Object(o)).forEach(function(e) {

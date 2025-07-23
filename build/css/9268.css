@@ -1,6 +1,6 @@
 /**
   Module ID: 9268
-  Original File Name: 6cafaf2d77c80489
+  Original File Name: 2ab7fcb43fec0f02
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -8732,43 +8732,6 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
     width: 100%
 }
 
-.bannerContainer_f01cc3 {
-    background: rgba(0,0,0,.2);
-    border-radius: 8px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    height: 56px;
-    margin-bottom: 17px;
-    padding: 14px 96px;
-    position: relative;
-    width: 100%
-}
-
-.bannerBodyContainer_f01cc3 {
-    align-items: center;
-    display: flex;
-    flex-grow: 1;
-    justify-content: center
-}
-
-.bannerBody_f01cc3,.bannerBody_f01cc3 a {
-    color: var(--white-500)
-}
-
-.bannerBody_f01cc3 a {
-    font-weight: var(--font-weight-medium);
-    text-decoration: underline
-}
-
-.badge_f01cc3 {
-    bottom: 0;
-    height: 44px;
-    left: 16px;
-    position: absolute;
-    width: 68px
-}
-
 .container__72cd3 {
     background-color: var(--background-base-lowest);
     border: 1px solid var(--border-subtle);
@@ -10583,146 +10546,6 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
     position: absolute;
     top: -40px;
     width: 100%
-}
-
-.cyBanner_cc67fb {
-    background: url(/assets/88f85032dc550fcb.svg) 100% 0 no-repeat
-}
-
-.eeBanner_cc67fb {
-    background: url(/assets/ccc6e10260437e69.svg) 100% 0 no-repeat
-}
-
-.ieBanner_cc67fb {
-    background: url(/assets/bc0056f359ef890a.svg) 100% 0 no-repeat
-}
-
-.ltBanner_cc67fb {
-    background: url(/assets/fabb9d2f4db4d5be.svg) 100% 0 no-repeat
-}
-
-.luBanner_cc67fb {
-    background: url(/assets/9aecfe7730c24ecc.svg) 100% 0 no-repeat
-}
-
-.lvBanner_cc67fb {
-    background: url(/assets/3bae82a0dd4f4eb4.svg) 100% 0 no-repeat
-}
-
-.mtBanner_cc67fb {
-    background: url(/assets/22a92b8992f0736f.svg) 100% 0 no-repeat
-}
-
-.siBanner_cc67fb {
-    background: url(/assets/b82302bee68829e0.svg) 100% 0 no-repeat
-}
-
-.skBanner_cc67fb {
-    background: url(/assets/ecbdceaae9fe8e54.svg) 100% 0 no-repeat
-}
-
-.atBanner_cc67fb {
-    background: url(/assets/6fb0c1583e1c4a6c.svg) 100% 0 no-repeat
-}
-
-.beBanner_cc67fb {
-    background: url(/assets/4ce8292fce8e605f.svg) 100% 0 no-repeat
-}
-
-.deBanner_cc67fb {
-    background: url(/assets/f94811bd635ce192.svg) 100% 0 no-repeat
-}
-
-.esBanner_cc67fb {
-    background: url(/assets/27990756c5d01090.svg) 100% 0 no-repeat
-}
-
-.fiBanner_cc67fb {
-    background: url(/assets/792d32ba4ed135d7.svg) 100% 0 no-repeat
-}
-
-.frBanner_cc67fb {
-    background: url(/assets/57e38ff7cdaece17.svg) 100% 0 no-repeat
-}
-
-.grBanner_cc67fb {
-    background: url(/assets/0586577bbd111373.svg) 100% 0 no-repeat
-}
-
-.itBanner_cc67fb {
-    background: url(/assets/323838f90239b160.svg) 100% 0 no-repeat
-}
-
-.nlBanner_cc67fb {
-    background: url(/assets/062152162e3d8bd6.svg) 100% 0 no-repeat
-}
-
-.ptBanner_cc67fb {
-    background: url(/assets/001bc57e65bc6ad8.svg) 100% 0 no-repeat
-}
-
-.hrBanner_cc67fb {
-    background: url(/assets/fc2d5109d7588e6e.svg) 100% 0 no-repeat
-}
-
-.bannerContainer_cc67fb {
-    background: linear-gradient(192.85deg,var(--premium-tier-0-header-gradient-1) 42.31%,var(--premium-tier-0-header-gradient-2) 72.74%,var(--premium-tier-0-header-gradient-3) 86.45%,var(--premium-tier-0-header-gradient-4) 98.78%,var(--premium-tier-0-header-gradient-5) 123.01%);
-    border-radius: 16px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    height: 190px;
-    padding: 24px;
-    position: relative;
-    width: 100%
-}
-
-.smallGap_cc67fb {
-    margin-bottom: 24px
-}
-
-.bigGap_cc67fb {
-    margin-bottom: 40px
-}
-
-.bannerImageContainer_cc67fb {
-    height: 100%;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%
-}
-
-.bannerBody_cc67fb,.bannerHeading_cc67fb {
-    color: var(--white-500)
-}
-
-.bannerBody_cc67fb {
-    max-width: 350px;
-    position: relative
-}
-
-.bannerBody_cc67fb a {
-    color: var(--white-500);
-    font-weight: var(--font-weight-medium);
-    text-decoration: underline
-}
-
-.textContainer_cc67fb {
-    align-items: center;
-    display: flex;
-    flex-grow: 1
-}
-
-.ctaButton_cc67fb {
-    height: 40px;
-    width: 160px
-}
-
-.ctaButtonContainer_cc67fb {
-    align-items: center;
-    display: flex;
-    grid-gap: 8px
 }
 
 .container__60b20 {
@@ -20016,4 +19839,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=6cafaf2d77c80489.css.map*/
+/*# sourceMappingURL=2ab7fcb43fec0f02.css.map*/

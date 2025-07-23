@@ -1,6 +1,6 @@
 /**
   Module ID: 67032
-  Original File Name: c6334c1dd35c0b49
+  Original File Name: d32a368502d4cc88
 **/
 @value minColumnWidth: 460px;
 
@@ -1482,7 +1482,7 @@
 .CTAButton__6df1a {
     display: flex;
     margin-top: auto;
-    padding-top: 40px;
+    padding-top: 0;
     width: 100%
 }
 
@@ -1564,4 +1564,4 @@
     margin-left: var(--space-12)
 }
 
-/*# sourceMappingURL=c6334c1dd35c0b49.css.map*/
+/*# sourceMappingURL=d32a368502d4cc88.css.map*/
