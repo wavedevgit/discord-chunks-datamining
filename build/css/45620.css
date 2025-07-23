@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: c18da561735edaa9
+  Original File Name: 4b1b8de83bd4423b
 **/
 .shopWrapper__6db1d {
     background: var(--background-base-low);
@@ -1093,6 +1093,13 @@
     height: 100%
 }
 
+.shopScroll__1feb0 {
+    background-color: var(--background-base-low);
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto
+}
+
 .countDownWrapper__66ce2 {
     align-items: center;
     border-radius: 48px;
@@ -1735,6 +1742,13 @@
     transform: translateX(250px)
 }
 
+.shopScroll__08415 {
+    background-color: var(--background-base-low);
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto
+}
+
 .jumbleWrapper__014df {
     --custom-guild-gutter: 72px;
     --custom-channel-gutter: 240px;
@@ -1909,4 +1923,4 @@
     cursor: pointer
 }
 
-/*# sourceMappingURL=c18da561735edaa9.css.map*/
+/*# sourceMappingURL=4b1b8de83bd4423b.css.map*/
