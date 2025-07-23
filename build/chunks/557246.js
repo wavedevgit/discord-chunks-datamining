@@ -1,4 +1,5 @@
-/** Chunk was on 46746 **/
+/** Chunk was on web.js **/
+"use strict";
 var r = n(127849);
 e.exports = function(e, t) {
   var n = r[e],

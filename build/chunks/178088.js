@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(740442),
   o = n(442837),
-  s = n(524437),
-  a = n(481060),
+  a = n(524437),
+  s = n(481060),
   c = n(100527),
   u = n(906732),
   d = n(602478),
@@ -40,7 +40,7 @@ function x(e) {
     analyticsLocations: T
   } = (0, u.ZP)(c.Z.NOTIFICATION_CENTER), [A, R] = i.useState(!1), [D, L] = [(0, o.e7)([g.Z], () => {
     var e, t;
-    return null != (t = null == (e = g.Z.settings.inbox) ? void 0 : e.currentTab) ? t : s.X.UNREADS
+    return null != (t = null == (e = g.Z.settings.inbox) ? void 0 : e.currentTab) ? t : a.X.UNREADS
   }), i.useCallback(e => {
     f.hW.updateAsync("inbox", t => {
       if (t.currentTab === e) return !1;
@@ -60,7 +60,7 @@ function x(e) {
         }, f.fy.INFREQUENT_USER_ACTION)
       }, []);
     return {
-      showTutorial: !t && e === s.X.UNREADS,
+      showTutorial: !t && e === a.X.UNREADS,
       setSeenTutorial: n
     }
   }(D), U = i.useCallback(() => {
@@ -80,43 +80,43 @@ function x(e) {
     location: "RecentsPopout"
   });
   i.useEffect(() => {
-    D !== s.X.BOOKMARKS || B || V || L(s.X.MENTIONS)
+    D !== a.X.BOOKMARKS || B || V || L(a.X.MENTIONS)
   });
   let z = i.useCallback(e => {
     e.shiftKey || U()
   }, [U]);
   return (0, r.jsx)(u.Gt, {
     value: T,
-    children: (0, r.jsx)(a.yRy, {
+    children: (0, r.jsx)(s.yRy, {
       targetElementRef: N,
-      animation: a.yRy.Animation.NONE,
+      animation: s.yRy.Animation.NONE,
       position: I,
       align: P,
       autoInvert: !1,
       shouldShow: A,
       onRequestClose: U,
       renderPopout: function() {
-        return (0, r.jsx)(a.VqE, {
+        return (0, r.jsx)(s.VqE, {
           "aria-label": E.intl.string(E.t.GSmTKC),
           className: Z,
-          children: D === s.X.FOR_YOU ? (0, r.jsx)(_.Z, {
+          children: D === a.X.FOR_YOU ? (0, r.jsx)(_.Z, {
             setTab: L,
             badgeState: S,
             closePopout: U
-          }) : D === s.X.MENTIONS ? (0, r.jsx)(O.Z, {
+          }) : D === a.X.MENTIONS ? (0, r.jsx)(O.Z, {
             setTab: L,
             onJump: z,
             badgeState: S,
             closePopout: U
-          }) : H && D === s.X.GAME_INVITES ? (0, r.jsx)(C.Z, {
+          }) : H && D === a.X.GAME_INVITES ? (0, r.jsx)(C.Z, {
             setTab: L,
             badgeState: S,
             closePopout: U
-          }) : B && V && D === s.X.BOOKMARKS ? (0, r.jsx)(b.Z, {
+          }) : B && V && D === a.X.BOOKMARKS ? (0, r.jsx)(b.Z, {
             setTab: L,
             badgeState: S,
             closePopout: U
-          }) : D === s.X.SCHEDULED ? (0, r.jsx)(y._, {
+          }) : D === a.X.SCHEDULED ? (0, r.jsx)(y._, {
             setTab: L,
             closePopout: U
           }) : (0, r.jsx)(l.SV, {

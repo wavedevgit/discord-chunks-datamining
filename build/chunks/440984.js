@@ -27,16 +27,16 @@ function b(e) {
     onClose: b,
     confettiCanvas: g,
     userWasChurned: j = !1,
-    userDiscountOffer: v
-  } = e, I = (0, l.ZP)(), T = (0, a.wj)(I) ? x : y, E = i.useRef(null), [P, O] = i.useState(!1), S = (0, _._)(t, f.Xh.PREMIUM_MONTH_TIER_2, v), N = (0, d.aS)(f.Xh.PREMIUM_MONTH_TIER_2, !1, !1, {
+    userDiscountOffer: I
+  } = e, v = (0, l.ZP)(), T = (0, a.wj)(v) ? x : y, E = i.useRef(null), [P, O] = i.useState(!1), S = (0, _._)(t, f.Xh.PREMIUM_MONTH_TIER_2, I), N = (0, d.aS)(f.Xh.PREMIUM_MONTH_TIER_2, !1, !1, {
     currency: t.currency,
     paymentSourceId: t.paymentSourceId
   }), R = (0, m.T4)(N.amount, N.currency), D = (0, o.e7)([c.Z], () => c.Z.useReducedMotion);
   if (i.useEffect(() => {
       null != E.current && null != S && O(!0)
-    }, [E, P, S]), null == v || null == S) return null;
+    }, [E, P, S]), null == I || null == S) return null;
   let w = C.intl.format(C.t.gPzMHR, {
-      numMonths: v.discount.user_usage_limit,
+      numMonths: I.discount.user_usage_limit,
       discountedPrice: S,
       regularPrice: R
     }),

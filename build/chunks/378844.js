@@ -7,8 +7,8 @@ var r, i = n(255367);
 n(73800);
 var l = n(442837),
   o = n(755721),
-  s = n(481060),
-  a = n(893776),
+  a = n(481060),
+  s = n(893776),
   c = n(391650),
   u = n(313201),
   d = n(144114),
@@ -54,7 +54,7 @@ let y = e => {
     min: f.YeM.MEMBER_AGE
   }), P = m.intl.string(m.t.BddRzc)) : E && (I = m.intl.formatToPlainString(m.t["sncw4+"], {
     min: f.YeM.ACCOUNT_AGE
-  }), P = m.intl.string(m.t.BddRzc))), null == S || null == I) ? null : (0, i.jsxs)(s.VqE, {
+  }), P = m.intl.string(m.t.BddRzc))), null == S || null == I) ? null : (0, i.jsxs)(a.VqE, {
     className: b.container,
     "aria-labelledby": y,
     children: [(0, i.jsx)("img", {
@@ -63,11 +63,11 @@ let y = e => {
       src: n(64395)
     }), (0, i.jsxs)("div", {
       className: b.content,
-      children: [(0, i.jsx)(s.X6q, {
+      children: [(0, i.jsx)(a.X6q, {
         variant: "heading-md/semibold",
         id: y,
         children: S
-      }), (0, i.jsx)(s.Text, {
+      }), (0, i.jsx)(a.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
         children: I
@@ -76,11 +76,11 @@ let y = e => {
         children: [null != P ? (0, i.jsx)("div", {
           "data-button-hoisted-classname-wrapper": !0,
           className: b.primaryButton,
-          children: (0, i.jsx)(s.zxk, {
+          children: (0, i.jsx)(a.zxk, {
             variant: "primary",
             text: P,
             onClick: () => {
-              v ? c.j() : j ? (0, s.ZDy)(async () => {
+              v ? c.j() : j ? (0, a.ZDy)(async () => {
                 let {
                   default: e
                 } = await Promise.resolve().then(n.bind(n, 607018));
@@ -89,14 +89,14 @@ let y = e => {
                 }, t))
               }, {
                 modalKey: g.M
-              }) : C && (a.Z.verifyResend(), (0, s.h7j)(e => {
+              }) : C && (s.Z.verifyResend(), (0, a.h7j)(e => {
                 var t, n, r;
-                return (0, i.jsx)(s.ConfirmModal, (n = _({
+                return (0, i.jsx)(a.ConfirmModal, (n = _({
                   header: m.intl.string(m.t.LykQYm),
                   confirmText: m.intl.string(m.t.BddRzc),
                   confirmButtonColor: o.zx.Colors.BRAND
                 }, e), r = r = {
-                  children: (0, i.jsx)(s.Text, {
+                  children: (0, i.jsx)(a.Text, {
                     variant: "text-md/normal",
                     children: m.intl.format(m.t.azKEPz, {
                       email: null == (t = p.default.getCurrentUser()) ? void 0 : t.email

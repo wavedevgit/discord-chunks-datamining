@@ -24,10 +24,10 @@ let h = () => {
     premiumSubscription: h,
     confettiCanvas: x,
     churnUserDiscountOffer: y
-  } = (0, d.a)(), b = (0, i.useRef)(null), [g, j] = (0, i.useState)(!1), v = (0, o.e7)([s.Z], () => s.Z.useReducedMotion), I = (0, c._)(h, m.Xh.PREMIUM_MONTH_TIER_2, y);
+  } = (0, d.a)(), b = (0, i.useRef)(null), [g, j] = (0, i.useState)(!1), I = (0, o.e7)([s.Z], () => s.Z.useReducedMotion), v = (0, c._)(h, m.Xh.PREMIUM_MONTH_TIER_2, y);
   if ((0, i.useEffect)(() => {
-      null !== b.current && null !== I && j(!0)
-    }, [b, I]), null === y) return null;
+      null !== b.current && null !== v && j(!0)
+    }, [b, v]), null === y) return null;
   let T = n === m.p9.TIER_2,
     E = [{
       text: _.intl.string(_.t["/r8g/v"]),
@@ -53,7 +53,7 @@ let h = () => {
           userDiscountOffer: y
         })
       })
-    }), !v && g && (0, r.jsx)(l.Z, {
+    }), !I && g && (0, r.jsx)(l.Z, {
       confettiTarget: b.current,
       confettiCanvas: x,
       confettiVelocityMultiplier: .75

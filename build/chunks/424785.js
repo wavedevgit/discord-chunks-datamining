@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(120356),
   o = n.n(l),
-  s = n(442837),
-  a = n(481060),
+  a = n(442837),
+  s = n(481060),
   c = n(475179),
   u = n(239091),
   d = n(146773),
@@ -131,7 +131,7 @@ class K extends D.ZP {
       connected: n,
       locked: i,
       connectChannelDropTarget: l,
-      connectChannelDragSource: s,
+      connectChannelDragSource: a,
       connectUserDropTarget: c,
       connectDragPreview: u,
       canReorderChannel: d,
@@ -150,19 +150,19 @@ class K extends D.ZP {
         [V.disabled]: this.isDisabled()
       }),
       "data-dnd-name": e.name,
-      children: [(0, r.jsx)(a.yRy, {
+      children: [(0, r.jsx)(s.yRy, {
         targetElementRef: this.channelItemRef,
         position: "right",
         renderPopout: this.renderPopout,
         spacing: 0,
         onRequestClose: this.closeGuildVerificationPopout,
         shouldShow: v,
-        children: () => (0, r.jsx)(a.ua7, {
+        children: () => (0, r.jsx)(s.ua7, {
           text: this.getTooltipText(),
           children: l => {
             var {
-              onClick: s,
-              onContextMenu: a
+              onClick: a,
+              onContextMenu: s
             } = l, c = function(e, t) {
               if (null == e) return {};
               var n, r, i = function(e, t) {
@@ -192,10 +192,10 @@ class K extends D.ZP {
               mentionCount: O,
               locked: i,
               onClick: () => {
-                this.handleClick(), null == s || s()
+                this.handleClick(), null == a || a()
               },
               onContextMenu: e => {
-                this.handleContextMenu(e), null == a || a()
+                this.handleContextMenu(e), null == s || s()
               },
               connectDragPreview: u,
               subtitle: this.renderSubtitle(),
@@ -215,7 +215,7 @@ class K extends D.ZP {
         })
       }), this.renderVoiceUsers()]
     });
-    return h && (j = c(j)), d && (j = l(s(j))), j
+    return h && (j = c(j)), d && (j = l(a(j))), j
   }
   constructor(...e) {
     super(...e), H(this, "channelItemRef", i.createRef()), H(this, "state", {
@@ -271,16 +271,16 @@ class K extends D.ZP {
         locked: t,
         forceShowButtons: n
       } = this.props;
-      if (!t) return (0, r.jsx)(a.ua7, {
+      if (!t) return (0, r.jsx)(s.ua7, {
         text: B.intl.string(B.t.ZXxLQk),
         children: t => {
           let {
             onMouseEnter: i,
             onMouseLeave: l,
-            onFocus: s,
+            onFocus: a,
             onBlur: u
           } = t;
-          return (0, r.jsx)(a.P3F, {
+          return (0, r.jsx)(s.P3F, {
             className: o()(V.iconItem, n ? V.alwaysShown : null),
             onClick: () => {
               c.Z.updateChatOpen(e.id, !0), this.handleClickChat()
@@ -288,9 +288,9 @@ class K extends D.ZP {
             "aria-label": B.intl.string(B.t.ZXxLQk),
             onMouseEnter: i,
             onMouseLeave: l,
-            onFocus: s,
+            onFocus: a,
             onBlur: u,
-            children: (0, r.jsx)(a.kBi, {
+            children: (0, r.jsx)(s.kBi, {
               size: "xs",
               color: "currentColor",
               className: V.actionIcon
@@ -321,11 +321,11 @@ function q(e) {
     disableSorting: i,
     isFavoriteCategory: l,
     collapsed: o,
-    voiceStates: a
-  } = e, c = (0, s.cj)([Z.ZP], () => ({
+    voiceStates: s
+  } = e, c = (0, a.cj)([Z.ZP], () => ({
     unread: Z.ZP.hasUnread(n.id),
     mentionCount: Z.ZP.getMentionCount(n.id)
-  })), u = (0, s.e7)([T.ZP], () => T.ZP.resolveUnreadSetting(n)), d = (0, s.cj)([I.Z, N.Z, w.Z], () => {
+  })), u = (0, a.e7)([T.ZP], () => T.ZP.resolveUnreadSetting(n)), d = (0, a.cj)([I.Z, N.Z, w.Z], () => {
     let e = I.Z.getChannel(n.parent_id),
       r = N.Z.getCheck(n.guild_id);
     return {
@@ -336,14 +336,14 @@ function q(e) {
       bypassLimit: w.Z.can(U.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), h = (0, s.e7)([S.Z], () => S.Z.isCollapsed(n.parent_id)), p = (0, x.ZP)(n.id), f = (0, s.e7)([j.Z], () => j.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, v.Rk)(n.id, C.pV.AUDIENCE), {
+  }), h = (0, a.e7)([S.Z], () => S.Z.isCollapsed(n.parent_id)), p = (0, x.ZP)(n.id), f = (0, a.e7)([j.Z], () => j.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, v.Rk)(n.id, C.pV.AUDIENCE), {
     isSubscriptionGated: m,
     needSubscriptionToAccess: _
-  } = (0, b.Z)(n.id), O = (0, s.e7)([T.ZP], () => T.ZP.isFavorite(t.id, n.id)), y = (0, E.xJ)(n.id), P = (0, L.Z)({
+  } = (0, b.Z)(n.id), O = (0, a.e7)([T.ZP], () => T.ZP.isFavorite(t.id, n.id)), y = (0, E.xJ)(n.id), P = (0, L.Z)({
     channel: n,
     isChannelSelected: !1,
     isChannelCollapsed: o,
-    voiceStates: a,
+    voiceStates: s,
     isSubscriptionGated: m,
     needSubscriptionToAccess: _,
     enableConnectedUserLimit: y || n.userLimit > 0 && n.userLimit < U.xGv

@@ -5,8 +5,8 @@ n.d(t, {
 var r, i = n(255367),
   l = n(73800),
   o = n(299608),
-  s = n.n(o),
-  a = n(91192),
+  a = n.n(o),
+  s = n(91192),
   c = n(924826),
   u = n(442837),
   d = n(902704),
@@ -255,12 +255,12 @@ class G extends(r = l.Component) {
     } = this.props, {
       preRenderedChildren: n
     } = this.state;
-    return (0, i.jsx)(a.SJ, {
+    return (0, i.jsx)(s.SJ, {
       children: r => {
         var {
           ref: l,
           role: o
-        } = r, s = function(e, t) {
+        } = r, a = function(e, t) {
           if (null == e) return {};
           var n, r, i = function(e, t) {
             if (null == e) return {};
@@ -294,7 +294,7 @@ class G extends(r = l.Component) {
             renderSection: this.renderSection,
             renderRow: this.renderRow,
             sections: [n, Math.max(e.length, 1)]
-          }, s, r))
+          }, a, r))
         })
       }
     })
@@ -318,15 +318,15 @@ class G extends(r = l.Component) {
       let i = l.Children.count(this.props.children);
       if (null == t) return;
       let o = Math.round((t.offsetHeight - 44 * i) / 44),
-        s = o > n.length ? n.slice(0, o + 1) : n,
-        a = s.map(e => null != r[e] ? r[e].getRecipientId() : null),
+        a = o > n.length ? n.slice(0, o + 1) : n,
+        s = a.map(e => null != r[e] ? r[e].getRecipientId() : null),
         c = n.some(e => (0, O.Z)(e)),
         u = {
-          num_users_visible: s.length,
-          num_users_visible_with_mobile_indicator: a.filter(e => null != e && Z.Z.isMobileOnline(e)).length
+          num_users_visible: a.length,
+          num_users_visible_with_mobile_indicator: s.filter(e => null != e && Z.Z.isMobileOnline(e)).length
         };
       this.hasReportedAnalytics = !0, m.ZP.trackWithMetadata(A.rMx.DM_LIST_VIEWED, k(M({}, u, (0, _.X)()), {
-        visible_user_ids: a.filter(e => null != e),
+        visible_user_ids: s.filter(e => null != e),
         changelog_dm_visible: c
       }))
     }), L(this, "getSectionHeight", e => {
@@ -334,7 +334,7 @@ class G extends(r = l.Component) {
         showDMHeader: t
       } = this.props;
       return 0 === e ? 0 : 24 * !!t
-    }), L(this, "handleScroll", s()(() => {
+    }), L(this, "handleScroll", a()(() => {
       if (null != this._list) {
         let e = this._list.getScrollerNode();
         null != e && p.Z.updateChannelListScroll(A.ME, e.scrollTop)
@@ -347,14 +347,14 @@ class G extends(r = l.Component) {
         selectedChannelId: l
       } = this.props, {
         totalRowCount: o,
-        preRenderedChildren: s
-      } = this.state, a = r[n[t]];
-      return null == a ? null : (0, i.jsx)(y.W, {
-        channel: a,
-        selected: a.id === l,
-        "aria-posinset": s + t + 1,
+        preRenderedChildren: a
+      } = this.state, s = r[n[t]];
+      return null == s ? null : (0, i.jsx)(y.W, {
+        channel: s,
+        selected: s.id === l,
+        "aria-posinset": a + t + 1,
         "aria-setsize": o
-      }, a.id)
+      }, s.id)
     }), L(this, "renderChild", e => {
       let {
         nonNullChildren: t,
@@ -404,8 +404,8 @@ class G extends(r = l.Component) {
       if (0 === e) {
         let e = i[t];
         if (l.isValidElement(e)) {
-          var s;
-          o = (null == (s = e.key) ? void 0 : s.startsWith("section-divider")) ? 25 : "dm-quick-launcher" === e.key ? 67 : 40
+          var a;
+          o = (null == (a = e.key) ? void 0 : a.startsWith("section-divider")) ? 25 : "dm-quick-launcher" === e.key ? 67 : 40
         }
       } else o = "compact" === r ? 40 : "default" === r ? 44 : 50;
       return 1 === e && 0 === t && 0 === n.length ? 428 : o
@@ -422,7 +422,7 @@ let B = e => {
     version: n,
     theme: r,
     children: o,
-    showDMHeader: s,
+    showDMHeader: a,
     listScrollerRef: d
   } = e, p = l.Children.count(o), m = w.Z.getMutablePrivateChannels(), _ = (0, I.k1)(m), O = (0, u.Wu)([T.Z, S.Z, P.Z], () => {
     let e = T.Z.getPrivateChannelIds();
@@ -470,12 +470,12 @@ let B = e => {
     isEnabled: x,
     scrollToStart: L,
     scrollToEnd: U,
-    defaultFocused: (p + +!!s).toString(),
+    defaultFocused: (p + +!!a).toString(),
     setFocus: D
   });
   return (0, i.jsx)(b.Gt, {
     value: y,
-    children: (0, i.jsx)(a.bG, {
+    children: (0, i.jsx)(s.bG, {
       navigator: V,
       children: (0, i.jsx)(G, k(M({}, e), {
         density: t,

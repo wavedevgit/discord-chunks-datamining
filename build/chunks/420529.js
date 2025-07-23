@@ -1,6 +1,6 @@
 /** Chunk was on 36841 **/
 e.d(n, {
-  Z: () => m
+  Z: () => U
 });
 var i = e(255367);
 e(73800);
@@ -15,9 +15,9 @@ var l = e(399606),
   o = e(937393),
   I = e(721351),
   c = e(981631),
-  T = e(388032);
+  g = e(388032);
 
-function g(t) {
+function T(t) {
   for (var n = 1; n < arguments.length; n++) {
     var e = null != arguments[n] ? arguments[n] : {},
       i = Object.keys(e);
@@ -49,15 +49,15 @@ function E(t, n) {
   }), t
 }
 
-function m(t) {
+function U(t) {
   let n = (0, l.e7)([_.Z], () => _.Z.getChannelId() === t.id),
-    m = (0, p.Z)(),
-    U = (null == m ? void 0 : m.channelId) === t.id,
-    D = (0, a.V)(t) && !t.isPrivate(),
-    L = (0, a.Z)(t),
-    O = !(0, l.e7)([s.Z], () => s.Z.isInChannel(t.id)) && L || D,
-    y = (0, o.Z)();
-  if (!U && 0 === y.length) return null;
+    U = (0, p.Z)(),
+    L = (null == U ? void 0 : U.channelId) === t.id,
+    m = (0, a.V)(t) && !t.isPrivate(),
+    y = (0, a.Z)(t),
+    O = !(0, l.e7)([s.Z], () => s.Z.isInChannel(t.id)) && y || m,
+    D = (0, o.Z)();
+  if (!L && 0 === D.length) return null;
   let G = n => {
     if (!n.twoWayLink || n.revoked) return void(0, d.Z)({
       platformType: n.type,
@@ -67,32 +67,32 @@ function m(t) {
       let {
         default: n
       } = await Promise.all([e.e("39486"), e.e("522")]).then(e.bind(e, 200623));
-      return e => (0, i.jsx)(n, E(g({}, e), {
+      return e => (0, i.jsx)(n, E(T({}, e), {
         channel: t
       }))
     }) : (n.type === c.ABu.PLAYSTATION || n.type === c.ABu.PLAYSTATION_STAGING) && (0, r.ZDy)(async () => {
       let {
         default: l
       } = await e.e("638").then(e.bind(e, 543974));
-      return e => (0, i.jsx)(l, E(g({}, e), {
+      return e => (0, i.jsx)(l, E(T({}, e), {
         platform: n.type,
         channel: t
       }))
     })
   };
-  return U ? (0, i.jsx)(r.sNh, {
-    label: T.intl.string(T.t.PlwgdX),
+  return L ? (0, i.jsx)(r.sNh, {
+    label: g.intl.string(g.t.PlwgdX),
     id: "handoff",
     action: () => {
-      (0, u.F)(m)
+      (0, u.F)(U)
     },
     icon: (0, I.Z)(void 0),
     disabled: O
-  }) : y.map(t => {
+  }) : D.map(t => {
     var e, l;
     return (0, i.jsx)(r.sNh, {
       id: "transfer-".concat(t.type, "-").concat(t.id),
-      label: (e = t.type, l = n, e === c.ABu.XBOX ? l ? T.intl.string(T.t["qVE/VF"]) : T.intl.string(T.t.E8euSk) : e === c.ABu.PLAYSTATION ? l ? T.intl.string(T.t.vzfxmZ) : T.intl.string(T.t.QxEYDg) : e === c.ABu.PLAYSTATION_STAGING ? l ? T.intl.string(T.t.BDiXtb) : T.intl.string(T.t["bhdB9/"]) : void 0),
+      label: (e = t.type, l = n, e === c.ABu.XBOX ? l ? g.intl.string(g.t["qVE/VF"]) : g.intl.string(g.t.E8euSk) : e === c.ABu.PLAYSTATION ? l ? g.intl.string(g.t.vzfxmZ) : g.intl.string(g.t.QxEYDg) : e === c.ABu.PLAYSTATION_STAGING ? l ? g.intl.string(g.t.BDiXtb) : g.intl.string(g.t["bhdB9/"]) : void 0),
       action: () => G(t),
       icon: (0, I.Z)(t.type),
       disabled: O

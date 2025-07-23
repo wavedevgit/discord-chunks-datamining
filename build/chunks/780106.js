@@ -1,7 +1,7 @@
 /** Chunk was on 96127 **/
 n.d(t, {
   O: () => o,
-  h: () => s
+  h: () => a
 });
 var r = n(593472),
   i = n(70956),
@@ -29,4 +29,4 @@ let o = {
       distributor: l.GQo.STEAM
     }
   },
-  s = Object.keys(o)
+  a = Object.keys(o)

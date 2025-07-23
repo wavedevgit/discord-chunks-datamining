@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(120356),
   o = n.n(l),
-  s = n(442837),
-  a = n(481060),
+  a = n(442837),
+  s = n(481060),
   c = n(493683),
   u = n(239091),
   d = n(146773),
@@ -92,7 +92,7 @@ class k extends P.ZP {
       selected: n,
       muted: i,
       unread: l,
-      hasActiveThreads: s,
+      hasActiveThreads: a,
       hasMoreActiveThreads: c,
       mentionCount: u,
       connectChannelDropTarget: d,
@@ -117,7 +117,7 @@ class k extends P.ZP {
       "data-dnd-name": e.name,
       onMouseEnter: c || I ? this.handleMouseEnter : void 0,
       onMouseLeave: c || I ? this.handleMouseLeave : void 0,
-      children: (0, r.jsx)(a.yRy, {
+      children: (0, r.jsx)(s.yRy, {
         targetElementRef: this.channelItemRef,
         position: "right",
         renderPopout: this.renderPopout,
@@ -133,7 +133,7 @@ class k extends P.ZP {
           muted: i,
           unread: l,
           mentionCount: u,
-          hasActiveThreads: s,
+          hasActiveThreads: a,
           subtitle: null == P ? void 0 : P.subtitle,
           subtitleColor: null == P ? void 0 : P.color,
           onMouseDown: this.handleMouseDown,
@@ -270,30 +270,30 @@ function G(e) {
     disableSorting: i,
     isFavoriteCategory: l,
     muted: o,
-    selected: a
+    selected: s
   } = e, {
     hasActiveThreads: c,
     hasMoreActiveThreads: u
-  } = (0, y.JQ)(t), d = (0, s.cj)([E.ZP], () => ({
+  } = (0, y.JQ)(t), d = (0, a.cj)([E.ZP], () => ({
     unread: E.ZP.hasUnread(t.id),
     ackMessageId: E.ZP.ackMessageId(t.id),
     isLowImportanceMention: E.ZP.getIsMentionLowImportance(t.id)
-  })), g = (0, s.e7)([x.ZP], () => x.ZP.resolveUnreadSetting(t)), m = (0, s.cj)([v.Z, j.Z], () => {
+  })), g = (0, a.e7)([x.ZP], () => x.ZP.resolveUnreadSetting(t)), m = (0, a.cj)([v.Z, j.Z], () => {
     let e = v.Z.getChannel(t.parent_id);
     return {
       canManageChannel: j.Z.can(T.Plq.MANAGE_CHANNELS, t),
       canReorderChannel: !0 !== i && (n.id === A._ || (null != e ? j.Z.can(T.Plq.MANAGE_CHANNELS, e) : j.Z.can(T.Plq.MANAGE_CHANNELS, n)))
     }
-  }), _ = (0, s.e7)([O.Z], () => O.Z.shouldIndicateNewChannel(n.id, t.id)), {
+  }), _ = (0, a.e7)([O.Z], () => O.Z.shouldIndicateNewChannel(n.id, t.id)), {
     needSubscriptionToAccess: C,
     isSubscriptionGated: I
-  } = (0, b.Z)(t.id), P = (0, s.e7)([x.ZP], () => x.ZP.isFavorite(n.id, t.id)), w = (0, s.e7)([S.default], () => {
+  } = (0, b.Z)(t.id), P = (0, a.e7)([x.ZP], () => x.ZP.isFavorite(n.id, t.id)), w = (0, a.e7)([S.default], () => {
     let e = S.default.getCurrentUser();
     return null != e && (!(0, f.aC)(t) || e.nsfwAllowed)
   }, [t]), Z = (0, h.NX)(t.id), R = (0, N.Z)({
     channel: t,
     isChannelCollapsed: !1,
-    isChannelSelected: a,
+    isChannelSelected: s,
     isSubscriptionGated: I,
     needSubscriptionToAccess: C,
     isNewChannel: _,

@@ -6,9 +6,9 @@ var r = n(255367),
   i = n(73800),
   l = n(481060),
   o = n(703656),
-  s = n(981631);
+  a = n(981631);
 
-function a(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -62,12 +62,12 @@ let u = i.forwardRef(function(e, t) {
     return i
   }(e, ["href", "children", "onClick", "onKeyPress", "focusProps"]);
   let g = i.useCallback(e => {
-      e.repeat || ((e.charCode === s.yXg.SPACE || e.charCode === s.yXg.ENTER) && (e.preventDefault(), null != n && (0, o.uL)(n), null == d || d()), null == h || h(e))
+      e.repeat || ((e.charCode === a.yXg.SPACE || e.charCode === a.yXg.ENTER) && (e.preventDefault(), null != n && (0, o.uL)(n), null == d || d()), null == h || h(e))
     }, [n, h, d]),
     m = i.useCallback(e => {
       e.metaKey || e.shiftKey || 0 !== e.button || (e.preventDefault(), e.stopPropagation(), null != n && (0, o.uL)(n), null == d || d())
     }, [n, d]),
-    b = (0, r.jsx)("a", c(a({
+    b = (0, r.jsx)("a", c(s({
       ref: t,
       href: n,
       onClick: m,
@@ -75,7 +75,7 @@ let u = i.forwardRef(function(e, t) {
     }, f), {
       children: u
     }));
-  return (0, r.jsx)(l.tEY, c(a({}, p), {
+  return (0, r.jsx)(l.tEY, c(s({}, p), {
     children: b
   }))
 })

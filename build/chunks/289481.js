@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(120356),
   o = n.n(l),
-  s = n(42133),
-  a = n(893999),
+  a = n(42133),
+  s = n(893999),
   c = n(442837),
   u = n(481060),
   d = n(570140),
@@ -47,7 +47,7 @@ let x = i.memo(function(e) {
       channel: t,
       deleteChannel: n
     } = e, l = i.useRef(null), [
-      [o, a], c
+      [o, s], c
     ] = i.useState([0, 0]), d = t.deleted && o > 0;
     if (t.deleted && 0 === o && null != l.current) {
       let e = l.current.offsetHeight,
@@ -74,10 +74,10 @@ let x = i.memo(function(e) {
       opacity: h,
       height: p.to(e => {
         var t, n;
-        return d ? (t = o, (n = a) + (t - n) * e) : "auto"
+        return d ? (t = o, (n = s) + (t - n) * e) : "auto"
       })
     };
-    return (0, r.jsx)(s.animated.div, {
+    return (0, r.jsx)(a.animated.div, {
       ref: l,
       style: f,
       children: (0, r.jsx)(S, E({}, e))
@@ -89,17 +89,17 @@ let x = i.memo(function(e) {
       onJump: n,
       deleteChannel: l,
       toggle: o
-    } = e, s = (0, c.e7)([g.Z], () => g.Z.getChannel(t.channelId));
+    } = e, a = (0, c.e7)([g.Z], () => g.Z.getChannel(t.channelId));
     if (i.useEffect(() => {
-        null == s || !t.isFullyLoaded || t.hasError || t.collapsed || "messages" !== t.type || 0 !== t.messages.length || d.Z.wait(() => {
+        null == a || !t.isFullyLoaded || t.hasError || t.collapsed || "messages" !== t.type || 0 !== t.messages.length || d.Z.wait(() => {
           (0, h.In)(t.channelId, {
             section: v.jXE.INBOX,
             object: v.qAy.ACK_INBOX_CHANNEL_NO_MESSAGES,
             objectType: v.Qqv.ACK_AUTOMATIC
           }, !0), l(t.channelId)
         })
-      }), null == s || !t.hasLoadedAnything) return null;
-    let a = (e, r) => {
+      }), null == a || !t.hasLoadedAnything) return null;
+    let s = (e, r) => {
       (0, p.yw)(v.rMx.INBOX_CHANNEL_CLICKED, {
         channel_id: t.channelId,
         guild_id: t.guildId
@@ -111,22 +111,22 @@ let x = i.memo(function(e) {
       className: j.channel,
       children: (0, r.jsx)(u.y5t, {
         component: (0, r.jsxs)(_.Z, {
-          channel: s,
-          gotoChannel: a,
+          channel: a,
+          gotoChannel: s,
           mentionCount: t.mentionCount,
           toggleCollapsed: o,
           channelState: t,
           children: [(0, r.jsx)(b.Z, {
-            channel: s
+            channel: a
           }), (0, r.jsx)(I, E({}, e)), "nsfw" === t.type ? null : (0, r.jsx)(P, E({}, e))]
         }),
         children: t.collapsed ? null : "messages" === t.type ? (0, r.jsx)(y.Z, {
           channel: t,
-          channelRecord: s,
-          gotoChannel: a
+          channelRecord: a,
+          gotoChannel: s
         }) : "forum" === t.type ? (0, r.jsx)(O.Z, {
           channel: t,
-          channelRecord: s,
+          channelRecord: a,
           deleteChannel: l
         }) : null
       })
@@ -139,7 +139,7 @@ function I(e) {
     markChannelRead: n,
     markGuildRead: i,
     getNumUnreadChannels: l
-  } = e, o = (0, a.Z)() && null != t.guildId;
+  } = e, o = (0, s.Z)() && null != t.guildId;
   return (0, r.jsx)(u.M0o, {
     className: j.markReadButton,
     tooltip: o ? C.intl.string(C.t["5lLMhI"]) : C.intl.string(C.t.e6RscX),

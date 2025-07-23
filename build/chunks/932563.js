@@ -2,7 +2,7 @@
 n.d(t, {
   V_: () => o,
   cR: () => l,
-  zl: () => s
+  zl: () => a
 });
 var r = n(442837),
   i = n(479766);
@@ -18,6 +18,6 @@ function o(e) {
   })
 }
 
-function s() {
+function a() {
   return i.Z.getCurrentBalance()
 }

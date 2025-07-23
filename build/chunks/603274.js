@@ -7,8 +7,8 @@ n(73800);
 var i = n(120356),
   l = n.n(i),
   o = n(392711),
-  s = n.n(o),
-  a = n(442837),
+  a = n.n(o),
+  s = n(442837),
   c = n(481060),
   u = n(456100),
   d = n(317381),
@@ -42,29 +42,29 @@ function S(e, t) {
 }
 
 function I() {
-  let e = (0, a.Wu)([v.Z, m.Z], () => y.default.keys(v.Z.getFavoriteChannels()).map(e => m.Z.getChannel(e)).filter(O.lm)),
+  let e = (0, s.Wu)([v.Z, m.Z], () => y.default.keys(v.Z.getFavoriteChannels()).map(e => m.Z.getChannel(e)).filter(O.lm)),
     t = e.map(e => e.id),
     n = e.filter(e => e.type === C.d4z.GUILD_VOICE),
     i = e.filter(e => e.type === C.d4z.GUILD_STAGE_VOICE).map(e => e.id),
-    l = (0, a.Wu)([_.ZP], () => s().flatMap(n, e => _.ZP.getVoiceStatesForChannel(e).map(e => {
+    l = (0, s.Wu)([_.ZP], () => a().flatMap(n, e => _.ZP.getVoiceStatesForChannel(e).map(e => {
       let {
         user: t
       } = e;
       return t
     })), [n]),
-    o = (0, a.Wu)([p.Z], () => s().flatMap(i, e => p.Z.getMutableParticipants(e, f.pV.SPEAKER).filter(e => e.type === f.Ui.VOICE).map(e => {
+    o = (0, s.Wu)([p.Z], () => a().flatMap(i, e => p.Z.getMutableParticipants(e, f.pV.SPEAKER).filter(e => e.type === f.Ui.VOICE).map(e => {
       let {
         user: t
       } = e;
       return t
     }))),
-    j = (0, a.e7)([p.Z], () => {
+    j = (0, s.e7)([p.Z], () => {
       let e = 0;
       for (let t of i) e += p.Z.getParticipantCount(t, f.pV.AUDIENCE);
       return e
     }),
-    x = (0, a.Wu)([g.Z], () => g.Z.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [t]),
-    I = (0, a.Wu)([d.ZP], () => {
+    x = (0, s.Wu)([g.Z], () => g.Z.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [t]),
+    I = (0, s.Wu)([d.ZP], () => {
       let e = d.ZP.getEmbeddedActivitiesByChannel(),
         n = [];
       for (let l of t) {
@@ -73,8 +73,8 @@ function I() {
       }
       return n
     }, [t]),
-    P = (0, a.Wu)([b.default], () => I.map(e => b.default.getUser(e)), [I]),
-    N = (0, a.Wu)([b.default], () => x.map(e => b.default.getUser(e)), [x]),
+    P = (0, s.Wu)([b.default], () => I.map(e => b.default.getUser(e)), [I]),
+    N = (0, s.Wu)([b.default], () => x.map(e => b.default.getUser(e)), [x]),
     w = S(c.gj8, l.filter(e => !x.includes(e.id) && !I.includes(e.id))),
     Z = 0 === o.length ? null : (0, r.jsxs)("div", {
       className: E.row,

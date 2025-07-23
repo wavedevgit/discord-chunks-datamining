@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(120356),
   o = n.n(l),
-  s = n(42133),
-  a = n(748780),
+  a = n(42133),
+  s = n(748780),
   c = n(481060),
   u = n(442837),
   d = n(607070),
@@ -55,7 +55,7 @@ function f(e) {
       animationDelay: l
     } = v.current, {
       useReducedMotion: o
-    } = d.Z, s = 200 * !o;
+    } = d.Z, a = 200 * !o;
     O({
       reset: !0,
       immediate: !1,
@@ -64,8 +64,8 @@ function f(e) {
         borderColor: e
       },
       config: {
-        duration: s,
-        easing: a.Z.Easing.ease
+        duration: a,
+        easing: s.Z.Easing.ease
       }
     }), O({
       delay: l,
@@ -75,8 +75,8 @@ function f(e) {
         borderColor: r
       }],
       config: {
-        duration: s,
-        easing: a.Z.Easing.ease
+        duration: a,
+        easing: s.Z.Easing.ease
       }
     }), O({
       delay: l + 200 + 200,
@@ -86,12 +86,12 @@ function f(e) {
         borderColor: n
       }],
       config: {
-        duration: s,
-        easing: a.Z.Easing.ease
+        duration: a,
+        easing: s.Z.Easing.ease
       },
       onRest: t
     })
-  }, [O]), (0, r.jsx)(s.animated.div, {
+  }, [O]), (0, r.jsx)(a.animated.div, {
     style: _,
     className: o()(p.settingsItemHighlight, n),
     children: t
@@ -103,12 +103,12 @@ function g(e) {
     children: t,
     scrollPosition: n,
     animationDelay: l
-  } = e, o = (0, u.e7)([h.Z], () => h.Z.getScrollPosition() === n), [s, a] = i.useState(!1);
+  } = e, o = (0, u.e7)([h.Z], () => h.Z.getScrollPosition() === n), [a, s] = i.useState(!1);
   return (i.useEffect(() => {
-    o && a(!0)
-  }, [o]), s) ? (0, r.jsx)(f, {
+    o && s(!0)
+  }, [o]), a) ? (0, r.jsx)(f, {
     animationDelay: l,
-    onFlashEnd: () => a(!1),
+    onFlashEnd: () => s(!1),
     children: t
   }) : t
 }

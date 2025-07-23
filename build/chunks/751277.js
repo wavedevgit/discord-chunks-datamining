@@ -7,8 +7,8 @@ n(73800);
 var i = n(114858),
   l = n(442837),
   o = n(481060),
-  s = n(893607),
-  a = n(701190),
+  a = n(893607),
+  s = n(701190),
   c = n(411198),
   u = n(836040),
   d = n(603592),
@@ -20,13 +20,13 @@ function f(e) {
   let {
     isOnHubVerificationRoute: n
   } = e, f = (0, i.LX)(null != (t = window.location.pathname) ? t : "", {
-    path: h.Z5c.GUILD_MEMBER_VERIFICATION_FOR_HUB(s.Hw.guildId(), ":inviteCode")
-  }), g = (0, l.e7)([a.Z], () => {
+    path: h.Z5c.GUILD_MEMBER_VERIFICATION_FOR_HUB(a.Hw.guildId(), ":inviteCode")
+  }), g = (0, l.e7)([s.Z], () => {
     if (null == f) return null;
     let {
       inviteCode: e
     } = f.params;
-    return null != e ? a.Z.getInvite(e) : null
+    return null != e ? s.Z.getInvite(e) : null
   }), m = (null == g ? void 0 : g.guild) != null ? (0, c.Qs)(null == g ? void 0 : g.guild) : null;
   return n ? null != m && null != g ? (0, r.jsx)(u.Z, {
     guild: m,

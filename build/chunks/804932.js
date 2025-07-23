@@ -83,7 +83,7 @@ function f(e) {
       variant: t
     }), o.current = Date.now()
   }), r.useEffect(() => {
-    if (null != o.current && null != n && null != a && !c.current) {
+    if (null != o.current && ((null == n ? void 0 : n.length) > 0 || (null == a ? void 0 : a.length) > 0) && !c.current) {
       let e = Date.now() - o.current;
       c.current = !0, l({
         timeToLoad: e,

@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(442837),
   o = n(481060),
-  s = n(570140),
-  a = n(45114),
+  a = n(570140),
+  s = n(45114),
   c = n(110255),
   u = n(268623),
   d = n(324701),
@@ -65,8 +65,8 @@ function v(e) {
     label: t,
     onClick: n,
     message: l,
-    Icon: s,
-    interactionType: a
+    Icon: a,
+    interactionType: s
   } = e, [c, u] = (0, i.useState)(!1);
   return (0, r.jsx)(o.ua7, {
     text: t,
@@ -79,10 +79,10 @@ function v(e) {
       onClick: e => {
         (0, p.Qz)({
           message: l,
-          interactionType: a
+          interactionType: s
         }), e.stopPropagation(), n(l)
       },
-      children: (0, r.jsx)(s, {
+      children: (0, r.jsx)(a, {
         size: c ? "sm" : "xs",
         className: m.actionIcon
       })
@@ -95,8 +95,8 @@ function C(e) {
     channel: t,
     message: n,
     label: l,
-    Icon: s,
-    Menu: a,
+    Icon: a,
+    Menu: s,
     interactionType: c
   } = e, [u, d] = (0, i.useState)(!1), [h, f] = (0, i.useState)(!1), g = (0, i.useRef)(null);
   return (0, r.jsx)(o.yRy, {
@@ -109,7 +109,7 @@ function C(e) {
     onRequestClose: () => f(!1),
     renderPopout: e => (0, r.jsx)(o.P3F, {
       onClick: e => e.stopPropagation(),
-      children: (0, r.jsx)(a, {
+      children: (0, r.jsx)(s, {
         renderPopoutProps: e,
         channel: t,
         message: n
@@ -130,7 +130,7 @@ function C(e) {
             interactionType: c
           }), e.stopPropagation(), f(!h)
         },
-        children: (0, r.jsx)(s, _(b({}, e), {
+        children: (0, r.jsx)(a, _(b({}, e), {
           message: n,
           "aria-label": l,
           className: m.actionIcon,
@@ -146,10 +146,10 @@ let j = {
       Icon: o.dz2,
       label: g.intl.string(g.t.e6RscX),
       onClick: e => {
-        s.Z.dispatch({
+        a.Z.dispatch({
           type: "NOTIFICATIONS_INBOX_ITEM_ACK",
           messageId: e.id
-        }), a.In(e.channel_id, {
+        }), s.In(e.channel_id, {
           object: f.qAy.MARK_MESSAGE_AS_READ_BUTTON,
           objectType: f.Qqv.ACK_MANUAL
         }, !0, void 0, e.id)
@@ -165,7 +165,7 @@ let j = {
         let {
           message: t,
           renderPopoutProps: n
-        } = e, i = (0, l.e7)([h.Z], () => h.Z.getSavedMessage(t.channel_id, t.id)), s = (0, u.x)({
+        } = e, i = (0, l.e7)([h.Z], () => h.Z.getSavedMessage(t.channel_id, t.id)), a = (0, u.x)({
           message: t,
           savedMessage: i
         });
@@ -193,7 +193,7 @@ let j = {
               messageId: t.id,
               displayToast: !0
             })
-          }), (0, r.jsx)(o.Clw, {}), s]
+          }), (0, r.jsx)(o.Clw, {}), a]
         }))
       }
     },

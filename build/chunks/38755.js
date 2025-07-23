@@ -11,10 +11,10 @@ function l(e) {
     videoSpinnerContext: n,
     userId: l,
     streamId: o,
-    loading: s,
-    paused: a = !1
+    loading: a,
+    paused: s = !1
   } = e, [c] = r.useState(() => new i.o(t));
   r.useEffect(() => {
-    a || (s ? c.onSpinnerStarted() : null != o && c.trackSpinnerDuration(n, l, o))
-  }, [s, a, o, c, n, l])
+    s || (a ? c.onSpinnerStarted() : null != o && c.trackSpinnerDuration(n, l, o))
+  }, [a, s, o, c, n, l])
 }

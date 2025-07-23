@@ -6,8 +6,8 @@ var r = n(570140),
   i = n(317770),
   l = n(460181),
   o = n(474873),
-  s = n(314897),
-  a = n(19780),
+  a = n(314897),
+  s = n(19780),
   c = n(944486),
   u = n(111583),
   d = n(351780),
@@ -40,7 +40,7 @@ let f = (0, l.uk)("poggermode_applause", o.Z.getSoundpack()),
   },
   E = function(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1,
-      n = a.Z.isConnected();
+      n = s.Z.isConnected();
     b.push([e, t * (n ? .1 : 1)]), C()
   };
 class x extends i.Z {
@@ -60,7 +60,7 @@ class x extends i.Z {
     let {
       userId: t
     } = e;
-    s.default.getId() === t && y()
+    a.default.getId() === t && y()
   }
   stopAudio() {
     y()
@@ -70,7 +70,7 @@ class x extends i.Z {
     if (!v()) return;
     let t = c.Z.getChannelId();
     if (null == t) return;
-    let n = s.default.getId(),
+    let n = a.default.getId(),
       r = u.Z.isTyping(t, n),
       i = h.ZP.getUserCombo(n, t),
       l = null != (e = null == i ? void 0 : i.multiplier) ? e : 1;

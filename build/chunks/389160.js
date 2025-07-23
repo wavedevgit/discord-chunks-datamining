@@ -1,6 +1,6 @@
 /** Chunk was on 96127 **/
 n.d(t, {
-  Z: () => s
+  Z: () => a
 });
 var r = n(97519),
   i = n(982183);
@@ -16,7 +16,7 @@ let l = {
     [i.KZ.YESTERDAY]: !1,
     [i.KZ.OLDER]: !1
   },
-  s = (0, r.U)((e, t) => ({
+  a = (0, r.U)((e, t) => ({
     messageCategoryOpenStates: l,
     getOpenState: e => t().messageCategoryOpenStates[e],
     toggleOpenState: t => {

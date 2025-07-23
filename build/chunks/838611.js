@@ -19,14 +19,18 @@ function s(e, t, n) {
 let l = 5e3;
 class c extends i.Z {
   loadUnreadMessages() {
-    a.Z.loadMoreInbox(null, !0)
+    a.Z.loadMoreInbox({
+      onlyUnread: !0
+    })
   }
   _terminate() {
     this.debouncedLoadUnreadMessages.cancel()
   }
   constructor() {
     super(), s(this, "isInitialLoadComplete", !1), s(this, "debouncedLoadUnreadMessages", void 0), s(this, "stores", new Map().set(o.Z, () => {
-      !this.isInitialLoadComplete && o.Z.canLoadMore(null, !0) && (this.isInitialLoadComplete = !0, this.debouncedLoadUnreadMessages())
+      !this.isInitialLoadComplete && o.Z.canLoadMore({
+        onlyUnread: !0
+      }) && (this.isInitialLoadComplete = !0, this.debouncedLoadUnreadMessages())
     })), this.debouncedLoadUnreadMessages = (0, r.debounce)(this.loadUnreadMessages, l)
   }
 }

@@ -7,8 +7,8 @@ var r = n(255367),
   i = n(73800),
   l = n(120356),
   o = n.n(l),
-  s = n(42133),
-  a = n(873546),
+  a = n(42133),
+  s = n(873546),
   c = n(442837),
   u = n(481060),
   d = n(666188),
@@ -69,22 +69,22 @@ function P(e) {
   } = e, {
     value: u
   } = i.springs;
-  return (0, r.jsx)(s.animated.div, {
+  return (0, r.jsx)(a.animated.div, {
     className: x.animatedContainer,
     style: {
       opacity: u,
       transform: u.to(e => "translateY(-".concat((1 - e) * 90, "px)"))
     },
-    children: (0, r.jsx)(s.animated.div, {
+    children: (0, r.jsx)(a.animated.div, {
       className: o()(x.bannerImage, {
-        [x.bannerImgFullWidth]: a.tq
+        [x.bannerImgFullWidth]: s.tq
       }),
       style: {
         transform: u.to(e => "translateY(".concat((1 - e) * 90, "px)"))
       },
       children: (0, r.jsx)("img", {
         className: o()(x.bannerImg, {
-          [x.bannerImgFullWidth]: a.tq
+          [x.bannerImgFullWidth]: s.tq
         }),
         src: null != (t = _.ZP.getGuildBannerURL({
           id: n.id,
@@ -104,7 +104,7 @@ function N(e) {
     hasBanner: i,
     hasSubheader: l
   } = e, {
-    value: a
+    value: s
   } = n.springs, c = t.features.has(v.oNc.DISCOVERABLE), d = (0, r.jsx)("div", {
     className: x.communityInfo,
     children: c && (0, r.jsx)(u.ua7, {
@@ -130,12 +130,12 @@ function N(e) {
   return l ? (0, r.jsx)("div", {
     className: o()(x.communityInfoContainer, x.hasSubheader),
     children: d
-  }) : (0, r.jsx)(s.animated.div, {
+  }) : (0, r.jsx)(a.animated.div, {
     className: x.communityInfoContainer,
     style: i ? {
-      opacity: a
+      opacity: s
     } : {
-      height: a.to(e => "".concat(20 * e, "px"))
+      height: s.to(e => "".concat(20 * e, "px"))
     },
     children: d
   })
@@ -179,8 +179,8 @@ function A(e) {
     guild: i,
     onClick: l,
     onContextMenu: o,
-    ariaControls: s,
-    ariaExpanded: a,
+    ariaControls: a,
+    ariaExpanded: s,
     guildHeaderRef: c,
     children: d
   } = e;
@@ -194,8 +194,8 @@ function A(e) {
       className: x.headerButton,
       onClick: l,
       onContextMenu: o,
-      "aria-controls": s,
-      "aria-expanded": a,
+      "aria-controls": a,
+      "aria-expanded": s,
       focusProps: {
         ringTarget: c,
         offset: 4
@@ -216,8 +216,8 @@ function D(e) {
     bannerVisible: t,
     guild: l,
     onClick: o,
-    onContextMenu: s,
-    children: a
+    onContextMenu: a,
+    children: s
   } = e, d = i.useRef(null), h = (0, c.e7)([g.Z], () => g.Z.theme), m = i.useCallback(async () => {
     let {
       default: e
@@ -269,7 +269,7 @@ function D(e) {
           "aria-label": E.intl.formatToPlainString(E.t.xMXpl5, {
             guildName: null != (n = null == l ? void 0 : l.name) ? n : ""
           }),
-          onContextMenu: s
+          onContextMenu: a
         }, e), {
           onClick: t => {
             var n;
@@ -285,7 +285,7 @@ function D(e) {
             })]
           }), (0, r.jsx)("div", {
             className: x.headerChildren,
-            children: a
+            children: s
           })]
         }))
       }
@@ -312,7 +312,7 @@ let L = i.memo(function(e) {
     ref: t,
     bannerVisible: n,
     controller: l,
-    className: s,
+    className: a,
     onClick: c,
     onContextMenu: p,
     onMouseDown: f,
@@ -364,7 +364,7 @@ let L = i.memo(function(e) {
         "data-has-banner": q(),
         "data-banner-visible": n,
         ref: W,
-        className: o()(s, {
+        className: o()(a, {
           [x.container]: !0,
           [x.clickable]: !X && null != c,
           [x.selected]: !X && null != c && b,
@@ -379,7 +379,7 @@ let L = i.memo(function(e) {
         onContextMenu: p,
         children: [(0, r.jsxs)("header", {
           className: o()(x.header, Z, {
-            [x.themedHeaderMobile]: a.tq
+            [x.themedHeaderMobile]: s.tq
           }),
           children: [(0, r.jsx)("div", {
             className: o()(x.headerContent, x.primaryInfo),
@@ -423,17 +423,17 @@ function M(e) {
     theme: n
   } = (0, u.TCT)(), i = t.springs.value;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(s.animated.div, {
+    children: [(0, r.jsx)(a.animated.div, {
       className: x.headerEllipseBackdrop,
       style: {
         opacity: i.to(e => .5 * e)
       }
-    }), (0, r.jsx)(s.animated.div, {
+    }), (0, r.jsx)(a.animated.div, {
       className: x.headerEllipseForeground,
       style: {
         opacity: i.to(e => e)
       }
-    }), (0, r.jsx)(s.animated.div, {
+    }), (0, r.jsx)(a.animated.div, {
       className: x.headerGlass,
       style: {
         opacity: i.to(e => (1 - e) * 6),

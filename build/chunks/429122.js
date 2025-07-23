@@ -8,8 +8,8 @@ var r = n(255367),
   i = n(73800),
   l = n(442837),
   o = n(884338),
-  s = n(398758),
-  a = n(9156),
+  a = n(398758),
+  s = n(9156),
   c = n(934415),
   u = n(540126),
   d = n(700026),
@@ -34,14 +34,14 @@ function m(e) {
     selectedChannelId: i,
     selectedVoiceChannelId: l,
     optInEnabled: o,
-    visualRefreshEnabled: s,
-    density: a
+    visualRefreshEnabled: a,
+    density: s
   } = e;
   if (t === n.voiceChannelsSectionNumber) return 44;
   let {
     hasDivider: c,
     canHaveVoiceSummary: h
-  } = (0, d.ie)(n, o, t), f = c ? s ? 9 : p.QP : 0;
+  } = (0, d.ie)(n, o, t), f = c ? a ? 9 : p.QP : 0;
   if (!h || t === u.wZ) return f;
   let g = n.getNamedCategoryFromSection(t);
   return null == g ? f : (0, d.V5)({
@@ -49,7 +49,7 @@ function m(e) {
     selectedChannelId: i,
     selectedVoiceChannelId: l,
     voiceStates: r
-  }) ? (s ? "cozy" === a ? 42 : 34 : p.Vf) + f : f
+  }) ? (a ? "cozy" === s ? 42 : 34 : p.Vf) + f : f
 }
 
 function b(e, t, n) {
@@ -73,13 +73,13 @@ let _ = i.memo(function(e) {
   } = e, {
     hasDivider: y,
     canHaveVoiceSummary: v
-  } = i.useMemo(() => (0, d.ie)(n, O, t), [n, O, t, h]), C = i.useMemo(() => t === u.wZ ? null : n.getCategoryFromSection(t), [n, t, h]), j = (0, s.DM)(m), E = (0, l.Wu)([a.ZP], () => {
+  } = i.useMemo(() => (0, d.ie)(n, O, t), [n, O, t, h]), C = i.useMemo(() => t === u.wZ ? null : n.getCategoryFromSection(t), [n, t, h]), j = (0, a.DM)(m), E = (0, l.Wu)([s.ZP], () => {
     if (null == C || !C.isCollapsed || !v) return [];
     let e = C.getChannelRecords(),
       t = [];
     for (let n of e) {
       if (!n.isGuildVocal()) continue;
-      let e = a.ZP.isChannelOrParentOptedIn(m, n.id);
+      let e = s.ZP.isChannelOrParentOptedIn(m, n.id);
       (!j || e) && t.push(n)
     }
     return t
