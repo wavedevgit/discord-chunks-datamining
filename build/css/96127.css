@@ -1,6 +1,6 @@
 /**
   Module ID: 96127
-  Original File Name: 0fe001b5377b5366
+  Original File Name: 4a7d12b70f0105ee
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -2691,9 +2691,12 @@ div:has(>.repositionLayerSidebarPopout_fc71d3) {
     translate: 0 1.25rem
 }
 
+div:has(>.repositionLayerTitlebarPopout_fc71d3) {
+    translate: -.75rem 0
+}
+
 .container_fc71d3 {
     border: 1px solid var(--background-base-low);
-    border-radius: var(--radius-md);
     box-shadow: var(--shadow-high);
     container-type: inline-size;
     display: flex;
@@ -2703,20 +2706,18 @@ div:has(>.repositionLayerSidebarPopout_fc71d3) {
     max-height: 640px;
     min-height: 0;
     min-width: 320px;
-    overflow: hidden;
     width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) + 10px)
 }
 
-.container_fc71d3.titleBarEntrypointVariant_fc71d3 {
-    width: calc(var(--custom-guild-sidebar-width) - 24px)
+.backgroundContainer_fc71d3,.container_fc71d3 {
+    border-radius: var(--radius-md);
+    overflow: hidden
 }
 
 .backgroundContainer_fc71d3 {
     border: 1px solid var(--app-border-frame);
-    border-radius: var(--radius-md);
     bottom: 0;
     left: 0;
-    overflow: hidden;
     position: absolute;
     right: 0;
     top: 0
@@ -8470,4 +8471,4 @@ div:has(>.positionLayer__4f4b6) {
     width: 96px
 }
 
-/*# sourceMappingURL=0fe001b5377b5366.css.map*/
+/*# sourceMappingURL=4a7d12b70f0105ee.css.map*/

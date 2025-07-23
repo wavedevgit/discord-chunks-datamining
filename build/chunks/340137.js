@@ -50,7 +50,7 @@ function O(e) {
     children: [(0, r.jsx)(c.LZC, {
       size: (0, p.isMac)() ? 4 : 72,
       horizontal: !0
-    }), (0, r.jsx)(c.ua7, {
+    }), " ", (0, r.jsx)(c.ua7, {
       shouldShow: !O,
       text: _.intl.string(_.t.HcoRu7),
       children: e => {
@@ -138,7 +138,7 @@ function y() {
   }) : t === h.jP.POPOUT ? (0, r.jsx)(m.Z, {
     targetElementRef: e,
     popoutPosition: "bottom",
-    popoutAlign: "center",
+    popoutAlign: "left",
     spacing: 2,
     children: (t, n, i) => (0, r.jsx)(O, {
       ref: e,
