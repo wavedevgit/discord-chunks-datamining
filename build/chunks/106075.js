@@ -18,11 +18,11 @@ var r = n(255367),
   m = n(28494),
   b = n(29086),
   _ = n(590771),
-  E = n(273596),
-  O = n(128449),
+  O = n(273596),
+  E = n(128449),
   y = n(49898),
-  I = n(388032),
-  v = n(398075);
+  v = n(388032),
+  I = n(398075);
 
 function C() {
   let e = i.useRef((0, h.PM)()),
@@ -37,11 +37,11 @@ function C() {
       setSelectedTab: T
     } = (0, b.Y)(),
     P = (0, h.lg)(N),
-    j = !O.MU.has(N),
+    j = !E.MU.has(N),
     {
       searchQuery: A,
-      onSearchTextChange: Z,
-      onClearSearch: x,
+      onSearchTextChange: x,
+      onClearSearch: Z,
       onSearchSubmit: w,
       isSearchVisible: L
     } = (0, m.H)({
@@ -63,13 +63,13 @@ function C() {
     }),
     G = d.Z.useField("fetchedQuery"),
     B = i.useCallback(e => {
-      T(e), L && x()
-    }, [L, x, T]),
+      T(e), L && Z()
+    }, [L, Z, T]),
     V = i.useMemo(() => L ? S.filter(e => {
       let {
         id: t
       } = e;
-      return !O.MU.has(t)
+      return !E.MU.has(t)
     }) : S, [S, L]),
     H = i.useRef(new p.Z(P)),
     {
@@ -88,14 +88,14 @@ function C() {
       scrollPosition: null
     })
   }, [L]), (0, r.jsxs)("div", {
-    className: v.container,
+    className: I.container,
     children: [(0, r.jsxs)(s.ZP, {
       variant: L ? s._6.RELATIVE : s._6.OVERLAY,
       children: [!L && (0, r.jsx)(s.z6, {
         scrollPosition: n
       }), L ? (0, r.jsx)(s.Cm, {
         icon: l.j9r,
-        onClick: x
+        onClick: Z
       }) : (0, r.jsx)(s.aV, {
         icon: l.QTo
       }), !L && (0, r.jsx)(c.Z, {
@@ -107,21 +107,21 @@ function C() {
       }), L && (0, r.jsx)(l.X6q, {
         variant: "heading-lg/semibold",
         color: "header-primary",
-        className: v.searchResultsHeader,
-        children: I.intl.format(I.t.zHdzqa, {
+        className: I.searchResultsHeader,
+        children: v.intl.format(v.t.zHdzqa, {
           query: G
         })
       }), j && (0, r.jsx)(u.Z, {
         query: A,
-        placeholder: I.intl.string(I.t["5h0QOD"]),
-        onTextChange: Z,
-        onClear: x,
+        placeholder: v.intl.string(v.t["5h0QOD"]),
+        onTextChange: x,
+        onClear: Z,
         onSubmit: w,
         onCollapsedClick: k,
         state: L ? y.GlobalDiscoverySearchBarState.DEFAULT : R,
         onBlur: M
       })]
-    }), L ? (0, r.jsx)(E.Z, {
+    }), L ? (0, r.jsx)(O.Z, {
       loadId: e.current,
       onGuildCardClick: z,
       onGuildCardSeen: F

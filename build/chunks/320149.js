@@ -18,25 +18,25 @@ var r = n(255367),
   m = n(359110),
   b = n(6025),
   _ = n(433355),
-  E = n(933557),
-  O = n(287746),
+  O = n(933557),
+  E = n(287746),
   y = n(388032),
-  I = n(560460),
-  v = n(46467);
+  v = n(560460),
+  I = n(46467);
 
 function C(e) {
   let {
     channel: t,
     baseChannelId: n
-  } = e, C = (0, E.ZP)(t), S = (0, h.K)(), N = (0, h.V)(), T = (0, l.e7)([d.Z], () => d.Z.isMessageRequest(t.id)), P = (0, l.e7)([p.Z], () => p.Z.isSpam(t.id)), j = (0, g.V)(t.id, t.getRecipientId()), A = i.useCallback(() => {
+  } = e, C = (0, O.ZP)(t), S = (0, h.K)(), N = (0, h.V)(), T = (0, l.e7)([d.Z], () => d.Z.isMessageRequest(t.id)), P = (0, l.e7)([p.Z], () => p.Z.isSpam(t.id)), j = (0, g.V)(t.id, t.getRecipientId()), A = i.useCallback(() => {
     b.Z.closeChannelSidebar(_.uZ), T && S && (0, m.Kh)(t.id), P && N && (0, m.Kh)(t.id)
-  }, [t.id, P, N, T, S]), Z = i.useCallback(() => {
+  }, [t.id, P, N, T, S]), x = i.useCallback(() => {
     (0, o.showToast)((0, o.createToast)(y.intl.string(y.t.pIQ3h4), o.ToastType.FAILURE))
   }, []), {
-    markAsNotSpam: x
+    markAsNotSpam: Z
   } = (0, f.m)({
     onAcceptSuccess: A,
-    onError: Z
+    onError: x
   });
   if (null == t || !t.isDM()) return null;
   let w = [(0, r.jsx)(c.ZP.Icon, {
@@ -54,20 +54,20 @@ function C(e) {
         inSidebar: !0
       })
     }), P && (0, r.jsxs)("div", {
-      className: v.hamBanner,
+      className: I.hamBanner,
       children: [(0, r.jsx)(o.Text, {
-        className: v.__invalid_hamBannerText,
+        className: I.__invalid_hamBannerText,
         variant: "text-sm/normal",
         children: y.intl.string(y.t.XVOKgo)
       }), (0, r.jsx)(a.zx, {
-        className: v.hamBannerButton,
+        className: I.hamBannerButton,
         size: a.Ph.SMALL,
-        onClick: () => x(t, j),
+        onClick: () => Z(t, j),
         children: y.intl.string(y.t.koqL3d)
       })]
     }), (0, r.jsx)("div", {
-      className: I.chat,
-      children: (0, r.jsx)(O.Z, {
+      className: v.chat,
+      children: (0, r.jsx)(E.Z, {
         channel: t,
         guild: null,
         chatInputType: s.Ie.SIDEBAR

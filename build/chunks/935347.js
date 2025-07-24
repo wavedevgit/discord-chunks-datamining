@@ -18,11 +18,11 @@ var r = n(255367),
   m = n(460181),
   b = n(474873),
   _ = n(706454),
-  E = n(215427),
-  O = n(820254),
+  O = n(215427),
+  E = n(820254),
   y = n(358085),
-  I = n(998502),
-  v = n(905656),
+  v = n(998502),
+  I = n(905656),
   C = n(981631),
   S = n(388032),
   N = n(64648);
@@ -86,7 +86,7 @@ class P extends i.PureComponent {
         },
         children: [(0, r.jsxs)("div", {
           className: N.content,
-          children: [(0, r.jsx)(v.Z, {
+          children: [(0, r.jsx)(I.Z, {
             autoPlay: !0,
             loop: !e,
             setRef: this.setVideoRef,
@@ -126,7 +126,7 @@ class P extends i.PureComponent {
               className: N.statusLink,
               href: C.yXt.STATUS,
               target: "_blank",
-              children: [(0, r.jsx)(O.Z, {
+              children: [(0, r.jsx)(E.Z, {
                 className: N.icon
               }), S.intl.string(S.t.AgXXy8)]
             })]
@@ -205,7 +205,7 @@ class P extends i.PureComponent {
     }()), T(this, "handleReady", () => {
       this.setState({
         ready: !0
-      }), (0, y.isDesktop)() && (I.ZP.send("UPDATED_QUOTES", ["Hold Tight — Loading Discord"]), I.ZP.send("UPDATE_OPEN_ON_STARTUP"))
+      }), (0, y.isDesktop)() && (v.ZP.send("UPDATED_QUOTES", ["Hold Tight — Loading Discord"]), v.ZP.send("UPDATE_OPEN_ON_STARTUP"))
     }), T(this, "setVideoRef", e => {
       this.videoRef = e
     }), T(this, "setProblemsTimeout", () => {
@@ -226,10 +226,10 @@ class P extends i.PureComponent {
     }, this._connectedSound.volume = 1
   }
 }
-let j = c.ZP.connectStores([f.Z, E.Z, b.Z, h.Z], () => ({
+let j = c.ZP.connectStores([f.Z, O.Z, b.Z, h.Z], () => ({
   isTryingToConnect: f.Z.isTryingToConnect(),
   connected: f.Z.isConnected(),
-  incident: E.Z.getIncident(),
+  incident: O.Z.getIncident(),
   soundpack: b.Z.getSoundpack(),
   reducedMotion: h.Z.useReducedMotion
 }))(e => {

@@ -37,9 +37,9 @@ function p(e) {
       channel: p,
       content: m,
       className: f,
-      compact: h,
-      popoutProps: g,
-      hideTimestamp: _ = !1,
+      compact: g,
+      popoutProps: _,
+      hideTimestamp: h = !1,
       withFooter: b = !1
     } = e,
     E = function(e, t) {
@@ -57,38 +57,38 @@ function p(e) {
       }
       return i
     }(e, ["message", "channel", "content", "className", "compact", "popoutProps", "hideTimestamp", "withFooter"]);
-  let y = (0, a.ZP)(i);
+  let C = (0, a.ZP)(i);
   return (0, r.jsx)("div", {
     className: l()({
       [u.withFooter]: b
     }, u.embedCard, {
-      [u.compact]: h
+      [u.compact]: g
     }, f),
     children: (0, r.jsx)(o.Z, (t = d({}, E), n = n = {
       className: l()(u.messageContainer, {
-        [u.compact]: h
+        [u.compact]: g
       }),
       childrenMessageContent: (0, r.jsx)(s.ZP, {
         className: l()(u.__invalid_messageContent, {
-          [u.compact]: h
+          [u.compact]: g
         }),
         message: i,
         content: m,
-        compact: null != h && h
+        compact: null != g && g
       }),
       childrenHeader: (0, r.jsx)(c.ZP, d({
         message: i,
         channel: p,
-        author: y,
+        author: C,
         guildId: null == p ? void 0 : p.guild_id,
-        compact: h,
-        hideTimestamp: _,
+        compact: g,
+        hideTimestamp: h,
         className: l()(u.header, {
-          [u.compact]: h
+          [u.compact]: g
         })
-      }, null != g ? g : {})),
-      compact: h,
-      author: y
+      }, null != _ ? _ : {})),
+      compact: g,
+      author: C
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {

@@ -19,11 +19,11 @@ var i = n(243814),
   m = n(596223),
   b = n(838195),
   _ = n(333861),
-  E = n(928518),
-  O = n(23750),
+  O = n(928518),
+  E = n(23750),
   y = n(592125),
-  I = n(293273),
-  v = n(885110),
+  v = n(293273),
+  I = n(885110),
   C = n(451478),
   S = n(630388),
   N = n(823379),
@@ -31,8 +31,8 @@ var i = n(243814),
   P = n(591759),
   j = n(228488),
   A = n(996106),
-  Z = n(914946),
-  x = n(452426),
+  x = n(914946),
+  Z = n(452426),
   w = n(561205),
   L = n(600027),
   R = n(852926),
@@ -41,11 +41,11 @@ var i = n(243814),
   M = n(701488);
 async function U(e, t, n, r) {
   let i = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : "",
-    l = I.Z.getApplicationActivity(t);
-  if (null == l || null == l.secrets || !(0, Z.t9)(r, l.party, l.secrets)) throw new A.Z({
+    l = v.Z.getApplicationActivity(t);
+  if (null == l || null == l.secrets || !(0, x.t9)(r, l.party, l.secrets)) throw new A.Z({
     errorCode: k.lTL.NO_ELIGIBLE_ACTIVITY
   }, "No eligible activity for application. Ensure an activity includes a party and appropriate secret.");
-  let a = (0, m.Z)(l, v.Z);
+  let a = (0, m.Z)(l, I.Z);
   if (a) {
     let {
       lock: t
@@ -104,7 +104,7 @@ let G = {
     scope: {
       [D.Gp.ANY]: [i.x.RPC, D.lH]
     },
-    validation: e => (0, x.Z)(e).required().keys({
+    validation: e => (0, Z.Z)(e).required().keys({
       user_id: e.string().required(),
       type: e.number().required().valid([k.mFx.JOIN]),
       content: e.string().min(0).max(1024),
@@ -130,7 +130,7 @@ let G = {
     scope: {
       [D.Gp.ANY]: [i.x.RPC, D.lH]
     },
-    validation: e => (0, x.Z)(e).required().keys({
+    validation: e => (0, Z.Z)(e).required().keys({
       type: e.number().required().valid([k.mFx.JOIN]),
       user_id: e.string().required(),
       session_id: e.string().required(),
@@ -185,14 +185,14 @@ let G = {
       } = (0, L.T)(), u = (0, g.ZP)({
         application: t.application,
         channelId: null == l ? void 0 : l.id
-      }), d = null != u ? E.Z.getWindow(u) : void 0;
+      }), d = null != u ? O.Z.getWindow(u) : void 0;
       (null == d ? void 0 : d.closed) && (d = void 0);
       let p = null != d ? k.IlC.POPOUT : k.IlC.APP;
       if ((0, j.Pr)({}, null == d ? void 0 : d.document), null != c) {
         if (c.applicationId !== i.id) throw new A.Z({
           errorCode: k.lTL.INVALID_COMMAND
         }, "Application is not currently mounted.");
-        let e = I.Z.getApplicationActivity(i.id);
+        let e = v.Z.getApplicationActivity(i.id);
         if (null != e)(0, s.h7)(e, !1, p);
         else throw new A.Z({
           errorCode: k.lTL.NO_ELIGIBLE_ACTIVITY
@@ -258,7 +258,7 @@ let G = {
       return new Promise((e, t) => {
         ! function(e, t) {
           let n;
-          if ((0, h.R)()) n = E.Z.getWindow(k.KJ3.ACTIVITY_POPOUT);
+          if ((0, h.R)()) n = O.Z.getWindow(k.KJ3.ACTIVITY_POPOUT);
           else {
             var r;
             let e = C.Z.getLastFocusedWindowId();
@@ -305,7 +305,7 @@ let G = {
           mediaUrl: r
         }
       } = e;
-      (0, Z.bu)(n.transport);
+      (0, x.bu)(n.transport);
       let i = n.application.id;
       if (null == i) throw new A.Z({
         errorCode: k.lTL.INVALID_COMMAND
@@ -366,7 +366,7 @@ let G = {
           url: l.url,
           height: l.height,
           width: l.width
-        }]), n = new O.ZP({
+        }]), n = new E.ZP({
           id: T.default.cast(T.default.fromTimestamp(Date.now())),
           applicationId: p,
           content: c,
@@ -378,7 +378,7 @@ let G = {
         let t = !1,
           r = (0, R.jU)(d),
           l = a.z1l;
-        (E.Z.getWindowOpen(k.KJ3.ACTIVITY_POPOUT) || r.context === k.IlC.POPOUT) && (l = a.u1M), (0, _.M)({
+        (O.Z.getWindowOpen(k.KJ3.ACTIVITY_POPOUT) || r.context === k.IlC.POPOUT) && (l = a.u1M), (0, _.M)({
           applicationId: p,
           channel: h,
           command: {

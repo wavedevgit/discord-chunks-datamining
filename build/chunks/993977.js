@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => v
+  Z: () => I
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -19,7 +19,7 @@ var r = n(255367),
   b = n(388032),
   _ = n(876733);
 
-function E(e, t, n) {
+function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -28,14 +28,14 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function O(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      E(e, t, n[t])
+      O(e, t, n[t])
     })
   }
   return e
@@ -80,7 +80,7 @@ function y(e) {
     }), i]
   })
 }
-class I extends i.PureComponent {
+class v extends i.PureComponent {
   handleToggleShortcutDesktop(e) {
     c.Xc.updateSetting(e)
   }
@@ -88,7 +88,7 @@ class I extends i.PureComponent {
     c.Pe.updateSetting(e)
   }
   trackRestoreApplication(e, t) {
-    d.default.track(m.rMx.APPLICATION_SETTINGS_UPDATED, O({
+    d.default.track(m.rMx.APPLICATION_SETTINGS_UPDATED, E({
       hidden_enabled: t
     }, e.getAnalyticsData()))
   }
@@ -129,18 +129,18 @@ class I extends i.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), E(this, "handleRestoreHiddenLibraryApplication", e => {
+    super(...e), O(this, "handleRestoreHiddenLibraryApplication", e => {
       let t = p.x9(e.getFlags(), m.eHb.HIDDEN);
       o.h(e.id, e.branchId, t), this.trackRestoreApplication(e, p.yE(t, m.eHb.HIDDEN))
     })
   }
 }
 
-function v() {
+function I() {
   let e = {
     installShortcutDesktop: c.Xc.useSetting(),
     installShortcutStartMenu: c.Pe.useSetting(),
     hiddenLibraryApplicationViewItems: (0, l.e7)([u.Z], () => u.Z.hiddenLibraryApplicationViewItems)
   };
-  return (0, r.jsx)(I, O({}, e))
+  return (0, r.jsx)(v, E({}, e))
 }

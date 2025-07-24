@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  EQ: () => O,
+  EQ: () => E,
   Pk: () => y
 });
 var r = n(255367),
@@ -64,7 +64,7 @@ let b = e => (0, r.jsx)(d.M4, g({
       requiredSpacingFromTop: i.useMemo(() => e(), [e])
     }
   },
-  E = e => {
+  O = e => {
     var {
       positionControlRef: t,
       targetElementRef: n,
@@ -87,7 +87,7 @@ let b = e => (0, r.jsx)(d.M4, g({
       children: l
     })
   },
-  O = e => {
+  E = e => {
     let {
       listScrollerRef: t
     } = e, {
@@ -140,7 +140,7 @@ let b = e => (0, r.jsx)(d.M4, g({
     return (0, r.jsx)(u.x, {
       errorSource: "ORBS_SHOP_ONBOARDING_COACHMARK",
       renderCustomErrorComponent: () => i,
-      children: (0, r.jsx)(E, (t = g({}, l), n = n = {
+      children: (0, r.jsx)(O, (t = g({}, l), n = n = {
         children: i
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);

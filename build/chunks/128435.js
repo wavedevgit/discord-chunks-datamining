@@ -14,9 +14,9 @@ var r = n(255367),
   p = n(294608),
   m = n(65145),
   f = n(920557),
-  h = n(484953);
+  g = n(484953);
 
-function g(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,13 +35,13 @@ function g(e) {
   return e
 }
 
-function _(e) {
+function h(e) {
   let {
     media: t
   } = e;
   return (0, r.jsx)(c.X6q, {
     variant: "text-md/medium",
-    className: h.question,
+    className: g.question,
     scaleFontToUserSetting: !0,
     children: t.text
   })
@@ -56,7 +56,7 @@ function b(e) {
     className: o
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(h.detailsText, o),
+    className: a()(g.detailsText, o),
     children: [l ? (0, r.jsx)(c.Avr, {
       text: t,
       onClick: i,
@@ -115,7 +115,7 @@ function E(e) {
   })
 }
 
-function y(e) {
+function C(e) {
   let {
     message: t,
     poll: n,
@@ -131,35 +131,35 @@ function y(e) {
       myAvatarUrl: t.myAvatarUrl,
       canShowVoteCounts: t.canShowVoteCounts
     };
-    return (0, o.EQ)(t.layoutType).with(s.C.DEFAULT, () => (0, r.jsx)(f.K, g({}, n))).with(s.C.IMAGE_ONLY_ANSWERS, () => (0, r.jsx)(d.Z, g({}, n))).otherwise(() => null)
+    return (0, o.EQ)(t.layoutType).with(s.C.DEFAULT, () => (0, r.jsx)(f.K, _({}, n))).with(s.C.IMAGE_ONLY_ANSWERS, () => (0, r.jsx)(d.Z, _({}, n))).otherwise(() => null)
   }(0, n);
   return null == u ? null : (0, r.jsx)("div", {
-    className: a()(h.container, l, i),
+    className: a()(g.container, l, i),
     children: (0, r.jsxs)(c.y5t, {
       children: [(0, r.jsxs)("div", {
-        className: h.header,
-        children: [(0, r.jsx)(_, {
+        className: g.header,
+        children: [(0, r.jsx)(h, {
           media: n.question
         }), null != n.promptLabel && (0, r.jsx)(c.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
-          className: h.prompt,
+          className: g.prompt,
           scaleFontToUserSetting: !0,
           children: n.promptLabel
         })]
       }), u, (0, r.jsxs)("div", {
-        className: h.bottomBar,
+        className: g.bottomBar,
         children: [(0, r.jsx)(E, {
           channelId: t.getChannelId(),
           messageId: t.id,
           action: n.secondaryAction,
-          className: h.secondaryAction,
+          className: g.secondaryAction,
           isInteractive: n.isInteractive
         }), (0, r.jsx)(E, {
           channelId: t.getChannelId(),
           messageId: t.id,
           action: n.tertiaryAction,
-          className: h.tertiaryAction
+          className: g.tertiaryAction
         }), (0, r.jsx)(E, {
           channelId: t.getChannelId(),
           messageId: t.id,
@@ -180,7 +180,7 @@ function x(e) {
     message: t,
     poll: n,
     children: (0, r.jsx)(m.Pk, {
-      children: (0, r.jsx)(y, {
+      children: (0, r.jsx)(C, {
         message: t,
         poll: n,
         className: i

@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => O
+  Z: () => E
 }), n(388685);
 var r = n(255367);
 n(73800);
@@ -19,8 +19,8 @@ var i = n(481060),
   m = n(852926),
   b = n(186901),
   _ = n(981631);
-let E = new u.Z("RPCCommandsOverlay"),
-  O = {
+let O = new u.Z("RPCCommandsOverlay"),
+  E = {
     [_.Etm.SET_OVERLAY_LOCKED]: {
       scope: b.lH,
       validation: e => (0, g.Z)(e).required().keys({
@@ -37,7 +37,7 @@ let E = new u.Z("RPCCommandsOverlay"),
             application: r
           }
         } = e;
-        if (E.verbose("RPCCommands.SET_OVERLAY_LOCKED", {
+        if (O.verbose("RPCCommands.SET_OVERLAY_LOCKED", {
             locked: t,
             pid: n
           }), null == r.id) throw new h.Z({

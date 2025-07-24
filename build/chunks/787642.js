@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => E
+  Z: () => O
 });
 var r = n(255367),
   i = n(73800),
@@ -42,7 +42,7 @@ function _(e, t, n) {
   }, t)
 }
 
-function E() {
+function O() {
   let e = c.Z.getGuildsArray().filter(e => e.features.has(h.oNc.HUB)),
     t = e => {
       u.default.track(h.rMx.ADD_FRIEND_OTHER_PLACES_HUB_CLICKED, {

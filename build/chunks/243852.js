@@ -12,14 +12,14 @@ var r, i, l, a, o = n(442837),
   m = n(780570),
   b = n(314897),
   _ = n(77498),
-  E = n(283595),
-  O = n(19780),
+  O = n(283595),
+  E = n(19780),
   y = n(944486),
-  I = n(981631);
-let v = "ActivityTrackingStore",
+  v = n(981631);
+let I = "ActivityTrackingStore",
   C = 30 * g.Z.Millis.MINUTE,
   S = 5 * g.Z.Millis.MINUTE,
-  N = null != (r = s.K.get(v)) ? r : {},
+  N = null != (r = s.K.get(I)) ? r : {},
   T = {},
   P = !1;
 
@@ -27,7 +27,7 @@ function j(e) {
   let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
   t && A(e, !0);
   let n = T[e.applicationId];
-  null != n && (n.stop(), delete T[e.applicationId]), delete N[e.applicationId], s.K.set(v, N)
+  null != n && (n.stop(), delete T[e.applicationId]), delete N[e.applicationId], s.K.set(I, N)
 }
 
 function A(e) {
@@ -35,13 +35,13 @@ function A(e) {
     n = Date.now(),
     r = null != e.updatedAt ? n - e.updatedAt : 0;
   r > C + S && (r = 0);
-  let i = (0, m.OT)(e.applicationId, E.Z),
+  let i = (0, m.OT)(e.applicationId, O.Z),
     l = y.Z.getVoiceChannelId(),
     a = b.default.getSessionId(),
-    o = O.Z.getMediaSessionId();
+    o = E.Z.getMediaSessionId();
   d.Z.updateActivity({
     applicationId: e.applicationId,
-    distributor: e.isDiscordApplication ? I.GQo.DISCORD : e.distributor,
+    distributor: e.isDiscordApplication ? v.GQo.DISCORD : e.distributor,
     shareActivity: i,
     token: e.token,
     duration: Math.floor(r / 1e3),
@@ -52,10 +52,10 @@ function A(e) {
     mediaSessionId: o
   }), e.updatedAt = n;
   let u = T[e.applicationId];
-  null == u && (u = T[e.applicationId] = new c.Xp).start(C, () => A(e)), t || (N[e.applicationId] = e, s.K.set(v, N))
+  null == u && (u = T[e.applicationId] = new c.Xp).start(C, () => A(e)), t || (N[e.applicationId] = e, s.K.set(I, N))
 }
 
-function Z() {
+function x() {
   let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0],
     t = h.ZP.getVisibleRunningGames(),
     n = new Set;
@@ -76,13 +76,13 @@ function Z() {
   for (let t of Object.keys(N)) n.has(t) || j(N[t], e)
 }
 
-function x() {
+function Z() {
   for (let e of Object.keys(N)) j(N[e]);
   P = !1
 }
 class w extends(i = o.ZP.Store) {
   initialize() {
-    this.waitFor(h.ZP, f.Z, E.Z), this.syncWith([f.Z], Z)
+    this.waitFor(h.ZP, f.Z, O.Z), this.syncWith([f.Z], x)
   }
   getActivities() {
     return N
@@ -94,32 +94,32 @@ a = "ActivityTrackingStore", (l = "displayName") in w ? Object.defineProperty(w,
   configurable: !0,
   writable: !0
 }) : w[l] = a, new w(u.Z, {
-  RUNNING_GAMES_CHANGE: () => Z(),
+  RUNNING_GAMES_CHANGE: () => x(),
   CONNECTION_OPEN: function() {
     if (P) return !1;
     for (let e of Object.keys(N)) A(N[e]);
-    Z(!1), P = !0
+    x(!1), P = !0
   },
   CONNECTION_CLOSED: function(e) {
     let {
       code: t
     } = e;
-    4004 === t && x()
+    4004 === t && Z()
   },
-  LOGOUT: x,
+  LOGOUT: Z,
   ACTIVITY_UPDATE_SUCCESS: function(e) {
     let {
       applicationId: t,
       token: n
     } = e, r = N[t];
     if (null == r) return !1;
-    r.token = n, s.K.set(v, N)
+    r.token = n, s.K.set(I, N)
   },
   ACTIVITY_UPDATE_FAIL: function(e) {
     let {
       applicationId: t
     } = e, n = N[t];
     if (null == n) return !1;
-    n.token = null, n.updatedAt = null, s.K.set(v, N)
+    n.token = null, n.updatedAt = null, s.K.set(I, N)
   }
 })

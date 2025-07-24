@@ -36,13 +36,13 @@ let p = function(e) {
     t.scrollToTop({
       callback: () => requestAnimationFrame(() => e())
     })
-  }), []), E = i.useCallback(() => new Promise(e => {
+  }), []), O = i.useCallback(() => new Promise(e => {
     let t = b.current;
     if (null == t) return e();
     t.scrollToBottom({
       callback: () => requestAnimationFrame(() => e())
     })
-  }), []), O = i.useCallback(e => {
+  }), []), E = i.useCallback(e => {
     let t = document.querySelector(e),
       n = b.current;
     null != t && null != n && n.scrollIntoViewNode({
@@ -54,9 +54,9 @@ let p = function(e) {
     id: "people-list",
     isEnabled: m,
     scrollToStart: _,
-    scrollToEnd: E,
-    setFocus: O
-  }), I = i.useMemo(() => t.map(e => e.length), [t]);
+    scrollToEnd: O,
+    setFocus: E
+  }), v = i.useMemo(() => t.map(e => e.length), [t]);
   return (0, r.jsx)(a.bG, {
     navigator: y,
     children: (0, r.jsx)(a.SJ, {
@@ -105,7 +105,7 @@ let p = function(e) {
             rowHeight: u.NV,
             renderSection: g,
             sectionHeight: u.aS,
-            sections: I,
+            sections: v,
             className: d.peopleList
           }, n)), h]
         })

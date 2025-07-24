@@ -1,6 +1,6 @@
 /** Chunk was on 23045 **/
 n.d(t, {
-  Z: () => h
+  Z: () => g
 }), n(953529);
 var r = n(255367);
 n(73800);
@@ -70,22 +70,22 @@ function f(e) {
   })
 }
 
-function h(e) {
+function g(e) {
   let {
     imageUrl: t,
     name: n,
     description: i,
     formattedPrice: c,
-    role: h,
-    ctaComponent: g,
-    shouldShowFullDescriptionButton: _ = !0,
+    role: g,
+    ctaComponent: _,
+    shouldShowFullDescriptionButton: h = !0,
     onShowFullDescription: b,
     productType: E,
-    onTapCard: y,
+    onTapCard: C,
     actionMenu: x,
     showOpaqueBackground: v = !1,
-    hideRoleTag: C = !1,
-    lineClamp: O = 1,
+    hideRoleTag: O = !1,
+    lineClamp: y = 1,
     cardWidth: j = 332,
     cardHeight: I,
     thumbnailHeight: S = 187,
@@ -117,17 +117,17 @@ function h(e) {
           children: (0, r.jsx)(s.Z, {
             variant: T,
             color: "text-muted",
-            lineClamp: O,
+            lineClamp: y,
             text: i
           })
-        }), _ && (0, r.jsx)(f, {
+        }), h && (0, r.jsx)(f, {
           onShowFullDescription: b,
           variant: T
-        }), C || null == h || "" === h.name ? null : (0, r.jsxs)(r.Fragment, {
+        }), O || null == g || "" === g.name ? null : (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(a.LZC, {
             size: 16
           }), (0, r.jsx)(u.Z, {
-            role: h
+            role: g
           })]
         })]
       }), x]
@@ -148,11 +148,11 @@ function h(e) {
         onClick: e => {
           e.stopPropagation()
         },
-        children: g
+        children: _
       })]
     })]
   });
-  return null == y ? (0, r.jsx)("article", {
+  return null == C ? (0, r.jsx)("article", {
     className: l()(p.productCard, v ? p.opaqueBackground : p.solidBackground),
     "aria-labelledby": P,
     children: A
@@ -167,7 +167,7 @@ function h(e) {
         productName: n
       }),
       className: l()(p.productCard, v ? p.opaqueBackground : p.solidBackground, p.cardClickableContainer),
-      onClick: y,
+      onClick: C,
       children: A
     })
   })

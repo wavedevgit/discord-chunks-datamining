@@ -18,12 +18,12 @@ var r = n(255367),
   m = n(594174),
   b = n(482798),
   _ = n(167762),
-  E = n(151459),
-  O = n(981631),
+  O = n(151459),
+  E = n(981631),
   y = n(388032),
-  I = n(398435);
+  v = n(398435);
 
-function v(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -61,7 +61,7 @@ function S(e) {
   } = e, n = (0, a.e7)([g.Z], () => g.Z.getPendingCount() > 0), b = (0, o.dQu)(o.TVs.modules.chat.INPUT_ICON_SIZE), S = function() {
     let [e, t] = i.useState(null), {
       showActivityTicker: n
-    } = (0, E.Z)(), r = i.useRef({}), l = i.useRef(null);
+    } = (0, O.Z)(), r = i.useRef({}), l = i.useRef(null);
     return i.useEffect(() => {
       if (!n) {
         t(null), null != l.current && (window.clearTimeout(l.current), l.current = null);
@@ -81,15 +81,15 @@ function S(e) {
           let b = m.default.getUser(t);
           if (null == b) return !1;
           let _ = !1,
-            E = null;
+            O = null;
           if (null != n) {
             let i = n.type;
             if (null != i && function(e) {
                 let t = e.type;
-                return t === O.IIU.PLAYING && null != e.application_id || t === O.IIU.LISTENING || t === O.IIU.WATCHING
+                return t === E.IIU.PLAYING && null != e.application_id || t === E.IIU.LISTENING || t === E.IIU.WATCHING
               }(n)) {
-              let l = i === O.IIU.WATCHING || i === O.IIU.LISTENING ? "".concat(i, "-").concat(null != (c = n.name) ? c : "", "-").concat(null != (u = n.state) ? u : "", "-").concat(null != (d = n.details) ? d : "") : "".concat(i, "-").concat(null != (p = n.name) ? p : "");
-              (null == (s = r.current[t]) ? void 0 : s.presence) !== l && (_ = !0, e(t, "presence", l), E = {
+              let l = i === E.IIU.WATCHING || i === E.IIU.LISTENING ? "".concat(i, "-").concat(null != (c = n.name) ? c : "", "-").concat(null != (u = n.state) ? u : "", "-").concat(null != (d = n.details) ? d : "") : "".concat(i, "-").concat(null != (p = n.name) ? p : "");
+              (null == (s = r.current[t]) ? void 0 : s.presence) !== l && (_ = !0, e(t, "presence", l), O = {
                 user: b,
                 activity: n
               })
@@ -99,13 +99,13 @@ function S(e) {
             let n = h.Z.getChannel(l);
             if (null != n) {
               let i = "voice-".concat(n.id);
-              (null == (f = r.current[t]) ? void 0 : f.voice) !== i && (_ = !0, e(t, "voice", i), E = {
+              (null == (f = r.current[t]) ? void 0 : f.voice) !== i && (_ = !0, e(t, "voice", i), O = {
                 user: b,
                 voiceChannel: n
               })
             }
           } else(null == (a = r.current[t]) ? void 0 : a.voice) != null && (_ = !0, e(t, "voice", null));
-          return _ && null != E && i(E), _
+          return _ && null != O && i(O), _
         },
         o = e => {
           for (let t of e.updates) {
@@ -146,7 +146,7 @@ function S(e) {
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: I.container,
+      className: v.container,
       children: T((e, t) => null == t ? null : (0, r.jsx)(p.Z, {
         targetElementRef: N,
         position: "bottom",
@@ -154,9 +154,9 @@ function S(e) {
         userId: t.user.id,
         children: n => {
           var i;
-          return (0, r.jsxs)(l.animated.div, C(v({
+          return (0, r.jsxs)(l.animated.div, C(I({
             ref: N,
-            className: I.activityWrapper,
+            className: v.activityWrapper,
             style: e
           }, n), {
             children: [(0, r.jsx)(o.Text, {
@@ -165,11 +165,11 @@ function S(e) {
             }), null != t.voiceChannel ? (0, r.jsx)(u.Z, {
               channel: t.voiceChannel,
               textVariant: "text-xs/medium",
-              textClassName: I.statusText
+              textClassName: v.statusText
             }) : (0, r.jsx)(c.Z, {
               activity: t.activity,
               textVariant: "text-xs/medium",
-              textClassName: I.statusText
+              textClassName: v.statusText
             })]
           }))
         }
@@ -177,7 +177,7 @@ function S(e) {
     }), (0, r.jsx)(_.Or, {
       popoutPosition: "bottom",
       popoutAlign: "left",
-      children: (e, i, l, a) => (0, r.jsx)(d.JO, C(v({}, l), {
+      children: (e, i, l, a) => (0, r.jsx)(d.JO, C(I({}, l), {
         ref: a,
         className: t,
         onClick: e,

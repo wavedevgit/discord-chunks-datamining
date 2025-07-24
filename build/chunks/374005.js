@@ -18,9 +18,9 @@ var r = n(255367),
   m = n(410575),
   b = n(981631),
   _ = n(388032),
-  E = n(128654);
+  O = n(128654);
 
-function O(e) {
+function E(e) {
   var t, n;
   let {
     analyticsLocations: i
@@ -72,14 +72,14 @@ let y = i.memo(function() {
     document.body.style.setProperty("--custom-app-panels-height", "".concat(t, "px"))
   }, []), (0, r.jsx)("section", {
     ref: e,
-    className: E.panels,
+    className: O.panels,
     "aria-label": _.intl.string(_.t.StREWF),
     children: (0, r.jsxs)(l.Jc, {
       containerRef: e,
       children: [(0, r.jsx)(g.Z, {}), (0, r.jsx)(h.Z, {}), (0, r.jsx)(d.Z, {}), (0, r.jsx)(m.Z, {
         section: b.jXE.ACTIVITY_PANEL,
-        children: (0, r.jsx)(O, {
-          className: E.activityPanel
+        children: (0, r.jsx)(E, {
+          className: O.activityPanel
         })
       }), (0, r.jsx)(m.Z, {
         section: b.jXE.RTC_CONNECTION_PANEL,

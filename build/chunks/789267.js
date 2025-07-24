@@ -16,7 +16,7 @@ function o(e) {
     joinable: c,
     usernameHook: u,
     onClickJoinCall: d
-  } = e, p = (0, i.ZP)(t), m = p.nick, f = u(p), h = function(e) {
+  } = e, p = (0, i.ZP)(t), m = p.nick, f = u(p), g = function(e) {
     let t = null != e.call ? e.call.duration : null;
     return null != t ? t.humanize() : null
   }(t);
@@ -24,10 +24,10 @@ function o(e) {
     icon: n(154239),
     timestamp: t.timestamp,
     compact: o,
-    children: null != h ? a.intl.format(a.t.AcqBmJ, {
+    children: null != g ? a.intl.format(a.t.AcqBmJ, {
       username: m,
       usernameHook: f,
-      callDuration: h
+      callDuration: g
     }) : a.intl.format(a.t["43phHx"], {
       username: m,
       usernameHook: f
@@ -36,10 +36,10 @@ function o(e) {
     icon: n(344163),
     timestamp: t.timestamp,
     compact: o,
-    children: [null != h ? a.intl.format(a.t["7TeC1N"], {
+    children: [null != g ? a.intl.format(a.t["7TeC1N"], {
       username: m,
       usernameHook: f,
-      callDuration: h
+      callDuration: g
     }) : a.intl.format(a.t.LuB5RE, {
       username: m,
       usernameHook: f

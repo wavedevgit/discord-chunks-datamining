@@ -1,6 +1,6 @@
 /** Chunk was on 23045 **/
 n.d(t, {
-  Z: () => y
+  Z: () => C
 }), n(388685), n(997841);
 var r, i, l, a = n(442837),
   o = n(433517),
@@ -11,13 +11,13 @@ var r, i, l, a = n(442837),
   p = n(594174),
   m = n(630388),
   f = n(110630),
-  h = n(981631);
-let g = "ChannelFollowingBumpChannels",
-  _ = new Set,
+  g = n(981631);
+let _ = "ChannelFollowingBumpChannels",
+  h = new Set,
   b = new Set;
 class E extends(r = a.ZP.Store) {
   initialize() {
-    this.waitFor(c.default), _ = new Set(o.K.get(g))
+    this.waitFor(c.default), h = new Set(o.K.get(_))
   }
   shouldShowBump(e) {
     return b.has(e)
@@ -29,7 +29,7 @@ l = "ChannelFollowingPublishBumpStore", (i = "displayName") in E ? Object.define
   configurable: !0,
   writable: !0
 }) : E[i] = l;
-let y = new E(s.Z, {
+let C = new E(s.Z, {
   MESSAGE_CREATE: function(e) {
     var t;
     let {
@@ -37,17 +37,17 @@ let y = new E(s.Z, {
       message: r,
       optimistic: i
     } = e;
-    if (i || _.has(n)) return !1;
+    if (i || h.has(n)) return !1;
     let l = u.Z.getChannel(n),
       a = p.default.getCurrentUser();
-    if (!(null != l && l.type === h.d4z.GUILD_ANNOUNCEMENT && (0, f.Z)(r) && (null != a && (null == (t = r.author) ? void 0 : t.id) === a.id ? d.Z.can(h.Plq.SEND_MESSAGES, l) : d.Z.can(h.Plq.MANAGE_MESSAGES, l)) && !m.yE(Number(r.flags), h.iLy.CROSSPOSTED))) return !1;
+    if (!(null != l && l.type === g.d4z.GUILD_ANNOUNCEMENT && (0, f.Z)(r) && (null != a && (null == (t = r.author) ? void 0 : t.id) === a.id ? d.Z.can(g.Plq.SEND_MESSAGES, l) : d.Z.can(g.Plq.MANAGE_MESSAGES, l)) && !m.yE(Number(r.flags), g.iLy.CROSSPOSTED))) return !1;
     b.add(r.id)
   },
   MESSAGE_UPDATE: function(e) {
     let {
       message: t
     } = e;
-    b.has(t.id) && m.yE(Number(t.flags), h.iLy.CROSSPOSTED) && b.delete(t.id)
+    b.has(t.id) && m.yE(Number(t.flags), g.iLy.CROSSPOSTED) && b.delete(t.id)
   },
   CHANNEL_SELECT: function(e) {
     b.clear()
@@ -62,6 +62,6 @@ let y = new E(s.Z, {
     let {
       channelId: t
     } = e;
-    _.add(t), o.K.set(g, _), b.clear()
+    h.add(t), o.K.set(_, h), b.clear()
   }
 })

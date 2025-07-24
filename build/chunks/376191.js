@@ -19,10 +19,10 @@ var i = n(442837),
   m = n(998502),
   b = n(620924),
   _ = n(332712),
-  E = n(81471),
-  O = n(388032),
+  O = n(81471),
+  E = n(388032),
   y = n(818816);
-let I = e => {
+let v = e => {
     let {
       userId: t
     } = e, n = (0, _.O)(t);
@@ -30,7 +30,7 @@ let I = e => {
       className: y.mutualGuilds,
       variant: "text-sm/normal",
       color: "text-muted",
-      children: O.intl.string(O.t.jpY0X1)
+      children: E.intl.string(E.t.jpY0X1)
     }) : (0, r.jsxs)("div", {
       className: y.mutualGuildsContainer,
       children: [(0, r.jsx)(h.Z, {
@@ -42,13 +42,13 @@ let I = e => {
         className: y.mutualGuilds,
         variant: "text-sm/normal",
         color: "text-muted",
-        children: O.intl.format(O.t.eE3oen, {
+        children: E.intl.format(E.t.eE3oen, {
           count: n.length
         })
       })]
     })
   },
-  v = m.ZP.getEnableHardwareAcceleration() ? l.Xo$ : l.qEK;
+  I = m.ZP.getEnableHardwareAcceleration() ? l.Xo$ : l.qEK;
 
 function C(e) {
   var t;
@@ -64,12 +64,12 @@ function C(e) {
     onlyAnimateOnHover: !0
   });
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(v, {
+    children: [(0, r.jsx)(I, {
       className: y.avatar,
       src: (0, p.x)(n, 40, C),
       avatarDecoration: N,
       size: l.EFr.SIZE_40,
-      "aria-label": null != (t = null == c ? void 0 : c.username) ? t : O.intl.string(O.t["30mdIy"])
+      "aria-label": null != (t = null == c ? void 0 : c.username) ? t : E.intl.string(E.t["30mdIy"])
     }), (0, r.jsxs)("div", {
       className: y.userPreview,
       children: [(0, r.jsxs)("div", {
@@ -88,11 +88,11 @@ function C(e) {
           children: S
         })]
       }), (0, r.jsx)(s.Z, {
-        hoverText: (0, r.jsx)(E.Z, {
+        hoverText: (0, r.jsx)(O.Z, {
           channel: n
         }),
         forceHover: h,
-        children: (0, r.jsx)(I, {
+        children: (0, r.jsx)(v, {
           userId: c.id
         })
       })]

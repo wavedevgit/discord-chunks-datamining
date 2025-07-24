@@ -18,11 +18,11 @@ var r = n(255367),
   m = n(565138),
   b = n(41776),
   _ = n(703656),
-  E = n(769654),
-  O = n(430824),
+  O = n(769654),
+  E = n(430824),
   y = n(411198),
-  I = n(843445),
-  v = n(981631),
+  v = n(843445),
+  I = n(981631),
   C = n(388032),
   S = n(629811);
 
@@ -86,7 +86,7 @@ class T extends i.PureComponent {
         className: S.joinedCheckmark
       })]
     })) : i && t && (p = C.intl.string(C.t.XpeFYm)) : (p = C.intl.string(C.t.dKhVQE), h = this.handleLogin), (0, r.jsxs)("div", {
-      className: a()(o, s === I.b.SMALL ? S.inviteSmall : S.inviteLarge),
+      className: a()(o, s === v.b.SMALL ? S.inviteSmall : S.inviteLarge),
       children: [(0, r.jsx)(f.Z, {
         children: C.intl.string(C.t.s1KcLi)
       }), (0, r.jsxs)("div", {
@@ -124,32 +124,32 @@ class T extends i.PureComponent {
         skuId: t,
         isInGuild: n,
         isLurking: r
-      } = this.props, i = () => (0, E.X)(e.id);
+      } = this.props, i = () => (0, O.X)(e.id);
       if (r)(0, p.Oj)(t).then(i);
       else if (n) i();
       else try {
         await d.Z.joinGuild(e.id, {
           lurker: !0,
-          source: v.vtS.APPLICATION_STORE
+          source: I.vtS.APPLICATION_STORE
         }), i()
       } catch (e) {}
     }), N(this, "handleLogin", () => {
       let e = {
-        redirect_to: v.Z5c.APPLICATION_STORE_LISTING_SKU(this.props.skuId)
+        redirect_to: I.Z5c.APPLICATION_STORE_LISTING_SKU(this.props.skuId)
       };
-      (0, _.uL)(v.Z5c.LOGIN, {
+      (0, _.uL)(I.Z5c.LOGIN, {
         search: (0, o.stringify)(e),
         source: "verified_guild_invite"
       })
     })
   }
 }
-let P = (0, h.Z)(s.ZP.connectStores([O.Z, b.Z], e => {
+let P = (0, h.Z)(s.ZP.connectStores([E.Z, b.Z], e => {
   let {
     guild: t
   } = e, n = b.Z.isLurking(t.id);
   return {
-    isInGuild: null != O.Z.getGuild(t.id) && !n,
+    isInGuild: null != E.Z.getGuild(t.id) && !n,
     isLurking: n
   }
 })(T))

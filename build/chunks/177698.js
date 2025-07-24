@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => E
+  Z: () => O
 }), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685);
 var r = n(255367);
 n(73800);
@@ -49,18 +49,18 @@ function _(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let E = (0, h.Z)(e => {
+let O = (0, h.Z)(e => {
   var t;
   let {
     clientId: n,
     authorizations: u,
     scopes: d,
     parsedPermissions: h,
-    responseType: E,
-    redirectUri: O,
+    responseType: O,
+    redirectUri: E,
     codeChallenge: y,
-    codeChallengeMethod: I,
-    state: v,
+    codeChallengeMethod: v,
+    state: I,
     guildId: C,
     channelId: S,
     prompt: N,
@@ -68,8 +68,8 @@ let E = (0, h.Z)(e => {
     disclosures: P,
     integrationType: j,
     pid: A,
-    signal: Z
-  } = e, x = "OAuth2Authorize_".concat(n, "_").concat(C, "_").concat(S), w = null != j ? null == u ? void 0 : u.get(j) : void 0, L = null != (t = null == w ? void 0 : w.application) ? t : a.Z.getApplication(n);
+    signal: x
+  } = e, Z = "OAuth2Authorize_".concat(n, "_").concat(C, "_").concat(S), w = null != j ? null == u ? void 0 : u.get(j) : void 0, L = null != (t = null == w ? void 0 : w.application) ? t : a.Z.getApplication(n);
   return new Promise((e, t) => {
     let a = (0, f.jU)(A),
       w = i.z1l;
@@ -90,7 +90,7 @@ let E = (0, h.Z)(e => {
             }, "OAuth2 Error: No location provided")), a.lock();
             return
           }
-          if (e(s), null == O || null == L) return void a.lock();
+          if (e(s), null == E || null == L) return void a.lock();
           null == new URL(s).searchParams.get("error") ? (0, i.h7j)(e => (0, r.jsx)(c.$0, b({
             application: L
           }, e)), {
@@ -122,18 +122,18 @@ let E = (0, h.Z)(e => {
             null == t || t.removeEventListener("abort", n)
           }
         }
-      }(x, Z);
+      }(Z, x);
     (0, i.h7j)(e => (0, r.jsx)(o.OAuth2AuthorizeModal, _(b({}, e), {
       authorizations: u,
       clientId: n,
       scopes: null != d ? d : [],
       disclosures: null != P ? P : [],
       callback: D,
-      responseType: E,
-      redirectUri: O,
+      responseType: O,
+      redirectUri: E,
       codeChallenge: y,
-      codeChallengeMethod: I,
-      state: v,
+      codeChallengeMethod: v,
+      state: I,
       permissions: h,
       guildId: C,
       channelId: S,
@@ -142,7 +142,7 @@ let E = (0, h.Z)(e => {
       integrationType: j,
       cancelCompletesFlow: !0
     })), {
-      modalKey: x,
+      modalKey: Z,
       onCloseCallback: () => {
         k(), R || (t(new p.Z({
           errorCode: g.lTL.OAUTH2_ERROR

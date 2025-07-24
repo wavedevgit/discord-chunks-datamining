@@ -1,6 +1,6 @@
 /** Chunk was on 23045 **/
 n.d(t, {
-  Z: () => g
+  Z: () => _
 });
 var r = n(255367);
 n(73800);
@@ -15,18 +15,18 @@ var i = n(442837),
   p = n(51144),
   m = n(981631),
   f = n(388032),
-  h = n(273254);
+  g = n(273254);
 
-function g(e) {
-  let t, n, g, {
-      author: _,
+function _(e) {
+  let t, n, _, {
+      author: h,
       banned: b,
       channelId: E
     } = e,
-    y = (0, i.e7)([s.default], () => s.default.getId()),
-    x = p.ZP.useName(_),
-    v = y === _.id,
-    C = (0, i.e7)([c.Z, u.Z], () => {
+    C = (0, i.e7)([s.default], () => s.default.getId()),
+    x = p.ZP.useName(h),
+    v = C === h.id,
+    O = (0, i.e7)([c.Z, u.Z], () => {
       let e = c.Z.getChannel(E);
       if (null == e) return !1;
       if (e.isPrivate()) return !0;
@@ -37,13 +37,13 @@ function g(e) {
       }
       return u.Z.can(m.Plq.SEND_MESSAGES, e)
     });
-  return v ? (t = f.intl.string(f.t["F/OLvL"]), g = f.intl.string(f.t.C89OLC)) : (g = f.intl.string(f.t["YVub5+"]), b ? t = f.intl.string(f.t["57nBt7"]) : null != x && C ? (t = f.intl.formatToPlainString(f.t["9Akp1t"], {
+  return v ? (t = f.intl.string(f.t["F/OLvL"]), _ = f.intl.string(f.t.C89OLC)) : (_ = f.intl.string(f.t["YVub5+"]), b ? t = f.intl.string(f.t["57nBt7"]) : null != x && O ? (t = f.intl.formatToPlainString(f.t["9Akp1t"], {
     username: x
   }), n = (0, r.jsx)(a.Z.Button, {
     onClick: function() {
       let {
         id: e
-      } = _, t = "@".concat(p.ZP.getUserTag(_, {
+      } = h, t = "@".concat(p.ZP.getUserTag(h, {
         decoration: "never"
       }));
       d.S.dispatchToLastSubscribed(m.CkL.INSERT_TEXT, {
@@ -54,10 +54,10 @@ function g(e) {
     children: f.intl.string(f.t.P8tvKC)
   })) : t = f.intl.string(f.t["SMJr+f"])), (0, r.jsxs)(a.Z, {
     children: [(0, r.jsx)(a.Z.Header, {
-      text: g
+      text: _
     }), (0, r.jsxs)(a.Z.Body, {
       children: [(0, r.jsxs)("div", {
-        className: h.headerLine,
+        className: g.headerLine,
         children: [(0, r.jsx)(a.Z.Icon, {
           expired: !0
         }), (0, r.jsx)(a.Z.Info, {

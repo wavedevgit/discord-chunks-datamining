@@ -14,16 +14,16 @@ var r, i = n(255367),
   p = n(481060),
   m = n(493683),
   f = n(529103),
-  h = n(700582),
-  g = n(906732),
-  _ = n(213609),
+  g = n(700582),
+  _ = n(906732),
+  h = n(213609),
   b = n(541716),
   E = n(28546),
-  y = n(963249),
+  C = n(963249),
   x = n(594174),
   v = n(626135),
-  C = n(51144),
-  O = n(479446),
+  O = n(51144),
+  y = n(479446),
   j = n(795448),
   I = n(441623),
   S = n(317271),
@@ -43,15 +43,15 @@ function L(e) {
     onMouseEnter: a,
     onMouseLeave: R,
     popoutPosition: L,
-    analyticsPage: k,
-    analyticsSection: D,
+    analyticsPage: D,
+    analyticsSection: k,
     glow: M,
     giftIntentSecondaryAction: U
   } = e, F = (0, c.e7)([x.default], () => x.default.getCurrentUser()), {
     analyticsLocations: B
-  } = (0, g.ZP)(), G = (0, c.e7)([I.Z], () => I.Z.getFriendAnniversaryYears(r.id));
+  } = (0, _.ZP)(), G = (0, c.e7)([I.Z], () => I.Z.getFriendAnniversaryYears(r.id));
   l.useEffect(() => {
-    (0, _.h)({
+    (0, h.h)({
       name: s.ImpressionNames.GIFT_INTENT_CARD,
       type: s.ImpressionTypes.VIEW,
       properties: {
@@ -63,7 +63,7 @@ function L(e) {
   }, [t, n]);
   let H = () => t === T.hX.FRIEND_ANNIVERSARY ? w.intl.formatToPlainString(w.t["L2s/Nz"], {
       numberOfYears: G
-    }) : (0, O.Ou)(t),
+    }) : (0, y.Ou)(t),
     V = "coachmark" === n,
     z = V ? Z.innerContentCoachmark : Z.innerContent,
     W = V ? Z.recipientUserAvatarCoachmark : Z.recipientUserAvatar,
@@ -89,12 +89,12 @@ function L(e) {
         className: Z.subContent,
         children: [(0, i.jsxs)("div", {
           className: Z.avatars,
-          children: [(0, i.jsx)(h.Z, {
+          children: [(0, i.jsx)(g.Z, {
             className: W,
             user: r,
             "aria-label": r.username,
             size: P.EF.SIZE_56
-          }), null != F && (0, i.jsx)(h.Z, {
+          }), null != F && (0, i.jsx)(g.Z, {
             className: K,
             user: F,
             "aria-label": r.username,
@@ -107,14 +107,14 @@ function L(e) {
             color: V ? "header-primary" : "always-white",
             lineClamp: 3,
             children: t === T.hX.FRIEND_ANNIVERSARY ? w.intl.formatToPlainString(w.t.BWJvAA, {
-              friendUserName: C.ZP.getName(r)
-            }) : (0, O.Ou)(t)
+              friendUserName: O.ZP.getName(r)
+            }) : (0, y.Ou)(t)
           }), (0, i.jsx)(p.Text, {
             className: Y,
             variant: "text-sm/normal",
             children: t === T.hX.FRIEND_ANNIVERSARY ? w.intl.formatToPlainString(w.t.S3fdq6, {
               numberOfYears: G
-            }) : (0, O.Ou)(t)
+            }) : (0, y.Ou)(t)
           })]
         })]
       }), (0, i.jsxs)("div", {
@@ -162,15 +162,15 @@ function L(e) {
           onClick: e => {
             e.stopPropagation();
             let i = (0, S.F)(t);
-            (0, y.Z)({
+            (0, C.Z)({
               isGift: !0,
               initialPlanId: null,
               giftRecipient: r,
               analyticsLocation: "system_message" === n ? i.chat : i.actionButtonCoachmark,
               analyticsLocations: B,
               analyticsObject: {
-                page: k,
-                section: D,
+                page: D,
+                section: k,
                 object: N.qAy.BUTTON_CTA,
                 objectType: N.Qqv.GIFT
               },

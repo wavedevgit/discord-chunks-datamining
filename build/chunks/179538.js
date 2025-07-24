@@ -81,6 +81,7 @@ function h(e) {
   } = e, g = f(e, ["role", "text", "focusProps", "variant", "textVariant", "lineClamp", "className", "style"]);
   return (0, r.jsx)(o.t, _(u({}, i), {
     children: (0, r.jsx)("button", _(u({
+      "data-mana-component": "text-button",
       role: t,
       className: a()(l.textButton, l[c])
     }, g), {

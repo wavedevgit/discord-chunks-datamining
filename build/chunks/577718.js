@@ -18,11 +18,11 @@ var r = n(255367),
   m = n(538445),
   b = n(933104),
   _ = n(276645),
-  E = n(970731),
-  O = n(601964),
+  O = n(970731),
+  E = n(601964),
   y = n(626135),
-  I = n(267642),
-  v = n(337721),
+  v = n(267642),
+  I = n(337721),
   C = n(981631),
   S = n(921944),
   N = n(30513),
@@ -30,8 +30,8 @@ var r = n(255367),
   P = n(388032),
   j = n(540835),
   A = n(519254),
-  Z = n(741160),
-  x = n(829972),
+  x = n(741160),
+  Z = n(829972),
   w = n(31932),
   L = n(642301);
 
@@ -42,7 +42,7 @@ function R(e) {
 }
 
 function D(e, t) {
-  null != t && ((0, I.f2)(t, C.Eu4.TIER_1) ? h.Z.open(t.id, C.pNK.BOOST_PERKS, {
+  null != t && ((0, v.f2)(t, C.Eu4.TIER_1) ? h.Z.open(t.id, C.pNK.BOOST_PERKS, {
     section: C.jXE.PREMIUM_GUILD_INVITE_SPLASH
   }) : (0, u.Z)({
     analyticsLocations: e,
@@ -96,7 +96,7 @@ let M = i.memo(function(e) {
       },
       location_stack: u
     })
-  }, U = (0, a.wj)(n) ? x : w, [G, B] = (0, c.US)(t, S.R.GUILD_HEADER_TOOLTIPS);
+  }, U = (0, a.wj)(n) ? Z : w, [G, B] = (0, c.US)(t, S.R.GUILD_HEADER_TOOLTIPS);
   return (0, r.jsx)(r.Fragment, {
     children: (() => {
       switch (G) {
@@ -126,7 +126,7 @@ let M = i.memo(function(e) {
           });
         case l.z.GUILD_HEADER_PREMIUM_GUILD_PROGRESS:
           return (0, r.jsx)(k, {
-            renderPopout: (0, r.jsx)(E.ZP, {
+            renderPopout: (0, r.jsx)(O.ZP, {
               onComponentMount: N,
               header: P.intl.string(P.t.nxtaFx),
               asset: (0, r.jsx)("img", {
@@ -145,7 +145,7 @@ let M = i.memo(function(e) {
           });
         case l.z.GUILD_HEADER_PROGRESS_BAR_SIZE_COACH_MARK:
           return (0, r.jsx)(k, {
-            renderPopout: (0, r.jsx)(E.ZP, {
+            renderPopout: (0, r.jsx)(O.ZP, {
               onComponentMount: N,
               header: P.intl.string(P.t.KAsfPT),
               asset: (0, r.jsx)("img", {
@@ -172,24 +172,24 @@ let M = i.memo(function(e) {
           });
         case l.z.GUILD_DISCOVERY_LANDING_PAGE_SETTINGS_UPSELL:
           return (0, r.jsx)(k, {
-            renderPopout: (0, r.jsx)(v.Z, {
+            renderPopout: (0, r.jsx)(I.Z, {
               guild: i,
               markAsDismissed: B
             }),
             renderGuildHeaderDropdownButton: o
           });
         case l.z.GUILD_HEADER_INVITE_SPLASH:
-          let e = (0, I.f2)(i, C.Eu4.TIER_1) ? P.intl.format(P.t.DDzEVl, {}) : P.intl.formatToPlainString(P.t.pMftkJ, {
-              boostCount: (0, I.KK)(i, C.Eu4.TIER_1)
+          let e = (0, v.f2)(i, C.Eu4.TIER_1) ? P.intl.format(P.t.DDzEVl, {}) : P.intl.formatToPlainString(P.t.pMftkJ, {
+              boostCount: (0, v.KK)(i, C.Eu4.TIER_1)
             }),
-            t = (0, I.f2)(i, C.Eu4.TIER_1) ? P.intl.string(P.t.rOFcBg) : P.intl.string(P.t.hvVgAQ);
+            t = (0, v.f2)(i, C.Eu4.TIER_1) ? P.intl.string(P.t.rOFcBg) : P.intl.string(P.t.hvVgAQ);
           return (0, r.jsx)(k, {
-            renderPopout: (0, r.jsx)(E.ZP, {
+            renderPopout: (0, r.jsx)(O.ZP, {
               onComponentMount: M,
               header: P.intl.string(P.t["36wK8/"]),
               asset: (0, r.jsx)("img", {
                 alt: "",
-                src: Z,
+                src: x,
                 className: A.fullWidthImage
               }),
               content: e,
@@ -210,7 +210,7 @@ let M = i.memo(function(e) {
           });
         case l.z.GUILD_HEADER_ACTIVE_THREADS_NOTICE:
           return (0, r.jsx)(k, {
-            renderPopout: (0, r.jsx)(E.ZP, {
+            renderPopout: (0, r.jsx)(O.ZP, {
               className: j.tooltipOverrideColor,
               header: P.intl.string(P.t.hLUL3t),
               content: P.intl.string(P.t.ahWaPT),
@@ -222,7 +222,7 @@ let M = i.memo(function(e) {
           });
         case l.z.GUILD_HEADER_SOUNDBOARD_PERMISSION:
           return (0, r.jsx)(k, {
-            renderPopout: (0, r.jsx)(E.ZP, {
+            renderPopout: (0, r.jsx)(O.ZP, {
               header: P.intl.string(P.t.PZNQKC),
               content: P.intl.string(P.t.jQIyyM),
               buttonCTA: P.intl.string(P.t.RzWDqa),
@@ -233,7 +233,7 @@ let M = i.memo(function(e) {
                 className: A.fullWidthImage
               }),
               onClick: () => {
-                h.Z.open(i.id, C.pNK.ROLES), h.Z.selectRole((0, O.lV)(i), P.intl.string(P.t.Bco7ND))
+                h.Z.open(i.id, C.pNK.ROLES), h.Z.selectRole((0, E.lV)(i), P.intl.string(P.t.Bco7ND))
               },
               markAsDismissed: B
             }),

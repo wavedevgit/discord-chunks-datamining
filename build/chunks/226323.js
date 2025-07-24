@@ -18,11 +18,11 @@ var r = n(255367),
   m = n(795318),
   b = n(512384),
   _ = n(670188),
-  E = n(314897),
-  O = n(131951),
+  O = n(314897),
+  E = n(131951),
   y = n(51144),
-  I = n(524484),
-  v = n(388032),
+  v = n(524484),
+  I = n(388032),
   C = n(795243);
 
 function S(e) {
@@ -63,27 +63,27 @@ let T = {
     serverDeaf: {
       icon: s.Vm4,
       colorize: !0,
-      getStatus: () => v.intl.string(v.t.btxSdH)
+      getStatus: () => I.intl.string(I.t.btxSdH)
     },
     serverMute: {
       icon: s.v0G,
       colorize: !0,
-      getStatus: () => v.intl.string(v.t.uLddbW)
+      getStatus: () => I.intl.string(I.t.uLddbW)
     },
     deaf: {
       icon: s.wE8,
       colorize: !1,
-      getStatus: () => v.intl.string(v.t.NjmiOD)
+      getStatus: () => I.intl.string(I.t.NjmiOD)
     },
     mute: {
       icon: s.nRN,
       colorize: !1,
-      getStatus: () => v.intl.string(v.t.tjtv3N)
+      getStatus: () => I.intl.string(I.t.tjtv3N)
     },
     localMute: {
       icon: s.v0G,
       colorize: !1,
-      getStatus: () => v.intl.string(v.t["9F+xJS"])
+      getStatus: () => I.intl.string(I.t["9F+xJS"])
     }
   };
 
@@ -94,21 +94,21 @@ function j(e) {
       parentAnalyticsLocation: p
     } = (0, f.ZP)(),
     {
-      channel: E,
+      channel: O,
       user: j,
       nick: A,
-      mute: Z,
-      deaf: x,
+      mute: x,
+      deaf: Z,
       serverMute: w,
       serverDeaf: L
     } = e,
-    R = (0, o.e7)([O.Z], () => O.Z.isLocalMute(j.id)),
+    R = (0, o.e7)([E.Z], () => E.Z.isLocalMute(j.id)),
     D = (0, u.Z)({
       userId: j.id,
       checkSoundSharing: !0
     }),
-    k = null != (t = E.getGuildId()) ? t : void 0,
-    M = j.getAvatarURL(E.guild_id, 24),
+    k = null != (t = O.getGuildId()) ? t : void 0,
+    M = j.getAvatarURL(O.guild_id, 24),
     U = null != A ? A : y.ZP.getName(j),
     {
       icon: G,
@@ -129,12 +129,12 @@ function j(e) {
       if (i) return P.mute
     }({
       serverDeaf: L,
-      deaf: x,
+      deaf: Z,
       serverMute: w,
-      mute: Z,
+      mute: x,
       localMute: R
     })) ? l : {},
-    H = null != V ? v.intl.formatToPlainString(v.t["1+MVBA"], {
+    H = null != V ? I.intl.formatToPlainString(I.t["1+MVBA"], {
       userName: U,
       status: V()
     }) : U;
@@ -147,7 +147,7 @@ function j(e) {
       return t => (0, r.jsx)(e, N(S({}, t), {
         user: j,
         guildId: k,
-        channel: E,
+        channel: O,
         showMediaItems: !0,
         onInteraction: (0, m.u)("GuildChannelUserContextMenu", h.Z.RTC_PANEL, {
           targetUserId: j.id
@@ -170,7 +170,7 @@ function j(e) {
     targetElementRef: d,
     user: j,
     guildId: k,
-    channelId: E.id,
+    channelId: O.id,
     position: "top",
     clickTrap: !0,
     children: e => (0, r.jsx)(s.ua7, {
@@ -184,7 +184,7 @@ function j(e) {
         onContextMenu: F,
         focusProps: T,
         children: (0, r.jsx)(b.Z, {
-          shakeLocation: I.oZ.VOICE_USER,
+          shakeLocation: v.oZ.VOICE_USER,
           isShaking: D,
           children: (0, r.jsx)("div", {
             className: a()(C.avatar, {
@@ -212,7 +212,7 @@ function A(e) {
     voiceStates: t,
     channel: n,
     className: l
-  } = e, [c, u] = i.useState(!1), h = (0, o.e7)([E.default], () => E.default.getId()), {
+  } = e, [c, u] = i.useState(!1), h = (0, o.e7)([O.default], () => O.default.getId()), {
     containerRef: f,
     maxVisibleAvatars: g
   } = function(e) {
@@ -236,11 +236,11 @@ function A(e) {
         if (r.length >= n) return [r, !0];
         r.push(i)
       } return [r, !1]
-  }(t, h, g), _ = c ? s.V_R : s.qJs, O = (0, r.jsx)(s.M0o, {
+  }(t, h, g), _ = c ? s.V_R : s.qJs, E = (0, r.jsx)(s.M0o, {
     onClick: () => u(!c),
     color: s.YX$.PRIMARY,
     size: s.tT7.SIZE_24,
-    tooltip: c ? v.intl.string(v.t["Z/Tya2"]) : v.intl.string(v.t.XR5BAQ),
+    tooltip: c ? I.intl.string(I.t["Z/Tya2"]) : I.intl.string(I.t.XR5BAQ),
     icon: (0, r.jsx)(_, {
       size: "xs",
       color: "currentColor"
@@ -254,7 +254,7 @@ function A(e) {
       ref: f,
       className: a()(C.voiceUsers, !c && C.collapsed),
       role: "group",
-      "aria-label": v.intl.string(v.t["/ZgaVV"]),
+      "aria-label": I.intl.string(I.t["/ZgaVV"]),
       children: [y.map(e => {
         let {
           user: t,
@@ -271,7 +271,7 @@ function A(e) {
           serverMute: l.mute,
           serverDeaf: l.deaf
         }, t.id) : null
-      }), b ? O : null]
+      }), b ? E : null]
     })
   })
 }

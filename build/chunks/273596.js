@@ -18,11 +18,11 @@ var r = n(255367),
   m = n(726115),
   b = n(28494),
   _ = n(746728),
-  E = n(140700),
-  O = n(665807),
+  O = n(140700),
+  E = n(665807),
   y = n(188493),
-  I = n(294330),
-  v = n(981631),
+  v = n(294330),
+  I = n(981631),
   C = n(984503);
 let S = Object.freeze({
     top: 0,
@@ -37,9 +37,9 @@ let S = Object.freeze({
     right: 32
   }),
   T = {
-    page: v.ZY5.GUILD_DISCOVERY,
-    object: v.qAy.CARD,
-    section: v.jXE.DISCOVER_SEARCH
+    page: I.ZY5.GUILD_DISCOVERY,
+    object: I.qAy.CARD,
+    section: I.jXE.DISCOVER_SEARCH
   },
   P = s().throttle(h.c6, 1e3, {
     leading: !1,
@@ -54,14 +54,14 @@ function j(e) {
   } = e, {
     guildIds: s,
     loading: h,
-    searchResultsQuery: v,
+    searchResultsQuery: I,
     loadMore: j,
     searchCategoryId: A
   } = (0, b.f)({
     loadId: t
-  }), Z = 0 === s.length && !h, x = i.useContext(d.AnalyticsContext), [w, L] = i.useState((0, m.PM)()), [R, D] = i.useState(!0), k = i.useRef(R), [M, U] = i.useState(3), G = i.useRef(M), B = i.useRef(null), V = i.useCallback(e => {
-    if (null != e && !Z && !h) 336 * (s.length / M) <= e.height && j()
-  }, [Z, h, s.length, M, j]), H = i.useCallback(e => {
+  }), x = 0 === s.length && !h, Z = i.useContext(d.AnalyticsContext), [w, L] = i.useState((0, m.PM)()), [R, D] = i.useState(!0), k = i.useRef(R), [M, U] = i.useState(3), G = i.useRef(M), B = i.useRef(null), V = i.useCallback(e => {
+    if (null != e && !x && !h) 336 * (s.length / M) <= e.height && j()
+  }, [x, h, s.length, M, j]), H = i.useCallback(e => {
     let t = e.contentRect;
     if (null == t) return;
     let n = t.width;
@@ -72,16 +72,16 @@ function j(e) {
   }, [R, V]), F = (0, u.y)(H, [R, V]);
   i.useEffect(() => {
     L((0, m.PM)())
-  }, [v]), i.useEffect(() => {
+  }, [I]), i.useEffect(() => {
     P({
       loadId: t,
       searchId: w,
-      query: v,
+      query: I,
       guildResults: s.map(f.Z.getGuild).filter(p.lm),
-      analyticsContext: x,
+      analyticsContext: Z,
       categoryId: A
     })
-  }, [x, s, t, A, w, v]);
+  }, [Z, s, t, A, w, I]);
   let z = i.useCallback(e => n(e, A), [n, A]),
     W = i.useMemo(() => h ? [s.length, 0] : [s.length], [s.length, h]),
     Y = i.useCallback((e, n, i) => {
@@ -97,12 +97,12 @@ function j(e) {
             }),
             children: [!R && (0, r.jsxs)("div", {
               className: C.headingFilters,
-              children: [(0, r.jsx)(E.Z, {
+              children: [(0, r.jsx)(O.Z, {
                 loadId: t
               }), (0, r.jsx)(y.Z, {
                 loadId: t
               })]
-            }), Z && (0, r.jsx)(O.Z, {
+            }), x && (0, r.jsx)(E.Z, {
               loadId: t
             })]
           }, i);
@@ -113,18 +113,18 @@ function j(e) {
             })
           }, i)
       }
-    }, [Z, R, t]),
+    }, [x, R, t]),
     K = i.useCallback(e => {
       switch (e) {
         case 0:
           let t = R ? 16 : 50;
-          return Z ? t + 448 : t;
+          return x ? t + 448 : t;
         case 1:
           return 120;
         default:
           throw Error("[getSectionHeight] Failed for section: ".concat(e))
       }
-    }, [Z, R]),
+    }, [x, R]),
     q = i.useCallback((e, t) => {
       switch (e) {
         case 0:
@@ -159,7 +159,7 @@ function j(e) {
         let e = s[t];
         return (0, r.jsx)("div", {
           style: n,
-          children: (0, r.jsx)(I.ZP, {
+          children: (0, r.jsx)(v.ZP, {
             guildId: e,
             onClick: async e => await Q(e, t, A, T),
             onView: e => z(e)

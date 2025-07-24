@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => E
+  Z: () => O
 });
 var r = n(255367),
   i = n(73800),
@@ -45,11 +45,11 @@ let b = a().debounce(c.ZP.trackWithMetadata, 500),
       imageMarginX: p,
       imageMarginTop: m,
       trackingSource: _,
-      undismissable: E,
-      onDismissed: O,
+      undismissable: O,
+      onDismissed: E,
       onClick: y,
-      cta: I,
-      ctaColor: v
+      cta: v,
+      ctaColor: I
     } = e;
     i.useEffect(() => {
       b(h.rMx.CHANNEL_NOTICE_VIEWED, {
@@ -58,7 +58,7 @@ let b = a().debounce(c.ZP.trackWithMetadata, 500),
       })
     }, [t.id, d]);
     let C = null;
-    "function" == typeof I ? C = I() : null != I && (C = (0, r.jsx)(o.zx, {
+    "function" == typeof v ? C = v() : null != v && (C = (0, r.jsx)(o.zx, {
       className: g.btn,
       size: o.zx.Sizes.SMALL,
       onClick: () => {
@@ -69,17 +69,17 @@ let b = a().debounce(c.ZP.trackWithMetadata, 500),
         }), null == y || y()
       },
       fullWidth: !0,
-      color: v,
-      children: I
+      color: I,
+      children: v
     }));
     let S = null != p ? "".concat(p, "px") : "16px";
     return (0, r.jsxs)("div", {
       className: g.channelNotice,
-      children: [!0 === E ? null : (0, r.jsx)(s.P3F, {
+      children: [!0 === O ? null : (0, r.jsx)(s.P3F, {
         onClick: () => {
           c.ZP.trackWithMetadata(h.rMx.CHANNEL_NOTICE_CLOSED, {
             notice_type: d
-          }), null == O || O()
+          }), null == E || E()
         },
         className: g.close,
         "aria-label": f.intl.string(f.t.WAI6xs),
@@ -113,7 +113,7 @@ let b = a().debounce(c.ZP.trackWithMetadata, 500),
       })]
     })
   },
-  E = function(e) {
+  O = function(e) {
     let {
       showRedesignedChannelNotice: t
     } = (0, d.o)(!0);

@@ -1,6 +1,6 @@
 /** Chunk was on 23045 **/
 n.d(t, {
-  l: () => _
+  l: () => h
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -14,21 +14,21 @@ var r = n(255367),
   p = n(566006),
   m = n(287151),
   f = n(92254),
-  h = n(588429);
-let g = i.memo(function(e) {
+  g = n(588429);
+let _ = i.memo(function(e) {
     let t, n, {
         useChatFontScaling: i,
         hideEmoji: l,
         emoji: c,
-        className: g,
-        count: _,
+        className: _,
+        count: h,
         me: b,
         me_burst: E,
-        burst_count: y,
+        burst_count: C,
         burst_colors: x,
         readOnly: v,
-        isLurking: C,
-        isGuest: O,
+        isLurking: O,
+        isGuest: y,
         isPendingMember: j,
         type: I,
         emojiSize: S
@@ -36,8 +36,8 @@ let g = i.memo(function(e) {
       T = I === p.O.BURST,
       N = (0, m.y4)(b, E, I),
       P = (0, d.v)(T && null != x ? x : []),
-      A = i ? h : f,
-      w = T ? y : _,
+      A = i ? g : f,
+      w = T ? C : h,
       Z = (0, u.y)(w, m.aO),
       R = {};
     if (T && null != P) {
@@ -49,15 +49,15 @@ let g = i.memo(function(e) {
       } = P, l = null != (L = (0, o.wK)(null != r ? r : "", i)) ? L : "";
       N && (R.borderColor = r), R.background = l, t = e, n = e
     }
-    let k = {
+    let D = {
       minWidth: Z,
       color: t,
       borderColor: n
     };
     return (0, r.jsxs)("div", {
-      className: a()(A.reaction, A.reactionInner, g, {
+      className: a()(A.reaction, A.reactionInner, _, {
         [A.reactionMe]: N,
-        [A.reactionReadOnly]: v && !C && !j && !O
+        [A.reactionReadOnly]: v && !O && !j && !y
       }),
       style: R,
       children: [(0, r.jsx)(s.Z, {
@@ -70,12 +70,12 @@ let g = i.memo(function(e) {
         animated: T && c.animated
       }), (0, r.jsx)("div", {
         className: A.reactionCount,
-        style: k,
+        style: D,
         children: w
       })]
     })
   }),
-  _ = i.memo(function(e) {
+  h = i.memo(function(e) {
     var {
       showImmediate: t,
       reactions: n
@@ -98,13 +98,13 @@ let g = i.memo(function(e) {
       !e || a || s || u(() => {
         o(!0)
       })
-    }, [a, s]), f = (0, c.O)(d), h = a && !s || t ? m.le : g;
+    }, [a, s]), f = (0, c.O)(d), g = a && !s || t ? m.le : _;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         ref: f
       }), n.map(e => {
         var t, n, i;
-        return (0, r.jsx)(h, (t = function(e) {
+        return (0, r.jsx)(g, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);

@@ -23,14 +23,14 @@ function a(e) {
     renderThreadAccessory: p,
     renderSuppressEmbeds: m,
     renderReactions: f,
-    forceAddReactions: h,
-    disableComponentInteractivity: g,
-    className: _
+    forceAddReactions: g,
+    disableComponentInteractivity: _,
+    className: h
   } = e;
   return u ? null : (0, r.jsx)(i.Z, {
     message: t,
     children: (0, r.jsx)(l.ZP, {
-      className: _,
+      className: h,
       isInteracting: c,
       message: t,
       channel: n,
@@ -39,9 +39,9 @@ function a(e) {
       isMessageSnapshot: d,
       onMediaItemContextMenu: s,
       renderThreadAccessory: p,
-      disableComponentInteractivity: g,
+      disableComponentInteractivity: _,
       renderSuppressEmbeds: m,
-      forceAddReactions: h,
+      forceAddReactions: g,
       renderReactions: f
     })
   })

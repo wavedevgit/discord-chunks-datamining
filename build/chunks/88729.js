@@ -1,4 +1,4 @@
-/** Chunk was on 23045 **/
+/** Chunk was on 1272 **/
 e.exports = {
   wrapper: "wrapper_e45a82",
   partyMembers: "partyMembers_e45a82",

@@ -14,16 +14,16 @@ var r = n(255367),
   p = n(481060),
   m = n(911969),
   f = n(456100),
-  h = n(595519),
-  g = n(566620),
-  _ = n(403404),
+  g = n(595519),
+  _ = n(566620),
+  h = n(403404),
   b = n(100527),
   E = n(906732),
-  y = n(783097),
+  C = n(783097),
   x = n(581364),
   v = n(592180),
-  C = n(726033),
-  O = n(598077),
+  O = n(726033),
+  y = n(598077),
   j = n(594174),
   I = n(768581),
   S = n(585483),
@@ -36,7 +36,7 @@ var r = n(255367),
   R = n(388032),
   L = n(848697);
 
-function k(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -55,7 +55,7 @@ function k(e) {
   return e
 }
 
-function D(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -97,24 +97,24 @@ function U(e, t, n, i, l, o) {
     message: d,
     compact: m,
     channel: f,
-    isInteractionUserBlocked: h,
-    isInteractionUserIgnored: g,
-    showAvatarPopout: _,
+    isInteractionUserBlocked: g,
+    isInteractionUserIgnored: _,
+    showAvatarPopout: h,
     showTargetAvatarPopout: b,
     onClickAvatar: E,
-    onUserContextMenu: y,
+    onUserContextMenu: C,
     onClickTargetAvatar: x,
     onTargetUserContextMenu: v,
-    onPopoutRequestClose: C
+    onPopoutRequestClose: O
   } = e;
   if (m && 1 === n) return null;
-  if (m && null == d.activityInstance || h || g) return (0, r.jsx)("div", {
+  if (m && null == d.activityInstance || g || _) return (0, r.jsx)("div", {
     className: L.replyBadge,
     children: (0, r.jsx)(M, {
       className: L.commandIcon
     })
   });
-  let O = null != (u = I.ZP.getGuildMemberAvatarURL({
+  let y = null != (u = I.ZP.getGuildMemberAvatarURL({
       avatar: null != (s = i.guildMemberAvatar) ? s : void 0,
       userId: t.id,
       guildId: null != (c = null == f ? void 0 : f.guild_id) ? c : ""
@@ -144,18 +144,18 @@ function U(e, t, n, i, l, o) {
     })({
       user: t,
       guildId: f.guild_id,
-      guildAvatar: O,
+      guildAvatar: y,
       onClick: 1 === n ? x : E,
-      onContextMenu: 1 === n ? v : y,
+      onContextMenu: 1 === n ? v : C,
       ref: o
     }),
-    S = 1 === n ? b : _;
+    S = 1 === n ? b : h;
   return null != l && null != S && null != o ? (0, r.jsx)(p.yRy, {
     targetElementRef: o,
     renderPopout: l,
     shouldShow: S,
     position: "right",
-    onRequestClose: C,
+    onRequestClose: O,
     children: j
   }) : j()
 }
@@ -200,7 +200,7 @@ function G(e) {
   }, {
     autoTrackExposure: !0
   }), n = t ? p.iWm : p.jje;
-  return (0, r.jsx)(n, k({}, e))
+  return (0, r.jsx)(n, D({}, e))
 }
 
 function H(e) {
@@ -215,7 +215,7 @@ function H(e) {
     f = (0, d.e7)([j.default], () => j.default.getCurrentUser()),
     I = i.useRef(null),
     P = i.useRef(null),
-    M = i.useMemo(() => (e, t, n) => (s()(null != t, "ExecutedCommand: user cannot be undefined"), s()(null != f, "ExecutedCommand: currentUser cannot be undefined"), s()(null != o, "ExecutedCommand: channel cannot be undefined"), (0, r.jsx)(C.Z, D(k({}, e), {
+    M = i.useMemo(() => (e, t, n) => (s()(null != t, "ExecutedCommand: user cannot be undefined"), s()(null != f, "ExecutedCommand: currentUser cannot be undefined"), s()(null != o, "ExecutedCommand: channel cannot be undefined"), (0, r.jsx)(O.Z, k(D({}, e), {
       user: t,
       currentUser: f,
       guildId: o.guild_id,
@@ -223,18 +223,18 @@ function H(e) {
       messageId: l.id,
       newAnalyticsLocations: n
     }))), [f, o, l.id]),
-    H = i.useMemo(() => e => (s()(null != o, "ExecutedCommand: channel cannot be null"), (0, r.jsx)(A.Z, D(k({}, e), {
+    H = i.useMemo(() => e => (s()(null != o, "ExecutedCommand: channel cannot be null"), (0, r.jsx)(A.Z, k(D({}, e), {
       channel: o,
       messageId: l.id,
       interactionData: l.interactionData
     }))), [o, l.id, l.interactionData]),
     V = (0, x.t0)(l),
-    z = (null == V ? void 0 : V.type) === m.B8.APPLICATION_COMMAND && null != V.target_user ? new O.Z(V.target_user) : null,
+    z = (null == V ? void 0 : V.type) === m.B8.APPLICATION_COMMAND && null != V.target_user ? new y.Z(V.target_user) : null,
     W = (null == V ? void 0 : V.type) === m.B8.APPLICATION_COMMAND && null != l.messageReference && null != e.renderTargetMessage,
     K = (0, N.Sw)(null == (t = l.interaction) ? void 0 : t.user, o),
     Y = (0, N.Sw)(z, o),
     X = i.useMemo(() => e.compact ? (0, w.Z)((0, T.vc)(u()(), "LT")) : null, [e.compact]),
-    q = (0, h.NX)(o.id),
+    q = (0, g.NX)(o.id),
     Q = l.interaction;
   if (null == Q || null == K) return null;
   let J = () => {
@@ -281,7 +281,7 @@ function H(e) {
               }
               return i
             }(e, ["onClick"]);
-            if (l.type === Z.uaV.CHAT_INPUT_COMMAND || l.type === Z.uaV.INTERACTION_PREMIUM_UPSELL) return (0, r.jsx)(p.P3F, D(k({}, i), {
+            if (l.type === Z.uaV.CHAT_INPUT_COMMAND || l.type === Z.uaV.INTERACTION_PREMIUM_UPSELL) return (0, r.jsx)(p.P3F, k(D({}, i), {
               tag: "span",
               onClick: o,
               innerRef: n,
@@ -302,8 +302,8 @@ function H(e) {
               children: c
             });
             {
-              let e = (0, y.XZ)(c);
-              return (0, r.jsx)(p.P3F, D(k({}, i), {
+              let e = (0, C.XZ)(c);
+              return (0, r.jsx)(p.P3F, k(D({}, i), {
                 tag: "span",
                 onClick: () => {
                   S.S.dispatchToLastSubscribed(Z.CkL.OPEN_APP_LAUNCHER, {
@@ -344,11 +344,11 @@ function H(e) {
   }));
   else {
     let e = () => {
-      (0, _.Z)({
+      (0, h.Z)({
         channel: o,
         openInPopout: !1,
         analyticsLocations: c
-      }), (0, g.w1)({
+      }), (0, _.w1)({
         guildId: o.guild_id
       })
     };

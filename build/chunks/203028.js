@@ -23,11 +23,11 @@ function _(e) {
   var t, i;
   let {
     party: _,
-    onUserContextMenu: E
+    onUserContextMenu: O
   } = e, {
-    priorityMembers: O,
+    priorityMembers: E,
     guildContext: y
-  } = _, I = O[0], v = function(e) {
+  } = _, v = E[0], I = function(e) {
     let {
       priorityMembers: t,
       partiedMembers: n
@@ -62,21 +62,21 @@ function _(e) {
       partiedMembers: c,
       voiceChannels: u,
       currentActivities: p
-    } = e, _ = i.length, E = c.length - _, O = p[0], y = null == O ? void 0 : O.activity, I = null == O ? void 0 : O.startedPlayingTime, v = {
+    } = e, _ = i.length, O = c.length - _, E = p[0], y = null == E ? void 0 : E.activity, v = null == E ? void 0 : E.startedPlayingTime, I = {
       name: null != (t = null == y ? void 0 : y.name) ? t : ""
     };
     if ((0, a.Z)(y) && null != y) return {
       subtitle: (0, r.jsx)(d.ZP, {
-        start: I,
+        start: v,
         location: d.ZP.Locations.ACTIVITY_FEED_NEW,
-        messageProps: v
+        messageProps: I
       }),
       icon: null
     };
-    if (_ + E === 1 && null != O) {
+    if (_ + O === 1 && null != E) {
       let {
         game: e
-      } = O;
+      } = E;
       if (null == y) return {
         subtitle: null,
         icon: null
@@ -93,9 +93,9 @@ function _(e) {
           };
           return {
             subtitle: (0, r.jsx)(d.ZP, {
-              start: I,
+              start: v,
               location: d.ZP.Locations.ACTIVITY_FEED_NEW,
-              messageProps: v
+              messageProps: I
             }), icon: null != e ? (0, r.jsx)(f.Z.Header.Icon, {
               src: null != e.getIconURL(g.Z) ? e.getIconURL(g.Z) : n(211827)
             }) : null
@@ -170,7 +170,7 @@ function _(e) {
         subtitle: (0, r.jsx)(d.ZP, {
           start: i,
           location: d.ZP.Locations.ACTIVITY_FEED_NEW,
-          messageProps: v
+          messageProps: I
         }),
         icon: null != n && null != n.getIconURL(g.Z) ? (0, r.jsx)(f.Z.Header.Icon, {
           src: n.getIconURL(g.Z)
@@ -189,13 +189,13 @@ function _(e) {
     source: c.m1.FriendsActivityFeed
   });
   return (0, r.jsx)(f.Z.Header, {
-    priorityUser: I,
+    priorityUser: v,
     guildId: null == y ? void 0 : y.id,
-    title: v,
+    title: I,
     subtitle: C,
     icon: S,
     onSubtitleClick: N,
     onIconClick: N,
-    onContextMenu: e => E(e, I.user)
+    onContextMenu: e => O(e, v.user)
   })
 }

@@ -1,6 +1,6 @@
 /**
   Module ID: 76010
-  Original File Name: 38a41b2f51eae074
+  Original File Name: 46016e0cdbf027d0
 **/
 .container__5537c {
     display: flex;
@@ -76,14 +76,13 @@
 }
 
 .footer__03b47 {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
     padding: 12px
 }
 
-.button__03b47 {
-    padding: 0 12px
+.textButtonWrapper__03b47 {
+    align-items: center;
+    display: flex;
+    padding: calc(var(--space-4) - 1px) calc(var(--space-12) - 1px)
 }
 
 .container__4eb6e {
@@ -942,4 +941,4 @@
     z-index: 0
 }
 
-/*# sourceMappingURL=38a41b2f51eae074.css.map*/
+/*# sourceMappingURL=46016e0cdbf027d0.css.map*/

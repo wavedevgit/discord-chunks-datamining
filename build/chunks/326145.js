@@ -18,8 +18,8 @@ var r = n(255367),
   m = n(745752),
   b = n(17181),
   _ = n(388032),
-  E = n(150718),
-  O = n(113728);
+  O = n(150718),
+  E = n(113728);
 
 function y(e) {
   let {
@@ -28,8 +28,8 @@ function y(e) {
   } = e, {
     ref: l,
     width: y,
-    height: I
-  } = (0, c.ZP)(), v = i.useCallback(() => {
+    height: v
+  } = (0, c.ZP)(), I = i.useCallback(() => {
     null != t && null != n && ((0, m.I1)(t), (0, b.default)({
       guildId: t,
       returnChannelId: n
@@ -39,27 +39,27 @@ function y(e) {
     splash: C.splash
   }), [C]), N = (0, d.N)(S);
   return (0, r.jsxs)("div", {
-    className: a()(E.outerWrapping, O.main, {
-      [O.fullBorderWithGradient]: null == S
+    className: a()(O.outerWrapping, E.main, {
+      [E.fullBorderWithGradient]: null == S
     }),
     ref: l,
     children: [null != S ? (0, r.jsx)(u.Z, {
-      className: O.artwork,
+      className: E.artwork,
       src: S,
       width: y,
-      height: I,
-      imageClassName: O.cover
+      height: v,
+      imageClassName: E.cover
     }) : (0, r.jsx)(p.Z, {}), null != N && null != S && (0, r.jsx)("div", {
-      className: O.gradient,
+      className: E.gradient,
       style: {
         background: "linear-gradient(180deg, ".concat((0, g.aD)(N, .16), " 0%, ").concat((0, g.aD)(N, 1), " 100%)")
       }
     }), null != S && (0, r.jsx)("div", {
-      className: O.gradient
+      className: E.gradient
     }), (0, r.jsxs)("div", {
-      className: a()(E.explainerContainer, E.transparentBackground),
+      className: a()(O.explainerContainer, O.transparentBackground),
       children: [(0, r.jsxs)("div", {
-        className: E.header,
+        className: O.header,
         children: [(0, r.jsx)(s.X6q, {
           variant: "heading-xxl/normal",
           color: "always-white",
@@ -73,7 +73,7 @@ function y(e) {
         variant: "overlay-primary",
         size: "md",
         text: _.intl.string(_.t.VVFjAA),
-        onClick: v
+        onClick: I
       })]
     })]
   })

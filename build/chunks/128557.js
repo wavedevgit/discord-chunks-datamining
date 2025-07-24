@@ -168,7 +168,7 @@ function R(e) {
         }), (0, u.ZDy)(async () => {
           let {
             default: e
-          } = await Promise.resolve().then(n.bind(n, 431583));
+          } = await n.e("74023").then(n.bind(n, 431583));
           return t => (0, r.jsx)(e, N({
             source: P.jXE.CHANNEL_WELCOME_CTA
           }, t))

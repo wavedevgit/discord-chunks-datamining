@@ -1,6 +1,6 @@
 /** Chunk was on 23045 **/
 n.d(t, {
-  G: () => y,
+  G: () => C,
   z: () => x
 });
 var r = n(73800),
@@ -15,9 +15,9 @@ var r = n(73800),
   p = n(914010),
   m = n(135431),
   f = n(433534),
-  h = n(914498),
-  g = n(981631),
-  _ = n(49898),
+  g = n(914498),
+  _ = n(981631),
+  h = n(49898),
   b = n(388032);
 
 function E(e) {
@@ -35,21 +35,21 @@ function E(e) {
     return null != (e = p.Z.getGuildId()) ? e : void 0
   }), m = (0, i.e7)([c.Z, u.Z, d.Z], () => {
     let e = c.Z.getChannel(d.Z.getChannelId());
-    return null != e && (e.isPrivate() || u.Z.can(g.Plq.SEND_MESSAGES, e))
-  }, []), h = (0, l.PZ)(e, s) && m;
+    return null != e && (e.isPrivate() || u.Z.can(_.Plq.SEND_MESSAGES, e))
+  }, []), g = (0, l.PZ)(e, s) && m;
   return {
     isDiscoverable: t,
     customInstallUrl: n,
     installParams: r,
     integrationTypesConfig: a,
-    canViewApp: t || h,
-    canOpenAppLauncher: h,
+    canViewApp: t || g,
+    canOpenAppLauncher: g,
     isInstallable: o,
     selectedGuildId: s
   }
 }
 
-function y(e, t) {
+function C(e, t) {
   let {
     canViewApp: n,
     canOpenAppLauncher: i,
@@ -62,7 +62,7 @@ function y(e, t) {
   return r.useMemo(() => n ? () => {
     if (null == t || t(), i) return void(0, a.X)(e.id);
     (0, o.transitionToGlobalDiscovery)({
-      tab: _.GlobalDiscoveryTab.APPS,
+      tab: h.GlobalDiscoveryTab.APPS,
       applicationId: e.id,
       newSessionState: {
         entrypoint: {
@@ -86,16 +86,16 @@ function x(e) {
   let {
     canViewApp: t,
     isInstallable: n
-  } = E(e), i = y(e);
+  } = E(e), i = C(e);
   return r.useMemo(() => t && null != i ? {
     label: b.intl.string(b.t.hvVgAQ),
-    trackingArea: h.j_.VIEW,
+    trackingArea: g.j_.VIEW,
     onClick() {
       i()
     }
   } : n && null != i ? {
     label: b.intl.string(b.t.NgXl3N),
-    trackingArea: h.j_.ADD_APP,
+    trackingArea: g.j_.ADD_APP,
     onClick() {
       i()
     }

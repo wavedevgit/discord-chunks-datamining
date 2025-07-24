@@ -14,16 +14,16 @@ var r = n(255367),
   p = n(367907),
   m = n(600164),
   f = n(111028),
-  h = n(231053),
-  g = n(697568),
-  _ = n(183023),
+  g = n(231053),
+  _ = n(697568),
+  h = n(183023),
   b = n(524444),
   E = n(98278),
-  y = n(767714),
+  C = n(767714),
   x = n(430824),
   v = n(594174),
-  C = n(626135),
-  O = n(74538),
+  O = n(626135),
+  y = n(74538),
   j = n(453070),
   I = n(926491),
   S = n(378233),
@@ -54,7 +54,7 @@ function L(e) {
   return e
 }
 
-function k(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -66,7 +66,7 @@ function k(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let D = (e, t) => t ? w.intl.format(w.t.auckX1, {
+let k = (e, t) => t ? w.intl.format(w.t.auckX1, {
     stickerPackName: e.name
   }) : w.intl.format(w.t.OzB6e3, {
     stickerPackName: e.name
@@ -80,7 +80,7 @@ let D = (e, t) => t ? w.intl.format(w.t.auckX1, {
   };
 
 function U(e) {
-  C.default.track(P.rMx.PREMIUM_PROMOTION_OPENED, {
+  O.default.track(P.rMx.PREMIUM_PROMOTION_OPENED, {
     location_page: null != e.guild_id ? P.ZY5.GUILD_CHANNEL : P.ZY5.DM_CHANNEL,
     location_section: P.jXE.STICKER_POPOUT
   }), (0, E.z)()
@@ -125,23 +125,23 @@ let B = e => {
     });
     (0, j.Pq)(n.pack_id);
     let f = (0, j.Sd)(l),
-      h = {
+      g = {
         refreshPositionKey: a,
         channel: l
       },
-      g = i.useRef(h);
+      _ = i.useRef(g);
     return (i.useEffect(() => {
-      g.current = h
+      _.current = g
     }), i.useEffect(() => {
       let {
         refreshPositionKey: e
-      } = g.current;
+      } = _.current;
       e()
     }, [u]), i.useEffect(() => {
       let {
         channel: e
-      } = g.current;
-      C.default.track(P.rMx.OPEN_POPOUT, L({
+      } = _.current;
+      O.default.track(P.rMx.OPEN_POPOUT, L({
         type: P.jXE.STICKER_POPOUT,
         guild_id: e.getGuildId(),
         sticker_pack_id: n.pack_id
@@ -155,7 +155,7 @@ let B = e => {
         children: n.name
       }), (0, r.jsx)(c.Text, {
         variant: "text-sm/normal",
-        children: D(s, d)
+        children: k(s, d)
       }), (0, r.jsx)("ul", {
         className: Z.stickersList,
         children: m.map(e => (0, r.jsx)(T.Z, {
@@ -188,8 +188,8 @@ let B = e => {
       } = e,
       [j, I] = i.useState(null),
       [S, N] = i.useState(!1),
-      D = v.default.getCurrentUser(),
-      M = O.ZP.canUseCustomStickersEverywhere(D),
+      k = v.default.getCurrentUser(),
+      M = y.ZP.canUseCustomStickersEverywhere(k),
       B = (0, o.e7)([x.Z], () => x.Z.getGuild(n.guild_id)),
       G = null != B,
       [H, V] = i.useState(!1),
@@ -215,7 +215,7 @@ let B = e => {
         stickerSourceGuild: e
       } = q.current;
       (async () => {
-        (null == e || e.features.has(P.oNc.DISCOVERABLE)) && I(await (0, g.Z)(n.id)), N(!0)
+        (null == e || e.features.has(P.oNc.DISCOVERABLE)) && I(await (0, _.Z)(n.id)), N(!0)
       })()
     }, [n.id, G]);
     let Q = n.guild_id === l.getGuildId(),
@@ -234,7 +234,7 @@ let B = e => {
       } = q.current;
       e()
     }, [S, j]), (0, d.ZP)(() => {
-      C.default.track(P.rMx.OPEN_POPOUT, L({
+      O.default.track(P.rMx.OPEN_POPOUT, L({
         type: ee
       }, Y))
     }), S) ? (0, r.jsxs)(b.W_, {
@@ -253,7 +253,7 @@ let B = e => {
           children: [(0, r.jsx)(F, {
             description: t,
             sticker: n
-          }), $ && (0, r.jsx)(y.Z, {
+          }), $ && (0, r.jsx)(C.Z, {
             className: R.ctaButton,
             subscriptionTier: A.Si.TIER_2,
             size: s.zx.Sizes.SMALL,
@@ -280,13 +280,13 @@ let B = e => {
         var e;
         if (!J && !G) return;
         let t = (null != (e = null == j ? void 0 : j.stickers) ? e : []).slice(0, 13).filter(e => e.id !== n.id).slice(0, 12),
-          i = null != j ? h.JO.createFromDiscoverableGuild(j) : h.JO.createFromGuildRecord(B);
+          i = null != j ? g.JO.createFromDiscoverableGuild(j) : g.JO.createFromGuildRecord(B);
         return (0, r.jsxs)("div", {
           className: R.guildSection,
           children: [(0, r.jsx)(c.vwX, {
             className: R.guildTitle,
             children: G ? w.intl.string(w.t.kx6pEB) : w.intl.string(w.t.pDE7GR)
-          }), (0, r.jsx)(_.Oe, {
+          }), (0, r.jsx)(h.Oe, {
             expressionSourceGuild: i,
             hasJoinedExpressionSourceGuild: G,
             isDisplayingJoinGuildButtonInPopout: et
@@ -315,7 +315,7 @@ let B = e => {
               align: m.Z.Align.START,
               justify: m.Z.Justify.START,
               className: R.otherEmojisContainer,
-              children: t.map(e => (0, r.jsx)(c.ua7, k(L({
+              children: t.map(e => (0, r.jsx)(c.ua7, D(L({
                 text: e.name
               }, b.b_), {
                 children: t => {
@@ -337,7 +337,7 @@ let B = e => {
                     }
                     return i
                   }(t, ["onMouseEnter", "onMouseLeave"]);
-                  return (0, r.jsx)("div", k(L({
+                  return (0, r.jsx)("div", D(L({
                     className: a()(R.otherEmoji, {
                       [Z.nonInteractingSticker]: null != z && z !== e.id
                     }),

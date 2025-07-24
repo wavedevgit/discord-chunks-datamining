@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => E,
+  Z: () => O,
   j: () => g
 }), n(415506), n(388685);
 var r, i = n(255367),
@@ -170,7 +170,7 @@ class _ extends l.PureComponent {
     })
   }
 }
-let E = o.ZP.connectStores([u.Z], () => ({
+let O = o.ZP.connectStores([u.Z], () => ({
   theme: u.Z.theme
 }), {
   forwardRef: !0

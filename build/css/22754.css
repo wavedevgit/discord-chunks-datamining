@@ -1,6 +1,6 @@
 /**
   Module ID: 22754
-  Original File Name: 2f10c9772574f30e
+  Original File Name: d813a0ac96e07dbf
 **/
 .container__5537c {
     display: flex;
@@ -76,14 +76,13 @@
 }
 
 .footer__03b47 {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
     padding: 12px
 }
 
-.button__03b47 {
-    padding: 0 12px
+.textButtonWrapper__03b47 {
+    align-items: center;
+    display: flex;
+    padding: calc(var(--space-4) - 1px) calc(var(--space-12) - 1px)
 }
 
 .container__4eb6e {
@@ -1300,4 +1299,4 @@
     z-index: 0
 }
 
-/*# sourceMappingURL=2f10c9772574f30e.css.map*/
+/*# sourceMappingURL=d813a0ac96e07dbf.css.map*/

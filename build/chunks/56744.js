@@ -18,25 +18,25 @@ let m = i.memo(function(e) {
     channel: n,
     referencedMessage: p,
     compact: m = !1
-  } = e, f = p.state === o.Y.LOADED ? p.message : void 0, h = (0, a.p)(), g = i.useMemo(() => (null == f ? void 0 : f.content) != null && "" !== f.content ? (0, c.ZP)(f, {
+  } = e, f = p.state === o.Y.LOADED ? p.message : void 0, g = (0, a.p)(), _ = i.useMemo(() => (null == f ? void 0 : f.content) != null && "" !== f.content ? (0, c.ZP)(f, {
     formatInline: !0,
-    shouldFilterKeywords: h
-  }).content : null, [f, h]), {
-    isReplyAuthorBlocked: _,
+    shouldFilterKeywords: g
+  }).content : null, [f, g]), {
+    isReplyAuthorBlocked: h,
     isReplyAuthorIgnored: b
   } = (0, l.cj)([s.Z], () => ({
     isReplyAuthorBlocked: null != f && s.Z.isBlockedForMessage(f),
     isReplyAuthorIgnored: null != f && s.Z.isIgnoredForMessage(f)
-  }), [f]), E = (0, u.Uj)(f), y = (0, u.Uj)(t);
+  }), [f]), E = (0, u.Uj)(f), C = (0, u.Uj)(t);
   return (0, r.jsx)(d.Z, {
     repliedAuthor: E,
-    baseAuthor: y,
+    baseAuthor: C,
     baseMessage: t,
     channel: n,
     referencedMessage: p,
-    content: g,
+    content: _,
     compact: m,
-    isReplyAuthorBlocked: _,
+    isReplyAuthorBlocked: h,
     isReplyAuthorIgnored: b,
     isReplySpineClickable: !1,
     showReplySpine: !0

@@ -1,6 +1,6 @@
 /** Chunk was on 23045 **/
 n.d(t, {
-  Z: () => C
+  Z: () => O
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -14,19 +14,19 @@ var r = n(255367),
   p = n(223750),
   m = n(271383),
   f = n(496675),
-  h = n(594174),
-  g = n(626135),
-  _ = n(709054),
+  g = n(594174),
+  _ = n(626135),
+  h = n(709054),
   b = n(838440),
   E = n(981631),
-  y = n(18485);
+  C = n(18485);
 
 function x(e) {
   let {
     assets: t,
     currentUser: n,
     message: r
-  } = e, i = (_.default.extractTimestamp(n.id) + _.default.extractTimestamp(r.id)) % t.length;
+  } = e, i = (h.default.extractTimestamp(n.id) + h.default.extractTimestamp(r.id)) % t.length;
   return t[i]
 }
 
@@ -38,12 +38,12 @@ function v(e) {
     buttonLabels: d,
     stickers: m,
     event: f,
-    eventProperties: h
-  } = e, _ = (0, p.t)(), [E, v] = i.useState(!1), C = i.useMemo(() => x({
+    eventProperties: g
+  } = e, h = (0, p.t)(), [E, v] = i.useState(!1), O = i.useMemo(() => x({
     assets: m,
     currentUser: t,
     message: l
-  }), [m, t, l]), O = i.useMemo(() => x({
+  }), [m, t, l]), y = i.useMemo(() => x({
     assets: d,
     currentUser: t,
     message: l
@@ -70,7 +70,7 @@ function v(e) {
     }({
       channel: n,
       message: l,
-      sticker: C
+      sticker: O
     }), function(e) {
       var t, n;
       let {
@@ -78,7 +78,7 @@ function v(e) {
         event: i,
         eventProperties: l
       } = e;
-      null != i && g.default.track(i, (t = function(e) {
+      null != i && _.default.track(i, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -108,34 +108,34 @@ function v(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t))
     }({
-      sticker: C,
+      sticker: O,
       event: f,
-      eventProperties: h
+      eventProperties: g
     }))
-  }, [n, l, C, f, h]);
-  return _ ? (0, r.jsx)(a.zx, {
+  }, [n, l, O, f, g]);
+  return h ? (0, r.jsx)(a.zx, {
     variant: "secondary",
     size: "md",
     onClick: j,
-    text: O
+    text: y
   }) : (0, r.jsxs)(o.zx, {
     "data-migration-pending": !0,
-    className: y.CTAMessageButtonOuter,
-    innerClassName: y.CTAMessageButton,
+    className: C.CTAMessageButtonOuter,
+    innerClassName: C.CTAMessageButton,
     color: o.Tt.PRIMARY,
     onMouseEnter: () => v(!0),
     onMouseLeave: () => v(!1),
     onClick: j,
     children: [(0, r.jsx)(u.Z, {
-      className: y.CTAMessageSticker,
+      className: C.CTAMessageSticker,
       isInteracting: E,
-      sticker: C,
+      sticker: O,
       size: 28
-    }), O]
+    }), y]
   })
 }
 
-function C(e) {
+function O(e) {
   let {
     channel: t,
     message: n,
@@ -143,7 +143,7 @@ function C(e) {
     stickers: a,
     event: o,
     eventProperties: s
-  } = e, c = h.default.getCurrentUser(), u = function(e) {
+  } = e, c = g.default.getCurrentUser(), u = function(e) {
     let {
       channel: t,
       message: n,
@@ -165,7 +165,7 @@ function C(e) {
     currentUser: c
   });
   return null != c && u ? (0, r.jsx)("div", {
-    className: y.CTAMessage,
+    className: C.CTAMessage,
     children: (0, r.jsx)(v, {
       currentUser: c,
       channel: t,

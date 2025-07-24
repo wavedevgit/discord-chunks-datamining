@@ -1,20 +1,20 @@
-/** Chunk was on 93886 **/
-a.d(t, {
-  Z: () => l,
-  q: () => i
+/** Chunk was on 9268 **/
+n.d(t, {
+  Z: () => s,
+  q: () => a
 });
-var n = a(570140),
-  r = a(91311);
+var i = n(570140),
+  r = n(91311);
 
-function l(e, t) {
-  let a = "boolean" == typeof t ? t : !r.Z.get(e);
-  n.Z.dispatch({
+function s(e, t) {
+  let n = "boolean" == typeof t ? t : !r.Z.get(e);
+  i.Z.dispatch({
     type: "DEV_TOOLS_DESIGN_TOGGLE_WEB_SET",
     toggle: e,
-    value: a
+    value: n
   })
 }
 
-function i() {
-  for (let e in r.Z.enabled()) l(e, !1)
+function a() {
+  for (let e in r.Z.enabled()) s(e, !1)
 }

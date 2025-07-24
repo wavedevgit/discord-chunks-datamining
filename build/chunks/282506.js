@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 let r;
 n.d(t, {
-  Z: () => v
+  Z: () => I
 });
 var i = n(570140),
   l = n(519938),
@@ -18,9 +18,9 @@ var i = n(570140),
   m = n(914010),
   b = n(979651),
   _ = n(981631),
-  E = n(65154);
+  O = n(65154);
 
-function O() {
+function E() {
   var e;
   let t = r;
   if (null == t || !h.Z.isOpen(t)) return !1;
@@ -34,7 +34,7 @@ function y() {
   if (function() {
       let e = f.Z.getChannelId(),
         t = g.Z.getChannelId();
-      if (!p.Z.supports(E.AN.VIDEO) || s.Z.getWindowOpen(_.KJ3.CHANNEL_CALL_POPOUT)) return !0;
+      if (!p.Z.supports(O.AN.VIDEO) || s.Z.getWindowOpen(_.KJ3.CHANNEL_CALL_POPOUT)) return !0;
       let n = c.Z.getAllActiveStreams().length > 0;
       if (!(null != e && Object.values(b.Z.getVideoVoiceStatesForChannel(e)).some(e => {
           let {
@@ -44,14 +44,14 @@ function y() {
         }) || n)) return !0;
       let r = d.Z.hasLayers();
       return !(r && d.Z.getLayers().includes(_.S9g.RTC_DEBUG)) && (!!r || e === t)
-    }()) return O();
-  if (n || O(), null == t) return !1;
+    }()) return E();
+  if (n || E(), null == t) return !1;
   let a = u.Z.getChannel(t);
   return !(null == a || h.Z.isOpen(t)) && (i.Z.wait(() => l.bA(a.id, _.NYg.VIDEO, {
     channel: a
   })), null == (e = f.Z.getRTCConnection()) || e.setPipOpen(!0), void(r = t))
 }
-class I extends a.Z {
+class v extends a.Z {
   _initialize() {
     g.Z.addChangeListener(y), m.Z.addChangeListener(y), f.Z.addChangeListener(y), b.Z.addChangeListener(y), d.Z.addChangeListener(y), c.Z.addChangeListener(y), s.Z.addChangeListener(y), p.Z.addChangeListener(y), o.ZP.addChangeListener(y)
   }
@@ -59,4 +59,4 @@ class I extends a.Z {
     g.Z.removeChangeListener(y), m.Z.removeChangeListener(y), f.Z.removeChangeListener(y), b.Z.removeChangeListener(y), d.Z.removeChangeListener(y), c.Z.removeChangeListener(y), s.Z.removeChangeListener(y), p.Z.removeChangeListener(y), o.ZP.removeChangeListener(y)
   }
 }
-let v = new I
+let I = new v

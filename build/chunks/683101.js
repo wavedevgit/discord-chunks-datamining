@@ -1,6 +1,6 @@
 /** Chunk was on 23045 **/
 n.d(t, {
-  Z: () => _
+  Z: () => h
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -23,7 +23,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function h(e) {
   return e
 }
 
-function g(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -48,7 +48,7 @@ function g(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class _ extends i.PureComponent {
+class h extends i.PureComponent {
   render() {
     let {
       result: e,
@@ -65,7 +65,7 @@ class _ extends i.PureComponent {
       ringTarget: this.hitRef,
       ringClassName: m.__invalid_searchResultFocusRing,
       offset: 4,
-      children: (0, r.jsxs)("li", g(h({
+      children: (0, r.jsxs)("li", _(g({
         className: m.container
       }, t), {
         "aria-posinset": 1 + n + i,
@@ -112,7 +112,7 @@ class _ extends i.PureComponent {
         let {
           default: e
         } = await Promise.all([n.e("16705"), n.e("17982")]).then(n.bind(n, 858341));
-        return n => (0, r.jsx)(e, g(h({}, n), {
+        return n => (0, r.jsx)(e, _(g({}, n), {
           message: t,
           channel: i
         }))

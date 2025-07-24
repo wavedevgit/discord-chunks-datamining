@@ -18,11 +18,11 @@ var r = n(255367),
   m = n(699516),
   b = n(51144),
   _ = n(298213),
-  E = n(321488),
-  O = n(417183),
+  O = n(321488),
+  E = n(417183),
   y = n(825682),
-  I = n(170245),
-  v = n(981631),
+  v = n(170245),
+  I = n(981631),
   C = n(65154),
   S = n(388032),
   N = n(887563);
@@ -73,17 +73,17 @@ function P(e) {
       cancelText: S.intl.string(S.t["ETE/oK"]),
       onConfirm: f
     })
-  }, [f, l, t]), E = (0, o.e7)([g.Z], () => g.Z.supports(C.AN.VIDEO)), O = t.isProvisional, y = l ? S.intl.string(S.t["RLcE6+"]) : S.intl.string(S.t.cvSt1N);
+  }, [f, l, t]), O = (0, o.e7)([g.Z], () => g.Z.supports(C.AN.VIDEO)), E = t.isProvisional, y = l ? S.intl.string(S.t["RLcE6+"]) : S.intl.string(S.t.cvSt1N);
   return (0, r.jsxs)(s.v2r, {
     navId: "friend-row",
     "aria-label": S.intl.string(S.t.liqwPD),
     onClose: d.Zy,
     onSelect: a,
-    children: [!O && E ? (0, r.jsx)(s.sNh, {
+    children: [!E && O ? (0, r.jsx)(s.sNh, {
       id: "start-video-call",
       label: S.intl.string(S.t.oCqlGB),
       action: h
-    }) : null, !O && (0, r.jsx)(s.sNh, {
+    }) : null, !E && (0, r.jsx)(s.sNh, {
       id: "start-voice-call",
       label: S.intl.string(S.t.focH1t),
       action: p
@@ -115,7 +115,7 @@ class j extends i.PureComponent {
     } = this.props, {
       isActiveRow: u
     } = this.state;
-    return (0, r.jsx)(O.Z, {
+    return (0, r.jsx)(E.Z, {
       ref: this.peopleListItemRef,
       isFocused: t,
       isActive: u,
@@ -124,7 +124,7 @@ class j extends i.PureComponent {
       onClick: this.handleOpenPrivateChannel,
       children: t => (0, r.jsxs)("div", {
         className: N.listItemContents,
-        children: [(0, r.jsx)(I.Z, {
+        children: [(0, r.jsx)(v.Z, {
           user: e,
           status: l,
           isMobile: a,
@@ -143,14 +143,14 @@ class j extends i.PureComponent {
           children: [null != c && (0, r.jsx)(p.Z, {
             recipientUser: e,
             giftIntentType: c,
-            analyticsPage: v.ZY5.FRIENDS_LIST,
+            analyticsPage: I.ZY5.FRIENDS_LIST,
             shouldHighlight: t
-          }), (0, r.jsx)(E.Z, {
+          }), (0, r.jsx)(O.Z, {
             icon: s.kBi,
             tooltip: S.intl.string(S.t["g33r/P"]),
             onClick: this.handleOpenPrivateChannel,
             shouldHighlight: t
-          }), (0, r.jsx)(E.Z, {
+          }), (0, r.jsx)(O.Z, {
             icon: s.Huf,
             tooltip: S.intl.string(S.t.UKOtz8),
             onClick: this.handleOpenActionsMenu,
@@ -168,8 +168,8 @@ class j extends i.PureComponent {
         user: t
       } = this.props;
       e.stopPropagation();
-      let n = a().find(f.Z.getMutablePrivateChannels(), e => e.type === v.d4z.DM && e.getRecipientId() === t.id);
-      null != n ? (0, h.uL)(v.Z5c.CHANNEL(v.ME, n.id)) : u.Z.openPrivateChannel({
+      let n = a().find(f.Z.getMutablePrivateChannels(), e => e.type === I.d4z.DM && e.getRecipientId() === t.id);
+      null != n ? (0, h.uL)(I.Z5c.CHANNEL(I.ME, n.id)) : u.Z.openPrivateChannel({
         recipientIds: t.id
       })
     }), T(this, "handleOpenActionsMenu", e => {

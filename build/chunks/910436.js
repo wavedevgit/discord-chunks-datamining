@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => O
+  Z: () => E
 }), n(539854), n(388685);
 var r = n(255367);
 n(73800);
@@ -19,16 +19,16 @@ var i = n(287734),
   m = n(358924),
   b = n(868854),
   _ = n(817915),
-  E = n(981631);
+  O = n(981631);
 
-function O(e) {
+function E(e) {
   let {
     party: t,
     onChannelContextMenu: n,
-    quest: O
+    quest: E
   } = e, y = (0, b.L)(), {
-    voiceChannels: I,
-    currentActivities: v,
+    voiceChannels: v,
+    currentActivities: I,
     partiedMembers: C,
     applicationStreams: S,
     guildContext: N
@@ -42,7 +42,7 @@ function O(e) {
   for (let {
       activity: e
     }
-    of(I.length > 0 && I.forEach(e => {
+    of(v.length > 0 && v.forEach(e => {
       let {
         members: t,
         channel: i,
@@ -84,41 +84,41 @@ function O(e) {
         i.default.selectVoiceChannel(t.channelId), (0, l.iV)(t)
       }
     }, "application-stream-".concat(t.ownerId)))
-  }), v.forEach((e, t) => {
+  }), I.forEach((e, t) => {
     var n, i, l, g, b, y, S, T, j;
     let {
       activity: A,
-      game: Z,
-      playingMembers: x,
+      game: x,
+      playingMembers: Z,
       activityUser: w
     } = e;
     if (null == A || null == A.type) return null;
-    if (v.length > 1 && A.type === E.IIU.PLAYING && !(0, a.Z)(A) && null != Z) P((0, r.jsx)(m.Z.GameSection, {
-      icon: Z.getIconURL(_.Z),
-      name: Z.name,
+    if (I.length > 1 && A.type === O.IIU.PLAYING && !(0, a.Z)(A) && null != x) P((0, r.jsx)(m.Z.GameSection, {
+      icon: x.getIconURL(_.Z),
+      name: x.name,
       partySize: {
-        knownSize: x.length,
+        knownSize: Z.length,
         unknownSize: 0,
-        totalSize: x.length
+        totalSize: Z.length
       },
-      members: x
+      members: Z
     }, "game-".concat(null != (n = A.session_id) ? n : t, "-").concat(null != (i = A.application_id) ? i : t)));
     else if ((0, o.Z)(A)) {
-      let e = new Set(x.map(e => e.id)),
-        t = null == (l = I.find(e => null != e)) ? void 0 : l.channel;
+      let e = new Set(Z.map(e => e.id)),
+        t = null == (l = v.find(e => null != e)) ? void 0 : l.channel;
       null != t && P((0, r.jsx)(m.Z.EmbeddedActivitySection, {
         activity: A,
         participants: e,
         channel: t,
         guildId: t.guild_id
       }, "embedded-activity-".concat(A.application_id)))
-    } else if ((null != A.assets || (0, a.Z)(A)) && A.type === E.IIU.PLAYING) P((0, r.jsx)(m.Z.RichPresenceSection, {
+    } else if ((null != A.assets || (0, a.Z)(A)) && A.type === O.IIU.PLAYING) P((0, r.jsx)(m.Z.RichPresenceSection, {
       activity: A,
       getAssetImage: f.xF
     }, "rich-presence-".concat(null != (g = A.session_id) ? g : t, "-").concat(w.id)));
     else if ((0, u.Z)(A)) {
-      let e = I.length > 0 && I[0].members.length > 1,
-        n = x.length > 1;
+      let e = v.length > 0 && v[0].members.length > 1,
+        n = Z.length > 1;
       P((0, r.jsx)(m.Z.TwitchSection, {
         guildId: null == N ? void 0 : N.id,
         activity: A,
@@ -129,21 +129,21 @@ function O(e) {
       activity: A,
       isSolo: 1 === C.length,
       partySize: {
-        knownSize: x.length,
+        knownSize: Z.length,
         unknownSize: 0,
-        totalSize: x.length
+        totalSize: Z.length
       },
       getAssetImage: f.xF,
-      members: x
-    }, "spotify-".concat(null != (y = A.session_id) ? y : t, "-").concat(w.id))) : (null != A.assets || (0, a.Z)(A)) && A.type === E.IIU.LISTENING ? P((0, r.jsx)(m.Z.RichPresenceSection, {
+      members: Z
+    }, "spotify-".concat(null != (y = A.session_id) ? y : t, "-").concat(w.id))) : (null != A.assets || (0, a.Z)(A)) && A.type === O.IIU.LISTENING ? P((0, r.jsx)(m.Z.RichPresenceSection, {
       activity: A,
       getAssetImage: f.xF
     }, "rich-presence-".concat(null != (S = A.session_id) ? S : t, "-").concat(w.id))) : (0, c.Z)(A) && P((0, r.jsx)(m.Z.XboxSection, {
-      title: Z.name
+      title: x.name
     }, "xbox-".concat(null != (T = A.session_id) ? T : t)));
-    null != O && null != Z && (0, p._D)(A, O) && (null == O.userStatus || !(0, p.zE)(O.userStatus, d.jn.ACTIVITY_PANEL)) && P((0, r.jsx)(h.Z, {
-      quest: O
-    }, "quest-".concat(O.id, "-").concat(null != (j = A.session_id) ? j : t)))
+    null != E && null != x && (0, p._D)(A, E) && (null == E.userStatus || !(0, p.zE)(E.userStatus, d.jn.ACTIVITY_PANEL)) && P((0, r.jsx)(h.Z, {
+      quest: E
+    }, "quest-".concat(E.id, "-").concat(null != (j = A.session_id) ? j : t)))
   }), T.length > 0 ? (0, r.jsx)(m.Z.Body, {
     children: T
   }) : null

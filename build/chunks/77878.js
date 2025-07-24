@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => O
+  Z: () => E
 });
 var r = n(255367);
 n(73800);
@@ -19,7 +19,7 @@ let s = "1",
   m = "3",
   b = "4",
   _ = "5",
-  E = {
+  O = {
     [a.aIt.ESRB]: {
       [s]: o.esrbEveryone,
       [c]: o.esrbEveryoneTenPlus,
@@ -36,12 +36,12 @@ let s = "1",
       [_]: o.pegiEighteen
     }
   },
-  O = e => {
+  E = e => {
     let {
       agency: t,
       rating: n,
       className: i
-    } = e, a = E[t][n];
+    } = e, a = O[t][n];
     return null == a ? null : (0, r.jsx)("div", {
       className: l()(o.contentRating, a, i)
     })

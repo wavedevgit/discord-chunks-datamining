@@ -1,7 +1,7 @@
 /** Chunk was on 23045 **/
 n.d(t, {
-  Z: () => _,
-  y: () => g
+  Z: () => h,
+  y: () => _
 }), n(953529);
 var r = n(255367),
   i = n(73800),
@@ -15,7 +15,7 @@ var r = n(255367),
   p = n(411198),
   m = n(388032),
   f = n(515230);
-let h = e => {
+let g = e => {
     var t;
     let {
       speaker: n,
@@ -37,7 +37,7 @@ let h = e => {
       })]
     })
   },
-  g = e => {
+  _ = e => {
     let {
       guild: t,
       onlineCount: n
@@ -90,22 +90,22 @@ let h = e => {
       })]
     })
   },
-  _ = e => {
+  h = e => {
     var t;
     let {
       stageInstance: n,
       guild: l,
       isCard: d = !1,
-      isEmbed: g = !1,
-      onClick: _
+      isEmbed: _ = !1,
+      onClick: h
     } = e, b = i.useMemo(() => null == l ? null : p.lM(l) ? l : p.Qs(l), [l]);
     if (null == n || null == b) return null;
     let {
       topic: E,
-      speaker_count: y,
+      speaker_count: C,
       participant_count: x
-    } = n, v = null != (t = n.members) ? t : [], C = g ? v.slice(0, 3) : v, O = y - C.length;
-    return g && (O += v.length - C.length), (0, r.jsxs)("div", {
+    } = n, v = null != (t = n.members) ? t : [], O = _ ? v.slice(0, 3) : v, y = C - O.length;
+    return _ && (y += v.length - O.length), (0, r.jsxs)("div", {
       children: [(0, r.jsxs)("div", {
         className: f.flex,
         children: [(0, r.jsxs)("div", {
@@ -135,9 +135,9 @@ let h = e => {
             children: x
           })]
         })]
-      }), g && (0, r.jsxs)("div", {
+      }), _ && (0, r.jsxs)("div", {
         className: a()(f.guild, {
-          [f.embed]: g
+          [f.embed]: _
         }),
         children: [(0, r.jsx)(c.ZP, {
           mask: c.ZP.Masks.SQUIRCLE,
@@ -155,44 +155,44 @@ let h = e => {
           children: b.name
         })]
       }), (0, r.jsx)(s.X6q, {
-        variant: d || g ? "heading-md/semibold" : "heading-lg/semibold",
+        variant: d || _ ? "heading-md/semibold" : "heading-lg/semibold",
         className: a()(f.header, {
-          [f.embed]: g
+          [f.embed]: _
         }),
         children: E
       }), (0, r.jsxs)("div", {
         className: a()(f.members, {
-          [f.embed]: g
+          [f.embed]: _
         }),
-        children: [C.length > 0 && (0, r.jsxs)("div", {
+        children: [O.length > 0 && (0, r.jsxs)("div", {
           className: f.speakers,
-          children: [C.map(e => (0, r.jsx)(h, {
+          children: [O.map(e => (0, r.jsx)(g, {
             speaker: e,
             guildId: b.id,
-            isEmbed: g
-          }, e.user.id)), O > 0 ? (0, r.jsxs)("div", {
+            isEmbed: _
+          }, e.user.id)), y > 0 ? (0, r.jsxs)("div", {
             className: f.speaker,
             children: [(0, r.jsx)("div", {
               className: a()(f.icon, {
-                [f.embed]: g
+                [f.embed]: _
               }),
               children: (0, r.jsx)(s.S6n, {
                 size: "custom",
                 color: "currentColor",
-                height: g ? 12 : 14,
+                height: _ ? 12 : 14,
                 className: f.listeners
               })
             }), (0, r.jsxs)(s.Text, {
-              variant: g ? "text-xs/normal" : "text-sm/normal",
+              variant: _ ? "text-xs/normal" : "text-sm/normal",
               color: "text-secondary",
               children: ["+", m.intl.format(m.t.L1pCBQ, {
-                count: O
+                count: y
               })]
             })]
           }) : null]
-        }), g && (0, r.jsx)(o.zx, {
+        }), _ && (0, r.jsx)(o.zx, {
           color: o.zx.Colors.GREEN,
-          onClick: _,
+          onClick: h,
           className: f.joinButton,
           children: m.intl.string(m.t.ZYO5OD)
         })]

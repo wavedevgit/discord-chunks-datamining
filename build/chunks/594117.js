@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => E
+  Z: () => O
 });
 var r = n(255367);
 n(73800);
@@ -100,7 +100,7 @@ function _(e) {
   })
 }
 
-function E(e) {
+function O(e) {
   let {
     channel: t
   } = e;

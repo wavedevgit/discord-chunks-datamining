@@ -14,16 +14,16 @@ var r = n(255367),
   p = n(442837),
   m = n(692547),
   f = n(481060),
-  h = n(256638),
-  g = n(385499),
-  _ = n(528011),
+  g = n(256638),
+  _ = n(385499),
+  h = n(528011),
   b = n(533244),
   E = n(825829),
-  y = n(226192),
+  C = n(226192),
   x = n(36459),
   v = n(434404),
-  C = n(518950),
-  O = n(670188),
+  O = n(518950),
+  y = n(670188),
   j = n(592125),
   I = n(271383),
   S = n(594174),
@@ -36,7 +36,7 @@ var r = n(255367),
   R = n(388032),
   L = n(126759);
 
-function k(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -55,7 +55,7 @@ function k(e) {
   return e
 }
 
-function D(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -166,11 +166,11 @@ function G(e) {
     avatarSrc: u,
     avatarDecorationSrc: d,
     eventHandlers: p
-  } = (0, C.Z)({
+  } = (0, O.Z)({
     userId: null == a ? void 0 : a.id,
     guildId: o,
     size: 12
-  }), h = i.useRef(null);
+  }), g = i.useRef(null);
   return (0, r.jsx)(z, {
     compact: l,
     header: (0, r.jsxs)(i.Fragment, {
@@ -192,17 +192,17 @@ function G(e) {
             variant: "text-xs/medium",
             color: "text-default",
             children: R.intl.string(R.t.qlFrXV)
-          }), (0, r.jsx)(O.Z, {
-            targetElementRef: h,
+          }), (0, r.jsx)(y.Z, {
+            targetElementRef: g,
             user: a,
             guildId: o,
             channelId: n.channel_id,
             messageId: n.id,
-            children: e => (0, r.jsxs)(f.P3F, D(k({
-              innerRef: h,
+            children: e => (0, r.jsxs)(f.P3F, k(D({
+              innerRef: g,
               className: L.alertsEnabledSubHeaderAvatarUsername
             }, e), {
-              children: [(0, r.jsx)("div", D(k({}, p), {
+              children: [(0, r.jsx)("div", k(D({}, p), {
                 children: (0, r.jsx)(f.qEK, {
                   src: u,
                   avatarDecoration: d,
@@ -242,14 +242,14 @@ function H(e) {
     joinAttempts: a,
     raidDatetime: o,
     dmsSent: u,
-    raidType: h,
-    resolvedReason: g
+    raidType: g,
+    resolvedReason: _
   } = (0, E.FL)(n), x = (0, p.e7)([j.Z], () => j.Z.getChannel(n.channel_id), [n.channel_id]), v = null != (t = null == x ? void 0 : x.guild_id) ? t : null, {
-    shouldShowIncidentActions: C
-  } = (0, _.mI)(v), O = (0, N.sR)(n.author.id, n.channel_id), I = i.useCallback(() => {
+    shouldShowIncidentActions: O
+  } = (0, h.mI)(v), y = (0, N.sR)(n.author.id, n.channel_id), I = i.useCallback(() => {
     let e = null == x ? void 0 : x.guild_id;
-    null != e && (0, y.kW)(n.id, e)
-  }, [n.id, x]), S = h === d.$.DM_RAID, T = S ? f.P4T : f.b6m;
+    null != e && (0, C.kW)(n.id, e)
+  }, [n.id, x]), S = g === d.$.DM_RAID, T = S ? f.P4T : f.b6m;
   return (0, r.jsx)(z, {
     compact: l,
     header: (0, r.jsxs)(i.Fragment, {
@@ -291,7 +291,7 @@ function H(e) {
         dateTime: o.toLocaleString(R.intl.currentLocale, b.pQ)
       })
     }) : null,
-    footerButtons: C ? (0, r.jsxs)("div", {
+    footerButtons: O ? (0, r.jsxs)("div", {
       className: L.footerRow,
       children: [(0, r.jsxs)("div", {
         className: L.footerAction,
@@ -305,7 +305,7 @@ function H(e) {
           textVariant: "text-xs/medium",
           text: R.intl.string(R.t.DEoVWV),
           onClick: e => {
-            O(e)
+            y(e)
           }
         })]
       }), (0, r.jsx)(M, {}), (0, r.jsx)("div", {
@@ -314,7 +314,7 @@ function H(e) {
           variant: "primary",
           textVariant: "text-xs/medium",
           size: "sm",
-          text: (0, E.ge)(g),
+          text: (0, E.ge)(_),
           onClick: I
         })
       })]
@@ -368,7 +368,7 @@ function V(e) {
           text: R.intl.string(R.t.oX14Eh),
           onClick: function() {
             null != a && null != c && (0, x.UE)(a, c, () => {
-              (0, h.c)(u), (0, x.T9)(a)
+              (0, g.c)(u), (0, x.T9)(a)
             })
           }
         })
@@ -466,7 +466,7 @@ function W(e) {
               tag: "span",
               className: L.username,
               children: R.intl.string(R.t.hG1StL)
-            }), (0, r.jsx)(g.Z, {
+            }), (0, r.jsx)(_.Z, {
               type: Z.Hb.SYSTEM_DM,
               className: L.systemTag
             }), p && (0, r.jsx)(f.Text, {

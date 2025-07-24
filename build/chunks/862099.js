@@ -20,11 +20,11 @@ var r, i = n(255367),
   m = n(922482),
   b = n(565799),
   _ = n(501655),
-  E = n(192079),
-  O = n(427679),
+  O = n(192079),
+  E = n(427679),
   y = n(448206),
-  I = n(496675),
-  v = n(938475),
+  v = n(496675),
+  I = n(938475),
   C = n(626135),
   S = n(823379),
   N = n(15274),
@@ -32,8 +32,8 @@ var r, i = n(255367),
   P = n(504160),
   j = n(151864),
   A = n(835184),
-  Z = n(725436),
-  x = n(497656),
+  x = n(725436),
+  Z = n(497656),
   w = n(79874),
   L = n(554747),
   R = n(230900),
@@ -107,7 +107,7 @@ function H(e) {
   let {
     guildEvent: t,
     channel: n
-  } = e, r = (0, s.Wu)([v.ZP], () => v.ZP.getVoiceStatesForChannel(n).map(e => {
+  } = e, r = (0, s.Wu)([I.ZP], () => I.ZP.getVoiceStatesForChannel(n).map(e => {
     let {
       user: t
     } = e;
@@ -172,7 +172,7 @@ function z(e) {
   let {
     guildEvent: n,
     noticeType: r
-  } = e, a = (0, R.cS)(n), s = null != a ? (0, Z.m)(a, !0) : null, c = (0, R.nE)(n), d = (0, p.KS)(c), {
+  } = e, a = (0, R.cS)(n), s = null != a ? (0, x.m)(a, !0) : null, c = (0, R.nE)(n), d = (0, p.KS)(c), {
     startTime: h,
     endTime: f
   } = (0, w.ZP)(n), {
@@ -267,7 +267,7 @@ function W(e) {
     }),
     heading: G.intl.string(G.t["1+boPj"]),
     topic: t.name,
-    location: (0, Z.m)(n, !0),
+    location: (0, x.m)(n, !0),
     locationIcon: (0, i.jsx)(u._tJ, {
       size: "custom",
       color: "currentColor",
@@ -365,7 +365,7 @@ function Q(e) {
     channel: t,
     speakers: n,
     voiceType: r
-  } = e, a = t.getGuildId(), c = l.useMemo(() => n.slice(0, 3), [n]), p = (0, s.e7)([I.Z], () => I.Z.can(U.Plq.CONNECT, t)), h = (0, y.Z)(t.id), f = G.intl.string(G.t.VJlc0d);
+  } = e, a = t.getGuildId(), c = l.useMemo(() => n.slice(0, 3), [n]), p = (0, s.e7)([v.Z], () => v.Z.can(U.Plq.CONNECT, t)), h = (0, y.Z)(t.id), f = G.intl.string(G.t.VJlc0d);
   switch (r) {
     case 1:
       f = G.intl.string(G.t.VJlc0d);
@@ -391,7 +391,7 @@ function Q(e) {
         color: "none",
         variant: "text-xs/normal",
         className: B.userNames,
-        children: (0, E.ER)(a, c, null == t ? void 0 : t.id, n.length)
+        children: (0, O.ER)(a, c, null == t ? void 0 : t.id, n.length)
       })]
     }) : null, p && null == h && (0, i.jsx)(K, {
       channel: t,
@@ -404,7 +404,7 @@ let J = l.memo(function(e) {
     guild: t
   } = e, {
     showRedesignedLiveChannelNotice: n
-  } = (0, h.o)(!0), r = (0, x.y)(t.id), l = (0, L.k5)(t.id), a = (0, L.Vm)(t.id), o = (0, s.e7)([O.Z], () => O.Z.getStageInstanceByChannel(null == r ? void 0 : r.id), [r]), {
+  } = (0, h.o)(!0), r = (0, Z.y)(t.id), l = (0, L.k5)(t.id), a = (0, L.Vm)(t.id), o = (0, s.e7)([E.Z], () => E.Z.getStageInstanceByChannel(null == r ? void 0 : r.id), [r]), {
     isStageNoticeHidden: c,
     isEventNoticeHidden: u
   } = (0, s.cj)([j.Z], () => ({

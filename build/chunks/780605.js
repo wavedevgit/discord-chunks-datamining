@@ -162,6 +162,7 @@ function A(e) {
     eo = Z || D,
     es = (0, r.jsx)(c.t, O(b({}, w), {
       children: (0, r.jsxs)("button", O(b({
+        "data-mana-component": "button",
         role: u,
         "aria-busy": D,
         className: o()(g.button, g[q], g[d], {
