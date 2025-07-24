@@ -190,7 +190,7 @@ let L = e => {
       U = (0, o.wj)(k);
     P ? U ? (t = null == (l = I.entryPointBackgroundAssets) ? void 0 : l.srcDarkHovered, n = null == (u = I.entrypointBackgroundStyle) || null == (c = u.hovered) ? void 0 : c.dark) : (t = null == (h = I.entryPointBackgroundAssets) ? void 0 : h.srcLightHovered, n = null == (g = I.entrypointBackgroundStyle) || null == (f = g.hovered) ? void 0 : f.light) : U ? (t = null == (m = I.entryPointBackgroundAssets) ? void 0 : m.srcDark, n = null == (_ = I.entrypointBackgroundStyle) || null == (b = _.resting) ? void 0 : b.dark) : (t = null == (E = I.entryPointBackgroundAssets) ? void 0 : E.srcLight, n = null == (v = I.entrypointBackgroundStyle) || null == (y = v.resting) ? void 0 : y.light);
     let G = i.useCallback(e => {
-        T(e => (e + 1) % I.assetIds.length), R(!0), null == e || e()
+        I.assetIds.length > 0 && T(e => (e + 1) % I.assetIds.length), R(!0), null == e || e()
       }, [I.assetIds.length]),
       B = i.useCallback(e => {
         R(!1), null == e || e()
