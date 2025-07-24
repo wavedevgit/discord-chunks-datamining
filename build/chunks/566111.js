@@ -1,31 +1,30 @@
 /** Chunk was on 55183 **/
 r.d(t, {
-  Z: () => c
+  Z: () => s
 }), r(388685);
-var n = r(73800),
-  i = r(442837),
-  l = r(365943),
-  o = r(25251),
-  s = r(223143);
+var n = r(442837),
+  i = r(25251),
+  l = r(238359),
+  o = r(223143);
 
-function c(e) {
+function s(e) {
   var t;
   let {
     isFetching: r,
-    fetchCategoriesError: c,
-    fetchPurchasesError: a,
-    categories: u,
-    purchases: d
-  } = (0, s.ZP)({
+    fetchCategoriesError: s,
+    fetchPurchasesError: c,
+    categories: a,
+    purchases: u
+  } = (0, o.ZP)({
     location: e
-  }), [f, p, m] = (0, i.Wu)([o.Z], () => [o.Z.isFetchingAll, o.Z.fetchError, o.Z.profileEffects]);
-  return n.useEffect(() => {
-    (0, l.r)(!0)
-  }, []), {
-    isFetching: r || f,
-    combinedError: null != (t = null != c ? c : a) ? t : p,
-    profileEffects: m,
-    categories: u,
-    purchases: d
+  });
+  (0, l.D)();
+  let [d, f, p] = (0, n.Wu)([i.Z], () => [i.Z.isFetchingAll, i.Z.fetchError, i.Z.profileEffects]);
+  return {
+    isFetching: r || d,
+    combinedError: null != (t = null != s ? s : c) ? t : f,
+    profileEffects: p,
+    categories: a,
+    purchases: u
   }
 }

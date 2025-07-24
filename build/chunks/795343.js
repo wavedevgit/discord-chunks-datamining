@@ -60,8 +60,8 @@ function v(e) {
   }, [y, i, j, x, r, E]);
   let Z = l.useRef(null),
     {
-      setQueryPageSize: F,
-      setQueryPageOffset: D,
+      setQueryPageSize: D,
+      setQueryPageOffset: F,
       queryPageSize: M
     } = (0, f.S)(),
     [H, W] = l.useState(!1),
@@ -73,10 +73,10 @@ function v(e) {
   let U = M > 0 && !V && 0 === R.length;
   return l.useEffect(() => {
     let e = new ResizeObserver(() => {
-      null != Z.current && F(Math.floor(5 * getComputedStyle(Z.current).gridTemplateColumns.split(/\s+/).length))
+      null != Z.current && D(Math.floor(5 * getComputedStyle(Z.current).gridTemplateColumns.split(/\s+/).length))
     });
     if (null != Z.current) return e.observe(Z.current), () => e.disconnect()
-  }, [F]), (0, n.jsxs)(n.Fragment, {
+  }, [D]), (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsxs)("div", {
       className: o()({
         [O.productsEmpty]: U
@@ -109,7 +109,7 @@ function v(e) {
           totalCount: k,
           pageSize: M,
           onPageChange: e => {
-            D((e - 1) * M)
+            F((e - 1) * M)
           },
           disablePaginationGap: !0
         })

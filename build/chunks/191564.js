@@ -1,6 +1,6 @@
 /** Chunk was on 55183 **/
 r.d(t, {
-  default: () => S
+  default: () => I
 }), r(388685);
 var n = r(255367),
   i = r(73800),
@@ -20,8 +20,8 @@ var n = r(255367),
   x = r(626135),
   j = r(74538),
   y = r(934261),
-  O = r(52268),
-  v = r(981631),
+  v = r(52268),
+  O = r(981631),
   P = r(474936),
   _ = r(388032),
   E = r(287975);
@@ -82,18 +82,18 @@ function w(e) {
     analyticsLocations: g
   } = e, {
     pendingProfileEffectId: b
-  } = (0, h.bd)(r), [x, v] = i.useMemo(() => {
+  } = (0, h.bd)(r), [x, O] = i.useMemo(() => {
     let e = (0, u.bl)(l, c);
     return [e.purchased, e.shopPreviews]
-  }, [l, c]), [P, w] = i.useState(() => null != p ? p : void 0 !== b ? b : null == m ? null : null != m ? m : null), [S, I] = i.useMemo(() => {
+  }, [l, c]), [P, w] = i.useState(() => null != p ? p : void 0 !== b ? b : null == m ? null : null != m ? m : null), [I, S] = i.useMemo(() => {
     var e;
     let t = x.find(e => (null == e ? void 0 : e.id) === P),
       r = null != t || null === P;
-    return [null != (e = null != t ? t : v.find(e => (null == e ? void 0 : e.id) === P)) ? e : null, r]
-  }, [P, x, v]), {
-    product: N,
-    purchase: Z
-  } = (0, d.Z)(null == S ? void 0 : S.skuId), D = i.useRef(null), k = j.ZP.canUseCollectibles(t), A = P === (void 0 === b ? null != m ? m : null : b), T = i.useCallback(e => {
+    return [null != (e = null != t ? t : O.find(e => (null == e ? void 0 : e.id) === P)) ? e : null, r]
+  }, [P, x, O]), {
+    product: Z,
+    purchase: N
+  } = (0, d.Z)(null == I ? void 0 : I.skuId), D = i.useRef(null), k = j.ZP.canUseCollectibles(t), A = P === (void 0 === b ? null != m ? m : null : b), T = i.useCallback(e => {
     w(e)
   }, [w]), B = i.useCallback(e => {
     f(), (0, a.mK)({
@@ -115,7 +115,7 @@ function w(e) {
       })]
     }), (0, n.jsxs)(o.hzk, {
       className: E.modalContent,
-      children: [(0, n.jsx)(O.Z, {
+      children: [(0, n.jsx)(v.Z, {
         user: t,
         guild: r,
         pendingProfileEffect: P,
@@ -124,10 +124,10 @@ function w(e) {
         onOpenShop: B
       }), (0, n.jsx)(y.Z, {
         user: t,
-        canApplySelectedChange: I,
-        pendingProfileEffectRecord: S,
-        product: N,
-        purchase: Z,
+        canApplySelectedChange: S,
+        pendingProfileEffectRecord: I,
+        product: Z,
+        purchase: N,
         guild: r
       })]
     }), (0, n.jsx)(C, {
@@ -137,18 +137,18 @@ function w(e) {
       },
       onClose: f,
       onOpenShop: B,
-      product: N,
-      purchase: Z,
+      product: Z,
+      purchase: N,
       canUseCollectibles: k,
       selectedProfileEffectId: P,
-      selectedProfileEffectItem: S,
+      selectedProfileEffectItem: I,
       disableApplyButton: A,
       analyticsLocations: g
     })]
   })
 }
 
-function S(e) {
+function I(e) {
   let {
     transitionState: t,
     analyticsLocations: r,
@@ -161,10 +161,10 @@ function S(e) {
     purchases: g
   } = (0, f.Z)("ProfileEffectModal"), j = (0, l.e7)([b.default], () => b.default.getCurrentUser()), {
     analyticsLocations: y
-  } = (0, c.ZP)(r, s.Z.EDIT_PROFILE_EFFECT_MODAL), O = (0, h.Kg)(j, u);
+  } = (0, c.ZP)(r, s.Z.EDIT_PROFILE_EFFECT_MODAL), v = (0, h.Kg)(j, u);
   return i.useEffect(() => {
-    x.default.track(v.rMx.OPEN_MODAL, {
-      type: v.jXE.PROFILE_EFFECT_CUSTOMIZATION,
+    x.default.track(O.rMx.OPEN_MODAL, {
+      type: O.jXE.PROFILE_EFFECT_CUSTOMIZATION,
       location_stack: y
     })
   }, [y]), (0, n.jsx)(c.Gt, {
@@ -183,7 +183,7 @@ function S(e) {
         categories: m,
         purchases: g,
         initialSelectedProfileEffectId: a,
-        currentSavedEffectId: O,
+        currentSavedEffectId: v,
         onClose: d,
         analyticsLocations: y
       })

@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
 "use strict";
-let r, i;
+let r;
 n.d(t, {
-  Z: () => N
+  Z: () => A
 });
-var a, o = n(392711),
-  s = n(442837),
-  l = n(570140);
+var i, a = n(392711),
+  o = n(442837),
+  s = n(570140),
+  l = n(70956);
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -17,35 +18,29 @@ function c(e, t, n) {
   }) : e[t] = n, e
 }
 let u = [],
-  d = !1,
+  d = {},
   _ = u,
-  f = {},
+  f = d,
   p = null,
-  h = 0,
-  m = 3e5,
-  g = 6e4,
-  E = 36e5,
-  b = e => {
-    _ = (0, o.cloneDeep)(e);
-    let t = {};
-    _.forEach(e => {
-      t[e.id] = e
-    }), f = t
-  },
+  h = l.Z.Millis.MINUTE,
+  m = l.Z.Millis.HOUR,
+  g = !1,
+  E = 0,
+  b = 0,
   y = e => {
-    d = !0
+    g = !0
   },
   O = e => {
     let {
       presets: t
     } = e;
-    r = void 0, i = Date.now() + m, h = 0, b(0 === t.length ? u : t), d = !1
+    0 === t.length ? (_ = u, f = d) : (_ = (0, a.cloneDeep)(t), f = (0, a.keyBy)(_, "id")), E = Number.POSITIVE_INFINITY, b = 0, r = void 0, g = !1
   },
   v = e => {
     let {
       error: t
     } = e;
-    r = t, i = Date.now() + Math.min(g * 2 ** h, E), ++h, b(u), d = !1
+    _ = u, f = d, E = Date.now() + Math.min(h * 2 ** b, m), b += 1, r = t, g = !1
   },
   I = e => {
     let {
@@ -53,15 +48,12 @@ let u = [],
     } = e;
     p = t
   },
-  T = () => {
-    b(u), p = null, i = void 0, d = !1
-  },
-  S = e => {
-    T()
+  T = e => {
+    _ = u, f = d, p = null, g = !1, r = void 0, E = 0, b = 0
   };
-class A extends(a = s.ZP.Store) {
+class S extends(i = o.ZP.Store) {
   get isFetchingAll() {
-    return d
+    return g
   }
   get fetchError() {
     return r
@@ -73,20 +65,17 @@ class A extends(a = s.ZP.Store) {
     return p
   }
   canFetch() {
-    return null == i || Date.now() >= i
-  }
-  hasFetched() {
-    return null != i && null == r
+    return Date.now() >= E
   }
   getProfileEffectById(e) {
     return null != e ? f[e] : void 0
   }
 }
-c(A, "displayName", "ProfileEffectStore");
-let N = new A(l.Z, {
+c(S, "displayName", "ProfileEffectStore");
+let A = new S(s.Z, {
   PROFILE_EFFECTS_FETCH_ALL: y,
   PROFILE_EFFECTS_FETCH_ALL_SUCCESS: O,
   PROFILE_EFFECTS_FETCH_ALL_FAILURE: v,
   PROFILE_EFFECTS_SET_TRY_IT_OUT: I,
-  LOGOUT: S
+  LOGOUT: T
 })

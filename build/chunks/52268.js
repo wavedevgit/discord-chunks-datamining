@@ -39,7 +39,7 @@ function y(e) {
   return e
 }
 
-function O(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -52,7 +52,7 @@ function O(e, t) {
   }), e
 }
 
-function v(e, t) {
+function O(e, t) {
   if (null == e) return {};
   var r, n, i = function(e, t) {
     if (null == e) return {};
@@ -73,8 +73,8 @@ let P = () => 80,
       children: t,
       className: r,
       isSelected: i = !1
-    } = e, l = v(e, ["children", "className", "isSelected"]);
-    return (0, n.jsx)(u.P3F, O(y({
+    } = e, l = O(e, ["children", "className", "isSelected"]);
+    return (0, n.jsx)(u.P3F, v(y({
       className: o()(x.effectGridItem, r, {
         [x.selected]: i
       })
@@ -91,36 +91,36 @@ let P = () => 80,
         section: s,
         isSelected: P
       } = e,
-      E = v(e, ["user", "profileEffect", "innerRef", "section", "isSelected"]);
+      E = O(e, ["user", "profileEffect", "innerRef", "section", "isSelected"]);
     let C = (0, g.V)(l.id),
       w = (0, a.e7)([d.Z], () => {
         let e = d.Z.getProduct(l.skuId);
         return (0, f.G1)(e)
       }),
-      S = (0, f.Yq)(l.skuId),
-      I = i.useRef(null),
+      I = (0, f.Yq)(l.skuId),
+      S = i.useRef(null),
       {
-        accessibilityLabel: N,
-        thumbnailPreviewSrc: Z,
+        accessibilityLabel: Z,
+        thumbnailPreviewSrc: N,
         title: D
       } = null != (t = null == C ? void 0 : C.config) ? t : {},
       k = m.ZP.canUseCollectibles(r),
       A = s === h.$0.PREMIUM_PURCHASE && !k,
       T = (0, p.M)();
-    return (0, n.jsxs)(_, O(y({
+    return (0, n.jsxs)(_, v(y({
       className: !A || P || T ? void 0 : x.decorationGridItemChurned,
-      innerRef: null != o ? o : I,
+      innerRef: null != o ? o : S,
       isSelected: P
     }, E), {
       children: [(0, n.jsx)("img", {
         src: j,
-        alt: N,
+        alt: Z,
         className: x.presetEffectBackground
       }), (0, n.jsx)("img", {
         className: x.presetEffectImg,
-        src: Z,
+        src: N,
         alt: D
-      }), s === h.$0.PURCHASE || s === h.$0.PREMIUM_PURCHASE && k ? null : S ? (0, n.jsx)(u.lBU, {
+      }), s === h.$0.PURCHASE || s === h.$0.PREMIUM_PURCHASE && k ? null : I ? (0, n.jsx)(u.lBU, {
         className: x.newBadge,
         text: (0, n.jsxs)("div", {
           className: x.newBadgeText,
@@ -219,7 +219,7 @@ let P = () => 80,
             header: r
           } = a[e];
           return (0, n.jsx)("div", {
-            style: O(y({}, t), {
+            style: v(y({}, t), {
               height: "".concat(16, "px"),
               position: "absolute"
             }),
