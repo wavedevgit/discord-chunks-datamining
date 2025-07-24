@@ -163,6 +163,7 @@ function A(e) {
         fullWidth: !0,
         size: u.zx.Sizes.MEDIUM
       }), l), {
+        "data-migration-pending": !0,
         children: (0, r.jsx)(F, {
           className: T.buttonIcon,
           size: "sm",

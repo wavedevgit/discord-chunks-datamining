@@ -17,8 +17,8 @@ var i = n(255367),
   I = n(748770),
   p = n(594174),
   C = n(626135),
-  O = n(74538),
-  g = n(243778),
+  g = n(74538),
+  O = n(243778),
   S = n(921944),
   T = n(981631),
   f = n(474936),
@@ -27,7 +27,7 @@ var i = n(255367),
 let R = e => {
   let {
     dismissibleContent: t
-  } = e, n = (0, E.a0)(), R = (0, o.e7)([p.default], () => O.ZP.isPremiumExactly(p.default.getCurrentUser(), f.p9.TIER_2)), {
+  } = e, n = (0, E.a0)(), R = (0, o.e7)([p.default], () => g.ZP.isPremiumExactly(p.default.getCurrentUser(), f.p9.TIER_2)), {
     enabled: A,
     getNitroCTA: y
   } = h.g.useExperiment({
@@ -42,7 +42,7 @@ let R = e => {
   } = (0, u.ZP)(), D = r.useCallback(() => {
     var e, t;
     (0, _.Z)({
-      subscriptionTier: O.ZP.getSkuIdForPremiumType(f.p9.TIER_2),
+      subscriptionTier: g.ZP.getSkuIdForPremiumType(f.p9.TIER_2),
       analyticsLocations: P,
       analyticsObject: (e = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -106,7 +106,7 @@ let R = e => {
       children: y ? N.intl.string(N.t.pj0XBA) : N.intl.string(N.t.jVcuVV)
     })]
   });
-  return (0, i.jsx)(g.O1, {
+  return (0, i.jsx)(O.O1, {
     contentType: t,
     newSnowflakeId: n,
     timeRecurringConfig: {

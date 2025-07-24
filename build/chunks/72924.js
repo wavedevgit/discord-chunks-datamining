@@ -1,6 +1,6 @@
 /** Chunk was on 67032 **/
 n.d(t, {
-  S: () => O
+  S: () => g
 });
 var i = n(255367);
 n(73800);
@@ -18,8 +18,8 @@ var r = n(512722),
   I = n(689011),
   p = n(55563),
   C = n(981631);
-async function O(e) {
-  var t, n, r, O, g;
+async function g(e) {
+  var t, n, r, g, O;
   let {
     applicationId: S,
     skuId: T,
@@ -55,12 +55,12 @@ async function O(e) {
       }
     })
   });
-  await (t = S, n = T, r = f, O = m, g = N, (0, u.m)({
+  await (t = S, n = T, r = f, g = m, O = N, (0, u.m)({
     applicationId: t,
     skuId: n,
     initialPlanId: r,
-    analyticsLocationObject: O,
-    analyticsLocations: g,
+    analyticsLocationObject: g,
+    analyticsLocations: O,
     renderHeader: (e, t, n) => (0, i.jsx)(I.t, {
       step: n,
       onClose: () => t(!1)

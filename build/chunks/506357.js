@@ -17,8 +17,8 @@ var i = n(255367),
   I = n(666657),
   p = n(533244),
   C = n(981631),
-  O = n(176505),
-  g = n(388032),
+  g = n(176505),
+  O = n(388032),
   S = n(302654);
 
 function T(e) {
@@ -32,7 +32,7 @@ function T(e) {
   } = (0, E.mI)(R), D = (0, a.n2)(null != (t = null == A ? void 0 : A.id) ? t : C.lds), v = r.useCallback(() => null != A && (0, c._X)(A.id), [A]);
   if (null == A || null == b || !y) return null;
   let U = e => {
-      if (e && D && m !== O.oC.MEMBER_SAFETY && v()) return void h.default.track(C.rMx.APP_NOTICE_PRIMARY_CTA_OPENED, {
+      if (e && D && m !== g.oC.MEMBER_SAFETY && v()) return void h.default.track(C.rMx.APP_NOTICE_PRIMARY_CTA_OPENED, {
         notice_type: C.kVF.GUILD_RAID_NOTIFICATION,
         guild_id: A.id
       });
@@ -100,19 +100,19 @@ function T(e) {
           size: "xs",
           color: "currentColor"
         }), (0, i.jsx)("span", {
-          children: g.intl.string(g.t["c+7oa2"])
+          children: O.intl.string(O.t["c+7oa2"])
         })]
       })
     })]
   });
-  let Z = (0, p.CG)(b) ? g.intl.formatToPlainString(g.t.tZTx2N, {
+  let Z = (0, p.CG)(b) ? O.intl.formatToPlainString(O.t.tZTx2N, {
       guildName: A.name
-    }) : (0, p.kk)(b) ? g.intl.formatToPlainString(g.t["1bSmxs"], {
+    }) : (0, p.kk)(b) ? O.intl.formatToPlainString(O.t["1bSmxs"], {
       guildName: A.name
-    }) : g.intl.formatToPlainString(g.t.W87xDA, {
+    }) : O.intl.formatToPlainString(O.t.W87xDA, {
       guildName: A.name
     }),
-    k = D && m === O.oC.MEMBER_SAFETY;
+    k = D && m === g.oC.MEMBER_SAFETY;
   return (0, i.jsxs)(o.qXd, {
     className: S.notice,
     color: o.DM8.WARNING,
@@ -125,7 +125,7 @@ function T(e) {
       children: (0, i.jsx)("div", {
         className: S.actionButtonInner,
         children: (0, i.jsx)("span", {
-          children: g.intl.string(g.t.zDJDho)
+          children: O.intl.string(O.t.zDJDho)
         })
       })
     })]

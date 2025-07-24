@@ -1,8 +1,8 @@
 /** Chunk was on 67032 **/
 n.d(t, {
   Ux: () => C,
-  gS: () => O,
-  ww: () => g
+  gS: () => g,
+  ww: () => O
 }), n(997841);
 var i = n(73800),
   r = n(399606),
@@ -27,7 +27,7 @@ function C(e) {
   }, [e])
 }
 
-function O(e) {
+function g(e) {
   return (0, r.cj)([s.default, a.ZP, u.Z, c.Z], () => {
     let t = {
         nick: void 0,
@@ -52,7 +52,7 @@ function O(e) {
   }, [e])
 }
 
-function g(e) {
+function O(e) {
   let {
     guildId: t,
     scrollPosition: n,

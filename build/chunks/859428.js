@@ -1,6 +1,6 @@
 /** Chunk was on 67032 **/
 n.d(t, {
-  Z: () => g
+  Z: () => O
 }), n(388685);
 var i = n(255367),
   r = n(73800),
@@ -17,13 +17,13 @@ var i = n(255367),
   I = n(981631),
   p = n(388032),
   C = n(8940),
-  O = n(240211);
-let g = 12633 == n.j ? () => {
+  g = n(240211);
+let O = 12633 == n.j ? () => {
   let e = (0, s.e7)([h.Z], () => h.Z.getGuildId(), []),
     t = (0, s.e7)([_.Z], () => _.Z.getGuild(e), [e]),
     [n, l] = r.useState(!1);
   if (null == t) return null;
-  let g = async () => {
+  let O = async () => {
     l(!0);
     try {
       E.mT(t.id), await d.Z.joinGuild(t.id, {
@@ -34,7 +34,7 @@ let g = 12633 == n.j ? () => {
     }
   };
   return (0, i.jsxs)("div", {
-    className: o()(C.notice, O.notice),
+    className: o()(C.notice, g.notice),
     children: [(0, i.jsxs)(a.zx, {
       look: a.zx.Looks.OUTLINED,
       color: a.zx.Colors.WHITE,
@@ -59,7 +59,7 @@ let g = 12633 == n.j ? () => {
       color: a.zx.Colors.WHITE,
       size: a.zx.Sizes.NONE,
       submitting: n,
-      onClick: g,
+      onClick: O,
       children: p.intl.format(p.t.uHN7n5, {
         guild: t.name
       })

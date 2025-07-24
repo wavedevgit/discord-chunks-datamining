@@ -1,13 +1,13 @@
 /** Chunk was on 67032 **/
 n.d(t, {
   $Y: () => f,
-  JK: () => g,
+  JK: () => O,
   Je: () => S,
   T9: () => R,
   UE: () => m,
   Xx: () => N,
   mm: () => T,
-  qY: () => O
+  qY: () => g
 }), n(388685);
 var i = n(544891),
   r = n(570140),
@@ -72,7 +72,7 @@ function C(e) {
   };
   return null != r.triggerMetadata && delete r.triggerMetadata.keywordLists, r
 }
-async function O(e) {
+async function g(e) {
   let t = I(e),
     n = await i.tn.post({
       url: h.ANM.GUILD_AUTOMOD_VALIDATE_RULE(e.guildId),
@@ -81,7 +81,7 @@ async function O(e) {
     });
   return (0, u.C)(n.body)
 }
-async function g(e) {
+async function O(e) {
   let t = I(e);
   return delete t.id, C((await i.tn.post({
     url: h.ANM.GUILD_AUTOMOD_RULES(e.guildId),

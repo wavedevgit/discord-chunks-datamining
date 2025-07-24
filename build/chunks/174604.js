@@ -107,7 +107,7 @@ function v(e) {
       })
     });
     else {
-      let t = g.reverse();
+      let t = Array.from(g).reverse();
       e = h.intl.format(p.default.GmN3VV, {
         perk1: (0, r.jsx)(O, {
           powerup: t[0]

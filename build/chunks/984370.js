@@ -63,7 +63,7 @@ async function E(e) {
   }
 }
 
-function Z(e) {
+function S(e) {
   let {
     children: t,
     className: r,
@@ -73,15 +73,15 @@ function Z(e) {
     innerClassname: g,
     transparent: v = !1,
     showToolbar: w = !0,
-    toolbar: Z,
-    mobileToolbar: S,
+    toolbar: S,
+    mobileToolbar: Z,
     "aria-label": I,
     "aria-labelledby": D,
     scrollable: N,
     role: x,
     hideSearch: C,
-    showDivider: k,
-    disableDoubleClick: R
+    showDivider: R,
+    disableDoubleClick: k
   } = e, T = null == c || (0, P.AB)(c) ? null : c, A = (0, i.e7)([O.Z], () => O.Z.isInChannel(T) || !1), M = (0, i.e7)([s.Z], () => null != T && s.Z.getParticipantsListOpen(T)), {
     enabled: _,
     inInbox: L
@@ -96,12 +96,12 @@ function Z(e) {
     className: r,
     innerClassName: g,
     toolbar: function() {
-      if (null == Z) return null;
+      if (null == S) return null;
       let e = null != c && !C;
-      return l.tq ? S : (0, n.jsxs)(n.Fragment, {
-        children: [Z, e ? (0, n.jsx)(p.Z, {
+      return l.tq ? Z : (0, n.jsxs)(n.Fragment, {
+        children: [S, e ? (0, n.jsx)(p.Z, {
           className: h.search
-        }, null != y ? y : c) : null, k && (0, n.jsx)(m.ZP.Divider, {}), _ && !L ? (0, n.jsx)(f.Z, {}) : null, G && A && null != T && !M && o === j.d4z.GROUP_DM && (0, n.jsxs)("div", {
+        }, null != y ? y : c) : null, R && (0, n.jsx)(m.ZP.Divider, {}), _ && !L ? (0, n.jsx)(f.Z, {}) : null, G && A && null != T && !M && o === j.d4z.GROUP_DM && (0, n.jsxs)("div", {
           className: h.controlButtonWrapper,
           children: [(0, n.jsx)(m.ZP.Divider, {}), (0, n.jsx)(d.Z, {
             onClick: () => a.Z.toggleParticipantsList(T, !M)
@@ -111,7 +111,7 @@ function Z(e) {
     }(),
     transparent: v,
     showToolbar: w,
-    onDoubleClick: () => E(R),
+    onDoubleClick: () => E(k),
     "aria-label": I,
     "aria-labelledby": D,
     role: x,
@@ -120,7 +120,7 @@ function Z(e) {
   })
 }
 
-function S(e) {
+function Z(e) {
   let {
     children: t,
     className: r,
@@ -162,9 +162,9 @@ function I(e) {
   } = (0, o.ZP)(c.Z.HEADER_BAR);
   return (0, n.jsx)(o.Gt, {
     value: l,
-    children: t ? (0, n.jsx)(Z, w(v({}, r), {
+    children: t ? (0, n.jsx)(S, w(v({}, r), {
       className: r.className
-    })) : (0, n.jsx)(S, w(v({}, r), {
+    })) : (0, n.jsx)(Z, w(v({}, r), {
       className: r.className
     }))
   })

@@ -22,7 +22,7 @@ let h = 12633 == n.j ? e => {
   if ((0, a.U)(c.jXE.NOTIFICATION_BAR, null == I ? void 0 : I.countryCode), null == I) return null;
   let p = I.countryCode,
     C = I.currency,
-    O = I.paymentSourceTypes.length > 0;
+    g = I.paymentSourceTypes.length > 0;
   return (0, i.jsxs)(r.qXd, {
     color: E ? r.DM8.BRAND : r.DM8.PREMIUM_TIER_2,
     children: [(0, i.jsx)(r.RyX, {
@@ -32,7 +32,7 @@ let h = 12633 == n.j ? e => {
       size: "md",
       color: "currentColor",
       className: _.premiumIcon
-    }), (0, o.Gv)(p, C, O, E), (0, i.jsx)(r.NoS, {
+    }), (0, o.Gv)(p, C, g, E), (0, i.jsx)(r.NoS, {
       onClick: () => {
         h(d.L.UNKNOWN), l.Z.open(c.oAB.PREMIUM)
       },

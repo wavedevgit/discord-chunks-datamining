@@ -1,7 +1,7 @@
 /** Chunk was on 88448 **/
 r.d(t, {
   G: () => g,
-  Z: () => m
+  Z: () => j
 }), r(388685), r(539854);
 var n = r(442837),
   l = r(963374),
@@ -62,22 +62,23 @@ function g(e) {
     ignoreCount: o
   }
 }
+let m = [];
 
-function m(e) {
+function j(e) {
   let t = (0, c.p)(),
     r = a.d.useExperiment({
       location: "useMessageRenderedContent"
     }).enabled,
-    [u, b, f] = y((0, n.e7)([d.Z, i.Z], () => {
+    [b, f, p] = y((0, n.e7)([d.Z, u.Z, i.Z], () => {
       var n;
-      let a = d.Z.getQuery(e),
-        c = d.Z.getRawResults(e);
-      if (null == a || null == c) return [];
-      let u = (0, l.nC)(null != (n = a.content) ? n : "");
+      let a = d.Z.getSearchResultsQuery(e),
+        c = u.Z.getRawMessages(e);
+      if (null == a || null == c) return m;
+      let b = (0, l.nC)(null != (n = a.content) ? n : "");
       return c.map(e => e.map(e => {
         let n = O((0, o.e5)(e), [i.Z]);
         return n.isSearchHit ? n.set("customRenderedContent", (0, s.ZP)(n, {
-          postProcessor: u,
+          postProcessor: b,
           allowHeading: !0,
           allowList: !0,
           allowGameMentions: r,
@@ -86,8 +87,8 @@ function m(e) {
       }))
     }, [e, t, r], n.pF));
   return {
-    searchResults: u,
-    blockCount: b,
-    ignoreCount: f
+    searchResults: b,
+    blockCount: f,
+    ignoreCount: p
   }
 }
