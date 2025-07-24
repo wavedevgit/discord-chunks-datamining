@@ -82,10 +82,10 @@ let P = e => {
     i.useEffect(() => (Z || M.push(u.z.HANG_STATUS_NEW_BADGE), () => {
       Z && (null == D || D(j.L.PRIMARY))
     }), [Z, M, D]);
-    let k = (e, t) => {
+    let L = (e, t) => {
         e.stopPropagation(), (0, b.Zx)(t, !0), T(!0)
       },
-      L = (e, t) => {
+      k = (e, t) => {
         e.stopPropagation(), (0, b._s)(t.status, t.emoji, !0), T(!0)
       },
       U = i.useCallback(e => {
@@ -167,7 +167,7 @@ let P = e => {
                 return (0, r.jsx)(d.P3F, {
                   "aria-label": i.title,
                   onMouseEnter: () => F(n),
-                  onClick: e => k(e, n),
+                  onClick: e => L(e, n),
                   children: (0, r.jsx)(P, {
                     className: a()(S.iconWidget, {
                       [S.selectedWidget]: n === (null == t ? void 0 : t.state)
@@ -208,7 +208,7 @@ let P = e => {
                 return (0, r.jsxs)(d.P3F, {
                   "aria-label": e.status,
                   onMouseEnter: () => H(e),
-                  onClick: o ? void 0 : t => L(t, e),
+                  onClick: o ? void 0 : t => k(t, e),
                   className: S.statusOptionContainer,
                   children: [(0, r.jsx)(P, {
                     className: a()(S.iconWidget, {

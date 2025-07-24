@@ -37,8 +37,8 @@ var r = n(255367),
   R = n(891551),
   M = n(314897),
   D = n(979696),
-  k = n(430824),
-  L = n(496675),
+  L = n(430824),
+  k = n(496675),
   U = n(944486),
   B = n(358085),
   F = n(998502),
@@ -137,7 +137,7 @@ function eu(e) {
 function ed(e) {
   let {
     channel: t
-  } = e, n = (0, m.bp)(), i = (0, s.e7)([L.Z], () => L.Z.can(et.Plq.CREATE_INSTANT_INVITE, t)), l = (0, s.e7)([k.Z], () => k.Z.getGuild(t.guild_id)), a = (0, s.e7)([z.Z], () => z.Z.getStageInstanceByChannel(t.id)), o = i || (null == a ? void 0 : a.invite_code) != null;
+  } = e, n = (0, m.bp)(), i = (0, s.e7)([k.Z], () => k.Z.can(et.Plq.CREATE_INSTANT_INVITE, t)), l = (0, s.e7)([L.Z], () => L.Z.getGuild(t.guild_id)), a = (0, s.e7)([z.Z], () => z.Z.getStageInstanceByChannel(t.id)), o = i || (null == a ? void 0 : a.invite_code) != null;
   return null != l && o ? (0, r.jsx)(P.Z, {
     size: u.zx.Sizes.MEDIUM,
     color: u.zx.Colors.TRANSPARENT,
@@ -165,7 +165,7 @@ function ep(e) {
     } = (0, b.ZP)(g.Z.VOICE_CONTROL_TRAY),
     j = (0, m.bp)(),
     O = (0, s.e7)([U.Z], () => U.Z.getVoiceChannelId() === c.id, [c.id]),
-    E = (0, s.e7)([L.Z], () => L.Z.can(et.Plq.CONNECT, c)),
+    E = (0, s.e7)([k.Z], () => k.Z.can(et.Plq.CONNECT, c)),
     S = (0, G.w8)(c.id, V.pV.SPEAKER),
     I = (0, s.e7)([_.Z], () => _.Z.getSelectedParticipant(c.id)),
     P = f && j !== et.IlC.POPOUT,
@@ -268,7 +268,7 @@ function eh(e) {
   } = (0, s.cj)([_.Z], () => ({
     chatOpen: _.Z.getChatOpen(t.id),
     participantsListOpen: _.Z.getParticipantsListOpen(t.id)
-  }), [t.id]), N = (0, s.e7)([k.Z], () => k.Z.getGuild(t.guild_id), [t.guild_id]), {
+  }), [t.id]), N = (0, s.e7)([L.Z], () => L.Z.getGuild(t.guild_id), [t.guild_id]), {
     hasParticipantsPanel: A
   } = (0, j.Z)({
     location: "StageChannelCall"

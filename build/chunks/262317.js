@@ -1,8 +1,8 @@
 /** Chunk was on 60173 **/
 n.d(t, {
-  XX: () => k,
+  XX: () => L,
   ZP: () => U,
-  ul: () => L
+  ul: () => k
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -69,7 +69,7 @@ function D(e, t) {
   }), e
 }
 
-function k(e) {
+function L(e) {
   let {
     numUsers: t
   } = e;
@@ -83,7 +83,7 @@ function k(e) {
   })
 }
 
-function L(e) {
+function k(e) {
   let {
     numAudience: t,
     collapsed: n
@@ -113,8 +113,8 @@ let U = (0, h.$)(function(e) {
   let {
     collapsed: l,
     user: h,
-    channel: k,
-    mute: L,
+    channel: L,
+    mute: k,
     localMute: U,
     localVideoDisabled: B,
     deaf: F,
@@ -155,15 +155,15 @@ let U = (0, h.$)(function(e) {
     e && el ? ev.delay() : !e && ev.isDelayed() && ev.cancel()
   }, eO = e => {
     e && (ev.cancel(), ey(!1))
-  }, eE = () => J && (0, C.p9)(k, T.Z, I.Z, P.Z, b.Z)[0], eS = () => {
+  }, eE = () => J && (0, C.p9)(L, T.Z, I.Z, P.Z, b.Z)[0], eS = () => {
     if (!eE()) return;
     let e = {
       streamType: A.lo.GUILD,
       ownerId: h.id,
-      channelId: k.id,
-      guildId: k.guild_id
+      channelId: L.id,
+      guildId: L.guild_id
     };
-    S.default.getId() !== h.id && d.default.selectVoiceChannel(k.id), $ ? ((0, x.Z)(e), c.Z.selectParticipant(e.channelId, (0, y.V9)(e))) : (0, p.iV)(e), null == er || er(h.id)
+    S.default.getId() !== h.id && d.default.selectVoiceChannel(L.id), $ ? ((0, x.Z)(e), c.Z.selectParticipant(e.channelId, (0, y.V9)(e))) : (0, p.iV)(e), null == er || er(h.id)
   }, eI = e => {
     (0, u.jW)(e, async () => {
       let {
@@ -171,10 +171,10 @@ let U = (0, h.$)(function(e) {
       } = await Promise.all([n.e("79695"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("74800")]).then(n.bind(n, 757387));
       return t => (0, r.jsx)(e, D(M({}, t), {
         user: h,
-        guildId: k.guild_id,
-        channel: k,
+        guildId: L.guild_id,
+        channel: L,
         showMediaItems: !0,
-        showStageChannelItems: k.isGuildStageVoice(),
+        showStageChannelItems: L.isGuildStageVoice(),
         onInteraction: (0, g.u)("GuildChannelUserContextMenu", m.Z.VOICE_USER, {
           targetUserId: h.id
         })
@@ -182,13 +182,13 @@ let U = (0, h.$)(function(e) {
     })
   }, eP = () => (0, r.jsx)(j.Z, {
     previewIsOpen: el,
-    channel: k,
+    channel: L,
     hangStatusActivity: eh,
     userId: h.id,
     targetElementRef: em
-  }), eZ = () => (0, f.dl)() && (0, f.zd)(k.id) ? null : (0, r.jsx)(v.Z, {
+  }), eZ = () => (0, f.dl)() && (0, f.zd)(L.id) ? null : (0, r.jsx)(v.Z, {
     user: h,
-    channel: k,
+    channel: L,
     onWatch: eS,
     previewIsOpen: el,
     location: eu
@@ -198,7 +198,7 @@ let U = (0, h.$)(function(e) {
         user: h,
         speaking: q,
         disconnected: K,
-        mute: L,
+        mute: k,
         localMute: U,
         localVideoDisabled: B,
         isStreaming: J,
@@ -224,10 +224,10 @@ let U = (0, h.$)(function(e) {
         onClick: t ? void 0 : eC,
         onDoubleClick: eS,
         onContextMenu: eI,
-        guildId: k.guild_id,
+        guildId: L.guild_id,
         isSelf: ed,
         application: ep,
-        channelId: k.id,
+        channelId: L.id,
         hangStatusActivity: eh,
         showHangStatus: ef
       };
@@ -277,7 +277,7 @@ let U = (0, h.$)(function(e) {
     })
   }, eN = (0, r.jsx)("div", {
     className: R.draggable,
-    "data-dnd-name": k.name,
+    "data-dnd-name": L.name,
     onMouseEnter: es ? void 0 : () => {
       (J || ef) && !eg && (null == en || en(h.id))
     },
@@ -286,8 +286,8 @@ let U = (0, h.$)(function(e) {
       clickTrap: (null == h ? void 0 : h.id) === (null == (t = Z.default.getCurrentUser()) ? void 0 : t.id) && eg,
       targetElementRef: em,
       user: h,
-      guildId: k.guild_id,
-      channelId: k.id,
+      guildId: L.guild_id,
+      channelId: L.id,
       newAnalyticsLocations: [m.Z.VOICE_USER],
       shouldShow: eg,
       onRequestClose: () => eb(!1),

@@ -1,7 +1,7 @@
 /** Chunk was on 60173 **/
 n.d(t, {
   TS: () => H,
-  ud: () => L,
+  ud: () => k,
   v0: () => B
 }), n(388685);
 var r = n(255367),
@@ -69,7 +69,7 @@ function D(e, t) {
   }), e
 }
 
-function k(e) {
+function L(e) {
   var t;
   let {
     channel: n,
@@ -126,7 +126,7 @@ function k(e) {
   }, a)
 }
 
-function L(e) {
+function k(e) {
   let {
     channel: t,
     channelName: n,
@@ -202,7 +202,7 @@ function L(e) {
     case N.d4z.GUILD_TEXT:
     case N.d4z.GUILD_FORUM:
     case N.d4z.GUILD_MEDIA:
-      return null != t.linkedLobby ? (0, r.jsxs)(k, {
+      return null != t.linkedLobby ? (0, r.jsxs)(L, {
         channel: t,
         children: [F(b, t.type === N.d4z.GUILD_ANNOUNCEMENT ? w.intl.string(w.t.l1dkSE) : w.intl.string(w.t.Pnajj4)), (0, r.jsx)(Z.Z.Title, {
           level: y,

@@ -72,9 +72,9 @@ let O = e => {
       }
     }),
     [M, D] = i.useState(A),
-    k = "" !== A,
+    L = "" !== A,
     {
-      showHubEventsList: L
+      showHubEventsList: k
     } = c.Z.useExperiment({
       guildId: null != (t = E.id) ? t : "",
       location: "6f7fb0_1"
@@ -83,7 +83,7 @@ let O = e => {
     }),
     U = {
       mostRecentQuery: A,
-      showHubEventsList: L
+      showHubEventsList: k
     },
     B = i.useRef(U);
   i.useEffect(() => {
@@ -152,7 +152,7 @@ let O = e => {
     G = () => {
       D(""), h.So(O.id)
     };
-  return k ? (0, r.jsx)(C.Z, {
+  return L ? (0, r.jsx)(C.Z, {
     searchQuery: M,
     setSearchQuery: D,
     mostRecentQuery: A,

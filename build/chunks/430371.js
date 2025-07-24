@@ -71,8 +71,8 @@ function P(e) {
       channel: R,
       selectedParticipant: M,
       showParticipants: D = !0,
-      className: k,
-      width: L,
+      className: L,
+      width: k,
       height: U,
       layout: B,
       idle: F
@@ -96,11 +96,11 @@ function P(e) {
     eo = (null != (t = (0, c.Z)(M.id)) ? t : M.id) !== M.id,
     es = 0;
   (J || en) && (es += 72), J && !en && (el ? es += 48 : es += 8), en && (es += .5 * I + 8);
-  let ec = i.useMemo(() => J && $ ? L / (U - 2 * es) : ee && null != z && z.width > 0 && z.height > 0 ? z.width / z.height : S, [ee, z, J, L, U, es, $]),
+  let ec = i.useMemo(() => J && $ ? k / (U - 2 * es) : ee && null != z && z.width > 0 && z.height > 0 ? z.width / z.height : S, [ee, z, J, k, U, es, $]),
     eu = U - 2 * es,
-    ed = J && $ ? L : eu * ec,
-    ep = Math.floor(Math.min(L, ed) / ec),
-    eh = U > L / ec + 72 + I + 8;
+    ed = J && $ ? k : eu * ec,
+    ep = Math.floor(Math.min(k, ed) / ec),
+    eh = U > k / ec + 72 + I + 8;
   n = en || J ? en ? -16 : -8 : 40 + Math.max(0, 72 - (U - ep) / 2), i.useEffect(() => {
     let e = setTimeout(() => {
       K(!1)
@@ -164,9 +164,9 @@ function P(e) {
     {
       visibleParticipants: ej,
       participantTileWidth: eO
-    } = (0, y.ZB)(L, N);
+    } = (0, y.ZB)(k, N);
   return (0, r.jsxs)("div", {
-    className: a()(j.root, v.flexCenter, k),
+    className: a()(j.root, v.flexCenter, L),
     children: [(0, r.jsxs)("div", {
       className: j.tileWrapper,
       style: {
@@ -196,11 +196,11 @@ function P(e) {
                 style: e,
                 children: (0, r.jsx)(g.ZP, {
                   focused: !0,
-                  noBorder: ed >= L || eu >= U,
+                  noBorder: ed >= k || eu >= U,
                   channel: R,
                   className: v.focusedVideo,
                   videoComponent: G,
-                  width: L,
+                  width: k,
                   participant: t,
                   onClick: l,
                   onDoubleClick: Z,
@@ -247,7 +247,7 @@ function P(e) {
       })]
     }), ev.length > 0 ? (0, r.jsx)(b.Z, {
       onContextMenuParticipant: P,
-      width: L,
+      width: k,
       height: U,
       channel: R,
       participants: ev,

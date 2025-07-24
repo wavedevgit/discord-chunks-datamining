@@ -37,7 +37,7 @@ function v(e) {
     entries: I,
     impressionCappedEntryIds: P,
     hasLeaderboardEntry: Z
-  } = (0, m.Z)(v), T = (0, i.e7)([p.Z], () => p.Z.hidden), N = (0, i.e7)([c.Z], () => c.Z.isFocused()), A = (0, i.e7)([o.Z], () => o.Z.getChannel(v)), w = (0, i.e7)([s.Z], () => s.Z.getGuild(j), [j]), R = (0, h.E)(w), M = null != R && R && (null == A ? void 0 : A.isForumChannel()) === !1, [D, k, L, U] = r.useMemo(() => {
+  } = (0, m.Z)(v), T = (0, i.e7)([p.Z], () => p.Z.hidden), N = (0, i.e7)([c.Z], () => c.Z.isFocused()), A = (0, i.e7)([o.Z], () => o.Z.getChannel(v)), w = (0, i.e7)([s.Z], () => s.Z.getGuild(j), [j]), R = (0, h.E)(w), M = null != R && R && (null == A ? void 0 : A.isForumChannel()) === !1, [D, L, k, U] = r.useMemo(() => {
     let e;
     if (null == I || 0 === I.length || null == S || !M) return [t, n, x];
     let r = O ? I.length : Z ? 4 : 3,
@@ -108,8 +108,8 @@ function v(e) {
     }))
   }), [S, v, j, T, N, M]), {
     groups: D,
-    rows: k,
-    version: L,
+    rows: L,
+    version: k,
     updateMaxRowSeen: V
   }
 }

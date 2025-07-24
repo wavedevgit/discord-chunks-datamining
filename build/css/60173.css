@@ -1,6 +1,6 @@
 /**
   Module ID: 60173
-  Original File Name: 08111bdf4bfc72ba
+  Original File Name: 0ac5a9cd5f325703
 **/
 @keyframes placeholderPulse_c8ffbb {
     0% {
@@ -8710,19 +8710,22 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .image__44df5 {
-    align-self: flex-end;
+    border-radius: var(--radius-sm);
     height: 40px;
-    margin-bottom: -8px;
-    margin-right: 12px
+    margin-right: 16px;
+    width: 40px
+}
+
+.animation__44df5,.image__44df5 {
+    align-self: center;
+    margin-left: -8px
 }
 
 .animation__44df5 {
     align-content: center;
-    align-self: center;
     display: flex;
     height: 50px;
     justify-content: center;
-    margin-left: -8px;
     margin-right: 4px;
     margin-top: 4px;
     width: 50px
@@ -13014,4 +13017,4 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     position: relative
 }
 
-/*# sourceMappingURL=08111bdf4bfc72ba.css.map*/
+/*# sourceMappingURL=0ac5a9cd5f325703.css.map*/

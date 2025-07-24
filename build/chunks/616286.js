@@ -129,12 +129,12 @@ function O(e) {
     event: C.CkL.FOCUS_CHAT_BUTTON,
     handler: S ? null : R
   });
-  let [M, D] = i.useState(!1), k = i.useCallback(() => {
+  let [M, D] = i.useState(!1), L = i.useCallback(() => {
     f && D(!0)
   }, [f]);
   (0, g.yp)({
     event: C.CkL.SHOW_TEXT_IN_VOICE_POPOUT_COMING_SOON_TIP,
-    handler: k
+    handler: L
   }), i.useEffect(() => {
     let e;
     return M && (e = setTimeout(() => {
@@ -143,10 +143,10 @@ function O(e) {
       clearTimeout(e)
     }
   }, [M]);
-  let L = [t = f && S ? x.intl.string(x.t.DPgc5u) : P ? x.intl.string(x.t.nthdxM) : x.intl.string(x.t["5KxXrK"])];
-  return N > 0 && L.push(x.intl.formatToPlainString(x.t["3l1GOz"], {
+  let k = [t = f && S ? x.intl.string(x.t.DPgc5u) : P ? x.intl.string(x.t.nthdxM) : x.intl.string(x.t["5KxXrK"])];
+  return N > 0 && k.push(x.intl.formatToPlainString(x.t["3l1GOz"], {
     mentionCount: N
-  })), T > 0 && L.push(x.intl.string(x.t.x5zAGR)), (0, r.jsx)(y.Z, function(e) {
+  })), T > 0 && k.push(x.intl.string(x.t.x5zAGR)), (0, r.jsx)(y.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -167,7 +167,7 @@ function O(e) {
     buttonRef: I,
     onClick: A,
     label: t,
-    "aria-label": L.join(", "),
+    "aria-label": k.join(", "),
     iconComponent: w,
     tooltipPosition: "bottom",
     wrapperClassName: a()(l, null != o && {

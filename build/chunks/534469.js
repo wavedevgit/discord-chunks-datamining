@@ -38,8 +38,8 @@ var r = n(255367),
   R = n(348238),
   M = n(62072),
   D = n(38267),
-  k = n(25015),
-  L = n(689674),
+  L = n(25015),
+  k = n(689674),
   U = n(438075),
   B = n(764893),
   F = n(481363),
@@ -189,7 +189,7 @@ function ei(e) {
     onFocus: S
   } = E, P = et(E, ["onFocus"]), {
     isFocused: N,
-    handleFocus: L,
+    handleFocus: k,
     handleBlur: B
   } = (0, R.bb)(S), {
     popouts: F,
@@ -207,7 +207,7 @@ function ei(e) {
   }), es = (0, u.e7)([p.Z], () => p.Z.keyboardModeEnabled), ec = V || es && N, eu = ec || eo, {
     content: ed,
     hasSpoilerEmbeds: ep
-  } = (0, k.Z)(o, {
+  } = (0, L.Z)(o, {
     hideSimpleEmbedContent: J && en,
     isInteracting: eu,
     formatInline: !1,
@@ -241,7 +241,7 @@ function ei(e) {
       }),
       zalgo: !0,
       onKeyDown: eh,
-      onFocus: L,
+      onFocus: k,
       onBlur: B,
       childrenRepliedMessage: o.type === q.uaV.REPLY && (0, z.Z)(ee($({}, e), {
         setPopout: Q,
@@ -345,19 +345,19 @@ let el = i.memo(function(e) {
     eR = ew || eO,
     eM = (0, u.e7)([j.Z], () => x.hasFlag(q.iLy.HAS_THREAD) && j.Z.getChannel(S.default.castMessageIdAsChannelId(x.id))),
     eD = x.isFirstMessageInForumPost(J),
-    ek = (0, m.A)((null != (n = x.editedTimestamp) ? n : x.timestamp).valueOf()),
-    eL = (0, u.e7)([O.Z], () => O.Z.isDeveloper),
+    eL = (0, m.A)((null != (n = x.editedTimestamp) ? n : x.timestamp).valueOf()),
+    ek = (0, u.e7)([O.Z], () => O.Z.isDeveloper),
     {
       content: eU,
       hasSpoilerEmbeds: eB
-    } = (0, k.Z)(x, {
+    } = (0, L.Z)(x, {
       hideSimpleEmbedContent: eh && ef,
       isInteracting: eR,
       formatInline: !1,
-      allowList: eD || ek,
-      allowHeading: eD || ek,
+      allowList: eD || eL,
+      allowHeading: eD || eL,
       allowLinks: !0,
-      allowDevLinks: eL,
+      allowDevLinks: ek,
       previewLinkTarget: !0
     }),
     eF = (0, M.Z)(P, en, eA),
@@ -376,7 +376,7 @@ let el = i.memo(function(e) {
     eW = (0, w.iG)(x, ea),
     eY = (0, w.Gx)(x),
     eq = (0, u.e7)([h.Z], () => h.Z.getMessage(P), [P]),
-    eK = (0, L.Z)({
+    eK = (0, k.Z)({
       message: x,
       channel: J
     }),

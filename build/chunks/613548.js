@@ -110,10 +110,10 @@ function D(e) {
     userParticipantCount: I.Z.getUserParticipantCount(s),
     participantsListOpen: I.Z.getParticipantsListOpen(s)
   }), [s]), D = t.isGuildVoice() && !n, {
-    hasParticipantsPanel: k
+    hasParticipantsPanel: L
   } = (0, Z.Z)({
     location: "ChannelCallHeaderToolbar"
-  }), L = !N && k && (t.isGuildVoice() || t.isGroupDM()), {
+  }), k = !N && L && (t.isGuildVoice() || t.isGroupDM()), {
     enabled: U,
     inInbox: B
   } = b.Z.useExperiment({
@@ -137,7 +137,7 @@ function D(e) {
   }, "live-indicator"))), (null == E ? void 0 : E.type) === T.fO.USER && F.push((0, r.jsx)(x.Z, {
     className: A.button,
     userId: E.id
-  }, "video-warning")), y && !k && F.push((0, r.jsx)(u.yRy, {
+  }, "video-warning")), y && !L && F.push((0, r.jsx)(u.yRy, {
     targetElementRef: l,
     position: "bottom",
     renderPopout: () => (0, r.jsx)(v.Z, {
@@ -159,7 +159,7 @@ function D(e) {
     }
   }, "call-members-popout")), U && !B && F.push((0, r.jsx)(_.Z, {
     className: A.button
-  }, "for-later")), L && F.push((0, r.jsx)(O.Z, {
+  }, "for-later")), k && F.push((0, r.jsx)(O.Z, {
     className: a()(A.button, {
       [A.lastButton]: n
     }),

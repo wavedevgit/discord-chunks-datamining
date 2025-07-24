@@ -36,8 +36,8 @@ var r = n(255367),
   R = n(358221),
   M = n(677601),
   D = n(541716),
-  k = n(236091),
-  L = n(663993),
+  L = n(236091),
+  k = n(663993),
   U = n(252618),
   B = n(201493),
   F = n(266454),
@@ -90,8 +90,8 @@ var r = n(255367),
   eR = n(892001),
   eM = n(402130),
   eD = n(524329),
-  ek = n(995532),
-  eL = n(738643),
+  eL = n(995532),
+  ek = n(738643),
   eU = n(433355),
   eB = n(592125),
   eF = n(703558),
@@ -157,7 +157,7 @@ function to(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let ts = (0, L.Un)({
+let ts = (0, k.Un)({
   createPromise: () => Promise.all([n.e("22173"), n.e("71879")]).then(n.bind(n, 346975)),
   webpackId: 346975,
   renderLoader: () => (0, r.jsx)("div", {
@@ -551,7 +551,7 @@ class tc extends i.PureComponent {
         inCall: e,
         voiceChannel: t
       } = this.props;
-      return e ? (0, r.jsx)(k.Z, {
+      return e ? (0, r.jsx)(L.Z, {
         channelId: null != t ? t.id : null
       }) : null
     }), tl(this, "renderStreamQualityLiveIndicatorToolbarItem", () => {
@@ -816,21 +816,21 @@ let tu = (0, O.Z)(tc),
     }, [A, c, j, O]);
     let M = (0, p.e7)([I.ZP], () => I.ZP.getCurrentEmbeddedActivity()),
       D = (0, p.e7)([I.ZP], () => I.ZP.getActivityPanelMode()),
-      k = null != M && !(0, Z.Z)(null == c ? void 0 : c.id) && D === e6.Ez.PANEL,
-      L = (0, p.e7)([eQ.Z], () => null != c && c.isVocalThread() && !u().isEmpty(eQ.Z.getVoiceStatesForChannel(c.id)), [c]),
-      U = null != c && c.isPrivate() && !k && x,
-      B = (null == c ? void 0 : c.isGuildVocal()) || U || L,
+      L = null != M && !(0, Z.Z)(null == c ? void 0 : c.id) && D === e6.Ez.PANEL,
+      k = (0, p.e7)([eQ.Z], () => null != c && c.isVocalThread() && !u().isEmpty(eQ.Z.getVoiceStatesForChannel(c.id)), [c]),
+      U = null != c && c.isPrivate() && !L && x,
+      B = (null == c ? void 0 : c.isGuildVocal()) || U || k,
       H = (0, p.e7)([V.Z], () => V.Z.getFrameLayoutMode() === te.U.FOCUSED),
       {
         welcomeModalChannelId: G
       } = (0, d.TH)(),
       W = (0, p.e7)([eg.Z], () => null != c && eg.Z.isLurking(c.guild_id), [c]),
-      Y = (0, p.e7)([ek.Z], () => ek.Z.hasSeen(null == c ? void 0 : c.guild_id, W), [c, W]),
+      Y = (0, p.e7)([eL.Z], () => eL.Z.hasSeen(null == c ? void 0 : c.guild_id, W), [c, W]),
       q = (0, p.e7)([R.Z, I.ZP], () => null != I.ZP.getConnectedActivityLocation() && I.ZP.getActivityPanelMode() === e6.Ez.PANEL ? I.ZP.getFocusedLayout() === e6.MI.NO_CHAT ? e8.AEg.NO_CHAT : e8.AEg.NORMAL : null != o ? R.Z.getLayout(o) : e8.AEg.NORMAL, [o]),
       K = (0, p.e7)([R.Z], () => null != c ? R.Z.getSelectedParticipant(c.id) : null),
       X = (0, p.e7)([eX.default], () => eX.default.getCurrentUser()),
       J = (0, ef.Z)(null == y ? void 0 : y.id),
-      $ = (0, eL.Z)(G, null == y ? void 0 : y.id),
+      $ = (0, ek.Z)(G, null == y ? void 0 : y.id),
       {
         section: ee,
         channelSidebarState: et
@@ -902,7 +902,7 @@ let tu = (0, O.Z)(tc),
       guild: y,
       searchId: (0, p.e7)([eY.Z], () => eY.Z.getCurrentSearchId()),
       showCall: !C && B,
-      showActivityPanel: k,
+      showActivityPanel: L,
       showFramePanel: H,
       nsfwAgree: (0, p.e7)([eG.Z], () => eG.Z.didAgree(null == c ? void 0 : c.guild_id)),
       isMobile: (0, p.e7)([ez.Z], () => (null == c ? void 0 : c.type) === e8.d4z.DM && ez.Z.isMobileOnline(c.getRecipientId()), [c]),
@@ -920,7 +920,7 @@ let tu = (0, O.Z)(tc),
       isFavorites: ei,
       showHeaderGuildBreadcrumb: ei || el,
       premiumIndicatorEnabled: !1,
-      hasTextActivityInPanelMode: k,
+      hasTextActivityInPanelMode: L,
       embeddedActivity: M
     }))
   })

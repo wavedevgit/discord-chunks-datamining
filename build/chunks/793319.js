@@ -38,8 +38,8 @@ var r = n(255367),
   R = n(803647),
   M = n(554747),
   D = n(95764),
-  k = n(459502),
-  L = n(140465),
+  L = n(459502),
+  k = n(140465),
   U = n(800966),
   B = n(641015),
   F = n(618158),
@@ -136,7 +136,7 @@ function ej(e) {
   } = (0, v.ZP)(), h = (0, _.bp)(), f = (0, u.Wu)([$.Z], () => $.Z.getAllActiveStreams()), m = f.find(e => e.ownerId === n.id), g = i.useRef(null), b = i.useRef(null), y = t.getGuildId(), C = i.useCallback(() => {
     if (null == l || l(), !a) return (0, ep.Z)();
     (0, eh.Z)(y, t.id, em.ZY5.GUILD_CHANNEL)
-  }, [y, t.id, a, l]), x = (0, L.B4)(), [j, O] = i.useState(!1), E = () => {
+  }, [y, t.id, a, l]), x = (0, k.B4)(), [j, O] = i.useState(!1), E = () => {
     if ((0, I.v)(c, I.d.STREAM, !0), a) return void C();
     (0, ep.Z)()
   }, S = () => {
@@ -447,7 +447,7 @@ let eP = function(e) {
     canGoLive: R
   } = (0, u.cj)([et.Z], () => ({
     canGoLive: (0, w.Z)(et.Z)
-  })), M = (0, N.Z)(), D = (0, u.e7)([T.Z], () => null != T.Z.getAwaitingRemoteSessionInfo()), L = null != M, U = (0, u.e7)([en.Z], () => {
+  })), M = (0, N.Z)(), D = (0, u.e7)([T.Z], () => null != T.Z.getAwaitingRemoteSessionInfo()), k = null != M, U = (0, u.e7)([en.Z], () => {
     var e;
     return (null != (e = null == M ? void 0 : M.channelId) ? e : en.Z.getVoiceChannelId()) === n.id
   }), F = (0, u.e7)([y.ZP], () => y.ZP.getCurrentEmbeddedActivity()), {
@@ -477,7 +477,7 @@ let eP = function(e) {
       section: em.jXE.VOICE_CONTROL_TRAY,
       children: [(0, r.jsx)("div", {
         className: e_.eventPromptsContainer,
-        children: (0, r.jsx)(k.Z, {
+        children: (0, r.jsx)(L.Z, {
           channelId: n.id
         })
       }), (0, r.jsxs)("div", {
@@ -512,7 +512,7 @@ let eP = function(e) {
               return (0, r.jsx)(Y.Z, {
                 ref: $,
                 centerButton: !0,
-                onPopoutClick: L ? null : n,
+                onPopoutClick: k ? null : n,
                 selfMute: Z,
                 serverMute: A,
                 suppress: P,
@@ -522,7 +522,7 @@ let eP = function(e) {
                 onContextMenu: es
               })
             }
-          }), !L && (0, r.jsx)(p.yRy, {
+          }), !k && (0, r.jsx)(p.yRy, {
             targetElementRef: ee,
             renderPopout: e => {
               let {
@@ -563,13 +563,13 @@ let eP = function(e) {
           })]
         }), (0, r.jsxs)("div", {
           className: e_.buttonSection,
-          children: [!L && (0, r.jsx)(ej, {
+          children: [!k && (0, r.jsx)(ej, {
             channel: n,
             currentUser: _,
             exitFullScreen: c,
             canGoLive: R,
             hasPermission: I
-          }), !L && (0, r.jsx)(eO, {
+          }), !k && (0, r.jsx)(eO, {
             channel: n,
             idle: null == (t = null == d ? void 0 : d.idle) || t,
             whichPopoutIsOpen: m,
@@ -583,7 +583,7 @@ let eP = function(e) {
             channel: n,
             whichPopoutIsOpen: m,
             setWhichPopoutIsOpen: g,
-            remoteMode: L
+            remoteMode: k
           })]
         }), (0, r.jsx)(eE, {
           connectedEmbeddedActivity: F,

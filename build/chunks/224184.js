@@ -38,7 +38,7 @@ let I = e => {
   } = y.n.useExperiment({
     guildId: I.guild_id,
     location: "HangStatusPopout"
-  }), N = (0, o.e7)([p.default], () => p.default.getId()), A = (0, o.e7)([g.default], () => g.default.getUser(l)), w = (0, o.e7)([m.Z], () => m.Z.getChannelId() === I.id), R = (0, o.e7)([f.Z], () => f.Z.can(O.Plq.CONNECT, I)), M = (null == t ? void 0 : t.emoji) == null || (0, x.K)(t.emoji, I), D = (0, o.e7)([h.ZP], () => null != I.guild_id && null != A ? h.ZP.getMember(I.guild_id, l) : null), k = i.useMemo(() => null != A ? (0, d.SG)(void 0, D, A, {
+  }), N = (0, o.e7)([p.default], () => p.default.getId()), A = (0, o.e7)([g.default], () => g.default.getUser(l)), w = (0, o.e7)([m.Z], () => m.Z.getChannelId() === I.id), R = (0, o.e7)([f.Z], () => f.Z.can(O.Plq.CONNECT, I)), M = (null == t ? void 0 : t.emoji) == null || (0, x.K)(t.emoji, I), D = (0, o.e7)([h.ZP], () => null != I.guild_id && null != A ? h.ZP.getMember(I.guild_id, l) : null), L = i.useMemo(() => null != A ? (0, d.SG)(void 0, D, A, {
     size: 40
   }) : void 0, [D, A]);
   return (i.useEffect(() => {
@@ -83,7 +83,7 @@ let I = e => {
           children: [(0, r.jsx)(c.qEK, {
             className: S.avatar,
             size: c.EFr.SIZE_40,
-            src: k,
+            src: L,
             "aria-hidden": !0
           }), (0, r.jsx)("div", {
             className: S.outline
