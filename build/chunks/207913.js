@@ -216,7 +216,9 @@ function V(e) {
         }), d.length > 0 && (0, r.jsx)(u.Kqy, {
           gap: 4,
           style: {
-            minWidth: 0
+            minWidth: 0,
+            marginTop: 4,
+            marginBottom: 4
           },
           children: (0, r.jsx)(F, {
             overflowMessages: d
