@@ -1,6 +1,6 @@
 /**
   Module ID: 9268
-  Original File Name: 1384f690ed5502fc
+  Original File Name: 0f78b82b8a1d9504
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -9545,19 +9545,84 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
 }
 
 @container premium-marketing-home-container (max-width: 720px) {
-    .header__61e0e {
+    .header__61e0e.responsive__61e0e {
         font-size: 42px;
         letter-spacing: -.84px;
         line-height: 90%
     }
 }
 
+.boltContainer__2cd1f,.carContainer__2cd1f,.hammerContainer__2cd1f,.keyContainer__2cd1f,.starContainer__2cd1f {
+    pointer-events: none
+}
+
+.carContainer__2cd1f,.hammerContainer__2cd1f {
+    z-index: -1
+}
+
+@container premium-marketing-home-container (max-width: 720px) {
+    .boltTrinket__2cd1f,.carTrinket__2cd1f,.hammerTrinket__2cd1f,.keyTrinket__2cd1f,.starTrinket__2cd1f {
+        width: 60px
+    }
+}
+
+.jumpingWumpusContainer_dc510c {
+    left: 50%;
+    position: absolute;
+    top: -300px;
+    transform: translateX(-50%)
+}
+
+.jumpingWumpus_dc510c {
+    height: 283px
+}
+
+.bolt_dc510c,.car_dc510c,.hammer_dc510c,.key_dc510c,.star_dc510c {
+    position: absolute
+}
+
+.bolt_dc510c {
+    left: 0;
+    top: 200px
+}
+
+.car_dc510c {
+    right: 90px;
+    top: -80px
+}
+
+.hammer_dc510c {
+    left: -65px;
+    top: 40px
+}
+
+.key_dc510c {
+    right: 50px;
+    top: 185px
+}
+
+.star_dc510c {
+    left: 50px;
+    top: -200px
+}
+
+@container premium-marketing-home-container (max-width: 720px) {
+    .bolt_dc510c {
+        transform: translateY(75px)
+    }
+
+    .key_dc510c {
+        transform: translateY(125px)
+    }
+}
+
 .container__15b9a {
     align-items: center;
     display: flex;
-    height: 750px;
     justify-content: center;
-    margin-top: 82px;
+    margin-top: 100px;
+    min-height: 650px;
+    padding: 0 40px;
     position: relative
 }
 
@@ -9568,53 +9633,10 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
     z-index: 1
 }
 
-.jumpingWumpus__15b9a {
-    height: 283px;
-    left: 50%;
-    position: absolute;
-    top: -300px;
-    transform: translateX(-50%)
-}
-
-.footerFlag__15b9a {
-    height: 100px;
-    left: -20px;
-    position: absolute;
-    top: -115px;
-    transform: rotate(21.871deg);
-    width: 123px
-}
-
-.footerBattery__15b9a {
-    position: absolute;
-    right: -20px;
-    top: -145px;
-    transform: rotate(-27.323deg);
-    width: 134px
-}
-
-.footerBox__15b9a {
-    height: 150px;
-    left: 15px;
-    position: absolute;
-    top: 82px
-}
-
-.footerKey__15b9a {
-    height: 156px;
-    position: absolute;
-    right: 0;
-    top: 105px
-}
-
-.topLayer__15b9a {
-    z-index: 3
-}
-
-.bottomLayer__15b9a {
-    background-blend-mode: screen;
-    mix-blend-mode: screen;
-    z-index: 0
+@container premium-marketing-home-container (max-width: 960px) {
+    .container__15b9a {
+        min-height: 750px
+    }
 }
 
 .attributionBannerContainer_afe9b4 {
@@ -9723,7 +9745,7 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
     text-transform: capitalize
 }
 
-.flyingWumpusContainer__12720 {
+.flyingWumpusContainer__08987 {
     pointer-events: none;
     position: absolute;
     right: -125px;
@@ -9731,83 +9753,76 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
     z-index: 2
 }
 
-.flyingWumpusAsset__12720 {
+.flyingWumpusAsset__08987 {
     height: 293px
 }
 
-.boltContainer__12720,.carContainer__12720,.hammerContainer__12720,.keyContainer__12720,.starContainer__12720 {
-    pointer-events: none;
+.bolt__08987,.car__08987,.hammer__08987,.key__08987,.star__08987 {
     position: absolute
 }
 
-.boltContainer__12720 {
+.bolt__08987 {
     right: -250px;
     top: 115px
 }
 
-.carContainer__12720 {
+.car__08987 {
     left: 40px;
-    top: 270px;
-    z-index: -1
+    top: 270px
 }
 
-.hammerContainer__12720 {
+.hammer__08987 {
     right: 90px;
-    top: 60px;
-    z-index: -1
+    top: 60px
 }
 
-.keyContainer__12720 {
+.key__08987 {
     left: -70px;
     top: 350px
 }
 
-.starContainer__12720 {
+.star__08987 {
     left: -135px;
     top: 110px
 }
 
 @container premium-marketing-home-container (max-width: 960px) {
-    .flyingWumpusContainer__12720 {
+    .flyingWumpusContainer__08987 {
         right: -60px;
         top: 170px
     }
 
-    .boltContainer__12720 {
+    .flyingWumpusAsset__08987 {
+        height: 200px
+    }
+
+    .bolt__08987 {
         right: -100px;
         top: 325px
     }
 
-    .carContainer__12720,.keyContainer__12720,.starContainer__12720 {
+    .car__08987,.key__08987,.star__08987 {
         transform: translateX(30px) translateY(-50px)
-    }
-
-    .flyingWumpusAsset__12720 {
-        height: 200px
     }
 }
 
 @container premium-marketing-home-container (max-width: 720px) {
-    .boltTrinket__12720,.carTrinket__12720,.hammerTrinket__12720,.keyTrinket__12720,.starTrinket__12720 {
-        width: 60px
-    }
-
-    .keyContainer__12720,.starContainer__12720 {
-        transform: translateX(75px) translateY(-50px)
-    }
-
-    .flyingWumpusContainer__12720 {
+    .flyingWumpusContainer__08987 {
         right: -40px;
         top: 150px
     }
 
-    .flyingWumpusAsset__12720 {
+    .flyingWumpusAsset__08987 {
         height: 170px
+    }
+
+    .key__08987,.star__08987 {
+        transform: translateX(75px) translateY(-50px)
     }
 }
 
 @container premium-marketing-home-container (max-width: 540px) {
-    .flyingWumpusAsset__12720 {
+    .flyingWumpusAsset__08987 {
         height: 140px
     }
 }
@@ -19862,4 +19877,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=1384f690ed5502fc.css.map*/
+/*# sourceMappingURL=0f78b82b8a1d9504.css.map*/

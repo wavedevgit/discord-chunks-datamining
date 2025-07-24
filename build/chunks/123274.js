@@ -11,12 +11,13 @@ let o = e => {
   let {
     className: t,
     color: n = "header-primary",
-    children: r
+    responsive: r = !0,
+    children: o
   } = e;
   return (0, i.jsx)(a.X6q, {
-    className: s()(l.header, t),
+    className: s()(l.header, t, r && l.responsive),
     variant: "display-md",
     color: n,
-    children: r
+    children: o
   })
 }
