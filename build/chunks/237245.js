@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   w: () => E
@@ -23,9 +23,9 @@ var r = n(255367),
   v = n(386885),
   _ = n(981631),
   O = n(128449),
-  C = n(388032);
+  y = n(388032);
 
-function y(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -82,7 +82,7 @@ function I(e) {
         throwErr: !0
       })
     } catch (e) {
-      throw "object" == typeof e && "message" in e ? Z(e.message) : Z(C.intl.formatToPlainString(C.t.aTVNen, {
+      throw "object" == typeof e && "message" in e ? Z(e.message) : Z(y.intl.formatToPlainString(y.t.aTVNen, {
         statusPageURL: _.yXt.STATUS
       })), e
     }
@@ -95,7 +95,7 @@ function I(e) {
   }, [T]), U = i.useCallback(async (e, t, n) => {
     let r = t.length > 0 ? [{
       field_type: u.QJ.TERMS,
-      label: C.intl.string(C.t["9suSIC"]),
+      label: y.intl.string(y.t["9suSIC"]),
       values: t,
       required: !0
     }] : [];
@@ -152,7 +152,7 @@ function I(e) {
             preferredLocale: I.preferredLocale
           });
           try {
-            await (0, c.Vv)(y({
+            await (0, c.Vv)(C({
               guildId: I.id
             }, E))
           } catch (e) {
@@ -168,7 +168,7 @@ function I(e) {
           let {
             default: t
           } = await n.e("67376").then(n.bind(n, 207252));
-          return n => (0, r.jsx)(t, N(y({}, n), {
+          return n => (0, r.jsx)(t, N(C({}, n), {
             guildId: T,
             onConfirm: e
           }))
@@ -180,7 +180,7 @@ function I(e) {
           let {
             default: t
           } = await n.e("55009").then(n.bind(n, 185141));
-          return n => (0, r.jsx)(t, N(y({}, n), {
+          return n => (0, r.jsx)(t, N(C({}, n), {
             guildId: T,
             submittedGuildJoinRequestsCount: A,
             onConfirm: e
@@ -193,14 +193,14 @@ function I(e) {
         requireTerms: e,
         termRules: t = []
       } = l;
-      if (t.map(e => e.value.trim()).filter(e => "" !== e).length < 1 && e) return void Z(C.intl.string(C.t.TCHkcX))
+      if (t.map(e => e.value.trim()).filter(e => "" !== e).length < 1 && e) return void Z(y.intl.string(y.t.TCHkcX))
     }
-    if (l.joinType === j.A.APPLY && !(null == (e = l.pendingVerificationFields) ? void 0 : e.some(e => (0, m._C)(e)))) return void Z(C.intl.string(C.t.HGVrIy));
+    if (l.joinType === j.A.APPLY && !(null == (e = l.pendingVerificationFields) ? void 0 : e.some(e => (0, m._C)(e)))) return void Z(y.intl.string(y.t.HGVrIy));
     i(e => t(() => B(e)))
   }, [D, B, l, T, A]), H = l.joinType === j.A.DISCOVERABLE && l.settingsView === v.U.ELIGIBLE_DISABLED, z = null != I.description && E.primaryCategoryId !== O.o3 && E.keywords.length > 0;
   return (0, r.jsx)(a.Z, {
-    message: H ? C.intl.string(C.t.V2G2Ym) : void 0,
-    onSaveText: H ? C.intl.string(C.t["qjtt/v"]) : void 0,
+    message: H ? y.intl.string(y.t.V2G2Ym) : void 0,
+    onSaveText: H ? y.intl.string(y.t["qjtt/v"]) : void 0,
     submitting: P,
     errorMessage: R,
     onReset: L,
@@ -236,7 +236,7 @@ function E() {
     }
   });
   return null == e || null == n ? null : e.joinType === j.A.DISCOVERABLE && e.settingsView === v.U.INELIGIBLE ? (0, r.jsx)(a.Z, {
-    message: C.intl.string(C.t.TEXwRk),
+    message: y.intl.string(y.t.TEXwRk),
     onReset: () => f.Z.init(n.id, _.pNK.ACCESS)
   }) : (0, r.jsx)(I, {
     pendingState: e,

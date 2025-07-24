@@ -105,7 +105,7 @@ class j extends g.Z {
     this._socket = e
   }
 }
-class A extends g.Z {
+class x extends g.Z {
   send(e) {
     (u.default.isLoggingOverlayEvents || e.cmd !== _.Etm.OVERLAY) && I.info("Socket Emit: ".concat(this.id), e), this._sendCallback(e)
   }
@@ -119,7 +119,7 @@ class A extends g.Z {
     this._sendCallback = e, this._closeCallback = t
   }
 }
-class x extends l.EventEmitter {
+class A extends l.EventEmitter {
   handleRequest(e, t) {
     let [n, r] = S(e.url).split("?"), i = S(e.method);
     if ("/rpc" === n && "OPTIONS" === i) return void T(e, t, {
@@ -137,7 +137,7 @@ class x extends l.EventEmitter {
           } = null != (r = d.Z.toURLSafe(null != (e = n.get("callback")) ? e : "")) ? r : {};
           i === location.protocol && l === location.host ? t.setHeader("Location", n.get("callback")) : t.setHeader("Location", v), t.writeHead(301), t.end()
         },
-        s = new A(!l ? o : T.bind(null, e, t), !l ? o : P.bind(null, e, t, 400), Number(n.get("v")), i);
+        s = new x(!l ? o : T.bind(null, e, t), !l ? o : P.bind(null, e, t, 400), Number(n.get("v")), i);
       if (l)(0, m.em)(s, S(e.headers).origin, n.get("client_id")).then(() => {
         let n = "";
         e.on("data", e => n += e), e.on("error", () => P(e, t, 500, "Internal Server Error")), e.on("end", () => this.handleMessage(s, n))
@@ -203,4 +203,4 @@ class x extends l.EventEmitter {
     new y.ws.Server(n).on("connection", e => this.handleConnection(e))
   }
 }
-let Z = new x
+let Z = new A

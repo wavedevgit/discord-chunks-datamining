@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   Z: () => m
@@ -42,10 +42,10 @@ function m(e) {
     } catch (t) {
       null != e && b(e)
     }
-  }, C = d.intl.string(d.t["ETE/oK"]), y = !p && j ? d.intl.formatToPlainString(d.t.nula39, {
+  }, y = d.intl.string(d.t["ETE/oK"]), C = !p && j ? d.intl.formatToPlainString(d.t.nula39, {
     ruleName: null == f ? void 0 : f.name
   }) : void 0;
-  return null != h && (y = (0, r.jsx)(l.Text, {
+  return null != h && (C = (0, r.jsx)(l.Text, {
     variant: "text-md/normal",
     color: "text-danger",
     className: u.message,
@@ -59,8 +59,8 @@ function m(e) {
         disabled: g,
         onSave: O,
         onReset: m,
-        onResetText: C,
-        message: y
+        onResetText: y,
+        message: C
       })
     })
   })

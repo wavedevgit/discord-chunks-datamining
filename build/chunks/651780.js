@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   Z: () => w
@@ -23,8 +23,8 @@ var r = n(255367),
   v = n(899667),
   _ = n(626135),
   O = n(267642),
-  C = n(63063),
-  y = n(999382),
+  y = n(63063),
+  C = n(999382),
   N = n(981631),
   I = n(388032),
   E = n(351325);
@@ -94,7 +94,7 @@ function w() {
       (0, o.tZ)(), (0, d.Y2)()
     })
   }, []);
-  let e = (0, l.e7)([y.Z], () => y.Z.getGuild()),
+  let e = (0, l.e7)([C.Z], () => C.Z.getGuild()),
     t = (0, l.e7)([v.Z], () => null != e ? v.Z.getAppliedGuildBoostsForGuild(e.id) : null),
     n = (0, g.V)();
   return (0, r.jsxs)(r.Fragment, {
@@ -109,7 +109,7 @@ function w() {
         type: s.R94.Types.DESCRIPTION,
         className: E.titleBlurb,
         children: I.intl.format(I.t.hLOkp6, {
-          helpdeskArticle: C.Z.getArticleURL(N.BhN.GUILD_SUBSCRIPTIONS)
+          helpdeskArticle: y.Z.getArticleURL(N.BhN.GUILD_SUBSCRIPTIONS)
         })
       })]
     }), null != e && (0, r.jsx)(x.Z, {

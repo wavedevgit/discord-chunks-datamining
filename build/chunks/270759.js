@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => x
+  Z: () => A
 }), n(65234), n(111804), n(490233), n(97749), n(388685), n(35282), n(704826);
 var r = n(255367),
   i = n(73800),
@@ -30,7 +30,7 @@ var r = n(255367),
   P = n(388032),
   j = n(610725);
 
-function A() {
+function x() {
   return (0, r.jsx)("div", {
     className: j.inviteToolbar,
     children: (0, r.jsx)(_.Z, {
@@ -39,7 +39,7 @@ function A() {
     })
   })
 }
-let x = function(e) {
+let A = function(e) {
   let {
     initialSection: t
   } = e, n = (0, o.TH)(), l = (0, o.k6)();
@@ -54,7 +54,7 @@ let x = function(e) {
     p.Y(N.Z5c.FRIENDS), (0, E.e)("friends")
   }, []);
   let _ = (0, c.e7)([y.Z], () => y.Z.theme),
-    x = (0, I.If)(),
+    A = (0, I.If)(),
     {
       section: Z,
       rows: w
@@ -85,13 +85,13 @@ let x = function(e) {
       id: N.pJs.PENDING,
       show: w.filter(N.pJs.PENDING).length > 0,
       content: (0, r.jsxs)(r.Fragment, {
-        children: [P.intl.string(P.t.p6IHGB), x > 0 && (0, r.jsx)(u.mAB, {
-          count: x,
+        children: [P.intl.string(P.t.p6IHGB), A > 0 && (0, r.jsx)(u.mAB, {
+          count: A,
           className: j.badge
         })]
       }),
       ariaLabel: P.intl.formatToPlainString(P.t.OAC0Z2, {
-        count: x.toString()
+        count: A.toString()
       }),
       className: j.item
     }, {
@@ -125,7 +125,7 @@ let x = function(e) {
       theme: _,
       children: e => (0, r.jsxs)(b.Z, {
         className: e,
-        toolbar: (0, r.jsx)(A, {}),
+        toolbar: (0, r.jsx)(x, {}),
         scrollable: s.tq,
         role: "navigation",
         "aria-labelledby": k,

@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   p: () => j,
@@ -35,11 +35,11 @@ function b(e) {
     disabled: j = !1
   } = e, v = i.useRef(null), _ = i.useRef(null), {
     drag: O,
-    dragPreview: C,
-    drop: y,
+    dragPreview: y,
+    drop: C,
     isDragging: N
   } = (0, f.Z)(v, d, u, b);
-  return O(_), C(y(v)), (0, r.jsxs)("div", {
+  return O(_), y(C(v)), (0, r.jsxs)("div", {
     ref: v,
     className: s()(x.card, {
       [x.cardDragging]: N,

@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   Z: () => h
@@ -79,8 +79,8 @@ function h(e) {
     maxTags: x
   } = e, b = i.useRef(null), j = i.useRef(null), v = i.useRef(null), _ = (0, m.V)(n), {
     handlePasteEvent: O,
-    handleInputChange: C,
-    handleKeyDown: y,
+    handleInputChange: y,
+    handleKeyDown: C,
     handleContainerKeyUp: N,
     handleRemoveTag: I,
     handleTagChangeEvent: E,
@@ -150,8 +150,8 @@ function h(e) {
           [g.isEditingOtherNodes]: k
         }),
         ref: b,
-        onChange: C,
-        onKeyDownCapture: y,
+        onChange: y,
+        onKeyDownCapture: C,
         onPaste: O,
         onBlur: w,
         placeholder: 0 === Z.length ? p : void 0,

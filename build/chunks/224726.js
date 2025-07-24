@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   Z: () => E
@@ -23,8 +23,8 @@ var r = n(255367),
   v = n(343397),
   _ = n(509798),
   O = n(75733),
-  C = n(474024),
-  y = n(981631),
+  y = n(474024),
+  C = n(981631),
   N = n(388032),
   I = n(83951);
 let E = function() {
@@ -33,7 +33,7 @@ let E = function() {
   } = (0, c.ZP)(o.Z.GUILD_SETTINGS_PROFILE_PAGE), t = (0, l.e7)([f.Z], () => f.Z.getGuild(), []), n = null == t ? void 0 : t.id, {
     fetchGuildProfile: E,
     fetchStatus: S
-  } = (0, u.u)(null == t ? void 0 : t.id), T = (0, l.e7)([f.Z], () => f.Z.getGuildProfile(), []), P = (0, l.e7)([g.Z], () => g.Z.can(y.Plq.MANAGE_GUILD, t)), w = i.useCallback(e => {
+  } = (0, u.u)(null == t ? void 0 : t.id), T = (0, l.e7)([f.Z], () => f.Z.getGuildProfile(), []), P = (0, l.e7)([g.Z], () => g.Z.can(C.Plq.MANAGE_GUILD, t)), w = i.useCallback(e => {
     null != n && (p.Z.updateGuild({
       icon: e
     }), p.Z.updateGuildProfile(n, {
@@ -106,7 +106,7 @@ let E = function() {
           canManageGuild: P
         }), (0, r.jsx)("div", {
           className: I.divider
-        }), (0, r.jsx)(C.Z, {
+        }), (0, r.jsx)(y.Z, {
           profile: T,
           canManageGuild: P
         })]

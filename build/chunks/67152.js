@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   ZP: () => D,
@@ -27,7 +27,7 @@ var r = n(255367),
   _ = n(388032),
   O = n(769570);
 
-function C(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -45,7 +45,7 @@ function C(e) {
   }
   return e
 }
-let y = (e, t, n, i) => {
+let C = (e, t, n, i) => {
     let l = null != i ? o()(i).add(15, "days").toISOString() : void 0,
       s = (0, f.Zo)(l, "MMM D");
     switch (e) {
@@ -180,7 +180,7 @@ let y = (e, t, n, i) => {
   w = () => {
     let e = (0, r.jsx)(d.ua7, {
       text: _.intl.string(_.t.q3PkLy),
-      children: e => (0, r.jsx)(d.d3s, C({
+      children: e => (0, r.jsx)(d.d3s, y({
         size: "xs",
         color: "currentColor",
         className: O.amountDisclaimer
@@ -193,7 +193,7 @@ let y = (e, t, n, i) => {
   R = () => {
     let e = (0, r.jsx)(d.ua7, {
       text: _.intl.string(_.t.cIGvZG),
-      children: e => (0, r.jsx)(d.d3s, C({
+      children: e => (0, r.jsx)(d.d3s, y({
         size: "xs",
         color: "currentColor",
         className: O.statusDisclaimer
@@ -271,7 +271,7 @@ let y = (e, t, n, i) => {
         periodEndDate: l
       } = (0, m.j0)(e);
       return (0, r.jsx)(E, {
-        children: y(t, n, i, l)
+        children: C(t, n, i, l)
       })
     }
   }],

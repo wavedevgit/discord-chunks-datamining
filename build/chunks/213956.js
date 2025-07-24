@@ -1,7 +1,7 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
-  Z: () => C
+  Z: () => y
 });
 var r = n(255367),
   i = n(73800),
@@ -24,17 +24,17 @@ var r = n(255367),
   _ = n(388032),
   O = n(296205);
 
-function C() {
+function y() {
   let e, t = (0, l.e7)([g.Z], () => g.Z.getGuildId()),
     n = (0, l.e7)([m.Z], () => m.Z.getGuild(t)),
-    C = (0, l.e7)([f.Z], () => f.Z.getCurrentPage());
+    y = (0, l.e7)([f.Z], () => f.Z.getCurrentPage());
   if (i.useEffect(() => {
       (0, c.Q3)(s.z.COMMUNITY_GUILD_SETTINGS_SAFETY, {
         dismissAction: v.L.AUTO
       })
     }, []), null == n) return null;
-  let y = (0, j.Q)(n);
-  switch (C) {
+  let C = (0, j.Q)(n);
+  switch (y) {
     case h.u.OVERVIEW:
       e = (0, r.jsx)(x.Z, {
         guild: n
@@ -43,13 +43,13 @@ function C() {
     case h.u.CAPTCHA_AND_RAID_PROTECTION:
       e = (0, r.jsx)(b.Z, {
         title: _.intl.string(_.t["53eF5u"]),
-        settings: y[h.u.CAPTCHA_AND_RAID_PROTECTION]
+        settings: C[h.u.CAPTCHA_AND_RAID_PROTECTION]
       });
       break;
     case h.u.DM_AND_SPAM_PROTECTION:
       e = (0, r.jsx)(b.Z, {
         title: _.intl.string(_.t.O0SfFx),
-        settings: y[h.u.DM_AND_SPAM_PROTECTION]
+        settings: C[h.u.DM_AND_SPAM_PROTECTION]
       });
       break;
     case h.u.AUTOMOD:
@@ -60,11 +60,11 @@ function C() {
     case h.u.PERMISSIONS:
       e = (0, r.jsx)(b.Z, {
         title: _.intl.string(_.t.BXoNiY),
-        settings: y[h.u.PERMISSIONS]
+        settings: C[h.u.PERMISSIONS]
       })
   }
   return (0, r.jsxs)(r.Fragment, {
-    children: [C !== h.u.OVERVIEW && (0, r.jsxs)(a.zx, {
+    children: [y !== h.u.OVERVIEW && (0, r.jsxs)(a.zx, {
       className: O.back,
       innerClassName: O.backButton,
       look: a.zx.Looks.BLANK,

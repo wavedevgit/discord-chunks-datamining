@@ -1,7 +1,7 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
-  Z: () => y
+  Z: () => C
 }), n(539854), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -80,7 +80,7 @@ function O(e) {
   })
 }
 
-function C(e) {
+function y(e) {
   let {
     value: t
   } = e;
@@ -89,7 +89,7 @@ function C(e) {
   }) : (0, r.jsx)(_, {})
 }
 
-function y(e) {
+function C(e) {
   let {
     guildId: t,
     value: l,
@@ -97,7 +97,7 @@ function y(e) {
     omitChannelIds: d,
     "aria-labelledby": b,
     onChange: v
-  } = e, _ = x.intl.string(x.t.d7YJMD), O = (0, a.e7)([m.Z], () => m.Z.getCategories(t), [t]), y = (0, f.m7)(null != l ? l : h.lds), N = i.useMemo(() => {
+  } = e, _ = x.intl.string(x.t.d7YJMD), O = (0, a.e7)([m.Z], () => m.Z.getCategories(t), [t]), C = (0, f.m7)(null != l ? l : h.lds), N = i.useMemo(() => {
     let e = [{
         value: null,
         label: _
@@ -111,11 +111,11 @@ function y(e) {
         value: r.id,
         label: (0, c.F6)(r, p.default, g.Z)
       })));
-    return null == l || t || null == y || e.push({
+    return null == l || t || null == C || e.push({
       value: l,
-      label: y.name
+      label: C.name
     }), e
-  }, [_, l, y, O, d, s]);
+  }, [_, l, C, O, d, s]);
   return (0, r.jsx)(o.PhF, {
     placeholder: x.intl.string(x.t.r2pts7),
     options: N,
@@ -161,10 +161,10 @@ function y(e) {
     },
     isSelected: e => null != l && j(e) === j(l),
     serialize: j,
-    renderOptionLabel: C,
+    renderOptionLabel: y,
     renderOptionValue: e => {
       let [t] = e;
-      return C(t)
+      return y(t)
     },
     "aria-labelledby": b
   })

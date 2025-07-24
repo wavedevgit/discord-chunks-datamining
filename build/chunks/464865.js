@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   V: () => b
@@ -27,17 +27,17 @@ function b(e) {
     vanityURLUses: v,
     originalVanityURLCode: _,
     errorDetails: O,
-    fetched: C
+    fetched: y
   } = (0, l.cj)([m.Z], () => ({
     vanityURLCode: m.Z.vanityURLCode,
     vanityURLUses: m.Z.vanityURLUses,
     originalVanityURLCode: m.Z.originalVanityURLCode,
     errorDetails: m.Z.errorDetails,
     fetched: m.Z.fetchedVanityURL
-  })), y = null == t ? void 0 : t.id;
+  })), C = null == t ? void 0 : t.id;
   return (i.useEffect(() => {
-    null == y || C || (0, u.U5)(y)
-  }, [C, y]), null == t) ? null : b ? (0, r.jsx)(a.Z, {}) : (0, r.jsxs)(s.hjN, {
+    null == C || y || (0, u.U5)(C)
+  }, [y, C]), null == t) ? null : b ? (0, r.jsx)(a.Z, {}) : (0, r.jsxs)(s.hjN, {
     children: [(0, r.jsxs)(s.vwX, {
       className: x.title,
       children: [h.intl.string(h.t["5XZKy8"]), (0, r.jsx)(g.xl, {

@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   Z: () => m
@@ -40,7 +40,7 @@ let m = e => {
       }
       return i
     }(e, ["className", "tags", "value", "onRemoveTag", "onAddTag", "onAddTagError", "maxTaxLength", "maxTags", "disabled", "placeholder"]);
-  let [O, C] = i.useState(null != g ? g : ""), y = m.map((e, t) => (0, r.jsxs)("span", {
+  let [O, y] = i.useState(null != g ? g : ""), C = m.map((e, t) => (0, r.jsxs)("span", {
     className: u.tag,
     children: [e, !j && (0, r.jsx)(o.P3F, {
       className: u.closeWrapper,
@@ -58,7 +58,7 @@ let m = e => {
         null == h || h(d.intl.string(d.t.Xx7XeH));
         return
       }
-      f(e), C("")
+      f(e), y("")
     }
   }, [O, b, f, h, m.length]), I = i.useCallback(e => {
     switch (e.keyCode) {
@@ -75,7 +75,7 @@ let m = e => {
     className: s()(l, u.inputWrapper, {
       [u.disabled]: j
     }),
-    children: [y, (0, r.jsx)(a.Is, (t = function(e) {
+    children: [C, (0, r.jsx)(a.Is, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -98,7 +98,7 @@ let m = e => {
     }, _), n = n = {
       value: O,
       onKeyDown: I,
-      onChange: C,
+      onChange: y,
       maxLength: x,
       disabled: j,
       onBlur: N,

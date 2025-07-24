@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   Z: () => k
@@ -23,8 +23,8 @@ var r = n(255367),
   v = n(626135),
   _ = n(136015),
   O = n(51144),
-  C = n(434404),
-  y = n(999382),
+  y = n(434404),
+  C = n(999382),
   N = n(84613),
   I = n(740903),
   E = n(981631),
@@ -78,7 +78,7 @@ function Z(e) {
   } = e, [g, h] = i.useState(!1), [x, b] = i.useState(null), {
     analyticsLocations: j
   } = (0, f.ZP)(), _ = null != (t = null == j ? void 0 : j[0]) ? t : null;
-  async function C() {
+  async function y() {
     if (null != l) {
       b(null), h(!0);
       try {
@@ -137,7 +137,7 @@ function Z(e) {
         }), (0, r.jsx)(o.zxk, {
           variant: "critical-secondary",
           text: S.intl.string(S.t.UPcIa2),
-          onClick: C,
+          onClick: y,
           loading: g
         })]
       })
@@ -241,20 +241,20 @@ function L(e) {
     guildId: t,
     storedSearchQuery: n
   } = e, [l, s] = i.useState(null != n ? n : ""), [a, c] = i.useState(!1), u = i.useCallback(() => {
-    C.Z.setSection(E.pNK.SAFETY), (0, N.K)(I.u.DM_AND_SPAM_PROTECTION)
+    y.Z.setSection(E.pNK.SAFETY), (0, N.K)(I.u.DM_AND_SPAM_PROTECTION)
   }, []), m = i.useCallback(e => {
-    s(e), 0 === e.trim().length && C.Z.setSearchQuery(e)
+    s(e), 0 === e.trim().length && y.Z.setSearchQuery(e)
   }, []), g = i.useCallback(() => {
-    s(""), C.Z.setSearchQuery("")
+    s(""), y.Z.setSearchQuery("")
   }, []), p = i.useCallback(async () => {
     if (0 === l.trim().length) {
-      C.Z.setSearchQuery(l), c(!1);
+      y.Z.setSearchQuery(l), c(!1);
       return
     }
     if (!a) try {
       c(!0);
       let [e, n] = (0, x.C)(l), r = e[0];
-      C.Z.setSearchQuery(l), await d.Z.searchGuildBans(t, r, n), c(!1)
+      y.Z.setSearchQuery(l), await d.Z.searchGuildBans(t, r, n), c(!1)
     } catch (e) {
       c(!1)
     }
@@ -306,7 +306,7 @@ function k() {
   let {
     guild: c,
     searchQuery: u
-  } = (0, a.e7)([y.Z], () => y.Z.getProps(), [], l.isEqual), p = null != u && u.trim().length > 0, f = (0, m.Z)(p), h = p !== f, [b] = (0, a.e7)([y.Z], () => y.Z.getBans(), [], _.Q), v = null != (e = null == b ? void 0 : b.size) ? e : 0, O = (0, g.ZP)(), C = null != (t = null == c ? void 0 : c.id) ? t : E.lds, N = i.useRef(null), I = i.useCallback(e => null == e || 0 === e.length ? e => null != e : t => {
+  } = (0, a.e7)([C.Z], () => C.Z.getProps(), [], l.isEqual), p = null != u && u.trim().length > 0, f = (0, m.Z)(p), h = p !== f, [b] = (0, a.e7)([C.Z], () => C.Z.getBans(), [], _.Q), v = null != (e = null == b ? void 0 : b.size) ? e : 0, O = (0, g.ZP)(), y = null != (t = null == c ? void 0 : c.id) ? t : E.lds, N = i.useRef(null), I = i.useCallback(e => null == e || 0 === e.length ? e => null != e : t => {
     if (null == t || 0 === e.trim().length) return !1;
     let [
       [n], r
@@ -330,8 +330,8 @@ function k() {
     }))
   }, [h, G.currentPage]);
   let B = i.useCallback(e => {
-      d.Z.fetchGuildBansBatch(C, 1e3, e)
-    }, [C]),
+      d.Z.fetchGuildBansBatch(y, 1e3, e)
+    }, [y]),
     F = i.useMemo(() => s().chunk(Z, G.pageSize), [G.pageSize, Z]),
     H = i.useCallback(e => {
       var t, n, r;
@@ -350,7 +350,7 @@ function k() {
   return null == c ? null : (0, r.jsxs)("div", {
     className: T.container,
     children: [(0, r.jsx)(L, {
-      guildId: C,
+      guildId: y,
       storedSearchQuery: u
     }), (0, r.jsxs)("div", {
       className: T.scrollerContainer,

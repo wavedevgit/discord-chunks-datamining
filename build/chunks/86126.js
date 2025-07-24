@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   Z: () => b
@@ -27,10 +27,10 @@ function b(e) {
     editStateId: b,
     guildId: j,
     groupListingId: v
-  } = (0, m.N)(), _ = (0, a.e7)([u.Z], () => u.Z.getSubscriptionListing(b)), O = null == _ ? void 0 : _.id, C = (0, g.Z)(j), y = i.useMemo(() => {
+  } = (0, m.N)(), _ = (0, a.e7)([u.Z], () => u.Z.getSubscriptionListing(b)), O = null == _ ? void 0 : _.id, y = (0, g.Z)(j), C = i.useMemo(() => {
     var e;
-    return null != C && null != _ && (null != (e = C[_.role_id]) ? e : 0)
-  }, [C, _]), N = 0 === y, I = null == O, E = null != (t = null == _ ? void 0 : _.archived) && t, {
+    return null != y && null != _ && (null != (e = y[_.role_id]) ? e : 0)
+  }, [y, _]), N = 0 === C, I = null == O, E = null != (t = null == _ ? void 0 : _.archived) && t, {
     error: S,
     deleteSubscriptionListing: T,
     submitting: P
@@ -65,7 +65,7 @@ function b(e) {
             variant: "text-sm/normal",
             className: x.warning,
             children: f.intl.formatToPlainString(f.t.ABeonZ, {
-              listingMemberCount: y
+              listingMemberCount: C
             })
           }), (0, r.jsx)(o.zxk, {
             variant: "critical-primary",

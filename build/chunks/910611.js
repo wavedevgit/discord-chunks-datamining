@@ -288,18 +288,19 @@ function L(e) {
   }
 }
 let U = e => {
+  var t, n, l;
   let {
-    channel: t
-  } = e, n = (0, o.e7)([v.default], () => v.default.getCurrentUser()), l = (0, o.e7)([v.default], () => v.default.getUser(t.getRecipientId())), a = (0, E.G)(), s = (0, o.e7)([_.Z], () => null != l && void 0 !== _.Z.getUserProfile(l.id));
+    channel: a
+  } = e, s = (0, o.e7)([v.default], () => v.default.getCurrentUser()), c = (0, o.e7)([v.default], () => v.default.getUser(a.getRecipientId())), u = (0, E.G)(), p = (0, o.e7)([_.Z], () => null != c ? _.Z.getUserProfile(c.id) : null), h = null != p && (null != (t = null == p ? void 0 : p.fetchEndedAt) ? t : 0) > 0;
   return (i.useEffect(() => {
-    (null == n ? void 0 : n.isStaff()) && null != l && !l.isStaff() && (0, y.Z)(l.id, l.getAvatarURL(void 0, 80), {
+    (null == s ? void 0 : s.isStaff()) && null != c && !c.isStaff() && (0, y.Z)(c.id, c.getAvatarURL(void 0, 80), {
       dispatchWait: !0,
       withMutualGuilds: !0,
       withMutualFriendsCount: !0
     })
-  }, [n, l]), t.isDM() && (null == n ? void 0 : n.isStaff()) && null != l) ? l.isStaff() ? (0, r.jsx)(d.Z, {
+  }, [s, c]), a.isDM() && (null == s ? void 0 : s.isStaff()) && null != c) ? c.isStaff() ? (0, r.jsx)(d.Z, {
     type: d.Z.Types.STAFF_ONLY_DM
-  }) : a && s ? (0, r.jsx)(d.Z, {
+  }) : u && h && !(null != (l = null == (n = p.badges) ? void 0 : n.some(e => e.id.startsWith("staff"))) && l) ? (0, r.jsx)(d.Z, {
     type: d.Z.Types.NOT_STAFF_WARNING
   }) : null : null
 };

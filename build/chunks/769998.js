@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   Z: () => p
@@ -27,8 +27,8 @@ function p(e) {
   } = e, b = e => () => x(e), j = (0, o.c)(n.type, n, p), v = null == (t = n.metadata) ? void 0 : t.durationSeconds, _ = null != v ? (0, u.L9)(v) : null, O = (0, i.e7)([a.Z, s.Z], () => a.Z.can(d.Plq.MODERATE_MEMBERS, s.Z.getGuild(f)), [f]);
   if (null == j) return null;
   let {
-    headerText: C,
-    descriptionText: y,
+    headerText: y,
+    descriptionText: C,
     icon: N
   } = j;
   return (0, r.jsxs)("div", {
@@ -44,11 +44,11 @@ function p(e) {
       className: g.actionTextContainer,
       children: [(0, r.jsx)(l.X6q, {
         variant: "heading-sm/semibold",
-        children: C
+        children: y
       }), (0, r.jsx)(l.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
-        children: y
+        children: C
       }), h && (0, r.jsxs)(l.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",

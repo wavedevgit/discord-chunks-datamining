@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   t: () => w
@@ -23,8 +23,8 @@ var r = n(255367),
   v = n(430824),
   _ = n(594174),
   O = n(63063),
-  C = n(267101),
-  y = n(294294),
+  y = n(267101),
+  C = n(294294),
   N = n(310800),
   I = n(833695),
   E = n(981631),
@@ -38,7 +38,7 @@ function w(e) {
     hasValidApplication: n
   } = e, {
     listingsLoaded: w
-  } = (0, C.eD)(t), R = (0, s.e7)([v.Z], () => v.Z.getGuild(t)), Z = (0, s.e7)([_.default], () => _.default.getCurrentUser()), D = null != R && (0, b.eM)(R, Z), {
+  } = (0, y.eD)(t), R = (0, s.e7)([v.Z], () => v.Z.getGuild(t)), Z = (0, s.e7)([_.default], () => _.default.getCurrentUser()), D = null != R && (0, b.eM)(R, Z), {
     loading: A
   } = (0, c.H)(t), [L, k] = i.useState(n ? "manage_listings" : "payment");
   (0, m.P)(R);
@@ -102,7 +102,7 @@ function w(e) {
         })
       }) : null]
     }),
-    B = (0, l.EQ)(L).with("basic_info", () => (0, r.jsx)(y.Z, {
+    B = (0, l.EQ)(L).with("basic_info", () => (0, r.jsx)(C.Z, {
       guildId: t
     })).with("manage_listings", () => (0, r.jsx)(N.Z, {
       guildId: t

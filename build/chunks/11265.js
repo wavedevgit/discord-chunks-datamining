@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   Z: () => m
@@ -24,12 +24,12 @@ let m = i.memo(function(e) {
     disableBackground: x
   } = e, [b, j] = i.useState(!0), [v, _] = i.useState(!1), {
     ref: O,
-    height: C = 0
+    height: y = 0
   } = (0, c.ZP)(), {
-    ref: y,
+    ref: C,
     height: N = 0
   } = (0, c.ZP)(), [I, E] = i.useState(g), S = (0, o.q_F)({
-    height: I ? N + C : C,
+    height: I ? N + y : y,
     config: (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -92,7 +92,7 @@ let m = i.memo(function(e) {
         "aria-label": d.intl.string(d.t.dcl9MT),
         children: l
       }), (0, r.jsx)("div", {
-        ref: y,
+        ref: C,
         children: m
       })]
     })

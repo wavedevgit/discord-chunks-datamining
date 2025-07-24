@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   Z: () => v
@@ -27,7 +27,7 @@ function v(e) {
   } = e, {
     editStateId: n,
     guildId: v
-  } = (0, o.N)(), [_, O] = c.UE(n), [C, y] = c.R7(n), N = i.useMemo(() => t.filter(e => e.id !== n), [t, n]), {
+  } = (0, o.N)(), [_, O] = c.UE(n), [y, C] = c.R7(n), N = i.useMemo(() => t.filter(e => e.id !== n), [t, n]), {
     isFullServerGating: I
   } = (0, d.Z)(v), E = (0, s.Dt)(), S = (0, a.mY)();
   return (0, r.jsxs)(u.Z, {
@@ -43,10 +43,10 @@ function v(e) {
         children: b.intl.string(b.t.kHalVF)
       }), (0, r.jsx)(m.Z, {
         channelBenefits: _,
-        intangibleBenefits: C,
+        intangibleBenefits: y,
         subscriptionListings: N,
         onImport: function(e, t) {
-          O(t => t.concat(e)), y(e => e.concat(t))
+          O(t => t.concat(e)), C(e => e.concat(t))
         }
       }), (0, r.jsx)(l.LZC, {
         size: 8

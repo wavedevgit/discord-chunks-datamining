@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   Z: () => h
@@ -82,7 +82,7 @@ function h(e) {
     v = j[u.u.CAPTCHA_AND_RAID_PROTECTION],
     _ = j[u.u.DM_AND_SPAM_PROTECTION],
     O = j[u.u.PERMISSIONS],
-    C = (0, o.pr)(t.id);
+    y = (0, o.pr)(t.id);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(l.X6q, {
       variant: "heading-lg/semibold",
@@ -111,7 +111,7 @@ function h(e) {
         page: u.u.DM_AND_SPAM_PROTECTION
       }), (0, r.jsx)("div", {
         className: p.divider
-      }), C && (0, r.jsxs)(r.Fragment, {
+      }), y && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(f, {
           icon: n(145136),
           title: g.intl.string(g.t.uRelg4),

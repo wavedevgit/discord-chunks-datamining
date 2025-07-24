@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   Z: () => f
@@ -24,7 +24,7 @@ function f(e) {
     options: x,
     className: b,
     onChange: j
-  } = e, [v, _] = i.useState(h), [O, C] = i.useState(!1), [y, N] = i.useState(!1), I = i.useRef(null);
+  } = e, [v, _] = i.useState(h), [O, y] = i.useState(!1), [C, N] = i.useState(!1), I = i.useRef(null);
   i.useEffect(() => {
     _(h)
   }, [h]), i.useEffect(() => () => {
@@ -33,7 +33,7 @@ function f(e) {
   let E = x.find(e => e.value === v),
     S = e => {
       e.disabled || e.value === v || (N(!0), null == j || j(e), _(e.value), I.current = setTimeout(() => {
-        N(!1), C(!1)
+        N(!1), y(!1)
       }, 1e3))
     };
   return (0, r.jsx)(u.Z, {
@@ -46,7 +46,7 @@ function f(e) {
       color: a.zx.Colors.LINK,
       children: g.intl.string(g.t.GEgsAw)
     }),
-    loading: y,
+    loading: C,
     className: b,
     children: x.map((e, t) => (0, r.jsx)(m.Z, {
       title: e.title,

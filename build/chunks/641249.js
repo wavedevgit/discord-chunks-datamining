@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   Z: () => j
@@ -57,7 +57,7 @@ function j() {
     guildId: t
   } = (0, o.N)(), [j, v] = c.XZ(e, t), _ = (0, u.Z)(t, e), {
     setCurrentTab: O
-  } = (0, p.dw)(), C = () => O(p.ue.EMOJIS), y = (0, i.e7)([s.Z], () => s.Z.getGuild(t)), N = null != y ? (0, d.Z)(y) : void 0;
+  } = (0, p.dw)(), y = () => O(p.ue.EMOJIS), C = (0, i.e7)([s.Z], () => s.Z.getGuild(t)), N = null != C ? (0, d.Z)(C) : void 0;
 
   function I(e) {
     null == j ? v(new Set(e)) : v(new Set([...j, ...e]))
@@ -78,7 +78,7 @@ function j() {
       children: [f.intl.format(f.t.zuwel5, {
         premiumEmojiMaximum: N
       }), (0, r.jsx)("br", {}), f.intl.format(f.t.sEkgBg, {
-        handleTransitionToManageEmoji: C
+        handleTransitionToManageEmoji: y
       })]
     }), (0, r.jsx)(g.E, {
       tierEmojiIds: j,
@@ -108,7 +108,7 @@ function j() {
             initialTierEmojiIds: j,
             onSubmit: I,
             transitionToManageEmoji: () => {
-              C(), n.onClose()
+              y(), n.onClose()
             }
           }))
         })

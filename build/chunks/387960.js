@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   Z: () => j
@@ -25,7 +25,7 @@ let b = [],
     } = e, n = (0, s.e7)([d.Z], () => d.Z.getGuild(t)), j = (0, s.Wu)([g.Z], () => {
       var e, t;
       return null != (t = null == (e = g.Z.getSettings().resourceChannels) ? void 0 : e.map(e => e.channelId)) ? t : b
-    }), v = (0, s.Wu)([g.Z], () => g.Z.getDismissedSuggestedChannelIds(t)), _ = (0, s.e7)([c.ZP], () => c.ZP.getSelectableChannels(t)), O = i.useMemo(() => (0, l.chain)(_).filter(e => e.channel.type === f.d4z.GUILD_TEXT && e.channel.id !== (null == n ? void 0 : n.rulesChannelId) && !v.includes(e.channel.id) && !j.includes(e.channel.id) && u.Uu(f.Plq.VIEW_CHANNEL, e.channel) && !u.Uu(f.Plq.SEND_MESSAGES, e.channel)).take(5).value(), [_, v, null == n ? void 0 : n.rulesChannelId, j]), C = i.useCallback(() => {
+    }), v = (0, s.Wu)([g.Z], () => g.Z.getDismissedSuggestedChannelIds(t)), _ = (0, s.e7)([c.ZP], () => c.ZP.getSelectableChannels(t)), O = i.useMemo(() => (0, l.chain)(_).filter(e => e.channel.type === f.d4z.GUILD_TEXT && e.channel.id !== (null == n ? void 0 : n.rulesChannelId) && !v.includes(e.channel.id) && !j.includes(e.channel.id) && u.Uu(f.Plq.VIEW_CHANNEL, e.channel) && !u.Uu(f.Plq.SEND_MESSAGES, e.channel)).take(5).value(), [_, v, null == n ? void 0 : n.rulesChannelId, j]), y = i.useCallback(() => {
       let e = O.map(e => e.channel.id);
       (0, m.q6)(t, e)
     }, [t, O]);
@@ -43,7 +43,7 @@ let b = [],
             children: h.intl.string(h.t.YtNI8P)
           }), (0, r.jsxs)(a.P3F, {
             className: x.suggestedChannelsDismiss,
-            onClick: C,
+            onClick: y,
             children: [(0, r.jsx)(a.dz2, {
               size: "md",
               color: "currentColor",

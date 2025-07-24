@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   Z: () => b
@@ -36,10 +36,10 @@ function b(e) {
         visibility: v ? u.k.PUBLIC_WITH_RECRUITMENT : u.k.PUBLIC
       })
     }, [b, v, j]),
-    C = i.useCallback(() => {
+    y = i.useCallback(() => {
       g.Z.setSection(f.pNK.ACCESS, f.KsC.ACCESS_DISCOVERABLE)
     }, []),
-    y = null == (t = n.features) ? void 0 : t.includes(f.oNc.DISCOVERABLE);
+    C = null == (t = n.features) ? void 0 : t.includes(f.oNc.DISCOVERABLE);
   return (0, r.jsxs)(c.hjN, {
     className: x.twoColumnContainer,
     ref: _,
@@ -49,18 +49,18 @@ function b(e) {
         onChange: O,
         value: !j,
         hideBorder: !0,
-        disabled: y || !l,
+        disabled: C || !l,
         children: h.intl.string(h.t.fjHWen)
       }), (0, r.jsx)(c.Text, {
         variant: "text-sm/normal",
         color: "text-secondary",
         children: h.intl.string(h.t.J1YOV1)
-      }), y && (0, r.jsx)(c.Text, {
+      }), C && (0, r.jsx)(c.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
         children: h.intl.format(h.t.R8jY9v, {
           accessLink: (e, t) => (0, r.jsx)(c.eee, {
-            onClick: C,
+            onClick: y,
             children: e
           }, t)
         })

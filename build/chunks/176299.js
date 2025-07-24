@@ -29,8 +29,8 @@ var r = n(255367),
   T = n(267161),
   P = n(652515),
   j = n(544978),
-  A = n(540059),
-  x = n(591472),
+  x = n(540059),
+  A = n(591472),
   Z = n(351051),
   w = n(724383),
   L = n(135864),
@@ -84,7 +84,7 @@ var r = n(255367),
   eP = n(186901),
   ej = n(128654);
 
-function eA(e) {
+function ex(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -102,7 +102,7 @@ function eA(e) {
   }
   return e
 }
-let ex = (0, u.Un)({
+let eA = (0, u.Un)({
     createPromise: () => Promise.resolve().then(n.bind(n, 267161)),
     webpackId: 267161
   }),
@@ -250,7 +250,7 @@ let ex = (0, u.Un)({
       guildId: e
     }, e) : (0, r.jsx)(eE.Z, {})
   }),
-  eB = e => (0, r.jsx)(eU, eA({}, e)),
+  eB = e => (0, r.jsx)(eU, ex({}, e)),
   eV = () => (0, r.jsx)(w.Z, {}),
   eH = e => null != e.match.params.channelId ? eB(e) : (0, r.jsx)(X.Z, {}),
   eF = e => {
@@ -278,15 +278,15 @@ let ex = (0, u.Un)({
       let {
         tab: n
       } = (0, o.parse)(t.location.search);
-      return Object.values(eN.AW).includes(n) ? (0, r.jsx)(N.Z, eA({
+      return Object.values(eN.AW).includes(n) ? (0, r.jsx)(N.Z, ex({
         isFullScreen: e,
         tab: n
-      }, t)) : (0, r.jsx)(N.Z, eA({
+      }, t)) : (0, r.jsx)(N.Z, ex({
         isFullScreen: e
       }, t))
     }
   },
-  eq = e => (0, r.jsx)(y.Z, eA({}, e)),
+  eq = e => (0, r.jsx)(y.Z, ex({}, e)),
   eX = () => (0, r.jsx)($.Z, {}),
   eQ = () => (0, r.jsx)(W.Z, {}),
   eJ = () => (0, r.jsx)(J.Z, {}),
@@ -398,7 +398,7 @@ function e3(e) {
     location: u
   });
   let g = (0, p.e7)([I.Z], () => I.Z.isFullscreenInContext()),
-    O = (0, A.T)("ChannelSidebar"),
+    O = (0, x.T)("ChannelSidebar"),
     E = (0, T.useAppSidebarState)(e => !e.isOpen) && O;
   i.useLayoutEffect(() => {
     if (O) {
@@ -481,7 +481,7 @@ function e3(e) {
           className: ej.guilds,
           themeOverride: n
         }), !o && (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)("div", (t = eA({}, j), i = i = {
+          children: [(0, r.jsx)("div", (t = ex({}, j), i = i = {
             children: (0, r.jsx)(eG, {})
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
             var n = Object.keys(e);
@@ -542,10 +542,10 @@ function e8() {
     m = (null == g || null == (e = g.params) ? void 0 : e.channelId) === eS.oC.GUILD_ONBOARDING,
     b = l || a || o || u || m,
     _ = i.useCallback(() => Y.Z.openSidebar(), []),
-    O = (0, A.T)("AppView"),
+    O = (0, x.T)("AppView"),
     y = (0, T.useAppSidebarState)(e => !e.isOpen),
     C = (0, p.e7)([I.Z], () => I.Z.isFullscreenInContext()),
-    N = (0, p.e7)([x.Z], () => x.Z.isFrameActive());
+    N = (0, p.e7)([A.Z], () => A.Z.isFrameActive());
   return (0, r.jsx)("div", {
     className: ej.container,
     children: (0, r.jsx)(R.Z.Provider, {
@@ -553,7 +553,7 @@ function e8() {
       children: (0, r.jsxs)("div", {
         className: ej.base,
         "data-fullscreen": C,
-        children: [!C && (0, r.jsx)(ex, {}), d.tq ? null : (0, r.jsx)(eO.Z, {}), (0, r.jsxs)("div", {
+        children: [!C && (0, r.jsx)(eA, {}), d.tq ? null : (0, r.jsx)(eO.Z, {}), (0, r.jsxs)("div", {
           className: ej.content,
           children: [(0, r.jsx)(S.Z, {}), (0, r.jsx)(e3, {
             isOnFullScreenCollectiblesShopRoute: u,

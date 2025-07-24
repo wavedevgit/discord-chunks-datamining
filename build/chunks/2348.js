@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   Z: () => E
@@ -54,7 +54,7 @@ function O(e, t) {
   }), e
 }
 
-function C(e) {
+function y(e) {
   let {
     guild: t,
     channel: i
@@ -107,7 +107,7 @@ function C(e) {
     })]
   })
 }
-let y = i.memo(function() {
+let C = i.memo(function() {
     return (0, r.jsx)("div", {
       className: v.separator
     })
@@ -128,7 +128,7 @@ let y = i.memo(function() {
       category: i,
       guild: l,
       isFirstChannel: p,
-      isLastChannel: C,
+      isLastChannel: y,
       tooltipDirection: I = "right"
     } = e, E = (0, h.Mf)(t.id, i.id), S = (0, h.t4)(t.id, i.id), T = (0, h.EH)(t.id, i.id), P = (0, h.lL)(l.id, i.id), w = null != (0, x.Z)(l).find(e => e.id === t.id), R = (0, m.mn)(t.id), Z = e => {
       if (!S) return e.stopPropagation(), (0, u.s)(l.id, t.id) ? (0, f.pt)(t.id) : (0, o.ZDy)(async () => {
@@ -167,7 +167,7 @@ let y = i.memo(function() {
         children: e => (0, r.jsxs)(o.P3F, O(_({
           className: s()(v.channelRow, {
             [v.firstChannel]: p,
-            [v.lastChannel]: C,
+            [v.lastChannel]: y,
             [v.disabled]: S
           })
         }, e), {
@@ -219,7 +219,7 @@ let y = i.memo(function() {
             })
           })]
         }))
-      }), !C && (0, r.jsx)(y, {})]
+      }), !y && (0, r.jsx)(C, {})]
     })
   });
 
@@ -231,7 +231,7 @@ function E(e) {
     hasSidebar: s
   } = e, a = i.useCallback(e => {
     let i = t._categories[e];
-    return (0, r.jsx)(C, {
+    return (0, r.jsx)(y, {
       channel: i.channel,
       guild: n
     }, i.channel.id)

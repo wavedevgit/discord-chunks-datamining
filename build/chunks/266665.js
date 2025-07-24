@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   Z: () => D
@@ -23,8 +23,8 @@ var r = n(255367),
   v = n(496675),
   _ = n(671533),
   O = n(946724),
-  C = n(970129),
-  y = n(712181),
+  y = n(970129),
+  C = n(712181),
   N = n(420966),
   I = n(203377),
   E = n(981631),
@@ -75,10 +75,10 @@ function Z(e) {
       currentPosition: v,
       onDragStart: _,
       onDragReset: O,
-      onDragComplete: y,
+      onDragComplete: C,
       roleStyle: N
     } = e,
-    I = (0, C.T)(d, p, g),
+    I = (0, y.T)(d, p, g),
     S = (0, h.pM)(d.id, g.id),
     Z = null == I && !S,
     D = (null == (t = g.tags) ? void 0 : t.guild_connections) !== void 0,
@@ -93,7 +93,7 @@ function Z(e) {
       end: (e, t) => {
         let n = t.getDropResult();
         if (null == n) return void O();
-        y(n.roleId)
+        C(n.roleId)
       }
     }),
     [{
@@ -151,7 +151,7 @@ function Z(e) {
       var t;
       L(M(null != (t = null == e ? void 0 : e.ref) ? t : null))
     },
-    children: [l, null != I ? (0, r.jsx)(C.Z, {
+    children: [l, null != I ? (0, r.jsx)(y.Z, {
       className: T.lock,
       tooltipText: I
     }) : null, (0, r.jsx)(u.Text, {
@@ -171,12 +171,12 @@ function D(e) {
     setSelectedSection: a
   } = e, o = (0, d.e7)([O.Z], () => O.Z.roles), c = (0, d.e7)([v.Z], () => v.Z.getHighestRole(t)), m = (0, d.e7)([f.Z], () => f.Z.roleStyle), [h, x] = i.useState(o.length), {
     scrolledToTop: j,
-    handleScroll: C
+    handleScroll: y
   } = (0, N.V)(), {
     handleDragStart: E,
     handleDragReset: R,
     handleDragComplete: D
-  } = (0, y.Z)(o), A = i.useRef(null), L = i.useCallback(e => {
+  } = (0, C.Z)(o), A = i.useRef(null), L = i.useCallback(e => {
     var t, n;
     let r = o.findIndex(t => t.id === e);
     null == (n = A.current) || null == (t = n.getScrollerNode()) || t.scrollTo({
@@ -233,7 +233,7 @@ function D(e) {
       }), (0, r.jsx)(u.Den, {
         className: T.list,
         ref: A,
-        onScroll: C,
+        onScroll: y,
         children: (0, r.jsx)(u.njP, {
           selectedItem: n,
           onItemSelect: e => l(e),

@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   Z: () => b
@@ -58,11 +58,11 @@ let b = function(e) {
     onDragReset: _
   } = e, {
     title: O,
-    channelId: C,
-    description: y
-  } = l, N = d.Z.getChannel(C), I = null;
+    channelId: y,
+    description: C
+  } = l, N = d.Z.getChannel(y), I = null;
   null != N && (0, c.k3)(N) || (I = p.intl.string(p.t.kTdL8f));
-  let E = null == y || 0 === y.length,
+  let E = null == C || 0 === C.length,
     S = u.ZP.getResourceChannelIconURL({
       channelId: l.channelId,
       icon: l.icon
@@ -143,7 +143,7 @@ let b = function(e) {
           variant: "text-xs/medium",
           color: "text-muted",
           lineClamp: 1,
-          children: y
+          children: C
         })]
       }), (0, r.jsx)(a.ua7, {
         text: p.intl.string(p.t.bt75u7),

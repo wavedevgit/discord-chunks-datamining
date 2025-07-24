@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   Z: () => U
@@ -23,8 +23,8 @@ var r = n(255367),
   v = n(565138),
   _ = n(372769),
   O = n(690221),
-  C = n(524329),
-  y = n(575258),
+  y = n(524329),
+  C = n(575258),
   N = n(514698),
   I = n(592125),
   E = n(4912),
@@ -79,8 +79,8 @@ let M = "WELCOME_CHANNEL",
         isDropHovered: v,
         index: _
       } = e,
-      [O, C] = i.useState(!1),
-      y = i.useRef(null),
+      [O, y] = i.useState(!1),
+      C = i.useRef(null),
       S = (0, u.e7)([I.Z], () => I.Z.getChannel(o.channel_id)),
       P = (0, u.e7)([j.ZP], () => null != o.emoji_id ? j.ZP.getUsableCustomEmojiById(o.emoji_id) : null),
       w = null != S && T.Uu(R.Plq.VIEW_CHANNEL, S),
@@ -105,7 +105,7 @@ let M = "WELCOME_CHANNEL",
           h(e.channel, _, !0)
         }
       });
-    return i.useLayoutEffect(() => (B(F(y)), () => {
+    return i.useLayoutEffect(() => (B(F(C)), () => {
       B(null), F(null)
     }), [B, F]), l = w ? null != P || null != o.emoji_name ? (0, r.jsx)(p.Z, {
       emojiId: null == P ? void 0 : P.id,
@@ -123,7 +123,7 @@ let M = "WELCOME_CHANNEL",
       className: s()(A.welcomeChannel, {
         [A.dragging]: v
       }),
-      ref: y,
+      ref: C,
       "data-dnd-name": o.description,
       onContextMenu: e => {
         (0, g.jW)(e, async () => {
@@ -134,7 +134,7 @@ let M = "WELCOME_CHANNEL",
             guildId: a,
             welcomeChannel: o,
             onChannelReorder: h,
-            setShowConfirmModal: C,
+            setShowConfirmModal: y,
             onEdit: f,
             index: _
           }))
@@ -177,7 +177,7 @@ let M = "WELCOME_CHANNEL",
         })
       }), O && (0, r.jsx)(N.Z, {
         onConfirm: () => f(),
-        onCancel: () => C(!1),
+        onCancel: () => y(!1),
         channelId: o.channel_id
       })]
     })
@@ -189,40 +189,40 @@ let M = "WELCOME_CHANNEL",
     } = e, {
       welcomeSettings: s,
       originalWelcomeSettings: a
-    } = (0, u.e7)([y.Z], () => y.Z.getSettingsProps()), c = (0, u.e7)([h.Z], () => h.Z.useReducedMotion), [d, g] = i.useState(null), [p, x] = i.useState(!1), [b, j] = i.useState(!1), {
+    } = (0, u.e7)([C.Z], () => C.Z.getSettingsProps()), c = (0, u.e7)([h.Z], () => h.Z.useReducedMotion), [d, g] = i.useState(null), [p, x] = i.useState(!1), [b, j] = i.useState(!1), {
       description: N,
       channels: I,
       enabled: T
     } = s, M = () => {
-      null != t && N !== a.description && ((0, C.Es)(t.id, {
+      null != t && N !== a.description && ((0, y.Es)(t.id, {
         description: null == N ? void 0 : N.trim()
       }), x(!0))
     }, U = e => {
-      null != t && (o()(e, a.channels) || ((0, C.Es)(t.id, {
+      null != t && (o()(e, a.channels) || ((0, y.Es)(t.id, {
         channels: e
       }), x(!0)))
     }, B = e => {
-      null != t && e !== a.enabled && ((0, C.Es)(t.id, {
+      null != t && e !== a.enabled && ((0, y.Es)(t.id, {
         enabled: e
       }), j(!c), x(!0))
     }, F = e => {
       if (null == e) return;
       let t = [...null != I ? I : [], e];
-      (0, C.VP)({
+      (0, y.VP)({
         channels: t
       }), U(t)
     }, H = e => t => {
       let n = [...null != I ? I : []];
-      null == t ? n.splice(e, 1) : n[e] = t, (0, C.VP)({
+      null == t ? n.splice(e, 1) : n[e] = t, (0, y.VP)({
         channels: n
-      }), U(n), 0 === n.length && T && ((0, C.VP)({
+      }), U(n), 0 === n.length && T && ((0, y.VP)({
         enabled: !1
       }), B(!1))
     }, z = (e, t, n) => {
       if (null == I) return;
       let r = I.indexOf(e),
         i = [...I];
-      null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), (0, C.VP)({
+      null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), (0, y.VP)({
         channels: i
       })), n ? (U(i), g(null)) : g(t)
     }, W = i.useRef(!1);
@@ -254,7 +254,7 @@ let M = "WELCOME_CHANNEL",
           is_enabled: T
         })
       }
-    }, [p, I, N, T, t, W]), i.useEffect(() => () => (0, C.sm)(), []);
+    }, [p, I, N, T, t, W]), i.useEffect(() => () => (0, y.sm)(), []);
     let V = i.useCallback(() => {
       null != t && P.Z.open(t.id, R.pNK.ONBOARDING)
     }, [t]);
@@ -327,7 +327,7 @@ let M = "WELCOME_CHANNEL",
               className: A.descriptionInput,
               placeholder: D.intl.string(D.t.qzZHaW),
               onChange: e => {
-                (0, C.VP)({
+                (0, y.VP)({
                   description: e
                 })
               },

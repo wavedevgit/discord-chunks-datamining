@@ -1,7 +1,7 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
-  Z: () => C
+  Z: () => y
 });
 var r = n(255367);
 n(73800);
@@ -66,8 +66,8 @@ let O = e => {
     loading: m,
     team: g,
     currentPeriod: O,
-    allPeriods: C,
-    metrics: y
+    allPeriods: y,
+    metrics: C
   } = (0, d.Z)(a, o), N = (0, u.u)(a), I = (0, c.mY)();
   return m ? (0, r.jsx)(i.$jN, {}) : (0, r.jsxs)(r.Fragment, {
     children: [N && (0, r.jsxs)(r.Fragment, {
@@ -87,15 +87,15 @@ let O = e => {
         className: j.metricsContainer,
         children: [(0, r.jsx)(p.Z, {
           label: b.intl.string(b.t.iY1jW1),
-          value: (0, s.T4)(null != (t = y.revenue) ? t : 0, x.pKx.USD),
+          value: (0, s.T4)(null != (t = C.revenue) ? t : 0, x.pKx.USD),
           additionalContent: (0, r.jsx)(p.H, {
-            value: y.revenuePctChange,
+            value: C.revenuePctChange,
             isPercent: !0
           })
         }), (0, r.jsx)(p.Z, {
           label: b.intl.string(b.t.cXyw29),
           value: (0, r.jsxs)(r.Fragment, {
-            children: [null != (n = y.subscribers) ? n : "-", " ", (0, r.jsx)(i.tBG, {
+            children: [null != (n = C.subscribers) ? n : "-", " ", (0, r.jsx)(i.tBG, {
               size: "md",
               color: "currentColor",
               className: j.totalMembersIcon,
@@ -103,7 +103,7 @@ let O = e => {
             })]
           }),
           additionalContent: (0, r.jsx)(p.H, {
-            value: y.subscriberChange
+            value: C.subscriberChange
           })
         })]
       }), (0, r.jsx)(_, {
@@ -114,7 +114,7 @@ let O = e => {
       title: b.intl.string(b.t["+5Rmho"]),
       className: j.formSection,
       children: (0, r.jsx)(v, {
-        payoutsByPeriod: C,
+        payoutsByPeriod: y,
         team: g
       })
     }), (0, r.jsx)(i.hjN, {
@@ -130,13 +130,13 @@ let O = e => {
       className: j.formSection,
       children: (0, r.jsx)(h.Z, {
         guildId: a,
-        allPeriods: C
+        allPeriods: y
       })
     })]
   })
 };
 
-function C(e) {
+function y(e) {
   return (0, r.jsx)(a.l, {
     guildId: e.guildId,
     children: (0, r.jsx)(O, function(e) {

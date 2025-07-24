@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   Z: () => R
@@ -23,8 +23,8 @@ var r = n(255367),
   v = n(723047),
   _ = n(416867),
   O = n(903773),
-  C = n(215124),
-  y = n(326578),
+  y = n(215124),
+  C = n(326578),
   N = n(981631),
   I = n(674563),
   E = n(829857),
@@ -64,7 +64,7 @@ function w(e) {
     value: e.id
   })), [n]), x = async () => {
     await u(t, o, I.wW.GUILD_ROLE_SUBSCRIPTIONS) && (p(t.id), (0, _.B)({
-      Icon: y.Z,
+      Icon: C.Z,
       title: S.intl.string(S.t["AP/2qa"]),
       body: S.intl.string(S.t.kHMgaG)
     }))
@@ -102,10 +102,10 @@ let R = e => {
     loading: _
   } = (0, p.Z)({
     refreshOnDepChange: j
-  }), y = i.useMemo(() => v.filter(e => {
+  }), C = i.useMemo(() => v.filter(e => {
     var t;
     return e.payout_account_status !== E.C.BLOCKED && (0, g.Z)(null != (t = null == n ? void 0 : n.id) ? t : N.lds, e)
-  }), [v, n]), I = y.length > 0, R = i.useCallback(async () => {
+  }), [v, n]), I = C.length > 0, R = i.useCallback(async () => {
     b.default.track(N.rMx.GUILD_ROLE_SUBSCRIPTION_TEAM_SETUP_CLICKED, {
       is_onboarding_v2: d,
       has_eligible_team: I,
@@ -134,7 +134,7 @@ let R = e => {
         })
       }), I ? (0, r.jsx)(w, {
         guild: t,
-        eligibleTeams: y,
+        eligibleTeams: C,
         isGuildOwner: s
       }) : (0, r.jsx)(P, {
         onCreateTeamClick: R,
@@ -143,7 +143,7 @@ let R = e => {
     }), (0, r.jsx)(a.hjN, {
       title: S.intl.string(S.t["0n7R2d"]),
       className: T.selfDemonetization,
-      children: (0, r.jsx)(C.Z, {
+      children: (0, r.jsx)(y.Z, {
         guildId: t.id,
         allPeriods: []
       })

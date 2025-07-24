@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   Z: () => R
@@ -23,8 +23,8 @@ var r = n(255367),
   v = n(411198),
   _ = n(51144),
   O = n(426563),
-  C = n(909746),
-  y = n(501801),
+  y = n(909746),
+  C = n(501801),
   N = n(981631),
   I = n(388032),
   E = n(677234);
@@ -101,7 +101,7 @@ let w = i.forwardRef((e, t) => {
       let {
         changes: e
       } = l;
-      return (l.actionType !== N.vB8.DELETE || l.action === N.rsA.MEMBER_BAN_ADD || l.action === N.rsA.MEMBER_KICK || l.action === N.rsA.MEMBER_PRUNE) && null != e && e.some(e => !(0, y.xO)(l, e))
+      return (l.actionType !== N.vB8.DELETE || l.action === N.rsA.MEMBER_BAN_ADD || l.action === N.rsA.MEMBER_KICK || l.action === N.rsA.MEMBER_PRUNE) && null != e && e.some(e => !(0, C.xO)(l, e))
     }(),
     U = E.headerDefault;
   f ? U = E.headerExpanded : G && (U = E.headerClickable);
@@ -127,7 +127,7 @@ let w = i.forwardRef((e, t) => {
         "aria-expanded": f,
         onClick: H
       }, e), {
-        children: [(0, r.jsx)(y.mp, {
+        children: [(0, r.jsx)(C.mp, {
           action: l.action,
           actionType: l.actionType,
           targetType: l.targetType
@@ -182,7 +182,7 @@ let w = i.forwardRef((e, t) => {
                 options: i
               } = l;
               e = (0, v.lM)(n) ? n.name : n.toString();
-              let s = C.N5(l);
+              let s = y.N5(l);
               return null != s ? (0, r.jsx)("div", {
                 className: E.overflowEllipsis,
                 children: I.intl.format(s, {
@@ -226,7 +226,7 @@ let w = i.forwardRef((e, t) => {
         }) : null]
       })), f ? (0, r.jsx)("div", {
         className: E.divider
-      }) : null, f && null != w ? (0, r.jsx)(y.tP, {
+      }) : null, f && null != w ? (0, r.jsx)(C.tP, {
         log: l,
         guild: w,
         onContentClick: Z

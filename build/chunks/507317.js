@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   Z: () => v
@@ -80,7 +80,7 @@ let v = function(e) {
       guild: t,
       perks: (0, f.XO)()
     })
-  }, [t]), C = (0, r.jsx)(d.Z, {
+  }, [t]), y = (0, r.jsx)(d.Z, {
     image: t.homeHeader,
     makeURL: e => null != e ? m.ZP.getGuildHomeHeaderURL({
       id: t.id,
@@ -121,7 +121,7 @@ let v = function(e) {
           maxFileSizeBytes: x.B
         })]
       }), (0, r.jsx)("div", {
-        children: C
+        children: y
       })]
     })]
   }) : (0, r.jsxs)(r.Fragment, {
@@ -157,7 +157,7 @@ let v = function(e) {
           "aria-hidden": !0,
           tabIndex: -1,
           onClick: O,
-          children: C
+          children: y
         })
       })]
     })]

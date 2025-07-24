@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   Z: () => P
@@ -79,10 +79,10 @@ function O(e) {
     children: l
   })
 }
-let C = (e, t) => () => t(_(v({}, e), {
+let y = (e, t) => () => t(_(v({}, e), {
     enabled: !e.enabled
   })),
-  y = e => {
+  C = e => {
     e.stopPropagation(), e.preventDefault()
   },
   N = e => {
@@ -106,9 +106,9 @@ let C = (e, t) => () => t(_(v({}, e), {
     }(e, ["className", "children"]);
     return (0, r.jsx)(s.P3F, _(v({
       className: t,
-      onClick: y,
-      onMouseDown: y,
-      onMouseUp: y
+      onClick: C,
+      onMouseDown: C,
+      onMouseUp: C
     }, i), {
       children: n
     }))
@@ -120,8 +120,8 @@ function I(e) {
     rule: n,
     onChangeRule: i,
     onContextMenu: l
-  } = e, a = C(n, i), o = e => {
-    y(e), l(e)
+  } = e, a = y(n, i), o = e => {
+    C(e), l(e)
   };
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
@@ -172,7 +172,7 @@ function S(e) {
     saveRule: m
   } = (0, g.w)(), {
     updateRule: f
-  } = (0, u.pH)(t.guildId), [h, x] = i.useState(t.enabled), C = (0, l.throttle)(async (e, n) => {
+  } = (0, u.pH)(t.guildId), [h, x] = i.useState(t.enabled), y = (0, l.throttle)(async (e, n) => {
     if (n.preventDefault(), n.stopPropagation(), !c) {
       let e = _(v({}, t), {
         enabled: !h
@@ -182,7 +182,7 @@ function S(e) {
       null != n && (f(n), x(n.enabled))
     }
   }, 300), I = e => {
-    y(e), a(e)
+    C(e), a(e)
   };
   if (null == o) return null;
   let {
@@ -225,7 +225,7 @@ function S(e) {
       className: j.actionContainer,
       children: [(0, r.jsx)(s.rsf, {
         className: j.toggle,
-        onChange: C,
+        onChange: y,
         checked: null != h && h
       }), !n && (0, r.jsx)(s.ua7, {
         text: b.intl.string(b.t.UKOtz8),

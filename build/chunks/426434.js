@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   Z: () => h
@@ -29,7 +29,7 @@ function h(e) {
     v = null == b ? void 0 : b.mfaEnabled,
     _ = h === g.BpS.ELEVATED,
     O = j && v,
-    C = (0, i.throttle)(async e => {
+    y = (0, i.throttle)(async e => {
       O && await u.Z.updateMFALevel({
         guildId: n.id,
         level: e ? g.BpS.ELEVATED : g.BpS.NONE,
@@ -40,7 +40,7 @@ function h(e) {
   O || (t = j ? p.intl.format(p.t.nFwNyc, {
     settingsHook: () => a.Z.open(g.oAB.ACCOUNT)
   }) : p.intl.string(p.t["9Ghu4+"]));
-  let y = n.features.has(g.oNc.DISCOVERABLE);
+  let C = n.features.has(g.oNc.DISCOVERABLE);
   return (0, r.jsxs)("div", {
     className: f.simpleItemWrapper,
     children: [(0, r.jsxs)("div", {
@@ -54,18 +54,18 @@ function h(e) {
         color: "header-secondary",
         children: [p.intl.string(p.t["a/93Jy"]), " ", t]
       })]
-    }), !O || _ && y ? (0, r.jsx)(s.ua7, {
-      text: y ? p.intl.string(p.t["KG1V/P"]) : j ? p.intl.string(p.t.NmsheX) : p.intl.string(p.t.LieBtb),
+    }), !O || _ && C ? (0, r.jsx)(s.ua7, {
+      text: C ? p.intl.string(p.t["KG1V/P"]) : j ? p.intl.string(p.t.NmsheX) : p.intl.string(p.t.LieBtb),
       children: e => (0, r.jsx)(m.Z, {
         checked: _,
         disabled: !0,
-        onChange: C,
+        onChange: y,
         className: f.bringToFront,
         tooltipProps: e
       })
     }) : (0, r.jsx)(m.Z, {
       checked: _,
-      onChange: C,
+      onChange: y,
       className: f.bringToFront
     })]
   })

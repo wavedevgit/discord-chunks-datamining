@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 let r, i, l;
 n.d(t, {
-  Z: () => x
+  Z: () => A
 }), n(539854), n(388685);
 var a, o = n(392711),
   s = n.n(o),
@@ -51,7 +51,7 @@ function N() {
   v = m.QZA.OPEN, I = {}, C = !1
 }
 let T = s().debounce(() => {
-  C && ((null == E || s().isEqual(E, P(E.id))) && (C = !1), C || A.emitChange())
+  C && ((null == E || s().isEqual(E, P(E.id))) && (C = !1), C || x.emitChange())
 }, 500);
 
 function P(e) {
@@ -98,7 +98,7 @@ class j extends(a = c.ZP.Store) {
   }
 }
 b(j, "displayName", "ChannelSettingsIntegrationsStore");
-let A = new j(u.Z, __OVERLAY__ ? {} : {
+let x = new j(u.Z, __OVERLAY__ ? {} : {
     INTEGRATION_SETTINGS_INIT: N,
     INTEGRATION_SETTINGS_SAVE_SUCCESS: N,
     CHANNEL_SETTINGS_SET_SECTION: function(e) {
@@ -178,4 +178,4 @@ let A = new j(u.Z, __OVERLAY__ ? {} : {
       v = m.QZA.OPEN, I = null != (t = e.errors) ? t : {}
     }
   }),
-  x = A
+  A = x

@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   Z: () => m
@@ -24,9 +24,9 @@ let m = i.memo(function(e) {
     setEditingRule: h
   } = (0, a.V)(), {
     isLoading: x
-  } = (0, a.w)(), [b] = i.useState(() => !(0, l.Vb)(t)), j = (null == p ? void 0 : p.id) === t.id || n, v = (0, s.U)(null == t ? void 0 : t.id), _ = j && null != p ? p : t, O = i.useMemo(() => (0, o.af)(t.name), [null == t ? void 0 : t.name]), C = i.useCallback(() => {
+  } = (0, a.w)(), [b] = i.useState(() => !(0, l.Vb)(t)), j = (null == p ? void 0 : p.id) === t.id || n, v = (0, s.U)(null == t ? void 0 : t.id), _ = j && null != p ? p : t, O = i.useMemo(() => (0, o.af)(t.name), [null == t ? void 0 : t.name]), y = i.useCallback(() => {
     f(t.guildId, t.triggerType)
-  }, [t.guildId, t.triggerType, f]), y = i.useCallback(e => {
+  }, [t.guildId, t.triggerType, f]), C = i.useCallback(e => {
     x || h(e, !0)
   }, [x, h]);
   i.useEffect(() => {
@@ -44,8 +44,8 @@ let m = i.memo(function(e) {
       triggerType: t.triggerType,
       isEditMode: j,
       isDefaultRule: v,
-      onChangeRule: y,
-      onSetupRule: C
+      onChangeRule: C,
+      onSetupRule: y
     }),
     isStuck: j && g,
     isExpanded: j,
@@ -53,7 +53,7 @@ let m = i.memo(function(e) {
     children: j && (0, r.jsx)(c.Z, {
       rule: _,
       isLoading: x,
-      onChangeRule: y
+      onChangeRule: C
     })
   })
 })

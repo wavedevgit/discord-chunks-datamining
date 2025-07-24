@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   Z: () => eb
@@ -23,8 +23,8 @@ var r = n(255367),
   v = n(536442),
   _ = n(575258),
   O = n(276687),
-  C = n(594174),
-  y = n(585483),
+  y = n(594174),
+  C = n(585483),
   N = n(823379),
   I = n(434404),
   E = n(360606),
@@ -130,7 +130,7 @@ let eb = {
         };
       case em.pNK.TAG:
         return {
-          section: em.pNK.TAG, impressionName: i.ImpressionNames.GUILD_SETTINGS_TAG, label: ep.intl.string(ep.t["2QmKZ2"]), ariaLabel: ep.intl.string(ep.t["2QmKZ2"]), element: ed.ZP, predicate: () => t.canManageGuild, notice: {
+          section: em.pNK.TAG, impressionName: i.ImpressionNames.GUILD_SETTINGS_TAG, label: ep.intl.string(ep.t["2QmKZ2"]), ariaLabel: ep.intl.string(ep.t["2QmKZ2"]), element: ed.Z, predicate: () => t.canManageGuild, notice: {
             stores: [T.Z],
             element: eu.Z
           }, newIndicatorDismissibleContentTypes: [l.z.GUILD_TAG_SERVER_SETTINGS_NEW_BADGE]
@@ -312,7 +312,7 @@ let eb = {
       case em.pNK.DELETE:
         return {
           section: em.pNK.DELETE, onClick() {
-            let e = C.default.getCurrentUser();
+            let e = y.default.getCurrentUser();
             if (null == e) return;
             let {
               name: i
@@ -323,7 +323,7 @@ let eb = {
               confirmText: ep.intl.string(ep.t.l3hWPz),
               cancelText: ep.intl.string(ep.t["ETE/oK"]),
               onConfirm: () => {
-                y.S.subscribeOnce(em.CkL.LAYER_POP_COMPLETE, () => {
+                C.S.subscribeOnce(em.CkL.LAYER_POP_COMPLETE, () => {
                   I.Z.deleteGuild(t.guild.id, i)
                 }), (0, a.xf)()
               }

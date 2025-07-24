@@ -1,7 +1,7 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
-  Z: () => y
+  Z: () => C
 }), n(388685), n(472816), n(794429), n(953529);
 var r = n(255367),
   i = n(73800),
@@ -23,12 +23,12 @@ var r = n(255367),
   v = n(273504),
   _ = n(981631),
   O = n(388032),
-  C = n(885655);
+  y = n(885655);
 
-function y(e) {
+function C(e) {
   var t, n;
   let {
-    guildId: y,
+    guildId: C,
     setPreventNavigation: N = () => {}
   } = e, {
     editingRule: I,
@@ -36,7 +36,7 @@ function y(e) {
   } = (0, h.V)(), {
     guild: S,
     subsection: T
-  } = (0, l.cj)([o.Z], () => o.Z.getProps()), P = null != (n = null != (t = null == S ? void 0 : S.id) ? t : y) ? n : _.lds, w = null != I, [R] = (0, g.RD)(P), {
+  } = (0, l.cj)([o.Z], () => o.Z.getProps()), P = null != (n = null != (t = null == S ? void 0 : S.id) ? t : C) ? n : _.lds, w = null != I, [R] = (0, g.RD)(P), {
     rulesByTriggerType: Z
   } = (0, g.pH)(P), D = {
     [p.vh.MEMBERS]: O.intl.string(O.t.sx4E5u),
@@ -89,43 +89,43 @@ function y(e) {
     title: O.intl.string(O.t.uRelg4),
     tag: "h1",
     children: [(0, r.jsxs)("div", {
-      className: C.descriptionContainer,
+      className: y.descriptionContainer,
       children: [(0, r.jsxs)(a.hjN, {
         tag: "h3",
-        className: C.description,
-        titleClassName: C.descriptionHeader,
+        className: y.description,
+        titleClassName: y.descriptionHeader,
         children: [(0, r.jsx)(a.Text, {
           variant: "text-md/medium",
           color: "header-secondary",
           children: O.intl.string(O.t.EwuSCQ)
         }), (0, r.jsx)(a.Text, {
           variant: "text-sm/medium",
-          className: C.helpUrl,
+          className: y.helpUrl,
           children: O.intl.format(O.t["B+sgGh"], {
             helpUrl: u.Z.getArticleURL(_.BhN.GUILD_AUTOMOD_BLOCKED_MESSAGE)
           })
         })]
       }), (0, r.jsxs)("div", {
-        className: C.descriptionAvatarContainer,
+        className: y.descriptionAvatarContainer,
         children: [(0, r.jsx)(a.qEK, {
           src: (0, m.j)(),
           size: a.EFr.SIZE_80,
           "aria-label": O.intl.string(O.t.hG1StL)
         }), (0, r.jsx)(a.IGR, {
           text: (0, r.jsxs)("div", {
-            className: C.automodBadgeText,
+            className: y.automodBadgeText,
             children: [(0, r.jsx)(a.sV5, {
               size: "xxs",
               color: "currentColor",
-              className: C.checkmarkIcon
+              className: y.checkmarkIcon
             }), (0, r.jsx)(a.Text, {
               variant: "text-xs/bold",
-              className: C.automodText,
+              className: y.automodText,
               children: O.intl.string(O.t.hG1StL)
             })]
           }),
           color: s.Z.unsafe_rawColors.BRAND_500.css,
-          className: C.textBadge
+          className: y.textBadge
         })]
       })]
     }), R ? (0, r.jsx)(f.Z, {}) : Object.entries(U).map(e => {
@@ -133,7 +133,7 @@ function y(e) {
       if (0 === n.length) return (0, r.jsx)(i.Fragment, {}, t);
       let l = null != D[t] ? (0, r.jsx)(a.hjN, {
         tag: "h3",
-        className: C.categoryHeader,
+        className: y.categoryHeader,
         children: (0, r.jsx)(a.Text, {
           variant: "text-lg/normal",
           color: "header-primary",
@@ -141,18 +141,18 @@ function y(e) {
         })
       }) : null;
       return (0, r.jsxs)("div", {
-        className: C.categoryContainer,
+        className: y.categoryContainer,
         children: [l, B(n)]
       }, t)
     }), null != S && (0, r.jsx)(c.k0, {
       guild: S,
       withDivider: !1,
-      className: C.explicitContentFilterSection
+      className: y.explicitContentFilterSection
     }), (0, r.jsx)(x.Z, {
       guildId: P,
       existingRules: A
     }), w && (0, r.jsx)("div", {
-      className: C.endSpacer
+      className: y.endSpacer
     })]
   })
 }

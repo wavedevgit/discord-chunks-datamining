@@ -1,7 +1,7 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
-  Z: () => y
+  Z: () => C
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -23,14 +23,14 @@ var r = n(255367),
   v = n(869269),
   _ = n(981631),
   O = n(388032),
-  C = n(301849);
+  y = n(301849);
 
-function y(e) {
+function C(e) {
   var t, n;
   let {
     guildId: l,
     initialEditStateId: a,
-    allSubscriptionListings: y,
+    allSubscriptionListings: C,
     priceTiers: N,
     onDeleteEditState: I,
     groupListingId: E,
@@ -46,23 +46,23 @@ function y(e) {
     publishSubscriptionListing: ee
   } = (0, p.HQ)(), et = X || Q;
   return (0, r.jsxs)("div", {
-    className: C.container,
+    className: y.container,
     children: [(0, r.jsxs)("div", {
-      className: s()(C.header, {
-        [C.headerExpanded]: D
+      className: s()(y.header, {
+        [y.headerExpanded]: D
       }),
       children: [(0, r.jsx)("div", {
-        className: C.headerImageContainer,
+        className: y.headerImageContainer,
         children: null == W ? (0, r.jsx)(j.Z, {
-          className: C.starIcon,
+          className: y.starIcon,
           "aria-hidden": !0
         }) : (0, r.jsx)("img", {
-          className: C.headerImage,
+          className: y.headerImage,
           src: W,
           alt: V
         })
       }), (0, r.jsxs)("div", {
-        className: C.headerListingInfo,
+        className: y.headerListingInfo,
         children: [(0, r.jsx)(d.Text, {
           variant: "text-md/medium",
           color: "interactive-active",
@@ -70,19 +70,19 @@ function y(e) {
         }), (0, r.jsx)(d.LZC, {
           size: 2
         }), (0, r.jsxs)("div", {
-          className: C.headerDescriptionContainer,
+          className: y.headerDescriptionContainer,
           children: [G && (0, r.jsx)(d.IGR, {
             color: (0, u.Lq)(_.Ilk.YELLOW_300),
             text: O.intl.string(O.t.vosPk5),
-            className: C.draftBadge
+            className: y.draftBadge
           }), M && (0, r.jsx)(d.IGR, {
             color: (0, u.Lq)(_.Ilk.PRIMARY_500),
             text: O.intl.string(O.t.nhbtEh),
-            className: C.archivedBadge
+            className: y.archivedBadge
           }), U && (0, r.jsx)(d.IGR, {
             color: (0, u.Lq)(_.Ilk.PRIMARY_500),
             text: O.intl.string(O.t.aiwXen),
-            className: C.unsavedBadge
+            className: y.unsavedBadge
           }), null != L && (0, r.jsxs)(d.Text, {
             color: "interactive-normal",
             variant: "text-sm/normal",
@@ -90,7 +90,7 @@ function y(e) {
           })]
         })]
       }), D ? (0, r.jsxs)("div", {
-        className: C.headerActions,
+        className: y.headerActions,
         children: [(0, r.jsx)(d.Avr, {
           variant: "secondary",
           onClick: () => {
@@ -118,7 +118,7 @@ function y(e) {
         children: (0, r.jsx)(d.vdY, {
           size: "xs",
           color: "currentColor",
-          className: C.pencilIcon
+          className: y.pencilIcon
         })
       })]
     }), D && (0, r.jsx)(x.I, {
@@ -126,7 +126,7 @@ function y(e) {
       guildId: l,
       groupListingId: E,
       children: (0, r.jsx)(v.Z, {
-        allSubscriptionListings: y,
+        allSubscriptionListings: C,
         priceTiers: N,
         loading: et,
         error: null != q ? q : $,

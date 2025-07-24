@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   Z: () => O
@@ -117,13 +117,13 @@ function O(e) {
     postjoinOnly: i,
     includeCount: l,
     singleColumn: s
-  } = e, d = (0, a.e7)([m.Z], () => m.Z.getGuild(t)), O = (0, a.e7)([p.Z], () => p.Z.editedOnboardingPrompts), C = O.filter(e => e.inOnboarding), y = O.filter(e => !0 !== e.inOnboarding), N = [...C.map(e => ({
+  } = e, d = (0, a.e7)([m.Z], () => m.Z.getGuild(t)), O = (0, a.e7)([p.Z], () => p.Z.editedOnboardingPrompts), y = O.filter(e => e.inOnboarding), C = O.filter(e => !0 !== e.inOnboarding), N = [...y.map(e => ({
     id: e.id,
     data: e
   })), {
     id: "separator",
     data: (0, h.ae)()
-  }, ...y.map(e => ({
+  }, ...C.map(e => ({
     id: e.id,
     data: e
   }))], {
@@ -159,7 +159,7 @@ function O(e) {
           className: b.subtitle,
           children: x.intl.string(x.t.QvCcYW)
         })]
-      }), C.map((e, t) => (0, r.jsx)(f.Z, {
+      }), y.map((e, t) => (0, r.jsx)(f.Z, {
         guild: d,
         prompt: e,
         disableAutofocus: n,
@@ -176,11 +176,11 @@ function O(e) {
       prejoinOnly: n,
       postjoinOnly: i
     }), n ? null : (0, r.jsxs)(r.Fragment, {
-      children: [y.map((e, t) => (0, r.jsx)(f.Z, {
+      children: [C.map((e, t) => (0, r.jsx)(f.Z, {
         guild: d,
         prompt: e,
-        promptIndex: t + C.length,
-        dragIndex: t + C.length + 1,
+        promptIndex: t + y.length,
+        dragIndex: t + y.length + 1,
         onPromptDragStart: I,
         onPromptDragReset: E,
         onPromptDragComplete: S

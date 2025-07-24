@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   y: () => f
@@ -29,25 +29,25 @@ function f(e) {
     [j, v] = i.useState(null),
     _ = i.useMemo(() => null == f ? void 0 : f.some(e => (0, s.J)(e)), [f]),
     O = i.useMemo(() => f.length === m.nx, [f]),
-    C = i.useCallback(e => {
+    y = i.useCallback(e => {
       u.Z.setPendingMemberVerificationRules(n.id, e), x(e), null != j && v(null)
     }, [j, n.id]),
-    y = i.useCallback(e => {
-      C([...f, e])
-    }, [f, C]),
+    C = i.useCallback(e => {
+      y([...f, e])
+    }, [f, y]),
     N = i.useCallback(e => {
-      C([...f.slice(0, e), ...f.slice(e + 1)])
-    }, [f, C]),
+      y([...f.slice(0, e), ...f.slice(e + 1)])
+    }, [f, y]),
     I = i.useCallback((e, t) => {
       if (f[e] === t) return;
       let n = [...f];
-      n[e] = t, C(n)
-    }, [f, C]),
+      n[e] = t, y(n)
+    }, [f, y]),
     E = i.useCallback((e, t, n) => {
       let r = f.indexOf(e),
         i = [...f];
-      null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), x(i)), n ? (C(i), null !== j && v(null)) : j !== t && v(t)
-    }, [j, f, C]);
+      null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), x(i)), n ? (y(i), null !== j && v(null)) : j !== t && v(t)
+    }, [j, f, y]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.X6, {
       variant: "text-xs/bold",
@@ -73,12 +73,12 @@ function f(e) {
     })), !O && (0, r.jsx)("div", {
       className: p.addQuestionsContainer,
       children: (0, r.jsx)(o.Z, {
-        addFormField: y,
+        addFormField: C,
         guild: n,
         allowTerms: !_
       })
     }), !O && (0, r.jsx)(h, {
-      addFormField: y
+      addFormField: C
     })]
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   Md: () => f,
@@ -58,8 +58,8 @@ function p(e) {
     removeFormField: v,
     updateFormField: _,
     updateFormFieldOrder: O,
-    canRemove: C,
-    actionsLocation: y,
+    canRemove: y,
+    actionsLocation: C,
     fieldStyle: N
   } = e, I = async () => {
     await v(x)
@@ -86,8 +86,8 @@ function p(e) {
     },
     onRemove: I,
     onDrop: S,
-    canRemove: C,
-    actionsLocation: y,
+    canRemove: y,
+    actionsLocation: C,
     fieldStyle: N
   };
   switch (p.field_type) {

@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   Z: () => x
@@ -72,9 +72,9 @@ function x(e) {
       erroringCharacterLength: l,
       erroringCharacterOffset: s
     }), e
-  }, {}), [b, m]), C = i.useCallback(e => {
+  }, {}), [b, m]), y = i.useCallback(e => {
     j(e, m)
-  }, [j, m]), y = i.useCallback(e => {
+  }, [j, m]), C = i.useCallback(e => {
     v(e)
   }, [v]);
   return (0, r.jsxs)("div", {
@@ -82,8 +82,8 @@ function x(e) {
     children: [(0, r.jsx)(c.Z, {
       placeholder: "^b(a|@)d$\nw(o|0)rd(s|$)",
       initialValue: _,
-      onChangeTags: C,
-      onChangeNewTagValue: y,
+      onChangeTags: y,
+      onChangeNewTagValue: C,
       tagErrors: O,
       maxTags: u.VW
     }), (0, r.jsx)(h, {

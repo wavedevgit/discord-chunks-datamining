@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   P: () => O
@@ -30,8 +30,8 @@ function _(e) {
     fetchGuildProfile: g,
     fetchStatus: _
   } = (0, m.u)(t), O = _ !== u.a.FETCHED, {
-    fetchedEmbed: C,
-    embedEnabled: y,
+    fetchedEmbed: y,
+    embedEnabled: C,
     embedChannelId: N
   } = (0, a.cj)([f.Z], () => {
     let {
@@ -44,19 +44,19 @@ function _(e) {
       embedEnabled: t,
       embedChannelId: n
     }
-  }), I = i.useMemo(() => (0, x.S)(t), [t]), E = i.useMemo(() => (0, x.a)(t), [t]), [S, T] = i.useState(!1), P = null != c && l.Y.VISIBLE.has(c.visibility), w = !O && !P && !y;
+  }), I = i.useMemo(() => (0, x.S)(t), [t]), E = i.useMemo(() => (0, x.a)(t), [t]), [S, T] = i.useState(!1), P = null != c && l.Y.VISIBLE.has(c.visibility), w = !O && !P && !C;
   i.useEffect(() => {
-    C || (0, p.R)(t)
-  }, [C, t]), i.useEffect(() => {
+    y || (0, p.R)(t)
+  }, [y, t]), i.useEffect(() => {
     g()
   }, [t, g]);
   let R = i.useCallback(async e => {
     T(!0), await (0, h.c)(t, e, N), T(!1)
   }, [N, t]);
-  return C ? (0, r.jsxs)("div", {
+  return y ? (0, r.jsxs)("div", {
     children: [(0, r.jsx)(o.j7V, {
       disabled: S,
-      value: y,
+      value: C,
       hideBorder: !0,
       onChange: R,
       children: j.intl.string(j.t.NR6hub)
@@ -65,14 +65,14 @@ function _(e) {
       color: "text-secondary",
       className: v.subtext,
       children: j.intl.string(j.t.zCGuJy)
-    }) : null, y ? (0, r.jsxs)(r.Fragment, {
+    }) : null, C ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: v.divider
       }), (0, r.jsx)(o.vwX, {
         children: j.intl.string(j.t.LUo0Q0)
       }), (0, r.jsx)(b.m, {
         guildId: t,
-        widgetEnabled: y,
+        widgetEnabled: C,
         widgetChannelId: N,
         enableLocalUpdate: !0
       }), (0, r.jsx)(s.xv, {

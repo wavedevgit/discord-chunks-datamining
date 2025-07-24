@@ -1,7 +1,7 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
-  Z: () => C
+  Z: () => y
 }), n(35282);
 var r = n(255367),
   i = n(73800),
@@ -141,18 +141,18 @@ function O(e) {
   })
 }
 
-function C(e) {
+function y(e) {
   var t;
   let {
     profile: n,
     onCustomBannerChange: l,
     canManageGuild: d
-  } = e, m = (0, a.e7)([u.Z], () => u.Z.getGuild(n.id)), g = null != (t = null == m ? void 0 : m.features.has(f.oNc.DISCOVERABLE)) && t, C = n.id, y = i.useCallback(e => () => {
-    p.Z.updateGuildProfile(C, {
+  } = e, m = (0, a.e7)([u.Z], () => u.Z.getGuild(n.id)), g = null != (t = null == m ? void 0 : m.features.has(f.oNc.DISCOVERABLE)) && t, y = n.id, C = i.useCallback(e => () => {
+    p.Z.updateGuildProfile(y, {
       brandColorPrimary: e,
       customBanner: null
     })
-  }, [C]), N = i.useCallback(e => (!g || null == n.customBanner) && e === n.brandColorPrimary, [n, g]);
+  }, [y]), N = i.useCallback(e => (!g || null == n.customBanner) && e === n.brandColorPrimary, [n, g]);
   return (0, r.jsx)(o.hjN, {
     title: x.intl.string(x.t.BSVog4),
     children: (0, r.jsxs)("div", {
@@ -160,7 +160,7 @@ function C(e) {
       children: [(0, r.jsx)(_, {
         profile: n,
         canManageGuild: d,
-        handleClick: y(null),
+        handleClick: C(null),
         hasCustomBanner: g && null != n.customBanner
       }), h.cb.map(e => {
         let {
@@ -173,7 +173,7 @@ function C(e) {
             "aria-disabled": !d,
             tabIndex: d ? 0 : -1,
             "aria-label": t,
-            onClick: d ? y(n) : void 0,
+            onClick: d ? C(n) : void 0,
             style: {
               background: (0, c.dG)(n)
             },

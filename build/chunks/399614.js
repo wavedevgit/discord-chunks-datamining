@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   Z: () => x
@@ -64,7 +64,7 @@ let h = [],
       null != r && ((0, c.r2)(e), (0, c.oo)(t, r).then(() => {
         (0, c.mM)(t, e.channelId, n)
       }))
-    }, [t]), C = i.useCallback(() => {
+    }, [t]), y = i.useCallback(() => {
       if (null != t) return (0, s.ZDy)(async () => {
         let {
           default: e
@@ -87,7 +87,7 @@ let h = [],
         onDragComplete: _
       }, e.channelId)), x.length < o.x3 && (0, r.jsxs)(s.P3F, {
         className: g.addActionItem,
-        onClick: C,
+        onClick: y,
         children: [(0, r.jsx)(s.oFk, {
           size: "xs",
           color: "currentColor"

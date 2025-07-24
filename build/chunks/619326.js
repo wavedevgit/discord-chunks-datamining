@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   Z: () => v
@@ -79,13 +79,13 @@ function j(e) {
       height: 24,
       color: b(t)
     }),
-    C = (0, o.arW)({
+    y = (0, o.arW)({
       orientation: "horizontal",
       isDisabled: l
     }),
     {
-      ref: y
-    } = C,
+      ref: C
+    } = y,
     N = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
@@ -100,7 +100,7 @@ function j(e) {
         for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
-    }(C, ["ref"]),
+    }(y, ["ref"]),
     I = (0, o.xUy)({
       isSelected: v,
       label: g.intl.formatToPlainString(g.t.ZC69mJ, {
@@ -116,7 +116,7 @@ function j(e) {
   return (0, r.jsxs)("div", h(f({
     className: p.buttonsContainer,
     "aria-label": g.intl.string(g.t.FJjrIy),
-    ref: y
+    ref: C
   }, N), {
     children: [(0, r.jsx)("div", {
       className: s()(p.colorSwatch, {

@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   ZP: () => ee
@@ -23,8 +23,8 @@ var r = n(255367),
   v = n(663993),
   _ = n(243778),
   O = n(518738),
-  C = n(753206),
-  y = n(402235),
+  y = n(753206),
+  C = n(402235),
   N = n(441536),
   I = n(494620),
   E = n(496675),
@@ -127,7 +127,7 @@ function X(e) {
           children: [(0, r.jsx)(p.Rny, {
             children: (0, r.jsx)("div", {
               className: F.roleStyleMessageContainer,
-              children: (0, r.jsx)(C.Z, {
+              children: (0, r.jsx)(y.Z, {
                 author: {
                   nick: d.author.username,
                   guildId: n,
@@ -307,7 +307,7 @@ function Q(e) {
           className: s()(t, F.messageWrapper),
           children: [(0, r.jsx)("div", {
             className: F.messageContainer,
-            children: (0, r.jsx)(C.Z, {
+            children: (0, r.jsx)(y.Z, {
               author: g,
               message: u,
               roleIcon: null != x ? x : (0, m.ap)(e) ? h : f,
@@ -357,7 +357,7 @@ function ee(e) {
     role: n,
     locked: i,
     setSelectedSection: l
-  } = e, a = (0, y.yH)(t.id, n), o = (0, d.e7)([T.Z], () => T.Z.getRoleStyleData(n.id)), c = !a, u = null != o && a ? o.currentStyle : T.g.SOLID, m = (0, j.pM)(null == t ? void 0 : t.id, n.id), g = i || m, f = (0, d.e7)([E.Z], () => E.Z.canImpersonateRole(t, n)), {
+  } = e, a = (0, C.yH)(t.id, n), o = (0, d.e7)([T.Z], () => T.Z.getRoleStyleData(n.id)), c = !a, u = null != o && a ? o.currentStyle : T.g.SOLID, m = (0, j.pM)(null == t ? void 0 : t.id, n.id), g = i || m, f = (0, d.e7)([E.Z], () => E.Z.canImpersonateRole(t, n)), {
     headerHeight: h,
     headerRef: x
   } = (0, w.Z)(0), {

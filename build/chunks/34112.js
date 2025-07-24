@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   Z: () => k
@@ -23,8 +23,8 @@ var r = n(255367),
   v = n(549631),
   _ = n(402235),
   O = n(496675),
-  C = n(626135),
-  y = n(480608),
+  y = n(626135),
+  C = n(480608),
   N = n(243730),
   I = n(130341),
   E = n(970129),
@@ -80,11 +80,11 @@ function k(e) {
     query: u
   } = e, m = (0, d.e7)([N.Z], () => N.Z.getRoleMemberCount(n.id), [n.id]), g = (0, d.e7)([O.Z], () => O.Z.getHighestRole(n), [n]), f = u.trim();
   i.useEffect(() => {
-    (0, y.E)(n.id)
+    (0, C.E)(n.id)
   }, [n.id]);
   let h = i.useRef(!1);
   i.useEffect(() => {
-    h.current || "" === u.trimStart() || (C.default.track(P.rMx.SEARCH_STARTED, {
+    h.current || "" === u.trimStart() || (y.default.track(P.rMx.SEARCH_STARTED, {
       search_type: "Roles"
     }), h.current = !0)
   }, [u]);
@@ -154,8 +154,8 @@ function G(e) {
     memberCount: j,
     onDragStart: _,
     onDragReset: O,
-    onDragComplete: C,
-    disableHover: y,
+    onDragComplete: y,
+    disableHover: C,
     disableDrag: N,
     setEditRoleId: I,
     setSelectedSection: S
@@ -172,9 +172,9 @@ function G(e) {
     end: (e, t) => {
       let n = t.getDropResult();
       if (null == n) return void O();
-      C(n.roleId)
+      y(n.roleId)
     }
-  }), [d, _, O, C, k, M, h]), [{
+  }), [d, _, O, y, k, M, h]), [{
     isDragging: F
   }, H] = (0, a.c)(B), z = i.useMemo(() => ({
     accept: L,
@@ -219,7 +219,7 @@ function G(e) {
   }
   return (0, r.jsxs)(m.P3F, {
     className: s()(R.roleRow, {
-      [R.roleRowDisableHover]: y,
+      [R.roleRowDisableHover]: C,
       [R.containerDragBefore]: null != W && h < W,
       [R.containerDragAfter]: null != W && h > W
     }),
@@ -338,17 +338,17 @@ function U(e) {
     hasGradient: x,
     stops: b,
     gradientId: v
-  } = (0, u.De)(null == (t = o.colorStrings) ? void 0 : t.primaryColor, null == (n = o.colorStrings) ? void 0 : n.secondaryColor, null == (i = o.colorStrings) ? void 0 : i.tertiaryColor), O = (0, _.yH)(a, o), C = (0, j.p9)({
+  } = (0, u.De)(null == (t = o.colorStrings) ? void 0 : t.primaryColor, null == (n = o.colorStrings) ? void 0 : n.secondaryColor, null == (i = o.colorStrings) ? void 0 : i.tertiaryColor), O = (0, _.yH)(a, o), y = (0, j.p9)({
     guildId: a,
     roleId: o.id,
     size: d
   });
-  if (null != C) return (0, r.jsx)(h.Z, A(D({}, C), {
+  if (null != y) return (0, r.jsx)(h.Z, A(D({}, y), {
     className: p,
     enableTooltip: g
   }));
-  let y = null != (l = o.colorString) ? l : (0, c.Rf)(P.p6O);
-  return O && x && (y = "url(#".concat(v, ")")), (0, r.jsxs)(r.Fragment, {
+  let C = null != (l = o.colorString) ? l : (0, c.Rf)(P.p6O);
+  return O && x && (C = "url(#".concat(v, ")")), (0, r.jsxs)(r.Fragment, {
     children: [O && x && (0, r.jsx)("svg", {
       width: "0",
       height: "0",
@@ -366,7 +366,7 @@ function U(e) {
     }), (0, r.jsx)(m.lZ8, {
       size: "custom",
       className: s()(p, f),
-      color: y,
+      color: C,
       width: d,
       height: d
     })]

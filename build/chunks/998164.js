@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   Z: () => j
@@ -140,8 +140,8 @@ let j = function(e) {
     null != n && (0, c.oo)(t, n, !0)
   }, [t]), {
     handleDragStart: O,
-    handleDragReset: C,
-    handleDragComplete: y
+    handleDragReset: y,
+    handleDragComplete: C
   } = (0, a.Z)(v, _);
   return (0, r.jsxs)("div", {
     className: g.section,
@@ -152,8 +152,8 @@ let j = function(e) {
       onChange: m,
       onDelete: j,
       onDragStart: O,
-      onDragReset: C,
-      onDragComplete: y
+      onDragReset: y,
+      onDragComplete: C
     }, e.channelId)), (0, r.jsx)(x, {}), n.length < o.O9 && (0, r.jsx)(b, {
       guildId: t,
       onAddAction: s

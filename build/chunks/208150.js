@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   Z: () => E
@@ -24,12 +24,12 @@ var i = n(442837),
   v = n(611480),
   _ = n(388032),
   O = n(776739);
-let C = {
+let y = {
     page: j.ZY5.GUILD_SETTINGS,
     section: j.jXE.GUILD_SETTINGS_STICKERS,
     object: j.qAy.BOOSTING_BANNER
   },
-  y = e => {
+  C = e => {
     let {
       guild: t
     } = e, {
@@ -53,7 +53,7 @@ let C = {
           color: l.zx.Colors.WHITE,
           onClick: () => (0, u.Z)({
             analyticsLocations: n,
-            analyticsLocation: C,
+            analyticsLocation: y,
             guildId: t.id,
             totalNumberOfSlotsToAssign: a
           }),
@@ -138,7 +138,7 @@ let C = {
             guild: e,
             guildStickers: t
           }), (0, r.jsx)(N, {})]
-        }) : (0, r.jsx)(y, {
+        }) : (0, r.jsx)(C, {
           guild: e
         }), (0, r.jsx)(s.$i$, {
           className: O.divider

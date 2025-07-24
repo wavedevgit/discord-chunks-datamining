@@ -1,7 +1,7 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
-  Z: () => y
+  Z: () => C
 }), n(388685), n(953529);
 var r, i, l = n(255367),
   s = n(73800),
@@ -98,7 +98,7 @@ function O(e) {
   })
 }
 
-function C(e) {
+function y(e) {
   let {
     withCardBody: t,
     isAnimatedTo: n,
@@ -157,7 +157,7 @@ function C(e) {
   })
 }
 
-function y(e) {
+function C(e) {
   let {
     children: t,
     subscriptionCount: n,
@@ -172,7 +172,7 @@ function y(e) {
   } = e, _ = (0, d.e7)([f.Z], () => {
     var e, t;
     return null != (t = null == (e = f.Z.getGuild(h)) ? void 0 : e.premiumTier) ? t : x.Eu4.NONE
-  }), O = x.oCV[i.tier], y = s && i.tier <= _, N = i.tier !== x.Eu4.NONE && i.tier !== x.Eu4.TIER_1, I = (e, t) => {
+  }), O = x.oCV[i.tier], C = s && i.tier <= _, N = i.tier !== x.Eu4.NONE && i.tier !== x.Eu4.TIER_1, I = (e, t) => {
     var n;
     let {
       Icon: r,
@@ -204,7 +204,7 @@ function y(e) {
     className: o()(j.tier, {
       [j.tierBottomMargin]: a
     }),
-    children: [(0, l.jsx)(C, {
+    children: [(0, l.jsx)(y, {
       subscriptionCount: n,
       tier: i,
       headerButton: c,
@@ -216,7 +216,7 @@ function y(e) {
       guildId: h,
       hasBottomMargin: a,
       subscriptionsRequired: O,
-      hasAnimatedUnlocked: y,
+      hasAnimatedUnlocked: C,
       isAnimatedTo: s
     }), (0, l.jsx)("div", {
       className: o()({
@@ -228,7 +228,7 @@ function y(e) {
           children: b.intl.string(b.t.oKzyRU)
         }) : null, null != i.perks && (0, l.jsx)("div", {
           className: j.perks,
-          children: i.perks.map(e => I(e, y))
+          children: i.perks.map(e => I(e, C))
         })]
       })
     })]

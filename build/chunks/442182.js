@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   ZP: () => k
@@ -23,8 +23,8 @@ var r = n(255367),
   v = n(946724),
   _ = n(130341),
   O = n(95242),
-  C = n(420966),
-  y = n(566476),
+  y = n(420966),
+  C = n(566476),
   N = n(203377),
   I = n(981631),
   E = n(388032),
@@ -142,7 +142,7 @@ function Z(e) {
         innerRef: u,
         className: S.memberRow,
         onContextMenu: x,
-        children: [(0, r.jsx)(y.Z, {
+        children: [(0, r.jsx)(C.Z, {
           className: S.memberDetails,
           avatarURL: t.avatarURL,
           name: t.name,
@@ -290,7 +290,7 @@ function k(e) {
   } = (0, O.Z)(0), {
     scrolledToTop: f,
     handleScroll: h
-  } = (0, C.V)(), j = l.managed || o, v = (0, _.e)(t.id, l.id), y = (0, a.e7)([b.Z], () => {
+  } = (0, y.V)(), j = l.managed || o, v = (0, _.e)(t.id, l.id), C = (0, a.e7)([b.Z], () => {
     var e, n;
     return null != (n = null == (e = b.Z.getRoleMemberCount(t.id)) ? void 0 : e[l.id]) ? n : 0
   }) > v.length, R = () => {
@@ -319,7 +319,7 @@ function k(e) {
           className: s()(T.header, {
             [T.stickyHeaderElevated]: !f
           }),
-          children: [(0, r.jsx)(C.Z, {
+          children: [(0, r.jsx)(y.Z, {
             guild: t,
             role: l,
             selectedSection: N.ZI.MEMBERS,
@@ -329,7 +329,7 @@ function k(e) {
             setQuery: m,
             locked: j,
             handleAddClick: R
-          }), y ? (0, r.jsx)(c.Wn, {
+          }), C ? (0, r.jsx)(c.Wn, {
             className: S.searchWarning,
             messageType: c.QYI.INFO,
             children: E.intl.string(E.t.RQxHZ2)

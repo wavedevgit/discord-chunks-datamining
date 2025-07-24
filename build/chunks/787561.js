@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   X: () => Z,
@@ -24,8 +24,8 @@ var r = n(255367),
   v = n(699516),
   _ = n(594174),
   O = n(434404),
-  C = n(999382),
-  y = n(54842),
+  y = n(999382),
+  C = n(54842),
   N = n(929834),
   I = n(981631),
   E = n(388032),
@@ -69,10 +69,10 @@ let R = "dismissedCommunityFeaturesUpsell",
         guild: t,
         submitting: n,
         errors: i
-      } = (0, a.cj)([C.Z], () => ({
-        submitting: C.Z.isSubmitting(),
-        guild: C.Z.getGuild(),
-        errors: C.Z.getErrors()
+      } = (0, a.cj)([y.Z], () => ({
+        submitting: y.Z.isSubmitting(),
+        guild: y.Z.getGuild(),
+        errors: y.Z.getErrors()
       })),
       l = Object.keys(i),
       s = l.length > 0 ? l[0] : null;
@@ -114,7 +114,7 @@ let R = "dismissedCommunityFeaturesUpsell",
     let v = (0, a.e7)([b.Z], () => b.Z.getGuild("942897714956472401")),
       _ = l.features.has(I.oNc.COMMUNITY) && p >= 1e3 && h && null == v;
     if (t && n && !_) return null;
-    let C = async () => {
+    let y = async () => {
       try {
         let e = await o.tn.post({
           url: I.ANM.JOIN_ADMIN_SERVER(l.id),
@@ -164,7 +164,7 @@ let R = "dismissedCommunityFeaturesUpsell",
             variant: "primary",
             size: "sm",
             text: E.intl.string(E.t.iF1Asr),
-            onClick: C
+            onClick: y
           })
         }), n ? null : (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": !0,
@@ -204,7 +204,7 @@ let R = "dismissedCommunityFeaturesUpsell",
     })
   },
   A = () => {
-    let e = (0, a.e7)([C.Z], () => C.Z.getGuild()),
+    let e = (0, a.e7)([y.Z], () => y.Z.getGuild()),
       {
         canManageGuild: t,
         isGuildAdmin: n
@@ -432,8 +432,8 @@ let R = "dismissedCommunityFeaturesUpsell",
     })
   },
   L = () => {
-    let e = (0, a.e7)([C.Z], () => C.Z.getGuild());
-    return null == e ? null : e.features.has(I.oNc.COMMUNITY) ? (0, r.jsx)(A, {}) : (0, r.jsx)(y.Z, {
+    let e = (0, a.e7)([y.Z], () => y.Z.getGuild());
+    return null == e ? null : e.features.has(I.oNc.COMMUNITY) ? (0, r.jsx)(A, {}) : (0, r.jsx)(C.Z, {
       guild: e
     })
   }

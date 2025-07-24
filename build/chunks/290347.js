@@ -108,8 +108,8 @@ function P(e) {
     heroArtClassName: N,
     modalDismissibleContent: P,
     modalTopExtra: j,
-    header: A,
-    headerClassName: x,
+    header: x,
+    headerClassName: A,
     subHeader: Z,
     subHeaderExtra: w,
     featureCards: L,
@@ -193,8 +193,8 @@ function P(e) {
       className: v.content,
       children: [(0, r.jsx)(s.X6q, {
         variant: "display-md",
-        className: a()(v.headerText, x),
-        children: A
+        className: a()(v.headerText, A),
+        children: x
       }), "video" === l.type ? (0, r.jsx)(h.Z, {
         className: a()(v.video, N),
         autoPlay: !V,

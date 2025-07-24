@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   k: () => S
@@ -23,9 +23,9 @@ var r = n(255367),
   v = n(592286),
   _ = n(981631),
   O = n(388032),
-  C = n(350612);
+  y = n(350612);
 
-function y(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -71,7 +71,7 @@ function E(e) {
     focused: b,
     onFocus: j,
     previewEnabled: _,
-    isDragEnabled: y,
+    isDragEnabled: C,
     disabled: N
   } = e, E = i.useRef(null), S = i.useRef(null), [{
     textValue: T,
@@ -109,16 +109,16 @@ function E(e) {
   let A = "" !== t.value ? t.value : t.id;
   return (0, r.jsx)("div", {
     ref: E,
-    className: s()(C.draggableInputContainer, {
-      [C.dragging]: x
+    className: s()(y.draggableInputContainer, {
+      [y.dragging]: x
     }),
     "data-dnd-name": A,
     children: (0, r.jsxs)("div", {
-      className: C.inputWrapper,
+      className: y.inputWrapper,
       children: [(0, r.jsx)(m.P3F, {
         onMouseDown: () => j(l),
         children: (0, r.jsx)(f.Z, {
-          innerClassName: C.rulesTextAreaInput,
+          innerClassName: y.rulesTextAreaInput,
           type: g.Ie.RULES_INPUT,
           textValue: T,
           richValue: P,
@@ -142,7 +142,7 @@ function E(e) {
           })
         })
       }), (0, r.jsx)("div", {
-        className: C.clearButton,
+        className: y.clearButton,
         children: (0, r.jsx)(m.hU, {
           size: "sm",
           variant: "icon-only",
@@ -152,12 +152,12 @@ function E(e) {
         })
       }), (0, r.jsx)("div", {
         ref: S,
-        className: C.dragContainer,
+        className: y.dragContainer,
         "data-dnd-name": A,
-        children: y && (0, r.jsx)(m.Vni, {
+        children: C && (0, r.jsx)(m.Vni, {
           size: "xs",
           color: "currentColor",
-          className: C.dragIcon
+          className: y.dragIcon
         })
       })]
     })
@@ -174,7 +174,7 @@ function S(e) {
     if (!s && t.length !== v.X2)
       if (null != e && "" === t[t.length - 1].value) {
         let r = [...t];
-        r[t.length - 1] = N(y({}, r[t.length - 1]), {
+        r[t.length - 1] = N(C({}, r[t.length - 1]), {
           value: e
         }), n(r), S(r.length - 1)
       } else n([...t, {
@@ -186,7 +186,7 @@ function S(e) {
   }, [T, s]), w = i.useCallback((e, r) => {
     if (s) return;
     let i = [...t];
-    i[r] = N(y({}, i[r]), {
+    i[r] = N(C({}, i[r]), {
       value: e
     }), n(i)
   }, [s, t, n]), R = e => {
@@ -232,7 +232,7 @@ function S(e) {
   }, [T, s, D]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: C.rulesContainer,
+      className: y.rulesContainer,
       children: t.map((e, n) => (0, r.jsx)(E, {
         rulesChannel: null != d ? d : g,
         rule: e,
@@ -254,11 +254,11 @@ function S(e) {
     }), (0, r.jsx)(m.X6q, {
       variant: "text-xs/bold",
       color: "text-muted",
-      className: C.exampleRulesTitle,
+      className: y.exampleRulesTitle,
       children: O.intl.string(O.t.XHWj8f)
     }), (0, r.jsx)(j.j, {
       pills: A,
-      pillClassName: C.pill
+      pillClassName: y.pill
     })]
   })
 }

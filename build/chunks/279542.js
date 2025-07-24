@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   ZP: () => G,
@@ -25,8 +25,8 @@ var r = n(255367),
   v = n(63063),
   _ = n(78451),
   O = n(434404),
-  C = n(999382),
-  y = n(181339),
+  y = n(999382),
+  C = n(181339),
   N = n(193544),
   I = n(981631),
   E = n(388032),
@@ -311,7 +311,7 @@ function G() {
   let {
     guild: e,
     mfaLevel: t
-  } = (0, o.cj)([C.Z], () => C.Z.getProps(), []), n = (0, o.e7)([b.Z], () => b.Z.enabled, []);
+  } = (0, o.cj)([y.Z], () => y.Z.getProps(), []), n = (0, o.e7)([b.Z], () => b.Z.enabled, []);
   return null == e ? null : n ? (0, r.jsx)(u.Z, {}) : (0, r.jsxs)(c.hjN, {
     title: E.intl.string(E.t["suhY+f"]),
     tag: c.RB0.H1,
@@ -331,7 +331,7 @@ function G() {
       className: T.divider
     }), (0, r.jsx)("div", {
       className: T.setupContainer,
-      children: (0, r.jsx)(y.w, {
+      children: (0, r.jsx)(C.w, {
         guild: e
       })
     })]

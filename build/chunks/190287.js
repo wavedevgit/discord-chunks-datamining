@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   Z: () => x
@@ -28,15 +28,15 @@ let h = e => {
       reasonMaxLength: j,
       placeholder: v,
       position: _
-    } = e, O = i.useRef(null), [C, y] = i.useState(!1), N = (0, l.e7)([m.Z], () => m.Z.isGuildMetadataLoaded());
+    } = e, O = i.useRef(null), [y, C] = i.useState(!1), N = (0, l.e7)([m.Z], () => m.Z.isGuildMetadataLoaded());
     return (0, r.jsxs)("div", {
       className: f.reasonContainer,
       children: [(0, r.jsx)(a.yRy, {
         targetElementRef: O,
         onRequestClose: () => {
-          y(!1)
+          C(!1)
         },
-        shouldShow: C,
+        shouldShow: y,
         position: "right",
         align: "top",
         animation: a.yRy.Animation.NONE,
@@ -62,7 +62,7 @@ let h = e => {
           children: (0, r.jsx)(c.Z, {
             active: !1,
             onClick: () => {
-              y(!0)
+              C(!0)
             },
             tabIndex: 0,
             renderButtonContents: null != u ? () => (0, r.jsx)(o.Z, {

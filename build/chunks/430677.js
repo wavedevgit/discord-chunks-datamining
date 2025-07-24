@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   Z: () => _
@@ -52,9 +52,9 @@ function v(e, t) {
   }), e
 }
 let _ = function(e) {
-  var t, l, _, O, C;
+  var t, l, _, O, y;
   let {
-    guildId: y,
+    guildId: C,
     action: N,
     actionIndex: I,
     onChange: E,
@@ -62,7 +62,7 @@ let _ = function(e) {
     onDragStart: T,
     onDragComplete: P,
     onDragReset: w
-  } = e, R = (0, a.e7)([p.Z], () => p.Z.getChannel(N.channelId)), Z = (0, a.e7)([f.Z], () => f.Z.getGuild(y)), {
+  } = e, R = (0, a.e7)([p.Z], () => p.Z.getChannel(N.channelId)), Z = (0, a.e7)([f.Z], () => f.Z.getGuild(C)), {
     customEmoji: D,
     unicodeEmoji: A
   } = (0, u.Z)(null == (t = N.emoji) ? void 0 : t.id, null == (l = N.emoji) ? void 0 : l.name), L = null == N.emoji || null != D || null != A, k = h.ZP.getNewMemberActionIconURL({
@@ -83,20 +83,20 @@ let _ = function(e) {
     onDragComplete: P,
     onDragReset: w
   }), H = i.useCallback(() => {
-    if (null != y) return (0, o.ZDy)(async () => {
+    if (null != C) return (0, o.ZDy)(async () => {
       let {
         default: e
       } = await n.e("14653").then(n.bind(n, 380716));
       return t => (0, r.jsx)(e, v(j({}, t), {
-        guildId: y,
+        guildId: C,
         action: N,
         onSave: (e, t, n) => E(I, e, t, n),
         onDelete: () => S(I)
       }))
     })
-  }, [y, N, I, E, S]);
+  }, [C, N, I, E, S]);
   if (null == R || null == Z) return null;
-  let z = null != (C = (0, c.KS)(R)) ? C : o.VL1;
+  let z = null != (y = (0, c.KS)(R)) ? y : o.VL1;
   return (0, r.jsxs)("div", {
     className: b.actionItemContainer,
     children: [(0, r.jsxs)("div", {

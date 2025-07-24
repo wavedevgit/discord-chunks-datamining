@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   $$: () => b,
@@ -131,7 +131,7 @@ function j(e) {
     guildId: t,
     onEdit: n,
     disableGoodStatus: c
-  } = e, d = (0, l.Wu)([a.Z], () => a.Z.getDefaultChannelIds(t)), u = (0, l.e7)([a.Z], () => (0, o.kl)(t, a.Z.getDefaultChannelIds(t), a.Z.getOnboardingPrompts(t)).length), b = i.useMemo(() => new Set(d), [d]), [, j] = (0, o.VF)(t, b), v = j.length, _ = x(t), O = (0, m.O4)(t), C = (0, l.e7)([a.Z], () => a.Z.isAdvancedMode(t)), y = C ? p.intl.formatToPlainString(p.t.nHwnLC, {
+  } = e, d = (0, l.Wu)([a.Z], () => a.Z.getDefaultChannelIds(t)), u = (0, l.e7)([a.Z], () => (0, o.kl)(t, a.Z.getDefaultChannelIds(t), a.Z.getOnboardingPrompts(t)).length), b = i.useMemo(() => new Set(d), [d]), [, j] = (0, o.VF)(t, b), v = j.length, _ = x(t), O = (0, m.O4)(t), y = (0, l.e7)([a.Z], () => a.Z.isAdvancedMode(t)), C = y ? p.intl.formatToPlainString(p.t.nHwnLC, {
     numDefaultChannels: v,
     numFromQuestions: u - v
   }) : _ ? p.intl.formatToPlainString(p.t.HxEwSk, {
@@ -141,14 +141,14 @@ function j(e) {
     numChattableChannels: g.X
   });
   return (0, r.jsx)(h, {
-    title: C ? p.intl.string(p.t.YZookZ) : p.intl.string(p.t["4GSygo"]),
-    description: y,
+    title: y ? p.intl.string(p.t.YZookZ) : p.intl.string(p.t["4GSygo"]),
+    description: C,
     icon: (0, r.jsx)(s.VL1, {
       size: "md",
       color: "currentColor",
       className: f.channelIcon
     }),
-    hasStarted: v > 0 || C,
+    hasStarted: v > 0 || y,
     status: _ || O ? c ? "none" : "good" : "required",
     onEdit: n
   })
@@ -194,8 +194,8 @@ function _(e) {
   v && (x && !o ? _ = "good" : x || (_ = "required"));
   let O = p.intl.string(p.t.GMOwOD);
   x ? v || (O = p.intl.string(p.t.wHOoyM)) : O = p.intl.string(p.t.wXFbgY);
-  let C = null;
-  return v && g && (C = (0, r.jsx)(s.rsf, {
+  let y = null;
+  return v && g && (y = (0, r.jsx)(s.rsf, {
     className: f.inlineSwitch,
     checked: b,
     onChange: j,
@@ -211,6 +211,6 @@ function _(e) {
     hasStarted: v,
     status: _,
     onEdit: n,
-    extra: C
+    extra: y
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   Z: () => N,
@@ -34,11 +34,11 @@ let j = -1,
     tension: 140,
     friction: 30
   },
-  C = {
+  y = {
     tension: 800,
     friction: 20
   };
-class y extends(r = l.Component) {
+class C extends(r = l.Component) {
   getTotalHeight() {
     let {
       tiers: e
@@ -159,7 +159,7 @@ class y extends(r = l.Component) {
         to: {
           scale: j ? 1.625 : 1
         },
-        config: C,
+        config: y,
         children: t => {
           var n, r;
           return (0, i.jsx)(o.animated.div, (n = function(e) {
@@ -324,7 +324,7 @@ class y extends(r = l.Component) {
     })
   }
 }
-b(y, "defaultProps", {
+b(C, "defaultProps", {
   initialAnimationDelay: 0
 });
-let N = y
+let N = C

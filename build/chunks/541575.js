@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   Z: () => _
@@ -57,7 +57,7 @@ let _ = function(e) {
     guild: t,
     disabled: _,
     role: O
-  } = e, C = (0, a.ZP)(), y = (0, m.oC)(t.id, O), {
+  } = e, y = (0, a.ZP)(), C = (0, m.oC)(t.id, O), {
     analyticsLocations: N
   } = (0, c.ZP)(), I = () => {
     (0, s.ZDy)(async () => {
@@ -112,7 +112,7 @@ let _ = function(e) {
       className: b.rolePreviewArea,
       children: [(0, r.jsx)("div", {
         className: b.previewContainer,
-        children: null != y ? (0, r.jsx)(d.Z, v(j({}, y), {
+        children: null != C ? (0, r.jsx)(d.Z, v(j({}, C), {
           className: b.roleIconPreview,
           enableTooltip: !1
         })) : (0, r.jsx)(s.FmF, {
@@ -124,16 +124,16 @@ let _ = function(e) {
         })
       }), (0, r.jsx)(l.zx, {
         className: b.button,
-        color: (0, i.ap)(C) ? l.zx.Colors.PRIMARY : l.zx.Colors.WHITE,
+        color: (0, i.ap)(y) ? l.zx.Colors.PRIMARY : l.zx.Colors.WHITE,
         look: l.zx.Looks.OUTLINED,
         onClick: () => t.features.has(f.oNc.ROLE_ICONS) ? I() : S({
           object: f.qAy.UPLOAD_IMAGE
         }),
         disabled: _,
         children: x.intl.string(x.t.mD1oGB)
-      }), null != y ? (0, r.jsx)(l.zx, {
+      }), null != C ? (0, r.jsx)(l.zx, {
         className: b.button,
-        color: (0, i.ap)(C) ? l.zx.Colors.PRIMARY : l.zx.Colors.TRANSPARENT,
+        color: (0, i.ap)(y) ? l.zx.Colors.PRIMARY : l.zx.Colors.TRANSPARENT,
         look: l.zx.Looks.BLANK,
         onClick: () => {
           (0, p._l)(O.id, null, null)

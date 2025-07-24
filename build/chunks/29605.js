@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   FT: () => K,
@@ -25,8 +25,8 @@ var r = n(255367),
   v = n(110924),
   _ = n(200876),
   O = n(556019),
-  C = n(748523),
-  y = n(730089),
+  y = n(748523),
+  C = n(730089),
   N = n(372444),
   I = n(889564),
   E = n(372129),
@@ -361,13 +361,13 @@ let z = d().throttle(h.OQ, 1e3),
     }, [e.id]), i.useEffect(() => {
       null != h && h < c && z(e.id)
     }, [c, h, e.id]);
-    let K = i.useCallback(() => (0, C.i)({
+    let K = i.useCallback(() => (0, y.i)({
         analyticsLocation: {
           page: M.ZY5.GUILD_SETTINGS,
           section: M.jXE.GUILD_SETTINGS_EMOJI_ADD_BUTTON
         }
       }), []),
-      J = (n, r, i) => (0, y.G)({
+      J = (n, r, i) => (0, C.G)({
         data: n,
         file: r,
         image: i,

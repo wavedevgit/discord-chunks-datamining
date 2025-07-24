@@ -261,7 +261,8 @@ function W(e) {
       activity: H,
       user: n,
       onAction: eo,
-      onClose: Q
+      onClose: Q,
+      application: W
     })
   });
   if (null === en) return null;

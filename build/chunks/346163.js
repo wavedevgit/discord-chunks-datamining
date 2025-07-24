@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   Z: () => h
@@ -32,8 +32,8 @@ function h(e) {
       submittedRequest: O
     } = (0, d.Z)(null == e ? void 0 : e.id),
     {
-      loading: C,
-      error: y,
+      loading: y,
+      error: C,
       refresh: N,
       eligibility: I
     } = (0, u.Z)(null == e ? void 0 : e.id),
@@ -70,8 +70,8 @@ function h(e) {
     isGuildOwner: b,
     createEnableRequest: _,
     resubmittedRequest: O,
-    eligibilityLoading: C,
-    eligibilityError: y,
+    eligibilityLoading: y,
+    eligibilityError: C,
     refreshEligibility: N,
     eligibility: I,
     eligibleForMonetization: R,

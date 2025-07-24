@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   O: () => T
@@ -23,8 +23,8 @@ var r = n(255367),
   v = n(658666),
   _ = n(307375),
   O = n(384632),
-  C = n(981631),
-  y = n(388032),
+  y = n(981631),
+  C = n(388032),
   N = n(162193);
 
 function I(e) {
@@ -74,17 +74,17 @@ function E(e) {
     return null == (e = v.Z.pendingState) ? void 0 : e.isAgeRestricted
   }), c = i.useCallback(e => {
     h.Z.setIsAgeRestricted(t, e)
-  }, [t]), m = n === C.V_K.AGE_RESTRICTED && a !== C.V_K.AGE_RESTRICTED;
+  }, [t]), m = n === y.V_K.AGE_RESTRICTED && a !== y.V_K.AGE_RESTRICTED;
   return (0, r.jsx)(s.hjN, {
     children: (0, r.jsx)(s.j7V, {
       onChange: c,
       value: o,
       hideBorder: !0,
       disabled: m,
-      note: y.intl.format(y.t["iyQQ6+"], {
-        helpArticleLink: u.Z.getArticleURL(C.BhN.NSFW_SERVER_AGE_RESTRICTION)
+      note: C.intl.format(C.t["iyQQ6+"], {
+        helpArticleLink: u.Z.getArticleURL(y.BhN.NSFW_SERVER_AGE_RESTRICTION)
       }),
-      children: y.intl.string(y.t.N9xEJC)
+      children: C.intl.string(C.t.N9xEJC)
     })
   })
 }
@@ -123,7 +123,7 @@ function T() {
     children: [(0, r.jsx)(s.X6q, {
       color: "header-primary",
       variant: "heading-lg/semibold",
-      children: y.intl.string(y.t.YJlvBA)
+      children: C.intl.string(C.t.YJlvBA)
     }), (0, r.jsx)(_.h, {
       onTypePicked: n,
       activeType: a,

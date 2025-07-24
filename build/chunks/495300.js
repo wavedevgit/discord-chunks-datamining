@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   Z: () => T
@@ -23,8 +23,8 @@ var r = n(255367),
   v = n(142961),
   _ = n(729311),
   O = n(850864),
-  C = n(729995),
-  y = n(966301),
+  y = n(729995),
+  C = n(966301),
   N = n(707076),
   I = n(213956),
   E = n(388032),
@@ -52,7 +52,7 @@ function P(e) {
       (0, u.Q3)(o.z.COMMUNITY_ONBOARDING_NEW_BADGE)
     }, []), l) {
     case j.PG.LANDING:
-      t = x ? (0, r.jsx)(C.Z, {
+      t = x ? (0, r.jsx)(y.Z, {
         completed: !0,
         guildId: n
       }) : (0, r.jsx)(N.Z, {});
@@ -66,7 +66,7 @@ function P(e) {
       });
       break;
     case j.PG.CUSTOMIZATION_QUESTIONS:
-      t = (0, r.jsx)(y.ZP, {
+      t = (0, r.jsx)(C.ZP, {
         saveOnClose: !x
       });
       break;
@@ -76,7 +76,7 @@ function P(e) {
       });
       break;
     case j.PG.REVIEW:
-      t = (0, r.jsx)(C.Z, {
+      t = (0, r.jsx)(y.Z, {
         completed: x,
         guildId: n
       })

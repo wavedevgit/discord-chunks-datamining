@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   J: () => w,
@@ -24,8 +24,8 @@ var r = n(255367),
   v = n(63063),
   _ = n(434404),
   O = n(999382),
-  C = n(718157),
-  y = n(450474),
+  y = n(718157),
+  C = n(450474),
   N = n(190287),
   I = n(465520),
   E = n(981631),
@@ -271,7 +271,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                           className: T.description,
                           children: S.intl.string(S.t.MVXonJ)
                         })]
-                      }), (0, r.jsx)(C.E, {
+                      }), (0, r.jsx)(y.E, {
                         guildId: u.id,
                         guildMetadata: A,
                         isDisabled: !Z
@@ -280,7 +280,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         children: [(0, r.jsx)(o.vwX, {
                           className: T.formTitle,
                           children: S.intl.string(S.t.oOPlPD)
-                        }), (0, r.jsx)(y.Z, {
+                        }), (0, r.jsx)(C.Z, {
                           guild: u,
                           guildMetadata: A,
                           disabled: !Z

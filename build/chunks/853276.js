@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   Z: () => h
@@ -132,8 +132,8 @@ function h(e) {
     isSelecting: x,
     error: b,
     forceShowErrorTooltip: j
-  } = e, v = i.useRef(null), _ = i.useRef(null), [O, C] = i.useState(!1), {
-    ref: y,
+  } = e, v = i.useRef(null), _ = i.useRef(null), [O, y] = i.useState(!1), {
+    ref: C,
     width: N = 0
   } = (0, c.ZP)(O), {
     ref: I,
@@ -151,19 +151,19 @@ function h(e) {
     }, [n]),
     D = i.useCallback(function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-      if (t.trim().length <= 0 && p(), null != v.current && null != y.current && null != _.current) {
+      if (t.trim().length <= 0 && p(), null != v.current && null != C.current && null != _.current) {
         var n;
-        v.current.scrollTo(0, 0), v.current.setSelectionRange(0, 0), v.current.scrollLeft = 0, y.current.scrollLeft = 0, (null == (n = _.current) ? void 0 : n.ref) != null && (_.current.ref.scrollLeft = 0)
+        v.current.scrollTo(0, 0), v.current.setSelectionRange(0, 0), v.current.scrollLeft = 0, C.current.scrollLeft = 0, (null == (n = _.current) ? void 0 : n.ref) != null && (_.current.ref.scrollLeft = 0)
       }
-      C(!1), l(e)
-    }, [t, y, l, p]),
+      y(!1), l(e)
+    }, [t, C, l, p]),
     A = i.useCallback(e => {
       let n = t.trim().length <= 0;
       u.ye.has(e.key) ? (e.preventDefault(), e.stopPropagation(), D(!0)) : "Backspace" === e.key && n && (e.preventDefault(), e.stopPropagation(), D(!0))
     }, [D, t]),
     L = i.useCallback(e => {
       let t = e.metaKey || e.ctrlKey;
-      g(t), t ? e.preventDefault() : C(!0), e.stopPropagation()
+      g(t), t ? e.preventDefault() : y(!0), e.stopPropagation()
     }, [g]),
     k = i.useCallback(e => {
       p()
@@ -204,7 +204,7 @@ function h(e) {
             width: R > 0 ? R : "calc(".concat(t.length, "ch + 10px)")
           }
         }), (0, r.jsx)(f, {
-          ref: y,
+          ref: C,
           value: t,
           isEditing: O,
           isSelected: h,

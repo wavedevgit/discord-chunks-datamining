@@ -1,7 +1,7 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
-  Z: () => C
+  Z: () => y
 });
 var r = n(255367);
 n(73800);
@@ -199,7 +199,7 @@ function O(e) {
   })
 }
 
-function C(e) {
+function y(e) {
   let {
     highlightedCreators: t
   } = e;

@@ -28,8 +28,8 @@ var r, i = n(255367),
   T = n(548816),
   P = n(925329),
   j = n(102172),
-  A = n(871118),
-  x = n(707409),
+  x = n(871118),
+  A = n(707409),
   Z = n(359110),
   w = n(769654),
   L = n(849171),
@@ -95,10 +95,10 @@ class ee extends l.Component {
       } = t;
     return null == n || !(0, _.Z)(t) || (0, O.Z)(t) ? null : Q((0, b.Z)(t) ? (0, i.jsx)(J, {
       timestamps: n
-    }) : (0, i.jsx)(x.ZP, {
+    }) : (0, i.jsx)(A.ZP, {
       start: n.start,
       end: n.end,
-      location: x.ZP.Locations.USER_ACTIVITY,
+      location: A.ZP.Locations.USER_ACTIVITY,
       className: Y.__invalid_playTime
     }))
   }
@@ -509,7 +509,7 @@ ei.Header = er, ei.Body = e => {
   } = e, d = (0, s.e7)([k.Z], () => k.Z.getChannel(a.channelId)), [p, h] = (0, j.wq)(d), f = (0, i.jsxs)(u.P3F, {
     onClick: p ? o : void 0,
     className: Y.applicationStreamingPreviewWrapper,
-    children: [(0, i.jsx)(A.Z, {
+    children: [(0, i.jsx)(x.Z, {
       stream: a,
       className: Y.applicationStreamingPreviewSize
     }), (0, i.jsx)(u.Text, {

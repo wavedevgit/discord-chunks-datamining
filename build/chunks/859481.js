@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   z: () => N
@@ -24,7 +24,7 @@ var r = n(255367),
   _ = n(388032),
   O = n(919957);
 
-function C(e) {
+function y(e) {
   let {
     errorDetails: t,
     originalVanityURLCode: n
@@ -50,7 +50,7 @@ function C(e) {
   return null
 }
 
-function y(e) {
+function C(e) {
   let {
     guild: t,
     vanityURLCode: n,
@@ -114,7 +114,7 @@ function N(e) {
     })
   }, [p, t, b]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, f.p)(t) ? (0, r.jsx)(y, {
+    children: [(0, f.p)(t) ? (0, r.jsx)(C, {
       guild: t,
       vanityURLCode: n,
       vanityURLUses: s,
@@ -123,7 +123,7 @@ function N(e) {
     }) : (0, r.jsx)(h.P, {
       onClick: _,
       className: O.upsellButton
-    }), (0, r.jsx)(C, {
+    }), (0, r.jsx)(y, {
       errorDetails: d,
       originalVanityURLCode: a
     })]

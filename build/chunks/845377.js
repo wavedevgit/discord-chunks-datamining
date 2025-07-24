@@ -1,4 +1,4 @@
-/** Chunk was on 88388 **/
+/** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
   Z: () => E
@@ -24,7 +24,7 @@ var r = n(255367),
   _ = n(388032),
   O = n(252151);
 
-function C(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,7 +43,7 @@ function C(e) {
   return e
 }
 
-function y(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -122,7 +122,7 @@ let E = e => {
     var e, n, r;
     if (null == P) return [];
     let i = null != (n = (null != (e = f.ZP.getChannels(t.id)) ? e : {})[f.sH]) ? n : [],
-      l = null != (r = null == i ? void 0 : i.map(e => e.channel).reduce((e, t) => y(C({}, e), {
+      l = null != (r = null == i ? void 0 : i.map(e => e.channel).reduce((e, t) => C(y({}, e), {
         [t.id]: t
       }), {})) ? r : {};
     return null == P ? [] : Object.entries(P).map(e => {
@@ -213,7 +213,7 @@ let E = e => {
             let {
               default: e
             } = await n.e("23401").then(n.bind(n, 666599));
-            return t => (0, r.jsx)(e, y(C({}, t), {
+            return t => (0, r.jsx)(e, C(y({}, t), {
               guildChecklist: m
             }))
           }),
@@ -298,7 +298,7 @@ let E = e => {
         }), o]
       })
     })(), Z.filter(e => !c || null == e.checked || !e.checked).map((e, t) => (0, r.jsxs)(i.Fragment, {
-      children: [(0, r.jsx)(N, C({}, e)), t < Z.length - 1 ? (0, r.jsx)("hr", {
+      children: [(0, r.jsx)(N, y({}, e)), t < Z.length - 1 ? (0, r.jsx)("hr", {
         className: O.separator
       }) : null]
     }, "".concat(e.name)))]
