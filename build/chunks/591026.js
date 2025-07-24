@@ -52,7 +52,7 @@ function h(e) {
   let {
     rule: h,
     onChangeRule: x
-  } = e, [b, j] = i.useState(null == (t = h.triggerMetadata) ? void 0 : t.mentionTotalLimit), _ = (0, s.a)(h.guildId, !1);
+  } = e, [b, j] = i.useState(null == (t = h.triggerMetadata) ? void 0 : t.mentionTotalLimit), v = (0, s.a)(h.guildId, !1);
   return (0, r.jsxs)("div", {
     className: g.cardContentsContainer,
     children: [(0, r.jsxs)(c.Z, {
@@ -94,7 +94,7 @@ function h(e) {
             className: g.stepper
           })
         })]
-      }), _ ? (0, r.jsxs)("div", {
+      }), v ? (0, r.jsxs)("div", {
         className: g.mentionLimitContainer,
         children: [(0, r.jsx)("div", {
           className: g.mentionLimitIconContainer,

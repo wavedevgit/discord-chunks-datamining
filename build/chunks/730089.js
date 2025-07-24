@@ -37,8 +37,8 @@ let f = (e, t, n, r) => (o.default.track(m.rMx.EMOJI_UPLOAD_FILE_SIZE_LIMIT_EXCE
       uploadId: x,
       roles: b,
       image: j,
-      hideErrorModal: _,
-      analyticsLocation: v
+      hideErrorModal: v,
+      analyticsLocation: _
     } = e, O = c.ZP.sanitizeEmojiName(n.name.split(".")[0]);
     if (c.ZP.isFileTooBig(n)) {
       if ("image/gif" === n.type || "image/webp" === n.type || "image/avif" === n.type) return f(n.name, n.size, d, x);
@@ -59,7 +59,7 @@ let f = (e, t, n, r) => (o.default.track(m.rMx.EMOJI_UPLOAD_FILE_SIZE_LIMIT_EXCE
         image: t,
         name: O,
         roles: b,
-        analyticsLocation: v
+        analyticsLocation: _
       }), o.default.track(m.rMx.EMOJI_UPLOAD_COMPLETED, {
         guild_id: d,
         upload_id: x
@@ -75,7 +75,7 @@ let f = (e, t, n, r) => (o.default.track(m.rMx.EMOJI_UPLOAD_FILE_SIZE_LIMIT_EXCE
         upload_id: x
       }), e = g.intl.formatToPlainString(g.t.kIO9j4, {
         maxSize: u.xG
-      }), n = a.d.TOO_BIG) : (null != r.image || r.code === m.evJ.INVALID_FILE_ASSET_SIZE_RESIZE_GIF) && (n = a.d.RESIZE_GIF)), 429 === i && (e = g.intl.string(g.t["Whhv4+"]), n = a.d.RATE_LIMIT), null == e || _ || l.Z.show({
+      }), n = a.d.TOO_BIG) : (null != r.image || r.code === m.evJ.INVALID_FILE_ASSET_SIZE_RESIZE_GIF) && (n = a.d.RESIZE_GIF)), 429 === i && (e = g.intl.string(g.t["Whhv4+"]), n = a.d.RATE_LIMIT), null == e || v || l.Z.show({
         title: g.intl.string(g.t.iufib2),
         body: e
       }), n

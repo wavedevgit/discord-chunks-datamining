@@ -26,11 +26,11 @@ function b(e) {
   } = e, {
     editStateId: b,
     guildId: j,
-    groupListingId: _
-  } = (0, m.N)(), v = (0, a.e7)([u.Z], () => u.Z.getSubscriptionListing(b)), O = null == v ? void 0 : v.id, C = (0, g.Z)(j), y = i.useMemo(() => {
+    groupListingId: v
+  } = (0, m.N)(), _ = (0, a.e7)([u.Z], () => u.Z.getSubscriptionListing(b)), O = null == _ ? void 0 : _.id, C = (0, g.Z)(j), y = i.useMemo(() => {
     var e;
-    return null != C && null != v && (null != (e = C[v.role_id]) ? e : 0)
-  }, [C, v]), N = 0 === y, I = null == O, E = null != (t = null == v ? void 0 : v.archived) && t, {
+    return null != C && null != _ && (null != (e = C[_.role_id]) ? e : 0)
+  }, [C, _]), N = 0 === y, I = null == O, E = null != (t = null == _ ? void 0 : _.archived) && t, {
     error: S,
     deleteSubscriptionListing: T,
     submitting: P
@@ -41,7 +41,7 @@ function b(e) {
   } = (0, d._1)(), {
     allowSelfRemoveMonetization: D
   } = (0, c.gX)(j);
-  return null == v ? null : (0, r.jsx)(p.Z, {
+  return null == _ ? null : (0, r.jsx)(p.Z, {
     title: f.intl.string(f.t["7Si8Ul"]),
     children: (0, r.jsxs)(o.Kqy, {
       gap: 16,
@@ -71,7 +71,7 @@ function b(e) {
             variant: "critical-primary",
             onClick: () => {
               let e = async () => {
-                (I || (s()(null != _, "group listing doesnt exist"), s()(null != O, "subscription listing doesnt exist"), await T(j, _, O))) && (null == l || l())
+                (I || (s()(null != v, "group listing doesnt exist"), s()(null != O, "subscription listing doesnt exist"), await T(j, v, O))) && (null == l || l())
               };
               (0, o.ZDy)(async () => {
                 let {
@@ -115,7 +115,7 @@ function b(e) {
         }), (0, r.jsx)(o.zxk, {
           variant: "critical-primary",
           onClick: () => {
-            s()(null != _, "group listing doesnt exist"), s()(null != O, "subscription listing doesnt exist"), (0, o.ZDy)(async () => {
+            s()(null != v, "group listing doesnt exist"), s()(null != O, "subscription listing doesnt exist"), (0, o.ZDy)(async () => {
               let {
                 Modal: e
               } = await Promise.resolve().then(n.bind(n, 82659));
@@ -131,7 +131,7 @@ function b(e) {
                   text: f.intl.string(f.t.RL0wjo),
                   variant: "critical-primary",
                   onClick: async () => {
-                    await R(j, _, O), t.onClose()
+                    await R(j, v, O), t.onClose()
                   }
                 }],
                 children: (0, r.jsx)(o.Text, {

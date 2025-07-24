@@ -1,4 +1,4 @@
-/** Chunk was on 3496 **/
+/** Chunk was on 54168 **/
 t.d(e, {
   S: () => h
 });
@@ -10,7 +10,7 @@ var n = t(255367),
 let a = ["#be0351", "#ff2c52", "#f0f0f0"],
   o = ["#ffb84b", "#ffe361", "#f0f0f0"],
   g = [.3, .4, 1],
-  v = [{
+  f = [{
     base: 8,
     tint: 1
   }, {
@@ -20,7 +20,7 @@ let a = ["#be0351", "#ff2c52", "#f0f0f0"],
     base: 2,
     tint: 1
   }],
-  f = [.3, .5, 1],
+  v = [.3, .5, 1],
   c = [{
     base: 8,
     tint: 1
@@ -34,8 +34,8 @@ let a = ["#be0351", "#ff2c52", "#f0f0f0"],
   h = A => {
     var e, t, {
         width: h = 24,
-        height: u = 24,
-        primaryTintColor: E,
+        height: E = 24,
+        primaryTintColor: u,
         secondaryTintColor: d
       } = A,
       C = function(A, e) {
@@ -59,12 +59,12 @@ let a = ["#be0351", "#ff2c52", "#f0f0f0"],
         secondaryColorsTransformed: D
       } = (0, s.s)({
         primaryBaseColors: a,
-        primaryTintColor: E,
+        primaryTintColor: u,
         primaryTintLuminances: g,
-        primaryLuminanceWeights: v,
+        primaryLuminanceWeights: f,
         secondaryBaseColors: o,
         secondaryTintColor: d,
-        secondaryTintLuminances: f,
+        secondaryTintLuminances: v,
         secondaryLuminanceWeights: c
       });
     return (0, n.jsxs)("svg", (e = function(A) {
@@ -86,7 +86,7 @@ let a = ["#be0351", "#ff2c52", "#f0f0f0"],
       return A
     }({}, (0, i.Z)(C)), t = t = {
       width: h,
-      height: u,
+      height: E,
       viewBox: "0 0 16 16",
       fill: "none",
       xmlns: "http://www.w3.org/2000/svg",

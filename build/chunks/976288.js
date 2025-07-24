@@ -20,8 +20,8 @@ var r = n(255367),
   x = n(450474),
   b = n(166184),
   j = n(936735),
-  _ = n(654351),
-  v = n(557359),
+  v = n(654351),
+  _ = n(557359),
   O = n(386885),
   C = n(203377),
   y = n(929834),
@@ -210,7 +210,7 @@ function P(e) {
       keywords: r
     } = n;
     r.length >= C.G7 || (m(null), (0, d.zH)(t, [...r, e]))
-  }, [t, n]), f = i.useMemo(() => (0, _.P5)(n.primaryCategoryId).filter(e => !n.keywords.includes(e)).map(e => {
+  }, [t, n]), f = i.useMemo(() => (0, v.P5)(n.primaryCategoryId).filter(e => !n.keywords.includes(e)).map(e => {
     let t = n.keywords.length >= C.G7;
     return {
       text: e,
@@ -381,7 +381,7 @@ function D(e) {
     }), (0, r.jsx)(Z, {}), (0, r.jsx)(R, {
       preferredLocale: o.preferredLocale
     }), (0, r.jsx)(Z, {}), (0, r.jsx)("div", {
-      children: (0, r.jsx)(v.A, {
+      children: (0, r.jsx)(_.A, {
         requireTerms: t,
         rules: n
       })

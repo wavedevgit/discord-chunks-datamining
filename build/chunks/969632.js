@@ -57,10 +57,10 @@ function j(e, t) {
   p.resourceChannels[n] = u({}, t), p.resourceChannels = [...p.resourceChannels]
 }
 
-function _() {
+function v() {
   f = !1, p = l().cloneDeep(Object.assign({}, o.Z.getSettings(g)))
 }
-class v extends(r = s.ZP.PersistedStore) {
+class _ extends(r = s.ZP.PersistedStore) {
   initialize(e) {
     null != e && (h = e.dismissedSuggestedChannelIdsByGuildId), this.waitFor(c.Z, o.Z)
   }
@@ -95,8 +95,8 @@ class v extends(r = s.ZP.PersistedStore) {
     return null == n ? null : n
   }
 }
-d(v, "displayName", "GuildSettingsOnboardingHomeSettingsStore"), d(v, "persistKey", "GuildSettingsOnboardingHomeSettingsStore");
-let O = new v(a.Z, {
+d(_, "displayName", "GuildSettingsOnboardingHomeSettingsStore"), d(_, "persistKey", "GuildSettingsOnboardingHomeSettingsStore");
+let O = new _(a.Z, {
   GUILD_SETTINGS_INIT: x,
   GUILD_SETTINGS_SET_SECTION: x,
   GUILD_SETTINGS_ONBOARDING_HOME_SETTINGS_RESET: x,
@@ -106,8 +106,8 @@ let O = new v(a.Z, {
   GUILD_HOME_SETTINGS_UPDATE_START: function() {
     f = !0
   },
-  GUILD_HOME_SETTINGS_UPDATE_SUCCESS: _,
-  GUILD_HOME_SETTINGS_UPDATE_FAIL: _,
+  GUILD_HOME_SETTINGS_UPDATE_SUCCESS: v,
+  GUILD_HOME_SETTINGS_UPDATE_FAIL: v,
   GUILD_NEW_MEMBER_ACTION_UPDATE_SUCCESS: function(e) {
     let {
       action: t

@@ -21,7 +21,7 @@ let f = e => {
     isDisabled: l,
     sticker: f,
     canManageSticker: h
-  } = e, [x, b] = i.useState(!1), [j, _] = (0, c.Z)(null, 4e3), v = () => {
+  } = e, [x, b] = i.useState(!1), [j, v] = (0, c.Z)(null, 4e3), _ = () => {
     (0, a.ZDy)(async () => {
       let {
         default: e
@@ -49,11 +49,11 @@ let f = e => {
       }, t))
     })
   }, O = async () => {
-    _(null), b(!0);
+    v(null), b(!0);
     try {
       await (0, u.Um)(f)
     } catch (e) {
-      _(e.body.message), b(!1)
+      v(e.body.message), b(!1)
     }
   }, C = d.ZP.useUserTag(f.user);
   return (0, r.jsx)(a.ua7, {
@@ -94,7 +94,7 @@ let f = e => {
           className: p.actions,
           children: [(0, r.jsx)(a.P3F, {
             className: p.action,
-            onClick: v,
+            onClick: _,
             "aria-label": g.intl.string(g.t.bt75u7),
             children: (0, r.jsx)(a.vdY, {
               size: "xs",

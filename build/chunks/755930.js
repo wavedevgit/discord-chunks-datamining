@@ -1,12 +1,12 @@
 /** Chunk was on 88388 **/
 "use strict";
 n.d(t, {
-  GW: () => v,
+  GW: () => _,
   Qg: () => h,
   Yn: () => O,
   ZP: () => E,
   bL: () => y,
-  i$: () => _,
+  i$: () => v,
   nn: () => j,
   qN: () => C,
   wy: () => x
@@ -125,7 +125,7 @@ function j(e) {
   }, l))
 }
 
-function _(e) {
+function v(e) {
   var {
     cellClassName: t,
     getAmount: n,
@@ -145,7 +145,7 @@ function _(e) {
   }, s))
 }
 
-function v(e) {
+function _(e) {
   var {
     cellClassName: t,
     getCount: n,

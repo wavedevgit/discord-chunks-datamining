@@ -20,8 +20,8 @@ var r = n(255367),
   x = n(699516),
   b = n(594174),
   j = n(259580),
-  _ = n(411198),
-  v = n(51144),
+  v = n(411198),
+  _ = n(51144),
   O = n(426563),
   C = n(909746),
   y = n(501801),
@@ -71,7 +71,7 @@ class P extends i.PureComponent {
       className: E.userHook,
       children: [(0, r.jsx)(d.Text, {
         variant: "text-md/normal",
-        children: v.ZP.getUserTag(e, {
+        children: _.ZP.getUserTag(e, {
           mode: "username"
         })
       }), "0" !== e.discriminator && (0, r.jsxs)(d.Text, {
@@ -87,7 +87,7 @@ let w = i.forwardRef((e, t) => {
       log: l,
       className: o,
       expanded: f,
-      guildId: v,
+      guildId: _,
       guild: w,
       onChannelContextMenu: R,
       onContentClick: Z,
@@ -142,7 +142,7 @@ let w = i.forwardRef((e, t) => {
           if (null != e && null != t) return (0, r.jsx)(p.Z, {
             targetElementRef: M,
             user: e,
-            guildId: v,
+            guildId: _,
             newAnalyticsLocations: [m.Z.AVATAR],
             children: e => {
               var t;
@@ -152,7 +152,7 @@ let w = i.forwardRef((e, t) => {
                   t.stopPropagation(), e.onClick(t)
                 },
                 className: E.avatar,
-                src: l.action === N.rsA.AUTO_MODERATION_BLOCK_MESSAGE || l.action === N.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL || l.action === N.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || l.action === N.rsA.AUTO_MODERATION_QUARANTINE_USER ? (0, O.j)() : null == (t = l.user) ? void 0 : t.getAvatarURL(v, 40),
+                src: l.action === N.rsA.AUTO_MODERATION_BLOCK_MESSAGE || l.action === N.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL || l.action === N.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || l.action === N.rsA.AUTO_MODERATION_QUARANTINE_USER ? (0, O.j)() : null == (t = l.user) ? void 0 : t.getAvatarURL(_, 40),
                 "aria-hidden": !0,
                 size: d.EFr.SIZE_40
               }))
@@ -181,7 +181,7 @@ let w = i.forwardRef((e, t) => {
                 target: n,
                 options: i
               } = l;
-              e = (0, _.lM)(n) ? n.name : n.toString();
+              e = (0, v.lM)(n) ? n.name : n.toString();
               let s = C.N5(l);
               return null != s ? (0, r.jsx)("div", {
                 className: E.overflowEllipsis,

@@ -1,7 +1,7 @@
-/** Chunk was on 3496 **/
+/** Chunk was on 54168 **/
 t.d(e, {
-  Z: () => E,
-  l: () => u
+  Z: () => u,
+  l: () => E
 });
 var n = t(255367);
 t(73800);
@@ -12,12 +12,12 @@ var r = t(120356),
   a = t(737770),
   o = t(839008),
   g = t(685184),
-  v = t(369509),
-  f = t(195196),
+  f = t(369509),
+  v = t(195196),
   c = t(388032),
   h = t(668271);
 
-function u(A) {
+function E(A) {
   return (0, n.jsxs)("div", {
     className: l()(h.messageContainer, A.className),
     children: [(0, n.jsx)("div", {
@@ -50,7 +50,7 @@ function u(A) {
     })]
   })
 }
-let E = function(A) {
+let u = function(A) {
   var {
     className: e
   } = A, t = function(A, e) {
@@ -70,30 +70,30 @@ let E = function(A) {
   }(A, ["className"]);
   return (0, n.jsxs)("div", {
     className: l()(h.container, e),
-    children: [(0, n.jsx)(u, {
+    children: [(0, n.jsx)(E, {
       className: h.unfocusedMessage,
       avatar: s.Z,
       username: "Roka",
       usernameStyle: {
         color: "var(--brand-400)"
       },
-      message: c.intl.string(f.default.bpghV1)
-    }), (0, n.jsx)(u, {
+      message: c.intl.string(v.default.bpghV1)
+    }), (0, n.jsx)(E, {
       className: h.unfocusedMessage,
       avatar: a.Z,
       username: "hongo",
       usernameStyle: {
         color: "var(--green-230)"
       },
-      message: c.intl.string(f.default["rnpv7+"])
-    }), (0, n.jsx)(u, {
+      message: c.intl.string(v.default["rnpv7+"])
+    }), (0, n.jsx)(E, {
       avatar: o.Z,
       username: "Lily",
       usernameStyle: {
         color: "var(--orange-300)"
       },
-      message: c.intl.string(f.default.u7tjsr),
-      decorations: (0, n.jsx)(v.S, function(A) {
+      message: c.intl.string(v.default.u7tjsr),
+      decorations: (0, n.jsx)(f.S, function(A) {
         for (var e = 1; e < arguments.length; e++) {
           var t = null != arguments[e] ? arguments[e] : {},
             n = Object.keys(t);
@@ -111,22 +111,22 @@ let E = function(A) {
         }
         return A
       }({}, t))
-    }), (0, n.jsx)(u, {
+    }), (0, n.jsx)(E, {
       className: h.unfocusedMessage,
       avatar: g.Z,
       username: "sharon",
       usernameStyle: {
         color: "var(--brand-400)"
       },
-      message: c.intl.string(f.default.GlWVJC)
-    }), (0, n.jsx)(u, {
+      message: c.intl.string(v.default.GlWVJC)
+    }), (0, n.jsx)(E, {
       className: h.unfocusedMessage,
       avatar: o.Z,
       username: "Lily",
       usernameStyle: {
         color: "var(--orange-300)"
       },
-      message: c.intl.string(f.default.AIp9ho)
+      message: c.intl.string(v.default.AIp9ho)
     })]
   })
 }

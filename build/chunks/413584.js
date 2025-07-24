@@ -20,8 +20,8 @@ var r = n(255367),
   x = n(933557),
   b = n(471445),
   j = n(339085),
-  _ = n(565138),
-  v = n(372769),
+  v = n(565138),
+  _ = n(372769),
   O = n(690221),
   C = n(524329),
   y = n(575258),
@@ -76,8 +76,8 @@ let M = "WELCOME_CHANNEL",
         welcomeChannel: o,
         onEdit: f,
         onChannelReorder: h,
-        isDropHovered: _,
-        index: v
+        isDropHovered: v,
+        index: _
       } = e,
       [O, C] = i.useState(!1),
       y = i.useRef(null),
@@ -90,7 +90,7 @@ let M = "WELCOME_CHANNEL",
         type: M,
         item: {
           channel: o,
-          index: v
+          index: _
         },
         end: (e, t) => {
           null == e || t.didDrop() || h(e.channel, null, !0)
@@ -99,10 +99,10 @@ let M = "WELCOME_CHANNEL",
       [, F] = (0, d.L)({
         accept: M,
         hover: e => {
-          h(e.channel, v, !1)
+          h(e.channel, _, !1)
         },
         drop: e => {
-          h(e.channel, v, !0)
+          h(e.channel, _, !0)
         }
       });
     return i.useLayoutEffect(() => (B(F(y)), () => {
@@ -121,7 +121,7 @@ let M = "WELCOME_CHANNEL",
       className: A.warningIcon
     }), (0, r.jsxs)("div", {
       className: s()(A.welcomeChannel, {
-        [A.dragging]: _
+        [A.dragging]: v
       }),
       ref: y,
       "data-dnd-name": o.description,
@@ -136,7 +136,7 @@ let M = "WELCOME_CHANNEL",
             onChannelReorder: h,
             setShowConfirmModal: C,
             onEdit: f,
-            index: v
+            index: _
           }))
         })
       },
@@ -300,8 +300,8 @@ let M = "WELCOME_CHANNEL",
         className: A.previewContainer,
         children: [(0, r.jsxs)("div", {
           className: A.welcomeHeader,
-          children: [(0, r.jsx)(_.Z, {
-            size: _.Z.Sizes.LARGER,
+          children: [(0, r.jsx)(v.Z, {
+            size: v.Z.Sizes.LARGER,
             className: A.icon,
             guild: t,
             animate: !0,
@@ -312,7 +312,7 @@ let M = "WELCOME_CHANNEL",
             children: D.intl.format(D.t["0aydCA"], {
               guildName: t.name,
               guildNameHook: (e, n) => (0, r.jsxs)("span", {
-                children: [(0, r.jsx)(v.Z, {
+                children: [(0, r.jsx)(_.Z, {
                   guild: t,
                   className: A.headerGuildBadge,
                   flowerStarClassName: A.flowerStar

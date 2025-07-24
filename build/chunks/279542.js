@@ -22,8 +22,8 @@ var r = n(255367),
   x = n(496675),
   b = n(246946),
   j = n(594174),
-  _ = n(63063),
-  v = n(78451),
+  v = n(63063),
+  _ = n(78451),
   O = n(434404),
   C = n(999382),
   y = n(181339),
@@ -82,10 +82,10 @@ function R(e) {
       (0, c.showToast)((0, c.createToast)(E.intl.string(E.t["46Rs3t"]), c.ToastType.FAILURE))
     }
   }, [t]), s = i.useMemo(() => {
-    let e = (0, v.IF)(null == t ? void 0 : t.features.has(I.oNc.COMMUNITY)).map(e => w(P({}, e), {
+    let e = (0, _.IF)(null == t ? void 0 : t.features.has(I.oNc.COMMUNITY)).map(e => w(P({}, e), {
       tooltipPosition: "left"
     }));
-    return (0, v.LJ)(e)
+    return (0, _.LJ)(e)
   }, [t]), a = i.useMemo(() => s.find(e => e.value === (null == t ? void 0 : t.verificationLevel)), [t, s]);
   return (0, r.jsxs)("div", {
     className: T.setupContainer,
@@ -129,10 +129,10 @@ function Z(e) {
       (0, c.showToast)((0, c.createToast)(E.intl.string(E.t["46Rs3t"]), c.ToastType.FAILURE))
     }
   }, [t.id]), g = i.useMemo(() => {
-    let e = (0, v.MF)(null == t ? void 0 : t.features.has(I.oNc.COMMUNITY)).map(e => w(P({}, e), {
+    let e = (0, _.MF)(null == t ? void 0 : t.features.has(I.oNc.COMMUNITY)).map(e => w(P({}, e), {
       tooltipPosition: "left"
     }));
-    return (0, v.LJ)(e)
+    return (0, _.LJ)(e)
   }, [t]), p = i.useMemo(() => g.find(e => e.value === (null == t ? void 0 : t.explicitContentFilter)), [t, g]);
   return (0, r.jsxs)(r.Fragment, {
     children: [l && (0, r.jsx)(c.$i$, {
@@ -149,7 +149,7 @@ function Z(e) {
           color: "header-secondary",
           variant: "text-sm/normal",
           children: E.intl.format(a ? E.t.BI4ukJ : E.t.zOmxND, {
-            helpdeskArticle: _.Z.getArticleURL(I.BhN.SAFE_DIRECT_MESSAGING)
+            helpdeskArticle: v.Z.getArticleURL(I.BhN.SAFE_DIRECT_MESSAGING)
           })
         })]
       }), (0, r.jsx)(N.Z, {

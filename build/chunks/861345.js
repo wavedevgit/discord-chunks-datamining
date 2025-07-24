@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   p: () => j,
-  s: () => _
+  s: () => v
 }), n(953529);
 var r = n(255367),
   i = n(73800),
@@ -33,14 +33,14 @@ function b(e) {
     onEdit: p,
     onMove: b,
     disabled: j = !1
-  } = e, _ = i.useRef(null), v = i.useRef(null), {
+  } = e, v = i.useRef(null), _ = i.useRef(null), {
     drag: O,
     dragPreview: C,
     drop: y,
     isDragging: N
-  } = (0, f.Z)(_, d, u, b);
-  return O(v), C(y(_)), (0, r.jsxs)("div", {
-    ref: _,
+  } = (0, f.Z)(v, d, u, b);
+  return O(_), C(y(v)), (0, r.jsxs)("div", {
+    ref: v,
     className: s()(x.card, {
       [x.cardDragging]: N,
       [x.disabled]: j
@@ -53,7 +53,7 @@ function b(e) {
         emojiName: l,
         className: x.emoji
       }), !j && (0, r.jsx)("div", {
-        ref: v,
+        ref: _,
         className: x.dragIconWrapper,
         "data-dnd-name": g,
         children: (0, r.jsx)(o.Vni, {
@@ -125,7 +125,7 @@ function j(e) {
   })
 }
 
-function _(e) {
+function v(e) {
   let {
     onClick: t,
     children: n,

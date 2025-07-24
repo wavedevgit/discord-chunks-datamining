@@ -20,8 +20,8 @@ var r = n(255367),
   x = n(51248),
   b = n(546513),
   j = n(572456),
-  _ = n(273504),
-  v = n(981631),
+  v = n(273504),
+  _ = n(981631),
   O = n(388032),
   C = n(885655);
 
@@ -36,7 +36,7 @@ function y(e) {
   } = (0, h.V)(), {
     guild: S,
     subsection: T
-  } = (0, l.cj)([o.Z], () => o.Z.getProps()), P = null != (n = null != (t = null == S ? void 0 : S.id) ? t : y) ? n : v.lds, w = null != I, [R] = (0, g.RD)(P), {
+  } = (0, l.cj)([o.Z], () => o.Z.getProps()), P = null != (n = null != (t = null == S ? void 0 : S.id) ? t : y) ? n : _.lds, w = null != I, [R] = (0, g.RD)(P), {
     rulesByTriggerType: Z
   } = (0, g.pH)(P), D = {
     [p.vh.MEMBERS]: O.intl.string(O.t.sx4E5u),
@@ -81,7 +81,7 @@ function y(e) {
           guildId: P,
           triggerType: e,
           rules: null != (t = Z[e]) ? t : [],
-          initWithEdit: T === v.KsC.AUTOMOD_MENTION_SPAM && e === _.fX.MENTION_SPAM
+          initWithEdit: T === _.KsC.AUTOMOD_MENTION_SPAM && e === v.fX.MENTION_SPAM
         }, e)
       })
     });
@@ -102,7 +102,7 @@ function y(e) {
           variant: "text-sm/medium",
           className: C.helpUrl,
           children: O.intl.format(O.t["B+sgGh"], {
-            helpUrl: u.Z.getArticleURL(v.BhN.GUILD_AUTOMOD_BLOCKED_MESSAGE)
+            helpUrl: u.Z.getArticleURL(_.BhN.GUILD_AUTOMOD_BLOCKED_MESSAGE)
           })
         })]
       }), (0, r.jsxs)("div", {

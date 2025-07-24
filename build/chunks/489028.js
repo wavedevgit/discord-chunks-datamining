@@ -20,8 +20,8 @@ var r = n(255367),
   x = n(451478),
   b = n(626135),
   j = n(584825),
-  _ = n(723047),
-  v = n(416867),
+  v = n(723047),
+  _ = n(416867),
   O = n(903773),
   C = n(215124),
   y = n(326578),
@@ -59,11 +59,11 @@ function w(e) {
     error: g
   } = (0, d.Z)(), {
     fetchSubscriptionsSettings: p
-  } = (0, j.JH)(), f = (0, _.mY)(), h = i.useMemo(() => n.map(e => ({
+  } = (0, j.JH)(), f = (0, v.mY)(), h = i.useMemo(() => n.map(e => ({
     label: e.name,
     value: e.id
   })), [n]), x = async () => {
-    await u(t, o, I.wW.GUILD_ROLE_SUBSCRIPTIONS) && (p(t.id), (0, v.B)({
+    await u(t, o, I.wW.GUILD_ROLE_SUBSCRIPTIONS) && (p(t.id), (0, _.B)({
       Icon: y.Z,
       title: S.intl.string(S.t["AP/2qa"]),
       body: S.intl.string(S.t.kHMgaG)
@@ -98,14 +98,14 @@ let R = e => {
   let {
     guild: t
   } = e, n = (0, l.e7)([h.default], () => h.default.getCurrentUser()), s = (0, f.eM)(t, n), d = (0, c.Ob)(t), j = (0, l.e7)([x.Z], () => x.Z.isFocused()), {
-    teams: _,
-    loading: v
+    teams: v,
+    loading: _
   } = (0, p.Z)({
     refreshOnDepChange: j
-  }), y = i.useMemo(() => _.filter(e => {
+  }), y = i.useMemo(() => v.filter(e => {
     var t;
     return e.payout_account_status !== E.C.BLOCKED && (0, g.Z)(null != (t = null == n ? void 0 : n.id) ? t : N.lds, e)
-  }), [_, n]), I = y.length > 0, R = i.useCallback(async () => {
+  }), [v, n]), I = y.length > 0, R = i.useCallback(async () => {
     b.default.track(N.rMx.GUILD_ROLE_SUBSCRIPTION_TEAM_SETUP_CLICKED, {
       is_onboarding_v2: d,
       has_eligible_team: I,
@@ -118,7 +118,7 @@ let R = e => {
     onClick: R,
     children: e
   }) : e, [R, s]);
-  return v ? (0, r.jsx)(a.$jN, {}) : (0, r.jsxs)(r.Fragment, {
+  return _ ? (0, r.jsx)(a.$jN, {}) : (0, r.jsxs)(r.Fragment, {
     children: [!s && (0, r.jsx)(O.Z, {
       className: T.nonOwnerNotice,
       children: S.intl.string(S.t.t56qWF)

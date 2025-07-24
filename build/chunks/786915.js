@@ -50,8 +50,8 @@ function y(e) {
     shouldPrioritizeGroupPlusIcon: O = !1,
     isRichPresenceInvite: E = !1,
     iconClassName: S,
-    look: I,
-    size: P,
+    look: P,
+    size: I,
     buttonText: Z,
     color: T
   } = e, N = function(e, t) {
@@ -85,8 +85,8 @@ function y(e) {
     iconComponent: k,
     label: L,
     iconClassName: S,
-    look: I,
-    size: P,
+    look: P,
+    size: I,
     buttonText: Z,
     color: null != T ? T : void 0
   }) : null != M && null != y && f.Z.can(g.Plq.CREATE_INSTANT_INVITE, y) ? (0, r.jsx)(m.Z, _({
@@ -146,8 +146,8 @@ function y(e) {
     iconComponent: k,
     label: L,
     iconClassName: S,
-    look: I,
-    size: P,
+    look: P,
+    size: I,
     color: T,
     buttonText: Z
   }, N)) : null

@@ -23,7 +23,7 @@ let b = e => {
   var t;
   let {
     className: n
-  } = e, i = (0, s.e7)([c.default], () => c.default.getCurrentUser()), b = (0, s.e7)([o.default], () => o.default.locale), j = (0, s.e7)([u.Z], () => u.Z.getPremiumTypeSubscription()), _ = (0, s.e7)([d.Z], () => null != j ? d.Z.get(j.planId) : void 0), v = null != (t = (0, s.e7)([d.Z], () => null != _ ? d.Z.getForSkuAndInterval((0, g.Wz)(f.Si.GUILD), _.interval, _.intervalCount) : void 0)) ? t : f.GP[f.Xh.PREMIUM_MONTH_GUILD];
+  } = e, i = (0, s.e7)([c.default], () => c.default.getCurrentUser()), b = (0, s.e7)([o.default], () => o.default.locale), j = (0, s.e7)([u.Z], () => u.Z.getPremiumTypeSubscription()), v = (0, s.e7)([d.Z], () => null != j ? d.Z.get(j.planId) : void 0), _ = null != (t = (0, s.e7)([d.Z], () => null != v ? d.Z.getForSkuAndInterval((0, g.Wz)(f.Si.GUILD), v.interval, v.intervalCount) : void 0)) ? t : f.GP[f.Xh.PREMIUM_MONTH_GUILD];
   return (0, r.jsxs)("div", {
     className: l()(x.wrapper, n),
     children: [(0, r.jsx)(a.X6q, {
@@ -63,9 +63,9 @@ let b = e => {
       }({
         currentUser: i,
         locale: b,
-        guildBoostingPlanId: v.id,
-        interval: v.interval,
-        intervalCount: v.intervalCount
+        guildBoostingPlanId: _.id,
+        interval: _.interval,
+        intervalCount: _.intervalCount
       })
     })]
   })

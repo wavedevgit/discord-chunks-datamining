@@ -1,7 +1,7 @@
 /** Chunk was on 88388 **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => _
 }), n(953529);
 var r = n(255367);
 n(73800);
@@ -40,7 +40,7 @@ function j(e) {
   return e
 }
 
-function _(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -52,10 +52,10 @@ function _(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = function(e) {
+let _ = function(e) {
   let {
     guild: t,
-    disabled: v,
+    disabled: _,
     role: O
   } = e, C = (0, a.ZP)(), y = (0, m.oC)(t.id, O), {
     analyticsLocations: N
@@ -64,7 +64,7 @@ let v = function(e) {
       let {
         default: e
       } = await n.e("22942").then(n.bind(n, 660727));
-      return n => (0, r.jsx)(e, _(j({}, n), {
+      return n => (0, r.jsx)(e, v(j({}, n), {
         guildId: t.id,
         onUploadIcon: e => (0, p._l)(O.id, e, null),
         onSelectUnicodeEmoji: e => (0, p._l)(O.id, null, e)
@@ -72,7 +72,7 @@ let v = function(e) {
     })
   }, E = t.features.has(f.oNc.ROLE_ICONS), S = e => {
     E || ((0, o.yw)(f.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
-      location: _(j({}, e), {
+      location: v(j({}, e), {
         section: f.jXE.CUSTOM_ROLE_ICONS_TOOLTIP
       }),
       guild_id: null == t ? void 0 : t.id,
@@ -112,7 +112,7 @@ let v = function(e) {
       className: b.rolePreviewArea,
       children: [(0, r.jsx)("div", {
         className: b.previewContainer,
-        children: null != y ? (0, r.jsx)(d.Z, _(j({}, y), {
+        children: null != y ? (0, r.jsx)(d.Z, v(j({}, y), {
           className: b.roleIconPreview,
           enableTooltip: !1
         })) : (0, r.jsx)(s.FmF, {
@@ -129,7 +129,7 @@ let v = function(e) {
         onClick: () => t.features.has(f.oNc.ROLE_ICONS) ? I() : S({
           object: f.qAy.UPLOAD_IMAGE
         }),
-        disabled: v,
+        disabled: _,
         children: x.intl.string(x.t.mD1oGB)
       }), null != y ? (0, r.jsx)(l.zx, {
         className: b.button,
@@ -138,7 +138,7 @@ let v = function(e) {
         onClick: () => {
           (0, p._l)(O.id, null, null)
         },
-        disabled: v,
+        disabled: _,
         children: x.intl.string(x.t["uY+Nk5"])
       }) : null]
     })]

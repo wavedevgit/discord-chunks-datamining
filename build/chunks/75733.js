@@ -41,7 +41,7 @@ let j = {
   label: ""
 };
 
-function _(e) {
+function v(e) {
   let {
     emoji: t,
     disabled: n,
@@ -96,7 +96,7 @@ function _(e) {
   })
 }
 
-function v(e) {
+function _(e) {
   let {
     guildId: t,
     trait: n,
@@ -120,7 +120,7 @@ function v(e) {
     c(t, l, {
       label: e
     })
-  }, [t, l, c]), j = i.useMemo(() => n.emoji, [n.emoji]), v = null != n.label && n.label.length > 0 || null != n.emoji;
+  }, [t, l, c]), j = i.useMemo(() => n.emoji, [n.emoji]), _ = null != n.label && n.label.length > 0 || null != n.emoji;
   return (0, r.jsxs)("div", {
     className: h.traitWrapper,
     children: [(0, r.jsx)(a.Is, {
@@ -129,7 +129,7 @@ function v(e) {
       value: n.label,
       onChange: b,
       maxLength: 24,
-      prefixElement: (0, r.jsx)(_, {
+      prefixElement: (0, r.jsx)(v, {
         emoji: j,
         disabled: d,
         handleSelectEmoji: m
@@ -140,7 +140,7 @@ function v(e) {
       inputClassName: h.traitInput,
       onFocus: f,
       onBlur: x
-    }), v && (0, r.jsx)(o.P3F, {
+    }), _ && (0, r.jsx)(o.P3F, {
       onClick: u,
       className: h.traitRemoveButton,
       children: (0, r.jsx)(o.k$p, {
@@ -176,7 +176,7 @@ function C(e) {
       className: h.grid,
       children: O.map(e => {
         var i;
-        return (0, r.jsx)(v, {
+        return (0, r.jsx)(_, {
           guildId: t.id,
           trait: null != (i = l[e]) ? i : j,
           index: e,

@@ -24,7 +24,7 @@ let m = i.memo(function(e) {
     setEditingRule: h
   } = (0, a.V)(), {
     isLoading: x
-  } = (0, a.w)(), [b] = i.useState(() => !(0, l.Vb)(t)), j = (null == p ? void 0 : p.id) === t.id || n, _ = (0, s.U)(null == t ? void 0 : t.id), v = j && null != p ? p : t, O = i.useMemo(() => (0, o.af)(t.name), [null == t ? void 0 : t.name]), C = i.useCallback(() => {
+  } = (0, a.w)(), [b] = i.useState(() => !(0, l.Vb)(t)), j = (null == p ? void 0 : p.id) === t.id || n, v = (0, s.U)(null == t ? void 0 : t.id), _ = j && null != p ? p : t, O = i.useMemo(() => (0, o.af)(t.name), [null == t ? void 0 : t.name]), C = i.useCallback(() => {
     f(t.guildId, t.triggerType)
   }, [t.guildId, t.triggerType, f]), y = i.useCallback(e => {
     x || h(e, !0)
@@ -39,11 +39,11 @@ let m = i.memo(function(e) {
   }, [j, g, O, t, h]);
   return (0, r.jsx)(d.Z, {
     renderHeader: (0, r.jsx)(u.Z, {
-      rule: v,
-      forceSetup: b && !j && !_,
+      rule: _,
+      forceSetup: b && !j && !v,
       triggerType: t.triggerType,
       isEditMode: j,
-      isDefaultRule: _,
+      isDefaultRule: v,
       onChangeRule: y,
       onSetupRule: C
     }),
@@ -51,7 +51,7 @@ let m = i.memo(function(e) {
     isExpanded: j,
     onExpand: N,
     children: j && (0, r.jsx)(c.Z, {
-      rule: v,
+      rule: _,
       isLoading: x,
       onChangeRule: y
     })

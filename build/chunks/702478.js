@@ -20,8 +20,8 @@ var r = n(255367),
   x = n(626135),
   b = n(146596),
   j = n(559368),
-  _ = n(999382),
-  v = n(981631),
+  v = n(999382),
+  _ = n(981631),
   O = n(190378),
   C = n(388032),
   y = n(24304);
@@ -58,7 +58,7 @@ let I = function(e, t, n) {
   },
   E = function(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-    return t || e === v.evJ.NOT_ENOUGH_GUILD_MEMBERS ? (0, r.jsx)(c.kzN, {
+    return t || e === _.evJ.NOT_ENOUGH_GUILD_MEMBERS ? (0, r.jsx)(c.kzN, {
       icon: c.d3s,
       className: y.notEnoughMembersError,
       backgroundColor: c.mTc.BACKGROUND_ACCENT,
@@ -69,7 +69,7 @@ let I = function(e, t, n) {
     })
   },
   S = () => {
-    let [e, t] = i.useState(!1), n = (0, a.e7)([_.Z], () => _.Z.getGuildId());
+    let [e, t] = i.useState(!1), n = (0, a.e7)([v.Z], () => v.Z.getGuildId());
     return (0, r.jsx)("div", {
       "data-button-hoisted-classname-wrapper": !0,
       className: y.developerPortalCta,
@@ -78,13 +78,13 @@ let I = function(e, t, n) {
         text: C.intl.string(C.t.Uskgx8),
         onClick: () => {
           t(!0), (function(e) {
-            x.default.track(v.rMx.GUILD_INSIGHTS_SETTINGS_CTA_CLICKED, {
+            x.default.track(_.rMx.GUILD_INSIGHTS_SETTINGS_CTA_CLICKED, {
               guild_id: e
             });
-            let t = null == e ? v.E07.DEVELOPER_PORTAL : v.E07.DEVELOPER_PORTAL_GUILD_ANALYTICS(e),
+            let t = null == e ? _.E07.DEVELOPER_PORTAL : _.E07.DEVELOPER_PORTAL_GUILD_ANALYTICS(e),
               n = (0, l.Z)();
             return o.tn.post({
-              url: v.ANM.HANDOFF,
+              url: _.ANM.HANDOFF,
               body: {
                 key: n
               },
@@ -92,7 +92,7 @@ let I = function(e, t, n) {
               rejectWithError: !0
             }).then(e => {
               let r = e.body.handoff_token;
-              window.open(v.EYA.DEVELOPER_PORTAL_LOGIN_HANDOFF(n, r, t))
+              window.open(_.EYA.DEVELOPER_PORTAL_LOGIN_HANDOFF(n, r, t))
             }, () => {
               window.open(t)
             })
@@ -105,7 +105,7 @@ let I = function(e, t, n) {
     })
   },
   T = () => {
-    let e = (0, a.e7)([_.Z], () => _.Z.getGuildId()),
+    let e = (0, a.e7)([v.Z], () => v.Z.getGuildId()),
       t = (0, a.e7)([p.Z], () => p.Z.getMemberCount(e)),
       n = (0, a.e7)([f.Z], () => f.Z.getGuild(e)),
       l = (0, a.e7)([g.default], () => g.default.locale),
@@ -117,7 +117,7 @@ let I = function(e, t, n) {
         errorCode: j.Z.getError()
       })),
       x = (0, a.e7)([h.Z], () => h.Z.getSettings().enabled),
-      T = null == t || null == n || null != t && t < 500 && null != n && !n.features.has(v.oNc.PARTNERED) && !n.features.has(v.oNc.VERIFIED);
+      T = null == t || null == n || null != t && t < 500 && null != n && !n.features.has(_.oNc.PARTNERED) && !n.features.has(_.oNc.VERIFIED);
     i.useEffect(() => {
       null == e || T || ((0, b.Vk)(e), (0, b.SR)(e), (0, b.xl)(e))
     }, [e, T]), i.useEffect(() => {

@@ -28,8 +28,8 @@ var r = n(255367),
   O = n(906467),
   E = n(323873),
   S = n(709054),
-  I = n(786761),
-  P = n(534091),
+  P = n(786761),
+  I = n(534091),
   Z = n(901461),
   T = n(739566),
   N = n(233715),
@@ -113,7 +113,7 @@ function et(e, t) {
 }
 
 function en(e, t, n) {
-  return e.getElementById((0, P.p)(t, n))
+  return e.getElementById((0, I.p)(t, n))
 }
 
 function er(e) {
@@ -187,7 +187,7 @@ function ei(e) {
     viewingChannelId: j
   } = e, O = o.type === q.uaV.REPLY ? o.messageReference : void 0, E = (0, c.JA)(null != (t = e.id) ? t : ""), {
     onFocus: S
-  } = E, P = et(E, ["onFocus"]), {
+  } = E, I = et(E, ["onFocus"]), {
     isFocused: N,
     handleFocus: L,
     handleBlur: B
@@ -227,14 +227,14 @@ function ei(e) {
       onClick: e_,
       "aria-label": K.intl.string(K.t.k5WiPT),
       children: K.intl.string(K.t.k5WiPT)
-    }), (0, r.jsx)(A.Z, ee($({}, P), {
+    }), (0, r.jsx)(A.Z, ee($({}, I), {
       id: l,
       compact: b,
       className: a()(_, {
         [X.message]: !0,
         [X.cozyMessage]: !b,
         [X.mentioned]: o.mentioned,
-        [X.ephemeral]: (0, I.Pv)(o),
+        [X.ephemeral]: (0, P.Pv)(o),
         [X.systemMessage]: (0, Z.Z)(o),
         [X.groupStart]: o.id === y || o.type === q.uaV.REPLY,
         [X.selected]: ec
@@ -286,7 +286,7 @@ let el = i.memo(function(e) {
     id: o,
     message: x,
     message: {
-      id: P
+      id: I
     },
     channel: J,
     channel: {
@@ -330,16 +330,16 @@ let el = i.memo(function(e) {
     {
       isFocused: eE,
       hasFocused: eS,
-      handleFocus: eI,
-      handleBlur: eP
+      handleFocus: eP,
+      handleBlur: eI
     } = (0, R.bb)(eu),
     eZ = i.useCallback(e => {
-      eI(e), ex(e)
-    }, [eI, ex]),
+      eP(e), ex(e)
+    }, [eP, ex]),
     eT = i.useCallback(e => {
-      eP(e), ev()
-    }, [eP, ev]),
-    eN = (0, u.e7)([E.Z], () => E.Z.isEditing(en, P), [en, P]),
+      eI(e), ev()
+    }, [eI, ev]),
+    eN = (0, u.e7)([E.Z], () => E.Z.isEditing(en, I), [en, I]),
     eA = (0, u.e7)([p.Z], () => p.Z.keyboardModeEnabled),
     ew = eb || eN || eA && eE,
     eR = ew || eO,
@@ -360,7 +360,7 @@ let el = i.memo(function(e) {
       allowDevLinks: eL,
       previewLinkTarget: !0
     }),
-    eF = (0, M.Z)(P, en, eA),
+    eF = (0, M.Z)(I, en, eA),
     eH = (0, T.ZP)(x),
     eG = (0, u.e7)([y.Z], () => y.Z.getPendingReply(en)),
     eV = function(e) {
@@ -375,7 +375,7 @@ let el = i.memo(function(e) {
     }),
     eW = (0, w.iG)(x, ea),
     eY = (0, w.Gx)(x),
-    eq = (0, u.e7)([h.Z], () => h.Z.getMessage(P), [P]),
+    eq = (0, u.e7)([h.Z], () => h.Z.getMessage(I), [I]),
     eK = (0, L.Z)({
       message: x,
       channel: J
@@ -414,7 +414,7 @@ let el = i.memo(function(e) {
             [X.message]: !0,
             [X.cozyMessage]: !er,
             [X.mentioned]: x.mentioned,
-            [X.ephemeral]: (0, I.Pv)(x),
+            [X.ephemeral]: (0, P.Pv)(x),
             [X.nitroMessage]: x.type === q.uaV.NITRO_NOTIFICATION || x.type === q.uaV.CHAT_WALLPAPER_SET || x.type === q.uaV.CHAT_WALLPAPER_REMOVED,
             [X.systemMessage]: (0, Z.Z)(x),
             [X.groupStart]: !eo && (e$ || x.type === q.uaV.REPLY),

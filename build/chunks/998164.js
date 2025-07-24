@@ -132,9 +132,9 @@ let j = function(e) {
     (0, c.Hr)(i);
     let l = d.Z.getSettings();
     (0, c.oo)(t, l, !0)
-  }, [n, t]), _ = n.map(e => f(p({}, e), {
+  }, [n, t]), v = n.map(e => f(p({}, e), {
     id: e.channelId
-  })), v = i.useCallback(e => {
+  })), _ = i.useCallback(e => {
     (0, c.hS)(e);
     let n = d.Z.getSettings();
     null != n && (0, c.oo)(t, n, !0)
@@ -142,7 +142,7 @@ let j = function(e) {
     handleDragStart: O,
     handleDragReset: C,
     handleDragComplete: y
-  } = (0, a.Z)(_, v);
+  } = (0, a.Z)(v, _);
   return (0, r.jsxs)("div", {
     className: g.section,
     children: [n.map((e, n) => (0, r.jsx)(u.Z, {

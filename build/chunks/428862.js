@@ -18,11 +18,11 @@ var r, i, l = n(255367),
   x = n(981631),
   b = n(388032),
   j = n(560161);
-let _ = {
+let v = {
     tension: 200,
     friction: 20
   },
-  v = (r = function(e) {
+  _ = (r = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -39,7 +39,7 @@ let _ = {
       })
     }
     return e
-  }({}, _), i = i = {
+  }({}, v), i = i = {
     clamp: !0
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
     var n = Object.keys(e);
@@ -71,7 +71,7 @@ function O(e) {
     to: {
       opacity: 1
     },
-    config: v,
+    config: _,
     shouldAnimate: "animate-always",
     children: e => (0, l.jsxs)(c.animated.div, {
       className: j.tierClose,
@@ -122,7 +122,7 @@ function C(e) {
     to: {
       unlockedTranslateY: 50 * (0 === x)
     },
-    config: _,
+    config: v,
     children: e => (0, l.jsx)("div", {
       className: o()({
         [j.tierHeaderWithoutCardBody]: !t,
@@ -168,11 +168,11 @@ function y(e) {
     headerButton: c = null,
     withCardBody: m = !0,
     guildId: h,
-    showHeaderLockStatus: _ = !0
-  } = e, v = (0, d.e7)([f.Z], () => {
+    showHeaderLockStatus: v = !0
+  } = e, _ = (0, d.e7)([f.Z], () => {
     var e, t;
     return null != (t = null == (e = f.Z.getGuild(h)) ? void 0 : e.premiumTier) ? t : x.Eu4.NONE
-  }), O = x.oCV[i.tier], y = s && i.tier <= v, N = i.tier !== x.Eu4.NONE && i.tier !== x.Eu4.TIER_1, I = (e, t) => {
+  }), O = x.oCV[i.tier], y = s && i.tier <= _, N = i.tier !== x.Eu4.NONE && i.tier !== x.Eu4.TIER_1, I = (e, t) => {
     var n;
     let {
       Icon: r,
@@ -208,7 +208,7 @@ function y(e) {
       subscriptionCount: n,
       tier: i,
       headerButton: c,
-      showHeaderLockStatus: _,
+      showHeaderLockStatus: v,
       onSetRef: e => {
         null != r && r(e, i)
       },

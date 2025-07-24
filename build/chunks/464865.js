@@ -24,8 +24,8 @@ function b(e) {
     guild: t
   } = e, n = (0, o.g1)(t.id, "GuildSettingsBoostPerks"), b = (0, l.e7)([c.Z], () => c.Z.hideInstantInvites), {
     vanityURLCode: j,
-    vanityURLUses: _,
-    originalVanityURLCode: v,
+    vanityURLUses: v,
+    originalVanityURLCode: _,
     errorDetails: O,
     fetched: C
   } = (0, l.cj)([m.Z], () => ({
@@ -55,8 +55,8 @@ function b(e) {
     }), (0, r.jsx)(p.z, {
       guild: t,
       vanityURLCode: j,
-      vanityURLUses: _,
-      originalVanityURLCode: v,
+      vanityURLUses: v,
+      originalVanityURLCode: _,
       errorDetails: O
     })]
   })

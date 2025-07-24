@@ -1,4 +1,4 @@
-/** Chunk was on 3496 **/
+/** Chunk was on 54168 **/
 t.d(e, {
   ZP: () => x
 });
@@ -11,12 +11,12 @@ var r = t(120356),
   a = t(493683),
   o = t(906732),
   g = t(69882),
-  v = t(251794),
-  f = t(386696),
+  f = t(251794),
+  v = t(386696),
   c = t(946273),
   h = t(910693),
-  u = t(172751),
-  E = t(314897),
+  E = t(172751),
+  u = t(314897),
   d = t(592125),
   C = t(271383),
   B = t(430824),
@@ -69,7 +69,7 @@ function y(A) {
     user: e,
     guildId: t,
     onClose: r
-  } = A, l = e.id, a = (0, i.e7)([I.Z, D.Z, E.default], () => l === E.default.getId() ? I.Z.getStatus() : D.Z.getStatus(l, t), [l, t]);
+  } = A, l = e.id, a = (0, i.e7)([I.Z, D.Z, u.default], () => l === u.default.getId() ? I.Z.getStatus() : D.Z.getStatus(l, t), [l, t]);
   return (0, n.jsxs)("div", {
     className: V.topRow,
     children: [(0, n.jsxs)("div", {
@@ -92,7 +92,7 @@ function y(A) {
               name: b.ZP.getName(t, null, e),
               color: s.TVs.colors.HEADER_PRIMARY.css
             })
-          }), (0, n.jsx)(u.ZP, {
+          }), (0, n.jsx)(E.ZP, {
             primaryGuild: null == e ? void 0 : e.primaryGuild,
             userId: null == e ? void 0 : e.id,
             contextGuildId: t,
@@ -166,22 +166,22 @@ function L(A) {
     user: e,
     member: r,
     guildId: l
-  } = A, u = (0, i.e7)([B.Z], () => B.Z.getGuild(l)), {
+  } = A, E = (0, i.e7)([B.Z], () => B.Z.getGuild(l)), {
     canKickUser: C,
     canBanUser: D,
     canModerateMembers: I
   } = (0, i.cj)([w.Z, p.default, B.Z], () => ({
-    canKickUser: (0, c.BK)(e, u),
-    canBanUser: (0, c.mm)(e, u),
-    canModerateMembers: null != u && (0, f.F)(u.id, e.id, [p.default, B.Z, w.Z])
-  }), [e, u]), b = (0, g.b)(r), {
+    canKickUser: (0, c.BK)(e, E),
+    canBanUser: (0, c.mm)(e, E),
+    canModerateMembers: null != E && (0, v.F)(E.id, e.id, [p.default, B.Z, w.Z])
+  }), [e, E]), b = (0, g.b)(r), {
     analyticsLocations: Q,
     newestAnalyticsLocation: O
   } = (0, o.ZP)(), y = (0, h.sE)(l, {
     targetUserId: e.id,
     location: O,
     locations: Q
-  }), L = (0, i.e7)([E.default], () => E.default.getId() === (null == e ? void 0 : e.id)), x = (0, i.e7)([M.Z, d.Z], () => {
+  }), L = (0, i.e7)([u.default], () => u.default.getId() === (null == e ? void 0 : e.id)), x = (0, i.e7)([M.Z, d.Z], () => {
     let A = M.Z.getChannelId(l),
       e = null != A ? d.Z.getChannel(A) : null,
       t = null != e && e.isModeratorReportChannel() ? A : void 0;
@@ -251,11 +251,11 @@ function L(A) {
       disabled: !I,
       text: b ? P.intl.string(P.t.N86XcH) : P.intl.string(P.t.kTlLr6),
       onClick: () => {
-        b ? (0, v.q)({
+        b ? (0, f.q)({
           guildId: r.guildId,
           userId: r.userId,
           anaylticsLocations: Q
-        }) : (0, v.z)({
+        }) : (0, f.z)({
           guildId: r.guildId,
           userId: r.userId,
           anaylticsLocations: Q,

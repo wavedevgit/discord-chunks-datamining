@@ -76,7 +76,7 @@ function j(e) {
   })
 }
 
-function _(e) {
+function v(e) {
   let {
     quote: t,
     quoteAttribution: n,
@@ -99,7 +99,7 @@ function _(e) {
   })
 }
 
-function v(e) {
+function _(e) {
   let {
     emojisToShow: t,
     notShownEmojiCount: n,
@@ -187,11 +187,11 @@ function O(e) {
       guildName: m,
       guildAvatarUrl: p,
       subscriberCount: f
-    }), (0, r.jsx)(_, {
+    }), (0, r.jsx)(v, {
       quote: i,
       quoteAttribution: l,
       quoteAttributionTitle: s
-    }), (0, r.jsx)(v, {
+    }), (0, r.jsx)(_, {
       emojisToShow: h,
       notShownEmojiCount: b,
       storePageUrl: O

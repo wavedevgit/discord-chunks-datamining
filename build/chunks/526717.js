@@ -31,16 +31,16 @@ function a(e, t, n) {
     id: e,
     icon: p,
     size: n
-  }), h = r.useMemo(() => null != g && g.length > t ? g.slice(0, t) : g, [g, t]), x = null != g && g.length > t ? g.length - t : null, b = null == u ? void 0 : u.slug, j = null != b ? s.EYA.ROLE_SUBSCRIPTION_STORE_PAGE(b) : void 0, _ = null == m || null == (a = m.guild) ? void 0 : a.name, v = null == m || null == (o = m.role_subscription) ? void 0 : o.subscriber_count, O = !c && null != _ && null != p && null != f;
+  }), h = r.useMemo(() => null != g && g.length > t ? g.slice(0, t) : g, [g, t]), x = null != g && g.length > t ? g.length - t : null, b = null == u ? void 0 : u.slug, j = null != b ? s.EYA.ROLE_SUBSCRIPTION_STORE_PAGE(b) : void 0, v = null == m || null == (a = m.guild) ? void 0 : a.name, _ = null == m || null == (o = m.role_subscription) ? void 0 : o.subscriber_count, O = !c && null != v && null != p && null != f;
   return O ? {
     hasAllImperativeDetails: O,
     isLoading: c,
     details: {
-      guildName: _,
+      guildName: v,
       guildIcon: p,
       guildAvatarUrl: f,
       storePageUrl: j,
-      subscriberCount: v,
+      subscriberCount: _,
       emojisToShow: h,
       notShownEmojiCount: x
     }

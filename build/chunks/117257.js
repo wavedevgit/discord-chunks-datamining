@@ -1,6 +1,6 @@
-/** Chunk was on 3496 **/
+/** Chunk was on 54168 **/
 t.d(e, {
-  X: () => f
+  X: () => v
 });
 var n = t(255367);
 t(73800);
@@ -20,7 +20,7 @@ let i = ["#4282D8", "#54cfff", "#f0f0f0"],
     tint: 1
   }],
   g = [.1, .6, 1],
-  v = [{
+  f = [{
     base: 4,
     tint: 1
   }, {
@@ -30,14 +30,14 @@ let i = ["#4282D8", "#54cfff", "#f0f0f0"],
     base: 8,
     tint: 1
   }],
-  f = A => {
+  v = A => {
     var e, t, {
-        width: f = 24,
+        width: v = 24,
         height: c = 24,
         primaryTintColor: h,
-        secondaryTintColor: u
+        secondaryTintColor: E
       } = A,
-      E = function(A, e) {
+      u = function(A, e) {
         if (null == A) return {};
         var t, n, r = function(A, e) {
           if (null == A) return {};
@@ -61,9 +61,9 @@ let i = ["#4282D8", "#54cfff", "#f0f0f0"],
       primaryTintLuminances: a,
       primaryLuminanceWeights: o,
       secondaryBaseColors: s,
-      secondaryTintColor: u,
+      secondaryTintColor: E,
       secondaryTintLuminances: g,
-      secondaryLuminanceWeights: v
+      secondaryLuminanceWeights: f
     });
     return (0, n.jsxs)("svg", (e = function(A) {
       for (var e = 1; e < arguments.length; e++) {
@@ -82,8 +82,8 @@ let i = ["#4282D8", "#54cfff", "#f0f0f0"],
         })
       }
       return A
-    }({}, (0, r.Z)(E)), t = t = {
-      width: f,
+    }({}, (0, r.Z)(u)), t = t = {
+      width: v,
       height: c,
       viewBox: "0 0 16 16",
       fill: "none",

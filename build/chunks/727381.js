@@ -1,4 +1,4 @@
-/** Chunk was on 3496 **/
+/** Chunk was on 54168 **/
 t.d(e, {
   Z: () => w
 });
@@ -11,12 +11,12 @@ var r = t(120356),
   a = t(271383),
   o = t(594174),
   g = t(777288),
-  v = t(753042),
-  f = t(787469),
+  f = t(753042),
+  v = t(787469),
   c = t(477718),
   h = t(791176),
-  u = t(908474),
-  E = t(467014),
+  E = t(908474),
+  u = t(467014),
   d = t(388032),
   C = t(12740);
 
@@ -54,17 +54,17 @@ function w(A) {
     className: l()(C.container, g),
     children: [(0, n.jsx)(B, {}), (0, n.jsxs)(s.Ttm, {
       className: C.innerContainer,
-      children: [(0, n.jsx)(u.Z, {
+      children: [(0, n.jsx)(E.Z, {
         member: D
-      }), (0, n.jsx)(E.Z, {
+      }), (0, n.jsx)(u.Z, {
         userId: e,
         guildId: t
       }), (0, n.jsx)(h.Z, {
         member: D,
         onNavigate: d
-      }), (0, n.jsx)(f.Z, {
-        member: D
       }), (0, n.jsx)(v.Z, {
+        member: D
+      }), (0, n.jsx)(f.Z, {
         member: D
       }), (0, n.jsx)(c.Z, {
         member: D

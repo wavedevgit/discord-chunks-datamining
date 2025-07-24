@@ -20,8 +20,8 @@ var r = n(255367),
   x = n(202905),
   b = n(44867),
   j = n(557359),
-  _ = n(658666),
-  v = n(307375),
+  v = n(658666),
+  _ = n(307375),
   O = n(384632),
   C = n(981631),
   y = n(388032),
@@ -69,9 +69,9 @@ function E(e) {
       nsfwLevel: null == (e = d.Z.getGuild(t)) ? void 0 : e.nsfwLevel,
       ownerConfiguredContentLevel: null == (n = d.Z.getGuild(t)) ? void 0 : n.ownerConfiguredContentLevel
     }
-  }), o = (0, l.e7)([_.Z], () => {
+  }), o = (0, l.e7)([v.Z], () => {
     var e;
-    return null == (e = _.Z.pendingState) ? void 0 : e.isAgeRestricted
+    return null == (e = v.Z.pendingState) ? void 0 : e.isAgeRestricted
   }), c = i.useCallback(e => {
     h.Z.setIsAgeRestricted(t, e)
   }, [t]), m = n === C.V_K.AGE_RESTRICTED && a !== C.V_K.AGE_RESTRICTED;
@@ -107,7 +107,7 @@ function S(e) {
 
 function T() {
   let e = (0, l.e7)([g.Z], () => g.Z.getProps().guild),
-    t = (0, l.e7)([_.Z], () => _.Z.pendingState);
+    t = (0, l.e7)([v.Z], () => v.Z.pendingState);
   i.useEffect(() => {
     (null == e ? void 0 : e.id) != null && o.ZP.fetchVerificationForm(e.id)
   }, [null == e ? void 0 : e.id]);
@@ -124,7 +124,7 @@ function T() {
       color: "header-primary",
       variant: "heading-lg/semibold",
       children: y.intl.string(y.t.YJlvBA)
-    }), (0, r.jsx)(v.h, {
+    }), (0, r.jsx)(_.h, {
       onTypePicked: n,
       activeType: a,
       guild: e

@@ -1,7 +1,7 @@
 /** Chunk was on 88388 **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => v
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -71,8 +71,8 @@ function j(e) {
   function j(e) {
     n(e), u(e)
   }
-  let _ = t === m.p6O,
-    v = _ ? d : t,
+  let v = t === m.p6O,
+    _ = v ? d : t,
     O = (0, r.jsx)(o.dz2, {
       size: "custom",
       width: 32,
@@ -102,13 +102,13 @@ function j(e) {
       return i
     }(C, ["ref"]),
     I = (0, o.xUy)({
-      isSelected: _,
+      isSelected: v,
       label: g.intl.formatToPlainString(g.t.ZC69mJ, {
         colorHex: (0, a.Rf)(m.p6O)
       })
     }),
     E = (0, o.xUy)({
-      isSelected: !_,
+      isSelected: !v,
       label: g.intl.formatToPlainString(g.t["3kiLZW"], {
         colorHex: (0, a.Rf)(t)
       })
@@ -133,7 +133,7 @@ function j(e) {
           style: {
             backgroundColor: (0, a.Rf)(m.p6O)
           },
-          children: _ ? O : null
+          children: v ? O : null
         }), (0, r.jsx)(o.Text, {
           className: p.swatchDescription,
           color: "header-secondary",
@@ -152,12 +152,12 @@ function j(e) {
       }, E), {
         children: [(0, r.jsx)("div", {
           className: s()(p.customSwatch, {
-            [p.defaultSwatch]: v === m.p6O
+            [p.defaultSwatch]: _ === m.p6O
           }),
           style: {
-            "--custom-color": (0, a.Rf)(v)
+            "--custom-color": (0, a.Rf)(_)
           },
-          children: _ ? null : O
+          children: v ? null : O
         }), (0, r.jsx)(o.Text, {
           className: p.swatchDescription,
           color: "header-secondary",
@@ -181,7 +181,7 @@ function j(e) {
             className: p.dropperIcon,
             width: 14,
             height: 14,
-            color: b(v)
+            color: b(_)
           })
         }))
       })]
@@ -189,7 +189,7 @@ function j(e) {
   }))
 }
 
-function _(e) {
+function v(e) {
   let t, {
       value: n,
       onChange: i,

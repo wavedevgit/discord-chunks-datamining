@@ -1,7 +1,7 @@
 /** Chunk was on 88388 **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => _
 }), n(953529);
 var r = n(255367);
 n(73800);
@@ -21,15 +21,15 @@ var i = n(793030),
   x = n(166805),
   b = n(981631),
   j = n(388032),
-  _ = n(515636);
-let v = function() {
+  v = n(515636);
+let _ = function() {
   let {
     analyticsLocations: e
-  } = (0, o.ZP)(a.Z.GUILD_SETTINGS_ENGAGEMENT_PAGE), t = (0, l.e7)([u.Z], () => u.Z.getProps().guild, []), n = (0, l.e7)([d.Z], () => null != t && d.Z.can(b.Plq.MANAGE_GUILD, t)), v = (0, c.E)(t), O = (0, s.l9)(null != t ? t : void 0);
+  } = (0, o.ZP)(a.Z.GUILD_SETTINGS_ENGAGEMENT_PAGE), t = (0, l.e7)([u.Z], () => u.Z.getProps().guild, []), n = (0, l.e7)([d.Z], () => null != t && d.Z.can(b.Plq.MANAGE_GUILD, t)), _ = (0, c.E)(t), O = (0, s.l9)(null != t ? t : void 0);
   return null == t ? null : (0, r.jsx)(o.Gt, {
     value: e,
     children: (0, r.jsxs)("main", {
-      className: _.container,
+      className: v.container,
       children: [(0, r.jsxs)("div", {
         children: [(0, r.jsx)(i.X6, {
           variant: "heading-lg/semibold",
@@ -39,7 +39,7 @@ let v = function() {
           variant: "text-sm/medium",
           color: "header-secondary",
           tag: "p",
-          className: _.description,
+          className: v.description,
           children: j.intl.string(j.t.XCGZFh)
         })]
       }), !0 === O && (0, r.jsxs)(r.Fragment, {
@@ -47,33 +47,33 @@ let v = function() {
           canManageGuild: n,
           features: t.features
         }), (0, r.jsx)("div", {
-          className: _.divider
+          className: v.divider
         })]
       }), (0, r.jsx)(h.l, {
         canManageGuild: n,
         guild: t
-      }), void 0 !== v && (0, r.jsxs)(r.Fragment, {
+      }), void 0 !== _ && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
-          className: _.divider
+          className: v.divider
         }), (0, r.jsx)(m.q, {
-          isInventoryFeedEnabled: v,
+          isInventoryFeedEnabled: _,
           canManageGuild: n,
           features: t.features
         })]
       }), (0, r.jsx)("div", {
-        className: _.divider
+        className: v.divider
       }), (0, r.jsx)(g.z, {
         guildId: t.id,
         defaultSettings: t.defaultMessageNotifications,
         canManageGuild: n
       }), (0, r.jsx)("div", {
-        className: _.divider
+        className: v.divider
       }), (0, r.jsx)(p.L, {
         canManageGuild: n,
         guild: t
       }), !0 === n && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
-          className: _.divider
+          className: v.divider
         }), (0, r.jsx)(x.P, {
           guildId: t.id
         })]

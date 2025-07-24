@@ -1,6 +1,6 @@
 /**
   Module ID: 60173
-  Original File Name: 27e39da55f50831f
+  Original File Name: d24cd179e56036fa
 **/
 @keyframes placeholderPulse_c8ffbb {
     0% {
@@ -9409,117 +9409,34 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     width: 18px
 }
 
-.container__754bd {
-    align-items: center;
-    display: flex;
-    flex: 1 1 auto;
-    justify-content: flex-start
-}
-
-.channelName__754bd,.container__754bd {
-    min-width: 0;
-    position: relative
-}
-
-.channelName__754bd {
-    box-sizing: border-box;
-    flex: 0 1 auto;
-    font-weight: var(--font-weight-semibold);
-    margin-left: -6px;
-    max-width: 100%;
-    padding: 0 4px 0 0
-}
-
-.channelName__754bd div,.channelName__754bd input {
-    font-family: var(--font-display);
-    font-weight: var(--font-weight-medium)
-}
-
-.newWrapper__754bd {
-    gap: 12px
-}
-
-.hoverableContainer__754bd,.newWrapper__754bd {
-    align-items: center;
-    display: flex;
-    flex-direction: row
-}
-
 .hoverableContainer__754bd {
-    border: 1px solid transparent;
-    border-radius: 8px;
-    cursor: pointer;
-    gap: 4px;
-    height: 32px;
-    padding-left: calc(var(--custom-message-margin-horizontal)/2)
-}
-
-.hoverableContainer__754bd:hover:not(.editing__754bd) {
-    background-color: var(--background-mod-subtle)
-}
-
-.hoverableContainer__754bd.editing__754bd {
-    background-color: var(--background-mod-faint);
-    border-color: var(--border-subtle)
-}
-
-.editIcon__754bd {
-    display: none
-}
-
-.clickableTitle__754bd {
     align-items: center;
     align-self: stretch;
-    border: none;
+    border-radius: 8px;
     cursor: pointer;
     display: flex;
     flex-direction: row;
     gap: calc(var(--custom-message-margin-horizontal)/2);
-    padding-right: 8px;
+    height: 32px;
+    padding-left: calc(var(--custom-message-margin-horizontal)/2);
+    padding-right: calc(var(--custom-message-margin-horizontal)/2);
     white-space: nowrap
 }
 
-.clickableTitle__754bd:hover .editIcon__754bd {
+.hoverableContainer__754bd .editIcon__754bd {
+    display: none
+}
+
+.hoverableContainer__754bd .gdmIcon__754bd {
+    margin-right: 4px
+}
+
+.hoverableContainer__754bd:hover {
+    background-color: var(--background-mod-subtle)
+}
+
+.hoverableContainer__754bd:hover .editIcon__754bd {
     display: block
-}
-
-.newInput__754bd {
-    background-color: unset;
-    color: var(--interactive-active);
-    font-family: var(--font-primary);
-    font-size: 16px;
-    font-weight: var(--font-weight-semibold);
-    height: auto;
-    min-width: 240px;
-    outline: none;
-    padding: 0 8px 0 0
-}
-
-.newInput__754bd,.newInput__754bd:hover {
-    border: none
-}
-
-.explainer__754bd {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
-    justify-content: center;
-    white-space: nowrap
-}
-
-.explainer__754bd a {
-    cursor: pointer;
-    text-decoration: none;
-    transition: .05s
-}
-
-.explainer__754bd a:hover {
-    text-decoration: underline
-}
-
-.explainer__754bd .visibleLink__754bd a {
-    color: var(--text-link)
 }
 
 .heading-sm\/normal__6ec1a {
@@ -13096,4 +13013,4 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     position: relative
 }
 
-/*# sourceMappingURL=27e39da55f50831f.css.map*/
+/*# sourceMappingURL=d24cd179e56036fa.css.map*/

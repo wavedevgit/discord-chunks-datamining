@@ -26,8 +26,8 @@ let h = e => {
       onClearPressed: x,
       reasonMinLength: b,
       reasonMaxLength: j,
-      placeholder: _,
-      position: v
+      placeholder: v,
+      position: _
     } = e, O = i.useRef(null), [C, y] = i.useState(!1), N = (0, l.e7)([m.Z], () => m.Z.isGuildMetadataLoaded());
     return (0, r.jsxs)("div", {
       className: f.reasonContainer,
@@ -75,7 +75,7 @@ let h = e => {
         className: f.inputContainer,
         children: [(0, r.jsx)(s.Is, {
           inputClassName: f.reason,
-          placeholder: _,
+          placeholder: v,
           value: n,
           minLength: b,
           maxLength: j,
@@ -83,7 +83,7 @@ let h = e => {
             p(e)
           },
           defaultDirty: (null == n ? void 0 : n.length) > 0
-        }, "text-input-".concat(v, "-").concat(N)), (null != (t = null == n ? void 0 : n.length) ? t : 0) > 0 || null != u ? (0, r.jsx)(s.zx, {
+        }, "text-input-".concat(_, "-").concat(N)), (null != (t = null == n ? void 0 : n.length) ? t : 0) > 0 || null != u ? (0, r.jsx)(s.zx, {
           className: f.clearStatusButton,
           onClick: x,
           look: s.zx.Looks.BLANK,

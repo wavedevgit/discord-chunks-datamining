@@ -26,8 +26,8 @@ var r = n(255367),
   O = n(975146),
   E = n(597998),
   S = n(606304),
-  I = n(358221),
-  P = n(355827),
+  P = n(358221),
+  I = n(355827),
   Z = n(185935),
   T = n(354459),
   N = n(388032),
@@ -69,9 +69,9 @@ function M(e) {
   let {
     channelId: t,
     guildId: n
-  } = e, i = (0, c.Wu)([S.Z, I.Z], () => {
+  } = e, i = (0, c.Wu)([S.Z, P.Z], () => {
     let e = Date.now();
-    return s()(S.Z.getSpeakers()).map(e => I.Z.getParticipant(t, e)).filter(e => null != e && e.type === T.fO.USER && e.speaking && !(0, y.ZP)(e)).sortBy(t => -S.Z.getSpeakingDuration(t.user.id, e)).slice(0, 3).value()
+    return s()(S.Z.getSpeakers()).map(e => P.Z.getParticipant(t, e)).filter(e => null != e && e.type === T.fO.USER && e.speaking && !(0, y.ZP)(e)).sortBy(t => -S.Z.getSpeakingDuration(t.user.id, e)).slice(0, 3).value()
   });
   return 0 === i.length ? null : (0, r.jsx)(r.Fragment, {
     children: i.map((e, t) => (0, r.jsx)(u.ua7, {
@@ -104,11 +104,11 @@ function D(e) {
     selectedParticipant: E,
     userParticipantCount: S,
     participantsListOpen: N
-  } = (0, c.cj)([I.Z], () => ({
-    selectedParticipant: I.Z.getSelectedParticipant(s),
-    voiceParticipantsHidden: I.Z.getVoiceParticipantsHidden(s),
-    userParticipantCount: I.Z.getUserParticipantCount(s),
-    participantsListOpen: I.Z.getParticipantsListOpen(s)
+  } = (0, c.cj)([P.Z], () => ({
+    selectedParticipant: P.Z.getSelectedParticipant(s),
+    voiceParticipantsHidden: P.Z.getVoiceParticipantsHidden(s),
+    userParticipantCount: P.Z.getUserParticipantCount(s),
+    participantsListOpen: P.Z.getParticipantsListOpen(s)
   }), [s]), D = t.isGuildVoice() && !n, {
     hasParticipantsPanel: k
   } = (0, Z.Z)({
@@ -141,7 +141,7 @@ function D(e) {
     targetElementRef: l,
     position: "bottom",
     renderPopout: () => (0, r.jsx)(v.Z, {
-      children: (0, r.jsx)(P.Z, {
+      children: (0, r.jsx)(I.Z, {
         channel: t
       })
     }),

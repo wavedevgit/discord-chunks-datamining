@@ -21,8 +21,8 @@ var r, i = n(255367),
   x = n(881052),
   b = n(751189),
   j = n(409059),
-  _ = n(518936),
-  v = n(999382),
+  v = n(518936),
+  _ = n(999382),
   O = n(260539),
   C = n(388032),
   y = n(651412),
@@ -38,7 +38,7 @@ function I(e, t, n) {
 }
 class E extends(r = d.ZP.Store) {
   getTemplate() {
-    let e = v.Z.getProps().guild;
+    let e = _.Z.getProps().guild;
     if (null == e) return null;
     let t = j.Z.getForGuild(e.id);
     return null != t && t.state !== O.Rj.RESOLVING ? t : null
@@ -62,7 +62,7 @@ class E extends(r = d.ZP.Store) {
     }), I(this, "setError", e => {
       this.error = e, this.emitChange()
     }), I(this, "save", async () => {
-      await b.Z.updateGuildTemplate(v.Z.getProps().guild.id, this.getTemplate().code, this.name, this.description), this.emitChange()
+      await b.Z.updateGuildTemplate(_.Z.getProps().guild.id, this.getTemplate().code, this.name, this.description), this.emitChange()
     })
   }
 }
@@ -107,7 +107,7 @@ function w() {
 function R() {
   let {
     guild: e
-  } = v.Z.getProps();
+  } = _.Z.getProps();
   c()(null != e, "guild cannot be null");
   let t = (0, d.e7)([S], () => S.error),
     [n, r] = l.useState(!0),
@@ -305,7 +305,7 @@ function L(e) {
       children: (0, i.jsx)(f.Z, {
         buttonLook: m.zx.Looks.FILLED,
         buttonColor: m.zx.Colors.BRAND,
-        value: (0, _.Z)(n.code)
+        value: (0, v.Z)(n.code)
       })
     }), n.isDirty && (0, i.jsx)(g.Text, {
       color: "text-feedback-warning",

@@ -25,7 +25,7 @@ function j(e) {
   return (0, i.wj)(e) ? c.revenueSharePercentageDark : c.revenueSharePercentageLight
 }
 
-function _() {
+function v() {
   let e = (0, s.ZP)(),
     t = {
       backgroundColor: (0, i.wj)(e) ? "#2e3638" : "var(--background-base-low)"
@@ -53,7 +53,7 @@ function _() {
   })
 }
 
-function v() {
+function _() {
   let e = (0, s.ZP)();
 
   function t(e) {
@@ -157,9 +157,9 @@ function O() {
       children: o.intl.string(o.t["9CdmS0"])
     }), (0, r.jsx)(l.LZC, {
       size: 32
-    }), (0, r.jsx)(_, {}), (0, r.jsx)(l.LZC, {
+    }), (0, r.jsx)(v, {}), (0, r.jsx)(l.LZC, {
       size: 24
-    }), (0, r.jsx)(v, {})]
+    }), (0, r.jsx)(_, {})]
   })
 }
 

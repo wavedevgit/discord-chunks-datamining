@@ -21,8 +21,8 @@ var r = n(255367),
   x = n(208567),
   b = n(496675),
   j = n(768581),
-  _ = n(63063),
-  v = n(434404),
+  v = n(63063),
+  _ = n(434404),
   O = n(999382),
   C = n(718157),
   y = n(450474),
@@ -45,10 +45,10 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
     return (0, r.jsx)(u.Z, {
       submitting: n,
       onReset: () => {
-        null != e && v.Z.init(e.id)
+        null != e && _.Z.init(e.id)
       },
       onSave: () => {
-        null != e && (v.Z.saveGuild(e.id, {
+        null != e && (_.Z.saveGuild(e.id, {
           discoverySplash: e.discoverySplash,
           description: e.description
         }), (0, p.Vv)({
@@ -114,11 +114,11 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
     let Y = (0, l.e7)([O.Z], () => null != u ? O.Z.getErrors() : null);
     if (null == u || null == A) return null;
     let K = e => {
-        v.Z.updateGuild({
+        _.Z.updateGuild({
           discoverySplash: e
         })
       },
-      q = e => {
+      X = e => {
         let t = () => {
           (0, p.W1)(u.id, e), e ? (0, p.Vv)({
             guildId: u.id,
@@ -142,7 +142,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
             reasonsToJoin: A.reasonsToJoin,
             socialLinks: A.socialLinks,
             about: A.about
-          }), v.Z.saveGuild(u.id, {
+          }), _.Z.saveGuild(u.id, {
             discoverySplash: u.discoverySplash,
             description: u.description
           })
@@ -152,7 +152,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
           e.default.open(t)
         }) : t()
       },
-      X = (e, t) => {
+      q = (e, t) => {
         let n = [...A.socialLinks],
           r = [...H],
           i = [...k];
@@ -235,7 +235,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                     children: [S.intl.format(S.t["+ScrMT"], {
                       discordURL: window.GLOBAL_ENV.MARKETING_ENDPOINT
                     }), " ", S.intl.format(S.t.T6WtKy, {
-                      learnMoreURL: _.Z.getArticleURL(E.BhN.SERVER_WEB_PAGES)
+                      learnMoreURL: v.Z.getArticleURL(E.BhN.SERVER_WEB_PAGES)
                     })]
                   }), (() => {
                     if (!A.isPublished || null == L) return;
@@ -348,7 +348,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       placeholder: S.intl.string(S.t.rFa9Ul),
                       onChange: e => {
                         var t;
-                        v.Z.updateGuild({
+                        _.Z.updateGuild({
                           description: null != (t = null == e ? void 0 : e.replaceAll("\n", "")) ? t : ""
                         })
                       },
@@ -435,7 +435,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         options: W(H[t]),
                         placeholder: S.intl.string(S.t.xSALIC),
                         value: H[t],
-                        onChange: e => X(e, t),
+                        onChange: e => q(e, t),
                         isDisabled: !Z
                       }, "dropdown-" + t), (0, r.jsx)(a.Is, {
                         value: e,
@@ -491,7 +491,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         variant: "critical-primary",
                         size: "sm",
                         text: S.intl.string(S.t["DCHd/P"]),
-                        onClick: () => q(!1),
+                        onClick: () => X(!1),
                         disabled: !Z
                       })]
                     })]
@@ -506,7 +506,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                     title: S.intl.string(S.t["2kCyn5"]),
                     children: et,
                     buttonLabel: S.intl.string(S.t.tVK6S0),
-                    buttonCallback: () => q(!0),
+                    buttonCallback: () => X(!0),
                     disabled: !Z || !G
                   })
                 })]

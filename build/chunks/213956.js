@@ -20,8 +20,8 @@ var r = n(255367),
   x = n(464610),
   b = n(733629),
   j = n(598622),
-  _ = n(921944),
-  v = n(388032),
+  v = n(921944),
+  _ = n(388032),
   O = n(296205);
 
 function C() {
@@ -30,7 +30,7 @@ function C() {
     C = (0, l.e7)([f.Z], () => f.Z.getCurrentPage());
   if (i.useEffect(() => {
       (0, c.Q3)(s.z.COMMUNITY_GUILD_SETTINGS_SAFETY, {
-        dismissAction: _.L.AUTO
+        dismissAction: v.L.AUTO
       })
     }, []), null == n) return null;
   let y = (0, j.Q)(n);
@@ -42,13 +42,13 @@ function C() {
       break;
     case h.u.CAPTCHA_AND_RAID_PROTECTION:
       e = (0, r.jsx)(b.Z, {
-        title: v.intl.string(v.t["53eF5u"]),
+        title: _.intl.string(_.t["53eF5u"]),
         settings: y[h.u.CAPTCHA_AND_RAID_PROTECTION]
       });
       break;
     case h.u.DM_AND_SPAM_PROTECTION:
       e = (0, r.jsx)(b.Z, {
-        title: v.intl.string(v.t.O0SfFx),
+        title: _.intl.string(_.t.O0SfFx),
         settings: y[h.u.DM_AND_SPAM_PROTECTION]
       });
       break;
@@ -59,7 +59,7 @@ function C() {
       break;
     case h.u.PERMISSIONS:
       e = (0, r.jsx)(b.Z, {
-        title: v.intl.string(v.t.BXoNiY),
+        title: _.intl.string(_.t.BXoNiY),
         settings: y[h.u.PERMISSIONS]
       })
   }
@@ -78,7 +78,7 @@ function C() {
       }), (0, r.jsx)(o.Text, {
         variant: "text-sm/semibold",
         color: "interactive-normal",
-        children: v.intl.string(v.t["13/7kZ"])
+        children: _.intl.string(_.t["13/7kZ"])
       })]
     }), e]
   })

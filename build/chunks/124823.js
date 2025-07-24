@@ -26,8 +26,8 @@ var r = n(255367),
   O = n(502762),
   E = n(530),
   S = n(679332),
-  I = n(544989),
-  P = n(228168),
+  P = n(544989),
+  I = n(228168),
   Z = n(388032),
   T = n(638414),
   N = n(283189);
@@ -79,10 +79,10 @@ function w(e) {
         ref: U,
         user: t,
         displayProfile: R,
-        themeType: P.lY.SIDEBAR,
+        themeType: I.lY.SIDEBAR,
         themeOverride: M,
         children: [(0, r.jsxs)(l.u2, {
-          children: [(0, r.jsx)(I.Z, {
+          children: [(0, r.jsx)(P.Z, {
             children: (0, r.jsx)(S.Z, {
               user: t
             })
@@ -91,13 +91,13 @@ function w(e) {
             children: [(0, r.jsx)(C.Z, {
               user: t,
               displayProfile: R,
-              themeType: P.lY.SIDEBAR,
+              themeType: I.lY.SIDEBAR,
               animateOnHover: !B
             }), (0, r.jsx)(_.Z, {
               user: t,
               displayProfile: R,
               channelId: n.id,
-              themeType: P.lY.SIDEBAR,
+              themeType: I.lY.SIDEBAR,
               onOpenProfile: w ? void 0 : F
             })]
           }), (0, r.jsxs)("div", {
@@ -109,7 +109,7 @@ function w(e) {
               onOpenProfile: w ? void 0 : F,
               tags: (0, r.jsx)(y.Z, {
                 displayProfile: R,
-                themeType: P.lY.SIDEBAR
+                themeType: I.lY.SIDEBAR
               })
             }), (0, r.jsxs)(O.Z.Overlay, {
               className: N.overlay,

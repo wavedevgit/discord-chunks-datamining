@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
   $$: () => b,
-  P_: () => v,
-  ap: () => _,
+  P_: () => _,
+  ap: () => v,
   ku: () => j
 }), n(953529), n(388685);
 var r = n(255367),
@@ -131,11 +131,11 @@ function j(e) {
     guildId: t,
     onEdit: n,
     disableGoodStatus: c
-  } = e, d = (0, l.Wu)([a.Z], () => a.Z.getDefaultChannelIds(t)), u = (0, l.e7)([a.Z], () => (0, o.kl)(t, a.Z.getDefaultChannelIds(t), a.Z.getOnboardingPrompts(t)).length), b = i.useMemo(() => new Set(d), [d]), [, j] = (0, o.VF)(t, b), _ = j.length, v = x(t), O = (0, m.O4)(t), C = (0, l.e7)([a.Z], () => a.Z.isAdvancedMode(t)), y = C ? p.intl.formatToPlainString(p.t.nHwnLC, {
-    numDefaultChannels: _,
-    numFromQuestions: u - _
-  }) : v ? p.intl.formatToPlainString(p.t.HxEwSk, {
-    numDefaultChannels: _
+  } = e, d = (0, l.Wu)([a.Z], () => a.Z.getDefaultChannelIds(t)), u = (0, l.e7)([a.Z], () => (0, o.kl)(t, a.Z.getDefaultChannelIds(t), a.Z.getOnboardingPrompts(t)).length), b = i.useMemo(() => new Set(d), [d]), [, j] = (0, o.VF)(t, b), v = j.length, _ = x(t), O = (0, m.O4)(t), C = (0, l.e7)([a.Z], () => a.Z.isAdvancedMode(t)), y = C ? p.intl.formatToPlainString(p.t.nHwnLC, {
+    numDefaultChannels: v,
+    numFromQuestions: u - v
+  }) : _ ? p.intl.formatToPlainString(p.t.HxEwSk, {
+    numDefaultChannels: v
   }) : p.intl.formatToPlainString(p.t.ey3uVV, {
     numDefaultChannels: g.md,
     numChattableChannels: g.X
@@ -148,20 +148,20 @@ function j(e) {
       color: "currentColor",
       className: f.channelIcon
     }),
-    hasStarted: _ > 0 || C,
-    status: v || O ? c ? "none" : "good" : "required",
+    hasStarted: v > 0 || C,
+    status: _ || O ? c ? "none" : "good" : "required",
     onEdit: n
   })
 }
 
-function _(e) {
+function v(e) {
   let {
     guildId: t,
     onEdit: n,
     disableGoodStatus: i
-  } = e, c = (0, l.Wu)([a.Z], () => a.Z.getDefaultChannelIds(t)), d = (0, l.Wu)([a.Z], () => a.Z.getOnboardingPrompts(t)), u = d.length, [m, g] = (0, o.dF)(t, d, c), x = m.length, b = m.length + g.length, j = x / b * 100, _ = (0, l.e7)([a.Z], () => a.Z.isAdvancedMode(t)), v = u > 0, O = "none";
-  return v && (j >= 85 && !i ? O = "good" : j < 85 && (O = "warning")), (0, r.jsx)(h, {
-    title: _ ? p.intl.string(p.t.AGjtFh) : p.intl.string(p.t.dqCzoa),
+  } = e, c = (0, l.Wu)([a.Z], () => a.Z.getDefaultChannelIds(t)), d = (0, l.Wu)([a.Z], () => a.Z.getOnboardingPrompts(t)), u = d.length, [m, g] = (0, o.dF)(t, d, c), x = m.length, b = m.length + g.length, j = x / b * 100, v = (0, l.e7)([a.Z], () => a.Z.isAdvancedMode(t)), _ = u > 0, O = "none";
+  return _ && (j >= 85 && !i ? O = "good" : j < 85 && (O = "warning")), (0, r.jsx)(h, {
+    title: v ? p.intl.string(p.t.AGjtFh) : p.intl.string(p.t.dqCzoa),
     description: p.intl.format(p.t.iuNisr, {
       numChannels: x,
       numTotalChannels: b,
@@ -177,25 +177,25 @@ function _(e) {
       color: "currentColor",
       className: f.channelIcon
     }),
-    hasStarted: v,
+    hasStarted: _,
     status: O,
     onEdit: n
   })
 }
 
-function v(e) {
+function _(e) {
   let {
     guildId: t,
     onEdit: n,
     disableGoodStatus: o
   } = e, m = (0, l.e7)([u.Z], () => u.Z.getSettings()), g = (0, l.e7)([a.Z], () => a.Z.getEnabled(t)), x = (0, c.uo)(m), b = m.enabled, j = i.useCallback(() => {
     (0, d.To)(t, !b)
-  }, [t, b]), _ = !(0, c.av)(m), v = "none";
-  _ && (x && !o ? v = "good" : x || (v = "required"));
+  }, [t, b]), v = !(0, c.av)(m), _ = "none";
+  v && (x && !o ? _ = "good" : x || (_ = "required"));
   let O = p.intl.string(p.t.GMOwOD);
-  x ? _ || (O = p.intl.string(p.t.wHOoyM)) : O = p.intl.string(p.t.wXFbgY);
+  x ? v || (O = p.intl.string(p.t.wHOoyM)) : O = p.intl.string(p.t.wXFbgY);
   let C = null;
-  return _ && g && (C = (0, r.jsx)(s.rsf, {
+  return v && g && (C = (0, r.jsx)(s.rsf, {
     className: f.inlineSwitch,
     checked: b,
     onChange: j,
@@ -208,8 +208,8 @@ function v(e) {
       color: "currentColor",
       className: f.channelIcon
     }),
-    hasStarted: _,
-    status: v,
+    hasStarted: v,
+    status: _,
     onEdit: n,
     extra: C
   })

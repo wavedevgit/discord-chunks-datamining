@@ -20,8 +20,8 @@ var r = n(255367),
   x = n(934638),
   b = n(566036),
   j = n(979664),
-  _ = n(343397),
-  v = n(509798),
+  v = n(343397),
+  _ = n(509798),
   O = n(75733),
   C = n(474024),
   y = n(981631),
@@ -52,7 +52,7 @@ let E = function() {
   }, [E]);
   return (i.useEffect(() => {
     a.Z.getDetectableGames()
-  }, []), S === d.a.FETCHED && null == T) ? (0, r.jsx)(v.g, {
+  }, []), S === d.a.FETCHED && null == T) ? (0, r.jsx)(_.g, {
     forceFetchGuildProfile: Z
   }) : S === d.a.NOT_FETCHED || S === d.a.FETCHING ? (0, r.jsx)("main", {
     className: I.spinner,
@@ -74,7 +74,7 @@ let E = function() {
             className: I.description,
             children: N.intl.string(N.t["5PGZWV"])
           })]
-        }), (0, r.jsx)(_.Z, {
+        }), (0, r.jsx)(v.Z, {
           profile: T,
           canManageGuild: P
         }), (0, r.jsx)("div", {

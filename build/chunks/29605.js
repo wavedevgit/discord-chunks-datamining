@@ -22,8 +22,8 @@ var r = n(255367),
   x = n(225433),
   b = n(599059),
   j = n(327802),
-  _ = n(110924),
-  v = n(200876),
+  v = n(110924),
+  _ = n(200876),
   O = n(556019),
   C = n(748523),
   y = n(730089),
@@ -262,7 +262,7 @@ let z = d().throttle(h.OQ, 1e3),
       }, e.id))]
     })
   },
-  q = e => {
+  X = e => {
     let t, n, i, {
         staticEmojiCount: l,
         animatedEmojiCount: s,
@@ -290,7 +290,7 @@ let z = d().throttle(h.OQ, 1e3),
       }
     }))
   },
-  X = () => (0, r.jsxs)("div", {
+  q = () => (0, r.jsxs)("div", {
     children: [(0, r.jsx)(p.vwX, {
       tag: p.RB0.H2,
       className: B.emojiUploadUploadRequirementsHeading,
@@ -337,7 +337,7 @@ let z = d().throttle(h.OQ, 1e3),
         revision: L.Z.getEmojiRevision(e.id),
         emojis: L.Z.getEmojis(e.id)
       })),
-      h = (0, _.Z)(c),
+      h = (0, v.Z)(c),
       [x, b] = i.useState(!1),
       [N, w] = i.useState(!1),
       R = i.useRef(null),
@@ -394,7 +394,7 @@ let z = d().throttle(h.OQ, 1e3),
             processFiles: () => Q(e)
           }, n))
         })
-      }, et = (0, v.l)(e);
+      }, et = (0, _.l)(e);
     return (0, r.jsxs)("div", {
       className: B.emojiSettings,
       children: [0 === W ? null : (0, r.jsx)(j.Z, {
@@ -403,7 +403,7 @@ let z = d().throttle(h.OQ, 1e3),
       }), (0, r.jsxs)(p.hjN, {
         tag: p.RB0.H1,
         title: U.intl.string(U.t.sMOuub),
-        children: [(0, r.jsx)(q, {
+        children: [(0, r.jsx)(X, {
           guild: e,
           staticEmojiCount: G.length,
           animatedEmojiCount: F.length
@@ -430,7 +430,7 @@ let z = d().throttle(h.OQ, 1e3),
               children: U.intl.string(U.t.EgNCTk)
             })]
           }) : (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(X, {}), (0, r.jsxs)(g.zx, {
+            children: [(0, r.jsx)(q, {}), (0, r.jsxs)(g.zx, {
               tabIndex: -1,
               size: g.zx.Sizes.MEDIUM,
               onClick: () => {

@@ -132,7 +132,7 @@ function h(e) {
     isSelecting: x,
     error: b,
     forceShowErrorTooltip: j
-  } = e, _ = i.useRef(null), v = i.useRef(null), [O, C] = i.useState(!1), {
+  } = e, v = i.useRef(null), _ = i.useRef(null), [O, C] = i.useState(!1), {
     ref: y,
     width: N = 0
   } = (0, c.ZP)(O), {
@@ -151,9 +151,9 @@ function h(e) {
     }, [n]),
     D = i.useCallback(function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-      if (t.trim().length <= 0 && p(), null != _.current && null != y.current && null != v.current) {
+      if (t.trim().length <= 0 && p(), null != v.current && null != y.current && null != _.current) {
         var n;
-        _.current.scrollTo(0, 0), _.current.setSelectionRange(0, 0), _.current.scrollLeft = 0, y.current.scrollLeft = 0, (null == (n = v.current) ? void 0 : n.ref) != null && (v.current.ref.scrollLeft = 0)
+        v.current.scrollTo(0, 0), v.current.setSelectionRange(0, 0), v.current.scrollLeft = 0, y.current.scrollLeft = 0, (null == (n = _.current) ? void 0 : n.ref) != null && (_.current.ref.scrollLeft = 0)
       }
       C(!1), l(e)
     }, [t, y, l, p]),
@@ -190,13 +190,13 @@ function h(e) {
           [m.isSelecting]: x,
           [m.isEditing]: O
         }),
-        ref: v,
+        ref: _,
         children: [(0, r.jsx)("input", {
           className: s()(m.chipletInput, {
             [m.isEditing]: O,
             [m.isSelecting]: x
           }),
-          ref: _,
+          ref: v,
           onChange: Z,
           onKeyDownCapture: A,
           value: t,

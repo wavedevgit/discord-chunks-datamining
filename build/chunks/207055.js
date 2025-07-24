@@ -26,8 +26,8 @@ var r = n(255367),
   O = n(496675),
   E = n(158776),
   S = n(885110),
-  I = n(797258),
-  P = n(606304),
+  P = n(797258),
+  I = n(606304),
   Z = n(979651),
   T = n(51144),
   N = n(649739),
@@ -44,7 +44,7 @@ let D = i.memo(e => {
     channel: y,
     sessionId: O,
     nick: M
-  } = e, D = s.id, k = (0, o.e7)([x.default], () => x.default.getId() === D, [D]), [L, U, B] = (0, o.Wu)([j.Z], () => k ? [!j.Z.isSupported() || j.Z.isSelfMute() || j.Z.isSelfMutedTemporarily(), j.Z.isSelfDeaf(), !1] : [!j.Z.isSupported() || j.Z.isLocalMute(D), !1, j.Z.isLocalVideoDisabled(D)], [k, D]), F = (0, o.e7)([P.Z], () => P.Z.isPrioritySpeaker(D)), H = (0, c.Z)({
+  } = e, D = s.id, k = (0, o.e7)([x.default], () => x.default.getId() === D, [D]), [L, U, B] = (0, o.Wu)([j.Z], () => k ? [!j.Z.isSupported() || j.Z.isSelfMute() || j.Z.isSelfMutedTemporarily(), j.Z.isSelfDeaf(), !1] : [!j.Z.isSupported() || j.Z.isLocalMute(D), !1, j.Z.isLocalVideoDisabled(D)], [k, D]), F = (0, o.e7)([I.Z], () => I.Z.isPrioritySpeaker(D)), H = (0, c.Z)({
     userId: D,
     checkSoundSharing: !0
   }), G = (0, o.e7)([v.ZP], () => v.ZP.isGuestOrLurker(y.guild_id, D)), V = (0, o.e7)([h.Z], () => h.Z.getGuildRingingUsers(y.id).has(D)), z = (0, o.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(y.id).find(e => {
@@ -56,7 +56,7 @@ let D = i.memo(e => {
   null != K && N.ZP.trackExposure({
     location: "voice_users"
   });
-  let [X, Q] = (0, o.Wu)([C.Z], () => [C.Z.getStreamForUser(D, y.getGuildId()), C.Z.getActiveStreamForUser(D, y.getGuildId())], [y, D]), J = (0, o.e7)([I.Z], () => I.Z.getSessionById(O)), $ = T.ZP.useName(s), ee = (0, o.e7)([Z.Z], () => Z.Z.getVoicePlatformForChannel(y.id, D), [y.id, D]), {
+  let [X, Q] = (0, o.Wu)([C.Z], () => [C.Z.getStreamForUser(D, y.getGuildId()), C.Z.getActiveStreamForUser(D, y.getGuildId())], [y, D]), J = (0, o.e7)([P.Z], () => P.Z.getSessionById(O)), $ = T.ZP.useName(s), ee = (0, o.e7)([Z.Z], () => Z.Z.getVoicePlatformForChannel(y.id, D), [y.id, D]), {
     enableHangStatus: et
   } = m.n.useExperiment({
     guildId: y.guild_id,
@@ -131,14 +131,14 @@ let k = [],
       withGuildIcon: b = !1,
       className: C,
       children: v
-    } = e, [j, S] = i.useState(null), [I, P] = i.useState(!1), Z = i.useRef(null), T = (0, _.Es)(l.id, null != c ? c : k), N = i.useRef(new s.sW(50, () => {
+    } = e, [j, S] = i.useState(null), [P, I] = i.useState(!1), Z = i.useRef(null), T = (0, _.Es)(l.id, null != c ? c : k), N = i.useRef(new s.sW(50, () => {
       S(Z.current), Z.current = null
     })), R = i.useRef(new s.sW(175, () => {
       S(null)
     })), L = i.useCallback(e => {
-      t && (P(!0), R.current.cancel(), Z.current = e, N.current.delay())
+      t && (I(!0), R.current.cancel(), Z.current = e, N.current.delay())
     }, [t]), U = i.useCallback(e => {
-      t && (N.current.cancel(), j === e && (P(!1), R.current.delay()))
+      t && (N.current.cancel(), j === e && (I(!1), R.current.delay()))
     }, [t, j]), B = (0, o.Wu)([E.Z], () => {
       if (u) return [];
       let e = new Set;
@@ -178,7 +178,7 @@ let k = [],
             canDrag: n && O.Z.can(w.Plq.MOVE_MEMBERS, l),
             showPreview: L,
             hidePreview: U,
-            previewIsOpen: I,
+            previewIsOpen: P,
             shouldShowPreview: j === a.id,
             tabIndex: f,
             location: m

@@ -26,8 +26,8 @@ var r = n(255367),
   O = n(796974),
   E = n(323873),
   S = n(607744),
-  I = n(375954),
-  P = n(496675),
+  P = n(375954),
+  I = n(496675),
   Z = n(306680),
   T = n(62817),
   N = n(594174),
@@ -105,7 +105,7 @@ let W = i.memo(function(e) {
       uploads: j,
       hasUnreads: E,
       editingMessageId: S,
-      fontSize: I,
+      fontSize: P,
       keyboardModeEnabled: Z,
       filterAfterTimestamp: T,
       showingQuarantineBanner: N,
@@ -118,16 +118,16 @@ let W = i.memo(function(e) {
       messageGroups: 30,
       groupRange: 4,
       attachments: 8,
-      fontSize: I,
+      fontSize: P,
       groupSpacing: p
     }) : (0, M.aJ)({
       compact: !1,
       messageGroups: 26,
       groupRange: 4,
       attachments: 8,
-      fontSize: I,
+      fontSize: P,
       groupSpacing: p
-    }), [x, I, p]), X = (0, L.ZP)({
+    }), [x, P, p]), X = (0, L.ZP)({
       messages: b,
       channel: g,
       compact: x,
@@ -143,7 +143,7 @@ let W = i.memo(function(e) {
       isEditing: null != S,
       keyboardModeEnabled: Z,
       hasMoreAfter: b.hasMoreAfter
-    }), J = (0, c.e7)([C.Z], () => P.Z.can(B.Plq.READ_MESSAGE_HISTORY, g) ? null : C.Z.getViewingRolesTimestamp(g.getGuildId())), {
+    }), J = (0, c.e7)([C.Z], () => I.Z.can(B.Plq.READ_MESSAGE_HISTORY, g) ? null : C.Z.getViewingRolesTimestamp(g.getGuildId())), {
       channelStreamMarkup: $,
       newMessagesBar: ee,
       jumpToPresentBar: et,
@@ -287,9 +287,9 @@ let W = i.memo(function(e) {
         {
           canManageMessages: r,
           permissionVersion: i
-        } = (0, c.cj)([P.Z], () => ({
-          canManageMessages: P.Z.can(B.Plq.MANAGE_MESSAGES, e),
-          permissionVersion: null != t ? P.Z.getGuildVersion(t) : null
+        } = (0, c.cj)([I.Z], () => ({
+          canManageMessages: I.Z.can(B.Plq.MANAGE_MESSAGES, e),
+          permissionVersion: null != t ? I.Z.getGuildVersion(t) : null
         }), [e, t]);
       return {
         canChat: n,
@@ -335,7 +335,7 @@ let W = i.memo(function(e) {
       editingMessageId: q
     } = function(e) {
       var t, n;
-      let r = (0, c.e7)([I.Z], () => I.Z.getMessages(e.id), [e.id]),
+      let r = (0, c.e7)([P.Z], () => P.Z.getMessages(e.id), [e.id]),
         l = (0, c.e7)([Z.ZP], () => {
           var t;
           return null != (t = Z.ZP.getOldestUnreadMessageId(e.id)) ? t : null

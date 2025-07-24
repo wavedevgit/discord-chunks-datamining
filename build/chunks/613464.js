@@ -1,4 +1,4 @@
-/** Chunk was on 3496 **/
+/** Chunk was on 54168 **/
 t.d(e, {
   Z: () => H
 }), t(388685);
@@ -10,12 +10,12 @@ var n = t(255367),
   a = t(481060),
   o = t(749210),
   g = t(110924),
-  v = t(410030),
-  f = t(616780),
+  f = t(410030),
+  v = t(616780),
   c = t(100527),
   h = t(906732),
-  u = t(527379),
-  E = t(687158),
+  E = t(527379),
+  u = t(687158),
   d = t(184301),
   C = t(502762),
   B = t(271383),
@@ -35,7 +35,7 @@ function H(A) {
     style: Q
   } = A, O = (0, D.m)(t), P = (0, s.e7)([w.default], () => w.default.getUser(e), [e]), V = (0, s.e7)([B.ZP], () => B.ZP.getMember(t, e), [t, e]), [j, T] = r.useState(null == P || null == V), y = (0, g.Z)(V), m = r.useRef(null), {
     analyticsLocations: L
-  } = (0, h.ZP)(c.Z.GUILD_MEMBER_MOD_VIEW), x = (0, E.ZP)(e, t), Z = (0, v.ZP)();
+  } = (0, h.ZP)(c.Z.GUILD_MEMBER_MOD_VIEW), x = (0, u.ZP)(e, t), Z = (0, f.ZP)();
   return (r.useEffect(() => {
     O || l()
   }, [O, l]), r.useEffect(() => {
@@ -47,11 +47,11 @@ function H(A) {
     return !j && A && (m.current = window.setTimeout(l, 500)), () => {
       null != m.current && window.clearTimeout(m.current)
     }
-  }, [j, V, l]), (0, f.$)({
+  }, [j, V, l]), (0, v.$)({
     [t]: [e]
   }), r.useEffect(() => {
     !async function() {
-      let A = [o.Z.requestMembersById(t, [e]), (0, u.nb)(t, [e]), (0, d.Z)(e, void 0, {
+      let A = [o.Z.requestMembersById(t, [e]), (0, E.nb)(t, [e]), (0, d.Z)(e, void 0, {
         guildId: t,
         dispatchWait: !0
       })];

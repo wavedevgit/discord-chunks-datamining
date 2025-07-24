@@ -22,7 +22,7 @@ var i = n(481060),
   b = n(388032),
   j = n(264054);
 
-function _(e) {
+function v(e) {
   let {
     payoutsByPeriod: t,
     team: n
@@ -44,7 +44,7 @@ function _(e) {
   })
 }
 
-function v(e) {
+function _(e) {
   let {
     guildId: t,
     totalPayoutsForPeriod: n
@@ -106,14 +106,14 @@ let O = e => {
             value: y.subscriberChange
           })
         })]
-      }), (0, r.jsx)(v, {
+      }), (0, r.jsx)(_, {
         guildId: a,
         totalPayoutsForPeriod: O
       })]
     }), (0, r.jsx)(i.hjN, {
       title: b.intl.string(b.t["+5Rmho"]),
       className: j.formSection,
-      children: (0, r.jsx)(_, {
+      children: (0, r.jsx)(v, {
         payoutsByPeriod: C,
         team: g
       })

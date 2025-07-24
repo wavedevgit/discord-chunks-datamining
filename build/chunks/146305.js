@@ -20,8 +20,8 @@ var r = n(255367),
   x = n(303737),
   b = n(15030),
   j = n(220685),
-  _ = n(536442),
-  v = n(575258),
+  v = n(536442),
+  _ = n(575258),
   O = n(276687),
   C = n(594174),
   y = n(585483),
@@ -49,8 +49,8 @@ var r = n(255367),
   V = n(324330),
   Y = n(495300),
   K = n(651780),
-  q = n(279542),
-  X = n(665324),
+  X = n(279542),
+  q = n(665324),
   J = n(208150),
   Q = n(353398),
   $ = n(365774),
@@ -106,7 +106,7 @@ let eb = {
   getSectionDefinition: function(e, t) {
     let eb = (0, p.p)(t.guild.id, "guild_settings"),
       ej = !1 === t.guild.features.has(em.oNc.CREATOR_MONETIZABLE) && !1 === t.guild.features.has(em.oNc.CREATOR_MONETIZABLE_PROVISIONAL),
-      e_ = eb && ej ? {
+      ev = eb && ej ? {
         label: (0, r.jsx)("div", {
           className: ef.roleSubLabel,
           children: ep.intl.string(ep.t.Tn7Koq)
@@ -119,7 +119,7 @@ let eb = {
         }),
         ariaLabel: ep.intl.string(ep.t["KzCF//"])
       },
-      ev = t.guild.features.has(em.oNc.COMMUNITY) && t.canViewGuildAnalytics;
+      e_ = t.guild.features.has(em.oNc.COMMUNITY) && t.canViewGuildAnalytics;
     switch (e) {
       case em.pNK.PROFILE:
         return {
@@ -172,7 +172,7 @@ let eb = {
         };
       case em.pNK.SOUNDBOARD:
         return {
-          section: em.pNK.SOUNDBOARD, impressionName: i.ImpressionNames.GUILD_SETTINGS_SOUNDBOARD, label: ep.intl.string(ep.t.OWQNYm), ariaLabel: ep.intl.string(ep.t.OWQNYm), element: X.Z, predicate: () => t.canManageGuildExpressions
+          section: em.pNK.SOUNDBOARD, impressionName: i.ImpressionNames.GUILD_SETTINGS_SOUNDBOARD, label: ep.intl.string(ep.t.OWQNYm), ariaLabel: ep.intl.string(ep.t.OWQNYm), element: q.Z, predicate: () => t.canManageGuildExpressions
         };
       case em.pNK.GUILD_TEMPLATES:
         return {
@@ -210,7 +210,7 @@ let eb = {
         };
       case em.pNK.MODERATION:
         return {
-          section: em.pNK.MODERATION, impressionName: i.ImpressionNames.GUILD_SETTINGS_MODERATION, label: ep.intl.string(ep.t["suhY+f"]), element: q.ZP, predicate: () => t.canManageGuild && !t.guild.features.has(em.oNc.COMMUNITY)
+          section: em.pNK.MODERATION, impressionName: i.ImpressionNames.GUILD_SETTINGS_MODERATION, label: ep.intl.string(ep.t["suhY+f"]), element: X.ZP, predicate: () => t.canManageGuild && !t.guild.features.has(em.oNc.COMMUNITY)
         };
       case em.pNK.GUILD_AUTOMOD:
         return {
@@ -235,7 +235,7 @@ let eb = {
           label: eO,
           element: B.Z,
           ariaLabel: eO,
-          newIndicator: !t.guild.features.has(em.oNc.COMMUNITY) && null != t.memberCount && t.memberCount >= eg.U3 && _.qc.hasHotspot(_.v6.GUILD_SETTINGS_COMMUNITY_GUILD_UPSELL),
+          newIndicator: !t.guild.features.has(em.oNc.COMMUNITY) && null != t.memberCount && t.memberCount >= eg.U3 && v.qc.hasHotspot(v.v6.GUILD_SETTINGS_COMMUNITY_GUILD_UPSELL),
           notice: {
             stores: [T.Z],
             element: B.X
@@ -259,7 +259,7 @@ let eb = {
         };
       case em.pNK.ANALYTICS:
         return {
-          section: em.pNK.ANALYTICS, impressionName: i.ImpressionNames.GUILD_SETTINGS_ANALYTICS, label: ep.intl.string(ep.t["0wWfUF"]), ariaLabel: ep.intl.string(ep.t["0wWfUF"]), element: M.Z, predicate: () => ev
+          section: em.pNK.ANALYTICS, impressionName: i.ImpressionNames.GUILD_SETTINGS_ANALYTICS, label: ep.intl.string(ep.t["0wWfUF"]), ariaLabel: ep.intl.string(ep.t["0wWfUF"]), element: M.Z, predicate: () => e_
         };
       case em.pNK.DISCOVERY_LANDING_PAGE:
         return {
@@ -277,12 +277,12 @@ let eb = {
       case em.pNK.COMMUNITY_WELCOME:
         return {
           section: em.pNK.COMMUNITY_WELCOME, impressionName: i.ImpressionNames.GUILD_SETTINGS_COMMUNITY_WELCOME, label: ep.intl.string(ep.t["2rkmDg"]), ariaLabel: ep.intl.string(ep.t["2rkmDg"]), element: F.Z, notice: {
-            stores: [v.Z],
+            stores: [_.Z],
             element: O.Z
           }, predicate: () => t.canManageGuild && t.guild.features.has(em.oNc.COMMUNITY) && !t.welcomeScreenEmpty && !t.guild.features.has(em.oNc.GUILD_SERVER_GUIDE)
         };
       case em.pNK.ROLE_SUBSCRIPTIONS:
-        return ex(eh({}, e_), {
+        return ex(eh({}, ev), {
           section: em.pNK.ROLE_SUBSCRIPTIONS,
           element: b.Z,
           type: o.bT.CUSTOM,

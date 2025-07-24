@@ -28,7 +28,7 @@ function m(e) {
     var t;
     let n = Object.values(null != (t = e.ppgs) ? t : {})[0];
     return (null == n ? void 0 : n.status) === d.x_.OPEN || (null == n ? void 0 : n.status) === d.x_.PAYOUT_DEFERRED
-  }), b = p.length > 0, j = f.length > 0, _ = x.length > 0;
+  }), b = p.length > 0, j = f.length > 0, v = x.length > 0;
   return null == g ? null : (0, r.jsxs)("div", {
     children: [(0, r.jsx)(l.R94, {
       type: l.R94.Types.DESCRIPTION,
@@ -40,7 +40,7 @@ function m(e) {
     }), (0, r.jsx)(l.zxk, {
       variant: "critical-primary",
       text: u.intl.string(u.t.FrOFSk),
-      disabled: !h || b || j || _,
+      disabled: !h || b || j || v,
       onClick: () => {
         (0, l.ZDy)(async () => {
           let {

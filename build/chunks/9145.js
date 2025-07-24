@@ -26,8 +26,8 @@ var r = n(255367),
   O = n(51144),
   E = n(566620),
   S = n(317381),
-  I = n(619915),
-  P = n(988980),
+  P = n(619915),
+  I = n(988980),
   Z = n(16609),
   T = n(952561),
   N = n(563218),
@@ -52,7 +52,7 @@ function G(e) {
     maxHeight: G,
     connectedLocation: V,
     renderExternalHeader: z
-  } = e, W = (0, T.Z)(), Y = (0, o.Wu)([S.ZP], () => S.ZP.getEmbeddedActivitiesForLocation(V), [V]), q = (0, Z.p)(V), K = (0, o.e7)([y.Z], () => y.Z.getChannel(q)), X = (0, I.gb)(Y), Q = (0, I.uF)(X), J = i.useCallback(() => {
+  } = e, W = (0, T.Z)(), Y = (0, o.Wu)([S.ZP], () => S.ZP.getEmbeddedActivitiesForLocation(V), [V]), q = (0, Z.p)(V), K = (0, o.e7)([y.Z], () => y.Z.getChannel(q)), X = (0, P.gb)(Y), Q = (0, P.uF)(X), J = i.useCallback(() => {
     (0, E.tg)(k.Ez.PIP)
   }, []), $ = i.useRef(null), ee = (0, o.e7)([S.ZP], () => S.ZP.getFocusedLayout()), et = ee !== k.MI.NO_CHAT, [en, er] = i.useState(null != (n = null != (t = m.ZP.activityPanelHeight) ? t : G) ? n : null), ei = i.useCallback(e => {
     u.ZP.updatedUnsyncedSettings({
@@ -76,7 +76,7 @@ function G(e) {
   let es = ea.width / Math.max(ea.height, 1) < k.I0,
     ec = 0,
     eu = 0,
-    ed = (0, P.Z)(null == W ? void 0 : W.id);
+    ed = (0, I.Z)(null == W ? void 0 : W.id);
   if (!ed) {
     let e = ea.width,
       t = ea.height;

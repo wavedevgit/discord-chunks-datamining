@@ -20,8 +20,8 @@ var r = n(255367),
   x = n(700785),
   b = n(764260),
   j = n(631969),
-  _ = n(95242),
-  v = n(420966),
+  v = n(95242),
+  _ = n(420966),
   O = n(275296),
   C = n(203377),
   y = n(981631),
@@ -168,10 +168,10 @@ function R(e) {
   })).filter(e => e.permissions.length > 0), {
     headerHeight: g,
     headerRef: p
-  } = (0, _.Z)(0), {
+  } = (0, v.Z)(0), {
     scrolledToTop: x,
     handleScroll: b
-  } = (0, v.V)(), j = i.useRef(!1);
+  } = (0, _.V)(), j = i.useRef(!1);
   return i.useEffect(() => {
     j.current || "" === c.trimStart() || (f.default.track(y.rMx.SEARCH_STARTED, {
       search_type: "Permissions"
@@ -189,7 +189,7 @@ function R(e) {
           [E.stickyHeaderElevated]: !x
         }),
         ref: p,
-        children: [(0, r.jsx)(v.Z, {
+        children: [(0, r.jsx)(_.Z, {
           guild: t,
           role: n,
           selectedSection: C.ZI.PERMISSIONS,

@@ -28,8 +28,8 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 let j = -1,
-  _ = (0, g.Mg)(u.Z.PREMIUM_GUILD_PROGRESS_BAR_PROGRESS_BAR_WIDTH),
-  v = (0, g.Mg)(u.Z.PREMIUM_GUILD_PROGRESS_BAR_TIER_MARKER_SIZE),
+  v = (0, g.Mg)(u.Z.PREMIUM_GUILD_PROGRESS_BAR_PROGRESS_BAR_WIDTH),
+  _ = (0, g.Mg)(u.Z.PREMIUM_GUILD_PROGRESS_BAR_TIER_MARKER_SIZE),
   O = {
     tension: 140,
     friction: 30
@@ -43,7 +43,7 @@ class y extends(r = l.Component) {
     let {
       tiers: e
     } = this.props;
-    return e[e.length - 1].y + v / 2
+    return e[e.length - 1].y + _ / 2
   }
   getProgressHeight(e) {
     let t, {
@@ -145,7 +145,7 @@ class y extends(r = l.Component) {
       g = e.key === a[0].key,
       p = this.getTierDisabled(e);
     l = g ? x.tierFirst : p ? x.tierInProgress : u ? x.tierCurrent : d ? x.tierAccomplished : x.tierInProgress;
-    let f = e.y - (g ? 0 : v / 2),
+    let f = e.y - (g ? 0 : _ / 2),
       h = this.state.tierMarkerActive >= t,
       j = !g && u && h;
     return (0, i.jsx)(m.ua7, {
@@ -207,13 +207,13 @@ class y extends(r = l.Component) {
       children: [(0, i.jsx)("rect", {
         x: "0",
         y: "0",
-        width: _,
+        width: v,
         height: e,
         fill: "white"
       }), t.map(e => (0, i.jsx)("circle", {
-        cx: _ / 2,
+        cx: v / 2,
         cy: e.y,
-        r: _ / 2,
+        r: v / 2,
         fill: "black"
       }, e.key))]
     })
@@ -263,8 +263,8 @@ class y extends(r = l.Component) {
         height: r
       },
       children: [(0, i.jsxs)("svg", {
-        viewBox: "0 0 ".concat(_, " ").concat(r),
-        width: _,
+        viewBox: "0 0 ".concat(v, " ").concat(r),
+        width: v,
         height: r,
         children: [this.renderProgressMask(r), this.renderProgressBar(r, n)]
       }), (0, i.jsx)("div", {

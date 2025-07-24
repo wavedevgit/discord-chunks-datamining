@@ -20,8 +20,8 @@ var r = n(255367),
   x = n(174604),
   b = n(399829),
   j = n(428862),
-  _ = n(899667),
-  v = n(626135),
+  v = n(899667),
+  _ = n(626135),
   O = n(267642),
   C = n(63063),
   y = n(999382),
@@ -95,7 +95,7 @@ function w() {
     })
   }, []);
   let e = (0, l.e7)([y.Z], () => y.Z.getGuild()),
-    t = (0, l.e7)([_.Z], () => null != e ? _.Z.getAppliedGuildBoostsForGuild(e.id) : null),
+    t = (0, l.e7)([v.Z], () => null != e ? v.Z.getAppliedGuildBoostsForGuild(e.id) : null),
     n = (0, g.V)();
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(i.Fragment, {
@@ -123,7 +123,7 @@ function w() {
     }), (0, r.jsx)("div", {
       className: E.divider
     }), n ? (0, r.jsx)(f.Z, {}) : null, n ? (0, r.jsx)(p.Z, {
-      onOpenPremiumClick: () => void v.default.track(N.rMx.PREMIUM_PROMOTION_OPENED, {
+      onOpenPremiumClick: () => void _.default.track(N.rMx.PREMIUM_PROMOTION_OPENED, {
         location: {
           page: N.ZY5.GUILD_SETTINGS,
           section: N.jXE.NITRO_CROSS_PROMO_FROM_BOOSTING,

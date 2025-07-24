@@ -1,4 +1,4 @@
-/** Chunk was on 3496 **/
+/** Chunk was on 54168 **/
 t.d(e, {
   q: () => o
 });
@@ -22,9 +22,9 @@ let i = ["#4282d8", "#0abbff", "#ffffff"],
     var e, t, {
         width: o = 24,
         height: g = 24,
-        primaryTintColor: v
+        primaryTintColor: f
       } = A,
-      f = function(A, e) {
+      v = function(A, e) {
         if (null == A) return {};
         var t, n, r = function(A, e) {
           if (null == A) return {};
@@ -43,7 +43,7 @@ let i = ["#4282d8", "#0abbff", "#ffffff"],
       primaryColorsTransformed: c
     } = (0, l.s)({
       primaryBaseColors: i,
-      primaryTintColor: v,
+      primaryTintColor: f,
       primaryTintLuminances: s,
       primaryLuminanceWeights: a
     });
@@ -64,7 +64,7 @@ let i = ["#4282d8", "#0abbff", "#ffffff"],
         })
       }
       return A
-    }({}, (0, r.Z)(f)), t = t = {
+    }({}, (0, r.Z)(v)), t = t = {
       width: o,
       height: g,
       viewBox: "0 0 16 16",

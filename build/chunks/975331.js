@@ -23,12 +23,12 @@ function b() {
   var e;
   let {
     editStateId: t
-  } = (0, u.N)(), [n, l] = m.TT(t), [b, j] = m.F2(t), _ = (0, c.oC)(t), {
-    options: v
-  } = (0, p.Z)(null != (e = null == _ ? void 0 : _.active_trial) ? e : null), O = (0, g.Z)(), C = null != n, y = i.useCallback(e => {
-    let t = v.find(e => e.isDefault);
+  } = (0, u.N)(), [n, l] = m.TT(t), [b, j] = m.F2(t), v = (0, c.oC)(t), {
+    options: _
+  } = (0, p.Z)(null != (e = null == v ? void 0 : v.active_trial) ? e : null), O = (0, g.Z)(), C = null != n, y = i.useCallback(e => {
+    let t = _.find(e => e.isDefault);
     s()(null != t, "Missing default trial duartion option"), l(e ? t.value : null)
-  }, [l, v]), N = (0, d.mY)(), I = (0, o.Dt)(), E = (0, o.Dt)();
+  }, [l, _]), N = (0, d.mY)(), I = (0, o.Dt)(), E = (0, o.Dt)();
   return (0, r.jsxs)(f.Z, {
     title: h.intl.string(h.t["6antoq"]),
     description: h.intl.string(h.t.urVijY),
@@ -51,7 +51,7 @@ function b() {
         size: 8
       }), (0, r.jsx)(a.q4e, {
         "aria-labelledby": I,
-        options: v,
+        options: _,
         className: x.formInput,
         placeholder: h.intl.string(h.t.WZG1BQ),
         value: n,

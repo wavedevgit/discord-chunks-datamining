@@ -26,8 +26,8 @@ var r = n(255367),
   O = n(450936),
   E = n(993766),
   S = n(499254),
-  I = n(541099),
-  P = n(827498),
+  P = n(541099),
+  I = n(827498),
   Z = n(533379),
   T = n(555573),
   N = n(456007),
@@ -80,8 +80,8 @@ var r = n(255367),
   eO = n(155409),
   eE = n(163612),
   eS = n(314897),
-  eI = n(433355),
-  eP = n(592125),
+  eP = n(433355),
+  eI = n(592125),
   eZ = n(703558),
   eT = n(323873),
   eN = n(271383),
@@ -434,7 +434,7 @@ class tn extends i.PureComponent {
           let {
             location: t,
             sectionName: n
-          } = null != (m = (0, eY._U)(l)) ? m : {}, r = e === R.bB.APPLICATION_LAUNCHER ? I.Z.lastShownEntrypoint() : P._b.TEXT, {
+          } = null != (m = (0, eY._U)(l)) ? m : {}, r = e === R.bB.APPLICATION_LAUNCHER ? P.Z.lastShownEntrypoint() : I._b.TEXT, {
             isAuthorized: i
           } = await (0, k.L)({
             applicationId: l.applicationId,
@@ -622,8 +622,8 @@ class tr extends i.PureComponent {
         showAppLauncherButton: O,
         showAppDMsUI: E,
         isInitialLoading: S,
-        pendingScheduledMessage: I,
-        recipientUser: P,
+        pendingScheduledMessage: P,
+        recipientUser: I,
         voiceChannel: Z,
         theme: T,
         chatWallpaperState: N,
@@ -669,7 +669,7 @@ class tr extends i.PureComponent {
             onCommandSentinelTyped: this.handleCommandSentinelTyped,
             renderAppLauncherButton: this.renderAppLauncherButton,
             renderAppCommandButton: this.renderAppCommandButton,
-            pendingScheduledMessage: I
+            pendingScheduledMessage: P
           })
         }), this.renderAppCommandButton()]
       }),
@@ -688,7 +688,7 @@ class tr extends i.PureComponent {
       z = W.qM.getCurrentConfig({
         location: "ChannelChat"
       }).enabled,
-      q = V && null != P && null != Z && null != Z.guild_id;
+      q = V && null != I && null != Z && null != Z.guild_id;
     return (0, r.jsx)(_.Z, {
       page: (0, eL.mE)(this.props.channel),
       children: (0, r.jsx)(el.sW, {
@@ -724,7 +724,7 @@ class tr extends i.PureComponent {
               children: [(0, r.jsx)(Y.Z, {
                 channel: i
               }), q && (0, r.jsx)(e$.Z, {
-                recipientUser: P,
+                recipientUser: I,
                 voiceChannel: Z
               }), (0, r.jsx)(eq.Z, {
                 channel: i,
@@ -826,7 +826,7 @@ class tr extends i.PureComponent {
           return;
         case e0.yXg.ARROW_RIGHT:
           n === U.Ie.NORMAL && eB.S.dispatch(e0.CkL.FOCUS_CHANNEL_TEXT_AREA, {
-            channelId: eI.ZP.getCurrentSidebarChannelId(r.id)
+            channelId: eP.ZP.getCurrentSidebarChannelId(r.id)
           })
       }
     }), e5(this, "handleOpenExpressionPicker", e => {
@@ -838,7 +838,7 @@ class tr extends i.PureComponent {
       let {
         applicationId: t
       } = e;
-      return S.__(P._b.TEXT, this.props.chatInputType, {
+      return S.__(I._b.TEXT, this.props.chatInputType, {
         applicationId: t
       })
     }), e5(this, "handleChatInteract", () => {
@@ -914,7 +914,7 @@ let ti = i.memo(function(e) {
   }), g = (0, d.e7)([ep.Z], () => ep.Z.isEnabled()), _ = (0, em.Z)(t.id), y = (0, er.Z)(t.id), x = (0, Z.R)({
     channel: t,
     chatInputType: l
-  }), j = (0, L.Q)(t.id), S = (0, ex.k)(t.id), P = (0, C.ZP)(), T = (0, K.Z)(t.id), N = (0, q.Z)(null == T ? void 0 : T.wallpaperId), {
+  }), j = (0, L.Q)(t.id), S = (0, ex.k)(t.id), I = (0, C.ZP)(), T = (0, K.Z)(t.id), N = (0, q.Z)(null == T ? void 0 : T.wallpaperId), {
     isInitialLoading: A,
     primaryEntryPointCommand: w,
     isProfileFetching: R,
@@ -936,9 +936,9 @@ let ti = i.memo(function(e) {
     commands: U
   });
   let B = i.useRef(null),
-    F = (0, d.e7)([I.Z], () => I.Z.appDMChannelsWithFailedLoads().has(t.id)),
+    F = (0, d.e7)([P.Z], () => P.Z.appDMChannelsWithFailedLoads().has(t.id)),
     H = (0, d.e7)([eR.Z], () => eR.Z.getVoiceChannelId()),
-    G = (0, d.e7)([eP.Z], () => eP.Z.getChannel(H)),
+    G = (0, d.e7)([eI.Z], () => eI.Z.getChannel(H)),
     V = (0, d.e7)([eD.default], () => t.type !== e0.d4z.DM ? null : eD.default.getUser(t.getRecipientId())),
     W = (0, d.e7)([eh.ZP, eS.default], () => eh.ZP.getUserCombo(eS.default.getId(), t.id)),
     Y = (0, b.iD)(t),
@@ -971,7 +971,7 @@ let ti = i.memo(function(e) {
     pendingScheduledMessage: S,
     recipientUser: V,
     voiceChannel: G,
-    theme: P,
+    theme: I,
     chatWallpaperState: T,
     wallpaperColorMix: N,
     messagesTypingGradient: $ && Q,

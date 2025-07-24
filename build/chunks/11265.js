@@ -22,7 +22,7 @@ let m = i.memo(function(e) {
     onExpand: f,
     disableAnimation: h,
     disableBackground: x
-  } = e, [b, j] = i.useState(!0), [_, v] = i.useState(!1), {
+  } = e, [b, j] = i.useState(!0), [v, _] = i.useState(!1), {
     ref: O,
     height: C = 0
   } = (0, c.ZP)(), {
@@ -60,14 +60,14 @@ let m = i.memo(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t),
     onStart: () => {
-      v(!1)
+      _(!1)
     },
     onRest: () => {
-      v(!0)
+      _(!0)
     }
   }, b || h ? "animate-never" : "respect-motion-settings");
   return i.useLayoutEffect(() => {
-    v(!1), E(g)
+    _(!1), E(g)
   }, [g]), i.useLayoutEffect(() => {
     let e = setTimeout(() => {
       j(!1)
@@ -80,7 +80,7 @@ let m = i.memo(function(e) {
     }),
     children: (0, r.jsxs)(a.animated.div, {
       className: s()(u.contentExpandContainer, {
-        [u.showOverflow]: g && _
+        [u.showOverflow]: g && v
       }),
       style: S,
       children: [(0, r.jsx)(o.P3F, {

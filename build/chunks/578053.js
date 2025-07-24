@@ -1,8 +1,8 @@
 /** Chunk was on 88388 **/
 "use strict";
 n.d(t, {
-  g: () => _,
-  u: () => v
+  g: () => v,
+  u: () => _
 }), n(290780);
 var r = n(255367),
   i = n(73800),
@@ -44,7 +44,7 @@ function j(e) {
   })
 }
 
-function _(e) {
+function v(e) {
   let {
     canManageGuild: t,
     guildId: n,
@@ -79,7 +79,7 @@ function _(e) {
   })
 }
 
-function v(e) {
+function _(e) {
   let {
     canManageGuild: t,
     guildId: n,

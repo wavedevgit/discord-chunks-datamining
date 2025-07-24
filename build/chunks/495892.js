@@ -21,7 +21,7 @@ var r = n(255367),
   b = n(388032),
   j = n(260324);
 
-function _(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -40,7 +40,7 @@ function _(e) {
   return e
 }
 
-function v(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -79,7 +79,7 @@ function O(e) {
     children: l
   })
 }
-let C = (e, t) => () => t(v(_({}, e), {
+let C = (e, t) => () => t(_(v({}, e), {
     enabled: !e.enabled
   })),
   y = e => {
@@ -104,7 +104,7 @@ let C = (e, t) => () => t(v(_({}, e), {
       }
       return i
     }(e, ["className", "children"]);
-    return (0, r.jsx)(s.P3F, v(_({
+    return (0, r.jsx)(s.P3F, _(v({
       className: t,
       onClick: y,
       onMouseDown: y,
@@ -140,7 +140,7 @@ function I(e) {
         text: b.intl.string(b.t.UKOtz8),
         position: "top",
         "aria-label": b.intl.string(b.t.PdRCRk),
-        children: e => (0, r.jsx)(s.P3F, v(_({}, e), {
+        children: e => (0, r.jsx)(s.P3F, _(v({}, e), {
           onClick: o,
           className: j.menuIconButton,
           children: (0, r.jsx)(s.Huf, {
@@ -174,7 +174,7 @@ function S(e) {
     updateRule: f
   } = (0, u.pH)(t.guildId), [h, x] = i.useState(t.enabled), C = (0, l.throttle)(async (e, n) => {
     if (n.preventDefault(), n.stopPropagation(), !c) {
-      let e = v(_({}, t), {
+      let e = _(v({}, t), {
         enabled: !h
       });
       x(!h);
@@ -231,7 +231,7 @@ function S(e) {
         text: b.intl.string(b.t.UKOtz8),
         position: "top",
         "aria-label": b.intl.string(b.t.PdRCRk),
-        children: e => (0, r.jsx)(s.P3F, v(_({}, e), {
+        children: e => (0, r.jsx)(s.P3F, _(v({}, e), {
           onClick: I,
           className: j.menuIconButton,
           children: (0, r.jsx)(s.Huf, {
@@ -307,7 +307,7 @@ function P(e) {
       let {
         default: e
       } = await n.e("25443").then(n.bind(n, 46577));
-      return n => (0, r.jsx)(e, _({
+      return n => (0, r.jsx)(e, v({
         rule: t
       }, n))
     }))

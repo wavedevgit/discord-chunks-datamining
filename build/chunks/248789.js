@@ -100,10 +100,10 @@ function y(e) {
     S = i.useCallback(() => {
       x(), O(h.NM.USER_BANNER_BLOCK_CONFIRM)
     }, [x, O]),
-    I = i.useCallback(() => {
+    P = i.useCallback(() => {
       x(), O(h.NM.USER_BANNER_BLOCK_AND_REPORT_CONFIRM)
     }, [x, O]),
-    P = i.useCallback(() => {
+    I = i.useCallback(() => {
       (0, s.ZDy)(async () => {
         let {
           default: e
@@ -116,7 +116,7 @@ function y(e) {
           return (0, r.jsx)(e, {
             transitionState: i,
             onBlock: S,
-            onBlockAndReport: I,
+            onBlockAndReport: P,
             onCancel: () => {
               null == l || l(), O(h.NM.USER_BANNER_BLOCK_CANCEL)
             },
@@ -126,7 +126,7 @@ function y(e) {
           })
         }
       })
-    }, [S, I, C, t, O]);
+    }, [S, P, C, t, O]);
   return (0, r.jsx)(f.Q, {
     channelId: t,
     warningId: y,
@@ -142,7 +142,7 @@ function y(e) {
     }, ...v ? [] : [{
       text: g.intl.string(g.t["7q0bNT"]),
       color: o.zx.Colors.PRIMARY,
-      onclick: P
+      onclick: I
     }]]
   })
 }

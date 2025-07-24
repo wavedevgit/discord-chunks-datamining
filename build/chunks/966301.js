@@ -21,8 +21,8 @@ var r = n(255367),
   x = n(716130),
   b = n(981631),
   j = n(290511),
-  _ = n(388032),
-  v = n(795808);
+  v = n(388032),
+  _ = n(795808);
 
 function O(e) {
   let {
@@ -30,51 +30,51 @@ function O(e) {
     prompts: n
   } = e, a = (0, l.e7)([m.Z], () => m.Z.editedDefaultChannelIds), [c, u] = (0, d.dF)(t, n, [...a]), g = c.length, p = c.length + u.length, f = g / p * 100, h = Math.max(Math.ceil(85 * p / 100) - g, 0), [x, b] = i.useState(!1), j = x ? s.CJ0 : s.u04;
   return (0, r.jsxs)("div", {
-    className: v.channelCoverage,
+    className: _.channelCoverage,
     children: [(0, r.jsxs)(s.P3F, {
-      className: v.coverageHeader,
+      className: _.coverageHeader,
       onClick: () => b(!x),
       children: [(0, r.jsxs)("div", {
-        className: v.warningTextContainer,
+        className: _.warningTextContainer,
         children: [f <= 85 && (0, r.jsx)(s.P4T, {
           size: "xs",
           color: "currentColor",
-          className: v.warning
+          className: _.warning
         }), (0, r.jsx)(s.Text, {
-          className: v.coverageTitle,
+          className: _.coverageTitle,
           variant: "text-xs/medium",
           color: "text-muted",
-          children: _.intl.format(_.t.nMVKCQ, {
+          children: v.intl.format(v.t.nMVKCQ, {
             numChannelsMissing: p - g
           })
         })]
       }), (0, r.jsxs)("div", {
-        className: v.progressContainer,
+        className: _.progressContainer,
         children: [(0, r.jsx)(s.Exd, {
-          className: v.coverageProgress,
+          className: _.coverageProgress,
           foregroundColor: f > 85 ? "var(--status-positive)" : "var(--status-warning)",
           percent: f
         }), (0, r.jsx)(j, {
           size: "md",
           color: "currentColor",
-          className: v.caret
+          className: _.caret
         })]
       })]
     }), x ? (0, r.jsxs)("div", {
-      className: v.channelCoverageDetails,
+      className: _.channelCoverageDetails,
       children: [(0, r.jsx)(s.Text, {
         variant: "text-xs/semibold",
         color: "text-muted",
-        children: _.intl.string(_.t["0FM4i4"])
+        children: v.intl.string(v.t["0FM4i4"])
       }), (0, r.jsx)("div", {
-        className: v.channels,
+        className: _.channels,
         children: u.map(e => {
           var t;
           let n = null != (t = (0, o.KS)(e)) ? t : s.VL1;
           return (0, r.jsx)("div", {
-            className: v.channelPill,
+            className: _.channelPill,
             children: (0, r.jsxs)(s.Text, {
-              className: v.channel,
+              className: _.channel,
               variant: "text-xs/normal",
               color: "interactive-active",
               children: [(0, r.jsx)(n, {
@@ -85,7 +85,7 @@ function O(e) {
           }, e.id)
         })
       }), (0, r.jsx)("div", {
-        className: v.channelCoverageHint,
+        className: _.channelCoverageHint,
         children: h > 0 ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(s.P4T, {
             size: "xs",
@@ -93,14 +93,14 @@ function O(e) {
           }), (0, r.jsx)(s.Text, {
             variant: "text-xs/normal",
             color: "text-muted",
-            children: _.intl.format(_.t["sX889/"], {
+            children: v.intl.format(v.t["sX889/"], {
               numChannels: h
             })
           })]
         }) : (0, r.jsx)(s.Text, {
           variant: "text-xs/normal",
           color: "text-muted",
-          children: _.intl.string(_.t.o4s29v)
+          children: v.intl.string(v.t.o4s29v)
         })
       })]
     }) : null]
@@ -142,34 +142,34 @@ function y(e) {
   };
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.X6q, {
-      className: v.header,
+      className: _.header,
       variant: "heading-lg/extrabold",
-      children: d ? _.intl.string(_.t.AGjtFh) : _.intl.string(_.t.dqCzoa)
+      children: d ? v.intl.string(v.t.AGjtFh) : v.intl.string(v.t.dqCzoa)
     }), (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
       color: "header-secondary",
-      children: _.intl.string(_.t["q/6MLC"])
+      children: v.intl.string(v.t["q/6MLC"])
     }), (0, r.jsxs)("div", {
-      className: v.links,
+      className: _.links,
       children: [(0, r.jsx)(s.eee, {
         target: "_blank",
         href: b.EYA.GUILD_ONBOARDING_EXAMPLES,
         children: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "text-link",
-          children: _.intl.string(_.t.Ok55Ki)
+          children: v.intl.string(v.t.Ok55Ki)
         })
       }), (0, r.jsx)("div", {
-        className: v.dot
+        className: _.dot
       }), (0, r.jsx)(s.eee, {
         onClick: C,
         children: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "text-link",
-          children: _.intl.string(_.t["6gsjdH"])
+          children: v.intl.string(v.t["6gsjdH"])
         })
       }), (0, r.jsx)("div", {
-        className: v.dot
+        className: _.dot
       }), (0, r.jsx)(h.Wu, {
         guildId: t.id
       })]
@@ -177,7 +177,7 @@ function y(e) {
       guildId: t.id,
       prompts: o
     }), (0, r.jsx)("div", {
-      className: v.prompts,
+      className: _.prompts,
       children: a ? (0, r.jsx)(s.$jN, {}) : (0, r.jsx)(x.Z, {
         postjoinOnly: d,
         guildId: t.id
@@ -197,6 +197,6 @@ function N() {
     },
     onReset: p.NB,
     submitting: t,
-    onSaveText: _.intl.string(_.t.R3BPHx)
+    onSaveText: v.intl.string(v.t.R3BPHx)
   })
 }

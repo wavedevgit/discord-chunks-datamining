@@ -32,7 +32,7 @@ function b(e) {
     (0, c.Je)(t, e, {
       published: !1
     })
-  }, _ = (e, i) => {
+  }, v = (e, i) => {
     (0, l.ZDy)(async () => {
       let {
         default: l
@@ -60,7 +60,7 @@ function b(e) {
         productName: i
       }, n))
     })
-  }, v = (e, t) => {
+  }, _ = (e, t) => {
     (0, o.JG)((0, u.ar)(e, t))
   }, O = m.length > 0;
   return (0, r.jsxs)(r.Fragment, {
@@ -77,8 +77,8 @@ function b(e) {
           product: e,
           onEditProduct: () => i(e.id),
           onUnpublishProduct: () => j(e.id),
-          onDeleteProduct: () => _(e.id, e.name),
-          onCopyProductLink: () => v(t, e.id),
+          onDeleteProduct: () => v(e.id, e.name),
+          onCopyProductLink: () => _(t, e.id),
           onTestDownload: () => g.Z.open({
             guildId: t,
             productId: e.id

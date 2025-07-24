@@ -23,7 +23,7 @@ function b(e) {
     onAcceptSuccess: n,
     onRejectSuccess: i,
     onError: b
-  } = e, _ = (0, f.Z)(), [y, C] = r.useState(!1), [x, v] = r.useState(!1), [j, O] = r.useState(!1), [E, S] = r.useState(!1), [I, P] = r.useState(!1), Z = y || x || j, T = r.useCallback(async e => {
+  } = e, _ = (0, f.Z)(), [y, C] = r.useState(!1), [x, v] = r.useState(!1), [j, O] = r.useState(!1), [E, S] = r.useState(!1), [P, I] = r.useState(!1), Z = y || x || j, T = r.useCallback(async e => {
     if (!Z) {
       C(!0);
       try {
@@ -39,7 +39,7 @@ function b(e) {
     if (!Z) {
       v(!0);
       try {
-        await (0, p.gN)(e), P(!0), null == i || i()
+        await (0, p.gN)(e), I(!0), null == i || i()
       } catch (t) {
         let e = new a.Hx(t);
         null == b || b(e)
@@ -53,7 +53,7 @@ function b(e) {
     let t = l()(e, m.t$);
     try {
       for (let e of t) await (0, p.r_)(e);
-      P(!0), null == i || i()
+      I(!0), null == i || i()
     } catch (t) {
       let e = new a.Hx(t);
       null == b || b(e)
@@ -127,6 +127,6 @@ function b(e) {
     isRejectLoading: x,
     isUserProfileLoading: j,
     isOptimisticAccepted: E,
-    isOptimisticRejected: I
+    isOptimisticRejected: P
   }
 }

@@ -68,8 +68,8 @@ function j(e) {
     eligibility: p
   } = n, h = (0, a.j)(p), {
     isLoading: j,
-    error: _,
-    creatorMonetizationOnboardingMarketing: v
+    error: v,
+    creatorMonetizationOnboardingMarketing: _
   } = (0, o.Z)(t.id);
   return ((0, s.Z)({
     type: i.ImpressionTypes.PANE,
@@ -92,8 +92,8 @@ function j(e) {
       guild: t,
       monetizationEligibility: n
     }), (0, r.jsx)(b, {
-      onboardingMarketing: v,
-      onboardingMarketingError: _
+      onboardingMarketing: _,
+      onboardingMarketingError: v
     })]
   })
 }

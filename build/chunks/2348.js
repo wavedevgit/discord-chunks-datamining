@@ -20,9 +20,9 @@ var r = n(255367),
   x = n(868814),
   b = n(981631),
   j = n(388032),
-  _ = n(448021);
+  v = n(448021);
 
-function v(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -60,24 +60,24 @@ function C(e) {
     channel: i
   } = e, l = (0, h.Mf)(i.id);
   return "null" === i.id ? (0, r.jsx)("div", {
-    className: s()(_.categoryRow, _.uncategorized),
+    className: s()(v.categoryRow, v.uncategorized),
     children: (0, r.jsx)(o.Text, {
-      className: _.categoryText,
+      className: v.categoryText,
       color: "text-muted",
       variant: "text-xs/semibold",
       lineClamp: 1,
       children: i.name
     })
   }) : (0, r.jsxs)(o.P3F, {
-    className: s()(_.categoryRow, {
-      [_.uncategorized]: "null" === i.id
+    className: s()(v.categoryRow, {
+      [v.uncategorized]: "null" === i.id
     }),
     onContextMenu: e => {
       (0, c.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("68294"), n.e("8965"), n.e("34204")]).then(n.bind(n, 139035));
-        return n => (0, r.jsx)(e, O(v({}, n), {
+        return n => (0, r.jsx)(e, O(_({}, n), {
           channel: i,
           guild: t
         }))
@@ -87,13 +87,13 @@ function C(e) {
       let {
         default: e
       } = await n.e("35641").then(n.bind(n, 89216));
-      return n => (0, r.jsx)(e, O(v({}, n), {
+      return n => (0, r.jsx)(e, O(_({}, n), {
         guildId: t.id,
         startingChannelId: i.id
       }))
     }), !0),
     children: [(0, r.jsx)(o.Text, {
-      className: _.categoryText,
+      className: v.categoryText,
       color: "text-muted",
       variant: "text-xs/semibold",
       lineClamp: 1,
@@ -102,14 +102,14 @@ function C(e) {
       "aria-checked": l,
       value: l,
       type: o.XZJ.Types.INVERTED,
-      className: _.checkbox,
+      className: v.checkbox,
       displayOnly: !0
     })]
   })
 }
 let y = i.memo(function() {
     return (0, r.jsx)("div", {
-      className: _.separator
+      className: v.separator
     })
   }),
   N = i.memo(function(e) {
@@ -118,7 +118,7 @@ let y = i.memo(function() {
     } = e;
     return (0, r.jsx)(o.Text, {
       variant: "text-xs/normal",
-      className: _.subtitleSeparator,
+      className: v.subtitleSeparator,
       children: "\xb7"
     }, "separator-".concat(t))
   }),
@@ -135,7 +135,7 @@ let y = i.memo(function() {
         let {
           default: e
         } = await n.e("35641").then(n.bind(n, 89216));
-        return n => (0, r.jsx)(e, O(v({}, n), {
+        return n => (0, r.jsx)(e, O(_({}, n), {
           guildId: l.id,
           startingChannelId: t.id
         }))
@@ -145,7 +145,7 @@ let y = i.memo(function() {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("42743"), n.e("68294"), n.e("36841"), n.e("18320"), n.e("83331"), n.e("29929")]).then(n.bind(n, 213202));
-        return n => (0, r.jsx)(e, O(v({}, n), {
+        return n => (0, r.jsx)(e, O(_({}, n), {
           channel: t,
           guild: l
         }))
@@ -153,7 +153,7 @@ let y = i.memo(function() {
         let {
           default: e
         } = await Promise.all([n.e("14006"), n.e("8381"), n.e("40095"), n.e("79695"), n.e("80417"), n.e("95336"), n.e("11509"), n.e("64838"), n.e("83075"), n.e("42743"), n.e("88448"), n.e("7590"), n.e("68294"), n.e("16705"), n.e("15114"), n.e("1268"), n.e("35755"), n.e("24255"), n.e("37220"), n.e("46653"), n.e("91315"), n.e("36841"), n.e("18320"), n.e("60173"), n.e("47218"), n.e("62485")]).then(n.bind(n, 373651));
-        return n => (0, r.jsx)(e, O(v({}, n), {
+        return n => (0, r.jsx)(e, O(_({}, n), {
           channel: t,
           guild: l
         }))
@@ -164,26 +164,26 @@ let y = i.memo(function() {
         text: null != T ? T : P,
         delay: 500,
         position: I,
-        children: e => (0, r.jsxs)(o.P3F, O(v({
-          className: s()(_.channelRow, {
-            [_.firstChannel]: p,
-            [_.lastChannel]: C,
-            [_.disabled]: S
+        children: e => (0, r.jsxs)(o.P3F, O(_({
+          className: s()(v.channelRow, {
+            [v.firstChannel]: p,
+            [v.lastChannel]: C,
+            [v.disabled]: S
           })
         }, e), {
           onClick: Z,
           onContextMenu: D,
           children: [(0, r.jsx)("div", {
-            className: _.channelInfo,
+            className: v.channelInfo,
             children: (0, r.jsxs)("div", {
-              className: _.channelName,
+              className: v.channelName,
               children: [(0, r.jsx)(g._W, {
                 channel: t,
                 guild: l
               }), (0, r.jsx)(d.Z, {
-                className: _.__invalid_name,
+                className: v.__invalid_name,
                 children: (0, r.jsx)(o.Text, {
-                  className: _.channelText,
+                  className: v.channelText,
                   variant: "text-md/medium",
                   lineClamp: 1,
                   color: S ? "text-muted" : "text-default",
@@ -194,21 +194,21 @@ let y = i.memo(function() {
                   index: 0
                 }), (0, r.jsx)(o.Text, {
                   variant: "text-xs/medium",
-                  className: _.channelSubtitle,
+                  className: v.channelSubtitle,
                   color: "text-brand",
                   children: j.intl.string(j.t.mPxmeH)
                 })]
               }) : null]
             })
           }), (0, r.jsx)("div", {
-            className: _.channelActions,
+            className: v.channelActions,
             children: (0, u.s)(t.guild_id, t.id) ? (0, r.jsx)(o.XZJ, {
               "aria-checked": E,
               value: E,
               type: o.XZJ.Types.INVERTED,
               disabled: S,
               color: R ? a.Z.colors.BG_BRAND.css : a.Z.colors.BUTTON_SECONDARY_BACKGROUND.css,
-              innerClassName: _.checkboxInner,
+              innerClassName: v.checkboxInner,
               displayOnly: !0
             }) : (0, r.jsx)(o.zxk, {
               size: "sm",

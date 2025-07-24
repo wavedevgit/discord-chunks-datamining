@@ -20,8 +20,8 @@ var r = n(255367),
   x = n(654351),
   b = n(658666),
   j = n(384632),
-  _ = n(386885),
-  v = n(981631),
+  v = n(386885),
+  _ = n(981631),
   O = n(128449),
   C = n(388032);
 
@@ -66,10 +66,10 @@ function I(e) {
     settingsGuild: I,
     settingsMetadata: E,
     settingsProfile: S
-  } = e, T = I.id, [P, w] = i.useState(!1), [R, Z] = i.useState(null), D = I.features.has(v.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), A = null != (t = (0, g.A)({
+  } = e, T = I.id, [P, w] = i.useState(!1), [R, Z] = i.useState(null), D = I.features.has(_.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), A = null != (t = (0, g.A)({
     guildId: I.id
   })) ? t : 0, L = i.useCallback(() => {
-    Z(null), f.Z.init(T, v.pNK.ACCESS)
+    Z(null), f.Z.init(T, _.pNK.ACCESS)
   }, [T]), k = i.useCallback(async e => {
     try {
       w(!0), await e(), Z(null)
@@ -83,7 +83,7 @@ function I(e) {
       })
     } catch (e) {
       throw "object" == typeof e && "message" in e ? Z(e.message) : Z(C.intl.formatToPlainString(C.t.aTVNen, {
-        statusPageURL: v.yXt.STATUS
+        statusPageURL: _.yXt.STATUS
       })), e
     }
   }, [T]), G = i.useCallback(async (e, t, n) => {
@@ -101,8 +101,8 @@ function I(e) {
     }] : [];
     await G(r, e, n)
   }, [G]), B = i.useCallback(e => {
-    if (l.isAgeRestricted !== (I.ownerConfiguredContentLevel === v.V_K.AGE_RESTRICTED) && k(async () => {
-        let e = l.isAgeRestricted ? v.V_K.AGE_RESTRICTED : v.V_K.DEFAULT;
+    if (l.isAgeRestricted !== (I.ownerConfiguredContentLevel === _.V_K.AGE_RESTRICTED) && k(async () => {
+        let e = l.isAgeRestricted ? _.V_K.AGE_RESTRICTED : _.V_K.DEFAULT;
         await M({
           ownerConfiguredContentLevel: e
         })
@@ -112,9 +112,9 @@ function I(e) {
         termRules: n = []
       } = l, r = n.map(e => e.value.trim()).filter(e => "" !== e);
       k(async () => {
-        if (I.features.has(v.oNc.DISCOVERABLE)) {
+        if (I.features.has(_.oNc.DISCOVERABLE)) {
           let e = new Set(I.features);
-          e.delete(v.oNc.DISCOVERABLE), await M({
+          e.delete(_.oNc.DISCOVERABLE), await M({
             features: e
           })
         }
@@ -126,9 +126,9 @@ function I(e) {
       } = l;
       if (null == t) return;
       k(async () => {
-        if (I.features.has(v.oNc.DISCOVERABLE)) {
+        if (I.features.has(_.oNc.DISCOVERABLE)) {
           let e = new Set(I.features);
-          e.delete(v.oNc.DISCOVERABLE), await M({
+          e.delete(_.oNc.DISCOVERABLE), await M({
             features: e
           })
         }
@@ -145,7 +145,7 @@ function I(e) {
         if (h.verificationDirty && await U(t, r, e), h.guildDirty) {
           (0, x.UA)(I, b);
           let e = new Set(I.features);
-          e.add(v.oNc.DISCOVERABLE), e.delete(v.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), await M({
+          e.add(_.oNc.DISCOVERABLE), e.delete(_.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), await M({
             features: e,
             discoverySplash: I.discoverySplash,
             description: I.description,
@@ -164,7 +164,7 @@ function I(e) {
   }, [l, k, I, h, M, U, S, G, b, E]), F = i.useCallback(() => {
     var e;
     let t = e => {
-        if (l.joinType === j.A.DISCOVERABLE && l.settingsView === _.U.ELIGIBLE_DISABLED) return void(0, s.ZDy)(async () => {
+        if (l.joinType === j.A.DISCOVERABLE && l.settingsView === v.U.ELIGIBLE_DISABLED) return void(0, s.ZDy)(async () => {
           let {
             default: t
           } = await n.e("67376").then(n.bind(n, 207252));
@@ -197,7 +197,7 @@ function I(e) {
     }
     if (l.joinType === j.A.APPLY && !(null == (e = l.pendingVerificationFields) ? void 0 : e.some(e => (0, m._C)(e)))) return void Z(C.intl.string(C.t.HGVrIy));
     i(e => t(() => B(e)))
-  }, [D, B, l, T, A]), H = l.joinType === j.A.DISCOVERABLE && l.settingsView === _.U.ELIGIBLE_DISABLED, z = null != I.description && E.primaryCategoryId !== O.o3 && E.keywords.length > 0;
+  }, [D, B, l, T, A]), H = l.joinType === j.A.DISCOVERABLE && l.settingsView === v.U.ELIGIBLE_DISABLED, z = null != I.description && E.primaryCategoryId !== O.o3 && E.keywords.length > 0;
   return (0, r.jsx)(a.Z, {
     message: H ? C.intl.string(C.t.V2G2Ym) : void 0,
     onSaveText: H ? C.intl.string(C.t["qjtt/v"]) : void 0,
@@ -235,9 +235,9 @@ function E() {
       guildProfile: r
     }
   });
-  return null == e || null == n ? null : e.joinType === j.A.DISCOVERABLE && e.settingsView === _.U.INELIGIBLE ? (0, r.jsx)(a.Z, {
+  return null == e || null == n ? null : e.joinType === j.A.DISCOVERABLE && e.settingsView === v.U.INELIGIBLE ? (0, r.jsx)(a.Z, {
     message: C.intl.string(C.t.TEXwRk),
-    onReset: () => f.Z.init(n.id, v.pNK.ACCESS)
+    onReset: () => f.Z.init(n.id, _.pNK.ACCESS)
   }) : (0, r.jsx)(I, {
     pendingState: e,
     dirtyState: t,
