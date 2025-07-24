@@ -19,8 +19,8 @@ var r = n(255367),
   _ = n(223750),
   b = n(981631),
   E = n(388032),
-  x = n(429495);
-let y = e => {
+  y = n(429495);
+let x = e => {
     let {
       channel: t,
       message: n
@@ -37,7 +37,7 @@ let y = e => {
       })
     }, [t, n, p]);
     return (0, r.jsx)("div", {
-      className: x.welcomeCTA,
+      className: y.welcomeCTA,
       children: l ? (0, r.jsx)(a.zx, {
         variant: "secondary",
         size: "md",
@@ -45,14 +45,14 @@ let y = e => {
         text: E.intl.string(E.t["7Tj6HR"])
       }) : (0, r.jsxs)(o.zx, {
         "data-migration-pending": !0,
-        className: x.welcomeCTAButtonOuter,
-        innerClassName: x.welcomeCTAButton,
+        className: y.welcomeCTAButtonOuter,
+        innerClassName: y.welcomeCTAButton,
         color: o.Tt.PRIMARY,
         onMouseEnter: () => d(!0),
         onMouseLeave: () => d(!1),
         onClick: m,
         children: [(0, r.jsx)(c.Z, {
-          className: x.welcomeCTASticker,
+          className: y.welcomeCTASticker,
           isInteracting: u,
           sticker: p,
           size: 28
@@ -75,7 +75,7 @@ let y = e => {
         h = null != c && (c.systemChannelFlags & b.xmn.SUPPRESS_JOIN_NOTIFICATION_REPLIES) == 0;
       return a && !l && !o && !s && h
     });
-    return null != i && a ? (0, r.jsx)(y, {
+    return null != i && a ? (0, r.jsx)(x, {
       message: t,
       channel: n
     }) : null

@@ -35,8 +35,8 @@ let h = {},
       };
     h[n] = r, g++
   },
-  x = e => h[e],
-  y = e => {
+  y = e => h[e],
+  x = e => {
     null != h[e] && delete h[e], g++
   };
 
@@ -80,7 +80,7 @@ class O extends(r = i.ZP.PersistedStore) {
   }
   getMessage(e) {
     var t;
-    return null == e ? null : null != (t = x(e)) ? t : null
+    return null == e ? null : null != (t = y(e)) ? t : null
   }
   getMessagesVersion() {
     return g
@@ -116,7 +116,7 @@ let j = new O(l.Z, {
     let {
       messageId: t
     } = e;
-    return y(t), !0
+    return x(t), !0
   },
   MESSAGE_END_EDIT: function(e) {
     let {
@@ -125,7 +125,7 @@ let j = new O(l.Z, {
     if ((null == t ? void 0 : t.body) == null || t.body.code === m.evJ.AUTOMOD_MESSAGE_BLOCKED) return !1;
     let n = t.body.id;
     if (null == n) return !1;
-    y(n)
+    x(n)
   },
   AUTO_MODERATION_MENTION_RAID_DETECTION: function(e) {
     let {

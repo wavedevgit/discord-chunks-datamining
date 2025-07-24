@@ -1,6 +1,6 @@
 /** Chunk was on 23045 **/
 n.d(t, {
-  Z: () => x
+  Z: () => y
 }), n(388685);
 var r, i = n(255367),
   l = n(73800),
@@ -113,4 +113,4 @@ b(E, "defaultProps", {
   isHorizontal: !1,
   isEmbed: !1
 });
-let x = E
+let y = E

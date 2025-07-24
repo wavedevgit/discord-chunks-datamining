@@ -19,8 +19,8 @@ var r = n(255367),
   _ = n(930282),
   b = n(464891),
   E = n(507418),
-  x = n(348238),
-  y = n(38267),
+  y = n(348238),
+  x = n(38267),
   v = n(25015),
   C = n(438075),
   O = n(359110),
@@ -99,13 +99,13 @@ function B(e) {
     let {
       popouts: n,
       setPopout: r
-    } = (0, y.Z)(e.id, M.d$), {
+    } = (0, x.Z)(e.id, M.d$), {
       usernameProfile: l,
       avatarProfile: a
-    } = n, o = (0, x.XO)(e, t, l, r);
+    } = n, o = (0, y.XO)(e, t, l, r);
     return {
       onClickUsername: o,
-      onClickAvatar: (0, x.R9)(a, r),
+      onClickAvatar: (0, y.R9)(a, r),
       onPopoutRequestClose: i.useCallback(() => r({
         usernameProfile: !1,
         avatarProfile: !1,
@@ -174,8 +174,8 @@ function G(e) {
     b = (0, a.e7)([N.Z], () => N.Z.isDeveloper),
     E = (0, f.A)((null != (l = h.editedTimestamp) ? l : h.timestamp).valueOf()),
     {
-      content: x,
-      hasSpoilerEmbeds: y
+      content: y,
+      hasSpoilerEmbeds: x
     } = (0, v.Z)(h, {
       hideSimpleEmbedContent: g && _,
       isInteracting: !1,
@@ -193,7 +193,7 @@ function G(e) {
       className: U.content,
       children: [(0, r.jsx)(B, {
         mergedMessageRecord: h,
-        content: x,
+        content: y,
         channel: O,
         reportingUserId: null == s || null == (n = s.moderatorReport) ? void 0 : n.reporting_user_id,
         reportedTimestamp: o.timestamp
@@ -203,7 +203,7 @@ function G(e) {
           channel: O,
           compact: !1
         },
-        hasSpoilerEmbeds: y,
+        hasSpoilerEmbeds: x,
         isInteracting: !1,
         isMessageSnapshot: !0,
         renderThreadAccessory: !1,

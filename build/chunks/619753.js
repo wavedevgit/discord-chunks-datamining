@@ -19,8 +19,8 @@ var r = n(255367),
   _ = n(255269),
   b = n(937889),
   E = n(804063),
-  x = n(703656),
-  y = n(359110),
+  y = n(703656),
+  x = n(359110),
   v = n(903488),
   C = n(695346),
   O = n(131704),
@@ -82,7 +82,7 @@ let F = i.memo(function(e) {
     onPageChange: _,
     onClick: b
   } = e, {
-    offset: y,
+    offset: x,
     totalResults: C,
     isSearching: O,
     showBlockedResults: I
@@ -92,7 +92,7 @@ let F = i.memo(function(e) {
         n = null != t ? t.getGuildId() : null;
       c.Z.trackJump(e.channel_id, e.id, "Search Results", {
         search_id: v.Z.getAnalyticsId(l)
-      }), (0, x.uL)(L.Z5c.CHANNEL(n, e.channel_id, e.id))
+      }), (0, y.uL)(L.Z5c.CHANNEL(n, e.channel_id, e.id))
     }
   }, [b, l]), P = i.useMemo(() => {
     let e;
@@ -143,7 +143,7 @@ let F = i.memo(function(e) {
       scrollTo: m,
       searchId: l,
       renderEmbeds: a,
-      offset: y,
+      offset: x,
       jumpToMessage: S,
       listNavigator: H,
       favoriteSearch: z
@@ -186,7 +186,7 @@ let F = i.memo(function(e) {
       })]
     }) : null, !O && !z && (0, r.jsx)(Z.Z, {
       onPageChange: _,
-      offset: y,
+      offset: x,
       totalCount: C,
       pageSize: L.vpv
     })]
@@ -235,7 +235,7 @@ function G(e) {
     resultRefs: d,
     totalResults: p,
     scrollTo: E,
-    searchId: x,
+    searchId: y,
     renderEmbeds: v,
     offset: O,
     jumpToMessage: N,
@@ -244,7 +244,7 @@ function G(e) {
   } = e, k = C.cC.useSetting(), F = (0, g.p)(), G = i.useCallback(e => {
     if (e === P.Z.getChannelId()) return;
     let t = j.Z.getChannel(e);
-    null != t && (S.Z.can(L.Plq.VIEW_CHANNEL, t) || t.isPrivate()) && (0, y.Kh)(t.id)
+    null != t && (S.Z.can(L.Plq.VIEW_CHANNEL, t) || t.isPrivate()) && (0, x.Kh)(t.id)
   }, []), H = null != a ? (0, m.F6)(a, A.default, T.Z, !1) : "???", V = Z && null != a.guild_id ? null == (t = I.Z.getGuild(a.guild_id)) ? void 0 : t.name : null, z = (null == a ? void 0 : a.parent_id) != null ? j.Z.getChannel(a.parent_id) : null, W = null != (n = null == z ? void 0 : z.name) ? n : null, K = null != (l = (0, f.KS)(a)) ? l : s.VL1, Y = S.Z.can(L.Plq.MANAGE_MESSAGES, a), {
     content: X
   } = (0, b.ZP)({
@@ -294,7 +294,7 @@ function G(e) {
           },
           totalResults: p,
           scrollTo: E,
-          searchId: x,
+          searchId: y,
           renderEmbeds: v,
           searchOffset: O,
           pageResultsLength: o.length,

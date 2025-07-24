@@ -1,6 +1,6 @@
 /** Chunk was on 23045 **/
 n.d(t, {
-  Z: () => x
+  Z: () => y
 }), n(388685), n(997841);
 var r, i, l, a = n(442837),
   o = n(433517),
@@ -29,7 +29,7 @@ l = "ChannelFollowingPublishBumpStore", (i = "displayName") in E ? Object.define
   configurable: !0,
   writable: !0
 }) : E[i] = l;
-let x = new E(s.Z, {
+let y = new E(s.Z, {
   MESSAGE_CREATE: function(e) {
     var t;
     let {

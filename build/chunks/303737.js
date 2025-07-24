@@ -1,7 +1,7 @@
 /** Chunk was on 23045 **/
 n.d(t, {
-  GN: () => y,
-  be: () => x,
+  GN: () => x,
+  be: () => y,
   g4: () => b,
   m7: () => _,
   r4: () => v,
@@ -73,7 +73,7 @@ function E(e) {
   return i
 }
 
-function x(e) {
+function y(e) {
   let t = E(e);
   g[e] = t, t.forEach(e => {
     let t = e.set("flags", h.zZ.IS_ROLE_SUBSCRIPTION_TEMPLATE_PREVIEW_CHANNEL);
@@ -84,7 +84,7 @@ function x(e) {
   })
 }
 
-function y(e) {
+function x(e) {
   var t;
   (null != (t = g[e]) ? t : E(e)).forEach(e => {
     a.Z.dispatch({
