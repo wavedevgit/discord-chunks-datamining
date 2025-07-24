@@ -389,17 +389,19 @@ class v extends a.Z {
     this.supports(h.AN.DEBUG_LOGGING) && (0, d.zS)().setDebugLogging(e)
   }
   setLoopback(e, t) {
+    var n, r;
     null != (0, d.zS)().setLoopback && (0, d.zS)().setLoopback(e, {
       echoCancellation: t.echoCancellation,
       noiseSuppression: t.noiseSuppression,
-      automaticGainControl: t.automaticGainControl,
+      automaticGainControl: null == (n = t.automaticGainControlConfig) ? void 0 : n.enabled,
+      automaticGainControlConfig: t.automaticGainControlConfig,
       noiseCancellation: t.noiseCancellation,
       voiceFilters: t.voiceFilters,
       loopbackUseAudioMode: t.loopbackUseAudioMode
     }), null != (0, d.zS)().setEmitVADLevel2 ? (0, d.zS)().setEmitVADLevel2(e || this.listenerCount(s.aB.VoiceActivity) > 0) : (0, d.zS)().setEmitVADLevel(e || this.listenerCount(s.aB.VoiceActivity) > 0, e, {
       echoCancellation: t.echoCancellation,
       noiseSuppression: t.noiseSuppression,
-      automaticGainControl: t.automaticGainControl,
+      automaticGainControl: null == (r = t.automaticGainControlConfig) ? void 0 : r.enabled,
       noiseCancellation: t.noiseCancellation
     })
   }
