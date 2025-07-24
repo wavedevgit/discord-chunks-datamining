@@ -22,10 +22,10 @@ let m = 5,
 function E(e) {
   return a.Z.fetchRecentMentions(e, h.DJj, null, l.ZP.roleFilter, l.ZP.everyoneFilter)
 }
-let b = (0, r.debounce)(y, g);
+let b = (0, r.throttle)(y, g);
 async function y(e) {
   let {
-    onlyUnread: t = !1
+    preload: t = !1
   } = e, n = [], r = f.Z.getNotifyingChannelIds();
   if (null == r) return;
   let a = f.Z.getChannelInfoMap();
@@ -45,13 +45,13 @@ async function y(e) {
     h = null != _ && _.length > 0 ? _[_.length - 1].id : null;
   if (l.ZP.hasMore && !l.ZP.loading && n.push(E(h)), 0 === n.length) return void i.Z.dispatch({
     type: "NOTIFICATIONS_INBOX_LOAD_MORE_INBOX_SUCCESS",
-    onlyUnread: t,
+    preload: t,
     finished: !0
   });
   try {
     await Promise.all(n), i.Z.dispatch({
       type: "NOTIFICATIONS_INBOX_LOAD_MORE_INBOX_SUCCESS",
-      onlyUnread: t
+      preload: t
     })
   } catch (e) {
     i.Z.dispatch({
@@ -62,16 +62,16 @@ async function y(e) {
 let O = {
   loadMoreInbox() {
     let {
-      onlyUnread: e
+      preload: e = !1
     } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
     if (!f.Z.canLoadMore({
-        onlyUnread: e
+        preload: e
       })) return !1;
     i.Z.dispatch({
       type: "NOTIFICATIONS_INBOX_LOAD_MORE_INBOX_START",
-      onlyUnread: e
+      preload: e
     }), b({
-      onlyUnread: e
+      preload: e
     })
   },
   inboxItemClick(e) {

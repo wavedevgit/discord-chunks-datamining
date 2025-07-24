@@ -18,20 +18,20 @@ function s(e, t, n) {
 }
 let l = 5e3;
 class c extends i.Z {
-  loadUnreadMessages() {
+  preloadInbox() {
     a.Z.loadMoreInbox({
-      onlyUnread: !0
+      preload: !0
     })
   }
   _terminate() {
-    this.debouncedLoadUnreadMessages.cancel()
+    this.throttledPreloadInbox.cancel()
   }
   constructor() {
-    super(), s(this, "isInitialLoadComplete", !1), s(this, "debouncedLoadUnreadMessages", void 0), s(this, "stores", new Map().set(o.Z, () => {
-      !this.isInitialLoadComplete && o.Z.canLoadMore({
-        onlyUnread: !0
-      }) && (this.isInitialLoadComplete = !0, this.debouncedLoadUnreadMessages())
-    })), this.debouncedLoadUnreadMessages = (0, r.debounce)(this.loadUnreadMessages, l)
+    super(), s(this, "throttledPreloadInbox", void 0), s(this, "stores", new Map().set(o.Z, () => {
+      !o.Z.hasPreloaded && o.Z.canLoadMore({
+        preload: !0
+      }) && this.throttledPreloadInbox()
+    })), this.throttledPreloadInbox = (0, r.throttle)(this.preloadInbox, l)
   }
 }
 let u = new c
