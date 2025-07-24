@@ -1,6 +1,6 @@
 /**
   Module ID: 60173
-  Original File Name: 0ac5a9cd5f325703
+  Original File Name: a8bb456e74599339
 **/
 @keyframes placeholderPulse_c8ffbb {
     0% {
@@ -1348,23 +1348,10 @@ strong {
     padding-left: 64px
 }
 
-.modal__46773 {
+.modalContent__46773 {
     display: flex;
     flex-direction: column;
-    gap: var(--space-xl);
-    padding: var(--space-xl)
-}
-
-.modalContent__46773 {
-    display: contents
-}
-
-.header__46773 {
-    align-items: center;
-    display: flex;
-    justify-content: flex-start;
-    padding: unset;
-    text-align: center
+    gap: var(--custom-modal-padding)
 }
 
 .iconSection__46773 {
@@ -1440,24 +1427,6 @@ strong {
     height: 100%;
     object-fit: cover;
     width: 100%
-}
-
-.closeButton__46773 {
-    padding: 0;
-    position: absolute;
-    right: 0;
-    top: 0
-}
-
-.footer__46773 {
-    border-radius: unset;
-    display: flex;
-    flex-direction: row-reverse;
-    padding: 0
-}
-
-.cancelButton__46773 {
-    color: var(--text-primary)
 }
 
 .friendWrapper_bbd192 {
@@ -13017,4 +12986,4 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     position: relative
 }
 
-/*# sourceMappingURL=0ac5a9cd5f325703.css.map*/
+/*# sourceMappingURL=a8bb456e74599339.css.map*/
