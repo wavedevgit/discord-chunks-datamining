@@ -191,17 +191,18 @@ function F(e) {
   let {
     subscription: t,
     renewalInvoicePreview: n,
-    className: r,
-    fractionalPremiumInfo: s
+    openInvoice: r,
+    className: s,
+    fractionalPremiumInfo: l
   } = e;
   return (0, i.jsxs)("div", {
-    className: a()(B.billingInformation, r),
+    className: a()(B.billingInformation, s),
     children: [(0, i.jsx)(g.vwX, {
       tag: "h3",
       className: B.detailBlockHeader,
       children: L.intl.string(L.t.KXQjfX)
     }), (0, i.jsx)("div", {
-      children: N.ZP.getBillingInformationString(t, n, !1, s)
+      children: N.ZP.getBillingInformationString(t, n, r, !1, l)
     })]
   })
 }
@@ -243,41 +244,42 @@ function z(e) {
     showInvalidPaymentMethod: o,
     showNoPaymentMethod: c,
     fetchedCurrentInvoicePreview: d,
-    fetchedRenewalInvoicePreview: u
+    fetchedRenewalInvoicePreview: u,
+    fetchedOpenInvoice: m
   } = e, {
-    analyticsLocations: m
-  } = (0, b.ZP)(f.Z.SUBSCRIPTION_DETAILS), p = null != d ? {} : {
+    analyticsLocations: p
+  } = (0, b.ZP)(f.Z.SUBSCRIPTION_DETAILS), h = null != d ? {} : {
     subscriptionId: t.id,
     renewal: !0,
-    analyticsLocations: m,
+    analyticsLocations: p,
     analyticsLocation: n
-  }, [h] = (0, y.ED)(p);
-  h = null != d ? d : h;
-  let x = null != u ? {} : {
+  }, [x] = (0, y.ED)(h);
+  x = null != d ? d : x;
+  let j = null != u ? {} : {
       subscriptionId: t.id,
       renewal: !0,
       applyEntitlements: !0,
-      analyticsLocations: m,
+      analyticsLocations: p,
       analyticsLocation: n
     },
-    [j] = (0, y.ED)(x);
-  j = null != u ? u : j;
-  let E = (0, _.Z)();
-  return null == h || null == j ? (0, i.jsx)(g.$jN, {}) : (0, i.jsxs)(i.Fragment, {
+    [E] = (0, y.ED)(j);
+  E = null != u ? u : E;
+  let O = (0, _.Z)();
+  return null == x || null == E ? (0, i.jsx)(g.$jN, {}) : (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)("div", {
       className: B.subscriptionRows,
       children: [(0, i.jsx)(R.Z, {
         subscription: t,
-        renewalInvoicePreview: h,
+        renewalInvoicePreview: x,
         paymentSource: r,
         busy: s,
         analyticsLocation: n
       }), (0, i.jsx)(M, {
         subscription: t,
-        renewalInvoicePreview: h,
+        renewalInvoicePreview: x,
         fromStandaloneBillingPage: l,
         className: B.guildSubscriptionRow,
-        fractionalPremiumInfo: E
+        fractionalPremiumInfo: O
       })]
     }), (0, i.jsx)("div", {
       children: (0, i.jsx)(g.y5t, {
@@ -289,9 +291,10 @@ function z(e) {
           className: B.details,
           children: [(0, i.jsx)(F, {
             subscription: t,
-            renewalInvoicePreview: j,
+            renewalInvoicePreview: E,
             className: B.detailsBlock,
-            fractionalPremiumInfo: E
+            fractionalPremiumInfo: O,
+            openInvoice: m
           }), (0, i.jsxs)("div", {
             className: a()(B.detailsBlock, {
               [B.redBorder]: o
@@ -307,7 +310,7 @@ function z(e) {
               onPaymentSourceAdded: I.i1,
               highlightAddPaymentMethodButton: c || o,
               analyticsLocation: n,
-              currentInvoicePreview: h,
+              currentInvoicePreview: x,
               dropdownClassName: B.paymentDropdown
             })]
           })]
@@ -367,9 +370,9 @@ function K(e) {
   }), _ = null == a ? void 0 : a.invalid, j = (0, u.e7)([v.default], () => {
     var e;
     return null == (e = v.default.getCurrentUser()) ? void 0 : e.hasFreePremium()
-  }), E = d()(r.currentPeriodEnd), O = null != r.paymentSourceId, S = null != (t = null == x ? void 0 : x.total) ? t : 0, T = !O && S > 0 && (7 >= E.diff(d()(), "days") || r.status === w.O0b.PAST_DUE) && !j && !r.isPurchasedExternally, N = _ && r.status === w.O0b.PAST_DUE && !j && !r.isPurchasedExternally, I = (0, A.U)(), P = !j && I, R = (null == r ? void 0 : r.status) === w.O0b.PAST_DUE ? d()().diff(d()(r.currentPeriodStart), "days") : 0, [D] = (0, y.Ox)({
+  }), E = d()(r.currentPeriodEnd), O = null != r.paymentSourceId, S = null != (t = null == x ? void 0 : x.total) ? t : 0, T = !O && S > 0 && (7 >= E.diff(d()(), "days") || r.status === w.O0b.PAST_DUE) && !j && !r.isPurchasedExternally, N = _ && r.status === w.O0b.PAST_DUE && !j && !r.isPurchasedExternally, I = (0, A.U)(), P = !j && I, R = (null == r ? void 0 : r.status) === w.O0b.PAST_DUE, D = R ? d()().diff(d()(r.currentPeriodStart), "days") : 0, [k] = (0, y.Ox)({
     subscriptionId: r.id,
-    preventFetch: !P
+    preventFetch: !(P || R)
   });
   return null == h || null == x ? (0, i.jsx)(g.$jN, {}) : (null != r.renewalMutations && (r.renewalMutations.planId !== r.planId && !(0, C.Q0)(r.renewalMutations.planId) || r.hasExternalPlanChange) && (n = (0, i.jsx)(Z.Z, {
     subscription: r,
@@ -383,10 +386,10 @@ function K(e) {
         tag: "h1",
         children: L.intl.string(L.t["/gs+Pz"])
       }),
-      children: [T ? (0, i.jsx)(U, {}) : null, N ? (0, i.jsx)(V, {}) : null, P && null != D ? (0, i.jsx)(G, {
-        daysPastDue: R,
+      children: [T ? (0, i.jsx)(U, {}) : null, N ? (0, i.jsx)(V, {}) : null, P && null != k ? (0, i.jsx)(G, {
+        daysPastDue: D,
         subscription: r,
-        openInvoiceId: D.id
+        openInvoiceId: k.id
       }) : null, n, (0, i.jsx)("div", {
         children: (0, i.jsx)("p", {
           className: B.sectionDescription,
@@ -404,7 +407,8 @@ function K(e) {
             showNoPaymentMethod: T,
             showInvalidPaymentMethod: N,
             fetchedCurrentInvoicePreview: h,
-            fetchedRenewalInvoicePreview: x
+            fetchedRenewalInvoicePreview: x,
+            fetchedOpenInvoice: k
           })
         }), p.map((e, t) => (0, i.jsxs)("div", {
           className: B.dupSubscriptionRow,
@@ -421,7 +425,8 @@ function K(e) {
             showNoPaymentMethod: T,
             showInvalidPaymentMethod: N,
             fetchedCurrentInvoicePreview: null,
-            fetchedRenewalInvoicePreview: null
+            fetchedRenewalInvoicePreview: null,
+            fetchedOpenInvoice: null
           })]
         }, t))]
       })]

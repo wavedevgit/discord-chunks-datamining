@@ -912,8 +912,9 @@ function eT(e) {
 }
 
 function eS(e, t) {
-  let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-    r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {
+  let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : null,
+    r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
+    i = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : {
       isFractionalPremiumActive: !1,
       fetched: !0,
       fractionalState: P.a$.NONE,
@@ -922,7 +923,8 @@ function eS(e, t) {
       currentEntitlementId: "",
       unactivatedUnits: []
     },
-    i = n ? (0, N.T4)(t.invoiceItems.filter(e => P.UD.has(e.subscriptionPlanId)).map(e => e.amount).reduce((e, t) => t + e, 0), t.currency) : (0, N.T4)(t.total, t.currency);
+    a = null !== n && e.status === C.O0b.PAST_DUE ? n : t,
+    s = r ? (0, N.T4)(a.invoiceItems.filter(e => P.UD.has(e.subscriptionPlanId)).map(e => e.amount).reduce((e, t) => t + e, 0), a.currency) : (0, N.T4)(a.total, a.currency);
   if (null != e.trialId && P.h8.includes(e.trialId) && null == e.paymentSourceId) return D.intl.format(D.t["7ZS2m5"], {
     trialEnd: e.currentPeriodEnd
   });
@@ -933,34 +935,34 @@ function eS(e, t) {
     pauseDate: e.currentPeriodEnd,
     resumeDate: e.pauseEndsAt
   });
-  if (e.status === C.O0b.PAUSED) return r.fractionalState !== P.a$.NONE ? D.intl.format(D.t.Q18lRE, {
-    renewalDate: r.endsAt.toDate(),
-    price: i
-  }) : null == e.pauseEndsAt ? n ? D.intl.format(D.t.KTYQCg, {
+  if (e.status === C.O0b.PAUSED) return i.fractionalState !== P.a$.NONE ? D.intl.format(D.t.Q18lRE, {
+    renewalDate: i.endsAt.toDate(),
+    price: s
+  }) : null == e.pauseEndsAt ? r ? D.intl.format(D.t.KTYQCg, {
     planName: D.intl.string(D.t.Ipxkoq),
-    price: i
-  }) : D.intl.string(D.t.fMz6Li) : n ? D.intl.format(D.t.zcgtzc, {
+    price: s
+  }) : D.intl.string(D.t.fMz6Li) : r ? D.intl.format(D.t.zcgtzc, {
     planName: D.intl.string(D.t.Ipxkoq),
     resumeDate: e.pauseEndsAt,
-    price: i
+    price: s
   }) : D.intl.format(D.t["V8+l6u"], {
     resumeDate: e.pauseEndsAt
   });
   if (e.status === C.O0b.PAST_DUE) {
-    var a, s;
+    var l, c;
     let t = eT(e).expiresDate;
-    return (e.isPurchasedViaGoogle && (null == (a = e.metadata) ? void 0 : a.google_grace_period_expires_date) != null && (t = o()(e.metadata.google_grace_period_expires_date)), e.isPurchasedViaApple && (null == (s = e.metadata) ? void 0 : s.apple_grace_period_expires_date) != null && (t = o()(e.metadata.apple_grace_period_expires_date)), e.isPurchasedExternally) ? D.intl.format(D.t.U2hb3d, {
+    return (e.isPurchasedViaGoogle && (null == (l = e.metadata) ? void 0 : l.google_grace_period_expires_date) != null && (t = o()(e.metadata.google_grace_period_expires_date)), e.isPurchasedViaApple && (null == (c = e.metadata) ? void 0 : c.apple_grace_period_expires_date) != null && (t = o()(e.metadata.apple_grace_period_expires_date)), e.isPurchasedExternally) ? D.intl.format(D.t.U2hb3d, {
       endDate: t.toDate(),
       paymentGatewayName: w.Vz[e.paymentGateway],
       paymentSourceLink: eX(e.paymentGateway, "PAYMENT_SOURCE_MANAGEMENT")
     }) : D.intl.format(D.t.qEIzys, {
       endDate: t.toDate(),
-      price: i
+      price: s
     })
   } {
     if (e.status === C.O0b.BILLING_RETRY) return D.intl.format(D.t.EMTLOT, {
       endDate: o()(e.currentPeriodStart).add(P.A5, "days").toDate(),
-      price: i
+      price: s
     });
     if (e.status === C.O0b.ACCOUNT_HOLD) return e.isPurchasedViaGoogle && !(0, T.isAndroid)() ? D.intl.format(D.t.dtcxw8, {
       endDate: o()(e.currentPeriodStart).add(P.gh, "days").toDate(),
@@ -968,7 +970,7 @@ function eS(e, t) {
       paymentSourceLink: eX(e.paymentGateway, "PAYMENT_SOURCE_MANAGEMENT")
     }) : D.intl.format(D.t.EMTLOT, {
       endDate: o()(e.currentPeriodStart).add(P.gh, "days").toDate(),
-      price: i
+      price: s
     });
     if (eP(e)) return D.intl.format(D.t.awpB0N, {
       prepaidEndDate: e.currentPeriodEnd
@@ -981,14 +983,14 @@ function eS(e, t) {
       paymentGatewayName: w.Vz[e.paymentGateway],
       subscriptionManagementLink: eX(e.paymentGateway, "SUBSCRIPTION_MANAGEMENT")
     });
-    let a = new Date(t.subscriptionPeriodStart);
-    return e.isBoostOnly || (a = eA(a, r.unactivatedUnits)), n ? D.intl.format(D.t.Vl3cEB, {
+    let n = new Date(t.subscriptionPeriodStart);
+    return e.isBoostOnly || (n = eA(n, i.unactivatedUnits)), r ? D.intl.format(D.t.Vl3cEB, {
       planName: D.intl.string(D.t.Ipxkoq),
-      renewalDate: a,
-      price: i
+      renewalDate: n,
+      price: s
     }) : D.intl.format(D.t.Q18lRE, {
-      renewalDate: a,
-      price: i
+      renewalDate: n,
+      price: s
     })
   }
 }
