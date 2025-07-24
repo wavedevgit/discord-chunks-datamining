@@ -1,5 +1,5 @@
 /** Chunk was on 86181 **/
-n.d(t, {
+n.d(e, {
   D: () => b
 }), n(388685);
 var r = n(255367),
@@ -20,23 +20,23 @@ var r = n(255367),
   x = n(982404),
   y = n(299156);
 
-function b(e) {
+function b(t) {
   let {
-    premiumSubscription: t,
+    premiumSubscription: e,
     premiumType: n,
     onClose: b,
     confettiCanvas: g,
-    userWasChurned: j = !1,
-    userDiscountOffer: I
-  } = e, v = (0, l.ZP)(), T = (0, a.wj)(v) ? x : y, E = i.useRef(null), [P, O] = i.useState(!1), S = (0, _._)(t, f.Xh.PREMIUM_MONTH_TIER_2, I), N = (0, d.aS)(f.Xh.PREMIUM_MONTH_TIER_2, !1, !1, {
-    currency: t.currency,
-    paymentSourceId: t.paymentSourceId
+    userWasChurned: I = !1,
+    userDiscountOffer: j
+  } = t, P = (0, l.ZP)(), v = (0, a.wj)(P) ? x : y, T = i.useRef(null), [E, O] = i.useState(!1), S = (0, _._)(e, f.Xh.PREMIUM_MONTH_TIER_2, j), N = (0, d.aS)(f.Xh.PREMIUM_MONTH_TIER_2, !1, !1, {
+    currency: e.currency,
+    paymentSourceId: e.paymentSourceId
   }), R = (0, m.T4)(N.amount, N.currency), D = (0, o.e7)([c.Z], () => c.Z.useReducedMotion);
   if (i.useEffect(() => {
-      null != E.current && null != S && O(!0)
-    }, [E, P, S]), null == I || null == S) return null;
+      null != T.current && null != S && O(!0)
+    }, [T, E, S]), null == j || null == S) return null;
   let w = C.intl.format(C.t.gPzMHR, {
-      numMonths: I.discount.user_usage_limit,
+      numMonths: j.discount.user_usage_limit,
       discountedPrice: S,
       regularPrice: R
     }),
@@ -54,7 +54,7 @@ function b(e) {
       className: h.cancellationHeader,
       onClose: b
     }), (0, r.jsx)("div", {
-      ref: E,
+      ref: T,
       children: (0, r.jsx)(s.hzk, {
         className: h.body,
         children: null != S ? (0, r.jsxs)(r.Fragment, {
@@ -62,11 +62,11 @@ function b(e) {
             className: h.discountAppliedBody,
             children: [(0, r.jsx)("img", {
               alt: "",
-              src: T,
+              src: v,
               className: h.nitroIcon
             }), (0, r.jsx)(s.X6q, {
               variant: "heading-xl/bold",
-              children: j ? C.intl.string(C.t.gOOPaG) : C.intl.string(C.t.PZSyRk)
+              children: I ? C.intl.string(C.t.gOOPaG) : C.intl.string(C.t.PZSyRk)
             })]
           }), (0, r.jsx)("div", {
             className: h.bodyString,
@@ -74,8 +74,8 @@ function b(e) {
           }), A]
         }) : (0, r.jsx)(s.$jN, {})
       })
-    }), !D && P && (0, r.jsx)(u.Z, {
-      confettiTarget: E.current,
+    }), !D && E && (0, r.jsx)(u.Z, {
+      confettiTarget: T.current,
       confettiCanvas: g,
       confettiVelocityMultiplier: .75
     })]

@@ -1,7 +1,7 @@
 /** Chunk was on 60173 **/
 n.d(t, {
   NZ: () => ej,
-  ZP: () => eI,
+  ZP: () => eP,
   r: () => ev
 }), n(388685);
 var r = n(255367),
@@ -28,8 +28,8 @@ var r = n(255367),
   O = n(659580),
   E = n(793865),
   S = n(575175),
-  P = n(522651),
-  I = n(795318),
+  I = n(522651),
+  P = n(795318),
   Z = n(243778),
   T = n(258609),
   N = n(446226),
@@ -120,7 +120,7 @@ function ex(e, t) {
 function ev(e, t) {
   if (et.Z.isVideoEnabled() === e) return;
   let n = () => h.Z.setVideoEnabled(e);
-  (0, P.v)(x.Z.VOICE_CONTROL_TRAY, P.d.CAMERA, e), e ? (0, ef.Z)(n, t) : n()
+  (0, I.v)(x.Z.VOICE_CONTROL_TRAY, I.d.CAMERA, e), e ? (0, ef.Z)(n, t) : n()
 }
 
 function ej(e) {
@@ -137,11 +137,11 @@ function ej(e) {
     if (null == l || l(), !a) return (0, ep.Z)();
     (0, eh.Z)(y, t.id, em.ZY5.GUILD_CHANNEL)
   }, [y, t.id, a, l]), x = (0, L.B4)(), [j, O] = i.useState(!1), E = () => {
-    if ((0, P.v)(c, P.d.STREAM, !0), a) return void C();
+    if ((0, I.v)(c, I.d.STREAM, !0), a) return void C();
     (0, ep.Z)()
   }, S = () => {
-    (0, P.v)(c, P.d.STREAM, !1), (0, R.Z)(m)
-  }, I = (e, t) => {
+    (0, I.v)(c, I.d.STREAM, !1), (0, R.Z)(m)
+  }, P = (e, t) => {
     let n = null != e ? e : {
         onClick: void 0
       },
@@ -215,7 +215,7 @@ function ej(e) {
               handleGoLive: C,
               appContext: h,
               onClose: i,
-              onInteraction: eP("ManageStreamsMenu")
+              onInteraction: eI("ManageStreamsMenu")
             })
           })
         },
@@ -233,7 +233,7 @@ function ej(e) {
             } = t;
           return (0, r.jsx)("div", {
             ref: b,
-            children: I(n, i)
+            children: P(n, i)
           })
         }
       })
@@ -273,7 +273,7 @@ let eE = i.memo(function(e) {
       ownerId: n
     } = e;
     return n !== (null == t ? void 0 : t.id)
-  })), x = (0, M.qY)(l.id), O = i.useRef(null), E = i.useCallback(() => (null == s ? void 0 : s.type) === eg.fO.ACTIVITY && s.applicationId === (null == a ? void 0 : a.applicationId) ? "ACTIVITY" : y ? "STREAM" : null != x ? "EVENT" : "CALL", [s, null == a ? void 0 : a.applicationId, y, x]), [S, I] = i.useState(E()), Z = (0, p.q_F)({
+  })), x = (0, M.qY)(l.id), O = i.useRef(null), E = i.useCallback(() => (null == s ? void 0 : s.type) === eg.fO.ACTIVITY && s.applicationId === (null == a ? void 0 : a.applicationId) ? "ACTIVITY" : y ? "STREAM" : null != x ? "EVENT" : "CALL", [s, null == a ? void 0 : a.applicationId, y, x]), [S, P] = i.useState(E()), Z = (0, p.q_F)({
     opacity: h ? .2 : 1,
     transform: h && !d.enabled ? "scale(0.7)" : "scale(1)",
     config: {
@@ -284,7 +284,7 @@ let eE = i.memo(function(e) {
       clamp: h
     },
     onRest: () => {
-      I(E()), f(!1)
+      P(E()), f(!1)
     }
   }, "animate-always");
   i.useEffect(() => {
@@ -316,7 +316,7 @@ let eE = i.memo(function(e) {
             streamActive: !0,
             color: "disconnect",
             onClick: () => {
-              (0, P.v)(o, P.d.STOP_WATCHING), T()
+              (0, I.v)(o, I.d.STOP_WATCHING), T()
             },
             onPopoutClick: C.length > 1 ? i : null,
             isSelfStream: !1
@@ -325,7 +325,7 @@ let eE = i.memo(function(e) {
           return (0, r.jsx)(W.Z, ex(eC({}, c), {
             color: "disconnect",
             onClick: () => {
-              (0, P.v)(o, P.d.DISCONNECT), null == n || n()
+              (0, I.v)(o, I.d.DISCONNECT), null == n || n()
             },
             onPopoutClick: C.length > 0 ? i : null
           }));
@@ -333,7 +333,7 @@ let eE = i.memo(function(e) {
           return (0, r.jsx)(D.Z, {
             channelId: l.id,
             onClick: () => {
-              (0, P.v)(o, P.d.DISCONNECT), m.default.disconnect(), null == n || n()
+              (0, I.v)(o, I.d.DISCONNECT), m.default.disconnect(), null == n || n()
             }
           })
       }
@@ -351,7 +351,7 @@ let eE = i.memo(function(e) {
         handleGoLive: em.VqG,
         hideSelfOptions: !0,
         onClose: n,
-        onInteraction: eP("ManageStreamsMenu")
+        onInteraction: eI("ManageStreamsMenu")
       })
     },
     position: "top",
@@ -384,7 +384,7 @@ function eS(e) {
     reachedLimit: c,
     limit: d
   } = (0, el.Z)(t), p = i.useCallback(() => {
-    (0, P.v)(s, P.d.JOIN_VIDEO_CALL), (0, ef.Z)(() => m.default.selectVoiceChannel(t.id, !0), o)
+    (0, I.v)(s, I.d.JOIN_VIDEO_CALL), (0, ef.Z)(() => m.default.selectVoiceChannel(t.id, !0), o)
   }, [t.id, o, s]), h = i.useCallback(() => {
     n ? (0, ed.Z)() : p()
   }, [n, p]), f = (0, u.e7)([ee.Z], () => {
@@ -420,12 +420,12 @@ function eS(e) {
   })
 }
 
-function eP(e) {
-  return (0, I.u)(e, x.Z.VOICE_CONTROL_TRAY, {
+function eI(e) {
+  return (0, P.u)(e, x.Z.VOICE_CONTROL_TRAY, {
     entrypoint: eg.A5.CARET
   })
 }
-let eI = function(e) {
+let eP = function(e) {
   var t;
   let {
     channel: n,
@@ -439,8 +439,8 @@ let eI = function(e) {
   }), {
     cameraUnavailable: C,
     enabled: j
-  } = (0, ei.Z)(), P = (0, ea.Z)(n), {
-    suppress: I,
+  } = (0, ei.Z)(), I = (0, ea.Z)(n), {
+    suppress: P,
     selfMute: Z,
     mute: A
   } = (0, eo.Z)(n), {
@@ -468,7 +468,7 @@ let eI = function(e) {
       renderOutputVolume: !0,
       renderDeafen: !0,
       minimal: !0,
-      onInteraction: eP("AudioDeviceMenu")
+      onInteraction: eI("AudioDeviceMenu")
     })))
   } : void 0;
   return U ? (0, r.jsx)(v.Gt, {
@@ -495,7 +495,7 @@ let eI = function(e) {
                 children: (0, r.jsx)(J.R, {
                   onClose: t,
                   location: x.Z.VOICE_CONTROL_TRAY,
-                  onInteraction: eP("AudioDeviceMenu")
+                  onInteraction: eI("AudioDeviceMenu")
                 })
               })
             },
@@ -515,10 +515,10 @@ let eI = function(e) {
                 onPopoutClick: L ? null : n,
                 selfMute: Z,
                 serverMute: A,
-                suppress: I,
+                suppress: P,
                 popoutOpen: i,
                 awaitingRemote: D,
-                onClick: () => (0, S.Z)(A, I, em.jXE.VOICE_CONTROL_TRAY),
+                onClick: () => (0, S.Z)(A, P, em.jXE.VOICE_CONTROL_TRAY),
                 onContextMenu: es
               })
             }
@@ -532,7 +532,7 @@ let eI = function(e) {
                 children: (0, r.jsx)(E.Z, {
                   onClose: t,
                   minimal: !0,
-                  onInteraction: eP("VideoDeviceMenu")
+                  onInteraction: eI("VideoDeviceMenu")
                 })
               })
             },
@@ -549,7 +549,7 @@ let eI = function(e) {
               return (0, r.jsx)(X.C, {
                 ref: ee,
                 centerButton: !0,
-                hasPermission: P,
+                hasPermission: I,
                 enabled: j,
                 cameraUnavailable: C,
                 onChange: ev,
@@ -568,7 +568,7 @@ let eI = function(e) {
             currentUser: _,
             exitFullScreen: c,
             canGoLive: R,
-            hasPermission: P
+            hasPermission: I
           }), !L && (0, r.jsx)(eO, {
             channel: n,
             idle: null == (t = null == d ? void 0 : d.idle) || t,
@@ -598,7 +598,7 @@ let eI = function(e) {
     children: (0, r.jsx)(eS, {
       channel: n,
       cameraUnavailable: C,
-      hasCameraPermission: P,
+      hasCameraPermission: I,
       currentUser: _
     })
   })

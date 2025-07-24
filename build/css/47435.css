@@ -1,6 +1,6 @@
 /**
   Module ID: 47435
-  Original File Name: ba463ab556021be6
+  Original File Name: 8ada21a0b90d041b
 **/
 .container__0e476 {
     background-color: var(--input-background);
@@ -54,7 +54,7 @@
     align-items: center;
     background-color: var(--background-mod-normal);
     border: 1px solid var(--border-subtle);
-    border-radius: var(--radius-sm);
+    border-radius: 5px;
     box-sizing: border-box;
     color: var(--text-default);
     cursor: pointer;
@@ -425,4 +425,4 @@
     opacity: .5
 }
 
-/*# sourceMappingURL=ba463ab556021be6.css.map*/
+/*# sourceMappingURL=8ada21a0b90d041b.css.map*/

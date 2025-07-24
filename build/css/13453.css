@@ -1,6 +1,6 @@
 /**
   Module ID: 13453
-  Original File Name: 594c16bd6b80dad0
+  Original File Name: 01f9c811ad7c622d
 **/
 .churnFooterContainer__64988 {
     overflow-x: clip;
@@ -105,6 +105,7 @@
 }
 
 .whatYouLoseItemContainer__89307.premiumRebrand__89307 {
+    filter: saturate(var(--saturation-factor,1));
     margin-bottom: 12px;
     margin-top: 12px
 }
@@ -123,12 +124,26 @@
     padding: 16px
 }
 
+.whatYouLoseItem__89307.premiumRebrand__89307 {
+    background: var(--background-mod-subtle);
+    border: 1px solid var(--border-faint);
+    padding: 11px
+}
+
 .whatYouLoseItemLeftColumn__89307 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-right: 16px;
     width: 100%
+}
+
+.whatYouLoseItemLeftColumn__89307.premiumRebrand__89307 {
+    padding-right: var(--space-40)
+}
+
+.whatYouLoseItemLeftColumn__89307.premiumRebrand__89307 strong {
+    font-weight: 400
 }
 
 .whatYouLoseItemLearnMore__89307 {
@@ -142,6 +157,11 @@
     display: flex;
     max-width: 180px;
     min-width: 180px
+}
+
+.whatYouLoseItemRightColumn__89307.premiumRebrand__89307 {
+    border-radius: var(--radius-sm);
+    overflow: hidden
 }
 
 .textSingleLineEllipsis__89307 {
@@ -351,4 +371,4 @@
     margin-top: 18px
 }
 
-/*# sourceMappingURL=594c16bd6b80dad0.css.map*/
+/*# sourceMappingURL=01f9c811ad7c622d.css.map*/

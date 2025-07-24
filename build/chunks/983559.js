@@ -26,8 +26,8 @@ var r = n(255367),
   O = n(544989),
   E = n(481932),
   S = n(664794),
-  P = n(4517),
-  I = n(277117),
+  I = n(4517),
+  P = n(277117),
   Z = n(52639),
   T = n(228168),
   N = n(388032),
@@ -123,14 +123,14 @@ function R(e) {
                 channelId: R.id,
                 themeType: T.lY.SIDEBAR,
                 onOpenProfile: M ? void 0 : z
-              }), (0, r.jsx)(P.Z, {
+              }), (0, r.jsx)(I.Z, {
                 location: "UserProfileSiebar",
                 user: t,
                 channelId: R.id,
                 themeType: T.lY.SIDEBAR,
                 disableToolbar: t.bot
               })]
-            }), (0, r.jsx)(I.Z, {
+            }), (0, r.jsx)(P.Z, {
               user: t,
               currentUser: n,
               displayProfile: D,

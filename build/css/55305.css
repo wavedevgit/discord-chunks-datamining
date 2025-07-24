@@ -1,6 +1,6 @@
 /**
   Module ID: 55305
-  Original File Name: 183c804d462eab41
+  Original File Name: 29e804417cf63307
 **/
 .container__0e476 {
     background-color: var(--input-background);
@@ -54,7 +54,7 @@
     align-items: center;
     background-color: var(--background-mod-normal);
     border: 1px solid var(--border-subtle);
-    border-radius: var(--radius-sm);
+    border-radius: 5px;
     box-sizing: border-box;
     color: var(--text-default);
     cursor: pointer;
@@ -589,4 +589,4 @@
     color: var(--text-default)
 }
 
-/*# sourceMappingURL=183c804d462eab41.css.map*/
+/*# sourceMappingURL=29e804417cf63307.css.map*/

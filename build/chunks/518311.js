@@ -26,8 +26,8 @@ var r, i = n(255367),
   O = n(493773),
   E = n(40851),
   S = n(100527),
-  P = n(367907),
-  I = n(906732),
+  I = n(367907),
+  P = n(906732),
   Z = n(43267),
   T = n(933557),
   N = n(600164),
@@ -212,7 +212,7 @@ class eg extends(r = l.PureComponent) {
       channel: e
     } = this.props;
     m.Z.wait(() => C.Z.open(null == e ? void 0 : e.id));
-    let t = (0, P.v_)(e);
+    let t = (0, I.v_)(e);
     q.default.track(er.rMx.OPEN_POPOUT, ec(es({}, t), {
       type: this._getAnalyticsEntryPoint().entryPointType,
       source: this._getAnalyticsEntryPoint().entryPointSource,
@@ -271,12 +271,12 @@ class eg extends(r = l.PureComponent) {
       channel: e,
       selectedUsers: t
     } = this.props, n = this.getRemaining(), r = null != e && 0 === t.size || n < 0, l = t.size > 1 || null != e ? ei.intl.string(ei.t.ZGMNAw) : ei.intl.string(ei.t["6Urw1t"]);
-    return (0, i.jsx)(h.zx, {
+    return (0, i.jsx)(f.zxk, {
+      variant: "primary",
       fullWidth: !0,
       disabled: r,
       onClick: this.handleInviteUsers,
-      size: h.zx.Sizes.LARGE,
-      children: l
+      text: l
     })
   }
   renderAddUsersButton() {
@@ -512,7 +512,15 @@ class eg extends(r = l.PureComponent) {
         onChange: this.handleChannelNameChange,
         onIconChange: this.handleIconChange,
         onIconRemove: this.handleIconRemove
-      }), this.renderCreateGroupButton()]
+      }), (0, i.jsxs)(f.hE2, {
+        fullWidth: !0,
+        direction: "horizontal",
+        children: [(0, i.jsx)(f.zxk, {
+          variant: "secondary",
+          text: ei.intl.string(ei.t["ETE/oK"]),
+          onClick: this.props.onClose
+        }), this.renderCreateGroupButton()]
+      })]
     });
     let r = t.isDM() ? this.renderCreateGroupButton() : this.renderInviteLink();
     if (null != r) return (0, i.jsx)(f.mzw, {
@@ -643,7 +651,7 @@ class eg extends(r = l.PureComponent) {
     }), eo(this, "handleQueryChange", e => {
       let {
         channel: t
-      } = this.props, n = (0, P.v_)(t);
+      } = this.props, n = (0, I.v_)(t);
       C.Z.search(e, null == t ? void 0 : t.id), null != this._existingTimeout && clearTimeout(this._existingTimeout), this._existingTimeout = setTimeout(() => {
         q.default.track(er.rMx.SEARCH_USER_LIST_STARTED, ec(es({}, n), {
           entry_point_type: this._getAnalyticsEntryPoint().entryPointType,
@@ -690,7 +698,7 @@ class eg extends(r = l.PureComponent) {
         {
           channel: n
         } = this.props,
-        r = (0, P.v_)(n),
+        r = (0, I.v_)(n),
         i = !0;
       1 === e.length && (i = null == b.Z._openCachedDMChannel(e[0])), q.default.track(er.rMx.CREATE_DM_USER_LIST_CLICKED, ec(es({}, r), {
         is_new_dm: i,
@@ -716,7 +724,7 @@ class eg extends(r = l.PureComponent) {
       })
     }), eo(this, "pushToExistingDM", (e, t) => {
       let n = this._searchCounter,
-        r = (0, P.v_)(e),
+        r = (0, I.v_)(e),
         i = G.Z.getChannelId() === e.id;
       b.Z.addRecipients(e.id, t, er.Sbl.ADD_FRIENDS_TO_DM).then(n => {
         if (i) {
@@ -788,7 +796,7 @@ function eb(e) {
     onChange: o
   } = e, {
     analyticsLocations: s
-  } = (0, I.ZP)(S.Z.NEW_GROUP_DM_INVITE_MODAL);
+  } = (0, P.ZP)(S.Z.NEW_GROUP_DM_INVITE_MODAL);
   if (!(0, w.a)(S.Z.NEW_GROUP_DM_INVITE_MODAL)) return null;
   let c = (0, T.pT)(Array.from(t), Y.default, z.Z);
   return (0, i.jsxs)("div", {
@@ -810,6 +818,8 @@ function eb(e) {
     }), (0, i.jsx)(h.Is, {
       "aria-label": ei.intl.string(ei.t.YynaLC),
       className: el.channelNameInput,
+      inputClassName: el.channelNameInputInner,
+      name: "create-gdm-channel-name",
       placeholder: c,
       value: n,
       onChange: o
@@ -856,10 +866,10 @@ function ey(e) {
   l.useEffect(() => (m && X.S.subscribe(er.CkL.TOGGLE_DM_CREATE, S), () => {
     X.S.unsubscribe(er.CkL.TOGGLE_DM_CREATE, S)
   }), [m, S, _]);
-  let P = (0, p.e7)([Y.default], () => Y.default.getUser(null == r ? void 0 : r.getRecipientId()));
+  let I = (0, p.e7)([Y.default], () => Y.default.getUser(null == r ? void 0 : r.getRecipientId()));
   return ((0, O.ZP)(() => {
     (0, k._)()
-  }), null != (t = null == P ? void 0 : P.bot) && t || null != (n = null == P ? void 0 : P.isProvisional) && n) ? null : _ ? (0, i.jsx)(et.ZP.Icon, {
+  }), null != (t = null == I ? void 0 : I.bot) && t || null != (n = null == I ? void 0 : I.isProvisional) && n) ? null : _ ? (0, i.jsx)(et.ZP.Icon, {
     ref: v,
     onClick: x,
     icon: b,

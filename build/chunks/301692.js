@@ -1,4 +1,4 @@
 /** Chunk was on 86181 **/
-e.exports = {
+t.exports = {
   confettiCanvas: "confettiCanvas__6c43c"
 }

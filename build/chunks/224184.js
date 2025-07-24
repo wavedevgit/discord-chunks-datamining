@@ -1,6 +1,6 @@
 /** Chunk was on 60173 **/
 n.d(t, {
-  Z: () => P
+  Z: () => I
 });
 var r = n(255367),
   i = n(73800),
@@ -26,36 +26,36 @@ var r = n(255367),
   O = n(981631),
   E = n(388032),
   S = n(399464);
-let P = e => {
+let I = e => {
   let {
     hangStatusActivity: t,
     userId: l,
-    channel: P,
-    previewIsOpen: I,
+    channel: I,
+    previewIsOpen: P,
     targetElementRef: Z
   } = e, {
     enableHangStatus: T
   } = y.n.useExperiment({
-    guildId: P.guild_id,
+    guildId: I.guild_id,
     location: "HangStatusPopout"
-  }), N = (0, o.e7)([p.default], () => p.default.getId()), A = (0, o.e7)([g.default], () => g.default.getUser(l)), w = (0, o.e7)([m.Z], () => m.Z.getChannelId() === P.id), R = (0, o.e7)([f.Z], () => f.Z.can(O.Plq.CONNECT, P)), M = (null == t ? void 0 : t.emoji) == null || (0, x.K)(t.emoji, P), D = (0, o.e7)([h.ZP], () => null != P.guild_id && null != A ? h.ZP.getMember(P.guild_id, l) : null), k = i.useMemo(() => null != A ? (0, d.SG)(void 0, D, A, {
+  }), N = (0, o.e7)([p.default], () => p.default.getId()), A = (0, o.e7)([g.default], () => g.default.getUser(l)), w = (0, o.e7)([m.Z], () => m.Z.getChannelId() === I.id), R = (0, o.e7)([f.Z], () => f.Z.can(O.Plq.CONNECT, I)), M = (null == t ? void 0 : t.emoji) == null || (0, x.K)(t.emoji, I), D = (0, o.e7)([h.ZP], () => null != I.guild_id && null != A ? h.ZP.getMember(I.guild_id, l) : null), k = i.useMemo(() => null != A ? (0, d.SG)(void 0, D, A, {
     size: 40
   }) : void 0, [D, A]);
   return (i.useEffect(() => {
     (0, _.UP)()
   }, []), i.useEffect(() => {
-    T && null != t && I && null != A && N !== l && b.default.track(O.rMx.VIEW_HANG_STATUS, {
+    T && null != t && P && null != A && N !== l && b.default.track(O.rMx.VIEW_HANG_STATUS, {
       source: "HangStatusPopout",
-      guild_id: P.guild_id,
-      channel_id: P.id
+      guild_id: I.guild_id,
+      channel_id: I.id
     })
-  }, [T, t, I, A, N, l, P]), T && null != A) ? N === l ? (0, r.jsx)("div", {
+  }, [T, t, P, A, N, l, I]), T && null != A) ? N === l ? (0, r.jsx)("div", {
     className: a()(S.popoutWrapper, {
-      [S.mounted]: I
+      [S.mounted]: P
     }),
     children: (0, r.jsx)(j.v, {
       currentStatus: t,
-      channel: P
+      channel: I
     })
   }) : null == t ? null : (0, r.jsxs)(s.m, {
     position: "right",
@@ -94,10 +94,10 @@ let P = e => {
       size: "sm",
       text: E.intl.string(E.t["B/dHXF"]),
       onClick: () => {
-        !w && R && (u.default.selectVoiceChannel(P.id), b.default.track(O.rMx.HANG_STATUS_CTA_CLICKED, {
+        !w && R && (u.default.selectVoiceChannel(I.id), b.default.track(O.rMx.HANG_STATUS_CTA_CLICKED, {
           source: "HangStatusPopout",
-          guild_id: P.guild_id,
-          channel_id: P.id
+          guild_id: I.guild_id,
+          channel_id: I.id
         }))
       }
     }) : null, w && M ? (0, r.jsx)(c.zxk, {
@@ -143,8 +143,8 @@ let P = e => {
             }), i))
           }
         }) : (0, _.Zx)(e, !0), b.default.track(O.rMx.SWIPE_HANG_STATUS, {
-          guild_id: P.guild_id,
-          channel_id: P.id,
+          guild_id: I.guild_id,
+          channel_id: I.id,
           media_session_id: m.Z.getMediaSessionId()
         })
       }

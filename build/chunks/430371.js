@@ -1,6 +1,6 @@
 /** Chunk was on 60173 **/
 n.d(t, {
-  Z: () => I
+  Z: () => P
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -56,13 +56,13 @@ function E(e, t) {
   }), e
 }
 let S = 16 / 9,
-  P = 8 + y.cF;
+  I = 8 + y.cF;
 
-function I(e) {
+function P(e) {
   var t;
   let n, {
       onSelectParticipant: l,
-      onContextMenuParticipant: I,
+      onContextMenuParticipant: P,
       onFullscreenParticipant: Z,
       participants: T,
       filteredParticipants: N,
@@ -87,7 +87,7 @@ function I(e) {
     J = M.type === x.fO.ACTIVITY,
     $ = (0, u.Z)(J ? M.applicationId : void 0),
     ee = !J && null != M.streamId,
-    et = U <= 2 * P + 144,
+    et = U <= 2 * I + 144,
     en = D && !et,
     er = (0, c.Z)(en),
     ei = B === C.AEg.MINIMUM || B === C.AEg.NORMAL,
@@ -95,12 +95,12 @@ function I(e) {
     ea = (0, m.Z)(el, 100),
     eo = (null != (t = (0, c.Z)(M.id)) ? t : M.id) !== M.id,
     es = 0;
-  (J || en) && (es += 72), J && !en && (el ? es += 48 : es += 8), en && (es += .5 * P + 8);
+  (J || en) && (es += 72), J && !en && (el ? es += 48 : es += 8), en && (es += .5 * I + 8);
   let ec = i.useMemo(() => J && $ ? L / (U - 2 * es) : ee && null != z && z.width > 0 && z.height > 0 ? z.width / z.height : S, [ee, z, J, L, U, es, $]),
     eu = U - 2 * es,
     ed = J && $ ? L : eu * ec,
     ep = Math.floor(Math.min(L, ed) / ec),
-    eh = U > L / ec + 72 + P + 8;
+    eh = U > L / ec + 72 + I + 8;
   n = en || J ? en ? -16 : -8 : 40 + Math.max(0, 72 - (U - ep) / 2), i.useEffect(() => {
     let e = setTimeout(() => {
       K(!1)
@@ -175,7 +175,7 @@ function I(e) {
       children: [(0, r.jsxs)(o.animated.div, {
         className: j.videoFrame,
         style: {
-          top: eb.value.to(e => -e * P / 2)
+          top: eb.value.to(e => -e * I / 2)
         },
         children: [(0, r.jsx)(o.animated.div, {
           style: {
@@ -204,7 +204,7 @@ function I(e) {
                   participant: t,
                   onClick: l,
                   onDoubleClick: Z,
-                  onContextMenu: I,
+                  onContextMenu: P,
                   onVideoResize: ex,
                   inCall: w,
                   inPopout: H
@@ -228,14 +228,14 @@ function I(e) {
       }), (0, r.jsx)(o.animated.div, {
         className: j.participantsWrapperAnimated,
         style: {
-          translateY: eg.value.to(e => e * P / 2),
+          translateY: eg.value.to(e => e * I / 2),
           opacity: eg.value,
           visibility: eg.value.to(e => 0 === e ? "hidden" : "visible")
         },
         children: (0, r.jsx)(y.ZP, {
           channel: R,
           onClick: l,
-          onContextMenu: I,
+          onContextMenu: P,
           onDoubleClick: Z,
           participants: ej,
           participantTileWidth: eO,
@@ -246,7 +246,7 @@ function I(e) {
         })
       })]
     }), ev.length > 0 ? (0, r.jsx)(b.Z, {
-      onContextMenuParticipant: I,
+      onContextMenuParticipant: P,
       width: L,
       height: U,
       channel: R,

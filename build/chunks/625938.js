@@ -27,7 +27,7 @@ var r = n(255367),
   E = n(388032),
   S = n(786476);
 
-function P(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -45,7 +45,7 @@ function P(e) {
   }
   return e
 }
-let I = e => {
+let P = e => {
     let {
       style: t,
       className: n,
@@ -56,7 +56,7 @@ let I = e => {
       text: i,
       children: e => {
         var i, o;
-        return (0, r.jsx)("div", (i = P({
+        return (0, r.jsx)("div", (i = I({
           className: a()(n, S.iconWidget),
           style: t
         }, e), o = o = {
@@ -96,7 +96,7 @@ let I = e => {
           let {
             default: e
           } = await n.e("1631").then(n.bind(n, 333541));
-          return t => (0, r.jsx)(e, P({}, t))
+          return t => (0, r.jsx)(e, I({}, t))
         }), T(!0)
       },
       F = i.useCallback(e => {
@@ -168,7 +168,7 @@ let I = e => {
                   "aria-label": i.title,
                   onMouseEnter: () => F(n),
                   onClick: e => k(e, n),
-                  children: (0, r.jsx)(I, {
+                  children: (0, r.jsx)(P, {
                     className: a()(S.iconWidget, {
                       [S.selectedWidget]: n === (null == t ? void 0 : t.state)
                     }),
@@ -187,7 +187,7 @@ let I = e => {
                 "aria-label": E.intl.string(E.t.S90Fub),
                 onClick: U,
                 onMouseEnter: () => w(null),
-                children: (0, r.jsx)(I, {
+                children: (0, r.jsx)(P, {
                   className: S.optionButton,
                   name: E.intl.string(E.t.S90Fub),
                   icon: (0, r.jsx)(d.t6m, {
@@ -210,7 +210,7 @@ let I = e => {
                   onMouseEnter: () => H(e),
                   onClick: o ? void 0 : t => L(t, e),
                   className: S.statusOptionContainer,
-                  children: [(0, r.jsx)(I, {
+                  children: [(0, r.jsx)(P, {
                     className: a()(S.iconWidget, {
                       [S.selectedWidget]: i
                     }),
@@ -237,7 +237,7 @@ let I = e => {
               }), o.current.length > 0 ? (0, r.jsx)(d.P3F, {
                 "aria-label": null != t ? E.intl.string(E.t.IN2LTk) : E.intl.string(E.t.UDg0qK),
                 onClick: B,
-                children: (0, r.jsx)(I, {
+                children: (0, r.jsx)(P, {
                   className: S.optionButton,
                   name: null != t ? E.intl.string(E.t.IN2LTk) : E.intl.string(E.t.UDg0qK),
                   icon: (0, r.jsx)(d.vdY, {

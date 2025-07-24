@@ -1,6 +1,6 @@
 /**
   Module ID: 60173
-  Original File Name: d24cd179e56036fa
+  Original File Name: 08111bdf4bfc72ba
 **/
 @keyframes placeholderPulse_c8ffbb {
     0% {
@@ -1468,10 +1468,6 @@ strong {
     cursor: not-allowed
 }
 
-.friendWrapper_bbd192:not(.disabled_bbd192):hover {
-    background-color: var(--background-modifier-hover)
-}
-
 .disabled_bbd192 .avatar_bbd192 {
     opacity: 50%
 }
@@ -1547,7 +1543,8 @@ strong {
 }
 
 .popout_cba592.showAsModal_cba592 {
-    height: 720px
+    height: 720px;
+    width: 480px
 }
 
 .popout_cba592.showAsPopout_cba592 {
@@ -1611,6 +1608,10 @@ strong {
 .channelNameInput_cba592 {
     grid-column: 2;
     justify-content: flex-start
+}
+
+.channelNameInput_cba592 .channelNameInputInner_cba592 {
+    height: 40px
 }
 
 .subtitleWarning_cba592 {
@@ -13013,4 +13014,4 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     position: relative
 }
 
-/*# sourceMappingURL=d24cd179e56036fa.css.map*/
+/*# sourceMappingURL=08111bdf4bfc72ba.css.map*/

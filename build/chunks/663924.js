@@ -63,7 +63,7 @@ function E(e) {
   }), [S, x, v]), (0, o.Tbt)(f), i.useEffect(() => {
     (!j && (0, a.$s)() || j && !E) && O()
   }, [E, j]);
-  let P = (0, b.Z)();
+  let I = (0, b.Z)();
   return (0, r.jsx)(g.Z, {
     ref: f,
     context: {
@@ -71,7 +71,7 @@ function E(e) {
       type: "channel"
     },
     entrypoint: m._b.TEXT,
-    initHistory: P
+    initHistory: I
   })
 }
 let S = i.memo(function(e) {

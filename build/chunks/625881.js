@@ -1,6 +1,6 @@
 /** Chunk was on 86181 **/
-n.d(t, {
-  Z: () => j
+n.d(e, {
+  Z: () => I
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -21,31 +21,31 @@ var r = n(255367),
   y = n(828576),
   b = n(982404),
   g = n(299156);
-let j = function(e) {
+let I = function(t) {
   let {
-    premiumSubscription: t,
+    premiumSubscription: e,
     premiumType: n,
     onClose: o,
-    onConfirm: j,
-    userDiscountOffer: I
-  } = e, [v, T] = i.useState(!1), [E, P] = i.useState(!1), O = async e => {
+    onConfirm: I,
+    userDiscountOffer: j
+  } = t, [P, v] = i.useState(!1), [T, E] = i.useState(!1), O = async t => {
     try {
-      P(!0), T(!1), await s.tn.post({
+      E(!0), v(!1), await s.tn.post({
         url: h.ANM.USER_OFFER_REDEEM,
         body: {
-          user_discount_offer_id: e
+          user_discount_offer_id: t
         },
         rejectWithError: !0
-      }), j()
-    } catch (e) {
-      T(!0)
+      }), I()
+    } catch (t) {
+      v(!0)
     }
-    P(!1)
-  }, S = (0, u.ZP)(), N = (0, l.wj)(S) ? b : g, R = (0, p._)(t, C.Xh.PREMIUM_MONTH_TIER_2, I), D = (0, m.aS)(C.Xh.PREMIUM_MONTH_TIER_2, !1, !1, {
-    currency: t.currency,
-    paymentSourceId: t.paymentSourceId
+    E(!1)
+  }, S = (0, u.ZP)(), N = (0, l.wj)(S) ? b : g, R = (0, p._)(e, C.Xh.PREMIUM_MONTH_TIER_2, j), D = (0, m.aS)(C.Xh.PREMIUM_MONTH_TIER_2, !1, !1, {
+    currency: e.currency,
+    paymentSourceId: e.paymentSourceId
   }), w = (0, _.T4)(D.amount, D.currency);
-  return null == I ? null : (0, r.jsxs)(r.Fragment, {
+  return null == j ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(f.Z, {
       premiumType: n,
       onClose: o
@@ -56,7 +56,7 @@ let j = function(e) {
         children: [(0, r.jsx)(c.X6q, {
           variant: "heading-xl/bold",
           children: x.intl.format(x.t.q9Vxu7, {
-            percent: I.discount.amount
+            percent: j.discount.amount
           })
         }), (0, r.jsxs)("div", {
           className: y.confirmDiscountDescription,
@@ -67,8 +67,8 @@ let j = function(e) {
           }), (0, r.jsx)(c.Text, {
             variant: "text-sm/medium",
             children: x.intl.format(x.t.Eq1RHB, {
-              percent: I.discount.amount,
-              numMonths: I.discount.user_usage_limit,
+              percent: j.discount.amount,
+              numMonths: j.discount.user_usage_limit,
               price: w
             })
           })]
@@ -79,13 +79,13 @@ let j = function(e) {
             className: y.confirmDiscountLegaleseText,
             children: x.intl.format(x.t.hrGTjI, {
               discountedPrice: R,
-              billingPeriod: (0, m.JP)(I.discount.user_usage_limit_interval),
-              numMonths: I.discount.user_usage_limit,
+              billingPeriod: (0, m.JP)(j.discount.user_usage_limit_interval),
+              numMonths: j.discount.user_usage_limit,
               fullPrice: w,
               helpdeskArticle: d.Z.getArticleURL(h.BhN.PAID_TERMS)
             })
           })
-        }), v && (0, r.jsx)("div", {
+        }), P && (0, r.jsx)("div", {
           className: y.redemptionFailedMessage,
           children: (0, r.jsx)(c.Text, {
             variant: "text-xs/semibold",
@@ -94,8 +94,8 @@ let j = function(e) {
           })
         }), (0, r.jsxs)("div", {
           className: a()(y.confirmDiscountButtons, {
-            [y.confrimDiscountsButtonsError]: v,
-            [y.confrimDiscountsButtonsNoError]: !v
+            [y.confrimDiscountsButtonsError]: P,
+            [y.confrimDiscountsButtonsNoError]: !P
           }),
           children: [(0, r.jsx)(c.Avr, {
             variant: "primary",
@@ -105,8 +105,8 @@ let j = function(e) {
             variant: "primary",
             size: "sm",
             text: x.intl.string(x.t.CKSuZG),
-            loading: E,
-            onClick: () => O(I.id)
+            loading: T,
+            onClick: () => O(j.id)
           })]
         })]
       })

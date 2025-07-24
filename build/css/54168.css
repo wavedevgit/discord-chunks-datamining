@@ -1,6 +1,6 @@
 /**
   Module ID: 54168
-  Original File Name: f98ad476d1cccf5d
+  Original File Name: 2f71c76a7938723b
 **/
 .pill_a2c9e8 {
     align-items: center;
@@ -202,7 +202,7 @@
     align-items: center;
     background-color: var(--background-mod-normal);
     border: 1px solid var(--border-subtle);
-    border-radius: var(--radius-sm);
+    border-radius: 5px;
     box-sizing: border-box;
     color: var(--text-default);
     cursor: pointer;
@@ -2085,4 +2085,4 @@ div.profileThemedContainer__656be {
     opacity: 1
 }
 
-/*# sourceMappingURL=f98ad476d1cccf5d.css.map*/
+/*# sourceMappingURL=2f71c76a7938723b.css.map*/

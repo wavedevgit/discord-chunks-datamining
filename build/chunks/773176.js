@@ -26,8 +26,8 @@ var r = n(255367),
   O = n(223606),
   E = n(188597),
   S = n(41776),
-  P = n(980463),
-  I = n(328908),
+  I = n(980463),
+  P = n(328908),
   Z = n(992970),
   T = n(135793),
   N = n(576645),
@@ -216,7 +216,7 @@ function eg(e) {
     } = (0, u.cj)([W.Z], () => ({
       canAddNewReactions: j && W.Z.can(ea.Plq.ADD_REACTIONS, t),
       canManageMessages: W.Z.can(ea.Plq.MANAGE_MESSAGES, t)
-    }), [t, j]), P = (0, D.U)(t, n), I = (0, U.NE)(t, n), Z = (0, U.Ek)(n), T = (0, u.e7)([S.Z], () => null != t.guild_id && S.Z.isLurking(t.guild_id), [t]), N = (0, u.e7)([G.ZP], () => null != t.guild_id && G.ZP.isCurrentUserGuest(t.guild_id), [t]), A = d.id === h, w = (O || n.canDeleteOwnMessage(h)) && g && !ea.V$x.UNDELETABLE.has(n.type);
+    }), [t, j]), I = (0, D.U)(t, n), P = (0, U.NE)(t, n), Z = (0, U.Ek)(n), T = (0, u.e7)([S.Z], () => null != t.guild_id && S.Z.isLurking(t.guild_id), [t]), N = (0, u.e7)([G.ZP], () => null != t.guild_id && G.ZP.isCurrentUserGuest(t.guild_id), [t]), A = d.id === h, w = (O || n.canDeleteOwnMessage(h)) && g && !ea.V$x.UNDELETABLE.has(n.type);
     n.type === ea.uaV.AUTO_MODERATION_ACTION && (w = w && O), t.isModeratorReportChannel() && (w = w && n.id !== (null == _ ? void 0 : _.id) && !(0, ee.Z)(n));
     let R = (0, Q.a4)(n),
       M = (0, $.Z)(n, t),
@@ -253,8 +253,8 @@ function eg(e) {
       canEdit: H,
       canDelete: w,
       canReport: R,
-      canReply: P,
-      canStartThread: I,
+      canReply: I,
+      canStartThread: P,
       canViewThread: Z,
       canForward: er,
       canCopy: q.wS,
@@ -284,9 +284,9 @@ function eg(e) {
     })
   }, [K, es]), e_ = (0, U.$R)(t), eC = n.hasFlag(ea.iLy.CROSSPOSTED), [ex, ev] = (0, g.cv)(R ? [d.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE] : []), ej = ex === d.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE, [eO, eE] = i.useState(!1), eS = i.useCallback(() => {
     eE(!0)
-  }, []), eP = i.useCallback(() => {
+  }, []), eI = i.useCallback(() => {
     eE(!1)
-  }, []), eI = i.useCallback((e, t) => {
+  }, []), eP = i.useCallback((e, t) => {
     ev(eo.L.TAKE_ACTION), (0, er.ts)(e, t)
   }, [ev]), {
     canShowReactionsOnMessageHover: eZ
@@ -305,7 +305,7 @@ function eg(e) {
     eA = eT && eN && !n.hasPotions(),
     ew = i.useCallback(e => {
       try {
-        (0, P.qc)(t.id, n.id, e)
+        (0, I.qc)(t.id, n.id, e)
       } catch (e) {
         (0, p.showToast)((0, p.createToast)(ec.intl.string(ec.t.xsfC2d), p.ToastType.FAILURE))
       }
@@ -368,7 +368,7 @@ function eg(e) {
             channelId: t.id,
             message: n,
             onRedeem: ew,
-            onClose: I.Qy,
+            onClose: P.Qy,
             source: Z.YD.MessageExpandingButtons
           })
         }
@@ -384,9 +384,9 @@ function eg(e) {
     }, "edit") : null, R ? (0, r.jsx)(en.sF, {
       label: ec.intl.string(ec.t.I3ltXF),
       icon: j.Z,
-      onClick: () => eI(t, n),
+      onClick: () => eP(t, n),
       onTooltipShow: eS,
-      onTooltipHide: eP,
+      onTooltipHide: eI,
       showNewBadge: !eO && ej
     }, "forward") : null, E && !R ? (0, r.jsx)(en.sF, {
       label: ec.intl.string(ec.t.rBIGBA),

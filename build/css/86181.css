@@ -1,6 +1,6 @@
 /**
   Module ID: 86181
-  Original File Name: fe239ab8efc71f1f
+  Original File Name: 787b9d6db5a059e5
 **/
 .discountOfferContainer__5521c {
     align-content: center;
@@ -12,15 +12,17 @@
 
 .discountOfferContent__5521c {
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    gap: var(--space-4)
 }
 
 .nitroIcon__5521c {
-    border-radius: var(--radius-sm)
+    border-radius: var(--radius-sm);
+    filter: saturate(var(--saturation-factor,1))
 }
 
 .offerDetailContainer__11ee8 {
-    background: var(--background-surface-highest);
+    background: var(--background-mod-subtle);
     border-radius: var(--radius-md);
     padding: var(--space-16)
 }
@@ -132,6 +134,7 @@
 }
 
 .whatYouLoseItemContainer__89307.premiumRebrand__89307 {
+    filter: saturate(var(--saturation-factor,1));
     margin-bottom: 12px;
     margin-top: 12px
 }
@@ -150,12 +153,26 @@
     padding: 16px
 }
 
+.whatYouLoseItem__89307.premiumRebrand__89307 {
+    background: var(--background-mod-subtle);
+    border: 1px solid var(--border-faint);
+    padding: 11px
+}
+
 .whatYouLoseItemLeftColumn__89307 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-right: 16px;
     width: 100%
+}
+
+.whatYouLoseItemLeftColumn__89307.premiumRebrand__89307 {
+    padding-right: var(--space-40)
+}
+
+.whatYouLoseItemLeftColumn__89307.premiumRebrand__89307 strong {
+    font-weight: 400
 }
 
 .whatYouLoseItemLearnMore__89307 {
@@ -169,6 +186,11 @@
     display: flex;
     max-width: 180px;
     min-width: 180px
+}
+
+.whatYouLoseItemRightColumn__89307.premiumRebrand__89307 {
+    border-radius: var(--radius-sm);
+    overflow: hidden
 }
 
 .textSingleLineEllipsis__89307 {
@@ -562,4 +584,4 @@ html .invoiceCancelRow_b9f95d {
     width: 100%
 }
 
-/*# sourceMappingURL=fe239ab8efc71f1f.css.map*/
+/*# sourceMappingURL=787b9d6db5a059e5.css.map*/

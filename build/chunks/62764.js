@@ -26,8 +26,8 @@ var r = n(255367),
   O = n(501517),
   E = n(982168),
   S = n(216572),
-  P = n(817608),
-  I = n(569471),
+  I = n(817608),
+  P = n(569471),
   Z = n(346479),
   T = n(592125),
   N = n(934415),
@@ -126,7 +126,7 @@ function V(e) {
     width: O
   } = (0, h.ZP)(), [E, L] = i.useState(3), [V, z] = i.useState(!n), [W, Y] = (0, f.Z)(!1, 2e3), q = (0, o.e7)([T.Z], () => T.Z.getChannel(t), [t]), {
     firstMessage: K
-  } = (0, R.cl)(q), X = (0, o.e7)([I.Z], () => I.Z.hasJoined(t)), {
+  } = (0, R.cl)(q), X = (0, o.e7)([P.Z], () => P.Z.hasJoined(t)), {
     disableReactionUpdates: Q,
     disableReactionCreates: J,
     isLurking: $,
@@ -183,7 +183,7 @@ function V(e) {
       ref: j,
       children: [en ? (0, r.jsx)("div", {
         className: U.reportedMessageActions,
-        children: (0, r.jsx)(P.Z, {
+        children: (0, r.jsx)(I.Z, {
           message: K,
           channel: q
         })

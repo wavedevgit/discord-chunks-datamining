@@ -1,6 +1,6 @@
 /**
   Module ID: 47253
-  Original File Name: 0a98e8212bdfca7b
+  Original File Name: 6083f4c32e2e9254
 **/
 .gradientOuterBorder__8f49b {
     align-items: center;
@@ -474,6 +474,7 @@
 }
 
 .whatYouLoseItemContainer__89307.premiumRebrand__89307 {
+    filter: saturate(var(--saturation-factor,1));
     margin-bottom: 12px;
     margin-top: 12px
 }
@@ -492,12 +493,26 @@
     padding: 16px
 }
 
+.whatYouLoseItem__89307.premiumRebrand__89307 {
+    background: var(--background-mod-subtle);
+    border: 1px solid var(--border-faint);
+    padding: 11px
+}
+
 .whatYouLoseItemLeftColumn__89307 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-right: 16px;
     width: 100%
+}
+
+.whatYouLoseItemLeftColumn__89307.premiumRebrand__89307 {
+    padding-right: var(--space-40)
+}
+
+.whatYouLoseItemLeftColumn__89307.premiumRebrand__89307 strong {
+    font-weight: 400
 }
 
 .whatYouLoseItemLearnMore__89307 {
@@ -511,6 +526,11 @@
     display: flex;
     max-width: 180px;
     min-width: 180px
+}
+
+.whatYouLoseItemRightColumn__89307.premiumRebrand__89307 {
+    border-radius: var(--radius-sm);
+    overflow: hidden
 }
 
 .textSingleLineEllipsis__89307 {
@@ -659,4 +679,4 @@
     flex-direction: row-reverse
 }
 
-/*# sourceMappingURL=0a98e8212bdfca7b.css.map*/
+/*# sourceMappingURL=6083f4c32e2e9254.css.map*/
