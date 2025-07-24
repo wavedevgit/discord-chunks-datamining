@@ -1,6 +1,6 @@
 /**
   Module ID: 60173
-  Original File Name: d9b366ac53734df9
+  Original File Name: 27e39da55f50831f
 **/
 @keyframes placeholderPulse_c8ffbb {
     0% {
@@ -8925,8 +8925,6 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 [data-collapsed=true]>.chat_f75fb0 {
     border-left: 1px solid var(--border-subtle);
     border-top-left-radius: var(--radius-md)
-}&.theme-midnight:not(.high-contrast-mode) .content_f75fb0,&.theme-midnight:not(.high-contrast-mode) .subtitleContainer_f75fb0 {
-    border-left: 1px solid var(--border-subtle)
 }
 
 .refresh-fast-follow-distinct-borders .chat_f75fb0.threadSidebarOpen_f75fb0 {
@@ -8994,10 +8992,6 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 
 .custom-theme-background .formWithLoadedChatInput_f75fb0:before {
     content: unset
-}
-
-.custom-theme-background .content_f75fb0 {
-    border-left: none
 }
 
 .chatContent_f75fb0 {
@@ -13102,4 +13096,4 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     position: relative
 }
 
-/*# sourceMappingURL=d9b366ac53734df9.css.map*/
+/*# sourceMappingURL=27e39da55f50831f.css.map*/

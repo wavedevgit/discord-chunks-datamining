@@ -1,6 +1,6 @@
 /**
   Module ID: 1272
-  Original File Name: 28aecf64db8f2f30
+  Original File Name: e8ee1cfb0a319dcd
 **/
 .container__74da2 {
     align-items: center;
@@ -4364,10 +4364,6 @@
     z-index: 1
 }
 
-.theme-midnight .tabBody__133bf {
-    border-left: 1px solid var(--border-subtle)
-}
-
 @media (max-width:1200px) {
     .nowPlayingColumn__133bf {
         display: none
@@ -4809,10 +4805,6 @@
         overflow: auto
     }
 
-    .high-contrast-mode .page_c48ade {
-        border-left: 1px solid var(--border-subtle)
-    }
-
     .sidebar_c48ade {
         display: grid;
         grid-column: start/channelsEnd;
@@ -4888,6 +4880,10 @@
     min-width: 0;
     position: relative;
     width: 100%
+}
+
+.high-contrast-mode .page_c48ade,.theme-midnight .page_c48ade {
+    border-left: 1px solid var(--border-subtle)
 }
 
 .refresh-fast-follow-avatars .panels_c48ade {
@@ -8509,4 +8505,4 @@ html .tabBadge__35e86 {
     margin-bottom: 18px
 }
 
-/*# sourceMappingURL=28aecf64db8f2f30.css.map*/
+/*# sourceMappingURL=e8ee1cfb0a319dcd.css.map*/
