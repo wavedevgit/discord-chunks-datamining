@@ -2,8 +2,8 @@
 "use strict";
 let r, i, a, o, s, l, c, u, d, _, f, p, h, m, g, E, b;
 n.d(t, {
-  Z: () => ec
-});
+  Z: () => ed
+}), n(704826), n(35282);
 var y, O = n(979554),
   v = n(442837),
   I = n(570140),
@@ -219,7 +219,9 @@ function eo() {
 function es() {
   ee(), er(), R()
 }
-class el extends(y = v.ZP.Store) {
+let el = /<(a?):(\w+):(\d+)>/g,
+  ec = e => e.replace(el, "x").length;
+class eu extends(y = v.ZP.Store) {
   getFormState() {
     return A
   }
@@ -230,7 +232,7 @@ class el extends(y = v.ZP.Store) {
     return void 0 !== r || void 0 !== l || void 0 !== c || void 0 !== u || void 0 !== d || void 0 !== _ || void 0 !== a || void 0 !== o || void 0 !== i || void 0 !== s || void 0 !== f || void 0 !== p
   }
   getIsSubmitDisabled() {
-    return void 0 !== c && c.length > T.tPV
+    return void 0 !== c && ec(c) > T.tPV
   }
   getPendingAvatar() {
     return r
@@ -303,8 +305,8 @@ class el extends(y = v.ZP.Store) {
     }
   }
 }
-S(el, "displayName", "UserSettingsAccountStore");
-let ec = new el(I.Z, {
+S(eu, "displayName", "UserSettingsAccountStore");
+let ed = new eu(I.Z, {
   USER_SETTINGS_ACCOUNT_INIT: C,
   USER_SETTINGS_MODAL_INIT: C,
   USER_SETTINGS_ACCOUNT_SUBMIT_SUCCESS: C,

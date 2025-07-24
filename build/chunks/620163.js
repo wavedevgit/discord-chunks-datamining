@@ -1,6 +1,6 @@
 /** Chunk was on 9268 **/
 n.d(t, {
-  i: () => e8
+  i: () => e6
 }), n(539854), n(388685);
 var i = n(255367);
 n(73800);
@@ -135,15 +135,15 @@ let e$ = () => {
       text: eq.intl.string(eq.t.y2b7CA)
     }) : null
   },
-  e6 = eZ.Z,
-  e8 = e => {
+  e8 = eZ.Z,
+  e6 = e => {
     let {
       unseenGiftCount: t,
       showPrepaidPaymentPastDueWarning: E,
       impressionSource: N,
       numOfPendingFamilyRequests: R,
       isOverlaySupported: V,
-      isClipsBetaTagShowing: e8 = !1,
+      isClipsBetaTagShowing: e6 = !1,
       shouldMergeGameSettings: e2,
       isKeywordFilteringEnabled: e5,
       isStaff: e7,
@@ -606,7 +606,7 @@ let e$ = () => {
         searchableTitles: [eq.intl.string(eq.t.z2jK6e)],
         label: eq.intl.string(eq.t.z2jK6e),
         ariaLabel: eq.intl.string(eq.t.z2jK6e),
-        icon: e8 ? (0, i.jsx)(O.Z, {}) : void 0,
+        icon: e6 ? (0, i.jsx)(O.Z, {}) : void 0,
         element: C.Z,
         predicate: () => !e2,
         url: eW.Z5c.SETTINGS("clips")
@@ -1473,7 +1473,7 @@ let e$ = () => {
         section: eW.oAB.LINUX,
         searchableTitles: [eq.intl.string(eq.t["7pPjTU"])],
         label: eq.intl.string(eq.t["7pPjTU"]),
-        element: e6,
+        element: e8,
         predicate: () => J.isPlatformEmbedded && (0, J.isLinux)()
       },
       [eH.s6.STREAMER_MODE]: {
