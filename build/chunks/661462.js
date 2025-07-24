@@ -39,7 +39,7 @@ function f(e) {
   }) : r === d.oh.MUTUAL_GUILDS ? (0, o.jsx)(s.Z, {
     user: t,
     onClose: p
-  }) : null
+  }) : (d.oh.WIDGETS, null)
 }
 
 function p(e) {
@@ -52,8 +52,8 @@ function p(e) {
     channelId: m,
     items: b,
     initialSection: x,
-    initialSubsection: y,
-    onClose: _
+    initialSubsection: _,
+    onClose: y
   } = e, {
     trackUserProfileAction: h
   } = (0, c.KZ)(), [{
@@ -83,7 +83,7 @@ function p(e) {
     } = e;
     return t === x
   })) ? t : b[0]), l = l = {
-    subsection: y
+    subsection: _
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -133,7 +133,7 @@ function p(e) {
         channelId: m,
         section: g,
         subsection: j,
-        onClose: _
+        onClose: y
       })
     })]
   })

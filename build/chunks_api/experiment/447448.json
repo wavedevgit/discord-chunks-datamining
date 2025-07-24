@@ -1,0 +1,1 @@
+{"id":"447448","type":"experiment","data":{"kind":"user","id":"2025-07_user_profile_game_widgets","label":"User Profile Game Widgets","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enable game widgets on user profile","config":{"enabled":false}}]},"fromModule":{"id":"43473"}}

@@ -17,8 +17,8 @@ var r = n(120356),
   m = n(706454),
   b = n(49012),
   x = n(981631),
-  y = n(856651),
-  _ = n(388032),
+  _ = n(856651),
+  y = n(388032),
   h = n(738873);
 
 function g(e) {
@@ -59,7 +59,7 @@ function I(e) {
     account: n,
     locale: r,
     userId: i
-  } = e, c = null != (t = n.metadata) ? t : {}, m = (0, u.FI)(c[y.PC.CREATED_AT], r), I = a.Z.get((0, d.rR)(n.type));
+  } = e, c = null != (t = n.metadata) ? t : {}, m = (0, u.FI)(c[_.PC.CREATED_AT], r), I = a.Z.get((0, d.rR)(n.type));
   return (0, o.jsxs)("li", {
     className: h.connection,
     children: [(0, o.jsx)(l.ua7, {
@@ -67,7 +67,7 @@ function I(e) {
       children: e => (0, o.jsx)("div", j(g({}, e), {
         className: h.platformIconContainer,
         children: (0, o.jsx)("img", {
-          alt: _.intl.formatToPlainString(_.t.rtm15O, {
+          alt: y.intl.formatToPlainString(y.t.rtm15O, {
             name: null == I ? void 0 : I.name
           }),
           className: h.platformIcon,
@@ -92,7 +92,7 @@ function I(e) {
             href: t,
             className: h.platformUrlAnchor,
             useDefaultUnderlineStyles: !1,
-            "aria-label": (null == I ? void 0 : I.name) != null ? "".concat(I.name, ", ").concat(n.name, ", ").concat(_.intl.string(_.t.q5jLJC)) : "".concat(n.name, ", ").concat(_.intl.string(_.t.q5jLJC)),
+            "aria-label": (null == I ? void 0 : I.name) != null ? "".concat(I.name, ", ").concat(n.name, ", ").concat(y.intl.string(y.t.q5jLJC)) : "".concat(n.name, ", ").concat(y.intl.string(y.t.q5jLJC)),
             onClick: e => {
               (0, s.yw)(x.rMx.CONNECTED_ACCOUNT_VIEWED, {
                 platform_type: n.type,
@@ -120,7 +120,7 @@ function I(e) {
           })
         })(), null != m && (0, o.jsx)(l.Text, {
           variant: "text-xs/normal",
-          children: _.intl.format(_.t["9rfonp"], {
+          children: y.intl.format(y.t["9rfonp"], {
             date: m
           })
         })]

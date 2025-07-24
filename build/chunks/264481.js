@@ -19,8 +19,8 @@ var o = n(255367),
   m = n(388032),
   b = n(771627);
 let x = [() => m.intl.string(m.t.madJdH), () => m.intl.string(m.t.NYmfoK), () => m.intl.string(m.t.R2PaCg), () => m.intl.string(m.t.laSR8v), () => m.intl.string(m.t.DnsJEx)],
-  y = [() => m.intl.string(m.t.nFSbeH), () => m.intl.string(m.t.gTcxOz), () => m.intl.string(m.t["8T0wYm"]), () => m.intl.string(m.t.BIHl1t), () => m.intl.string(m.t.jhBm09)],
-  _ = [() => m.intl.string(m.t.AyMGXF), () => m.intl.string(m.t.aAFW7e), e => m.intl.formatToPlainString(m.t.h2g0cH, {
+  _ = [() => m.intl.string(m.t.nFSbeH), () => m.intl.string(m.t.gTcxOz), () => m.intl.string(m.t["8T0wYm"]), () => m.intl.string(m.t.BIHl1t), () => m.intl.string(m.t.jhBm09)],
+  y = [() => m.intl.string(m.t.AyMGXF), () => m.intl.string(m.t.aAFW7e), e => m.intl.formatToPlainString(m.t.h2g0cH, {
     name: e
   }), () => m.intl.string(m.t["rrYh5+"]), () => m.intl.string(m.t["HX3K+P"]), () => m.intl.string(m.t["/yW3aW"]), () => m.intl.string(m.t["PmL/v7"]), () => m.intl.string(m.t.IALa3t), () => m.intl.string(m.t.HRcTFB), () => m.intl.string(m.t.NuCqPj), () => m.intl.string(m.t["M1tw+/"]), () => m.intl.string(m.t.UBm1y8), () => m.intl.string(m.t.Cu95PT), () => m.intl.string(m.t["R/wFur"]), () => m.intl.string(m.t.HQPAVV), () => m.intl.string(m.t.YolGh4)],
   h = [p.ABu.STEAM, p.ABu.PLAYSTATION, p.ABu.XBOX, p.ABu.TWITCH, p.ABu.BATTLENET, p.ABu.LEAGUE_OF_LEGENDS, p.ABu.EPIC_GAMES, p.ABu.RIOT_GAMES, p.ABu.ROBLOX, p.ABu.SPOTIFY, p.ABu.YOUTUBE, p.ABu.CRUNCHYROLL, p.ABu.BUNGIE];
@@ -64,7 +64,7 @@ function I() {
   let e = m.intl.string(m.t.bFgqYG),
     [t] = r.useState(() => {
       var e;
-      return (null != (e = (0, i.sample)(y)) ? e : y[0])()
+      return (null != (e = (0, i.sample)(_)) ? e : _[0])()
     });
   return (0, o.jsx)(g, {
     heading: e,
@@ -82,8 +82,8 @@ function v(e) {
     name: d
   }), [x] = r.useState(() => {
     var e;
-    return (null != (e = (0, i.sample)(_)) ? e : _[0])(d)
-  }), y = r.useCallback(() => {
+    return (null != (e = (0, i.sample)(y)) ? e : y[0])(d)
+  }), _ = r.useCallback(() => {
     l.Z.openPrivateChannel({
       recipientIds: t.id
     }), null == s || s()
@@ -96,7 +96,7 @@ function v(e) {
       children: (0, o.jsx)(f.tG, {
         icon: c.kBi,
         text: m.intl.string(m.t["g33r/P"]),
-        onClick: y,
+        onClick: _,
         themeColor: "secondary"
       })
     })
