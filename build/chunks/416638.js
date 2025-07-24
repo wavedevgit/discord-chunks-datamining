@@ -1,14 +1,14 @@
 /** Chunk was on 88448 **/
 r.d(t, {
-  Tm: () => i,
-  WJ: () => a,
+  Tm: () => a,
+  WJ: () => i,
   s5: () => c
 }), r(539854), r(997841), r(913527);
 var n = r(592125);
 r(630388), r(862825);
 var l = r(981631);
 
-function i(e) {
+function a(e) {
   switch (e.type) {
     case l.aib.GUILD:
       return e.guildId;
@@ -22,13 +22,13 @@ function i(e) {
   }
 }
 
-function a(e) {
+function i(e) {
   switch (e.type) {
     case l.aib.GUILD:
     case l.aib.GUILD_CHANNEL:
+    case l.aib.THREAD:
       return e.guildId;
     case l.aib.CHANNEL:
-    case l.aib.THREAD:
       return e.channelId;
     case l.aib.DMS:
     case l.aib.FAVORITES:
@@ -38,6 +38,7 @@ function a(e) {
 
 function c(e) {
   switch (e.type) {
+    case l.aib.THREAD:
     case l.aib.GUILD_CHANNEL:
     case l.aib.GUILD:
       return e.guildId;

@@ -30,8 +30,8 @@ let O = e => {
     guild: E
   } = e, {
     currentCategoryId: S,
-    directoryEntries: I,
-    categoryCounts: P,
+    directoryEntries: P,
+    categoryCounts: I,
     allEntriesCount: Z,
     isLoading: T
   } = (0, l.cj)([m.Z], () => {
@@ -55,7 +55,7 @@ let O = e => {
       }, !0, !0, e)
     })
   }, [O.id]);
-  let N = i.useMemo(() => null != I ? (0, y.v)(Object.values(I), S) : null, [I, S]),
+  let N = i.useMemo(() => null != P ? (0, y.v)(Object.values(P), S) : null, [P, S]),
     {
       mostRecentQuery: A,
       searchFetching: w,
@@ -72,9 +72,9 @@ let O = e => {
       }
     }),
     [M, D] = i.useState(A),
-    L = "" !== A,
+    k = "" !== A,
     {
-      showHubEventsList: k
+      showHubEventsList: L
     } = c.Z.useExperiment({
       guildId: null != (t = E.id) ? t : "",
       location: "6f7fb0_1"
@@ -83,7 +83,7 @@ let O = e => {
     }),
     U = {
       mostRecentQuery: A,
-      showHubEventsList: k
+      showHubEventsList: L
     },
     B = i.useRef(U);
   i.useEffect(() => {
@@ -152,7 +152,7 @@ let O = e => {
     G = () => {
       D(""), h.So(O.id)
     };
-  return L ? (0, r.jsx)(C.Z, {
+  return k ? (0, r.jsx)(C.Z, {
     searchQuery: M,
     setSearchQuery: D,
     mostRecentQuery: A,
@@ -184,7 +184,7 @@ let O = e => {
       h.Su(O.id, e)
     },
     directoryEntries: N,
-    categoryCounts: P,
+    categoryCounts: I,
     allEntriesCount: Z,
     isLoading: T
   })

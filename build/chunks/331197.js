@@ -31,9 +31,9 @@ function O(e) {
     whichPopoutIsOpen: E,
     setWhichPopoutIsOpen: S
   } = e, {
-    parentAnalyticsLocation: I
+    parentAnalyticsLocation: P
   } = (0, u.ZP)(), {
-    Component: P,
+    Component: I,
     play: Z,
     events: {
       onMouseEnter: T,
@@ -42,9 +42,9 @@ function O(e) {
   } = (0, o.j)(), A = t.getGuildId(), {
     mute: w,
     suppress: R
-  } = (0, _.Z)(t), M = (0, l.e7)([y.Z], () => y.Z.isDeaf()), D = w || R || M, L = (0, m.sR)({
+  } = (0, _.Z)(t), M = (0, l.e7)([y.Z], () => y.Z.isDeaf()), D = w || R || M, k = (0, m.sR)({
     isSoundboardButtonDisabled: D
-  }), [k, U] = (0, h.cv)(L), {
+  }), [L, U] = (0, h.cv)(k), {
     analyticsLocations: B
   } = (0, u.ZP)(), {
     isHovered: F,
@@ -81,7 +81,7 @@ function O(e) {
           guildId: A,
           sourceAnalyticsLocations: B
         }, t), i = i = {
-          onInteraction: (0, p.u)("SoundboardContextMenu", I)
+          onInteraction: (0, p.u)("SoundboardContextMenu", P)
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -97,7 +97,7 @@ function O(e) {
   }
 
   function W() {
-    (0, d.v)(I, d.d.SOUNDBOARD), E === v.D.SOUNDBOARD ? (null == S || S(void 0), V()) : (null != E ? (Z(), G()) : Z(), null == S || S(v.D.SOUNDBOARD))
+    (0, d.v)(P, d.d.SOUNDBOARD), E === v.D.SOUNDBOARD ? (null == S || S(void 0), V()) : (null != E ? (Z(), G()) : Z(), null == S || S(v.D.SOUNDBOARD))
   }
   let Y = i.useRef(null);
   return (0, r.jsx)(s.y, {
@@ -123,7 +123,7 @@ function O(e) {
             guildId: A,
             channel: t,
             onClose: n,
-            gridNotice: k === a.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, r.jsx)(g.o, {
+            gridNotice: L === a.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, r.jsx)(g.o, {
               onClose: n,
               markAsDismissed: U
             }),
@@ -137,7 +137,7 @@ function O(e) {
       isTrayButton: !0,
       themeable: O,
       label: w ? j.intl.string(j.t["Ox4/zc"]) : R ? j.intl.string(j.t["+YBKYG"]) : M ? j.intl.string(j.t.X1lQlp) : void 0,
-      iconComponent: P,
+      iconComponent: I,
       disabled: D,
       onContextMenu: z,
       onClick: W,

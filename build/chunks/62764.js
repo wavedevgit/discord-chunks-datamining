@@ -26,8 +26,8 @@ var r = n(255367),
   O = n(501517),
   E = n(982168),
   S = n(216572),
-  I = n(817608),
-  P = n(569471),
+  P = n(817608),
+  I = n(569471),
   Z = n(346479),
   T = n(592125),
   N = n(934415),
@@ -36,8 +36,8 @@ var r = n(255367),
   R = n(109590),
   M = n(228392),
   D = n(981631),
-  L = n(388032),
-  k = n(130883),
+  k = n(388032),
+  L = n(130883),
   U = n(184844),
   B = n(92254);
 
@@ -111,7 +111,7 @@ function G(e) {
       color: "currentColor",
       width: 16,
       height: 16
-    }), l ? L.intl.string(k.default["2Y4vkp"]) : L.intl.string(k.default.YIbR4u)]
+    }), l ? k.intl.string(L.default["2Y4vkp"]) : k.intl.string(L.default.YIbR4u)]
   }) : null
 }
 
@@ -124,9 +124,9 @@ function V(e) {
   } = e, {
     ref: j,
     width: O
-  } = (0, h.ZP)(), [E, k] = i.useState(3), [V, z] = i.useState(!n), [W, Y] = (0, f.Z)(!1, 2e3), q = (0, o.e7)([T.Z], () => T.Z.getChannel(t), [t]), {
+  } = (0, h.ZP)(), [E, L] = i.useState(3), [V, z] = i.useState(!n), [W, Y] = (0, f.Z)(!1, 2e3), q = (0, o.e7)([T.Z], () => T.Z.getChannel(t), [t]), {
     firstMessage: K
-  } = (0, R.cl)(q), X = (0, o.e7)([P.Z], () => P.Z.hasJoined(t)), {
+  } = (0, R.cl)(q), X = (0, o.e7)([I.Z], () => I.Z.hasJoined(t)), {
     disableReactionUpdates: Q,
     disableReactionCreates: J,
     isLurking: $,
@@ -152,7 +152,7 @@ function V(e) {
   });
   let [eo, es] = i.useState(!0);
   if (i.useEffect(() => {
-      null != O && (k(Math.floor((O - 280) / 58)), es(!1))
+      null != O && (L(Math.floor((O - 280) / 58)), es(!1))
     }, [O]), null == q || null == K) return null;
   let ec = K.reactions.length > 0,
     eu = () => {
@@ -183,7 +183,7 @@ function V(e) {
       ref: j,
       children: [en ? (0, r.jsx)("div", {
         className: U.reportedMessageActions,
-        children: (0, r.jsx)(I.Z, {
+        children: (0, r.jsx)(P.Z, {
           message: K,
           channel: q
         })
@@ -231,14 +231,14 @@ function V(e) {
             [U.hasNoReactions]: !ec
           }),
           isForumToolbar: !0,
-          children: !ec && L.intl.string(L.t.xpOyTE)
+          children: !ec && k.intl.string(k.t.xpOyTE)
         })]
       }), (0, r.jsxs)("div", {
         className: U.buttons,
         children: [en ? (0, r.jsx)(G, {
           channel: q
         }) : (0, r.jsx)(u.ua7, {
-          text: L.intl.string(L.t.F7oeDg),
+          text: k.intl.string(k.t.F7oeDg),
           children: e => (0, r.jsxs)(c.zx, H(F({}, e), {
             look: c.zx.Looks.BLANK,
             size: c.zx.Sizes.SMALL,
@@ -250,10 +250,10 @@ function V(e) {
             children: [(0, r.jsx)(eh, {
               size: "xs",
               color: "currentColor"
-            }), X ? L.intl.string(L.t["7OkUzs"]) : L.intl.string(L.t["3aOv+v"])]
+            }), X ? k.intl.string(k.t["7OkUzs"]) : k.intl.string(k.t["3aOv+v"])]
           }))
         }), (0, r.jsx)(u.ua7, {
-          text: L.intl.string(L.t.WqhZsr),
+          text: k.intl.string(k.t.WqhZsr),
           children: e => (0, r.jsxs)(c.zx, H(F({}, e), {
             look: c.zx.Looks.BLANK,
             size: c.zx.Sizes.SMALL,
@@ -270,10 +270,10 @@ function V(e) {
               color: "currentColor",
               width: 16,
               height: 16
-            }), W ? L.intl.string(L.t["t5VZ8/"]) : null]
+            }), W ? k.intl.string(k.t["t5VZ8/"]) : null]
           }))
         }), !n && (0, r.jsx)(u.ua7, {
-          text: L.intl.string(L.t.nFP4oa),
+          text: k.intl.string(k.t.nFP4oa),
           children: e => (0, r.jsx)(c.zx, H(F({}, e), {
             look: c.zx.Looks.BLANK,
             size: c.zx.Sizes.SMALL,

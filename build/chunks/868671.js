@@ -34,14 +34,14 @@ function v(e) {
     guildId: j
   } = e, [O, E] = r.useState(!1), {
     requestId: S,
-    entries: I,
-    impressionCappedEntryIds: P,
+    entries: P,
+    impressionCappedEntryIds: I,
     hasLeaderboardEntry: Z
-  } = (0, m.Z)(v), T = (0, i.e7)([p.Z], () => p.Z.hidden), N = (0, i.e7)([c.Z], () => c.Z.isFocused()), A = (0, i.e7)([o.Z], () => o.Z.getChannel(v)), w = (0, i.e7)([s.Z], () => s.Z.getGuild(j), [j]), R = (0, h.E)(w), M = null != R && R && (null == A ? void 0 : A.isForumChannel()) === !1, [D, L, k, U] = r.useMemo(() => {
+  } = (0, m.Z)(v), T = (0, i.e7)([p.Z], () => p.Z.hidden), N = (0, i.e7)([c.Z], () => c.Z.isFocused()), A = (0, i.e7)([o.Z], () => o.Z.getChannel(v)), w = (0, i.e7)([s.Z], () => s.Z.getGuild(j), [j]), R = (0, h.E)(w), M = null != R && R && (null == A ? void 0 : A.isForumChannel()) === !1, [D, k, L, U] = r.useMemo(() => {
     let e;
-    if (null == I || 0 === I.length || null == S || !M) return [t, n, x];
-    let r = O ? I.length : Z ? 4 : 3,
-      i = I.slice(0, r);
+    if (null == P || 0 === P.length || null == S || !M) return [t, n, x];
+    let r = O ? P.length : Z ? 4 : 3,
+      i = P.slice(0, r);
     e = T ? [{
       type: a.so.HIDDEN_CONTENT_INVENTORY
     }] : i.map(e => ({
@@ -67,15 +67,15 @@ function v(e) {
         })
       },
       expanded: O,
-      expandedCount: I.length,
+      expandedCount: P.length,
       feedHeight: e.map(g.iZ).reduce((e, t) => e + t, 0)
     };
     return [
       [l, ...t],
       [...n, l, ...e], Math.random(), e
     ]
-  }, [v, I, O, t, j, S, n, x, T, M, Z]), B = r.useRef(0), F = r.useRef(I), H = r.useRef(void 0), G = r.useRef({
-    impressionCappedEntryIds: P
+  }, [v, P, O, t, j, S, n, x, T, M, Z]), B = r.useRef(0), F = r.useRef(P), H = r.useRef(void 0), G = r.useRef({
+    impressionCappedEntryIds: I
   }), V = r.useCallback(e => {
     var t;
     let n = Math.floor(e / g.YN),
@@ -83,12 +83,12 @@ function v(e) {
     B.current = Math.max(B.current, r)
   }, [U]);
   return r.useEffect(() => {
-    F.current = I
-  }, [I]), r.useEffect(() => {
+    F.current = P
+  }, [P]), r.useEffect(() => {
     G.current = {
-      impressionCappedEntryIds: P
+      impressionCappedEntryIds: I
     }
-  }, [P]), r.useEffect(() => (B.current = 0, H.current = Date.now(), () => {
+  }, [I]), r.useEffect(() => (B.current = 0, H.current = Date.now(), () => {
     var e, t;
     if (null == S || null == H.current || Date.now() - H.current < 3e3) return;
     let n = null != (t = null == (e = F.current) ? void 0 : e.map(e => e.id)) ? t : [],
@@ -108,8 +108,8 @@ function v(e) {
     }))
   }), [S, v, j, T, N, M]), {
     groups: D,
-    rows: L,
-    version: k,
+    rows: k,
+    version: L,
     updateMaxRowSeen: V
   }
 }

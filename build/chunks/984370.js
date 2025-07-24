@@ -6,8 +6,8 @@ r.d(t, {
 var n = r(255367);
 r(73800);
 var l = r(873546),
-  i = r(442837),
-  a = r(475179),
+  a = r(442837),
+  i = r(475179),
   c = r(100527),
   o = r(906732),
   s = r(358221),
@@ -81,8 +81,8 @@ function S(e) {
     role: x,
     hideSearch: C,
     showDivider: R,
-    disableDoubleClick: k
-  } = e, T = null == c || (0, P.AB)(c) ? null : c, A = (0, i.e7)([O.Z], () => O.Z.isInChannel(T) || !1), M = (0, i.e7)([s.Z], () => null != T && s.Z.getParticipantsListOpen(T)), {
+    disableDoubleClick: T
+  } = e, k = null == c || (0, P.AB)(c) ? null : c, A = (0, a.e7)([O.Z], () => O.Z.isInChannel(k) || !1), M = (0, a.e7)([s.Z], () => null != k && s.Z.getParticipantsListOpen(k)), {
     enabled: _,
     inInbox: L
   } = b.Z.useExperiment({
@@ -101,17 +101,17 @@ function S(e) {
       return l.tq ? Z : (0, n.jsxs)(n.Fragment, {
         children: [S, e ? (0, n.jsx)(p.Z, {
           className: h.search
-        }, null != y ? y : c) : null, R && (0, n.jsx)(m.ZP.Divider, {}), _ && !L ? (0, n.jsx)(f.Z, {}) : null, G && A && null != T && !M && o === j.d4z.GROUP_DM && (0, n.jsxs)("div", {
+        }, null != y ? y : c) : null, R && (0, n.jsx)(m.ZP.Divider, {}), _ && !L ? (0, n.jsx)(f.Z, {}) : null, G && A && null != k && !M && o === j.d4z.GROUP_DM && (0, n.jsxs)("div", {
           className: h.controlButtonWrapper,
           children: [(0, n.jsx)(m.ZP.Divider, {}), (0, n.jsx)(d.Z, {
-            onClick: () => a.Z.toggleParticipantsList(T, !M)
+            onClick: () => i.Z.toggleParticipantsList(k, !M)
           })]
         })]
       })
     }(),
     transparent: v,
     showToolbar: w,
-    onDoubleClick: () => E(k),
+    onDoubleClick: () => E(T),
     "aria-label": I,
     "aria-labelledby": D,
     role: x,
@@ -125,16 +125,16 @@ function Z(e) {
     children: t,
     className: r,
     "aria-label": l,
-    "aria-labelledby": i,
-    role: a,
+    "aria-labelledby": a,
+    role: i,
     disableDoubleClick: c
   } = e;
   return (0, n.jsx)(m.ZP, {
     className: r,
     onDoubleClick: () => E(c),
     "aria-label": l,
-    "aria-labelledby": i,
-    role: a,
+    "aria-labelledby": a,
+    role: i,
     children: t
   })
 }
@@ -147,13 +147,13 @@ function I(e) {
     var r, n, l = function(e, t) {
       if (null == e) return {};
       var r, n, l = {},
-        i = Object.keys(e);
-      for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (l[r] = e[r]);
+        a = Object.keys(e);
+      for (n = 0; n < a.length; n++) r = a[n], t.indexOf(r) >= 0 || (l[r] = e[r]);
       return l
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r])
+      var a = Object.getOwnPropertySymbols(e);
+      for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r])
     }
     return l
   }(e, ["isAuthenticated"]);

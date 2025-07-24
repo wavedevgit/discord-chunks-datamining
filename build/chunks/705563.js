@@ -40,8 +40,8 @@ function _(e) {
     }
   }), O = (0, i.e7)([s.Z], () => null != v ? s.Z.getMemberCount(v) : 0), E = null != j && (null != O ? O : 0) >= j, {
     approveRequest: S,
-    rejectRequest: I,
-    submitting: P
+    rejectRequest: P,
+    submitting: I
   } = (0, f.s)(null == C ? void 0 : C.guildId, null == C ? void 0 : C.userId, null == C ? void 0 : C.joinRequestId);
   return null != C && C.applicationStatus === h.wB.SUBMITTED && x ? (0, r.jsxs)("div", {
     className: b.buttons,
@@ -72,7 +72,7 @@ function _(e) {
           size: "sm",
           text: g.intl.string(g.t.BzjDQE)
         }, e), n = n = {
-          loading: P,
+          loading: I,
           onClick: S,
           disabled: E
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -90,8 +90,8 @@ function _(e) {
       variant: "critical-primary",
       size: "sm",
       text: g.intl.string(g.t.hDtbs7),
-      onClick: I,
-      disabled: P || C.applicationStatus !== h.wB.SUBMITTED
+      onClick: P,
+      disabled: I || C.applicationStatus !== h.wB.SUBMITTED
     }), n && (0, r.jsx)(l.zxk, {
       onClick: () => {
         (0, o.openUserProfileModal)({

@@ -113,35 +113,35 @@ let E = function(e) {
     setHasPendingChanges: a,
     closeOrShowDiscardChangesAlert: h,
     location: E
-  } = e, S = (0, m.Dt)(), I = (0, o.e7)([g.Z], () => g.Z.getChannel(t)), P = null == I ? void 0 : I.name, Z = (0, f.cO)(I), [T, N] = i.useState(null != P ? P : ""), [A, w] = i.useState(void 0), R = void 0 !== A, {
+  } = e, S = (0, m.Dt)(), P = (0, o.e7)([g.Z], () => g.Z.getChannel(t)), I = null == P ? void 0 : P.name, Z = (0, f.cO)(P), [T, N] = i.useState(null != I ? I : ""), [A, w] = i.useState(void 0), R = void 0 !== A, {
     analyticsLocations: M
   } = (0, p.ZP)(E, d.Z.GROUP_DM_EDIT_MODAL), D = {
     channel_id: t,
-    channel_type: null == I ? void 0 : I.type,
+    channel_type: null == P ? void 0 : P.type,
     location: E,
     location_stack: M,
-    old_name_set: "" !== P,
-    old_icon_set: (null == I ? void 0 : I.icon) != null
+    old_name_set: "" !== I,
+    old_icon_set: (null == P ? void 0 : P.icon) != null
   };
   return (i.useEffect(() => {
-    a(T !== P || R)
-  }, [T, P, R, a]), (0, u.ZP)(() => (b.default.track(y.rMx.GDM_EDIT_INTERACTED, j(v({}, D), {
+    a(T !== I || R)
+  }, [T, I, R, a]), (0, u.ZP)(() => (b.default.track(y.rMx.GDM_EDIT_INTERACTED, j(v({}, D), {
     action: "opened"
   })), () => {
     b.default.track(y.rMx.GDM_EDIT_INTERACTED, j(v({}, D), {
       action: "dismissed"
     }))
-  })), null == I) ? null : (0, r.jsx)(p.Gt, {
+  })), null == P) ? null : (0, r.jsx)(p.Gt, {
     value: M,
     children: (0, r.jsx)("form", {
       onSubmit: e => {
         e.preventDefault();
-        let r = T !== P,
+        let r = T !== I,
           i = void 0 !== A;
         if (b.default.track(y.rMx.GDM_EDIT_INTERACTED, j(v({}, D), {
             action: "saved",
             new_name_set: "" !== T,
-            new_icon_set: (i ? A : null == I ? void 0 : I.icon) != null,
+            new_icon_set: (i ? A : null == P ? void 0 : P.icon) != null,
             name_changed: r,
             icon_changed: i
           })), r || i) {
@@ -170,7 +170,7 @@ let E = function(e) {
         }), (0, r.jsxs)(s.hzk, {
           className: x.modalContent,
           children: [(0, r.jsx)(O, {
-            channel: I,
+            channel: P,
             previewIcon: A,
             onIconChange: e => w(e.imageUri),
             onIconRemove: () => w(null),
@@ -194,7 +194,7 @@ let E = function(e) {
               variant: "primary",
               text: C.intl.string(C.t.R3BPHx),
               type: "submit",
-              disabled: T === P && !R
+              disabled: T === I && !R
             })]
           })
         })]

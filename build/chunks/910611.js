@@ -1,7 +1,7 @@
 /** Chunk was on 60173 **/
 n.d(t, {
   TS: () => H,
-  ud: () => k,
+  ud: () => L,
   v0: () => B
 }), n(388685);
 var r = n(255367),
@@ -28,8 +28,8 @@ var r = n(255367),
   O = n(63063),
   E = n(374386),
   S = n(946734),
-  I = n(99843),
-  P = n(372564),
+  P = n(99843),
+  I = n(372564),
   Z = n(984370),
   T = n(217314),
   N = n(981631),
@@ -69,7 +69,7 @@ function D(e, t) {
   }), e
 }
 
-function L(e) {
+function k(e) {
   var t;
   let {
     channel: n,
@@ -126,7 +126,7 @@ function L(e) {
   }, a)
 }
 
-function k(e) {
+function L(e) {
   let {
     channel: t,
     channelName: n,
@@ -194,7 +194,7 @@ function k(e) {
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(c.nn4, {
           children: w.intl.string(w.t["e5y+go"])
-        }), (0, r.jsx)(I.j, {
+        }), (0, r.jsx)(P.j, {
           channel: t
         }, "channel-".concat(t.id))]
       });
@@ -202,7 +202,7 @@ function k(e) {
     case N.d4z.GUILD_TEXT:
     case N.d4z.GUILD_FORUM:
     case N.d4z.GUILD_MEDIA:
-      return null != t.linkedLobby ? (0, r.jsxs)(L, {
+      return null != t.linkedLobby ? (0, r.jsxs)(k, {
         channel: t,
         children: [F(b, t.type === N.d4z.GUILD_ANNOUNCEMENT ? w.intl.string(w.t.l1dkSE) : w.intl.string(w.t.Pnajj4)), (0, r.jsx)(Z.Z.Title, {
           level: y,
@@ -320,7 +320,7 @@ function B(e, t) {
     case N.d4z.GUILD_VOICE:
     case N.d4z.GUILD_STAGE_VOICE:
     case N.d4z.GROUP_DM:
-      return null != t ? (0, r.jsx)(P.Z, {
+      return null != t ? (0, r.jsx)(I.Z, {
         channel: e,
         guild: t
       }, e.id) : null;

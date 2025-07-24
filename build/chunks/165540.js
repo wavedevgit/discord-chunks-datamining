@@ -1,6 +1,6 @@
 /** Chunk was on 60173 **/
 n.d(t, {
-  Z: () => I
+  Z: () => P
 });
 var r = n(255367),
   i = n(73800),
@@ -45,7 +45,7 @@ let S = i.forwardRef(function(e, t) {
           dismissAction: j.L.TAKE_ACTION
         }), d.__(h._b.TEXT, f), u.ux()), x()
       }, [b, f, x]),
-      I = (0, r.jsx)(y, {
+      P = (0, r.jsx)(y, {
         size: "refresh_sm",
         color: "currentColor"
       });
@@ -90,7 +90,7 @@ let S = i.forwardRef(function(e, t) {
         },
         innerClassName: E.buttonContents
       }, C), l = l = {
-        children: I
+        children: P
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -103,7 +103,7 @@ let S = i.forwardRef(function(e, t) {
       }), n))
     })
   }),
-  I = i.memo(function(e) {
+  P = i.memo(function(e) {
     let {
       channel: t,
       type: n,

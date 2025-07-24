@@ -26,8 +26,8 @@ var r = n(255367),
   O = n(664342),
   E = n(124368),
   S = n(981631),
-  I = n(388032),
-  P = n(591837);
+  P = n(388032),
+  I = n(591837);
 
 function Z(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -77,10 +77,10 @@ function N(e) {
       source: E.on.VOICE_AUTO_OPEN
     }))
   }, [D, M]);
-  let L = i.useRef(!1);
+  let k = i.useRef(!1);
   if (i.useEffect(() => {
-      if (null == A || L.current) return;
-      L.current = !0;
+      if (null == A || k.current) return;
+      k.current = !0;
       let e = (0, p.K)(C.Z.getChannel(A.id), !0);
       (0, d.yw)(S.rMx.CHANNEL_OPENED, T(Z({}, e, (0, d.$H)(A.id)), {
         channel_view: N
@@ -88,7 +88,7 @@ function N(e) {
         channelId: A.id
       })
     }, [A, N]), null == A || null == w) return null;
-  let k = (0, r.jsx)(O.Z, {
+  let L = (0, r.jsx)(O.Z, {
     channel: A,
     baseChannelId: l
   });
@@ -97,8 +97,8 @@ function N(e) {
       channel: A,
       draftType: x.d.ChannelMessage
     }), (0, r.jsx)(b.ZP, {
-      toolbar: k,
-      "aria-label": I.intl.string(I.t.Pwe8tL),
+      toolbar: L,
+      "aria-label": P.intl.string(P.t.Pwe8tL),
       children: (0, _.ud)({
         channel: A,
         channelName: R,
@@ -119,7 +119,7 @@ function N(e) {
         }
       })
     }), (0, r.jsx)("div", {
-      className: P.chat,
+      className: I.chat,
       children: (0, r.jsx)(m.Z, {
         channel: A,
         guild: w,

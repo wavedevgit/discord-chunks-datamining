@@ -135,21 +135,21 @@ let j = i.memo(function(e) {
         pointerEvents: "none",
         config: o.config.stiff
       }),
-      I = i.useMemo(() => null != x ? x : {
+      P = i.useMemo(() => null != x ? x : {
         value: 0,
         multiplier: 1
       }, [x]),
-      P = i.useRef(I);
+      I = i.useRef(P);
     i.useEffect(() => {
-      (I.multiplier > 1 || I.value > 0) && (P.current = I)
-    }, [I]);
+      (P.multiplier > 1 || P.value > 0) && (I.current = P)
+    }, [P]);
     let {
       multiplier: Z,
       value: T
     } = i.useMemo(() => ({
-      value: E ? I.value : P.current.value,
-      multiplier: E ? I.multiplier : P.current.multiplier
-    }), [E, I, P]);
+      value: E ? P.value : I.current.value,
+      multiplier: E ? P.multiplier : I.current.multiplier
+    }), [E, P, I]);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(j, {
         channelId: t,

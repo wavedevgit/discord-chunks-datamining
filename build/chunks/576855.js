@@ -2,8 +2,8 @@
 r.d(t, {
   Z: () => d
 });
-var n, l, i = r(255367),
-  a = r(73800),
+var n, l, a = r(255367),
+  i = r(73800),
   c = r(120356),
   o = r.n(c),
   s = r(481060),
@@ -13,7 +13,7 @@ let f = {
   BLOCK: b.block,
   INLINE: b.inline
 };
-class p extends(l = a.PureComponent) {
+class p extends(l = i.PureComponent) {
   render() {
     let {
       children: e,
@@ -22,16 +22,16 @@ class p extends(l = a.PureComponent) {
       type: n = f.BLOCK,
       style: l
     } = this.props;
-    return (0, i.jsxs)("div", {
+    return (0, a.jsxs)("div", {
       className: o()(t, n),
       style: l,
-      children: [(0, i.jsxs)(s.Text, {
+      children: [(0, a.jsxs)(s.Text, {
         variant: "text-sm/bold",
         tag: "div",
         color: "text-feedback-positive",
         className: b.pro,
         children: [u.intl.string(u.t["8tvIiI"]), ":"]
-      }), (0, i.jsx)(s.Text, {
+      }), (0, a.jsx)(s.Text, {
         className: o()(b.tip, r),
         variant: "text-sm/normal",
         children: e

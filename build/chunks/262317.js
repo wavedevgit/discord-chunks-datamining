@@ -1,8 +1,8 @@
 /** Chunk was on 60173 **/
 n.d(t, {
-  XX: () => L,
+  XX: () => k,
   ZP: () => U,
-  ul: () => k
+  ul: () => L
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -28,8 +28,8 @@ var r = n(255367),
   O = n(670188),
   E = n(597998),
   S = n(314897),
-  I = n(430824),
-  P = n(496675),
+  P = n(430824),
+  I = n(496675),
   Z = n(594174),
   T = n(979651),
   N = n(927923),
@@ -69,7 +69,7 @@ function D(e, t) {
   }), e
 }
 
-function L(e) {
+function k(e) {
   let {
     numUsers: t
   } = e;
@@ -83,7 +83,7 @@ function L(e) {
   })
 }
 
-function k(e) {
+function L(e) {
   let {
     numAudience: t,
     collapsed: n
@@ -113,8 +113,8 @@ let U = (0, h.$)(function(e) {
   let {
     collapsed: l,
     user: h,
-    channel: L,
-    mute: k,
+    channel: k,
+    mute: L,
     localMute: U,
     localVideoDisabled: B,
     deaf: F,
@@ -155,40 +155,40 @@ let U = (0, h.$)(function(e) {
     e && el ? ev.delay() : !e && ev.isDelayed() && ev.cancel()
   }, eO = e => {
     e && (ev.cancel(), ey(!1))
-  }, eE = () => J && (0, C.p9)(L, T.Z, I.Z, P.Z, b.Z)[0], eS = () => {
+  }, eE = () => J && (0, C.p9)(k, T.Z, P.Z, I.Z, b.Z)[0], eS = () => {
     if (!eE()) return;
     let e = {
       streamType: A.lo.GUILD,
       ownerId: h.id,
-      channelId: L.id,
-      guildId: L.guild_id
+      channelId: k.id,
+      guildId: k.guild_id
     };
-    S.default.getId() !== h.id && d.default.selectVoiceChannel(L.id), $ ? ((0, x.Z)(e), c.Z.selectParticipant(e.channelId, (0, y.V9)(e))) : (0, p.iV)(e), null == er || er(h.id)
-  }, eI = e => {
+    S.default.getId() !== h.id && d.default.selectVoiceChannel(k.id), $ ? ((0, x.Z)(e), c.Z.selectParticipant(e.channelId, (0, y.V9)(e))) : (0, p.iV)(e), null == er || er(h.id)
+  }, eP = e => {
     (0, u.jW)(e, async () => {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("74800")]).then(n.bind(n, 757387));
       return t => (0, r.jsx)(e, D(M({}, t), {
         user: h,
-        guildId: L.guild_id,
-        channel: L,
+        guildId: k.guild_id,
+        channel: k,
         showMediaItems: !0,
-        showStageChannelItems: L.isGuildStageVoice(),
+        showStageChannelItems: k.isGuildStageVoice(),
         onInteraction: (0, g.u)("GuildChannelUserContextMenu", m.Z.VOICE_USER, {
           targetUserId: h.id
         })
       }))
     })
-  }, eP = () => (0, r.jsx)(j.Z, {
+  }, eI = () => (0, r.jsx)(j.Z, {
     previewIsOpen: el,
-    channel: L,
+    channel: k,
     hangStatusActivity: eh,
     userId: h.id,
     targetElementRef: em
-  }), eZ = () => (0, f.dl)() && (0, f.zd)(L.id) ? null : (0, r.jsx)(v.Z, {
+  }), eZ = () => (0, f.dl)() && (0, f.zd)(k.id) ? null : (0, r.jsx)(v.Z, {
     user: h,
-    channel: L,
+    channel: k,
     onWatch: eS,
     previewIsOpen: el,
     location: eu
@@ -198,7 +198,7 @@ let U = (0, h.$)(function(e) {
         user: h,
         speaking: q,
         disconnected: K,
-        mute: k,
+        mute: L,
         localMute: U,
         localVideoDisabled: B,
         isStreaming: J,
@@ -223,11 +223,11 @@ let U = (0, h.$)(function(e) {
         selected: eg,
         onClick: t ? void 0 : eC,
         onDoubleClick: eS,
-        onContextMenu: eI,
-        guildId: L.guild_id,
+        onContextMenu: eP,
+        guildId: k.guild_id,
         isSelf: ed,
         application: ep,
-        channelId: L.id,
+        channelId: k.id,
         hangStatusActivity: eh,
         showHangStatus: ef
       };
@@ -263,7 +263,7 @@ let U = (0, h.$)(function(e) {
     return (0, r.jsx)(s.yRy, {
       targetElementRef: em,
       position: "right",
-      renderPopout: ef && e_ || !J ? eP : eZ,
+      renderPopout: ef && e_ || !J ? eI : eZ,
       shouldShow: ei && !eg,
       onRequestClose: ex,
       spacing: 0,
@@ -277,7 +277,7 @@ let U = (0, h.$)(function(e) {
     })
   }, eN = (0, r.jsx)("div", {
     className: R.draggable,
-    "data-dnd-name": L.name,
+    "data-dnd-name": k.name,
     onMouseEnter: es ? void 0 : () => {
       (J || ef) && !eg && (null == en || en(h.id))
     },
@@ -286,8 +286,8 @@ let U = (0, h.$)(function(e) {
       clickTrap: (null == h ? void 0 : h.id) === (null == (t = Z.default.getCurrentUser()) ? void 0 : t.id) && eg,
       targetElementRef: em,
       user: h,
-      guildId: L.guild_id,
-      channelId: L.id,
+      guildId: k.guild_id,
+      channelId: k.id,
       newAnalyticsLocations: [m.Z.VOICE_USER],
       shouldShow: eg,
       onRequestClose: () => eb(!1),
