@@ -1,6 +1,6 @@
 /**
   Module ID: 53071
-  Original File Name: 57ebbbcfa90f1ffc
+  Original File Name: 6bb1925f60b04bb6
 **/
 .container__4216d {
     align-items: center;
@@ -522,7 +522,7 @@
     color: var(--interactive-normal)
 }
 
-.description_b08511,.label_b08511,.singleValueLabel_b08511,.tag_b08511 {
+.label_b08511,.singleValueLabel_b08511,.tag_b08511 {
     display: block;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1264,4 +1264,4 @@
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=57ebbbcfa90f1ffc.css.map*/
+/*# sourceMappingURL=6bb1925f60b04bb6.css.map*/
