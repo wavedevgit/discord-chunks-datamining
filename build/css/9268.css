@@ -1,6 +1,6 @@
 /**
   Module ID: 9268
-  Original File Name: 2ab7fcb43fec0f02
+  Original File Name: 1384f690ed5502fc
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -9818,24 +9818,37 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
 
 .container__3849c {
     align-items: center;
+    display: flex;
     justify-content: center;
+    position: relative;
     text-align: center
 }
 
-.container__3849c,.contentContainer__3849c {
-    display: flex;
-    position: relative
-}
-
 .contentContainer__3849c {
-    flex-direction: column;
-    gap: var(--space-24);
     padding-top: var(--custom-premium-marketing-hero-heading-padding-top);
+    position: relative;
     z-index: 1
 }
 
+.body__3849c,.contentContainer__3849c {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-24)
+}
+
+.body__3849c {
+    margin: 0 80px
+}
+
 .marketingPageTextContainer__3849c {
-    max-width: 800px
+    max-width: 800px;
+    min-width: -webkit-min-content;
+    min-width: -moz-min-content;
+    min-width: min-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content
 }
 
 @container premium-marketing-home-container (max-width: 960px) {
@@ -9847,6 +9860,16 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
 @container premium-marketing-home-container (max-width: 720px) {
     .marketingPageTextContainer__3849c {
         max-width: 500px
+    }
+}
+
+.descriptionContainer__3849c {
+    max-width: 400px
+}
+
+@container premium-marketing-home-container (max-width: 720px) {
+    .descriptionContainer__3849c {
+        max-width: 250px
     }
 }
 
@@ -19839,4 +19862,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=2ab7fcb43fec0f02.css.map*/
+/*# sourceMappingURL=1384f690ed5502fc.css.map*/

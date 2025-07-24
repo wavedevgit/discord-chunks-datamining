@@ -65,38 +65,44 @@ let N = r.memo(r.forwardRef((e, t) => {
             children: (0, i.jsx)(O.Z, {
               children: S.intl.string(S.t["EW+VIS"])
             })
-          }), D && (0, i.jsx)("div", {
-            className: T.referrerAttributionContainer,
-            children: (0, i.jsx)(j.Z, {
-              referrer: R,
-              enablePremiumBrandRefresh: !0
-            })
-          }), B && (0, i.jsx)("div", {
-            className: T.affinitiesContainer,
-            children: (0, i.jsx)(x.Z, {
-              textColor: "text-primary",
-              smallerText: !1,
-              isApplicationHome: !0,
-              enablePremiumBrandRefresh: !0
-            })
           }), (0, i.jsxs)("div", {
-            className: I ? T.singleButtonContainer : T.twoButtonContainer,
-            children: [(0, i.jsx)(f.Z, {
-              variant: "expressive",
-              size: "md",
-              fullWidth: I,
-              buttonTextOverride: A,
-              subscriptionTier: P
-            }), !I && (0, i.jsx)(h.Z, {
-              variant: "secondary",
-              size: "md"
+            className: T.body,
+            children: [D && (0, i.jsx)("div", {
+              className: T.referrerAttributionContainer,
+              children: (0, i.jsx)(j.Z, {
+                referrer: R,
+                enablePremiumBrandRefresh: !0
+              })
+            }), B && (0, i.jsx)("div", {
+              className: T.affinitiesContainer,
+              children: (0, i.jsx)(x.Z, {
+                textColor: "text-primary",
+                smallerText: !1,
+                isApplicationHome: !0,
+                enablePremiumBrandRefresh: !0
+              })
+            }), (0, i.jsxs)("div", {
+              className: I ? T.singleButtonContainer : T.twoButtonContainer,
+              children: [(0, i.jsx)(f.Z, {
+                variant: "expressive",
+                size: "md",
+                fullWidth: I,
+                buttonTextOverride: A,
+                subscriptionTier: P
+              }), !I && (0, i.jsx)(h.Z, {
+                variant: "secondary",
+                size: "md"
+              })]
+            }), (0, i.jsx)("div", {
+              className: T.descriptionContainer,
+              children: (0, i.jsx)(o.Text, {
+                color: "text-tertiary",
+                variant: "text-xs/medium",
+                children: S.intl.format(S.t.kt9wxs, {
+                  cheapestMonthlyPrice: y
+                })
+              })
             })]
-          }), (0, i.jsx)(o.Text, {
-            color: "text-tertiary",
-            variant: "text-xs/medium",
-            children: S.intl.format(S.t.kt9wxs, {
-              cheapestMonthlyPrice: y
-            })
           })]
         })
       })
