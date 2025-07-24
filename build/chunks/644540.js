@@ -1,10 +1,8 @@
 /** Chunk was on 31649 **/
 n.d(e, {
-  P: () => i
+  P: () => a
 });
-var l = n(818083),
-  a = n(355820);
-let r = (0, l.B)({
+let l = (0, n(818083).B)({
   kind: "user",
   id: "2025-04_custom_status_clear_after_times",
   label: "Custom Status Clear After Times Experiment",
@@ -20,20 +18,16 @@ let r = (0, l.B)({
   }]
 });
 
-function i(t) {
+function a(t) {
   let {
     location: e,
     autoTrackExposure: n = !0
-  } = t, l = (0, a.P)({
-    location: e,
-    autoTrackExposure: n
-  }), {
-    enabled: i
-  } = r.useExperiment({
+  } = t, {
+    enabled: a
+  } = l.useExperiment({
     location: e
   }, {
-    autoTrackExposure: n,
-    disable: l
+    autoTrackExposure: n
   });
-  return i
+  return a
 }

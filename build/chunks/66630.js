@@ -14,14 +14,14 @@ var l = n(255367),
   m = n(100527),
   f = n(906732),
   h = n(318766),
-  b = n(907040),
-  p = n(594174),
+  p = n(907040),
+  b = n(594174),
   S = n(626135),
   j = n(644540),
   g = n(359588),
   O = n(368326),
-  v = n(720449),
-  x = n(684269),
+  x = n(720449),
+  v = n(684269),
   C = n(397416),
   _ = n(745579),
   T = n(74340),
@@ -54,10 +54,10 @@ function k(t) {
     location: "CustomStatusModalWithPreview"
   }), {
     analyticsLocations: z
-  } = (0, f.ZP)(M, m.Z.CUSTOM_STATUS_MODAL), V = (0, o.e7)([p.default], () => {
+  } = (0, f.ZP)(M, m.Z.CUSTOM_STATUS_MODAL), V = (0, o.e7)([b.default], () => {
     var t;
-    return null != (t = p.default.getCurrentUser()) ? t : null
-  }), G = (0, y.a)(), [K, q] = a.useState(null != (e = null == G ? void 0 : G.state) ? e : ""), [X, Q] = a.useState(null != (n = null == G ? void 0 : G.emoji) ? n : null), [$, J] = a.useState((0, x.Z)()), tt = a.useRef(null), te = a.useRef(null), tn = a.useRef(null), [tl, ta] = a.useState(null != G && W ? (0, T.Z)(G) : null), [tr, ti] = a.useState(F), [to, ts] = a.useState(() => Y && null != U ? U.label() : A.intl.string(A.t["xod36+"])), [tu, tc] = a.useState(to), {
+    return null != (t = b.default.getCurrentUser()) ? t : null
+  }), G = (0, y.a)(), [K, q] = a.useState(null != (e = null == G ? void 0 : G.state) ? e : ""), [X, Q] = a.useState(null != (n = null == G ? void 0 : G.emoji) ? n : null), [$, J] = a.useState((0, v.Z)()), tt = a.useRef(null), te = a.useRef(null), tn = a.useRef(null), [tl, ta] = a.useState(null != G && W ? (0, T.Z)(G) : null), [tr, ti] = a.useState(F), [to, ts] = a.useState(() => Y && null != U ? U.label() : A.intl.string(A.t["xod36+"])), [tu, tc] = a.useState(to), {
     ref: td,
     width: tm
   } = (0, c.ZP)(to);
@@ -94,7 +94,7 @@ function k(t) {
       })
     },
     th = () => {
-      $ !== L && ((0, v.Z)({
+      $ !== L && ((0, x.Z)({
         text: K,
         emojiInfo: X,
         clearAfter: $,
@@ -104,13 +104,13 @@ function k(t) {
         analyticsContext: B
       }), k())
     },
-    tb = () => null == X ? null : () => (0, l.jsx)(u.Z, {
+    tp = () => null == X ? null : () => (0, l.jsx)(u.Z, {
       className: R.emoji,
       emojiId: X.id,
       emojiName: X.name,
       animated: !!X.animated
     }),
-    tp = Y ? A.intl.string(A.t.rp0aho) : A.intl.string(A.t.UcdRn5),
+    tb = Y ? A.intl.string(A.t.rp0aho) : A.intl.string(A.t.UcdRn5),
     tS = "custom-status-placeholder-text";
   return (0, l.jsxs)(s.Y0X, {
     transitionState: r,
@@ -144,7 +144,7 @@ function k(t) {
       }), (0, l.jsxs)(s.hjN, {
         className: R.formGroup,
         titleClassName: R.customStatusInputTitle,
-        title: tp,
+        title: tb,
         children: [W && (0, l.jsx)("div", {
           className: R.labelSelectorContainer,
           children: (0, l.jsx)(s.DY3, {
@@ -182,7 +182,7 @@ function k(t) {
                 let {
                   closePopout: e
                 } = t;
-                return (0, l.jsx)(b.Z, {
+                return (0, l.jsx)(p.Z, {
                   closePopout: e,
                   onSelectEmoji: t => {
                     let {
@@ -225,7 +225,7 @@ function k(t) {
                   active: r,
                   className: R.emojiButton,
                   tabIndex: 0,
-                  renderButtonContents: tb()
+                  renderButtonContents: tp()
                 }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(a)) : (function(t, e) {
                   var n = Object.keys(t);
                   if (Object.getOwnPropertySymbols) {
