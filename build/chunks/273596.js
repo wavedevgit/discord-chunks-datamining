@@ -56,12 +56,12 @@ function j(e) {
     loading: h,
     searchResultsQuery: I,
     loadMore: j,
-    searchCategoryId: x
+    searchCategoryId: A
   } = (0, b.f)({
     loadId: t
-  }), A = 0 === s.length && !h, Z = i.useContext(d.AnalyticsContext), [w, L] = i.useState((0, m.PM)()), [R, D] = i.useState(!0), k = i.useRef(R), [M, U] = i.useState(3), G = i.useRef(M), B = i.useRef(null), V = i.useCallback(e => {
-    if (null != e && !A && !h) 336 * (s.length / M) <= e.height && j()
-  }, [A, h, s.length, M, j]), H = i.useCallback(e => {
+  }), x = 0 === s.length && !h, Z = i.useContext(d.AnalyticsContext), [w, L] = i.useState((0, m.PM)()), [R, D] = i.useState(!0), k = i.useRef(R), [M, U] = i.useState(3), G = i.useRef(M), B = i.useRef(null), V = i.useCallback(e => {
+    if (null != e && !x && !h) 336 * (s.length / M) <= e.height && j()
+  }, [x, h, s.length, M, j]), H = i.useCallback(e => {
     let t = e.contentRect;
     if (null == t) return;
     let n = t.width;
@@ -79,10 +79,10 @@ function j(e) {
       query: I,
       guildResults: s.map(f.Z.getGuild).filter(p.lm),
       analyticsContext: Z,
-      categoryId: x
+      categoryId: A
     })
-  }, [Z, s, t, x, w, I]);
-  let z = i.useCallback(e => n(e, x), [n, x]),
+  }, [Z, s, t, A, w, I]);
+  let z = i.useCallback(e => n(e, A), [n, A]),
     W = i.useMemo(() => h ? [s.length, 0] : [s.length], [s.length, h]),
     Y = i.useCallback((e, n, i) => {
       switch (e) {
@@ -102,7 +102,7 @@ function j(e) {
               }), (0, r.jsx)(y.Z, {
                 loadId: t
               })]
-            }), A && (0, r.jsx)(E.Z, {
+            }), x && (0, r.jsx)(E.Z, {
               loadId: t
             })]
           }, i);
@@ -113,18 +113,18 @@ function j(e) {
             })
           }, i)
       }
-    }, [A, R, t]),
+    }, [x, R, t]),
     K = i.useCallback(e => {
       switch (e) {
         case 0:
           let t = R ? 16 : 50;
-          return A ? t + 448 : t;
+          return x ? t + 448 : t;
         case 1:
           return 120;
         default:
           throw Error("[getSectionHeight] Failed for section: ".concat(e))
       }
-    }, [A, R]),
+    }, [x, R]),
     q = i.useCallback((e, t) => {
       switch (e) {
         case 0:
@@ -161,12 +161,12 @@ function j(e) {
           style: n,
           children: (0, r.jsx)(v.ZP, {
             guildId: e,
-            onClick: async e => await Q(e, t, x, T),
+            onClick: async e => await Q(e, t, A, T),
             onView: e => z(e)
           })
         }, i)
       }
-    }, [s, Q, z, x]);
+    }, [s, Q, z, A]);
   i.useEffect(() => {
     let e = B.current;
     return () => {

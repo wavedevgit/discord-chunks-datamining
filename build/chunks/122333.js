@@ -49,7 +49,7 @@ function j(e) {
   return e
 }
 
-function x(e, t) {
+function A(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -62,15 +62,15 @@ function x(e, t) {
   }), e
 }
 
-function A() {
+function x() {
   null != r && (0, l.Mr3)(r)
 }
 class Z extends o.Z {
   _initialize() {
-    a.Z.subscribe("CONNECTION_OPEN", this.handleConnectionOpen), a.Z.subscribe("LOGOUT", A)
+    a.Z.subscribe("CONNECTION_OPEN", this.handleConnectionOpen), a.Z.subscribe("LOGOUT", x)
   }
   _terminate() {
-    a.Z.unsubscribe("CONNECTION_OPEN", this.handleConnectionOpen), a.Z.unsubscribe("LOGOUT", A)
+    a.Z.unsubscribe("CONNECTION_OPEN", this.handleConnectionOpen), a.Z.unsubscribe("LOGOUT", x)
   }
   handleConnectionOpen() {
     var e;
@@ -87,9 +87,9 @@ class Z extends o.Z {
         h.Z.flowStart(P.MK.ORGANIC_MARKETING, P.EW.NUF_STARTED)
     }
     let o = !1,
-      A = _.Z.getGuildId();
+      x = _.Z.getGuildId();
     if (a === C.M5.INVITE_UNCLAIMED) {
-      let e = b.Z.getGuild(A);
+      let e = b.Z.getGuild(x);
       null != e && (0, d.Dc)(e) && (o = !0, (0, f.RM)(e.id))
     }
     let Z = () => 0 === m.Z.totalGuilds && !y.isPlatformEmbedded,
@@ -130,7 +130,7 @@ class Z extends o.Z {
           let {
             default: e
           } = await Promise.all([n.e("6583"), n.e("1337"), n.e("42483"), n.e("57015")]).then(n.bind(n, 599219));
-          return n => (0, i.jsx)(e, x(j({}, n), {
+          return n => (0, i.jsx)(e, A(j({}, n), {
             onSlideChange: t
           }))
         }, {
@@ -153,7 +153,7 @@ class Z extends o.Z {
       }
     }, {
       key: "Verification Gate with Claim Account",
-      open: e => (0, u.hk)(A, null != e ? e : void 0),
+      open: e => (0, u.hk)(x, null != e ? e : void 0),
       predicate: () => {
         var e;
         return o && !(null == (e = O.default.getCurrentUser()) ? void 0 : e.isClaimed()) && !T.a
@@ -164,13 +164,13 @@ class Z extends o.Z {
         let {
           default: e
         } = await n.e("77578").then(n.bind(n, 184782));
-        return t => (0, i.jsx)(e, x(j({}, t), {
-          guildId: A
+        return t => (0, i.jsx)(e, A(j({}, t), {
+          guildId: x
         }))
       }, {
         onCloseCallback: e
       }),
-      predicate: () => null != A && null != g.Z.get(A) && g.Z.get(A) !== g.a
+      predicate: () => null != x && null != g.Z.get(x) && g.Z.get(x) !== g.a
     }], t = () => {
       v.H(), h.Z.flowStep(P.MK.ANY, P.EW.NUF_COMPLETE, !0)
     }, [...e].reverse().forEach(e => {

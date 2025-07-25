@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => x
+  Z: () => A
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -60,7 +60,7 @@ function j(e, t) {
   }), e
 }
 
-function x(e) {
+function A(e) {
   var {
     channel: t
   } = e, l = function(e, t) {
@@ -78,13 +78,13 @@ function x(e) {
     }
     return i
   }(e, ["channel"]);
-  let x = i.useRef(null),
+  let A = i.useRef(null),
     {
-      mute: A,
+      mute: x,
       suppress: Z
     } = (0, _.Z)(t),
     w = (0, o.e7)([O.Z], () => O.Z.isDeaf()),
-    L = A || Z || w,
+    L = x || Z || w,
     [R, D] = i.useState(!1),
     k = t.getGuildId(),
     M = (0, y.sR)({
@@ -117,7 +117,7 @@ function x(e) {
       onMouseLeave: Y
     }
   } = (0, c.j)(), K = e => (0, r.jsx)(d.yRy, {
-    targetElementRef: x,
+    targetElementRef: A,
     animation: d.yRy.Animation.FADE,
     shouldShow: R,
     position: "top",
@@ -138,7 +138,7 @@ function x(e) {
       })
     },
     children: t => (0, r.jsx)("div", {
-      ref: x,
+      ref: A,
       children: (0, r.jsx)(u.zx, j(P(j(P({}, e, t), {
         className: a()(T.button, T.buttonColor, {
           [T.greyButtonActive]: R,
@@ -180,8 +180,8 @@ function x(e) {
   }), (0, r.jsx)(f.Gt, {
     value: B,
     children: (0, r.jsx)(d.ua7, {
-      targetElementRef: x,
-      text: A ? N.intl.string(N.t["Ox4/zc"]) : Z ? N.intl.string(N.t["+YBKYG"]) : w ? N.intl.string(N.t.X1lQlp) : N.intl.string(N.t["6EJvHh"]),
+      targetElementRef: A,
+      text: x ? N.intl.string(N.t["Ox4/zc"]) : Z ? N.intl.string(N.t["+YBKYG"]) : w ? N.intl.string(N.t.X1lQlp) : N.intl.string(N.t["6EJvHh"]),
       children: e => K(e)
     })
   })

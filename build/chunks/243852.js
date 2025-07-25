@@ -25,12 +25,12 @@ let I = "ActivityTrackingStore",
 
 function j(e) {
   let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
-  t && x(e, !0);
+  t && A(e, !0);
   let n = T[e.applicationId];
   null != n && (n.stop(), delete T[e.applicationId]), delete N[e.applicationId], s.K.set(I, N)
 }
 
-function x(e) {
+function A(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
     n = Date.now(),
     r = null != e.updatedAt ? n - e.updatedAt : 0;
@@ -52,10 +52,10 @@ function x(e) {
     mediaSessionId: o
   }), e.updatedAt = n;
   let u = T[e.applicationId];
-  null == u && (u = T[e.applicationId] = new c.Xp).start(C, () => x(e)), t || (N[e.applicationId] = e, s.K.set(I, N))
+  null == u && (u = T[e.applicationId] = new c.Xp).start(C, () => A(e)), t || (N[e.applicationId] = e, s.K.set(I, N))
 }
 
-function A() {
+function x() {
   let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0],
     t = h.ZP.getVisibleRunningGames(),
     n = new Set;
@@ -66,7 +66,7 @@ function A() {
     }
     of t) {
     let t = _.Z.getGameByName(e);
-    null != t && (n.add(t.id), t.id in N || x({
+    null != t && (n.add(t.id), t.id in N || A({
       applicationId: t.id,
       updatedAt: Date.now(),
       distributor: r,
@@ -82,7 +82,7 @@ function Z() {
 }
 class w extends(i = o.ZP.Store) {
   initialize() {
-    this.waitFor(h.ZP, f.Z, O.Z), this.syncWith([f.Z], A)
+    this.waitFor(h.ZP, f.Z, O.Z), this.syncWith([f.Z], x)
   }
   getActivities() {
     return N
@@ -94,11 +94,11 @@ a = "ActivityTrackingStore", (l = "displayName") in w ? Object.defineProperty(w,
   configurable: !0,
   writable: !0
 }) : w[l] = a, new w(u.Z, {
-  RUNNING_GAMES_CHANGE: () => A(),
+  RUNNING_GAMES_CHANGE: () => x(),
   CONNECTION_OPEN: function() {
     if (P) return !1;
-    for (let e of Object.keys(N)) x(N[e]);
-    A(!1), P = !0
+    for (let e of Object.keys(N)) A(N[e]);
+    x(!1), P = !0
   },
   CONNECTION_CLOSED: function(e) {
     let {

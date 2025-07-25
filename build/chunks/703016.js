@@ -29,8 +29,8 @@ var r = n(913527),
   T = n(441729),
   P = n(653477),
   j = n(981631),
-  x = n(388032);
-let A = [],
+  A = n(388032);
+let x = [],
   Z = null,
   w = null,
   L = null,
@@ -38,26 +38,26 @@ let A = [],
 
 function D(e, t, n, r) {
   let l = _.Z.getGuild(n),
-    a = e.replace(R, x.intl.string(x.t["F+x38P"])).replace(/<@!?(\d+)>/g, (e, t) => {
+    a = e.replace(R, A.intl.string(A.t["F+x38P"])).replace(/<@!?(\d+)>/g, (e, t) => {
       var r;
       let i = C.default.getUser(t);
       return null == i ? e : null != (r = m.ZP.getNick(n, i.id)) ? r : S.ZP.getName(i)
     }).replace(/<@&?(\d+)>/g, (e, t) => {
       let n = null != l ? b.Z.getRole(l.id, t) : null;
-      return null != n && null != n.name ? n.name : x.intl.string(x.t.dRcLAw)
+      return null != n && null != n.name ? n.name : A.intl.string(A.t.dRcLAw)
     }).replace(/<#(\d+)>/g, (e, t) => {
       let n = g.Z.getChannel(t);
       return null == n ? e : (0, s.F6)(n, C.default, y.Z)
-    }).replace(/<a?:(\w+):(\d+)>/g, (e, t) => "".concat(x.intl.string(x.t.sMOuub), " ").concat(t)).replace(/<\/([^\s]+?):(\d+)>/g, (e, t) => "/".concat(t)).replace(/<t:(\d+):([A-Z]|[a-z])>/g, (e, t, n) => {
+    }).replace(/<a?:(\w+):(\d+)>/g, (e, t) => "".concat(A.intl.string(A.t.sMOuub), " ").concat(t)).replace(/<\/([^\s]+?):(\d+)>/g, (e, t) => "/".concat(t)).replace(/<t:(\d+):([A-Z]|[a-z])>/g, (e, t, n) => {
       let r = c.Qh[n],
         l = 1e3 * parseInt(t, 10),
         a = i()(l);
       return null != r ? r(a) : a.format()
     });
-  return null == r ? x.intl.formatToPlainString(x.t["uIj77+"], {
+  return null == r ? A.intl.formatToPlainString(A.t["uIj77+"], {
     username: t,
     body: a
-  }) : x.intl.formatToPlainString(x.t["Ix4H+v"], {
+  }) : A.intl.formatToPlainString(A.t["Ix4H+v"], {
     username: t,
     body: a,
     replyUsername: r
@@ -126,8 +126,8 @@ function H(e) {
     N = E.Z.getTTSType(),
     T = (null == (t = s.author) ? void 0 : t.id) !== h.default.getId() && (N === j.PrB.ALL_CHANNELS || N === j.PrB.SELECTED_CHANNEL && _);
   if ((C || T) && !y.Z.isBlockedOrIgnoredForMessage(s)) {
-    if (A.indexOf(s.id) >= 0) return !1;
-    A.unshift(s.id) > 10 && A.pop();
+    if (x.indexOf(s.id) >= 0) return !1;
+    x.unshift(s.id) > 10 && x.pop();
     let e = u.getGuildId();
     if (null != e && I.ZP.getMutedChannels(e).has(o)) return !1;
     let t = null != (l = null != (i = m.ZP.getNick(e, null == (n = s.author) ? void 0 : n.id)) ? i : S.ZP.getName(s.author)) ? l : "",

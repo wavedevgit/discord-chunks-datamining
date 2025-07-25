@@ -29,8 +29,8 @@ var r = n(255367),
   T = n(474936),
   P = n(388032),
   j = n(540835),
-  x = n(519254),
-  A = n(741160),
+  A = n(519254),
+  x = n(741160),
   Z = n(829972),
   w = n(31932),
   L = n(642301);
@@ -132,7 +132,7 @@ let M = i.memo(function(e) {
               asset: (0, r.jsx)("img", {
                 alt: "",
                 src: U,
-                className: x.fullWidthImage
+                className: A.fullWidthImage
               }),
               content: P.intl.format(P.t.ujItEh, {}),
               buttonCTA: P.intl.string(P.t.UzVPra),
@@ -151,7 +151,7 @@ let M = i.memo(function(e) {
               asset: (0, r.jsx)("img", {
                 alt: "",
                 src: U,
-                className: x.fullWidthImage
+                className: A.fullWidthImage
               }),
               content: P.intl.format(P.t.zK1hpq, {}),
               buttonCTA: P.intl.string(P.t.UzVPra),
@@ -189,8 +189,8 @@ let M = i.memo(function(e) {
               header: P.intl.string(P.t["36wK8/"]),
               asset: (0, r.jsx)("img", {
                 alt: "",
-                src: A,
-                className: x.fullWidthImage
+                src: x,
+                className: A.fullWidthImage
               }),
               content: e,
               buttonCTA: t,
@@ -230,7 +230,7 @@ let M = i.memo(function(e) {
               asset: (0, r.jsx)("img", {
                 alt: "",
                 src: L,
-                className: x.fullWidthImage
+                className: A.fullWidthImage
               }),
               onClick: () => {
                 h.Z.open(i.id, C.pNK.ROLES), h.Z.selectRole((0, E.lV)(i), P.intl.string(P.t.Bco7ND))

@@ -29,8 +29,8 @@ var r = n(255367),
   T = n(880257),
   P = n(631885),
   j = n(849862),
-  x = n(522558),
-  A = n(795448),
+  A = n(522558),
+  x = n(795448),
   Z = n(441623),
   w = n(457396),
   L = n(108989),
@@ -113,7 +113,7 @@ let el = e => {
       u = (0, d.e7)([_.Z], () => _.Z.useReducedMotion),
       {
         enabled: p
-      } = x.w.useExperiment({
+      } = A.w.useExperiment({
         location: "Friends Tab"
       }, {
         autoTrackExposure: !1
@@ -136,7 +136,7 @@ let el = e => {
           let e;
           h ? (z.default.track(X.rMx.GIFT_INTENT_BADGE_CLICKED, {
             gift_intent_type: J.hX.FRIEND_ANNIVERSARY
-          }), e = X.pJs.ALL, b.Z.setSection(X.pJs.ALL), (0, A.Gk)()) : e = F.ZP.getState().section, (0, O.Z)({
+          }), e = X.pJs.ALL, b.Z.setSection(X.pJs.ALL), (0, x.Gk)()) : e = F.ZP.getState().section, (0, O.Z)({
             tab_opened: e
           })
         },

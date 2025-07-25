@@ -29,9 +29,9 @@ var r = n(255367),
   T = n(617015),
   P = n(981631),
   j = n(388032),
-  x = n(222001);
+  A = n(222001);
 
-function A(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -75,7 +75,7 @@ function R() {
     let {
       default: e
     } = await n.e("36312").then(n.bind(n, 153932));
-    return t => (0, r.jsx)(e, A({}, t))
+    return t => (0, r.jsx)(e, x({}, t))
   })
 }
 
@@ -85,7 +85,7 @@ function D(e) {
     showSpamCta: n
   } = e, l = i.useMemo(() => n ? R : t !== P.pJs.PENDING ? L : void 0, [n, t]);
   return (0, r.jsx)("div", {
-    className: x.emptyStateContainer,
+    className: A.emptyStateContainer,
     children: (0, r.jsx)(y.Z, {
       type: t,
       onClick: l
@@ -130,26 +130,26 @@ let k = function(e) {
     }(e, ["key"]);
     switch (u) {
       case P.pJs.PENDING:
-        return (0, r.jsx)(v.Z, Z(A({}, n), {
+        return (0, r.jsx)(v.Z, Z(x({}, n), {
           isFocused: L
         }), t);
       case P.pJs.SUGGESTIONS:
-        return (0, r.jsx)(N.Z, Z(A({}, n), {
+        return (0, r.jsx)(N.Z, Z(x({}, n), {
           isFocused: L
         }), t);
       case P.pJs.ONLINE:
       case P.pJs.ALL:
       default:
-        return (0, r.jsx)(E.Z, Z(A({}, n), {
+        return (0, r.jsx)(E.Z, Z(x({}, n), {
           isFocused: L
         }), t)
     }
   }, [L, u]), V = i.useCallback(e => {
-    G(Z(A({}, U), {
+    G(Z(x({}, U), {
       [u]: e
     }))
   }, [U, u]), H = i.useCallback(() => {
-    G(Z(A({}, U), {
+    G(Z(x({}, U), {
       [u]: ""
     }))
   }, [U, u]), F = i.useMemo(() => u === P.pJs.PENDING && (l.filter(P.pJs.SPAM).length > 0 || l.filter(P.pJs.PENDING_IGNORED).length > 0), [l, u]), z = i.useMemo(() => l.filter(u, U[u]), [l, U, u]), W = u === P.pJs.PENDING, Y = i.useMemo(() => {
@@ -204,21 +204,21 @@ let k = function(e) {
         }
       }(u, K[e].length, e);
       return u === P.pJs.PENDING && 0 === e ? (0, r.jsxs)("div", {
-        className: x.sectionTitle,
+        className: A.sectionTitle,
         children: [(0, r.jsx)(S.Z, {
           id: t,
           title: n
         }), X && (0, r.jsx)(s.zx, {
           look: s.iL.LINK,
           color: s.Tt.LINK,
-          className: x.clearButton,
+          className: A.clearButton,
           size: s.zx.Sizes.TINY,
           onClick: Q,
           "aria-label": j.intl.string(j.t.O8k7Oz),
           children: j.intl.string(j.t.O8k7Oz)
         })]
       }, n) : (0, r.jsx)("div", {
-        className: x.sectionTitle,
+        className: A.sectionTitle,
         children: (0, r.jsx)(S.Z, {
           id: t,
           title: n
@@ -238,7 +238,7 @@ let k = function(e) {
     children: (0, r.jsxs)(p.Z, {
       section: P.jXE.FRIENDS_LIST,
       children: [M && (0, r.jsx)(C.R, {}), (0, r.jsx)(c.E1j, {
-        className: a()(x.searchBar, ee ? x.searchEmptyState : null),
+        className: a()(A.searchBar, ee ? A.searchEmptyState : null),
         query: U[u],
         onChange: V,
         onClear: H,
@@ -252,8 +252,8 @@ let k = function(e) {
         hasSearchQuery: $,
         footer: F && !ee ? (0, r.jsx)(s.zx, {
           look: s.zx.Looks.LINK,
-          color: x.viewSpamButtonColor,
-          className: x.viewSpamButton,
+          color: A.viewSpamButtonColor,
+          className: A.viewSpamButton,
           onClick: R,
           size: s.Ph.TINY,
           children: (0, r.jsx)(c.Text, {
@@ -262,7 +262,7 @@ let k = function(e) {
           })
         }) : null
       }), ee && (0, r.jsx)("div", {
-        className: x.emptyStateContainer,
+        className: A.emptyStateContainer,
         children: (0, r.jsx)(y.Z, {
           type: y.j.SECTION_NO_RESULTS
         }, u)

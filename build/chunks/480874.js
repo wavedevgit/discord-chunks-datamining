@@ -36,15 +36,15 @@ function P() {
     P = (0, d.N)(),
     j = (0, h.Z)("message-requests-spam-list"),
     {
-      channelId: x
+      channelId: A
     } = (0, O._)(),
-    A = i.useCallback(() => {
+    x = i.useCallback(() => {
       (0, u.showToast)((0, u.createToast)(N.intl.string(N.t.EDYbS0), u.ToastType.FAILURE))
     }, []),
     {
       rejectAll: Z
     } = (0, _.m)({
-      onError: A
+      onError: x
     }),
     w = i.useCallback(() => {
       Z(t.map(e => e.channel.id))
@@ -64,14 +64,14 @@ function P() {
       return (0, r.jsx)(I.Z, {
         index: o,
         className: a()({
-          [T.selected]: null != x && x === u,
-          [T.siblingSelected]: null != x && x === c
+          [T.selected]: null != A && A === u,
+          [T.siblingSelected]: null != A && A === c
         }),
         channel: s.channel,
         user: s.user,
         hasSingleMessageRequest: l
       }, u)
-    }, [t, l, x]),
+    }, [t, l, A]),
     R = i.useCallback(() => (0, r.jsxs)(f.Z, {
       className: T.sectionTitle,
       children: [N.intl.format(N.t.C79Edn, {

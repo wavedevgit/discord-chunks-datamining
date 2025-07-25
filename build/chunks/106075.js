@@ -39,8 +39,8 @@ function C() {
     P = (0, h.lg)(N),
     j = !E.MU.has(N),
     {
-      searchQuery: x,
-      onSearchTextChange: A,
+      searchQuery: A,
+      onSearchTextChange: x,
       onClearSearch: Z,
       onSearchSubmit: w,
       isSearchVisible: L
@@ -55,7 +55,7 @@ function C() {
       tabsClassName: U
     } = (0, o.U)({
       isSearchBarVisible: j,
-      isSearchBarEmpty: "" === x.trim(),
+      isSearchBarEmpty: "" === A.trim(),
       searchBarState: R,
       setSearchBarState: e => f.Z.setState({
         searchBarState: e
@@ -112,9 +112,9 @@ function C() {
           query: G
         })
       }), j && (0, r.jsx)(u.Z, {
-        query: x,
+        query: A,
         placeholder: v.intl.string(v.t["5h0QOD"]),
-        onTextChange: A,
+        onTextChange: x,
         onClear: Z,
         onSubmit: w,
         onCollapsedClick: k,

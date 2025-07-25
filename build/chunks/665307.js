@@ -28,9 +28,9 @@ var r, i = n(255367),
   T = n(645818),
   P = n(981631),
   j = n(388032),
-  x = n(833972);
+  A = n(833972);
 
-function A(e, t, n) {
+function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -46,7 +46,7 @@ function Z(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      x(e, t, n[t])
     })
   }
   return e
@@ -81,8 +81,8 @@ let L = (0, N.Mg)(d.Z.GAME_LIST_ROW_MIN_HEIGHT),
     return (0, i.jsx)(h.ua7, {
       text: l,
       children: e => (0, i.jsx)(n, Z({
-        className: o()(x.settingIcon, {
-          [x.hidden]: !a
+        className: o()(A.settingIcon, {
+          [A.hidden]: !a
         })
       }, e))
     })
@@ -91,25 +91,25 @@ let L = (0, N.Mg)(d.Z.GAME_LIST_ROW_MIN_HEIGHT),
     key: P.iEv.NAME,
     renderHeader: () => j.intl.string(j.t.dBfWfX),
     sort: !0,
-    cellClassName: x.nameCell,
-    bodyCellClassName: x.nameBodyCell,
+    cellClassName: A.nameCell,
+    bodyCellClassName: A.nameBodyCell,
     render: e => (0, i.jsxs)(_.Z, {
       align: _.Z.Align.CENTER,
       children: [(0, i.jsx)(E.Z, {
         game: e.application,
         size: E.Z.Sizes.SMALL,
-        className: x.gameIcon
+        className: A.gameIcon
       }), (0, i.jsxs)("div", {
-        className: x.nameCellInfo,
+        className: A.nameCellInfo,
         children: [(0, i.jsx)("div", {
-          className: x.nameCellText,
+          className: A.nameCellText,
           children: e.libraryApplication.getBranchedName(e.application)
         }), e.libraryApplication.hasFlag(P.eHb.PREMIUM) ? (0, i.jsx)(h.ua7, {
           text: j.intl.string(j.t.tG2SzM),
           children: e => (0, i.jsx)(h.SrA, Z({
             size: "md",
             color: "currentColor",
-            className: x.nitroIcon
+            className: A.nitroIcon
           }, e))
         }) : null]
       })]
@@ -118,8 +118,8 @@ let L = (0, N.Mg)(d.Z.GAME_LIST_ROW_MIN_HEIGHT),
     key: P.iEv.PLATFORM,
     renderHeader: () => j.intl.string(j.t.YR4cHB),
     sort: !0,
-    cellClassName: x.platformCell,
-    bodyCellClassName: x.textCell,
+    cellClassName: A.platformCell,
+    bodyCellClassName: A.textCell,
     render(e) {
       let t = e.libraryApplication.getDistributor();
       return (0, i.jsx)(_.Z, {
@@ -131,8 +131,8 @@ let L = (0, N.Mg)(d.Z.GAME_LIST_ROW_MIN_HEIGHT),
     key: P.iEv.LAST_PLAYED,
     renderHeader: () => j.intl.string(j.t.FDDyjY),
     sort: !0,
-    cellClassName: x.lastPlayedCell,
-    bodyCellClassName: x.textCell,
+    cellClassName: A.lastPlayedCell,
+    bodyCellClassName: A.textCell,
     render(e) {
       let t;
       return t = e.isRunning ? j.intl.string(j.t.Md326u) : e.isNew ? j.intl.string(j.t["+F0Tho"]) : 0 !== e.lastPlayed ? (0, i.jsx)(y.ZP, {
@@ -141,7 +141,7 @@ let L = (0, N.Mg)(d.Z.GAME_LIST_ROW_MIN_HEIGHT),
       }) : j.intl.string(j.t.EoWLrq), (0, i.jsx)(_.Z, {
         align: _.Z.Align.CENTER,
         className: o()({
-          [x.lastPlayedCellNew]: e.isNew
+          [A.lastPlayedCellNew]: e.isNew
         }),
         children: t
       })
@@ -149,14 +149,14 @@ let L = (0, N.Mg)(d.Z.GAME_LIST_ROW_MIN_HEIGHT),
   }, {
     key: P.iEv.ACTIONS,
     renderHeader: () => null,
-    cellClassName: x.actionsCell,
+    cellClassName: A.actionsCell,
     render(e, t, n) {
       var r, a;
       if (null == t) throw Error("No cell props defined.");
       let s = e.key === t.activeRowKey;
       return (0, i.jsxs)(l.Fragment, {
         children: [(0, i.jsxs)("div", {
-          className: x.settingIcons,
+          className: A.settingIcons,
           children: [(0, i.jsx)(k, {
             flag: P.eHb.PRIVATE,
             item: e,
@@ -168,8 +168,8 @@ let L = (0, N.Mg)(d.Z.GAME_LIST_ROW_MIN_HEIGHT),
             icon: h.o8v,
             tooltip: j.intl.string(j.t.Az9eqq)
           }), (0, i.jsx)(T.Z, {
-            className: o()(x.settingIcon, {
-              [x.hidden]: !e.supportsCloudSync
+            className: o()(A.settingIcon, {
+              [A.hidden]: !e.supportsCloudSync
             }),
             libraryApplication: e.libraryApplication
           })]
@@ -180,7 +180,7 @@ let L = (0, N.Mg)(d.Z.GAME_LIST_ROW_MIN_HEIGHT),
           libraryApplication: e.libraryApplication,
           color: s ? p.zx.Colors.GREEN : p.zx.Colors.PRIMARY,
           isPlayShiny: s && e.defaultAction === P.apO.PLAY,
-          size: x.actionButtonSize,
+          size: A.actionButtonSize,
           hideProgress: null != e.defaultAction,
           onDropdownOpen: () => null != t && t.setActiveRowKey(e),
           onDropdownClose: () => null != t && t.clearActiveRowKey()
@@ -218,10 +218,10 @@ let L = (0, N.Mg)(d.Z.GAME_LIST_ROW_MIN_HEIGHT),
       p = t.key === r;
     return (0, i.jsx)("div", {
       className: o()({
-        [x.rowWrapperActive]: d && !p,
-        [x.rowWrapperGlow]: p,
-        [x.rowWrapper]: !d && !p,
-        [x.rowWrapperDim]: !d && !t.isLaunchable
+        [A.rowWrapperActive]: d && !p,
+        [A.rowWrapperGlow]: p,
+        [A.rowWrapper]: !d && !p,
+        [A.rowWrapperDim]: !d && !t.isLaunchable
       }),
       ref: e => {
         c(e, t.key)
@@ -320,20 +320,20 @@ class G extends(r = l.PureComponent) {
     return r ? null : (e = "" !== n ? j.intl.format(j.t["4Q1TAg"], {
       query: n
     }) : j.intl.string(j.t["0Y+0PT"]), (0, i.jsxs)("div", {
-      className: r ? x.emptyStateSmall : x.emptyStateLarge,
+      className: r ? A.emptyStateSmall : A.emptyStateLarge,
       children: [(0, i.jsx)("div", {
-        className: x.emptyWumpus
+        className: A.emptyWumpus
       }), (0, i.jsx)(_.Z, {
         grow: 0,
         shrink: +!!r,
         direction: _.Z.Direction.VERTICAL,
         children: (0, i.jsxs)("div", {
-          className: x.emptyStateText,
+          className: A.emptyStateText,
           children: [(0, i.jsx)("div", {
-            className: x.emptyStateHeader,
+            className: A.emptyStateHeader,
             children: j.intl.string(j.t.Lw8X2t)
           }), (0, i.jsx)("div", {
-            className: x.emptyStateDescription,
+            className: A.emptyStateDescription,
             children: e
           })]
         })
@@ -357,12 +357,12 @@ class G extends(r = l.PureComponent) {
         data: n,
         sortData: !1,
         rowComponent: U,
-        className: x.table,
-        headerClassName: a ? x.stickyHeader : x.header,
-        headerCellClassName: x.headerCell,
-        sortedHeaderCellClassName: x.headerCellSorted,
-        bodyCellClassName: x.bodyCell,
-        rowClassName: x.row,
+        className: A.table,
+        headerClassName: a ? A.stickyHeader : A.header,
+        headerCellClassName: A.headerCell,
+        sortedHeaderCellClassName: A.headerCellSorted,
+        bodyCellClassName: A.bodyCell,
+        rowClassName: A.row,
         sortKey: e,
         sortDirection: t,
         stickyHeader: a,
@@ -387,24 +387,24 @@ class G extends(r = l.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), A(this, "_didUnmount", !1), A(this, "_rowRefs", {}), A(this, "state", {
+    super(...e), x(this, "_didUnmount", !1), x(this, "_rowRefs", {}), x(this, "state", {
       overflowMenuRowKey: null,
       highlightedApplicationKey: null != this.props.location.state ? this.props.location.state.applicationId : null
-    }), A(this, "setActiveRowKey", e => {
+    }), x(this, "setActiveRowKey", e => {
       this.setState({
         overflowMenuRowKey: e.key
       })
-    }), A(this, "clearActiveRowKey", () => {
+    }), x(this, "clearActiveRowKey", () => {
       this._didUnmount || this.setState({
         overflowMenuRowKey: null
       })
-    }), A(this, "handleRowMouseEnter", e => {
+    }), x(this, "handleRowMouseEnter", e => {
       this.props.isNavigatingByKeyboard || m.wX(e.key)
-    }), A(this, "handleRowMouseLeave", () => {
+    }), x(this, "handleRowMouseLeave", () => {
       this.props.isNavigatingByKeyboard || m.wX(null)
-    }), A(this, "setRowRef", (e, t) => {
+    }), x(this, "setRowRef", (e, t) => {
       this._rowRefs[t] = e
-    }), A(this, "handleApplicationContextMenu", (e, t) => {
+    }), x(this, "handleApplicationContextMenu", (e, t) => {
       this.setActiveRowKey(t);
       let {
         analyticsContext: r
@@ -460,6 +460,6 @@ function B(e) {
     isNavigatingByKeyboard: h
   }))
 }
-A(G, "defaultProps", {
+x(G, "defaultProps", {
   stickyHeader: !1
 })

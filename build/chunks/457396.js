@@ -30,8 +30,8 @@ var r = n(255367),
   T = n(655525),
   P = n(93237),
   j = n(924540),
-  x = n(474486),
-  A = n(497334),
+  A = n(474486),
+  x = n(497334),
   Z = n(119850),
   w = n(938736),
   L = n(227140),
@@ -137,7 +137,7 @@ let U = e => {
       isTabSelected: V,
       badgeCopy: M.intl.string(M.t.y2b7CA),
       offerExpiresAt: null
-    }), O = 2) : et ? (n = (0, r.jsx)(A.S, {
+    }), O = 2) : et ? (n = (0, r.jsx)(x.S, {
       expiresAt: es
     }), O = 4) : null != ei ? (n = (0, r.jsx)(L.Z, {
       copy: ei,
@@ -146,7 +146,7 @@ let U = e => {
       userDiscount: ee,
       isTabSelected: V,
       includesAmountOff: !1
-    }), O = 3) : null == $ || ep ? el && (n = (0, r.jsx)(x.l, {
+    }), O = 3) : null == $ || ep ? el && (n = (0, r.jsx)(A.l, {
       isSelected: V,
       onSelect: () => (0, h.Q3)(o.z.REFERRAL_PROGRAM_PREMIUM_TAB_BADGE, {
         dismissAction: k.L.TAKE_ACTION
@@ -199,7 +199,7 @@ let U = e => {
     })(Object(B)).forEach(function(e) {
       Object.defineProperty(G, e, Object.getOwnPropertyDescriptor(B, e))
     }), G));
-    return el ? (0, r.jsx)(x.C, {
+    return el ? (0, r.jsx)(A.C, {
       children: eb
     }) : eb
   }

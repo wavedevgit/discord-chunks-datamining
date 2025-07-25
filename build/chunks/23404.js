@@ -30,7 +30,7 @@ var r = n(255367),
   P = n(388032),
   j = n(396896);
 
-function x(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -49,7 +49,7 @@ function x(e) {
   return e
 }
 
-function A(e) {
+function x(e) {
   var t;
   let {
     quest: n
@@ -140,7 +140,7 @@ function Z(e) {
     onMouseLeave: D,
     children: [(0, r.jsxs)("div", {
       className: j.utils,
-      children: [H ? (0, r.jsx)(A, {
+      children: [H ? (0, r.jsx)(x, {
         quest: O
       }) : (0, r.jsx)(y.Z, {}), (0, r.jsx)(I.r, {
         quest: O,
@@ -150,7 +150,7 @@ function Z(e) {
         sourceQuestContent: m.jn.ACTIVITY_PANEL,
         children: e => {
           var t, n;
-          return (0, r.jsx)(c.P3F, (t = x({}, e), n = n = {
+          return (0, r.jsx)(c.P3F, (t = A({}, e), n = n = {
             "aria-label": P.intl.string(P.t.DEoVWV),
             children: (0, r.jsx)(c.xhG, {
               size: "md",
@@ -170,7 +170,7 @@ function Z(e) {
         }
       })]
     }), !H && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(A, {
+      children: [(0, r.jsx)(x, {
         quest: O
       }), (0, r.jsx)("div", {
         className: j.instructions,
@@ -230,7 +230,7 @@ let w = function(e) {
     questOrQuests: e.quest,
     questContent: m.jn.ACTIVITY_PANEL,
     sourceQuestContent: m.jn.ACTIVITY_PANEL,
-    children: t => (0, r.jsx)(Z, x({
+    children: t => (0, r.jsx)(Z, A({
       nodeRef: t
     }, e))
   })
