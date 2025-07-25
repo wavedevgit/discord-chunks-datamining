@@ -19,8 +19,8 @@ let l = "",
   c = null,
   u = "",
   d = null,
-  _ = !1,
-  f = null,
+  f = !1,
+  _ = null,
   p = "",
   h = "",
   m = "",
@@ -36,7 +36,7 @@ let l = "",
   A = null;
 
 function N() {
-  d = null, l = "", c = null, u = "", _ = !1, f = null, p = "US", h = "", m = "", g = "", E = "", b = "", y = "", O = "", v = !1, I = null, T = null, S = null, A = null
+  d = null, l = "", c = null, u = "", f = !1, _ = null, p = "US", h = "", m = "", g = "", E = "", b = "", y = "", O = "", v = !1, I = null, T = null, S = null, A = null
 }
 
 function C(e) {
@@ -85,7 +85,7 @@ function x(e) {
     info: t,
     isValid: n
   } = e;
-  h = t.name, _ = n
+  h = t.name, f = n
 }
 
 function M(e) {
@@ -100,7 +100,7 @@ function k(e) {
   let {
     data: t
   } = e;
-  f = t
+  _ = t
 }
 
 function j() {
@@ -144,7 +144,7 @@ class V extends(r = i.ZP.Store) {
     return T
   }
   get adyenPaymentData() {
-    return f
+    return _
   }
   get redirectedPaymentSourceId() {
     return A
@@ -155,7 +155,7 @@ class V extends(r = i.ZP.Store) {
     }
   }
   get isCardInfoValid() {
-    return _
+    return f
   }
   getBillingAddressInfo() {
     return {

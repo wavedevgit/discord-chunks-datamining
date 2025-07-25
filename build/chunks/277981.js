@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(85235),
   u = n(367907),
   d = n(998698),
-  _ = n(895924),
-  f = n(588468),
+  f = n(895924),
+  _ = n(588468),
   p = n(600164),
   h = n(718745),
   m = n(590921),
@@ -75,7 +75,7 @@ let T = {
       query: l,
       options: c,
       onHover: u,
-      onClick: _
+      onClick: f
     } = e, {
       command: h,
       query: g
@@ -91,9 +91,9 @@ let T = {
         n = t.map((t, n) => {
           if (t.type === E.q9n.GIF) {
             var i, o, s;
-            return e = !0, (0, r.jsx)(f.ZP.GIFIntegration, {
+            return e = !0, (0, r.jsx)(_.ZP.GIFIntegration, {
               className: y.horizontalAutocomplete,
-              onClick: _,
+              onClick: f,
               onHover: u,
               selected: a === n,
               index: n,
@@ -110,7 +110,7 @@ let T = {
           command: s
         }) : null != s ? s : h;
       return (0, r.jsxs)(i.Fragment, {
-        children: [(0, r.jsx)(f.ZP.Title, {
+        children: [(0, r.jsx)(_.ZP.Title, {
           title: l
         }), e ? (0, r.jsx)(p.Z, {
           className: y.horizontalAutocompletes,
@@ -141,14 +141,14 @@ let T = {
         source_object: "/".concat(t)
       }), a.commands !== m.L8.OLD_BUILT_INS) {
       let e = d.Z.getActiveCommand(o.id);
-      (null == e ? void 0 : e.inputType) === _.iw.BUILT_IN_INTEGRATION && (l.Z.dispatch({
+      (null == e ? void 0 : e.inputType) === f.iw.BUILT_IN_INTEGRATION && (l.Z.dispatch({
         type: "APPLICATION_COMMAND_USED",
         context: {
           channel: o,
           guild: s
         },
         command: e,
-        commandOrigin: _.bB.CHAT
+        commandOrigin: f.bB.CHAT
       }), u.ZP.trackWithMetadata(E.rMx.APPLICATION_COMMAND_USED, {
         command_id: e.id,
         application_id: e.applicationId,

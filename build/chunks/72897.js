@@ -13,9 +13,9 @@ var r = n(73800),
   c = n(996897),
   u = n(145016),
   d = n(65154),
-  _ = n(388032);
+  f = n(388032);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -31,7 +31,7 @@ function p(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -60,19 +60,19 @@ function g(e) {
       getRawDevices: e => e.getInputDevices(),
       getAllDeviceIdsSortedByFrecency: e => e.getInputDeviceIdsSortedByFrecency(),
       getCurrentDeviceId: e => e.getInputDeviceId(),
-      getNoDevicesMessage: () => _.intl.string(_.t["/QIjDA"])
+      getNoDevicesMessage: () => f.intl.string(f.t["/QIjDA"])
     },
     [d.h7.AUDIO_OUTPUT]: {
       getRawDevices: e => e.getOutputDevices(),
       getAllDeviceIdsSortedByFrecency: e => e.getOutputDeviceIdsSortedByFrecency(),
       getCurrentDeviceId: e => e.getOutputDeviceId(),
-      getNoDevicesMessage: () => _.intl.string(_.t.xlUg0t)
+      getNoDevicesMessage: () => f.intl.string(f.t.xlUg0t)
     },
     [d.h7.VIDEO_INPUT]: {
       getRawDevices: e => e.getVideoDevices(),
       getAllDeviceIdsSortedByFrecency: e => e.getVideoDeviceIdsSortedByFrecency(),
       getCurrentDeviceId: e => e.getVideoDeviceId(),
-      getNoDevicesMessage: () => _.intl.string(_.t.WKWARU)
+      getNoDevicesMessage: () => f.intl.string(f.t.WKWARU)
     }
   })[e]
 }
@@ -86,7 +86,7 @@ function E(e) {
     let e = p({}, i),
       t = e[d.w5];
     return null != t && (e[d.w5] = m(p({}, t), {
-      name: t.disabled ? o : t.name.replace(d.fU, _.intl.string(_.t.bBvAEB))
+      name: t.disabled ? o : t.name.replace(d.fU, f.intl.string(f.t.bBvAEB))
     })), e
   }, [i, o])
 }
@@ -110,17 +110,17 @@ function y(e, t) {
     shouldFilterDevicesByFrecency: d
   } = (0, c.w)({
     location: n
-  }), _ = E(e), {
-    getAllDeviceIdsSortedByFrecency: f
-  } = g(e), p = (0, o.Z)((0, a.Wu)([u.Z], () => f(u.Z))), {
+  }), f = E(e), {
+    getAllDeviceIdsSortedByFrecency: _
+  } = g(e), p = (0, o.Z)((0, a.Wu)([u.Z], () => _(u.Z))), {
     id: h
   } = b(e);
   return (0, r.useMemo)(() => {
-    let e = e => e.map(e => _[e]),
-      t = Object.keys(_);
+    let e = e => e.map(e => f[e]),
+      t = Object.keys(f);
     if (!s) return [t, []].map(e);
     let n = (0, i.intersection)(p, t),
       r = (0, i.difference)(t, p);
     return d && (null == n ? void 0 : n.length) !== 0 ? r.some(e => e === h) ? [(0, i.union)(n, [h]), (0, i.difference)(r, [h])].map(e) : [n, r].map(e) : [(0, i.union)(n, r), []].map(e)
-  }, [_, p, h, s, d])
+  }, [f, p, h, s, d])
 }

@@ -99,7 +99,7 @@ let L = e => {
         tab: c
       })]
     });
-    let B = (e, t) => {
+    let w = (e, t) => {
       if (null == e) return null;
       let l = null;
       switch (e.type) {
@@ -161,7 +161,7 @@ let L = e => {
       }, t)
     };
     return (0, n.jsx)(n.Fragment, {
-      children: I.map((e, t) => B(e, t))
+      children: I.map((e, t) => w(e, t))
     })
   },
   k = e => {

@@ -14,24 +14,24 @@ function l(e, t) {
     isActiveFromLevel: n,
     levelEntitlement: r,
     levelPowerup: i
-  } = c(e, t), a = u(e, t), s = d(e, t), l = null != s, _ = {
+  } = c(e, t), a = u(e, t), s = d(e, t), l = null != s, f = {
     type: o.A3.INACTIVE,
     sourceEntitlement: void 0,
     sourcePowerup: void 0
   };
-  return null == t || (n ? _ = {
+  return null == t || (n ? f = {
     type: o.A3.LEVEL_ACTIVATED,
     sourceEntitlement: r,
     sourcePowerup: i
-  } : a ? _ = {
+  } : a ? f = {
     type: o.A3.TIER_OVERRIDE_ACTIVATED,
     sourceEntitlement: void 0,
     sourcePowerup: t
-  } : l && (_ = {
+  } : l && (f = {
     type: o.A3.POWERUP_ACTIVATED,
     sourceEntitlement: s,
     sourcePowerup: t
-  })), _
+  })), f
 }
 
 function c(e, t) {
@@ -50,11 +50,11 @@ function c(e, t) {
     levelPowerup: void 0
   };
   let d = l.premiumTier >= u,
-    _ = o.Cp[u];
+    f = o.Cp[u];
   return {
     isActiveFromLevel: d,
-    levelEntitlement: null != _ ? null == (n = c.unlockedPowerups) ? void 0 : n[_] : void 0,
-    levelPowerup: null != _ ? null == (s = c.allPowerups) ? void 0 : s[_] : void 0
+    levelEntitlement: null != f ? null == (n = c.unlockedPowerups) ? void 0 : n[f] : void 0,
+    levelPowerup: null != f ? null == (s = c.allPowerups) ? void 0 : s[f] : void 0
   }
 }
 

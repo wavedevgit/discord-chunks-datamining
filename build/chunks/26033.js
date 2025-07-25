@@ -11,7 +11,7 @@ n.d(t, {
   dX: () => s,
   kq: () => d,
   m9: () => l,
-  y0: () => _
+  y0: () => f
 });
 var r = n(876215),
   i = n(758713);
@@ -44,11 +44,11 @@ function d(e) {
   return c(e) || u(e)
 }
 
-function _(e) {
+function f(e) {
   return (null == e ? void 0 : e.content_type) === r.s.WATCHED_MEDIA
 }
 
-function f(e) {
+function _(e) {
   return !!s(e) && e.extra.platform === i.z.XBOX
 }
 
@@ -57,7 +57,7 @@ function p(e) {
 }
 
 function h(e) {
-  return f(e) || p(e)
+  return _(e) || p(e)
 }
 
 function m(e) {
@@ -65,5 +65,5 @@ function m(e) {
 }
 
 function g(e) {
-  return s(e) || c(e) || _(e) || l(e)
+  return s(e) || c(e) || f(e) || l(e)
 }

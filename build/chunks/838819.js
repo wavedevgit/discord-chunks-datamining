@@ -31,11 +31,11 @@ var n = r(255367),
   P = r(426171),
   L = r(963102),
   k = r(508498),
-  I = r(849217),
+  I = r(681435),
   N = r(215023),
   A = r(981631),
-  B = r(420212),
-  w = r(484920);
+  w = r(420212),
+  B = r(484920);
 let R = e => {
     let {
       children: t,
@@ -45,7 +45,7 @@ let R = e => {
     return l.useEffect(() => {
       if (!r || i) return;
       let e = e => {
-        e.key === B.mR.Escape && n()
+        e.key === w.mR.Escape && n()
       };
       return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
     }, [r, i, n]), t
@@ -59,13 +59,13 @@ let R = e => {
     let i = (0, p.Z)((0, a.Z)()),
       c = (0, s.e7)([C.default], () => C.default.getCurrentUser()),
       {
-        closeIntroToOrbsClaimedCoachmark: B
+        closeIntroToOrbsClaimedCoachmark: w
       } = (0, m.Z)({
         location: "CollectiblesShop"
       });
     l.useEffect(() => () => {
-      B()
-    }, [i, B]);
+      w()
+    }, [i, w]);
     let {
       onClose: Z
     } = (0, k.Db)(), {
@@ -89,39 +89,45 @@ let R = e => {
         var e;
         return null == (e = v.Z.getCategory(U)) ? void 0 : e.name
       }),
-      [q, K] = l.useState();
+      [q, Y] = l.useState();
     (0, P.Kp)();
-    let Y = l.useCallback((e, t) => {
-        K(e), z(t)
+    let K = l.useCallback((e, t) => {
+        Y(e), z(t)
       }, []),
       {
         selectedTab: X,
         transitionState: J,
         transitionToTab: Q
       } = (0, x.B)(M, t);
-    (0, E.q3)(i, X, G, J, q), (0, E.EB)(X, c), (0, I.Z)(), l.useEffect(() => {
+    (0, E.q3)(i, X, G, J, q), (0, E.EB)(X, c);
+    let {
+      dismissShopButtonDC: $
+    } = (0, I.Z)();
+    l.useEffect(() => {
+      $()
+    }, [$]), l.useEffect(() => {
       t || (0, d.Y)(A.Z5c.COLLECTIBLES_SHOP)
     }, [t]);
-    let $ = (0, s.e7)([_.Z], () => _.Z.getLayers().includes(A.S9g.COLLECTIBLES_SHOP)),
-      ee = l.useRef(null),
-      et = l.useRef(null);
-    (0, u.Tbt)(ee);
+    let ee = (0, s.e7)([_.Z], () => _.Z.getLayers().includes(A.S9g.COLLECTIBLES_SHOP)),
+      et = l.useRef(null),
+      er = l.useRef(null);
+    (0, u.Tbt)(et);
     let {
-      setFullScreenOpen: er,
-      fullScreenOpen: en
+      setFullScreenOpen: en,
+      fullScreenOpen: el
     } = (0, j.S)();
     l.useEffect(() => {
-      if (t) return er(!0), () => er(!1);
+      if (t) return en(!0), () => en(!1);
       if (!t) {
         var e;
-        null == (e = et.current) || e.focus()
+        null == (e = er.current) || e.focus()
       }
-    }, [t, er]);
+    }, [t, en]);
     let {
-      analyticsLocations: el
+      analyticsLocations: ei
     } = (0, E.MV)(X);
-    return en && !t ? null : (0, n.jsx)(f.Gt, {
-      value: el,
+    return el && !t ? null : (0, n.jsx)(f.Gt, {
+      value: ei,
       children: (0, n.jsx)(O.k0, {
         newValue: {
           sessionId: i,
@@ -130,20 +136,20 @@ let R = e => {
         },
         children: (0, n.jsx)(R, {
           onClose: Z,
-          shouldAddEventListener: t && !$,
+          shouldAddEventListener: t && !ee,
           children: (0, n.jsx)("div", {
-            className: w.shop,
-            ref: t ? ee : et,
+            className: B.shop,
+            ref: t ? et : er,
             tabIndex: -1,
             children: (0, n.jsxs)("div", {
-              className: o()(w.shopViewWrapper, {
-                [w.visible]: J === N.f7.VISIBLE,
-                [w.in]: J === N.f7.IN,
-                [w.out]: J === N.f7.OUT
+              className: o()(B.shopViewWrapper, {
+                [B.visible]: J === N.f7.VISIBLE,
+                [B.in]: J === N.f7.IN,
+                [B.out]: J === N.f7.OUT
               }),
               children: [(0, n.jsx)(L.I, {
                 isFullScreen: t,
-                isLayer: $,
+                isLayer: ee,
                 onClose: Z,
                 handleTransition: Q,
                 selectedTab: X
@@ -154,7 +160,7 @@ let R = e => {
                 transitionToTab: Q,
                 transitionState: J,
                 sortedCategories: V,
-                updateAnalyticsState: Y
+                updateAnalyticsState: K
               })]
             })
           })

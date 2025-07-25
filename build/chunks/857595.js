@@ -3,12 +3,12 @@
 n.d(t, {
   Ej: () => v,
   Nc: () => E,
-  Qj: () => f,
+  Qj: () => _,
   TX: () => I,
   Uv: () => N,
   ZZ: () => d,
   Zt: () => y,
-  cq: () => _,
+  cq: () => f,
   eN: () => A,
   f1: () => h,
   gs: () => T,
@@ -44,14 +44,14 @@ function d() {
   })
 }
 
-function _(e) {
+function f(e) {
   r.Z.dispatch({
     type: "ACCESSIBILITY_SET_ZOOM",
     zoom: e
   })
 }
 
-function f() {
+function _() {
   r.Z.dispatch({
     type: "ACCESSIBILITY_KEYBOARD_MODE_ENABLE"
   }), a.default.track(s.rMx.KEYBOARD_MODE_TOGGLED, {

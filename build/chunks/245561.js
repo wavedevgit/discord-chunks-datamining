@@ -19,7 +19,7 @@ function u(e) {
     skuBenefits: a,
     className: o
   } = e;
-  return null != i ? t = i.map(e => (0, r.jsx)(_, {
+  return null != i ? t = i.map(e => (0, r.jsx)(f, {
     applicationId: n,
     benefit: e,
     className: o
@@ -63,7 +63,7 @@ function d(e) {
   })
 }
 
-function _(e) {
+function f(e) {
   let {
     applicationId: t,
     benefit: n,
@@ -71,7 +71,7 @@ function _(e) {
     emojiContainerClassName: s,
     showsDescription: u = !0,
     nameTextVariant: d = "text-md/medium",
-    nameTextColor: _ = "header-primary"
+    nameTextColor: f = "header-primary"
   } = e;
   return (0, r.jsxs)("div", {
     className: a()(c.container, i),
@@ -82,7 +82,7 @@ function _(e) {
       className: c.infoContainer,
       children: [(0, r.jsx)(o.Text, {
         variant: d,
-        color: _,
+        color: f,
         className: c.name,
         children: n.name
       }), u && (0, r.jsx)(o.Text, {

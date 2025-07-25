@@ -18,8 +18,8 @@ var r = n(658722),
   c = n(212819),
   u = n(933557),
   d = n(861262),
-  _ = n(85034),
-  f = n(778877),
+  f = n(85034),
+  _ = n(778877),
   p = n(592125),
   h = n(984933),
   m = n(699516),
@@ -140,7 +140,7 @@ function q(e, t) {
 function X(e, t, n) {
   let r = h.ZP.getChannels(n)[h.sH].concat(h.ZP.getChannels(n)[h.Zb]),
     i = h.ZP.getTextChannelNameDisambiguations(n),
-    a = _.Z.getCurrentConfig({
+    a = f.Z.getCurrentConfig({
       location: "guildChannelValidator"
     }).enabled,
     s = o().chain(r).map(e => {
@@ -174,7 +174,7 @@ function J(e) {
     r = g.Z.getCurrentSearchId(),
     i = (0, d.g)(r);
   if (i === N.aib.GUILD) return X(e, t, n);
-  let a = (0, f.a)({
+  let a = (0, _.a)({
     location: "channelValidator"
   });
   return i === N.aib.DMS && !!a && Q(e, t)
@@ -281,13 +281,13 @@ function ea(e) {
       return []
   }
   let u = O.default.getCurrentUser(),
-    _ = n.toLowerCase().replace(/^@/, ""),
-    f = null != u && n.length > 0 && (C.intl.string(C.t.Qf3ptr).startsWith(_) || N.ME.substr(1).startsWith(_)),
+    f = n.toLowerCase().replace(/^@/, ""),
+    _ = null != u && n.length > 0 && (C.intl.string(C.t.Qf3ptr).startsWith(f) || N.ME.substr(1).startsWith(f)),
     p = t.filter(e => {
       let {
         record: t
       } = e;
-      return !m.Z.isBlockedOrIgnored(t.id) && (!f || t.id !== (null == u ? void 0 : u.id))
+      return !m.Z.isBlockedOrIgnored(t.id) && (!_ || t.id !== (null == u ? void 0 : u.id))
     }).map(e => {
       let {
         record: t
@@ -297,7 +297,7 @@ function ea(e) {
         user: t
       }
     });
-  return f && p.unshift({
+  return _ && p.unshift({
     text: N.ME,
     user: u
   }), p
@@ -368,7 +368,7 @@ function es(e, t) {
 }
 
 function el(e, t, n) {
-  let r = _.Z.getCurrentConfig({
+  let r = f.Z.getCurrentConfig({
       location: "getInFilterAutocompletionsForGuild"
     }).enabled,
     i = v.ZP.queryChannels({
@@ -410,7 +410,7 @@ function ec(e, t, n) {
   e.startsWith('"') && e.endsWith('"') ? e = e.substring(1, e.length - 1).replaceAll(/\\(.)/g, (e, t) => t) : e.startsWith('"') && (e = e.substring(1).replaceAll(/\\(.)/g, (e, t) => t)), "#" === e[0] && (e = e.substring(1));
   let r = (0, d.g)(t);
   if (r === N.aib.GUILD) return el(e, t, n);
-  let i = (0, f.a)({
+  let i = (0, _.a)({
     location: "getInFilterAutocompletions"
   });
   return r === N.aib.DMS && i ? es(e, n) : []
@@ -420,7 +420,7 @@ var ed = function(e) {
   return e.FILTER = "FILTER", e.ANSWER = "ANSWER", e
 }({});
 
-function e_() {
+function ef() {
   let e = [C.intl.string(C.t.ZNR2fn), C.intl.string(C.t["20uQR0"]), C.intl.string(C.t.L4lxyM), C.intl.string(C.t["AV/v6u"]), C.intl.string(C.t.XM9XGB), C.intl.string(C.t.TNLcp6), C.intl.string(C.t.F8Wf0d), C.intl.string(C.t.PJgX2t), C.intl.string(C.t.nrpA5O)];
   return {
     [N.dCx.FILTER_FROM]: {
@@ -611,10 +611,10 @@ function e_() {
     }
   }
 }
-let ef = {};
+let e_ = {};
 
 function ep() {
-  Object.assign(ef, e_())
+  Object.assign(e_, ef())
 }
 
 function eh(e) {
@@ -622,11 +622,11 @@ function eh(e) {
 }
 
 function em(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : Object.keys(ef).length,
+  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : Object.keys(e_).length,
     n = [];
-  for (let r of Object.keys(ef)) {
+  for (let r of Object.keys(e_)) {
     if (n.length >= t) break;
-    let a = ef[r].key;
+    let a = e_[r].key;
     eh(r) && null != a && i()(e.toLowerCase(), a) && n.push({
       token: r,
       text: a
@@ -640,4 +640,4 @@ function eg(e) {
   let t = e.toLowerCase().replace(/^@/, "");
   return C.intl.string(C.t.Qf3ptr).startsWith(t) || N.ME.substring(1).startsWith(t)
 }
-let eE = ef
+let eE = e_

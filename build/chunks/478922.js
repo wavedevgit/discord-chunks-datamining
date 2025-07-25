@@ -21,7 +21,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,7 +34,7 @@ function _(e) {
   return e
 }
 
-function f(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -46,7 +46,7 @@ function f(e, t) {
 }
 
 function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -72,7 +72,7 @@ function m(e, t) {
 function g(e, t, n) {
   let a = (0, c.G6)(e),
     d = new Map,
-    f = new n(e => {
+    _ = new n(e => {
       e.forEach(e => {
         var t;
         let {
@@ -164,9 +164,9 @@ function g(e, t, n) {
       ref: K,
       key: "container",
       onUpdate: es,
-      resizeObserver: f,
+      resizeObserver: _,
       listenerMap: d
-    }), (0, i.useImperativeHandle)(m, () => _({
+    }), (0, i.useImperativeHandle)(m, () => f({
       getScrollerNode: () => K.current,
       getItemGrid: ea,
       getCoordsMap: eo,
@@ -179,7 +179,7 @@ function g(e, t, n) {
     }, [E, er]);
     return i.useLayoutEffect(() => {
       2 !== z.current.dirty && (z.current.dirty = 2)
-    }, [ee, z]), (0, r.jsxs)("div", p(_({
+    }, [ee, z]), (0, r.jsxs)("div", p(f({
       ref: K,
       onScroll: el,
       className: o()(k, {
@@ -204,8 +204,8 @@ function g(e, t, n) {
               a = $[e],
               o = Q[(0, c.DP)(n)],
               s = null == C ? void 0 : C(n);
-            return null != i && null != a ? (0, r.jsxs)("div", p(_({}, s), {
-              style: _({}, i, null != (t = null == s ? void 0 : s.style) ? t : {}),
+            return null != i && null != a ? (0, r.jsxs)("div", p(f({}, s), {
+              style: f({}, i, null != (t = null == s ? void 0 : s.style) ? t : {}),
               children: [null != A && null != o && A(n, o, e), a.map(e => {
                 let [t, n, r] = e, i = Q[t];
                 return null != i ? N(n, r, i, t, J) : null

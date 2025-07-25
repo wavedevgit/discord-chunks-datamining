@@ -12,8 +12,8 @@ var r = n(106351),
   c = n(483360),
   u = n(877565),
   d = n(590921),
-  _ = n(761652),
-  f = n(176505),
+  f = n(761652),
+  _ = n(176505),
   p = n(388032);
 
 function h(e) {
@@ -32,10 +32,10 @@ function h(e) {
 }
 
 function m(e) {
-  return f.EC.has(e.id) ? "<id:".concat(e.id, ">") : "<#".concat(e.id, ">")
+  return _.EC.has(e.id) ? "<id:".concat(e.id, ">") : "<#".concat(e.id, ">")
 }
 let g = {
-  sentinel: _.zy,
+  sentinel: f.zy,
   matches: (e, t, n, r, i) => i.mentions.channel !== d.nS.DENY && !e.isPrivate(),
   queryResults(e, t, n, r, a) {
     let o, s, u = l.sH;
@@ -64,7 +64,7 @@ let g = {
         query: l,
         options: c,
         onHover: d,
-        onClick: f
+        onClick: _
       } = e,
       h = l.charAt(0) === i.xQ.VOICE_CHANNEL;
     return h ? (t = p.t.rMUL39, n = p.intl.string(p.t.CYnO4u), l = l.substring(1)) : c.forNonStringCommandOption ? (t = p.t.upNFT0, n = p.intl.string(p.t.OGiMXF)) : (t = p.t.UhnmJC, n = p.intl.string(p.t.nIfr0d)), (0, u.HI)({
@@ -72,7 +72,7 @@ let g = {
       selectedIndex: o,
       autocompletes: r,
       onHover: d,
-      onClick: f,
+      onClick: _,
       titleWithQuery: t,
       titleWithoutQuery: n,
       Component: a.ZP.Channel,
@@ -81,7 +81,7 @@ let g = {
         key: e.id,
         category: s.Z.getChannel(e.parent_id)
       }),
-      getQuery: e => h ? "".concat(_.zy).concat(i.xQ.VOICE_CHANNEL).concat(e) : "".concat(_.zy).concat(e),
+      getQuery: e => h ? "".concat(f.zy).concat(i.xQ.VOICE_CHANNEL).concat(e) : "".concat(f.zy).concat(e),
       key: "channels"
     })
   },

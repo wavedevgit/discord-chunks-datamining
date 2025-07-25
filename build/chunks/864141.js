@@ -13,8 +13,8 @@ var i = n(120356),
   c = n(906732),
   u = n(933557),
   d = n(430824),
-  _ = n(957575),
-  f = n(323038),
+  f = n(957575),
+  _ = n(323038),
   p = n(960870),
   h = n(139793),
   m = n(652853),
@@ -90,9 +90,9 @@ function w(e) {
   }), x = (0, h.Z)({
     userId: t.id,
     onAction: L
-  }), M = (0, o.e7)([d.Z], () => d.Z.getGuild(i.guild_id)), k = (0, f.Z)(i), j = (0, u.ZP)(i), {
+  }), M = (0, o.e7)([d.Z], () => d.Z.getGuild(i.guild_id)), k = (0, _.Z)(i), j = (0, u.ZP)(i), {
     channelStatusEnabled: U
-  } = (0, _.D)({
+  } = (0, f.D)({
     location: "UserProfileVoiceActivityCard"
   }), G = () => {
     if (t.id !== n.id) return null;

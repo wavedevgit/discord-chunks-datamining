@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(717401),
   u = n(104494),
   d = n(639119),
-  _ = n(716534),
-  f = n(664891),
+  f = n(716534),
+  _ = n(664891),
   p = n(365943),
   h = n(669079),
   m = n(987209),
@@ -72,8 +72,8 @@ function x(e) {
       purchaseState: ec,
       isPremium: eu,
       setHasAcceptedTerms: ed,
-      purchaseType: e_,
-      setEntitlementsGranted: ef,
+      purchaseType: ef,
+      setEntitlementsGranted: e_,
       startedPaymentFlowWithPaymentSourcesRef: ep,
       invoicePreview: eh,
       inReverseTrial: em,
@@ -107,13 +107,13 @@ function x(e) {
     })
   }, [$]);
   let ew = i.useCallback((e, t) => {
-      K(e), null != t && ef(t), x(E.h8.CONFIRM, {
+      K(e), null != t && e_(t), x(E.h8.CONFIRM, {
         fulfillment: {
           subscription: e,
           entitlements: t
         }
       })
-    }, [x, K, ef]),
+    }, [x, K, e_]),
     eD = (0, S.m)(Q, X),
     eL = null != en && R.o4.has(en.id) && null != eD && !(0, l.aQ)(eD) ? Error(w.intl.string(w.t["2ik8io"])) : null,
     ex = i.useRef(null),
@@ -122,14 +122,14 @@ function x(e) {
     eU = null == eR || null == (t = eR.discount) ? void 0 : t.plan_ids,
     eG = !eE && null != eR && null != eU && null != en && eU.includes(en.id),
     eB = eE && (0, h.pO)(ey),
-    eV = null == Z && null == H && e_ === P.GZ.SUBSCRIPTION,
+    eV = null == Z && null == H && ef === P.GZ.SUBSCRIPTION,
     eF = (0, I.Kp)({
       isTrial: ej,
       isGift: eE,
       selectedSkuId: er,
       startedPaymentFlowWithPaymentSources: ep.current
     }),
-    eZ = eE && e_ === P.GZ.ONE_TIME,
+    eZ = eE && ef === P.GZ.ONE_TIME,
     eH = eZ || (eF ? eV && eu : eu),
     eY = (0, c.id)(en, eE, eO),
     eW = i.useCallback(() => eF ? void x(E.h8.SKU_SELECT) : eY ? void x(E.h8.SELECT_FREE_SKU) : eZ ? x(E.h8.GIFT_CUSTOMIZATION) : x(E.h8.PLAN_SELECT), [x, eF, eZ, eY]),
@@ -137,12 +137,12 @@ function x(e) {
     ez = () => {
       x(E.h8.ADD_PAYMENT_STEPS)
     };
-  return e_ === P.GZ.ONE_TIME ? (eK = null != ee, a = (0, r.jsx)(T.Z, {
+  return ef === P.GZ.ONE_TIME ? (eK = null != ee, a = (0, r.jsx)(T.Z, {
     hasLegalTermsFlash: eT,
     legalTermsNodeRef: ex,
     onPaymentSourceChange: e => ea(null != e ? e.id : null),
     handlePaymentSourceAdd: () => x(E.h8.ADD_PAYMENT_STEPS)
-  })) : (eK = eE ? null == eh : null != eD && e_ === P.GZ.SUBSCRIPTION && ej && !eD.canRedeemTrial(), null == W || em || eE ? (o()(null != en, "Expected plan to be selected"), a = (0, r.jsx)(_.Z, {
+  })) : (eK = eE ? null == eh : null != eD && ef === P.GZ.SUBSCRIPTION && ej && !eD.canRedeemTrial(), null == W || em || eE ? (o()(null != en, "Expected plan to be selected"), a = (0, r.jsx)(f.Z, {
     selectedPlanId: en.id,
     planGroup: U,
     paymentSources: Q,
@@ -162,7 +162,7 @@ function x(e) {
     isTrial: ej || null != M && null != k,
     isDiscount: eG,
     handleClose: Y
-  })) : (o()(null != en, "Expected plan to be selected"), a = (0, r.jsx)(f.Z, {
+  })) : (o()(null != en, "Expected plan to be selected"), a = (0, r.jsx)(_.Z, {
     premiumSubscription: W,
     paymentSources: Q,
     priceOptions: J,

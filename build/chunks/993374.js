@@ -56,9 +56,9 @@ function d() {
     selectedSort: void 0
   }
 }
-let _ = Object.freeze(d());
+let f = Object.freeze(d());
 
-function f(e, t) {
+function _(e, t) {
   return null != e && !!e.toLowerCase().includes(t.toLowerCase())
 }
 
@@ -68,16 +68,16 @@ function p(e, t) {
   for (let t of r)
     if (e.userId === t) return !0;
   for (let t of n)
-    if (f(e.nick, t)) return !0;
+    if (_(e.nick, t)) return !0;
   if (null == e.user) return !1;
   let {
     globalName: i,
     username: a
   } = e.user;
   for (let e of n)
-    if (f(a, e)) return !0;
+    if (_(a, e)) return !0;
   for (let e of n)
-    if (f(i, e)) return !0;
+    if (_(i, e)) return !0;
   return !1
 }
 
@@ -92,7 +92,7 @@ class m {
     this._searchState = d(), this.hasDefaultQuery = !0
   }
   updateSearchState(e) {
-    return this._searchState = u({}, this._searchState, e), this.hasDefaultQuery = i()(this._searchState, _), !0
+    return this._searchState = u({}, this._searchState, e), this.hasDefaultQuery = i()(this._searchState, f), !0
   }
   resetSearchState() {
     return !this.hasDefaultQuery && (this._searchState = d(), this.hasDefaultQuery = !0, !0)
@@ -110,10 +110,10 @@ class m {
       selectedRoleIds: c,
       selectedJoinDateOption: u,
       selectedAccountAgeOption: d,
-      selectedSourceInviteCode: _,
-      selectedJoinSourceType: f
+      selectedSourceInviteCode: f,
+      selectedJoinSourceType: _
     } = this._searchState;
-    return !(t.length > 0 && !p(e, t) || c.size > 0 && !h(e, c) || null != u.afterDate && e.joinedAtTimestamp < u.afterDate || null != u.beforeDate && e.joinedAtTimestamp > u.beforeDate || null != d.afterDate && s.default.extractTimestamp(e.userId) < d.afterDate || null != d.beforeDate && s.default.extractTimestamp(e.userId) > d.beforeDate) && (null == _ || e.sourceInviteCode === _) && (null == f || e.joinSourceType === f) && (!n && !r && !i && !l || !!(n && e.hasUnusualDmActivity || r && (0, o.b)(e) || i && e.hasUnusualAccountActivity || l && (0, a.EY)(e)))
+    return !(t.length > 0 && !p(e, t) || c.size > 0 && !h(e, c) || null != u.afterDate && e.joinedAtTimestamp < u.afterDate || null != u.beforeDate && e.joinedAtTimestamp > u.beforeDate || null != d.afterDate && s.default.extractTimestamp(e.userId) < d.afterDate || null != d.beforeDate && s.default.extractTimestamp(e.userId) > d.beforeDate) && (null == f || e.sourceInviteCode === f) && (null == _ || e.joinSourceType === _) && (!n && !r && !i && !l || !!(n && e.hasUnusualDmActivity || r && (0, o.b)(e) || i && e.hasUnusualAccountActivity || l && (0, a.EY)(e)))
   }
   constructor(e) {
     c(this, "guildId", void 0), c(this, "_searchState", void 0), c(this, "hasDefaultQuery", void 0), this.guildId = e, this._searchState = d(), this.hasDefaultQuery = !0

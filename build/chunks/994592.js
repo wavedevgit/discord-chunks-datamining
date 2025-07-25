@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
   j0: () => p,
-  mY: () => f,
-  on: () => _
+  mY: () => _,
+  on: () => f
 }), n(388685);
 var r = n(442837),
   i = n(652515),
@@ -22,11 +22,11 @@ function d(e) {
   return !!(i && o || n.isViewingServerShop(e))
 }
 
-function _(e, t) {
+function f(e, t) {
   return !!d(e) || (0, c.U)(e, t)
 }
 
-function f(e) {
+function _(e) {
   let t = (0, c.Z)(e),
     n = (0, r.e7)([l.Z, s.Z], () => d(e, [l.Z, s.Z]), [e]),
     {
@@ -36,7 +36,7 @@ function f(e) {
 }
 
 function p(e) {
-  let t = f(e),
+  let t = _(e),
     n = (0, i.RF)(e, "useShowRoleSubscriptionsInChannelList");
   return t && !n
 }

@@ -39,16 +39,16 @@ function d(e, t) {
       writable: !0,
       configurable: !0
     }
-  }), t && _(e, t)
+  }), t && f(e, t)
 }
 
-function _(e, t) {
-  return (_ = Object.setPrototypeOf || function(e, t) {
+function f(e, t) {
+  return (f = Object.setPrototypeOf || function(e, t) {
     return e.__proto__ = t, e
   })(e, t)
 }
 
-function f(e) {
+function _(e) {
   var t = m();
   return function() {
     var n, r = g(e);
@@ -91,7 +91,7 @@ function E(e, t, n) {
 }
 var b = function(e) {
   d(n, e);
-  var t = f(n);
+  var t = _(n);
 
   function n() {
     var e;

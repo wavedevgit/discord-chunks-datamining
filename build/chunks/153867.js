@@ -14,12 +14,12 @@ var r = n(524437),
   c = n(781391),
   u = n(210887),
   d = n(695346),
-  _ = n(675478),
-  f = n(981631),
+  f = n(675478),
+  _ = n(981631),
   p = n(874893);
 
 function h(e) {
-  return _.hW.updateAsync("guildFolders", t => {
+  return f.hW.updateAsync("guildFolders", t => {
     t.folders = e.map(e => {
       let t = r.yX.create({
         guildIds: e.guildIds
@@ -32,18 +32,18 @@ function h(e) {
         value: String(e.folderName)
       })), t
     })
-  }, _.fy.FREQUENT_USER_ACTION)
+  }, f.fy.FREQUENT_USER_ACTION)
 }
 
 function m(e) {
   switch (e) {
-    case f.BRd.DARK:
+    case _.BRd.DARK:
       return r.Q2.DARK;
-    case f.BRd.LIGHT:
+    case _.BRd.LIGHT:
       return r.Q2.LIGHT;
-    case f.BRd.DARKER:
+    case _.BRd.DARKER:
       return r.Q2.DARKER;
-    case f.BRd.MIDNIGHT:
+    case _.BRd.MIDNIGHT:
       return r.Q2.MIDNIGHT;
     default:
       return r.Q2.DARK
@@ -70,7 +70,7 @@ function E(e) {
     customUserThemeSettings: n,
     theme: r,
     useSystemTheme: i
-  } = e, s = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : _.fy.INFREQUENT_USER_ACTION, u = "system" === r ? p.KW.ON : p.KW.OFF, d = null != i ? i : u;
+  } = e, s = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : f.fy.INFREQUENT_USER_ACTION, u = "system" === r ? p.KW.ON : p.KW.OFF, d = null != i ? i : u;
   if (o.Z.dispatch({
       type: "UNSYNCED_USER_SETTINGS_UPDATE",
       settings: {
@@ -91,7 +91,7 @@ function E(e) {
           }
         }
       }
-    }), l.Z.shouldSync("appearance")) return _.hW.updateAsync("appearance", e => {
+    }), l.Z.shouldSync("appearance")) return f.hW.updateAsync("appearance", e => {
     e.theme = m(r), e.clientThemeSettings = g({
       backgroundGradientPresetId: t,
       customUserThemeSettings: n
@@ -161,11 +161,11 @@ let b = {
       settings: t
     })
   },
-  updateLocale: e => _.hW.updateAsync("localization", t => {
+  updateLocale: e => f.hW.updateAsync("localization", t => {
     t.locale = i.Gm.create({
       value: e
     })
-  }, _.fy.INFREQUENT_USER_ACTION),
+  }, f.fy.INFREQUENT_USER_ACTION),
   updateTheme(e) {
     o.Z.dispatch({
       type: "SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE",
@@ -176,8 +176,8 @@ let b = {
           }
         }
       }
-    }), l.Z.shouldSync("appearance") && _.hW.updateAsync("appearance", t => {
+    }), l.Z.shouldSync("appearance") && f.hW.updateAsync("appearance", t => {
       t.theme = m(e)
-    }, _.fy.INFREQUENT_USER_ACTION)
+    }, f.fy.INFREQUENT_USER_ACTION)
   }
 }

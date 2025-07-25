@@ -12,9 +12,9 @@ var r, i = n(442837),
   c = n(581883),
   u = n(12647),
   d = n(981631),
-  _ = n(959517);
+  f = n(959517);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,7 +30,7 @@ function p(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -251,7 +251,7 @@ function K(e) {
 }
 class z extends(r = i.ZP.DeviceSettingsStore) {
   initialize(e) {
-    this.waitFor(c.Z), isNaN((O = p({}, y, null != e ? e : null)).fontSize) && (O.fontSize = d.yqN.FONT_SIZE_DEFAULT), 0 > _.fP.indexOf(null != O.messageGroupSpacing ? O.messageGroupSpacing : -1) && (O.messageGroupSpacing = null)
+    this.waitFor(c.Z), isNaN((O = p({}, y, null != e ? e : null)).fontSize) && (O.fontSize = d.yqN.FONT_SIZE_DEFAULT), 0 > f.fP.indexOf(null != O.messageGroupSpacing ? O.messageGroupSpacing : -1) && (O.messageGroupSpacing = null)
   }
   get fontScale() {
     return O.fontSize / d.yqN.FONT_SIZE_DEFAULT * 100
@@ -304,14 +304,14 @@ class z extends(r = i.ZP.DeviceSettingsStore) {
     return O.keyboardNavigationExplainerModalSeen
   }
   get messageGroupSpacing() {
-    return null != O.messageGroupSpacing ? O.messageGroupSpacing : l.jU.getSetting() ? _.c8 : _.pq
+    return null != O.messageGroupSpacing ? O.messageGroupSpacing : l.jU.getSetting() ? f.c8 : f.pq
   }
   get isMessageGroupSpacingIncreased() {
-    let e = l.jU.getSetting() ? _.c8 : _.pq;
+    let e = l.jU.getSetting() ? f.c8 : f.pq;
     return this.messageGroupSpacing > e
   }
   get isMessageGroupSpacingDecreased() {
-    let e = l.jU.getSetting() ? _.c8 : _.pq;
+    let e = l.jU.getSetting() ? f.c8 : f.pq;
     return this.messageGroupSpacing < e
   }
   get isSubmitButtonEnabled() {
@@ -364,7 +364,7 @@ class z extends(r = i.ZP.DeviceSettingsStore) {
     return O
   }
 }
-f(z, "displayName", "AccessibilityStore"), f(z, "persistKey", "AccessibilityStore"), f(z, "migrations", [() => {
+_(z, "displayName", "AccessibilityStore"), _(z, "persistKey", "AccessibilityStore"), _(z, "migrations", [() => {
   let e = "a11yFontScale",
     t = "a11yZoom",
     n = "a11yColorblindMode",

@@ -30,14 +30,14 @@ function d(e) {
   u(l = n, t)
 }
 
-function _(e) {
+function f(e) {
   let {
     user: t
   } = e;
   c = t.id
 }
 
-function f(e) {
+function _(e) {
   let {
     userId: t
   } = e;
@@ -79,9 +79,9 @@ class m extends(r = i.ZP.PersistedStore) {
 o(m, "displayName", "LoginRequiredActionStore"), o(m, "persistKey", "LoginRequiredActionStore");
 let g = new m(a.Z, {
   LOGIN_ATTEMPTED: d,
-  CONNECTION_OPEN: _,
-  CURRENT_USER_UPDATE: _,
+  CONNECTION_OPEN: f,
+  CURRENT_USER_UPDATE: f,
   LOGOUT: p,
-  PASSWORD_UPDATED: f,
+  PASSWORD_UPDATED: _,
   MULTI_ACCOUNT_REMOVE_ACCOUNT: h
 })

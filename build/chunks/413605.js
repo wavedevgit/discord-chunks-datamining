@@ -2,10 +2,10 @@
 "use strict";
 n.d(t, {
   $P: () => c,
-  P1: () => _,
+  P1: () => f,
   TY: () => u,
   Tx: () => s,
-  VR: () => f,
+  VR: () => _,
   W6: () => l,
   wx: () => a.wx
 }), n(749958), n(997431);
@@ -38,10 +38,10 @@ function d(e) {
   return e.type === a.wx.FRIEND || null == e.guild && null != e.inviter
 }
 
-function _(e) {
+function f(e) {
   return e.target_type === a.Iq.EMBEDDED_APPLICATION
 }
 
-function f(e) {
+function _(e) {
   return "number" == typeof e.type ? e.type : o(e) ? a.wx.GROUP_DM : d(e) ? a.wx.FRIEND : a.wx.GUILD
 }

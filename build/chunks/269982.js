@@ -13,7 +13,7 @@ var r = n(255367),
   u = n(388032),
   d = n(717906);
 
-function _(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,14 +22,14 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
@@ -38,7 +38,7 @@ function f(e) {
 function p(e) {
   let {
     product: t,
-    onSecondaryClick: _
+    onSecondaryClick: f
   } = e, {
     newestAnalyticsLocation: p
   } = (0, s.ZP)(), h = i.useCallback(() => {
@@ -46,17 +46,17 @@ function p(e) {
       let {
         default: e
       } = await n.e("43360").then(n.bind(n, 73415));
-      return n => (0, r.jsx)(e, f({
+      return n => (0, r.jsx)(e, _({
         collectableType: null == t ? void 0 : t.type,
         analyticsSource: p,
         analyticsLocation: {
           section: c.jXE.USER_PROFILE,
           object: c.qAy.BUTTON_CTA
         },
-        onSecondaryClick: _
+        onSecondaryClick: f
       }, n))
     })
-  }, [t, p, _]), m = i.useMemo(() => {
+  }, [t, p, f]), m = i.useMemo(() => {
     switch (null == t ? void 0 : t.type) {
       case a.Z.AVATAR_DECORATION:
         return u.intl.format(u.t["aFR/EB"], {

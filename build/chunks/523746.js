@@ -11,9 +11,9 @@ var r, i = n(392711),
   c = n(592125),
   u = n(944486),
   d = n(914010),
-  _ = n(981631);
+  f = n(981631);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -29,7 +29,7 @@ function p(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -122,7 +122,7 @@ function A(e) {
     }, null != E[t]) {
     let e = E[t];
     delete E[t], 1 !== e.indexOf("all") && (e = null), s.tn.post({
-      url: _.ANM.CALL_RING(t),
+      url: f.ANM.CALL_RING(t),
       body: {
         recipients: e
       },
@@ -208,7 +208,7 @@ class w extends(r = o.ZP.Store) {
     }
   }
 }
-f(w, "displayName", "CallStore");
+_(w, "displayName", "CallStore");
 let D = new w(l.Z, {
   CONNECTION_OPEN: y,
   CONNECTION_CLOSED: v,

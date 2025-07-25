@@ -13,8 +13,8 @@ var i = n(120356),
   c = n(906732),
   u = n(849522),
   d = n(639119),
-  _ = n(594174),
-  f = n(74538),
+  f = n(594174),
+  _ = n(74538),
   p = n(694320),
   h = n(981631),
   m = n(474936),
@@ -71,7 +71,7 @@ function S(e) {
     showRemainingCharsAfterCount: A,
     className: N,
     parseCustomEmojisForCharCount: C
-  } = e, R = (0, o.e7)([_.default], () => f.ZP.canUseIncreasedMessageLength(_.default.getCurrentUser())), P = (0, u.Z)(), w = null != S ? S : P, D = null != (b = null != A ? A : S) ? b : P / 10, L = C ? T(I) : I.length, x = null != O.upsellLongMessages && (null != L ? L : 0) > h.J6R && R, M = null != O.upsellLongMessages && !R, k = (null == (n = (0, d.N)()) || null == (t = n.subscription_trial) ? void 0 : t.sku_id) === m.Si.TIER_2, j = w - L, U = j > D, G = j < 0 && k, B = 0 === j ? g.intl.string(g.t.tU6YQ0) : j > 0 ? g.intl.formatToPlainString(g.t.qH8uFR, {
+  } = e, R = (0, o.e7)([f.default], () => _.ZP.canUseIncreasedMessageLength(f.default.getCurrentUser())), P = (0, u.Z)(), w = null != S ? S : P, D = null != (b = null != A ? A : S) ? b : P / 10, L = C ? T(I) : I.length, x = null != O.upsellLongMessages && (null != L ? L : 0) > h.J6R && R, M = null != O.upsellLongMessages && !R, k = (null == (n = (0, d.N)()) || null == (t = n.subscription_trial) ? void 0 : t.sku_id) === m.Si.TIER_2, j = w - L, U = j > D, G = j < 0 && k, B = 0 === j ? g.intl.string(g.t.tU6YQ0) : j > 0 ? g.intl.formatToPlainString(g.t.qH8uFR, {
     count: j
   }) : g.intl.string(g.t.YSRIqa), {
     analyticsLocations: V

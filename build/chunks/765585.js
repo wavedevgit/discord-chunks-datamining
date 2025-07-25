@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(393238),
   u = n(428967),
   d = n(266454),
-  _ = n(605236),
-  f = n(279745),
+  f = n(605236),
+  _ = n(279745),
   p = n(921944),
   h = n(388032),
   m = n(418952);
@@ -52,7 +52,7 @@ let g = 280,
     } = (0, c.ZP)();
 
     function K(e) {
-      if ((0, u.lg)(P)) return void(0, _.bj)(P, {
+      if ((0, u.lg)(P)) return void(0, f.bj)(P, {
         dismissAction: e
       });
       (0, d.Q3)(P, {
@@ -72,7 +72,7 @@ let g = 280,
       let n = (null != (t = null == (e = Y.current) ? void 0 : e.scrollWidth) ? t : 0) + 64;
       !Z && n > M && H(!0)
     }, [Z, W, Y, M]), i.useEffect(() => {
-      (0, _.kk)(P)
+      (0, f.kk)(P)
     }, [P]), (0, r.jsx)("div", {
       className: S,
       ref: t,
@@ -87,7 +87,7 @@ let g = 280,
           children: G
         }), (0, r.jsxs)("div", {
           className: o()(E, A ? m.artInline : m.artAbsolute),
-          children: [R && (0, r.jsx)(f.Z, {
+          children: [R && (0, r.jsx)(_.Z, {
             className: m.gifTag
           }), L]
         }), (0, r.jsxs)("div", {

@@ -43,13 +43,13 @@ function d(e, t) {
   return n
 }
 
-function _(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function f(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -82,7 +82,7 @@ let m = e => {
       playOnHover: a,
       responsive: c,
       mediaLayoutType: d
-    } = e, _ = f(e, ["externalRef", "autoPlay", "playOnHover", "responsive", "mediaLayoutType"]);
+    } = e, f = _(e, ["externalRef", "autoPlay", "playOnHover", "responsive", "mediaLayoutType"]);
     let p = !(0, o.e7)([s.Z], () => s.Z.useReducedMotion) && !a && n,
       m = i.useRef(null);
 
@@ -107,8 +107,8 @@ let m = e => {
 
     function y() {
       return {
-        maxWidth: _.width,
-        maxHeight: _.height,
+        maxWidth: f.width,
+        maxHeight: f.height,
         width: "100%",
         height: "100%"
       }
@@ -128,8 +128,8 @@ let m = e => {
       onFocus: g,
       onBlur: E,
       style: b()
-    }, _))
+    }, f))
   },
-  g = i.forwardRef((e, t) => (0, r.jsx)(m, _(u({}, e), {
+  g = i.forwardRef((e, t) => (0, r.jsx)(m, f(u({}, e), {
     externalRef: t
   })))

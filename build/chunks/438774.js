@@ -62,8 +62,8 @@ Object.create && (r.prototype = Object.create(null), new r().__proto__ || (n = !
     for (c = 1, l = Array(d - 1); c < d; c++) l[c - 1] = arguments[c];
     u.fn.apply(u.context, l)
   } else {
-    var _, f = u.length;
-    for (c = 0; c < f; c++) switch (u[c].once && this.removeListener(e, u[c].fn, void 0, !0), d) {
+    var f, _ = u.length;
+    for (c = 0; c < _; c++) switch (u[c].once && this.removeListener(e, u[c].fn, void 0, !0), d) {
       case 1:
         u[c].fn.call(u[c].context);
         break;
@@ -78,7 +78,7 @@ Object.create && (r.prototype = Object.create(null), new r().__proto__ || (n = !
         break;
       default:
         if (!l)
-          for (_ = 1, l = Array(d - 1); _ < d; _++) l[_ - 1] = arguments[_];
+          for (f = 1, l = Array(d - 1); f < d; f++) l[f - 1] = arguments[f];
         u[c].fn.apply(u[c].context, l)
     }
   }

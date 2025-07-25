@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(100527),
   u = n(906732),
   d = n(379357),
-  _ = n(358696),
-  f = n(649700),
+  f = n(358696),
+  _ = n(649700),
   p = n(313201),
   h = n(952164),
   m = n(960870),
@@ -71,7 +71,7 @@ function k(e) {
   } = (0, I.z)(), {
     interactionSource: Z,
     interactionSourceId: H
-  } = (0, y.Xo)(), Y = (0, f.Z)({
+  } = (0, y.Xo)(), Y = (0, _.Z)({
     activity: x,
     user: n
   }), W = (0, E.Z)(x), K = null != W.text && "" !== W.text, {
@@ -182,9 +182,9 @@ function k(e) {
               className: L.body,
               children: (0, r.jsxs)("div", {
                 className: L.content,
-                children: [(0, r.jsx)(_.E, {
+                children: [(0, r.jsx)(f.E, {
                   image: z,
-                  size: F === D.lY.MODAL_V2 ? _.J.SIZE_100 : _.J.SIZE_60,
+                  size: F === D.lY.MODAL_V2 ? f.J.SIZE_100 : f.J.SIZE_60,
                   className: L.clickableImage,
                   onClick: e => {
                     e.stopPropagation(), X({

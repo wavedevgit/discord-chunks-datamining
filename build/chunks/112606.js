@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 }), n(388685);
 var r = n(392711),
   i = n.n(r),
@@ -43,7 +43,7 @@ function d(e, t) {
     return t(Number.parseInt(n))
   })
 }
-let _ = i().throttle(e => {
+let f = i().throttle(e => {
   let {
     enabled: t,
     combosEnabled: n,
@@ -51,8 +51,8 @@ let _ = i().throttle(e => {
     screenshakeEnabled: i,
     shakeIntensity: o,
     screenshakeEnabledLocations: l,
-    confettiEnabled: _,
-    confettiSize: f,
+    confettiEnabled: f,
+    confettiSize: _,
     confettiCount: p,
     confettiEnabledLocations: h
   } = e;
@@ -63,8 +63,8 @@ let _ = i().throttle(e => {
     screenshake_enabled: i,
     shake_intensity: o,
     screenshake_enabled_locations: d(l, c),
-    confetti_enabled: _,
-    confetti_size: f,
+    confetti_enabled: f,
+    confetti_size: _,
     confetti_count: p,
     confetti_enabled_locations: d(h, u)
   })

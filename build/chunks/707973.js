@@ -13,11 +13,11 @@ var r = n(255367),
   u = n(761652),
   d = n(388032);
 
-function _(e) {
+function f(e) {
   return "".concat(u.ME).concat(e.name)
 }
 
-function f(e) {
+function _(e) {
   return "<@$".concat(e.id, ">")
 }
 let p = {
@@ -38,20 +38,20 @@ let p = {
       query: o,
       onHover: s,
       onClick: c
-    } = e, _ = t.map((e, t) => (0, r.jsx)(a.ZP.Game, {
+    } = e, f = t.map((e, t) => (0, r.jsx)(a.ZP.Game, {
       onClick: c,
       onHover: s,
       selected: n === t,
       index: t,
       game: e
-    }, e.id)), f = d.t.rPNimp, p = "Games";
+    }, e.id)), _ = d.t.rPNimp, p = "Games";
     return (0, r.jsxs)(i.Fragment, {
       children: [(0, l.gm)({
-        titleWithQuery: f,
+        titleWithQuery: _,
         titleWithoutQuery: p,
         query: o,
         getQuery: e => "".concat(u.ME).concat(e)
-      }), _]
+      }), f]
     }, "mentions")
   },
   onSelect(e) {
@@ -62,7 +62,7 @@ let p = {
       index: n,
       options: r
     } = e, i = t[n];
-    return r.replaceInlineInput("gameMentionInput", _(i), f(i)), {
+    return r.replaceInlineInput("gameMentionInput", f(i), _(i)), {
       type: c.z2.MENTION
     }
   }

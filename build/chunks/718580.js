@@ -13,8 +13,8 @@ var r = n(255367),
   c = n(481060),
   u = n(393238),
   d = n(699682),
-  _ = n(793903),
-  f = n(906732),
+  f = n(793903),
+  _ = n(906732),
   p = n(237617);
 
 function h(e, t, n) {
@@ -107,7 +107,7 @@ function S(e) {
   let S = {},
     {
       analyticsLocations: A
-    } = (0, f.ZP)();
+    } = (0, _.ZP)();
   i.Children.forEach(T.children, (e, t) => {
     S[e.props.id] = {
       children: e.props.children,
@@ -122,7 +122,7 @@ function S(e) {
     {
       reducedMotion: P
     } = i.useContext(l.S),
-    w = i.useContext(_.Z),
+    w = i.useContext(f.Z),
     D = S[N].impressionName,
     L = E(m({}, S[N].impressionProperties), {
       location_stack: A

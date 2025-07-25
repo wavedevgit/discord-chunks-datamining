@@ -28,8 +28,8 @@ var r = n(392711),
   c = n(590293),
   u = n(901461),
   d = n(131704),
-  _ = n(314897),
-  f = n(592125),
+  f = n(314897),
+  _ = n(592125),
   p = n(496675),
   h = n(709054),
   m = n(601070),
@@ -78,7 +78,7 @@ function I(e, t, n) {
 }
 
 function T(e) {
-  let t = (0, o.e7)([f.Z], () => f.Z.getChannel(h.default.castMessageIdAsChannelId(e.id)), [e]);
+  let t = (0, o.e7)([_.Z], () => _.Z.getChannel(h.default.castMessageIdAsChannelId(e.id)), [e]);
   return S((0, o.e7)([p.Z], () => p.Z.can(g.Plq.VIEW_CHANNEL, t), [t]), e, t)
 }
 
@@ -102,9 +102,9 @@ function A(e) {
 }
 
 function N(e) {
-  let t = (0, o.e7)([f.Z], () => f.Z.getChannel(null == e ? void 0 : e.parent_id)),
+  let t = (0, o.e7)([_.Z], () => _.Z.getChannel(null == e ? void 0 : e.parent_id)),
     n = (0, o.e7)([p.Z], () => null != t && p.Z.can(g.Plq.MANAGE_THREADS, t), [t]),
-    r = (0, o.e7)([_.default], () => _.default.getId());
+    r = (0, o.e7)([f.default], () => f.default.getId());
   return null != e && null != t && !!e.isThread() && (!!n || !e.isLockedThread() && e.ownerId === r)
 }
 
@@ -160,10 +160,10 @@ function j(e) {
 }
 
 function U(e) {
-  return (0, o.e7)([f.Z, p.Z, _.default], () => {
-    let t = f.Z.getChannel(e);
+  return (0, o.e7)([_.Z, p.Z, f.default], () => {
+    let t = _.Z.getChannel(e);
     if (null == t) return !1;
-    let n = _.default.getId();
+    let n = f.default.getId();
     return t.type === g.d4z.PRIVATE_THREAD && t.ownerId === n || j(t, [p.Z])
   })
 }

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Eo: () => _,
+  Eo: () => f,
   KH: () => o,
   nc: () => u,
   yz: () => d
@@ -62,7 +62,7 @@ let a = function(e, t) {
     flair: !0
   };
 
-function _(e) {
+function f(e) {
   var t;
   return e.value * (null != (t = e.multiplier) ? t : 1)
 }

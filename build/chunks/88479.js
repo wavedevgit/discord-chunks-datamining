@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 });
 var r = n(255367);
 n(73800);
@@ -49,7 +49,7 @@ function d(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let _ = function(e) {
+let f = function(e) {
   var {
     iconComponent: t
   } = e, n = u(e, ["iconComponent"]);
@@ -59,15 +59,15 @@ let _ = function(e) {
     location: "DisconnectButton"
   }), {
     Component: d,
-    events: _
+    events: f
   } = (0, i.K)();
 
-  function f() {
+  function _() {
     return null != t ? t : l ? a.PBZ : d
   }
   return (0, r.jsx)(s.d, c({
     isTrayButton: !1,
     color: "disconnect",
-    iconComponent: f()
-  }, _, n))
+    iconComponent: _()
+  }, f, n))
 }

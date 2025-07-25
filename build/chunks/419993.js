@@ -11,8 +11,8 @@ var r, i = n(255367),
   c = n(84735),
   u = n(15127),
   d = n(766646),
-  _ = n(993365),
-  f = n(179240),
+  f = n(993365),
+  _ = n(179240),
   p = n(388032),
   h = n(999249),
   m = n(165005),
@@ -104,7 +104,7 @@ class T extends(r = a.Component) {
   }
   renderErrorMessage() {
     let e = this.getErrorMessage();
-    return null == e ? null : (0, i.jsx)(_.x, {
+    return null == e ? null : (0, i.jsx)(f.x, {
       id: b,
       variant: "text-xs/normal",
       color: "text-danger",
@@ -121,7 +121,7 @@ class T extends(r = a.Component) {
       autoFocus: o,
       minLength: l,
       maxLength: u,
-      allowOverflow: _,
+      allowOverflow: f,
       spellCheck: E,
       resizeable: b,
       className: v,
@@ -132,7 +132,7 @@ class T extends(r = a.Component) {
       required: N,
       onInvalid: C,
       inputRef: R
-    } = this.props, P = A ? f.l : "textarea", w = this.hasError(), D = null != (t = this.props["aria-labelledby"]) ? t : null == (e = this.context) ? void 0 : e.titleId, L = this.getAriaDescribedBy();
+    } = this.props, P = A ? _.l : "textarea", w = this.hasError(), D = null != (t = this.props["aria-labelledby"]) ? t : null == (e = this.context) ? void 0 : e.titleId, L = this.getAriaDescribedBy();
     return (0, i.jsxs)("div", {
       className: s()(m.inputWrapper, {
         [h.flex]: S
@@ -161,7 +161,7 @@ class T extends(r = a.Component) {
             value: r,
             autoFocus: o,
             minLength: l,
-            maxLength: _ ? void 0 : u,
+            maxLength: f ? void 0 : u,
             spellCheck: E,
             required: N,
             onChange: this.onChange,

@@ -13,8 +13,8 @@ var r = n(544891),
 let c = 5e3,
   u = 3,
   d = 1e3,
-  _ = 1001,
-  f = 1002;
+  f = 1001,
+  _ = 1002;
 async function p(e, t) {
   let n, s = performance.now(),
     p = 0,
@@ -32,7 +32,7 @@ async function p(e, t) {
     case "application":
       n = l.ANM.APPLICATION_COMMAND_INDEX_APPLICATION(e.applicationId)
   }
-  let g = async t => p >= u ? (m.push(f), b({
+  let g = async t => p >= u ? (m.push(_), b({
     error: !0
   }), i.Z.dispatch({
     type: "APPLICATION_COMMAND_INDEX_FETCH_FAILURE",
@@ -52,7 +52,7 @@ async function p(e, t) {
   })), n => {
     var r;
     if (t.signal.aborted) {
-      m.push(_), b({
+      m.push(f), b({
         error: !0
       });
       return

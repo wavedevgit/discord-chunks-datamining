@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  E: () => f
+  E: () => _
 }), n(388685), n(539854);
 var r = n(255367),
   i = n(73800),
@@ -43,12 +43,12 @@ function d(e, t) {
   return n
 }
 
-function _(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class f extends i.PureComponent {
+class _ extends i.PureComponent {
   render() {
     let {
       label: e,
@@ -57,11 +57,11 @@ class f extends i.PureComponent {
       renderValue: i,
       className: a
     } = this.props;
-    return (0, r.jsx)(s.yRy, _(u({
+    return (0, r.jsx)(s.yRy, f(u({
       targetElementRef: this.ref
     }, n), {
       renderPopout: this.renderPopout,
-      children: n => (0, r.jsx)(s.P3F, _(u({
+      children: n => (0, r.jsx)(s.P3F, f(u({
         innerRef: this.ref
       }, n), {
         className: a,

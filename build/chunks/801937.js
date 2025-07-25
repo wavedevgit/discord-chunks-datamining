@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(481060),
   u = n(355467),
   d = n(269128),
-  _ = n(720452),
-  f = n(502109),
+  f = n(720452),
+  _ = n(502109),
   p = n(710845),
   h = n(219929),
   m = n(985754),
@@ -168,9 +168,9 @@ class w extends i.PureComponent {
           onPaymentRequestFailure: n
         },
         a = "".concat(e, "-").concat(t);
-      return "applePay" === e ? (0, r.jsx)(f.Ch, T({}, m, i), a) : (0, r.jsx)(f.Tr, T({}, m, i), a)
+      return "applePay" === e ? (0, r.jsx)(_.Ch, T({}, m, i), a) : (0, r.jsx)(_.Tr, T({}, m, i), a)
     }), E = [], b = [], I = void 0 === s || this.arePaymentRequestWalletsLoading();
-    if (l) E.push(...this.createPaymentButtons((0, _.Q)({
+    if (l) E.push(...this.createPaymentButtons((0, f.Q)({
       ipCountryCode: "ALL",
       location: P
     }).countryPaymentMethods));
@@ -178,7 +178,7 @@ class w extends i.PureComponent {
       let {
         countryPaymentMethods: e,
         remainingPaymentMethods: t
-      } = (0, _.Q)({
+      } = (0, f.Q)({
         ipCountryCode: s,
         location: P
       });

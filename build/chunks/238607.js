@@ -13,8 +13,8 @@ var i = n(755721),
   c = n(652853),
   u = n(475413),
   d = n(614716),
-  _ = n(228168),
-  f = n(388032);
+  f = n(228168),
+  _ = n(388032);
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -80,9 +80,9 @@ function E(e) {
   }), v = O ? a.iWm : a.jje;
   if (null == y && null != n && (0, s.Z)(n)) return (0, r.jsx)(u.tG, {
     icon: v,
-    text: f.intl.string(f.t.RscU7O),
-    size: E === _.lY.MODAL_V2 ? i.Ph.TINY : void 0,
-    fullWidth: E !== _.lY.MODAL_V2,
+    text: _.intl.string(_.t.RscU7O),
+    size: E === f.lY.MODAL_V2 ? i.Ph.TINY : void 0,
+    fullWidth: E !== f.lY.MODAL_V2,
     themeColor: "secondary",
     onClick: e => {
       e.stopPropagation(), null == p || p({
@@ -106,8 +106,8 @@ function E(e) {
       text: S,
       disabled: !N,
       submitting: I,
-      size: E === _.lY.MODAL_V2 ? i.Ph.TINY : void 0,
-      fullWidth: E !== _.lY.MODAL_V2,
+      size: E === f.lY.MODAL_V2 ? i.Ph.TINY : void 0,
+      fullWidth: E !== f.lY.MODAL_V2,
       themeColor: "secondary",
       onClick: e => {
         e.stopPropagation(), null == p || p({
@@ -122,8 +122,8 @@ function E(e) {
       text: S,
       disabled: !N,
       submitting: I,
-      size: E === _.lY.MODAL_V2 ? i.Ph.TINY : void 0,
-      fullWidth: E !== _.lY.MODAL_V2,
+      size: E === f.lY.MODAL_V2 ? i.Ph.TINY : void 0,
+      fullWidth: E !== f.lY.MODAL_V2,
       themeColor: "secondary",
       onClick: e => {
         e.stopPropagation(), null == p || p({

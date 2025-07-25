@@ -43,13 +43,13 @@ function d(e, t) {
   return n
 }
 
-function _(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function f(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -73,14 +73,14 @@ function h(e) {
     size: n = 16,
     className: a,
     flowerStarClassName: c
-  } = e, d = f(e, ["children", "size", "className", "flowerStarClassName"]), p = i.Children.only(t), h = {
+  } = e, d = _(e, ["children", "size", "className", "flowerStarClassName"]), p = i.Children.only(t), h = {
     width: n,
     height: n
   }, m = !e.allowFullSizedIcon;
   return (0, r.jsxs)("div", {
     className: o()(l.flowerStarContainer, a),
     style: h,
-    children: [(0, r.jsx)(s.Z, _(u({}, d), {
+    children: [(0, r.jsx)(s.Z, f(u({}, d), {
       className: o()(c, l.flowerStar)
     })), (0, r.jsx)("div", {
       className: o()(l.childContainer, {

@@ -43,13 +43,13 @@ function d(e, t) {
   return n
 }
 
-function _(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function f(e) {
+function _(e) {
   let t = {};
   for (let n in e) {
     let r = e[n];
@@ -118,7 +118,7 @@ class p {
   }
   getBufferStats() {
     let e = i().reduce(this.inboundStats, (e, t) => ((null == e || null != t.bufferStats.audioJitterBuffer && null != e.audioJitterBuffer && t.bufferStats.audioJitterBuffer.p75 > e.audioJitterBuffer.p75) && (e = t.bufferStats), e), null);
-    return u({}, f({
+    return u({}, _({
       audio_jitter_buffer: null != e ? e.audioJitterBuffer : null,
       audio_jitter_target: null != e ? e.audioJitterTarget : null,
       audio_jitter_delay: null != e ? e.audioJitterDelay : null,
@@ -218,7 +218,7 @@ class p {
         numRateSamples: O
       } = m;
       if (void 0 !== y && b > y) {
-        var t, n, r, i, a, o, s, l, c, u, d, _, f, p;
+        var t, n, r, i, a, o, s, l, c, u, d, f, _, p;
         let v = b - y,
           I = {
             userId: h,
@@ -227,8 +227,8 @@ class p {
             merged: null != (o = E.merged) ? o : 0 - (null != (a = g.merged) ? a : 0),
             expanded: null != (l = E.expanded) ? l : 0 - (null != (s = g.expanded) ? s : 0),
             accelerated: null != (u = E.accelerated) ? u : 0 - (null != (c = g.accelerated) ? c : 0),
-            preemptiveExpanded: null != (_ = E.preemptiveExpanded) ? _ : 0 - (null != (d = g.preemptiveExpanded) ? d : 0),
-            cng: null != (p = E.cng) ? p : 0 - (null != (f = g.cng) ? f : 0),
+            preemptiveExpanded: null != (f = E.preemptiveExpanded) ? f : 0 - (null != (d = g.preemptiveExpanded) ? d : 0),
+            cng: null != (p = E.cng) ? p : 0 - (null != (_ = g.cng) ? _ : 0),
             accelerateRate: m.accelerateRateSum / O,
             expandRate: m.expandRateSum / O,
             preemptiveExpandRate: m.preemptiveExpandRateSum / O,
@@ -274,7 +274,7 @@ class p {
       i().forEach(e.rtp.outbound, e => {
         if ("audio" === e.type) {
           var t, n, i, a, o, s, l, c, d;
-          r = null != (t = e.bitrateTarget) ? t : 0, this.outboundStats = _(u({}, this.outboundStats), {
+          r = null != (t = e.bitrateTarget) ? t : 0, this.outboundStats = f(u({}, this.outboundStats), {
             packetsSent: e.packetsSent,
             bytesSent: e.bytesSent,
             packetsLost: null != (n = e.packetsLost) ? n : 0,
@@ -290,7 +290,7 @@ class p {
       }), this.decryptionFailures = e.transport.decryptionFailures, this.routingFailures = e.transport.routingFailures, this.appendTargetRates(this.outboundStats, e.transport.availableOutgoingBitrate, r), i().forEach(e.rtp.inbound, (t, n) => {
         i().forEach(t, t => {
           if ("audio" === t.type) {
-            var r, a, o, s, l, c, d, _, f, p, h, m, g, E, b, y, O, v, I, T;
+            var r, a, o, s, l, c, d, f, _, p, h, m, g, E, b, y, O, v, I, T;
             let S = null != (r = e.transport.ping) ? r : 0,
               A = t.packetsReceived,
               N = t.packetsLost,
@@ -319,8 +319,8 @@ class p {
                 passthroughCount: null != (l = t.passthroughCount) ? l : 0,
                 decryptSuccessCount: null != (c = t.decryptSuccessCount) ? c : 0,
                 decryptFailureCount: null != (d = t.decryptFailureCount) ? d : 0,
-                decryptDuration: null != (_ = t.decryptDuration) ? _ : 0,
-                decryptAttempts: null != (f = t.decryptAttempts) ? f : 0,
+                decryptDuration: null != (f = t.decryptDuration) ? f : 0,
+                decryptAttempts: null != (_ = t.decryptAttempts) ? _ : 0,
                 decryptMissingKeyCount: null != (p = t.decryptMissingKeyCount) ? p : 0,
                 decryptInvalidNonceCount: null != (h = t.decryptInvalidNonceCount) ? h : 0
               };

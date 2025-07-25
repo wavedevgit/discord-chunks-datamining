@@ -19,41 +19,41 @@ function c(e, t, n) {
 }
 let u = "SpellcheckStore",
   d = !0,
-  _ = new Set;
+  f = new Set;
 
-function f() {
+function _() {
   a.K.set(u, {
     enabled: d,
-    learnedWords: _
+    learnedWords: f
   })
 }
 class p extends(r = i.ZP.Store) {
   initialize() {
     let e = a.K.get(u);
-    null != e && (d = e.enabled, _ = new Set(e.learnedWords), (0, l.gL)(d), (0, l.fG)(_)), (0, s.Ql)(l._2)
+    null != e && (d = e.enabled, f = new Set(e.learnedWords), (0, l.gL)(d), (0, l.fG)(f)), (0, s.Ql)(l._2)
   }
   isEnabled() {
     return d
   }
   hasLearnedWord(e) {
-    return _.has(e.toLocaleLowerCase())
+    return f.has(e.toLocaleLowerCase())
   }
 }
 c(p, "displayName", "SpellcheckStore");
 let h = new p(o.Z, {
   SPELLCHECK_TOGGLE() {
-    d = !d, (0, l.gL)(d), f()
+    d = !d, (0, l.gL)(d), _()
   },
   SPELLCHECK_LEARN_WORD(e) {
     let {
       word: t
     } = e;
-    _.add(t.toLocaleLowerCase()), (0, l.fG)(_), f()
+    f.add(t.toLocaleLowerCase()), (0, l.fG)(f), _()
   },
   SPELLCHECK_UNLEARN_WORD(e) {
     let {
       word: t
     } = e;
-    _.delete(t.toLocaleLowerCase()), (0, l.fG)(_), f()
+    f.delete(t.toLocaleLowerCase()), (0, l.fG)(f), _()
   }
 })

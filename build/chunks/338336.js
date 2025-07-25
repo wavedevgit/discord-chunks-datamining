@@ -15,7 +15,7 @@ function l(e, t, n) {
     windowLength: c,
     allowedPoorFpsRatio: u,
     fpsThreshold: d,
-    backoffTimeSec: _
+    backoffTimeSec: f
   } = a.y.defaultConfig;
   o.default.track(s.rMx.VIDEO_TOGGLED, {
     video_toggle_reason: t,
@@ -26,7 +26,7 @@ function l(e, t, n) {
     video_health_manager_poor_fps_ratio: l ? u : null,
     video_health_manager_fps_threshold: l ? d : null,
     is_video_shown: n,
-    video_health_manager_backoff_time_seconds: l ? _ : null
+    video_health_manager_backoff_time_seconds: l ? f : null
   })
 }
 

@@ -35,13 +35,13 @@ function u(e) {
 async function d(e, t, c) {
   let {
     hasSpotifyAccount: d,
-    activity: _,
-    user: f
+    activity: f,
+    user: _
   } = e;
-  (0, l.Z)(d) && null != _ && null != _.sync_id && (await (0, o.KV)(), await (0, o.yp)().catch(e => ((0, i.ZDy)(async () => {
+  (0, l.Z)(d) && null != f && null != f.sync_id && (await (0, o.KV)(), await (0, o.yp)().catch(e => ((0, i.ZDy)(async () => {
     let {
       default: e
     } = await n.e("46317").then(n.bind(n, 841178));
     return t => (0, r.jsx)(e, u({}, t))
-  }), Promise.reject(e))), a.Z_(_, f.id), (0, s.Z)(t, f, _, c))
+  }), Promise.reject(e))), a.Z_(f, _.id), (0, s.Z)(t, _, f, c))
 }

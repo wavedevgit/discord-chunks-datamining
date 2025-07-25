@@ -19,8 +19,8 @@ var r = n(544891),
   c = n(605338),
   u = n(78839),
   d = n(431),
-  _ = n(630388),
-  f = n(358085),
+  f = n(630388),
+  _ = n(358085),
   p = n(709054),
   h = n(1844),
   m = n(474936),
@@ -74,7 +74,7 @@ function S() {
         id: t,
         flags: n
       } = e;
-      return t !== r && !(0, _.yE)(n, m.TD.SUPPRESS_NOTIFICATION)
+      return t !== r && !(0, f.yE)(n, m.TD.SUPPRESS_NOTIFICATION)
     }),
     o = null == (t = l.Z.settings.userContent) || null == (e = t.recurringDismissibleContentStates[i.z.THIRD_PARTY_OUTBOUND_PROMO_NAGBAR]) ? void 0 : e.lastDismissedObjectId,
     s = null == o ? a : a.filter(e => {
@@ -84,9 +84,9 @@ function S() {
       return 1 === p.default.compare(t, o)
     }),
     c = u.Z.getPremiumTypeSubscription(),
-    f = !!(null == c ? void 0 : c.hasActiveTrial),
+    _ = !!(null == c ? void 0 : c.hasActiveTrial),
     g = d.Z.hasAnyUnexpiredOffer(),
-    E = f || g ? s.filter(e => e.isRedeemableByTrialUsers()) : s;
+    E = _ || g ? s.filter(e => e.isRedeemableByTrialUsers()) : s;
   return 0 === E.length ? null : E.sort((e, t) => new Date(e.startDate) < new Date(t.startDate) ? -1 : 1)[0].id
 }
 
@@ -98,7 +98,7 @@ function A() {
 }
 
 function N(e) {
-  return !(0, f.isIOS)() || !e.hasFlag(m.TD.IS_BLOCKED_IOS)
+  return !(0, _.isIOS)() || !e.hasFlag(m.TD.IS_BLOCKED_IOS)
 }
 
 function C(e, t) {

@@ -23,7 +23,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function _(e) {
   return e
 }
 
-function f(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,7 +48,7 @@ function f(e, t) {
 }
 
 function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -60,7 +60,7 @@ let m = e => {
     onBack: t,
     backText: n,
     primaryIcon: d,
-    primaryCTA: f,
+    primaryCTA: _,
     primaryType: h,
     primaryText: m,
     primaryTooltip: g,
@@ -72,25 +72,25 @@ let m = e => {
   } = e, {
     premiumBrandRefreshBackgroundClassName: I
   } = (0, s.JL)(), T = () => {
-    if (null == f || null == m) return null;
-    let e = 2 === f ? a.gtL : i.zx,
+    if (null == _ || null == m) return null;
+    let e = 2 === _ ? a.gtL : i.zx,
       t = {
         innerClassName: u.button,
         type: h,
         disabled: E,
         submitting: b,
-        color: 0 === f ? i.zx.Colors.BRAND : i.zx.Colors.GREEN,
+        color: 0 === _ ? i.zx.Colors.BRAND : i.zx.Colors.GREEN,
         onClick: y
       };
     return null != g ? (0, r.jsx)(a.ua7, {
       text: g,
-      children: n => (0, r.jsxs)(e, p(_({}, n, t), {
+      children: n => (0, r.jsxs)(e, p(f({}, n, t), {
         children: [null == d ? null : (0, r.jsx)(d, {
           color: "currentColor",
           className: u.primaryIcon
         }), m]
       }))
-    }) : (0, r.jsxs)(e, p(_({}, t), {
+    }) : (0, r.jsxs)(e, p(f({}, t), {
       children: [null == d ? null : (0, r.jsx)(d, {
         color: "currentColor",
         className: u.primaryIcon

@@ -13,8 +13,8 @@ var i = n(120356),
   c = n(162685),
   u = n(979200),
   d = n(630388),
-  _ = n(709054),
-  f = n(941532),
+  f = n(709054),
+  _ = n(941532),
   p = n(713938),
   h = n(981631),
   m = n(388032),
@@ -40,7 +40,7 @@ function b(e) {
       isEmbeddedFlow: v,
       disclosures: I
     } = e,
-    T = new Date(_.default.extractTimestamp(i.id)),
+    T = new Date(f.default.extractTimestamp(i.id)),
     S = (0, p.W3)(s),
     A = (0, d.yE)(null != (t = i.flags) ? t : 0, h.udG.EMBEDDED);
   if (null != b && !A && !v) try {
@@ -63,7 +63,7 @@ function b(e) {
       })
     }) : null, (0, r.jsx)(y, {
       icon: l.mBM,
-      text: (0, f.i)(i)
+      text: (0, _.i)(i)
     }), (0, r.jsx)(y, {
       icon: l.T39,
       text: m.intl.formatToPlainString(m.t["+1bjc3"], {

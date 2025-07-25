@@ -5,7 +5,7 @@ n.d(t, {
   FT: () => b,
   In: () => d,
   Ju: () => E,
-  U6: () => f,
+  U6: () => _,
   iV: () => h,
   jT: () => g,
   y5: () => p
@@ -34,7 +34,7 @@ function d(e, t) {
   })
 }
 
-function _(e, t) {
+function f(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
     r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
     l = o.Z.getChannel(e);
@@ -52,15 +52,15 @@ function _(e, t) {
       } = e;
       return t.id
     }),
-    _ = [...u];
+    f = [...u];
   for (let e of (u.forEach(e => {
       let t = i.Z.getActiveJoinedThreadsForParent(l.guild_id, e);
-      for (let e in t) _.push(e)
-    }), _)) d(e, t, n, r)
+      for (let e in t) f.push(e)
+    }), f)) d(e, t, n, r)
 }
 
-function f(e, t) {
-  e.isCategory() ? _(e.id, t, !0, !0) : e.isForumLikeChannel() ? d(e.id, t, !0, !0, c.default.fromTimestamp(Date.now())) : d(e.id, t, !0, !0)
+function _(e, t) {
+  e.isCategory() ? f(e.id, t, !0, !0) : e.isForumLikeChannel() ? d(e.id, t, !0, !0, c.default.fromTimestamp(Date.now())) : d(e.id, t, !0, !0)
 }
 
 function p(e, t) {
