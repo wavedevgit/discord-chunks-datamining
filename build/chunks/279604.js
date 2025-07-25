@@ -85,7 +85,7 @@ function O(e, t) {
       let [n] = e;
       return t.allPowerups[n]
     }).filter(d.lm)
-  }(t, S) : [], [t, S]), P = Math.max((null != (b = null == x ? void 0 : x.premiumSubscriberCount) ? b : 0) - E, 0), N = i.useCallback(n => {
+  }(t, S) : [], [t, S]), P = null == I ? void 0 : I.reduce((e, t) => e + t.cost, 0), N = Math.max((null != (b = null == x ? void 0 : x.premiumSubscriberCount) ? b : 0) - E + P, 0), w = i.useCallback(n => {
     let r = n ? h.H6 : h.Th;
     return v(!0), j(void 0), r(e, t.skuId).catch(e => {
       var t;
@@ -93,46 +93,44 @@ function O(e, t) {
     }).finally(() => {
       v(!1)
     })
-  }, [e, t.skuId]), w = i.useCallback(e => {
-    if (e.stopPropagation(), null != x) return P < t.cost ? void(0, s.u)({
+  }, [e, t.skuId]), Z = i.useCallback(e => {
+    if (e.stopPropagation(), null != x) return N < t.cost ? void(0, s.u)({
       analyticsLocation: {
         page: g.ZY5.GUILD_POWERUPS_OVERVIEW,
         section: g.jXE.GUILD_POWERUPS_OVERVIEW_CARD
       },
-      numberOfBoostsToAdd: t.cost - P,
+      numberOfBoostsToAdd: t.cost - N,
       analyticsLocations: O,
       guild: x,
       intent: t.type === f.Us.LEVEL ? c.P.LEVEL : c.P.PERK,
-      onSubscribeComplete: () => N(!0).then(() => {
+      onSubscribeComplete: () => w(!0).then(() => {
         (0, o.ZDy)(async () => {
           let {
             default: e
           } = await n.e("13965").then(n.bind(n, 666083));
           return n => (0, r.jsx)(e, m({
             guildId: x.id,
-            powerup: t,
-            refundablePowerups: I
+            powerup: t
           }, n))
         })
       })
-    }) : N(!0).then(() => {
+    }) : w(!0).then(() => {
       (0, o.ZDy)(async () => {
         let {
           default: e
         } = await n.e("13965").then(n.bind(n, 666083));
         return n => (0, r.jsx)(e, m({
           guildId: x.id,
-          powerup: t,
-          refundablePowerups: I
+          powerup: t
         }, n))
       })
     })
-  }, [N, t, P, O, x, I]), Z = i.useCallback(e => (e.stopPropagation(), N(!1)), [N]);
+  }, [w, t, N, O, x]), T = i.useCallback(e => (e.stopPropagation(), w(!1)), [w]);
   return {
     isLoading: y,
     error: C,
-    onActivate: w,
-    onDeactivate: Z,
+    onActivate: Z,
+    onDeactivate: T,
     onShowDeactivate: i.useCallback(i => {
       i.stopPropagation(), (0, o.ZDy)(async () => {
         let {

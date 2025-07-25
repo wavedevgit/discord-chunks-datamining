@@ -1,6 +1,6 @@
 /** Chunk was on 13965 **/
 n.d(t, {
-  default: () => g
+  default: () => O
 }), n(388685), n(953529);
 var r = n(255367),
   o = n(73800),
@@ -8,8 +8,8 @@ var r = n(255367),
   l = n(442837),
   a = n(481060),
   s = n(607070),
-  u = n(530618),
-  c = n(372654),
+  c = n(530618),
+  u = n(372654),
   d = n(262212),
   p = n(795338),
   f = n(535396),
@@ -17,13 +17,12 @@ var r = n(255367),
   m = n(388032),
   j = n(548197);
 
-function g(e) {
+function O(e) {
   var t, n, {
-      guildId: g,
-      powerup: O,
-      refundablePowerups: y
+      guildId: O,
+      powerup: y
     } = e,
-    v = function(e, t) {
+    g = function(e, t) {
       if (null == e) return {};
       var n, r, o = function(e, t) {
         if (null == e) return {};
@@ -37,18 +36,17 @@ function g(e) {
         for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
       }
       return o
-    }(e, ["guildId", "powerup", "refundablePowerups"]);
-  let x = (0, l.e7)([s.Z], () => s.Z.useReducedMotion),
-    C = o.useRef(null),
-    P = o.useRef(new i.qA),
-    [h, _] = o.useState(null),
-    w = f.uc.has(O.skuId),
-    E = null == y ? void 0 : y.reduce((e, t) => e + t.cost, 0);
+    }(e, ["guildId", "powerup"]);
+  let v = (0, l.e7)([s.Z], () => s.Z.useReducedMotion),
+    x = o.useRef(null),
+    C = o.useRef(new i.qA),
+    [h, P] = o.useState(null),
+    _ = f.uc.has(y.skuId);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(i.O_, {
-      ref: _,
+      ref: P,
       className: j.confettiCanvas,
-      environment: P.current
+      environment: C.current
     }), (0, r.jsxs)(a.Y0X, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -69,58 +67,54 @@ function g(e) {
     }({
       className: j.modal,
       size: a.CgR.DYNAMIC
-    }, v), n = n = {
+    }, g), n = n = {
       parentComponent: "GuildPowerupActivateModal",
       children: [(0, r.jsx)(a.hzk, {
         className: j.modalContentContainer,
         scrollbarType: "none",
         children: (0, r.jsxs)("div", {
           className: j.container,
-          ref: C,
+          ref: x,
           children: [(0, r.jsx)(p.m, {
             className: j.image,
-            powerup: O
+            powerup: y
           }), (0, r.jsxs)("div", {
             className: j.contentContainer,
             children: [(0, r.jsx)(a.X6q, {
               variant: "heading-xl/extrabold",
               children: m.intl.formatToPlainString(b.default.lFuOFB, {
-                perkName: O.title
+                perkName: y.title
               })
-            }), (0, r.jsxs)(a.Text, {
+            }), (0, r.jsx)(a.Text, {
               tag: "span",
               className: j.description,
               variant: "text-sm/normal",
-              children: [null != y && y.length > 0 && (0, r.jsxs)(r.Fragment, {
-                children: [m.intl.formatToPlainString(b.default.SZPaHB, {
-                  boostCount: E
-                }), " "]
-              }), m.intl.formatToPlainString(b.default.y3wHoq, {
-                perkName: O.title
-              })]
-            }), w ? (0, r.jsx)(d.ms, {
+              children: m.intl.formatToPlainString(b.default.y3wHoq, {
+                perkName: y.title
+              })
+            }), _ ? (0, r.jsx)(d.ms, {
               className: j.button,
-              guildId: g,
-              powerup: O,
-              onClick: v.onClose
+              guildId: O,
+              powerup: y,
+              onClick: g.onClose
             }) : (0, r.jsx)("div", {
               "data-button-hoisted-classname-wrapper": !0,
               className: j.button,
               children: (0, r.jsx)(a.zxk, {
                 variant: "primary",
                 text: m.intl.string(m.t.cpT0Cg),
-                onClick: v.onClose
+                onClick: g.onClose
               })
             })]
           })]
         })
       }), (0, r.jsx)(a.olH, {
         className: j.close,
-        onClick: v.onClose
-      }), !x && (0, r.jsx)(u.Z, {
-        confettiTarget: C.current,
+        onClick: g.onClose
+      }), !v && (0, r.jsx)(c.Z, {
+        confettiTarget: x.current,
         confettiCanvas: h,
-        sprites: (0, c.vK)()
+        sprites: (0, u.vK)()
       })]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
