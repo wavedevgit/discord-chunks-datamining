@@ -1,6 +1,6 @@
 /**
   Module ID: 9268
-  Original File Name: 0f78b82b8a1d9504
+  Original File Name: 073e086747f70c3b
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -482,6 +482,38 @@ h1.title_feb59c,h2.title_feb59c {
 
 .theme-dark .markdown_d285a6 .codeInline_d285a6 {
     color: var(--primary-200)
+}
+
+.option_be1a1e {
+    align-items: center;
+    display: flex;
+    justify-content: space-between
+}
+
+.localeName_be1a1e {
+    flex: 1 1 auto
+}
+
+.localizedName_be1a1e {
+    flex: 0 0 auto;
+    font-size: 14px;
+    font-weight: var(--font-weight-normal);
+    line-height: 20px
+}
+
+.flag_be1a1e {
+    flex: 0 0 auto
+}
+
+.flagImage_be1a1e {
+    display: block;
+    filter: saturate(var(--saturation-factor,1));
+    height: 18px;
+    margin-left: 8px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    width: 27px
 }
 
 .default__9026a {
@@ -17037,38 +17069,6 @@ div.nagbar_d74ef8 {
     box-shadow: inset 0 -1px 0 hsl(var(--primary-400-hsl)/.3)
 }
 
-.option_be1a1e {
-    align-items: center;
-    display: flex;
-    justify-content: space-between
-}
-
-.localeName_be1a1e {
-    flex: 1 1 auto
-}
-
-.localizedName_be1a1e {
-    flex: 0 0 auto;
-    font-size: 14px;
-    font-weight: var(--font-weight-normal);
-    line-height: 20px
-}
-
-.flag_be1a1e {
-    flex: 0 0 auto
-}
-
-.flagImage_be1a1e {
-    display: block;
-    filter: saturate(var(--saturation-factor,1));
-    height: 18px;
-    margin-left: 8px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-    width: 27px
-}
-
 .marketingUnsubscribeButton_be6a53 {
     align-self: flex-start;
     padding: 0
@@ -19877,4 +19877,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=0f78b82b8a1d9504.css.map*/
+/*# sourceMappingURL=073e086747f70c3b.css.map*/

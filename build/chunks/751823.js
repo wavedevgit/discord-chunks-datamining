@@ -1,8 +1,9 @@
-/** Chunk was on 58703 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  L: () => o
+  L: () => r
 });
-let o = (0, n(987170).Z)({
+let r = (0, n(987170).Z)({
   kind: "user",
   id: "2025-07_avholdout",
   label: "AV Holdout - H2 2025",

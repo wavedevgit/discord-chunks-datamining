@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => O
+  Z: () => v
 }), n(388685);
 var r = n(73800),
   i = n(710251),
@@ -9,16 +9,17 @@ var r = n(73800),
   o = n(456007),
   s = n(998698),
   l = n(541716),
-  c = n(271383),
-  u = n(496675),
-  d = n(246946),
-  _ = n(594174),
-  f = n(106824),
-  p = n(691841),
-  h = n(981631),
-  m = n(185923);
+  c = n(887490),
+  u = n(271383),
+  d = n(496675),
+  _ = n(246946),
+  f = n(594174),
+  p = n(106824),
+  h = n(691841),
+  m = n(981631),
+  g = n(185923);
 
-function g(e, t, n) {
+function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -27,20 +28,20 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 
-function E(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      g(e, t, n[t])
+      E(e, t, n[t])
     })
   }
   return e
 }
 
-function b(e, t) {
+function y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -51,69 +52,73 @@ function b(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+function O(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function O(e, t, n) {
-  var g, b, O, v, I, T, S;
+function v(e, t, n) {
+  var E, y, v, I, T, S, A, N, C, R;
   let {
-    channel: A,
-    type: N
-  } = e, [C, R] = r.useState(() => (0, f.P)()), P = (0, i.Z)(), w = (0, a.e7)([c.ZP, _.default], () => {
+    channel: P,
+    type: w
+  } = e, [D, L] = r.useState(() => (0, p.PA)()), x = (0, i.Z)(), M = (0, a.e7)([u.ZP, f.default], () => {
     var e, t;
-    let n = _.default.getCurrentUser();
-    return null != (t = null != A.guild_id && null != n ? null == (e = c.ZP.getMember(A.guild_id, n.id)) ? void 0 : e.isPending : null) && t
+    let n = f.default.getCurrentUser();
+    return null != (t = null != P.guild_id && null != n ? null == (e = u.ZP.getMember(P.guild_id, n.id)) ? void 0 : e.isPending : null) && t
   }), {
-    canMentionEveryone: D,
-    hidePersonalInformation: L
-  } = (0, a.cj)([u.Z, d.Z], () => ({
-    canMentionEveryone: A.isPrivate() || w || N === l.Ie.RULES_INPUT || u.Z.can(h.Plq.MENTION_EVERYONE, A),
-    hidePersonalInformation: d.Z.hidePersonalInformation
-  }), [A, N, w]), {
-    activeCommand: x,
-    activeCommandOption: M
+    canMentionEveryone: k,
+    hidePersonalInformation: j
+  } = (0, a.cj)([d.Z, _.Z], () => ({
+    canMentionEveryone: P.isPrivate() || M || w === l.Ie.RULES_INPUT || d.Z.can(m.Plq.MENTION_EVERYONE, P),
+    hidePersonalInformation: _.Z.hidePersonalInformation
+  }), [P, w, M]), {
+    activeCommand: U,
+    activeCommandOption: G
   } = (0, a.cj)([s.Z], () => ({
-    activeCommand: s.Z.getActiveCommand(A.id),
-    activeCommandOption: s.Z.getActiveOption(A.id)
-  })), k = (0, p.Z)({
+    activeCommand: s.Z.getActiveCommand(P.id),
+    activeCommandOption: s.Z.getActiveOption(P.id)
+  })), B = (0, h.Z)({
     navId: "channel-autocomplete",
     scrollerRef: n,
-    state: C,
-    onFocus: e => G.setSelectedIndex(e)
-  }), j = null == (g = e.editorRef.current) ? void 0 : g.getCurrentWord(), U = y(E({}, e), {
-    navigator: k,
-    activeCommand: x,
-    activeCommandOption: M,
-    canMentionUsers: null != (I = null == (b = N.users) ? void 0 : b.allowMentioning) && I,
-    canMentionEveryone: D,
-    hidePersonalInformation: L,
-    hideMentionDescription: N === l.Ie.RULES_INPUT,
-    emojiIntention: N === l.Ie.RULES_INPUT ? m.Hz.COMMUNITY_CONTENT : m.Hz.CHAT,
-    currentWord: null != (T = null == j ? void 0 : j.word) ? T : "",
-    currentWordIsAtStart: (null == j ? void 0 : j.isAtStart) === !0,
-    optionText: null != M ? (0, o.KF)({
-      [M.name]: null != (S = null == (O = e.editorRef.current) ? void 0 : O.getCurrentCommandOptionValue()) ? S : []
-    }, M.name) : ""
-  }), [G] = r.useState(() => new f.Z(U));
+    state: D,
+    onFocus: e => Y.setSelectedIndex(e)
+  }), V = null == (E = e.editorRef.current) ? void 0 : E.getCurrentWord(), F = null == (y = e.editorRef.current) ? void 0 : y.getSlateEditor(), Z = null;
+  null != F && (Z = null != (A = null == (S = c.bN.getSelectedParentOfType(F, p.un)) ? void 0 : S[0]) ? A : null);
+  let H = O(b({}, e), {
+      navigator: B,
+      activeCommand: U,
+      activeCommandOption: G,
+      activeInlineAutocompleteInput: Z,
+      canMentionUsers: null != (N = null == (v = w.users) ? void 0 : v.allowMentioning) && N,
+      canMentionEveryone: k,
+      hidePersonalInformation: j,
+      hideMentionDescription: w === l.Ie.RULES_INPUT,
+      emojiIntention: w === l.Ie.RULES_INPUT ? g.Hz.COMMUNITY_CONTENT : g.Hz.CHAT,
+      currentWord: null != (C = null == V ? void 0 : V.word) ? C : "",
+      currentWordIsAtStart: (null == V ? void 0 : V.isAtStart) === !0,
+      optionText: null != G ? (0, o.KF)({
+        [G.name]: null != (R = null == (I = e.editorRef.current) ? void 0 : I.getCurrentCommandOptionValue()) ? R : []
+      }, G.name) : ""
+    }),
+    [Y] = r.useState(() => new p.ZP(H));
   return r.useEffect(() => {
-    G.updateProps(U)
-  }), r.useImperativeHandle(t, () => G, [G]), r.useEffect(() => {
-    let e = e => R(e);
-    return G.on("change", e), G.on("update", P), () => {
-      G.off("change", e), G.off("update", P)
+    Y.updateProps(H)
+  }), r.useImperativeHandle(t, () => Y, [Y]), r.useEffect(() => {
+    let e = e => L(e);
+    return Y.on("change", e), Y.on("update", x), () => {
+      Y.off("change", e), Y.off("update", x)
     }
-  }, [P, G]), r.useEffect(() => {
+  }, [x, Y]), r.useEffect(() => {
     var e;
-    let t = null == (e = C.query) ? void 0 : e.typeInfo.stores;
+    let t = null == (e = D.query) ? void 0 : e.typeInfo.stores;
     if (null != t) {
-      let e = () => G.queryResults();
+      let e = () => Y.queryResults();
       for (let n of t) n.addChangeListener(e);
       return () => {
         for (let n of t) n.removeChangeListener(e)
       }
     }
-  }, [G, null == (v = C.query) ? void 0 : v.typeInfo]), [C, G, k]
+  }, [Y, null == (T = D.query) ? void 0 : T.typeInfo]), [D, Y, B]
 }

@@ -16,8 +16,8 @@ var n = a(255367),
   x = a(232867),
   p = a(981631),
   h = a(123393),
-  b = a(616257),
-  f = a(173166);
+  b = a(546147),
+  f = a(616257);
 let v = {
     [p.kNB.QUEST_REWARD]: "Quest Reward",
     [p.kNB.DEVELOPER_GIFT]: "Developer Gift",
@@ -33,7 +33,7 @@ let v = {
       onDelete: l
     } = e, s = e => null != e ? (0, u.vc)(e, "LLL") : "---";
     return (0, n.jsxs)("div", {
-      className: i()(h.card, r ? f.gradientWrapperTier2 : ""),
+      className: i()(h.card, r ? b.gradientWrapperTier2 : ""),
       children: [(0, n.jsxs)(c.Text, {
         variant: "text-md/normal",
         children: ["ID: ", a.id, " "]
@@ -92,11 +92,11 @@ function _() {
   return r.useEffect(() => {
     v(P(E)), y(w(E))
   }, [E]), (0, n.jsx)(c.zJl, {
-    className: b.panel,
+    className: f.panel,
     children: (0, n.jsxs)("div", {
-      className: f.panelInner,
+      className: b.panelInner,
       children: [(0, n.jsxs)("div", {
-        className: f.headerWrapper,
+        className: b.headerWrapper,
         children: [(0, n.jsx)(c.Text, {
           style: {
             marginBottom: "8px"
@@ -138,7 +138,7 @@ function _() {
         style: {
           marginBottom: "8px"
         },
-        className: i()([h.section, f.buttons]),
+        className: i()([h.section, b.buttons]),
         children: [(0, n.jsx)(c.Text, {
           variant: "text-md/normal",
           children: " Fractional Premium SKU "
@@ -159,7 +159,7 @@ function _() {
           style: {
             flexWrap: "wrap"
           },
-          className: f.headerWrapper,
+          className: b.headerWrapper,
           children: [(0, n.jsx)(c.Text, {
             style: {
               marginBottom: "8px"

@@ -69,22 +69,22 @@ function y(e) {
       impression: L,
       transitionState: R
     } = e,
-    I = (0, d.Z)(P),
-    [N, Z] = i.useState(O(P));
+    N = (0, d.Z)(P),
+    [F, I] = i.useState(O(P));
   i.useEffect(() => {
-    s().isEqual(I, P) || Z(O(P))
-  }, [P, I]);
-  let F = (0, b.Dt)(),
+    s().isEqual(N, P) || I(O(P))
+  }, [P, N]);
+  let Z = (0, b.Dt)(),
     [T, A] = i.useState(!1),
     [B, M] = i.useState(k),
-    [H, V] = i.useState(null),
+    [V, H] = i.useState(null),
     [U, K] = i.useState(null),
     [z, J] = i.useState("");
   (0, u.ZP)(a), (0, u.zq)(() => {
     var e;
     y({
       rating: B,
-      category: null != (e = null == H ? void 0 : H.value) ? e : null,
+      category: null != (e = null == V ? void 0 : V.value) ? e : null,
       problem: U,
       dontShowAgain: T,
       feedback: z
@@ -117,7 +117,7 @@ function y(e) {
         })
       })
     })]
-  }), X = !1) : B !== g.aZ.GOOD && null == H ? (n = (0, o.jsx)(c.hzk, {
+  }), X = !1) : B !== g.aZ.GOOD && null == V ? (n = (0, o.jsx)(c.hzk, {
     className: v.__invalid_content,
     children: (0, o.jsx)(c.xJW, {
       title: S,
@@ -126,35 +126,35 @@ function y(e) {
         [v.marginBottom16]: D
       }),
       children: (0, o.jsx)(p.Z, {
-        options: N,
-        onClick: V,
+        options: F,
+        onClick: H,
         hideCaret: () => !0
       })
     })
-  }), r = () => M(null)) : null != H && null == U ? (n = (0, o.jsx)(c.hzk, {
+  }), r = () => M(null)) : null != V && null == U ? (n = (0, o.jsx)(c.hzk, {
     className: v.__invalid_content,
     children: (0, o.jsx)(c.xJW, {
-      title: H.problemsHeader,
+      title: V.problemsHeader,
       titleClassName: v.noTitleCase,
       className: l()(v.problemInfo, v.presetList, {
         [v.marginBottom16]: D
       }),
       children: (0, o.jsx)(p.Z, {
-        options: H.problemOptions,
+        options: V.problemOptions,
         onClick: function(e) {
           var t;
-          K(e), null != H && null != e && (null == (t = H.freeformConfig) ? void 0 : t.value) !== e.value && j()
+          K(e), null != V && null != e && (null == (t = V.freeformConfig) ? void 0 : t.value) !== e.value && j()
         },
         hideCaret: e => {
           var t;
           let {
             value: n
           } = e;
-          return (null == (t = H.freeformConfig) ? void 0 : t.value) !== n
+          return (null == (t = V.freeformConfig) ? void 0 : t.value) !== n
         }
       })
     })
-  }), r = () => V(null)) : null != H && null != U && (null == (t = H.freeformConfig) ? void 0 : t.value) === U.value && (n = (0, o.jsx)(c.hzk, {
+  }), r = () => H(null)) : null != V && null != U && (null == (t = V.freeformConfig) ? void 0 : t.value) === U.value && (n = (0, o.jsx)(c.hzk, {
     className: v.__invalid_content,
     children: (0, o.jsxs)(c.xJW, {
       title: h.intl.string(h.t.h95hcn),
@@ -164,7 +164,7 @@ function y(e) {
         value: z,
         maxLength: g.iF,
         onChange: J
-      }), !H.freeformConfig.hideHelpdeskLink && (0, o.jsx)(c.Text, {
+      }), !V.freeformConfig.hideHelpdeskLink && (0, o.jsx)(c.Text, {
         className: v.helpdeskLink,
         variant: "text-xs/normal",
         color: "text-muted",
@@ -179,13 +179,13 @@ function y(e) {
     impression: L,
     transitionState: R,
     className: v.modalRoot,
-    "aria-labelledby": F,
+    "aria-labelledby": Z,
     parentComponent: "FeedbackModalV2",
     children: [(0, o.jsxs)(c.xBx, {
       separator: !1,
       className: v.headerContainer,
       children: [(0, o.jsx)(c.X6q, {
-        id: F,
+        id: Z,
         variant: "heading-xl/extrabold",
         color: "none",
         children: x

@@ -16,7 +16,7 @@ var n = a(255367),
   p = a(981631),
   h = a(362786),
   b = a(474936),
-  f = a(173166),
+  f = a(546147),
   v = a(909291);
 let j = {
     [p.O0b.UNPAID]: "Unpaid",
@@ -70,7 +70,7 @@ function y(e) {
   let {
     subscription: N,
     onUpdated: T
-  } = e, [E, S] = r.useState(!1), [P, w] = r.useState(!1), [I, R] = r.useState(!1), [k, A] = r.useState(!1), [Z, D] = r.useState(null), L = e => (null == e && (e = N.status), e in j) ? j[e] : "Unknown status ".concat(e), M = e => {
+  } = e, [E, S] = r.useState(!1), [P, w] = r.useState(!1), [I, R] = r.useState(!1), [k, Z] = r.useState(!1), [A, D] = r.useState(null), L = e => (null == e && (e = N.status), e in j) ? j[e] : "Unknown status ".concat(e), M = e => {
     let t = new Date(e);
     return u.default.fromTimestamp(t.getTime())
   }, U = async e => {
@@ -205,7 +205,7 @@ function y(e) {
       className: v.collapsablePane,
       children: [(0, n.jsxs)(o.P3F, {
         onClick: () => {
-          A(!k)
+          Z(!k)
         },
         className: v.collapsablePaneHeader,
         children: [(0, n.jsx)("div", {
@@ -304,10 +304,10 @@ function y(e) {
             size: "sm",
             text: "Renew Subscription",
             onClick: e => F()
-          }), null !== Z && (0, n.jsx)(o.kzN, {
+          }), null !== A && (0, n.jsx)(o.kzN, {
             className: v.error,
             onDismiss: () => D(null),
-            children: Z
+            children: A
           })]
         }), (0, n.jsxs)(o.hjN, {
           title: "Premium Streak Start Date",

@@ -52,7 +52,7 @@ function k(e) {
   return e
 }
 
-function A(e, t) {
+function Z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var a = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -64,8 +64,8 @@ function A(e, t) {
     Object.defineProperty(e, a, Object.getOwnPropertyDescriptor(t, a))
   }), e
 }
-let Z = {
-    [S.Odu.CLICK_ZONE_DEBUG]: e => A(k({
+let A = {
+    [S.Odu.CLICK_ZONE_DEBUG]: e => Z(k({
       type: S.Odu.CLICK_ZONE_DEBUG,
       id: (0, s.Z)(),
       layoutId: e,
@@ -80,7 +80,7 @@ let Z = {
     }, _.Z.getWidgetDefaultSettings(S.Odu.CLICK_ZONE_DEBUG)), {
       pinned: !0
     }),
-    [S.Odu.PERFORMANCE_DEBUG]: e => A(k({
+    [S.Odu.PERFORMANCE_DEBUG]: e => Z(k({
       type: S.Odu.PERFORMANCE_DEBUG,
       id: (0, s.Z)(),
       layoutId: e,
@@ -292,7 +292,7 @@ function B(e) {
   return [t, () => {
     if (null != t)(0, u.E9)(t.id);
     else {
-      let t = Z[e];
+      let t = A[e];
       if (null == t) return;
       let a = t(P.$S);
       (0, u.A4)(a)
@@ -328,7 +328,7 @@ let G = r.memo(function(e) {
     let n = null == (e = f.default.getTrackedGameByPid(t)) ? void 0 : e.gameName;
     return null != n ? (D[t] = n, n) : null != (a = D[t]) ? a : "Unknown"
   }, [t]);
-  return (0, n.jsx)(d.Text, A(k({}, a), {
+  return (0, n.jsx)(d.Text, Z(k({}, a), {
     variant: "text-md/semibold",
     color: "text-primary",
     children: r
@@ -379,7 +379,7 @@ function V() {
             text: l === x.d5.TRACK_FOCUS ? "Tracked Focus Event" : "Clear Focus Event",
             children: e => {
               var r;
-              return (0, n.jsx)("div", A(k({}, e), {
+              return (0, n.jsx)("div", Z(k({}, e), {
                 children: (0, n.jsxs)(d.Text, {
                   variant: "text-sm/medium",
                   color: l === x.d5.TRACK_FOCUS ? "text-default" : "text-danger",
@@ -437,7 +437,7 @@ let H = r.memo(function(e) {
     }, +N.Z.Millis.SECOND), () => clearInterval(l.current)), []), (0, n.jsx)(d.ua7, {
       position: "left",
       text: "The most recent screen types we've logged, indexed by pid",
-      children: a => (0, n.jsx)("div", A(k({}, a), {
+      children: a => (0, n.jsx)("div", Z(k({}, a), {
         children: (0, n.jsxs)(d.zJl, {
           className: i()(I.panelGroup, I.scroller),
           children: [0 === Object.keys(e).length && (0, n.jsx)(d.Text, {
@@ -528,7 +528,7 @@ let H = r.memo(function(e) {
       children: [(0, n.jsx)(d.ua7, {
         position: "left",
         text: "Enables a red border around click zones to help with debugging.",
-        children: e => (0, n.jsx)("div", A(k({}, e), {
+        children: e => (0, n.jsx)("div", Z(k({}, e), {
           children: (0, n.jsx)(d.XZJ, {
             value: l,
             onChange: () => x(),
@@ -546,7 +546,7 @@ let H = r.memo(function(e) {
       }), (0, n.jsx)(d.ua7, {
         position: "left",
         text: "Enables a border around any widgets that are rendered on screen that are pinned (even if they are hidden). Blue = pinned widgets, Gray = unpinned widgets",
-        children: e => (0, n.jsx)("div", A(k({}, e), {
+        children: e => (0, n.jsx)("div", Z(k({}, e), {
           children: (0, n.jsx)(d.XZJ, {
             value: i,
             onChange: () => p(),
@@ -564,7 +564,7 @@ let H = r.memo(function(e) {
       }), (0, n.jsx)(d.ua7, {
         position: "left",
         text: "Disables GPU Boost, which can help with performance when games compete for GPU resources.",
-        children: e => (0, n.jsx)("div", A(k({}, e), {
+        children: e => (0, n.jsx)("div", Z(k({}, e), {
           children: (0, n.jsx)(d.XZJ, {
             value: s,
             onChange: () => h(),
@@ -582,7 +582,7 @@ let H = r.memo(function(e) {
       }), (0, n.jsx)(d.ua7, {
         position: "left",
         text: "Forces GPU Boost, which can help with performance when games compete for GPU resources.",
-        children: e => (0, n.jsx)("div", A(k({}, e), {
+        children: e => (0, n.jsx)("div", Z(k({}, e), {
           children: (0, n.jsx)(d.XZJ, {
             value: c,
             onChange: () => f(),
@@ -601,7 +601,7 @@ let H = r.memo(function(e) {
       }), (0, n.jsx)(d.ua7, {
         position: "left",
         text: "Creates a widget that has a clickzone inside of it, which will show/hide every few seconds.",
-        children: a => (0, n.jsx)("div", A(k({}, a), {
+        children: a => (0, n.jsx)("div", Z(k({}, a), {
           children: (0, n.jsx)(d.XZJ, {
             value: null != e,
             onChange: () => t(),
@@ -619,7 +619,7 @@ let H = r.memo(function(e) {
       }), (0, n.jsx)(d.ua7, {
         position: "left",
         text: "Creates a widget that shows the overlay's window performance metrics.",
-        children: e => (0, n.jsx)("div", A(k({}, e), {
+        children: e => (0, n.jsx)("div", Z(k({}, e), {
           children: (0, n.jsx)(d.XZJ, {
             value: null != a,
             onChange: () => r(),
@@ -644,7 +644,7 @@ let H = r.memo(function(e) {
       children: [t.length > 0 && (0, n.jsx)(d.ua7, {
         position: "left",
         text: "Games that are running but not tracked by the overlay",
-        children: e => (0, n.jsx)("div", A(k({}, e), {
+        children: e => (0, n.jsx)("div", Z(k({}, e), {
           children: (0, n.jsxs)("div", {
             className: I.panelGroup,
             children: [(0, n.jsx)(d.Text, {
@@ -663,7 +663,7 @@ let H = r.memo(function(e) {
       }), (0, n.jsx)(d.ua7, {
         position: "left",
         text: "The current running games process information",
-        children: t => (0, n.jsx)("div", A(k({}, t), {
+        children: t => (0, n.jsx)("div", Z(k({}, t), {
           children: (0, n.jsxs)("div", {
             className: I.panelGroup,
             children: [0 === Object.keys(e).length && (0, n.jsx)(d.Text, {
@@ -696,13 +696,13 @@ let H = r.memo(function(e) {
       }, {
         label: x.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION,
         value: x.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION
-      }].map(t => A(k({}, t), {
+      }].map(t => Z(k({}, t), {
         label: "".concat(t.label, " ").concat(e === t.value ? "(current)" : "")
       }));
     return (0, n.jsx)(d.ua7, {
       position: "left",
       text: "Override the overlay render mode",
-      children: e => (0, n.jsx)("div", A(k({}, e), {
+      children: e => (0, n.jsx)("div", Z(k({}, e), {
         className: I.panelGroup,
         children: (0, n.jsx)(d.PhF, {
           serialize: e => e,

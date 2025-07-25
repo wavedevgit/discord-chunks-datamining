@@ -170,6 +170,14 @@ function m(e, t, n) {
           timestamp: p.parsed
         }), _]
       });
+    case "gameMention":
+      return (0, r.jsxs)(g, {
+        attributes: u,
+        className: b,
+        children: [(0, r.jsx)(s.N1, {
+          id: p.applicationId
+        }), _]
+      });
     default:
       return null
   }

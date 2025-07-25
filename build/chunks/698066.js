@@ -13,7 +13,7 @@ function o(e) {
     streamApplication: l,
     analyticsData: a,
     location: c,
-    rating: u = null
+    rating: s = null
   } = e;
   r.default.track(i.rMx.STREAM_REPORT_PROBLEM, function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -40,7 +40,7 @@ function o(e) {
     application_id: null != l ? l.id : null,
     application_name: null != l ? l.name : null,
     location: c,
-    rating: u,
+    rating: s,
     feedback: o
   }, a))
 }
