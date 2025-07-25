@@ -16,10 +16,10 @@ var r = n(442837),
   p = n(369566),
   m = n(29899),
   b = n(151545),
-  x = n(744802),
-  _ = n(493043),
-  y = n(864141),
-  h = n(264481),
+  _ = n(744802),
+  x = n(493043),
+  h = n(864141),
+  y = n(264481),
   g = n(693408),
   j = n(228168),
   I = n(981631),
@@ -71,12 +71,12 @@ function P(e) {
     }, t))
   });
   if (!G && !F && !U) {
-    var Y;
-    return k ? (0, o.jsx)(h.Uf, {
+    var H;
+    return k ? (0, o.jsx)(y.Uf, {
       onClose: C
-    }) : (0, o.jsx)(h.P9, {
+    }) : (0, o.jsx)(y.P9, {
       user: t,
-      guildId: null != (Y = null == P ? void 0 : P.guildId) ? Y : void 0,
+      guildId: null != (H = null == P ? void 0 : P.guildId) ? H : void 0,
       channelId: A,
       onClose: C
     })
@@ -89,14 +89,14 @@ function P(e) {
       children: (0, o.jsxs)("ul", {
         className: O.cards,
         children: [!w && V && (0, o.jsx)("li", {
-          children: (0, o.jsx)(y.Z, {
+          children: (0, o.jsx)(h.Z, {
             user: t,
             currentUser: n,
             voiceChannel: L,
             onClose: C
           })
         }), null != B && (0, o.jsx)("li", {
-          children: (0, o.jsx)(_.Z, {
+          children: (0, o.jsx)(x.Z, {
             location: "UserProfileModalV2Activity",
             user: t,
             currentUser: n,
@@ -113,7 +113,7 @@ function P(e) {
             profileGuildId: null == P ? void 0 : P.guildId
           })
         }, "live-".concat(r))), w && V && (0, o.jsx)("li", {
-          children: (0, o.jsx)(y.Z, {
+          children: (0, o.jsx)(h.Z, {
             user: t,
             currentUser: n,
             voiceChannel: L,
@@ -133,7 +133,7 @@ function P(e) {
       children: (0, o.jsx)("ul", {
         className: O.cards,
         children: E.map(e => (0, o.jsx)("li", {
-          children: (0, o.jsx)(x.Z, {
+          children: (0, o.jsx)(_.Z, {
             location: "UserProfileModalV2Activity",
             user: t,
             currentUser: n,

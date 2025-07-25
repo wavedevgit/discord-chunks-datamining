@@ -1,10 +1,33 @@
-/** Chunk was on 52272 **/
-e.exports = {
-  container: "container_cacd02",
-  bumpBox: "bumpBox_cacd02",
-  icon: "icon_cacd02",
-  publish: "publish_cacd02",
-  tagline: "tagline_cacd02",
-  hidePermanently: "hidePermanently_cacd02",
-  closeIcon: "closeIcon_cacd02"
+/** Chunk was on 43473 **/
+n.d(t, {
+  J: () => r
+});
+let o = (0, n(818083).B)({
+  kind: "user",
+  id: "2025-07_user_profile_holdout_h2",
+  label: "User Profile Holdout H2 Experiment",
+  defaultConfig: {
+    isInHoldout: !1
+  },
+  treatments: [{
+    id: 1,
+    label: "Is in holdout",
+    config: {
+      isInHoldout: !0
+    }
+  }]
+});
+
+function r(e) {
+  let {
+    location: t,
+    autoTrackExposure: n = !0
+  } = e, {
+    isInHoldout: r
+  } = o.useExperiment({
+    location: t
+  }, {
+    autoTrackExposure: n
+  });
+  return r
 }

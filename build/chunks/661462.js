@@ -51,11 +51,11 @@ function p(e) {
     guildId: p,
     channelId: m,
     items: b,
-    initialSection: x,
-    initialSubsection: _,
-    onClose: y
+    initialSection: _,
+    initialSubsection: x,
+    onClose: h
   } = e, {
-    trackUserProfileAction: h
+    trackUserProfileAction: y
   } = (0, c.KZ)(), [{
     section: g,
     subsection: j,
@@ -81,9 +81,9 @@ function p(e) {
     let {
       section: t
     } = e;
-    return t === x
+    return t === _
   })) ? t : b[0]), l = l = {
-    subsection: _
+    subsection: x
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -106,7 +106,7 @@ function p(e) {
         look: "custom",
         selectedItem: g,
         onItemSelect: e => {
-          h({
+          y({
             action: "PRESS_SECTION",
             section: e
           }), v(t => {
@@ -133,7 +133,7 @@ function p(e) {
         channelId: m,
         section: g,
         subsection: j,
-        onClose: y
+        onClose: h
       })
     })]
   })

@@ -15,10 +15,10 @@ var o = n(255367),
   p = n(368326),
   m = n(429467),
   b = n(320582),
-  x = n(246016),
-  _ = n(680295),
-  y = n(189156),
-  h = n(699516),
+  _ = n(246016),
+  x = n(680295),
+  h = n(189156),
+  y = n(699516),
   g = n(246946),
   j = n(5192),
   I = n(111361),
@@ -43,8 +43,8 @@ var o = n(255367),
   V = n(4517),
   G = n(179828),
   F = n(993160),
-  Y = n(574887),
-  H = n(693408),
+  H = n(574887),
+  Y = n(693408),
   W = n(661462),
   K = n(768111),
   z = n(228168),
@@ -82,23 +82,23 @@ function Q(e) {
     messageId: et,
     roleId: en,
     showGuildProfile: ed
-  }), eb = r.useRef(null), ex = (0, s.Z)(eb), e_ = (0, A.$m)(), ey = (0, l.q_F)({
-    opacity: +(null != e_.interactionType),
+  }), eb = r.useRef(null), e_ = (0, s.Z)(eb), ex = (0, A.$m)(), eh = (0, l.q_F)({
+    opacity: +(null != ex.interactionType),
     config: {
       duration: 150
     }
-  }), eh = r.useMemo(() => null != $ ? {
+  }), ey = r.useMemo(() => null != $ ? {
     [$]: [n.id]
   } : {}, [$, n.id]);
-  (0, d.$)(eh);
+  (0, d.$)(ey);
   let eg = (0, P.ZP)(n.id, ed ? $ : void 0),
     ej = j.ZP.useName(null == eg ? void 0 : eg.guildId, ee, n),
     {
       relationshipType: eI,
       originApplicationId: ev
-    } = (0, c.cj)([h.Z], () => ({
-      relationshipType: h.Z.getRelationshipType(n.id),
-      originApplicationId: h.Z.getOriginApplicationId(n.id)
+    } = (0, c.cj)([y.Z], () => ({
+      relationshipType: y.Z.getRelationshipType(n.id),
+      originApplicationId: y.Z.getOriginApplicationId(n.id)
     })),
     eO = (0, c.e7)([g.Z], () => g.Z.hidePersonalInformation),
     eP = null == eg ? void 0 : eg.getBannerURL({
@@ -113,7 +113,7 @@ function Q(e) {
       user: n,
       currentUser: Q
     }),
-    eC = (0, x.Y)({
+    eC = (0, _.Y)({
       userId: n.id
     }),
     eZ = (0, b.vh)(n.id),
@@ -130,7 +130,7 @@ function Q(e) {
       fetchEndedAt: null == eg ? void 0 : eg.fetchEndedAt,
       isLoaded: null == eg ? void 0 : eg.isLoaded,
       children: (0, o.jsx)(A.NJ, {
-        value: e_,
+        value: ex,
         children: (0, o.jsxs)(l.Y0X, {
           hideShadow: !0,
           className: J.root,
@@ -160,8 +160,8 @@ function Q(e) {
               style: {
                 backgroundImage: "url(".concat(eP, ")")
               }
-            }), null != e_.interactionType && (0, o.jsx)(i.animated.div, {
-              style: ey,
+            }), null != ex.interactionType && (0, o.jsx)(i.animated.div, {
+              style: eh,
               className: J.backdrop
             }), (0, o.jsxs)("div", {
               className: J.profile,
@@ -239,7 +239,7 @@ function Q(e) {
                     }, r)
                   }), n.isProvisional && (0, o.jsx)(M.Z.Overlay, {
                     className: J.profileOverlay,
-                    children: (0, o.jsx)(H.Z, {
+                    children: (0, o.jsx)(Y.Z, {
                       heading: q.intl.string(q.t.Iyka0d),
                       headingVariant: "text-md/semibold",
                       headingIcon: (0, o.jsx)(l.P4T, {
@@ -247,7 +247,7 @@ function Q(e) {
                         color: "currentColor"
                       }),
                       className: J.profileBanner,
-                      children: (0, o.jsx)(y.n, {
+                      children: (0, o.jsx)(h.n, {
                         userId: n.id,
                         variant: "text-sm/normal"
                       })
@@ -272,12 +272,12 @@ function Q(e) {
                   }), (null == eg ? void 0 : eg.bio) != null && (null == eg ? void 0 : eg.bio) !== "" && !eO && (0, o.jsx)(w.Z, {
                     userBio: eg.bio,
                     setLineClamp: !1
-                  }), eC.length > 0 && (0, o.jsx)(H.Z, {
+                  }), eC.length > 0 && (0, o.jsx)(Y.Z, {
                     heading: q.intl.string(q.t["Uv/eT0"]),
                     children: (0, o.jsx)(B.Z, {
                       applicationIds: eC
                     })
-                  }), (0, o.jsx)(H.Z, {
+                  }), (0, o.jsx)(Y.Z, {
                     heading: q.intl.string(q.t.a6XYDw),
                     children: (0, o.jsx)(U.Z, {
                       userId: n.id,
@@ -292,15 +292,15 @@ function Q(e) {
                     headingVariant: "text-xs/medium",
                     headingColor: "currentColor",
                     scrollIntoView: ei === z.Tb.ROLES
-                  }), ew.length > 0 && (0, o.jsx)(H.Z, {
+                  }), ew.length > 0 && (0, o.jsx)(Y.Z, {
                     heading: q.intl.string(q.t["3fe7U1"]),
                     scrollIntoView: ei === z.Tb.CONNECTIONS,
-                    children: (0, o.jsx)(Y.Z, {
+                    children: (0, o.jsx)(H.Z, {
                       connections: ew,
                       userId: n.id,
                       className: J.profileAppConnections
                     })
-                  }), (0, o.jsx)(H.Z, {
+                  }), (0, o.jsx)(Y.Z, {
                     heading: q.intl.string(q.t["mQKv+v"]),
                     scrollIntoView: ei === z.Tb.NOTE,
                     children: (0, o.jsx)(a.Z, {
@@ -330,9 +330,9 @@ function Q(e) {
                     })
                   })]
                 })]
-              }), (null == eg ? void 0 : eg.profileEffectId) != null && (0, o.jsx)(_.Z, {
+              }), (null == eg ? void 0 : eg.profileEffectId) != null && (0, o.jsx)(x.Z, {
                 profileEffectId: null == eg ? void 0 : eg.profileEffectId,
-                isHovering: ex
+                isHovering: e_
               })]
             }), (0, o.jsx)(l.y5t, {
               children: (0, o.jsx)(W.Z, {

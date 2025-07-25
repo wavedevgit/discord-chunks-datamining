@@ -1,6 +1,6 @@
 /** Chunk was on 43473 **/
 n.d(t, {
-  Z: () => x
+  Z: () => _
 });
 var o = n(255367),
   r = n(73800),
@@ -16,16 +16,16 @@ var o = n(255367),
   m = n(264481),
   b = n(714905);
 
-function x(e) {
+function _(e) {
   let {
     user: t,
     guildId: n,
-    channelId: x,
-    onClose: _
+    channelId: _,
+    onClose: x
   } = e, {
-    analyticsLocations: y
+    analyticsLocations: h
   } = (0, l.ZP)(), {
-    context: h,
+    context: y,
     trackUserProfileAction: g
   } = (0, s.KZ)(), {
     mutualFriends: j,
@@ -57,10 +57,10 @@ function x(e) {
         user: r,
         status: i,
         guildId: n,
-        channelId: x,
+        channelId: _,
         onSelect: () => {
           var e, t;
-          null == _ || _(), g({
+          null == x || x(), g({
             action: "PRESS_MUTUAL_FRIEND"
           }), (0, f.openUserProfileModal)((e = function(e) {
             for (var t = 1; t < arguments.length; t++) {
@@ -79,9 +79,9 @@ function x(e) {
               })
             }
             return e
-          }({}, h), t = t = {
+          }({}, y), t = t = {
             userId: r.id,
-            sourceAnalyticsLocations: y
+            sourceAnalyticsLocations: h
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
