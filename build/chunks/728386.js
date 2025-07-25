@@ -69,7 +69,7 @@ function E(e, t) {
     className: o()(d.CT, _.buttonContainer),
     ref: t,
     children: (0, r.jsx)(u.Z, g(h({
-      innerClassName: o()(_.button, _.stickerButton)
+      className: o()(_.button, _.stickerButton)
     }, I), {
       onClick: () => {
         O(), T()

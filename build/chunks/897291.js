@@ -105,7 +105,7 @@ function y(e) {
   return (0, r.jsx)(o.ua7, {
     text: p.intl.string(p.t.sWtWDQ),
     children: e => (0, r.jsx)(f.Z, b(g(b(g({}, e), {
-      innerClassName: h.button,
+      className: h.button,
       isActive: !1,
       "aria-label": p.intl.string(p.t.Z1RnTk),
       "aria-haspopup": "dialog",
