@@ -1,6 +1,6 @@
 /**
   Module ID: 80144
-  Original File Name: e1d77d8ffa3875d1
+  Original File Name: 38b6582374797606
 **/
 .row__19fd1 {
     align-items: center;
@@ -106,36 +106,16 @@
     width: 16px
 }
 
-.content_a2e66b,.headersContainer_a2e66b {
-    padding: var(--space-16)
-}
-
-.headersContainer_a2e66b {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-8)
-}
-
 .requestContainer_a2e66b {
     padding-left: var(--space-16);
     padding-right: var(--space-16);
     padding-top: var(--space-16)
 }
 
-.button_a2e66b {
+.learnMoreButton_a2e66b {
     align-items: center;
     display: flex;
     gap: var(--space-4)
 }
 
-.modalClose_a2e66b {
-    position: absolute;
-    right: var(--space-16);
-    top: var(--space-16)
-}
-
-.learnMoreButton_a2e66b {
-    padding-left: 0
-}
-
-/*# sourceMappingURL=e1d77d8ffa3875d1.css.map*/
+/*# sourceMappingURL=38b6582374797606.css.map*/
