@@ -69,7 +69,7 @@ function v(e) {
   }) : (t = C.intl.string(C.t["I6JG4+"]), n = d.Z.Button.Colors.GREEN, Z && (t = C.intl.string(C.t["Q1W99/"]), n = d.Z.Button.Colors.PRIMARY), l = k ? C.intl.string(C.t["4hyaHh"]) : C.intl.formatToPlainString(C.t.QmlLEh, {
     name: G
   }));
-  let H = N === y.id && null != B ? (0, r.jsx)(d.Z.Channel, {
+  let V = N === y.id && null != B ? (0, r.jsx)(d.Z.Channel, {
     channel: B
   }) : C.intl.formatToPlainString(C.t.u0vaDA, {
     guildName: y.name
@@ -86,7 +86,7 @@ function v(e) {
         }), (0, r.jsx)(d.Z.Info, {
           title: l,
           onClick: F && R ? U : void 0,
-          children: H
+          children: V
         })]
       }), R ? (0, r.jsx)(d.Z.Button, {
         disabled: F && !R,

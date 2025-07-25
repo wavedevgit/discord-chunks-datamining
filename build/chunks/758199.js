@@ -98,12 +98,12 @@ function j(e) {
   let {
     primaryColor: M,
     secondaryColor: U
-  } = (0, m.Z)(null != A ? A : T), F = "linear-gradient(45deg, ".concat(M, ", ").concat(U, ")"), B = (0, s.e7)([p.Z], () => p.Z.useReducedMotion), G = l.useRef(!1), H = (0, d.O)(e => {
+  } = (0, m.Z)(null != A ? A : T), F = "linear-gradient(45deg, ".concat(M, ", ").concat(U, ")"), B = (0, s.e7)([p.Z], () => p.Z.useReducedMotion), G = l.useRef(!1), V = (0, d.O)(e => {
     if (!1 === G.current && e) {
       var t;
       null == L || null == (t = L.onView) || t.call(L), (0, h.GF)(L.id, L.linkType, L.referrerId, L.activityCustomId), G.current = !0
     }
-  }, void 0), V = _.wS && null != w ? (0, i.jsx)(c.zx, {
+  }, void 0), H = _.wS && null != w ? (0, i.jsx)(c.zx, {
     look: c.zx.Looks.BLANK,
     size: c.zx.Sizes.ICON,
     "aria-label": E.intl.string(E.t.WqhZsr),
@@ -136,7 +136,7 @@ function j(e) {
     }
   }, [k, L]);
   return (0, i.jsxs)("div", {
-    ref: H,
+    ref: V,
     className: C.embed,
     children: [Y && (0, i.jsxs)(y, {
       onClick: ee,
@@ -174,7 +174,7 @@ function j(e) {
             variant: "text-sm/semibold",
             color: "none",
             children: j
-          }), null != V ? V : z]
+          }), null != H ? H : z]
         }), (0, i.jsxs)("div", {
           className: C.contentAndCopyButtonWrapper,
           children: [(0, i.jsxs)(y, {
@@ -200,7 +200,7 @@ function j(e) {
                 children: S
               })]
             })]
-          }), null == j && (null != V ? V : z)]
+          }), null == j && (null != H ? H : z)]
         }), R.length > 0 && (0, i.jsx)("div", {
           className: C.actionWrapper,
           children: R.map((e, t) => {

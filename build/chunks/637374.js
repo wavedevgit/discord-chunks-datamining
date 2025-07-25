@@ -63,7 +63,7 @@ function G(e) {
   return e
 }
 
-function H(e, t) {
+function V(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -76,7 +76,7 @@ function H(e, t) {
   }), e
 }
 
-function V(e) {
+function H(e) {
   let {
     onClick: t,
     libraryApplication: n
@@ -137,7 +137,7 @@ class W extends i.Component {
         location: e
       }
     } = this.props;
-    return H(G({}, e), {
+    return V(G({}, e), {
       section: k.jXE.GIFT_CODE_EMBED
     })
   }
@@ -148,7 +148,7 @@ class W extends i.Component {
     return (0, r.jsxs)(b.Z, {
       justify: b.Z.Justify.BETWEEN,
       children: [(0, r.jsxs)(b.Z, {
-        children: [this.renderButton(e), null == t || e.isSubscription ? null : (0, r.jsx)(V, {
+        children: [this.renderButton(e), null == t || e.isSubscription ? null : (0, r.jsx)(H, {
           onClick: this.handleViewLibrary,
           libraryApplication: t
         })]
@@ -183,7 +183,7 @@ class W extends i.Component {
       onClick: this.handleAccept,
       color: u.zx.Colors.BRAND
     }, a = !e.isSubscription && null != t || !e.isSelfRedeemable && i || e.isExistingPremiumSubscriptionDisallowed && (0, Z.I5)(n);
-    return (e.redeemed || a || e.isClaimed || !n.verified) && (l.color = u.zx.Colors.BRAND, l.disabled = !0), (0, r.jsx)(u.zx, H(G({}, l), {
+    return (e.redeemed || a || e.isClaimed || !n.verified) && (l.color = u.zx.Colors.BRAND, l.disabled = !0), (0, r.jsx)(u.zx, V(G({}, l), {
       className: (0, h.mO)(e) ? F.collectiblesAcceptButton : null,
       size: u.zx.Sizes.SMALL,
       children: e.redeemed ? U.intl.string(U.t.BTihoq) : null != e.giftStyle ? U.intl.string(U.t.TiZFqa) : U.intl.string(U.t.bUvv1d)
@@ -345,7 +345,7 @@ class W extends i.Component {
       } = this.props;
       e.preventDefault(), e.stopPropagation(), A.default.track(k.rMx.OPEN_MODAL, {
         type: "gift_accept",
-        location: H(G({}, this.analyticsLocation), {
+        location: V(G({}, this.analyticsLocation), {
           object: k.qAy.BUTTON_CTA
         })
       });

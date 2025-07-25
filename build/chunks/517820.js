@@ -84,12 +84,12 @@ function U(e) {
   switch (i) {
     case E.nj:
     case u.p.RAID:
-      return (0, r.jsx)(H, {
+      return (0, r.jsx)(V, {
         message: t,
         compact: n
       });
     case u.p.MENTION_RAID:
-      return (0, r.jsx)(V, {
+      return (0, r.jsx)(H, {
         message: t,
         compact: n
       });
@@ -233,7 +233,7 @@ function G(e) {
   })
 }
 
-function H(e) {
+function V(e) {
   var t;
   let {
     message: n,
@@ -322,7 +322,7 @@ function H(e) {
   })
 }
 
-function V(e) {
+function H(e) {
   var t;
   let {
     message: n,

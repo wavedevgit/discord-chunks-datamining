@@ -75,7 +75,7 @@ function U(e) {
     embedUrl: F,
     message: B,
     channel: G
-  } = e, H = i.useRef(null), V = i.useRef(null), z = (0, A.J)(F, B), {
+  } = e, V = i.useRef(null), H = i.useRef(null), z = (0, A.J)(F, B), {
     setPopout: W
   } = (0, x.Z)(B.id, Z.d$), K = (0, C.qo)(B, G, W, !0), Y = y.QK.useSetting(), X = (0, N.n)(), [q, Q] = i.useState(!1), [J, $] = i.useState((null == z ? void 0 : z.coverImage) == null), ee = (0, c.e7)([p.Z], () => p.Z.useReducedMotion), et = (0, c.e7)([j.ZP, I.default], () => {
     var e;
@@ -170,7 +170,7 @@ function U(e) {
       }), (0, r.jsxs)("div", {
         className: L.descriptionFooter,
         children: [null != z.authorId && null != eg && (0, r.jsx)(O.Z, {
-          targetElementRef: V,
+          targetElementRef: H,
           userId: z.authorId,
           guildId: z.guildId,
           channelId: G.id,
@@ -183,7 +183,7 @@ function U(e) {
             onMouseEnter: e_,
             onMouseLeave: e_,
             children: (0, r.jsx)(d.qEK, M(k({}, e), {
-              ref: V,
+              ref: H,
               size: d.EFr.SIZE_40,
               src: eg,
               "aria-label": R.intl.string(R.t.KXz3XF),
@@ -219,7 +219,7 @@ function U(e) {
                 roleColors: eo,
                 className: L.authorName
               }) : (0, r.jsx)(O.Z, {
-                targetElementRef: H,
+                targetElementRef: V,
                 userId: z.authorId,
                 guildId: z.guildId,
                 channelId: G.id,
@@ -228,7 +228,7 @@ function U(e) {
                 avatarUrl: z.avatarUrl,
                 newAnalyticsLocations: [m.Z.USERNAME],
                 children: e => (0, r.jsx)(d.rz2, M(k({}, e), {
-                  ref: H,
+                  ref: V,
                   name: z.authorName,
                   color: ei,
                   roleColors: eo,

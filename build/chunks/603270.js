@@ -222,7 +222,7 @@ function L(e) {
       }), " ", P.intl.string(P.t.NRC3am)]
     }) : null == E || null == (t = E.description) ? void 0 : t.trim();
   "" === G && (G = void 0);
-  let H = () => {
+  let V = () => {
     v.default.track(T.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
       application_id: C.id,
       sku_id: f.id,
@@ -264,7 +264,7 @@ function L(e) {
         subscriptionType: U ? "user" : "guild",
         skuId: f.id,
         icon: c.EOn,
-        onHasClicked: H,
+        onHasClicked: V,
         subscriptionPlan: b,
         state: k
       }) : (0, r.jsx)(c.zxk, {
@@ -275,7 +275,7 @@ function L(e) {
         appId: C.id,
         sku: f,
         icon: c.EOn,
-        onHasClicked: H
+        onHasClicked: V
       })]
     })
   })

@@ -62,17 +62,17 @@ let F = i.memo(function(e) {
     } = (0, h.ZP)(_.Z.ACTIVITY_INSTANCE_EMBED),
     B = (0, u.O)(),
     G = (0, o.e7)([I.Z], () => I.Z.getChannel(A), [A]),
-    H = (null == G || null == (t = G.isThread) ? void 0 : t.call(G)) ? null == G ? void 0 : G.parent_id : A,
-    V = (0, o.e7)([j.default], () => j.default.getId()),
+    V = (null == G || null == (t = G.isThread) ? void 0 : t.call(G)) ? null == G ? void 0 : G.parent_id : A,
+    H = (0, o.e7)([j.default], () => j.default.getId()),
     {
       embeddedActivity: z,
       currentEmbeddedActivity: W,
       activityLaunchState: K
     } = (0, o.cj)([p.ZP], () => ({
-      embeddedActivity: p.ZP.getEmbeddedActivitiesForChannel(null != H ? H : "").find(e => e.applicationId === O.id),
+      embeddedActivity: p.ZP.getEmbeddedActivitiesForChannel(null != V ? V : "").find(e => e.applicationId === O.id),
       currentEmbeddedActivity: p.ZP.getCurrentEmbeddedActivity(),
-      activityLaunchState: p.ZP.getLaunchState(O.id, null != H ? H : void 0)
-    }), [H, O.id]),
+      activityLaunchState: p.ZP.getLaunchState(O.id, null != V ? V : void 0)
+    }), [V, O.id]),
     Y = null == z ? void 0 : z.userIds,
     X = (0, o.Wu)([T.default], () => Array.from(null != Y ? Y : []).map(e => T.default.getUser(e)).filter(w.lm), [Y]),
     q = (0, o.e7)([S.Z], () => {
@@ -89,7 +89,7 @@ let F = i.memo(function(e) {
       return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = D.wT), e
     }, [O]),
     $ = (0, g.s5)({
-      userId: V,
+      userId: H,
       channelId: A,
       application: J
     }),

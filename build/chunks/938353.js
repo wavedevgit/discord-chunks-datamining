@@ -43,8 +43,8 @@ var r, i = n(255367),
   F = n(187506),
   B = n(954654),
   G = n(41776),
-  H = n(628238),
-  V = n(454585),
+  V = n(628238),
+  H = n(454585),
   z = n(768494),
   W = n(124347),
   K = n(976853),
@@ -97,8 +97,8 @@ var r, i = n(255367),
   eF = n(319323),
   eB = n(884182),
   eG = n(546432),
-  eH = n(920888),
-  eV = n(328966),
+  eV = n(920888),
+  eH = n(328966),
   ez = n(963206),
   eW = n(817384),
   eK = n(981631),
@@ -352,7 +352,7 @@ class e8 extends(r = l.Component) {
       channel: s,
       forceAddReactions: c
     } = this.props;
-    return n ? null : (0, i.jsx)(eH.Z, {
+    return n ? null : (0, i.jsx)(eV.Z, {
       message: e,
       channel: s,
       disableReactionCreates: t,
@@ -659,10 +659,10 @@ class e8 extends(r = l.Component) {
     })
   }
   renderEditedTag(e, t) {
-    return (0, i.jsx)(eV.Z, {
+    return (0, i.jsx)(eH.Z, {
       message: e,
       compact: t,
-      location: eV.H.AFTER_ACCESSORIES
+      location: eH.H.AFTER_ACCESSORIES
     })
   }
   render() {
@@ -726,9 +726,9 @@ class e8 extends(r = l.Component) {
           shouldAgeVerify: null != d && d
         }, n))
       }, e.id)
-    }), eJ(this, "renderEmbedTitle", (e, t) => e.type === eK.hBH.RICH ? V.Z.parseEmbedTitle(t, !0, {
+    }), eJ(this, "renderEmbedTitle", (e, t) => e.type === eK.hBH.RICH ? H.Z.parseEmbedTitle(t, !0, {
       channelId: this.props.channel.id
-    }) : t), eJ(this, "renderEmbedDescription", (e, t, n) => e.type === eK.hBH.RICH ? V.Z.parse(t, !0, {
+    }) : t), eJ(this, "renderEmbedDescription", (e, t, n) => e.type === eK.hBH.RICH ? H.Z.parse(t, !0, {
       channelId: this.props.channel.id,
       allowLinks: !0,
       allowEmojiLinks: !0,
@@ -780,7 +780,7 @@ function e6(e) {
     communicationDisabled: x,
     isActiveChannelOrUnarchivableThread: v,
     isAutomodQuarantined: C
-  }), P = (0, H.A)((null != (t = r.editedTimestamp) ? t : r.timestamp).valueOf()), A = (0, K.Z)(null == n ? void 0 : n.id), w = (0, q.Z)(r), Z = (0, T.v)(r), D = (0, eI._)(n), k = (0, ev.ro)(r.id, r.channel_id), M = (0, I.m8)();
+  }), P = (0, V.A)((null != (t = r.editedTimestamp) ? t : r.timestamp).valueOf()), A = (0, K.Z)(null == n ? void 0 : n.id), w = (0, q.Z)(r), Z = (0, T.v)(r), D = (0, eI._)(n), k = (0, ev.ro)(r.id, r.channel_id), M = (0, I.m8)();
   return (0, i.jsx)(e8, e0(e$(e0(e$({
     canSuppressEmbeds: O,
     canDeleteAttachments: y
@@ -840,7 +840,7 @@ let e4 = e => {
     m = ec.RS.useSetting(),
     f = ec.NA.useSetting(),
     g = ec.QK.useSetting(),
-    _ = (0, H.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()),
+    _ = (0, V.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()),
     h = (0, K.Z)(null == r ? void 0 : r.id),
     b = (0, T.v)(n),
     E = (0, ev.ro)(n.id, n.channel_id),

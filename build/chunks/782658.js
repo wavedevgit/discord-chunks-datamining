@@ -59,11 +59,11 @@ function R(e) {
     F = (0, d.v)(),
     B = (0, l.e7)([E.Z], () => (null == L ? void 0 : L.guild) != null ? E.Z.getGuild(L.guild.id) : null, [L]),
     G = (0, l.e7)([b.default], () => b.default.getId()),
-    H = (0, l.e7)([m.ZP], () => {
+    V = (0, l.e7)([m.ZP], () => {
       var e;
       return m.ZP.getGuildScheduledEvent(null == (e = M.guild_scheduled_event) ? void 0 : e.id)
     }, [M]),
-    V = () => {
+    H = () => {
       null != M.channel && a.ZP.transitionToInviteSync(M)
     },
     z = () => {
@@ -85,7 +85,7 @@ function R(e) {
       })
     },
     W = (0, r.jsx)(I.Z, {
-      onTransitionToInviteChannel: V,
+      onTransitionToInviteChannel: H,
       onAcceptInstantInvite: z,
       currentUserId: G,
       guild: B,
@@ -114,7 +114,7 @@ function R(e) {
       switch ((0, g.VR)(M)) {
         case g.wx.GROUP_DM:
           W = (0, r.jsx)(j.Z, {
-            onTransitionToInviteChannel: V,
+            onTransitionToInviteChannel: H,
             onAcceptInstantInvite: z,
             currentUserId: G,
             invite: M,
@@ -131,7 +131,7 @@ function R(e) {
         default:
           if ((0, g.TY)(M)) {
             W = (0, r.jsx)(A.Z, {
-              onTransitionToInviteChannel: V,
+              onTransitionToInviteChannel: H,
               onAcceptInstantInvite: z,
               currentUserId: G,
               message: n,
@@ -142,12 +142,12 @@ function R(e) {
           }
           if ((0, g.Tx)(M)) {
             W = (0, r.jsx)(f.ZP, {
-              guildScheduledEvent: H,
+              guildScheduledEvent: V,
               guild: M.guild,
               channel: M.channel,
               isMember: null != B,
               onAcceptInstantInvite: z,
-              onTransitionToInviteChannel: V
+              onTransitionToInviteChannel: H
             });
             break
           }
@@ -158,7 +158,7 @@ function R(e) {
               guild: M.guild,
               isMember: null != B,
               message: n,
-              onTransitionToInviteChannel: V,
+              onTransitionToInviteChannel: H,
               onAcceptInstantInvite: z
             });
             break
@@ -171,7 +171,7 @@ function R(e) {
             });
             break
           }!F && (0, p.l)(M) && (W = (0, r.jsx)(S.Z, {
-            onTransitionToInviteChannel: V,
+            onTransitionToInviteChannel: H,
             onAcceptInstantInvite: z,
             isMemberOfGuild: null != B,
             invite: M,

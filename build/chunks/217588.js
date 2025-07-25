@@ -1,6 +1,6 @@
 /** Chunk was on 23045 **/
 n.d(t, {
-  Z: () => V
+  Z: () => H
 }), n(953529), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -192,7 +192,7 @@ let B = e => {
       M = y.ZP.canUseCustomStickersEverywhere(k),
       B = (0, o.e7)([x.Z], () => x.Z.getGuild(n.guild_id)),
       G = null != B,
-      [H, V] = i.useState(!1),
+      [V, H] = i.useState(!1),
       [z, W] = i.useState(null),
       K = i.useMemo(() => ({
         page: null != l.guild_id ? P.ZY5.GUILD_CHANNEL : P.ZY5.DM_CHANNEL,
@@ -293,7 +293,7 @@ let B = e => {
           }), !G && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(c.P3F, {
               onClick: () => {
-                E(), V(!H)
+                E(), H(!V)
               },
               className: R.showMoreEmojis,
               children: (0, r.jsxs)(m.Z, {
@@ -306,11 +306,11 @@ let B = e => {
                   size: "md",
                   color: "currentColor",
                   className: a()(R.showMoreEmojisArrow, {
-                    [R.showMoreEmojisArrowCollapsed]: !H
+                    [R.showMoreEmojisArrowCollapsed]: !V
                   })
                 })]
               })
-            }), H && (0, r.jsx)(m.Z, {
+            }), V && (0, r.jsx)(m.Z, {
               wrap: m.Z.Wrap.WRAP,
               align: m.Z.Align.START,
               justify: m.Z.Justify.START,
@@ -368,7 +368,7 @@ let B = e => {
     })
   };
 
-function H(e) {
+function V(e) {
   let {
     channel: t,
     closePopout: n,
@@ -386,7 +386,7 @@ function H(e) {
     })
   })
 }
-let V = e => {
+let H = e => {
   let {
     renderableSticker: t,
     channel: n,
@@ -403,7 +403,7 @@ let V = e => {
     channel: n,
     closePopout: i,
     refreshPositionKey: l
-  }) : o ? o && null == a ? (0, r.jsx)(H, {
+  }) : o ? o && null == a ? (0, r.jsx)(V, {
     channel: n,
     closePopout: i,
     sticker: t

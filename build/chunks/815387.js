@@ -42,8 +42,8 @@ var r = n(255367),
   F = n(430824),
   B = n(496675),
   G = n(158776),
-  H = n(944486),
-  V = n(594174),
+  V = n(944486),
+  H = n(594174),
   z = n(979651),
   W = n(585483),
   K = n(5192),
@@ -166,7 +166,7 @@ let eR = Object.freeze({
         compact: i
       } = e, {
         author: a
-      } = t, o = t.getChannelId(), s = (0, l.e7)([V.default], () => V.default.getUser(t.mentions[0]), [t]), c = K.ZP.getName(null, o, s), u = (0, et.l)({
+      } = t, o = t.getChannelId(), s = (0, l.e7)([H.default], () => H.default.getUser(t.mentions[0]), [t]), c = K.ZP.getName(null, o, s), u = (0, et.l)({
         user: a,
         channelId: o,
         guildId: n.guild_id,
@@ -199,7 +199,7 @@ let eR = Object.freeze({
         compact: i
       } = e, {
         author: a
-      } = t, o = t.getChannelId(), s = (0, l.e7)([V.default], () => V.default.getUser(t.mentions[0]), [t]), c = (0, et.l)({
+      } = t, o = t.getChannelId(), s = (0, l.e7)([H.default], () => H.default.getUser(t.mentions[0]), [t]), c = (0, et.l)({
         user: a,
         channelId: o,
         guildId: n.guild_id,
@@ -300,7 +300,7 @@ let eR = Object.freeze({
       } = e, {
         author: a
       } = t, o = t.getChannelId(), s = i.useCallback(() => {
-        if (H.Z.getChannelId() !== o) {
+        if (V.Z.getChannelId() !== o) {
           let e = U.Z.getChannel(o);
           null != e && (0, P.XU)(e.guild_id, e.id)
         }
@@ -698,7 +698,7 @@ let eR = Object.freeze({
       let {
         message: t,
         channel: n
-      } = e, i = t.giftingPrompt, a = (0, l.e7)([V.default], () => V.default.getUser(null == i ? void 0 : i.recipientUserId));
+      } = e, i = t.giftingPrompt, a = (0, l.e7)([H.default], () => H.default.getUser(null == i ? void 0 : i.recipientUserId));
       return null == i || null == a ? null : (0, r.jsx)(Q.Z, {
         giftIntentType: i.giftIntentType,
         recipientUser: a,

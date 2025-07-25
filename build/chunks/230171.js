@@ -61,13 +61,13 @@ function R(e) {
     instanceId: U,
     isCurrentlyInInstance: F,
     canLaunchInChannel: B
-  } = (0, j.c)(t.id), G = (0, u.Z)(), H = (0, g.ms)({
+  } = (0, j.c)(t.id), G = (0, u.Z)(), V = (0, g.ms)({
     context: {
       type: "contextless"
     },
     applicationId: t.id,
     botUserId: null == b ? void 0 : b.id
-  }), V = null != C && x && H, z = B && x, W = (0, A.G)(t), K = (0, A.z)(t), Y = i.useMemo(() => {
+  }), H = null != C && x && V, z = B && x, W = (0, A.G)(t), K = (0, A.z)(t), Y = i.useMemo(() => {
     let e = [];
     return x ? (z && e.push({
       label: null == U ? w.intl.string(w.t.RscU7O) : w.intl.string(w.t.VJlc0d),
@@ -84,7 +84,7 @@ function R(e) {
         })
       },
       disabledReason: F ? w.intl.string(w.t.wJNK8P) : void 0
-    }), !z && V && e.push({
+    }), !z && H && e.push({
       label: w.intl.string(w.t.JeK1Wl),
       trackingArea: T.j_.PLAY,
       onClick() {
@@ -97,7 +97,7 @@ function R(e) {
         })
       }
     })) : null != K && e.push(K), e
-  }, [z, V, U, F, M, t.id, G, a, R, k, x, K, C]), X = x ? (0, r.jsx)(D, {
+  }, [z, H, U, F, M, t.id, G, a, R, k, x, K, C]), X = x ? (0, r.jsx)(D, {
     app: t
   }) : (0, r.jsx)(L, {
     app: t

@@ -1,6 +1,6 @@
 /**
   Module ID: 23045
-  Original File Name: 76af2b1b360a3db9
+  Original File Name: 659a71e4c9967547
 **/
 .wrapper__74bfa {
     align-items: center;
@@ -3835,24 +3835,6 @@ html .progress__61462 {
 
 .toast__1562f {
     gap: var(--space-8)
-}
-
-.header_d93468 {
-    margin: var(--space-16) 0
-}
-
-.subheader_d93468 {
-    margin-top: var(--space-16)
-}
-
-.closeButton_d93468 {
-    position: absolute;
-    right: 0;
-    top: var(--space-12)
-}
-
-.button_d93468:not(:first-child) {
-    margin-right: var(--space-16)
 }
 
 .image_d93468 {
@@ -9707,4 +9689,4 @@ html .progress__61462 {
     background-image: url(/assets/abbc14555963e723.svg)
 }
 
-/*# sourceMappingURL=76af2b1b360a3db9.css.map*/
+/*# sourceMappingURL=659a71e4c9967547.css.map*/

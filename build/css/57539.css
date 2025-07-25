@@ -1,27 +1,9 @@
 /**
   Module ID: 57539
-  Original File Name: a0974d462e392a3e
+  Original File Name: 40c8a5b8e223b2cd
 **/
 .toast__1562f {
     gap: var(--space-8)
-}
-
-.header_d93468 {
-    margin: var(--space-16) 0
-}
-
-.subheader_d93468 {
-    margin-top: var(--space-16)
-}
-
-.closeButton_d93468 {
-    position: absolute;
-    right: 0;
-    top: var(--space-12)
-}
-
-.button_d93468:not(:first-child) {
-    margin-right: var(--space-16)
 }
 
 .image_d93468 {
@@ -66,4 +48,4 @@
     margin-bottom: var(--space-8)
 }
 
-/*# sourceMappingURL=a0974d462e392a3e.css.map*/
+/*# sourceMappingURL=40c8a5b8e223b2cd.css.map*/

@@ -43,8 +43,8 @@ var s = n(442837),
   F = n(236069),
   B = n(305325),
   G = n(281956),
-  H = n(574650),
-  V = n(665302),
+  V = n(574650),
+  H = n(665302),
   z = n(434404),
   W = n(918658),
   K = n(859428),
@@ -221,7 +221,7 @@ let eI = 12633 == n.j ? i.memo(function() {
     case ef.kVF.LURKING_GUILD:
       return (0, r.jsx)(K.Z, {});
     case ef.kVF.PENDING_MEMBER:
-      return (0, r.jsx)(H.Z, {});
+      return (0, r.jsx)(V.Z, {});
     case ef.kVF.INVITED_TO_SPEAK:
       return (0, r.jsx)(ee.Z, {});
     case ef.kVF.GUILD_RAID_NOTIFICATION:
@@ -594,7 +594,7 @@ let eI = 12633 == n.j ? i.memo(function() {
     case ef.kVF.DISPATCH_INSTALL_SCRIPT_PROGRESS:
       if (null == j.metadata) return null;
       let {
-        progress: eG, total: eH, name: eV
+        progress: eG, total: eV, name: eH
       } = j.metadata;
       return (0, r.jsxs)(c.qXd, {
         color: c.DM8.DEFAULT,
@@ -603,13 +603,13 @@ let eI = 12633 == n.j ? i.memo(function() {
           noticeType: ef.kVF.DISPATCH_INSTALL_SCRIPT_PROGRESS
         }), (0, r.jsxs)(N.Z, {
           justify: N.Z.Justify.CENTER,
-          children: [null != eV ? eb.intl.formatToPlainString(eb.t["pHj+z8"], {
-            name: "".concat(eV),
+          children: [null != eH ? eb.intl.formatToPlainString(eb.t["pHj+z8"], {
+            name: "".concat(eH),
             progress: eG,
-            total: eH
+            total: eV
           }) : eb.intl.formatToPlainString(eb.t["lHZn+P"], {
             progress: eG,
-            total: eH
+            total: eV
           }), (0, r.jsx)(c.$jN, {
             type: c.$jN.Type.PULSING_ELLIPSIS,
             className: eE.ellipsis
@@ -797,7 +797,7 @@ let eI = 12633 == n.j ? i.memo(function() {
         })]
       });
     case ef.kVF.BACK_TO_PREVIOUS_SCREEN:
-      return (0, r.jsx)(V.h, {
+      return (0, r.jsx)(H.h, {
         buttonText: null != (t = j.buttonText) ? t : eb.intl.string(eb.t["/g10LC"]),
         onGoBack: j.callback,
         onDismiss: () => ej(),

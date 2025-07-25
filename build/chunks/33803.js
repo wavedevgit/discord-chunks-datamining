@@ -43,7 +43,7 @@ var r = n(255367),
   B = n(388032),
   G = n(860918);
 
-function H(e) {
+function V(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -62,7 +62,7 @@ function H(e) {
   return e
 }
 
-function V(e, t) {
+function H(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -119,7 +119,7 @@ function W(e, t) {
 
 function K(e, t, n) {
   return i.useMemo(() => {
-    if (null != t && null != n) return i => (0, r.jsx)(v.Z, V(H({}, i), {
+    if (null != t && null != n) return i => (0, r.jsx)(v.Z, H(V({}, i), {
       user: t,
       currentUser: n,
       guildId: e.guild_id,
@@ -156,19 +156,19 @@ function X(e) {
 function q(e, t) {
   switch (e) {
     case _.d.DELETE_USER_MESSAGE:
-      return (0, r.jsx)(p.XHJ, H({
+      return (0, r.jsx)(p.XHJ, V({
         size: "xs",
         color: "currentColor",
         className: G.alertActionIcon
       }, t));
     case _.d.SET_COMPLETED:
-      return (0, r.jsx)(p.dz2, H({
+      return (0, r.jsx)(p.dz2, V({
         size: "xs",
         color: "currentColor",
         className: a()(G.alertActionIcon, G.alertActionSetCompletedIcon)
       }, t));
     case _.d.SUBMIT_FEEDBACK:
-      return (0, r.jsx)(p.U65, H({
+      return (0, r.jsx)(p.U65, V({
         size: "xs",
         color: "currentColor",
         className: G.alertActionIcon
@@ -248,7 +248,7 @@ let $ = i.memo(function(e) {
     s = W(n, i),
     c = K(i, n.author),
     u = (0, T.ZP)(n),
-    d = (0, A.CF)(H({
+    d = (0, A.CF)(V({
       message: n,
       channel: i,
       author: u,
@@ -260,7 +260,7 @@ let $ = i.memo(function(e) {
     g = K(i, m, y.default.getCurrentUser());
   if (null != m) {
     let e = (0, T.ij)(m, i),
-      r = (0, A.CF)(H({
+      r = (0, A.CF)(V({
         message: n,
         channel: i,
         author: e,
@@ -379,7 +379,7 @@ function ee(e) {
           className: a()(G.messageContent, {
             [G.compact]: l
           }),
-          children: (0, r.jsx)(P.Z, V(H({}, N), {
+          children: (0, r.jsx)(P.Z, H(V({}, N), {
             message: o,
             channel: ee,
             content: ed,

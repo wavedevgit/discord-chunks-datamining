@@ -1,6 +1,6 @@
 /** Chunk was on 23045 **/
 n.d(t, {
-  Z: () => H,
+  Z: () => V,
   n: () => D
 }), n(415506), n(388685), n(361932), n(187205), n(781311);
 var r = n(512722),
@@ -325,7 +325,7 @@ async function G(e) {
       i()(!1, "Unknown poll action type: ".concat(r))
   }
 }
-let H = {
+let V = {
   handlePollAnswerTapped: function(e) {
     var t, n, {
       answerId: r

@@ -42,8 +42,8 @@ var r = n(255367),
   F = n(358085),
   B = n(804739),
   G = n(758371),
-  H = n(276852),
-  V = n(984211),
+  V = n(276852),
+  H = n(984211),
   z = n(620662),
   W = n(994339),
   K = n(275920),
@@ -194,7 +194,7 @@ function eo(e) {
     return (0, r.jsx)(m.W, {
       header: y,
       title: e,
-      iconSrc: null != (o = (0, H.Z)(h, c.id)) ? o : void 0,
+      iconSrc: null != (o = (0, V.Z)(h, c.id)) ? o : void 0,
       info: u,
       actions: v,
       onClickContent: O,
@@ -304,7 +304,7 @@ function eu(e) {
     staticBannerSrc: k,
     videoBannerSrc: U,
     bannerAspectRatio: B
-  } = (0, _.E)(O), H = !(0, W.Z)(w, T, O.id), Y = er(T), q = (0, o.e7)([A.Z], () => A.Z.getGameByName(O.name), [O.name]), {
+  } = (0, _.E)(O), V = !(0, W.Z)(w, T, O.id), Y = er(T), q = (0, o.e7)([A.Z], () => A.Z.getGameByName(O.name), [O.name]), {
     openGameProfileModal: Q,
     isGameLaunchable: $
   } = es(O.id, T.author.id), {
@@ -334,7 +334,7 @@ function eu(e) {
       isGameLaunchable: s
     } = e;
     if (i.author.id === r || !(0, W.Z)(t, i, l.id)) return !1;
-    let c = (0, V._)(t);
+    let c = (0, H._)(t);
     return !(!el(c) || ei(c) || ea(n, t) || er(i)) && (!!a && !!o || !!F.isPlatformEmbedded && !!s)
   }({
     presenceActivity: w,
@@ -348,7 +348,7 @@ function eu(e) {
   }), em = !(null == w || !(0, W.Z)(w, T, O.id) || !(0, z.Z)(w, J.xjy.SYNC) || !F.isPlatformEmbedded || ea(I, w)), ef = ea(I, w), eg = function(e, t, n, r) {
     var i;
     if (t.author.id === r || !(0, W.Z)(e, t, n.id) || (null == (i = t.activity) ? void 0 : i.type) !== J.mFx.JOIN_REQUEST || !(0, z.Z)(e, J.xjy.JOIN)) return !1;
-    let l = (0, V._)(e);
+    let l = (0, H._)(e);
     return !(!el(l) || ei(l))
   }(w, T, O, j), e_ = i.useMemo(() => ep ? {
     label: ee.intl.string(ee.t.VJlc0d),
@@ -417,8 +417,8 @@ function eu(e) {
     }
   } : null != ed ? ed : void 0, [O.id, $, eo, null == q ? void 0 : q.id, ed]), eb = (0, h.G)(O), eE = i.useMemo(() => null != Q ? Q : null != en ? en : null != eb && R ? eb : void 0, [R, Q, en, eb]), eC = i.useMemo(() => {
     let e = [];
-    return H || null == e_ ? H && null != eh && e.push(eh) : e.push(e_), e
-  }, [eh, H, e_]), ex = (0, G.dQ)(O.name, null == (t = T.activity) ? void 0 : t.type), ev = (0, v.N)(O.id).some(e => (0, E.ig)(e) === l.o.GLOBAL) ? (0, r.jsxs)(r.Fragment, {
+    return V || null == e_ ? V && null != eh && e.push(eh) : e.push(e_), e
+  }, [eh, V, e_]), ex = (0, G.dQ)(O.name, null == (t = T.activity) ? void 0 : t.type), ev = (0, v.N)(O.id).some(e => (0, E.ig)(e) === l.o.GLOBAL) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.YqE, {
       size: "xxs",
       color: "currentColor"
@@ -426,7 +426,7 @@ function eu(e) {
   }) : null, eO = (0, r.jsx)(ec, {
     presenceActivity: w
   });
-  if (H) {
+  if (V) {
     let e = (0, r.jsx)(s.Text, {
       variant: "text-xs/medium",
       className: et.description,
@@ -473,7 +473,7 @@ function eu(e) {
       className: et.tagline,
       color: "none",
       lineClamp: 2,
-      children: [Y ? (0, G.$v)(T, O, y, j, H) : ej, Y ? null : ev]
+      children: [Y ? (0, G.$v)(T, O, y, j, V) : ej, Y ? null : ev]
     }),
     eS = (0, r.jsxs)("div", {
       className: et.info,
@@ -523,7 +523,7 @@ function ed(e) {
   }, [f]), {
     partySize: b,
     maxPartySize: E
-  } = (0, V._)(f), C = i.useMemo(() => h.map(e => {
+  } = (0, H._)(f), C = i.useMemo(() => h.map(e => {
     let t = D.default.getUser(e);
     return null != t ? t : q.ag
   }), [h]), x = (0, $.Ps)(null == f || null == (t = f.party) ? void 0 : t.id) || p.id === S.r9.id, v = (0, r.jsx)(en, {
