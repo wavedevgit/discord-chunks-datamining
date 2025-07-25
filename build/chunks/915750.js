@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  B5: () => P,
-  PI: () => A,
-  WD: () => L,
-  aM: () => x,
-  ui: () => M
-}), n(388685), n(642613), n(415506);
+  B5: () => w,
+  PI: () => N,
+  WD: () => M,
+  aM: () => k,
+  ui: () => j
+}), n(388685), n(642613), n(953529), n(49124), n(415506);
 var r = n(255367),
   i = n(73800),
   a = n(772848),
@@ -16,16 +16,18 @@ var r = n(255367),
   c = n(110924),
   u = n(516796),
   d = n(186102),
-  f = n(797614),
-  _ = n(358085),
-  p = n(617136),
-  h = n(509212),
-  m = n(569984),
-  g = n(882198),
-  E = n(5881),
-  b = n(981631);
+  f = n(113544),
+  _ = n(797614);
+n(592125), n(430824), n(914010), n(768581);
+var p = n(358085),
+  h = n(617136),
+  m = n(509212),
+  g = n(569984),
+  E = n(882198),
+  b = n(5881),
+  y = n(981631);
 
-function y(e, t, n) {
+function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -34,20 +36,20 @@ function y(e, t, n) {
   }) : e[t] = n, e
 }
 
-function O(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      O(e, t, n[t])
     })
   }
   return e
 }
 
-function v(e, t) {
+function I(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,20 +60,20 @@ function v(e, t) {
   return n
 }
 
-function I(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function T(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = 60,
-  S = 1,
-  A = .5,
-  N = new Set;
+let S = 60,
+  A = 1,
+  N = .5,
+  C = new Set;
 
-function C(e, t) {
+function R(e, t) {
   return "".concat(e, "_").concat(t)
 }
-class R {
+class P {
   getId() {
     return this.id
   }
@@ -85,31 +87,33 @@ class R {
     trackGuildAndChannelMetadata: r,
     questContentPosition: i,
     questContentRowIndex: s,
-    minViewTimeSeconds: l = S,
+    minViewTimeSeconds: l = A,
     isQuestEnrollmentBlocked: c,
-    sourceQuestContent: m
+    sourceQuestContent: f,
+    brandSafetyContext: g
   }) {
-    var v = this;
-    y(this, "id", void 0), y(this, "quests", void 0), y(this, "questContent", void 0), y(this, "triggeredByStatusChange", void 0), y(this, "trackGuildAndChannelMetadata", void 0), y(this, "questContentPosition", void 0), y(this, "questContentRowIndex", void 0), y(this, "sourceQuestContent", void 0), y(this, "heartbeatTimeoutId", void 0), y(this, "lastBeatTime", void 0), y(this, "minViewTimeReachedTimeoutId", void 0), y(this, "minViewTimeSeconds", void 0), y(this, "minViewportPercentage", void 0), y(this, "isQuestEnrollmentBlocked", void 0), y(this, "isRunning", !1), y(this, "onMinViewTimeReached", () => {
+    var I = this;
+    O(this, "id", void 0), O(this, "quests", void 0), O(this, "questContent", void 0), O(this, "triggeredByStatusChange", void 0), O(this, "trackGuildAndChannelMetadata", void 0), O(this, "questContentPosition", void 0), O(this, "questContentRowIndex", void 0), O(this, "sourceQuestContent", void 0), O(this, "brandSafetyContext", void 0), O(this, "heartbeatTimeoutId", void 0), O(this, "lastBeatTime", void 0), O(this, "minViewTimeReachedTimeoutId", void 0), O(this, "minViewTimeSeconds", void 0), O(this, "minViewportPercentage", void 0), O(this, "isQuestEnrollmentBlocked", void 0), O(this, "isRunning", !1), O(this, "onMinViewTimeReached", () => {
       this.quests.forEach(e => {
-        (0, E.T)().info("".concat(e.config.messages.questName, " Quest viewed for at least ").concat(this.minViewTimeSeconds, "s at ").concat((0, p._b)(this.questContent)), {
+        (0, b.T)().info("".concat(e.config.messages.questName, " Quest viewed for at least ").concat(this.minViewTimeSeconds, "s at ").concat((0, h._b)(this.questContent)), {
           impressionId: this.id
         });
         let t = !1,
-          n = (0, h.Zp)(this.questContent);
+          n = (0, m.Zp)(this.questContent);
         if (null != n) {
-          let r = C(e.id, n);
-          (t = !N.has(r) && (0, h.VB)(this.questContent)) && N.add(r)
+          let r = R(e.id, n);
+          (t = !C.has(r) && (0, m.VB)(this.questContent)) && C.add(r)
         }
-        let r = O({
+        let r = v({
           min_view_time_seconds: this.minViewTimeSeconds,
           min_viewport_percentage: this.minViewportPercentage,
-          triggered_by_status_change: this.triggeredByStatusChange
+          triggered_by_status_change: this.triggeredByStatusChange,
+          brand_safety_context: this.brandSafetyContext
         }, (0, d.Z)(), this.commonProperties(e));
         (0, u.S)().then(n => {
-          null != n && ((0, _.isIOS)() ? r.apple_advertising_id = n.advertisingId : (0, _.isAndroid)() && (r.android_advertising_id = n.advertisingId)), (0, p.dA)({
+          null != n && ((0, p.isIOS)() ? r.apple_advertising_id = n.advertisingId : (0, p.isAndroid)() && (r.android_advertising_id = n.advertisingId)), (0, h.dA)({
             questId: e.id,
-            event: b.rMx.QUEST_CONTENT_VIEWED,
+            event: y.rMx.QUEST_CONTENT_VIEWED,
             trackGuildAndChannelMetadata: this.trackGuildAndChannelMetadata,
             properties: r,
             shouldExtendSession: t,
@@ -117,36 +121,36 @@ class R {
           })
         })
       })
-    }), y(this, "beat", function() {
+    }), O(this, "beat", function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-      v.quests.forEach(t => {
-        if (null != v.lastBeatTime) {
-          let n = Math.round(Date.now() - v.lastBeatTime);
-          (0, E.T)().info("".concat(t.config.messages.questName, " Quest impression ").concat(e ? "terminal " : "", "heartbeat: ").concat(n, "ms since last heartbeat"), {
-            impressionId: v.id
-          }), (0, p.dA)({
+      I.quests.forEach(t => {
+        if (null != I.lastBeatTime) {
+          let n = Math.round(Date.now() - I.lastBeatTime);
+          (0, b.T)().info("".concat(t.config.messages.questName, " Quest impression ").concat(e ? "terminal " : "", "heartbeat: ").concat(n, "ms since last heartbeat"), {
+            impressionId: I.id
+          }), (0, h.dA)({
             questId: t.id,
-            event: b.rMx.QUEST_CONTENT_VIEW_TIME,
-            properties: O({
+            event: y.rMx.QUEST_CONTENT_VIEW_TIME,
+            properties: v({
               is_termination_beat: e,
               viewed_time_ms: n,
-              triggered_by_status_change: v.triggeredByStatusChange
-            }, v.commonProperties(t)),
-            trackGuildAndChannelMetadata: v.trackGuildAndChannelMetadata,
-            sourceQuestContent: v.sourceQuestContent
+              triggered_by_status_change: I.triggeredByStatusChange
+            }, I.commonProperties(t)),
+            trackGuildAndChannelMetadata: I.trackGuildAndChannelMetadata,
+            sourceQuestContent: I.sourceQuestContent
           })
         }
-      }), v.lastBeatTime = Date.now()
-    }), y(this, "commonProperties", e => O(I(O({
+      }), I.lastBeatTime = Date.now()
+    }), O(this, "commonProperties", e => v(T(v({
       impression_id: this.id
-    }, (0, h.qe)(e.id, this.questContent)), {
+    }, (0, m.qe)(e.id, this.questContent)), {
       is_quest_enrollment_blocked: this.isQuestEnrollmentBlocked,
-      quest_status: (0, p.uk)(e)
-    }), (0, p.mH)(this.questContent, this.questContentPosition, this.questContentRowIndex))), y(this, "clone", e => {
+      quest_status: (0, h.uk)(e)
+    }), (0, h.mH)(this.questContent, this.questContentPosition, this.questContentRowIndex))), O(this, "clone", e => {
       let {
         triggeredByStatusChange: t
       } = e;
-      return this.stop(), new R({
+      return this.stop(), new P({
         questContent: this.questContent,
         questOrQuests: this.quests,
         questContentRowIndex: this.questContentRowIndex,
@@ -156,51 +160,55 @@ class R {
         isQuestEnrollmentBlocked: this.isQuestEnrollmentBlocked,
         sourceQuestContent: this.sourceQuestContent
       })
-    }), y(this, "start", () => {
-      this.stop(!1), this.lastBeatTime = Date.now(), this.heartbeatTimeoutId = window.setInterval(() => this.beat(), 1e3 * T), this.minViewTimeReachedTimeoutId = window.setTimeout(this.onMinViewTimeReached, 1e3 * this.minViewTimeSeconds), this.quests.forEach(e => {
-        (0, E.T)().info("".concat(e.config.messages.questName, " Quest became visible at ").concat((0, p._b)(this.questContent)), {
+    }), O(this, "start", () => {
+      this.stop(!1), this.lastBeatTime = Date.now(), this.heartbeatTimeoutId = window.setInterval(() => this.beat(), 1e3 * S), this.minViewTimeReachedTimeoutId = window.setTimeout(this.onMinViewTimeReached, 1e3 * this.minViewTimeSeconds), this.quests.forEach(e => {
+        (0, b.T)().info("".concat(e.config.messages.questName, " Quest became visible at ").concat((0, h._b)(this.questContent)), {
           impressionId: this.id
-        }), (0, p.dA)({
+        }), (0, h.dA)({
           questId: e.id,
-          event: b.rMx.QUEST_CONTENT_LOADED,
-          properties: O({
+          event: y.rMx.QUEST_CONTENT_LOADED,
+          properties: v({
             triggered_by_status_change: this.triggeredByStatusChange
           }, this.commonProperties(e)),
           trackGuildAndChannelMetadata: this.trackGuildAndChannelMetadata,
           sourceQuestContent: this.sourceQuestContent
         })
-      }), (0, g.a)("QuestImpressionTracker") && f.Z.increment({
+      }), (0, E.a)("QuestImpressionTracker") && _.Z.increment({
         name: o.V.QUEST_CONTENT_IMPRESSION,
-        tags: ["quest_content:".concat((0, p._b)(this.questContent))]
+        tags: ["quest_content:".concat((0, h._b)(this.questContent))]
       }), this.isRunning = !0
-    }), y(this, "stop", function() {
+    }), O(this, "stop", function() {
       let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
-      e && v.beat(!0), v.lastBeatTime = void 0, clearInterval(v.heartbeatTimeoutId), clearTimeout(v.minViewTimeReachedTimeoutId), v.isRunning = !1
-    }), this.id = (0, a.Z)(), this.questContent = t, this.questContentPosition = i, this.minViewTimeSeconds = l, this.minViewportPercentage = A, this.quests = Array.isArray(e) ? e : [e], this.trackGuildAndChannelMetadata = r, this.triggeredByStatusChange = n, this.questContentRowIndex = s, this.isQuestEnrollmentBlocked = c, this.sourceQuestContent = m
+      e && I.beat(!0), I.lastBeatTime = void 0, clearInterval(I.heartbeatTimeoutId), clearTimeout(I.minViewTimeReachedTimeoutId), I.isRunning = !1
+    }), this.id = (0, a.Z)(), this.questContent = t, this.questContentPosition = i, this.minViewTimeSeconds = l, this.minViewportPercentage = N, this.quests = Array.isArray(e) ? e : [e], this.trackGuildAndChannelMetadata = r, this.triggeredByStatusChange = n, this.questContentRowIndex = s, this.isQuestEnrollmentBlocked = c, this.sourceQuestContent = f, this.brandSafetyContext = g
   }
 }
-let P = (e, t) => {
-    let n = Array.isArray(e) ? e.sort().map(e => e.id).join("_") : e.id;
-    return "".concat(n, "_").concat(t)
-  },
-  w = e => {
-    let t = Array.isArray(e) ? null : (0, p.uk)(e),
+let w = (e, t) => {
+  let n = Array.isArray(e) ? e.sort().map(e => e.id).join("_") : e.id;
+  return "".concat(n, "_").concat(t)
+};
+
+function D(e, t) {
+  (0, m.VB)(t), (0, f.z5)(), (0, f.QW)(), Array.isArray(e)
+}
+let L = e => {
+    let t = Array.isArray(e) ? null : (0, h.uk)(e),
       n = (0, c.Z)(t);
     return t !== n
   },
-  D = i.createContext(void 0);
+  x = i.createContext(void 0);
 
-function L() {
-  let e = i.useContext(D);
+function M() {
+  let e = i.useContext(x);
   return null == e ? void 0 : e.current
 }
 
-function x() {
+function k() {
   var e;
-  return null == (e = L()) ? void 0 : e.getId()
+  return null == (e = M()) ? void 0 : e.getId()
 }
 
-function M(e) {
+function j(e) {
   let {
     visible: t,
     visibleChanged: n,
@@ -208,14 +216,14 @@ function M(e) {
     reference: o,
     focusedChanged: c,
     sourceQuestContent: u
-  } = e, d = w(e.questOrQuests), f = i.useRef(null), _ = (0, s.e7)([m.Z], () => null != m.Z.questEnrollmentBlockedUntil, []);
+  } = e, d = L(e.questOrQuests), f = D(e.questOrQuests, e.questContent), _ = i.useRef(null), p = (0, s.e7)([g.Z], () => null != g.Z.questEnrollmentBlockedUntil, []);
   return (0, l.ZP)(() => () => {
-    null != f.current && f.current.stop()
+    null != _.current && _.current.stop()
   }), i.useEffect(() => {
     let r = a && t,
       i = (n || c || d) && r,
       o = (n || c) && !r || d;
-    (i || o) && null != f.current && f.current.stop(), i && (f.current = new R({
+    (i || o) && null != _.current && _.current.stop(), i && (_.current = new P({
       questOrQuests: e.questOrQuests,
       questContent: e.questContent,
       questContentPosition: e.questContentPosition,
@@ -223,11 +231,12 @@ function M(e) {
       triggeredByStatusChange: d,
       trackGuildAndChannelMetadata: e.trackGuildAndChannelMetadata,
       minViewTimeSeconds: e.minViewTimeSeconds,
-      isQuestEnrollmentBlocked: _,
-      sourceQuestContent: u
-    }), f.current.start())
-  }, [a, t, c, n, e.questOrQuests, e.questContent, e.questContentPosition, e.questContentRowIndex, e.trackGuildAndChannelMetadata, d, e.minViewTimeSeconds, _, u]), (0, r.jsx)(D.Provider, {
-    value: f,
-    children: e.children(o, f)
+      isQuestEnrollmentBlocked: p,
+      sourceQuestContent: u,
+      brandSafetyContext: f
+    }), _.current.start())
+  }, [a, t, c, n, e.questOrQuests, e.questContent, e.questContentPosition, e.questContentRowIndex, e.trackGuildAndChannelMetadata, d, e.minViewTimeSeconds, p, u, f]), (0, r.jsx)(x.Provider, {
+    value: _,
+    children: e.children(o, _)
   })
 }

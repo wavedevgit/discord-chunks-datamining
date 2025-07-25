@@ -144,12 +144,13 @@ class x extends _.Z {
           return
         }
         if (null == a) throw Error("Invalid transport info");
+        this.transportInfo = a;
         let {
           protocol: o,
           address: s,
           port: l
         } = a;
-        this.logger.info("Connected with local address ".concat(s, ":").concat(l, " and protocol: ").concat(o)), r(r => {
+        this.logger.info("Connected with local address ".concat(s, ":").concat(l, " and protocol: ").concat(o)), this.onConnectStarted = performance.now(), r(r => {
           this.logger.info("Available codecs: ".concat(JSON.stringify(r)));
           let i = (0, g.DY)(this.experimentFlags);
           this.logger.info("Experimental codecs: ".concat(JSON.stringify(i))), this.codecs = [{
@@ -850,7 +851,7 @@ class x extends _.Z {
   constructor(e, t, n) {
     super(e, t), I(this, "mediaEngineConnectionId", "Native-".concat(P++)), I(this, "goLiveSourceIdentifier", void 0), I(this, "selfVideo", !1), I(this, "forceAudioNormal", !1), I(this, "forceAudioPriority", !1), I(this, "codecs", []), I(this, "videoEncoderFallbackPending", !1), I(this, "desktopDegradationPreference", (0, b.zS)().DegradationPreference.MAINTAIN_FRAMERATE), I(this, "sourceDesktopDegradationPreference", (0, b.zS)().DegradationPreference.DISABLED), I(this, "videoDegradationPreference", (0, b.zS)().DegradationPreference.BALANCED), I(this, "localPans", {}), I(this, "remoteAudioSSRCs", {}), I(this, "remoteVideoSSRCs", {}), I(this, "inputMode", v.pM.VOICE_ACTIVITY), I(this, "vadThreshold", -40), I(this, "vadAutoThreshold", !0), I(this, "vadKrispActivationThreshold", .5), I(this, "vadUseKrisp", !0), I(this, "vadLeading", 5), I(this, "vadTrailing", 25), I(this, "pttReleaseDelay", 20), I(this, "soundshareActive", !1), I(this, "soundshareId", null), I(this, "soundshareSentSpeakingEvent", !1), I(this, "echoCancellation", !0), I(this, "noiseSuppression", !0), I(this, "automaticGainControl", {
       enabled: !0
-    }), I(this, "noiseCancellation", !1), I(this, "voiceFilterId", null), I(this, "experimentalEncoders", !1), I(this, "hardwareH264", !0), I(this, "softwareH264", !0), I(this, "attenuationFactor", .5), I(this, "attenuateWhileSpeakingSelf", !1), I(this, "attenuateWhileSpeakingOthers", !0), I(this, "qos", !0), I(this, "conn", void 0), I(this, "minimumJitterBufferLevel", 0), I(this, "postponeDecodeLevel", 100), I(this, "reconnectInterval", 6e4), I(this, "keyframeInterval", 0), I(this, "clipsKeyFrameInterval", 0), I(this, "videoQualityMeasurement", ""), I(this, "videoEncoderExperiments", ""), I(this, "numFastUdpReconnects", 0), I(this, "simulcastLQDisabledSsrc", void 0), I(this, "lastPreparedTransitionId", -1), I(this, "lastExecutedTransitionId", -1), I(this, "logger", void 0), I(this, "handleSpeakingNative", (e, t) => {
+    }), I(this, "noiseCancellation", !1), I(this, "voiceFilterId", null), I(this, "experimentalEncoders", !1), I(this, "hardwareH264", !0), I(this, "softwareH264", !0), I(this, "attenuationFactor", .5), I(this, "attenuateWhileSpeakingSelf", !1), I(this, "attenuateWhileSpeakingOthers", !0), I(this, "qos", !0), I(this, "conn", void 0), I(this, "minimumJitterBufferLevel", 0), I(this, "postponeDecodeLevel", 100), I(this, "reconnectInterval", 6e4), I(this, "keyframeInterval", 0), I(this, "clipsKeyFrameInterval", 0), I(this, "videoQualityMeasurement", ""), I(this, "videoEncoderExperiments", ""), I(this, "numFastUdpReconnects", 0), I(this, "simulcastLQDisabledSsrc", void 0), I(this, "lastPreparedTransitionId", -1), I(this, "lastExecutedTransitionId", -1), I(this, "logger", void 0), I(this, "transportInfo", void 0), I(this, "onConnectStarted", void 0), I(this, "handleSpeakingNative", (e, t) => {
       let n = v.Dg.NONE;
       n = "boolean" == typeof t ? t ? v.Dg.VOICE : v.Dg.NONE : t, this.handleSpeakingFlags(e, n)
     }), I(this, "handleNativeMuteToggled", () => {
