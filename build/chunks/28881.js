@@ -1,8 +1,10 @@
-/** Chunk was on 30424 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  QK: () => r
+  QK: () => a,
+  u$: () => i
 });
-let i = (0, n(818083).B)({
+let r = (0, n(818083).B)({
     kind: "user",
     id: "2025-06_contextless_frames",
     label: "Contextless Frames",
@@ -17,9 +19,17 @@ let i = (0, n(818083).B)({
       }
     }]
   }),
-  r = function(e) {
+  i = function(e) {
     let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
-    return i.getCurrentConfig({
+    return r.useExperiment({
+      location: e
+    }, {
+      autoTrackExposure: t
+    })
+  },
+  a = function(e) {
+    let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
+    return r.getCurrentConfig({
       location: e
     }, {
       autoTrackExposure: t

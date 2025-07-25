@@ -1,17 +1,31 @@
-/** Chunk was on 30424 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  g: () => u
+  A: () => u,
+  g: () => c
 }), n(997841);
-var i = n(783097),
-  r = n(630388),
-  l = n(28881),
-  o = n(981631);
+var r = n(73800),
+  i = n(783097),
+  a = n(630388),
+  o = n(28881),
+  s = n(981631);
 
-function u(e) {
+function l(e) {
   var t;
   if (!(0, i.BQ)(e)) return !1;
   let n = null != (t = e.flags) ? t : 0,
-    u = (0, r.yE)(n, o.udG.EMBEDDED),
-    a = (0, r.yE)(n, o.udG.CONTEXTLESS_ACTIVITY);
-  return !!u && !!a && (0, l.QK)("canLaunchFrame").enabled
+    r = (0, a.yE)(n, s.udG.EMBEDDED),
+    o = (0, a.yE)(n, s.udG.CONTEXTLESS_ACTIVITY);
+  return r && o
+}
+
+function c(e) {
+  return !!l(e) && (0, o.QK)("canLaunchFrame").enabled
+}
+
+function u(e) {
+  let {
+    enabled: t
+  } = (0, o.u$)("canLaunchFrame");
+  return r.useMemo(() => null != e && l(e) && t, [e, t])
 }
