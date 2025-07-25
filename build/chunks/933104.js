@@ -1,9 +1,9 @@
 /** Chunk was on 46922 **/
 n.d(t, {
-  $h: () => x,
-  cO: () => I,
-  jG: () => E,
-  yI: () => S
+  $h: () => S,
+  cO: () => P,
+  jG: () => x,
+  yI: () => I
 });
 var r = n(255367);
 n(73800);
@@ -26,15 +26,16 @@ var i = n(120356),
   y = n(93841),
   v = n(388032),
   C = n(423151),
-  j = n(928381);
+  j = n(928381),
+  E = n(225375);
 
-function E(e) {
+function x(e) {
   let {
     guildId: t,
     powerup: n,
     markAsDismissed: i
   } = e;
-  return (0, r.jsx)(P, {
+  return (0, r.jsx)(N, {
     asset: (0, r.jsx)(m.g, {
       className: C.image
     }),
@@ -50,12 +51,12 @@ function E(e) {
   })
 }
 
-function x(e) {
+function S(e) {
   let {
     guildId: t,
     markAsDismissed: n
   } = e, i = (0, f.Z)(t);
-  return (0, r.jsx)(P, {
+  return (0, r.jsx)(N, {
     asset: (0, r.jsx)("img", {
       alt: "",
       src: j.Z,
@@ -75,7 +76,7 @@ function x(e) {
   })
 }
 
-function S(e) {
+function I(e) {
   let {
     guildId: t,
     powerups: n,
@@ -97,7 +98,7 @@ function S(e) {
       perk: n[0].title
     }),
     c = 1 === n.length;
-  return (0, r.jsx)(P, {
+  return (0, r.jsx)(N, {
     asset: 1 === n.length ? (0, r.jsx)(m.m, {
       className: C.image,
       powerup: n[0]
@@ -114,16 +115,18 @@ function S(e) {
   })
 }
 
-function I(e) {
+function P(e) {
   let {
     guildId: t,
     powerup: n,
     markAsDismissed: i
   } = e;
-  return n.skuId === o.A$ ? (0, r.jsx)(P, {
+  return n.skuId === o.A$ ? (0, r.jsx)(N, {
     header: v.intl.string(y.default.Ygpx4e),
     content: v.intl.string(y.default.mmNkUF),
-    asset: (0, r.jsx)(m.g, {
+    asset: (0, r.jsx)("img", {
+      alt: "",
+      src: E.Z,
       className: C.image
     }),
     onClick: () => (0, g.Z)(t, u.Z.GUILD_POWERUPS_COACHMARK_NEW_PERK_AVAILABLE, n.skuId),
@@ -132,7 +135,7 @@ function I(e) {
   }) : null
 }
 
-function P(e) {
+function N(e) {
   var {
     asset: t,
     header: n,

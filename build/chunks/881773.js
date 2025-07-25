@@ -159,7 +159,7 @@ function _(e) {
     handleSeekForwardBtnClick: w,
     handleControlBarPendingInteraction: A,
     onVolumeChange: L
-  } = e, R = (0, f.km)(e => e.volume), M = (0, f.km)(e => e.setVolume), V = (0, f.km)(e => e.muted), B = (0, f.km)(e => e.setMuted), F = (0, f.km)(e => e.transcriptEnabled), Z = (0, f.km)(e => e.captionEnabled), q = (0, f.km)(e => e.fullScreenEnabled), U = (0, s.e7)([m.Z], () => m.Z.useReducedMotion), Q = (0, s.e7)([m.Z], () => m.Z.keyboardModeEnabled), [G, Y] = l.useState(V ? 0 : R), [z, H] = l.useState(!1), [K, X] = l.useState(!1), [{
+  } = e, R = (0, f.km)(e => e.volume), M = (0, f.km)(e => e.setVolume), V = (0, f.km)(e => e.muted), B = (0, f.km)(e => e.setMuted), F = (0, f.km)(e => e.transcriptEnabled), Z = (0, f.km)(e => e.captionEnabled), q = (0, f.km)(e => e.fullScreenEnabled), U = (0, s.e7)([m.Z], () => m.Z.useReducedMotion), Q = (0, s.e7)([m.Z], () => m.Z.keyboardModeEnabled), [G, Y] = l.useState(V ? 0 : R), [z, H] = l.useState(!1), [X, K] = l.useState(!1), [{
     volumeAnimSpring: W
   }, $] = (0, d.q_F)(() => ({
     from: {
@@ -205,11 +205,11 @@ function _(e) {
   l.useEffect(() => {
     null != J.current && J.current.focus()
   }, []), l.useEffect(() => ($({
-    volumeAnimSpring: K || z ? 1 : 0,
+    volumeAnimSpring: X || z ? 1 : 0,
     immediate: U
   }), () => {
     W.stop()
-  }), [K, z, $, U, W]), l.useEffect(() => (window.addEventListener("keydown", el), () => {
+  }), [X, z, $, U, W]), l.useEffect(() => (window.addEventListener("keydown", el), () => {
     window.removeEventListener("keydown", el)
   }), [el]);
   let eo = 0 === G ? d.OyP : G < .5 ? d.X2j : d.gj8,
@@ -289,10 +289,10 @@ function _(e) {
             minValue: 0,
             maxValue: 1,
             onValueChange: e => {
-              ee(e), M(e), L(e), K && (X(!1), A(!1)), V && e > 0 && B(!1)
+              ee(e), M(e), L(e), X && (K(!1), A(!1)), V && e > 0 && B(!1)
             },
             asValueChanges: e => {
-              ee(e), K || (X(!0), A(!0))
+              ee(e), X || (K(!0), A(!0))
             },
             fillStyles: {
               backgroundColor: c.Z.colors.WHITE.css

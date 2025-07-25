@@ -1,10 +1,21 @@
 /**
   Module ID: 63942
-  Original File Name: e2900c7b2550b706
+  Original File Name: 2f9129d5e69ffda7
 **/
 .modalRoot_de2fa0 {
     border: none!important;
-    border-radius: 12px;
+    border-radius: 12px
+}
+
+.modalRootPortrait_de2fa0 {
+    height: 100vh;
+    max-height: calc(100vh - 160px);
+    max-width: calc(100vw - 160px);
+    min-width: 495px;
+    width: calc(56.25vh - 178.3125px)
+}
+
+.modalRootLandscape_de2fa0 {
     min-width: 500px;
     width: min(calc(100vw - 110px),calc(177.77778vh - 551.11111px),1900px)
 }
@@ -19,6 +30,8 @@
 .modalBg_de2fa0 {
     background-color: var(--background-surface-high);
     border-radius: 12px;
+    display: flex;
+    flex-grow: 1;
     overflow: hidden
 }
 
@@ -54,10 +67,12 @@
 
 .videoCont_de2fa0 {
     align-items: center;
+    background-color: #000;
     display: flex;
-    height: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
     justify-content: center;
-    width: 100%
+    position: relative
 }
 
 .videoContInnerRelative_de2fa0 {
@@ -65,6 +80,23 @@
     height: 100%;
     position: relative;
     width: 100%
+}
+
+.modalRootPortrait_de2fa0 .videoContInnerRelative_de2fa0 {
+    bottom: 0;
+    display: flex;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.videoContInnerRelativePortrait_de2fa0 {
+    aspect-ratio: 9/16
+}
+
+.videoContInnerRelativeLandscape_de2fa0 {
+    aspect-ratio: 16/9
 }
 
 .videoContOverlay_de2fa0 {
@@ -93,6 +125,7 @@
 }
 
 .videoInner_de2fa0 {
+    flex-shrink: 1;
     max-height: 100%;
     object-fit: contain;
     position: relative;
@@ -108,7 +141,8 @@
 }
 
 .videoFooterCont_de2fa0 {
-    bottom: 2px
+    bottom: 2px;
+    flex-shrink: 0
 }
 
 .videoFooterCont_de2fa0,.videoFooterContGradient_de2fa0 {
@@ -218,6 +252,7 @@
     align-items: center;
     background-image: linear-gradient(90deg,rgba(205,216,255,.08) 23%,rgba(35,36,40,0));
     display: flex;
+    flex-shrink: 0;
     height: 77px;
     padding: 4px 24px
 }
@@ -258,6 +293,7 @@
     align-items: center;
     box-sizing: border-box;
     display: flex;
+    flex-shrink: 0;
     justify-content: space-between;
     padding: 16px 24px;
     width: 100%
@@ -790,4 +826,4 @@
     background-color: var(--white)
 }
 
-/*# sourceMappingURL=e2900c7b2550b706.css.map*/
+/*# sourceMappingURL=2f9129d5e69ffda7.css.map*/
