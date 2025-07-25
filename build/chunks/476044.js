@@ -10,24 +10,24 @@ function i(e) {
     targetRef: t,
     onShouldClose: n,
     topThreshold: i = 40,
-    bottomThreshold: l = 60,
-    enabled: s = !0
+    bottomThreshold: s = 60,
+    enabled: l = !0
   } = e;
   r.useEffect(() => {
-    if (!s || (null == t ? void 0 : t.current) == null) return;
+    if (!l || (null == t ? void 0 : t.current) == null) return;
     let e = null,
       r = r => {
         if ((null == t ? void 0 : t.current) == null || !(0, o.k)(r.target, HTMLElement)) return;
-        let s = r.target;
-        if (!s.contains(t.current)) return;
-        let a = s.scrollTop;
+        let l = r.target;
+        if (!l.contains(t.current)) return;
+        let a = l.scrollTop;
         if (null === e) {
           e = a;
           return
         }
         let c = a - e,
           u = Math.abs(c);
-        (c < 0 && u > i || c > 0 && u > l) && n()
+        (c < 0 && u > i || c > 0 && u > s) && n()
       };
     return document.addEventListener("scroll", r, {
       passive: !0,
@@ -37,5 +37,5 @@ function i(e) {
         capture: !0
       })
     }
-  }, [s, t, n, i, l])
+  }, [l, t, n, i, s])
 }
