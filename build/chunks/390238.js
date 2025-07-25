@@ -12,9 +12,9 @@ var a = t(255367),
   c = t(607070),
   u = t(530618),
   C = t(70097),
-  h = t(272008),
-  m = t(497505),
-  f = t(918701),
+  h = t(509212),
+  m = t(272008),
+  f = t(497505),
   g = t(475595),
   x = t(566078),
   j = t(602667),
@@ -31,17 +31,17 @@ function A(e) {
     transitionState: t,
     onClose: o,
     quest: C,
-    location: f,
+    location: h,
     reward: g,
     sourceQuestContent: j
   } = e, v = r.useRef(null), [p, N] = r.useState(null), A = r.useRef(new i.qA), y = (0, d.e7)([c.Z], () => c.Z.useReducedMotion), S = (null == (n = C.userStatus) ? void 0 : n.claimedAt) != null, [k, q] = r.useState(S ? "claimed" : "loading");
   r.useEffect(() => {
     if (!S) {
       let e = x.r.build(C.config),
-        n = e.rewardPlatforms.length > 0 ? e.rewardPlatforms[0] : m.y$.CROSS_PLATFORM;
-      (0, h.QB)(C.id, n, f).then(() => q("claimed")).catch(() => q("error"))
+        n = e.rewardPlatforms.length > 0 ? e.rewardPlatforms[0] : f.y$.CROSS_PLATFORM;
+      (0, m.QB)(C.id, n, h).then(() => q("claimed")).catch(() => q("error"))
     }
-  }, [C, f, S]);
+  }, [C, h, S]);
   let I = "loading" === k;
   return (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsx)(i.O_, {
@@ -65,7 +65,7 @@ function A(e) {
         }) : (0, a.jsx)(M, {
           quest: C,
           rewardName: g.messages.name,
-          location: f,
+          location: h,
           useReducedMotion: y,
           onClose: o,
           sourceQuestContent: j
@@ -151,10 +151,10 @@ function y(e) {
     onClose: o,
     transitionState: s,
     sourceQuestContent: i
-  } = e, d = r.useMemo(() => (0, f.K)(n.config), [n]);
+  } = e, d = r.useMemo(() => (0, h.K)(n.config), [n]);
   return null == d ? null : (0, a.jsx)(j.A, {
     questOrQuests: n,
-    questContent: m.jn.REWARD_MODAL,
+    questContent: f.jn.REWARD_MODAL,
     sourceQuestContent: i,
     overrideVisibility: !0,
     children: () => (0, a.jsx)(A, {

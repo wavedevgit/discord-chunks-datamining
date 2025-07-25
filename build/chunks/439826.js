@@ -14,17 +14,17 @@ var r = n(255367),
   p = n(410030),
   m = n(44315),
   f = n(617136),
-  g = n(272008),
-  x = n(113434),
-  h = n(497505),
-  b = n(918701),
+  g = n(509212),
+  x = n(272008),
+  h = n(113434),
+  b = n(497505),
   j = n(974390),
   _ = n(475595),
   v = n(18578),
   y = n(623249),
   C = n(685613),
-  O = n(670638),
-  E = n(341907),
+  O = n(110560),
+  E = n(670638),
   w = n(251360),
   S = n(19148),
   T = n(46140),
@@ -76,10 +76,10 @@ function I(e) {
   } = e, {
     ref: f,
     height: g = 0
-  } = (0, d.ZP)([s]), h = (null == (t = n.userStatus) ? void 0 : t.completedAt) != null, b = (0, x.z)(n), {
+  } = (0, d.ZP)([s]), x = (null == (t = n.userStatus) ? void 0 : t.completedAt) != null, b = (0, h.z)(n), {
     type: j,
     hints: _
-  } = o.useMemo(() => h || b ? {
+  } = o.useMemo(() => x || b ? {
     type: 2,
     hints: []
   } : s.length > 0 ? {
@@ -91,7 +91,7 @@ function I(e) {
   } : {
     type: 2,
     hints: []
-  }, [s, h, b, a]), v = 2 !== j, C = (0, u.q_F)({
+  }, [s, x, b, a]), v = 2 !== j, C = (0, u.q_F)({
     opacity: +!!v,
     height: v ? g : 0,
     config: P.Y
@@ -173,19 +173,19 @@ function D(e) {
     onCtxMenuOpen: T,
     onCtxMenuSelect: P,
     sourceQuestContent: D
-  } = e, Q = (0, b.PB)(d), V = (0, p.ZP)(), L = ((0, l.wj)(V) ? A.BRd.DARK : A.BRd.LIGHT) === A.BRd.DARK, M = (0, x.tP)(d), W = (null == (t = d.userStatus) ? void 0 : t.claimedAt) != null, Z = (0, x.B6)(d.config.expiresAt, {
+  } = e, Q = (0, g.PB)(d), V = (0, p.ZP)(), L = ((0, l.wj)(V) ? A.BRd.DARK : A.BRd.LIGHT) === A.BRd.DARK, M = (0, h.tP)(d), W = (null == (t = d.userStatus) ? void 0 : t.claimedAt) != null, Z = (0, h.B6)(d.config.expiresAt, {
     month: "numeric",
     day: "numeric"
   }), U = (null == (n = d.userStatus) ? void 0 : n.enrolledAt) != null, H = (null == (s = d.userStatus) ? void 0 : s.completedAt) != null, {
     onAssetLoadComplete: z
   } = o.useContext(w.k), F = o.useCallback(() => {
-    Q && ((0, b.zi)(d) || U || (0, g.AH)(d.id, {
-      questContent: h.jn.QUEST_HOME_DESKTOP,
+    Q && ((0, g.zi)(d) || U || (0, x.AH)(d.id, {
+      questContent: b.jn.QUEST_HOME_DESKTOP,
       questContentCTA: f.jZ.ACCEPT_QUEST,
       sourceQuestContent: D
-    }), (0, E.openVideoQuestModal)({
+    }), (0, O.openVideoQuestModal)({
       quest: d,
-      questContent: h.jn.QUEST_HOME_DESKTOP,
+      questContent: b.jn.QUEST_HOME_DESKTOP,
       sourceQuestContent: D,
       sourceQuestContentCTA: f.jZ.QUEST_HOME_TILE_HEADER_WATCH_VIDEO
     }))
@@ -219,7 +219,7 @@ function D(e) {
               children: N.intl.string(N.t.SKNnqq)
             })
           }), Q && (0, r.jsx)(u.ua7, {
-            text: H ? N.intl.string(N.t.YsCuyM) : U ? N.intl.string(N.t["74Kqra"]) : (0, b.zi)(d) ? N.intl.string(N.t["I6JG4+"]) : N.intl.string(N.t.umdNio),
+            text: H ? N.intl.string(N.t.YsCuyM) : U ? N.intl.string(N.t["74Kqra"]) : (0, g.zi)(d) ? N.intl.string(N.t["I6JG4+"]) : N.intl.string(N.t.umdNio),
             children: e => (0, r.jsx)(u.P3F, k(B({}, e), {
               className: R.utilButtonWrapper,
               "aria-label": N.intl.string(N.t.RscU7O),
@@ -229,11 +229,11 @@ function D(e) {
                 className: R.utilButtonIcon
               })
             }))
-          }), (0, r.jsx)(O.r, {
+          }), (0, r.jsx)(E.r, {
             onOpen: T,
             onClose: y,
             onSelect: P,
-            questContent: h.jn.QUEST_HOME_DESKTOP,
+            questContent: b.jn.QUEST_HOME_DESKTOP,
             quest: d,
             hideLearnMore: !0,
             shouldShowDisclosure: !0,

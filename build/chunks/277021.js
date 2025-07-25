@@ -1,12 +1,12 @@
 /** Chunk was on 33811 **/
-o.d(t, {
-  Q: () => i
+i.d(t, {
+  Q: () => r
 });
-var a = o(544891),
-  r = o(981631);
-async function i() {
+var a = i(544891),
+  n = i(981631);
+async function r() {
   return (await a.tn.post({
-    url: r.ANM.AGE_ASSURANCE_TEST,
+    url: n.ANM.AGE_ASSURANCE_TEST,
     body: {},
     rejectWithError: !1
   })).body

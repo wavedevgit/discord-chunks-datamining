@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => s
 });
 var r = n(570140),
   i = n(467442),
-  a = n(869031);
-let o = {
+  a = n(869031),
+  o = n(987562);
+let s = {
   maybeOpenBlockUserFeedback(e) {
     let {
       location: t
@@ -18,11 +19,11 @@ let o = {
   maybeOpenAgeVerificationUserFeedback(e) {
     let {
       location: t,
-      didStartVerification: n
+      visibleContent: n
     } = e;
-    (0, i.pZ)(t) && r.Z.dispatch({
+    (0, i.pZ)(t) && null != n && o.os.includes(n) && r.Z.dispatch({
       type: "AGE_VERIFICATION_SHOW_FEEDBACK",
-      didStartVerification: n
+      dismissibleContent: n
     })
   }
 }

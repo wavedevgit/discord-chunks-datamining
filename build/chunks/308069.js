@@ -10,11 +10,11 @@ var r = n(255367),
   l = n(481060),
   c = n(617136),
   u = n(915750),
-  d = n(497505),
-  p = n(918701),
+  d = n(509212),
+  p = n(497505),
   m = n(685613),
-  f = n(670638),
-  g = n(341907),
+  f = n(110560),
+  g = n(670638),
   x = n(303385),
   h = n(388032),
   b = n(74783);
@@ -29,17 +29,17 @@ let j = e => {
     isExpanded: y,
     isExpansionAnimationComplete: C
   } = e, O = (0, u.aM)(), E = o.useCallback(() => {
-    (0, g.openDisclosureModal)(t, {
-      content: d.jn.QUEST_BAR_V2,
+    (0, f.openDisclosureModal)(t, {
+      content: p.jn.QUEST_BAR_V2,
       ctaContent: c.jZ.OPEN_DISCLOSURE,
-      sourceQuestContent: d.jn.QUEST_BAR_V2
+      sourceQuestContent: p.jn.QUEST_BAR_V2
     })
   }, [t]), w = o.useCallback(() => {
-    (0, p.nc)(t, {
-      content: d.jn.QUEST_BAR_V2,
+    (0, d.nc)(t, {
+      content: p.jn.QUEST_BAR_V2,
       ctaContent: c.jZ.OPEN_GAME_LINK,
       impressionId: O,
-      sourceQuestContent: d.jn.QUEST_BAR_V2
+      sourceQuestContent: p.jn.QUEST_BAR_V2
     })
   }, [O, t]), S = y && C, T = (0, r.jsx)(l.P3F, {
     onClick: w,
@@ -95,15 +95,15 @@ let j = e => {
           color: l.TVs.colors.WHITE,
           className: b.promotedBadgeIcon
         })]
-      }), (0, r.jsx)(f.r, {
+      }), (0, r.jsx)(g.r, {
         onOpen: j,
         onClose: _,
         onSelect: s,
-        questContent: d.jn.QUEST_BAR_V2,
+        questContent: p.jn.QUEST_BAR_V2,
         quest: t,
         shouldShowDisclosure: !0,
         showShareLink: !0,
-        sourceQuestContent: d.jn.QUEST_BAR_V2,
+        sourceQuestContent: p.jn.QUEST_BAR_V2,
         children: e => {
           var t, n;
           return (0, r.jsx)(l.P3F, (t = function(e) {

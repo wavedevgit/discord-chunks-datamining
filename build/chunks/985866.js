@@ -25,10 +25,10 @@ var n = r(255367),
   v = r(572004),
   x = r(302221),
   j = r(617136),
-  S = r(113434),
-  E = r(569984),
-  T = r(497505),
-  R = r(918701),
+  S = r(509212),
+  E = r(113434),
+  T = r(569984),
+  R = r(497505),
   I = r(192023),
   P = r(804127),
   k = r(566078),
@@ -64,7 +64,7 @@ function V(e) {
       quest: a,
       rewardCode: s,
       hasTieredRewardCodes: i
-    } = e, l = (null == (t = a.userStatus) ? void 0 : t.claimedAt) != null || null != s, c = i ? "" : M.intl.string(M.t.UUKbio), d = i ? (0, R.o9)({
+    } = e, l = (null == (t = a.userStatus) ? void 0 : t.claimedAt) != null || null != s, c = i ? "" : M.intl.string(M.t.UUKbio), d = i ? (0, S.o9)({
       quest: a,
       idx: null != (n = null == s ? void 0 : s.tier) ? n : null == (r = a.userStatus) ? void 0 : r.claimedTier
     }) : null, u = k.r.build(a.config), p = null != d && null != (o = d.messages.name) ? o : u.defaultRewardName, _ = i ? M.intl.string(M.t.cfY4PD) : u.defaultRewardName;
@@ -124,10 +124,10 @@ function V(e) {
 }
 
 function U(e) {
-  let t = (0, l.e7)([E.Z], () => E.Z.getQuest(e.questId));
+  let t = (0, l.e7)([T.Z], () => T.Z.getQuest(e.questId));
   return (null == t && null != e.previewQuest && (t = e.previewQuest), null != t) ? (0, n.jsx)(N.A, {
     questOrQuests: t,
-    questContent: T.jn.REWARD_MODAL,
+    questContent: R.jn.REWARD_MODAL,
     sourceQuestContent: e.sourceQuestContent,
     children: r => {
       var o, a;
@@ -184,11 +184,11 @@ function z(e) {
     questStoreRewardCode: J,
     isFetchingRewardCode: Y,
     isClaimingReward: K
-  } = (0, l.cj)([E.Z], () => ({
-    questStoreRewardCode: E.Z.getRewardCode(s.id),
-    isFetchingRewardCode: E.Z.isFetchingRewardCode(s.id),
-    isClaimingReward: E.Z.isClaimingReward(s.id)
-  })), ee = (0, j.O5)(), et = (0, R.oo)({
+  } = (0, l.cj)([T.Z], () => ({
+    questStoreRewardCode: T.Z.getRewardCode(s.id),
+    isFetchingRewardCode: T.Z.isFetchingRewardCode(s.id),
+    isClaimingReward: T.Z.isClaimingReward(s.id)
+  })), ee = (0, j.O5)(), et = (0, S.oo)({
     quest: s
   }), er = !0 === x ? (0, B.b)(s) : J, en = q && (null == (t = s.userStatus) ? void 0 : t.claimedAt) == null && null == er, {
     claimCode: eo,
@@ -240,7 +240,7 @@ function z(e) {
           rewardName: i.defaultRewardName
         })
       });
-      let l = (0, R.C1)({
+      let l = (0, S.C1)({
         quest: t,
         rewardCode: a,
         selectedPlatformType: r,
@@ -262,7 +262,7 @@ function z(e) {
       hasTieredRewardCodes: et
     }),
     ep = o.useMemo(() => N.map(e => ({
-      label: (0, R.t2)(e),
+      label: (0, S.t2)(e),
       value: e
     })), [N]),
     e_ = null;
@@ -275,29 +275,29 @@ function z(e) {
         ei(!1), z(e)
       },
       isSelected: e => e === U,
-      serialize: e => (0, R.t2)(e),
+      serialize: e => (0, S.t2)(e),
       className: el ? W.errorInput : "",
       isDisabled: K,
       renderOptionLabel: e => {
         let t = function(e) {
           switch (e) {
-            case T.y$.CROSS_PLATFORM:
+            case R.y$.CROSS_PLATFORM:
               return (0, n.jsx)(p.Che, {
                 className: W.platformSelectionOptionIcon
               });
-            case T.y$.PC:
+            case R.y$.PC:
               return (0, n.jsx)(p.pzj, {
                 className: W.platformSelectionOptionIcon
               });
-            case T.y$.PLAYSTATION:
+            case R.y$.PLAYSTATION:
               return (0, n.jsx)(p.Tsp, {
                 className: W.platformSelectionOptionIcon
               });
-            case T.y$.SWITCH:
+            case R.y$.SWITCH:
               return (0, n.jsx)(p.aPH, {
                 className: W.platformSelectionOptionIcon
               });
-            case T.y$.XBOX:
+            case R.y$.XBOX:
               return (0, n.jsx)(p.Mko, {
                 className: W.platformSelectionOptionIcon
               })
@@ -339,10 +339,10 @@ function z(e) {
       inputClassName: W.errorInput
     })
   }));
-  let eh = o.useMemo(() => et ? (0, R.o9)({
+  let eh = o.useMemo(() => et ? (0, S.o9)({
       quest: s,
       idx: null == er ? void 0 : er.tier
-    }) : (0, R.o9)({
+    }) : (0, S.o9)({
       quest: s,
       idx: 0
     }), [et, s, null == er ? void 0 : er.tier]),
@@ -367,7 +367,7 @@ function z(e) {
   en ? ev = M.intl.string(M.t.SLZMi4) : !en && el ? ev = M.intl.string(M.t.gNJHHh) : eO && (ev = M.intl.string(M.t["+zx47e"]));
   let ex = !H && null != er && !A && !el,
     ej = null != em && et,
-    eS = (0, S.Gd)(s.id);
+    eS = (0, E.Gd)(s.id);
   return (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsx)(i.O_, {
       ref: X,

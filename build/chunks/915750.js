@@ -19,8 +19,8 @@ var r = n(255367),
   f = n(797614),
   _ = n(358085),
   p = n(617136),
-  h = n(569984),
-  m = n(918701),
+  h = n(509212),
+  m = n(569984),
   g = n(882198),
   E = n(5881),
   b = n(981631);
@@ -87,7 +87,7 @@ class R {
     questContentRowIndex: s,
     minViewTimeSeconds: l = S,
     isQuestEnrollmentBlocked: c,
-    sourceQuestContent: h
+    sourceQuestContent: m
   }) {
     var v = this;
     y(this, "id", void 0), y(this, "quests", void 0), y(this, "questContent", void 0), y(this, "triggeredByStatusChange", void 0), y(this, "trackGuildAndChannelMetadata", void 0), y(this, "questContentPosition", void 0), y(this, "questContentRowIndex", void 0), y(this, "sourceQuestContent", void 0), y(this, "heartbeatTimeoutId", void 0), y(this, "lastBeatTime", void 0), y(this, "minViewTimeReachedTimeoutId", void 0), y(this, "minViewTimeSeconds", void 0), y(this, "minViewportPercentage", void 0), y(this, "isQuestEnrollmentBlocked", void 0), y(this, "isRunning", !1), y(this, "onMinViewTimeReached", () => {
@@ -96,10 +96,10 @@ class R {
           impressionId: this.id
         });
         let t = !1,
-          n = (0, m.Zp)(this.questContent);
+          n = (0, h.Zp)(this.questContent);
         if (null != n) {
           let r = C(e.id, n);
-          (t = !N.has(r) && (0, m.VB)(this.questContent)) && N.add(r)
+          (t = !N.has(r) && (0, h.VB)(this.questContent)) && N.add(r)
         }
         let r = O({
           min_view_time_seconds: this.minViewTimeSeconds,
@@ -139,7 +139,7 @@ class R {
       }), v.lastBeatTime = Date.now()
     }), y(this, "commonProperties", e => O(I(O({
       impression_id: this.id
-    }, (0, m.qe)(e.id, this.questContent)), {
+    }, (0, h.qe)(e.id, this.questContent)), {
       is_quest_enrollment_blocked: this.isQuestEnrollmentBlocked,
       quest_status: (0, p.uk)(e)
     }), (0, p.mH)(this.questContent, this.questContentPosition, this.questContentRowIndex))), y(this, "clone", e => {
@@ -176,7 +176,7 @@ class R {
     }), y(this, "stop", function() {
       let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
       e && v.beat(!0), v.lastBeatTime = void 0, clearInterval(v.heartbeatTimeoutId), clearTimeout(v.minViewTimeReachedTimeoutId), v.isRunning = !1
-    }), this.id = (0, a.Z)(), this.questContent = t, this.questContentPosition = i, this.minViewTimeSeconds = l, this.minViewportPercentage = A, this.quests = Array.isArray(e) ? e : [e], this.trackGuildAndChannelMetadata = r, this.triggeredByStatusChange = n, this.questContentRowIndex = s, this.isQuestEnrollmentBlocked = c, this.sourceQuestContent = h
+    }), this.id = (0, a.Z)(), this.questContent = t, this.questContentPosition = i, this.minViewTimeSeconds = l, this.minViewportPercentage = A, this.quests = Array.isArray(e) ? e : [e], this.trackGuildAndChannelMetadata = r, this.triggeredByStatusChange = n, this.questContentRowIndex = s, this.isQuestEnrollmentBlocked = c, this.sourceQuestContent = m
   }
 }
 let P = (e, t) => {
@@ -208,7 +208,7 @@ function M(e) {
     reference: o,
     focusedChanged: c,
     sourceQuestContent: u
-  } = e, d = w(e.questOrQuests), f = i.useRef(null), _ = (0, s.e7)([h.Z], () => null != h.Z.questEnrollmentBlockedUntil, []);
+  } = e, d = w(e.questOrQuests), f = i.useRef(null), _ = (0, s.e7)([m.Z], () => null != m.Z.questEnrollmentBlockedUntil, []);
   return (0, l.ZP)(() => () => {
     null != f.current && f.current.stop()
   }), i.useEffect(() => {

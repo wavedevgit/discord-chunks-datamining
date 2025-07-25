@@ -16,8 +16,8 @@ var s = n(120356),
   p = n(617136),
   h = n(915750),
   x = n(111382),
-  g = n(113434),
-  j = n(918701),
+  g = n(509212),
+  j = n(113434),
   C = n(667105),
   f = n(388032),
   b = n(166246);
@@ -46,18 +46,18 @@ let v = e => 0 === e.length ? b.warning : b.danger,
       })
     });
     let x = [];
-    (0, j.Nj)({
+    (0, g.Nj)({
       quest: t
     }) && x.push((0, m.isWeb)() ? f.intl.string(f.t["0UTkPz"]) : f.intl.string(f.t.XGRUho));
-    let g = [...x, ...s.map(e => {
+    let j = [...x, ...s.map(e => {
       if (e.type !== i.K.EXPIRED_CREDENTIAL || !l) return e.message;
       let r = d.Z.getAccount(e.connected_account_id, e.connected_account_type),
-        s = (0, j.C9)(e),
-        o = (0, j._j)(e);
+        s = (0, g.C9)(e),
+        o = (0, g._j)(e);
       return f.intl.format(s, {
         account_name: null == r ? void 0 : r.name,
         onClick: () => {
-          (0, j.fY)({
+          (0, g.fY)({
             quest: t,
             platformType: o
           }, {
@@ -72,7 +72,7 @@ let v = e => 0 === e.length ? b.warning : b.danger,
     return (0, r.jsx)(c.Text, {
       variant: "text-sm/medium",
       color: "text-muted",
-      children: g.reduce((e, t) => [...e, t, " "], [])
+      children: j.reduce((e, t) => [...e, t, " "], [])
     })
   },
   N = function(e) {
@@ -82,7 +82,7 @@ let v = e => 0 === e.length ? b.warning : b.danger,
       i = (0, x.n)(),
       d = (0, p.O5)(),
       m = (0, h.aM)(),
-      j = (0, C.g2)({
+      g = (0, C.g2)({
         useReducedMotion: n,
         className: b.refreshIcon
       }),
@@ -90,17 +90,17 @@ let v = e => 0 === e.length ? b.warning : b.danger,
         errorHints: N,
         startingConsoleQuest: T,
         startConsoleQuest: E
-      } = (0, g.GI)({
+      } = (0, j.GI)({
         questId: e.quest.id,
         beforeRequest: () => {
-          j.startAnimation(), d({
+          g.startAnimation(), d({
             questId: e.quest.id,
             questContent: e.location,
             questContentCTA: p.jZ.DEFIBRILLATOR,
             sourceQuestContent: e.sourceQuestContent
           })
         },
-        afterRequest: j.stopAnimation
+        afterRequest: g.stopAnimation
       });
     return (0, r.jsxs)("div", {
       className: o()(b.container, {
@@ -138,7 +138,7 @@ let v = e => 0 === e.length ? b.warning : b.danger,
           disabled: T,
           children: (0, r.jsxs)("div", {
             className: b.ctaInner,
-            children: [j.render(), f.intl.string(f.t.nPThNT)]
+            children: [g.render(), f.intl.string(f.t.nPThNT)]
           })
         })
       })]

@@ -19,8 +19,8 @@ var r = n(255367),
   p = n(152708),
   x = n(594190),
   g = n(751571),
-  _ = n(569984),
-  v = n(918701),
+  _ = n(509212),
+  v = n(569984),
   j = n(977156),
   S = n(28798),
   b = n(131951),
@@ -86,7 +86,7 @@ function F(e) {
         var i, l;
         let n = t.find(e => (0, I.Z)(r.id, e.windowHandle));
         if ((null == n ? void 0 : n.id) == null) continue;
-        let s = (0, v.lQ)(e, n.id);
+        let s = (0, _.lQ)(e, n.id);
         if (null != s && (null == (i = s.userStatus) ? void 0 : i.enrolledAt) != null && (null == (l = s.userStatus) ? void 0 : l.completedAt) == null) return {
           source: r,
           quest: s
@@ -94,7 +94,7 @@ function F(e) {
       }
       return null
     }, [r, e, t, n])
-  }((0, d.e7)([_.Z], () => _.Z.quests), H, C), Y = i.useMemo(() => null == C ? null : [...C].sort((e, t) => (null == V ? void 0 : V.source.id) === e.id ? -1 : (null == V ? void 0 : V.source.id) === t.id ? 1 : W(t) - W(e)), [V, C]);
+  }((0, d.e7)([v.Z], () => v.Z.quests), H, C), Y = i.useMemo(() => null == C ? null : [...C].sort((e, t) => (null == V ? void 0 : V.source.id) === e.id ? -1 : (null == V ? void 0 : V.source.id) === t.id ? 1 : W(t) - W(e)), [V, C]);
   i.useEffect(() => {
     let e = z.current;
     return (0, N.t)({

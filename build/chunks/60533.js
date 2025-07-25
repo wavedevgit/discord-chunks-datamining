@@ -1,7 +1,7 @@
 /** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
-  Z: () => d
+  Z: () => u
 });
 var r = n(255367);
 n(73800);
@@ -10,39 +10,37 @@ var i = n(442837),
   s = n(90815),
   a = n(601964),
   o = n(594174),
-  c = n(675968);
+  c = n(388032),
+  d = n(675968);
 
-function d(e) {
+function u(e) {
   let {
     guild: t
   } = e, n = (0, i.e7)([o.default], () => {
     let e = o.default.getCurrentUser();
     return (0, a.eM)(t, e)
-  }), d = () => {
+  }), u = () => {
     (0, s.q)(t.id, {
       demonetized: !0
     })
   };
-  return (0, r.jsxs)("div", {
-    className: c.container,
+  return (0, r.jsxs)(l.Kqy, {
+    gap: 24,
+    className: d.container,
     children: [(0, r.jsx)(l.X6q, {
       variant: "heading-lg/semibold",
       color: "header-primary",
-      children: "Monetization Temporarily Disabled"
-    }), (0, r.jsx)(l.LZC, {
-      size: 24
+      children: c.intl.string(c.t.Ms33Dg)
     }), (0, r.jsx)(l.Text, {
       variant: "text-md/normal",
       color: "header-secondary",
-      children: "This server is overdue for accepting our new terms of service so we've had to temporarily suspend monetization. Don't worry, existing subscribers can still access their benefits and renew their subscription. However, new subscriptions cannot be made until the owner accepts our new terms of service."
-    }), (0, r.jsx)(l.LZC, {
-      size: 24
+      children: c.intl.string(c.t.xK7oiY)
     }), (0, r.jsx)(l.ua7, {
-      text: "Only the server owner can accept new terms",
+      text: c.intl.string(c.t.VAIHXV),
       shouldShow: !n,
       children: e => {
         var t, i;
-        return (0, r.jsx)(l.zxk, (t = function(e) {
+        return (0, r.jsx)("div", (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -59,12 +57,13 @@ function d(e) {
             })
           }
           return e
-        }({
-          variant: "primary",
-          text: "Accept New Terms",
-          disabled: !n
-        }, e), i = i = {
-          onClick: d
+        }({}, e), i = i = {
+          children: (0, r.jsx)(l.zxk, {
+            variant: "primary",
+            text: c.intl.string(c.t.ZXeJbW),
+            disabled: !n,
+            onClick: u
+          })
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {

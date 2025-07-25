@@ -29,8 +29,8 @@ var r = n(255367),
   A = n(475595),
   N = n(602667),
   C = n(644646),
-  R = n(667105),
-  P = n(341907),
+  R = n(110560),
+  P = n(667105),
   w = n(46140),
   D = n(981631),
   L = n(231338),
@@ -80,7 +80,7 @@ function F(e) {
   } = e, K = (0, s.e7)([b.Z], () => {
     var e;
     return null != (e = b.Z.getChannel(null == k ? void 0 : k.channelId)) ? e : null
-  }), z = (0, R.hf)({
+  }), z = (0, P.hf)({
     quest: v,
     questContent: S.jn.MEMBERS_LIST,
     sourceQuestContent: S.jn.MEMBERS_LIST
@@ -138,7 +138,7 @@ function F(e) {
         questContentCTA: I.jZ.OPEN_DISCLOSURE,
         trackGuildAndChannelMetadata: !0,
         sourceQuestContent: S.jn.MEMBERS_LIST
-      }), (0, P.openDisclosureModal)(v, {
+      }), (0, R.openDisclosureModal)(v, {
         content: S.jn.MEMBERS_LIST,
         ctaContent: I.jZ.OPEN_DISCLOSURE,
         sourceQuestContent: S.jn.MEMBERS_LIST
@@ -151,7 +151,7 @@ function F(e) {
         questContentCTA: I.jZ.LEARN_MORE,
         trackGuildAndChannelMetadata: !0,
         sourceQuestContent: S.jn.MEMBERS_LIST
-      }), (0, P.navigateToQuestHome)({
+      }), (0, R.navigateToQuestHome)({
         fromContent: S.jn.MEMBERS_LIST,
         questId: v.id
       })

@@ -1,6 +1,6 @@
 /**
   Module ID: 94312
-  Original File Name: 4fa2382adaebc0de
+  Original File Name: 288c6b6a607d5350
 **/
 .editCard_a25a68 {
     background-color: var(--background-surface-high);
@@ -3614,20 +3614,9 @@
     padding: 4px 8px
 }
 
-.viewServerButton__2485e {
-    background-color: var(--background-base-lowest);
-    border-radius: 0 4px 4px 0;
-    height: 100%;
-    min-width: 172px;
-    padding: 11px 20px
-}
-
-.viewServerButtonText__2485e {
-    color: var(--header-primary)
-}
-
-.roundedEdges__2485e {
-    border-radius: 4px
+.viewServerButtonContainer__2485e {
+    display: flex;
+    justify-content: center
 }
 
 .howItWorksContainer_dd30dc {
@@ -12291,4 +12280,4 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     width: 8px
 }
 
-/*# sourceMappingURL=4fa2382adaebc0de.css.map*/
+/*# sourceMappingURL=288c6b6a607d5350.css.map*/

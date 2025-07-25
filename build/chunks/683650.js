@@ -11,8 +11,8 @@ var o = n(120356),
   l = n(481060),
   c = n(617136),
   u = n(497505),
-  d = n(266843),
-  m = n(341907),
+  d = n(110560),
+  m = n(266843),
   p = n(46140),
   h = n(388032),
   x = n(444879),
@@ -25,7 +25,7 @@ function j() {
       className: x.button,
       color: a.Tt.BRAND,
       onClick: () => {
-        (0, m.navigateToQuestHome)({
+        (0, d.navigateToQuestHome)({
           fromContent: u.jn.QUESTS_EMBED
         })
       },
@@ -42,7 +42,7 @@ function f(e) {
   } = e, {
     containerRef: r,
     size: o
-  } = (0, d.h)();
+  } = (0, m.h)();
   return (0, c.Zk)(p.V_.UNKNOWN_QUEST, t), (0, s.jsxs)("div", {
     ref: e => {
       r.current = e

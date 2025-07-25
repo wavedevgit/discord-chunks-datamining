@@ -27,10 +27,10 @@ var r = n(255367),
   I = n(25990),
   T = n(594174),
   S = n(960048),
-  A = n(272008),
-  N = n(113434),
-  C = n(497505),
-  R = n(918701),
+  A = n(509212),
+  N = n(272008),
+  C = n(113434),
+  R = n(497505),
   P = n(475595),
   w = n(566078),
   D = n(968435),
@@ -116,17 +116,17 @@ function K(e) {
     decoration: p,
     onUseNow: h,
     preview: m
-  } = e, g = i.useRef(null), [b, y] = i.useState(null), O = i.useRef(new s.qA), v = (0, c.e7)([_.Z], () => _.Z.useReducedMotion), I = (0, c.e7)([T.default], () => T.default.getCurrentUser()), S = (null == (t = l.userStatus) ? void 0 : t.claimedAt) != null, [N, R] = i.useState(!0 === m || S ? "claimed" : "loading");
+  } = e, g = i.useRef(null), [b, y] = i.useState(null), O = i.useRef(new s.qA), v = (0, c.e7)([_.Z], () => _.Z.useReducedMotion), I = (0, c.e7)([T.default], () => T.default.getCurrentUser()), S = (null == (t = l.userStatus) ? void 0 : t.claimedAt) != null, [A, C] = i.useState(!0 === m || S ? "claimed" : "loading");
   i.useEffect(() => {
-    S || !0 === m || (0, A.QB)(l.id, C.y$.CROSS_PLATFORM, d).then(() => R("claimed")).catch(() => R("error"))
+    S || !0 === m || (0, N.QB)(l.id, R.y$.CROSS_PLATFORM, d).then(() => C("claimed")).catch(() => C("error"))
   }, [l, d, S, m]);
   let P = () => {
-      R("applying"), h().finally(a)
+      C("applying"), h().finally(a)
     },
     w = !0 === m && null === p && (null == f ? void 0 : f.skuId) !== "",
     D = null == p && !0 !== m,
-    x = null == I || D || w || "loading" === N,
-    M = !v && !S && "claimed" === N;
+    x = null == I || D || w || "loading" === A,
+    M = !v && !S && "claimed" === A;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.O_, {
       ref: y,
@@ -142,7 +142,7 @@ function K(e) {
         }),
         hideShadow: !0,
         parentComponent: "QuestsRewardCollectibleModal",
-        children: "error" === N ? (0, r.jsx)(L.Z, {
+        children: "error" === A ? (0, r.jsx)(L.Z, {
           onClose: a
         }) : x ? (0, r.jsx)("div", {
           className: G.loadingIndicatorWrapper,
@@ -153,7 +153,7 @@ function K(e) {
           quest: l,
           user: I,
           decoration: p,
-          isSaving: "applying" === N,
+          isSaving: "applying" === A,
           onClose: a,
           onConfirm: P
         })
@@ -170,7 +170,7 @@ function K(e) {
 function z(e) {
   let {
     quest: t
-  } = e, n = i.useMemo(() => (0, P.fh)(t, P.eC.LOGO_TYPE, "dark"), [t]), a = w.r.build(t.config).defaultRewardRedemptionInstructionsByPlatform[C.y$.CROSS_PLATFORM];
+  } = e, n = i.useMemo(() => (0, P.fh)(t, P.eC.LOGO_TYPE, "dark"), [t]), a = w.r.build(t.config).defaultRewardRedemptionInstructionsByPlatform[R.y$.CROSS_PLATFORM];
   return (0, r.jsxs)("div", {
     className: G.additionalRedemptionInstructions,
     children: [(0, r.jsx)("img", {
@@ -195,9 +195,9 @@ function q(e) {
     isSaving: a,
     onClose: o,
     onConfirm: s
-  } = e, l = (0, P.fh)(t, P.eC.REWARD).url, c = (0, R.f$)(t.config), {
+  } = e, l = (0, P.fh)(t, P.eC.REWARD).url, c = (0, A.f$)(t.config), {
     fractionalState: d
-  } = (0, m.Z)(), f = d === j.a$.FP_ONLY, _ = (0, N.Qy)(t.config), p = c && !f;
+  } = (0, m.Z)(), f = d === j.a$.FP_ONLY, _ = (0, C.Qy)(t.config), p = c && !f;
   return (0, r.jsxs)("div", {
     className: G.claimedRootContainer,
     children: [(0, r.jsxs)("div", {
@@ -245,7 +245,7 @@ function q(e) {
           text: U.intl.string(U.t.MAS7uL),
           loading: a,
           onClick: s
-        }), (0, R.zK)(t, x.S7.ADDITIONAL_REDEMPTION_INSTRUCTIONS) && (0, r.jsx)(z, {
+        }), (0, A.zK)(t, x.S7.ADDITIONAL_REDEMPTION_INSTRUCTIONS) && (0, r.jsx)(z, {
           quest: t
         }), p && (0, r.jsx)(y.p, {
           className: G.upsell,
@@ -271,7 +271,7 @@ function X(e) {
     onClose: s,
     transitionState: l,
     preview: c
-  } = e, u = i.useMemo(() => (0, R.xn)(a.config), [a]), [d, f] = W(null != (n = null == u ? void 0 : u.skuId) ? n : null);
+  } = e, u = i.useMemo(() => (0, A.xn)(a.config), [a]), [d, f] = W(null != (n = null == u ? void 0 : u.skuId) ? n : null);
   return null == u ? null : (null == (t = a.userStatus) ? void 0 : t.claimedAt) != null ? (0, r.jsx)(p.default, {
     transitionState: l,
     onCloseModal: H,
