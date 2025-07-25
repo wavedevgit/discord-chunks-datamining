@@ -1,6 +1,6 @@
 /** Chunk was on 9268 **/
 n.d(t, {
-  Z: () => d
+  Z: () => u
 }), n(642613);
 var i = n(255367);
 n(73800);
@@ -8,44 +8,51 @@ var r = n(481060),
   s = n(984370),
   a = n(117791),
   l = n(664134),
-  o = n(60503);
-let c = e => Object.values(e).sort((e, t) => e.order - t.order),
-  d = e => {
+  o = n(388032),
+  c = n(60503);
+let d = e => Object.values(e).sort((e, t) => e.order - t.order),
+  u = e => {
     let {
       navBarSections: t,
       activeSectionId: n
-    } = e, d = c(t);
+    } = e, u = {
+      [l.h.HOME]: o.intl.string(o.t.uGRXjY),
+      [l.h.WHATS_NEW]: o.intl.string(o.t["mfcR/v"]),
+      [l.h.BEST_OF_NITRO]: o.intl.string(o.t.xQKkEx),
+      [l.h.PLANS]: o.intl.string(o.t.wyNMnp),
+      [l.h.COMPARE]: o.intl.string(o.t.pwD7IS)
+    }, m = d(t);
     return (0, i.jsx)(s.Z, {
-      className: o.navBar,
+      className: c.navBar,
       transparent: !0,
       children: (0, i.jsxs)("div", {
-        className: o.navBarContent,
+        className: c.navBarContent,
         children: [(0, i.jsxs)("div", {
-          className: o.navBarSectionContentContainer,
+          className: c.navBarSectionContentContainer,
           children: [(0, i.jsx)(r.SrA, {
-            className: o.nitroWheelIcon,
-            colorClass: o.nitroWheelIconColor
+            className: c.nitroWheelIcon,
+            colorClass: c.nitroWheelIconColor
           }), (0, i.jsx)("div", {
-            className: o.navBarSectionContent,
-            children: d.map(e => {
+            className: c.navBarSectionContent,
+            children: m.map(e => {
               let t = n === e.id,
-                s = l.C[e.id];
+                s = u[e.id];
               return (0, i.jsxs)(r.P3F, {
-                className: o.sectionClickable,
+                className: c.sectionClickable,
                 onClick: e.scrollToSection,
                 children: [(0, i.jsx)(r.Text, {
                   variant: "text-sm/medium",
                   color: "text-primary",
                   children: s
                 }), t && (0, i.jsx)("div", {
-                  className: o.sectionUnderline
+                  className: c.sectionUnderline
                 })]
               }, s)
             })
           })]
         }), (0, i.jsx)(a.Z, {
           size: "sm",
-          variant: "secondary"
+          variant: "overlay-secondary"
         })]
       })
     })

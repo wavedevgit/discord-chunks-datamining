@@ -41,10 +41,10 @@ function y(e) {
       step: T,
       updatedSubscription: w,
       startingPremiumSubscriptionPlanIdRef: A,
-      startingFractionalPremiumEndsAtRef: N
+      startingFractionalPremiumEndsAtRef: R
     } = (0, h.JL)(),
     {
-      isGift: R,
+      isGift: N,
       giftRecipient: U,
       giftCode: k,
       hasSentMessage: B,
@@ -57,25 +57,25 @@ function y(e) {
       confirmationFooter: W
     } = (0, f.zb)(),
     z = null != W,
-    Y = (0, C.id)(I, R, G),
+    Y = (0, C.id)(I, N, G),
     K = (0, d.Z)(),
     V = (0, C.a5)(I),
     q = (0, C.tK)(null == D ? void 0 : D.skuId),
     J = (0, _.$)(Z, O),
-    Q = R && null != D && V;
+    Q = N && null != D && V;
   s()(null != I, "Expected plan to selected"), s()(null != M, "Expected selectedSkuId"), s()(null != T, "Step should be set");
   let X = r.useCallback(() => {
     t(), null == y || y()
   }, [t, y]);
   return r.useEffect(() => {
-    !R || null == U || null == k || B || H || (0, u.pO)(U) || F({
+    !N || null == U || null == k || B || H || (0, u.pO)(U) || F({
       onSubscriptionConfirmation: y
     })
-  }, [F, R, U, k, B, H, y]), r.useEffect(() => {
+  }, [F, N, U, k, B, H, y]), r.useEffect(() => {
     null != K && null != K.reminderNotice && Y && (0, o.wH)(a.z.GIFTING_PROMOTION_REMINDER, K.dismissibleContentVersion, {
       dismissAction: g.L.INDIRECT_ACTION
     })
-  }, [K, Y]), n = null != E ? E(I, X, w) : null != b ? (0, i.jsx)(c.VY, {}) : R ? (0, i.jsx)(c.TB, {
+  }, [K, Y]), n = null != E ? E(I, X, w) : null != b ? (0, i.jsx)(c.VY, {}) : N ? (0, i.jsx)(c.TB, {
     planId: I.id,
     onClose: X
   }) : A.current === I.id ? (0, i.jsx)(c.ZP, {
@@ -84,7 +84,7 @@ function y(e) {
     onClose: X,
     paymentSourceType: J,
     hideClose: z,
-    startingFractionalPremiumEndsAt: N.current
+    startingFractionalPremiumEndsAt: R.current
   }) : (0, i.jsx)(c.ZP, {
     followupSKUInfo: v,
     startingPremiumSubscriptionPlanId: A.current,
@@ -93,7 +93,7 @@ function y(e) {
     isDowngrade: null != P && (0, p.GY)(P, I.id, l),
     paymentSourceType: J,
     hideClose: z,
-    startingFractionalPremiumEndsAt: N.current
+    startingFractionalPremiumEndsAt: R.current
   }), (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)(j.C3, {
       children: [(0, i.jsx)(L.Z, {}), n]

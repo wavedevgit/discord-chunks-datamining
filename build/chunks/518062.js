@@ -1,13 +1,13 @@
-/** Chunk was on 29922 **/
+/** Chunk was on 46062 **/
 t.d(n, {
   Z: () => _
 }), t(388685);
-var o = t(255367);
+var r = t(255367);
 t(73800);
-var r = t(442837),
+var o = t(442837),
   i = t(481060),
-  a = t(607070),
-  l = t(600164),
+  l = t(607070),
+  a = t(600164),
   c = t(122890),
   s = t(110818),
   p = t(523726);
@@ -24,20 +24,20 @@ function _(e) {
     purchaseScene: s.fe.Scenes.STARS,
     errorScene: s.fe.Scenes.ERROR,
     successScene: s.fe.Scenes.SUCCESS
-  }), f = (0, r.e7)([a.Z], () => a.Z.useReducedMotion);
-  return (0, o.jsxs)(i.xBx, {
-    align: l.Z.Align.START,
+  }), f = (0, o.e7)([l.Z], () => l.Z.useReducedMotion);
+  return (0, r.jsxs)(i.xBx, {
+    align: a.Z.Align.START,
     className: p.header,
     separator: !1,
-    children: [(0, o.jsx)(s.fe, {
+    children: [(0, r.jsx)(s.fe, {
       className: p.animation,
       nextScene: u,
       onScenePlay: e => d(s.fe.getNextScene(e)),
       pauseWhileUnfocused: !1,
       pause: f
-    }), (0, o.jsx)("div", {
+    }), (0, r.jsx)("div", {
       className: p.headerTitle
-    }), (0, o.jsx)(i.olH, {
+    }), (0, r.jsx)(i.olH, {
       onClick: _,
       className: p.closeButton
     })]

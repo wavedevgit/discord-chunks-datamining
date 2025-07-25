@@ -1,30 +1,30 @@
-/** Chunk was on 96127 **/
-n.d(t, {
-  Z: () => d
+/** Chunk was on 94784 **/
+t.d(n, {
+  Z: () => u
 });
-var r = n(255367),
-  i = n(120356),
-  l = n.n(i),
-  o = n(780384),
-  a = n(410030),
-  s = n(865184);
-let c = n(17702),
-  u = n(647894),
-  d = e => {
+var r = t(255367),
+  a = t(120356),
+  c = t.n(a),
+  o = t(780384),
+  s = t(410030),
+  i = t(865184);
+let l = t(17702),
+  d = t(647894),
+  u = e => {
     let {
-      customSize: t,
-      shouldUseThemeColor: n = !1,
-      loading: i,
-      className: d
-    } = e, h = (0, a.ZP)(), p = n && (0, o.ap)(h) ? u : c;
+      customSize: n,
+      shouldUseThemeColor: t = !1,
+      loading: a,
+      className: u
+    } = e, b = (0, s.ZP)(), f = t && (0, o.ap)(b) ? d : l;
     return (0, r.jsx)("img", {
-      className: l()(s.orbIconSVG, d, {
-        [s.loading]: i
+      className: c()(i.orbIconSVG, u, {
+        [i.loading]: a
       }),
-      src: p,
+      src: f,
       alt: "",
-      style: void 0 !== t ? {
-        height: t
+      style: void 0 !== n ? {
+        height: n
       } : void 0
     })
   }

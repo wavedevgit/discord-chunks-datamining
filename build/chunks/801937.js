@@ -119,24 +119,19 @@ class w extends i.PureComponent {
   }
   createPaymentButtons(e) {
     return e.map(e => {
-      var t, n;
-      let i = C[e],
-        a = m.Wo[e](),
-        s = null == (t = this.props.localizedPromo) ? void 0 : t.paymentSourceTypes.includes(e),
-        u = null == this.props.paymentSourceTypeRestrictions || (null == (n = this.props.paymentSourceTypeRestrictions) ? void 0 : n.includes(e));
+      var t;
+      let n = C[e],
+        i = m.W[e](),
+        a = null == this.props.paymentSourceTypeRestrictions || (null == (t = this.props.paymentSourceTypeRestrictions) ? void 0 : t.includes(e));
       return (0, r.jsx)(l.zx, {
         onClick: () => this.props.onChooseType(e),
-        disabled: !u,
+        disabled: !a,
         children: (0, r.jsxs)("div", {
           className: o()(v.flex, v.alignCenter),
           children: [(0, r.jsx)(h.ZP, {
             className: O.buttonIcon,
-            type: i
-          }), a, s && (0, r.jsx)(c.IGR, {
-            text: y.intl.string(y.t.y2b7CA),
-            className: O.newPaymentBadge,
-            disableColor: !0
-          })]
+            type: n
+          }), i]
         })
       }, e)
     })
@@ -233,6 +228,5 @@ class w extends i.PureComponent {
 }
 let D = s.ZP.connectStores([g.Z], () => ({
   ipCountryCode: g.Z.ipCountryCode,
-  ipCountryCodeHasError: g.Z.ipCountryCodeHasError,
-  localizedPromo: g.Z.localizedPricingPromo
+  ipCountryCodeHasError: g.Z.ipCountryCodeHasError
 }))(w)

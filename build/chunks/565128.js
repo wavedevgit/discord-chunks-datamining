@@ -1,4 +1,4 @@
-/** Chunk was on 96127 **/
+/** Chunk was on 81064 **/
 e.exports = {
   base: "base_e42a84",
   sparkle: "sparkle_e42a84 base_e42a84",

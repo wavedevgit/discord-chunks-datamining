@@ -1,27 +1,27 @@
 /** Chunk was on 67501 **/
 "use strict";
 n.d(t, {
-  Z: () => l
+  Z: () => s
 });
 var r = n(255367),
   i = n(73800);
-let s = e => t => {
+let l = e => t => {
   null == t || t.stopPropagation(), e()
 };
 
-function l(e) {
+function s(e) {
   let {
     onClick: t,
     className: n,
-    children: l
+    children: s
   } = e, o = i.useRef(null);
   return (0, r.jsx)("div", {
     onClick: t,
     ref: o,
     className: n,
-    children: l({
+    children: s({
       areaRef: o,
-      handleStopPropagation: s
+      handleStopPropagation: l
     })
   })
 }

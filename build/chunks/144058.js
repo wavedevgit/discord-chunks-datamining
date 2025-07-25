@@ -1,4 +1,4 @@
-/** Chunk was on 96127 **/
+/** Chunk was on 46922 **/
 e.exports = {
   jumpButton: "jumpButton_ed0c8c",
   text: "text_ed0c8c"

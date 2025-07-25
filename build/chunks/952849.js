@@ -1,4 +1,4 @@
-/** Chunk was on 96127 **/
+/** Chunk was on 81064 **/
 e.exports = {
   premiumTrialBadge: "premiumTrialBadge__4c1e4",
   premiumOfferUnackedBadge: "premiumOfferUnackedBadge__4c1e4",

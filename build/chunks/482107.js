@@ -1,4 +1,4 @@
-/** Chunk was on 96127 **/
+/** Chunk was on 67826 **/
 e.exports = {
   text: "text__87e56"
 }

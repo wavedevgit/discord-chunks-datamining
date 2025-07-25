@@ -5,8 +5,8 @@ r.d(s, {
 var t = r(255367);
 r(73800);
 var n = r(780384),
-  i = r(755721),
-  a = r(481060),
+  a = r(755721),
+  i = r(481060),
   o = r(410030),
   l = r(388032),
   c = r(615836),
@@ -34,7 +34,7 @@ let d = function(e) {
           className: c.churnFooterIcon
         }), (0, t.jsxs)("div", {
           className: c.churnFooterContentBodyInner,
-          children: [(0, t.jsx)(a.Text, {
+          children: [(0, t.jsx)(i.Text, {
             variant: "text-md/medium",
             className: c.churnFooterCopy,
             children: l.intl.format(l.t["2gem09"], {
@@ -43,22 +43,22 @@ let d = function(e) {
             })
           }), (0, t.jsxs)("div", {
             className: c.churnFooterCTAs,
-            children: [(0, t.jsxs)(a.gtL, {
+            children: [(0, t.jsxs)(i.gtL, {
               className: c.churnFooterClaimCTA,
               innerClassName: c.churnFooterClaimCTAInner,
-              look: i.iL.OUTLINED,
-              color: i.Tt.CUSTOM,
+              look: a.iL.OUTLINED,
+              color: a.Tt.CUSTOM,
               onClick: () => null == r ? void 0 : r(),
-              children: [(0, t.jsx)(a.SrA, {
+              children: [(0, t.jsx)(i.SrA, {
                 size: "xs",
                 color: "currentColor",
                 className: c.churnFooterClaimIcon
-              }), (0, t.jsx)(a.Text, {
+              }), (0, t.jsx)(i.Text, {
                 variant: "text-sm/semibold",
                 className: c.churnFooterClaimCopy,
                 children: l.intl.string(l.t.zrCzVF)
               })]
-            }), (0, t.jsx)(a.zxk, {
+            }), (0, t.jsx)(i.zxk, {
               variant: "primary",
               text: l.intl.string(l.t["3PatS0"]),
               onClick: () => null == d ? void 0 : d()

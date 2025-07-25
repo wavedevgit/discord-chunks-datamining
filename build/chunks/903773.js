@@ -1,22 +1,22 @@
 /** Chunk was on 67501 **/
 "use strict";
 n.d(t, {
-  Z: () => l
+  Z: () => s
 });
 var r = n(255367);
 n(73800);
 var i = n(481060),
-  s = n(696936);
+  l = n(696936);
 
-function l(e) {
+function s(e) {
   let {
     children: t,
     className: n,
-    color: l = s.W.YELLOW
+    color: s = l.W.YELLOW
   } = e;
-  return (0, r.jsx)(s.Z, {
+  return (0, r.jsx)(l.Z, {
     className: n,
-    color: l,
+    color: s,
     icon: i.P4T,
     children: t
   })

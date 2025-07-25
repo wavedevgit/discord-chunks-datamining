@@ -4,9 +4,9 @@ n.d(t, {
   Z: () => c
 }), n(388685);
 var r, i = n(442837),
-  s = n(570140);
+  l = n(570140);
 
-function l(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -28,8 +28,8 @@ class a extends(r = i.ZP.PersistedStore) {
     }
   }
 }
-l(a, "displayName", "RecentlyActiveCollapseStore"), l(a, "persistKey", "RecentlyActiveCollapseStore");
-let c = new a(s.Z, {
+s(a, "displayName", "RecentlyActiveCollapseStore"), s(a, "persistKey", "RecentlyActiveCollapseStore");
+let c = new a(l.Z, {
   SET_RECENTLY_ACTIVE_COLLAPSED: function(e) {
     let {
       guildId: t,

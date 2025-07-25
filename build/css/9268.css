@@ -1,6 +1,6 @@
 /**
   Module ID: 9268
-  Original File Name: 073e086747f70c3b
+  Original File Name: 1ceeb696e7ba467a
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -9660,6 +9660,7 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
 
 .contentContainer__15b9a {
     max-width: 800px;
+    min-width: 600px;
     position: relative;
     text-align: center;
     z-index: 1
@@ -9758,10 +9759,7 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
     margin-bottom: 12px;
     padding: 0 4px;
     position: relative;
-    text-transform: uppercase
-}
-
-.offerPill__8af4d,.premiumBrandRefreshOfferPill__8af4d {
+    text-transform: uppercase;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content
@@ -9774,14 +9772,17 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
     border: 1px solid var(--border-normal);
     border-radius: var(--radius-xl);
     padding: var(--space-8) var(--space-12);
-    text-transform: capitalize
+    text-transform: capitalize;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content
 }
 
 .flyingWumpusContainer__08987 {
     pointer-events: none;
     position: absolute;
     right: -125px;
-    top: 160px;
+    top: 200px;
     z-index: 2
 }
 
@@ -9841,7 +9842,7 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
 @container premium-marketing-home-container (max-width: 720px) {
     .flyingWumpusContainer__08987 {
         right: -40px;
-        top: 150px
+        top: 180px
     }
 
     .flyingWumpusAsset__08987 {
@@ -9850,6 +9851,10 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
 
     .key__08987,.star__08987 {
         transform: translateX(75px) translateY(-50px)
+    }
+
+    .car__08987 {
+        transform: translateX(-75px) translateY(-50px)
     }
 }
 
@@ -9938,7 +9943,7 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
 
 .singleButtonContainer__3849c {
     margin: auto;
-    width: 260px
+    min-width: 260px
 }
 
 .offerPillContainer__3849c {
@@ -9995,7 +10000,8 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
 .planTitle_cbfae2 {
     align-items: center;
     display: flex;
-    gap: var(--space-4)
+    gap: var(--space-4);
+    justify-content: center
 }
 
 .table_cbfae2 {
@@ -10083,7 +10089,7 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
 }
 
 .pill_cbfae2.pillGradient_cbfae2 {
-    background: linear-gradient(90deg,rgba(155,29,165,.84),rgba(30,35,83,.84) 120%)
+    background: linear-gradient(90deg,rgba(155,29,165,.84) 0,rgba(30,35,83,.84) 120%),var(--background-base-lower)
 }
 
 .gradientBackgroundContainer_cbfae2 {
@@ -10429,7 +10435,8 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
 .navBarSectionContent__88ef1 {
     display: flex;
     gap: 20px;
-    height: 100%
+    height: 100%;
+    margin-right: var(--space-16)
 }
 
 .sectionClickable__88ef1 {
@@ -10437,7 +10444,10 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
     cursor: pointer;
     display: flex;
     height: 100%;
-    position: relative
+    position: relative;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content
 }
 
 .sectionUnderline__88ef1 {
@@ -10470,6 +10480,23 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
     flex-direction: column;
     margin: 0 auto;
     position: relative
+}
+
+.fadeInFromTop_f48ee4 {
+    animation: fadeInFromTop_f48ee4 .6s ease-out forwards;
+    will-change: opacity,transform
+}
+
+@keyframes fadeInFromTop_f48ee4 {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
 }
 
 .containerBackground_f48ee4 {
@@ -19877,4 +19904,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=073e086747f70c3b.css.map*/
+/*# sourceMappingURL=1ceeb696e7ba467a.css.map*/

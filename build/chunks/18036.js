@@ -1,11 +1,11 @@
 /** Chunk was on 67501 **/
 "use strict";
 n.d(t, {
-  Z: () => b
+  Z: () => m
 }), n(388685);
 var r, i = n(442837),
-  s = n(570140),
-  l = n(592125),
+  l = n(570140),
+  s = n(592125),
   o = n(944486),
   a = n(9156);
 
@@ -24,7 +24,7 @@ let u = {},
 function p() {
   let e = o.Z.getChannelId();
   if (null == e) return;
-  let t = l.Z.getChannel(e);
+  let t = s.Z.getChannel(e);
   if (null == t || null == t.guild_id) return;
   let n = t.guild_id;
   if (null == f[e] && (f[e] = 0), t.isThread() || a.ZP.isOptInEnabled(n) && !a.ZP.isChannelOrParentOptedIn(n, t.id)) {
@@ -40,13 +40,13 @@ class g extends(r = i.ZP.PersistedStore) {
     let {
       suggestedChannels: r,
       dismissedSuggestions: i,
-      channelOpensByChannelId: s
+      channelOpensByChannelId: l
     } = e;
     if (null != r)
       for (let e in r) t = new Set(r[e]), u[e] = void 0 !== t ? t : new Set;
     if (null != i)
       for (let e in i) n = new Set(i[e]), d[e] = void 0 !== n ? n : new Set;
-    f = null != s ? s : {}
+    f = null != l ? l : {}
   }
   getSuggestedChannelId(e) {
     return null
@@ -60,7 +60,7 @@ class g extends(r = i.ZP.PersistedStore) {
   }
 }
 c(g, "displayName", "FavoritesSuggestionStore"), c(g, "persistKey", "FavoritesSuggestionStore");
-let b = new g(s.Z, {
+let m = new g(l.Z, {
   DISMISS_FAVORITE_SUGGESTION: function(e) {
     let {
       guildId: t,

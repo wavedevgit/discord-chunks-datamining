@@ -1,97 +1,97 @@
-/** Chunk was on 96127 **/
-n.d(t, {
-  Z: () => h
-}), n(388685);
-var r = n(255367),
-  i = n(73800),
-  l = n(120356),
-  o = n.n(l),
-  a = n(393903),
-  s = n(448986),
-  c = n(731722),
-  u = n(172751),
-  d = n(842747);
-let h = i.memo(function(e) {
-  var t, n, {
-      children: l,
-      isOverlay: h,
+/** Chunk was on 88448 **/
+r.d(t, {
+  Z: () => f
+}), r(388685);
+var n = r(255367),
+  l = r(73800),
+  a = r(120356),
+  i = r.n(a),
+  c = r(393903),
+  o = r(448986),
+  s = r(731722),
+  u = r(172751),
+  b = r(842747);
+let f = l.memo(function(e) {
+  var t, r, {
+      children: a,
+      isOverlay: f,
       contextGuildId: p
     } = e,
-    f = function(e, t) {
+    d = function(e, t) {
       if (null == e) return {};
-      var n, r, i = function(e, t) {
+      var r, n, l = function(e, t) {
         if (null == e) return {};
-        var n, r, i = {},
-          l = Object.keys(e);
-        for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-        return i
+        var r, n, l = {},
+          a = Object.keys(e);
+        for (n = 0; n < a.length; n++) r = a[n], t.indexOf(r) >= 0 || (l[r] = e[r]);
+        return l
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var l = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+        var a = Object.getOwnPropertySymbols(e);
+        for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r])
       }
-      return i
+      return l
     }(e, ["children", "isOverlay", "contextGuildId"]);
-  let [g, m] = i.useState({
+  let [O, y] = l.useState({
     maskImage: "none"
-  }), b = i.useRef(null), _ = (0, s.Z)(() => {
-    var e, t, n, r;
-    let i = null != (n = null == (e = O.current) ? void 0 : e.getBoundingClientRect()) ? n : null,
-      l = null != (r = null == (t = b.current) ? void 0 : t.getBoundingClientRect()) ? r : null;
-    if (h || null == i || null == l) return void m({
+  }), g = l.useRef(null), m = (0, o.Z)(() => {
+    var e, t, r, n;
+    let l = null != (r = null == (e = j.current) ? void 0 : e.getBoundingClientRect()) ? r : null,
+      a = null != (n = null == (t = g.current) ? void 0 : t.getBoundingClientRect()) ? n : null;
+    if (f || null == l || null == a) return void y({
       maskImage: "none"
     });
-    let o = l.right - i.right,
-      a = l.width - o;
-    if (a > l.width) return void m({
+    let i = a.right - l.right,
+      c = a.width - i;
+    if (c > a.width) return void y({
       maskImage: "none"
     });
-    m({
-      maskImage: "linear-gradient(to right, rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, 0) ".concat(a, "px)")
+    y({
+      maskImage: "linear-gradient(to right, rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, 0) ".concat(c, "px)")
     })
-  }), O = (0, a.y)(_), y = (0, c.yF)(f.userId, p);
-  return (0, r.jsxs)("div", {
-    className: o()(d.container, h && d.isOverlayContainer),
-    ref: O,
-    children: [(0, r.jsx)("div", {
-      className: d.usernameContainer,
-      children: l
-    }), (0, r.jsx)("div", {
-      className: d.chipletParent,
-      children: (0, r.jsx)("span", {
-        className: o()(d.chipletContainer, !y && h && d.noPadding),
-        ref: b,
-        style: g,
-        children: (0, r.jsx)(u.ZP, (t = function(e) {
+  }), j = (0, c.y)(m), P = (0, s.yF)(d.userId, p);
+  return (0, n.jsxs)("div", {
+    className: i()(b.container, f && b.isOverlayContainer),
+    ref: j,
+    children: [(0, n.jsx)("div", {
+      className: b.usernameContainer,
+      children: a
+    }), (0, n.jsx)("div", {
+      className: b.chipletParent,
+      children: (0, n.jsx)("span", {
+        className: i()(b.chipletContainer, !P && f && b.noPadding),
+        ref: g,
+        style: O,
+        children: (0, n.jsx)(u.ZP, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {},
-              r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), r.forEach(function(t) {
-              var r;
-              r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
+            var r = null != arguments[t] ? arguments[t] : {},
+              n = Object.keys(r);
+            "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(r, e).enumerable
+            }))), n.forEach(function(t) {
+              var n;
+              n = r[t], t in e ? Object.defineProperty(e, t, {
+                value: n,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-              }) : e[t] = r
+              }) : e[t] = n
             })
           }
           return e
-        }({}, f), n = n = {
+        }({}, d), r = r = {
           contextGuildId: p,
-          className: o()(f.className, h && d.isOverlayTag),
+          className: i()(d.className, f && b.isOverlayTag),
           disableGuildProfile: !0
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-          var n = Object.keys(e);
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
+          var r = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
+            var n = Object.getOwnPropertySymbols(e);
+            r.push.apply(r, n)
           }
-          return n
-        })(Object(n)).forEach(function(e) {
-          Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+          return r
+        })(Object(r)).forEach(function(e) {
+          Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
         }), t))
       })
     })]

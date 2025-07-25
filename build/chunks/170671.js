@@ -1,33 +1,33 @@
 /** Chunk was on 67501 **/
 "use strict";
 n.d(t, {
-  Z: () => l
+  Z: () => s
 });
 var r = n(255367);
 n(73800);
 var i = n(692547),
-  s = n(313201);
+  l = n(313201);
 
-function l(e) {
+function s(e) {
   var t, n, {
-      isSelected: l
+      isSelected: s
     } = e,
     o = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
         var n, r, i = {},
-          s = Object.keys(e);
-        for (r = 0; r < s.length; r++) n = s[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+          l = Object.keys(e);
+        for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
         return i
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var s = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < s.length; r++) n = s[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+        var l = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
     }(e, ["isSelected"]);
-  let a = (0, s.Dt)();
+  let a = (0, l.Dt)();
   return (0, r.jsxs)("svg", (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -71,13 +71,13 @@ function l(e) {
         y2: "0.127441",
         gradientUnits: "userSpaceOnUse",
         children: [(0, r.jsx)("stop", {
-          stopColor: l ? i.Z.unsafe_rawColors.WHITE_500.css : i.Z.unsafe_rawColors.PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS.css
+          stopColor: s ? i.Z.unsafe_rawColors.WHITE_500.css : i.Z.unsafe_rawColors.PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS.css
         }), (0, r.jsx)("stop", {
           offset: "0.502368",
-          stopColor: l ? i.Z.unsafe_rawColors.WHITE_500.css : i.Z.unsafe_rawColors.PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS_2.css
+          stopColor: s ? i.Z.unsafe_rawColors.WHITE_500.css : i.Z.unsafe_rawColors.PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS_2.css
         }), (0, r.jsx)("stop", {
           offset: "1",
-          stopColor: l ? i.Z.unsafe_rawColors.WHITE_500.css : i.Z.unsafe_rawColors.PREMIUM_TIER_2_PINK_FOR_GRADIENTS.css
+          stopColor: s ? i.Z.unsafe_rawColors.WHITE_500.css : i.Z.unsafe_rawColors.PREMIUM_TIER_2_PINK_FOR_GRADIENTS.css
         })]
       })
     })]

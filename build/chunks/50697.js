@@ -1,20 +1,20 @@
-/** Chunk was on 96127 **/
+/** Chunk was on 64946 **/
 n.d(t, {
-  m: () => c
+  m: () => u
 });
-var r = n(442837),
-  i = n(440051),
+var i = n(442837),
+  r = n(440051),
   l = n(695346),
   o = n(314897),
-  a = n(709054),
-  s = n(7093);
-let c = () => {
+  s = n(709054),
+  a = n(7093);
+let u = () => {
   let {
     showNewHelpTooltip: e
-  } = i.Y.useExperiment({
+  } = r.Y.useExperiment({
     location: "useCanSeeExpiringStatusCoachmark"
   }, {
     autoTrackExposure: !1
-  }), t = l.Cr.useSetting(), n = (0, s.Z)(e => e.isOpen), c = (0, r.e7)([o.default], () => o.default.getId());
-  return !((null != c ? a.default.extractTimestamp(c) : 0) > new Date("2025-02-01").getTime()) && !n && e && null != t && "0" !== t
+  }), t = l.Cr.useSetting(), n = (0, a.Z)(e => e.isOpen), u = (0, i.e7)([o.default], () => o.default.getId());
+  return !((null != u ? s.default.extractTimestamp(u) : 0) > new Date("2025-02-01").getTime()) && !n && e && null != t && "0" !== t
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 54433 **/
 t.d(n, {
   IL: () => U,
-  UQ: () => R,
+  UQ: () => N,
   rz: () => B
 });
 var i = t(255367);
@@ -37,9 +37,9 @@ var r = t(120356),
   T = t(767594),
   w = t(895601),
   A = t(381126),
-  N = t(234286);
+  R = t(234286);
 
-function R(e) {
+function N(e) {
   var n;
   let {
     ctaButton: t,
@@ -92,7 +92,7 @@ function U(e) {
     showPromotionalGiftBanner: h = !1,
     wumpusPosition: m = "inCard",
     isApplicationHome: S = !1
-  } = e, v = (0, a.e7)([j.Z], () => j.Z.getPremiumTypeSubscription()), R = (0, a.e7)([f.default], () => f.default.getCurrentUser()), U = (0, E.N)(), k = null == U || null == (n = U.subscription_trial) ? void 0 : n.sku_id, B = (null == v ? void 0 : v.hasActiveTrial) ? null == R ? void 0 : R.premiumType : null, H = (0, y.Ng)(), F = (0, L.t7)(), G = null != k || null != B ? I.C.PREMIUM_TRIAL : null != H || F ? I.C.PREMIUM_DISCOUNT : null, D = (0, d.ap)((0, u.ZP)()), W = (0, P.A1)(F, B, H, U, k);
+  } = e, v = (0, a.e7)([j.Z], () => j.Z.getPremiumTypeSubscription()), N = (0, a.e7)([f.default], () => f.default.getCurrentUser()), U = (0, E.N)(), k = null == U || null == (n = U.subscription_trial) ? void 0 : n.sku_id, B = (null == v ? void 0 : v.hasActiveTrial) ? null == N ? void 0 : N.premiumType : null, H = (0, y.Ng)(), F = (0, L.t7)(), G = null != k || null != B ? I.C.PREMIUM_TRIAL : null != H || F ? I.C.PREMIUM_DISCOUNT : null, D = (0, d.ap)((0, u.ZP)()), W = (0, P.A1)(F, B, H, U, k);
   return (0, i.jsxs)(C.$, {
     color: "nitro-pink",
     className: l()(T.card, o),
@@ -106,7 +106,7 @@ function U(e) {
         alt: "",
         className: l()(T.smallCloud, T[m])
       }), (0, i.jsx)("img", {
-        src: N,
+        src: R,
         alt: "",
         className: l()(T.wumpus, T[m])
       })]
@@ -163,7 +163,7 @@ let k = e => {
     className: l()({
       [T.premiumCardHover]: !t
     }),
-    children: (0, i.jsx)(a ? U : R, function(e) {
+    children: (0, i.jsx)(a ? U : N, function(e) {
       for (var n = 1; n < arguments.length; n++) {
         var t = null != arguments[n] ? arguments[n] : {},
           i = Object.keys(t);

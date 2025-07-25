@@ -90,7 +90,8 @@ let H = () => {
     eO = em ? V : G,
     eC = (0, i.jsxs)("div", {
       className: a()(eO.container, eO.responsiveContainer, {
-        [eO.containerBackground]: em || K
+        [eO.containerBackground]: em || K,
+        [V.fadeInFromTop]: !W && em
       }),
       "data-cy": "tier-0-marketing-page",
       children: [em && (0, i.jsxs)(i.Fragment, {

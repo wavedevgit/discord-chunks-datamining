@@ -4,9 +4,9 @@ n.d(t, {
   Z: () => u
 }), n(388685);
 var r, i = n(442837),
-  s = n(570140);
+  l = n(570140);
 
-function l(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -53,8 +53,8 @@ class c extends(r = i.ZP.DeviceSettingsStore) {
     })
   }
 }
-l(c, "displayName", "DevToolsDesignTogglesStore"), l(c, "persistKey", "DevToolsDesignTogglesStore");
-let u = new c(s.Z, {
+s(c, "displayName", "DevToolsDesignTogglesStore"), s(c, "persistKey", "DevToolsDesignTogglesStore");
+let u = new c(l.Z, {
   DEV_TOOLS_DESIGN_TOGGLE_SET: function(e) {
     a[e.toggle] = e.value
   }
