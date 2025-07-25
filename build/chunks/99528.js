@@ -1,22 +1,22 @@
 /** Chunk was on 27434 **/
-n.d(e, {
+e.d(n, {
   Z: () => u
 });
-var l = n(255367);
-n(73800);
-var r = n(442837),
-  i = n(481060),
-  o = n(726521),
-  c = n(924301),
-  a = n(388032);
+var l = e(255367);
+e(73800);
+var i = e(442837),
+  r = e(481060),
+  o = e(726521),
+  a = e(924301),
+  c = e(388032);
 
 function u(t) {
-  let e = (0, r.e7)([c.ZP], () => c.ZP.getGuildScheduledEvent(t), [t]);
-  return null == t || null == e ? null : (0, l.jsx)(i.sNh, {
+  let n = (0, i.e7)([a.ZP], () => a.ZP.getGuildScheduledEvent(t), [t]);
+  return null == t || null == n ? null : (0, l.jsx)(r.sNh, {
     id: "report-event",
-    label: a.intl.string(a.t.IBA5wc),
-    action: () => (0, o.d$)(e),
-    icon: i.U65,
+    label: c.intl.string(c.t.IBA5wc),
+    action: () => (0, o.d$)(n),
+    icon: r.U65,
     color: "danger"
   })
 }
