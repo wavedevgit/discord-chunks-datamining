@@ -2,10 +2,10 @@
 "use strict";
 n.d(t, {
   Qs: () => E,
-  Uf: () => g,
   VO: () => b,
   Xs: () => m,
   ep: () => h,
+  fe: () => g,
   t$: () => O,
   yi: () => y
 }), n(388685), n(539854);
@@ -65,48 +65,29 @@ let _ = (0, c.Mg)(u.Z.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_LEFT),
       listRef: t,
       searchQuery: n,
       nitroLockedSectionStates: i,
-      setShowUpsell: a,
-      setUpsellGlowOpacity: o
-    } = e, s = r.useCallback(e => {
+      setUpsellGlowOpacity: a
+    } = e, o = r.useCallback(e => {
       if ("" !== n) {
-        null == o || o(0);
+        null == a || a(0);
         return
       }
       if (null == t.current) return;
       let r = i.findIndex(e => e.isNitroLocked);
       if (-1 === r) {
-        null == o || o(0);
+        null == a || a(0);
         return
       }
-      let a = t.current.getSectionDescriptors();
-      if (null == a || 0 === a.length || a.length !== i.length) return;
-      let s = a[r],
+      let o = t.current.getSectionDescriptors();
+      if (null == o || 0 === o.length || o.length !== i.length) return;
+      let s = o[r],
         l = e + t.current.getListDimensions().height - 250,
         c = 250,
         u = Math.min(Math.max((s.offset.top - l) / c, 0), 1);
-      null == o || o(u)
-    }, [n, t, i, o]), l = r.useCallback(e => {
-      if ("" !== n) {
-        null == a || a(!1);
-        return
-      }
-      if (null == t.current) return;
-      let r = t.current.getSectionDescriptors();
-      if (null == r || 0 === r.length || r.length !== i.length) return;
-      let o = t.current.getListDimensions().height,
-        s = e + .7 * o,
-        l = e + .85 * o,
-        c = !1,
-        u = !1;
-      i.forEach((e, t) => {
-        if (!e.isNitroLocked) return;
-        let n = r[t];
-        n.offset.top <= l && n.offset.bottom >= l && (u = !0), n.offset.top <= s && n.offset.bottom >= s && (c = !0)
-      }), null == a || a(u && c)
+      null == a || a(u)
     }, [n, t, i, a]);
     return r.useCallback(e => {
-      l(e), s(e)
-    }, [l, s])
+      o(e)
+    }, [o])
   },
   E = e => {
     let {
