@@ -1,6 +1,6 @@
 /**
   Module ID: 60173
-  Original File Name: a8bb456e74599339
+  Original File Name: 80716b44513a910e
 **/
 @keyframes placeholderPulse_c8ffbb {
     0% {
@@ -4914,6 +4914,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .attachButton__0923f {
+    box-sizing: border-box;
     color: var(--interactive-normal);
     height: var(--custom-channel-textarea-text-area-height);
     padding: var(--space-12) var(--space-md);
@@ -12986,4 +12987,4 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     position: relative
 }
 
-/*# sourceMappingURL=a8bb456e74599339.css.map*/
+/*# sourceMappingURL=80716b44513a910e.css.map*/

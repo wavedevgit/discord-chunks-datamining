@@ -40,8 +40,8 @@ var r = n(255367),
   M = n(210887),
   U = n(695346),
   G = n(283595),
-  B = n(923834),
-  V = n(55563),
+  V = n(923834),
+  B = n(55563),
   H = n(774343),
   F = n(974042),
   z = n(626135),
@@ -369,12 +369,12 @@ function ef() {
 
 function eg() {
   let e = (0, d.e7)([H.Z], () => H.Z.getHomeLink()),
-    t = (0, d.e7)([V.Z], () => {
+    t = (0, d.e7)([B.Z], () => {
       if (e === X.Z5c.APPLICATION_STORE) return !0;
       let t = (0, W.ZK)(e);
       if (null != t) {
         var n, r;
-        return null != (r = null == (n = V.Z.get(t)) ? void 0 : n.premium) && r
+        return null != (r = null == (n = B.Z.get(t)) ? void 0 : n.premium) && r
       }
       return !1
     }, [e]),
@@ -385,7 +385,7 @@ function eg() {
       theme: M.Z.theme
     })),
     l = (0, d.e7)([G.Z], () => G.Z.hasLibraryApplication()),
-    a = (0, d.e7)([B.Z], () => B.Z.getCurrentPath()),
+    a = (0, d.e7)([V.Z], () => V.Z.getCurrentPath()),
     [s, c] = (0, D.Z)(e => {
       let {
         channelId: t,

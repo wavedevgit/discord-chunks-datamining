@@ -96,7 +96,7 @@ let M = i.memo(function(e) {
       },
       location_stack: u
     })
-  }, U = (0, a.wj)(n) ? Z : w, [G, B] = (0, c.US)(t, S.R.GUILD_HEADER_TOOLTIPS);
+  }, U = (0, a.wj)(n) ? Z : w, [G, V] = (0, c.US)(t, S.R.GUILD_HEADER_TOOLTIPS);
   return (0, r.jsx)(r.Fragment, {
     children: (() => {
       switch (G) {
@@ -104,7 +104,7 @@ let M = i.memo(function(e) {
           return (0, r.jsx)(k, {
             renderPopout: (0, r.jsx)(m.Z, {
               guild: i,
-              markAsDismissed: B
+              markAsDismissed: V
             }),
             renderGuildHeaderDropdownButton: o
           });
@@ -112,7 +112,7 @@ let M = i.memo(function(e) {
           return (0, r.jsx)(k, {
             renderPopout: (0, r.jsx)(b.$h, {
               guildId: i.id,
-              markAsDismissed: B
+              markAsDismissed: V
             }),
             renderGuildHeaderDropdownButton: o
           });
@@ -120,7 +120,7 @@ let M = i.memo(function(e) {
           return (0, r.jsx)(k, {
             renderPopout: (0, r.jsx)(_.Z, {
               guildId: i.id,
-              markAsDismissed: B
+              markAsDismissed: V
             }),
             renderGuildHeaderDropdownButton: o
           });
@@ -139,7 +139,7 @@ let M = i.memo(function(e) {
               secondaryButtonCTA: P.intl.string(P.t["KkK/aG"]),
               onSecondaryClick: () => R(),
               onClick: () => R(i),
-              markAsDismissed: B
+              markAsDismissed: V
             }),
             renderGuildHeaderDropdownButton: o
           });
@@ -158,7 +158,7 @@ let M = i.memo(function(e) {
               secondaryButtonCTA: P.intl.string(P.t["KkK/aG"]),
               onSecondaryClick: () => R(),
               onClick: () => R(i),
-              markAsDismissed: B
+              markAsDismissed: V
             }),
             renderGuildHeaderDropdownButton: o
           });
@@ -166,7 +166,7 @@ let M = i.memo(function(e) {
           return (0, r.jsx)(k, {
             renderPopout: (0, r.jsx)(d.Z, {
               guildId: i.id,
-              markAsDismissed: B
+              markAsDismissed: V
             }),
             renderGuildHeaderDropdownButton: o
           });
@@ -174,7 +174,7 @@ let M = i.memo(function(e) {
           return (0, r.jsx)(k, {
             renderPopout: (0, r.jsx)(I.Z, {
               guild: i,
-              markAsDismissed: B
+              markAsDismissed: V
             }),
             renderGuildHeaderDropdownButton: o
           });
@@ -197,14 +197,14 @@ let M = i.memo(function(e) {
               secondaryButtonCTA: P.intl.string(P.t.hBIHLS),
               onSecondaryClick: () => D(u),
               onClick: () => D(u, i),
-              markAsDismissed: B
+              markAsDismissed: V
             }),
             renderGuildHeaderDropdownButton: o
           });
         case l.z.STUDENT_HUB_PRIVACY_SETTINGS_TOOLTIP:
           return (0, r.jsx)(k, {
             renderPopout: (0, r.jsx)(f.Z, {
-              markAsDismissed: B
+              markAsDismissed: V
             }),
             renderGuildHeaderDropdownButton: o
           });
@@ -215,8 +215,8 @@ let M = i.memo(function(e) {
               header: P.intl.string(P.t.hLUL3t),
               content: P.intl.string(P.t.ahWaPT),
               buttonCTA: P.intl.string(P.t["NX+WJC"]),
-              onClick: () => B(S.L.UNKNOWN),
-              markAsDismissed: B
+              onClick: () => V(S.L.UNKNOWN),
+              markAsDismissed: V
             }),
             renderGuildHeaderDropdownButton: o
           });
@@ -235,7 +235,7 @@ let M = i.memo(function(e) {
               onClick: () => {
                 h.Z.open(i.id, C.pNK.ROLES), h.Z.selectRole((0, E.lV)(i), P.intl.string(P.t.Bco7ND))
               },
-              markAsDismissed: B
+              markAsDismissed: V
             }),
             renderGuildHeaderDropdownButton: o
           });
@@ -243,7 +243,7 @@ let M = i.memo(function(e) {
           return (0, r.jsx)(k, {
             renderPopout: (0, r.jsx)(g.Z, {
               guildId: i.id,
-              markAsDismissed: B
+              markAsDismissed: V
             }),
             renderGuildHeaderDropdownButton: o
           });
@@ -251,7 +251,7 @@ let M = i.memo(function(e) {
           return (0, r.jsx)(k, {
             renderPopout: (0, r.jsx)(p.Z, {
               guildId: i.id,
-              markAsDismissed: B
+              markAsDismissed: V
             }),
             renderGuildHeaderDropdownButton: o
           });

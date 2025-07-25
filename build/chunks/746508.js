@@ -40,8 +40,8 @@ var r = n(255367),
   M = n(338390),
   U = n(600164),
   G = n(243778),
-  B = n(258609),
-  V = n(446226),
+  V = n(258609),
+  B = n(446226),
   H = n(935261),
   F = n(74299),
   z = n(803647),
@@ -94,9 +94,9 @@ var r = n(255367),
   eM = n(190378),
   eU = n(388032),
   eG = n(566177),
-  eB = n(20493);
+  eV = n(20493);
 
-function eV(e, t, n) {
+function eB(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -112,7 +112,7 @@ function eH(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      eV(e, t, n[t])
+      eB(e, t, n[t])
     })
   }
   return e
@@ -179,7 +179,7 @@ function eK() {
     className: eG.noiseCancellationPopout,
     children: [(0, r.jsx)(m.j7V, {
       hideBorder: !0,
-      className: eB.marginBottom4,
+      className: eV.marginBottom4,
       value: t,
       onChange: () => b.Z.setNoiseCancellation(!t, {
         section: eR.jXE.NOISE_CANCELLATION_POPOUT
@@ -198,7 +198,7 @@ function eK() {
       }
     }), (0, r.jsx)(m.vwX, {
       tag: m.RB0.H5,
-      className: a()(eB.marginBottom8, eB.marginTop20),
+      className: a()(eV.marginBottom8, eV.marginTop20),
       children: eU.intl.string(eU.t.k6h1Fx)
     }), (0, r.jsxs)(U.Z, {
       justify: U.Z.Justify.BETWEEN,
@@ -685,14 +685,14 @@ class e$ extends i.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), eV(this, "ref", i.createRef()), eV(this, "krispButtonRef", i.createRef()), eV(this, "handleChannelLinkClick", e => {
+    super(...e), eB(this, "ref", i.createRef()), eB(this, "krispButtonRef", i.createRef()), eB(this, "handleChannelLinkClick", e => {
       var t;
       let {
         guild: n,
         channel: r
       } = this.props;
       s()(null != r, "Channel is null during navigation click"), e.stopPropagation(), O.Z.channelListScrollTo(null != (t = null == n ? void 0 : n.id) ? t : eR.ME, r.id), (0, R.v)(x.Z.RTC_PANEL, R.d.CHANNEL_LINK)
-    }), eV(this, "handleChannelLinkContextMenu", e => {
+    }), eB(this, "handleChannelLinkContextMenu", e => {
       let {
         channel: t,
         analyticsLocations: i
@@ -709,9 +709,9 @@ class e$ extends i.PureComponent {
           }))
         })
       })
-    }), eV(this, "handleCloseVoicePanelIntroduction", () => {
+    }), eB(this, "handleCloseVoicePanelIntroduction", () => {
       W.Kw(eM.v.VOICE_PANEL_INTRODUCTION)
-    }), eV(this, "renderVoicePanelIntroduction", () => (0, r.jsxs)("div", {
+    }), eB(this, "renderVoicePanelIntroduction", () => (0, r.jsxs)("div", {
       className: a()(eG.voicePanelIntroductionWrapper, "theme-light"),
       children: [(0, r.jsx)(m.X6q, {
         className: eG.voicePanelIntroductionHeader,
@@ -765,8 +765,8 @@ function e0(e) {
   }))
 }
 let e1 = (0, y.Z)(function(e) {
-  let t = (0, V.Z)(),
-    n = (0, u.e7)([B.Z], () => B.Z.getAwaitingRemoteSessionInfo()),
+  let t = (0, B.Z)(),
+    n = (0, u.e7)([V.Z], () => V.Z.getAwaitingRemoteSessionInfo()),
     l = (0, u.e7)([eS.default], () => eS.default.getCurrentUser()),
     a = (0, u.cj)([eI.Z], () => null != t ? {
       channelId: t.channelId,

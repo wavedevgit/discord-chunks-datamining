@@ -40,8 +40,8 @@ var r = n(255367),
   M = n(944486),
   U = n(914010),
   G = n(885110),
-  B = n(9156),
-  V = n(594174),
+  V = n(9156),
+  B = n(594174),
   H = n(774343),
   F = n(974042),
   z = n(237997),
@@ -85,7 +85,7 @@ class J extends i.PureComponent {
       runningGamePid: R,
       selectedChannelId: M,
       selectedGuildId: U,
-      connected: B
+      connected: V
     } = this.props;
     if (e.voiceChannelId !== d && null != e.voiceChannelId) {
       let t = _.ZP.getCurrentGameForAnalytics(),
@@ -131,9 +131,9 @@ class J extends i.PureComponent {
         was_moved: k.Z.getWasMoved()
       }, (0, u.oG)(h, d), (0, u.kO)(h, d, v)))
     }
-    let V = null != w && null != w.distributor && null != w.sku && null != e.runningGame && e.runningGame.distributor === w.distributor && w.sku === e.runningGame.sku,
+    let B = null != w && null != w.distributor && null != w.sku && null != e.runningGame && e.runningGame.distributor === w.distributor && w.sku === e.runningGame.sku,
       H = null != e.runningGame && null != w && e.runningGame.isLauncher !== w.isLauncher;
-    if (e.runningGame !== w && null != w && !w.isLauncher && (!V || H)) {
+    if (e.runningGame !== w && null != w && !w.isLauncher && (!B || H)) {
       let e = Z.Z.getGameByName(w.name),
         c = _.ZP.getOverrideForGame(w),
         u = L.Z.getGuildIds(),
@@ -206,7 +206,7 @@ class J extends i.PureComponent {
         preview_enabled: A.qF.getSetting()
       }, n, this.getGameMetadata(), (0, u.AB)(d)))
     }
-    if (B && null != M && (!e.connected || M !== e.selectedChannelId || U !== e.selectedGuildId)) {
+    if (V && null != M && (!e.connected || M !== e.selectedChannelId || U !== e.selectedGuildId)) {
       let t = e.selectedChannelId,
         n = x.Z.getChannel(t),
         r = L.Z.getGuild(null == n ? void 0 : n.getGuildId());
@@ -241,7 +241,7 @@ class J extends i.PureComponent {
 }
 
 function $() {
-  let [e, t] = (0, l.Wu)([M.Z], () => [M.Z.getVoiceChannelId(), M.Z.getChannelId()], []), n = (0, l.e7)([x.Z], () => x.Z.getChannel(t), [t]), a = (0, l.e7)([g.Z], () => (null == n ? void 0 : n.id) != null && g.Z.getChatOpen(n.id), [n]), o = null == n ? void 0 : n.nsfw, s = (0, l.e7)([x.Z], () => x.Z.getChannel(e), [e]), f = (0, l.e7)([U.Z], () => U.Z.getGuildId(), []), m = (0, l.e7)([L.Z], () => L.Z.getGuild(f), [f]), b = (0, l.e7)([V.default], () => V.default.getCurrentUser(), []), y = (0, l.e7)([w.ZP], () => {
+  let [e, t] = (0, l.Wu)([M.Z], () => [M.Z.getVoiceChannelId(), M.Z.getChannelId()], []), n = (0, l.e7)([x.Z], () => x.Z.getChannel(t), [t]), a = (0, l.e7)([g.Z], () => (null == n ? void 0 : n.id) != null && g.Z.getChatOpen(n.id), [n]), o = null == n ? void 0 : n.nsfw, s = (0, l.e7)([x.Z], () => x.Z.getChannel(e), [e]), f = (0, l.e7)([U.Z], () => U.Z.getGuildId(), []), m = (0, l.e7)([L.Z], () => L.Z.getGuild(f), [f]), b = (0, l.e7)([B.default], () => B.default.getCurrentUser(), []), y = (0, l.e7)([w.ZP], () => {
     var e, t;
     return null != b && null != f && null != (t = null == (e = w.ZP.getMember(f, b.id)) ? void 0 : e.isPending) && t
   }, [b, f]), C = (0, l.e7)([F.ZP], () => F.ZP.getState().section, []), S = (0, l.e7)([H.Z], () => H.Z.getHomeLink(), []), N = (0, l.e7)([O.Z], () => O.Z.isConnected(), []), [T, P] = (0, l.Wu)([R.Z], () => [R.Z.isVideoEnabled(), R.Z.isScreenSharing()], []), j = (0, l.e7)([G.Z], () => G.Z.getPrimaryActivity(), []), A = (0, l.e7)([_.ZP], () => _.ZP.getCurrentGameForAnalytics(), []), Z = (0, E.Z)(f), D = (0, l.e7)([I.Z], () => I.Z.getMessageRequestsCount(), []), k = {
@@ -302,7 +302,7 @@ function $() {
       } : {}), r = r = {
         postable_channels: z.current.postableChannelCount,
         premium_progress_bar_enabled: null != (t = null == (e = L.Z.getGuild(U.Z.getGuildId())) ? void 0 : e.premiumProgressBarEnabled) && t,
-        viewing_all_channels: !B.ZP.isOptInEnabled(et),
+        viewing_all_channels: !V.ZP.isOptInEnabled(et),
         num_recent_channels: v.Z.recentsChannelCount(et)
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var n = Object.keys(e);

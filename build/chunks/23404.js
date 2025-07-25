@@ -114,18 +114,18 @@ function Z(e) {
       fromContent: m.jn.ACTIVITY_PANEL,
       questId: O.id
     })
-  }, [O.id, E]), B = (0, C.hf)({
+  }, [O.id, E]), V = (0, C.hf)({
     quest: O,
     questContent: m.jn.ACTIVITY_PANEL,
     sourceQuestContent: m.jn.ACTIVITY_PANEL
-  }), V = (0, f.tP)(O), H = (null == (t = O.userStatus) ? void 0 : t.enrolledAt) != null, F = (null == (n = O.userStatus) ? void 0 : n.completedAt) != null, z = (null == (l = O.userStatus) ? void 0 : l.claimedAt) != null, W = (null == O ? void 0 : O.userStatus) != null && (0, p.zE)(O.userStatus, m.jn.ACTIVITY_PANEL), Y = (0, f.Rf)(O), K = (0, b.DD)({
+  }), B = (0, f.tP)(O), H = (null == (t = O.userStatus) ? void 0 : t.enrolledAt) != null, F = (null == (n = O.userStatus) ? void 0 : n.completedAt) != null, z = (null == (l = O.userStatus) ? void 0 : l.claimedAt) != null, W = (null == O ? void 0 : O.userStatus) != null && (0, p.zE)(O.userStatus, m.jn.ACTIVITY_PANEL), Y = (0, f.Rf)(O), K = (0, b.DD)({
     quest: O,
     taskDetails: Y,
     location: N.dr.ACTIVITY_PANEL,
     questContent: m.jn.ACTIVITY_PANEL,
     sourceQuestContent: m.jn.ACTIVITY_PANEL
   });
-  return W || V || z || Z ? null : (0, r.jsxs)("div", {
+  return W || B || z || Z ? null : (0, r.jsxs)("div", {
     ref: e => {
       _.current = e
     },
@@ -218,7 +218,7 @@ function Z(e) {
         className: j.cta,
         color: s.zx.Colors.BRAND,
         fullWidth: !0,
-        onClick: B,
+        onClick: V,
         size: s.zx.Sizes.SMALL,
         children: P.intl.string(P.t.cfY4PD)
       })]

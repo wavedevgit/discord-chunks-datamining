@@ -40,8 +40,8 @@ var r = n(255367),
   M = n(326145),
   U = n(269675),
   G = n(242601),
-  B = n(416568),
-  V = n(613609),
+  V = n(416568),
+  B = n(613609),
   H = n(160404),
   F = n(225675),
   z = n(927723),
@@ -250,9 +250,9 @@ let ex = (0, u.Un)({
       guildId: e
     }, e) : (0, r.jsx)(eE.Z, {})
   }),
-  eB = e => (0, r.jsx)(eU, eA({}, e)),
-  eV = () => (0, r.jsx)(w.Z, {}),
-  eH = e => null != e.match.params.channelId ? eB(e) : (0, r.jsx)(X.Z, {}),
+  eV = e => (0, r.jsx)(eU, eA({}, e)),
+  eB = () => (0, r.jsx)(w.Z, {}),
+  eH = e => null != e.match.params.channelId ? eV(e) : (0, r.jsx)(X.Z, {}),
   eF = e => {
     let {
       match: t
@@ -265,7 +265,7 @@ let ex = (0, u.Un)({
     let {
       match: t
     } = e;
-    return null != t.params.guildId ? (0, r.jsx)(V.Z, {
+    return null != t.params.guildId ? (0, r.jsx)(B.Z, {
       guildId: t.params.guildId,
       inviteCode: t.params.inviteCode
     }) : null
@@ -477,7 +477,7 @@ function e3(e) {
           [ej.hidden]: g,
           [ej.channelListHidden]: o
         }),
-        children: [s && !c && (0, r.jsx)(B.Z, {
+        children: [s && !c && (0, r.jsx)(V.Z, {
           className: ej.guilds,
           themeOverride: n
         }), !o && (0, r.jsxs)(r.Fragment, {
@@ -636,33 +636,33 @@ function e8() {
                   path: [eC.Z5c.CHANNEL_THREAD_VIEW(el.Hw.guildId(), el.Hw.channelId(), ":threadId", ":messageId?"), eC.Z5c.CHANNEL(eC.ME, el.Hw.channelId()), eC.Z5c.CHANNEL(el.Hw.guildId(), el.Hw.channelId({
                     optional: !0
                   }), ":messageId?")],
-                  render: eB,
+                  render: eV,
                   impressionName: c.ImpressionNames.GUILD_CHANNEL,
                   disableTrack: !0
                 }), (0, r.jsx)(v.Z, {
                   path: eC.Z5c.GLOBAL_DISCOVERY,
-                  render: eV,
+                  render: eB,
                   impressionName: c.ImpressionNames.GLOBAL_DISCOVERY,
                   disableTrack: !0,
                   exact: !0
                 }), (0, r.jsx)(v.Z, {
                   path: eC.Z5c.GLOBAL_DISCOVERY_SERVERS,
-                  render: eV,
+                  render: eB,
                   impressionName: c.ImpressionNames.GLOBAL_DISCOVERY,
                   disableTrack: !0
                 }), (0, r.jsx)(v.Z, {
                   path: eC.Z5c.GLOBAL_DISCOVERY_APPS,
-                  render: eV,
+                  render: eB,
                   impressionName: c.ImpressionNames.GLOBAL_DISCOVERY_APPS,
                   disableTrack: !0
                 }), (0, r.jsx)(v.Z, {
                   path: eC.Z5c.QUEST_HOME,
-                  render: eV,
+                  render: eB,
                   impressionName: c.ImpressionNames.QUEST_HOME,
                   disableTrack: !0
                 }), (0, r.jsx)(v.Z, {
                   path: eC.Z5c.GUILD_DISCOVERY,
-                  render: eV,
+                  render: eB,
                   impressionName: c.ImpressionNames.GUILD_DISCOVERY,
                   disableTrack: !0
                 }), (0, r.jsx)(v.Z, {

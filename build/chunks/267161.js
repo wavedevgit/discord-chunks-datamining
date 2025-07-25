@@ -41,9 +41,9 @@ var r = n(255367),
   M = n(408491),
   U = n(388032),
   G = n(916723),
-  B = n(103609);
+  V = n(103609);
 
-function V(e) {
+function B(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -104,7 +104,7 @@ function z() {
     }) : void 0,
     E = null;
   return null != m && _ ? (e = m.name, E = (0, r.jsx)("img", {
-    className: B.appIcon,
+    className: V.appIcon,
     alt: U.intl.string(U.t.X4IxWF),
     src: O,
     "aria-hidden": !0,
@@ -117,7 +117,7 @@ function z() {
     guild: d,
     size: b.Z.Sizes.MINI,
     active: !0,
-    className: B.guildIcon
+    className: V.guildIcon
   }), e = d.name) : null != a && (a.isDM() || a.isGroupDM()) ? (e = U.intl.string(U.t.YUU0RE), E = (0, r.jsx)(s.gw7, {
     size: "xs"
   })) : t.pathname.startsWith(D.Z5c.GLOBAL_DISCOVERY) ? (e = U.intl.string(U.t["4nEZLi"]), E = (0, r.jsx)(s.Jmo, {
@@ -131,7 +131,7 @@ function z() {
   })) : t.pathname.startsWith(D.Z5c.FAMILY_CENTER) && (e = U.intl.string(G.default.RZqaJi), E = (0, r.jsx)(s.BFJ, {
     size: "xs"
   })), null != e && "" !== e && (0, r.jsxs)("div", {
-    className: B.title,
+    className: V.title,
     children: [E, (0, r.jsx)(s.Text, {
       variant: "text-sm/medium",
       lineClamp: 1,
@@ -170,8 +170,8 @@ let W = i.memo(function() {
         className: i,
         leading: (0, r.jsxs)(r.Fragment, {
           children: [t && (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(s.P3F, H(V({}, e), {
-              className: B.button,
+            children: [(0, r.jsx)(s.P3F, H(B({}, e), {
+              className: V.button,
               onClick: () => {
                 F.setState({
                   isOpen: !F.getState().isOpen
@@ -179,7 +179,7 @@ let W = i.memo(function() {
               },
               children: (0, r.jsx)(Y, {})
             })), (0, r.jsx)(s.P3F, {
-              className: B.button,
+              className: V.button,
               onClick: () => {
                 c.Z.open(D.oAB.ACCOUNT)
               },
@@ -193,18 +193,18 @@ let W = i.memo(function() {
         title: (0, r.jsx)(z, {}),
         trailing: (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(m.Z, {
-            className: B.button
+            className: V.button
           }), (0, r.jsx)(p.Z, {
             canShowReminder: !0,
-            className: B.button
-          }), null === u && (0, r.jsx)(S.Z, H(V({}, t ? {} : e), {
-            className: B.button
+            className: V.button
+          }), null === u && (0, r.jsx)(S.Z, H(B({}, t ? {} : e), {
+            className: V.button
           })), n ? (0, r.jsx)(O.Z, {
-            className: B.button
+            className: V.button
           }) : (0, r.jsx)(_.Z, {
-            className: B.button
+            className: V.button
           }), (0, r.jsx)(E.Z, {
-            className: B.button
+            className: V.button
           })]
         })
       })
@@ -215,7 +215,7 @@ let W = i.memo(function() {
 function Y() {
   return (0, r.jsxs)("svg", {
     xmlns: "http://www.w3.org/2000/svg",
-    className: B.icon,
+    className: V.icon,
     width: "24",
     height: "24",
     viewBox: "0 0 24 24",

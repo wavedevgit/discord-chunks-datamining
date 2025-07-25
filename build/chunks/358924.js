@@ -39,8 +39,8 @@ var r, i = n(255367),
   M = n(594174),
   U = n(395361),
   G = n(639351),
-  B = n(81063),
-  V = n(823379),
+  V = n(81063),
+  B = n(823379),
   H = n(51144),
   F = n(599706),
   z = n(981631),
@@ -542,12 +542,12 @@ ei.Header = er, ei.Body = e => {
     participants: a
   } = e, [o, c] = l.useState(null), d = t.application_id;
   l.useEffect(() => {
-    null != d && (0, B.hR)(d, ["embedded_background"]).then(e => {
+    null != d && (0, V.hR)(d, ["embedded_background"]).then(e => {
       let [t] = e;
       return c(t)
     })
   }, [d]);
-  let p = (0, s.Wu)([M.default, D.default], () => Array.from(a).map(e => D.default.getId() === e ? null : M.default.getUser(e)).filter(V.lm)),
+  let p = (0, s.Wu)([M.default, D.default], () => Array.from(a).map(e => D.default.getId() === e ? null : M.default.getUser(e)).filter(B.lm)),
     f = (0, h.O)(),
     {
       analyticsLocations: m
@@ -558,7 +558,7 @@ ei.Header = er, ei.Body = e => {
   let _ = null != t.created_at && t.created_at > 0 ? {
       start: t.created_at
     } : void 0,
-    O = (0, B.xF)(b.id, o, 300);
+    O = (0, V.xF)(b.id, o, 300);
   return (0, i.jsxs)($, {
     children: [(0, i.jsxs)("div", {
       className: Y.embeddedActivityTopRow,

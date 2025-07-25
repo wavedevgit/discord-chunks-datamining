@@ -96,11 +96,11 @@ function G(e) {
   M(t, n, r, i, l)
 }
 
-function B() {
+function V() {
   return null !== Z && Z.removeEventListener("end", N.NB), o.M9(), Z = null, !0
 }
 
-function V(e) {
+function B(e) {
   var t, n, r;
   let {
     message: i,
@@ -151,6 +151,6 @@ function z() {
 }
 let W = {
   init() {
-    l.Z.subscribe("SPEAK_TEXT", G), l.Z.subscribe("SPEAK_MESSAGE", V), l.Z.subscribe("STOP_SPEAKING", B), l.Z.subscribe("MESSAGE_CREATE", H), l.Z.subscribe("MESSAGE_DELETE", F), l.Z.subscribe("AUDIO_TOGGLE_SELF_DEAF", z), l.Z.subscribe("USER_SETTINGS_PROTO_UPDATE", k), (0, a.Ql)(k)
+    l.Z.subscribe("SPEAK_TEXT", G), l.Z.subscribe("SPEAK_MESSAGE", B), l.Z.subscribe("STOP_SPEAKING", V), l.Z.subscribe("MESSAGE_CREATE", H), l.Z.subscribe("MESSAGE_DELETE", F), l.Z.subscribe("AUDIO_TOGGLE_SELF_DEAF", z), l.Z.subscribe("USER_SETTINGS_PROTO_UPDATE", k), (0, a.Ql)(k)
   }
 }
