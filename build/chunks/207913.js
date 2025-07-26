@@ -114,7 +114,7 @@ function V(e) {
       onMouseLeave: E.onMouseLeave,
       onMouseEnter: E.onMouseEnter,
       className: U.messageContainer,
-      children: [s && (0, r.jsx)("div", {
+      children: [s && !a && (0, r.jsx)("div", {
         className: U.unreadDot
       }), (0, r.jsx)(u.Kqy, {
         align: "start",

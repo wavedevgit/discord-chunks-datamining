@@ -1,7 +1,7 @@
 /** Chunk was on 83051 **/
 n.d(t, {
   Tj: () => m,
-  WG: () => c,
+  WG: () => u,
   ZD: () => h,
   pD: () => d
 }), n(953529), n(539854);
@@ -12,8 +12,8 @@ var i = n(990547),
 n(358085);
 var o = n(573261),
   s = n(981631),
-  u = n(388032);
-async function c() {
+  c = n(388032);
+async function u() {
   return (await r.tn.get({
     url: s.ANM.BUG_REPORTS,
     rejectWithError: !1
@@ -27,30 +27,30 @@ function d(e) {
 
 function m() {
   return [{
-    title: u.intl.string(u.t.VwIij4),
-    description: u.intl.format(u.t.DOP8yc, {}),
+    title: c.intl.string(c.t.VwIij4),
+    description: c.intl.format(c.t.DOP8yc, {}),
     emoji: "801497159479722084",
     value: 0
   }, {
-    title: u.intl.string(u.t.rYfJoq),
-    description: u.intl.format(u.t["+LEfDA"], {}),
+    title: c.intl.string(c.t.rYfJoq),
+    description: c.intl.format(c.t["+LEfDA"], {}),
     emoji: "410336837563973632",
     value: 1
   }, {
-    title: u.intl.string(u.t.Ia0skZ),
-    description: u.intl.format(u.t.D4rbgY, {}),
+    title: c.intl.string(c.t.Ia0skZ),
+    description: c.intl.format(c.t.D4rbgY, {}),
     emoji: "841420679643529296",
     value: 2
   }, {
-    title: u.intl.string(u.t.KGsyFx),
-    description: u.intl.format(u.t.Kmg64O, {}),
+    title: c.intl.string(c.t.KGsyFx),
+    description: c.intl.format(c.t.Kmg64O, {}),
     emoji: "827645852352512021",
     value: 3
   }]
 }
 async function h(e, t, n) {
-  var r, u;
-  let c = [{
+  var r, c;
+  let u = [{
     name: "name",
     value: e.name
   }, {
@@ -63,44 +63,44 @@ async function h(e, t, n) {
     name: "theme",
     value: a.Z.theme
   }];
-  "" !== e.description && c.push({
+  "" !== e.description && u.push({
     name: "description",
     value: e.description
-  }), "" !== e.url && c.push({
+  }), "" !== e.url && u.push({
     name: "external_url",
     value: e.url
-  }), null != e.buildOverride && c.push({
+  }), null != e.buildOverride && u.push({
     name: "build_override",
     value: e.buildOverride
   });
   let d = null == (r = e.feature) ? void 0 : r.asana_inbox_id;
-  null != d && "" !== d && c.push({
+  null != d && "" !== d && u.push({
     name: "asana_inbox_id",
     value: "".concat(d)
   });
-  let m = null == (u = e.feature) ? void 0 : u.name;
-  null != m && "" !== m && c.push({
+  let m = null == (c = e.feature) ? void 0 : c.name;
+  null != m && "" !== m && u.push({
     name: "feature_name",
     value: m
-  }), t.overridePlatformInformation && (c.push({
+  }), t.overridePlatformInformation && (u.push({
     name: "device",
     value: t.device
-  }), c.push({
+  }), u.push({
     name: "os",
     value: t.operatingSystem
-  }), c.push({
+  }), u.push({
     name: "os_version",
     value: t.operatingSystemVersion
-  }), c.push({
+  }), u.push({
     name: "client_version",
     value: t.clientVersion
-  }), c.push({
+  }), u.push({
     name: "client_build_number",
     value: t.clientBuildNumber
-  }), c.push({
+  }), u.push({
     name: "release_channel",
     value: window.GLOBAL_ENV.RELEASE_CHANNEL
-  }), c.push({
+  }), u.push({
     name: "locale",
     value: t.locale
   })), (0, l.E)(s.GU0.WEB_APP);
@@ -108,7 +108,7 @@ async function h(e, t, n) {
     return await o.Z.post({
       url: s.ANM.BUG_REPORTS,
       attachments: n,
-      fields: c,
+      fields: u,
       trackedActionData: {
         event: i.NetworkActionNames.BUG_REPORT_SUBMIT,
         properties: {
