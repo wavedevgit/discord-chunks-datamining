@@ -149,7 +149,7 @@ function R() {
   });
   let o = null != t && null == t.getFirstFieldErrorMessage("name") && null == t.getFirstFieldErrorMessage("description");
   return (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(A, {}), (0, i.jsx)(L, {
+    children: [(0, i.jsx)(A, {}), (0, i.jsx)(k, {
       guild: e,
       guildTemplate: a
     }), o ? (0, i.jsx)(g.Text, {
@@ -292,12 +292,12 @@ function A() {
   })
 }
 
-function L(e) {
+function k(e) {
   let {
     guild: t,
     guildTemplate: n
   } = e;
-  return null == n ? (0, i.jsx)(k, {
+  return null == n ? (0, i.jsx)(L, {
     guild: t
   }) : (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(g.xJW, {
@@ -335,7 +335,7 @@ function L(e) {
   })
 }
 
-function k(e) {
+function L(e) {
   let {
     guild: t
   } = e, n = (0, d.e7)([S], () => S.name), [r, s] = l.useState(!1), a = async () => {

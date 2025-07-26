@@ -51,10 +51,10 @@ function y(e) {
     onDragStart: T,
     onDragComplete: S,
     onDragReset: P
-  }), L = (0, a.cj)([x.Z], () => {
+  }), k = (0, a.cj)([x.Z], () => {
     var e;
     return null != (e = x.Z.errors[b]) ? e : O
-  }), [k, M] = i.useState(!1), [G, U] = i.useState(!1), B = null != (t = L.options) ? t : L.optionErrors.filter(p.lm)[0], F = L.config, H = l.options.length >= j.fY, z = (0, m.kl)(n.id, Array.from(w), [l]).length - w.size, W = i.useRef(null), V = i.useRef(b);
+  }), [L, M] = i.useState(!1), [G, U] = i.useState(!1), B = null != (t = k.options) ? t : k.optionErrors.filter(p.lm)[0], F = k.config, H = l.options.length >= j.fY, z = (0, m.kl)(n.id, Array.from(w), [l]).length - w.size, W = i.useRef(null), V = i.useRef(b);
   return (i.useEffect(() => {
     V.current = b
   }), i.useLayoutEffect(() => {
@@ -64,7 +64,7 @@ function y(e) {
         null == (e = W.current) || e.focus()
       }
     }, 0)
-  }, [u]), k) ? (0, r.jsx)(c.tEY, {
+  }, [u]), L) ? (0, r.jsx)(c.tEY, {
     children: (0, r.jsxs)("div", {
       tabIndex: 0,
       onFocus: () => U(!0),
@@ -158,7 +158,7 @@ function y(e) {
         }),
         placeholder: v.intl.string(v.t.QMCuCg),
         maxLength: j.iU,
-        error: L.title
+        error: k.title
       }), (0, r.jsx)(C, {
         prompt: l,
         guild: n
@@ -177,7 +177,7 @@ function y(e) {
         guild: n,
         prompt: l,
         promptIndex: b,
-        errors: L,
+        errors: k,
         singleColumn: E
       }), null != B ? (0, r.jsx)(c.pdY, {
         error: B

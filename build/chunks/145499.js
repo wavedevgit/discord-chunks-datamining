@@ -1,7 +1,7 @@
 /** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
-  Z: () => L
+  Z: () => k
 }), n(539854);
 var r = n(255367),
   i = n(73800),
@@ -115,7 +115,7 @@ let w = (e, t) => e < (0, v.A3)(I.Eu4.NONE) ? I.Eu4.NONE : e < (0, v.A3)(I.Eu4.T
       disabled: !i
     })
   },
-  L = e => {
+  k = e => {
     let {
       guild: t
     } = e, {
@@ -125,7 +125,7 @@ let w = (e, t) => e < (0, v.A3)(I.Eu4.NONE) ? I.Eu4.NONE : e < (0, v.A3)(I.Eu4.T
       return null != (e = _.Z.getStickersByGuildId(t.id)) ? e : []
     }, [t]), {
       analyticsLocations: u
-    } = (0, m.ZP)(), j = (0, x.Z)(t.id), Z = t.features.has(I.oNc.MORE_STICKERS) ? I.Eu4.TIER_3 : t.premiumTier, L = t.features.has(I.oNc.MORE_STICKERS) ? I.oCV[I.Eu4.TIER_3] : j, k = (0, b.Z)(t.id);
+    } = (0, m.ZP)(), j = (0, x.Z)(t.id), Z = t.features.has(I.oNc.MORE_STICKERS) ? I.Eu4.TIER_3 : t.premiumTier, k = t.features.has(I.oNc.MORE_STICKERS) ? I.oCV[I.Eu4.TIER_3] : j, L = (0, b.Z)(t.id);
     if (i.useEffect(() => {
         window.dispatchEvent(new Event("resize"))
       }, [d]), l) return (0, r.jsx)(c.$jN, {});
@@ -210,7 +210,7 @@ let w = (e, t) => e < (0, v.A3)(I.Eu4.NONE) ? I.Eu4.NONE : e < (0, v.A3)(I.Eu4.T
           Q = S.intl.string(S.t.dtFw5e),
           $ = () => M(Math.max(1, I.oCV[m.tier] - j), m.tier),
           ee = !1;
-        J && (k ? ($ = () => {
+        J && (L ? ($ = () => {
           let e = E.Cp[m.tier];
           null != e && (0, h.H6)(t.id, e)
         }, Q = S.intl.string(S.t.g7lkra), t.premiumTier + 1 !== m.tier && (ee = !0, i = S.intl.string(S.t.mTMkY2))) : (ee = !0, i = S.intl.string(S.t.hwPEJS)));
@@ -231,7 +231,7 @@ let w = (e, t) => e < (0, v.A3)(I.Eu4.NONE) ? I.Eu4.NONE : e < (0, v.A3)(I.Eu4.T
         }) : z && (l = (0, r.jsx)(A, {
           guild: t
         })), (0, r.jsxs)(N.Z, {
-          subscriptionCount: L,
+          subscriptionCount: k,
           tier: m,
           onSetRef: u,
           isAnimatedTo: a,

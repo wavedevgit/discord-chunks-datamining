@@ -65,11 +65,11 @@ let _ = function(e) {
   } = e, R = (0, a.e7)([p.Z], () => p.Z.getChannel(N.channelId)), Z = (0, a.e7)([f.Z], () => f.Z.getGuild(C)), {
     customEmoji: D,
     unicodeEmoji: A
-  } = (0, u.Z)(null == (t = N.emoji) ? void 0 : t.id, null == (l = N.emoji) ? void 0 : l.name), L = null == N.emoji || null != D || null != A, k = h.ZP.getNewMemberActionIconURL({
+  } = (0, u.Z)(null == (t = N.emoji) ? void 0 : t.id, null == (l = N.emoji) ? void 0 : l.name), k = null == N.emoji || null != D || null != A, L = h.ZP.getNewMemberActionIconURL({
     channelId: N.channelId,
     icon: N.icon
   }), M = null;
-  null != R && (0, m.kb)(R) ? L || (M = x.intl.string(x.t.wAkIZW)) : M = x.intl.string(x.t.CbTEKC);
+  null != R && (0, m.kb)(R) ? k || (M = x.intl.string(x.t.wAkIZW)) : M = x.intl.string(x.t.CbTEKC);
   let {
     drag: G,
     dragSourcePosition: U,
@@ -117,10 +117,10 @@ let _ = function(e) {
           color: "currentColor",
           className: b.dragIcon
         })
-      }), null != k ? (0, r.jsx)("div", {
+      }), null != L ? (0, r.jsx)("div", {
         className: b.iconWrapper,
         children: (0, r.jsx)("img", {
-          src: k,
+          src: L,
           className: b.icon,
           width: 48,
           height: 48,

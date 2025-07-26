@@ -1,7 +1,7 @@
 /** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
-  Z: () => k
+  Z: () => L
 }), n(388685), n(781311), n(953529), n(539854);
 var r = n(255367),
   i = n(73800),
@@ -236,7 +236,7 @@ let A = i.forwardRef(function(e, t) {
   })
 });
 
-function L(e) {
+function k(e) {
   let {
     guildId: t,
     storedSearchQuery: n
@@ -301,7 +301,7 @@ function L(e) {
   }, "bans-header")
 }
 
-function k() {
+function L() {
   var e, t;
   let {
     guild: c,
@@ -320,7 +320,7 @@ function k() {
       null != e && I(t)(e) && r.push(e)
     }
     return r
-  }, [I]), Z = i.useMemo(() => P(b, u, v), [b, P, u, v]), D = null != b, k = Z.length % 1e3 == 0 && Z.length > 0 && D, M = 0 === Z.length, [G, U] = i.useState({
+  }, [I]), Z = i.useMemo(() => P(b, u, v), [b, P, u, v]), D = null != b, L = Z.length % 1e3 == 0 && Z.length > 0 && D, M = 0 === Z.length, [G, U] = i.useState({
     currentPage: 1,
     pageSize: 100
   });
@@ -335,10 +335,10 @@ function k() {
     F = i.useMemo(() => s().chunk(Z, G.pageSize), [G.pageSize, Z]),
     H = i.useCallback(e => {
       var t, n, r;
-      null == (t = N.current) || t.scrollToSectionTop(0), (e + 1) * G.pageSize > Z.length && k && !p && (z.current = null != (r = null == (n = Z[Z.length - 1]) ? void 0 : n.id) ? r : null, B(z.current)), (null != F[e - 1] || k) && U(t => R(w({}, t), {
+      null == (t = N.current) || t.scrollToSectionTop(0), (e + 1) * G.pageSize > Z.length && L && !p && (z.current = null != (r = null == (n = Z[Z.length - 1]) ? void 0 : n.id) ? r : null, B(z.current)), (null != F[e - 1] || L) && U(t => R(w({}, t), {
         currentPage: e
       }))
-    }, [G.pageSize, Z, k, F, B, p]),
+    }, [G.pageSize, Z, L, F, B, p]),
     z = i.useRef(null);
   i.useEffect(() => {
     B(z.current)
@@ -349,7 +349,7 @@ function k() {
   }, [F, G.currentPage]);
   return null == c ? null : (0, r.jsxs)("div", {
     className: T.container,
-    children: [(0, r.jsx)(L, {
+    children: [(0, r.jsx)(k, {
       guildId: y,
       storedSearchQuery: u
     }), (0, r.jsxs)("div", {
@@ -359,7 +359,7 @@ function k() {
         bans: b,
         sortedBans: W,
         ref: N
-      }), !k && M && (0, r.jsxs)(o.ubH, {
+      }), !L && M && (0, r.jsxs)(o.ubH, {
         theme: O,
         className: T.emptyState,
         children: [(0, r.jsx)(o.oxh, {
@@ -379,7 +379,7 @@ function k() {
       className: T.__invalid_paginationContainer,
       children: (0, r.jsx)(o.DsT, {
         className: T.paginationInput,
-        totalCount: Z.length + (k ? G.pageSize : 0),
+        totalCount: Z.length + (L ? G.pageSize : 0),
         pageSize: G.pageSize,
         currentPage: G.currentPage,
         onPageChange: H,

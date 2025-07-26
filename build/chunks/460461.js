@@ -78,7 +78,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
       canManageGuild: Z
     } = (0, l.cj)([b.Z], () => ({
       canManageGuild: b.Z.can(E.Plq.MANAGE_GUILD, u)
-    })), D = (0, l.e7)([O.Z], () => O.Z.isGuildMetadataLoaded()), A = (0, l.e7)([O.Z], () => null != u ? O.Z.getMetadata() : null), L = (0, l.e7)([O.Z], () => null != u && (null == A ? void 0 : A.isPublished) ? O.Z.getSlug() : null), [k, M] = i.useState([!0]), [G, U] = i.useState(!0), [B, F] = i.useState([!1]), [H, z] = i.useState([""]), W = e => {
+    })), D = (0, l.e7)([O.Z], () => O.Z.isGuildMetadataLoaded()), A = (0, l.e7)([O.Z], () => null != u ? O.Z.getMetadata() : null), k = (0, l.e7)([O.Z], () => null != u && (null == A ? void 0 : A.isPublished) ? O.Z.getSlug() : null), [L, M] = i.useState([!0]), [G, U] = i.useState(!0), [B, F] = i.useState([!1]), [H, z] = i.useState([""]), W = e => {
       let t = Object.entries(I.z).filter(e => !H.includes(e[1].presentation)).map(e => ({
         label: e[1].presentation,
         value: e[0]
@@ -155,7 +155,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
       q = (e, t) => {
         let n = [...A.socialLinks],
           r = [...H],
-          i = [...k];
+          i = [...L];
         r[t] = e, n[t] = I.z[e].baseUrl, i[t] = !0, M(i), z(r), U(i.every(e => !0 === e)), (0, p.t$)(u.id, n)
       },
       J = (e, t) => {
@@ -167,7 +167,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
       Q = e => {
         let t = [...B];
         t.splice(e, 1), F(t);
-        let n = [...k];
+        let n = [...L];
         n.splice(e, 1), M(n);
         let r = [...H];
         r.splice(e, 1), z(r);
@@ -238,8 +238,8 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       learnMoreURL: v.Z.getArticleURL(E.BhN.SERVER_WEB_PAGES)
                     })]
                   }), (() => {
-                    if (!A.isPublished || null == L) return;
-                    let e = P + L;
+                    if (!A.isPublished || null == k) return;
+                    let e = P + k;
                     return (0, r.jsxs)(o.hjN, {
                       className: T.noDividerFormSection,
                       children: [(0, r.jsx)(o.vwX, {
@@ -444,7 +444,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         placeholder: S.intl.string(S.t.Q6o4pK),
                         maxLength: 150,
                         disabled: !Z
-                      }, "link-" + t), k[t] ? (0, r.jsx)(o.owK, {
+                      }, "link-" + t), L[t] ? (0, r.jsx)(o.owK, {
                         size: "custom",
                         className: A.isPublished ? T.validationButtonMax : T.validationButtonMin,
                         color: s.Z.unsafe_rawColors.GREEN_230.css,

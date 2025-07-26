@@ -36,8 +36,8 @@ var r = n(255367),
   Z = n(420966),
   D = n(337344),
   A = n(275296),
-  L = n(203377),
-  k = n(494831),
+  k = n(203377),
+  L = n(494831),
   M = n(981631),
   G = n(141006),
   U = n(388032),
@@ -110,7 +110,7 @@ function X(e) {
       })]
     }), (0, r.jsx)("div", {
       className: F.roleStyleContainer,
-      children: k.pM.map(e => {
+      children: L.pM.map(e => {
         let {
           id: l,
           colors: a,
@@ -380,7 +380,7 @@ function ee(e) {
         children: (0, r.jsx)(Z.Z, {
           guild: t,
           role: n,
-          selectedSection: L.ZI.DISPLAY,
+          selectedSection: k.ZI.DISPLAY,
           setSelectedSection: l
         })
       }), (0, r.jsx)(K, {

@@ -38,8 +38,8 @@ var r = n(255367),
   Z = n(267642),
   D = n(51144),
   A = n(434404),
-  L = n(471613),
-  k = n(999382),
+  k = n(471613),
+  L = n(999382),
   M = n(981631),
   G = n(185923),
   U = n(388032),
@@ -323,7 +323,7 @@ let z = d().throttle(h.OQ, 1e3),
     })]
   }),
   J = () => {
-    let e = (0, m.e7)([k.Z], () => k.Z.getGuild()),
+    let e = (0, m.e7)([L.Z], () => L.Z.getGuild()),
       [t, l] = i.useState("");
     o()(null != e, "ConnectedGuildSettingsEmoji must be rendered within a guild context");
     let s = (0, m.e7)([T.Z], () => T.Z.theme),
@@ -333,9 +333,9 @@ let z = d().throttle(h.OQ, 1e3),
       {
         revision: c,
         emojis: f
-      } = (0, m.cj)([L.Z], () => ({
-        revision: L.Z.getEmojiRevision(e.id),
-        emojis: L.Z.getEmojis(e.id)
+      } = (0, m.cj)([k.Z], () => ({
+        revision: k.Z.getEmojiRevision(e.id),
+        emojis: k.Z.getEmojis(e.id)
       })),
       h = (0, v.Z)(c),
       [x, b] = i.useState(!1),

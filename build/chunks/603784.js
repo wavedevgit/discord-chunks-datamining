@@ -93,8 +93,8 @@ let w = i.forwardRef((e, t) => {
       onContentClick: Z,
       onHeaderClick: D,
       onTargetContextMenu: A,
-      onUserContextMenu: L,
-      theme: k
+      onUserContextMenu: k,
+      theme: L
     } = e,
     M = i.useRef(null),
     G = function() {
@@ -161,7 +161,7 @@ let w = i.forwardRef((e, t) => {
           if (null != n) {
             let e = u.Z.get(n);
             if (null != e) {
-              let t = (0, c.wj)(k) ? e.icon.darkSVG : e.icon.lightSVG;
+              let t = (0, c.wj)(L) ? e.icon.darkSVG : e.icon.lightSVG;
               return (0, r.jsx)(d.qEK, {
                 className: E.avatar,
                 src: t,
@@ -191,7 +191,7 @@ let w = i.forwardRef((e, t) => {
                   userHook: (e, t) => {
                     if (null != l.user) return (0, r.jsx)(P, {
                       user: l.user,
-                      onContextMenu: L
+                      onContextMenu: k
                     }, t);
                     if (null != l.options.integration_type) {
                       var n;

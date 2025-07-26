@@ -38,7 +38,7 @@ var i = n(442837),
   D = n(388032),
   A = n(173409);
 
-function L(e) {
+function k(e) {
   let {
     application: t,
     guild: n
@@ -78,7 +78,7 @@ function L(e) {
   })
 }
 
-function k(e) {
+function L(e) {
   let {
     application: t
   } = e, {
@@ -189,7 +189,7 @@ function G(e) {
         children: D.intl.string(D.t.KyGv0t)
       }), (0, r.jsx)(y.Z, {
         guild: n
-      }), c && (0, r.jsx)(k, {
+      }), c && (0, r.jsx)(L, {
         application: a
       }), (0, r.jsxs)("div", {
         className: A.tabBarContainer,
@@ -242,7 +242,7 @@ function G(e) {
           })
         })]
       }), t]
-    }), (0, r.jsx)(L, {
+    }), (0, r.jsx)(k, {
       application: a,
       guild: n
     })]

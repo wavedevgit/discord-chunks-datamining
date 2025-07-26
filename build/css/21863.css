@@ -1,6 +1,6 @@
 /**
   Module ID: 21863
-  Original File Name: ebf8a770bef8a12d
+  Original File Name: 6f77a7606ac05548
 **/
 .container__54e17 {
     background-color: var(--background-base-lower);
@@ -55,11 +55,8 @@
     align-items: center;
     display: flex;
     flex: 1;
-    justify-content: flex-end
-}
-
-.eligibilityActionButton__54e17 {
-    border-radius: 24px
+    justify-content: flex-end;
+    margin-left: 16px
 }
 
 .eligibilityModal__17e0d {
@@ -93,4 +90,4 @@
     padding: 15px 0
 }
 
-/*# sourceMappingURL=ebf8a770bef8a12d.css.map*/
+/*# sourceMappingURL=6f77a7606ac05548.css.map*/

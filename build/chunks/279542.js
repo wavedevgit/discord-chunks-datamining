@@ -175,7 +175,7 @@ async function A(e, t) {
   })
 }
 
-function L(e) {
+function k(e) {
   let {
     guild: t
   } = e, n = (0, o.e7)([x.Z], () => null != t && x.Z.can(I.Plq.MANAGE_GUILD, t), [t]), l = t.features.has(I.oNc.COMMUNITY), s = (0, p.n2)(t.id), [a, d] = i.useState(t.features.has(I.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), u = i.useCallback(async e => {
@@ -215,7 +215,7 @@ function L(e) {
   })
 }
 
-function k(e) {
+function L(e) {
   let {
     guild: t,
     mfaLevel: n
@@ -318,11 +318,11 @@ function G() {
     titleClassName: T.headerContainer,
     children: [(0, r.jsx)(M, {
       guild: e
-    }), (0, r.jsx)(L, {
+    }), (0, r.jsx)(k, {
       guild: e
     }), (0, r.jsx)(R, {
       guild: e
-    }), (0, r.jsx)(k, {
+    }), (0, r.jsx)(L, {
       guild: e,
       mfaLevel: t
     }), (0, r.jsx)(Z, {

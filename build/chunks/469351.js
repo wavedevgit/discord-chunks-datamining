@@ -40,7 +40,7 @@ function w(e) {
     listingsLoaded: w
   } = (0, y.eD)(t), R = (0, s.e7)([v.Z], () => v.Z.getGuild(t)), Z = (0, s.e7)([_.default], () => _.default.getCurrentUser()), D = null != R && (0, b.eM)(R, Z), {
     loading: A
-  } = (0, c.H)(t), [L, k] = i.useState(n ? "manage_listings" : "payment");
+  } = (0, c.H)(t), [k, L] = i.useState(n ? "manage_listings" : "payment");
   (0, m.P)(R);
   let M = i.useCallback(() => {
     if (null == R) return;
@@ -75,8 +75,8 @@ function w(e) {
       look: "brand",
       className: P.tabBar,
       "aria-label": T.intl.string(T.t.X6h2g4),
-      selectedItem: L,
-      onItemSelect: k,
+      selectedItem: k,
+      onItemSelect: L,
       children: [(0, r.jsx)(u.Z, {
         id: "basic_info",
         disabledTooltip: T.intl.string(T.t.NVDuUV),
@@ -102,7 +102,7 @@ function w(e) {
         })
       }) : null]
     }),
-    B = (0, l.EQ)(L).with("basic_info", () => (0, r.jsx)(C.Z, {
+    B = (0, l.EQ)(k).with("basic_info", () => (0, r.jsx)(C.Z, {
       guildId: t
     })).with("manage_listings", () => (0, r.jsx)(N.Z, {
       guildId: t
@@ -110,7 +110,7 @@ function w(e) {
       guildId: t
     })).exhaustive(),
     F = w ? (0, r.jsx)(o.njP.Panel, {
-      id: L,
+      id: k,
       children: B
     }) : (0, r.jsx)(o.$jN, {});
   return (0, r.jsxs)(d.AL, {

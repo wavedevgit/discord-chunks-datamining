@@ -1,7 +1,7 @@
 /** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
-  Z: () => k
+  Z: () => L
 }), n(781311), n(539338), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -66,9 +66,9 @@ function A(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let L = "DRAGGABLE_ROLE";
+let k = "DRAGGABLE_ROLE";
 
-function k(e) {
+function L(e) {
   let {
     setEditRoleId: t,
     guild: n,
@@ -159,13 +159,13 @@ function G(e) {
     disableDrag: N,
     setEditRoleId: I,
     setSelectedSection: S
-  } = e, P = (0, E.T)(u, p, d), k = null != P, [M, G] = i.useState(!1), B = i.useMemo(() => ({
-    type: L,
+  } = e, P = (0, E.T)(u, p, d), L = null != P, [M, G] = i.useState(!1), B = i.useMemo(() => ({
+    type: k,
     item: () => (_(d.id), {
       id: d.id,
       position: h
     }),
-    canDrag: () => M && !k,
+    canDrag: () => M && !L,
     collect: e => ({
       isDragging: e.isDragging()
     }),
@@ -174,11 +174,11 @@ function G(e) {
       if (null == n) return void O();
       y(n.roleId)
     }
-  }), [d, _, O, y, k, M, h]), [{
+  }), [d, _, O, y, L, M, h]), [{
     isDragging: F
   }, H] = (0, a.c)(B), z = i.useMemo(() => ({
-    accept: L,
-    canDrop: () => !k,
+    accept: k,
+    canDrop: () => !L,
     collect: e => {
       let t = e.getItem();
       return null != t && e.isOver() && e.canDrop() ? {
@@ -190,7 +190,7 @@ function G(e) {
     drop: () => ({
       roleId: d.id
     })
-  }), [k, d]), [{
+  }), [L, d]), [{
     dragSourcePosition: W
   }, V] = (0, o.L)(z), Y = i.useCallback(e => {
     (0, g.jW)(e, async () => {
@@ -235,7 +235,7 @@ function G(e) {
     }),
     children: [(0, r.jsx)("div", {
       className: s()(R.dragIcon, Z.dragSpacing, {
-        [R.dragIconHidden]: k || N
+        [R.dragIconHidden]: L || N
       }),
       onMouseEnter: () => G(!0),
       onMouseLeave: () => G(!1),
@@ -292,10 +292,10 @@ function G(e) {
       className: s()(R.buttonsContainer, Z.buttonsSpacing),
       children: [(0, r.jsx)(m.M0o, {
         className: s()(R.circleButton, R.editButton),
-        tooltip: k ? w.intl.string(w.t["HO/oXl"]) : w.intl.string(w.t.bt75u7),
+        tooltip: L ? w.intl.string(w.t["HO/oXl"]) : w.intl.string(w.t.bt75u7),
         color: m.YX$.SECONDARY,
         size: m.tT7.SIZE_36,
-        icon: k ? (0, r.jsx)(m.tEF, {
+        icon: L ? (0, r.jsx)(m.tEF, {
           size: "custom",
           color: "currentColor",
           width: 20,

@@ -101,18 +101,18 @@ function w(e) {
   }, [n.id, t.id]), A = (0, c.Wu)([x.Z], () => {
     var e;
     return null != (e = x.Z.getEditedRoleConnectionConfigurationsMap().get(n.id)) ? e : []
-  }), L = A.length > 1 ? m.O1.OR : m.O1.AND, k = i.useMemo(() => L === m.O1.OR ? A.flat() : null != A && A.length > 0 ? A[0] : [], [L, A]), M = i.useMemo(() => new Set(k.map(e => e.connectionType)), [k]);
+  }), k = A.length > 1 ? m.O1.OR : m.O1.AND, L = i.useMemo(() => k === m.O1.OR ? A.flat() : null != A && A.length > 0 ? A[0] : [], [k, A]), M = i.useMemo(() => new Set(L.map(e => e.connectionType)), [L]);
 
   function G(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : void 0,
-      r = [...k];
+      r = [...L];
     r.push({
       connectionType: e,
       connectionMetadataField: void 0,
       applicationId: t,
       operator: void 0,
       value: void 0
-    }), (0, h.d_)(n.id, T(r, L))
+    }), (0, h.d_)(n.id, T(r, k))
   }
 
   function U() {
@@ -125,14 +125,14 @@ function w(e) {
     })
   }
   let B = null;
-  if (0 === k.length) B = (0, r.jsx)(P, {
+  if (0 === L.length) B = (0, r.jsx)(P, {
     handleAddVerificationClicked: U,
     locked: l
   });
-  else if (k.length > 0) {
+  else if (L.length > 0) {
     var F;
     let e = null;
-    k.length < 10 && (e = (0, r.jsx)(d.zxk, {
+    L.length < 10 && (e = (0, r.jsx)(d.zxk, {
       disabled: l,
       onClick: U,
       text: C.intl.string(C.t["OSvW5+"]),
@@ -181,7 +181,7 @@ function w(e) {
             "aria-labelledby": S
           })
         })
-      }(l, n.id, L, k, (e, t) => (0, h.d_)(n.id, T(e, t))), function(e, t, n, i, l) {
+      }(l, n.id, k, L, (e, t) => (0, h.d_)(n.id, T(e, t))), function(e, t, n, i, l) {
         function s(n, r) {
           let i = [];
           for (let t of e) i.push(E({}, t));
@@ -242,7 +242,7 @@ function w(e) {
             integrations: l
           }, e[0].configuration.connectionType + ":" + e[0].index))
         })
-      }(k, e => (0, h.d_)(n.id, T(e, L)), l, n.id, o), e]
+      }(L, e => (0, h.d_)(n.id, T(e, k)), l, n.id, o), e]
     })
   }
   return (0, r.jsx)(d.yWw, {

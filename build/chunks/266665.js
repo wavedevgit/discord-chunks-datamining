@@ -83,7 +83,7 @@ function Z(e) {
     Z = null == I && !S,
     D = (null == (t = g.tags) ? void 0 : t.guild_connections) !== void 0,
     A = (0, j._f)(d.id, g, g.colorStrings),
-    [, L] = (0, a.c)({
+    [, k] = (0, a.c)({
       type: R,
       item: () => (_(g.id), {
         id: g.id,
@@ -97,7 +97,7 @@ function Z(e) {
       }
     }),
     [{
-      dragSourcePosition: k
+      dragSourcePosition: L
     }, M] = (0, o.L)({
       accept: R,
       canDrop: () => Z,
@@ -128,8 +128,8 @@ function Z(e) {
     colors: A
   }), (0, r.jsxs)(u.njP.Item, {
     className: s()(T.row, {
-      [T.dragBefore]: null !== k && v < k,
-      [T.dragAfter]: null !== k && v > k
+      [T.dragBefore]: null !== L && v < L,
+      [T.dragAfter]: null !== L && v > L
     }),
     id: g.id,
     selectedItem: f,
@@ -149,7 +149,7 @@ function Z(e) {
     "aria-label": g.name,
     clickableRef: e => {
       var t;
-      L(M(null != (t = null == e ? void 0 : e.ref) ? t : null))
+      k(M(null != (t = null == e ? void 0 : e.ref) ? t : null))
     },
     children: [l, null != I ? (0, r.jsx)(y.Z, {
       className: T.lock,
@@ -176,7 +176,7 @@ function D(e) {
     handleDragStart: E,
     handleDragReset: R,
     handleDragComplete: D
-  } = (0, C.Z)(o), A = i.useRef(null), L = i.useCallback(e => {
+  } = (0, C.Z)(o), A = i.useRef(null), k = i.useCallback(e => {
     var t, n;
     let r = o.findIndex(t => t.id === e);
     null == (n = A.current) || null == (t = n.getScrollerNode()) || t.scrollTo({
@@ -184,11 +184,11 @@ function D(e) {
     })
   }, [o]);
   (0, p.ZP)(() => {
-    L(n)
+    k(n)
   }), i.useEffect(() => {
-    o.length > h && L(n), o.length !== h && x(o.length)
-  }, [o.length, h, x, L, n]);
-  let k = () => {
+    o.length > h && k(n), o.length !== h && x(o.length)
+  }, [o.length, h, x, k, n]);
+  let L = () => {
     g.Z.createRole(t.id), a(I.ZI.DISPLAY)
   };
   return (0, r.jsx)(b.ZP.Sidebar, {
@@ -221,7 +221,7 @@ function D(e) {
           children: e => (0, r.jsx)(u.P3F, w(P({
             className: T.addRole
           }, e), {
-            onClick: k,
+            onClick: L,
             children: (0, r.jsx)(u.qJs, {
               size: "custom",
               color: "currentColor",

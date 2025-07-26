@@ -91,9 +91,9 @@ let P = [{
       children: (0, r.jsx)(o.$jN, {})
     });
     if (null == R || null == Z) return null;
-    let L = l.Y.VISIBLE.has(Z.visibility),
-      k = (0, g.up)(R),
-      M = !k || (null == Z ? void 0 : Z.tag) == null,
+    let k = l.Y.VISIBLE.has(Z.visibility),
+      L = (0, g.up)(R),
+      M = !L || (null == Z ? void 0 : Z.tag) == null,
       G = null != (e = Z.badge) ? e : I.QV["0"],
       U = null != (t = Z.badgeColorPrimary) ? t : P[0].primary,
       B = null != (n = Z.badgeColorSecondary) ? n : P[0].secondary,
@@ -140,7 +140,7 @@ let P = [{
                   h.Z.setSection(C.pNK.ACCESS)
                 }
               })
-            }), !L && (0, r.jsx)(f.Z, {
+            }), !k && (0, r.jsx)(f.Z, {
               className: T.privateProfileWarning,
               children: (0, r.jsx)(o.Text, {
                 variant: "text-xs/medium",
@@ -149,7 +149,7 @@ let P = [{
                 })
               })
             })]
-          }), k ? (0, r.jsxs)("div", {
+          }), L ? (0, r.jsxs)("div", {
             className: T.enableSwitchContainer,
             children: [(0, r.jsx)("label", {
               htmlFor: "enable-server-tag",

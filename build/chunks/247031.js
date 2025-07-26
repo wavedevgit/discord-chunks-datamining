@@ -1,7 +1,7 @@
 /** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
-  Z: () => k
+  Z: () => L
 }), n(388685), n(413496), n(433524), n(35282), n(539854), n(642613), n(953529);
 var r = n(255367),
   i = n(73800),
@@ -329,7 +329,7 @@ class A extends i.PureComponent {
     })
   }
 }
-let L = o.ZP.connectStores([O.Z, p.Z, f.Z], () => {
+let k = o.ZP.connectStores([O.Z, p.Z, f.Z], () => {
   let {
     bans: e,
     guild: t,
@@ -344,7 +344,7 @@ let L = o.ZP.connectStores([O.Z, p.Z, f.Z], () => {
   }
 })(A);
 
-function k() {
+function L() {
   var e;
   let {
     guild: t
@@ -356,5 +356,5 @@ function k() {
   }, {
     autoTrackExposure: !0
   });
-  return n ? (0, r.jsx)(N.Z, {}) : (0, r.jsx)(L, {})
+  return n ? (0, r.jsx)(N.Z, {}) : (0, r.jsx)(k, {})
 }
