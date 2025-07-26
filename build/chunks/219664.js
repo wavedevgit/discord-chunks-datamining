@@ -26,9 +26,9 @@ var r = n(255367),
   y = n(592125),
   O = n(496675),
   w = n(699516),
-  N = n(456269),
-  S = n(109590),
-  T = n(368844),
+  S = n(456269),
+  T = n(109590),
+  N = n(368844),
   P = n(73315),
   I = n(404616),
   E = n(510060),
@@ -85,7 +85,7 @@ let U = i.memo(function(e) {
     gridSectionBoundaries: d,
     observePostVisibilityAnalytics: u
   } = e, m = (0, o.e7)([y.Z], () => y.Z.getChannel(n));
-  return null == m ? null : (0, r.jsx)(G, {
+  return null == m ? null : (0, r.jsx)(V, {
     id: t,
     channel: m,
     goToThread: i,
@@ -98,7 +98,7 @@ let U = i.memo(function(e) {
   })
 });
 
-function G(e) {
+function V(e) {
   let {
     id: t,
     channel: n,
@@ -112,23 +112,23 @@ function G(e) {
   } = e, p = n.id, b = i.useRef(null), j = (0, o.e7)([_.ZP], () => _.ZP.getCurrentSidebarChannelId(n.parent_id) === n.id), {
     firstMessage: v,
     loaded: C
-  } = (0, S.cl)(n), {
+  } = (0, T.cl)(n), {
     messageCountText: y
-  } = (0, N.nP)(n), {
+  } = (0, S.nP)(n), {
     isNew: O,
     hasUnreads: w
-  } = (0, N.J$)(n), T = i.useRef(null), {
+  } = (0, S.J$)(n), N = i.useRef(null), {
     handleLeftClick: P,
     handleRightClick: R
   } = (0, A.Z)({
-    facepileRef: T,
+    facepileRef: N,
     goToThread: a,
     channel: n
   });
   i.useEffect(() => {
     null == x || x(b.current, p)
   }, [x, p]);
-  let Z = (0, N.xw)(n, s.z.CREATION_DATE, L.R6.POSTED_DURATION_AGO),
+  let Z = (0, S.xw)(n, s.z.CREATION_DATE, L.R6.POSTED_DURATION_AGO),
     F = (0, I.NN)(n),
     H = (0, k.nX)({
       id: t,
@@ -140,7 +140,7 @@ function G(e) {
     {
       onFocus: U
     } = H,
-    G = function(e, t) {
+    V = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -175,7 +175,7 @@ function G(e) {
         count: y
       }),
       className: z.focusTarget
-    }, G)), (0, r.jsxs)("div", {
+    }, V)), (0, r.jsxs)("div", {
       className: z.header,
       children: [(0, r.jsxs)("div", {
         className: z.authorRow,
@@ -209,7 +209,7 @@ function G(e) {
     }), (0, r.jsx)("div", {
       className: z.postBody,
       children: (0, r.jsx)(d.Rny, {
-        children: (0, r.jsx)(V, {
+        children: (0, r.jsx)(G, {
           channel: n,
           firstMessage: v,
           isFirstMessageLoaded: C,
@@ -223,14 +223,14 @@ function G(e) {
         children: (0, r.jsx)(W, {
           channel: n,
           firstMessage: v,
-          facepileRef: T
+          facepileRef: N
         })
       })
     })]
   })
 }
 
-function V(e) {
+function G(e) {
   let {
     channel: t,
     firstMessage: n,
@@ -270,13 +270,13 @@ function q(e) {
     coords: l
   } = e, s = (0, o.e7)([y.Z], () => y.Z.getChannel(t.parent_id)), {
     firstMedia: c
-  } = (0, N.mX)({
+  } = (0, S.mX)({
     firstMessage: n,
     formatInline: !1,
     noStyleAndInteraction: !1
   }), {
     hasUnreads: d
-  } = (0, N.J$)(t), u = (0, o.e7)([O.Z], () => O.Z.can(F.Plq.MANAGE_MESSAGES, t)), m = C.QK.useSetting(), h = C.cC.useSetting(), g = (0, b.Z)(h, u), f = (0, T.aU)(n, s, !1), [x, p] = (0, E.rI)(l.width - 2 * E.LT), j = (null == n ? void 0 : n.blocked) || null == (null != a ? a : c), v = t.isMediaPost();
+  } = (0, S.J$)(t), u = (0, o.e7)([O.Z], () => O.Z.can(F.Plq.MANAGE_MESSAGES, t)), m = C.QK.useSetting(), h = C.cC.useSetting(), g = (0, b.Z)(h, u), f = (0, N.aU)(n, s, !1), [x, p] = (0, E.rI)(l.width - 2 * E.LT), j = (null == n ? void 0 : n.blocked) || null == (null != a ? a : c), v = t.isMediaPost();
   return j ? (0, r.jsx)(Q, {
     channel: t,
     firstMessage: n,
@@ -372,7 +372,7 @@ let X = e => e.preventDefault(),
     } = e, {
       containsVideo: u,
       containsGif: m
-    } = i.useMemo(() => (0, T.cp)(t), [t]), b = i.useMemo(() => t.slice(R.$x, R.GV), [t]), j = (0, R.tu)({
+    } = i.useMemo(() => (0, N.cp)(t), [t]), b = i.useMemo(() => t.slice(R.$x, R.GV), [t]), j = (0, R.tu)({
       numAttachments: b.length,
       containerWidth: a,
       containerHeight: s
@@ -484,7 +484,7 @@ function Q(e) {
     hasUnreads: o
   } = e, c = C.jU.useSetting(), [u, m] = (0, E.rI)(s - 2 * E.LT), {
     content: h
-  } = (0, N.mX)({
+  } = (0, S.mX)({
     firstMessage: n,
     formatInline: !1,
     noStyleAndInteraction: !0

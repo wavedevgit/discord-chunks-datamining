@@ -26,9 +26,9 @@ var r = n(255367),
   y = n(247206),
   O = n(109434),
   w = n(456269),
-  N = n(109590),
-  S = n(368844),
-  T = n(660189),
+  S = n(109590),
+  T = n(368844),
+  N = n(660189),
   P = n(73315),
   I = n(470623),
   E = n(858543),
@@ -44,8 +44,8 @@ var r = n(255367),
   B = n(443877),
   H = n(524444),
   U = n(287151),
-  G = n(267128),
-  V = n(695346),
+  V = n(267128),
+  G = n(695346),
   q = n(433355),
   W = n(592125),
   X = n(375954),
@@ -104,7 +104,7 @@ let ec = i.memo(function(e) {
     let a = (0, h.e7)([q.ZP], () => q.ZP.getCurrentSidebarChannelId(r.parent_id) === r.id),
       {
         firstMessage: l
-      } = (0, N.cl)(r),
+      } = (0, S.cl)(r),
       s = function(e) {
         let {
           firstMessage: t,
@@ -122,7 +122,7 @@ let ec = i.memo(function(e) {
         }) : {
           hasSpoilerEmbeds: !1,
           content: null
-        }, [n, l, r, a]), c = (0, S.eL)(t, s), d = (0, S.vg)(t, s);
+        }, [n, l, r, a]), c = (0, T.eL)(t, s), d = (0, T.vg)(t, s);
         return null == t ? null : {
           hasSpoilerEmbeds: s,
           content: o,
@@ -170,12 +170,12 @@ let ec = i.memo(function(e) {
   }, [y, O, t]), i.useEffect(() => {
     null == a || a(_.current, t)
   }, [_, a, t]);
-  let T = i.useRef(null),
+  let N = i.useRef(null),
     {
       handleLeftClick: P,
       handleRightClick: E
     } = (0, M.Z)({
-      facepileRef: T,
+      facepileRef: N,
       goToThread: n,
       channel: d
     }),
@@ -246,7 +246,7 @@ let ec = i.memo(function(e) {
         children: (0, r.jsx)(em, {
           channel: d,
           firstMessage: j,
-          facepileRef: T
+          facepileRef: N
         })
       })]
     })]
@@ -288,13 +288,13 @@ let eu = i.memo(function(e) {
     hasMediaAttachment: a,
     hasUnreads: s,
     originalAuthor: o
-  } = e, c = (0, h.e7)([T.Z], () => T.Z.isLoading(n.id)), d = (0, h.e7)([K.Z], () => K.Z.can(en.Plq.MANAGE_MESSAGES, n)), u = V.cC.useSetting(), m = (0, h.e7)([J.Z], () => J.Z.getGuildId()), {
+  } = e, c = (0, h.e7)([N.Z], () => N.Z.isLoading(n.id)), d = (0, h.e7)([K.Z], () => K.Z.can(en.Plq.MANAGE_MESSAGES, n)), u = G.cC.useSetting(), m = (0, h.e7)([J.Z], () => J.Z.getGuildId()), {
     contentPlaceholder: f,
     renderedContent: x
   } = null == t ? {
     contentPlaceholder: null,
     renderedContent: null
-  } : (0, G.f)(t, i, !1, !1, l()(el.messageContent, ea.messageContent, es.inlineFormat, es.__invalid_smallFontSize), {
+  } : (0, V.f)(t, i, !1, !1, l()(el.messageContent, ea.messageContent, es.inlineFormat, es.__invalid_smallFontSize), {
     leadingIconClass: el.messageContentLeadingIcon,
     trailingIconClass: el.messageContentTrailingIcon,
     iconSize: er.WW
@@ -520,7 +520,7 @@ function ep(e) {
     } = e,
     c = (0, h.e7)([Q.Z], () => Q.Z.isFocused()),
     d = (0, A.d$)(i.src),
-    u = V.QK.useSetting(),
+    u = G.QK.useSetting(),
     m = (0, L.MC)(s),
     {
       src: f,

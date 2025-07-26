@@ -1,0 +1,55 @@
+/**
+  Module ID: 61879
+  Original File Name: b6c442c356990ee4
+**/
+.close__178fd {
+    color: var(--white);
+    position: absolute;
+    right: var(--space-16);
+    top: var(--space-16)
+}
+
+.modal__178fd {
+    margin: 0;
+    overflow: hidden;
+    width: 520px
+}
+
+.modalContentContainer__178fd {
+    margin: 0;
+    overflow: hidden;
+    padding: 0!important
+}
+
+.container__178fd,.contentContainer__178fd {
+    display: flex;
+    flex-direction: column
+}
+
+.contentContainer__178fd {
+    align-items: center;
+    padding: 30px;
+    text-align: center
+}
+
+.buttonContainer__178fd {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    margin-top: var(--space-24);
+    width: 100%
+}
+
+.description__178fd {
+    text-align: left
+}
+
+.button__178fd,.description__178fd {
+    margin-top: var(--space-16)
+}
+
+.image__178fd {
+    height: 228px
+}
+
+/*# sourceMappingURL=b6c442c356990ee4.css.map*/

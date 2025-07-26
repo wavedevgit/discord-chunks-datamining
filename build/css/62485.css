@@ -1,6 +1,6 @@
 /**
   Module ID: 62485
-  Original File Name: fbd500cea768ae2c
+  Original File Name: eca0928952f0a0b1
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -760,6 +760,11 @@
     top: 13px
 }
 
+.headerImage__4dd8e,.headerImageEmpty__4dd8e {
+    border-top-left-radius: var(--radius-md);
+    border-top-right-radius: var(--radius-md)
+}
+
 .headerImage__4dd8e {
     height: 100%;
     object-fit: cover;
@@ -1008,4 +1013,4 @@
     align-items: stretch
 }
 
-/*# sourceMappingURL=fbd500cea768ae2c.css.map*/
+/*# sourceMappingURL=eca0928952f0a0b1.css.map*/

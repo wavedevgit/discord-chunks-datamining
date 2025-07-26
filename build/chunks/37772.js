@@ -24,8 +24,8 @@ var r = n(255367),
   C = n(739566),
   j = n(443877),
   E = n(492593),
-  x = n(938353),
-  S = n(25015),
+  S = n(938353),
+  x = n(25015),
   I = n(689674),
   P = n(963550),
   N = n(845080),
@@ -97,7 +97,7 @@ let G = i.memo(function e(t) {
     {
       content: en,
       hasSpoilerEmbeds: er
-    } = (0, S.Z)(s, {
+    } = (0, x.Z)(s, {
       hideSimpleEmbedContent: X && Q,
       allowList: $,
       allowHeading: $,
@@ -137,7 +137,7 @@ let G = i.memo(function e(t) {
       author: ei,
       guildId: l.guild_id
     })),
-    childrenAccessories: (0, r.jsx)(x.BB, {
+    childrenAccessories: (0, r.jsx)(S.BB, {
       channel: l,
       message: s,
       hasSpoilerEmbeds: er,

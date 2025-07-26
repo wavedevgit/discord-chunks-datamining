@@ -24,8 +24,8 @@ var r = n(255367),
   C = n(682662),
   j = n(662146),
   E = n(981631),
-  x = n(388032),
-  S = n(728492),
+  S = n(388032),
+  x = n(728492),
   I = n(335426);
 let P = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
   N = (0, s.animated)(h.Kqy),
@@ -77,7 +77,7 @@ let P = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
       X(e)
     }, []), en = i.useCallback(e => {
       ("ArrowRight" === e.key && !s || "ArrowLeft" === e.key && s) && M()
-    }, [M, s]), er = null != z && "" !== z ? z : null != T && "" !== T ? T : x.intl.string(x.t.xV9hVl), ei = (0, c.Ie)("".concat(H)), el = "folder-items-".concat(H), eo = function(e) {
+    }, [M, s]), er = null != z && "" !== z ? z : null != T && "" !== T ? T : S.intl.string(S.t.xV9hVl), ei = (0, c.Ie)("".concat(H)), el = "folder-items-".concat(H), eo = function(e) {
       let t = (0, h.dQu)(h.TVs.modules.guildbar.FOLDER_SIZE),
         n = (0, h.dQu)(h.TVs.modules.guildbar.AVATAR_SIZE),
         r = (0, h.dQu)(h.TVs.space.SPACE_XS);
@@ -111,8 +111,8 @@ let P = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
           ref: A ? e => {
             ee(e)
           } : void 0,
-          className: o()(S.folderHeader, {
-            [S.folderHeaderSmall]: "icon" === G || J,
+          className: o()(x.folderHeader, {
+            [x.folderHeaderSmall]: "icon" === G || J,
             [I.wobble]: !$ && q && !s
           }),
           "data-dnd-name": er,
@@ -145,16 +145,16 @@ let P = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
     }), eu = null != t.color ? t.color : E.Wyy, ed = eu === E.Wyy ? void 0 : (0, u.Rf)(eu);
     return (0, r.jsxs)("div", {
       ref: es,
-      className: o()(S.folderGroup, {
-        [S.isExpanded]: s,
-        [S.isHovering]: Q
+      className: o()(x.folderGroup, {
+        [x.isExpanded]: s,
+        [x.isHovering]: Q
       }),
       style: {
         "--custom-folder-color": null != ed ? ed : ""
       },
       "data-drop-hovering": q,
       children: [!$ && s && (0, r.jsx)("span", {
-        className: S.folderGroupBackground
+        className: x.folderGroupBackground
       }), ec, ea((e, n, i) => {
         let {
           key: l
@@ -164,7 +164,7 @@ let P = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
           role: "group",
           as: "ul",
           gap: "xs",
-          className: S.folderGuildsList,
+          className: x.folderGuildsList,
           style: {
             height: e.height.to(e => e * eo)
           },

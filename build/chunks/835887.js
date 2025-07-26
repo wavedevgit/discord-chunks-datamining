@@ -1,37 +1,42 @@
 /** Chunk was on 94312 **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => p
 });
 var r = n(255367),
   i = n(73800),
   l = n(481060),
-  s = n(101017),
-  a = n(434404),
-  o = n(755641),
-  c = n(195196),
-  d = n(388032),
-  u = n(602268);
+  s = n(100527),
+  a = n(101017),
+  o = n(441536),
+  c = n(434404),
+  d = n(755641),
+  u = n(195196),
+  m = n(388032),
+  g = n(602268);
 
-function m(e) {
+function p(e) {
   let {
     className: t,
     guildId: n,
-    selectedBadge: m
-  } = e, g = i.useCallback(e => {
-    a.Z.updateGuildProfile(n, {
+    selectedBadge: p
+  } = e, f = i.useCallback(e => {
+    c.Z.updateGuildProfile(n, {
       badge: e
     })
-  }, [n]), p = (0, s.Z)();
+  }, [n]), h = i.useCallback(() => {
+    (0, o.Z)(n, s.Z.GUILD_POWERUPS_GUILD_SETTINGS_TAGS), c.Z.close()
+  }, [n]), x = (0, a.Z)();
   return (0, r.jsxs)("div", {
     className: t,
     children: [(0, r.jsx)(l.vwX, {
-      className: u.sectionTitle,
-      children: d.intl.string(c.default.pb7lpK)
-    }), (0, r.jsx)(o.g, {
-      onBadgeClicked: g,
-      selectedBadge: m,
-      badgeCollection: p
+      className: g.sectionTitle,
+      children: m.intl.string(u.default.pb7lpK)
+    }), (0, r.jsx)(d.g, {
+      badgeCollection: x,
+      handleBoostUpsellClick: h,
+      onBadgeClicked: f,
+      selectedBadge: p
     })]
   })
 }

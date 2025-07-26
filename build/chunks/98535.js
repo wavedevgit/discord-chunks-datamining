@@ -19,8 +19,8 @@ var n = r(255367),
   b = r(81136),
   m = r(566564),
   _ = r(795477),
-  C = r(215023);
-let O = [C.AW.HOME, C.AW.ORBS];
+  O = r(215023);
+let C = [O.AW.HOME, O.AW.ORBS];
 
 function v(e) {
   let {
@@ -38,7 +38,7 @@ function v(e) {
     T = l.useCallback(async (e, t, n) => {
       d(e, t);
       let l = n && !r && !y,
-        o = t === i.T.ORB ? C.AW.ORBS : C.AW.CATALOG;
+        o = t === i.T.ORB ? O.AW.ORBS : O.AW.CATALOG;
       j(t), await c(o, l)
     }, [r, y, c, d]),
     P = (0, p.FF)("CollectiblesContent"),
@@ -49,7 +49,7 @@ function v(e) {
     onRetry: b,
     errorMessage: v,
     errorOrigin: h.i.SHOP_PAGE
-  }) : O.includes(t) ? (0, n.jsx)(m.Z, {
+  }) : C.includes(t) ? (0, n.jsx)(m.Z, {
     isFullScreen: r,
     handleTransition: T,
     tab: t,

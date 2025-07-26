@@ -25,8 +25,8 @@ var r, i, l = n(73800),
   C = n(569471),
   j = n(723170),
   E = n(675478),
-  x = n(581883),
-  S = n(131704),
+  S = n(581883),
+  x = n(131704),
   I = n(592125),
   P = n(984933),
   N = n(731290),
@@ -297,7 +297,7 @@ function q() {
   let e = function() {
       var e, t;
       let n = {},
-        r = null != (t = null == (e = x.Z.settings.guilds) ? void 0 : e.guilds) ? t : {};
+        r = null != (t = null == (e = S.Z.settings.guilds) ? void 0 : e.guilds) ? t : {};
       for (let e in r)
         for (let t in r[e].channels) {
           let i = I.Z.getChannel(t);
@@ -334,7 +334,7 @@ function q() {
 function X(e, t, n, r) {
   if (null == r) return;
   let i = I.Z.getChannel(r);
-  if (null == i || !S.Ec.has(i.type) && D.ZP.isGuildOrCategoryOrChannelMuted(n, i.id)) return;
+  if (null == i || !x.Ec.has(i.type) && D.ZP.isGuildOrCategoryOrChannelMuted(n, i.id)) return;
   if (i.isPrivate()) {
     if (0 === A.ZP.getMentionCount(r)) return
   } else if (!(0, O.d)(i) && 0 === A.ZP.getMentionCount(r)) return;

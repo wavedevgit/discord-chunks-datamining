@@ -44,7 +44,7 @@ function E(e) {
   }
   return e
 }
-let x = {
+let S = {
   [y.vxO.INSTALLING]: {
     [f.J6.NONE]: (e, t) => v.intl.formatToPlainString(v.t["p+2sEx"], {
       name: e
@@ -97,7 +97,7 @@ let x = {
     })
   }
 };
-class S extends l.PureComponent {
+class x extends l.PureComponent {
   renderText() {
     let {
       state: e,
@@ -131,7 +131,7 @@ class S extends l.PureComponent {
       if (null == l || null == o || null == i) return null;
       let s = e[e.length - 1] / t * 1e3,
         c = 0 !== s ? Math.max(1, (o - l) / s) : null,
-        u = x[a],
+        u = S[a],
         d = null != u ? Object.keys(u) : [],
         {
           unit: h,
@@ -167,7 +167,7 @@ class I extends(r = l.PureComponent) {
       firstState: t,
       isPaused: n
     } = this.props;
-    return null == e || null == t ? v.intl.string(v.t.cw57am) : (0, i.jsx)(S, {
+    return null == e || null == t ? v.intl.string(v.t.cw57am) : (0, i.jsx)(x, {
       application: e,
       state: t,
       isPaused: n

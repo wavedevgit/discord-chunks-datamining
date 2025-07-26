@@ -24,8 +24,8 @@ var r = n(255367),
   C = n(305325),
   j = n(281956),
   E = n(66999),
-  x = n(554747),
-  S = n(378844),
+  S = n(554747),
+  x = n(378844),
   I = n(574176),
   P = n(340541),
   N = n(359110),
@@ -182,9 +182,9 @@ class $ extends G.ZP {
       embeddedApps: C,
       isSubscriptionGated: j,
       isFavoriteSuggestion: E,
-      withGuildIcon: x
+      withGuildIcon: S
     } = this.props, {
-      shouldShowActivities: S,
+      shouldShowActivities: x,
       shouldShowGuildVerificationPopout: I
     } = this.state, N = (0, P.jW)({
       location: "voice_channel"
@@ -203,7 +203,7 @@ class $ extends G.ZP {
           renderPopout: this.renderPopout,
           spacing: 0,
           onRequestClose: this.closeGuildVerificationPopout,
-          shouldShow: S && !u && !d && !I || I,
+          shouldShow: x && !u && !d && !I || I,
           children: () => (0, r.jsx)(c.ua7, {
             text: this.getTooltipText(),
             children: c => {
@@ -260,7 +260,7 @@ class $ extends G.ZP {
                   channel: e,
                   embeddedApps: C
                 }),
-                withGuildIcon: x
+                withGuildIcon: S
               }, h), {
                 children: [E && (0, r.jsxs)(r.Fragment, {
                   children: [this.renderAcceptSuggestionButton(), this.renderRemoveSuggestionButton()]
@@ -371,8 +371,8 @@ class $ extends G.ZP {
           shouldShowSettingNudge: n
         })
       }
-      if (s) return (0, r.jsx)(S.Z, {
-        type: S.R.VOICE,
+      if (s) return (0, r.jsx)(x.Z, {
+        type: x.R.VOICE,
         guildId: e.guild_id,
         closePopout: this.closeGuildVerificationPopout
       });
@@ -443,10 +443,10 @@ function et(e) {
       bypassLimit: D.Z.can(W.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), p = (0, a.e7)([k.Z], () => k.Z.hasVideo(n.id)), g = (0, f.ZP)(n), m = (0, _.ZP)(n), b = (0, x.qY)(n.id), {
+  }), p = (0, a.e7)([k.Z], () => k.Z.hasVideo(n.id)), g = (0, f.ZP)(n), m = (0, _.ZP)(n), b = (0, S.qY)(n.id), {
     isSubscriptionGated: O,
     needSubscriptionToAccess: y
-  } = (0, E.Z)(n.id), C = (0, v.Z)(), j = (0, a.e7)([M.ZP], () => M.ZP.isFavorite(t.id, n.id)), S = e.connected || (null == C ? void 0 : C.channelId) === n.id, {
+  } = (0, E.Z)(n.id), C = (0, v.Z)(), j = (0, a.e7)([M.ZP], () => M.ZP.isFavorite(t.id, n.id)), x = e.connected || (null == C ? void 0 : C.channelId) === n.id, {
     enableHangStatus: P,
     allowChannelTopic: N
   } = I.n.useExperiment({
@@ -463,7 +463,7 @@ function et(e) {
     needSubscriptionToAccess: y,
     enableConnectedUserLimit: !0,
     enableActivities: !0
-  }), Z = S && null == w;
+  }), Z = x && null == w;
   return (0, r.jsx)(ee, J(Q({
     channelName: m,
     embeddedApps: g,
@@ -473,7 +473,7 @@ function et(e) {
     isSubscriptionGated: O,
     needSubscriptionToAccess: y
   }, u, h, e), {
-    connected: S,
+    connected: x,
     isFavoriteSuggestion: l && !j,
     forceShowButtons: Z,
     channelInfo: w,

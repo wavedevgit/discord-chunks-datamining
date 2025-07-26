@@ -26,9 +26,9 @@ var r = n(255367),
   y = n(474366),
   O = n(485386),
   w = n(430824),
-  N = n(186523),
-  S = n(585483),
-  T = n(70956),
+  S = n(186523),
+  T = n(585483),
+  N = n(70956),
   P = n(709054),
   I = n(961675),
   E = n(883429),
@@ -53,7 +53,7 @@ function U(e, t, n) {
   }) : e[t] = n, e
 }
 
-function G(e) {
+function V(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -66,7 +66,7 @@ function G(e) {
   return e
 }
 
-function V(e, t) {
+function G(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -94,7 +94,7 @@ let q = {
   };
 class K {
   addStep(e) {
-    ++this.currentIndex, this.steps.push(G({
+    ++this.currentIndex, this.steps.push(V({
       index: this.currentIndex
     }, e)), e.isDone && this.completedSteps++
   }
@@ -129,7 +129,7 @@ let J = e => {
           let {
             default: t
           } = await n.e("21971").then(n.bind(n, 201049));
-          return n => (0, r.jsx)(t, V(G({}, n), {
+          return n => (0, r.jsx)(t, G(V({}, n), {
             channelId: e.id,
             guildId: e.guild_id
           }))
@@ -148,7 +148,7 @@ let J = e => {
           let {
             default: t
           } = await n.e("80404").then(n.bind(n, 158586));
-          return n => (0, r.jsx)(t, V(G({}, n), {
+          return n => (0, r.jsx)(t, G(V({}, n), {
             channel: e
           }))
         })
@@ -164,14 +164,14 @@ let J = e => {
           let {
             default: e
           } = await n.e("18417").then(n.bind(n, 740696));
-          return t => (0, r.jsx)(e, V(G({}, t), {
+          return t => (0, r.jsx)(e, G(V({}, t), {
             guildId: i
           }))
         }))
       }
     }),
     clickHandler: () => {
-      X(D.ZI.CREATE_POST), S.S.dispatch(z.CkL.FOCUS_COMPOSER_TITLE)
+      X(D.ZI.CREATE_POST), T.S.dispatch(z.CkL.FOCUS_COMPOSER_TITLE)
     },
     isDone: e
   }),
@@ -189,7 +189,7 @@ let J = e => {
     let a = i.useRef(0);
     i.useEffect(() => (n || !e || t ? clearTimeout(a.current) : a.current = setTimeout(() => {
       r()
-    }, 60 * T.Z.Millis.SECOND), () => clearTimeout(a.current)), [e, t, r, n])
+    }, 60 * N.Z.Millis.SECOND), () => clearTimeout(a.current)), [e, t, r, n])
   },
   ei = (e, t, n) => {
     (0, p.ZP)(() => {
@@ -204,7 +204,7 @@ let J = e => {
       guildId: a,
       channel: l
     } = e, s = (0, h.e7)([O.Z], () => null != a ? O.Z.getRoles(a) : void 0), o = i.useCallback(() => {
-      S.S.dispatch(z.CkL.REMEASURE_TARGET)
+      T.S.dispatch(z.CkL.REMEASURE_TARGET)
     }, []);
     i.useEffect(() => {
       o()
@@ -300,7 +300,7 @@ let J = e => {
                 let {
                   default: t
                 } = await n.e("78704").then(n.bind(n, 560602));
-                return a(!0), n => (0, r.jsx)(t, V(G({}, n), {
+                return a(!0), n => (0, r.jsx)(t, G(V({}, n), {
                   channel: i,
                   guild: e,
                   permission: l,
@@ -382,8 +382,8 @@ let J = e => {
       transitions: f,
       setVisible: x
     } = el(), b = es(a), j = eu(), O = ee(i.id, x), {
-      onboardingSteps: S,
-      isDismissed: T,
+      onboardingSteps: T,
+      isDismissed: N,
       isHidden: P,
       isAllDone: I
     } = ed({
@@ -391,14 +391,14 @@ let J = e => {
       channel: i,
       hasAnyThread: t,
       handleHide: O
-    }), E = !P && !T, R = (0, F.AF)(), k = i.isMediaChannel(), A = e => R.getState().setOnboardingExpanded(e);
+    }), E = !P && !N, R = (0, F.AF)(), k = i.isMediaChannel(), A = e => R.getState().setOnboardingExpanded(e);
     return (ei(I, E, O), ea({
       isAllDone: I,
       isVisible: E,
       canManageChannel: m,
       guildId: null == o ? void 0 : o.id,
       channel: i
-    }), en(T, P, x), (0, p.ZP)(() => {
+    }), en(N, P, x), (0, p.ZP)(() => {
       t && E || A(!0)
     }), null == o) ? null : (0, C.iZ)(i) ? n || 0 !== s.size ? s.size > 0 ? null : (0, r.jsx)(_.Z, {
       guild: o
@@ -425,8 +425,8 @@ let J = e => {
                 variant: "heading-md/medium",
                 className: H.header,
                 children: B.intl.format(B.t["9L+8b2"], {
-                  numCompleted: S.completedSteps.toString(),
-                  numSteps: S.steps.length.toString()
+                  numCompleted: T.completedSteps.toString(),
+                  numSteps: T.steps.length.toString()
                 })
               }), (0, r.jsxs)(g.Text, {
                 variant: "text-xs/normal",
@@ -448,7 +448,7 @@ let J = e => {
             className: H.listContainer,
             children: (0, r.jsx)("ol", {
               className: H.checklist,
-              children: S.getSteps().map(e => (0, r.jsxs)(g.P3F, {
+              children: T.getSteps().map(e => (0, r.jsxs)(g.P3F, {
                 tag: "li",
                 "aria-label": e.name,
                 onClick: () => j(e),
@@ -468,7 +468,7 @@ let J = e => {
                   className: H.stepStatus
                 }) : (0, r.jsx)(g.G2e, {
                   disableColor: !0,
-                  icon: (0, g.GSL)(N.Z),
+                  icon: (0, g.GSL)(S.Z),
                   style: q,
                   className: l()(H.stepStatus, H.completed)
                 }), (0, r.jsxs)("div", {

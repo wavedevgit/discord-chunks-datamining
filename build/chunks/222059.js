@@ -24,8 +24,8 @@ var r = n(255367),
   C = n(780570),
   j = n(278464),
   E = n(276952),
-  x = n(682662),
-  S = n(662146),
+  S = n(682662),
+  x = n(662146),
   I = n(674552),
   P = n(981631),
   N = n(474936),
@@ -134,12 +134,12 @@ function R(e) {
       inlineSpecs: A,
       tutorialId: "friends-list",
       position: "right",
-      children: (0, r.jsxs)(x.H, {
+      children: (0, r.jsxs)(S.H, {
         children: [(0, r.jsx)(E.Z, {
           selected: o,
           hovered: _,
           className: T.pill
-        }), (0, r.jsx)(S.Z, {
+        }), (0, r.jsx)(x.Z, {
           color: s.ua7.Colors.PRIMARY,
           hideOnClick: !0,
           text: k,

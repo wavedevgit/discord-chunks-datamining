@@ -24,9 +24,9 @@ var r = n(255367),
   C = n(921944),
   j = n(93841),
   E = n(388032),
-  x = n(27053);
+  S = n(27053);
 
-function S(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -89,7 +89,7 @@ function P(e) {
   let L = T >= N,
     M = i.useRef(null),
     [k, U] = (0, f.US)(l),
-    G = e => (0, r.jsx)(d.P3F, I(S({}, e), {
+    G = e => (0, r.jsx)(d.P3F, I(x({}, e), {
       "aria-label": void 0,
       role: "button",
       focusProps: {
@@ -102,45 +102,45 @@ function P(e) {
         var t;
         null == e || null == (t = e.onClick) || t.call(e), Z()
       },
-      className: o()(x.container, {
-        [x.containerWithMargin]: P
+      className: o()(S.container, {
+        [S.containerWithMargin]: P
       }),
       onContextMenu: e => {
         w && (0, h.jW)(e, async () => {
           let {
             default: e
           } = await n.e("8570").then(n.bind(n, 651138));
-          return n => (0, r.jsx)(e, I(S({}, n), {
+          return n => (0, r.jsx)(e, I(x({}, n), {
             guild: t
           }))
         })
       },
       children: (0, r.jsxs)("div", {
-        className: x.contentContainer,
+        className: S.contentContainer,
         children: [(0, r.jsx)("div", {
-          className: x.progressContainer
+          className: S.progressContainer
         }), (0, r.jsx)(a.animated.div, {
-          className: o()(x.progress, {
-            [x.progressLow]: A <= 5
+          className: o()(S.progress, {
+            [S.progressLow]: A <= 5
           }),
           style: R
         }), (0, r.jsxs)("div", {
-          className: x.textContainer,
+          className: S.textContainer,
           children: [(0, r.jsxs)("div", {
-            className: x.textContentContainer,
+            className: S.textContentContainer,
             children: [(0, r.jsx)(s.xv, {
-              className: x.text,
+              className: S.text,
               variant: "text-xs/semibold",
               children: E.intl.string(j.default.NI6IhY)
             }), t.premiumSubscriberCount >= N && (0, r.jsx)(s.xv, {
-              className: x.text,
+              className: S.text,
               variant: "text-xs/semibold",
               children: "\uD83C\uDF89"
             })]
           }), (0, r.jsxs)("div", {
-            className: x.textContentContainer,
+            className: S.textContentContainer,
             children: [(0, r.jsx)(s.xv, {
-              className: o()(x.text, x.boostCountText),
+              className: o()(S.text, S.boostCountText),
               variant: "text-xs/semibold",
               children: L ? E.intl.formatToPlainString(j.default["Ehpq+/"], {
                 appliedBoostCount: T
@@ -152,7 +152,7 @@ function P(e) {
               width: 12,
               height: 12,
               direction: b.Z.Directions.RIGHT,
-              className: o()(x.text, x.boostCountText)
+              className: o()(S.text, S.boostCountText)
             })]
           })]
         })]

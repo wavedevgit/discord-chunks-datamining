@@ -21,14 +21,14 @@ var r, i, l, o, a = n(392711),
   C = n(734307),
   j = n(981631),
   E = ((i = {}).HIDDEN = "hidden", i.UNREAD = "unread", i.MENTIONS = "mentions", i.VOICE_CHANNELS = "voice-channels", i);
-let x = {
+let S = {
     mode: "hidden",
     mentionCount: 0,
     targetChannelId: null
   },
-  S = {
-    topBar: x,
-    bottomBar: x
+  x = {
+    topBar: S,
+    bottomBar: S
   },
   I = {},
   P = {};
@@ -87,18 +87,18 @@ function T(e) {
       if (!h && !d) break;
       (N(t.id) || s().some(t.threadIds, N)) && (null == u && (u = t.id), E = !0), (w(t.id) || s().some(t.threadIds, w)) && (null == c && (c = t.id), j += b.ZP.getMentionCount(t.id), j += s().sumBy(t.threadIds, b.ZP.getMentionCount))
     }
-  let S = null,
+  let x = null,
     T = null,
     A = null != (r = null == f ? void 0 : f.getChannelRecords()) ? r : [];
-  d && j > 0 ? S = {
+  d && j > 0 ? x = {
     mode: "mentions",
     mentionCount: j,
     targetChannelId: c
-  } : !p && s().some(A, Z) ? S = {
+  } : !p && s().some(A, Z) ? x = {
     mode: "voice-channels",
     mentionCount: 0,
     targetChannelId: null
-  } : h && E && (S = {
+  } : h && E && (x = {
     mode: "unread",
     mentionCount: 0,
     targetChannelId: u
@@ -111,11 +111,11 @@ function T(e) {
     mentionCount: 0,
     targetChannelId: a
   });
-  let R = null != T && (null == S || "mentions" !== S.mode && "mentions" === T.mode),
-    D = null != S && ("mentions" === S.mode || !R);
+  let R = null != T && (null == x || "mentions" !== x.mode && "mentions" === T.mode),
+    D = null != x && ("mentions" === x.mode || !R);
   return I[e] = {
-    topBar: R && null != T ? T : x,
-    bottomBar: D && null != S ? S : x
+    topBar: R && null != T ? T : S,
+    bottomBar: D && null != x ? x : S
   }, !0
 }
 let A = s().throttle(T, 200);
@@ -166,7 +166,7 @@ class U extends(r = c.ZP.Store) {
   }
   getUnreadStateForGuildId(e) {
     var t;
-    return null != (t = I[e]) ? t : S
+    return null != (t = I[e]) ? t : x
   }
 }
 o = "ChannelListUnreadsStore", (l = "displayName") in U ? Object.defineProperty(U, l, {

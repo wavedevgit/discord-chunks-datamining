@@ -25,8 +25,8 @@ var r = n(255367),
   C = n(791914),
   j = n(147522),
   E = n(809780),
-  x = n(981631),
-  S = n(388032),
+  S = n(981631),
+  x = n(388032),
   I = n(128406);
 
 function P(e) {
@@ -71,8 +71,8 @@ function P(e) {
       let e = a.channels.find(e => !e.collapsed);
       null != e && P.markChannelRead(e)
     };
-    return _.S.subscribe(x.CkL.MARK_TOP_INBOX_CHANNEL_READ, e), () => {
-      _.S.unsubscribe(x.CkL.MARK_TOP_INBOX_CHANNEL_READ, e)
+    return _.S.subscribe(S.CkL.MARK_TOP_INBOX_CHANNEL_READ, e), () => {
+      _.S.unsubscribe(S.CkL.MARK_TOP_INBOX_CHANNEL_READ, e)
     }
   }, [P, a.channels]), w = G, i.useEffect(() => {
     let e = e => {
@@ -82,7 +82,7 @@ function P(e) {
       document.removeEventListener("keydown", e)
     }
   }, [w]), i.useEffect(() => {
-    b.default.track(x.rMx.OPEN_POPOUT, {
+    b.default.track(S.rMx.OPEN_POPOUT, {
       type: "Inbox"
     })
   }, []), i.useEffect(() => (p.Z.subscribe("CONNECTION_OPEN", L), () => {
@@ -105,8 +105,8 @@ function P(e) {
         closePopout: L
       }), (0, r.jsx)(v.Z, {
         Icon: h.xx7,
-        header: S.intl.string(S.t["6XMM+P"]),
-        tip: (null == (Z = s().os) ? void 0 : Z.family) === "OS X" ? S.intl.string(S.t.w9uDOT) : S.intl.string(S.t.BiUJCw)
+        header: x.intl.string(x.t["6XMM+P"]),
+        tip: (null == (Z = s().os) ? void 0 : Z.family) === "OS X" ? x.intl.string(x.t.w9uDOT) : x.intl.string(x.t.BiUJCw)
       })]
     })
   }
@@ -114,7 +114,7 @@ function P(e) {
     className: o()(I.container, "group-spacing-".concat(z), {
       [I.widerInbox]: W
     }),
-    "aria-label": S.intl.string(S.t.sRUdBw),
+    "aria-label": x.intl.string(x.t.sRUdBw),
     children: [(0, r.jsx)(C.Z, {
       tab: d.X.UNREADS,
       setTab: T,
@@ -208,18 +208,18 @@ function N(e) {
       children: [(0, r.jsx)(h.X6q, {
         className: I.__invalid_tutorialHeader,
         variant: "heading-md/semibold",
-        children: S.intl.string(S.t.vZPktL)
+        children: x.intl.string(x.t.vZPktL)
       }), (0, r.jsx)(h.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
-        children: S.intl.string(S.t.vWkIIC)
+        children: x.intl.string(x.t.vWkIIC)
       }), (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": !0,
         className: I.tutorialButton,
         children: (0, r.jsx)(h.zxk, {
           variant: "primary",
           size: "sm",
-          text: S.intl.string(S.t["+IrDzM"]),
+          text: x.intl.string(x.t["+IrDzM"]),
           onClick: t
         })
       })]
@@ -243,8 +243,8 @@ function w(e) {
     }), (0, r.jsx)(v.Z, {
       Icon: h.xx7,
       disableStars: !0,
-      header: S.intl.string(S.t["KG/ynZ"]),
-      tip: S.intl.string(S.t.cvcKzc)
+      header: x.intl.string(x.t["KG/ynZ"]),
+      tip: x.intl.string(x.t.cvcKzc)
     })]
   })
 }

@@ -24,8 +24,8 @@ var r = n(255367),
   C = n(358221),
   j = n(706590),
   E = n(940777),
-  x = n(113544),
-  S = n(41776),
+  S = n(113544),
+  x = n(41776),
   I = n(821020),
   P = n(770858),
   N = n(905423),
@@ -201,7 +201,7 @@ class eu {
       null != e && this.setIsScrolledToBottom(e.isScrolledToBottom())
     }, 100), this.setNodeRef = (e, t) => {
       this.nodeRefs[e] = t
-    }, (0, x.zb)(this.getVisibleGuildIds)
+    }, (0, S.zb)(this.getVisibleGuildIds)
   }
 }
 
@@ -265,7 +265,7 @@ function ep(e) {
   } = e, [s] = (0, h.Wu)([M.ZP], () => {
     let e = M.ZP.getGuildsTree();
     return [e, e.version]
-  }), d = (0, h.e7)([S.Z], () => S.Z.lurkingGuildIds()), p = i.useMemo(() => n ? [] : d, [d, n]), b = (0, h.e7)([C.Z], () => C.Z.isFullscreenInContext()), [O, j] = i.useState(!1), E = i.useCallback(() => j(!0), []), x = i.useCallback(() => j(!1), []), R = i.useRef(!1), [D] = i.useState(() => new f.V7), L = i.useRef(null), V = i.useRef(null), F = (0, u.OP)(), {
+  }), d = (0, h.e7)([x.Z], () => x.Z.lurkingGuildIds()), p = i.useMemo(() => n ? [] : d, [d, n]), b = (0, h.e7)([C.Z], () => C.Z.isFullscreenInContext()), [O, j] = i.useState(!1), E = i.useCallback(() => j(!0), []), S = i.useCallback(() => j(!1), []), R = i.useRef(!1), [D] = i.useState(() => new f.V7), L = i.useRef(null), V = i.useRef(null), F = (0, u.OP)(), {
     ref: H
   } = F, z = ea(F, ["ref"]), K = (0, m.mFp)(), [Y, X] = i.useState(!1), $ = (0, m.dQu)(g.Z.modules.guildbar.AVATAR_SIZE), ee = (0, m.dQu)(g.Z.space.SPACE_XS), ei = i.useMemo(() => {
     let e = function(e, t) {
@@ -333,7 +333,7 @@ function ep(e) {
             draggable: !0,
             sorting: O,
             onDragStart: E,
-            onDragEnd: x,
+            onDragEnd: S,
             renderChildNode: e,
             "aria-setsize": i,
             "aria-posinset": void 0 !== n ? n + 1 : void 0
@@ -345,14 +345,14 @@ function ep(e) {
             draggable: !0,
             sorting: O,
             onDragStart: E,
-            onDragEnd: x,
+            onDragEnd: S,
             "aria-setsize": i,
             "aria-posinset": void 0 !== n ? n + 1 : void 0
           }, t.id);
         default:
           return null
       }
-    }, [E, x, O, ei.setNodeRef]),
+    }, [E, S, O, ei.setNodeRef]),
     {
       enabled: e_
     } = (0, w.WX)({
@@ -371,20 +371,20 @@ function ep(e) {
       onDiscoveryButtonClick: ej
     } = ey,
     eE = ea(ey, ["shouldShow", "questId", "onDiscoveryButtonClick"]),
-    ex = e_ && ev,
-    eS = (0, r.jsx)(W.Z, {
+    eS = e_ && ev,
+    ex = (0, r.jsx)(W.Z, {
       ref: eO,
-      questId: ex ? eC : void 0,
+      questId: eS ? eC : void 0,
       selected: eg,
       className: er.discoveryIcon,
-      onClick: ex ? ej : void 0
+      onClick: eS ? ej : void 0
     }),
-    eI = ex ? (0, r.jsx)(Z.MP, eo(el({
+    eI = eS ? (0, r.jsx)(Z.MP, eo(el({
       targetElementRef: eO,
       isGuildBarScrolling: Y
     }, eE), {
-      children: eS
-    })) : eS,
+      children: ex
+    })) : ex,
     {
       entrypoint: eP
     } = I.Lk.useExperiment({

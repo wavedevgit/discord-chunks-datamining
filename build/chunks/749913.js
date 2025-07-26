@@ -26,9 +26,9 @@ var r = n(255367),
   y = n(795639),
   O = n(957730),
   w = n(25015),
-  N = n(252032),
-  S = n(216572),
-  T = n(913663),
+  S = n(252032),
+  T = n(216572),
+  N = n(913663),
   P = n(268350),
   I = n(456077),
   E = n(488131),
@@ -44,8 +44,8 @@ var r = n(255367),
   B = n(127654),
   H = n(681154),
   U = n(883429),
-  G = n(945141),
-  V = n(456269),
+  V = n(945141),
+  G = n(456269),
   q = n(228392),
   W = n(259637),
   X = n(76451),
@@ -100,7 +100,7 @@ function es(e) {
     onChange: s,
     canCreatePost: o,
     inputRef: d
-  } = e, u = !(0, S.HL)(t) && o, {
+  } = e, u = !(0, T.HL)(t) && o, {
     textAreaState: m,
     formOpen: g,
     previewing: x
@@ -117,9 +117,9 @@ function es(e) {
     }
   }, c.X), [p, b] = i.useState(null), j = i.useContext(D.oo), v = i.useCallback(() => {
     j.bumpDispatchPriority()
-  }, [j]), C = (0, h.e7)([k.Z], () => k.Z.can(ee.Plq.ATTACH_FILES, t)), w = (0, h.Wu)([L.Z], () => L.Z.getUploads(t.id, Z.d.FirstThreadMessage)), N = g && C && u, I = (null == t ? void 0 : t.isMediaChannel()) === !0, M = function(e, t) {
+  }, [j]), C = (0, h.e7)([k.Z], () => k.Z.can(ee.Plq.ATTACH_FILES, t)), w = (0, h.Wu)([L.Z], () => L.Z.getUploads(t.id, Z.d.FirstThreadMessage)), S = g && C && u, I = (null == t ? void 0 : t.isMediaChannel()) === !0, M = function(e, t) {
     let n = (0, K.AF)(),
-      r = (0, V.ql)(e);
+      r = (0, G.ql)(e);
     return i.useCallback(() => {
       let {
         formOpen: i,
@@ -166,7 +166,7 @@ function es(e) {
       } = O.ZP.parse(e, t);
       if (t = s, null == r || 0 === r.length) {
         var o;
-        r = null == (o = T.Z.getStickerPreview(e.id, el.drafts.type)) ? void 0 : o.map(e => e.id)
+        r = null == (o = N.Z.getStickerPreview(e.id, el.drafts.type)) ? void 0 : o.map(e => e.id)
       }
       if ((null == i || 0 === i.length) && (i = L.Z.getUploads(e.id, Z.d.FirstThreadMessage)), null != i && i.length > 0 && e.isMediaChannel()) {
         let e = i.findIndex(e => !0 === e.isThumbnail);
@@ -196,7 +196,7 @@ function es(e) {
         setPreviewing: h,
         setFormOpenFromUserAction: g,
         setGuidelinesOpen: f
-      } = n.getState(), x = G.Z.hasSeen(e.id);
+      } = n.getState(), x = V.Z.hasSeen(e.id);
       if (!u) return (0, q.P_)({
         guildId: e.guild_id,
         channelId: e.id
@@ -231,7 +231,7 @@ function es(e) {
           shouldRefocus: !0
         };
         let n = await r(p, b, j);
-        return (0, E.ok)(n), U.Z.resort(e.id), (0, P.qB)(e.id, el.drafts.type), d(), m(!1), h(!1), G.Z.markAsSeen(e.id), f(!1), {
+        return (0, E.ok)(n), U.Z.resort(e.id), (0, P.qB)(e.id, el.drafts.type), d(), m(!1), h(!1), V.Z.markAsSeen(e.id), f(!1), {
           shouldClear: !0,
           shouldRefocus: !1
         }
@@ -281,14 +281,14 @@ function es(e) {
               submit: A,
               disabled: !u
             }), x && (0, r.jsx)(eh, {})]
-          }), N && (I ? (0, r.jsx)(y._, {
+          }), S && (I ? (0, r.jsx)(y._, {
             parentChannel: t
           }) : (0, r.jsx)(X.Z, {
             channelId: t.id
           }))]
         }), (0, r.jsxs)("div", {
           className: er.form,
-          children: [N && I && (0, r.jsx)(_.Z, {
+          children: [S && I && (0, r.jsx)(_.Z, {
             parentChannel: t
           }), g && (0, r.jsx)(ep, {
             className: er.horizontalPadding,
@@ -330,7 +330,7 @@ let eo = i.memo(function(e) {
         hasClickedForm: l,
         submitting: s
       }
-    }, c.X), m = (0, K.AF)(), h = (0, V.ql)(t), g = i.useCallback(() => {
+    }, c.X), m = (0, K.AF)(), h = (0, G.ql)(t), g = i.useCallback(() => {
       var e;
       m.getState().resetFormState(), x.Z.clearDraft(t.id, Z.d.ThreadSettings), x.Z.clearDraft(t.id, Z.d.FirstThreadMessage), p.Z.clearAll(t.id, Z.d.FirstThreadMessage), m.getState().setFormOpen(!1), m.getState().setBodyFocused(!1), m.getState().setTitleFocused(!1), m.getState().setHasClickedForm(!1), m.getState().setPreviewing(!1), null == (e = a.current) || e.blur(), (0, q.Oq)({
         guildId: t.guild_id,
@@ -397,7 +397,7 @@ let eo = i.memo(function(e) {
         hasClickedForm: l,
         submitting: s
       }
-    }, c.X), b = (0, K.AF)(), j = null != t.topic && 0 !== t.topic.length, v = G.Z.hasSeen(t.id), C = (0, V.ql)(t), _ = (0, h.e7)([F.default], () => F.default.getCurrentUser());
+    }, c.X), b = (0, K.AF)(), j = null != t.topic && 0 !== t.topic.length, v = V.Z.hasSeen(t.id), C = (0, G.ql)(t), _ = (0, h.e7)([F.default], () => F.default.getCurrentUser());
     o()(null != _, "current user cannot be null"), (0, D.yp)({
       event: ee.CkL.FOCUS_COMPOSER_TITLE,
       handler: () => {
@@ -525,7 +525,7 @@ let eu = i.memo(function(e) {
       allowHeading: !0,
       previewLinkTarget: !0,
       allowLinks: !0
-    }), s = (0, N.Z)({
+    }), s = (0, S.Z)({
       message: i,
       channel: t,
       compact: !1
@@ -787,7 +787,7 @@ function eb(e) {
     canCreatePost: n,
     disabled: i,
     disableIfInvalid: a = !1
-  } = e, l = (0, S.HL)(t), {
+  } = e, l = (0, T.HL)(t), {
     submitting: s,
     name: o,
     formOpen: d
@@ -862,7 +862,7 @@ function ev(e) {
   }), {
     containerRef: x,
     containerWidth: p
-  } = (0, Q.Z)(), b = i.useRef(null), j = i.useRef(null), [v, C] = i.useState(!0), _ = (0, V.Vm)(t), [y, O] = i.useState(0);
+  } = (0, Q.Z)(), b = i.useRef(null), j = i.useRef(null), [v, C] = i.useState(!0), _ = (0, G.Vm)(t), [y, O] = i.useState(0);
   return (i.useLayoutEffect(() => {
     var e;
     let t = b.current,

@@ -19,8 +19,8 @@ var n = r(255367),
   b = r(899766),
   m = r(258939),
   _ = r(81136),
-  C = r(953655),
-  O = r(548685),
+  O = r(953655),
+  C = r(548685),
   v = r(580914),
   E = r(963278),
   S = r(921120),
@@ -88,11 +88,11 @@ let L = e => {
         isLoading: L,
         handleTransition: r,
         tab: c
-      }), (0, n.jsx)(C.Z, {
+      }), (0, n.jsx)(O.Z, {
         isLoading: L,
         handleTransition: r,
         categories: []
-      }), (0, n.jsx)(O.Z, {
+      }), (0, n.jsx)(C.Z, {
         isLoading: L,
         handleTransition: r,
         numVisibleItems: i,
@@ -113,7 +113,7 @@ let L = e => {
           }, t);
           break;
         case a.z.FEATURED:
-          l = (0, n.jsx)(C.Z, {
+          l = (0, n.jsx)(O.Z, {
             isLoading: L,
             handleTransition: r,
             featuredBlockRecord: e
@@ -121,7 +121,7 @@ let L = e => {
           break;
         case a.z.FEED:
           let d = e.sortedSkuIds;
-          l = (0, n.jsx)(O.Z, {
+          l = (0, n.jsx)(C.Z, {
             isLoading: L || s,
             handleTransition: r,
             numVisibleItems: i,
@@ -172,20 +172,20 @@ let L = e => {
       transitionState: a
     } = e, f = l.useRef(null), {
       handleScroll: g
-    } = (0, c.z)(f, i), h = (0, p.R)("CollectiblesFeedShop"), b = (0, m.R)(), _ = (0, d.sp)(), [C, O] = l.useState(x.IV), [v, E] = l.useState(!1);
+    } = (0, c.z)(f, i), h = (0, p.R)("CollectiblesFeedShop"), b = (0, m.R)(), _ = (0, d.sp)(), [O, C] = l.useState(x.IV), [v, E] = l.useState(!1);
     return l.useEffect(() => {
       if (null != f.current) {
         let e = () => {
             if (null == f.current) return;
             let e = f.current.getDistanceFromBottom();
-            C >= h ? E(e < 20) : e <= 200 && O(e => e + x.IV)
+            O >= h ? E(e < 20) : e <= 200 && C(e => e + x.IV)
           },
           t = f.current.getScrollerNode();
         return null == t || t.addEventListener("scroll", e), () => {
           null == t || t.removeEventListener("scroll", e)
         }
       }
-    }, [f, C, h, O, E]), (0, n.jsx)(s.Den, {
+    }, [f, O, h, C, E]), (0, n.jsx)(s.Den, {
       className: P.shopScroll,
       ref: f,
       onScroll: g,
@@ -195,11 +195,11 @@ let L = e => {
           className: o()(P.content, P.mainContent),
           children: [(0, n.jsx)(L, {
             handleTransition: r,
-            numVisibleItems: C,
+            numVisibleItems: O,
             isFetchingCategories: b,
             tab: i,
             isFullScreen: t
-          }), i !== x.AW.CATALOG && C >= h && (0, n.jsxs)("div", {
+          }), i !== x.AW.CATALOG && O >= h && (0, n.jsxs)("div", {
             className: P.endOfFeed,
             children: [(0, n.jsx)(s.X6q, {
               variant: "heading-md/semibold",

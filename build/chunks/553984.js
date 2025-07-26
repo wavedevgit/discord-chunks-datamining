@@ -1,7 +1,7 @@
 /** Chunk was on 46922 **/
 n.d(t, {
   Z: () => j,
-  p: () => S
+  p: () => x
 }), n(539854), n(388685), n(361932), n(187205);
 var r = n(255367),
   i = n(73800),
@@ -113,7 +113,7 @@ function j() {
           children: e[t]
         })
       }, t))
-    }), (0, r.jsx)(x, {
+    }), (0, r.jsx)(S, {
       hiddenFilters: a
     })]
   })
@@ -130,73 +130,74 @@ function E(e) {
   })
 }
 
-function x(e) {
+function S(e) {
   let {
     hiddenFilters: t
-  } = e, n = (0, i.useRef)(null), [l, o] = (0, i.useState)(!1), [a, c] = (0, i.useState)(!1), d = g.by, {
-    selectedFilter: h,
-    setSelectedFilter: m
+  } = e, n = (0, p.fJ)(), l = (0, i.useRef)(null), [o, a] = (0, i.useState)(!1), [c, d] = (0, i.useState)(!1), h = g.by, {
+    selectedFilter: m,
+    setSelectedFilter: v
   } = (0, f.Z)();
   return 0 === t.length ? null : (0, r.jsx)(s.yRy, {
     position: "bottom",
     align: "left",
-    shouldShow: l,
-    targetElementRef: n,
-    onRequestClose: () => o(!1),
-    onRequestOpen: () => o(!0),
+    shouldShow: o,
+    targetElementRef: l,
+    onRequestClose: () => a(!1),
+    onRequestOpen: () => a(!0),
     renderPopout: e => {
       var {
-        closePopout: n
-      } = e, i = y(e, ["closePopout"]);
+        closePopout: i
+      } = e, l = y(e, ["closePopout"]);
       return (0, r.jsx)(s.v2r, O(_({
         onSelect: () => {},
         navId: "notifications-sidebar-filters",
         "aria-label": "Notifications Sidebar Filters"
-      }, i), {
-        onClose: () => n(),
+      }, l), {
+        onClose: () => i(),
         children: t.map(e => (0, r.jsx)(s.sNh, {
           id: e,
           action: () => {
-            m(h === e ? g.V5.ALL : e), (0, p.RZ)({
+            v(m === e ? g.V5.ALL : e), (0, p.RZ)({
               section: e,
-              enabled: !0
+              enabled: !0,
+              viewId: n
             })
           },
-          label: d[e],
+          label: h[e],
           dontCloseOnAction: !0,
           className: b.filterMenuItem,
-          icon: e === h ? (0, r.jsx)(I, {}) : void 0
+          icon: e === m ? (0, r.jsx)(I, {}) : void 0
         }, e))
       }))
     },
     children: e => (0, r.jsx)(s.P3F, O(_({}, e), {
       className: b.filterButton,
-      innerRef: n,
-      onMouseEnter: () => c(!0),
-      onMouseLeave: () => c(!1),
+      innerRef: l,
+      onMouseEnter: () => d(!0),
+      onMouseLeave: () => d(!1),
       children: (0, r.jsx)(s.xhG, {
         className: b.moreButtonIcon,
         size: "xxs",
-        color: a || l ? u.Z.INTERACTIVE_HOVER : u.Z.INTERACTIVE_NORMAL
+        color: c || o ? u.Z.INTERACTIVE_HOVER : u.Z.INTERACTIVE_NORMAL
       })
     }))
   })
 }
 
-function S(e) {
+function x(e) {
   let {
     className: t
-  } = e, n = v(), l = (0, i.useRef)(null), [a, c] = (0, i.useState)(!1), [d, h] = (0, i.useState)(!1), C = g.by, {
-    selectedFilter: j,
-    setSelectedFilter: E
+  } = e, n = (0, p.fJ)(), l = v(), a = (0, i.useRef)(null), [c, d] = (0, i.useState)(!1), [h, C] = (0, i.useState)(!1), j = g.by, {
+    selectedFilter: E,
+    setSelectedFilter: S
   } = (0, f.Z)();
-  return 0 === n.length ? null : (0, r.jsx)(s.yRy, {
+  return 0 === l.length ? null : (0, r.jsx)(s.yRy, {
     position: "bottom",
     align: "left",
-    shouldShow: a,
-    targetElementRef: l,
-    onRequestClose: () => c(!1),
-    onRequestOpen: () => c(!0),
+    shouldShow: c,
+    targetElementRef: a,
+    onRequestClose: () => d(!1),
+    onRequestOpen: () => d(!0),
     autoInvert: !1,
     renderPopout: e => {
       var {
@@ -208,42 +209,43 @@ function S(e) {
         "aria-label": "Notifications Sidebar Filters"
       }, i), {
         onClose: () => t(),
-        children: n.map(e => (0, r.jsx)(s.sNh, {
+        children: l.map(e => (0, r.jsx)(s.sNh, {
           id: e,
           action: () => {
-            E(j === e ? g.V5.ALL : e), (0, p.RZ)({
+            S(E === e ? g.V5.ALL : e), (0, p.RZ)({
               section: e,
-              enabled: !0
+              enabled: E !== e,
+              viewId: n
             })
           },
-          label: C[e],
+          label: j[e],
           dontCloseOnAction: !0,
           className: b.filterMenuItem,
-          icon: e === j ? (0, r.jsx)(I, {}) : void 0
+          icon: e === E ? (0, r.jsx)(I, {}) : void 0
         }, e))
       }))
     },
     children: e => (0, r.jsx)(s.ua7, {
       position: "bottom",
-      forceOpen: d,
-      shouldShow: d && !a,
+      forceOpen: h,
+      shouldShow: h && !c,
       text: m.intl.string(m.t.UdhTtr),
       children: () => (0, r.jsx)(s.P3F, O(_({}, e), {
         className: o()(t, b.headerButton),
-        innerRef: l,
+        innerRef: a,
         onClick: t => {
           e.onClick(t)
         },
         onMouseEnter: () => {
           var t;
-          h(!0), null == (t = e.onMouseEnter) || t.call(e)
+          C(!0), null == (t = e.onMouseEnter) || t.call(e)
         },
         onMouseLeave: () => {
-          h(!1)
+          C(!1)
         },
         children: (0, r.jsx)(s.gXV, {
           size: "xs",
-          color: d || a ? u.Z.INTERACTIVE_HOVER : u.Z.INTERACTIVE_NORMAL
+          color: h || c ? u.Z.INTERACTIVE_HOVER : u.Z.INTERACTIVE_NORMAL
         })
       }))
     })

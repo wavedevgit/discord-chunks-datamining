@@ -29,7 +29,7 @@ var r = n(255367),
   j = n(388032),
   E = n(585523);
 
-function x(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,7 +48,7 @@ function x(e) {
   return e
 }
 
-function S(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -89,7 +89,7 @@ let P = i.memo(function(e) {
             let {
               default: e
             } = await Promise.all([n.e("8965"), n.e("14280")]).then(n.bind(n, 139035));
-            return n => (0, r.jsx)(e, S(x({}, n), {
+            return n => (0, r.jsx)(e, x(S({}, n), {
               channel: l,
               guild: t
             }))
@@ -103,7 +103,7 @@ let P = i.memo(function(e) {
           let {
             default: i
           } = await Promise.all([n.e("45094"), n.e("45822")]).then(n.bind(n, 218613));
-          return n => (0, r.jsx)(i, S(x({}, n), {
+          return n => (0, r.jsx)(i, x(S({}, n), {
             channelType: e,
             guildId: t,
             categoryId: "null" !== l.id ? l.id : null
@@ -150,7 +150,7 @@ let P = i.memo(function(e) {
               [E.clickable]: !0
             }),
             onContextMenu: L,
-            children: [(0, r.jsxs)(u.P3F, S(x({
+            children: [(0, r.jsxs)(u.P3F, x(S({
               innerRef: V,
               className: E.mainContent,
               tabIndex: G

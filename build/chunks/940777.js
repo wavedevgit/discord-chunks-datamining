@@ -24,8 +24,8 @@ var r = n(255367),
   C = n(979651),
   j = n(709054),
   E = n(853856),
-  x = n(593214),
-  S = n(919755),
+  S = n(593214),
+  x = n(919755),
   I = n(110977),
   P = n(603274),
   N = n(981631),
@@ -64,7 +64,7 @@ function R() {
     {
       favoriteAdded: R,
       clearFavoriteAdded: D
-    } = (0, x.up)(),
+    } = (0, S.up)(),
     [L, M] = i.useState(!1),
     {
       favoriteServerMuted: k,
@@ -79,7 +79,7 @@ function R() {
     {
       badge: F,
       unread: H
-    } = (0, S.Z)(U),
+    } = (0, x.Z)(U),
     z = function(e) {
       let t = (0, s.e7)([v.Z], () => v.Z.getVoiceChannelId()),
         n = null != t && null != e[t],

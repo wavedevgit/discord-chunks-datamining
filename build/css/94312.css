@@ -1,6 +1,6 @@
 /**
   Module ID: 94312
-  Original File Name: 288c6b6a607d5350
+  Original File Name: 1b0c8332785d1a8f
 **/
 .editCard_a25a68 {
     background-color: var(--background-surface-high);
@@ -12019,6 +12019,120 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     margin-top: 8px
 }
 
+.lockedPickerItem_ba8b8d {
+    position: relative
+}
+
+.lockedPickerItem_ba8b8d .guildBadge_ba8b8d {
+    opacity: .2
+}
+
+.lockedPickerItem_ba8b8d:hover:not(.previewBadge_ba8b8d) .guildBadge_ba8b8d {
+    opacity: .08
+}
+
+.lockIconOverlay_ba8b8d {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    opacity: 0;
+    padding: var(--space-4);
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%)
+}
+
+.lockedPickerItem_ba8b8d:hover .lockIconOverlay_ba8b8d {
+    opacity: 1
+}
+
+.lockedPreviewContainer_ba8b8d {
+    margin-top: var(--space-8);
+    overflow: hidden;
+    position: relative
+}
+
+.lockedPreviewContainer_ba8b8d:after {
+    background: linear-gradient(to bottom,transparent 10%,var(--background-base-low) 90%);
+    bottom: 0;
+    content: "";
+    height: var(--space-96);
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    z-index: 0
+}
+
+.lockedPreviewContainer_ba8b8d .pickerGrid_ba8b8d {
+    pointer-events: none
+}
+
+.showAllBadges_ba8b8d {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    gap: var(--space-4);
+    justify-content: center;
+    width: 100%
+}
+
+.showAllBadgesOverlay_ba8b8d {
+    bottom: var(--space-24);
+    left: 0;
+    margin-top: 0;
+    position: absolute;
+    right: 0;
+    z-index: 2
+}
+
+.hideAllBadges_ba8b8d {
+    align-items: center;
+    cursor: pointer;
+    justify-content: center
+}
+
+.badgesUpsellContainer_ba8b8d,.hideAllBadges_ba8b8d {
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-4);
+    margin-top: var(--space-8)
+}
+
+.badgesUpsellContainer_ba8b8d {
+    align-items: flex-start;
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-sm);
+    padding: var(--space-12)
+}
+
+.badgesUpsellText_ba8b8d {
+    flex: 1;
+    min-width: 0
+}
+
+.badgesUpsellButton_ba8b8d {
+    flex-shrink: 0
+}
+
+.lockedPreviewContainer_ba8b8d .lockedPickerItem_ba8b8d:hover .guildBadge_ba8b8d {
+    opacity: .06
+}
+
+.previewBadge_ba8b8d .lockIconOverlay_ba8b8d {
+    display: none
+}
+
+.lockedPreviewContainer_ba8b8d .previewBadge_ba8b8d:hover:not(.pickerItemSelected_ba8b8d) {
+    border-color: var(--border-subtle)
+}
+
+.lockedPreviewContainer_ba8b8d .previewBadge_ba8b8d .guildBadge_ba8b8d {
+    opacity: .08
+}
+
 .spinnerContainer__69ef9 {
     align-items: center;
     display: flex;
@@ -12142,11 +12256,6 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 
 .pickerItem__69ef9:hover:not(.pickerItemSelected__69ef9) {
     border-color: var(--border-strong)
-}
-
-.lockedPickerItem__69ef9 {
-    cursor: not-allowed;
-    opacity: .3
 }
 
 .pickerItemSelected__69ef9 {
@@ -12280,4 +12389,4 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     width: 8px
 }
 
-/*# sourceMappingURL=288c6b6a607d5350.css.map*/
+/*# sourceMappingURL=1b0c8332785d1a8f.css.map*/

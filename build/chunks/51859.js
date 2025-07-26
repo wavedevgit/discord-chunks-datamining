@@ -1,12 +1,12 @@
 /** Chunk was on 44799 **/
 n.d(t, {
-  Z: () => b
+  Z: () => g
 }), n(388685), n(953529);
 var r = n(255367),
   o = n(73800),
   i = n(831209),
-  s = n(494497),
-  l = n(793030),
+  l = n(494497),
+  s = n(793030),
   a = n(481060),
   c = n(158638),
   u = n(973772),
@@ -17,35 +17,35 @@ var r = n(255367),
   _ = n(279475),
   x = n(535396),
   v = n(388032),
-  g = n(117172);
+  b = n(117172);
 
-function b(e) {
+function g(e) {
   let {
     guildId: t,
     powerup: n
-  } = e, [b, j] = o.useState(void 0);
-  (0, f.KT)(b);
-  let [E, h] = o.useState(!1), C = (0, u.Z)(t, n).type !== x.A3.INACTIVE, I = (0, _.d)(C), N = (0, c.g1)(t, "GuildPowerupPerkCard"), Z = n.skuId === s.A$;
+  } = e, [g, j] = o.useState(void 0);
+  (0, f.KT)(g);
+  let [E, h] = o.useState(!1), C = (0, u.Z)(t, n).type !== x.A3.INACTIVE, I = (0, _.d)(C), N = (0, c.g1)(t, "GuildPowerupPerkCard"), O = n.skuId === l.A$;
   return (0, r.jsxs)(d.Z, {
     onHover: e => h(e),
     guildId: t,
     powerup: n,
     children: [(0, r.jsx)(m.m, {
-      className: g.image,
+      className: b.image,
       powerup: n,
       isHovering: E
     }), (0, r.jsxs)("div", {
-      className: g.contentContainer,
+      className: b.contentContainer,
       children: [(0, r.jsxs)("div", {
         children: [(0, r.jsx)("div", {
-          className: g.headerContainer,
-          children: (0, r.jsx)(l.X6, {
+          className: b.headerContainer,
+          children: (0, r.jsx)(s.X6, {
             color: I,
             variant: "heading-md/bold",
             children: n.title
           })
-        }), (0, r.jsx)(l.xv, {
-          className: g.description,
+        }), (0, r.jsx)(s.xv, {
+          className: b.description,
           color: I,
           variant: "text-sm/medium",
           children: n.description
@@ -55,17 +55,17 @@ function b(e) {
         powerup: n
       })]
     }), (0, r.jsx)("div", {
-      className: g.buttonContainer,
+      className: b.buttonContainer,
       children: (0, r.jsx)(p.ZP, {
         guildId: t,
         powerup: n,
         onError: j
       })
-    }), !Z && !N && (0, r.jsx)(a.IGR, {
-      className: g.new,
+    }), !O && !N && (0, r.jsx)(a.IGR, {
+      className: b.new,
       text: v.intl.string(v.t.y2b7CA)
-    }), Z && N && (0, r.jsx)(a.IGR, {
-      className: g.new,
+    }), O && N && (0, r.jsx)(a.IGR, {
+      className: b.new,
       text: v.intl.string(v.t.oW0eUV),
       color: i.Z.BG_BRAND
     })]

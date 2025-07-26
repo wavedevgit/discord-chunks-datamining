@@ -24,8 +24,8 @@ var r = n(255367),
   C = n(430824),
   j = n(496675),
   E = n(306680),
-  x = n(9156),
-  S = n(594174),
+  S = n(9156),
+  x = n(594174),
   I = n(109446),
   P = n(98597),
   N = n(648501),
@@ -106,10 +106,10 @@ class k extends P.ZP {
       embeddedApps: C,
       resolvedUnreadSetting: j,
       withGuildIcon: E,
-      enableActivities: x
-    } = this.props, S = (0, _.jW)({
+      enableActivities: S
+    } = this.props, x = (0, _.jW)({
       location: "text_channel"
-    }).entrypoints, I = x && null != C && C.length > 0, P = (0, m.D)(y), N = (0, r.jsx)("li", {
+    }).entrypoints, I = S && null != C && C.length > 0, P = (0, m.D)(y), N = (0, r.jsx)("li", {
       className: o()(this.getClassName(), {
         [R.disabled]: this.isDisabled(),
         [R.selected]: n
@@ -152,9 +152,9 @@ class k extends P.ZP {
           children: [O && (0, r.jsxs)(r.Fragment, {
             children: [this.renderAcceptSuggestionButton(), this.renderRemoveSuggestionButton()]
           }), !O && (0, r.jsxs)(r.Fragment, {
-            children: [this.renderChannelInfo(), S && this.renderOptionsButton({
+            children: [this.renderChannelInfo(), x && this.renderOptionsButton({
               onContextMenu: this.handleContextMenu
-            }), !S && (0, r.jsxs)(r.Fragment, {
+            }), !x && (0, r.jsxs)(r.Fragment, {
               children: [this.renderInviteButton(), this.renderEditButton()]
             })]
           })]
@@ -227,7 +227,7 @@ class k extends P.ZP {
         }))
       });
       if (t.type === T.d4z.DM) {
-        let i = S.default.getUser(t.getRecipientId());
+        let i = x.default.getUser(t.getRecipientId());
         null != i && (0, u.jW)(e, async () => {
           let {
             default: e
@@ -278,7 +278,7 @@ function G(e) {
     unread: E.ZP.hasUnread(t.id),
     ackMessageId: E.ZP.ackMessageId(t.id),
     isLowImportanceMention: E.ZP.getIsMentionLowImportance(t.id)
-  })), g = (0, a.e7)([x.ZP], () => x.ZP.resolveUnreadSetting(t)), m = (0, a.cj)([v.Z, j.Z], () => {
+  })), g = (0, a.e7)([S.ZP], () => S.ZP.resolveUnreadSetting(t)), m = (0, a.cj)([v.Z, j.Z], () => {
     let e = v.Z.getChannel(t.parent_id);
     return {
       canManageChannel: j.Z.can(T.Plq.MANAGE_CHANNELS, t),
@@ -287,8 +287,8 @@ function G(e) {
   }), _ = (0, a.e7)([O.Z], () => O.Z.shouldIndicateNewChannel(n.id, t.id)), {
     needSubscriptionToAccess: C,
     isSubscriptionGated: I
-  } = (0, b.Z)(t.id), P = (0, a.e7)([x.ZP], () => x.ZP.isFavorite(n.id, t.id)), w = (0, a.e7)([S.default], () => {
-    let e = S.default.getCurrentUser();
+  } = (0, b.Z)(t.id), P = (0, a.e7)([S.ZP], () => S.ZP.isFavorite(n.id, t.id)), w = (0, a.e7)([x.default], () => {
+    let e = x.default.getCurrentUser();
     return null != e && (!(0, f.aC)(t) || e.nsfwAllowed)
   }, [t]), Z = (0, h.NX)(t.id), R = (0, N.Z)({
     channel: t,

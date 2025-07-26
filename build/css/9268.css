@@ -1,6 +1,6 @@
 /**
   Module ID: 9268
-  Original File Name: b619ee58351257ed
+  Original File Name: b550f8e1c221424d
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -1511,6 +1511,11 @@ h1.title_feb59c,h2.title_feb59c {
 
 .headerEmpty__4dd8e .closeContainer__4dd8e {
     top: 13px
+}
+
+.headerImage__4dd8e,.headerImageEmpty__4dd8e {
+    border-top-left-radius: var(--radius-md);
+    border-top-right-radius: var(--radius-md)
 }
 
 .headerImage__4dd8e {
@@ -19929,4 +19934,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=b619ee58351257ed.css.map*/
+/*# sourceMappingURL=b550f8e1c221424d.css.map*/

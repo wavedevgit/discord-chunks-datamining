@@ -19,8 +19,8 @@ var n = r(255367),
   b = r(238359),
   m = r(511050),
   _ = r(819640),
-  C = r(594174),
-  O = r(381585),
+  O = r(594174),
+  C = r(381585),
   v = r(597688),
   E = r(780475),
   S = r(223143),
@@ -57,7 +57,7 @@ let R = e => {
     } = e;
     (0, h.z)(g.f);
     let i = (0, p.Z)((0, a.Z)()),
-      c = (0, s.e7)([C.default], () => C.default.getCurrentUser()),
+      c = (0, s.e7)([O.default], () => O.default.getCurrentUser()),
       {
         closeIntroToOrbsClaimedCoachmark: w
       } = (0, m.Z)({
@@ -128,7 +128,7 @@ let R = e => {
     } = (0, E.MV)(X);
     return el && !t ? null : (0, n.jsx)(f.Gt, {
       value: ei,
-      children: (0, n.jsx)(O.k0, {
+      children: (0, n.jsx)(C.k0, {
         newValue: {
           sessionId: i,
           pageCategory: G,

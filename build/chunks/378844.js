@@ -48,13 +48,13 @@ let y = e => {
     notEmailVerified: C,
     notPhoneVerified: j,
     newAccount: E,
-    newMember: x
-  } = (0, l.e7)([h.Z], () => h.Z.getCheck(r), [r]), S = 0 === t ? m.intl.string(m.t["6zY8BA"]) : null, I = null, P = null;
-  return (0 === t && (v ? (I = m.intl.string(m.t.IRxUlJ), P = m.intl.string(m.t.fiNVio)) : j ? (I = m.intl.string(m.t.vW8iUF), P = m.intl.string(m.t["50gfOj"])) : C ? (I = m.intl.string(m.t.vdSOp6), P = m.intl.string(m.t.lm1UKi)) : x ? (I = m.intl.formatToPlainString(m.t.v1ktYW, {
+    newMember: S
+  } = (0, l.e7)([h.Z], () => h.Z.getCheck(r), [r]), x = 0 === t ? m.intl.string(m.t["6zY8BA"]) : null, I = null, P = null;
+  return (0 === t && (v ? (I = m.intl.string(m.t.IRxUlJ), P = m.intl.string(m.t.fiNVio)) : j ? (I = m.intl.string(m.t.vW8iUF), P = m.intl.string(m.t["50gfOj"])) : C ? (I = m.intl.string(m.t.vdSOp6), P = m.intl.string(m.t.lm1UKi)) : S ? (I = m.intl.formatToPlainString(m.t.v1ktYW, {
     min: f.YeM.MEMBER_AGE
   }), P = m.intl.string(m.t.BddRzc)) : E && (I = m.intl.formatToPlainString(m.t["sncw4+"], {
     min: f.YeM.ACCOUNT_AGE
-  }), P = m.intl.string(m.t.BddRzc))), null == S || null == I) ? null : (0, i.jsxs)(a.VqE, {
+  }), P = m.intl.string(m.t.BddRzc))), null == x || null == I) ? null : (0, i.jsxs)(a.VqE, {
     className: b.container,
     "aria-labelledby": y,
     children: [(0, i.jsx)("img", {
@@ -66,7 +66,7 @@ let y = e => {
       children: [(0, i.jsx)(a.X6q, {
         variant: "heading-md/semibold",
         id: y,
-        children: S
+        children: x
       }), (0, i.jsx)(a.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",

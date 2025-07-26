@@ -21,12 +21,12 @@ var n = r(73800),
   b = r(956472),
   m = r(981631);
 let _ = "".concat("#").concat("itemSkuId", "="),
-  C = new RegExp("^".concat(_, "(\\d+)$")),
-  O = [m.Z5c.COLLECTIBLES_SHOP, m.Z5c.COLLECTIBLES_SHOP_FULLSCREEN],
+  O = new RegExp("^".concat(_, "(\\d+)$")),
+  C = [m.Z5c.COLLECTIBLES_SHOP, m.Z5c.COLLECTIBLES_SHOP_FULLSCREEN],
   v = e => {
     let t = (0, l.TH)();
     n.useEffect(() => {
-      if (null != e && O.includes(t.pathname)) return () => {
+      if (null != e && C.includes(t.pathname)) return () => {
         window.location.hash.startsWith(_) && window.location.replace("#")
       }
     }, [e, t.pathname])
@@ -74,7 +74,7 @@ let _ = "".concat("#").concat("itemSkuId", "="),
       g = (0, f.Z)();
     n.useEffect(() => {
       if (e) return;
-      let t = C.exec(o.hash);
+      let t = O.exec(o.hash);
       null != t ? r.current = t[1] : r.current = null
     }, [g, e, o.hash]);
     let b = (0, i.e7)([d.Z], () => d.Z.initialProductSkuId);

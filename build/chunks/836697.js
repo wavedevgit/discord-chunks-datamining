@@ -106,7 +106,7 @@ function O(e) {
 function y(e) {
   let {
     onActivate: t
-  } = e, [n, y] = i.useState(!1), v = (0, l.e7)([d.Z], () => d.Z.getGuildId()), C = (0, l.e7)([u.Z], () => u.Z.hasFetchedRequestToJoinGuilds), j = (0, f.Z)(), E = (0, a.Z)(v), x = i.useMemo(() => {
+  } = e, [n, y] = i.useState(!1), v = (0, l.e7)([d.Z], () => d.Z.getGuildId()), C = (0, l.e7)([u.Z], () => u.Z.hasFetchedRequestToJoinGuilds), j = (0, f.Z)(), E = (0, a.Z)(v), S = i.useMemo(() => {
     let e = (0, p.qQ)({
       folderId: h.S.PENDING_JOIN_REQUESTS_FOLDER,
       folderName: b.intl.string(b.t["scsU+v"]),
@@ -119,15 +119,15 @@ function y(e) {
   i.useEffect(() => {
     n && !C && s.Z.fetchRequestToJoinGuilds()
   }, [n, C]);
-  let S = null != v && j.includes(v);
+  let x = null != v && j.includes(v);
   return (i.useEffect(() => {
-    !n && S && E !== v && y(!0)
-  }, [n, S, E, v]), 0 === j.length) ? null : (0, r.jsx)(O, {
+    !n && x && E !== v && y(!0)
+  }, [n, x, E, v]), 0 === j.length) ? null : (0, r.jsx)(O, {
     onActivate: t,
     children: (0, r.jsx)(g.Z, {
-      folderNode: x,
+      folderNode: S,
       expanded: n,
-      selected: S,
+      selected: x,
       draggable: !1,
       sorting: !1,
       onExpandCollapse: () => {

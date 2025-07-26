@@ -56,7 +56,7 @@ let C = {
     } = e, j = (0, m.ZP)(t), E = i.useCallback(() => {
       var e;
       (0, h.jd)(t), (0, f.Z)(t, c.Z.GUILD_POWERUPS_CHANNEL_LIST_ROW), null == j || null == (e = j.popout) || e.markAsDismissed(b.L.INDIRECT_ACTION)
-    }, [t, j]), x = i.useCallback(() => {
+    }, [t, j]), S = i.useCallback(() => {
       var e;
       switch (null == j || null == (e = j.popout) ? void 0 : e.type) {
         case p.J.LEVEL_REACHED:
@@ -78,7 +78,7 @@ let C = {
         default:
           return (0, r.jsx)("div", {})
       }
-    }, [t, null == j ? void 0 : j.popout]), S = (0, s.s9z)(s.JQI), I = (0, a.e7)([d.Z], () => d.Z.hasLayers()), [P, N] = i.useState(null), w = null == P ? "animation" : "LOOP";
+    }, [t, null == j ? void 0 : j.popout]), x = (0, s.s9z)(s.JQI), I = (0, a.e7)([d.Z], () => d.Z.hasLayers()), [P, N] = i.useState(null), w = null == P ? "animation" : "LOOP";
     i.useEffect(() => {
       (null == j ? void 0 : j.popout) == null && N(null)
     }, [null == j ? void 0 : j.popout]);
@@ -88,11 +88,11 @@ let C = {
       T = i.useRef(null);
     return (0, r.jsx)(s.yRy, {
       targetElementRef: T,
-      shouldShow: (null == j ? void 0 : j.popout) != null && !(S || I),
+      shouldShow: (null == j ? void 0 : j.popout) != null && !(x || I),
       nudgeAlignIntoViewport: !0,
       animationPosition: "bottom",
       position: "right",
-      renderPopout: x,
+      renderPopout: S,
       children: e => {
         var i, a;
         return (0, r.jsx)(u.m, (i = v({}, e), a = a = {

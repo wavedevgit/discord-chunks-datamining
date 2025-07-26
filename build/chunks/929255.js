@@ -19,8 +19,8 @@ var n = r(255367),
   b = r(841875),
   m = r(312030),
   _ = r(795343),
-  C = r(763891),
-  O = r(215023),
+  O = r(763891),
+  C = r(215023),
   v = r(388032),
   E = r(95368);
 
@@ -40,13 +40,13 @@ function S(e) {
     } = (0, s.z)(h, r),
     {
       setCategoryRef: _,
-      handleScrollToCategory: C
+      handleScrollToCategory: O
     } = (0, g.xV)(h.current),
-    [O, v] = l.useState(f),
+    [C, v] = l.useState(f),
     [S, x] = l.useState(!1);
   return l.useEffect(() => {
-    null != c && C(c)
-  }, [c, C]), l.useEffect(() => () => {
+    null != c && O(c)
+  }, [c, O]), l.useEffect(() => () => {
     null != p && p()
   }, []), l.useEffect(() => {
     let e = () => {
@@ -70,16 +70,16 @@ function S(e) {
         children: (0, n.jsx)(y, {
           isFullScreen: t,
           isSmallScreen: S,
-          filterBarOpen: O,
+          filterBarOpen: C,
           setFilterBarOpen: v,
           tab: r,
           scrollerRef: h,
           sortedCategories: i,
           setCategoryRef: _
         })
-      }), O && !S && (0, n.jsx)("div", {
+      }), C && !S && (0, n.jsx)("div", {
         className: E.divider
-      }), O && !S && (0, n.jsx)(a.Ttm, {
+      }), C && !S && (0, n.jsx)(a.Ttm, {
         className: E.filterBar,
         children: (0, n.jsx)(b.Z, {})
       })]
@@ -154,7 +154,7 @@ let y = e => {
         isFullScreen: t,
         scrollerRef: S,
         tab: g
-      }, g) : (0, O.RE)(g) ? (0, n.jsx)(C.Z, {
+      }, g) : (0, C.RE)(g) ? (0, n.jsx)(O.Z, {
         isFullScreen: t,
         scrollerRef: S,
         tab: g

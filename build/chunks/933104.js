@@ -1,8 +1,8 @@
 /** Chunk was on 46922 **/
 n.d(t, {
-  $h: () => S,
+  $h: () => x,
   cO: () => P,
-  jG: () => x,
+  jG: () => S,
   yI: () => I
 });
 var r = n(255367);
@@ -29,7 +29,7 @@ var i = n(120356),
   j = n(928381),
   E = n(225375);
 
-function x(e) {
+function S(e) {
   let {
     guildId: t,
     powerup: n,
@@ -51,7 +51,7 @@ function x(e) {
   })
 }
 
-function S(e) {
+function x(e) {
   let {
     guildId: t,
     markAsDismissed: n

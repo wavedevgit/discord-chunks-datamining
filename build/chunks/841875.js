@@ -38,7 +38,7 @@ function _() {
         variant: "text-md/semibold",
         className: m.filterTitle,
         children: b.intl.string(b.t.Qk6r1d)
-      }), g.xg.map(e => (0, n.jsx)(C, {
+      }), g.xg.map(e => (0, n.jsx)(O, {
         filter: e
       }, e)), a && (0, n.jsx)(u.XZJ, {
         value: t,
@@ -48,7 +48,7 @@ function _() {
           children: b.intl.string(b.t.AHHHgI)
         })
       })]
-    }), (0, n.jsx)(O, {}), (0, n.jsx)(S, {}), i && (0, n.jsx)(u.zxk, {
+    }), (0, n.jsx)(C, {}), (0, n.jsx)(S, {}), i && (0, n.jsx)(u.zxk, {
       variant: "secondary",
       onClick: r,
       text: b.intl.string(b.t.jwH6KS),
@@ -56,7 +56,7 @@ function _() {
     })]
   })
 }
-let C = e => {
+let O = e => {
     var t;
     let {
       filter: r
@@ -78,7 +78,7 @@ let C = e => {
       })
     })
   },
-  O = () => {
+  C = () => {
     let e = l.useMemo(() => [{
         color: "#9B59B6",
         label: b.intl.string(b.t.kqUD4O),

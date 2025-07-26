@@ -24,8 +24,8 @@ var r = n(255367),
   C = n(771845),
   j = n(727258),
   E = n(276952),
-  x = n(249792),
-  S = n(40153),
+  S = n(249792),
+  x = n(40153),
   I = n(593618),
   P = n(252686),
   N = n(682662),
@@ -155,10 +155,10 @@ let k = i.memo(function(e) {
       null != e && p.Z.preload(H.id, e)
     }, [F, H, q, et]),
     eE = (0, u.e7)([v.ZP], () => v.ZP.isCurrentUserGuest(eo)),
-    ex = i.useCallback(e => {
+    eS = i.useCallback(e => {
       null == H || eE || J(e, H)
     }, [H, J, eE]),
-    eS = i.useCallback(e => {
+    ex = i.useCallback(e => {
       if ("ArrowLeft" === e.key && null != ea) {
         var t;
         null == (t = document.querySelector("[aria-owns=folder-items-".concat(ea, "]"))) || t.focus()
@@ -173,7 +173,7 @@ let k = i.memo(function(e) {
     }, [eo, G]),
     eN = (0, h.dQu)(h.TVs.modules.guildbar.AVATAR_SIZE);
   if (null == H) return null;
-  let ew = eO || eb ? (0, r.jsx)(x.Z, {
+  let ew = eO || eb ? (0, r.jsx)(S.Z, {
       guild: H,
       show: eO,
       active: W,
@@ -197,8 +197,8 @@ let k = i.memo(function(e) {
         ee || eg(!1)
       },
       onMouseDown: ej,
-      onContextMenu: ex,
-      onKeyDown: eS,
+      onContextMenu: eS,
+      onKeyDown: ex,
       icon: (0, y.EB)(H, 2 * eN, em && z, !0),
       selected: W || em
     }, ep), {
@@ -206,7 +206,7 @@ let k = i.memo(function(e) {
       "aria-posinset": el,
       "aria-selected": W
     })),
-    eZ = ed ? (0, r.jsx)(S.OG, {
+    eZ = ed ? (0, r.jsx)(x.OG, {
       children: (0, r.jsx)(P.Z, {})
     }) : (0, r.jsx)(s.animated.div, {
       ref: $ ? e => {
@@ -242,7 +242,7 @@ let k = i.memo(function(e) {
       disabled: ee,
       isDragging: ed,
       children: eZ
-    }), $ ? (0, r.jsx)(S.ZP, {
+    }), $ ? (0, r.jsx)(x.ZP, {
       name: H.name,
       targetNode: U,
       onDragOverChanged: eI

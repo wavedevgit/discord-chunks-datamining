@@ -1,6 +1,6 @@
 /** Chunk was on 46922 **/
 n.d(t, {
-  k: () => x
+  k: () => S
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -25,12 +25,12 @@ var r = n(255367),
   j = n(981631),
   E = n(388032);
 
-function x(e) {
+function S(e) {
   let {
     onOpen: t,
     onClose: n,
-    children: x,
-    badgeState: S,
+    children: S,
+    badgeState: x,
     popoutPosition: I,
     popoutAlign: P,
     targetElementRef: N,
@@ -101,20 +101,20 @@ function x(e) {
           className: Z,
           children: D === a.X.FOR_YOU ? (0, r.jsx)(_.Z, {
             setTab: L,
-            badgeState: S,
+            badgeState: x,
             closePopout: U
           }) : D === a.X.MENTIONS ? (0, r.jsx)(O.Z, {
             setTab: L,
             onJump: z,
-            badgeState: S,
+            badgeState: x,
             closePopout: U
           }) : H && D === a.X.GAME_INVITES ? (0, r.jsx)(C.Z, {
             setTab: L,
-            badgeState: S,
+            badgeState: x,
             closePopout: U
           }) : B && V && D === a.X.BOOKMARKS ? (0, r.jsx)(b.Z, {
             setTab: L,
-            badgeState: S,
+            badgeState: x,
             closePopout: U
           }) : D === a.X.SCHEDULED ? (0, r.jsx)(y._, {
             setTab: L,
@@ -123,7 +123,7 @@ function x(e) {
             fallback: (0, r.jsx)(v.h, {
               setTab: L,
               closePopout: U,
-              badgeState: S
+              badgeState: x
             }),
             children: (0, r.jsx)(v.Z, {
               setTab: L,
@@ -131,7 +131,7 @@ function x(e) {
               showTutorial: M,
               setSeenTutorial: k,
               closePopout: U,
-              badgeState: S
+              badgeState: x
             })
           })
         })
@@ -143,7 +143,7 @@ function x(e) {
         let {
           isShown: n
         } = t;
-        return x(G, n, e, F)
+        return S(G, n, e, F)
       }
     })
   })

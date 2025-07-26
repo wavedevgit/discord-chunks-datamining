@@ -1,7 +1,7 @@
 /** Chunk was on 46922 **/
 n.d(t, {
   J: () => I,
-  y: () => S
+  y: () => x
 });
 var r = n(255367),
   i = n(73800),
@@ -25,9 +25,9 @@ var r = n(255367),
   C = n(870569),
   j = n(981631),
   E = n(388032),
-  x = n(390648);
+  S = n(390648);
 
-function S(e, t, n) {
+function x(e, t, n) {
   return null != e && (null != n ? n.applicationId === e.id : null != t && t.application_id === e.id && t.type === j.IIU.PLAYING && (0, u.Z)(t, j.xjy.JOIN))
 }
 let I = i.memo(function(e) {
@@ -59,7 +59,7 @@ let I = i.memo(function(e) {
     } = (0, v.A)({
       location: "Activity Actions"
     }),
-    F = S(M, L, D),
+    F = x(M, L, D),
     H = i.useCallback(() => {
       o()(null != L, "Received null activity"), (0, p.v)(B, p.d.INVITE), y.default.track(j.rMx.OPEN_MODAL, {
         type: "Send Join Invite",
@@ -131,7 +131,7 @@ let I = i.memo(function(e) {
     }, u = a.hGI, I = null != R ? E.intl.formatToPlainString(E.t.AB5gT0, {
       game: R.name
     }) : E.intl.string(E.t.FeUKeH)) : (t = !0, l = null, u = a.hGI, I = null != T && (0, _.vd)(T.type) ? E.intl.string(E.t.uQn9Bw) : null != w ? E.intl.string(E.t.fBXEoK) : E.intl.string(E.t.n3feND)), (0, r.jsx)("div", {
-      className: x.panelButtonContainer,
+      className: S.panelButtonContainer,
       children: (0, r.jsx)(C.Z, {
         tooltipText: I,
         disabled: t,
@@ -151,7 +151,7 @@ let I = i.memo(function(e) {
     }),
     Q = null == P ? null : (0, r.jsx)(f.Z, {});
   return null == Y && null == q && null == X ? null : (0, r.jsxs)("div", {
-    className: x.actions,
+    className: S.actions,
     children: [Y, q, null != X ? X : Q]
   })
 })

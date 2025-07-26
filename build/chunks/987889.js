@@ -1,6 +1,6 @@
 /** Chunk was on 46922 **/
 n.d(t, {
-  Z: () => x
+  Z: () => S
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -67,7 +67,7 @@ function v(e) {
     message: l,
     Icon: a,
     interactionType: s
-  } = e, [c, u] = (0, i.useState)(!1);
+  } = e, [c, u] = (0, i.useState)(!1), d = (0, p.fJ)();
   return (0, r.jsx)(o.ua7, {
     text: t,
     position: "top",
@@ -79,7 +79,8 @@ function v(e) {
       onClick: e => {
         (0, p.Qz)({
           message: l,
-          interactionType: s
+          interactionType: s,
+          viewId: d
         }), e.stopPropagation(), n(l)
       },
       children: (0, r.jsx)(a, {
@@ -98,15 +99,15 @@ function C(e) {
     Icon: a,
     Menu: s,
     interactionType: c
-  } = e, [u, d] = (0, i.useState)(!1), [h, f] = (0, i.useState)(!1), g = (0, i.useRef)(null);
+  } = e, u = (0, p.fJ)(), [d, h] = (0, i.useState)(!1), [f, g] = (0, i.useState)(!1), O = (0, i.useRef)(null);
   return (0, r.jsx)(o.yRy, {
-    shouldShow: h,
+    shouldShow: f,
     animation: o.yRy.Animation.NONE,
     position: "right",
     align: "top",
     autoInvert: !1,
-    targetElementRef: g,
-    onRequestClose: () => f(!1),
+    targetElementRef: O,
+    onRequestClose: () => g(!1),
     renderPopout: e => (0, r.jsx)(o.P3F, {
       onClick: e => e.stopPropagation(),
       children: (0, r.jsx)(s, {
@@ -119,22 +120,23 @@ function C(e) {
       text: l,
       position: "top",
       spacing: 4,
-      onTooltipShow: () => d(!0),
-      onTooltipHide: () => d(!1),
+      onTooltipShow: () => h(!0),
+      onTooltipHide: () => h(!1),
       children: t => (0, r.jsx)(o.P3F, _(b({}, t), {
-        innerRef: g,
+        innerRef: O,
         className: m.action,
         onClick: e => {
           (0, p.Qz)({
             message: n,
-            interactionType: c
-          }), e.stopPropagation(), f(!h)
+            interactionType: c,
+            viewId: u
+          }), e.stopPropagation(), g(!f)
         },
         children: (0, r.jsx)(a, _(b({}, e), {
           message: n,
           "aria-label": l,
           className: m.actionIcon,
-          size: u ? "sm" : "xs"
+          size: d ? "sm" : "xs"
         }))
       }))
     })
@@ -217,7 +219,7 @@ let j = {
   },
   E = e => "MENTION";
 
-function x(e) {
+function S(e) {
   let {
     message: t,
     channel: n,

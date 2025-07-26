@@ -1,6 +1,6 @@
 /**
   Module ID: 71879
-  Original File Name: 9232e1128eb785e4
+  Original File Name: a089af5f5f51e49c
 **/
 .obscuredIcon__43090 {
     height: 32px;
@@ -1297,42 +1297,9 @@
     text-align: center
 }
 
-.iconContainer__93db4 {
-    margin-bottom: 16px;
-    position: relative
-}
-
-.icon__93db4 {
-    background-color: var(--background-base-lower);
-    border-radius: 80px;
-    color: var(--interactive-normal);
-    display: inline-block;
-    padding: 16px
-}
-
-.stars__93db4 {
-    height: 72px;
-    left: -16px;
-    position: absolute
-}
-
 .header__93db4 {
     margin-bottom: 4px;
     margin-top: 8px
-}
-
-.cta__93db4 {
-    margin-top: 16px
-}
-
-.cta__93db4,.cta__93db4:hover {
-    color: var(--text-brand)
-}
-
-.button__93db4 {
-    align-items: center;
-    display: flex;
-    gap: 8px
 }
 
 .container_a68543 {
@@ -2717,4 +2684,4 @@
     color: var(--text-link)
 }
 
-/*# sourceMappingURL=9232e1128eb785e4.css.map*/
+/*# sourceMappingURL=a089af5f5f51e49c.css.map*/

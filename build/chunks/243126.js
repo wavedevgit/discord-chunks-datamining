@@ -27,8 +27,8 @@ let b = (e, t) => {
       return null != (t = null == e ? void 0 : e[o.m.POPULAR]) ? t : []
     }, [e]),
     m = l.length > 0 && r,
-    [_, C] = n.useState(m ? o.m.RECOMMENDED : o.m.POPULAR),
-    [O, v] = n.useState(0),
+    [_, O] = n.useState(m ? o.m.RECOMMENDED : o.m.POPULAR),
+    [C, v] = n.useState(0),
     E = (0, d.u)(),
     S = (0, a.e7)([c.Z], () => c.Z.productsWithVariantsAsGroup),
     y = (0, p.a)(),
@@ -38,13 +38,13 @@ let b = (e, t) => {
         var n, l, i, o;
         return (null != (i = null == (n = (0, u.Vw)(e, t, !1)) ? void 0 : n.amount) ? i : 0) - (null != (o = null == (l = (0, u.Vw)(r, t, !1)) ? void 0 : l.amount) ? o : 0)
       }) : _ === o.m.RECOMMENDED ? e = E(l) : _ === o.m.POPULAR ? e = E(b) : _ === o.m.RANDOM && (e = i().shuffle(S)), y(e)
-    }, [_, y, S, t, E, l, b, O]),
+    }, [_, y, S, t, E, l, b, C]),
     j = n.useCallback(() => {
-      v(e => e + 1), C(o.m.RANDOM)
+      v(e => e + 1), O(o.m.RANDOM)
     }, []);
   return {
     sortType: _,
-    setSortType: C,
+    setSortType: O,
     sortedItems: (0, f.l)(x),
     sortOptions: n.useMemo(() => {
       let e = [{

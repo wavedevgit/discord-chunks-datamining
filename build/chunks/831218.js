@@ -23,8 +23,8 @@ var r, i = n(255367),
   C = n(313201),
   j = n(860144),
   E = n(214852),
-  x = n(518311),
-  S = n(355298),
+  S = n(518311),
+  x = n(355298),
   I = n(869404),
   P = n(333984),
   N = n(984802),
@@ -383,7 +383,7 @@ class G extends(r = l.Component) {
         children: [(0, i.jsx)("span", {
           className: D.headerText,
           children: R.intl.string(R.t.YUU0RE)
-        }), (0, i.jsx)(x.Z, {
+        }), (0, i.jsx)(S.Z, {
           location: "PrivateChannelsList-CreateDMButton",
           tooltip: R.intl.string(R.t["6Urw1t"]),
           tooltipPosition: "top",
@@ -424,15 +424,15 @@ let B = e => {
     children: o,
     showDMHeader: a,
     listScrollerRef: d
-  } = e, p = l.Children.count(o), m = w.Z.getMutablePrivateChannels(), _ = (0, I.k1)(m), O = (0, u.Wu)([T.Z, S.Z, P.Z], () => {
+  } = e, p = l.Children.count(o), m = w.Z.getMutablePrivateChannels(), _ = (0, I.k1)(m), O = (0, u.Wu)([T.Z, x.Z, P.Z], () => {
     let e = T.Z.getPrivateChannelIds();
-    return (0, I.tU)(e, [S.Z, P.Z])
+    return (0, I.tU)(e, [x.Z, P.Z])
   }, []);
   (0, E.z)(j.R);
   let {
     analyticsLocations: y
   } = (0, b.ZP)(g.Z.CONTACTS_LIST), v = (0, N.Ll)(), {
-    keyboardModeEnabled: x,
+    keyboardModeEnabled: S,
     version: Z
   } = (0, u.cj)([f.Z, w.Z], () => ({
     keyboardModeEnabled: f.Z.keyboardModeEnabled,
@@ -467,7 +467,7 @@ let B = e => {
     })
   }), [R]), B = (0, C.Dt)(), V = (0, c.ZP)({
     id: "private-channels-".concat(B),
-    isEnabled: x,
+    isEnabled: S,
     scrollToStart: L,
     scrollToEnd: U,
     defaultFocused: (p + +!!a).toString(),

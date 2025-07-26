@@ -1,6 +1,6 @@
 /** Chunk was on 46922 **/
 n.d(t, {
-  Z: () => x
+  Z: () => S
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -161,7 +161,7 @@ function E(e) {
   })
 }
 
-function x(e) {
+function S(e) {
   let {
     activity: t,
     embeddedApp: n,
@@ -171,9 +171,9 @@ function x(e) {
     onOpenSpotifyTrack: h,
     onOpenSpotifyArtist: f,
     onOpenSpotifyAlbum: g
-  } = e, x = [];
-  null != n ? x = Array.from(n.embeddedActivity.userIds) : (0, c.Z)(t) && null != u && (x = u.map(e => e.user.id));
-  let S = (0, a.Wu)([p.default], () => x.map(e => p.default.getUser(e)).filter(m.lm)),
+  } = e, S = [];
+  null != n ? S = Array.from(n.embeddedActivity.userIds) : (0, c.Z)(t) && null != u && (S = u.map(e => e.user.id));
+  let x = (0, a.Wu)([p.default], () => S.map(e => p.default.getUser(e)).filter(m.lm)),
     I = null != n || (0, c.Z)(t),
     P = i.useMemo(() => {
       let e = new Map;
@@ -203,10 +203,10 @@ function x(e) {
           onOpenSpotifyArtist: f
         }), (0, r.jsx)(j, {
           activity: t
-        }), x.length > 0 && (0, r.jsx)(d.ZP, {
+        }), S.length > 0 && (0, r.jsx)(d.ZP, {
           className: _.usersSummary,
           guildId: o.guild_id,
-          users: S,
+          users: x,
           size: O,
           max: 7,
           renderUser: e => {

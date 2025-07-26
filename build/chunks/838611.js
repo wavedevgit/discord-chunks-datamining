@@ -1,14 +1,15 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => u
+  Z: () => d
 }), n(388685);
 var r = n(392711),
   i = n(147913),
   a = n(948154),
-  o = n(787879);
+  o = n(787879),
+  s = n(982183);
 
-function s(e, t, n) {
+function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -16,22 +17,23 @@ function s(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let l = 5e3;
-class c extends i.Z {
+let c = 5e3;
+class u extends i.Z {
   preloadInbox() {
     a.Z.loadMoreInbox({
-      preload: !0
+      preload: !0,
+      loadingTrigger: s.X.AUTO_LOAD
     })
   }
   _terminate() {
     this.throttledPreloadInbox.cancel()
   }
   constructor() {
-    super(), s(this, "throttledPreloadInbox", void 0), s(this, "stores", new Map().set(o.Z, () => {
+    super(), l(this, "throttledPreloadInbox", void 0), l(this, "stores", new Map().set(o.Z, () => {
       !o.Z.hasPreloaded && o.Z.canLoadMore({
         preload: !0
       }) && this.throttledPreloadInbox()
-    })), this.throttledPreloadInbox = (0, r.throttle)(this.preloadInbox, l)
+    })), this.throttledPreloadInbox = (0, r.throttle)(this.preloadInbox, c)
   }
 }
-let u = new c
+let d = new u
