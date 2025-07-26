@@ -1,8 +1,8 @@
-/** Chunk was on 46922 **/
+/** Chunk was on 7093 **/
 n.d(t, {
   KE: () => _,
   KT: () => b,
-  ZP: () => v,
+  ZP: () => C,
   _C: () => O
 }), n(388685), n(457542);
 var r = n(255367),
@@ -79,7 +79,7 @@ function O(e, t) {
   } = y(e, t), O = (0, l.e7)([p.Z], () => {
     var t, n;
     return null != (n = null == (t = p.Z.getStateForGuild(e)) ? void 0 : t.appliedBoosts) ? n : 0
-  }), v = (0, l.e7)([u.Z], () => u.Z.getGuild(e)), C = (0, l.e7)([p.Z], () => p.Z.getStateForGuild(e)), j = i.useMemo(() => null != t && t.type === f.Us.LEVEL && null != C ? function(e, t) {
+  }), C = (0, l.e7)([u.Z], () => u.Z.getGuild(e)), v = (0, l.e7)([p.Z], () => p.Z.getStateForGuild(e)), j = i.useMemo(() => null != t && t.type === f.Us.LEVEL && null != v ? function(e, t) {
     let n = f.T1[e.skuId];
     return null == n ? [] : Object.entries(f.Rx).filter(e => {
       let [r, i] = e;
@@ -88,18 +88,18 @@ function O(e, t) {
       let [n] = e;
       return t.allPowerups[n]
     }).filter(d.lm)
-  }(t, C) : [], [t, C]), E = null == j ? void 0 : j.reduce((e, t) => e + t.cost, 0), S = Math.max((null != (h = null == v ? void 0 : v.premiumSubscriberCount) ? h : 0) - O + E, 0);
+  }(t, v) : [], [t, v]), E = null == j ? void 0 : j.reduce((e, t) => e + t.cost, 0), S = Math.max((null != (h = null == C ? void 0 : C.premiumSubscriberCount) ? h : 0) - O + E, 0);
   return {
     onActivate: i.useCallback(e => {
       var i;
-      if (e.stopPropagation(), null != v && null != t) return S < t.cost ? void(0, s.u)({
+      if (e.stopPropagation(), null != C && null != t) return S < t.cost ? void(0, s.u)({
         analyticsLocation: {
           page: g.ZY5.GUILD_POWERUPS_OVERVIEW,
           section: g.jXE.GUILD_POWERUPS_OVERVIEW_CARD
         },
         numberOfBoostsToAdd: t.cost - S,
         analyticsLocations: b,
-        guild: v,
+        guild: C,
         intent: t.type === f.Us.LEVEL ? c.P.LEVEL : c.P.PERK,
         onSubscribeComplete: () => {
           var e;
@@ -109,7 +109,7 @@ function O(e, t) {
                 default: e
               } = await n.e("13965").then(n.bind(n, 666083));
               return n => (0, r.jsx)(e, m({
-                guildId: v.id,
+                guildId: C.id,
                 powerup: t
               }, n))
             })
@@ -121,12 +121,12 @@ function O(e, t) {
             default: e
           } = await n.e("13965").then(n.bind(n, 666083));
           return n => (0, r.jsx)(e, m({
-            guildId: v.id,
+            guildId: C.id,
             powerup: t
           }, n))
         })
       })
-    }, [_, t, S, b, v])
+    }, [_, t, S, b, C])
   }
 }
 
@@ -148,7 +148,7 @@ function y(e, t) {
   }
 }
 
-function v(e, t) {
+function C(e, t) {
   let {
     isLoading: l,
     error: a,

@@ -1,4 +1,4 @@
-/** Chunk was on 46922 **/
+/** Chunk was on 7093 **/
 n.d(t, {
   Z: () => b
 });
@@ -27,10 +27,10 @@ function b(e) {
     closePopout: O
   } = e, {
     enabled: y,
-    inInbox: v
+    inInbox: C
   } = d.Z.useExperiment({
     location: "RecentsPopout"
-  }), C = (0, p.Us)({
+  }), v = (0, p.Us)({
     location: "RecentsHeader"
   }), {
     enabled: j
@@ -89,14 +89,14 @@ function b(e) {
             color: s.Z.STATUS_DANGER,
             className: m.iconBadge
           }) : null]
-        }) : null, y && v ? (0, r.jsx)(o.njP.Item, {
+        }) : null, y && C ? (0, r.jsx)(o.njP.Item, {
           "aria-label": g.intl.string(g.t["2pAkDA"]),
           id: l.X.BOOKMARKS,
           className: m.tab,
           children: 0 === S ? g.intl.string(g.t["2pAkDA"]) : g.intl.formatToPlainString(g.t.I4fryM, {
             count: S
           })
-        }) : null, C ? (0, r.jsx)(o.njP.Item, {
+        }) : null, v ? (0, r.jsx)(o.njP.Item, {
           "aria-label": "scheduled",
           id: l.X.SCHEDULED,
           className: m.tab,

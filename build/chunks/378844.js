@@ -1,4 +1,4 @@
-/** Chunk was on 46922 **/
+/** Chunk was on 7093 **/
 n.d(t, {
   R: () => O,
   Z: () => y
@@ -44,13 +44,13 @@ let y = e => {
     guildId: r,
     closePopout: O
   } = e, y = (0, u.Dt)(), {
-    notClaimed: v,
-    notEmailVerified: C,
+    notClaimed: C,
+    notEmailVerified: v,
     notPhoneVerified: j,
     newAccount: E,
     newMember: S
   } = (0, l.e7)([h.Z], () => h.Z.getCheck(r), [r]), x = 0 === t ? m.intl.string(m.t["6zY8BA"]) : null, I = null, P = null;
-  return (0 === t && (v ? (I = m.intl.string(m.t.IRxUlJ), P = m.intl.string(m.t.fiNVio)) : j ? (I = m.intl.string(m.t.vW8iUF), P = m.intl.string(m.t["50gfOj"])) : C ? (I = m.intl.string(m.t.vdSOp6), P = m.intl.string(m.t.lm1UKi)) : S ? (I = m.intl.formatToPlainString(m.t.v1ktYW, {
+  return (0 === t && (C ? (I = m.intl.string(m.t.IRxUlJ), P = m.intl.string(m.t.fiNVio)) : j ? (I = m.intl.string(m.t.vW8iUF), P = m.intl.string(m.t["50gfOj"])) : v ? (I = m.intl.string(m.t.vdSOp6), P = m.intl.string(m.t.lm1UKi)) : S ? (I = m.intl.formatToPlainString(m.t.v1ktYW, {
     min: f.YeM.MEMBER_AGE
   }), P = m.intl.string(m.t.BddRzc)) : E && (I = m.intl.formatToPlainString(m.t["sncw4+"], {
     min: f.YeM.ACCOUNT_AGE
@@ -80,7 +80,7 @@ let y = e => {
             variant: "primary",
             text: P,
             onClick: () => {
-              v ? c.j() : j ? (0, a.ZDy)(async () => {
+              C ? c.j() : j ? (0, a.ZDy)(async () => {
                 let {
                   default: e
                 } = await Promise.resolve().then(n.bind(n, 607018));
@@ -89,7 +89,7 @@ let y = e => {
                 }, t))
               }, {
                 modalKey: g.M
-              }) : C && (s.Z.verifyResend(), (0, a.h7j)(e => {
+              }) : v && (s.Z.verifyResend(), (0, a.h7j)(e => {
                 var t, n, r;
                 return (0, i.jsx)(a.ConfirmModal, (n = _({
                   header: m.intl.string(m.t.LykQYm),
@@ -115,7 +115,7 @@ let y = e => {
               })), O()
             }
           })
-        }) : null, v || j || C ? (0, i.jsx)(o.zx, {
+        }) : null, C || j || v ? (0, i.jsx)(o.zx, {
           onClick: O,
           look: o.zx.Looks.BLANK,
           className: b.cancel,

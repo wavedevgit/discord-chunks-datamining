@@ -1,4 +1,4 @@
-/** Chunk was on 46922 **/
+/** Chunk was on 7093 **/
 n.d(t, {
   k: () => S
 }), n(388685);
@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(153209),
   O = n(903672),
   y = n(711165),
-  v = n(946443),
-  C = n(264233),
+  C = n(946443),
+  v = n(264233),
   j = n(981631),
   E = n(388032);
 
@@ -35,9 +35,9 @@ function S(e) {
     popoutAlign: P,
     targetElementRef: N,
     spacing: w,
-    dialogClassName: Z
+    dialogClassName: T
   } = e, {
-    analyticsLocations: T
+    analyticsLocations: Z
   } = (0, u.ZP)(c.Z.NOTIFICATION_CENTER), [A, R] = i.useState(!1), [D, L] = [(0, o.e7)([g.Z], () => {
     var e, t;
     return null != (t = null == (e = g.Z.settings.inbox) ? void 0 : e.currentTab) ? t : a.X.UNREADS
@@ -86,7 +86,7 @@ function S(e) {
     e.shiftKey || U()
   }, [U]);
   return (0, r.jsx)(u.Gt, {
-    value: T,
+    value: Z,
     children: (0, r.jsx)(s.yRy, {
       targetElementRef: N,
       animation: s.yRy.Animation.NONE,
@@ -98,7 +98,7 @@ function S(e) {
       renderPopout: function() {
         return (0, r.jsx)(s.VqE, {
           "aria-label": E.intl.string(E.t.GSmTKC),
-          className: Z,
+          className: T,
           children: D === a.X.FOR_YOU ? (0, r.jsx)(_.Z, {
             setTab: L,
             badgeState: x,
@@ -108,7 +108,7 @@ function S(e) {
             onJump: z,
             badgeState: x,
             closePopout: U
-          }) : H && D === a.X.GAME_INVITES ? (0, r.jsx)(C.Z, {
+          }) : H && D === a.X.GAME_INVITES ? (0, r.jsx)(v.Z, {
             setTab: L,
             badgeState: x,
             closePopout: U
@@ -120,12 +120,12 @@ function S(e) {
             setTab: L,
             closePopout: U
           }) : (0, r.jsx)(l.SV, {
-            fallback: (0, r.jsx)(v.h, {
+            fallback: (0, r.jsx)(C.h, {
               setTab: L,
               closePopout: U,
               badgeState: x
             }),
-            children: (0, r.jsx)(v.Z, {
+            children: (0, r.jsx)(C.Z, {
               setTab: L,
               onJump: z,
               showTutorial: M,

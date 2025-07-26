@@ -1,4 +1,4 @@
-/** Chunk was on 46922 **/
+/** Chunk was on 7093 **/
 n.d(t, {
   Z: () => S
 }), n(388685);
@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(324081),
   O = n(305248),
   y = n(520116),
-  v = n(981631),
-  C = n(388032),
+  C = n(981631),
+  v = n(388032),
   j = n(28007);
 
 function E(e) {
@@ -93,19 +93,19 @@ let S = i.memo(function(e) {
     if (i.useEffect(() => {
         null == a || !t.isFullyLoaded || t.hasError || t.collapsed || "messages" !== t.type || 0 !== t.messages.length || d.Z.wait(() => {
           (0, h.In)(t.channelId, {
-            section: v.jXE.INBOX,
-            object: v.qAy.ACK_INBOX_CHANNEL_NO_MESSAGES,
-            objectType: v.Qqv.ACK_AUTOMATIC
+            section: C.jXE.INBOX,
+            object: C.qAy.ACK_INBOX_CHANNEL_NO_MESSAGES,
+            objectType: C.Qqv.ACK_AUTOMATIC
           }, !0), l(t.channelId)
         })
       }), null == a || !t.hasLoadedAnything) return null;
     let s = (e, r) => {
-      (0, p.yw)(v.rMx.INBOX_CHANNEL_CLICKED, {
+      (0, p.yw)(C.rMx.INBOX_CHANNEL_CLICKED, {
         channel_id: t.channelId,
         guild_id: t.guildId
       });
       let i = null != r ? r : t.oldestUnreadMessageId;
-      (0, f.uL)(v.Z5c.CHANNEL(t.guildId, t.channelId, "forum" === t.type ? null : i)), n(e)
+      (0, f.uL)(C.Z5c.CHANNEL(t.guildId, t.channelId, "forum" === t.type ? null : i)), n(e)
     };
     return (0, r.jsx)("div", {
       className: j.channel,
@@ -142,7 +142,7 @@ function I(e) {
   } = e, o = (0, s.Z)() && null != t.guildId;
   return (0, r.jsx)(u.M0o, {
     className: j.markReadButton,
-    tooltip: o ? C.intl.string(C.t["5lLMhI"]) : C.intl.string(C.t.e6RscX),
+    tooltip: o ? v.intl.string(v.t["5lLMhI"]) : v.intl.string(v.t.e6RscX),
     color: u.YX$.TERTIARY,
     icon: o ? (0, r.jsx)(u.W6s, {
       size: "xs",
@@ -152,7 +152,7 @@ function I(e) {
       color: "currentColor"
     }),
     onClick: function() {
-      o && null != t.guildId ? i(t.guildId) : n(t), (0, p.yw)(v.rMx.INBOX_CHANNEL_ACKED, {
+      o && null != t.guildId ? i(t.guildId) : n(t), (0, p.yw)(C.rMx.INBOX_CHANNEL_ACKED, {
         channel_id: t.channelId,
         guild_id: t.guildId,
         marked_all_channels_as_read: !1,
@@ -170,7 +170,7 @@ function P(e) {
   } = e;
 
   function l() {
-    n(t), (0, p.yw)(v.rMx.INBOX_CHANNEL_COLLAPSED, {
+    n(t), (0, p.yw)(C.rMx.INBOX_CHANNEL_COLLAPSED, {
       channel_id: t.channelId,
       guild_id: t.guildId,
       num_unread_channels_remaining: i(),
@@ -178,7 +178,7 @@ function P(e) {
     })
   }
   return (0, r.jsx)(u.ua7, {
-    text: C.intl.string(C.t.iTcumZ),
+    text: v.intl.string(v.t.iTcumZ),
     children: e => {
       var n, i;
       return (0, r.jsx)(u.P3F, (n = E({}, e), i = i = {

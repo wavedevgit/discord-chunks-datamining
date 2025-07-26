@@ -1,4 +1,4 @@
-/** Chunk was on 46922 **/
+/** Chunk was on 7093 **/
 n.d(t, {
   m: () => f
 });
@@ -56,9 +56,9 @@ function f(e) {
       trailing: _,
       background: O,
       showUnread: y = !1,
-      ref: v
+      ref: C
     } = e,
-    C = function(e, t) {
+    v = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -76,8 +76,8 @@ function f(e) {
   let j = (0, o.JA)(n),
     E = null != (t = (0, a.qg)(m)) ? t : "";
   return (0, r.jsx)("li", {
-    ref: v,
-    children: (0, r.jsxs)(s.kL8, p(h({}, C), {
+    ref: C,
+    children: (0, r.jsxs)(s.kL8, p(h({}, v), {
       buttonProps: p(h({}, j), {
         id: n,
         role: "button"
@@ -91,7 +91,7 @@ function f(e) {
           right: 4
         }
       },
-      onContextMenu: null != C.onContextMenu ? C.onContextMenu : e => {
+      onContextMenu: null != v.onContextMenu ? v.onContextMenu : e => {
         e.stopPropagation()
       },
       className: l()(u.containerDefault, d.wrapper, {

@@ -1,7 +1,7 @@
-/** Chunk was on 46922 **/
+/** Chunk was on 7093 **/
 n.d(t, {
   ZP: () => L,
-  wD: () => Z
+  wD: () => T
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -21,8 +21,8 @@ var r = n(255367),
   _ = n(768581),
   O = n(598056),
   y = n(358555),
-  v = n(981631),
-  C = n(647086),
+  C = n(981631),
+  v = n(647086),
   j = n(982183),
   E = n(388032),
   S = n(917669);
@@ -105,7 +105,7 @@ function N(e) {
     hasSubheader: l
   } = e, {
     value: s
-  } = n.springs, c = t.features.has(v.oNc.DISCOVERABLE), d = (0, r.jsx)("div", {
+  } = n.springs, c = t.features.has(C.oNc.DISCOVERABLE), d = (0, r.jsx)("div", {
     className: S.communityInfo,
     children: c && (0, r.jsx)(u.ua7, {
       text: E.intl.string(E.t.O8lDIy),
@@ -150,7 +150,7 @@ function w() {
     width: 20
   })
 }
-let Z = e => {
+let T = e => {
   let {
     open: t
   } = e, n = t ? u.u04 : u.CJ0;
@@ -160,7 +160,7 @@ let Z = e => {
   })
 };
 
-function T(e) {
+function Z(e) {
   let {
     guild: t
   } = e;
@@ -188,7 +188,7 @@ function A(e) {
     children: [(0, r.jsx)(y.Z, {
       guild: i,
       isBannerVisible: n
-    }), i.id === C._ && (0, r.jsx)(w, {}), (0, r.jsx)(T, {
+    }), i.id === v._ && (0, r.jsx)(w, {}), (0, r.jsx)(Z, {
       guild: i
     }), null != l && (0, r.jsx)(u.P3F, {
       className: S.headerButton,
@@ -209,7 +209,7 @@ function A(e) {
     })]
   })
 }
-let R = [C._, j.yG];
+let R = [v._, j.yG];
 
 function D(e) {
   let {
@@ -244,7 +244,7 @@ function D(e) {
       } = await Promise.all([n.e("7654"), n.e("34946")]).then(n.bind(n, 560114));
       return t => (0, r.jsx)(e, I(x({}, t), {
         guild: l,
-        source: v.t4x.GUILD_HEADER
+        source: C.t4x.GUILD_HEADER
       }))
     }) : (0, u.ZDy)(async () => {
       let {
@@ -280,7 +280,7 @@ function D(e) {
             children: [(0, r.jsx)(y.Z, {
               guild: l,
               isBannerVisible: t
-            }), l.id === C._ && (0, r.jsx)(w, {}), (0, r.jsx)(T, {
+            }), l.id === v._ && (0, r.jsx)(w, {}), (0, r.jsx)(Z, {
               guild: l
             })]
           }), (0, r.jsx)("div", {
@@ -319,14 +319,14 @@ let L = i.memo(function(e) {
     disableBannerAnimation: g,
     "aria-expanded": b,
     "aria-controls": y,
-    guild: C,
+    guild: v,
     guildBanner: j,
     animationOverlayHeight: E,
     children: w,
-    headerClassName: Z,
-    communityInfoVisible: T,
+    headerClassName: T,
+    communityInfoVisible: Z,
     hasSubheader: R
-  } = e, L = C.features.has(v.oNc.ANIMATED_BANNER), k = (0, d.Z)(C), U = !k && (0, O.Z)(C), G = !k && T, B = (0, _.xR)(j) && L && !g, [V, F] = i.useState(!1), H = i.useRef(!1), z = i.useRef(null), W = null != t ? t : z, K = i.useRef(void 0), Y = m.QK.getSetting();
+  } = e, L = v.features.has(C.oNc.ANIMATED_BANNER), k = (0, d.Z)(v), U = !k && (0, O.Z)(v), G = !k && Z, B = (0, _.xR)(j) && L && !g, [V, F] = i.useState(!1), H = i.useRef(!1), z = i.useRef(null), W = null != t ? t : z, K = i.useRef(void 0), Y = m.QK.getSetting();
   i.useEffect(() => {
     if (B && n && !H.current && Y) return F(!0), K.current = setTimeout(() => {
       F(!1)
@@ -350,7 +350,7 @@ let L = i.memo(function(e) {
     }),
     Q = {
       bannerVisible: n,
-      guild: C,
+      guild: v,
       onClick: c,
       onContextMenu: p,
       ariaControls: y,
@@ -358,7 +358,7 @@ let L = i.memo(function(e) {
       guildHeaderRef: W
     };
   return (0, r.jsx)(u.f6W, {
-    theme: n ? v.BRd.DARK : void 0,
+    theme: n ? C.BRd.DARK : void 0,
     children: e => (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
         "data-has-banner": q(),
@@ -378,7 +378,7 @@ let L = i.memo(function(e) {
         onClick: X ? void 0 : c,
         onContextMenu: p,
         children: [(0, r.jsxs)("header", {
-          className: o()(S.header, Z, {
+          className: o()(S.header, T, {
             [S.themedHeaderMobile]: s.tq
           }),
           children: [(0, r.jsx)("div", {
@@ -389,13 +389,13 @@ let L = i.memo(function(e) {
               children: w
             }))
           }), U && (0, r.jsx)(N, {
-            guild: C,
+            guild: v,
             controller: l,
             hasBanner: null != j,
             hasSubheader: null != R && R
           })]
         }), null != j ? (0, r.jsx)(P, {
-          guild: C,
+          guild: v,
           controller: l,
           guildBanner: j,
           animate: V

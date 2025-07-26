@@ -1,4 +1,4 @@
-/** Chunk was on 46922 **/
+/** Chunk was on 7093 **/
 n.d(t, {
   Z: () => N
 }), n(388685);
@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(538445),
   O = n(639777),
   y = n(441536),
-  v = n(447908),
-  C = n(921944),
+  C = n(447908),
+  v = n(921944),
   j = n(93841),
   E = n(388032),
   S = n(27053);
@@ -63,30 +63,30 @@ function P(e) {
     guild: t,
     tooltipTypes: l,
     withMargin: P
-  } = e, N = i.useMemo(() => (0, v.Z)(t), [t]), w = (0, O.Z)(t.id), Z = i.useCallback(() => {
+  } = e, N = i.useMemo(() => (0, C.Z)(t), [t]), w = (0, O.Z)(t.id), T = i.useCallback(() => {
     (0, y.Z)(t.id, p.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY)
-  }, [t.id]), T = (0, c.e7)([m.Z], () => {
+  }, [t.id]), Z = (0, c.e7)([m.Z], () => {
     var e;
     return null != (e = m.Z.getCountForGuild(t.id)) ? e : 0
   });
   i.useEffect(() => {
-    T !== t.premiumSubscriberCount && (0, g.v)(t.id, t.premiumSubscriberCount)
-  }, [t.id, T, t.premiumSubscriberCount]);
-  let A = Math.min(T / N * 100, 100),
+    Z !== t.premiumSubscriberCount && (0, g.v)(t.id, t.premiumSubscriberCount)
+  }, [t.id, Z, t.premiumSubscriberCount]);
+  let A = Math.min(Z / N * 100, 100),
     [R, D] = (0, d.q_F)(() => ({
-      width: T === t.premiumSubscriberCount ? "calc(".concat(A, "% - 4px)") : "0%",
+      width: Z === t.premiumSubscriberCount ? "calc(".concat(A, "% - 4px)") : "0%",
       config: {
         tension: 250,
         damping: 5,
         mass: 1
       }
-    }), "respect-motion-settings", [T, t.premiumSubscriberCount]);
+    }), "respect-motion-settings", [Z, t.premiumSubscriberCount]);
   i.useEffect(() => {
     D({
       width: "calc(".concat(A, "% - 4px)")
     })
   }, [A, D]);
-  let L = T >= N,
+  let L = Z >= N,
     M = i.useRef(null),
     [k, U] = (0, f.US)(l),
     G = e => (0, r.jsx)(d.P3F, I(x({}, e), {
@@ -100,7 +100,7 @@ function P(e) {
       },
       onClick: () => {
         var t;
-        null == e || null == (t = e.onClick) || t.call(e), Z()
+        null == e || null == (t = e.onClick) || t.call(e), T()
       },
       className: o()(S.container, {
         [S.containerWithMargin]: P
@@ -143,9 +143,9 @@ function P(e) {
               className: o()(S.text, S.boostCountText),
               variant: "text-xs/semibold",
               children: L ? E.intl.formatToPlainString(j.default["Ehpq+/"], {
-                appliedBoostCount: T
+                appliedBoostCount: Z
               }) : E.intl.formatToPlainString(j.default["/rbPDg"], {
-                appliedBoostCount: T,
+                appliedBoostCount: Z,
                 maxBoostCount: N
               })
             }), (0, r.jsx)(b.Z, {
@@ -168,7 +168,7 @@ function P(e) {
     align: "top",
     shouldShow: !0,
     closeOnScroll: !0,
-    onRequestClose: () => U(C.L.INDIRECT_ACTION),
+    onRequestClose: () => U(v.L.INDIRECT_ACTION),
     animation: d.yRy.Animation.TRANSLATE,
     children: e => (0, r.jsx)("div", {
       ref: M,

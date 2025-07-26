@@ -1,4 +1,4 @@
-/** Chunk was on 46922 **/
+/** Chunk was on 7093 **/
 n.d(t, {
   U: () => G
 }), n(35282);
@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(626135),
   O = n(709054),
   y = n(591759),
-  v = n(833592),
-  C = n(497089),
+  C = n(833592),
+  v = n(497089),
   j = n(178480),
   E = n(418316),
   S = n(382865),
@@ -30,8 +30,8 @@ var r = n(255367),
   P = n(148789),
   N = n(11825),
   w = n(981631),
-  Z = n(388032),
-  T = n(884492),
+  T = n(388032),
+  Z = n(884492),
   A = n(756688),
   R = n(886765);
 
@@ -44,12 +44,12 @@ function D(e) {
   let d = null != (a = b.default.getUser(null == (i = c.message) || null == (n = i.author) ? void 0 : n.id)) ? a : new m.Z(null == (l = c.message) ? void 0 : l.author),
     p = h.Z.parse(u);
   return (0, r.jsxs)("div", {
-    className: T.messagePreviewContainer,
+    className: Z.messagePreviewContainer,
     children: [(0, r.jsx)(s.Z, {
       user: d,
       size: o.EFr.SIZE_24
     }), (0, r.jsx)(o.Text, {
-      className: T.messagePreviewText,
+      className: Z.messagePreviewText,
       variant: "text-sm/normal",
       lineClamp: 2,
       children: p
@@ -66,7 +66,7 @@ function L(e) {
   if (null == t) return null;
   let n = h.Z.parse(t);
   return (0, r.jsx)("div", {
-    className: T.calloutContainer,
+    className: Z.calloutContainer,
     children: (0, r.jsx)(o.Text, {
       variant: "text-sm/normal",
       lineClamp: 2,
@@ -78,15 +78,15 @@ function L(e) {
 function M(e) {
   let {
     item: t
-  } = e, n = R, i = Z.intl.string(Z.t.SJTHJS);
-  return t.completed && (n = A, i = Z.intl.string(Z.t.f6RTAA)), (0, r.jsxs)("div", {
-    className: T.lifecycleContainer,
+  } = e, n = R, i = T.intl.string(T.t.SJTHJS);
+  return t.completed && (n = A, i = T.intl.string(T.t.f6RTAA)), (0, r.jsxs)("div", {
+    className: Z.lifecycleContainer,
     children: [(0, r.jsx)("img", {
-      className: T.checkbox,
+      className: Z.checkbox,
       alt: "",
       src: n
     }), (0, r.jsx)(o.Text, {
-      className: T.lifecycleText,
+      className: Z.lifecycleText,
       variant: "text-xs/bold",
       color: "header-secondary",
       children: i
@@ -110,7 +110,7 @@ let U = i.memo(function(e) {
     } = e, {
       analyticsLocations: u
     } = (0, c.ZP)(), p = (0, x.I)(l, s), g = i.useCallback(async () => {
-      if (p || (0, v.wt)(l), null != l.item_enum && l.item_enum === C.AM.FIND_FRIENDS) return void(0, o.ZDy)(async () => {
+      if (p || (0, C.wt)(l), null != l.item_enum && l.item_enum === v.AM.FIND_FRIENDS) return void(0, o.ZDy)(async () => {
         let {
           default: e
         } = await n.e("6074").then(n.bind(n, 443189));
@@ -153,16 +153,16 @@ let U = i.memo(function(e) {
           } else await (0, d.Z)(r)
         }
         _.default.track(w.rMx.NOTIFICATION_CENTER_ACTION, {
-          action_type: C.ud.CLICKED,
+          action_type: v.ud.CLICKED,
           notification_center_id: l.id,
           item_type: l.type,
           acked: p
         })
       }
     }, [l, p, u]), m = null;
-    l.type === C.O7.INCOMING_FRIEND_REQUESTS && null != l.other_user ? m = (0, r.jsx)(P.Z, {
+    l.type === v.O7.INCOMING_FRIEND_REQUESTS && null != l.other_user ? m = (0, r.jsx)(P.Z, {
       userId: l.other_user.id
-    }) : l.type === C.O7.INCOMING_GAME_FRIEND_REQUESTS && null != l.other_user && (m = (0, r.jsx)(P.Z, {
+    }) : l.type === v.O7.INCOMING_GAME_FRIEND_REQUESTS && null != l.other_user && (m = (0, r.jsx)(P.Z, {
       userId: l.other_user.id,
       applicationId: l.applicationId
     }));
@@ -174,29 +174,29 @@ let U = i.memo(function(e) {
         })
       }),
       {
-        emoji_id: Z,
+        emoji_id: T,
         emoji_name: A
       } = l,
-      R = null != Z || null != A ? (0, r.jsx)(a.Z, {
-        className: T.emoji,
-        emojiId: Z,
+      R = null != T || null != A ? (0, r.jsx)(a.Z, {
+        className: Z.emoji,
+        emojiId: T,
         emojiName: A
       }) : null;
     return (0, r.jsxs)("div", {
-      className: T.row,
+      className: Z.row,
       children: [(0, r.jsxs)(o.kL8, {
-        className: T.rowContent,
+        className: Z.rowContent,
         focusProps: {
           offset: 4
         },
         "aria-label": S,
         onClick: g,
         children: [p ? null : (0, r.jsx)("div", {
-          className: T.unread
+          className: Z.unread
         }), (0, r.jsx)(I.U, {
           item: l
         }), (0, r.jsxs)("div", {
-          className: T.body,
+          className: Z.body,
           children: ["lifecycle_item" === l.type && null != l.item_enum && (0, r.jsx)(M, {
             item: l
           }), (0, r.jsxs)(o.Text, {

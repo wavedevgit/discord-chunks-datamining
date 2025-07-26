@@ -1,4 +1,4 @@
-/** Chunk was on 46922 **/
+/** Chunk was on 7093 **/
 n.d(t, {
   Z: () => _
 });
@@ -25,8 +25,8 @@ let _ = (0, c.B)(function(e) {
     disableManageChannels: _,
     sorting: O,
     sortingType: y,
-    sortingPosition: v,
-    connectChannelDragSource: C,
+    sortingPosition: C,
+    connectChannelDragSource: v,
     connectChannelDropTarget: j,
     tabIndex: E
   } = e, S = (0, a.e7)([u.Z, d.ZP], () => {
@@ -72,11 +72,11 @@ let _ = (0, c.B)(function(e) {
     })
   }, [S]);
   if (null == S) return null;
-  let w = (0, p.jo)(c, v),
-    Z = (0, p.CN)(S, O, y),
-    T = (0, r.jsx)("div", {
+  let w = (0, p.jo)(c, C),
+    T = (0, p.CN)(S, O, y),
+    Z = (0, r.jsx)("div", {
       className: o()(w, {
-        [b.disabled]: Z,
+        [b.disabled]: T,
         [b.selected]: I
       }),
       "data-dnd-name": S.name,
@@ -98,5 +98,5 @@ let _ = (0, c.B)(function(e) {
         })]
       })
     });
-  return P && (T = j(C(T))), T
+  return P && (Z = j(v(Z))), Z
 })

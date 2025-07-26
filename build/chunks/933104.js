@@ -1,4 +1,4 @@
-/** Chunk was on 46922 **/
+/** Chunk was on 7093 **/
 n.d(t, {
   $h: () => x,
   cO: () => P,
@@ -24,8 +24,8 @@ var i = n(120356),
   _ = n(981631),
   O = n(921944),
   y = n(93841),
-  v = n(388032),
-  C = n(423151),
+  C = n(388032),
+  v = n(423151),
   j = n(928381),
   E = n(225375);
 
@@ -37,15 +37,15 @@ function S(e) {
   } = e;
   return (0, r.jsx)(N, {
     asset: (0, r.jsx)(m.g, {
-      className: C.image
+      className: v.image
     }),
-    header: v.intl.formatToPlainString(y.default["Zg/m9P"], {
+    header: C.intl.formatToPlainString(y.default["Zg/m9P"], {
       perkName: n.title
     }),
-    content: v.intl.formatToPlainString(y.default["1EGXSE"], {
+    content: C.intl.formatToPlainString(y.default["1EGXSE"], {
       perkName: n.title
     }),
-    buttonCTA: v.intl.string(v.t.RzWDqa),
+    buttonCTA: C.intl.string(C.t.RzWDqa),
     onClick: () => (0, g.Z)(t, u.Z.GUILD_POWERUPS_COACHMARK_LEVEL_UP, n.skuId),
     markAsDismissed: i
   })
@@ -60,11 +60,11 @@ function x(e) {
     asset: (0, r.jsx)("img", {
       alt: "",
       src: j.Z,
-      className: l()(C.image, C.newPerksImage)
+      className: l()(v.image, v.newPerksImage)
     }),
-    header: v.intl.string(y.default.QpQBPT),
-    content: i ? v.intl.string(y.default["6hn0xM"]) : v.intl.string(y.default.RDuvXl),
-    buttonCTA: v.intl.string(v.t.RzWDqa),
+    header: C.intl.string(y.default.QpQBPT),
+    content: i ? C.intl.string(y.default["6hn0xM"]) : C.intl.string(y.default.RDuvXl),
+    buttonCTA: C.intl.string(C.t.RzWDqa),
     onClick: () => i ? (0, g.Z)(t, u.Z.GUILD_POWERUPS_COACHMARK_NEW_PERKS) : (0, d.f)({
       guildId: t,
       location: {
@@ -88,28 +88,28 @@ function I(e) {
     onActivate: o
   } = (0, b.ZP)(t, n[0]);
   if (0 === n.length) return;
-  let a = n.length >= 3 ? v.intl.formatToPlainString(y.default["6Sv+3N"], {
+  let a = n.length >= 3 ? C.intl.formatToPlainString(y.default["6Sv+3N"], {
       perk: n[0].title,
       perk2: n[1].title,
       perk3: n[2].title
-    }) : 2 === n.length ? v.intl.formatToPlainString(y.default.wcQOqK, {
+    }) : 2 === n.length ? C.intl.formatToPlainString(y.default.wcQOqK, {
       perks: "".concat(n[0].title, " & ").concat(n[1].title)
-    }) : v.intl.formatToPlainString(y.default.ZF8NT0, {
+    }) : C.intl.formatToPlainString(y.default.ZF8NT0, {
       perk: n[0].title
     }),
     c = 1 === n.length;
   return (0, r.jsx)(N, {
     asset: 1 === n.length ? (0, r.jsx)(m.m, {
-      className: C.image,
+      className: v.image,
       powerup: n[0]
     }) : (0, r.jsx)(m.g, {
-      className: C.image
+      className: v.image
     }),
-    header: v.intl.formatToPlainString(y.default.LmpChI, {
+    header: C.intl.formatToPlainString(y.default.LmpChI, {
       guildName: l
     }),
     content: a,
-    buttonCTA: c ? v.intl.string(y.default.gSxlHR) : v.intl.string(v.t.RzWDqa),
+    buttonCTA: c ? C.intl.string(y.default.gSxlHR) : C.intl.string(C.t.RzWDqa),
     onClick: e => c ? o(e) : (0, g.Z)(t, u.Z.GUILD_POWERUPS_COACHMARK_PURCHASEABLE_PERKS),
     markAsDismissed: i
   })
@@ -122,16 +122,16 @@ function P(e) {
     markAsDismissed: i
   } = e;
   return n.skuId === o.A$ ? (0, r.jsx)(N, {
-    header: v.intl.string(y.default.Ygpx4e),
-    content: v.intl.string(y.default.mmNkUF),
+    header: C.intl.string(y.default.Ygpx4e),
+    content: C.intl.string(y.default.mmNkUF),
     asset: (0, r.jsx)("img", {
       alt: "",
       src: E.Z,
-      className: C.image
+      className: v.image
     }),
     onClick: () => (0, g.Z)(t, u.Z.GUILD_POWERUPS_COACHMARK_NEW_PERK_AVAILABLE, n.skuId),
     markAsDismissed: i,
-    buttonCTA: v.intl.string(v.t.RzWDqa)
+    buttonCTA: C.intl.string(C.t.RzWDqa)
   }) : null
 }
 
@@ -158,7 +158,7 @@ function N(e) {
     return i
   }(e, ["asset", "header", "content", "caretPosition", "markAsDismissed"]);
   let d = null != o ? o : h.DF.LEFT_TOP,
-    p = d === h.DF.TOP_CENTER || d === h.DF.LEFT_TOP ? C[d] : "";
+    p = d === h.DF.TOP_CENTER || d === h.DF.LEFT_TOP ? v[d] : "";
   return (0, r.jsx)(h.ZP, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -178,9 +178,9 @@ function N(e) {
     return e
   }({
     asset: (0, r.jsxs)("div", {
-      className: C.imageContainer,
+      className: v.imageContainer,
       children: [t, (0, r.jsx)(c.olH, {
-        className: C.close,
+        className: v.close,
         onClick: () => null == s ? void 0 : s(O.L.USER_DISMISS)
       })]
     }),
@@ -193,9 +193,9 @@ function N(e) {
       color: "text-muted",
       children: i
     }),
-    className: l()(C.container, p),
-    headerClassName: C.header,
-    contentClassName: C.header,
+    className: l()(v.container, p),
+    headerClassName: v.header,
+    contentClassName: v.header,
     caretPosition: d,
     markAsDismissed: s
   }, u))

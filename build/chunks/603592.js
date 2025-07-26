@@ -1,4 +1,4 @@
-/** Chunk was on 46922 **/
+/** Chunk was on 7093 **/
 n.d(t, {
   Z: () => p
 }), n(388685);
@@ -23,17 +23,17 @@ let p = i.forwardRef(function(e, t) {
     tooltip: _,
     upperBadge: O,
     lowerBadge: y,
-    lowerBadgeSize: v,
-    showPill: C = !0,
+    lowerBadgeSize: C,
+    showPill: v = !0,
     className: j,
     "aria-label": E,
     children: S,
     onMouseEnter: x,
     onMouseLeave: I,
     onMouseDown: P
-  } = e, N = (0, a.Ie)(p), [w, Z] = i.useState(!1);
+  } = e, N = (0, a.Ie)(p), [w, T] = i.useState(!1);
   return (0, r.jsxs)(u.H, {
-    children: [C ? (0, r.jsx)("div", {
+    children: [v ? (0, r.jsx)("div", {
       className: h.pill,
       children: (0, r.jsx)(c.Z, {
         hovered: w,
@@ -46,7 +46,7 @@ let p = i.forwardRef(function(e, t) {
         selected: !0,
         upperBadge: O,
         lowerBadge: y,
-        lowerBadgeSize: v,
+        lowerBadgeSize: C,
         children: (0, r.jsx)(s.P3F, (n = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -67,10 +67,10 @@ let p = i.forwardRef(function(e, t) {
         }({
           innerRef: t,
           onMouseEnter: () => {
-            null == x || x(), Z(!0)
+            null == x || x(), T(!0)
           },
           onMouseLeave: () => {
-            null == I || I(), Z(!1)
+            null == I || I(), T(!1)
           },
           onMouseDown: P,
           className: o()(h.circleIconButton, j, {

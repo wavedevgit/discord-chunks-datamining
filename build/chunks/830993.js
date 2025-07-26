@@ -1,4 +1,4 @@
-/** Chunk was on 46922 **/
+/** Chunk was on 7093 **/
 n.d(t, {
   Z: () => P
 }), n(388685), n(539854);
@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(823379),
   O = n(355363),
   y = n(449932),
-  v = n(561788),
-  C = n(876548),
+  C = n(561788),
+  v = n(876548),
   j = n(543432),
   E = n(981631),
   S = n(388032),
@@ -37,7 +37,7 @@ function P(e) {
     voiceStates: g,
     isChannelSelected: b,
     shouldShowSettingNudge: O
-  } = e, v = i.useMemo(() => {
+  } = e, C = i.useMemo(() => {
     var e;
     return null == g || g.length > 50 ? {} : {
       [o.getGuildId()]: null != (e = g.map(e => {
@@ -48,9 +48,9 @@ function P(e) {
       })) ? e : []
     }
   }, [o, g]);
-  (0, c.$)(v);
-  let C = (0, u.ZP)(o),
-    j = Array.from((0, u.uF)(C).values()),
+  (0, c.$)(C);
+  let v = (0, u.ZP)(o),
+    j = Array.from((0, u.uF)(v).values()),
     I = null != (t = null == g ? void 0 : g.filter(_.lm)) ? t : [],
     P = e => t => [E.IIU.PLAYING, E.IIU.WATCHING].includes(t.type) && (null != t.assets || null != t.state || null != t.details || null != t.party) && (null == t.session_id || t.session_id === e.voiceState.sessionId) || t.type === E.IIU.LISTENING,
     w = (0, a.e7)([m.Z], () => {
@@ -163,9 +163,9 @@ function N(e) {
   }), u = (0, a.e7)([f.Z], () => f.Z.getGuild(t.guild_id));
   return null == (0, p.KS)(t, u) ? null : (0, r.jsxs)("div", {
     className: o()(x.popoutHeaderContainer, I.popoutHeaderContainer),
-    children: [(0, r.jsx)(v.Z, {
+    children: [(0, r.jsx)(C.Z, {
       channel: t
-    }), c ? (0, r.jsx)(C.Z, {
+    }), c ? (0, r.jsx)(v.Z, {
       userCount: i,
       video: s,
       channel: t

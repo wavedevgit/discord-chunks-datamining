@@ -1,4 +1,4 @@
-/** Chunk was on 46922 **/
+/** Chunk was on 7093 **/
 n.d(t, {
   t: () => S
 }), n(388685);
@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(822857),
   O = n(479766),
   y = n(331663),
-  v = n(981631),
-  C = n(921944),
+  C = n(981631),
+  v = n(921944),
   j = n(46140);
 let E = "orb-announcement-modal-key";
 
@@ -47,22 +47,22 @@ function S() {
           onClose: n,
           transitionState: i
         } = t, o = async () => {
-          await n(), w(C.L.USER_DISMISS)
+          await n(), w(v.L.USER_DISMISS)
         };
         return (0, r.jsx)(e, {
           transitionState: i,
           onClose: o,
           ctaOnClick: () => {
-            w(C.L.TAKE_ACTION), (0, d.Q3)(a.z.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK, {
-              dismissAction: C.L.INDIRECT_ACTION,
-              groupName: C.R.VIRTUAL_CURRENCY_ONBOARDING
+            w(v.L.TAKE_ACTION), (0, d.Q3)(a.z.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK, {
+              dismissAction: v.L.INDIRECT_ACTION,
+              groupName: v.R.VIRTUAL_CURRENCY_ONBOARDING
             }), (0, d.Q3)(a.z.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK, {
-              dismissAction: C.L.INDIRECT_ACTION,
-              groupName: C.R.VIRTUAL_CURRENCY_ONBOARDING
+              dismissAction: v.L.INDIRECT_ACTION,
+              groupName: v.R.VIRTUAL_CURRENCY_ONBOARDING
             }), (0, b.Y)({
-              pageType: v.ZY5.ORBS_ANNOUNCEMENT_MODAL,
-              sectionType: v.jXE.ORBS_ANNOUNCEMENT_MODAL,
-              ctaObject: v.qAy.CTA_TO_ORB_INTRO_QUEST
+              pageType: C.ZY5.ORBS_ANNOUNCEMENT_MODAL,
+              sectionType: C.jXE.ORBS_ANNOUNCEMENT_MODAL,
+              ctaObject: C.qAy.CTA_TO_ORB_INTRO_QUEST
             }), (0, p.navigateToQuestHome)({
               questId: j.V6,
               fromContent: l.j.ORBS_ANNOUNCEMENT_MODAL
@@ -73,7 +73,7 @@ function S() {
     }, {
       modalKey: E,
       onCloseRequest: () => {
-        w(C.L.USER_DISMISS), (0, c.Mr3)(E)
+        w(v.L.USER_DISMISS), (0, c.Mr3)(E)
       }
     }))
   }, [N, e, t, w, x, I])

@@ -1,4 +1,4 @@
-/** Chunk was on 46922 **/
+/** Chunk was on 7093 **/
 n.d(t, {
   Z: () => x
 }), n(539854);
@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(55935),
   O = n(655354),
   y = n(809780),
-  v = n(981631),
-  C = n(388032),
+  C = n(981631),
+  v = n(388032),
   j = n(563142);
 let E = {
   left: 4,
@@ -105,7 +105,7 @@ function x(e) {
     location: "20e3b0_1"
   }, {
     autoTrackExposure: !1
-  }), O = g.jU.useSetting(), E = (0, h.P1)(l), x = !1, I = 0 === i.messages.length || o()(i.messages[0].timestamp).isSame(o()(), "day"), P = null != (n = null == (t = b.default.getUser(m.default.getId())) ? void 0 : t.hasFlag(v.xW$.SPAMMER)) && n, N = [];
+  }), O = g.jU.useSetting(), E = (0, h.P1)(l), x = !1, I = 0 === i.messages.length || o()(i.messages[0].timestamp).isSame(o()(), "day"), P = null != (n = null == (t = b.default.getUser(m.default.getId())) ? void 0 : t.hasFlag(C.xW$.SPAMMER)) && n, N = [];
   if (!i.collapsed) {
     let e = null,
       t = null,
@@ -131,7 +131,7 @@ function x(e) {
       color: s.zx.Colors.LINK,
       look: s.zx.Looks.LINK,
       onClick: e => a(e, n[n.length - 1].id),
-      children: [C.intl.string(C.t["9OB9ho"]), " ›"]
+      children: [v.intl.string(v.t["9OB9ho"]), " ›"]
     }, "view-all")), 0 === N.length && (N = [(0, r.jsx)(c.$jN, {}, "spinner")])
   }
   return x && E && u.Z.trackExposure({

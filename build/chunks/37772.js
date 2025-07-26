@@ -1,4 +1,4 @@
-/** Chunk was on 46922 **/
+/** Chunk was on 7093 **/
 n.d(t, {
   Z: () => G
 });
@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(594173),
   O = n(786761),
   y = n(493892),
-  v = n(901461),
-  C = n(739566),
+  C = n(901461),
+  v = n(739566),
   j = n(443877),
   E = n(492593),
   S = n(938353),
@@ -30,8 +30,8 @@ var r = n(255367),
   P = n(963550),
   N = n(845080),
   w = n(295790),
-  Z = n(145807),
-  T = n(56744),
+  T = n(145807),
+  Z = n(56744),
   A = n(834129),
   R = n(981631),
   D = n(388032),
@@ -104,7 +104,7 @@ let G = i.memo(function e(t) {
       allowLinks: !0,
       previewLinkTarget: !0
     }),
-    ei = (0, C.ZP)(s),
+    ei = (0, v.ZP)(s),
     el = (0, a.e7)([g.Z], () => s.hasFlag(R.iLy.HAS_THREAD) && g.Z.getChannel(b.default.castMessageIdAsChannelId(s.id))),
     eo = s.type === R.uaV.THREAD_STARTER_MESSAGE && K.state === p.Y.LOADED && null != Y,
     ea = !eo && void 0 === i,
@@ -132,7 +132,7 @@ let G = i.memo(function e(t) {
       [M.disableInteraction]: F,
       [M.groupStart]: t.isGroupStart
     }),
-    childrenRepliedMessage: (0, T.Z)(s, l, W, K, A),
+    childrenRepliedMessage: (0, Z.Z)(s, l, W, K, A),
     childrenHeader: (0, N.Z)(U(k({}, t), {
       author: ei,
       guildId: l.guild_id
@@ -160,14 +160,14 @@ let G = i.memo(function e(t) {
       enabledContentHarmTypeFlags: ec,
       ctaButtonType: eu
     }),
-    childrenExecutedCommand: (0, Z.Z)(s, l, A),
+    childrenExecutedCommand: (0, T.Z)(s, l, A),
     childrenMessageContent: (0, P.Z)(t, en),
     childrenSystemMessage: (0, w.Z)(t),
     onContextMenu: G,
     onClick: V,
     hasThread: !1 !== H && null != el && s.hasFlag(R.iLy.HAS_THREAD),
     hasReply: s.type === R.uaV.REPLY,
-    isSystemMessage: (0, v.Z)(s),
+    isSystemMessage: (0, C.Z)(s),
     messageRef: es,
     author: ei
   })

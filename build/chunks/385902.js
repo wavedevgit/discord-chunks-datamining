@@ -1,4 +1,4 @@
-/** Chunk was on 46922 **/
+/** Chunk was on 7093 **/
 n.d(t, {
   K: () => _,
   _: () => b
@@ -43,8 +43,8 @@ function _(e, t) {
   var n, d, b, _;
   let O = (0, l.e7)([o.Z], () => o.Z.getGuild(e)),
     y = (0, l.e7)([a.Z], () => a.Z.hasLayers()),
-    v = null != (_ = (0, u.Z)(e)) && _,
-    C = (0, c.q8)(e, t),
+    C = null != (_ = (0, u.Z)(e)) && _,
+    v = (0, c.q8)(e, t),
     j = (0, l.e7)([s.Z], () => s.Z.getStateForGuild(e)),
     E = (null == j || null == (n = j.unlockedPowerups) ? void 0 : n[i.A$]) != null,
     S = null == j || null == (d = j.allPowerups) ? void 0 : d[i.A$],
@@ -53,11 +53,11 @@ function _(e, t) {
     {
       onActivate: P
     } = (0, p._C)(e, I),
-    N = !y && v && C && E && null != S && null != x && null != I && null != O,
+    N = !y && C && v && E && null != S && null != x && null != I && null != O,
     w = r.useCallback(e => {
       P(e)
     }, [P]),
-    Z = r.useMemo(() => {
+    T = r.useMemo(() => {
       if (!N) return null;
       let e = (0, h.Z)(x);
       return {
@@ -79,6 +79,6 @@ function _(e, t) {
     }, [N, S, x, O, w]);
   return {
     shouldShow: N,
-    modalConfig: Z
+    modalConfig: T
   }
 }

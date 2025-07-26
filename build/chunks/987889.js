@@ -1,4 +1,4 @@
-/** Chunk was on 46922 **/
+/** Chunk was on 7093 **/
 n.d(t, {
   Z: () => S
 }), n(388685);
@@ -60,7 +60,7 @@ let O = {
     return t ? ["ACK", ...n] : n
   }, [e, t]);
 
-function v(e) {
+function C(e) {
   let {
     label: t,
     onClick: n,
@@ -91,7 +91,7 @@ function v(e) {
   })
 }
 
-function C(e) {
+function v(e) {
   let {
     channel: t,
     message: n,
@@ -235,11 +235,11 @@ function S(e) {
       let i = j[e];
       switch (i.type) {
         case "standard":
-          return (0, r.jsx)(v, _(b({}, i), {
+          return (0, r.jsx)(C, _(b({}, i), {
             message: t
           }), e);
         case "menu":
-          return (0, r.jsx)(C, _(b({}, i), {
+          return (0, r.jsx)(v, _(b({}, i), {
             channel: n,
             message: t
           }), e)

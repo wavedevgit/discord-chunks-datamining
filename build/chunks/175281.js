@@ -1,4 +1,4 @@
-/** Chunk was on 46922 **/
+/** Chunk was on 7093 **/
 n.d(t, {
   Z: () => A
 }), n(953529), n(388685), n(539854);
@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(607070),
   O = n(460181),
   y = n(585483),
-  v = n(264549),
-  C = n(981631),
+  C = n(264549),
+  v = n(981631),
   j = n(388032),
   E = n(268751);
 
@@ -42,13 +42,13 @@ let x = {
 
 function I(e) {
   switch (e.keyCode) {
-    case C.yXg.ARROW_UP:
+    case v.yXg.ARROW_UP:
       return "UP";
-    case C.yXg.ARROW_DOWN:
+    case v.yXg.ARROW_DOWN:
       return "DOWN";
-    case C.yXg.ARROW_LEFT:
+    case v.yXg.ARROW_LEFT:
       return "LEFT";
-    case C.yXg.ARROW_RIGHT:
+    case v.yXg.ARROW_RIGHT:
       return "RIGHT";
     default:
       return null
@@ -109,16 +109,16 @@ function w() {
     })
   })
 }
-class Z extends i.PureComponent {
+class T extends i.PureComponent {
   componentDidMount() {
-    this.lastInputedKeys = [], y.S.subscribe(C.CkL.SCROLL_PAGE_UP, this.scrollPageUp), y.S.subscribe(C.CkL.SCROLL_PAGE_DOWN, this.scrollPageDown), window.addEventListener("keydown", this.handleKeyDown, {
+    this.lastInputedKeys = [], y.S.subscribe(v.CkL.SCROLL_PAGE_UP, this.scrollPageUp), y.S.subscribe(v.CkL.SCROLL_PAGE_DOWN, this.scrollPageDown), window.addEventListener("keydown", this.handleKeyDown, {
       capture: !0
     }), window.addEventListener("keyup", this.handleKeyUp, {
       capture: !0
     })
   }
   componentWillUnmount() {
-    y.S.unsubscribe(C.CkL.SCROLL_PAGE_UP, this.scrollPageUp), y.S.unsubscribe(C.CkL.SCROLL_PAGE_DOWN, this.scrollPageDown), window.removeEventListener("keydown", this.handleKeyDown, {
+    y.S.unsubscribe(v.CkL.SCROLL_PAGE_UP, this.scrollPageUp), y.S.unsubscribe(v.CkL.SCROLL_PAGE_DOWN, this.scrollPageDown), window.removeEventListener("keydown", this.handleKeyDown, {
       capture: !0
     }), window.removeEventListener("keyup", this.handleKeyUp, {
       capture: !0
@@ -147,22 +147,22 @@ class Z extends i.PureComponent {
         children: j.intl.string(j.t["2t19lZ"])
       }), (0, r.jsxs)("div", {
         className: E.ddrArrows,
-        children: [(0, r.jsx)(T, {
+        children: [(0, r.jsx)(Z, {
           arrow: "LEFT",
           isActive: n,
           className: E.left,
           children: "left"
-        }), (0, r.jsx)(T, {
+        }), (0, r.jsx)(Z, {
           arrow: "DOWN",
           isActive: t,
           className: E.down,
           children: "down"
-        }), (0, r.jsx)(T, {
+        }), (0, r.jsx)(Z, {
           arrow: "UP",
           isActive: e,
           className: E.up,
           children: "up"
-        }), (0, r.jsx)(T, {
+        }), (0, r.jsx)(Z, {
           arrow: "RIGHT",
           isActive: i,
           className: E.right,
@@ -238,7 +238,7 @@ class Z extends i.PureComponent {
         })
       }]
     })), S(this, "handleKeyDown", e => {
-      if (this.lastInputedKeys.push(e.keyCode), this.lastInputedKeys = this.lastInputedKeys.slice(-5), this.lastInputedKeys[0] === C.yXg.H && this.lastInputedKeys[1] === C.yXg.H && this.lastInputedKeys[2] === C.yXg.ARROW_RIGHT && this.lastInputedKeys[3] === C.yXg.N && this.lastInputedKeys[4] === C.yXg.K && this.props.activateRagingDemon(), this.props.keyboardModeEnabled) return;
+      if (this.lastInputedKeys.push(e.keyCode), this.lastInputedKeys = this.lastInputedKeys.slice(-5), this.lastInputedKeys[0] === v.yXg.H && this.lastInputedKeys[1] === v.yXg.H && this.lastInputedKeys[2] === v.yXg.ARROW_RIGHT && this.lastInputedKeys[3] === v.yXg.N && this.lastInputedKeys[4] === v.yXg.K && this.props.activateRagingDemon(), this.props.keyboardModeEnabled) return;
       let t = I(e);
       null !== t && (e.stopPropagation(), e.preventDefault(), this.arrowDown({
         direction: t
@@ -257,7 +257,7 @@ class Z extends i.PureComponent {
   }
 }
 
-function T(e) {
+function Z(e) {
   let {
     isActive: t,
     arrow: n,
@@ -304,11 +304,11 @@ function A(e) {
       parentComponent: "KeyboardShortcutsModal",
       children: (0, r.jsx)(p.W, {
         component: "div",
-        children: l ? (0, r.jsx)(v.Z, {
+        children: l ? (0, r.jsx)(C.Z, {
           handleDemonClose: function() {
             c(!1), setTimeout(n, 500)
           }
-        }, "raging-demo") : (0, r.jsx)(Z, {
+        }, "raging-demo") : (0, r.jsx)(T, {
           content: u,
           keyboardModeEnabled: d,
           activateRagingDemon: function() {

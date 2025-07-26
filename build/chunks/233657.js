@@ -1,4 +1,4 @@
-/** Chunk was on 46922 **/
+/** Chunk was on 7093 **/
 n.d(t, {
   Z: () => _
 });
@@ -59,8 +59,8 @@ function _(e) {
   } = (0, i.cj)([u.ZP], () => ({
     hasUnread: u.ZP.hasUnread(t.id, p.W.GUILD_EVENT),
     mentionCount: u.ZP.getMentionCount(t.id, p.W.GUILD_EVENT)
-  }), [t.id]), v = (0, i.e7)([d.ZP], () => d.ZP.isMuteScheduledEventsEnabled(t.id));
-  async function C() {
+  }), [t.id]), C = (0, i.e7)([d.ZP], () => d.ZP.isMuteScheduledEventsEnabled(t.id));
+  async function v() {
     await (0, o.ZDy)(async () => {
       let {
         default: e
@@ -83,7 +83,7 @@ function _(e) {
     }),
     text: E,
     selected: _,
-    onClick: C,
+    onClick: v,
     onContextMenu: e => {
       (0, a.jW)(e, async () => {
         let {
@@ -94,8 +94,8 @@ function _(e) {
         }))
       })
     },
-    showUnread: O && !v,
-    trailing: !v && y > 0 ? (0, r.jsx)(o.mAB, {
+    showUnread: O && !C,
+    trailing: !C && y > 0 ? (0, r.jsx)(o.mAB, {
       className: g.numberBadge,
       disableColor: !0,
       count: y

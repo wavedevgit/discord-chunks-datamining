@@ -1,4 +1,4 @@
-/** Chunk was on 46922 **/
+/** Chunk was on 7093 **/
 n.d(t, {
   Z: () => D
 }), n(415506), n(388685);
@@ -19,8 +19,8 @@ var r, i = n(255367),
   _ = n(306680),
   O = n(944486),
   y = n(594174),
-  v = n(451478),
-  C = n(276952),
+  C = n(451478),
+  v = n(276952),
   j = n(682662),
   E = n(662146),
   S = n(674552),
@@ -50,7 +50,7 @@ function w(e) {
   return e
 }
 
-function Z(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -62,7 +62,7 @@ function Z(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = {
+let Z = {
   friction: 28,
   tension: 600
 };
@@ -73,9 +73,9 @@ function A(e) {
     case "opacity":
       return w({
         duration: 150
-      }, T);
+      }, Z);
     case "scale":
-      return w({}, T);
+      return w({}, Z);
     default:
       throw Error("DirectMessage: getSpringConfigs() - Invalid spring ".concat(String(e)))
   }
@@ -86,7 +86,7 @@ class R extends(r = l.PureComponent) {
       controller: t
     } = this.state;
     e(), t.update({
-      immediate: !v.Z.isFocused(),
+      immediate: !C.Z.isFocused(),
       height: 1,
       opacity: 1,
       scale: 1,
@@ -114,7 +114,7 @@ class R extends(r = l.PureComponent) {
     this.setState({
       animating: !0
     }, () => t.update({
-      immediate: !v.Z.isFocused(),
+      immediate: !C.Z.isFocused(),
       height: 0,
       opacity: 0,
       scale: 0,
@@ -166,7 +166,7 @@ class R extends(r = l.PureComponent) {
     return (0, i.jsx)(o.animated.div, {
       style: this.getAnimatedStyle(),
       children: (0, i.jsxs)(j.H, {
-        children: [(0, i.jsx)(C.Z, {
+        children: [(0, i.jsx)(v.Z, {
           hovered: !m && f,
           selected: !m && n,
           unread: !m && d,
@@ -234,7 +234,7 @@ class R extends(r = l.PureComponent) {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("98783"), n.e("53912"), n.e("56826"), n.e("45903")]).then(n.bind(n, 131404));
-        return n => (0, i.jsx)(e, Z(w({}, n), {
+        return n => (0, i.jsx)(e, T(w({}, n), {
           channel: t,
           user: r
         }))
@@ -242,7 +242,7 @@ class R extends(r = l.PureComponent) {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("53912"), n.e("2016")]).then(n.bind(n, 354741));
-        return n => (0, i.jsx)(e, Z(w({}, n), {
+        return n => (0, i.jsx)(e, T(w({}, n), {
           channel: t,
           selected: !1
         }))
@@ -266,18 +266,18 @@ let D = l.forwardRef(function(e, t) {
     g = (0, s.e7)([O.Z], () => O.Z.getChannelId(), []),
     y = (0, s.e7)([_.ZP], () => _.ZP.getMentionCount(n), [n]),
     {
-      isFacepileEnabled: v
+      isFacepileEnabled: C
     } = f.Z.useExperiment({
       location: "unread_direct_message"
     }, {
       autoTrackExposure: !1
     }),
-    C = o === n,
+    v = o === n,
     j = !1,
     E = !1;
-  C && (j = u === x.WtW.VOICE, E = u === x.WtW.VIDEO);
+  v && (j = u === x.WtW.VOICE, E = u === x.WtW.VIDEO);
   let S = (0, c.dQu)(c.TVs.modules.guildbar.AVATAR_SIZE);
-  return (0, i.jsx)(R, Z(w({}, e), {
+  return (0, i.jsx)(R, T(w({}, e), {
     ref: t,
     channelName: r,
     unread: y > 0,
@@ -286,8 +286,8 @@ let D = l.forwardRef(function(e, t) {
     audio: j,
     video: E,
     stream: h,
-    isCurrentUserInThisDMCall: C,
-    isGDMFacepileEnabled: v,
+    isCurrentUserInThisDMCall: v,
+    isGDMFacepileEnabled: C,
     size: S,
     treeItemProps: l
   }))

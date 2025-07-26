@@ -1,4 +1,4 @@
-/** Chunk was on 46922 **/
+/** Chunk was on 7093 **/
 n.d(t, {
   Z: () => j,
   p: () => x
@@ -66,14 +66,14 @@ function y(e, t) {
   }
   return i
 }
-let v = () => {
+let C = () => {
     let e = (0, a.e7)([d.Z], () => d.Z.getSavedMessageCount());
     return (0, i.useMemo)(() => {
       let t = [g.V5.ALL, g.V5.MENTIONS];
       return ((0, h.Z)() || e > 0) && t.push(g.V5.BOOKMARKS), t.push(g.V5.ANNOUNCEMENTS), t
     }, [e])
   },
-  C = {
+  v = {
     [g.V5.ALL]: !1,
     [g.V5.BOOKMARKS]: !1,
     [g.V5.MENTIONS]: !1,
@@ -82,8 +82,8 @@ let v = () => {
 
 function j() {
   let e = g.by,
-    t = v(),
-    [n, l] = (0, i.useState)(C),
+    t = C(),
+    [n, l] = (0, i.useState)(v),
     a = t.filter(e => !n[e]),
     {
       selectedFilter: c,
@@ -135,7 +135,7 @@ function S(e) {
     hiddenFilters: t
   } = e, n = (0, p.fJ)(), l = (0, i.useRef)(null), [o, a] = (0, i.useState)(!1), [c, d] = (0, i.useState)(!1), h = g.by, {
     selectedFilter: m,
-    setSelectedFilter: v
+    setSelectedFilter: C
   } = (0, f.Z)();
   return 0 === t.length ? null : (0, r.jsx)(s.yRy, {
     position: "bottom",
@@ -157,7 +157,7 @@ function S(e) {
         children: t.map(e => (0, r.jsx)(s.sNh, {
           id: e,
           action: () => {
-            v(m === e ? g.V5.ALL : e), (0, p.RZ)({
+            C(m === e ? g.V5.ALL : e), (0, p.RZ)({
               section: e,
               enabled: !0,
               viewId: n
@@ -187,7 +187,7 @@ function S(e) {
 function x(e) {
   let {
     className: t
-  } = e, n = (0, p.fJ)(), l = v(), a = (0, i.useRef)(null), [c, d] = (0, i.useState)(!1), [h, C] = (0, i.useState)(!1), j = g.by, {
+  } = e, n = (0, p.fJ)(), l = C(), a = (0, i.useRef)(null), [c, d] = (0, i.useState)(!1), [h, v] = (0, i.useState)(!1), j = g.by, {
     selectedFilter: E,
     setSelectedFilter: S
   } = (0, f.Z)();
@@ -238,10 +238,10 @@ function x(e) {
         },
         onMouseEnter: () => {
           var t;
-          C(!0), null == (t = e.onMouseEnter) || t.call(e)
+          v(!0), null == (t = e.onMouseEnter) || t.call(e)
         },
         onMouseLeave: () => {
-          C(!1)
+          v(!1)
         },
         children: (0, r.jsx)(s.gXV, {
           size: "xs",

@@ -1,6 +1,6 @@
-/** Chunk was on 46922 **/
+/** Chunk was on 7093 **/
 n.d(t, {
-  Z: () => T
+  Z: () => Z
 });
 var r = n(255367),
   i = n(73800),
@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(938475),
   O = n(714794),
   y = n(876548),
-  v = n(25601),
-  C = n(207055),
+  C = n(25601),
+  v = n(207055),
   j = n(981631),
   E = n(124368),
   S = n(388032),
@@ -61,7 +61,7 @@ function w(e, t) {
   }), e
 }
 
-function Z(e) {
+function T(e) {
   let {
     style: t,
     withGuildIcon: n,
@@ -124,12 +124,12 @@ function Z(e) {
       }))
   }
 }
-let T = i.memo(function(e) {
+let Z = i.memo(function(e) {
   let {
     thread: t,
     isSelectedChannel: l,
     isSelectedVoice: P,
-    isLast: T,
+    isLast: Z,
     withGuildIcon: A
   } = e, R = (0, s.e7)([_.ZP], () => _.ZP.getVoiceStatesForChannel(t), [t]), D = (0, s.e7)([b.Z], () => b.Z.hasVideo(t.id)), {
     unread: L,
@@ -182,9 +182,9 @@ let T = i.memo(function(e) {
     className: o()(x.containerDefault, {
       [x.selected]: l
     }),
-    children: [(0, r.jsx)(Z, {
+    children: [(0, r.jsx)(T, {
       withGuildIcon: A
-    }), T ? null : (0, r.jsx)(Z, {
+    }), Z ? null : (0, r.jsx)(T, {
       withGuildIcon: A,
       inverted: !0,
       style: {
@@ -229,7 +229,7 @@ let T = i.memo(function(e) {
                 userCount: F,
                 video: D,
                 channel: t
-              }) : null, (0, O.Z)(M) ? (0, r.jsx)(v.Z, {
+              }) : null, (0, O.Z)(M) ? (0, r.jsx)(C.Z, {
                 mentionsCount: M,
                 isMentionLowImportance: k
               }) : null]
@@ -237,7 +237,7 @@ let T = i.memo(function(e) {
           })
         }))]
       })
-    }), (0, r.jsx)(C.Z, {
+    }), (0, r.jsx)(v.Z, {
       channel: t,
       collapsed: !P,
       collapsedMax: 6,

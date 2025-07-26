@@ -1,4 +1,4 @@
-/** Chunk was on 46922 **/
+/** Chunk was on 7093 **/
 n.d(t, {
   V: () => O
 }), n(388685);
@@ -43,7 +43,7 @@ function _(e) {
     start: b
   }, O), [b, O]);
   if (null == b) return null;
-  let v = [..._ ? [g.intl.string(f.default.jfDsyM)] : [], g.intl.string(g.t.BMTj29), y];
+  let C = [..._ ? [g.intl.string(f.default.jfDsyM)] : [], g.intl.string(g.t.BMTj29), y];
   return (0, r.jsx)(o.P3F, {
     className: m.container,
     onClick: n,
@@ -52,7 +52,7 @@ function _(e) {
       variant: "text-xs/medium",
       color: "text-feedback-positive",
       lineClamp: 1,
-      children: v.join(" \xb7 ")
+      children: C.join(" \xb7 ")
     })
   })
 }

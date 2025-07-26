@@ -1,6 +1,6 @@
-/** Chunk was on 46922 **/
+/** Chunk was on 7093 **/
 n.d(t, {
-  Z: () => Z
+  Z: () => T
 });
 var r = n(255367);
 n(73800);
@@ -21,8 +21,8 @@ var i = n(120356),
   _ = n(703656),
   O = n(984933),
   y = n(430824),
-  v = n(626135),
-  C = n(434479),
+  C = n(626135),
+  v = n(434479),
   j = n(981631),
   E = n(176505),
   S = n(629481),
@@ -66,8 +66,8 @@ function w(e) {
     guildId: t,
     selected: n,
     handleClick: i
-  } = e, u = (0, f.RF)(t, "guild_shop_channel_row"), g = (0, o.e7)([y.Z], () => y.Z.getGuild(t)), E = (null == g ? void 0 : g.features.has(j.oNc.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE)) === !0, w = "false" === s.K.get(S.tM, "false"), Z = (0, o.e7)([d.Z], () => d.Z.useReducedMotion);
-  return (0, r.jsx)(C.m, {
+  } = e, u = (0, f.RF)(t, "guild_shop_channel_row"), g = (0, o.e7)([y.Z], () => y.Z.getGuild(t)), E = (null == g ? void 0 : g.features.has(j.oNc.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE)) === !0, w = "false" === s.K.get(S.tM, "false"), T = (0, o.e7)([d.Z], () => d.Z.useReducedMotion);
+  return (0, r.jsx)(v.m, {
     id: "shop-".concat(t),
     className: l()(I.previewChannelRow, {
       [I.selected]: n,
@@ -84,7 +84,7 @@ function w(e) {
     onClick: i,
     trailing: (0, r.jsxs)("div", {
       className: I.gifSection,
-      children: [Z ? (0, r.jsx)(c.IGR, {
+      children: [T ? (0, r.jsx)(c.IGR, {
         color: c.TVs.unsafe_rawColors.BRAND_260.css,
         text: x.intl.string(x.t.y2b7CA),
         className: I.newBadge
@@ -95,7 +95,7 @@ function w(e) {
       }), n && (0, r.jsx)(c.P3F, {
         className: I.closeButton,
         onClick: e => {
-          if (e.stopPropagation(), (0, b.Q3)(a.z.SERVER_SHOP_PHANTOM_PREVIEW), v.default.track(j.rMx.GUILD_SHOP_PREVIEW_CLICK, N(P({}, (0, h.hH)(t)), {
+          if (e.stopPropagation(), (0, b.Q3)(a.z.SERVER_SHOP_PHANTOM_PREVIEW), C.default.track(j.rMx.GUILD_SHOP_PREVIEW_CLICK, N(P({}, (0, h.hH)(t)), {
               action_taken: S.mz.DISMISS_CHANNEL_ROW
             })), !u || !E) {
             var n;
@@ -112,7 +112,7 @@ function w(e) {
   })
 }
 
-function Z(e) {
+function T(e) {
   let {
     guild: t,
     selected: i
@@ -123,7 +123,7 @@ function Z(e) {
     guildId: t.id,
     selected: i,
     handleClick: o
-  }) : (0, r.jsx)(C.m, {
+  }) : (0, r.jsx)(v.m, {
     id: "shop-".concat(t.id),
     renderIcon: e => (0, r.jsx)(m.Z, {
       width: 20,

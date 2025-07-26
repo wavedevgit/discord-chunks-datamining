@@ -1,4 +1,4 @@
-/** Chunk was on 46922 **/
+/** Chunk was on 7093 **/
 n.d(t, {
   Z: () => y
 }), n(388685), n(642613);
@@ -35,7 +35,7 @@ function y(e) {
       id: t
     } = e;
     return f.Z.getChannel(t)
-  }).filter(g.lm).sort((e, t) => m.default.compare(e.id, t.id)).value(), [t.oldestReadMessageId, n.guild_id, n.id]), v = i.useCallback((e, t) => {
+  }).filter(g.lm).sort((e, t) => m.default.compare(e.id, t.id)).value(), [t.oldestReadMessageId, n.guild_id, n.id]), C = i.useCallback((e, t) => {
     (0, p.ok)(e, t, _.on.INBOX)
   }, []);
   return i.useEffect(() => {
@@ -53,7 +53,7 @@ function y(e) {
       children: (0, r.jsx)(u.ZP, {
         className: O.forumPost,
         threadId: e.id,
-        goToThread: v
+        goToThread: C
       })
     }, e.id))
   })

@@ -1,4 +1,4 @@
-/** Chunk was on 46922 **/
+/** Chunk was on 7093 **/
 n.d(t, {
   Z: () => x
 }), n(415506), n(388685);
@@ -21,7 +21,7 @@ var r = n(255367),
   O = n(490897),
   y = n(915887);
 
-function v(e, t, n) {
+function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,14 +30,14 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function C(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      C(e, t, n[t])
     })
   }
   return e
@@ -80,7 +80,7 @@ class E extends m.ZP {
     return a ? n(i(s)) : s
   }
   constructor(...e) {
-    super(...e), v(this, "handleContextMenu", e => {
+    super(...e), C(this, "handleContextMenu", e => {
       let {
         channel: t
       } = this.props, i = f.Z.getGuild(t.getGuildId());
@@ -90,7 +90,7 @@ class E extends m.ZP {
         } = await n.e("99905").then(n.bind(n, 649400));
         return n => {
           var l, o;
-          return (0, r.jsx)(e, (l = C({}, n), o = o = {
+          return (0, r.jsx)(e, (l = v({}, n), o = o = {
             channel: t,
             guild: i
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
@@ -105,7 +105,7 @@ class E extends m.ZP {
           }), l))
         }
       })
-    }), v(this, "handleClick", e => {
+    }), C(this, "handleClick", e => {
       let t = e.getGuildId();
       if (null == t) throw Error("TextChannel, transitionTo: Channel does not have a guildId");
       (0, h.uL)(_.Z5c.CHANNEL(t, e.id), {
@@ -133,5 +133,5 @@ let S = (0, u.B)(E),
         canReorderChannel: !0 !== i && null != e ? g.Z.can(_.Plq.MANAGE_CHANNELS, e) : g.Z.can(_.Plq.MANAGE_CHANNELS, n)
       }
     });
-    return (0, r.jsx)(S, C({}, l, e))
+    return (0, r.jsx)(S, v({}, l, e))
   })

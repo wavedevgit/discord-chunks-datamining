@@ -1,6 +1,6 @@
-/** Chunk was on 46922 **/
+/** Chunk was on 7093 **/
 n.d(t, {
-  _: () => T
+  _: () => Z
 }), n(642613), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(74365),
   O = n(618857),
   y = n(695346),
-  v = n(23750),
-  C = n(592125),
+  C = n(23750),
+  v = n(592125),
   j = n(594174),
   E = n(823379),
   S = n(324081),
@@ -30,14 +30,14 @@ var r = n(255367),
   P = n(981631),
   N = n(388032),
   w = n(142857);
-let Z = {
+let T = {
   offset: {
     left: 4,
     right: -12
   }
 };
 
-function T(e) {
+function Z(e) {
   let {
     setTab: t,
     closePopout: n
@@ -134,7 +134,7 @@ function R(e) {
     scheduledMessages: t
   } = e, n = i.useMemo(() => t.reduce((e, t) => {
     var n, r;
-    let i = C.Z.getChannel(t.scheduledMessage.channelId);
+    let i = v.Z.getChannel(t.scheduledMessage.channelId);
     return null == i || (e[i.id] = {
       channel: i,
       scheduledMessages: [...null != (r = null == (n = e[i.id]) ? void 0 : n.scheduledMessages) ? r : [], t]
@@ -169,7 +169,7 @@ let D = i.memo(function(e) {
     scheduledMessage: t,
     channel: n,
     isPendingDeletion: l
-  } = e, a = new v.ZP({
+  } = e, a = new C.ZP({
     id: t.scheduledMessageId,
     content: t.scheduledMessage.content,
     author: j.default.getUser(t.userId),
@@ -235,7 +235,7 @@ let D = i.memo(function(e) {
           className: w.message,
           compact: y.jU.getSetting(),
           animateAvatar: !1,
-          focusProps: Z
+          focusProps: T
         }, a.id), (0, r.jsx)(h.P3F, {
           className: w.cancelMessageButton,
           onClick: d,

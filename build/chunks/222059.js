@@ -1,4 +1,4 @@
-/** Chunk was on 46922 **/
+/** Chunk was on 7093 **/
 n.d(t, {
   u: () => D
 }), n(388685);
@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(431),
   O = n(774343),
   y = n(417363),
-  v = n(941128),
-  C = n(780570),
+  C = n(941128),
+  v = n(780570),
   j = n(278464),
   E = n(276952),
   S = n(682662),
@@ -30,8 +30,8 @@ var r = n(255367),
   P = n(981631),
   N = n(474936),
   w = n(871465),
-  Z = n(388032),
-  T = n(823306);
+  T = n(388032),
+  Z = n(823306);
 let A = {
   origin: {
     x: -16,
@@ -53,15 +53,15 @@ function R(e) {
     badge: p,
     link: m,
     showProgressBadge: b
-  } = e, [_, O] = i.useState(!1), [y, v] = i.useState(!1), [C, j] = i.useState(null), [N, R] = i.useState(0), D = (0, l.Ie)("home"), L = (0, d.oq)().activePanel === d.wh.APP_ICON, M = () => {
-    j(null), R(0), clearTimeout(C)
+  } = e, [_, O] = i.useState(!1), [y, C] = i.useState(!1), [v, j] = i.useState(null), [N, R] = i.useState(0), D = (0, l.Ie)("home"), L = (0, d.oq)().activePanel === d.wh.APP_ICON, M = () => {
+    j(null), R(0), clearTimeout(v)
   };
   if (null == h) return null;
-  let k = Z.intl.string(Z.t.YUU0RE);
-  y && (k = a.K.get(P.wli) ? Z.intl.string(Z.t.nkq1l5) : Z.intl.string(Z.t.Be8Q5O));
+  let k = T.intl.string(T.t.YUU0RE);
+  y && (k = a.K.get(P.wli) ? T.intl.string(T.t.nkq1l5) : T.intl.string(T.t.Be8Q5O));
   let U = null;
   !o && b && (U = (0, r.jsx)(c.Z, {
-    className: T.downloadProgress,
+    className: Z.downloadProgress,
     determineOwnVisibility: !1
   }));
   let G = o || _ || L,
@@ -93,16 +93,16 @@ function R(e) {
         onMouseEnter: () => O(!0),
         onMouseLeave: () => O(!1),
         onClick: () => {
-          if (!__OVERLAY__ && (null != C && clearTimeout(C), j(setTimeout(M, 500)), R(N + 1), 15 === N)) {
+          if (!__OVERLAY__ && (null != v && clearTimeout(v), j(setTimeout(M, 500)), R(N + 1), 15 === N)) {
             M();
             let e = !a.K.get(P.wli);
-            a.K.set(P.wli, e), e && a.K.set(w.O5, !0), e ? (0, f.GN)("discodo") : (0, f.GN)("user_leave"), v(!0), setTimeout(() => {
-              v(!1)
+            a.K.set(P.wli, e), e && a.K.set(w.O5, !0), e ? (0, f.GN)("discodo") : (0, f.GN)("user_leave"), C(!0), setTimeout(() => {
+              C(!1)
             }, 1e3)
           }
         },
         selected: G,
-        ariaLabel: Z.intl.string(Z.t.YUU0RE),
+        ariaLabel: T.intl.string(T.t.YUU0RE),
         "aria-owns": "guild-list-unread-dms",
         "aria-selected": o
       }, D), n = n = {
@@ -129,7 +129,7 @@ function R(e) {
       }), t))
     });
   return (0, r.jsx)("div", {
-    className: T.tutorialContainer,
+    className: Z.tutorialContainer,
     children: (0, r.jsx)(g.Z, {
       inlineSpecs: A,
       tutorialId: "friends-list",
@@ -138,7 +138,7 @@ function R(e) {
         children: [(0, r.jsx)(E.Z, {
           selected: o,
           hovered: _,
-          className: T.pill
+          className: Z.pill
         }), (0, r.jsx)(x.Z, {
           color: s.ua7.Colors.PRIMARY,
           hideOnClick: !0,
@@ -153,13 +153,13 @@ function R(e) {
 
 function D() {
   let e = (0, j.n)(),
-    t = (0, o.e7)([v.Z, y.Z], () => {
-      let e = (0, c.E)(v.Z.activeItems, y.Z),
+    t = (0, o.e7)([C.Z, y.Z], () => {
+      let e = (0, c.E)(C.Z.activeItems, y.Z),
         {
           total: t,
           progress: n
-        } = C.lK(e),
-        r = C.xI(n, t);
+        } = v.lK(e),
+        r = v.xI(n, t);
       return r > 0 && r < 100
     }),
     n = (0, p.If)(),

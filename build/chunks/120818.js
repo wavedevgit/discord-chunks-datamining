@@ -1,4 +1,4 @@
-/** Chunk was on 46922 **/
+/** Chunk was on 7093 **/
 n.d(t, {
   T: () => _
 });
@@ -28,13 +28,13 @@ let _ = i.memo(function(e) {
   var t, n;
   let {
     guild: _
-  } = e, O = (0, o.e7)([c.Z], () => c.Z.getNewMemberActions(_.id), [_.id]), y = (0, o.e7)([u.Z], () => u.Z.getCompletedActions(_.id)), v = i.useMemo(() => {
+  } = e, O = (0, o.e7)([c.Z], () => c.Z.getNewMemberActions(_.id), [_.id]), y = (0, o.e7)([u.Z], () => u.Z.getCompletedActions(_.id)), C = i.useMemo(() => {
     if (null == O || null == y) return 0;
     let e = 0;
     return O.forEach(t => {
       null != y[t.channelId] && e++
     }), e
-  }, [y, O]), C = null == O ? 0 : O.length, j = (0, l.JA)("progress-bar-".concat(_.id));
+  }, [y, O]), v = null == O ? 0 : O.length, j = (0, l.JA)("progress-bar-".concat(_.id));
   return (0, r.jsxs)("li", {
     children: [(0, r.jsxs)(a.P3F, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -77,8 +77,8 @@ let _ = i.memo(function(e) {
             className: m.rightText,
             children: g.intl.format(g.t.eqZ1lZ, {
               numberHook: b,
-              total: C.toString(),
-              completed: v.toString()
+              total: v.toString(),
+              completed: C.toString()
             })
           }), (0, r.jsx)(h.Z, {
             className: m.arrow,
@@ -90,7 +90,7 @@ let _ = i.memo(function(e) {
       }), (0, r.jsx)(a.Exd, {
         className: m.progressBar,
         foregroundGradientColor: [(0, s.Lq)(p.Ilk.GREEN_300), (0, s.Lq)(p.Ilk.GREEN_230)],
-        percent: v / C * 100 + 3,
+        percent: C / v * 100 + 3,
         animate: !0
       })]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

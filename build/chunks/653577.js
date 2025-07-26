@@ -1,4 +1,4 @@
-/** Chunk was on 46922 **/
+/** Chunk was on 7093 **/
 n.d(t, {
   Z: () => _
 });
@@ -26,8 +26,8 @@ function _(e) {
     subtitle: _,
     onClick: O,
     enableHangStatus: y,
-    allowChannelTopic: v
-  } = e, C = (0, a.e7)([u.Z], () => u.Z.getChannelStatus(t)), j = null != C && C.length > 0, E = (0, c.ZP)(t, !0), S = (!y || !!v) && E, x = null != _ && _.length > 0;
+    allowChannelTopic: C
+  } = e, v = (0, a.e7)([u.Z], () => u.Z.getChannelStatus(t)), j = null != v && v.length > 0, E = (0, c.ZP)(t, !0), S = (!y || !!C) && E, x = null != _ && _.length > 0;
   if (i.useEffect(() => {
       j && p.default.track(f.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
         channel_id: t.id,
@@ -42,7 +42,7 @@ function _(e) {
       variant: "text-xs/medium",
       className: o()(m.statusText, b.markup),
       children: (0, r.jsx)(d.Z, {
-        children: h.Z.parseVoiceChannelStatus(C, !0, {
+        children: h.Z.parseVoiceChannelStatus(v, !0, {
           channelId: t.id
         })
       })

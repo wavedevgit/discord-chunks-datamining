@@ -1,4 +1,4 @@
-/** Chunk was on 46922 **/
+/** Chunk was on 7093 **/
 n.d(t, {
   Z: () => S
 }), n(388685);
@@ -85,7 +85,7 @@ function y(e) {
   })) : O
 }
 
-function v(e) {
+function C(e) {
   let {
     activity: t,
     embeddedApp: n,
@@ -110,7 +110,7 @@ function v(e) {
   })
 }
 
-function C(e) {
+function v(e) {
   let {
     activity: t,
     user: n,
@@ -193,11 +193,11 @@ function S(e) {
         onOpenSpotifyAlbum: g
       }), (0, r.jsxs)("div", {
         className: _.detailsAndAvatarsContainer,
-        children: [(0, r.jsx)(v, {
+        children: [(0, r.jsx)(C, {
           activity: t,
           embeddedApp: n,
           onOpenSpotifyTrack: h
-        }), (0, r.jsx)(C, {
+        }), (0, r.jsx)(v, {
           activity: t,
           user: l,
           onOpenSpotifyArtist: f

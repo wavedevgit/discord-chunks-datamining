@@ -1,4 +1,4 @@
-/** Chunk was on 46922 **/
+/** Chunk was on 7093 **/
 n.d(t, {
   Wj: () => P,
   ZP: () => I
@@ -21,8 +21,8 @@ var r = n(255367),
   _ = n(326660),
   O = n(158638),
   y = n(10765),
-  v = n(317169),
-  C = n(19394),
+  C = n(317169),
+  v = n(19394),
   j = n(385902),
   E = n(535396),
   S = n(981631),
@@ -35,7 +35,7 @@ function I(e) {
       trailing: g,
       showUnread: x
     } = function(e, t, n) {
-      let l = (0, v.Z)(e).available,
+      let l = (0, C.Z)(e).available,
         {
           shouldShow: u
         } = (0, j._)(e, "useGuildPowerupsChannelListIndicators"),
@@ -50,7 +50,7 @@ function I(e) {
         };
         let {
           unlockedPowerups: c
-        } = t, u = (0, C.h)(c), d = null != (i = null == n ? void 0 : n.lastSeenWarningNotification) ? i : Date.now(), p = new Date(null == (e = u[u.length - 1]) ? void 0 : e.ends_at).getTime(), f = null != (o = null == n ? void 0 : n.lastBoostCount) ? o : 0;
+        } = t, u = (0, v.h)(c), d = null != (i = null == n ? void 0 : n.lastSeenWarningNotification) ? i : Date.now(), p = new Date(null == (e = u[u.length - 1]) ? void 0 : e.ends_at).getTime(), f = null != (o = null == n ? void 0 : n.lastBoostCount) ? o : 0;
         return u.length > 0 && d < p || null != h ? {
           trailing: (0, r.jsx)(a.P4T, {
             color: a.TVs.colors.STATUS_WARNING,
@@ -72,7 +72,7 @@ function I(e) {
     I = function(e, t) {
       let [n, r] = (0, u.US)(null != t ? [o.z.GUILD_POWERUP_PERKS_COACHMARK] : []), l = n === o.z.GUILD_POWERUP_PERKS_COACHMARK, {
         available: a
-      } = (0, v.Z)(e), s = function(e, t) {
+      } = (0, C.Z)(e), s = function(e, t) {
         let n = (0, O.qI)(e, "GuildPowerupsChannelRow");
         return i.useMemo(() => {
           if (n) {
@@ -136,7 +136,7 @@ function I(e) {
           }
         }(e, t, a);
         if (null != r) return r
-      }, [e, t, l, m, a]), [C, j] = (0, u.bf)(null != b ? o.z.GUILD_POWERUP_NOTIFICATION : null, {
+      }, [e, t, l, m, a]), [v, j] = (0, u.bf)(null != b ? o.z.GUILD_POWERUP_NOTIFICATION : null, {
         cooldownDurationMs: _.d
       });
       return i.useMemo(() => {
@@ -155,7 +155,7 @@ function I(e) {
               markAsDismissed: g
             }
           }
-          if (C === o.z.GUILD_POWERUP_NOTIFICATION && null != b) {
+          if (v === o.z.GUILD_POWERUP_NOTIFICATION && null != b) {
             var e, n;
             return e = function(e) {
               for (var t = 1; t < arguments.length; t++) {
@@ -190,7 +190,7 @@ function I(e) {
             }), e
           }
         }
-      }, [t, l, r, b, C, j, m, g, s])
+      }, [t, l, r, b, v, j, m, g, s])
     }(e, n);
   if (null !== n && (null != g || x || null != I)) return {
     trailing: g,

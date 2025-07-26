@@ -1,4 +1,4 @@
-/** Chunk was on 46922 **/
+/** Chunk was on 7093 **/
 n.d(t, {
   Z: () => q
 }), n(388685), n(415506);
@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(378844),
   O = n(359110),
   y = n(922482),
-  v = n(431328),
-  C = n(501655),
+  C = n(431328),
+  v = n(501655),
   j = n(427679),
   E = n(368442),
   S = n(201469),
@@ -30,8 +30,8 @@ var r = n(255367),
   P = n(430824),
   N = n(607744),
   w = n(496675),
-  Z = n(306680),
-  T = n(9156),
+  T = n(306680),
+  Z = n(9156),
   A = n(979651),
   R = n(934415),
   D = n(98597),
@@ -144,8 +144,8 @@ class K extends D.ZP {
       mentionCount: O,
       isFavoriteSuggestion: y
     } = this.props, {
-      shouldShowGuildVerificationPopout: v
-    } = this.state, C = this.getVoiceStatesCount(), j = (0, r.jsxs)("li", {
+      shouldShowGuildVerificationPopout: C
+    } = this.state, v = this.getVoiceStatesCount(), j = (0, r.jsxs)("li", {
       className: o()(this.getModeClass(), {
         [V.disabled]: this.isDisabled()
       }),
@@ -156,7 +156,7 @@ class K extends D.ZP {
         renderPopout: this.renderPopout,
         spacing: 0,
         onRequestClose: this.closeGuildVerificationPopout,
-        shouldShow: v,
+        shouldShow: C,
         children: () => (0, r.jsx)(s.ua7, {
           text: this.getTooltipText(),
           children: l => {
@@ -204,7 +204,7 @@ class K extends D.ZP {
                 channel: e,
                 unread: b,
                 mentionCount: O,
-                userCount: C,
+                userCount: v,
                 isSubscriptionGated: g,
                 needSubscriptionToAccess: m
               })
@@ -322,10 +322,10 @@ function q(e) {
     isFavoriteCategory: l,
     collapsed: o,
     voiceStates: s
-  } = e, c = (0, a.cj)([Z.ZP], () => ({
-    unread: Z.ZP.hasUnread(n.id),
-    mentionCount: Z.ZP.getMentionCount(n.id)
-  })), u = (0, a.e7)([T.ZP], () => T.ZP.resolveUnreadSetting(n)), d = (0, a.cj)([I.Z, N.Z, w.Z], () => {
+  } = e, c = (0, a.cj)([T.ZP], () => ({
+    unread: T.ZP.hasUnread(n.id),
+    mentionCount: T.ZP.getMentionCount(n.id)
+  })), u = (0, a.e7)([Z.ZP], () => Z.ZP.resolveUnreadSetting(n)), d = (0, a.cj)([I.Z, N.Z, w.Z], () => {
     let e = I.Z.getChannel(n.parent_id),
       r = N.Z.getCheck(n.guild_id);
     return {
@@ -336,10 +336,10 @@ function q(e) {
       bypassLimit: w.Z.can(U.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), h = (0, a.e7)([x.Z], () => x.Z.isCollapsed(n.parent_id)), p = (0, S.ZP)(n.id), f = (0, a.e7)([j.Z], () => j.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, v.Rk)(n.id, C.pV.AUDIENCE), {
+  }), h = (0, a.e7)([x.Z], () => x.Z.isCollapsed(n.parent_id)), p = (0, S.ZP)(n.id), f = (0, a.e7)([j.Z], () => j.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, C.Rk)(n.id, v.pV.AUDIENCE), {
     isSubscriptionGated: m,
     needSubscriptionToAccess: _
-  } = (0, b.Z)(n.id), O = (0, a.e7)([T.ZP], () => T.ZP.isFavorite(t.id, n.id)), y = (0, E.xJ)(n.id), P = (0, L.Z)({
+  } = (0, b.Z)(n.id), O = (0, a.e7)([Z.ZP], () => Z.ZP.isFavorite(t.id, n.id)), y = (0, E.xJ)(n.id), P = (0, L.Z)({
     channel: n,
     isChannelSelected: !1,
     isChannelCollapsed: o,

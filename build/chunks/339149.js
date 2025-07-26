@@ -1,4 +1,4 @@
-/** Chunk was on 46922 **/
+/** Chunk was on 7093 **/
 n.d(t, {
   E: () => P,
   Z: () => N
@@ -20,8 +20,8 @@ var r, i = n(255367),
   _ = n(780570),
   O = n(353042),
   y = n(981631),
-  v = n(388032),
-  C = n(496614);
+  C = n(388032),
+  v = n(496614);
 
 function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -46,52 +46,52 @@ function E(e) {
 }
 let S = {
   [y.vxO.INSTALLING]: {
-    [f.J6.NONE]: (e, t) => v.intl.formatToPlainString(v.t["p+2sEx"], {
+    [f.J6.NONE]: (e, t) => C.intl.formatToPlainString(C.t["p+2sEx"], {
       name: e
     }),
-    [f.J6.SECONDS]: (e, t) => v.intl.formatToPlainString(v.t["/0NgPD"], {
+    [f.J6.SECONDS]: (e, t) => C.intl.formatToPlainString(C.t["/0NgPD"], {
       name: e,
       timeRemaining: t
     }),
-    [f.J6.MINUTES]: (e, t) => v.intl.formatToPlainString(v.t.ZIwMzs, {
+    [f.J6.MINUTES]: (e, t) => C.intl.formatToPlainString(C.t.ZIwMzs, {
       name: e,
       timeRemaining: t
     }),
-    [f.J6.HOURS]: (e, t) => v.intl.formatToPlainString(v.t["3IQDUl"], {
+    [f.J6.HOURS]: (e, t) => C.intl.formatToPlainString(C.t["3IQDUl"], {
       name: e,
       timeRemaining: t
     })
   },
   [y.vxO.UPDATING]: {
-    [f.J6.NONE]: (e, t) => v.intl.formatToPlainString(v.t["6F9QzM"], {
+    [f.J6.NONE]: (e, t) => C.intl.formatToPlainString(C.t["6F9QzM"], {
       name: e
     }),
-    [f.J6.SECONDS]: (e, t) => v.intl.formatToPlainString(v.t["2OVgVl"], {
+    [f.J6.SECONDS]: (e, t) => C.intl.formatToPlainString(C.t["2OVgVl"], {
       name: e,
       timeRemaining: t
     }),
-    [f.J6.MINUTES]: (e, t) => v.intl.formatToPlainString(v.t.mgQg1N, {
+    [f.J6.MINUTES]: (e, t) => C.intl.formatToPlainString(C.t.mgQg1N, {
       name: e,
       timeRemaining: t
     }),
-    [f.J6.HOURS]: (e, t) => v.intl.formatToPlainString(v.t["aTdq4+"], {
+    [f.J6.HOURS]: (e, t) => C.intl.formatToPlainString(C.t["aTdq4+"], {
       name: e,
       timeRemaining: t
     })
   },
   [y.vxO.REPAIRING]: {
-    [f.J6.NONE]: (e, t) => v.intl.formatToPlainString(v.t["p+2sEx"], {
+    [f.J6.NONE]: (e, t) => C.intl.formatToPlainString(C.t["p+2sEx"], {
       name: e
     }),
-    [f.J6.SECONDS]: (e, t) => v.intl.formatToPlainString(v.t["/0NgPD"], {
+    [f.J6.SECONDS]: (e, t) => C.intl.formatToPlainString(C.t["/0NgPD"], {
       name: e,
       timeRemaining: t
     }),
-    [f.J6.MINUTES]: (e, t) => v.intl.formatToPlainString(v.t.ZIwMzs, {
+    [f.J6.MINUTES]: (e, t) => C.intl.formatToPlainString(C.t.ZIwMzs, {
       name: e,
       timeRemaining: t
     }),
-    [f.J6.HOURS]: (e, t) => v.intl.formatToPlainString(v.t["3IQDUl"], {
+    [f.J6.HOURS]: (e, t) => C.intl.formatToPlainString(C.t["3IQDUl"], {
       name: e,
       timeRemaining: t
     })
@@ -104,7 +104,7 @@ class x extends l.PureComponent {
       isPaused: t
     } = this.props;
     if (e.type === y.vxO.UPDATING || e.type === y.vxO.REPAIRING || e.type === y.vxO.INSTALLING) {
-      if (t) return v.intl.string(v.t["5oxtFR"]);
+      if (t) return C.intl.string(C.t["5oxtFR"]);
       else if (e.stage === y.f07.PATCHING || e.stage === y.f07.REPAIRING) return (0, i.jsx)(O.Z, {
         getHistoricalTotalBytes: m.Z.getHistoricalTotalBytesWritten,
         updateInterval: 5e3,
@@ -115,7 +115,7 @@ class x extends l.PureComponent {
   }
   render() {
     let e = this.renderText();
-    return null != e ? e : v.intl.string(v.t.cw57am)
+    return null != e ? e : C.intl.string(C.t.cw57am)
   }
   constructor(...e) {
     super(...e), j(this, "renderProgressBody", (e, t) => {
@@ -167,7 +167,7 @@ class I extends(r = l.PureComponent) {
       firstState: t,
       isPaused: n
     } = this.props;
-    return null == e || null == t ? v.intl.string(v.t.cw57am) : (0, i.jsx)(x, {
+    return null == e || null == t ? C.intl.string(C.t.cw57am) : (0, i.jsx)(x, {
       application: e,
       state: t,
       isPaused: n
@@ -185,7 +185,7 @@ class I extends(r = l.PureComponent) {
           scale: this.state.animationScale
         }]
       },
-      className: a()(n, C.progressContainer),
+      className: a()(n, v.progressContainer),
       onClick: this.handleOnClick,
       children: (0, i.jsx)(h.ua7, {
         text: this.getTooltipText(),
@@ -200,7 +200,7 @@ class I extends(r = l.PureComponent) {
               children: (0, i.jsx)(h._8t, {
                 size: "md",
                 color: "currentColor",
-                className: C.downloadIcon
+                className: v.downloadIcon
               })
             })
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {

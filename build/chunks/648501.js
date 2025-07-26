@@ -1,4 +1,4 @@
-/** Chunk was on 46922 **/
+/** Chunk was on 7093 **/
 n.d(t, {
   Z: () => I
 });
@@ -21,8 +21,8 @@ var i = n(442837),
   _ = n(714794),
   O = n(355363),
   y = n(687352),
-  v = n(876548),
-  C = n(25601),
+  C = n(876548),
+  v = n(25601),
   j = n(981631),
   E = n(490897),
   S = n(388032),
@@ -36,8 +36,8 @@ function I(e) {
     isChannelCollapsed: P,
     voiceStates: N,
     enableConnectedUserLimit: w,
-    enableActivities: Z,
-    isSubscriptionGated: T,
+    enableActivities: T,
+    isSubscriptionGated: Z,
     needSubscriptionToAccess: A,
     isNewChannel: R,
     muted: D,
@@ -51,11 +51,11 @@ function I(e) {
     var e, t;
     return null != (t = null == (e = h.Z.getGuild(n.guild_id)) ? void 0 : e.features.has(j.oNc.COMMUNITY)) && t
   });
-  if ((0, _.Z)(M)) return (0, r.jsx)(C.Z, {
+  if ((0, _.Z)(M)) return (0, r.jsx)(v.Z, {
     mentionsCount: M,
     isMentionLowImportance: k
   });
-  if ((0, c.O)(T)) return (0, r.jsx)(c.Z, {
+  if ((0, c.O)(Z)) return (0, r.jsx)(c.Z, {
     locked: A
   });
   if (R) return (0, r.jsx)(o.IGR, {
@@ -76,14 +76,14 @@ function I(e) {
     children: (0, o.NGo)(z)
   });
   let K = null != (t = null == N ? void 0 : N.length) ? t : 0;
-  return null != w && w && F ? (0, r.jsx)(v.Z, {
+  return null != w && w && F ? (0, r.jsx)(C.Z, {
     userCount: K,
     video: B || V,
     channel: n
   }) : P && (0, m.a)(N) && W ? (0, r.jsx)(o.IGR, {
     text: S.intl.string(S.t.dI3q4u),
     color: l.Z.unsafe_rawColors.RED_400.css
-  }) : null != Z && Z && (0, b.u)(U) ? (0, r.jsx)(y.Z, {
+  }) : null != T && T && (0, b.u)(U) ? (0, r.jsx)(y.Z, {
     embeddedApps: U,
     muted: D
   }) : null

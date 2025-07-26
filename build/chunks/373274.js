@@ -1,6 +1,6 @@
-/** Chunk was on 46922 **/
+/** Chunk was on 7093 **/
 n.d(t, {
-  E: () => ev,
+  E: () => eC,
   j: () => ey
 }), n(388685), n(539854), n(35282);
 var r, i = n(255367),
@@ -20,8 +20,8 @@ var r, i = n(255367),
   _ = n(906732),
   O = n(313201),
   y = n(362658),
-  v = n(583962),
-  C = n(915885),
+  C = n(583962),
+  v = n(915885),
   j = n(258871),
   E = n(216306),
   S = n(398758),
@@ -30,8 +30,8 @@ var r, i = n(255367),
   P = n(486311),
   N = n(620304),
   w = n(220444),
-  Z = n(31022),
-  T = n(10401),
+  T = n(31022),
+  Z = n(10401),
   A = n(131704),
   R = n(592125),
   D = n(796974),
@@ -471,7 +471,7 @@ class e_ extends(r = l.PureComponent) {
       } = this.props, s = eb(a);
       if (e === U.wZ) {
         let e = n.getGuildActionSection();
-        return e.isEmpty() ? 0 : e.getRow(t) === es.z.GUILD_PREMIUM_PROGRESS_BAR ? e.getRows().length > 1 ? v.aR : v.PD : s
+        return e.isEmpty() ? 0 : e.getRow(t) === es.z.GUILD_PREMIUM_PROGRESS_BAR ? e.getRows().length > 1 ? C.aR : C.PD : s
       }
       if (n.isPlaceholderRow(e, t)) return 0;
       let c = n.getChannelFromSectionRow(e, t);
@@ -580,7 +580,7 @@ class e_ extends(r = l.PureComponent) {
               guild: r,
               tooltipTypes: o,
               withMargin: l.length > 1
-            }, es.z.GUILD_PREMIUM_PROGRESS_BAR) : (0, i.jsx)(v.ZP, {
+            }, es.z.GUILD_PREMIUM_PROGRESS_BAR) : (0, i.jsx)(C.ZP, {
               guild: r,
               tooltipTypes: o,
               withMargin: l.length > 1
@@ -621,7 +621,7 @@ class e_ extends(r = l.PureComponent) {
               disableManageChannels: p
             }, es.z.GUILD_DIRECTORY);
           case es.z.GUILD_MOD_DASH_MEMBER_SAFETY:
-            return (0, i.jsx)(C.Z, {
+            return (0, i.jsx)(v.Z, {
               guild: r,
               selected: a === ed.oC.MEMBER_SAFETY
             }, es.z.GUILD_MOD_DASH_MEMBER_SAFETY);
@@ -669,7 +669,7 @@ class e_ extends(r = l.PureComponent) {
             }) : null]
           }, I);
         case eu.d4z.GUILD_STAGE_VOICE:
-          var w, Z;
+          var w, T;
           return (0, i.jsx)(et.Z, {
             channel: x,
             guild: r,
@@ -678,7 +678,7 @@ class e_ extends(r = l.PureComponent) {
             connected: c === E.id,
             collapsed: E.isCollapsed || y.isCollapsed,
             voiceStates: null != (w = h[E.id]) ? w : [],
-            speakerVoiceStates: null != (Z = f[E.id]) ? Z : [],
+            speakerVoiceStates: null != (T = f[E.id]) ? T : [],
             disableManageChannels: p,
             isFavoriteCategory: S
           }, I);
@@ -758,7 +758,7 @@ class e_ extends(r = l.PureComponent) {
         if (!l.isPlaceholderRow(e, t)) return null == (r = l.getChannelFromSectionRow(e, t)) || null == (n = r.channel) ? void 0 : n.id
       }
     }), ef(this, "testShouldSkipTutorial", () => {
-      if (!T.Z.shouldShow("voice-conversations")) return;
+      if (!Z.Z.shouldShow("voice-conversations")) return;
       let {
         guildChannels: e
       } = this.props, t = e.getFirstVoiceChannel();
@@ -784,7 +784,7 @@ let eO = e => {
     selectedVoiceChannelId: o
   } = e, a = (0, u.e7)([m.Z], () => m.Z.keyboardModeEnabled), {
     analyticsLocations: d
-  } = (0, _.ZP)(b.Z.GUILD_CHANNEL_LIST), h = (0, u.e7)([R.Z], () => R.Z.getChannel(r)), p = (0, u.e7)([R.Z], () => R.Z.getChannel(o)), f = (0, u.e7)([M.Z], () => M.Z.getGuildId()), O = (0, S.DM)(t), y = l.useRef(null), v = l.useCallback((e, t) => {
+  } = (0, _.ZP)(b.Z.GUILD_CHANNEL_LIST), h = (0, u.e7)([R.Z], () => R.Z.getChannel(r)), p = (0, u.e7)([R.Z], () => R.Z.getChannel(o)), f = (0, u.e7)([M.Z], () => M.Z.getGuildId()), O = (0, S.DM)(t), y = l.useRef(null), C = l.useCallback((e, t) => {
     let n = y.current;
     if (null != n)
       if (eu.Xyh.test(t) || (0, ed.AB)(t)) n.scrollToChannel(t, !1, 2 * ec.yE, () => {
@@ -797,7 +797,7 @@ let eO = e => {
         var r;
         null == (r = document.querySelector(e)) || r.focus()
       }
-  }, []), C = l.useCallback(() => new Promise(e => {
+  }, []), v = l.useCallback(() => new Promise(e => {
     let t = y.current;
     if (null == t) return e();
     t.scrollTo(0, () => requestAnimationFrame(() => e()))
@@ -809,17 +809,17 @@ let eO = e => {
     id: "channels",
     defaultFocused: null != r ? r : void 0,
     isEnabled: a,
-    setFocus: v,
-    scrollToStart: C,
+    setFocus: C,
+    scrollToStart: v,
     scrollToEnd: j
   }), P = E.setFocus;
   l.useEffect(() => {
     null != r && P(r)
   }, [r, P]);
-  let N = (0, Z.Z)(t),
+  let N = (0, T.Z)(t),
     w = (0, x.V)("NavigableChannels"),
-    T = (0, u.e7)([k.default], () => k.default.getCurrentUser()),
-    A = (0, I.Z)(null == T ? void 0 : T.id, t) && !0 === n.premiumProgressBarEnabled;
+    Z = (0, u.e7)([k.default], () => k.default.getCurrentUser()),
+    A = (0, I.Z)(null == Z ? void 0 : Z.id, t) && !0 === n.premiumProgressBarEnabled;
   return (0, i.jsx)(_.Gt, {
     value: d,
     children: (0, i.jsx)(g.Z, {
@@ -858,7 +858,7 @@ function ey(e) {
   }))
 }
 
-function ev(e) {
+function eC(e) {
   let t = (0, H.Z)(e.guild),
     n = (0, u.cj)([G.Z], () => G.Z.getGuild(e.guildId, {
       guildActionRows: t

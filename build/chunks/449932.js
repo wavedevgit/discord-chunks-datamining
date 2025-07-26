@@ -1,4 +1,4 @@
-/** Chunk was on 46922 **/
+/** Chunk was on 7093 **/
 n.d(t, {
   Z: () => j
 });
@@ -22,7 +22,7 @@ var i = n(120356),
   O = n(754231),
   y = n(302708);
 
-function v(e) {
+function C(e) {
   let {
     guildId: t,
     member: n,
@@ -60,7 +60,7 @@ function v(e) {
   })
 }
 
-function C(e) {
+function v(e) {
   let {
     members: t,
     guildId: n
@@ -70,7 +70,7 @@ function C(e) {
     guildId: n,
     users: t,
     max: 6,
-    renderUser: (e, t, i) => (0, r.jsx)(v, {
+    renderUser: (e, t, i) => (0, r.jsx)(C, {
       guildId: n,
       member: e,
       className: t
@@ -96,13 +96,13 @@ let j = e => {
     }
   });
   if (null == _) return null;
-  let v = p || (0, u.Z)(n),
+  let C = p || (0, u.Z)(n),
     j = (0, f.vd)(t.type);
   return (0, r.jsxs)("div", {
     className: y.activity,
     children: [(0, r.jsx)("div", {
       className: y.channelActivityContainer,
-      children: v ? (0, r.jsx)(O.Z, {
+      children: C ? (0, r.jsx)(O.Z, {
         activity: n,
         embeddedApp: l,
         user: _,
@@ -117,7 +117,7 @@ let j = e => {
         user: _,
         guildId: t.getGuildId(),
         channelId: t.id,
-        renderHeaderAccessory: null != i ? () => (0, r.jsx)(C, {
+        renderHeaderAccessory: null != i ? () => (0, r.jsx)(v, {
           guildId: t.guild_id,
           members: i
         }) : void 0

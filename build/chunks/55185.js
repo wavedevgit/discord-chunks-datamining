@@ -1,7 +1,7 @@
-/** Chunk was on 46922 **/
+/** Chunk was on 7093 **/
 n.d(t, {
   I: () => A,
-  N: () => T
+  N: () => Z
 }), n(388685);
 var r, i = n(255367),
   l = n(73800),
@@ -20,8 +20,8 @@ var r, i = n(255367),
   _ = n(29953),
   O = n(388032),
   y = n(22275),
-  v = n(354810);
-async function C(e) {
+  C = n(354810);
+async function v(e) {
   await h.hW.updateAsync("status", t => {
     t.status = s.Gm.create({
       value: e
@@ -41,7 +41,7 @@ function j(e) {
       size: "sm",
       text: O.intl.string(_.default.Poezn5),
       onClick: () => {
-        t(), C(u.Skl.ONLINE)
+        t(), v(u.Skl.ONLINE)
       },
       fullWidth: !0
     })
@@ -80,7 +80,7 @@ function E(e) {
       })]
     }), (0, i.jsx)(u.rsf, {
       onChange: e => {
-        d.G6.updateSetting(e), n && C(e ? u.Skl.ONLINE : u.Skl.INVISIBLE)
+        d.G6.updateSetting(e), n && v(e ? u.Skl.ONLINE : u.Skl.INVISIBLE)
       },
       checked: t
     })]
@@ -115,7 +115,7 @@ function S(e) {
           })
         }), (0, i.jsx)("img", {
           alt: "",
-          src: v.Z,
+          src: C.Z,
           className: y.controllerImage
         }), (0, i.jsx)(o.X6, {
           variant: "heading-md/bold",
@@ -241,7 +241,7 @@ function w(e) {
   })
 }
 
-function Z(e) {
+function T(e) {
   let {
     closePopout: t
   } = e, n = d.G6.useSetting(), {
@@ -265,7 +265,7 @@ function Z(e) {
     })]
   })
 }
-var T = ((r = {})[r.ActivityNux = 0] = "ActivityNux", r[r.StatusNux = 1] = "StatusNux", r[r.ActivityAndStatusNux = 2] = "ActivityAndStatusNux", r[r.Activity = 3] = "Activity", r[r.Status = 4] = "Status", r[r.ActivityAndStatus = 5] = "ActivityAndStatus", r);
+var Z = ((r = {})[r.ActivityNux = 0] = "ActivityNux", r[r.StatusNux = 1] = "StatusNux", r[r.ActivityAndStatusNux = 2] = "ActivityAndStatusNux", r[r.Activity = 3] = "Activity", r[r.Status = 4] = "Status", r[r.ActivityAndStatus = 5] = "ActivityAndStatus", r);
 
 function A(e) {
   let {
@@ -297,7 +297,7 @@ function A(e) {
         closePopout: n
       });
     case 5:
-      return (0, i.jsx)(Z, {
+      return (0, i.jsx)(T, {
         closePopout: n
       });
     default:

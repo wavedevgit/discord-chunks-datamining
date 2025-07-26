@@ -1,4 +1,4 @@
-/** Chunk was on 46922 **/
+/** Chunk was on 7093 **/
 n.d(t, {
   Z: () => j
 }), n(388685);
@@ -21,7 +21,7 @@ var r = n(255367),
   O = n(388032),
   y = n(388298);
 
-function v(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,7 +39,7 @@ function v(e) {
   }
   return e
 }
-let C = {
+let v = {
     animation: {
       BEG: 0,
       END: 75
@@ -60,19 +60,19 @@ let C = {
       var e;
       switch (null == j || null == (e = j.popout) ? void 0 : e.type) {
         case p.J.LEVEL_REACHED:
-          return (0, r.jsx)(g.jG, v({
+          return (0, r.jsx)(g.jG, C({
             guildId: t
           }, j.popout));
         case p.J.PERKS_AVAILABLE:
-          return (0, r.jsx)(g.$h, v({
+          return (0, r.jsx)(g.$h, C({
             guildId: t
           }, j.popout));
         case p.J.PERKS_PURCHASABLE:
-          return (0, r.jsx)(g.yI, v({
+          return (0, r.jsx)(g.yI, C({
             guildId: t
           }, j.popout));
         case p.J.NEW_PERK_AVAILABLE:
-          return (0, r.jsx)(g.cO, v({
+          return (0, r.jsx)(g.cO, C({
             guildId: t
           }, j.popout));
         default:
@@ -82,12 +82,12 @@ let C = {
     i.useEffect(() => {
       (null == j ? void 0 : j.popout) == null && N(null)
     }, [null == j ? void 0 : j.popout]);
-    let Z = i.useCallback(e => {
+    let T = i.useCallback(e => {
         N(e)
       }, []),
-      T = i.useRef(null);
+      Z = i.useRef(null);
     return (0, r.jsx)(s.yRy, {
-      targetElementRef: T,
+      targetElementRef: Z,
       shouldShow: (null == j ? void 0 : j.popout) != null && !(x || I),
       nudgeAlignIntoViewport: !0,
       animationPosition: "bottom",
@@ -95,8 +95,8 @@ let C = {
       renderPopout: S,
       children: e => {
         var i, a;
-        return (0, r.jsx)(u.m, (i = v({}, e), a = a = {
-          ref: T,
+        return (0, r.jsx)(u.m, (i = C({}, e), a = a = {
+          ref: Z,
           className: y.container,
           id: "skill-trees-".concat(t),
           renderIcon: e => (0, r.jsx)(s.$Eu, {
@@ -109,9 +109,9 @@ let C = {
             children: (0, r.jsx)(s.kci, {
               nextScene: w,
               className: y.lottie,
-              sceneSegments: C,
+              sceneSegments: v,
               importData: () => n.e("50821").then(n.t.bind(n, 548421, 19)),
-              onScenePlay: Z,
+              onScenePlay: T,
               rendererSettings: {
                 preserveAspectRatio: "xMidYMid slice"
               }

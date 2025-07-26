@@ -1,4 +1,4 @@
-/** Chunk was on 46922 **/
+/** Chunk was on 7093 **/
 n.d(t, {
   Z: () => et
 }), n(388685), n(415506);
@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(933557),
   O = n(557135),
   y = n(873696),
-  v = n(446226),
-  C = n(305325),
+  C = n(446226),
+  v = n(305325),
   j = n(281956),
   E = n(66999),
   S = n(554747),
@@ -30,8 +30,8 @@ var r = n(255367),
   P = n(340541),
   N = n(359110),
   w = n(155409),
-  Z = n(695346),
-  T = n(592125),
+  T = n(695346),
+  Z = n(592125),
   A = n(430824),
   R = n(607744),
   D = n(496675),
@@ -178,8 +178,8 @@ class $ extends G.ZP {
       canReorderChannel: _,
       canMoveMembers: O,
       showTutorial: y,
-      hasActiveEvent: v,
-      embeddedApps: C,
+      hasActiveEvent: C,
+      embeddedApps: v,
       isSubscriptionGated: j,
       isFavoriteSuggestion: E,
       withGuildIcon: S
@@ -188,7 +188,7 @@ class $ extends G.ZP {
       shouldShowGuildVerificationPopout: I
     } = this.state, N = (0, P.jW)({
       location: "voice_channel"
-    }).entrypoints, Z = this.getVoiceStatesCount(), T = (0, r.jsxs)("li", {
+    }).entrypoints, T = this.getVoiceStatesCount(), Z = (0, r.jsxs)("li", {
       ref: this.ref,
       className: o()(this.getModeClass(), {
         [q.disabled]: this.isDisabled()
@@ -229,9 +229,9 @@ class $ extends G.ZP {
                 ref: this.channelItemRef,
                 className: q.iconVisibility,
                 iconClassName: o()({
-                  [q.iconLive]: v
+                  [q.iconLive]: C
                 }),
-                hasActiveEvent: v,
+                hasActiveEvent: C,
                 channel: e,
                 selected: !E && t,
                 connected: n,
@@ -252,13 +252,13 @@ class $ extends G.ZP {
                   channel: e,
                   unread: i,
                   mentionCount: a,
-                  userCount: Z,
-                  embeddedActivitiesCount: C.length,
+                  userCount: T,
+                  embeddedActivitiesCount: v.length,
                   isSubscriptionGated: j
                 }),
                 "aria-describedby": (0, b.Z)({
                   channel: e,
-                  embeddedApps: C
+                  embeddedApps: v
                 }),
                 withGuildIcon: S
               }, h), {
@@ -275,13 +275,13 @@ class $ extends G.ZP {
         })
       }), this.renderVoiceUsers()]
     });
-    return O && (T = f(T)), _ && (T = h(p(T))), y && (T = (0, r.jsx)(w.Z, {
+    return O && (Z = f(Z)), _ && (Z = h(p(Z))), y && (Z = (0, r.jsx)(w.Z, {
       childRef: this.ref,
       tutorialId: "voice-conversations",
       position: "right",
       offsetX: -20,
-      children: T
-    })), T
+      children: Z
+    })), Z
   }
   constructor(...e) {
     super(...e), X(this, "state", {
@@ -339,7 +339,7 @@ class $ extends G.ZP {
       let {
         channel: e
       } = this.props, t = e.getGuildId();
-      null != t && (0, j.n)(t) && (0, C.hk)(t), this.handleVoiceConnect()
+      null != t && (0, j.n)(t) && (0, v.hk)(t), this.handleVoiceConnect()
     }), X(this, "handleVoiceStatusClick", e => {
       let {
         connected: t,
@@ -361,7 +361,7 @@ class $ extends G.ZP {
         shouldShowGuildVerificationPopout: s
       } = this.state;
       if (a && !n && !i && !s) {
-        let n = Z.SE.getSetting().includes(o.id);
+        let n = T.SE.getSetting().includes(o.id);
         return (0, r.jsx)(F.Z, {
           onAction: this.closePopout,
           guild: o,
@@ -432,8 +432,8 @@ function et(e) {
   } = e, u = (0, a.cj)([L.ZP], () => ({
     unread: L.ZP.hasUnread(n.id),
     mentionCount: L.ZP.getMentionCount(n.id)
-  })), d = (0, a.e7)([M.ZP], () => M.ZP.resolveUnreadSetting(n)), h = (0, a.cj)([T.Z, R.Z, D.Z], () => {
-    let e = T.Z.getChannel(n.parent_id),
+  })), d = (0, a.e7)([M.ZP], () => M.ZP.resolveUnreadSetting(n)), h = (0, a.cj)([Z.Z, R.Z, D.Z], () => {
+    let e = Z.Z.getChannel(n.parent_id),
       r = R.Z.getCheck(n.guild_id);
     return {
       canManageChannel: D.Z.can(W.Plq.MANAGE_CHANNELS, n),
@@ -446,7 +446,7 @@ function et(e) {
   }), p = (0, a.e7)([k.Z], () => k.Z.hasVideo(n.id)), g = (0, f.ZP)(n), m = (0, _.ZP)(n), b = (0, S.qY)(n.id), {
     isSubscriptionGated: O,
     needSubscriptionToAccess: y
-  } = (0, E.Z)(n.id), C = (0, v.Z)(), j = (0, a.e7)([M.ZP], () => M.ZP.isFavorite(t.id, n.id)), x = e.connected || (null == C ? void 0 : C.channelId) === n.id, {
+  } = (0, E.Z)(n.id), v = (0, C.Z)(), j = (0, a.e7)([M.ZP], () => M.ZP.isFavorite(t.id, n.id)), x = e.connected || (null == v ? void 0 : v.channelId) === n.id, {
     enableHangStatus: P,
     allowChannelTopic: N
   } = I.n.useExperiment({
@@ -463,7 +463,7 @@ function et(e) {
     needSubscriptionToAccess: y,
     enableConnectedUserLimit: !0,
     enableActivities: !0
-  }), Z = x && null == w;
+  }), T = x && null == w;
   return (0, r.jsx)(ee, J(Q({
     channelName: m,
     embeddedApps: g,
@@ -475,7 +475,7 @@ function et(e) {
   }, u, h, e), {
     connected: x,
     isFavoriteSuggestion: l && !j,
-    forceShowButtons: Z,
+    forceShowButtons: T,
     channelInfo: w,
     resolvedUnreadSetting: d,
     enableHangStatus: P,

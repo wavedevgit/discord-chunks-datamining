@@ -1,4 +1,4 @@
-/** Chunk was on 46922 **/
+/** Chunk was on 7093 **/
 n.d(t, {
   Z: () => N
 }), n(388685), n(361932), n(187205), n(539854);
@@ -21,8 +21,8 @@ var i = n(120356),
   _ = n(938475),
   O = n(823379),
   y = n(709054),
-  v = n(853856),
-  C = n(981631),
+  C = n(853856),
+  v = n(981631),
   j = n(388032),
   E = n(714509),
   S = n(375613);
@@ -42,10 +42,10 @@ function x(e, t) {
 }
 
 function I() {
-  let e = (0, s.Wu)([v.Z, m.Z], () => y.default.keys(v.Z.getFavoriteChannels()).map(e => m.Z.getChannel(e)).filter(O.lm)),
+  let e = (0, s.Wu)([C.Z, m.Z], () => y.default.keys(C.Z.getFavoriteChannels()).map(e => m.Z.getChannel(e)).filter(O.lm)),
     t = e.map(e => e.id),
-    n = e.filter(e => e.type === C.d4z.GUILD_VOICE),
-    i = e.filter(e => e.type === C.d4z.GUILD_STAGE_VOICE).map(e => e.id),
+    n = e.filter(e => e.type === v.d4z.GUILD_VOICE),
+    i = e.filter(e => e.type === v.d4z.GUILD_STAGE_VOICE).map(e => e.id),
     l = (0, s.Wu)([_.ZP], () => a().flatMap(n, e => _.ZP.getVoiceStatesForChannel(e).map(e => {
       let {
         user: t
@@ -76,7 +76,7 @@ function I() {
     P = (0, s.Wu)([b.default], () => I.map(e => b.default.getUser(e)), [I]),
     N = (0, s.Wu)([b.default], () => S.map(e => b.default.getUser(e)), [S]),
     w = x(c.gj8, l.filter(e => !S.includes(e.id) && !I.includes(e.id))),
-    Z = 0 === o.length ? null : (0, r.jsxs)("div", {
+    T = 0 === o.length ? null : (0, r.jsxs)("div", {
       className: E.row,
       children: [(0, r.jsx)(c.ewx, {
         size: "lg",
@@ -99,7 +99,7 @@ function I() {
         })]
       })]
     }),
-    T = x(c.hGI, N.filter(e => null != e && !I.includes(e.id))),
+    Z = x(c.hGI, N.filter(e => null != e && !I.includes(e.id))),
     {
       enabled: A
     } = u.c.useExperiment({
@@ -109,7 +109,7 @@ function I() {
     }),
     R = x(A ? c.iWm : c.nG3, P);
   return (0, r.jsxs)(r.Fragment, {
-    children: [Z, w, T, R]
+    children: [T, w, Z, R]
   })
 }
 

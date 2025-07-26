@@ -1,4 +1,4 @@
-/** Chunk was on 46922 **/
+/** Chunk was on 7093 **/
 n.d(t, {
   Z: () => P
 });
@@ -21,8 +21,8 @@ var i = n(120356),
   _ = n(565138),
   O = n(199902),
   y = n(592125),
-  v = n(430824),
-  C = n(158776),
+  C = n(430824),
+  v = n(158776),
   j = n(306680),
   E = n(594174),
   S = n(388032),
@@ -74,7 +74,7 @@ function P(e) {
       children: [(0, r.jsx)(N, {
         channel: i,
         gotoChannel: a
-      }), (0, r.jsx)(T, {
+      }), (0, r.jsx)(Z, {
         channel: i,
         gotoChannel: a,
         mentionCount: c
@@ -100,7 +100,7 @@ function N(e) {
   return t.isPrivate() ? (0, r.jsx)(w, {
     channel: t,
     gotoChannel: n
-  }) : (0, r.jsx)(Z, {
+  }) : (0, r.jsx)(T, {
     channel: t,
     gotoChannel: n
   })
@@ -123,11 +123,11 @@ function w(e) {
   })
 }
 
-function Z(e) {
+function T(e) {
   let {
     channel: t,
     gotoChannel: n
-  } = e, i = (0, a.e7)([v.Z], () => v.Z.getGuild(t.guild_id));
+  } = e, i = (0, a.e7)([C.Z], () => C.Z.getGuild(t.guild_id));
   return null == i ? null : (0, r.jsx)(_.Z, {
     "aria-hidden": !0,
     className: x.guildIcon,
@@ -139,12 +139,12 @@ function Z(e) {
   })
 }
 
-function T(e) {
+function Z(e) {
   let {
     channel: t,
     gotoChannel: n,
     mentionCount: i
-  } = e, o = (0, a.e7)([v.Z], () => v.Z.getGuild(t.guild_id)), c = (0, a.e7)([y.Z], () => y.Z.getChannel(t.parent_id)), u = (0, a.e7)([j.ZP], () => j.ZP.getIsMentionLowImportance(t.id)), d = (0, g.KS)(t, o), h = (0, f.ZP)(t, !1), p = null == c ? null == o ? void 0 : o.name : "".concat(null == o ? void 0 : o.name, " › ").concat(c.name), b = t.isMultiUserDM() ? S.intl.formatToPlainString(S.t.CxSA5O, {
+  } = e, o = (0, a.e7)([C.Z], () => C.Z.getGuild(t.guild_id)), c = (0, a.e7)([y.Z], () => y.Z.getChannel(t.parent_id)), u = (0, a.e7)([j.ZP], () => j.ZP.getIsMentionLowImportance(t.id)), d = (0, g.KS)(t, o), h = (0, f.ZP)(t, !1), p = null == c ? null == o ? void 0 : o.name : "".concat(null == o ? void 0 : o.name, " › ").concat(c.name), b = t.isMultiUserDM() ? S.intl.formatToPlainString(S.t.CxSA5O, {
     members: t.recipients.length + 1
   }) : t.isPrivate() ? (0, r.jsx)(A, {
     channel: t
@@ -195,12 +195,12 @@ function A(e) {
     status: i,
     activities: l,
     applicationStream: o
-  } = (0, a.cj)([E.default, C.Z, O.Z], () => {
+  } = (0, a.cj)([E.default, v.Z, O.Z], () => {
     let e = E.default.getUser(t.getRecipientId());
     return {
       user: e,
-      status: null != e ? C.Z.getStatus(e.id) : null,
-      activities: null != e ? C.Z.getActivities(e.id) : null,
+      status: null != e ? v.Z.getStatus(e.id) : null,
+      activities: null != e ? v.Z.getActivities(e.id) : null,
       applicationStream: null != e ? O.Z.getAnyStreamForUser(e.id) : null
     }
   }), {

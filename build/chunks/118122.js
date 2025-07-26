@@ -1,4 +1,4 @@
-/** Chunk was on 46922 **/
+/** Chunk was on 7093 **/
 n.d(t, {
   Z: () => E
 });
@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(981631),
   O = n(675999),
   y = n(388032),
-  v = n(176330);
-let C = {
+  C = n(176330);
+let v = {
   origin: {
     x: -16,
     y: 0
@@ -89,10 +89,10 @@ function E(e) {
     icon: o.oFk
   });
   return t ? P : (0, r.jsx)("div", {
-    className: v.tutorialContainer,
+    className: C.tutorialContainer,
     children: (0, r.jsxs)(h.Z, {
       tutorialId: S ? "create-more-servers" : "create-first-server",
-      inlineSpecs: C,
+      inlineSpecs: v,
       position: "right",
       children: [P, null != n && (0, r.jsx)(m.ZP, {
         name: y.intl.string(y.t["45xjMz"]),

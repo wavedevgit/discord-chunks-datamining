@@ -1,4 +1,4 @@
-/** Chunk was on 46922 **/
+/** Chunk was on 7093 **/
 n.d(t, {
   Z: () => k
 }), n(388685);
@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(703656),
   O = n(769654),
   y = n(601964),
-  v = n(271383),
-  C = n(771845),
+  C = n(271383),
+  v = n(771845),
   j = n(727258),
   E = n(276952),
   S = n(249792),
@@ -30,8 +30,8 @@ var r = n(255367),
   P = n(252686),
   N = n(682662),
   w = n(674552),
-  Z = n(981631),
-  T = n(388032),
+  T = n(981631),
+  Z = n(388032),
   A = n(335426);
 
 function R(e) {
@@ -67,9 +67,9 @@ function D(e, t) {
 }
 let L = {
   analyticsSource: {
-    page: Z.ZY5.GUILD_CHANNEL,
-    section: Z.jXE.CHANNEL_LIST,
-    object: Z.qAy.CHANNEL
+    page: T.ZY5.GUILD_CHANNEL,
+    section: T.jXE.CHANNEL_LIST,
+    object: T.qAy.CHANNEL
   }
 };
 
@@ -128,20 +128,20 @@ let k = i.memo(function(e) {
         nodeId: U.id
       }),
       end() {
-        null == V || V(), (0, g.V1)(C.ZP.getCompatibleGuildFolders())
+        null == V || V(), (0, g.V1)(v.ZP.getCompatibleGuildFolders())
       },
       collect: e => ({
         dragging: e.isDragging()
       })
     }),
-    ep = (0, c.Ie)(null != eo ? eo : Z.lds, null != ea ? 2 : 1),
+    ep = (0, c.Ie)(null != eo ? eo : T.lds, null != ea ? 2 : 1),
     [ef, eg] = i.useState(!1),
     em = !ee && ef,
     [eb, e_] = i.useState(!1),
     [eO, ey] = i.useState(!1),
-    [ev] = i.useState(() => new d.sW(70, () => ey(!0)));
-  i.useEffect(() => () => ev.cancel(), [ev]);
-  let eC = i.useCallback(() => {
+    [eC] = i.useState(() => new d.sW(70, () => ey(!0)));
+  i.useEffect(() => () => eC.cancel(), [eC]);
+  let ev = i.useCallback(() => {
       if (null != F) return void(0, _.uL)(F, {
         state: L
       });
@@ -154,7 +154,7 @@ let k = i.memo(function(e) {
       let e = (0, b.V)(H.id);
       null != e && p.Z.preload(H.id, e)
     }, [F, H, q, et]),
-    eE = (0, u.e7)([v.ZP], () => v.ZP.isCurrentUserGuest(eo)),
+    eE = (0, u.e7)([C.ZP], () => C.ZP.isCurrentUserGuest(eo)),
     eS = i.useCallback(e => {
       null == H || eE || J(e, H)
     }, [H, J, eE]),
@@ -165,9 +165,9 @@ let k = i.memo(function(e) {
       }
     }, [ea]),
     eI = i.useCallback(e => {
-      if (e) return void ev.delay();
-      ev.cancel(), ey(!1)
-    }, [ev]),
+      if (e) return void eC.delay();
+      eC.cancel(), ey(!1)
+    }, [eC]),
     eP = i.useCallback(e => {
       null == G || G(eo, e)
     }, [eo, G]),
@@ -184,12 +184,12 @@ let k = i.memo(function(e) {
         eO || e_(!1)
       }
     }) : (0, r.jsx)(h.LYs, D(R({
-      ariaLabel: T.intl.formatToPlainString(T.t["/uzRsr"], {
+      ariaLabel: Z.intl.formatToPlainString(Z.t["/uzRsr"], {
         guildName: H.name,
         mentions: X
       }),
       name: H.name,
-      onClick: eC,
+      onClick: ev,
       onMouseEnter: function() {
         ee || eg(!0)
       },
@@ -206,7 +206,7 @@ let k = i.memo(function(e) {
       "aria-posinset": el,
       "aria-selected": W
     })),
-    eZ = ed ? (0, r.jsx)(x.OG, {
+    eT = ed ? (0, r.jsx)(x.OG, {
       children: (0, r.jsx)(P.Z, {})
     }) : (0, r.jsx)(s.animated.div, {
       ref: $ ? e => {
@@ -241,7 +241,7 @@ let k = i.memo(function(e) {
       guild: H,
       disabled: ee,
       isDragging: ed,
-      children: eZ
+      children: eT
     }), $ ? (0, r.jsx)(x.ZP, {
       name: H.name,
       targetNode: U,

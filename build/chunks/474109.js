@@ -1,6 +1,6 @@
-/** Chunk was on 46922 **/
+/** Chunk was on 7093 **/
 n.d(t, {
-  Z: () => v
+  Z: () => C
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -28,7 +28,7 @@ function O(e) {
   return e === f.x8Z.SERVER_DISCOVERY_BADGE && !d.Z.hasViewed(f.x8Z.SERVER_DISCOVERY_BADGE) || e !== m && e !== b && (null == (t = n[null != e ? e : "null"]) ? void 0 : t.highImportanceMentionCount) > 0
 }
 let y = (0, p.oH)((e, t, n) => ["null", ...t, ...e, b, f.x8Z.E3_SERVER_DISCOVERY_BADGE, m]),
-  v = i.forwardRef(function(e, t) {
+  C = i.forwardRef(function(e, t) {
     var n, i;
     let d = (0, l.Wu)([u.ZP, c.Z, s.default], () => y(u.ZP.getGuildFolders(), c.Z.getUnreadPrivateChannelIds(), s.default.getStoreChangeSentinel())),
       p = (0, l.e7)([h.Z], () => h.Z.isFocused()),

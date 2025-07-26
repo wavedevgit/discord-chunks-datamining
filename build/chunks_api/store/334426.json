@@ -1,1 +1,1 @@
-{"id":"334426","type":"store","data":{"name":"NotificationsInboxCaughtUpBannerStore","functions":[{"name":"shouldHide","args":[]},{"name":"dismiss","args":[]},{"name":"setInboxReadState","args":["e","t"]}],"events":[]},"fromModule":{"id":"46922"}}
+{"id":"334426","type":"store","data":{"name":"NotificationsInboxCaughtUpBannerStore","functions":[{"name":"shouldHide","args":[]},{"name":"dismiss","args":[]},{"name":"setInboxReadState","args":["e","t"]}],"events":[]},"fromModule":{"id":"7093"}}
