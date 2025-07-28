@@ -1,6 +1,6 @@
 /**
   Module ID: 60173
-  Original File Name: 97edd52d267bb850
+  Original File Name: 74ac5dfc3de15e77
 **/
 @keyframes placeholderPulse_c8ffbb {
     0% {
@@ -4528,11 +4528,13 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 .bottomControls_bfe55a {
     align-items: center;
     display: flex;
+    gap: var(--space-lg);
     justify-content: space-between;
     line-height: 0
 }
 
 .edgeControls_bfe55a {
+    gap: var(--space-lg);
     width: 100%
 }
 
@@ -10181,10 +10183,10 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .chatIcon__233f8 {
-    margin-right: -8px;
-    min-width: 32px;
-    position: relative;
-    width: auto
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative
 }
 
 .chatIcon__233f8 svg {
@@ -10241,12 +10243,9 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     margin-left: 0
 }
 
-.button__9db96,.divider__9db96 {
-    margin-right: 16px
-}
-
 .divider__9db96 {
-    background: var(--divider-strong)
+    background: var(--divider-strong);
+    margin-right: 16px
 }
 
 .speaker__9db96 {
@@ -10262,24 +10261,18 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .avatar__49508 {
-    flex-shrink: 0;
-    margin-right: 8px
+    flex-shrink: 0
 }
 
 .divider__49508 {
-    background: var(--primary-700);
-    margin-right: 16px
-}
-
-.participants__49508 {
-    margin-left: 16px
+    background: var(--primary-700)
 }
 
 .channelStatusClickable__49508 {
     align-items: center;
     color: var(--channel-icon);
     display: flex;
-    margin-left: 36px;
+    margin-left: 28px;
     max-width: 50%;
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -10338,6 +10331,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     align-items: center;
     display: flex;
     flex-direction: row;
+    gap: var(--space-xs);
     justify-content: center
 }
 
@@ -10346,6 +10340,30 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     height: 24px;
     margin-right: 10px;
     width: 24px
+}
+
+.headerBar__49508 {
+    justify-content: flex-start;
+    padding-right: var(--space-md)
+}
+
+.headerBarChildren__49508 {
+    gap: var(--space-xs)
+}
+
+.title__49508 {
+    margin: 0;
+    padding: 0
+}
+
+.toolbar__49508 {
+    gap: var(--space-md);
+    padding-left: 0
+}
+
+.iconWrapper__49508 {
+    height: 28px;
+    width: 28px
 }
 
 .actionBarButton__18c2e {
@@ -10436,10 +10454,6 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 
 .leftTrayIcon_cb9592 {
     margin-right: 16px
-}
-
-.rightTrayIcon_cb9592 {
-    margin-left: 16px
 }
 
 @media (max-width:456px) {
@@ -11827,7 +11841,8 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .container_fcb27c {
-    flex-direction: row
+    flex-direction: row;
+    gap: var(--space-sm)
 }
 
 .requestToSpeakIcon_fcb27c {
@@ -12030,11 +12045,6 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 .sidebarOrChatVisible__722ff {
     border-bottom-right-radius: 8px;
     border-top-right-radius: 8px
-}
-
-.rightTrayIcon__722ff {
-    margin-left: 8px;
-    margin-right: 8px
 }
 
 .volumeSlider__722ff {
@@ -12981,4 +12991,4 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     position: relative
 }
 
-/*# sourceMappingURL=97edd52d267bb850.css.map*/
+/*# sourceMappingURL=74ac5dfc3de15e77.css.map*/

@@ -261,51 +261,52 @@ let A = e => {
   let {
     className: t,
     innerClassName: n,
-    children: a,
-    childrenBottom: d,
-    toolbar: f,
-    onDoubleClick: p,
-    "aria-label": h,
-    "aria-labelledby": m,
-    role: g,
-    scrollable: E,
-    transparent: b = !1,
-    showToolbar: y = !0
-  } = e, O = i.useRef(null), v = i.useContext(u.Z);
+    toolbarClassName: a,
+    children: d,
+    childrenBottom: f,
+    toolbar: p,
+    onDoubleClick: h,
+    "aria-label": m,
+    "aria-labelledby": g,
+    role: E,
+    scrollable: b,
+    transparent: y = !1,
+    showToolbar: O = !0
+  } = e, v = i.useRef(null), I = i.useContext(u.Z);
   return (0, r.jsx)("section", {
     className: o()(t, _.container, {
-      [_.themed]: !b,
-      [_.transparent]: b,
+      [_.themed]: !y,
+      [_.transparent]: y,
       [_.themedMobile]: l.tq,
-      [_.showToolbar]: y
+      [_.showToolbar]: O
     }),
-    "aria-label": h,
-    "aria-labelledby": m,
-    role: g,
-    ref: O,
+    "aria-label": m,
+    "aria-labelledby": g,
+    role: E,
+    ref: v,
     children: (0, r.jsxs)(c.JcV, {
-      containerRef: O,
+      containerRef: v,
       children: [(0, r.jsxs)("div", {
         className: o()(_.upperContainer, {
-          [_.showToolbar]: y
+          [_.showToolbar]: O
         }),
         children: [(0, r.jsxs)("div", {
           className: o()(_.children, n, {
-            [_.scrollable]: E,
-            [_.showToolbar]: y
+            [_.scrollable]: b,
+            [_.showToolbar]: O
           }),
-          onDoubleClick: p,
-          children: [l.tq && null != v ? (0, r.jsx)(s.r, {
-            onClick: v,
+          onDoubleClick: h,
+          children: [l.tq && null != I ? (0, r.jsx)(s.r, {
+            onClick: I,
             className: _.hamburger
-          }) : null, a]
-        }), null != f ? (0, r.jsx)("div", {
-          className: o()(_.toolbar, {
-            [_.showToolbar]: y
+          }) : null, d]
+        }), null != p ? (0, r.jsx)("div", {
+          className: o()(_.toolbar, a, {
+            [_.showToolbar]: O
           }),
-          children: f
+          children: p
         }) : null]
-      }), d]
+      }), f]
     })
   })
 };

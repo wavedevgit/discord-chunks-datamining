@@ -667,15 +667,18 @@ function eN(e) {
     children: n,
     className: i
   } = e, a = em(e, ["IconComponent", "children", "className"]);
-  return (0, r.jsx)(_.zx, eh(e_({}, a), {
+  return (0, r.jsxs)(_.zx, eh(e_({}, a), {
     className: o()(i, ed.primaryButton),
     innerClassName: null != t ? ed.iconButton : void 0,
     size: _.zx.Sizes.MEDIUM,
-    children: (0, r.jsx)(p.Text, {
+    children: [null != t ? (0, r.jsx)(t, {
+      size: "xs",
+      color: "currentColor"
+    }) : null, (0, r.jsx)(p.Text, {
       variant: "text-md/semibold",
       color: "always-white",
       children: n
-    })
+    })]
   }))
 }
 

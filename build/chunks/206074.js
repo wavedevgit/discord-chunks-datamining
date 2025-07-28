@@ -50,7 +50,7 @@ function _(e) {
   } = null != p ? p : {
     bot: null
   };
-  return r.useMemo(() => s ? d(t) && null != l ? () => {
+  return r.useMemo(() => s && null != t ? d(t) && null != l ? () => {
     (0, i.W)({
       appId: t.id,
       botId: l.id,
