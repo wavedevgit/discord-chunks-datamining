@@ -1,6 +1,6 @@
 /**
   Module ID: 22942
-  Original File Name: 34ee43642e1b7413
+  Original File Name: f29abb9ab10f5d7d
 **/
 .modalRoot_d507dd {
     height: 100%;
@@ -22,49 +22,7 @@
 }
 
 .nav_d507dd {
-    height: -webkit-min-content;
-    height: -moz-min-content;
-    height: min-content;
-    padding: 16px 16px 8px
-}
-
-.navUploadSelected_d507dd {
-    box-shadow: var(--elevation-low);
-    padding-bottom: 16px
-}
-
-.navList_d507dd {
-    display: flex
-}
-
-.navItem_d507dd {
-    flex: 0 0 auto
-}
-
-.navItem_d507dd+.navItem_d507dd {
-    margin-left: 8px
-}
-
-.navButton_d507dd {
-    border-radius: var(--radius-xs);
-    color: var(--interactive-normal);
-    font-size: 16px;
-    font-weight: var(--font-weight-semibold);
-    line-height: 20px;
-    padding: 2px 8px;
-    transition: background-color .1s ease-in-out,color .1s ease-in-out
-}
-
-.navButton_d507dd:hover {
-    color: var(--interactive-hover)
-}
-
-.navButtonActive_d507dd {
-    background-color: var(--background-accent)
-}
-
-.navButtonActive_d507dd,.navButtonActive_d507dd:hover {
-    color: var(--white-500)
+    padding: 16px 0 0 16px
 }
 
 .uploadContainer_d507dd {
@@ -107,4 +65,4 @@
     text-align: center
 }
 
-/*# sourceMappingURL=34ee43642e1b7413.css.map*/
+/*# sourceMappingURL=f29abb9ab10f5d7d.css.map*/

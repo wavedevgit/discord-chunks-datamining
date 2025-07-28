@@ -1,6 +1,6 @@
 /**
   Module ID: 25913
-  Original File Name: 08d0b3cc02a83c98
+  Original File Name: 49a2aec347962fdd
 **/
 .gradientOuterBorder__8f49b {
     align-items: center;
@@ -322,7 +322,7 @@
 
 .premiumCardHover__6df1a:hover {
     position: relative;
-    transform: scale(1.1);
+    transform: scale(1.0975) translateZ(0);
     z-index: 1
 }
 
@@ -954,4 +954,4 @@
     flex-direction: row-reverse
 }
 
-/*# sourceMappingURL=08d0b3cc02a83c98.css.map*/
+/*# sourceMappingURL=49a2aec347962fdd.css.map*/

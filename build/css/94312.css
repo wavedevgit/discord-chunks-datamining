@@ -1,6 +1,6 @@
 /**
   Module ID: 94312
-  Original File Name: 4bcaf227ae703759
+  Original File Name: 9bb052355ec7f94f
 **/
 .editCard_a25a68 {
     background-color: var(--background-surface-high);
@@ -5206,8 +5206,14 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     color: var(--interactive-muted)
 }
 
-.rolePreviewArea__05e8e,.uploadContainer__05e8e {
+.uploadContainer__05e8e {
     display: flex
+}
+
+.rolePreviewArea__05e8e {
+    align-items: center;
+    display: flex;
+    gap: 16px
 }
 
 .roleIconPreview__05e8e {
@@ -5220,16 +5226,8 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     margin-bottom: 20px
 }
 
-.button__8a529 {
-    margin-top: 16px
-}
-
-.buttonInner__8a529 {
-    display: flex
-}
-
-.arrowIcon__8a529 {
-    margin-left: 4px
+.text__8a529 {
+    margin-bottom: 16px
 }
 
 .notice_cdf6f1 {
@@ -5439,19 +5437,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     flex-direction: column
 }
 
-.roleStyleUpsellButton__981c8 {
-    background-color: var(--button-positive-background);
-    border-radius: var(--radius-xs)
-}
-
-.roleStyleUpsellButtonContents__981c8 {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    gap: var(--space-4)
-}
-
-.guildBoostBadge__981c8,.roleStyleUpsellButtonContents__981c8 {
+.guildBoostBadge__981c8 {
     color: var(--button-outline-positive-text-active)
 }
 
@@ -5518,16 +5504,12 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 .searchContainer__9a73f {
     align-items: center;
     display: flex;
+    gap: 16px;
     margin-top: 24px
 }
 
 .searchWarning__9a73f {
     margin-top: 16px
-}
-
-.addButton__9a73f {
-    flex-shrink: 0;
-    margin-left: 16px
 }
 
 .memberRow__9a73f {
@@ -5653,7 +5635,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     padding: 0;
     position: absolute;
     right: 0;
-    top: -4px
+    top: 0
 }
 
 .clearButton__16663 {
@@ -6180,15 +6162,8 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 .buttonsContainer__5f97b {
     align-items: center;
     display: flex;
+    gap: 8px;
     justify-content: flex-end
-}
-
-.editButton__5f97b {
-    visibility: hidden
-}
-
-.circleButton__5f97b+.circleButton__5f97b {
-    margin-left: 16px
 }
 
 .roleRow__5f97b:hover:not(.roleRowDisableHover__5f97b) {
@@ -6196,14 +6171,6 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 }
 
 .roleRow__5f97b:hover:not(.roleRowDisableHover__5f97b) .dragIcon__5f97b:not(.dragIconHidden__5f97b) {
-    visibility: visible
-}
-
-.roleRow__5f97b:hover:not(.roleRowDisableHover__5f97b) .circleButton__5f97b {
-    background-color: var(--background-base-lowest)
-}
-
-.roleRow__5f97b:hover:not(.roleRowDisableHover__5f97b) .editButton__5f97b {
     visibility: visible
 }
 
@@ -6283,12 +6250,8 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 .searchContainer_db0ee9 {
     align-items: center;
     display: flex;
+    gap: 16px;
     margin-top: 32px
-}
-
-.createButton_db0ee9 {
-    height: 34px;
-    margin-left: 16px
 }
 
 .rolesTable_db0ee9 {
@@ -12364,4 +12327,4 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     width: 8px
 }
 
-/*# sourceMappingURL=4bcaf227ae703759.css.map*/
+/*# sourceMappingURL=9bb052355ec7f94f.css.map*/

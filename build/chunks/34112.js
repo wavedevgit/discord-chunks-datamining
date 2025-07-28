@@ -290,36 +290,24 @@ function G(e) {
       }))
     }), (0, r.jsxs)("div", {
       className: s()(R.buttonsContainer, Z.buttonsSpacing),
-      children: [(0, r.jsx)(m.M0o, {
-        className: s()(R.circleButton, R.editButton),
-        tooltip: L ? w.intl.string(w.t["HO/oXl"]) : w.intl.string(w.t.bt75u7),
-        color: m.YX$.SECONDARY,
-        size: m.tT7.SIZE_36,
-        icon: L ? (0, r.jsx)(m.tEF, {
-          size: "custom",
-          color: "currentColor",
-          width: 20,
-          height: 20
-        }) : (0, r.jsx)(m.vdY, {
-          size: "custom",
-          color: "currentColor",
-          width: 20,
-          height: 20
-        }),
-        onClick: X
-      }), (0, r.jsx)(m.M0o, {
-        className: R.circleButton,
-        tooltip: w.intl.string(w.t.UKOtz8),
-        color: m.YX$.SECONDARY,
-        size: m.tT7.SIZE_36,
-        icon: (0, r.jsx)(m.xhG, {
-          size: "custom",
-          color: "currentColor",
-          width: 20,
-          height: 20
-        }),
-        onClick: Y,
-        disabled: !K
+      children: [(0, r.jsx)(m.ua7, {
+        text: L ? w.intl.string(w.t["HO/oXl"]) : w.intl.string(w.t.bt75u7),
+        children: e => (0, r.jsx)(m.hU, A(D({}, e), {
+          variant: "secondary",
+          "aria-label": L ? w.intl.string(w.t["HO/oXl"]) : w.intl.string(w.t.bt75u7),
+          icon: L ? m.tEF : m.vdY,
+          onClick: X
+        }))
+      }), (0, r.jsx)(m.ua7, {
+        text: w.intl.string(w.t.UKOtz8),
+        shouldShow: K,
+        children: e => (0, r.jsx)(m.hU, A(D({}, e), {
+          variant: "secondary",
+          "aria-label": w.intl.string(w.t.UKOtz8),
+          icon: m.xhG,
+          onClick: Y,
+          disabled: !K
+        }))
       })]
     })]
   })

@@ -8,7 +8,7 @@ var r = n(255367),
   l = n(120356),
   s = n.n(l),
   a = n(442837),
-  o = n(755721),
+  o = n(82659),
   c = n(481060),
   d = n(239091),
   u = n(479531),
@@ -68,10 +68,13 @@ async function R(e, t, n) {
     await j.Z.updateMemberRoles(t, e.id, i, [], [n])
   } catch (t) {
     let e = new u.Z(t);
-    (0, c.h7j)(t => (0, r.jsx)(c.ConfirmModal, w(P({}, t), {
-      header: E.intl.string(E.t.R0RpRU),
-      confirmText: E.intl.string(E.t.BddRzc),
-      confirmButtonColor: o.zx.Colors.BRAND,
+    (0, c.h7j)(t => (0, r.jsx)(o.Modal, w(P({}, t), {
+      title: E.intl.string(E.t.R0RpRU),
+      actions: [{
+        text: E.intl.string(E.t.BddRzc),
+        variant: "primary",
+        onClick: t.onClose
+      }],
       children: (0, r.jsx)(c.Text, {
         color: "text-default",
         variant: "text-md/normal",
@@ -86,38 +89,43 @@ function Z(e) {
     member: t,
     guildId: l,
     roleId: a,
-    locked: o
-  } = e, u = i.useRef(null), g = i.useMemo(() => ({
+    locked: u
+  } = e, g = i.useRef(null), p = i.useMemo(() => ({
     [l]: [t.id]
   }), [l, t.id]);
 
-  function p(e) {
-    if (e.stopPropagation(), !o) {
+  function x(e) {
+    if (e.stopPropagation(), !u) {
       if (e.shiftKey) return void R(t, l, a);
       let n = v.Z.getRole(a);
-      (0, c.h7j)(e => (0, r.jsxs)(c.ConfirmModal, w(P({}, e), {
-        header: E.intl.string(E.t["7sFNfX"]),
-        confirmText: E.intl.string(E.t.N86XcH),
-        cancelText: E.intl.string(E.t["ETE/oK"]),
-        onConfirm: () => R(t, l, a),
-        children: [(0, r.jsx)(c.Text, {
-          color: "text-default",
-          variant: "text-md/normal",
-          children: E.intl.format(E.t.scORUl, {
-            username: t.name,
-            roleName: null == n ? void 0 : n.name
-          })
-        }), (0, r.jsx)(c.Text, {
+      (0, c.h7j)(e => (0, r.jsx)(o.Modal, w(P({}, e), {
+        title: E.intl.string(E.t["7sFNfX"]),
+        subtitle: E.intl.format(E.t.scORUl, {
+          username: t.name,
+          roleName: null == n ? void 0 : n.name
+        }),
+        actions: [{
+          text: E.intl.string(E.t["ETE/oK"]),
+          variant: "secondary",
+          onClick: e.onClose
+        }, {
+          text: E.intl.string(E.t.N86XcH),
+          variant: "critical-primary",
+          onClick: () => {
+            R(t, l, a), e.onClose()
+          }
+        }],
+        children: (0, r.jsx)(c.Text, {
           className: S.removeTip,
           color: "text-muted",
           variant: "text-md/normal",
           children: E.intl.string(E.t.jxIxJC)
-        })]
+        })
       })))
     }
   }
 
-  function x(e) {
+  function b(e) {
     let i = h.default.getUser(t.id);
     null != i && (0, d.jW)(e, async () => {
       let {
@@ -130,18 +138,18 @@ function Z(e) {
       }))
     })
   }
-  return (0, m.$)(g), (0, r.jsx)("div", {
+  return (0, m.$)(p), (0, r.jsx)("div", {
     className: T.contentWidth,
     children: (0, r.jsx)(f.Z, {
-      targetElementRef: u,
+      targetElementRef: g,
       userId: t.id,
       guildId: l,
       roleId: a,
       position: "left",
       children: e => (0, r.jsxs)(c.P3F, w(P({}, e), {
-        innerRef: u,
+        innerRef: g,
         className: S.memberRow,
-        onContextMenu: x,
+        onContextMenu: b,
         children: [(0, r.jsx)(C.Z, {
           className: S.memberDetails,
           avatarURL: t.avatarURL,
@@ -152,13 +160,13 @@ function Z(e) {
         }), (0, r.jsx)("div", {
           className: S.removeButtonContainer,
           children: (0, r.jsx)(c.ua7, {
-            text: o ? E.intl.string(E.t.wkrQaG) : E.intl.string(E.t["7sFNfX"]),
+            text: u ? E.intl.string(E.t.wkrQaG) : E.intl.string(E.t["7sFNfX"]),
             position: "top",
             children: e => (0, r.jsx)(c.P3F, w(P({}, e), {
               className: s()(S.removeButton, {
-                [S.removeButtonDisabled]: o
+                [S.removeButtonDisabled]: u
               }),
-              onClick: p,
+              onClick: x,
               children: (0, r.jsx)(c.k$p, {
                 size: "xs",
                 color: "currentColor"
@@ -268,12 +276,12 @@ function k(e) {
       onClear: () => n(""),
       placeholder: E.intl.string(E.t.pYHobG),
       "aria-label": E.intl.string(E.t.pYHobG)
-    }), (0, r.jsx)(o.zx, {
-      className: S.addButton,
-      size: o.zx.Sizes.SMALL,
+    }), (0, r.jsx)(c.zxk, {
       onClick: l,
+      variant: "primary",
+      size: "sm",
       disabled: i,
-      children: E.intl.string(E.t.cHszXl)
+      text: E.intl.string(E.t.cHszXl)
     })]
   })
 }

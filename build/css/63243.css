@@ -1,6 +1,6 @@
 /**
   Module ID: 63243
-  Original File Name: 832364e600070bbc
+  Original File Name: 6ca161ec7cf89224
 **/
 @value minColumnWidth: 460px;
 
@@ -1316,7 +1316,7 @@
 
 .premiumCardHover__6df1a:hover {
     position: relative;
-    transform: scale(1.1);
+    transform: scale(1.0975) translateZ(0);
     z-index: 1
 }
 
@@ -1532,4 +1532,4 @@
     margin-left: var(--space-12)
 }
 
-/*# sourceMappingURL=832364e600070bbc.css.map*/
+/*# sourceMappingURL=6ca161ec7cf89224.css.map*/

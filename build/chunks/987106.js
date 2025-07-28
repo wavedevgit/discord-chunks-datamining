@@ -68,6 +68,7 @@ function h(e) {
       shouldConfirm: !0
     })
   } : C ? null != w && !1 === w.disabled ? w.onClick : o.noop : () => P(), (0, n.jsxs)(a.zx, {
+    "data-migration-pending": !0,
     color: function(e) {
       switch (e) {
         case d.ZJ.PRIMARY:

@@ -32,13 +32,13 @@ function h(e, t) {
     viewingChannelId: S
   } = t, E = (0, i.p)(), N = o.d.useExperiment({
     location: "useMessageRenderedContent"
-  }).enabled, Z = (0, p.o)({
+  }).enabled, T = (0, p.o)({
     location: "useMessageRenderedContent"
-  }), [R, T] = l.useState(!1), I = l.useCallback(e => {
-    e && T(!0)
+  }), [Z, R] = l.useState(!1), I = l.useCallback(e => {
+    e && R(!0)
   }, []);
   return l.useEffect(() => {
-    T(!1)
+    R(!1)
   }, [e.content]), l.useMemo(() => {
     if (null != e.customRenderedContent) return e.customRenderedContent;
     if (e.isUnsupported) return {
@@ -56,7 +56,7 @@ function h(e, t) {
         }
       })
     }
-    return Z.enabled ? {
+    return T.enabled ? {
       content: (0, r.jsx)(l.Suspense, {
         children: (0, r.jsx)(d.v.Provider, {
           value: {
@@ -71,7 +71,7 @@ function h(e, t) {
           })
         })
       }),
-      hasSpoilerEmbeds: R
+      hasSpoilerEmbeds: Z
     } : (0, c.ZP)(e, {
       hideSimpleEmbedContent: h,
       formatInline: O,
@@ -86,5 +86,5 @@ function h(e, t) {
       viewingChannelId: S,
       allowGameMentions: N
     })
-  }, [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, h, O, y, v, j, P, x, C, E, w, S, Z.enabled, N, R])
+  }, [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, h, O, y, v, j, P, x, C, E, w, S, T.enabled, N, Z])
 }

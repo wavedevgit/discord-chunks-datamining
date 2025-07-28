@@ -76,11 +76,11 @@ let C = e => {
     }) : j.intl.formatToPlainString(j.t.UDDkGx, {
       name: C
     }),
-    Z = w(x({}, t), {
+    T = w(x({}, t), {
       src: null == t.src ? t.src : (0, u.o)(t.src, 40),
       size: 40
     }),
-    R = E ? () => {
+    Z = E ? () => {
       (0, m.uL)(y.Z5c.CHANNEL(n.id, v.oC.ROLE_SUBSCRIPTIONS))
     } : () => {
       (0, d.f)({
@@ -98,7 +98,7 @@ let C = e => {
           className: P.mainContent,
           children: [(0, r.jsx)("div", {
             className: P.roleIconContainer,
-            children: (0, r.jsx)(c.Z, w(x({}, Z), {
+            children: (0, r.jsx)(c.Z, w(x({}, T), {
               enableTooltip: !1,
               className: P.__invalid_roleIcon,
               enableHeight: !1
@@ -120,7 +120,7 @@ let C = e => {
           size: "sm",
           variant: "secondary",
           text: j.intl.string(j.t["H930+P"]),
-          onClick: R,
+          onClick: Z,
           icon: o.$Eu,
           fullWidth: !0,
           autoFocus: !0
