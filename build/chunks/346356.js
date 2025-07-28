@@ -1,4 +1,4 @@
-/** Chunk was on 7093 **/
+/** Chunk was on 43828 **/
 n.d(t, {
   H: () => w
 }), n(388685);
@@ -58,7 +58,7 @@ let I = () => {
       })
     }, [x]), w = i.useCallback(() => {
       x(j.L.USER_DISMISS)
-    }, [x]), T = i.useCallback(() => {
+    }, [x]), Z = i.useCallback(() => {
       x(j.L.TAKE_ACTION), (0, b.Y)({
         pageType: v.ZY5.GUILD_LIST,
         sectionType: v.jXE.ORBS_DISCOVERY_REHEAT_COACHMARK,
@@ -72,7 +72,7 @@ let I = () => {
       onCtaClick: N,
       onClose: w,
       questId: S.V6,
-      onDiscoveryButtonClick: T
+      onDiscoveryButtonClick: Z
     }
   },
   N = e => {

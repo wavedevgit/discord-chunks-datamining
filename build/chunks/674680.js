@@ -1,4 +1,4 @@
-/** Chunk was on 64946 **/
+/** Chunk was on 81409 **/
 n.d(t, {
   Z: () => f
 });
@@ -50,26 +50,26 @@ function f(e) {
     size: f = l.EFr.SIZE_40
   } = e, E = (0, o.ZP)(), m = (0, u.oX)(n);
   if (null == m) return null;
-  let _ = (0, l.UCu)(f),
+  let O = (0, l.UCu)(f),
     {
-      name: O,
-      rarity: b
+      name: _,
+      rarity: C
     } = m,
     {
-      color: C
-    } = (0, u.F7)(b),
+      color: b
+    } = (0, u.F7)(C),
     v = (0, r.wj)(E) ? p : g,
-    y = (_.size - _.offset - 2 * _.stroke) * .8,
-    L = _.size - _.stroke,
-    k = {
+    y = (O.size - O.offset - 2 * O.stroke) * .8,
+    L = O.size - O.stroke,
+    T = {
       width: .4 * y,
       height: .4 * y
     },
-    T = {
-      width: k.width + 1,
-      height: k.height + 1,
-      right: _.stroke + 1,
-      bottom: _.stroke + 1,
+    S = {
+      width: T.width + 1,
+      height: T.height + 1,
+      right: O.stroke + 1,
+      bottom: O.stroke + 1,
       padding: 0
     };
   return (0, i.jsxs)("div", {
@@ -77,30 +77,30 @@ function f(e) {
     style: {
       width: L,
       height: L,
-      padding: _.stroke
+      padding: O.stroke
     },
-    "aria-label": "".concat(null != (t = O()) ? t : ""),
+    "aria-label": "".concat(null != (t = _()) ? t : ""),
     children: [(0, i.jsx)("div", {
       className: d.trophyIconContainer,
       children: (0, i.jsx)(l.rm8, {
         size: "custom",
-        color: c ? C : (0, s.Lq)(v.trophy),
+        color: c ? b : (0, s.Lq)(v.trophy),
         width: y,
         height: y
       })
     }), !c && (0, i.jsx)("div", {
       className: d.lockContainer,
-      style: T,
+      style: S,
       children: (0, i.jsx)(l.mBM, h({
         size: "custom",
         color: (0, s.Lq)(v.locked)
-      }, k))
-    }), c && b === u.EP.LEGENDARY && (0, i.jsx)("div", {
+      }, T))
+    }), c && C === u.EP.LEGENDARY && (0, i.jsx)("div", {
       className: d.lockContainer,
-      style: T,
+      style: S,
       children: (0, i.jsx)(a.Z, h({
         className: d.confettiIcon
-      }, k))
+      }, T))
     })]
   })
 }

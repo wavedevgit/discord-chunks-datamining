@@ -1,4 +1,4 @@
-/** Chunk was on 7093 **/
+/** Chunk was on 43828 **/
 n.d(t, {
   E: () => eC,
   j: () => ey
@@ -30,8 +30,8 @@ var r, i = n(255367),
   P = n(486311),
   N = n(620304),
   w = n(220444),
-  T = n(31022),
-  Z = n(10401),
+  Z = n(31022),
+  T = n(10401),
   A = n(131704),
   R = n(592125),
   D = n(796974),
@@ -669,7 +669,7 @@ class e_ extends(r = l.PureComponent) {
             }) : null]
           }, I);
         case eu.d4z.GUILD_STAGE_VOICE:
-          var w, T;
+          var w, Z;
           return (0, i.jsx)(et.Z, {
             channel: x,
             guild: r,
@@ -678,7 +678,7 @@ class e_ extends(r = l.PureComponent) {
             connected: c === E.id,
             collapsed: E.isCollapsed || y.isCollapsed,
             voiceStates: null != (w = h[E.id]) ? w : [],
-            speakerVoiceStates: null != (T = f[E.id]) ? T : [],
+            speakerVoiceStates: null != (Z = f[E.id]) ? Z : [],
             disableManageChannels: p,
             isFavoriteCategory: S
           }, I);
@@ -758,7 +758,7 @@ class e_ extends(r = l.PureComponent) {
         if (!l.isPlaceholderRow(e, t)) return null == (r = l.getChannelFromSectionRow(e, t)) || null == (n = r.channel) ? void 0 : n.id
       }
     }), ef(this, "testShouldSkipTutorial", () => {
-      if (!Z.Z.shouldShow("voice-conversations")) return;
+      if (!T.Z.shouldShow("voice-conversations")) return;
       let {
         guildChannels: e
       } = this.props, t = e.getFirstVoiceChannel();
@@ -816,10 +816,10 @@ let eO = e => {
   l.useEffect(() => {
     null != r && P(r)
   }, [r, P]);
-  let N = (0, T.Z)(t),
+  let N = (0, Z.Z)(t),
     w = (0, x.V)("NavigableChannels"),
-    Z = (0, u.e7)([k.default], () => k.default.getCurrentUser()),
-    A = (0, I.Z)(null == Z ? void 0 : Z.id, t) && !0 === n.premiumProgressBarEnabled;
+    T = (0, u.e7)([k.default], () => k.default.getCurrentUser()),
+    A = (0, I.Z)(null == T ? void 0 : T.id, t) && !0 === n.premiumProgressBarEnabled;
   return (0, i.jsx)(_.Gt, {
     value: d,
     children: (0, i.jsx)(g.Z, {

@@ -1,4 +1,4 @@
-/** Chunk was on 7093 **/
+/** Chunk was on 43828 **/
 n.d(t, {
   Z: () => P
 });
@@ -74,7 +74,7 @@ function P(e) {
       children: [(0, r.jsx)(N, {
         channel: i,
         gotoChannel: a
-      }), (0, r.jsx)(Z, {
+      }), (0, r.jsx)(T, {
         channel: i,
         gotoChannel: a,
         mentionCount: c
@@ -100,7 +100,7 @@ function N(e) {
   return t.isPrivate() ? (0, r.jsx)(w, {
     channel: t,
     gotoChannel: n
-  }) : (0, r.jsx)(T, {
+  }) : (0, r.jsx)(Z, {
     channel: t,
     gotoChannel: n
   })
@@ -123,7 +123,7 @@ function w(e) {
   })
 }
 
-function T(e) {
+function Z(e) {
   let {
     channel: t,
     gotoChannel: n
@@ -139,7 +139,7 @@ function T(e) {
   })
 }
 
-function Z(e) {
+function T(e) {
   let {
     channel: t,
     gotoChannel: n,

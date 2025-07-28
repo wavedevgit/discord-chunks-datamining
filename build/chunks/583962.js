@@ -1,4 +1,4 @@
-/** Chunk was on 7093 **/
+/** Chunk was on 43828 **/
 n.d(t, {
   PD: () => A,
   ZP: () => L,
@@ -51,7 +51,7 @@ function w(e) {
   return e
 }
 
-function T(e, t) {
+function Z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -63,9 +63,9 @@ function T(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let Z = (0, C.Mg)(d.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
+let T = (0, C.Mg)(d.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
   A = 57,
-  R = 57 + Z,
+  R = 57 + T,
   D = {
     tension: 180,
     friction: 80
@@ -75,37 +75,37 @@ let Z = (0, C.Mg)(d.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
       guild: t,
       tooltipTypes: l,
       withMargin: d
-    } = e, C = (0, y.Jh)(t.id), Z = (0, b.Z)(t.id), A = (0, y.FZ)(C), R = null == A, L = null != A ? A : C, M = (0, c.e7)([j.Z], () => {
+    } = e, C = (0, y.Jh)(t.id), T = (0, b.Z)(t.id), A = (0, y.FZ)(C), R = null == A, L = null != A ? A : C, M = (0, c.e7)([j.Z], () => {
       var e;
       return null != (e = j.Z.getCountForGuild(t.id)) ? e : 0
     }), k = (0, c.e7)([_.Z], () => _.Z.can(S.Plq.MANAGE_GUILD, t));
     i.useEffect(() => {
-      M !== Z && (0, v.v)(t.id, Z)
-    }, [t.id, M, Z]);
-    let U = R ? "100%" : "".concat(Math.min(100, Z / S.oCV[L] * 100), "%"),
+      M !== T && (0, v.v)(t.id, T)
+    }, [t.id, M, T]);
+    let U = R ? "100%" : "".concat(Math.min(100, T / S.oCV[L] * 100), "%"),
       {
         current: G
       } = i.useRef(U),
       [B] = (0, h.q_F)(() => ({
         from: {
-          width: M === Z ? G : "0%"
+          width: M === T ? G : "0%"
         },
         to: {
           width: U
         },
         config: D
-      }), "respect-motion-settings", [M, Z, G, U]),
+      }), "respect-motion-settings", [M, T, G, U]),
       V = t.premiumTier < L && M >= S.oCV[L],
       F = (0, E.Z)(t, f.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY, S.jXE.PREMIUM_GUILD_PROGRESS_BAR),
       H = I.intl.formatToPlainString(I.t["2oNfMT"], {
         levelName: (0, y.e9)(L)
       }),
       z = I.intl.format(I.t.dhKnYm, {
-        numBoosts: Z,
+        numBoosts: T,
         numTotal: S.oCV[L]
       });
     R && (H = (0, y.e9)(L), z = I.intl.format(I.t.B2byER, {
-      numBoosts: Z
+      numBoosts: T
     })), H = H.toLocaleLowerCase();
     let W = (0, s.JA)("boosts-".concat(t.id)),
       K = i.useRef(null),
@@ -114,7 +114,7 @@ let Z = (0, C.Mg)(d.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
         guild: t,
         markAsDismissed: q
       }) : null,
-      Q = (e, i) => (0, r.jsxs)(h.P3F, T(w({}, W, e, i), {
+      Q = (e, i) => (0, r.jsxs)(h.P3F, Z(w({}, W, e, i), {
         "aria-label": void 0,
         role: "button",
         focusProps: {
@@ -135,7 +135,7 @@ let Z = (0, C.Mg)(d.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
             let {
               default: e
             } = await n.e("8570").then(n.bind(n, 651138));
-            return n => (0, r.jsx)(e, T(w({}, n), {
+            return n => (0, r.jsx)(e, Z(w({}, n), {
               guild: t
             }))
           })

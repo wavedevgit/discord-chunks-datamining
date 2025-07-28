@@ -1,4 +1,4 @@
-/** Chunk was on 9268 **/
+/** Chunk was on 73021 **/
 e.exports = {
   guildRow: "guildRow__7db08",
   guildsList: "guildsList__7db08",

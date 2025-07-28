@@ -1,4 +1,4 @@
-/** Chunk was on 7093 **/
+/** Chunk was on 43828 **/
 n.d(t, {
   Z: () => A
 }), n(953529), n(388685), n(539854);
@@ -109,7 +109,7 @@ function w() {
     })
   })
 }
-class T extends i.PureComponent {
+class Z extends i.PureComponent {
   componentDidMount() {
     this.lastInputedKeys = [], y.S.subscribe(v.CkL.SCROLL_PAGE_UP, this.scrollPageUp), y.S.subscribe(v.CkL.SCROLL_PAGE_DOWN, this.scrollPageDown), window.addEventListener("keydown", this.handleKeyDown, {
       capture: !0
@@ -147,22 +147,22 @@ class T extends i.PureComponent {
         children: j.intl.string(j.t["2t19lZ"])
       }), (0, r.jsxs)("div", {
         className: E.ddrArrows,
-        children: [(0, r.jsx)(Z, {
+        children: [(0, r.jsx)(T, {
           arrow: "LEFT",
           isActive: n,
           className: E.left,
           children: "left"
-        }), (0, r.jsx)(Z, {
+        }), (0, r.jsx)(T, {
           arrow: "DOWN",
           isActive: t,
           className: E.down,
           children: "down"
-        }), (0, r.jsx)(Z, {
+        }), (0, r.jsx)(T, {
           arrow: "UP",
           isActive: e,
           className: E.up,
           children: "up"
-        }), (0, r.jsx)(Z, {
+        }), (0, r.jsx)(T, {
           arrow: "RIGHT",
           isActive: i,
           className: E.right,
@@ -257,7 +257,7 @@ class T extends i.PureComponent {
   }
 }
 
-function Z(e) {
+function T(e) {
   let {
     isActive: t,
     arrow: n,
@@ -308,7 +308,7 @@ function A(e) {
           handleDemonClose: function() {
             c(!1), setTimeout(n, 500)
           }
-        }, "raging-demo") : (0, r.jsx)(T, {
+        }, "raging-demo") : (0, r.jsx)(Z, {
           content: u,
           keyboardModeEnabled: d,
           activateRagingDemon: function() {

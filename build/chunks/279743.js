@@ -1,4 +1,4 @@
-/** Chunk was on 64946 **/
+/** Chunk was on 81409 **/
 n.d(t, {
   Z: () => f
 }), n(388685);
@@ -28,12 +28,12 @@ function g(e) {
     opacity: 0
   }), m = (0, u.dQu)(h).spring({
     opacity: 1
-  }), [_, O] = (0, u.q_F)(() => ({
+  }), [O, _] = (0, u.q_F)(() => ({
     from: {
       backgroundColor: g,
       borderColor: g
     }
-  }), "animate-never"), b = {
+  }), "animate-never"), C = {
     startColor: g,
     handleRest: e => {
       e.finished && (null == l || l())
@@ -42,9 +42,9 @@ function g(e) {
     targetBorderColor: m,
     targetColor: f,
     animationDelay: c
-  }, C = r.useRef(b);
+  }, b = r.useRef(C);
   return r.useEffect(() => {
-    C.current = b
+    b.current = C
   }), r.useEffect(() => {
     let {
       startColor: e,
@@ -53,10 +53,10 @@ function g(e) {
       targetBorderColor: i,
       targetColor: r,
       animationDelay: l
-    } = C.current, {
+    } = b.current, {
       useReducedMotion: o
     } = d.Z, s = 200 * !o;
-    O({
+    _({
       reset: !0,
       immediate: !1,
       to: {
@@ -67,7 +67,7 @@ function g(e) {
         duration: s,
         easing: a.Z.Easing.ease
       }
-    }), O({
+    }), _({
       delay: l,
       immediate: o,
       to: [{
@@ -78,7 +78,7 @@ function g(e) {
         duration: s,
         easing: a.Z.Easing.ease
       }
-    }), O({
+    }), _({
       delay: l + 200 + 200,
       immediate: o,
       to: [{
@@ -91,8 +91,8 @@ function g(e) {
       },
       onRest: t
     })
-  }, [O]), (0, i.jsx)(s.animated.div, {
-    style: _,
+  }, [_]), (0, i.jsx)(s.animated.div, {
+    style: O,
     className: o()(p.settingsItemHighlight, n),
     children: t
   })

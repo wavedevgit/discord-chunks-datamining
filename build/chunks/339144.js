@@ -1,4 +1,4 @@
-/** Chunk was on 7093 **/
+/** Chunk was on 43828 **/
 n.d(t, {
   J: () => I,
   y: () => x
@@ -35,8 +35,8 @@ let I = i.memo(function(e) {
       stream: P,
       canGoLive: N,
       guildId: w,
-      isStreaming: T,
-      channel: Z,
+      isStreaming: Z,
+      channel: T,
       canStream: A,
       runningGame: R,
       embeddedActivity: D,
@@ -78,7 +78,7 @@ let I = i.memo(function(e) {
       (0, b.Z)(P)
     }, [P]),
     K = i.useCallback(() => {
-      let e = null != Z && (0, _.vd)(Z.type) ? Z : null,
+      let e = null != T && (0, _.vd)(T.type) ? T : null,
         t = null != e ? e.getGuildId() : w;
       if (U && null != R && null != O.Z.getVoiceChannelId()) {
         (0, g.s)("Activity Panel"), (0, m.Z)(R.pid);
@@ -123,14 +123,14 @@ let I = i.memo(function(e) {
           }), i))
         }
       })
-    }, [Z, w, R, G, U]),
-    Y = (null != R || null == D || (0, c.R)()) && (T || N) ? (T ? (t = !1, l = () => {
+    }, [T, w, R, G, U]),
+    Y = (null != R || null == D || (0, c.R)()) && (Z || N) ? (Z ? (t = !1, l = () => {
       W(), (0, p.v)(B, p.d.STREAM, !1)
     }, u = a.g5r, I = E.intl.string(E.t.S5anIS)) : A ? (t = !1, l = () => {
       K(), (0, p.v)(B, p.d.STREAM, !0)
     }, u = a.hGI, I = null != R ? E.intl.formatToPlainString(E.t.AB5gT0, {
       game: R.name
-    }) : E.intl.string(E.t.FeUKeH)) : (t = !0, l = null, u = a.hGI, I = null != Z && (0, _.vd)(Z.type) ? E.intl.string(E.t.uQn9Bw) : null != w ? E.intl.string(E.t.fBXEoK) : E.intl.string(E.t.n3feND)), (0, r.jsx)("div", {
+    }) : E.intl.string(E.t.FeUKeH)) : (t = !0, l = null, u = a.hGI, I = null != T && (0, _.vd)(T.type) ? E.intl.string(E.t.uQn9Bw) : null != w ? E.intl.string(E.t.fBXEoK) : E.intl.string(E.t.n3feND)), (0, r.jsx)("div", {
       className: S.panelButtonContainer,
       children: (0, r.jsx)(v.Z, {
         tooltipText: I,

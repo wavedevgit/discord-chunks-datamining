@@ -1,4 +1,4 @@
-/** Chunk was on 7093 **/
+/** Chunk was on 43828 **/
 n.d(t, {
   Z: () => _
 }), n(539854), n(388685);
@@ -88,9 +88,9 @@ let _ = i.memo(function(e) {
     mentionCount: j.map(e => u.default.getMentionCount(e)).reduce((e, t) => e + t, 0),
     isMentionLowImportance: j.every(e => u.default.getIsMentionLowImportance(e)),
     unread: j.some(e => u.default.hasUnread(e))
-  })), T = i.useCallback(() => {
+  })), Z = i.useCallback(() => {
     a.Z.toggleGuildFolderExpand(O)
-  }, [O]), Z = i.useCallback(e => {
+  }, [O]), T = i.useCallback(e => {
     (0, o.jW)(e, async () => {
       let {
         default: e
@@ -112,7 +112,7 @@ let _ = i.memo(function(e) {
     unread: w,
     mediaState: I,
     defaultFolderName: x,
-    onExpandCollapse: T,
-    onContextMenu: Z
+    onExpandCollapse: Z,
+    onContextMenu: T
   }))
 })

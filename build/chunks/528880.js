@@ -1,4 +1,4 @@
-/** Chunk was on 9268 **/
+/** Chunk was on 73021 **/
 e.exports = {
   root: "root__26dae",
   logo: "logo__26dae",

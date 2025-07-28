@@ -1,4 +1,4 @@
-/** Chunk was on 7093 **/
+/** Chunk was on 43828 **/
 n.d(t, {
   Z: () => ed
 }), n(388685);
@@ -30,8 +30,8 @@ var r = n(255367),
   P = n(770858),
   N = n(905423),
   w = n(346356),
-  T = n(431286),
-  Z = n(796974),
+  Z = n(431286),
+  T = n(796974),
   A = n(478738),
   R = n(271383),
   D = n(430824),
@@ -281,7 +281,7 @@ function eu(e) {
       if (!eh) {
         let {
           scrollTop: e
-        } = Z.Z.getGuildListDimensions();
+        } = T.Z.getGuildListDimensions();
         er.scrollTo({
           to: e,
           animate: !1
@@ -337,7 +337,7 @@ function eu(e) {
         return null
     }
   }, [E, S, O, er.setNodeRef]);
-  (0, T.t)();
+  (0, Z.t)();
   let eg = i.useRef(null),
     em = i.useCallback(e => (0, r.jsx)(z.Z, ei({
       ref: eg,

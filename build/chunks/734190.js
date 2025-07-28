@@ -1,6 +1,6 @@
-/** Chunk was on 7093 **/
+/** Chunk was on 43828 **/
 n.d(t, {
-  Z: () => Z
+  Z: () => T
 });
 var r = n(255367),
   i = n(73800),
@@ -61,7 +61,7 @@ function w(e, t) {
   }), e
 }
 
-function T(e) {
+function Z(e) {
   let {
     style: t,
     withGuildIcon: n,
@@ -124,12 +124,12 @@ function T(e) {
       }))
   }
 }
-let Z = i.memo(function(e) {
+let T = i.memo(function(e) {
   let {
     thread: t,
     isSelectedChannel: l,
     isSelectedVoice: P,
-    isLast: Z,
+    isLast: T,
     withGuildIcon: A
   } = e, R = (0, s.e7)([_.ZP], () => _.ZP.getVoiceStatesForChannel(t), [t]), D = (0, s.e7)([b.Z], () => b.Z.hasVideo(t.id)), {
     unread: L,
@@ -182,9 +182,9 @@ let Z = i.memo(function(e) {
     className: o()(x.containerDefault, {
       [x.selected]: l
     }),
-    children: [(0, r.jsx)(T, {
+    children: [(0, r.jsx)(Z, {
       withGuildIcon: A
-    }), Z ? null : (0, r.jsx)(T, {
+    }), T ? null : (0, r.jsx)(Z, {
       withGuildIcon: A,
       inverted: !0,
       style: {

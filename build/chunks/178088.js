@@ -1,4 +1,4 @@
-/** Chunk was on 7093 **/
+/** Chunk was on 43828 **/
 n.d(t, {
   k: () => S
 }), n(388685);
@@ -35,9 +35,9 @@ function S(e) {
     popoutAlign: P,
     targetElementRef: N,
     spacing: w,
-    dialogClassName: T
+    dialogClassName: Z
   } = e, {
-    analyticsLocations: Z
+    analyticsLocations: T
   } = (0, u.ZP)(c.Z.NOTIFICATION_CENTER), [A, R] = i.useState(!1), [D, L] = [(0, o.e7)([g.Z], () => {
     var e, t;
     return null != (t = null == (e = g.Z.settings.inbox) ? void 0 : e.currentTab) ? t : a.X.UNREADS
@@ -86,7 +86,7 @@ function S(e) {
     e.shiftKey || U()
   }, [U]);
   return (0, r.jsx)(u.Gt, {
-    value: Z,
+    value: T,
     children: (0, r.jsx)(s.yRy, {
       targetElementRef: N,
       animation: s.yRy.Animation.NONE,
@@ -98,7 +98,7 @@ function S(e) {
       renderPopout: function() {
         return (0, r.jsx)(s.VqE, {
           "aria-label": E.intl.string(E.t.GSmTKC),
-          className: T,
+          className: Z,
           children: D === a.X.FOR_YOU ? (0, r.jsx)(_.Z, {
             setTab: L,
             badgeState: x,

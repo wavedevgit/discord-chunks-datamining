@@ -1,4 +1,4 @@
-/** Chunk was on 7093 **/
+/** Chunk was on 43828 **/
 n.d(t, {
   Z: () => R
 });
@@ -30,8 +30,8 @@ var r = n(255367),
   P = n(791914),
   N = n(981631),
   w = n(388032),
-  T = n(384323);
-let Z = {
+  Z = n(384323);
+let T = {
   offset: {
     left: 4,
     right: -12
@@ -68,11 +68,11 @@ function R(e) {
     everyoneFilter: j.ZP.everyoneFilter
   })), I = (0, _.Us)({
     location: "RecentMentions"
-  }), Z = (0, p.Z)(C), R = (0, p.Z)(E), L = (0, p.Z)(x);
+  }), T = (0, p.Z)(C), R = (0, p.Z)(E), L = (0, p.Z)(x);
   i.useEffect(() => {
     if (!j.ZP.hasLoadedEver) return void A(f, !0);
-    (null != Z && C !== Z || null != R && E !== R || null != L && x !== L) && A(f, !0)
-  }, [Z, C, R, E, L, x, f, !0]), (0, h.ZP)(() => {
+    (null != T && C !== T || null != R && E !== R || null != L && x !== L) && A(f, !0)
+  }, [T, C, R, E, L, x, f, !0]), (0, h.ZP)(() => {
     (null == g ? void 0 : g.some(m.k5)) && (u.Z.clearMentions(), A(f, !0))
   }), i.useEffect(() => () => {
     u.Z.truncateMentions(N.DJj)
@@ -85,10 +85,10 @@ function R(e) {
     children: (0, r.jsx)(S.Z, {})
   }), [!0, t, l, c]);
   return (0, r.jsx)(d.ZP, {
-    className: o()(T.recentMentionsPopout, {
-      [T.widerInbox]: I
+    className: o()(Z.recentMentionsPopout, {
+      [Z.widerInbox]: I
     }),
-    scrollerClassName: T.scroller,
+    scrollerClassName: Z.scroller,
     onFetch: () => null,
     onJump: n,
     onCloseMessage: function(e) {
@@ -131,12 +131,12 @@ function L(e) {
   let o = C.Z.didAgree(l.getGuildId()),
     a = !!(0, g.aC)(l) && !o;
   return (0, r.jsxs)("div", {
-    className: T.container,
+    className: Z.container,
     children: [(0, r.jsx)(x.Z, {
       channel: l,
       gotoChannel: n,
       children: null != i ? (0, r.jsx)(c.M0o, {
-        className: T.closeButton,
+        className: Z.closeButton,
         tooltip: w.intl.string(w.t.cpT0Cg),
         color: c.YX$.TERTIARY,
         icon: (0, r.jsx)(c.Dio, {
@@ -146,18 +146,18 @@ function L(e) {
         onClick: () => u.Z.deleteRecentMention(t.id)
       }) : null
     }), (0, r.jsxs)("div", {
-      className: T.messageContainer,
+      className: Z.messageContainer,
       children: [(0, r.jsx)(E.Z, {
-        className: T.jumpMessageButton,
+        className: Z.jumpMessageButton,
         onJump: n
       }), (0, r.jsx)(b.Z, {
         message: t,
         channel: l,
-        className: T.message,
+        className: Z.message,
         hideAccessories: a,
         compact: O.jU.getSetting(),
         animateAvatar: !1,
-        focusProps: Z,
+        focusProps: T,
         trackAnnouncementViews: !0
       }, t.id)]
     })]

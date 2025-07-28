@@ -1,4 +1,4 @@
-/** Chunk was on 7093 **/
+/** Chunk was on 43828 **/
 n.d(t, {
   Z: () => D
 }), n(415506), n(388685);
@@ -50,7 +50,7 @@ function w(e) {
   return e
 }
 
-function T(e, t) {
+function Z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -62,7 +62,7 @@ function T(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let Z = {
+let T = {
   friction: 28,
   tension: 600
 };
@@ -73,9 +73,9 @@ function A(e) {
     case "opacity":
       return w({
         duration: 150
-      }, Z);
+      }, T);
     case "scale":
-      return w({}, Z);
+      return w({}, T);
     default:
       throw Error("DirectMessage: getSpringConfigs() - Invalid spring ".concat(String(e)))
   }
@@ -234,7 +234,7 @@ class R extends(r = l.PureComponent) {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("98783"), n.e("53912"), n.e("56826"), n.e("45903")]).then(n.bind(n, 131404));
-        return n => (0, i.jsx)(e, T(w({}, n), {
+        return n => (0, i.jsx)(e, Z(w({}, n), {
           channel: t,
           user: r
         }))
@@ -242,7 +242,7 @@ class R extends(r = l.PureComponent) {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("53912"), n.e("2016")]).then(n.bind(n, 354741));
-        return n => (0, i.jsx)(e, T(w({}, n), {
+        return n => (0, i.jsx)(e, Z(w({}, n), {
           channel: t,
           selected: !1
         }))
@@ -277,7 +277,7 @@ let D = l.forwardRef(function(e, t) {
     E = !1;
   v && (j = u === x.WtW.VOICE, E = u === x.WtW.VIDEO);
   let S = (0, c.dQu)(c.TVs.modules.guildbar.AVATAR_SIZE);
-  return (0, i.jsx)(R, T(w({}, e), {
+  return (0, i.jsx)(R, Z(w({}, e), {
     ref: t,
     channelName: r,
     unread: y > 0,

@@ -1,4 +1,4 @@
-/** Chunk was on 62485 **/
+/** Chunk was on 73021 **/
 e.exports = {
   draftBadgeContainer: "draftBadgeContainer_ea81a9",
   tierName: "tierName_ea81a9",

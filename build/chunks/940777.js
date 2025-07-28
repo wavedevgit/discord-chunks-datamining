@@ -1,4 +1,4 @@
-/** Chunk was on 7093 **/
+/** Chunk was on 43828 **/
 n.d(t, {
   Z: () => R
 }), n(388685), n(539854);
@@ -30,9 +30,9 @@ var r = n(255367),
   P = n(603274),
   N = n(981631),
   w = n(388032),
-  T = n(940751);
+  Z = n(940751);
 
-function Z(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -120,7 +120,7 @@ function R() {
       selected: V,
       hovered: L,
       unread: H && !k,
-      className: T.pill
+      className: Z.pill
     }), (0, r.jsx)(P.Z, {
       onShow: K,
       children: (0, r.jsx)(I.S, {
@@ -128,7 +128,7 @@ function R() {
           selected: !0,
           upperBadge: z,
           lowerBadge: W,
-          children: (0, r.jsx)(c.LYs, (e = Z({}, l), t = t = {
+          children: (0, r.jsx)(c.LYs, (e = T({}, l), t = t = {
             ariaLabel: w.intl.formatToPlainString(w.t["/uzRsr"], {
               guildName: w.intl.string(w.t.wMWycn),
               mentions: F
@@ -149,17 +149,17 @@ function R() {
                 let {
                   default: e
                 } = await n.e("3190").then(n.bind(n, 631981));
-                return t => (0, r.jsx)(e, Z({}, t))
+                return t => (0, r.jsx)(e, T({}, t))
               })
             },
             children: (0, r.jsx)("div", {
-              className: o()(T.ring, {
-                [T.ringActive]: R
+              className: o()(Z.ring, {
+                [Z.ringActive]: R
               }),
               children: (0, r.jsx)(c.r7p, {
                 size: "custom",
                 color: "currentColor",
-                className: T.favoriteIcon,
+                className: Z.favoriteIcon,
                 width: 20,
                 height: 20
               })

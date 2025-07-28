@@ -1,4 +1,4 @@
-/** Chunk was on 7093 **/
+/** Chunk was on 43828 **/
 n.d(t, {
   K: () => _,
   _: () => b
@@ -57,7 +57,7 @@ function _(e, t) {
     w = r.useCallback(e => {
       P(e)
     }, [P]),
-    T = r.useMemo(() => {
+    Z = r.useMemo(() => {
       if (!N) return null;
       let e = (0, h.Z)(x);
       return {
@@ -79,6 +79,6 @@ function _(e, t) {
     }, [N, S, x, O, w]);
   return {
     shouldShow: N,
-    modalConfig: T
+    modalConfig: Z
   }
 }

@@ -1,10 +1,10 @@
-/** Chunk was on 7093 **/
+/** Chunk was on 43828 **/
 n.d(t, {
   P: () => w,
-  Qo: () => T,
+  Qo: () => Z,
   ZP: () => N,
   kw: () => A,
-  rj: () => Z
+  rj: () => T
 });
 var r = n(255367),
   i = n(73800),
@@ -73,9 +73,9 @@ let P = i.memo(function(e) {
         position: P,
         sortingPosition: N,
         hideIcon: w,
-        children: T
+        children: Z
       } = e,
-      Z = (0, s.e7)([O.ZP], () => O.ZP.isChannelMuted(l.getGuildId(), l.id)),
+      T = (0, s.e7)([O.ZP], () => O.ZP.isChannelMuted(l.getGuildId(), l.id)),
       A = (0, s.e7)([m.Z], () => m.Z.isCollapsed(l.id)),
       R = (0, s.e7)([_.Z], () => _.Z.can(v.Plq.MANAGE_CHANNELS, l));
     t = null != N ? P > N ? E.containerDragAfter : E.containerDragBefore : E.containerDefault;
@@ -146,7 +146,7 @@ let P = i.memo(function(e) {
             ref: F,
             className: o()(E.iconVisibility, E.wrapper, {
               [E.collapsed]: A,
-              [E.muted]: Z,
+              [E.muted]: T,
               [E.clickable]: !0
             }),
             onContextMenu: L,
@@ -210,7 +210,7 @@ let P = i.memo(function(e) {
               }) : null
             })]
           })
-        }), T]
+        }), Z]
       });
     return null != y && null != p ? y(p(H)) : H
   }),
@@ -249,7 +249,7 @@ let P = i.memo(function(e) {
       })
     })
   }),
-  T = i.memo(function(e) {
+  Z = i.memo(function(e) {
     let {
       category: t
     } = e, n = (0, s.e7)([y.Z], () => y.Z.isVoiceCategoryCollapsed(t.guild.id)), l = i.useCallback(() => {
@@ -271,7 +271,7 @@ let P = i.memo(function(e) {
       })]
     })
   }),
-  Z = i.memo(function(e) {
+  T = i.memo(function(e) {
     let {
       category: t,
       channel: n

@@ -1,4 +1,4 @@
-/** Chunk was on 13368 **/
+/** Chunk was on 73021 **/
 e.exports = {
   effect: "effect_adebba",
   username: "username_adebba",

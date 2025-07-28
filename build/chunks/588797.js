@@ -1,8 +1,8 @@
-/** Chunk was on 66200 **/
+/** Chunk was on 81409 **/
 n.d(t, {
-  Z: () => l
+  Z: () => i
 });
-let l = (0, n(818083).B)({
+let i = (0, n(818083).B)({
   kind: "user",
   id: "2023-06_guild_boosting_legacy_pricing_fix_experiment",
   label: "Guild Boosting Legacy Pricing Fix Experiment",

@@ -1,4 +1,4 @@
-/** Chunk was on 7093 **/
+/** Chunk was on 43828 **/
 n.d(t, {
   Z: () => N
 }), n(388685);
@@ -63,30 +63,30 @@ function P(e) {
     guild: t,
     tooltipTypes: l,
     withMargin: P
-  } = e, N = i.useMemo(() => (0, C.Z)(t), [t]), w = (0, O.Z)(t.id), T = i.useCallback(() => {
+  } = e, N = i.useMemo(() => (0, C.Z)(t), [t]), w = (0, O.Z)(t.id), Z = i.useCallback(() => {
     (0, y.Z)(t.id, p.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY)
-  }, [t.id]), Z = (0, c.e7)([m.Z], () => {
+  }, [t.id]), T = (0, c.e7)([m.Z], () => {
     var e;
     return null != (e = m.Z.getCountForGuild(t.id)) ? e : 0
   });
   i.useEffect(() => {
-    Z !== t.premiumSubscriberCount && (0, g.v)(t.id, t.premiumSubscriberCount)
-  }, [t.id, Z, t.premiumSubscriberCount]);
-  let A = Math.min(Z / N * 100, 100),
+    T !== t.premiumSubscriberCount && (0, g.v)(t.id, t.premiumSubscriberCount)
+  }, [t.id, T, t.premiumSubscriberCount]);
+  let A = Math.min(T / N * 100, 100),
     [R, D] = (0, d.q_F)(() => ({
-      width: Z === t.premiumSubscriberCount ? "calc(".concat(A, "% - 4px)") : "0%",
+      width: T === t.premiumSubscriberCount ? "calc(".concat(A, "% - 4px)") : "0%",
       config: {
         tension: 250,
         damping: 5,
         mass: 1
       }
-    }), "respect-motion-settings", [Z, t.premiumSubscriberCount]);
+    }), "respect-motion-settings", [T, t.premiumSubscriberCount]);
   i.useEffect(() => {
     D({
       width: "calc(".concat(A, "% - 4px)")
     })
   }, [A, D]);
-  let L = Z >= N,
+  let L = T >= N,
     M = i.useRef(null),
     [k, U] = (0, f.US)(l),
     G = e => (0, r.jsx)(d.P3F, I(x({}, e), {
@@ -100,7 +100,7 @@ function P(e) {
       },
       onClick: () => {
         var t;
-        null == e || null == (t = e.onClick) || t.call(e), T()
+        null == e || null == (t = e.onClick) || t.call(e), Z()
       },
       className: o()(S.container, {
         [S.containerWithMargin]: P
@@ -143,9 +143,9 @@ function P(e) {
               className: o()(S.text, S.boostCountText),
               variant: "text-xs/semibold",
               children: L ? E.intl.formatToPlainString(j.default["Ehpq+/"], {
-                appliedBoostCount: Z
+                appliedBoostCount: T
               }) : E.intl.formatToPlainString(j.default["/rbPDg"], {
-                appliedBoostCount: Z,
+                appliedBoostCount: T,
                 maxBoostCount: N
               })
             }), (0, r.jsx)(b.Z, {

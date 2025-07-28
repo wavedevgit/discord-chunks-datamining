@@ -1,4 +1,4 @@
-/** Chunk was on 7093 **/
+/** Chunk was on 43828 **/
 n.d(t, {
   Z: () => I
 }), n(388685);
@@ -44,7 +44,7 @@ function x(e) {
   }), {
     badge: N,
     badgeDimensions: w,
-    unreadChannelsCount: T
+    unreadChannelsCount: Z
   } = function(e) {
     let {
       notificationCenterVariant: t
@@ -114,7 +114,7 @@ function x(e) {
       unreadChannelsCount: i.length,
       badgeDimensions: s
     }
-  }(I), Z = P === b.jP.LEGACY ? c.xx7 : c.Dkj, A = (0, s.e7)([g.Z], () => g.Z.getChannelId()), R = i.useMemo(() => {
+  }(I), T = P === b.jP.LEGACY ? c.xx7 : c.Dkj, A = (0, s.e7)([g.Z], () => g.Z.getChannelId()), R = i.useMemo(() => {
     if (P === b.jP.SIDEBAR) return v.Z5c.NOTIFICATIONS_INBOX(null != A ? A : void 0)
   }, [P, A]);
   return (0, r.jsxs)(h.H, {
@@ -122,7 +122,7 @@ function x(e) {
     children: [(0, r.jsx)(d.Z, {
       selected: I && P === b.jP.SIDEBAR,
       hovered: y && P === b.jP.SIDEBAR,
-      unread: T > 0,
+      unread: Z > 0,
       className: E.pill,
       disabled: P === b.jP.LEGACY
     }), (0, r.jsx)(C.Z, {
@@ -153,7 +153,7 @@ function x(e) {
           selected: I || y,
           onMouseEnter: () => j(!0),
           onMouseLeave: () => j(!1),
-          children: (0, r.jsx)(Z, {
+          children: (0, r.jsx)(T, {
             size: "custom",
             color: "currentColor",
             className: E.notificationsIcon,

@@ -1,4 +1,4 @@
-/** Chunk was on 7093 **/
+/** Chunk was on 43828 **/
 n.d(t, {
   m: () => E
 });
@@ -34,9 +34,9 @@ function E(e) {
     if (null == n) return !1;
     let r = m.default.extractTimestamp(n);
     return null != e && e > r
-  }), T = i.useCallback(() => {
+  }), Z = i.useCallback(() => {
     (0, f.uL)(O.Z5c.CHANNEL(t.id, S ? y.oC.CUSTOMIZE_COMMUNITY : y.oC.CHANNEL_BROWSER))
-  }, [t.id, S]), Z = i.useCallback(e => {
+  }, [t.id, S]), T = i.useCallback(e => {
     (0, c.jW)(e, async () => {
       let {
         default: e
@@ -88,8 +88,8 @@ function E(e) {
     }),
     text: S ? v.intl.string(v.t.h9mGOD) : v.intl.string(v.t.et6wam),
     selected: E,
-    onClick: T,
-    onContextMenu: Z,
+    onClick: Z,
+    onContextMenu: T,
     trailing: A
   })
 }

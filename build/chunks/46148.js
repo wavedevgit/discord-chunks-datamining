@@ -1,4 +1,4 @@
-/** Chunk was on 7093 **/
+/** Chunk was on 43828 **/
 n.d(t, {
   W: () => I
 }), n(388685);
@@ -68,11 +68,11 @@ let E = (e, t) => {
         location: "ChatWallpaperDMListCoachmark",
         channelId: t
       }),
-      T = w === p.FN.CONTEXT_MENU,
-      [Z, A] = (0, u.US)(I && T && n && N && !P ? [o.z.CHAT_WALLPAPERS_DM_LIST_COACHMARK] : []),
+      Z = w === p.FN.CONTEXT_MENU,
+      [T, A] = (0, u.US)(I && Z && n && N && !P ? [o.z.CHAT_WALLPAPERS_DM_LIST_COACHMARK] : []),
       R = (0, d.m)(O.p9.TIER_2),
       D = (0, g.Z)(t),
-      L = Z === o.z.CHAT_WALLPAPERS_DM_LIST_COACHMARK,
+      L = T === o.z.CHAT_WALLPAPERS_DM_LIST_COACHMARK,
       M = (0, i.useRef)(null),
       k = (0, i.useRef)(null),
       U = (0, i.useRef)(null),

@@ -1,7 +1,7 @@
-/** Chunk was on 7093 **/
+/** Chunk was on 43828 **/
 n.d(t, {
   ZP: () => L,
-  wD: () => T
+  wD: () => Z
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -150,7 +150,7 @@ function w() {
     width: 20
   })
 }
-let T = e => {
+let Z = e => {
   let {
     open: t
   } = e, n = t ? u.u04 : u.CJ0;
@@ -160,7 +160,7 @@ let T = e => {
   })
 };
 
-function Z(e) {
+function T(e) {
   let {
     guild: t
   } = e;
@@ -188,7 +188,7 @@ function A(e) {
     children: [(0, r.jsx)(y.Z, {
       guild: i,
       isBannerVisible: n
-    }), i.id === v._ && (0, r.jsx)(w, {}), (0, r.jsx)(Z, {
+    }), i.id === v._ && (0, r.jsx)(w, {}), (0, r.jsx)(T, {
       guild: i
     }), null != l && (0, r.jsx)(u.P3F, {
       className: S.headerButton,
@@ -280,7 +280,7 @@ function D(e) {
             children: [(0, r.jsx)(y.Z, {
               guild: l,
               isBannerVisible: t
-            }), l.id === v._ && (0, r.jsx)(w, {}), (0, r.jsx)(Z, {
+            }), l.id === v._ && (0, r.jsx)(w, {}), (0, r.jsx)(T, {
               guild: l
             })]
           }), (0, r.jsx)("div", {
@@ -323,10 +323,10 @@ let L = i.memo(function(e) {
     guildBanner: j,
     animationOverlayHeight: E,
     children: w,
-    headerClassName: T,
-    communityInfoVisible: Z,
+    headerClassName: Z,
+    communityInfoVisible: T,
     hasSubheader: R
-  } = e, L = v.features.has(C.oNc.ANIMATED_BANNER), k = (0, d.Z)(v), U = !k && (0, O.Z)(v), G = !k && Z, B = (0, _.xR)(j) && L && !g, [V, F] = i.useState(!1), H = i.useRef(!1), z = i.useRef(null), W = null != t ? t : z, K = i.useRef(void 0), Y = m.QK.getSetting();
+  } = e, L = v.features.has(C.oNc.ANIMATED_BANNER), k = (0, d.Z)(v), U = !k && (0, O.Z)(v), G = !k && T, B = (0, _.xR)(j) && L && !g, [V, F] = i.useState(!1), H = i.useRef(!1), z = i.useRef(null), W = null != t ? t : z, K = i.useRef(void 0), Y = m.QK.getSetting();
   i.useEffect(() => {
     if (B && n && !H.current && Y) return F(!0), K.current = setTimeout(() => {
       F(!1)
@@ -378,7 +378,7 @@ let L = i.memo(function(e) {
         onClick: X ? void 0 : c,
         onContextMenu: p,
         children: [(0, r.jsxs)("header", {
-          className: o()(S.header, T, {
+          className: o()(S.header, Z, {
             [S.themedHeaderMobile]: s.tq
           }),
           children: [(0, r.jsx)("div", {

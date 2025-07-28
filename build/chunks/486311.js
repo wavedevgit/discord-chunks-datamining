@@ -1,4 +1,4 @@
-/** Chunk was on 7093 **/
+/** Chunk was on 43828 **/
 n.d(t, {
   Z: () => j
 }), n(388685);
@@ -82,12 +82,12 @@ let v = {
     i.useEffect(() => {
       (null == j ? void 0 : j.popout) == null && N(null)
     }, [null == j ? void 0 : j.popout]);
-    let T = i.useCallback(e => {
+    let Z = i.useCallback(e => {
         N(e)
       }, []),
-      Z = i.useRef(null);
+      T = i.useRef(null);
     return (0, r.jsx)(s.yRy, {
-      targetElementRef: Z,
+      targetElementRef: T,
       shouldShow: (null == j ? void 0 : j.popout) != null && !(x || I),
       nudgeAlignIntoViewport: !0,
       animationPosition: "bottom",
@@ -96,7 +96,7 @@ let v = {
       children: e => {
         var i, a;
         return (0, r.jsx)(u.m, (i = C({}, e), a = a = {
-          ref: Z,
+          ref: T,
           className: y.container,
           id: "skill-trees-".concat(t),
           renderIcon: e => (0, r.jsx)(s.$Eu, {
@@ -111,7 +111,7 @@ let v = {
               className: y.lottie,
               sceneSegments: v,
               importData: () => n.e("50821").then(n.t.bind(n, 548421, 19)),
-              onScenePlay: T,
+              onScenePlay: Z,
               rendererSettings: {
                 preserveAspectRatio: "xMidYMid slice"
               }

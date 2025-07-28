@@ -1,4 +1,4 @@
-/** Chunk was on 7093 **/
+/** Chunk was on 43828 **/
 n.d(t, {
   Z: () => et
 }), n(388685), n(415506);
@@ -30,8 +30,8 @@ var r = n(255367),
   P = n(340541),
   N = n(359110),
   w = n(155409),
-  T = n(695346),
-  Z = n(592125),
+  Z = n(695346),
+  T = n(592125),
   A = n(430824),
   R = n(607744),
   D = n(496675),
@@ -188,7 +188,7 @@ class $ extends G.ZP {
       shouldShowGuildVerificationPopout: I
     } = this.state, N = (0, P.jW)({
       location: "voice_channel"
-    }).entrypoints, T = this.getVoiceStatesCount(), Z = (0, r.jsxs)("li", {
+    }).entrypoints, Z = this.getVoiceStatesCount(), T = (0, r.jsxs)("li", {
       ref: this.ref,
       className: o()(this.getModeClass(), {
         [q.disabled]: this.isDisabled()
@@ -252,7 +252,7 @@ class $ extends G.ZP {
                   channel: e,
                   unread: i,
                   mentionCount: a,
-                  userCount: T,
+                  userCount: Z,
                   embeddedActivitiesCount: v.length,
                   isSubscriptionGated: j
                 }),
@@ -275,13 +275,13 @@ class $ extends G.ZP {
         })
       }), this.renderVoiceUsers()]
     });
-    return O && (Z = f(Z)), _ && (Z = h(p(Z))), y && (Z = (0, r.jsx)(w.Z, {
+    return O && (T = f(T)), _ && (T = h(p(T))), y && (T = (0, r.jsx)(w.Z, {
       childRef: this.ref,
       tutorialId: "voice-conversations",
       position: "right",
       offsetX: -20,
-      children: Z
-    })), Z
+      children: T
+    })), T
   }
   constructor(...e) {
     super(...e), X(this, "state", {
@@ -361,7 +361,7 @@ class $ extends G.ZP {
         shouldShowGuildVerificationPopout: s
       } = this.state;
       if (a && !n && !i && !s) {
-        let n = T.SE.getSetting().includes(o.id);
+        let n = Z.SE.getSetting().includes(o.id);
         return (0, r.jsx)(F.Z, {
           onAction: this.closePopout,
           guild: o,
@@ -432,8 +432,8 @@ function et(e) {
   } = e, u = (0, a.cj)([L.ZP], () => ({
     unread: L.ZP.hasUnread(n.id),
     mentionCount: L.ZP.getMentionCount(n.id)
-  })), d = (0, a.e7)([M.ZP], () => M.ZP.resolveUnreadSetting(n)), h = (0, a.cj)([Z.Z, R.Z, D.Z], () => {
-    let e = Z.Z.getChannel(n.parent_id),
+  })), d = (0, a.e7)([M.ZP], () => M.ZP.resolveUnreadSetting(n)), h = (0, a.cj)([T.Z, R.Z, D.Z], () => {
+    let e = T.Z.getChannel(n.parent_id),
       r = R.Z.getCheck(n.guild_id);
     return {
       canManageChannel: D.Z.can(W.Plq.MANAGE_CHANNELS, n),
@@ -463,7 +463,7 @@ function et(e) {
     needSubscriptionToAccess: y,
     enableConnectedUserLimit: !0,
     enableActivities: !0
-  }), T = x && null == w;
+  }), Z = x && null == w;
   return (0, r.jsx)(ee, J(Q({
     channelName: m,
     embeddedApps: g,
@@ -475,7 +475,7 @@ function et(e) {
   }, u, h, e), {
     connected: x,
     isFavoriteSuggestion: l && !j,
-    forceShowButtons: T,
+    forceShowButtons: Z,
     channelInfo: w,
     resolvedUnreadSetting: d,
     enableHangStatus: P,

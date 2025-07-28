@@ -1,6 +1,6 @@
-/** Chunk was on 7093 **/
+/** Chunk was on 43828 **/
 n.d(t, {
-  _: () => Z
+  _: () => T
 }), n(642613), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -30,14 +30,14 @@ var r = n(255367),
   P = n(981631),
   N = n(388032),
   w = n(142857);
-let T = {
+let Z = {
   offset: {
     left: 4,
     right: -12
   }
 };
 
-function Z(e) {
+function T(e) {
   let {
     setTab: t,
     closePopout: n
@@ -235,7 +235,7 @@ let D = i.memo(function(e) {
           className: w.message,
           compact: y.jU.getSetting(),
           animateAvatar: !1,
-          focusProps: T
+          focusProps: Z
         }, a.id), (0, r.jsx)(h.P3F, {
           className: w.cancelMessageButton,
           onClick: d,

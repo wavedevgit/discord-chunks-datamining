@@ -1,4 +1,4 @@
-/** Chunk was on 7093 **/
+/** Chunk was on 43828 **/
 n.d(t, {
   Z: () => W
 });
@@ -30,8 +30,8 @@ var r = n(255367),
   P = n(592125),
   N = n(720202),
   w = n(430824),
-  T = n(821020),
-  Z = n(948154),
+  Z = n(821020),
+  T = n(948154),
   A = n(804932),
   R = n(987889),
   D = n(586694),
@@ -97,7 +97,7 @@ function V(e) {
     user: t.author,
     compact: !0,
     isRepliedMessage: !0
-  }), T = (0, r.jsx)("div", {
+  }), Z = (0, r.jsx)("div", {
     className: U.usernameTagContainer,
     children: (0, r.jsx)(v.Z, {
       channel: n,
@@ -158,7 +158,7 @@ function V(e) {
                 color: y
               },
               children: (0, r.jsx)(g.Z, {
-                children: T
+                children: Z
               })
             }), P]
           }) : (0, r.jsx)(g.Z, {
@@ -376,7 +376,7 @@ let W = (0, i.memo)(function(e) {
     })
   }), {
     notificationCenterVariant: m
-  } = T.Lk.useExperiment({
+  } = Z.Lk.useExperiment({
     location: "NotificationsInboxMessageUnit"
   }), b = null != (t = null == l ? void 0 : l.map(e => e.message).filter(e => null != e)) ? t : [];
   return null == h || null == g ? null : (0, r.jsx)(u.P3F, {
@@ -384,11 +384,11 @@ let W = (0, i.memo)(function(e) {
       [U.selected]: h.id === f.messageId
     }),
     onClick: () => {
-      Z.Z.inboxItemClick({
+      T.Z.inboxItemClick({
         message: h,
         channel: g,
         isUnread: a,
-        isSidebar: m === T.jP.SIDEBAR,
+        isSidebar: m === Z.jP.SIDEBAR,
         viewId: p
       })
     },

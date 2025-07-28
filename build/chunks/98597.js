@@ -1,9 +1,9 @@
-/** Chunk was on 7093 **/
+/** Chunk was on 43828 **/
 n.d(t, {
   CN: () => N,
   ZP: () => L,
   eP: () => A,
-  hR: () => Z,
+  hR: () => T,
   jo: () => w
 });
 var r, i = n(255367),
@@ -72,7 +72,7 @@ function w(e, t) {
   return null == t ? S.containerDefault : e > t ? S.containerDragAfter : S.containerDragBefore
 }
 
-function T(e) {
+function Z(e) {
   let {
     tabIndex: t,
     forceShowButtons: n,
@@ -107,7 +107,7 @@ function T(e) {
   })
 }
 
-function Z(e) {
+function T(e) {
   let {
     channel: t,
     disableManageChannels: n,
@@ -160,7 +160,7 @@ function A(e) {
     entrypoints: C
   } = (0, h._k)({
     location: "channel_base"
-  }), v = (0, s.e7)([O.Z], () => O.Z.getGuild(t.getGuildId())), x = (0, s.e7)([g.Z], () => g.Z.getStageInstanceByChannel(t.id), [t.id]), N = (0, s.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), w = (0, s.e7)([y.Z], () => (0, p.b)(y.Z, v, t, x)), T = (0, s.e7)([y.Z], () => y.Z.can(j.Plq.CREATE_INSTANT_INVITE, t) ? E.intl.string(E.t.zJrgTE) : E.intl.string(E.t.Sd8Ix8)), Z = C ? E.intl.string(E.t["EE+P0N"]) : T, A = l.useRef(null);
+  }), v = (0, s.e7)([O.Z], () => O.Z.getGuild(t.getGuildId())), x = (0, s.e7)([g.Z], () => g.Z.getStageInstanceByChannel(t.id), [t.id]), N = (0, s.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), w = (0, s.e7)([y.Z], () => (0, p.b)(y.Z, v, t, x)), Z = (0, s.e7)([y.Z], () => y.Z.can(j.Plq.CREATE_INSTANT_INVITE, t) ? E.intl.string(E.t.zJrgTE) : E.intl.string(E.t.Sd8Ix8)), T = C ? E.intl.string(E.t["EE+P0N"]) : Z, A = l.useRef(null);
   if (o || !w || t.isModeratorReportChannel()) return null;
 
   function R() {
@@ -196,13 +196,13 @@ function A(e) {
       children: L
     })
   })), (0, i.jsx)(c.ua7, {
-    text: Z,
+    text: T,
     children: e => (0, i.jsx)(c.P3F, P(I({
       className: a()(S.iconItem, f ? S.alwaysShown : void 0, b ? S.iconWithChannelInfo : S.iconNoChannelInfo)
     }, e), {
       onClick: R,
       tabIndex: u,
-      "aria-label": Z,
+      "aria-label": T,
       children: L
     }))
   })
@@ -258,12 +258,12 @@ class L extends(r = l.PureComponent) {
     let {
       onContextMenu: t
     } = e;
-    return (0, i.jsx)(T, P(I({}, this.props), {
+    return (0, i.jsx)(Z, P(I({}, this.props), {
       onContextMenu: t
     }))
   }
   renderEditButton() {
-    return (0, i.jsx)(Z, I({}, this.props))
+    return (0, i.jsx)(T, I({}, this.props))
   }
   renderInviteButton() {
     return (0, i.jsx)(A, I({}, this.props))
