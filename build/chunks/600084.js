@@ -88,13 +88,10 @@ function V(e) {
   }), z = (0, d.Z)(null != (n = null == I ? void 0 : I.id) ? n : L.lds), {
     authorizedAppToken: W,
     authorizedAppsFetchState: Y
-  } = (0, l.cj)([x.Z], () => {
-    var e;
-    return {
-      authorizedAppToken: null != z ? null == (e = x.Z.getApps()) ? void 0 : e.find(e => e.application.id === z.id) : void 0,
-      authorizedAppsFetchState: x.Z.getFetchState()
-    }
-  }), q = u.Z.useExperiment({
+  } = (0, l.cj)([x.Z], () => ({
+    authorizedAppToken: x.Z.getNewestTokenForApplication(null == z ? void 0 : z.id),
+    authorizedAppsFetchState: x.Z.getFetchState()
+  })), q = u.Z.useExperiment({
     location: "EmptyMessages"
   }).enabledDesktop;
   if (i.useEffect(() => {

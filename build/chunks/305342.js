@@ -34,7 +34,7 @@ var r = n(255367),
   Z = n(388032),
   w = n(492077);
 
-function A(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -53,7 +53,7 @@ function A(e) {
   return e
 }
 
-function L(e, t) {
+function A(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -122,7 +122,7 @@ let M = e => {
           return (0, r.jsx)(c.ua7, {
             text: e.name,
             "aria-label": !1,
-            children: t => (0, r.jsx)("img", L(A({}, t), {
+            children: t => (0, r.jsx)("img", A(L({}, t), {
               className: w.emojiListEmoji,
               src: f.ZP.getEmojiURL({
                 id: e.id,
@@ -235,7 +235,7 @@ let M = e => {
           text: Z.intl.formatToPlainString(Z.t.FYyR4u, {
             activeTrialUserLimit: null != q ? q : 0
           }),
-          children: e => (0, r.jsx)(c.d3s, A({
+          children: e => (0, r.jsx)(c.d3s, L({
             size: "xs",
             color: "currentColor",
             className: w.tierTrialIndicatorIcon
@@ -265,7 +265,7 @@ let M = e => {
             }) : (0, r.jsx)(c.ua7, {
               text: _ ? null : x,
               "aria-label": null != (t = _ && x) && t,
-              children: e => (0, r.jsx)(O.Z, L(A({}, e), {
+              children: e => (0, r.jsx)(O.Z, A(L({}, e), {
                 fullWidth: !0,
                 disabled: !_ || M,
                 submitting: E,

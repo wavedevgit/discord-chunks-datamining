@@ -10,7 +10,7 @@ var i = n(73800),
 
 function o(e) {
   let t = (0, r.e7)([l.Z], () => l.Z.getFetchState()),
-    n = (0, r.e7)([l.Z], () => e ? l.Z.getNonChildrenApps() : l.Z.getApps()),
+    n = (0, r.e7)([l.Z], () => e ? l.Z.getNewestTokensForNonChildrenApplications() : l.Z.getNewestTokens()),
     o = i.useMemo(() => null == n ? [] : n.filter(e => (0, a.Z)(e.application)).map(e => e.application), [n]);
   return i.useEffect(() => {
     s.Z.fetch()

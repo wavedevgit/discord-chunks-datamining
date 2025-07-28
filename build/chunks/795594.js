@@ -471,11 +471,17 @@ let ec = e => {
   })),
   ep = () => {
     let e = (0, _.e7)([G.Z], () => G.Z.hidePersonalInformation),
-      t = (0, _.e7)([k.Z], () => k.Z.getNonChildrenApps()),
-      n = (0, _.e7)([W.default], () => W.default.locale),
-      a = (0, _.e7)([S.ZP], () => S.ZP.getSelfEmbeddedActivities()),
-      o = (0, _.e7)([j.Z, U.Z], () => j.Z.getChannel(U.Z.getChannelId())),
-      s = null == o ? void 0 : o.getGuildId();
+      {
+        fetchState: t,
+        appAuthTokens: n
+      } = (0, _.cj)([k.Z], () => ({
+        fetchState: k.Z.getFetchState(),
+        appAuthTokens: k.Z.getNewestTokensForNonChildrenApplications()
+      })),
+      a = (0, _.e7)([W.default], () => W.default.locale),
+      o = (0, _.e7)([S.ZP], () => S.ZP.getSelfEmbeddedActivities()),
+      s = (0, _.e7)([j.Z, U.Z], () => j.Z.getChannel(U.Z.getChannelId())),
+      c = null == s ? void 0 : s.getGuildId();
     i.useEffect(() => {
       b.Z.fetch()
     }, []), i.useEffect(() => () => {
@@ -483,62 +489,62 @@ let ec = e => {
         searchQuery: ""
       })
     }, []);
-    let c = e => {
+    let u = e => {
         let {
           id: t,
           application: n
         } = e;
         b.Z.delete(t);
-        let r = a.get(n.id);
+        let r = o.get(n.id);
         null != r && A.Z.leaveActivity({
           location: r.location,
           applicationId: n.id,
           showFeedback: !1
         })
       },
-      u = e_(e => e.searchQuery),
-      d = e => e_.setState({
+      d = e_(e => e.searchQuery),
+      f = e => e_.setState({
         searchQuery: e
       }),
-      f = e => {
-        d(e)
+      p = e => {
+        f(e)
       },
-      p = () => {
-        d("")
+      h = () => {
+        f("")
       },
-      h = () => (0, r.jsx)("div", {
+      m = () => (0, r.jsx)("div", {
         className: en.searchContainer,
         children: (0, r.jsx)(E.E1j, {
           size: E.E1j.Sizes.MEDIUM,
-          query: u,
-          onChange: f,
-          onClear: p,
+          query: d,
+          onChange: p,
+          onClear: h,
           placeholder: et.intl.string(et.t["5prvKS"]),
           "aria-label": et.intl.string(et.t["5prvKS"])
         })
       }),
-      m = (e, t) => (0, r.jsx)(es, {
+      g = (e, t) => (0, r.jsx)(es, {
         className: en.__invalid_marginTop20,
         children: (0, r.jsx)(E.OZU, {
           note: e,
           children: t
         })
       }),
-      g = i.useMemo(() => {
-        let e = u.trim().toLowerCase();
-        return "" === e || null == t ? t : t.length < 100 ? t.filter(t => l()(e, t.application.name.toLowerCase())) : t.filter(t => t.application.name.toLowerCase().includes(e))
-      }, [t, u]),
-      y = () => null == t || null == g ? (0, r.jsx)(E.$jN, {
+      y = i.useMemo(() => {
+        let e = d.trim().toLowerCase();
+        return "" === e || null == n ? n : n.length < 100 ? n.filter(t => l()(e, t.application.name.toLowerCase())) : n.filter(t => t.application.name.toLowerCase().includes(e))
+      }, [n, d]),
+      O = () => null == n || null == y || t !== k.M.FETCHED ? (0, r.jsx)(E.$jN, {
         className: ei.marginTop20,
         type: E.$jN.Type.SPINNING_CIRCLE
-      }) : 0 === t.length ? m(et.intl.string(et.t.CpPv5u), et.intl.string(et.t["E+SM6e"])) : 0 === g.length ? (0, r.jsxs)(r.Fragment, {
-        children: [h(), m(null, et.intl.string(et.t.EVWFNj))]
+      }) : 0 === n.length ? g(et.intl.string(et.t.CpPv5u), et.intl.string(et.t["E+SM6e"])) : 0 === y.length ? (0, r.jsxs)(r.Fragment, {
+        children: [m(), g(null, et.intl.string(et.t.EVWFNj))]
       }) : (0, r.jsxs)(r.Fragment, {
-        children: [h(), g.sort((e, t) => Number(t.id) - Number(e.id)).map(e => (0, r.jsx)(ef, eo({
-          locale: n,
-          onDelete: () => c(e),
-          selectedChannelId: null == o ? void 0 : o.id,
-          selectedGuildId: null != s ? s : void 0
+        children: [m(), y.sort((e, t) => Number(t.id) - Number(e.id)).map(e => (0, r.jsx)(ef, eo({
+          locale: a,
+          onDelete: () => u(e),
+          selectedChannelId: null == s ? void 0 : s.id,
+          selectedGuildId: null != c ? c : void 0
         }, e), e.id))]
       });
     return e ? (0, r.jsx)(I.Z, {}) : (0, r.jsx)(E.hjN, {
@@ -551,7 +557,7 @@ let ec = e => {
           title: et.intl.string(et.t.HU3RFx),
           body: et.intl.string(et.t.Nu5Yi4)
         }),
-        children: y()
+        children: O()
       })
     })
   }

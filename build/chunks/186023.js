@@ -28,7 +28,7 @@ let b = e => {
     root_node_id: C,
     success_node_id: y,
     fail_node_id: I
-  } = n, [O, T] = a.useState(C), [Z, N] = a.useState(void 0), [S, P] = a.useState(void 0), [k, E] = a.useState([]), [M, w] = a.useState(void 0), [A, R] = a.useState(void 0), D = e => {
+  } = n, [O, T] = a.useState(C), [Z, N] = a.useState(void 0), [S, P] = a.useState(void 0), [k, E] = a.useState([]), [w, M] = a.useState(void 0), [A, R] = a.useState(void 0), D = e => {
     var n, r, a;
     let {
       destination: o
@@ -80,7 +80,7 @@ let b = e => {
     var r;
     let a = f ? await (0, u.ZD)(n, t, [...k, e]) : await (0, u.fw)(n, t, [...k, e], h),
       i = null == a || null == (r = a.body) ? void 0 : r.report_id;
-    null != i && w(i), R(j[e.nodeRef].report_type), null == g || g(i)
+    null != i && M(i), R(j[e.nodeRef].report_type), null == g || g(i)
   }, L = () => {
     var e, n;
     if (k.length < 1) return;
@@ -142,7 +142,7 @@ let b = e => {
             successNodeId: y,
             failNodeId: I,
             onSubmit: B,
-            reportId: M
+            reportId: w
           })
         })
       }, e.id))
