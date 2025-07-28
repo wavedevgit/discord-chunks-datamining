@@ -30,8 +30,8 @@ var _ = a(392750),
   E = a(645973),
   S = a(903502),
   P = a(604776),
-  w = a(912072),
-  I = a(272193),
+  I = a(912072),
+  w = a(272193),
   R = a(685560),
   k = a(735959),
   A = a(572444),
@@ -164,7 +164,7 @@ function es(e) {
       id: "overlays",
       name: "Dev Overlays",
       group: et.v0.DEVELOPMENT,
-      render: () => (0, n.jsx)(w.Z, {
+      render: () => (0, n.jsx)(I.Z, {
         devSettingsCategory: g.zU.OVERLAYS
       })
     }), e.push({
@@ -176,7 +176,7 @@ function es(e) {
       id: "reporting",
       name: "Reporting",
       group: et.v0.EXPERIMENTS,
-      render: () => (0, n.jsx)(w.Z, {
+      render: () => (0, n.jsx)(I.Z, {
         devSettingsCategory: g.zU.REPORTING
       })
     }), e.push({
@@ -243,7 +243,7 @@ function es(e) {
       id: "gifting_intent",
       name: "Gifting Intent",
       group: et.v0.PREMIUM,
-      render: () => (0, n.jsx)(I.Z, {})
+      render: () => (0, n.jsx)(w.Z, {})
     }), e.push({
       id: "voice_filters",
       name: "Voice Filters",

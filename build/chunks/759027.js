@@ -70,7 +70,7 @@ function y(e) {
   let {
     subscription: N,
     onUpdated: T
-  } = e, [E, S] = r.useState(!1), [P, w] = r.useState(!1), [I, R] = r.useState(!1), [k, A] = r.useState(!1), [Z, D] = r.useState(null), L = e => (null == e && (e = N.status), e in j) ? j[e] : "Unknown status ".concat(e), M = e => {
+  } = e, [E, S] = r.useState(!1), [P, I] = r.useState(!1), [w, R] = r.useState(!1), [k, A] = r.useState(!1), [Z, D] = r.useState(null), L = e => (null == e && (e = N.status), e in j) ? j[e] : "Unknown status ".concat(e), M = e => {
     let t = new Date(e);
     return u.default.fromTimestamp(t.getTime())
   }, U = async e => {
@@ -170,7 +170,7 @@ function y(e) {
       className: v.collapsablePane,
       children: [(0, n.jsxs)(o.P3F, {
         onClick: () => {
-          R(!I)
+          R(!w)
         },
         className: v.collapsablePaneHeader,
         children: [(0, n.jsx)("div", {
@@ -179,9 +179,9 @@ function y(e) {
             children: "Trial Info"
           })
         }), (0, n.jsx)(c.Z, {
-          direction: I ? c.Z.Directions.UP : c.Z.Directions.DOWN
+          direction: w ? c.Z.Directions.UP : c.Z.Directions.DOWN
         })]
-      }), I && (0, n.jsxs)("ul", {
+      }), w && (0, n.jsxs)("ul", {
         className: v.collapsiblePaneList,
         children: [(0, n.jsxs)("li", {
           children: [(0, n.jsx)(o.Text, {
@@ -270,7 +270,7 @@ function y(e) {
       className: v.collapsablePane,
       children: [(0, n.jsxs)(o.P3F, {
         onClick: () => {
-          w(!P)
+          I(!P)
         },
         className: v.collapsablePaneHeader,
         children: [(0, n.jsx)("div", {

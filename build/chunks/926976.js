@@ -59,7 +59,7 @@ function P(e) {
   })
 }
 
-function w(e) {
+function I(e) {
   let {
     name: t,
     children: a,
@@ -91,7 +91,7 @@ function w(e) {
     })]
   })
 }
-let I = new Set(["client_performance_cpu", "client_performance_memory"]),
+let w = new Set(["client_performance_cpu", "client_performance_memory"]),
   R = (e, t, a) => {
     let n = e.filter(e => e.event === t);
     if (0 === n.length) return {
@@ -200,9 +200,9 @@ let I = new Set(["client_performance_cpu", "client_performance_memory"]),
           })]
         }), (0, n.jsx)(P, {
           children: Object.entries(a).map(e => {
-            let [a, r] = e, l = I.has(a) ? R(c, t, a) : null;
+            let [a, r] = e, l = w.has(a) ? R(c, t, a) : null;
             return (0, n.jsxs)("div", {
-              children: [(0, n.jsx)(w, {
+              children: [(0, n.jsx)(I, {
                 name: "".concat(a, ":"),
                 copyValue: {
                   [a]: r || null
@@ -213,7 +213,7 @@ let I = new Set(["client_performance_cpu", "client_performance_memory"]),
                   className: T.emptyProperty,
                   children: "null"
                 })
-              }, a), null !== l && null !== l.average && (0, n.jsx)(w, {
+              }, a), null !== l && null !== l.average && (0, n.jsx)(I, {
                 name: "".concat(a, "_avg:"),
                 copyValue: {
                   [a]: r || null
@@ -285,7 +285,7 @@ function D() {
     _ = b.find(e => e.key === f),
     {
       TabBar: P,
-      renderSelectedTab: w
+      renderSelectedTab: I
     } = (0, O.ZP)({
       tabs: k
     }, []);
@@ -340,7 +340,7 @@ function D() {
       className: T.subPanel,
       minHeight: 100,
       initialHeight: null != e.current ? e.current.clientHeight / 2 : 300,
-      children: [(0, n.jsx)(P, {}), w({
+      children: [(0, n.jsx)(P, {}), I({
         loggedEvent: _,
         onClose: () => v(void 0),
         filteredEvents: b
