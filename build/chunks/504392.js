@@ -17,8 +17,8 @@ var r = n(255367),
   _ = n(27237),
   x = n(51859),
   v = n(184478),
-  b = n(877362),
-  g = n(460608),
+  g = n(877362),
+  b = n(460608),
   j = n(279604),
   E = n(385902),
   h = n(332538),
@@ -26,8 +26,8 @@ var r = n(255367),
   I = n(921944),
   N = n(93841),
   O = n(388032),
-  P = n(782285);
-let Z = [C.Us.LEVEL, C.Us.PERK];
+  Z = n(782285);
+let P = [C.Us.LEVEL, C.Us.PERK];
 
 function w(e) {
   let {
@@ -86,9 +86,9 @@ function w(e) {
       modalKey: "dismissible_content_".concat(k)
     })
   }, [t, k, D, A]), (null == w ? void 0 : w.powerupCatalog) == null) ? null : (0, r.jsxs)("div", {
-    className: P.container,
+    className: Z.container,
     children: [(0, r.jsxs)(d.Z, {
-      className: P.toolbar,
+      className: Z.toolbar,
       hideSearch: !0,
       toolbar: (0, r.jsx)("div", {}),
       children: [(0, r.jsx)(d.Z.Icon, {
@@ -98,10 +98,10 @@ function w(e) {
         children: O.intl.string(N.default.yv3DJC)
       })]
     }), (0, r.jsxs)("div", {
-      className: P.contentContainer,
+      className: Z.contentContainer,
       children: [(0, r.jsx)(c.zJl, {
-        className: P.powerupsContainer,
-        children: Z.map(e => {
+        className: Z.powerupsContainer,
+        children: P.map(e => {
           let n = w.powerupCatalog[e];
           if (null == n) return;
           let {
@@ -120,9 +120,9 @@ function w(e) {
             }
           }(e), s = e === C.Us.LEVEL ? c.zJl : "div";
           return (0, r.jsxs)("div", {
-            className: P.powerupsSection,
+            className: Z.powerupsSection,
             children: [(0, r.jsxs)("div", {
-              className: P.powerupHorizontalPadding,
+              className: Z.powerupHorizontalPadding,
               children: [(0, r.jsx)(c.X6q, {
                 color: "header-primary",
                 variant: "heading-lg/semibold",
@@ -134,8 +134,8 @@ function w(e) {
               })]
             }), (0, r.jsx)(s, {
               orientation: "horizontal",
-              className: l()(P.powerupContainer, P.powerupHorizontalPadding, {
-                [P.powerupsLevelContainer]: e === C.Us.LEVEL
+              className: l()(Z.powerupContainer, Z.powerupHorizontalPadding, {
+                [Z.powerupsLevelContainer]: e === C.Us.LEVEL
               }),
               fade: !0,
               children: n.map((e, o) => {
@@ -158,12 +158,12 @@ function w(e) {
           }, "section-".concat(e))
         })
       }), (0, r.jsxs)("div", {
-        className: P.sidebarContainer,
+        className: Z.sidebarContainer,
         children: [S ? (0, r.jsx)(v.Z, {
           guildId: t
-        }) : (0, r.jsx)(b.Z, {
+        }) : (0, r.jsx)(g.Z, {
           guildId: t
-        }), (0, r.jsx)(g.Z, {
+        }), (0, r.jsx)(b.Z, {
           guildId: t
         })]
       })]

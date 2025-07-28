@@ -22,9 +22,9 @@ var l = n(44315),
   c = n(686546),
   u = n(981631),
   d = n(182294),
-  f = n(121061);
+  _ = n(121061);
 
-function _(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -40,7 +40,7 @@ function p(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
@@ -188,8 +188,8 @@ function A(e, t, n) {
     bgWidth: c,
     cutoutX: u,
     cutoutY: d,
-    cutoutWidth: f,
-    cutoutHeight: _,
+    cutoutWidth: _,
+    cutoutHeight: f,
     cutoutRadius: p,
     polygonScale: h,
     polygonOrigin: m,
@@ -210,8 +210,8 @@ function A(e, t, n) {
     }), (0, r.jsx)(o.animated.rect, {
       x: u,
       y: d,
-      width: f,
-      height: _,
+      width: _,
+      height: f,
       rx: p,
       ry: p,
       fill: "black"
@@ -271,17 +271,17 @@ function R(e) {
     className: o,
     style: s,
     color: l
-  } = e, d = t === u.Skl.ONLINE && n, _ = b(t, l);
+  } = e, d = t === u.Skl.ONLINE && n, f = b(t, l);
   return (0, r.jsx)(c.ZP, m(p({
     mask: N(t, d),
-    className: a()(f.mask, o),
+    className: a()(_.mask, o),
     style: s
   }, C(i, t, d)), {
     children: (0, r.jsx)("div", {
       style: {
-        backgroundColor: _
+        backgroundColor: f
       },
-      className: f.status
+      className: _.status
     })
   }))
 }

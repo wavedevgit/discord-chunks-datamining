@@ -255,7 +255,7 @@ function $(e) {
                     children: (0, r.jsx)(W.Z, {
                       heading: J.intl.string(J.t.Iyka0d),
                       headingVariant: "text-md/semibold",
-                      headingIcon: (0, r.jsx)(l.P4T, {
+                      headingIcon: (0, r.jsx)(l.Mgn, {
                         size: "xs",
                         color: "currentColor"
                       }),

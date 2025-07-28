@@ -18,7 +18,7 @@ let o = (e, t) => {
       color: "text-danger",
       style: n,
       variant: "text-sm/normal",
-      children: [(0, r.jsx)(i.P4T, {
+      children: [(0, r.jsx)(i.Mgn, {
         size: "custom",
         color: "currentColor",
         width: 14,

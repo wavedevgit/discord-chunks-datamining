@@ -4,7 +4,7 @@ n.d(t, {
   ID: () => O,
   NM: () => S,
   Xi: () => E,
-  ZP: () => P,
+  ZP: () => x,
   bT: () => j
 });
 var r, i, l = n(255367),
@@ -150,7 +150,7 @@ function _(e) {
     })
   })
 }
-let P = function(e) {
+let x = function(e) {
   let {
     sidebar: t,
     content: n,
@@ -163,7 +163,7 @@ let P = function(e) {
     mobileSidebarOpen: O,
     toggleSidebar: E,
     hideSidebar: S = !1
-  } = e, j = s.useRef(null), P = s.useRef(null), x = (0, g.Z)(i), N = (0, p.Yzy)(S, {
+  } = e, j = s.useRef(null), x = s.useRef(null), P = (0, g.Z)(i), N = (0, p.Yzy)(S, {
     from: {
       position: "absolute",
       opacity: 0
@@ -177,10 +177,10 @@ let P = function(e) {
     j.current = e, null != v && (v.current = e)
   }, [v]);
   s.useLayoutEffect(() => {
-    null != j.current && x !== i && j.current.scrollTo({
+    null != j.current && P !== i && j.current.scrollTo({
       to: 0
     })
-  }, [i, x, j]);
+  }, [i, P, j]);
   let T = (0, l.jsx)(_, {
     isMobile: d.tq,
     mobileSidebarOpen: O,
@@ -244,10 +244,10 @@ let P = function(e) {
             children: [(0, l.jsx)(y.Provider, {
               value: j.current,
               children: (0, l.jsx)("div", {
-                ref: P,
+                ref: x,
                 className: h.contentColumnScrollable,
                 children: (0, l.jsx)(p.JcV, {
-                  containerRef: P,
+                  containerRef: x,
                   children: n
                 })
               })
@@ -272,12 +272,12 @@ let P = function(e) {
                   className: a()(h.contentColumn, h[r], {
                     [h.mobileContent]: d.tq
                   }),
-                  ref: P,
+                  ref: x,
                   style: d.tq ? {
                     maxWidth: window.innerWidth
                   } : void 0,
                   children: S ? n : (0, l.jsx)(p.JcV, {
-                    containerRef: P,
+                    containerRef: x,
                     children: n
                   })
                 })

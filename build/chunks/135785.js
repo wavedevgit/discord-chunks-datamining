@@ -32,7 +32,7 @@ let h = e => {
       [g.centerText]: b
     }),
     type: a.Zbd.Types.CUSTOM,
-    children: [(0, i.jsx)(a.P4T, {
+    children: [(0, i.jsx)(a.Mgn, {
       size: "custom",
       width: 20,
       height: 20,

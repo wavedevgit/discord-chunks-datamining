@@ -65,7 +65,7 @@ let N = e => {
     pendingDescription: a,
     failingDescription: o
   } = e, c = t, d = null, u = null;
-  return s ? (d = (0, r.jsx)(p.P4T, {
+  return s ? (d = (0, r.jsx)(p.Mgn, {
     size: "custom",
     color: m.Z.unsafe_rawColors.YELLOW_300.css,
     width: 20,

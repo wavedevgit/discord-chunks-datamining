@@ -76,7 +76,7 @@ function j(e) {
           numPerms: u.length
         })
       })]
-    }), m ? (0, r.jsx)(o.P4T, {
+    }), m ? (0, r.jsx)(o.Mgn, {
       size: "custom",
       color: "currentColor",
       height: 24,

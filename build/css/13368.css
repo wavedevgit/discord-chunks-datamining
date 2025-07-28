@@ -1,84 +1,7 @@
 /**
   Module ID: 13368
-  Original File Name: b278d3c27fe63bc4
+  Original File Name: 8e3609c70b452727
 **/
-.popover_f84418 {
-    overflow: visible
-}
-
-.popoverReactionHoverBar_f84418 {
-    background: var(--background-surface-high);
-    border: 1px solid var(--border-faint);
-    border-radius: 8px;
-    box-shadow: var(--shadow-low)!important;
-    height: auto;
-    padding: 2px
-}
-
-.popoverReactionHoverBar_f84418:hover {
-    border: 1px solid var(--border-subtle);
-    box-shadow: var(--shadow-medium)!important
-}
-
-.hoverBarButton_f84418 {
-    border-radius: 6px;
-    padding: 2px
-}
-
-.hoverBarButton_f84418:hover {
-    background: var(--background-modifier-hover);
-    cursor: pointer
-}
-
-.hoverBarButton_f84418:hover .icon_f84418 {
-    transform: scale(1.1)
-}
-
-.hoverBarButton_f84418:active {
-    background: var(--background-modifier-active);
-    padding: 2px
-}
-
-.hoverBarButton_f84418:active .icon_f84418 {
-    transform: scale(1)
-}
-
-.icon_f84418 {
-    display: block;
-    height: 20px;
-    object-fit: contain;
-    width: 20px
-}
-
-.full-motion .icon_f84418 {
-    transition: transform .4s cubic-bezier(.16,1,.3,1)
-}
-
-.buttonContent_f84418 {
-    align-items: center;
-    display: flex;
-    justify-content: center
-}
-
-.tooltip_f84418 {
-    max-width: 300px
-}
-
-.newBadge_f84418 {
-    padding: 0 4px;
-    pointer-events: none;
-    position: absolute;
-    top: -12px
-}
-
-.separator_f84418 {
-    background: var(--border-subtle);
-    border-radius: 100px;
-    height: 24px;
-    margin: 2px 4px;
-    width: 1px
-}
-
 .container_e73f2a {
     background-color: var(--background-surface-higher);
     border: 1px solid var(--border-subtle);
@@ -2124,32 +2047,6 @@
     margin-top: .2px
 }
 
-.pro__30cbe {
-    text-transform: uppercase
-}
-
-.tip__30cbe {
-    line-height: 16px;
-    opacity: 1
-}
-
-.block__30cbe .pro__30cbe,.block__30cbe .tip__30cbe,.tip__30cbe {
-    font-size: 14px
-}
-
-.inline__30cbe .pro__30cbe,.inline__30cbe .tip__30cbe {
-    display: inline;
-    font-size: 12px
-}
-
-.inline__30cbe .pro__30cbe {
-    margin-right: 3px
-}
-
-.enable-forced-colors .tip__30cbe {
-    opacity: 1
-}
-
 .container__394db {
     align-items: center;
     display: block;
@@ -2513,4 +2410,4 @@
     width: 96px
 }
 
-/*# sourceMappingURL=b278d3c27fe63bc4.css.map*/
+/*# sourceMappingURL=8e3609c70b452727.css.map*/

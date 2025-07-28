@@ -47,7 +47,7 @@ function h(e) {
       break;
     case "warning":
       t = (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(s.P4T, {
+        children: [(0, r.jsx)(s.Mgn, {
           size: "xs",
           color: "currentColor",
           className: f.warning
@@ -61,7 +61,7 @@ function h(e) {
       break;
     case "required":
       t = (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(s.P4T, {
+        children: [(0, r.jsx)(s.Mgn, {
           size: "xs",
           color: "currentColor",
           className: f.danger

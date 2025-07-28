@@ -57,7 +57,7 @@ let s = Object.freeze({
       stopColor: o.Z.unsafe_rawColors.PREMIUM_TIER_2_PINK_FOR_GRADIENTS.css
     })]
   }),
-  f = () => (0, r.jsxs)("linearGradient", {
+  _ = () => (0, r.jsxs)("linearGradient", {
     id: s.PREMIUM_GUILD,
     children: [(0, r.jsx)("stop", {
       stopColor: o.Z.unsafe_rawColors.GUILD_BOOSTING_BLUE.css
@@ -66,7 +66,7 @@ let s = Object.freeze({
       stopColor: o.Z.unsafe_rawColors.GUILD_BOOSTING_PURPLE.css
     })]
   }),
-  _ = () => (0, r.jsxs)("linearGradient", {
+  f = () => (0, r.jsxs)("linearGradient", {
     id: s.PREMIUM_GUILD_BADGE_V2_BACKGROUND,
     gradientTransform: "rotate(45)",
     children: [(0, r.jsx)("stop", {
@@ -89,6 +89,6 @@ let s = Object.freeze({
         height: 1
       },
       "aria-hidden": !0,
-      children: [c(), u(), d(), f(), _()]
+      children: [c(), u(), d(), _(), f()]
     })
   }, () => !0)

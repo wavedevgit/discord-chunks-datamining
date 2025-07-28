@@ -266,7 +266,7 @@ function w(e) {
         })
       }), (null != D ? D : 0) > 0 ? (0, r.jsxs)("div", {
         className: N.warningContainer,
-        children: [(0, r.jsx)(d.P4T, {
+        children: [(0, r.jsx)(d.Mgn, {
           size: "custom",
           width: 20,
           height: 20,

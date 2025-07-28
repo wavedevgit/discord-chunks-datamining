@@ -65,7 +65,7 @@ function T(e) {
         return e
       }({}, e), n = n = {
         className: x.interactive,
-        children: (0, r.jsx)(u.P4T, {
+        children: (0, r.jsx)(u.Mgn, {
           color: u.TVs.colors.STATUS_WARNING_BACKGROUND
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

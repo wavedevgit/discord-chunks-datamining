@@ -1,6 +1,6 @@
 /** Chunk was on 89311 **/
 r.d(t, {
-  Z: () => h
+  Z: () => v
 });
 var n = r(255367),
   i = r(73800),
@@ -18,27 +18,27 @@ var n = r(255367),
   O = r(388032),
   E = r(152790),
   x = r(263930);
-let h = e => {
+let v = e => {
   let {
     entry: t,
     onClose: r,
     onReaction: a,
-    onRequestOpen: h,
-    disableActivityProfileLinks: v,
+    onRequestOpen: v,
+    disableActivityProfileLinks: h,
     customCTA: j,
     popoutClassname: b,
     popoutPosition: I = "right"
-  } = e, y = i.useRef(null), _ = (0, s.e7)([u.Z, c.Z], () => c.Z.getChannel(u.Z.getChannelId())), P = (0, s.e7)([d.default], () => d.default.getUser(t.author_id)), {
-    nick: S,
+  } = e, y = i.useRef(null), _ = (0, s.e7)([u.Z, c.Z], () => c.Z.getChannel(u.Z.getChannelId())), S = (0, s.e7)([d.default], () => d.default.getUser(t.author_id)), {
+    nick: P,
     avatar: N
   } = i.useMemo(() => {
-    let e = null == P ? void 0 : P.getAvatarURL(null == _ ? void 0 : _.guild_id, 48, !1);
+    let e = null == S ? void 0 : S.getAvatarURL(null == _ ? void 0 : _.guild_id, 48, !1);
     return {
-      nick: m.ZP.getName(null == _ ? void 0 : _.guild_id, null == _ ? void 0 : _.id, P),
+      nick: m.ZP.getName(null == _ ? void 0 : _.guild_id, null == _ ? void 0 : _.id, S),
       avatar: e
     }
-  }, [P, _]);
-  return null == P ? null : (0, n.jsx)(o.yRy, {
+  }, [S, _]);
+  return null == S ? null : (0, n.jsx)(o.yRy, {
     targetElementRef: y,
     position: I,
     renderPopout: e => {
@@ -57,13 +57,13 @@ let h = e => {
           },
           onUserPopoutClosed: () => i(),
           disableGameProfileLinks: !0,
-          disableActivityProfileLinks: v
+          disableActivityProfileLinks: h
         })
       })
     },
     positionKey: "'content-entry-".concat(t.id),
     onRequestOpen: () => {
-      null == h || h()
+      null == v || v()
     },
     children: e => {
       var r, i;
@@ -100,7 +100,7 @@ let h = e => {
               className: E.avatar,
               src: N,
               alt: O.intl.formatToPlainString(O.t.IzVXxc, {
-                userName: S
+                userName: P
               })
             }), (0, n.jsx)("div", {
               className: E.playerInfo,
@@ -110,7 +110,7 @@ let h = e => {
                   variant: "text-md/medium",
                   color: "text-primary",
                   lineClamp: 1,
-                  children: S
+                  children: P
                 }), (0, n.jsx)(p.Gk, {
                   location: p.Gt.APP_LAUNCHER,
                   children: f.W.map((e, r) => (0, n.jsx)(e, {

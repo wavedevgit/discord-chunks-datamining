@@ -3,7 +3,7 @@
 n.d(t, {
   $x: () => C,
   ZP: () => w,
-  d7: () => P,
+  d7: () => x,
   w6: () => _
 }), n(539854), n(361932), n(187205), n(388685);
 var r = n(255367),
@@ -65,9 +65,9 @@ let j = Object.freeze({
   }),
   C = 1.4,
   _ = 15,
-  P = 2;
+  x = 2;
 
-function x(e) {
+function P(e) {
   var t, n;
   let {
     section: i,
@@ -129,7 +129,7 @@ class N extends i.PureComponent {
     return null != n && n.stores.some(e => e.showNotice() && !(null != e.canCloseEarly && e.canCloseEarly())) ? (p.S.dispatch(h.CkL.SHAKE_APP, {
       duration: 300,
       intensity: this._intensity
-    }), this._intensity = Math.min(this._intensity + P, _), p.S.dispatch(h.CkL.EMPHASIZE_NOTICE), !1) : (this._intensity = C, !0)
+    }), this._intensity = Math.min(this._intensity + x, _), p.S.dispatch(h.CkL.EMPHASIZE_NOTICE), !1) : (this._intensity = C, !0)
   }
   renderSidebar(e) {
     let {
@@ -204,7 +204,7 @@ class N extends i.PureComponent {
         scrollerRef: this.scrollerRef,
         section: n,
         sidebar: this.renderSidebar(o),
-        content: (0, r.jsx)(x, {
+        content: (0, r.jsx)(P, {
           section: a,
           setPreventNavigation: this.setPreventNavigation,
           scrollerRef: this.scrollerRef
@@ -273,7 +273,7 @@ class N extends i.PureComponent {
         newIndicatorDismissibleContentTypes: m,
         badgeCount: b
       } = e, y = null;
-      i === h.oAB.ACCOUNT && this.props.isEligibleForPomelo ? y = (0, r.jsx)(o.P4T, {
+      i === h.oAB.ACCOUNT && this.props.isEligibleForPomelo ? y = (0, r.jsx)(o.Mgn, {
         size: "custom",
         width: 20,
         height: 20,

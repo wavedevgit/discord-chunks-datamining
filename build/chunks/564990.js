@@ -4,7 +4,7 @@ n.d(t, {
   CV: () => d,
   JX: () => u,
   mt: () => c,
-  yK: () => f
+  yK: () => _
 });
 var r = n(544891),
   i = n(570140),
@@ -75,7 +75,7 @@ let c = async e => {
     })
   }
 };
-async function f(e, t) {
+async function _(e, t) {
   try {
     await r.tn.post({
       url: s.ANM.MY_SPOTIFY_CONTENT_INVENTORY,

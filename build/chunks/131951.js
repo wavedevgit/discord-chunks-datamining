@@ -5,9 +5,9 @@ n.d(t, {
   Z: () => rI
 }), n(388685), n(953529), n(457542), n(539854), n(642613), n(49124), n(337869);
 var u, d = n(512722),
-  f = n.n(d),
-  _ = n(392711),
-  p = n.n(_),
+  _ = n.n(d),
+  f = n(392711),
+  p = n.n(f),
   h = n(209739),
   m = n.n(h),
   g = n(404097),
@@ -59,8 +59,8 @@ var u, d = n(512722),
   ec = n(998502),
   eu = n(13140),
   ed = n(314897),
-  ef = n(967368),
-  e_ = n(463395),
+  e_ = n(967368),
+  ef = n(463395),
   ep = n(592125),
   eh = n(19780),
   em = n(704806),
@@ -253,8 +253,8 @@ let ez = {},
   tc = !1,
   tu = !1,
   td = [],
-  tf = !1,
-  t_ = null,
+  t_ = !1,
+  tf = null,
   tp = null,
   th = null,
   tm = null,
@@ -402,7 +402,7 @@ function tG(e, t) {
 function tB(e) {
   let t = tw(),
     n = t.inputDeviceId;
-  if (e.setEchoCancellation(e_.Z.hasEchoCancellation(n) || t.echoCancellation), e.setNoiseSuppression(e_.Z.hasNoiseSuppression(n) || t.noiseSuppression), tG(e, e_.Z.hasAutomaticGainControl(n) || t.automaticGainControl), e.setNoiseCancellation(t.noiseCancellation), e.setVoiceFilterId(t_), (0, eo.isWeb)()) {
+  if (e.setEchoCancellation(ef.Z.hasEchoCancellation(n) || t.echoCancellation), e.setNoiseSuppression(ef.Z.hasNoiseSuppression(n) || t.noiseSuppression), tG(e, ef.Z.hasAutomaticGainControl(n) || t.automaticGainControl), e.setNoiseCancellation(t.noiseCancellation), e.setVoiceFilterId(tf), (0, eo.isWeb)()) {
     let n = t.noiseCancellation ? -150 : -100;
     e.setSilenceThreshold(n)
   }
@@ -446,8 +446,8 @@ function tV() {
       }).enabled;
       e.setGoLiveUsePixelCounts(r)
     }(0, eo.isWindows)() ? (null == tA ? void 0 : tA.startsWith("NVIDIA")) || (null == tA ? void 0 : tA.startsWith("AMD")) ? e.setExperimentFlag(eT.V8.SIGNAL_AV1, !0): e.setExperimentFlag(eT.V8.SIGNAL_AV1_DECODE, !0): ((0, eo.isMac)() || (0, eo.isLinux)()) && e.setExperimentFlag(eT.V8.SIGNAL_AV1_DECODE, !0), (0, eo.isWindows)() && e.setExperimentFlag(eT.V8.SIGNAL_AV1_HARDWARE_DECODE, !0), eK.setHasFullbandPerformance((0, R.Z)());
-    let f = (0, U.D)("setupMediaEngine").enabled;
-    if (e.setRemoteAudioHistory(1e3 * !!f), (0, N.Z)(r)) {
+    let _ = (0, U.D)("setupMediaEngine").enabled;
+    if (e.setRemoteAudioHistory(1e3 * !!_), (0, N.Z)(r)) {
       let t = A.Z.getSettings();
       e.setExperimentFlag(eT.V8.STREAMER_CLIP, t.clipsEnabled);
       let {
@@ -544,7 +544,7 @@ function tV() {
         videoState: t,
         context: e.context
       })
-    }), e.setBitRate(ef.Z.bitrate), e.applyVideoQualityMode(eE.Z.mode)
+    }), e.setBitRate(e_.Z.bitrate), e.applyVideoQualityMode(eE.Z.mode)
   }), eK.on(b.aB.DeviceChange, (e, t, n) => {
     v.Z.dispatch({
       type: "MEDIA_ENGINE_DEVICES",
@@ -1037,9 +1037,9 @@ function nc(e) {
     userId: c,
     videoToggleState: u,
     persist: d,
-    isAutomatic: _
+    isAutomatic: f
   } = e;
-  f()(!(d && _), "These are not allowed to both be true.");
+  _()(!(d && f), "These are not allowed to both be true.");
   let p = u === eb.ZUi.DISABLED,
     {
       disabledLocalVideos: h
@@ -1047,10 +1047,10 @@ function nc(e) {
     m = null != (t = h[c]) && t,
     g = tv.has(c),
     E = u === eb.ZUi.AUTO_ENABLED || u === eb.ZUi.MANUAL_ENABLED;
-  eP.info("disableVideo=".concat(p, " currentlyDisabled=").concat(m, " currentlyAutoDisabled=").concat(g, ", isVideoShown=").concat(E)), f()(!(g && !m), "If you are auto-disabled, then you are also disabled.");
+  eP.info("disableVideo=".concat(p, " currentlyDisabled=").concat(m, " currentlyAutoDisabled=").concat(g, ", isVideoShown=").concat(E)), _()(!(g && !m), "If you are auto-disabled, then you are also disabled.");
   let b = p !== m,
     y = l === eT.Yn.DEFAULT,
-    O = _ && b && y,
+    O = f && b && y,
     v = d && b && y;
   eP.info("changed=".concat(b, " isDefaultContext=").concat(y, " isUpdateCausedByVideoHealthManager=").concat(O, " isManualToggleByUser=").concat(v));
   let {
@@ -1077,7 +1077,7 @@ function nu() {
       disabledLocalVideos: t
     } = tw(e);
   tv.forEach(n => {
-    f()(t[n], "If you are auto-disabled, then you are also disabled."), delete t[n], eK.eachConnection(e => e.setLocalVideoDisabled(n, !1), e)
+    _()(t[n], "If you are auto-disabled, then you are also disabled."), delete t[n], eK.eachConnection(e => e.setLocalVideoDisabled(n, !1), e)
   }), tv.clear(), tq({
     disabledLocalVideos: t
   }, e, !1)
@@ -1094,7 +1094,7 @@ function nd() {
   }, e, !1)
 }
 
-function nf(e) {
+function n_(e) {
   let {
     context: t,
     userId: n,
@@ -1110,7 +1110,7 @@ function nf(e) {
   }, t), eK.eachConnection(e => e.setLocalVolume(n, r), t)
 }
 
-function n_(e) {
+function nf(e) {
   let {
     context: t,
     userId: n,
@@ -1287,12 +1287,12 @@ function nw() {
   let e = tw(),
     t = tT.size > 0,
     n = e.inputDeviceId,
-    r = e_.Z.hasEchoCancellation(n) || e.echoCancellation,
+    r = ef.Z.hasEchoCancellation(n) || e.echoCancellation,
     i = !t,
-    a = e_.Z.hasNoiseSuppression(n) || e.noiseSuppression,
-    o = tU(e_.Z.hasAutomaticGainControl(n) || e.automaticGainControl),
+    a = ef.Z.hasNoiseSuppression(n) || e.noiseSuppression,
+    o = tU(ef.Z.hasAutomaticGainControl(n) || e.automaticGainControl),
     s = e.noiseCancellation,
-    l = null !== t_,
+    l = null !== tf,
     c = tT.has("voice_filter") && 1 === tT.size;
   eK.setLoopback(t, {
     echoCancellation: r,
@@ -1332,7 +1332,7 @@ function nM(e) {
 
 function nk(e) {
   var t;
-  (0, eo.isWeb)() || (tf = e.enabled, null == (t = eK.setNoiseCancellationEnableStats) || t.call(eK, e.enabled))
+  (0, eo.isWeb)() || (t_ = e.enabled, null == (t = eK.setNoiseCancellationEnableStats) || t.call(eK, e.enabled))
 }
 
 function nj(e) {
@@ -1494,7 +1494,7 @@ function n1(e) {
     enabled: t
   } = e;
   er.default.track(eb.rMx.VOICE_FILTER_PLAYBACK_TOGGLED, {
-    active_voice_filter_id: null != t_ ? t_ : null,
+    active_voice_filter_id: null != tf ? tf : null,
     enabled: t
   }), tq({
     voiceFilterPlaybackEnabled: t
@@ -1520,7 +1520,7 @@ function n4(e) {
   let {
     voiceFilterId: t
   } = e;
-  th = t_, tm = tp, t_ = t, tp = null === t ? null : Date.now()
+  th = tf, tm = tp, tf = t, tp = null === t ? null : Date.now()
 }
 
 function n5(e) {
@@ -1632,20 +1632,20 @@ function ra(e) {
     quality: i
   };
   null != o && o.desktopSource.id !== d.desktopSource.id && (eK.setClipsSource(null), (0, eo.isWindows)() && null != o.desktopSource.soundshareId && T.pn(o.desktopSource.soundshareId)), null != l && t8(l, c), o = d;
-  let f = tR(),
-    _ = tw().videoHook;
+  let _ = tR(),
+    f = tw().videoHook;
   eK.setClipsSource({
     desktopDescription: {
       id: o.desktopSource.id,
       soundshareId: o.desktopSource.soundshareId,
-      useVideoHook: _,
+      useVideoHook: f,
       useGraphicsCapture: tF(),
       useLoopback: r.getExperimentalSoundshare(),
       useQuartzCapturer: !0,
       allowScreenCaptureKit: tH(),
       videoHookStaleFrameTimeoutMs: eG,
       graphicsCaptureStaleFrameTimeoutMs: eB,
-      hdrCaptureMode: f
+      hdrCaptureMode: _
     },
     quality: i,
     applicationName: n
@@ -1748,7 +1748,7 @@ function rd(e) {
   eK.setAecDump(n.aecDumpEnabled)
 }
 
-function rf(e) {
+function r_(e) {
   let {
     state: t
   } = e, n = D.Z.isEnabled();
@@ -1760,7 +1760,7 @@ function rf(e) {
   return !0
 }
 
-function r_(e) {
+function rf(e) {
   eK.eachConnection(t => t.setBitRate(e.bitrate))
 }
 
@@ -1803,7 +1803,7 @@ class rO extends(u = E.ZP.Store) {
       [eT.AN.VIDEO]: eK.supports(eT.AN.VIDEO),
       [eT.AN.DESKTOP_CAPTURE]: eK.supports(eT.AN.DESKTOP_CAPTURE),
       [eT.AN.HYBRID_VIDEO]: eK.supports(eT.AN.HYBRID_VIDEO)
-    }, this.waitFor(ed.default, e_.Z, ep.Z, eh.Z, L.ZP, X.Z.storage, ee.Z, w.Z, A.Z)
+    }, this.waitFor(ed.default, ef.Z, ep.Z, eh.Z, L.ZP, X.Z.storage, ee.Z, w.Z, A.Z)
   }
   supports(e) {
     return eK.supports(e)
@@ -1866,7 +1866,7 @@ class rO extends(u = E.ZP.Store) {
     return null != l ? l : 100
   }
   getKrispEnableStats() {
-    return tf
+    return t_
   }
   isEnabled() {
     return eX
@@ -1896,7 +1896,7 @@ class rO extends(u = E.ZP.Store) {
   }
   isHardwareMute() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : eT.Yn.DEFAULT;
-    return !this.isMute() && !this.isSelfMutedTemporarily(e) && e_.Z.isHardwareMute(this.getInputDeviceId())
+    return !this.isMute() && !this.isSelfMutedTemporarily(e) && ef.Z.isHardwareMute(this.getInputDeviceId())
   }
   isEnableHardwareMuteNotice() {
     return tN
@@ -1991,7 +1991,7 @@ class rO extends(u = E.ZP.Store) {
     return tw(e).modeOptions
   }
   getActiveVoiceFilter() {
-    return t_
+    return tf
   }
   getActiveVoiceFilterAppliedAt() {
     return tp
@@ -2040,7 +2040,7 @@ class rO extends(u = E.ZP.Store) {
   }
   getEchoCancellation() {
     let e = tw();
-    return e_.Z.hasEchoCancellation(e.inputDeviceId) || e.echoCancellation
+    return ef.Z.hasEchoCancellation(e.inputDeviceId) || e.echoCancellation
   }
   getSidechainCompression() {
     return tw().sidechainCompression
@@ -2059,11 +2059,11 @@ class rO extends(u = E.ZP.Store) {
   }
   getNoiseSuppression() {
     let e = tw();
-    return e_.Z.hasNoiseSuppression(e.inputDeviceId) || e.noiseSuppression
+    return ef.Z.hasNoiseSuppression(e.inputDeviceId) || e.noiseSuppression
   }
   getAutomaticGainControl() {
     let e = tw();
-    return e_.Z.hasAutomaticGainControl(e.inputDeviceId) || e.automaticGainControl
+    return ef.Z.hasAutomaticGainControl(e.inputDeviceId) || e.automaticGainControl
   }
   getBypassSystemInputProcessing() {
     return tw().bypassSystemInputProcessing
@@ -2268,8 +2268,8 @@ let rI = r = new rO(v.Z, {
   AUDIO_TOGGLE_SELF_DEAF: ns,
   AUDIO_TOGGLE_LOCAL_MUTE: nl,
   AUDIO_SET_LOCAL_VIDEO_DISABLED: nc,
-  AUDIO_SET_LOCAL_VOLUME: nf,
-  AUDIO_SET_LOCAL_PAN: n_,
+  AUDIO_SET_LOCAL_VOLUME: n_,
+  AUDIO_SET_LOCAL_PAN: nf,
   AUDIO_SET_MODE: np,
   AUDIO_SET_INPUT_VOLUME: nh,
   AUDIO_SET_OUTPUT_VOLUME: nm,
@@ -2314,8 +2314,8 @@ let rI = r = new rO(v.Z, {
   OVERLAY_INITIALIZE: t9,
   MEDIA_ENGINE_SET_OPEN_H264: ru,
   MEDIA_ENGINE_SET_HARDWARE_ENCODING: nU,
-  APP_STATE_UPDATE: rf,
-  SET_CHANNEL_BITRATE: r_,
+  APP_STATE_UPDATE: r_,
+  SET_CHANNEL_BITRATE: rf,
   SET_VAD_PERMISSION: nq,
   SET_NATIVE_PERMISSION: nX,
   SET_CHANNEL_VIDEO_QUALITY_MODE: rm,

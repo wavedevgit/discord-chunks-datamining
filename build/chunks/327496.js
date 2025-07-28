@@ -21,7 +21,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,7 +34,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function f(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -46,7 +46,7 @@ function _(e, t) {
 }
 
 function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -87,7 +87,7 @@ let y = e => {
   var {
     backgroundStyle: a = "always",
     children: d,
-    icon: _,
+    icon: f,
     name: m,
     ariaLabel: g,
     className: y,
@@ -97,7 +97,7 @@ let y = e => {
     selected: T = !1
   } = e, S = h(e, ["backgroundStyle", "children", "icon", "name", "ariaLabel", "className", "style", "to", "onClick", "selected"]);
   let A = (0, s.k6)();
-  null == _ && null != m && (n = E(t = (0, c.Zg)(m)));
+  null == f && null != m && (n = E(t = (0, c.Zg)(m)));
   let N = i.useCallback(e => {
       if (null == v);
       else if ("string" == typeof v) A.push(v);
@@ -111,12 +111,12 @@ let y = e => {
       null != I && I(e)
     }, [A, v, I]),
     C = (0, l.dQu)(l.TVs.modules.guildbar.AVATAR_SIZE);
-  return (0, r.jsxs)(l.P3F, p(f({}, S), {
+  return (0, r.jsxs)(l.P3F, p(_({}, S), {
     onClick: N,
     className: o()(y, u.wrapper, {
       [u.selected]: T
     }),
-    style: p(f({}, O), {
+    style: p(_({}, O), {
       fontSize: n
     }),
     focusProps: {
@@ -128,9 +128,9 @@ let y = e => {
       className: o()(b(a, !1), u.acronym),
       "aria-hidden": !0,
       children: t
-    }) : null, null != _ ? (0, r.jsx)("img", {
+    }) : null, null != f ? (0, r.jsx)("img", {
       className: u.icon,
-      src: _,
+      src: f,
       alt: " ",
       width: C,
       height: C,

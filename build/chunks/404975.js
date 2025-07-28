@@ -1,43 +1,52 @@
 /** Chunk was on 36878 **/
 n.d(t, {
-  P: () => l
+  P: () => f
 }), n(35282);
 var a = n(255367),
-  i = n(481060),
-  r = n(829210),
-  s = n(388032),
-  o = n(476523);
+  i = n(120356),
+  o = n.n(i),
+  s = n(873546),
+  r = n(481060),
+  l = n(59662),
+  c = n(829210),
+  d = n(388032),
+  u = n(476523);
 
-function l(e) {
+function f(e) {
   let {
     tree: t,
     header: n,
-    footer: l
-  } = e;
+    footer: i
+  } = e, {
+    showNavigationMobile: f
+  } = (0, l.t)();
   return (0, a.jsxs)("div", {
-    className: o.sidebar,
-    children: [null != n && (0, a.jsx)(n, {}), (0, a.jsx)(i.E1j, {
-      placeholder: s.intl.string(s.t["5h0QOD"]),
+    className: o()(u.sidebar, {
+      [u.mobile]: s.tq,
+      [u.mobileNavigationOpen]: f
+    }),
+    children: [null != n && (0, a.jsx)(n, {}), (0, a.jsx)(r.E1j, {
+      placeholder: d.intl.string(d.t["5h0QOD"]),
       query: "",
       onChange: () => {},
-      size: i.E1j.Sizes.MEDIUM,
-      className: o.search
-    }), (0, a.jsx)(i.zJl, {
-      className: o.navScroller,
+      size: r.E1j.Sizes.MEDIUM,
+      className: u.search
+    }), (0, a.jsx)(r.zJl, {
+      className: u.navScroller,
       fade: !0,
       children: (0, a.jsx)("nav", {
-        className: o.nav,
+        className: u.nav,
         children: (0, a.jsx)("ul", {
           children: t.root.data.layout.map(e => (0, a.jsx)("li", {
-            children: (0, a.jsx)(r.Z, {
+            children: (0, a.jsx)(c.Z, {
               node: e
             })
           }, e.key))
         })
       })
-    }), null != l && (0, a.jsx)("footer", {
-      className: o.footer,
-      children: (0, a.jsx)(l, {})
+    }), null != i && (0, a.jsx)("footer", {
+      className: u.footer,
+      children: (0, a.jsx)(i, {})
     })]
   })
 }

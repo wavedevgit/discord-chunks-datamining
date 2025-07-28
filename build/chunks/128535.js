@@ -88,8 +88,8 @@ let v = e => 0 === e.length ? b.warning : b.danger,
       }),
       {
         errorHints: N,
-        startingConsoleQuest: T,
-        startConsoleQuest: E
+        startingConsoleQuest: E,
+        startConsoleQuest: T
       } = (0, j.GI)({
         questId: e.quest.id,
         beforeRequest: () => {
@@ -104,13 +104,13 @@ let v = e => 0 === e.length ? b.warning : b.danger,
       });
     return (0, r.jsxs)("div", {
       className: o()(b.container, {
-        [b.inFlight]: T
+        [b.inFlight]: E
       }),
       children: [(0, r.jsxs)("div", {
         className: b.info,
         children: [(0, r.jsxs)("div", {
           className: b.header,
-          children: [(0, r.jsx)(c.P4T, {
+          children: [(0, r.jsx)(c.Mgn, {
             className: o()(b.headerIcon, v(N)),
             size: "custom",
             color: "currentColor",
@@ -134,8 +134,8 @@ let v = e => 0 === e.length ? b.warning : b.danger,
         className: b.cta,
         children: (0, r.jsx)(l.zx, {
           color: l.Tt.PRIMARY,
-          onClick: E,
-          disabled: T,
+          onClick: T,
+          disabled: E,
           children: (0, r.jsxs)("div", {
             className: b.ctaInner,
             children: [g.render(), f.intl.string(f.t.nPThNT)]

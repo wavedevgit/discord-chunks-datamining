@@ -73,7 +73,7 @@ function E(e) {
               color: (0, l.Lq)(t ? x.Ilk.WHITE_500 : x.Ilk.BRAND_500),
               secondaryColor: (0, l.Lq)(t && E || t && !E ? x.Ilk.BRAND_500 : x.Ilk.WHITE_500),
               className: j.activeIcon
-            }), d && (0, i.jsx)(a.P4T, {
+            }), d && (0, i.jsx)(a.Mgn, {
               color: (0, l.Lq)(x.Ilk.RED_400),
               secondaryColor: (0, l.Lq)(t && E || t && !E ? x.Ilk.BRAND_500 : x.Ilk.WHITE_500),
               size: "xs",

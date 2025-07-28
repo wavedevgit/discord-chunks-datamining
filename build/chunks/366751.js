@@ -24,7 +24,7 @@ function u(e) {
       onClick: () => {
         n(a.L.USER_DISMISS)
       }
-    }), (0, r.jsx)(o.P4T, {
+    }), (0, r.jsx)(o.Mgn, {
       color: l.Z.colors.TEXT_FEEDBACK_WARNING,
       className: c.icon
     }), (0, r.jsx)(i.xv, {

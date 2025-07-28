@@ -13,7 +13,7 @@ var r = n(846519),
   u = n(938475),
   d = n(388032);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -21,7 +21,7 @@ function f(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let _ = 3,
+let f = 3,
   p = 18e4;
 
 function h() {
@@ -35,19 +35,19 @@ function m() {
   if (!h()) return;
   let e = c.Z.getCurrentClientVoiceChannelId(null);
   null != e && (i.Z.sendBotMessage(e, d.intl.formatToPlainString(d.t.XYof5O, {
-    number: _
+    number: f
   })), a.default.selectVoiceChannel(null))
 }
 class g extends o.Z {
   constructor(...e) {
-    super(...e), f(this, "idleTimeout", new r.V7), f(this, "handleConnectionClosed", () => {
+    super(...e), _(this, "idleTimeout", new r.V7), _(this, "handleConnectionClosed", () => {
       this.idleTimeout.stop()
-    }), f(this, "handleEmbeddedActivityDisconnect", () => {
+    }), _(this, "handleEmbeddedActivityDisconnect", () => {
       h() && this.idleTimeout.start(p, m, !0)
-    }), f(this, "handleVoiceStateUpdates", () => {
+    }), _(this, "handleVoiceStateUpdates", () => {
       if (!h()) return void this.idleTimeout.stop();
       this.idleTimeout.start(p, m, !1)
-    }), f(this, "actions", {
+    }), _(this, "actions", {
       VOICE_STATE_UPDATES: this.handleVoiceStateUpdates,
       CONNECTION_CLOSED: this.handleConnectionClosed,
       EMBEDDED_ACTIVITY_CLOSE: this.handleEmbeddedActivityDisconnect

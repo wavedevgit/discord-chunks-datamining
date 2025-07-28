@@ -49,8 +49,8 @@ function u(e, t) {
 var d = function(e) {
   return e[e.FETCHING = 0] = "FETCHING", e[e.FETCHED = 1] = "FETCHED", e[e.ERROR = 2] = "ERROR", e
 }({});
-let f = {},
-  _ = {},
+let _ = {},
+  f = {},
   p = new Set,
   h = {};
 
@@ -58,7 +58,7 @@ function m(e) {
   let {
     applicationId: t
   } = e;
-  _ = u(l({}, _), {
+  f = u(l({}, f), {
     [t]: 0
   })
 }
@@ -67,9 +67,9 @@ function g(e) {
   let {
     application: t
   } = e;
-  f = u(l({}, f), {
+  _ = u(l({}, _), {
     [t.id]: t
-  }), _ = u(l({}, _), {
+  }), f = u(l({}, f), {
     [t.id]: 1
   });
   let n = Date.now();
@@ -83,27 +83,27 @@ function E(e) {
     applicationId: t,
     isInvalidApplication: n
   } = e;
-  _ = u(l({}, _), {
+  f = u(l({}, f), {
     [t]: 2
   }), n && (p.add(t), p = new Set(p))
 }
 class b extends(r = i.ZP.Store) {
   getApplication(e) {
-    if (null != e) return f[e]
+    if (null != e) return _[e]
   }
   getApplicationRecord(e) {
     if (null == e) return;
-    let t = f[e];
+    let t = _[e];
     if (null != t) return o.ZP.createFromServer(t)
   }
   getApplications() {
-    return f
+    return _
   }
   getApplicationFetchState(e) {
-    if (null != e) return _[e]
+    if (null != e) return f[e]
   }
   getApplicationFetchStates() {
-    return _
+    return f
   }
   isInvalidApplication(e) {
     return null != e && p.has(e)

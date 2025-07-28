@@ -1,14 +1,13 @@
-/** Chunk was on web.js **/
-"use strict";
+/** Chunk was on 66005 **/
 n.d(t, {
-  Z: () => a
+  Z: () => l
 });
 var r = n(255367),
   i = n(225893);
 
-function a(e, t, n, a) {
+function l(e, t, n, l) {
   return (0, r.jsx)("img", {
-    className: a,
+    className: l,
     src: i,
     alt: ""
   }, t)

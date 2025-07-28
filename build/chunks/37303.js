@@ -28,8 +28,8 @@ function h(e) {
     size: O,
     height: N
   } = (0, m.h)(), {
-    expansionSpring: T,
-    isAnimating: E,
+    expansionSpring: E,
+    isAnimating: T,
     isExpanded: q,
     toggleExpanded: S
   } = (0, m.O)({
@@ -46,7 +46,7 @@ function h(e) {
     sourceQuestContent: g,
     children: e => (0, r.jsx)(o.animated.div, {
       style: {
-        maxHeight: n === a.jn.QUESTS_EMBED ? void 0 : T.to({
+        maxHeight: n === a.jn.QUESTS_EMBED ? void 0 : E.to({
           range: [0, 1],
           output: [c.DJ, P]
         })
@@ -65,8 +65,8 @@ function h(e) {
           location: n,
           quest: t,
           size: O,
-          expansionSpring: T,
-          isAnimating: E,
+          expansionSpring: E,
+          isAnimating: T,
           isExpanded: q,
           contentPosition: x,
           toggleExpanded: S,
@@ -78,7 +78,7 @@ function h(e) {
           size: O,
           isFocused: j,
           isExpanded: q,
-          isAnimating: E,
+          isAnimating: T,
           contentPosition: x,
           sourceQuestContent: g
         })]

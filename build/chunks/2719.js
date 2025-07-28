@@ -118,7 +118,7 @@ function Y(e) {
       className: F.pomeloWarning,
       children: (0, i.jsx)(m.ua7, {
         text: G.intl.string(G.t.HHC5Z2),
-        children: e => (0, i.jsx)(m.P4T, z(H({
+        children: e => (0, i.jsx)(m.Mgn, z(H({
           size: "custom",
           width: 20,
           height: 20
@@ -131,7 +131,7 @@ function Y(e) {
       children: (0, i.jsx)(m.ua7, {
         text: h,
         "aria-label": !1,
-        children: e => (0, i.jsx)(m.P4T, z(H({
+        children: e => (0, i.jsx)(m.Mgn, z(H({
           size: "custom",
           width: 20,
           height: 20
@@ -205,7 +205,7 @@ function K(e) {
       children: (0, i.jsx)(m.ua7, {
         text: c,
         "aria-label": !1,
-        children: e => (0, i.jsx)(m.P4T, z(H({
+        children: e => (0, i.jsx)(m.Mgn, z(H({
           size: "custom",
           width: 20,
           height: 20

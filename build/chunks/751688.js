@@ -21,7 +21,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,7 +34,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function f(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -46,7 +46,7 @@ function _(e, t) {
 }
 
 function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -75,7 +75,7 @@ function g(e) {
     guildId: n,
     channelId: a,
     nick: d,
-    className: _,
+    className: f,
     textClassName: m,
     disablePopout: g,
     ignoreModalClicks: E,
@@ -98,9 +98,9 @@ function g(e) {
       var {
         onClick: i
       } = e, a = h(e, ["onClick"]);
-      return (0, r.jsxs)(s.P3F, p(f({}, a), {
+      return (0, r.jsxs)(s.P3F, p(_({}, a), {
         innerRef: I,
-        className: o()(u.userListItem, _, {
+        className: o()(u.userListItem, f, {
           [u.popoutDisabled]: g
         }),
         onContextMenu: y,

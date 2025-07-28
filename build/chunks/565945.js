@@ -17,12 +17,12 @@ var o = n(898061),
       return (0, o.Z)(e, t)
     })
   },
-  f = function(e, t) {
+  _ = function(e, t) {
     return e && t && t.split(" ").forEach(function(t) {
       return (0, s.Z)(e, t)
     })
   },
-  _ = function(e) {
+  f = function(e) {
     function t() {
       for (var t, n = arguments.length, r = Array(n), i = 0; i < n; i++) r[i] = arguments[i];
       return (t = e.call.apply(e, [this].concat(r)) || this).appliedClasses = {
@@ -79,7 +79,7 @@ var o = n(898061),
         r = n.base,
         i = n.active,
         a = n.done;
-      this.appliedClasses[t] = {}, r && f(e, r), i && f(e, i), a && f(e, a)
+      this.appliedClasses[t] = {}, r && _(e, r), i && _(e, i), a && _(e, a)
     }, n.render = function() {
       var e = this.props,
         t = (e.classNames, (0, i.Z)(e, ["classNames"]));
@@ -93,7 +93,7 @@ var o = n(898061),
       }))
     }, t
   }(l.Component);
-_.defaultProps = {
+f.defaultProps = {
   classNames: ""
-}, _.propTypes = {};
-let p = _
+}, f.propTypes = {};
+let p = f

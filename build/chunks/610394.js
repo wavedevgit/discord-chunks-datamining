@@ -14,8 +14,8 @@ var r, i = n(442837),
   c = n(710845),
   u = n(353926),
   d = n(594190),
-  f = n(928518),
-  _ = n(314897),
+  _ = n(928518),
+  f = n(314897),
   p = n(355863),
   h = n(626135),
   m = n(998502),
@@ -275,11 +275,11 @@ function ed(e) {
   }
 }
 
-function ef(e) {
+function e_(e) {
   let t = d.ZP.getGameForPID(e);
   o.Z.setAssociatedGame(null != Z ? Z : g.UNSET_PID, e, t)
 }
-async function e_() {
+async function ef() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 500,
     t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 3;
   for (let i = 0; i < t; i++) {
@@ -312,8 +312,8 @@ async function ep(e) {
       renderer_started: !0,
       fullscreen_type: await (0, I.hj)(e, 0),
       graphics_info_after: new Date().getTime() - t
-    }), l.Z.window.setBackgroundThrottling(!1), m.ZP.IsHardwareAcceleratedGPUSchedulingEnabled() && G.toggleGPUBoost("HARDWARE_ACCELERATED_GPU_SCHEDULING_ENABLED", !0), G.toggleGPUBoost("OVERLAY_RENDERING", !0), ef(e), Z = e, (0, g.setPID)(e), M.info("Getting Native Handle for pid", e);
-    let n = await e_();
+    }), l.Z.window.setBackgroundThrottling(!1), m.ZP.IsHardwareAcceleratedGPUSchedulingEnabled() && G.toggleGPUBoost("HARDWARE_ACCELERATED_GPU_SCHEDULING_ENABLED", !0), G.toggleGPUBoost("OVERLAY_RENDERING", !0), e_(e), Z = e, (0, g.setPID)(e), M.info("Getting Native Handle for pid", e);
+    let n = await ef();
     if (null == n) return M.error("Failed to get native handle for pid", e), ei(e, Error("Failed to get native handle for pid")), "";
     return M.info("Native Handle for pid ".concat(e, ":"), n), o.Z.updateOverlayState(e, s.mM.OVERLAY_RENDERING), et(e, {
       renderer_started_after: new Date().getTime() - t
@@ -346,8 +346,8 @@ function em(e) {
 
 function eg(e) {
   try {
-    M.verbose("Refreshing OOP host window for pid ".concat(e)), ef(e), j.delete(null != Z ? Z : g.UNSET_PID), Z = e, (0, g.setPID)(null != Z ? Z : g.UNSET_PID);
-    let t = f.Z.getWindow(N.$J),
+    M.verbose("Refreshing OOP host window for pid ".concat(e)), e_(e), j.delete(null != Z ? Z : g.UNSET_PID), Z = e, (0, g.setPID)(null != Z ? Z : g.UNSET_PID);
+    let t = _.Z.getWindow(N.$J),
       n = () => new Promise(e => {
         let n = t => {
           t.data === D && (window.removeEventListener("message", n), e())
@@ -370,7 +370,7 @@ function eg(e) {
 }
 
 function eE(e, t, n, r) {
-  let i = f.Z.getWindow(N.$J);
+  let i = _.Z.getWindow(N.$J);
   if (null == i) return;
   let a = Math.ceil(n * i.innerWidth),
     o = Math.ceil(r * i.innerHeight),
@@ -549,7 +549,7 @@ function eY(e) {
 }
 class eW extends(r = i.ZP.Store) {
   initialize() {
-    this.waitFor(d.ZP, _.default, u.Z), this.syncWith([u.Z], eZ)
+    this.waitFor(d.ZP, f.default, u.Z), this.syncWith([u.Z], eZ)
   }
   isInputLocked(e) {
     return !j.has(e)

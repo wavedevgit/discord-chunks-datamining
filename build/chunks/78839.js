@@ -20,7 +20,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -33,7 +33,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function f(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -45,7 +45,7 @@ function _(e, t) {
 }
 
 function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -92,9 +92,9 @@ function R(e) {
   } = e;
   if (t.user_id !== l.default.getId()) return;
   let n = s.Q.createFromServer(t);
-  h = p(f({}, h), {
+  h = p(_({}, h), {
     [n.id]: n
-  }), U(n) && (m = p(f({}, m), {
+  }), U(n) && (m = p(_({}, m), {
     [n.id]: n
   })), null != E && n.type === c.NYc.GUILD && (E = C({
     activeSubscriptions: E,

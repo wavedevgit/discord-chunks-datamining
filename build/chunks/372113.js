@@ -24,8 +24,8 @@ var r = n(255367),
   y = n(644646),
   O = n(110560),
   N = n(667105),
-  T = n(128535),
-  E = n(87894),
+  E = n(128535),
+  T = n(87894),
   q = n(2660),
   S = n(46140),
   P = n(981631),
@@ -63,9 +63,9 @@ function I(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let D = (e, t, n) => (0, E.uq)(e) && !n && "lg" === t ? "text-lg/medium" : "lg" === t ? "text-md/medium" : "sm" === t ? "text-sm/medium" : "text-xs/medium";
+let M = (e, t, n) => (0, T.uq)(e) && !n && "lg" === t ? "text-lg/medium" : "lg" === t ? "text-md/medium" : "sm" === t ? "text-sm/medium" : "text-xs/medium";
 
-function M(e) {
+function D(e) {
   let {
     containerSize: t,
     onClick: n,
@@ -146,7 +146,7 @@ let Q = e => {
     year: "numeric",
     month: "long",
     day: "numeric"
-  }), W = U >= g.OH.ACCEPTED, F = U >= g.OH.COMPLETED, z = U >= g.OH.CLAIMED, X = (0, x.Xv)(n.config), H = (0, E.uq)(o), Y = o === C.jn.QUESTS_EMBED, V = Z || L, J = W && !z && H, K = (0, g.t5)(n, S.dr.QUESTS_CARD, o, B), {
+  }), W = U >= g.OH.ACCEPTED, F = U >= g.OH.COMPLETED, z = U >= g.OH.CLAIMED, X = (0, x.Xv)(n.config), H = (0, T.uq)(o), Y = o === C.jn.QUESTS_EMBED, V = Z || L, J = W && !z && H, K = (0, g.t5)(n, S.dr.QUESTS_CARD, o, B), {
     xboxAndPlaystationAccounts: $
   } = (0, g.z6)(), ee = (0, h.O5)(), et = s.useMemo(() => b.r.build(n.config), [n.config]), en = (0, g.Rf)(n), er = (0, f.DD)({
     quest: n,
@@ -190,7 +190,7 @@ let Q = e => {
         }, e), {
           children: [Q && (0, r.jsx)("div", {
             className: R.rewardTileExpired,
-            children: (0, r.jsx)(c.P4T, {
+            children: (0, r.jsx)(c.Mgn, {
               color: c.TVs.colors.WHITE
             })
           }), ea ? (0, r.jsx)(q.Z, {
@@ -202,7 +202,7 @@ let Q = e => {
       }), (0, r.jsxs)("div", {
         className: i()(R.gridText, R.taskDetails),
         children: [(0, r.jsx)(c.Text, {
-          variant: D(o, u, W),
+          variant: M(o, u, W),
           className: R.taskInstructions,
           children: Q ? w.intl.formatToPlainString(w.t["ge+AJi"], {
             questName: n.config.messages.questName
@@ -277,7 +277,7 @@ let Q = e => {
         })]
       }) : (0, r.jsxs)("div", {
         className: i()(R.ctaButtonContainer, R.gridCtaButtons),
-        children: [!H && (0, r.jsx)(M, {
+        children: [!H && (0, r.jsx)(D, {
           containerSize: u,
           onClick: () => {
             (0, O.navigateToQuestHome)({
@@ -310,7 +310,7 @@ let Q = e => {
       className: R.microphoneContainer,
       children: [(0, r.jsx)("div", {
         className: R.separator
-      }), (0, r.jsx)(T.Z, {
+      }), (0, r.jsx)(E.Z, {
         quest: n,
         location: o,
         sourceQuestContent: B

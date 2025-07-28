@@ -1,7 +1,7 @@
-/** Chunk was on 95336 **/
+/** Chunk was on 36512 **/
 r.d(t, {
-  M: () => S,
-  Z: () => b
+  M: () => _,
+  Z: () => x
 }), r(415506), r(781311), r(388685);
 var n, s = r(255367),
   l = r(73800),
@@ -95,11 +95,11 @@ let m = e => {
   })
 };
 
-function _(e) {
+function S(e) {
   e.stopPropagation(), e.preventDefault()
 }
 
-function S(e, t, r) {
+function _(e, t, r) {
   return {
     id: "".concat(e, "-").concat(t),
     role: "option",
@@ -118,7 +118,7 @@ class y extends(n = l.PureComponent) {
       onHighlightQuery: c,
       hideQuery: u,
       searchFavorites: p,
-      showDMQueryText: _
+      showDMQueryText: S
     } = this.props;
     if (e || u) return null;
     let y = -1 === n;
@@ -127,13 +127,13 @@ class y extends(n = l.PureComponent) {
         className: i()(d.queryContainer, {
           [d.focused]: y
         })
-      }, S(r, -1, y)), {
+      }, _(r, -1, y)), {
         onMouseEnter: c,
         onClick: l,
         children: [(0, s.jsx)(m, {
           query: t,
           searchFavorites: p,
-          showDMQueryText: _
+          showDMQueryText: S
         }), (0, s.jsx)("div", {
           className: d.queryShortcut,
           "aria-hidden": !0,
@@ -147,7 +147,7 @@ class y extends(n = l.PureComponent) {
         className: i()(d.queryContainer, {
           [d.focused]: y
         })
-      }, S(r, -1, y)), {
+      }, _(r, -1, y)), {
         onMouseEnter: c,
         onClick: a,
         children: [(0, s.jsx)("div", {
@@ -193,7 +193,7 @@ class y extends(n = l.PureComponent) {
       style: {
         width: n
       },
-      onMouseDown: _,
+      onMouseDown: S,
       role: "listbox",
       id: r,
       tabIndex: -1,
@@ -220,7 +220,7 @@ class y extends(n = l.PureComponent) {
           channelContainerClassName: d.channelContainer,
           textContainerClassName: d.searchResultNameContainer
         });
-      return (0, s.jsx)(o.P3F, g(f({}, S(e, -1, -1 === n)), {
+      return (0, s.jsx)(o.P3F, g(f({}, _(e, -1, -1 === n)), {
         className: d.inChannelOptionContainer,
         onClick: l,
         children: (0, s.jsx)(o.Text, {
@@ -240,4 +240,4 @@ p(y, "defaultProps", {
   hideQuery: !1,
   width: 320
 });
-let b = y
+let x = y

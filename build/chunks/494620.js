@@ -19,7 +19,7 @@ let c = {
   },
   u = {
     info: o.d3s,
-    warning: o.P4T
+    warning: o.Mgn
   };
 
 function d(e) {

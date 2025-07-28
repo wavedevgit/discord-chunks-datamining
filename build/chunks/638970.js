@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(481060),
   u = n(493773),
   d = n(468363),
-  f = n(906732),
-  _ = n(313201),
+  _ = n(906732),
+  f = n(313201),
   p = n(158776),
   h = n(885110),
   m = n(823379),
@@ -104,9 +104,9 @@ function k(e) {
     guildId: m,
     onOpenUserProfileModal: C,
     onClose: P
-  } = e, w = (0, _.Dt)(), {
+  } = e, w = (0, f.Dt)(), {
     analyticsLocations: k
-  } = (0, f.ZP)(), {
+  } = (0, _.ZP)(), {
     trackUserProfileAction: j
   } = (0, g.KZ)(), {
     live: U,

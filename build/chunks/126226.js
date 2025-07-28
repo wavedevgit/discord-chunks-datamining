@@ -14,8 +14,8 @@ var i = n(693789),
   c = n(213459),
   u = n(10718),
   d = n(367790),
-  f = n(998698),
-  _ = n(895924),
+  _ = n(998698),
+  f = n(895924),
   p = n(581364),
   h = n(826298),
   m = n(588468),
@@ -69,8 +69,8 @@ function R(e) {
 }
 let P = {
   sentinel: O.GI,
-  stores: [f.Z, c.ZP, g.Z],
-  matches: (e, t, n, r, i) => i.commands !== y.L8.DISABLED && null == f.Z.getActiveCommand(e.id) && (r || i.commands !== y.L8.OLD_BUILT_INS),
+  stores: [_.Z, c.ZP, g.Z],
+  matches: (e, t, n, r, i) => i.commands !== y.L8.DISABLED && null == _.Z.getActiveCommand(e.id) && (r || i.commands !== y.L8.OLD_BUILT_INS),
   queryResults(e, t, n, r, i) {
     if (0 === n.length && r.commands !== y.L8.OLD_BUILT_INS) return N;
     if (r.commands === y.L8.OLD_BUILT_INS) {
@@ -107,15 +107,15 @@ let P = {
         allowFetch: i
       });
     if (null == s) return N;
-    let f = s;
+    let _ = s;
     if (a.hasSpaceTerminator) {
       let e = a.text.trim(),
         t = e + " ";
-      f = f.filter(n => n.displayName === e || n.displayName.startsWith(t))
+      _ = _.filter(n => n.displayName === e || n.displayName.startsWith(t))
     }
-    return 0 === f.length ? N : {
+    return 0 === _.length ? N : {
       results: {
-        entries: f.slice(0, y.AQ).map(e => ({
+        entries: _.slice(0, y.AQ).map(e => ({
           command: e,
           section: null == c ? void 0 : c.find(t => t.id === e.applicationId)
         }))
@@ -185,11 +185,11 @@ let P = {
       command: c,
       section: u
     } = t[n];
-    if (c.inputType === _.iw.PLACEHOLDER) return null;
+    if (c.inputType === f.iw.PLACEHOLDER) return null;
     if (i.commands === y.L8.OLD_BUILT_INS) i.insertText(R(c));
     else {
       let e = o;
-      null == e && (e = l ? _.Vh.QUERY : _.Vh.DISCOVERY), s.Po({
+      null == e && (e = l ? f.Vh.QUERY : f.Vh.DISCOVERY), s.Po({
         channelId: a.id,
         command: c,
         section: null != u ? u : null,

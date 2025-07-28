@@ -49,9 +49,9 @@ function d(e, t) {
   }), e
 }
 
-function f(e, t) {
+function _(e, t) {
   if (null == e) return {};
-  var n, r, i = _(e, t);
+  var n, r, i = f(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -59,7 +59,7 @@ function f(e, t) {
   return i
 }
 
-function _(e, t) {
+function f(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -72,18 +72,18 @@ let p = function(e) {
     onClick: n,
     postSuccessGuild: l,
     onSubscribeModalClose: u,
-    premiumModalAnalyticsLocation: _,
+    premiumModalAnalyticsLocation: f,
     applicationId: p,
     confirmationFooter: h,
     paymentModalBanner: m,
     buttonTextOverride: g
-  } = e, E = f(e, ["subscriptionTier", "onClick", "postSuccessGuild", "onSubscribeModalClose", "premiumModalAnalyticsLocation", "applicationId", "confirmationFooter", "paymentModalBanner", "buttonTextOverride"]);
+  } = e, E = _(e, ["subscriptionTier", "onClick", "postSuccessGuild", "onSubscribeModalClose", "premiumModalAnalyticsLocation", "applicationId", "confirmationFooter", "paymentModalBanner", "buttonTextOverride"]);
   let b = {
       onClick: n,
       subscriptionTier: t,
       postSuccessGuild: l,
       onSubscribeModalClose: u,
-      premiumModalAnalyticsLocation: _,
+      premiumModalAnalyticsLocation: f,
       applicationId: p,
       confirmationFooter: h,
       paymentModalBanner: m
@@ -101,7 +101,7 @@ let p = function(e) {
         onClick: t
       } = e, {
         variant: n
-      } = E, o = f(E, ["variant"]);
+      } = E, o = _(E, ["variant"]);
       return (0, r.jsx)(i.z, c({
         onClick: t,
         text: y,

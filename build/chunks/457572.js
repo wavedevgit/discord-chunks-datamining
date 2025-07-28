@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 }), n(388685);
 var r = n(570140),
   i = n(147913),
@@ -52,7 +52,7 @@ function d() {
   let r = Date.now() + a.Z.Millis.WEEK;
   n.saveData.dueAt.getTime() > r || (c = setTimeout(() => u(n), n.saveData.dueAt.getTime() - Date.now()))
 }
-class f extends i.Z {
+class _ extends i.Z {
   constructor(...e) {
     super(...e), l(this, "actions", {
       SAVED_MESSAGES_UPDATE: () => this.handleUpdates(),
@@ -63,4 +63,4 @@ class f extends i.Z {
     })
   }
 }
-let _ = new f
+let f = new _

@@ -1,6 +1,6 @@
-/** Chunk was on 95336 **/
+/** Chunk was on 36512 **/
 r.d(t, {
-  Z: () => S
+  Z: () => _
 });
 var n = r(255367),
   s = r(120356),
@@ -16,20 +16,20 @@ var n = r(255367),
   f = r(430824),
   g = r(388032),
   m = r(432513);
-let _ = {
+let S = {
   top: 8,
   bottom: 8,
   left: -4,
   right: -4
 };
 
-function S(e) {
+function _(e) {
   let {
     channel: t,
     children: r
   } = e;
   return (0, n.jsx)(a.tE, {
-    offset: _,
+    offset: S,
     children: (0, n.jsxs)("div", {
       className: m.channelHeader,
       "data-recents-channel": t.id,
@@ -37,7 +37,7 @@ function S(e) {
         channel: t
       }), t.isPrivate() ? null : (0, n.jsx)(i.Fbu, {
         size: "xxs"
-      }), (0, n.jsx)(b, {
+      }), (0, n.jsx)(x, {
         channel: t
       }), r]
     })
@@ -65,7 +65,7 @@ function y(e) {
   })
 }
 
-function b(e) {
+function x(e) {
   let {
     channel: t
   } = e, r = (0, o.e7)([f.Z], () => f.Z.getGuild(t.guild_id)), s = (0, u.ZP)(t, !1), l = (0, h.KS)(t, r), a = t.isPrivate() || null == l, i = t.isDM() ? g.intl.formatToPlainString(g.t.smD7XV, {

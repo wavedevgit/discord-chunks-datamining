@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => f,
+  ZP: () => _,
   zU: () => s
 }), n(388685);
 var r, i = n(442837),
@@ -114,6 +114,6 @@ class d extends(r = i.ZP.DeviceSettingsStore) {
   }
 }
 o(d, "displayName", "DevToolsDevSettingsStore"), o(d, "persistKey", "DevToolsDevSettingsStore");
-let f = new d(a.Z, {
+let _ = new d(a.Z, {
   DEV_TOOLS_DEV_SETTING_SET: u
 })

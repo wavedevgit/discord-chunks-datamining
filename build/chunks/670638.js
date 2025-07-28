@@ -43,7 +43,7 @@ function N(e) {
   return e
 }
 
-function T(e, t) {
+function E(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -56,13 +56,13 @@ function T(e, t) {
   }), e
 }
 
-function E(e) {
+function T(e) {
   var t;
   let n = (0, o.e7)([j.Z], () => j.Z.questDeliveryOverride, []),
     c = (0, h.GN)(e.questContent),
     N = [C.jn.QUEST_BAR_V2, C.jn.QUEST_BAR].includes(e.questContent),
-    T = (0, m.O5)(),
-    E = (0, p.aM)(),
+    E = (0, m.O5)(),
+    T = (0, p.aM)(),
     q = (0, g.Yj)(e.quest),
     {
       handleComplete: S,
@@ -76,21 +76,21 @@ function E(e) {
       (0, h.nc)(e.quest, {
         content: e.questContent,
         ctaContent: m.jZ.CONTEXT_MENU_OPEN_GAME_LINK,
-        impressionId: E,
+        impressionId: T,
         sourceQuestContent: e.sourceQuestContent
       })
-    }, [E, e.quest, e.questContent, e.sourceQuestContent]),
-    D = s.useCallback(() => {
+    }, [T, e.quest, e.questContent, e.sourceQuestContent]),
+    M = s.useCallback(() => {
       (0, h.f2)(e.quest.id, {
         content: e.questContent,
         position: e.questContentPosition,
         ctaContent: m.jZ.CONTEXT_MENU_COPY_LINK,
-        impressionId: E,
+        impressionId: T,
         sourceQuestContent: e.sourceQuestContent
       }), (0, i.showToast)((0, i.createToast)(O.intl.string(O.t["+5kSoa"]), i.ToastType.SUCCESS))
-    }, [E, e.quest.id, e.questContent, e.questContentPosition, e.sourceQuestContent]),
-    M = e => (0, i.showToast)((0, i.createToast)(new l.Z(e, e.status).message, i.ToastType.FAILURE)),
-    A = () => (0, x.is)(e.quest.id).catch(M),
+    }, [T, e.quest.id, e.questContent, e.questContentPosition, e.sourceQuestContent]),
+    D = e => (0, i.showToast)((0, i.createToast)(new l.Z(e, e.status).message, i.ToastType.FAILURE)),
+    A = () => (0, x.is)(e.quest.id).catch(D),
     Q = s.useMemo(() => (0, r.jsx)(i.S89, {
       id: "delivery",
       label: "Show in Quest Bar",
@@ -115,7 +115,7 @@ function E(e) {
       }), !0 === e.showShareLink && (0, r.jsx)(i.sNh, {
         id: "share-link",
         label: O.intl.string(O.t.RDE0SU),
-        action: D,
+        action: M,
         icon: i.TIy
       }), !1]
     }, "major-actions"), (0, r.jsxs)(i.kSQ, {
@@ -123,7 +123,7 @@ function E(e) {
         id: "learn-more",
         label: O.intl.string(O.t.Ws2Bl5),
         action: () => {
-          T({
+          E({
             questId: e.quest.id,
             questContent: e.questContent,
             questContentPosition: e.questContentPosition,
@@ -143,7 +143,7 @@ function E(e) {
             content: e.questContent,
             position: e.questContentPosition,
             ctaContent: m.jZ.CONTEXT_MENU_OPEN_DISCLOSURE,
-            impressionId: E,
+            impressionId: T,
             sourceQuestContent: e.sourceQuestContent
           })
         }
@@ -151,7 +151,7 @@ function E(e) {
         id: "hide-entrypoint",
         label: O.intl.string(O.t.NN79Ex),
         action: () => {
-          T({
+          E({
             questId: e.quest.id,
             questContent: e.questContent,
             questContentPosition: e.questContentPosition,
@@ -193,7 +193,7 @@ function E(e) {
         }), (0, r.jsx)(i.sNh, {
           id: "start",
           label: "Start heartbeat (cheatmode)",
-          action: () => (0, x.CS)(e.quest.id, !0).catch(M)
+          action: () => (0, x.CS)(e.quest.id, !0).catch(D)
         }), (0, r.jsx)(i.sNh, {
           id: "stop",
           label: "Stop heartbeat",
@@ -252,14 +252,14 @@ function q(e) {
         closePopout: t
       } = e;
       return a ? (0, r.jsx)(c.Z, {
-        children: (0, r.jsx)(E, T(N({}, h), {
+        children: (0, r.jsx)(T, E(N({}, h), {
           quest: l,
           questContent: u,
           questContentPosition: d,
           onClose: t,
           sourceQuestContent: p
         }))
-      }) : (0, r.jsx)(E, T(N({}, h), {
+      }) : (0, r.jsx)(T, E(N({}, h), {
         quest: l,
         questContent: u,
         questContentPosition: d,

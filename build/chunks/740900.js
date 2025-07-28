@@ -14,7 +14,7 @@ var r = n(498607),
   u = n(44715),
   d = n(331551);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,14 +23,14 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -88,18 +88,18 @@ class v {
         hasUnusualDmActivity: a,
         hasUnusualAccountActivity: o,
         sourceInviteCode: u,
-        joinSourceType: f,
+        joinSourceType: _,
         inviterId: p,
         integrationType: m,
         joinSourceApplicationId: g,
         joinSourceChannelId: E
       } = this._computeMemberSupplementals(e.userId, e.unusualDMActivityUntil),
       b = s.default.getUser(e.userId);
-    return _(h(_({
+    return f(h(f({
       hasUnusualDmActivity: a,
       hasUnusualAccountActivity: o,
       sourceInviteCode: u,
-      joinSourceType: f,
+      joinSourceType: _,
       inviterId: p,
       integrationType: m,
       joinSourceApplicationId: g,
@@ -139,8 +139,8 @@ class v {
   updateMember(e, t) {
     var n;
     if (null == t) return this._membersMap.set(e.userId, e);
-    let r = _({}, e),
-      a = _({}, t),
+    let r = f({}, e),
+      a = f({}, t),
       o = !1,
       {
         sourceInviteCode: s,
@@ -148,11 +148,11 @@ class v {
         hasUnusualAccountActivity: c,
         joinSourceType: u,
         inviterId: d,
-        integrationType: f,
+        integrationType: _,
         joinSourceApplicationId: p,
         joinSourceChannelId: h
       } = this._computeMemberSupplementals(r.userId, null != (n = a.unusualDMActivityUntil) ? n : r.unusualDMActivityUntil);
-    for (let e in r.sourceInviteCode !== s && (a.sourceInviteCode = s), r.hasUnusualDmActivity !== l && (a.hasUnusualDmActivity = l), r.hasUnusualAccountActivity !== c && (a.hasUnusualAccountActivity = c), r.joinSourceType !== u && (a.joinSourceType = u), r.joinSourceApplicationId !== p && (a.joinSourceApplicationId = p), r.joinSourceChannelId !== h && (a.joinSourceChannelId = h), r.inviterId !== d && (a.inviterId = d), r.integrationType !== f && (a.integrationType = f), a) {
+    for (let e in r.sourceInviteCode !== s && (a.sourceInviteCode = s), r.hasUnusualDmActivity !== l && (a.hasUnusualDmActivity = l), r.hasUnusualAccountActivity !== c && (a.hasUnusualAccountActivity = c), r.joinSourceType !== u && (a.joinSourceType = u), r.joinSourceApplicationId !== p && (a.joinSourceApplicationId = p), r.joinSourceChannelId !== h && (a.joinSourceChannelId = h), r.inviterId !== d && (a.inviterId = d), r.integrationType !== _ && (a.integrationType = _), a) {
       let t = e,
         n = a[t],
         s = r[t];
@@ -176,6 +176,6 @@ class v {
     return this._membersMap.version
   }
   constructor(e) {
-    f(this, "guildId", void 0), f(this, "_membersMap", void 0), f(this, "newMemberTimestamp", Date.now()), this.guildId = e, this._membersMap = y()
+    _(this, "guildId", void 0), _(this, "_membersMap", void 0), _(this, "newMemberTimestamp", Date.now()), this.guildId = e, this._membersMap = y()
   }
 }

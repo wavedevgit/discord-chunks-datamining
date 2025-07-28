@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(580552),
   u = n(249458),
   d = n(313201),
-  f = n(240991),
-  _ = n(388032),
+  _ = n(240991),
+  f = n(388032),
   p = n(73433);
 
 function h(e) {
@@ -26,14 +26,14 @@ function h(e) {
     setLineClamp: g = !0,
     textColor: E,
     userId: b
-  } = e, y = (0, d.Dt)(), O = i.useMemo(() => (0, c.Z)(b) ? (0, r.jsx)(l.Z, {}) : null == t || "" === t ? null : (0, f.parseBioReact)(t), [b, t]);
+  } = e, y = (0, d.Dt)(), O = i.useMemo(() => (0, c.Z)(b) ? (0, r.jsx)(l.Z, {}) : null == t || "" === t ? null : (0, _.parseBioReact)(t), [b, t]);
   return null == O ? null : (0, r.jsxs)("section", {
     className: o()(n, p.markup),
     "aria-labelledby": y,
     children: [(0, r.jsx)(s.nn4, {
       children: (0, r.jsx)(s.H, {
         id: y,
-        children: _.intl.string(_.t.jGoPJS)
+        children: f.intl.string(f.t.jGoPJS)
       })
     }), (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",

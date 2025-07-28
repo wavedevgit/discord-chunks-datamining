@@ -150,7 +150,7 @@ function v() {
       }), s && (0, r.jsx)(u.DY3, {
         className: h.previewWarning,
         text: D.intl.string(D.t.mW4DUF),
-        children: (0, r.jsx)(u.P4T, {
+        children: (0, r.jsx)(u.Mgn, {
           size: "xs",
           color: c.Z.unsafe_rawColors.YELLOW_300.css
         })
@@ -160,7 +160,7 @@ function v() {
           maxTiers: b.fF,
           maxProducts: y.dD
         }),
-        children: (0, r.jsx)(u.P4T, {
+        children: (0, r.jsx)(u.Mgn, {
           size: "xs",
           color: c.Z.unsafe_rawColors.YELLOW_300.css
         })

@@ -23,8 +23,8 @@ let l = e => {
     onElementResize: c,
     onElementResizeStart: u,
     onElementResizeEnd: d,
-    throttleDuration: f = a,
-    orientation: _,
+    throttleDuration: _ = a,
+    orientation: f,
     usePointerEvents: p = !1,
     getClampedValue: h = i.clamp
   } = e, [m, g] = r.useState(!1), E = r.useRef(0), b = r.useRef(!1), y = r.useRef(null == t ? 0 : t);
@@ -32,8 +32,8 @@ let l = e => {
     if (!m || null == n.current) return;
 
     function e(e) {
-      let t = 1 === s(_) ? e.screenX : e.screenY,
-        n = 0 === _ || 2 === _,
+      let t = 1 === s(f) ? e.screenX : e.screenY,
+        n = 0 === f || 2 === f,
         r = (t - E.current) * (n ? -1 : 1);
       return y.current + r
     }
@@ -41,12 +41,12 @@ let l = e => {
     function t(e) {
       return h(e, null != l ? l : 0, null != o ? o : e)
     }
-    let r = (0, i.throttle)(c, f),
+    let r = (0, i.throttle)(c, _),
       a = i => {
         if (null == n.current) return null;
         let a = e(i),
           o = t(a),
-          l = 1 === s(_) ? "width" : "height";
+          l = 1 === s(f) ? "width" : "height";
         n.current.style[l] = "".concat(o, "px"), b.current || (b.current = !0, null == u || u(o)), r(o, a)
       },
       O = n => {
@@ -61,8 +61,8 @@ let l = e => {
     return T.addEventListener(v, O), T.addEventListener(I, a), () => {
       T.removeEventListener(v, O), T.removeEventListener(I, a), r.cancel()
     }
-  }, [m, c, l, o, _, n, f, d, p, h, u]), r.useCallback(e => {
-    let t = 1 === s(_);
+  }, [m, c, l, o, f, n, _, d, p, h, u]), r.useCallback(e => {
+    let t = 1 === s(f);
     null != n.current && (y.current = t ? n.current.offsetWidth : n.current.offsetHeight), E.current = t ? e.screenX : e.screenY, g(!0)
-  }, [_, n])
+  }, [f, n])
 }

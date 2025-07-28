@@ -17,11 +17,11 @@ let l = i.forwardRef((e, t) => {
     name: c,
     subText: u,
     avatarClassName: d,
-    innerClassName: f
+    innerClassName: _
   } = e;
   return (0, r.jsxs)("div", {
     ref: t,
-    className: o()(s.layout, f, {
+    className: o()(s.layout, _, {
       [s.muted]: n,
       [s.highlighted]: i
     }),

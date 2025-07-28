@@ -14,7 +14,7 @@ let l = e => {
   } = e;
   return null == t || "" === t ? null : (0, r.jsxs)("div", {
     className: o.errorContainer,
-    children: [(0, r.jsx)(a.P4T, {
+    children: [(0, r.jsx)(a.Mgn, {
       size: "custom",
       color: "currentColor",
       width: 20,

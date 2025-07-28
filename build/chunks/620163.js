@@ -654,7 +654,7 @@ let e$ = () => {
         searchableTitles: [eq.intl.string(eq.t.trSpHR)],
         label: eq.intl.string(eq.t.trSpHR),
         element: w.Z,
-        icon: E ? (0, i.jsx)(l.P4T, {
+        icon: E ? (0, i.jsx)(l.Mgn, {
           size: "xs",
           color: a.Z.unsafe_rawColors.YELLOW_300.css
         }) : null

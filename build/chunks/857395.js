@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => _
 });
 var r = n(255367);
 n(73800);
@@ -65,14 +65,14 @@ function d(e, t) {
   return i
 }
 
-function f(e) {
+function _(e) {
   var {
     guildId: t,
     name: n,
     position: o = "right",
     onClose: l,
     targetElementRef: d
-  } = e, f = u(e, ["guildId", "name", "position", "onClose", "targetElementRef"]);
+  } = e, _ = u(e, ["guildId", "name", "position", "onClose", "targetElementRef"]);
   return (0, r.jsx)(i.yRy, s({
     targetElementRef: d,
     position: o,
@@ -84,5 +84,5 @@ function f(e) {
       guildId: t,
       name: n
     }))
-  }, f))
+  }, _))
 }

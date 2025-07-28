@@ -39,7 +39,7 @@ function d(e) {
       className: s.content,
       children: [(0, r.jsxs)("div", {
         className: s.header,
-        children: [(0, r.jsx)(i.P4T, {
+        children: [(0, r.jsx)(i.Mgn, {
           size: "custom",
           color: "currentColor",
           width: 20,

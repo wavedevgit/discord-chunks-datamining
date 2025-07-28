@@ -1,6 +1,6 @@
 /** Chunk was on 5863 **/
 n.d(t, {
-  Z: () => T
+  Z: () => L
 }), n(388685), n(953529);
 var i = n(255367),
   s = n(73800),
@@ -28,16 +28,16 @@ var i = n(255367),
   Z = n(388032),
   _ = n(345450);
 
-function T(e) {
+function L(e) {
   let {
     guildId: t,
     onClose: n,
     isRedesign: l = !1
-  } = e, a = (0, c.e7)([x.Z], () => x.Z.getGuild(t)), T = (0, c.e7)([v.default], () => v.default.getCurrentUser()), {
-    playSound: L,
+  } = e, a = (0, c.e7)([x.Z], () => x.Z.getGuild(t)), L = (0, c.e7)([v.default], () => v.default.getCurrentUser()), {
+    playSound: T,
     isPlaying: y,
     soundpackPlaying: M
-  } = (0, N.Z)(), I = (0, S.OR)(t), P = j.ZP.canUseCustomNotificationSounds(T), A = P ? I : E.YC.CLASSIC, R = s.useRef(0), w = s.useRef(-1), [G, D] = s.useState(!1), U = (0, E.LB)(), k = s.useCallback(() => {
+  } = (0, N.Z)(), I = (0, S.OR)(t), P = j.ZP.canUseCustomNotificationSounds(L), A = P ? I : E.YC.CLASSIC, R = s.useRef(0), w = s.useRef(-1), [G, D] = s.useState(!1), U = (0, E.LB)(), k = s.useCallback(() => {
     clearTimeout(w.current), R.current += 1, R.current > 10 && (D(!0), h.K.set(E.CZ, !0)), w.current = setTimeout(() => {
       R.current = 0
     }, 1e3)
@@ -56,9 +56,9 @@ function T(e) {
   s.useEffect(() => () => {
     J(O.L.AUTO_DISMISS)
   }, [J]);
-  let z = j.ZP.canUseCustomNotificationSounds(T),
+  let z = j.ZP.canUseCustomNotificationSounds(L),
     F = (0, c.e7)([p.ZP], () => p.ZP.isMuted(t), [t]);
-  return null == T ? null : (0, i.jsxs)("div", {
+  return null == L ? null : (0, i.jsxs)("div", {
     children: [(0, i.jsxs)("div", {
       className: _.header,
       children: [(0, i.jsx)(g.X6q, {
@@ -88,7 +88,7 @@ function T(e) {
       })
     }), F && (0, i.jsxs)("div", {
       className: _.warningContainer,
-      children: [(0, i.jsx)(g.P4T, {
+      children: [(0, i.jsx)(g.Mgn, {
         size: "custom",
         width: 20,
         height: 20,
@@ -111,7 +111,7 @@ function T(e) {
           }),
           value: null != A ? A : E.YC.CLASSIC,
           onChange: e => {
-            L(e.value), P && (0, f.t)(t, A, e.value, "notificationSettings")
+            T(e.value), P && (0, f.t)(t, A, e.value, "notificationSettings")
           },
           options: W,
           radioItemClassName: _.option

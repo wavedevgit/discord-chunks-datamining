@@ -1,6 +1,6 @@
-/** Chunk was on 95336 **/
+/** Chunk was on 36512 **/
 r.d(t, {
-  w: () => b
+  w: () => x
 });
 var n = r(255367),
   s = r(73800),
@@ -16,21 +16,21 @@ var n = r(255367),
   f = r(981631),
   g = r(474936),
   m = r(388032),
-  _ = r(491350),
-  S = r(492764),
+  S = r(491350),
+  _ = r(492764),
   y = r(235810);
 
-function b() {
+function x() {
   return (0, p.Z)() ? (0, n.jsx)("div", {
-    className: _.emptyContainer,
+    className: S.emptyContainer,
     children: (0, n.jsxs)("div", {
-      className: _.emptyInner,
+      className: S.emptyInner,
       children: [(0, n.jsx)("img", {
-        src: S,
-        className: _.image,
+        src: _,
+        className: S.image,
         alt: ""
       }), (0, n.jsx)(o.X6q, {
-        className: _.header,
+        className: S.header,
         variant: "heading-xl/semibold",
         color: "text-default",
         children: m.intl.string(m.t.erEf2t)
@@ -41,15 +41,15 @@ function b() {
       })]
     })
   }) : (0, n.jsxs)("div", {
-    className: _.emptyContainer,
+    className: S.emptyContainer,
     children: [(0, n.jsxs)("div", {
-      className: _.emptyInner,
+      className: S.emptyInner,
       children: [(0, n.jsx)("img", {
         src: y,
-        className: _.image,
+        className: S.image,
         alt: ""
       }), (0, n.jsx)(o.X6q, {
-        className: _.header,
+        className: S.header,
         variant: "heading-xl/semibold",
         color: "text-default",
         children: m.intl.string(m.t.w4DRbW)
@@ -58,11 +58,11 @@ function b() {
         color: "text-muted",
         children: m.intl.string(m.t.F6u3Ex)
       })]
-    }), (0, n.jsx)(x, {})]
+    }), (0, n.jsx)(b, {})]
   })
 }
 
-function x() {
+function b() {
   let e = (0, d.Px)(g.p9.TIER_2),
     t = s.useCallback(() => (0, o.ZDy)(async () => {
       let {
@@ -94,19 +94,19 @@ function x() {
       onClick: t
     });
   return (0, n.jsxs)("div", {
-    className: _.upsellContainer,
+    className: S.upsellContainer,
     children: [(0, n.jsx)(l.SrA, {
       size: "md",
       color: u.JX.PREMIUM_TIER_2
     }), (0, n.jsx)(a.xv, {
       variant: "text-xs/medium",
       color: "header-primary",
-      className: _.upsellText,
+      className: S.upsellText,
       children: p
     }), (0, n.jsx)(h.Z, {
-      className: _.upsellButton,
+      className: S.upsellButton,
       size: i.Ph.TINY,
-      shinyButtonClassName: _.upsellButton,
+      shinyButtonClassName: S.upsellButton,
       subscriptionTier: g.Si.TIER_2,
       premiumModalAnalyticsLocation: {
         section: f.jXE.FOR_LATER_POPOUT_UPSELL

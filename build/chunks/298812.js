@@ -27,8 +27,8 @@ var i = n(255367),
   E = n(113449),
   Z = n(686660),
   _ = n(958648),
-  T = n(569658),
-  L = n(981631),
+  L = n(569658),
+  T = n(981631),
   y = n(388032),
   M = n(955549);
 let I = s.forwardRef(function(e, t) {
@@ -53,7 +53,7 @@ let I = s.forwardRef(function(e, t) {
     }, e.id));
   return (0, i.jsxs)("div", {
     ref: t,
-    children: [(0, i.jsx)(T.Z, {
+    children: [(0, i.jsx)(L.Z, {
       guildId: n,
       onSelected: e => {
         if (null != l.find(t => t.id === e)) return;
@@ -110,7 +110,7 @@ function P(e) {
   if (null == t) return null;
   let b = y.intl.string(y.t.uIzfCA),
     C = (0, x.KS)(t);
-  t.type === L.d4z.GUILD_CATEGORY && null != t.guild_id && "" !== t.guild_id ? b = y.intl.formatToPlainString(y.t["2KzH8/"], {
+  t.type === T.d4z.GUILD_CATEGORY && null != t.guild_id && "" !== t.guild_id ? b = y.intl.formatToPlainString(y.t["2KzH8/"], {
     num: null != n[t.id] ? n[t.id].length : 0
   }) : null != u && (b = y.intl.formatToPlainString(y.t.L1zJgY, {
     categoryName: (0, g.F6)(u, N.default, j.Z)

@@ -17,7 +17,7 @@ let d = e => {
   } = e;
   return (0, l.yE)(t.flags, a.aO5.IN_PROMPT) ? (0, s.F)(t) ? (0, r.jsxs)("div", {
     className: c.notice,
-    children: [(0, r.jsx)(i.P4T, {
+    children: [(0, r.jsx)(i.Mgn, {
       size: "custom",
       width: 20,
       height: 20,
@@ -29,7 +29,7 @@ let d = e => {
     })]
   }) : (0, r.jsxs)("div", {
     className: c.notice,
-    children: [(0, r.jsx)(i.P4T, {
+    children: [(0, r.jsx)(i.Mgn, {
       size: "custom",
       width: 20,
       height: 20,

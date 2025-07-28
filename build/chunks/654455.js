@@ -14,7 +14,7 @@ n(689079);
 var u = n(674563),
   d = n(526761);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,14 +23,14 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -101,7 +101,7 @@ function O(e) {
 function v() {
   var e, t;
   let n = null != (t = null == (e = c.Z.frecencyWithoutFetchingLatest.applicationCommandFrecency) ? void 0 : e.applicationCommands) ? t : {};
-  g.overwriteHistory(a().mapValues(n, e => h(_({}, e), {
+  g.overwriteHistory(a().mapValues(n, e => h(f({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
   })), m.pendingUsages)
 }
@@ -126,7 +126,7 @@ class I extends(r = o.ZP.PersistedStore) {
     return g.frequently
   }
 }
-f(I, "displayName", "ApplicationCommandFrecencyStore"), f(I, "persistKey", "ApplicationCommandFrecencyV2");
+_(I, "displayName", "ApplicationCommandFrecencyStore"), _(I, "persistKey", "ApplicationCommandFrecencyV2");
 let T = new I(s.Z, {
   APPLICATION_COMMAND_USED: O,
   USER_SETTINGS_PROTO_UPDATE: y

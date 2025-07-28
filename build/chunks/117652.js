@@ -13,8 +13,8 @@ var i = n(442837),
   c = n(335131),
   u = n(628952),
   d = n(225657),
-  f = n(600164),
-  _ = n(109213),
+  _ = n(600164),
+  f = n(109213),
   p = n(927699),
   h = n(987716),
   m = n(311821),
@@ -108,11 +108,11 @@ function M(e) {
   } = (0, I.JL)(), Z = (0, i.e7)([E.default], () => E.default.getCurrentUser()), {
     enabled: H,
     giftRecommendationAlgorithm: Y
-  } = _.G.useExperiment({
+  } = f.G.useExperiment({
     location: "CollectiblesPaymentModalGiftCustomizationStep"
   }, {
     autoTrackExposure: !1
-  }), W = H && M === N.Wt.DM_CHANNEL, K = Y === _.u.POPULAR ? C.intl.string(C.t.Kwgrrq) : C.intl.string(C.t.r1huYW), z = async (e, t) => {
+  }), W = H && M === N.Wt.DM_CHANNEL, K = Y === f.u.POPULAR ? C.intl.string(C.t.Kwgrrq) : C.intl.string(C.t.r1huYW), z = async (e, t) => {
     j(!0), null != m && T(), await (0, c.B1)(e.id, t) || T(C.intl.string(C.t["4kgVqa"])), j(!1)
   };
   (0, o.ZP)(() => {
@@ -202,8 +202,8 @@ function M(e) {
       })
     }), (0, r.jsx)(S.O3, {
       children: (0, r.jsx)(a.mzw, {
-        justify: f.Z.Justify.BETWEEN,
-        align: f.Z.Align.CENTER,
+        justify: _.Z.Justify.BETWEEN,
+        align: _.Z.Align.CENTER,
         children: (0, r.jsx)(x, {
           onStepChange: t,
           onBackClick: n,

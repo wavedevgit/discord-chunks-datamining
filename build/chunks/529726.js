@@ -20,8 +20,8 @@ function c(e, t, n) {
 }
 let u = 6e4,
   d = 1e3,
-  f = 10,
-  _ = 2e3,
+  _ = 10,
+  f = 2e3,
   p = 500;
 class h extends a.Z {
   handleMessageBecameVisible(e) {
@@ -60,7 +60,7 @@ class h extends a.Z {
     this.batchBuffer = [], null != this.batchTimerId && (clearTimeout(this.batchTimerId), this.batchTimerId = null)
   }
   bufferViewTrack(e) {
-    this.batchBuffer.length >= f && this.drainBuffer(), this.batchBuffer.push(e), null == this.batchTimerId && (this.batchTimerId = setTimeout(() => this.drainBuffer(), _))
+    this.batchBuffer.length >= _ && this.drainBuffer(), this.batchBuffer.push(e), null == this.batchTimerId && (this.batchTimerId = setTimeout(() => this.drainBuffer(), f))
   }
   constructor(...e) {
     super(...e), c(this, "currentlyVisibleMessageTimers", {}), c(this, "viewsInCurrentChannel", new Set), c(this, "recentViewTimes", new(i())({

@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => p,
-  q: () => _
+  q: () => f
 });
 var r = n(73800),
   i = n(442837),
@@ -13,15 +13,15 @@ var r = n(73800),
   c = n(314897),
   u = n(509545),
   d = n(238),
-  f = n(55563);
+  _ = n(55563);
 
-function _(e) {
+function f(e) {
   r.useEffect(() => {
     p(e)
   }, [e]);
-  let t = (0, i.Wu)([d.Z, f.Z, u.Z], () => {
+  let t = (0, i.Wu)([d.Z, _.Z, u.Z], () => {
       let t = d.Z.getStoreLayout(e);
-      return (0, l.Ej)(t.subscriptions, f.Z, u.Z)
+      return (0, l.Ej)(t.subscriptions, _.Z, u.Z)
     }, [e]),
     n = (0, i.Wu)([d.Z], () => d.Z.getStoreLayout(e).otps, [e]);
   return r.useMemo(() => ({

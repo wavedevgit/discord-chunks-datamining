@@ -13,15 +13,15 @@ var a = n(73800),
   c = n(941951),
   u = "unmounted",
   d = "exited",
-  f = "entering",
-  _ = "entered",
+  _ = "entering",
+  f = "entered",
   p = "exiting",
   h = function(e) {
     function t(t, n) {
       var r, i = e.call(this, t, n) || this,
         a = n,
         o = a && !a.isMounting ? t.enter : t.appear;
-      return i.appearStatus = null, t.in ? o ? (r = d, i.appearStatus = f) : r = _ : r = t.unmountOnExit || t.mountOnEnter ? u : d, i.state = {
+      return i.appearStatus = null, t.in ? o ? (r = d, i.appearStatus = _) : r = f : r = t.unmountOnExit || t.mountOnEnter ? u : d, i.state = {
         status: r
       }, i.nextCallback = null, i
     }(0, i.Z)(t, e), t.getDerivedStateFromProps = function(e, t) {
@@ -36,7 +36,7 @@ var a = n(73800),
       var t = null;
       if (e !== this.props) {
         var n = this.state.status;
-        this.props.in ? n !== f && n !== _ && (t = f) : (n === f || n === _) && (t = p)
+        this.props.in ? n !== _ && n !== f && (t = _) : (n === _ || n === f) && (t = p)
       }
       this.updateStatus(!1, t)
     }, n.componentWillUnmount = function() {
@@ -50,7 +50,7 @@ var a = n(73800),
       }
     }, n.updateStatus = function(e, t) {
       if (void 0 === e && (e = !1), null !== t)
-        if (this.cancelNextCallback(), t === f) {
+        if (this.cancelNextCallback(), t === _) {
           if (this.props.unmountOnExit || this.props.mountOnEnter) {
             var n = this.props.nodeRef ? this.props.nodeRef.current : o.findDOMNode(this);
             n && (0, c.Q)(n)
@@ -70,16 +70,16 @@ var a = n(73800),
         c = this.getTimeouts(),
         u = r ? c.appear : c.enter;
       if (!e && !n || s.Z.disabled) return void this.safeSetState({
-        status: _
+        status: f
       }, function() {
         t.props.onEntered(a)
       });
       this.props.onEnter(a, l), this.safeSetState({
-        status: f
+        status: _
       }, function() {
         t.props.onEntering(a, l), t.onTransitionEnd(u, function() {
           t.safeSetState({
-            status: _
+            status: f
           }, function() {
             t.props.onEntered(a, l)
           })
@@ -156,5 +156,5 @@ h.contextType = l.Z, h.propTypes = {}, h.defaultProps = {
   onExit: m,
   onExiting: m,
   onExited: m
-}, h.UNMOUNTED = u, h.EXITED = d, h.ENTERING = f, h.ENTERED = _, h.EXITING = p;
+}, h.UNMOUNTED = u, h.EXITED = d, h.ENTERING = _, h.ENTERED = f, h.EXITING = p;
 let g = h

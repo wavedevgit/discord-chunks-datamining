@@ -12,9 +12,9 @@ var r = n(255367),
   c = n(468026),
   u = n(724723),
   d = n(131951),
-  f = n(388032);
+  _ = n(388032);
 
-function _(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,7 +30,7 @@ function p(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
@@ -43,7 +43,7 @@ let h = () => {
     null !== t.current && ((0, s.Mr3)(t.current), t.current = null)
   }
 
-  function _() {
+  function f() {
     l.Z.interact()
   }
   return i.useEffect(() => {
@@ -52,19 +52,19 @@ let h = () => {
         location: "InteractionRequired"
       }).enabled;
       t.current = (0, s.h7j)(t => e ? (0, r.jsx)(o.Modal, p({
-        title: f.intl.string(f.t.dLLxCw),
-        subtitle: f.intl.string(f.t["64lmt7"]),
+        title: _.intl.string(_.t.dLLxCw),
+        subtitle: _.intl.string(_.t["64lmt7"]),
         actions: [{
-          text: f.intl.string(f.t.BddRzc),
+          text: _.intl.string(_.t.BddRzc),
           onClick: () => {
-            _(), t.onClose()
+            f(), t.onClose()
           }
         }]
       }, t)) : (0, r.jsx)(c.default, p({
-        title: f.intl.string(f.t.dLLxCw),
-        body: f.intl.string(f.t["64lmt7"]),
-        onConfirm: _,
-        confirmText: f.intl.string(f.t.BddRzc)
+        title: _.intl.string(_.t.dLLxCw),
+        body: _.intl.string(_.t["64lmt7"]),
+        onConfirm: f,
+        confirmText: _.intl.string(_.t.BddRzc)
       }, t)))
     } else n();
     return () => {

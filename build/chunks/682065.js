@@ -1,4 +1,4 @@
-/** Chunk was on 95336 **/
+/** Chunk was on 36512 **/
 e.exports = {
   searchResultsWrap: "searchResultsWrap_a9e706",
   scroller: "scroller_a9e706",

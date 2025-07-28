@@ -1,4 +1,4 @@
-/** Chunk was on 95336 **/
+/** Chunk was on 36512 **/
 e.exports = {
   searchHeader: "searchHeader_f3b986",
   searchHeaderWithSubtitle: "searchHeaderWithSubtitle_f3b986",

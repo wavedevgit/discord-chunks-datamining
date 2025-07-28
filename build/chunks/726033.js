@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 }), n(388685);
 var r = n(255367);
 n(73800);
@@ -44,17 +44,17 @@ function d(e, t) {
   return n
 }
 
-function f(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function _(e) {
+function f(e) {
   let {
     user: t
   } = e, [n, c] = (0, i.Z)(t.id);
-  return n ? (0, r.jsx)(s.Z, f(u({}, e), {
+  return n ? (0, r.jsx)(s.Z, _(u({}, e), {
     onHide: c
   })) : t.isNonUserBot() ? (0, r.jsx)(o.Z, u({}, e)) : t.bot ? (0, r.jsx)(a.Z, u({}, e)) : (0, r.jsx)(l.Z, u({}, e))
 }

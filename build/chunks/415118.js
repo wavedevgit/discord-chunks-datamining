@@ -1,6 +1,6 @@
 /** Chunk was on 26976 **/
 n.d(t, {
-  default: () => A
+  default: () => T
 });
 var l = n(255367);
 n(73800);
@@ -31,38 +31,38 @@ var i = n(481060),
   x = n(931617),
   N = n(700994),
   I = n(332031),
-  T = n(981631),
-  _ = n(388032);
-let A = (0, a.Z)((0, o.Z)(function(e) {
+  _ = n(981631),
+  A = n(388032);
+let T = (0, a.Z)((0, o.Z)(function(e) {
   let {
     user: t,
     guildId: n,
     showModalItems: o = !0,
     showMediaItems: a = !1,
     showChatItems: u = !0,
-    context: A,
+    context: T,
     onSelect: U
   } = e, D = {
-    page: T.ZY5.GUILD_CHANNEL,
-    section: T.jXE.CHAT_USERNAME,
-    object: T.qAy.CONTEXT_MENU_ITEM
+    page: _.ZY5.GUILD_CHANNEL,
+    section: _.jXE.CHAT_USERNAME,
+    object: _.qAy.CONTEXT_MENU_ITEM
   }, L = (0, C.Z)({
     userId: t.id,
     guildId: n
-  }), w = (0, p.Z)(t, n, A), k = (0, P.Z)(t.id, A), R = (0, I.Z)(t.id), B = (0, j.Z)({
+  }), w = (0, p.Z)(t, n, T), k = (0, P.Z)(t.id, T), R = (0, I.Z)(t.id), B = (0, j.Z)({
     user: t,
-    context: A
+    context: T
   }), V = (0, O.Z)({
     user: t,
     guildId: n,
-    context: A
+    context: T
   }), q = (0, Z.Z)({
     user: t
   }), G = (0, N.Z)(t.id), F = (0, M.Z)(t.id), Y = (0, c.Z)({
     guildId: n,
     userId: t.id,
     analyticsLocation: D,
-    context: A
+    context: T
   }), H = (0, g.Z)({
     user: t,
     guildId: n
@@ -85,12 +85,12 @@ let A = (0, a.Z)((0, o.Z)(function(e) {
     location: "GuildUserContextMenu"
   }), ee = (0, m.Z)(t, n), et = (0, x.Z)(t.id, n), en = (0, y.Z)(t, n), el = (0, d.Z)({
     id: t.id,
-    label: _.intl.string(_.t["/AXYnJ"])
+    label: A.intl.string(A.t["/AXYnJ"])
   }), ei = t.isNonUserBot();
   return (0, l.jsxs)(i.v2r, {
     navId: "user-context",
     onClose: r.Zy,
-    "aria-label": _.intl.string(_.t.liqwPD),
+    "aria-label": A.intl.string(A.t.liqwPD),
     onSelect: U,
     children: [!ei && (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsxs)(i.kSQ, {
@@ -111,5 +111,5 @@ let A = (0, a.Z)((0, o.Z)(function(e) {
     })]
   })
 }, {
-  object: T.qAy.CONTEXT_MENU
+  object: _.qAy.CONTEXT_MENU
 }), [u.Z.CONTEXT_MENU, u.Z.GUILD_USER_MENU])

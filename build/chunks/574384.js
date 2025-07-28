@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => _
 }), n(388685), n(642613);
 var r = n(255367),
   i = n(73800),
@@ -13,12 +13,12 @@ var r = n(255367),
   u = n(340181);
 let d = 5;
 
-function f(e) {
+function _(e) {
   var t;
   let {
     selectedGuildId: n,
-    selectedChannelId: f,
-    onChannelChange: _,
+    selectedChannelId: _,
+    onChannelChange: f,
     error: p
   } = e, [h, m] = i.useState(null), g = i.useRef(!1);
   if (i.useEffect(() => {
@@ -29,10 +29,10 @@ function f(e) {
           channels: t
         }), g.current = !0)
       }
-      m(null), null == n ? _(null) : e(n)
-    }, [_, n]), i.useEffect(() => {
-      g.current && (null == h ? null != f && _(null) : h.channels.some(e => e.id === f) || _(null))
-    }, [h, _, f, n]), null == n) return null;
+      m(null), null == n ? f(null) : e(n)
+    }, [f, n]), i.useEffect(() => {
+      g.current && (null == h ? null != _ && f(null) : h.channels.some(e => e.id === _) || f(null))
+    }, [h, f, _, n]), null == n) return null;
   let E = null == h || h.guildId !== n ? [] : (null != (t = null == h ? void 0 : h.channels) ? t : []).map(e => ({
     value: e.id,
     label: e.name
@@ -50,10 +50,10 @@ function f(e) {
     }) : null, (0, r.jsx)(s.VcW, {
       wrapperClassName: u.select,
       maxVisibleItems: d,
-      onChange: _,
+      onChange: f,
       placeholder: c.intl.string(c.t["Re/64e"]),
       options: E,
-      value: f,
+      value: _,
       renderOptionLabel: e => (0, r.jsx)(o.x, {
         variant: "text-md/normal",
         children: e.label

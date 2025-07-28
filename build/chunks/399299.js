@@ -121,7 +121,7 @@ function Y(e) {
   return (0, r.jsxs)(m.Z, {
     align: m.Z.Align.CENTER,
     className: F.warning,
-    children: [(0, r.jsx)(c.P4T, {
+    children: [(0, r.jsx)(c.Mgn, {
       size: "custom",
       width: 20,
       height: 20,

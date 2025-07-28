@@ -40,10 +40,10 @@ function S(e) {
   } = e, Z = (0, h.Dt)(), k = (0, s.e7)([x.ZP], () => x.ZP.getDefaultChannel(b.id)), [E, T] = r.useState(() => {
     var e;
     return null != (e = null == f ? void 0 : f.emoji) ? e : null
-  }), [R, B] = r.useState(() => {
+  }), [R, M] = r.useState(() => {
     var e;
     return null != (e = null == f ? void 0 : f.title) ? e : ""
-  }), [H, M] = r.useState(() => {
+  }), [B, H] = r.useState(() => {
     var e;
     return null != (e = null == f ? void 0 : f.description) ? e : ""
   }), [D, q] = r.useState(() => {
@@ -62,7 +62,7 @@ function S(e) {
       let t = {
           id: null != (e = null == f ? void 0 : f.id) ? e : "".concat(Date.now()),
           title: R,
-          description: H,
+          description: B,
           channelIds: Array.from(D).sort(),
           roleIds: Array.from(Q).sort(),
           emoji: null == E ? void 0 : E
@@ -74,7 +74,7 @@ function S(e) {
           return null != l && (r.roles = l), r
         }(b, I.Z.editedOnboardingPrompts, S, t);
       Y(i), o().isEmpty(i) && (l(t), n())
-    }, [D, H, E, b, n, l, null == f ? void 0 : f.id, S, Q, R]),
+    }, [D, B, E, b, n, l, null == f ? void 0 : f.id, S, Q, R]),
     L = r.useMemo(() => [{
       text: C.intl.string(C.t["ETE/oK"]),
       onClick: n,
@@ -114,7 +114,7 @@ function S(e) {
         inputRef: A,
         placeholder: C.intl.string(C.t.EHe6gY),
         value: R,
-        onChange: e => B(e),
+        onChange: e => M(e),
         maxLength: O.NE,
         autoFocus: !0
       }), (0, i.jsx)(m.pdY, {
@@ -122,8 +122,8 @@ function S(e) {
       }), (0, i.jsx)(u.Is, {
         className: P.descriptionInput,
         placeholder: C.intl.string(C.t.mIjgJC),
-        value: H,
-        onChange: e => M(e),
+        value: B,
+        onChange: e => H(e),
         maxLength: O.NO
       }), (0, i.jsx)(p.Z, {
         className: P.divider
@@ -194,7 +194,7 @@ function _(e) {
     className: P.notice,
     children: (0, i.jsxs)("div", {
       className: P.noticeMessage,
-      children: [(0, i.jsx)(m.P4T, {
+      children: [(0, i.jsx)(m.Mgn, {
         size: "custom",
         width: 20,
         height: 20,

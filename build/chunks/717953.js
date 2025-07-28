@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(704215),
   u = n(481060),
   d = n(410030),
-  f = n(44315),
-  _ = n(266454),
+  _ = n(44315),
+  f = n(266454),
   p = n(581883),
   h = n(583901),
   m = n(576157),
@@ -66,7 +66,7 @@ function v(e) {
   }), {
     shouldShowNewBadge: T,
     markNewBadgeAsDismissed: S
-  } = (0, m.w)(), A = (0, _.Nj)(c.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), N = (0, d.ZP)(), C = null != I, R = (0, u.wjy)(N) ? y.darkOverlay : y.lightOverlay, P = (null != (n = null == I || null == (t = I.colors) ? void 0 : t.length) ? n : 0) > 1, w = i.useMemo(() => {
+  } = (0, m.w)(), A = (0, f.Nj)(c.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), N = (0, d.ZP)(), C = null != I, R = (0, u.wjy)(N) ? y.darkOverlay : y.lightOverlay, P = (null != (n = null == I || null == (t = I.colors) ? void 0 : t.length) ? n : 0) > 1, w = i.useMemo(() => {
     if (null == I || null == I.colors || 0 === I.colors.length) return;
     let e = I.colors[0];
     if (P) {
@@ -79,7 +79,7 @@ function v(e) {
     return {
       background: "var(--background-gradient), ".concat(e)
     }
-  }, [I, P]), D = (0, f.Sl)(g.Il.WHITE).hex, L = (0, f.Sl)(g.Il.RED_430).hex, x = C ? D : void 0, M = i.useCallback(() => {
+  }, [I, P]), D = (0, _.Sl)(g.Il.WHITE).hex, L = (0, _.Sl)(g.Il.RED_430).hex, x = C ? D : void 0, M = i.useCallback(() => {
     T && S(), null == v || v()
   }, [T, S, v]);
   return (0, r.jsxs)("div", {

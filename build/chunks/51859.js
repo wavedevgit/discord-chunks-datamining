@@ -1,6 +1,6 @@
 /** Chunk was on 44799 **/
 n.d(t, {
-  Z: () => g
+  Z: () => b
 }), n(388685), n(953529);
 var r = n(255367),
   o = n(73800),
@@ -17,35 +17,35 @@ var r = n(255367),
   _ = n(279475),
   x = n(535396),
   v = n(388032),
-  b = n(117172);
+  g = n(117172);
 
-function g(e) {
+function b(e) {
   let {
     guildId: t,
     powerup: n
-  } = e, [g, j] = o.useState(void 0);
-  (0, f.KT)(g);
+  } = e, [b, j] = o.useState(void 0);
+  (0, f.KT)(b);
   let [E, h] = o.useState(!1), C = (0, u.Z)(t, n).type !== x.A3.INACTIVE, I = (0, _.d)(C), N = (0, c.g1)(t, "GuildPowerupPerkCard"), O = n.skuId === l.A$;
   return (0, r.jsxs)(d.Z, {
     onHover: e => h(e),
     guildId: t,
     powerup: n,
     children: [(0, r.jsx)(m.m, {
-      className: b.image,
+      className: g.image,
       powerup: n,
       isHovering: E
     }), (0, r.jsxs)("div", {
-      className: b.contentContainer,
+      className: g.contentContainer,
       children: [(0, r.jsxs)("div", {
         children: [(0, r.jsx)("div", {
-          className: b.headerContainer,
+          className: g.headerContainer,
           children: (0, r.jsx)(s.X6, {
             color: I,
             variant: "heading-md/bold",
             children: n.title
           })
         }), (0, r.jsx)(s.xv, {
-          className: b.description,
+          className: g.description,
           color: I,
           variant: "text-sm/medium",
           children: n.description
@@ -55,17 +55,17 @@ function g(e) {
         powerup: n
       })]
     }), (0, r.jsx)("div", {
-      className: b.buttonContainer,
+      className: g.buttonContainer,
       children: (0, r.jsx)(p.ZP, {
         guildId: t,
         powerup: n,
         onError: j
       })
     }), !O && !N && (0, r.jsx)(a.IGR, {
-      className: b.new,
+      className: g.new,
       text: v.intl.string(v.t.y2b7CA)
     }), O && N && (0, r.jsx)(a.IGR, {
-      className: b.new,
+      className: g.new,
       text: v.intl.string(v.t.oW0eUV),
       color: i.Z.BG_BRAND
     })]

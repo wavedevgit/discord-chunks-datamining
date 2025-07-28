@@ -56,7 +56,7 @@ function p(e) {
       checked: j,
       subtext: x ? (0, i.jsxs)("div", {
         className: v.videoPaused,
-        children: [(0, i.jsx)(r.P4T, {
+        children: [(0, i.jsx)(r.Mgn, {
           size: "custom",
           color: "currentColor",
           width: 12,

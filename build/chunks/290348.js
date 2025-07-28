@@ -44,8 +44,8 @@ var r = n(73800),
   j = n(22902),
   C = n(403474),
   _ = n(944537),
-  P = n(293810),
-  x = n(981631),
+  x = n(293810),
+  P = n(981631),
   N = n(474936);
 
 function w(e) {
@@ -170,7 +170,7 @@ function B(e, t) {
   let n = (0, S.Z)(t, e);
   return D(e, "roleColor", r.useMemo(() => {
     var e;
-    return null != (e = null == n ? void 0 : n.color) ? e : x.p6O
+    return null != (e = null == n ? void 0 : n.color) ? e : P.p6O
   }, [n]))
 }
 
@@ -241,7 +241,7 @@ function J(e) {
     var e, r, i, l, s;
     return {
       price: null != (e = null != n ? n : null == t ? void 0 : t.price) ? e : 0,
-      currency: null != (r = null == t ? void 0 : t.currency) ? r : x.pKx.USD,
+      currency: null != (r = null == t ? void 0 : t.currency) ? r : P.pKx.USD,
       interval: null != (i = null == t ? void 0 : t.interval) ? i : N.rV.MONTH,
       interval_count: null != (l = null == t ? void 0 : t.interval_count) ? l : 1,
       id: null != (s = null == t ? void 0 : t.id) ? s : ""
@@ -459,7 +459,7 @@ function er(e, t) {
           intangibleBenefits: t.additional_perks,
           channelBenefits: t.channels.map(e => ({
             ref_id: e.id,
-            ref_type: P.Qs.CHANNEL,
+            ref_type: x.Qs.CHANNEL,
             description: e.description,
             name: e.name,
             emoji_name: e.emoji_name

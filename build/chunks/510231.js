@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   N: () => d,
-  h: () => f
+  h: () => _
 }), n(583741);
 var r = n(73800),
   i = n(392711),
@@ -21,7 +21,7 @@ function d(e) {
   return (null == e ? void 0 : e.themes) != null && e.themes.includes(s.u.EROTIC)
 }
 
-function f() {
+function _() {
   let e = (0, o.e7)([l.Z], () => l.Z.games),
     t = r.useMemo(() => a()(e).filter(e => !d(e)).map(e => ({
       value: e.id,

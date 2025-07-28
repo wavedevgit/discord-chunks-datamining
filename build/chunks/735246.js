@@ -15,13 +15,13 @@ var r = n(255367),
 function d(e) {
   let {
     children: t
-  } = e, n = (0, a.e7)([l.default], () => l.default.locale), [d, f] = (0, o.R_)(e => [e.isLoading, e.error], i.X);
-  return null != f ? (0, r.jsx)(s.Z, {
+  } = e, n = (0, a.e7)([l.default], () => l.default.locale), [d, _] = (0, o.R_)(e => [e.isLoading, e.error], i.X);
+  return null != _ ? (0, r.jsx)(s.Z, {
     title: c.intl.formatToPlainString(c.t["7basa2"], {
       locale: n
     }),
     note: (0, r.jsx)("span", {
-      children: f.message
+      children: _.message
     })
   }) : d ? __OVERLAY__ ? null : (0, r.jsx)("div", {
     className: u.loading

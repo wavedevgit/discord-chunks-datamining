@@ -19,7 +19,7 @@ function s(e) {
       color: "text-default",
       className: l.text,
       children: (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(i.P4T, {
+        children: [(0, r.jsx)(i.Mgn, {
           size: "custom",
           width: 20,
           height: 20,

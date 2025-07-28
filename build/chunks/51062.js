@@ -12,8 +12,8 @@ var r = n(73800),
   c = n(887490),
   u = n(271383),
   d = n(496675),
-  f = n(246946),
-  _ = n(594174),
+  _ = n(246946),
+  f = n(594174),
   p = n(106824),
   h = n(691841),
   m = n(981631),
@@ -63,16 +63,16 @@ function v(e, t, n) {
   let {
     channel: P,
     type: w
-  } = e, [D, L] = r.useState(() => (0, p.PA)()), x = (0, i.Z)(), M = (0, a.e7)([u.ZP, _.default], () => {
+  } = e, [D, L] = r.useState(() => (0, p.PA)()), x = (0, i.Z)(), M = (0, a.e7)([u.ZP, f.default], () => {
     var e, t;
-    let n = _.default.getCurrentUser();
+    let n = f.default.getCurrentUser();
     return null != (t = null != P.guild_id && null != n ? null == (e = u.ZP.getMember(P.guild_id, n.id)) ? void 0 : e.isPending : null) && t
   }), {
     canMentionEveryone: k,
     hidePersonalInformation: j
-  } = (0, a.cj)([d.Z, f.Z], () => ({
+  } = (0, a.cj)([d.Z, _.Z], () => ({
     canMentionEveryone: P.isPrivate() || M || w === l.Ie.RULES_INPUT || d.Z.can(m.Plq.MENTION_EVERYONE, P),
-    hidePersonalInformation: f.Z.hidePersonalInformation
+    hidePersonalInformation: _.Z.hidePersonalInformation
   }), [P, w, M]), {
     activeCommand: U,
     activeCommandOption: G

@@ -12,13 +12,13 @@ var r = n(255367),
   c = n(122567),
   u = n(98528),
   d = n(204922);
-let f = 20,
-  _ = i.forwardRef(function(e, t) {
+let _ = 20,
+  f = i.forwardRef(function(e, t) {
     let {
       categories: n,
       store: a,
       hasSearchResults: c,
-      listPadding: _,
+      listPadding: f,
       renderRow: h,
       renderSection: m,
       renderSectionHeader: g,
@@ -40,7 +40,7 @@ let f = 20,
       isScrolling: N,
       listRef: C,
       onActiveCategoryIndexChange: a.setActiveCategoryIndex,
-      scrollOffset: f,
+      scrollOffset: _,
       searchQuery: R
     }), L = i.useCallback(e => {
       D(e), p({
@@ -94,7 +94,7 @@ let f = 20,
       className: d.wrapper,
       children: [R.length > 0 && !c && null != y ? y() : (0, r.jsx)(o.Z, {
         role: "none presentation",
-        listPadding: _,
+        listPadding: f,
         onScroll: L,
         renderRow: h,
         renderSection: m,
@@ -134,4 +134,4 @@ function h(e) {
     areOnlyNitroLockedSectionsVisible: a.areOnlyNitroLockedSectionsVisible
   })
 }
-let m = _
+let m = f

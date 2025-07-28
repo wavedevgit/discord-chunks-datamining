@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => _,
+  ZP: () => f,
   jA: () => h,
   sU: () => m
 }), n(997841);
@@ -14,17 +14,17 @@ var r = n(442837),
   c = n(16609),
   u = n(917107),
   d = n(918559),
-  f = n(981631);
+  _ = n(981631);
 
-function _(e) {
+function f(e) {
   var t;
   let {
     application: n,
     channelId: r
   } = e;
-  if (null != n && (0, o.yE)(null != (t = n.flags) ? t : 0, f.udG.EMBEDDED)) {
-    if (a.Z.getWindowOpen(f.KJ3.ACTIVITY_POPOUT) && l.ZP.getActivityPanelMode() === d.Ez.ACTIVITY_POPOUT_WINDOW) return f.KJ3.ACTIVITY_POPOUT;
-    if (a.Z.getWindowOpen(f.KJ3.CHANNEL_CALL_POPOUT) && (0, u.Z)(r) && !(0, s.R)()) return f.KJ3.CHANNEL_CALL_POPOUT
+  if (null != n && (0, o.yE)(null != (t = n.flags) ? t : 0, _.udG.EMBEDDED)) {
+    if (a.Z.getWindowOpen(_.KJ3.ACTIVITY_POPOUT) && l.ZP.getActivityPanelMode() === d.Ez.ACTIVITY_POPOUT_WINDOW) return _.KJ3.ACTIVITY_POPOUT;
+    if (a.Z.getWindowOpen(_.KJ3.CHANNEL_CALL_POPOUT) && (0, u.Z)(r) && !(0, s.R)()) return _.KJ3.CHANNEL_CALL_POPOUT
   }
 }
 
@@ -34,7 +34,7 @@ function p(e) {
     EmbeddedActivitiesStore: n,
     ApplicationStore: r
   } = e, i = n.getSelfEmbeddedActivityForChannel(t), a = r.getApplication(null == i ? void 0 : i.applicationId);
-  if (null != a) return _({
+  if (null != a) return f({
     application: a,
     channelId: t
   })
@@ -46,7 +46,7 @@ function h(e) {
   } = e, n = l.ZP.getCurrentEmbeddedActivity();
   if (null == n || n.applicationId !== t) return;
   let r = i.Z.getApplication(t);
-  if (null != r) return _({
+  if (null != r) return f({
     application: r,
     channelId: (0, c.p)(n.location)
   })

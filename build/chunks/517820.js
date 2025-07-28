@@ -116,7 +116,7 @@ function F(e) {
   return (0, r.jsx)(z, {
     compact: t,
     header: (0, r.jsxs)(i.Fragment, {
-      children: [(0, r.jsx)(f.P4T, {
+      children: [(0, r.jsx)(f.Mgn, {
         size: "xs",
         color: m.Z.colors.HEADER_SECONDARY.css
       }), (0, r.jsx)(f.Text, {
@@ -140,7 +140,7 @@ function B(e) {
   return (0, r.jsx)(z, {
     compact: t,
     header: (0, r.jsxs)(i.Fragment, {
-      children: [(0, r.jsx)(f.P4T, {
+      children: [(0, r.jsx)(f.Mgn, {
         size: "xs",
         color: m.Z.colors.HEADER_SECONDARY.css
       }), (0, r.jsx)(f.Text, {
@@ -249,7 +249,7 @@ function H(e) {
   } = (0, h.mI)(v), O = (0, N.sR)(n.author.id, n.channel_id), I = i.useCallback(() => {
     let e = null == x ? void 0 : x.guild_id;
     null != e && (0, C.kW)(n.id, e)
-  }, [n.id, x]), S = g === d.$.DM_RAID, T = S ? f.P4T : f.b6m;
+  }, [n.id, x]), S = g === d.$.DM_RAID, T = S ? f.Mgn : f.b6m;
   return (0, r.jsx)(z, {
     compact: l,
     header: (0, r.jsxs)(i.Fragment, {
@@ -335,7 +335,7 @@ function V(e) {
   return (0, r.jsx)(z, {
     compact: l,
     header: (0, r.jsxs)(i.Fragment, {
-      children: [(0, r.jsx)(f.P4T, {
+      children: [(0, r.jsx)(f.Mgn, {
         size: "xs",
         color: m.Z.colors.TEXT_DANGER.css
       }), (0, r.jsx)(f.Text, {

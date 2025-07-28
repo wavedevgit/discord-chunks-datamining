@@ -18,15 +18,15 @@ var r = n(255367),
   _ = n(535396),
   x = n(93841),
   v = n(388032),
-  b = n(117172);
+  g = n(117172);
 
-function g(e) {
+function b(e) {
   let {
     dateString: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: b.inline,
-    children: [(0, r.jsx)(s.P4T, {
+    className: g.inline,
+    children: [(0, r.jsx)(s.Mgn, {
       size: "xs",
       color: s.TVs.colors.STATUS_WARNING
     }), (0, r.jsx)(s.Text, {
@@ -45,18 +45,18 @@ function j(e) {
     guildId: i,
     powerup: a,
     className: d
-  } = e, m = (0, u.Z)(i, a), f = m.type !== _.A3.LEVEL_ACTIVATED, j = f ? b.labelContainer : b.labelContainerEnd, E = (0, c.Z)(i, a, "GuildPowerupCardBodyFooter"), h = m.type === _.A3.LEVEL_ACTIVATED ? v.intl.formatToPlainString(x.default.WRRYUV, {
+  } = e, m = (0, u.Z)(i, a), f = m.type !== _.A3.LEVEL_ACTIVATED, j = f ? g.labelContainer : g.labelContainerEnd, E = (0, c.Z)(i, a, "GuildPowerupCardBodyFooter"), h = m.type === _.A3.LEVEL_ACTIVATED ? v.intl.formatToPlainString(x.default.WRRYUV, {
     perkName: null != (o = null == (t = m.sourcePowerup) ? void 0 : t.title) ? o : v.intl.string(v.t.BfF6EB)
   }) : m.type === _.A3.POWERUP_ACTIVATED ? v.intl.string(x.default.FFLkm5) : void 0;
   return (0, r.jsxs)("div", {
     className: l()(j, d),
     children: [f && (0, r.jsxs)("div", {
-      className: l()(b.inline, b.inlineBoost),
+      className: l()(g.inline, g.inlineBoost),
       children: [(0, r.jsx)(s.$Eu, {
         size: "sm",
         color: s.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
       }), (0, r.jsx)(s.Text, {
-        className: b.price,
+        className: g.price,
         tag: "div",
         variant: "heading-md/semibold",
         color: "text-secondary",
@@ -64,11 +64,11 @@ function j(e) {
           required: a.cost
         })
       })]
-    }), (null == (n = m.sourceEntitlement) ? void 0 : n.ends_at) != null ? (0, r.jsx)(g, {
+    }), (null == (n = m.sourceEntitlement) ? void 0 : n.ends_at) != null ? (0, r.jsx)(b, {
       dateString: m.sourceEntitlement.ends_at
     }) : E && null != a.storeRemovalDate ? (0, r.jsxs)("div", {
-      className: b.rollbackInline,
-      children: [(0, r.jsx)(s.P4T, {
+      className: g.rollbackInline,
+      children: [(0, r.jsx)(s.Mgn, {
         size: "xs",
         color: s.TVs.colors.STATUS_WARNING
       }), (0, r.jsx)(s.Text, {
@@ -79,7 +79,7 @@ function j(e) {
         })
       })]
     }) : null != h ? (0, r.jsxs)("div", {
-      className: b.inline,
+      className: g.inline,
       children: [(0, r.jsx)(s.owK, {
         size: "xs",
         color: s.TVs.colors.STATUS_POSITIVE
@@ -100,13 +100,13 @@ function E(e) {
     className: d,
     onHover: p,
     children: x
-  } = e, v = (0, u.Z)(n, i), g = v.type !== _.A3.INACTIVE, j = (null == (t = v.sourceEntitlement) ? void 0 : t.ends_at) != null, E = (0, c.Z)(n, i, "GuildPowerupCard"), h = o.useRef(null), {
+  } = e, v = (0, u.Z)(n, i), b = v.type !== _.A3.INACTIVE, j = (null == (t = v.sourceEntitlement) ? void 0 : t.ends_at) != null, E = (0, c.Z)(n, i, "GuildPowerupCard"), h = o.useRef(null), {
     onShowMore: C
   } = (0, f.ZP)(n, i), [I, N] = o.useState(!1), O = (0, a.O)(N, 1);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: l()(b.parentContainer, {
-        [b.rollbackInactive]: E && !g
+      className: l()(g.parentContainer, {
+        [g.rollbackInactive]: E && !b
       }),
       ref: e => {
         h.current = e, O.current = e
@@ -116,9 +116,9 @@ function E(e) {
         onClick: C,
         onMouseOver: () => null == p ? void 0 : p(!0),
         onMouseLeave: () => null == p ? void 0 : p(!1),
-        className: l()(b.container, {
-          [b.active]: g,
-          [b.warning]: j || E && g
+        className: l()(g.container, {
+          [g.active]: b,
+          [g.warning]: j || E && b
         }, d),
         children: x
       })

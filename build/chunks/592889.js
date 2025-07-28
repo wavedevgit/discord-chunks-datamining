@@ -95,7 +95,7 @@ function N(e) {
   } = e, [o, c] = r.useState(!1), d = (0, f.Z)(), u = t.currentPeriodEnd;
   return d.fractionalState === C.a$.FP_SUB_PAUSED && (u = d.endsAt.toDate()), (0, i.jsxs)("div", {
     className: a()(S.root, s),
-    children: [(0, i.jsx)(m.P4T, {
+    children: [(0, i.jsx)(m.Mgn, {
       size: "custom",
       width: 20,
       height: 20,

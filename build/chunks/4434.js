@@ -204,7 +204,7 @@ function er(e) {
             canceledCount: ej,
             date: P.currentPeriodEnd
           }),
-          children: e => (0, i.jsx)(p.P4T, et(en({
+          children: e => (0, i.jsx)(p.Mgn, et(en({
             size: "custom",
             width: 20,
             height: 20

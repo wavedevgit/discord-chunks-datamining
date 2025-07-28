@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => f,
+  Z: () => _,
   j: () => u
 });
 var r = n(255367),
@@ -19,7 +19,7 @@ let u = [s.OV, s.EE, s.Af, s.U9, s.n8, s.pQ],
       selected: i,
       hovered: d
     } = e, {
-      largeImage: f
+      largeImage: _
     } = (0, a.rv)({
       entry: t,
       showCoverImage: !1
@@ -41,11 +41,11 @@ let u = [s.OV, s.EE, s.Af, s.U9, s.n8, s.pQ],
           }, n))
         })]
       }), (0, r.jsx)(o.f, {
-        alt: null == f ? void 0 : f.alt,
-        src: null == f ? void 0 : f.src,
+        alt: null == _ ? void 0 : _.alt,
+        src: null == _ ? void 0 : _.src,
         size: 48,
         className: c.thumbnail
       })]
     })
   },
-  f = i.memo(d)
+  _ = i.memo(d)

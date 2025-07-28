@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(631467),
   u = n(210887),
   d = n(585483),
-  f = n(531826),
-  _ = n(53289),
+  _ = n(531826),
+  f = n(53289),
   p = n(953101),
   h = n(701488),
   m = n(981631),
@@ -68,7 +68,7 @@ function v(e) {
     queryParams: E,
     allowPopups: y = !1,
     referrerPolicy: v = "origin"
-  } = e, I = (0, f.sU)({}), T = (0, s.useMemoOne)(() => (0, l.Z)(), [t]), S = i.useRef(null), A = (0, _.Z)(S, g, null == I ? window : I), N = O(b({}, E), {
+  } = e, I = (0, _.sU)({}), T = (0, s.useMemoOne)(() => (0, l.Z)(), [t]), S = i.useRef(null), A = (0, f.Z)(S, g, null == I ? window : I), N = O(b({}, E), {
     frame_id: T,
     platform: h.S4.DESKTOP
   }), [C, R] = i.useState(!1), P = u.Z.theme, w = b({}, a);

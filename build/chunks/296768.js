@@ -18,8 +18,8 @@ var n = r(255367),
   O = r(774073),
   E = r(426482),
   x = r(644941),
-  h = r(388032),
-  v = r(263930),
+  v = r(388032),
+  h = r(263930),
   j = r(276220);
 
 function b(e) {
@@ -94,19 +94,19 @@ function y(e) {
     s.length > 0 && d.Z.getDetectableGamesSupplemental([t, ...s])
   }, [t, s]), f && null == m) ? (0, n.jsxs)("div", {
     children: [(0, n.jsx)("div", {
-      className: l()(j.loadingHeading, v.sectionHeader)
+      className: l()(j.loadingHeading, h.sectionHeader)
     }), (0, n.jsx)("div", {
-      className: l()(v.row, v.gapLg),
+      className: l()(h.row, h.gapLg),
       children: o().range(0, 5).map(e => (0, n.jsx)("div", {
         className: j.loadingArtwork
       }, e))
     })]
   }) : (f || 0 !== E.length) && null == m ? (0, n.jsxs)("div", {
     children: [(0, n.jsx)(u.X6q, {
-      className: v.sectionHeader,
+      className: h.sectionHeader,
       variant: "text-md/semibold",
       color: "header-primary",
-      children: h.intl.string(h.t["6rLyQE"])
+      children: v.intl.string(v.t["6rLyQE"])
     }), (0, n.jsx)("div", {
       className: j.similarGames,
       style: {},

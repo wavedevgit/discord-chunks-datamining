@@ -280,7 +280,7 @@ function P(e) {
   } = e, n = (0, i.e7)([u.Z], () => u.Z.getGuild(t));
   return null == n || n.verificationLevel < v.sFg.VERY_HIGH ? null : (0, r.jsxs)("div", {
     className: O.rolesWarning,
-    children: [(0, r.jsx)(l.P4T, {
+    children: [(0, r.jsx)(l.Mgn, {
       size: "xs",
       color: "currentColor",
       className: O.warningIcon

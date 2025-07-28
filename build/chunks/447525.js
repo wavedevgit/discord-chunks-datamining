@@ -49,12 +49,12 @@ function u(e, t) {
 }
 
 function d(e, t) {
-  return "type" in e && "timestamp" === e.type ? (0, r.jsx)(f, u(l({}, t), {
+  return "type" in e && "timestamp" === e.type ? (0, r.jsx)(_, u(l({}, t), {
     timestamp: e.parsed
   })) : null
 }
 
-function f(e) {
+function _(e) {
   var t;
   let {
     timestamp: n,

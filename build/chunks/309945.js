@@ -27,10 +27,10 @@ function _(e) {
     return null != (n = null == x || null == (t = x.filter) || null == (e = t.call(x, e => !e.ended && null == e.endsAt)) ? void 0 : e.length) ? n : 0
   }, [x]);
   if (v <= 0) return null;
-  let b = n.some(e => e.skuId === i.A$);
+  let g = n.some(e => e.skuId === i.A$);
   return (0, r.jsxs)("div", {
     className: f.container,
-    children: [(0, r.jsx)(l.P4T, {
+    children: [(0, r.jsx)(l.Mgn, {
       color: c.Z.colors.TEXT_FEEDBACK_WARNING,
       className: f.icon
     }), (0, r.jsx)(s.xv, {
@@ -42,7 +42,7 @@ function _(e) {
       children: [m.intl.formatToPlainString(p.default.iAaAiI, {
         boostCount: v,
         perksString: n.map(e => e.title).join(", ")
-      }), b && (0, r.jsx)(s.xv, {
+      }), g && (0, r.jsx)(s.xv, {
         variant: "text-sm/medium",
         color: "text-feedback-warning",
         children: m.intl.string(p.default.Sfr0Jy)

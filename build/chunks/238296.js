@@ -1,8 +1,8 @@
 /** Chunk was on 80125 **/
 n.d(t, {
-  E: () => P,
+  E: () => E,
   Y: () => S,
-  default: () => E
+  default: () => P
 });
 var r = n(255367);
 n(73800);
@@ -50,7 +50,7 @@ function S(e) {
   })]
 }
 
-function P(e, t, n) {
+function E(e, t, n) {
   let o = (0, d.B)({
       userId: e.id,
       channelId: t,
@@ -80,7 +80,7 @@ function P(e, t, n) {
     children: [c, a]
   }), u]
 }
-let E = (0, c.Z)((0, l.Z)(function(e) {
+let P = (0, c.Z)((0, l.Z)(function(e) {
   let {
     user: t,
     channel: n,
@@ -92,7 +92,7 @@ let E = (0, c.Z)((0, l.Z)(function(e) {
     userId: t.id,
     channelId: u,
     context: a
-  }), O = P(t, u), p = (0, b.Z)({
+  }), O = E(t, u), p = (0, b.Z)({
     id: t.id,
     label: h.intl.string(h.t["/AXYnJ"])
   });

@@ -50,7 +50,7 @@ function I(e) {
       scrollIntoView: P === y.Tb.ROLES
     }), n.isProvisional && (0, l.jsx)(b.Z, {
       heading: O.intl.string(O.t.Iyka0d),
-      headingIcon: (0, l.jsx)(i.P4T, {
+      headingIcon: (0, l.jsx)(i.Mgn, {
         size: "xxs",
         color: i.TVs.colors.HEADER_PRIMARY
       }),

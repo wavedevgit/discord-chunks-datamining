@@ -1,22 +1,22 @@
-/** Chunk was on 95336 **/
+/** Chunk was on 36512 **/
 r.d(t, {
   FZ: () => N,
-  Hl: () => D,
-  NJ: () => k,
+  Hl: () => F,
+  NJ: () => M,
   R8: () => w,
-  Sq: () => I,
+  Sq: () => j,
   Wg: () => L,
-  Zn: () => R,
+  Zn: () => I,
   c2: () => A,
-  eE: () => M,
-  iE: () => F,
+  eE: () => k,
+  iE: () => D,
   iK: () => Z,
   lv: () => T,
   nR: () => P,
   q0: () => l.a,
   x0: () => O,
   xb: () => H,
-  yd: () => j
+  yd: () => R
 }), r(388685), r(539854);
 var n = r(399834),
   s = r(598335),
@@ -32,15 +32,15 @@ var n = r(399834),
   f = r(599552),
   g = r.n(f),
   m = r(544611),
-  _ = r.n(m),
-  S = r(803068),
-  y = r.n(S),
-  b = r(561099),
-  x = r.n(b),
+  S = r.n(m),
+  _ = r(803068),
+  y = r.n(_),
+  x = r(561099),
+  b = r.n(x),
   E = r(655e3),
-  v = r.n(E);
+  C = r.n(E);
 
-function C(e, t, r, s) {
+function v(e, t, r, s) {
   let l = s.getCurrentContent(),
     a = null;
   null != e && (a = (l = l.createEntity(...e)).getLastCreatedEntityKey());
@@ -71,10 +71,10 @@ function O(e, t, r, s) {
   return l.isCollapsed() ? (o = n.Modifier.insertText(o, l, e, h, d), a = "insert-characters") : (o = n.Modifier.replaceText(o, l, e, h, d), a = "replace-characters"), n.EditorState.push(t, o, a)
 }
 
-function j(e, t) {
+function R(e, t) {
   switch (e) {
     case "delete":
-      return x()(t);
+      return b()(t);
     case "delete-word":
       return p()(t);
     case "backspace":
@@ -88,12 +88,12 @@ function j(e, t) {
   }
 }
 
-function R(e, t) {
+function I(e, t) {
   switch (e) {
     case "transpose-characters":
-      return v()(t);
+      return C()(t);
     case "move-selection-to-start-of-block":
-      return _()(t);
+      return S()(t);
     case "move-selection-to-end-of-block":
       return g()(t);
     default:
@@ -101,7 +101,7 @@ function R(e, t) {
   }
 }
 
-function I(e) {
+function j(e) {
   return e.getCurrentContent().getFirstBlock().getText()
 }
 
@@ -129,14 +129,14 @@ function T(e, t) {
           start: l,
           end: a
         } = e, i = e.getFullMatch();
-        !r.processed && (r.type === s && r.start === l && r.text === i ? (r.processed = !0, n = !0) : (l >= r.start && l < r.end || a > r.start && a <= r.end) && (r.processed = !0, t = C(null, r.start, r.end, t)))
+        !r.processed && (r.type === s && r.start === l && r.text === i ? (r.processed = !0, n = !0) : (l >= r.start && l < r.end || a > r.start && a <= r.end) && (r.processed = !0, t = v(null, r.start, r.end, t)))
       }), n) return;
     let s = r[e.type];
-    t = C([e.type, null != s && s.mutable ? "MUTABLE" : "IMMUTABLE", {
+    t = v([e.type, null != s && s.mutable ? "MUTABLE" : "IMMUTABLE", {
       token: e
     }], e.start, e.end, t)
   }), a.forEach(e => {
-    e.processed || (t = C(null, e.start, e.end, t))
+    e.processed || (t = v(null, e.start, e.end, t))
   }), t
 }
 
@@ -151,7 +151,7 @@ function N(e) {
 }
 
 function A(e, t) {
-  let r = I(t);
+  let r = j(t);
   return O(e, t, 0, r.length)
 }
 
@@ -160,11 +160,11 @@ function Z(e, t) {
   return r = (r = r.set("focusOffset", e)).set("anchorOffset", e), n.EditorState.forceSelection(t, r)
 }
 
-function k(e) {
+function M(e) {
   return Z(e.getCurrentContent().getFirstBlock().getText().length, e)
 }
 
-function M(e) {
+function k(e) {
   return Z(0, e)
 }
 
@@ -174,14 +174,14 @@ function w(e) {
 }
 
 function L(e) {
-  let t = I(e),
+  let t = j(e),
     r = e.getSelection();
   return r = (r = r.set("focusOffset", t.length)).set("isBackward", !1), n.EditorState.forceSelection(e, r)
 }
 
-function D(e) {
+function F(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 512,
-    r = I(e);
+    r = j(e);
   if (r.length > t) {
     let s = e.getSelection();
     e = O("", e, t, r.length), s.getAnchorOffset() > t && (s = s.set("anchorOffset", t)), s.getFocusOffset() > t && (s = s.set("focusOffset", t)), e = n.EditorState.forceSelection(e, s)
@@ -189,7 +189,7 @@ function D(e) {
   return e
 }
 
-function F(e) {
+function D(e) {
   let t = window.getSelection();
   if (null == t || "Caret" !== t.type || null == e) return;
   let r = t.getRangeAt(0);
@@ -208,5 +208,5 @@ function F(e) {
 }
 
 function H(e) {
-  return 0 === I(e).length
+  return 0 === j(e).length
 }

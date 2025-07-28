@@ -1,6 +1,6 @@
-/** Chunk was on 11509 **/
+/** Chunk was on 66005 **/
 n.d(t, {
-  Z: () => _
+  Z: () => h
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -16,13 +16,13 @@ var r = n(255367),
   m = n(981631),
   g = n(490650);
 
-function _(e) {
+function h(e) {
   let {
     channelId: t,
     guildId: n,
-    userId: _,
-    containerDimensions: v
-  } = e, h = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), [b, y] = i.useState([]), O = b.length < 50;
+    userId: h,
+    containerDimensions: b
+  } = e, _ = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), [v, y] = i.useState([]), O = v.length < 50;
   i.useEffect(() => {
     function e(e) {
       var r;
@@ -33,9 +33,9 @@ function _(e) {
         animationType: s,
         animationId: p
       } = e;
-      if (null != _ && _ !== a || u.Z.getEnabled() && (0, d.Z)(null != (r = null == o ? void 0 : o.name) ? r : "")) return;
+      if (null != h && h !== a || u.Z.getEnabled() && (0, d.Z)(null != (r = null == o ? void 0 : o.name) ? r : "")) return;
       let g = null != o && null != s && null != p;
-      if (i === t && !h && O && g) {
+      if (i === t && !_ && O && g) {
         let e = (0, f._r)(o),
           r = null != o.id && !o.animated,
           i = {
@@ -55,25 +55,25 @@ function _(e) {
     return o.Z.subscribe("VOICE_CHANNEL_EFFECT_SEND", e), () => {
       o.Z.unsubscribe("VOICE_CHANNEL_EFFECT_SEND", e)
     }
-  }, [t, n, _, h, O]);
-  let j = i.useCallback(e => {
+  }, [t, n, h, _, O]);
+  let S = i.useCallback(e => {
     y(t => {
       let n = [...t],
         r = n.findIndex(t => t.id === e);
       return n.splice(r, 1), n
     })
   }, []);
-  return h ? null : (0, r.jsx)("div", {
+  return _ ? null : (0, r.jsx)("div", {
     className: g.effectsWrapper,
     style: {
-      width: v.width
+      width: b.width
     },
     children: (0, r.jsx)("div", {
       className: g.effects,
-      children: b.map(e => (0, r.jsx)(p.Z, {
-        containerDimensions: v,
+      children: v.map(e => (0, r.jsx)(p.Z, {
+        containerDimensions: b,
         effect: e,
-        onComplete: j
+        onComplete: S
       }, e.id))
     })
   })

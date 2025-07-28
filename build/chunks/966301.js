@@ -36,7 +36,7 @@ function O(e) {
       onClick: () => b(!x),
       children: [(0, r.jsxs)("div", {
         className: _.warningTextContainer,
-        children: [f <= 85 && (0, r.jsx)(s.P4T, {
+        children: [f <= 85 && (0, r.jsx)(s.Mgn, {
           size: "xs",
           color: "currentColor",
           className: _.warning
@@ -87,7 +87,7 @@ function O(e) {
       }), (0, r.jsx)("div", {
         className: _.channelCoverageHint,
         children: h > 0 ? (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(s.P4T, {
+          children: [(0, r.jsx)(s.Mgn, {
             size: "xs",
             color: "currentColor"
           }), (0, r.jsx)(s.Text, {

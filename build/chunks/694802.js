@@ -18,7 +18,7 @@ function l(e) {
     className: i.card,
     children: [(0, r.jsxs)("div", {
       className: i.header,
-      children: [(0, r.jsx)(o.P4T, {
+      children: [(0, r.jsx)(o.Mgn, {
         size: "custom",
         color: "currentColor",
         className: i.icon,

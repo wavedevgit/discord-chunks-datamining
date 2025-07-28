@@ -14,7 +14,7 @@ var i = n(442837),
   u = n(388032),
   d = n(86777);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,14 +23,14 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -56,7 +56,7 @@ function h(e, t) {
 function m(e) {
   let {
     user: t,
-    guildId: f,
+    guildId: _,
     channelId: p,
     onBlock: m,
     onIgnore: g,
@@ -89,8 +89,8 @@ function m(e) {
         let {
           default: e
         } = await Promise.all([n.e("97652"), n.e("25784")]).then(n.bind(n, 240515));
-        return n => (0, r.jsx)(e, h(_({}, n), {
-          guildId: f,
+        return n => (0, r.jsx)(e, h(f({}, n), {
+          guildId: _,
           channelId: p,
           user: t,
           onIgnore: g,

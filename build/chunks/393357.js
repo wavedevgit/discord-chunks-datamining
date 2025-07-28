@@ -21,7 +21,7 @@ function x(e) {
   let {
     guildId: t,
     powerupSkuId: n
-  } = e, x = (0, i.e7)([d.Z], () => d.Z.getGuild(t)), v = (0, i.e7)([a.Z], () => a.Z.hasLoadedExperiments), b = (0, m.Z)(t), g = (0, u.At)(), j = (0, p.V)("GuildPowerupsPage"), E = !v || null == b || null == x, h = (0, l.ZP)(null != g ? g : []);
+  } = e, x = (0, i.e7)([d.Z], () => d.Z.getGuild(t)), v = (0, i.e7)([a.Z], () => a.Z.hasLoadedExperiments), g = (0, m.Z)(t), b = (0, u.At)(), j = (0, p.V)("GuildPowerupsPage"), E = !v || null == g || null == x, h = (0, l.ZP)(null != b ? b : []);
   return ((0, s.Z)({
     type: o.ImpressionTypes.VIEW,
     name: o.ImpressionNames.BOOST_SHOP_OPENED,
@@ -30,7 +30,7 @@ function x(e) {
     }
   }, {
     disableTrack: E
-  }), E) ? null : b || j ? (0, r.jsx)(f.Z, {
+  }), E) ? null : g || j ? (0, r.jsx)(f.Z, {
     guildId: t,
     powerupSkuId: n
   }) : (0, r.jsx)(c.Z, {

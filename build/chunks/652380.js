@@ -765,7 +765,7 @@ class U extends o.Component {
     } = this.state;
     return null != e ? (0, r.jsxs)("div", {
       className: R.errorBoundary,
-      children: [(0, r.jsx)(d.P4T, {
+      children: [(0, r.jsx)(d.Mgn, {
         className: R.errorBoundaryIcon
       }), (0, r.jsx)(d.X6q, {
         variant: "heading-lg/semibold",

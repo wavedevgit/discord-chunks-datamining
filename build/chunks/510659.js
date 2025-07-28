@@ -3,8 +3,8 @@
 n.d(t, {
   $m: () => d,
   NJ: () => u,
-  Xo: () => _,
-  yi: () => f
+  Xo: () => f,
+  yi: () => _
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -28,9 +28,9 @@ function u(e) {
 function d() {
   let [e, t] = i.useState(null), [n, r] = i.useState(null), [a, o] = i.useState(null), [c, u] = i.useState(i.createRef()), d = i.useCallback(e => {
     t(e.interactionType), r(e.interactionSource), o(e.interactionSourceId)
-  }, []), f = i.useCallback(e => {
+  }, []), _ = i.useCallback(e => {
     u(e)
-  }, []), _ = i.useCallback(() => {
+  }, []), f = i.useCallback(() => {
     d({
       interactionType: null,
       interactionSource: null,
@@ -47,19 +47,19 @@ function d() {
     interactionSourceId: a,
     onInteraction: d,
     setInteractionToast: b,
-    resetInteraction: _,
+    resetInteraction: f,
     showInteractionToast: p,
     interactionTypeSent: m,
     interactionPopoutTargetRef: c,
-    onInteractionPopoutTargetRefChange: f
-  }), [d, b, n, a, p, e, m, _, c, f])
-}
-
-function f() {
-  return i.useContext(c)
+    onInteractionPopoutTargetRefChange: _
+  }), [d, b, n, a, p, e, m, f, c, _])
 }
 
 function _() {
-  let e = f();
+  return i.useContext(c)
+}
+
+function f() {
+  let e = _();
   return o()(null != e, "must use useUserProfileInteractionContext within a UserProfileInteractionContextProvider"), e
 }

@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(442837),
   u = n(481060),
   d = n(607070),
-  f = n(594928),
-  _ = n(821795),
+  _ = n(594928),
+  f = n(821795),
   p = n(760692),
   h = n(7284),
   m = n(482695);
@@ -21,8 +21,8 @@ let g = i.memo(function(e) {
   let {
     userName: t,
     displayNameStyles: n,
-    effectDisplayType: i = _.F.STATIC
-  } = e, a = f.f.useExperiment({
+    effectDisplayType: i = f.F.STATIC
+  } = e, a = _.f.useExperiment({
     location: "UserNameWithEffects"
   }).enabled, s = (0, h.j)({
     displayNameStyles: n
@@ -41,8 +41,8 @@ let g = i.memo(function(e) {
     I = E(n.effectId);
   return (0, r.jsx)("div", {
     className: o()(m.container, I, s, {
-      [m.showEffect]: i !== _.F.PLAIN,
-      [m.animated]: i === _.F.ANIMATED && !g
+      [m.showEffect]: i !== f.F.PLAIN,
+      [m.animated]: i === f.F.ANIMATED && !g
     }),
     style: v,
     "data-username-with-effects": (0, u.qgQ)(t),

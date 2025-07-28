@@ -196,7 +196,7 @@ class ep extends(l = r.PureComponent) {
     } = this.props;
     return (0, S.Z)(e) ? (0, i.jsxs)("div", {
       className: er.warningContainer,
-      children: [(0, i.jsx)(I.P4T, {
+      children: [(0, i.jsx)(I.Mgn, {
         size: "custom",
         className: er.warningIcon,
         color: v.Z.unsafe_rawColors.YELLOW_300.css,

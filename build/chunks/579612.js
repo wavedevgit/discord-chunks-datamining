@@ -1,8 +1,8 @@
-/** Chunk was on 95336 **/
+/** Chunk was on 36512 **/
 r.d(t, {
-  GQ: () => _,
+  GQ: () => S,
   MC: () => m,
-  P: () => S,
+  P: () => _,
   ZP: () => y
 });
 var n = r(255367);
@@ -49,7 +49,7 @@ function m(e) {
   })
 }
 
-function _(e) {
+function S(e) {
   let {
     channel: t
   } = e;
@@ -61,7 +61,7 @@ function _(e) {
   })
 }
 
-function S(e) {
+function _(e) {
   let {
     channel: t
   } = e, r = u.Z.getChannel(t.parent_id);
@@ -96,9 +96,9 @@ function y(e) {
       channel: t
     }), (0, n.jsxs)("div", {
       className: a,
-      children: [(0, n.jsx)(_, {
+      children: [(0, n.jsx)(S, {
         channel: t
-      }), (0, n.jsx)(S, {
+      }), (0, n.jsx)(_, {
         channel: t
       })]
     })]

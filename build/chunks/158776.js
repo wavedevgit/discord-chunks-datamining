@@ -12,8 +12,8 @@ var r, i = n(348327),
   c = n(570140),
   u = n(122810),
   d = n(106301),
-  f = n(920828),
-  _ = n(709054),
+  _ = n(920828),
+  f = n(709054),
   p = n(314897),
   h = n(594174),
   m = n(981631);
@@ -76,7 +76,7 @@ function D(e, t) {
     visible: e,
     hidden: []
   };
-  let n = f.R.getCurrentConfig({
+  let n = _.R.getCurrentConfig({
     location: "presence_filtering"
   }, {
     autoTrackExposure: !1
@@ -165,8 +165,8 @@ function k(e) {
     let {
       visible: e,
       hidden: c
-    } = D(o.length > 1 ? [...o].sort(w) : o, n), d = x([...null != s ? s : [], ...c]), f = u[t];
-    o = null != f && a()(f.activities, e) ? f.activities : e, u[t] = {
+    } = D(o.length > 1 ? [...o].sort(w) : o, n), d = x([...null != s ? s : [], ...c]), _ = u[t];
+    o = null != _ && a()(_.activities, e) ? _.activities : e, u[t] = {
       status: r,
       clientStatus: i,
       activities: o,
@@ -224,7 +224,7 @@ function U(e, t) {
 }
 
 function G(e) {
-  for (let t of _.default.keys(b)) U(e, t)
+  for (let t of f.default.keys(b)) U(e, t)
 }
 
 function B() {
@@ -470,7 +470,7 @@ class J extends(r = l.ZP.Store) {
   }
   getAllApplicationActivities(e) {
     let t = [];
-    for (let n of _.default.keys(O))
+    for (let n of f.default.keys(O))
       for (let r of O[n]) r.application_id === e && t.push({
         userId: n,
         activity: r
@@ -492,7 +492,7 @@ class J extends(r = l.ZP.Store) {
     return T[e]
   }
   getUserIds() {
-    return _.default.keys(O)
+    return f.default.keys(O)
   }
   isMobileOnline(e) {
     let t = I[e];

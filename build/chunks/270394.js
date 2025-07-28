@@ -375,7 +375,7 @@ function X(e) {
             children: v ? B.intl.string(B.t["/dbw3N"]) : B.intl.string(B.t.Uwsjn5)
           }), v && (0, r.jsxs)("div", {
             className: U.inviteDisabledTip,
-            children: [(0, r.jsx)(g.P4T, {
+            children: [(0, r.jsx)(g.Mgn, {
               size: "custom",
               width: 20,
               height: 20,

@@ -1,6 +1,6 @@
 /**
   Module ID: 55151
-  Original File Name: df6d7497209bb1d3
+  Original File Name: 83437adde6721de3
 **/
 .modalRoot__01dab {
     height: 478px
@@ -348,28 +348,14 @@
     color: var(--text-default)
 }
 
-.closeButton_f9ff5f {
-    position: absolute;
-    right: 12px;
-    top: 12px
-}
-
-.modalContent_f9ff5f {
-    padding-bottom: 16px;
-    padding-top: 16px
-}
-
 .channelOptionWrapper_f9ff5f {
     align-items: center;
     display: flex
 }
 
-.icon_f9ff5f,.spacer_f9ff5f {
-    height: 24px
-}
-
 .icon_f9ff5f {
     color: var(--interactive-normal);
+    height: 24px;
     margin-right: 8px;
     width: 24px
 }
@@ -391,14 +377,4 @@
     width: 20px
 }
 
-.backButton_f9ff5f {
-    min-width: 0;
-    padding: 0
-}
-
-.backButtonInner_f9ff5f {
-    align-items: center;
-    display: flex
-}
-
-/*# sourceMappingURL=df6d7497209bb1d3.css.map*/
+/*# sourceMappingURL=83437adde6721de3.css.map*/

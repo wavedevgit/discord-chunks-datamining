@@ -455,7 +455,7 @@ let J = e => {
                 className: l()(H.stepContainer, {
                   [H.completed]: e.isDone
                 }),
-                children: [e.shouldWarn ? (0, r.jsx)(g.P4T, {
+                children: [e.shouldWarn ? (0, r.jsx)(g.Mgn, {
                   size: "custom",
                   width: 20,
                   height: 20,

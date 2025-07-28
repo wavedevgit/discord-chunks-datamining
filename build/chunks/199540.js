@@ -22,7 +22,7 @@ function g(e) {
   } = e, i = (0, a.e7)([d.Z], () => d.Z.getGuild(t), [t]), l = (0, s.dQu)(s.TVs.modules.guildbar.AVATAR_SIZE);
   return null == i ? (0, r.jsx)("div", {
     className: o()(f.folderPreviewGuildIcon, f.folderPreviewGuildIconError),
-    children: (0, r.jsx)(s.P4T, {
+    children: (0, r.jsx)(s.Mgn, {
       color: "currentColor"
     })
   }) : (0, r.jsx)(u.Z, {

@@ -1,6 +1,6 @@
-/** Chunk was on 11509 **/
+/** Chunk was on 66005 **/
 n.d(t, {
-  J: () => h
+  J: () => _
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -135,7 +135,7 @@ let m = e => {
       })]
     })
   },
-  _ = e => {
+  h = e => {
     let {
       digits: t
     } = e;
@@ -153,23 +153,23 @@ let m = e => {
       })]
     })
   },
-  v = e => {
+  b = e => {
     let {
       countdown: t
     } = e;
     return (0, r.jsxs)("div", {
       className: f.digitsContainer,
-      children: [(0, r.jsx)(_, {
+      children: [(0, r.jsx)(h, {
         digits: t.hours
-      }), (0, r.jsx)(g, {}), (0, r.jsx)(_, {
+      }), (0, r.jsx)(g, {}), (0, r.jsx)(h, {
         digits: t.minutes
-      }), (0, r.jsx)(g, {}), (0, r.jsx)(_, {
+      }), (0, r.jsx)(g, {}), (0, r.jsx)(h, {
         digits: t.seconds
       })]
     })
   };
 
-function h(e) {
+function _(e) {
   let {
     textVariant: t,
     className: n,
@@ -204,7 +204,7 @@ function h(e) {
       })]
     }), (0, r.jsx)("div", {
       className: f.digitsContainer,
-      children: (0, r.jsx)(v, {
+      children: (0, r.jsx)(b, {
         countdown: s
       })
     })]

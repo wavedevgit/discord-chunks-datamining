@@ -21,8 +21,8 @@ let d = i.memo(i.forwardRef((e, t) => {
     onScroll: n,
     onResize: a,
     listPadding: d = [0, 0, 0, 0],
-    renderRow: f,
-    renderSection: _,
+    renderRow: _,
+    renderSection: f,
     renderSectionHeader: p,
     renderSectionFooter: h,
     renderListHeader: m,
@@ -262,7 +262,7 @@ let d = i.memo(i.forwardRef((e, t) => {
             o = s + g + u,
             c = o + i;
           if (c <= e) r = c - (T ? u : 0);
-          else if (c > e && o < t) l.push(f(n, {
+          else if (c > e && o < t) l.push(_(n, {
             sectionIndex: a,
             sectionRowIndex: E
           }));
@@ -271,14 +271,14 @@ let d = i.memo(i.forwardRef((e, t) => {
         }
         let O = s + u + g,
           v = O + d >= e && O <= t;
-        null != h && v && l.push(h(a)), null != _ ? i.push(_(a, l)) : i = [...i, ...l]
+        null != h && v && l.push(h(a)), null != f ? i.push(f(a, l)) : i = [...i, ...l]
       } else break
     }
     return {
       visibleItems: i,
       listOffset: r
     }
-  }, [U, B, G, V, d, f, _, h, p, P, W, T, m, j, D]), Q = i.useMemo(() => {
+  }, [U, B, G, V, d, _, f, h, p, P, W, T, m, j, D]), Q = i.useMemo(() => {
     var e, t, n;
     return {
       top: X,

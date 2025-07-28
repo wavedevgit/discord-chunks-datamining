@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Cl: () => f,
-  GN: () => _,
+  Cl: () => _,
+  GN: () => f,
   L9: () => s,
   UK: () => o,
   av: () => d,
@@ -57,5 +57,5 @@ let l = () => Object.keys(o).filter(e => isNaN(Number(e))).map(e => {
   c = r.Z.getArticleURL(i.BhN.DISABLE_GUILD_COMMUNICATION),
   u = "GuildCommunicationDisabledDismissedGuilds",
   d = "Set Communication Disabled Modal",
-  f = "Clear Communication Disabled Modal",
-  _ = 512
+  _ = "Clear Communication Disabled Modal",
+  f = 512

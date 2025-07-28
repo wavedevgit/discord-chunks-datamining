@@ -13,8 +13,8 @@ var r = n(255367),
   c = n(40851),
   u = n(67844),
   d = n(871499),
-  f = n(981631),
-  _ = n(726465);
+  _ = n(981631),
+  f = n(726465);
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -80,7 +80,7 @@ function y(e) {
       cameraUnavailable: a,
       onChange: o,
       onCameraUnavailable: d,
-      hasPermission: _,
+      hasPermission: f,
       children: p,
       channelLimitReached: h = !1,
       join: m
@@ -93,12 +93,12 @@ function y(e) {
       events: O
     } = (0, s.o)(m || n ? "disable" : "enable");
   i.useEffect(() => () => y(), [n, y]);
-  let v = m ? l.Odl : g === f.IlC.POPOUT ? n ? l.Odl : l.Amn : b;
+  let v = m ? l.Odl : g === _.IlC.POPOUT ? n ? l.Odl : l.Amn : b;
   return (0, r.jsx)(r.Fragment, {
     children: p({
       onClick: E,
       isActive: n,
-      disabled: !n && (!_ || h),
+      disabled: !n && (!f || h),
       iconComponent: v,
       iconColor: "currentColor",
       label: t,
@@ -119,7 +119,7 @@ function O(e) {
     cameraUnavailable: l,
     hasPermission: c,
     className: u,
-    channelLimitReached: f,
+    channelLimitReached: _,
     channelLimit: p,
     centerButton: m = !1,
     onPopoutClick: b
@@ -135,7 +135,7 @@ function O(e) {
     onCameraUnavailable: s,
     cameraUnavailable: l,
     hasPermission: c,
-    channelLimitReached: f,
+    channelLimitReached: _,
     channelLimit: p,
     children: e => {
       var {
@@ -157,7 +157,7 @@ function O(e) {
           null == (t = O.onMouseLeave) || t.call(O, e), null == a || a()
         },
         className: o()(u, {
-          [_.fauxDisabled]: t
+          [f.fauxDisabled]: t
         }),
         onPopoutClick: b,
         isTrayButton: !n

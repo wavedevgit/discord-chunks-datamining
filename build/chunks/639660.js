@@ -17,8 +17,8 @@ var r = n(255367),
   _ = n(385902),
   x = n(234368),
   v = n(981631),
-  b = n(93841),
-  g = n(388032),
+  g = n(93841),
+  b = n(388032),
   j = n(106180);
 
 function E() {
@@ -26,7 +26,7 @@ function E() {
     className: j.staffContainer,
     children: (0, r.jsx)(o.xv, {
       variant: "text-sm/medium",
-      children: g.intl.string(b.default.l9n4QU)
+      children: b.intl.string(g.default.l9n4QU)
     })
   })
 }
@@ -42,7 +42,7 @@ function h(e) {
     notificationConfig: N
   } = (0, _._)(t, "GuildPowerupNotificationContainer"), O = [];
   I && O.push(l.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION);
-  let [P, Z] = (0, s.ZT)(O, t), w = null != P && null != N, S = (0, c.W)(t, "GuildPowerupNotificationContainer"), y = [];
+  let [Z, P] = (0, s.ZT)(O, t), w = null != Z && null != N, S = (0, c.W)(t, "GuildPowerupNotificationContainer"), y = [];
   w || C || (y.push(l.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK), S && y.push(l.z.BOOSTER_ENHANCED_ROLE_COLORS_ADMIN_UPSELL));
   let [T, A] = (0, s.US)(y), R = (e => {
     let n = [];
@@ -52,7 +52,7 @@ function h(e) {
     }, "expiring-powerups")), w && n.push((0, r.jsx)(m.Z, {
       notificationConfig: N,
       markAsDismissed: e => {
-        Z(e)
+        P(e)
       }
     }, "rollback-notification")), null != e && (e === l.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK ? n.push((0, r.jsx)(p.Z, {
       markAsDismissed: A
@@ -67,7 +67,7 @@ function h(e) {
     children: [(0, r.jsx)(o.xv, {
       variant: "eyebrow",
       color: "text-secondary",
-      children: g.intl.string(b.default["3FRira"])
+      children: b.intl.string(g.default["3FRira"])
     }), n && (0, r.jsx)(E, {}), R.map(e => e)]
   }) : null
 }

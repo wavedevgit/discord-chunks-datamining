@@ -29,7 +29,7 @@ function m(t) {
       className: b.warningSectionHeader,
       variant: "text-md/medium",
       color: "text-default",
-      children: [(0, n.jsx)(a.P4T, {
+      children: [(0, n.jsx)(a.Mgn, {
         size: "sm",
         color: "currentColor"
       }), (0, n.jsx)(a.LZC, {

@@ -1,6 +1,6 @@
 /** Chunk was on web.js **/
 "use strict";
-let r, i, a, o, s, l, c, u, d, f, _, p, h, m, g, E, b, y, O, v, I;
+let r, i, a, o, s, l, c, u, d, _, f, p, h, m, g, E, b, y, O, v, I;
 n.d(t, {
   Z: () => ek
 }), n(388685);
@@ -58,7 +58,7 @@ let G = new Map,
   V = 1e3;
 
 function F() {
-  r = !1, i = !1, a = !1, o = new Map, s = new Map, l = new Map, c = 0, u = 0, d = new Set, f = new Set, _ = new Set, p = new Set, G = new Map, m = new Map, g = new Map, E = new Map, b = null, y = new Map, h = new Set, O = new Map, v = new Map, eD(), I = null
+  r = !1, i = !1, a = !1, o = new Map, s = new Map, l = new Map, c = 0, u = 0, d = new Set, _ = new Set, f = new Set, p = new Set, G = new Map, m = new Map, g = new Map, E = new Map, b = null, y = new Map, h = new Set, O = new Map, v = new Map, eD(), I = null
 }
 
 function Z(e, t) {
@@ -229,45 +229,45 @@ function eu(e) {
 function ed(e) {
   let {
     questId: t
-  } = e, n = new Set(_);
-  n.add(t), _ = n
-}
-
-function ef(e) {
-  let {
-    questId: t,
-    rewardCode: n
-  } = e, r = new Set(_);
-  r.delete(t), _ = r, W(t, n)
+  } = e, n = new Set(f);
+  n.add(t), f = n
 }
 
 function e_(e) {
   let {
+    questId: t,
+    rewardCode: n
+  } = e, r = new Set(f);
+  r.delete(t), f = r, W(t, n)
+}
+
+function ef(e) {
+  let {
     questId: t
-  } = e, n = new Set(_);
-  n.delete(t), _ = n
+  } = e, n = new Set(f);
+  n.delete(t), f = n
 }
 
 function ep(e) {
   let {
     questId: t
-  } = e, n = new Set(f);
-  n.add(t), f = n
+  } = e, n = new Set(_);
+  n.add(t), _ = n
 }
 
 function eh(e) {
   let {
     questId: t,
     entitlements: n
-  } = e, r = new Set(f);
-  r.delete(t), f = r, z(t, n)
+  } = e, r = new Set(_);
+  r.delete(t), _ = r, z(t, n)
 }
 
 function em(e) {
   let {
     questId: t
-  } = e, n = new Set(f);
-  n.delete(t), f = n
+  } = e, n = new Set(_);
+  n.delete(t), _ = n
 }
 
 function eg(e) {
@@ -452,10 +452,10 @@ class ex extends(T = C.ZP.Store) {
     return d.has(e)
   }
   isClaimingReward(e) {
-    return f.has(e)
+    return _.has(e)
   }
   isFetchingRewardCode(e) {
-    return _.has(e)
+    return f.has(e)
   }
   isDismissingContent(e) {
     return p.has(e)
@@ -509,8 +509,8 @@ let eM = new ex(R.Z, {
     QUESTS_ENROLL_SUCCESS: ec,
     QUESTS_ENROLL_FAILURE: eu,
     QUESTS_FETCH_REWARD_CODE_BEGIN: ed,
-    QUESTS_FETCH_REWARD_CODE_SUCCESS: ef,
-    QUESTS_FETCH_REWARD_CODE_FAILURE: e_,
+    QUESTS_FETCH_REWARD_CODE_SUCCESS: e_,
+    QUESTS_FETCH_REWARD_CODE_FAILURE: ef,
     QUESTS_CLAIM_REWARD_BEGIN: ep,
     QUESTS_CLAIM_REWARD_SUCCESS: eh,
     QUESTS_CLAIM_REWARD_FAILURE: em,

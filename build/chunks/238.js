@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  N: () => f,
+  N: () => _,
   Z: () => E
 }), n(388685);
 var r, i = n(442837),
@@ -20,10 +20,10 @@ function c(e, t, n) {
 }
 let u = new Map,
   d = new Map;
-var f = function(e) {
+var _ = function(e) {
   return e[e.NONE = 0] = "NONE", e[e.FETCHING = 1] = "FETCHING", e[e.FETCHED = 2] = "FETCHED", e[e.FAILED = 3] = "FAILED", e
 }({});
-let _ = new o.Z({
+let f = new o.Z({
   subscriptions: [],
   otps: []
 });
@@ -58,7 +58,7 @@ class g extends(r = i.ZP.Store) {
   }
   getStoreLayout(e) {
     var t;
-    return null != (t = u.get(e)) ? t : _
+    return null != (t = u.get(e)) ? t : f
   }
   getFetchStatus(e) {
     var t;

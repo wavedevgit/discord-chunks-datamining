@@ -46,8 +46,8 @@ function d(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let f = new Map,
-  _ = new Map;
+let _ = new Map,
+  f = new Map;
 
 function p(e) {
   return [s.BP, e.query, s.t0, e.categoryId, s.KL, e.languageCode].join("-")
@@ -78,20 +78,20 @@ class h {
 function m(e) {
   var t;
   let n = p(e),
-    r = null != (t = f.get(n)) ? t : new h({
+    r = null != (t = _.get(n)) ? t : new h({
       query: e.query
     });
-  return f.set(n, r), r
+  return _.set(n, r), r
 }
 
 function g(e, t) {
   let n = p(e),
-    r = f.get(n);
+    r = _.get(n);
   return null != r ? t(r) : null
 }
 
 function E() {
-  f.clear(), _.clear()
+  _.clear(), f.clear()
 }
 
 function b(e) {
@@ -105,7 +105,7 @@ function b(e) {
     categoryId: n,
     languageCode: r
   });
-  i && f.delete(a), m({
+  i && _.delete(a), m({
     query: t,
     categoryId: n,
     languageCode: r
@@ -128,7 +128,7 @@ function y(e) {
     total: i,
     guilds: a
   }), a.forEach(e => {
-    _.set(e.id, e)
+    f.set(e.id, e)
   })
 }
 
@@ -150,8 +150,8 @@ function v(e) {
   let {
     ignoreQueries: t
   } = e, n = new Set(t);
-  f.forEach((e, t) => {
-    null != e.query && (n.has(e.query) || f.delete(t))
+  _.forEach((e, t) => {
+    null != e.query && (n.has(e.query) || _.delete(t))
   })
 }
 
@@ -160,16 +160,16 @@ function I(e) {
   let {
     guildId: r,
     profile: i
-  } = e, a = _.get(r);
+  } = e, a = f.get(r);
   if (null == a) return !1;
-  _.set(r, d(c({}, a), {
+  f.set(r, d(c({}, a), {
     memberCount: null != (t = i.memberCount) ? t : a.memberCount,
     presenceCount: null != (n = i.onlineCount) ? n : a.presenceCount
   }))
 }
 class T extends(r = i.ZP.Store) {
   getGuild(e) {
-    return _.get(e)
+    return f.get(e)
   }
   getGuildIds(e) {
     return g(e, e => e.guildIds)

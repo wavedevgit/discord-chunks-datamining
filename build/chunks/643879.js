@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   SD: () => g,
-  Z1: () => _,
+  Z1: () => f,
   cN: () => m,
   fD: () => d,
   mh: () => h
@@ -38,21 +38,21 @@ function d(e) {
     size: c
   } = e, {
     CDN_HOST: d
-  } = window.GLOBAL_ENV, f = null != d ? "https://".concat(d) : location.protocol + window.GLOBAL_ENV.API_ENDPOINT, _ = u({
+  } = window.GLOBAL_ENV, _ = null != d ? "https://".concat(d) : location.protocol + window.GLOBAL_ENV.API_ENDPOINT, f = u({
     storageHash: a,
     canAnimate: o,
     allowWebp: s
   }), p = "?".concat(r.stringify({
     size: (0, i.oO)(c * (0, i.x_)())
   }));
-  return "".concat(f).concat(l.ANM.ARCHIVED_AVATAR(t, n, a, _)).concat(p)
-}
-
-function f(e) {
-  return null == e ? c.intl.string(c.t.lqaIxM) : e.split(",")[0]
+  return "".concat(_).concat(l.ANM.ARCHIVED_AVATAR(t, n, a, f)).concat(p)
 }
 
 function _(e) {
+  return null == e ? c.intl.string(c.t.lqaIxM) : e.split(",")[0]
+}
+
+function f(e) {
   let {
     filename: t,
     assetOrigin: n = s.q.NEW_ASSET
@@ -91,7 +91,7 @@ function h(e, t) {
       canAnimate: !0,
       allowWebp: !1
     }),
-    r = f(t);
+    r = _(t);
   return {
     filename: "".concat(r, ".").concat(n),
     type: p(n)

@@ -37,17 +37,17 @@ function d(e) {
       onChooseType: n,
       onStripePaymentMethodReceived: c,
       onPaymentRequestFailure: d,
-      onValidPaymentRequest: f,
-      paymentRequestRef: _,
+      onValidPaymentRequest: _,
+      paymentRequestRef: f,
       paymentRequestWallet: p
     } = e,
     h = {
       paymentLabel: s.intl.string(s.t.ZURqX1),
-      paymentRequestRef: _,
+      paymentRequestRef: f,
       renderConnectorView: !0,
       onStripePaymentMethodReceived: c,
       onPaymentRequestFailure: d,
-      onValidPaymentRequest: f,
+      onValidPaymentRequest: _,
       onChooseType: n,
       loadingComponent: (0, r.jsx)(i.zx, {
         color: i.zx.Colors.TRANSPARENT,

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 });
 var r = n(255367);
 n(73800);
@@ -13,13 +13,13 @@ var i = n(481060),
   c = n(486324),
   u = n(228168),
   d = n(388032),
-  f = n(83561);
+  _ = n(83561);
 
-function _(e) {
+function f(e) {
   let {
     user: t,
     displayProfile: n,
-    guildId: _,
+    guildId: f,
     canUsePremiumCustomization: p,
     pendingBanner: h,
     pendingAccentColor: m,
@@ -35,21 +35,21 @@ function _(e) {
     }(0, l.$r)({
       uploadType: c.pC.BANNER,
       analyticsSource: y,
-      guildId: _,
+      guildId: f,
       isTryItOutFlow: g
     })
   };
   return (0, r.jsx)(s.Z, {
     user: t,
     displayProfile: n,
-    guildId: _,
+    guildId: f,
     themeType: u.lY.POPOUT,
     pendingBanner: h,
     pendingAccentColor: m,
     canUsePremiumProfileCustomization: p,
     children: !E && (0, r.jsxs)(i.P3F, {
       onClick: T,
-      className: f.clickable,
+      className: _.clickable,
       children: [(0, r.jsx)(v, {
         size: "xs",
         color: "white"

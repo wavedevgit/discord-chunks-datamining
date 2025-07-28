@@ -24,7 +24,7 @@ function m() {
     className: u.container,
     children: [n, n.length > 0 && p && m && (0, i.jsx)(s.ua7, {
       text: d.intl.string(d.t.L99HQk),
-      children: e => (0, i.jsx)(s.P4T, function(e) {
+      children: e => (0, i.jsx)(s.Mgn, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             i = Object.keys(n);

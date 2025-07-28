@@ -73,7 +73,8 @@ function p(e) {
       })
     },
     size: "md",
-    text: c.intl.string(c.t.NL5ZNT)
+    text: c.intl.string(c.t.NL5ZNT),
+    icon: l.Mgn
   })
 }
 

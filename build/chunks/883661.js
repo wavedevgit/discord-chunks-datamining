@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => _
 });
 var r = n(255367),
   i = n(73800),
@@ -79,7 +79,7 @@ let d = e => {
         return
     }
   },
-  f = i.memo(function(e) {
+  _ = i.memo(function(e) {
     var {
       categoryId: t
     } = e, n = c(e, ["categoryId"]);

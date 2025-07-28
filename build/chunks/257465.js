@@ -13,8 +13,8 @@ var r = n(255367),
   c = n(793030),
   u = n(143450),
   d = n(186325),
-  f = n(507274),
-  _ = n(667137),
+  _ = n(507274),
+  f = n(667137),
   p = n(985316),
   h = n(946598);
 
@@ -87,9 +87,9 @@ function O(e) {
     config: P ? p.jF : p.W$,
     delay: 64 * !!P
   }, "animate-always");
-  return (0, r.jsx)(_.t.Provider, {
+  return (0, r.jsx)(f.t.Provider, {
     value: R,
-    children: (0, r.jsx)(f.V, b(g({
+    children: (0, r.jsx)(_.V, b(g({
       id: C,
       role: v,
       "aria-label": I,

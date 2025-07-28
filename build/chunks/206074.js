@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _,
-  q: () => f
+  Z: () => f,
+  q: () => _
 }), n(997841);
 var r = n(73800),
   i = n(915346),
@@ -17,7 +17,7 @@ function d(e) {
   return (0, s.yE)(e.flags, u.udG.CLOUD_GAMING_DEMO) && (0, s.yE)(e.flags, u.udG.EMBEDDED)
 }
 
-function f(e, t) {
+function _(e, t) {
   let {
     enabled: n
   } = l.t.useExperiment({
@@ -34,18 +34,18 @@ function f(e, t) {
   return !!n && null != e && (!!d(e) || null != i && null != u && null != s && !!(0, a.ye)(s))
 }
 
-function _(e) {
+function f(e) {
   let {
     application: t,
     location: n,
     analyticsLocations: a
-  } = e, s = f(t, n), {
+  } = e, s = _(t, n), {
     bot: l
   } = null != t ? t : {
     bot: null
-  }, u = (0, c.Z)(t), _ = null == u ? void 0 : u.id, {
+  }, u = (0, c.Z)(t), f = null == u ? void 0 : u.id, {
     data: p
-  } = (0, o.IX)(_), {
+  } = (0, o.IX)(f), {
     bot: h
   } = null != p ? p : {
     bot: null
@@ -56,11 +56,11 @@ function _(e) {
       botId: l.id,
       analyticsLocations: null != a ? a : []
     })
-  } : null != _ && null != h ? () => {
+  } : null != f && null != h ? () => {
     (0, i.W)({
-      appId: _,
+      appId: f,
       botId: h.id,
       analyticsLocations: null != a ? a : []
     })
-  } : void 0 : null, [a, l, s, t, h, _])
+  } : void 0 : null, [a, l, s, t, h, f])
 }

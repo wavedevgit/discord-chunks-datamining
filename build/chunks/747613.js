@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(652141),
   u = n(91192),
   d = n(336317),
-  f = n(477690),
-  _ = n(481060),
+  _ = n(477690),
+  f = n(481060),
   p = n(80932),
   h = n(351773),
   m = n(209613),
@@ -85,8 +85,8 @@ let P = 20,
   w = 125,
   D = (0, g.hQ)(),
   L = d.Z.convert.fromCodePoint("1f44f"),
-  x = (0, y.Mg)(f.Z.EMOJI_PICKER_CONSTANTS_EMOJI_CONTAINER_PADDING_VERTICAL),
-  M = (0, y.Mg)(f.Z.EMOJI_PICKER_CONSTANTS_DIVERSITY_EMOJI_SIZE);
+  x = (0, y.Mg)(_.Z.EMOJI_PICKER_CONSTANTS_EMOJI_CONTAINER_PADDING_VERTICAL),
+  M = (0, y.Mg)(_.Z.EMOJI_PICKER_CONSTANTS_DIVERSITY_EMOJI_SIZE);
 
 function k(e) {
   switch (d.Z.convert.toCodePoint(e)) {
@@ -111,14 +111,14 @@ let j = e => {
       onClick: i,
       delay: a,
       index: o
-    } = e, s = (0, u.JA)("item-".concat(o)), l = b.ZP.getURL(L + n), d = (0, _.q_F)({
+    } = e, s = (0, u.JA)("item-".concat(o)), l = b.ZP.getURL(L + n), d = (0, f.q_F)({
       opacity: 1,
       from: {
         opacity: +!t
       },
       delay: a
     }, "animate-always");
-    return (0, r.jsx)(_.P3F, N(S({}, s), {
+    return (0, r.jsx)(f.P3F, N(S({}, s), {
       role: "option",
       "aria-selected": 0 === o,
       onClick: () => i(n),
@@ -137,7 +137,7 @@ let j = e => {
       id: t,
       selectedSurrogate: n,
       onClick: a
-    } = e, o = (0, m.Z)("diversity"), s = (0, _.q_F)({
+    } = e, o = (0, m.Z)("diversity"), s = (0, f.q_F)({
       height: (M + 2 * x) * (E.gw.length + 1),
       from: {
         height: M
@@ -180,7 +180,7 @@ let j = e => {
       searchBarRef: t,
       selectedSurrogate: n,
       className: a
-    } = e, s = b.ZP.getURL(L + n), [l, c] = i.useState(!1), u = (0, h.Z)(null, () => c(!1)), d = i.useRef(null), f = () => {
+    } = e, s = b.ZP.getURL(L + n), [l, c] = i.useState(!1), u = (0, h.Z)(null, () => c(!1)), d = i.useRef(null), _ = () => {
       c(!0)
     }, m = e => {
       e.keyCode === O.yXg.ESCAPE && (e.stopPropagation(), c(!1), null != d.current && d.current.focus())
@@ -191,10 +191,10 @@ let j = e => {
     return (0, r.jsxs)("div", {
       ref: u,
       className: o()(I.diversitySelector, a),
-      children: [(0, r.jsx)(_.P3F, {
+      children: [(0, r.jsx)(f.P3F, {
         innerRef: d,
         className: I.diversitySelectorButton,
-        onClick: f,
+        onClick: _,
         "aria-label": v.intl.string(v.t.pAVHxc),
         "aria-haspopup": !0,
         "aria-expanded": l,

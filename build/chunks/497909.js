@@ -27,7 +27,7 @@ function d() {
   null != u && (0, i.Z)(u, e) || ((0, r.Md)().flushToCache(JSON.stringify(e)), u = e)
 }
 
-function f() {
+function _() {
   l.Re.forEach(e => e.setExperiment((0, o.B)({
     kind: "user",
     id: e.id,
@@ -50,13 +50,13 @@ function f() {
     })
   })))
 }
-class _ extends a.Z {
+class f extends a.Z {
   _initialize() {
-    f()
+    _()
   }
   _terminate() {}
   constructor(...e) {
     super(...e), c(this, "actions", {}), c(this, "stores", new Map().set(s.Z, d))
   }
 }
-let p = new _
+let p = new f

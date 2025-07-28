@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 });
 var r = n(570140),
   i = n(232567),
@@ -12,10 +12,10 @@ var r = n(570140),
   c = n(271383),
   u = n(621853),
   d = n(120569);
-let f = 6e4;
+let _ = 6e4;
 
-function _(e, t) {
-  var n, _, p, h;
+function f(e, t) {
+  var n, f, p, h;
   let {
     type: m,
     withMutualGuilds: g = !1,
@@ -30,8 +30,8 @@ function _(e, t) {
   } = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
   if ("" === e || u.Z.isFetchingProfile(e, v)) return Promise.resolve();
   let A = u.Z.getUserProfile(e),
-    N = Date.now() - (null != (h = null == A ? void 0 : A.fetchEndedAt) ? h : 0) >= f;
-  if (((null == A || null == (n = A.fetchError) ? void 0 : n.status) === 404 || (null == A || null == (_ = A.fetchError) ? void 0 : _.status) === 429) && !N) return Promise.resolve();
+    N = Date.now() - (null != (h = null == A ? void 0 : A.fetchEndedAt) ? h : 0) >= _;
+  if (((null == A || null == (n = A.fetchError) ? void 0 : n.status) === 404 || (null == A || null == (f = A.fetchError) ? void 0 : f.status) === 429) && !N) return Promise.resolve();
   let C = u.Z.getGuildMemberProfile(e, v),
     R = u.Z.getMutualGuilds(e),
     P = u.Z.getMutualFriends(e),

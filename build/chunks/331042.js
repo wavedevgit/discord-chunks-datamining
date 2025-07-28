@@ -13,8 +13,8 @@ var r = n(255367),
   c = n(979554),
   u = n(314794),
   d = n(399606),
-  f = n(481060),
-  _ = n(37234),
+  _ = n(481060),
+  f = n(37234),
   p = n(607070),
   h = n(100527),
   m = n(906732),
@@ -68,7 +68,7 @@ let et = 880,
       confettiCanvas: o,
       hideConfetti: s = !1,
       analyticsLocations: l,
-      overrideTitle: _,
+      overrideTitle: f,
       overrideDescription: g,
       selectedVariantIndex: E,
       shouldShowPromotionalExperience: O,
@@ -125,12 +125,12 @@ let et = 880,
           pairedProduct: R,
           onClose: n,
           analyticsLocations: M,
-          overrideTitle: _,
+          overrideTitle: f,
           overrideDescription: g,
           selectedVariantIndex: E,
           shouldShowPromotionalExperience: O,
           purchaseType: I
-        }), (0, r.jsx)(f.olH, {
+        }), (0, r.jsx)(_.olH, {
           onClick: n,
           className: ee.modalCloseButton,
           withCircleBackground: !0
@@ -161,7 +161,7 @@ let et = 880,
       analyticsLocations: s,
       overrideTitle: u,
       overrideDescription: d,
-      shouldShowPromotionalExperience: _
+      shouldShowPromotionalExperience: f
     } = e, p = (0, M.ed)("CollectiblesCollectedModal"), h = (0, j.k)(n), m = (0, j.k)(a), g = null != a, E = (0, y.Z)(), b = null == E || null == (t = E.giftPurchaseConfirmation) ? void 0 : t.rewardCollectedText(), {
       handleUseNow: O,
       isApplying: v
@@ -179,9 +179,9 @@ let et = 880,
     let P = i.useMemo(() => null != u ? u : q.Vt.ORB_PROFILE_BADGE === n.skuId ? $.intl.string(J.default.nvaTQk) : g ? $.intl.format(new Date < q.a$ ? $.t.BhGU09 : $.t.Jfv5Qk, {
         purchased_item: h,
         suggested_item: m
-      }) : p && !_ ? $.intl.string($.t.IMffmp) : $.intl.format($.t.YNaxMj, {
+      }) : p && !f ? $.intl.string($.t.IMffmp) : $.intl.format($.t.YNaxMj, {
         itemName: h
-      }), [u, n.skuId, g, p, _, h, m]),
+      }), [u, n.skuId, g, p, f, h, m]),
       w = i.useMemo(() => null != d ? d : q.Vt.ORB_PROFILE_BADGE === n.skuId ? $.intl.string(J.default.UnPGio) : g ? $.intl.format(new Date < q.a$ ? $.t["1jBC0t"] : $.t.qSrp39, {
         purchased_item: h,
         suggested_item: m
@@ -194,16 +194,16 @@ let et = 880,
           itemOneName: e,
           itemTwoName: t
         })
-      }).with(c.Z.AVATAR_DECORATION, () => _ && null != b ? b : en(h)).otherwise(() => en(h)), [d, n, g, h, m, _, b]),
-      D = i.useMemo(() => q.Vt.ORB_PROFILE_BADGE === n.skuId ? (0, r.jsxs)(f.hE2, {
+      }).with(c.Z.AVATAR_DECORATION, () => f && null != b ? b : en(h)).otherwise(() => en(h)), [d, n, g, h, m, f, b]),
+      D = i.useMemo(() => q.Vt.ORB_PROFILE_BADGE === n.skuId ? (0, r.jsxs)(_.hE2, {
         fullWidth: !0,
-        children: [(0, r.jsx)(f.zxk, {
+        children: [(0, r.jsx)(_.zxk, {
           variant: "primary",
           text: $.intl.string(J.default.yfwZu7),
           onClick: () => {
             o(), R.S.dispatch(X.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, {})
           }
-        }), (0, r.jsx)(f.zxk, {
+        }), (0, r.jsx)(_.zxk, {
           variant: "secondary",
           text: $.intl.string($.t["H57f4+"]),
           onClick: () => {
@@ -219,10 +219,10 @@ let et = 880,
       className: ee.collectedInfoContainer,
       children: [(0, r.jsxs)("div", {
         className: ee.collectedTextContainer,
-        children: [(0, r.jsx)(f.X6q, {
+        children: [(0, r.jsx)(_.X6q, {
           variant: "heading-lg/bold",
           children: P
-        }), (0, r.jsx)(f.Text, {
+        }), (0, r.jsx)(_.Text, {
           variant: "text-sm/normal",
           children: w
         })]
@@ -237,7 +237,7 @@ let et = 880,
           onClose: o,
           isPrimary: C,
           analyticsLocations: s
-        }), C ? (0, r.jsx)(f.zxk, {
+        }), C ? (0, r.jsx)(_.zxk, {
           variant: "primary",
           text: $.intl.string($.t.MAS7uL),
           onClick: O,
@@ -263,11 +263,11 @@ let et = 880,
         }
       })
     }, [n.skuId, a, o, t]);
-    return (0, r.jsx)(f.zxk, {
+    return (0, r.jsx)(_.zxk, {
       variant: "secondary",
       onClick: s,
       text: $.intl.string($.t.ouo4FB),
-      icon: f.OgN
+      icon: _.OgN
     })
   },
   es = e => {
@@ -280,7 +280,7 @@ let et = 880,
     } = e, u = (0, O.Z)({
       analyticsLocations: o
     }), [d] = t.items, p = i.useCallback(() => {
-      if (n(), (0, _.xf)(), u(), t.type === c.Z.AVATAR_DECORATION) {
+      if (n(), (0, f.xf)(), u(), t.type === c.Z.AVATAR_DECORATION) {
         s()(d.type === c.Z.AVATAR_DECORATION, "product type and item type are the same"), (0, g.ps)({
           initialSelectedDecoration: d,
           analyticsLocations: o
@@ -292,7 +292,7 @@ let et = 880,
         analyticsLocations: o
       })
     }, [n, u, t.type, d, o]);
-    return (0, r.jsx)(f.zxk, {
+    return (0, r.jsx)(_.zxk, {
       variant: a ? "secondary" : "primary",
       fullWidth: !0,
       text: null != l ? l : $.intl.string($.t["2p2aY2"]),
@@ -308,7 +308,7 @@ let et = 880,
       overrideTitle: l,
       overrideDescription: c,
       shouldShowPromotionalExperience: u,
-      itemConsumed: _,
+      itemConsumed: f,
       purchaseType: p = q.o8.FIAT
     } = e, g = (0, d.e7)([w.Z], () => w.Z.purchases), E = (0, D.o)(n, g), b = (0, W.W)(n, E), y = i.useRef(new a.qA), [O, v] = i.useState(null), I = (0, z.UY)({
       purchaseType: p,
@@ -330,13 +330,13 @@ let et = 880,
         environment: y.current
       }), (0, r.jsx)(H.i, {
         options: I
-      }), (0, r.jsx)(f.Y0X, {
+      }), (0, r.jsx)(_.Y0X, {
         hideShadow: !0,
         transitionState: t,
-        size: f.CgR.DYNAMIC,
+        size: _.CgR.DYNAMIC,
         className: ee.modalRoot,
         parentComponent: "CollectiblesCollectedModal",
-        children: (0, r.jsx)(f.hzk, {
+        children: (0, r.jsx)(_.hzk, {
           className: ee.modalContent,
           scrollbarType: "none",
           children: (0, r.jsx)(er, {
@@ -349,7 +349,7 @@ let et = 880,
             overrideDescription: c,
             selectedVariantIndex: E,
             shouldShowPromotionalExperience: u,
-            itemConsumed: _,
+            itemConsumed: f,
             purchaseType: p
           })
         })

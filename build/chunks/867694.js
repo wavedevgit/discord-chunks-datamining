@@ -4,7 +4,7 @@ n.d(t, {
 });
 var a = n(255367),
   i = n(471141),
-  r = n(851005);
+  o = n(851005);
 
 function s(e) {
   let {
@@ -12,13 +12,13 @@ function s(e) {
   } = e, {
     useValue: n,
     setValue: s,
-    useTitle: o,
+    useTitle: r,
     useSubtitle: l
-  } = t.data, c = o(), d = null == l ? void 0 : l(), u = n();
+  } = t.data, c = r(), d = null == l ? void 0 : l(), u = n();
   return (0, a.jsx)(i.j, {
     value: u,
     onChange: e => s(e),
-    className: r.toggle,
+    className: o.toggle,
     note: d,
     hideBorder: !0,
     children: c

@@ -49,9 +49,9 @@ function d(e, t) {
   }), e
 }
 
-function f(e, t) {
+function _(e, t) {
   if (null == e) return {};
-  var n, r, i = _(e, t);
+  var n, r, i = f(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -59,7 +59,7 @@ function f(e, t) {
   return i
 }
 
-function _(e, t) {
+function f(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -99,18 +99,18 @@ function p(e) {
       let {
         key: u
       } = o, {
-        transform: _
-      } = e, p = f(e, ["transform"]);
+        transform: f
+      } = e, p = _(e, ["transform"]);
       return null != n && "" !== n ? (0, r.jsx)(i.animated.div, {
         style: d(c({}, p), {
           overflow: "hidden"
         }),
         children: (0, r.jsxs)(i.animated.div, {
           style: {
-            transform: _
+            transform: f
           },
           className: s.inputError,
-          children: [(0, r.jsx)(a.P4T, {
+          children: [(0, r.jsx)(a.Mgn, {
             size: "xs",
             color: a.TVs.colors.TEXT_DANGER.css
           }), (0, r.jsx)(a.Text, {

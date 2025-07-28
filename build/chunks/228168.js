@@ -2,12 +2,12 @@
 "use strict";
 n.d(t, {
   Ej: () => d,
-  P: () => _,
+  P: () => f,
   Tb: () => s,
   Tg: () => a,
   cm: () => c,
   lY: () => l,
-  n_: () => f,
+  n_: () => _,
   oh: () => o,
   vB: () => i,
   yM: () => u
@@ -38,9 +38,9 @@ function d(e) {
   } = window.GLOBAL_ENV;
   return null != n ? "https://".concat(n, "/badge-icons/").concat(e, ".png") : "".concat(location.protocol).concat(t).concat(r.ANM.BADGE_ICON(e))
 }
-var f = function(e) {
+var _ = function(e) {
     return e.ACTIVITY = "ACTIVITY", e.AVATAR = "AVATAR", e.STATUS = "STATUS", e
   }({}),
-  _ = function(e) {
+  f = function(e) {
     return e.REPLY = "REPLY", e.REACT = "REACT", e
   }({})

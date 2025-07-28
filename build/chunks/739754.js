@@ -33,7 +33,7 @@ function I(e) {
   return {
     text: null != e ? e : f.intl.string(f.t.VCsUJi),
     color: "text-danger",
-    icon: (0, o.jsx)(_.P4T, {
+    icon: (0, o.jsx)(_.Mgn, {
       size: "xs",
       color: "currentColor",
       className: a()(p.icon, p.errorIcon)

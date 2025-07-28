@@ -43,13 +43,13 @@ function d(e, t) {
   return n
 }
 
-function f(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function _(e, t) {
+function f(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -74,8 +74,8 @@ function m(e) {
     "aria-label": n,
     className: a,
     position: c
-  } = e, d = _(e, ["children", "aria-label", "className", "position"]), p = i.useRef(null), m = null != n ? n : "string" == typeof t && t;
-  return (0, r.jsx)(s.ua7, f(u({}, d), {
+  } = e, d = f(e, ["children", "aria-label", "className", "position"]), p = i.useRef(null), m = null != n ? n : "string" == typeof t && t;
+  return (0, r.jsx)(s.ua7, _(u({}, d), {
     position: null != c ? c : "top",
     delay: h,
     text: t,

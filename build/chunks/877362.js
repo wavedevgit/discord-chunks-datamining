@@ -17,8 +17,8 @@ var r = n(255367),
   _ = n(343649),
   x = n(742409),
   v = n(518950),
-  b = n(271383),
-  g = n(485386),
+  g = n(271383),
+  b = n(485386),
   j = n(430824),
   E = n(594174),
   h = n(5192),
@@ -26,18 +26,18 @@ var r = n(255367),
   I = n(981631),
   N = n(93841),
   O = n(388032),
-  P = n(302794),
-  Z = n(350618);
+  Z = n(302794),
+  P = n(350618);
 let w = C.ZP.getEnableHardwareAcceleration() ? u.Xo$ : d.Z;
 
 function S(e) {
   var t, n, o;
   let {
     guildId: d
-  } = e, C = (0, s.e7)([j.Z], () => j.Z.getGuild(d)), S = (0, s.e7)([g.Z], () => Object.values(g.Z.getRoles(d)).find(e => {
+  } = e, C = (0, s.e7)([j.Z], () => j.Z.getGuild(d)), S = (0, s.e7)([b.Z], () => Object.values(b.Z.getRoles(d)).find(e => {
     var t;
     return (null == e || null == (t = e.tags) ? void 0 : t.premium_subscriber) !== void 0
-  })), y = (0, s.e7)([E.default], () => E.default.getCurrentUser()), T = null == y ? void 0 : y.id, A = (0, s.e7)([b.ZP], () => null != T ? b.ZP.getMember(d, T) : void 0, [T, d]), R = (null == A ? void 0 : A.premiumSince) != null, L = (0, s.e7)([p.Z], () => p.Z.useReducedMotion), {
+  })), y = (0, s.e7)([E.default], () => E.default.getCurrentUser()), T = null == y ? void 0 : y.id, A = (0, s.e7)([g.ZP], () => null != T ? g.ZP.getMember(d, T) : void 0, [T, d]), R = (null == A ? void 0 : A.premiumSince) != null, L = (0, s.e7)([p.Z], () => p.Z.useReducedMotion), {
     avatarDecorationSrc: k,
     avatarSrc: D,
     eventHandlers: U
@@ -48,13 +48,13 @@ function S(e) {
     animateOnHover: !L
   });
   return null == C || null == A || null == y ? null : (0, r.jsxs)(a.$, {
-    className: P.container,
+    className: Z.container,
     children: [(0, r.jsx)("img", {
       alt: "",
-      className: P.image,
-      src: Z
+      className: Z.image,
+      src: P
     }), (0, r.jsxs)("div", {
-      className: P.textContainer,
+      className: Z.textContainer,
       children: [(0, r.jsx)(l.xv, {
         variant: "text-md/semibold",
         children: O.intl.string(R ? N.default.KSWK1d : N.default.XXXX5u)
@@ -113,15 +113,15 @@ function S(e) {
         roleColors: null == S ? void 0 : S.colorStrings,
         color: null != (t = null == S ? void 0 : S.colorString) ? t : void 0
       }),
-      className: i()(P.content, P.exampleMessage),
+      className: i()(Z.content, Z.exampleMessage),
       message: O.intl.string(O.t["6OSasb"]),
       decorations: (0, r.jsx)(u.$Eu, {
         color: u.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
-        className: P.boostIcon
+        className: Z.boostIcon
       })
     }), (0, r.jsx)(f.Z, {
       guild: C,
-      className: P.content,
+      className: Z.content,
       analyticsLocation: {
         page: I.ZY5.GUILD_POWERUPS_OVERVIEW,
         section: I.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR

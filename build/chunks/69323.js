@@ -24,16 +24,16 @@ function _(e) {
     title: f.intl.string(m.default.YWo6VF),
     body: f.intl.string(m.default.gXVvKS),
     dismissibleContentType: s.z.VANITY_URL_POWERUP_EDUCATIONAL_POPOVER
-  } : null, b = [];
-  null != v && !x && _ && b.push(v.dismissibleContentType);
-  let [g, j] = (0, c.US)(b), E = o.useCallback(() => {
+  } : null, g = [];
+  null != v && !x && _ && g.push(v.dismissibleContentType);
+  let [b, j] = (0, c.US)(g), E = o.useCallback(() => {
     j(p.L.INDIRECT_ACTION)
   }, [j]);
   return ((0, d.Z)({
     targetRef: n,
     onShouldClose: E,
-    enabled: null != g
-  }), null == v || null == g) ? null : (0, r.jsx)(a.J2, {
+    enabled: null != b
+  }), null == v || null == b) ? null : (0, r.jsx)(a.J2, {
     targetElementRef: n,
     shouldShow: !0,
     position: "right",

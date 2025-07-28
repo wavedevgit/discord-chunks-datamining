@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  J: () => e_,
+  J: () => ef,
   Z: () => ep
 }), n(997841), n(388685), n(539854), n(953529), n(781311), n(642613);
 var r = n(255367),
@@ -13,8 +13,8 @@ var r = n(255367),
   c = n(512722),
   u = n.n(c),
   d = n(97519),
-  f = n(243814),
-  _ = n(442837),
+  _ = n(243814),
+  f = n(442837),
   p = n(921072),
   h = n(524437),
   m = n(1561),
@@ -82,7 +82,7 @@ function eo(e) {
   }
   return e
 }
-let es = _.ZP.connectStores([K.Z], () => ({
+let es = f.ZP.connectStores([K.Z], () => ({
   theme: K.Z.theme
 }))(E.ubH);
 
@@ -207,7 +207,7 @@ let ec = e => {
       }) : null]
     }) : null
   },
-  ef = e => {
+  e_ = e => {
     let {
       scopes: t,
       application: a,
@@ -217,15 +217,15 @@ let ec = e => {
       disclosures: d,
       locale: p,
       id: g
-    } = e, b = a.id, I = i.useMemo(() => M.ZP.createFromServer(a), [a]), T = (0, F.yE)(I.flags, $.udG.EMBEDDED), S = (0, _.e7)([q.Z], () => {
+    } = e, b = a.id, I = i.useMemo(() => M.ZP.createFromServer(a), [a]), T = (0, F.yE)(I.flags, $.udG.EMBEDDED), S = (0, f.e7)([q.Z], () => {
       var e, t, n, r;
       return null == (r = q.Z.settings.applications) || null == (n = r.appSettings) || null == (t = n[b]) || null == (e = t.appDmSettings) ? void 0 : e.allowMobilePush
     }, [b]), A = C.w.useExperiment({
       location: "oauth2_authorize"
-    }), P = a.bot, k = (0, _.e7)([j.Z], () => j.Z.getDMFromUserId(null == P ? void 0 : P.id)), {
+    }), P = a.bot, k = (0, f.e7)([j.Z], () => j.Z.getDMFromUserId(null == P ? void 0 : P.id)), {
       appDMChannelMuteConfig: U,
       dmChannelMuted: G
-    } = (0, _.cj)([B.ZP], () => null == k ? {
+    } = (0, f.cj)([B.ZP], () => null == k ? {
       appDMChannelMuteConfig: null,
       dmChannelMuted: !1
     } : {
@@ -233,7 +233,7 @@ let ec = e => {
       dmChannelMuted: B.ZP.isChannelMuted(null, k)
     }), [Z, W] = i.useState(!1), [K, Q] = i.useState(!1), ea = () => {
       let e = [];
-      for (let n of t) e.push(...(0, x.CI)(n, t)), n === f.x.APPLICATIONS_COMMANDS && e.push(et.intl.string(et.t.Ls2XRk));
+      for (let n of t) e.push(...(0, x.CI)(n, t)), n === _.x.APPLICATIONS_COMMANDS && e.push(et.intl.string(et.t.Ls2XRk));
       if (e.length > 0 || null != d && d.length > 0) return (0, r.jsx)(E.zF9, {
         className: en.appDetailsSection,
         isExpanded: K,
@@ -297,7 +297,7 @@ let ec = e => {
         color: "text-default",
         children: (0, L.parseBioReact)(a.description)
       })
-    }, [a.description]), ef = () => {
+    }, [a.description]), e_ = () => {
       let e = null != a.description && "" !== a.description,
         t = null != a.terms_of_service_url || null != a.privacy_policy_url;
       return e || t ? (0, r.jsx)(E.zF9, {
@@ -333,7 +333,7 @@ let ec = e => {
           })
         }
       }) : null
-    }, e_ = () => {
+    }, ef = () => {
       let e = V.ZP.getApplicationIconURL({
           id: a.id,
           icon: a.icon
@@ -458,34 +458,34 @@ let ec = e => {
     return (0, r.jsx)("div", {
       className: en.authedAppV2,
       children: (0, r.jsx)(E.y5t, {
-        component: e_(),
+        component: ef(),
         children: (0, r.jsxs)("div", {
           className: en.appDetailsContainer,
-          children: [ef(), ea(), em(), eb()]
+          children: [e_(), ea(), em(), eb()]
         })
       })
     })
   },
-  e_ = (0, d.U)(() => ({
+  ef = (0, d.U)(() => ({
     searchQuery: ""
   })),
   ep = () => {
-    let e = (0, _.e7)([G.Z], () => G.Z.hidePersonalInformation),
+    let e = (0, f.e7)([G.Z], () => G.Z.hidePersonalInformation),
       {
         fetchState: t,
         appAuthTokens: n
-      } = (0, _.cj)([k.Z], () => ({
+      } = (0, f.cj)([k.Z], () => ({
         fetchState: k.Z.getFetchState(),
         appAuthTokens: k.Z.getNewestTokensForNonChildrenApplications()
       })),
-      a = (0, _.e7)([W.default], () => W.default.locale),
-      o = (0, _.e7)([S.ZP], () => S.ZP.getSelfEmbeddedActivities()),
-      s = (0, _.e7)([j.Z, U.Z], () => j.Z.getChannel(U.Z.getChannelId())),
+      a = (0, f.e7)([W.default], () => W.default.locale),
+      o = (0, f.e7)([S.ZP], () => S.ZP.getSelfEmbeddedActivities()),
+      s = (0, f.e7)([j.Z, U.Z], () => j.Z.getChannel(U.Z.getChannelId())),
       c = null == s ? void 0 : s.getGuildId();
     i.useEffect(() => {
       b.Z.fetch()
     }, []), i.useEffect(() => () => {
-      e_.setState({
+      ef.setState({
         searchQuery: ""
       })
     }, []);
@@ -502,15 +502,15 @@ let ec = e => {
           showFeedback: !1
         })
       },
-      d = e_(e => e.searchQuery),
-      f = e => e_.setState({
+      d = ef(e => e.searchQuery),
+      _ = e => ef.setState({
         searchQuery: e
       }),
       p = e => {
-        f(e)
+        _(e)
       },
       h = () => {
-        f("")
+        _("")
       },
       m = () => (0, r.jsx)("div", {
         className: en.searchContainer,
@@ -540,7 +540,7 @@ let ec = e => {
       }) : 0 === n.length ? g(et.intl.string(et.t.CpPv5u), et.intl.string(et.t["E+SM6e"])) : 0 === y.length ? (0, r.jsxs)(r.Fragment, {
         children: [m(), g(null, et.intl.string(et.t.EVWFNj))]
       }) : (0, r.jsxs)(r.Fragment, {
-        children: [m(), y.sort((e, t) => Number(t.id) - Number(e.id)).map(e => (0, r.jsx)(ef, eo({
+        children: [m(), y.sort((e, t) => Number(t.id) - Number(e.id)).map(e => (0, r.jsx)(e_, eo({
           locale: a,
           onDelete: () => u(e),
           selectedChannelId: null == s ? void 0 : s.id,

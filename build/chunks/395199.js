@@ -70,7 +70,7 @@ let v = e => {
   } = e, n = (0, o.e7)([x.Z], () => x.Z.getPremiumTypeSubscription());
   return null == n ? null : (0, r.jsxs)("div", {
     className: g.pendingCancellation,
-    children: [(0, r.jsx)(d.P4T, {
+    children: [(0, r.jsx)(d.Mgn, {
       size: "custom",
       width: 20,
       height: 20,

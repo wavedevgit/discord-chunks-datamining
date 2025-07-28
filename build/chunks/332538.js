@@ -52,7 +52,7 @@ function I(e) {
           unlockedPowerups: c
         } = t, u = (0, v.h)(c), d = null != (i = null == n ? void 0 : n.lastSeenWarningNotification) ? i : Date.now(), p = new Date(null == (e = u[u.length - 1]) ? void 0 : e.ends_at).getTime(), f = null != (o = null == n ? void 0 : n.lastBoostCount) ? o : 0;
         return u.length > 0 && d < p || null != h ? {
-          trailing: (0, r.jsx)(a.P4T, {
+          trailing: (0, r.jsx)(a.Mgn, {
             color: a.TVs.colors.STATUS_WARNING,
             size: "sm"
           }),

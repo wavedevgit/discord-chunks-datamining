@@ -14,8 +14,8 @@ var r = n(255367),
   c = n(481060),
   u = n(290297),
   d = n(686546),
-  f = n(79712),
-  _ = n(658672);
+  _ = n(79712),
+  f = n(658672);
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -84,15 +84,15 @@ let y = 24,
       onKeyDown: l,
       id: u,
       muted: d = !1,
-      level: f = 1,
+      level: _ = 1,
       ref: p
     } = e, h = (0, r.jsx)(c.y5t, {
-      forceLevel: f,
+      forceLevel: _,
       children: (0, r.jsx)(c.X6q, {
         variant: "text-md/medium",
         color: d ? "header-secondary" : void 0,
-        className: o()(t, _.title, {
-          [_.titleClickable]: null != s
+        className: o()(t, f.title, {
+          [f.titleClickable]: null != s
         }),
         id: u,
         children: i
@@ -103,11 +103,11 @@ let y = 24,
       onClick: s,
       onContextMenu: a,
       onKeyDown: l,
-      className: o()(n, _.titleWrapper),
+      className: o()(n, f.titleWrapper),
       children: h
     }) : (0, r.jsx)("div", {
       ref: p,
-      className: o()(n, _.titleWrapper),
+      className: o()(n, f.titleWrapper),
       onContextMenu: a,
       onKeyDown: l,
       children: h
@@ -121,7 +121,7 @@ let y = 24,
       selected: s = !1,
       disabled: l = !1,
       showBadge: u = !1,
-      badgePosition: f = "bottom",
+      badgePosition: _ = "bottom",
       color: p,
       foreground: m,
       background: g,
@@ -151,7 +151,7 @@ let y = 24,
       width: b,
       height: b,
       size: "custom",
-      className: o()(i, _.icon),
+      className: o()(i, f.icon),
       colorClass: null != m ? m : void 0,
       color: null != p ? p : "currentColor"
     }, j)), G = w;
@@ -172,8 +172,8 @@ let y = 24,
         } = e;
         return null == O ? (0, r.jsx)("div", {
           ref: t,
-          className: o()(n, _.iconWrapper, {
-            [_.iconDisabled]: l
+          className: o()(n, f.iconWrapper, {
+            [f.iconDisabled]: l
           }),
           children: (0, r.jsx)(E, h({
             x: 0,
@@ -181,7 +181,7 @@ let y = 24,
             width: b,
             height: b,
             size: "custom",
-            className: o()(i, _.icon),
+            className: o()(i, f.icon),
             colorClass: null != m ? m : void 0,
             color: null != p ? p : "currentColor",
             "aria-hidden": D,
@@ -200,10 +200,10 @@ let y = 24,
           onFocus: I,
           onBlur: T,
           className: o()(n, {
-            [_.iconWrapper]: !0,
-            [_.clickable]: !l && null != O,
-            [_.selected]: s,
-            [_.iconDisabled]: l
+            [f.iconWrapper]: !0,
+            [f.clickable]: !l && null != O,
+            [f.selected]: s,
+            [f.iconDisabled]: l
           }),
           role: P,
           "aria-label": G,
@@ -214,12 +214,12 @@ let y = 24,
           tabIndex: l || null == O ? -1 : 0,
           "data-jump-section": k,
           children: [u ? (0, r.jsx)(d.ZP, {
-            mask: "top" === f ? d.ZP.Masks.HEADER_BAR_BADGE_TOP : d.ZP.Masks.HEADER_BAR_BADGE_BOTTOM,
+            mask: "top" === _ ? d.ZP.Masks.HEADER_BAR_BADGE_TOP : d.ZP.Masks.HEADER_BAR_BADGE_BOTTOM,
             height: b,
             width: b,
             children: U
           }) : U, u ? (0, r.jsx)("span", {
-            className: o()(_.iconBadge, "top" === f ? _.iconBadgeTop : _.iconBadgeBottom)
+            className: o()(f.iconBadge, "top" === _ ? f.iconBadgeTop : f.iconBadgeBottom)
           }) : null, a]
         })
       }
@@ -230,7 +230,7 @@ let y = 24,
       className: n
     } = e, i = E(e, ["className"]);
     return (0, r.jsx)(v, g(h({}, i), {
-      className: o()(_.channelIcon, n),
+      className: o()(f.channelIcon, n),
       ref: t
     }))
   }),
@@ -238,8 +238,8 @@ let y = 24,
     let {
       className: t
     } = e;
-    return (0, r.jsx)(f.Z, {
-      className: o()(_.dot, t)
+    return (0, r.jsx)(_.Z, {
+      className: o()(f.dot, t)
     })
   };
 
@@ -250,11 +250,11 @@ function S(e) {
   return "right" === t ? (0, r.jsx)(c.Fbu, {
     size: "md",
     color: "currentColor",
-    className: _.caret
+    className: f.caret
   }) : (0, r.jsx)(c.V7D, {
     size: "md",
     color: "currentColor",
-    className: _.caret
+    className: f.caret
   })
 }
 let A = e => {
@@ -263,7 +263,7 @@ let A = e => {
     innerClassName: n,
     children: a,
     childrenBottom: d,
-    toolbar: f,
+    toolbar: _,
     onDoubleClick: p,
     "aria-label": h,
     "aria-labelledby": m,
@@ -273,11 +273,11 @@ let A = e => {
     showToolbar: y = !0
   } = e, O = i.useRef(null), v = i.useContext(u.Z);
   return (0, r.jsx)("section", {
-    className: o()(t, _.container, {
-      [_.themed]: !b,
-      [_.transparent]: b,
-      [_.themedMobile]: l.tq,
-      [_.showToolbar]: y
+    className: o()(t, f.container, {
+      [f.themed]: !b,
+      [f.transparent]: b,
+      [f.themedMobile]: l.tq,
+      [f.showToolbar]: y
     }),
     "aria-label": h,
     "aria-labelledby": m,
@@ -286,24 +286,24 @@ let A = e => {
     children: (0, r.jsxs)(c.JcV, {
       containerRef: O,
       children: [(0, r.jsxs)("div", {
-        className: o()(_.upperContainer, {
-          [_.showToolbar]: y
+        className: o()(f.upperContainer, {
+          [f.showToolbar]: y
         }),
         children: [(0, r.jsxs)("div", {
-          className: o()(_.children, n, {
-            [_.scrollable]: E,
-            [_.showToolbar]: y
+          className: o()(f.children, n, {
+            [f.scrollable]: E,
+            [f.showToolbar]: y
           }),
           onDoubleClick: p,
           children: [l.tq && null != v ? (0, r.jsx)(s.r, {
             onClick: v,
-            className: _.hamburger
+            className: f.hamburger
           }) : null, a]
-        }), null != f ? (0, r.jsx)("div", {
-          className: o()(_.toolbar, {
-            [_.showToolbar]: y
+        }), null != _ ? (0, r.jsx)("div", {
+          className: o()(f.toolbar, {
+            [f.showToolbar]: y
           }),
-          children: f
+          children: _
         }) : null]
       }), d]
     })

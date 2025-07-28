@@ -1,8 +1,8 @@
-/** Chunk was on 11509 **/
+/** Chunk was on 66005 **/
 n.d(t, {
-  Es: () => v,
-  Eu: () => b,
-  bt: () => h
+  Es: () => b,
+  Eu: () => v,
+  bt: () => _
 }), n(388685), n(539854);
 var r = n(73800),
   i = n(392711),
@@ -17,14 +17,14 @@ var r = n(73800),
   p = n(19780),
   m = n(594174),
   g = n(979651),
-  _ = n(823379);
+  h = n(823379);
 
-function v(e, t) {
+function b(e, t) {
   let n = (0, l.e7)([f.Z, p.Z], () => e === p.Z.getChannelId() ? f.Z.getDesyncedVoiceStates() : null),
     a = (0, l.Wu)([o.Z], () => null == e ? [] : [...o.Z.getGuildRingingUsers(e)]),
-    c = (0, l.Wu)([m.default], () => a.map(e => m.default.getUser(e)).filter(_.lm)),
+    c = (0, l.Wu)([m.default], () => a.map(e => m.default.getUser(e)).filter(h.lm)),
     g = (0, l.e7)([u.Z], () => u.Z.getBasicChannel(e)),
-    v = r.useMemo(() => c.map(e => ({
+    b = r.useMemo(() => c.map(e => ({
       voiceState: new s.Z(e.id),
       user: e,
       member: (null == g ? void 0 : g.guild_id) != null ? d.ZP.getMember(null == g ? void 0 : g.guild_id, e.id) : null,
@@ -52,10 +52,10 @@ function v(e, t) {
         return t
       }), 0, e)
     }), r
-  })(n, t, v), [n, t, v])
+  })(n, t, b), [n, t, b])
 }
 
-function h(e, t) {
+function _(e, t) {
   let n = (0, l.e7)([f.Z, p.Z], () => e === p.Z.getChannelId() ? f.Z.getDesyncedParticipants() : null);
   return r.useMemo(() => (function(e, t) {
     if (null == e || 0 === e.length) return t;
@@ -66,7 +66,7 @@ function h(e, t) {
   })(n, t), [n, t])
 }
 
-function b(e, t) {
+function v(e, t) {
   let n = (0, l.e7)([c.default], () => c.default.getId() === t),
     i = (0, l.e7)([p.Z], () => p.Z.getChannelId()),
     a = r.useRef(null),

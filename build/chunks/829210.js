@@ -4,9 +4,9 @@ n.d(t, {
 }), n(361932), n(187205), n(388685);
 var a = n(255367),
   i = n(73800),
-  r = n(120356),
-  s = n.n(r),
-  o = n(652141),
+  o = n(120356),
+  s = n.n(o),
+  r = n(652141),
   l = n(481060),
   c = n(59662),
   d = n(281215),
@@ -19,16 +19,16 @@ function m(e) {
   } = e, {
     history: n,
     activeIndex: i,
-    pushPanel: r
+    pushPanel: o
   } = (0, c.t)(), {
     icon: s
-  } = t.data, o = t.data.useTitle(), l = t.data.layout.flatMap(e => e.isDataOfType(d.Jq.CATEGORY) ? [e] : e.isDataOfType(d.Jq.PANE) ? e.data.layout : []), f = n[i] === t;
+  } = t.data, r = t.data.useTitle(), l = t.data.layout.flatMap(e => e.isDataOfType(d.Jq.CATEGORY) ? [e] : e.isDataOfType(d.Jq.PANE) ? e.data.layout : []), f = n[i] === t;
   return (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsx)(u.Z, {
       icon: s,
-      title: o,
+      title: r,
       active: f,
-      onClick: () => r(t)
+      onClick: () => o(t)
     }), f && l.length > 1 && (0, a.jsx)(h, {
       categories: l
     })]
@@ -38,7 +38,7 @@ function m(e) {
 function h(e) {
   let {
     categories: t
-  } = e, [n, r] = i.useState(0), [c, d] = (0, l.q_F)(() => ({
+  } = e, [n, o] = i.useState(0), [c, d] = (0, l.q_F)(() => ({
     y: 0,
     config: {
       mass: .1,
@@ -61,7 +61,7 @@ function h(e) {
     className: f.subnav,
     children: [(0, a.jsx)("div", {
       className: f.track,
-      children: (0, a.jsx)(o.animated.div, {
+      children: (0, a.jsx)(r.animated.div, {
         className: f.thumb,
         style: c
       })
@@ -69,11 +69,11 @@ function h(e) {
       children: u.map((e, t) => {
         let {
           title: i,
-          key: o
+          key: r
         } = e;
         return (0, a.jsx)(l.P3F, {
           onClick: () => {
-            r(t), d({
+            o(t), d({
               y: 40 * t
             })
           },
@@ -82,7 +82,7 @@ function h(e) {
             [f.active]: t === n
           }),
           children: i
-        }, o)
+        }, r)
       })
     })]
   })

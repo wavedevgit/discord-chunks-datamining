@@ -14,8 +14,8 @@ var r = n(255367),
   c = n(524444),
   u = n(52824),
   d = n(630388),
-  f = n(589530),
-  _ = n(591759),
+  _ = n(589530),
+  f = n(591759),
   p = n(212459),
   h = n(116475),
   m = n(986261);
@@ -89,7 +89,7 @@ function I(e, t) {
 }
 
 function T(e) {
-  let t = _.Z.toURLSafe(e);
+  let t = f.Z.toURLSafe(e);
   return null == t ? null : (t.searchParams.append("format", "webp"), t.toString())
 }
 
@@ -103,7 +103,7 @@ function S(e) {
     } = e,
     {
       width: d,
-      height: _,
+      height: f,
       url: g,
       proxyUrl: b,
       alt: v,
@@ -116,7 +116,7 @@ function S(e) {
       zoomed: R
     } = (0, p.Y)(),
     P = N(R, g, b),
-    w = null != d && 0 !== d && null != _ && 0 !== _;
+    w = null != d && 0 !== d && null != f && 0 !== f;
   if ("VIDEO" === I && w && null != b) {
     var D;
     let e = T(b);
@@ -125,16 +125,16 @@ function S(e) {
     return (0, r.jsx)(s.Z, y(E({}, C), {
       src: P,
       width: d,
-      height: _,
+      height: f,
       maxWidth: a,
       maxHeight: l,
       poster: e,
       naturalWidth: d,
-      naturalHeight: _,
-      volume: f.FC,
-      autoMute: f.rs,
-      onVolumeChange: f.jA,
-      onMute: f.Zj,
+      naturalHeight: f,
+      volume: _.FC,
+      autoMute: _.rs,
+      onVolumeChange: _.jA,
+      onMute: _.Zj,
       renderLinkComponent: t,
       autoPlay: !i,
       alt: v,
@@ -145,7 +145,7 @@ function S(e) {
   return "IMAGE" === I && (t = w ? (0, r.jsx)(o.ZP, y(E({}, C), {
     src: P,
     width: d,
-    height: _,
+    height: f,
     maxWidth: a,
     maxHeight: l,
     useFullWidth: !0,
@@ -171,7 +171,7 @@ function S(e) {
 let A = i.memo(S);
 
 function N(e, t, n) {
-  return e && _.Z.isDiscordAssetUrl(t) ? (0, l.s$)(t) : (0, u.q)({
+  return e && f.Z.isDiscordAssetUrl(t) ? (0, l.s$)(t) : (0, u.q)({
     proxyURL: n,
     url: t
   })
