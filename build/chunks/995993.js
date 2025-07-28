@@ -34,9 +34,9 @@ function E(e) {
     if (null == n) return !1;
     let r = m.default.extractTimestamp(n);
     return null != e && e > r
-  }), Z = i.useCallback(() => {
+  }), T = i.useCallback(() => {
     (0, f.uL)(O.Z5c.CHANNEL(t.id, S ? y.oC.CUSTOMIZE_COMMUNITY : y.oC.CHANNEL_BROWSER))
-  }, [t.id, S]), T = i.useCallback(e => {
+  }, [t.id, S]), Z = i.useCallback(e => {
     (0, c.jW)(e, async () => {
       let {
         default: e
@@ -88,8 +88,8 @@ function E(e) {
     }),
     text: S ? v.intl.string(v.t.h9mGOD) : v.intl.string(v.t.et6wam),
     selected: E,
-    onClick: Z,
-    onContextMenu: T,
+    onClick: T,
+    onContextMenu: Z,
     trailing: A
   })
 }

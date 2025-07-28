@@ -1,7 +1,7 @@
 /** Chunk was on 43828 **/
 n.d(t, {
   I: () => A,
-  N: () => T
+  N: () => Z
 }), n(388685);
 var r, i = n(255367),
   l = n(73800),
@@ -241,7 +241,7 @@ function w(e) {
   })
 }
 
-function Z(e) {
+function T(e) {
   let {
     closePopout: t
   } = e, n = d.G6.useSetting(), {
@@ -265,7 +265,7 @@ function Z(e) {
     })]
   })
 }
-var T = ((r = {})[r.ActivityNux = 0] = "ActivityNux", r[r.StatusNux = 1] = "StatusNux", r[r.ActivityAndStatusNux = 2] = "ActivityAndStatusNux", r[r.Activity = 3] = "Activity", r[r.Status = 4] = "Status", r[r.ActivityAndStatus = 5] = "ActivityAndStatus", r);
+var Z = ((r = {})[r.ActivityNux = 0] = "ActivityNux", r[r.StatusNux = 1] = "StatusNux", r[r.ActivityAndStatusNux = 2] = "ActivityAndStatusNux", r[r.Activity = 3] = "Activity", r[r.Status = 4] = "Status", r[r.ActivityAndStatus = 5] = "ActivityAndStatus", r);
 
 function A(e) {
   let {
@@ -297,7 +297,7 @@ function A(e) {
         closePopout: n
       });
     case 5:
-      return (0, i.jsx)(Z, {
+      return (0, i.jsx)(T, {
         closePopout: n
       });
     default:

@@ -29,8 +29,8 @@ var r, i = n(255367),
   P = n(63063),
   N = n(51596),
   w = n(823385),
-  Z = n(415795),
-  T = n(670512),
+  T = n(415795),
+  Z = n(670512),
   A = n(558631),
   R = n(981631),
   D = n(388032),
@@ -89,7 +89,7 @@ let G = {
 class V extends(r = l.Component) {
   render() {
     let e = v.Z.getGuild(this.props.channel.guild_id);
-    return (0, i.jsx)(Z.$W, U(k({}, this.props), {
+    return (0, i.jsx)(T.$W, U(k({}, this.props), {
       children: (0, i.jsx)("div", {
         className: L.miscContainer,
         children: null != e ? e.name : null
@@ -127,7 +127,7 @@ let F = s.ZP.connectStores([j.ZP, y.Z], e => {
     return {
       unread: C.default.hasUnread(t.id)
     }
-  })(Z.ic),
+  })(T.ic),
   W = s.ZP.connectStores([j.ZP], e => {
     let {
       channel: t
@@ -135,7 +135,7 @@ let F = s.ZP.connectStores([j.ZP, y.Z], e => {
     return {
       mentions: j.ZP.getMentionCount(t.id)
     }
-  })(Z.PZ),
+  })(T.PZ),
   K = s.ZP.connectStores([y.Z, j.ZP], e => {
     let {
       user: t
@@ -143,7 +143,7 @@ let F = s.ZP.connectStores([j.ZP, y.Z], e => {
     return {
       mentions: null != n ? j.ZP.getMentionCount(n) : 0
     }
-  })(Z.n5);
+  })(T.n5);
 
 function Y(e, t, n) {
   return (0, i.jsx)(u.ua7, {
@@ -266,7 +266,7 @@ class q extends l.PureComponent {
       seenTutorial: t,
       results: n
     } = this.props;
-    return t ? null : (0, i.jsx)(T.Z, {
+    return t ? null : (0, i.jsx)(Z.Z, {
       hasQuery: e.length > 0 && n.length > 0
     })
   }
@@ -465,7 +465,7 @@ class q extends l.PureComponent {
       });
       switch (n.type) {
         case f.h8.HEADER:
-          return (0, i.jsx)(Z.h4, {
+          return (0, i.jsx)(T.h4, {
             children: n.record.text
           }, "".concat(n.type, "-").concat(n.record.id));
         case f.h8.TEXT_CHANNEL:
@@ -525,7 +525,7 @@ class q extends l.PureComponent {
             score: l ? n.score : void 0
           }, "".concat(n.type, "-").concat(n.record.id));
         case f.h8.APPLICATION:
-          return (0, i.jsx)(Z.Mx, {
+          return (0, i.jsx)(T.Mx, {
             id: this.getRowId(t),
             focused: r >= 0 && t === r,
             onClick: () => this.selectResult(n),
@@ -534,7 +534,7 @@ class q extends l.PureComponent {
             application: n.record
           }, "".concat(n.type, "-").concat(n.record.id));
         case f.h8.LINK:
-          return (0, i.jsx)(Z.rU, {
+          return (0, i.jsx)(T.rU, {
             focused: r >= 0 && t === r,
             onClick: () => this.selectResult(n),
             onMouseEnter: () => this.focusResult(n),
@@ -545,7 +545,7 @@ class q extends l.PureComponent {
             id: this.getRowId(t)
           }, "".concat(n.type, "-").concat(n.record.id));
         case f.h8.IN_APP_NAVIGATION:
-          return (0, i.jsx)(Z.s8, {
+          return (0, i.jsx)(T.s8, {
             focused: r >= 0 && t === r,
             onClick: () => this.selectResult(n),
             onMouseEnter: () => this.focusResult(n),

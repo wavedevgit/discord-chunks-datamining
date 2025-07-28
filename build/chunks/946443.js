@@ -30,9 +30,9 @@ var r = n(255367),
   I = n(128406);
 
 function P(e) {
-  var t, n, l, a, P, w, Z;
+  var t, n, l, a, P, w, T;
   let {
-    setTab: T,
+    setTab: Z,
     onJump: A,
     showTutorial: R,
     setSeenTutorial: D,
@@ -100,13 +100,13 @@ function P(e) {
       }),
       children: [(0, r.jsx)(v.Z, {
         tab: d.X.UNREADS,
-        setTab: T,
+        setTab: Z,
         badgeState: M,
         closePopout: L
       }), (0, r.jsx)(C.Z, {
         Icon: h.xx7,
         header: x.intl.string(x.t["6XMM+P"]),
-        tip: (null == (Z = s().os) ? void 0 : Z.family) === "OS X" ? x.intl.string(x.t.w9uDOT) : x.intl.string(x.t.BiUJCw)
+        tip: (null == (T = s().os) ? void 0 : T.family) === "OS X" ? x.intl.string(x.t.w9uDOT) : x.intl.string(x.t.BiUJCw)
       })]
     })
   }
@@ -117,7 +117,7 @@ function P(e) {
     "aria-label": x.intl.string(x.t.sRUdBw),
     children: [(0, r.jsx)(v.Z, {
       tab: d.X.UNREADS,
-      setTab: T,
+      setTab: Z,
       badgeState: M,
       closePopout: L,
       children: (0, r.jsx)(y.Z, {

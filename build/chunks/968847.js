@@ -48,11 +48,11 @@ function w(e) {
   return (!r || !i) && b.ZP.getMentionCount(e) > 0
 }
 
-function Z(e) {
+function T(e) {
   return !O.ZP.isChannelMuted(e.guild_id, e.id) && (e.isGuildStageVoice() ? h.Z.getMutableParticipants(e.id, p.pV.SPEAKER).length > 0 : y.ZP.getVoiceStatesForChannel(e).length > 0)
 }
 
-function T(e) {
+function Z(e) {
   var t, n, r;
   let {
     guildChannels: i
@@ -88,13 +88,13 @@ function T(e) {
       (N(t.id) || s().some(t.threadIds, N)) && (null == u && (u = t.id), E = !0), (w(t.id) || s().some(t.threadIds, w)) && (null == c && (c = t.id), j += b.ZP.getMentionCount(t.id), j += s().sumBy(t.threadIds, b.ZP.getMentionCount))
     }
   let x = null,
-    T = null,
+    Z = null,
     A = null != (r = null == f ? void 0 : f.getChannelRecords()) ? r : [];
   d && j > 0 ? x = {
     mode: "mentions",
     mentionCount: j,
     targetChannelId: c
-  } : !p && s().some(A, Z) ? x = {
+  } : !p && s().some(A, T) ? x = {
     mode: "voice-channels",
     mentionCount: 0,
     targetChannelId: null
@@ -102,23 +102,23 @@ function T(e) {
     mode: "unread",
     mentionCount: 0,
     targetChannelId: u
-  }), d && y > 0 ? T = {
+  }), d && y > 0 ? Z = {
     mode: "mentions",
     mentionCount: y,
     targetChannelId: o
-  } : h && C && (T = {
+  } : h && C && (Z = {
     mode: "unread",
     mentionCount: 0,
     targetChannelId: a
   });
-  let R = null != T && (null == x || "mentions" !== x.mode && "mentions" === T.mode),
+  let R = null != Z && (null == x || "mentions" !== x.mode && "mentions" === Z.mode),
     D = null != x && ("mentions" === x.mode || !R);
   return I[e] = {
-    topBar: R && null != T ? T : S,
+    topBar: R && null != Z ? Z : S,
     bottomBar: D && null != x ? x : S
   }, !0
 }
-let A = s().throttle(T, 200);
+let A = s().throttle(Z, 200);
 
 function R(e) {
   let {
@@ -181,7 +181,7 @@ let G = new U(u.Z, {
       guildId: t,
       channelIds: n
     } = e, r = m.Z.getGuild(t);
-    return null != r && !!r.features.has(j.oNc.COMMUNITY) && null != n && !s().isEqual(P[t], n) && (P[t] = n, T(t))
+    return null != r && !!r.features.has(j.oNc.COMMUNITY) && null != n && !s().isEqual(P[t], n) && (P[t] = n, Z(t))
   },
   BULK_ACK: function(e) {
     let {

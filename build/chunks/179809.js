@@ -38,8 +38,8 @@ let P = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
       mediaState: d,
       mentionCount: m = 0,
       isMentionLowImportance: w,
-      unread: Z = !1,
-      defaultFolderName: T,
+      unread: T = !1,
+      defaultFolderName: Z,
       draggable: A = !1,
       sorting: R = !1,
       onDragStart: D,
@@ -77,7 +77,7 @@ let P = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
       X(e)
     }, []), en = i.useCallback(e => {
       ("ArrowRight" === e.key && !s || "ArrowLeft" === e.key && s) && M()
-    }, [M, s]), er = null != z && "" !== z ? z : null != T && "" !== T ? T : S.intl.string(S.t.xV9hVl), ei = (0, c.Ie)("".concat(H)), el = "folder-items-".concat(H), eo = function(e) {
+    }, [M, s]), er = null != z && "" !== z ? z : null != Z && "" !== Z ? Z : S.intl.string(S.t.xV9hVl), ei = (0, c.Ie)("".concat(H)), el = "folder-items-".concat(H), eo = function(e) {
       let t = (0, h.dQu)(h.TVs.modules.guildbar.FOLDER_SIZE),
         n = (0, h.dQu)(h.TVs.modules.guildbar.AVATAR_SIZE),
         r = (0, h.dQu)(h.TVs.space.SPACE_XS);
@@ -100,7 +100,7 @@ let P = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
         disabled: $ || s,
         hovered: K,
         selected: l,
-        unread: Z,
+        unread: T,
         className: I.pill
       }), (0, r.jsx)(j.Z, {
         text: er,

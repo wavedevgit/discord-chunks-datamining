@@ -32,7 +32,6 @@ n.d(t, {
   T4: () => L,
   UP: () => eu,
   Wp: () => eR,
-  Wz: () => eM,
   Xc: () => V,
   Xk: () => M,
   Xr: () => ed,
@@ -69,6 +68,7 @@ n.d(t, {
   l4: () => eY,
   mX: () => K,
   nc: () => eO,
+  no: () => eM,
   qF: () => k,
   rN: () => ev,
   tU: () => eg,
@@ -468,13 +468,20 @@ let eS = (0, d.KM)((0, d.Zc)("appearance", "developerMode", e => null != e && e,
   ew = (0, d.Zc)("privacy", "activityRestrictedGuildIds", e => null != e ? e : eP, e => e),
   eD = (0, d.Zc)("privacy", "activityRestrictedGuildIds", e => null != e ? e : eP, e => e, p.fy.FREQUENT_USER_ACTION),
   eL = [],
-  ex = (0, d.Zc)("privacy", "activityJoiningRestrictedGuildIds", e => null != e ? e : eL, e => e),
-  eM = (0, d.TG)({
-    baseSetting: (0, d.Zc)("privacy", "defaultGuildsActivityRestricted", e => e, e => null != e ? e : a.E5.OFF),
+  ex = (0, d.Zc)("privacy", "activityJoiningRestrictedGuildIds", e => null != e ? e : eL, e => e);
+(0, d.TG)({
+  baseSetting: (0, d.Zc)("privacy", "defaultGuildsActivityRestricted", e => e, e => null != e ? e : a.E5.OFF),
+  isEligible: () => (0, c.o0)("user_settings"),
+  useIsEligible: () => (0, c.Yd)("user_settings"),
+  ineligibleDefault: a.E5.OFF,
+  eligibleDefault: () => a.E5.ON_FOR_LARGE_GUILDS
+});
+let eM = (0, d.TG)({
+    baseSetting: (0, d.Zc)("privacy", "defaultGuildsActivityRestrictedV2", e => e, e => null != e ? e : a.GI.ACTIVITY_STATUS_OFF),
     isEligible: () => (0, c.o0)("user_settings"),
     useIsEligible: () => (0, c.Yd)("user_settings"),
-    ineligibleDefault: a.E5.OFF,
-    eligibleDefault: () => a.E5.ON_FOR_LARGE_GUILDS
+    ineligibleDefault: a.GI.ACTIVITY_STATUS_OFF,
+    eligibleDefault: () => a.GI.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS
   }),
   ek = (0, d.Zc)("privacy", "familyCenterEnabledV2", e => null == e ? void 0 : e.value, e => o.D5.create({
     value: e

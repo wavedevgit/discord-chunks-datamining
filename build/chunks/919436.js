@@ -50,7 +50,7 @@ function w(e) {
   return e
 }
 
-function Z(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -62,7 +62,7 @@ function Z(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = {
+let Z = {
   friction: 28,
   tension: 600
 };
@@ -73,9 +73,9 @@ function A(e) {
     case "opacity":
       return w({
         duration: 150
-      }, T);
+      }, Z);
     case "scale":
-      return w({}, T);
+      return w({}, Z);
     default:
       throw Error("DirectMessage: getSpringConfigs() - Invalid spring ".concat(String(e)))
   }
@@ -234,7 +234,7 @@ class R extends(r = l.PureComponent) {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("98783"), n.e("53912"), n.e("56826"), n.e("45903")]).then(n.bind(n, 131404));
-        return n => (0, i.jsx)(e, Z(w({}, n), {
+        return n => (0, i.jsx)(e, T(w({}, n), {
           channel: t,
           user: r
         }))
@@ -242,7 +242,7 @@ class R extends(r = l.PureComponent) {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("53912"), n.e("2016")]).then(n.bind(n, 354741));
-        return n => (0, i.jsx)(e, Z(w({}, n), {
+        return n => (0, i.jsx)(e, T(w({}, n), {
           channel: t,
           selected: !1
         }))
@@ -277,7 +277,7 @@ let D = l.forwardRef(function(e, t) {
     E = !1;
   v && (j = u === x.WtW.VOICE, E = u === x.WtW.VIDEO);
   let S = (0, c.dQu)(c.TVs.modules.guildbar.AVATAR_SIZE);
-  return (0, i.jsx)(R, Z(w({}, e), {
+  return (0, i.jsx)(R, T(w({}, e), {
     ref: t,
     channelName: r,
     unread: y > 0,

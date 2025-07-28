@@ -1,6 +1,6 @@
 /** Chunk was on 43828 **/
 n.d(t, {
-  H: () => T
+  H: () => Z
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -60,9 +60,9 @@ let P = e => {
         fromContent: l.j.ORBS_REHEAT_COACHMARK_CTA,
         questId: x.V6
       })
-    }, [v]), Z = i.useCallback(() => {
-      v(E.L.USER_DISMISS)
     }, [v]), T = i.useCallback(() => {
+      v(E.L.USER_DISMISS)
+    }, [v]), Z = i.useCallback(() => {
       v(E.L.TAKE_ACTION), (0, b.Y)({
         pageType: j.ZY5.GUILD_LIST,
         sectionType: j.jXE.ORBS_DISCOVERY_REHEAT_COACHMARK,
@@ -74,12 +74,12 @@ let P = e => {
     }, [I, t, n, d]), {
       shouldShow: I,
       onCtaClick: w,
-      onClose: Z,
+      onClose: T,
       questId: x.V6,
-      onDiscoveryButtonClick: T
+      onDiscoveryButtonClick: Z
     }
   },
-  Z = e => {
+  T = e => {
     let {
       targetElementRef: t,
       renderDiscoveryButton: n,
@@ -109,7 +109,7 @@ let P = e => {
       innerCoachmarkProps: d
     })
   },
-  T = e => {
+  Z = e => {
     let {
       targetElementRef: t,
       scrollToBottom: n,
@@ -142,7 +142,7 @@ let P = e => {
       }
       return i
     }(a, ["shouldShow"]);
-    return s ? (0, r.jsx)(Z, function(e) {
+    return s ? (0, r.jsx)(T, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);

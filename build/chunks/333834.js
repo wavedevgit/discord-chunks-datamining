@@ -34,7 +34,7 @@ function w(e) {
   e.stopPropagation()
 }
 
-function Z(e) {
+function T(e) {
   let {
     group: t,
     isOpen: n,
@@ -61,7 +61,7 @@ function Z(e) {
     })
   })
 }
-let T = [S.KZ.UNREAD, S.KZ.TODAY, S.KZ.YESTERDAY, S.KZ.OLDER];
+let Z = [S.KZ.UNREAD, S.KZ.TODAY, S.KZ.YESTERDAY, S.KZ.OLDER];
 
 function A() {
   let {
@@ -177,7 +177,7 @@ function R(e) {
       }), s().each(t, e => {
         let t = (0, v.bl)(e);
         e.kind === S.fL.MENTION ? r[t].push(e) : e.channelId in i[t] ? i[t][e.channelId].push(e) : i[t][e.channelId] = [e]
-      }), s().each(T, t => {
+      }), s().each(Z, t => {
         [...Object.values(i[t]).map(e => e.reverse()), ...r[t].map(e => [e])].sort((e, t) => b.default.compare(t[0].id, e[0].id)).forEach(n => {
           e[t].push(n)
         })
@@ -187,8 +187,8 @@ function R(e) {
     Y = 0 === t.length && 0 === n.length && !G,
     q = i.useMemo(() => {
       let e = [];
-      return Y ? e.push(a()) : K ? e.push((0, r.jsx)(A, {}, "empty-state")) : P ? (e.push(...n.map(e => d([e], !0))), e.push(...t.map(e => d([e], !1)))) : s().each(T, t => {
-        0 !== W[t].length && (e.push((0, r.jsx)(Z, {
+      return Y ? e.push(a()) : K ? e.push((0, r.jsx)(A, {}, "empty-state")) : P ? (e.push(...n.map(e => d([e], !0))), e.push(...t.map(e => d([e], !1)))) : s().each(Z, t => {
+        0 !== W[t].length && (e.push((0, r.jsx)(T, {
           group: t,
           isOpen: F[t],
           toggleOpenedState: () => {
@@ -203,7 +203,7 @@ function R(e) {
       }), e
     }, [t, n, a, F, H, W, P, d, K, Y, R]),
     X = q[q.length - 1],
-    Q = i.isValidElement(X) && X.type === Z;
+    Q = i.isValidElement(X) && X.type === T;
   i.useEffect(() => {
     var e, t, n, r, i, l, o;
     if (Y) return;
@@ -228,7 +228,7 @@ function R(e) {
   });
   let $ = i.useCallback(() => {
     var e;
-    let t = T.filter(e => F[e]).reduce((e, t) => e + W[t].length, 0),
+    let t = Z.filter(e => F[e]).reduce((e, t) => e + W[t].length, 0),
       n = null == (e = D.current) ? void 0 : e.getScrollerState();
     return null == n ? 0 : Math.max(0, Math.ceil(n.offsetHeight / 64) - t)
   }, [F, W]);

@@ -35,17 +35,17 @@ function N(e) {
     guild: n,
     markAsDismissed: l
   } = e, N = (null == n ? void 0 : n.premiumProgressBarEnabled) === !0 ? g.DF.LEFT_TOP : g.DF.TOP_CENTER, w = N === g.DF.TOP_CENTER || N === g.DF.LEFT_TOP ? S[N] : "", {
-    analyticsLocations: Z
-  } = (0, d.ZP)(u.Z.GUILD_BOOSTING_ENHANCED_ROLE_COLOR_COACHMARK), T = i.useCallback(() => {
+    analyticsLocations: T
+  } = (0, d.ZP)(u.Z.GUILD_BOOSTING_ENHANCED_ROLE_COLOR_COACHMARK), Z = i.useCallback(() => {
     (0, p.u)({
       analyticsLocation: {
         section: C.jXE.BOOSTER_ENHANCED_ROLE_COLORS_COACHMARK
       },
       numberOfBoostsToAdd: 1,
-      analyticsLocations: Z,
+      analyticsLocations: T,
       guild: n
     })
-  }, [n, Z]), A = (0, s.e7)([b.default], () => b.default.getCurrentUser()), R = (t = n.id, (0, s.e7)([m.Z], () => {
+  }, [n, T]), A = (0, s.e7)([b.default], () => b.default.getCurrentUser()), R = (t = n.id, (0, s.e7)([m.Z], () => {
     let e = Object.values(m.Z.getRoles(t)).find(e => (0, O.YB)(e));
     return null == e ? {
       primary_color: y.oC.primary_color,
@@ -102,7 +102,7 @@ function N(e) {
       children: E.intl.string(j.default["/DTbiY"])
     }),
     buttonCTA: E.intl.string(E.t["oPAx7+"]),
-    onClick: T,
+    onClick: Z,
     className: o()(S.container, w),
     caretPosition: N,
     markAsDismissed: l

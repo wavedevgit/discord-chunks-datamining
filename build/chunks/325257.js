@@ -30,8 +30,8 @@ var r = n(255367),
   P = n(252686),
   N = n(682662),
   w = n(674552),
-  Z = n(981631),
-  T = n(388032),
+  T = n(981631),
+  Z = n(388032),
   A = n(335426);
 
 function R(e) {
@@ -67,9 +67,9 @@ function D(e, t) {
 }
 let L = {
   analyticsSource: {
-    page: Z.ZY5.GUILD_CHANNEL,
-    section: Z.jXE.CHANNEL_LIST,
-    object: Z.qAy.CHANNEL
+    page: T.ZY5.GUILD_CHANNEL,
+    section: T.jXE.CHANNEL_LIST,
+    object: T.qAy.CHANNEL
   }
 };
 
@@ -134,7 +134,7 @@ let k = i.memo(function(e) {
         dragging: e.isDragging()
       })
     }),
-    ep = (0, c.Ie)(null != eo ? eo : Z.lds, null != ea ? 2 : 1),
+    ep = (0, c.Ie)(null != eo ? eo : T.lds, null != ea ? 2 : 1),
     [ef, eg] = i.useState(!1),
     em = !ee && ef,
     [eb, e_] = i.useState(!1),
@@ -184,7 +184,7 @@ let k = i.memo(function(e) {
         eO || e_(!1)
       }
     }) : (0, r.jsx)(h.LYs, D(R({
-      ariaLabel: T.intl.formatToPlainString(T.t["/uzRsr"], {
+      ariaLabel: Z.intl.formatToPlainString(Z.t["/uzRsr"], {
         guildName: H.name,
         mentions: X
       }),
@@ -206,7 +206,7 @@ let k = i.memo(function(e) {
       "aria-posinset": el,
       "aria-selected": W
     })),
-    eZ = ed ? (0, r.jsx)(x.OG, {
+    eT = ed ? (0, r.jsx)(x.OG, {
       children: (0, r.jsx)(P.Z, {})
     }) : (0, r.jsx)(s.animated.div, {
       ref: $ ? e => {
@@ -241,7 +241,7 @@ let k = i.memo(function(e) {
       guild: H,
       disabled: ee,
       isDragging: ed,
-      children: eZ
+      children: eT
     }), $ ? (0, r.jsx)(x.ZP, {
       name: H.name,
       targetNode: U,

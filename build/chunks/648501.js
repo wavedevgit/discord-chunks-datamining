@@ -36,8 +36,8 @@ function I(e) {
     isChannelCollapsed: P,
     voiceStates: N,
     enableConnectedUserLimit: w,
-    enableActivities: Z,
-    isSubscriptionGated: T,
+    enableActivities: T,
+    isSubscriptionGated: Z,
     needSubscriptionToAccess: A,
     isNewChannel: R,
     muted: D,
@@ -55,7 +55,7 @@ function I(e) {
     mentionsCount: M,
     isMentionLowImportance: k
   });
-  if ((0, c.O)(T)) return (0, r.jsx)(c.Z, {
+  if ((0, c.O)(Z)) return (0, r.jsx)(c.Z, {
     locked: A
   });
   if (R) return (0, r.jsx)(o.IGR, {
@@ -83,7 +83,7 @@ function I(e) {
   }) : P && (0, m.a)(N) && W ? (0, r.jsx)(o.IGR, {
     text: S.intl.string(S.t.dI3q4u),
     color: l.Z.unsafe_rawColors.RED_400.css
-  }) : null != Z && Z && (0, b.u)(U) ? (0, r.jsx)(y.Z, {
+  }) : null != T && T && (0, b.u)(U) ? (0, r.jsx)(y.Z, {
     embeddedApps: U,
     muted: D
   }) : null
