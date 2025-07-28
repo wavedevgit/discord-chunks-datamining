@@ -1,6 +1,6 @@
 /**
   Module ID: 57539
-  Original File Name: 40c8a5b8e223b2cd
+  Original File Name: aa1385b31a14beef
 **/
 .toast__1562f {
     gap: var(--space-8)
@@ -25,27 +25,4 @@
     padding: var(--space-16)
 }
 
-.container__8a1ae {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center
-}
-
-.header__8a1ae {
-    margin-bottom: var(--space-8)
-}
-
-.buttonContainer__8a1ae {
-    display: flex;
-    flex-direction: column;
-    padding: var(--space-24) 0 0;
-    width: 100%
-}
-
-.button__8a1ae {
-    margin-bottom: var(--space-8)
-}
-
-/*# sourceMappingURL=40c8a5b8e223b2cd.css.map*/
+/*# sourceMappingURL=aa1385b31a14beef.css.map*/

@@ -1,17 +1,7 @@
 /**
   Module ID: 78712
-  Original File Name: 5ddad4abed38fecd
+  Original File Name: beb7a22bdbef5120
 **/
-.container__444a0 {
-    max-width: 960px
-}
-
-.header__444a0 {
-    align-items: center;
-    display: flex;
-    gap: 8px
-}
-
 .content__444a0 {
     font-size: 14px;
     font-weight: var(--font-weight-normal);
@@ -28,8 +18,4 @@
     text-decoration: underline
 }
 
-.rulesIcon__444a0 {
-    color: var(--header-primary)
-}
-
-/*# sourceMappingURL=5ddad4abed38fecd.css.map*/
+/*# sourceMappingURL=beb7a22bdbef5120.css.map*/
