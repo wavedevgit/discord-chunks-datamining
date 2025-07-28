@@ -1,24 +1,8 @@
 /**
   Module ID: 21971
-  Original File Name: 97b7e784d4c6c30b
+  Original File Name: faa3d27d7b860fd9
 **/
-.footer__1c948 {
-    display: flex;
-    justify-content: space-between
-}
-
-.content__1c948 {
-    padding: 0 var(--modal-horizontal-padding) var(--modal-vertical-padding)
-}
-
-.buttons__1c948 {
-    align-items: center;
-    display: flex;
-    gap: 8px
-}
-
 .inputContainer__1c948 {
-    margin-top: 16px;
     position: relative
 }
 
@@ -66,9 +50,4 @@
     width: 16px
 }
 
-.moderatedCheckbox__1c948 {
-    margin-bottom: 0;
-    margin-left: var(--modal-horizontal-padding)
-}
-
-/*# sourceMappingURL=97b7e784d4c6c30b.css.map*/
+/*# sourceMappingURL=faa3d27d7b860fd9.css.map*/

@@ -18,8 +18,8 @@ var i = n(255367),
   p = n(492593),
   C = n(453687),
   g = n(25015),
-  O = n(689674),
-  S = n(438075),
+  S = n(689674),
+  O = n(438075),
   T = n(963550),
   f = n(845080),
   N = n(295790),
@@ -100,7 +100,7 @@ let D = r.memo(function(e) {
   }), z = r.type === A.uaV.REPLY ? r.messageReference : void 0, Y = (0, a.e7)([u.Z], () => u.Z.getMessageByReference(z)), K = (0, s.JA)(r.id), X = (0, I.ZP)(r), q = (0, a.e7)([_.Z], () => r.hasFlag(A.iLy.HAS_THREAD) && _.Z.getChannel(h.default.castMessageIdAsChannelId(r.id))), Q = (0, c.p9)({
     guildId: L.guild_id,
     roleId: X.iconRoleId
-  }), J = (0, O.Z)({
+  }), J = (0, S.Z)({
     message: r,
     channel: L,
     enabled: x
@@ -119,7 +119,7 @@ let D = r.memo(function(e) {
       author: X,
       roleIcon: Q
     })),
-    childrenAccessories: e.hideAccessories ? void 0 : (0, S.Q)(e, W),
+    childrenAccessories: e.hideAccessories ? void 0 : (0, O.Q)(e, W),
     childrenMessageContent: (0, T.Z)(e, H),
     childrenSystemMessage: (0, N.Z)(P(b({}, e), {
       disableInteraction: V

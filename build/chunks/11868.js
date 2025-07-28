@@ -19,8 +19,8 @@ var i = n(255367),
   p = n(430824),
   C = n(411198),
   g = n(15274),
-  O = n(924301),
-  S = n(725436),
+  S = n(924301),
+  O = n(725436),
   T = n(978227),
   f = n(236373),
   N = n(854698),
@@ -66,16 +66,16 @@ let U = (e, t) => n => {
       L(l)(e)
     }, [l]);
     if (null == u) return null;
-    let O = null == E ? void 0 : E.IconComponent,
+    let S = null == E ? void 0 : E.IconComponent,
       T = (0, i.jsxs)(i.Fragment, {
-        children: [null != O && (0, i.jsx)(O, {
+        children: [null != S && (0, i.jsx)(S, {
           size: "xs",
           color: "currentColor",
           className: v.channelIcon
         }), (0, i.jsx)(c.Text, {
           className: v.channelDescription,
           variant: "text-xs/normal",
-          children: (0, S.m)(null != (t = null == E ? void 0 : E.locationName) ? t : "", !0)
+          children: (0, O.m)(null != (t = null == E ? void 0 : E.locationName) ? t : "", !0)
         })]
       });
     return (0, i.jsxs)("div", {
@@ -124,7 +124,7 @@ let U = (e, t) => n => {
       isExternal: u,
       onAcceptInstantInvite: _,
       onTransitionToInviteChannel: h
-    } = e, E = (0, s.e7)([O.ZP], () => O.ZP.isInterestedInEventRecurrence(n, r), [n, r]), I = e => {
+    } = e, E = (0, s.e7)([S.ZP], () => S.ZP.isInterestedInEventRecurrence(n, r), [n, r]), I = e => {
       e.stopPropagation(), d ? l && h() : _()
     };
     return d ? l ? (0, i.jsx)(a.zx, {
@@ -185,8 +185,8 @@ let U = (e, t) => n => {
       })
     }, [a, n, E]);
     if (null == n || !I) return null;
-    let S = (0, O.xt)(n),
-      y = (0, O.Z2)(n),
+    let O = (0, S.xt)(n),
+      y = (0, S.Z2)(n),
       b = n.entity_type === P.WX.EXTERNAL;
     return (0, i.jsx)(h.Z, {
       className: o()({
@@ -214,7 +214,7 @@ let U = (e, t) => n => {
             guildScheduledEvent: n,
             isMember: a
           }), (0, i.jsx)(j, {
-            isActive: S,
+            isActive: O,
             isEnded: y,
             isMember: a,
             guildId: n.guild_id,

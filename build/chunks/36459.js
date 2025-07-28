@@ -1,8 +1,8 @@
 /** Chunk was on 81064 **/
 n.d(t, {
   $Y: () => f,
-  JK: () => O,
-  Je: () => S,
+  JK: () => S,
+  Je: () => O,
   T9: () => R,
   UE: () => m,
   Xx: () => N,
@@ -81,7 +81,7 @@ async function g(e) {
     });
   return (0, u.C)(n.body)
 }
-async function O(e) {
+async function S(e) {
   let t = I(e);
   return delete t.id, C((await i.tn.post({
     url: h.ANM.GUILD_AUTOMOD_RULES(e.guildId),
@@ -89,7 +89,7 @@ async function O(e) {
     rejectWithError: !1
   })).body)
 }
-async function S(e) {
+async function O(e) {
   let t = I(e);
   return C((await i.tn.patch({
     url: h.ANM.GUILD_AUTOMOD_RULE(e.guildId, e.id),

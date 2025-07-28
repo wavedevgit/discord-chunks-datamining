@@ -19,8 +19,8 @@ var r = n(442837),
   p = n(703656),
   C = n(914010),
   g = n(594174),
-  O = n(395361),
-  S = n(626135),
+  S = n(395361),
+  O = n(626135),
   T = n(243778),
   f = n(921944),
   N = n(981631),
@@ -93,7 +93,7 @@ let b = e => {
             children: [(0, i.jsx)(o.RyX, {
               onClick: () => r(f.L.UNKNOWN),
               noticeType: b
-            }), (0, i.jsx)(O.Z, {
+            }), (0, i.jsx)(S.Z, {
               className: y.platformIcon
             }), A.intl.string(A.t["5NUVHB"]), (0, i.jsx)(o.NoS, {
               onClick: () => (0, u.Z)({
@@ -145,7 +145,7 @@ let b = e => {
               className: y.premiumAction,
               noticeType: b,
               onClick: () => {
-                S.default.track(N.rMx.PREMIUM_PROMOTION_OPENED, {
+                O.default.track(N.rMx.PREMIUM_PROMOTION_OPENED, {
                   location_section: N.jXE.NOTIFICATION_BAR,
                   location_object: N.qAy.BUTTON_CTA
                 }), a.Z.open(N.oAB.PREMIUM)
