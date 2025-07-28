@@ -1,6 +1,6 @@
 /**
   Module ID: 59256
-  Original File Name: fa0f421280e39644
+  Original File Name: 4ca46edbc10c7dd5
 **/
 .container__6f9f7 {
     display: flex;
@@ -419,6 +419,10 @@
     position: relative
 }
 
+.learnMore__7b2a3 {
+    cursor: pointer
+}
+
 .prefixInput__9d137 {
     background-color: var(--input-background);
     border: 1px solid var(--input-border);
@@ -674,4 +678,4 @@
     margin-top: var(--space-16)
 }
 
-/*# sourceMappingURL=fa0f421280e39644.css.map*/
+/*# sourceMappingURL=4ca46edbc10c7dd5.css.map*/

@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   a = n(73800),
-  o = n(120356),
-  l = n.n(o),
+  l = n(120356),
+  o = n.n(l),
   s = n(866442),
   i = n(481060),
   c = n(957537),
@@ -26,7 +26,7 @@ var r = n(255367),
 function C() {
   var e;
   let t = a.useMemo(() => Math.floor(Math.random() * b.tl.length), []),
-    [n, o] = a.useState({
+    [n, l] = a.useState({
       primary_color: b.tl[t].start,
       secondary_color: b.tl[t].end
     }),
@@ -49,7 +49,7 @@ function C() {
         avatar: c.Z,
         username: "Cherry",
         usernameStyle: d,
-        usernameClassName: l()(p, v.animateGradient),
+        usernameClassName: o()(p, v.animateGradient),
         message: x.intl.string(x.t["6OSasb"])
       })
     }), (0, r.jsx)(u.default, {
@@ -59,7 +59,7 @@ function C() {
       secondaryValue: null != (e = n.secondary_color) ? e : void 0,
       onChange: e => {
         var t, r;
-        return o((t = function(e) {
+        return l((t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -89,7 +89,7 @@ function C() {
           Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
         }), t))
       },
-      onChangeGradientColors: e => o({
+      onChangeGradientColors: e => l({
         primary_color: e[0],
         secondary_color: e[1],
         tertiary_color: void 0
@@ -102,10 +102,10 @@ function C() {
 function y(e) {
   let {
     guildId: t
-  } = e, [n, o] = a.useState(h.x_.HEART), l = (0, g.Z)(), s = a.useMemo(() => ({
-    unlockedBadges: l.unlockedBadges.slice(0, 10),
+  } = e, [n, l] = a.useState(h.x_.HEART), o = (0, g.Z)(), s = a.useMemo(() => ({
+    unlockedBadges: o.unlockedBadges.slice(0, 10),
     lockedBadges: []
-  }), [l]);
+  }), [o]);
   return (0, r.jsxs)("div", {
     className: j.container,
     children: [(0, r.jsx)("div", {
@@ -125,7 +125,7 @@ function y(e) {
       })
     }), (0, r.jsx)(p.g, {
       selectedBadge: n,
-      onBadgeClicked: o,
+      onBadgeClicked: l,
       badgeCollection: s
     })]
   })
