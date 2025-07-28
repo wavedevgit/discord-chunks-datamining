@@ -8,8 +8,8 @@ var r = t(597312),
   i = t(442837),
   o = t(481060),
   s = t(860719),
-  a = t(621853),
-  c = t(388032),
+  c = t(621853),
+  a = t(388032),
   u = t(137861);
 
 function d(e) {
@@ -44,9 +44,9 @@ function d(e) {
 function f(e) {
   let {
     user: n
-  } = e, t = (0, i.e7)([a.Z], () => {
+  } = e, t = (0, i.e7)([c.Z], () => {
     var e;
-    return null == (e = a.Z.getUserProfile(n.id)) ? void 0 : e.application
+    return null == (e = c.Z.getUserProfile(n.id)) ? void 0 : e.application
   }), {
     hasMessageContent: f,
     hasGuildPresences: p,
@@ -59,19 +59,19 @@ function f(e) {
     className: u.scroller,
     children: [f && (0, l.jsx)(d, {
       icon: o.kBi,
-      title: c.intl.string(c.t["7Tmhfn"]),
-      description: c.intl.string(c.t["eu5x7+"])
+      title: a.intl.string(a.t["7Tmhfn"]),
+      description: a.intl.string(a.t["eu5x7+"])
     }), p && (0, l.jsx)(d, {
       icon: o.iWm,
-      title: c.intl.string(c.t.awYSsL),
-      description: c.intl.string(c.t.TpsXoK)
+      title: a.intl.string(a.t.awYSsL),
+      description: a.intl.string(a.t.TpsXoK)
     }), g && (0, l.jsx)(d, {
       icon: o.BFJ,
-      title: c.intl.string(c.t.WuKeSE),
-      description: c.intl.string(c.t.wOBmtb)
+      title: a.intl.string(a.t.WuKeSE),
+      description: a.intl.string(a.t.wOBmtb)
     }), (0, l.jsx)(o.Text, {
       variant: "text-xs/normal",
-      children: c.intl.format(c.t.b6nqk5, {
+      children: a.intl.format(a.t.b6nqk5, {
         helpCenterUrl: "https://support.discord.com/hc/articles/7933951485975"
       })
     })]

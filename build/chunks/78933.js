@@ -168,7 +168,7 @@ function ea(e) {
           user: t,
           displayProfile: ed,
           themeType: et.lY.POPOUT,
-          children: [(0, i.jsxs)("header", {
+          children: [(0, i.jsxs)("div", {
             className: er.header,
             children: [(0, i.jsx)(y.Z, {
               user: t,

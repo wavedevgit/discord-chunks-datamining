@@ -18,14 +18,14 @@ var c = t(442837),
   m = t(316027),
   I = t(502762),
   h = t(848780),
-  b = t(907179),
-  x = t(228168),
+  x = t(907179),
+  b = t(228168),
   y = t(981631),
   v = t(388032),
-  Z = t(829441),
-  g = t(161068);
+  j = t(829441),
+  Z = t(161068);
 
-function j(e) {
+function g(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
       o = Object.keys(t);
@@ -55,13 +55,13 @@ function A(e) {
     openedAt: P,
     onHide: T,
     showGuildProfile: w = !0,
-    sourceAnalyticsLocations: S = []
-  } = e, E = t === y.ME ? void 0 : t, M = (0, c.e7)([s.Z], () => s.Z.isBlocked(n.id)), {
+    sourceAnalyticsLocations: E = []
+  } = e, S = t === y.ME ? void 0 : t, M = (0, c.e7)([s.Z], () => s.Z.isBlocked(n.id)), {
     analyticsLocations: L
-  } = (0, d.ZP)([...S, M ? r.Z.BLOCKED_PROFILE_MODAL : r.Z.IGNORED_PROFILE_MODAL]), D = (0, _.ZB)({
+  } = (0, d.ZP)([...E, M ? r.Z.BLOCKED_PROFILE_MODAL : r.Z.IGNORED_PROFILE_MODAL]), D = (0, _.ZB)({
     layout: "MODAL",
     userId: n.id,
-    guildId: E,
+    guildId: S,
     channelId: A,
     messageId: O,
     roleId: N,
@@ -72,7 +72,7 @@ function A(e) {
   }, {
     icon: a.owK,
     description: v.intl.string(M ? v.t.QxrDY2 : v.t.W6fjkZ)
-  }], B = (0, p.ZP)(n.id, w ? E : void 0), G = u.ZP.getName(null == B ? void 0 : B.guildId, A, n), k = v.intl.formatToPlainString(v.t.KRe1Fh, {
+  }], B = (0, p.ZP)(n.id, w ? S : void 0), G = u.ZP.getName(null == B ? void 0 : B.guildId, A, n), k = v.intl.formatToPlainString(v.t.KRe1Fh, {
     name: G
   });
   return (0, o.jsx)(d.Gt, {
@@ -85,28 +85,28 @@ function A(e) {
       isLoaded: null == B ? void 0 : B.isLoaded,
       children: (0, o.jsx)(a.Y0X, {
         transitionState: C,
-        className: Z.root,
+        className: j.root,
         hideShadow: !0,
         "aria-label": k,
         parentComponent: "RestrictedUserProfileModal",
         children: (0, o.jsx)(I.Z, {
           user: n,
           displayProfile: B,
-          themeType: x.lY.MODAL,
+          themeType: b.lY.MODAL,
           children: (0, o.jsxs)("div", {
-            className: Z.container,
+            className: j.container,
             children: [(0, o.jsx)("img", {
               alt: "",
-              src: g,
-              className: Z.preview,
+              src: Z,
+              className: j.preview,
               "aria-hidden": !0
             }), (0, o.jsxs)("div", {
-              className: Z.body,
+              className: j.body,
               children: [(0, o.jsx)(m.Z, {
                 user: n,
-                guildId: E
+                guildId: S
               }), (0, o.jsxs)("div", {
-                className: Z.headerContainer,
+                className: j.headerContainer,
                 children: [(0, o.jsx)(a.X6q, {
                   variant: "heading-xl/bold",
                   color: "header-primary",
@@ -119,7 +119,7 @@ function A(e) {
                   })
                 })]
               }), (0, o.jsx)("div", {
-                className: Z.safetyTable,
+                className: j.safetyTable,
                 children: R.map((e, n) => {
                   let {
                     icon: t,
@@ -133,11 +133,11 @@ function A(e) {
                 })
               }), (0, o.jsxs)(a.Kqy, {
                 align: "center",
-                children: [(0, o.jsx)(b.Z, {
+                children: [(0, o.jsx)(x.Z, {
                   size: i.Ph.MEDIUM,
                   isBlocked: M,
                   onClick: () => {
-                    T(), (0, f.pQ)(j({
+                    T(), (0, f.pQ)(g({
                       action: M ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
                       analyticsLocations: L
                     }, D))
@@ -145,7 +145,7 @@ function A(e) {
                 }), (0, o.jsx)(h.Z, {
                   userId: n.id,
                   onClick: () => {
-                    T(), (0, f.pQ)(j({
+                    T(), (0, f.pQ)(g({
                       action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
                       analyticsLocations: L
                     }, D))

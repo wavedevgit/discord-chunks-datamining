@@ -25,8 +25,8 @@ function f(e) {
     newestAnalyticsLocation: I
   } = (0, a.ZP)(), {
     gameFriends: h,
-    hasOutgoingPendingGameFriends: b,
-    hasIncomingPendingGameFriends: x
+    hasOutgoingPendingGameFriends: x,
+    hasIncomingPendingGameFriends: b
   } = (0, s.H)({
     userId: n.id
   });
@@ -63,7 +63,7 @@ function f(e) {
       autoFocus: !0
     })]
   });
-  let y = h.length > 0 || b || x;
+  let y = h.length > 0 || x || b;
   return p === u.OGo.NONE && y ? (0, o.jsxs)("div", {
     className: _.container,
     children: [(0, o.jsx)(l.k9, {
@@ -72,8 +72,8 @@ function f(e) {
       analyticsLocation: I,
       gameFriends: h,
       shouldShowTooltip: !0,
-      hasIncomingPendingGameFriends: x,
-      hasOutgoingPendingGameFriends: b
+      hasIncomingPendingGameFriends: b,
+      hasOutgoingPendingGameFriends: x
     }), (0, o.jsx)(d.Z, {
       type: "text",
       userId: n.id,

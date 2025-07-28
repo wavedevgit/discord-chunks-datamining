@@ -32,9 +32,10 @@ function m(e) {
     onOpenProfile: v,
     onClose: I,
     nicknameVariant: T = "heading-lg/bold"
-  } = e, S = e => null == v ? e : (0, r.jsx)(o.P3F, {
+  } = e, S = e => null == v ? e : (0, r.jsx)(o.kL8, {
     onClick: v,
     className: h.clickableUsername,
+    "aria-label": p.intl.string(p.t["+Xp3ho"]),
     children: e
   }), A = null != E && E.length > 0, N = (0, l.D)(t);
   return (0, r.jsxs)("div", {
@@ -43,7 +44,7 @@ function m(e) {
     }, b),
     children: [(0, r.jsxs)("div", {
       className: h.usernameRow,
-      children: [S((0, r.jsx)(o.X6q, {
+      children: [S((0, r.jsx)(o.Text, {
         className: h.nickname,
         variant: T,
         children: (0, r.jsx)(d.Z, {

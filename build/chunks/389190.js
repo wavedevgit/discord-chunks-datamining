@@ -1,38 +1,38 @@
 /** Chunk was on 37048 **/
 t.d(n, {
-  Z: () => v
+  Z: () => j
 });
 var l = t(255367),
   r = t(73800),
   i = t(481060),
   o = t(81897),
   s = t(906732),
-  a = t(785717),
-  c = t(806729),
+  c = t(785717),
+  a = t(806729),
   u = t(857302),
   d = t(892001),
   f = t(252417),
   p = t(388032),
   g = t(301150);
 
-function v(e) {
+function j(e) {
   let {
     user: n,
     guildId: t,
-    channelId: v,
-    onClose: j
+    channelId: j,
+    onClose: v
   } = e, {
     mutualFriends: h
-  } = (0, c.Z)(n), {
+  } = (0, a.Z)(n), {
     analyticsLocations: m
   } = (0, s.ZP)(), {
     context: b,
     trackUserProfileAction: x
-  } = (0, a.KZ)(), O = (0, o.Z)();
+  } = (0, c.KZ)(), y = (0, o.Z)();
   r.useEffect(() => {
-    (0, u.Z)(n.id, O)
-  }, [n.id, O]);
-  let y = e => {
+    (0, u.Z)(n.id, y)
+  }, [n.id, y]);
+  let O = e => {
     var n, t;
     (0, d.openUserProfileModal)((n = function(e) {
       for (var n = 1; n < arguments.length; n++) {
@@ -89,11 +89,11 @@ function v(e) {
         user: r,
         status: i,
         guildId: t,
-        channelId: v,
+        channelId: j,
         onSelect: () => {
-          null == j || j(), x({
+          null == v || v(), x({
             action: "PRESS_MUTUAL_FRIEND"
-          }), y(r.id)
+          }), O(r.id)
         }
       }, n)
     })

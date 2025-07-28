@@ -105,7 +105,7 @@ function R(e) {
                 type: "banner",
                 user: t
               })]
-            }), (0, r.jsxs)("header", {
+            }), (0, r.jsxs)("div", {
               className: A.header,
               children: [(0, r.jsx)(C.Z, {
                 user: t,
@@ -117,14 +117,14 @@ function R(e) {
                 userId: t.id,
                 className: A.toast
               }), (0, r.jsx)(y.Z, {
-                location: "UserProfileSiebar",
+                location: "UserProfileSidebar",
                 user: t,
                 displayProfile: D,
                 channelId: R.id,
                 themeType: T.lY.SIDEBAR,
                 onOpenProfile: M ? void 0 : z
               }), (0, r.jsx)(P.Z, {
-                location: "UserProfileSiebar",
+                location: "UserProfileSidebar",
                 user: t,
                 channelId: R.id,
                 themeType: T.lY.SIDEBAR,
@@ -141,7 +141,7 @@ function R(e) {
               user: t,
               channelId: R.id
             })]
-          }), !M && (0, r.jsx)("footer", {
+          }), !M && (0, r.jsx)("div", {
             className: A.footer,
             children: (0, r.jsx)(o.zx, {
               fullWidth: !0,

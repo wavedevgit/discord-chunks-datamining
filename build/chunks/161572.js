@@ -19,7 +19,7 @@ function l(e) {
     appContext: u,
     disableAutoFocus: d = !1
   } = e, f = (0, i.Z)(t.id, n);
-  return (0, r.jsxs)("footer", {
+  return (0, r.jsxs)("div", {
     className: s.footer,
     children: [f && (0, r.jsx)(o.Z, {
       user: t,

@@ -86,7 +86,7 @@ function w(e) {
             children: (0, r.jsx)(S.Z, {
               user: t
             })
-          }), (0, r.jsxs)("header", {
+          }), (0, r.jsxs)("div", {
             className: T.header,
             children: [(0, r.jsx)(C.Z, {
               user: t,
@@ -131,7 +131,7 @@ function w(e) {
               })]
             })]
           })]
-        }), !w && (0, r.jsx)("footer", {
+        }), !w && (0, r.jsx)("div", {
           className: T.footer,
           children: (0, r.jsx)(a.zx, {
             fullWidth: !0,

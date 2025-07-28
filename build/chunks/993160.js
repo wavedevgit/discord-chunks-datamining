@@ -21,8 +21,8 @@ function b(e) {
     user: t,
     currentUser: n,
     guildId: b,
-    channelId: _,
-    displayProfile: x,
+    channelId: x,
+    displayProfile: _,
     relationshipType: h,
     onClose: y
   } = e, {
@@ -30,8 +30,8 @@ function b(e) {
   } = (0, c.ZP)(), j = (0, l.Z)({
     user: t,
     guildId: b,
-    channelId: _,
-    displayProfile: x,
+    channelId: x,
+    displayProfile: _,
     onClose: y
   }), {
     gameFriends: I,
