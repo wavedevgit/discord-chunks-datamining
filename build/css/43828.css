@@ -1,6 +1,6 @@
 /**
   Module ID: 43828
-  Original File Name: 9004abfbdb5adeaa
+  Original File Name: 612acb6c626d4879
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -8149,7 +8149,7 @@ div:has(>.positionLayer__4f4b6) {
     opacity: 0;
     position: absolute;
     right: -60px;
-    top: -70px;
+    top: -80px;
     transition: opacity .2s ease-in-out
 }
 
@@ -8263,36 +8263,14 @@ div:has(>.positionLayer__4f4b6) {
     }
 }
 
-.container_ac6cb0 {
-    background: none!important;
-    border: none;
-    box-shadow: none!important;
-    height: 365px;
-    width: 570px
-}
-
-.mobileContainer_ac6cb0 {
-    height: auto;
-    max-height: 365px;
-    width: 100%
-}
-
 .quickswitcher_ac6cb0 {
     align-items: stretch;
-    background-color: var(--background-surface-high);
-    border: 1px solid var(--border-normal);
     border-radius: 8px;
-    box-shadow: none;
     color: var(--text-default);
     display: flex;
     flex-direction: column;
-    padding: 20px 20px 0;
-    position: relative;
-    width: 570px
-}
-
-.mobileQuickswitcher_ac6cb0 {
-    width: 100%
+    padding: 12px 20px 0;
+    position: relative
 }
 
 .quickswitcher_ac6cb0,.quickswitcher_ac6cb0 * {
@@ -8330,7 +8308,6 @@ div:has(>.positionLayer__4f4b6) {
 }
 
 .scroller_ac6cb0 {
-    background-color: var(--background-surface-high);
     margin-right: -17px;
     margin-top: 16px;
     max-height: 236px;
@@ -8342,7 +8319,7 @@ div:has(>.positionLayer__4f4b6) {
 }
 
 .protip_ac6cb0 {
-    padding: 10px 0
+    padding: 10px 0 0
 }
 
 .protip_ac6cb0.hasContent_ac6cb0 {
@@ -8483,4 +8460,4 @@ div:has(>.positionLayer__4f4b6) {
     width: 96px
 }
 
-/*# sourceMappingURL=9004abfbdb5adeaa.css.map*/
+/*# sourceMappingURL=612acb6c626d4879.css.map*/

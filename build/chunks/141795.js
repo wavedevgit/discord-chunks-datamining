@@ -374,11 +374,12 @@ class x extends y.ZP {
     });
     if (e.enabled) {
       if (null == this.item.file) return void C.warn("webp conversion skipped for ".concat(this.id, ": no file"));
-      try {
+      if (!this._aborted) try {
         let r = await (0, v.LF)([this.item.file], {
           minFileSizeBytes: e.minFileSizeBytes,
           minSizeReductionPercent: e.minSizeReductionPercent
         });
+        if (this._aborted) return;
         if (r.length > 0 && r[0].success) {
           let e = r[0];
           this.item.file = (0, v.ub)(e), this.currentSize = this.item.file.size, C.log("webp conversion worked for ".concat(this.id, ": ").concat(e.sizeBefore, " -> ").concat(e.sizeAfter, " bytes (").concat(e.compressionRatio.toFixed(2), "x)"))
@@ -402,10 +403,10 @@ class x extends y.ZP {
     this.setStatus("COMPLETED"), C.log("Upload complete for ".concat(this.id)), this.emit("complete", e), this.removeAllListeners()
   }
   cancel() {
-    C.log("Cancelled called for ".concat(this.id)), this._abortController.abort(), this.trackUploadFinished("CANCELED"), "COMPLETED" === this.status && this.delete(), this.setStatus("CANCELED"), this.emit("complete"), this.removeAllListeners()
+    C.log("Cancelled called for ".concat(this.id)), this._aborted = !0, this._abortController.abort(), this.trackUploadFinished("CANCELED"), "COMPLETED" === this.status && this.delete(), this.setStatus("CANCELED"), this.emit("complete"), this.removeAllListeners()
   }
   resetState() {
-    return this.status = "NOT_STARTED", this.uploadedFilename = void 0, this.responseUrl = void 0, this.error = void 0, this.startTime = void 0, this.uploadAnalytics = new L, this.uploadAttempts = 0, this._abortController = new AbortController, super.resetState()
+    return this.status = "NOT_STARTED", this.uploadedFilename = void 0, this.responseUrl = void 0, this.error = void 0, this.startTime = void 0, this.uploadAnalytics = new L, this.uploadAttempts = 0, this._aborted = !1, this._abortController = new AbortController, super.resetState()
   }
   async delete() {
     if (null == this.uploadedFilename) return;
