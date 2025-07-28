@@ -107,14 +107,14 @@ function S(e) {
     redeemed_at: I,
     trial_id: R,
     subscription_trial: k,
-    referrer: Z
-  } = m, A = null != (a = null == (t = h.find(e => {
+    referrer: A
+  } = m, Z = null != (a = null == (t = h.find(e => {
     let {
       value: t
     } = e;
     return t === R
   })) ? void 0 : t.label) ? a : "Unknown";
-  null != Z && (A = "".concat(A, " from @").concat(Z.username));
+  null != A && (Z = "".concat(Z, " from @").concat(A.username));
   let D = null != w,
     L = null != w && new Date(w).getTime() < Date.now(),
     M = (null == k ? void 0 : k.sku_id) === j.Si.TIER_0,
@@ -181,7 +181,7 @@ function S(e) {
       children: (0, n.jsx)(c.X6q, {
         variant: "heading-lg/semibold",
         color: "always-white",
-        children: A
+        children: Z
       })
     }), (0, n.jsxs)(c.P3F, {
       className: i()(g.row, g.idRow),
@@ -251,7 +251,7 @@ function S(e) {
         children: "Referrer ID:"
       }), (0, n.jsx)("input", {
         type: "text",
-        value: null != (u = null == Z ? void 0 : Z.id) ? u : "",
+        value: null != (u = null == A ? void 0 : A.id) ? u : "",
         onChange: e => F({
           referrerId: e.target.value
         })
@@ -361,8 +361,8 @@ function P(e) {
       }
     }
   }, [m, h]);
-  let Z = "Active";
-  return I && (Z = "Expired"), w && (Z = "Acked"), (0, n.jsxs)("div", {
+  let A = "Active";
+  return I && (A = "Expired"), w && (A = "Acked"), (0, n.jsxs)("div", {
     className: i()(g.card, g.discount),
     children: [(0, n.jsxs)("div", {
       className: i()(g.row, g.nameRow),
@@ -445,8 +445,8 @@ function P(e) {
         }),
         children: (0, n.jsx)(c.Text, {
           variant: "eyebrow",
-          color: "Acked" === Z ? void 0 : "always-white",
-          children: Z
+          color: "Acked" === A ? void 0 : "always-white",
+          children: A
         })
       }), null != T && (0, n.jsx)("div", {
         className: i()(g.badge, g.redeemed),
@@ -466,7 +466,7 @@ function P(e) {
 }
 
 function w() {
-  let [e, t] = r.useState([]), [a, l] = r.useState([]), [i, s] = r.useState(), [x, p] = r.useState(), [j, O] = r.useState([]), [w, I] = r.useState([]), [R, k] = r.useState(!0), [Z, A] = r.useState(10080), [D, L] = r.useState([]), {
+  let [e, t] = r.useState([]), [a, l] = r.useState([]), [i, s] = r.useState(), [x, p] = r.useState(), [j, O] = r.useState([]), [w, I] = r.useState([]), [R, k] = r.useState(!0), [A, Z] = r.useState(10080), [D, L] = r.useState([]), {
     entitlements: M,
     deleteFractionalPremium: U,
     refreshEntitlementList: F
@@ -501,7 +501,7 @@ function w() {
   }, V = async () => {
     await T(), k(!0)
   }, H = async () => {
-    let e = new Date(Date.now() + 60 * Z * 1e3).toISOString();
+    let e = new Date(Date.now() + 60 * A * 1e3).toISOString();
     await E(e), F()
   };
   return (0, n.jsx)(c.zJl, {
@@ -616,10 +616,10 @@ function w() {
               label: "1 week",
               value: 10080
             }],
-            isSelected: e => Z === e,
+            isSelected: e => A === e,
             placeholder: "Reverse Trial Length",
             serialize: e => String(e),
-            select: e => A(e),
+            select: e => Z(e),
             popoutLayerContext: b.O$
           }), (0, n.jsx)(c.zxk, {
             variant: "primary",

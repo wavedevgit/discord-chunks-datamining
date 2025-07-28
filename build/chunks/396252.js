@@ -1,4 +1,4 @@
-/** Chunk was on 23045 **/
+/** Chunk was on 77451 **/
 n.d(t, {
   Z: () => h
 });
@@ -28,13 +28,13 @@ function h(e) {
   } = e, E = (0, a.e7)([c.Z], () => c.Z.getGuild(b.guild_id)), C = (0, u.ZP)(n), x = h(C), {
     avatarSrc: v,
     eventHandlers: {
-      onMouseEnter: O,
-      onMouseLeave: y
+      onMouseEnter: y,
+      onMouseLeave: O
     }
   } = (0, p.m)(!0);
   return (0, r.jsx)("div", {
-    onMouseEnter: O,
-    onMouseLeave: y,
+    onMouseEnter: y,
+    onMouseLeave: O,
     children: (0, r.jsx)(m.Z, {
       className: l()(_.mainContainer, {
         [_.compact]: i

@@ -1,6 +1,6 @@
-/** Chunk was on 23045 **/
+/** Chunk was on 77451 **/
 n.d(t, {
-  Z: () => V
+  Z: () => H
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -22,8 +22,8 @@ var r = n(255367),
   C = n(348238),
   x = n(38267),
   v = n(25015),
-  O = n(438075),
-  y = n(359110),
+  y = n(438075),
+  O = n(359110),
   j = n(6025),
   I = n(695346),
   S = n(433355),
@@ -57,7 +57,7 @@ function F(e) {
       channelId: r.id,
       baseChannelId: l,
       guildId: r.guild_id
-    }), (0, y.Kh)(l), L.default.track(k.rMx.MODERATOR_REPORT_ORIGINAL_MESSAGE_LINK_CLICKED, {
+    }), (0, O.Kh)(l), L.default.track(k.rMx.MODERATOR_REPORT_ORIGINAL_MESSAGE_LINK_CLICKED, {
       moderator_report_id: t.channel_id,
       destination_channel_id: l,
       destination_message_id: t.id
@@ -186,21 +186,21 @@ function G(e) {
       allowDevLinks: b,
       previewLinkTarget: !0
     }),
-    y = (0, a.e7)([T.Z], () => T.Z.getChannel(o.channel_id));
-  return null == y ? null : (0, r.jsx)("div", {
+    O = (0, a.e7)([T.Z], () => T.Z.getChannel(o.channel_id));
+  return null == O ? null : (0, r.jsx)("div", {
     className: U.container,
     children: (0, r.jsxs)("div", {
       className: U.content,
       children: [(0, r.jsx)(B, {
         mergedMessageRecord: g,
         content: C,
-        channel: y,
+        channel: O,
         reportingUserId: null == s || null == (n = s.moderatorReport) ? void 0 : n.reporting_user_id,
         reportedTimestamp: o.timestamp
-      }), (0, O.Z)({
+      }), (0, y.Z)({
         channelMessageProps: {
           message: g,
-          channel: y,
+          channel: O,
           compact: !1
         },
         hasSpoilerEmbeds: x,
@@ -217,7 +217,7 @@ function G(e) {
   }, c)
 }
 
-function V(e) {
+function H(e) {
   let {
     message: t
   } = e;

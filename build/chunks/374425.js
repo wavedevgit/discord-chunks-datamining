@@ -1,6 +1,6 @@
-/** Chunk was on 23045 **/
+/** Chunk was on 77451 **/
 n.d(t, {
-  Z: () => O
+  Z: () => y
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -60,23 +60,23 @@ let x = (0, d.Mg)(l.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
       is_custom: (0, m.z)(e.type)
     })
   },
-  O = e => {
+  y = e => {
     let {
       renderableSticker: t,
       channel: n,
       isInteracting: l
-    } = e, s = i.useRef(null), [d, m] = i.useState(!0), [_, h] = i.useState(String(Date.now())), [O] = (0, p.XW)(t, l), {
-      analyticsLocations: y
+    } = e, s = i.useRef(null), [d, m] = i.useState(!0), [_, h] = i.useState(String(Date.now())), [y] = (0, p.XW)(t, l), {
+      analyticsLocations: O
     } = (0, c.ZP)(o.Z.STICKER_MESSAGE), j = (0, r.jsxs)("span", {
       className: b.stickerName,
       children: [(0, r.jsx)(a.B7q, {
         size: "xs",
         color: "currentColor",
         className: b.stickerIcon
-      }), (null != O ? O : t).name]
+      }), (null != y ? y : t).name]
     });
     return (0, r.jsx)(c.Gt, {
-      value: y,
+      value: O,
       children: (0, r.jsx)(a.yRy, {
         align: "center",
         animation: a.yRy.Animation.TRANSLATE,
@@ -99,7 +99,7 @@ let x = (0, d.Mg)(l.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
             text: (0, u.Y)(j),
             "aria-label": !1,
             onTooltipShow: () => {
-              v(O)
+              v(y)
             },
             children: e => (0, r.jsx)(a.P3F, C(E({}, e), {
               innerRef: s,
@@ -111,7 +111,7 @@ let x = (0, d.Mg)(l.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
               children: (0, r.jsx)(f.Z, {
                 isInteracting: l,
                 size: x,
-                sticker: null != O ? O : t
+                sticker: null != y ? y : t
               })
             }))
           }))

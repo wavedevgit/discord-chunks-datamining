@@ -1,4 +1,4 @@
-/** Chunk was on 23045 **/
+/** Chunk was on 77451 **/
 n.d(t, {
   Z: () => F
 }), n(388685);
@@ -22,8 +22,8 @@ var r = n(255367),
   C = n(943762),
   x = n(914498),
   v = n(515344),
-  O = n(429551),
-  y = n(973616),
+  y = n(429551),
+  O = n(973616),
   j = n(314897),
   I = n(592125),
   S = n(158776),
@@ -47,13 +47,13 @@ let U = i.memo(e => {
     return e.start(c ? 15 * A.Z.Millis.SECOND : A.Z.Millis.SECOND, () => {
       r((new Date().getTime() - t) / A.Z.Millis.SECOND)
     }), () => e.stop()
-  }, [c, t]), (0, O.m)(n)
+  }, [c, t]), (0, y.m)(n)
 });
 U.displayName = "ActivityRuntimeCounter";
 let F = i.memo(function(e) {
   var t, n, l, s;
   let d, {
-      application: O,
+      application: y,
       channelId: A,
       guildId: Z
     } = e,
@@ -62,34 +62,34 @@ let F = i.memo(function(e) {
     } = (0, h.ZP)(_.Z.ACTIVITY_INSTANCE_EMBED),
     B = (0, u.O)(),
     G = (0, o.e7)([I.Z], () => I.Z.getChannel(A), [A]),
-    V = (null == G || null == (t = G.isThread) ? void 0 : t.call(G)) ? null == G ? void 0 : G.parent_id : A,
-    H = (0, o.e7)([j.default], () => j.default.getId()),
+    H = (null == G || null == (t = G.isThread) ? void 0 : t.call(G)) ? null == G ? void 0 : G.parent_id : A,
+    V = (0, o.e7)([j.default], () => j.default.getId()),
     {
       embeddedActivity: z,
       currentEmbeddedActivity: W,
       activityLaunchState: K
     } = (0, o.cj)([p.ZP], () => ({
-      embeddedActivity: p.ZP.getEmbeddedActivitiesForChannel(null != V ? V : "").find(e => e.applicationId === O.id),
+      embeddedActivity: p.ZP.getEmbeddedActivitiesForChannel(null != H ? H : "").find(e => e.applicationId === y.id),
       currentEmbeddedActivity: p.ZP.getCurrentEmbeddedActivity(),
-      activityLaunchState: p.ZP.getLaunchState(O.id, null != V ? V : void 0)
-    }), [V, O.id]),
+      activityLaunchState: p.ZP.getLaunchState(y.id, null != H ? H : void 0)
+    }), [H, y.id]),
     Y = null == z ? void 0 : z.userIds,
     X = (0, o.Wu)([T.default], () => Array.from(null != Y ? Y : []).map(e => T.default.getUser(e)).filter(w.lm), [Y]),
     q = (0, o.e7)([S.Z], () => {
       if (null == Y) return null;
       for (let e of Y) {
-        let t = S.Z.findActivity(e, e => e.application_id === O.id);
+        let t = S.Z.findActivity(e, e => e.application_id === y.id);
         if (null != t) return t
       }
       return null
-    }, [O.id, Y]),
+    }, [y.id, Y]),
     Q = null == q ? void 0 : q.details,
     J = i.useMemo(() => {
-      let e = new y.ZP(O);
+      let e = new O.ZP(y);
       return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = D.wT), e
-    }, [O]),
+    }, [y]),
     $ = (0, g.s5)({
-      userId: H,
+      userId: V,
       channelId: A,
       application: J
     }),
@@ -104,13 +104,13 @@ let F = i.memo(function(e) {
     er = null != K && K.isLaunching && K.componentId === en,
     ei = async () => {
       N.default.track(L.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
-        application_id: O.id,
+        application_id: y.id,
         channel_id: A,
         channel_type: null == G ? void 0 : G.type,
         is_activity_start: ee,
         cta: "Play"
       }), ee ? await (0, f.Z)({
-        targetApplicationId: O.id,
+        targetApplicationId: y.id,
         channelId: A,
         locationObject: B.location,
         analyticsLocations: F,
@@ -125,15 +125,15 @@ let F = i.memo(function(e) {
       })
     }, el = et.disabled ? k.intl.string(k.t.JBnc7O) : k.intl.string(k.t.cX9uLS), ea = (0, v.G)(J, () => {
       N.default.track(L.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
-        application_id: O.id,
+        application_id: y.id,
         channel_id: A,
         channel_type: null == G ? void 0 : G.type,
         cta: "View"
       })
     }), eo = P.ZP.getApplicationIconURL({
-      id: O.id,
-      icon: O.icon,
-      bot: O.bot
+      id: y.id,
+      icon: y.icon,
+      bot: y.bot
     });
   et.disabled && (d = null != (l = et.tooltip) ? l : et.text);
   let es = X.length,
@@ -148,7 +148,7 @@ let F = i.memo(function(e) {
     }];
   return (0, r.jsx)(E.W, {
     header: k.intl.string(k.t.pkq6Vl),
-    title: O.name,
+    title: y.name,
     iconSrc: eo,
     info: (0, r.jsx)("div", {
       className: M.infoWrapper,
@@ -198,7 +198,7 @@ let F = i.memo(function(e) {
     actions: ed,
     onClickContent: ea,
     trackingConfig: {
-      id: O.id,
+      id: y.id,
       linkType: x.Un.ACTIVITY_INSTANCE
     }
   })

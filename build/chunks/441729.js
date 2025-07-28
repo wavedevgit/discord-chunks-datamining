@@ -3,9 +3,9 @@ r.d(t, {
   Z: () => f
 });
 var n, l = r(442837),
-  a = r(570140);
+  i = r(570140);
 
-function i(e, t, r) {
+function a(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
     value: r,
     enumerable: !0,
@@ -14,20 +14,20 @@ function i(e, t, r) {
   }) : e[t] = r, e
 }
 
-function c(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
     "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
       return Object.getOwnPropertyDescriptor(r, e).enumerable
     }))), n.forEach(function(t) {
-      i(e, t, r[t])
+      a(e, t, r[t])
     })
   }
   return e
 }
 
-function o(e, t) {
+function c(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -46,7 +46,7 @@ let s = {
   u = s;
 class b extends(n = l.ZP.DeviceSettingsStore) {
   initialize(e) {
-    u = c({}, s, null != e ? e : null)
+    u = o({}, s, null != e ? e : null)
   }
   isSpeakingMessage(e, t) {
     let {
@@ -64,14 +64,14 @@ class b extends(n = l.ZP.DeviceSettingsStore) {
     return u
   }
 }
-i(b, "displayName", "TTSStore"), i(b, "persistKey", "TTSStore"), i(b, "migrations", []);
-let f = new b(a.Z, __OVERLAY__ ? {} : {
+a(b, "displayName", "TTSStore"), a(b, "persistKey", "TTSStore"), a(b, "migrations", []);
+let f = new b(i.Z, __OVERLAY__ ? {} : {
   SPEAKING_MESSAGE: function(e) {
     let {
       messageId: t,
       channelId: r
     } = e;
-    u = o(c({}, u), {
+    u = c(o({}, u), {
       currentMessage: {
         messageId: t,
         channelId: r
@@ -79,12 +79,12 @@ let f = new b(a.Z, __OVERLAY__ ? {} : {
     })
   },
   STOP_SPEAKING: function() {
-    u = o(c({}, u), {
+    u = c(o({}, u), {
       currentMessage: null
     })
   },
   SET_TTS_SPEECH_RATE: function(e) {
-    u = o(c({}, u), {
+    u = c(o({}, u), {
       speechRate: e.speechRate
     })
   }

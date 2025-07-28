@@ -1,4 +1,4 @@
-/** Chunk was on 23045 **/
+/** Chunk was on 77451 **/
 n.d(t, {
   Z: () => U
 }), n(388685);
@@ -22,8 +22,8 @@ var r = n(255367),
   C = n(348238),
   x = n(38267),
   v = n(884902),
-  O = n(670188),
-  y = n(695346),
+  y = n(670188),
+  O = n(695346),
   j = n(271383),
   I = n(594174),
   S = n(768581),
@@ -75,9 +75,9 @@ function U(e) {
     embedUrl: F,
     message: B,
     channel: G
-  } = e, V = i.useRef(null), H = i.useRef(null), z = (0, A.J)(F, B), {
+  } = e, H = i.useRef(null), V = i.useRef(null), z = (0, A.J)(F, B), {
     setPopout: W
-  } = (0, x.Z)(B.id, Z.d$), K = (0, C.qo)(B, G, W, !0), Y = y.QK.useSetting(), X = (0, N.n)(), [q, Q] = i.useState(!1), [J, $] = i.useState((null == z ? void 0 : z.coverImage) == null), ee = (0, c.e7)([p.Z], () => p.Z.useReducedMotion), et = (0, c.e7)([j.ZP, I.default], () => {
+  } = (0, x.Z)(B.id, Z.d$), K = (0, C.qo)(B, G, W, !0), Y = O.QK.useSetting(), X = (0, N.n)(), [q, Q] = i.useState(!1), [J, $] = i.useState((null == z ? void 0 : z.coverImage) == null), ee = (0, c.e7)([p.Z], () => p.Z.useReducedMotion), et = (0, c.e7)([j.ZP, I.default], () => {
     var e;
     return j.ZP.isMember(null == z ? void 0 : z.guildId, null == (e = I.default.getCurrentUser()) ? void 0 : e.id)
   }, [z]), en = (0, c.e7)([j.ZP], () => (null == z ? void 0 : z.authorId) != null ? j.ZP.getMember(z.guildId, z.authorId) : null), er = (0, g.Z)((null == en ? void 0 : en.avatarDecoration) != null ? null == en ? void 0 : en.avatarDecoration : null == z || null == (t = z.user) ? void 0 : t.avatarDecoration), [ei, el, ea] = i.useMemo(() => {
@@ -169,8 +169,8 @@ function U(e) {
         })]
       }), (0, r.jsxs)("div", {
         className: L.descriptionFooter,
-        children: [null != z.authorId && null != eg && (0, r.jsx)(O.Z, {
-          targetElementRef: H,
+        children: [null != z.authorId && null != eg && (0, r.jsx)(y.Z, {
+          targetElementRef: V,
           userId: z.authorId,
           guildId: z.guildId,
           channelId: G.id,
@@ -183,7 +183,7 @@ function U(e) {
             onMouseEnter: e_,
             onMouseLeave: e_,
             children: (0, r.jsx)(d.qEK, M(k({}, e), {
-              ref: H,
+              ref: V,
               size: d.EFr.SIZE_40,
               src: eg,
               "aria-label": R.intl.string(R.t.KXz3XF),
@@ -218,8 +218,8 @@ function U(e) {
                 color: ei,
                 roleColors: eo,
                 className: L.authorName
-              }) : (0, r.jsx)(O.Z, {
-                targetElementRef: V,
+              }) : (0, r.jsx)(y.Z, {
+                targetElementRef: H,
                 userId: z.authorId,
                 guildId: z.guildId,
                 channelId: G.id,
@@ -228,7 +228,7 @@ function U(e) {
                 avatarUrl: z.avatarUrl,
                 newAnalyticsLocations: [m.Z.USERNAME],
                 children: e => (0, r.jsx)(d.rz2, M(k({}, e), {
-                  ref: V,
+                  ref: H,
                   name: z.authorName,
                   color: ei,
                   roleColors: eo,

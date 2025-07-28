@@ -1,6 +1,6 @@
 /** Chunk was on 95336 **/
 r.d(t, {
-  ZP: () => S,
+  ZP: () => _,
   fO: () => m,
   sF: () => g
 });
@@ -56,15 +56,15 @@ let g = s.forwardRef(function(e, t) {
     tooltipText: l,
     tooltipColor: g,
     icon: m,
-    iconProps: S,
-    onClick: _,
+    iconProps: _,
+    onClick: S,
     onTooltipShow: y,
     onTooltipHide: b,
     disabled: x,
     dangerous: E,
-    separator: O,
-    sparkle: v,
-    showNewBadge: C,
+    separator: v,
+    sparkle: C,
+    showNewBadge: O,
     buttonClassName: j,
     children: R
   } = e, I = f(e, ["label", "ariaLabel", "tooltipText", "tooltipColor", "icon", "iconProps", "onClick", "onTooltipShow", "onTooltipHide", "disabled", "dangerous", "separator", "sparkle", "showNewBadge", "buttonClassName", "children"]);
@@ -103,7 +103,7 @@ let g = s.forwardRef(function(e, t) {
           onMouseEnter: f,
           onMouseLeave: g,
           onClick: e => {
-            null == y || y(), _(e)
+            null == y || y(), S(e)
           },
           "aria-label": null != s ? s : r,
           disabled: x,
@@ -112,10 +112,10 @@ let g = s.forwardRef(function(e, t) {
           children: [null != m ? (0, n.jsx)(m, p({
             className: d.icon,
             color: "currentColor"
-          }, S)) : null, null != R ? (0, n.jsx)("div", {
+          }, _)) : null, null != R ? (0, n.jsx)("div", {
             className: a()(d.icon, d.buttonContent),
             children: R
-          }) : null, v && (0, n.jsx)(i.K1N, {}), C && (0, n.jsx)(i.IGR, {
+          }) : null, C && (0, n.jsx)(i.K1N, {}), O && (0, n.jsx)(i.IGR, {
             text: h.intl.string(h.t.y2b7CA),
             color: o.Z.BG_BRAND,
             className: d.newBadge
@@ -129,7 +129,7 @@ let g = s.forwardRef(function(e, t) {
           return r
         })(Object(u)).forEach(function(e) {
           Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(u, e))
-        }), l)), O && (0, n.jsx)(c.Z0, {})]
+        }), l)), v && (0, n.jsx)(c.Z0, {})]
       })
     }
   })
@@ -144,7 +144,7 @@ function m(e) {
   })
 }
 
-function S(e) {
+function _(e) {
   var {
     children: t
   } = e, r = f(e, ["children"]);

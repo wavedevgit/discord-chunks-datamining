@@ -1,6 +1,6 @@
-/** Chunk was on 23045 **/
+/** Chunk was on 77451 **/
 n.d(t, {
-  Z: () => H
+  Z: () => V
 }), n(953529), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -22,8 +22,8 @@ var r = n(255367),
   C = n(767714),
   x = n(430824),
   v = n(594174),
-  O = n(626135),
-  y = n(74538),
+  y = n(626135),
+  O = n(74538),
   j = n(453070),
   I = n(926491),
   S = n(378233),
@@ -80,7 +80,7 @@ let k = (e, t) => t ? w.intl.format(w.t.auckX1, {
   };
 
 function U(e) {
-  O.default.track(P.rMx.PREMIUM_PROMOTION_OPENED, {
+  y.default.track(P.rMx.PREMIUM_PROMOTION_OPENED, {
     location_page: null != e.guild_id ? P.ZY5.GUILD_CHANNEL : P.ZY5.DM_CHANNEL,
     location_section: P.jXE.STICKER_POPOUT
   }), (0, E.z)()
@@ -141,7 +141,7 @@ let B = e => {
       let {
         channel: e
       } = _.current;
-      O.default.track(P.rMx.OPEN_POPOUT, L({
+      y.default.track(P.rMx.OPEN_POPOUT, L({
         type: P.jXE.STICKER_POPOUT,
         guild_id: e.getGuildId(),
         sticker_pack_id: n.pack_id
@@ -189,10 +189,10 @@ let B = e => {
       [j, I] = i.useState(null),
       [S, N] = i.useState(!1),
       k = v.default.getCurrentUser(),
-      M = y.ZP.canUseCustomStickersEverywhere(k),
+      M = O.ZP.canUseCustomStickersEverywhere(k),
       B = (0, o.e7)([x.Z], () => x.Z.getGuild(n.guild_id)),
       G = null != B,
-      [V, H] = i.useState(!1),
+      [H, V] = i.useState(!1),
       [z, W] = i.useState(null),
       K = i.useMemo(() => ({
         page: null != l.guild_id ? P.ZY5.GUILD_CHANNEL : P.ZY5.DM_CHANNEL,
@@ -234,7 +234,7 @@ let B = e => {
       } = q.current;
       e()
     }, [S, j]), (0, d.ZP)(() => {
-      O.default.track(P.rMx.OPEN_POPOUT, L({
+      y.default.track(P.rMx.OPEN_POPOUT, L({
         type: ee
       }, Y))
     }), S) ? (0, r.jsxs)(b.W_, {
@@ -293,7 +293,7 @@ let B = e => {
           }), !G && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(c.P3F, {
               onClick: () => {
-                E(), H(!V)
+                E(), V(!H)
               },
               className: R.showMoreEmojis,
               children: (0, r.jsxs)(m.Z, {
@@ -306,11 +306,11 @@ let B = e => {
                   size: "md",
                   color: "currentColor",
                   className: a()(R.showMoreEmojisArrow, {
-                    [R.showMoreEmojisArrowCollapsed]: !V
+                    [R.showMoreEmojisArrowCollapsed]: !H
                   })
                 })]
               })
-            }), V && (0, r.jsx)(m.Z, {
+            }), H && (0, r.jsx)(m.Z, {
               wrap: m.Z.Wrap.WRAP,
               align: m.Z.Align.START,
               justify: m.Z.Justify.START,
@@ -368,7 +368,7 @@ let B = e => {
     })
   };
 
-function V(e) {
+function H(e) {
   let {
     channel: t,
     closePopout: n,
@@ -386,7 +386,7 @@ function V(e) {
     })
   })
 }
-let H = e => {
+let V = e => {
   let {
     renderableSticker: t,
     channel: n,
@@ -403,7 +403,7 @@ let H = e => {
     channel: n,
     closePopout: i,
     refreshPositionKey: l
-  }) : o ? o && null == a ? (0, r.jsx)(V, {
+  }) : o ? o && null == a ? (0, r.jsx)(H, {
     channel: n,
     closePopout: i,
     sticker: t

@@ -1,4 +1,4 @@
-/** Chunk was on 23045 **/
+/** Chunk was on 77451 **/
 n.d(t, {
   Z: () => w
 }), n(388685);
@@ -19,9 +19,9 @@ let g = {},
   C = new Set,
   x = {},
   v = {},
-  O = new Set;
+  y = new Set;
 
-function y(e) {
+function O(e) {
   let t = p.Z.createFromServer(e),
     n = t.code;
   if (_.has(n)) _.set(n, _.get(n).merge(t));
@@ -44,7 +44,7 @@ function y(e) {
 
 function j(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-  if (t && !O.has(e.channel_id)) return !1;
+  if (t && !y.has(e.channel_id)) return !1;
   let n = (0, m.Fp)(e) ? (0, m.Q_)((null == e ? void 0 : e.embeds) != null ? null == e ? void 0 : e.embeds[0].url : void 0) : (0, m.Q_)(e.content);
   return 0 !== n.length && (n.forEach(e => {
     h.includes(e) || E.includes(e) || (I({
@@ -72,7 +72,7 @@ function T(e) {
     channelId: t,
     messages: n
   } = e;
-  O.add(t), n.forEach(e => j(e, !0))
+  y.add(t), n.forEach(e => j(e, !0))
 }
 
 function N(e) {
@@ -126,20 +126,20 @@ l = "GiftCodeStore", (i = "displayName") in P ? Object.defineProperty(P, i, {
 }) : P[i] = l;
 let A = new P(u.Z, {
     CONNECTION_OPEN: function() {
-      return O.clear(), !1
+      return y.clear(), !1
     },
     CHANNEL_SELECT: function(e) {
       let {
         channelId: t
       } = e;
-      return null != t && O.add(t), !1
+      return null != t && y.add(t), !1
     },
     GIFT_CODE_RESOLVE: I,
     GIFT_CODE_RESOLVE_SUCCESS: function(e) {
       let {
         giftCode: t
       } = e;
-      return h = h.filter(e => e !== t.code), E.includes(t.code) || (E = [...E, t.code]), y(t)
+      return h = h.filter(e => e !== t.code), E.includes(t.code) || (E = [...E, t.code]), O(t)
     },
     GIFT_CODE_RESOLVE_FAILURE: function(e) {
       let {
@@ -191,7 +191,7 @@ let A = new P(u.Z, {
       let {
         giftCode: t
       } = e;
-      y(t)
+      O(t)
     },
     GIFT_CODES_FETCH: function(e) {
       let {
@@ -206,7 +206,7 @@ let A = new P(u.Z, {
         skuId: n,
         subscriptionPlanId: r
       } = e;
-      t.forEach(y);
+      t.forEach(O);
       let i = (0, m.Bg)(n, r);
       x[i] = Date.now(), C.delete(i)
     },

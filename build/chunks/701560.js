@@ -1,4 +1,4 @@
-/** Chunk was on 23045 **/
+/** Chunk was on 77451 **/
 n.d(t, {
   Z: () => I
 }), n(388685), n(415506);
@@ -30,7 +30,7 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function O(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,7 +43,7 @@ function O(e) {
   return e
 }
 
-function y(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -57,7 +57,7 @@ function y(e, t) {
 }
 class j extends(r = l.PureComponent) {
   get analyticsLocation() {
-    return y(O({}, this.props.analyticsContext.location), {
+    return O(y({}, this.props.analyticsContext.location), {
       object: E.qAy.BUTTON_CTA
     })
   }
@@ -98,7 +98,7 @@ class j extends(r = l.PureComponent) {
       }), (0, i.jsx)(u.ua7, {
         text: t,
         position: o,
-        children: e => (0, i.jsx)("div", O({
+        children: e => (0, i.jsx)("div", y({
           className: x.disabledButtonOverlay
         }, e))
       })]
@@ -146,7 +146,7 @@ class j extends(r = l.PureComponent) {
         let {
           default: e
         } = await n.e("53195").then(n.bind(n, 918306));
-        return n => (0, i.jsx)(e, y(O({}, n), {
+        return n => (0, i.jsx)(e, O(y({}, n), {
           libraryApplication: t,
           onPlay: this.handleClick
         }))
@@ -176,7 +176,7 @@ function I(e) {
     applicationId: t,
     libraryApplication: n
   } = e, r = (0, p.O)(), [l, a] = (0, s.Wu)([g.Z, f.Z, _.Z], () => [g.Z.isConnected(t) || f.Z.isLaunchable(t) || null != n && _.Z.isLaunchable(n.id, n.branchId), f.Z.launchingGames.has(t)], [t, n]), o = (0, s.e7)([m.ZP], () => new Set(m.ZP.getRunningVerifiedApplicationIds()).has(t), [t]), c = (0, s.e7)([_.Z], () => null != n ? _.Z.getState(n.id, n.branchId) : null, [n]);
-  return (0, i.jsx)(j, y(O({}, e), {
+  return (0, i.jsx)(j, O(y({}, e), {
     analyticsContext: r,
     isLaunchable: l,
     isLaunching: a,

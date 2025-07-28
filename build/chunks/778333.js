@@ -1,4 +1,4 @@
-/** Chunk was on 23045 **/
+/** Chunk was on 77451 **/
 n.d(t, {
   Z: () => E
 });
@@ -25,8 +25,8 @@ function E(e) {
     invite: n,
     message: E,
     getAcceptInviteContext: C
-  } = e, x = (0, l.e7)([p.default], () => p.default.getId()), v = (null == (t = n.inviter) ? void 0 : t.id) === x, O = n.state === _.r2o.ACCEPTING, {
-    analyticsLocations: y
+  } = e, x = (0, l.e7)([p.default], () => p.default.getId()), v = (null == (t = n.inviter) ? void 0 : t.id) === x, y = n.state === _.r2o.ACCEPTING, {
+    analyticsLocations: O
   } = (0, c.ZP)(s.Z.INVITE_EMBED), j = (0, l.e7)([f.Z], () => {
     var e;
     return null != n.inviter && f.Z.isFriend(null == (e = n.inviter) ? void 0 : e.id)
@@ -39,20 +39,20 @@ function E(e) {
       action: e,
       inviter_id: E.author.id,
       invite_message_id: E.id
-    }, y)
-  }, [n, E, y]), S = i.useCallback(() => {
+    }, O)
+  }, [n, E, O]), S = i.useCallback(() => {
     (0, o.r$)({
       invite: n,
       action: "accept",
       inviter_id: E.author.id,
       invite_message_id: E.id
-    }, y);
+    }, O);
     let e = C("Invite Button Embed");
     o.ZP.acceptInviteAndTransitionToInviteChannel({
       inviteKey: n.code,
       context: e
     })
-  }, [n, E, y, C]);
+  }, [n, E, O, C]);
   if (null == n.inviter) return null;
   let T = j ? I : S,
     N = h.intl.string(h.t.ib7Ng4),
@@ -77,7 +77,7 @@ function E(e) {
         })]
       }), (0, r.jsx)(u.Z.Button, {
         onClick: T,
-        submitting: O,
+        submitting: y,
         isDisabled: v,
         color: P,
         children: N

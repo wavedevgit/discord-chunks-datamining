@@ -1,4 +1,4 @@
-/** Chunk was on 23045 **/
+/** Chunk was on 77451 **/
 n.d(t, {
   Z: () => R
 }), n(953529), n(388685);
@@ -22,8 +22,8 @@ var r = n(255367),
   C = n(70956),
   x = n(63063),
   v = n(74538),
-  O = n(276444),
-  y = n(857262),
+  y = n(276444),
+  O = n(857262),
   j = n(93237),
   I = n(786397),
   S = n(474936),
@@ -63,7 +63,7 @@ class Z extends i.Component {
     if (t) return n ? N.intl.string(N.t["9SNdf3"]) : N.intl.formatToPlainString(N.t["H0+MxM"], {
       userName: o
     });
-    switch (y.Z.getCurrentConfig({
+    switch (O.Z.getCurrentConfig({
         location: "renderTitle"
       }, {
         autoTrackExposure: !1
@@ -102,7 +102,7 @@ class Z extends i.Component {
     if (t) return null;
     let i = h.default.getUser(r.referrer_id),
       l = null != i ? i.username : "???";
-    switch (y.Z.getCurrentConfig({
+    switch (O.Z.getCurrentConfig({
         location: "renderBody"
       }, {
         autoTrackExposure: !1
@@ -235,9 +235,9 @@ function R(e) {
   } = e, {
     trialOffer: i,
     isResolving: l
-  } = (0, u.cj)([O.Z], () => ({
-    trialOffer: n ? O.Z.getRelevantUserTrialOffer(t) : null,
-    isResolving: !!n && O.Z.isResolving(t)
+  } = (0, u.cj)([y.Z], () => ({
+    trialOffer: n ? y.Z.getRelevantUserTrialOffer(t) : null,
+    isResolving: !!n && y.Z.isResolving(t)
   }), [n, t]), a = h.default.getCurrentUser(), o = (0, u.e7)([h.default], () => null != i && (0, v.I5)(void 0 !== a && i.user_id === a.id ? a : h.default.getUser(i.user_id))), s = (0, u.e7)([b.Z], () => {
     var e;
     return o ? null == (e = b.Z.getPremiumTypeSubscription()) ? void 0 : e.trialEndsAt : null

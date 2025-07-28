@@ -8,10 +8,10 @@ var n = r(255367),
   a = r.n(l),
   i = r(442837),
   o = r(481060),
-  c = r(778877),
-  u = r(768119),
-  h = r(63063),
-  d = r(405656),
+  c = r(63063),
+  u = r(518944),
+  h = r(607802),
+  d = r(945577),
   p = r(981631),
   f = r(388032),
   g = r(107242);
@@ -21,17 +21,17 @@ function m(e) {
     searchId: t,
     searchMode: r,
     onSearchModeChange: l,
-    totalResults: h,
+    totalResults: c,
     isIndexing: m,
-    isSearching: _,
+    isSearching: S,
     documentsIndexed: y
-  } = e, b = (0, c.U)({
+  } = e, b = (0, d.U)({
     location: "SearchHeader"
   }), x = (0, i.e7)([u.Z], () => u.Z.getSearchResultsQueryString(t)), E = s.useMemo(() => {
     if (t === p.aib.DMS && b) {
       var e, r;
-      let t = (0, d.kG)(null != x ? x : ""),
-        n = null != (r = null == (e = (0, d.$G)(t).channel_id) ? void 0 : e.length) ? r : 0;
+      let t = (0, h.kG)(null != x ? x : ""),
+        n = null != (r = null == (e = (0, h.$G)(t).channel_id) ? void 0 : e.length) ? r : 0;
       return n > 0 ? f.intl.format(f.t.A2dqWF, {
         filterCount: n
       }) : f.intl.string(f.t.tc619f)
@@ -45,11 +45,11 @@ function m(e) {
     children: [(0, n.jsx)("div", {
       className: g.totalResults,
       role: "status",
-      children: (0, n.jsx)(S, {
-        totalResults: h,
+      children: (0, n.jsx)(_, {
+        totalResults: c,
         subtitle: E,
         isIndexing: m,
-        isSearching: _,
+        isSearching: S,
         documentsIndexed: y
       })
     }), (0, n.jsxs)(o.njP, {
@@ -74,7 +74,7 @@ function m(e) {
   })
 }
 
-function S(e) {
+function _(e) {
   let {
     totalResults: t,
     subtitle: r,
@@ -90,7 +90,7 @@ function S(e) {
   })
 }
 
-function _() {
+function S() {
   return (0, n.jsx)("div", {
     className: g.spinnerWrapper,
     children: (0, n.jsx)(o.$jN, {
@@ -136,10 +136,10 @@ function y(e) {
           color: "text-muted",
           children: (0, n.jsx)(o.eee, {
             className: g.helpdeskLink,
-            href: h.Z.getArticleURL(p.BhN.SEARCH_INDEXING),
+            href: c.Z.getArticleURL(p.BhN.SEARCH_INDEXING),
             children: f.intl.string(f.t["G3EA+/"])
           })
-        }), (0, n.jsx)(_, {})]
+        }), (0, n.jsx)(S, {})]
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -160,7 +160,7 @@ function b() {
       variant: "text-md/medium",
       color: "header-secondary",
       children: f.intl.string(f.t.uixzLS)
-    }), (0, n.jsx)(_, {})]
+    }), (0, n.jsx)(S, {})]
   })
 }
 

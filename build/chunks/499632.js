@@ -1,4 +1,4 @@
-/** Chunk was on 23045 **/
+/** Chunk was on 77451 **/
 e.exports = {
   accessory: "accessory__09bc1",
   accessoryText: "accessoryText__09bc1"

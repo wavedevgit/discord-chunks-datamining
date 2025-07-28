@@ -1,4 +1,4 @@
-/** Chunk was on 23045 **/
+/** Chunk was on 77451 **/
 n.d(t, {
   Z: () => b
 }), n(388685);
@@ -25,9 +25,9 @@ function b(e) {
   } = e, [b, E, C] = (0, a.Wu)([f.Z], () => [f.Z.getApplication(t), f.Z.isInvalidApplication(t), f.Z.getApplicationFetchState(t)], [t]), x = (0, a.e7)([d.Z], () => {
     var e;
     return null != (e = d.Z.getGuildId()) ? e : void 0
-  }), [v, O] = i.useState(!1), y = i.useCallback(e => {
-    e && O(!0)
-  }, []), j = (0, o.O)(y), I = i.useCallback(() => {
+  }), [v, y] = i.useState(!1), O = i.useCallback(e => {
+    e && y(!0)
+  }, []), j = (0, o.O)(O), I = i.useCallback(() => {
     p.default.track(g.rMx.APP_DIRECTORY_PROFILE_EMBED_VIEWED, {
       application_id: t,
       device_platform: l.tq ? "mobile_web" : "desktop_web",

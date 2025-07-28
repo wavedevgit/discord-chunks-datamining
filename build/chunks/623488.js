@@ -1,4 +1,4 @@
-/** Chunk was on 23045 **/
+/** Chunk was on 77451 **/
 n.d(t, {
   Z: () => g
 }), n(953529);
@@ -84,8 +84,8 @@ function g(e) {
     onTapCard: C,
     actionMenu: x,
     showOpaqueBackground: v = !1,
-    hideRoleTag: O = !1,
-    lineClamp: y = 1,
+    hideRoleTag: y = !1,
+    lineClamp: O = 1,
     cardWidth: j = 332,
     cardHeight: I,
     thumbnailHeight: S = 187,
@@ -117,13 +117,13 @@ function g(e) {
           children: (0, r.jsx)(s.Z, {
             variant: T,
             color: "text-muted",
-            lineClamp: y,
+            lineClamp: O,
             text: i
           })
         }), h && (0, r.jsx)(f, {
           onShowFullDescription: b,
           variant: T
-        }), O || null == g || "" === g.name ? null : (0, r.jsxs)(r.Fragment, {
+        }), y || null == g || "" === g.name ? null : (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(a.LZC, {
             size: 16
           }), (0, r.jsx)(u.Z, {

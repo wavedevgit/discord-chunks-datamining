@@ -1,4 +1,4 @@
-/** Chunk was on 23045 **/
+/** Chunk was on 77451 **/
 n.d(t, {
   Z: () => I
 }), n(388685), n(539854);
@@ -19,16 +19,16 @@ var r, i, l, a = n(392711),
 let C = "DetectedOffPlatformPremiumPerksStore",
   x = {},
   v = {},
-  O = [];
+  y = [];
 
-function y() {
+function O() {
   let e = !1;
   for (let {
       skuId: t,
       applicationId: n
     }
     of o().values(v)) {
-    if (O.includes(t)) continue;
+    if (y.includes(t)) continue;
     let r = f.Z.getApplication(n);
     if (null == r) {
       f.Z.isFetchingApplication(n) || f.Z.didFetchingApplicationFail(n) || m.ZP.fetchApplication(n);
@@ -49,7 +49,7 @@ function y() {
 class j extends(r = s.ZP.Store) {
   initialize() {
     var e;
-    this.waitFor(g.ZP, b.Z, h.Z), O = null != (e = c.K.get(C)) ? e : O
+    this.waitFor(g.ZP, b.Z, h.Z), y = null != (e = c.K.get(C)) ? e : y
   }
   getDetectedOffPlatformPremiumPerks() {
     return o().values(x)
@@ -65,16 +65,16 @@ let I = new j(u.Z, {
   LOGOUT: function() {
     x = {}, v = {}
   },
-  SKU_FETCH_SUCCESS: y,
-  ENTITLEMENT_FETCH_APPLICATION_SUCCESS: y,
-  ENTITLEMENT_CREATE: y,
-  APPLICATION_FETCH_SUCCESS: y,
+  SKU_FETCH_SUCCESS: O,
+  ENTITLEMENT_FETCH_APPLICATION_SUCCESS: O,
+  ENTITLEMENT_CREATE: O,
+  APPLICATION_FETCH_SUCCESS: O,
   DETECTED_OFF_PLATFORM_PREMIUM_PERKS_DISMISS: function(e) {
     let {
       skuId: t
     } = e;
-    if (delete x[t], O.includes(t)) return !1;
-    O.push(t), c.K.set(C, O)
+    if (delete x[t], y.includes(t)) return !1;
+    y.push(t), c.K.set(C, y)
   },
   RUNNING_GAMES_CHANGE: function() {
     let e = !1;
@@ -88,10 +88,10 @@ let I = new j(u.Z, {
             skuId: n,
             applicationId: r
           }
-          of E.Lg6) r !== t || O.includes(n) || null == v[n] && (h.Z.applicationIdsFetched.has(r) || h.Z.applicationIdsFetching.has(r) || null != h.Z.getForSku(n) || d.yD(r), v[n] = {
+          of E.Lg6) r !== t || y.includes(n) || null == v[n] && (h.Z.applicationIdsFetched.has(r) || h.Z.applicationIdsFetching.has(r) || null != h.Z.getForSku(n) || d.yD(r), v[n] = {
           skuId: n,
           applicationId: r
         }, e = !0);
-    return e && y(), e
+    return e && O(), e
   }
 })

@@ -1,13 +1,14 @@
-/** Chunk was on 23045 **/
+/** Chunk was on 77451 **/
 n.d(t, {
-  s: () => l
+  s: () => a
 });
 var r = n(430824),
-  i = n(863214);
+  i = n(863214),
+  l = n(981631);
 
-function l(e, t) {
+function a(e, t) {
   if (null == t) return !1;
   let n = (0, i.p)(t, "should_show_report_to_mod_survey"),
-    l = r.Z.getGuild(t);
-  return n && null != l && l.ownerId === e.id && l.features.has("REPORT_TO_MOD_SURVEY")
+    a = r.Z.getGuild(t);
+  return n && null != a && a.ownerId === e.id && a.features.has(l.oNc.REPORT_TO_MOD_SURVEY)
 }

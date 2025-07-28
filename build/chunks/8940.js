@@ -1,4 +1,4 @@
-/** Chunk was on 81064 **/
+/** Chunk was on 64385 **/
 e.exports = {
   notice: "notice_c5cd6a",
   button: "button_c5cd6a",

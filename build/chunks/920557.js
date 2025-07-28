@@ -1,4 +1,4 @@
-/** Chunk was on 23045 **/
+/** Chunk was on 77451 **/
 n.d(t, {
   K: () => I
 }), n(388685), n(314940);
@@ -49,11 +49,11 @@ function v(e) {
   } = e, s = (0, p.Dt)(), {
     channelId: c,
     messageId: u
-  } = (0, b.pE)(), [_, h] = i.useState(""), [E, v] = i.useState(!1), O = "" !== _ && E, y = i.useCallback(() => {
+  } = (0, b.pE)(), [_, h] = i.useState(""), [E, v] = i.useState(!1), y = "" !== _ && E, O = i.useCallback(() => {
     h((0, g.e1)(u, c, a))
   }, [u, c, a]), j = i.useCallback(() => {
-    y(), v(!0)
-  }, [y]), I = i.useCallback(() => {
+    O(), v(!0)
+  }, [O]), I = i.useCallback(() => {
     v(!1)
   }, []), S = i.useCallback(() => {
     (0, f.n)({
@@ -63,10 +63,10 @@ function v(e) {
     })
   }, [c, u, a]);
   return i.useEffect(() => {
-    if (E) return m.Z.addReactChangeListener(y), () => {
-      m.Z.removeReactChangeListener(y)
+    if (E) return m.Z.addReactChangeListener(O), () => {
+      m.Z.removeReactChangeListener(O)
     }
-  }, [E, y]), (0, r.jsxs)("div", {
+  }, [E, O]), (0, r.jsxs)("div", {
     className: C.votesData,
     children: [l ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(d.ua7, {
@@ -76,7 +76,7 @@ function v(e) {
           scaleFontToUserSetting: !0,
           children: _
         }),
-        forceOpen: O,
+        forceOpen: y,
         "aria-label": !1,
         children: e => {
           var t, i;
@@ -86,7 +86,7 @@ function v(e) {
             onFocus: j,
             onBlur: I,
             onClick: S,
-            "aria-describedby": O ? s : void 0,
+            "aria-describedby": y ? s : void 0,
             text: n,
             variant: "secondary",
             textVariant: "text-xs/semibold"
@@ -101,7 +101,7 @@ function v(e) {
             Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
           }), t))
         }
-      }), O && (0, r.jsx)(o.T, {
+      }), y && (0, r.jsx)(o.T, {
         id: s,
         children: _
       })]
@@ -119,7 +119,7 @@ function v(e) {
   })
 }
 
-function O(e) {
+function y(e) {
   let {
     percentage: t,
     shouldAnimate: n
@@ -142,7 +142,7 @@ function O(e) {
   })
 }
 
-function y(e) {
+function O(e) {
   let {
     answersInteraction: t,
     isSelected: n,
@@ -190,7 +190,7 @@ function j(e) {
       [C.currentlyVoting]: i !== _.Y7.LIST,
       [C.selected]: c
     }),
-    children: [l ? (0, r.jsx)(O, {
+    children: [l ? (0, r.jsx)(y, {
       percentage: t.votesPercentage,
       shouldAnimate: m
     }) : null, null != t.pollMedia.emoji && (0, r.jsx)(h.sc, {
@@ -209,7 +209,7 @@ function j(e) {
       label: t.votes,
       canShowVoterDetails: s,
       answerId: t.answerId
-    }), (0, r.jsx)(y, {
+    }), (0, r.jsx)(O, {
       answersInteraction: i,
       isSelected: c,
       didSelfVote: u,

@@ -1,4 +1,4 @@
-/** Chunk was on 23045 **/
+/** Chunk was on 77451 **/
 n.d(t, {
   Z: () => C
 }), n(539854);
@@ -28,8 +28,8 @@ function C(e) {
       onTransitionToInviteChannel: x,
       onAcceptInstantInvite: v
     } = e,
-    O = C === l.author.id,
-    y = n.state === h.r2o.ACCEPTING,
+    y = C === l.author.id,
+    O = n.state === h.r2o.ACCEPTING,
     j = (0, o.e7)([m.Z], () => null != n.channel ? m.Z.getChannel(n.channel.id) : null, [n]);
   a()(null == j || j.isPrivate(), "must be a private channel");
   let {
@@ -60,7 +60,7 @@ function C(e) {
     A = d.Z.Button.Colors.GREEN;
   S && (P = b.intl.string(b.t.cEnaW1), A = d.Z.Button.Colors.PRIMARY);
   let w = b.intl.string(b.t["3p3/BA"]);
-  return O && (w = b.intl.string(b.t.qmtuXF)), (0, r.jsxs)(d.Z, {
+  return y && (w = b.intl.string(b.t.qmtuXF)), (0, r.jsxs)(d.Z, {
     children: [(0, r.jsx)(d.Z.Header, {
       text: w
     }), (0, r.jsxs)(d.Z.Body, {
@@ -78,7 +78,7 @@ function C(e) {
         })]
       }), (0, r.jsx)(d.Z.Button, {
         onClick: T,
-        submitting: y,
+        submitting: O,
         isDisabled: S,
         color: A,
         children: P

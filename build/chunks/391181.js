@@ -1,4 +1,4 @@
-/** Chunk was on 23045 **/
+/** Chunk was on 77451 **/
 n.d(t, {
   Z: () => C,
   m: () => E
@@ -128,13 +128,13 @@ function E(e) {
     onCopyProductLink: C,
     onTestDownload: x,
     onReportProduct: v
-  } = e, O = i.useRef(null);
+  } = e, y = i.useRef(null);
   return (0, r.jsx)("div", {
     onClick: e => {
       e.stopPropagation()
     },
     children: (0, r.jsx)(o.yRy, {
-      targetElementRef: O,
+      targetElementRef: y,
       position: "right",
       align: "top",
       spacing: -8,
@@ -160,7 +160,7 @@ function E(e) {
           isShown: i
         } = n;
         return (0, r.jsx)(o.P3F, h(_({}, e), {
-          innerRef: O,
+          innerRef: y,
           "aria-label": f.intl.formatToPlainString(f.t.RtqjeH, {
             productName: t.name
           }),
@@ -188,14 +188,14 @@ function C(e) {
     onDeleteProduct: C,
     onCopyProductLink: x,
     onTestDownload: v,
-    disabled: O = !1
-  } = e, y = (0, c.U)(t, 600), j = null !== t.price_tier ? (0, u.T4)(t.price_tier, m.pK.USD) : void 0, I = (0, d.C)(t);
+    disabled: y = !1
+  } = e, O = (0, c.U)(t, 600), j = null !== t.price_tier ? (0, u.T4)(t.price_tier, m.pK.USD) : void 0, I = (0, d.C)(t);
   return (0, r.jsxs)(o.kL8, {
     tag: "article",
     className: a()(g.productCardClickable, g.productCard, {
-      [g.disabled]: O
+      [g.disabled]: y
     }),
-    onClick: O ? void 0 : i,
+    onClick: y ? void 0 : i,
     onContextMenu: function(e) {
       (0, s.jW)(e, () => Promise.resolve(e => (0, r.jsx)(b, h(_({}, e), {
         closePopout: s.Zy,
@@ -220,7 +220,7 @@ function C(e) {
     }),
     children: [(0, r.jsx)("img", {
       alt: "",
-      src: y,
+      src: O,
       className: g.productThumbnail
     }), (0, r.jsxs)("div", {
       className: g.productInfo,
@@ -251,7 +251,7 @@ function C(e) {
         }), (0, r.jsx)(o.LZC, {
           size: 16
         }), t.published ? (0, r.jsx)(p.t, {}) : (0, r.jsx)(p.b, {})]
-      }), !O && (0, r.jsx)(E, {
+      }), !y && (0, r.jsx)(E, {
         product: t,
         guildId: n,
         showEditProduct: !0,

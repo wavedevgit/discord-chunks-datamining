@@ -1,6 +1,6 @@
 /** Chunk was on 95336 **/
 r.d(t, {
-  M: () => _,
+  M: () => S,
   Z: () => b
 }), r(415506), r(781311), r(388685);
 var n, s = r(255367),
@@ -8,8 +8,8 @@ var n, s = r(255367),
   a = r(120356),
   i = r.n(a),
   o = r(481060),
-  c = r(579612),
-  u = r(405656),
+  c = r(607802),
+  u = r(579612),
   h = r(388032),
   d = r(953928);
 
@@ -55,11 +55,11 @@ let m = e => {
   } = e, {
     filterCount: a,
     queryContent: i,
-    isQueryEmpty: c
+    isQueryEmpty: u
   } = l.useMemo(() => {
     var e, r, n;
-    let s = (0, u.kG)(t),
-      l = (0, u.$G)(s),
+    let s = (0, c.kG)(t),
+      l = (0, c.$G)(s),
       a = null != (r = l.content) ? r : "";
     return {
       filterCount: null != (n = null == (e = l.channel_id) ? void 0 : e.length) ? n : 0,
@@ -74,7 +74,7 @@ let m = e => {
     variant: "text-sm/medium",
     color: "text-secondary",
     className: d.searchDMQueryText,
-    children: c ? h.intl.format(h.t.iV2ftr, {
+    children: u ? h.intl.format(h.t.iV2ftr, {
       filterCount: a
     }) : h.intl.format(h.t["5CTmUl"], {
       filterCount: a,
@@ -84,7 +84,7 @@ let m = e => {
     variant: "text-sm/medium",
     color: "text-secondary",
     className: d.searchDMQueryText,
-    children: c ? h.intl.string(h.t.w39VdH) : h.intl.format(h.t["9gKPv7"], {
+    children: u ? h.intl.string(h.t.w39VdH) : h.intl.format(h.t["9gKPv7"], {
       value: i
     })
   }) : (0, s.jsx)("div", {
@@ -95,11 +95,11 @@ let m = e => {
   })
 };
 
-function S(e) {
+function _(e) {
   e.stopPropagation(), e.preventDefault()
 }
 
-function _(e, t, r) {
+function S(e, t, r) {
   return {
     id: "".concat(e, "-").concat(t),
     role: "option",
@@ -118,7 +118,7 @@ class y extends(n = l.PureComponent) {
       onHighlightQuery: c,
       hideQuery: u,
       searchFavorites: p,
-      showDMQueryText: S
+      showDMQueryText: _
     } = this.props;
     if (e || u) return null;
     let y = -1 === n;
@@ -127,13 +127,13 @@ class y extends(n = l.PureComponent) {
         className: i()(d.queryContainer, {
           [d.focused]: y
         })
-      }, _(r, -1, y)), {
+      }, S(r, -1, y)), {
         onMouseEnter: c,
         onClick: l,
         children: [(0, s.jsx)(m, {
           query: t,
           searchFavorites: p,
-          showDMQueryText: S
+          showDMQueryText: _
         }), (0, s.jsx)("div", {
           className: d.queryShortcut,
           "aria-hidden": !0,
@@ -147,7 +147,7 @@ class y extends(n = l.PureComponent) {
         className: i()(d.queryContainer, {
           [d.focused]: y
         })
-      }, _(r, -1, y)), {
+      }, S(r, -1, y)), {
         onMouseEnter: c,
         onClick: a,
         children: [(0, s.jsx)("div", {
@@ -193,7 +193,7 @@ class y extends(n = l.PureComponent) {
       style: {
         width: n
       },
-      onMouseDown: S,
+      onMouseDown: _,
       role: "listbox",
       id: r,
       tabIndex: -1,
@@ -211,8 +211,8 @@ class y extends(n = l.PureComponent) {
         onSelectSearchInSelectedChannel: l
       } = this.props;
       if (!r || null == t) return null;
-      let a = (0, u.X3)(t),
-        i = (0, s.jsx)(c.ZP, {
+      let a = (0, c.X3)(t),
+        i = (0, s.jsx)(u.ZP, {
           channel: t,
           text: h.intl.formatToPlainString(h.t.LDpotL, {
             guildName: a
@@ -220,7 +220,7 @@ class y extends(n = l.PureComponent) {
           channelContainerClassName: d.channelContainer,
           textContainerClassName: d.searchResultNameContainer
         });
-      return (0, s.jsx)(o.P3F, g(f({}, _(e, -1, -1 === n)), {
+      return (0, s.jsx)(o.P3F, g(f({}, S(e, -1, -1 === n)), {
         className: d.inChannelOptionContainer,
         onClick: l,
         children: (0, s.jsx)(o.Text, {

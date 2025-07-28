@@ -1,4 +1,4 @@
-/** Chunk was on 81064 **/
+/** Chunk was on 63243 **/
 e.exports = {
   tabBarItemContainer: "tabBarItemContainer_c7e907",
   searchBar: "searchBar_c7e907"

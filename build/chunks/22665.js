@@ -1,4 +1,4 @@
-/** Chunk was on 23045 **/
+/** Chunk was on 77451 **/
 n.d(t, {
   Z: () => x
 });
@@ -28,17 +28,17 @@ let x = e => {
     channel: o,
     messageId: x,
     reportedTimestamp: v
-  } = e, O = f.default.getUser(t), y = i.useMemo(() => l ? (0, p.Z)((0, g.vc)(s()(), "LT")) : null, [l]), j = (0, m.l)({
-    user: O,
+  } = e, y = f.default.getUser(t), O = i.useMemo(() => l ? (0, p.Z)((0, g.vc)(s()(), "LT")) : null, [l]), j = (0, m.l)({
+    user: y,
     channelId: o.id,
     guildId: n,
     messageId: x
-  })((0, u.JZ)(O, o)), I = null != O ? O.getAvatarURL(n, (0, c.pxk)(c.EFr.SIZE_16)) : C, S = null != O ? h.intl.format(_.default["+zqXZm"], {
-    username: O.username,
+  })((0, u.JZ)(y, o)), I = null != y ? y.getAvatarURL(n, (0, c.pxk)(c.EFr.SIZE_16)) : C, S = null != y ? h.intl.format(_.default["+zqXZm"], {
+    username: y.username,
     onUserClick: j
   }) : h.intl.string(_.default.xpRjfX);
   return (0, r.jsxs)("div", {
-    className: a()(E.messageSpine, E.repliedMessage, y),
+    className: a()(E.messageSpine, E.repliedMessage, O),
     children: [(0, r.jsx)(c.qEK, {
       src: I,
       size: c.EFr.SIZE_16,

@@ -1,33 +1,33 @@
-/** Chunk was on 81064 **/
+/** Chunk was on 64385 **/
 n.d(t, {
-  Z: () => E
+  Z: () => O
 }), n(642613), n(583741);
-var i = n(544891),
-  r = n(710845),
+var r = n(544891),
+  i = n(710845),
   l = n(569471),
   o = n(346479),
-  s = n(592125),
-  a = n(375954),
-  c = n(306680),
-  d = n(594174),
-  u = n(709054),
+  a = n(592125),
+  c = n(375954),
+  s = n(306680),
+  u = n(594174),
+  d = n(709054),
   _ = n(981631);
-let h = new r.Z("markUnread");
-async function E(e, t) {
-  let n = d.default.getCurrentUser();
+let E = new i.Z("markUnread");
+async function O(e, t) {
+  let n = u.default.getCurrentUser();
   if (null == n) return;
-  let r = a.Z.getMessages(e),
-    E = r.toArray().filter(e => 0 > u.default.compare(e.id, t)).sort((e, t) => u.default.compare(e.id, t.id)).reverse()[0],
-    I = null == E ? u.default.atPreviousMillisecond(t) : E.id,
+  let i = c.Z.getMessages(e),
+    O = i.toArray().filter(e => 0 > d.default.compare(e.id, t)).sort((e, t) => d.default.compare(e.id, t.id)).reverse()[0],
+    I = null == O ? d.default.atPreviousMillisecond(t) : O.id,
     p = 0;
-  r.forAll(e => {
-    u.default.compare(e.id, I) > 0 && (0, c.Ex)(e, n) && p++
+  i.forAll(e => {
+    d.default.compare(e.id, I) > 0 && (0, s.Ex)(e, n) && p++
   });
-  let C = s.Z.getChannel(e);
-  null != C && C.isThread() && (C.isArchivedThread() && await o.Z.unarchiveThread(C, !1), l.Z.hasJoined(e) || await o.Z.joinThread(C, "Mark Unread")), h.log("Marking unread", {
+  let T = a.Z.getChannel(e);
+  null != T && T.isThread() && (T.isArchivedThread() && await o.Z.unarchiveThread(T, !1), l.Z.hasJoined(e) || await o.Z.joinThread(T, "Mark Unread")), E.log("Marking unread", {
     channelId: e,
     messageId: t
-  }), i.tn.post({
+  }), r.tn.post({
     url: _.ANM.MESSAGE_ACK(e, I),
     body: {
       manual: !0,

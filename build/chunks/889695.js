@@ -1,4 +1,4 @@
-/** Chunk was on 23045 **/
+/** Chunk was on 77451 **/
 n.d(t, {
   Z: () => I
 }), n(388685), n(539854);
@@ -22,8 +22,8 @@ var r = n(255367),
   C = n(160404),
   x = n(225675),
   v = n(981631),
-  O = n(388032),
-  y = n(318135);
+  y = n(388032),
+  O = n(318135);
 
 function j(e) {
   var t;
@@ -72,9 +72,9 @@ function I(e) {
     forceRoles: L,
     context: l
   }), c.$e(v.Plq.MANAGE_GUILD, v.Plq.MANAGE_ROLES)) || (0, p.eM)(l, n)) ? (0, r.jsx)("div", {
-    className: y.container,
+    className: O.container,
     children: (0, r.jsx)(d.hQY, {
-      placeholder: O.intl.string(O.t.Sojqsr),
+      placeholder: y.intl.string(y.t.Sojqsr),
       value: P,
       onChange: A,
       autoFocus: !0,
@@ -99,6 +99,6 @@ function I(e) {
     })
   }) : (0, r.jsx)(d.Text, {
     variant: "text-md/medium",
-    children: O.intl.string(O.t.MNSTbW)
+    children: y.intl.string(y.t.MNSTbW)
   })
 }

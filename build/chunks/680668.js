@@ -1,4 +1,4 @@
-/** Chunk was on 23045 **/
+/** Chunk was on 77451 **/
 n.d(t, {
   Z: () => x
 }), n(997841), n(388685);
@@ -23,7 +23,7 @@ var r = n(255367),
 
 function x(e) {
   var t, x, v;
-  let O, y, j, {
+  let y, O, j, {
       onTransitionToInviteChannel: I,
       onAcceptInstantInvite: S,
       guild: T,
@@ -44,8 +44,8 @@ function x(e) {
     F = null != k && k.isGuildVocal(),
     B = null != k && k.isGuildStageVoice(),
     G = (0, f.yE)(null != (t = N.flags) ? t : 0, l.$.IS_GUEST_INVITE),
-    V = null != (x = null == T ? void 0 : T.features.has(b.oNc.HUB)) && x,
-    H = null == T ? void 0 : T.id,
+    H = null != (x = null == T ? void 0 : T.features.has(b.oNc.HUB)) && x,
+    V = null == T ? void 0 : T.id,
     {
       analyticsLocations: z
     } = (0, c.ZP)(s.Z.INVITE_EMBED),
@@ -53,8 +53,8 @@ function x(e) {
     Y = i.useCallback(() => K(!1), []),
     X = i.useRef(null),
     q = i.useCallback(() => {
-      K(!0), (0, o.CB)(H, "show profile", z)
-    }, [H, z]),
+      K(!0), (0, o.CB)(V, "show profile", z)
+    }, [V, z]),
     Q = i.useCallback(() => {
       let e = "noop";
       M ? (I(), e = "transition") : (S(), e = "accept"), (0, o.r$)({
@@ -72,11 +72,11 @@ function x(e) {
     isVoiceChannel: F,
     isOwnInvite: w,
     isGuest: G,
-    isHubGuild: V,
+    isHubGuild: H,
     isStage: B,
     isStream: !1
   });
-  return y = (0, r.jsxs)("span", {
+  return O = (0, r.jsxs)("span", {
     className: C.infoTitle,
     children: [(0, r.jsx)(u.Z, {
       guildId: T.id,
@@ -104,9 +104,9 @@ function x(e) {
       color: "currentColor",
       className: C.infoIcon
     })
-  })), F ? (y = (0, r.jsx)(p.Z.Channel, {
+  })), F ? (O = (0, r.jsx)(p.Z.Channel, {
     channel: k
-  }), O = (0, r.jsxs)("span", {
+  }), y = (0, r.jsxs)("span", {
     className: C.infoTitle,
     children: [E.intl.format(E.t["2wimj4"], {
       guildName: T.name
@@ -117,10 +117,10 @@ function x(e) {
         isBannerVisible: !1
       })
     })]
-  })) : null != R && R >= 5 || null != L && L > 0 ? O = (0, r.jsx)(p.Z.Data, {
+  })) : null != R && R >= 5 || null != L && L > 0 ? y = (0, r.jsx)(p.Z.Data, {
     members: R,
     membersOnline: L
-  }) : U && (O = (0, r.jsx)(p.Z.Channel, {
+  }) : U && (y = (0, r.jsx)(p.Z.Channel, {
     channel: k,
     guild: T
   })), (0, r.jsxs)(p.Z, {
@@ -135,9 +135,9 @@ function x(e) {
         children: [(0, r.jsx)(p.Z.Icon, {
           guild: T
         }), (0, r.jsx)(p.Z.Info, {
-          title: y,
+          title: O,
           onClick: q,
-          children: O
+          children: y
         })]
       }), (0, r.jsx)(p.Z.Button, {
         onClick: Q,

@@ -1,4 +1,4 @@
-/** Chunk was on 23045 **/
+/** Chunk was on 77451 **/
 n.d(t, {
   O: () => R,
   U: () => T.Un
@@ -23,8 +23,8 @@ var r = n(255367),
   C = n(699516),
   x = n(914010),
   v = n(594174),
-  O = n(768581),
-  y = n(433534),
+  y = n(768581),
+  O = n(433534),
   j = n(506895),
   I = n(758199),
   S = n(943762),
@@ -46,12 +46,12 @@ function R(e) {
   } = e, {
     name: h,
     bot: b
-  } = t = (0, N.O)(t), C = null == b ? void 0 : b.id, x = (0, f.ye)(t), v = O.ZP.getApplicationIconURL({
+  } = t = (0, N.O)(t), C = null == b ? void 0 : b.id, x = (0, f.ye)(t), v = y.ZP.getApplicationIconURL({
     id: t.id,
     icon: t.icon,
     bot: b
   }), {
-    staticBannerSrc: y,
+    staticBannerSrc: O,
     videoBannerSrc: S,
     bannerAspectRatio: Z
   } = (0, P.E)(t), R = (0, o.e7)([E.default], () => null != s ? s : E.default.getId(), [s]), {
@@ -61,13 +61,13 @@ function R(e) {
     instanceId: U,
     isCurrentlyInInstance: F,
     canLaunchInChannel: B
-  } = (0, j.c)(t.id), G = (0, u.Z)(), V = (0, g.ms)({
+  } = (0, j.c)(t.id), G = (0, u.Z)(), H = (0, g.ms)({
     context: {
       type: "contextless"
     },
     applicationId: t.id,
     botUserId: null == b ? void 0 : b.id
-  }), H = null != C && x && V, z = B && x, W = (0, A.G)(t), K = (0, A.z)(t), Y = i.useMemo(() => {
+  }), V = null != C && x && H, z = B && x, W = (0, A.G)(t), K = (0, A.z)(t), Y = i.useMemo(() => {
     let e = [];
     return x ? (z && e.push({
       label: null == U ? w.intl.string(w.t.RscU7O) : w.intl.string(w.t.VJlc0d),
@@ -84,7 +84,7 @@ function R(e) {
         })
       },
       disabledReason: F ? w.intl.string(w.t.wJNK8P) : void 0
-    }), !z && H && e.push({
+    }), !z && V && e.push({
       label: w.intl.string(w.t.JeK1Wl),
       trackingArea: T.j_.PLAY,
       onClick() {
@@ -97,14 +97,14 @@ function R(e) {
         })
       }
     })) : null != K && e.push(K), e
-  }, [z, H, U, F, M, t.id, G, a, R, k, x, K, C]), X = x ? (0, r.jsx)(D, {
+  }, [z, V, U, F, M, t.id, G, a, R, k, x, K, C]), X = x ? (0, r.jsx)(D, {
     app: t
   }) : (0, r.jsx)(L, {
     app: t
   });
   return (0, r.jsx)(I.W, {
     title: h,
-    staticBannerSrc: y,
+    staticBannerSrc: O,
     videoBannerSrc: S,
     onClickBanner: W,
     bannerAspectRatio: Z,
@@ -127,7 +127,7 @@ function L(e) {
   var t, n, a;
   let {
     app: c
-  } = e, u = (0, y.Eb)({
+  } = e, u = (0, O.Eb)({
     customInstallUrl: c.customInstallUrl,
     installParams: c.installParams,
     integrationTypesConfig: c.integrationTypesConfig

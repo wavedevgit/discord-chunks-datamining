@@ -1,4 +1,4 @@
-/** Chunk was on 23045 **/
+/** Chunk was on 77451 **/
 n.d(t, {
   Z: () => W
 });
@@ -22,8 +22,8 @@ var r = n(255367),
   C = n(226192),
   x = n(36459),
   v = n(434404),
-  O = n(518950),
-  y = n(670188),
+  y = n(518950),
+  O = n(670188),
   j = n(592125),
   I = n(271383),
   S = n(594174),
@@ -84,12 +84,12 @@ function U(e) {
   switch (i) {
     case E.nj:
     case u.p.RAID:
-      return (0, r.jsx)(V, {
+      return (0, r.jsx)(H, {
         message: t,
         compact: n
       });
     case u.p.MENTION_RAID:
-      return (0, r.jsx)(H, {
+      return (0, r.jsx)(V, {
         message: t,
         compact: n
       });
@@ -166,7 +166,7 @@ function G(e) {
     avatarSrc: u,
     avatarDecorationSrc: d,
     eventHandlers: p
-  } = (0, O.Z)({
+  } = (0, y.Z)({
     userId: null == a ? void 0 : a.id,
     guildId: o,
     size: 12
@@ -192,7 +192,7 @@ function G(e) {
             variant: "text-xs/medium",
             color: "text-default",
             children: R.intl.string(R.t.qlFrXV)
-          }), (0, r.jsx)(y.Z, {
+          }), (0, r.jsx)(O.Z, {
             targetElementRef: g,
             user: a,
             guildId: o,
@@ -233,7 +233,7 @@ function G(e) {
   })
 }
 
-function V(e) {
+function H(e) {
   var t;
   let {
     message: n,
@@ -245,8 +245,8 @@ function V(e) {
     raidType: g,
     resolvedReason: _
   } = (0, E.FL)(n), x = (0, p.e7)([j.Z], () => j.Z.getChannel(n.channel_id), [n.channel_id]), v = null != (t = null == x ? void 0 : x.guild_id) ? t : null, {
-    shouldShowIncidentActions: O
-  } = (0, h.mI)(v), y = (0, N.sR)(n.author.id, n.channel_id), I = i.useCallback(() => {
+    shouldShowIncidentActions: y
+  } = (0, h.mI)(v), O = (0, N.sR)(n.author.id, n.channel_id), I = i.useCallback(() => {
     let e = null == x ? void 0 : x.guild_id;
     null != e && (0, C.kW)(n.id, e)
   }, [n.id, x]), S = g === d.$.DM_RAID, T = S ? f.P4T : f.b6m;
@@ -291,7 +291,7 @@ function V(e) {
         dateTime: o.toLocaleString(R.intl.currentLocale, b.pQ)
       })
     }) : null,
-    footerButtons: O ? (0, r.jsxs)("div", {
+    footerButtons: y ? (0, r.jsxs)("div", {
       className: L.footerRow,
       children: [(0, r.jsxs)("div", {
         className: L.footerAction,
@@ -305,7 +305,7 @@ function V(e) {
           textVariant: "text-xs/medium",
           text: R.intl.string(R.t.DEoVWV),
           onClick: e => {
-            y(e)
+            O(e)
           }
         })]
       }), (0, r.jsx)(M, {}), (0, r.jsx)("div", {
@@ -322,7 +322,7 @@ function V(e) {
   })
 }
 
-function H(e) {
+function V(e) {
   var t;
   let {
     message: n,

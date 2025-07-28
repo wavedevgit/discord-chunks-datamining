@@ -234,9 +234,9 @@ let i = {
     inlineRequire: () => n(457572).Z,
     neverLoadBeforeConnectionOpen: !0
   },
-  SearchManager: {
+  SearchTokensManager: {
     actions: ["USER_SETTINGS_PROTO_UPDATE", "POST_CONNECTION_OPEN"],
-    inlineRequire: () => n(433538).Z,
+    inlineRequire: () => n(538874).Z,
     neverLoadBeforeConnectionOpen: !0
   },
   SelectedChannelManager: {

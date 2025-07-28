@@ -1,30 +1,30 @@
-/** Chunk was on 57539 **/
-n.d(e, {
-  $: () => o
+/** Chunk was on 77451 **/
+n.d(t, {
+  $: () => l
 }), n(388685);
-var a = n(73800),
+var r = n(73800),
   i = n(881052);
 
-function o(t) {
+function l(e) {
   let {
-    onError: e,
+    onError: t,
     onSuccess: n,
-    report: o
-  } = t, [r, l] = a.useState(!1);
+    report: l
+  } = e, [a, o] = r.useState(!1);
   return {
-    reportFalsePositive: a.useCallback(async () => {
-      if (!r) {
-        l(!0);
+    reportFalsePositive: r.useCallback(async () => {
+      if (!a) {
+        o(!0);
         try {
-          await o(), null == n || n()
+          await l(), null == n || n()
         } catch (n) {
-          let t = new i.Hx(n);
-          null == e || e(t)
+          let e = new i.Hx(n);
+          null == t || t(e)
         } finally {
-          l(!1)
+          o(!1)
         }
       }
-    }, [r, e, n, o]),
-    isReportFalsePositiveLoading: r
+    }, [a, t, n, l]),
+    isReportFalsePositiveLoading: a
   }
 }

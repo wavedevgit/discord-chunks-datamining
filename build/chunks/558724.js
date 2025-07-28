@@ -1,4 +1,4 @@
-/** Chunk was on 23045 **/
+/** Chunk was on 77451 **/
 n.d(t, {
   J: () => I,
   Z: () => L
@@ -58,8 +58,8 @@ let x = {
     lastSeen: null
   },
   v = x,
-  O = {},
-  y = null,
+  y = {},
+  O = null,
   j = !1,
   I = 864e5;
 var S = ((i = S || {}).IS_OWNER = "is_owner", i.IS_ADMIN = "is_admin", i.IS_COMMUNITY = "is_community", i.GUILD_SIZE = "guild_size", i.IS_HUB = "is_hub", i.IS_VIEWING = "is_viewing", i.GUILD_PERMISSIONS = "guild_permissions", i.GUILD_SIZE_ALL = "guild_size_all", i);
@@ -112,7 +112,7 @@ function A(e) {
           c = (null == s ? void 0 : s.id) === a.ownerId,
           u = f.Z.can(h.Plq.ADMINISTRATOR, a);
         if (t.includes("is_owner") && !c || t.includes("is_admin") && !u) continue;
-        null == (O = null != O ? O : {})[e.key] && (O[e.key] = e);
+        null == (y = null != y ? y : {})[e.key] && (y[e.key] = e);
         let d = g.Z.getGuildId(),
           m = null != d && d === a.id;
         if ((!t.includes("is_viewing") || m) && !i) return !0
@@ -131,16 +131,16 @@ function w(e) {
     i = n && A(t);
   var l = 0;
   let o = c.K.get(h.z7k);
-  null == o || a()().diff(o, "day"), y = r && i && 1 ? t : null
+  null == o || a()().diff(o, "day"), O = r && i && 1 ? t : null
 }
 
 function Z() {
-  if (null != y && (A(y) || (y = null, 0))) return !1;
-  let e = Object.values(O = null != O ? O : {})[0];
+  if (null != O && (A(O) || (O = null, 0))) return !1;
+  let e = Object.values(y = null != y ? y : {})[0];
   null != e && A(e) ? w({
     type: "SURVEY_FETCHED",
     survey: e
-  }) : null != y && (y = null)
+  }) : null != O && (O = null)
 }
 class R extends(r = s.ZP.PersistedStore) {
   initialize(e) {
@@ -150,7 +150,7 @@ class R extends(r = s.ZP.PersistedStore) {
     return v
   }
   getCurrentSurvey() {
-    return N() ? null : y
+    return N() ? null : O
   }
   getSurveyOverride() {
     return v.surveyOverride
@@ -181,7 +181,7 @@ let L = new R(u.Z, {
     let {
       key: t
     } = e;
-    v.hiddenSurveys[t] = !0, y = null, O = null != O ? O : {}, delete O[t]
+    v.hiddenSurveys[t] = !0, O = null, y = null != y ? y : {}, delete y[t]
   },
   SURVEY_OVERRIDE: function(e) {
     let {

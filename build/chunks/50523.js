@@ -1,4 +1,4 @@
-/** Chunk was on 23045 **/
+/** Chunk was on 77451 **/
 n.d(t, {
   b: () => x
 }), n(539854), n(953529);
@@ -26,8 +26,8 @@ function x(e) {
   let {
     application: x,
     customId: v,
-    customLink: O,
-    embedUrl: y,
+    customLink: y,
+    embedUrl: O,
     referrerId: j
   } = e, I = null == x || null == (t = x.bot) ? void 0 : t.id, S = (0, c.ms)({
     context: {
@@ -41,7 +41,7 @@ function x(e) {
     if (null == A) return;
     let e = h.ZP.getEmbeddedActivitiesForChannel(A).filter(e => e.applicationId === x.id);
     return e.length > 0 ? e[0].compositeInstanceId : void 0
-  }), R = (0, i.e7)([h.ZP], () => h.ZP.getCurrentEmbeddedActivity()), L = (0, b.Z)(), D = w === E.jy.CAN_LAUNCH, k = null != v ? v : O.customId, M = [];
+  }), R = (0, i.e7)([h.ZP], () => h.ZP.getCurrentEmbeddedActivity()), L = (0, b.Z)(), D = w === E.jy.CAN_LAUNCH, k = null != v ? v : y.customId, M = [];
   D && M.push({
     label: null == Z ? C.intl.string(C.t.RscU7O) : C.intl.string(C.t.VJlc0d),
     trackingArea: p.j_.PLAY,
@@ -74,7 +74,7 @@ function x(e) {
   return (0, r.jsx)(d.W, {
     actions: M,
     onClickContent: U,
-    embedUrl: y,
+    embedUrl: O,
     header: x.name,
     iconSrc: g.ZP.getApplicationIconURL({
       id: x.id,
@@ -82,10 +82,10 @@ function x(e) {
       bot: x.bot
     }),
     info: (0, r.jsx)("div", {
-      children: O.description
+      children: y.description
     }),
-    staticBannerSrc: O.getAssetURL(),
-    title: O.title,
+    staticBannerSrc: y.getAssetURL(),
+    title: y.title,
     trackingConfig: {
       id: x.id,
       linkType: u.U.CUSTOM_ACTIVITY_LINK,

@@ -5,13 +5,12 @@ r.d(t, {
 }), r(539854), r(35282);
 var n = r(395041);
 r(349033);
-var s = r(999650);
-r(72006);
-var l = r(405656);
-r(981631);
+var s = r(607802),
+  l = r(532428);
+r(72006), r(981631);
 let a = {
-  [s.Qe.FILTER]: n.w,
-  [s.Qe.ANSWER]: n.O
+  [l.Qe.FILTER]: n.w,
+  [l.Qe.ANSWER]: n.O
 };
 
 function i() {
@@ -36,5 +35,5 @@ function o(e, t) {
     focusOffset: r,
     anchorOffset: n
   } = t.getSelection();
-  return (0, l.g9)(e, r, n)
+  return (0, s.g9)(e, r, n)
 }

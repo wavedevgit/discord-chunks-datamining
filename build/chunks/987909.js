@@ -1,6 +1,6 @@
-/** Chunk was on 23045 **/
+/** Chunk was on 77451 **/
 n.d(t, {
-  Z: () => O
+  Z: () => y
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -39,11 +39,11 @@ function v(e) {
     stickers: m,
     event: f,
     eventProperties: g
-  } = e, h = (0, p.t)(), [E, v] = i.useState(!1), O = i.useMemo(() => x({
+  } = e, h = (0, p.t)(), [E, v] = i.useState(!1), y = i.useMemo(() => x({
     assets: m,
     currentUser: t,
     message: l
-  }), [m, t, l]), y = i.useMemo(() => x({
+  }), [m, t, l]), O = i.useMemo(() => x({
     assets: d,
     currentUser: t,
     message: l
@@ -70,7 +70,7 @@ function v(e) {
     }({
       channel: n,
       message: l,
-      sticker: O
+      sticker: y
     }), function(e) {
       var t, n;
       let {
@@ -108,16 +108,16 @@ function v(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t))
     }({
-      sticker: O,
+      sticker: y,
       event: f,
       eventProperties: g
     }))
-  }, [n, l, O, f, g]);
+  }, [n, l, y, f, g]);
   return h ? (0, r.jsx)(a.zx, {
     variant: "secondary",
     size: "md",
     onClick: j,
-    text: y
+    text: O
   }) : (0, r.jsxs)(o.zx, {
     "data-migration-pending": !0,
     className: C.CTAMessageButtonOuter,
@@ -129,13 +129,13 @@ function v(e) {
     children: [(0, r.jsx)(u.Z, {
       className: C.CTAMessageSticker,
       isInteracting: E,
-      sticker: O,
+      sticker: y,
       size: 28
-    }), y]
+    }), O]
   })
 }
 
-function O(e) {
+function y(e) {
   let {
     channel: t,
     message: n,

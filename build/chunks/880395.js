@@ -1,12 +1,12 @@
 /** Chunk was on 88448 **/
 r.d(t, {
-  D: () => c
+  D: () => o
 });
 var n = r(255367);
 r(73800);
 var l = r(239091);
 
-function a(e) {
+function i(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -25,7 +25,7 @@ function a(e) {
   return e
 }
 
-function i(e, t) {
+function a(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -38,26 +38,26 @@ function i(e, t) {
   }), e
 }
 
-function c(e, t, c, o, s) {
-  let u = c.getGuildId();
+function o(e, t, o, c, s) {
+  let u = o.getGuildId();
   return null != u ? (0, l.jW)(e, async () => {
     let {
       default: e
     } = await Promise.all([r.e("97589"), r.e("80125"), r.e("42707")]).then(r.bind(r, 357823));
-    return r => (0, n.jsx)(e, i(a({}, r), {
+    return r => (0, n.jsx)(e, a(i({}, r), {
       user: t,
-      channel: c,
+      channel: o,
       guildId: u,
       onInteraction: e => s("GuildVoiceUserContextMenu", e)
     }))
-  }, o) : (0, l.jW)(e, async () => {
+  }, c) : (0, l.jW)(e, async () => {
     let {
       default: e
     } = await Promise.all([r.e("80125"), r.e("47452")]).then(r.bind(r, 238296));
-    return r => (0, n.jsx)(e, i(a({}, r), {
+    return r => (0, n.jsx)(e, a(i({}, r), {
       user: t,
-      channel: c,
+      channel: o,
       onInteraction: e => s("BaseVoiceUserContextMenu", e)
     }))
-  }, o)
+  }, c)
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 95336 **/
 r.d(t, {
   AT: () => g,
-  fC: () => S,
+  fC: () => _,
   gr: () => m,
   hQ: () => f
 });
@@ -47,7 +47,7 @@ function m(e) {
     name: p.intl.string(p.t.J90oLS)
   }) : void 0, [t, e])
 }
-async function S(e, t) {
+async function _(e, t) {
   if ((null == t ? void 0 : t.type) === d.d4z.UNKNOWN && null == e.saveData.guildId) try {
     let t = await o.Z.fetchChannel(e.saveData.channelId);
     if (null == t.recipients || t.recipients.length > 1) return;

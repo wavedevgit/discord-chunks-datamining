@@ -1,4 +1,4 @@
-/** Chunk was on 23045 **/
+/** Chunk was on 77451 **/
 n.d(t, {
   H: () => C
 }), n(953529);
@@ -28,8 +28,8 @@ function C(e) {
     location: C,
     shouldShowFullDescriptionButton: x = !0,
     hideRoleTag: v = !1,
-    lineClamp: O = 1,
-    cardWidth: y,
+    lineClamp: y = 1,
+    cardWidth: O,
     cardHeight: j,
     thumbnailHeight: I,
     descriptionTextVariant: S = "text-sm/normal",
@@ -88,8 +88,8 @@ function C(e) {
     actionMenu: k,
     showOpaqueBackground: T,
     hideRoleTag: v,
-    lineClamp: O,
-    cardWidth: y,
+    lineClamp: y,
+    cardWidth: O,
     cardHeight: j,
     thumbnailHeight: I,
     descriptionTextVariant: S,

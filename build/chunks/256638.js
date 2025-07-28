@@ -1,4 +1,4 @@
-/** Chunk was on 23045 **/
+/** Chunk was on 77451 **/
 n.d(t, {
   Z: () => eS,
   c: () => ej
@@ -23,8 +23,8 @@ var s = n(442837),
   C = n(223245),
   x = n(491428),
   v = n(401430),
-  O = n(230711),
-  y = n(726542),
+  y = n(230711),
+  O = n(726542),
   j = n(100527),
   I = n(906732),
   S = n(812206),
@@ -43,8 +43,8 @@ var s = n(442837),
   F = n(236069),
   B = n(305325),
   G = n(281956),
-  V = n(574650),
-  H = n(665302),
+  H = n(574650),
+  V = n(665302),
   z = n(434404),
   W = n(918658),
   K = n(859428),
@@ -136,7 +136,7 @@ let ex = e => {
       children: eb.intl.string(eb.t.RYKKo6)
     })]
   }),
-  eO = () => (0, r.jsxs)(c.qXd, {
+  ey = () => (0, r.jsxs)(c.qXd, {
     color: c.DM8.DANGER,
     children: [(0, r.jsx)(c.RyX, {
       onClick: () => {
@@ -150,7 +150,7 @@ let ex = e => {
       children: eb.intl.string(eb.t.RYKKo6)
     })]
   }),
-  ey = () => (0, r.jsxs)(c.qXd, {
+  eO = () => (0, r.jsxs)(c.qXd, {
     color: c.DM8.DANGER,
     children: [(0, r.jsx)(c.RyX, {
       onClick: () => {
@@ -162,7 +162,7 @@ let ex = e => {
       location: "AudioIssueNoticeMicTester"
     }), (0, r.jsx)(c.EyT, {
       onClick: () => {
-        (0, f.jN)(ef.S9g.USER_SETTINGS), O.Z.setSection(ef.oAB.VOICE)
+        (0, f.jN)(ef.S9g.USER_SETTINGS), y.Z.setSection(ef.oAB.VOICE)
       },
       children: eb.intl.string(eb.t.I6YlBw)
     })]
@@ -221,7 +221,7 @@ let eI = 12633 == n.j ? i.memo(function() {
     case ef.kVF.LURKING_GUILD:
       return (0, r.jsx)(K.Z, {});
     case ef.kVF.PENDING_MEMBER:
-      return (0, r.jsx)(V.Z, {});
+      return (0, r.jsx)(H.Z, {});
     case ef.kVF.INVITED_TO_SPEAK:
       return (0, r.jsx)(ee.Z, {});
     case ef.kVF.GUILD_RAID_NOTIFICATION:
@@ -329,7 +329,7 @@ let eI = 12633 == n.j ? i.memo(function() {
         })]
       });
     case ef.kVF.SPOTIFY_AUTO_PAUSED:
-      let eZ = y.Z.get(ef.ABu.SPOTIFY);
+      let eZ = O.Z.get(ef.ABu.SPOTIFY);
       return (0, r.jsxs)(c.qXd, {
         color: c.DM8.DANGER,
         children: [(0, r.jsx)(c.RyX, {
@@ -340,7 +340,7 @@ let eI = 12633 == n.j ? i.memo(function() {
           className: eE.platformIcon,
           src: eZ.icon.whiteSVG
         }), eb.intl.string(eb.t["D8Cp7+"]), (0, r.jsx)(c.NoS, {
-          onClick: () => O.Z.open(ef.oAB.VOICE),
+          onClick: () => y.Z.open(ef.oAB.VOICE),
           noticeType: ef.kVF.SPOTIFY_AUTO_PAUSED,
           children: eb.intl.string(eb.t.NiTd0d)
         }), (0, r.jsx)(c.eee, {
@@ -390,8 +390,8 @@ let eI = 12633 == n.j ? i.memo(function() {
         })]
       });
     case ef.kVF.NO_INPUT_DETECTED:
-      if (!en.Z.supports(eh.AN.LOOPBACK)) return (0, r.jsx)(eO, {});
-      return (0, r.jsx)(ey, {});
+      if (!en.Z.supports(eh.AN.LOOPBACK)) return (0, r.jsx)(ey, {});
+      return (0, r.jsx)(eO, {});
     case ef.kVF.NO_INPUT_DEVICES_DETECTED:
       return (0, r.jsx)(ev, {});
     case ef.kVF.HARDWARE_MUTE:
@@ -436,7 +436,7 @@ let eI = 12633 == n.j ? i.memo(function() {
           }
         }), eb.intl.string(eb.t.HcErZW), (0, r.jsx)(c.EyT, {
           onClick: () => {
-            (0, f.jN)(ef.S9g.USER_SETTINGS), O.Z.setSection(ef.oAB.VOICE)
+            (0, f.jN)(ef.S9g.USER_SETTINGS), y.Z.setSection(ef.oAB.VOICE)
           },
           children: eb.intl.string(eb.t["51hI/v"])
         })]
@@ -594,7 +594,7 @@ let eI = 12633 == n.j ? i.memo(function() {
     case ef.kVF.DISPATCH_INSTALL_SCRIPT_PROGRESS:
       if (null == j.metadata) return null;
       let {
-        progress: eG, total: eV, name: eH
+        progress: eG, total: eH, name: eV
       } = j.metadata;
       return (0, r.jsxs)(c.qXd, {
         color: c.DM8.DEFAULT,
@@ -603,13 +603,13 @@ let eI = 12633 == n.j ? i.memo(function() {
           noticeType: ef.kVF.DISPATCH_INSTALL_SCRIPT_PROGRESS
         }), (0, r.jsxs)(N.Z, {
           justify: N.Z.Justify.CENTER,
-          children: [null != eH ? eb.intl.formatToPlainString(eb.t["pHj+z8"], {
-            name: "".concat(eH),
+          children: [null != eV ? eb.intl.formatToPlainString(eb.t["pHj+z8"], {
+            name: "".concat(eV),
             progress: eG,
-            total: eV
+            total: eH
           }) : eb.intl.formatToPlainString(eb.t["lHZn+P"], {
             progress: eG,
-            total: eV
+            total: eH
           }), (0, r.jsx)(c.$jN, {
             type: c.$jN.Type.PULSING_ELLIPSIS,
             className: eE.ellipsis
@@ -731,7 +731,7 @@ let eI = 12633 == n.j ? i.memo(function() {
         }), (0, r.jsx)(c.NoS, {
           noticeType: ef.kVF.PREMIUM_PAST_DUE_ONE_TIME_PAYMENT,
           onClick: () => {
-            ej(eW), O.Z.open(ef.oAB.SUBSCRIPTIONS)
+            ej(eW), y.Z.open(ef.oAB.SUBSCRIPTIONS)
           },
           children: eb.intl.string(eb.t.q8rxeX)
         })]
@@ -749,7 +749,7 @@ let eI = 12633 == n.j ? i.memo(function() {
           noticeType: ef.kVF.PREMIUM_PAST_DUE_INVALID_PAYMENT,
           onClick: () => {
             var e, t;
-            ej(null == (t = j.metadata) || null == (e = t.premiumSubscription) ? void 0 : e.currentPeriodEnd), O.Z.open(ef.oAB.SUBSCRIPTIONS)
+            ej(null == (t = j.metadata) || null == (e = t.premiumSubscription) ? void 0 : e.currentPeriodEnd), y.Z.open(ef.oAB.SUBSCRIPTIONS)
           },
           children: eb.intl.string(eb.t["Zpd+Ym"])
         })]
@@ -767,7 +767,7 @@ let eI = 12633 == n.j ? i.memo(function() {
           noticeType: ef.kVF.PREMIUM_PAST_DUE_MISSING_PAYMENT,
           onClick: () => {
             var e, t;
-            ej(null == (t = j.metadata) || null == (e = t.premiumSubscription) ? void 0 : e.currentPeriodEnd), O.Z.open(ef.oAB.SUBSCRIPTIONS)
+            ej(null == (t = j.metadata) || null == (e = t.premiumSubscription) ? void 0 : e.currentPeriodEnd), y.Z.open(ef.oAB.SUBSCRIPTIONS)
           },
           children: eb.intl.string(eb.t.U5pKWF)
         })]
@@ -791,13 +791,13 @@ let eI = 12633 == n.j ? i.memo(function() {
           noticeType: ef.kVF.PREMIUM_MISSING_PAYMENT,
           onClick: () => {
             var e, t;
-            ej(null == (t = j.metadata) || null == (e = t.premiumSubscription) ? void 0 : e.currentPeriodEnd), O.Z.open(ef.oAB.SUBSCRIPTIONS)
+            ej(null == (t = j.metadata) || null == (e = t.premiumSubscription) ? void 0 : e.currentPeriodEnd), y.Z.open(ef.oAB.SUBSCRIPTIONS)
           },
           children: eT === eg.p9.TIER_1 ? eb.intl.string(eb.t.lboF5O) : eT === eg.p9.TIER_0 ? eb.intl.string(eb.t["4UPwOj"]) : eb.intl.string(eb.t["P/VvGR"])
         })]
       });
     case ef.kVF.BACK_TO_PREVIOUS_SCREEN:
-      return (0, r.jsx)(H.h, {
+      return (0, r.jsx)(V.h, {
         buttonText: null != (t = j.buttonText) ? t : eb.intl.string(eb.t["/g10LC"]),
         onGoBack: j.callback,
         onDismiss: () => ej(),

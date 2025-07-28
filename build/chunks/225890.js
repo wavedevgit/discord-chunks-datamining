@@ -1,4 +1,4 @@
-/** Chunk was on 23045 **/
+/** Chunk was on 77451 **/
 n.d(t, {
   Z: () => b
 }), n(388685), n(35282);
@@ -25,7 +25,7 @@ function b(e) {
     guildScheduledEvent: C,
     guild: x,
     channel: v,
-    isMember: O
+    isMember: y
   } = (0, l.cj)([f.ZP, d.Z, c.Z, u.ZP, p.default], () => {
     var e, t;
     let r = null != (t = f.ZP.getGuildScheduledEvent(b)) ? t : void 0,
@@ -44,7 +44,7 @@ function b(e) {
     guild: x,
     channel: v,
     guildScheduledEvent: C,
-    isMember: O,
+    isMember: y,
     onAcceptInstantInvite: h.dG,
     onTransitionToInviteChannel: function() {
       if ((0, o.n)(n)) return void(0, a.hk)(n);
