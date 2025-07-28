@@ -39,12 +39,12 @@ var r, i = n(255367),
   M = n(180529),
   B = n(703656),
   G = n(108427),
-  F = n(314897),
-  U = n(480294),
+  U = n(314897),
+  F = n(480294),
   z = n(896797),
   V = n(626135),
-  K = n(585483),
-  H = n(70956),
+  H = n(585483),
+  K = n(70956),
   W = n(624138),
   q = n(481153),
   Y = n(588705),
@@ -159,7 +159,7 @@ class eu extends(r = l.PureComponent) {
     } = this.state;
     (t.apiErrors !== l || t.parsedDateOfBirth !== s) && (this.hasError("email") || this.hasError("phone") ? null != this.emailRef && this.emailRef.focus() : this.hasError("username") ? null != this.usernameRef && this.usernameRef.focus() : this.hasError("global_name") ? null != this.globalNameRef && this.globalNameRef.focus() : this.hasError("password") ? null != this.passwordRef && this.passwordRef.focus() : null == this.state.parsedDateOfBirth ? null != this.dateOfBirthRef.current && this.dateOfBirthRef.current.focus() : this.hasError("retry_after") && "number" == typeof l.retry_after && (this.setState({
       isRateLimited: !0
-    }), this._retryTimer.start(l.retry_after * H.Z.Millis.SECOND, () => {
+    }), this._retryTimer.start(l.retry_after * K.Z.Millis.SECOND, () => {
       this.setState({
         isRateLimited: !1
       })
@@ -193,7 +193,7 @@ class eu extends(r = l.PureComponent) {
       onRegister: c,
       usernameSuggestion: u
     } = this.props, d = null != s ? s.code : null, h = null != o ? o.skuId : null, p = E.MD.getState(), g = (0, W.Ew)(u) ? null : t === u, f = $.a ? await (0, C.K)(t) : t, _ = $.a ? await (0, C.K)(n) : n;
-    K.S.dispatch(X.CkL.WAVE_EMPHASIZE), this.setState({
+    H.S.dispatch(X.CkL.WAVE_EMPHASIZE), this.setState({
       registering: !0,
       apiErrors: {}
     });
@@ -698,7 +698,7 @@ class eu extends(r = l.PureComponent) {
       })), g.Z.loginReset(), u(t, {
         search: (0, o.stringify)(d),
         source: "register"
-      }), null == a || a(e), K.S.dispatch(X.CkL.WAVE_EMPHASIZE)
+      }), null == a || a(e), H.S.dispatch(X.CkL.WAVE_EMPHASIZE)
     }), el(this, "handleSubmit", e => {
       null == e || e.preventDefault();
       let {
@@ -782,9 +782,9 @@ class eu extends(r = l.PureComponent) {
 }
 
 function ed(e) {
-  let t = (0, d.cj)([U.Z, F.default, f.Z, R.Z, P.Z], () => ({
-      consentRequired: U.Z.getAuthenticationConsentRequired(),
-      authenticated: F.default.isAuthenticated(),
+  let t = (0, d.cj)([F.Z, U.default, f.Z, R.Z, P.Z], () => ({
+      consentRequired: F.Z.getAuthenticationConsentRequired(),
+      authenticated: U.default.isAuthenticated(),
       isUnderage: f.Z.isUnderageAnonymous(),
       country: R.Z.getCountryCode(),
       hasLoggedInAccounts: P.Z.getHasLoggedInAccounts()

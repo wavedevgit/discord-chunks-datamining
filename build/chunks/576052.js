@@ -1,4 +1,4 @@
-/** Chunk was on 37908 **/
+/** Chunk was on 55944 **/
 e.exports = {
   list: "list__920b8",
   accountCard: "accountCard__920b8",
@@ -9,5 +9,6 @@ e.exports = {
   userActions: "userActions__920b8",
   username: "username__920b8",
   textOverflow: "textOverflow__920b8",
-  hintText: "hintText__920b8"
+  hintText: "hintText__920b8",
+  spinner: "spinner__920b8"
 }

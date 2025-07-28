@@ -1,125 +1,125 @@
-/** Chunk was on 56782 **/
-n.d(t, {
-  W: () => E,
-  Z: () => S
-}), n(457542);
-var r, s = n(255367),
-  i = n(73800),
-  l = n(120356),
-  a = n.n(l),
-  o = n(442837),
-  c = n(481060),
-  u = n(893776),
-  d = n(239091),
-  h = n(598077),
-  p = n(314897),
-  m = n(246946),
-  f = n(594174),
-  x = n(626135),
-  g = n(51144),
-  j = n(480387),
-  v = n(726745),
-  C = n(251423),
-  b = n(981631),
-  y = n(388032),
-  O = n(576052),
-  E = ((r = {})[r.LOGIN_REQUIRED = 0] = "LOGIN_REQUIRED", r[r.SWITCHED = 1] = "SWITCHED", r[r.REMOVED = 2] = "REMOVED", r);
+/** Chunk was on 55944 **/
+s.d(t, {
+  W: () => p,
+  Z: () => j
+}), s(457542);
+var n, i = s(255367),
+  a = s(73800),
+  r = s(120356),
+  l = s.n(r),
+  c = s(442837),
+  o = s(481060),
+  d = s(893776),
+  u = s(239091),
+  m = s(598077),
+  x = s(314897),
+  _ = s(246946),
+  h = s(594174),
+  f = s(626135),
+  g = s(51144),
+  N = s(480387),
+  v = s(726745),
+  T = s(251423),
+  A = s(981631),
+  C = s(388032),
+  E = s(576052),
+  p = ((n = {})[n.LOGIN_REQUIRED = 0] = "LOGIN_REQUIRED", n[n.SWITCHED = 1] = "SWITCHED", n[n.REMOVED = 2] = "REMOVED", n);
 
-function N(e) {
+function b(e) {
   let {
     actionText: t,
-    user: n,
-    onAction: r
+    user: s,
+    onAction: n
   } = e, {
-    currentUser: i,
-    hidePrivateData: l,
-    isAuthenticated: C
-  } = (0, o.cj)([f.default, m.Z, p.default], () => ({
-    currentUser: f.default.getCurrentUser(),
-    hidePrivateData: m.Z.hidePersonalInformation,
-    isAuthenticated: p.default.isAuthenticated()
-  })), E = new h.Z(n), N = C && (null == i ? void 0 : i.id) === E.id, S = n.tokenStatus === v.q.INVALID, P = l || E.isPomelo() ? null : "#".concat(E.discriminator), T = null;
-  return N ? T = (0, s.jsx)(c.Text, {
+    currentUser: a,
+    hidePrivateData: r,
+    isAuthenticated: T
+  } = (0, c.cj)([h.default, _.Z, x.default], () => ({
+    currentUser: h.default.getCurrentUser(),
+    hidePrivateData: _.Z.hidePersonalInformation,
+    isAuthenticated: x.default.isAuthenticated()
+  })), p = new m.Z(s), b = T && (null == a ? void 0 : a.id) === p.id, j = s.tokenStatus === v.q.INVALID, I = r || p.isPomelo() ? null : "#".concat(p.discriminator), M = null;
+  return b ? M = (0, i.jsx)(o.Text, {
     variant: "text-sm/semibold",
-    className: O.hintText,
+    className: E.hintText,
     color: "text-feedback-positive",
-    children: y.intl.string(y.t.seV8ys)
-  }) : S && (T = (0, s.jsx)(c.Text, {
+    children: C.intl.string(C.t.seV8ys)
+  }) : j && (M = (0, i.jsx)(o.Text, {
     variant: "text-sm/semibold",
-    className: O.hintText,
+    className: E.hintText,
     color: "text-danger",
-    children: y.intl.string(y.t.tYX2pq)
-  })), (0, s.jsx)("div", {
-    className: O.accountCard,
-    children: (0, s.jsxs)("div", {
-      className: O.userDetails,
-      children: [(0, s.jsx)(c.qEK, {
-        src: E.getAvatarURL(void 0, 40),
-        size: c.EFr.SIZE_40,
-        "aria-label": n.username
-      }), (0, s.jsxs)("div", {
-        className: a()(O.usernameSection, {
-          [O.hasActionMaxWidth]: !N
+    children: C.intl.string(C.t.tYX2pq)
+  })), (0, i.jsx)("div", {
+    className: E.accountCard,
+    children: (0, i.jsxs)("div", {
+      className: E.userDetails,
+      children: [(0, i.jsx)(o.qEK, {
+        src: p.getAvatarURL(void 0, 40),
+        size: o.EFr.SIZE_40,
+        "aria-label": s.username
+      }), (0, i.jsxs)("div", {
+        className: l()(E.usernameSection, {
+          [E.hasActionMaxWidth]: !b
         }),
-        children: [(0, s.jsxs)("div", {
-          className: O.username,
-          children: [(0, s.jsx)(c.Text, {
+        children: [(0, i.jsxs)("div", {
+          className: E.username,
+          children: [(0, i.jsx)(o.Text, {
             variant: "text-md/semibold",
             color: "header-primary",
-            className: O.textOverflow,
-            children: g.ZP.getUserTag(E, {
+            className: E.textOverflow,
+            children: g.ZP.getUserTag(p, {
               mode: "username",
-              identifiable: l ? "never" : "always"
+              identifiable: r ? "never" : "always"
             })
-          }), (0, s.jsx)(c.Text, {
+          }), (0, i.jsx)(o.Text, {
             color: "header-secondary",
             variant: "text-sm/normal",
-            children: P
+            children: I
           })]
-        }), T]
-      }), (0, s.jsxs)("div", {
-        className: O.userActions,
-        children: [!N && (0, s.jsx)(c.zxk, {
+        }), M]
+      }), (0, i.jsxs)("div", {
+        className: E.userActions,
+        children: [!b && (0, i.jsx)(o.zxk, {
           variant: "secondary",
-          text: S ? y.intl.string(y.t["DSN+h4"]) : t,
+          text: j ? C.intl.string(C.t["DSN+h4"]) : t,
           onClick: function() {
-            if (S) return void r(0, n.id);
-            x.default.track(b.rMx.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
+            if (j) return void n(0, s.id);
+            f.default.track(A.rMx.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
               location: {
-                section: b.jXE.MANAGE_ACCOUNTS_MODAL
+                section: A.jXE.MANAGE_ACCOUNTS_MODAL
               }
-            }), j.yD(n.id), r(1, n.id)
+            }), N.yD(s.id), n(1, s.id)
           }
-        }), (0, s.jsx)(c.hU, {
-          icon: c.xhG,
+        }), (0, i.jsx)(o.hU, {
+          icon: o.xhG,
           onClick: function(e) {
-            (0, d.vq)(e, e => {
+            (0, u.vq)(e, e => {
               let {
                 onSelect: t
               } = e;
-              return (0, s.jsx)(c.v2r, {
-                "aria-label": y.intl.string(y.t["41qiDQ"]),
+              return (0, i.jsx)(o.v2r, {
+                "aria-label": C.intl.string(C.t["41qiDQ"]),
                 navId: "manage-multi-account",
-                onClose: d.Zy,
+                onClose: u.Zy,
                 onSelect: t,
-                children: (0, s.jsx)(c.sNh, {
+                children: (0, i.jsx)(o.sNh, {
                   id: "remove-account",
-                  label: y.intl.string(y.t.lSLMaW),
+                  label: C.intl.string(C.t.lSLMaW),
                   action: () => {
-                    u.Z.logout("multi_accounts_list", null, n.id).finally(() => {
-                      j.Zd(n.id)
+                    d.Z.logout("multi_accounts_list", null, s.id).finally(() => {
+                      N.Zd(s.id)
                     });
                     let e = {};
-                    null != i ? e.section = b.jXE.MANAGE_ACCOUNTS_MODAL : e.page = b.Usc.LOGIN, x.default.track(b.rMx.MULTI_ACCOUNT_ACCOUNT_REMOVE, {
+                    null != a ? e.section = A.jXE.MANAGE_ACCOUNTS_MODAL : e.page = A.Usc.LOGIN, f.default.track(A.rMx.MULTI_ACCOUNT_ACCOUNT_REMOVE, {
                       location: e
-                    }), r(2, n.id), null != t && t()
+                    }), n(2, s.id), null != t && t()
                   },
                   color: "danger"
                 })
               })
             })
           },
-          "aria-label": y.intl.string(y.t.PdRCRk),
+          "aria-label": C.intl.string(C.t.PdRCRk),
           variant: "icon-only"
         })]
       })]
@@ -127,24 +127,26 @@ function N(e) {
   })
 }
 
-function S(e) {
+function j(e) {
   let {
     actionText: t,
-    onAction: n
+    onAction: s
   } = e, {
-    isLoading: r,
-    multiAccountUsers: l
-  } = (0, C.L)();
-  return (0, s.jsx)("div", {
-    className: O.list,
-    children: r ? (0, s.jsx)(c.$jN, {}) : l.map((e, r) => (0, s.jsxs)(i.Fragment, {
-      children: [(0, s.jsx)(N, {
+    isLoading: n,
+    multiAccountUsers: r
+  } = (0, T.L)();
+  return (0, i.jsx)("div", {
+    className: E.list,
+    children: n ? (0, i.jsx)(o.$jN, {
+      className: E.spinner
+    }) : r.map((e, n) => (0, i.jsxs)(a.Fragment, {
+      children: [(0, i.jsx)(b, {
         user: e,
         actionText: t,
-        onAction: n
-      }, e.id), l.length - 1 !== r && (0, s.jsx)("div", {
+        onAction: s
+      }, e.id), r.length - 1 !== n && (0, i.jsx)("div", {
         role: "separator",
-        className: O.separator
+        className: E.separator
       })]
     }, e.id))
   })

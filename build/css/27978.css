@@ -1,6 +1,6 @@
 /**
   Module ID: 27978
-  Original File Name: b0fb787d4219365f
+  Original File Name: fed7a5486848dc85
 **/
 .textContainer__2215e {
     padding: 6px 0
@@ -995,8 +995,8 @@
 
 .list__920b8 {
     align-items: center;
-    background-color: var(--background-base-lower);
-    border-radius: 4px;
+    background-color: var(--background-mod-subtle);
+    border-radius: 8px;
     display: flex;
     flex-direction: column
 }
@@ -1045,6 +1045,10 @@
 
 .hintText__920b8 {
     text-align: left
+}
+
+.spinner__920b8 {
+    margin: 8px
 }
 
 .chooseAccountAuthBox_df9c06 {
@@ -2883,4 +2887,4 @@
     height: 100px
 }
 
-/*# sourceMappingURL=b0fb787d4219365f.css.map*/
+/*# sourceMappingURL=fed7a5486848dc85.css.map*/
