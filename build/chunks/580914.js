@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 r.d(t, {
-  Z: () => H
+  Z: () => M
 }), r(388685);
 var n = r(255367),
   l = r(73800),
@@ -34,8 +34,8 @@ var n = r(255367),
   I = r(709999),
   N = r(794324),
   A = r(619899),
-  w = r(215023),
-  B = r(981631),
+  B = r(215023),
+  w = r(981631),
   R = r(388032),
   Z = r(806734);
 let D = {
@@ -62,7 +62,7 @@ let D = {
       categorySkuId: e.skuId,
       bannerAsset: e.heroBannerAsset,
       fallbackBannerUrl: (0, y.uV)(null != (l = e.heroBanner) ? l : "", {
-        size: w.pv,
+        size: B.pv,
         format: "jpg"
       }),
       summary: e.summary,
@@ -72,7 +72,7 @@ let D = {
       logoConfig: e.heroLogoDisplayConfig
     }
   },
-  M = e => {
+  H = e => {
     let {
       isResponsive: t,
       heroBannerOverrides: r
@@ -100,7 +100,7 @@ let D = {
       })]
     })
   },
-  H = e => {
+  M = e => {
     var t;
     let {
       isLoading: r,
@@ -108,9 +108,9 @@ let D = {
       category: c,
       heroBlock: y,
       tab: L,
-      onVisibilityChange: H
+      onVisibilityChange: M
     } = e, W = (0, u.e7)([f.Z], () => f.Z.useReducedMotion), V = (0, u.e7)([C.Z], () => C.Z.isFocused()), U = (0, p.O)(e => {
-      null == H || H(e)
+      null == M || M(e)
     }, .1), z = (0, u.e7)([O.default], () => O.default.getCurrentUser()), G = (0, j.u)(), q = (0, E.sp)(), {
       showBetaTag: Y
     } = _.Z.useExperiment({
@@ -123,7 +123,7 @@ let D = {
       heroLogo: ee,
       heroBannerStatic: et,
       heroBannerAnimated: er
-    } = (0, N.hr)(K), en = null == J ? void 0 : J.heroBanner, el = null != (t = null == Q ? void 0 : Q.responsive) && t, ei = null == Q ? void 0 : Q.backgroundStyle, eo = l.useMemo(() => G(K.rankedSkuIds), [r, G, K.rankedSkuIds]), ea = (0, T.a)()(eo), es = (0, P.l)(ea).slice(0, 4), ec = (0, A.St)(es), eu = L === w.AW.ORBS ? R.intl.string(R.t["1CdL8f"]) : R.intl.formatToPlainString(R.t.wvKYCg, {
+    } = (0, N.hr)(K), en = null == J ? void 0 : J.heroBanner, el = null != (t = null == Q ? void 0 : Q.responsive) && t, ei = null == Q ? void 0 : Q.backgroundStyle, eo = l.useMemo(() => G(K.rankedSkuIds), [r, G, K.rankedSkuIds]), ea = (0, T.a)()(eo), es = (0, P.l)(ea).slice(0, 4), ec = (0, A.St)(es), eu = L === B.AW.ORBS ? R.intl.string(R.t["1CdL8f"]) : R.intl.formatToPlainString(R.t.wvKYCg, {
       category_name: K.name
     }), ed = (0, x.FF)("CollectiblesContent");
     return null != z && (r || K !== D) ? (0, n.jsxs)("div", {
@@ -146,7 +146,7 @@ let D = {
           src: er,
           autoPlay: !0,
           loop: !0
-        }), (null == Q ? void 0 : Q.hideSideShadow) === !0 ? null : (0, n.jsx)(M, {
+        }), (null == Q ? void 0 : Q.hideSideShadow) === !0 ? null : (0, n.jsx)(H, {
           heroBannerOverrides: en,
           isResponsive: el
         })]
@@ -175,7 +175,7 @@ let D = {
                 variant: "heading-xxl/bold",
                 className: Z.title,
                 color: "header-primary",
-                children: [K.title, L === w.AW.ORBS && Y && (0, n.jsx)(h.Z, {})]
+                children: [K.title, L === B.AW.ORBS && Y && (0, n.jsx)(h.Z, {})]
               }), "" !== K.summary && (0, n.jsx)(d.Text, {
                 variant: K.categorySkuId === a.T.ORB ? "text-lg/medium" : "text-md/normal",
                 className: K.categorySkuId === a.T.ORB ? Z.orbsSubHeaderText : (null == J ? void 0 : J.showDarkBannerText) ? Z.subHeaderTextDark : Z.subHeaderText,
@@ -190,13 +190,13 @@ let D = {
             children: (0, n.jsx)(d.zxk, {
               variant: "overlay-primary",
               onClick: () => {
-                L === w.AW.ORBS ? ((0, m.Y)({
-                  pageType: B.ZY5.SHOP_ORBS_TAB,
-                  sectionType: B.jXE.ORBS_SHOP_HERO_BLOCK,
-                  ctaObject: B.qAy.CTA_TO_QUEST_HOME
+                L === B.AW.ORBS ? ((0, m.Y)({
+                  pageType: w.ZY5.SHOP_ORBS_TAB,
+                  sectionType: w.jXE.ORBS_SHOP_HERO_BLOCK,
+                  ctaObject: w.qAy.CTA_TO_QUEST_HOME
                 }), (0, b.navigateToQuestHome)({
                   fromContent: s.j.ORBS_SHOP_HERO_CTA
-                })) : (i("shop latest category hero", ed && K.categorySkuId !== a.T.ORB ? void 0 : K.categorySkuId), v.default.track(B.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+                })) : (i("shop latest category hero", ed && K.categorySkuId !== a.T.ORB ? void 0 : K.categorySkuId), v.default.track(w.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                   collectibles_shop_session_id: null == q ? void 0 : q.sessionId,
                   sku_id: K.categorySkuId,
                   page_type: L,
@@ -210,7 +210,7 @@ let D = {
           })]
         }), (0, n.jsx)("div", {
           className: o()(Z.row, Z.feed, {
-            [Z.feedSingleRow]: L !== w.AW.ORBS
+            [Z.feedSingleRow]: L !== B.AW.ORBS
           }),
           children: r ? (0, n.jsx)(n.Fragment, {
             children: [void 0, void 0, void 0, void 0].map((e, t) => (0, n.jsx)(k.K, {}, t))
