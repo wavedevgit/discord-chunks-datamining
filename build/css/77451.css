@@ -1,6 +1,6 @@
 /**
   Module ID: 77451
-  Original File Name: 659a71e4c9967547
+  Original File Name: cb463c292e42c771
 **/
 .wrapper__74bfa {
     align-items: center;
@@ -2809,11 +2809,6 @@ html .progress__61462 {
 
 .skuPurchaseButtons__727be>button {
     flex-grow: 1
-}
-
-.viewDetailsButton__727be {
-    background-color: var(--button-secondary-background);
-    color: var(--white)
 }
 
 .container_cacd02 {
@@ -9689,4 +9684,4 @@ html .progress__61462 {
     background-image: url(/assets/abbc14555963e723.svg)
 }
 
-/*# sourceMappingURL=659a71e4c9967547.css.map*/
+/*# sourceMappingURL=cb463c292e42c771.css.map*/
