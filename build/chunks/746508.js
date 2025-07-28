@@ -304,6 +304,7 @@ function eX(e) {
           return (0, r.jsx)(m.ua7, {
             text: i,
             children: e => (0, r.jsx)(g.zx, eF(eH({
+              "data-migration-pending": !0,
               buttonRef: o
             }, u, e, c), {
               onClick: t => {
@@ -373,7 +374,9 @@ function eQ(e) {
           visibleContent: i,
           markAsDismissed: c
         } = n;
-        return (0, r.jsxs)(g.zx, eF(eH(eF(eH({}, e), {
+        return (0, r.jsxs)(g.zx, eF(eH(eF(eH({
+          "data-migration-pending": !0
+        }, e), {
           fullWidth: !0,
           size: g.zx.Sizes.MEDIUM
         }), O), {
@@ -482,7 +485,9 @@ function eJ(e) {
       } = e, l = ez(e, ["onClick", "onMouseEnter"]);
       return (0, r.jsx)(m.ua7, {
         text: N,
-        children: e => (0, r.jsx)(g.zx, eF(eH(eF(eH({}, e), {
+        children: e => (0, r.jsx)(g.zx, eF(eH(eF(eH({
+          "data-migration-pending": !0
+        }, e), {
           buttonRef: c,
           size: g.zx.Sizes.MEDIUM,
           onClick: r => {
