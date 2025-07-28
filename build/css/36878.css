@@ -1,7 +1,17 @@
 /**
   Module ID: 36878
-  Original File Name: f3bd4a70fc3aab92
+  Original File Name: 6b47f41ab85b238c
 **/
+.settingButtonContainer__75483 {
+    margin: 0;
+    padding: var(--space-12)
+}
+
+.settingButtonContent__75483 {
+    display: flex;
+    gap: var(--space-12)
+}
+
 .baseControlItem_dbfbe0 {
     border-radius: var(--radius-lg);
     display: flex;
@@ -55,6 +65,24 @@
 .toggle__6467f {
     margin: 0;
     padding: var(--space-12)
+}
+
+.accordion_a1f93f {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8)
+}
+
+.full-motion .icon_a1f93f {
+    transition: transform .3s ease
+}
+
+.icon_a1f93f {
+    transform: rotate(0deg)
+}
+
+.iconClosed_a1f93f {
+    transform: rotate(180deg)
 }
 
 .category__35939 {
@@ -299,4 +327,4 @@
     color: var(--text-muted)
 }
 
-/*# sourceMappingURL=f3bd4a70fc3aab92.css.map*/
+/*# sourceMappingURL=6b47f41ab85b238c.css.map*/
