@@ -30,7 +30,7 @@ function Z(e) {
     a(), (0, j.R6)(t, void 0, "Thread Browser Empty State")
   }, N = l.useCallback((e, t) => {
     a(), (0, j.ok)(e, !t, v.on.BROWSER)
-  }, [a]), P = function(e, t) {
+  }, [a]), S = function(e, t) {
     let [n, r] = l.useState(""), [a, s] = l.useState(!1), [o, i] = l.useState(!1), [c, d] = l.useState([]), h = async () => {
       if (null != n && "" !== n && !a) {
         s(!0);
@@ -88,7 +88,7 @@ function Z(e) {
               })
             }
             return e
-          }({}, P))]
+          }({}, S))]
         }) : null, (0, r.jsx)("div", {
           className: b.spacer
         }), O ? (0, r.jsx)(i.zx, {
@@ -108,11 +108,11 @@ function Z(e) {
           })
         })]
       }),
-      children: P.hasResults ? (0, r.jsx)(m.Z, {
+      children: S.hasResults ? (0, r.jsx)(m.Z, {
         channel: t,
         startThread: w,
         goToThread: N,
-        threadIds: P.results
+        threadIds: S.results
       }) : (0, r.jsx)(f.Z, {
         channel: t,
         startThread: w,

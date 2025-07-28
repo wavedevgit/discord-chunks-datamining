@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Eb: () => D,
-  Fx: () => M,
+  Fx: () => k,
   IM: () => L,
   J2: () => V,
   r$: () => w
@@ -16,8 +16,8 @@ var r = n(512722),
   c = n(795513),
   u = n(591526),
   d = n(261875),
-  _ = n(768433),
-  f = n(710845),
+  f = n(768433),
+  _ = n(710845),
   p = n(339085),
   h = n(926491),
   m = n(131704),
@@ -82,7 +82,7 @@ function A(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let N = new f.Z("ReadyPayloadUtils"),
+let N = new _.Z("ReadyPayloadUtils"),
   C = {},
   R = null,
   P = {};
@@ -94,10 +94,10 @@ function w(e, t) {
       merged_presences: a
     } = e,
     o = S(e, ["guilds", "merged_members", "merged_presences"]);
-  let s = k(P, null == a ? void 0 : a.friends),
+  let s = M(P, null == a ? void 0 : a.friends),
     l = null != (n = null == r ? void 0 : r.map((e, t) => {
-      let n = k(P, null == a ? void 0 : a.guilds[t]),
-        r = k(P, null == i ? void 0 : i[t]);
+      let n = M(P, null == a ? void 0 : a.guilds[t]),
+        r = M(P, null == i ? void 0 : i[t]);
       return T(v({}, e), {
         unavailable: void 0 === e.voice_states,
         presences: n,
@@ -120,8 +120,8 @@ function w(e, t) {
 
 function D() {
   let e = s.Z.database(),
-    t = (0, _.O)() ? l.Z.getCommittedVersions() : Promise.resolve({});
-  return Promise.all([t, (0, _.O)() ? u.Z.getGuildIds() : Promise.resolve(new Set), null != e ? c.Z.okAsync(e) : Promise.resolve(!1)]).then(e => {
+    t = (0, f.O)() ? l.Z.getCommittedVersions() : Promise.resolve({});
+  return Promise.all([t, (0, f.O)() ? u.Z.getGuildIds() : Promise.resolve(new Set), null != e ? c.Z.okAsync(e) : Promise.resolve(!1)]).then(e => {
     let [t, n, r] = e;
     return {
       guildVersions: t,
@@ -141,18 +141,18 @@ function L(e, t, n) {
     } = e,
     d = S(e, ["users", "relationships", "private_channels", "merged_members", "guilds"]);
   U(n);
-  let _ = k(P = o().keyBy(a, e => e.id), s);
+  let f = M(P = o().keyBy(a, e => e.id), s);
   null == l || l.forEach(e => {
     let t = e.recipient_ids;
     null != t && (e.recipients = t.map(e => (i()(null != P[e], "Missing user in compressed ready payload"), P[e]))), delete e.recipient_ids
   });
-  let f = null != (r = null == u ? void 0 : u.map((e, t) => !0 === e.unavailable ? e : (e.members = k(P, null == c ? void 0 : c[t]), B(e)))) ? r : [],
+  let _ = null != (r = null == u ? void 0 : u.map((e, t) => !0 === e.unavailable ? e : (e.members = M(P, null == c ? void 0 : c[t]), B(e)))) ? r : [],
     p = x(t, u, e => B(e));
-  return null != p && f.push(p), T(v({}, d), {
+  return null != p && _.push(p), T(v({}, d), {
     users: a,
     presences: [],
-    relationships: _,
-    guilds: f,
+    relationships: f,
+    guilds: _,
     private_channels: null != l ? l : []
   })
 }
@@ -161,12 +161,12 @@ function x(e, t, n) {
   return null == R || R.identifyTime !== e || null != t && t.some(e => e.id === R.guild.id) ? null : n(R.guild)
 }
 
-function M(e, t) {
+function k(e, t) {
   var n, r, i;
   let a = E.Z.getGuild(e.id),
     o = V(e, null == a ? void 0 : {
       properties: b.dS(a),
-      roles: g.Z.getRoles(a.id),
+      roles: g.Z.getRolesSnapshot(a.id),
       emojis: null != (r = null == (n = p.ZP.getGuilds()[a.id]) ? void 0 : n.rawEmojis) ? r : null,
       stickers: null != (i = h.Z.getRawStickersByGuild().get(a.id)) ? i : null
     });
@@ -176,7 +176,7 @@ function M(e, t) {
   }, o
 }
 
-function k(e, t) {
+function M(e, t) {
   let n = [];
   return null == t || t.forEach(t => {
     if (null == t) return;
@@ -199,7 +199,7 @@ function U(e) {
     var i, a, o;
     s.id in e.guildVersions && e.guildChannels.has(s.id) && (C[s.id] = {
       properties: b.dS(s),
-      roles: g.Z.getRoles(s.id),
+      roles: g.Z.getRolesSnapshot(s.id),
       emojis: null != (a = null == (i = n[s.id]) ? void 0 : i.rawEmojis) ? a : null,
       stickers: null != (o = r.get(s.id)) ? o : null
     })

@@ -13,8 +13,8 @@ var r, i = n(873546),
   c = n(897473),
   u = n(585483),
   d = n(709054),
-  _ = n(592125),
-  f = n(496675),
+  f = n(592125),
+  _ = n(496675),
   p = n(944486),
   h = n(914010),
   m = n(594174),
@@ -87,14 +87,14 @@ function x(e) {
   }, !0)
 }
 
-function M(e) {
+function k(e) {
   let {
     guildId: t
   } = e;
   return null != N[t] && (delete N[t], !0)
 }
 
-function k(e) {
+function M(e) {
   let {
     sidebarType: t,
     baseChannelId: n,
@@ -165,8 +165,8 @@ function V() {
   for (let t in A) {
     let n = A[t];
     if (n.type === c.tI.VIEW_THREAD || n.type === c.tI.VIEW_CHANNEL) {
-      let r = _.Z.getChannel(n.channelId);
-      null != r && f.Z.can(b.Pl.VIEW_CHANNEL, r) || (delete A[t], e = !0)
+      let r = f.Z.getChannel(n.channelId);
+      null != r && _.Z.can(b.Pl.VIEW_CHANNEL, r) || (delete A[t], e = !0)
     }
   }
   return e
@@ -196,7 +196,7 @@ class Y extends(r = a.ZP.PersistedStore) {
       var t, n, r, i, a;
       v = null != (t = e.isMembersOpen) && t, I = null != (n = e.isSummariesOpen) && n, T = null == (r = e.isProfileOpen) || r, A = null != (i = e.sidebars) ? i : {}, N = null != (a = e.guildSidebars) ? a : {}
     }
-    this.syncWith([s.Z, l.Z], Z), this.syncWith([f.Z], V), this.waitFor(l.Z, s.Z)
+    this.syncWith([s.Z, l.Z], Z), this.syncWith([_.Z], V), this.waitFor(l.Z, s.Z)
   }
   getState() {
     return {
@@ -238,11 +238,11 @@ let W = new Y(o.Z, {
   CHANNEL_TOGGLE_MEMBERS_SECTION: w,
   USER_PROFILE_SIDEBAR_TOGGLE_SECTION: L,
   CHANNEL_TOGGLE_SUMMARIES_SECTION: D,
-  SIDEBAR_VIEW_CHANNEL: k,
+  SIDEBAR_VIEW_CHANNEL: M,
   SIDEBAR_VIEW_GUILD: x,
   SIDEBAR_CREATE_THREAD: j,
   SIDEBAR_CLOSE: F,
-  SIDEBAR_CLOSE_GUILD: M,
+  SIDEBAR_CLOSE_GUILD: k,
   CHANNEL_DELETE: U,
   CHANNEL_SELECT: H,
   THREAD_CREATE: B,

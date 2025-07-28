@@ -12,8 +12,8 @@ var r = n(392711),
   c = n(709302),
   u = n(984933),
   d = n(699516),
-  _ = n(594174),
-  f = n(483360),
+  f = n(594174),
+  _ = n(483360),
   p = n(892880),
   h = n(591759),
   m = n(279779),
@@ -46,7 +46,7 @@ let O = 100,
   I = 300;
 
 function T(e, t) {
-  return t.frecencyBoosters ? (0, f.Cq)(e) : {}
+  return t.frecencyBoosters ? (0, _.Cq)(e) : {}
 }
 class S {
   createSearchContext() {
@@ -110,7 +110,7 @@ class S {
         blacklist: r
       } = this.options,
       i = null != r ? e => !r.has("channel:".concat(e.id)) : void 0;
-    return f.ZP.queryChannels({
+    return _.ZP.queryChannels({
       query: e,
       guildId: null,
       limit: t,
@@ -124,7 +124,7 @@ class S {
     let {
       voiceChannelGuildFilter: n
     } = this.options, r = T(E.h8.VOICE_CHANNEL, this.options);
-    return f.ZP.queryChannels({
+    return _.ZP.queryChannels({
       query: e,
       guildId: n,
       limit: t,
@@ -140,7 +140,7 @@ class S {
         blacklist: r
       } = this.options,
       i = null != r ? e => !r.has("guild:".concat(e.id)) : void 0;
-    return f.ZP.queryGuilds({
+    return _.ZP.queryGuilds({
       query: e,
       limit: t,
       fuzzy: !0,
@@ -169,7 +169,7 @@ class S {
           }))
         }
       }
-      this._userResults = f.ZP.queryUsers({
+      this._userResults = _.ZP.queryUsers({
         query: e,
         users: r,
         limit: n,
@@ -189,7 +189,7 @@ class S {
     let {
       blacklist: n
     } = this.options, r = T(E.h8.GROUP_DM, this.options), i = null != n ? e => !n.has("channel:".concat(e.id)) : void 0;
-    return f.ZP.queryGroupDMs({
+    return _.ZP.queryGroupDMs({
       query: e,
       limit: t,
       fuzzy: !0,
@@ -198,7 +198,7 @@ class S {
     })
   }
   queryApplications(e, t) {
-    return this._include(E.h8.APPLICATION) ? f.ZP.queryApplications({
+    return this._include(E.h8.APPLICATION) ? _.ZP.queryApplications({
       query: e,
       limit: t,
       fuzzy: !0
@@ -225,7 +225,7 @@ class S {
     }] : []
   }
   queryInAppNavigations(e, t) {
-    return this._include(E.h8.IN_APP_NAVIGATION) ? f.ZP.queryInAppNavigations({
+    return this._include(E.h8.IN_APP_NAVIGATION) ? _.ZP.queryInAppNavigations({
       query: e,
       limit: t,
       fuzzy: !0
@@ -243,11 +243,11 @@ class S {
             comparator: r
           }
           of(this._userResults = [], t)) {
-          let t = _.default.getUser(e);
+          let t = f.default.getUser(e);
           null != t && this._userResults.push({
             type: E.h8.USER,
             record: t,
-            score: (0, f.mB)(n),
+            score: (0, _.mB)(n),
             comparator: null != r ? r : void 0
           })
         }

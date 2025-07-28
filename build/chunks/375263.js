@@ -1,13 +1,12 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
-  O: () => h
+  O: () => f
 });
 var r = n(255367),
   i = n(73800),
   l = n(481060),
-  s = n(906732),
-  a = n(516129),
+  a = n(906732),
+  s = n(516129),
   o = n(768581),
   c = n(949640),
   d = n(981631),
@@ -15,15 +14,15 @@ var r = n(255367),
   m = n(486324),
   g = n(200299),
   p = n(388032),
-  f = n(615511);
+  h = n(615511);
 
-function h(e) {
+function f(e) {
   let {
     guild: t,
     canManageGuild: n
-  } = e, h = t.features.has(d.oNc.BANNER), x = t.features.has(d.oNc.ANIMATED_BANNER), b = h && n, {
+  } = e, f = t.features.has(d.oNc.BANNER), x = t.features.has(d.oNc.ANIMATED_BANNER), b = f && n, {
     analyticsLocations: j
-  } = (0, s.ZP)(), v = i.useCallback((e, n) => {
+  } = (0, a.ZP)(), v = i.useCallback((e, n) => {
     (0, c.f4)(t, j, e, n)
   }, [j, t]), _ = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), (0, c.E6)({
@@ -33,7 +32,7 @@ function h(e) {
       analyticsObject: d.qAy.UPLOAD_IMAGE,
       perks: (0, u.XO)()
     })
-  }, [j, t]), O = (0, r.jsx)(a.Z, {
+  }, [j, t]), O = (0, r.jsx)(s.Z, {
     image: t.banner,
     makeURL: e => null != e ? o.ZP.getGuildBannerURL({
       id: t.id,
@@ -60,10 +59,10 @@ function h(e) {
     }),
     enabled: b
   });
-  return h ? O : (0, r.jsx)(l.P3F, {
+  return f ? O : (0, r.jsx)(l.P3F, {
     "aria-hidden": !0,
     tabIndex: -1,
-    className: f.upsell,
+    className: h.upsell,
     onClick: _,
     children: O
   })

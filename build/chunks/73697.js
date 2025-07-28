@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   userContainer: "userContainer__3e7e2",
   quotes: "quotes__3e7e2",

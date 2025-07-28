@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   howItWorksContainer: "howItWorksContainer_dd30dc",
   howItWorksCard: "howItWorksCard_dd30dc " + n(551131).card,

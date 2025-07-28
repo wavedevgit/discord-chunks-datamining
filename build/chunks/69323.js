@@ -20,20 +20,20 @@ function _(e) {
     powerup: t,
     targetRef: n,
     isCardVisible: _
-  } = e, x = (0, l.e7)([u.Z], () => u.Z.hasLayers()), v = t.skuId === i.A$ ? {
+  } = e, x = (0, l.e7)([u.Z], () => u.Z.hasLayers()), g = t.skuId === i.A$ ? {
     title: f.intl.string(m.default.YWo6VF),
     body: f.intl.string(m.default.gXVvKS),
     dismissibleContentType: s.z.VANITY_URL_POWERUP_EDUCATIONAL_POPOVER
-  } : null, g = [];
-  null != v && !x && _ && g.push(v.dismissibleContentType);
-  let [b, j] = (0, c.US)(g), E = o.useCallback(() => {
+  } : null, v = [];
+  null != g && !x && _ && v.push(g.dismissibleContentType);
+  let [b, j] = (0, c.US)(v), E = o.useCallback(() => {
     j(p.L.INDIRECT_ACTION)
   }, [j]);
   return ((0, d.Z)({
     targetRef: n,
     onShouldClose: E,
     enabled: null != b
-  }), null == v || null == b) ? null : (0, r.jsx)(a.J2, {
+  }), null == g || null == b) ? null : (0, r.jsx)(a.J2, {
     targetElementRef: n,
     shouldShow: !0,
     position: "right",
@@ -43,8 +43,8 @@ function _(e) {
       position: "left",
       align: "start"
     },
-    title: v.title,
-    body: v.body,
+    title: g.title,
+    body: g.body,
     onRequestClose: () => {
       j(p.L.USER_DISMISS)
     }

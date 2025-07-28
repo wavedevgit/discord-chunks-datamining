@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   root: "root__759ac",
   carouselCaret: "carouselCaret__759ac",

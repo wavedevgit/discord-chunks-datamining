@@ -18,16 +18,16 @@ function l(e) {
     onClose: c,
     appContext: u,
     disableAutoFocus: d = !1
-  } = e, _ = (0, i.Z)(t.id, n);
+  } = e, f = (0, i.Z)(t.id, n);
   return (0, r.jsxs)("div", {
     className: s.footer,
-    children: [_ && (0, r.jsx)(o.Z, {
+    children: [f && (0, r.jsx)(o.Z, {
       user: t,
       guildId: n,
       channelId: l,
       onClose: c,
       disableAutoFocus: d
-    }), !_ && (0, r.jsx)(a.Z, {
+    }), !f && (0, r.jsx)(a.Z, {
       user: t,
       guildId: n,
       onClose: c,

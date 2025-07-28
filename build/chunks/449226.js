@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   Z: () => o
 });
@@ -7,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(120356),
   l = n.n(i),
-  s = n(481060),
-  a = n(296205);
+  a = n(481060),
+  s = n(296205);
 
 function o(e) {
   var t, n;
@@ -21,7 +20,7 @@ function o(e) {
   } = e, m = e => {
     e.stopPropagation(), e.preventDefault()
   };
-  return (0, r.jsx)(s.P3F, (t = function(e) {
+  return (0, r.jsx)(a.P3F, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -42,9 +41,9 @@ function o(e) {
     onClick: m,
     onMouseDown: m,
     onMouseUp: m,
-    className: l()(a.switch, d)
+    className: l()(s.switch, d)
   }, u), n = n = {
-    children: (0, r.jsx)(s.rsf, {
+    children: (0, r.jsx)(a.rsf, {
       checked: i,
       onChange: o,
       disabled: c

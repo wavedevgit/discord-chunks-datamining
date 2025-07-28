@@ -1,13 +1,12 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
-  Z: () => h
+  Z: () => f
 }), n(388685), n(358797);
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  s = n.n(l),
-  a = n(481060),
+  a = n.n(l),
+  s = n(481060),
   o = n(110924),
   c = n(347469),
   d = n(853276),
@@ -33,24 +32,24 @@ function p(e) {
     className: g.resizeHandle
   })
 }
-let f = i.forwardRef(function(e, t) {
+let h = i.forwardRef(function(e, t) {
   let {
     children: n,
     onFocus: l,
-    onBlur: s,
+    onBlur: a,
     onClick: o
   } = e, c = i.useRef(null), [d, m] = i.useState(u.tq);
-  return (0, r.jsxs)(a.P3F, {
+  return (0, r.jsxs)(s.P3F, {
     className: g.textArea,
     onFocus: l,
-    onBlur: s,
+    onBlur: a,
     onClick: o,
     innerRef: c,
     ignoreKeyPress: !0,
     style: {
       minHeight: d
     },
-    children: [(0, r.jsx)(a.Den, {
+    children: [(0, r.jsx)(s.Den, {
       className: g.innerScroller,
       style: {
         minHeight: d - 2
@@ -67,7 +66,7 @@ let f = i.forwardRef(function(e, t) {
   })
 });
 
-function h(e) {
+function f(e) {
   var t;
   let {
     initialValue: n,
@@ -75,7 +74,7 @@ function h(e) {
     onChangeNewTagValue: c,
     tagErrors: u = {},
     placeholder: p,
-    className: h,
+    className: f,
     maxTags: x
   } = e, b = i.useRef(null), j = i.useRef(null), v = i.useRef(null), _ = (0, m.V)(n), {
     handlePasteEvent: O,
@@ -128,11 +127,11 @@ function h(e) {
       } else T(e, !0), M(!0)
     }, [S, T, D, Z]);
   return (0, r.jsxs)("div", {
-    className: s()(g.mainContainer, h),
+    className: a()(g.mainContainer, f),
     ref: j,
     tabIndex: 0,
     onKeyUp: N,
-    children: [(0, r.jsxs)(f, {
+    children: [(0, r.jsxs)(h, {
       ref: v,
       onClick: G,
       children: [Z.map((e, t) => (0, r.jsx)(d.Z, {
@@ -146,7 +145,7 @@ function h(e) {
         error: u[e],
         forceShowErrorTooltip: !L && t === Z.length - 1
       }, t)), (0, r.jsx)("input", {
-        className: s()(g.mainTextInput, {
+        className: a()(g.mainTextInput, {
           [g.isEditingOtherNodes]: L
         }),
         ref: b,
@@ -157,7 +156,7 @@ function h(e) {
         placeholder: 0 === Z.length ? p : void 0,
         value: R
       })]
-    }), null != x && (0, r.jsxs)(a.Text, {
+    }), null != x && (0, r.jsxs)(s.Text, {
       variant: "text-xs/normal",
       color: "text-muted",
       className: g.maxTags,

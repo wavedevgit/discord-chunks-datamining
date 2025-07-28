@@ -1,13 +1,12 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   M: () => g
 });
 var r = n(255367),
   i = n(73800),
   l = n(481060),
-  s = n(434404),
-  a = n(388032);
+  a = n(434404),
+  s = n(388032);
 let o = "".concat(60),
   c = "".concat(300),
   d = "".concat(900),
@@ -21,31 +20,31 @@ function g(e) {
     afkChannelId: g
   } = e, p = i.useMemo(() => [{
     value: o,
-    label: a.intl.formatToPlainString(a.t.iXLF9f, {
+    label: s.intl.formatToPlainString(s.t.iXLF9f, {
       minutes: 1
     })
   }, {
     value: c,
-    label: a.intl.formatToPlainString(a.t.iXLF9f, {
+    label: s.intl.formatToPlainString(s.t.iXLF9f, {
       minutes: 5
     })
   }, {
     value: d,
-    label: a.intl.formatToPlainString(a.t.iXLF9f, {
+    label: s.intl.formatToPlainString(s.t.iXLF9f, {
       minutes: 15
     })
   }, {
     value: u,
-    label: a.intl.formatToPlainString(a.t.iXLF9f, {
+    label: s.intl.formatToPlainString(s.t.iXLF9f, {
       minutes: 30
     })
   }, {
     value: m,
-    label: a.intl.formatToPlainString(a.t.xCjYxM, {
+    label: s.intl.formatToPlainString(s.t.xCjYxM, {
       hours: 1
     })
-  }], []), f = i.useCallback(e => {
-    s.Z.updateGuild({
+  }], []), h = i.useCallback(e => {
+    a.Z.updateGuild({
       afkTimeout: parseInt(e, 10)
     })
   }, []);
@@ -53,6 +52,6 @@ function g(e) {
     value: null == n ? null : "".concat(n),
     options: p,
     isDisabled: null == g || !t,
-    onChange: f
+    onChange: h
   })
 }

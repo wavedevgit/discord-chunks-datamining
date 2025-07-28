@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   container: "container_d7a3d0",
   autoWidth: "autoWidth_d7a3d0",

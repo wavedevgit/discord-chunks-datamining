@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   gameImage: "gameImage_a3ec8a",
   gameUnknownImage: "gameUnknownImage_a3ec8a",

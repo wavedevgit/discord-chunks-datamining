@@ -1,13 +1,12 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   Z: () => N,
   x: () => j
 }), n(388685);
 var r, i = n(255367),
   l = n(73800),
-  s = n(120356),
-  a = n.n(s),
+  a = n(120356),
+  s = n.n(a),
   o = n(652141),
   c = n(772848),
   d = n(374470),
@@ -15,8 +14,8 @@ var r, i = n(255367),
   m = n(481060),
   g = n(624138),
   p = n(981631),
-  f = n(93841),
-  h = n(388032),
+  h = n(93841),
+  f = n(388032),
   x = n(354444);
 
 function b(e, t, n) {
@@ -60,9 +59,9 @@ class C extends(r = l.Component) {
     }
     if (null == t) return i.y;
     let l = t.y - i.y,
-      s = t.numRequired - i.numRequired,
-      a = r - i.numRequired;
-    return i.y + a / s * l
+      a = t.numRequired - i.numRequired,
+      s = r - i.numRequired;
+    return i.y + s / a * l
   }
   getCurrentTierIndex() {
     let {
@@ -90,21 +89,21 @@ class C extends(r = l.Component) {
     } = this.state;
     if (!n || null == this.foregroundTooltipElementRef.current) return null;
     let l = t[this.getCurrentTierIndex() + 1],
-      s = null != l ? l.numRequired : null,
-      a = null != s ? s - e : null;
+      a = null != l ? l.numRequired : null,
+      s = null != a ? a - e : null;
     return (0, i.jsxs)(m.Cys, {
       targetElementRef: this.foregroundTooltipElementRef,
       position: "right",
       color: m.ua7.Colors.PRIMARY,
       tooltipClassName: x.foregroundTooltip,
       children: [(0, i.jsx)("div", {
-        children: h.intl.format(h.t.gDsyBw, {
+        children: f.intl.format(f.t.gDsyBw, {
           numSubscriptions: e
         })
-      }), null != a && a > 0 && null != l ? (0, i.jsx)("div", {
+      }), null != s && s > 0 && null != l ? (0, i.jsx)("div", {
         className: x.tooltipMuted,
-        children: h.intl.format(h.t["2U9MDg"], {
-          number: a,
+        children: f.intl.format(f.t["2U9MDg"], {
+          number: s,
           tier: l.name
         })
       }) : null]
@@ -118,14 +117,14 @@ class C extends(r = l.Component) {
     let n = Math.min(t, e.numRequired);
     return (0, i.jsx)("div", {
       children: this.getTierDisabled(e) ? (0, i.jsx)("div", {
-        children: h.intl.formatToPlainString(f.default["9CtPjo"], {
+        children: f.intl.formatToPlainString(h.default["9CtPjo"], {
           perk: e.name
         })
       }) : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
           children: e.name
         }), (0, i.jsx)("div", {
-          children: h.intl.format(h.t.AkLa6u, {
+          children: f.intl.format(f.t.AkLa6u, {
             subscribers: n,
             numRequired: e.numRequired
           })
@@ -136,18 +135,18 @@ class C extends(r = l.Component) {
   renderTierMarker(e, t, n) {
     var r;
     let l, {
-        progress: s,
-        tiers: a
+        progress: a,
+        tiers: s
       } = this.props,
-      c = a[n],
-      d = s >= e.numRequired,
+      c = s[n],
+      d = a >= e.numRequired,
       u = null != c && e.key === c.key,
-      g = e.key === a[0].key,
+      g = e.key === s[0].key,
       p = this.getTierDisabled(e);
     l = g ? x.tierFirst : p ? x.tierInProgress : u ? x.tierCurrent : d ? x.tierAccomplished : x.tierInProgress;
-    let f = e.y - (g ? 0 : _ / 2),
-      h = this.state.tierMarkerActive >= t,
-      j = !g && u && h;
+    let h = e.y - (g ? 0 : _ / 2),
+      f = this.state.tierMarkerActive >= t,
+      j = !g && u && f;
     return (0, i.jsx)(m.ua7, {
       text: this.renderTierMarkerTooltip(e),
       position: "right",
@@ -176,7 +175,7 @@ class C extends(r = l.Component) {
           }({}, e), r = r = {
             className: l,
             style: {
-              top: f,
+              top: h,
               transform: t.scale.interpolate(e => "scale(".concat(e, ")"))
             },
             children: j && (0, i.jsx)(m.dz2, {
@@ -258,7 +257,7 @@ class C extends(r = l.Component) {
       tiers: t
     } = this.props, n = this.getCurrentTierIndex(), r = this.getTotalHeight();
     return (0, i.jsxs)("div", {
-      className: a()(e, x.progressBar),
+      className: s()(e, x.progressBar),
       style: {
         height: r
       },
@@ -308,12 +307,12 @@ class C extends(r = l.Component) {
         tierMarkerActive: l
       } = this.state;
       for (let e = n.length - 1; e > 0; e--) {
-        let s = n[e],
-          a = l === e;
-        if (t + 20 >= s.y && r >= s.numRequired) {
-          a || (this.setState({
+        let a = n[e],
+          s = l === e;
+        if (t + 20 >= a.y && r >= a.numRequired) {
+          s || (this.setState({
             tierMarkerActive: e
-          }), null != i && i(s));
+          }), null != i && i(a));
           return
         }
       }

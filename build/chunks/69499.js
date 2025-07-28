@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(442837),
-  o = n(481060),
-  a = n(239091),
+  a = n(481060),
+  o = n(239091),
   c = n(585237),
   s = n(812206),
   u = n(55563),
@@ -35,8 +35,8 @@ class I extends i.PureComponent {
       {
         skus: i,
         children: l,
-        applicationId: o,
-        primarySKU: a,
+        applicationId: a,
+        primarySKU: o,
         onSKUSelect: s
       } = n,
       u = function(e, t) {
@@ -89,12 +89,12 @@ class I extends i.PureComponent {
         onSKUSelect: t,
         onMenuSelect: n
       } = this.props;
-      return (0, r.jsx)(o.v2r, {
+      return (0, r.jsx)(a.v2r, {
         onSelect: n,
         navId: "test-skus",
         "aria-label": _.intl.string(_.t.ogxXGh),
-        onClose: a.Zy,
-        children: e.map(e => (0, r.jsx)(o.sNh, {
+        onClose: o.Zy,
+        children: e.map(e => (0, r.jsx)(a.sNh, {
           id: "".concat(e.id),
           label: e.name,
           action: () => {
@@ -103,7 +103,7 @@ class I extends i.PureComponent {
         }, "".concat(e.id)))
       })
     }), E(this, "handleContextMenu", e => {
-      e.stopPropagation(), a.vq(e, this.renderContextMenu)
+      e.stopPropagation(), o.vq(e, this.renderContextMenu)
     }), E(this, "handleClick", () => {
       let {
         onSKUSelect: e,

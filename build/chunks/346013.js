@@ -81,8 +81,8 @@ function U(e) {
     var e;
     return j.ZP.isMember(null == z ? void 0 : z.guildId, null == (e = I.default.getCurrentUser()) ? void 0 : e.id)
   }, [z]), en = (0, c.e7)([j.ZP], () => (null == z ? void 0 : z.authorId) != null ? j.ZP.getMember(z.guildId, z.authorId) : null), er = (0, g.Z)((null == en ? void 0 : en.avatarDecoration) != null ? null == en ? void 0 : en.avatarDecoration : null == z || null == (t = z.user) ? void 0 : t.avatarDecoration), [ei, el, ea] = i.useMemo(() => {
-    var e;
-    return [null != (e = null == en ? void 0 : en.colorString) ? e : "inherit", null == en ? void 0 : en.colorStrings, null == en ? void 0 : en.colorRoleId]
+    var e, t;
+    return [null != (e = null == en ? void 0 : en.colorString) ? e : "inherit", null != (t = null == en ? void 0 : en.colorStrings) ? t : null, null == en ? void 0 : en.colorRoleId]
   }, [en]), eo = (0, v.X7)(null == en ? void 0 : en.guildId, null != (l = null == z ? void 0 : z.authorId) ? l : void 0, el), {
     reducedMotion: es
   } = i.useContext(d.Sfi), [ec, eu] = i.useState(!1), ed = i.useCallback(() => {
@@ -215,8 +215,8 @@ function U(e) {
               authorName: z.authorName,
               authorNameHook: () => null == z.authorId ? (0, r.jsx)(d.rz2, {
                 name: z.authorName,
-                color: ei,
-                roleColors: eo,
+                colorString: ei,
+                colorStrings: eo,
                 className: L.authorName
               }) : (0, r.jsx)(y.Z, {
                 targetElementRef: H,
@@ -230,8 +230,8 @@ function U(e) {
                 children: e => (0, r.jsx)(d.rz2, M(k({}, e), {
                   ref: H,
                   name: z.authorName,
-                  color: ei,
-                  roleColors: eo,
+                  colorString: ei,
+                  colorStrings: eo,
                   className: L.authorName
                 }))
               }, (0, o.Z)())

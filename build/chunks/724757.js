@@ -1,14 +1,14 @@
 /** Chunk was on 64385 **/
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(73800),
   i = n(924826),
   l = n(442837),
-  o = n(607070);
+  a = n(607070);
 
-function a(e, t, n) {
-  let a = (0, l.e7)([o.Z], () => o.Z.keyboardModeEnabled),
+function o(e, t, n) {
+  let o = (0, l.e7)([a.Z], () => a.Z.keyboardModeEnabled),
     c = r.useCallback(e => {
       let n = document.querySelector(e),
         r = t.current;
@@ -35,7 +35,7 @@ function a(e, t, n) {
     }), [t]);
   return (0, i.ZP)({
     id: e,
-    isEnabled: a,
+    isEnabled: o,
     setFocus: c,
     scrollToStart: s,
     scrollToEnd: u,

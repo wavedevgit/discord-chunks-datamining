@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => u
 });
 var i = n(255367),
-  r = n(73800),
-  l = n(481060),
+  l = n(73800),
+  r = n(481060),
   o = n(596454),
   s = n(318766),
   a = n(907040),
@@ -18,19 +18,19 @@ function u(e) {
     emoji: u,
     setEmoji: m,
     channel: j
-  } = e, v = r.useRef(null), h = e => t => {
+  } = e, v = l.useRef(null), h = e => t => {
     var n, i;
     let {
-      emoji: r,
-      willClose: l
+      emoji: l,
+      willClose: r
     } = t;
-    null != r && (null == r.id ? m({
-      name: null != (n = r.optionallyDiverseSequence) ? n : ""
+    null != l && (null == l.id ? m({
+      name: null != (n = l.optionallyDiverseSequence) ? n : ""
     }) : m({
-      id: r.id,
-      name: null != (i = r.originalName) ? i : r.name,
-      animated: r.animated
-    }), l && e())
+      id: l.id,
+      name: null != (i = l.originalName) ? i : l.name,
+      animated: l.animated
+    }), r && e())
   }, p = null == u || null == u.name ? null : () => {
     var e;
     return (0, i.jsx)(o.Z, {
@@ -45,7 +45,7 @@ function u(e) {
     onClick: () => {
       m(null)
     },
-    children: (0, i.jsx)(l.yRy, {
+    children: (0, i.jsx)(r.yRy, {
       targetElementRef: v,
       position: "bottom",
       renderPopout: e => {
@@ -60,11 +60,11 @@ function u(e) {
         })
       },
       children: (e, n) => {
-        var r, l;
+        var l, r;
         let {
           isShown: o
         } = n;
-        return (0, i.jsx)(s.Z, (r = function(e) {
+        return (0, i.jsx)(s.Z, (l = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               i = Object.keys(n);
@@ -81,22 +81,22 @@ function u(e) {
             })
           }
           return e
-        }({}, e), l = l = {
+        }({}, e), r = r = {
           ref: v,
           tabIndex: 0,
           active: o,
           className: t,
           renderButtonContents: p
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var i = Object.getOwnPropertySymbols(e);
             n.push.apply(n, i)
           }
           return n
-        })(Object(l)).forEach(function(e) {
-          Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(l, e))
-        }), r))
+        })(Object(r)).forEach(function(e) {
+          Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(r, e))
+        }), l))
       }
     })
   })

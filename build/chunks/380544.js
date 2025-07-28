@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   paymentInfoGroup: "paymentInfoGroup_c0544c",
   metricsContainer: "metricsContainer_c0544c",

@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   scroller: "scroller__16663",
   noticeContainer: "noticeContainer__16663",

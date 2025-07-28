@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   developerPortalCtaWrapper: "developerPortalCtaWrapper_bf485f",
   developerPortalCta: "developerPortalCta_bf485f",

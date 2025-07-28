@@ -14,10 +14,10 @@ var r = t(442837),
   d = t(209698),
   f = t(369566),
   p = t(29899),
-  g = t(678738),
-  j = t(151545),
-  v = t(744802),
-  h = t(493043),
+  j = t(678738),
+  g = t(151545),
+  h = t(744802),
+  v = t(493043),
   m = t(864141),
   b = t(228168),
   x = t(981631),
@@ -56,7 +56,7 @@ function I(e) {
   return k || G || !M ? (0, l.jsxs)(i.zJl, {
     className: O.scroller,
     fade: !0,
-    children: [k ? (0, l.jsx)(g.Z, {
+    children: [k ? (0, l.jsx)(j.Z, {
       "aria-label": y.intl.string(y.t.J6STd3),
       children: (0, l.jsxs)("ul", {
         className: O.activityList,
@@ -68,7 +68,7 @@ function I(e) {
             onClose: T
           })
         }), null != w && (0, l.jsx)("li", {
-          children: (0, l.jsx)(h.Z, {
+          children: (0, l.jsx)(v.Z, {
             location: "UserProfileModalActivity",
             user: n,
             currentUser: t,
@@ -77,7 +77,7 @@ function I(e) {
             profileGuildId: null == I ? void 0 : I.guildId
           })
         }), A.map((e, r) => (0, l.jsx)("li", {
-          children: (0, l.jsx)(j.Z, {
+          children: (0, l.jsx)(g.Z, {
             user: n,
             currentUser: t,
             activity: e,
@@ -86,7 +86,7 @@ function I(e) {
           })
         }, "live-".concat(r)))]
       })
-    }) : null, G ? (0, l.jsx)(g.Z, {
+    }) : null, G ? (0, l.jsx)(j.Z, {
       heading: y.intl.string(y.t.M0zgnZ),
       introText: U ? y.intl.format(y.t["4bk9Ag"], {
         learnMoreHook: (e, n) => (0, l.jsx)(i.eee, {
@@ -98,7 +98,7 @@ function I(e) {
       children: (0, l.jsx)("ul", {
         className: O.activityList,
         children: C.map(e => (0, l.jsx)("li", {
-          children: (0, l.jsx)(v.Z, {
+          children: (0, l.jsx)(h.Z, {
             location: "UserProfileModalActivity",
             user: n,
             currentUser: t,

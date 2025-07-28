@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   Z: () => w,
   g: () => P
@@ -7,8 +6,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(580685),
-  s = n(442837),
-  a = n(704215),
+  a = n(442837),
+  s = n(704215),
   o = n(481060),
   c = n(100527),
   d = n(266454),
@@ -16,8 +15,8 @@ var r = n(255367),
   m = n(65361),
   g = n(731722),
   p = n(441536),
-  f = n(494620),
-  h = n(434404),
+  h = n(494620),
+  f = n(434404),
   x = n(999382),
   b = n(70086),
   j = n(835887),
@@ -74,14 +73,14 @@ let P = [{
   w = function() {
     var e, t, n, w;
     (0, S.useSyncMessages)(E.messagesLoader);
-    let R = (0, s.e7)([x.Z], () => x.Z.getGuild()),
-      Z = (0, s.e7)([x.Z], () => x.Z.getGuildProfile()),
+    let R = (0, a.e7)([x.Z], () => x.Z.getGuild()),
+      Z = (0, a.e7)([x.Z], () => x.Z.getGuildProfile()),
       {
         fetchGuildProfile: D,
         fetchStatus: A
       } = (0, m.u)(null == R ? void 0 : R.id);
     if (i.useEffect(() => {
-        (0, d.Q3)(a.z.GUILD_TAG_SERVER_SETTINGS_NEW_BADGE, {
+        (0, d.Q3)(s.z.GUILD_TAG_SERVER_SETTINGS_NEW_BADGE, {
           dismissAction: N.L.AUTO
         })
       }, []), i.useEffect(() => {
@@ -134,18 +133,18 @@ let P = [{
               color: "text-secondary",
               children: S.intl.format(E.default["655Un5"], {
                 onClickServerProfile: () => {
-                  h.Z.setSection(C.pNK.PROFILE)
+                  f.Z.setSection(C.pNK.PROFILE)
                 },
                 onClickApplyToJoin: () => {
-                  h.Z.setSection(C.pNK.ACCESS)
+                  f.Z.setSection(C.pNK.ACCESS)
                 }
               })
-            }), !k && (0, r.jsx)(f.Z, {
+            }), !k && (0, r.jsx)(h.Z, {
               className: T.privateProfileWarning,
               children: (0, r.jsx)(o.Text, {
                 variant: "text-xs/medium",
                 children: S.intl.format(E.default.CRbkIy, {
-                  onClickEditSetting: () => h.Z.setSection(C.pNK.PROFILE, C.KsC.PROFILE_VISIBILITY)
+                  onClickEditSetting: () => f.Z.setSection(C.pNK.PROFILE, C.KsC.PROFILE_VISIBILITY)
                 })
               })
             })]
@@ -164,13 +163,13 @@ let P = [{
               onChange: () => {
                 if (M) {
                   var e;
-                  h.Z.updateGuildProfile(R.id, {
+                  f.Z.updateGuildProfile(R.id, {
                     tag: null != (e = Z.tag) ? e : "",
                     badge: G,
                     badgeColorPrimary: U,
                     badgeColorSecondary: B
                   })
-                } else h.Z.updateGuildProfile(R.id, {
+                } else f.Z.updateGuildProfile(R.id, {
                   tag: null
                 })
               }
@@ -179,7 +178,7 @@ let P = [{
             className: T.boostingLinkContainer,
             children: (0, r.jsx)(b.P, {
               onClick: () => {
-                (0, p.Z)(R.id, c.Z.GUILD_POWERUPS_GUILD_SETTINGS_TAGS), h.Z.close()
+                (0, p.Z)(R.id, c.Z.GUILD_POWERUPS_GUILD_SETTINGS_TAGS), f.Z.close()
               }
             })
           }), M ? (0, r.jsx)(o.nuw, {

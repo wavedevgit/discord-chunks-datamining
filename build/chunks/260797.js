@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   searchBar: "searchBar_cdb2b0",
   settingsHeader: "settingsHeader_cdb2b0",

@@ -1,13 +1,12 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   Z: () => j
 });
 var r = n(255367),
   i = n(73800),
   l = n(399606),
-  s = n(481060),
-  a = n(710344),
+  a = n(481060),
+  s = n(710344),
   o = n(734893),
   c = n(8426),
   d = n(969632),
@@ -34,7 +33,7 @@ function p(e) {
   return e
 }
 
-function f(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -46,7 +45,7 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let h = [];
+let f = [];
 
 function x() {
   return (0, r.jsx)("div", {
@@ -55,7 +54,7 @@ function x() {
       className: g.actionItem,
       children: [(0, r.jsx)("div", {
         className: g.actionItemEmojiWrapper,
-        children: (0, r.jsx)(s.snC, {
+        children: (0, r.jsx)(a.snC, {
           size: "custom",
           color: "currentColor",
           height: 20,
@@ -63,7 +62,7 @@ function x() {
         })
       }), (0, r.jsx)("div", {
         className: g.actionItemText,
-        children: (0, r.jsx)(s.Text, {
+        children: (0, r.jsx)(a.Text, {
           variant: "text-md/semibold",
           color: "header-primary",
           children: m.intl.string(m.t["K/i3iY"])
@@ -77,24 +76,24 @@ function b(e) {
   let {
     guildId: t,
     onAddAction: l
-  } = e, a = i.useCallback(() => {
-    if (null != t) return (0, s.ZDy)(async () => {
+  } = e, s = i.useCallback(() => {
+    if (null != t) return (0, a.ZDy)(async () => {
       let {
         default: e
       } = await n.e("14653").then(n.bind(n, 380716));
-      return n => (0, r.jsx)(e, f(p({}, n), {
+      return n => (0, r.jsx)(e, h(p({}, n), {
         guildId: t,
         onSave: l
       }))
     })
   }, [t, l]);
-  return (0, r.jsxs)(s.P3F, {
+  return (0, r.jsxs)(a.P3F, {
     className: g.addActionItem,
-    onClick: a,
-    children: [(0, r.jsx)(s.oFk, {
+    onClick: s,
+    children: [(0, r.jsx)(a.oFk, {
       size: "xs",
       color: "currentColor"
-    }), (0, r.jsx)(s.Text, {
+    }), (0, r.jsx)(a.Text, {
       variant: "text-md/normal",
       color: "none",
       children: m.intl.string(m.t.qce3EB)
@@ -106,8 +105,8 @@ let j = function(e) {
     guildId: t
   } = e, n = (0, l.Wu)([d.Z], () => {
     var e;
-    return null != (e = d.Z.getSettings().newMemberActions) ? e : h
-  }), s = i.useCallback((e, n) => {
+    return null != (e = d.Z.getSettings().newMemberActions) ? e : f
+  }), a = i.useCallback((e, n) => {
     (0, c.vR)(e);
     let r = d.Z.getSettings();
     if (null == r) return;
@@ -118,12 +117,12 @@ let j = function(e) {
       null != n && (0, c.ad)(t, i, n, !0)
     })
   }, [t]), m = i.useCallback((e, r, i, l) => {
-    var s;
-    let a = null == (s = n[e]) ? void 0 : s.channelId;
-    if (null == a) return;
+    var a;
+    let s = null == (a = n[e]) ? void 0 : a.channelId;
+    if (null == s) return;
     let o = d.Z.getSettings();
-    null != o && ((0, c.el)(a, r), (0, c.oo)(t, o, !0).then(() => {
-      (0, c.ad)(t, a, i, l)
+    null != o && ((0, c.el)(s, r), (0, c.oo)(t, o, !0).then(() => {
+      (0, c.ad)(t, s, i, l)
     }))
   }, [n, t]), j = i.useCallback(e => {
     var r;
@@ -132,7 +131,7 @@ let j = function(e) {
     (0, c.Hr)(i);
     let l = d.Z.getSettings();
     (0, c.oo)(t, l, !0)
-  }, [n, t]), v = n.map(e => f(p({}, e), {
+  }, [n, t]), v = n.map(e => h(p({}, e), {
     id: e.channelId
   })), _ = i.useCallback(e => {
     (0, c.hS)(e);
@@ -142,7 +141,7 @@ let j = function(e) {
     handleDragStart: O,
     handleDragReset: y,
     handleDragComplete: C
-  } = (0, a.Z)(v, _);
+  } = (0, s.Z)(v, _);
   return (0, r.jsxs)("div", {
     className: g.section,
     children: [n.map((e, n) => (0, r.jsx)(u.Z, {
@@ -156,7 +155,7 @@ let j = function(e) {
       onDragComplete: C
     }, e.channelId)), (0, r.jsx)(x, {}), n.length < o.O9 && (0, r.jsx)(b, {
       guildId: t,
-      onAddAction: s
+      onAddAction: a
     })]
   })
 }

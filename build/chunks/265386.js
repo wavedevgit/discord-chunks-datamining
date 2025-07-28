@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(933557),
   u = n(359110),
   d = n(769654),
-  _ = n(922482),
-  f = n(496675),
+  f = n(922482),
+  _ = n(496675),
   p = n(373826),
   h = n(788858),
   m = n(231338),
@@ -26,10 +26,10 @@ function b(e) {
     guild: n,
     onAction: i,
     onClose: b
-  } = e, y = (0, c.ZP)(t), O = (0, o.e7)([f.Z], () => t.isPrivate() || f.Z.can(m.Pl.CONNECT, t)), v = () => {
+  } = e, y = (0, c.ZP)(t), O = (0, o.e7)([_.Z], () => t.isPrivate() || _.Z.can(m.Pl.CONNECT, t)), v = () => {
     if (!O) return y;
     let e = e => {
-      e.stopPropagation(), t.isGuildStageVoice() ? (0, _.Cq)(t) : (l.default.selectVoiceChannel(t.id), (0, u.Kh)(t.id)), null == i || i({
+      e.stopPropagation(), t.isGuildStageVoice() ? (0, f.Cq)(t) : (l.default.selectVoiceChannel(t.id), (0, u.Kh)(t.id)), null == i || i({
         action: "OPEN_VOICE_CHANNEL"
       }), null == b || b()
     };

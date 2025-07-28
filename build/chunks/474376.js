@@ -63,7 +63,7 @@ function E(e) {
                   mode: "username",
                   identifiable: n ? "never" : "always"
                 })
-              }), !s.isPomelo() && (0, i.jsx)(a.Text, {
+              }), !s.hasUniqueUsername() && (0, i.jsx)(a.Text, {
                 className: j.userMenuDiscriminator,
                 variant: "text-sm/normal",
                 children: u

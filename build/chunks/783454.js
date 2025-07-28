@@ -1,13 +1,12 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   Z: () => g
 }), n(953529), n(388685);
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  s = n.n(l),
-  a = n(481060),
+  a = n.n(l),
+  s = n(481060),
   o = n(313201),
   c = n(259580),
   d = n(404203),
@@ -20,25 +19,25 @@ function g(e) {
     title: n,
     description: l,
     children: g
-  } = e, [p, f] = i.useState(t), h = () => f(e => !e), x = (0, o.Dt)();
+  } = e, [p, h] = i.useState(t), f = () => h(e => !e), x = (0, o.Dt)();
   return (0, r.jsxs)("div", {
     className: m.container,
     children: [(0, r.jsx)(d.Z, {
-      className: s()(m.header, {
+      className: a()(m.header, {
         [m.headerWithDescription]: p && null != l
       }),
-      onClick: h,
+      onClick: f,
       children: e => {
         let {
           areaRef: t,
           handleStopPropagation: i
         } = e;
         return (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(a.X6q, {
+          children: [(0, r.jsx)(s.X6q, {
             variant: "heading-md/semibold",
             children: n
-          }), (0, r.jsx)(a.P3F, {
-            onClick: i(h),
+          }), (0, r.jsx)(s.P3F, {
+            onClick: i(f),
             "aria-label": u.intl.string(u.t.e5eQOz),
             "aria-controls": x,
             "aria-expanded": p,
@@ -54,8 +53,8 @@ function g(e) {
       }
     }), p && (0, r.jsxs)("div", {
       id: x,
-      children: [null != l && (0, r.jsx)(a.R94, {
-        type: a.R94.Types.DESCRIPTION,
+      children: [null != l && (0, r.jsx)(s.R94, {
+        type: s.R94.Types.DESCRIPTION,
         className: m.description,
         children: l
       }), (0, r.jsx)("div", {

@@ -1,22 +1,21 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   Z: () => E
 }), n(953529), n(388685);
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  s = n.n(l),
-  a = n(498607),
-  o = n.n(a),
+  a = n.n(l),
+  s = n(498607),
+  o = n.n(s),
   c = n(913527),
   d = n.n(c),
   u = n(442837),
   m = n(692547),
   g = n(755721),
   p = n(481060),
-  f = n(984933),
-  h = n(63063),
+  h = n(984933),
+  f = n(63063),
   x = n(709054),
   b = n(434404),
   j = n(118215),
@@ -61,16 +60,16 @@ let N = e => {
     failingName: n,
     description: i,
     checked: l,
-    pending: s,
-    pendingDescription: a,
+    pending: a,
+    pendingDescription: s,
     failingDescription: o
   } = e, c = t, d = null, u = null;
-  return s ? (d = (0, r.jsx)(p.Mgn, {
+  return a ? (d = (0, r.jsx)(p.Mgn, {
     size: "custom",
     color: m.Z.unsafe_rawColors.YELLOW_300.css,
     width: 20,
     height: 20
-  }), u = null != a ? a : i) : l ? (d = (0, r.jsx)(p.XZJ, {
+  }), u = null != s ? s : i) : l ? (d = (0, r.jsx)(p.XZJ, {
     readOnly: !0,
     shape: p.XZJ.Shapes.ROUND,
     size: 20,
@@ -113,15 +112,15 @@ let E = e => {
   let {
     guild: t,
     guildId: l,
-    className: a,
+    className: s,
     headerContent: o,
     failedItemsOnly: c = !1
   } = e, [m, E] = (0, u.Wu)([j.ZP], () => [j.ZP.getDiscoveryChecklist(l), j.ZP.isLoading()], [l]), {
     nsfwProperties: S
-  } = null != m ? m : {}, T = null == t ? void 0 : t.features.has(v.oNc.PARTNERED), P = null == S ? void 0 : S.channels_banned_keywords, w = (0, u.e7)([f.ZP], () => {
+  } = null != m ? m : {}, T = null == t ? void 0 : t.features.has(v.oNc.PARTNERED), P = null == S ? void 0 : S.channels_banned_keywords, w = (0, u.e7)([h.ZP], () => {
     var e, n, r;
     if (null == P) return [];
-    let i = null != (n = (null != (e = f.ZP.getChannels(t.id)) ? e : {})[f.sH]) ? n : [],
+    let i = null != (n = (null != (e = h.ZP.getChannels(t.id)) ? e : {})[h.sH]) ? n : [],
       l = null != (r = null == i ? void 0 : i.map(e => e.channel).reduce((e, t) => C(y({}, e), {
         [t.id]: t
       }), {})) ? r : {};
@@ -131,7 +130,7 @@ let E = e => {
     })
   }, [t.id, P], I);
   if (E || null == m) return (0, r.jsxs)("div", {
-    className: s()(O.container, O.loaderContainer, a),
+    className: a()(O.container, O.loaderContainer, s),
     children: [(0, r.jsx)(p.X6q, {
       className: O.loadingText,
       variant: "heading-md/semibold",
@@ -148,7 +147,7 @@ let E = e => {
       description: _.intl.string(_.t.hSLSMz),
       failingDescription: _.intl.format(_.t.odsGg4, {
         termsURL: v.EYA.TERMS,
-        guidelinesURL: h.Z.getArticleURL(v.BhN.PUBLIC_GUILD_GUILDLINES)
+        guidelinesURL: f.Z.getArticleURL(v.BhN.PUBLIC_GUILD_GUILDLINES)
       }),
       checked: null == m ? void 0 : m.safeEnvironment
     }, {
@@ -285,7 +284,7 @@ let E = e => {
       checked: null == m ? void 0 : m.protected
     }];
   return (0, r.jsxs)("div", {
-    className: s()(O.container, a),
+    className: a()(O.container, s),
     children: [(() => {
       let e = (null == m ? void 0 : m.sufficient) ? n(909425) : n(177266);
       return null == o ? null : (0, r.jsxs)("div", {

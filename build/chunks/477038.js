@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   notice: "notice_cdf6f1",
   noticeIcon: "noticeIcon_cdf6f1",

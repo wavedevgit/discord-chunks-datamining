@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   wrapper: "wrapper__83b1d",
   actions: "actions__83b1d",

@@ -1,13 +1,12 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   F: () => p
 });
 var r = n(255367),
   i = n(73800),
   l = n(755721),
-  s = n(906732),
-  a = n(70086),
+  a = n(906732),
+  s = n(70086),
   o = n(949640),
   c = n(981631),
   d = n(30513),
@@ -21,24 +20,24 @@ function p(e) {
     canManageGuild: n,
     buttonClassName: p
   } = e, {
-    analyticsLocations: f
-  } = (0, s.ZP)(), h = t.features.has(c.oNc.BANNER), x = i.useCallback(e => {
+    analyticsLocations: h
+  } = (0, a.ZP)(), f = t.features.has(c.oNc.BANNER), x = i.useCallback(e => {
     let {
       imageUri: n,
       file: r
     } = e;
-    (0, o.f4)(t, f, n, r)
-  }, [f, t]), b = i.useCallback(e => {
+    (0, o.f4)(t, h, n, r)
+  }, [h, t]), b = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), (0, o.E6)({
       guild: t,
-      analyticsLocations: f,
+      analyticsLocations: h,
       analyticsSection: c.jXE.GUILD_BANNER,
       analyticsObject: c.qAy.BUTTON_CTA,
       perks: (0, d.XO)()
     })
-  }, [f, t]);
-  return h ? (0, r.jsx)(l.zx, {
-    disabled: !(h && n),
+  }, [h, t]);
+  return f ? (0, r.jsx)(l.zx, {
+    disabled: !(f && n),
     color: l.zx.Colors.BRAND,
     className: p,
     onClick: () => (0, o.mw)({
@@ -49,10 +48,10 @@ function p(e) {
         page: c.ZY5.GUILD_SETTINGS,
         section: c.jXE.GUILD_BANNER
       },
-      analyticsLocations: f
+      analyticsLocations: h
     }),
     children: g.intl.string(g.t.yG2pUl)
-  }) : (0, r.jsx)(a.P, {
+  }) : (0, r.jsx)(s.P, {
     className: p,
     onClick: b
   })

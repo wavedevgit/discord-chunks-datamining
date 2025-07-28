@@ -87,7 +87,7 @@ function Y(e) {
     b(null != c.current && c.current.scrollWidth > c.current.clientWidth)
   }, [o.username]);
   let x = !o.isClaimed(),
-    _ = u && !o.isPomelo() && !o.hasVerifiedEmailOrPhone() || x,
+    _ = u && !o.hasUniqueUsername() && !o.hasVerifiedEmailOrPhone() || x,
     j = _ ? G.intl.string(G.t["7Ngnys"]) : void 0;
   return (0, i.jsxs)("div", {
     className: a()(F.field, l),
@@ -106,7 +106,7 @@ function Y(e) {
             color: "header-primary",
             variant: "text-md/normal",
             children: o.username
-          }), !o.isPomelo() && (0, i.jsxs)(m.Text, {
+          }), !o.hasUniqueUsername() && (0, i.jsxs)(m.Text, {
             tag: "span",
             color: "header-secondary",
             variant: "text-md/normal",

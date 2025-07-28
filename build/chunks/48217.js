@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   c: () => p
 });
@@ -7,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(481060),
   l = n(269128),
-  s = n(358555),
-  a = n(267642),
+  a = n(358555),
+  s = n(267642),
   o = n(26323),
   c = n(30513),
   d = n(981631),
@@ -27,7 +26,7 @@ function g(e) {
     },
     children: (0, r.jsxs)("div", {
       className: m.guildHeader,
-      children: [(0, r.jsx)(s.Z, {
+      children: [(0, r.jsx)(a.Z, {
         guild: t,
         isBannerVisible: !0
       }), (0, r.jsx)(i.X6q, {
@@ -48,8 +47,8 @@ function p(e) {
     analyticsLocation: n,
     guild: i,
     isGIF: l,
-    banner: s
-  } = e, m = l ? (0, a._p)(d.oNc.ANIMATED_BANNER) : (0, a._p)(d.oNc.BANNER);
+    banner: a
+  } = e, m = l ? (0, s._p)(d.oNc.ANIMATED_BANNER) : (0, s._p)(d.oNc.BANNER);
   null != m && (0, o.Z)({
     analyticsLocations: t,
     analyticsSourceLocation: n,
@@ -57,7 +56,7 @@ function p(e) {
     headerProps: {
       title: u.intl.string(u.t["rv2H+/"]),
       subtitle: function(e, t) {
-        let n = (0, a.nW)(e);
+        let n = (0, s.nW)(e);
         return t ? u.intl.formatToPlainString(u.t["TR/Uys"], {
           targetLevelOrPlan: n
         }) : u.intl.formatToPlainString(u.t.B253V1, {
@@ -66,7 +65,7 @@ function p(e) {
       }(m, l),
       image: (0, r.jsx)(g, {
         guild: i,
-        banner: s
+        banner: a
       })
     },
     perkIntro: u.intl.string(u.t.ZuItcH),

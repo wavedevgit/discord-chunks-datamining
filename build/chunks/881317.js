@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => S
+  Z: () => y
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -59,7 +59,7 @@ let O = {
     [p.BM.USER]: b.t.F4jrRU,
     [p.BM.GUILD]: b.t.gH3aMj
   },
-  y = e => {
+  S = e => {
     let {
       title: t,
       menuType: i
@@ -110,7 +110,7 @@ let O = {
       })]
     })
   },
-  S = () => {
+  y = () => {
     let [e, t] = i.useState(!0), [n, l] = i.useState([]), a = (0, s.e7)([f.default], () => f.default.isAuthenticated()), p = (0, s.e7)([h.Z], () => h.Z.hasLoadedExperiments), g = () => {
       (0, m.Jj)().then(e => {
         let {
@@ -144,7 +144,7 @@ let O = {
         })
       }), (0, r.jsx)("div", {
         className: E.container,
-        children: n.map(e => null == O[e] ? null : (0, r.jsx)(y, {
+        children: n.map(e => null == O[e] ? null : (0, r.jsx)(S, {
           title: b.intl.string(O[e]),
           menuType: e
         }, e))

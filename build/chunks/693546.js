@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(544891),
   i = n(570140),
   l = n(668781),
-  o = n(287734),
-  a = n(131704),
+  a = n(287734),
+  o = n(131704),
   c = n(926526),
   s = n(826581),
   u = n(246364),
@@ -30,8 +30,8 @@ let O = {
       guildId: t,
       status: n = u.wB.SUBMITTED,
       before: l,
-      after: o,
-      limit: a = u.tB,
+      after: a,
+      limit: o = u.tB,
       force: c = !1
     } = e, E = c || !s.Z.hasFetched(t);
     if (!s.Z.isFetching() && E) {
@@ -44,9 +44,9 @@ let O = {
             url: _.ANM.GUILD_JOIN_REQUESTS(t),
             query: {
               status: n,
-              limit: a,
+              limit: o,
               before: l,
-              after: o
+              after: a
             },
             rejectWithError: !1
           }),
@@ -57,7 +57,7 @@ let O = {
           status: n,
           requests: s,
           total: c,
-          limit: a,
+          limit: o,
           guildId: t
         }), e
       } catch (e) {
@@ -97,18 +97,18 @@ let O = {
     }
   },
   updateGuildJoinRequest: async function(e, t, n) {
-    let o = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : u.wB.APPROVED,
-      a = arguments.length > 4 ? arguments[4] : void 0;
+    let a = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : u.wB.APPROVED,
+      o = arguments.length > 4 ? arguments[4] : void 0;
     (0, c.ID)({
       guildId: e,
-      actionType: o,
+      actionType: a,
       applicationUserId: t
     });
     let s = await r.tn.patch({
       url: _.ANM.GUILD_JOIN_REQUEST_ID(e, n),
       body: {
-        action: o,
-        rejection_reason: a
+        action: a,
+        rejection_reason: o
       },
       rejectWithError: !1
     }).catch(e => (e && e.body && e.body.code === _.evJ.REQUEST_TO_JOIN_USER_INELIGIBLE && l.Z.show({
@@ -194,11 +194,11 @@ let O = {
         url: _.ANM.GUILD_JOIN_REQUEST_INTERVIEW(e),
         rejectWithError: !1
       }),
-      l = (0, a.q_)(n.body);
+      l = (0, o.q_)(n.body);
     return i.Z.dispatch({
       type: "CHANNEL_CREATE",
       channel: l
-    }), t && o.default.selectPrivateChannel(l.id), l.id
+    }), t && a.default.selectPrivateChannel(l.id), l.id
   },
   fetchJoinRequestCooldown: async e => {
     try {

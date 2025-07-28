@@ -6,8 +6,8 @@ var i = n(255367),
   a = n(73800),
   o = n(149765),
   s = n(442837),
-  r = n(704215),
-  l = n(692547),
+  l = n(704215),
+  r = n(692547),
   c = n(755721),
   d = n(481060),
   _ = n(388905),
@@ -50,7 +50,7 @@ function y(e) {
     headerText: a,
     headerSubtext: o,
     step: s
-  } = e, r = N.ZP.getGuildIconURL({
+  } = e, l = N.ZP.getGuildIconURL({
     id: t.id,
     icon: t.icon,
     size: 120
@@ -59,8 +59,8 @@ function y(e) {
     className: g.header,
     children: [(0, i.jsxs)("div", {
       className: g.headerIconContainer,
-      children: [null != r ? (0, i.jsx)(d.qEK, {
-        src: r,
+      children: [null != l ? (0, i.jsx)(d.qEK, {
+        src: l,
         "aria-label": t.name,
         size: d.EFr.SIZE_120,
         className: g.__invalid_guildIcon
@@ -70,8 +70,8 @@ function y(e) {
       }), 2 === s ? (0, i.jsx)(d.owK, {
         size: "md",
         className: g.greenPing,
-        color: l.Z.unsafe_rawColors.GREEN_360.css,
-        secondaryColor: l.Z.unsafe_rawColors.WHITE_100.css
+        color: r.Z.unsafe_rawColors.GREEN_360.css,
+        secondaryColor: r.Z.unsafe_rawColors.WHITE_100.css
       }) : (0, i.jsx)(_.Ee, {
         src: n(173326),
         className: g.redPing
@@ -209,8 +209,8 @@ function U(e) {
         children: [(0, i.jsx)(d.owK, {
           size: "md",
           className: g.checklistIcon,
-          color: l.Z.unsafe_rawColors.GREEN_360.css,
-          secondaryColor: l.Z.unsafe_rawColors.WHITE_100.css
+          color: r.Z.unsafe_rawColors.GREEN_360.css,
+          secondaryColor: r.Z.unsafe_rawColors.WHITE_100.css
         }), (0, i.jsx)(d.Text, {
           variant: "text-md/normal",
           children: x.intl.format(x.t.K8Eg4O, {
@@ -230,8 +230,8 @@ function U(e) {
         children: [(0, i.jsx)(d.owK, {
           size: "md",
           className: g.checklistIcon,
-          color: l.Z.unsafe_rawColors.GREEN_360.css,
-          secondaryColor: l.Z.unsafe_rawColors.WHITE_100.css
+          color: r.Z.unsafe_rawColors.GREEN_360.css,
+          secondaryColor: r.Z.unsafe_rawColors.WHITE_100.css
         }), (0, i.jsx)(d.Text, {
           variant: "text-md/normal",
           children: x.intl.string(x.t.LfeFFh)
@@ -278,7 +278,7 @@ function D(e) {
     guild: t,
     canEveryoneModerate: n,
     isDefaultNotificationsAllMessages: s,
-    transitionState: l,
+    transitionState: r,
     onClose: c
   } = e, [_, f] = a.useState(0), m = a.useMemo(() => {
     let e = [],
@@ -319,7 +319,7 @@ function D(e) {
       n && N(), s && C()
     };
   return (0, i.jsxs)(d.Y0X, {
-    transitionState: l,
+    transitionState: r,
     size: d.CgR.SMALL,
     className: g.modal,
     parentComponent: "GuildSettingsDisableUnsafeDefaultPermissionsNotice",
@@ -337,10 +337,10 @@ function D(e) {
     }), (0, i.jsx)(G, {
       onConfirm: () => {
         var e, i;
-        n || (R(), c(), (0, I.Qd)(r.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, null != (e = null == t ? void 0 : t.id) ? e : "", !0, O.L.PRIMARY)), 0 === _ ? (f(1), setTimeout(() => f(2), 3e3)) : 2 === _ && (R(), c(), (0, I.Qd)(r.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, null != (i = null == t ? void 0 : t.id) ? i : "", !0, O.L.PRIMARY))
+        n || (R(), c(), (0, I.Qd)(l.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, null != (e = null == t ? void 0 : t.id) ? e : "", !0, O.L.PRIMARY)), 0 === _ ? (f(1), setTimeout(() => f(2), 3e3)) : 2 === _ && (R(), c(), (0, I.Qd)(l.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, null != (i = null == t ? void 0 : t.id) ? i : "", !0, O.L.PRIMARY))
       },
       onDismiss: () => {
-        c(), (0, I.Qd)(r.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, t.id, !0, O.L.DISMISS)
+        c(), (0, I.Qd)(l.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, t.id, !0, O.L.DISMISS)
       },
       step: _,
       canEveryoneModerate: n

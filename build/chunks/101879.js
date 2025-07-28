@@ -5,15 +5,15 @@ n.d(t, {
 var r = n(255367),
   i = n(704215),
   l = n(481060),
-  o = n(243778),
-  a = n(496729),
+  a = n(243778),
+  o = n(496729),
   c = n(987562),
   s = n(981631),
   u = n(921944),
   d = n(388032);
 
 function _() {
-  let [e, t] = (0, o.bf)(i.z.NAGBAR_NOTICE_IGNORE_USER_FEEDBACK, {
+  let [e, t] = (0, a.bf)(i.z.NAGBAR_NOTICE_IGNORE_USER_FEEDBACK, {
     cooldownDurationMs: c.pv
   });
   return e !== i.z.NAGBAR_NOTICE_IGNORE_USER_FEEDBACK ? null : (0, r.jsxs)(l.qXd, {
@@ -23,7 +23,7 @@ function _() {
       noticeType: s.kVF.IGNORE_USER_FEEDBACK_NAGBAR
     }), d.intl.string(d.t.XkeW9P), (0, r.jsx)(l.NoS, {
       onClick: () => {
-        (0, a.v3)(), t(u.L.TAKE_ACTION)
+        (0, o.v3)(), t(u.L.TAKE_ACTION)
       },
       noticeType: s.kVF.IGNORE_USER_FEEDBACK_NAGBAR,
       children: d.intl.string(d.t.vcdNKi)

@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   chipletFlexContainer: "chipletFlexContainer__3b3ff",
   blinkAsEdited: "blinkAsEdited__3b3ff",

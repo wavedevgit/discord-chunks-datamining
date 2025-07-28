@@ -1,6 +1,6 @@
 /** Chunk was on 45130 **/
 n.d(t, {
-  default: () => f
+  default: () => b
 });
 var l = n(255367);
 n(73800);
@@ -13,27 +13,27 @@ var r = n(481060),
   d = n(931617),
   s = n(981631),
   _ = n(388032);
-let f = (0, u.Z)((0, i.Z)(function(e) {
+let b = (0, u.Z)((0, i.Z)(function(e) {
   var t;
   let {
     user: n,
     guildId: i,
     onSelect: u,
     analyticsLocations: s,
-    onCloseContextMenu: f,
-    isViewOnly: b
+    onCloseContextMenu: b,
+    isViewOnly: f
   } = e, {
     analyticsLocations: E
-  } = (0, a.ZP)(c.Z.CONTEXT_MENU), O = null != (t = null == s ? void 0 : s[0]) ? t : E[0], g = (0, d.Z)(n.id, i, !0, O, b);
+  } = (0, a.ZP)(c.Z.CONTEXT_MENU), g = null != (t = null == s ? void 0 : s[0]) ? t : E[0], O = (0, d.Z)(n.id, i, !0, g, f);
   return (0, l.jsx)(r.v2r, {
     navId: "guild-moderation-roles",
     onClose: () => {
-      (0, o.Zy)(), null == f || f()
+      (0, o.Zy)(), null == b || b()
     },
     "aria-label": _.intl.string(_.t.liqwPD),
     onSelect: u,
     children: (0, l.jsx)(r.kSQ, {
-      children: g
+      children: O
     })
   })
 }, {

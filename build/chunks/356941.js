@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   settings: "settings__17efa",
   twoColumns: "twoColumns__17efa",

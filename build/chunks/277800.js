@@ -15,6 +15,6 @@ function c(e) {
   let t = a.Z.getGuild(e.guild_id);
   return null == t ? [] : Object.values(e.permissionOverwrites).filter(e => {
     var n, a;
-    return 0 === e.type && (null == (a = i.Z.getRoles(t.id)[e.id]) || null == (n = a.tags) ? void 0 : n.guild_connections) === null && !r.Db(e.deny, l)
-  }).map(e => i.Z.getRoles(t.id)[e.id]).filter(e => null != e)
+    return 0 === e.type && (null == (a = i.Z.getRole(t.id, e.id)) || null == (n = a.tags) ? void 0 : n.guild_connections) === null && !r.Db(e.deny, l)
+  }).map(e => i.Z.getRole(t.id, e.id)).filter(e => null != e)
 }

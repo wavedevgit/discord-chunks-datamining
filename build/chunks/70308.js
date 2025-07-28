@@ -21,7 +21,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,7 +34,7 @@ function _(e) {
   return e
 }
 
-function f(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -46,7 +46,7 @@ function f(e, t) {
 }
 
 function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -73,7 +73,7 @@ let h = {
         leave: {
           transform: "translate3d(0, -100%, 0)",
           opacity: 0,
-          config: p(_({}, h), {
+          config: p(f({}, h), {
             friction: 40,
             clamp: !0
           })
@@ -97,7 +97,7 @@ let h = {
         leave: {
           transform: "translate3d(0, 100%, 0)",
           opacity: 0,
-          config: p(_({}, h), {
+          config: p(f({}, h), {
             friction: 40,
             clamp: !0
           })
@@ -109,19 +109,19 @@ let h = {
 function g() {
   var e, t, n, u;
   let d = (0, l.Es)(e => e.currentToast),
-    f = i.useRef(null != (n = null == d || null == (e = d.options) ? void 0 : e.position) ? n : c.si.position),
+    _ = i.useRef(null != (n = null == d || null == (e = d.options) ? void 0 : e.position) ? n : c.si.position),
     p = i.useRef(null != (u = null == d || null == (t = d.options) ? void 0 : t.duration) ? u : c.si.duration);
   i.useEffect(() => {
     if (null != d) {
       var e, t, n, r;
-      f.current = null != (n = null == (e = d.options) ? void 0 : e.position) ? n : c.si.position, p.current = null != (r = null == (t = d.options) ? void 0 : t.duration) ? r : c.si.duration
+      _.current = null != (n = null == (e = d.options) ? void 0 : e.position) ? n : c.si.position, p.current = null != (r = null == (t = d.options) ? void 0 : t.duration) ? r : c.si.duration
     }
   }, [d]);
   let h = i.useMemo(() => {
       var e, t;
-      return m[null != (t = null == d || null == (e = d.options) ? void 0 : e.position) ? t : f.current]
+      return m[null != (t = null == d || null == (e = d.options) ? void 0 : e.position) ? t : _.current]
     }, [d]),
-    g = (0, o.Yzy)(d, _({
+    g = (0, o.Yzy)(d, f({
       keys: e => {
         var t;
         return null != (t = null == e ? void 0 : e.id) ? t : ""
@@ -135,7 +135,7 @@ function g() {
     className: h.styles,
     children: g((e, t) => null === t ? null : (0, r.jsx)(a.animated.div, {
       style: e,
-      children: (0, r.jsx)(s.F, _({}, t))
+      children: (0, r.jsx)(s.F, f({}, t))
     }, t.id))
   })
 }

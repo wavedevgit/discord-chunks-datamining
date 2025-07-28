@@ -1,13 +1,12 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   Z: () => x
 });
 var r = n(255367),
   i = n(73800),
   l = n(536982),
-  s = n(456677),
-  a = n(951665),
+  a = n(456677),
+  s = n(951665),
   o = n(428760),
   c = n(55889),
   d = n(300453),
@@ -16,7 +15,7 @@ var r = n(255367),
   g = n(388032),
   p = n(461367);
 
-function f(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +34,7 @@ function f(e) {
   return e
 }
 
-function h(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -54,14 +53,14 @@ function x(e) {
     rule: _,
     onChangeRule: O
   } = e, y = i.useCallback(e => {
-    O(h(f({}, _), {
-      triggerMetadata: h(f({}, _.triggerMetadata), {
+    O(f(h({}, _), {
+      triggerMetadata: f(h({}, _.triggerMetadata), {
         keywordFilter: e
       })
     }))
   }, [O, _]), C = i.useCallback(e => {
-    O(h(f({}, _), {
-      triggerMetadata: h(f({}, _.triggerMetadata), {
+    O(f(h({}, _), {
+      triggerMetadata: f(h({}, _.triggerMetadata), {
         allowList: e
       })
     }))
@@ -75,7 +74,7 @@ function x(e) {
         onChangeText: y,
         maxWordCount: m.RH,
         initialValue: null == (t = _.triggerMetadata) ? void 0 : t.keywordFilter
-      }), (0, r.jsx)(a.Z, {
+      }), (0, r.jsx)(s.Z, {
         rule: _,
         onChangeRule: O,
         collapsed: (null == _ || null == (n = _.triggerMetadata) ? void 0 : n.regexPatterns) == null || (null == _ || null == (x = _.triggerMetadata) ? void 0 : x.regexPatterns.length) === 0
@@ -90,7 +89,7 @@ function x(e) {
     }), (0, r.jsx)(d.Z, {
       step: 2,
       header: g.intl.string(g.t["18TOiY"]),
-      children: (0, r.jsx)(s.Z, {
+      children: (0, r.jsx)(a.Z, {
         rule: _,
         onChangeRule: O
       })

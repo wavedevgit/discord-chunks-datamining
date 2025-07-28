@@ -19,8 +19,8 @@ var l = n(255367),
   x = n(454585),
   _ = n(22082),
   C = n(703656),
-  j = n(6025),
-  b = n(922482),
+  b = n(6025),
+  j = n(922482),
   v = n(601070),
   y = n(216306),
   O = n(163),
@@ -63,8 +63,8 @@ function A(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let B = new Set([I.d4z.GUILD_FORUM, I.d4z.GUILD_MEDIA]),
-  k = new Set([I.d4z.GUILD_VOICE, I.d4z.GUILD_STAGE_VOICE]);
+let k = new Set([I.d4z.GUILD_FORUM, I.d4z.GUILD_MEDIA]),
+  B = new Set([I.d4z.GUILD_VOICE, I.d4z.GUILD_STAGE_VOICE]);
 
 function R(e) {
   let {
@@ -167,7 +167,7 @@ let D = r.memo(function() {
         children: P.intl.format(P.t.z0qMLy, {
           count: t
         })
-      }, "thread-count")), k.has(e.type) || n.push((0, l.jsx)(d.Text, {
+      }, "thread-count")), B.has(e.type) || n.push((0, l.jsx)(d.Text, {
         variant: "text-xs/normal",
         className: E.channelSubtitle,
         children: (0, y.qw)(e.id)
@@ -183,7 +183,7 @@ let D = r.memo(function() {
       }, "topic")), [n.map((e, t) => [e, (0, l.jsx)(L, {
         index: t
       }, "subtitle-separator-".concat(t))])].flat(2).slice(0, -1)
-    }(t, G), X = e => ((e.stopPropagation(), B.has(t.type) || e.shiftKey) ? (0, C.XU)(i.id, t.id) : t.isGuildStageVoice() || t.isGuildVoice() ? (0, b.Cq)(t) : j.Z.openChannelAsSidebar({
+    }(t, G), X = e => ((e.stopPropagation(), k.has(t.type) || e.shiftKey) ? (0, C.XU)(i.id, t.id) : t.isGuildStageVoice() || t.isGuildVoice() ? (0, j.Cq)(t) : b.Z.openChannelAsSidebar({
       guildId: t.guild_id,
       channelId: t.id,
       baseChannelId: w.oC.CHANNEL_BROWSER

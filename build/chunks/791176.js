@@ -27,7 +27,7 @@ function w(A) {
     roleIds: l,
     guild: v,
     specMap: c
-  } = A, h = d.Plq[r], u = null != (t = null == (e = c[h.toString()]) ? void 0 : e.title) ? t : (0, g.wt)(h), w = E._o.has(h), D = (0, s.e7)([f.Z], () => f.Z.getRoles(v.id));
+  } = A, h = d.Plq[r], u = null != (t = null == (e = c[h.toString()]) ? void 0 : e.title) ? t : (0, g.wt)(h), w = E._o.has(h), D = (0, s.Wu)([f.Z], () => f.Z.getManyRoles(v.id, l), [v.id, l]);
   return (0, n.jsx)(a.ua7, {
     "aria-label": C.intl.string(C.t["0g8Xd3"]),
     tooltipClassName: B.roleTooltipContainer,
@@ -37,13 +37,13 @@ function w(A) {
       children: [(0, n.jsx)(a.Text, {
         variant: "text-sm/normal",
         children: w ? C.intl.string(C.t["GEuu/P"]) : C.intl.string(C.t.wgGiCg)
-      }), l.map(A => (0, n.jsx)("div", {
+      }), D.map(A => (0, n.jsx)("div", {
         className: B.roleTooltipItem,
         children: (0, n.jsx)(o.Z, {
-          role: D[A],
+          role: A,
           guildId: v.id
         })
-      }, A))]
+      }, A.id))]
     }),
     children: A => {
       let {

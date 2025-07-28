@@ -1,20 +1,19 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   Z: () => E
 });
 var r, i, l = n(255367),
-  s = n(73800),
-  a = n(512722),
-  o = n.n(a),
+  a = n(73800),
+  s = n(512722),
+  o = n.n(s),
   c = n(913527),
   d = n.n(c),
   u = n(481060),
   m = n(264451),
   g = n(759178),
   p = n(462087),
-  f = n(685201),
-  h = n(766434),
+  h = n(685201),
+  f = n(766434),
   x = n(755930),
   b = n(334820),
   j = n(198139),
@@ -57,8 +56,8 @@ function C(e) {
     ppgStatus: n,
     payoutStatus: r,
     ppgDeferralReasons: i,
-    periodEndDate: s
-  } = (0, h.j0)(t), a = null != s ? d()(s).add(15, "days").toISOString() : void 0, o = (0, m.Zo)(a, "MMM D");
+    periodEndDate: a
+  } = (0, f.j0)(t), s = null != a ? d()(a).add(15, "days").toISOString() : void 0, o = (0, m.Zo)(s, "MMM D");
   switch (n) {
     case j.x_.OPEN:
       return (0, l.jsxs)(l.Fragment, {
@@ -85,7 +84,7 @@ function C(e) {
         })]
       });
       return (0, l.jsxs)(l.Fragment, {
-        children: [v.intl.string(v.t.OtZ5k5), (0, l.jsx)(f.Z, {
+        children: [v.intl.string(v.t.OtZ5k5), (0, l.jsx)(h.Z, {
           className: _.statusDeferredIcon
         })]
       })
@@ -218,12 +217,12 @@ function E(e) {
         amount: null == (n = e.ppgs[t]) ? void 0 : n.amount
       }
     })
-  }), a = s.useMemo(() => O({
+  }), s = a.useMemo(() => O({
     ListingIdLabel: t
   }, r), [r, t]);
   return (0, l.jsx)(x.ZP, {
     columns: I,
     data: i,
-    cellProps: a
+    cellProps: s
   })
 }

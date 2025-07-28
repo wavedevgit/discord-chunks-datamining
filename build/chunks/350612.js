@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   dragging: "dragging_f7c056",
   draggableInputContainer: "draggableInputContainer_f7c056",

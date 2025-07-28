@@ -19,9 +19,9 @@ var r = n(73800),
   h = n(823379),
   x = n(905753),
   j = n(399860),
-  O = n(981631);
+  v = n(981631);
 
-function v(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,7 +43,7 @@ function v(e) {
 function y(e, t, n) {
   let i = (0, s.e7)([x.Z], () => x.Z.getApplicationPermissions()),
     o = r.useMemo(() => (function(e, t) {
-      let n = v({}, t),
+      let n = O({}, t),
         r = (0, u.bD)(e),
         i = (0, j.rE)(r, d.Kw.CHANNEL),
         l = (0, j.rE)(e, d.Kw.ROLE);
@@ -69,7 +69,7 @@ function y(e, t, n) {
     }, [n]),
     C = null != n ? n : t,
     N = null != n ? y : o,
-    S = r.useMemo(() => null != _ ? _ : v({}, null != N ? N : {}), [_, N]),
+    S = r.useMemo(() => null != _ ? _ : O({}, null != N ? N : {}), [_, N]),
     I = r.useMemo(() => Object.keys(S).length, [S]),
     E = r.useMemo(() => null == N || null == S ? null : !a().isEqual(N, S), [N, S]);
   return r.useEffect(() => {
@@ -115,14 +115,14 @@ function y(e, t, n) {
           if (s.type === d.Kw.CHANNEL) {
             let e = s.id === r,
               n = y[s.id];
-            t = e || g.Z.can(O.Plq.VIEW_CHANNEL, n), c = !0
+            t = e || g.Z.can(v.Plq.VIEW_CHANNEL, n), c = !0
           } else if (s.type === d.Kw.ROLE) {
             let r = s.id === e,
               l = _[s.id];
             t = r || null != l, c = a || r || g.Z.isRoleHigher(n, i, l)
           } else if (s.type === d.Kw.USER) {
             let e = C[s.id];
-            t = null != e, c = null != e && (a || g.Z.canManageUser(O.Plq.USE_APPLICATION_COMMANDS, e, n))
+            t = null != e, c = null != e && (a || g.Z.canManageUser(v.Plq.USE_APPLICATION_COMMANDS, e, n))
           }
           l[o] = function(e, t) {
             return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
@@ -135,7 +135,7 @@ function y(e, t, n) {
             })(Object(t)).forEach(function(n) {
               Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
             }), e
-          }(v({}, s), {
+          }(O({}, s), {
             canRead: t,
             canWrite: c
           })

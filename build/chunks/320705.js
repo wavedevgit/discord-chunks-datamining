@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   textAreaContainer: "textAreaContainer_fc46b1",
   collapseable: "collapseable_fc46b1",

@@ -6,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(120356),
   l = n.n(i),
-  o = n(114858),
-  a = n(442837),
+  a = n(114858),
+  o = n(442837),
   c = n(755721),
   s = n(481060),
   u = n(430824),
@@ -43,11 +43,11 @@ function g(e) {
 }
 let A = () => {
   var e, t;
-  let i = (0, a.e7)([d.Z], () => d.Z.getGuildId(), []),
-    A = (0, a.e7)([u.Z], () => u.Z.getGuild(i), [i]),
-    R = (0, a.e7)([p.Z], () => null != i ? p.Z.getRequest(i) : null, [i]),
-    P = (0, o.TH)(),
-    C = (null == (e = (0, o.LX)(P.pathname, T.Z5c.CHANNEL(null == A ? void 0 : A.id, S.oC.GUILD_ONBOARDING))) ? void 0 : e.isExact) === !0;
+  let i = (0, o.e7)([d.Z], () => d.Z.getGuildId(), []),
+    A = (0, o.e7)([u.Z], () => u.Z.getGuild(i), [i]),
+    R = (0, o.e7)([p.Z], () => null != i ? p.Z.getRequest(i) : null, [i]),
+    P = (0, a.TH)(),
+    C = (null == (e = (0, a.LX)(P.pathname, T.Z5c.CHANNEL(null == A ? void 0 : A.id, S.oC.GUILD_ONBOARDING))) ? void 0 : e.isExact) === !0;
   if (null == A || !(0, I.Dc)(A) || C) return null;
   let y = null != (t = null == R ? void 0 : R.applicationStatus) ? t : O.wB.STARTED,
     b = null,

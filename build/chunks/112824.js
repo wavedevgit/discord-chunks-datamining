@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   R: () => b,
   Z: () => j
@@ -8,8 +7,8 @@ var r = n(255367);
 n(73800);
 var i = n(120356),
   l = n.n(i),
-  s = n(149765),
-  a = n(442837),
+  a = n(149765),
+  s = n(442837),
   o = n(481060),
   c = n(485386),
   d = n(496675),
@@ -17,9 +16,9 @@ var i = n(120356),
   m = n(647086),
   g = n(135899),
   p = n(388032),
-  f = n(296205);
+  h = n(296205);
 
-function h(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -58,13 +57,13 @@ function b(e) {
 function j(e) {
   let {
     guild: t
-  } = e, i = (0, a.e7)([c.Z], () => c.Z.getEveryoneRole(t)), u = b(t), m = u.length > 0, j = g.$X.some(e => !d.Z.can(e, t, null, {
-    [i.id]: x(h({}, i), {
-      permissions: s.Od(i.permissions, e)
+  } = e, i = (0, s.e7)([c.Z], () => c.Z.getEveryoneRole(t)), u = b(t), m = u.length > 0, j = g.$X.some(e => !d.Z.can(e, t, null, {
+    [i.id]: x(f({}, i), {
+      permissions: a.Od(i.permissions, e)
     })
   })), v = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: f.itemContent,
+      className: h.itemContent,
       children: [(0, r.jsx)(o.X6q, {
         variant: "text-md/semibold",
         color: "header-primary",
@@ -81,21 +80,21 @@ function j(e) {
       color: "currentColor",
       height: 24,
       width: 24,
-      className: f.warning,
+      className: h.warning,
       "aria-label": p.intl.string(p.t.bG7Gu7)
     }) : (0, r.jsx)(o.owK, {
       size: "custom",
       color: "currentColor",
       height: 24,
       width: 24,
-      className: f.check,
+      className: h.check,
       "aria-label": p.intl.string(p.t["YQix8/"])
     })]
   });
   return m ? j ? (0, r.jsx)(o.ua7, {
     text: p.intl.string(p.t["E5v/a2"]),
-    children: e => (0, r.jsx)("div", x(h({
-      className: l()(f.simpleItemWrapper, f.disabled)
+    children: e => (0, r.jsx)("div", x(f({
+      className: l()(h.simpleItemWrapper, h.disabled)
     }, e), {
       children: v
     }))
@@ -105,15 +104,15 @@ function j(e) {
         let {
           default: e
         } = await n.e("39627").then(n.bind(n, 193845));
-        return n => (0, r.jsx)(e, h({
+        return n => (0, r.jsx)(e, f({
           guild: t
         }, n))
       })
     },
-    className: l()(f.simpleItemWrapper, f.clickable),
+    className: l()(h.simpleItemWrapper, h.clickable),
     children: v
   }) : (0, r.jsx)("div", {
-    className: f.simpleItemWrapper,
+    className: h.simpleItemWrapper,
     children: v
   })
 }

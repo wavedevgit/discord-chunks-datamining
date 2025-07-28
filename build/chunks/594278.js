@@ -1,13 +1,12 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   Z: () => g
 }), n(388685);
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  s = n.n(l),
-  a = n(846519),
+  a = n.n(l),
+  s = n(846519),
   o = n(481060),
   c = n(259580),
   d = n(81543),
@@ -20,7 +19,7 @@ let g = function(e) {
     paginationCaretClassName: l,
     intervalBetweenAutomaticItemRotations: g,
     renderItem: p
-  } = e, f = i.useMemo(() => new a.Xp, []), [h, x] = i.useState(d.n.LEFT), [b, j] = i.useState(0), [v, _] = i.useState(!1), [O, y] = i.useState(!1), C = i.useCallback((e, t) => {
+  } = e, h = i.useMemo(() => new s.Xp, []), [f, x] = i.useState(d.n.LEFT), [b, j] = i.useState(0), [v, _] = i.useState(!1), [O, y] = i.useState(!1), C = i.useCallback((e, t) => {
     j(n => {
       let r = n + t;
       return r < 0 ? r = e.length - 1 : r > e.length - 1 && (r = 0), r
@@ -31,13 +30,13 @@ let g = function(e) {
     O || C(t, -1)
   }, [C, t, O]);
   return i.useEffect(() => {
-    null != g && (v ? v && f.stop() : f.start(g, N))
-  }, [v, f, g, N]), (0, r.jsxs)("div", {
+    null != g && (v ? v && h.stop() : h.start(g, N))
+  }, [v, h, g, N]), (0, r.jsxs)("div", {
     className: m.root,
     onMouseEnter: () => _(!0),
     onMouseLeave: () => _(!1),
     children: [(0, r.jsx)(o.P3F, {
-      className: s()(m.carouselCaret, l),
+      className: a()(m.carouselCaret, l),
       onClick: I,
       onMouseEnter: () => x(d.n.RIGHT),
       ignoreKeyPress: O,
@@ -49,13 +48,13 @@ let g = function(e) {
       })
     }), (0, r.jsx)(d.Z, {
       step: b,
-      direction: h,
+      direction: f,
       onAnimationStart: () => y(!0),
       onAnimationEnd: () => y(!1),
-      className: s()(m.carousel, n),
+      className: a()(m.carousel, n),
       children: p(t[b])
     }), (0, r.jsx)(o.P3F, {
-      className: s()(m.carouselCaret, l),
+      className: a()(m.carouselCaret, l),
       onClick: N,
       onMouseEnter: () => x(d.n.LEFT),
       ignoreKeyPress: O,

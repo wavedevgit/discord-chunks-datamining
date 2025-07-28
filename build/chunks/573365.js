@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Q: () => _
+  Q: () => f
 });
 var r = n(255367),
   i = n(73800),
@@ -47,7 +47,7 @@ function d(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = i.forwardRef(function(e, t) {
+let f = i.forwardRef(function(e, t) {
   let {
     status: n,
     buffer: i
@@ -60,4 +60,4 @@ let _ = i.forwardRef(function(e, t) {
     ref: t
   }))
 });
-_.riveSrc = a.Z
+f.riveSrc = a.Z

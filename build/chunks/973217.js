@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   container: "container__99486",
   preview: "preview__99486",

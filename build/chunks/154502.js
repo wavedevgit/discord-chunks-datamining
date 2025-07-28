@@ -1,21 +1,20 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => s
 });
 var r = n(255367);
 n(73800);
 var i = n(481060),
   l = n(556012),
-  s = n(466745);
+  a = n(466745);
 
-function a(e) {
+function s(e) {
   var t;
   let {
     action: n,
-    actionType: a,
+    actionType: s,
     triggerType: o
-  } = e, c = (0, l.c)(null != (t = null == n ? void 0 : n.type) ? t : a, n, o);
+  } = e, c = (0, l.c)(null != (t = null == n ? void 0 : n.type) ? t : s, n, o);
   if (null == c) return null;
   let {
     headerText: d,
@@ -23,24 +22,24 @@ function a(e) {
     icon: m
   } = c;
   return (0, r.jsxs)("div", {
-    className: s.actionContainer,
+    className: a.actionContainer,
     children: [(0, r.jsx)("div", {
-      className: s.actionIconContainer,
+      className: a.actionIconContainer,
       children: (0, r.jsx)(m, {
         size: "custom",
         color: "currentColor",
         width: 14,
         height: 14,
-        className: s.actionIcon
+        className: a.actionIcon
       })
     }), (0, r.jsx)("div", {
-      className: s.actionTextContainer,
+      className: a.actionTextContainer,
       children: (0, r.jsxs)(i.Text, {
-        className: s.actionTextHeader,
+        className: a.actionTextHeader,
         variant: "text-xs/medium",
         color: "interactive-normal",
         children: [d, null != u && (0, r.jsx)(i.Text, {
-          className: s.actionTextHelper,
+          className: a.actionTextHelper,
           variant: "text-xs/medium",
           color: "text-muted",
           tag: "span",

@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   Z: () => E
 });
@@ -7,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(442837),
   l = n(755721),
-  s = n(481060),
-  a = n(100527),
+  a = n(481060),
+  s = n(100527),
   o = n(906732),
   c = n(623624),
   d = n(372444),
@@ -16,8 +15,8 @@ var i = n(442837),
   m = n(317169),
   g = n(926491),
   p = n(145499),
-  f = n(424218),
-  h = n(267642),
+  h = n(424218),
+  f = n(267642),
   x = n(63063),
   b = n(999382),
   j = n(981631),
@@ -34,14 +33,14 @@ let y = {
       guild: t
     } = e, {
       analyticsLocations: n
-    } = (0, o.ZP)(), i = (0, m.Z)(t.id).available, a = j.oCV[j.Eu4.TIER_1] - i;
+    } = (0, o.ZP)(), i = (0, m.Z)(t.id).available, s = j.oCV[j.Eu4.TIER_1] - i;
     return (0, r.jsxs)("div", {
       className: O.upsellContainer,
-      children: [(0, r.jsx)(s.X6q, {
+      children: [(0, r.jsx)(a.X6q, {
         className: O.upsellHeader,
         variant: "heading-xl/semibold",
         children: _.intl.string(_.t.hzCkys)
-      }), (0, r.jsx)(s.Text, {
+      }), (0, r.jsx)(a.Text, {
         className: O.upsellDescription,
         variant: "text-md/normal",
         children: _.intl.string(_.t.jcesAA)
@@ -55,7 +54,7 @@ let y = {
             analyticsLocations: n,
             analyticsLocation: y,
             guildId: t.id,
-            totalNumberOfSlotsToAssign: a
+            totalNumberOfSlotsToAssign: s
           }),
           children: _.intl.string(_.t.Q5dbTk)
         }), (0, r.jsx)(l.zx, {
@@ -72,17 +71,17 @@ let y = {
       })]
     })
   },
-  N = () => (0, r.jsxs)(s.hjN, {
+  N = () => (0, r.jsxs)(a.hjN, {
     title: _.intl.string(_.t["9N2OWF"]),
-    children: [(0, r.jsx)(s.R94, {
-      type: s.geA.DESCRIPTION,
+    children: [(0, r.jsx)(a.R94, {
+      type: a.geA.DESCRIPTION,
       children: _.intl.format(_.t.hxLvi4, {
-        fileSize: (0, f.IC)(v.Ht, {
+        fileSize: (0, h.IC)(v.Ht, {
           useKibibytes: !0
         })
       })
-    }), (0, r.jsx)(s.R94, {
-      type: s.geA.DESCRIPTION,
+    }), (0, r.jsx)(a.R94, {
+      type: a.geA.DESCRIPTION,
       children: _.intl.format(_.t.UBj0aW, {
         articleUrl: x.Z.getArticleURL(j.BhN.STICKERS_UPLOAD)
       })
@@ -91,20 +90,20 @@ let y = {
   I = e => {
     let t, n, i, {
         guild: l,
-        guildStickers: s
+        guildStickers: a
       } = e,
-      a = l.premiumTier,
-      o = (0, h.Qi)(s, a),
-      c = (0, h.FZ)(a),
-      u = (0, h.A3)(a),
-      m = s.length;
-    return null == c || a === j.Eu4.TIER_3 || o > 0 ? null : (m > u ? (t = _.intl.formatToPlainString(_.t.ZtAY1d, {
+      s = l.premiumTier,
+      o = (0, f.Qi)(a, s),
+      c = (0, f.FZ)(s),
+      u = (0, f.A3)(s),
+      m = a.length;
+    return null == c || s === j.Eu4.TIER_3 || o > 0 ? null : (m > u ? (t = _.intl.formatToPlainString(_.t.ZtAY1d, {
       level: c
     }), n = _.intl.formatToPlainString(_.t["13hOWl"], {
       level: c
     }), i = j.qAy.BOOST_UPSELL_BANNER_LOST_LEVEL) : (t = _.intl.string(_.t.zT9Sxc), n = _.intl.formatToPlainString(_.t.YaW9wM, {
       level: c,
-      numAdditional: (0, h.ig)(c)
+      numAdditional: (0, f.ig)(c)
     }), i = j.qAy.BOOST_UPSELL_BANNER_SLOTS_FULL), (0, r.jsx)(d.Z, {
       header: t,
       text: n,
@@ -113,7 +112,7 @@ let y = {
         page: j.ZY5.GUILD_SETTINGS,
         section: j.jXE.GUILD_SETTINGS_STICKERS,
         object: i,
-        objectType: (0, h.ge)(c)
+        objectType: (0, f.ge)(c)
       }
     }))
   },
@@ -125,14 +124,14 @@ let y = {
       }, [e]),
       {
         analyticsLocations: n
-      } = (0, o.ZP)(a.Z.STICKERS);
+      } = (0, o.ZP)(s.Z.STICKERS);
     if (null == e) return null;
     let l = e.premiumTier !== j.Eu4.NONE || t.length > 0;
     return (0, r.jsx)(o.Gt, {
       value: n,
-      children: (0, r.jsxs)(s.hjN, {
+      children: (0, r.jsxs)(a.hjN, {
         title: _.intl.string(_.t.R5nQkZ),
-        tag: s.RB0.H1,
+        tag: a.RB0.H1,
         children: [l ? (0, r.jsxs)("div", {
           children: [(0, r.jsx)(I, {
             guild: e,
@@ -140,7 +139,7 @@ let y = {
           }), (0, r.jsx)(N, {})]
         }) : (0, r.jsx)(C, {
           guild: e
-        }), (0, r.jsx)(s.$i$, {
+        }), (0, r.jsx)(a.$i$, {
           className: O.divider
         }), (0, r.jsx)(p.Z, {
           guild: e

@@ -13,8 +13,8 @@ var r = n(392711),
   c = n(944486),
   u = n(696900),
   d = n(963838),
-  _ = n(353368),
-  f = n(981631),
+  f = n(353368),
+  _ = n(981631),
   p = n(710111);
 
 function h(e) {
@@ -33,17 +33,17 @@ function m(e, t, n) {
   let {
     abortController: o,
     onRequestProgress: c
-  } = h(e), p = null != (r = u.Z.getState().animationType) ? r : _.q.BASIC, m = {
+  } = h(e), p = null != (r = u.Z.getState().animationType) ? r : f.q.BASIC, m = {
     animation_type: p,
     animation_id: (0, d.Iu)(p, d.v)
   };
   i.tn.post({
-    url: f.ANM.CUSTOM_CALL_SOUNDS(e),
+    url: _.ANM.CUSTOM_CALL_SOUNDS(e),
     body: m,
     signal: o.signal,
     onRequestProgress: c,
     rejectWithError: !0
-  }).then(f.VqG, () => {
+  }).then(_.VqG, () => {
     if (o.signal.aborted) return
   }), (0, l.Z)([a.Z.CHANNEL_CALL], n, t, s.jy.ENTRY)
 }
@@ -53,7 +53,7 @@ function g(e, t, n, r) {
   let u = o.ZP.getCustomEmojiById(null != (a = t.emojiId) ? a : ""),
     {
       abortController: d,
-      onRequestProgress: _
+      onRequestProgress: f
     } = h(e),
     m = {
       sound_id: t.soundId,
@@ -61,12 +61,12 @@ function g(e, t, n, r) {
       emoji_name: null != (c = t.emojiName) ? c : null == u ? void 0 : u.name
     };
   t.guildId !== p.X8 && (m.source_guild_id = t.guildId), i.tn.post({
-    url: f.ANM.SEND_SOUNDBOARD_SOUND(e),
+    url: _.ANM.SEND_SOUNDBOARD_SOUND(e),
     body: m,
     signal: d.signal,
-    onRequestProgress: _,
+    onRequestProgress: f,
     rejectWithError: !0
-  }).then(f.VqG, () => {
+  }).then(_.VqG, () => {
     if (d.signal.aborted) return
   }), (0, l.Z)(null != r ? r : [], n, t, s.jy.DEFAULT)
 }

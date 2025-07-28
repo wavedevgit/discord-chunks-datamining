@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   Z: () => p
 });
@@ -7,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(442837),
   l = n(481060),
-  s = n(430824),
-  a = n(496675),
+  a = n(430824),
+  s = n(496675),
   o = n(556012),
   c = n(273504),
   d = n(981631),
@@ -21,10 +20,10 @@ function p(e) {
   let {
     action: n,
     triggerType: p,
-    guildId: f,
-    toggled: h,
+    guildId: h,
+    toggled: f,
     onToggleAction: x
-  } = e, b = e => () => x(e), j = (0, o.c)(n.type, n, p), v = null == (t = n.metadata) ? void 0 : t.durationSeconds, _ = null != v ? (0, u.L9)(v) : null, O = (0, i.e7)([a.Z, s.Z], () => a.Z.can(d.Plq.MODERATE_MEMBERS, s.Z.getGuild(f)), [f]);
+  } = e, b = e => () => x(e), j = (0, o.c)(n.type, n, p), v = null == (t = n.metadata) ? void 0 : t.durationSeconds, _ = null != v ? (0, u.L9)(v) : null, O = (0, i.e7)([s.Z, a.Z], () => s.Z.can(d.Plq.MODERATE_MEMBERS, a.Z.getGuild(h)), [h]);
   if (null == j) return null;
   let {
     headerText: y,
@@ -49,7 +48,7 @@ function p(e) {
         color: "interactive-normal",
         variant: "text-xs/medium",
         children: C
-      }), h && (0, r.jsxs)(l.Text, {
+      }), f && (0, r.jsxs)(l.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
         children: [null === _ ? null : p === c.fX.MENTION_SPAM ? m.intl.format(m.t.i3lsKC, {
@@ -90,7 +89,7 @@ function p(e) {
         }({}, e), n = n = {
           children: (0, r.jsx)(l.XZJ, {
             type: l.XZJ.Types.INVERTED,
-            value: h,
+            value: f,
             onChange: b(!1),
             disabled: !O,
             className: g.__invalid_actionCheckbox

@@ -17,8 +17,8 @@ var i = t(442837),
   b = t(819403),
   f = t(163612),
   p = t(592125),
-  O = t(944486),
-  m = t(777658),
+  m = t(944486),
+  O = t(777658),
   h = t(858488),
   j = t(44652),
   P = t(185457),
@@ -35,8 +35,8 @@ var i = t(442837),
   U = t(520063),
   A = t(37258),
   w = t(931617),
-  M = t(332031),
-  k = t(981631),
+  k = t(332031),
+  M = t(981631),
   R = t(388032);
 let D = (0, u.Z)((0, o.Z)(function(e) {
   let {
@@ -50,11 +50,11 @@ let D = (0, u.Z)((0, o.Z)(function(e) {
     userId: n.id,
     guildId: t,
     channelId: G
-  }), V = (0, E.Z)(n, t, u), q = (0, C.Z)(n.id, u), W = (0, M.Z)(n.id), H = (0, _.Z)({
+  }), V = (0, E.Z)(n, t, u), q = (0, C.Z)(n.id, u), W = (0, k.Z)(n.id), H = (0, _.Z)({
     user: n,
     context: u
-  }), B = (0, i.e7)([O.Z, p.Z], () => {
-    let e = O.Z.getVoiceChannelId();
+  }), B = (0, i.e7)([m.Z, p.Z], () => {
+    let e = m.Z.getVoiceChannelId();
     return p.Z.getChannel(e)
   }), {
     enabled: K
@@ -72,15 +72,15 @@ let D = (0, u.Z)((0, o.Z)(function(e) {
     guildId: t,
     userId: n.id,
     analyticsLocation: {
-      page: k.ZY5.GUILD_CHANNEL,
-      section: k.jXE.CHAT_USERNAME,
-      object: k.qAy.CONTEXT_MENU_ITEM
+      page: M.ZY5.GUILD_CHANNEL,
+      section: M.jXE.CHAT_USERNAME,
+      object: M.qAy.CONTEXT_MENU_ITEM
     },
     context: u
   }), z = (0, N.Z)({
     user: n,
     guildId: t
-  }), $ = (0, c.Z)(null, n), ee = (0, m.Z)({
+  }), $ = (0, c.Z)(null, n), ee = (0, O.Z)({
     user: n
   }), en = (0, j.Z)({
     user: n
@@ -130,5 +130,5 @@ let D = (0, u.Z)((0, o.Z)(function(e) {
     })]
   })
 }, {
-  object: k.qAy.CONTEXT_MENU
+  object: M.qAy.CONTEXT_MENU
 }), [d.Z.CONTEXT_MENU, d.Z.THREAD_USER_MENU])

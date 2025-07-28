@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   tabBarContainer: "tabBarContainer_eb3aa4",
   tabBar: "tabBar_eb3aa4",

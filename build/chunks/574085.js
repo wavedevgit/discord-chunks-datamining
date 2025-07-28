@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   Z: () => p
 }), n(388685), n(953529), n(539854);
@@ -7,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(481060),
   l = n(723047),
-  s = n(727843),
-  a = n(290348),
+  a = n(727843),
+  s = n(290348),
   o = n(764163),
   c = n(861345),
   d = n(293810),
@@ -50,25 +49,25 @@ function p() {
   let {
     editStateId: e,
     guildId: t
-  } = (0, s.N)(), [n, p] = a.R7(e);
+  } = (0, a.N)(), [n, p] = s.R7(e);
 
-  function f(e, t) {
+  function h(e, t) {
     let {
       name: r,
       description: i,
       emojiId: l,
-      emojiName: s
-    } = e, a = [...n], o = {
+      emojiName: a
+    } = e, s = [...n], o = {
       name: r,
       description: i,
       emoji_id: l,
-      emoji_name: s,
+      emoji_name: a,
       ref_type: d.Qs.INTANGIBLE,
       ref_id: void 0
     };
-    null != t ? a[t] = o : a.push(o), p(a)
+    null != t ? s[t] = o : s.push(o), p(s)
   }
-  let h = (0, l.mY)();
+  let f = (0, l.mY)();
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.p, {
       benefits: n,
@@ -76,7 +75,7 @@ function p() {
         (0, i.h7j)(i => (0, r.jsx)(o.DI, g(m({}, i), {
           guildId: t,
           initialData: n[e],
-          onSave: t => f(t, e),
+          onSave: t => h(t, e),
           onDelete: () => (function(e) {
             let t = [...n];
             t.splice(e, 1), p(t)
@@ -95,10 +94,10 @@ function p() {
       onClick: function() {
         (0, i.h7j)(e => (0, r.jsx)(o.DI, g(m({}, e), {
           guildId: t,
-          onSave: e => f(e)
+          onSave: e => h(e)
         })))
       },
-      disabled: h,
+      disabled: f,
       children: u.intl.string(u.t["6dwqo6"])
     })]
   })

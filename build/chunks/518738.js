@@ -13,6 +13,7 @@ var r = n(73800),
 
 function l(e, t) {
   var n;
+  if (null == e) return;
   let {
     customIconSrc: r,
     unicodeEmoji: i
@@ -33,15 +34,13 @@ function c(e) {
     size: c = 20
   } = e, {
     guild: u,
-    roles: d
+    role: d
   } = (0, i.cj)([o.Z, a.Z], () => ({
     guild: o.Z.getGuild(t),
-    roles: a.Z.getRoles(t)
-  }), [t]);
+    role: null != n ? a.Z.getRole(t, n) : void 0
+  }), [t, n]);
   return r.useMemo(() => {
-    if (null == u || null == n) return;
-    let e = d[n];
-    if ((0, s._b)(u, e)) return l(e, c)
+    if (null != u && null != n && (0, s._b)(u, d)) return l(d, c)
   }, [u, d, n, c])
 }
 

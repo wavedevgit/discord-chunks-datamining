@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   popoutContainer: "popoutContainer_a912c3",
   customColorsHeader: "customColorsHeader_a912c3",

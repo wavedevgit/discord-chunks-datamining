@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(990547),
   i = n(283693),
   l = n(570140),
-  o = n(558724),
-  a = n(626135),
+  a = n(558724),
+  o = n(626135),
   c = n(573261),
   s = n(981631);
 
@@ -24,11 +24,11 @@ function d(e, t) {
   l.Z.dispatch({
     type: "SURVEY_HIDE",
     key: e
-  }), t ? a.default.track(s.rMx.APP_NOTICE_CLOSED, {
+  }), t ? o.default.track(s.rMx.APP_NOTICE_CLOSED, {
     notice_type: s.kVF.SURVEY,
     survey_id: e,
     dismissed: t
-  }) : a.default.track(s.rMx.APP_NOTICE_PRIMARY_CTA_OPENED, {
+  }) : o.default.track(s.rMx.APP_NOTICE_PRIMARY_CTA_OPENED, {
     notice_type: s.kVF.SURVEY
   })
 }
@@ -64,8 +64,8 @@ function _(e, t) {
 }
 
 function E(e) {
-  let t = o.Z.getLastSeenTimestamp();
-  if (null === t || null != t && Date.now() - t >= o.J) return l.Z.dispatch({
+  let t = a.Z.getLastSeenTimestamp();
+  if (null === t || null != t && Date.now() - t >= a.J) return l.Z.dispatch({
     type: "SURVEY_SEEN",
     key: e
   }), c.Z.post({

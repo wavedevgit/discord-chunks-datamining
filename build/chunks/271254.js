@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   onboardingStepContainer: "onboardingStepContainer__28e57",
   leftContainer: "leftContainer__28e57",

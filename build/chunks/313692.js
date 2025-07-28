@@ -55,7 +55,7 @@ function H(A) {
       }))
     }, [H, l, V, T]),
     N = (0, s.throttle)(Z, 300),
-    R = r.useCallback(A => {
+    S = r.useCallback(A => {
       var e, t;
       if (null == V) return;
       let n = (e = function(A) {
@@ -93,7 +93,7 @@ function H(A) {
         scrollOffset: j.current
       })
     }, [H, l, V, T]),
-    S = null != (t = null == T ? void 0 : T.offset) ? t : 0,
+    R = null != (t = null == T ? void 0 : T.offset) ? t : 0,
     G = (0, a.e7)([v.Z], () => {
       if (null == m.result) return [];
       let A = m.result.messages,
@@ -118,7 +118,7 @@ function H(A) {
         isSearching: !0,
         isIndexing: !1,
         isHistoricalIndexing: !1,
-        offset: S,
+        offset: R,
         totalResults: 0,
         hasError: !1,
         showBlockedResults: !1,
@@ -128,13 +128,13 @@ function H(A) {
         isSearching: !1,
         isIndexing: null != (e = m.result.doing_deep_historical_index) && e,
         isHistoricalIndexing: null != (t = m.result.doing_deep_historical_index) && t,
-        offset: S,
+        offset: R,
         totalResults: null != (n = m.result.total_results) ? n : 0,
         hasError: !1,
         showBlockedResults: !1,
         showNoResultsAlt: !1
       }
-    }, [m.result, S]);
+    }, [m.result, R]);
   return null == L || null == x || null == U ? null : (0, n.jsxs)("div", {
     className: i()(I.container, Q),
     children: [(0, n.jsx)(D.Z, {
@@ -153,7 +153,7 @@ function H(A) {
         blockCount: 0,
         ignoreCount: 0,
         scrollTo: () => {},
-        onPageChange: R
+        onPageChange: S
       })
     })]
   })

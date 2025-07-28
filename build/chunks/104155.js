@@ -1,6 +1,6 @@
 /** Chunk was on 58121 **/
 n.d(t, {
-  I: () => b,
+  I: () => j,
   Z: () => v
 }), n(388685), n(35282);
 var l = n(255367),
@@ -20,9 +20,9 @@ var l = n(255367),
   x = n(981631),
   _ = n(176505),
   C = n(388032),
-  j = n(335204);
+  b = n(335204);
 
-function b(e) {
+function j(e) {
   let {
     channelId: t
   } = e;
@@ -39,7 +39,7 @@ function b(e) {
 function v(e) {
   let {
     guildId: t
-  } = e, [o, s] = r.useState(""), b = (0, i.e7)([m.Z], () => m.Z.getGuild(t)), v = (0, i.e7)([u.ZP], () => u.ZP.getChannels(t)), y = (0, i.e7)([d.Z], () => d.Z.getCategories(t)), O = (0, f.Fo)(t, y, v, o), Z = (0, i.e7)([h.Z], () => h.Z.canWithPartialContext(x.Plq.MANAGE_CHANNELS, {
+  } = e, [o, s] = r.useState(""), j = (0, i.e7)([m.Z], () => m.Z.getGuild(t)), v = (0, i.e7)([u.ZP], () => u.ZP.getChannels(t)), y = (0, i.e7)([d.Z], () => d.Z.getCategories(t)), O = (0, f.Fo)(t, y, v, o), Z = (0, i.e7)([h.Z], () => h.Z.canWithPartialContext(x.Plq.MANAGE_CHANNELS, {
     guildId: t
   })), N = (0, i.e7)([c.ZP], () => null != c.ZP.getCurrentSidebarChannelId(_.oC.CHANNEL_BROWSER)), I = r.useCallback(() => s(""), [s]), w = r.useCallback(() => {
     (0, a.ZDy)(async () => {
@@ -81,12 +81,12 @@ function v(e) {
       }
     })
   }, [t]);
-  return null == b ? null : (0, l.jsxs)("div", {
-    className: j.pageBody,
+  return null == j ? null : (0, l.jsxs)("div", {
+    className: b.pageBody,
     children: [(0, l.jsxs)("div", {
-      className: j.header,
+      className: b.header,
       children: [(0, l.jsx)(a.E1j, {
-        className: j.search,
+        className: b.search,
         size: a.E1j.Sizes.MEDIUM,
         query: o,
         onChange: e => {
@@ -102,10 +102,10 @@ function v(e) {
         text: C.intl.string(C.t.CumH4u)
       }) : null]
     }), (0, l.jsx)(g.Z, {
-      className: j.browser,
+      className: b.browser,
       channels: v,
       categories: O,
-      guild: b,
+      guild: j,
       hasSidebar: N
     })]
   })

@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   animation: "animation__2d5dc",
   image: "image__2d5dc",

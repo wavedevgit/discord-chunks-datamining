@@ -1,15 +1,14 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => s
 }), n(388685);
 var r = n(73800),
   i = n(768581),
   l = n(776155),
-  s = n(981631);
+  a = n(981631);
 
-function a(e, t, n) {
-  var a, o;
+function s(e, t, n) {
+  var s, o;
   let {
     isLoading: c,
     error: d,
@@ -27,21 +26,21 @@ function a(e, t, n) {
       }(null == m || null == (e = m.role_subscription) ? void 0 : e.group_listings),
       r = null == m || null == (t = m.role_subscription) ? void 0 : t.benefit_emojis;
     return null == r ? void 0 : r.filter(e => e.roles.some(e => n.has(e)))
-  }, [null == m ? void 0 : m.role_subscription]), p = null == m ? void 0 : m.guild.icon_hash, f = i.ZP.getGuildIconURL({
+  }, [null == m ? void 0 : m.role_subscription]), p = null == m ? void 0 : m.guild.icon_hash, h = i.ZP.getGuildIconURL({
     id: e,
     icon: p,
     size: n
-  }), h = r.useMemo(() => null != g && g.length > t ? g.slice(0, t) : g, [g, t]), x = null != g && g.length > t ? g.length - t : null, b = null == u ? void 0 : u.slug, j = null != b ? s.EYA.ROLE_SUBSCRIPTION_STORE_PAGE(b) : void 0, v = null == m || null == (a = m.guild) ? void 0 : a.name, _ = null == m || null == (o = m.role_subscription) ? void 0 : o.subscriber_count, O = !c && null != v && null != p && null != f;
+  }), f = r.useMemo(() => null != g && g.length > t ? g.slice(0, t) : g, [g, t]), x = null != g && g.length > t ? g.length - t : null, b = null == u ? void 0 : u.slug, j = null != b ? a.EYA.ROLE_SUBSCRIPTION_STORE_PAGE(b) : void 0, v = null == m || null == (s = m.guild) ? void 0 : s.name, _ = null == m || null == (o = m.role_subscription) ? void 0 : o.subscriber_count, O = !c && null != v && null != p && null != h;
   return O ? {
     hasAllImperativeDetails: O,
     isLoading: c,
     details: {
       guildName: v,
       guildIcon: p,
-      guildAvatarUrl: f,
+      guildAvatarUrl: h,
       storePageUrl: j,
       subscriberCount: _,
-      emojisToShow: h,
+      emojisToShow: f,
       notShownEmojiCount: x
     }
   } : {

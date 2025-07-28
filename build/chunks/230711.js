@@ -12,9 +12,9 @@ var r = n(544891),
   c = n(37234),
   u = n(981631),
   d = n(792101),
-  _ = n(388032);
+  f = n(388032);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,7 +30,7 @@ function p(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -125,7 +125,7 @@ let g = {
       username: n,
       email: s,
       emailToken: c,
-      password: f,
+      password: _,
       avatar: h,
       newPassword: g,
       discriminator: E
@@ -137,7 +137,7 @@ let g = {
           username: n,
           email: s,
           email_token: c,
-          password: f,
+          password: _,
           avatar: h,
           new_password: g
         }, e), {
@@ -156,7 +156,7 @@ let g = {
     }, {
       checkEnabled: !1,
       modalProps: {
-        title: _.intl.string(_.t.clQc1d)
+        title: f.intl.string(f.t.clQc1d)
       },
       hooks: {
         onEarlyClose: () => a.Z.dispatch({
@@ -180,7 +180,7 @@ let g = {
         type: "USER_PASSWORD_UPDATE",
         user: t,
         newPassword: g
-      }), null != f && null != g && a.Z.dispatch({
+      }), null != _ && null != g && a.Z.dispatch({
         type: "PASSWORD_UPDATED",
         userId: t.id
       }), b ? this.close() : this.submitComplete(), e

@@ -1,13 +1,12 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   Z: () => u
 }), n(539854), n(642613);
 var r = n(73800),
   i = n(782568),
   l = n(635142),
-  s = n(63063),
-  a = n(500047),
+  a = n(63063),
+  s = n(500047),
   o = n(431516),
   c = n(981631),
   d = n(388032);
@@ -23,7 +22,7 @@ function u(e) {
   } = (0, o.N)(), p = r.useCallback(async () => {
     var e, r;
     m ? g || await (null == n || null == (r = n.onRequireModeratorMFAClick) ? void 0 : r.call(n)) : await (null == n || null == (e = n.onEnableMFAClick) ? void 0 : e.call(n)), null == t || t()
-  }, [m, g, t, n]), f = (0, a.R)({
+  }, [m, g, t, n]), h = (0, s.R)({
     onEnableMFAClick: p
   });
   return r.useMemo(() => {
@@ -31,16 +30,16 @@ function u(e) {
     let {
       minimumOwnerAgeInYears: t,
       minimumSize: r
-    } = e, a = !e.noRecentViolations, o = [{
+    } = e, s = !e.noRecentViolations, o = [{
       key: "no_violations_requirement",
       checkedLabel: d.intl.string(d.t["1lGNPT"]),
       uncheckedLabel: d.intl.string(d.t["D+gTJi"]),
       description: d.intl.format(d.t.HFY0m5, {
-        communityGuidelinesUrl: s.Z.getArticleURL(c.BhN.PUBLIC_GUILD_GUILDLINES)
+        communityGuidelinesUrl: a.Z.getArticleURL(c.BhN.PUBLIC_GUILD_GUILDLINES)
       }),
       checked: e.noRecentViolations,
-      actionLabel: a ? d.intl.string(d.t.xU2fl5) : void 0,
-      actionHandler: a ? () => (0, i.Z)(s.Z.getSubmitRequestURL()) : void 0
+      actionLabel: s ? d.intl.string(d.t.xU2fl5) : void 0,
+      actionHandler: s ? () => (0, i.Z)(a.Z.getSubmitRequestURL()) : void 0
     }];
     if (null != t && null != e.meetsOwnerAgeRequirement && o.push({
         key: "owner_age_requirement",
@@ -93,7 +92,7 @@ function u(e) {
         checkedLabel: d.intl.string(d.t.NqVyFh),
         uncheckedLabel: d.intl.string(d.t.VcDNIS),
         description: d.intl.format(d.t["7NzkfX"], {
-          enableMFAHook: f
+          enableMFAHook: h
         }),
         checked: e.hasEnabled2FA,
         actionLabel: i ? d.intl.string(d.t.BU4Dio) : void 0,
@@ -101,5 +100,5 @@ function u(e) {
       })
     }
     return !0 === u && o.sort(e => e.checked ? 0 : -1), o
-  }, [e, u, m, n, g, f, p])
+  }, [e, u, m, n, g, h, p])
 }

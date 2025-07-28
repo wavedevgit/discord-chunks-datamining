@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   helpText: "helpText_db0ee9",
   migrationInfoBox: "migrationInfoBox_db0ee9",

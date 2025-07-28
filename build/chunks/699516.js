@@ -42,12 +42,12 @@ function d(e, t) {
   return n
 }
 
-function _(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let f = 3e5,
+let _ = 3e5,
   p = new Map,
   h = {},
   m = {},
@@ -108,11 +108,11 @@ function L(e) {
 
 function x(e) {
   let t = p.get(e.relationship.id);
-  R(e.relationship.id, e.relationship.type), null != e.relationship.nickname && (h = _(u({}, h), {
+  R(e.relationship.id, e.relationship.type), null != e.relationship.nickname && (h = f(u({}, h), {
     [e.relationship.id]: e.relationship.nickname
-  })), null != e.relationship.since && (m = _(u({}, m), {
+  })), null != e.relationship.since && (m = f(u({}, m), {
     [e.relationship.id]: e.relationship.since
-  })), null != e.relationship.originApplicationId && (y = _(u({}, y), {
+  })), null != e.relationship.originApplicationId && (y = f(u({}, y), {
     [e.relationship.id]: e.relationship.originApplicationId
   })), e.relationship.isSpamRequest ? g.add(e.relationship.id) : g.delete(e.relationship.id), e.relationship.userIgnored ? (E.add(e.relationship.id), e.relationship.type === l.OGo.PENDING_INCOMING ? b.add(e.relationship.id) : e.relationship.type === l.OGo.FRIEND && b.delete(e.relationship.id)) : (E.delete(e.relationship.id), b.delete(e.relationship.id)), w(), e.relationship.type === l.OGo.FRIEND && t === l.OGo.PENDING_OUTGOING && a.Z.dispatch({
     type: "FRIEND_REQUEST_ACCEPTED",
@@ -120,11 +120,11 @@ function x(e) {
   })
 }
 
-function M(e) {
+function k(e) {
   P(e.relationship.id), null != h[e.relationship.id] && (h = u({}, h), delete h[e.relationship.id]), null != m[e.relationship.id] && (m = u({}, m), delete m[e.relationship.id]), null != y[e.relationship.id] && (y = u({}, y), delete y[e.relationship.id]), e.relationship.userIgnored || E.delete(e.relationship.id), b.delete(e.relationship.id), g.delete(e.relationship.id), w()
 }
 
-function k(e) {
+function M(e) {
   let {
     relationship: t
   } = e;
@@ -138,7 +138,7 @@ function j(e) {
 
 function U(e) {
   v[e.userId] = {
-    expiry: Date.now() + f,
+    expiry: Date.now() + _,
     isStranger: e.isStranger
   }
 }
@@ -261,8 +261,8 @@ let B = new G(a.Z, {
   CONNECTION_OPEN: D,
   OVERLAY_INITIALIZE: L,
   RELATIONSHIP_ADD: x,
-  RELATIONSHIP_REMOVE: M,
-  RELATIONSHIP_UPDATE: k,
+  RELATIONSHIP_REMOVE: k,
+  RELATIONSHIP_UPDATE: M,
   RELATIONSHIP_PENDING_INCOMING_REMOVED: j,
   UPDATE_STRANGER_STATUS: U
 })

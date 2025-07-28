@@ -50,18 +50,18 @@ let j = (e, t, l) => {
       currentSelectedRoles: k = []
     } = e, {
       shouldEveryonePost: O,
-      setShouldEveryonePost: C
-    } = j(t, l, b), S = r.useRef(null), N = function(e) {
-      let t = (0, a.e7)([h.Z], () => h.Z.getRoles(e.id));
-      return r.useMemo(() => (0, m.KV)(e, t).filter(t => w(e.id)(t.id)), [e, t])
+      setShouldEveryonePost: S
+    } = j(t, l, b), C = r.useRef(null), N = function(e) {
+      let t = (0, a.e7)([h.Z], () => h.Z.getSortedRoles(e.id));
+      return r.useMemo(() => (0, m.K)(t).filter(t => w(e.id)(t.id)), [e, t])
     }(t), H = N.reduce((e, t) => (e.set(t.id, t), e), new Map), P = N.map(e => ({
       key: e.key,
       label: e.name,
       value: e.id
-    })), [R, _] = r.useState(k.map(e => e.id).filter(w(t.id))), [V, z] = r.useState(!1), [E, Z] = r.useState(!1), B = R.length > 0 || O, G = function(e, t) {
-      let l = (0, a.e7)([h.Z], () => h.Z.getRoles(e.id));
+    })), [R, _] = r.useState(k.map(e => e.id).filter(w(t.id))), [z, E] = r.useState(!1), [Z, B] = r.useState(!1), G = R.length > 0 || O, K = function(e, t) {
+      let l = (0, a.e7)([h.Z], () => h.Z.getSortedRoles(e.id));
       return r.useCallback((n, r) => {
-        let a = (0, m.KV)(e, l),
+        let a = (0, m.K)(l),
           s = new Set(r),
           d = function(e) {
             for (var t = 1; t < arguments.length; t++) {
@@ -100,23 +100,23 @@ let j = (e, t, l) => {
           }) : g in d && x.push(g)
         }, []), (0, o.kU)(t.id, h, x)
       }, [e, l, t])
-    }(t, l), K = async () => {
-      if (!B) return;
-      z(!0), Z(!1);
+    }(t, l), M = async () => {
+      if (!G) return;
+      E(!0), B(!1);
       let e = [...R];
       if (O) {
         let l = (0, d.lV)(t);
         e.push(l)
       }
       try {
-        await G(b, e), g()
+        await K(b, e), g()
       } catch (e) {
-        Z(!0)
+        B(!0)
       } finally {
-        z(!1)
+        E(!1)
       }
     };
-    return V ? (0, n.jsx)(s.$jN, {}) : (0, n.jsxs)(s.Y0X, {
+    return z ? (0, n.jsx)(s.$jN, {}) : (0, n.jsxs)(s.Y0X, {
       transitionState: y,
       "aria-label": x.intl.string(x.t["3khS8P"]),
       parentComponent: "QuickRolePermissionToggleModal",
@@ -130,9 +130,9 @@ let j = (e, t, l) => {
         children: [(0, n.jsx)("div", {
           className: f.row,
           children: (0, n.jsx)("div", {
-            ref: S,
+            ref: C,
             children: (0, n.jsx)(s.JcV, {
-              containerRef: S,
+              containerRef: C,
               children: (0, n.jsx)(s.VcW, {
                 closeOnSelect: !1,
                 className: f.roleSelector,
@@ -155,14 +155,14 @@ let j = (e, t, l) => {
           children: [(0, n.jsx)(s.j7V, {
             value: O,
             hideBorder: !0,
-            onChange: C,
+            onChange: S,
             className: f.switchGroup,
             children: x.intl.string(x.t.kPwwAw)
           }), (0, n.jsx)(s.Text, {
             variant: "text-sm/normal",
             children: x.intl.format(x.t.NjCtHx, {})
           })]
-        }), E ? (0, n.jsx)("div", {
+        }), Z ? (0, n.jsx)("div", {
           className: f.row,
           children: (0, n.jsx)(s.Text, {
             className: f.error,
@@ -179,8 +179,8 @@ let j = (e, t, l) => {
             size: "sm",
             text: x.intl.string(x.t.R3BPHx),
             type: "submit",
-            onClick: K,
-            disabled: !B,
+            onClick: M,
+            disabled: !G,
             autoFocus: !0
           })
         }), (0, n.jsx)("div", {

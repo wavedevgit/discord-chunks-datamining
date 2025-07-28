@@ -1,13 +1,12 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   Z: () => d
 }), n(388685), n(457542), n(642613);
 var r = n(255367),
   i = n(73800),
   l = n(481060),
-  s = n(279881),
-  a = n(383124),
+  a = n(279881),
+  s = n(383124),
   o = n(388032),
   c = n(955373);
 
@@ -20,17 +19,17 @@ function d(e) {
   } = e, {
     topGames: m,
     tryFetchTopGames: g
-  } = (0, s.I)(), p = m.get(t), [f, h] = i.useState(!1);
+  } = (0, a.I)(), p = m.get(t), [h, f] = i.useState(!1);
   i.useEffect(() => {
-    h(!0), g(t).finally(() => {
-      h(!1)
+    f(!0), g(t).finally(() => {
+      f(!1)
     })
   }, [t, g]);
   let x = i.useMemo(() => null == p ? [] : Object.keys(p).filter(e => !n.includes(e)).sort((e, t) => p[t].score - p[e].score), [p, n]),
     b = i.useCallback(e => {
       n.includes(e) ? d(n.filter(t => t !== e)) : d([...n, e])
     }, [d, n]);
-  return f && null == p ? (0, r.jsx)(l.$jN, {}) : null == x || 0 === x.length ? null : (0, r.jsxs)(r.Fragment, {
+  return h && null == p ? (0, r.jsx)(l.$jN, {}) : null == x || 0 === x.length ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: c.separator
     }), (0, r.jsxs)("div", {
@@ -41,7 +40,7 @@ function d(e) {
         children: o.intl.string(o.t.bFGpub)
       }), (0, r.jsx)("div", {
         className: c.gamesList,
-        children: x.map(e => (0, r.jsx)(a.Z, {
+        children: x.map(e => (0, r.jsx)(s.Z, {
           applicationId: e,
           selected: !1,
           onClick: b,

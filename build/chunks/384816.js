@@ -14,10 +14,10 @@ var r = t(442837),
   d = t(246946),
   f = t(785717),
   p = t(250822),
-  g = t(771362),
-  j = t(280885),
-  v = t(819602),
-  h = t(78806),
+  j = t(771362),
+  g = t(280885),
+  h = t(819602),
+  v = t(78806),
   m = t(900927),
   b = t(678738),
   x = t(179828),
@@ -36,11 +36,11 @@ function I(e) {
     trackUserProfileAction: T
   } = (0, f.KZ)(), S = (0, r.e7)([u.Z], () => u.Z.getGuildId()), N = (0, s.Y)({
     userId: n.id
-  }), A = (0, r.e7)([d.Z], () => d.Z.hidePersonalInformation), C = (0, r.e7)([a.default], () => a.default.locale), w = (0, g.Z)(n.id), _ = (0, p.Z)(n.id);
+  }), A = (0, r.e7)([d.Z], () => d.Z.hidePersonalInformation), C = (0, r.e7)([a.default], () => a.default.locale), w = (0, j.Z)(n.id), _ = (0, p.Z)(n.id);
   return (0, l.jsxs)(i.zJl, {
     fade: !0,
     className: Z.scroller,
-    children: [(null == I ? void 0 : I.bio) != null && (null == I ? void 0 : I.bio) !== "" && !A && (0, l.jsx)(j.Z, {
+    children: [(null == I ? void 0 : I.bio) != null && (null == I ? void 0 : I.bio) !== "" && !A && (0, l.jsx)(g.Z, {
       userBio: I.bio,
       setLineClamp: !1
     }), (null == I ? void 0 : I.guildId) != null && (0, l.jsx)(x.Z, {
@@ -60,7 +60,7 @@ function I(e) {
       })
     }), N.length > 0 && (0, l.jsx)(b.Z, {
       heading: O.intl.string(O.t["Uv/eT0"]),
-      children: (0, l.jsx)(h.Z, {
+      children: (0, l.jsx)(v.Z, {
         applicationIds: N
       })
     }), (0, l.jsx)(b.Z, {
@@ -73,7 +73,7 @@ function I(e) {
     }), w.length > 0 && (0, l.jsx)(b.Z, {
       heading: O.intl.string(O.t["3fe7U1"]),
       scrollIntoView: P === y.Tb.CONNECTIONS,
-      children: (0, l.jsx)(v.ZP, {
+      children: (0, l.jsx)(h.ZP, {
         connectedAccounts: w,
         className: Z.connections,
         userId: n.id,
@@ -81,7 +81,7 @@ function I(e) {
       })
     }), _.length > 0 && (0, l.jsx)(b.Z, {
       heading: O.intl.string(O.t.PHjkRE),
-      children: _.map(e => (0, l.jsx)(v.tH, {
+      children: _.map(e => (0, l.jsx)(h.tH, {
         className: Z.appsConnections,
         applicationRoleConnection: e,
         locale: C,

@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   selectTeamContainer: "selectTeamContainer__7b175",
   teamSelect: "teamSelect__7b175",

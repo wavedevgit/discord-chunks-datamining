@@ -13,8 +13,8 @@ var r = n(990547),
   c = n(408987),
   u = n(336197),
   d = n(280837),
-  _ = n(895886),
-  f = n(35225),
+  f = n(895886),
+  _ = n(35225),
   p = n(703656),
   h = n(601964),
   m = n(314897),
@@ -73,7 +73,7 @@ function L(e, t) {
 
 function x(e, t) {
   if (null == e) return {};
-  var n, r, i = M(e, t);
+  var n, r, i = k(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -81,14 +81,14 @@ function x(e, t) {
   return i
 }
 
-function M(e, t) {
+function k(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let k = e => {
+let M = e => {
     N.Z.show({
       title: R.intl.string(R.t.cTaRxM),
       body: R.intl.formatToPlainString(R.t["VSd+Ag"], {
@@ -119,7 +119,7 @@ function G(e) {
 }
 
 function B(e, t) {
-  return null != t ? t : (0, f.V)(e)
+  return null != t ? t : (0, _.V)(e)
 }
 let V = {
   joinGuild: async function(e) {
@@ -128,11 +128,11 @@ let V = {
       {
         source: u,
         loadId: d,
-        lurkLocation: f
+        lurkLocation: _
       } = c,
       h = null != (t = c.lurker) && t,
       g = v.default.getCurrentUser();
-    if (null != (r = null == g ? void 0 : g.hasFlag(C.xW$.QUARANTINED)) && r) return (0, _.default)(), new Promise((e, t) => t(Error()));
+    if (null != (r = null == g ? void 0 : g.hasFlag(C.xW$.QUARANTINED)) && r) return (0, f.default)(), new Promise((e, t) => t(Error()));
     o.Z.wait(() => o.Z.dispatch({
       type: "GUILD_JOIN",
       guildId: e,
@@ -149,7 +149,7 @@ let V = {
             lurker: h,
             session_id: h ? m.default.getSessionId() : null,
             recommendation_load_id: d,
-            location: h && null != f ? f : null
+            location: h && null != _ ? _ : null
           },
           context: {
             source: u
@@ -184,7 +184,7 @@ let V = {
     } catch (t) {
       if ((null == (i = t.body) ? void 0 : i.code) === C.evJ.TOO_MANY_USER_GUILDS) {
         let e = v.default.getCurrentUser();
-        S.ZP.canUseIncreasedGuildCap(e) || (null == e ? void 0 : e.isStaff()) ? k(C.tHP) : k(C.DZw)
+        S.ZP.canUseIncreasedGuildCap(e) || (null == e ? void 0 : e.isStaff()) ? M(C.tHP) : M(C.DZw)
       }
       throw (null == (s = t.body) ? void 0 : s.code) === C.evJ.GUILD_AT_CAPACITY && U(), h && (null == (l = t.body) ? void 0 : l.code) === C.evJ.UNKNOWN_GUILD && j(e), t
     }

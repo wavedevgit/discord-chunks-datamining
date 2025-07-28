@@ -6,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(481060),
   l = n(846027),
-  o = n(468026),
-  a = n(388032);
+  a = n(468026),
+  o = n(388032);
 let c = null;
 
 function s() {
@@ -19,7 +19,7 @@ function u() {
 }
 
 function d() {
-  c = (0, i.h7j)(e => (0, r.jsx)(o.default, function(e) {
+  c = (0, i.h7j)(e => (0, r.jsx)(a.default, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -37,11 +37,11 @@ function d() {
     }
     return e
   }({
-    title: a.intl.string(a.t["zQ1+Jy"]),
-    body: a.intl.string(a.t.K1gWXl),
-    secondaryConfirmText: a.intl.string(a.t.XAiAgI),
+    title: o.intl.string(o.t["zQ1+Jy"]),
+    body: o.intl.string(o.t.K1gWXl),
+    secondaryConfirmText: o.intl.string(o.t.XAiAgI),
     onConfirmSecondary: u,
     onConfirm: s,
-    confirmText: a.intl.string(a.t.BddRzc)
+    confirmText: o.intl.string(o.t.BddRzc)
   }, e)))
 }

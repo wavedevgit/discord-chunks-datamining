@@ -176,7 +176,7 @@ function B(e, t) {
 
 function U(e, t) {
   let n = (0, S.Z)(t, e);
-  return D(e, "channelAccessFormat", r.useMemo(() => null == n ? _.I.SOME_CHANNELS_ACCESS : (0, y.MT)(n) ? _.I.ALL_CHANNELS_ACCESS : _.I.SOME_CHANNELS_ACCESS, [n]))
+  return D(e, "channelAccessFormat", r.useMemo(() => null == n ? _.I.SOME_CHANNELS_ACCESS : (0, y.yt)(n) ? _.I.ALL_CHANNELS_ACCESS : _.I.SOME_CHANNELS_ACCESS, [n]))
 }
 let F = [];
 

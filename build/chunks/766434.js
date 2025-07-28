@@ -1,8 +1,7 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   Br: () => l,
-  Uj: () => s,
+  Uj: () => a,
   j0: () => i
 }), n(388685);
 var r = n(198139);
@@ -29,7 +28,7 @@ function l(e) {
   }
 }
 
-function s(e, t) {
+function a(e, t) {
   let n, r, i, l;
   return null != e && (n = e.amount, i = e.paymentsCount, null != t && (r = e.amount / t.amount - 1, l = e.paymentsCount - t.paymentsCount)), {
     revenue: n,

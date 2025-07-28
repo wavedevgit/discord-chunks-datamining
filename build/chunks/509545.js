@@ -19,8 +19,8 @@ function d(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let _ = {},
-  f = {},
+let f = {},
+  _ = {},
   p = new Set,
   h = new Set,
   m = {},
@@ -28,7 +28,7 @@ let _ = {},
 
 function E(e) {
   let t = e.skuId;
-  _[e.id] = e;
+  f[e.id] = e;
   let n = e.prices[c.tuJ.DEFAULT];
   if (null != n) {
     var r;
@@ -37,8 +37,8 @@ function E(e) {
     let i = Array.from(null != (r = g[e.skuId]) ? r : new Set);
     g[e.skuId] = new Set([...i, ...Array.from(t)])
   }
-  let i = f[t];
-  null != i ? i.add(e.id) : f[t] = new Set([e.id])
+  let i = _[t];
+  null != i ? i.add(e.id) : _[t] = new Set([e.id])
 }
 
 function b() {
@@ -71,7 +71,7 @@ function v(e) {
     skuId: t,
     subscriptionPlans: n
   } = e;
-  f[t] = new Set, g[t] = new Set, n.forEach(y), p.delete(t), h.delete(t)
+  _[t] = new Set, g[t] = new Set, n.forEach(y), p.delete(t), h.delete(t)
 }
 
 function I(e) {
@@ -96,7 +96,7 @@ function S(e) {
 }
 
 function A() {
-  (0, s.Ti)(_), (0, s.Ti)(f), p.clear(), h.clear(), (0, s.Ti)(m), (0, s.Ti)(g), b()
+  (0, s.Ti)(f), (0, s.Ti)(_), p.clear(), h.clear(), (0, s.Ti)(m), (0, s.Ti)(g), b()
 }
 b();
 let N = [u.rV.DAY, u.rV.MONTH, u.rV.YEAR];
@@ -105,28 +105,28 @@ class C extends(r = i.ZP.Store) {
     let t = [];
     for (let r of e) {
       var n;
-      let e = Array.from(null != (n = f[r]) ? n : new Set);
+      let e = Array.from(null != (n = _[r]) ? n : new Set);
       e.sort((e, t) => {
-        let n = _[e],
-          r = _[t];
+        let n = f[e],
+          r = f[t];
         return N.indexOf(n.interval) - N.indexOf(r.interval) || n.intervalCount - r.intervalCount
       }), t.push(...e)
     }
     return t
   }
   getFetchedSKUIDs() {
-    return l.default.keys(f)
+    return l.default.keys(_)
   }
   getForSKU(e) {
     var t;
-    return Array.from(null != (t = f[e]) ? t : []).map(e => _[e])
+    return Array.from(null != (t = _[e]) ? t : []).map(e => f[e])
   }
   getForSkuAndInterval(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 1;
     return this.getForSKU(e).find(e => e.interval === t && e.intervalCount === n)
   }
   get(e) {
-    return _[e]
+    return f[e]
   }
   isFetchingForSKU(e) {
     return p.has(e)
@@ -135,7 +135,7 @@ class C extends(r = i.ZP.Store) {
     return e.some(e => this.isFetchingForSKU(e))
   }
   isLoadedForSKU(e) {
-    return !!h.has(e) || !p.has(e) && null != f[e]
+    return !!h.has(e) || !p.has(e) && null != _[e]
   }
   isLoadedForSKUs(e) {
     return e.every(e => this.isLoadedForSKU(e))

@@ -1,9 +1,8 @@
 /** Chunk was on 94312 **/
-"use strict";
+n.d(t, {
+  Z: () => r
+});
 
 function r(e) {
   return 25
 }
-n.d(t, {
-  Z: () => r
-})

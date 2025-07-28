@@ -14,10 +14,10 @@ var r = t(481060),
   d = t(687158),
   f = t(899007),
   p = t(648052),
-  g = t(867176),
-  j = t(681837),
-  v = t(502762),
-  h = t(530),
+  j = t(867176),
+  g = t(681837),
+  h = t(502762),
+  v = t(530),
   m = t(871604),
   b = t(952124),
   x = t(53558),
@@ -47,8 +47,8 @@ function A(e) {
     onClose: B,
     sourceAnalyticsLocations: k = []
   } = e, G = A === T.ME ? void 0 : A, Y = (0, d.ZP)(n.id, G), V = a.ZP.getName(G, C, n), F = (0, c.Dt)(), {
-    analyticsLocations: z
-  } = (0, s.ZP)([...k, o.Z.USER_PROFILE_MODAL]), W = (0, u.ZB)({
+    analyticsLocations: W
+  } = (0, s.ZP)([...k, o.Z.USER_PROFILE_MODAL]), z = (0, u.ZB)({
     layout: "MODAL",
     userId: n.id,
     sourceSessionId: R,
@@ -58,9 +58,9 @@ function A(e) {
     roleId: _
   }), K = (0, P.Z)(n);
   return (0, l.jsx)(s.Gt, {
-    value: z,
+    value: W,
     children: (0, l.jsx)(u.Mt, {
-      value: W,
+      value: z,
       openedAt: L,
       fetchStartedAt: null == Y ? void 0 : Y.fetchStartedAt,
       fetchEndedAt: null == Y ? void 0 : Y.fetchEndedAt,
@@ -80,7 +80,7 @@ function A(e) {
               })
             })
           }),
-          children: (0, l.jsxs)(v.Z, {
+          children: (0, l.jsxs)(h.Z, {
             user: n,
             displayProfile: Y,
             themeType: E.lY.MODAL,
@@ -91,7 +91,7 @@ function A(e) {
                 onCloseProfile: B
               })
             }), (0, l.jsxs)("div", {
-              children: [(0, l.jsx)(g.Z, {
+              children: [(0, l.jsx)(j.Z, {
                 user: n,
                 displayProfile: Y,
                 themeType: E.lY.MODAL
@@ -132,13 +132,13 @@ function A(e) {
               })]
             }), (0, l.jsxs)("div", {
               className: N.body,
-              children: [(0, l.jsx)(h.Z, {
+              children: [(0, l.jsx)(v.Z, {
                 className: N.username,
                 user: n,
                 nickname: V,
                 pronouns: null == Y ? void 0 : Y.pronouns,
                 nicknameVariant: "heading-xl/bold",
-                nicknameIcons: (0, l.jsx)(j.Z, {
+                nicknameIcons: (0, l.jsx)(g.Z, {
                   size: "sm",
                   userId: n.id
                 }),

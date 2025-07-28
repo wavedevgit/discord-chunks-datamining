@@ -27,7 +27,7 @@ let b = e => {
     O && !v && g()
   }, [O, v, g]);
   let T = null,
-    x = m.intl.string(m.t.d7b1p6);
+    S = m.intl.string(m.t.d7b1p6);
   switch (t) {
     case 0:
       T = m.intl.string(m.t.Xiwf1d);
@@ -39,7 +39,7 @@ let b = e => {
       return (0, d.vE)(t)
   }
   if (null == T) return null;
-  let S = async () => {
+  let x = async () => {
     y(!0);
     try {
       await c.Z.joinGuild(i.id, {
@@ -65,14 +65,14 @@ let b = e => {
       }), (0, r.jsx)(s.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
-        children: x
+        children: S
       }), (0, r.jsxs)("div", {
         className: f.buttonContainer,
         children: [(0, r.jsx)(s.zxk, {
           variant: "primary",
           text: m.intl.string(m.t["9VLmlZ"]),
           buttonRef: b,
-          onClick: S,
+          onClick: x,
           loading: O
         }), (0, r.jsx)(a.zx, {
           onClick: g,

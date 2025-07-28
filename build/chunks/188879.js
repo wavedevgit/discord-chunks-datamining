@@ -94,7 +94,7 @@ let P = e => {
         children: E.intl.string(E.t.O2nYk5)
       }), (0, i.jsxs)("ul", {
         className: _.classificationActionsTakenList,
-        children: [t.map(e => (0, i.jsx)(C, {
+        children: [t.map(e => (0, i.jsx)(S, {
           action: e
         }, e.id)), null != n ? (0, i.jsx)("li", {
           className: _.classificationActionsTakenRow,
@@ -112,7 +112,7 @@ let P = e => {
       })]
     })
   },
-  C = e => {
+  S = e => {
     let {
       action: t
     } = e;
@@ -128,7 +128,7 @@ let P = e => {
       }, t))
     })
   },
-  S = e => {
+  C = e => {
     let {
       classificationTypeText: t,
       policyExplainerLink: n
@@ -205,7 +205,7 @@ let P = e => {
           tosLink: t,
           communityGuidelinesLink: n
         })
-      }), (0, i.jsx)(S, {
+      }), (0, i.jsx)(C, {
         classificationTypeText: a,
         policyExplainerLink: l
       }), r]
@@ -222,15 +222,15 @@ let P = e => {
       classification: E,
       classificationRequestState: A,
       isAppealEligible: w,
-      isDsaEligible: C,
-      violationType: S
+      isDsaEligible: S,
+      violationType: C
     } = (0, y.YG)(n), N = (0, s.e7)([f.Z], () => f.Z.getAppealEligibility()), k = (0, g.P)(), U = null != E && null != E.flagged_content && E.flagged_content.length > 0, D = (0, x.e)(), Z = !!(null == E ? void 0 : E.is_coppa) && N.includes(m.tG.AGE_VERIFY_ELIGIBLE), M = {
       accountStanding: k,
       classificationId: n,
       hasFlaggedContent: U,
-      isDsaEligible: C,
+      isDsaEligible: S,
       source: r,
-      violationType: S
+      violationType: C
     }, Y = a.useRef(M);
     return (a.useEffect(() => {
       Y.current = M
@@ -276,8 +276,8 @@ let P = e => {
               classification_ids: [Number(n)],
               source: r,
               is_violative_content_shown: U,
-              is_dsa_eligible: C,
-              violation_type: S
+              is_dsa_eligible: S,
+              violation_type: C
             }), Z ? p.Z.open(n, d) : w && (c.Z.increment({
               name: l.V.APPEAL_INGESTION_VIEW
             }), j.Z.open(n))

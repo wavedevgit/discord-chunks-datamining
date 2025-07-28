@@ -22,8 +22,8 @@ var i = n(255367),
   y = n(660189),
   v = n(372900),
   T = n(566006),
-  x = n(620652),
-  S = n(815605),
+  S = n(620652),
+  x = n(815605),
   E = n(222677),
   R = n(995774),
   I = n(665906),
@@ -91,14 +91,14 @@ let Y = e => {
       messageId: l
     } = e, [a, s] = r.useState(!0), [c, u] = r.useState([]), d = r.useMemo(() => {
       if (null == c || c.length < 1) return;
-      let e = (0, S.Zn)(t, c[0], n, {
-        emojiSize: x.M.LARGE,
+      let e = (0, x.Zn)(t, c[0], n, {
+        emojiSize: S.M.LARGE,
         messageId: l
       });
-      return (0, i.jsx)(x.Z, {
+      return (0, i.jsx)(S.Z, {
         className: W.__invalid_effect,
         effect: e,
-        emojiSize: x.M.LARGE,
+        emojiSize: S.M.LARGE,
         onComplete: () => s(!1)
       })
     }, [c, t, n, l]);
@@ -235,7 +235,7 @@ function $(e) {
         variant: "text-md/normal",
         className: W.name,
         children: [null != O && "" !== O && (0, i.jsx)("span", {
-          className: n.isPomelo() ? "" : W.nickname,
+          className: n.hasUniqueUsername() ? "" : W.nickname,
           children: O
         }), (0, i.jsx)(m.Z, {
           user: n,
@@ -425,7 +425,7 @@ function et(e) {
       let n = e.burst_count > 0 ? e.burst_count : e.count;
       return (t.burst_count > 0 ? t.burst_count : t.count) - n
     }), e
-  }, [f]), j = b[0], [x, S] = function(e, t, n) {
+  }, [f]), j = b[0], [S, x] = function(e, t, n) {
     let [i, l] = r.useState(null != e ? e : t);
     return r.useEffect(() => {
       null != i && null == n.find(e => {
@@ -440,11 +440,11 @@ function et(e) {
     reactionType: j.burst_count > 0 ? T.O.BURST : T.O.NORMAL
   } : null, b), E = r.useMemo(() => {
     var e;
-    return null == x ? null : null != (e = f.find(e => (0, R.ir)(e.emoji, x.emoji))) ? e : null
-  }, [f, x]), I = (0, u.e7)([g.Z], () => g.Z.saturation), P = (0, u.e7)([N.Z], () => (0, d.wj)(N.Z.theme));
+    return null == S ? null : null != (e = f.find(e => (0, R.ir)(e.emoji, S.emoji))) ? e : null
+  }, [f, S]), I = (0, u.e7)([g.Z], () => g.Z.saturation), P = (0, u.e7)([N.Z], () => (0, d.wj)(N.Z.theme));
   if (r.useEffect(() => {
-      (0 === f.length || null == x && null == E) && setImmediate(a)
-    }, [a, f.length, E, x]), null == x || null == E) return (0, i.jsx)(h.$jN, {});
+      (0 === f.length || null == S && null == E) && setImmediate(a)
+    }, [a, f.length, E, S]), null == S || null == E) return (0, i.jsx)(h.$jN, {});
   if (null == p) throw Error("MessageReactions.render: Message does not have a channelId");
   return (0, i.jsx)(v.Z.Provider, {
     value: null != m ? m : void 0,
@@ -461,8 +461,8 @@ function et(e) {
           var t;
           let n = e.burst_count > 0;
           return (0, i.jsx)(q, {
-            isSelected: en(x, e, n ? T.O.BURST : T.O.NORMAL),
-            setSelected: S,
+            isSelected: en(S, e, n ? T.O.BURST : T.O.NORMAL),
+            setSelected: x,
             reactionType: n ? T.O.BURST : T.O.NORMAL,
             emoji: e.emoji,
             count: n ? e.burst_count : e.count,
@@ -474,7 +474,7 @@ function et(e) {
         reaction: E,
         guildId: m,
         channel: p,
-        reactionType: x.reactionType,
+        reactionType: S.reactionType,
         disableManage: l
       })]
     })

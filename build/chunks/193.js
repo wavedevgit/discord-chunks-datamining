@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   analyticsCard: "analyticsCard__5931c",
   analyticsCardTitle: "analyticsCardTitle__5931c",

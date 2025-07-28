@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   container: "container__0a560",
   iconError: "iconError__0a560",

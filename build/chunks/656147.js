@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   emojiInputContainer: "emojiInputContainer__8079d",
   emojiButton: "emojiButton__8079d",

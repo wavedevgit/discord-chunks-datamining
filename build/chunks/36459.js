@@ -12,8 +12,8 @@ n.d(t, {
 var r = n(544891),
   i = n(570140),
   l = n(367907),
-  o = n(430824),
-  a = n(496675),
+  a = n(430824),
+  o = n(496675),
   c = n(823379),
   s = n(709054),
   u = n(177862),
@@ -111,7 +111,7 @@ async function g(e) {
   return Array.isArray(t.body) ? t.body.map(T) : []
 }
 async function A(e, t, n) {
-  a.Z.can(E.Plq.MANAGE_MESSAGES, t) && await r.tn.post({
+  o.Z.can(E.Plq.MANAGE_MESSAGES, t) && await r.tn.post({
     url: E.ANM.GUILD_AUTOMOD_ALERT_ACTION(t.guild_id),
     body: {
       message_id: e,
@@ -123,8 +123,8 @@ async function A(e, t, n) {
 }
 
 function R(e, t, n) {
-  let i = o.Z.getGuild(e);
-  null != i && a.Z.can(E.Plq.MANAGE_GUILD, i) && (0, _.UV)(() => {
+  let i = a.Z.getGuild(e);
+  null != i && o.Z.can(E.Plq.MANAGE_GUILD, i) && (0, _.UV)(() => {
     (0, l.yw)(E.rMx.GUILD_AUTOMOD_FEEDBACK, {
       feedback_type: u.x2.MENTION_RAID_REMOVE_RESTRICTION,
       decision_id: t

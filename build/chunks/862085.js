@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   Z: () => o
 });
@@ -7,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(481060),
   l = n(556012),
-  s = n(388032),
-  a = n(467397);
+  a = n(388032),
+  s = n(467397);
 
 function o(e) {
   let {
@@ -24,16 +23,16 @@ function o(e) {
     icon: p
   } = u;
   return (0, r.jsxs)("div", {
-    className: a.actionContainer,
+    className: s.actionContainer,
     children: [(0, r.jsx)("div", {
-      className: a.actionIconContainer,
+      className: s.actionIconContainer,
       children: (0, r.jsx)(p, {
         size: "custom",
         color: "currentColor",
-        className: a.actionIcon
+        className: s.actionIcon
       })
     }), (0, r.jsxs)("div", {
-      className: a.actionTextContainer,
+      className: s.actionTextContainer,
       children: [(0, r.jsx)(i.X6q, {
         variant: "heading-sm/semibold",
         children: m
@@ -44,12 +43,12 @@ function o(e) {
       }), o ? (0, r.jsxs)(i.Text, {
         color: "text-muted",
         variant: "text-xs/medium",
-        children: [s.intl.string(s.t.Oa9oWF), (0, r.jsx)(i.P3F, {
+        children: [a.intl.string(a.t.Oa9oWF), (0, r.jsx)(i.P3F, {
           onClick: d(!0),
-          className: a.editChannel,
+          className: s.editChannel,
           tag: "span",
           role: "link",
-          children: s.intl.string(s.t.QupmYW)
+          children: a.intl.string(a.t.QupmYW)
         })]
       }) : null]
     }), (0, r.jsx)("div", {
@@ -57,7 +56,7 @@ function o(e) {
         type: i.XZJ.Types.INVERTED,
         value: o,
         onChange: d(!1),
-        className: a.__invalid_actionCheckbox
+        className: s.__invalid_actionCheckbox
       })
     })]
   })

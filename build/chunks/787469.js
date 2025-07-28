@@ -1,7 +1,7 @@
 /** Chunk was on 54168 **/
 t.d(e, {
   Z: () => B
-}), t(642613);
+});
 var n = t(255367),
   r = t(73800),
   l = t(120356),
@@ -22,10 +22,7 @@ var n = t(255367),
 function B(A) {
   let {
     member: e
-  } = A, t = (0, s.e7)([c.Z], () => c.Z.getGuild(e.guildId)), l = (0, s.e7)([v.Z], () => v.Z.getRoles(e.guildId)), B = r.useMemo(() => null == t ? [] : null == e.highestRoleId ? e.roles : Object.values(l).filter(A => A.id !== e.highestRoleId && e.roles.includes(A.id)).sort((A, e) => {
-    var t, n;
-    return null != (n = null != (t = null == A ? void 0 : A.position) ? t : 0 - (null == e ? void 0 : e.position)) ? n : 0
-  }).map(A => A.id), [e.roles, e.highestRoleId, t, l]), w = (0, s.e7)([o.Z], () => o.Z.getEnhancedMember(e.guildId, e.userId), [e.guildId, e.userId]), D = (0, g.zq)(w), M = (0, g.vN)(e), I = (0, s.e7)([h.Z], () => h.Z.can(u.Plq.MANAGE_ROLES, t), [t]);
+  } = A, t = (0, s.e7)([c.Z], () => c.Z.getGuild(e.guildId)), l = (0, s.e7)([v.Z], () => v.Z.getSortedRoles(e.guildId)), B = r.useMemo(() => l.filter(A => A.id !== e.highestRoleId && e.roles.includes(A.id)), [e.roles, e.highestRoleId, l]), w = (0, s.e7)([o.Z], () => o.Z.getEnhancedMember(e.guildId, e.userId), [e.guildId, e.userId]), D = (0, g.zq)(w), M = (0, g.vN)(e), I = (0, s.e7)([h.Z], () => h.Z.can(u.Plq.MANAGE_ROLES, t), [t]);
   return null == t ? null : (0, n.jsx)(a.xJW, {
     title: d.intl.string(d.t.LPJmLy),
     titleClassName: C.infoTitle,
@@ -54,9 +51,9 @@ function B(A) {
             }
           }), B.map(A => (0, n.jsx)(f.Z, {
             className: C.roleTooltipItem,
-            role: l[A],
+            role: A,
             guildId: e.guildId
-          }, A)), I && (0, n.jsx)(a.ua7, {
+          }, A.id)), I && (0, n.jsx)(a.ua7, {
             "aria-label": d.intl.string(d.t.ljnBlp),
             allowOverflow: !0,
             text: d.intl.string(d.t.ljnBlp),

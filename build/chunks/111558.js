@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   enableSwitch: "enableSwitch__3c9fa",
   divider: "divider__3c9fa",

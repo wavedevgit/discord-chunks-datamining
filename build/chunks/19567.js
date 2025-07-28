@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   header: "header__514d8",
   columns: "columns__514d8",

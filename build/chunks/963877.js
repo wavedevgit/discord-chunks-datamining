@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   listingNameColumn: "listingNameColumn__6ef11",
   paymentsCountColumn: "paymentsCountColumn__6ef11",

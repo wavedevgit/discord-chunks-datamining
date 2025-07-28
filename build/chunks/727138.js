@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   reasonContainer: "reasonContainer__958c7",
   background: "background__958c7",

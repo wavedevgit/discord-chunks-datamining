@@ -155,7 +155,7 @@ function V(e) {
             children: [(0, r.jsx)("div", {
               className: U.username,
               style: {
-                color: y
+                color: null != y ? y : void 0
               },
               children: (0, r.jsx)(g.Z, {
                 children: T
@@ -165,7 +165,7 @@ function V(e) {
             children: (0, r.jsx)(u.X6q, {
               variant: "text-md/semibold",
               style: {
-                color: y
+                color: null != y ? y : void 0
               },
               className: U.username,
               children: b.name

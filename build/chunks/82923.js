@@ -1,11 +1,10 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   Z: () => m
 }), n(388685);
 var r, i, l = n(748780);
 
-function s(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -14,14 +13,14 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 
-function a(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      s(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -38,7 +37,7 @@ class o {
     this.animation.stop()
   }
   constructor(e) {
-    s(this, "animation", void 0), this.animation = e
+    a(this, "animation", void 0), this.animation = e
   }
 }
 class c {
@@ -52,7 +51,7 @@ class c {
     this._map(e => e.stop())
   }
   constructor(e) {
-    s(this, "animations", void 0), this.animations = e
+    a(this, "animations", void 0), this.animations = e
   }
 }
 class d {
@@ -66,14 +65,14 @@ class d {
     this.stopped = !0, this.animations.map(e => e.stop())
   }
   constructor(e) {
-    s(this, "animations", void 0), s(this, "stopped", !1), this.animations = e
+    a(this, "animations", void 0), a(this, "stopped", !1), this.animations = e
   }
 }
 
 function u(e, t, n) {
-  return new o(n(e, a({}, t)))
+  return new o(n(e, s({}, t)))
 }
-let m = (r = a({}, l.Z), i = i = {
+let m = (r = s({}, l.Z), i = i = {
   timing: function(e, t) {
     return u(e, t, l.Z.timing)
   },

@@ -1,14 +1,13 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   Bd: () => i,
   I5: () => l,
-  tq: () => s,
-  uz: () => a,
+  tq: () => a,
+  uz: () => s,
   ye: () => r
 }), n(388685);
 let r = new Set(["Enter", "Tab"]),
   i = new Set(["z", "y"]),
   l = 5e3,
-  s = 100,
-  a = /[\n\t\r\f\v\x10]/
+  a = 100,
+  s = /[\n\t\r\f\v\x10]/

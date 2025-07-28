@@ -13,8 +13,8 @@ var r = n(255367),
   c = n(756715),
   u = n(573385),
   d = n(607070),
-  _ = n(865672),
-  f = n(109161),
+  f = n(865672),
+  _ = n(109161),
   p = n(827171);
 
 function h(e, t, n) {
@@ -78,9 +78,9 @@ function O(e) {
   let {
     roleStyle: t,
     name: n,
-    color: a,
+    colorString: a,
     roleName: l,
-    roleColors: c,
+    colorStrings: c,
     dotAlignment: d = "left",
     className: h,
     nameTextClassName: g,
@@ -94,13 +94,11 @@ function O(e) {
     gradientStyle: R,
     gradientClassname: P,
     gradientGlowClassname: w
-  } = (0, _.Ic)({
-    primaryColor: null == c ? void 0 : c.primaryColor,
-    secondaryColor: null == c ? void 0 : c.secondaryColor,
-    tertiaryColor: null == c ? void 0 : c.tertiaryColor,
+  } = (0, f.Ic)({
+    colorStrings: c,
     roleStyle: "username",
     animateGradient: E || O || (null == y ? void 0 : y.animate)
-  }), D = (0, _.EJ)(n), L = {
+  }), D = (0, f.EJ)(n), L = {
     className: o()(p.name, g, {
       [p.username]: S,
       [P]: C
@@ -109,7 +107,7 @@ function O(e) {
   }, x = {
     className: o()(p.nameGlow, w),
     children: n
-  }, M = A ? (0, r.jsx)(f.F, {
+  }, k = A ? (0, r.jsx)(_.F, {
     color: a,
     colors: N ? c : null,
     name: l,
@@ -120,7 +118,7 @@ function O(e) {
     className: o()(h, p.container),
     onMouseEnter: I,
     onMouseLeave: T,
-    children: ["left" === d && M, (0, r.jsxs)("span", {
+    children: ["left" === d && k, (0, r.jsxs)("span", {
       className: p.nameContainer,
       style: m({
         color: S && !N && null != a ? a : void 0
@@ -137,36 +135,36 @@ function O(e) {
       }, x)) : (0, r.jsx)("span", m({
         "aria-hidden": !0
       }, x)))]
-    }), "right" === d && M]
+    }), "right" === d && k]
   })
 }
 
 function v(e) {
   let {
     name: t,
-    color: n,
+    colorString: n,
     roleName: i,
     dotAlignment: a,
     className: o,
-    roleColors: s,
+    colorStrings: s,
     animateRoleGradient: u,
-    ref: _
-  } = e, f = b(e, ["name", "color", "roleName", "dotAlignment", "className", "roleColors", "animateRoleGradient", "ref"]), p = (0, l.e7)([d.Z], () => d.Z.roleStyle), h = "username" === p, g = (0, r.jsx)(O, {
+    ref: f
+  } = e, _ = b(e, ["name", "colorString", "roleName", "dotAlignment", "className", "colorStrings", "animateRoleGradient", "ref"]), p = (0, l.e7)([d.Z], () => d.Z.roleStyle), h = "username" === p, g = (0, r.jsx)(O, {
     roleStyle: p,
     name: t,
-    color: n,
+    colorString: n,
     roleName: i,
     dotAlignment: a,
     className: o,
-    roleColors: s,
+    colorStrings: s,
     animateRoleGradient: u
-  }), y = h ? {
+  }), y = h && null != n ? {
     color: n
   } : void 0;
-  return (0, r.jsx)(c.Anchor, E(m({}, f), {
+  return (0, r.jsx)(c.Anchor, E(m({}, _), {
     children: g,
     style: y,
-    ref: _
+    ref: f
   }))
 }
 

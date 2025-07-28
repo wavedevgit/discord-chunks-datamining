@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   heading: "heading__176c7",
   tier: "tier__176c7",

@@ -13,8 +13,8 @@ var r = n(933557),
   c = n(271383),
   u = n(485386),
   d = n(430824),
-  _ = n(594174),
-  f = n(483360),
+  f = n(594174),
+  _ = n(483360),
   p = n(709054),
   h = n(752305);
 
@@ -42,7 +42,7 @@ function g(e, t, n, r) {
 function E(e, t, n, r, i) {
   let [a, o] = e.slice(1).split("#", 2), l = null != t ? d.Z.getGuild(t) : null;
   if (i && null == o && null != l) {
-    for (let e of Object.values(u.Z.getRoles(l.id)))
+    for (let e of u.Z.getSortedRoles(l.id))
       if (a === e.name) return {
         type: "roleMention",
         roleId: e.id,
@@ -59,7 +59,7 @@ function E(e, t, n, r, i) {
         userId: t
       } = e;
       return t
-    })).map(e => _.default.getUser(e)).filter(e => void 0 !== e && b(a, o, e));
+    })).map(e => f.default.getUser(e)).filter(e => void 0 !== e && b(a, o, e));
     if (1 === r.length) {
       let e = r[0];
       if (b(a, o, e, {
@@ -96,7 +96,7 @@ function y(e, t) {
         text: ""
       }]
     };
-  for (let e of f.k1)
+  for (let e of _.k1)
     if (e !== l.sH) {
       for (let {
           channel: r

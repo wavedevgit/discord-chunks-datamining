@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   Z: () => p
 });
@@ -7,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(120356),
   l = n.n(i),
-  s = n(755721),
-  a = n(481060),
+  a = n(755721),
+  s = n(481060),
   o = n(100527),
   c = n(906732),
   d = n(678558),
@@ -20,15 +19,15 @@ let g = e => {
     analyticsLocation: n,
     className: i,
     buttonProps: l = {
-      color: s.Tt.BRAND_INVERTED,
+      color: a.Tt.BRAND_INVERTED,
       text: u.intl.string(u.t.oqweNz)
     }
   } = e, {
-    color: a,
+    color: s,
     text: o
   } = l, c = t.premiumTier + 1;
   return (0, r.jsx)(d.Z, {
-    color: a,
+    color: s,
     analyticsLocation: n,
     guild: t,
     buttonText: o,
@@ -41,12 +40,12 @@ function p(e) {
   let {
     header: t,
     text: i,
-    analyticsLocation: s,
+    analyticsLocation: a,
     guild: d,
     className: u,
     textColor: p,
-    headerColor: f,
-    buttonProps: h
+    headerColor: h,
+    buttonProps: f
   } = e, {
     analyticsLocations: x
   } = (0, c.ZP)(o.Z.GUILD_BOOSTING_UPSELL_BANNER);
@@ -60,12 +59,12 @@ function p(e) {
         src: n(322393)
       }), (0, r.jsxs)("div", {
         className: m.content,
-        children: [(0, r.jsx)(a.Text, {
+        children: [(0, r.jsx)(s.Text, {
           variant: "text-lg/semibold",
-          color: null != f ? f : "always-white",
+          color: null != h ? h : "always-white",
           className: m.header,
           children: t
-        }), (0, r.jsx)(a.Text, {
+        }), (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: null != p ? p : "always-white",
           children: i
@@ -74,9 +73,9 @@ function p(e) {
         className: m.ctaContainer,
         children: (0, r.jsx)(g, {
           guild: d,
-          analyticsLocation: s,
+          analyticsLocation: a,
           className: m.button,
-          buttonProps: h
+          buttonProps: f
         })
       })]
     })

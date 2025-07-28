@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 }), n(388685);
 var r = n(570140),
   i = n(147913),
@@ -66,4 +66,4 @@ class d extends i.Z {
     }), c(this, "rolloverTimeout", null), c(this, "refreshTimeout", null)
   }
 }
-let _ = new d
+let f = new d

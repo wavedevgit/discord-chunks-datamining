@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   upsellButton: "upsellButton__5abaa",
   editVanityUrlCard: "editVanityUrlCard__5abaa",

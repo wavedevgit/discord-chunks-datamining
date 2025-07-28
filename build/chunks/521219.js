@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   emptyRoles: "emptyRoles__5f97b",
   emptyRolesText: "emptyRolesText__5f97b",

@@ -1,6 +1,6 @@
 /** Chunk was on 16120 **/
 n.d(t, {
-  default: () => I
+  default: () => v
 });
 var r = n(255367),
   l = n(73800),
@@ -21,21 +21,21 @@ var r = n(255367),
   p = n(389052),
   m = n(158508),
   j = n(88966),
-  M = n(712301),
-  P = n(567711),
+  P = n(712301),
+  M = n(567711),
   S = n(358386),
   A = n(37258),
   Z = n(931617),
-  v = n(981631),
+  I = n(981631),
   N = n(388032);
-let I = (0, c.Z)((0, u.Z)(function(e) {
+let v = (0, c.Z)((0, u.Z)(function(e) {
   var t;
   let {
     user: n,
     guildId: u,
     channelId: c,
-    context: v,
-    onSelect: I,
+    context: I,
+    onSelect: v,
     moderationAlertId: h,
     analyticsLocation: T,
     analyticsLocations: D,
@@ -55,12 +55,12 @@ let I = (0, c.Z)((0, u.Z)(function(e) {
     userId: n.id,
     guildId: u,
     sourceAnalyticsLocations: D
-  }), K = (0, j.Z)(n.id, v), F = (0, E.Z)({
+  }), K = (0, j.Z)(n.id, I), F = (0, E.Z)({
     guildId: u,
     userId: n.id,
     analyticsLocation: null != T ? T : L.location,
     analyticsLocations: [w],
-    context: v
+    context: I
   }), V = (0, p.Z)({
     user: n,
     guildId: u,
@@ -71,18 +71,18 @@ let I = (0, c.Z)((0, u.Z)(function(e) {
     guildId: u,
     location: w,
     channelId: c
-  }), Y = (0, _.Z)(n, u, null != c ? c : G, w), H = (0, P.Z)(c, h), Q = (0, S.Z)(n, u), X = (0, Z.Z)(n.id, u, !1, w), J = (0, O.Z)({
+  }), Y = (0, _.Z)(n, u, null != c ? c : G, w), H = (0, M.Z)(c, h), Q = (0, S.Z)(n, u), X = (0, Z.Z)(n.id, u, !1, w), J = (0, O.Z)({
     id: n.id,
     label: N.intl.string(N.t["/AXYnJ"]),
     onSuccess: k
-  }), z = (0, M.Z)(n, u), $ = !!(null == n ? void 0 : n.isNonUserBot());
+  }), z = (0, P.Z)(n, u), $ = !!(null == n ? void 0 : n.isNonUserBot());
   return (0, r.jsxs)(a.v2r, {
     navId: "user-context",
     onClose: () => {
       (0, o.Zy)(), null == C || C()
     },
     "aria-label": N.intl.string(N.t.liqwPD),
-    onSelect: I,
+    onSelect: v,
     children: [!$ && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)(a.kSQ, {
         children: [q, K]
@@ -102,5 +102,5 @@ let I = (0, c.Z)((0, u.Z)(function(e) {
     })]
   })
 }, {
-  object: v.qAy.CONTEXT_MENU
+  object: I.qAy.CONTEXT_MENU
 }), [d.Z.CONTEXT_MENU, d.Z.GUILD_MODERATION_USER_MENU])

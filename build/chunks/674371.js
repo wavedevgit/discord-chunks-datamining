@@ -1,6 +1,6 @@
-/** Chunk was on 94312 **/
+/** Chunk was on 1806 **/
 "use strict";
-var r = n(710985).start;
-e.exports = n(530807)("trimStart") ? function() {
-  return r(this)
+var n = f(710985).start;
+u.exports = f(530807)("trimStart") ? function() {
+  return n(this)
 } : "".trimStart

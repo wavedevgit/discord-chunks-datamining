@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   hH: () => g,
   xl: () => p,
@@ -8,8 +7,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(906732),
-  s = n(807582),
-  a = n(949640),
+  a = n(807582),
+  s = n(949640),
   o = n(981631),
   c = n(30513),
   d = n(187561);
@@ -25,7 +24,7 @@ function u(e) {
   } = e, {
     analyticsLocations: g
   } = (0, l.ZP)(), p = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), (0, a.E6)({
+    e.preventDefault(), e.stopPropagation(), (0, s.E6)({
       guild: t,
       analyticsLocations: g,
       analyticsSection: o,
@@ -34,7 +33,7 @@ function u(e) {
       targetPremiumGuildTier: m
     })
   }, [g, c, o, t, u, m]);
-  return (0, r.jsx)(s.Z, {
+  return (0, r.jsx)(a.Z, {
     guild: t,
     guildFeature: n,
     className: d.guildFeatureAvailabilityIndicator,

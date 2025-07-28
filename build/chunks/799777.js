@@ -19,14 +19,14 @@ function d(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let _ = "GameLibraryViewStore",
-  f = 200,
+let f = "GameLibraryViewStore",
+  _ = 200,
   p = u.sHY.ASCENDING,
   h = u.iEv.LAST_PLAYED,
   m = !1,
   g = o().debounce(() => {
     m = !1, O.emitChange()
-  }, f);
+  }, _);
 
 function E(e) {
   let {
@@ -41,7 +41,7 @@ function b(e) {
     direction: t,
     key: n
   } = e;
-  p = t, h = n, l.K.set(_, {
+  p = t, h = n, l.K.set(f, {
     sortDirection: p,
     sortKey: h
   })
@@ -49,7 +49,7 @@ function b(e) {
 class y extends(i = s.ZP.Store) {
   initialize() {
     var e;
-    let t = null != (e = l.K.get(_)) ? e : {};
+    let t = null != (e = l.K.get(f)) ? e : {};
     null != t.sortDirection && null != t.sortKey && (p = t.sortDirection, h = t.sortKey)
   }
   get sortDirection() {

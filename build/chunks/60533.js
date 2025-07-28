@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   Z: () => u
 });
@@ -7,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(442837),
   l = n(481060),
-  s = n(90815),
-  a = n(601964),
+  a = n(90815),
+  s = n(601964),
   o = n(594174),
   c = n(388032),
   d = n(675968);
@@ -18,9 +17,9 @@ function u(e) {
     guild: t
   } = e, n = (0, i.e7)([o.default], () => {
     let e = o.default.getCurrentUser();
-    return (0, a.eM)(t, e)
+    return (0, s.eM)(t, e)
   }), u = () => {
-    (0, s.q)(t.id, {
+    (0, a.q)(t.id, {
       demonetized: !0
     })
   };

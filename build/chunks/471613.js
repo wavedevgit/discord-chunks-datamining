@@ -1,16 +1,15 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   Z: () => p
 });
-var r, i, l, s = n(442837),
-  a = n(570140),
+var r, i, l, a = n(442837),
+  s = n(570140),
   o = n(40572),
   c = n(914010);
 let d = {},
   u = {},
   m = 0;
-class g extends(l = s.ZP.Store) {
+class g extends(l = a.ZP.Store) {
   initialize() {
     this.waitFor(c.Z)
   }
@@ -31,7 +30,7 @@ i = "GuildSettingsEmojiStore", (r = "displayName") in g ? Object.defineProperty(
   configurable: !0,
   writable: !0
 }) : g[r] = i;
-let p = new g(a.Z, {
+let p = new g(s.Z, {
   EMOJI_DELETE: function(e) {
     let {
       guildId: t,

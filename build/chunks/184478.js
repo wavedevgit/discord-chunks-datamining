@@ -17,8 +17,8 @@ var o = n(793030),
   f = n(767218),
   _ = n(981631),
   x = n(93841),
-  v = n(388032),
-  g = n(466649);
+  g = n(388032),
+  v = n(466649);
 
 function b(e) {
   let {
@@ -29,22 +29,22 @@ function b(e) {
     total: E
   } = (0, p.Z)(t);
   if (null != n) return (0, r.jsxs)("div", {
-    className: g.container,
+    className: v.container,
     children: [(0, r.jsxs)("div", {
-      className: g.headerContainer,
+      className: v.headerContainer,
       children: [(0, r.jsx)(o.xv, {
         variant: "eyebrow",
         color: "text-secondary",
-        children: v.intl.string(x.default.hjvcLC)
+        children: g.intl.string(x.default.hjvcLC)
       }), (0, r.jsx)(o.xv, {
-        className: g.learnMore,
+        className: v.learnMore,
         variant: "text-xs/semibold",
-        children: v.intl.format(x.default.fXE30d, {
+        children: g.intl.format(x.default.fXE30d, {
           helpDeskArticle: d.Z.getArticleURL(_.BhN.GUILD_BOOSTING_FAQ)
         })
       })]
     }), (0, r.jsxs)("div", {
-      className: g.contentContainer,
+      className: v.contentContainer,
       children: [(0, r.jsx)(f.Z, {
         count: b,
         type: f.b.AVAILABLE
@@ -56,7 +56,7 @@ function b(e) {
         type: f.b.TOTAL
       })]
     }), (0, r.jsx)(a.Z, {
-      className: g.boostButton,
+      className: v.boostButton,
       guild: n,
       analyticsLocation: {
         page: _.ZY5.GUILD_POWERUPS_OVERVIEW,
@@ -66,7 +66,7 @@ function b(e) {
       size: l.Ph.LARGE,
       intent: c.P.NONE,
       icon: (0, r.jsx)(s.$Eu, {
-        className: g.boostButtonIcon,
+        className: v.boostButtonIcon,
         size: "sm",
         color: s.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
       })

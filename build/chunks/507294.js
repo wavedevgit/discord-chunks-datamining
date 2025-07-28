@@ -19,8 +19,8 @@ var l = r(255367),
   b = r(367907),
   m = r(313201),
   g = r(598077),
-  v = r(314897),
-  h = r(271383),
+  h = r(314897),
+  v = r(271383),
   O = r(485386),
   j = r(626135),
   _ = r(63063),
@@ -29,9 +29,9 @@ var l = r(255367),
   w = r(981631),
   P = r(388032),
   E = r(739587),
-  C = r(472840);
+  S = r(472840);
 
-function S(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       l = Object.keys(r);
@@ -55,7 +55,7 @@ function A(e, t) {
     let {
       default: n
     } = await Promise.all([r.e("82412"), r.e("80993")]).then(r.bind(r, 107807));
-    return r => (0, l.jsx)(n, S({
+    return r => (0, l.jsx)(n, C({
       role: e,
       guildId: t
     }, r))
@@ -66,9 +66,9 @@ let k = function(e) {
     guildId: t,
     transitionState: i,
     onClose: k
-  } = e, T = (0, s.e7)([O.Z], () => O.Z.getRoles(t)), D = (0, s.e7)([v.default], () => v.default.getId()), Z = (0, s.e7)([h.ZP], () => h.ZP.getMember(t, D)), [I, J] = n.useState([]), H = (0, p.ZP)(), W = (0, m.Dt)();
+  } = e, T = (0, s.e7)([O.Z], () => O.Z.getSortedRoles(t)), D = (0, s.e7)([h.default], () => h.default.getId()), Z = (0, s.e7)([v.ZP], () => v.ZP.getMember(t, D)), [I, J] = n.useState([]), H = (0, p.ZP)(), W = (0, m.Dt)();
   if (n.useEffect(() => {
-      0 !== I.length && j.default.track(w.rMx.PASSPORT_ENTRY_VIEWED, S({
+      0 !== I.length && j.default.track(w.rMx.PASSPORT_ENTRY_VIEWED, C({
         role_ids: I.map(e => {
           let {
             role_id: t
@@ -79,10 +79,7 @@ let k = function(e) {
     }, [t, I]), n.useEffect(() => {
       d.Z.getGuildRoleConnectionsConfigurations(t).then(e => J(e))
     }, [t]), null == Z) return null;
-  let L = Object.values(T).filter(e => {
-    var t;
-    return (null == (t = e.tags) ? void 0 : t.guild_connections) === null
-  });
+  let L = T.filter(e => null === e.tags.guild_connections);
   return (0, l.jsxs)(f.Y0X, {
     transitionState: i,
     "aria-labelledby": W,
@@ -131,14 +128,14 @@ let k = function(e) {
                   a = (null == n ? void 0 : n.bot) != null ? (0, l.jsx)("img", {
                     src: new g.Z(n.bot).getAvatarURL(t, 24),
                     alt: "",
-                    className: o()(E.botAvatar, C.avatar)
+                    className: o()(E.botAvatar, S.avatar)
                   }) : null
                 } else {
                   let t = x.Z.get(e.connection_type);
                   a = (0, l.jsx)("img", {
                     src: (0, c.ap)(H) ? t.icon.lightSVG : t.icon.darkSVG,
                     alt: "",
-                    className: C.avatar
+                    className: S.avatar
                   })
                 }
                 null != a && (n["".concat(e.connection_type, ":").concat(e.application_id)] = a)
@@ -156,7 +153,7 @@ let k = function(e) {
                 } = await r.e("60079").then(r.bind(r, 850902));
                 return r => {
                   var n, o;
-                  return (0, l.jsx)(e, (n = S({}, r), o = o = {
+                  return (0, l.jsx)(e, (n = C({}, r), o = o = {
                     roleId: i,
                     onLeaveRole: () => d.Z.unassignGuildRoleConnection(t, i)
                   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {

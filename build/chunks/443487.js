@@ -17,8 +17,8 @@ var i = n(120356),
   c = n(884902),
   u = n(271383),
   d = n(485386),
-  _ = n(594174),
-  f = n(5192),
+  f = n(594174),
+  _ = n(5192),
   p = n(192918),
   h = n(388032),
   m = n(522314);
@@ -83,50 +83,51 @@ function y(e) {
 }
 
 function O(e) {
+  var t;
   let {
-    guildId: t,
-    channelId: n,
-    entry: i,
-    maxAvatars: a = 3
-  } = e, l = i.author_id, g = (0, o.e7)([_.default], () => _.default.getUser(l)), {
-    displayParticipants: E,
-    participant1: b,
-    participant2: O,
-    numOtherParticipants: v
-  } = (0, p.Z)(i, a), I = (0, o.e7)([u.ZP], () => u.ZP.getMember(t, l)), T = (0, o.e7)([d.Z], () => {
+    guildId: n,
+    channelId: i,
+    entry: a,
+    maxAvatars: l = 3
+  } = e, g = a.author_id, E = (0, o.e7)([f.default], () => f.default.getUser(g)), {
+    displayParticipants: b,
+    participant1: O,
+    participant2: v,
+    numOtherParticipants: I
+  } = (0, p.Z)(a, l), T = (0, o.e7)([u.ZP], () => u.ZP.getMember(n, g)), S = (0, o.e7)([d.Z], () => {
     var e;
-    return (null == I ? void 0 : I.colorRoleId) != null ? null == (e = d.Z.getRole(t, I.colorRoleId)) ? void 0 : e.name : void 0
-  }, [t, I]), S = (0, c.X7)(t, l, null == I ? void 0 : I.colorStrings);
-  if (null == g) return null;
-  let A = null == I ? void 0 : I.colorString,
-    N = f.ZP.getName(t, n, g);
+    return (null == T ? void 0 : T.colorRoleId) != null ? null == (e = d.Z.getRole(n, T.colorRoleId)) ? void 0 : e.name : void 0
+  }, [n, T]), A = (0, c.X7)(n, g, null != (t = null == T ? void 0 : T.colorStrings) ? t : null);
+  if (null == E) return null;
+  let N = null == T ? void 0 : T.colorString,
+    C = _.ZP.getName(n, i, E);
   return (0, r.jsxs)("div", {
     className: m.userSection,
     children: [(0, r.jsx)(y, {
-      users: E,
-      guildId: t,
+      users: b,
+      guildId: n,
       "aria-hidden": !0
     }), (0, r.jsx)(s.PUh, {
-      color: null != A ? A : void 0,
-      roleName: T,
-      roleColors: S,
-      name: N,
+      colorString: null != N ? N : null,
+      roleName: S,
+      colorStrings: A,
+      name: C,
       className: m.userName,
       "aria-hidden": !0
-    }), v > 0 ? (0, r.jsx)("div", {
+    }), I > 0 ? (0, r.jsx)("div", {
       className: m.additionalParticipantBadge,
       "aria-hidden": !0,
       children: (0, r.jsxs)(s.Text, {
         variant: "text-xxs/medium",
         color: "text-default",
         className: m.additionalParticipantBadgeText,
-        children: ["+", v]
+        children: ["+", I]
       })
     }) : null, (0, r.jsx)(s.nn4, {
       children: h.intl.format(h.t.rH95Gh, {
-        user0: f.ZP.getName(t, n, b),
-        user1: f.ZP.getName(t, n, O),
-        countOthers: v,
+        user0: _.ZP.getName(n, i, O),
+        user1: _.ZP.getName(n, i, v),
+        countOthers: I,
         name0Hook: (e, t) => (0, r.jsx)("span", {
           children: e
         }, t),

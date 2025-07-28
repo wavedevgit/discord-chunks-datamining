@@ -1,14 +1,13 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   R: () => o
 });
 var r = n(255367),
   i = n(73800),
   l = n(690221),
-  s = n(431516);
+  a = n(431516);
 
-function a(e) {
+function s(e) {
   return e
 }
 
@@ -19,11 +18,11 @@ function o(e) {
   } = e, {
     isUserMFAEnabled: o,
     isModerationMFAEnabled: c
-  } = (0, s.N)(), d = i.useCallback(async () => {
+  } = (0, a.N)(), d = i.useCallback(async () => {
     await t(), null == n || n()
   }, [t, n]), u = i.useCallback(e => (0, r.jsx)(l.Z, {
     onClick: d,
     children: e
   }), [d]);
-  return o && c ? a : u
+  return o && c ? s : u
 }

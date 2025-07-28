@@ -13,8 +13,8 @@ var r = n(255367),
   c = n(596454),
   u = n(367907),
   d = n(255963),
-  _ = n(626135),
-  f = n(183023),
+  f = n(626135),
+  _ = n(183023),
   p = n(524444),
   h = n(981631),
   m = n(185923),
@@ -67,7 +67,7 @@ let I = e => {
       enableClick: s = !0,
       channelId: u,
       messageId: d
-    } = e, _ = i.useRef(null), h = null == (t = n.originalMatch) ? void 0 : t[0], m = null != h ? h : n.name, [g, b] = i.useState(!1), O = e => (0, r.jsx)(c.Z, v(y({}, e), {
+    } = e, f = i.useRef(null), h = null == (t = n.originalMatch) ? void 0 : t[0], m = null != h ? h : n.name, [g, b] = i.useState(!1), O = e => (0, r.jsx)(c.Z, v(y({}, e), {
       emojiName: n.name,
       size: n.jumboable ? "jumbo" : "default",
       src: n.src,
@@ -88,7 +88,7 @@ let I = e => {
         })
       },
       children: t => (0, r.jsx)(l.P3F, v(y({}, e), {
-        innerRef: _,
+        innerRef: f,
         tag: "span",
         onClick: t => {
           var n;
@@ -102,7 +102,7 @@ let I = e => {
       }))
     }));
     if (!s) return I();
-    let T = e => (0, r.jsx)(f.Az, v(y({}, e), {
+    let T = e => (0, r.jsx)(_.Az, v(y({}, e), {
       node: n
     }));
     return (0, r.jsx)(l.yRy, {
@@ -115,7 +115,7 @@ let I = e => {
         b(!1)
       },
       renderPopout: T,
-      targetElementRef: _,
+      targetElementRef: f,
       children: I
     })
   },
@@ -162,7 +162,7 @@ let I = e => {
           A(!1), C(!0), null == e || null == (n = e.onClick) || n.call(e, t)
         } : void 0,
         onMouseLeave: () => {
-          T && (_.default.track(h.rMx.CLOSE_POPOUT, {
+          T && (f.default.track(h.rMx.CLOSE_POPOUT, {
             nonce: w
           }), A(!1))
         },
@@ -175,7 +175,7 @@ let I = e => {
       }))
     }));
     if (!u) return D();
-    let L = e => (0, r.jsx)(f.vk, v(y({}, e), {
+    let L = e => (0, r.jsx)(_.vk, v(y({}, e), {
       node: t,
       refreshPositionKey: () => I(String(Date.now())),
       nonce: w
@@ -184,7 +184,7 @@ let I = e => {
       animation: l.yRy.Animation.FADE,
       align: "center",
       onRequestClose: () => {
-        _.default.track(h.rMx.CLOSE_POPOUT, {
+        f.default.track(h.rMx.CLOSE_POPOUT, {
           nonce: w
         }), A(!1), C(!1)
       },

@@ -9,9 +9,9 @@ var r = n(255367);
 n(73800);
 var i = n(481060),
   l = n(273504),
-  o = n(388032);
+  a = n(388032);
 
-function a(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -52,7 +52,7 @@ function s(e) {
         } = await n.e("94005").then(n.bind(n, 144462));
         return n => {
           var l;
-          return (0, r.jsx)(i, c(a({
+          return (0, r.jsx)(i, c(o({
             initialCustomMessage: null != (l = t.metadata.customMessage) ? l : "",
             onSubmit: r => {
               t.metadata.customMessage = r, e(t), n.onClose()
@@ -63,55 +63,55 @@ function s(e) {
         }
       })
     }),
-    [l.jj.FLAG_TO_CHANNEL]: (t, o) => new Promise(s => {
+    [l.jj.FLAG_TO_CHANNEL]: (t, a) => new Promise(s => {
       (0, i.ZDy)(async () => {
         let {
           default: i
         } = await n.e("74543").then(n.bind(n, 643611)), u = t.actions.find(e => e.type === l.jj.FLAG_TO_CHANNEL);
-        return n => (0, r.jsx)(i, c(a({
-          action: o,
+        return n => (0, r.jsx)(i, c(o({
+          action: a,
           isEdit: null != u,
           triggerType: t.triggerType,
           guildId: e,
           onEditChannel: e => {
-            o.metadata.channelId = e, t.exemptChannels.add(e), s(o), n.onClose()
+            a.metadata.channelId = e, t.exemptChannels.add(e), s(a), n.onClose()
           }
         }, n), {
           onClose: () => (s(null), n.onClose())
         }))
       })
     }),
-    [l.jj.USER_COMMUNICATION_DISABLED]: (e, t) => new Promise(o => {
+    [l.jj.USER_COMMUNICATION_DISABLED]: (e, t) => new Promise(a => {
       (0, i.ZDy)(async () => {
         let {
           default: i
         } = await n.e("78273").then(n.bind(n, 41767)), s = e.actions.find(e => e.type === l.jj.USER_COMMUNICATION_DISABLED);
-        return n => (0, r.jsx)(i, c(a({
+        return n => (0, r.jsx)(i, c(o({
           action: t,
           isEdit: null != s,
           triggerType: e.triggerType,
           onUpdateDuration: e => {
-            null != e && (t.metadata.durationSeconds = e), o(t), n.onClose()
+            null != e && (t.metadata.durationSeconds = e), a(t), n.onClose()
           }
         }, n), {
-          onClose: () => (o(null), n.onClose())
+          onClose: () => (a(null), n.onClose())
         }))
       })
     })
   }
 }
 
-function u(e, t, l, o) {
+function u(e, t, l, a) {
   (0, i.ZDy)(async () => {
     let {
       default: i
     } = await n.e("37483").then(n.bind(n, 241046));
-    return n => (0, r.jsx)(i, c(a({}, n), {
+    return n => (0, r.jsx)(i, c(o({}, n), {
       automodDecision: {
         messageId: e,
         messageContent: t,
         decisionId: l,
-        channel: o
+        channel: a
       }
     }))
   })
@@ -122,7 +122,7 @@ function d(e, t) {
     let {
       default: i
     } = await n.e("28382").then(n.bind(n, 537623));
-    return n => (0, r.jsx)(i, c(a({}, n), {
+    return n => (0, r.jsx)(i, c(o({}, n), {
       messageId: e,
       guildId: t
     }))
@@ -130,15 +130,15 @@ function d(e, t) {
 }
 
 function _(e) {
-  (0, i.h7j)(t => (0, r.jsx)(i.ConfirmModal, c(a({
-    header: o.intl.string(o.t.wLGrjI),
-    confirmText: o.intl.string(o.t["cY+Ooa"]),
+  (0, i.h7j)(t => (0, r.jsx)(i.ConfirmModal, c(o({
+    header: a.intl.string(a.t.wLGrjI),
+    confirmText: a.intl.string(a.t["cY+Ooa"]),
     onConfirm: e,
-    cancelText: o.intl.string(o.t["ETE/oK"])
+    cancelText: a.intl.string(a.t["ETE/oK"])
   }, t), {
     children: (0, r.jsx)(i.Text, {
       variant: "text-md/normal",
-      children: o.intl.string(o.t.arYQ2d)
+      children: a.intl.string(a.t.arYQ2d)
     })
   })))
 }

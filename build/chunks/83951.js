@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   content: "content_dbba93",
   spinner: "spinner_dbba93",

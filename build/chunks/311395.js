@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 }), n(314940);
 var r = n(73800),
   i = n(278074),
@@ -12,7 +12,7 @@ var r = n(73800),
   c = n(884697),
   u = n(981631),
   d = n(474936);
-let _ = e => {
+let f = e => {
   let t = (0, o.e7)([l.Z], () => l.Z.products);
   return (0, r.useCallback)(n => {
     let {

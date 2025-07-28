@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => f,
-  o: () => _
+  Z: () => _,
+  o: () => f
 }), n(388685);
 var r = n(392711),
   i = n.n(r),
@@ -13,7 +13,7 @@ var r = n(392711),
   c = n(804739),
   u = n(981631);
 let d = 50;
-async function _() {
+async function f() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : l.Z.entitledBranchIds;
   if (!(0, c.Q)() || 0 === e.length) return [];
   let t = i().chunk(e, d);
@@ -39,7 +39,7 @@ async function _() {
     }), []
   }
 }
-async function f(e) {
+async function _(e) {
   try {
     let t = await a.tn.get({
         url: u.ANM.OWNED_APPLICATION_BRANCHES(e),

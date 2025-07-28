@@ -1,14 +1,13 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
-  Z: () => s
+  Z: () => a
 });
 var r = n(255367);
 n(73800);
 var i = n(481060),
   l = n(86055);
 
-function s(e) {
+function a(e) {
   let {
     children: t
   } = e;

@@ -1,22 +1,21 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   Z: () => U
 }), n(388685), n(953529), n(781311), n(539854);
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  s = n.n(l),
-  a = n(348327),
-  o = n.n(a),
+  a = n.n(l),
+  s = n(348327),
+  o = n.n(s),
   c = n(562075),
   d = n(539202),
   u = n(442837),
   m = n(481060),
   g = n(239091),
   p = n(596454),
-  f = n(493773),
-  h = n(607070),
+  h = n(493773),
+  f = n(607070),
   x = n(933557),
   b = n(471445),
   j = n(339085),
@@ -72,10 +71,10 @@ let M = "WELCOME_CHANNEL",
   G = e => {
     var t;
     let l, {
-        guildId: a,
+        guildId: s,
         welcomeChannel: o,
-        onEdit: f,
-        onChannelReorder: h,
+        onEdit: h,
+        onChannelReorder: f,
         isDropHovered: v,
         index: _
       } = e,
@@ -93,16 +92,16 @@ let M = "WELCOME_CHANNEL",
           index: _
         },
         end: (e, t) => {
-          null == e || t.didDrop() || h(e.channel, null, !0)
+          null == e || t.didDrop() || f(e.channel, null, !0)
         }
       }),
       [, F] = (0, d.L)({
         accept: M,
         hover: e => {
-          h(e.channel, _, !1)
+          f(e.channel, _, !1)
         },
         drop: e => {
-          h(e.channel, _, !0)
+          f(e.channel, _, !0)
         }
       });
     return i.useLayoutEffect(() => (B(F(C)), () => {
@@ -120,7 +119,7 @@ let M = "WELCOME_CHANNEL",
       height: 24,
       className: A.warningIcon
     }), (0, r.jsxs)("div", {
-      className: s()(A.welcomeChannel, {
+      className: a()(A.welcomeChannel, {
         [A.dragging]: v
       }),
       ref: C,
@@ -131,11 +130,11 @@ let M = "WELCOME_CHANNEL",
             default: e
           } = await n.e("68535").then(n.bind(n, 602320));
           return t => (0, r.jsx)(e, L(k({}, t), {
-            guildId: a,
+            guildId: s,
             welcomeChannel: o,
-            onChannelReorder: h,
+            onChannelReorder: f,
             setShowConfirmModal: y,
-            onEdit: f,
+            onEdit: h,
             index: _
           }))
         })
@@ -169,14 +168,14 @@ let M = "WELCOME_CHANNEL",
           } = await n.e("39143").then(n.bind(n, 737868));
           return t => (0, r.jsx)(e, L(k({}, t), {
             welcomeChannel: o,
-            guildId: a,
-            onSave: f
+            guildId: s,
+            onSave: h
           }))
         }, {
           onCloseRequest: () => Z.Vq
         })
       }), O && (0, r.jsx)(N.Z, {
-        onConfirm: () => f(),
+        onConfirm: () => h(),
         onCancel: () => y(!1),
         channelId: o.channel_id
       })]
@@ -187,22 +186,22 @@ let M = "WELCOME_CHANNEL",
       guild: t,
       showCreateModal: l
     } = e, {
-      welcomeSettings: s,
-      originalWelcomeSettings: a
-    } = (0, u.e7)([C.Z], () => C.Z.getSettingsProps()), c = (0, u.e7)([h.Z], () => h.Z.useReducedMotion), [d, g] = i.useState(null), [p, x] = i.useState(!1), [b, j] = i.useState(!1), {
+      welcomeSettings: a,
+      originalWelcomeSettings: s
+    } = (0, u.e7)([C.Z], () => C.Z.getSettingsProps()), c = (0, u.e7)([f.Z], () => f.Z.useReducedMotion), [d, g] = i.useState(null), [p, x] = i.useState(!1), [b, j] = i.useState(!1), {
       description: N,
       channels: I,
       enabled: T
-    } = s, M = () => {
-      null != t && N !== a.description && ((0, y.Es)(t.id, {
+    } = a, M = () => {
+      null != t && N !== s.description && ((0, y.Es)(t.id, {
         description: null == N ? void 0 : N.trim()
       }), x(!0))
     }, U = e => {
-      null != t && (o()(e, a.channels) || ((0, y.Es)(t.id, {
+      null != t && (o()(e, s.channels) || ((0, y.Es)(t.id, {
         channels: e
       }), x(!0)))
     }, B = e => {
-      null != t && e !== a.enabled && ((0, y.Es)(t.id, {
+      null != t && e !== s.enabled && ((0, y.Es)(t.id, {
         enabled: e
       }), j(!c), x(!0))
     }, F = e => {
@@ -226,7 +225,7 @@ let M = "WELCOME_CHANNEL",
         channels: i
       })), n ? (U(i), g(null)) : g(t)
     }, W = i.useRef(!1);
-    (0, f.ZP)(() => (null != t && l && (0, m.ZDy)(async () => {
+    (0, h.ZP)(() => (null != t && l && (0, m.ZDy)(async () => {
       let {
         default: e
       } = await n.e("39143").then(n.bind(n, 737868));

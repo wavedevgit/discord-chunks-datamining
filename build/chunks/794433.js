@@ -10,8 +10,8 @@ var r, n, o = l(255367),
   u = l(481060),
   c = l(565138),
   E = l(981631),
-  d = l(388032),
-  S = l(910788);
+  S = l(388032),
+  d = l(910788);
 
 function g(e, t, l) {
   return t in e ? Object.defineProperty(e, t, {
@@ -22,9 +22,9 @@ function g(e, t, l) {
   }) : e[t] = l, e
 }
 let _ = Object.freeze({
-  SMALL: S.small,
-  MEDIUM: S.medium,
-  LARGE: S.large
+  SMALL: d.small,
+  MEDIUM: d.medium,
+  LARGE: d.large
 });
 var p = ((n = {}).MEMBER = "MEMBER", n.ROLE = "ROLE", n.CHANNEL = "CHANNEL", n.GUILD = "GUILD", n.USER = "USER", n);
 class f extends(r = i.Component) {
@@ -107,8 +107,8 @@ class f extends(r = i.Component) {
     if (null != u) switch (e.keyCode) {
       case E.yXg.BACKSPACE:
         if ((null == i || 0 === i.length) && null != a && a.length > 0) {
-          var c, d;
-          e.preventDefault(), e.stopPropagation(), null == (c = (d = this.props).onRemoveTag) || c.call(d, a.length - 1)
+          var c, S;
+          e.preventDefault(), e.stopPropagation(), null == (c = (S = this.props).onRemoveTag) || c.call(S, a.length - 1)
         }
         break;
       case E.yXg.ARROW_DOWN:
@@ -128,7 +128,7 @@ class f extends(r = i.Component) {
     let {
       autoFocus: e,
       query: t,
-      placeholder: l = d.intl.string(d.t.LzcpeX),
+      placeholder: l = S.intl.string(S.t.LzcpeX),
       themeOverride: r,
       disabled: n,
       size: i,
@@ -143,23 +143,23 @@ class f extends(r = i.Component) {
       focusProps: {
         offset: 4
       },
-      className: S.tag,
+      className: d.tag,
       onClick: this.handleRemoveTag.bind(this, t),
       children: [e, (0, o.jsx)(u.Dio, {
         size: "md",
         color: "currentColor",
-        className: S.close,
-        "aria-label": d.intl.string(d.t.N86XcH)
+        className: d.close,
+        "aria-label": S.intl.string(S.t.N86XcH)
       })]
     }, t))) : (I = !0, E.forEach((e, t) => R.push((0, o.jsxs)(u.eee, {
-      className: s()(S.tag, S.richTag),
+      className: s()(d.tag, d.richTag),
       onClick: this.handleRemoveTag.bind(this, t),
       children: [("MEMBER" === e.type || "USER" === e.type) && null != e.avatar && (0, o.jsx)(u.qEK, {
         src: e.avatar,
         "aria-hidden": !0,
         size: u.EFr.SIZE_16
       }), "ROLE" === e.type && null != e.color && (0, o.jsx)("span", {
-        className: S.tagRoleColor,
+        className: d.tagRoleColor,
         style: {
           backgroundColor: e.color
         }
@@ -168,13 +168,13 @@ class f extends(r = i.Component) {
         active: !0,
         size: c.Z.Sizes.SMOL
       }), (0, o.jsx)("span", {
-        className: S.tagLabel,
+        className: d.tagLabel,
         children: e.label
       }), (0, o.jsx)(u.Dio, {
         size: "md",
         color: "currentColor",
-        className: S.close,
-        "aria-label": d.intl.string(d.t.N86XcH)
+        className: d.close,
+        "aria-label": S.intl.string(S.t.N86XcH)
       })]
     }, t))))), (0, o.jsx)(u.tEY, {
       focusTarget: this.ref,
@@ -183,11 +183,11 @@ class f extends(r = i.Component) {
         theme: r,
         children: r => (0, o.jsx)("div", {
           ref: this.containerRef,
-          className: s()(p, S.container, i, r, {
-            [S.disabled]: n
+          className: s()(p, d.container, i, r, {
+            [d.disabled]: n
           }),
           children: (0, o.jsxs)(u.zJl, {
-            className: S.inner,
+            className: d.inner,
             style: {
               maxHeight: a
             },
@@ -203,8 +203,8 @@ class f extends(r = i.Component) {
               }
               return e
             }({
-              className: s()(S.input, {
-                [S.richTagInput]: I
+              className: s()(d.input, {
+                [d.richTagInput]: I
               }),
               type: "text",
               ref: this.ref,

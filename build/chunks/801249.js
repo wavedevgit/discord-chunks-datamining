@@ -4,9 +4,9 @@ n.d(t, {
   Z: () => u
 });
 var i, l = n(442837),
-  o = n(570140);
+  a = n(570140);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -29,8 +29,8 @@ class s extends(i = l.ZP.DeviceSettingsStore) {
     return r.lastGuildDismissedTime[e]
   }
 }
-a(s, "displayName", "ApplicationSubscriptionChannelNoticeStore"), a(s, "persistKey", "ApplicationSubscriptionChannelNoticeStore");
-let u = new s(o.Z, {
+o(s, "displayName", "ApplicationSubscriptionChannelNoticeStore"), o(s, "persistKey", "ApplicationSubscriptionChannelNoticeStore");
+let u = new s(a.Z, {
   APPLICATION_SUBSCRIPTIONS_CHANNEL_NOTICE_DISMISSED: function(e) {
     let {
       guildId: t

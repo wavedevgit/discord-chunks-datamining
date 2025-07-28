@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(998698),
   u = n(117530),
   d = n(459273),
-  _ = n(585483),
-  f = n(541716),
+  f = n(585483),
+  _ = n(541716),
   p = n(91313),
   h = n(53529),
   m = n(288897),
@@ -39,8 +39,8 @@ let L = i.forwardRef(function(e, t) {
     type: a,
     channel: L,
     className: x,
-    id: M,
-    disabled: k,
+    id: k,
+    disabled: M,
     submitting: j,
     placeholder: U,
     required: G,
@@ -70,17 +70,17 @@ let L = i.forwardRef(function(e, t) {
     "aria-activedescendant": ec,
     "aria-controls": eu,
     "aria-invalid": ed,
-    "aria-describedby": e_,
-    "aria-labelledby": ef,
+    "aria-describedby": ef,
+    "aria-labelledby": e_,
     "aria-autocomplete": ep
-  } = e, eh = i.useRef(null), em = i.useRef(null), eg = i.useRef(!0), eE = i.useRef(!0), eb = k || j, ey = i.useCallback((e, t, n) => {
+  } = e, eh = i.useRef(null), em = i.useRef(null), eg = i.useRef(!0), eE = i.useRef(!0), eb = M || j, ey = i.useCallback((e, t, n) => {
     var r;
     let {
       value: i,
       selection: a
     } = n, o = b.bN.richValue(e), s = e.selection, l = !1;
     if (void 0 !== i && i !== o) {
-      if (e.children = i, "parent" === t && !e.previewMarkdown && e.chatInputType === f.Ie.EDIT) {
+      if (e.children = i, "parent" === t && !e.previewMarkdown && e.chatInputType === _.Ie.EDIT) {
         try {
           e.previewMarkdown = !0, (0, N.KH)(e, L.guild_id, L.id)
         } finally {
@@ -143,7 +143,7 @@ let L = i.forwardRef(function(e, t) {
       if (a.length > 0) {
         var n, r;
         let e = a[0];
-        E.Q.selectCommandOption(eI, e.name), _.S.dispatch(w.CkL.SHAKE_APP, {
+        E.Q.selectCommandOption(eI, e.name), f.S.dispatch(w.CkL.SHAKE_APP, {
           duration: 200,
           intensity: 2
         }), (0, l.yw)(w.rMx.APPLICATION_COMMAND_VALIDATION_FAILED, {
@@ -212,7 +212,7 @@ let L = i.forwardRef(function(e, t) {
       ref: eh,
       className: o()(x, D.slateContainer),
       children: (0, r.jsx)(m.Z, {
-        id: M,
+        id: k,
         editor: eI,
         channelId: L.id,
         guildId: L.guild_id,
@@ -221,7 +221,7 @@ let L = i.forwardRef(function(e, t) {
         readOnly: eb,
         spellCheck: ee,
         autoFocus: !er,
-        canFocus: !k,
+        canFocus: !M,
         onChange: ew,
         onFocus: H,
         onBlur: Y,
@@ -237,8 +237,8 @@ let L = i.forwardRef(function(e, t) {
         "aria-expanded": es,
         "aria-activedescendant": ec,
         "aria-controls": eu,
-        "aria-labelledby": ef,
-        "aria-describedby": e_,
+        "aria-labelledby": e_,
+        "aria-describedby": ef,
         "aria-invalid": ed,
         "aria-autocomplete": ep,
         "aria-required": G

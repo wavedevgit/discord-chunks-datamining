@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   groupContainer: "groupContainer_b6a9f9",
   groupHeaderRow: "groupHeaderRow_b6a9f9",

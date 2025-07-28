@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(442837),
-  o = n(481060),
-  a = n(565138),
+  a = n(481060),
+  o = n(565138),
   c = n(241559),
   s = n(527379),
   u = n(430824),
@@ -36,7 +36,7 @@ function m(e) {
         notice_type: T.kVF.GUILD_RAID_NOTIFICATION,
         guild_id: C.id
       });
-      (0, o.ZDy)(async () => {
+      (0, a.ZDy)(async () => {
         let e = {
             source: I.Zu.NAGBAR,
             alertType: (0, p.T1)(b)
@@ -79,24 +79,24 @@ function m(e) {
         }
       })
     },
-    v = (0, r.jsx)(a.Z, {
+    v = (0, r.jsx)(o.Z, {
       className: f.guildIcon,
       guild: C,
-      size: a.Z.Sizes.MINI
+      size: o.Z.Sizes.MINI
     }),
     Z = (0, p.OY)(b, C.name);
-  if (null != (null != (m = b.dmsDisabledUntil) ? m : b.invitesDisabledUntil) && D) return (0, r.jsxs)(o.qXd, {
+  if (null != (null != (m = b.dmsDisabledUntil) ? m : b.invitesDisabledUntil) && D) return (0, r.jsxs)(a.qXd, {
     className: f.notice,
-    color: o.DM8.NEUTRAL,
-    children: [(0, r.jsx)(o.RyX, {
+    color: a.DM8.NEUTRAL,
+    children: [(0, r.jsx)(a.RyX, {
       onClick: g,
       noticeType: T.kVF.GUILD_RAID_NOTIFICATION
-    }), v, Z, (0, r.jsx)(o.EyT, {
+    }), v, Z, (0, r.jsx)(a.EyT, {
       className: f.actionButton,
       onClick: () => M(!1),
       children: (0, r.jsxs)("div", {
         className: f.actionButtonInner,
-        children: [(0, r.jsx)(o.mBM, {
+        children: [(0, r.jsx)(a.mBM, {
           size: "xs",
           color: "currentColor"
         }), (0, r.jsx)("span", {
@@ -113,13 +113,13 @@ function m(e) {
       guildName: C.name
     }),
     L = h && R === S.oC.MEMBER_SAFETY;
-  return (0, r.jsxs)(o.qXd, {
+  return (0, r.jsxs)(a.qXd, {
     className: f.notice,
-    color: o.DM8.WARNING,
-    children: [(0, r.jsx)(o.RyX, {
+    color: a.DM8.WARNING,
+    children: [(0, r.jsx)(a.RyX, {
       onClick: g,
       noticeType: T.kVF.GUILD_RAID_NOTIFICATION
-    }), v, j, !L && (0, r.jsx)(o.EyT, {
+    }), v, j, !L && (0, r.jsx)(a.EyT, {
       className: f.actionButton,
       onClick: () => M(!0),
       children: (0, r.jsx)("div", {

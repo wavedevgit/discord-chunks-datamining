@@ -43,7 +43,7 @@ function o(e, t, o, c, s) {
   return null != u ? (0, l.jW)(e, async () => {
     let {
       default: e
-    } = await Promise.all([r.e("97589"), r.e("80125"), r.e("42707")]).then(r.bind(r, 357823));
+    } = await Promise.all([r.e("70274"), r.e("97589"), r.e("80125"), r.e("42707")]).then(r.bind(r, 357823));
     return r => (0, n.jsx)(e, a(i({}, r), {
       user: t,
       channel: o,

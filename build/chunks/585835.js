@@ -19,8 +19,8 @@ var r = n(255367),
   h = n(626135),
   x = n(486199),
   j = n(929507),
-  O = n(981631),
-  v = n(388032),
+  v = n(981631),
+  O = n(388032),
   y = n(694095);
 
 function _(e) {
@@ -34,8 +34,8 @@ function _(e) {
     iconWrapperClassName: E,
     details: T,
     integration: w,
-    buttonText: P,
-    buttonDisabled: Z,
+    buttonText: Z,
+    buttonDisabled: P,
     hasNextSection: A,
     onButtonClick: k,
     guildId: D,
@@ -63,10 +63,10 @@ function _(e) {
     disabled: t,
     onClick: i,
     children: e
-  }), [z, F])(P, Z, A, k);
+  }), [z, F])(Z, P, A, k);
   i.useEffect(() => {
     var e, t;
-    G && h.default.track(O.rMx.COMMANDS_MIGRATION_TOOLTIP_VIEWED, (e = function(e) {
+    G && h.default.track(v.rMx.COMMANDS_MIGRATION_TOOLTIP_VIEWED, (e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -104,7 +104,7 @@ function _(e) {
           e.stopPropagation(), H(!0), j.Z.dismissOverviewTooltip(D, w.integration)
         },
         children: (0, r.jsx)(g.ZP, {
-          content: v.intl.string(v.t.TyMJwM),
+          content: O.intl.string(O.t.TyMJwM),
           onClick: () => {}
         })
       }),
@@ -147,7 +147,7 @@ function _(e) {
               } = e;
             return null != s.bot && (null == c || null == (i = c.scopes) ? void 0 : i.includes(a.x.BOT)) && o.push((0, r.jsx)(d.DY3, {
               forceOpen: t,
-              text: new f.Z(s.bot).isVerifiedBot() ? v.intl.string(v.t.xxcTGx) : v.intl.string(v.t.AOdOYm),
+              text: new f.Z(s.bot).isVerifiedBot() ? O.intl.string(O.t.xxcTGx) : O.intl.string(O.t.AOdOYm),
               className: y.feature,
               children: (0, r.jsx)(d.wGt, {
                 size: "md",
@@ -156,7 +156,7 @@ function _(e) {
               })
             }, "bot")), u.length > 0 && o.push((0, r.jsx)(d.DY3, {
               forceOpen: t,
-              text: v.intl.formatToPlainString(v.t["6HqDfX"], {
+              text: O.intl.formatToPlainString(O.t["6HqDfX"], {
                 count: u.length
               }),
               className: y.feature,
@@ -167,7 +167,7 @@ function _(e) {
               })
             }, "webhooks")), (null == c || null == (l = c.scopes) ? void 0 : l.includes(a.x.APPLICATIONS_COMMANDS)) === !0 && n && o.push((0, r.jsx)(d.DY3, {
               forceOpen: t,
-              text: v.intl.string(v.t["0hKkS0"]),
+              text: O.intl.string(O.t["0hKkS0"]),
               className: y.feature,
               children: (0, r.jsx)(d.SsZ, {
                 size: "md",

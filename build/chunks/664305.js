@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   spacingContainer: "spacingContainer_eaaeee",
   formFieldContainer: "formFieldContainer_eaaeee",

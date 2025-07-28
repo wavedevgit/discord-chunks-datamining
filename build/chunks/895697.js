@@ -13,8 +13,8 @@ var i = n(442837),
   c = n(5192),
   u = n(621853),
   d = n(209698),
-  _ = n(172351),
-  f = n(648052),
+  f = n(172351),
+  _ = n(648052),
   p = n(483424),
   h = n(681837),
   m = n(678738),
@@ -41,7 +41,7 @@ function R(e) {
     onOpenProfile: D,
     channelId: L,
     onClose: x
-  } = e, M = c.ZP.getName(null == P ? void 0 : P.id, L, t), k = (0, i.e7)([u.Z], () => {
+  } = e, k = c.ZP.getName(null == P ? void 0 : P.id, L, t), M = (0, i.e7)([u.Z], () => {
     var e;
     return null == (e = u.Z.getUserProfile(t.id)) ? void 0 : e.application
   }), j = (0, i.e7)([o.Z, s.Z], () => o.Z.getChannel(s.Z.getChannelId())), U = (0, i.e7)([l.Z], () => l.Z.hidePersonalInformation), G = (0, d.b)({
@@ -53,9 +53,9 @@ function R(e) {
     children: [(0, r.jsx)(E.Z, {
       user: t,
       onOpenProfile: D,
-      nickname: M,
+      nickname: k,
       pronouns: null == R ? void 0 : R.pronouns,
-      tags: (0, r.jsx)(f.Z, {
+      tags: (0, r.jsx)(_.Z, {
         displayProfile: R,
         themeType: S.lY.POPOUT,
         onClose: x
@@ -103,9 +103,9 @@ function R(e) {
       displayProfile: R,
       guildId: null == P ? void 0 : P.id,
       onClose: x
-    }), (null == k ? void 0 : k.popularApplicationCommandIds) != null && null != j && (0, r.jsx)(_.Z, {
-      applicationId: k.id,
-      commandIds: k.popularApplicationCommandIds,
+    }), (null == M ? void 0 : M.popularApplicationCommandIds) != null && null != j && (0, r.jsx)(f.Z, {
+      applicationId: M.id,
+      commandIds: M.popularApplicationCommandIds,
       channel: j,
       guildId: null == P ? void 0 : P.id,
       onClick: x

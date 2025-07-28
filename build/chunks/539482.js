@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   examplesHeader: "examplesHeader_d520fc",
   title: "title_d520fc",

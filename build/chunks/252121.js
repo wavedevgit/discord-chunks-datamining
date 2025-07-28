@@ -1,19 +1,18 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => s
 }), n(388685);
 var r = n(255367),
   i = n(73800),
   l = n(236413),
-  s = n(564488);
+  a = n(564488);
 
-function a(e) {
+function s(e) {
   let {
     guildId: t,
     triggerType: n
-  } = e, a = i.useMemo(() => () => (0, l.ep)(t, n), [t, n]), [o] = i.useState(a);
-  return (0, r.jsx)(s.Z, {
+  } = e, s = i.useMemo(() => () => (0, l.ep)(t, n), [t, n]), [o] = i.useState(s);
+  return (0, r.jsx)(a.Z, {
     rule: o
   })
 }

@@ -8,7 +8,7 @@ n.d(t, {
   Nq: () => I,
   Ol: () => b,
   PJ: () => g,
-  T_: () => f,
+  T_: () => _,
   V5: () => T,
   ap: () => N,
   bT: () => C,
@@ -42,16 +42,16 @@ let d = e => {
       days: Math.floor(r / l.Z.Seconds.DAY)
     }
   },
-  _ = (e, t) => d({
+  f = (e, t) => d({
     start: "id" in e ? c.default.extractTimestamp(e.id) : e.start,
     now: "end" in e && null != e.end ? Math.min(e.end, t) : t
   }),
-  f = (e, t) => {
+  _ = (e, t) => {
     let {
       seconds: n,
       minutes: r,
       hours: i
-    } = _(e, t);
+    } = f(e, t);
 
     function a(e) {
       return String(e).padStart(2, "0")
@@ -109,7 +109,7 @@ let d = e => {
   m = function(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : Date.now(),
       r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {};
-    return E(e) ? f(e, n) : h(e, t, n, r)
+    return E(e) ? _(e, n) : h(e, t, n, r)
   };
 
 function g(e, t) {

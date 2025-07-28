@@ -1,12 +1,12 @@
-/** Chunk was on 94312 **/
+/** Chunk was on 1806 **/
 "use strict";
-var r = n(98405),
-  i = n(674371);
-r({
+var n = f(98405),
+  r = f(674371);
+n({
   target: "String",
   proto: !0,
   name: "trimStart",
-  forced: void 0 !== i
+  forced: void 0 !== r
 }, {
-  trimLeft: i
+  trimLeft: r
 })

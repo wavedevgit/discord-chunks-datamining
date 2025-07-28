@@ -19,8 +19,8 @@ var r = n(255367),
   h = n(240872),
   x = n(225433),
   j = n(129861),
-  O = n(493544),
-  v = n(700582),
+  v = n(493544),
+  O = n(700582),
   y = n(410030),
   _ = n(835473),
   C = n(933557),
@@ -30,8 +30,8 @@ var r = n(255367),
   E = n(666657),
   T = n(664452),
   w = n(560114),
-  P = n(685929),
-  Z = n(592125),
+  Z = n(685929),
+  P = n(592125),
   A = n(699516),
   k = n(594174),
   D = n(630388),
@@ -108,7 +108,7 @@ function K(e) {
       basis: 0,
       align: S.Z.Align.CENTER,
       className: U.text,
-      children: [null != n && (0, r.jsx)(v.Z, {
+      children: [null != n && (0, r.jsx)(O.Z, {
         user: n,
         size: g.EFr.SIZE_24,
         className: U.avatar
@@ -213,7 +213,7 @@ function Y(e) {
   } = e, a = (0, _.q)(t), s = (0, p.e7)([k.default], () => {
     var e;
     return k.default.getUser(null == (e = i.linkedLobby) ? void 0 : e.linked_by)
-  }), c = (0, P.Y)(i);
+  }), c = (0, Z.Y)(i);
   return (0, r.jsx)(K, {
     isDisabled: o,
     inviter: s,
@@ -264,12 +264,12 @@ function X(e) {
   s()(null != l, "guild is required");
   let x = (0, y.ZP)(),
     j = (0, R.MQ)(l),
-    v = (0, R.O4)(l),
+    O = (0, R.O4)(l),
     _ = i.useMemo(() => null == t || h ? [] : d()(t).sortBy(e => {
       var t, n;
       return (null != (n = null == (t = e.inviter) ? void 0 : t.username) ? n : "").toLowerCase()
     }).value(), [t, h]),
-    C = (0, p.Wu)([Z.Z], () => Z.Z.getSortedLinkedChannelsForGuild(l.id).filter(e => null == u || e.id === u.id)),
+    C = (0, p.Wu)([P.Z], () => P.Z.getSortedLinkedChannelsForGuild(l.id).filter(e => null == u || e.id === u.id)),
     N = i.useMemo(() => h ? [] : [..._.map(e => ({
       type: "invite",
       data: e
@@ -284,7 +284,7 @@ function X(e) {
         source: M.t4x.SETTINGS_INVITE
       })))
     },
-    [P, A] = i.useState(62),
+    [Z, A] = i.useState(62),
     k = () => {
       let e = {
         source: E.Zu.GUILD_SETTINGS
@@ -294,7 +294,7 @@ function X(e) {
         analyticsData: e
       })))
     };
-  return (0, r.jsx)(O.Xi, {
+  return (0, r.jsx)(v.Xi, {
     sections: [1, +!c, +!!c, Math.max(1, N.length)],
     renderSection: e => {
       let {
@@ -369,11 +369,11 @@ function X(e) {
           className: U.inviteDisabledContainer,
           children: [(0, r.jsx)(b.zx, {
             size: b.zx.Sizes.SMALL,
-            color: v ? b.zx.Colors.BRAND : b.zx.Colors.RED,
+            color: O ? b.zx.Colors.BRAND : b.zx.Colors.RED,
             disabled: !j,
             onClick: k,
-            children: v ? B.intl.string(B.t["/dbw3N"]) : B.intl.string(B.t.Uwsjn5)
-          }), v && (0, r.jsxs)("div", {
+            children: O ? B.intl.string(B.t["/dbw3N"]) : B.intl.string(B.t.Uwsjn5)
+          }), O && (0, r.jsxs)("div", {
             className: U.inviteDisabledTip,
             children: [(0, r.jsx)(g.Mgn, {
               size: "custom",
@@ -395,7 +395,7 @@ function X(e) {
         onShowDisableInvites: k,
         onShowInviteModal: I,
         hasInviteDisabledPermission: j,
-        invitesDisabled: v,
+        invitesDisabled: O,
         canCreateInvites: a
       }, "actions-v2");
       if (t === V.TABLE) {
@@ -410,7 +410,7 @@ function X(e) {
               hide: o,
               invite: e.data,
               showChannel: f,
-              inviteDisabled: v
+              inviteDisabled: O
             }, e.data.code);
           case "channel":
             var i;
@@ -418,14 +418,14 @@ function X(e) {
               applicationId: null == (i = e.data.linkedLobby) ? void 0 : i.application_id,
               channel: e.data,
               showChannel: f,
-              inviteDisabled: v
+              inviteDisabled: O
             }, e.data.id);
           default:
             return null
         }
       }
     },
-    rowHeight: (e, t) => e === V.HEADER ? 64 : e === V.ACTIONS_V1 ? 109 : e === V.ACTIONS_V2 ? P : e === V.TABLE ? 0 === N.length && 0 === t && h ? 62 : 62 * (null != N[t]) : 0,
+    rowHeight: (e, t) => e === V.HEADER ? 64 : e === V.ACTIONS_V1 ? 109 : e === V.ACTIONS_V2 ? Z : e === V.TABLE ? 0 === N.length && 0 === t && h ? 62 : 62 * (null != N[t]) : 0,
     sectionHeight: e => e === V.TABLE ? 0 !== N.length || h ? 28 : 240 : 0
   })
 }

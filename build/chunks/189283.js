@@ -21,7 +21,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,7 +34,7 @@ function _(e) {
   return e
 }
 
-function f(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -46,7 +46,7 @@ function f(e, t) {
 }
 
 function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -91,12 +91,12 @@ function b(e) {
     selected: n,
     onClick: a,
     look: d,
-    className: f,
+    className: _,
     disabled: h = !1,
     tooltip: b,
     tooltipAriaLabel: y
-  } = e, O = i.useCallback(e => a(t, e), [a, t]), v = e => (0, r.jsx)(s.P, p(_({
-    className: o()(m(d), f, {
+  } = e, O = i.useCallback(e => a(t, e), [a, t]), v = e => (0, r.jsx)(s.P, p(f({
+    className: o()(m(d), _, {
       [g(d)]: n,
       [u.disabled]: h
     }),
@@ -129,7 +129,7 @@ function y(e) {
     className: l,
     optionClassName: c,
     disabled: d = !1
-  } = e, _ = i.useCallback(e => {
+  } = e, f = i.useCallback(e => {
     var t;
     let i = n === e.value;
     return (0, r.jsx)(b, {
@@ -147,6 +147,6 @@ function y(e) {
     className: o()(h(s), l, {
       [u.disabledContainer]: d
     }),
-    children: t.map(_)
+    children: t.map(f)
   })
 }

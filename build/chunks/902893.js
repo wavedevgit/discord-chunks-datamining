@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   header: "header_eae0ef",
   safetyChecklist: "safetyChecklist_eae0ef",

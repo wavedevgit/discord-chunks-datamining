@@ -12,7 +12,7 @@ var r, i = n(442837),
   u = n(861262),
   d = n(981631);
 
-function _(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -20,7 +20,7 @@ function _(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let f = .05,
+let _ = .05,
   p = {};
 
 function h(e) {
@@ -108,7 +108,7 @@ function N(e) {
   let {
     searchId: t
   } = e;
-  h(t).showNoResultsAlt = Math.random() < f
+  h(t).showNoResultsAlt = Math.random() < _
 }
 
 function C(e) {
@@ -151,7 +151,7 @@ class R extends(r = i.ZP.Store) {
     return null != e && null != p[e]
   }
 }
-_(R, "displayName", "SearchStore");
+f(R, "displayName", "SearchStore");
 let P = new R(a.Z, {
   CONNECTION_OPEN: I,
   SEARCH_RESULTS_QUERY_UPDATE: C,

@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   container: "container_fc2e20",
   sectionDivider: "sectionDivider_fc2e20",

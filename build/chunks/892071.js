@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  cE: () => f,
-  vP: () => _
+  cE: () => _,
+  vP: () => f
 }), n(415506);
 var r = n(255367),
   i = n(73800),
@@ -18,19 +18,19 @@ let d = i.createContext({
   className: ""
 });
 
-function _() {
+function f() {
   let e = i.useContext(d);
   if (void 0 === e) throw Error("useRootElementContext must be used within a RootElementContextProvider");
   return e
 }
 
-function f(e) {
+function _(e) {
   let {
     rootClassName: t,
     lang: n,
     theme: a,
-    density: _,
-    focused: f,
+    density: f,
+    focused: _,
     fontScale: p,
     fontScaleClass: h,
     mouseMode: m,
@@ -44,7 +44,7 @@ function f(e) {
     hardwareAccelerationEnabled: T,
     highContrastMode: S,
     children: A
-  } = e, N = window.CSS.supports("selector(::-webkit-scrollbar)"), C = "font-size: ".concat(p, "%; --saturation-factor: ").concat(E, ";"), R = (0, u.Z)("highlight_mana_buttons"), P = (0, u.Z)("highlight_mana_components"), w = (0, u.Z)("highlight_void_buttons"), D = o()((0, c.Z)(), (0, l.QeD)(a), "density-".concat(_), h, {
+  } = e, N = window.CSS.supports("selector(::-webkit-scrollbar)"), C = "font-size: ".concat(p, "%; --saturation-factor: ").concat(E, ";"), R = (0, u.Z)("highlight_mana_buttons"), P = (0, u.Z)("highlight_mana_components"), w = (0, u.Z)("highlight_void_buttons"), D = o()((0, c.Z)(), (0, l.QeD)(a), "density-".concat(f), h, {
     "low-saturation": E <= l.AEw,
     "keyboard-mode": g,
     "decorate-links": I,
@@ -54,7 +54,7 @@ function f(e) {
     "reduce-motion": v,
     "full-motion": !v,
     "is-mobile": s.tq,
-    "app-focused": f,
+    "app-focused": _,
     "desaturate-user-colors": b,
     "disable-forced-colors": !y && "active" === O,
     "enable-forced-colors": y,

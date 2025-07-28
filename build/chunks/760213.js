@@ -13,8 +13,8 @@ var n, i = s(255367),
   u = s(239091),
   m = s(598077),
   x = s(314897),
-  _ = s(246946),
-  h = s(594174),
+  h = s(246946),
+  _ = s(594174),
   f = s(626135),
   g = s(51144),
   N = s(480387),
@@ -34,17 +34,17 @@ function b(e) {
     currentUser: a,
     hidePrivateData: r,
     isAuthenticated: T
-  } = (0, c.cj)([h.default, _.Z, x.default], () => ({
-    currentUser: h.default.getCurrentUser(),
-    hidePrivateData: _.Z.hidePersonalInformation,
+  } = (0, c.cj)([_.default, h.Z, x.default], () => ({
+    currentUser: _.default.getCurrentUser(),
+    hidePrivateData: h.Z.hidePersonalInformation,
     isAuthenticated: x.default.isAuthenticated()
-  })), p = new m.Z(s), b = T && (null == a ? void 0 : a.id) === p.id, j = s.tokenStatus === v.q.INVALID, I = r || p.isPomelo() ? null : "#".concat(p.discriminator), M = null;
-  return b ? M = (0, i.jsx)(o.Text, {
+  })), p = new m.Z(s), b = T && (null == a ? void 0 : a.id) === p.id, j = s.tokenStatus === v.q.INVALID, I = r || p.hasUniqueUsername() ? null : "#".concat(p.discriminator), U = null;
+  return b ? U = (0, i.jsx)(o.Text, {
     variant: "text-sm/semibold",
     className: E.hintText,
     color: "text-feedback-positive",
     children: C.intl.string(C.t.seV8ys)
-  }) : j && (M = (0, i.jsx)(o.Text, {
+  }) : j && (U = (0, i.jsx)(o.Text, {
     variant: "text-sm/semibold",
     className: E.hintText,
     color: "text-danger",
@@ -76,7 +76,7 @@ function b(e) {
             variant: "text-sm/normal",
             children: I
           })]
-        }), M]
+        }), U]
       }), (0, i.jsxs)("div", {
         className: E.userActions,
         children: [!b && (0, i.jsx)(o.zxk, {

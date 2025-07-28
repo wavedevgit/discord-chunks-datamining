@@ -13,9 +13,9 @@ var r = n(255367),
   c = n(509212),
   u = n(388032),
   d = n(719969),
-  _ = n(800010);
+  f = n(800010);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -31,7 +31,7 @@ function p(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -41,7 +41,7 @@ function h(e) {
   let {
     transitionState: t,
     onClose: n
-  } = e, f = (0, a.e7)([l.default], () => {
+  } = e, _ = (0, a.e7)([l.default], () => {
     var e;
     return null == (e = l.default.getCurrentUser()) ? void 0 : e.email
   }), [p, h] = i.useState({
@@ -77,7 +77,7 @@ function h(e) {
     children: [(0, r.jsx)("img", {
       alt: "",
       className: d.headerImage,
-      src: _
+      src: f
     }), (0, r.jsxs)(o.xBx, {
       separator: !1,
       className: d.header,
@@ -106,8 +106,8 @@ function h(e) {
         children: (0, r.jsx)(o.Text, {
           variant: "text-md/normal",
           children: u.intl.format(u.t.qP5xYW, {
-            emailAddress: f,
-            emailAddressLink: "mailto:".concat(f)
+            emailAddress: _,
+            emailAddressLink: "mailto:".concat(_)
           })
         })
       }), (0, r.jsx)(o.hzk, {

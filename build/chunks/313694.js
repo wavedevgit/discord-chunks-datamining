@@ -45,10 +45,10 @@ function u(e, t, n) {
   }
 }
 n.d(t, {
-  J: () => _
+  J: () => f
 });
 var d = new WeakMap;
-class _ {
+class f {
   constructor() {
     i(this, d, {
       writable: !0,

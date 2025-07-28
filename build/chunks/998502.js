@@ -11,8 +11,8 @@ var r, i, a, o, s = n(512722),
   c = n(719711),
   u = n(544891),
   d = n(579092),
-  _ = n(433517),
-  f = n(593472),
+  f = n(433517),
+  _ = n(593472),
   p = n(189451),
   h = n(358085),
   m = n(591759),
@@ -70,8 +70,8 @@ null != I && (C = I.remoteApp.getVersion().split(".").map(e => parseInt(e)), P =
 let D = new Set(["discord_erlpack", "discord_game_utils", "discord_rpc", "discord_spellcheck", "discord_utils", "discord_voice"]),
   L = !1,
   x = "lastImageSaveDirectory",
-  M = /[<>:"/\\|?*@]/g,
-  k = /(\.[a-zA-Z0-9]+):[^.]*$/,
+  k = /[<>:"/\\|?*@]/g,
+  M = /(\.[a-zA-Z0-9]+):[^.]*$/,
   j = /(\.[a-zA-Z0-9]+)%3A.+$/,
   U = /[^a-zA-Z0-9]/g,
   G = /\.[^.]*$/;
@@ -79,9 +79,9 @@ let D = new Set(["discord_erlpack", "discord_game_utils", "discord_rpc", "discor
 function B(e) {
   try {
     let t = decodeURIComponent(e);
-    return (t = (t = t.replace(k, "$1")).replace(/(.+)@([a-zA-Z0-9]+)$/, "$1.$2")).replace(M, "_")
+    return (t = (t = t.replace(M, "$1")).replace(/(.+)@([a-zA-Z0-9]+)$/, "$1.$2")).replace(k, "_")
   } catch (t) {
-    return e.replace(j, "$1").replace(/(.+)%40([a-zA-Z0-9]+)$/, "$1.$2").replace(M, "_")
+    return e.replace(j, "$1").replace(/(.+)%40([a-zA-Z0-9]+)$/, "$1.$2").replace(k, "_")
   }
 }
 async function V(e) {
@@ -125,7 +125,7 @@ function Y(e) {
     pidPath: null != (o = e.pidPath) ? o : [],
     gameMetadata: e.gameMetadata,
     windowHandle: null != (s = e.windowHandle) ? s : null,
-    fullscreenType: null != (l = e.fullscreenType) ? l : f.Jx.UNKNOWN,
+    fullscreenType: null != (l = e.fullscreenType) ? l : _.Jx.UNKNOWN,
     isLauncher: null != (c = e.isLauncher) && c
   }
 }
@@ -159,7 +159,7 @@ let z = {
       try {
         e = this.requireModule("discord_overlay2")
       } catch (e) {}
-      e && e.reset && e.reset(), e && e.disconnectAllProcesses && e.destroyHostProcess && (e.disconnectAllProcesses(), e.destroyHostProcess()), I.remotePowerMonitor.removeAllListeners(), window.location.origin === window.GLOBAL_ENV.MIGRATION_SOURCE_ORIGIN && !0 !== _.K.get(c.SV) && this.supportsFeature(g.eRX.USER_DATA_CACHE) && I.userDataCache.cacheUserData(_.K.stringify())
+      e && e.reset && e.reset(), e && e.disconnectAllProcesses && e.destroyHostProcess && (e.disconnectAllProcesses(), e.destroyHostProcess()), I.remotePowerMonitor.removeAllListeners(), window.location.origin === window.GLOBAL_ENV.MIGRATION_SOURCE_ORIGIN && !0 !== f.K.get(c.SV) && this.supportsFeature(g.eRX.USER_DATA_CACHE) && I.userDataCache.cacheUserData(f.K.stringify())
     },
     inputEventRegister(e, t, n, r) {
       this.getDiscordUtils().inputEventRegister(parseInt("".concat(e)), t.map(e => {
@@ -333,11 +333,11 @@ let z = {
         let r = null != (a = null != (i = W(e, t)) ? i : n) ? a : "png";
         s = "".concat(s, ".").concat(r)
       }
-      let u = _.K.get(x),
+      let u = f.K.get(x),
         d = await F(e),
-        f = E.from(d),
-        p = await I.fileManager.saveWithDialog(f, s, null != u ? u : void 0);
-      null != p && _.K.set(x, p)
+        _ = E.from(d),
+        p = await I.fileManager.saveWithDialog(_, s, null != u ? u : void 0);
+      null != p && f.K.set(x, p)
     },
     async saveFile(e, t) {
       var n;
@@ -578,14 +578,14 @@ let z = {
       }, n), c = t;
       "application/json" === l && (c = JSON.stringify(t));
       let d = s / 1e3 * a,
-        _ = Math.ceil(c.length / d),
-        f = Array(_);
-      for (let e = 0; e < _; e++) {
+        f = Math.ceil(c.length / d),
+        _ = Array(f);
+      for (let e = 0; e < f; e++) {
         let t = e * d;
-        f[e] = c.substring(t, t + d)
+        _[e] = c.substring(t, t + d)
       }
       return new Promise((e, t) => {
-        null != I.http && I.http.makeChunkedRequest(r, f, {
+        null != I.http && I.http.makeChunkedRequest(r, _, {
           method: i,
           chunkInterval: s,
           contentType: l,
@@ -645,14 +645,14 @@ let z = {
       let {
         getWindowFullscreenTypeByPid: i
       } = this.getDiscordUtils(), a = 0 !== e && null != i && null != t ? i(e, t) : null;
-      return -1 === a && (a = null), null != (r = null != a ? a : n) ? r : f.Jx.UNKNOWN
+      return -1 === a && (a = null), null != (r = null != a ? a : n) ? r : _.Jx.UNKNOWN
     },
     GetWindowFullscreenTypeExtraByPid(e, t) {
       let {
         getWindowFullscreenTypeExtraByPid: n
       } = this.getDiscordUtils();
       return null == n || null == t ? {
-        quns: f.Ng.QUNS_UNKNOWN
+        quns: _.Ng.QUNS_UNKNOWN
       } : n(e, t)
     },
     SetGPUBoostEnabledByPid(e, t) {

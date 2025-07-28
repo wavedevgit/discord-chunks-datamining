@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   triggerContainer: "triggerContainer_b6c6eb",
   triggerMainContainer: "triggerMainContainer_b6c6eb",

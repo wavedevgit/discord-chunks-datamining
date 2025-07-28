@@ -17,7 +17,7 @@ var l = t(255367),
   f = t(594174),
   p = t(388032);
 
-function O(e) {
+function m(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
       l = Object.keys(t);
@@ -36,7 +36,7 @@ function O(e) {
   return e
 }
 
-function m(e, n) {
+function O(e, n) {
   return n = null != n ? n : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, n) {
     var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -80,7 +80,7 @@ function h(e, n, h) {
       let {
         default: n
       } = await t.e("5454").then(t.bind(t, 854360));
-      return t => (0, l.jsx)(n, m(O({}, t), {
+      return t => (0, l.jsx)(n, O(m({}, t), {
         guildId: v.id,
         user: e
       }))
@@ -97,7 +97,7 @@ function h(e, n, h) {
       let {
         default: n
       } = await t.e("43350").then(t.bind(t, 98746));
-      return t => (0, l.jsx)(n, m(O({}, t), {
+      return t => (0, l.jsx)(n, O(m({}, t), {
         guildId: v.id,
         user: e
       }))

@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   Z: () => y
 });
@@ -7,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(481060),
   l = n(825055),
-  s = n(937615),
-  a = n(730647),
+  a = n(937615),
+  s = n(730647),
   o = n(584825),
   c = n(723047),
   d = n(997519),
@@ -16,8 +15,8 @@ var i = n(481060),
   m = n(146610),
   g = n(67152),
   p = n(791382),
-  f = n(277369),
-  h = n(215124),
+  h = n(277369),
+  f = n(215124),
   x = n(981631),
   b = n(388032),
   j = n(264054);
@@ -60,7 +59,7 @@ function _(e) {
 let O = e => {
   var t, n;
   let {
-    guildId: a,
+    guildId: s,
     application: o
   } = e, {
     loading: m,
@@ -68,12 +67,12 @@ let O = e => {
     currentPeriod: O,
     allPeriods: y,
     metrics: C
-  } = (0, d.Z)(a, o), N = (0, u.u)(a), I = (0, c.mY)();
+  } = (0, d.Z)(s, o), N = (0, u.u)(s), I = (0, c.mY)();
   return m ? (0, r.jsx)(i.$jN, {}) : (0, r.jsxs)(r.Fragment, {
     children: [N && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.Z, {
         children: b.intl.format(b.t["2raBCQ"], {
-          insightsURL: x.EYA.DEVELOPER_PORTAL_GUILD_ANALYTICS_ROLE_SUBSCRIPTION(a)
+          insightsURL: x.EYA.DEVELOPER_PORTAL_GUILD_ANALYTICS_ROLE_SUBSCRIPTION(s)
         })
       }), (0, r.jsx)(i.LZC, {
         size: 32
@@ -87,7 +86,7 @@ let O = e => {
         className: j.metricsContainer,
         children: [(0, r.jsx)(p.Z, {
           label: b.intl.string(b.t.iY1jW1),
-          value: (0, s.T4)(null != (t = C.revenue) ? t : 0, x.pKx.USD),
+          value: (0, a.T4)(null != (t = C.revenue) ? t : 0, x.pKx.USD),
           additionalContent: (0, r.jsx)(p.H, {
             value: C.revenuePctChange,
             isPercent: !0
@@ -107,7 +106,7 @@ let O = e => {
           })
         })]
       }), (0, r.jsx)(_, {
-        guildId: a,
+        guildId: s,
         totalPayoutsForPeriod: O
       })]
     }), (0, r.jsx)(i.hjN, {
@@ -121,15 +120,15 @@ let O = e => {
       title: b.intl.string(b.t.O8cDAA),
       disabled: I,
       className: j.formSection,
-      children: (0, r.jsx)(f.Z, {
-        guildId: a,
+      children: (0, r.jsx)(h.Z, {
+        guildId: s,
         application: o
       })
     }), (0, r.jsx)(i.hjN, {
       title: b.intl.string(b.t["0n7R2d"]),
       className: j.formSection,
-      children: (0, r.jsx)(h.Z, {
-        guildId: a,
+      children: (0, r.jsx)(f.Z, {
+        guildId: s,
         allPeriods: y
       })
     })]
@@ -137,7 +136,7 @@ let O = e => {
 };
 
 function y(e) {
-  return (0, r.jsx)(a.l, {
+  return (0, r.jsx)(s.l, {
     guildId: e.guildId,
     children: (0, r.jsx)(O, function(e) {
       for (var t = 1; t < arguments.length; t++) {

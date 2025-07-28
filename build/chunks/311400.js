@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   optionCard: "optionCard_b96967",
   singleColumn: "singleColumn_b96967",

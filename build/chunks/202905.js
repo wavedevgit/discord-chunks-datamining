@@ -1,13 +1,12 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   r: () => _
 });
 var r = n(255367),
   i = n(73800),
   l = n(580685),
-  s = n(793030),
-  a = n(442837),
+  a = n(793030),
+  s = n(442837),
   o = n(755721),
   c = n(481060),
   d = n(944163),
@@ -15,8 +14,8 @@ var r = n(255367),
   m = n(798476),
   g = n(434404),
   p = n(999382),
-  f = n(548522),
-  h = n(651390),
+  h = n(548522),
+  f = n(651390),
   x = n(981631),
   b = n(388032),
   j = n(870751);
@@ -46,10 +45,10 @@ function _(e) {
   } = e, {
     guild: n,
     guildProfile: _
-  } = (0, a.cj)([p.Z], () => ({
+  } = (0, s.cj)([p.Z], () => ({
     guild: p.Z.getGuild(),
     guildProfile: p.Z.getGuildProfile()
-  })), O = null == n ? void 0 : n.id, y = (0, a.e7)([d.Z], () => d.Z.get(O)), {
+  })), O = null == n ? void 0 : n.id, y = (0, s.e7)([d.Z], () => d.Z.get(O)), {
     fetchGuildProfile: C
   } = (0, u.u)(O), N = (null == _ ? void 0 : _.visibility) == null || !l.Y.VISIBLE.has(null == _ ? void 0 : _.visibility), I = (null == _ ? void 0 : _.visibility) === l.k.PUBLIC_WITH_RECRUITMENT;
   i.useEffect(() => {
@@ -69,21 +68,21 @@ function _(e) {
   if (null == n) return null;
   let P = null != t ? t : null == y ? void 0 : y.formFields;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(s.X6, {
+    children: [(0, r.jsx)(a.X6, {
       variant: "heading-md/semibold",
       color: "header-primary",
       children: b.intl.string(b.t.AHJddH)
-    }), (0, r.jsx)(s.xv, {
+    }), (0, r.jsx)(a.xv, {
       tag: "p",
       variant: "text-sm/medium",
       color: "text-secondary",
       className: j.applicationBody,
       children: b.intl.string(b.t.Z7TCtb)
-    }), (0, r.jsx)(h.c, {
+    }), (0, r.jsx)(f.c, {
       guildId: n.id
     }), (0, r.jsx)("div", {
       className: j.form,
-      children: null != P ? (0, r.jsx)(f.y, {
+      children: null != P ? (0, r.jsx)(h.y, {
         guild: n,
         formFields: P
       }) : (0, r.jsx)(c.$jN, {})
@@ -99,11 +98,11 @@ function _(e) {
           hideBorder: !0,
           disabled: N,
           children: b.intl.string(b.t["N/0239"])
-        }), (0, r.jsx)(s.xv, {
+        }), (0, r.jsx)(a.xv, {
           variant: "text-sm/normal",
           color: "text-secondary",
           children: b.intl.string(b.t["3TSZYG"])
-        }), N && (0, r.jsx)(s.xv, {
+        }), N && (0, r.jsx)(a.xv, {
           variant: "text-xs/normal",
           color: "text-muted",
           children: b.intl.format(b.t.Bk0VOj, {

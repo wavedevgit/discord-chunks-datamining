@@ -19,8 +19,8 @@ async function c(e, t = {}) {
   let {
     width: n,
     height: r
-  } = (0, s.Ad)(e, t), i = await l(e, t), a = await (0, s.Bi)(i), o = document.createElement("canvas"), u = o.getContext("2d"), d = t.pixelRatio || (0, s.mX)(), _ = t.canvasWidth || n, f = t.canvasHeight || r;
-  return o.width = _ * d, o.height = f * d, t.skipAutoScale || (0, s.Nv)(o), o.style.width = `${_}`, o.style.height = `${f}`, t.backgroundColor && (u.fillStyle = t.backgroundColor, u.fillRect(0, 0, o.width, o.height)), u.drawImage(a, 0, 0, o.width, o.height), o
+  } = (0, s.Ad)(e, t), i = await l(e, t), a = await (0, s.Bi)(i), o = document.createElement("canvas"), u = o.getContext("2d"), d = t.pixelRatio || (0, s.mX)(), f = t.canvasWidth || n, _ = t.canvasHeight || r;
+  return o.width = f * d, o.height = _ * d, t.skipAutoScale || (0, s.Nv)(o), o.style.width = `${f}`, o.style.height = `${_}`, t.backgroundColor && (u.fillStyle = t.backgroundColor, u.fillRect(0, 0, o.width, o.height)), u.drawImage(a, 0, 0, o.width, o.height), o
 }
 async function u(e, t = {}) {
   let n = await c(e, t);

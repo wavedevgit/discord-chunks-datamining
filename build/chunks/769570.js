@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   table: "table__16462",
   tableContainer: "tableContainer__16462",

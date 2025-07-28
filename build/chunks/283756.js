@@ -18,8 +18,8 @@ let d = e => {
     externalURL: n,
     className: i,
     renderLinkComponent: d,
-    inactive: _,
-    messageId: f,
+    inactive: f,
+    messageId: _,
     channelId: p
   } = e;
   return (0, r.jsx)(s.G.Consumer, {
@@ -27,7 +27,7 @@ let d = e => {
       className: a()(i, u.wrapper, {
         [u.disableInteractions]: e.disableInteractions
       }),
-      children: [_ && null == t ? (0, r.jsx)("div", {
+      children: [f && null == t ? (0, r.jsx)("div", {
         className: u.iconWrapper,
         children: (0, r.jsx)(o.o1U, {
           size: "xs",
@@ -37,7 +37,7 @@ let d = e => {
       }) : null, null != t ? (0, r.jsx)(o.P3F, {
         onClick: t,
         className: u.iconWrapperActive,
-        tabIndex: _ ? -1 : 0,
+        tabIndex: f ? -1 : 0,
         "aria-label": c.intl.string(c.t.RscU7O),
         children: (0, r.jsx)(o.o1U, {
           size: "xs",
@@ -53,7 +53,7 @@ let d = e => {
           "aria-label": c.intl.string(c.t.wuRE8P),
           className: null != t ? u.iconExternalMargins : u.iconExternal
         }),
-        messageId: f,
+        messageId: _,
         channelId: p
       }) : null]
     })

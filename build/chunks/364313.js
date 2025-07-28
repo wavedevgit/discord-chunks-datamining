@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   grid: "grid_ec9088",
   itemContainer: "itemContainer_ec9088",

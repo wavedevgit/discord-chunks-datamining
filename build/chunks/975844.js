@@ -1,15 +1,15 @@
-/** Chunk was on 67244 **/
+/** Chunk was on 86915 **/
 "use strict";
-var a = r(98405),
-  n = r(209957),
-  s = r(146063),
-  o = r(967333),
-  i = Array;
-a({
+var i = n(98405),
+  l = n(209957),
+  r = n(146063),
+  s = n(967333),
+  a = Array;
+i({
   target: "Array",
   proto: !0
 }, {
   toReversed: function() {
-    return n(s(this), i)
+    return l(r(this), a)
   }
-}), o("toReversed")
+}), s("toReversed")

@@ -6,9 +6,9 @@ n.d(t, {
   PB: () => J,
   VR: () => eo,
   ZP: () => et,
-  p2: () => q,
+  p2: () => X,
   wF: () => $,
-  wZ: () => X,
+  wZ: () => q,
   wd: () => Q,
   zR: () => eO
 }), n(388685), n(415506), n(539854), n(361932), n(187205), n(290780), n(642613);
@@ -90,8 +90,8 @@ function H(e, t) {
 let z = "placeholder-channel-id",
   Y = 2,
   K = 0,
-  X = 1,
-  q = 2,
+  q = 1,
+  X = 2,
   J = 3,
   Q = 4,
   $ = 5,
@@ -185,9 +185,9 @@ class en {
     switch (e) {
       case K:
         throw Error("Invalid section. Use getChannelNoticeSection instead");
-      case X:
-        throw Error("Invalid section. Use getGuildActionSection instead");
       case q:
+        throw Error("Invalid section. Use getGuildActionSection instead");
+      case X:
         return this.favoritesCategory;
       case Q:
         return this.noParentCategory;
@@ -218,7 +218,7 @@ class en {
     }
   }
   isPlaceholderRow(e, t) {
-    return r()(e > X, "Invalid section"), e !== this.recentsSectionNumber && this.getRows()[e][t] === z
+    return r()(e > q, "Invalid section"), e !== this.recentsSectionNumber && this.getRows()[e][t] === z
   }
   getFirstVoiceChannel(e) {
     if (void 0 === this.firstVoiceChannel) {
@@ -240,7 +240,7 @@ class en {
     }(e);
     if (null != t) return [{
       row: this.getGuildActionSection().getRows().indexOf(t),
-      section: X
+      section: q
     }];
     let n = [],
       i = R.Z.getChannel(e);
@@ -249,7 +249,7 @@ class en {
     if (r && (i = R.Z.getChannel(i.parent_id)), null == i) return n;
     let l = this.favoritesCategory.getShownChannelIds().indexOf(i.id);
     l >= 0 && n.push({
-      section: q,
+      section: X,
       row: l
     });
     let s = this.recentsCategory.getShownChannelIds().indexOf(i.id);
@@ -382,7 +382,7 @@ class en {
       }
     }
     for (let e in this.categories = {}, _) this.categories[e] = new el(this, c[e], _[e], S);
-    this.recentsSectionNumber = J, this.favoritesSectionNumber = q, this.noParentCategory = new er(this, d, S), this.favoritesCategory = new eo(this, S), this.recentsCategory = (0, E.Q)() ? new es(this, s, S) : new ea(this, h, S), this.voiceChannelsCategory = new ec(this, p, c, S), this.guildActionSection = new eu(t, g.length > 0), this.channelNoticeSection = new ed(n), r()(!("null" in this.categories), "somehow a null got into categories"), this.voiceChannelsSectionNumber = $ + o().size(this.categories)
+    this.recentsSectionNumber = J, this.favoritesSectionNumber = X, this.noParentCategory = new er(this, d, S), this.favoritesCategory = new eo(this, S), this.recentsCategory = (0, E.Q)() ? new es(this, s, S) : new ea(this, h, S), this.voiceChannelsCategory = new ec(this, p, c, S), this.guildActionSection = new eu(t, g.length > 0), this.channelNoticeSection = new ed(n), r()(!("null" in this.categories), "somehow a null got into categories"), this.voiceChannelsSectionNumber = $ + o().size(this.categories)
   }
 }
 class ei {

@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(727637),
   u = n(980591),
   d = n(616780),
-  _ = n(100527),
-  f = n(906732),
+  f = n(100527),
+  _ = n(906732),
   p = n(313201),
   h = n(359588),
   m = n(368326),
@@ -35,8 +35,8 @@ var r = n(255367),
   D = n(502762),
   L = n(544989),
   x = n(481932),
-  M = n(195387),
-  k = n(664794),
+  k = n(195387),
+  M = n(664794),
   j = n(4517),
   U = n(978395),
   G = n(161572),
@@ -101,7 +101,7 @@ function z(e) {
     disableAutoFocus: en = !1
   } = e, {
     analyticsLocations: er
-  } = (0, f.ZP)([...ee, _.Z.USER_PROFILE_POPOUT]), ei = (0, T.ZB)({
+  } = (0, _.ZP)([...ee, f.Z.USER_PROFILE_POPOUT]), ei = (0, T.ZB)({
     layout: "POPOUT",
     userId: t.id,
     guildId: Z,
@@ -125,13 +125,13 @@ function z(e) {
   i.useEffect(() => {
     null == J || J(null == es ? void 0 : es.current)
   }, [es, J]);
-  let e_ = i.useRef(null),
-    [ef, ep] = i.useState(String(Date.now())),
+  let ef = i.useRef(null),
+    [e_, ep] = i.useState(String(Date.now())),
     [eh, em] = i.useState(!1);
   (0, u.Z)(() => {
     em(!0)
   }, K), (0, O.fu)({
-    targetElementRef: e_,
+    targetElementRef: ef,
     onGetElementDimensionsAndBoundingRect: e => {
       let {
         hasElementPositionChanged: t
@@ -171,7 +171,7 @@ function z(e) {
     eA = en ? "div" : l.VqE,
     eN = (0, p.Dt)(),
     eC = I.ZP.useName(null == ea ? void 0 : ea.id, Y, t);
-  return (0, r.jsx)(f.Gt, {
+  return (0, r.jsx)(_.Gt, {
     value: er,
     children: (0, r.jsx)(T.Mt, {
       value: ei,
@@ -199,7 +199,7 @@ function z(e) {
               style: ed,
               className: F.backdrop
             }), (0, r.jsxs)(L.Z, {
-              children: [(0, r.jsx)(M.Z, {
+              children: [(0, r.jsx)(k.Z, {
                 shouldShowTooltip: null === eu.interactionType,
                 user: t,
                 guildId: Z,
@@ -210,7 +210,7 @@ function z(e) {
                 shouldShowTooltip: null === eu.interactionType,
                 themeType: B.lY.POPOUT,
                 user: t
-              }), !eE && (0, r.jsx)(k.Z, {
+              }), !eE && (0, r.jsx)(M.Z, {
                 type: "banner",
                 user: t,
                 guildId: Z,
@@ -237,12 +237,12 @@ function z(e) {
                 themeType: B.lY.POPOUT,
                 onOpenProfile: $ ? void 0 : eT
               }), eO && eh ? (0, r.jsx)(E.Z, {
-                positionKey: ef,
+                positionKey: e_,
                 markAsDismissed: ey,
-                targetElementRef: e_,
+                targetElementRef: ef,
                 onTryFeature: Q,
                 children: () => (0, r.jsx)(j.Z, {
-                  ref: e_,
+                  ref: ef,
                   location: "UserProfilePopout",
                   user: t,
                   guildId: Z,
@@ -252,7 +252,7 @@ function z(e) {
                   prompt: eI
                 })
               }) : (0, r.jsx)(j.Z, {
-                ref: eO ? e_ : void 0,
+                ref: eO ? ef : void 0,
                 location: "UserProfilePopout",
                 user: t,
                 guildId: Z,

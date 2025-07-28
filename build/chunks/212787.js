@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   editCard: "editCard_a25a68",
   toggled: "toggled_a25a68",

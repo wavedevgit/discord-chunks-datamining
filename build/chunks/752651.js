@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   creatorBenefitsContainer: "creatorBenefitsContainer__02e4c",
   creatorBenefitCard: "creatorBenefitCard__02e4c " + n(551131).card,

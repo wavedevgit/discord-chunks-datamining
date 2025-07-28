@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   Z: () => o
 });
@@ -7,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(73880),
   l = n(137158),
-  s = n(388032),
-  a = n(664305);
+  a = n(388032),
+  s = n(664305);
 let o = function(e) {
   let {
     formField: t,
@@ -20,9 +19,9 @@ let o = function(e) {
     onRemove: m,
     canRemove: g,
     actionsLocation: p,
-    fieldStyle: f
+    fieldStyle: h
   } = e, {
-    label: h,
+    label: f,
     placeholder: x
   } = t;
   return (0, r.jsx)(l.Z, {
@@ -33,13 +32,13 @@ let o = function(e) {
     onDrop: d,
     onEdit: u,
     onRemove: m,
-    title: h,
+    title: f,
     canRemove: g,
     actionsLocation: p,
-    fieldStyle: f,
+    fieldStyle: h,
     children: (0, r.jsx)(i.Q8, {
-      className: a.fieldBackground,
-      placeholder: null != x ? x : s.intl.string(s.t["Sqn+Wl"]),
+      className: s.fieldBackground,
+      placeholder: null != x ? x : a.intl.string(a.t["Sqn+Wl"]),
       disabled: !0
     })
   })

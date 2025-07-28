@@ -19,8 +19,8 @@ var r = n(255367),
   h = n(486199),
   x = n(366598),
   j = n(125657),
-  O = n(725875),
-  v = n(981631),
+  v = n(725875),
+  O = n(981631),
   y = n(388032),
   _ = n(704526);
 
@@ -108,8 +108,8 @@ function S(e) {
   } = e, {
     application: T,
     integration: w,
-    webhooks: P
-  } = s, [Z, A] = (0, o.Wu)([m.Z], () => [m.Z.can(v.Plq.MANAGE_ROLES, n), null == T.bot || m.Z.canManageUser(v.Plq.MANAGE_GUILD, T.bot.id, n)], [T.bot, n]), k = (0, o.e7)([m.Z], () => m.Z.can(v.Plq.MANAGE_WEBHOOKS, n), [n]), D = i.useCallback(() => {
+    webhooks: Z
+  } = s, [P, A] = (0, o.Wu)([m.Z], () => [m.Z.can(O.Plq.MANAGE_ROLES, n), null == T.bot || m.Z.canManageUser(O.Plq.MANAGE_GUILD, T.bot.id, n)], [T.bot, n]), k = (0, o.e7)([m.Z], () => m.Z.can(O.Plq.MANAGE_WEBHOOKS, n), [n]), D = i.useCallback(() => {
     E() && (0, a.h7j)(e => (0, r.jsx)(N, C({
       guild: n,
       application: T,
@@ -152,7 +152,7 @@ function S(e) {
     }), (null == T ? void 0 : T.description) != null ? (0, r.jsx)(p.Z, {
       userBio: T.description,
       className: _.headerDescription
-    }) : null, Z ? (0, r.jsx)(u.Z, {
+    }) : null, P ? (0, r.jsx)(u.Z, {
       application: T,
       canNavigate: E,
       guildId: n.id
@@ -175,8 +175,8 @@ function S(e) {
           color: "currentColor"
         }),
         title: y.intl.string(y.t["t9ZX/P"])
-      }), P.length > 0 ? (0, r.jsx)(O.Z, {
-        webhooks: P,
+      }), Z.length > 0 ? (0, r.jsx)(v.Z, {
+        webhooks: Z,
         editedWebhook: S,
         selectableWebhookChannels: d,
         errors: I,

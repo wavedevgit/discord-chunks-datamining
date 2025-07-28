@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  o = n.n(l),
-  a = n(481060),
+  a = n.n(l),
+  o = n(481060),
   c = n(900609);
 
 function s(e) {
@@ -48,13 +48,13 @@ function d(e) {
   var t, n, {
       alt: l
     } = e,
-    o = u(e, ["alt"]);
+    a = u(e, ["alt"]);
   let [d, _] = i.useState(!0);
   return (0, r.jsxs)(r.Fragment, {
-    children: [d && (0, r.jsx)(a.$jN, {
-      type: a.$jN.Type.LOW_MOTION,
+    children: [d && (0, r.jsx)(o.$jN, {
+      type: o.$jN.Type.LOW_MOTION,
       className: c.loader
-    }), (0, r.jsx)("img", (t = s({}, o), n = n = {
+    }), (0, r.jsx)("img", (t = s({}, a), n = n = {
       alt: l,
       onLoad: () => _(!1)
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -76,11 +76,11 @@ function _(e) {
     backgroundSrc: n,
     alt: i,
     aspectRatio: l,
-    className: a,
+    className: o,
     imageChildClassName: _
   } = e, E = u(e, ["src", "backgroundSrc", "alt", "aspectRatio", "className", "imageChildClassName"]);
   return (0, r.jsxs)("div", {
-    className: o()(c.container, a),
+    className: a()(c.container, o),
     children: [(0, r.jsx)("img", {
       src: n,
       alt: i,
@@ -95,7 +95,7 @@ function _(e) {
       children: (0, r.jsx)(d, s({
         src: t,
         alt: i,
-        className: o()(c.image, _)
+        className: a()(c.image, _)
       }, E))
     })]
   })

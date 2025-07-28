@@ -1,5 +1,7 @@
 /** Chunk was on 94312 **/
-"use strict";
+n.d(t, {
+  Z: () => r
+});
 
 function r() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "",
@@ -7,6 +9,3 @@ function r() {
     n = window.GLOBAL_ENV.GUILD_TEMPLATE_HOST;
   return "".concat(t ? "".concat(location.protocol) : "", "//").concat(n).concat("/".concat(e))
 }
-n.d(t, {
-  Z: () => r
-})

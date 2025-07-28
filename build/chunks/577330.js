@@ -1,14 +1,13 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
-  Z: () => s
+  Z: () => a
 });
 var r = n(255367);
 n(73800);
 var i = n(481060),
   l = n(236715);
 
-function s() {
+function a() {
   return (0, r.jsx)("div", {
     className: l.centerContainer,
     children: (0, r.jsx)(i.$jN, {

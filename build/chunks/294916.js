@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   container: "container_f53c21",
   emojiRow: "emojiRow_f53c21",

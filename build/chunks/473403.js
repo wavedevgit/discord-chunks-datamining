@@ -192,8 +192,8 @@ let y = A => {
       channel: {
         type: N
       },
-      onMouseEnter: R,
-      onMouseLeave: S,
+      onMouseEnter: S,
+      onMouseLeave: R,
       "aria-label": G,
       children: U,
       guild: F,
@@ -310,8 +310,8 @@ let y = A => {
         onMouseUp: A => null == V ? void 0 : V(A, l),
         onMouseDown: A => null == D ? void 0 : D(A, l),
         onContextMenu: A => null == j ? void 0 : j(A, l),
-        onMouseEnter: R,
-        onMouseLeave: S,
+        onMouseEnter: S,
+        onMouseLeave: R,
         children: [g || !d ? null : (0, n.jsx)("div", {
           className: i()(H.unread, q ? H.unreadImportant : void 0)
         }), null != (t = null == T ? void 0 : T(As)) ? t : As]

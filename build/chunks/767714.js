@@ -13,8 +13,8 @@ var i = n(120356),
   c = n(451478),
   u = n(648613),
   d = n(433390),
-  _ = n(474936),
-  f = n(163882);
+  f = n(474936),
+  _ = n(163882);
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -99,7 +99,7 @@ let y = function(e) {
       buttonTextOverride: null == m ? void 0 : m.textOverride,
       defaultTextOverride: null == m ? void 0 : m.subscribeText
     }),
-    M = {
+    k = {
       onClick: n,
       subscriptionTier: t,
       postSuccessGuild: y,
@@ -110,9 +110,9 @@ let y = function(e) {
       paymentModalBanner: R
     };
 
-  function k(e) {
-    let n = null != P ? P : t === _.Si.TIER_1 ? s.zx.Colors.PRIMARY : s.zx.Colors.GREEN;
-    return (0, r.jsx)(u.Z, g(h({}, M), {
+  function M(e) {
+    let n = null != P ? P : t === f.Si.TIER_1 ? s.zx.Colors.PRIMARY : s.zx.Colors.GREEN;
+    return (0, r.jsx)(u.Z, g(h({}, k), {
       children: o => {
         let {
           onClick: c
@@ -120,23 +120,23 @@ let y = function(e) {
         return (0, r.jsxs)(l.gtL, g(h({
           disabled: x.disabled,
           onClick: c,
-          innerClassName: f.premiumSubscribeButton,
+          innerClassName: _.premiumSubscribeButton,
           color: n,
           size: i,
           className: A,
           wrapperClassName: a()({
-            [f.tier2Gradient]: N && t === _.Si.TIER_2,
-            [f.tier1Gradient]: N && t === _.Si.TIER_1
+            [_.tier2Gradient]: N && t === f.Si.TIER_2,
+            [_.tier1Gradient]: N && t === f.Si.TIER_1
           }, p),
-          buttonShineClassName: "buttonShineClassName" in D ? D.buttonShineClassName : n === s.Tt.BRAND_INVERTED ? f.brandShine : void 0,
+          buttonShineClassName: "buttonShineClassName" in D ? D.buttonShineClassName : n === s.Tt.BRAND_INVERTED ? _.brandShine : void 0,
           pauseAnimation: !L || T
         }, D, e), {
           children: [I && (0, r.jsx)(l.SrA, {
             size: "md",
             color: w,
-            className: a()(f.premiumIcon, b)
+            className: a()(_.premiumIcon, b)
           }), (0, r.jsx)("span", {
-            className: a()(f.buttonText, null == m ? void 0 : m.textClassName),
+            className: a()(_.buttonText, null == m ? void 0 : m.textClassName),
             children: x.buttonText
           })]
         }))
@@ -145,6 +145,6 @@ let y = function(e) {
   }
   return null != x.buttonTooltipText ? (0, r.jsx)(l.ua7, {
     text: x.buttonTooltipText,
-    children: k
-  }) : k()
+    children: M
+  }) : M()
 }

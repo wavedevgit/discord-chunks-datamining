@@ -16,8 +16,8 @@ var r = n(255367),
   f = n(279604),
   _ = n(279475),
   x = n(535396),
-  v = n(388032),
-  g = n(117172);
+  g = n(388032),
+  v = n(117172);
 
 function b(e) {
   let {
@@ -31,21 +31,21 @@ function b(e) {
     guildId: t,
     powerup: n,
     children: [(0, r.jsx)(m.m, {
-      className: g.image,
+      className: v.image,
       powerup: n,
       isHovering: E
     }), (0, r.jsxs)("div", {
-      className: g.contentContainer,
+      className: v.contentContainer,
       children: [(0, r.jsxs)("div", {
         children: [(0, r.jsx)("div", {
-          className: g.headerContainer,
+          className: v.headerContainer,
           children: (0, r.jsx)(s.X6, {
             color: I,
             variant: "heading-md/bold",
             children: n.title
           })
         }), (0, r.jsx)(s.xv, {
-          className: g.description,
+          className: v.description,
           color: I,
           variant: "text-sm/medium",
           children: n.description
@@ -55,18 +55,18 @@ function b(e) {
         powerup: n
       })]
     }), (0, r.jsx)("div", {
-      className: g.buttonContainer,
+      className: v.buttonContainer,
       children: (0, r.jsx)(p.ZP, {
         guildId: t,
         powerup: n,
         onError: j
       })
     }), !O && !N && (0, r.jsx)(a.IGR, {
-      className: g.new,
-      text: v.intl.string(v.t.y2b7CA)
+      className: v.new,
+      text: g.intl.string(g.t.y2b7CA)
     }), O && N && (0, r.jsx)(a.IGR, {
-      className: g.new,
-      text: v.intl.string(v.t.oW0eUV),
+      className: v.new,
+      text: g.intl.string(g.t.oW0eUV),
       color: i.Z.BG_BRAND
     })]
   })

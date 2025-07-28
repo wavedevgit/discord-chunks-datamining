@@ -14,10 +14,10 @@ var r = t(442837),
   d = t(172351),
   f = t(280885),
   p = t(900927),
-  g = t(678738),
-  j = t(179828),
-  v = t(228168),
-  h = t(388032),
+  j = t(678738),
+  g = t(179828),
+  h = t(228168),
+  v = t(388032),
   m = t(349966);
 
 function b(e) {
@@ -46,25 +46,25 @@ function b(e) {
       channel: P,
       guildId: x,
       onClick: O
-    }), (null == b ? void 0 : b.guildId) != null && (0, l.jsx)(j.Z, {
+    }), (null == b ? void 0 : b.guildId) != null && (0, l.jsx)(g.Z, {
       user: n,
       currentUser: t,
       guildId: b.guildId,
-      scrollIntoView: y === v.Tb.ROLES
-    }), (0, l.jsx)(g.Z, {
-      heading: h.intl.string(h.t["A//N4u"]),
+      scrollIntoView: y === h.Tb.ROLES
+    }), (0, l.jsx)(j.Z, {
+      heading: v.intl.string(v.t["A//N4u"]),
       children: (0, l.jsx)(p.Z, {
         userId: n.id,
         guildId: x,
-        tooltipDelay: v.vB
+        tooltipDelay: h.vB
       })
-    }), (0, l.jsx)(g.Z, {
-      heading: h.intl.string(h.t["mQKv+v"]),
-      scrollIntoView: y === v.Tb.NOTE,
+    }), (0, l.jsx)(j.Z, {
+      heading: v.intl.string(v.t["mQKv+v"]),
+      scrollIntoView: y === h.Tb.NOTE,
       children: (0, l.jsx)(o.Z, {
         userId: n.id,
         className: m.note,
-        autoFocus: y === v.Tb.NOTE,
+        autoFocus: y === h.Tb.NOTE,
         onUpdate: () => Z({
           action: "SET_NOTE"
         })

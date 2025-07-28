@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   previewContainer: "previewContainer__5579e",
   icon: "icon__5579e",

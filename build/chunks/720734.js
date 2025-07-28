@@ -338,7 +338,7 @@ class ti extends r.PureComponent {
         emojiClassName: e2.emoji,
         className: e2.customStatus
       })
-    }) : null != s && s !== e0.Skl.UNKNOWN && r.isPomelo() ? (0, i.jsx)(T.Z, {
+    }) : null != s && s !== e0.Skl.UNKNOWN && r.hasUniqueUsername() ? (0, i.jsx)(T.Z, {
       hoverText: a,
       forceHover: e,
       children: (0, i.jsx)(S.Z, {

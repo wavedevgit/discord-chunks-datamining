@@ -13,9 +13,9 @@ var i = n(481060),
   c = n(626135),
   u = n(981631),
   d = n(388032),
-  _ = n(897384);
+  f = n(897384);
 
-function f(e) {
+function _(e) {
   var t;
   let {
     shopLink: n,
@@ -30,7 +30,7 @@ function f(e) {
     onClick: c,
     children: [(0, r.jsx)(i.EOn, {
       size: "sm",
-      className: _.icon,
+      className: f.icon,
       color: i.TVs.colors.MENTION_FOREGROUND
     }), null != (t = null == u ? void 0 : u.name) ? t : d.intl.string(d.t["Ij+2ra"]), (0, r.jsx)(l.Z, {})]
   }, a)
@@ -44,7 +44,7 @@ function p(e) {
           sku_id: t.skuId
         }), (0, a.Z)(t.shopLink)
       };
-      return (0, r.jsx)(f, {
+      return (0, r.jsx)(_, {
         shopLink: t.shopLink,
         skuId: t.skuId,
         onClick: o

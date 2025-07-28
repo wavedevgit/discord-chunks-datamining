@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(255367),
   i = n(704215),
   l = n(481060),
-  o = n(570140),
-  a = n(266454),
+  a = n(570140),
+  o = n(266454),
   c = n(592125),
   s = n(305587);
 
@@ -35,8 +35,8 @@ function d(e) {
   let {
     channelId: t,
     location: n
-  } = e, r = c.Z.getChannel(t), l = (0, a.zu)(i.z.USER_DM_MUTE_FEEDBACK);
-  null != r && r.isDM() && !l && (0, s.Xs)(n) && o.Z.dispatch({
+  } = e, r = c.Z.getChannel(t), l = (0, o.zu)(i.z.USER_DM_MUTE_FEEDBACK);
+  null != r && r.isDM() && !l && (0, s.Xs)(n) && a.Z.dispatch({
     type: "USER_DM_MUTE_SHOW_FEEDBACK",
     channel: r
   })

@@ -19,11 +19,11 @@ var r = n(255367),
   x = n(412899),
   p = n(493773),
   b = n(447003),
-  j = n(605436),
-  v = n(621516),
-  C = n(982168),
-  _ = n(386923),
-  y = n(474366),
+  j = n(621516),
+  v = n(982168),
+  C = n(386923),
+  _ = n(474366),
+  y = n(345162),
   O = n(485386),
   w = n(430824),
   S = n(186523),
@@ -203,7 +203,7 @@ let J = e => {
       canManageChannel: r,
       guildId: a,
       channel: l
-    } = e, s = (0, h.e7)([O.Z], () => null != a ? O.Z.getRoles(a) : void 0), o = i.useCallback(() => {
+    } = e, s = (0, h.e7)([O.Z], () => null != a ? O.Z.partitionVersion(a) : void 0), o = i.useCallback(() => {
       T.S.dispatch(z.CkL.REMEASURE_TARGET)
     }, []);
     i.useEffect(() => {
@@ -277,15 +277,15 @@ let J = e => {
       handleHide: s
     } = e, [o, c] = i.useState(!1), d = (0, A.c)(a.id), u = (0, h.e7)([I.Z], () => I.Z.hasHidden(a.id)), f = function(e, t, a, l) {
       let s = null == e ? void 0 : e.id,
-        o = (0, h.e7)([O.Z], () => null != s ? O.Z.getRoles(s) : void 0);
+        o = (0, h.e7)([O.Z], () => null != s ? O.Z.getSortedRoles(s) : void 0);
       return i.useMemo(() => {
         let i = new K,
           s = (null == t ? void 0 : t.isMediaChannel()) === !0;
         return null == e || null == t || s || null == o || i.addStep(function(e, t, i, a) {
           let l = (0, b.Z)(i) ? m.$e(z.Plq.VIEW_CHANNEL, z.Plq.SEND_MESSAGES) : z.Plq.SEND_MESSAGES,
-            s = null != e ? (0, R.E$)(e, t, i, l).filter(t => i.permissionOverwrites.hasOwnProperty(t.id) || (0, j.pM)(e.id, t.id)) : [],
+            s = null != e ? (0, R.E)(t, i, l).filter(e => i.permissionOverwrites.hasOwnProperty(e.id) || (0, y.fI)(e)) : [],
             o = s.length > 0,
-            c = s.some(t => (0, j.pM)(e.id, t.id));
+            c = s.some(e => (0, y.fI)(e));
           return {
             name: B.intl.string(B.t["/Ax2go"]),
             description: B.intl.string(B.t.oMIexc),
@@ -381,7 +381,7 @@ let J = e => {
     } = (0, M.H)(i.id), o = (0, h.e7)([w.Z], () => w.Z.getGuild(i.getGuildId())), m = (0, Z.r_)(i), {
       transitions: f,
       setVisible: x
-    } = el(), b = es(a), j = eu(), O = ee(i.id, x), {
+    } = el(), b = es(a), y = eu(), O = ee(i.id, x), {
       onboardingSteps: T,
       isDismissed: N,
       isHidden: P,
@@ -400,13 +400,13 @@ let J = e => {
       channel: i
     }), en(N, P, x), (0, p.ZP)(() => {
       t && E || A(!0)
-    }), null == o) ? null : (0, C.iZ)(i) ? n || 0 !== s.size ? s.size > 0 ? null : (0, r.jsx)(_.Z, {
+    }), null == o) ? null : (0, v.iZ)(i) ? n || 0 !== s.size ? s.size > 0 ? null : (0, r.jsx)(C.Z, {
       guild: o
     }) : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(_.Z, {
+      children: [(0, r.jsx)(C.Z, {
         guild: o
-      }), (0, r.jsx)(y.q, {})]
-    }) : E && m ? k ? t ? null : (0, r.jsx)(v.Z, {
+      }), (0, r.jsx)(_.q, {})]
+    }) : E && m ? k ? t ? null : (0, r.jsx)(j.Z, {
       channel: i
     }) : (0, r.jsx)(r.Fragment, {
       children: f((e, t) => t ? (0, r.jsx)(c.animated.div, {
@@ -451,7 +451,7 @@ let J = e => {
               children: T.getSteps().map(e => (0, r.jsxs)(g.P3F, {
                 tag: "li",
                 "aria-label": e.name,
-                onClick: () => j(e),
+                onClick: () => y(e),
                 className: l()(H.stepContainer, {
                   [H.completed]: e.isDone
                 }),

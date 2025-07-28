@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   enableContainer: "enableContainer__5ea8c",
   iconCircle: "iconCircle__5ea8c",

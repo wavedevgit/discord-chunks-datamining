@@ -10,8 +10,8 @@ var a, o = n(442837),
   c = n(911969),
   u = n(314897),
   d = n(592125),
-  _ = n(70956),
-  f = n(622449);
+  f = n(70956),
+  _ = n(622449);
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -51,8 +51,8 @@ function g(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let E = 5 * _.Z.Millis.MINUTE,
-  b = 10 * _.Z.Millis.SECOND,
+let E = 5 * f.Z.Millis.MINUTE,
+  b = 10 * f.Z.Millis.SECOND,
   y = {},
   O = {},
   v = {},
@@ -76,7 +76,7 @@ function S(e) {
     onFailure: s
   } = e;
   null != n && (O[n] = t, v[t] = n), y[t] = {
-    state: f.F.QUEUED,
+    state: _.F.QUEUED,
     data: r,
     onCreate: i,
     onCancel: a,
@@ -93,15 +93,15 @@ function A(e) {
   } = e;
   if (null == n) return !1;
   let i = y[n];
-  if (null == i || i.state !== f.F.QUEUED) return !1;
-  i.state = f.F.CREATED, null == (t = i.onCreate) || t.call(i, r)
+  if (null == i || i.state !== _.F.QUEUED) return !1;
+  i.state = _.F.CREATED, null == (t = i.onCreate) || t.call(i, r)
 }
 
 function N(e) {
   let {
     nonce: t
   } = e;
-  k(t)
+  M(t)
 }
 
 function C(e) {
@@ -130,7 +130,7 @@ function R(e) {
   let s = y[n];
   if (null == s) return !1;
   null == (t = s.onFailure) || t.call(s, r, i, a, o), s.data.interactionType === c.B8.APPLICATION_COMMAND ? j(n) : y[n] = g(h({}, s), {
-    state: f.F.FAILED,
+    state: _.F.FAILED,
     errorCode: r,
     errorMessage: i
   })
@@ -141,14 +141,14 @@ function P(e) {
     channelId: t
   } = e;
   if (null == d.Z.getChannel(t)) return !1;
-  for (let [e, t] of Object.entries(y)) t.state === f.F.FAILED && j(e)
+  for (let [e, t] of Object.entries(y)) t.state === _.F.FAILED && j(e)
 }
 
 function w(e) {
   let {
     nonce: t
   } = e;
-  k(t)
+  M(t)
 }
 
 function D(e) {
@@ -156,7 +156,7 @@ function D(e) {
     application: t,
     nonce: n
   } = e;
-  i = t.id, k(n)
+  i = t.id, M(n)
 }
 
 function L() {
@@ -170,7 +170,7 @@ function x(e) {
   r = t
 }
 
-function M(e) {
+function k(e) {
   let t, n, {
       participants: r
     } = e,
@@ -182,7 +182,7 @@ function M(e) {
   null == s ? (t = v[o.nonce], n = y[o.nonce]) : (t = s.messageId, n = s.interaction), null != n && null != t && (j(o.nonce), null != t && "channelId" in n.data && l.Z.deleteMessage(n.data.channelId, t, !0))
 }
 
-function k(e) {
+function M(e) {
   var t;
   if (null == e) return !1;
   let n = y[e];
@@ -217,7 +217,7 @@ class U extends(a = o.ZP.Store) {
   }
   canQueueInteraction(e, t) {
     let n = O[e];
-    return (null == n || null == y[n] || y[n].state === f.F.FAILED) && (null == y[t] || y[t].state === f.F.FAILED)
+    return (null == n || null == y[n] || y[n].state === _.F.FAILED) && (null == y[t] || y[t].state === _.F.FAILED)
   }
   getIFrameModalApplicationId() {
     return i
@@ -239,5 +239,5 @@ let G = new U(s.Z, {
   INTERACTION_IFRAME_MODAL_CLOSE: L,
   INTERACTION_IFRAME_MODAL_KEY_CREATE: x,
   INTERACTION_MODAL_CREATE: w,
-  EMBEDDED_ACTIVITY_UPDATE_V2: M
+  EMBEDDED_ACTIVITY_UPDATE_V2: k
 })

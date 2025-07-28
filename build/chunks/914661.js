@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   addAnotherRuleCardContainer: "addAnotherRuleCardContainer__0c1e8",
   mainRuleContainer: "mainRuleContainer__0c1e8",

@@ -6,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(704215),
   l = n(481060),
-  o = n(906732),
-  a = n(963249),
+  a = n(906732),
+  o = n(963249),
   c = n(286961),
   s = n(644916),
   u = n(243778),
@@ -19,7 +19,7 @@ let E = e => {
     noticeType: n
   } = e, {
     analyticsLocations: E
-  } = (0, o.ZP)(), O = (0, c.Z)();
+  } = (0, a.ZP)(), O = (0, c.Z)();
   return (0, r.jsx)(u.Xf, {
     contentType: t,
     latestVersion: (0, s.t)(t),
@@ -28,14 +28,14 @@ let E = e => {
     children: e => {
       let {
         visibleContent: t,
-        markAsDismissed: o
+        markAsDismissed: a
       } = e;
       if (t === i.z.GIFTING_PROMOTION_REMINDER) {
         let e = null == O ? void 0 : O.reminderNagbar;
         return (0, r.jsxs)(l.qXd, {
           color: l.DM8.PREMIUM_TIER_2,
           children: [(0, r.jsx)(l.RyX, {
-            onClick: () => o(d.L.USER_DISMISS),
+            onClick: () => a(d.L.USER_DISMISS),
             noticeType: n
           }), (0, r.jsx)(l.OgN, {
             size: "custom",
@@ -45,7 +45,7 @@ let E = e => {
             className: _.giftIcon
           }), null == e ? void 0 : e.description(), (0, r.jsx)(l.NoS, {
             onClick: () => {
-              (0, a.Z)({
+              (0, o.Z)({
                 isGift: !0,
                 initialPlanId: null,
                 analyticsLocations: E,

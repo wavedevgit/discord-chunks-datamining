@@ -13,8 +13,8 @@ var i = n(120356),
   c = n(833664),
   u = n(420660),
   d = n(100527),
-  _ = n(906732),
-  f = n(379357),
+  f = n(906732),
+  _ = n(379357),
   p = n(264832),
   h = n(358696),
   m = n(649700),
@@ -36,8 +36,8 @@ var i = n(120356),
   D = n(670451),
   L = n(881530),
   x = n(228168),
-  M = n(981631),
-  k = n(701488),
+  k = n(981631),
+  M = n(701488),
   j = n(388032),
   U = n(227832);
 
@@ -93,7 +93,7 @@ function Z(e) {
     appContext: W
   } = e, K = (0, g.Dt)(), z = (0, g.Dt)(), {
     analyticsLocations: q
-  } = (0, _.ZP)(d.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), {
+  } = (0, f.ZP)(d.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), {
     themeType: X
   } = (0, T.z)(), Q = (0, m.Z)({
     activity: i,
@@ -110,7 +110,7 @@ function Z(e) {
   }), ee = (0, v.Z)(i), et = null != ee.text && "" !== ee.text, {
     largeImage: en,
     smallImage: er
-  } = (0, f.FO)(i, G), ei = (0, L.Z)({
+  } = (0, _.FO)(i, G), ei = (0, L.Z)({
     location: "UserProfileActivityCard",
     user: t,
     currentUser: n,
@@ -200,7 +200,7 @@ function Z(e) {
     })
   }, el = () => {
     var e, t, n, a, o, s, l, u;
-    if (i.type === M.IIU.WATCHING) return null;
+    if (i.type === k.IIU.WATCHING) return null;
     if ((0, c.Z)(i)) return ec();
     if ((0, b.dS)(i) && (null == (e = i.party) ? void 0 : e.size) != null && (null == (t = i.party) ? void 0 : t.size.length) >= 2) {
       let e = j.intl.formatToPlainString(j.t["JC/3x8"], {
@@ -221,7 +221,7 @@ function Z(e) {
     }) : null
   }, ec = () => {
     var e, t, n, a;
-    return (null == (e = i.party) ? void 0 : e.size) == null && i.application_id === k.Zc ? (0, r.jsxs)("div", {
+    return (null == (e = i.party) ? void 0 : e.size) == null && i.application_id === M.Zc ? (0, r.jsxs)("div", {
       className: U.gameState,
       children: [(0, r.jsx)(p._, {
         href: i.state_url,
@@ -280,13 +280,13 @@ function Z(e) {
       }), ei(e)
     },
     children: [eo(), es(), el()]
-  }), e_ = () => null == V || null == Z ? null : (0, r.jsx)(P.Z, {
+  }), ef = () => null == V || null == Z ? null : (0, r.jsx)(P.Z, {
     user: t,
     guild: V,
     channel: Z,
     onAction: J,
     onClose: Y
-  }), ef = () => t.id === n.id ? null : (0, r.jsx)("div", {
+  }), e_ = () => t.id === n.id ? null : (0, r.jsx)("div", {
     className: U.actions,
     children: (0, r.jsx)(S.Z, {
       activity: i,
@@ -296,7 +296,7 @@ function Z(e) {
       application: G
     })
   });
-  return (0, r.jsx)(_.Gt, {
+  return (0, r.jsx)(f.Gt, {
     value: q,
     children: (0, r.jsxs)(N.Z, {
       ref: $,
@@ -325,10 +325,10 @@ function Z(e) {
               user: t,
               activity: i,
               className: U.badges
-            }), eu(), X === x.lY.MODAL_V2 && ef()]
-          }), X === x.lY.MODAL && ef()]
-        }), e_()]
-      }), X !== x.lY.MODAL && X !== x.lY.MODAL_V2 && ef()]
+            }), eu(), X === x.lY.MODAL_V2 && e_()]
+          }), X === x.lY.MODAL && e_()]
+        }), ef()]
+      }), X !== x.lY.MODAL && X !== x.lY.MODAL_V2 && e_()]
     })
   })
 }

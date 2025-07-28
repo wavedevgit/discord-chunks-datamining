@@ -1,6 +1,6 @@
 /** Chunk was on 74590 **/
 n.d(t, {
-  default: () => R
+  default: () => O
 }), n(388685), n(539854), n(415506);
 var l = n(255367),
   a = n(73800),
@@ -29,16 +29,16 @@ var l = n(255367),
   Z = n(981631),
   y = n(388032),
   M = n(869322),
-  P = n(144452);
-let k = x.O.VOTE;
+  k = n(144452);
+let I = x.O.VOTE;
 
-function I() {
+function P() {
   let e = (0, _.ZP)();
   return (0, l.jsxs)(d.ubH, {
     theme: e,
     children: [(0, l.jsx)(d.oxh, {
-      darkSrc: P,
-      lightSrc: P,
+      darkSrc: k,
+      lightSrc: k,
       width: 106,
       height: 100,
       style: {
@@ -135,7 +135,7 @@ function E(e) {
   })
 }
 
-function V(e) {
+function U(e) {
   let {
     user: t,
     channel: n
@@ -157,7 +157,7 @@ function V(e) {
       className: M.name,
       "aria-label": s,
       children: [(0, l.jsx)("span", {
-        className: t.isPomelo() ? "" : M.nickname,
+        className: t.hasUniqueUsername() ? "" : M.nickname,
         children: s
       }), (0, l.jsx)(u.Z, {
         user: t,
@@ -170,7 +170,7 @@ function V(e) {
   })
 }
 
-function O(e) {
+function V(e) {
   let {
     message: t,
     reaction: n,
@@ -191,7 +191,7 @@ function O(e) {
       emoji: n.emoji,
       limit: Z.pTL,
       after: e,
-      type: k
+      type: I
     });
     c.current = l[l.length - 1].id, m(!1)
   }, [s.id, t.id, n.emoji]);
@@ -223,7 +223,7 @@ function O(e) {
         className: M.spinnerMore
       }, "hasMore") : null : 0 === r.length && u ? (0, l.jsx)(d.$jN, {
         className: M.spinner
-      }, "loadingMore") : null != a && (0, l.jsx)(V, {
+      }, "loadingMore") : null != a && (0, l.jsx)(U, {
         channel: s,
         user: a
       }, a.id)
@@ -247,7 +247,7 @@ function O(e) {
   })
 }
 
-function R(e) {
+function O(e) {
   var t;
   let {
     message: n,
@@ -304,11 +304,11 @@ function R(e) {
           id: h,
           "aria-label": C,
           className: M.panel,
-          children: null != v && f > 0 ? (0, l.jsx)(O, {
+          children: null != v && f > 0 ? (0, l.jsx)(V, {
             message: n,
             reaction: v,
             channel: m
-          }) : (0, l.jsx)(I, {})
+          }) : (0, l.jsx)(P, {})
         })]
       })
     })]

@@ -1,13 +1,12 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   Z: () => m
 }), n(388685), n(781311);
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  s = n.n(l),
-  a = n(755721),
+  a = n.n(l),
+  s = n(755721),
   o = n(481060),
   c = n(981631),
   d = n(388032),
@@ -18,8 +17,8 @@ let m = e => {
       tags: m,
       value: g,
       onRemoveTag: p,
-      onAddTag: f,
-      onAddTagError: h,
+      onAddTag: h,
+      onAddTagError: f,
       maxTaxLength: x,
       maxTags: b,
       disabled: j,
@@ -55,12 +54,12 @@ let m = e => {
     let e = O.trim();
     if (0 !== e.length) {
       if (null != b && m.length >= b) {
-        null == h || h(d.intl.string(d.t.Xx7XeH));
+        null == f || f(d.intl.string(d.t.Xx7XeH));
         return
       }
-      f(e), y("")
+      h(e), y("")
     }
-  }, [O, b, f, h, m.length]), I = i.useCallback(e => {
+  }, [O, b, h, f, m.length]), I = i.useCallback(e => {
     switch (e.keyCode) {
       case c.yXg.BACKSPACE:
         0 === O.length && m.length > 0 && (e.preventDefault(), e.stopPropagation(), p(m.length - 1));
@@ -72,10 +71,10 @@ let m = e => {
     }
   }, [N, O.length, p, m.length]);
   return (0, r.jsxs)("div", {
-    className: s()(l, u.inputWrapper, {
+    className: a()(l, u.inputWrapper, {
       [u.disabled]: j
     }),
-    children: [C, (0, r.jsx)(a.Is, (t = function(e) {
+    children: [C, (0, r.jsx)(s.Is, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);

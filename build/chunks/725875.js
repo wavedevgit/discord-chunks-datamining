@@ -26,7 +26,7 @@ function g(e) {
   } = e, j = i.useMemo(() => Object.values(n).map(e => ({
     value: e.id,
     label: (0, a.F6)(e, c.default, s.Z, !0)
-  })), [n]), O = i.useMemo(() => {
+  })), [n]), v = i.useMemo(() => {
     let e = {};
     for (let r of t)
       if (r.channel_id in e) e[r.channel_id].webhooks.push(r);
@@ -37,12 +37,12 @@ function g(e) {
           webhooks: [r]
         })
       } return Object.values(e).sort((e, t) => e.channel.name.localeCompare(t.channel.name))
-  }, [n, t]), v = i.useCallback(e => {
+  }, [n, t]), O = i.useCallback(e => {
     x() && (e === (null == f ? void 0 : f.id) ? o.Z.stopEditingWebhook() : o.Z.startEditingWebhook(e))
   }, [x, f]);
   return (0, r.jsx)("div", {
     className: b.__invalid_list,
-    children: O.map(e => {
+    children: v.map(e => {
       let {
         channel: t,
         webhooks: n
@@ -94,7 +94,7 @@ function g(e) {
         lastCreatedWebhookId: g,
         editedWebhook: f,
         errors: h,
-        toggleWebhookExpand: v
+        toggleWebhookExpand: O
       })
     })
   })

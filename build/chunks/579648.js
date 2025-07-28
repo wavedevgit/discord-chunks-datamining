@@ -1,13 +1,12 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   Z: () => x
 }), n(953529), n(388685);
 var r = n(255367),
   i = n(73800),
   l = n(442837),
-  s = n(481060),
-  a = n(570140),
+  a = n(481060),
+  s = n(570140),
   o = n(596454),
   c = n(524329),
   d = n(823379),
@@ -15,8 +14,8 @@ var r = n(255367),
   m = n(413584),
   g = n(388032),
   p = n(673305),
-  f = n(62311);
-let h = e => {
+  h = n(62311);
+let f = e => {
     let {
       setWelcomeView: t,
       setShowCreateModal: i
@@ -33,15 +32,15 @@ let h = e => {
       description: g.intl.string(g.t.wsJcws),
       name: g.intl.string(g.t.vrGLjo)
     }];
-    return (0, r.jsxs)(s.hjN, {
+    return (0, r.jsxs)(a.hjN, {
       title: g.intl.string(g.t["2rkmDg"]),
       tag: "h1",
       children: [(0, r.jsxs)("div", {
         className: p.welcomeDescription,
-        children: [(0, r.jsx)(s.Text, {
+        children: [(0, r.jsx)(a.Text, {
           variant: "text-sm/normal",
           children: g.intl.format(g.t.a59UeH, {})
-        }), (0, r.jsx)(s.zxk, {
+        }), (0, r.jsx)(a.zxk, {
           variant: "primary",
           text: g.intl.string(g.t.RWdjPz),
           onClick: () => {
@@ -66,36 +65,36 @@ let h = e => {
           className: p.exampleModal,
           children: [(0, r.jsx)("img", {
             alt: "",
-            className: f.guildIcon,
+            className: h.guildIcon,
             src: n(691466),
             width: 64,
             height: 64
-          }), (0, r.jsx)(s.X6q, {
+          }), (0, r.jsx)(a.X6q, {
             variant: "heading-xl/semibold",
             className: p.header,
             children: g.intl.format(g.t["5NJlXl"], {})
-          }), (0, r.jsx)(s.Text, {
+          }), (0, r.jsx)(a.Text, {
             variant: "text-sm/normal",
             color: "header-secondary",
-            className: f.guildDescription,
+            className: h.guildDescription,
             children: g.intl.string(g.t.Xvsuk5)
-          }), (0, r.jsx)(s.vwX, {
-            className: f.choiceHeader,
+          }), (0, r.jsx)(a.vwX, {
+            className: h.choiceHeader,
             children: g.intl.string(g.t["haj5+v"])
           }), (0, r.jsx)("div", {
-            className: f.options,
+            className: h.options,
             children: l.map(e => (0, r.jsxs)("div", {
               className: p.optionContainer,
               children: [(0, r.jsx)(o.Z, {
                 emojiName: e.emoji,
-                className: f.optionEmoji
+                className: h.optionEmoji
               }), (0, r.jsxs)("div", {
-                className: f.optionTextContainer,
-                children: [(0, r.jsx)(s.Text, {
+                className: h.optionTextContainer,
+                children: [(0, r.jsx)(a.Text, {
                   variant: "text-md/semibold",
-                  className: f.channelDescription,
+                  className: h.channelDescription,
                   children: e.description
-                }), (0, r.jsx)(s.Text, {
+                }), (0, r.jsx)(a.Text, {
                   variant: "text-xs/normal",
                   color: "header-secondary",
                   children: "#".concat(e.name)
@@ -112,18 +111,18 @@ let h = e => {
       guild: e
     } = (0, l.e7)([u.Z], () => u.Z.getProps()), [t, n] = i.useState(0), [o, g] = i.useState(!1);
     switch (i.useEffect(() => {
-        null != e && a.Z.wait(() => {
+        null != e && s.Z.wait(() => {
           (0, c.RM)(e.id).then(e => {
             n(null == e ? 1 : 2)
           })
         })
       }, [e]), t) {
       case 0:
-        return (0, r.jsx)(s.$jN, {
-          type: s.$jN.Type.SPINNING_CIRCLE
+        return (0, r.jsx)(a.$jN, {
+          type: a.$jN.Type.SPINNING_CIRCLE
         });
       case 1:
-        return (0, r.jsx)(h, {
+        return (0, r.jsx)(f, {
           setWelcomeView: n,
           setShowCreateModal: g
         });

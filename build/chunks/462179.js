@@ -20,8 +20,8 @@ var l = t(442837),
   I = t(572004),
   v = t(482241),
   h = t(951539),
-  C = t(894017),
-  E = t(274311),
+  E = t(894017),
+  C = t(274311),
   b = t(854698),
   x = t(118998),
   T = t(139712),
@@ -76,9 +76,9 @@ function D(e) {
     guild_id: R
   } = O, {
     canManageGuildEvent: k
-  } = (0, c.XJ)(null != D ? D : n), B = k(O), w = (0, h.ZP)(O), H = (0, E.T)(null == D ? void 0 : D.id, O.id), {
+  } = (0, c.XJ)(null != D ? D : n), B = k(O), w = (0, h.ZP)(O), H = (0, C.T)(null == D ? void 0 : D.id, O.id), {
     withinStartWindow: M
-  } = (0, b.ub)(P), X = (0, l.e7)([m.Z], () => null == D || !D.isGuildVocal() || m.Z.can(L.Plq.CONNECT, D), [D]), V = (0, s.J)(R), F = (0, C.Z)(G, z);
+  } = (0, b.ub)(P), X = (0, l.e7)([m.Z], () => null == D || !D.isGuildVocal() || m.Z.can(L.Plq.CONNECT, D), [D]), V = (0, s.J)(R), F = (0, E.Z)(G, z);
 
   function Y(e) {
     e.stopPropagation(), (0, T.Z)(z, G, R)
@@ -109,7 +109,7 @@ function D(e) {
       e.stopPropagation(), null != n && (0, a.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([t.e("34261"), t.e("42743"), t.e("27434")]).then(t.bind(t, 215269));
+        } = await Promise.all([t.e("34261"), t.e("70274"), t.e("42743"), t.e("27434")]).then(t.bind(t, 215269));
         return t => (0, i.jsx)(e, N({
           guildEventId: z,
           recurrenceId: G,
@@ -129,7 +129,7 @@ function D(e) {
       e.stopPropagation(), (0, r.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([t.e("84722"), t.e("37805")]).then(t.bind(t, 296864));
+        } = await Promise.all([t.e("70274"), t.e("84722"), t.e("37805")]).then(t.bind(t, 296864));
         return n => (0, i.jsx)(e, S(N({}, n), {
           event: O,
           onSuccess: Z

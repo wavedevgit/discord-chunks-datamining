@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   L: () => u
 });
@@ -7,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(481060),
   l = n(962086),
-  s = n(225675),
-  a = n(434404),
+  a = n(225675),
+  s = n(434404),
   o = n(981631),
   c = n(388032),
   d = n(860711);
@@ -29,8 +28,8 @@ function u(e) {
       size: "sm",
       variant: "secondary",
       onClick: () => {
-        a.Z.close(), (0, l.iD)(t, {
-          type: s.z.ROLES,
+        s.Z.close(), (0, l.iD)(t, {
+          type: a.z.ROLES,
           roles: {
             [n.id]: n
           },

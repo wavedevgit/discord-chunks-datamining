@@ -1,12 +1,11 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
-  Z: () => h
+  Z: () => f
 }), n(953529);
 var r, i = n(442837),
   l = n(570140),
-  s = n(430824),
-  a = n(981631);
+  a = n(430824),
+  s = n(981631);
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -30,20 +29,20 @@ function p(e) {
   let {
     welcomeScreen: t,
     guildId: n
-  } = e, r = s.Z.getGuild(n);
+  } = e, r = a.Z.getGuild(n);
   if (null != t) {
     var i, l;
     g = d = {
       description: null != (i = t.description) ? i : "",
       channels: null != (l = t.welcome_channels) ? l : [],
-      enabled: null == r ? void 0 : r.features.has(a.oNc.WELCOME_SCREEN_ENABLED)
+      enabled: null == r ? void 0 : r.features.has(s.oNc.WELCOME_SCREEN_ENABLED)
     }
   } else g = d = c;
   m = !1
 }
-class f extends(r = i.ZP.Store) {
+class h extends(r = i.ZP.Store) {
   initialize() {
-    this.waitFor(s.Z)
+    this.waitFor(a.Z)
   }
   get() {
     return g
@@ -60,8 +59,8 @@ class f extends(r = i.ZP.Store) {
     }
   }
 }
-o(f, "displayName", "WelcomeScreenSettingsStore");
-let h = new f(l.Z, {
+o(h, "displayName", "WelcomeScreenSettingsStore");
+let f = new h(l.Z, {
   WELCOME_SCREEN_FETCH_SUCCESS: p,
   WELCOME_SCREEN_UPDATE: p,
   WELCOME_SCREEN_SETTINGS_RESET: function() {

@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   Z: () => m
 });
@@ -7,20 +6,20 @@ var r = n(255367);
 n(73800);
 var i = n(399606),
   l = n(481060),
-  s = n(725803),
-  a = n(999382),
+  a = n(725803),
+  s = n(999382),
   o = n(352981),
   c = n(469351),
   d = n(981631),
   u = n(674563);
 
 function m() {
-  let e = (0, i.e7)([a.Z], () => a.Z.getGuild()),
+  let e = (0, i.e7)([s.Z], () => s.Z.getGuild()),
     t = (0, o.y)(null == e ? void 0 : e.id, "guild_product_settings"),
     {
       application: n,
       loading: m
-    } = (0, s.Z)(null == e ? void 0 : e.id, u.wW.GUILD_ROLE_SUBSCRIPTIONS),
+    } = (0, a.Z)(null == e ? void 0 : e.id, u.wW.GUILD_ROLE_SUBSCRIPTIONS),
     g = null != n && (null == e ? void 0 : e.features.has(d.oNc.ROLE_SUBSCRIPTIONS_ENABLED)) === !0;
   return (0, r.jsx)("main", {
     children: null == e || !t || m ? (0, r.jsx)(l.$jN, {}) : (0, r.jsx)(c.t, {

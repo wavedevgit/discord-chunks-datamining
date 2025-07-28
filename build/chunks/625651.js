@@ -26,7 +26,7 @@ function j(e) {
       guildId: j,
       powerup: _
     } = e,
-    O = function(e, t) {
+    I = function(e, t) {
       if (null == e) return {};
       var n, r, o = function(e, t) {
         if (null == e) return {};
@@ -42,16 +42,16 @@ function j(e) {
       return o
     }(e, ["guildId", "powerup"]);
   let {
-    onDeactivate: I,
+    onDeactivate: O,
     error: C,
     isLoading: T
   } = (0, x.ZP)(j, _), {
     onClose: N
-  } = O, y = o.useCallback(e => {
-    I(e).then(() => {
+  } = I, y = o.useCallback(e => {
+    O(e).then(() => {
       null == N || N()
     })
-  }, [N, I]), E = function(e, t) {
+  }, [N, O]), E = function(e, t) {
     let n = (0, i.e7)([l.Z], () => l.Z.getMemberCount(e)),
       m = (0, c.Z)(e),
       b = (0, i.e7)([u.Z], () => {
@@ -59,12 +59,9 @@ function j(e) {
         return (null == (t = u.Z.getGuild(e)) ? void 0 : t.vanityURLCode) != null
       }),
       p = (0, f.g1)(e, "Powerup Deactivate Modal"),
-      x = (0, i.e7)([d.Z], () => t.skuId !== g.If || null == m ? 0 : Object.values(d.Z.getRoles(e)).filter(e => {
-        var t;
-        return (null == (t = e.colorStrings) ? void 0 : t.secondaryColor) != null
-      }).reduce((e, t) => {
-        var n;
-        return e + (null != (n = m[t.id]) ? n : 0)
+      x = (0, i.e7)([d.Z], () => t.skuId !== g.If || null == m ? 0 : d.Z.getSortedRoles(e).reduce((e, t) => {
+        var n, r;
+        return (null == (n = t.colorStrings) ? void 0 : n.secondaryColor) == null ? e : e + (null != (r = m[t.id]) ? r : 0)
       }, 0), [e, t.skuId, m]);
     return o.useMemo(() => {
       let e;
@@ -123,7 +120,7 @@ function j(e) {
   }({
     className: h.modal,
     size: _.type === g.Us.LEVEL ? s.CgR.MEDIUM : s.CgR.SMALL
-  }, O), n = n = {
+  }, I), n = n = {
     parentComponent: "GuildPowerupDeactivateModal",
     children: [(0, r.jsxs)(s.hzk, {
       className: h.modalContentContainer,
@@ -144,7 +141,7 @@ function j(e) {
             })
           })]
         }), (0, r.jsx)(s.olH, {
-          onClick: O.onClose
+          onClick: I.onClose
         })]
       }), (() => {
         switch (_.type) {
@@ -193,7 +190,7 @@ function j(e) {
         children: (0, r.jsx)(s.zxk, {
           variant: "secondary",
           text: v.intl.string(v.t["ETE/oK"]),
-          onClick: O.onClose
+          onClick: I.onClose
         })
       })]
     })]

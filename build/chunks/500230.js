@@ -1,13 +1,12 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   Z: () => x
 }), n(388685);
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  s = n.n(l),
-  a = n(866442),
+  a = n.n(l),
+  s = n(866442),
   o = n(481060),
   c = n(229190),
   d = n(510918),
@@ -15,8 +14,8 @@ var r = n(255367),
   m = n(254925),
   g = n(131085),
   p = n(195196),
-  f = n(388032),
-  h = n(602268);
+  h = n(388032),
+  f = n(602268);
 let x = function(e) {
   let {
     className: t,
@@ -33,13 +32,13 @@ let x = function(e) {
   return (0, r.jsxs)("div", {
     className: t,
     children: [(0, r.jsx)(o.vwX, {
-      className: h.sectionTitle,
-      children: f.intl.string(p.default.zSbMdX)
+      className: f.sectionTitle,
+      children: h.intl.string(p.default.zSbMdX)
     }), (0, r.jsxs)("div", {
-      className: h.pickerGrid,
+      className: f.pickerGrid,
       children: [m.g.map(e => (0, r.jsx)(o.P3F, {
-        className: s()(h.pickerItem, {
-          [h.pickerItemSelected]: e.primary === x && e.secondary === b
+        className: a()(f.pickerItem, {
+          [f.pickerItemSelected]: e.primary === x && e.secondary === b
         }),
         onClick: () => y(e),
         children: (0, r.jsx)(d.v, {
@@ -58,12 +57,12 @@ let x = function(e) {
         },
         onPrimaryColorChange: e => {
           y({
-            primary: (0, a.Rf)(e)
+            primary: (0, s.Rf)(e)
           })
         },
         onSecondaryColorChange: e => {
           y({
-            secondary: (0, a.Rf)(e)
+            secondary: (0, s.Rf)(e)
           })
         },
         shouldShow: j,
@@ -92,8 +91,8 @@ let x = function(e) {
             onClick: () => {
               v(e => !e)
             },
-            className: s()(h.pickerItem, {
-              [h.pickerItemSelected]: O
+            className: a()(f.pickerItem, {
+              [f.pickerItemSelected]: O
             }),
             children: (0, r.jsx)(o.ilE, {
               size: "custom",

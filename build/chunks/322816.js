@@ -1,13 +1,12 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   ZP: () => w
 }), n(415506), n(388685), n(539338), n(953529);
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  s = n.n(l),
-  a = n(149765),
+  a = n.n(l),
+  s = n(149765),
   o = n(442837),
   c = n(481060),
   d = n(144991),
@@ -15,8 +14,8 @@ var r = n(255367),
   m = n(496675),
   g = n(594174),
   p = n(626135),
-  f = n(233608),
-  h = n(700785),
+  h = n(233608),
+  f = n(700785),
   x = n(764260),
   b = n(631969),
   j = n(95242),
@@ -65,18 +64,18 @@ function T(e) {
     guild: t,
     role: n,
     locked: l
-  } = e, s = (0, o.e7)([g.default], () => g.default.getCurrentUser()), d = i.useMemo(() => h.uB({
-    user: s,
+  } = e, a = (0, o.e7)([g.default], () => g.default.getCurrentUser()), d = i.useMemo(() => f.uB({
+    user: a,
     context: t
-  }), [s, t]), u = i.useMemo(() => ({
+  }), [a, t]), u = i.useMemo(() => ({
     [n.id]: S(E({}, n), {
-      permissions: h.Hn
+      permissions: f.Hn
     })
-  }), [n]), m = i.useMemo(() => h.uB({
-    user: s,
+  }), [n]), m = i.useMemo(() => f.uB({
+    user: a,
     context: t,
     roles: u
-  }), [s, t, u]), p = !a.fS(d, m);
+  }), [a, t, u]), p = !s.fS(d, m);
   return (0, r.jsx)(c.ua7, {
     text: p ? C.intl.string(C.t["IQ/6Sk"]) : null,
     position: "top",
@@ -94,7 +93,7 @@ function T(e) {
           variant: "primary",
           textVariant: "text-sm/semibold",
           onClick: () => (0, x.TY)(n.id),
-          disabled: a.fS(n.permissions, h.Hn) || p || l,
+          disabled: s.fS(n.permissions, f.Hn) || p || l,
           text: C.intl.string(C.t["UYq7+P"])
         })
       })
@@ -108,7 +107,7 @@ function P(e) {
     role: n,
     specs: i,
     locked: l
-  } = e, s = u.D.useExperiment({
+  } = e, a = u.D.useExperiment({
     guildId: t.id,
     location: "PermissionsList"
   }).enabled;
@@ -125,7 +124,7 @@ function P(e) {
   function o(e) {
     return m.Z.can(e, t) ? !m.Z.can(e, t, null, {
       [n.id]: S(E({}, n), {
-        permissions: a.Od(n.permissions, e)
+        permissions: s.Od(n.permissions, e)
       })
     }) && C.intl.string(C.t["K+D+GB"]) : C.intl.string(C.t.nOtPMD)
   }
@@ -145,7 +144,7 @@ function P(e) {
         (0, x.lO)(n.id, e, t)
       },
       permissionRender: o,
-      inPinPermissionExperiment: s
+      inPinPermissionExperiment: a
     }, t))]
   })
 }
@@ -155,16 +154,16 @@ function w(e) {
     guild: t,
     role: n,
     locked: l,
-    setSelectedSection: a,
+    setSelectedSection: s,
     initialSearchQuery: o
-  } = e, [d, u] = i.useState(null != o ? o : ""), m = i.useMemo(() => f.Z.generateGuildPermissionSpec(t), [t]).map(e => S(E({}, e), {
+  } = e, [d, u] = i.useState(null != o ? o : ""), m = i.useMemo(() => h.Z.generateGuildPermissionSpec(t), [t]).map(e => S(E({}, e), {
     permissions: e.permissions.filter(e => {
       let t = d.trimStart().toLowerCase();
       return e.title.toLowerCase().includes(t) || null != e.description && e.description.toString().toLowerCase().includes(t)
     })
   })).filter(e => e.permissions.length > 0), {
     headerHeight: g,
-    headerRef: h
+    headerRef: f
   } = (0, j.Z)(0), {
     scrolledToTop: x,
     handleScroll: b
@@ -182,15 +181,15 @@ function w(e) {
     children: (0, r.jsxs)("div", {
       className: I.contentWidth,
       children: [(0, r.jsxs)("div", {
-        className: s()(I.header, I.stickyHeader, {
+        className: a()(I.header, I.stickyHeader, {
           [I.stickyHeaderElevated]: !x
         }),
-        ref: h,
+        ref: f,
         children: [(0, r.jsx)(v.Z, {
           guild: t,
           role: n,
           selectedSection: O.ZI.PERMISSIONS,
-          setSelectedSection: a
+          setSelectedSection: s
         }), (0, r.jsx)("div", {
           className: N.noticeContainer,
           children: (0, r.jsx)(_.Z, {

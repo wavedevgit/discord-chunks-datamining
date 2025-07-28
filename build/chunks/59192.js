@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   Z: () => d
 });
@@ -7,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(236413),
   l = n(961926),
-  s = n(314224),
-  a = n(849715),
+  a = n(314224),
+  s = n(849715),
   o = n(591026),
   c = n(813922);
 
@@ -18,11 +17,11 @@ function d(e) {
     isLoading: n,
     onChangeRule: d
   } = e;
-  return null == t ? null : (0, i.DO)(t) ? (0, r.jsx)(s.Z, {
+  return null == t ? null : (0, i.DO)(t) ? (0, r.jsx)(a.Z, {
     rule: t,
     isLoading: n,
     onChangeRule: d
-  }) : (0, i.vo)(t) ? (0, r.jsx)(a.Z, {
+  }) : (0, i.vo)(t) ? (0, r.jsx)(s.Z, {
     rule: t,
     isLoading: n,
     onChangeRule: d

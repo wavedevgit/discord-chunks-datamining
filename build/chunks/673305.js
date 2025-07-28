@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   welcomeDescription: "welcomeDescription_b34334",
   exampleContainer: "exampleContainer_b34334",

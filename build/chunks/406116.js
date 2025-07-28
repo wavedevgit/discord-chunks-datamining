@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   section: "section__9e177",
   bannerContainer: "bannerContainer__9e177",

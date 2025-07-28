@@ -18,13 +18,13 @@ function u(e) {
     onAction: n
   } = e, {
     themeType: u
-  } = (0, o.z)(), d = null == t ? void 0 : t.application_id, _ = (0, a.u)(d);
-  return null == _ ? null : (0, r.jsx)(s.tG, {
-    icon: _.icon,
-    text: c.intl.string(_.labelKey),
+  } = (0, o.z)(), d = null == t ? void 0 : t.application_id, f = (0, a.u)(d);
+  return null == f ? null : (0, r.jsx)(s.tG, {
+    icon: f.icon,
+    text: c.intl.string(f.labelKey),
     size: u === l.lY.MODAL_V2 ? i.Ph.TINY : void 0,
     fullWidth: u !== l.lY.MODAL_V2,
     themeColor: "secondary",
-    onClick: _.openLink
+    onClick: f.openLink
   })
 }

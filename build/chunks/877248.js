@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   contentWidth: "contentWidth_c6bf1b",
   header: "header_c6bf1b",

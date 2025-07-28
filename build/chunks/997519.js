@@ -1,13 +1,12 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   Z: () => c
 });
 var r = n(73800),
   i = n(766434),
   l = n(310291),
-  s = n(730647),
-  a = n(495298),
+  a = n(730647),
+  s = n(495298),
   o = n(198139);
 
 function c(e, t) {
@@ -19,12 +18,12 @@ function c(e, t) {
       groupType: o.uw.SERVER_ROLE_SUBSCRIPTION,
       teamId: null == n ? void 0 : n.id
     }),
-    u = (0, s.f)("useEarningMetrics"),
-    m = (0, a.Z)(e),
+    u = (0, a.f)("useEarningMetrics"),
+    m = (0, s.Z)(e),
     {
       currentPeriod: g,
       previousPeriods: p,
-      metrics: f
+      metrics: h
     } = r.useMemo(() => {
       var e, t;
       let {
@@ -72,6 +71,6 @@ function c(e, t) {
     currentPeriod: g,
     previousPeriods: p,
     allPeriods: c,
-    metrics: f
+    metrics: h
   }
 }

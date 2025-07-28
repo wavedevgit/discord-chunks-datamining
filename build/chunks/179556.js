@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   container: "container__4a4f2",
   flexContainer: "flexContainer__4a4f2",

@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   Z: () => l
 });
@@ -10,8 +9,8 @@ var i = n(325767);
 function l(e) {
   var t, n, {
       width: l = 24,
-      height: s = 24,
-      color: a = "currentColor"
+      height: a = 24,
+      color: s = "currentColor"
     } = e,
     o = function(e, t) {
       if (null == e) return {};
@@ -47,11 +46,11 @@ function l(e) {
     return e
   }({}, (0, i.Z)(o)), n = n = {
     width: l,
-    height: s,
+    height: a,
     viewBox: "0 0 20 20",
     children: (0, r.jsx)("path", {
       d: "M12.5 3.33334V5H17.1583L11.6667 10.4917L8.33333 7.15834L0 15.4917L1.175 16.6667L8.33333 9.50834L11.6667 12.8417L18.3333 6.175V10.8333H20V3.33334H12.5Z",
-      fill: a
+      fill: s
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

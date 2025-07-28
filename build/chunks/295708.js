@@ -1,13 +1,12 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   Z: () => m
 }), n(388685);
 var r = n(255367),
   i = n(73800),
   l = n(755721),
-  s = n(481060),
-  a = n(273504),
+  a = n(481060),
+  s = n(273504),
   o = n(981631),
   c = n(388032),
   d = n(957270),
@@ -18,8 +17,8 @@ function m(e) {
     rule: t,
     onChangeRule: n
   } = e, [m, g] = i.useState(t.name);
-  return (0, r.jsxs)(s.xJW, {
-    children: [(0, r.jsx)(s.Text, {
+  return (0, r.jsxs)(a.xJW, {
+    children: [(0, r.jsx)(a.Text, {
       className: u.triggerHeader,
       variant: "text-sm/semibold",
       children: c.intl.string(c.t.WVAHxM)
@@ -62,7 +61,7 @@ function m(e) {
         e.which === o.yXg.SPACE && e.stopPropagation()
       },
       placeholder: c.intl.string(c.t["5AO43N"]),
-      maxLength: a.OU,
+      maxLength: s.OU,
       value: m
     })]
   })

@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   lockedPickerItem: "lockedPickerItem_ba8b8d",
   guildBadge: "guildBadge_ba8b8d",

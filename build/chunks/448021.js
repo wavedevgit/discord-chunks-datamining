@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   categoryRow: "categoryRow__1ea09",
   uncategorized: "uncategorized__1ea09",

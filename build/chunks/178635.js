@@ -13,8 +13,8 @@ var r = n(392711),
   c = n(695346),
   u = n(19780),
   d = n(115470),
-  _ = n(250454),
-  f = n(102824),
+  f = n(250454),
+  _ = n(102824),
   p = n(681926),
   h = n(531578);
 
@@ -142,7 +142,7 @@ function I(e) {
   if (__OVERLAY__) return !1;
   let {
     overrideEligibility: r
-  } = (0, f.j)({
+  } = (0, _.j)({
     location: "FeedbackManager"
   });
   if (r) return !0;
@@ -161,7 +161,7 @@ function I(e) {
 function T(e) {
   let {
     persistToBackend: t
-  } = (0, _.O)({
+  } = (0, f.O)({
     location: "FeedbackManager/".concat(e.feedbackType)
   });
   if (!t) return s.Z.hasHotspot(e.hotspot);
@@ -185,7 +185,7 @@ function S(e) {
 function A(e, t) {
   let {
     persistToBackend: n
-  } = (0, _.O)({
+  } = (0, f.O)({
     location: "FeedbackManager/".concat(e.feedbackType)
   });
   if (n) {
@@ -228,7 +228,7 @@ function R(e) {
 function P(e) {
   let {
     persistToBackend: t
-  } = (0, _.O)({
+  } = (0, f.O)({
     location: "FeedbackManager/".concat(e)
   });
   if (t) c.A2.updateSetting(t => b(g({}, t), {

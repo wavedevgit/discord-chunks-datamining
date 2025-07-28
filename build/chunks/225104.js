@@ -1,28 +1,25 @@
 /** Chunk was on 40897 **/
 r.d(t, {
-  Z: () => c
+  Z: () => a
 });
 var l = r(255367);
 r(73800);
-var n = r(866442),
-  i = r(91218),
-  o = r(518738),
-  a = r(134433),
-  s = r(981631);
+var n = r(91218),
+  i = r(518738),
+  o = r(134433);
 
-function c(e) {
-  var t;
+function a(e) {
   let {
-    guildId: r,
-    role: c,
-    size: f,
-    className: u
-  } = e, d = (0, o.p9)({
-    guildId: r,
-    roleId: c.id,
-    size: f
+    guildId: t,
+    role: r,
+    size: a,
+    className: s
+  } = e, c = (0, i.p9)({
+    guildId: t,
+    roleId: r.id,
+    size: a
   });
-  return null != d ? (0, l.jsx)(i.Z, function(e) {
+  return null != c ? (0, l.jsx)(n.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
         l = Object.keys(r);
@@ -40,10 +37,10 @@ function c(e) {
     }
     return e
   }({
-    className: u
-  }, d)) : (0, l.jsx)(a.Z, {
-    color: null != (t = c.colorString) ? t : (0, n.Rf)(s.p6O),
-    className: u,
-    size: f
+    className: s
+  }, c)) : (0, l.jsx)(o.Z, {
+    color: r.colorString,
+    className: s,
+    size: a
   })
 }

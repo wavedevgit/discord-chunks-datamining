@@ -1,15 +1,14 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
-  Z: () => s
+  Z: () => a
 });
 var r = n(73800),
   i = n(584825),
   l = n(14263);
 
-function s(e, t) {
+function a(e, t) {
   let n = (0, i.qi)(e),
-    s = (0, l.Z)(e);
+    a = (0, l.Z)(e);
   return r.useMemo(() => n.map(e => {
     var n, r, i;
     let l = null == e ? void 0 : e.role_id;
@@ -33,7 +32,7 @@ function s(e, t) {
     }({}, null != (n = null == t ? void 0 : t.ppgs[e.id]) ? n : {}), i = i = {
       key: e.id,
       subscriptionListing: e,
-      roleMemberCount: null == l || null == s ? void 0 : s[l]
+      roleMemberCount: null == l || null == a ? void 0 : a[l]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -44,5 +43,5 @@ function s(e, t) {
     })(Object(i)).forEach(function(e) {
       Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
     }), r
-  }), [n, null == t ? void 0 : t.ppgs, s])
+  }), [n, null == t ? void 0 : t.ppgs, a])
 }

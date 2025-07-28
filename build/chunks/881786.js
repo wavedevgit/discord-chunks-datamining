@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   override: "override_fa2640",
   settingsColumn: "settingsColumn_fa2640",

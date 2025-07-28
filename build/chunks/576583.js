@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   betaTag: "betaTag_d03b93",
   headerContainer: "headerContainer_d03b93",

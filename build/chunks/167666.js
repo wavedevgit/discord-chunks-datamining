@@ -29,7 +29,7 @@ function d(e) {
   return e
 }
 
-function _(e, t) {
+function f(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -40,8 +40,8 @@ function _(e, t) {
   return n
 }
 
-function f(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -108,7 +108,7 @@ class g extends(r = a.PureComponent) {
         fullscreenOnMobile: o
       } = e,
       l = p(e, ["className", "children", "tag", "size", "fullscreenOnMobile"]);
-    return (0, i.jsx)(r, f(d({
+    return (0, i.jsx)(r, _(d({
       className: s()(c.modal, t, a, {
         [c.fullscreenOnMobile]: o
       })

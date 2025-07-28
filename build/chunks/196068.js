@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(793030),
-  o = n(442837),
-  a = n(704215),
+  a = n(442837),
+  o = n(704215),
   c = n(481060),
   s = n(230711),
   u = n(2052),
@@ -27,7 +27,7 @@ var r = n(255367),
 let P = e => {
   let {
     dismissibleContent: t
-  } = e, n = (0, O.a0)(), P = (0, o.e7)([p.default], () => S.ZP.isPremiumExactly(p.default.getCurrentUser(), g.p9.TIER_2)), {
+  } = e, n = (0, O.a0)(), P = (0, a.e7)([p.default], () => S.ZP.isPremiumExactly(p.default.getCurrentUser(), g.p9.TIER_2)), {
     enabled: C,
     getNitroCTA: y
   } = E.g.useExperiment({
@@ -119,7 +119,7 @@ let P = e => {
         visibleContent: t,
         markAsDismissed: n
       } = e;
-      if (t === a.z.THIRD_PARTY_OUTBOUND_PROMO_NAGBAR) return v(n)
+      if (t === o.z.THIRD_PARTY_OUTBOUND_PROMO_NAGBAR) return v(n)
     }
   })
 }

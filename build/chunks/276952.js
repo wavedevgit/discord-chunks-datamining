@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => _
 });
 var r = n(255367);
 n(73800);
@@ -16,21 +16,21 @@ let d = Object.freeze({
     tension: 400,
     friction: 30
   }),
-  _ = Object.freeze({
+  f = Object.freeze({
     opacity: 0,
     height: 8,
     x: -4
   });
 
-function f(e) {
+function _(e) {
   let {
     selected: t = !1,
     hovered: n = !1,
     unread: i = !1,
-    disabled: f = !1,
+    disabled: _ = !1,
     className: p
   } = e;
-  t = !f && t, n = !f && n, i = !f && i;
+  t = !_ && t, n = !_ && n, i = !_ && i;
   let h = {
       opacity: 1,
       height: t ? 40 : n ? 20 : 8,
@@ -40,8 +40,8 @@ function f(e) {
       config: d,
       keys: e => e ? "pill" : "empty",
       initial: t || n || i ? h : null,
-      from: _,
-      leave: _,
+      from: f,
+      leave: f,
       enter: h,
       update: h
     }, n || document.hasFocus() ? "animate-always" : "animate-never"),

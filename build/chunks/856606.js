@@ -100,7 +100,7 @@ let Y = o.ZP.connectStores([T.Z, w.Z], () => {
 function J(e) {
   let {
     overwrite: t
-  } = e, n = (0, o.e7)([T.Z], () => T.Z.channel), l = (0, o.e7)([I.Z], () => null != n ? I.Z.getGuild(n.getGuildId()) : null), r = (0, o.e7)([R.Z], () => null != l ? R.Z.getRoles(l.id) : void 0), s = N.D.useExperiment({
+  } = e, n = (0, o.e7)([T.Z], () => T.Z.channel), l = (0, o.e7)([I.Z], () => null != n ? I.Z.getGuild(n.getGuildId()) : null), r = (0, o.e7)([R.Z], () => null != l && null != t && t.type === j.BN.ROLE ? R.Z.getRole(l.id, t.id) : void 0), s = N.D.useExperiment({
     guildId: null == n ? void 0 : n.guild_id,
     location: "ChannelSettingsPermissions"
   }).enabled;
@@ -108,16 +108,13 @@ function J(e) {
   let {
     guild_id: c,
     id: g
-  } = n, {
-    id: p
-  } = t, x = () => {
+  } = n, p = () => {
     var e;
-    if (null == I.Z.getGuild(c) || null == r) return "";
-    let t = r[p],
-      n = P.default.getUser(p),
+    if (null == I.Z.getGuild(c)) return "";
+    let n = t.type === j.BN.MEMBER ? P.default.getUser(t.id) : void 0,
       i = null != (e = null == n ? void 0 : n.username) ? e : "";
-    return null != t ? t.name : i
-  }, b = (e, i) => {
+    return null != r ? r.name : i
+  }, x = (e, i) => {
     if ("boolean" == typeof i) throw Error("Unexpected boolean action");
     let {
       allow: l,
@@ -131,11 +128,11 @@ function J(e) {
         r = a.IH(r, e)
     }
     if (_.Z.can(e, n, {
-        [p]: X(z({}, t), {
+        [t.id]: X(z({}, t), {
           allow: l,
           deny: r
         })
-      }))(0, m.kY)(n, p, l, r);
+      }))(0, m.kY)(n, t.id, l, r);
     else {
       let e;
       if (t.type === j.BN.MEMBER) {
@@ -150,38 +147,38 @@ function J(e) {
       }
       U.X(e)
     }
-  }, v = e => {
+  }, b = e => {
     let t = _.Z.can(H.Plq.ADMINISTRATOR, l) || _.Z.can(H.Plq.MANAGE_ROLES, n, void 0, void 0, !0);
     return n.isGuildStageVoice() && S.xS.has(e) ? G.intl.string(G.t.bTS5lZ) : !((!a.fS(e, H.Plq.MANAGE_ROLES) || t) && (null == e || _.Z.can(e, l) || t)) && G.intl.string(G.t.nOtPMD)
-  }, y = p === c, E = n.isForumLikeChannel() && a.e$(t.deny, H.Plq.SEND_MESSAGES), O = a.e$(t.deny, H.Plq.SEND_MESSAGES), w = a.e$(t.deny, H.Plq.READ_MESSAGE_HISTORY), Z = k.Z.generateChannelPermissionSpec(c, n, y, {
-    createPostsDisabled: E,
-    sendMessagesDisabled: O,
-    readMessageHistoryDisabled: w
+  }, v = t.id === c, y = n.isForumLikeChannel() && a.e$(t.deny, H.Plq.SEND_MESSAGES), E = a.e$(t.deny, H.Plq.SEND_MESSAGES), O = a.e$(t.deny, H.Plq.READ_MESSAGE_HISTORY), w = k.Z.generateChannelPermissionSpec(c, n, v, {
+    createPostsDisabled: y,
+    sendMessagesDisabled: E,
+    readMessageHistoryDisabled: O
   });
   return (0, i.jsxs)(C.ZP.Content, {
     className: F.layoutStyle,
-    children: [Z.map((e, n) => (0, i.jsx)(f.Z, {
+    children: [w.map((e, n) => (0, i.jsx)(f.Z, {
       spec: e,
       allow: t.allow,
       deny: t.deny,
-      onChange: b,
-      permissionRender: v,
+      onChange: x,
+      permissionRender: b,
       className: F.permissionsForm,
       inPinPermissionExperiment: s
-    }, n)), c === p ? null : (0, i.jsx)(d.zxk, {
+    }, n)), c === t.id ? null : (0, i.jsx)(d.zxk, {
       variant: "critical-secondary",
       text: G.intl.format(G.t.txPV7u, {
-        name: x()
+        name: p()
       }),
       onClick: () => {
-        let e = x();
+        let e = p();
         u.Z.show({
           title: G.intl.string(G.t.GuPYQE),
           body: G.intl.format(G.t.xERCnZ, {
             name: e
           }),
           cancelText: G.intl.string(G.t["ETE/oK"]),
-          onConfirm: () => h.Z.clearPermissionOverwrite(g, p)
+          onConfirm: () => h.Z.clearPermissionOverwrite(g, t.id)
         })
       }
     })]
@@ -236,7 +233,7 @@ function Q(e) {
     onClose: r,
     onSelect: a,
     position: c
-  } = e, d = (0, o.e7)([R.Z], () => R.Z.getRoles(t.id)), u = (0, o.Wu)([Z.ZP], () => Z.ZP.getMemberIds(t.id));
+  } = e, d = (0, o.e7)([R.Z], () => R.Z.getSortedRoles(t.id)), u = (0, o.Wu)([Z.ZP], () => Z.ZP.getMemberIds(t.id));
   return (0, i.jsx)(y.Z, {
     label: G.intl.string(G.t.lT5Ztr),
     placeholder: G.intl.string(G.t.V2pZRk),
@@ -258,7 +255,7 @@ function Q(e) {
         user: e
       })
     },
-    onFilterResults: (e, t) => 0 === t ? s()(d).filter(t => null == l[t.id] && e(t.name)).sortBy(e => -e.position).value() : s()(u).map(P.default.getUser).filter(A.lm).filter(t => null == l[t.id] && e(t.username.toLowerCase())).sortBy(e => e.username.toLowerCase()).value(),
+    onFilterResults: (e, t) => 0 === t ? d.filter(t => null == l[t.id] && e(t.name)) : s()(u).map(P.default.getUser).filter(A.lm).filter(t => null == l[t.id] && e(t.username.toLowerCase())).sortBy(e => e.username.toLowerCase()).value(),
     onQueryChange: e => {
       L.Z.requestMembers(t.id, e, 20)
     },
@@ -280,13 +277,13 @@ function K() {
     f = null == t ? void 0 : t.getGuildId(),
     {
       guild: x,
-      guildRoles: y
+      sortedGuildRoles: y
     } = (0, o.cj)([I.Z, R.Z], () => {
       let e = null != f ? I.Z.getGuild(f) : void 0,
-        t = null != e ? R.Z.getRoles(e.id) : void 0;
+        t = null != e ? R.Z.getSortedRoles(e.id) : void 0;
       return {
         guild: e,
-        guildRoles: t
+        sortedGuildRoles: t
       }
     }, [f]),
     N = (0, W.Z)(f, r),
@@ -342,7 +339,10 @@ function K() {
       }).then(() => (0, m.Aj)(e))
     };
   null != r && null == r[x.id] && (r[x.id] = B.we(x.id));
-  let P = s()(r).filter(e => e.type === j.BN.ROLE).map(e => y[e.id]).filter(A.lm).sortBy(e => -e.position).map(e => (0, i.jsx)(p.Z, {
+  let P = y.filter(e => {
+      var t;
+      return (null == (t = r[e.id]) ? void 0 : t.type) === j.BN.ROLE
+    }).map(e => (0, i.jsx)(p.Z, {
       theme: S,
       roleStyle: O,
       id: e.id,
@@ -356,8 +356,8 @@ function K() {
         role: e
       }),
       children: e.name
-    }, "".concat(a, "-").concat(e.id))).value(),
-    L = s()(N).sortBy(e => e.username.toLowerCase()).map(e => {
+    }, "".concat(a, "-").concat(e.id))),
+    A = s()(N).sortBy(e => e.username.toLowerCase()).map(e => {
       let t = e.getAvatarURL(x.id, 24);
       return (0, i.jsx)(p.Z, {
         id: e.id,
@@ -415,7 +415,7 @@ function K() {
             })
           }))
         })
-      })(), P, L, (0, i.jsxs)(l.Fragment, {
+      })(), P, A, (0, i.jsxs)(l.Fragment, {
         children: [(0, i.jsx)(d.njP.Separator, {
           style: {
             marginTop: 20,

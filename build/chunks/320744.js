@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   formSplit: "formSplit__4ecd1",
   formSplitHalf: "formSplitHalf__4ecd1",

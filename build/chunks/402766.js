@@ -1,14 +1,13 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => s
 }), n(415506);
 var r = n(255367);
 n(73800);
 var i = n(481060),
   l = n(981631);
 
-function s(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -27,7 +26,7 @@ function s(e) {
   return e
 }
 
-function a(e) {
+function s(e) {
   var {
     tier: t
   } = e, n = function(e, t) {
@@ -47,11 +46,11 @@ function a(e) {
   }(e, ["tier"]);
   switch (t) {
     case l.Eu4.TIER_1:
-      return (0, r.jsx)(i.XGX, s({}, n));
+      return (0, r.jsx)(i.XGX, a({}, n));
     case l.Eu4.TIER_2:
-      return (0, r.jsx)(i.$Eu, s({}, n));
+      return (0, r.jsx)(i.$Eu, a({}, n));
     case l.Eu4.TIER_3:
-      return (0, r.jsx)(i.iOe, s({}, n));
+      return (0, r.jsx)(i.iOe, a({}, n));
     case l.Eu4.NONE:
       return null;
     default:

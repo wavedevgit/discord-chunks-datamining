@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.r(e.exports = {
   container: "container__6cd3a",
   clickableContainer: "clickableContainer__6cd3a",

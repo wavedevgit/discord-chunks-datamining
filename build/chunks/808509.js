@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   dividerContainer: "dividerContainer__1abf5",
   dividerIconContainer: "dividerIconContainer__1abf5",

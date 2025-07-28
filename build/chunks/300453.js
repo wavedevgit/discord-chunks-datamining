@@ -1,18 +1,17 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
-  Z: () => s
+  Z: () => a
 });
 var r = n(255367);
 n(73800);
 var i = n(481060),
   l = n(282338);
 
-function s(e) {
+function a(e) {
   let {
     step: t,
     header: n,
-    children: s
+    children: a
   } = e;
   return (0, r.jsxs)("div", {
     className: l.triggerContainer,
@@ -35,9 +34,9 @@ function s(e) {
           variant: "text-sm/normal",
           children: n
         })
-      }), null != s && (0, r.jsx)("div", {
+      }), null != a && (0, r.jsx)("div", {
         className: l.triggerSettingsContainer,
-        children: s
+        children: a
       })]
     })]
   })

@@ -22,12 +22,12 @@ function _(e) {
   } = e, _ = (0, a.e7)([d.Z], () => {
     var e, n;
     return null != (n = null == (e = d.Z.getStateForGuild(t)) ? void 0 : e.appliedBoosts) ? n : 0
-  }), x = (0, a.e7)([u.Z], () => u.Z.getAppliedGuildBoostsForGuild(t), [t]), v = _ - o.useMemo(() => {
+  }), x = (0, a.e7)([u.Z], () => u.Z.getAppliedGuildBoostsForGuild(t), [t]), g = _ - o.useMemo(() => {
     var e, t, n;
     return null != (n = null == x || null == (t = x.filter) || null == (e = t.call(x, e => !e.ended && null == e.endsAt)) ? void 0 : e.length) ? n : 0
   }, [x]);
-  if (v <= 0) return null;
-  let g = n.some(e => e.skuId === i.A$);
+  if (g <= 0) return null;
+  let v = n.some(e => e.skuId === i.A$);
   return (0, r.jsxs)("div", {
     className: f.container,
     children: [(0, r.jsx)(l.Mgn, {
@@ -40,9 +40,9 @@ function _(e) {
     }), (0, r.jsxs)(s.xv, {
       variant: "text-sm/medium",
       children: [m.intl.formatToPlainString(p.default.iAaAiI, {
-        boostCount: v,
+        boostCount: g,
         perksString: n.map(e => e.title).join(", ")
-      }), g && (0, r.jsx)(s.xv, {
+      }), v && (0, r.jsx)(s.xv, {
         variant: "text-sm/medium",
         color: "text-feedback-warning",
         children: m.intl.string(p.default.Sfr0Jy)

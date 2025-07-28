@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  o = n.n(l),
-  a = n(91192),
+  a = n.n(l),
+  o = n(91192),
   c = n(442837),
   s = n(518738),
   u = n(628238),
@@ -97,7 +97,7 @@ let h = i.memo(function(e) {
     allowHeading: G || B,
     allowLinks: !0,
     previewLinkTarget: !0
-  }), z = i.type === C.uaV.REPLY ? i.messageReference : void 0, Y = (0, c.e7)([d.Z], () => d.Z.getMessageByReference(z)), K = (0, a.JA)(i.id), q = (0, I.ZP)(i), X = (0, c.e7)([_.Z], () => i.hasFlag(C.iLy.HAS_THREAD) && _.Z.getChannel(E.default.castMessageIdAsChannelId(i.id))), Q = (0, s.p9)({
+  }), z = i.type === C.uaV.REPLY ? i.messageReference : void 0, Y = (0, c.e7)([d.Z], () => d.Z.getMessageByReference(z)), K = (0, o.JA)(i.id), q = (0, I.ZP)(i), X = (0, c.e7)([_.Z], () => i.hasFlag(C.iLy.HAS_THREAD) && _.Z.getChannel(E.default.castMessageIdAsChannelId(i.id))), Q = (0, s.p9)({
     guildId: Z.guild_id,
     roleId: q.iconRoleId
   }), J = (0, N.Z)({
@@ -107,7 +107,7 @@ let h = i.memo(function(e) {
   }), $ = (0, T.iG)(i), ee = (0, T.Gx)(i);
   return (0, r.jsx)(p.Z, b({
     compact: l,
-    className: o()(h, {
+    className: a()(h, {
       [y.ephemeral]: (0, O.Pv)(i),
       [y.disableInteraction]: V
     }),

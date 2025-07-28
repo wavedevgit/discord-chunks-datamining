@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   Z: () => m
 }), n(953529);
@@ -7,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(120356),
   l = n.n(i),
-  s = n(481060),
-  a = n(158638),
+  a = n(481060),
+  s = n(158638),
   o = n(267642),
   c = n(981631),
   d = n(388032),
@@ -18,36 +17,36 @@ let m = e => {
       guildFeature: m,
       guild: g,
       className: p,
-      hideTooltip: f = !1,
-      tooltipPosition: h = "left",
+      hideTooltip: h = !1,
+      tooltipPosition: f = "left",
       onClick: x
     } = e,
     b = g.features.has(m),
-    j = (0, a.AR)(g.id, "GuildSettingsBoostPerks"),
+    j = (0, s.AR)(g.id, "GuildSettingsBoostPerks"),
     v = (0, o._p)(m);
   return !b && m === c.oNc.VANITY_URL && j ? null : (b ? (null != v && (i = d.intl.string(d.t.hUgjyM)), t = (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(s.$Eu, {
-      color: s.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
+    children: [(0, r.jsx)(a.$Eu, {
+      color: a.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
       className: u.unlockedIcon
-    }), (0, r.jsx)(s.X6q, {
+    }), (0, r.jsx)(a.X6q, {
       variant: "eyebrow",
       className: u.description,
       children: d.intl.string(d.t["0O+87u"])
     })]
   })) : (null != v && (i = d.intl.string(d.t.L2wYYm)), t = (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(s.$Eu, {
+    children: [(0, r.jsx)(a.$Eu, {
       color: "currentColor",
       className: u.icon
-    }), (0, r.jsx)(s.X6q, {
+    }), (0, r.jsx)(a.X6q, {
       variant: "eyebrow",
       className: u.description,
       children: null != v && (0, o.e9)(v)
     })]
-  })), n = f || null == i ? (0, r.jsx)("div", {
+  })), n = h || null == i ? (0, r.jsx)("div", {
     className: l()(u.availabilityIndicator, p),
     children: t
-  }) : (0, r.jsx)(s.ua7, {
-    position: h,
+  }) : (0, r.jsx)(a.ua7, {
+    position: f,
     text: i,
     children: e => {
       var n, i;
@@ -82,7 +81,7 @@ let m = e => {
         Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
       }), n))
     }
-  }), null == x || b) ? n : (0, r.jsx)(s.P3F, {
+  }), null == x || b) ? n : (0, r.jsx)(a.P3F, {
     onClick: x,
     className: u.clickable,
     children: n

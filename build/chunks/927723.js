@@ -35,7 +35,7 @@ function d(e) {
   return e
 }
 
-function _(e, t) {
+function f(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -46,8 +46,8 @@ function _(e, t) {
   return n
 }
 
-function f(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -60,7 +60,7 @@ function p(e) {
     let {
       default: e
     } = await n.e("7285").then(n.bind(n, 951269));
-    return n => (0, r.jsx)(e, f(d({}, n), {
+    return n => (0, r.jsx)(e, _(d({}, n), {
       kind: t
     }))
   })
@@ -71,7 +71,7 @@ function h() {
     let {
       ConfirmModal: e
     } = await Promise.resolve().then(n.bind(n, 878678));
-    return t => (0, r.jsx)(e, f(d({}, t), {
+    return t => (0, r.jsx)(e, _(d({}, t), {
       header: l.intl.string(c.default.odgSTk),
       confirmText: l.intl.string(l.t.BddRzc),
       confirmButtonColor: i.zx.Colors.BRAND,

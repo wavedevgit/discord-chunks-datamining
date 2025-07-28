@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   container: "container__05e8e",
   formTitle: "formTitle__05e8e",

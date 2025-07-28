@@ -28,8 +28,8 @@ var i = n(255367),
   w = n(236289),
   P = n(788080),
   T = n(800530),
-  C = n(981631),
-  S = n(217702),
+  S = n(981631),
+  C = n(217702),
   N = n(966378);
 
 function k(e) {
@@ -85,12 +85,12 @@ let L = (e, t, n, i) => {
       },
       nonce: e.id,
       content: e.content,
-      type: C.uaV.DEFAULT,
-      channelId: C.lds
+      type: S.uaV.DEFAULT,
+      channelId: S.lds
     })), {
       timestamp: new Date(A.default.extractTimestamp(e.id)).toISOString(),
       attachments: a,
-      state: C.yb.SENT
+      state: S.yb.SENT
     }))
   },
   U = e => {
@@ -162,10 +162,10 @@ let L = (e, t, n, i) => {
               width: e.width,
               spoiler: e.spoiler,
               contentType: e.content_type,
-              srcIsAnimated: (0, E.yE)(null != (n = e.flags) ? n : 0, C.J0y.IS_ANIMATED)
+              srcIsAnimated: (0, E.yE)(null != (n = e.flags) ? n : 0, S.J0y.IS_ANIMATED)
             },
             message: t,
-            mediaLayoutType: S.hV.MOSAIC,
+            mediaLayoutType: C.hV.MOSAIC,
             autoPlayGif: !1,
             canRemoveItem: !1,
             isSingleMosaicItem: r,
@@ -237,6 +237,7 @@ function D(e) {
       childrenHeader: (0, b.Z)({
         author: I(k({}, l), {
           colorString: "",
+          colorStrings: null,
           nick: null != (t = null == l ? void 0 : l.username) ? t : m
         }),
         message: y,

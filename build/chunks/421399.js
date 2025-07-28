@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r, i = n(255367),
   l = n(73800),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   c = n(873546),
   s = n(442837),
   u = n(573385),
@@ -82,7 +82,7 @@ function k(e) {
   let {
     author: n,
     message: r,
-    channel: o,
+    channel: a,
     userOverride: p,
     compact: j = !1,
     withMentionPrefix: k = !1,
@@ -98,7 +98,7 @@ function k(e) {
     decorations: Y,
     previewGuildId: K,
     subscribeToGroupId: q
-  } = e, X = l.useRef(null), Q = l.useContext(f.Z), J = null != (t = null == o ? void 0 : o.guild_id) ? t : Q, {
+  } = e, X = l.useRef(null), Q = l.useContext(f.Z), J = null != (t = null == a ? void 0 : a.guild_id) ? t : Q, {
     analyticsLocations: $
   } = (0, I.ZP)(O.Z.USERNAME), ee = k ? "@" : "", {
     nick: et,
@@ -106,9 +106,9 @@ function k(e) {
     colorStrings: er,
     colorRoleName: ei,
     displayNameStyles: el
-  } = n, eo = (0, s.e7)([E.Z], () => E.Z.roleStyle), ea = "username" === eo, ec = (0, R.X$)(), es = (0, N.j)({
+  } = n, ea = (0, s.e7)([E.Z], () => E.Z.roleStyle), eo = "username" === ea, ec = (0, R.X$)(), es = (0, N.j)({
     displayNameStyles: el
-  }), eu = (0, s.e7)([C.Z], () => null == n.guildId || null == n.colorRoleId ? null : C.Z.getRole(n.guildId, n.colorRoleId)), ed = (0, A.yH)(null != K ? K : J, eu), e_ = (0, h.Z)(r), eE = l.useContext(u.d), eO = ed && (0, g.S2)(n), eI = ea && eO;
+  }), eu = (0, s.e7)([C.Z], () => null == n.guildId || null == n.colorRoleId ? null : C.Z.getRole(n.guildId, n.colorRoleId)), ed = (0, A.yH)(null != K ? K : J, eu), e_ = (0, h.Z)(r), eE = l.useContext(u.d), eO = ed && (0, g.S2)(n), eI = eo && eO;
   l.useEffect(() => {
     if (null == q || !eI || null == eE) return;
     let {
@@ -120,20 +120,24 @@ function k(e) {
     gradientStyle: ep,
     gradientClassname: eT
   } = (0, _.Icv)({
-    primaryColor: null == er ? void 0 : er.primaryColor,
-    secondaryColor: null == er ? void 0 : er.secondaryColor,
-    tertiaryColor: null == er ? void 0 : er.tertiaryColor,
+    colorStrings: er,
     roleStyle: "username",
     includeConvenienceGlow: !0,
     animateGradient: null == eE ? void 0 : eE.animate
-  }), eS = (0, d.EJ)(ee + et), eN = (null == o ? void 0 : o.isPrivate()) && null != el, ef = {
-    className: a()([M.username, eI && eT, es]),
+  }), eS = (0, d.EJ)(ee + et), eN = (null == a ? void 0 : a.isPrivate()) && null != el, ef = {
+    className: o()([M.username, eI && eT, es]),
     style: (() => {
-      if (ea) return eI && null != er ? Z(v({}, ep), {
-        textDecorationColor: null == er ? void 0 : er.primaryColor
-      }) : null != en ? {
-        color: en
-      } : void 0
+      if (eo) {
+        if (eI && null != er) {
+          var e;
+          return Z(v({}, ep), {
+            textDecorationColor: null != (e = null == er ? void 0 : er.primaryColor) ? e : void 0
+          })
+        }
+        return null != en ? {
+          color: en
+        } : void 0
+      }
     })(),
     onClick: G,
     onContextMenu: B,
@@ -186,20 +190,20 @@ function k(e) {
           tag: "span",
           innerRef: X
         }, n, ef), {
-          className: a()(ef.className, M.clickable, V)
+          className: o()(ef.className, M.clickable, V)
         })), em]
       })
     }
   }) : (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(_.P3F, Z(v({}, ef), {
-      className: a()(ef.className, V)
+      className: o()(ef.className, V)
     })), em]
   }), eR = null != Y ? Y[0] : null, eP = null != Y ? Y[1] : null;
   return (0, i.jsxs)(I.Gt, {
     value: $,
     children: [null != eR && !w && j ? (0, i.jsxs)(i.Fragment, {
       children: [" ", eR, " "]
-    }) : null, "dot" === eo ? (0, i.jsx)(_.FhE, {
+    }) : null, "dot" === ea ? (0, i.jsx)(_.FhE, {
       color: en,
       colors: eO ? er : null,
       name: ei,

@@ -1,6 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
-
 function r(e) {
   return "".concat(location.protocol).concat(window.GLOBAL_ENV.API_ENDPOINT, "/guilds/").concat(e, "/widget.json")
 }

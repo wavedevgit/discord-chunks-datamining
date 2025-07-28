@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   keywordTextAreaContainer: "keywordTextAreaContainer__4546e",
   keywordTextArea: "keywordTextArea__4546e",

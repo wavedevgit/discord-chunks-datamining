@@ -1,15 +1,14 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   O4: () => x,
-  OA: () => h,
+  OA: () => f,
   Wu: () => b
 }), n(388685);
 var r = n(255367),
   i = n(73800),
   l = n(399606),
-  s = n(755721),
-  a = n(481060),
+  a = n(755721),
+  s = n(481060),
   o = n(45966),
   c = n(637853),
   d = n(983135),
@@ -36,7 +35,7 @@ function p(e) {
   return e
 }
 
-function f(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,7 +48,7 @@ function f(e, t) {
   }), e
 }
 
-function h(e, t) {
+function f(e, t) {
   let n = (0, l.Wu)([u.Z], () => (0, c.kl)(e, t, u.Z.editedOnboardingPrompts));
   return [(0, l.Wu)([u.Z], () => (0, c.kl)(e, t, u.Z.editedOnboardingPrompts, c.V7)), n]
 }
@@ -69,25 +68,25 @@ function b(e) {
     className: n
   } = e, c = (0, l.e7)([o.Z], () => o.Z.isAdvancedMode(t)), u = i.useCallback(() => {
     let e = c ? m.Un.ONBOARDING_DEFAULT : m.Un.ONBOARDING_ADVANCED;
-    c ? (0, a.h7j)(n => (0, r.jsx)(a.ConfirmModal, f(p({
+    c ? (0, s.h7j)(n => (0, r.jsx)(s.ConfirmModal, h(p({
       header: g.intl.string(g.t["49+ONj"]),
       confirmText: g.intl.string(g.t.R9GHyc),
       cancelText: g.intl.string(g.t["ETE/oK"]),
-      confirmButtonColor: s.zx.Colors.BRAND,
+      confirmButtonColor: a.zx.Colors.BRAND,
       onConfirm: () => (0, d.Ts)(t, e)
     }, n), {
-      children: (0, r.jsx)(a.Text, {
+      children: (0, r.jsx)(s.Text, {
         variant: "text-md/normal",
         children: g.intl.string(g.t.TLkoOj)
       })
-    }))) : (0, a.h7j)(n => (0, r.jsx)(a.ConfirmModal, f(p({
+    }))) : (0, s.h7j)(n => (0, r.jsx)(s.ConfirmModal, h(p({
       header: g.intl.string(g.t.YB9xUF),
       confirmText: g.intl.string(g.t.ts6u6u),
       cancelText: g.intl.string(g.t["ETE/oK"]),
-      confirmButtonColor: s.zx.Colors.BRAND,
+      confirmButtonColor: a.zx.Colors.BRAND,
       onConfirm: () => (0, d.Ts)(t, e)
     }, n), {
-      children: (0, r.jsx)(a.Text, {
+      children: (0, r.jsx)(s.Text, {
         variant: "text-md/normal",
         children: g.intl.string(g.t.BcGGVl)
       })
@@ -95,9 +94,9 @@ function b(e) {
   }, [t, c]);
   return (0, r.jsx)("div", {
     className: n,
-    children: (0, r.jsx)(a.eee, {
+    children: (0, r.jsx)(s.eee, {
       onClick: u,
-      children: (0, r.jsx)(a.Text, {
+      children: (0, r.jsx)(s.Text, {
         variant: "text-sm/medium",
         color: "text-link",
         children: c ? g.intl.string(g.t.OmpxW1) : g.intl.string(g.t.ozsQBA)

@@ -39,7 +39,7 @@ let d = function(e) {
         nick: g,
         botClass: u.botTag,
         className: l()(u.discordTag, {
-          [u.alignPomelo]: t.isPomelo()
+          [u.alignPomelo]: t.hasUniqueUsername()
         }),
         usernameClass: u.username,
         discriminatorClass: u.discriminator,

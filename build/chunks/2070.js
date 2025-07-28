@@ -1,19 +1,18 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
-  Z: () => s
+  Z: () => a
 }), n(388685);
 var r = n(73800),
   i = n(881052),
   l = n(728345);
 
-function s() {
-  let [e, t] = r.useState(!1), [n, s] = r.useState(), a = r.useRef(null);
+function a() {
+  let [e, t] = r.useState(!1), [n, a] = r.useState(), s = r.useRef(null);
   return {
     createGuildApplication: async (e, n, r, o) => {
-      s(void 0);
+      a(void 0);
       try {
-        return t(!0), null == a.current && (a.current = await l.ZP.createApplication({
+        return t(!0), null == s.current && (s.current = await l.ZP.createApplication({
           name: o,
           guildId: e.id,
           type: r,
@@ -23,7 +22,7 @@ function s() {
           includeTeam: !0
         }), !0
       } catch (e) {
-        return s(new i.Hx(e)), !1
+        return a(new i.Hx(e)), !1
       } finally {
         t(!1)
       }

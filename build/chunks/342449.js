@@ -48,7 +48,7 @@ function m(e) {
       text: u.intl.string(u.t["wUNQ+/"])
     }, e.section), [j.length, v.length]),
     N = l.useCallback(e => 1 === e && j.length > 0 || 2 === e && (j.length > 0 || v.length > 0) ? 64 : 32, [j.length, v.length]),
-    P = l.useCallback(() => {
+    S = l.useCallback(() => {
       var e;
       let t = null == (e = y.current) ? void 0 : e.getScrollerState();
       if (null == t) return;
@@ -80,7 +80,7 @@ function m(e) {
     renderRow: O,
     renderSection: w,
     chunkSize: 20,
-    onScroll: p ? P : void 0
+    onScroll: p ? S : void 0
   })
 }
 

@@ -12,8 +12,8 @@ var r = n(392711),
   c = n(703656),
   u = n(306680),
   d = n(709054),
-  _ = n(804932),
-  f = n(787879),
+  f = n(804932),
+  _ = n(787879),
   p = n(982183),
   h = n(981631);
 
@@ -70,9 +70,9 @@ async function T(e) {
     s = E(e, ["preload"]);
   let c = Date.now(),
     h = [],
-    m = f.Z.getNotifyingChannelIds();
+    m = _.Z.getNotifyingChannelIds();
   if (null == m) return;
-  let g = f.Z.getChannelInfoMap();
+  let g = _.Z.getChannelInfoMap();
   for (let e of m) {
     if (a && !u.ZP.hasUnread(e)) continue;
     let r = u.ZP.lastMessageId(e),
@@ -101,7 +101,7 @@ async function T(e) {
       channelsFetched: h.length - +!!I,
       mentionsFetched: I
     };
-    a && (0, _.CP)(e), i.Z.dispatch({
+    a && (0, f.CP)(e), i.Z.dispatch({
       type: "NOTIFICATIONS_INBOX_LOAD_MORE_INBOX_SUCCESS",
       preload: a,
       analyticsPayload: e
@@ -118,7 +118,7 @@ let S = {
     var {
       preload: t = !1
     } = e, n = E(e, ["preload"]);
-    if (!f.Z.canLoadMore({
+    if (!_.Z.canLoadMore({
         preload: t
       })) return !1;
     i.Z.dispatch({
@@ -141,8 +141,8 @@ let S = {
       type: "NOTIFICATIONS_INBOX_ITEM_CLICK",
       messageId: t.id,
       isUnread: r
-    }), u && (0, _.Qz)({
-      interactionType: _.s_.CLICK,
+    }), u && (0, f.Qz)({
+      interactionType: f.s_.CLICK,
       message: t,
       viewId: l
     }), r && s.In(t.channel_id, {

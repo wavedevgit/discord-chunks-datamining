@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   description: "description__80a8f",
   switch: "switch__80a8f",

@@ -19,8 +19,8 @@ var i = t(255367),
   I = t(51144),
   v = t(897285),
   h = t(978227),
-  C = t(894017),
-  E = t(79874),
+  E = t(894017),
+  C = t(79874),
   b = t(315416),
   x = t(236373),
   T = t(854698),
@@ -32,20 +32,20 @@ var i = t(255367),
   D = t(244231);
 
 function O(e) {
-  var n;
+  var n, t;
   let {
-    creator: t,
-    guildId: l,
-    channelId: r
+    creator: l,
+    guildId: r,
+    channelId: a
   } = e, {
-    analyticsLocations: a
-  } = (0, c.ZP)(), s = (0, d.e7)([m.ZP], () => m.ZP.getMember(l, t.id), [t, l]), u = (0, g.X7)(null == s ? void 0 : s.guildId, null == s ? void 0 : s.userId, null == s ? void 0 : s.colorStrings);
+    analyticsLocations: s
+  } = (0, c.ZP)(), u = (0, d.e7)([m.ZP], () => m.ZP.getMember(r, l.id), [l, r]), _ = (0, g.X7)(null == u ? void 0 : u.guildId, null == u ? void 0 : u.userId, null != (n = null == u ? void 0 : u.colorStrings) ? n : null);
   return (0, i.jsxs)("div", {
     className: D.row,
     children: [(0, i.jsx)(o.qEK, {
       size: o.EFr.SIZE_20,
-      src: t.getAvatarURL(l, 20),
-      "aria-label": null != (n = null == s ? void 0 : s.nick) ? n : I.ZP.getName(t),
+      src: l.getAvatarURL(r, 20),
+      "aria-label": null != (t = null == u ? void 0 : u.nick) ? t : I.ZP.getName(l),
       className: D.icon
     }), (0, i.jsx)(o.Text, {
       color: "header-secondary",
@@ -55,19 +55,19 @@ function O(e) {
           var e, n;
           return (0, i.jsx)(o.P3F, {
             onClick: () => (0, p.openUserProfileModal)({
-              guildId: l,
-              channelId: r,
-              userId: t.id,
-              roleId: null == s ? void 0 : s.colorRoleId,
-              sourceAnalyticsLocations: a
+              guildId: r,
+              channelId: a,
+              userId: l.id,
+              roleId: null == u ? void 0 : u.colorRoleId,
+              sourceAnalyticsLocations: s
             }),
             className: D.creator,
             tag: "span",
             role: "link",
             children: (0, i.jsx)(o.PUh, {
-              name: null != (e = null == s ? void 0 : s.nick) ? e : I.ZP.getName(t),
-              color: null != (n = null == s ? void 0 : s.colorString) ? n : void 0,
-              roleColors: u
+              name: null != (e = null == u ? void 0 : u.nick) ? e : I.ZP.getName(l),
+              colorString: null != (n = null == u ? void 0 : u.colorString) ? n : null,
+              colorStrings: _
             })
           }, "open-user-profile")
         }
@@ -155,9 +155,9 @@ function Z(e) {
   } = e, I = (0, d.e7)([f.Z], () => null != f.Z.getGuild(t.id), [t.id]), {
     startTime: S,
     endTime: Z
-  } = (0, E.ZP)(n, p), P = (0, b.Z)(n.guild_id, n.id, p), z = l.useCallback(e => {
+  } = (0, C.ZP)(n, p), P = (0, b.Z)(n.guild_id, n.id, p), z = l.useCallback(e => {
     e.stopPropagation(), null != n && (0, s.Bk)(n)
-  }, [n]), A = (0, C.Z)(p, n.id), R = (0, h.Z)(n);
+  }, [n]), A = (0, E.Z)(p, n.id), R = (0, h.Z)(n);
   l.useEffect(() => {
     v.Z.getGuildEventUserCounts(t.id, n.id, null != p ? [p] : []), v.Z.getGuildEventsForCurrentUser(t.id)
   }, [t.id, n.id, p]);

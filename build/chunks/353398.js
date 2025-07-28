@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   Q5: () => T,
   Sf: () => S,
@@ -7,8 +6,8 @@ n.d(t, {
 }), n(781311), n(953529), n(388685);
 var r, i = n(255367),
   l = n(73800),
-  s = n(120356),
-  a = n.n(s),
+  a = n(120356),
+  s = n.n(a),
   o = n(512722),
   c = n.n(o),
   d = n(442837),
@@ -16,8 +15,8 @@ var r, i = n(255367),
   m = n(755721),
   g = n(481060),
   p = n(570140),
-  f = n(484614),
-  h = n(852860),
+  h = n(484614),
+  f = n(852860),
   x = n(881052),
   b = n(751189),
   j = n(409059),
@@ -73,7 +72,7 @@ function T() {
   let [e, t] = l.useState(!1), n = async () => {
     t(!0), await S.save(), t(!1)
   };
-  return (0, i.jsx)(h.Z, {
+  return (0, i.jsx)(f.Z, {
     submitting: e,
     onReset: S.reset,
     onSave: n,
@@ -112,8 +111,8 @@ function R() {
   let t = (0, d.e7)([S], () => S.error),
     [n, r] = l.useState(!0),
     {
-      loading: s,
-      guildTemplate: a
+      loading: a,
+      guildTemplate: s
     } = function(e) {
       let [t, n] = l.useState(!0);
       return l.useEffect(() => {
@@ -131,14 +130,14 @@ function R() {
       }
     }(e.id);
   if (l.useEffect(() => {
-      if (n && !s) {
-        if (null != a) {
+      if (n && !a) {
+        if (null != s) {
           var e, t;
-          S.setName(null != (e = a.name) ? e : ""), S.setDescription(null != (t = a.description) ? t : "")
+          S.setName(null != (e = s.name) ? e : ""), S.setDescription(null != (t = s.description) ? t : "")
         }
         r(!1)
       }
-    }, [n, a, s]), l.useEffect(() => () => {
+    }, [n, s, a]), l.useEffect(() => () => {
       S.reset(), S.setError(null)
     }, []), n) return null != t ? (0, i.jsx)(g.Text, {
     color: "text-danger",
@@ -151,7 +150,7 @@ function R() {
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(A, {}), (0, i.jsx)(k, {
       guild: e,
-      guildTemplate: a
+      guildTemplate: s
     }), o ? (0, i.jsx)(g.Text, {
       className: N.marginTop8,
       color: "text-danger",
@@ -252,12 +251,12 @@ function A() {
   let e = (0, d.e7)([S], () => S.name),
     t = (0, d.e7)([S], () => S.description),
     n = (0, d.e7)([S], () => S.error),
-    [r, s] = l.useState(!1),
-    a = l.useCallback(() => {
-      s(!1)
+    [r, a] = l.useState(!1),
+    s = l.useCallback(() => {
+      a(!1)
     }, []),
     o = l.useCallback(() => {
-      s(!0)
+      a(!0)
     }, []),
     c = l.useMemo(() => {
       if (!(r || e.length < 1 || P(e))) return y.intl.string(y.t.IHAlh4)
@@ -273,7 +272,7 @@ function A() {
         onChange: e => S.setName(e),
         placeholder: y.intl.string(y.t.bMlpvr),
         maxLength: 100,
-        onBlur: a,
+        onBlur: s,
         onFocus: o,
         autoFocus: !0,
         error: c
@@ -302,7 +301,7 @@ function k(e) {
   }) : (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(g.xJW, {
       title: y.intl.string(y.t.zGGcLy),
-      children: (0, i.jsx)(f.Z, {
+      children: (0, i.jsx)(h.Z, {
         buttonLook: m.zx.Looks.FILLED,
         buttonColor: m.zx.Colors.BRAND,
         value: (0, v.Z)(n.code)
@@ -313,7 +312,7 @@ function k(e) {
       variant: "text-sm/normal",
       children: y.intl.string(y.t.aWsjtL)
     }), (0, i.jsxs)("div", {
-      className: a()(N.marginTop20, C.buttonContainer),
+      className: s()(N.marginTop20, C.buttonContainer),
       children: [n.isDirty && (0, i.jsx)(M, {
         guild: t,
         guildTemplate: n
@@ -338,21 +337,21 @@ function k(e) {
 function L(e) {
   let {
     guild: t
-  } = e, n = (0, d.e7)([S], () => S.name), [r, s] = l.useState(!1), a = async () => {
-    S.setError(null), s(!0);
+  } = e, n = (0, d.e7)([S], () => S.name), [r, a] = l.useState(!1), s = async () => {
+    S.setError(null), a(!0);
     try {
       await b.Z.createGuildTemplate(t.id, S.name, S.description)
     } catch (e) {
       S.setError(new x.Hx(e))
     }
-    s(!1)
+    a(!1)
   };
   return (0, i.jsx)(g.zxk, {
     variant: "primary",
     text: y.intl.string(y.t.Wxdi8P),
     loading: r,
     disabled: !P(n),
-    onClick: a
+    onClick: s
   })
 }
 
@@ -360,14 +359,14 @@ function M(e) {
   let {
     guild: t,
     guildTemplate: n
-  } = e, [r, s] = l.useState(!1), a = async () => {
-    S.setError(null), s(!0);
+  } = e, [r, a] = l.useState(!1), s = async () => {
+    S.setError(null), a(!0);
     try {
       await b.Z.syncGuildTemplate(t.id, n.code)
     } catch (e) {
       S.setError(new x.Hx(e))
     }
-    s(!1)
+    a(!1)
   };
   return (0, i.jsx)("div", {
     "data-button-hoisted-classname-wrapper": !0,
@@ -376,7 +375,7 @@ function M(e) {
       variant: "primary",
       text: y.intl.string(y.t["Nw+0Y2"]),
       loading: r,
-      onClick: a
+      onClick: s
     })
   })
 }
@@ -385,14 +384,14 @@ function G(e) {
   let {
     guild: t,
     guildTemplate: n
-  } = e, [r, s] = l.useState(!1), a = async () => {
+  } = e, [r, a] = l.useState(!1), s = async () => {
     S.setError(null);
     try {
       await b.Z.deleteGuildTemplate(t.id, n.code), S.setName(""), S.setDescription("")
     } catch (e) {
       S.setError(new x.Hx(e))
     }
-    s(!1)
+    a(!1)
   };
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)("div", {
@@ -401,11 +400,11 @@ function G(e) {
       children: (0, i.jsx)(g.zxk, {
         variant: "critical-secondary",
         text: y.intl.string(y.t["cN/RFB"]),
-        onClick: () => s(!0)
+        onClick: () => a(!0)
       })
     }), r ? (0, i.jsx)(D, {
-      confirm: a,
-      cancel: () => s(!1)
+      confirm: s,
+      cancel: () => a(!1)
     }) : null]
   })
 }

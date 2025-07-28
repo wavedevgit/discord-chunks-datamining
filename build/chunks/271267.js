@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   Q: () => g,
   Z: () => x
@@ -7,8 +6,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(481060),
-  s = n(957011),
-  a = n(587431),
+  a = n(957011),
+  s = n(587431),
   o = n(756066),
   c = n(388032),
   d = n(601781),
@@ -38,8 +37,8 @@ function p(e) {
   let {
     guild: t,
     eligibility: i,
-    eligibilityLoading: s,
-    eligibilityError: a,
+    eligibilityLoading: a,
+    eligibilityError: s,
     refreshEligibility: o
   } = e;
   return (0, r.jsx)(l.zxk, {
@@ -53,8 +52,8 @@ function p(e) {
           var l, c;
           return (0, r.jsx)(e, (l = m({}, n), c = c = {
             eligibility: i,
-            eligibilityLoading: s,
-            eligibilityError: a,
+            eligibilityLoading: a,
+            eligibilityError: s,
             refreshEligibility: o,
             guildId: t.id
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(c)) : (function(e, t) {
@@ -78,7 +77,7 @@ function p(e) {
   })
 }
 
-function f(e) {
+function h(e) {
   let {
     guild: t,
     checkboxText: n
@@ -87,7 +86,7 @@ function f(e) {
     error: d,
     loading: u,
     submitAcceptTermsRequest: m
-  } = (0, s.Z)(t.id), [g, p] = i.useState(!1);
+  } = (0, a.Z)(t.id), [g, p] = i.useState(!1);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.XZJ, {
       onChange: function() {
@@ -112,35 +111,35 @@ function f(e) {
     }), null != d && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.LZC, {
         size: 24
-      }), (0, r.jsx)(a.Z, {
+      }), (0, r.jsx)(s.Z, {
         children: d.getAnyErrorMessage()
       })]
     })]
   })
 }
 
-function h(e) {
+function f(e) {
   let {
     guild: t,
     monetizationEligibility: n
   } = e, {
     eligibilityLoading: i,
     eligibilityError: l,
-    refreshEligibility: s,
-    eligibility: a,
+    refreshEligibility: a,
+    eligibility: s,
     eligibleForMonetization: c,
     acceptTermsCheckboxText: d,
     wasRejectedInV1: u
   } = n;
-  return c ? u ? (0, r.jsx)(o.Z, m({}, n)) : (0, r.jsx)(f, {
+  return c ? u ? (0, r.jsx)(o.Z, m({}, n)) : (0, r.jsx)(h, {
     guild: t,
     checkboxText: d
   }) : (0, r.jsx)(p, {
     guild: t,
-    eligibility: a,
+    eligibility: s,
     eligibilityLoading: i,
     eligibilityError: l,
-    refreshEligibility: s
+    refreshEligibility: a
   })
 }
 
@@ -169,7 +168,7 @@ function x(e) {
         children: c.intl.string(c.t["41wkMT"])
       }), (0, r.jsx)(l.LZC, {
         size: 24
-      }), (0, r.jsx)(h, {
+      }), (0, r.jsx)(f, {
         guild: t,
         monetizationEligibility: n
       })]

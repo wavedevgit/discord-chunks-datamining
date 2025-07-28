@@ -197,7 +197,7 @@ function k(e) {
     placeholder: b,
     helperText: p,
     className: f
-  } = e, h = (0, c.e7)([x.Z], () => x.Z.getRoles(t)), j = l.useMemo(() => (function(e, t, n) {
+  } = e, h = (0, c.e7)([x.Z], () => x.Z.getRolesSnapshot(t)), j = l.useMemo(() => (function(e, t, n) {
     if (null == e) return {};
     let r = {};
     return e.forEach(e => {

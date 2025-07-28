@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   keywordListContainer: "keywordListContainer__09e76",
   keywordListTextContainer: "keywordListTextContainer__09e76",

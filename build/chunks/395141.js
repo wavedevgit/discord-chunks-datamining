@@ -27,7 +27,7 @@ e.exports = function(e) {
       end: /(?:-[0-9A-Za-z$_]|[0-9A-Za-z$_])*/,
       keywords: s
     },
-    _ = [e.BINARY_NUMBER_MODE, {
+    f = [e.BINARY_NUMBER_MODE, {
       className: "number",
       begin: "(\\b0[xX][a-fA-F0-9_]+)|(\\b\\d(\\d|_\\d)*(\\.(\\d(\\d|_\\d)*)?)?(_*[eE]([-+]\\d(_\\d|\\d)*)?)?[_a-z]*)",
       relevance: 0,
@@ -76,8 +76,8 @@ e.exports = function(e) {
       excludeEnd: !0,
       subLanguage: "javascript"
     }];
-  u.contains = _;
-  let f = {
+  u.contains = f;
+  let _ = {
       className: "params",
       begin: "\\(",
       returnBegin: !0,
@@ -85,7 +85,7 @@ e.exports = function(e) {
         begin: /\(/,
         end: /\)/,
         keywords: s,
-        contains: ["self"].concat(_)
+        contains: ["self"].concat(f)
       }]
     },
     p = {
@@ -108,9 +108,9 @@ e.exports = function(e) {
     aliases: ["ls"],
     keywords: s,
     illegal: /\/\*/,
-    contains: _.concat([e.COMMENT("\\/\\*", "\\*\\/"), e.HASH_COMMENT_MODE, p, {
+    contains: f.concat([e.COMMENT("\\/\\*", "\\*\\/"), e.HASH_COMMENT_MODE, p, {
       className: "function",
-      contains: [c, f],
+      contains: [c, _],
       returnBegin: !0,
       variants: [{
         begin: "(" + l + "\\s*(?:=|:=)\\s*)?(\\(.*\\)\\s*)?\\B->\\*?",

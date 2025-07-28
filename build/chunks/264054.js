@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   metricsContainer: "metricsContainer_cd734c",
   totalMembersIcon: "totalMembersIcon_cd734c",

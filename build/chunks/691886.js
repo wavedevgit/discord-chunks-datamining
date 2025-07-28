@@ -1,13 +1,12 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   Z: () => C
 }), n(539854), n(388685);
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  s = n.n(l),
-  a = n(442837),
+  a = n.n(l),
+  s = n(442837),
   o = n(481060),
   c = n(933557),
   d = n(471445),
@@ -15,8 +14,8 @@ var r = n(255367),
   m = n(324067),
   g = n(699516),
   p = n(594174),
-  f = n(303737),
-  h = n(981631),
+  h = n(303737),
+  f = n(981631),
   x = n(388032),
   b = n(621885);
 
@@ -32,7 +31,7 @@ function v(e) {
     className: l
   } = e;
   return (0, r.jsxs)("div", {
-    className: s()(b.label, l),
+    className: a()(b.label, l),
     children: [t, (0, r.jsxs)("div", {
       className: b.labelText,
       children: [(0, r.jsx)(o.Text, {
@@ -66,16 +65,16 @@ function O(e) {
   var t;
   let {
     channelId: n
-  } = e, i = (0, f.m7)(n), l = (0, f.m7)(null != (t = null == i ? void 0 : i.parent_id) ? t : h.lds);
+  } = e, i = (0, h.m7)(n), l = (0, h.m7)(null != (t = null == i ? void 0 : i.parent_id) ? t : f.lds);
   if (null == i) return null;
-  let s = (0, d.KS)(i),
-    a = (0, c.F6)(i, p.default, g.Z),
+  let a = (0, d.KS)(i),
+    s = (0, c.F6)(i, p.default, g.Z),
     o = null != l ? (0, c.F6)(l, p.default, g.Z) : void 0;
   return (0, r.jsx)(v, {
-    icon: null != s && (0, r.jsx)(s, {
+    icon: null != a && (0, r.jsx)(a, {
       className: b.labelIcon
     }),
-    title: a,
+    title: s,
     subtitle: o
   })
 }
@@ -93,11 +92,11 @@ function C(e) {
   let {
     guildId: t,
     value: l,
-    initialChannelId: s,
+    initialChannelId: a,
     omitChannelIds: d,
     "aria-labelledby": b,
     onChange: v
-  } = e, _ = x.intl.string(x.t.d7YJMD), O = (0, a.e7)([m.Z], () => m.Z.getCategories(t), [t]), C = (0, f.m7)(null != l ? l : h.lds), N = i.useMemo(() => {
+  } = e, _ = x.intl.string(x.t.d7YJMD), O = (0, s.e7)([m.Z], () => m.Z.getCategories(t), [t]), C = (0, h.m7)(null != l ? l : f.lds), N = i.useMemo(() => {
     let e = [{
         value: null,
         label: _
@@ -107,7 +106,7 @@ function C(e) {
       for (let {
           channel: r
         }
-        of O[n.channel.id])((0, u.r8)(r.type) || (0, u.bw)(r.type)) && (r.id !== l && (null == d ? void 0 : d.has(r.id)) && (r.id !== s || l === s) || (l === r.id && (t = !0), e.push({
+        of O[n.channel.id])((0, u.r8)(r.type) || (0, u.bw)(r.type)) && (r.id !== l && (null == d ? void 0 : d.has(r.id)) && (r.id !== a || l === a) || (l === r.id && (t = !0), e.push({
         value: r.id,
         label: (0, c.F6)(r, p.default, g.Z)
       })));
@@ -115,7 +114,7 @@ function C(e) {
       value: l,
       label: C.name
     }), e
-  }, [_, l, C, O, d, s]);
+  }, [_, l, C, O, d, a]);
   return (0, r.jsx)(o.PhF, {
     placeholder: x.intl.string(x.t.r2pts7),
     options: N,

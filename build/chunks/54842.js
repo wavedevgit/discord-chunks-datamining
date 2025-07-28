@@ -1,13 +1,12 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   Z: () => w
 }), n(388685);
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  s = n.n(l),
-  a = n(442837),
+  a = n.n(l),
+  s = n(442837),
   o = n(692547),
   c = n(481060),
   d = n(142497),
@@ -15,8 +14,8 @@ var r = n(255367),
   m = n(496675),
   g = n(63063),
   p = n(981631),
-  f = n(190378),
-  h = n(388032),
+  h = n(190378),
+  f = n(388032),
   x = n(239721),
   b = n(438825),
   j = n(236140),
@@ -48,8 +47,8 @@ function I(e) {
 let E = () => [{
     icon: c.IeX,
     color: o.Z.unsafe_rawColors.GREEN_360.css,
-    header: h.intl.string(h.t.oVQF29),
-    body: h.intl.format(h.t.A6G7am, {
+    header: f.intl.string(f.t.oVQF29),
+    body: f.intl.format(f.t.A6G7am, {
       featureHook: (e, t) => (0, r.jsx)("strong", {
         className: x.featuredText,
         children: e
@@ -58,11 +57,11 @@ let E = () => [{
   }, {
     icon: c.IeX,
     color: o.Z.unsafe_rawColors.PARTNER.css,
-    header: h.intl.string(h.t["0rJl9/"]),
-    body: h.intl.format(h.t.XsCNk5, {
+    header: f.intl.string(f.t["0rJl9/"]),
+    body: f.intl.format(f.t.XsCNk5, {
       infoHook: () => (0, r.jsx)(c.ua7, {
-        text: h.intl.string(h.t.kPJlTk),
-        "aria-label": h.intl.string(h.t.kPJlTk),
+        text: f.intl.string(f.t.kPJlTk),
+        "aria-label": f.intl.string(f.t.kPJlTk),
         children: e => (0, r.jsx)(c.d3s, I({
           size: "xs",
           color: "currentColor",
@@ -77,8 +76,8 @@ let E = () => [{
   }, {
     icon: c.d3s,
     color: o.Z.unsafe_rawColors.RED_360.css,
-    header: h.intl.string(h.t.W2kLJC),
-    body: h.intl.string(h.t.hyNkHx)
+    header: f.intl.string(f.t.W2kLJC),
+    body: f.intl.string(f.t.hyNkHx)
   }],
   S = [{
     iconSrc: y,
@@ -117,7 +116,7 @@ let E = () => [{
       color: n,
       size: i = 24,
       header: l,
-      body: s
+      body: a
     } = e;
     return (0, r.jsxs)("div", {
       className: x.featureCard,
@@ -136,7 +135,7 @@ let E = () => [{
       }), (0, r.jsx)(c.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
-        children: s
+        children: a
       })]
     })
   },
@@ -146,14 +145,14 @@ let E = () => [{
       name: n,
       position: i,
       faded: l,
-      rightAlign: a,
+      rightAlign: s,
       imageCoordinates: o
     } = e, d = {
-      [a ? "right" : "left"]: o[0] + i[0],
+      [s ? "right" : "left"]: o[0] + i[0],
       top: o[1] + i[1]
     };
     return (0, r.jsxs)("div", {
-      className: s()(x.guildDetails, {
+      className: a()(x.guildDetails, {
         [x.faded]: l
       }),
       style: d,
@@ -174,11 +173,11 @@ let E = () => [{
   w = e => {
     let {
       guild: t
-    } = e, [n, l] = i.useState(0), [s, o] = i.useState(0), [v, _] = i.useState(), O = (0, a.e7)([m.Z], () => m.Z.can(p.Plq.ADMINISTRATOR, t)), y = null == v ? void 0 : v.offsetWidth, C = null == v ? void 0 : v.offsetHeight;
+    } = e, [n, l] = i.useState(0), [a, o] = i.useState(0), [v, _] = i.useState(), O = (0, s.e7)([m.Z], () => m.Z.can(p.Plq.ADMINISTRATOR, t)), y = null == v ? void 0 : v.offsetWidth, C = null == v ? void 0 : v.offsetHeight;
     i.useEffect(() => {
       null != y && l(y / 2), null != C && o(C / 2)
     }, [y, C, l, o]), i.useEffect(() => {
-      (0, d.Kw)(f.v.GUILD_SETTINGS_COMMUNITY_GUILD_UPSELL)
+      (0, d.Kw)(h.v.GUILD_SETTINGS_COMMUNITY_GUILD_UPSELL)
     }, []);
     let N = () => {
       u.Z.open()
@@ -191,7 +190,7 @@ let E = () => [{
         children: [S.map(e => {
           var t, i;
           return (0, r.jsx)(P, (t = I({}, e), i = i = {
-            imageCoordinates: [n, s]
+            imageCoordinates: [n, a]
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -214,23 +213,23 @@ let E = () => [{
         })]
       }), (0, r.jsx)(c.X6q, {
         variant: "heading-xl/semibold",
-        children: h.intl.string(h.t["M/gBcH"])
+        children: f.intl.string(f.t["M/gBcH"])
       }), (0, r.jsx)(c.Text, {
         color: "header-secondary",
         variant: "text-md/normal",
         className: x.body,
-        children: h.intl.format(h.t["52EgsL"], {
+        children: f.intl.format(f.t["52EgsL"], {
           helpdeskArticle: g.Z.getArticleURL(p.BhN.FRIEND_COMMUNITY_DISCOVERABLE_GUILD_TYPES)
         })
       }), (0, r.jsx)(c.ua7, {
-        text: O ? null : h.intl.string(h.t["pjG+T0"]),
-        "aria-label": O ? void 0 : h.intl.string(h.t["pjG+T0"]),
+        text: O ? null : f.intl.string(f.t["pjG+T0"]),
+        "aria-label": O ? void 0 : f.intl.string(f.t["pjG+T0"]),
         children: e => (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": !0,
           className: x.button,
           children: (0, r.jsx)(c.zxk, I({
             variant: "primary",
-            text: h.intl.string(h.t.LhlgY2),
+            text: f.intl.string(f.t.LhlgY2),
             onClick: N,
             disabled: !O
           }, e))
@@ -240,12 +239,12 @@ let E = () => [{
       }), (0, r.jsx)(c.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
-        children: h.intl.string(h.t.OzLWLC)
+        children: f.intl.string(f.t.OzLWLC)
       }), (0, r.jsx)(c.Text, {
         color: "header-secondary",
         className: x.body,
         variant: "text-sm/normal",
-        children: h.intl.format(h.t.rjhrqK, {
+        children: f.intl.format(f.t.rjhrqK, {
           helpdeskArticle: g.Z.getArticleURL(p.BhN.GUILD_COMMUNITY_FEATURE)
         })
       }), (0, r.jsx)("div", {

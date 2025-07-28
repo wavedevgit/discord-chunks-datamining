@@ -1,13 +1,12 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   Z: () => b
 }), n(388685);
 var r = n(255367),
   i = n(73800),
   l = n(512722),
-  s = n.n(l),
-  a = n(481060),
+  a = n.n(l),
+  s = n(481060),
   o = n(313201),
   c = n(584825),
   d = n(723047),
@@ -15,8 +14,8 @@ var r = n(255367),
   m = n(290348),
   g = n(518470),
   p = n(22902),
-  f = n(783454),
-  h = n(388032),
+  h = n(783454),
+  f = n(388032),
   x = n(301849);
 
 function b() {
@@ -27,51 +26,51 @@ function b() {
     options: _
   } = (0, p.Z)(null != (e = null == v ? void 0 : v.active_trial) ? e : null), O = (0, g.Z)(), y = null != n, C = i.useCallback(e => {
     let t = _.find(e => e.isDefault);
-    s()(null != t, "Missing default trial duartion option"), l(e ? t.value : null)
+    a()(null != t, "Missing default trial duartion option"), l(e ? t.value : null)
   }, [l, _]), N = (0, d.mY)(), I = (0, o.Dt)(), E = (0, o.Dt)();
-  return (0, r.jsxs)(f.Z, {
-    title: h.intl.string(h.t["6antoq"]),
-    description: h.intl.string(h.t.urVijY),
-    children: [(0, r.jsx)(a.j7V, {
+  return (0, r.jsxs)(h.Z, {
+    title: f.intl.string(f.t["6antoq"]),
+    description: f.intl.string(f.t.urVijY),
+    children: [(0, r.jsx)(s.j7V, {
       onChange: (e, t) => C(e),
       value: y,
       disabled: N,
       hideBorder: !0,
-      children: h.intl.string(h.t["+hTmdX"])
-    }), (0, r.jsxs)(a.hjN, {
-      title: h.intl.string(h.t.m1KuWV),
+      children: f.intl.string(f.t["+hTmdX"])
+    }), (0, r.jsxs)(s.hjN, {
+      title: f.intl.string(f.t.m1KuWV),
       titleId: I,
       disabled: !y || N,
-      children: [(0, r.jsx)(a.R94, {
-        type: a.R94.Types.DESCRIPTION,
+      children: [(0, r.jsx)(s.R94, {
+        type: s.R94.Types.DESCRIPTION,
         className: x.formDescription,
         disabled: !y || N,
-        children: h.intl.string(h.t.NB9NLC)
-      }), (0, r.jsx)(a.LZC, {
+        children: f.intl.string(f.t.NB9NLC)
+      }), (0, r.jsx)(s.LZC, {
         size: 8
-      }), (0, r.jsx)(a.q4e, {
+      }), (0, r.jsx)(s.q4e, {
         "aria-labelledby": I,
         options: _,
         className: x.formInput,
-        placeholder: h.intl.string(h.t.WZG1BQ),
+        placeholder: f.intl.string(f.t.WZG1BQ),
         value: n,
         onChange: l,
         maxVisibleItems: 5,
         isDisabled: !y || N,
-        look: a.qQH.CUSTOM
+        look: s.qQH.CUSTOM
       })]
-    }), (0, r.jsx)(a.LZC, {
+    }), (0, r.jsx)(s.LZC, {
       size: 24
-    }), (0, r.jsxs)(a.hjN, {
-      title: h.intl.string(h.t["/JD9oa"]),
+    }), (0, r.jsxs)(s.hjN, {
+      title: f.intl.string(f.t["/JD9oa"]),
       titleId: E,
       disabled: !y || N,
-      children: [(0, r.jsx)(a.R94, {
-        type: a.R94.Types.DESCRIPTION,
+      children: [(0, r.jsx)(s.R94, {
+        type: s.R94.Types.DESCRIPTION,
         className: x.formDescription,
         disabled: !y || N,
-        children: h.intl.string(h.t.Cg5eBg)
-      }), (0, r.jsx)(a.q4e, {
+        children: f.intl.string(f.t.Cg5eBg)
+      }), (0, r.jsx)(s.q4e, {
         "aria-labelledby": E,
         options: O,
         className: x.formInput,
@@ -79,7 +78,7 @@ function b() {
         onChange: j,
         maxVisibleItems: 5,
         isDisabled: !y || N,
-        look: a.qQH.CUSTOM
+        look: s.qQH.CUSTOM
       })]
     })]
   })

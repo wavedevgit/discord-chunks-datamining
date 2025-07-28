@@ -1,19 +1,18 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
-  Z: () => s
+  Z: () => a
 });
 var r = n(255367);
 n(73800);
 var i = n(481060),
   l = n(380544);
 
-function s(e) {
+function a(e) {
   let {
     label: t,
     sublabel: n,
-    value: s,
-    additionalContent: a,
+    value: a,
+    additionalContent: s,
     tooltip: o
   } = e;
   return (0, r.jsxs)("div", {
@@ -60,7 +59,7 @@ function s(e) {
       tag: "span",
       variant: "heading-xl/medium",
       color: "header-primary",
-      children: s
-    }), a]
+      children: a
+    }), s]
   })
 }

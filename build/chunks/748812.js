@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   creatorGuildCarousel: "creatorGuildCarousel__2485e",
   guildCard: "guildCard__2485e " + n(551131).card,

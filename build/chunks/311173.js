@@ -1,13 +1,12 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   Z: () => x
 }), n(388685), n(953529);
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  s = n.n(l),
-  a = n(481060),
+  a = n.n(l),
+  s = n(481060),
   o = n(63063),
   c = n(256569),
   d = n(858457),
@@ -15,9 +14,9 @@ var r = n(255367),
   m = n(981631),
   g = n(388032),
   p = n(409866);
-let f = o.Z.getArticleURL(m.BhN.GUILD_AUTOMOD_REGEX);
+let h = o.Z.getArticleURL(m.BhN.GUILD_AUTOMOD_REGEX);
 
-function h(e) {
+function f(e) {
   let {
     hasErrors: t,
     text: n,
@@ -25,15 +24,15 @@ function h(e) {
   } = e;
   return t ? (0, r.jsx)("div", {
     className: p.subtext,
-    children: (0, r.jsx)(a.Text, {
+    children: (0, r.jsx)(s.Text, {
       className: p.errorSpan,
       variant: "text-xs/medium",
       color: "text-danger",
       children: null != i ? i : g.intl.format(g.t.jKYAPj, {
-        helpArticle: f
+        helpArticle: h
       })
     })
-  }) : (0, r.jsx)(a.Text, {
+  }) : (0, r.jsx)(s.Text, {
     className: p.subtext,
     variant: "text-xs/medium",
     color: "text-muted",
@@ -45,7 +44,7 @@ function x(e) {
   var t, n;
   let {
     rule: l,
-    onChangeText: a,
+    onChangeText: s,
     className: o
   } = e, {
     patterns: m,
@@ -53,7 +52,7 @@ function x(e) {
     errors: b,
     validatePatternsChanged: j,
     validateEditingValueChanged: v
-  } = (0, d.Z)(l, a), [_] = i.useState(() => ({
+  } = (0, d.Z)(l, s), [_] = i.useState(() => ({
     tags: m,
     value: "",
     selections: [],
@@ -64,13 +63,13 @@ function x(e) {
       message: r,
       description: i,
       erroringCharacterLength: l = n.length,
-      erroringCharacterOffset: s = 0
+      erroringCharacterOffset: a = 0
     } = t;
     return null == m.find(e => e === n) || (e[n] = {
       value: n,
       message: null != i ? i : r,
       erroringCharacterLength: l,
-      erroringCharacterOffset: s
+      erroringCharacterOffset: a
     }), e
   }, {}), [b, m]), y = i.useCallback(e => {
     j(e, m)
@@ -78,7 +77,7 @@ function x(e) {
     v(e)
   }, [v]);
   return (0, r.jsxs)("div", {
-    className: s()(p.keywordsContainer, o),
+    className: a()(p.keywordsContainer, o),
     children: [(0, r.jsx)(c.Z, {
       placeholder: "^b(a|@)d$\nw(o|0)rd(s|$)",
       initialValue: _,
@@ -86,9 +85,9 @@ function x(e) {
       onChangeNewTagValue: C,
       tagErrors: O,
       maxTags: u.VW
-    }), (0, r.jsx)(h, {
+    }), (0, r.jsx)(f, {
       text: g.intl.format(g.t["PGC/AA"], {
-        helpArticle: f
+        helpArticle: h
       }),
       hasErrors: b.length > 0 || null != x,
       errorText: null != (n = null == (t = b.find(e => {

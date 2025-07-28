@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  _: () => f
+  _: () => _
 });
 var r = n(255367);
 n(73800);
@@ -50,7 +50,7 @@ function u(e, t) {
 
 function d(e, t) {
   if (null == e) return {};
-  var n, r, i = _(e, t);
+  var n, r, i = f(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -58,25 +58,25 @@ function d(e, t) {
   return i
 }
 
-function _(e, t) {
+function f(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let f = e => {
+let _ = e => {
   var t, n, {
       size: s = "md",
       width: c,
-      height: _,
-      color: f = i.Z.colors.INTERACTIVE_NORMAL,
+      height: f,
+      color: _ = i.Z.colors.INTERACTIVE_NORMAL,
       colorClass: p = ""
     } = e,
     h = d(e, ["size", "width", "height", "color", "colorClass"]);
   let m = (0, o.m)(s),
     g = null != (t = null == m ? void 0 : m.width) ? t : c,
-    E = null != (n = null == m ? void 0 : m.height) ? n : _;
+    E = null != (n = null == m ? void 0 : m.height) ? n : f;
   return (0, r.jsxs)("svg", u(l({}, (0, a.Z)(h)), {
     xmlns: "http://www.w3.org/2000/svg",
     width: g,
@@ -84,11 +84,11 @@ let f = e => {
     fill: "none",
     viewBox: "0 0 24 24",
     children: [(0, r.jsx)("path", {
-      fill: "string" == typeof f ? f : f.css,
+      fill: "string" == typeof _ ? _ : _.css,
       d: "M1.16 5.02c-.1.28.04.58.29.74l10.27 6.85a.5.5 0 0 0 .56 0l10.27-6.85c.25-.16.38-.46.29-.74A3 3 0 0 0 20 3H4a3 3 0 0 0-2.84 2.02Z",
       className: p
     }), (0, r.jsx)("path", {
-      fill: "string" == typeof f ? f : f.css,
+      fill: "string" == typeof _ ? _ : _.css,
       d: "M23 8.8a.5.5 0 0 0-.78-.41l-9.53 6.35c-.42.28-.96.28-1.38 0L1.78 8.39A.5.5 0 0 0 1 8.8V18a3 3 0 0 0 3 3h16a3 3 0 0 0 3-3V8.8Z",
       className: p
     })]

@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   Z: () => j
 });
@@ -7,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(755721),
   l = n(481060),
-  s = n(724598),
-  a = n(674180),
+  a = n(724598),
+  s = n(674180),
   o = n(572004),
   c = n(495437),
   d = n(267101),
@@ -16,8 +15,8 @@ var i = n(755721),
   m = n(676651),
   g = n(613810),
   p = n(391181),
-  f = n(388032),
-  h = n(520880);
+  h = n(388032),
+  f = n(520880);
 let x = "guild-product-listings-header";
 
 function b(e) {
@@ -28,7 +27,7 @@ function b(e) {
     publishedOnly: !1
   }), {
     shouldRestrictUpdatingCreatorMonetizationSettings: b
-  } = (0, a.gX)(t), j = e => {
+  } = (0, s.gX)(t), j = e => {
     (0, c.Je)(t, e, {
       published: !1
     })
@@ -65,11 +64,11 @@ function b(e) {
   }, O = m.length > 0;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.vwX, {
-      className: h.productListingsHeader,
+      className: f.productListingsHeader,
       id: x,
-      children: O ? f.intl.string(f.t.RwuStb) : f.intl.string(f.t.WKMcMT)
+      children: O ? h.intl.string(h.t.RwuStb) : h.intl.string(h.t.WKMcMT)
     }), O ? (0, r.jsx)("ul", {
-      className: h.productListings,
+      className: f.productListings,
       "aria-labelledby": x,
       children: m.map(e => (0, r.jsx)("li", {
         children: (0, r.jsx)(p.Z, {
@@ -87,7 +86,7 @@ function b(e) {
           disabled: b
         })
       }, e.id))
-    }) : (0, r.jsx)(s.Z, {
+    }) : (0, r.jsx)(a.Z, {
       guildId: t,
       showCTA: !1,
       responsive: !1
@@ -100,14 +99,14 @@ function j(e) {
     guildId: t
   } = e, {
     shouldRestrictUpdatingCreatorMonetizationSettings: n
-  } = (0, a.gX)(t), s = e => {
+  } = (0, s.gX)(t), a = e => {
     m.h(t, e)
   };
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(i.zx, {
-      className: h.addButton,
-      innerClassName: h.addButtonInner,
-      onClick: () => s(null),
+      className: f.addButton,
+      innerClassName: f.addButtonInner,
+      onClick: () => a(null),
       disabled: n,
       children: [(0, r.jsx)(l.qJs, {
         size: "custom",
@@ -118,12 +117,12 @@ function j(e) {
       }), (0, r.jsx)(l.LZC, {
         size: 6,
         horizontal: !0
-      }), f.intl.string(f.t.riG6DQ)]
+      }), h.intl.string(h.t.riG6DQ)]
     }), (0, r.jsx)(l.LZC, {
       size: 24
     }), (0, r.jsx)(b, {
       guildId: t,
-      handleCreateOrEditProduct: s
+      handleCreateOrEditProduct: a
     })]
   })
 }

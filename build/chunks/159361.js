@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
   Z: () => l
 });
@@ -17,15 +16,15 @@ function l(e) {
         r = Date.now();
       if (isNaN(n) || n < r) return;
       let l = Math.round((n - r) / 6e4),
-        s = e => Math.round(l / e);
+        a = e => Math.round(l / e);
       return l >= 43200 ? i.intl.formatToPlainString(i.t.kridzM, {
-        months: s(43200)
+        months: a(43200)
       }) : l >= 10080 ? i.intl.formatToPlainString(i.t.EmoBDw, {
-        weeks: s(10080)
+        weeks: a(10080)
       }) : l >= 1440 ? i.intl.formatToPlainString(i.t.k2UNz8, {
-        days: s(1440)
+        days: a(1440)
       }) : l >= 60 ? i.intl.formatToPlainString(i.t.xCjYxM, {
-        hours: s(60)
+        hours: a(60)
       }) : i.intl.formatToPlainString(i.t.iXLF9f, {
         minutes: l
       })

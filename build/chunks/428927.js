@@ -21,17 +21,17 @@ function f(e) {
     trackUserProfileAction: f
   } = (0, s.KZ)(), {
     mutualGuilds: p,
-    isFetching: g
-  } = (0, c.Z)(n), j = e => {
+    isFetching: j
+  } = (0, c.Z)(n), g = e => {
     (0, o.X)(e), t(), (0, i.xf)()
   };
   return (0, l.jsx)(r.zJl, {
     className: d.listScroller,
     fade: !0,
-    children: null == p && g ? (0, l.jsx)("div", {
+    children: null == p && j ? (0, l.jsx)("div", {
       className: d.empty,
       children: (0, l.jsx)(r.$jN, {})
-    }) : (null != p || g) && (null == p ? void 0 : p.length) !== 0 ? null == p ? void 0 : p.map(e => {
+    }) : (null != p || j) && (null == p ? void 0 : p.length) !== 0 ? null == p ? void 0 : p.map(e => {
       let {
         guild: t,
         nick: r
@@ -43,7 +43,7 @@ function f(e) {
         onSelect: () => {
           f({
             action: "PRESS_MUTUAL_GUILD"
-          }), j(t.id)
+          }), g(t.id)
         }
       }, t.id)
     }) : (0, l.jsxs)("div", {

@@ -1,6 +1,6 @@
 /** Chunk was on 50929 **/
 n.d(l, {
-  default: () => b
+  default: () => h
 });
 var t = n(255367);
 n(73800);
@@ -9,39 +9,39 @@ var r = n(481060),
   o = n(410575),
   s = n(108843),
   c = n(100527),
-  d = n(299206),
-  a = n(88966),
-  u = n(37258),
+  u = n(299206),
+  d = n(88966),
+  a = n(37258),
   f = n(931617),
-  g = n(981631),
-  h = n(388032);
-let b = (0, s.Z)(function(e) {
+  b = n(981631),
+  g = n(388032);
+let h = (0, s.Z)(function(e) {
   let {
     user: l,
     guildId: n,
     analyticsContext: s,
     onSelect: c
-  } = e, b = (0, u.Z)({
+  } = e, h = (0, a.Z)({
     userId: l.id,
     guildId: n
-  }), Z = (0, f.Z)(l.id, n), p = (0, d.Z)({
+  }), Z = (0, f.Z)(l.id, n), j = (0, u.Z)({
     id: l.id,
-    label: h.intl.string(h.t["/AXYnJ"])
-  }), O = (0, a.Z)(l.id), j = l.isNonUserBot();
+    label: g.intl.string(g.t["/AXYnJ"])
+  }), p = (0, d.Z)(l.id), v = l.isNonUserBot();
   return (0, t.jsx)(o.Z, {
     context: s,
-    object: g.qAy.CONTEXT_MENU,
+    object: b.qAy.CONTEXT_MENU,
     children: (0, t.jsxs)(r.v2r, {
       navId: "user-context",
       onClose: i.Zy,
-      "aria-label": h.intl.string(h.t.liqwPD),
+      "aria-label": g.intl.string(g.t.liqwPD),
       onSelect: c,
       children: [(0, t.jsxs)(r.kSQ, {
-        children: [!j && b, !j && O]
+        children: [!v && h, !v && p]
       }), (0, t.jsx)(r.kSQ, {
-        children: !j && Z
+        children: !v && Z
       }), (0, t.jsx)(r.kSQ, {
-        children: p
+        children: j
       })]
     })
   })

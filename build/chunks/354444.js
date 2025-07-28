@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   progressBar: "progressBar_c44edb",
   bar: "bar_c44edb",

@@ -1,17 +1,16 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => s
 }), n(388685);
 var r = n(73800),
   i = n(442837),
   l = n(607070),
-  s = n(999382);
+  a = n(999382);
 
-function a(e, t) {
-  let [n, a] = r.useState(!1), o = (0, i.e7)([s.Z], () => s.Z.getProps().subsection), c = (0, i.e7)([l.Z], () => l.Z.useReducedMotion);
+function s(e, t) {
+  let [n, s] = r.useState(!1), o = (0, i.e7)([a.Z], () => a.Z.getProps().subsection), c = (0, i.e7)([l.Z], () => l.Z.useReducedMotion);
   r.useEffect(() => {
-    n || null !== e.current && o === t && (a(!0), e.current.scrollIntoView({
+    n || null !== e.current && o === t && (s(!0), e.current.scrollIntoView({
       behavior: c ? "auto" : "smooth"
     }))
   }, [n, o, t, c, e])

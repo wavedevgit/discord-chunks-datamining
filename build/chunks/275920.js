@@ -17,8 +17,8 @@ function a(e) {
     applicationId: c,
     partyId: u,
     messageId: d,
-    locationObject: _,
-    analyticsLocations: f,
+    locationObject: f,
+    analyticsLocations: _,
     referrerId: p,
     inviterUserId: h
   } = e;
@@ -32,8 +32,8 @@ function a(e) {
     party_id: null != u ? u : void 0,
     other_user_id: a,
     message_id: d,
-    location: _,
-    location_stack: f,
+    location: f,
+    location_stack: _,
     referrer_id: p,
     invite_inviter_id: h
   })

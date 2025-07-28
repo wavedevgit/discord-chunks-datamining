@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   keywordsTextArea: "keywordsTextArea__6a631",
   paddingTop: "paddingTop__6a631",

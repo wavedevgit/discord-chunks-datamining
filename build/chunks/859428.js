@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  o = n.n(l),
-  a = n(442837),
+  a = n.n(l),
+  o = n(442837),
   c = n(755721),
   s = n(481060),
   u = n(749210),
@@ -19,8 +19,8 @@ var r = n(255367),
   T = n(8940),
   S = n(240211);
 let N = () => {
-  let e = (0, a.e7)([E.Z], () => E.Z.getGuildId(), []),
-    t = (0, a.e7)([_.Z], () => _.Z.getGuild(e), [e]),
+  let e = (0, o.e7)([E.Z], () => E.Z.getGuildId(), []),
+    t = (0, o.e7)([_.Z], () => _.Z.getGuild(e), [e]),
     [n, l] = i.useState(!1);
   if (null == t) return null;
   let N = async () => {
@@ -34,12 +34,12 @@ let N = () => {
     }
   };
   return (0, r.jsxs)("div", {
-    className: o()(T.notice, S.notice),
+    className: a()(T.notice, S.notice),
     children: [(0, r.jsxs)(c.zx, {
       look: c.zx.Looks.OUTLINED,
       color: c.zx.Colors.WHITE,
       size: c.zx.Sizes.NONE,
-      className: o()(T.button, T.back),
+      className: a()(T.button, T.back),
       innerClassName: T.iconButton,
       onClick: () => {
         (0, d.s1)().goBack()

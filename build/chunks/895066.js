@@ -34,7 +34,7 @@ function d(e) {
   return e
 }
 
-function _(e, t) {
+function f(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -45,8 +45,8 @@ function _(e, t) {
   return n
 }
 
-function f(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -223,7 +223,7 @@ class m extends a.Z {
         numRateSamples: O
       } = m;
       if (void 0 !== y && b > y) {
-        var t, n, r, i, a, o, s, l, c, u, d, _, f, p;
+        var t, n, r, i, a, o, s, l, c, u, d, f, _, p;
         let v = b - y,
           I = {
             userId: h,
@@ -232,8 +232,8 @@ class m extends a.Z {
             merged: null != (o = E.merged) ? o : 0 - (null != (a = g.merged) ? a : 0),
             expanded: null != (l = E.expanded) ? l : 0 - (null != (s = g.expanded) ? s : 0),
             accelerated: null != (u = E.accelerated) ? u : 0 - (null != (c = g.accelerated) ? c : 0),
-            preemptiveExpanded: null != (_ = E.preemptiveExpanded) ? _ : 0 - (null != (d = g.preemptiveExpanded) ? d : 0),
-            cng: null != (p = E.cng) ? p : 0 - (null != (f = g.cng) ? f : 0),
+            preemptiveExpanded: null != (f = E.preemptiveExpanded) ? f : 0 - (null != (d = g.preemptiveExpanded) ? d : 0),
+            cng: null != (p = E.cng) ? p : 0 - (null != (_ = g.cng) ? _ : 0),
             accelerateRate: m.accelerateRateSum / O,
             expandRate: m.expandRateSum / O,
             preemptiveExpandRate: m.preemptiveExpandRateSum / O,
@@ -279,7 +279,7 @@ class m extends a.Z {
       i().forEach(e.rtp.outbound, e => {
         if ("audio" === e.type) {
           var t, n, i, a, o, s, l, c, u;
-          r = null != (t = e.bitrateTarget) ? t : 0, this.outboundStats = f(d({}, this.outboundStats), {
+          r = null != (t = e.bitrateTarget) ? t : 0, this.outboundStats = _(d({}, this.outboundStats), {
             packetsSent: e.packetsSent,
             bytesSent: e.bytesSent,
             packetsLost: null != (n = e.packetsLost) ? n : 0,
@@ -295,7 +295,7 @@ class m extends a.Z {
       }), this.decryptionFailures = e.transport.decryptionFailures, this.routingFailures = e.transport.routingFailures, this.appendTargetRates(this.outboundStats, e.transport.availableOutgoingBitrate, r), i().forEach(e.rtp.inbound, (t, n) => {
         i().forEach(t, t => {
           if ("audio" === t.type) {
-            var r, a, o, s, l, c, u, _, f, p, h, m, g, E, b, y, O, v, I, T;
+            var r, a, o, s, l, c, u, f, _, p, h, m, g, E, b, y, O, v, I, T;
             let S = null != (r = e.transport.ping) ? r : 0,
               A = t.packetsReceived,
               N = t.packetsLost,
@@ -320,12 +320,12 @@ class m extends a.Z {
                 preemptiveExpanded: t.opPreemptiveExpand,
                 cng: t.opCNG
               },
-              M = {
+              k = {
                 passthroughCount: null != (l = t.passthroughCount) ? l : 0,
                 decryptSuccessCount: null != (c = t.decryptSuccessCount) ? c : 0,
                 decryptFailureCount: null != (u = t.decryptFailureCount) ? u : 0,
-                decryptDuration: null != (_ = t.decryptDuration) ? _ : 0,
-                decryptAttempts: null != (f = t.decryptAttempts) ? f : 0,
+                decryptDuration: null != (f = t.decryptDuration) ? f : 0,
+                decryptAttempts: null != (_ = t.decryptAttempts) ? _ : 0,
                 decryptMissingKeyCount: null != (p = t.decryptMissingKeyCount) ? p : 0,
                 decryptInvalidNonceCount: null != (h = t.decryptInvalidNonceCount) ? h : 0
               };
@@ -335,7 +335,7 @@ class m extends a.Z {
                 a = N - e.packetsLost,
                 o = 0,
                 s = e.mosBuckets,
-                l = null != (m = e.decryptFailureBeforeSuccessCount) ? m : M.decryptSuccessCount > 0 ? M.decryptFailureCount : void 0;
+                l = null != (m = e.decryptFailureBeforeSuccessCount) ? m : k.decryptSuccessCount > 0 ? k.decryptFailureCount : void 0;
               r > 0 && a >= 0 && (o = this.calculateMos(S + D, i().clamp(a / (r + a), 0, 1)), s[Math.floor(o)]++), this.inboundStats[n] = d({
                 packetsReceived: A,
                 bytesReceived: C,
@@ -350,7 +350,7 @@ class m extends a.Z {
                 bufferStats: L,
                 frameOpStats: x,
                 decryptFailureBeforeSuccessCount: l
-              }, M), this.periodicInboundStats[n] = {
+              }, k), this.periodicInboundStats[n] = {
                 previousTimestampMs: this.periodicInboundStats[n].previousTimestampMs,
                 previous: this.periodicInboundStats[n].previous,
                 currentTimestampMs: performance.now(),
@@ -374,7 +374,7 @@ class m extends a.Z {
               mosBuckets: [0, 0, 0, 0, 0],
               bufferStats: L,
               frameOpStats: x
-            }, M), this.periodicInboundStats[n] = {
+            }, k), this.periodicInboundStats[n] = {
               previousTimestampMs: performance.now(),
               previous: x,
               currentTimestampMs: performance.now(),

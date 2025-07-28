@@ -4,7 +4,7 @@ n.d(t, {
   $q: () => u,
   U8: () => c,
   V6: () => s,
-  uF: () => _,
+  uF: () => f,
   uS: () => l
 }), n(415506), n(388685);
 var r = n(673750),
@@ -33,7 +33,7 @@ function d(e) {
   return (0, r.Bz)(e) ? o.intl.string(o.t.bU6o09) : (null == t ? void 0 : t.isThread()) ? o.intl.string(o.t.DVdG9P) : (null == t ? void 0 : t.isForumPost()) || (null == t ? void 0 : t.isForumLikeChannel()) ? o.intl.string(o.t.ipgKDg) : o.intl.string(o.t.zQ69pq)
 }
 
-function _(e, t) {
+function f(e, t) {
   let n = u(t);
   return null != n ? n : null == e ? o.intl.string(o.t.zQ69pq) : d(e)
 }

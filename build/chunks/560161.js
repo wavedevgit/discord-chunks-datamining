@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   content: "content_a36dee",
   progress: "progress_a36dee",

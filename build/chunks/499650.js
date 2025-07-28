@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   buttonsContainer: "buttonsContainer__24d0d",
   colorSwatch: "colorSwatch__24d0d",

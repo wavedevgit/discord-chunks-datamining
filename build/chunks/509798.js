@@ -1,22 +1,21 @@
 /** Chunk was on 94312 **/
-"use strict";
 n.d(t, {
-  g: () => a
+  g: () => s
 });
 var r = n(255367);
 n(73800);
 var i = n(481060),
   l = n(388032),
-  s = n(529882);
+  a = n(529882);
 
-function a(e) {
+function s(e) {
   let {
     forceFetchGuildProfile: t
   } = e;
   return (0, r.jsxs)("main", {
-    className: s.container,
+    className: a.container,
     children: [(0, r.jsxs)("div", {
-      className: s.errorHeader,
+      className: a.errorHeader,
       children: [(0, r.jsx)(i.X6q, {
         variant: "heading-xl/semibold",
         children: l.intl.string(l.t["/n9Boa"])

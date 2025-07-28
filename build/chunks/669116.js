@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   banner: "banner_ec75b3",
   ctaContainer: "ctaContainer_ec75b3",

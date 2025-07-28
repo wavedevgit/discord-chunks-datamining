@@ -16,8 +16,8 @@ var r = n(255367),
   f = n(279475),
   _ = n(535396),
   x = n(981631),
-  v = n(93841),
-  g = n(388032),
+  g = n(93841),
+  v = n(388032),
   b = n(568413),
   j = n(117172);
 
@@ -72,7 +72,7 @@ function h(e) {
       children: (0, r.jsx)(s.xv, {
         color: i,
         variant: "text-sm/medium",
-        children: g.intl.string(v.default.nIj3LS)
+        children: v.intl.string(g.default.nIj3LS)
       })
     })]
   })
@@ -84,7 +84,7 @@ function C(e) {
     index: n,
     powerup: i,
     nextPowerup: l
-  } = e, a = (0, u.Z)(t, i), c = (0, u.Z)(t, l), x = a.type !== _.A3.INACTIVE, v = c.type !== _.A3.INACTIVE, g = a.type === _.A3.TIER_OVERRIDE_ACTIVATED, [C, I] = o.useState(void 0);
+  } = e, a = (0, u.Z)(t, i), c = (0, u.Z)(t, l), x = a.type !== _.A3.INACTIVE, g = c.type !== _.A3.INACTIVE, v = a.type === _.A3.TIER_OVERRIDE_ACTIVATED, [C, I] = o.useState(void 0);
   (0, m.KT)(C);
   let N = (0, f.d)(x);
   return (0, r.jsxs)(d.Z, {
@@ -94,7 +94,7 @@ function C(e) {
     children: [(0, r.jsx)(E, {
       position: 0 === n ? "start" : null == l ? "end" : "middle",
       active: x,
-      nextActive: null != l ? v : void 0
+      nextActive: null != l ? g : void 0
     }), (0, r.jsxs)("div", {
       className: j.contentContainer,
       children: [(0, r.jsx)(s.X6, {
@@ -104,12 +104,12 @@ function C(e) {
       }), (0, r.jsx)(h, {
         isActive: x,
         index: n
-      }), !g && (0, r.jsx)(d.u, {
+      }), !v && (0, r.jsx)(d.u, {
         className: b.footer,
         guildId: t,
         powerup: i
       })]
-    }), !g && (0, r.jsx)("div", {
+    }), !v && (0, r.jsx)("div", {
       className: j.buttonContainer,
       children: (0, r.jsx)(p.ZP, {
         guildId: t,

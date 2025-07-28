@@ -1,7 +1,7 @@
 /** Chunk was on 44799 **/
 n.d(t, {
   Z: () => f
-}), n(388685), n(953529);
+}), n(953529);
 var r = n(255367),
   o = n(793030),
   i = n(755721),
@@ -20,9 +20,8 @@ function f(e) {
     perk: n,
     markAsDismissed: f
   } = e, _ = u._k[n], x = async () => {
-    let e = null;
-    for (let n of Object.values(a.Z.getRoles(t)))(0, c.YB)(n) && (e = n.id);
-    await s.Z.open(t, d.pNK.ROLES), null !== e && await s.Z.selectRole(e), f(p.L.SECONDARY)
+    let e = a.Z.getSortedRoles(t).find(c.YB);
+    await s.Z.open(t, d.pNK.ROLES), null != e && await s.Z.selectRole(e.id), f(p.L.SECONDARY)
   };
   return (0, r.jsxs)("div", {
     className: m.container,

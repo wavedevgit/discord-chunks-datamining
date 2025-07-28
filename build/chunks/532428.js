@@ -18,8 +18,8 @@ var r = n(658722),
   c = n(212819),
   u = n(933557),
   d = n(592125),
-  _ = n(984933),
-  f = n(699516),
+  f = n(984933),
+  _ = n(699516),
   p = n(944486),
   h = n(914010),
   m = n(246946),
@@ -83,22 +83,22 @@ function x() {
   return new Set(l().weekdays().map(e => e.toLowerCase()))
 }
 
-function M() {
+function k() {
   let e = new Date().getFullYear();
   return new Set(o().range(2015, e + 1).map(e => e.toString()))
 }
 
-function k(e, t) {
+function M(e, t) {
   return [e, e.clone().add(1, t)]
 }
 
 function j(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
-  return k(l()().startOf(e).add(t, e), e)
+  return M(l()().startOf(e).add(t, e), e)
 }
 
 function U(e, t, n) {
-  return k(l()(e, t).local(), n)
+  return M(l()(e, t).local(), n)
 }
 
 function G() {
@@ -134,12 +134,12 @@ function z(e) {
 function q(e, t) {
   let n, r, i = e.getFullMatch().trim().toLowerCase(),
     a = G()[i];
-  return null != a ? [n, r] = a() : L().has(i) ? [n, r] = U(i, "MMMM", "month") : x().has(i) ? [n, r] = U(i, "dddd", "day") : M().has(i) ? [n, r] = U(i, "YYYY", "year") : [n, r] = U(i, N.b2L, "day"), !!(n.isValid() && r.isValid()) && ("before" === t ? (r = n, n = null) : "after" === t && (n = r, r = null), e.setData("start", n), e.setData("end", r), !0)
+  return null != a ? [n, r] = a() : L().has(i) ? [n, r] = U(i, "MMMM", "month") : x().has(i) ? [n, r] = U(i, "dddd", "day") : k().has(i) ? [n, r] = U(i, "YYYY", "year") : [n, r] = U(i, N.b2L, "day"), !!(n.isValid() && r.isValid()) && ("before" === t ? (r = n, n = null) : "after" === t && (n = r, r = null), e.setData("start", n), e.setData("end", r), !0)
 }
 
 function X(e, t, n) {
-  let r = _.ZP.getChannels(n)[_.sH].concat(_.ZP.getChannels(n)[_.Zb]),
-    i = _.ZP.getTextChannelNameDisambiguations(n),
+  let r = f.ZP.getChannels(n)[f.sH].concat(f.ZP.getChannels(n)[f.Zb]),
+    i = f.ZP.getTextChannelNameDisambiguations(n),
     a = I.Z.getCurrentConfig({
       location: "guildChannelValidator"
     }).enabled,
@@ -157,7 +157,7 @@ function X(e, t, n) {
 
 function Q(e, t) {
   let n = Object.values(d.Z.getMutablePrivateChannels()).filter(e => {
-    if (t === (0, u.F6)(e, g.default, f.Z)) return !0;
+    if (t === (0, u.F6)(e, g.default, _.Z)) return !0;
     if (e.isDM()) {
       let n = e.getRecipientId(),
         r = g.default.getUser(n);
@@ -196,7 +196,7 @@ function $(e) {
 }
 
 function ee() {
-  return [...Array.from(L()), ...Array.from(x()), ...Array.from(M()), ...Object.keys(G())]
+  return [...Array.from(L()), ...Array.from(x()), ...Array.from(k()), ...Object.keys(G())]
 }
 
 function et() {
@@ -282,12 +282,12 @@ function ea(e) {
   }
   let u = g.default.getCurrentUser(),
     d = n.toLowerCase().replace(/^@/, ""),
-    _ = null != u && n.length > 0 && (C.intl.string(C.t.Qf3ptr).startsWith(d) || N.ME.substr(1).startsWith(d)),
+    f = null != u && n.length > 0 && (C.intl.string(C.t.Qf3ptr).startsWith(d) || N.ME.substr(1).startsWith(d)),
     p = t.filter(e => {
       let {
         record: t
       } = e;
-      return !f.Z.isBlockedOrIgnored(t.id) && (!_ || t.id !== (null == u ? void 0 : u.id))
+      return !_.Z.isBlockedOrIgnored(t.id) && (!f || t.id !== (null == u ? void 0 : u.id))
     }).map(e => {
       let {
         record: t
@@ -297,7 +297,7 @@ function ea(e) {
         user: t
       }
     });
-  return _ && p.unshift({
+  return f && p.unshift({
     text: N.ME,
     user: u
   }), p
@@ -344,7 +344,7 @@ function es(e, t) {
         let e = i[n];
         i.splice(n, 1), i.unshift(e)
       } else if (t.isGroupDM()) {
-        let e = (0, u.F6)(t, g.default, f.Z);
+        let e = (0, u.F6)(t, g.default, _.Z);
         i.unshift({
           text: e,
           channel: t,
@@ -373,14 +373,14 @@ function el(e, t, n) {
     }).enabled,
     i = E.ZP.queryChannels({
       query: e,
-      type: _.sH,
+      type: f.sH,
       guildId: t,
       limit: 1 / 0,
       allowEmptyQueries: !0,
       includeAllThreads: r
     }).concat(E.ZP.queryChannels({
       query: e,
-      type: _.Zb,
+      type: f.Zb,
       guildId: t,
       limit: 1 / 0,
       allowEmptyQueries: !0
@@ -395,7 +395,7 @@ function el(e, t, n) {
       n = i.find(t => t.id === e);
     null != n && (i.splice(i.indexOf(n), 1), i.unshift(n))
   }
-  let a = _.ZP.getTextChannelNameDisambiguations(t);
+  let a = f.ZP.getTextChannelNameDisambiguations(t);
   return o()(i).take(n).map(e => {
     var t, n;
     return {
@@ -420,7 +420,7 @@ var ed = function(e) {
   return e.FILTER = "FILTER", e.ANSWER = "ANSWER", e
 }({});
 
-function e_() {
+function ef() {
   let e = [C.intl.string(C.t.ZNR2fn), C.intl.string(C.t["20uQR0"]), C.intl.string(C.t.L4lxyM), C.intl.string(C.t["AV/v6u"]), C.intl.string(C.t.XM9XGB), C.intl.string(C.t.TNLcp6), C.intl.string(C.t.F8Wf0d), C.intl.string(C.t.PJgX2t), C.intl.string(C.t.nrpA5O)];
   return {
     [N.dCx.FILTER_FROM]: {
@@ -611,10 +611,10 @@ function e_() {
     }
   }
 }
-let ef = {};
+let e_ = {};
 
 function ep() {
-  Object.assign(ef, e_())
+  Object.assign(e_, ef())
 }
 
 function eh(e) {
@@ -622,11 +622,11 @@ function eh(e) {
 }
 
 function em(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : Object.keys(ef).length,
+  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : Object.keys(e_).length,
     n = [];
-  for (let r of Object.keys(ef)) {
+  for (let r of Object.keys(e_)) {
     if (n.length >= t) break;
-    let a = ef[r].key;
+    let a = e_[r].key;
     eh(r) && null != a && i()(e.toLowerCase(), a) && n.push({
       token: r,
       text: a
@@ -640,4 +640,4 @@ function eg(e) {
   let t = e.toLowerCase().replace(/^@/, "");
   return C.intl.string(C.t.Qf3ptr).startsWith(t) || N.ME.substring(1).startsWith(t)
 }
-let eE = ef
+let eE = e_

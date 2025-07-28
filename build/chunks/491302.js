@@ -24,8 +24,8 @@ function h(e) {
     channelOptions: h,
     isExpanded: x,
     errors: j,
-    onToggleExpand: O
-  } = e, v = i.useMemo(() => {
+    onToggleExpand: v
+  } = e, O = i.useMemo(() => {
     var e;
     return null != (e = t.avatar) && /^data:/.test(e) ? e : (0, p.ov)({
       id: t.id,
@@ -157,12 +157,12 @@ function h(e) {
       children: [(0, r.jsx)(o.P3F, {
         className: f.header,
         "aria-expanded": x,
-        onClick: O,
+        onClick: v,
         children: (0, r.jsxs)(d.Z, {
           align: d.Z.Align.CENTER,
           children: [(0, r.jsx)(m.Z, {
             name: t.name,
-            imageSrc: v,
+            imageSrc: O,
             detailsClassName: f.__invalid_description,
             details: _
           }), (0, r.jsx)(u.Z, {

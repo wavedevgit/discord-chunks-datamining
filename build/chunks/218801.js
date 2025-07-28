@@ -1,5 +1,4 @@
 /** Chunk was on 94312 **/
-"use strict";
 e.exports = {
   checklist: "checklist__42e04",
   container: "container__42e04",
