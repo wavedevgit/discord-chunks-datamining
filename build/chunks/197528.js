@@ -16,8 +16,8 @@ var a = n(255367),
   h = n(314897),
   x = n(643366),
   m = n(94628),
-  b = n(659154),
-  v = n(581690),
+  v = n(659154),
+  b = n(581690),
   _ = n(902928),
   g = n(521937),
   C = n(981631),
@@ -62,18 +62,18 @@ function w() {
         userCodeData: e
       })
     }, [d]),
-    T = r.useCallback(e => {
+    I = r.useCallback(e => {
       d({
         type: "error",
         userCodeData: e
       })
     }, [d]),
-    I = !0;
+    T = !0;
   switch (n.type) {
     case "handoff":
-      e = (0, a.jsx)(v.c, {
+      e = (0, a.jsx)(b.c, {
         code: n.code
-      }), I = !1;
+      }), T = !1;
       break;
     case "user-code-input":
       e = (0, a.jsx)(g.v, {
@@ -85,9 +85,9 @@ function w() {
       e = (0, a.jsx)(m.B, {
         data: n.userCodeData,
         onDenied: N,
-        onError: T,
+        onError: I,
         onSuccess: k
-      }), I = !1;
+      }), T = !1;
       break;
     case "success":
       e = (0, a.jsx)(_.u, {
@@ -96,7 +96,7 @@ function w() {
       });
       break;
     case "error":
-      e = (0, a.jsx)(b.c, {
+      e = (0, a.jsx)(v.c, {
         onTryAgain: N
       });
       break;
@@ -112,7 +112,7 @@ function w() {
     }), (0, a.jsx)(u.Z, {
       show: !0,
       className: y.logo
-    }), I ? (0, a.jsx)("div", {
+    }), T ? (0, a.jsx)("div", {
       className: y.content,
       children: e
     }) : e]

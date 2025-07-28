@@ -1,6 +1,6 @@
 /**
   Module ID: 522
-  Original File Name: e6d06c79316ae451
+  Original File Name: 1dbcb4c882362214
 **/
 .qrCodeOverlay_c28498 {
     align-items: center;
@@ -36,26 +36,6 @@
 .qrCodeContainer_c28498 {
     border-radius: var(--radius-xs);
     padding: var(--space-8)
-}
-
-.modalRoot__3988c {
-    width: 480px
-}
-
-.modalHeaderContainer__3988c {
-    display: flex;
-    flex-direction: column;
-    padding: 24px 52px 16px;
-    text-align: center
-}
-
-.modalHeader__3988c {
-    margin-bottom: 8px
-}
-
-.content__3988c {
-    margin-top: 16px;
-    padding-bottom: 16px
 }
 
 .card__3988c {
@@ -121,4 +101,4 @@
     opacity: .6
 }
 
-/*# sourceMappingURL=e6d06c79316ae451.css.map*/
+/*# sourceMappingURL=1dbcb4c882362214.css.map*/

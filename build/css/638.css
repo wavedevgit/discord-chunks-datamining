@@ -1,34 +1,7 @@
 /**
   Module ID: 638
-  Original File Name: efb7c8e435065930
+  Original File Name: b5d5928e17896677
 **/
-.modalRoot__6efa2 {
-    width: 480px
-}
-
-.modalHeaderContainer__6efa2 {
-    display: flex;
-    flex-direction: column;
-    padding: 24px 52px 16px;
-    text-align: center
-}
-
-.modalHeader__6efa2 {
-    margin-bottom: 8px
-}
-
-.content__6efa2 {
-    margin-top: 16px;
-    padding-bottom: 16px
-}
-
-.closeButton__6efa2 {
-    position: absolute;
-    right: 16px;
-    top: 16px;
-    z-index: 1
-}
-
 .deviceItem__6efa2 {
     padding: 8px 16px
 }
@@ -56,4 +29,4 @@
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=efb7c8e435065930.css.map*/
+/*# sourceMappingURL=b5d5928e17896677.css.map*/

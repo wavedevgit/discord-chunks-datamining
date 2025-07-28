@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => O
 });
 var r = n(255367);
 n(73800);
 var i = n(704215),
   a = n(952265),
-  o = n(468026),
+  o = n(82659),
   s = n(231757),
   l = n(266454),
   c = n(131951),
@@ -15,10 +15,9 @@ var i = n(704215),
   d = n(542238),
   f = n(927923),
   _ = n(981631),
-  p = n(388032),
-  h = n(97800);
+  p = n(388032);
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -27,20 +26,20 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
 }
 
-function E(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -51,14 +50,14 @@ function E(e, t) {
   return n
 }
 
-function b(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
+function E(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let y = "game_console_alert_modal",
-  O = "game_console_ptt_alert_modal",
-  v = {
+let b = "game_console_alert_modal",
+  y = "game_console_ptt_alert_modal",
+  O = {
     maybeShowPTTAlert(e) {
       if (c.Z.getMode() !== _.pM4.PUSH_TO_TALK || (0, l.zu)(i.z.CONSOLE_PTT_DISABLE_ALERT)) return Promise.resolve();
       let t = {
@@ -70,14 +69,16 @@ let y = "game_console_alert_modal",
         let n = () => {
             (0, l.Q3)(i.z.CONSOLE_PTT_DISABLE_ALERT), e()
           },
-          s = e => (0, r.jsx)(o.default, b(g({}, e), {
+          s = e => (0, r.jsx)(o.Modal, E(m({}, e), {
             title: t,
-            body: p.intl.string(p.t.bL21zs),
-            onConfirm: n,
-            titleClassName: h.title
+            subtitle: p.intl.string(p.t.bL21zs),
+            actions: [{
+              text: p.intl.string(p.t.BddRzc),
+              onClick: n
+            }]
           }));
-        (0, a.nf)(O) ? (0, a.o)(O, s) : (0, a.h7)(s, {
-          modalKey: O
+        (0, a.nf)(y) ? (0, a.o)(y, e => s(e)) : (0, a.ZD)(async () => e => s(e), {
+          modalKey: y
         })
       })
     },
@@ -90,10 +91,10 @@ let y = "game_console_alert_modal",
       } = e, c = (0, r.jsx)(d.t, {
         body: n,
         errorCodeMessage: i,
-        dismissCallback: () => (0, a.Mr)(y)
+        dismissCallback: () => (0, a.Mr)(b)
       });
 
-      function p() {
+      function h() {
         null != l && ((0, s.Z)({
           platformType: l
         }), u.default.track(_.rMx.ACCOUNT_LINK_STEP, {
@@ -102,13 +103,16 @@ let y = "game_console_alert_modal",
           platform_type: l
         }))
       }
-      let h = e => (0, r.jsx)(o.default, b(g({}, e), {
+      let g = e => (0, r.jsx)(o.Modal, E(m({}, e), {
         title: t,
-        body: c,
-        onConfirm: p
+        actions: [{
+          text: p.intl.string(p.t.BddRzc),
+          onClick: h
+        }],
+        children: c
       }));
-      (0, a.nf)(y) ? (0, a.o)(y, h) : (0, a.h7)(h, {
-        modalKey: y
+      (0, a.nf)(b) ? (0, a.o)(b, e => g(e)) : (0, a.ZD)(async () => e => g(e), {
+        modalKey: b
       })
     }
   }

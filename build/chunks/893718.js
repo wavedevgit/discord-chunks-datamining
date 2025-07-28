@@ -113,47 +113,47 @@ function eh(e, t) {
   return null != (r = e && (null == (n = t.submit) ? void 0 : n.clearOnSubmit)) && r
 }
 
-function em(e, t, a, o) {
-  let [s, l] = i.useState(!1), c = i.useCallback((i, u, d, f, _) => {
-    var m, g, E;
-    if (s) return;
-    l(!0);
-    let b = null != (g = null == (m = L.Z.getStickerPreview(o, t.drafts.type)) ? void 0 : m.map(e => e.id)) ? g : [],
-      y = null != (E = F.Z.getUploads(o, t.drafts.type)) ? E : [],
-      O = (0, D.q5)(o);
-    if (null == u && !f && !_ && (0, C.CB)(y, o)) {
-      l(!1), (0, p.ZDy)(async () => {
+function em(e, t, a, o, s) {
+  let [l, c] = i.useState(!1), u = i.useCallback((i, d, f, _, m) => {
+    var g, E, b;
+    if (l) return;
+    c(!0);
+    let y = null != (E = null == (g = L.Z.getStickerPreview(s, t.drafts.type)) ? void 0 : g.map(e => e.id)) ? E : [],
+      O = null != (b = F.Z.getUploads(s, t.drafts.type)) ? b : [],
+      v = (0, D.q5)(s);
+    if (null == d && !_ && !m && (0, C.CB)(O, s)) {
+      c(!1), (0, p.ZDy)(async () => {
         let {
           default: e
         } = await Promise.all([n.e("25292"), n.e("28467"), n.e("90508"), n.e("73057"), n.e("40694"), n.e("46653"), n.e("22173"), n.e("80416")]).then(n.bind(n, 273602));
         return t => (0, r.jsx)(e, ef(eu({}, t), {
-          threadId: o,
-          attachments: y,
-          sendMessage: () => c(i, void 0, void 0, void 0, !0)
+          threadId: s,
+          attachments: O,
+          sendMessage: () => u(i, void 0, void 0, void 0, !0)
         }))
       });
       return
     }
     e({
       value: i,
-      uploads: y,
-      stickers: b,
-      confettiPotionEmoji: O,
-      command: u,
-      commandOptionValues: d,
-      isGif: f
+      uploads: O,
+      stickers: y,
+      confettiPotionEmoji: v,
+      command: d,
+      commandOptionValues: f,
+      isGif: _
     }).then(e => {
-      var n, r;
+      var n, r, i;
       let {
-        shouldClear: i,
-        shouldRefocus: s
-      } = e, c = eh(i, t), u = null != a.current;
-      c && (ep(o) ? h.Z.saveDraft(o, "", t.drafts.type) : u && (null == (r = a.current) || r.clearValue())), u && (l(!1), (0, A._Q)(), s && (null == (n = a.current) || n.focus()))
+        shouldClear: l,
+        shouldRefocus: u
+      } = e, d = eh(l, t), f = null != a.current;
+      d && (ep(s) ? h.Z.saveDraft(s, "", t.drafts.type) : f && (null == (r = a.current) || r.clearValue(), null == (i = o.current) || i.hide())), f && (c(!1), (0, A._Q)(), u && (null == (n = a.current) || n.focus()))
     })
-  }, [a, e, s, t, o]);
+  }, [a, o, e, l, t, s]);
   return {
-    submitting: s,
-    submit: c,
+    submitting: l,
+    submit: u,
     handleSubmit: i.useCallback(e => {
       var t;
       null == a || null == (t = a.current) || t.submit(e)
@@ -453,7 +453,7 @@ function eR(e, t) {
     submitting: ts,
     submit: tl,
     handleSubmit: tc
-  } = em(ed, U, eK, k.id), {
+  } = em(ed, U, eK, eq, k.id), {
     autocompleteRef: tu,
     handleMaybeShowAutocomplete: td,
     handleHideAutocomplete: tf

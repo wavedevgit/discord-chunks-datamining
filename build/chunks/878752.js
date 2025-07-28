@@ -21,7 +21,7 @@ function g(e) {
   let {
     channel: t,
     hasActiveStream: n,
-    showRightDivider: g
+    showRightDivider: g = !1
   } = e, {
     analyticsLocations: b
   } = (0, l.ZP)(i.Z.VOICE_CONTROL_TRAY), _ = (0, o.Z)(), {
