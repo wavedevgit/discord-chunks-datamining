@@ -134,16 +134,20 @@ class Z extends i.Component {
       trialOffer: a,
       currentUser: o,
       analyticsLocations: s
-    } = this.props, c = {
+    } = this.props, c = O.Z.getCurrentConfig({
+      location: "renderActions"
+    }, {
+      autoTrackExposure: !1
+    }), u = {
       onClick: () => {
         this.handleStartTrial(a, s)
       },
       color: d.zx.Colors.BRAND
-    }, u = o.id !== a.user_id || (0, v.I5)(o) || !o.verified || (0, I.B)(a), p = this.renderExpirationDate(e, t, n);
-    return c.disabled = u, (0, r.jsxs)("div", {
+    }, p = o.id !== a.user_id || (0, v.I5)(o) || !o.verified || (0, I.B)(a), m = this.renderExpirationDate(e, t, n);
+    return u.disabled = p, (0, r.jsxs)("div", {
       className: P.buttonContainer,
       children: [(0, r.jsx)("div", {
-        children: (0, r.jsx)(d.zx, (i = w({}, c), l = l = {
+        children: (0, r.jsx)(d.zx, (i = w({}, u), l = l = {
           size: d.zx.Sizes.SMALL,
           onClick: () => {
             (0, _.Z)({
@@ -165,9 +169,9 @@ class Z extends i.Component {
         })(Object(l)).forEach(function(e) {
           Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
         }), i))
-      }), (0, r.jsx)("div", {
+      }), 4 !== c.treatmentGroup && (0, r.jsx)("div", {
         className: P.metadata,
-        children: p
+        children: m
       })]
     })
   }
