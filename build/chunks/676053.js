@@ -47,7 +47,8 @@ function h(e) {
       return r
     }(e, ["title", "body", "assetUrl", "action", "caretConfig", "badge", "textLink", "onWatchVideo", "onRequestClose", "popoverRef"]);
   let T = r.useRef(null),
-    N = r.useCallback(() => ({
+    N = b.endsWith(".gif") || b.endsWith(".webp") || b.endsWith(".png"),
+    I = r.useCallback(() => ({
       type: "VIDEO",
       url: b,
       proxyUrl: b,
@@ -56,24 +57,28 @@ function h(e) {
       height: 720,
       className: g.media
     }), [b, h]),
-    I = r.useCallback(() => {
-      null !== T.current && T.current.pause(), null == C || C()
-    }, [C]),
     y = r.useCallback(() => {
       null !== T.current && T.current.pause(), null == C || C()
     }, [C]),
     A = r.useCallback(() => {
+      null !== T.current && T.current.pause(), null == C || C()
+    }, [C]),
+    P = r.useCallback(() => {
       null !== T.current && T.current.pause();
-      let e = N();
+      let e = I();
       (0, l.K)({
         items: [e],
         startingIndex: 0,
         location: "VideoPopover",
         shouldHideMediaOptions: !0
       }), null == C || C(), null == O || O()
-    }, [N, O, C]),
-    P = (0, i.jsxs)("div", {
-      className: g.videoContainer,
+    }, [I, O, C]),
+    R = N ? (0, i.jsx)("img", {
+      src: b,
+      alt: "",
+      draggable: !1,
+      className: g.inlineAsset
+    }) : (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(a.Z, {
         ref: T,
         src: b,
@@ -83,7 +88,7 @@ function h(e) {
         muted: !0,
         loop: !0,
         playsInline: !0,
-        className: g.inlineVideo,
+        className: g.inlineAsset,
         controls: !1,
         preload: "metadata"
       }), (0, i.jsx)("div", {
@@ -92,7 +97,7 @@ function h(e) {
           playing: !1,
           size: "sm",
           "aria-label": "Play video: ".concat(h),
-          onClick: A
+          onClick: P
         })
       })]
     });
@@ -114,15 +119,18 @@ function h(e) {
     }
     return e
   }({}, S), n = n = {
-    onRequestClose: I,
+    onRequestClose: y,
     hasVideo: !0,
     children: (0, i.jsxs)("div", {
       ref: v,
       children: [(0, i.jsx)(m.u, {
-        onClick: y,
+        onClick: A,
         colorMix: !0
       }), (0, i.jsx)(d.V, {
-        asset: P,
+        asset: (0, i.jsx)("div", {
+          className: g.assetContainer,
+          children: R
+        }),
         size: "video"
       }), (0, i.jsx)(p.Y, {
         title: h,

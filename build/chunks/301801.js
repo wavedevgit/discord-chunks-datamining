@@ -6,8 +6,8 @@ var r = n(73800),
   i = n(348327),
   a = n.n(i),
   l = n(392711),
-  c = n(823379),
-  o = n(886118);
+  o = n(823379),
+  c = n(886118);
 let s = new Worker(new URL("/assets/" + n.u("56558"), n.b));
 
 function u(e, t, n, i) {
@@ -18,7 +18,7 @@ function u(e, t, n, i) {
     {
       searchStringGenerator: m
     } = i,
-    y = function(e) {
+    g = function(e) {
       let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [],
         [n, i] = r.useState(e),
         l = r.useRef(e);
@@ -31,7 +31,7 @@ function u(e, t, n, i) {
         })
       }, t), n
     }(t.map(m), [t, m, ...u]),
-    g = function(e) {
+    y = function(e) {
       let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [],
         [n, i] = r.useState(e),
         l = r.useRef(e);
@@ -61,8 +61,8 @@ function u(e, t, n, i) {
         var i;
         let a = null != (i = r.promiseUuid) ? i : (0, l.uniqueId)(),
           {
-            searchType: u = o.S.FUZZY,
-            sortType: d = o.E.NONE,
+            searchType: u = c.S.FUZZY,
+            sortType: d = c.E.NONE,
             jaroWinklerSearchThreshold: f = .85
           } = r;
         return new Promise(r => {
@@ -73,7 +73,7 @@ function u(e, t, n, i) {
                 foundItemIndexes: l
               }
             } = t;
-            a === n && (r(l.map(t => e[t]).filter(c.lm)), null == s || s.removeEventListener("message", i))
+            a === n && (r(l.map(t => e[t]).filter(o.lm)), null == s || s.removeEventListener("message", i))
           };
           null == s || s.addEventListener("message", i), null == s || s.postMessage({
             id: a,
@@ -111,8 +111,8 @@ function u(e, t, n, i) {
     }), f.current
   }, [i]);
   return r.useEffect(() => {
-    h(e, g, y)
-  }, [h, e, g, y, ...u]), r.useEffect(() => () => {
+    h(e, y, g)
+  }, [h, e, y, g, ...u]), r.useEffect(() => () => {
     null != f.current && f.current.cancel(), f.current = null, d.current = null
-  }, [y, n, i]), h
+  }, [g, n, i]), h
 }

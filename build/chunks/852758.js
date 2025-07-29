@@ -6,16 +6,16 @@ var r = n(255367),
   i = n(73800),
   a = n(990547),
   l = n(442837),
-  c = n(544891),
-  o = n(481060),
+  o = n(544891),
+  c = n(481060),
   s = n(893776),
   u = n(37234),
   d = n(809206),
   f = n(110924),
   p = n(714338),
   m = n(213609),
-  y = n(429142),
-  g = n(144114),
+  g = n(429142),
+  y = n(144114),
   h = n(210887),
   b = n(23434),
   E = n(1964),
@@ -74,33 +74,33 @@ function P() {
     }
   }, {}, [P.toString()]);
   let C = () => {
-      (0, d.FD)(), (0, o.ZDy)(async () => {
+      (0, d.FD)(), (0, c.ZDy)(async () => {
         let {
           default: e
         } = await n.e("35401").then(n.bind(n, 284549));
         return t => (0, r.jsx)(e, A({}, t))
       }, {
         modalKey: j.F0,
-        Layer: y.ZP
+        Layer: g.ZP
       })
     },
     I = () => {
-      (0, o.ZDy)(async () => {
+      (0, c.ZDy)(async () => {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 607018));
         return t => (0, r.jsx)(e, A({
-          reason: g.L.USER_ACTION_REQUIRED
+          reason: y.L.USER_ACTION_REQUIRED
         }, t))
       }, {
         modalKey: w.M,
-        Layer: y.ZP
+        Layer: g.ZP
       })
     };
   return i.useEffect(() => (p.Z.disable(), () => {
     p.Z.enable()
   }), []), i.useEffect(() => {
-    (null == S ? void 0 : S[0]) === O.PUi.PHONE && (null == P ? void 0 : P[0]) === O.PUi.EMAIL && (0, o.ZDy)(async () => {
+    (null == S ? void 0 : S[0]) === O.PUi.PHONE && (null == P ? void 0 : P[0]) === O.PUi.EMAIL && (0, c.ZDy)(async () => {
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 468026));
@@ -111,14 +111,14 @@ function P() {
       }))
     }, {
       modalKey: j.HR,
-      Layer: y.ZP,
+      Layer: g.ZP,
       onCloseCallback: C
     })
   }, [P, S]), (0, r.jsx)(v.Z, {
     types: P,
     captchaKey: N,
     onCaptchaVerify: e => {
-      c.tn.post({
+      o.tn.post({
         url: O.ANM.CAPTCHA,
         body: {
           captcha_key: e
@@ -134,7 +134,7 @@ function P() {
       e === O.PUi.EMAIL_OR_PHONE || e === O.PUi.EMAIL || e === O.PUi.REVERIFY_EMAIL ? C() : I()
     },
     onLogout: () => {
-      (0, o.ZDy)(async () => {
+      (0, c.ZDy)(async () => {
         let {
           ConfirmModal: e,
           Text: t
@@ -151,7 +151,7 @@ function P() {
           })
         }))
       }, {
-        Layer: y.ZP
+        Layer: g.ZP
       })
     }
   })

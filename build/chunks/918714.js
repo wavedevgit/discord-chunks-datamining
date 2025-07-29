@@ -6,25 +6,25 @@ var r = n(255367),
   i = n(73800),
   a = n(481060),
   l = n(624138),
-  c = n(845077),
-  o = n(118589),
+  o = n(845077),
+  c = n(118589),
   s = n(603700),
   u = n(697498),
   d = n(388032),
   f = n(70421);
 let p = () => {
-  let [e, t] = i.useState(null), [n, p] = i.useState(!0), [m, y] = i.useState(null), [g, h] = i.useState(!1), b = i.useCallback(async () => {
-    p(!0), y(null);
+  let [e, t] = i.useState(null), [n, p] = i.useState(!0), [m, g] = i.useState(null), [y, h] = i.useState(!1), b = i.useCallback(async () => {
+    p(!0), g(null);
     try {
       var e;
-      let n = await (0, c.PA)();
+      let n = await (0, o.PA)();
       if (null == n) return;
-      !(0, l.Ew)(null == (e = n.ui_component) ? void 0 : e.type) && o.VZ.has(n.ui_component.type) ? t(n) : t({
+      !(0, l.Ew)(null == (e = n.ui_component) ? void 0 : e.type) && c.VZ.has(n.ui_component.type) ? t(n) : t({
         task_id: n.task_id,
-        task_type: o.UA.REFRESH_APP,
+        task_type: c.UA.REFRESH_APP,
         assignment_id: n.assignment_id,
         ui_component: {
-          type: o.NS.REFRESH_APP,
+          type: c.NS.REFRESH_APP,
           data: {}
         },
         flow_context: {
@@ -33,7 +33,7 @@ let p = () => {
         }
       })
     } catch (e) {
-      y(d.intl.string(u.default["/f++3t"]))
+      g(d.intl.string(u.default["/f++3t"]))
     } finally {
       p(!1)
     }
@@ -47,9 +47,9 @@ let p = () => {
           flow_id: null == (n = e.flow_context) ? void 0 : n.flow_id,
           data: t
         };
-        await (0, c.Wl)(r), b()
+        await (0, o.Wl)(r), b()
       } catch (e) {
-        y(d.intl.string(u.default["+QRSxc"]))
+        g(d.intl.string(u.default["+QRSxc"]))
       } finally {
         h(!1)
       }
@@ -62,6 +62,7 @@ let p = () => {
     children: (0, r.jsxs)("div", {
       className: f.container,
       children: [(0, r.jsx)(a.xBx, {
+        "data-migration-pending": !0,
         separator: !1,
         className: f.header,
         children: (0, r.jsx)(a.X6q, {
@@ -69,6 +70,7 @@ let p = () => {
           children: d.intl.string(u.default.gqwhj4)
         })
       }), (0, r.jsxs)(a.hzk, {
+        "data-migration-pending": !0,
         className: f.body,
         children: [n && (0, r.jsx)(a.Text, {
           variant: "text-md/normal",
@@ -82,7 +84,7 @@ let p = () => {
         }), !n && null === m && null !== e && (0, r.jsx)(s.Z, {
           task: e,
           onSubmit: E,
-          disabled: g
+          disabled: y
         })]
       })]
     })

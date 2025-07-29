@@ -5,16 +5,16 @@ n.d(t, {
 var r, i = n(255367),
   a = n(73800),
   l = n(120356),
-  c = n.n(l),
-  o = n(873546),
+  o = n.n(l),
+  c = n(873546),
   s = n(755721),
   u = n(599857),
   d = n(600164),
   f = n(63063),
   p = n(1964),
   m = n(981631),
-  y = n(388032),
-  g = n(816676),
+  g = n(388032),
+  y = n(816676),
   h = n(20493);
 
 function b(e, t, n) {
@@ -47,24 +47,24 @@ class v extends(r = a.PureComponent) {
   }
   render() {
     return (0, i.jsxs)(d.Z, {
-      className: g.verification,
+      className: y.verification,
       align: d.Z.Align.CENTER,
       direction: d.Z.Direction.VERTICAL,
       children: [(0, i.jsxs)(d.Z, {
-        className: c()(g.container, {
-          [g.isMobile]: o.tq
+        className: o()(y.container, {
+          [y.isMobile]: c.tq
         }),
         direction: d.Z.Direction.VERTICAL,
         align: d.Z.Align.CENTER,
         justify: d.Z.Justify.CENTER,
         children: [(0, i.jsx)("div", {
-          className: g.image
+          className: y.image
         }), (0, i.jsx)("div", {
-          className: c()(g.title, h.marginTop20),
-          children: y.intl.string(y.t.Iz0kDg)
+          className: o()(y.title, h.marginTop20),
+          children: g.intl.string(g.t.Iz0kDg)
         }), (0, i.jsx)("div", {
-          className: c()(g.body, h.marginTop4, h.marginBottom20),
-          children: y.intl.format(y.t["0rqMV1"], {
+          className: o()(y.body, h.marginTop4, h.marginBottom20),
+          children: g.intl.format(g.t["0rqMV1"], {
             helpCenterURL: E
           })
         }), (0, i.jsx)(d.Z, {
@@ -74,22 +74,22 @@ class v extends(r = a.PureComponent) {
           children: this.renderFields()
         })]
       }), (0, i.jsx)("div", {
-        className: c()(g.footer, h.marginTop20),
-        children: y.intl.string(y.t.qqYun5)
+        className: o()(y.footer, h.marginTop20),
+        children: g.intl.string(g.t.qqYun5)
       }), (0, i.jsxs)(d.Z, {
-        className: c()(h.marginTop4, h.marginBottom20),
+        className: o()(h.marginTop4, h.marginBottom20),
         grow: 0,
         children: [(0, i.jsx)("div", {
-          className: c()(g.footer, g.footerAction),
-          children: y.intl.format(y.t.WL51ZW, {
+          className: o()(y.footer, y.footerAction),
+          children: g.intl.format(g.t.WL51ZW, {
             supportURL: f.Z.getSubmitRequestURL()
           })
         }), (0, i.jsx)("div", {
-          className: c()(g.footer, g.footerBullet),
+          className: o()(y.footer, y.footerBullet),
           children: "•"
         }), (0, i.jsx)("div", {
-          className: c()(g.footer, g.footerAction),
-          children: y.intl.format(y.t.Hv7ztb, {
+          className: o()(y.footer, y.footerAction),
+          children: g.intl.format(g.t.Hv7ztb, {
             logoutOnClick: this.props.onLogout
           })
         })]
