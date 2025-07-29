@@ -169,45 +169,49 @@ function U(e) {
   } = (0, g._k)({
     location: "NotificationsInboxSidebar"
   }), $ = Q === v.v8.DROPDOWN && p !== A.V5.ALL;
-  return (0, r.jsxs)("nav", {
+  return (0, r.jsx)("nav", {
     className: o()(L.container, {
       [L.panelSpacing]: l
     }),
-    children: [(0, r.jsx)(f.ZP, (t = M({
-      hasSubheader: !0,
-      guild: A.F7
-    }, k), n = n = {
-      children: (0, r.jsx)(c.Kqy, {
-        direction: "horizontal",
-        gap: 4,
-        style: {
-          marginRight: -4
-        },
-        children: Q === v.v8.DROPDOWN && !J && (0, r.jsx)(T.p, {})
-      })
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-      var n = Object.keys(e);
-      if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        n.push.apply(n, r)
-      }
-      return n
-    })(Object(n)).forEach(function(e) {
-      Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), t)), Q === v.v8.TABS && (0, r.jsx)(T.Z, {}), p === A.V5.ALL && (0, r.jsx)(H, {
-      hideBanner: !G || p !== A.V5.ALL
-    }), $ && (0, r.jsx)(z, {
-      filter: p
-    }), (0, r.jsx)(Z.Z, {
-      className: L.messageList,
-      renderMessageGroup: F,
-      messages: p === A.V5.BOOKMARKS ? Y : q,
-      unreadMessages: p === A.V5.BOOKMARKS ? [] : X,
-      listName: "notifications-inbox",
-      renderLoadingState: V,
-      ignoreGrouping: p === A.V5.BOOKMARKS,
-      loadMore: U
-    })]
+    children: (0, r.jsxs)(c.y5t, {
+      forceLevel: 1,
+      component: (0, r.jsx)(f.ZP, (t = M({
+        hasSubheader: !0,
+        guild: A.F7
+      }, k), n = n = {
+        children: (0, r.jsx)(c.Kqy, {
+          direction: "horizontal",
+          gap: 4,
+          style: {
+            marginRight: -4
+          },
+          children: Q === v.v8.DROPDOWN && !J && (0, r.jsx)(T.p, {})
+        })
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+        var n = Object.keys(e);
+        if (Object.getOwnPropertySymbols) {
+          var r = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, r)
+        }
+        return n
+      })(Object(n)).forEach(function(e) {
+        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+      }), t)),
+      children: [Q === v.v8.TABS && (0, r.jsx)(T.Z, {}), p === A.V5.ALL && (0, r.jsx)(H, {
+        hideBanner: !G || p !== A.V5.ALL
+      }), $ && (0, r.jsx)(z, {
+        filter: p
+      }), (0, r.jsx)(Z.Z, {
+        className: L.messageList,
+        renderMessageGroup: F,
+        messages: p === A.V5.BOOKMARKS ? Y : q,
+        unreadMessages: p === A.V5.BOOKMARKS ? [] : X,
+        listName: "notifications-inbox",
+        renderLoadingState: V,
+        ignoreGrouping: p === A.V5.BOOKMARKS,
+        loadMore: U
+      })]
+    })
   })
 }
 

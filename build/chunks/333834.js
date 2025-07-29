@@ -41,6 +41,7 @@ function T(e) {
     toggleOpenedState: i
   } = e;
   return (0, r.jsx)(h.P3F, {
+    "aria-expanded": n,
     onClick: i,
     className: o()(N.messagesGroupHeaderWrap, {
       [N.collapsed]: !n

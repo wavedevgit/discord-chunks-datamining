@@ -233,6 +233,7 @@ function x(e) {
       children: () => (0, r.jsx)(s.P3F, O(_({}, e), {
         className: o()(t, b.headerButton),
         innerRef: a,
+        "aria-label": m.intl.string(m.t.UdhTtr),
         onClick: t => {
           e.onClick(t)
         },
