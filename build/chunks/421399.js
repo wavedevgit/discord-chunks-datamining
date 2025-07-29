@@ -1,4 +1,4 @@
-/** Chunk was on 52508 **/
+/** Chunk was on 74098 **/
 n.d(t, {
   Z: () => k,
   a: () => j
@@ -89,8 +89,8 @@ function k(e) {
     showPopout: x = !1,
     hideGuildTag: F = !1,
     hideSystemTag: w = !1,
-    className: V,
-    onClick: G,
+    className: G,
+    onClick: V,
     onContextMenu: B,
     onPopoutRequestClose: W,
     renderPopout: H,
@@ -139,7 +139,7 @@ function k(e) {
         } : void 0
       }
     })(),
-    onClick: G,
+    onClick: V,
     onContextMenu: B,
     children: eN ? (0, i.jsx)(S.Z, {
       userName: eS,
@@ -190,13 +190,13 @@ function k(e) {
           tag: "span",
           innerRef: X
         }, n, ef), {
-          className: o()(ef.className, M.clickable, V)
+          className: o()(ef.className, M.clickable, G)
         })), em]
       })
     }
   }) : (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(_.P3F, Z(v({}, ef), {
-      className: o()(ef.className, V)
+      className: o()(ef.className, G)
     })), em]
   }), eR = null != Y ? Y[0] : null, eP = null != Y ? Y[1] : null;
   return (0, i.jsxs)(I.Gt, {

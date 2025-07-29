@@ -1,11 +1,11 @@
-/** Chunk was on 63243 **/
+/** Chunk was on 74098 **/
 n.d(t, {
-  Z: () => r
+  Z: () => i
 });
-var i = n(570140);
+var r = n(570140);
 
-function r(e) {
-  i.Z.dispatch({
+function i(e) {
+  r.Z.dispatch({
     type: "DETECTED_OFF_PLATFORM_PREMIUM_PERKS_DISMISS",
     skuId: e
   })

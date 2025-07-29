@@ -1,9 +1,9 @@
-/** Chunk was on 87294 **/
-r.d(t, {
+/** Chunk was on 72374 **/
+n.d(t, {
   M: () => l
 });
-var n = r(877369);
+var r = n(877369);
 
 function l(e) {
-  return n.fromByteArray(e)
+  return r.fromByteArray(e)
 }

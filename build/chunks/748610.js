@@ -208,10 +208,10 @@ let f = {
     })
   },
   openSearchScreen: function(e) {
-    let t = (0, s.WJ)(e);
     l.Z.dispatch({
       type: "SEARCH_SCREEN_OPEN",
-      searchId: t
+      searchContext: e,
+      searchId: (0, s.WJ)(e)
     })
   },
   setShowBlockedResults: function(e, t) {
@@ -256,9 +256,9 @@ let f = {
     }))
   },
   updateAutocompleteQuery: function(e, t, n) {
-    null != e && l.Z.dispatch({
+    l.Z.dispatch({
       type: "SEARCH_AUTOCOMPLETE_QUERY_UPDATE",
-      searchId: e,
+      searchContext: e,
       tokens: t,
       cursorScope: n
     })

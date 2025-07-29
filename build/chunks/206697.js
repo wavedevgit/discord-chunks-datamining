@@ -16,21 +16,21 @@ var n = r(255367),
   f = r(981631),
   g = r(474936),
   m = r(388032),
-  S = r(491350),
+  y = r(491350),
   _ = r(492764),
-  y = r(235810);
+  S = r(235810);
 
 function x() {
   return (0, p.Z)() ? (0, n.jsx)("div", {
-    className: S.emptyContainer,
+    className: y.emptyContainer,
     children: (0, n.jsxs)("div", {
-      className: S.emptyInner,
+      className: y.emptyInner,
       children: [(0, n.jsx)("img", {
         src: _,
-        className: S.image,
+        className: y.image,
         alt: ""
       }), (0, n.jsx)(o.X6q, {
-        className: S.header,
+        className: y.header,
         variant: "heading-xl/semibold",
         color: "text-default",
         children: m.intl.string(m.t.erEf2t)
@@ -41,15 +41,15 @@ function x() {
       })]
     })
   }) : (0, n.jsxs)("div", {
-    className: S.emptyContainer,
+    className: y.emptyContainer,
     children: [(0, n.jsxs)("div", {
-      className: S.emptyInner,
+      className: y.emptyInner,
       children: [(0, n.jsx)("img", {
-        src: y,
-        className: S.image,
+        src: S,
+        className: y.image,
         alt: ""
       }), (0, n.jsx)(o.X6q, {
-        className: S.header,
+        className: y.header,
         variant: "heading-xl/semibold",
         color: "text-default",
         children: m.intl.string(m.t.w4DRbW)
@@ -94,19 +94,19 @@ function b() {
       onClick: t
     });
   return (0, n.jsxs)("div", {
-    className: S.upsellContainer,
+    className: y.upsellContainer,
     children: [(0, n.jsx)(l.SrA, {
       size: "md",
       color: u.JX.PREMIUM_TIER_2
     }), (0, n.jsx)(a.xv, {
       variant: "text-xs/medium",
       color: "header-primary",
-      className: S.upsellText,
+      className: y.upsellText,
       children: p
     }), (0, n.jsx)(h.Z, {
-      className: S.upsellButton,
+      className: y.upsellButton,
       size: i.Ph.TINY,
-      shinyButtonClassName: S.upsellButton,
+      shinyButtonClassName: y.upsellButton,
       subscriptionTier: g.Si.TIER_2,
       premiumModalAnalyticsLocation: {
         section: f.jXE.FOR_LATER_POPOUT_UPSELL

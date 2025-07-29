@@ -1,9 +1,9 @@
 /** Chunk was on 36512 **/
 r.d(t, {
-  GQ: () => S,
+  GQ: () => y,
   MC: () => m,
   P: () => _,
-  ZP: () => y
+  ZP: () => S
 });
 var n = r(255367);
 r(73800);
@@ -49,7 +49,7 @@ function m(e) {
   })
 }
 
-function S(e) {
+function y(e) {
   let {
     channel: t
   } = e;
@@ -81,7 +81,7 @@ function _(e) {
   })
 }
 
-function y(e) {
+function S(e) {
   let {
     channel: t,
     text: r,
@@ -96,7 +96,7 @@ function y(e) {
       channel: t
     }), (0, n.jsxs)("div", {
       className: a,
-      children: [(0, n.jsx)(S, {
+      children: [(0, n.jsx)(y, {
         channel: t
       }), (0, n.jsx)(_, {
         channel: t

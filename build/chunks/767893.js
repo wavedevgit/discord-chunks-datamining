@@ -16,7 +16,7 @@ var n = r(255367),
   f = r(430824),
   g = r(388032),
   m = r(432513);
-let S = {
+let y = {
   top: 8,
   bottom: 8,
   left: -4,
@@ -29,11 +29,11 @@ function _(e) {
     children: r
   } = e;
   return (0, n.jsx)(a.tE, {
-    offset: S,
+    offset: y,
     children: (0, n.jsxs)("div", {
       className: m.channelHeader,
       "data-recents-channel": t.id,
-      children: [(0, n.jsx)(y, {
+      children: [(0, n.jsx)(S, {
         channel: t
       }), t.isPrivate() ? null : (0, n.jsx)(i.Fbu, {
         size: "xxs"
@@ -44,7 +44,7 @@ function _(e) {
   })
 }
 
-function y(e) {
+function S(e) {
   let {
     channel: t
   } = e, r = (0, o.e7)([f.Z], () => f.Z.getGuild(t.guild_id));

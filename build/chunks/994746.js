@@ -65,6 +65,9 @@ function s(e) {
   } : e.type === a.IIU.COMPETING ? {
     text: o.intl.string(o.t.OzCsIC),
     platformIcon: n
+  } : e.type === a.IIU.HANG_STATUS ? {
+    text: o.intl.string(o.t["04B8fH"]),
+    platformIcon: n
   } : {
     text: void 0,
     platformIcon: n

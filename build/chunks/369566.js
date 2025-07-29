@@ -31,7 +31,7 @@ function g(e) {
         let {
           type: t
         } = e;
-        return t !== p.IIU.CUSTOM_STATUS && t !== p.IIU.HANG_STATUS
+        return t !== p.IIU.CUSTOM_STATUS
       }), (e, t) => null != e.application_id && null != t.application_id && e.application_id === t.application_id || null != e.name && null != t.name && e.name === t.name),
       t = null == b ? void 0 : b.entries.filter(t => !(0, u.Jg)(t) && ((0, l.dU)(t) ? t.extra.entries.length > 0 && !e.some(e => null != e && (0, c.pB)(t, e)) : (0, l.y0)(t) ? !e.some(e => null != e && (0, c.RL)(t, e)) : (0, l.Rh)(t)));
     return {

@@ -95,7 +95,7 @@ let m = e => {
   })
 };
 
-function S(e) {
+function y(e) {
   e.stopPropagation(), e.preventDefault()
 }
 
@@ -107,7 +107,7 @@ function _(e, t, r) {
     "aria-selected": r
   }
 }
-class y extends(n = l.PureComponent) {
+class S extends(n = l.PureComponent) {
   renderQuery(e) {
     let {
       query: t,
@@ -118,22 +118,22 @@ class y extends(n = l.PureComponent) {
       onHighlightQuery: c,
       hideQuery: u,
       searchFavorites: p,
-      showDMQueryText: S
+      showDMQueryText: y
     } = this.props;
     if (e || u) return null;
-    let y = -1 === n;
+    let S = -1 === n;
     return (0, s.jsxs)(s.Fragment, {
       children: [(0, s.jsxs)(o.P3F, g(f({
         className: i()(d.queryContainer, {
-          [d.focused]: y
+          [d.focused]: S
         })
-      }, _(r, -1, y)), {
+      }, _(r, -1, S)), {
         onMouseEnter: c,
         onClick: l,
         children: [(0, s.jsx)(m, {
           query: t,
           searchFavorites: p,
-          showDMQueryText: S
+          showDMQueryText: y
         }), (0, s.jsx)("div", {
           className: d.queryShortcut,
           "aria-hidden": !0,
@@ -145,9 +145,9 @@ class y extends(n = l.PureComponent) {
         })]
       })), p && (0, s.jsxs)(o.P3F, g(f({
         className: i()(d.queryContainer, {
-          [d.focused]: y
+          [d.focused]: S
         })
-      }, _(r, -1, y)), {
+      }, _(r, -1, S)), {
         onMouseEnter: c,
         onClick: a,
         children: [(0, s.jsx)("div", {
@@ -193,7 +193,7 @@ class y extends(n = l.PureComponent) {
       style: {
         width: n
       },
-      onMouseDown: S,
+      onMouseDown: y,
       role: "listbox",
       id: r,
       tabIndex: -1,
@@ -235,9 +235,9 @@ class y extends(n = l.PureComponent) {
     })
   }
 }
-p(y, "defaultProps", {
+p(S, "defaultProps", {
   renderInitialState: () => null,
   hideQuery: !1,
   width: 320
 });
-let x = y
+let x = S
