@@ -69,7 +69,7 @@ class I extends m.Z {
       IN_APP_REPORTS_SHOW_FEEDBACK: e => this.handleInAppReportsFeedback(e),
       USER_DM_MUTE_SHOW_FEEDBACK: e => this.handleUserDmMuteFeedback(e),
       BLOCK_USER_SHOW_FEEDBACK: () => this.handleBlockUserFeedback(),
-      AGE_VERIFICATION_SHOW_FEEDBACK: () => this.handleAgeVerificationFeedback()
+      AGE_VERIFICATION_SHOW_FEEDBACK: e => this.handleAgeVerificationFeedback(e)
     }), b(this, "handleVoiceChannelFeedback", e => {
       let {
         analyticsData: t
@@ -196,7 +196,21 @@ class I extends m.Z {
           return t => (0, r.jsx)(e, y({}, t))
         })
       })
-    }), b(this, "handleAgeVerificationFeedback", () => {})
+    }), b(this, "handleAgeVerificationFeedback", e => {
+      let {
+        dismissibleContent: t
+      } = e;
+      this.possiblyShowFeedbackModal(g.nw.AGE_VERIFICATION, () => {
+        (0, a.ZDy)(async () => {
+          let {
+            default: e
+          } = await Promise.all([n.e("60137"), n.e("39139")]).then(n.bind(n, 110927));
+          return n => (0, r.jsx)(e, y({
+            dismissibleContent: t
+          }, n))
+        })
+      })
+    })
   }
 }
 let T = new I

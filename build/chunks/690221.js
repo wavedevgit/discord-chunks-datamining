@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   o = n(73800),
   i = n(481060),
-  l = n(703656),
-  s = n(981631);
+  s = n(703656),
+  l = n(981631);
 
 function c(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -46,7 +46,7 @@ let u = o.forwardRef(function(e, t) {
     onClick: _,
     onKeyPress: E,
     focusProps: d
-  } = e, p = function(e, t) {
+  } = e, I = function(e, t) {
     if (null == e) return {};
     var n, r, o = function(e, t) {
       if (null == e) return {};
@@ -61,18 +61,18 @@ let u = o.forwardRef(function(e, t) {
     }
     return o
   }(e, ["href", "children", "onClick", "onKeyPress", "focusProps"]);
-  let I = o.useCallback(e => {
-      e.repeat || ((e.charCode === s.yXg.SPACE || e.charCode === s.yXg.ENTER) && (e.preventDefault(), null != n && (0, l.uL)(n), null == _ || _()), null == E || E(e))
+  let p = o.useCallback(e => {
+      e.repeat || ((e.charCode === l.yXg.SPACE || e.charCode === l.yXg.ENTER) && (e.preventDefault(), null != n && (0, s.uL)(n), null == _ || _()), null == E || E(e))
     }, [n, E, _]),
     m = o.useCallback(e => {
-      e.metaKey || e.shiftKey || 0 !== e.button || (e.preventDefault(), e.stopPropagation(), null != n && (0, l.uL)(n), null == _ || _())
+      e.metaKey || e.shiftKey || 0 !== e.button || (e.preventDefault(), e.stopPropagation(), null != n && (0, s.uL)(n), null == _ || _())
     }, [n, _]),
     N = (0, r.jsx)("a", a(c({
       ref: t,
       href: n,
       onClick: m,
-      onKeyPress: I
-    }, p), {
+      onKeyPress: p
+    }, I), {
       children: u
     }));
   return (0, r.jsx)(i.tEY, a(c({}, d), {

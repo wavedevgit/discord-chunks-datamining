@@ -1,6 +1,6 @@
 /** Chunk was on 73021 **/
 n.d(t, {
-  Z: () => et
+  Z: () => en
 }), n(704826), n(35282), n(388685), n(361932), n(187205);
 var i = n(255367),
   r = n(73800),
@@ -39,11 +39,12 @@ var i = n(255367),
   L = n(231338),
   B = n(426617),
   M = n(177475),
-  U = n(453707),
-  V = n(241539),
-  G = n(715720);
+  U = n(691739),
+  V = n(453707),
+  G = n(241539),
+  F = n(715720);
 
-function F(e) {
+function H(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -62,7 +63,7 @@ function F(e) {
   return e
 }
 
-function H(e, t) {
+function z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -75,14 +76,14 @@ function H(e, t) {
   }), e
 }
 
-function z() {
+function W() {
   return (0, i.jsxs)("div", {
     className: B.root,
-    children: [(0, i.jsx)(W, {}), (0, i.jsx)(ei, {}), (0, i.jsx)(eu, {}), (0, i.jsx)(em, {}), (0, i.jsx)(ed, {}), (0, i.jsx)(eo, {}), (0, i.jsx)(ec, {}), (0, i.jsx)(el, {}), (0, i.jsx)(ea, {}), (0, i.jsx)(eE, {}), (0, i.jsx)(Y, {}), (0, i.jsx)(eO, {})]
+    children: [(0, i.jsx)(Y, {}), (0, i.jsx)(er, {}), (0, i.jsx)(em, {}), (0, i.jsx)(ep, {}), (0, i.jsx)(eu, {}), (0, i.jsx)(ec, {}), (0, i.jsx)(ed, {}), (0, i.jsx)(eo, {}), (0, i.jsx)(el, {}), (0, i.jsx)(eO, {}), (0, i.jsx)(K, {}), (0, i.jsx)(eC, {})]
   })
 }
 
-function W() {
+function Y() {
   let e = (0, A.Z)("highlight_mana_components");
   return (0, i.jsx)(S.hjN, {
     title: "Design System Controls",
@@ -98,7 +99,7 @@ function W() {
   })
 }
 
-function Y() {
+function K() {
   let e = Object.keys(S.DM8);
   return (0, i.jsxs)("div", {
     className: B.section,
@@ -116,21 +117,21 @@ function Y() {
     })]
   })
 }
-let K = ["neutral", "blue_new", "blurple", "green_new", "red_new", "teal_new", "yellow_new", "orange_new", "pink", "purple"],
-  q = ["background-surface-highest", "background-surface-higher", "background-surface-high", "background-base-low", "background-base-lower", "background-base-lowest"],
-  X = ["background-gradient-lowest", "background-gradient-lower", "background-gradient-low", "background-gradient-high", "background-gradient-higher", "background-gradient-highest"],
-  J = ["", "background-mod-subtle", "background-mod-normal", "background-mod-strong"],
-  Q = ["critical", "warning", "positive", "info"],
-  $ = ["text-default", "text-primary", "text-secondary", "text-tertiary", "text-feedback-critical", "text-feedback-warning", "text-feedback-positive", "text-feedback-info", "premium-nitro-pink-text"];
+let q = ["neutral", "blue_new", "blurple", "green_new", "red_new", "teal_new", "yellow_new", "orange_new", "pink", "purple"],
+  X = ["background-surface-highest", "background-surface-higher", "background-surface-high", "background-base-low", "background-base-lower", "background-base-lowest"],
+  J = ["background-gradient-lowest", "background-gradient-lower", "background-gradient-low", "background-gradient-high", "background-gradient-higher", "background-gradient-highest"],
+  Q = ["", "background-mod-subtle", "background-mod-normal", "background-mod-strong"],
+  $ = ["critical", "warning", "positive", "info"],
+  ee = ["text-default", "text-primary", "text-secondary", "text-tertiary", "text-feedback-critical", "text-feedback-warning", "text-feedback-positive", "text-feedback-info", "premium-nitro-pink-text"];
 
-function ee() {
+function et() {
   let e = (0, c.e7)([N.Z], () => N.Z.gradientPreset);
   return (0, i.jsxs)("div", {
     children: [(0, i.jsx)(S.X6q, {
       variant: "heading-xl/semibold",
       className: B.heading,
       children: "Background Colors"
-    }), q.map(e => (0, i.jsxs)("div", {
+    }), X.map(e => (0, i.jsxs)("div", {
       className: B.palette,
       style: {
         backgroundColor: "var(--".concat(e, ")"),
@@ -145,7 +146,7 @@ function ee() {
           gap: 8,
           gridTemplateColumns: "repeat(3, 1fr)"
         },
-        children: J.map(e => (0, i.jsxs)("div", {
+        children: Q.map(e => (0, i.jsxs)("div", {
           className: B.color,
           style: {
             padding: 16,
@@ -157,7 +158,7 @@ function ee() {
             children: e
           }), (0, i.jsx)("hr", {
             className: B.sectionDivider
-          }), $.map(e => (0, i.jsx)(S.Text, {
+          }), ee.map(e => (0, i.jsx)(S.Text, {
             variant: "text-xs/medium",
             style: {
               color: "var(--".concat(e, ")")
@@ -173,7 +174,7 @@ function ee() {
           gap: 8,
           gridTemplateColumns: "repeat(3, 1fr)"
         },
-        children: Q.map(e => {
+        children: $.map(e => {
           let t = "var(--text-feedback-".concat(e, ")");
           return (0, i.jsxs)("div", {
             className: B.color,
@@ -214,7 +215,7 @@ function ee() {
           gridTemplateColumns: "repeat(6, 1fr)",
           transform: "translateZ(0)"
         },
-        children: X.map(e => (0, i.jsx)("div", {
+        children: J.map(e => (0, i.jsx)("div", {
           className: B.palette,
           style: {
             background: "var(--".concat(e, ")"),
@@ -230,7 +231,7 @@ function ee() {
       variant: "heading-xl/semibold",
       className: B.heading,
       children: "Scales"
-    }), K.map(e => (0, i.jsxs)("div", {
+    }), q.map(e => (0, i.jsxs)("div", {
       className: B.palette,
       children: [(0, i.jsx)(S.Text, {
         variant: "text-lg/semibold",
@@ -258,18 +259,18 @@ function ee() {
   })
 }
 
-function et() {
+function en() {
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(P.Z, {
       parentSetting: w.s6.DESIGN_SYSTEMS,
       settingsSection: k.oAB.DESIGN_SYSTEMS,
       tabs: [{
         title: "Components",
-        component: () => (0, i.jsx)(z, {}),
+        component: () => (0, i.jsx)(W, {}),
         setting: w.s6.DESIGN_SYSTEMS_COMPONENTS
       }, {
         title: "Colors",
-        component: () => (0, i.jsx)(ee, {}),
+        component: () => (0, i.jsx)(et, {}),
         setting: w.s6.DESIGN_SYSTEMS_COLORS
       }, {
         title: "Animations",
@@ -296,7 +297,7 @@ function et() {
   })
 }
 
-function en(e) {
+function ei(e) {
   var {
     component: t,
     showLoadingAnimation: n
@@ -320,14 +321,14 @@ function en(e) {
     l(!1)
   }, 3e3)), () => {
     o.current >= 0 && clearTimeout(o.current)
-  }), [a, n]), (0, i.jsx)(t, H(F({}, s), {
+  }), [a, n]), (0, i.jsx)(t, z(H({}, s), {
     loading: n ? a : void 0,
     onClick: () => l(!a)
   }))
 }
 
-function ei() {
-  let [e, t] = r.useState("md"), [n, s] = r.useState("start"), [a, o] = r.useState(!0), c = ["primary", "secondary", "critical-primary", "critical-secondary", "active", "overlay-primary", "overlay-secondary"], p = [...c, "expressive"].map(t => (0, i.jsx)(en, {
+function er() {
+  let [e, t] = r.useState("md"), [n, s] = r.useState("start"), [a, o] = r.useState(!0), c = ["primary", "secondary", "critical-primary", "critical-secondary", "active", "overlay-primary", "overlay-secondary"], p = [...c, "expressive"].map(t => (0, i.jsx)(ei, {
     component: d.z,
     variant: t,
     text: "".concat((0, l.capitalize)(t), " ").concat(e.toUpperCase()),
@@ -335,7 +336,7 @@ function ei() {
     icon: "none" !== n ? S.gw7 : void 0,
     iconPosition: n,
     showLoadingAnimation: a
-  }, t + e)), h = [...c, "icon-only"].map(t => (0, i.jsx)(en, {
+  }, t + e)), h = [...c, "icon-only"].map(t => (0, i.jsx)(ei, {
     component: m.h,
     variant: t,
     icon: S.gw7,
@@ -353,7 +354,7 @@ function ei() {
     children: [(0, i.jsx)(S.X6q, {
       variant: "heading-xl/semibold",
       children: "Buttons"
-    }), (0, i.jsxs)(es, {
+    }), (0, i.jsxs)(ea, {
       title: "Button Options",
       children: [(0, i.jsx)(S.xJW, {
         title: "Button size",
@@ -438,12 +439,12 @@ function ei() {
           gap: 16,
           children: [(0, i.jsxs)(u.h, {
             size: e,
-            children: [(0, i.jsx)(en, {
+            children: [(0, i.jsx)(ei, {
               component: d.z,
               variant: "secondary",
               text: "Cancel",
               showLoadingAnimation: a
-            }), (0, i.jsx)(en, {
+            }), (0, i.jsx)(ei, {
               component: d.z,
               variant: "primary",
               text: "Submit",
@@ -451,12 +452,12 @@ function ei() {
             })]
           }), (0, i.jsxs)(u.h, {
             size: e,
-            children: [(0, i.jsx)(en, {
+            children: [(0, i.jsx)(ei, {
               component: d.z,
               variant: "primary",
               text: "Submit",
               showLoadingAnimation: a
-            }), (0, i.jsx)(en, {
+            }), (0, i.jsx)(ei, {
               component: m.h,
               variant: "secondary",
               icon: S.gw7,
@@ -469,12 +470,12 @@ function ei() {
           children: (0, i.jsxs)(u.h, {
             size: e,
             fullWidth: !0,
-            children: [(0, i.jsx)(en, {
+            children: [(0, i.jsx)(ei, {
               component: d.z,
               variant: "secondary",
               text: "Cancel",
               showLoadingAnimation: a
-            }), (0, i.jsx)(en, {
+            }), (0, i.jsx)(ei, {
               component: d.z,
               variant: "primary",
               text: "Submit",
@@ -493,12 +494,12 @@ function ei() {
           children: (0, i.jsxs)(u.h, {
             direction: "vertical",
             size: e,
-            children: [(0, i.jsx)(en, {
+            children: [(0, i.jsx)(ei, {
               component: d.z,
               variant: "secondary",
               text: "Cancel",
               showLoadingAnimation: a
-            }), (0, i.jsx)(en, {
+            }), (0, i.jsx)(ei, {
               component: d.z,
               variant: "primary",
               text: "Submit",
@@ -511,12 +512,12 @@ function ei() {
             fullWidth: !0,
             direction: "vertical",
             size: e,
-            children: [(0, i.jsx)(en, {
+            children: [(0, i.jsx)(ei, {
               component: d.z,
               variant: "secondary",
               text: "Cancel",
               showLoadingAnimation: a
-            }), (0, i.jsx)(en, {
+            }), (0, i.jsx)(ei, {
               component: d.z,
               variant: "primary",
               text: "Submit",
@@ -524,14 +525,14 @@ function ei() {
             })]
           })
         })]
-      }), (0, i.jsx)(er, {
+      }), (0, i.jsx)(es, {
         buttonSize: e
       })]
     })]
   })
 }
 
-function er(e) {
+function es(e) {
   let {
     buttonSize: t
   } = e, [n, s] = r.useState(!1);
@@ -556,7 +557,7 @@ function er(e) {
   })
 }
 
-function es(e) {
+function ea(e) {
   let {
     children: t,
     title: n
@@ -590,7 +591,7 @@ function es(e) {
   })
 }
 
-function ea() {
+function el() {
   let [e, t] = r.useState("1");
   return (0, i.jsxs)("div", {
     className: B.section,
@@ -620,7 +621,7 @@ function ea() {
   })
 }
 
-function el() {
+function eo() {
   let [e, t] = r.useState(1), [n, s] = r.useState(!1), [a, l] = r.useState(5), [o, c] = r.useState(!1), d = r.useRef(null);
   return (0, i.jsxs)("div", {
     className: B.section,
@@ -714,7 +715,7 @@ function el() {
   })
 }
 
-function eo() {
+function ec() {
   let [e, t] = r.useState(S.FGA.PRIMARY), n = r.useMemo(() => Object.entries(S.FGA).map(e => {
     let [t, n] = e;
     return {
@@ -744,7 +745,7 @@ function eo() {
         color: e,
         text: "Here's top aligned tooltip text!",
         position: "top",
-        children: e => (0, i.jsx)(S.zxk, F({
+        children: e => (0, i.jsx)(S.zxk, H({
           variant: "primary",
           text: "Tooltip on the top"
         }, e))
@@ -752,7 +753,7 @@ function eo() {
         color: e,
         text: "Here's right aligned tooltip text!",
         position: "left",
-        children: e => (0, i.jsx)(S.zxk, F({
+        children: e => (0, i.jsx)(S.zxk, H({
           variant: "primary",
           text: "Tooltip on the left"
         }, e))
@@ -760,7 +761,7 @@ function eo() {
         color: e,
         text: "Here's bottom aligned tooltip text!",
         position: "bottom",
-        children: e => (0, i.jsx)(S.zxk, F({
+        children: e => (0, i.jsx)(S.zxk, H({
           variant: "primary",
           text: "Tooltip on the bottom"
         }, e))
@@ -768,7 +769,7 @@ function eo() {
         color: e,
         text: "Here's right aligned tooltip text!",
         position: "right",
-        children: e => (0, i.jsx)(S.zxk, F({
+        children: e => (0, i.jsx)(S.zxk, H({
           variant: "primary",
           text: "Tooltip on the right"
         }, e))
@@ -777,8 +778,8 @@ function eo() {
   })
 }
 
-function ec() {
-  let [e, t] = r.useState(!1), [n, s] = r.useState(!1), [a, l] = r.useState(!1), [o, c] = r.useState(!1), [d, u] = r.useState(!1), [m, p] = r.useState(!1), [g, h] = r.useState(!1), [f, b] = r.useState(!1), [x, _] = r.useState(!1), [j, E] = r.useState(!1), [O, T] = r.useState(!1), [N, I] = r.useState(!1), [y, A] = r.useState(!1), [P, R] = r.useState(!1), [D, Z] = r.useState(!1), [w, k] = r.useState(!1), [L, M] = r.useState(!1), [F, H] = r.useState(!1), [z, W] = r.useState(!1), Y = r.useRef(null), K = r.useRef(null), q = r.useRef(null), X = r.useRef(null), J = r.useRef(null), Q = r.useRef(null), $ = r.useRef(null), ee = r.useRef(null), et = r.useRef(null), en = r.useRef(null), ei = r.useRef(null), er = r.useRef(null), es = r.useRef(null), ea = r.useRef(null), el = r.useRef(null), eo = r.useRef(null), ec = r.useRef(null), ed = r.useRef(null), eu = r.useRef(null), em = r.useCallback(() => {
+function ed() {
+  let [e, t] = r.useState(!1), [n, s] = r.useState(!1), [a, l] = r.useState(!1), [o, c] = r.useState(!1), [d, u] = r.useState(!1), [m, p] = r.useState(!1), [g, h] = r.useState(!1), [f, b] = r.useState(!1), [x, _] = r.useState(!1), [j, E] = r.useState(!1), [O, T] = r.useState(!1), [N, I] = r.useState(!1), [y, A] = r.useState(!1), [P, R] = r.useState(!1), [D, Z] = r.useState(!1), [w, k] = r.useState(!1), [L, M] = r.useState(!1), [U, H] = r.useState(!1), [z, W] = r.useState(!1), Y = r.useRef(null), K = r.useRef(null), q = r.useRef(null), X = r.useRef(null), J = r.useRef(null), Q = r.useRef(null), $ = r.useRef(null), ee = r.useRef(null), et = r.useRef(null), en = r.useRef(null), ei = r.useRef(null), er = r.useRef(null), es = r.useRef(null), ea = r.useRef(null), el = r.useRef(null), eo = r.useRef(null), ec = r.useRef(null), ed = r.useRef(null), eu = r.useRef(null), em = r.useCallback(() => {
     t(!1), s(!1), l(!1), c(!1), u(!1), p(!1), h(!1), b(!1), _(!1), E(!1), T(!1), I(!1), A(!1), R(!1), Z(!1), k(!1), M(!1), H(!1), W(!1)
   }, []);
   return (0, i.jsxs)("div", {
@@ -798,7 +799,7 @@ function ec() {
       body: "Body",
       size: "sm",
       asset: (0, i.jsx)("img", {
-        src: V.Z,
+        src: G.Z,
         alt: "Small placeholder"
       }),
       badge: "new",
@@ -817,7 +818,7 @@ function ec() {
       title: "Header",
       body: "Body",
       asset: (0, i.jsx)("img", {
-        src: U.Z,
+        src: V.Z,
         alt: "Medium placeholder"
       }),
       badge: "new",
@@ -850,7 +851,7 @@ function ec() {
       title: "Ipsum Dolor",
       body: "Lorem ipsum dolor sit amet, consectetur elit. Sed do eiusmod.",
       asset: (0, i.jsx)("img", {
-        src: U.Z,
+        src: V.Z,
         alt: "Medium placeholder"
       }),
       badge: "new",
@@ -874,7 +875,7 @@ function ec() {
       title: "Header",
       body: "Body",
       asset: (0, i.jsx)("img", {
-        src: U.Z,
+        src: V.Z,
         alt: "Medium placeholder"
       }),
       badge: "new",
@@ -898,7 +899,7 @@ function ec() {
       title: "No Actions",
       body: "This popover has no action buttons, just content to display.",
       asset: (0, i.jsx)("img", {
-        src: U.Z,
+        src: V.Z,
         alt: "Medium placeholder"
       }),
       badge: "new"
@@ -913,7 +914,7 @@ function ec() {
       title: "Custom Caret API",
       body: "Using CaretConfig with END placement",
       asset: (0, i.jsx)("img", {
-        src: U.Z,
+        src: V.Z,
         alt: "Medium placeholder"
       }),
       badge: "new",
@@ -932,7 +933,7 @@ function ec() {
       title: "Left Side Caret",
       body: "Caret positioned on the left side at start",
       asset: (0, i.jsx)("img", {
-        src: U.Z,
+        src: V.Z,
         alt: "Medium placeholder"
       }),
       badge: "early_access",
@@ -952,7 +953,7 @@ function ec() {
       title: "Custom Offset",
       body: "Caret positioned 50px from center with custom offset",
       asset: (0, i.jsx)("img", {
-        src: U.Z,
+        src: V.Z,
         alt: "Medium placeholder"
       }),
       badge: "beta",
@@ -972,7 +973,7 @@ function ec() {
       title: "Left Center Positioning",
       body: "Popover appears to the right with caret centered on the left side",
       asset: (0, i.jsx)("img", {
-        src: U.Z,
+        src: V.Z,
         alt: "Medium placeholder"
       }),
       badge: "new",
@@ -991,7 +992,7 @@ function ec() {
       title: "Purple Gradient",
       body: "This popover has a beautiful purple gradient background",
       asset: (0, i.jsx)("img", {
-        src: U.Z,
+        src: V.Z,
         alt: "Medium placeholder"
       }),
       gradientColor: "purple",
@@ -1011,7 +1012,7 @@ function ec() {
       title: "Blue Gradient",
       body: "This popover showcases the blue gradient option",
       asset: (0, i.jsx)("img", {
-        src: U.Z,
+        src: V.Z,
         alt: "Medium placeholder"
       }),
       gradientColor: "blue",
@@ -1031,7 +1032,7 @@ function ec() {
       title: "Nitro Pink Gradient",
       body: "Experience the premium nitro-pink gradient effect",
       asset: (0, i.jsx)("img", {
-        src: U.Z,
+        src: V.Z,
         alt: "Medium placeholder"
       }),
       gradientColor: "nitro-pink",
@@ -1055,7 +1056,7 @@ function ec() {
       title: "Voice Filters",
       body: "Experience enhanced voice quality with our latest filtering technology. Perfect for gaming and streaming.",
       asset: (0, i.jsx)("img", {
-        src: G.Z,
+        src: F.Z,
         alt: "Voice Filters"
       }),
       badge: "new",
@@ -1093,7 +1094,7 @@ function ec() {
         title: "Welcome to Quests!",
         body: "Journey to Quest Home in Discover to start earning Orbs.",
         asset: (0, i.jsx)("img", {
-          src: U.Z,
+          src: V.Z,
           alt: "Medium placeholder"
         }),
         badge: "new",
@@ -1105,7 +1106,7 @@ function ec() {
         title: "Earn Rewards",
         body: "Complete quests to earn Orbs and unlock exclusive rewards.",
         asset: (0, i.jsx)("img", {
-          src: G.Z,
+          src: F.Z,
           alt: "Quest Rewards"
         }),
         action: {
@@ -1116,7 +1117,7 @@ function ec() {
         title: "Quest Complete!",
         body: "You're all set to start your quest adventure. Good luck!",
         asset: (0, i.jsx)("img", {
-          src: U.Z,
+          src: V.Z,
           alt: "Medium placeholder"
         }),
         action: {
@@ -1141,7 +1142,7 @@ function ec() {
       title: "Experience Voice Filters",
       body: "Enhanced voice quality with our latest filtering technology. Try the expressive button!",
       asset: (0, i.jsx)("img", {
-        src: G.Z,
+        src: F.Z,
         alt: "Voice Filters"
       }),
       badge: "new",
@@ -1153,7 +1154,7 @@ function ec() {
       }]
     }), (0, i.jsx)(v.e, {
       targetElementRef: ed,
-      shouldShow: F,
+      shouldShow: U,
       onRequestClose: em,
       caretConfig: {
         position: "bottom",
@@ -1163,7 +1164,7 @@ function ec() {
         title: "Discover Features",
         body: "Explore amazing new capabilities in Discord.",
         asset: (0, i.jsx)("img", {
-          src: U.Z,
+          src: V.Z,
           alt: "Medium placeholder"
         }),
         badge: "new",
@@ -1175,7 +1176,7 @@ function ec() {
         title: "Unlock Potential",
         body: "Learn how to make the most of your Discord experience.",
         asset: (0, i.jsx)("img", {
-          src: G.Z,
+          src: F.Z,
           alt: "Features"
         }),
         action: {
@@ -1186,7 +1187,7 @@ function ec() {
         title: "Ready to Go!",
         body: "You're all set! Notice the expressive button animation.",
         asset: (0, i.jsx)("img", {
-          src: U.Z,
+          src: V.Z,
           alt: "Medium placeholder"
         }),
         action: {
@@ -1465,7 +1466,7 @@ function ec() {
   })
 }
 
-function ed() {
+function eu() {
   let [e, t] = r.useState(!1), [n, s] = r.useState(!1), [a, l] = r.useState("auto");
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)("div", {
@@ -1621,7 +1622,7 @@ function ed() {
   })
 }
 
-function eu() {
+function em() {
   let [e, t] = r.useState(null), [n, s] = r.useState(null), [a, l] = r.useState([]), [c, d] = r.useState([]), [u, m] = r.useState([]);
   return (0, i.jsxs)("div", {
     className: B.searchableSelectExamples,
@@ -1675,7 +1676,7 @@ function eu() {
   })
 }
 
-function em() {
+function ep() {
   let [e, t] = r.useState(""), [n, s] = r.useState(""), [a, l] = r.useState("");
   return (0, i.jsxs)("div", {
     className: B.section,
@@ -1734,7 +1735,7 @@ function em() {
   })
 }
 
-function ep(e) {
+function eg(e) {
   let {
     transitionState: t
   } = e, [n, s] = r.useState(!1), [a, l] = r.useState(S.CgR.SMALL), [o, c] = r.useState(!1), d = n ? B.modalOutlines : "";
@@ -1805,7 +1806,7 @@ function ep(e) {
   })
 }
 
-function eg(e) {
+function eh(e) {
   let {
     transitionState: t,
     onClose: n,
@@ -1879,7 +1880,7 @@ function eg(e) {
           text: "Open Next Modal",
           onClick: () => {
             let e = s + 1;
-            (0, S.h7j)(t => (0, i.jsx)(eg, H(F({}, t), {
+            (0, S.h7j)(t => (0, i.jsx)(eh, z(H({}, t), {
               modalCount: e
             })), {
               stackingBehavior: a
@@ -1891,7 +1892,7 @@ function eg(e) {
   })
 }
 
-function eh(e) {
+function ef(e) {
   let {
     transitionState: t,
     onClose: n
@@ -1957,7 +1958,7 @@ function eh(e) {
   })
 }
 
-function ef(e) {
+function eb(e) {
   let {
     transitionState: t,
     onClose: n
@@ -2081,7 +2082,7 @@ function ef(e) {
   })
 }
 
-function eb(e) {
+function ex(e) {
   let {
     transitionState: t,
     onClose: n
@@ -2173,7 +2174,7 @@ function eb(e) {
   })
 }
 
-function ex(e) {
+function e_(e) {
   let {
     transitionState: t,
     onClose: n
@@ -2195,19 +2196,25 @@ function ex(e) {
   })
 }
 
-function e_(e) {
+function ej(e) {
   let {
     transitionState: t,
     onClose: s
-  } = e, [a, l] = r.useState(!1);
+  } = e, [a, l] = r.useState(0), o = r.useMemo(() => 0 === a ? {
+    src: M
+  } : 1 === a ? {
+    lottie: () => n.e("94792").then(n.t.bind(n, 972951, 19))
+  } : 2 === a ? {
+    type: S.AX$.LOOPING_VIDEO,
+    props: {
+      src: U.Z,
+      loopAt: 2.5
+    }
+  } : void 0, [a]);
   return (0, i.jsx)(b.I, {
     transitionState: t,
     onClose: s,
-    graphic: a ? {
-      lottie: () => n.e("94792").then(n.t.bind(n, 972951, 19))
-    } : {
-      src: M
-    },
+    graphic: o,
     title: "Expressive Modal",
     subtitle: "This is an expressive modal with a header image",
     actions: [{
@@ -2219,18 +2226,27 @@ function e_(e) {
       text: "Submit",
       onClick: s
     }],
-    children: (0, i.jsx)(S.XZJ, {
-      value: a,
-      onChange: (e, t) => l(t),
-      children: (0, i.jsx)(S.Text, {
-        variant: "text-md/medium",
-        children: "Show animated graphic"
+    children: (0, i.jsx)(S.xJW, {
+      title: "Graphic Type",
+      children: (0, i.jsx)(S.q4e, {
+        value: a,
+        onChange: l,
+        options: [{
+          label: "Image",
+          value: 0
+        }, {
+          label: "Lottie",
+          value: 1
+        }, {
+          label: "Looping Video",
+          value: 2
+        }]
       })
     })
   })
 }
 
-function ej(e) {
+function eE(e) {
   let {
     transitionState: t,
     onClose: n,
@@ -2251,7 +2267,7 @@ function ej(e) {
       text: "Open Next Modal",
       onClick: () => {
         let e = s + 1;
-        (0, S.h7j)(t => (0, i.jsx)(ej, H(F({}, t), {
+        (0, S.h7j)(t => (0, i.jsx)(eE, z(H({}, t), {
           modalCount: e
         })), {
           stackingBehavior: a
@@ -2302,7 +2318,7 @@ function ej(e) {
   })
 }
 
-function eE() {
+function eO() {
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)("div", {
       className: B.section,
@@ -2313,7 +2329,7 @@ function eE() {
         variant: "primary",
         text: "Open modal",
         onClick: () => {
-          (0, S.h7j)(e => (0, i.jsx)(ep, F({}, e)))
+          (0, S.h7j)(e => (0, i.jsx)(eg, H({}, e)))
         }
       }), (0, i.jsx)(S.zxk, {
         variant: "primary",
@@ -2330,7 +2346,7 @@ function eE() {
         variant: "primary",
         text: "Open modal stacking demo",
         onClick: () => {
-          (0, S.h7j)(e => (0, i.jsx)(eg, F({}, e)))
+          (0, S.h7j)(e => (0, i.jsx)(eh, H({}, e)))
         }
       })]
     }), (0, i.jsxs)("div", {
@@ -2342,44 +2358,44 @@ function eE() {
         variant: "primary",
         text: "Open modal section visualizer",
         onClick: () => {
-          (0, S.h7j)(e => (0, i.jsx)(eh, F({}, e)))
+          (0, S.h7j)(e => (0, i.jsx)(ef, H({}, e)))
         }
       }), (0, i.jsx)(S.zxk, {
         variant: "primary",
         text: "Open demo modal",
         onClick: () => {
-          (0, S.h7j)(e => (0, i.jsx)(ef, F({}, e)))
+          (0, S.h7j)(e => (0, i.jsx)(eb, H({}, e)))
         }
       }), (0, i.jsx)(S.zxk, {
         variant: "primary",
         text: "Open sample invite modal",
         onClick: () => {
-          (0, S.h7j)(e => (0, i.jsx)(eb, F({}, e)))
+          (0, S.h7j)(e => (0, i.jsx)(ex, H({}, e)))
         }
       }), (0, i.jsx)(S.zxk, {
         variant: "primary",
         text: "Open sample alert modal",
         onClick: () => {
-          (0, S.h7j)(e => (0, i.jsx)(ex, F({}, e)))
+          (0, S.h7j)(e => (0, i.jsx)(e_, H({}, e)))
         }
       }), (0, i.jsx)(S.zxk, {
         variant: "primary",
         text: "Open expressive modal",
         onClick: () => {
-          (0, S.h7j)(e => (0, i.jsx)(e_, F({}, e)))
+          (0, S.h7j)(e => (0, i.jsx)(ej, H({}, e)))
         }
       }), (0, i.jsx)(S.zxk, {
         variant: "primary",
         text: "Open Mana modal stacking demo",
         onClick: () => {
-          (0, S.h7j)(e => (0, i.jsx)(ej, F({}, e)))
+          (0, S.h7j)(e => (0, i.jsx)(eE, H({}, e)))
         }
       })]
     })]
   })
 }
 
-function eO() {
+function eC() {
   let e = (0, c.e7)([N.Z], () => N.Z.gradientPreset);
   return (0, i.jsx)(S.f6W, {
     theme: L.BR.DARKER,
