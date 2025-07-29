@@ -139,7 +139,9 @@ function A(e) {
     },
     children: t => (0, r.jsx)("div", {
       ref: A,
-      children: (0, r.jsx)(u.zx, j(P(j(P({}, e, t), {
+      children: (0, r.jsx)(u.zx, j(P(j(P({
+        "data-migration-pending": !0
+      }, e, t), {
         className: a()(T.button, T.buttonColor, {
           [T.greyButtonActive]: R,
           [T.disabled]: L
@@ -163,7 +165,6 @@ function A(e) {
         fullWidth: !0,
         size: u.zx.Sizes.MEDIUM
       }), l), {
-        "data-migration-pending": !0,
         children: (0, r.jsx)(F, {
           className: T.buttonIcon,
           size: "sm",
