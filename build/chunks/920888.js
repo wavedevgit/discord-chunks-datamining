@@ -1,6 +1,6 @@
 /** Chunk was on 77451 **/
 n.d(t, {
-  Z: () => O
+  Z: () => y
 }), n(388685), n(539854);
 var r = n(255367),
   i = n(73800),
@@ -58,7 +58,7 @@ let C = (e, t) => null == e && null == t || e === t,
     let n = x(e, t);
     return n < 0 ? e : [e[n], ...e.slice(0, n), ...e.slice(n + 1)]
   };
-class y extends i.PureComponent {
+class O extends i.PureComponent {
   static getDerivedStateFromProps(e, t) {
     let n = e.message.reactions.length;
     return 0 === t.reactionsCount && n > 0 ? {
@@ -81,14 +81,14 @@ class y extends i.PureComponent {
       className: C,
       forceAddReactions: x,
       reactionClassName: v,
-      useChatFontScaling: y,
-      forceHideReactionCreates: O,
+      useChatFontScaling: O,
+      forceHideReactionCreates: y,
       remainingReactions: j,
       combinedReactions: I,
       visibleReactionsCount: S
     } = this.props, {
       disableTransitionAppear: T
-    } = this.state, N = y ? _ : g, P = S > 0;
+    } = this.state, N = O ? _ : g, P = S > 0;
     if (!P && !x) return null;
     let A = x || P;
     return (0, r.jsxs)(o.W, {
@@ -112,7 +112,7 @@ class y extends i.PureComponent {
         isGuest: l,
         isPendingMember: h,
         isForumToolbar: b,
-        useChatFontScaling: y,
+        useChatFontScaling: O,
         className: v
       }), j > 0 && (0, r.jsx)(s.P3F, {
         onClick: t => {
@@ -125,12 +125,12 @@ class y extends i.PureComponent {
           variant: "text-sm/normal",
           children: ["+", j]
         })
-      }), !t && !O && (0, r.jsx)(u.X, {
+      }), !t && !y && (0, r.jsx)(u.X, {
         tabIndex: A || this.state.isHovered ? 0 : -1,
         type: c.O.NORMAL,
         message: e,
         channel: E,
-        useChatFontScaling: y,
+        useChatFontScaling: O,
         isHovered: this.state.isHovered,
         className: a()({
           [N.forceShow]: A
@@ -146,7 +146,7 @@ class y extends i.PureComponent {
     })
   }
 }
-let O = e => {
+let y = e => {
   let {
     message: t,
     maxReactions: n,
@@ -173,7 +173,7 @@ let O = e => {
       remainingReactions: a
     }
   }, [l, n, t.reactions]);
-  return (0, r.jsx)(y, E(b({}, e), {
+  return (0, r.jsx)(O, E(b({}, e), {
     visibleReactionsCount: s,
     combinedReactions: a,
     remainingReactions: o

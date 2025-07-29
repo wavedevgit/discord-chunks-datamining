@@ -1,4 +1,4 @@
-/** Chunk was on 88448 **/
+/** Chunk was on 87294 **/
 r.d(t, {
   Z: () => f
 }), r(388685);
@@ -34,9 +34,9 @@ let f = l.memo(function(e) {
     }(e, ["children", "isOverlay", "contextGuildId"]);
   let [O, y] = l.useState({
     maskImage: "none"
-  }), g = l.useRef(null), m = (0, c.Z)(() => {
+  }), g = l.useRef(null), j = (0, c.Z)(() => {
     var e, t, r, n;
-    let l = null != (r = null == (e = j.current) ? void 0 : e.getBoundingClientRect()) ? r : null,
+    let l = null != (r = null == (e = m.current) ? void 0 : e.getBoundingClientRect()) ? r : null,
       i = null != (n = null == (t = g.current) ? void 0 : t.getBoundingClientRect()) ? n : null;
     if (f || null == l || null == i) return void y({
       maskImage: "none"
@@ -49,10 +49,10 @@ let f = l.memo(function(e) {
     y({
       maskImage: "linear-gradient(to right, rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, 0) ".concat(o, "px)")
     })
-  }), j = (0, o.y)(m), P = (0, s.yF)(d.userId, p);
+  }), m = (0, o.y)(j), P = (0, s.yF)(d.userId, p);
   return (0, n.jsxs)("div", {
     className: a()(b.container, f && b.isOverlayContainer),
-    ref: j,
+    ref: m,
     children: [(0, n.jsx)("div", {
       className: b.usernameContainer,
       children: i

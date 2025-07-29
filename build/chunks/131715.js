@@ -1,4 +1,4 @@
-/** Chunk was on 64385 **/
+/** Chunk was on 63243 **/
 e.exports = {
   premiumIcon: "premiumIcon__9671b",
   platformIcon: "platformIcon__9671b",

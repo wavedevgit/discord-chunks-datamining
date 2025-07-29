@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => x
+  Z: () => k
 }), n(388685), n(997841);
 var r, i = n(392711),
   a = n.n(i),
@@ -76,7 +76,7 @@ function y(e) {
 function O(e) {
   let t = h[e];
   m.clearTimer(e), !0 === t.muted ? ((g = new Set(g)).add(e), m.setTimer(e, t.muteConfig, () => {
-    h[e].muted = !1, (g = new Set(g)).delete(e), L.emitChange()
+    h[e].muted = !1, (g = new Set(g)).delete(e), x.emitChange()
   }) && (h[e].muted = !1, (g = new Set(g)).delete(e))) : (g = new Set(g)).delete(e)
 }
 
@@ -135,13 +135,35 @@ function N(e) {
 
 function C(e) {
   let {
+    guildId: t,
+    data: n
+  } = e;
+  null != t && n.forEach(e => {
+    let {
+      members: n
+    } = e;
+    n.forEach(e => {
+      h[e.id] = {
+        threadId: e.id,
+        guildId: t,
+        flags: e.flags,
+        muted: e.muted,
+        muteConfig: e.muteConfig,
+        joinTimestamp: new Date(e.joinTimestamp)
+      }, O(e.id)
+    })
+  })
+}
+
+function R(e) {
+  let {
     channel: t
   } = e;
   if (!(t.id in h)) return !1;
   h = f({}, h), delete h[t.id]
 }
 
-function R(e) {
+function P(e) {
   if (u.default.getId() !== e.userId) return !1;
   h[e.id] = {
     threadId: e.id,
@@ -153,7 +175,7 @@ function R(e) {
   }, O(e.id)
 }
 
-function P(e) {
+function w(e) {
   let {
     id: t,
     userId: n,
@@ -173,7 +195,7 @@ function P(e) {
   } : delete h[t]
 }
 
-function w(e) {
+function D(e) {
   var t, n;
   let r = !1;
   return (null == (t = e.removedMemberIds) ? void 0 : t.includes(u.default.getId())) && e.id in h && (h = f({}, h), delete h[e.id], r = !0), null == (n = e.addedMembers) || n.forEach(t => {
@@ -187,7 +209,7 @@ function w(e) {
     }, O(e.id), r = !0)
   }), r
 }
-class D extends(r = o.ZP.Store) {
+class L extends(r = o.ZP.Store) {
   hasJoined(e) {
     return e in h
   }
@@ -213,21 +235,21 @@ class D extends(r = o.ZP.Store) {
     return g.has(e)
   }
 }
-d(D, "displayName", "JoinedThreadsStore");
-let L = new D(s.Z, {
+d(L, "displayName", "JoinedThreadsStore");
+let x = new L(s.Z, {
     CONNECTION_OPEN: v,
     OVERLAY_INITIALIZE: I,
     GUILD_CREATE: T,
     GUILD_DELETE: S,
     THREAD_CREATE: A,
     THREAD_LIST_SYNC: N,
-    SEARCH_FINISH: N,
-    MOD_VIEW_SEARCH_FINISH: N,
+    SEARCH_MESSAGES_SUCCESS: C,
+    MOD_VIEW_SEARCH_MESSAGES_SUCCESS: C,
     LOAD_THREADS_SUCCESS: N,
     LOAD_ARCHIVED_THREADS_SUCCESS: N,
-    THREAD_DELETE: C,
-    THREAD_MEMBER_UPDATE: R,
-    THREAD_MEMBER_LOCAL_UPDATE: P,
-    THREAD_MEMBERS_UPDATE: w
+    THREAD_DELETE: R,
+    THREAD_MEMBER_UPDATE: P,
+    THREAD_MEMBER_LOCAL_UPDATE: w,
+    THREAD_MEMBERS_UPDATE: D
   }),
-  x = L
+  k = x

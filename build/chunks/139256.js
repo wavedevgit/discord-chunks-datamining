@@ -27,8 +27,8 @@ var r = n(255367),
   C = n(294608),
   x = n(65145),
   v = n(981631),
-  y = n(388032),
-  O = n(56228);
+  O = n(388032),
+  y = n(56228);
 
 function j(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -68,7 +68,7 @@ function S(e) {
     children: n
   } = e;
   return (0, r.jsx)("ul", {
-    "aria-label": y.intl.string(y.t.sJpqBQ),
+    "aria-label": O.intl.string(O.t.sJpqBQ),
     className: t,
     children: n
   })
@@ -80,7 +80,7 @@ function T(e) {
     children: n
   } = e;
   return (0, r.jsx)("div", {
-    "aria-label": y.intl.string(y.t.sJpqBQ),
+    "aria-label": O.intl.string(O.t.sJpqBQ),
     role: "group",
     className: t,
     children: n
@@ -111,7 +111,7 @@ function N(e) {
     return i
   }(i, ["ref"]);
   return (0, r.jsx)("div", I(j({
-    "aria-label": y.intl.string(y.t.sJpqBQ),
+    "aria-label": O.intl.string(O.t.sJpqBQ),
     ref: l
   }, a), {
     className: t,
@@ -131,7 +131,7 @@ function P(e) {
   } = (0, x.dv)();
   return (0, r.jsx)(s.P3F, {
     role: "checkbox",
-    className: a()(t, O.enabled),
+    className: a()(t, y.enabled),
     onClick: n,
     "aria-checked": i,
     ref: l ? c : void 0,
@@ -152,7 +152,7 @@ function A(e) {
   } = (0, x.dv)();
   return (0, r.jsx)(s.P3F, {
     role: "radio",
-    className: a()(t, O.enabled),
+    className: a()(t, y.enabled),
     onClick: i,
     "aria-checked": l,
     tabIndex: o ? l ? 0 : -1 : c ? 0 : -1,
@@ -264,7 +264,7 @@ function R(e) {
   } = e, l = (0, _.n)(), a = m.QK.useSetting();
   return (0, r.jsx)(p.ZP, {
     className: i,
-    imageClassName: O.attachmentImage,
+    imageClassName: y.attachmentImage,
     src: null != n.proxy_url && "" !== n.proxy_url ? n.proxy_url : n.url,
     alt: null != (t = n.description) ? t : (0, b.fw)(n.filename),
     responsive: !0,
@@ -369,11 +369,11 @@ function U(e) {
   } = e, l = {
     width: n,
     height: n,
-    background: O.radioBackground,
+    background: y.radioBackground,
     "aria-hidden": !0
   };
   return t ? (0, r.jsx)(g.Z, I(j({}, l), {
-    foreground: O.radioForeground,
+    foreground: y.radioForeground,
     className: i
   })) : (0, r.jsx)(f.Z, I(j({}, l), {
     className: i
@@ -387,8 +387,8 @@ function F(e) {
     className: i
   } = e, l = .85 * n;
   return (0, r.jsx)("div", {
-    className: a()(O.checkbox, {
-      [O.checkboxSelected]: t
+    className: a()(y.checkbox, {
+      [y.checkboxSelected]: t
     }, i),
     style: {
       width: n,

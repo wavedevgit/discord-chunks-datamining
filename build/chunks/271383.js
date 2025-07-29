@@ -675,11 +675,20 @@ function eP(e) {
 
 function ew(e) {
   let {
-    messages: t
-  } = e;
-  t.forEach(e => eR({
-    messages: e
-  }))
+    data: t
+  } = e, n = [];
+  t.forEach(e => {
+    let {
+      messages: t
+    } = e;
+    t.forEach(e => {
+      e.forEach(e => {
+        n.push(e)
+      })
+    })
+  }), eR({
+    messages: n
+  })
 }
 
 function eD(e) {
@@ -833,8 +842,8 @@ let ex = new eL(s.Z, {
   LOAD_MESSAGES_AROUND_SUCCESS: eR,
   LOAD_RECENT_MENTIONS_SUCCESS: eR,
   LOAD_PINNED_MESSAGES_SUCCESS: eP,
-  SEARCH_FINISH: ew,
-  MOD_VIEW_SEARCH_FINISH: ew,
+  SEARCH_MESSAGES_SUCCESS: ew,
+  MOD_VIEW_SEARCH_MESSAGES_SUCCESS: ew,
   MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS: eh,
   EMBEDDED_ACTIVITY_UPDATE_V2: eD
 })

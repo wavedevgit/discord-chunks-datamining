@@ -97,8 +97,16 @@ function s(e, t) {
   }
 
   function p(e) {
-    null == r || r(), e.messages.forEach(e => {
-      e.forEach(e => t(e))
+    let {
+      data: n
+    } = e;
+    null == r || r(), n.forEach(e => {
+      let {
+        messages: n
+      } = e;
+      n.forEach(e => {
+        e.forEach(e => t(e))
+      })
     })
   }
   e.actions = o(i({}, e.actions), {
@@ -112,8 +120,8 @@ function s(e, t) {
     LOAD_MESSAGES_AROUND_SUCCESS: d,
     LOAD_RECENT_MENTIONS_SUCCESS: f,
     LOAD_PINNED_MESSAGES_SUCCESS: _,
-    SEARCH_FINISH: p,
-    MOD_VIEW_SEARCH_FINISH: p,
+    SEARCH_MESSAGES_SUCCESS: p,
+    MOD_VIEW_SEARCH_MESSAGES_SUCCESS: p,
     CHANNEL_SELECT: {
       callback: c,
       autoSubscribe: !1

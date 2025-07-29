@@ -23,7 +23,7 @@ var r = n(255367),
 
 function x(e) {
   var t, x, v;
-  let y, O, j, {
+  let O, y, j, {
       onTransitionToInviteChannel: I,
       onAcceptInstantInvite: S,
       guild: T,
@@ -76,7 +76,7 @@ function x(e) {
     isStage: B,
     isStream: !1
   });
-  return O = (0, r.jsxs)("span", {
+  return y = (0, r.jsxs)("span", {
     className: C.infoTitle,
     children: [(0, r.jsx)(u.Z, {
       guildId: T.id,
@@ -104,9 +104,9 @@ function x(e) {
       color: "currentColor",
       className: C.infoIcon
     })
-  })), F ? (O = (0, r.jsx)(p.Z.Channel, {
+  })), F ? (y = (0, r.jsx)(p.Z.Channel, {
     channel: k
-  }), y = (0, r.jsxs)("span", {
+  }), O = (0, r.jsxs)("span", {
     className: C.infoTitle,
     children: [E.intl.format(E.t["2wimj4"], {
       guildName: T.name
@@ -117,10 +117,10 @@ function x(e) {
         isBannerVisible: !1
       })
     })]
-  })) : null != R && R >= 5 || null != L && L > 0 ? y = (0, r.jsx)(p.Z.Data, {
+  })) : null != R && R >= 5 || null != L && L > 0 ? O = (0, r.jsx)(p.Z.Data, {
     members: R,
     membersOnline: L
-  }) : U && (y = (0, r.jsx)(p.Z.Channel, {
+  }) : U && (O = (0, r.jsx)(p.Z.Channel, {
     channel: k,
     guild: T
   })), (0, r.jsxs)(p.Z, {
@@ -135,9 +135,9 @@ function x(e) {
         children: [(0, r.jsx)(p.Z.Icon, {
           guild: T
         }), (0, r.jsx)(p.Z.Info, {
-          title: O,
+          title: y,
           onClick: q,
-          children: y
+          children: O
         })]
       }), (0, r.jsx)(p.Z.Button, {
         onClick: Q,

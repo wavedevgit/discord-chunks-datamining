@@ -132,12 +132,22 @@ function N(e) {
 }
 
 function C(e) {
-  let t = !1;
-  for (let n of e.messages)
-    for (let e of n) t = R(e.thread) || t;
-  return e.threads.forEach(e => {
-    t = R(e) || t
-  }), t
+  let {
+    data: t
+  } = e, n = !1;
+  return t.forEach(e => {
+    let {
+      threads: t,
+      messages: r
+    } = e;
+    r.forEach(e => {
+      e.forEach(e => {
+        n = R(e.thread) || n
+      })
+    }), t.forEach(e => {
+      n = R(e) || n
+    })
+  }), n
 }
 
 function R(e) {
@@ -180,8 +190,8 @@ let D = new w(s.Z, {
   THREAD_UPDATE: v,
   THREAD_LIST_SYNC: I,
   THREAD_MEMBERS_UPDATE: P,
-  SEARCH_FINISH: C,
-  MOD_VIEW_SEARCH_FINISH: C,
+  SEARCH_MESSAGES_SUCCESS: C,
+  MOD_VIEW_SEARCH_MESSAGES_SUCCESS: C,
   LOAD_THREADS_SUCCESS: T,
   LOAD_ARCHIVED_THREADS_SUCCESS: T,
   THREAD_DELETE: A,

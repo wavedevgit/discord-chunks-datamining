@@ -1,7 +1,7 @@
 /** Chunk was on 77451 **/
 n.d(t, {
   W: () => j,
-  u: () => y
+  u: () => O
 }), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685);
 var r, i = n(255367),
   l = n(73800),
@@ -49,9 +49,9 @@ function v(e) {
   }
   return e
 }
-var y = ((r = {})[r.BOT = 0] = "BOT", r[r.ACTIVITY = 1] = "ACTIVITY", r);
+var O = ((r = {})[r.BOT = 0] = "BOT", r[r.ACTIVITY = 1] = "ACTIVITY", r);
 
-function O(e) {
+function y(e) {
   let {
     onClick: t,
     children: n,
@@ -72,7 +72,7 @@ function O(e) {
 function j(e) {
   var t, n, r, a;
   let {
-    title: y,
+    title: O,
     header: j,
     footer: I,
     info: S,
@@ -138,7 +138,7 @@ function j(e) {
   return (0, i.jsxs)("div", {
     ref: H,
     className: C.embed,
-    children: [Y && (0, i.jsxs)(O, {
+    children: [Y && (0, i.jsxs)(y, {
       onClick: ee,
       className: o()(C.bannerWrapper, X, {
         [C.showVideoOnFocus]: K
@@ -177,7 +177,7 @@ function j(e) {
           }), null != V ? V : z]
         }), (0, i.jsxs)("div", {
           className: C.contentAndCopyButtonWrapper,
-          children: [(0, i.jsxs)(O, {
+          children: [(0, i.jsxs)(y, {
             onClick: $,
             className: o()(C.contentWrapper, {
               [C.contentWrapperClickable]: null != $
@@ -194,7 +194,7 @@ function j(e) {
                 color: "none",
                 lineClamp: 1,
                 className: C.contentTitle,
-                children: y
+                children: O
               }), (0, i.jsx)("div", {
                 className: C.contentInfoWrapper,
                 children: S

@@ -143,9 +143,14 @@ function I(e) {
 
 function T(e) {
   let {
-    messages: t
+    data: t
   } = e;
-  return O(t, e => O(e, e => y(e)))
+  return O(t, e => {
+    let {
+      messages: t
+    } = e;
+    return O(t, e => O(e, e => y(e)))
+  })
 }
 
 function S(e) {
@@ -268,8 +273,8 @@ let U = new j(s.Z, {
   LOCAL_MESSAGES_LOADED: v,
   LOAD_MESSAGES_SUCCESS: v,
   LOAD_MESSAGES_AROUND_SUCCESS: v,
-  SEARCH_FINISH: T,
-  MOD_VIEW_SEARCH_FINISH: T,
+  SEARCH_MESSAGES_SUCCESS: T,
+  MOD_VIEW_SEARCH_MESSAGES_SUCCESS: T,
   LOAD_THREADS_SUCCESS: k,
   LOAD_ARCHIVED_THREADS_SUCCESS: k,
   MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT: A,

@@ -1,6 +1,6 @@
-/** Chunk was on 88448 **/
+/** Chunk was on 87294 **/
 r.d(t, {
-  O: () => Z,
+  O: () => S,
   Z: () => D
 }), r(35282);
 var n = r(255367);
@@ -19,12 +19,12 @@ var l = r(873546),
   O = r(979651),
   y = r(358085),
   g = r(998502),
-  m = r(665149),
-  j = r(981631),
+  j = r(665149),
+  m = r(981631),
   P = r(176505),
-  v = r(220705);
+  h = r(220705);
 
-function h(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -55,7 +55,7 @@ function w(e, t) {
     Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
   }), e
 }
-async function Z(e) {
+async function S(e) {
   if (!e && (0, y.isMac)() && y.isPlatformEmbedded) {
     var t, r, n;
     let e = null != (n = await (null == (t = (r = window.DiscordNative.remoteApp).getDefaultDoubleClickAction) ? void 0 : t.call(r))) ? n : "Maximize";
@@ -63,7 +63,7 @@ async function Z(e) {
   }
 }
 
-function S(e) {
+function Z(e) {
   let {
     children: t,
     className: r,
@@ -71,9 +71,9 @@ function S(e) {
     channelType: c,
     guildId: y,
     innerClassname: g,
-    transparent: h = !1,
+    transparent: v = !1,
     showToolbar: w = !0,
-    toolbar: S,
+    toolbar: Z,
     mobileToolbar: E,
     "aria-label": x,
     "aria-labelledby": D,
@@ -84,34 +84,34 @@ function S(e) {
     disableDoubleClick: M
   } = e, R = null == o || (0, P.AB)(o) ? null : o, T = (0, i.e7)([O.Z], () => O.Z.isInChannel(R) || !1), _ = (0, i.e7)([s.Z], () => null != R && s.Z.getParticipantsListOpen(R)), {
     enabled: A,
-    inInbox: G
+    inInbox: B
   } = b.Z.useExperiment({
     location: "HeaderBar"
   }), {
-    hasParticipantsPanel: B
+    hasParticipantsPanel: G
   } = (0, u.Z)({
     location: "HeaderBar"
   });
-  return (0, n.jsx)(m.ZP, {
+  return (0, n.jsx)(j.ZP, {
     className: r,
     innerClassName: g,
     toolbar: function() {
-      if (null == S) return null;
+      if (null == Z) return null;
       let e = null != o && !N;
       return l.tq ? E : (0, n.jsxs)(n.Fragment, {
-        children: [S, e ? (0, n.jsx)(p.Z, {
-          className: v.search
-        }, null != y ? y : o) : null, k && (0, n.jsx)(m.ZP.Divider, {}), A && !G ? (0, n.jsx)(f.Z, {}) : null, B && T && null != R && !_ && c === j.d4z.GROUP_DM && (0, n.jsxs)("div", {
-          className: v.controlButtonWrapper,
-          children: [(0, n.jsx)(m.ZP.Divider, {}), (0, n.jsx)(d.Z, {
+        children: [Z, e ? (0, n.jsx)(p.Z, {
+          className: h.search
+        }, null != y ? y : o) : null, k && (0, n.jsx)(j.ZP.Divider, {}), A && !B ? (0, n.jsx)(f.Z, {}) : null, G && T && null != R && !_ && c === m.d4z.GROUP_DM && (0, n.jsxs)("div", {
+          className: h.controlButtonWrapper,
+          children: [(0, n.jsx)(j.ZP.Divider, {}), (0, n.jsx)(d.Z, {
             onClick: () => a.Z.toggleParticipantsList(R, !_)
           })]
         })]
       })
     }(),
-    transparent: h,
+    transparent: v,
     showToolbar: w,
-    onDoubleClick: () => Z(M),
+    onDoubleClick: () => S(M),
     "aria-label": x,
     "aria-labelledby": D,
     role: C,
@@ -129,9 +129,9 @@ function E(e) {
     role: a,
     disableDoubleClick: o
   } = e;
-  return (0, n.jsx)(m.ZP, {
+  return (0, n.jsx)(j.ZP, {
     className: r,
-    onDoubleClick: () => Z(o),
+    onDoubleClick: () => S(o),
     "aria-label": l,
     "aria-labelledby": i,
     role: a,
@@ -162,12 +162,12 @@ function x(e) {
   } = (0, c.ZP)(o.Z.HEADER_BAR);
   return (0, n.jsx)(c.Gt, {
     value: l,
-    children: t ? (0, n.jsx)(S, w(h({}, r), {
+    children: t ? (0, n.jsx)(Z, w(v({}, r), {
       className: r.className
-    })) : (0, n.jsx)(E, w(h({}, r), {
+    })) : (0, n.jsx)(E, w(v({}, r), {
       className: r.className
     }))
   })
 }
-x.Title = m.ZP.Title, x.Icon = m.ZP.Icon, x.ChannelIcon = m.ZP.ChannelIcon, x.Divider = m.ZP.Divider, x.Caret = m.ZP.Caret;
+x.Title = j.ZP.Title, x.Icon = j.ZP.Icon, x.ChannelIcon = j.ZP.ChannelIcon, x.Divider = j.ZP.Divider, x.Caret = j.ZP.Caret;
 let D = x

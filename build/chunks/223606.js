@@ -48,7 +48,7 @@ function v(e) {
   return E(t, n), !0
 }
 
-function y(e) {
+function O(e) {
   var t;
   let {
     channelId: n,
@@ -67,7 +67,7 @@ function y(e) {
     }, l);
   return null != a && b[i] !== a && (b[i] = a, !0)
 }
-class O extends(r = i.ZP.PersistedStore) {
+class y extends(r = i.ZP.PersistedStore) {
   initialize(e) {
     this.waitFor(c.Z), null != e && (g = e.automodFailedMessages, h = e.mentionRaidDetectionByGuild)
   }
@@ -94,13 +94,13 @@ class O extends(r = i.ZP.PersistedStore) {
     return null != (t = b[e]) ? t : null
   }
 }
-f(O, "displayName", "GuildAutomodMessageStore"), f(O, "persistKey", "GuildAutomodMessages");
-let j = new O(l.Z, {
+f(y, "displayName", "GuildAutomodMessageStore"), f(y, "persistKey", "GuildAutomodMessages");
+let j = new y(l.Z, {
   CONNECTION_OPEN: function(e) {
     return 0 !== Object.keys(g).length && (g = {}, _++, !0)
   },
-  LOAD_MESSAGES_SUCCESS: y,
-  LOCAL_MESSAGES_LOADED: y,
+  LOAD_MESSAGES_SUCCESS: O,
+  LOCAL_MESSAGES_LOADED: O,
   MESSAGE_CREATE: function(e) {
     let {
       guildId: t,

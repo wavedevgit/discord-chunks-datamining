@@ -22,9 +22,9 @@ var r = n(255367),
   C = n(225675),
   x = n(981631),
   v = n(388032),
-  y = n(318135);
+  O = n(318135);
 
-function O(e) {
+function y(e) {
   var t;
   return (0, r.jsx)("span", {
     style: {
@@ -71,7 +71,7 @@ function j(e) {
     forceRoles: D,
     context: l
   }), o.$e(x.Plq.MANAGE_GUILD, x.Plq.MANAGE_ROLES)) || (0, u.eM)(l, n)) ? (0, r.jsx)("div", {
-    className: y.container,
+    className: O.container,
     children: (0, r.jsx)(c.hQY, {
       placeholder: v.intl.string(v.t.Sojqsr),
       value: A,
@@ -81,7 +81,7 @@ function j(e) {
         let t = L.reduce((t, n) => (a()(e.toLowerCase(), n.name.toLowerCase()) && t.push((0, r.jsxs)(c.lo1, {
             value: n.id,
             children: [(0, r.jsx)(c.lo1.Label, {
-              children: O(n)
+              children: y(n)
             }), (0, r.jsx)(c.lo1.Checkbox, {})]
           }, n.id)), t), []),
           n = j[(0, u.lV)(l)];
@@ -89,7 +89,7 @@ function j(e) {
           value: n.id,
           disabled: !0,
           children: [(0, r.jsx)(c.lo1.Label, {
-            children: O(n)
+            children: y(n)
           }), (0, r.jsx)(c.lo1.Checkbox, {
             checked: !0
           })]

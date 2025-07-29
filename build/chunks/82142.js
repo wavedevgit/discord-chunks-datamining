@@ -19,9 +19,9 @@ let g = {},
   C = new Set,
   x = {},
   v = {},
-  y = new Set;
+  O = new Set;
 
-function O(e) {
+function y(e) {
   let t = p.Z.createFromServer(e),
     n = t.code;
   if (_.has(n)) _.set(n, _.get(n).merge(t));
@@ -44,7 +44,7 @@ function O(e) {
 
 function j(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-  if (t && !y.has(e.channel_id)) return !1;
+  if (t && !O.has(e.channel_id)) return !1;
   let n = (0, m.Fp)(e) ? (0, m.Q_)((null == e ? void 0 : e.embeds) != null ? null == e ? void 0 : e.embeds[0].url : void 0) : (0, m.Q_)(e.content);
   return 0 !== n.length && (n.forEach(e => {
     h.includes(e) || E.includes(e) || (I({
@@ -72,7 +72,7 @@ function T(e) {
     channelId: t,
     messages: n
   } = e;
-  y.add(t), n.forEach(e => j(e, !0))
+  O.add(t), n.forEach(e => j(e, !0))
 }
 
 function N(e) {
@@ -126,20 +126,20 @@ l = "GiftCodeStore", (i = "displayName") in P ? Object.defineProperty(P, i, {
 }) : P[i] = l;
 let A = new P(u.Z, {
     CONNECTION_OPEN: function() {
-      return y.clear(), !1
+      return O.clear(), !1
     },
     CHANNEL_SELECT: function(e) {
       let {
         channelId: t
       } = e;
-      return null != t && y.add(t), !1
+      return null != t && O.add(t), !1
     },
     GIFT_CODE_RESOLVE: I,
     GIFT_CODE_RESOLVE_SUCCESS: function(e) {
       let {
         giftCode: t
       } = e;
-      return h = h.filter(e => e !== t.code), E.includes(t.code) || (E = [...E, t.code]), O(t)
+      return h = h.filter(e => e !== t.code), E.includes(t.code) || (E = [...E, t.code]), y(t)
     },
     GIFT_CODE_RESOLVE_FAILURE: function(e) {
       let {
@@ -191,7 +191,7 @@ let A = new P(u.Z, {
       let {
         giftCode: t
       } = e;
-      O(t)
+      y(t)
     },
     GIFT_CODES_FETCH: function(e) {
       let {
@@ -206,7 +206,7 @@ let A = new P(u.Z, {
         skuId: n,
         subscriptionPlanId: r
       } = e;
-      t.forEach(O);
+      t.forEach(y);
       let i = (0, m.Bg)(n, r);
       x[i] = Date.now(), C.delete(i)
     },
@@ -239,9 +239,17 @@ let A = new P(u.Z, {
         return j(t)
       })
     },
-    SEARCH_FINISH: function(e) {
-      e.messages.forEach(e => {
-        e.forEach(e => j(e))
+    SEARCH_MESSAGES_SUCCESS: function(e) {
+      let {
+        data: t
+      } = e;
+      t.forEach(e => {
+        let {
+          messages: t
+        } = e;
+        t.forEach(e => {
+          e.forEach(e => j(e))
+        })
       })
     },
     GIFT_CODE_UPDATE: function(e) {

@@ -22,8 +22,8 @@ var r = n(255367),
   C = n(835473),
   x = n(471445),
   v = n(111028),
-  y = n(592125),
-  O = n(430824),
+  O = n(592125),
+  y = n(430824),
   j = n(496675),
   I = n(594174),
   S = n(626135),
@@ -137,7 +137,7 @@ function k(e) {
         invite_inviter_id: null == (e = a.inviter) ? void 0 : e.id
       })
     }, [null == (t = a.inviter) ? void 0 : t.id, b.id]),
-    x = (0, c.e7)([O.Z], () => null != a.guild ? O.Z.getGuild(a.guild.id) : null, [a]),
+    x = (0, c.e7)([y.Z], () => null != a.guild ? y.Z.getGuild(a.guild.id) : null, [a]),
     v = (0, C.Z)([b.id])[0],
     T = (0, c.e7)([p.ZP], () => {
       var e;
@@ -152,7 +152,7 @@ function k(e) {
         return b.id === t
       })
     }),
-    L = y.Z.getChannel(null == (n = a.channel) ? void 0 : n.id),
+    L = O.Z.getChannel(null == (n = a.channel) ? void 0 : n.id),
     D = (0, c.e7)([j.Z], () => null != L && j.Z.can(A.Plq.USE_EMBEDDED_ACTIVITIES, L), [L]),
     {
       analyticsLocations: k
@@ -215,12 +215,12 @@ function M(e) {
     handleAcceptInvite: x,
     onView: v
   } = e, {
-    bot: y,
-    icon: O
+    bot: O,
+    icon: y
   } = l, j = T.ZP.getApplicationIconURL({
     id: l.id,
-    icon: O,
-    bot: y
+    icon: y,
+    bot: O
   }), I = (0, E.G)(l), S = (0, b.E)(l), N = a.length, P = i.useMemo(() => [{
     label: o ? p ? Z.intl.string(Z.t.VJlc0d) : Z.intl.string(Z.t.RscU7O) : Z.intl.string(Z.t["2BP08P"]),
     trackingArea: o ? h.j_.PLAY : h.j_.JOIN_SERVER,

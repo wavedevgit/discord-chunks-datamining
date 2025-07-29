@@ -104,8 +104,8 @@ let g = e => {
       topic: E,
       speaker_count: C,
       participant_count: x
-    } = n, v = null != (t = n.members) ? t : [], y = _ ? v.slice(0, 3) : v, O = C - y.length;
-    return _ && (O += v.length - y.length), (0, r.jsxs)("div", {
+    } = n, v = null != (t = n.members) ? t : [], O = _ ? v.slice(0, 3) : v, y = C - O.length;
+    return _ && (y += v.length - O.length), (0, r.jsxs)("div", {
       children: [(0, r.jsxs)("div", {
         className: f.flex,
         children: [(0, r.jsxs)("div", {
@@ -164,13 +164,13 @@ let g = e => {
         className: a()(f.members, {
           [f.embed]: _
         }),
-        children: [y.length > 0 && (0, r.jsxs)("div", {
+        children: [O.length > 0 && (0, r.jsxs)("div", {
           className: f.speakers,
-          children: [y.map(e => (0, r.jsx)(g, {
+          children: [O.map(e => (0, r.jsx)(g, {
             speaker: e,
             guildId: b.id,
             isEmbed: _
-          }, e.user.id)), O > 0 ? (0, r.jsxs)("div", {
+          }, e.user.id)), y > 0 ? (0, r.jsxs)("div", {
             className: f.speaker,
             children: [(0, r.jsx)("div", {
               className: a()(f.icon, {
@@ -186,7 +186,7 @@ let g = e => {
               variant: _ ? "text-xs/normal" : "text-sm/normal",
               color: "text-secondary",
               children: ["+", m.intl.format(m.t.L1pCBQ, {
-                count: O
+                count: y
               })]
             })]
           }) : null]

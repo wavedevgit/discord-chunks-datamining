@@ -41,8 +41,8 @@ function d(e) {
     focusedIndex: d,
     itemCount: n
   }), {
-    itemCount: y,
-    focusedIndex: O
+    itemCount: O,
+    focusedIndex: y
   } = x, [j] = r.useState(() => (0, a.P2)(v, 16));
   return r.useEffect(() => {
       v({
@@ -65,14 +65,14 @@ function d(e) {
         enabled: E,
         makeId: C = a.qR,
         getIndexFromId: x
-      } = e, v = r.useRef(n), y = r.useRef(x);
-      y.current = x, v.current = n;
-      let O = r.useRef(E);
+      } = e, v = r.useRef(n), O = r.useRef(x);
+      O.current = x, v.current = n;
+      let y = r.useRef(E);
       r.useEffect(() => {
-        O.current = E
+        y.current = E
       }, [E]);
       let [j, I] = r.useState(!1), [S] = r.useState(() => new a.$o(e => () => {
-        let t = null != y.current && "string" == typeof e ? y.current(e) : e;
+        let t = null != O.current && "string" == typeof e ? O.current(e) : e;
         "number" != typeof t || t < 0 || g({
           type: i.G.SET_FOCUSED_INDEX,
           index: t
@@ -80,7 +80,7 @@ function d(e) {
       }));
       r.useEffect(() => () => S.clean(), [S]);
       let T = r.useCallback((e, t) => {
-          O.current && m(e, t)
+          y.current && m(e, t)
         }, [m]),
         [N, P] = r.useState(!0);
       r.useEffect(() => {
@@ -96,7 +96,7 @@ function d(e) {
           }), e && T(C(t, n), n)
         }, [C, d, f, g, t, T]),
         w = r.useCallback(e => {
-          if (!O.current) return;
+          if (!y.current) return;
           if (o.includes(e.key) && !(e.shiftKey || e.altKey || e.metaKey || e.ctrlKey) && e.currentTarget === e.target) {
             e.preventDefault(), e.stopPropagation(), A();
             return
@@ -170,7 +170,7 @@ function d(e) {
             "aria-posinset": h ? n + 1 : void 0,
             id: C(t, n),
             tabIndex: _ && n === d ? 0 : -1,
-            onFocus: S.get(null != y.current ? C(t, n) : n)
+            onFocus: S.get(null != O.current ? C(t, n) : n)
           }
         }, [C, t, d, _, S, h]);
       return r.useMemo(() => ({
@@ -180,8 +180,8 @@ function d(e) {
       }), [g, k, M])
     }({
       navId: t,
-      itemCount: y,
-      focusedIndex: O,
+      itemCount: O,
+      focusedIndex: y,
       dispatch: j,
       onSelect: p,
       setFocus: m,

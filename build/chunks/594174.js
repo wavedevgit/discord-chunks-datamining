@@ -259,11 +259,18 @@ function F(e) {
 
 function Z(e) {
   let {
-    messages: t
+    data: t
   } = e;
-  return t.forEach(e => B({
-    messages: e
-  })), !1
+  return t.forEach(e => {
+    let {
+      messages: t
+    } = e;
+    t.forEach(e => {
+      e.forEach(e => {
+        w(e, !0)
+      })
+    })
+  }), !1
 }
 
 function H(e) {
@@ -699,8 +706,8 @@ class eD extends m.Z {
       USER_PROFILE_FETCH_SUCCESS: j,
       CURRENT_USER_UPDATE: U,
       PRESENCE_UPDATES: ee,
-      SEARCH_FINISH: Z,
-      MOD_VIEW_SEARCH_FINISH: Z,
+      SEARCH_MESSAGES_SUCCESS: Z,
+      MOD_VIEW_SEARCH_MESSAGES_SUCCESS: Z,
       LOAD_MESSAGES_SUCCESS: B,
       LOAD_MESSAGES_AROUND_SUCCESS: B,
       LOAD_RECENT_MENTIONS_SUCCESS: B,

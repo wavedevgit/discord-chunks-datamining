@@ -23,8 +23,8 @@ var r = n(512722),
   C = n(314897),
   x = n(592125),
   v = n(703558),
-  y = n(607744),
-  O = n(375954),
+  O = n(607744),
+  y = n(375954),
   j = n(117530),
   I = n(553803),
   S = n(467531),
@@ -112,7 +112,7 @@ function D(e) {
     title: A.intl.string(A.t["7LpysL"]),
     body: A.intl.string(A.t["5sHHo6"])
   });
-  let l = O.Z.getMessage(t, n);
+  let l = y.Z.getMessage(t, n);
   if (null == l || null == l.poll || 0 === l.poll.answers.length) return;
   let a = null != r ? r : String(l.poll.answers[0].answer_id);
   I.A({
@@ -143,7 +143,7 @@ function M(e) {
   let {
     channelId: t,
     messageId: n
-  } = e, r = O.Z.getMessage(t, n);
+  } = e, r = y.Z.getMessage(t, n);
   return null == r ? [] : r.reactions.flatMap(e => !0 === e.me_vote ? e.emoji.name : [])
 }
 async function U(e) {
@@ -193,7 +193,7 @@ async function F(e) {
     title: A.intl.string(A.t.Qic1FB),
     body: A.intl.string(A.t["5sHHo6"])
   });
-  if (!y.Z.canChatInGuild(r.guild_id)) return void d.Z.show({
+  if (!O.Z.canChatInGuild(r.guild_id)) return void d.Z.show({
     title: A.intl.string(A.t.p245ws),
     body: A.intl.string(A.t["U/uodn"])
   });
@@ -292,7 +292,7 @@ async function G(e) {
         (0, T.eu)(t, n, e => {
           var r, i;
           let l = null == e || !e.showResults,
-            a = O.Z.getMessage(t, n),
+            a = y.Z.getMessage(t, n),
             o = null != a ? a.reactions.reduce((e, t) => {
               var n, r;
               return e + (null != (r = null == (n = t.count_details) ? void 0 : n.vote) ? r : 0)
@@ -338,7 +338,7 @@ let H = {
       let {
         channelId: t,
         messageId: n
-      } = e, r = O.Z.getMessage(t, n);
+      } = e, r = y.Z.getMessage(t, n);
       if (null != r) return {
         message: r,
         channelId: t,

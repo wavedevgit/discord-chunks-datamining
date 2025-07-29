@@ -1,14 +1,14 @@
-/** Chunk was on 64385 **/
+/** Chunk was on 63243 **/
 n.d(t, {
-  b: () => o,
-  e: () => a
+  b: () => s,
+  e: () => o
 });
-var r = n(399606),
-  i = n(594174),
+var i = n(399606),
+  r = n(594174),
   l = n(918505);
-let a = () => c(i.default.getCurrentUser(), (0, l.JH)()),
-  o = () => c((0, r.e7)([i.default], () => i.default.getCurrentUser()), (0, l.o9)());
+let o = () => a(r.default.getCurrentUser(), (0, l.JH)()),
+  s = () => a((0, i.e7)([r.default], () => r.default.getCurrentUser()), (0, l.o9)());
 
-function c(e, t) {
+function a(e, t) {
   return !(null == e || e.hasUniqueUsername()) && !!e.hasVerifiedEmailOrPhone() && !!t
 }

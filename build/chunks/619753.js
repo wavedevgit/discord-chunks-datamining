@@ -22,8 +22,8 @@ var r = n(255367),
   C = n(359110),
   x = n(695346),
   v = n(131704),
-  y = n(592125),
-  O = n(430824),
+  O = n(592125),
+  y = n(430824),
   j = n(496675),
   I = n(699516),
   S = n(944486),
@@ -85,10 +85,10 @@ let F = i.memo(function(e) {
     offset: C,
     totalResults: x,
     isSearching: v,
-    showBlockedResults: O
+    showBlockedResults: y
   } = n, j = i.useCallback((e, t) => {
     if (null == h || h(e, t), (0, b.Z)(e)) {
-      let t = y.Z.getChannel(e.channel_id),
+      let t = O.Z.getChannel(e.channel_id),
         n = null != t ? t.getGuildId() : null;
       c.Z.trackJump(e.channel_id, e.id, "Search Results", {
         search_id: P.Z.getAnalyticsId(l)
@@ -100,15 +100,15 @@ let F = i.memo(function(e) {
     let t = 0;
     return m.reduce((n, r) => {
       let i = r.find(e => e.isSearchHit);
-      if (!O && null != i && (I.Z.isBlockedForMessage(i) || I.Z.isIgnoredForMessage(i))) return n;
-      let l = y.Z.getChannel(r[0].channel_id);
+      if (!y && null != i && (I.Z.isBlockedForMessage(i) || I.Z.isIgnoredForMessage(i))) return n;
+      let l = O.Z.getChannel(r[0].channel_id);
       return null == l || ((null == e || e !== l.id) && n.push({
         channel: l,
         results: [],
         startIndex: t
       }), t += 1, n[n.length - 1].results.push(r), e = null == l ? void 0 : l.id), n
     }, [])
-  }, [m, O]), T = i.useRef([]), R = S.reduce((e, t) => e + 1 + t.results.length, 0), F = i.useCallback((e, t) => {
+  }, [m, y]), T = i.useRef([]), R = S.reduce((e, t) => e + 1 + t.results.length, 0), F = i.useCallback((e, t) => {
     if (!d.Z.keyboardModeEnabled) return;
     let n = T.current,
       r = null != t ? n[t] : void 0;
@@ -165,12 +165,12 @@ let F = i.memo(function(e) {
     })), f > 0 || g > 0 ? (0, r.jsxs)(s.P3F, {
       tag: "div",
       className: k.resultsBlocked,
-      onClick: () => N.Z.setShowBlockedResults(l, !O),
+      onClick: () => N.Z.setShowBlockedResults(l, !y),
       children: [(0, r.jsx)("div", {
         className: k.resultsBlockedImage
       }), (0, r.jsx)("div", {
         className: k.__invalid_resultsBlockedText,
-        children: O ? f > 0 && g > 0 ? D.intl.formatToPlainString(D.t["OvJs9/"], {
+        children: y ? f > 0 && g > 0 ? D.intl.formatToPlainString(D.t["OvJs9/"], {
           count: f + g
         }) : f > 0 ? D.intl.formatToPlainString(D.t["n/1QFR"], {
           count: f
@@ -243,9 +243,9 @@ function G(e) {
     favoriteSearch: Z
   } = e, D = x.cC.useSetting(), F = (0, g.p)(), G = i.useCallback(e => {
     if (e === S.Z.getChannelId()) return;
-    let t = y.Z.getChannel(e);
+    let t = O.Z.getChannel(e);
     null != t && (j.Z.can(L.Plq.VIEW_CHANNEL, t) || t.isPrivate()) && (0, C.Kh)(t.id)
-  }, []), H = null != a ? (0, p.F6)(a, T.default, I.Z, !1) : "???", V = Z && null != a.guild_id ? null == (t = O.Z.getGuild(a.guild_id)) ? void 0 : t.name : null, z = (null == a ? void 0 : a.parent_id) != null ? y.Z.getChannel(a.parent_id) : null, W = null != (n = null == z ? void 0 : z.name) ? n : null, K = null != (l = (0, m.KS)(a)) ? l : s.VL1, Y = j.Z.can(L.Plq.MANAGE_MESSAGES, a), {
+  }, []), H = null != a ? (0, p.F6)(a, T.default, I.Z, !1) : "???", V = Z && null != a.guild_id ? null == (t = y.Z.getGuild(a.guild_id)) ? void 0 : t.name : null, z = (null == a ? void 0 : a.parent_id) != null ? O.Z.getChannel(a.parent_id) : null, W = null != (n = null == z ? void 0 : z.name) ? n : null, K = null != (l = (0, m.KS)(a)) ? l : s.VL1, Y = j.Z.can(L.Plq.MANAGE_MESSAGES, a), {
     content: X
   } = (0, h.ZP)({
     content: H,

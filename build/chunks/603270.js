@@ -23,8 +23,8 @@ var r = n(255367),
   C = n(551428),
   x = n(626135),
   v = n(572004),
-  y = n(601911),
-  O = n(504211),
+  O = n(601911),
+  y = n(504211),
   j = n(970321),
   I = n(680005),
   S = n(981631),
@@ -68,7 +68,7 @@ function Z(e) {
   } = e, a = (0, j.R)(t), [u, d, f, g, h, E, C] = (0, o.Wu)([p.Z, b.Z, _.Z], () => {
     var e;
     let n = p.Z.getApplication(t),
-      r = null != n ? (0, y.y)(n, 45) : void 0,
+      r = null != n ? (0, O.y)(n, 45) : void 0,
       i = null == (e = _.Z.getBasicChannel(l.channel_id)) ? void 0 : e.guild_id;
     return [n, p.Z.isFetchingApplication(t), p.Z.didFetchingApplicationFail(t), b.Z.getStoreLayout(t), b.Z.getFetchStatus(t), i, r]
   }, [t, l.channel_id]);
@@ -107,7 +107,7 @@ function Z(e) {
     description: A,
     link: "".concat(location.protocol, "//").concat(location.host).concat(S.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(u.id, T.GlobalDiscoveryAppsSections.STORE)),
     onLinkCopy: () => {
-      (0, O.X)(t, O.B.STORE_EMBED)
+      (0, y.X)(t, y.B.STORE_EMBED)
     },
     iconSrc: C,
     onIconClick: () => {
@@ -160,7 +160,7 @@ function R(e) {
   } = (0, d.IX)(null == m ? void 0 : m.applicationId), C = (0, o.e7)([_.Z], () => {
     var e;
     return null == (e = _.Z.getBasicChannel(u.channel_id)) ? void 0 : e.guild_id
-  }, [u]), v = i.useMemo(() => null != E ? (0, y.y)(E, 45) : void 0, [E]), Z = (0, j.R)(null != (l = null == E ? void 0 : E.id) ? l : ""), {
+  }, [u]), v = i.useMemo(() => null != E ? (0, O.y)(E, 45) : void 0, [E]), Z = (0, j.R)(null != (l = null == E ? void 0 : E.id) ? l : ""), {
     openModal: R,
     subscriptionPurchaseButtonState: D
   } = (0, g.Z)({
@@ -236,7 +236,7 @@ function R(e) {
     description: B,
     link: "".concat(location.protocol, "//").concat(location.host).concat(S.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(E.id, T.GlobalDiscoveryAppsSections.STORE)),
     onLinkCopy: () => {
-      (0, O.X)(E.id, O.B.SKU_EMBED, c)
+      (0, y.X)(E.id, y.B.SKU_EMBED, c)
     },
     iconSrc: v,
     onIconClick: () => {
