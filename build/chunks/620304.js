@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(259580),
   _ = n(538445),
   O = n(639777),
-  y = n(441536),
-  C = n(447908),
+  y = n(495804),
+  C = n(441536),
   v = n(921944),
   j = n(93841),
   E = n(388032),
@@ -63,8 +63,8 @@ function P(e) {
     guild: t,
     tooltipTypes: l,
     withMargin: P
-  } = e, N = i.useMemo(() => (0, C.Z)(t), [t]), w = (0, O.Z)(t.id), T = i.useCallback(() => {
-    (0, y.Z)(t.id, p.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY)
+  } = e, N = (0, y.Z)(t, "GuildPowerupsProgressBar"), w = (0, O.Z)(t.id), T = i.useCallback(() => {
+    (0, C.Z)(t.id, p.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY)
   }, [t.id]), Z = (0, c.e7)([m.Z], () => {
     var e;
     return null != (e = m.Z.getCountForGuild(t.id)) ? e : 0

@@ -1,11 +1,11 @@
-/** Chunk was on 94312 **/
-n.d(t, {
+/** Chunk was on 29410 **/
+t.d(e, {
   i: () => s
 });
-var r = n(818083),
-  i = n(981631),
-  l = n(647086);
-let a = (0, r.B)({
+var n = t(818083),
+  r = t(981631),
+  l = t(647086);
+let i = (0, n.B)({
   kind: "guild",
   id: "2025-07_guild_tag_badge_packs_wave_1",
   label: "Guild Tag Badge Packs Wave 1",
@@ -21,14 +21,14 @@ let a = (0, r.B)({
   }]
 });
 
-function s(e, t) {
-  let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
-    r = null != e && e !== l._ && e !== i.I_8;
-  return a.useExperiment({
-    guildId: e,
-    location: t
+function s(A, e) {
+  let t = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
+    n = null != A && A !== l._ && A !== r.I_8;
+  return i.useExperiment({
+    guildId: A,
+    location: e
   }, {
-    disable: !r,
-    autoTrackExposure: n
+    disable: !n,
+    autoTrackExposure: t
   }).enabled
 }
