@@ -25,21 +25,22 @@ function E(e) {
     onClick: t,
     selectedOverride: n = !1,
     popoutProps: l,
-    ref: o
-  } = e, [s, d] = i.useState(!1), h = (0, f.D)(), {
-    unreadRecentMentionsCount: g,
-    unreadChannelIds: m
-  } = (0, f.O4)(), b = g > 0 ? {
+    ref: o,
+    focusSectionProps: s
+  } = e, [d, h] = i.useState(!1), g = (0, f.D)(), {
+    unreadRecentMentionsCount: m,
+    unreadChannelIds: b
+  } = (0, f.O4)(), E = m > 0 ? {
     type: "mentions",
-    count: g
-  } : m.length > 0 ? {
+    count: m
+  } : b.length > 0 ? {
     type: "unread",
-    count: m.length
+    count: b.length
   } : {
     type: null
-  }, E = n || n || h, y = (0, r.jsx)(c.Dkj, {
+  }, y = n || n || g, v = (0, r.jsx)(c.Dkj, {
     className: O.icon,
-    color: s || E ? c.TVs.colors.ICON_PRIMARY : c.TVs.colors.ICON_TERTIARY,
+    color: d || y ? c.TVs.colors.ICON_PRIMARY : c.TVs.colors.ICON_TERTIARY,
     size: "custom",
     height: 20,
     width: 20
@@ -51,10 +52,10 @@ function E(e) {
       size: (0, p.isMac)() ? 4 : 72,
       horizontal: !0
     }), " ", (0, r.jsx)(c.ua7, {
-      shouldShow: !E,
+      shouldShow: !y,
       text: _.intl.string(_.t.HcoRu7),
       children: e => {
-        var n, i, s;
+        var n, i, d;
         return (0, r.jsxs)(c.P3F, (n = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -75,14 +76,14 @@ function E(e) {
         }({
           innerRef: o,
           className: O.clickableContainer
-        }, e, l), i = i = {
+        }, s, e, l), i = i = {
           onMouseEnter: () => {
             var t;
-            d(!0), null == (t = e.onMouseEnter) || t.call(e)
+            h(!0), null == (t = e.onMouseEnter) || t.call(e)
           },
           onMouseLeave: () => {
             var t;
-            d(!1), null == (t = e.onMouseLeave) || t.call(e)
+            h(!1), null == (t = e.onMouseLeave) || t.call(e)
           },
           onClick: () => {
             var n, r;
@@ -90,21 +91,21 @@ function E(e) {
           },
           children: [(0, r.jsx)("div", {
             className: a()(O.iconWrapper, null),
-            children: "unread" === b.type ? (0, r.jsxs)(r.Fragment, {
+            children: "unread" === E.type ? (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsx)(u.ZP, {
                 width: 20,
                 height: 20,
                 mask: u.ZP.Masks.HEADER_BAR_BADGE_BOTTOM,
-                children: y
+                children: v
               }), (0, r.jsx)("div", {
                 className: O.unreadDot
               })]
-            }) : y
-          }), "mentions" === b.type && null != b.count && (0, r.jsx)(c.mAB, {
-            count: b.count
-          }), "unread" === b.type && null != b.count && (0, r.jsx)(c.Text, {
+            }) : v
+          }), "mentions" === E.type && null != E.count && (0, r.jsx)(c.mAB, {
+            count: E.count
+          }), "unread" === E.type && null != E.count && (0, r.jsx)(c.Text, {
             variant: "eyebrow",
-            children: (s = b.count) > 50 ? "".concat(50, "+") : s.toString()
+            children: (d = E.count) > 50 ? "".concat(50, "+") : d.toString()
           })]
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var n = Object.keys(e);
@@ -122,31 +123,31 @@ function E(e) {
 }
 
 function y() {
-  let e = i.useRef(null),
-    {
-      notificationCenterVariant: t
-    } = h.Lk.useExperiment({
-      location: "NotificationsInboxButton"
-    }),
-    n = (0, s.e7)([d.Z], () => d.Z.getChannelId()),
-    l = i.useMemo(() => b.Z5c.NOTIFICATIONS_INBOX(null != n ? n : void 0), [n]),
-    a = (0, g.m)();
-  return t === h.jP.SIDEBAR ? (0, r.jsx)(E, {
+  let {
+    focusSectionProps: e
+  } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, t = i.useRef(null), {
+    notificationCenterVariant: n
+  } = h.Lk.useExperiment({
+    location: "NotificationsInboxButton"
+  }), l = (0, s.e7)([d.Z], () => d.Z.getChannelId()), a = i.useMemo(() => b.Z5c.NOTIFICATIONS_INBOX(null != l ? l : void 0), [l]), c = (0, g.m)();
+  return n === h.jP.SIDEBAR ? (0, r.jsx)(E, {
     onClick: () => {
-      a(), (0, o.uL)(l)
-    }
-  }) : t === h.jP.POPOUT ? (0, r.jsx)(m.Z, {
-    targetElementRef: e,
+      c(), (0, o.uL)(a)
+    },
+    focusSectionProps: e
+  }) : n === h.jP.POPOUT ? (0, r.jsx)(m.Z, {
+    targetElementRef: t,
     popoutPosition: "bottom",
     popoutAlign: "left",
     spacing: 2,
-    children: (t, n, i) => (0, r.jsx)(E, {
-      ref: e,
-      selectedOverride: n,
+    children: (n, i, l) => (0, r.jsx)(E, {
+      ref: t,
+      selectedOverride: i,
       onClick: () => {
-        a(), t()
+        c(), n()
       },
-      popoutProps: i
+      popoutProps: l,
+      focusSectionProps: e
     })
   }) : null
 }

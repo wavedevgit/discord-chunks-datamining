@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => f
+  Z: () => g
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -12,50 +12,53 @@ var r = n(255367),
   u = n(63063),
   d = n(665149),
   p = n(388032);
-let h = () => (0, a.ZDy)(async () => {
+
+function h(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: !0,
+        configurable: !0,
+        writable: !0
+      }) : e[t] = r
+    })
+  }
+  return e
+}
+let f = () => (0, a.ZDy)(async () => {
   let {
     default: e
   } = await n.e("83051").then(n.bind(n, 115072));
-  return t => (0, r.jsx)(e, function(e) {
-    for (var t = 1; t < arguments.length; t++) {
-      var n = null != arguments[t] ? arguments[t] : {},
-        r = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(n, e).enumerable
-      }))), r.forEach(function(t) {
-        var r;
-        r = n[t], t in e ? Object.defineProperty(e, t, {
-          value: r,
-          enumerable: !0,
-          configurable: !0,
-          writable: !0
-        }) : e[t] = r
-      })
-    }
-    return e
-  }({}, t))
+  return t => (0, r.jsx)(e, h({}, t))
 });
 
-function f(e) {
+function g(e) {
   let {
-    className: t
-  } = e, n = (0, l.e7)([c.Z], () => c.Z.isDeveloper), [f, g] = i.useState(!1), [m, b] = i.useState(0), _ = i.useRef(null), O = e => {
-    clearTimeout(m), b(setTimeout(() => {
-      g(e)
+    className: t,
+    focusSectionProps: n
+  } = e, g = (0, l.e7)([c.Z], () => c.Z.isDeveloper), [m, b] = i.useState(!1), [_, O] = i.useState(0), E = i.useRef(null), y = e => {
+    clearTimeout(_), O(setTimeout(() => {
+      b(e)
     }, 100))
   };
   return (0, r.jsx)("div", {
-    onMouseEnter: () => O(!0),
-    onMouseLeave: () => O(!1),
+    onMouseEnter: () => y(!0),
+    onMouseLeave: () => y(!1),
     children: (0, r.jsx)(a.yRy, {
-      targetElementRef: _,
-      shouldShow: f,
+      targetElementRef: E,
+      shouldShow: m,
       animation: a.yRy.Animation.NONE,
       position: "bottom",
       align: "right",
       autoInvert: !1,
-      onRequestOpen: () => g(!0),
-      onRequestClose: () => g(!1),
+      onRequestOpen: () => b(!0),
+      onRequestClose: () => b(!1),
       renderPopout: () => (function(e) {
         let {
           onClose: t,
@@ -72,7 +75,7 @@ function f(e) {
               id: "staff-help-bug-reporter",
               label: p.intl.string(p.t["5Lqopa"]),
               icon: a.nnZ,
-              action: h
+              action: f
             }), n && (0, r.jsx)(a.sNh, {
               id: "staff-devtools",
               label: "Toggle DevTools",
@@ -87,21 +90,21 @@ function f(e) {
           })
         })
       })({
-        onClose: () => g(!1),
-        isDiscordDeveloper: n
+        onClose: () => b(!1),
+        isDiscordDeveloper: g
       }),
-      children: (e, n) => {
+      children: (e, i) => {
         let {
-          isShown: i
-        } = n;
-        return (0, r.jsx)(d.JO, {
-          ref: _,
-          onClick: h,
+          isShown: l
+        } = i;
+        return (0, r.jsx)(d.JO, h({
+          ref: E,
+          onClick: f,
           icon: a.nnZ,
           "aria-label": p.intl.string(p.t.cqEoj4),
-          selected: i,
+          selected: l,
           className: t
-        })
+        }, n))
       }
     })
   })

@@ -144,33 +144,48 @@ let W = i.memo(function() {
     w.ZP.setMinimumSize(k.J, k.N)
   }, []);
   let e = (0, h.T)("AppTitleBar"),
-    t = !F(e => e.isOpen) && e,
+    t = F(e => e.isOpen),
     {
-      hasBugReporterAccess: n
+      notificationCenterVariant: n,
+      entrypoint: l
+    } = y.Lk.useExperiment({
+      location: "AppTitleBar"
+    }),
+    {
+      hasBugReporterAccess: a
     } = d.Z.useExperiment({
       location: "HeaderBar"
     }, {
       autoTrackExposure: !1
-    });
+    }),
+    u = !t && e,
+    f = null !== n && l === y.u3.TITLE_BAR_LEFT,
+    g = null === n;
   i.useLayoutEffect(() => {
     w.ZP.setMinimumSize(k.J, k.N)
   }, []);
-  let l = (0, N.Ll)(),
-    a = (0, o.e7)([Z.Z, C.Z], () => (0, L.rB)()),
-    {
-      notificationCenterVariant: u,
-      entrypoint: f
-    } = y.Lk.useExperiment({
-      location: "AppTitleBar"
+  let b = (0, N.Ll)(),
+    v = (0, o.e7)([Z.Z, C.Z], () => (0, L.rB)()),
+    T = function(e) {
+      let {
+        showCollapsedSidebarIcons: t,
+        showNotificationsInbox: n,
+        showRecentsButton: r
+      } = e;
+      return i.useMemo(() => t ? "SIDEBAR" : n ? "NOTIFICATIONS_INBOX" : r ? "RECENTS" : "HELP", [t, n, r])
+    }({
+      showCollapsedSidebarIcons: u,
+      showNotificationsInbox: f,
+      showRecentsButton: g
     });
-  return a ? null : (0, r.jsx)(s.Wdt, {
+  return v ? null : (0, r.jsx)(s.Wdt, {
     children: e => (0, r.jsx)(s.f6W, {
-      theme: l,
-      children: i => (0, r.jsx)(R.TF, {
-        className: i,
+      theme: b,
+      children: t => (0, r.jsx)(R.TF, {
+        className: t,
         leading: (0, r.jsxs)(r.Fragment, {
-          children: [t && (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(s.P3F, H(B({}, e), {
+          children: [u && (0, r.jsxs)(r.Fragment, {
+            children: [(0, r.jsx)(s.P3F, H(B({}, "SIDEBAR" === T ? e : {}), {
               className: V.button,
               onClick: () => {
                 F.setState({
@@ -188,7 +203,9 @@ let W = i.memo(function() {
                 color: "currentColor"
               })
             })]
-          }), null !== u && f === y.u3.TITLE_BAR_LEFT && (0, r.jsx)(I.Z, {})]
+          }), f && (0, r.jsx)(I.Z, {
+            focusSectionProps: "NOTIFICATIONS_INBOX" === T ? e : void 0
+          })]
         }),
         title: (0, r.jsx)(z, {}),
         trailing: (0, r.jsxs)(r.Fragment, {
@@ -197,11 +214,13 @@ let W = i.memo(function() {
           }), (0, r.jsx)(p.Z, {
             canShowReminder: !0,
             className: V.button
-          }), null === u && (0, r.jsx)(S.Z, H(B({}, t ? {} : e), {
+          }), g && (0, r.jsx)(S.Z, H(B({}, "RECENTS" === T ? e : {}), {
             className: V.button
-          })), n ? (0, r.jsx)(O.Z, {
+          })), a ? (0, r.jsx)(O.Z, {
+            focusSectionProps: "HELP" === T ? e : void 0,
             className: V.button
           }) : (0, r.jsx)(_.Z, {
+            focusSectionProps: "HELP" === T ? e : void 0,
             className: V.button
           }), (0, r.jsx)(E.Z, {
             className: V.button
