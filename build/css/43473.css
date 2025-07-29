@@ -1,6 +1,6 @@
 /**
   Module ID: 43473
-  Original File Name: 53e048af9e8eb22a
+  Original File Name: 4ba7ff368eed05f3
 **/
 .scroller__95bea {
     display: flex;
@@ -1210,6 +1210,53 @@
     cursor: pointer
 }
 
+.card_e1364f {
+    align-items: start;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: auto 1fr;
+    justify-content: flex-start;
+    position: relative;
+    width: 100%
+}
+
+.card_e1364f:focus-within .clickableCard_e1364f,.card_e1364f:hover .clickableCard_e1364f {
+    background-color: var(--background-mod-subtle);
+    border-radius: 8px
+}
+
+.clickableCard_e1364f {
+    background-color: transparent;
+    cursor: pointer;
+    inset: -8px;
+    position: absolute;
+    transition: background-color var(--custom-button-transition-duration) ease-in-out
+}
+
+.details_e1364f {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    min-height: 117px
+}
+
+.icon_e1364f {
+    float: left;
+    margin-right: 4px
+}
+
+.socialProof_e1364f {
+    margin-top: 12px
+}
+
+.cardList__2357e {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: 16px
+}
+
 .coverList__1094b {
     display: flex;
     flex-wrap: wrap;
@@ -1454,4 +1501,4 @@
     border-color: var(--input-focused-border)
 }
 
-/*# sourceMappingURL=53e048af9e8eb22a.css.map*/
+/*# sourceMappingURL=4ba7ff368eed05f3.css.map*/

@@ -11,8 +11,8 @@ var r = n(255367),
   s = n(785717),
   d = n(806729),
   u = n(857302),
-  f = n(892001),
-  m = n(252417),
+  m = n(892001),
+  f = n(252417),
   p = n(264481),
   g = n(714905);
 
@@ -23,12 +23,12 @@ function b(e) {
     channelId: b,
     onClose: x
   } = e, {
-    analyticsLocations: _
+    analyticsLocations: h
   } = (0, l.ZP)(), {
-    context: h,
-    trackUserProfileAction: y
+    context: _,
+    trackUserProfileAction: j
   } = (0, s.KZ)(), {
-    mutualFriends: j,
+    mutualFriends: y,
     mutualFriendsCount: v
   } = (0, d.Z)(t), I = (0, a.Z)();
   return o.useEffect(() => {
@@ -36,7 +36,7 @@ function b(e) {
   }, [t.id, I]), (0, r.jsx)(i.Ttm, {
     className: g.scroller,
     fade: !0,
-    children: null == j ? Array.from({
+    children: null == y ? Array.from({
       length: null != v ? v : 10
     }).map((e, t) => (0, r.jsxs)("div", {
       className: g.friendsLoadingItem,
@@ -47,22 +47,22 @@ function b(e) {
         width: 135,
         opacity: .08
       })]
-    }, t)) : 0 === j.length ? (0, r.jsx)(p.s_, {}) : j.map(e => {
+    }, t)) : 0 === y.length ? (0, r.jsx)(p.s_, {}) : y.map(e => {
       let {
         key: t,
         user: o,
         status: i
       } = e;
-      return (0, r.jsx)(m.Z, {
+      return (0, r.jsx)(f.Z, {
         user: o,
         status: i,
         guildId: n,
         channelId: b,
         onSelect: () => {
           var e, t;
-          null == x || x(), y({
+          null == x || x(), j({
             action: "PRESS_MUTUAL_FRIEND"
-          }), (0, f.openUserProfileModal)((e = function(e) {
+          }), (0, m.openUserProfileModal)((e = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 r = Object.keys(n);
@@ -79,9 +79,9 @@ function b(e) {
               })
             }
             return e
-          }({}, h), t = t = {
+          }({}, _), t = t = {
             userId: o.id,
-            sourceAnalyticsLocations: _
+            sourceAnalyticsLocations: h
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {

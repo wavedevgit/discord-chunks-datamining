@@ -40,15 +40,15 @@ function u(e) {
     gameName: n,
     applicationId: o,
     userId: u,
-    disableInteraction: f = !1
-  } = e, m = (0, l.Z)({
+    disableInteraction: m = !1
+  } = e, f = (0, l.Z)({
     location: "GameCover",
     applicationId: o,
     source: a.m1.UserProfile,
     sourceUserId: u,
     trackEntryPointImpression: !0
   });
-  if (f || null == m) return (0, r.jsx)(d, {
+  if (m || null == f) return (0, r.jsx)(d, {
     imageSrc: t,
     gameName: n
   });
@@ -56,7 +56,7 @@ function u(e) {
     gameName: null != n ? n : c.intl.string(c.t.GIWFlJ)
   });
   return (0, r.jsx)(i.P3F, {
-    onClick: m,
+    onClick: f,
     "aria-label": p,
     className: s.clickable,
     children: (0, r.jsx)(d, {

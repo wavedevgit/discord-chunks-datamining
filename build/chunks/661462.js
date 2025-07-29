@@ -11,31 +11,31 @@ var r = n(255367),
   s = n(408986),
   d = n(778414),
   u = n(228168),
-  f = n(662776);
+  m = n(662776);
 
-function m(e) {
+function f(e) {
   let {
     user: t,
     currentUser: n,
     section: o,
     subsection: i,
     displayProfile: a,
-    guildId: f,
-    channelId: m,
+    guildId: m,
+    channelId: f,
     onClose: p
   } = e;
   return o === u.oh.ACTIVITY ? (0, r.jsx)(l.Z, {
     user: t,
     currentUser: n,
     displayProfile: a,
-    guildId: f,
-    channelId: m,
+    guildId: m,
+    channelId: f,
     subsection: i,
     onClose: p
   }) : o === u.oh.MUTUAL_FRIENDS ? (0, r.jsx)(c.Z, {
     user: t,
-    guildId: f,
-    channelId: m,
+    guildId: m,
+    channelId: f,
     onClose: p
   }) : o === u.oh.MUTUAL_GUILDS ? (0, r.jsx)(s.Z, {
     user: t,
@@ -56,12 +56,12 @@ function p(e) {
     items: g,
     initialSection: b,
     initialSubsection: x,
-    onClose: _
+    onClose: h
   } = e, {
-    trackUserProfileAction: h
+    trackUserProfileAction: _
   } = (0, a.KZ)(), [{
-    section: y,
-    subsection: j,
+    section: j,
+    subsection: y,
     text: v
   }, I] = o.useState((n = function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -98,18 +98,18 @@ function p(e) {
     Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
   }), n));
   return (0, r.jsxs)("div", {
-    className: f.container,
+    className: m.container,
     children: [(0, r.jsx)(i.Ttm, {
       orientation: "horizontal",
-      className: f.scroller,
+      className: m.scroller,
       fade: !0,
       paddingFix: !1,
       children: (0, r.jsx)(i.njP, {
         type: "top",
         look: "custom",
-        selectedItem: y,
+        selectedItem: j,
         onItemSelect: e => {
-          h({
+          _({
             action: "PRESS_SECTION",
             section: e
           }), I(t => {
@@ -118,25 +118,25 @@ function p(e) {
           })
         },
         children: g.map(e => (0, r.jsx)(i.njP.Item, {
-          className: f.tabBarItem,
+          className: m.tabBarItem,
           id: e.section,
           "aria-label": e.text,
           children: e.text
         }, e.section))
       })
     }), (0, r.jsx)(i.njP.Panel, {
-      id: y,
+      id: j,
       "aria-label": v,
-      className: f.tabBarPanel,
-      children: (0, r.jsx)(m, {
+      className: m.tabBarPanel,
+      children: (0, r.jsx)(f, {
         user: c,
         currentUser: s,
         displayProfile: d,
         guildId: u,
         channelId: p,
-        section: y,
-        subsection: j,
-        onClose: _
+        section: j,
+        subsection: y,
+        onClose: h
       })
     })]
   })

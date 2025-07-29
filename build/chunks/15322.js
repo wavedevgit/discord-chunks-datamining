@@ -1,8 +1,4 @@
-/** Chunk was on 10801 **/
+/** Chunk was on 43473 **/
 e.exports = {
-  banner: "banner__19627",
-  potion: "potion__19627",
-  actionButton: "actionButton__19627",
-  x: "x__19627",
-  subsection: "subsection__19627"
+  cardList: "cardList__2357e"
 }
