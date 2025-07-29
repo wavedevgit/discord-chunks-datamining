@@ -1,0 +1,1 @@
+{"id":"489618","type":"experiment","data":{"kind":"user","id":"2025-07_right_click_redemption","label":"Right Click Redemption","defaultConfig":{"dotsInsteadOfCloseButton":false,"rearrangeContextMenu":false},"treatments":[{"id":1,"label":"Context Menu Instead of Close Button","config":{"dotsInsteadOfCloseButton":false,"rearrangeContextMenu":false}}]},"fromModule":{"id":"73021"}}

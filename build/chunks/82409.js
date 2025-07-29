@@ -113,7 +113,7 @@ function U(e) {
           let n = O.Z.getMessages(e),
             r = null == (t = n.last()) ? void 0 : t.id,
             i = y.ZP.ackMessageId(e);
-          null != r && null != i && n.hasPresent() && C.default.compare(i, r) > 0 && d.In(e, {
+          null != r && null != i && n.hasPresent() && C.default.compare(i, r) >= 0 && d.In(e, {
             section: R.jXE.NOTIFICATIONS_INBOX,
             object: R.qAy.ACK_INBOX_CHANNEL_NO_MESSAGES,
             objectType: R.Qqv.ACK_AUTOMATIC

@@ -1,6 +1,6 @@
 /**
   Module ID: 73021
-  Original File Name: 237455bd70e5f723
+  Original File Name: 2110ef974bcf968c
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -4416,7 +4416,11 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
     width: 16px
 }
 
-.closeButton__972a0:focus,.closeButton__972a0:hover {
+.closeButton__972a0.closeButtonForceShow__972a0 {
+    display: block
+}
+
+.closeButton__972a0.closeButtonForceShow__972a0,.closeButton__972a0:focus,.closeButton__972a0:hover {
     opacity: 1
 }
 
@@ -19897,4 +19901,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=237455bd70e5f723.css.map*/
+/*# sourceMappingURL=2110ef974bcf968c.css.map*/

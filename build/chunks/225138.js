@@ -108,8 +108,8 @@ function X(e) {
     itemSafeSrc: W,
     itemTextContent: q,
     canReport: V,
-    onHeightUpdate: J,
-    onSelect: Q,
+    onHeightUpdate: Q,
+    onSelect: J,
     onClose: Y,
     navId: $,
     ariaLabel: ee,
@@ -132,13 +132,13 @@ function X(e) {
     commandTargetId: t.id,
     channel: n,
     guildId: void 0,
-    onHeightUpdate: J
+    onHeightUpdate: Q
   }), eC = (0, U.Z)(t), eR = (0, p.Z)(t);
   return (0, r.jsxs)(l.v2r, {
     navId: $,
     onClose: Y,
     "aria-label": ee,
-    onSelect: Q,
+    onSelect: J,
     children: [(0, r.jsx)(l.kSQ, {
       children: en
     }), (0, r.jsx)(l.kSQ, {
