@@ -14,8 +14,8 @@ var r = n(772848),
   c = n(710845),
   u = n(38618),
   d = n(314897),
-  f = n(517100),
-  _ = n(19780),
+  _ = n(517100),
+  f = n(19780),
   p = n(626135),
   h = n(70956),
   m = n(960048),
@@ -59,8 +59,8 @@ let T = 25,
   x = {
     state: "uninitialized"
   },
-  k = _.Z.getState(),
-  M = (0, E.H)(),
+  M = f.Z.getState(),
+  k = (0, E.H)(),
   j = d.default.getToken();
 
 function U() {
@@ -105,13 +105,13 @@ function B() {
 
 function V() {
   var e;
-  let t = null != (e = f.Z.getIdleSince()) ? e : 0;
+  let t = null != (e = _.Z.getIdleSince()) ? e : 0;
   return {
-    is_idle: f.Z.isIdle(),
+    is_idle: _.Z.isIdle(),
     idle_duration_ms: Date.now() - t,
-    is_afk: f.Z.isAFK(),
-    is_system_suspended: f.Z.getSystemSuspended(),
-    is_system_locked: f.Z.getSystemLocked()
+    is_afk: _.Z.isAFK(),
+    is_system_suspended: _.Z.getSystemSuspended(),
+    is_system_locked: _.Z.getSystemLocked()
   }
 }
 async function F() {
@@ -145,7 +145,7 @@ function H() {}
 
 function Y() {
   let e = [];
-  return null != j && (M && e.push("foregrounded"), k !== O.hes.DISCONNECTED && k !== O.hes.RTC_DISCONNECTED && e.push("rtc_connected")), {
+  return null != j && (k && e.push("foregrounded"), M !== O.hes.DISCONNECTED && M !== O.hes.RTC_DISCONNECTED && e.push("rtc_connected")), {
     active: e.length > 0,
     ver: T,
     reasons: e
@@ -207,31 +207,31 @@ function ee() {
 }
 
 function et() {
-  k = _.Z.getState(), K()
+  M = f.Z.getState(), K()
 }
 
 function en(e) {
   let {
     focused: t
   } = e;
-  M = t, K()
+  k = t, K()
 }
 
 function er(e) {
   let {
     state: t
   } = e;
-  M = t === O.$7l.ACTIVE, K()
+  k = t === O.$7l.ACTIVE, K()
 }
 
 function ei() {
-  k = _.Z.getState(), M = (0, E.H)(), ee()
+  M = f.Z.getState(), k = (0, E.H)(), ee()
 }
 
 function ea() {
   m.Z.addBreadcrumb({
     message: "Initializing SessionHeartbeatScheduler"
-  }), _.Z.addChangeListener(et), d.default.addChangeListener(ee), s.Z.subscribe("WINDOW_FOCUS", en), s.Z.subscribe("APP_STATE_UPDATE", er), s.Z.subscribe("CONNECTION_OPEN", $), K(), z(), a.ZP.initialized.then(ei)
+  }), f.Z.addChangeListener(et), d.default.addChangeListener(ee), s.Z.subscribe("WINDOW_FOCUS", en), s.Z.subscribe("APP_STATE_UPDATE", er), s.Z.subscribe("CONNECTION_OPEN", $), K(), z(), a.ZP.initialized.then(ei)
 }
 async function eo() {
   var e;

@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(287734),
   u = n(872810),
   d = n(110924),
-  f = n(833664),
-  _ = n(579630),
+  _ = n(833664),
+  f = n(579630),
   p = n(622822),
   h = n(100527),
   m = n(906732),
@@ -35,8 +35,8 @@ var r = n(255367),
   D = n(64621),
   L = n(336383),
   x = n(194811),
-  k = n(265386),
-  M = n(668700),
+  M = n(265386),
+  k = n(668700),
   j = n(384298),
   U = n(386019),
   G = n(228168),
@@ -66,7 +66,7 @@ function W(e) {
       user: t
     } = e;
     return t
-  }) : []), er = (0, s.e7)([T.Z], () => T.Z.findActivity(t.id, e => (0, f.Z)(e) && !(0, _.Z)(e))), {
+  }) : []), er = (0, s.e7)([T.Z], () => T.Z.findActivity(t.id, e => (0, _.Z)(e) && !(0, f.Z)(e))), {
     analyticsLocations: ei
   } = (0, m.ZP)(h.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), ea = (0, A.Z)({
     display: "live",
@@ -80,7 +80,7 @@ function W(e) {
   }), [es, el] = (0, y.wq)(et), ec = (0, p.Kt)() && (0, p.zd)(null == et ? void 0 : et.id), {
     previewUrl: eu,
     isLoading: ed
-  } = (0, b.Z)(a.guildId, a.channelId, a.ownerId), ef = (0, s.e7)([I.Z], () => null != et && !ec && I.Z.canBasicChannel(B.S7T.CONNECT, et)), e_ = (0, d.Z)(ed ? null : eu), ep = ed || null == eu ? e_ : eu;
+  } = (0, b.Z)(a.guildId, a.channelId, a.ownerId), e_ = (0, s.e7)([I.Z], () => null != et && !ec && I.Z.canBasicChannel(B.S7T.CONNECT, et)), ef = (0, d.Z)(ed ? null : eu), ep = ed || null == eu ? ef : eu;
   if (null == ee || null == et || !1 === a.discoverable || null === X) return null;
   let eh = () => {
       let e = e => {
@@ -107,7 +107,7 @@ function W(e) {
             children: (0, y.P9)(el)
           }), (0, r.jsx)(l.Text, {
             variant: "text-sm/medium",
-            children: ef ? V.intl.string(V.t.uQZTBQ) : V.intl.string(V.t.pgUTZG)
+            children: e_ ? V.intl.string(V.t.uQZTBQ) : V.intl.string(V.t.pgUTZG)
           })]
         })]
       }) : (0, r.jsxs)(l.P3F, {
@@ -135,7 +135,7 @@ function W(e) {
     },
     em = () => X !== G.lY.MODAL && X !== G.lY.MODAL_V2 ? null : (0, r.jsxs)("div", {
       className: F.details,
-      children: [(0, r.jsx)(k.Z, {
+      children: [(0, r.jsx)(M.Z, {
         channel: et,
         guild: ee,
         onAction: ea,
@@ -144,7 +144,7 @@ function W(e) {
         users: en,
         guildId: ee.id,
         channelId: et.id,
-        maxUsers: M.W,
+        maxUsers: k.W,
         size: l.EFr.SIZE_16,
         onClick: e => {
           null == e || e.stopPropagation(), null == ea || ea({
@@ -156,7 +156,7 @@ function W(e) {
         overflowCountColor: "text-muted"
       }), X === G.lY.MODAL_V2 && eE()]
     }),
-    eg = () => X === G.lY.MODAL || X === G.lY.MODAL_V2 ? null : (0, r.jsx)(M.Z, {
+    eg = () => X === G.lY.MODAL || X === G.lY.MODAL_V2 ? null : (0, r.jsx)(k.Z, {
       user: t,
       guild: ee,
       channel: et,

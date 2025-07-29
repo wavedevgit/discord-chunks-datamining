@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 });
 var r, i = n(442837),
   a = n(570140);
@@ -32,7 +32,7 @@ function d(e) {
     type: "failed"
   }, !1
 }
-class f extends(r = i.ZP.Store) {
+class _ extends(r = i.ZP.Store) {
   getGuild(e) {
     let t = l[e];
     if (null != t && !("type" in t)) return t
@@ -44,8 +44,8 @@ class f extends(r = i.ZP.Store) {
     return s
   }
 }
-o(f, "displayName", "BasicGuildStore");
-let _ = new f(a.Z, {
+o(_, "displayName", "BasicGuildStore");
+let f = new _(a.Z, {
   BASIC_GUILD_FETCH: c,
   BASIC_GUILD_FETCH_SUCCESS: u,
   BASIC_GUILD_FETCH_FAILURE: d

@@ -19,8 +19,8 @@ function d(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let f = {},
-  _ = {},
+let _ = {},
+  f = {},
   p = null,
   h = null,
   m = null,
@@ -58,14 +58,14 @@ function T(e) {
     id: t,
     changelog: n
   } = e;
-  null == f[t] && (f[t] = {}), f[t][n.locale] = {
+  null == _[t] && (_[t] = {}), _[t][n.locale] = {
     id: t,
     date: n.date,
     body: n.content,
     revision: 1,
     locale: n.locale,
     [n.asset_type === u.h3.YOUTUBE_VIDEO_ID ? "youtube_video_id" : "image"]: n.asset
-  }, null == _[t] && (_[t] = {}), _[t][n.locale] = u.LU.LOADED_SUCCESS
+  }, null == f[t] && (f[t] = {}), f[t][n.locale] = u.LU.LOADED_SUCCESS
 }
 
 function S(e) {
@@ -73,8 +73,8 @@ function S(e) {
     id: t,
     locale: n
   } = e;
-  if (null != f[t] && null != f[t][n]) return !1;
-  null == _[t] && (_[t] = {}), _[t][n] = u.LU.LOADED_FAILURE
+  if (null != _[t] && null != _[t][n]) return !1;
+  null == f[t] && (f[t] = {}), f[t][n] = u.LU.LOADED_FAILURE
 }
 
 function A(e) {
@@ -106,14 +106,14 @@ class R extends(r = i.ZP.Store) {
   }
   getChangelog(e, t) {
     var n, r;
-    return null != (r = null == (n = f[e]) ? void 0 : n[t]) ? r : null
+    return null != (r = null == (n = _[e]) ? void 0 : n[t]) ? r : null
   }
   latestChangelogId() {
     return p
   }
   getChangelogLoadStatus(e, t) {
     var n, r;
-    return null != (r = null == (n = _[e]) ? void 0 : n[t]) ? r : u.LU.NOT_LOADED
+    return null != (r = null == (n = f[e]) ? void 0 : n[t]) ? r : u.LU.NOT_LOADED
   }
   hasLoadedConfig() {
     return null != m
@@ -133,7 +133,7 @@ class R extends(r = i.ZP.Store) {
   getStateForDebugging() {
     return {
       changelogConfig: m,
-      loadedChangelogs: _,
+      loadedChangelogs: f,
       lastSeenChangelogId: E,
       lastSeenChangelogDate: b
     }

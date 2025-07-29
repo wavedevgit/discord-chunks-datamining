@@ -18,8 +18,8 @@ var r = n(255367),
   c = n(626135),
   u = n(787879),
   d = n(370774),
-  f = n(982183),
-  _ = n(981631);
+  _ = n(982183),
+  f = n(981631);
 let p = i.createContext(""),
   h = e => {
     let {
@@ -38,7 +38,7 @@ function g(e) {
     viewId: n,
     entrypoint: r
   } = e;
-  c.default.track(_.rMx.NOTIFICATIONS_INBOX_OPENED, {
+  c.default.track(f.rMx.NOTIFICATIONS_INBOX_OPENED, {
     inbox_variant: t,
     inbox_entrypoint: r,
     view_id: n
@@ -56,7 +56,7 @@ function E(e) {
     unreadMessageItemsCount: s,
     unreadMentionsCount: l
   } = e;
-  c.default.track(_.rMx.NOTIFICATIONS_INBOX_READY, {
+  c.default.track(f.rMx.NOTIFICATIONS_INBOX_READY, {
     time_to_load: t,
     unreads_count: n,
     total_messages_count: r,
@@ -77,7 +77,7 @@ function y(e) {
     interactionType: n,
     viewId: r
   } = e;
-  c.default.track(_.rMx.NOTIFICATIONS_INBOX_ITEM_INTERACTED, {
+  c.default.track(f.rMx.NOTIFICATIONS_INBOX_ITEM_INTERACTED, {
     interaction_type: n,
     message_id: t.id,
     channel_id: t.channel_id,
@@ -93,7 +93,7 @@ function O(e) {
     enabled: n,
     viewId: r
   } = e;
-  c.default.track(_.rMx.NOTIFICATIONS_INBOX_SECTION_INTERACTED, {
+  c.default.track(f.rMx.NOTIFICATIONS_INBOX_SECTION_INTERACTED, {
     section: t,
     enabled: n,
     view_id: r
@@ -108,7 +108,7 @@ function v(e) {
     totalItemsCount: i,
     viewId: a
   } = e;
-  c.default.track(_.rMx.NOTIFICATIONS_INBOX_UNMOUNTED, {
+  c.default.track(f.rMx.NOTIFICATIONS_INBOX_UNMOUNTED, {
     unreads_count: t,
     total_messages_count: n,
     unread_items_count: r,
@@ -127,13 +127,13 @@ function I(e) {
     loadingTrigger: o,
     viewId: s
   } = e;
-  c.default.track(_.rMx.NOTIFICATIONS_INBOX_DATA_LOADED, {
+  c.default.track(f.rMx.NOTIFICATIONS_INBOX_DATA_LOADED, {
     time_to_load: t,
     messages_count: n,
     unread_messages_count: r,
     channels_fetched: i,
     mentions_fetched: a,
-    loading_trigger: null != o ? o : f.X.UNKNOWN,
+    loading_trigger: null != o ? o : _.X.UNKNOWN,
     view_id: s
   })
 }
@@ -145,7 +145,7 @@ function T(e) {
     messages: r,
     unreadMessages: a,
     viewId: c,
-    messagesByCategory: _
+    messagesByCategory: f
   } = e, p = i.useRef(null), h = i.useRef(!1), m = (0, o.e7)([u.Z], () => u.Z.isLoading), b = (0, l.Z)(m), y = (0, o.e7)([u.Z], () => {
     var e;
     return null != (e = u.Z.currentRequestAnalyticsPayload) ? e : null
@@ -168,20 +168,20 @@ function T(e) {
         totalMessagesCount: r.length,
         unreadsBadgeMentionCount: O,
         unreadsBadgeChannelCount: T.length,
-        unreadMessageItemsCount: _.UNREAD.length,
-        unreadMentionsCount: _.UNREAD.filter(e => e.every(e => e.kind === f.fL.MENTION)).length,
+        unreadMessageItemsCount: f.UNREAD.length,
+        unreadMentionsCount: f.UNREAD.filter(e => e.every(e => e.kind === _.fL.MENTION)).length,
         viewId: c
       })
     }
-  }, [r, a, c, T, O, _]), i.useEffect(() => {
-    let e = (null == y ? void 0 : y.loadingTrigger) === f.X.AUTO_LOAD;
+  }, [r, a, c, T, O, f]), i.useEffect(() => {
+    let e = (null == y ? void 0 : y.loadingTrigger) === _.X.AUTO_LOAD;
     if (null != y && !0 === b && !1 === m && !e) {
       var t;
       I({
         timeToLoad: null == y ? void 0 : y.timeToLoad,
         messagesCount: r.length,
         unreadMessagesCount: a.length,
-        loadingTrigger: null != (t = null == y ? void 0 : y.loadingTrigger) ? t : f.X.UNKNOWN,
+        loadingTrigger: null != (t = null == y ? void 0 : y.loadingTrigger) ? t : _.X.UNKNOWN,
         viewId: null == y ? void 0 : y.viewId,
         channelsFetched: null == y ? void 0 : y.channelsFetched,
         mentionsFetched: null == y ? void 0 : y.mentionsFetched
@@ -192,8 +192,8 @@ function T(e) {
     v({
       unreadsCount: null != (e = null == a ? void 0 : a.length) ? e : 0,
       totalMessagesCount: null != (t = null == r ? void 0 : r.length) ? t : 0,
-      unreadItemsCount: _.UNREAD.length,
-      totalItemsCount: _.TODAY.length + _.YESTERDAY.length + _.OLDER.length,
+      unreadItemsCount: f.UNREAD.length,
+      totalItemsCount: f.TODAY.length + f.YESTERDAY.length + f.OLDER.length,
       viewId: c
     })
   })

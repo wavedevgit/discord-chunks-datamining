@@ -22,7 +22,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function f(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -58,7 +58,7 @@ function h(e) {
     label: t,
     onAction: n,
     icon: d
-  } = e, p = _(e, ["label", "onAction", "icon"]);
+  } = e, p = f(e, ["label", "onAction", "icon"]);
   let {
     analyticsLocations: h
   } = (0, o.ZP)(), {
@@ -68,7 +68,7 @@ function h(e) {
     id: "user-profile",
     label: null != t ? t : u.intl.string(u.t.LYju5O),
     action: () => {
-      null == n || n(), (0, l.openUserProfileModal)(f({
+      null == n || n(), (0, l.openUserProfileModal)(_({
         sourceAnalyticsLocations: h,
         appContext: E
       }, m, p)), g.dispatch(c.CkL.POPOUT_CLOSE)

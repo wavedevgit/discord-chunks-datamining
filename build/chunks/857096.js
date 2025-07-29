@@ -13,8 +13,8 @@ var i = n(120356),
   c = n(208156),
   u = n(100527),
   d = n(906732),
-  f = n(835473),
-  _ = n(607187),
+  _ = n(835473),
+  f = n(607187),
   p = n(937995),
   h = n(366050),
   m = n(510839),
@@ -29,7 +29,7 @@ var i = n(120356),
 function T(e) {
   let {
     isLoading: t
-  } = e, n = (0, o.e7)([g.Z], () => g.Z.getConnectedFrame()), i = (0, o.e7)([g.Z], () => g.Z.getFrameLayoutMode()), u = (0, f.q)(null == n ? void 0 : n.applicationId), d = (0, o.e7)([h.Z], () => h.Z.isFrameHidden()), T = i === b.U.PIP && !d, S = T && null != h.Z.pipVideoWindow && null != h.Z.pipFrameWindow;
+  } = e, n = (0, o.e7)([g.Z], () => g.Z.getConnectedFrame()), i = (0, o.e7)([g.Z], () => g.Z.getFrameLayoutMode()), u = (0, _.q)(null == n ? void 0 : n.applicationId), d = (0, o.e7)([h.Z], () => h.Z.isFrameHidden()), T = i === b.U.PIP && !d, S = T && null != h.Z.pipVideoWindow && null != h.Z.pipFrameWindow;
   if (null == n || null == u) return null;
   let A = {
     instance_id: "example-cl-instance",
@@ -69,9 +69,9 @@ function T(e) {
       let {
         idle: i,
         onActive: o,
-        onForceIdle: f
+        onForceIdle: _
       } = e;
-      return (0, r.jsxs)(_.Z, {
+      return (0, r.jsxs)(f.Z, {
         className: a()(O.root, {
           [O.pipMode]: T,
           [I.elevationHigh]: T,
@@ -85,7 +85,7 @@ function T(e) {
           className: "theme-dark",
           children: N({
             onActive: o,
-            onForceIdle: f,
+            onForceIdle: _,
             idle: i
           })
         }), t ? (0, r.jsx)(s.$jN, {

@@ -1,11 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 e.exports = {
-  inputWrapper: "inputWrapper__0f084",
-  input: "input__0f084",
-  focused: "focused__0f084",
-  error: "error__0f084",
-  disabled: "disabled__0f084",
-  editable: "editable__0f084",
-  inputError: "inputError__0f084"
+  "text-md/normal": "text-md/normal__0f084",
+  container: "container__0f084",
+  wrapper: "wrapper__0f084",
+  input: "input__0f084 text-md/normal__0f084"
 }

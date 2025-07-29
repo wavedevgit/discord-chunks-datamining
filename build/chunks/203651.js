@@ -70,8 +70,8 @@ let s = n(206339),
   c = n(699901),
   u = n(615252),
   d = n(517024),
-  f = d.isObject,
-  _ = d.mixin,
+  _ = d.isObject,
+  f = d.mixin,
   p = d.hasOwn,
   h = n(509337),
   m = n(675246);
@@ -88,7 +88,7 @@ t.Request = A, E.getXHR = () => {
 let b = "".trim ? e => e.trim() : e => e.replace(/(^\s*|\s*$)/g, "");
 
 function y(e) {
-  if (!f(e)) return e;
+  if (!_(e)) return e;
   let t = [];
   for (let n in e) p(e, n) && O(t, n, e[n]);
   return t.join("&")
@@ -109,7 +109,7 @@ function O(e, t, n) {
       } finally {
         a.f()
       }
-    } else if (f(n))
+    } else if (_(n))
       for (let r in n) p(n, r) && O(e, `${t}[${r}]`, n[r]);
     else e.push(encodeURI(t) + "=" + encodeURIComponent(n))
   }
@@ -171,7 +171,7 @@ E.serializeObject = y, E.parseString = v, E.types = {
 }, E.parse = {
   "application/x-www-form-urlencoded": v,
   "application/json": JSON.parse
-}, _(S.prototype, h.prototype), S.prototype._parseBody = function(e) {
+}, f(S.prototype, h.prototype), S.prototype._parseBody = function(e) {
   let t = E.parse[this.type];
   return this.req._parser ? this.req._parser(this, e) : (!t && T(this.type) && (t = E.parse["application/json"]), t && e && (e.length > 0 || e instanceof Object) ? t(e) : null)
 }, S.prototype.toError = function() {
@@ -180,7 +180,7 @@ E.serializeObject = y, E.parseString = v, E.types = {
     n = e.url,
     r = Error(`cannot ${t} ${n} (${this.status})`);
   return r.status = this.status, r.method = t, r.url = n, r
-}, E.Response = S, s(A.prototype), _(A.prototype, u.prototype), A.prototype.type = function(e) {
+}, E.Response = S, s(A.prototype), f(A.prototype, u.prototype), A.prototype.type = function(e) {
   return this.set("Content-Type", E.types[e] || e), this
 }, A.prototype.accept = function(e) {
   return this.set("Accept", E.types[e] || e), this

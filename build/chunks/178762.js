@@ -16,8 +16,8 @@ var r = n(255367),
   c = n(442837),
   u = n(704215),
   d = n(481060),
-  f = n(239091),
-  _ = n(607070),
+  _ = n(239091),
+  f = n(607070),
   p = n(100527),
   h = n(266454),
   m = n(704041),
@@ -39,9 +39,9 @@ var r = n(255367),
   D = n(268010),
   L = n(797342),
   x = n(206583),
-  k = n(921944);
+  M = n(921944);
 
-function M(e, t, n) {
+function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -57,7 +57,7 @@ function j(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      M(e, t, n[t])
+      k(e, t, n[t])
     })
   }
   return e
@@ -226,12 +226,12 @@ let Y = e => {
       N = i.useRef(!1),
       [C, R] = i.useState(!1),
       [P, w] = i.useState(!1),
-      D = (0, c.e7)([_.Z], () => _.Z.keyboardModeEnabled);
+      D = (0, c.e7)([f.Z], () => f.Z.keyboardModeEnabled);
     i.useEffect(() => {
       C && D && w(!0)
     }, [C, D]);
-    let M = i.useCallback(e => {
-        I && (0, f.jW)(e, async () => {
+    let k = i.useCallback(e => {
+        I && (0, _.jW)(e, async () => {
           let {
             default: e
           } = await n.e("153").then(n.bind(n, 330150));
@@ -263,7 +263,7 @@ let Y = e => {
       ref: p,
       onMouseEnter: () => {
         m.entry.content_type !== l.s.LEADERBOARD || (0, h.zu)(u.z.LEADERBOARD_NUX_COACHMARK) || (0, h.Q3)(u.z.LEADERBOARD_NUX_COACHMARK, {
-          dismissAction: k.L.SECONDARY
+          dismissAction: M.L.SECONDARY
         }), N.current = !0, setTimeout(() => {
           N.current && R(!0), F(A)
         }, 100)
@@ -309,7 +309,7 @@ let Y = e => {
             onClick: () => {
               C || R(!0)
             },
-            onContextMenu: M,
+            onContextMenu: k,
             children: (0, r.jsx)(Y, G(j({}, m), {
               selected: n,
               hovered: N.current

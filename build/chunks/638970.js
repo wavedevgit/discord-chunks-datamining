@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => M
+  Z: () => k
 }), n(388685), n(539854);
 var r = n(255367),
   i = n(73800),
@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(481060),
   u = n(493773),
   d = n(468363),
-  f = n(906732),
-  _ = n(313201),
+  _ = n(906732),
+  f = n(313201),
   p = n(158776),
   h = n(885110),
   m = n(823379),
@@ -91,12 +91,12 @@ function x(e, t) {
       return (0, m.vE)(t)
   }
 }
-let k = {
+let M = {
   animationPhase: "awaitingInput",
   height: "auto"
 };
 
-function M(e) {
+function k(e) {
   let {
     user: t,
     currentUser: n,
@@ -104,9 +104,9 @@ function M(e) {
     guildId: m,
     onOpenUserProfileModal: C,
     onClose: P
-  } = e, w = (0, _.Dt)(), {
-    analyticsLocations: M
-  } = (0, f.ZP)(), {
+  } = e, w = (0, f.Dt)(), {
+    analyticsLocations: k
+  } = (0, _.ZP)(), {
     trackUserProfileAction: j
   } = (0, g.KZ)(), {
     live: U,
@@ -124,7 +124,7 @@ function M(e) {
     voiceActivityStatusEnabled: H
   } = (0, d.U)({
     location: "UserProfileStackedActivity"
-  }), Y = H && null == G && null == V && null != B, W = (0, y.yi)(), K = (null == W ? void 0 : W.interactionSource) === T.n_.ACTIVITY, z = i.useRef(null), q = i.useRef(null), X = i.useRef(null), Q = i.useRef(null), [J, $] = i.useReducer(x, k), {
+  }), Y = H && null == G && null == V && null != B, W = (0, y.yi)(), K = (null == W ? void 0 : W.interactionSource) === T.n_.ACTIVITY, z = i.useRef(null), q = i.useRef(null), X = i.useRef(null), Q = i.useRef(null), [J, $] = i.useReducer(x, M), {
     height: ee,
     animationPhase: et
   } = J, en = "awaitingInput" !== et, er = "animating" === et || "done" === et, ei = [], ea = {
@@ -153,7 +153,7 @@ function M(e) {
     onClick: () => {
       j({
         action: "PRESS_VIEW_PROFILE",
-        analyticsLocations: M
+        analyticsLocations: k
       }), C({
         section: T.oh.ACTIVITY
       })
@@ -167,7 +167,7 @@ function M(e) {
     if (null == z.current || null == X.current) return;
     j({
       action: "PRESS_SHOW_MORE_ACTIVITY",
-      analyticsLocations: M
+      analyticsLocations: k
     });
     let e = z.current.getBoundingClientRect().height,
       t = X.current.getBoundingClientRect().height;
@@ -186,7 +186,7 @@ function M(e) {
         }), null == (e = q.current) || e.focus()
       }, D)
     })
-  }, [M, j]);
+  }, [k, j]);
   return ((0, u.zq)(() => {
     null != Q.current && window.clearTimeout(Q.current)
   }), Z || 0 === ei.length) ? null : (0, r.jsxs)("section", {

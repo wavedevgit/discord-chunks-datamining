@@ -13,8 +13,8 @@ var r = n(255367),
   c = n(481060),
   u = n(393238),
   d = n(699682),
-  f = n(793903),
-  _ = n(906732),
+  _ = n(793903),
+  f = n(906732),
   p = n(237617);
 
 function h(e, t, n) {
@@ -107,7 +107,7 @@ function S(e) {
   let S = {},
     {
       analyticsLocations: A
-    } = (0, _.ZP)();
+    } = (0, f.ZP)();
   i.Children.forEach(T.children, (e, t) => {
     S[e.props.id] = {
       children: e.props.children,
@@ -122,7 +122,7 @@ function S(e) {
     {
       reducedMotion: P
     } = i.useContext(l.S),
-    w = i.useContext(f.Z),
+    w = i.useContext(_.Z),
     D = S[N].impressionName,
     L = E(m({}, S[N].impressionProperties), {
       location_stack: A
@@ -137,13 +137,13 @@ function S(e) {
   });
   let {
     ref: x,
-    width: k = 0,
-    height: M = 0
+    width: M = 0,
+    height: k = 0
   } = (0, u.ZP)(N), j = m({}, O, T.springConfig, P.enabled ? {
     clamp: !0
   } : null), U = (0, c.q_F)({
-    width: null != (n = T.width) ? n : k,
-    height: M,
+    width: null != (n = T.width) ? n : M,
+    height: k,
     config: j
   }, null == C ? "animate-never" : "respect-motion-settings"), G = (0, c.Yzy)(N, {
     value: 0,

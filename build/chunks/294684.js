@@ -10,8 +10,8 @@ var r = n(98405),
   c = n(507604),
   u = n(394227),
   d = n(556585),
-  f = n(573078),
-  _ = n(477732),
+  _ = n(573078),
+  f = n(477732),
   p = n(25124),
   h = n(280481),
   m = n(199838),
@@ -33,10 +33,10 @@ var r = n(98405),
   D = n(992914),
   L = w("iterator"),
   x = "URLSearchParams",
-  k = x + "Iterator",
-  M = m.set,
+  M = x + "Iterator",
+  k = m.set,
   j = m.getterFor(x),
-  U = m.getterFor(k),
+  U = m.getterFor(M),
   G = a("fetch"),
   B = a("Request"),
   V = a("Headers"),
@@ -127,7 +127,7 @@ var r = n(98405),
     return n
   },
   ed = /[!'()~]|%20/g,
-  ef = {
+  e_ = {
     "!": "%21",
     "'": "%27",
     "(": "%28",
@@ -135,15 +135,15 @@ var r = n(98405),
     "~": "%7E",
     "%20": "+"
   },
-  e_ = function(e) {
-    return ef[e]
+  ef = function(e) {
+    return e_[e]
   },
   ep = function(e) {
-    return J(Y(e), ed, e_)
+    return J(Y(e), ed, ef)
   },
   eh = h(function(e, t) {
-    M(this, {
-      type: k,
+    k(this, {
+      type: M,
       target: j(e).entries,
       index: 0,
       kind: t
@@ -207,11 +207,11 @@ em.prototype = {
 var eg = function() {
     g(this, eE);
     var e = arguments.length > 0 ? arguments[0] : void 0,
-      t = M(this, new em(e));
+      t = k(this, new em(e));
     c || (this.size = t.entries.length)
   },
   eE = eg.prototype;
-if (_(eE, {
+if (f(eE, {
     append: function(e, t) {
       var n = j(this);
       P(arguments.length, 2), Q(n.entries, {
@@ -283,7 +283,7 @@ if (_(eE, {
     return j(this).serialize()
   }, {
     enumerable: !0
-  }), c && f(eE, "size", {
+  }), c && _(eE, "size", {
     get: function() {
       return j(this).entries.length
     },

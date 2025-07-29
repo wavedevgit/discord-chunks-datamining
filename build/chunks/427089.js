@@ -97,7 +97,7 @@ e.exports = function(e) {
       begin: /\binline(?=\s)/,
       keywords: "inline"
     }],
-    f = {
+    _ = {
       begin: [/\(\s*/, /using/, /\s+(?!\))/],
       beginScope: {
         2: "keyword"
@@ -121,6 +121,6 @@ e.exports = function(e) {
         className: "string",
         begin: /\S+/
       }]
-    }, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, i, a, l, s, e.C_NUMBER_MODE, c, u, ...d, f, n]
+    }, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, i, a, l, s, e.C_NUMBER_MODE, c, u, ...d, _, n]
   }
 }

@@ -149,6 +149,6 @@ function d(e, t) {
   }), n.length > 0 && console.info("Missing records in shadow state: ".concat(n.join(", "))), r.length > 0 && console.info("Extra records in shadow state: ".concat(r.join(", "))), console.groupEnd()
 }
 
-function f(e) {
+function _(e) {
   return null === e ? "null" : "object" != typeof e ? typeof e : Array.isArray(e) ? "array" : "object"
 }

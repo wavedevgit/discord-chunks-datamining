@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(755721),
   u = n(481060),
   d = n(906732),
-  f = n(975298),
-  _ = n(565138),
+  _ = n(975298),
+  f = n(565138),
   p = n(963249),
   h = n(317169),
   m = n(199778),
@@ -35,7 +35,7 @@ let A = function(e) {
     analyticsLocations: R
   } = (0, d.ZP)(), {
     fractionalState: P
-  } = (0, f.Z)({
+  } = (0, _.Z)({
     forceFetch: !1
   }), w = i.useMemo(() => Object.keys(C).filter(e => {
     let t = C[e];
@@ -57,7 +57,7 @@ let A = function(e) {
     })
   }
 
-  function k() {
+  function M() {
     (0, p.Z)({
       initialPlanId: null,
       subscriptionTier: I.Si.TIER_2,
@@ -74,10 +74,10 @@ let A = function(e) {
   }
   return (0, r.jsxs)("div", {
     className: S.guildStatus,
-    children: [(0, r.jsx)(_.Z, {
+    children: [(0, r.jsx)(f.Z, {
       className: S.guildIcon,
       guild: n,
-      size: _.Z.Sizes.LARGER
+      size: f.Z.Sizes.LARGER
     }), (0, r.jsx)(u.X6q, {
       className: S.guildName,
       color: "always-white",
@@ -140,7 +140,7 @@ let A = function(e) {
         innerClassName: o()(S.__invalid_guildBoostCtaContent, S.guildBoostCtaGiftContent),
         look: c.zx.Looks.OUTLINED,
         color: c.zx.Colors.WHITE,
-        onClick: k,
+        onClick: M,
         size: c.zx.Sizes.LARGE,
         children: [(0, r.jsx)(u.OgN, {
           size: "md",

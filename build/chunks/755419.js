@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  K: () => f,
-  X: () => _
+  K: () => _,
+  X: () => f
 });
 var r = n(255367),
   i = n(120356),
@@ -13,7 +13,7 @@ var r = n(255367),
   c = n(157570),
   u = n(593639),
   d = n(26028);
-let f = {
+let _ = {
     [l.Vt.FRACTIONAL_PREMIUM]: {
       render: e => {
         let {
@@ -41,7 +41,7 @@ let f = {
       }
     }
   },
-  _ = () => ({
+  f = () => ({
     id: o.l.ORB_PROFILE_BADGE,
     icon: o.l.ORB_PROFILE_BADGE,
     iconSrc: d.Z,

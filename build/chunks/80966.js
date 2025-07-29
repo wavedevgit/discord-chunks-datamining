@@ -33,7 +33,7 @@ function d(e) {
   return e
 }
 
-function f(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -44,8 +44,8 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
+function f(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -75,7 +75,7 @@ class m extends i.Component {
         fileSize: n,
         className: i,
         mediaPlayerClassName: u,
-        poster: f,
+        poster: _,
         fileName: h,
         naturalWidth: m,
         naturalHeight: g,
@@ -96,15 +96,15 @@ class m extends i.Component {
         onControlsShow: D,
         onControlsHide: L,
         onVolumeChange: x,
-        onMute: k,
-        disableArrowKeySeek: M,
+        onMute: M,
+        disableArrowKeySeek: k,
         alt: j = c.intl.string(c.t.FlNoSU)
       } = e,
       U = p(e, ["src", "fileSize", "className", "mediaPlayerClassName", "poster", "fileName", "naturalWidth", "naturalHeight", "playable", "downloadable", "volume", "autoPlay", "autoMute", "responsive", "mediaLayoutType", "mimeType", "renderOverlayContent", "renderLinkComponent", "onClick", "onPlay", "onPause", "onEnded", "onControlsShow", "onControlsHide", "onVolumeChange", "onMute", "disableArrowKeySeek", "alt"]);
-    return (0, r.jsx)(o.ZP, _(d({
+    return (0, r.jsx)(o.ZP, f(d({
       alt: j,
       className: i,
-      src: f
+      src: _
     }, U), {
       minWidth: s.ZP.minWidth,
       minHeight: s.ZP.minHeight,
@@ -144,12 +144,12 @@ class m extends i.Component {
           onPause: P,
           onEnded: w,
           onVolumeChange: x,
-          onMute: k,
+          onMute: M,
           onControlsShow: D,
           onControlsHide: L,
           mimeType: S,
           downloadable: b,
-          disableArrowKeySeek: M
+          disableArrowKeySeek: k
         })
       }
     }))

@@ -33,7 +33,7 @@ function d(e) {
   return e
 }
 
-function f(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -44,8 +44,8 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
+function f(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -67,15 +67,15 @@ let h = e => {
     element: t,
     attributes: n,
     children: a
-  } = e, u = (0, s.vt)(), f = (0, s.UE)(), p = (0, s._7)(), h = o()(c.inlineElement, c.optionPill, c.inlineFlex, {
-    [c.selectedPill]: f && u
+  } = e, u = (0, s.vt)(), _ = (0, s.UE)(), p = (0, s._7)(), h = o()(c.inlineElement, c.optionPill, c.inlineFlex, {
+    [c.selectedPill]: _ && u
   }), m = i.useCallback(() => {
     l.bN.isVoid(p, t)
   }, [p, t]), g = (0, r.jsx)("span", {
     className: c.optionPillValue,
     children: a
   });
-  return (0, r.jsxs)("span", _(d({}, n), {
+  return (0, r.jsxs)("span", f(d({}, n), {
     className: h,
     children: [(0, r.jsxs)("span", {
       className: c.optionPillKey,

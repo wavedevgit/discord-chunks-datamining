@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(393238),
   u = n(428967),
   d = n(266454),
-  f = n(605236),
-  _ = n(279745),
+  _ = n(605236),
+  f = n(279745),
   p = n(921944),
   h = n(388032),
   m = n(418952);
@@ -39,8 +39,8 @@ let g = 280,
       align: D = "center",
       art: L,
       isPremiumEarlyAccess: x = !1,
-      maxWidth: k = g,
-      hideDismissButton: M = !1,
+      maxWidth: M = g,
+      hideDismissButton: k = !1,
       pointerClassName: j,
       dismissIconClassName: U,
       dismissIcon: G,
@@ -52,7 +52,7 @@ let g = 280,
     } = (0, c.ZP)();
 
     function K(e) {
-      if ((0, u.lg)(P)) return void(0, f.bj)(P, {
+      if ((0, u.lg)(P)) return void(0, _.bj)(P, {
         dismissAction: e
       });
       (0, d.Q3)(P, {
@@ -70,9 +70,9 @@ let g = 280,
     return i.useEffect(() => {
       var e, t;
       let n = (null != (t = null == (e = Y.current) ? void 0 : e.scrollWidth) ? t : 0) + 64;
-      !Z && n > k && H(!0)
-    }, [Z, W, Y, k]), i.useEffect(() => {
-      (0, f.kk)(P)
+      !Z && n > M && H(!0)
+    }, [Z, W, Y, M]), i.useEffect(() => {
+      (0, _.kk)(P)
     }, [P]), (0, r.jsx)("div", {
       className: S,
       ref: t,
@@ -87,7 +87,7 @@ let g = 280,
           children: G
         }), (0, r.jsxs)("div", {
           className: o()(E, A ? m.artInline : m.artAbsolute),
-          children: [R && (0, r.jsx)(_.Z, {
+          children: [R && (0, r.jsx)(f.Z, {
             className: m.gifTag
           }), L]
         }), (0, r.jsxs)("div", {
@@ -126,7 +126,7 @@ let g = 280,
               },
               color: null != V ? V : N || x ? s.zx.Colors.BRAND_INVERTED : s.zx.Colors.WHITE,
               children: null != O ? O : h.intl.string(h.t.IHf1RE)
-            }), !M && (0, r.jsx)(s.zx, {
+            }), !k && (0, r.jsx)(s.zx, {
               className: m.button,
               size: F,
               onClick: e => {

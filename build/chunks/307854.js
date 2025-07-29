@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  s: () => f
+  s: () => _
 });
 var r = n(731889),
   i = n(573736),
@@ -111,7 +111,7 @@ class d {
   update(e) {
     if (!e) return this;
     let t = "function" == typeof e ? e(this) : e,
-      [n, r] = t instanceof f ? [t.getScopeData(), t.getRequestSession()] : (0, i.PO)(t) ? [e, e.requestSession] : [],
+      [n, r] = t instanceof _ ? [t.getScopeData(), t.getRequestSession()] : (0, i.PO)(t) ? [e, e.requestSession] : [],
       {
         tags: a,
         extra: o,
@@ -221,4 +221,4 @@ class d {
     }), this._notifyingListeners = !1)
   }
 }
-let f = d
+let _ = d

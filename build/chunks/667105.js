@@ -5,10 +5,10 @@ n.d(t, {
   Ks: () => B,
   Ws: () => Z,
   g2: () => j,
-  hf: () => k,
+  hf: () => M,
   k3: () => U,
   qN: () => F,
-  tP: () => M
+  tP: () => k
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -19,8 +19,8 @@ var r = n(255367),
   c = n(335131),
   u = n(594190),
   d = n(98278),
-  f = n(507808),
-  _ = n(594174),
+  _ = n(507808),
+  f = n(594174),
   p = n(78839),
   h = n(617136),
   m = n(915750),
@@ -78,14 +78,14 @@ function x(e, t) {
   }), e
 }
 
-function k(e) {
+function M(e) {
   let {
     quest: t,
     questContent: n,
     questContentPosition: r,
     questContentRowIndex: a,
     sourceQuestContent: s
-  } = e, l = (0, o.e7)([_.default], () => _.default.getCurrentUser()), c = null == l ? void 0 : l.hasVerifiedEmailOrPhone(), u = null == l ? void 0 : l.verified, d = (0, h.O5)();
+  } = e, l = (0, o.e7)([f.default], () => f.default.getCurrentUser()), c = null == l ? void 0 : l.hasVerifiedEmailOrPhone(), u = null == l ? void 0 : l.verified, d = (0, h.O5)();
   return i.useCallback(() => {
     null != t && (d({
       questId: t.id,
@@ -103,7 +103,7 @@ function k(e) {
   }, [t, d, n, r, a, c, u, s])
 }
 
-function M(e) {
+function k(e) {
   var t;
   let n = (0, o.Wu)([u.ZP], () => u.ZP.getGamesSeen(!1)).find(t => (null == t ? void 0 : t.id) === e);
   return null != n && Date.now() - 2592e7 <= (null != (t = n.lastLaunched) ? t : 0)
@@ -181,11 +181,11 @@ function B(e) {
     questContent: o,
     questContentPosition: s,
     questContentRowIndex: u,
-    inGiftInventory: _,
+    inGiftInventory: f,
     isVideoQuest: p,
     inGameQuest: y,
     sourceQuestContent: O
-  } = e, v = k({
+  } = e, v = M({
     quest: n,
     questContent: o,
     questContentPosition: s,
@@ -196,7 +196,7 @@ function B(e) {
   }), S = (0, b.Rf)(n), A = i.useCallback(() => {
     (0, d.$)()
   }, []), w = i.useCallback(() => {
-    (0, f.Y)({
+    (0, _.Y)({
       pageType: C.ZY5.GLOBAL_DISCOVERY_QUESTS,
       sectionType: C.jXE.QUEST_TILE_CTA,
       ctaObject: C.qAy.CTA_TO_ORBS_SHOP
@@ -207,7 +207,7 @@ function B(e) {
       analyticsSource: l.Z.QUEST_HOME_PAGE
     })
   }, []), L = null == (t = (0, m.WD)()) ? void 0 : t.getId(), {
-    launchInGameActivity: M
+    launchInGameActivity: k
   } = (0, b.zB)(n);
   return i.useMemo(() => {
     if ((0, g.HJ)(n) && r !== b.OH.COMPLETED && r !== b.OH.CLAIMED) {
@@ -240,12 +240,12 @@ function B(e) {
               questContent: o,
               sourceQuestContent: O,
               sourceQuestContentCTA: h.jZ.ACCEPT_QUEST
-            }) : y && n.config.features.includes(N.S7.START_QUEST_CTA) && M()
+            }) : y && n.config.features.includes(N.S7.START_QUEST_CTA) && k()
           }
         };
       case b.OH.ACCEPTED:
       case b.OH.IN_PROGRESS:
-        if (I && _) return {
+        if (I && f) return {
           text: P.intl.string(P.t.Cfye4u),
           tooltipText: null,
           onClick: () => (0, g.gI)({
@@ -277,7 +277,7 @@ function B(e) {
             text: e,
             tooltipText: P.intl.string(P.t.hsbwjo),
             onClick: () => {
-              n.config.features.includes(N.S7.START_QUEST_CTA) && M()
+              n.config.features.includes(N.S7.START_QUEST_CTA) && k()
             }
           }
         }
@@ -313,7 +313,7 @@ function B(e) {
           text: P.intl.string(P.t.bAGFz8)
         })
     }
-  }, [r, p, I, _, v, a, n, o, s, u, L, S, A, w, y, M, O])
+  }, [r, p, I, f, v, a, n, o, s, u, L, S, A, w, y, k, O])
 }
 
 function V() {
@@ -354,14 +354,14 @@ function F(e) {
     }
   }
   let d = (null == (t = r.userStatus) ? void 0 : t.claimedAt) != null,
-    f = !u && null != r.userStatus && (0, g.zE)(r.userStatus, O.jn.QUEST_BAR);
+    _ = !u && null != r.userStatus && (0, g.zE)(r.userStatus, O.jn.QUEST_BAR);
   return d ? {
     isQuestBarVisible: !1,
     reason: "quest_claimed"
   } : a ? {
     isQuestBarVisible: !1,
     reason: "quest_expired"
-  } : i ? f ? {
+  } : i ? _ ? {
     isQuestBarVisible: !1,
     reason: "quest_dismissed"
   } : {

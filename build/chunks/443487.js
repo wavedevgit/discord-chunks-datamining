@@ -17,8 +17,8 @@ var i = n(120356),
   c = n(884902),
   u = n(271383),
   d = n(485386),
-  f = n(594174),
-  _ = n(5192),
+  _ = n(594174),
+  f = n(5192),
   p = n(192918),
   h = n(388032),
   m = n(522314);
@@ -89,7 +89,7 @@ function O(e) {
     channelId: i,
     entry: a,
     maxAvatars: l = 3
-  } = e, g = a.author_id, E = (0, o.e7)([f.default], () => f.default.getUser(g)), {
+  } = e, g = a.author_id, E = (0, o.e7)([_.default], () => _.default.getUser(g)), {
     displayParticipants: b,
     participant1: O,
     participant2: v,
@@ -100,7 +100,7 @@ function O(e) {
   }, [n, T]), A = (0, c.X7)(n, g, null != (t = null == T ? void 0 : T.colorStrings) ? t : null);
   if (null == E) return null;
   let N = null == T ? void 0 : T.colorString,
-    C = _.ZP.getName(n, i, E);
+    C = f.ZP.getName(n, i, E);
   return (0, r.jsxs)("div", {
     className: m.userSection,
     children: [(0, r.jsx)(y, {
@@ -125,8 +125,8 @@ function O(e) {
       })
     }) : null, (0, r.jsx)(s.nn4, {
       children: h.intl.format(h.t.rH95Gh, {
-        user0: _.ZP.getName(n, i, O),
-        user1: _.ZP.getName(n, i, v),
+        user0: f.ZP.getName(n, i, O),
+        user1: f.ZP.getName(n, i, v),
         countOthers: I,
         name0Hook: (e, t) => (0, r.jsx)("span", {
           children: e

@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  A4: () => _,
+  A4: () => f,
   E9: () => d,
   Os: () => c,
   jx: () => p,
   nv: () => l,
-  sz: () => f,
+  sz: () => _,
   te: () => s,
   xh: () => u,
   zG: () => h
@@ -70,14 +70,14 @@ function d(e) {
   })
 }
 
-function f(e) {
+function _(e) {
   r.Z.dispatch({
     type: "LAYOUT_DELETE_ALL_WIDGETS",
     layoutId: e
   })
 }
 
-function _(e) {
+function f(e) {
   p([e])
 }
 

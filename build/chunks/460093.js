@@ -33,10 +33,10 @@ function d(e) {
     rpc_close_code: t.code,
     rpc_message: t.message,
     application_id: r
-  }), f(t)))
+  }), _(t)))
 }
 
-function f(e) {
+function _(e) {
   let {
     code: t,
     message: n
@@ -45,7 +45,7 @@ function f(e) {
   }), ": ").concat(n);
   (0, r.showToast)((0, r.createToast)(i, r.ToastType.FAILURE))
 }
-class _ extends i.Z {
+class f extends i.Z {
   constructor(...e) {
     super(...e), u(this, "actions", {
       RPC_APP_DISCONNECTED: e => {
@@ -54,5 +54,5 @@ class _ extends i.Z {
     })
   }
 }
-u(_, "displayName", "FramesManager");
-let p = new _
+u(f, "displayName", "FramesManager");
+let p = new f

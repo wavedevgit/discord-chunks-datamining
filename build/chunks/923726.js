@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  $F: () => _,
+  $F: () => f,
   Bt: () => a,
   Gp: () => p,
   hQ: () => u,
@@ -9,7 +9,7 @@ n.d(t, {
   s1: () => s,
   ss: () => d,
   sy: () => c,
-  yi: () => f
+  yi: () => _
 }), n(223892);
 var r = n(644542),
   i = n(981631);
@@ -81,7 +81,7 @@ function d(e) {
   return t
 }
 
-function f(e) {
+function _(e) {
   let {
     showCreatorPortalLink: t
   } = r.jJ.useExperiment({
@@ -93,7 +93,7 @@ function f(e) {
   return t
 }
 
-function _() {
+function f() {
   let {
     enabled: e
   } = r.$i.getCurrentConfig({

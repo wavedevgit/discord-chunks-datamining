@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -51,18 +51,18 @@ let d = {
     height: "100%",
     display: "flex"
   },
-  f = {
+  _ = {
     width: "100%",
     height: "100%",
     flex: 1
   };
 
-function _(e) {
+function f(e) {
   return i.forwardRef(function(t, n) {
     let [s, c] = i.useState({
       width: 0,
       height: 0
-    }), _ = (0, o.Z)(e => {
+    }), f = (0, o.Z)(e => {
       if (null != e) {
         let {
           width: t,
@@ -74,12 +74,12 @@ function _(e) {
         })
       }
     }), p = (0, o.Z)(e => {
-      _(e.contentRect)
+      f(e.contentRect)
     }), h = (0, a.y)(p);
     return i.useImperativeHandle(n, () => ({
       triggerResize: () => {
         var e;
-        _(null == (e = h.current) ? void 0 : e.getBoundingClientRect())
+        f(null == (e = h.current) ? void 0 : e.getBoundingClientRect())
       }
     })), (0, r.jsx)("div", {
       ref: h,
@@ -87,7 +87,7 @@ function _(e) {
       children: (0, r.jsx)(e, u(l({}, t), {
         width: s.width,
         height: s.height,
-        style: f
+        style: _
       }))
     })
   })

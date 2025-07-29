@@ -9,8 +9,8 @@ var r = n(636881),
   c = n(880181),
   u = n(655152),
   d = n(77826),
-  f = n(554148),
-  _ = n(382698),
+  _ = n(554148),
+  f = n(382698),
   p = n(497464),
   h = n(857168),
   m = n(3831),
@@ -37,29 +37,29 @@ o("replace", function(e, t, n) {
   return [function(e, n) {
     var r = p(this),
       a = u(e) ? void 0 : m(e, b);
-    return a ? i(a, e, r, n) : i(t, _(r), e, n)
+    return a ? i(a, e, r, n) : i(t, f(r), e, n)
   }, function(e, i) {
     var o = l(this),
-      s = _(e);
+      s = f(e);
     if ("string" == typeof i && -1 === T(i, a) && -1 === T(i, "$<")) {
       var u = n(t, o, s, i);
       if (u.done) return u.value
     }
     var p = c(i);
-    p || (i = _(i));
+    p || (i = f(i));
     var m = o.global;
     m && (P = o.unicode, o.lastIndex = 0);
     for (var b = []; null !== (D = E(o, s)) && (I(b, D), m);) {
       ;
-      "" === _(D[0]) && (o.lastIndex = h(s, f(o.lastIndex), P))
+      "" === f(D[0]) && (o.lastIndex = h(s, _(o.lastIndex), P))
     }
     for (var N = "", C = 0, R = 0; R < b.length; R++) {
-      for (var P, w, D = b[R], L = _(D[0]), x = y(O(d(D.index), s.length), 0), k = [], M = 1; M < D.length; M++) I(k, A(D[M]));
+      for (var P, w, D = b[R], L = f(D[0]), x = y(O(d(D.index), s.length), 0), M = [], k = 1; k < D.length; k++) I(M, A(D[k]));
       var j = D.groups;
       if (p) {
-        var U = v([L], k, x, s);
-        void 0 !== j && I(U, j), w = _(r(i, void 0, U))
-      } else w = g(L, s, x, k, j, i);
+        var U = v([L], M, x, s);
+        void 0 !== j && I(U, j), w = f(r(i, void 0, U))
+      } else w = g(L, s, x, M, j, i);
       x >= C && (N += S(s, C, x) + w, C = x + L.length)
     }
     return N + S(s, C)

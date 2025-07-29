@@ -17,7 +17,7 @@ function s(e) {
     return null == (n = o.Z.getChannel(t)) || null == (e = n.wallpaper) ? void 0 : e.wallpaperId
   }), d = r.useCallback(() => {
     s && (null == n || n(c.current), l(!1))
-  }, [n, s]), f = r.useCallback(async (e, t, n) => {
+  }, [n, s]), _ = r.useCallback(async (e, t, n) => {
     l(!0), c.current = t;
     try {
       (await a.Z.setWallpaper(e, t)).ok || null == n || n();
@@ -31,6 +31,6 @@ function s(e) {
     (null != u ? u : null) === c.current && d()
   }, [u, d]), {
     isUpdating: s,
-    updateChatWallpaper: f
+    updateChatWallpaper: _
   }
 }

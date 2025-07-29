@@ -45,13 +45,13 @@ function d(e, t) {
   return n
 }
 
-function f(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function _(e, t) {
+function f(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -80,12 +80,12 @@ function m(e) {
     userId: t,
     variant: n = "text-xs/normal",
     color: a = "text-default"
-  } = e, s = _(e, ["userId", "variant", "color"]);
+  } = e, s = f(e, ["userId", "variant", "color"]);
   let l = (0, o.e)({
     userId: t,
     renderApplicationName: h
   });
-  return (0, r.jsx)(i.Text, f(u({
+  return (0, r.jsx)(i.Text, _(u({
     variant: n,
     color: a
   }, s), {

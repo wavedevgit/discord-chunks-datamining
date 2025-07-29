@@ -14,8 +14,8 @@ var i, a = n(73800),
   c = n(592125),
   u = n(430824),
   d = n(131951),
-  f = n(496675),
-  _ = n(944486),
+  _ = n(496675),
+  f = n(944486),
   p = n(102172),
   h = n(74299),
   m = n(692417),
@@ -70,19 +70,19 @@ function D() {
 }
 
 function L() {
-  let e = c.Z.getChannel(_.Z.getVoiceChannelId());
-  return I = null != e && (0, h.Z)(d.Z) && (0, p.JL)(e, u.Z, f.Z, !1), P(), !1
+  let e = c.Z.getChannel(f.Z.getVoiceChannelId());
+  return I = null != e && (0, h.Z)(d.Z) && (0, p.JL)(e, u.Z, _.Z, !1), P(), !1
 }
 
 function x() {
   return null != r ? (0, g.Z)(r) : null
 }
 
-function k() {
+function M() {
   return null != r ? (0, m.Z)(r) : null
 }
 
-function M() {
+function k() {
   var e;
   return {
     sourceId: "prepicked:0",
@@ -92,7 +92,7 @@ function M() {
 }
 class j extends(i = o.ZP.Store) {
   initialize() {
-    this.syncWith([d.Z, _.Z, c.Z, u.Z, f.Z], L), L()
+    this.syncWith([d.Z, f.Z, c.Z, u.Z, _.Z], L), L()
   }
   supported() {
     return C()
@@ -113,10 +113,10 @@ class j extends(i = o.ZP.Store) {
     return x()
   }
   getLastPickedContentPID() {
-    return k()
+    return M()
   }
   getStreamStartOptions() {
-    return M()
+    return k()
   }
 }
 
@@ -128,8 +128,8 @@ function U(e) {
   if (N = {
       lastPickerAction: 1
     }, r = n, 0 === T && !t) {
-    let e = c.Z.getChannel(_.Z.getVoiceChannelId());
-    null != e && (0, h.Z)(d.Z) && (0, p.JL)(e, u.Z, f.Z, !1) && (0, l.WH)(e.getGuildId(), e.id, M())
+    let e = c.Z.getChannel(f.Z.getVoiceChannelId());
+    null != e && (0, h.Z)(d.Z) && (0, p.JL)(e, u.Z, _.Z, !1) && (0, l.WH)(e.getGuildId(), e.id, k())
   }
 }
 

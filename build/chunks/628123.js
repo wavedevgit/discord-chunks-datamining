@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(286379),
   u = n(903772),
   d = n(442837),
-  f = n(755721),
-  _ = n(386506),
+  _ = n(755721),
+  f = n(386506),
   p = n(304761),
   h = n(865427),
   m = n(406128),
@@ -43,13 +43,13 @@ function A() {
     })) return null;
   let n = async () => {
     try {
-      t(!0), await (0, _.bF)(), window.location.reload(!0)
+      t(!0), await (0, f.bF)(), window.location.reload(!0)
     } catch (e) {
       t(!1)
     }
   };
-  return (0, r.jsx)(f.zx, {
-    size: f.Ph.LARGE,
+  return (0, r.jsx)(_.zx, {
+    size: _.Ph.LARGE,
     onClick: n,
     submitting: e,
     className: T.clearOverrideButton,
@@ -116,8 +116,8 @@ class C extends i.PureComponent {
         }),
         n = (0, r.jsxs)("div", {
           className: T.buttons,
-          children: [(0, r.jsx)(f.zx, {
-            size: f.Ph.LARGE,
+          children: [(0, r.jsx)(_.zx, {
+            size: _.Ph.LARGE,
             onClick: this._handleSubmitReport,
             children: I.intl.string(I.t["+hivLS"])
           }), (0, r.jsx)(A, {})]

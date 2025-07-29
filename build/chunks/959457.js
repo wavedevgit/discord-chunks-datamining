@@ -11,8 +11,8 @@ var i, a = n(512722),
   c = n(442837),
   u = n(46973),
   d = n(570140),
-  f = n(594190),
-  _ = n(444852),
+  _ = n(594190),
+  f = n(444852),
   p = n(569545),
   h = n(687516),
   m = n(139656),
@@ -42,7 +42,7 @@ let S = {},
   D = {};
 
 function L(e, t, n, i) {
-  return o()(null != r, "Creating RTCConnection without session."), new _.Z({
+  return o()(null != r, "Creating RTCConnection without session."), new f.Z({
     sessionId: r,
     streamKey: e,
     serverId: t,
@@ -60,11 +60,11 @@ function x() {
   })
 }
 
-function k(e) {
+function M(e) {
   r = e.sessionId, x()
 }
 
-function M() {
+function k() {
   r = null, x()
 }
 
@@ -91,7 +91,7 @@ function j(e) {
       } = e;
       t.setActionContext(i), t.setNativePickerStyleUsed(s), n && t.trackStart()
     }), C[u] = o, N[u] = a, null != a) {
-    let e = f.ZP.getGameForPID(a);
+    let e = _.ZP.getGameForPID(a);
     null != e && (A[u] = {
       name: e.name,
       id: e.id,
@@ -130,7 +130,7 @@ function G(e) {
     null == N[t] && (A[t] = null);
     let e = (0, p.my)(t);
     null == A[t] && null == C[t] && (A[t] = (0, h.L2)(e, y.Z));
-    let s = new _.A({
+    let s = new f.A({
       streamRegion: i,
       streamApplication: A[t],
       streamSourceType: X(C[t]),
@@ -322,8 +322,8 @@ class Q extends(i = c.ZP.Store) {
 }
 T(Q, "displayName", "StreamRTCConnectionStore");
 let J = new Q(d.Z, !b.Z.isSupported() || __OVERLAY__ ? {} : {
-  CONNECTION_OPEN: k,
-  CONNECTION_CLOSED: M,
+  CONNECTION_OPEN: M,
+  CONNECTION_CLOSED: k,
   RTC_CONNECTION_STATE: Y,
   RTC_CONNECTION_PING: Y,
   RTC_CONNECTION_LOSS_RATE: Y,

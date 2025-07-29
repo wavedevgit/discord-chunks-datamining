@@ -13,8 +13,8 @@ var i = n(120356),
   c = n(70097),
   u = n(104494),
   d = n(639119),
-  f = n(767714),
-  _ = n(165583),
+  _ = n(767714),
+  f = n(165583),
   p = n(981631),
   h = n(474936),
   m = n(388032),
@@ -54,7 +54,7 @@ function y(e) {
           muted: !0,
           controls: !0
         })
-      }), T ? (0, r.jsx)(_.ZP, {
+      }), T ? (0, r.jsx)(f.ZP, {
         type: h.cd.BURST_REACTION_QUICK_ACTION_UPSELL,
         subscriptionTier: null != (n = null == v || null == (t = v.subscription_trial) ? void 0 : t.sku_id) ? n : h.Si.TIER_2,
         headingText: m.intl.string(m.t.Wfl5zs),
@@ -82,7 +82,7 @@ function y(e) {
           children: O
         }), (0, r.jsx)("div", {
           className: g.ctaActionWrapper,
-          children: (0, r.jsx)(f.Z, {
+          children: (0, r.jsx)(_.Z, {
             subscriptionTier: h.Si.TIER_2,
             textOptions: {
               textOverride: m.intl.string(m.t.sEAnVF)

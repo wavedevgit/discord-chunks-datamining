@@ -13,15 +13,15 @@ var r = n(255367),
   c = n(745510),
   u = n(185091);
 let d = 200,
-  f = 20,
-  _ = 200;
+  _ = 20,
+  f = 200;
 
 function p(e) {
   let {
     children: t,
     confettiTriggerRef: n,
     setConfettiCount: c,
-    setShouldFireConfetti: f,
+    setShouldFireConfetti: _,
     tooltipProps: p
   } = e, [h, m] = i.useState(0), g = i.useRef(-1), E = i.useRef(!0), b = (0, o.e7)([l.Z], () => l.Z.useReducedMotion), {
     scaleFactor: y
@@ -47,12 +47,12 @@ function p(e) {
     children: (0, r.jsx)(s.P3F, {
       className: u.confettiTrigger,
       onMouseDown: () => {
-        m(1), f(!0), c(e => Math.min(e + 2, _)), window.clearTimeout(g.current), g.current = window.setTimeout(() => {
+        m(1), _(!0), c(e => Math.min(e + 2, f)), window.clearTimeout(g.current), g.current = window.setTimeout(() => {
           E.current && c(0)
         }, d)
       },
       onMouseUp: () => {
-        m(0), f(!1)
+        m(0), _(!1)
       },
       onMouseEnter: () => {
         var e;
@@ -93,6 +93,6 @@ let h = function(e) {
           y: 180
         }
       }
-    }, Math.max(t, f))
+    }, Math.max(t, _))
   }, [t, n, s, r, u]), null
 }

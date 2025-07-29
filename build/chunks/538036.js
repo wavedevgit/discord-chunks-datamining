@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => _
 }), n(539854);
 var r = n(981631);
 let i = [],
@@ -42,7 +42,7 @@ function u(e) {
 function d(e) {
   let t = i.indexOf(e); - 1 !== t && (i.splice(t, 1), l())
 }
-let f = {
+let _ = {
   addOnlineCallback(e) {
     window.addEventListener("online", e)
   },

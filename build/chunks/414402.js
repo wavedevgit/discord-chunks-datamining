@@ -1,41 +1,43 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => d
+  Z: () => _
 });
 var r = n(255367);
 n(73800);
-var i = n(620662),
-  a = n(710845),
-  o = n(652853),
-  s = n(475413),
-  l = n(228168),
-  c = n(981631),
-  u = n(388032);
+var i = n(755721),
+  a = n(620662),
+  o = n(710845),
+  s = n(652853),
+  l = n(475413),
+  c = n(228168),
+  u = n(981631),
+  d = n(388032);
 
-function d(e) {
+function _(e) {
   let {
     user: t,
     activity: n,
-    onAction: d
+    onAction: _
   } = e, {
     themeType: f
-  } = (0, o.z)();
-  if (!(0, i.Z)(n, c.xjy.INSTANCE)) return null;
-  let _ = e => {
-    e.stopPropagation(), null == d || d({
+  } = (0, s.z)();
+  if (!(0, a.Z)(n, u.xjy.INSTANCE)) return null;
+  let p = e => {
+    e.stopPropagation(), null == _ || _({
       action: "PRESS_NOTIFY_BUTTON"
-    }), new a.Z("UserActivityActions").log("notify", t.id, n)
+    }), new o.Z("UserActivityActions").log("notify", t.id, n)
   };
-  return f === l.lY.MODAL_V2 ? (0, r.jsx)(s.tG, {
-    text: u.intl.string(u.t.vwl1PD),
-    size: "tiny",
+  return f === c.lY.MODAL_V2 ? (0, r.jsx)(l.tG, {
+    text: d.intl.string(d.t.vwl1PD),
+    size: i.Ph.TINY,
     themeColor: "secondary",
-    onClick: _
-  }) : (0, r.jsx)(s.tG, {
-    text: u.intl.string(u.t.vwl1PD),
+    onClick: p
+  }) : (0, r.jsx)(l.tG, {
+    text: d.intl.string(d.t.vwl1PD),
+    size: i.Ph.SMALL,
     themeColor: "secondary",
     fullWidth: !0,
-    onClick: _
+    onClick: p
   })
 }

@@ -21,7 +21,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,7 +34,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function f(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -46,7 +46,7 @@ function _(e, t) {
 }
 
 function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -57,7 +57,7 @@ function h(e) {
     label: n,
     control: a,
     disabled: d,
-    isFocused: _,
+    isFocused: f,
     showDefaultFocus: h = !1,
     menuItemProps: m,
     onClose: g
@@ -66,8 +66,8 @@ function h(e) {
   } = i.useContext(s.p), b = i.useRef(null), y = i.useRef(null);
   i.useLayoutEffect(() => {
     var e, t, n;
-    _ ? ((0, l.F)(b), null == (e = y.current) || e.focus()) : null == (n = y.current) || null == (t = n.blur) || t.call(n)
-  }, [_]);
+    f ? ((0, l.F)(b), null == (e = y.current) || e.focus()) : null == (n = y.current) || null == (t = n.blur) || t.call(n)
+  }, [f]);
   let O = i.useCallback(() => {
       var e, t;
       (null == (t = y.current) || null == (e = t.activate) ? void 0 : e.call(t)) && g()
@@ -75,18 +75,18 @@ function h(e) {
     v = a({
       onClose: g,
       disabled: d,
-      isFocused: _,
+      isFocused: f,
       onInteraction: i.useCallback(e => {
         null == E || E({
           type: null != e ? e : s.U.DEFAULT
         })
       }, [E])
     }, y);
-  return (0, r.jsxs)("div", p(f({
+  return (0, r.jsxs)("div", p(_({
     onClick: O,
     className: o()(u.item, c._[t], {
       [u.disabled]: d,
-      [u.focused]: h && _,
+      [u.focused]: h && f,
       [u.hideInteraction]: !h
     }),
     "aria-disabled": d

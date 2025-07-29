@@ -1,14 +1,14 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Ce: () => _,
+  Ce: () => f,
   Ji: () => d,
   _G: () => E,
   _I: () => p,
   _S: () => m,
   fD: () => h,
   mG: () => y,
-  pU: () => f,
+  pU: () => _,
   r4: () => S
 }), n(35282), n(853839), n(570086), n(479048), n(413496), n(433524), n(388685);
 var r = n(973361),
@@ -22,12 +22,12 @@ let c = void 0,
   u = "/__development/build_overrides",
   d = (0, o.isAndroid)() ? c.Version.split(" - ")[0] : (0, o.isIOS)() ? c.Version : void 0;
 
-function f(e) {
+function _(e) {
   return "".concat(location.protocol, "//").concat(location.host).concat(e)
 }
 
-function _() {
-  let e = s.Z.safeParseWithQuery(f(u));
+function f() {
+  let e = s.Z.safeParseWithQuery(_(u));
   return null == e ? Promise.resolve(null) : (e.search = null, d && (e.query.version = d), a.tn.get({
     url: i.format(e),
     oldFormErrors: !0,

@@ -15,19 +15,19 @@ e.exports = function(e) {
       relevance: 0,
       begin: n.concat(o, n.optional(c), n.optional(u))
     },
-    f = /[a-zA-Z$][a-zA-Z0-9$]*/,
-    _ = new Set(t),
+    _ = /[a-zA-Z$][a-zA-Z0-9$]*/,
+    f = new Set(t),
     p = {
       variants: [{
         className: "builtin-symbol",
-        begin: f,
+        begin: _,
         "on:begin": (e, t) => {
-          _.has(e[0]) || t.ignoreMatch()
+          f.has(e[0]) || t.ignoreMatch()
         }
       }, {
         className: "symbol",
         relevance: 0,
-        begin: f
+        begin: _
       }]
     },
     h = {
@@ -57,7 +57,7 @@ e.exports = function(e) {
     y = {
       className: "message-name",
       relevance: 0,
-      begin: n.concat("::", f)
+      begin: n.concat("::", _)
     };
   return {
     name: "Mathematica",

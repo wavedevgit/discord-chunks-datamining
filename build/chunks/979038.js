@@ -13,8 +13,8 @@ var i = n(620662),
   c = n(206074),
   u = n(750154),
   d = n(374129),
-  f = n(639351),
-  _ = n(103479),
+  _ = n(639351),
+  f = n(103479),
   p = n(238607),
   h = n(414402),
   m = n(934393),
@@ -35,7 +35,7 @@ function I(e) {
   } = e, A = (0, c.q)(S, "UserProfileActivityButtons");
   if ((0, s.Z)(n)) return (0, r.jsx)(m.Z, {
     platformType: O.ABu.XBOX,
-    icon: () => (0, r.jsx)(f.Z, {}),
+    icon: () => (0, r.jsx)(_.Z, {}),
     onAction: I
   });
   if ((0, o.Z)(n)) return (0, r.jsx)(m.Z, {
@@ -69,7 +69,7 @@ function I(e) {
     application: S,
     onAction: I,
     onClose: T
-  }) : (null == n ? void 0 : n.buttons) != null && (null == n ? void 0 : n.buttons.length) >= 1 ? (0, r.jsx)(_.Z, {
+  }) : (null == n ? void 0 : n.buttons) != null && (null == n ? void 0 : n.buttons.length) >= 1 ? (0, r.jsx)(f.Z, {
     user: t,
     activity: n,
     onAction: I

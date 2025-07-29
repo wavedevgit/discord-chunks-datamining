@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => k
+  Z: () => M
 });
 var r, i = n(442837),
   a = n(780384),
@@ -11,8 +11,8 @@ var r, i = n(442837),
   c = n(765287),
   u = n(49214),
   d = n(238514),
-  f = n(740492),
-  _ = n(581883),
+  _ = n(740492),
+  f = n(581883),
   p = n(874893),
   h = n(981631);
 
@@ -70,7 +70,7 @@ function A() {
 }
 class N extends(r = i.ZP.PersistedStore) {
   initialize(e) {
-    (null == e ? void 0 : e.theme) != null && (y = 1, I = e.theme, (0, u.Z)(I), null != e.preferences && (O = e.preferences), (0, a.wj)(I) && (O[p.zd.DARK] = I)), this.waitFor(f.ZP, d.Z, _.Z, s.Z)
+    (null == e ? void 0 : e.theme) != null && (y = 1, I = e.theme, (0, u.Z)(I), null != e.preferences && (O = e.preferences), (0, a.wj)(I) && (O[p.zd.DARK] = I)), this.waitFor(_.ZP, d.Z, f.Z, s.Z)
   }
   getState() {
     return {
@@ -128,7 +128,7 @@ m(N, "displayName", "ThemeStore"), m(N, "persistKey", "ThemeStore"), m(N, "migra
     theme: t
   })
 }, e => e]);
-let k = new N(o.Z, {
+let M = new N(o.Z, {
   CACHE_LOADED: A,
   CONNECTION_OPEN: C,
   LOGOUT: P,

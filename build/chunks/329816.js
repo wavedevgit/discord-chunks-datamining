@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(442837),
   u = n(335854),
   d = n(481060),
-  f = n(721037),
-  _ = n(490173),
+  _ = n(721037),
+  f = n(490173),
   p = n(114250),
   h = n(735246),
   m = n(315263),
@@ -35,8 +35,8 @@ var r = n(255367),
   D = n(84615),
   L = n(429142),
   x = n(813744),
-  k = n(746106),
-  M = n(526665),
+  M = n(746106),
+  k = n(526665),
   j = n(314897),
   U = n(819640),
   G = n(358085),
@@ -71,7 +71,7 @@ let X = (0, B.Un)({
   }),
   J = i.memo(function() {
     let e = (0, c.e7)([U.Z], () => U.Z.hasLayers()),
-      t = (0, M.wy)("AppSkeleton"),
+      t = (0, k.wy)("AppSkeleton"),
       n = (0, c.e7)([U.Z], () => U.Z.getLayers().includes(z.S9g.USER_SETTINGS)),
       i = (0, d.s9z)(d.$sL);
     if (!n || !t) return (0, r.jsx)(K.Dg, {
@@ -83,15 +83,15 @@ let X = (0, B.Un)({
     let {
       children: t,
       skipsSettingDefaultPageTitle: n
-    } = e, a = (0, G.getPlatform)(), u = l.tq || l.Em, m = (0, c.e7)([E.Z], () => E.Z.useForcedColors ? "yes" : "no"), M = i.useRef(document.body), j = "".concat(m);
-    return (0, C.G)(), (0, P.G)("AppSkeleton"), (0, r.jsx)(k.w, {
+    } = e, a = (0, G.getPlatform)(), u = l.tq || l.Em, m = (0, c.e7)([E.Z], () => E.Z.useForcedColors ? "yes" : "no"), k = i.useRef(document.body), j = "".concat(m);
+    return (0, C.G)(), (0, P.G)("AppSkeleton"), (0, r.jsx)(M.w, {
       children: (0, r.jsxs)(b.Z, {
         children: [(0, r.jsx)(F.Z, {
           skipsSettingDefaultPageTitle: n
         }), (0, r.jsx)(h.T, {
           children: (0, r.jsx)(H.Z, {
             children: (0, r.jsxs)(d.JcV, {
-              containerRef: M,
+              containerRef: k,
               children: [(0, r.jsx)(W.Co, {}), (0, r.jsx)(Y.ZP, {}), (0, r.jsx)(s.OU, {}), (0, r.jsx)(g.Wu, {
                 appContext: z.IlC.APP,
                 renderWindow: window,
@@ -109,7 +109,7 @@ let X = (0, B.Un)({
                               children: [(0, r.jsx)("div", {
                                 className: o()(u ? q.mobileApp : q.app),
                                 children: t
-                              }), (0, r.jsx)(f.Z, {}), (0, r.jsx)(I.Z, {}), (0, r.jsx)(_.Z, {}), (0, r.jsx)(d.nKe, {}), (0, r.jsx)(p.Z, {}), (0, r.jsx)(D.Ox, {}), (0, r.jsx)(w.Un, {}), (0, r.jsx)(L.ot, {}), (0, r.jsx)(d.Ixi, {}), (0, r.jsx)(v.Z, {}), (0, r.jsx)(x.Z, {}), (0, r.jsx)(X, {}), (0, r.jsx)(Q, {})]
+                              }), (0, r.jsx)(_.Z, {}), (0, r.jsx)(I.Z, {}), (0, r.jsx)(f.Z, {}), (0, r.jsx)(d.nKe, {}), (0, r.jsx)(p.Z, {}), (0, r.jsx)(D.Ox, {}), (0, r.jsx)(w.Un, {}), (0, r.jsx)(L.ot, {}), (0, r.jsx)(d.Ixi, {}), (0, r.jsx)(v.Z, {}), (0, r.jsx)(x.Z, {}), (0, r.jsx)(X, {}), (0, r.jsx)(Q, {})]
                             })
                           })
                         })

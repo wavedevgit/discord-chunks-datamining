@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  L$: () => _,
+  L$: () => f,
   Sr: () => p,
-  WQ: () => f,
+  WQ: () => _,
   cT: () => d,
   d$: () => c,
   hL: () => u,
@@ -57,7 +57,7 @@ function d(e) {
     })
   })
 }
-async function f(e, t) {
+async function _(e, t) {
   let n = await i.tn.patch({
     url: s.ANM.MFA_WEBAUTHN_CREDENTIAL(e),
     body: {
@@ -70,7 +70,7 @@ async function f(e, t) {
     credential: n.body
   })
 }
-async function _() {
+async function f() {
   let {
     body: {
       ticket: e,

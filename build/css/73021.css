@@ -1,6 +1,6 @@
 /**
   Module ID: 73021
-  Original File Name: 8cad4dde89bc972b
+  Original File Name: 8ec5d447eb85d558
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -15294,7 +15294,7 @@ div.nagbar_d74ef8 {
     gap: 8px;
     grid-template-columns: 1fr;
     margin: 16px 0;
-    padding: 16px
+    padding: var(--space-16) calc(var(--space-16) - 1px)
 }
 
 .sectionDivider__6fdb8 {
@@ -19890,4 +19890,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=8cad4dde89bc972b.css.map*/
+/*# sourceMappingURL=8ec5d447eb85d558.css.map*/

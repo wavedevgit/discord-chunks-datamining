@@ -20,18 +20,18 @@ function l(e, t, n) {
 let c = 75e3,
   u = 10,
   d = 5e3,
-  f = 2,
-  _ = 2e3,
+  _ = 2,
+  f = 2e3,
   p = 1e4;
 
 function h(e) {
   var t;
-  return (null != (t = a.Z.getMemberCount(e)) ? t : 0) >= c ? u : f
+  return (null != (t = a.Z.getMemberCount(e)) ? t : 0) >= c ? u : _
 }
 
 function m(e) {
   var t;
-  return (null != (t = a.Z.getMemberCount(e)) ? t : 0) >= c ? d : _
+  return (null != (t = a.Z.getMemberCount(e)) ? t : 0) >= c ? d : f
 }
 let g = {},
   E = {},

@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
   C0: () => u,
-  W3: () => _,
-  X8: () => f,
+  W3: () => f,
+  X8: () => _,
   bG: () => m,
   dG: () => p,
   pD: () => h,
@@ -43,7 +43,7 @@ async function d() {
     appliedGuildBoosts: t
   }), t
 }
-async function f() {
+async function _() {
   i.Z.dispatch({
     type: "GUILD_BOOST_SLOTS_FETCH"
   });
@@ -57,7 +57,7 @@ async function f() {
     guildBoostSlots: e
   }), e
 }
-async function _(e, t) {
+async function f(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
   i.Z.dispatch({
     type: "GUILD_APPLY_BOOST_START"
@@ -76,7 +76,7 @@ async function _(e, t) {
     return i.Z.dispatch({
       type: "GUILD_APPLY_BOOST_SUCCESS",
       appliedGuildBoost: s
-    }), f(), s
+    }), _(), s
   } catch (t) {
     let e = new a.zN(t);
     throw i.Z.dispatch({
@@ -94,7 +94,7 @@ async function p(e, t) {
       url: c.ANM.APPLIED_GUILD_BOOST(e, t),
       oldFormErrors: !0,
       rejectWithError: !1
-    }), f()
+    }), _()
   } catch (t) {
     let e = new a.zN(t);
     throw i.Z.dispatch({

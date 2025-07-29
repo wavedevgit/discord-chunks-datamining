@@ -55,7 +55,7 @@ function c(e, n) {
     seen: [],
     stylize: d
   };
-  return arguments.length >= 3 && (r.depth = arguments[2]), arguments.length >= 4 && (r.colors = arguments[3]), y(n) ? r.showHidden = n : n && t._extend(r, n), T(r.showHidden) && (r.showHidden = !1), T(r.depth) && (r.depth = 2), T(r.colors) && (r.colors = !1), T(r.customInspect) && (r.customInspect = !0), r.colors && (r.stylize = u), _(r, e, r.depth)
+  return arguments.length >= 3 && (r.depth = arguments[2]), arguments.length >= 4 && (r.colors = arguments[3]), y(n) ? r.showHidden = n : n && t._extend(r, n), T(r.showHidden) && (r.showHidden = !1), T(r.depth) && (r.depth = 2), T(r.colors) && (r.colors = !1), T(r.customInspect) && (r.customInspect = !0), r.colors && (r.stylize = u), f(r, e, r.depth)
 }
 
 function u(e, t) {
@@ -67,22 +67,22 @@ function d(e, t) {
   return e
 }
 
-function f(e) {
+function _(e) {
   var t = {};
   return e.forEach(function(e, n) {
     t[e] = !0
   }), t
 }
 
-function _(e, n, r) {
+function f(e, n, r) {
   if (e.customInspect && n && R(n.inspect) && n.inspect !== t.inspect && !(n.constructor && n.constructor.prototype === n)) {
     var i, a = n.inspect(r, e);
-    return I(a) || (a = _(e, a, r)), a
+    return I(a) || (a = f(e, a, r)), a
   }
   var o = p(e, n);
   if (o) return o;
   var s = Object.keys(n),
-    l = f(s);
+    l = _(s);
   if (e.showHidden && (s = Object.getOwnPropertyNames(n)), C(n) && (s.indexOf("message") >= 0 || s.indexOf("description") >= 0)) return h(n);
   if (0 === s.length) {
     if (R(n)) {
@@ -129,7 +129,7 @@ function g(e, t, n, r, i, a) {
   var o, s, l;
   if ((l = Object.getOwnPropertyDescriptor(t, i) || {
       value: t[i]
-    }).get ? s = l.set ? e.stylize("[Getter/Setter]", "special") : e.stylize("[Getter]", "special") : l.set && (s = e.stylize("[Setter]", "special")), x(r, i) || (o = "[" + i + "]"), !s && (0 > e.seen.indexOf(l.value) ? (s = O(n) ? _(e, l.value, null) : _(e, l.value, n - 1)).indexOf("\n") > -1 && (s = a ? s.split("\n").map(function(e) {
+    }).get ? s = l.set ? e.stylize("[Getter/Setter]", "special") : e.stylize("[Getter]", "special") : l.set && (s = e.stylize("[Setter]", "special")), x(r, i) || (o = "[" + i + "]"), !s && (0 > e.seen.indexOf(l.value) ? (s = O(n) ? f(e, l.value, null) : f(e, l.value, n - 1)).indexOf("\n") > -1 && (s = a ? s.split("\n").map(function(e) {
       return "  " + e
     }).join("\n").slice(2) : "\n" + s.split("\n").map(function(e) {
       return "   " + e
@@ -256,9 +256,9 @@ t.log = function() {
   for (var n = Object.keys(t), r = n.length; r--;) e[n[r]] = t[n[r]];
   return e
 };
-var k = "undefined" != typeof Symbol ? Symbol("util.promisify.custom") : void 0;
+var M = "undefined" != typeof Symbol ? Symbol("util.promisify.custom") : void 0;
 
-function M(e, t) {
+function k(e, t) {
   if (!e) {
     var n = Error("Promise was rejected with a falsy value");
     n.reason = e, e = n
@@ -267,10 +267,10 @@ function M(e, t) {
 }
 t.promisify = function(e) {
   if ("function" != typeof e) throw TypeError('The "original" argument must be of type Function');
-  if (k && e[k]) {
-    var t = e[k];
+  if (M && e[M]) {
+    var t = e[M];
     if ("function" != typeof t) throw TypeError('The "util.promisify.custom" argument must be of type Function');
-    return Object.defineProperty(t, k, {
+    return Object.defineProperty(t, M, {
       value: t,
       enumerable: !1,
       writable: !1,
@@ -292,13 +292,13 @@ t.promisify = function(e) {
     }
     return r
   }
-  return Object.setPrototypeOf(t, Object.getPrototypeOf(e)), k && Object.defineProperty(t, k, {
+  return Object.setPrototypeOf(t, Object.getPrototypeOf(e)), M && Object.defineProperty(t, M, {
     value: t,
     enumerable: !1,
     writable: !1,
     configurable: !0
   }), Object.defineProperties(t, i(e))
-}, t.promisify.custom = k, t.callbackify = function(e) {
+}, t.promisify.custom = M, t.callbackify = function(e) {
   if ("function" != typeof e) throw TypeError('The "original" argument must be of type Function');
 
   function t() {
@@ -312,7 +312,7 @@ t.promisify = function(e) {
     e.apply(this, t).then(function(e) {
       r.nextTick(o.bind(null, null, e))
     }, function(e) {
-      r.nextTick(M.bind(null, e, o))
+      r.nextTick(k.bind(null, e, o))
     })
   }
   return Object.setPrototypeOf(t, Object.getPrototypeOf(e)), Object.defineProperties(t, i(e)), t

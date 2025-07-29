@@ -15,8 +15,8 @@ var r = Object.assign || function(e) {
   c = n(522212),
   u = n(725031),
   d = n(649798),
-  f = n(1749),
-  _ = n(329008);
+  _ = n(1749),
+  f = n(329008);
 n(833157);
 var p = n(363545),
   h = n(674604),
@@ -42,7 +42,7 @@ var p = n(363545),
       start: function(e) {
         var r = t,
           i = n;
-        r.stopTracking(), n.toValue instanceof a ? r.track(new f(r, n.toValue, p, i, e)) : r.animate(new p(i), e)
+        r.stopTracking(), n.toValue instanceof a ? r.track(new _(r, n.toValue, p, i, e)) : r.animate(new p(i), e)
       },
       stop: function() {
         t.stopAnimation()
@@ -149,7 +149,7 @@ e.exports = {
       start: function(e) {
         var r = t,
           i = n;
-        r.stopTracking(), n.toValue instanceof a ? r.track(new f(r, n.toValue, m, i, e)) : r.animate(new m(i), e)
+        r.stopTracking(), n.toValue instanceof a ? r.track(new _(r, n.toValue, m, i, e)) : r.animate(new m(i), e)
       },
       stop: function() {
         t.stopAnimation()
@@ -174,7 +174,7 @@ e.exports = {
   parallel: y,
   stagger: v,
   event: I,
-  isAnimated: _,
+  isAnimated: f,
   createAnimatedComponent: n(15064),
   inject: {
     ApplyAnimatedValues: n(805194).inject,

@@ -1881,7 +1881,7 @@ let i = {
     hex: "#020203"
   },
   "opacity-1": {
-    hex: "#97979f03"
+    hex: "#97979f05"
   },
   "opacity-12": {
     hex: "#97979f1f"
@@ -1956,7 +1956,7 @@ let i = {
     hex: "#97979ff5"
   },
   "opacity-black-1": {
-    hex: "#00000003"
+    hex: "#00000005"
   },
   "opacity-black-12": {
     hex: "#0000001f"
@@ -2031,7 +2031,7 @@ let i = {
     hex: "#000000f5"
   },
   "opacity-blue-1": {
-    hex: "#0074e303"
+    hex: "#0074e305"
   },
   "opacity-blue-12": {
     hex: "#0074e31f"
@@ -2106,7 +2106,7 @@ let i = {
     hex: "#0074e3f5"
   },
   "opacity-blurple-1": {
-    hex: "#5865f203"
+    hex: "#5865f205"
   },
   "opacity-blurple-12": {
     hex: "#5865f21f"
@@ -2181,7 +2181,7 @@ let i = {
     hex: "#5865f2f5"
   },
   "opacity-green-1": {
-    hex: "#00863a03"
+    hex: "#00863a05"
   },
   "opacity-green-12": {
     hex: "#00863a1f"
@@ -2256,7 +2256,7 @@ let i = {
     hex: "#00863af5"
   },
   "opacity-orange-1": {
-    hex: "#bd4f0003"
+    hex: "#bd4f0005"
   },
   "opacity-orange-12": {
     hex: "#bd4f001f"
@@ -2331,7 +2331,7 @@ let i = {
     hex: "#bd4f00f5"
   },
   "opacity-pink-1": {
-    hex: "#ff4cd203"
+    hex: "#ff4cd205"
   },
   "opacity-pink-12": {
     hex: "#ff4cd21f"
@@ -2406,7 +2406,7 @@ let i = {
     hex: "#ff4cd2f5"
   },
   "opacity-red-1": {
-    hex: "#d22d3903"
+    hex: "#d22d3905"
   },
   "opacity-red-12": {
     hex: "#d22d391f"
@@ -2481,7 +2481,7 @@ let i = {
     hex: "#d22d39f5"
   },
   "opacity-teal-1": {
-    hex: "#00818a03"
+    hex: "#00818a05"
   },
   "opacity-teal-12": {
     hex: "#00818a1f"
@@ -2556,7 +2556,7 @@ let i = {
     hex: "#00818af5"
   },
   "opacity-white-1": {
-    hex: "#ffffff03"
+    hex: "#ffffff05"
   },
   "opacity-white-12": {
     hex: "#ffffff1f"
@@ -2631,7 +2631,7 @@ let i = {
     hex: "#fffffff5"
   },
   "opacity-yellow-1": {
-    hex: "#a1630003"
+    hex: "#a1630005"
   },
   "opacity-yellow-12": {
     hex: "#a163001f"

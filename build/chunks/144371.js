@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  O: () => f
+  O: () => _
 });
 var r = n(569545),
   i = n(199902),
@@ -32,7 +32,7 @@ function u(e) {
   return e
 }
 let d = 10,
-  f = {
+  _ = {
     getActiveErrors: () => {
       var e;
       let t = i.Z.getCurrentUserActiveStream();

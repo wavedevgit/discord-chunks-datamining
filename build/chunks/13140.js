@@ -6,7 +6,7 @@ n.d(t, {
   H9: () => A,
   Kd: () => j,
   UR: () => v,
-  d2: () => M,
+  d2: () => k,
   dU: () => T
 }), n(388685), n(704826), n(35282), n(415506), n(539854), n(781311);
 var r = n(921738),
@@ -19,7 +19,7 @@ var r = n(921738),
   u = n(378799),
   d = n(981631);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -28,14 +28,14 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -208,11 +208,11 @@ function x(e) {
   return "meta" === e || "shift" === e || "alt" === e || "ctrl" === e
 }
 
-function k(e) {
+function M(e) {
   return e + "Key"
 }
 
-function M(e) {
+function k(e) {
   let t = {
     keyCode: 0,
     key: "",
@@ -224,11 +224,11 @@ function M(e) {
   };
   return null == e ? [] : e.reduce((e, n) => {
     let r = A(n),
-      i = _({}, t);
-    if (null == r) return e.push(h(_({}, i), {
+      i = f({}, t);
+    if (null == r) return e.push(h(f({}, i), {
       combo: n
     })), e;
-    if (L.test(r) && x(r)) return t[k(r)] = !0, e.map(e => (e[k(r)] = !0, e));
+    if (L.test(r) && x(r)) return t[M(r)] = !0, e.map(e => (e[M(r)] = !0, e));
     {
       let t = N(r, d.CgE.BROWSER);
       return null != t && (i.keyCode = t), e.push(i), e

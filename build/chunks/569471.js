@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => k
+  Z: () => M
 }), n(388685), n(997841);
 var r, i = n(392711),
   a = n.n(i),
@@ -20,7 +20,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -33,7 +33,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function f(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -45,7 +45,7 @@ function _(e, t) {
 }
 
 function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -90,7 +90,7 @@ function I(e) {
   let {
     joinedThreads: t
   } = e;
-  h = a()(t).map(e => p(f({}, e), {
+  h = a()(t).map(e => p(_({}, e), {
     joinTimestamp: new Date(e.joinTimestamp)
   })).keyBy("threadId").value()
 }
@@ -160,7 +160,7 @@ function R(e) {
     channel: t
   } = e;
   if (!(t.id in h)) return !1;
-  h = f({}, h), delete h[t.id]
+  h = _({}, h), delete h[t.id]
 }
 
 function P(e) {
@@ -198,8 +198,8 @@ function w(e) {
 function D(e) {
   var t, n;
   let r = !1;
-  return (null == (t = e.removedMemberIds) ? void 0 : t.includes(u.default.getId())) && e.id in h && (h = f({}, h), delete h[e.id], r = !0), null == (n = e.addedMembers) || n.forEach(t => {
-    t.userId === u.default.getId() && ((h = f({}, h))[e.id] = {
+  return (null == (t = e.removedMemberIds) ? void 0 : t.includes(u.default.getId())) && e.id in h && (h = _({}, h), delete h[e.id], r = !0), null == (n = e.addedMembers) || n.forEach(t => {
+    t.userId === u.default.getId() && ((h = _({}, h))[e.id] = {
       threadId: e.id,
       guildId: e.guildId,
       flags: t.flags,
@@ -252,4 +252,4 @@ let x = new L(s.Z, {
     THREAD_MEMBER_LOCAL_UPDATE: w,
     THREAD_MEMBERS_UPDATE: D
   }),
-  k = x
+  M = x

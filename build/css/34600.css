@@ -1,6 +1,6 @@
 /**
   Module ID: 34600
-  Original File Name: 4264e603dc259d86
+  Original File Name: e7b69dd2ebceb2a4
 **/
 :root {
     --application-subscription-end: hotpink;
@@ -3690,11 +3690,22 @@
     --info-warning-foreground: #f0b333;
     --info-warning-text: #d9ab73;
     --input-background: rgba(0,0,0,.2);
+    --input-background-critical: rgba(0,0,0,.2);
+    --input-background-default: rgba(0,0,0,.2);
     --input-border: hsla(240,4%,61%,.2);
+    --input-border-active: #7ab0f5;
+    --input-border-critical: #fc918c;
+    --input-border-critical-hover: #fc918c;
+    --input-border-default: hsla(240,4%,61%,.2);
+    --input-border-default-hover: hsla(240,4%,61%,.2);
     --input-error-background: rgba(161,41,41,.12);
     --input-error-border: #f75c5e;
     --input-error-text: #fababa;
     --input-focused-border: hsla(0,0%,100%,.04);
+    --input-foreground-critical: #fa787a;
+    --input-foreground-default: #dee0e3;
+    --input-foreground-icon: #c4c4c9;
+    --input-foreground-placeholder: #8a8a91;
     --input-placeholder-text: #8a8a91;
     --interactive-active: #fff;
     --interactive-hover: #fff;
@@ -4257,11 +4268,22 @@
     --info-warning-foreground: #b07515;
     --info-warning-text: #945903;
     --input-background: rgba(0,0,0,.08);
+    --input-background-critical: rgba(0,0,0,.08);
+    --input-background-default: rgba(0,0,0,.08);
     --input-border: hsla(240,4%,61%,.36);
+    --input-border-active: #0073e3;
+    --input-border-critical: #c22936;
+    --input-border-critical-hover: #c22936;
+    --input-border-default: hsla(240,4%,61%,.36);
+    --input-border-default-hover: hsla(240,4%,61%,.36);
     --input-error-background: rgba(161,41,41,.12);
     --input-error-border: #f75c5e;
     --input-error-text: #4f1012;
     --input-focused-border: rgba(0,0,0,.04);
+    --input-foreground-critical: #a12929;
+    --input-foreground-default: #333338;
+    --input-foreground-icon: #5e616b;
+    --input-foreground-placeholder: #5e616b;
     --input-placeholder-text: #5e616b;
     --interactive-active: #2e3036;
     --interactive-hover: #2e3036;
@@ -4824,11 +4846,22 @@
     --info-warning-foreground: #f0b333;
     --info-warning-text: #ba8036;
     --input-background: rgba(0,0,0,.08);
+    --input-background-critical: rgba(0,0,0,.08);
+    --input-background-default: rgba(0,0,0,.08);
     --input-border: hsla(240,4%,61%,.32);
+    --input-border-active: #3687e8;
+    --input-border-critical: #e85c5c;
+    --input-border-critical-hover: #e85c5c;
+    --input-border-default: hsla(240,4%,61%,.32);
+    --input-border-default-hover: hsla(240,4%,61%,.32);
     --input-error-background: rgba(161,41,41,.12);
     --input-error-border: #f75c5e;
     --input-error-text: #fababa;
     --input-focused-border: hsla(240,4%,61%,.44);
+    --input-foreground-critical: #fa787a;
+    --input-foreground-default: #dbdbde;
+    --input-foreground-icon: #9c9ca3;
+    --input-foreground-placeholder: #73757d;
     --input-placeholder-text: #73757d;
     --interactive-active: #e3e3e6;
     --interactive-hover: #e3e3e6;
@@ -5391,11 +5424,22 @@
     --info-warning-foreground: #f0b333;
     --info-warning-text: #c4914d;
     --input-background: rgba(0,0,0,.08);
+    --input-background-critical: rgba(0,0,0,.08);
+    --input-background-default: rgba(0,0,0,.08);
     --input-border: hsla(240,4%,61%,.2);
+    --input-border-active: #5296ed;
+    --input-border-critical: #f2706b;
+    --input-border-critical-hover: #f2706b;
+    --input-border-default: hsla(240,4%,61%,.2);
+    --input-border-default-hover: hsla(240,4%,61%,.2);
     --input-error-background: rgba(161,41,41,.12);
     --input-error-border: #f75c5e;
     --input-error-text: #fababa;
     --input-focused-border: hsla(223,8%,46%,.32);
+    --input-foreground-critical: #fa787a;
+    --input-foreground-default: #f0f0f0;
+    --input-foreground-icon: #ababb0;
+    --input-foreground-placeholder: #7a7d85;
     --input-placeholder-text: #7a7d85;
     --interactive-active: #fafafa;
     --interactive-hover: #fafafa;
@@ -5581,4 +5625,4 @@
     --white: #fff
 }
 
-/*# sourceMappingURL=4264e603dc259d86.css.map*/
+/*# sourceMappingURL=e7b69dd2ebceb2a4.css.map*/

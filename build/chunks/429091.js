@@ -24,16 +24,16 @@ let s = Symbol("version"),
     length: 0,
     version: -1
   }),
-  f = Object.hasOwnProperty;
+  _ = Object.hasOwnProperty;
 
-function _(e, t) {
+function f(e, t) {
   if (e === t) return !0;
   let n = Object.keys(e),
     r = Object.keys(t);
   if (n.length !== r.length) return !1;
   for (let r of n) {
     let n = r;
-    if (!f.call(t, r) || !(0, a.$E)(e[n], t[n])) return !1
+    if (!_.call(t, r) || !(0, a.$E)(e[n], t[n])) return !1
   }
   return !0
 }
@@ -120,7 +120,7 @@ class p extends r.yh {
           memoized: o
         }
       } = i, s = o[t];
-      return f.call(o, t) || (s = e(a), o[t] = s), s
+      return _.call(o, t) || (s = e(a), o[t] = s), s
     }
   }
   memoized(e) {
@@ -129,7 +129,7 @@ class p extends r.yh {
       let {
         memoized: n
       } = this.derived, r = n[t];
-      return f.call(n, t) || (r = e(this.root), n[t] = r), r
+      return _.call(n, t) || (r = e(this.root), n[t] = r), r
     }
   }
   setKkvRoot(e, t) {
@@ -188,7 +188,7 @@ class p extends r.yh {
                 }
               }, this.derived.numPartitions++, this.derived.length += r, t = !0, !0)
             }
-            if ("function" == typeof n && (n = n(r.root)), _(r.root, n)) return !1;
+            if ("function" == typeof n && (n = n(r.root)), f(r.root, n)) return !1;
             let i = Object.keys(n).length,
               a = r[l].length;
             return this.derived.length -= a, 0 === i ? (delete this.root[e], this.derived.numPartitions--) : (this.root[e] = {

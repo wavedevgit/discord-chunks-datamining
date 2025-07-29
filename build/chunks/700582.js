@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => _
 });
 var r = n(255367),
   i = n(73800),
@@ -51,19 +51,19 @@ function u(e, t) {
 function d(e, t, n, r) {
   return e.getAvatarURL(r, t, n)
 }
-let f = i.memo(function(e) {
+let _ = i.memo(function(e) {
   var {
     user: t,
     guildId: n,
     size: s = a.EFr.SIZE_32,
     animate: u = !1,
-    "aria-hidden": f = !1
-  } = e, _ = c(e, ["user", "guildId", "size", "animate", "aria-hidden"]);
+    "aria-hidden": _ = !1
+  } = e, f = c(e, ["user", "guildId", "size", "animate", "aria-hidden"]);
   let p = i.useContext(o.Z);
   return (0, r.jsx)(a.qEK, l({
     src: d(t, (0, a.pxk)(s), u, null != n ? n : p),
     size: s,
-    "aria-label": f ? void 0 : t.username,
-    "aria-hidden": f
-  }, _))
+    "aria-label": _ ? void 0 : t.username,
+    "aria-hidden": _
+  }, f))
 })

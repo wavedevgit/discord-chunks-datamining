@@ -27,19 +27,19 @@ function u(e) {
 
 function d(e, t, n, r) {
   var i = n.value;
-  _(e, i) && (h(e, n), l(e, "allowStale") || (i = void 0)), i && t.call(r, i.value, i.key, e)
+  f(e, i) && (h(e, n), l(e, "allowStale") || (i = void 0)), i && t.call(r, i.value, i.key, e)
 }
 
-function f(e, t, n) {
+function _(e, t, n) {
   var r = l(e, "cache").get(t);
   if (r) {
     var i = r.value;
-    _(e, i) ? (h(e, r), l(e, "allowStale") || (i = void 0)) : n && l(e, "lruList").unshiftNode(r), i && (i = i.value)
+    f(e, i) ? (h(e, r), l(e, "allowStale") || (i = void 0)) : n && l(e, "lruList").unshiftNode(r), i && (i = i.value)
   }
   return i
 }
 
-function _(e, t) {
+function f(e, t) {
   if (!t || !t.maxAge && !l(e, "maxAge")) return !1;
   var n = !1,
     r = Date.now() - t.now;
@@ -138,7 +138,7 @@ r = "function" == typeof Symbol ? function(e) {
   }, this), l(this, "cache", new i), l(this, "lruList", new o), l(this, "length", 0)
 }, u.prototype.dump = function() {
   return l(this, "lruList").map(function(e) {
-    if (!_(this, e)) return {
+    if (!f(this, e)) return {
       k: e.key,
       v: e.value,
       e: e.now + (e.maxAge || 0)
@@ -165,7 +165,7 @@ r = "function" == typeof Symbol ? function(e) {
       l = {
         value: e.value
       };
-    e.maxAge !== o && (l.maxAge = e.maxAge), s !== c && (l.length = e.length), _(this, e) && (l.stale = !0), l = a.inspect(l, t).split("\n").join("\n  "), n += i + " => " + l
+    e.maxAge !== o && (l.maxAge = e.maxAge), s !== c && (l.length = e.length), f(this, e) && (l.stale = !0), l = a.inspect(l, t).split("\n").join("\n  "), n += i + " => " + l
   }), (u || r) && (n += "\n"), n += "}"
 }, u.prototype.set = function(e, t, n) {
   var r = (n = n || l(this, "maxAge")) ? Date.now() : 0,
@@ -178,11 +178,11 @@ r = "function" == typeof Symbol ? function(e) {
   var o = new m(e, t, i, r, n);
   return o.length > l(this, "max") ? (l(this, "dispose") && l(this, "dispose").call(this, e, t), !1) : (l(this, "length", l(this, "length") + o.length), l(this, "lruList").unshift(o), l(this, "cache").set(e, l(this, "lruList").head), p(this), !0)
 }, u.prototype.has = function(e) {
-  return !(!l(this, "cache").has(e) || _(this, l(this, "cache").get(e).value))
+  return !(!l(this, "cache").has(e) || f(this, l(this, "cache").get(e).value))
 }, u.prototype.get = function(e) {
-  return f(this, e, !0)
+  return _(this, e, !0)
 }, u.prototype.peek = function(e) {
-  return f(this, e, !1)
+  return _(this, e, !1)
 }, u.prototype.pop = function() {
   var e = l(this, "lruList").tail;
   return e ? (h(this, e), e.value) : null
@@ -202,6 +202,6 @@ r = "function" == typeof Symbol ? function(e) {
 }, u.prototype.prune = function() {
   var e = this;
   l(this, "cache").forEach(function(t, n) {
-    f(e, n, !1)
+    _(e, n, !1)
   })
 }

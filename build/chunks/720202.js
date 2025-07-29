@@ -29,7 +29,7 @@ function d() {
   u.reset()
 }
 
-function f(e) {
+function _(e) {
   let {
     chunks: t
   } = e;
@@ -39,7 +39,7 @@ function f(e) {
   return !1
 }
 
-function _() {
+function f() {
   return u.requestUnacknowledged(), !1
 }
 
@@ -108,8 +108,8 @@ c(b, "displayName", "GuildMemberRequesterStore");
 let y = new b(a.Z, {
   CONNECTION_CLOSED: d,
   CONNECTION_OPEN: d,
-  CONNECTION_RESUMED: _,
-  GUILD_MEMBERS_CHUNK_BATCH: f,
+  CONNECTION_RESUMED: f,
+  GUILD_MEMBERS_CHUNK_BATCH: _,
   SEARCH_MESSAGES_SUCCESS: E,
   MOD_VIEW_SEARCH_MESSAGES_SUCCESS: E,
   LOCAL_MESSAGES_LOADED: m,

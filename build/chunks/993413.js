@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(481060),
   u = n(892001),
   d = n(594174),
-  f = n(403182),
-  _ = n(587446),
+  _ = n(403182),
+  f = n(587446),
   p = n(504983),
   h = n(388032),
   m = n(396032);
@@ -21,7 +21,7 @@ var r = n(255367),
 function g(e) {
   return e.replace(/[0-9.,]+ ?kb/g, e => {
     let t = 1024 * parseInt(e, 10);
-    return isNaN(t) ? e : (0, f.Ng)(t)
+    return isNaN(t) ? e : (0, _.Ng)(t)
   })
 }
 
@@ -43,7 +43,7 @@ let b = i.forwardRef(function(e, t) {
     title: n,
     titleIcon: i,
     titleId: a,
-    description: f,
+    description: _,
     children: g,
     className: b,
     errors: y,
@@ -78,7 +78,7 @@ let b = i.forwardRef(function(e, t) {
       children: [(0, r.jsxs)(c.vwX, {
         className: m.title,
         id: a,
-        children: [n, N && (0, r.jsx)(_.Z, {}), i, C && null != R && (0, r.jsx)(l.zx, {
+        children: [n, N && (0, r.jsx)(f.Z, {}), i, C && null != R && (0, r.jsx)(l.zx, {
           look: l.zx.Looks.LINK,
           color: l.zx.Colors.TRANSPARENT,
           size: l.zx.Sizes.TINY,
@@ -89,10 +89,10 @@ let b = i.forwardRef(function(e, t) {
             children: h.intl.string(h.t["+Xp3ho"])
           })
         })]
-      }), null != f ? (0, r.jsx)(c.R94, {
+      }), null != _ ? (0, r.jsx)(c.R94, {
         type: c.R94.Types.DESCRIPTION,
         className: m.sectionDescription,
-        children: f
+        children: _
       }) : null, g, null != y && (0, r.jsx)(E, {
         errors: y
       })]

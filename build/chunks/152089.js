@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  FW: () => f,
+  FW: () => _,
   fZ: () => p,
   py: () => h
 }), n(388685), n(415506);
@@ -15,7 +15,7 @@ var r = n(512722),
   u = n(590921),
   d = n(185923);
 
-function f(e) {
+function _(e) {
   var t;
   let {
     activeCommandOption: n,
@@ -24,8 +24,8 @@ function f(e) {
     canMentionChannels: l = !0,
     canMentionEveryone: c,
     useNewSlashCommands: d,
-    canOnlyUseTextCommands: f,
-    canSendStickers: _,
+    canOnlyUseTextCommands: _,
+    canSendStickers: f,
     canSendSoundmoji: p,
     hideMentionDescription: h,
     hidePersonalInformation: m,
@@ -43,7 +43,7 @@ function f(e) {
       user: u.h3.DENY
     },
     commands: u.L8.DISABLED,
-    allowStickers: !0 === _,
+    allowStickers: !0 === f,
     allowSoundmoji: !0 === p,
     forNonStringCommandOption: null != n && n.type !== a.jw.STRING,
     hideMentionDescription: !0 === h,
@@ -76,10 +76,10 @@ function f(e) {
     let e = (0, o.$z)(n);
     e.canMentionChannels && (I.mentions.channel = u.nS.ALLOW_SELECTABLE), e.canMentionEveryone && (I.mentions.global = e.canMentionHere ? u.VV.ALLOW_EVERYONE_OR_HERE : u.VV.ALLOW_EVERYONE), e.canMentionRoles && (I.mentions.role = e.canMentionNonMentionableRoles ? u.Fw.ALLOW_ALL : u.Fw.ALLOW_MENTIONABLE), e.canMentionUsers && (I.mentions.user = e.canMentionAnyGuildUser ? u.h3.ALLOW_GUILD : u.h3.ALLOW_CHANNEL), I.hideMentionDescription = !0
   } else l && (I.mentions.channel = u.nS.ALLOW_SELECTABLE), i && (I.mentions.role = u.Fw.ALLOW_MENTIONABLE), r && (I.mentions.user = u.h3.ALLOW_CHANNEL), c && (I.mentions.global = u.VV.ALLOW_EVERYONE_OR_HERE);
-  return (null == (t = g.commands) ? void 0 : t.enabled) && (d ? I.commands = f ? u.L8.NEW_TEXT_ONLY : u.L8.NEW : I.commands = u.L8.OLD_BUILT_INS), null != n && null != n.channelTypes && (I.allowedChannelTypes = n.channelTypes), I
+  return (null == (t = g.commands) ? void 0 : t.enabled) && (d ? I.commands = _ ? u.L8.NEW_TEXT_ONLY : u.L8.NEW : I.commands = u.L8.OLD_BUILT_INS), null != n && null != n.channelTypes && (I.allowedChannelTypes = n.channelTypes), I
 }
 
-function _(e) {
+function f(e) {
   let {
     type: t,
     channel: n,
@@ -103,7 +103,7 @@ function p(e) {
     currentWord: a,
     currentWordIsAtStart: o,
     textValue: s,
-    optionText: f,
+    optionText: _,
     parentAutocompleteInputType: p,
     parentAutocompleteInputValue: h
   } = e, m = null;
@@ -112,7 +112,7 @@ function p(e) {
     let I = c.W[e];
     if (e === u.eq.GIFS || e === u.eq.CHOICES) {
       if (r.commands === u.L8.OLD_BUILT_INS) {
-        if (_({
+        if (f({
             type: e,
             channel: t,
             guild: n,
@@ -127,33 +127,33 @@ function p(e) {
           };
           break
         }
-      } else if (_({
+      } else if (f({
           type: e,
           channel: t,
           guild: n,
-          query: f,
+          query: _,
           isAtStart: !1,
           options: r
         })) return {
         type: e,
         typeInfo: I,
-        query: f
+        query: _
       }
     } else if (e === u.eq.STICKERS) {
-      if (_({
+      if (f({
           type: e,
           channel: t,
           guild: n,
-          query: f,
+          query: _,
           isAtStart: !1,
           options: r
         })) return {
         type: e,
         typeInfo: I,
-        query: f
+        query: _
       }
     } else if (e === u.eq.COMMANDS && r.commands !== u.L8.OLD_BUILT_INS) {
-      if (_({
+      if (f({
           type: e,
           channel: t,
           guild: n,
@@ -169,7 +169,7 @@ function p(e) {
         break
       }
     } else if (e === u.eq.LEGACY_COMMANDS) {
-      if (_({
+      if (f({
           type: e,
           channel: t,
           guild: n,
@@ -185,7 +185,7 @@ function p(e) {
         break
       }
     } else if (e === u.eq.EMOJIS_AND_STICKERS) {
-      if (null != a && a.length > 0 && (0, l.x)(d.qR.AutocompleteTyped), null != a && _({
+      if (null != a && a.length > 0 && (0, l.x)(d.qR.AutocompleteTyped), null != a && f({
           type: e,
           channel: t,
           guild: n,
@@ -205,7 +205,7 @@ function p(e) {
       typeInfo: I,
       query: h
     });
-    else if (null != a && _({
+    else if (null != a && f({
         type: e,
         channel: t,
         guild: n,

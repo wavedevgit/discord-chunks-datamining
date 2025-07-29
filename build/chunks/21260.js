@@ -24,7 +24,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function f(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,7 +49,7 @@ function _(e, t) {
 }
 
 function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -85,8 +85,8 @@ function g(e) {
     let u = r[e];
     if (isNaN(u) || u > a) continue;
     let d = s === n - 1,
-      f = e === t.length - 1;
-    if (!(Math.round(l + u + (d && !f ? o + i : 0)) < Math.round(a))) {
+      _ = e === t.length - 1;
+    if (!(Math.round(l + u + (d && !_ ? o + i : 0)) < Math.round(a))) {
       if (d) break;
       s++, l = 0
     }
@@ -101,7 +101,7 @@ function E(e) {
     items: n,
     maxLines: r,
     containerWidth: a
-  } = e, [o, s] = i.useState(0), l = i.useRef([]), c = i.useRef(0), u = i.useRef(0), d = i.useRef(null), f = i.useCallback((e, t) => {
+  } = e, [o, s] = i.useState(0), l = i.useRef([]), c = i.useRef(0), u = i.useRef(0), d = i.useRef(null), _ = i.useCallback((e, t) => {
     l.current[e] = t
   }, []);
   return i.useLayoutEffect(() => {
@@ -119,11 +119,11 @@ function E(e) {
     i !== u.current && (u.current = i, s(e => e + 1))
   }, [a, t, n, r]), i.useMemo(() => ({
     lastVisibleIndex: u.current,
-    onItemLayout: f,
+    onItemLayout: _,
     overflowItemsRef: d,
     itemWidthsRef: l,
     version: o
-  }), [f, o])
+  }), [_, o])
 }
 
 function b(e) {
@@ -131,13 +131,13 @@ function b(e) {
     items: t,
     renderItem: n
   } = e, i = h(e, ["items", "renderItem"]);
-  return (0, r.jsx)(s.ua7, p(f({}, i), {
+  return (0, r.jsx)(s.ua7, p(_({}, i), {
     text: (0, r.jsx)("div", {
       className: u.tooltip,
       children: t.map(n)
     }),
     "aria-label": "overflow",
-    children: e => (0, r.jsx)("div", p(f({}, e), {
+    children: e => (0, r.jsx)("div", p(_({}, e), {
       children: n(c.intl.formatToPlainString(c.t.vGclWl, {
         count: t.length
       }))
@@ -170,9 +170,9 @@ function v(e) {
     renderItem: a,
     itemGapPx: s = 0,
     maxLines: d,
-    renderOverflow: f
+    renderOverflow: _
   } = e, {
-    ref: _,
+    ref: f,
     width: p = 0
   } = (0, l.ZP)(), {
     lastVisibleIndex: h,
@@ -186,10 +186,10 @@ function v(e) {
   }), v = i.useCallback(e => (0, r.jsx)(b, {
     items: e,
     renderItem: a
-  }), [a]), I = null != f ? f : v, T = i.useMemo(() => n.slice(0, h + 1), [n, h]), S = i.useMemo(() => n.slice(h + 1), [n, h]);
+  }), [a]), I = null != _ ? _ : v, T = i.useMemo(() => n.slice(0, h + 1), [n, h]), S = i.useMemo(() => n.slice(h + 1), [n, h]);
   return (0, r.jsxs)("div", {
     className: o()(t, u.items),
-    ref: _,
+    ref: f,
     children: [(0, r.jsxs)("div", {
       "aria-hidden": !0,
       className: u.measurements,

@@ -23,11 +23,11 @@ function d() {
   c.clear()
 }
 
-function f(e) {
+function _(e) {
   c.delete(e.guild.id)
 }
 
-function _(e) {
+function f(e) {
   null == u[e.guildId] && (u[e.guildId] = {}), u[e.guildId][e.id] = e.status
 }
 
@@ -46,10 +46,10 @@ class h extends(r = a.ZP.Store) {
 }
 l(h, "displayName", "ChannelStatusStore");
 let m = new h(o.Z, {
-  GUILD_CREATE: f,
-  GUILD_DELETE: f,
+  GUILD_CREATE: _,
+  GUILD_DELETE: _,
   CONNECTION_RESUMED: d,
   CONNECTION_OPEN: d,
-  VOICE_CHANNEL_STATUS_UPDATE: _,
+  VOICE_CHANNEL_STATUS_UPDATE: f,
   CHANNEL_STATUSES: p
 })
