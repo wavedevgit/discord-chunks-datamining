@@ -6,8 +6,8 @@ r.d(t, {
 var n = r(255367),
   l = r(73800),
   i = r(481060),
-  o = r(501431),
-  a = r(215023),
+  a = r(501431),
+  o = r(215023),
   s = r(388032),
   c = r(234209);
 
@@ -18,7 +18,7 @@ function u(e) {
   } = e, {
     searchQuery: u,
     onSetSearchQuery: d
-  } = (0, o.S)(), [p, f] = l.useState("");
+  } = (0, a.S)(), [p, f] = l.useState("");
   return l.useEffect(() => {
     let e = setTimeout(() => {
       d(p)
@@ -29,7 +29,7 @@ function u(e) {
   }, [u]), (0, n.jsx)(i.P3F, {
     ignoreKeyPress: !0,
     onClick: () => {
-      r !== a.AW.CATALOG && t(a.AW.CATALOG)
+      r !== o.AW.CATALOG && t(o.AW.CATALOG)
     },
     children: (0, n.jsx)(i.E1j, {
       className: c.searchBar,

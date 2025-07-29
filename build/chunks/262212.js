@@ -1,8 +1,8 @@
 /** Chunk was on 99014 **/
 n.d(t, {
-  Nn: () => C,
+  Nn: () => k,
   ZP: () => N,
-  ms: () => k
+  ms: () => C
 });
 var r = n(255367),
   o = n(73800),
@@ -21,8 +21,8 @@ var r = n(255367),
   j = n(388032),
   I = n(503945);
 
-function g() {
-  return (g = Object.assign || function(e) {
+function _() {
+  return (_ = Object.assign || function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = arguments[t];
       for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -31,7 +31,7 @@ function g() {
   }).apply(this, arguments)
 }
 
-function x(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -50,7 +50,7 @@ function x(e) {
   return e
 }
 
-function _(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -135,7 +135,7 @@ function E(e) {
   })
 }
 
-function k(e) {
+function C(e) {
   var {
     guildId: t,
     powerup: n,
@@ -146,7 +146,7 @@ function k(e) {
       onShowMore: l
     } = (0, b.ZP)(t, n),
     c = m.uc.has(n.skuId);
-  return (0, r.jsx)(s.zx, _(x({
+  return (0, r.jsx)(s.zx, x(g({
     className: I.primaryButton,
     innerClassName: I.buttonInner,
     wrapperClassName: I.buttonWrapper,
@@ -159,7 +159,7 @@ function k(e) {
   }))
 }
 
-function C(e) {
+function k(e) {
   var {
     guildId: t,
     powerup: n,
@@ -168,23 +168,23 @@ function C(e) {
   } = e, d = v(e, ["guildId", "powerup", "compact", "onError"]);
   let {
     onActivate: f,
-    isLoading: g,
-    error: k,
-    onShowDeactivate: C
+    isLoading: _,
+    error: C,
+    onShowDeactivate: k
   } = (0, b.ZP)(t, n), h = (0, p.Z)(t, n).type !== m.A3.INACTIVE, {
     disabled: P,
     reason: N
   } = (0, c.Z)(t, n, h);
   return o.useEffect(() => {
-    null == u || u(k)
-  }, [k, u]), (0, r.jsx)(l.ua7, {
+    null == u || u(C)
+  }, [C, u]), (0, r.jsx)(l.ua7, {
     delay: 100,
     "aria-label": null != N ? N : h ? j.intl.string(O.default.TZsu1d) : void 0,
     text: null != N ? N : h ? (0, r.jsx)(E, {
       guildId: t,
       powerup: n
     }) : void 0,
-    children: e => (0, r.jsx)(s.zx, _(x(_(x({}, e), {
+    children: e => (0, r.jsx)(s.zx, x(g(x(g({}, e), {
       className: I.secondaryButton,
       innerClassName: I.buttonInner,
       wrapperClassName: i()(I.secondaryButton, {
@@ -193,8 +193,8 @@ function C(e) {
       color: h ? s.Tt.PRIMARY : s.Tt.BRAND,
       "aria-label": j.intl.string(h ? O.default.TZsu1d : O.default.gSxlHR),
       disabled: P,
-      onClick: h ? C : f,
-      submitting: g
+      onClick: h ? k : f,
+      submitting: _
     }), d), {
       children: (0, r.jsx)(y, {
         powerup: n,
@@ -235,13 +235,13 @@ function P(e) {
   } = e, s = (0, p.Z)(n, o).type !== m.A3.INACTIVE, l = (0, u.Z)(n, o, "GuildPowerupCardFooterAdmin"), c = s || !l, d = !s;
   return (0, r.jsxs)("div", {
     className: i()(I.container, t),
-    children: [c && (0, r.jsx)(C, {
+    children: [c && (0, r.jsx)(k, {
       guildId: n,
       powerup: o,
       onError: a,
       grow: d,
       compact: !d
-    }), s && (0, r.jsx)(k, {
+    }), s && (0, r.jsx)(C, {
       guildId: n,
       powerup: o
     })]
@@ -249,9 +249,9 @@ function P(e) {
 }
 
 function N(e) {
-  var t = g({}, function(e) {
+  var t = _({}, function(e) {
     if (null == e) throw TypeError("Cannot destructure " + e);
     return e
   }(e));
-  return (0, d.Z)(t.guildId) ? (0, r.jsx)(P, x({}, t)) : (0, r.jsx)(h, x({}, t))
+  return (0, d.Z)(t.guildId) ? (0, r.jsx)(P, g({}, t)) : (0, r.jsx)(h, g({}, t))
 }

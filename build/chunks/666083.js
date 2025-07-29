@@ -40,8 +40,8 @@ function O(e) {
   let x = (0, l.e7)([s.Z], () => s.Z.useReducedMotion),
     v = o.useRef(null),
     C = o.useRef(new i.qA),
-    [h, P] = o.useState(null),
-    _ = f.uc.has(y.skuId);
+    [_, P] = o.useState(null),
+    h = f.uc.has(y.skuId);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(i.O_, {
       ref: P,
@@ -92,7 +92,7 @@ function O(e) {
               children: m.intl.formatToPlainString(b.default.y3wHoq, {
                 perkName: y.title
               })
-            }), _ ? (0, r.jsx)(d.ms, {
+            }), h ? (0, r.jsx)(d.ms, {
               className: j.button,
               guildId: O,
               powerup: y,
@@ -113,7 +113,7 @@ function O(e) {
         onClick: g.onClose
       }), !x && (0, r.jsx)(c.Z, {
         confettiTarget: v.current,
-        confettiCanvas: h,
+        confettiCanvas: _,
         sprites: (0, u.vK)()
       })]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

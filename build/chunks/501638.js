@@ -1,20 +1,20 @@
 /** Chunk was on 45620 **/
 "use strict";
 r.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var n = r(255367),
   l = r(481060),
   i = r(388032),
-  o = r(961933);
+  a = r(961933);
 
-function a() {
+function o() {
   return (0, n.jsxs)("div", {
-    className: o.container,
+    className: a.container,
     children: [(0, n.jsx)("img", {
       src: "https://cdn.discordapp.com/assets/content/a72233587aaf964fc327663677974641a235719ad6445da58f931094cb799f66.png",
       alt: i.intl.string(i.t.oezC39),
-      className: o.img
+      className: a.img
     }), (0, n.jsx)(l.X6q, {
       variant: "heading-xl/semibold",
       children: i.intl.string(i.t.oezC39)

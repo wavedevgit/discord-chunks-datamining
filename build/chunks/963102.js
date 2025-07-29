@@ -6,8 +6,8 @@ r.d(t, {
 var n = r(255367),
   l = r(73800),
   i = r(120356),
-  o = r.n(i),
-  a = r(636977),
+  a = r.n(i),
+  o = r(636977),
   s = r(442837),
   c = r(481060),
   u = r(37234),
@@ -41,7 +41,7 @@ function k(e) {
   return (0, n.jsx)(h.Z.Title, {
     onClick: () => i(t),
     wrapperClassName: L.tabWrapper,
-    className: o()(L.tab, {
+    className: a()(L.tab, {
       [L.selected]: l
     }),
     children: r
@@ -53,7 +53,7 @@ function I(e) {
     tab: t,
     selected: r,
     displayText: i,
-    handleTransition: a
+    handleTransition: o
   } = e, [s, u] = l.useState(!1), d = l.useRef(null), [p, b] = l.useState(0), m = l.useRef(!1), _ = e => {
     clearTimeout(p), b(setTimeout(() => {
       u(e)
@@ -80,7 +80,7 @@ function I(e) {
           closePopout: t
         } = e;
         return (0, n.jsx)(y.Z, {
-          handleTransition: a,
+          handleTransition: o,
           onClose: t
         })
       },
@@ -108,10 +108,10 @@ function I(e) {
           return e
         }({}, e), u = u = {
           ref: d,
-          onClick: () => a(t),
+          onClick: () => o(t),
           onKeyDown: O,
           wrapperClassName: L.tabWrapper,
-          className: o()(L.tab, {
+          className: a()(L.tab, {
             [L.selected]: r
           }),
           children: (0, n.jsxs)("span", {
@@ -169,7 +169,7 @@ function N(e) {
         sectionType: T.jXE.ORBS_BALANCE_MENU,
         ctaObject: T.qAy.CTA_TO_QUEST_HOME
       }), (0, b.navigateToQuestHome)({
-        fromContent: a.j.ORBS_BALANCE_MENU
+        fromContent: o.j.ORBS_BALANCE_MENU
       })
     }, [R, t, Z]),
     F = (0, S.eN)("collectibles_shop_header_bar");
@@ -177,7 +177,7 @@ function N(e) {
     theme: y,
     children: e => (0, n.jsxs)(h.Z, {
       disableDoubleClick: !0,
-      className: o()(e, L.headerBar, {
+      className: a()(e, L.headerBar, {
         [L.fullscreenHeaderBar]: t
       }),
       innerClassname: B ? L.headerBarInner : void 0,

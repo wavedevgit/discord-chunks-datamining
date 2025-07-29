@@ -6,8 +6,8 @@ r.d(t, {
 var n = r(255367),
   l = r(73800),
   i = r(120356),
-  o = r.n(i),
-  a = r(622535),
+  a = r.n(i),
+  o = r(622535),
   s = r(481060),
   c = r(63063),
   u = r(597688),
@@ -40,24 +40,24 @@ let b = e => {
     j = b.bannerUrl;
   if (null == j) return null;
   let T = _ === p.AW.ORBS;
-  return (0, n.jsx)(a.$, {
+  return (0, n.jsx)(o.$, {
     innerRef: C,
     onChange: x,
     threshold: 0,
     children: (0, n.jsxs)("div", {
       ref: C,
-      className: o()(h.row, h.between, h.bannerBlockContainer, h.centeredSection, {
+      className: a()(h.row, h.between, h.bannerBlockContainer, h.centeredSection, {
         [h.extraRounded]: T
       }),
       children: [(0, n.jsx)("div", {
-        className: o()(h.wideBannerBackgroundImg, {
+        className: a()(h.wideBannerBackgroundImg, {
           [h.extraRounded]: T
         }),
         children: (0, n.jsx)("img", {
           ref: v,
           src: j,
           alt: b.title,
-          className: o()(h.wideBannerArt, {
+          className: a()(h.wideBannerArt, {
             [h.wideBannerArtOrbs]: T
           }),
           style: {

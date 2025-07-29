@@ -6,8 +6,8 @@ r.d(t, {
 var n = r(255367),
   l = r(73800),
   i = r(120356),
-  o = r.n(i),
-  a = r(399606),
+  a = r.n(i),
+  o = r(399606),
   s = r(481060),
   c = r(434650),
   u = r(594174),
@@ -30,7 +30,7 @@ function y(e) {
     products: t,
     header: r,
     category: l
-  } = e, i = (0, a.e7)([u.default], () => u.default.getCurrentUser()), o = (0, v.St)(t);
+  } = e, i = (0, o.e7)([u.default], () => u.default.getCurrentUser()), a = (0, v.St)(t);
   return null == i || 0 === t.length ? null : (0, n.jsxs)("div", {
     children: [null != r ? (0, n.jsx)(s.Text, {
       className: S.itemTypeTitle,
@@ -41,7 +41,7 @@ function y(e) {
       size: 24
     }), (0, n.jsx)("div", {
       className: S.cardsContainer,
-      children: o.map((e, t) => (0, n.jsx)(d.k0, {
+      children: a.map((e, t) => (0, n.jsx)(d.k0, {
         newValue: {
           tilePosition: t
         },
@@ -70,12 +70,12 @@ function j(e) {
   let {
     category: t,
     isFullScreen: r
-  } = e, [i, o] = l.useState(!1), a = (0, c.O)(e => {
-    o(e)
+  } = e, [i, a] = l.useState(!1), o = (0, c.O)(e => {
+    a(e)
   }, r ? .13 : .15);
   return (0, n.jsxs)("div", {
     className: S.categoryWrapper,
-    ref: a,
+    ref: o,
     children: [(0, n.jsx)(b.Z, {
       category: t,
       hideLimitedTimeBadge: !1
@@ -90,7 +90,7 @@ function T(e) {
   let {
     sortedCategories: r,
     setCategoryRef: i,
-    isFullScreen: a,
+    isFullScreen: o,
     currentPage: c,
     handlePageChange: u
   } = e, f = (0, d.sp)(), g = (0, O.R)(), b = null != (t = null == f ? void 0 : f.sessionId) ? t : "", {
@@ -110,7 +110,7 @@ function T(e) {
       sessionId: b,
       checkpoint: h.a.SHOP_MOUNTED,
       tab: E.AW.CATALOG,
-      isFullScreen: a,
+      isFullScreen: o,
       unpublishedCategoriesShown: v,
       cacheDisabled: _
     })
@@ -119,14 +119,14 @@ function T(e) {
       sessionId: b,
       checkpoint: h.a.SHOP_RENDERED,
       tab: E.AW.CATALOG,
-      isFullScreen: a,
+      isFullScreen: o,
       unpublishedCategoriesShown: v,
       cacheDisabled: _
     })
-  }, [b, a, v, _, g, x.length]);
+  }, [b, o, v, _, g, x.length]);
   let T = (0, p.FF)("CollectiblesBrowse");
   return g ? (0, n.jsx)(m.Z, {}) : (0, n.jsxs)("div", {
-    className: o()(S.categories, {
+    className: a()(S.categories, {
       [S.categoriesNoFilter]: !T
     }),
     children: [x.map((e, t) => (0, n.jsx)("div", {
@@ -137,7 +137,7 @@ function T(e) {
         },
         children: (0, n.jsx)(j, {
           category: e,
-          isFullScreen: a
+          isFullScreen: o
         })
       })
     }, e.skuId)), (0, n.jsx)("div", {
