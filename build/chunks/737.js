@@ -44,7 +44,7 @@ function d(e) {
         d.push([l])
       }), d
     }, [r, e, t], n.pF);
-  return (0, n.cj)([u.Z], () => {
+  return (0, n.e7)([u.Z], () => {
     let e = 0,
       t = 0;
     return {
@@ -56,5 +56,5 @@ function d(e) {
       blockCount: e,
       ignoreCount: t
     }
-  })
+  }, [d], n.pF)
 }
