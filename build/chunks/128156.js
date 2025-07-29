@@ -12,8 +12,8 @@ var o = n(442837),
   s = n(158776),
   d = n(885110),
   u = n(63063),
-  m = n(209698),
-  f = n(369566),
+  f = n(209698),
+  m = n(369566),
   p = n(29899),
   g = n(151545),
   b = n(744802),
@@ -33,19 +33,19 @@ function P(e) {
     displayProfile: P,
     guildId: N,
     channelId: T,
-    subsection: A,
-    onClose: Z
+    subsection: Z,
+    onClose: A
   } = e, {
     voiceActivityStatusEnabled: C
   } = (0, a.U)({
     location: "UserProfileModalV2Activity"
-  }), w = (0, m.b)({
+  }), w = (0, f.b)({
     location: "UserProfileModalV2Activity"
   }), {
     live: E,
     recent: S,
     stream: L
-  } = (0, f.Z)(t.id), {
+  } = (0, m.Z)(t.id), {
     voiceChannel: B,
     voiceActivity: k
   } = (0, p.Z)({
@@ -73,12 +73,12 @@ function P(e) {
   if (!V && !F && !U) {
     var W;
     return D ? (0, r.jsx)(_.Uf, {
-      onClose: Z
+      onClose: A
     }) : (0, r.jsx)(_.P9, {
       user: t,
       guildId: null != (W = null == P ? void 0 : P.guildId) ? W : void 0,
       channelId: T,
-      onClose: Z
+      onClose: A
     })
   }
   return (0, r.jsxs)(i.Ttm, {
@@ -93,7 +93,7 @@ function P(e) {
             user: t,
             currentUser: n,
             voiceChannel: B,
-            onClose: Z
+            onClose: A
           })
         }), null != L && (0, r.jsx)("li", {
           children: (0, r.jsx)(x.Z, {
@@ -101,7 +101,7 @@ function P(e) {
             user: t,
             currentUser: n,
             stream: L,
-            onClose: Z,
+            onClose: A,
             profileGuildId: null == P ? void 0 : P.guildId
           })
         }), E.map((e, o) => (0, r.jsx)("li", {
@@ -109,7 +109,7 @@ function P(e) {
             user: t,
             currentUser: n,
             activity: e,
-            onClose: Z,
+            onClose: A,
             profileGuildId: null == P ? void 0 : P.guildId
           })
         }, "live-".concat(o))), w && M && (0, r.jsx)("li", {
@@ -117,7 +117,7 @@ function P(e) {
             user: t,
             currentUser: n,
             voiceChannel: B,
-            onClose: Z
+            onClose: A
           })
         })]
       })
@@ -129,7 +129,7 @@ function P(e) {
           children: e
         }, t)
       }) : void 0,
-      scrollIntoView: A === y.Tb.RECENT_ACTIVITY,
+      scrollIntoView: Z === y.Tb.RECENT_ACTIVITY,
       children: (0, r.jsx)("ul", {
         className: O.cards,
         children: S.map(e => (0, r.jsx)("li", {
@@ -139,7 +139,7 @@ function P(e) {
             currentUser: n,
             entry: e,
             profileGuildId: null == P ? void 0 : P.guildId,
-            onClose: Z
+            onClose: A
           })
         }, e.id))
       })

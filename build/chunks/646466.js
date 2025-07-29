@@ -68,7 +68,7 @@ let p = [{
       onCloseRequest: () => (0, l.Mr3)(s.c)
     })
   },
-  j = () => {
+  g = () => {
     let e = (0, i.lb)(),
       {
         previewProfileEffectId: t,
@@ -102,7 +102,7 @@ let p = [{
       })]
     })
   },
-  g = () => {
+  j = () => {
     let {
       previewAvatarDecorationId: e,
       setPreviewAvatarDecorationId: t
@@ -330,7 +330,7 @@ let p = [{
           icon: l.idN,
           "aria-label": "Open preview instructions"
         })]
-      }), (0, n.jsx)(j, {}), (0, n.jsx)(g, {}), (0, n.jsx)(_, {
+      }), (0, n.jsx)(g, {}), (0, n.jsx)(j, {}), (0, n.jsx)(_, {
         clearAssets: s,
         clearIgnoredFiles: u
       }), (0, n.jsx)(y, {

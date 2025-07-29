@@ -1,8 +1,8 @@
-/** Chunk was on 43473 **/
-n.d(t, {
-  J: () => o
+/** Chunk was on 93886 **/
+a.d(t, {
+  J: () => r
 });
-let r = (0, n(818083).B)({
+let n = (0, a(818083).B)({
   kind: "user",
   id: "2025-07_user_profile_holdout_h2",
   label: "User Profile Holdout H2 Experiment",
@@ -18,16 +18,16 @@ let r = (0, n(818083).B)({
   }]
 });
 
-function o(e) {
+function r(e) {
   let {
     location: t,
-    autoTrackExposure: n = !0
+    autoTrackExposure: a = !0
   } = e, {
-    isInHoldout: o
-  } = r.useExperiment({
+    isInHoldout: r
+  } = n.useExperiment({
     location: t
   }, {
-    autoTrackExposure: n
+    autoTrackExposure: a
   });
-  return o
+  return r
 }

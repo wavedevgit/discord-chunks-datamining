@@ -11,8 +11,8 @@ var r = n(255367),
   s = n(785717),
   d = n(806729),
   u = n(857302),
-  m = n(892001),
-  f = n(252417),
+  f = n(892001),
+  m = n(252417),
   p = n(264481),
   g = n(714905);
 
@@ -53,7 +53,7 @@ function b(e) {
         user: o,
         status: i
       } = e;
-      return (0, r.jsx)(f.Z, {
+      return (0, r.jsx)(m.Z, {
         user: o,
         status: i,
         guildId: n,
@@ -62,7 +62,7 @@ function b(e) {
           var e, t;
           null == x || x(), j({
             action: "PRESS_MUTUAL_FRIEND"
-          }), (0, m.openUserProfileModal)((e = function(e) {
+          }), (0, f.openUserProfileModal)((e = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 r = Object.keys(n);

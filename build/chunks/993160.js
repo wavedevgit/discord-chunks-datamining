@@ -12,8 +12,8 @@ var o = n(755721),
   s = n(30556),
   d = n(664794),
   u = n(522182),
-  m = n(821706),
-  f = n(562831),
+  f = n(821706),
+  m = n(562831),
   p = n(981631);
 
 function g(e) {
@@ -37,7 +37,7 @@ function g(e) {
     gameFriends: v,
     hasOutgoingPendingGameFriends: I,
     hasIncomingPendingGameFriends: O
-  } = (0, f.H)({
+  } = (0, m.H)({
     userId: t.id
   }), P = v.length > 0 || I || O;
   return h === p.OGo.BLOCKED ? null : t.id === n.id ? (0, r.jsxs)(r.Fragment, {
@@ -87,7 +87,7 @@ function g(e) {
       color: o.zx.Colors.BRAND,
       onClose: i.Z.popAll,
       autoFocus: !0
-    }), (0, r.jsx)(m.g, {
+    }), (0, r.jsx)(f.g, {
       type: "icon",
       user: t,
       relationshipType: h,
@@ -107,7 +107,7 @@ function g(e) {
       userId: t.id,
       onClose: i.Z.popAll,
       autoFocus: !0
-    }), (0, r.jsx)(m.k9, {
+    }), (0, r.jsx)(f.k9, {
       type: "icon",
       user: t,
       analyticsLocation: j,
@@ -126,7 +126,7 @@ function g(e) {
       themeColor: "secondary"
     })]
   }) : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(m.Z7, {
+    children: [(0, r.jsx)(f.Z7, {
       type: "text",
       userId: t.id,
       analyticsLocation: j,

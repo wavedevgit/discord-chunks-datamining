@@ -18,7 +18,7 @@ var n = a(255367),
   b = a(474936),
   f = a(546147),
   v = a(909291);
-let j = {
+let g = {
     [p.O0b.UNPAID]: "Unpaid",
     [p.O0b.ACTIVE]: "Active",
     [p.O0b.PAST_DUE]: "Past Due",
@@ -29,7 +29,7 @@ let j = {
     [p.O0b.PAUSED]: "Paused",
     [p.O0b.PAUSE_PENDING]: "Pause Pending"
   },
-  g = {
+  j = {
     [h.Id.UNKNOWN]: "Unknown",
     [h.Id.ADMIN]: "Admin",
     [h.Id.USER]: "User",
@@ -70,7 +70,7 @@ function y(e) {
   let {
     subscription: N,
     onUpdated: T
-  } = e, [E, S] = r.useState(!1), [P, I] = r.useState(!1), [w, R] = r.useState(!1), [k, A] = r.useState(!1), [Z, D] = r.useState(null), L = e => (null == e && (e = N.status), e in j) ? j[e] : "Unknown status ".concat(e), M = e => {
+  } = e, [E, S] = r.useState(!1), [P, w] = r.useState(!1), [I, R] = r.useState(!1), [k, A] = r.useState(!1), [Z, D] = r.useState(null), L = e => (null == e && (e = N.status), e in g) ? g[e] : "Unknown status ".concat(e), M = e => {
     let t = new Date(e);
     return u.default.fromTimestamp(t.getTime())
   }, U = async e => {
@@ -160,7 +160,7 @@ function y(e) {
       }), N.status === p.O0b.PAUSED && (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsxs)(o.Text, {
           variant: "text-md/normal",
-          children: ["Pause Reason: ", N.pauseReason in g ? g[N.pauseReason] : "Unknown pause reason ".concat(N.pauseReason)]
+          children: ["Pause Reason: ", N.pauseReason in j ? j[N.pauseReason] : "Unknown pause reason ".concat(N.pauseReason)]
         }), null != N.pauseEndsAt && (0, n.jsxs)(o.Text, {
           variant: "text-md/normal",
           children: ["Pause Ends At: ", (0, d.vc)(N.pauseEndsAt, "LL")]
@@ -170,7 +170,7 @@ function y(e) {
       className: v.collapsablePane,
       children: [(0, n.jsxs)(o.P3F, {
         onClick: () => {
-          R(!w)
+          R(!I)
         },
         className: v.collapsablePaneHeader,
         children: [(0, n.jsx)("div", {
@@ -179,9 +179,9 @@ function y(e) {
             children: "Trial Info"
           })
         }), (0, n.jsx)(c.Z, {
-          direction: w ? c.Z.Directions.UP : c.Z.Directions.DOWN
+          direction: I ? c.Z.Directions.UP : c.Z.Directions.DOWN
         })]
-      }), w && (0, n.jsxs)("ul", {
+      }), I && (0, n.jsxs)("ul", {
         className: v.collapsiblePaneList,
         children: [(0, n.jsxs)("li", {
           children: [(0, n.jsx)(o.Text, {
@@ -270,7 +270,7 @@ function y(e) {
       className: v.collapsablePane,
       children: [(0, n.jsxs)(o.P3F, {
         onClick: () => {
-          I(!P)
+          w(!P)
         },
         className: v.collapsablePaneHeader,
         children: [(0, n.jsx)("div", {

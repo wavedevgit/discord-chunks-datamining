@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: 4663582ec048dedf
+  Original File Name: c032d5809933dc36
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -2913,6 +2913,18 @@
     margin-bottom: var(--space-16)
 }
 
+.container_da47d5 {
+    height: 100%;
+    padding: 16px
+}
+
+.buttonGroup_da47d5 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 16px
+}
+
 .collapsablePane__7ed4d {
     margin-bottom: var(--space-16);
     width: 100%
@@ -3002,4 +3014,4 @@
     width: 100%
 }
 
-/*# sourceMappingURL=4663582ec048dedf.css.map*/
+/*# sourceMappingURL=c032d5809933dc36.css.map*/

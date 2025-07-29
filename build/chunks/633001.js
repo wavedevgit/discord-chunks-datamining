@@ -18,8 +18,8 @@ var n = a(255367),
   b = a(306381),
   f = a(371651),
   v = a(829907),
-  j = a(610394),
-  g = a(352527),
+  g = a(610394),
+  j = a(352527),
   _ = a(355863),
   y = a(449224),
   C = a(808506),
@@ -29,8 +29,8 @@ var n = a(255367),
   E = a(246992),
   S = a(981631),
   P = a(757744),
-  I = a(388032),
-  w = a(931207),
+  w = a(388032),
+  I = a(931207),
   R = a(616257);
 
 function k(e) {
@@ -118,8 +118,8 @@ function M(e) {
     onClick: function() {
       (0, O.JG)(t, () => l(!0))
     },
-    className: w.copyId,
-    children: ["Application Id: ", t, " ", a ? I.intl.string(I.t["t5VZ8/"]) : null]
+    className: I.copyId,
+    children: ["Application Id: ", t, " ", a ? w.intl.string(w.t["t5VZ8/"]) : null]
   })
 }
 let U = r.memo(function(e) {
@@ -127,7 +127,7 @@ let U = r.memo(function(e) {
       trackedGame: t
     } = e, a = (0, o.e7)([h.ZP], () => h.ZP.getGameForPID(t.pid)), r = (0, o.e7)([y.Z], () => y.Z.getGameForPID(t.pid)), l = (0, o.e7)([h.ZP], () => null == a ? null : h.ZP.getGameOverlayStatus(a));
     return (0, n.jsxs)("div", {
-      className: w.panelGroup,
+      className: I.panelGroup,
       children: [(0, n.jsx)(d.Text, {
         variant: "text-md/bold",
         color: "text-primary",
@@ -163,7 +163,7 @@ let U = r.memo(function(e) {
         color: "text-default",
         children: ["successfullyShown: ", t.successfullyShown ? "Yes" : "No"]
       }), (0, n.jsxs)("div", {
-        className: w.panelGroup,
+        className: I.panelGroup,
         children: [(0, n.jsxs)(d.Text, {
           variant: "text-sm/normal",
           color: "text-default",
@@ -182,7 +182,7 @@ let U = r.memo(function(e) {
           children: ["overlayMethod: ", (0, v.P_)(t.overlayMethod)]
         })]
       }), null != l && (0, n.jsxs)("div", {
-        className: w.panelGroup,
+        className: I.panelGroup,
         children: [(0, n.jsxs)(d.Text, {
           variant: "text-sm/normal",
           color: "text-default",
@@ -228,7 +228,7 @@ let U = r.memo(function(e) {
       pid: t
     } = e, a = (0, o.cj)([C.default], () => C.default.getOverlayPIDStatuses()), r = (0, o.cj)([f.default], () => f.default.getTrackedGames()), l = (0, o.e7)([C.default], () => C.default.isInputLocked(t), [t]), i = (0, o.e7)([C.default], () => C.default.DEV_isInputLockedV3(t), [t]), s = (0, o.e7)([C.default], () => C.default.DEV_isInputLocked(t), [t]), c = (0, o.e7)([C.default], () => C.default.isReady(t), [t]);
     return (0, n.jsxs)("div", {
-      className: w.panelGroup,
+      className: I.panelGroup,
       children: [(0, n.jsx)(d.Text, {
         variant: "text-md/semibold",
         color: "text-primary",
@@ -336,15 +336,15 @@ let G = r.memo(function(e) {
 });
 
 function V() {
-  let e = (0, o.e7)([j.ZP], () => j.ZP.hasRenderDebugMode(b.G.TrackFocusPIDs)),
+  let e = (0, o.e7)([g.ZP], () => g.ZP.hasRenderDebugMode(b.G.TrackFocusPIDs)),
     t = (0, o.Wu)([f.default], () => f.default.getDevToolsFocusedPidsWithTimestamp(), []),
     a = () => {
-      m.Z.setRenderDebugMode(!j.ZP.hasRenderDebugMode(b.G.TrackFocusPIDs), b.G.TrackFocusPIDs)
+      m.Z.setRenderDebugMode(!g.ZP.hasRenderDebugMode(b.G.TrackFocusPIDs), b.G.TrackFocusPIDs)
     };
   return (0, n.jsxs)("div", {
-    className: w.panelGroup,
+    className: I.panelGroup,
     children: [(0, n.jsxs)("div", {
-      className: w.panelHeader,
+      className: I.panelHeader,
       children: [(0, n.jsx)(d.XZJ, {
         value: e,
         onChange: () => a(),
@@ -358,7 +358,7 @@ function V() {
           children: "Track Focus Pids"
         })
       }), (0, n.jsx)(d.P3F, {
-        className: w.panelButton,
+        className: I.panelButton,
         onClick: () => m.Z.clearTrackedPids(),
         children: (0, n.jsx)(d.XHJ, {
           size: "md",
@@ -366,7 +366,7 @@ function V() {
         })
       })]
     }), (0, n.jsxs)(d.zJl, {
-      className: i()(w.panelGroup, w.scroller),
+      className: i()(I.panelGroup, I.scroller),
       children: [0 === t.length && (0, n.jsx)(d.Text, {
         variant: "text-sm/normal",
         color: "text-default",
@@ -439,7 +439,7 @@ let H = r.memo(function(e) {
       text: "The most recent screen types we've logged, indexed by pid",
       children: a => (0, n.jsx)("div", A(k({}, a), {
         children: (0, n.jsxs)(d.zJl, {
-          className: i()(w.panelGroup, w.scroller),
+          className: i()(I.panelGroup, I.scroller),
           children: [0 === Object.keys(e).length && (0, n.jsx)(d.Text, {
             variant: "text-sm/normal",
             color: "text-default",
@@ -471,11 +471,11 @@ let H = r.memo(function(e) {
     let a = (0, o.cj)([f.default], () => f.default.getTrackedGames()),
       r = (0, T.getPID)(),
       l = (0, o.e7)([f.default], () => f.default.isOverlayOOPEnabledForPid(r), [r]),
-      [i, s] = (0, o.Wu)([g.Z], () => [g.Z.enabled, g.Z.keepOpen]),
+      [i, s] = (0, o.Wu)([j.Z], () => [j.Z.enabled, j.Z.keepOpen]),
       c = (0, o.e7)([C.default], () => C.default.getFocusedPID()),
       u = (0, o.e7)([C.default], () => C.default.isFocusedPidOutOfProcess());
     return (0, n.jsxs)("div", {
-      className: w.panelGroup,
+      className: I.panelGroup,
       children: [0 === Object.keys(a).length && (0, n.jsx)(d.Text, {
         variant: "text-sm/normal",
         color: "text-default",
@@ -512,8 +512,8 @@ let H = r.memo(function(e) {
     })
   }),
   X = r.memo(function() {
-    let [e, t] = B(S.Odu.CLICK_ZONE_DEBUG), [a, r] = B(S.Odu.PERFORMANCE_DEBUG), l = (0, o.e7)([j.ZP], () => j.ZP.hasRenderDebugMode(b.G.ClickZones)), i = (0, o.e7)([j.ZP], () => j.ZP.hasRenderDebugMode(b.G.WidgetAreas)), s = (0, o.e7)([j.ZP], () => j.ZP.hasRenderDebugMode(b.G.DisabledGPUBoost)), c = (0, o.e7)([j.ZP], () => j.ZP.hasRenderDebugMode(b.G.ForceGPUBoost)), u = e => {
-      m.Z.setRenderDebugMode(!j.ZP.hasRenderDebugMode(e), e)
+    let [e, t] = B(S.Odu.CLICK_ZONE_DEBUG), [a, r] = B(S.Odu.PERFORMANCE_DEBUG), l = (0, o.e7)([g.ZP], () => g.ZP.hasRenderDebugMode(b.G.ClickZones)), i = (0, o.e7)([g.ZP], () => g.ZP.hasRenderDebugMode(b.G.WidgetAreas)), s = (0, o.e7)([g.ZP], () => g.ZP.hasRenderDebugMode(b.G.DisabledGPUBoost)), c = (0, o.e7)([g.ZP], () => g.ZP.hasRenderDebugMode(b.G.ForceGPUBoost)), u = e => {
+      m.Z.setRenderDebugMode(!g.ZP.hasRenderDebugMode(e), e)
     }, x = () => {
       u(b.G.ClickZones)
     }, p = () => {
@@ -524,7 +524,7 @@ let H = r.memo(function(e) {
       u(b.G.ForceGPUBoost)
     };
     return (0, n.jsxs)("div", {
-      className: w.panelGroup,
+      className: I.panelGroup,
       children: [(0, n.jsx)(d.ua7, {
         position: "left",
         text: "Enables a red border around click zones to help with debugging.",
@@ -646,7 +646,7 @@ let H = r.memo(function(e) {
         text: "Games that are running but not tracked by the overlay",
         children: e => (0, n.jsx)("div", A(k({}, e), {
           children: (0, n.jsxs)("div", {
-            className: w.panelGroup,
+            className: I.panelGroup,
             children: [(0, n.jsx)(d.Text, {
               variant: "text-md/bold",
               color: "text-danger",
@@ -665,7 +665,7 @@ let H = r.memo(function(e) {
         text: "The current running games process information",
         children: t => (0, n.jsx)("div", A(k({}, t), {
           children: (0, n.jsxs)("div", {
-            className: w.panelGroup,
+            className: I.panelGroup,
             children: [0 === Object.keys(e).length && (0, n.jsx)(d.Text, {
               variant: "text-sm/normal",
               color: "text-default",
@@ -703,7 +703,7 @@ let H = r.memo(function(e) {
       position: "left",
       text: "Override the overlay render mode",
       children: e => (0, n.jsx)("div", A(k({}, e), {
-        className: w.panelGroup,
+        className: I.panelGroup,
         children: (0, n.jsx)(d.PhF, {
           serialize: e => e,
           isSelected: e => e === t,
@@ -718,7 +718,7 @@ let H = r.memo(function(e) {
 function q() {
   return (0, n.jsx)(d.w0Z, {
     children: (0, n.jsxs)("div", {
-      className: i()(R.panel, w.panel),
+      className: i()(R.panel, I.panel),
       children: [(0, n.jsx)(X, {}), (0, n.jsx)(J, {}), (0, n.jsx)(Y, {}), (0, n.jsx)(K, {}), (0, n.jsx)(V, {}), (0, n.jsx)(W, {})]
     })
   })

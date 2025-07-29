@@ -1,10 +1,10 @@
-/** Chunk was on 43473 **/
-n.d(t, {
-  k: () => a
+/** Chunk was on 93886 **/
+a.d(t, {
+  k: () => i
 });
-var r = n(818083),
-  o = n(438379);
-let i = (0, r.B)({
+var n = a(818083),
+  r = a(438379);
+let l = (0, n.B)({
   kind: "user",
   id: "2025-07_user_profile_game_widgets",
   label: "User Profile Game Widgets",
@@ -20,20 +20,20 @@ let i = (0, r.B)({
   }]
 });
 
-function a(e) {
+function i(e) {
   let {
     location: t,
-    autoTrackExposure: n = !0
-  } = e, r = (0, o.J)({
+    autoTrackExposure: a = !0
+  } = e, n = (0, r.J)({
     location: t,
-    autoTrackExposure: n
+    autoTrackExposure: a
   }), {
-    enabled: a
-  } = i.useExperiment({
+    enabled: i
+  } = l.useExperiment({
     location: t
   }, {
-    autoTrackExposure: n,
-    disable: r
+    autoTrackExposure: a,
+    disable: n
   });
-  return a
+  return i
 }

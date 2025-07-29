@@ -19,7 +19,7 @@ var n = a(255367),
   f = a(203759),
   v = a(616257);
 
-function j(e) {
+function g(e) {
   let {
     recording: t
   } = e;
@@ -46,7 +46,7 @@ function j(e) {
   })
 }
 
-function g(e) {
+function j(e) {
   let {
     recording: t,
     playing: a,
@@ -54,7 +54,7 @@ function g(e) {
     onStop: l
   } = e;
   return (0, n.jsx)(c.zF9, {
-    collapsibleContent: (0, n.jsx)(j, {
+    collapsibleContent: (0, n.jsx)(g, {
       recording: t
     }),
     children: e => {
@@ -100,12 +100,12 @@ function g(e) {
 function _() {
   let {
     name: e
-  } = (0, x.p)(b.h7.AUDIO_INPUT), [t, a] = r.useState(!1), [l, i] = r.useState([]), j = (0, s.e7)([p.Z], () => p.Z.getKrispSuppressionLevel()), [_, y] = r.useState(null), C = r.useRef(null), O = r.useRef(null), [N, T] = r.useState(.5), {
+  } = (0, x.p)(b.h7.AUDIO_INPUT), [t, a] = r.useState(!1), [l, i] = r.useState([]), g = (0, s.e7)([p.Z], () => p.Z.getKrispSuppressionLevel()), [_, y] = r.useState(null), C = r.useRef(null), O = r.useRef(null), [N, T] = r.useState(.5), {
     krispModels: E,
     krispModelOverride: S,
     inputMode: P,
-    echoCancellation: I,
-    autoThreshold: w,
+    echoCancellation: w,
+    autoThreshold: I,
     vadUseKrisp: R,
     vadKrispActivationThreshold: k,
     noiseCancellation: A,
@@ -183,7 +183,7 @@ function _() {
           title: "Krisp Suppression Level",
           tag: c.RB0.H3,
           children: (0, n.jsx)(c.iRW, {
-            initialValue: j,
+            initialValue: g,
             onValueChange: d.Z.setKrispSuppressionLevel,
             minValue: 0,
             maxValue: 100
@@ -222,13 +222,13 @@ function _() {
           tag: c.RB0.H3,
           children: (0, n.jsx)(c.j7V, {
             hideBorder: !0,
-            value: w,
+            value: I,
             onChange: e => d.Z.setMode(b.pM.VOICE_ACTIVITY, {
               autoThreshold: e
             }),
             children: "Auto Threshold"
           })
-        }), w && (0, n.jsxs)(n.Fragment, {
+        }), I && (0, n.jsxs)(n.Fragment, {
           children: [(0, n.jsx)(c.hjN, {
             title: "VAD Krisp Auto Threshold",
             tag: c.RB0.H3,
@@ -257,7 +257,7 @@ function _() {
         tag: c.RB0.H3,
         children: (0, n.jsx)(c.j7V, {
           hideBorder: !0,
-          value: I,
+          value: w,
           onChange: e => d.Z.setEchoCancellation(e),
           children: "Echo Cancellation"
         })
@@ -284,8 +284,8 @@ function _() {
                 audioBuffer: l,
                 createdAt: Date.now(),
                 suppression: U,
-                echoCancellation: I,
-                krispSuppressionLevel: j
+                echoCancellation: w,
+                krispSuppressionLevel: g
               }])
             })
           },
@@ -305,7 +305,7 @@ function _() {
       }), (0, n.jsx)(c.hjN, {
         title: "Recordings",
         tag: c.RB0.H3,
-        children: l.map((e, t) => (0, n.jsx)(g, {
+        children: l.map((e, t) => (0, n.jsx)(j, {
           recording: e,
           playing: e === _,
           onPlay: G,

@@ -12,8 +12,8 @@ var o = n(442837),
   s = n(138201),
   d = n(699516),
   u = n(5192),
-  m = n(785717),
-  f = n(221292),
+  f = n(785717),
+  m = n(221292),
   p = n(687158),
   g = n(316027),
   b = n(502762),
@@ -51,12 +51,12 @@ function O(e) {
     messageId: P,
     roleId: N,
     transitionState: T,
-    openedAt: A,
-    onHide: Z,
+    openedAt: Z,
+    onHide: A,
     sourceAnalyticsLocations: C = []
   } = e, w = n === j.ME ? void 0 : n, E = (0, o.e7)([d.Z], () => d.Z.isBlocked(t.id)), {
     analyticsLocations: S
-  } = (0, c.ZP)([...C, E ? l.Z.BLOCKED_PROFILE_MODAL : l.Z.IGNORED_PROFILE_MODAL]), L = (0, m.ZB)({
+  } = (0, c.ZP)([...C, E ? l.Z.BLOCKED_PROFILE_MODAL : l.Z.IGNORED_PROFILE_MODAL]), L = (0, f.ZB)({
     layout: "MODAL_V2",
     userId: t.id,
     showGuildProfile: !0,
@@ -75,9 +75,9 @@ function O(e) {
   });
   return (0, r.jsx)(c.Gt, {
     value: S,
-    children: (0, r.jsx)(m.Mt, {
+    children: (0, r.jsx)(f.Mt, {
       value: L,
-      openedAt: A,
+      openedAt: Z,
       fetchStartedAt: null == k ? void 0 : k.fetchStartedAt,
       fetchEndedAt: null == k ? void 0 : k.fetchEndedAt,
       isLoaded: null == k ? void 0 : k.isLoaded,
@@ -131,7 +131,7 @@ function O(e) {
                 size: i.Ph.MEDIUM,
                 isBlocked: E,
                 onClick: () => {
-                  Z(), (0, f.pQ)(I({
+                  A(), (0, m.pQ)(I({
                     action: E ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
                     analyticsLocations: S
                   }, L))
@@ -139,7 +139,7 @@ function O(e) {
               }), (0, r.jsx)(x.Z, {
                 userId: t.id,
                 onClick: () => {
-                  Z(), (0, f.pQ)(I({
+                  A(), (0, m.pQ)(I({
                     action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
                     analyticsLocations: S
                   }, L))

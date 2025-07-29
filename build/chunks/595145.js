@@ -11,8 +11,8 @@ var r = n(255367),
   s = n(727637),
   d = n(616780),
   u = n(100527),
-  m = n(906732),
-  f = n(313201),
+  f = n(906732),
+  m = n(313201),
   p = n(368326),
   g = n(429467),
   b = n(320582),
@@ -27,8 +27,8 @@ var r = n(255367),
   P = n(221292),
   N = n(687158),
   T = n(771362),
-  A = n(510659),
-  Z = n(113557),
+  Z = n(510659),
+  A = n(113557),
   C = n(648052),
   w = n(867176),
   E = n(280885),
@@ -70,11 +70,11 @@ function $(e) {
     openedAt: es,
     onClose: ed,
     showGuildProfile: eu = !0,
-    sourceAnalyticsLocations: em = [],
-    disableActionsForPreview: ef = !1
+    sourceAnalyticsLocations: ef = [],
+    disableActionsForPreview: em = !1
   } = e, {
     analyticsLocations: ep
-  } = (0, m.ZP)([...em, u.Z.USER_PROFILE_MODAL_V2]), eg = (0, O.ZB)({
+  } = (0, f.ZP)([...ef, u.Z.USER_PROFILE_MODAL_V2]), eg = (0, O.ZB)({
     layout: "MODAL_V2",
     userId: n.id,
     sourceSessionId: eo,
@@ -83,7 +83,7 @@ function $(e) {
     messageId: en,
     roleId: er,
     showGuildProfile: eu
-  }), eb = o.useRef(null), ex = (0, s.Z)(eb), eh = (0, A.$m)(), e_ = (0, l.q_F)({
+  }), eb = o.useRef(null), ex = (0, s.Z)(eb), eh = (0, Z.$m)(), e_ = (0, l.q_F)({
     opacity: +(null != eh.interactionType),
     config: {
       duration: 150
@@ -109,8 +109,8 @@ function $(e) {
     eT = (0, p.p)({
       location: "UserProfileModalV2"
     }),
-    eA = o.useMemo(() => null != ec ? ec : (0, g.Z)(), [ec]),
-    eZ = (0, z.Z)({
+    eZ = o.useMemo(() => null != ec ? ec : (0, g.Z)(), [ec]),
+    eA = (0, z.Z)({
       user: n,
       currentUser: $
     }),
@@ -119,11 +119,11 @@ function $(e) {
     }),
     ew = (0, b.vh)(n.id),
     eE = (0, T.Z)(n.id),
-    eS = (0, f.Dt)(),
+    eS = (0, m.Dt)(),
     eL = q.intl.format(q.t.KRe1Fh, {
       name: ev
     });
-  return (0, r.jsx)(m.Gt, {
+  return (0, r.jsx)(f.Gt, {
     value: ep,
     children: (0, r.jsx)(O.Mt, {
       value: eg,
@@ -131,7 +131,7 @@ function $(e) {
       fetchStartedAt: null == ey ? void 0 : ey.fetchStartedAt,
       fetchEndedAt: null == ey ? void 0 : ey.fetchEndedAt,
       isLoaded: null == ey ? void 0 : ey.isLoaded,
-      children: (0, r.jsx)(A.NJ, {
+      children: (0, r.jsx)(Z.NJ, {
         value: eh,
         children: (0, r.jsxs)(l.Y0X, {
           hideShadow: !0,
@@ -139,7 +139,7 @@ function $(e) {
           transitionState: el,
           "aria-labelledby": eS,
           parentComponent: "UserProfileModalV2",
-          children: [ef ? (0, r.jsxs)("div", {
+          children: [em ? (0, r.jsxs)("div", {
             className: Q.previewBar,
             children: [(0, r.jsxs)(l.X6q, {
               id: eS,
@@ -165,7 +165,7 @@ function $(e) {
             })
           }), (0, r.jsx)(l.y5t, {
             children: (0, r.jsxs)(G.Z, {
-              className: ef ? Q.disabled : void 0,
+              className: em ? Q.disabled : void 0,
               user: n,
               displayProfile: ey,
               themeType: K.lY.MODAL_V2,
@@ -190,7 +190,7 @@ function $(e) {
                     userId: n.id,
                     onClose: ed,
                     className: Q.toast
-                  }), (0, r.jsx)(Z.Z, {
+                  }), (0, r.jsx)(A.Z, {
                     location: "UserProfileModalV2",
                     user: n,
                     displayProfile: ey,
@@ -204,8 +204,8 @@ function $(e) {
                     channelId: et,
                     themeType: K.lY.MODAL_V2,
                     hasEntered: el === l.Dvm.ENTERED,
-                    prompt: eT && n.id === $.id ? eA : null,
-                    disableToolbar: ef
+                    prompt: eT && n.id === $.id ? eZ : null,
+                    disableToolbar: em
                   })]
                 }), (0, r.jsxs)(l.Ttm, {
                   fade: !0,
@@ -352,7 +352,7 @@ function $(e) {
                 displayProfile: ey,
                 guildId: ee,
                 channelId: et,
-                items: eZ,
+                items: eA,
                 initialSection: ei,
                 initialSubsection: ea,
                 onClose: ed

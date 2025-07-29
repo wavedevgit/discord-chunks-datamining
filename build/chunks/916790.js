@@ -18,8 +18,8 @@ var n = a(255367),
   b = a(4912),
   f = a(572004),
   v = a(55935),
-  j = a(428530),
-  g = a(257785),
+  g = a(428530),
+  j = a(257785),
   _ = a(484036),
   y = a(681619),
   C = a(621060),
@@ -64,7 +64,7 @@ function P(e) {
     })
   })
 }
-let I = [{
+let w = [{
   id: "action",
   name: "Action",
   group: C.v0.NONE,
@@ -74,22 +74,22 @@ let I = [{
       actionLog: a
     } = e, r = c()(a.createdAt);
     return (0, n.jsxs)(n.Fragment, {
-      children: [(0, n.jsxs)(g.E, {
+      children: [(0, n.jsxs)(j.E, {
         className: N.actionProperties,
-        children: [(0, n.jsx)(g.Z9, {
+        children: [(0, n.jsx)(j.Z9, {
           name: "Created at",
           children: (0, n.jsx)("time", {
             dateTime: null == (t = a.createdAt) ? void 0 : t.toISOString(),
             title: (0, v.vc)(r, "LLLL"),
             children: (0, v.Y4)(r)
           })
-        }), (0, n.jsxs)(g.Z9, {
+        }), (0, n.jsxs)(j.Z9, {
           name: "Total Time",
           children: [E(a.totalTime), " ms"]
         })]
       }), (0, n.jsx)(u.zJl, {
         className: N.inspectorContainer,
-        children: (0, n.jsx)(j.Z, {
+        children: (0, n.jsx)(g.Z, {
           data: a.action
         })
       })]
@@ -109,11 +109,11 @@ let I = [{
   }
 }];
 
-function w(e) {
+function I(e) {
   let {
     actionLog: t,
     initialHeight: a
-  } = e, l = r.useMemo(() => t.error ? [...I, {
+  } = e, l = r.useMemo(() => t.error ? [...w, {
     id: "error",
     name: (0, n.jsxs)(n.Fragment, {
       children: [(0, n.jsx)(b.Z, {
@@ -139,13 +139,13 @@ function w(e) {
           })
         }), (0, n.jsx)(u.zJl, {
           className: N.inspectorContainer,
-          children: (0, n.jsx)(j.Z, {
+          children: (0, n.jsx)(g.Z, {
             data: t.error
           })
         })]
       })
     }
-  }] : I, [t]), {
+  }] : w, [t]), {
     TabBar: s,
     renderSelectedTab: o
   } = (0, C.ZP)({
@@ -248,11 +248,11 @@ function A() {
     [c, d] = r.useState(o),
     [x, p] = r.useState(o),
     [b, f] = r.useState(!1),
-    [v, j] = r.useState(),
-    g = r.useCallback(e => {
+    [v, g] = r.useState(),
+    j = r.useCallback(e => {
       p(e)
     }, []);
-  (0, h.BO)(t, b ? c : o, g, k);
+  (0, h.BO)(t, b ? c : o, j, k);
   let _ = r.useCallback(e => {
       d(o), f(e)
     }, [o]),
@@ -281,8 +281,8 @@ function A() {
       columns: R,
       data: O,
       selectedRowKey: null == v ? void 0 : v.id.toString(),
-      onClickRow: e => j(e.actionLog)
-    }), null != v && (0, n.jsx)(w, {
+      onClickRow: e => g(e.actionLog)
+    }), null != v && (0, n.jsx)(I, {
       actionLog: v,
       initialHeight: null != e.current ? e.current.clientHeight / 2 : 300
     })]
