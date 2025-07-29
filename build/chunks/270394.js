@@ -26,8 +26,8 @@ var r = n(255367),
   C = n(933557),
   N = n(346486),
   S = n(600164),
-  I = n(925329),
-  E = n(666657),
+  E = n(925329),
+  I = n(666657),
   T = n(664452),
   w = n(560114),
   Z = n(685929),
@@ -221,9 +221,9 @@ function Y(e) {
     channel: i,
     inviteSource: (0, r.jsxs)("div", {
       className: U.linkedChannelJoinSource,
-      children: [(0, r.jsx)(I.Z, {
+      children: [(0, r.jsx)(E.Z, {
         game: a,
-        size: I.Z.Sizes.XXSMALL
+        size: E.Z.Sizes.XXSMALL
       }), (0, r.jsx)(g.Text, {
         className: U.linkedChannelJoinSourceText,
         variant: "text-sm/normal",
@@ -277,7 +277,7 @@ function X(e) {
       type: "channel",
       data: e
     }))], [_, C, h]),
-    I = () => {
+    E = () => {
       (0, g.ZDy)(async () => e => (0, r.jsx)(w.default, z(G({}, e), {
         channel: u,
         guild: l,
@@ -287,7 +287,7 @@ function X(e) {
     [Z, A] = i.useState(62),
     k = () => {
       let e = {
-        source: E.Zu.GUILD_SETTINGS
+        source: I.Zu.GUILD_SETTINGS
       };
       (0, g.ZDy)(async () => t => (0, r.jsx)(T.default, z(G({}, t), {
         guildId: l.id,
@@ -363,7 +363,7 @@ function X(e) {
           className: H.marginBottom20,
           type: g.geA.DESCRIPTION,
           children: !0 === a ? B.intl.format(B.t["97VdNj"], {
-            onCreateInvite: I
+            onCreateInvite: E
           }) : B.intl.string(B.t.WDw38P)
         }), (0, r.jsxs)("div", {
           className: U.inviteDisabledContainer,
@@ -393,7 +393,7 @@ function X(e) {
         hasInvites: _.length > 0,
         setHeight: A,
         onShowDisableInvites: k,
-        onShowInviteModal: I,
+        onShowInviteModal: E,
         hasInviteDisabledPermission: j,
         invitesDisabled: O,
         canCreateInvites: a

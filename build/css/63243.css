@@ -1,6 +1,6 @@
 /**
   Module ID: 63243
-  Original File Name: 6ca161ec7cf89224
+  Original File Name: a2cd2eecacb42f63
 **/
 @value minColumnWidth: 460px;
 
@@ -445,9 +445,9 @@
 
 .message_fcf29c {
     color: var(--text-default);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: var(--font-weight-medium);
-    line-height: 20px;
+    line-height: 1.25rem;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap
@@ -1532,4 +1532,4 @@
     margin-left: var(--space-12)
 }
 
-/*# sourceMappingURL=6ca161ec7cf89224.css.map*/
+/*# sourceMappingURL=a2cd2eecacb42f63.css.map*/

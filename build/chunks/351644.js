@@ -26,8 +26,8 @@ var r = n(255367),
   C = n(626135),
   N = n(768581),
   S = n(63063),
-  I = n(709054),
-  E = n(51144),
+  E = n(709054),
+  I = n(51144),
   T = n(466070),
   w = n(585835),
   Z = n(997787),
@@ -147,13 +147,13 @@ function W(e) {
       return null != l.user ? o.push({
         icon: u.T39,
         text: k.intl.formatToPlainString(k.t.Nu9sam, {
-          timestamp: I.default.extractTimestamp(l.id),
-          user: E.ZP.getUserTag(l.user)
+          timestamp: E.default.extractTimestamp(l.id),
+          user: I.ZP.getUserTag(l.user)
         })
       }) : o.push({
         icon: u.T39,
         text: k.intl.formatToPlainString(k.t.gcdJ8P, {
-          timestamp: I.default.extractTimestamp(l.id)
+          timestamp: E.default.extractTimestamp(l.id)
         })
       }), (0, r.jsx)(w.Z, {
         name: i.name,
@@ -231,8 +231,8 @@ function W(e) {
       });
     return t > 0 ? l : o
   }(ee, ef, null == W ? void 0 : W.id), eS = null);
-  let eI = S.Z.getArticleURL(P.BhN.INTEGRATIONS),
-    eE = null != H ? k.t.YV0vh4 : k.t.FnZEJi,
+  let eE = S.Z.getArticleURL(P.BhN.INTEGRATIONS),
+    eI = null != H ? k.t.YV0vh4 : k.t.FnZEJi,
     eT = [];
   if (el) {
     let e, t, i, o, a;
@@ -330,8 +330,8 @@ function W(e) {
     className: o()(null != eS ? D.footerPlaceholder : null),
     children: [(0, r.jsx)(u.R94, {
       type: u.geA.DESCRIPTION,
-      children: k.intl.format(eE, {
-        helpdeskArticle: eI
+      children: k.intl.format(eI, {
+        helpdeskArticle: eE
       })
     }), (0, r.jsx)(u.$i$, {
       className: D.divider

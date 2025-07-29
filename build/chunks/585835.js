@@ -30,8 +30,8 @@ function _(e) {
     icon: C,
     imageSrc: N,
     iconBackgroundColor: S,
-    iconClassName: I,
-    iconWrapperClassName: E,
+    iconClassName: E,
+    iconWrapperClassName: I,
     details: T,
     integration: w,
     buttonText: Z,
@@ -126,8 +126,8 @@ function _(e) {
         icon: C,
         imageSrc: N,
         iconBackgroundColor: S,
-        iconClassName: I,
-        iconWrapperClassName: E,
+        iconClassName: E,
+        iconWrapperClassName: I,
         details: T,
         isPremium: q.length > 0
       }), (0, r.jsx)(m.Z.Child, {
