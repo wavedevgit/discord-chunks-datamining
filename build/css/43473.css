@@ -1,6 +1,6 @@
 /**
   Module ID: 43473
-  Original File Name: 6f3a3736b57b4e2e
+  Original File Name: 53e048af9e8eb22a
 **/
 .scroller__95bea {
     display: flex;
@@ -1174,7 +1174,7 @@
     gap: var(--space-8)
 }
 
-.container__834d8 {
+.container__62dd3 {
     background: var(--user-profile-overlay-background);
     border: 1px solid var(--border-faint);
     border-radius: var(--radius-lg);
@@ -1182,6 +1182,46 @@
     flex-direction: column;
     gap: var(--space-16);
     padding: var(--space-16)
+}
+
+.gameCover__1a3d6 {
+    background-color: var(--background-mod-faint);
+    border-radius: 8px;
+    box-sizing: border-box;
+    height: 117px;
+    width: 88px
+}
+
+.gameCoverImage__1a3d6 {
+    object-fit: cover
+}
+
+.fallback__1a3d6 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px;
+    text-align: center;
+    word-break: break-word
+}
+
+.clickable__1a3d6 {
+    cursor: pointer
+}
+
+.coverList__1094b {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px
+}
+
+.scroller__3b923 {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    height: 100%;
+    padding-bottom: 16px
 }
 
 .container__37bfc {
@@ -1414,4 +1454,4 @@
     border-color: var(--input-focused-border)
 }
 
-/*# sourceMappingURL=6f3a3736b57b4e2e.css.map*/
+/*# sourceMappingURL=53e048af9e8eb22a.css.map*/

@@ -6,9 +6,9 @@ var r = n(255367);
 n(73800);
 var o = n(788111),
   i = n(752342),
-  c = n(886794),
+  a = n(886794),
   l = n(858970),
-  a = n(595145);
+  c = n(595145);
 
 function s(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -52,5 +52,5 @@ function d(e) {
   } = n, [u, f] = (0, o.Z)(d.id);
   return u && !t ? (0, r.jsx)(l.Z, s({
     onHide: f
-  }, n)) : d.isNonUserBot() ? (0, r.jsx)(c.Z, s({}, n)) : d.bot ? (0, r.jsx)(i.Z, s({}, n)) : (0, r.jsx)(a.Z, s({}, n))
+  }, n)) : d.isNonUserBot() ? (0, r.jsx)(a.Z, s({}, n)) : d.bot ? (0, r.jsx)(i.Z, s({}, n)) : (0, r.jsx)(c.Z, s({}, n))
 }

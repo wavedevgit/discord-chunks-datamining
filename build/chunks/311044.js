@@ -1,49 +1,49 @@
 /** Chunk was on 43473 **/
 n.d(t, {
-  Z: () => x
+  Z: () => b
 });
 var r = n(255367),
   o = n(73800),
   i = n(481060),
-  c = n(81897),
+  a = n(81897),
   l = n(906732),
-  a = n(566898),
+  c = n(566898),
   s = n(785717),
   d = n(806729),
   u = n(857302),
   f = n(892001),
   m = n(252417),
   p = n(264481),
-  b = n(714905);
+  g = n(714905);
 
-function x(e) {
+function b(e) {
   let {
     user: t,
     guildId: n,
-    channelId: x,
-    onClose: h
+    channelId: b,
+    onClose: x
   } = e, {
     analyticsLocations: _
   } = (0, l.ZP)(), {
-    context: g,
+    context: h,
     trackUserProfileAction: y
   } = (0, s.KZ)(), {
     mutualFriends: j,
     mutualFriendsCount: v
-  } = (0, d.Z)(t), I = (0, c.Z)();
+  } = (0, d.Z)(t), I = (0, a.Z)();
   return o.useEffect(() => {
     (0, u.Z)(t.id, I)
   }, [t.id, I]), (0, r.jsx)(i.Ttm, {
-    className: b.scroller,
+    className: g.scroller,
     fade: !0,
     children: null == j ? Array.from({
       length: null != v ? v : 10
     }).map((e, t) => (0, r.jsxs)("div", {
-      className: b.friendsLoadingItem,
-      children: [(0, r.jsx)(a.ZT, {
+      className: g.friendsLoadingItem,
+      children: [(0, r.jsx)(c.ZT, {
         width: 40,
         opacity: .08
-      }), (0, r.jsx)(a.ZT, {
+      }), (0, r.jsx)(c.ZT, {
         width: 135,
         opacity: .08
       })]
@@ -57,10 +57,10 @@ function x(e) {
         user: o,
         status: i,
         guildId: n,
-        channelId: x,
+        channelId: b,
         onSelect: () => {
           var e, t;
-          null == h || h(), y({
+          null == x || x(), y({
             action: "PRESS_MUTUAL_FRIEND"
           }), (0, f.openUserProfileModal)((e = function(e) {
             for (var t = 1; t < arguments.length; t++) {
@@ -79,7 +79,7 @@ function x(e) {
               })
             }
             return e
-          }({}, g), t = t = {
+          }({}, h), t = t = {
             userId: o.id,
             sourceAnalyticsLocations: _
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {

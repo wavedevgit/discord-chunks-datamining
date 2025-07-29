@@ -1,14 +1,14 @@
 /** Chunk was on 43473 **/
 n.d(t, {
-  Z: () => b
+  Z: () => g
 });
 var r = n(255367);
 n(73800);
 var o = n(755721),
   i = n(572691),
-  c = n(906732),
+  a = n(906732),
   l = n(444141),
-  a = n(705556),
+  c = n(705556),
   s = n(30556),
   d = n(664794),
   u = n(522182),
@@ -16,23 +16,23 @@ var o = n(755721),
   m = n(562831),
   p = n(981631);
 
-function b(e) {
+function g(e) {
   let {
     user: t,
     currentUser: n,
-    guildId: b,
-    channelId: x,
-    displayProfile: h,
+    guildId: g,
+    channelId: b,
+    displayProfile: x,
     relationshipType: _,
-    onClose: g
+    onClose: h
   } = e, {
     newestAnalyticsLocation: y
-  } = (0, c.ZP)(), j = (0, l.Z)({
+  } = (0, a.ZP)(), j = (0, l.Z)({
     user: t,
-    guildId: b,
-    channelId: x,
-    displayProfile: h,
-    onClose: g
+    guildId: g,
+    channelId: b,
+    displayProfile: x,
+    onClose: h
   }), {
     gameFriends: v,
     hasOutgoingPendingGameFriends: I,
@@ -41,16 +41,16 @@ function b(e) {
     userId: t.id
   }), P = v.length > 0 || I || O;
   return _ === p.OGo.BLOCKED ? null : t.id === n.id ? (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(a.Z, {
+    children: [(0, r.jsx)(c.Z, {
       user: t,
-      guildId: b,
-      onClose: g
+      guildId: g,
+      onClose: h
     }), (0, r.jsx)(u.Z, {
-      onClose: g
+      onClose: h
     }), (0, r.jsx)(d.Z, {
       type: "icon",
       user: t,
-      guildId: b,
+      guildId: g,
       viewProfileItem: j,
       themeColor: "secondary"
     })]
@@ -63,7 +63,7 @@ function b(e) {
     }), (0, r.jsx)(d.Z, {
       type: "icon",
       user: t,
-      guildId: b,
+      guildId: g,
       viewProfileItem: j,
       themeColor: "secondary"
     })]
@@ -77,7 +77,7 @@ function b(e) {
     }), (0, r.jsx)(d.Z, {
       type: "icon",
       user: t,
-      guildId: b,
+      guildId: g,
       themeColor: "secondary"
     })]
   }) : _ === p.OGo.FRIEND || _ === p.OGo.PENDING_OUTGOING ? (0, r.jsxs)(r.Fragment, {
@@ -97,7 +97,7 @@ function b(e) {
     }), (0, r.jsx)(d.Z, {
       type: "icon",
       user: t,
-      guildId: b,
+      guildId: g,
       viewProfileItem: j,
       themeColor: "secondary"
     })]
@@ -121,7 +121,7 @@ function b(e) {
     }), (0, r.jsx)(d.Z, {
       type: "icon",
       user: t,
-      guildId: b,
+      guildId: g,
       viewProfileItem: j,
       themeColor: "secondary"
     })]
@@ -140,7 +140,7 @@ function b(e) {
     }), (0, r.jsx)(d.Z, {
       type: "icon",
       user: t,
-      guildId: b,
+      guildId: g,
       viewProfileItem: j,
       themeColor: "secondary"
     })]

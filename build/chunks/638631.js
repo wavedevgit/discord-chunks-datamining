@@ -14,7 +14,7 @@ let c = e => {
       trialOffer: t,
       discountOffer: n
     } = e;
-    return null != t ? l.intl.string(l.t.gtNqJS) : null != n ? l.intl.formatToPlainString(l.t.iiLbvr, {
+    return null != t ? null != t.referrer_id ? l.intl.string(l.t.gtNqJS) : l.intl.string(l.t.IBYG5e) : null != n ? l.intl.formatToPlainString(l.t.iiLbvr, {
       percent: n.discount.amount
     }) : void 0
   },

@@ -1,15 +1,15 @@
 /** Chunk was on 43473 **/
 n.d(t, {
-  Z: () => a
+  Z: () => c
 });
 var r = n(255367);
 n(73800);
 var o = n(120356),
   i = n.n(o),
-  c = n(678738),
+  a = n(678738),
   l = n(362258);
 
-function a(e) {
+function c(e) {
   var {
     className: t
   } = e, n = function(e, t) {
@@ -27,7 +27,7 @@ function a(e) {
     }
     return o
   }(e, ["className"]);
-  return (0, r.jsx)(c.Z, function(e) {
+  return (0, r.jsx)(a.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

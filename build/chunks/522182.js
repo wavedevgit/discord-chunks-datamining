@@ -6,9 +6,9 @@ var r = n(255367);
 n(73800);
 var o = n(481060),
   i = n(906732),
-  c = n(335131),
+  a = n(335131),
   l = n(475413),
-  a = n(388032);
+  c = n(388032);
 
 function s(e) {
   var {
@@ -52,10 +52,10 @@ function s(e) {
   }({
     action: "VISIT_SHOP",
     icon: o.EOn,
-    tooltipText: a.intl.string(a.t.b2d0Nz),
+    tooltipText: c.intl.string(c.t.b2d0Nz),
     themeColor: "secondary",
     onClick: () => {
-      (0, c.mK)({
+      (0, a.mK)({
         analyticsLocations: s,
         openInLayer: !1,
         analyticsSource: d
