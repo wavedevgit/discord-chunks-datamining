@@ -1,13 +1,13 @@
-/** Chunk was on 41629 **/
+/** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => c
+  Z: () => o
 });
-var s = n(594174),
-  r = n(111361),
-  i = n(474936);
+var r = n(594174),
+  i = n(111361),
+  a = n(474936);
 
-function c() {
-  let e = s.default.getCurrentUser();
-  return (0, r.I5)(e, i.p9.TIER_2)
+function o() {
+  let e = r.default.getCurrentUser();
+  return (0, i.I5)(e, a.p9.TIER_2)
 }

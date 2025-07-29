@@ -6,9 +6,9 @@ n.d(t, {
   gr: () => h,
   hQ: () => g
 });
-var s, r = n(73800),
-  i = n(913527),
-  c = n.n(i),
+var s, i = n(73800),
+  r = n(913527),
+  c = n.n(r),
   a = n(442837),
   o = n(493683),
   u = n(336197),
@@ -28,11 +28,11 @@ function b(e) {
     string: "",
     isOverdue: !1
   };
-  let r = 0 === s ? d.t.TjNWND : d.t.H4gnX1,
-    i = 0 === s ? d.t.haia19 : d.t["Uq7Y+/"],
+  let i = 0 === s ? d.t.TjNWND : d.t.H4gnX1,
+    r = 0 === s ? d.t.haia19 : d.t["Uq7Y+/"],
     a = n > t;
   return {
-    dueInText: d.intl.formatToPlainString(a ? i : r, {
+    dueInText: d.intl.formatToPlainString(a ? r : i, {
       duration: c().duration(t.getTime() - n.getTime(), "millisecond").humanize()
     }),
     isOverdue: a
@@ -41,7 +41,7 @@ function b(e) {
 
 function h(e) {
   let t = (0, a.e7)([p.Z], () => p.Z.getChannel(e.saveData.channelId));
-  return r.useMemo(() => null != t ? t : null != e.message ? new l.nl({
+  return i.useMemo(() => null != t ? t : null != e.message ? new l.nl({
     id: e.saveData.channelId,
     guild_id: e.saveData.guildId,
     type: f.d4z.UNKNOWN,
