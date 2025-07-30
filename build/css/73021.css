@@ -1,6 +1,6 @@
 /**
   Module ID: 73021
-  Original File Name: 2110ef974bcf968c
+  Original File Name: 87fab5139aea65c7
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -6834,6 +6834,15 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
     margin-left: 4px
 }
 
+.section__25879 {
+    display: flex;
+    gap: 4px
+}
+
+.newBadge__25879 {
+    margin-left: 8px
+}
+
 .buttonsContainer_ffefd9 {
     display: flex
 }
@@ -7384,15 +7393,6 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
 
 .displayNameStylesSection_e60bc0 {
     margin-top: var(--space-24)
-}
-
-.section__25879 {
-    display: flex;
-    gap: 4px
-}
-
-.newBadge__25879 {
-    margin-left: 8px
 }
 
 .sectionsContainer_def11f {
@@ -19901,4 +19901,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=2110ef974bcf968c.css.map*/
+/*# sourceMappingURL=87fab5139aea65c7.css.map*/

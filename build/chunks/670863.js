@@ -1,6 +1,6 @@
 /** Chunk was on 66005 **/
 n.d(t, {
-  j: () => v
+  j: () => _
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -17,12 +17,12 @@ var r = n(255367),
   g = n(388032),
   h = n(583453),
   b = n(20493);
-let _ = "SHOW_MORE";
+let v = "SHOW_MORE";
 
-function v(e) {
+function _(e) {
   var t, {
       deviceType: n,
-      location: v,
+      location: _,
       showAllDevices: y = !1,
       selectedDeviceId: O,
       onSelectDevice: S,
@@ -79,7 +79,7 @@ function v(e) {
     }
   } [n], {
     analyticsLocations: N
-  } = (0, s.ZP)(), [A, w] = i.useState(y), D = T(v), [Z, L] = (0, f.L)(n, {
+  } = (0, s.ZP)(), [A, w] = i.useState(y), D = T(_), [Z, L] = (0, f.L)(n, {
     location: D
   }), {
     id: M
@@ -88,7 +88,7 @@ function v(e) {
     className: b.marginTop8,
     children: C()
   }), R = i.useCallback(e => {
-    if (e === _) w(!0), d.default.track(p.rMx.DEVICES_LIST_SHOW_MORE_CLICKED, {
+    if (e === v) w(!0), d.default.track(p.rMx.DEVICES_LIST_SHOW_MORE_CLICKED, {
       device_type: n,
       location: D,
       location_stack: N,
@@ -159,7 +159,7 @@ function v(e) {
           return t.concat(n)
         } {
           let e = {
-            value: _,
+            value: v,
             label: g.intl.string(g.t.E99UMj),
             preventCloseOnSelect: !0
           };

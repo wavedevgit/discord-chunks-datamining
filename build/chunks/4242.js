@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
+  Pb: () => _,
   ic: () => s,
   t1: () => c,
   w$: () => d,
@@ -57,4 +58,9 @@ function d() {
       avatarSrc: "https://cdn.discordapp.com/assets/content/e264a2b0b8d963edd255c223abf1c0554f00a2f3a38640e509a38bc03d73b606.png"
     }
   }
+}
+let _ = e => null == e ? null : {
+  src: e.asset,
+  palette: c(e.palette),
+  imgAlt: e.label
 }

@@ -16,8 +16,8 @@ var r, i, l = n(255367),
   g = n(726542),
   h = n(600164),
   b = n(686546),
-  _ = n(111028),
-  v = n(925329),
+  v = n(111028),
+  _ = n(925329),
   y = n(810568),
   O = n(168524),
   S = n(565138),
@@ -166,7 +166,7 @@ class q extends(r = a.PureComponent) {
       children: [(0, l.jsx)(f.X6q, {
         className: s()((0, w.l)(B, "headerText", e ? "EmptyBody" : "Normal")),
         variant: i ? "text-xs/semibold" : "eyebrow",
-        children: (0, l.jsx)(_.Z, {
+        children: (0, l.jsx)(v.Z, {
           children: t
         })
       }), null == a ? void 0 : a()]
@@ -290,7 +290,7 @@ class q extends(r = a.PureComponent) {
     } = this.props;
     return null != e.assets || (0, Z.Z)(e) || e.type !== F.IIU.PLAYING || "ActivityFeed" === n || t.bot ? null : null == r && null != i ? (0, l.jsx)("div", {
       className: s()(B.gameIcon, B.screenshareIcon)
-    }) : (0, l.jsx)(v.Z, {
+    }) : (0, l.jsx)(_.Z, {
       className: B.gameIcon,
       game: r
     })
@@ -489,11 +489,11 @@ class q extends(r = a.PureComponent) {
     let m = this.renderName(c),
       g = this.renderDetails(c),
       b = this.renderState(c, i),
-      _ = this.renderTimePlayed(c),
-      v = this.renderChannelDetails(c),
+      v = this.renderTimePlayed(c),
+      _ = this.renderChannelDetails(c),
       y = null != n ? n() : null,
       O = this.renderTimeBar(c),
-      S = ![e, m, g, b, _, O, y].some(e => null != e);
+      S = ![e, m, g, b, v, O, y].some(e => null != e);
     return (0, l.jsxs)("div", {
       className: s()(this.getTypeClass("activity"), r),
       children: [this.renderHeader(S), (0, l.jsx)("div", {
@@ -507,8 +507,8 @@ class q extends(r = a.PureComponent) {
               onClick: null != o ? e => {
                 o(e), null == a || a()
               } : void 0,
-              children: [m, g, b, _]
-            }), v, d ? null : O, u ? y : null]
+              children: [m, g, b, v]
+            }), _, d ? null : O, u ? y : null]
           })]
         })
       }), d ? y : null, (0, l.jsx)(K, {
