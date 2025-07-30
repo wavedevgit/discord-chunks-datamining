@@ -4,7 +4,7 @@ n.d(t, {
   Pt: () => V,
   VO: () => H,
   ji: () => Y,
-  q8: () => z
+  q8: () => W
 }), n(836215), n(472816), n(794429), n(388685), n(467055), n(539854);
 var i = n(73800),
   r = n(442837),
@@ -98,10 +98,10 @@ function V() {
       location: "settings"
     }),
     H = null != (n = null == (e = y.default.getCurrentUser()) ? void 0 : e.isStaff()) && n,
-    z = (0, O.y0)({
+    W = (0, O.y0)({
       location: "settings"
     }),
-    W = (0, E.v4)({
+    z = (0, E.v4)({
       location: "settings"
     }),
     Y = (0, l.Q)(),
@@ -153,8 +153,8 @@ function V() {
     shouldMergeGameSettings: G,
     isKeywordFilteringEnabled: F,
     isStaff: H,
-    isInappropriateConversationWarningEnabled: z,
-    isInapproprateConversationsDefaultOn: W,
+    isInappropriateConversationWarningEnabled: W,
+    isInapproprateConversationsDefaultOn: z,
     paymentsBlocked: Y,
     isEligibleForQuests: K,
     isStricterMessageRequestsEnabled: Q,
@@ -172,7 +172,7 @@ function V() {
     activeInputProfile: el,
     isInputProfileCustom: eo,
     isGoreContentFilteringEnabled: ec
-  }), [J, V, en, ei, q, et, X, $, k, ee, K, W, z, F, M, H, Q, L, Y, G, P, v, er, es, ea, el, eo, ec])
+  }), [J, V, en, ei, q, et, X, $, k, ee, K, z, W, F, M, H, Q, L, Y, G, P, v, er, es, ea, el, eo, ec])
 }
 
 function G(e) {
@@ -219,7 +219,7 @@ function G(e) {
 
 function F(e, t, n) {
   let i = [],
-    r = W(t),
+    r = z(t),
     s = function(e, t) {
       let n = new Map;
       return null != t && t.forEach(t => {
@@ -292,7 +292,7 @@ function H() {
   return i.useMemo(() => F(r, e), [r, e])
 }
 
-function z(e) {
+function W(e) {
   let t = V(),
     n = function() {
       let {
@@ -320,7 +320,7 @@ function z(e) {
   return i.useMemo(() => F(n, t, new Set(e)), [n, t, e])
 }
 
-function W(e) {
+function z(e) {
   return new Map(Object.entries(e).filter(e => {
     let [t, n] = e;
     return n.section !== a.ID.CUSTOM && null != n.searchableTitles && (null == n.predicate || n.predicate())
@@ -328,7 +328,7 @@ function W(e) {
 }
 
 function Y(e) {
-  return Array.from(W(e).entries()).map(e => {
+  return Array.from(z(e).entries()).map(e => {
     let [t, n] = e;
     return [t, n.searchableTitles]
   })

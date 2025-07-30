@@ -30,8 +30,8 @@ var r = n(255367),
   T = n(604162),
   P = n(747717),
   N = n(963123),
-  k = n(281055),
-  I = n(46140),
+  I = n(281055),
+  k = n(46140),
   w = n(981631),
   A = n(388032),
   L = n(844136);
@@ -72,14 +72,14 @@ function V(e) {
   var t, n, o, a, C;
   let {
     transitionState: x,
-    onClose: k,
+    onClose: I,
     quest: V,
     autoplay: B,
     videoSessionId: F,
     impressionRef: Z,
     parentModalOpenStartClockTime: q,
     sourceQuestContent: U
-  } = e, Q = (0, E.il)(V), G = (0, O.tP)(V), Y = (0, u.e7)([v.Z], () => v.Z.getState().theme), z = (0, d.wj)(Y) ? w.BRd.DARK : w.BRd.LIGHT, H = (0, u.e7)([p.Z], () => p.Z.useReducedMotion), X = (0, b.aM)(), [K, W] = l.useState(Q.progressSeconds), [$, J] = l.useState(!1), {
+  } = e, Q = (0, E.il)(V), G = (0, O.tP)(V), Y = (0, u.e7)([v.Z], () => v.Z.getState().theme), z = (0, d.wj)(Y) ? w.BRd.DARK : w.BRd.LIGHT, H = (0, u.e7)([p.Z], () => p.Z.useReducedMotion), X = (0, b.aM)(), [W, K] = l.useState(Q.progressSeconds), [$, J] = l.useState(!1), {
     completedRatio: ee,
     completedRatioDisplay: et
   } = (0, O.I)(V), [en, er] = (0, T.G6)(A.intl.string(A.t.RDE0SU), A.intl.string(A.t["+5kSoa"]), 1700), el = null != (0, E.LM)(V.config), eo = (null == (t = V.userStatus) ? void 0 : t.claimedAt) != null ? el ? A.intl.string(A.t.WYchdX) : A.intl.string(A.t.vTgCW1) : A.intl.string(A.t.cfY4PD), ei = l.useCallback(() => {
@@ -90,9 +90,9 @@ function V(e) {
       sourceQuestContent: U
     }), er()
   }, [X, V.id, er, U]), ea = async () => {
-    if (null != k) {
+    if (null != I) {
       let e = j.r.build(V.config).application.link;
-      await (0, T.qP)(e) && k()
+      await (0, T.qP)(e) && I()
     }(0, E.nc)(V, {
       content: h.jn.VIDEO_MODAL,
       ctaContent: g.jZ.OPEN_GAME_LINK,
@@ -167,7 +167,7 @@ function V(e) {
                     quest: V,
                     questContent: h.jn.VIDEO_MODAL,
                     autoplay: !1,
-                    location: I.dr.VIDEO_MODAL,
+                    location: k.dr.VIDEO_MODAL,
                     sourceQuestContent: U
                   })
                 })
@@ -177,16 +177,16 @@ function V(e) {
             quest: V,
             videoSessionId: F,
             parentTransitionState: x,
-            onOptimisticProgressUpdate: W,
+            onOptimisticProgressUpdate: K,
             autoplay: B,
             performanceClockStartTime: q,
-            onClose: k,
+            onClose: I,
             sourceQuestContent: U,
             orientation: ed
           }), (0, r.jsxs)("div", {
             className: L.contentFooter,
             children: [(0, r.jsx)(m.zx, {
-              onClick: k,
+              onClick: I,
               color: m.zx.Colors.PRIMARY,
               size: m.zx.Sizes.MEDIUM,
               className: L.footerBtn,
@@ -208,7 +208,7 @@ function V(e) {
                 disabled: (null == (C = V.userStatus) ? void 0 : C.completedAt) == null,
                 ctaLabel: eo,
                 onClick: () => {
-                  ((0, E.xN)(V.config) || (0, E.Bg)(V.config)) && k()
+                  ((0, E.xN)(V.config) || (0, E.Bg)(V.config)) && I()
                 },
                 questContent: h.jn.VIDEO_MODAL,
                 sourceQuestContent: U
@@ -247,7 +247,7 @@ function B(e) {
   return null != s ? (0, r.jsx)(x.A, {
     questOrQuests: s,
     questContent: h.jn.VIDEO_MODAL,
-    minViewTimeSeconds: k.zw,
+    minViewTimeSeconds: I.zw,
     trackGuildAndChannelMetadata: !0,
     sourceQuestContent: i.sourceQuestContent,
     children: e => (0, r.jsx)(V, M(R({}, i), {

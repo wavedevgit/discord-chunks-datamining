@@ -33,21 +33,21 @@ function v(e) {
     onClick: O,
     onScrubBack: C,
     onScrubForward: h
-  } = e, [S, j] = l.useState(null), [y, _] = l.useState(null), [x, D] = l.useState(null), [T, P] = l.useState(!1), N = l.useRef(null), k = e => {
+  } = e, [S, j] = l.useState(null), [y, _] = l.useState(null), [x, D] = l.useState(null), [T, P] = l.useState(!1), N = l.useRef(null), I = e => {
     N.current = e, j(e)
   };
   l.useEffect(() => {
     null != S && (null == E ? D(null) : D(p(E, b, S)))
   }, [S, E, b]);
-  let I = (0, c.Z)(e => {
-      k(e.contentRect)
+  let k = (0, c.Z)(e => {
+      I(e.contentRect)
     }),
-    w = (0, s.y)(I);
+    w = (0, s.y)(k);
   l.useLayoutEffect(() => {
-    null != w.current && k(w.current.getBoundingClientRect())
+    null != w.current && I(w.current.getBoundingClientRect())
   }, [w]), l.useEffect(() => {
     let e = () => {
-      null != w.current && k(w.current.getBoundingClientRect())
+      null != w.current && I(w.current.getBoundingClientRect())
     };
     return window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
   }, [w]);
@@ -77,7 +77,7 @@ function v(e) {
         o && null != O && O(f(e.clientX, e.currentTarget.getBoundingClientRect(), b))
       },
       onMouseEnter: e => {
-        o && (null != w.current && k(w.current.getBoundingClientRect()), P(!0), A(e))
+        o && (null != w.current && I(w.current.getBoundingClientRect()), P(!0), A(e))
       },
       onMouseLeave: e => {
         o && (P(!1), _(null))

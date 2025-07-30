@@ -45,7 +45,7 @@ var i = n(255367),
   F = n(241539),
   H = n(715720);
 
-function z(e) {
+function W(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -64,7 +64,7 @@ function z(e) {
   return e
 }
 
-function W(e, t) {
+function z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -322,7 +322,7 @@ function er(e) {
     l(!1)
   }, 3e3)), () => {
     o.current >= 0 && clearTimeout(o.current)
-  }), [a, n]), (0, i.jsx)(t, W(z({}, s), {
+  }), [a, n]), (0, i.jsx)(t, z(W({}, s), {
     loading: n ? a : void 0,
     onClick: () => l(!a)
   }))
@@ -746,7 +746,7 @@ function ed() {
         color: e,
         text: "Here's top aligned tooltip text!",
         position: "top",
-        children: e => (0, i.jsx)(S.zxk, z({
+        children: e => (0, i.jsx)(S.zxk, W({
           variant: "primary",
           text: "Tooltip on the top"
         }, e))
@@ -754,7 +754,7 @@ function ed() {
         color: e,
         text: "Here's right aligned tooltip text!",
         position: "left",
-        children: e => (0, i.jsx)(S.zxk, z({
+        children: e => (0, i.jsx)(S.zxk, W({
           variant: "primary",
           text: "Tooltip on the left"
         }, e))
@@ -762,7 +762,7 @@ function ed() {
         color: e,
         text: "Here's bottom aligned tooltip text!",
         position: "bottom",
-        children: e => (0, i.jsx)(S.zxk, z({
+        children: e => (0, i.jsx)(S.zxk, W({
           variant: "primary",
           text: "Tooltip on the bottom"
         }, e))
@@ -770,7 +770,7 @@ function ed() {
         color: e,
         text: "Here's right aligned tooltip text!",
         position: "right",
-        children: e => (0, i.jsx)(S.zxk, z({
+        children: e => (0, i.jsx)(S.zxk, W({
           variant: "primary",
           text: "Tooltip on the right"
         }, e))
@@ -780,8 +780,8 @@ function ed() {
 }
 
 function eu() {
-  let [e, t] = r.useState(!1), [n, s] = r.useState(!1), [a, l] = r.useState(!1), [o, c] = r.useState(!1), [d, u] = r.useState(!1), [m, p] = r.useState(!1), [g, h] = r.useState(!1), [f, b] = r.useState(!1), [x, _] = r.useState(!1), [j, E] = r.useState(!1), [O, T] = r.useState(!1), [N, I] = r.useState(!1), [y, A] = r.useState(!1), [P, R] = r.useState(!1), [D, Z] = r.useState(!1), [w, k] = r.useState(!1), [L, B] = r.useState(!1), [U, V] = r.useState(!1), [z, W] = r.useState(!1), Y = r.useRef(null), K = r.useRef(null), q = r.useRef(null), X = r.useRef(null), J = r.useRef(null), Q = r.useRef(null), $ = r.useRef(null), ee = r.useRef(null), et = r.useRef(null), en = r.useRef(null), ei = r.useRef(null), er = r.useRef(null), es = r.useRef(null), ea = r.useRef(null), el = r.useRef(null), eo = r.useRef(null), ec = r.useRef(null), ed = r.useRef(null), eu = r.useRef(null), em = r.useCallback(() => {
-    t(!1), s(!1), l(!1), c(!1), u(!1), p(!1), h(!1), b(!1), _(!1), E(!1), T(!1), I(!1), A(!1), R(!1), Z(!1), k(!1), B(!1), V(!1), W(!1)
+  let [e, t] = r.useState(!1), [n, s] = r.useState(!1), [a, l] = r.useState(!1), [o, c] = r.useState(!1), [d, u] = r.useState(!1), [m, p] = r.useState(!1), [g, h] = r.useState(!1), [f, b] = r.useState(!1), [x, _] = r.useState(!1), [j, E] = r.useState(!1), [O, T] = r.useState(!1), [N, I] = r.useState(!1), [y, A] = r.useState(!1), [P, R] = r.useState(!1), [D, Z] = r.useState(!1), [w, k] = r.useState(!1), [L, B] = r.useState(!1), [U, V] = r.useState(!1), [W, z] = r.useState(!1), Y = r.useRef(null), K = r.useRef(null), q = r.useRef(null), X = r.useRef(null), J = r.useRef(null), Q = r.useRef(null), $ = r.useRef(null), ee = r.useRef(null), et = r.useRef(null), en = r.useRef(null), ei = r.useRef(null), er = r.useRef(null), es = r.useRef(null), ea = r.useRef(null), el = r.useRef(null), eo = r.useRef(null), ec = r.useRef(null), ed = r.useRef(null), eu = r.useRef(null), em = r.useCallback(() => {
+    t(!1), s(!1), l(!1), c(!1), u(!1), p(!1), h(!1), b(!1), _(!1), E(!1), T(!1), I(!1), A(!1), R(!1), Z(!1), k(!1), B(!1), V(!1), z(!1)
   }, []);
   return (0, i.jsxs)("div", {
     className: M.section,
@@ -1205,7 +1205,7 @@ function eu() {
       onStepChange: e => {}
     }), (0, i.jsx)(C.Mb, {
       targetElementRef: eu,
-      shouldShow: z,
+      shouldShow: W,
       onRequestClose: em,
       caretConfig: {
         position: "bottom",
@@ -1459,7 +1459,7 @@ function eu() {
           text: "Expressive Video",
           buttonRef: eu,
           onClick: () => {
-            em(), W(!0)
+            em(), z(!0)
           }
         })]
       })]
@@ -1914,7 +1914,7 @@ function ef(e) {
           text: "Open Next Modal",
           onClick: () => {
             let e = s + 1;
-            (0, S.h7j)(t => (0, i.jsx)(ef, W(z({}, t), {
+            (0, S.h7j)(t => (0, i.jsx)(ef, z(W({}, t), {
               modalCount: e
             })), {
               stackingBehavior: a
@@ -2301,7 +2301,7 @@ function eO(e) {
       text: "Open Next Modal",
       onClick: () => {
         let e = s + 1;
-        (0, S.h7j)(t => (0, i.jsx)(eO, W(z({}, t), {
+        (0, S.h7j)(t => (0, i.jsx)(eO, z(W({}, t), {
           modalCount: e
         })), {
           stackingBehavior: a
@@ -2363,7 +2363,7 @@ function eC() {
         variant: "primary",
         text: "Open modal",
         onClick: () => {
-          (0, S.h7j)(e => (0, i.jsx)(eh, z({}, e)))
+          (0, S.h7j)(e => (0, i.jsx)(eh, W({}, e)))
         }
       }), (0, i.jsx)(S.zxk, {
         variant: "primary",
@@ -2380,7 +2380,7 @@ function eC() {
         variant: "primary",
         text: "Open modal stacking demo",
         onClick: () => {
-          (0, S.h7j)(e => (0, i.jsx)(ef, z({}, e)))
+          (0, S.h7j)(e => (0, i.jsx)(ef, W({}, e)))
         }
       })]
     }), (0, i.jsxs)("div", {
@@ -2392,37 +2392,37 @@ function eC() {
         variant: "primary",
         text: "Open modal section visualizer",
         onClick: () => {
-          (0, S.h7j)(e => (0, i.jsx)(eb, z({}, e)))
+          (0, S.h7j)(e => (0, i.jsx)(eb, W({}, e)))
         }
       }), (0, i.jsx)(S.zxk, {
         variant: "primary",
         text: "Open demo modal",
         onClick: () => {
-          (0, S.h7j)(e => (0, i.jsx)(ex, z({}, e)))
+          (0, S.h7j)(e => (0, i.jsx)(ex, W({}, e)))
         }
       }), (0, i.jsx)(S.zxk, {
         variant: "primary",
         text: "Open sample invite modal",
         onClick: () => {
-          (0, S.h7j)(e => (0, i.jsx)(e_, z({}, e)))
+          (0, S.h7j)(e => (0, i.jsx)(e_, W({}, e)))
         }
       }), (0, i.jsx)(S.zxk, {
         variant: "primary",
         text: "Open sample alert modal",
         onClick: () => {
-          (0, S.h7j)(e => (0, i.jsx)(ej, z({}, e)))
+          (0, S.h7j)(e => (0, i.jsx)(ej, W({}, e)))
         }
       }), (0, i.jsx)(S.zxk, {
         variant: "primary",
         text: "Open expressive modal",
         onClick: () => {
-          (0, S.h7j)(e => (0, i.jsx)(eE, z({}, e)))
+          (0, S.h7j)(e => (0, i.jsx)(eE, W({}, e)))
         }
       }), (0, i.jsx)(S.zxk, {
         variant: "primary",
         text: "Open Mana modal stacking demo",
         onClick: () => {
-          (0, S.h7j)(e => (0, i.jsx)(eO, z({}, e)))
+          (0, S.h7j)(e => (0, i.jsx)(eO, W({}, e)))
         }
       })]
     })]

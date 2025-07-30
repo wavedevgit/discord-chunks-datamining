@@ -45,8 +45,8 @@ var i = n(255367),
   G = n(64220),
   F = n(427217),
   H = n(243778),
-  z = n(821795),
-  W = n(892567),
+  W = n(821795),
+  z = n(892567),
   Y = n(258609),
   K = n(53891),
   q = n(291533),
@@ -99,8 +99,8 @@ var i = n(255367),
   eG = n(459273),
   eF = n(585483),
   eH = n(70956),
-  ez = n(823379),
-  eW = n(74538),
+  eW = n(823379),
+  ez = n(74538),
   eY = n(374023),
   eK = n(51144),
   eq = n(998502),
@@ -622,10 +622,10 @@ class ti extends r.PureComponent {
         children: [(0, i.jsx)("div", {
           className: e2.panelTitleContainer,
           children: (0, i.jsx)(e$.Z, {
-            children: (0, i.jsx)(W.Z, {
+            children: (0, i.jsx)(z.Z, {
               userName: eK.ZP.getName(t),
               displayNameStyles: e,
-              effectDisplayType: z.F.STATIC
+              effectDisplayType: W.F.STATIC
             })
           })
         }), (0, i.jsx)("div", {
@@ -754,7 +754,7 @@ function ts() {
     Z = (0, er.b)(),
     w = (0, d.e7)([Y.Z], () => null != Y.Z.getAwaitingRemoteSessionInfo()),
     k = (0, d.e7)([eZ.Z], () => eZ.Z.getGuildId()),
-    L = eW.ZP.canUsePremiumGuildMemberProfile(t),
+    L = ez.ZP.canUsePremiumGuildMemberProfile(t),
     B = (null == t || null == (e = t.avatarDecoration) ? void 0 : e.skuId) === e1.rL,
     {
       voiceActivityStatusEnabled: M
@@ -769,16 +769,16 @@ function ts() {
     H = (0, ee.K)({
       user: t
     }),
-    z = (0, el.Ws)({
+    W = (0, el.Ws)({
       location: e6.dr.CONFLICT_CHECKS
     }),
-    W = (0, d.e7)([eo.Z, eL.default, eA.Z], () => {
+    z = (0, d.e7)([eo.Z, eL.default, eA.Z], () => {
       let e, t = eo.Z.getSyncingWith(),
         n = eo.Z.getActivity(),
         i = [];
       if (null != t ? e = t.partyId : null != n && null != n.party && null != n.party.id && (e = n.party.id), null != e) {
         var r;
-        i = o()(Array.from(null != (r = eA.Z.getParty(e)) ? r : [])).map(e => eL.default.getUser(e)).filter(ez.lm).value()
+        i = o()(Array.from(null != (r = eA.Z.getParty(e)) ? r : [])).map(e => eL.default.getUser(e)).filter(eW.lm).value()
       }
       return i.length > 1
     }),
@@ -815,8 +815,8 @@ function ts() {
       voiceActivityStatusEnabled: M,
       nameplate: H,
       selectedGuildId: k,
-      isQuestBarEmpty: z,
-      isListenAlongVisible: W
+      isQuestBarEmpty: W,
+      isListenAlongVisible: z
     })
   })
 }
@@ -895,8 +895,8 @@ function tl(e) {
       children: V
     })]
   }) : G, {
-    analyticsLocations: z
-  } = (0, I.ZP)(N.Z.AUDIO_INPUT_BUTTON), W = (0, eh.Hu)({
+    analyticsLocations: W
+  } = (0, I.ZP)(N.Z.AUDIO_INPUT_BUTTON), z = (0, eh.Hu)({
     location: N.Z.AUDIO_INPUT_BUTTON,
     autoTrackExposure: !0
   }), Y = (0, ef.av)({
@@ -905,8 +905,8 @@ function tl(e) {
   });
   r.useEffect(() => () => M(), [C, M]);
   let K = r.useCallback(e => {
-      j(e, z)
-    }, [j, z]),
+      j(e, W)
+    }, [j, W]),
     [q, X] = r.useState(!1),
     J = r.useCallback(e => {
       var t;
@@ -937,7 +937,7 @@ function tl(e) {
       location: "Account"
     });
   return (0, i.jsx)(I.Gt, {
-    value: z,
+    value: W,
     children: (0, i.jsxs)("div", {
       ref: v,
       className: a()(e2.micButtonParent, {
@@ -965,14 +965,14 @@ function tl(e) {
         onContextMenu: K,
         role: "switch",
         className: a()({
-          [e2.micButtonWithMenu]: W
+          [e2.micButtonWithMenu]: z
         }),
         orangeGlow: R,
         redGlow: C,
         "aria-label": e8.intl.string(e8.t["w4m94+"]),
         "aria-checked": C,
         disabled: l
-      }), W && (0, i.jsx)(f.yRy, {
+      }), z && (0, i.jsx)(f.yRy, {
         targetElementRef: O,
         position: "top",
         align: "left",

@@ -44,8 +44,8 @@ var i = n(255367),
   G = n(622562),
   F = n(158776),
   H = n(246946),
-  z = n(572004),
-  W = n(5192),
+  W = n(572004),
+  z = n(5192),
   Y = n(74538),
   K = n(7093),
   q = n(474376),
@@ -207,7 +207,7 @@ function ea(e) {
             children: [(0, i.jsx)(k.Z, {
               user: t,
               className: ei.username,
-              nickname: W.ZP.getName(null, null, t),
+              nickname: z.ZP.getName(null, null, t),
               onOpenProfile: ec ? void 0 : eM,
               pronouns: null == ed ? void 0 : ed.pronouns,
               tags: (0, i.jsx)(I.Z, {
@@ -360,7 +360,7 @@ function ea(e) {
                         children: eC
                       })
                     }
-                  }), !__OVERLAY__ && z.wS && eE && (0, i.jsxs)(i.Fragment, {
+                  }), !__OVERLAY__ && W.wS && eE && (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(P.Z, {
                       className: ei.menuDivider
                     }), (0, i.jsx)(X.V4, {
@@ -369,7 +369,7 @@ function ea(e) {
                       icon: c.VuL,
                       label: en.intl.string(en.t["/AXYnJ"]),
                       onClick: () => {
-                        (0, z.JG)(t.id), n()
+                        (0, W.JG)(t.id), n()
                       }
                     })]
                   })]

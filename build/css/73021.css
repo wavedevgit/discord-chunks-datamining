@@ -1,6 +1,6 @@
 /**
   Module ID: 73021
-  Original File Name: 87fab5139aea65c7
+  Original File Name: 3b6ed5b3730e19e6
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -2436,6 +2436,7 @@ h1.title_feb59c,h2.title_feb59c {
     align-items: center;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center
 }
 
@@ -14213,16 +14214,10 @@ div.nagbar_d74ef8 {
     column-gap: 2px;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 20px;
     row-gap: 10px
 }
 
-.rightAlignedButtons_f0c2ea {
-    display: flex;
-    margin-left: auto
-}
-
-.addressSection_f0c2ea {
+.addressSection_f0c2ea,.formActions_f0c2ea {
     margin-top: 20px
 }
 
@@ -19901,4 +19896,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=87fab5139aea65c7.css.map*/
+/*# sourceMappingURL=3b6ed5b3730e19e6.css.map*/

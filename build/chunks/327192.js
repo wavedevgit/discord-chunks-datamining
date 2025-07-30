@@ -62,7 +62,7 @@ function H(e) {
   }
   return e
 }
-let z = e => {
+let W = e => {
   var t, n;
   let r, {
       integration: s
@@ -117,7 +117,7 @@ let z = e => {
   })
 };
 
-function W(e) {
+function z(e) {
   var t;
   let n, s, a, {
       onDisconnect: l,
@@ -131,7 +131,7 @@ function W(e) {
     [y, A] = r.useState(o.showActivity),
     [P, D] = r.useState(null),
     [U, F] = r.useState(null),
-    [W, Y] = r.useState(!1),
+    [z, Y] = r.useState(!1),
     [K, q] = r.useState([]),
     X = (0, j.rR)(o.type),
     J = _.Z.get(X);
@@ -304,7 +304,7 @@ function W(e) {
         className: G.metadataRefreshButton,
         color: a ? u.zx.Colors.GREEN : u.zx.Colors.BRAND,
         size: u.zx.Sizes.SMALL,
-        submitting: W,
+        submitting: z,
         disabled: a,
         "aria-label": V.intl.string(V.t.sCkLYG),
         onClick: a ? void 0 : () => {
@@ -418,7 +418,7 @@ function W(e) {
           children: V.intl.string(V.t.fOe3fX)
         })
       }), (0, i.jsx)("div", {
-        children: o.integrations.map(e => (0, i.jsx)(z, {
+        children: o.integrations.map(e => (0, i.jsx)(W, {
           integration: e
         }, e.id))
       })]
@@ -520,7 +520,7 @@ function X(e) {
       note: V.intl.string(V.t.WenGZ2),
       children: V.intl.string(V.t["aoLS8/"])
     })
-  }) : r.filter(e => _.Z.isSupported(e.type)).map((e, t) => (0, i.jsx)(W, {
+  }) : r.filter(e => _.Z.isSupported(e.type)).map((e, t) => (0, i.jsx)(z, {
     theme: s,
     account: e,
     locale: a,
