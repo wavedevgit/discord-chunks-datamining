@@ -6,7 +6,7 @@ n.d(t, {
 });
 var r = n(255367);
 n(73800);
-var i = n(755721),
+var i = n(680018),
   a = n(481060),
   o = n(600164),
   s = n(388032),
@@ -46,11 +46,11 @@ let c = e => {
     children: (0, r.jsx)(a.mzw, {
       justify: o.Z.Justify.BETWEEN,
       align: o.Z.Align.CENTER,
-      children: (0, r.jsx)(i.zx, {
+      children: (0, r.jsx)(i.z, {
         "data-testid": "continue",
-        color: i.zx.Colors.BRAND,
+        variant: "primary",
         disabled: !0,
-        children: s.intl.string(s.t.g8vPz8)
+        text: s.intl.string(s.t.g8vPz8)
       })
     })
   })
