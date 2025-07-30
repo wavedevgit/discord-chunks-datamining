@@ -21,8 +21,8 @@ var r = n(255367),
   S = n(15274),
   N = n(924301),
   f = n(725436),
-  m = n(978227),
-  g = n(236373),
+  g = n(978227),
+  m = n(236373),
   A = n(854698),
   R = n(405613),
   P = n(95291),
@@ -67,7 +67,7 @@ let M = (e, t) => n => {
     }, [l]);
     if (null == d) return null;
     let N = null == O ? void 0 : O.IconComponent,
-      m = (0, r.jsxs)(r.Fragment, {
+      g = (0, r.jsxs)(r.Fragment, {
         children: [null != N && (0, r.jsx)(N, {
           size: "xs",
           color: "currentColor",
@@ -107,8 +107,8 @@ let M = (e, t) => n => {
           children: j(l, c) ? (0, r.jsx)(s.P3F, {
             className: U.channelLocationLink,
             onClick: S,
-            children: m
-          }) : m
+            children: g
+          }) : g
         })]
       })]
     })
@@ -178,7 +178,7 @@ let M = (e, t) => n => {
       recurrenceId: u,
       onAcceptInstantInvite: d,
       onTransitionToInviteChannel: _
-    } = e, O = null != u ? u : null != n ? (0, A.DK)(n) : null, I = (null == n ? void 0 : n.recurrence_rule) == null || null == O || (0, A.Rp)((0, g.KV)(null == n ? void 0 : n.recurrence_rule), O), p = (0, m.Z)(n), T = i.useCallback(() => {
+    } = e, O = null != u ? u : null != n ? (0, A.DK)(n) : null, I = (null == n ? void 0 : n.recurrence_rule) == null || null == O || (0, A.Rp)((0, m.KV)(null == n ? void 0 : n.recurrence_rule), O), p = (0, g.Z)(n), T = i.useCallback(() => {
       c && null != n && (0, S.bO)({
         eventId: n.id,
         recurrenceId: O

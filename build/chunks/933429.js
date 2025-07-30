@@ -22,8 +22,8 @@ var r, i = n(913527),
   S = n(458725),
   N = n(915525),
   f = n(353926),
-  m = n(594190),
-  g = n(38618),
+  g = n(594190),
+  m = n(38618),
   A = n(569545),
   R = n(528011),
   P = n(487419),
@@ -76,8 +76,8 @@ var r, i = n(913527),
   eS = n(358085),
   eN = n(74538),
   ef = n(922156),
-  em = n(436181),
-  eg = n(941128),
+  eg = n(436181),
+  em = n(941128),
   eA = n(981631),
   eR = n(188785),
   eP = n(474936),
@@ -276,8 +276,8 @@ let eV = [eA.kVF.QUARANTINED, eA.kVF.AUTOMOD_QUARANTINED_USER_PROFILE, eA.kVF.VI
       })
     },
     [eA.kVF.DISPATCH_INSTALL_SCRIPT_PROGRESS]: {
-      predicate: () => null != em.Z.getLastProgress(),
-      metadata: () => em.Z.getLastProgress()
+      predicate: () => null != eg.Z.getLastProgress(),
+      metadata: () => eg.Z.getLastProgress()
     },
     [eA.kVF.SPOTIFY_AUTO_PAUSED]: {
       predicate: () => V.Z.wasAutoPaused()
@@ -309,7 +309,7 @@ let eV = [eA.kVF.QUARANTINED, eA.kVF.AUTOMOD_QUARANTINED_USER_PROFILE, eA.kVF.VI
       predicate: () => (0, Z.tq)()
     },
     [eA.kVF.CORRUPT_INSTALLATION]: {
-      predicate: () => eS.isPlatformEmbedded && (!o.Z.supported() || eg.Z.isCorruptInstallation())
+      predicate: () => eS.isPlatformEmbedded && (!o.Z.supported() || em.Z.isCorruptInstallation())
     },
     [eA.kVF.VIDEO_UNSUPPORTED_BROWSER]: {
       predicate: e => {
@@ -370,7 +370,7 @@ let eV = [eA.kVF.QUARANTINED, eA.kVF.AUTOMOD_QUARANTINED_USER_PROFILE, eA.kVF.VI
       }
     },
     [eA.kVF.CONNECT_SPOTIFY]: {
-      predicate: () => !V.Z.hasConnectedAccount() && m.ZP.isObservedAppRunning(_.Z.get(eA.ABu.SPOTIFY).name) && !eG(eA.kVF.CONNECT_SPOTIFY)
+      predicate: () => !V.Z.hasConnectedAccount() && g.ZP.isObservedAppRunning(_.Z.get(eA.ABu.SPOTIFY).name) && !eG(eA.kVF.CONNECT_SPOTIFY)
     },
     [eA.kVF.WIN32_DEPRECATED_MESSAGE]: {
       predicate: () => (null === d.Z || void 0 === d.Z ? void 0 : d.Z.os.arch) === "ia32" && (null === d.Z || void 0 === d.Z ? void 0 : d.Z.process.platform) === "win32",
@@ -617,7 +617,7 @@ let eV = [eA.kVF.QUARANTINED, eA.kVF.AUTOMOD_QUARANTINED_USER_PROFILE, eA.kVF.VI
 
 function eH() {
   var e, t, n;
-  if (!g.Z.isConnected()) return !1;
+  if (!m.Z.isConnected()) return !1;
   ex = null;
   let r = ed.default.getCurrentUser();
   if (null == r) return !1;
@@ -677,7 +677,7 @@ function ez() {
 }
 class eY extends(r = a.ZP.Store) {
   initialize() {
-    this.syncWith([es.Z, er.Z, Q.Z, ea.Z, j.Z, eI.Z, Y.Z, X.Z, W.Z, P.Z, x.Z, H.Z], eH), this.waitFor(ed.default, eo.Z, $.Z, J.ZP, ei.Z, ee.Z, ec.Z, f.Z, ea.Z, eu.Z, V.Z, m.ZP, er.Z, ef.Z, em.Z, eT.Z, et.Z, eO.Z, eg.Z, Q.Z, eE.Z, en.Z, j.Z, ep.Z, eI.Z, X.Z, D.Z, I.Z, k.Z, x.Z, H.Z)
+    this.syncWith([es.Z, er.Z, Q.Z, ea.Z, j.Z, eI.Z, Y.Z, X.Z, W.Z, P.Z, x.Z, H.Z], eH), this.waitFor(ed.default, eo.Z, $.Z, J.ZP, ei.Z, ee.Z, ec.Z, f.Z, ea.Z, eu.Z, V.Z, g.ZP, er.Z, ef.Z, eg.Z, eT.Z, et.Z, eO.Z, em.Z, Q.Z, eE.Z, en.Z, j.Z, ep.Z, eI.Z, X.Z, D.Z, I.Z, k.Z, x.Z, H.Z)
   }
   hasNotice() {
     return null != ex && null != ex.type

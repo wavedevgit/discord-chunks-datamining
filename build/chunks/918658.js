@@ -21,8 +21,8 @@ var r = n(255367),
   S = n(914010),
   N = n(671533),
   f = n(259580),
-  m = n(358085),
-  g = n(962086),
+  g = n(358085),
+  m = n(962086),
   A = n(160404),
   R = n(889695),
   P = n(981631),
@@ -69,7 +69,7 @@ function v() {
       viewingRoles: l,
       backNavigationSection: a,
       isFullServerPreview: s,
-      isServerShopPreview: m
+      isServerShopPreview: g
     } = (0, o.cj)([A.Z], () => ({
       viewingRoles: null != t ? A.Z.getViewingRoles(t) : null,
       backNavigationSection: A.Z.getBackNavigationSection(t),
@@ -95,7 +95,7 @@ function v() {
       let {
         backToSettings: n
       } = e;
-      null != t && (A.Z.isFullServerPreview(t) && (0, p.uL)(P.Z5c.CHANNEL(t)), _.ZP.shouldShowOnboarding(t) && (d.Z.finishOnboarding(t), (0, E.EI)(t)), (0, g.mL)(t), n && I.Z.open(t, a), a === P.pNK.ROLE_SUBSCRIPTIONS && (0, O.GN)(t))
+      null != t && (A.Z.isFullServerPreview(t) && (0, p.uL)(P.Z5c.CHANNEL(t)), _.ZP.shouldShowOnboarding(t) && (d.Z.finishOnboarding(t), (0, E.EI)(t)), (0, m.mL)(t), n && I.Z.open(t, a), a === P.pNK.ROLE_SUBSCRIPTIONS && (0, O.GN)(t))
     };
   return (0, r.jsxs)(u.qXd, {
     color: u.DM8.BRAND,
@@ -154,7 +154,7 @@ function v() {
           size: "xs",
           color: c.Z.unsafe_rawColors.YELLOW_300.css
         })
-      }), m && (0, r.jsx)(u.DY3, {
+      }), g && (0, r.jsx)(u.DY3, {
         className: h.previewWarning,
         text: D.intl.formatToPlainString(D.t.eummvb, {
           maxTiers: b.fF,
@@ -179,8 +179,8 @@ function Z(e) {
   } = e;
   return (0, o.e7)([A.Z], () => A.Z.isViewingRoles(t)) ? (0, r.jsx)("div", {
     className: a()(h.settingsWrapper, {
-      [h.windows]: (0, m.isWindows)(),
-      [h.osx]: (0, m.isMac)()
+      [h.windows]: (0, g.isWindows)(),
+      [h.osx]: (0, g.isMac)()
     }),
     children: (0, r.jsx)(v, {})
   }) : null

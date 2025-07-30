@@ -1,12 +1,12 @@
 /** Chunk was on 74098 **/
 n.d(t, {
-  $Y: () => g,
+  $Y: () => m,
   JK: () => N,
   Je: () => f,
   T9: () => P,
   UE: () => R,
   Xx: () => A,
-  mm: () => m,
+  mm: () => g,
   qY: () => S
 }), n(388685);
 var r = n(544891),
@@ -97,13 +97,13 @@ async function f(e) {
     rejectWithError: !1
   })).body)
 }
-async function m(e, t) {
+async function g(e, t) {
   return await r.tn.del({
     url: E.ANM.GUILD_AUTOMOD_RULE(t, e),
     rejectWithError: !1
   }), !0
 }
-async function g(e) {
+async function m(e) {
   let t = await r.tn.get({
     url: E.ANM.GUILD_AUTOMOD_RULES(e),
     rejectWithError: !1

@@ -3,13 +3,13 @@ n.d(t, {
   Z: () => r
 }), n(35282);
 var a = n(848697);
-let i = {
+let o = {
     LATIN12: a.latin12CompactTimeStamp,
     LATIN24: a.latin24CompactTimeStamp,
     ASIAN: a.asianCompactTimeStamp
   },
-  o = /(AM|PM)$/;
+  i = /(AM|PM)$/;
 
 function r(e) {
-  return null != e.match(o) ? i.LATIN24 : e.length <= 5 ? i.LATIN12 : i.ASIAN
+  return null != e.match(i) ? o.LATIN24 : e.length <= 5 ? o.LATIN12 : o.ASIAN
 }

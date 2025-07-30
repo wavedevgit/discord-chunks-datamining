@@ -22,9 +22,9 @@ var i = n(873546),
   S = n(665149),
   N = n(981631),
   f = n(176505),
-  m = n(220705);
+  g = n(220705);
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -71,7 +71,7 @@ function P(e) {
     channelType: c,
     guildId: p,
     innerClassname: T,
-    transparent: g = !1,
+    transparent: m = !1,
     showToolbar: A = !0,
     toolbar: P,
     mobileToolbar: C,
@@ -102,16 +102,16 @@ function P(e) {
         children: [P, e && !(0, f.AB)(o) ? (0, r.jsx)(E.Z, {
           guildId: p,
           channelId: o,
-          className: m.search
+          className: g.search
         }, null != p ? p : o) : null, M && (0, r.jsx)(S.ZP.Divider, {}), k && !x ? (0, r.jsx)(_.Z, {}) : null, F && j && null != Z && !L && c === N.d4z.GROUP_DM && (0, r.jsxs)("div", {
-          className: m.controlButtonWrapper,
+          className: g.controlButtonWrapper,
           children: [(0, r.jsx)(S.ZP.Divider, {}), (0, r.jsx)(O.Z, {
             onClick: () => a.Z.toggleParticipantsList(Z, !L)
           })]
         })]
       })
     }(),
-    transparent: g,
+    transparent: m,
     showToolbar: A,
     onDoubleClick: () => R(v),
     "aria-label": y,
@@ -164,9 +164,9 @@ function y(e) {
   } = (0, c.ZP)(o.Z.HEADER_BAR);
   return (0, r.jsx)(c.Gt, {
     value: i,
-    children: t ? (0, r.jsx)(P, A(g({}, n), {
+    children: t ? (0, r.jsx)(P, A(m({}, n), {
       className: n.className
-    })) : (0, r.jsx)(C, A(g({}, n), {
+    })) : (0, r.jsx)(C, A(m({}, n), {
       className: n.className
     }))
   })

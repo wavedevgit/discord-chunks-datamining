@@ -1,9 +1,9 @@
 /** Chunk was on 80416 **/
 let a;
 n.d(t, {
-  Z: () => O
+  Z: () => x
 });
-var i, o = n(442837),
+var o, i = n(442837),
   r = n(544891),
   c = n(570140),
   l = n(333023),
@@ -63,14 +63,14 @@ function C(e) {
     userId: n
   } = e, a = b[t];
   if (null == a || null == a[n]) return !1;
-  let i = f({}, a);
-  clearTimeout(i[n]), delete i[n], b[t] = i
+  let o = f({}, a);
+  clearTimeout(o[n]), delete o[n], b[t] = o
 }
 
-function E() {
+function O() {
   b = {}
 }
-class x extends(i = o.ZP.Store) {
+class E extends(o = i.ZP.Store) {
   getTypingUsers(e) {
     return y(e)
   }
@@ -78,8 +78,8 @@ class x extends(i = o.ZP.Store) {
     return null != y(e)[t]
   }
 }
-_(x, "displayName", "TypingStore");
-let O = new x(c.Z, {
+_(E, "displayName", "TypingStore");
+let x = new E(c.Z, {
   TYPING_START: T,
   TYPING_STOP: C,
   TYPING_START_LOCAL: function(e) {
@@ -88,9 +88,9 @@ let O = new x(c.Z, {
     } = e, n = d.default.getId();
     if (null == n || t === l.V) return !1;
     null != a && a.channelId !== t && (null != a.timeout && clearTimeout(a.timeout), a = null);
-    let i = Date.now(),
-      o = .8 * g;
-    if (null != a && (null != a.timeout || a.prevSend + o > i)) return !1;
+    let o = Date.now(),
+      i = .8 * g;
+    if (null != a && (null != a.timeout || a.prevSend + i > o)) return !1;
     let {
       delayMs: u
     } = (0, s.M1)("typing_store"), _ = setTimeout(() => {
@@ -104,26 +104,26 @@ let O = new x(c.Z, {
       }).then(e => {
         if (200 === e.status) {
           var n, a;
-          let i = null != (n = e.body.message_send_cooldown_ms) ? n : 0,
-            o = null != (a = e.body.thread_create_cooldown_ms) ? a : 0;
-          i > 0 && c.Z.dispatch({
+          let o = null != (n = e.body.message_send_cooldown_ms) ? n : 0,
+            i = null != (a = e.body.thread_create_cooldown_ms) ? a : 0;
+          o > 0 && c.Z.dispatch({
             type: "SLOWMODE_SET_COOLDOWN",
             channelId: t,
             slowmodeType: m.S.SendMessage,
-            cooldownMs: i
-          }), o > 0 && c.Z.dispatch({
+            cooldownMs: o
+          }), i > 0 && c.Z.dispatch({
             type: "SLOWMODE_SET_COOLDOWN",
             channelId: t,
             slowmodeType: m.S.CreateThread,
-            cooldownMs: o
+            cooldownMs: i
           })
         }
       }))
-    }, null == a || a.prevSend > i - 2 * o ? u : 0);
+    }, null == a || a.prevSend > o - 2 * i ? u : 0);
     return a = {
       channelId: t,
       timeout: _,
-      prevSend: i
+      prevSend: o
     }, T({
       channelId: t,
       userId: n
@@ -138,17 +138,17 @@ let O = new x(c.Z, {
       userId: n
     }))
   },
-  CONNECTION_OPEN: E,
-  OVERLAY_INITIALIZE: E,
+  CONNECTION_OPEN: O,
+  OVERLAY_INITIALIZE: O,
   MESSAGE_CREATE: function(e) {
     let {
       channelId: t,
       message: {
         author: n
       },
-      optimistic: i
+      optimistic: o
     } = e;
-    return i && function(e) {
+    return o && function(e) {
       if (null != a && a.channelId === e) null != a.timeout && clearTimeout(a.timeout), a = null
     }(t), null != n && C({
       channelId: t,

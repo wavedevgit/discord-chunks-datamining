@@ -4,10 +4,10 @@ n.d(t, {
   NM: () => l
 });
 var a = n(70956),
-  i = n(818083),
-  o = n(427164),
+  o = n(818083),
+  i = n(427164),
   r = n(987338);
-let c = (0, o.le)({
+let c = (0, i.le)({
     kind: "user",
     name: "2025-07-typing-indicator-delay",
     defaultConfig: {
@@ -41,7 +41,7 @@ let c = (0, o.le)({
       }
     }
   }),
-  l = (0, i.B)({
+  l = (0, o.B)({
     kind: "user",
     id: "2025-07_typing_indicator_delay",
     label: "Typing Indicator Delay",
@@ -104,7 +104,7 @@ let c = (0, o.le)({
       autoTrackExposure: !0
     }), {
       delayMs: a,
-      inExperiment: i
+      inExperiment: o
     } = c.getConfig({
       location: e
     });
@@ -113,6 +113,6 @@ let c = (0, o.le)({
       inExperiment: !0
     } : {
       delayMs: a,
-      inExperiment: i
+      inExperiment: o
     }
   }

@@ -3,20 +3,20 @@ n.d(t, {
   Z: () => f
 });
 var a = n(255367),
-  i = n(73800),
-  o = n(120356),
-  r = n.n(o),
+  o = n(73800),
+  i = n(120356),
+  r = n.n(i),
   c = n(481060),
   l = n(55935),
   s = n(543388),
   u = n(223021),
   d = n(388032),
   m = n(848697);
-let p = i.memo(function(e) {
+let p = o.memo(function(e) {
     let {
       children: t,
       className: n,
-      compact: o = !1,
+      compact: i = !1,
       timestamp: p,
       timestampFormat: f,
       isVisibleOnlyOnHover: g = !1,
@@ -25,10 +25,10 @@ let p = i.memo(function(e) {
       id: y,
       isEdited: T = !1,
       application: C,
-      tooltipPosition: E
-    } = e, x = i.useMemo(() => new Date(p), [p]), O = i.useMemo(() => (0, l.Hg)(x), [x]), v = i.useMemo(() => null != f ? (0, l.vc)(x, f) : o ? (0, l.vc)(x, "LT") : (0, l.Y4)(x, !0), [x, f, o]), I = i.useMemo(() => o ? (0, u.Z)(v) : null, [o, v]), S = i.useMemo(() => T ? d.intl.formatToPlainString(d.t.CDzOFR, {
-      timeFormatted: O
-    }) : O, [T, O]);
+      tooltipPosition: O
+    } = e, E = o.useMemo(() => new Date(p), [p]), x = o.useMemo(() => (0, l.Hg)(E), [E]), v = o.useMemo(() => null != f ? (0, l.vc)(E, f) : i ? (0, l.vc)(E, "LT") : (0, l.Y4)(E, !0), [E, f, i]), I = o.useMemo(() => i ? (0, u.Z)(v) : null, [i, v]), M = o.useMemo(() => T ? d.intl.formatToPlainString(d.t.CDzOFR, {
+      timeFormatted: x
+    }) : x, [T, x]);
     return (0, a.jsx)("span", {
       className: r()(n, I, {
         [m.timestamp]: !0,
@@ -37,38 +37,38 @@ let p = i.memo(function(e) {
         [m.alt]: b
       }),
       children: null == C ? (0, a.jsx)(c.ua7, {
-        text: () => (0, l.vc)(x, "LLLL"),
-        "aria-label": S,
+        text: () => (0, l.vc)(E, "LLLL"),
+        "aria-label": M,
         tooltipClassName: m.timestampTooltip,
-        position: E,
+        position: O,
         delay: 750,
         children: e => (0, a.jsx)(_, {
           tooltipProps: e,
           timeFormatted: v,
-          timestamp: x,
+          timestamp: E,
           id: y,
-          compact: o,
+          compact: i,
           children: t
         })
       }) : (0, a.jsx)(s.Z, {
         application: C,
-        timestamp: x,
-        compact: o,
+        timestamp: E,
+        compact: i,
         children: (0, a.jsx)(_, {
           timeFormatted: v,
-          timestamp: x,
+          timestamp: E,
           id: y,
-          compact: o,
+          compact: i,
           children: t
         })
       })
     })
   }),
-  _ = i.memo(function(e) {
+  _ = o.memo(function(e) {
     var t, n;
     let {
-      tooltipProps: i,
-      timeFormatted: o,
+      tooltipProps: o,
+      timeFormatted: i,
       children: r,
       compact: c,
       timestamp: l,
@@ -91,7 +91,7 @@ let p = i.memo(function(e) {
         })
       }
       return e
-    }({}, i), n = n = {
+    }({}, o), n = n = {
       id: s,
       dateTime: l.toISOString(),
       children: null != r ? r : (0, a.jsxs)(a.Fragment, {
@@ -99,7 +99,7 @@ let p = i.memo(function(e) {
           className: m.separator,
           "aria-hidden": !0,
           children: c ? "[" : " — "
-        }), o, c && (0, a.jsxs)("i", {
+        }), i, c && (0, a.jsxs)("i", {
           className: m.separator,
           "aria-hidden": !0,
           children: ["]", " "]

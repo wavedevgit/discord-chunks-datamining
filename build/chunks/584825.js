@@ -1,10 +1,10 @@
 /** Chunk was on 74098 **/
 n.d(t, {
   GG: () => p,
-  HQ: () => m,
+  HQ: () => g,
   JH: () => R,
   QV: () => A,
-  YB: () => g,
+  YB: () => m,
   _1: () => f,
   _k: () => O,
   jO: () => I,
@@ -119,7 +119,7 @@ let _ = [],
       archiveSubscriptionListing: e
     }
   },
-  m = () => {
+  g = () => {
     let [e, t] = r.useState(!1), [n, i] = r.useState(null);
     return {
       error: n,
@@ -148,7 +148,7 @@ let _ = [],
       clearError: () => i(null)
     }
   },
-  g = e => (0, i.e7)([u.Z], () => null != e ? u.Z.getSubscriptionSettings(e) : void 0),
+  m = e => (0, i.e7)([u.Z], () => null != e ? u.Z.getSubscriptionSettings(e) : void 0),
   A = () => {
     let [e, t] = r.useState(!1), [n, i] = r.useState(null);
     return {

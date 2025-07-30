@@ -5,9 +5,9 @@ n.d(t, {
   ZP: () => h
 });
 var a = n(255367),
-  i = n(73800),
-  o = n(120356),
-  r = n.n(o),
+  o = n(73800),
+  i = n(120356),
+  r = n.n(i),
   c = n(653603),
   l = n.n(c),
   s = n(902704),
@@ -25,37 +25,37 @@ function g(e, t) {
 function b(e, t) {
   var n, a;
   let {
-    message: i
-  } = t, {
     message: o
+  } = t, {
+    message: i
   } = e;
-  return (0, s.Z)(e, t, ["message"]) && i.content === o.content && i.state === o.state && (null == (n = i.editedTimestamp) ? void 0 : n.toString()) === (null == (a = o.editedTimestamp) ? void 0 : a.toString())
+  return (0, s.Z)(e, t, ["message"]) && o.content === i.content && o.state === i.state && (null == (n = o.editedTimestamp) ? void 0 : n.toString()) === (null == (a = i.editedTimestamp) ? void 0 : a.toString())
 }
-let h = i.memo(function(e) {
+let h = o.memo(function(e) {
   var t;
   let {
     className: n,
-    message: o,
+    message: i,
     children: c,
     content: s,
     onUpdate: p,
     contentRef: b,
     compact: h
-  } = e, y = o.state === m.yb.SEND_FAILED, T = o.state === m.yb.SENDING, C = o.isCommandType(), E = null == (t = o.editedTimestamp) ? void 0 : t.toString(), x = i.useRef(!1);
-  return i.useLayoutEffect(() => {
-    x.current ? null != p && p() : x.current = !0
-  }, [p, o.content, s, E, c]), (0, a.jsxs)("div", {
-    id: (0, u.ut)(o),
+  } = e, y = i.state === m.yb.SEND_FAILED, T = i.state === m.yb.SENDING, C = i.isCommandType(), O = null == (t = i.editedTimestamp) ? void 0 : t.toString(), E = o.useRef(!1);
+  return o.useLayoutEffect(() => {
+    E.current ? null != p && p() : E.current = !0
+  }, [p, i.content, s, O, c]), (0, a.jsxs)("div", {
+    id: (0, u.ut)(i),
     ref: b,
     className: r()(n, f.markup, {
       [_.messageContent]: !0,
       [_.isSending]: T && !C,
-      [_.markupRtl]: "rtl" === l()(o.content),
+      [_.markupRtl]: "rtl" === l()(i.content),
       [_.isFailed]: y,
-      [_.isUnsupported]: o.isUnsupported
+      [_.isUnsupported]: i.isUnsupported
     }),
-    children: [null != c ? c : g(o, s), (0, a.jsx)(d.Z, {
-      message: o,
+    children: [null != c ? c : g(i, s), (0, a.jsx)(d.Z, {
+      message: i,
       compact: h,
       location: d.H.WITH_CONTENT
     })]

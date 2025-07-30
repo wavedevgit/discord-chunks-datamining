@@ -10,8 +10,8 @@ n.d(t, {
   ut: () => r
 }), n(781311);
 var a = n(446108),
-  i = n(901461),
-  o = n(981631);
+  o = n(901461),
+  i = n(981631);
 
 function r(e) {
   return "message-content-".concat(e.id)
@@ -39,21 +39,21 @@ function d(e) {
 }
 
 function m(e, t, n) {
-  let u = e.type === o.uaV.REPLY && null != e.messageReference,
+  let u = e.type === i.uaV.REPLY && null != e.messageReference,
     m = e.embeds.length > 0,
     p = e.attachments.length > 0,
     _ = e.stickerItems.length > 0,
     f = e.codedLinks.length > 0,
     g = e.components.length > 0,
-    b = e.hasFlag(o.iLy.HAS_THREAD),
-    h = m || p || _ || f || b || g || e.type === o.uaV.THREAD_CREATED,
-    y = m && e.content === e.embeds[0].url && e.embeds[0].type === o.hBH.GIFV,
-    T = e.type !== o.uaV.DEFAULT || !y && "" !== e.content,
-    C = (0, i.Z)(e),
-    E = !C && (null == n ? void 0 : n.hasTimestamp) !== !1,
-    x = l(e, t),
-    O = c(e),
-    v = C ? "" : "".concat(u ? O : x, " ").concat(a.Z0);
+    b = e.hasFlag(i.iLy.HAS_THREAD),
+    h = m || p || _ || f || b || g || e.type === i.uaV.THREAD_CREATED,
+    y = m && e.content === e.embeds[0].url && e.embeds[0].type === i.hBH.GIFV,
+    T = e.type !== i.uaV.DEFAULT || !y && "" !== e.content,
+    C = (0, o.Z)(e),
+    O = !C && (null == n ? void 0 : n.hasTimestamp) !== !1,
+    E = l(e, t),
+    x = c(e),
+    v = C ? "" : "".concat(u ? x : E, " ").concat(a.Z0);
   if (T) {
     let t = r(e);
     v += " ".concat(t)
@@ -62,7 +62,7 @@ function m(e, t, n) {
     let t = d(e);
     v += " ".concat(t)
   }
-  if (E) {
+  if (O) {
     let t = s(e);
     v += " ".concat(a.fy, " ").concat(t)
   }

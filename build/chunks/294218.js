@@ -20,8 +20,8 @@ var r = n(255367),
   S = n(25015),
   N = n(689674),
   f = n(438075),
-  m = n(963550),
-  g = n(845080),
+  g = n(963550),
+  m = n(845080),
   A = n(295790),
   R = n(145807),
   P = n(56744),
@@ -114,13 +114,13 @@ let h = i.memo(function(e) {
     disableInteraction: G,
     childrenRepliedMessage: (0, P.Z)(i, Z, z, Y, l),
     childrenExecutedCommand: (0, R.Z)(i, Z, l),
-    childrenHeader: (0, g.Z)(D(b({}, e), {
+    childrenHeader: (0, m.Z)(D(b({}, e), {
       guildId: Z.guild_id,
       author: q,
       roleIcon: Q
     })),
     childrenAccessories: e.hideAccessories ? void 0 : (0, f.Q)(e, H),
-    childrenMessageContent: (0, m.Z)(e, W),
+    childrenMessageContent: (0, g.Z)(e, W),
     childrenSystemMessage: (0, A.Z)(D(b({}, e), {
       disableInteraction: G
     })),

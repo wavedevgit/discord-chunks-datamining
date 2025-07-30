@@ -20,8 +20,8 @@ var r, i = n(255367),
   S = n(892567),
   N = n(7284),
   f = n(372900),
-  m = n(172751),
-  g = n(606318),
+  g = n(172751),
+  m = n(606318),
   A = n(402235),
   R = n(477734),
   P = n(670188),
@@ -108,7 +108,7 @@ function k(e) {
     displayNameStyles: el
   } = n, ea = (0, s.e7)([E.Z], () => E.Z.roleStyle), eo = "username" === ea, ec = (0, R.X$)(), es = (0, N.j)({
     displayNameStyles: el
-  }), eu = (0, s.e7)([C.Z], () => null == n.guildId || null == n.colorRoleId ? null : C.Z.getRole(n.guildId, n.colorRoleId)), ed = (0, A.yH)(null != K ? K : J, eu), e_ = (0, h.Z)(r), eE = l.useContext(u.d), eO = ed && (0, g.S2)(n), eI = eo && eO;
+  }), eu = (0, s.e7)([C.Z], () => null == n.guildId || null == n.colorRoleId ? null : C.Z.getRole(n.guildId, n.colorRoleId)), ed = (0, A.yH)(null != K ? K : J, eu), e_ = (0, h.Z)(r), eE = l.useContext(u.d), eO = ed && (0, m.S2)(n), eI = eo && eO;
   l.useEffect(() => {
     if (null == q || !eI || null == eE) return;
     let {
@@ -147,21 +147,21 @@ function k(e) {
       effectDisplayType: T.F.PLAIN
     }) : eS,
     "data-text": ee + et
-  }, em = l.useMemo(() => j && !F ? (0, i.jsx)(m.ZP, {
+  }, eg = l.useMemo(() => j && !F ? (0, i.jsx)(g.ZP, {
     primaryGuild: n.primaryGuild,
     userId: r.author.id,
     contextGuildId: J,
     className: M.clanTagChiplet
-  }) : null, [j, n.primaryGuild, J, r.author.id, F]), eg = null != p ? p : r.author, eA = null != H && null != x ? (0, i.jsx)(P.Z, {
+  }) : null, [j, n.primaryGuild, J, r.author.id, F]), em = null != p ? p : r.author, eA = null != H && null != x ? (0, i.jsx)(P.Z, {
     targetElementRef: X,
-    user: eg,
+    user: em,
     renderPopout: H,
     shouldShow: x,
     shouldPreload: e_,
     position: c.tq ? "window_center" : "right",
     avatarUrl: null != n.guildMemberAvatar && null != J ? (0, y.JM)({
       guildId: J,
-      userId: eg.id,
+      userId: em.id,
       avatar: n.guildMemberAvatar,
       size: 80
     }) : void 0,
@@ -191,13 +191,13 @@ function k(e) {
           innerRef: X
         }, n, ef), {
           className: o()(ef.className, M.clickable, G)
-        })), em]
+        })), eg]
       })
     }
   }) : (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(_.P3F, Z(v({}, ef), {
       className: o()(ef.className, G)
-    })), em]
+    })), eg]
   }), eR = null != Y ? Y[0] : null, eP = null != Y ? Y[1] : null;
   return (0, i.jsxs)(I.Gt, {
     value: $,
@@ -209,7 +209,7 @@ function k(e) {
       name: ei,
       className: M.roleDot,
       hoverOverride: null == eE ? void 0 : eE.animate
-    }) : null, eA, !j && !F && (0, i.jsx)(m.ZP, {
+    }) : null, eA, !j && !F && (0, i.jsx)(g.ZP, {
       primaryGuild: n.primaryGuild,
       userId: r.author.id,
       contextGuildId: J,

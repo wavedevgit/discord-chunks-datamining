@@ -21,8 +21,8 @@ var r = n(255367),
   S = n(652515),
   N = n(550951),
   f = n(544978),
-  m = n(333866),
-  g = n(629481),
+  g = n(333866),
+  m = n(629481),
   A = n(981631);
 let R = i.createContext(void 0);
 
@@ -38,7 +38,7 @@ function C(e) {
     initialTab: l,
     guildId: a
   } = e, P = (0, o.e7)([p.Z], () => p.Z.getGuild(a)), C = (0, o.e7)([E.Z], () => E.Z.isViewingServerShop(a)), y = (0, N.g)(P, "guild_shop_page"), b = (0, S.RF)(a, "guild_shop_page"), D = (null == P ? void 0 : P.features.has(A.oNc.PRODUCTS_AVAILABLE_FOR_PURCHASE)) === !0, h = (0, _.mY)(null == P ? void 0 : P.id), U = null == (t = (0, d.YB)(a)) ? void 0 : t.server_shop_tab_order, M = [], v = f.y.GUILD_SHOP_FULL_PREVIEW;
-  C || D && h ? (M.push(U === m.a3.PRODUCTS_FIRST ? f.y.GUILD_PRODUCTS : f.y.GUILD_ROLE_SUBSCRIPTIONS), M.push(U === m.a3.PRODUCTS_FIRST ? f.y.GUILD_ROLE_SUBSCRIPTIONS : f.y.GUILD_PRODUCTS), v = M[0]) : D && !h ? (M.push(f.y.GUILD_PRODUCTS), v = f.y.GUILD_PRODUCTS) : !D && h && (M.push(f.y.GUILD_ROLE_SUBSCRIPTIONS), v = f.y.GUILD_ROLE_SUBSCRIPTIONS, y && M.push(f.y.GUILD_PRODUCTS_PREVIEW)), l = null != l ? l : v;
+  C || D && h ? (M.push(U === g.a3.PRODUCTS_FIRST ? f.y.GUILD_PRODUCTS : f.y.GUILD_ROLE_SUBSCRIPTIONS), M.push(U === g.a3.PRODUCTS_FIRST ? f.y.GUILD_ROLE_SUBSCRIPTIONS : f.y.GUILD_PRODUCTS), v = M[0]) : D && !h ? (M.push(f.y.GUILD_PRODUCTS), v = f.y.GUILD_PRODUCTS) : !D && h && (M.push(f.y.GUILD_ROLE_SUBSCRIPTIONS), v = f.y.GUILD_ROLE_SUBSCRIPTIONS, y && M.push(f.y.GUILD_PRODUCTS_PREVIEW)), l = null != l ? l : v;
   let [Z, j] = i.useState(l), L = y && !(h && b) || Z === f.y.GUILD_PRODUCTS_PREVIEW;
   return i.useEffect(() => {
     j(l)
@@ -68,10 +68,10 @@ function C(e) {
           }
           return e
         }({}, (0, s.hH)(a));
-        if (Z === f.y.GUILD_PRODUCTS_PREVIEW) e.stopPropagation(), j(f.y.GUILD_ROLE_SUBSCRIPTIONS), t.action_taken = g.mz.DISMISS_TAB_PREVIEW;
+        if (Z === f.y.GUILD_PRODUCTS_PREVIEW) e.stopPropagation(), j(f.y.GUILD_ROLE_SUBSCRIPTIONS), t.action_taken = m.mz.DISMISS_TAB_PREVIEW;
         else {
           var n;
-          (0, O.dL)(A.Z5c.CHANNEL(a, null == (n = I.ZP.getDefaultChannel(a)) ? void 0 : n.id)), t.action_taken = g.mz.DISMISS_FULL_PREVIEW
+          (0, O.dL)(A.Z5c.CHANNEL(a, null == (n = I.ZP.getDefaultChannel(a)) ? void 0 : n.id)), t.action_taken = m.mz.DISMISS_FULL_PREVIEW
         }
         T.default.track(A.rMx.GUILD_SHOP_PREVIEW_CLICK, t)
       }
