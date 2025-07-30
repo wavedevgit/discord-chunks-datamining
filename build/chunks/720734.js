@@ -625,7 +625,8 @@ class ti extends r.PureComponent {
             children: (0, i.jsx)(z.Z, {
               userName: eK.ZP.getName(t),
               displayNameStyles: e,
-              effectDisplayType: W.F.STATIC
+              effectDisplayType: W.F.STATIC,
+              inProfile: !0
             })
           })
         }), (0, i.jsx)("div", {

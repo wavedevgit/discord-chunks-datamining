@@ -11,14 +11,23 @@ let a = (0, r.B)({
     kind: "user",
     label: "Display Name Styles Viewer",
     defaultConfig: {
-      enabled: !1
+      enabled: !1,
+      includeNonProfile: !1
     },
     commonTriggerPoint: i.$P.CONNECTION_OPEN,
     treatments: [{
       id: 1,
-      label: "Enables viewing display name styles set by other users.",
+      label: "Enables viewing display name styles on all surfaces.",
       config: {
-        enabled: !0
+        enabled: !0,
+        includeNonProfile: !0
+      }
+    }, {
+      id: 2,
+      label: "Enables viewing display name styles on profile surfaces only.",
+      config: {
+        enabled: !0,
+        includeNonProfile: !1
       }
     }]
   }),
