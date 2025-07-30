@@ -1,6 +1,6 @@
 /**
   Module ID: 60173
-  Original File Name: 27ef4536e4224b99
+  Original File Name: 9693049372b373c7
 **/
 @keyframes placeholderPulse_c8ffbb {
     0% {
@@ -6471,19 +6471,6 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     flex-direction: column;
     flex-grow: 1;
     gap: 4px
-}
-
-.sharePromptCta__56d6c {
-    border-radius: 50px;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content
-}
-
-.ctaContent__56d6c {
-    align-items: center;
-    display: flex;
-    gap: 8px
 }
 
 .closeButton__56d6c {
@@ -12992,4 +12979,4 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     position: relative
 }
 
-/*# sourceMappingURL=27ef4536e4224b99.css.map*/
+/*# sourceMappingURL=9693049372b373c7.css.map*/
