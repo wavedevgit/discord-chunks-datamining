@@ -1,12 +1,12 @@
 /** Chunk was on 9924 **/
 n.d(t, {
-  n: () => i
+  n: () => a
 });
-var r = n(73800),
-  l = n(941028);
+var l = n(73800),
+  r = n(941028);
 
-function i(e) {
-  r.useEffect(() => (l.k$(e), () => {
-    l.kr(e)
+function a(e) {
+  l.useEffect(() => (r.k$(e), () => {
+    r.kr(e)
   }), [e])
 }

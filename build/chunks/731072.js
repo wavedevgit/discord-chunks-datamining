@@ -1,9 +1,9 @@
-/** Chunk was on 7104 **/
+/** Chunk was on 99226 **/
 n.d(t, {
   Z: () => p
 });
-var r = n(255367),
-  i = n(73800),
+var i = n(255367),
+  r = n(73800),
   l = n(481060),
   o = n(139387),
   a = n(726542),
@@ -22,24 +22,24 @@ function p(e) {
     descriptionText: g,
     helpText: f,
     canNavigate: h
-  } = e, x = a.Z.get(m), j = i.useCallback(async e => {
+  } = e, x = a.Z.get(m), j = r.useCallback(async e => {
     h() && (await s.Z.enableIntegration(p.id, e.type, e.id), o.Z.startEditingIntegration(e.id))
-  }, [h, p.id]), v = i.useCallback(e => {
+  }, [h, p.id]), v = r.useCallback(e => {
     h() && (e.id === (null == n ? void 0 : n.id) && o.Z.stopEditingIntegration(), s.Z.disableIntegration(p.id, e.id))
-  }, [h, n, p.id]), O = i.useCallback(e => {
+  }, [h, n, p.id]), O = r.useCallback(e => {
     h() && (e === (null == n ? void 0 : n.id) ? o.Z.stopEditingIntegration() : o.Z.startEditingIntegration(e))
   }, [h, n]);
-  return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(c.Z, {
+  return (0, i.jsxs)(i.Fragment, {
+    children: [(0, i.jsx)(c.Z, {
       name: b,
       icon: null == x ? void 0 : x.icon.whiteSVG,
       iconBackgroundColor: null == x ? void 0 : x.color,
       iconClassName: u.platformIcon,
       description: g,
       isHeader: !0
-    }), (0, r.jsx)(l.$i$, {
+    }), (0, i.jsx)(l.$i$, {
       className: u.headerDivider
-    }), t.map(e => (0, r.jsx)(d.Z, {
+    }), t.map(e => (0, i.jsx)(d.Z, {
       integration: e,
       editedIntegration: n,
       guild: p,
@@ -47,7 +47,7 @@ function p(e) {
       onEnable: j,
       onDisable: v,
       onToggleExpand: () => O(e.id)
-    }, e.id)), (0, r.jsx)(l.Text, {
+    }, e.id)), (0, i.jsx)(l.Text, {
       className: u.helpText,
       color: "text-muted",
       variant: "text-sm/normal",

@@ -123,7 +123,7 @@ let eZ = (0, u.Un)({
     renderLoader: ex
   }),
   eR = (0, u.Un)({
-    createPromise: () => Promise.all([n.e("6850"), n.e("9924")]).then(n.bind(n, 545918)),
+    createPromise: () => Promise.all([n.e("58175"), n.e("6850"), n.e("9924")]).then(n.bind(n, 545918)),
     webpackId: 545918,
     name: "MemberSafetyPage",
     renderLoader: ex

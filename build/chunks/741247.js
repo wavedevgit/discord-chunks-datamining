@@ -1,11 +1,11 @@
-/** Chunk was on 7104 **/
+/** Chunk was on 99226 **/
 n.d(t, {
   default: () => c,
   e: () => s
 });
-var r = n(255367);
+var i = n(255367);
 n(73800);
-var i = n(481060),
+var r = n(481060),
   l = n(239091),
   o = n(241635),
   a = n(388032);
@@ -20,7 +20,7 @@ function c(e) {
     guild: n,
     onSelect: s
   } = e, c = (0, o.Z)(n, t);
-  return 0 === c.length ? null : (0, r.jsx)(i.v2r, {
+  return 0 === c.length ? null : (0, i.jsx)(r.v2r, {
     navId: "guild-settings-role-context",
     "aria-label": a.intl.string(a.t["337Ja2"]),
     onClose: l.Zy,

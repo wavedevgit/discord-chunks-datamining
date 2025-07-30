@@ -1,17 +1,17 @@
-/** Chunk was on 7104 **/
+/** Chunk was on 99226 **/
 n.d(t, {
-  Z: () => i
+  Z: () => r
 }), n(388685);
-var r = n(73800);
+var i = n(73800);
 
-function i(e, t) {
-  let [n, i] = r.useState(null), l = r.useCallback(e => {
-    i(e)
-  }, []), o = r.useCallback(() => {
-    i(null)
-  }, []), a = r.useCallback(r => {
+function r(e, t) {
+  let [n, r] = i.useState(null), l = i.useCallback(e => {
+    r(e)
+  }, []), o = i.useCallback(() => {
+    r(null)
+  }, []), a = i.useCallback(i => {
     o();
-    let i = e.find(e => {
+    let r = e.find(e => {
         let {
           id: t
         } = e;
@@ -21,14 +21,14 @@ function i(e, t) {
         let {
           id: t
         } = e;
-        return r === t
+        return i === t
       });
-    if (null == i || null == l || i === l) return;
+    if (null == r || null == l || r === l) return;
     let a = [...e],
-      s = a.indexOf(i),
+      s = a.indexOf(r),
       c = a.indexOf(l),
       d = +(c - s > 0);
-    a.splice(s, 1), c = a.indexOf(l), a.splice(c + d, 0, i), t(a)
+    a.splice(s, 1), c = a.indexOf(l), a.splice(c + d, 0, r), t(a)
   }, [e, n, o, t]);
   return {
     draggingId: n,

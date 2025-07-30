@@ -1,27 +1,27 @@
-/** Chunk was on 12519 **/
+/** Chunk was on 42018 **/
 n.d(t, {
   Z: () => o
 });
 var i = n(255367);
 n(73800);
-var a = n(481060),
-  r = n(557239),
-  l = n(388032);
+var r = n(481060),
+  l = n(557239),
+  a = n(388032);
 
 function o(e) {
   let {
     guildFriendsEnabled: t
-  } = r.Z.useExperiment({
+  } = l.Z.useExperiment({
     location: "useFriendsItem"
   }, {
     autoTrackExposure: !1
   });
-  return t ? (0, i.jsx)(a.sNh, {
+  return t ? (0, i.jsx)(r.sNh, {
     id: "friends",
-    label: l.intl.string(l.t.kYxEcH),
-    icon: a.iFz,
+    label: a.intl.string(a.t.kYxEcH),
+    icon: r.iFz,
     action: () => {
-      (0, a.ZDy)(async () => {
+      (0, r.ZDy)(async () => {
         let {
           default: t
         } = await n.e("62635").then(n.bind(n, 564232));

@@ -43,7 +43,7 @@ function m(e) {
           },
           {
             default: t
-          } = await n.e("58175").then(n.bind(n, 664452));
+          } = await Promise.all([n.e("58175"), n.e("6584")]).then(n.bind(n, 664452));
         return n => {
           var i, l;
           return (0, r.jsx)(t, (i = function(e) {

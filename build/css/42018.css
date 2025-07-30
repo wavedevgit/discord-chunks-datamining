@@ -1,6 +1,6 @@
 /**
   Module ID: 42018
-  Original File Name: 1c30eb2b70e4c90b
+  Original File Name: a1ffe77458fdca25
 **/
 .labelWrapper_abe771 {
     align-items: center;
@@ -34,51 +34,6 @@
     display: flex
 }
 
-.mainChannelContainer__3e027 {
-    align-items: stretch;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    gap: 4px;
-    margin-bottom: 20px;
-    margin-top: 20px
-}
-
-.enableAlertsContainer__3e027 {
-    align-items: center;
-    background-color: var(--background-secondary-alt);
-    border: 1px solid var(--border-subtle);
-    border-radius: 4px;
-    cursor: pointer;
-    display: flex;
-    flex: 1;
-    flex-direction: row;
-    gap: 8px;
-    justify-content: space-between;
-    padding: 12px;
-    transition: background-color .1s,border-color .1s
-}
-
-.enableAlertsContainer__3e027:hover {
-    background-color: var(--background-base-lower);
-    border: 1px solid var(--background-modifier-hover)
-}
-
-.enabledAlertsCheckbox__3e027 {
-    flex: 0
-}
-
-.channelSelect__3e027 {
-    background-color: var(--background-secondary-alt)!important;
-    border: 1px solid var(--border-subtle)!important;
-    transition: background-color .1s,border-color .1s
-}
-
-.channelSelect__3e027:hover {
-    background-color: var(--background-base-lower)!important;
-    border: 1px solid var(--background-modifier-hover)!important
-}
-
 .newBadgeRow__46b5e {
     display: flex;
     flex-direction: row
@@ -89,4 +44,4 @@
     margin-left: auto
 }
 
-/*# sourceMappingURL=1c30eb2b70e4c90b.css.map*/
+/*# sourceMappingURL=a1ffe77458fdca25.css.map*/

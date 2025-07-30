@@ -1,9 +1,9 @@
-/** Chunk was on 7104 **/
+/** Chunk was on 99226 **/
 n.d(t, {
   Z: () => h
 }), n(35282), n(539854);
-var r = n(255367),
-  i = n(73800),
+var i = n(255367),
+  r = n(73800),
   l = n(755721),
   o = n(481060),
   a = n(668781),
@@ -25,34 +25,34 @@ function h(e) {
     isExpanded: x,
     errors: j,
     onToggleExpand: v
-  } = e, O = i.useMemo(() => {
+  } = e, O = r.useMemo(() => {
     var e;
     return null != (e = t.avatar) && /^data:/.test(e) ? e : (0, p.ov)({
       id: t.id,
       avatar: e,
       discriminator: b.fo$
     })
-  }, [t]), y = i.useCallback(() => {
+  }, [t]), y = r.useCallback(() => {
     (0, o.h7j)(e => {
-      var n, i;
-      return (0, r.jsx)(o.ConfirmModal, (n = function(e) {
+      var n, r;
+      return (0, i.jsx)(o.ConfirmModal, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            i = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-              value: r,
+          }))), i.forEach(function(t) {
+            var i;
+            i = n[t], t in e ? Object.defineProperty(e, t, {
+              value: i,
               enumerable: !0,
               configurable: !0,
               writable: !0
-            }) : e[t] = r
+            }) : e[t] = i
           })
         }
         return e
-      }({}, e), i = i = {
+      }({}, e), r = r = {
         header: g.intl.formatToPlainString(g.t.gBKqZ2, {
           name: t.name
         }),
@@ -66,19 +66,19 @@ function h(e) {
             })
           })
         },
-        children: (0, r.jsx)(o.Text, {
+        children: (0, i.jsx)(o.Text, {
           variant: "text-md/normal",
           children: g.intl.string(g.t.zO9jrK)
         })
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, r)
+          var i = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, i)
         }
         return n
-      })(Object(i)).forEach(function(e) {
-        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
+      })(Object(r)).forEach(function(e) {
+        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
       }), n))
     })
   }, [t.guild_id, t.id, t.name]), _ = [];
@@ -86,10 +86,10 @@ function h(e) {
     icon: o.MqZ,
     text: t.source_channel.name
   }), _.push({
-    text: (0, r.jsx)("span", {
+    text: (0, i.jsx)("span", {
       className: f.guildSource,
       children: g.intl.format(g.t["H/jJ6e"], {
-        guildHook: () => (0, r.jsx)("span", {
+        guildHook: () => (0, i.jsx)("span", {
           className: f.sourceName,
           children: t.source_guild.name
         }, t.id)
@@ -97,19 +97,19 @@ function h(e) {
     }, "guild-source")
   }));
   let C = null;
-  return x && null != n && (C = (0, r.jsxs)("div", {
+  return x && null != n && (C = (0, i.jsxs)("div", {
     className: f.body,
-    children: [(0, r.jsx)(o.$i$, {
+    children: [(0, i.jsx)(o.$i$, {
       className: f.topDivider
-    }), (0, r.jsx)(d.Z, {
-      children: (0, r.jsxs)(d.Z, {
+    }), (0, i.jsx)(d.Z, {
+      children: (0, i.jsxs)(d.Z, {
         direction: d.Z.Direction.VERTICAL,
-        children: [(0, r.jsxs)(d.Z, {
-          children: [(0, r.jsx)(d.Z.Child, {
+        children: [(0, i.jsxs)(d.Z, {
+          children: [(0, i.jsx)(d.Z.Child, {
             basis: "50%",
-            children: (0, r.jsx)(o.xJW, {
+            children: (0, i.jsx)(o.xJW, {
               title: g.intl.string(g.t.I1o5gY),
-              children: (0, r.jsx)(o.oil, {
+              children: (0, i.jsx)(o.oil, {
                 value: n.name,
                 onChange: e => {
                   s.Z.updateWebhook({
@@ -120,11 +120,11 @@ function h(e) {
                 error: j.name
               })
             })
-          }), (0, r.jsx)(d.Z.Child, {
+          }), (0, i.jsx)(d.Z.Child, {
             basis: "50%",
-            children: (0, r.jsx)(o.xJW, {
+            children: (0, i.jsx)(o.xJW, {
               title: g.intl.string(g.t["4TuWfX"]),
-              children: (0, r.jsx)(o.q4e, {
+              children: (0, i.jsx)(o.q4e, {
                 value: n.channel_id,
                 options: h,
                 onChange: e => {
@@ -135,10 +135,10 @@ function h(e) {
               })
             })
           })]
-        }), (0, r.jsx)(o.$i$, {
+        }), (0, i.jsx)(o.$i$, {
           className: f.bottomDivider
-        }), (0, r.jsx)(d.Z, {
-          children: (0, r.jsx)(l.zx, {
+        }), (0, i.jsx)(d.Z, {
+          children: (0, i.jsx)(l.zx, {
             onClick: y,
             size: l.zx.Sizes.SMALL,
             color: l.zx.Colors.RED,
@@ -149,23 +149,23 @@ function h(e) {
         })]
       })
     })]
-  })), (0, r.jsx)(o.Zbd, {
+  })), (0, i.jsx)(o.Zbd, {
     editable: !0,
     className: f.card,
-    children: (0, r.jsxs)(d.Z, {
+    children: (0, i.jsxs)(d.Z, {
       direction: d.Z.Direction.VERTICAL,
-      children: [(0, r.jsx)(o.P3F, {
+      children: [(0, i.jsx)(o.P3F, {
         className: f.header,
         "aria-expanded": x,
         onClick: v,
-        children: (0, r.jsxs)(d.Z, {
+        children: (0, i.jsxs)(d.Z, {
           align: d.Z.Align.CENTER,
-          children: [(0, r.jsx)(m.Z, {
+          children: [(0, i.jsx)(m.Z, {
             name: t.name,
             imageSrc: O,
             detailsClassName: f.__invalid_description,
             details: _
-          }), (0, r.jsx)(u.Z, {
+          }), (0, i.jsx)(u.Z, {
             className: f.expandIcon,
             expanded: x,
             "aria-hidden": !0

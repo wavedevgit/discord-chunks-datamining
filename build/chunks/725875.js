@@ -1,9 +1,9 @@
-/** Chunk was on 7104 **/
+/** Chunk was on 99226 **/
 n.d(t, {
   Z: () => g
 }), n(539854), n(388685), n(642613);
-var r = n(255367),
-  i = n(73800),
+var i = n(255367),
+  r = n(73800),
   l = n(481060),
   o = n(139387),
   a = n(933557),
@@ -23,24 +23,24 @@ function g(e) {
     editedWebhook: f,
     errors: h,
     canNavigate: x
-  } = e, j = i.useMemo(() => Object.values(n).map(e => ({
+  } = e, j = r.useMemo(() => Object.values(n).map(e => ({
     value: e.id,
     label: (0, a.F6)(e, c.default, s.Z, !0)
-  })), [n]), v = i.useMemo(() => {
+  })), [n]), v = r.useMemo(() => {
     let e = {};
-    for (let r of t)
-      if (r.channel_id in e) e[r.channel_id].webhooks.push(r);
+    for (let i of t)
+      if (i.channel_id in e) e[i.channel_id].webhooks.push(i);
       else {
-        let t = n[r.channel_id];
-        null != t && (e[r.channel_id] = {
+        let t = n[i.channel_id];
+        null != t && (e[i.channel_id] = {
           channel: t,
-          webhooks: [r]
+          webhooks: [i]
         })
       } return Object.values(e).sort((e, t) => e.channel.name.localeCompare(t.channel.name))
-  }, [n, t]), O = i.useCallback(e => {
+  }, [n, t]), O = r.useCallback(e => {
     x() && (e === (null == f ? void 0 : f.id) ? o.Z.stopEditingWebhook() : o.Z.startEditingWebhook(e))
   }, [x, f]);
-  return (0, r.jsx)("div", {
+  return (0, i.jsx)("div", {
     className: b.__invalid_list,
     children: v.map(e => {
       let {
@@ -51,35 +51,35 @@ function g(e) {
         let {
           channel: t,
           webhooks: n,
-          channelOptions: i,
+          channelOptions: r,
           lastCreatedWebhookId: o,
           editedWebhook: g,
           errors: f,
           toggleWebhookExpand: h
         } = e;
-        return (0, r.jsxs)("div", {
-          children: [(0, r.jsx)(l.vwX, {
+        return (0, i.jsxs)("div", {
+          children: [(0, i.jsx)(l.vwX, {
             className: b.groupHeader,
             children: m.intl.format(m.t.TKDIZm, {
-              channelHook: () => (0, r.jsx)("span", {
+              channelHook: () => (0, i.jsx)("span", {
                 className: b.channelName,
                 children: (0, a.F6)(t, c.default, s.Z, !0)
               }, t.id)
             })
           }), n.map(e => {
             var t;
-            return e.type === p.ylB.CHANNEL_FOLLOWER ? (0, r.jsx)(d.Z, {
+            return e.type === p.ylB.CHANNEL_FOLLOWER ? (0, i.jsx)(d.Z, {
               webhook: e,
               editedWebhook: g,
-              channelOptions: i,
+              channelOptions: r,
               isExpanded: (null == g ? void 0 : g.id) === e.id,
               onToggleExpand: () => h(e.id),
               errors: f
-            }, e.id) : (0, r.jsx)(u.Z, {
+            }, e.id) : (0, i.jsx)(u.Z, {
               id: (t = e.id, "settings-integrations-webhook-".concat(t)),
               webhook: e,
               editedWebhook: g,
-              channelOptions: i,
+              channelOptions: r,
               isExpanded: (null == g ? void 0 : g.id) === e.id,
               isNew: o === e.id,
               onToggleExpand: () => h(e.id),

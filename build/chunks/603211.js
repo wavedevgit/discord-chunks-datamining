@@ -1,9 +1,9 @@
-/** Chunk was on 7104 **/
+/** Chunk was on 99226 **/
 n.d(t, {
   Z: () => o
 }), n(388685);
-var r = n(73800),
-  i = n(562075),
+var i = n(73800),
+  r = n(562075),
   l = n(539202);
 
 function o(e) {
@@ -14,7 +14,7 @@ function o(e) {
     onDragStart: a,
     onDragComplete: s,
     onDragReset: c
-  } = e, [d, u] = r.useState(!1), [, p] = (0, i.c)({
+  } = e, [d, u] = i.useState(!1), [, p] = (0, r.c)({
     type: t,
     item: () => (a(o), {
       id: o,
