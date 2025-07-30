@@ -1,6 +1,6 @@
 /**
   Module ID: 43473
-  Original File Name: 4ba7ff368eed05f3
+  Original File Name: e7812cf3e9510513
 **/
 .scroller__95bea {
     display: flex;
@@ -1210,6 +1210,24 @@
     cursor: pointer
 }
 
+.tagList__25a50 {
+    flex-wrap: wrap
+}
+
+.tag__25a50,.tagList__25a50 {
+    display: flex;
+    flex-direction: row;
+    gap: 4px
+}
+
+.tag__25a50 {
+    align-items: center;
+    background: var(--background-mod-subtle);
+    border: 1px solid var(--border-faint);
+    border-radius: 58px;
+    padding: 4px 8px
+}
+
 .card_e1364f {
     align-items: start;
     display: grid;
@@ -1501,4 +1519,4 @@
     border-color: var(--input-focused-border)
 }
 
-/*# sourceMappingURL=4ba7ff368eed05f3.css.map*/
+/*# sourceMappingURL=e7812cf3e9510513.css.map*/

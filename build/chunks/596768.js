@@ -24,8 +24,8 @@ var n = a(255367),
   y = a(621060),
   C = a(388032),
   O = a(459100),
-  T = a(616257);
-let N = [{
+  N = a(616257);
+let T = [{
     key: "id",
     cellClassName: O.eventColumn,
     render(e) {
@@ -71,7 +71,7 @@ let N = [{
       } = e, u = d()(s);
       return (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsxs)(h.ZP, {
-          className: i()(T.headerBar, O.subPanelHeaderBar),
+          className: i()(N.headerBar, O.subPanelHeaderBar),
           children: [(0, n.jsx)(h.ZP.Icon, {
             icon: x.IeX,
             tooltip: t
@@ -147,7 +147,7 @@ function S() {
   }, []);
   return (0, n.jsxs)("div", {
     ref: a,
-    className: i()(T.panel, O.panel),
+    className: i()(N.panel, O.panel),
     children: [(0, n.jsxs)("div", {
       className: O.toolbar,
       children: [(0, n.jsx)("div", {
@@ -179,7 +179,7 @@ function S() {
         placeholder: "Search by experiment id"
       })]
     }), (0, n.jsx)(_.Z, {
-      columns: N,
+      columns: T,
       data: s,
       selectedRowKey: c,
       onClickRow: e => d(e.key)

@@ -1,6 +1,6 @@
 /** Chunk was on 43473 **/
 n.d(t, {
-  Z: () => m
+  Z: () => p
 });
 var r = n(255367),
   o = n(73800),
@@ -8,11 +8,12 @@ var r = n(255367),
   a = n(810568),
   l = n(168524),
   c = n(817053),
-  s = n(388032),
-  d = n(467514),
-  u = n(418718);
+  s = n(879877),
+  d = n(388032),
+  u = n(467514),
+  f = n(418718);
 
-function f(e) {
+function m(e) {
   let {
     text: t
   } = e;
@@ -20,7 +21,7 @@ function f(e) {
     children: [(0, r.jsx)(i.PEf, {
       size: "xs",
       color: i.TVs.colors.ICON_TERTIARY,
-      className: u.icon
+      className: f.icon
     }), (0, r.jsx)(i.Text, {
       variant: "text-sm/normal",
       color: "text-tertiary",
@@ -29,66 +30,69 @@ function f(e) {
   })
 }
 
-function m(e) {
+function p(e) {
   let {
     userId: t,
     game: n,
-    loading: m = !1,
-    disableInteraction: p = !1
+    loading: p = !1,
+    disableInteraction: g = !1
   } = e, {
-    gameName: g,
+    gameName: x,
     imageSrc: b,
-    applicationId: x,
-    comment: h
-  } = n, _ = (0, l.Z)({
+    applicationId: _,
+    comment: h,
+    tags: j
+  } = n, y = (0, l.Z)({
     location: "UserProfileWidgetGameDetailsCard",
-    applicationId: x,
+    applicationId: _,
     source: a.m1.UserProfile,
     sourceUserId: t,
     trackEntryPointImpression: !0
-  }), j = o.useCallback(e => {
-    e.target === e.currentTarget && (null == _ || _(e))
-  }, [_]), y = () => (0, r.jsxs)(r.Fragment, {
+  }), I = o.useCallback(e => {
+    e.target === e.currentTarget && (null == y || y(e))
+  }, [y]), v = () => (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.Z, {
       imageSrc: b,
-      gameName: g,
-      applicationId: x,
+      gameName: x,
+      applicationId: _,
       userId: t,
       disableInteraction: !0
     }), (0, r.jsxs)("div", {
-      className: u.details,
+      className: f.details,
       children: [(0, r.jsx)(i.X6q, {
         variant: "text-md/normal",
         color: "text-default",
-        children: g
-      }), (0, r.jsx)(f, {
+        children: x
+      }), (0, r.jsx)(m, {
         text: h
+      }), (0, r.jsx)(s.Z, {
+        tags: j
       }), (0, r.jsx)(i.Text, {
         variant: "text-xs/normal",
         color: "text-secondary",
-        className: u.socialProof,
+        className: f.socialProof,
         children: "3 people you know play this game"
       })]
     })]
   });
-  return m ? (0, r.jsxs)("div", {
-    className: u.card,
+  return p ? (0, r.jsxs)("div", {
+    className: f.card,
     children: [(0, r.jsx)("div", {
-      className: d.gameCover
+      className: u.gameCover
     }), (0, r.jsx)("div", {
-      className: u.details
+      className: f.details
     })]
-  }) : p || null == _ ? (0, r.jsx)("div", {
-    className: u.card,
-    children: y()
+  }) : g || null == y ? (0, r.jsx)("div", {
+    className: f.card,
+    children: v()
   }) : (0, r.jsxs)("div", {
-    className: u.card,
+    className: f.card,
     children: [(0, r.jsx)(i.P3F, {
-      className: u.clickableCard,
-      "aria-label": s.intl.formatToPlainString(s.t["8QLQBw"], {
-        gameName: g
+      className: f.clickableCard,
+      "aria-label": d.intl.formatToPlainString(d.t["8QLQBw"], {
+        gameName: x
       }),
-      onClick: j
-    }), y()]
+      onClick: I
+    }), v()]
   })
 }

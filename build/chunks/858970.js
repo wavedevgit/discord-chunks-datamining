@@ -16,15 +16,15 @@ var o = n(442837),
   m = n(221292),
   p = n(687158),
   g = n(316027),
-  b = n(502762),
-  x = n(848780),
-  h = n(907179),
-  _ = n(228168),
+  x = n(502762),
+  b = n(848780),
+  _ = n(907179),
+  h = n(228168),
   j = n(981631),
   y = n(388032),
-  v = n(247787);
+  I = n(247787);
 
-function I(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,8 +48,8 @@ function O(e) {
     user: t,
     guildId: n,
     channelId: O,
-    messageId: P,
-    roleId: N,
+    messageId: N,
+    roleId: P,
     transitionState: T,
     openedAt: Z,
     onHide: A,
@@ -62,44 +62,44 @@ function O(e) {
     showGuildProfile: !0,
     guildId: w,
     channelId: O,
-    messageId: P,
-    roleId: N
+    messageId: N,
+    roleId: P
   }), B = [{
     icon: a.owK,
     description: y.intl.string(y.t.kcuWvb)
   }, {
     icon: a.owK,
     description: y.intl.string(E ? y.t.QxrDY2 : y.t.W6fjkZ)
-  }], k = (0, p.ZP)(t.id, w), U = u.ZP.getName(null == k ? void 0 : k.guildId, O, t), D = y.intl.formatToPlainString(y.t.KRe1Fh, {
-    name: U
+  }], R = (0, p.ZP)(t.id, w), G = u.ZP.getName(null == R ? void 0 : R.guildId, O, t), k = y.intl.formatToPlainString(y.t.KRe1Fh, {
+    name: G
   });
   return (0, r.jsx)(c.Gt, {
     value: S,
     children: (0, r.jsx)(f.Mt, {
       value: L,
       openedAt: Z,
-      fetchStartedAt: null == k ? void 0 : k.fetchStartedAt,
-      fetchEndedAt: null == k ? void 0 : k.fetchEndedAt,
-      isLoaded: null == k ? void 0 : k.isLoaded,
+      fetchStartedAt: null == R ? void 0 : R.fetchStartedAt,
+      fetchEndedAt: null == R ? void 0 : R.fetchEndedAt,
+      isLoaded: null == R ? void 0 : R.isLoaded,
       children: (0, r.jsx)(a.Y0X, {
         transitionState: T,
-        className: v.root,
-        "aria-label": D,
+        className: I.root,
+        "aria-label": k,
         parentComponent: "RestrictedUserProfileModalV2",
-        children: (0, r.jsxs)(b.Z, {
+        children: (0, r.jsxs)(x.Z, {
           user: t,
-          displayProfile: k,
-          themeType: _.lY.MODAL_V2,
+          displayProfile: R,
+          themeType: h.lY.MODAL_V2,
           children: [(0, r.jsx)("div", {
-            className: v.background
+            className: I.background
           }), (0, r.jsxs)("div", {
-            className: v.content,
+            className: I.content,
             children: [(0, r.jsx)(g.Z, {
               user: t,
               guildId: w,
               iconColor: a.TVs.colors.TEXT_DEFAULT
             }), (0, r.jsxs)("div", {
-              className: v.textContainer,
+              className: I.textContainer,
               children: [(0, r.jsx)(a.X6q, {
                 variant: "heading-xl/bold",
                 color: "text-default",
@@ -108,11 +108,11 @@ function O(e) {
                 variant: "text-md/medium",
                 color: "text-default",
                 children: y.intl.format(E ? y.t.T7QiLi : y.t.MnEow8, {
-                  username: U
+                  username: G
                 })
               })]
             }), (0, r.jsx)("div", {
-              className: v.safetyTable,
+              className: I.safetyTable,
               children: B.map((e, t) => {
                 let {
                   icon: n,
@@ -127,19 +127,19 @@ function O(e) {
               })
             }), (0, r.jsxs)(a.Kqy, {
               align: "center",
-              children: [(0, r.jsx)(h.Z, {
+              children: [(0, r.jsx)(_.Z, {
                 size: i.Ph.MEDIUM,
                 isBlocked: E,
                 onClick: () => {
-                  A(), (0, m.pQ)(I({
+                  A(), (0, m.pQ)(v({
                     action: E ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
                     analyticsLocations: S
                   }, L))
                 }
-              }), (0, r.jsx)(x.Z, {
+              }), (0, r.jsx)(b.Z, {
                 userId: t.id,
                 onClick: () => {
-                  A(), (0, m.pQ)(I({
+                  A(), (0, m.pQ)(v({
                     action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
                     analyticsLocations: S
                   }, L))

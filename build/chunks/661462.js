@@ -54,16 +54,16 @@ function p(e) {
     guildId: u,
     channelId: p,
     items: g,
-    initialSection: b,
-    initialSubsection: x,
-    onClose: h
+    initialSection: x,
+    initialSubsection: b,
+    onClose: _
   } = e, {
-    trackUserProfileAction: _
+    trackUserProfileAction: h
   } = (0, a.KZ)(), [{
     section: j,
     subsection: y,
-    text: v
-  }, I] = o.useState((n = function(e) {
+    text: I
+  }, v] = o.useState((n = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -84,9 +84,9 @@ function p(e) {
     let {
       section: t
     } = e;
-    return t === b
+    return t === x
   })) ? t : g[0]), l = l = {
-    subsection: x
+    subsection: b
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -109,10 +109,10 @@ function p(e) {
         look: "custom",
         selectedItem: j,
         onItemSelect: e => {
-          _({
+          h({
             action: "PRESS_SECTION",
             section: e
-          }), I(t => {
+          }), v(t => {
             var n;
             return null != (n = g.find(t => t.section === e)) ? n : t
           })
@@ -126,7 +126,7 @@ function p(e) {
       })
     }), (0, r.jsx)(i.njP.Panel, {
       id: j,
-      "aria-label": v,
+      "aria-label": I,
       className: f.tabBarPanel,
       children: (0, r.jsx)(m, {
         user: c,
@@ -136,7 +136,7 @@ function p(e) {
         channelId: p,
         section: j,
         subsection: y,
-        onClose: h
+        onClose: _
       })
     })]
   })

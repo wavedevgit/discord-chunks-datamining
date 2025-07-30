@@ -21,32 +21,32 @@ function g(e) {
     user: t,
     currentUser: n,
     guildId: g,
-    channelId: b,
-    displayProfile: x,
-    relationshipType: h,
-    onClose: _
+    channelId: x,
+    displayProfile: b,
+    relationshipType: _,
+    onClose: h
   } = e, {
     newestAnalyticsLocation: j
   } = (0, a.ZP)(), y = (0, l.Z)({
     user: t,
     guildId: g,
-    channelId: b,
-    displayProfile: x,
-    onClose: _
+    channelId: x,
+    displayProfile: b,
+    onClose: h
   }), {
-    gameFriends: v,
-    hasOutgoingPendingGameFriends: I,
+    gameFriends: I,
+    hasOutgoingPendingGameFriends: v,
     hasIncomingPendingGameFriends: O
   } = (0, m.H)({
     userId: t.id
-  }), P = v.length > 0 || I || O;
-  return h === p.OGo.BLOCKED ? null : t.id === n.id ? (0, r.jsxs)(r.Fragment, {
+  }), N = I.length > 0 || v || O;
+  return _ === p.OGo.BLOCKED ? null : t.id === n.id ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.Z, {
       user: t,
       guildId: g,
-      onClose: _
+      onClose: h
     }), (0, r.jsx)(u.Z, {
-      onClose: _
+      onClose: h
     }), (0, r.jsx)(d.Z, {
       type: "icon",
       user: t,
@@ -67,7 +67,7 @@ function g(e) {
       viewProfileItem: y,
       themeColor: "secondary"
     })]
-  }) : h === p.OGo.PENDING_INCOMING ? (0, r.jsxs)(r.Fragment, {
+  }) : _ === p.OGo.PENDING_INCOMING ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.Z, {
       type: "text",
       userId: t.id,
@@ -80,7 +80,7 @@ function g(e) {
       guildId: g,
       themeColor: "secondary"
     })]
-  }) : h === p.OGo.FRIEND || h === p.OGo.PENDING_OUTGOING ? (0, r.jsxs)(r.Fragment, {
+  }) : _ === p.OGo.FRIEND || _ === p.OGo.PENDING_OUTGOING ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.Z, {
       type: "text",
       userId: t.id,
@@ -90,7 +90,7 @@ function g(e) {
     }), (0, r.jsx)(f.g, {
       type: "icon",
       user: t,
-      relationshipType: h,
+      relationshipType: _,
       shouldShowTooltip: !0,
       themeColor: "secondary",
       analyticsLocation: j
@@ -101,7 +101,7 @@ function g(e) {
       viewProfileItem: y,
       themeColor: "secondary"
     })]
-  }) : h === p.OGo.NONE && P ? (0, r.jsxs)(r.Fragment, {
+  }) : _ === p.OGo.NONE && N ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.Z, {
       type: "text",
       userId: t.id,
@@ -112,12 +112,12 @@ function g(e) {
       user: t,
       analyticsLocation: j,
       themeColor: "secondary",
-      gameFriends: v,
+      gameFriends: I,
       tooltipPosition: "top",
       tooltipAlign: "center",
       shouldShowTooltip: !0,
       hasIncomingPendingGameFriends: O,
-      hasOutgoingPendingGameFriends: I
+      hasOutgoingPendingGameFriends: v
     }), (0, r.jsx)(d.Z, {
       type: "icon",
       user: t,

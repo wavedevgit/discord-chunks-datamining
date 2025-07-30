@@ -68,14 +68,14 @@ let g = {
 function y(e) {
   var t, a, l, h, y, C, O;
   let {
-    subscription: T,
-    onUpdated: N
-  } = e, [E, S] = r.useState(!1), [P, w] = r.useState(!1), [I, R] = r.useState(!1), [k, A] = r.useState(!1), [Z, D] = r.useState(null), L = e => (null == e && (e = T.status), e in g) ? g[e] : "Unknown status ".concat(e), M = e => {
+    subscription: N,
+    onUpdated: T
+  } = e, [E, S] = r.useState(!1), [P, I] = r.useState(!1), [w, R] = r.useState(!1), [k, A] = r.useState(!1), [Z, D] = r.useState(null), L = e => (null == e && (e = N.status), e in g) ? g[e] : "Unknown status ".concat(e), M = e => {
     let t = new Date(e);
     return u.default.fromTimestamp(t.getTime())
   }, U = async e => {
     let {
-      status: t = T.status,
+      status: t = N.status,
       premiumStreakStart: a,
       endedAt: n
     } = e, r = function(e) {
@@ -103,14 +103,14 @@ function y(e) {
       ended_at: M(n)
     } : null);
     await s.tn.patch({
-      url: "/debug/subscriptions/".concat(T.id),
+      url: "/debug/subscriptions/".concat(N.id),
       body: r,
       rejectWithError: !1
-    }), N()
+    }), T()
   }, F = async () => {
     try {
       await s.tn.post({
-        url: "/debug/subscriptions/".concat(T.id, "/transition"),
+        url: "/debug/subscriptions/".concat(N.id, "/transition"),
         body: {
           target_datetime: new Date().toISOString(),
           payment_type: 0,
@@ -122,8 +122,8 @@ function y(e) {
     } catch (e) {
       D(e.body.message)
     }
-    N()
-  }, B = (null == (t = b.GP[T.planIdFromItems]) ? void 0 : t.premiumType) === b.p9.TIER_0, z = null == (a = T.metadata) ? void 0 : a.ended_at, G = null != z ? new Date(z).toISOString().substring(0, 10) : "", V = T.hasActiveTrial, H = (null == (l = T.metadata) ? void 0 : l.active_discount_id) != null;
+    T()
+  }, B = (null == (t = b.GP[N.planIdFromItems]) ? void 0 : t.premiumType) === b.p9.TIER_0, G = null == (a = N.metadata) ? void 0 : a.ended_at, z = null != G ? new Date(G).toISOString().substring(0, 10) : "", V = N.hasActiveTrial, H = (null == (l = N.metadata) ? void 0 : l.active_discount_id) != null;
   return (0, n.jsxs)("div", {
     className: i()(f.card, B ? f.gradientWrapperTier0 : f.gradientWrapperTier2),
     children: [V && (0, n.jsx)(o.P3F, {
@@ -145,32 +145,32 @@ function y(e) {
       children: [(0, n.jsxs)(o.Text, {
         variant: "text-md/normal",
         children: ["Type: ", (() => {
-          let e = T.planIdFromItems;
+          let e = N.planIdFromItems;
           return null == e ? "No plan id" : e in b.GP ? b.GP[e].name : "Unknown plan id ".concat(e)
         })(), " "]
       }), (0, n.jsxs)(o.Text, {
         variant: "text-md/normal",
-        children: ["ID: ", T.id, " "]
-      }), T.status !== p.O0b.ACTIVE && (0, n.jsxs)(o.Text, {
+        children: ["ID: ", N.id, " "]
+      }), N.status !== p.O0b.ACTIVE && (0, n.jsxs)(o.Text, {
         variant: "text-md/normal",
-        children: ["Dates: ", (0, d.vc)(T.createdAt, "LL"), " - ", (0, d.vc)(T.currentPeriodEnd, "LL")]
+        children: ["Dates: ", (0, d.vc)(N.createdAt, "LL"), " - ", (0, d.vc)(N.currentPeriodEnd, "LL")]
       }), (0, n.jsxs)(o.Text, {
         variant: "text-md/normal",
         children: ["Status: ", L()]
-      }), T.status === p.O0b.PAUSED && (0, n.jsxs)(n.Fragment, {
+      }), N.status === p.O0b.PAUSED && (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsxs)(o.Text, {
           variant: "text-md/normal",
-          children: ["Pause Reason: ", T.pauseReason in j ? j[T.pauseReason] : "Unknown pause reason ".concat(T.pauseReason)]
-        }), null != T.pauseEndsAt && (0, n.jsxs)(o.Text, {
+          children: ["Pause Reason: ", N.pauseReason in j ? j[N.pauseReason] : "Unknown pause reason ".concat(N.pauseReason)]
+        }), null != N.pauseEndsAt && (0, n.jsxs)(o.Text, {
           variant: "text-md/normal",
-          children: ["Pause Ends At: ", (0, d.vc)(T.pauseEndsAt, "LL")]
+          children: ["Pause Ends At: ", (0, d.vc)(N.pauseEndsAt, "LL")]
         })]
       })]
     }), V && (0, n.jsxs)("div", {
       className: v.collapsablePane,
       children: [(0, n.jsxs)(o.P3F, {
         onClick: () => {
-          R(!I)
+          R(!w)
         },
         className: v.collapsablePaneHeader,
         children: [(0, n.jsx)("div", {
@@ -179,9 +179,9 @@ function y(e) {
             children: "Trial Info"
           })
         }), (0, n.jsx)(c.Z, {
-          direction: I ? c.Z.Directions.UP : c.Z.Directions.DOWN
+          direction: w ? c.Z.Directions.UP : c.Z.Directions.DOWN
         })]
-      }), I && (0, n.jsxs)("ul", {
+      }), w && (0, n.jsxs)("ul", {
         className: v.collapsiblePaneList,
         children: [(0, n.jsxs)("li", {
           children: [(0, n.jsx)(o.Text, {
@@ -189,7 +189,7 @@ function y(e) {
             children: "trial_id"
           }), (0, n.jsx)(o.Text, {
             variant: "text-sm/normal",
-            children: T.trialId
+            children: N.trialId
           })]
         }), (0, n.jsxs)("li", {
           children: [(0, n.jsx)(o.Text, {
@@ -197,7 +197,7 @@ function y(e) {
             children: "trial_ends_at"
           }), (0, n.jsx)(o.Text, {
             variant: "text-sm/normal",
-            children: null != T.trialEndsAt ? (0, d.vc)(T.trialEndsAt, "LL") : "N/A"
+            children: null != N.trialEndsAt ? (0, d.vc)(N.trialEndsAt, "LL") : "N/A"
           })]
         })]
       })]
@@ -224,7 +224,7 @@ function y(e) {
             children: "active_discount_id"
           }), (0, n.jsx)(o.Text, {
             variant: "text-sm/normal",
-            children: null == (h = T.metadata) ? void 0 : h.active_discount_id
+            children: null == (h = N.metadata) ? void 0 : h.active_discount_id
           })]
         }), (0, n.jsxs)("li", {
           children: [(0, n.jsx)(o.Text, {
@@ -232,11 +232,11 @@ function y(e) {
             children: "active_discount_expires_at"
           }), (0, n.jsx)(o.Text, {
             variant: "text-sm/normal",
-            children: (null == (y = T.metadata) ? void 0 : y.active_discount_expires_at) != null ? (0, d.vc)(new Date(null == (C = T.metadata) ? void 0 : C.active_discount_expires_at), "LL") : "N/A"
+            children: (null == (y = N.metadata) ? void 0 : y.active_discount_expires_at) != null ? (0, d.vc)(new Date(null == (C = N.metadata) ? void 0 : C.active_discount_expires_at), "LL") : "N/A"
           })]
         })]
       })]
-    }), null != T.metadata && (0, n.jsxs)("div", {
+    }), null != N.metadata && (0, n.jsxs)("div", {
       className: v.collapsablePane,
       children: [(0, n.jsxs)(o.P3F, {
         onClick: () => {
@@ -253,7 +253,7 @@ function y(e) {
         })]
       }), E && (0, n.jsx)("ul", {
         className: v.collapsiblePaneList,
-        children: Object.entries(T.metadata).map(e => {
+        children: Object.entries(N.metadata).map(e => {
           let [t, a] = e;
           return (0, n.jsxs)("li", {
             children: [(0, n.jsx)(o.Text, {
@@ -270,7 +270,7 @@ function y(e) {
       className: v.collapsablePane,
       children: [(0, n.jsxs)(o.P3F, {
         onClick: () => {
-          w(!P)
+          I(!P)
         },
         className: v.collapsablePaneHeader,
         children: [(0, n.jsx)("div", {
@@ -288,7 +288,7 @@ function y(e) {
           className: v.formSection,
           children: (0, n.jsx)(o.PhF, {
             serialize: e => L(e),
-            isSelected: e => e === T.status,
+            isSelected: e => e === N.status,
             options: _,
             select: e => U({
               status: e
@@ -315,7 +315,7 @@ function y(e) {
           className: v.formSection,
           children: [(0, n.jsx)("input", {
             type: "date",
-            value: null == (O = T.premiumSince) ? void 0 : O.toISOString().substring(0, 10),
+            value: null == (O = N.premiumSince) ? void 0 : O.toISOString().substring(0, 10),
             onChange: e => U({
               premiumStreakStart: e.target.value
             }),
@@ -329,7 +329,7 @@ function y(e) {
           className: v.formSection,
           children: (0, n.jsx)("input", {
             type: "date",
-            value: G,
+            value: z,
             onChange: e => U({
               endedAt: e.target.value
             })

@@ -24,9 +24,9 @@ var n = a(255367),
 let y = [o.z.GUILD_POWERUP_PERKS_COACHMARK, o.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK, o.z.GUILD_POWERUP_NOTIFICATION, o.z.GUILD_TAG_AVAILABLE_COACHMARK, o.z.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK],
   C = [o.C.GUILD_POWERUP_LEVEL_1_COACHMARK, o.C.GUILD_POWERUP_LEVEL_2_COACHMARK, o.C.GUILD_POWERUP_LEVEL_3_COACHMARK, o.C.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, o.C.GUILD_POWERUP_CHOICE_SKU_PURCHASE_COACHMARK],
   O = [o.C.ADOPT_CLAN_IDENTITY_NOTICE],
-  T = [o.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION, o.z.VANITY_URL_POWERUP_ROLLBACK_MODAL, o.z.VANITY_URL_POWERUP_EDUCATIONAL_POPOVER];
+  N = [o.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION, o.z.VANITY_URL_POWERUP_ROLLBACK_MODAL, o.z.VANITY_URL_POWERUP_EDUCATIONAL_POPOVER];
 
-function N(e) {
+function T(e) {
   switch (e) {
     case o.C.GUILD_POWERUP_LEVEL_1_COACHMARK:
       return "GUILD_POWERUP_LEVEL_1_COACHMARK";
@@ -152,7 +152,7 @@ function P() {
         value: r.includes(e),
         children: (0, n.jsx)(c.Text, {
           variant: "text-sm/normal",
-          children: N(e)
+          children: T(e)
         })
       }, e))]
     }), (0, n.jsxs)("div", {
@@ -168,7 +168,7 @@ function P() {
         value: r.includes(e),
         children: (0, n.jsx)(c.Text, {
           variant: "text-sm/normal",
-          children: N(e)
+          children: T(e)
         })
       }, e))]
     }), (0, n.jsxs)("div", {
@@ -177,7 +177,7 @@ function P() {
         variant: "eyebrow",
         className: _.header,
         children: "Reset Powerup Rollback DCs"
-      }), T.map(e => (0, n.jsx)(u.u, {
+      }), N.map(e => (0, n.jsx)(u.u, {
         className: _.formSwitch,
         contents: l,
         content: o.z[e],
