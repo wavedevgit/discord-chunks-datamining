@@ -10,9 +10,9 @@ var r, i = n(512722),
   l = n(155458),
   c = n(442837),
   u = n(570140),
-  d = n(615287),
-  _ = n(710845),
-  f = n(41534),
+  d = n(710845),
+  _ = n(41534),
+  f = n(837268),
   p = n(857192),
   h = n(358085),
   m = n(998502),
@@ -76,7 +76,7 @@ function S(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let A = new _.Z("PopoutWindowStore"),
+let A = new d.Z("PopoutWindowStore"),
   N = {},
   C = {},
   R = {},
@@ -159,7 +159,7 @@ function Z(e) {
     defaultWidth: s,
     defaultHeight: l,
     defaultAlwaysOnTop: c = !1
-  } = n, u = T(n, ["defaultWidth", "defaultHeight", "defaultAlwaysOnTop"]), _ = I(O({}, u), {
+  } = n, u = T(n, ["defaultWidth", "defaultHeight", "defaultAlwaysOnTop"]), d = I(O({}, u), {
     width: null != s ? s : u.width,
     height: null != l ? l : u.height
   }), p = c, g = N[t];
@@ -171,23 +171,23 @@ function Z(e) {
       y: r,
       alwaysOnTop: i
     } = g;
-    p = null != i ? i : c, _ = I(O({}, _), {
+    p = null != i ? i : c, d = I(O({}, d), {
       width: null != e && 0 !== e ? e : s,
       height: null != t && 0 !== t ? t : l,
       left: n,
       top: r
     })
   }
-  let y = (0, E.Z)(_),
+  let y = (0, E.Z)(d),
     v = window.open(b.Z5c.POPOUT_WINDOW, t, y);
   try {
     v.windowKey = t
   } catch (e) {
-    throw (0, f.D1)(e, i ? d.gl.OutOfProcess : null, {
+    throw (0, _.D1)(e, i ? f.gl.OutOfProcess : null, {
       extra: {
         windowKey: t,
         totalWindowCount: Object.keys(R).length,
-        features: _,
+        features: d,
         encodedFeatures: y,
         isPlatformEmbedded: h.isPlatformEmbedded
       }

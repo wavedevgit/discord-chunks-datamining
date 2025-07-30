@@ -15,8 +15,8 @@ var i = n(255367),
   f = n(434529),
   h = n(145597),
   m = n(830917),
-  g = n(353038),
-  y = n(306381),
+  g = n(837268),
+  y = n(353038),
   O = n(610394),
   b = n(561064),
   v = n(981631),
@@ -71,7 +71,7 @@ let I = r.memo(function(e) {
       anchor: l,
       size: a
     });
-    let d = e === g.B.MOVE,
+    let d = e === y.B.MOVE,
       h = (0, f.PY)(n, o.width, o.height, r.width, r.height);
     c.Z.track(v.rMx.OVERLAY_LAYOUT_UPDATED, {
       was_resized: !d,
@@ -109,12 +109,12 @@ let I = r.memo(function(e) {
   })), [t, n, j]), Q = r.useCallback(e => null != o || null != I ? (0, i.jsxs)("div", {
     className: E.extrasContainer,
     children: [null == o ? void 0 : o(t), null == I ? void 0 : I(t, e)]
-  }) : null, [t, o, I]), K = (0, a.e7)([O.ZP], () => O.ZP.hasRenderDebugMode(y.G.WidgetAreas)), X = r.useMemo(() => {
+  }) : null, [t, o, I]), K = (0, a.e7)([O.ZP], () => O.ZP.hasRenderDebugMode(g.GO.WidgetAreas)), X = r.useMemo(() => {
     if (null != S) return e => S(x(_({}, e), {
       widget: t
     }))
   }, [S, t]);
-  return (0, i.jsx)(g.Z, {
+  return (0, i.jsx)(y.Z, {
     className: l()({
       [E.debug]: K,
       [E.debugUnpinned]: K && !A,

@@ -150,14 +150,14 @@ function er(e) {
 }
 class eo extends(i = s.ZP.Store) {
   initialize() {
-    this.waitFor(I.Z, k.default, x.Z)
+    this.waitFor(L.default, I.Z, k.default, x.Z)
   }
   getNotifications() {
     return q
   }
 }
 H(eo, "displayName", "OverlayNotificationsStore");
-let el = new eo(a.Z, {
+let el = new eo(a.Z, !__OVERLAY__ ? {} : {
   OVERLAY_UPDATE_NOTIFICATION_STATUS: function(e) {
     let {
       notificationId: t,

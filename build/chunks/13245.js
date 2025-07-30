@@ -5,11 +5,11 @@ n.d(t, {
 }), n(388685), n(415506);
 var r = n(772848),
   i = n(570140),
-  a = n(615287),
-  o = n(318885),
-  s = n(710845),
-  l = n(444295),
-  c = n(486016),
+  a = n(318885),
+  o = n(710845),
+  s = n(444295),
+  l = n(486016),
+  c = n(837268),
   u = n(355863),
   d = n(449224),
   _ = n(451478),
@@ -56,12 +56,12 @@ function y(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let O = new s.Z("OverlayActionCreators"),
+let O = new o.Z("OverlayActionCreators"),
   v = {
     track(e) {
       let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
         n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
-      (0, o.Q)(e, t, n)
+      (0, a.Q)(e, t, n)
     },
     overlayReady(e) {
       i.Z.dispatch({
@@ -78,7 +78,7 @@ let O = new s.Z("OverlayActionCreators"),
     },
     setFocusedPID(e) {
       let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-        n = t ? a.d5.UNTRACK_FOCUS : a.d5.TRACK_FOCUS;
+        n = t ? c.d5.UNTRACK_FOCUS : c.d5.TRACK_FOCUS;
       i.Z.dispatch({
         type: "OVERLAY_FOCUSED",
         pid: e,
@@ -171,7 +171,7 @@ let O = new s.Z("OverlayActionCreators"),
       })
     },
     setNotificationDisabledSetting(e, t) {
-      e === c.OverlayNotificationDisabledSetting.GAME_ACTIVITY && this.track(m.rMx.OVERLAY_GAME_INVITE_SETTINGS_UPDATED, {
+      e === l.OverlayNotificationDisabledSetting.GAME_ACTIVITY && this.track(m.rMx.OVERLAY_GAME_INVITE_SETTINGS_UPDATED, {
         muted: t
       }), i.Z.dispatch({
         type: "OVERLAY_SET_NOTIFICATION_DISABLED_SETTING",
@@ -251,12 +251,12 @@ let O = new s.Z("OverlayActionCreators"),
         i = u.Z.getWidgetConfig(m.Odu.GUILDS),
         a = u.Z.getWidgetConfig(m.Odu.TEXT),
         o = u.Z.getWidgetConfig(m.Odu.GUILDS_TEXT),
-        s = u.Z.getWidgetDefaultSettings(m.Odu.GUILDS_TEXT),
+        l = u.Z.getWidgetDefaultSettings(m.Odu.GUILDS_TEXT),
         c = u.Z.getWidgetDefaultSettings(m.Odu.GUILDS),
         d = u.Z.getWidgetDefaultSettings(m.Odu.TEXT);
-      if ((0, l.JS)(m.Odu.TEXT, {
+      if ((0, s.JS)(m.Odu.TEXT, {
           pinned: e
-        }), 0 === n.length || null == i || null == a || null == o || null == s || null == c || null == d) return;
+        }), 0 === n.length || null == i || null == a || null == o || null == l || null == c || null == d) return;
       let g = _.Z.windowSize(),
         b = {
           width: 0,
@@ -300,7 +300,7 @@ let O = new s.Z("OverlayActionCreators"),
               I = (0, f.vS)(r, i, g), T = (0, f.w_)(i, g), (0, h.E9)(n)
           }
         }), e) {
-        let e = "auto" === T.width ? s.minSize.width : T.width;
+        let e = "auto" === T.width ? l.minSize.width : T.width;
         e -= c.minSize.width;
         let [n, i] = (0, f.o4)(I, y(E({}, T), {
           width: c.minSize.width
@@ -309,9 +309,9 @@ let O = new s.Z("OverlayActionCreators"),
         }), g, {
           x: 10,
           y: 10
-        }), l = u.Z.getWidgetDefaultSettings(m.Odu.TEXT);
-        if (null == l) throw Error("OverlayActionCreators.setPinChat: No config for TEXT exists");
-        (0, h.A4)(y(E({}, l), {
+        }), s = u.Z.getWidgetDefaultSettings(m.Odu.TEXT);
+        if (null == s) throw Error("OverlayActionCreators.setPinChat: No config for TEXT exists");
+        (0, h.A4)(y(E({}, s), {
           type: m.Odu.TEXT,
           id: (0, r.Z)(),
           size: o,
@@ -406,6 +406,11 @@ let O = new s.Z("OverlayActionCreators"),
         reason: e,
         enabled: t
       })
-    }
+    },
+    updateTrackedGame: (e, t) => i.Z.dispatch({
+      type: "OVERLAY_TRACKED_GAME_UPDATE",
+      pid: e,
+      trackedGame: t
+    })
   },
   I = v
