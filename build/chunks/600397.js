@@ -1,4 +1,4 @@
-/** Chunk was on 77451 **/
+/** Chunk was on 63774 **/
 n.d(t, {
   Z: () => f
 });
@@ -20,9 +20,9 @@ function f(e) {
     message: t,
     channel: n,
     author: f,
-    compact: g
+    compact: _
   } = e, {
-    nick: _
+    nick: g
   } = (0, s.Sw)(f, n), h = (0, c.l)({
     user: f,
     channelId: n.id,
@@ -31,7 +31,7 @@ function f(e) {
   })(), b = (0, l.q)(t.applicationId);
   if (null == b) return null;
   let E = p.intl.format(p.t.m7Lwam, {
-    username: _,
+    username: g,
     usernameHook: h,
     gameName: b.name,
     gameIconHook: e => (0, r.jsxs)("span", {
@@ -48,7 +48,7 @@ function f(e) {
     iconNode: (0, r.jsx)(i.iWm, {
       size: "sm"
     }),
-    compact: g,
+    compact: _,
     contentClassName: m.content,
     children: (0, r.jsx)("div", {
       children: E

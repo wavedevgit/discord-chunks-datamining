@@ -1,4 +1,4 @@
-/** Chunk was on 77451 **/
+/** Chunk was on 63774 **/
 n.d(t, {
   Z: () => f
 }), n(388685);
@@ -43,7 +43,7 @@ function f(e) {
       className: l()(m.__invalid_embedContent, {
         [m.compact]: o
       }),
-      children: (0, r.jsx)(g, {
+      children: (0, r.jsx)(_, {
         message: t
       })
     }), (0, r.jsx)("div", {
@@ -59,7 +59,7 @@ function f(e) {
   })
 }
 
-function g(e) {
+function _(e) {
   var t;
   let {
     message: n

@@ -1,27 +1,27 @@
-/** Chunk was on 74098 **/
+/** Chunk was on 40041 **/
 n.d(t, {
-  g: () => p,
-  mI: () => I
+  g: () => f,
+  mI: () => O
 }), n(388685);
 var r = n(149765),
   i = n(399606),
   l = n(581883),
   a = n(430824),
   o = n(496675),
-  c = n(914010),
-  s = n(594174),
+  s = n(914010),
+  c = n(594174),
   u = n(700785),
   d = n(709054),
   _ = n(533244),
   E = n(487419),
-  O = n(676770);
+  p = n(676770);
 
-function I(e) {
+function O(e) {
   let t = (0, i.e7)([a.Z, o.Z], () => {
       let t = a.Z.getGuild(e);
       if (null == t) return !1;
       let n = o.Z.getGuildPermissions(t);
-      return null != n && r.Db(n, O.cv)
+      return null != n && r.Db(n, p.cv)
     }),
     n = (0, i.e7)([E.Z], () => null != e ? E.Z.getGuildIncident(e) : null),
     l = null != n && (0, _.ur)(n);
@@ -32,10 +32,10 @@ function I(e) {
   }
 }
 
-function p() {
+function f() {
   var e;
   let t = function(e) {
-      let t = s.default.getCurrentUser(),
+      let t = c.default.getCurrentUser(),
         n = E.Z.getIncidentsByGuild();
       for (let i of d.default.keys(n).map(e => a.Z.getGuild(e))) {
         if (null == i) continue;
@@ -44,10 +44,10 @@ function p() {
             user: t,
             context: i,
             checkElevated: !1
-          }), O.cv)) return i.id
+          }), p.cv)) return i.id
       }
       return null
-    }(c.Z.getGuildId()),
+    }(s.Z.getGuildId()),
     n = null != (e = l.Z.getGuildsProto()) ? e : {},
     i = null != t ? n[t] : null,
     o = null != i && i.disableRaidAlertNag;

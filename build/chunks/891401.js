@@ -57,11 +57,11 @@ function C(e, t) {
 function O() {
   return (0, n.jsxs)(m.Ttm, {
     className: _.container,
-    children: [(0, n.jsx)(N, {}), (0, n.jsx)(T, {})]
+    children: [(0, n.jsx)(T, {}), (0, n.jsx)(N, {})]
   })
 }
 
-function N() {
+function T() {
   var e, t;
   let a = (0, c.e7)([g.Z], () => g.Z.getChannelId()),
     l = (0, b.Z)(a),
@@ -78,10 +78,10 @@ function N() {
     O = r.useCallback(e => {
       P(null == l ? void 0 : l.wallpaperId, e.target.value)
     }, [null == l ? void 0 : l.wallpaperId]),
-    N = r.useCallback(e => {
+    T = r.useCallback(e => {
       S(null == l ? void 0 : l.wallpaperId, e.target.value)
     }, [null == l ? void 0 : l.wallpaperId]),
-    T = r.useCallback(() => E(null == l ? void 0 : l.wallpaperId, void 0), [null == l ? void 0 : l.wallpaperId]),
+    N = r.useCallback(() => E(null == l ? void 0 : l.wallpaperId, void 0), [null == l ? void 0 : l.wallpaperId]),
     w = r.useCallback(() => P(null == l ? void 0 : l.wallpaperId, void 0), [null == l ? void 0 : l.wallpaperId]),
     I = r.useCallback(() => S(null == l ? void 0 : l.wallpaperId, void 0), [null == l ? void 0 : l.wallpaperId]),
     R = r.useCallback(e => {
@@ -146,7 +146,7 @@ function N() {
             size: "xs",
             color: "currentColor"
           }),
-          onClick: T,
+          onClick: N,
           className: _.removeButton
         })]
       }), (0, n.jsx)(m.ua7, {
@@ -201,7 +201,7 @@ function N() {
         children: [(0, n.jsx)("input", {
           type: "color",
           value: d.link_color,
-          onChange: N
+          onChange: T
         }, "linkColor-".concat(d.link_color)), (0, n.jsx)(m.M0o, {
           color: "currentColor",
           tooltip: j.intl.string(j.t.N86XcH),
@@ -221,7 +221,7 @@ function N() {
   })
 }
 
-function T() {
+function N() {
   let e = r.useCallback(() => {
       (0, v.Z1)(d.z.NITRO_TENURE_BADGE_LEVEL_UP)
     }, []),

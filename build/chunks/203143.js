@@ -1,7 +1,7 @@
-/** Chunk was on 77451 **/
+/** Chunk was on 63774 **/
 n.d(t, {
   Z: () => H,
-  n: () => D
+  n: () => L
 }), n(415506), n(388685), n(361932), n(187205), n(781311);
 var r = n(512722),
   i = n.n(r),
@@ -15,18 +15,18 @@ var r = n(512722),
   p = n(749210),
   m = n(904245),
   f = n(881052),
-  g = n(367907),
-  _ = n(41776),
+  _ = n(367907),
+  g = n(41776),
   h = n(58873),
   b = n(566006),
   E = n(869765),
   C = n(314897),
-  x = n(592125),
-  v = n(703558),
-  O = n(607744),
-  y = n(375954),
-  j = n(117530),
-  I = n(553803),
+  O = n(592125),
+  y = n(703558),
+  v = n(607744),
+  x = n(375954),
+  I = n(117530),
+  j = n(553803),
   S = n(467531),
   T = n(798628),
   N = n(918088),
@@ -81,7 +81,7 @@ function R(e, t) {
   }
 }
 
-function L(e) {
+function D(e) {
   let {
     guildId: t,
     title: n,
@@ -100,28 +100,28 @@ function L(e) {
   })
 }
 
-function D(e) {
+function L(e) {
   let {
     channelId: t,
     messageId: n,
     answerId: r
-  } = e, i = x.Z.getChannel(t);
+  } = e, i = O.Z.getChannel(t);
   if (null == i) return;
-  if (_.Z.isLurking(i.guild_id)) return void L({
+  if (g.Z.isLurking(i.guild_id)) return void D({
     guildId: i.guild_id,
     title: A.intl.string(A.t["7LpysL"]),
     body: A.intl.string(A.t["5sHHo6"])
   });
-  let l = y.Z.getMessage(t, n);
+  let l = x.Z.getMessage(t, n);
   if (null == l || null == l.poll || 0 === l.poll.answers.length) return;
   let a = null != r ? r : String(l.poll.answers[0].answer_id);
-  I.A({
+  j.A({
     message: l,
     initialAnswerId: a
   })
 }
 
-function k(e) {
+function M(e) {
   let {
     channelId: t,
     messageId: n,
@@ -139,11 +139,11 @@ function k(e) {
   })
 }
 
-function M(e) {
+function k(e) {
   let {
     channelId: t,
     messageId: n
-  } = e, r = y.Z.getMessage(t, n);
+  } = e, r = x.Z.getMessage(t, n);
   return null == r ? [] : r.reactions.flatMap(e => !0 === e.me_vote ? e.emoji.name : [])
 }
 async function U(e) {
@@ -151,7 +151,7 @@ async function U(e) {
     channelId: t,
     messageId: n,
     answerIds: r
-  } = e, i = M({
+  } = e, i = k({
     channelId: t,
     messageId: n
   }), l = a().difference(i, r), o = a().difference(r, i), c = C.default.getId(), d = [...l.map(e => ({
@@ -186,20 +186,20 @@ async function F(e) {
   let {
     channelId: t,
     messageId: n
-  } = e, r = x.Z.getChannel(t);
+  } = e, r = O.Z.getChannel(t);
   if (null == r) return;
-  if (_.Z.isLurking(r.guild_id)) return void L({
+  if (g.Z.isLurking(r.guild_id)) return void D({
     guildId: r.guild_id,
     title: A.intl.string(A.t.Qic1FB),
     body: A.intl.string(A.t["5sHHo6"])
   });
-  if (!O.Z.canChatInGuild(r.guild_id)) return void d.Z.show({
+  if (!v.Z.canChatInGuild(r.guild_id)) return void d.Z.show({
     title: A.intl.string(A.t.p245ws),
     body: A.intl.string(A.t["U/uodn"])
   });
   let l = (0, T.fU)(t, n);
   i()(null != l, "Must not be able to vote without existing state!");
-  let a = M({
+  let a = k({
     channelId: t,
     messageId: n
   });
@@ -238,8 +238,8 @@ async function B(e) {
   let {
     channelId: t,
     messageId: n
-  } = e, r = x.Z.getChannel(t);
-  if (null != r) return _.Z.isLurking(r.guild_id) ? void L({
+  } = e, r = O.Z.getChannel(t);
+  if (null != r) return g.Z.isLurking(r.guild_id) ? void D({
     guildId: r.guild_id,
     title: A.intl.string(A.t.B9QnBg),
     body: A.intl.string(A.t.BVZCTk)
@@ -277,7 +277,7 @@ async function G(e) {
       });
       break;
     case "cancel":
-      k({
+      M({
         channelId: t,
         messageId: n,
         isEditing: !1
@@ -292,12 +292,12 @@ async function G(e) {
         (0, T.eu)(t, n, e => {
           var r, i;
           let l = null == e || !e.showResults,
-            a = y.Z.getMessage(t, n),
+            a = x.Z.getMessage(t, n),
             o = null != a ? a.reactions.reduce((e, t) => {
               var n, r;
               return e + (null != (r = null == (n = t.count_details) ? void 0 : n.vote) ? r : 0)
             }, 0) : 0;
-          return g.ZP.trackWithMetadata(P.rMx.POLL_SHOW_RESULTS_CLICKED, {
+          return _.ZP.trackWithMetadata(P.rMx.POLL_SHOW_RESULTS_CLICKED, {
             channel_id: t,
             message_id: n,
             show_results: l,
@@ -316,7 +316,7 @@ async function G(e) {
       });
       break;
     case "showVoterDetails":
-      D({
+      L({
         channelId: t,
         messageId: n
       });
@@ -338,7 +338,7 @@ let H = {
       let {
         channelId: t,
         messageId: n
-      } = e, r = y.Z.getMessage(t, n);
+      } = e, r = x.Z.getMessage(t, n);
       if (null != r) return {
         message: r,
         channelId: t,
@@ -368,7 +368,7 @@ let H = {
     }(e, ["answerId"])), {
       tapShouldOpenVotersModal: s
     } = null != (n = (0, N.Tk)(o)) ? n : {};
-    if (!0 === s) return void D({
+    if (!0 === s) return void L({
       channelId: l,
       messageId: a,
       answerId: r
@@ -383,7 +383,7 @@ let H = {
             selectedTextAnswersCount: i,
             selectedEmojiAnswersCount: s
           } = R(null == (n = o.poll) ? void 0 : n.answers, e);
-        return g.ZP.trackWithMetadata(P.rMx.POLL_VOTE_SELECTED, {
+        return _.ZP.trackWithMetadata(P.rMx.POLL_VOTE_SELECTED, {
           channel_id: l,
           message_id: a,
           selected_answer_ids: t,
@@ -410,7 +410,7 @@ let H = {
         selectedTextAnswersCount: d,
         selectedEmojiAnswersCount: p
       } = R(null == (t = o.poll) ? void 0 : t.answers, s);
-      return g.ZP.trackWithMetadata(P.rMx.POLL_VOTE_SELECTED, {
+      return _.ZP.trackWithMetadata(P.rMx.POLL_VOTE_SELECTED, {
         channel_id: l,
         message_id: a,
         selected_answer_ids: u,
@@ -420,7 +420,7 @@ let H = {
     })
   },
   handlePollSubmitVote: F,
-  handleUpdateVoteEditingState: k,
+  handleUpdateVoteEditingState: M,
   handlePollActionTapped: G,
   createPoll: async function(e) {
     let {
@@ -431,7 +431,7 @@ let H = {
       duration: l,
       layout: a,
       onClose: s
-    } = e, c = j.Z.getUploads(t.id, v.d.Poll), u = r.map(e => {
+    } = e, c = I.Z.getUploads(t.id, y.d.Poll), u = r.map(e => {
       var t, n;
       let r = null == c ? void 0 : c.findIndex(t => t.id === e.localCreationAnswerId),
         i = {

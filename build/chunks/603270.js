@@ -1,4 +1,4 @@
-/** Chunk was on 77451 **/
+/** Chunk was on 63774 **/
 n.d(t, {
   F: () => R,
   P: () => Z
@@ -15,18 +15,18 @@ var r = n(255367),
   p = n(812206),
   m = n(307643),
   f = n(171246),
-  g = n(263519),
-  _ = n(592125),
+  _ = n(263519),
+  g = n(592125),
   h = n(509545),
   b = n(238),
   E = n(55563),
   C = n(551428),
-  x = n(626135),
-  v = n(572004),
-  O = n(601911),
-  y = n(504211),
-  j = n(970321),
-  I = n(680005),
+  O = n(626135),
+  y = n(572004),
+  v = n(601911),
+  x = n(504211),
+  I = n(970321),
+  j = n(680005),
   S = n(981631),
   T = n(979007),
   N = n(388032),
@@ -65,26 +65,26 @@ function Z(e) {
   let {
     appId: t,
     message: l
-  } = e, a = (0, j.R)(t), [u, d, f, g, h, E, C] = (0, o.Wu)([p.Z, b.Z, _.Z], () => {
+  } = e, a = (0, I.R)(t), [u, d, f, _, h, E, C] = (0, o.Wu)([p.Z, b.Z, g.Z], () => {
     var e;
     let n = p.Z.getApplication(t),
-      r = null != n ? (0, O.y)(n, 45) : void 0,
-      i = null == (e = _.Z.getBasicChannel(l.channel_id)) ? void 0 : e.guild_id;
+      r = null != n ? (0, v.y)(n, 45) : void 0,
+      i = null == (e = g.Z.getBasicChannel(l.channel_id)) ? void 0 : e.guild_id;
     return [n, p.Z.isFetchingApplication(t), p.Z.didFetchingApplicationFail(t), b.Z.getStoreLayout(t), b.Z.getFetchStatus(t), i, r]
   }, [t, l.channel_id]);
   i.useEffect(() => {
     h === b.N.NONE && (0, c.k)(t), null != u || d || f || (0, m.UM)(t)
   }, [u, t, f, d, h]);
-  let v = g.subscriptions.length,
-    I = g.otps.length,
-    A = i.useMemo(() => v > 0 && I > 0 ? N.intl.formatToPlainString(N.t["jA648/"], {
-      subCount: v,
-      itemCount: I
-    }) : v > 0 ? N.intl.formatToPlainString(N.t.GSfibG, {
-      count: v
-    }) : I > 0 ? N.intl.formatToPlainString(N.t.j7Go5O, {
-      count: I
-    }) : N.intl.string(N.t.rMA98v), [I, v]);
+  let y = _.subscriptions.length,
+    j = _.otps.length,
+    A = i.useMemo(() => y > 0 && j > 0 ? N.intl.formatToPlainString(N.t["jA648/"], {
+      subCount: y,
+      itemCount: j
+    }) : y > 0 ? N.intl.formatToPlainString(N.t.GSfibG, {
+      count: y
+    }) : j > 0 ? N.intl.formatToPlainString(N.t.j7Go5O, {
+      count: j
+    }) : N.intl.string(N.t.rMA98v), [j, y]);
   if (!a || null == u) return null;
   let w = () => {
     (0, s.ZDy)(async () => {
@@ -99,7 +99,7 @@ function Z(e) {
       })
     })
   };
-  return (0, r.jsx)(L, {
+  return (0, r.jsx)(D, {
     appName: u.name,
     title: N.intl.formatToPlainString(N.t.XDRjs7, {
       appName: u.name
@@ -107,11 +107,11 @@ function Z(e) {
     description: A,
     link: "".concat(location.protocol, "//").concat(location.host).concat(S.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(u.id, T.GlobalDiscoveryAppsSections.STORE)),
     onLinkCopy: () => {
-      (0, y.X)(t, y.B.STORE_EMBED)
+      (0, x.X)(t, x.B.STORE_EMBED)
     },
     iconSrc: C,
     onIconClick: () => {
-      w(), x.default.track(S.rMx.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
+      w(), O.default.track(S.rMx.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
         application_id: t,
         area: "app_icon"
       })
@@ -120,7 +120,7 @@ function Z(e) {
       className: P.openStoreButton,
       children: (0, r.jsx)(s.zxk, {
         onClick: () => {
-          w(), x.default.track(S.rMx.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
+          w(), O.default.track(S.rMx.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
             application_id: t,
             area: "open_store_button"
           })
@@ -157,19 +157,19 @@ function R(e) {
     }
   }(c, a), {
     data: E
-  } = (0, d.IX)(null == m ? void 0 : m.applicationId), C = (0, o.e7)([_.Z], () => {
+  } = (0, d.IX)(null == m ? void 0 : m.applicationId), C = (0, o.e7)([g.Z], () => {
     var e;
-    return null == (e = _.Z.getBasicChannel(u.channel_id)) ? void 0 : e.guild_id
-  }, [u]), v = i.useMemo(() => null != E ? (0, O.y)(E, 45) : void 0, [E]), Z = (0, j.R)(null != (l = null == E ? void 0 : E.id) ? l : ""), {
+    return null == (e = g.Z.getBasicChannel(u.channel_id)) ? void 0 : e.guild_id
+  }, [u]), y = i.useMemo(() => null != E ? (0, v.y)(E, 45) : void 0, [E]), Z = (0, I.R)(null != (l = null == E ? void 0 : E.id) ? l : ""), {
     openModal: R,
-    subscriptionPurchaseButtonState: D
-  } = (0, g.Z)({
+    subscriptionPurchaseButtonState: L
+  } = (0, _.Z)({
     skuId: c,
     initialSubscribeForGuild: C
   });
   if (!Z || null == E || null == m) return null;
-  let k = m.type === S.epS.SUBSCRIPTION,
-    M = !!k && (0, f.KW)(m.flags),
+  let M = m.type === S.epS.SUBSCRIPTION,
+    k = !!M && (0, f.KW)(m.flags),
     U = () => {
       (0, s.ZDy)(async () => {
         let {
@@ -185,8 +185,8 @@ function R(e) {
     },
     F = () => {
       (0, s.ZDy)(async () => {
-        let e = k ? (await Promise.resolve().then(n.bind(n, 519896))).SubscriptionDetailsModal : null,
-          t = k ? null : (await Promise.resolve().then(n.bind(n, 147496))).ItemDetailsModal;
+        let e = M ? (await Promise.resolve().then(n.bind(n, 519896))).SubscriptionDetailsModal : null,
+          t = M ? null : (await Promise.resolve().then(n.bind(n, 147496))).ItemDetailsModal;
         return n => {
           let i = () => {
             n.onClose(), U()
@@ -196,7 +196,7 @@ function R(e) {
             appId: E.id,
             skuId: m.id,
             guildId: C,
-            subscriptionType: M ? "user" : "guild",
+            subscriptionType: k ? "user" : "guild",
             onClose: n.onClose,
             onHeaderTitleClick: i
           }) : null != t ? (0, r.jsx)(t, {
@@ -209,7 +209,7 @@ function R(e) {
         }
       })
     },
-    B = k ? M ? (0, r.jsxs)(r.Fragment, {
+    B = M ? k ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(s.tBG, {
         size: "custom",
         width: 12,
@@ -224,23 +224,23 @@ function R(e) {
     }) : null == b || null == (t = b.description) ? void 0 : t.trim();
   "" === B && (B = void 0);
   let G = () => {
-    x.default.track(S.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
+    O.default.track(S.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
       application_id: E.id,
       sku_id: m.id,
       area: "purchase_button"
     })
   };
-  return (0, r.jsx)(L, {
+  return (0, r.jsx)(D, {
     appName: E.name,
     title: m.name,
     description: B,
     link: "".concat(location.protocol, "//").concat(location.host).concat(S.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(E.id, T.GlobalDiscoveryAppsSections.STORE)),
     onLinkCopy: () => {
-      (0, y.X)(E.id, y.B.SKU_EMBED, c)
+      (0, x.X)(E.id, x.B.SKU_EMBED, c)
     },
-    iconSrc: v,
+    iconSrc: y,
     onIconClick: () => {
-      U(), x.default.track(S.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
+      U(), O.default.track(S.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
         application_id: E.id,
         sku_id: m.id,
         area: "app_icon"
@@ -251,27 +251,27 @@ function R(e) {
       children: [(0, r.jsx)(s.zxk, {
         variant: "secondary",
         onClick: () => {
-          F(), x.default.track(S.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
+          F(), O.default.track(S.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
             application_id: E.id,
             sku_id: m.id,
             area: "view_details"
           })
         },
         text: N.intl.string(N.t.DXYfjI)
-      }), k ? null != h ? (0, r.jsx)(I.pV, {
+      }), M ? null != h ? (0, r.jsx)(j.pV, {
         onClick: R,
         appId: E.id,
-        subscriptionType: M ? "user" : "guild",
+        subscriptionType: k ? "user" : "guild",
         skuId: m.id,
         icon: s.EOn,
         onHasClicked: G,
         subscriptionPlan: h,
-        state: D
+        state: L
       }) : (0, r.jsx)(s.zxk, {
         variant: "primary",
         text: N.intl.string(N.t.uuzaAA),
         onClick: F
-      }) : (0, r.jsx)(I.YG, {
+      }) : (0, r.jsx)(j.YG, {
         appId: E.id,
         sku: m,
         icon: s.EOn,
@@ -281,7 +281,7 @@ function R(e) {
   })
 }
 
-function L(e) {
+function D(e) {
   let {
     appName: t,
     title: n,
@@ -305,14 +305,14 @@ function L(e) {
           color: "text-muted",
           children: t
         })]
-      }), v.wS && (0, r.jsx)(s.hU, {
+      }), y.wS && (0, r.jsx)(s.hU, {
         "aria-label": N.intl.string(N.t.WqhZsr),
         icon: () => (0, r.jsx)(s.xPt, {
           size: "xs"
         }),
         size: "sm",
         onClick: () => {
-          (0, v.JG)(l, () => {
+          (0, y.JG)(l, () => {
             (0, s.showToast)((0, s.createToast)(N.intl.string(N.t["L/PwZW"]), s.ToastType.SUCCESS)), c()
           })
         },

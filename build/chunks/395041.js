@@ -1,21 +1,21 @@
-/** Chunk was on 36512 **/
-r.d(t, {
+/** Chunk was on 68114 **/
+n.d(t, {
   O: () => o,
   w: () => i
 });
-var n = r(255367);
-r(73800);
-var s = r(481060),
-  l = r(277640);
+var r = n(255367);
+n(73800);
+var s = n(481060),
+  l = n(277640);
 
 function a(e, t) {
   let {
-    children: r
+    children: n
   } = e;
-  return (0, n.jsx)(s.Text, {
+  return (0, r.jsx)(s.Text, {
     variant: "text-sm/medium",
     className: t,
-    children: r
+    children: n
   })
 }
 let i = e => a(e, l.searchFilter),

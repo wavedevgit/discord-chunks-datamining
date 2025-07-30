@@ -1,1 +1,1 @@
-{"id":"223750","type":"experiment","data":{"id":"2025-07_welcome_cta_mana","label":"Welcome CTA using Mana buttons","kind":"user","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Using Mana buttons","config":{"enabled":false}}]},"fromModule":{"id":"77451"}}
+{"id":"223750","type":"experiment","data":{"id":"2025-07_welcome_cta_mana","label":"Welcome CTA using Mana buttons","kind":"user","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Using Mana buttons","config":{"enabled":false}}]},"fromModule":{"id":"63774"}}

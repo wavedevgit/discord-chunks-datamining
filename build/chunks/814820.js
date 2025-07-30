@@ -1,6 +1,6 @@
-/** Chunk was on 77451 **/
+/** Chunk was on 63774 **/
 n.d(t, {
-  f: () => v
+  f: () => y
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -14,18 +14,18 @@ var r = n(255367),
   p = n(430824),
   m = n(496675),
   f = n(594174),
-  g = n(838440),
-  _ = n(779139),
+  _ = n(838440),
+  g = n(779139),
   h = n(223750),
   b = n(981631),
   E = n(388032),
   C = n(429495);
-let x = e => {
+let O = e => {
     let {
       channel: t,
       message: n
-    } = e, l = (0, h.t)(), [u, d] = i.useState(!1), p = (0, _.y6)(n.id), m = i.useCallback(() => {
-      (0, g.v)({
+    } = e, l = (0, h.t)(), [u, d] = i.useState(!1), p = (0, g.y6)(n.id), m = i.useCallback(() => {
+      (0, _.v)({
         type: s.Ie.FORM,
         content: "",
         channel: t
@@ -33,7 +33,7 @@ let x = e => {
         let {
           valid: r
         } = e;
-        r && (0, _.TZ)(t, n, p.id)
+        r && (0, g.TZ)(t, n, p.id)
       })
     }, [t, n, p]);
     return (0, r.jsx)("div", {
@@ -60,7 +60,7 @@ let x = e => {
       })
     })
   },
-  v = e => {
+  y = e => {
     let {
       message: t,
       channel: n
@@ -72,10 +72,10 @@ let x = e => {
         o = null != i && null != r && (null == (e = d.ZP.getMember(i, r.id)) ? void 0 : e.isPending),
         s = t.author.bot,
         c = p.Z.getGuild(i),
-        g = null != c && (c.systemChannelFlags & b.xmn.SUPPRESS_JOIN_NOTIFICATION_REPLIES) == 0;
-      return a && !l && !o && !s && g
+        _ = null != c && (c.systemChannelFlags & b.xmn.SUPPRESS_JOIN_NOTIFICATION_REPLIES) == 0;
+      return a && !l && !o && !s && _
     });
-    return null != i && a ? (0, r.jsx)(x, {
+    return null != i && a ? (0, r.jsx)(O, {
       message: t,
       channel: n
     }) : null

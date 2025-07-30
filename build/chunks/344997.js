@@ -1,4 +1,4 @@
-/** Chunk was on 77451 **/
+/** Chunk was on 63774 **/
 n.d(t, {
   g: () => b
 });
@@ -48,7 +48,7 @@ function f(e) {
   })
 }
 
-function g(e) {
+function _(e) {
   let {
     ctaType: t,
     classificationId: n,
@@ -70,7 +70,7 @@ function g(e) {
   }
 }
 
-function _(e) {
+function g(e) {
   let {
     iconType: t
   } = e, n = {
@@ -112,7 +112,7 @@ function b(e) {
       className: d.noticeContent,
       children: [(0, r.jsxs)("div", {
         className: d.headerRow,
-        children: [(0, r.jsx)(_, {
+        children: [(0, r.jsx)(g, {
           iconType: i.icon
         }), (0, r.jsx)(o.Text, {
           variant: "text-md/semibold",
@@ -136,7 +136,7 @@ function b(e) {
       })]
     }), (0, r.jsx)(h, {
       theme: i.theme,
-      children: null == (t = i.ctas) ? void 0 : t.map(e => (0, r.jsx)(g, {
+      children: null == (t = i.ctas) ? void 0 : t.map(e => (0, r.jsx)(_, {
         ctaType: e,
         classificationId: i.classification_id,
         learnMoreLink: i.learn_more_link

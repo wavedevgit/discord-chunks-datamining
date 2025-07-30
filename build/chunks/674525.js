@@ -1,26 +1,26 @@
-/** Chunk was on 74098 **/
+/** Chunk was on 40041 **/
 n.d(t, {
   Z: () => u
 });
 var r, i, l, a = n(442837),
   o = n(570140);
-let c = [];
-class s extends(l = a.ZP.Store) {
+let s = [];
+class c extends(l = a.ZP.Store) {
   getEligibleGuildsForNagActivate() {
-    return c
+    return s
   }
 }
-i = "CreatorMonetizationMarketingStore", (r = "displayName") in s ? Object.defineProperty(s, r, {
+i = "CreatorMonetizationMarketingStore", (r = "displayName") in c ? Object.defineProperty(c, r, {
   value: i,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : s[r] = i;
-let u = new s(o.Z, {
+}) : c[r] = i;
+let u = new c(o.Z, {
   CREATOR_MONETIZATION_NAG_ACTIVATE_ELIGIBLITY_FETCH_SUCCESS: function(e) {
     let {
       eligibleGuilds: t
     } = e;
-    c = t
+    s = t
   }
 })

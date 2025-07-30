@@ -1,4 +1,4 @@
-/** Chunk was on 74098 **/
+/** Chunk was on 40041 **/
 n.d(t, {
   Xq: () => u,
   g8: () => E,
@@ -10,8 +10,8 @@ var r = n(990547),
   l = n(570140),
   a = n(558724),
   o = n(626135),
-  c = n(573261),
-  s = n(981631);
+  s = n(573261),
+  c = n(981631);
 
 function u(e) {
   l.Z.dispatch({
@@ -24,19 +24,19 @@ function d(e, t) {
   l.Z.dispatch({
     type: "SURVEY_HIDE",
     key: e
-  }), t ? o.default.track(s.rMx.APP_NOTICE_CLOSED, {
-    notice_type: s.kVF.SURVEY,
+  }), t ? o.default.track(c.rMx.APP_NOTICE_CLOSED, {
+    notice_type: c.kVF.SURVEY,
     survey_id: e,
     dismissed: t
-  }) : o.default.track(s.rMx.APP_NOTICE_PRIMARY_CTA_OPENED, {
-    notice_type: s.kVF.SURVEY
+  }) : o.default.track(c.rMx.APP_NOTICE_PRIMARY_CTA_OPENED, {
+    notice_type: c.kVF.SURVEY
   })
 }
 
 function _(e, t) {
   var n = {};
-  return null != e && (n.survey_override = e), null != t && (n.disable_auto_seen = t), c.Z.get({
-    url: s.ANM.USER_SURVEY,
+  return null != e && (n.survey_override = e), null != t && (n.disable_auto_seen = t), s.Z.get({
+    url: c.ANM.USER_SURVEY,
     query: n,
     trackedActionData: {
       event: r.NetworkActionNames.USER_SURVEY_FETCH,
@@ -68,8 +68,8 @@ function E(e) {
   if (null === t || null != t && Date.now() - t >= a.J) return l.Z.dispatch({
     type: "SURVEY_SEEN",
     key: e
-  }), c.Z.post({
-    url: s.ANM.USER_SURVEY_SEEN(e),
+  }), s.Z.post({
+    url: c.ANM.USER_SURVEY_SEEN(e),
     trackedActionData: {
       event: r.NetworkActionNames.USER_SURVEY_SEEN,
       properties: t => (0, i.iG)({

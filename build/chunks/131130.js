@@ -1,4 +1,4 @@
-/** Chunk was on 74098 **/
+/** Chunk was on 40041 **/
 n.d(t, {
   q: () => E
 }), n(953529);
@@ -8,8 +8,8 @@ var i = n(704215),
   l = n(481060),
   a = n(906732),
   o = n(963249),
-  c = n(286961),
-  s = n(644916),
+  s = n(286961),
+  c = n(644916),
   u = n(243778),
   d = n(921944),
   _ = n(131715);
@@ -19,10 +19,10 @@ let E = e => {
     noticeType: n
   } = e, {
     analyticsLocations: E
-  } = (0, a.ZP)(), O = (0, c.Z)();
+  } = (0, a.ZP)(), p = (0, s.Z)();
   return (0, r.jsx)(u.Xf, {
     contentType: t,
-    latestVersion: (0, s.t)(t),
+    latestVersion: (0, c.t)(t),
     groupName: d.R.NOTICE_BAR,
     bypassAutoDismiss: !0,
     children: e => {
@@ -31,7 +31,7 @@ let E = e => {
         markAsDismissed: a
       } = e;
       if (t === i.z.GIFTING_PROMOTION_REMINDER) {
-        let e = null == O ? void 0 : O.reminderNagbar;
+        let e = null == p ? void 0 : p.reminderNagbar;
         return (0, r.jsxs)(l.qXd, {
           color: l.DM8.PREMIUM_TIER_2,
           children: [(0, r.jsx)(l.RyX, {

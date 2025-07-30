@@ -1,6 +1,6 @@
-/** Chunk was on 77451 **/
+/** Chunk was on 63774 **/
 n.d(t, {
-  Z: () => x
+  Z: () => O
 });
 var r = n(255367),
   i = n(73800),
@@ -14,33 +14,33 @@ var r = n(255367),
   p = n(223021),
   m = n(942951),
   f = n(594174),
-  g = n(55935),
-  _ = n(130883),
+  _ = n(55935),
+  g = n(130883),
   h = n(388032),
   b = n(537670),
   E = n(848697),
   C = n(328756);
-let x = e => {
+let O = e => {
   let {
     reportingUserId: t,
     guildId: n,
     compact: l,
     channel: o,
-    messageId: x,
-    reportedTimestamp: v
-  } = e, O = f.default.getUser(t), y = i.useMemo(() => l ? (0, p.Z)((0, g.vc)(s()(), "LT")) : null, [l]), j = (0, m.l)({
-    user: O,
+    messageId: O,
+    reportedTimestamp: y
+  } = e, v = f.default.getUser(t), x = i.useMemo(() => l ? (0, p.Z)((0, _.vc)(s()(), "LT")) : null, [l]), I = (0, m.l)({
+    user: v,
     channelId: o.id,
     guildId: n,
-    messageId: x
-  })((0, u.JZ)(O, o)), I = null != O ? O.getAvatarURL(n, (0, c.pxk)(c.EFr.SIZE_16)) : C, S = null != O ? h.intl.format(_.default["+zqXZm"], {
-    username: O.username,
-    onUserClick: j
-  }) : h.intl.string(_.default.xpRjfX);
+    messageId: O
+  })((0, u.JZ)(v, o)), j = null != v ? v.getAvatarURL(n, (0, c.pxk)(c.EFr.SIZE_16)) : C, S = null != v ? h.intl.format(g.default["+zqXZm"], {
+    username: v.username,
+    onUserClick: I
+  }) : h.intl.string(g.default.xpRjfX);
   return (0, r.jsxs)("div", {
-    className: a()(E.messageSpine, E.repliedMessage, y),
+    className: a()(E.messageSpine, E.repliedMessage, x),
     children: [(0, r.jsx)(c.qEK, {
-      src: I,
+      src: j,
       size: c.EFr.SIZE_16,
       className: b.avatar,
       "aria-label": ""
@@ -56,7 +56,7 @@ let x = e => {
         className: b.timestampSeparator,
         children: "•"
       }), (0, r.jsx)(d.Z, {
-        timestamp: v,
+        timestamp: y,
         className: b.timestamp
       })]
     })]

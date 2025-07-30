@@ -1,4 +1,4 @@
-/** Chunk was on 77451 **/
+/** Chunk was on 63774 **/
 n.d(t, {
   Z: () => m
 }), n(415506);
@@ -19,8 +19,8 @@ let m = {
       type: n,
       name: m,
       permissionOverwrites: f = [],
-      bitrate: g,
-      userLimit: _,
+      bitrate: _,
+      userLimit: g,
       parentId: h,
       skuId: b,
       branchId: E
@@ -35,7 +35,7 @@ let m = {
       name: m,
       permission_overwrites: f
     };
-    if (null != g && g !== d.epw && (C.bitrate = g), null != _ && _ > 0 && (C.user_limit = _), null != h && (C.parent_id = h), n === d.d4z.GUILD_STORE) {
+    if (null != _ && _ !== d.epw && (C.bitrate = _), null != g && g > 0 && (C.user_limit = g), null != h && (C.parent_id = h), n === d.d4z.GUILD_STORE) {
       if (null == b) throw Error("Unexpected missing SKU");
       C.sku_id = b, C.branch_id = E
     }

@@ -1,4 +1,4 @@
-/** Chunk was on 77451 **/
+/** Chunk was on 63774 **/
 n.d(t, {
   Z: () => f
 }), n(388685), n(415506);
@@ -27,8 +27,8 @@ let f = {
       getId: u,
       getLimit: m,
       onFetchStart: f,
-      onFetchSuccess: g,
-      searchMode: _ = p.QIO.NEWEST
+      onFetchSuccess: _,
+      searchMode: g = p.QIO.NEWEST
     } = e, h = (0, s.kG)(r), b = (0, s.$G)(h);
     ! function(e) {
       if (!Array.isArray(e.pinned)) return;
@@ -52,10 +52,10 @@ let f = {
           })
         }
         return e
-      }({}, b, (0, s.zH)(_)),
+      }({}, b, (0, s.zH)(g)),
       C = (0, s.s5)(t);
     null != C && (0, s.jW)(E, C);
-    let x = d.Z.create({
+    let O = d.Z.create({
       id: (0, s.Tm)(t),
       searchContext: t,
       searchQuery: E,
@@ -69,11 +69,11 @@ let f = {
       searchQueryString: r,
       searchQuery: E
     });
-    let v = n.map(e => u(e));
+    let y = n.map(e => u(e));
     return l.Z.dispatch({
       type: "SEARCH_MESSAGES_START",
-      ids: v
-    }), x.fetch(e => {
+      ids: y
+    }), O.fetch(e => {
       let {
         body: n
       } = e, r = Object.entries(n.tabs);
@@ -96,19 +96,19 @@ let f = {
             documentsIndexed: n.documents_indexed
           }
         })
-      }), null == g || g({
+      }), null == _ || _({
         searchContext: t,
         tabEntries: r
       })
     }, () => {
       l.Z.dispatch({
         type: "SEARCH_MESSAGES_INDEXING",
-        ids: v
+        ids: y
       })
     }, e => {
       l.Z.dispatch({
         type: "SEARCH_MESSAGES_FAILURE",
-        ids: v,
+        ids: y,
         error: e
       })
     }), !0

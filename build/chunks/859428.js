@@ -1,66 +1,66 @@
-/** Chunk was on 74098 **/
+/** Chunk was on 40041 **/
 n.d(t, {
-  Z: () => N
+  Z: () => T
 }), n(388685);
 var r = n(255367),
   i = n(73800),
   l = n(120356),
   a = n.n(l),
   o = n(442837),
-  c = n(755721),
-  s = n(481060),
+  s = n(755721),
+  c = n(481060),
   u = n(749210),
   d = n(703656),
   _ = n(430824),
   E = n(914010),
-  O = n(900849),
-  I = n(981631),
-  p = n(388032),
-  T = n(8940),
-  S = n(240211);
-let N = () => {
+  p = n(900849),
+  O = n(981631),
+  f = n(388032),
+  I = n(8940),
+  h = n(240211);
+let T = () => {
   let e = (0, o.e7)([E.Z], () => E.Z.getGuildId(), []),
     t = (0, o.e7)([_.Z], () => _.Z.getGuild(e), [e]),
     [n, l] = i.useState(!1);
   if (null == t) return null;
-  let N = async () => {
+  let T = async () => {
     l(!0);
     try {
-      O.mT(t.id), await u.Z.joinGuild(t.id, {
-        source: I.vtS.NOTICE_BAR
+      p.mT(t.id), await u.Z.joinGuild(t.id, {
+        source: O.vtS.NOTICE_BAR
       })
     } catch (e) {
       l(!1)
     }
   };
   return (0, r.jsxs)("div", {
-    className: a()(T.notice, S.notice),
-    children: [(0, r.jsxs)(c.zx, {
-      look: c.zx.Looks.OUTLINED,
-      color: c.zx.Colors.WHITE,
-      size: c.zx.Sizes.NONE,
-      className: a()(T.button, T.back),
-      innerClassName: T.iconButton,
+    className: a()(I.notice, h.notice),
+    children: [(0, r.jsxs)(s.zx, {
+      look: s.zx.Looks.OUTLINED,
+      color: s.zx.Colors.WHITE,
+      size: s.zx.Sizes.NONE,
+      className: a()(I.button, I.back),
+      innerClassName: I.iconButton,
       onClick: () => {
         (0, d.s1)().goBack()
       },
-      children: [(0, r.jsx)(s.whL, {
+      children: [(0, r.jsx)(c.whL, {
         size: "xs",
         color: "currentColor",
-        className: T.arrow
-      }), p.intl.string(p.t["13/7kZ"])]
-    }), (0, r.jsx)(s.Text, {
-      className: T.header,
+        className: I.arrow
+      }), f.intl.string(f.t["13/7kZ"])]
+    }), (0, r.jsx)(c.Text, {
+      className: I.header,
       variant: "text-sm/normal",
-      children: p.intl.string(p.t["N/y2WF"])
-    }), (0, r.jsx)(c.zx, {
-      className: T.button,
-      look: c.zx.Looks.OUTLINED,
-      color: c.zx.Colors.WHITE,
-      size: c.zx.Sizes.NONE,
+      children: f.intl.string(f.t["N/y2WF"])
+    }), (0, r.jsx)(s.zx, {
+      className: I.button,
+      look: s.zx.Looks.OUTLINED,
+      color: s.zx.Colors.WHITE,
+      size: s.zx.Sizes.NONE,
       submitting: n,
-      onClick: N,
-      children: p.intl.format(p.t.uHN7n5, {
+      onClick: T,
+      children: f.intl.format(f.t.uHN7n5, {
         guild: t.name
       })
     })]

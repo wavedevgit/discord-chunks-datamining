@@ -1,8 +1,8 @@
-/** Chunk was on 36512 **/
-r.d(t, {
+/** Chunk was on 68114 **/
+n.d(t, {
   Z: () => s
 });
-let n = (0, r(818083).B)({
+let r = (0, n(818083).B)({
   kind: "user",
   id: "2024-12_participants_panel",
   label: "Participants Panel",
@@ -19,5 +19,5 @@ let n = (0, r(818083).B)({
 });
 
 function s(e) {
-  return n.useExperiment(e)
+  return r.useExperiment(e)
 }

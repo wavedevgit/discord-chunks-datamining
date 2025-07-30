@@ -1,15 +1,15 @@
-/** Chunk was on 74098 **/
+/** Chunk was on 40041 **/
 n.d(t, {
-  E: () => O,
-  Z: () => p
+  E: () => p,
+  Z: () => f
 }), n(388685), n(642613);
 var r = n(255367),
   i = n(73800),
   l = n(442837),
   a = n(481060),
   o = n(239091),
-  c = n(585237),
-  s = n(812206),
+  s = n(585237),
+  c = n(812206),
   u = n(55563),
   d = n(73346),
   _ = n(388032);
@@ -22,13 +22,13 @@ function E(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let O = {
-  DropdownSizes: c.Z.DropdownSizes,
-  Sizes: c.Z.Sizes,
-  Colors: c.Z.Colors,
-  Looks: c.Z.Looks
+let p = {
+  DropdownSizes: s.Z.DropdownSizes,
+  Sizes: s.Z.Sizes,
+  Colors: s.Z.Colors,
+  Looks: s.Z.Looks
 };
-class I extends i.PureComponent {
+class O extends i.PureComponent {
   render() {
     var e, t;
     let n = this.props,
@@ -37,7 +37,7 @@ class I extends i.PureComponent {
         children: l,
         applicationId: a,
         primarySKU: o,
-        onSKUSelect: s
+        onSKUSelect: c
       } = n,
       u = function(e, t) {
         if (null == e) return {};
@@ -54,7 +54,7 @@ class I extends i.PureComponent {
         }
         return i
       }(n, ["skus", "children", "applicationId", "primarySKU", "onSKUSelect"]);
-    return (0, r.jsx)(c.Z, (e = function(e) {
+    return (0, r.jsx)(s.Z, (e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -113,13 +113,13 @@ class I extends i.PureComponent {
     })
   }
 }
-let p = l.ZP.connectStores([u.Z, s.Z], e => {
+let f = l.ZP.connectStores([u.Z, c.Z], e => {
   var t;
   let {
     applicationId: n
-  } = e, r = (0, d.uF)(n, s.Z, u.Z);
+  } = e, r = (0, d.uF)(n, c.Z, u.Z);
   return {
     skus: (null != (t = u.Z.getForApplication(n)) ? t : []).sort((e, t) => null != r && e.id === r.id ? -1 : null != r && t.id === r.id ? 1 : e.name >= t.name ? -1 : 1),
     primarySKU: r
   }
-})(I)
+})(O)

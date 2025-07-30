@@ -1,6 +1,6 @@
-/** Chunk was on 74098 **/
+/** Chunk was on 40041 **/
 n.d(t, {
-  Z: () => T
+  Z: () => I
 });
 var r = n(255367);
 n(73800);
@@ -8,75 +8,75 @@ var i = n(120356),
   l = n.n(i),
   a = n(755721),
   o = n(481060),
-  c = n(592125),
-  s = n(944486),
+  s = n(592125),
+  c = n(944486),
   u = n(471253),
   d = n(623633),
   _ = n(930180),
   E = n(388032),
-  O = n(957991);
+  p = n(957991);
 
-function I(e) {
-  let t = s.Z.getVoiceChannelId();
+function O(e) {
+  let t = c.Z.getVoiceChannelId();
   if (null == t) return;
-  let n = c.Z.getChannel(t);
+  let n = s.Z.getChannel(t);
   null != n && (0, u.RK)(n, e)
 }
 
-function p(e) {
+function f(e) {
   var t, n;
   let {
     channelId: i
   } = e, a = null != (t = (0, _._d)(i)) ? t : 0, o = null != (n = (0, _.K3)(i)) ? n : 0;
   return a > 0 && o > 0 ? (0, r.jsx)("div", {
-    className: O.blocked,
+    className: p.blocked,
     children: (0, r.jsx)("div", {
-      className: l()(O.blockedText, O.noIcon),
+      className: l()(p.blockedText, p.noIcon),
       children: E.intl.string(E.t.xlJRfn)
     })
   }) : a > 0 ? (0, r.jsx)("div", {
-    className: O.blocked,
+    className: p.blocked,
     children: (0, r.jsx)("div", {
-      className: l()(O.blockedText, O.noIcon),
+      className: l()(p.blockedText, p.noIcon),
       children: E.intl.string(E.t.WYad9f)
     })
   }) : o > 0 ? (0, r.jsx)("div", {
-    className: O.blocked,
+    className: p.blocked,
     children: (0, r.jsx)("div", {
-      className: l()(O.blockedText, O.noIcon),
+      className: l()(p.blockedText, p.noIcon),
       children: E.intl.string(E.t.eHq2OD)
     })
   }) : null
 }
 
-function T() {
+function I() {
   let e = (0, d.Z)();
   return null == e ? null : (0, r.jsxs)(o.qXd, {
-    className: O.container,
+    className: p.container,
     color: o.DM8.DEFAULT,
     children: [(0, r.jsx)("div", {
       children: E.intl.string(E.t.Ul1RJS)
-    }), (0, r.jsx)(p, {
+    }), (0, r.jsx)(f, {
       channelId: e.id
     }), (0, r.jsx)(a.zx, {
-      className: O.acceptButton,
+      className: p.acceptButton,
       size: a.zx.Sizes.MIN,
       color: a.zx.Colors.WHITE,
-      onClick: () => I(!1),
+      onClick: () => O(!1),
       children: (0, r.jsx)(o.Text, {
-        className: O.acceptText,
+        className: p.acceptText,
         variant: "text-xs/normal",
         color: "none",
         children: E.intl.string(E.t.MpO0p6)
       })
     }), (0, r.jsx)(a.zx, {
-      className: O.declineButton,
+      className: p.declineButton,
       look: a.zx.Looks.OUTLINED,
       size: a.zx.Sizes.MIN,
       color: a.zx.Colors.WHITE,
-      onClick: () => I(!0),
+      onClick: () => O(!0),
       children: (0, r.jsx)(o.Text, {
-        className: O.declineText,
+        className: p.declineText,
         variant: "text-xs/normal",
         color: "none",
         children: E.intl.string(E.t["1YDv7e"])

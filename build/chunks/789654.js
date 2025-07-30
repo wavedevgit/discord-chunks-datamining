@@ -1,7 +1,7 @@
 /** Chunk was on 93886 **/
 a.d(t, {
   Z: () => E,
-  q: () => T
+  q: () => N
 }), a(804061), a(704826), a(35282), a(388685), a(190126), a(368063), a(65234), a(111804), a(490233), a(97749), a(410992), a(227481), a(730884), a(20464), a(341884), a(364341), a(629680), a(505025), a(918970), a(121784), a(644351), a(146733), a(361932), a(187205), a(49124);
 var n = a(255367),
   r = a(73800),
@@ -61,11 +61,11 @@ function O(e) {
   return e.replaceAll(/_|\./g, "-").toLowerCase()
 }
 
-function N(e) {
+function T(e) {
   return e.replaceAll(/_|-/g, ".").toLowerCase()
 }
 
-function T(e, t) {
+function N(e, t) {
   let a = new Blob([t], {
       type: "application/json"
     }),
@@ -84,7 +84,7 @@ function E() {
     {
       semanticColorOverrides: v,
       rawColorOverrides: C,
-      tab: N,
+      tab: T,
       scales: E
     } = t,
     P = r.useMemo(() => {
@@ -143,7 +143,7 @@ function E() {
         className: j.tabBar,
         type: "top",
         look: "brand",
-        selectedItem: N,
+        selectedItem: T,
         onItemSelect: e => {
           a(t => y(_({}, t), {
             tab: e
@@ -207,21 +207,21 @@ function E() {
           color: m.zx.Colors.TRANSPARENT,
           look: m.zx.Looks.BLANK,
           onClick: () => {
-            T("color-overrides", JSON.stringify(_({}, t), null, 2))
+            N("color-overrides", JSON.stringify(_({}, t), null, 2))
           },
           children: (0, n.jsx)(x._8t, {})
         })]
       })]
     }), (0, n.jsx)("div", {
       className: j.tab,
-      hidden: N !== g.H8.TOKENS,
+      hidden: T !== g.H8.TOKENS,
       children: (0, n.jsx)(S, {
         state: t,
         setState: a
       })
     }), (0, n.jsx)("div", {
       className: j.tab,
-      hidden: N !== g.H8.PALETTES,
+      hidden: T !== g.H8.PALETTES,
       children: (0, n.jsx)(f.P, {
         state: t,
         setState: a
@@ -320,12 +320,12 @@ function S(e) {
       children: Object.entries(i).map(e => {
         let [t, r] = e, i = r.colors[l];
         if (null == i) return null;
-        let s = N(i.color),
+        let s = T(i.color),
           c = i.opacity,
           d = g.jC[t][l];
         return (0, n.jsx)(P, {
           title: O(t),
-          subtitle: 1 === d.opacity ? N(d.raw) : "".concat(N(d.raw), " @ ").concat(100 * d.opacity, "%"),
+          subtitle: 1 === d.opacity ? T(d.raw) : "".concat(T(d.raw), " @ ").concat(100 * d.opacity, "%"),
           highlight: r.highlight,
           onReset: () => {
             a(e => {

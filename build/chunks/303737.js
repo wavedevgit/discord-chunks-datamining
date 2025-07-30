@@ -1,12 +1,12 @@
-/** Chunk was on 77451 **/
+/** Chunk was on 63774 **/
 n.d(t, {
-  GN: () => x,
+  GN: () => O,
   be: () => C,
   g4: () => b,
   m7: () => h,
-  r4: () => v,
-  sO: () => y,
-  yL: () => O
+  r4: () => y,
+  sO: () => x,
+  yL: () => v
 }), n(539854), n(388685), n(993155), n(953529);
 var r = n(991637),
   i = n.n(r),
@@ -20,9 +20,9 @@ var r = n(991637),
   p = n(144507),
   m = n(853439),
   f = n(981631),
-  g = n(176505);
+  _ = n(176505);
 i().shim();
-let _ = {};
+let g = {};
 
 function h(e) {
   let t = (0, l.e7)([s.Z], () => s.Z.getChannel(e)),
@@ -75,8 +75,8 @@ function E(e) {
 
 function C(e) {
   let t = E(e);
-  _[e] = t, t.forEach(e => {
-    let t = e.set("flags", g.zZ.IS_ROLE_SUBSCRIPTION_TEMPLATE_PREVIEW_CHANNEL);
+  g[e] = t, t.forEach(e => {
+    let t = e.set("flags", _.zZ.IS_ROLE_SUBSCRIPTION_TEMPLATE_PREVIEW_CHANNEL);
     a.Z.dispatch({
       type: "CHANNEL_CREATE",
       channel: t
@@ -84,16 +84,16 @@ function C(e) {
   })
 }
 
-function x(e) {
+function O(e) {
   var t;
-  (null != (t = _[e]) ? t : E(e)).forEach(e => {
+  (null != (t = g[e]) ? t : E(e)).forEach(e => {
     a.Z.dispatch({
       type: "CHANNEL_DELETE",
       channel: e
     })
   })
 }
-async function v(e, t) {
+async function y(e, t) {
   let n = [],
     r = [];
   t.forEach(t => {
@@ -118,7 +118,7 @@ async function v(e, t) {
   })
 }
 
-function O(e, t) {
+function v(e, t) {
   var n, r;
   let i = d.n.getState().listings[e],
     l = null == i ? void 0 : i.usedTemplate;
@@ -158,6 +158,6 @@ function O(e, t) {
   }
 }
 
-function y(e) {
+function x(e) {
   return (0, p.H2)(e) && e.features.has(f.oNc.ROLE_SUBSCRIPTIONS_ENABLED) && (0, c.$F)() && (0, c.hQ)(e.id)
 }

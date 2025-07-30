@@ -27,8 +27,8 @@ var r, i = n(255367),
   y = n(616952),
   N = n(792766),
   C = n(692483),
-  A = n(100159),
-  T = n(473855),
+  T = n(100159),
+  A = n(473855),
   P = n(726745),
   Z = n(929809),
   R = n(541692),
@@ -128,7 +128,7 @@ class eu extends(r = l.PureComponent) {
     V.default.track(X.rMx.REGISTER_VIEWED, es({
       location: null != t ? "Invite Register Page" : "Non-Invite Register Page",
       registration_source: this.registrationSource
-    }, null != e ? (0, A.Z)(e, !1, !1) : {}), {
+    }, null != e ? (0, T.Z)(e, !1, !1) : {}), {
       flush: !0
     }), null == this.props.consentRequired && g.Z.getLocationMetadata(), (0, U.e)("register")
   }
@@ -488,7 +488,7 @@ class eu extends(r = l.PureComponent) {
       consentRequired: S,
       authBoxClassName: N,
       hasLoggedInAccounts: C
-    } = this.props, A = this.renderErrorMessage(), T = (0, i.jsx)(p.ua7, {
+    } = this.props, T = this.renderErrorMessage(), A = (0, i.jsx)(p.ua7, {
       text: !c && S ? en.intl.string(en.t.AY4IVF) : null,
       children: e => (0, i.jsx)("div", ea(es({
         className: ei.marginTop20
@@ -616,7 +616,7 @@ class eu extends(r = l.PureComponent) {
         required: !0,
         onFocus: this.trackInputFocus,
         onBlur: this.trackInputBlur
-      }), (0, i.jsx)(y.Z, {}), this.renderConsentComponent(), T, A, $.a ? null : (0, i.jsx)(j.zx, {
+      }), (0, i.jsx)(y.Z, {}), this.renderConsentComponent(), A, T, $.a ? null : (0, i.jsx)(j.zx, {
         look: j.zx.Looks.LINK,
         color: j.zx.Colors.LINK,
         onClick: this.handleGotoLogin,
@@ -668,7 +668,7 @@ class eu extends(r = l.PureComponent) {
       invite: r,
       guildTemplate: l
     } = this.props, s = null != r && null == r.guild && null == r.channel && null != r.inviter;
-    return null != r && t ? r.state === X.r2o.RESOLVING ? this.renderInviteResolving() : this.renderInvite() : null != l ? this.renderFull(() => (0, i.jsx)(T.Z, {
+    return null != r && t ? r.state === X.r2o.RESOLVING ? this.renderInviteResolving() : this.renderInvite() : null != l ? this.renderFull(() => (0, i.jsx)(A.Z, {
       guildTemplate: l
     }), !0) : null != n ? this.renderFull(() => (0, i.jsx)(q.Z, {
       giftCode: n

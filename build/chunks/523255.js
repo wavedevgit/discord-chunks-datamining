@@ -1,6 +1,6 @@
-/** Chunk was on 74098 **/
+/** Chunk was on 40041 **/
 n.d(t, {
-  SI: () => s,
+  SI: () => c,
   hZ: () => d
 });
 var r = n(913527),
@@ -8,8 +8,8 @@ var r = n(913527),
   l = n(835913),
   a = n(675478),
   o = n(581883),
-  c = n(905567);
-let s = e => {
+  s = n(905567);
+let c = e => {
     var t;
     if (!u(e)) return !1;
     let n = null == (t = o.Z.settings.userContent) ? void 0 : t.safetyUserSentimentNoticeDismissedAt,
@@ -17,13 +17,13 @@ let s = e => {
       a = null != r ? i()().diff(r, "days") : null;
     if (null != n && !(null != a && a > 30)) return !1;
     let {
-      isEligible: s
-    } = c.C.getCurrentConfig({
+      isEligible: c
+    } = s.C.getCurrentConfig({
       location: "657a81_1"
     }, {
       autoTrackExposure: !0
     });
-    return s
+    return c
   },
   u = e => null != e && Date.now() - e.createdAt.getTime() > 2592e6,
   d = () => {

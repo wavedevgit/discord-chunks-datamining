@@ -28,8 +28,8 @@ var r = n(255367),
   y = n(314897),
   N = n(82142),
   C = n(701190),
-  A = n(626135),
-  T = n(81063),
+  T = n(626135),
+  A = n(81063),
   P = n(449934),
   Z = n(768581),
   R = n(625054),
@@ -128,7 +128,7 @@ class eS extends i.PureComponent {
         guild: e,
         target_application: t
       } = r;
-      null != t ? null != s && (o = (0, T.xF)(t.id, s, 1024)) : null != e && "string" == typeof e.splash && (o = Z.ZP.getGuildSplashURL({
+      null != t ? null != s && (o = (0, A.xF)(t.id, s, 1024)) : null != e && "string" == typeof e.splash && (o = Z.ZP.getGuildSplashURL({
         id: e.id,
         splash: e.splash
       }))
@@ -144,7 +144,7 @@ class eS extends i.PureComponent {
       hasLoadedExperiments: t,
       isAuthenticated: n
     } = this.props;
-    null != e && (!t && n && u.Z.getExperiments(!0), A.default.track($.rMx.INVITE_OPENED, {
+    null != e && (!t && n && u.Z.getExperiments(!0), T.default.track($.rMx.INVITE_OPENED, {
       invite_code: (0, j.jX)(e),
       load_time: R.Z.getTimeSinceNavigationStart()
     }, {
@@ -166,7 +166,7 @@ class eS extends i.PureComponent {
       let {
         target_application: t
       } = e;
-      null != t && (0, T.hR)(t.id, ["embedded_splash"]).then(e => {
+      null != t && (0, A.hR)(t.id, ["embedded_splash"]).then(e => {
         let [t] = e;
         return this.setState({
           backgroundId: t
@@ -188,7 +188,7 @@ class eS extends i.PureComponent {
     let {
       guildTemplateCode: e
     } = this.props;
-    null != e && (A.default.track($.rMx.GUILD_TEMPLATE_OPENED, {
+    null != e && (T.default.track($.rMx.GUILD_TEMPLATE_OPENED, {
       guild_template_code: e,
       load_time: R.Z.getTimeSinceNavigationStart()
     }, {

@@ -2,11 +2,11 @@
 n.d(t, {
   GB: () => N,
   JI: () => S,
-  UM: () => T,
+  UM: () => A,
   V6: () => C,
   WT: () => v,
   X7: () => I,
-  jq: () => A,
+  jq: () => T,
   mx: () => x
 }), n(415506);
 var r = n(255367),
@@ -90,7 +90,7 @@ function C(e) {
   })
 }
 
-function A(e) {
+function T(e) {
   let {
     invite: t,
     showBigUserIcon: n
@@ -120,7 +120,7 @@ function A(e) {
   })
 }
 
-function T(e) {
+function A(e) {
   let t, n, i, {
     user: l,
     guild: s,

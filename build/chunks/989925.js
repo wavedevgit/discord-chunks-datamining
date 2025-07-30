@@ -1,6 +1,5 @@
-/** Chunk was on 41629 **/
-"use strict";
+/** Chunk was on 68114 **/
 n.d(t, {
-  D: () => s
+  D: () => r
 });
-let s = 200
+let r = 200

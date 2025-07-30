@@ -1,4 +1,4 @@
-/** Chunk was on 77451 **/
+/** Chunk was on 63774 **/
 n.d(t, {
   Z: () => b
 }), n(388685);
@@ -15,7 +15,7 @@ var r = n(255367),
   m = n(70097),
   f = n(422461);
 
-function g(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,7 +23,7 @@ function g(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class _ extends i.Component {
+class g extends i.Component {
   renderMedia() {
     let {
       src: e,
@@ -68,27 +68,27 @@ class _ extends i.Component {
     })
   }
   constructor(...e) {
-    super(...e), g(this, "_animatedValue", new o.Z.Value(1)), g(this, "state", {
+    super(...e), _(this, "_animatedValue", new o.Z.Value(1)), _(this, "state", {
       imageLoadError: !1,
       imageLoading: !0
-    }), g(this, "componentWillEnter", e => {
+    }), _(this, "componentWillEnter", e => {
       this._animatedValue.setValue(0), o.Z.timing(this._animatedValue, {
         toValue: 1,
         duration: 400
       }).start(e)
-    }), g(this, "componentWillLeave", e => {
+    }), _(this, "componentWillLeave", e => {
       o.Z.timing(this._animatedValue, {
         toValue: 0,
         duration: 400
       }).start(e)
-    }), g(this, "getImageStyle", () => ({
+    }), _(this, "getImageStyle", () => ({
       opacity: this._animatedValue
-    })), g(this, "handleImageError", () => {
+    })), _(this, "handleImageError", () => {
       this.setState({
         imageLoadError: !0,
         imageLoading: !1
       })
-    }), g(this, "handleImageLoaded", () => {
+    }), _(this, "handleImageLoaded", () => {
       this.setState({
         imageLoading: !1
       })
@@ -122,7 +122,7 @@ class h extends i.Component {
       title: i,
       splashClassName: l
     } = this.props;
-    return null == t ? (0, r.jsx)(_, {
+    return null == t ? (0, r.jsx)(g, {
       className: a()(f.splash, l),
       src: n,
       title: i
@@ -155,25 +155,25 @@ class h extends i.Component {
     })
   }
   constructor(...e) {
-    super(...e), g(this, "state", {
+    super(...e), _(this, "state", {
       currentIndex: 0,
       videoLoadError: !1,
       videoLoaded: !1
-    }), g(this, "_video", i.createRef()), g(this, "videoTimeout", new c.V7), g(this, "videoPlaying", !1), g(this, "handleToggleMute", e => {
+    }), _(this, "_video", i.createRef()), _(this, "videoTimeout", new c.V7), _(this, "videoPlaying", !1), _(this, "handleToggleMute", e => {
       e.stopPropagation(), e.preventDefault();
       let {
         onToggleMute: t
       } = this.props;
       null == t || t(e)
-    }), g(this, "handleVideoError", () => {
+    }), _(this, "handleVideoError", () => {
       this.setState({
         videoLoadError: !0
       })
-    }), g(this, "handleVideoLoaded", () => {
+    }), _(this, "handleVideoLoaded", () => {
       this.setState({
         videoLoaded: !0
       })
-    }), g(this, "renderTypeVideo", () => {
+    }), _(this, "renderTypeVideo", () => {
       let {
         videoLoaded: e
       } = this.state, {
@@ -183,7 +183,7 @@ class h extends i.Component {
         playing: o,
         muted: c,
         splashClassName: p,
-        splashPlaceholderClassName: g,
+        splashPlaceholderClassName: _,
         renderMediaOverlay: h
       } = this.props, b = c ? d.OyP : d.gj8;
       return (0, r.jsxs)(i.Fragment, {
@@ -200,8 +200,8 @@ class h extends i.Component {
             type: "video/mp4"
           })
         }), (0, r.jsx)(u.W, {
-          children: o && e ? null : (0, r.jsx)(_, {
-            className: a()(f.splashPlaceholder, g),
+          children: o && e ? null : (0, r.jsx)(g, {
+            className: a()(f.splashPlaceholder, _),
             src: n,
             title: l
           }, 0)
@@ -216,14 +216,14 @@ class h extends i.Component {
           }) : null
         })]
       })
-    }), g(this, "nextItem", () => {
+    }), _(this, "nextItem", () => {
       let {
         slideImages: e
       } = this.props;
       null != e && this.setState({
         currentIndex: (this.state.currentIndex + 1) % e.length
       })
-    }), g(this, "renderSlideItem", e => {
+    }), _(this, "renderSlideItem", e => {
       let {
         image: t,
         title: n,
@@ -232,11 +232,11 @@ class h extends i.Component {
       } = this.props, {
         currentIndex: o
       } = this.state;
-      return i ? (0, r.jsx)(_, {
+      return i ? (0, r.jsx)(g, {
         className: a()(f.splash, l),
         src: e[o],
         title: n
-      }, o) : (0, r.jsx)(_, {
+      }, o) : (0, r.jsx)(g, {
         className: a()(f.splash, l),
         src: t,
         title: n

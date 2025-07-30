@@ -24,8 +24,8 @@ var n = a(255367),
   y = a(449224),
   C = a(808506),
   O = a(572004),
-  N = a(70956),
-  T = a(145597),
+  T = a(70956),
+  N = a(145597),
   E = a(246992),
   S = a(981631),
   P = a(757744),
@@ -434,7 +434,7 @@ let H = r.memo(function(e) {
           timestamp: i
         }]), e
       }, k({}, e)))
-    }, +N.Z.Millis.SECOND), () => clearInterval(l.current)), []), (0, n.jsx)(d.ua7, {
+    }, +T.Z.Millis.SECOND), () => clearInterval(l.current)), []), (0, n.jsx)(d.ua7, {
       position: "left",
       text: "The most recent screen types we've logged, indexed by pid",
       children: a => (0, n.jsx)("div", A(k({}, a), {
@@ -469,7 +469,7 @@ let H = r.memo(function(e) {
   K = r.memo(function() {
     var e, t;
     let a = (0, o.cj)([f.default], () => f.default.getTrackedGames()),
-      r = (0, T.getPID)(),
+      r = (0, N.getPID)(),
       l = (0, o.e7)([f.default], () => f.default.isOverlayOOPEnabledForPid(r), [r]),
       [i, s] = (0, o.Wu)([j.Z], () => [j.Z.enabled, j.Z.keepOpen]),
       c = (0, o.e7)([C.default], () => C.default.getFocusedPID()),

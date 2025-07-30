@@ -1,4 +1,4 @@
-/** Chunk was on 77451 **/
+/** Chunk was on 63774 **/
 n.d(t, {
   Z: () => d
 });
@@ -19,10 +19,10 @@ let d = e => {
   } = e, {
     analyticsLocations: m
   } = (0, a.ZP)(l.Z.INVITE_EMBED), f = null != d.application ? s.ZP.createFromServer(d.application) : null != d.activity && null != d.activity.party_id && (0, u.Ps)(d.activity.party_id) ? c.r9 : void 0, {
-    data: g
-  } = (0, o.IX)(null == (t = d.application) ? void 0 : t.id), _ = null != g ? g : f;
-  return null == _ ? null : (0, r.jsx)(i.c, {
-    app: _,
+    data: _
+  } = (0, o.IX)(null == (t = d.application) ? void 0 : t.id), g = null != _ ? _ : f;
+  return null == g ? null : (0, r.jsx)(i.c, {
+    app: g,
     channel: n,
     message: d,
     hideParty: p,

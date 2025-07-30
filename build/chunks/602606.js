@@ -1,4 +1,4 @@
-/** Chunk was on 77451 **/
+/** Chunk was on 63774 **/
 n.d(t, {
   Z: () => p
 }), n(388685), n(457542);
@@ -14,8 +14,8 @@ var r = n(73800),
 
 function p(e) {
   let [t, n] = r.useState(!1), [p, m] = r.useState(!1), f = o.default.cast(e), {
-    joinRequest: g,
-    guild: _
+    joinRequest: _,
+    guild: g
   } = (0, i.cj)([c.Z, u.Z, l.Z, a.Z], () => {
     var e;
     let t = c.Z.getRequest(f);
@@ -32,14 +32,14 @@ function p(e) {
     }
   });
   return r.useEffect(() => {
-    null != _ || p || (m(!0), s.Z.fetchRequestToJoinGuilds())
-  }, [_, p]), r.useEffect(() => {
-    null == g && (n(!0), s.Z.fetchGuildJoinRequest(f).finally(() => {
+    null != g || p || (m(!0), s.Z.fetchRequestToJoinGuilds())
+  }, [g, p]), r.useEffect(() => {
+    null == _ && (n(!0), s.Z.fetchGuildJoinRequest(f).finally(() => {
       n(!1)
     }))
-  }, [g, f]), {
+  }, [_, f]), {
     loading: t,
-    joinRequest: g,
-    joinRequestGuild: _
+    joinRequest: _,
+    joinRequestGuild: g
   }
 }

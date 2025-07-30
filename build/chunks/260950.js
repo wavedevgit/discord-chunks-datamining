@@ -59,17 +59,17 @@ function O() {
     t = (0, s.e7)([p.default], () => p.default.getCurrentUser()),
     [a, l] = r.useState("511651880837840896"),
     [x, g] = r.useState([]),
-    [O, N] = r.useState(!1),
-    T = r.useCallback(async () => {
+    [O, T] = r.useState(!1),
+    N = r.useCallback(async () => {
       try {
-        N(!0), await (0, u.jg)(), await (0, m.In)(t.id), g(await y())
+        T(!0), await (0, u.jg)(), await (0, m.In)(t.id), g(await y())
       } finally {
-        N(!1)
+        T(!1)
       }
     }, [t]);
   r.useEffect(() => {
-    T()
-  }, [T]);
+    N()
+  }, [N]);
   let E = r.useMemo(() => x.filter(e => e.status !== v.O0b.ACTIVE).sort((e, t) => e.id > t.id ? -1 : 1), [x]),
     S = async () => {
       await o.tn.post({
@@ -78,12 +78,12 @@ function O() {
           plan_id: a
         },
         rejectWithError: !1
-      }), await T()
+      }), await N()
     }, P = async () => {
       await o.tn.del({
         url: "/debug/subscription",
         rejectWithError: !1
-      }), await T()
+      }), await N()
     };
   return (0, n.jsx)(d.zJl, {
     className: _.panel,
@@ -99,7 +99,7 @@ function O() {
           disabled: O,
           look: c.zx.Looks.BLANK,
           size: c.zx.Sizes.ICON,
-          onClick: T,
+          onClick: N,
           children: (0, n.jsx)("span", {
             title: "Refresh",
             children: (0, n.jsx)(d.DuK, {
@@ -126,7 +126,7 @@ function O() {
         })
       }), null != e && (0, n.jsx)(f.Z, {
         subscription: e,
-        onUpdated: T
+        onUpdated: N
       }), (0, n.jsx)(d.X6q, {
         variant: "heading-lg/semibold",
         className: _.header,
@@ -146,7 +146,7 @@ function O() {
           children: "Previous Subscriptions"
         }), E.map(e => (0, n.jsx)(f.Z, {
           subscription: e,
-          onUpdated: T
+          onUpdated: N
         }, e.id))]
       })]
     })

@@ -1,6 +1,6 @@
-/** Chunk was on 77451 **/
+/** Chunk was on 63774 **/
 n.d(t, {
-  Z: () => x
+  Z: () => O
 }), n(314940);
 var r = n(255367),
   i = n(73800),
@@ -14,9 +14,9 @@ var r = n(255367),
   p = n(294608),
   m = n(65145),
   f = n(920557),
-  g = n(484953);
+  _ = n(484953);
 
-function _(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -41,7 +41,7 @@ function h(e) {
   } = e;
   return (0, r.jsx)(c.X6q, {
     variant: "text-md/medium",
-    className: g.question,
+    className: _.question,
     scaleFontToUserSetting: !0,
     children: t.text
   })
@@ -56,7 +56,7 @@ function b(e) {
     className: o
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(g.detailsText, o),
+    className: a()(_.detailsText, o),
     children: [l ? (0, r.jsx)(c.Avr, {
       text: t,
       onClick: i,
@@ -131,35 +131,35 @@ function C(e) {
       myAvatarUrl: t.myAvatarUrl,
       canShowVoteCounts: t.canShowVoteCounts
     };
-    return (0, o.EQ)(t.layoutType).with(s.C.DEFAULT, () => (0, r.jsx)(f.K, _({}, n))).with(s.C.IMAGE_ONLY_ANSWERS, () => (0, r.jsx)(d.Z, _({}, n))).otherwise(() => null)
+    return (0, o.EQ)(t.layoutType).with(s.C.DEFAULT, () => (0, r.jsx)(f.K, g({}, n))).with(s.C.IMAGE_ONLY_ANSWERS, () => (0, r.jsx)(d.Z, g({}, n))).otherwise(() => null)
   }(0, n);
   return null == u ? null : (0, r.jsx)("div", {
-    className: a()(g.container, l, i),
+    className: a()(_.container, l, i),
     children: (0, r.jsxs)(c.y5t, {
       children: [(0, r.jsxs)("div", {
-        className: g.header,
+        className: _.header,
         children: [(0, r.jsx)(h, {
           media: n.question
         }), null != n.promptLabel && (0, r.jsx)(c.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
-          className: g.prompt,
+          className: _.prompt,
           scaleFontToUserSetting: !0,
           children: n.promptLabel
         })]
       }), u, (0, r.jsxs)("div", {
-        className: g.bottomBar,
+        className: _.bottomBar,
         children: [(0, r.jsx)(E, {
           channelId: t.getChannelId(),
           messageId: t.id,
           action: n.secondaryAction,
-          className: g.secondaryAction,
+          className: _.secondaryAction,
           isInteractive: n.isInteractive
         }), (0, r.jsx)(E, {
           channelId: t.getChannelId(),
           messageId: t.id,
           action: n.tertiaryAction,
-          className: g.tertiaryAction
+          className: _.tertiaryAction
         }), (0, r.jsx)(E, {
           channelId: t.getChannelId(),
           messageId: t.id,
@@ -170,7 +170,7 @@ function C(e) {
   })
 }
 
-function x(e) {
+function O(e) {
   let {
     message: t,
     poll: n,

@@ -1,4 +1,4 @@
-/** Chunk was on 74098 **/
+/** Chunk was on 40041 **/
 n.d(t, {
   b: () => d
 });
@@ -8,10 +8,10 @@ var i = n(481060),
   l = n(846027),
   a = n(468026),
   o = n(388032);
-let c = null;
+let s = null;
 
-function s() {
-  null !== c && (0, i.Mr3)(c), c = null
+function c() {
+  null !== s && (0, i.Mr3)(s), s = null
 }
 
 function u() {
@@ -19,7 +19,7 @@ function u() {
 }
 
 function d() {
-  c = (0, i.h7j)(e => (0, r.jsx)(a.default, function(e) {
+  s = (0, i.h7j)(e => (0, r.jsx)(a.default, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -41,7 +41,7 @@ function d() {
     body: o.intl.string(o.t.K1gWXl),
     secondaryConfirmText: o.intl.string(o.t.XAiAgI),
     onConfirmSecondary: u,
-    onConfirm: s,
+    onConfirm: c,
     confirmText: o.intl.string(o.t.BddRzc)
   }, e)))
 }

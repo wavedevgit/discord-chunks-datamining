@@ -1,4 +1,4 @@
-/** Chunk was on 77451 **/
+/** Chunk was on 63774 **/
 n.d(t, {
   C: () => T,
   Z: () => S
@@ -15,35 +15,35 @@ var r = n(255367),
   p = n(565138),
   m = n(353254),
   f = n(695346),
-  g = n(271383),
-  _ = n(594174),
+  _ = n(271383),
+  g = n(594174),
   h = n(671533),
   b = n(51144),
   E = n(506071),
   C = n(696014),
-  x = n(847033),
-  v = n(544978),
-  O = n(893182),
-  y = n(388032),
-  j = n(414521);
+  O = n(847033),
+  y = n(544978),
+  v = n(893182),
+  x = n(388032),
+  I = n(414521);
 
-function I(e) {
+function j(e) {
   let {
     onClick: t
   } = e;
   return (0, r.jsxs)(s.P3F, {
     onClick: t,
-    className: j.showMoreButton,
+    className: I.showMoreButton,
     children: [(0, r.jsx)(s.Text, {
       variant: "text-sm/medium",
       color: "header-primary",
-      children: y.intl.string(y.t.J4cw1t)
+      children: x.intl.string(x.t.J4cw1t)
     }), (0, r.jsx)(s.LZC, {
       size: 4,
       horizontal: !0
     }), (0, r.jsx)(h.Z, {
       direction: h.Z.Directions.RIGHT,
-      className: j.showMoreArrow
+      className: I.showMoreArrow
     })]
   })
 }
@@ -55,22 +55,22 @@ function S(e) {
   } = e, i = f.QK.useSetting(), l = (0, E.n)() && i, [a, o] = (0, m.Z)(t, l), s = l ? (0, r.jsx)(d.Z, {
     autoPlay: !0,
     loop: !0,
-    className: j.coverImage,
+    className: I.coverImage,
     width: 655,
     poster: (0, u.b)("server_products/storefront/default-header.png"),
     src: (0, u.b)("server_products/storefront/default-header.mov")
   }) : (0, r.jsx)("img", {
     src: (0, u.b)("server_products/storefront/default-header.png"),
     alt: "",
-    className: j.coverImage
+    className: I.coverImage
   });
   return (0, r.jsx)("div", {
     ref: a,
-    className: j.coverImageContainer,
+    className: I.coverImageContainer,
     children: null == o || n ? s : (0, r.jsx)("img", {
       src: o,
       alt: "",
-      className: j.coverImage
+      className: I.coverImage
     })
   })
 }
@@ -83,11 +83,11 @@ function T(e) {
   } = e, m = l.id, {
     nickname: f,
     nickcolor: h
-  } = (0, o.cj)([g.ZP, _.default], () => {
+  } = (0, o.cj)([_.ZP, g.default], () => {
     var e, t;
-    let n = _.default.getCurrentUser();
+    let n = g.default.getCurrentUser();
     a()(null != n, "user cannot be null");
-    let r = g.ZP.getMember(m, n.id);
+    let r = _.ZP.getMember(m, n.id);
     return {
       nickname: null != (e = null == r ? void 0 : r.nick) ? e : b.ZP.getName(n),
       nickcolor: null != (t = null == r ? void 0 : r.colorString) ? t : void 0
@@ -98,7 +98,7 @@ function T(e) {
   } = (0, C.s)(), N = (null != (n = null == d || null == (t = d.description) ? void 0 : t.trim().length) ? n : 0) > 0, [P, A] = i.useState(1), w = (0, c.Z)("(max-width: 1439px)"), {
     selectedTab: Z,
     isPhantomPreview: R
-  } = (0, x.m)(), L = Z === v.y.GUILD_PRODUCTS_PREVIEW ? y.intl.string(y.t["LvXy/P"]) : y.intl.string(y.t.XyqKh4), D = N ? (0, r.jsxs)(r.Fragment, {
+  } = (0, O.m)(), D = Z === y.y.GUILD_PRODUCTS_PREVIEW ? x.intl.string(x.t["LvXy/P"]) : x.intl.string(x.t.XyqKh4), L = N ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(T, {
       lineClamp: w || 2 === P ? 2 : 3,
       children: (0, r.jsx)(s.Text, {
@@ -109,8 +109,8 @@ function T(e) {
     }), E && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(s.LZC, {
         size: 4
-      }), (0, r.jsx)(I, {
-        onClick: () => (0, O.Z)({
+      }), (0, r.jsx)(j, {
+        onClick: () => (0, v.Z)({
           guildId: m
         })
       })]
@@ -118,12 +118,12 @@ function T(e) {
   }) : (0, r.jsx)(s.Text, {
     variant: "text-sm/normal",
     color: "text-default",
-    children: R ? L : y.intl.string(y.t["NY/FIS"])
+    children: R ? D : x.intl.string(x.t["NY/FIS"])
   });
   return (0, r.jsxs)("div", {
-    className: j.container,
+    className: I.container,
     children: [(0, r.jsxs)("div", {
-      className: j.infoContainer,
+      className: I.infoContainer,
       children: [(0, r.jsx)("div", {
         children: (0, r.jsx)(p.Z, {
           guild: l,
@@ -142,7 +142,7 @@ function T(e) {
             variant: "heading-xl/semibold",
             color: "header-primary",
             lineClamp: 2,
-            children: R ? y.intl.string(y.t.rtgp7u) : y.intl.formatToPlainString(y.t.NZeik5, {
+            children: R ? x.intl.string(x.t.rtgp7u) : x.intl.formatToPlainString(x.t.NZeik5, {
               guildName: l.name
             })
           })
@@ -151,7 +151,7 @@ function T(e) {
         }), (0, r.jsx)(s.Text, {
           variant: "text-md/normal",
           color: "text-default",
-          children: y.intl.format(y.t["7JwrlJ"], {
+          children: x.intl.format(x.t["7JwrlJ"], {
             username: f,
             usernameHook: function(e, t) {
               return (0, r.jsx)("span", {
@@ -164,7 +164,7 @@ function T(e) {
           })
         }), (0, r.jsx)(s.LZC, {
           size: 9
-        }), D]
+        }), L]
       })]
     }), (0, r.jsx)(S, {
       coverImageAsset: null == d ? void 0 : d.cover_image_asset,
