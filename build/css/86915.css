@@ -1,6 +1,6 @@
 /**
   Module ID: 86915
-  Original File Name: 1da1a279e50cf9b1
+  Original File Name: d3f17ea0e668dd64
 **/
 .iconButton_aa66d3 {
     background-color: transparent;
@@ -798,17 +798,17 @@
     padding-right: 12px
 }
 
-.nameInputWrapperWithEmojiPicker__0511a {
+.nameInputWrapper__0511a {
     background-color: transparent;
     flex-grow: 1
 }
 
-.nameInputInnerWithEmojiPicker__0511a,.nameInputWrapperWithEmojiPicker__0511a {
+.nameInputInner__0511a,.nameInputWrapper__0511a {
     border: none;
     border-radius: 0
 }
 
-.nameInputInnerWithEmojiPicker__0511a:hover,.nameInputWrapperWithEmojiPicker__0511a:hover {
+.nameInputInner__0511a:hover,.nameInputWrapper__0511a:hover {
     border: none
 }
 
@@ -824,4 +824,4 @@
     vertical-align: top
 }
 
-/*# sourceMappingURL=1da1a279e50cf9b1.css.map*/
+/*# sourceMappingURL=d3f17ea0e668dd64.css.map*/

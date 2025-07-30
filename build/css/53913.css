@@ -1,6 +1,6 @@
 /**
   Module ID: 53913
-  Original File Name: b17c129f5f211866
+  Original File Name: 66c6b13f1ee0b092
 **/
 .modalRoot__01dab {
     height: 478px
@@ -235,24 +235,21 @@
 }
 
 .inputWrapper_ac72c6 {
-    position: relative
-}
-
-.inputWrapperWithEmojiPicker_ac72c6 {
     background-color: transparent;
-    flex-grow: 1
+    flex-grow: 1;
+    position: relative
 }
 
 .inputInner_ac72c6 {
     padding-left: 28px
 }
 
-.inputInnerWithEmojiPicker_ac72c6,.inputWrapperWithEmojiPicker_ac72c6 {
+.inputInner_ac72c6,.inputWrapper_ac72c6 {
     border: none;
     border-radius: 0
 }
 
-.inputInnerWithEmojiPicker_ac72c6:hover,.inputWrapperWithEmojiPicker_ac72c6:hover {
+.inputInner_ac72c6:hover,.inputWrapper_ac72c6:hover {
     border: none
 }
 
@@ -348,4 +345,4 @@
     color: var(--text-default)
 }
 
-/*# sourceMappingURL=b17c129f5f211866.css.map*/
+/*# sourceMappingURL=66c6b13f1ee0b092.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 45822
-  Original File Name: afe4b67ae8ab78bc
+  Original File Name: 648575c902925a90
 **/
 .modalRoot__7169d {
     height: 478px
@@ -125,24 +125,21 @@
 }
 
 .inputWrapper_ac72c6 {
-    position: relative
-}
-
-.inputWrapperWithEmojiPicker_ac72c6 {
     background-color: transparent;
-    flex-grow: 1
+    flex-grow: 1;
+    position: relative
 }
 
 .inputInner_ac72c6 {
     padding-left: 28px
 }
 
-.inputInnerWithEmojiPicker_ac72c6,.inputWrapperWithEmojiPicker_ac72c6 {
+.inputInner_ac72c6,.inputWrapper_ac72c6 {
     border: none;
     border-radius: 0
 }
 
-.inputInnerWithEmojiPicker_ac72c6:hover,.inputWrapperWithEmojiPicker_ac72c6:hover {
+.inputInner_ac72c6:hover,.inputWrapper_ac72c6:hover {
     border: none
 }
 
@@ -238,4 +235,4 @@
     color: var(--text-default)
 }
 
-/*# sourceMappingURL=afe4b67ae8ab78bc.css.map*/
+/*# sourceMappingURL=648575c902925a90.css.map*/

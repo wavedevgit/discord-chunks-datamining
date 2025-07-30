@@ -1,6 +1,6 @@
 /**
   Module ID: 55305
-  Original File Name: 29e804417cf63307
+  Original File Name: 33888ba7784aae47
 **/
 .container__0e476 {
     background-color: var(--input-background);
@@ -476,24 +476,21 @@
 }
 
 .inputWrapper_ac72c6 {
-    position: relative
-}
-
-.inputWrapperWithEmojiPicker_ac72c6 {
     background-color: transparent;
-    flex-grow: 1
+    flex-grow: 1;
+    position: relative
 }
 
 .inputInner_ac72c6 {
     padding-left: 28px
 }
 
-.inputInnerWithEmojiPicker_ac72c6,.inputWrapperWithEmojiPicker_ac72c6 {
+.inputInner_ac72c6,.inputWrapper_ac72c6 {
     border: none;
     border-radius: 0
 }
 
-.inputInnerWithEmojiPicker_ac72c6:hover,.inputWrapperWithEmojiPicker_ac72c6:hover {
+.inputInner_ac72c6:hover,.inputWrapper_ac72c6:hover {
     border: none
 }
 
@@ -589,4 +586,4 @@
     color: var(--text-default)
 }
 
-/*# sourceMappingURL=29e804417cf63307.css.map*/
+/*# sourceMappingURL=33888ba7784aae47.css.map*/

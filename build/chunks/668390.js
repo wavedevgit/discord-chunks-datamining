@@ -13,9 +13,9 @@ var i = n(255367),
   d = n(741247),
   u = n(75464),
   h = n(884902),
-  m = n(189173);
+  g = n(189173);
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -47,7 +47,7 @@ function p(e) {
         } = await Promise.resolve().then(n.bind(n, 741247));
         return n => {
           var l, s;
-          return (0, i.jsx)(e, (l = g({}, n), s = s = {
+          return (0, i.jsx)(e, (l = m({}, n), s = s = {
             role: t,
             guild: r
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
@@ -65,8 +65,8 @@ function p(e) {
         onClose: () => u(!1)
       })
     },
-    className: s()(m.roleOverflow, {
-      [m.open]: a
+    className: s()(g.roleOverflow, {
+      [g.open]: a
     }),
     children: (0, i.jsx)(o.xhG, {
       size: "custom",
@@ -94,43 +94,43 @@ function f(e) {
     theme: C,
     roleStyle: N,
     onContextMenu: S,
-    "aria-label": E
-  } = e, O = (0, h._f)(s.id, r, null == r ? void 0 : r.colorStrings);
+    "aria-label": O
+  } = e, E = (0, h._f)(s.id, r, null == r ? void 0 : r.colorStrings);
   return d ? (0, i.jsx)("div", {
-    className: m.dragged
+    className: g.dragged
   }) : (0, i.jsx)(o.njP.Item, {
-    className: m.role,
+    className: g.role,
     id: l,
     selectedItem: f,
     onItemSelect: x,
     itemType: j,
-    "aria-label": null != v ? "".concat(E, ", ").concat(v) : E,
+    "aria-label": null != v ? "".concat(O, ", ").concat(v) : O,
     onContextMenu: S,
     children: (0, i.jsxs)("div", {
-      className: m.roleContent,
+      className: g.roleContent,
       children: ["dot" === N ? (0, i.jsx)(o.FhE, {
         color: null != t ? t : void 0,
-        colors: O,
-        className: m.roleDot,
+        colors: E,
+        className: g.roleDot,
         background: !1,
         tooltip: !1
       }) : (0, i.jsx)(o.xko, {
         color: null != t ? t : null,
-        colors: O,
-        className: m.roleCircle
+        colors: E,
+        className: g.roleCircle
       }), function() {
         if (!b) return null;
         let e = (0, a.wj)(C) ? n(27377) : n(514811);
         return (0, i.jsx)(o.ua7, {
           text: v,
           color: o.ua7.Colors.RED,
-          children: t => (0, i.jsx)(u.Z, g({
-            className: m.lock,
+          children: t => (0, i.jsx)(u.Z, m({
+            className: g.lock,
             src: e
           }, t))
         })
       }(), (0, i.jsx)("div", {
-        className: m.roleInner,
+        className: g.roleInner,
         children: c
       }), y && null != r ? (0, i.jsx)(p, {
         guild: s,

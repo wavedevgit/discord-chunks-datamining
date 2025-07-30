@@ -14,8 +14,8 @@ var i = n(255367),
   d = n(481060),
   u = n(484614),
   h = n(914010),
-  m = n(246946),
-  g = n(626135),
+  g = n(246946),
+  m = n(626135),
   p = n(630388),
   f = n(971130),
   x = n(530436),
@@ -24,8 +24,8 @@ var i = n(255367),
   v = n(388032),
   y = n(821022),
   C = n(20493);
-let N = o.ZP.connectStores([m.Z], () => ({
-    hideValue: m.Z.hideInstantInvites
+let N = o.ZP.connectStores([g.Z], () => ({
+    hideValue: g.Z.hideInstantInvites
   }))(e => {
     let {
       value: t,
@@ -51,10 +51,10 @@ let N = o.ZP.connectStores([m.Z], () => ({
       onClose: o,
       modalState: c,
       isApplicationBypassToggleEnabled: u,
-      setInviteFlags: m,
+      setInviteFlags: g,
       copyValue: S,
-      changePage: E,
-      inviteChannel: O,
+      changePage: O,
+      inviteChannel: E,
       source: T,
       code: w,
       guildScheduledEvent: Z,
@@ -67,16 +67,16 @@ let N = o.ZP.connectStores([m.Z], () => ({
       showVanityURL: L,
       flags: D
     } = c, M = l.useCallback(() => {
-      g.default.track(b.rMx.COPY_INSTANT_INVITE, {
+      m.default.track(b.rMx.COPY_INSTANT_INVITE, {
         server: h.Z.getGuildId(),
-        channel: null == O ? void 0 : O.id,
-        channel_type: null == O ? void 0 : O.type,
+        channel: null == E ? void 0 : E.id,
+        channel_type: null == E ? void 0 : E.type,
         location: T,
         code: w,
         guild_scheduled_event_id: null == Z ? void 0 : Z.id,
         application_id: null == I ? void 0 : I.id
       })
-    }, [null == I ? void 0 : I.id, O, T, w, Z]);
+    }, [null == I ? void 0 : I.id, E, T, w, Z]);
     return (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(N, {
         value: S,
@@ -89,7 +89,7 @@ let N = o.ZP.connectStores([m.Z], () => ({
         }), (0, i.jsx)(d.j7V, {
           className: y.toggle,
           value: (0, p.yE)(D, a.$.IS_APPLICATION_BYPASS),
-          onChange: e => m((0, p.mB)(D, a.$.IS_APPLICATION_BYPASS, e)),
+          onChange: e => g((0, p.mB)(D, a.$.IS_APPLICATION_BYPASS, e)),
           disabled: R,
           hideBorder: !0,
           children: (0, i.jsxs)("div", {
@@ -127,7 +127,7 @@ let N = o.ZP.connectStores([m.Z], () => ({
         variant: "text-xs/normal",
         className: s()(C.marginTop8, y.footerText),
         children: [(0, f.Vg)(_, P), " ", r ? (0, i.jsx)(d.eee, {
-          onClick: () => E(j.RV.SETTINGS),
+          onClick: () => O(j.RV.SETTINGS),
           children: v.intl.string(v.t.VNe8Pz)
         }) : null]
       }), !n && r && L ? (0, i.jsxs)(d.Text, {

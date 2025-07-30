@@ -19,7 +19,7 @@ let u = e => {
     noticeText: l,
     buttonText: u,
     onClick: h,
-    canSync: m
+    canSync: g
   } = e;
   return (0, i.jsx)(o.Zbd, {
     className: r()(t, d.card),
@@ -37,7 +37,7 @@ let u = e => {
           variant: "text-md/normal",
           children: l
         })
-      }), m && (0, i.jsx)(a.zx, {
+      }), g && (0, i.jsx)(a.zx, {
         size: a.zx.Sizes.SMALL,
         color: a.zx.Colors.PRIMARY,
         onClick: h,

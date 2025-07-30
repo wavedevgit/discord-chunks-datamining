@@ -1,6 +1,6 @@
 /**
   Module ID: 55151
-  Original File Name: 83437adde6721de3
+  Original File Name: 6790a1cecc148310
 **/
 .modalRoot__01dab {
     height: 478px
@@ -235,24 +235,21 @@
 }
 
 .inputWrapper_ac72c6 {
-    position: relative
-}
-
-.inputWrapperWithEmojiPicker_ac72c6 {
     background-color: transparent;
-    flex-grow: 1
+    flex-grow: 1;
+    position: relative
 }
 
 .inputInner_ac72c6 {
     padding-left: 28px
 }
 
-.inputInnerWithEmojiPicker_ac72c6,.inputWrapperWithEmojiPicker_ac72c6 {
+.inputInner_ac72c6,.inputWrapper_ac72c6 {
     border: none;
     border-radius: 0
 }
 
-.inputInnerWithEmojiPicker_ac72c6:hover,.inputWrapperWithEmojiPicker_ac72c6:hover {
+.inputInner_ac72c6:hover,.inputWrapper_ac72c6:hover {
     border: none
 }
 
@@ -377,4 +374,4 @@
     width: 20px
 }
 
-/*# sourceMappingURL=83437adde6721de3.css.map*/
+/*# sourceMappingURL=6790a1cecc148310.css.map*/

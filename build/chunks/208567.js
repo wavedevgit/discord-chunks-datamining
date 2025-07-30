@@ -13,8 +13,8 @@ var i, l = n(255367),
   d = n(481060),
   u = n(624138),
   h = n(813197),
-  m = n(981631),
-  g = n(388032),
+  g = n(981631),
+  m = n(388032),
   p = n(348563);
 
 function f(e, t, n) {
@@ -58,7 +58,7 @@ function b(e) {
     icon: n = null
   } = e;
   return (0, l.jsx)(d.f6W, {
-    theme: m.BRd.LIGHT,
+    theme: g.BRd.LIGHT,
     children: e => (0, l.jsx)("div", {
       className: a()(p.imageUploaderIcon, t, e),
       children: n
@@ -81,8 +81,8 @@ class v extends(i = r.PureComponent) {
       showIcon: C,
       showIconDisabled: N,
       className: S,
-      imageClassName: E,
-      iconClassName: O,
+      imageClassName: O,
+      iconClassName: E,
       iconWrapperClassName: T,
       icon: w,
       hideSize: Z,
@@ -101,12 +101,12 @@ class v extends(i = r.PureComponent) {
       })), v) return (0, l.jsx)("div", {
       className: a()(p.imageUploader, p.disabled, S),
       children: (0, l.jsxs)("div", {
-        className: a()(p.imageUploaderInner, E),
+        className: a()(p.imageUploaderInner, O),
         style: j(x({}, R), {
           backgroundImage: n
         }),
         children: [i, N && (0, l.jsx)("div", {
-          className: a()(p.imageUploaderIcon, p.imageUploaderIconDisabled, O),
+          className: a()(p.imageUploaderIcon, p.imageUploaderIconDisabled, E),
           children: w
         })]
       })
@@ -114,14 +114,14 @@ class v extends(i = r.PureComponent) {
     null != s ? r = (0, l.jsx)(d.eee, {
       className: p.removeButton,
       onClick: this.handleRemove,
-      children: g.intl.string(g.t.N86XcH)
+      children: m.intl.string(m.t.N86XcH)
     }) : Z || (r = (0, l.jsx)("small", {
       className: p.sizeInfo,
-      children: g.intl.format(g.t.AH4c7e, {
-        size: m.IXf
+      children: m.intl.format(m.t.AH4c7e, {
+        size: g.IXf
       })
     }));
-    let D = null != (e = null != L ? L : o) ? e : g.intl.string(g.t["Ge+94+"]);
+    let D = null != (e = null != L ? L : o) ? e : m.intl.string(m.t["Ge+94+"]);
     return (0, l.jsxs)("div", {
       className: a()(p.imageUploader, S),
       children: [(0, l.jsx)(d.tEY, {
@@ -129,7 +129,7 @@ class v extends(i = r.PureComponent) {
         children: (0, l.jsxs)("div", {
           className: C ? a()(p.imageUploaderIconWrapper, T) : void 0,
           children: [(0, l.jsxs)("div", {
-            className: a()(p.imageUploaderInner, E),
+            className: a()(p.imageUploaderInner, O),
             style: j(x({}, R), {
               backgroundImage: n
             }),
@@ -154,7 +154,7 @@ class v extends(i = r.PureComponent) {
             "aria-hidden": "true",
             children: o
           }), C && (0, l.jsx)(b, {
-            className: O,
+            className: E,
             icon: w
           })]
         })

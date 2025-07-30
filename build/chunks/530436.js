@@ -18,18 +18,18 @@ function h(e) {
     guild: t,
     error: n,
     onClose: h
-  } = e, m = t.id, g = l.useCallback(() => {
-    h(), a.Z.open(m, c.pNK.INVITES)
-  }, [m, h]), p = l.useCallback(e => (0, i.jsx)(r.P3F, {
+  } = e, g = t.id, m = l.useCallback(() => {
+    h(), a.Z.open(g, c.pNK.INVITES)
+  }, [g, h]), p = l.useCallback(e => (0, i.jsx)(r.P3F, {
     className: u.errorLink,
-    onClick: g,
+    onClick: m,
     children: (0, i.jsx)(r.Text, {
       variant: "text-xs/normal",
       color: "text-link",
       tag: "span",
       children: e
     })
-  }), [g]), f = l.useCallback(e => (0, i.jsx)(r.eee, {
+  }), [m]), f = l.useCallback(e => (0, i.jsx)(r.eee, {
     href: c.EYA.INVITES_HELP,
     target: "_blank",
     children: (0, i.jsx)(r.Text, {
