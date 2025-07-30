@@ -1,14 +1,5 @@
 /** Chunk was on 83098 **/
 e.exports = {
-  modalRoot: "modalRoot__85e39",
-  header: "header__85e39",
-  titleLine: "titleLine__85e39",
-  title: "title__85e39",
-  closeButton: "closeButton__85e39",
-  message: "message__85e39",
-  footer: "footer__85e39",
-  copySendBar: "copySendBar__85e39",
-  copyButton: "copyButton__85e39",
   destinationRow: "destinationRow__85e39",
   disabled: "disabled__85e39",
   identity: "identity__85e39",
@@ -21,6 +12,5 @@ e.exports = {
   subLabel: "subLabel__85e39",
   checkbox: "checkbox__85e39",
   noResults: "noResults__85e39",
-  noResultsImg: "noResultsImg__85e39",
-  sendWithMessage: "sendWithMessage__85e39"
+  noResultsImg: "noResultsImg__85e39"
 }
