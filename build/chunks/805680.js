@@ -201,7 +201,7 @@ function J(e) {
     location: "expression_picker"
   }), eh = (0, d.e7)([w.Z], () => w.Z.isOpen()), em = null != en, eg = (0, f.Jw)(null != en ? en : ""), eE = (null == (t = z.gifs) ? void 0 : t.allowSending) && !c.tq && null != Z, eb = (null == (n = z.stickers) ? void 0 : n.allowSending) && null != Y, ey = !(null == (a = z.expressionPicker) ? void 0 : a.onlyEmojis) && (eE || eb), {
     showExpressionPickerButton: eO
-  } = (0, v.q)({
+  } = (0, v.qt)({
     location: "expression_picker",
     autoTrackExposure: !0,
     disable: !ey || ec !== M.X1.EMOJI

@@ -24,7 +24,7 @@ let p = function(e) {
     priceOptions: x,
     isApplicationHome: f,
     enablePremiumBrandRefresh: h
-  } = e, v = (0, a.e7)([u.Z], () => u.Z.isLoadedForPremiumSKUs()), I = (0, s.ap)((0, c.ZP)());
+  } = e, v = (0, a.e7)([u.Z], () => u.Z.isLoadedForSKUs([t])), I = (0, s.ap)((0, c.ZP)());
   if (!v) return (0, n.jsx)(o.$jN, {
     type: o.$jN.Type.PULSING_ELLIPSIS,
     className: C.priceSpinner

@@ -349,7 +349,7 @@ let z = d().throttle(f.OQ, 1e3),
       W = Math.max(D - G.length, D - F.length),
       {
         enabled: Y
-      } = (0, O.q)({
+      } = (0, O.qt)({
         location: "guild_settings",
         autoTrackExposure: !0
       });
