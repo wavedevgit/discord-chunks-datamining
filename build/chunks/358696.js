@@ -15,7 +15,7 @@ var i = n(120356),
   u = n(388032),
   d = n(393113);
 
-function _(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -24,14 +24,14 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
@@ -95,7 +95,7 @@ function y(e) {
   var t, n;
   let {
     image: i,
-    smallImage: _,
+    smallImage: f,
     aspectRatio: p,
     onClick: g,
     size: y,
@@ -127,29 +127,29 @@ function y(e) {
         onClick: g,
         children: (0, r.jsx)(c._, {
           href: i.url,
-          children: null != _ ? (0, r.jsx)(s.ZP, h(f({}, e), {
+          children: null != f ? (0, r.jsx)(s.ZP, h(_({}, e), {
             className: d.imageContainer,
             mask: T,
             width: v,
             height: v,
             children: S
-          })) : (0, r.jsx)("div", h(f({}, e), {
+          })) : (0, r.jsx)("div", h(_({}, e), {
             className: d.imageContainer,
             children: S
           }))
         })
       })
-    }), null != _ && (0, r.jsx)(o.ua7, {
-      text: _.text,
+    }), null != f && (0, r.jsx)(o.ua7, {
+      text: f.text,
       children: e => {
         var t;
         return (0, r.jsx)(c._, {
-          href: _.url,
-          children: (0, r.jsx)("div", h(f({}, e), {
+          href: f.url,
+          children: (0, r.jsx)("div", h(_({}, e), {
             className: d.smallImageContainer,
             children: (0, r.jsx)(l.f, {
-              src: _.src,
-              alt: null != (t = _.alt) ? t : _.text,
+              src: f.src,
+              alt: null != (t = f.alt) ? t : f.text,
               size: I,
               className: d.contentImage,
               constrain: "width"

@@ -38,7 +38,7 @@ function d(e) {
   })
 }
 
-function _(e) {
+function f(e) {
   let {
     message: t
   } = e;
@@ -51,7 +51,7 @@ function _(e) {
   }), !0)
 }
 
-function f(e) {
+function _(e) {
   let {
     messageId: t,
     channelId: n
@@ -85,8 +85,8 @@ l(g, "displayName", "SearchMessageStore");
 let E = new g(a.Z, {
   SEARCH_MESSAGES_SUCCESS: d,
   MOD_VIEW_SEARCH_MESSAGES_SUCCESS: d,
-  MESSAGE_UPDATE: _,
+  MESSAGE_UPDATE: f,
   LOGOUT: p,
   CONNECTION_OPEN: h,
-  MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT: f
+  MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT: _
 })

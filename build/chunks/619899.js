@@ -26,7 +26,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,7 +39,7 @@ function _(e) {
   return e
 }
 
-function f(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -51,7 +51,7 @@ function f(e, t) {
 }
 
 function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -107,12 +107,12 @@ let y = (0, a.U)(e => ({
         let r = e.collectionAssets[t];
         null != r && URL.revokeObjectURL(r.src);
         let i = URL.createObjectURL(n),
-          a = _({}, e.collectionAssets);
+          a = f({}, e.collectionAssets);
         return a[t] = {
           type: t,
           name: n.name,
           src: i
-        }, p(_({}, e), {
+        }, p(f({}, e), {
           collectionAssets: a,
           previewEnabled: !0
         })
@@ -129,7 +129,7 @@ let y = (0, a.U)(e => ({
           } = r,
           a = h(r, [t].map(E)),
           o = Object.keys(a).length > 0 || Object.keys(e.avatarDecorationAssets).length > 0;
-        return p(_({}, e), {
+        return p(f({}, e), {
           collectionAssets: a,
           previewEnabled: o
         })
@@ -140,12 +140,12 @@ let y = (0, a.U)(e => ({
         let n = e.avatarDecorationAssets[t.name];
         null != n && URL.revokeObjectURL(n.src);
         let r = URL.createObjectURL(t),
-          i = _({}, e.avatarDecorationAssets);
+          i = f({}, e.avatarDecorationAssets);
         return i[t.name] = {
           type: u.aB.AVATAR_DECORATION,
           name: t.name,
           src: r
-        }, p(_({}, e), {
+        }, p(f({}, e), {
           avatarDecorationAssets: i,
           previewEnabled: !0
         })
@@ -162,7 +162,7 @@ let y = (0, a.U)(e => ({
           } = r,
           a = h(r, [t].map(E)),
           o = Object.keys(a).length > 0 || Object.keys(e.collectionAssets).length > 0;
-        return p(_({}, e), {
+        return p(f({}, e), {
           avatarDecorationAssets: a,
           previewEnabled: o
         })
@@ -217,13 +217,13 @@ let y = (0, a.U)(e => ({
           } = e;
           return h(e, ["base64"])
         }), r) {
-        var s, l, u, d, _, f;
-        a.reducedMotionSrc = null != (d = null == (s = n[c.cq.REDUCED_MOTION]) ? void 0 : s.src) ? d : "", a.staticFrameSrc = null != (_ = null == (l = n[c.cq.STATIC]) ? void 0 : l.src) ? _ : "", a.thumbnailPreviewSrc = null != (f = null == (u = n[c.cq.THUMBNAIL]) ? void 0 : u.src) ? f : ""
+        var s, l, u, d, f, _;
+        a.reducedMotionSrc = null != (d = null == (s = n[c.cq.REDUCED_MOTION]) ? void 0 : s.src) ? d : "", a.staticFrameSrc = null != (f = null == (l = n[c.cq.STATIC]) ? void 0 : l.src) ? f : "", a.thumbnailPreviewSrc = null != (_ = null == (u = n[c.cq.THUMBNAIL]) ? void 0 : u.src) ? _ : ""
       }
       return a
     }, [o, e])
   },
-  T = (e, t) => p(_({}, e), {
+  T = (e, t) => p(f({}, e), {
     asset: t.src
   }),
   S = (e, t) => {

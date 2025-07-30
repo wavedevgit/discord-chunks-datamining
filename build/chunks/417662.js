@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  E: () => f,
+  E: () => _,
   Z: () => p
 }), n(388685);
 var r = n(653603),
@@ -13,9 +13,9 @@ var r = n(653603),
   c = n(436660),
   u = n(887490),
   d = n(981631);
-let _ = "  ";
+let f = "  ";
 
-function f(e, t) {
+function _(e, t) {
   let {
     cmd: n = !1,
     ctrl: r = !1,
@@ -31,32 +31,32 @@ function p(e) {
     let h = e.isMac;
     switch (t.which) {
       case d.yXg.B:
-        if (!u.bN.isEditorEmpty(e) && f(t, {
+        if (!u.bN.isEditorEmpty(e) && _(t, {
             ctrl: !h,
             cmd: h
           })) return (0, l.py)(e, "bold"), !0;
         break;
       case d.yXg.I:
-        if (!u.bN.isEditorEmpty(e) && f(t, {
+        if (!u.bN.isEditorEmpty(e) && _(t, {
             ctrl: !h,
             cmd: h
           })) return (0, l.py)(e, "italics"), !0;
         break;
       case d.yXg.U:
-        if (!u.bN.isEditorEmpty(e) && f(t, {
+        if (!u.bN.isEditorEmpty(e) && _(t, {
             ctrl: !h,
             cmd: h
           })) return (0, l.py)(e, "underline"), !0;
         break;
       case d.yXg.S:
-        if (!u.bN.isEditorEmpty(e) && f(t, {
+        if (!u.bN.isEditorEmpty(e) && _(t, {
             ctrl: !h,
             cmd: h,
             shift: !0
           })) return (0, l.py)(e, "strikethrough"), !0;
         break;
       case d.yXg.TAB:
-        if (null != e.selection && f(t, {
+        if (null != e.selection && _(t, {
             shift: null
           })) {
           let [r, i] = u.M8.edges(e.selection), a = u.bN.blocks(e).slice(r.path[0], i.path[0] + 1), o = !0;
@@ -65,7 +65,7 @@ function p(e) {
               o = !1;
               break
             } if (o) {
-            if (!t.shiftKey && u.M8.isCollapsed(e.selection)) return c.Q.insertText(e, _), !0;
+            if (!t.shiftKey && u.M8.isCollapsed(e.selection)) return c.Q.insertText(e, f), !0;
             let n = !t.shiftKey;
             return s.T.withSingleEntry(e, () => {
               var t, r, i, o;
@@ -79,19 +79,19 @@ function p(e) {
                     path: a,
                     offset: 0
                   };
-                if (n) c.Q.insertText(e, _, {
+                if (n) c.Q.insertText(e, f, {
                   at: o
                 }), u.C0.equals(s.path, a) && 0 !== s.offset && (s = {
                   path: a,
-                  offset: s.offset + _.length
+                  offset: s.offset + f.length
                 }), u.C0.equals(l.path, a) && 0 !== l.offset && (l = {
                   path: a,
-                  offset: l.offset + _.length
+                  offset: l.offset + f.length
                 });
-                else if (i.text.startsWith(_)) {
+                else if (i.text.startsWith(f)) {
                   let t = {
                     path: u.C0.child(r, 0),
-                    offset: _.length
+                    offset: f.length
                   };
                   c.Q.delete(e, {
                     at: {
@@ -100,10 +100,10 @@ function p(e) {
                     }
                   }), u.C0.equals(s.path, a) && (s = {
                     path: a,
-                    offset: Math.max(0, s.offset - _.length)
+                    offset: Math.max(0, s.offset - f.length)
                   }), u.C0.equals(l.path, a) && (l = {
                     path: a,
-                    offset: Math.max(0, l.offset - _.length)
+                    offset: Math.max(0, l.offset - f.length)
                   })
                 }
               }
@@ -118,15 +118,15 @@ function p(e) {
       case d.yXg.ARROW_LEFT:
       case d.yXg.ARROW_RIGHT: {
         let n, o;
-        if (f(t, {
+        if (_(t, {
             shift: null
           })) n = "character";
-        else if (f(t, {
+        else if (_(t, {
             ctrl: !h,
             alt: h,
             shift: null
           })) n = "word";
-        else if (h && f(t, {
+        else if (h && _(t, {
             cmd: !0,
             shift: null
           })) return !1;
@@ -134,15 +134,15 @@ function p(e) {
         t.shiftKey && (o = "focus");
         let s = e.children[null != (p = null == (a = e.selection) || null == (r = a.focus) ? void 0 : r.path[0]) ? p : 0],
           l = "rtl" === i()(u.aj.string(s)),
-          _ = t.which === d.yXg.ARROW_LEFT == !l;
+          f = t.which === d.yXg.ARROW_LEFT == !l;
         return c.Q.keyboardMove(e, {
-          reverse: _,
+          reverse: f,
           unit: n,
           edge: o
         }), !0
       }
       case d.yXg.A:
-        if (h && f(t, {
+        if (h && _(t, {
             ctrl: !0
           })) {
           let t = u.bN.getCurrentBlock(e);
@@ -159,7 +159,7 @@ function p(e) {
         }
         break;
       case d.yXg.E:
-        if (h && f(t, {
+        if (h && _(t, {
             ctrl: !0
           })) {
           let t = u.bN.getCurrentBlock(e);
@@ -179,12 +179,12 @@ function p(e) {
       case d.yXg.DELETE:
       case d.yXg.K:
         let m = t.which === d.yXg.BACKSPACE;
-        if ((!h && t.which !== d.yXg.K && f(t, {
+        if ((!h && t.which !== d.yXg.K && _(t, {
             ctrl: !0,
             shift: !0
-          }) || h && t.which !== d.yXg.K && f(t, {
+          }) || h && t.which !== d.yXg.K && _(t, {
             cmd: !0
-          }) || h && t.which === d.yXg.K && f(t, {
+          }) || h && t.which === d.yXg.K && _(t, {
             ctrl: !0
           })) && null != e.selection) {
           let [t, n] = u.M8.edges(e.selection), [r, i] = u.bN.node(e, [m ? t.path[0] : n.path[0]]);

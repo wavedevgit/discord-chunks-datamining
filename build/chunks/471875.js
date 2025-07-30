@@ -17,8 +17,8 @@ function c(e) {
       return -1 !== e.input.indexOf(n, t)
     },
     d = t,
-    _ = "<>",
-    f = "</>",
+    f = "<>",
+    _ = "</>",
     p = /<[A-Za-z0-9\\._:-]+\s*\/>/,
     h = /<[A-Za-z0-9\\._:-]+/,
     m = /\/[A-Za-z0-9\\._:-]+>|\/>/,
@@ -299,8 +299,8 @@ function c(e) {
         relevance: 0
       }, {
         variants: [{
-          begin: _,
-          end: f
+          begin: f,
+          end: _
         }, {
           match: p
         }, {
@@ -355,7 +355,7 @@ e.exports = function(e) {
         3: "title.class"
       }
     },
-    _ = {
+    f = {
       beginKeywords: "interface",
       end: /\{/,
       excludeEnd: !0,
@@ -365,7 +365,7 @@ e.exports = function(e) {
       },
       contains: [a.exports.CLASS_REFERENCE]
     },
-    f = {
+    _ = {
       className: "meta",
       relevance: 10,
       begin: /^\s*['"]use strict['"]/
@@ -392,7 +392,7 @@ e.exports = function(e) {
     b = Object.assign({}, E, {
       match: i.concat(o, i.lookahead(/\s*\?:/))
     });
-  return a.exports.PARAMS_CONTAINS.push([a.exports.CLASS_REFERENCE, E, b]), a.contains = a.contains.concat([m, d, _, b]), g(a, "shebang", e.SHEBANG()), g(a, "use_strict", f), a.contains.find(e => "func.def" === e.label).relevance = 0, Object.assign(a, {
+  return a.exports.PARAMS_CONTAINS.push([a.exports.CLASS_REFERENCE, E, b]), a.contains = a.contains.concat([m, d, f, b]), g(a, "shebang", e.SHEBANG()), g(a, "use_strict", _), a.contains.find(e => "func.def" === e.label).relevance = 0, Object.assign(a, {
     name: "TypeScript",
     aliases: ["ts", "tsx", "mts", "cts"]
   }), a

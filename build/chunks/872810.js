@@ -23,8 +23,8 @@ var r = n(512722),
   c = n(569545),
   u = n(525925),
   d = n(522474),
-  _ = n(543882),
-  f = n(199902),
+  f = n(543882),
+  _ = n(199902),
   p = n(314897),
   h = n(592125),
   m = n(430824),
@@ -95,7 +95,7 @@ function D(e, t) {
   } = e;
   if (null != n && w(n, r)) return;
   let i = (0, c.V9)(e),
-    a = (null == t ? void 0 : t.forceMultiple) || f.Z.getAllActiveStreamsForChannel(r).filter(e => {
+    a = (null == t ? void 0 : t.forceMultiple) || _.Z.getAllActiveStreamsForChannel(r).filter(e => {
       let {
         ownerId: t
       } = e;
@@ -147,7 +147,7 @@ function k(e) {
   })
 }
 async function j(e, t, n) {
-  if (!_.Z.shouldFetchPreview(e, t, n)) return;
+  if (!f.Z.shouldFetchPreview(e, t, n)) return;
   let r = (0, c.V9)({
     streamType: null != e ? S.lo.GUILD : S.lo.CALL,
     guildId: e,
@@ -213,6 +213,6 @@ function B(e, t) {
 
 function V() {
   let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0],
-    t = f.Z.getCurrentUserActiveStream();
+    t = _.Z.getCurrentUserActiveStream();
   null != t && M((0, c.V9)(t), e)
 }

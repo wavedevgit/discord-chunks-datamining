@@ -21,13 +21,13 @@ function c(e, t, n) {
 }
 let u = [],
   d = !1,
-  _ = new Promise(e => {
+  f = new Promise(e => {
     r = () => {
       e(), r = null
     }
   });
 
-function f(e, t) {
+function _(e, t) {
   let n = null;
   return 0 === e ? function() {
     clearImmediate(n), n = setImmediate(t)
@@ -73,7 +73,7 @@ class p {
         i = () => {
           r !== l.Z.getChangeSentinel() && (r = l.Z.getChangeSentinel(), !1 !== t() && this.emitChange())
         };
-      i = f(null != n ? n : 0, i), e.forEach(e => e.addChangeListener(i))
+      i = _(null != n ? n : 0, i), e.forEach(e => e.addChangeListener(i))
     } else e.forEach(e => {
       e._syncWiths.push({
         func: t,
@@ -102,4 +102,4 @@ class p {
     }), c(this, "addChangeListener", this._changeCallbacks.add), c(this, "addConditionalChangeListener", this._changeCallbacks.addConditional), c(this, "removeChangeListener", this._changeCallbacks.remove), c(this, "addReactChangeListener", this._reactChangeCallbacks.add), c(this, "removeReactChangeListener", this._reactChangeCallbacks.remove), this._dispatcher = e, this._dispatchToken = this._dispatcher.createToken(), this.registerActionHandlers(null != t ? t : {}, n), u.push(this), d && this.initializeIfNeeded()
   }
 }
-c(p, "displayName", void 0), c(p, "initialized", _)
+c(p, "displayName", void 0), c(p, "initialized", f)

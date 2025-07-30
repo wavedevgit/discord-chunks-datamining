@@ -13,8 +13,8 @@ var i = n(120356),
   c = n(833664),
   u = n(420660),
   d = n(100527),
-  _ = n(906732),
-  f = n(379357),
+  f = n(906732),
+  _ = n(379357),
   p = n(264832),
   h = n(358696),
   m = n(649700),
@@ -95,7 +95,7 @@ function Y(e) {
     appContext: z
   } = e, q = (0, g.Dt)(), X = (0, g.Dt)(), {
     analyticsLocations: Q
-  } = (0, _.ZP)(d.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), {
+  } = (0, f.ZP)(d.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), {
     themeType: J
   } = (0, A.z)(), $ = (0, m.Z)({
     activity: i,
@@ -112,7 +112,7 @@ function Y(e) {
   }), en = (0, T.Z)(i), er = null != en.text && "" !== en.text, {
     largeImage: ei,
     smallImage: ea
-  } = (0, f.FO)(i, V), eo = (0, M.Z)({
+  } = (0, _.FO)(i, V), eo = (0, M.Z)({
     location: "UserProfileActivityCard",
     user: t,
     currentUser: n,
@@ -272,7 +272,7 @@ function Y(e) {
         text: i.state
       })
     }) : null
-  }, e_ = () => {
+  }, ef = () => {
     if (!(0, S.Z)(i)) return null;
     let {
       start: e,
@@ -282,7 +282,7 @@ function Y(e) {
       start: e,
       end: t
     })
-  }, ef = () => null == eo ? (0, r.jsxs)("div", {
+  }, e_ = () => null == eo ? (0, r.jsxs)("div", {
     children: [el(), ec(), eu()]
   }) : (0, r.jsxs)(o.P3F, {
     className: B.clickableText,
@@ -308,7 +308,7 @@ function Y(e) {
       application: V
     })
   });
-  return (0, r.jsx)(_.Gt, {
+  return (0, r.jsx)(f.Gt, {
     value: Q,
     children: (0, r.jsxs)(R.Z, {
       ref: et,
@@ -333,11 +333,11 @@ function Y(e) {
           className: B.content,
           children: [!t.bot && es(), (0, r.jsxs)("div", {
             className: B.details,
-            children: [ef(), !t.bot && (0, r.jsx)(C.Z, {
+            children: [e_(), !t.bot && (0, r.jsx)(C.Z, {
               user: t,
               activity: i,
               className: B.badges
-            }), e_(), J === k.lY.MODAL_V2 && eh()]
+            }), ef(), J === k.lY.MODAL_V2 && eh()]
           }), J === k.lY.MODAL && eh()]
         }), ep()]
       }), J !== k.lY.MODAL && J !== k.lY.MODAL_V2 && eh()]

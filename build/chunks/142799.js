@@ -73,7 +73,7 @@ e.exports = function(e) {
     c = "[0-9](_?[0-9])*",
     u = `(\\b(${c}))?\\.(${c})|\\b(${c})\\.`,
     d = `\\b|${r.join("|")}`,
-    _ = {
+    f = {
       className: "number",
       relevance: 0,
       variants: [{
@@ -92,7 +92,7 @@ e.exports = function(e) {
         begin: `\\b(${c})[jJ](?=${d})`
       }]
     },
-    f = {
+    _ = {
       className: "comment",
       begin: t.lookahead(/# type:/),
       end: /$/,
@@ -117,16 +117,16 @@ e.exports = function(e) {
         excludeBegin: !0,
         excludeEnd: !0,
         keywords: i,
-        contains: ["self", a, _, l, e.HASH_COMMENT_MODE]
+        contains: ["self", a, f, l, e.HASH_COMMENT_MODE]
       }]
     };
-  return o.contains = [l, _, a], {
+  return o.contains = [l, f, a], {
     name: "Python",
     aliases: ["py", "gyp", "ipython"],
     unicodeRegex: !0,
     keywords: i,
     illegal: /(<\/|\?)|=>/,
-    contains: [a, _, {
+    contains: [a, f, {
       scope: "variable.language",
       match: /\bself\b/
     }, {
@@ -135,7 +135,7 @@ e.exports = function(e) {
     }, {
       match: /\bor\b/,
       scope: "keyword"
-    }, l, f, e.HASH_COMMENT_MODE, {
+    }, l, _, e.HASH_COMMENT_MODE, {
       match: [/\bdef/, /\s+/, n],
       scope: {
         1: "keyword",
@@ -157,7 +157,7 @@ e.exports = function(e) {
       className: "meta",
       begin: /^[\t ]*@/,
       end: /(?=#)|$/,
-      contains: [_, p, l]
+      contains: [f, p, l]
     }]
   }
 }

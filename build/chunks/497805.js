@@ -23,7 +23,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function _(e) {
   return e
 }
 
-function f(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -70,7 +70,7 @@ async function g(e) {
       customStatusPrompt: y,
       disableActionsForPreview: O = !1
     } = e,
-    v = f(e, ["userId", "section", "subsection", "guildId", "channelId", "showGuildProfile", "appContext", "customStatusPrompt", "disableActionsForPreview"]);
+    v = _(e, ["userId", "section", "subsection", "guildId", "channelId", "showGuildProfile", "appContext", "customStatusPrompt", "disableActionsForPreview"]);
   let I = l.default.getUser(a);
   if (null == I) return;
   let T = l.default.getCurrentUser();
@@ -80,7 +80,7 @@ async function g(e) {
     } = (0, c.q)({
       location: "UserProfileModalManager"
     }) ? await Promise.all([n.e("1268"), n.e("82412"), n.e("62880"), n.e("37048"), n.e("43473")]).then(n.bind(n, 866035)): await Promise.all([n.e("1268"), n.e("82412"), n.e("62880"), n.e("37048"), n.e("11678")]).then(n.bind(n, 678780));
-    return t => (0, r.jsx)(e, _({
+    return t => (0, r.jsx)(e, f({
       user: I,
       currentUser: T,
       guildId: p,

@@ -4,7 +4,7 @@ n.d(t, {
   NX: () => d,
   WS: () => u,
   l5: () => c,
-  qB: () => f
+  qB: () => _
 });
 var r = n(106351),
   i = n(442837),
@@ -23,17 +23,17 @@ function c(e) {
 }
 
 function u(e) {
-  return _(e, o.Z)
+  return f(e, o.Z)
 }
 
 function d(e) {
-  return (0, i.e7)([a.Z, o.Z], () => _(a.Z.getChannel(e), o.Z))
+  return (0, i.e7)([a.Z, o.Z], () => f(a.Z.getChannel(e), o.Z))
 }
 
-function _(e, t) {
+function f(e, t) {
   return null != e && void 0 !== e && !!c(e) && (null == e.guild_id || !!t.can(s.Pl.USE_EMBEDDED_ACTIVITIES, e)) && !0
 }
 
-function f() {
+function _() {
   return !1
 }

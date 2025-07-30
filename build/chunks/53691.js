@@ -14,7 +14,7 @@ var i = n(120356),
   u = n(474936),
   d = n(888358);
 
-function _(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,14 +23,14 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
@@ -41,7 +41,7 @@ function p(e) {
     showUpsell: t,
     text: n,
     textVariant: i,
-    button: _,
+    button: f,
     buttonAnalyticsObject: p,
     className: h,
     buttonStyles: m,
@@ -59,7 +59,7 @@ function p(e) {
     }
   });
   return (0, r.jsxs)(o.animated.div, {
-    style: f({}, v),
+    style: _({}, v),
     className: a()(d.upsellContainer, {
       [d.upsellContainerShadow]: E,
       [d.upsellContainerFloating]: "floating" === b,
@@ -79,17 +79,17 @@ function p(e) {
       color: "header-primary",
       className: d.upsellText,
       children: n
-    }), "string" == typeof _ ? (0, r.jsx)(c.Z, {
+    }), "string" == typeof f ? (0, r.jsx)(c.Z, {
       size: y,
       className: d.upsellButton,
       shinyButtonClassName: null != m ? m : d.upsellButton,
       subscriptionTier: u.Si.TIER_2,
       textOptions: {
-        textOverride: _
+        textOverride: f
       },
       premiumModalAnalyticsLocation: p,
       tabIndex: t ? 0 : -1,
       onSubscribeModalClose: g
-    }) : _]
+    }) : f]
   })
 }

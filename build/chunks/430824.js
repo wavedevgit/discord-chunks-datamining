@@ -21,7 +21,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -33,18 +33,18 @@ function _(e) {
   }
   return e
 }
-class f extends i.fE {
+class _ extends i.fE {
   getGuildCount() {
     return this.length()
   }
   constructor(...e) {
     super(...e), d(this, "getGuild", e => {
       if (null != e) return e === c.I_8 ? u.g : this.get(e)
-    }), d(this, "getGuilds", this.memoized(e => _({}, e))), d(this, "getGuildsArray", this.memoized(e => Object.values(e))), d(this, "getGuildIds", this.memoized(e => s.default.keys(e)))
+    }), d(this, "getGuilds", this.memoized(e => f({}, e))), d(this, "getGuildsArray", this.memoized(e => Object.values(e))), d(this, "getGuildIds", this.memoized(e => s.default.keys(e)))
   }
 }
-d(f, "displayName", "GuildStore");
-let p = new f({
+d(_, "displayName", "GuildStore");
+let p = new _({
   BACKGROUND_SYNC: (e, t) => {
     let {
       guilds: n

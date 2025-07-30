@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(680018),
   u = n(146187),
   d = n(861066),
-  _ = n(179538),
-  f = n(755721),
+  f = n(179538),
+  _ = n(755721),
   p = n(481060),
   h = n(153867),
   m = n(230711),
@@ -292,7 +292,7 @@ function $(e) {
       },
       subscriptionTier: k.Si.TIER_2,
       showGradient: !0,
-      color: f.Tt.BRAND
+      color: _.Tt.BRAND
     })]
   })
 }
@@ -311,7 +311,7 @@ function ee(e) {
     className: G.footerContainer,
     children: [(0, r.jsx)(Q, {
       type: "no-text"
-    }), (0, r.jsx)(_.A, {
+    }), (0, r.jsx)(f.A, {
       variant: "secondary",
       onClick: o,
       text: U.intl.string(U.t["13/7kZ"])
@@ -320,7 +320,7 @@ function ee(e) {
       onApply: t
     }) : (0, r.jsx)(I.Z, {
       className: G.subscribeButton,
-      size: f.zx.Sizes.MEDIUM,
+      size: _.zx.Sizes.MEDIUM,
       subscriptionTier: k.Si.TIER_2,
       showGradient: !0,
       premiumModalAnalyticsLocation: {
@@ -342,32 +342,32 @@ function et(e) {
     isCoachmark: o
   } = e, u = P.M.useExperiment({
     location: "ClientThemeColorPickerTools"
-  }).enabled, d = (0, R.jJ)(), _ = i.useRef(!1), {
-    colors: f,
+  }).enabled, d = (0, R.jJ)(), f = i.useRef(!1), {
+    colors: _,
     chassisMixAmount: m,
     gradientAngle: v,
     setColors: I,
     setChassisMixAmount: T,
     setGradientAngle: C
-  } = (0, N.Ig)(), [x, k] = i.useState(null != (t = f[0]) ? t : N.Dp), j = (0, s.e7)([A.Z], () => A.Z.theme), B = (0, O.Nj)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), {
+  } = (0, N.Ig)(), [x, k] = i.useState(null != (t = _[0]) ? t : N.Dp), j = (0, s.e7)([A.Z], () => A.Z.theme), B = (0, O.Nj)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), {
     analyticsLocations: V
   } = (0, b.ZP)(E.Z.CUSTOM_THEMES_EDITOR), F = async () => {
-    _.current = !0, await (0, h.ZI)({
+    f.current = !0, await (0, h.ZI)({
       theme: j,
       customUserThemeSettings: {
-        colors: f,
+        colors: _,
         gradientColorStops: [],
         gradientAngle: v,
         baseMix: m
       }
-    }), (0, w.u7)(f, m, v, j, V), null == a || a(M.L.TAKE_ACTION), B || (0, O.Q3)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, y.Ll)(), (0, S.UD)()
+    }), (0, w.u7)(_, m, v, j, V), null == a || a(M.L.TAKE_ACTION), B || (0, O.Q3)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, y.Ll)(), (0, S.UD)()
   }, Z = () => {
     d(R._m.RESET_BUTTON), (0, w.uf)()
-  }, H = f.length > 0;
+  }, H = _.length > 0;
   return (i.useEffect(() => () => {
-    _.current || d(R._m.EDITOR_CLOSE)
+    f.current || d(R._m.EDITOR_CLOSE)
   }, [d]), (0, g.ZP)(() => {
-    o || (0, R.lT)(f, x, I)
+    o || (0, R.lT)(_, x, I)
   }), u) ? (0, r.jsx)("div", {
     className: G.container,
     "data-app-right-panel": !0,
@@ -381,18 +381,18 @@ function et(e) {
             isCoachmark: o
           }), (0, r.jsx)(L.o, {}), (0, r.jsx)(D.U, {
             onChange: e => {
-              k(e), 0 === f.length && (0, R.lT)(f, e, I)
+              k(e), 0 === _.length && (0, R.lT)(_, e, I)
             },
             value: x,
-            colors: f,
+            colors: _,
             setColors: I
-          }), f.length > 1 && (0, r.jsx)(q, {
+          }), _.length > 1 && (0, r.jsx)(q, {
             gradientAngle: v,
             setGradientAngle: C
           }), (0, r.jsx)(X, {
             chassisMixAmount: m,
             setChassisMixAmount: e => {
-              T(e), 0 === f.length && (0, R.lT)(f, x, I)
+              T(e), 0 === _.length && (0, R.lT)(_, x, I)
             }
           }), (0, r.jsx)(c.z, {
             variant: "secondary",

@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Mg: () => f,
+  Mg: () => _,
   eD: () => u,
-  g8: () => _,
+  g8: () => f,
   qQ: () => p
 }), n(388685), n(472816), n(794429);
 var r = n(512722),
@@ -55,7 +55,7 @@ var u = function(e) {
 function d() {
   return Math.floor(0x100000000 * Math.random())
 }
-class _ {
+class f {
   getSnapshot() {
     let e = {};
     for (let t in this.nodes) {
@@ -152,7 +152,7 @@ class _ {
   }
 }
 
-function f(e, t) {
+function _(e, t) {
   return {
     type: "guild",
     id: e,

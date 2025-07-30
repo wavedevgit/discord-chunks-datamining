@@ -11,8 +11,8 @@ var r, i = n(442837),
   c = n(430824),
   u = n(944486),
   d = n(246946),
-  _ = n(594174),
-  f = n(483360),
+  f = n(594174),
+  _ = n(483360),
   p = n(892880),
   h = n(51144),
   m = n(607802),
@@ -101,17 +101,17 @@ function R(e, t) {
     query: c,
     mode: u,
     tokens: d,
-    cursorScope: _
+    cursorScope: f
   } = a, {
-    autocompletes: f
+    autocompletes: _
   } = a;
-  f = U(e, u, d), O[r] = N({
+  _ = U(e, u, d), O[r] = N({
     searchContext: e,
     query: c,
     mode: u,
     tokens: d,
-    cursorScope: _,
-    autocompletes: f
+    cursorScope: f,
+    autocompletes: _
   }), K.emitChange()
 }
 
@@ -120,7 +120,7 @@ function P(e) {
     n = [];
   for (let r of e) {
     if (n.length >= t) break;
-    let e = _.default.getUser(r.id);
+    let e = f.default.getUser(r.id);
     if (null == e) continue;
     let i = h.ZP.getUserTag(e);
     null != i && n.push({
@@ -194,7 +194,7 @@ function L(e) {
     else {
       if (null == o || 0 === p.length) {
         let t = u.Z.getCurrentlySelectedChannelId(s.guildId);
-        e.results = f.ZP.getRecentlyTalked(t, I).map(e => {
+        e.results = _.ZP.getRecentlyTalked(t, I).map(e => {
           let {
             record: t
           } = e;
@@ -216,7 +216,7 @@ function L(e) {
     }) : []
   }
   if (null != i && b && (0, g.co)(p)) {
-    let e = _.default.getCurrentUser();
+    let e = f.default.getCurrentUser();
     null != e && (i = i.filter(t => {
       let {
         user: n
@@ -268,19 +268,19 @@ function k(e, t) {
         searchContext: t,
         maxResults: 1
       })) ? void 0 : r[0],
-      _ = null == (l = g.ZP[E.dCx.FILTER_ON]) || null == (s = l.getAutocompletions) || null == (o = s.call(l, {
+      f = null == (l = g.ZP[E.dCx.FILTER_ON]) || null == (s = l.getAutocompletions) || null == (o = s.call(l, {
         query: n,
         searchContext: t,
         maxResults: 1
       })) ? void 0 : o[0],
-      f = null == (d = g.ZP[E.dCx.FILTER_AFTER]) || null == (u = d.getAutocompletions) || null == (c = u.call(d, {
+      _ = null == (d = g.ZP[E.dCx.FILTER_AFTER]) || null == (u = d.getAutocompletions) || null == (c = u.call(d, {
         query: n,
         searchContext: t,
         maxResults: 1
       })) ? void 0 : c[0];
     if (null == e) return null;
     let p = [e];
-    return null != _ && p.push(_), null != f && p.push(f), {
+    return null != f && p.push(f), null != _ && p.push(_), {
       group: E.rtL.DATES,
       results: p
     }

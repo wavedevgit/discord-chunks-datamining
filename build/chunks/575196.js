@@ -14,8 +14,8 @@ let l = "custom-theme-background",
   c = .05,
   u = .9,
   d = 30,
-  _ = .7,
-  f = 60,
+  f = .7,
+  _ = 60,
   p = .4,
   h = 30,
   m = -.2,
@@ -37,8 +37,8 @@ function O(e, t, n, r) {
       dark: i()(v).set("hsl.s", 1).set("hsl.l", c)
     },
     N = 100 - n,
-    C = "\n      --custom-theme-background: ".concat(T, ";\n      ", "--custom-background-gradient-chat-opacity-base-light", ": 0.95;\n      ", "--custom-background-gradient-highest-opacity-base-light", ": 1.0;\n      ", "--custom-background-gradient-opacity-mix-amount", ": ").concat(((d + _ * N) / 100).toFixed(2), ";\n      ", "--custom-theme-border-color-amount", ": 5%;\n      "),
-    R = S ? "\n      ".concat(s.Yk.THEME_BASE_MIX_AMOUNT, ": ").concat(f + p * N, "%;\n      ").concat(s.Yk.THEME_TEXT_MIX_AMOUNT, ": ").concat(g, "%;\n    ") : "\n      ".concat(s.Yk.THEME_BASE_MIX_AMOUNT, ": ").concat(h + m * n, "%;\n      ").concat(s.Yk.THEME_TEXT_MIX_AMOUNT, ": ").concat(E, "%;\n    "),
+    C = "\n      --custom-theme-background: ".concat(T, ";\n      ", "--custom-background-gradient-chat-opacity-base-light", ": 0.95;\n      ", "--custom-background-gradient-highest-opacity-base-light", ": 1.0;\n      ", "--custom-background-gradient-opacity-mix-amount", ": ").concat(((d + f * N) / 100).toFixed(2), ";\n      ", "--custom-theme-border-color-amount", ": 5%;\n      "),
+    R = S ? "\n      ".concat(s.Yk.THEME_BASE_MIX_AMOUNT, ": ").concat(_ + p * N, "%;\n      ").concat(s.Yk.THEME_TEXT_MIX_AMOUNT, ": ").concat(g, "%;\n    ") : "\n      ".concat(s.Yk.THEME_BASE_MIX_AMOUNT, ": ").concat(h + m * n, "%;\n      ").concat(s.Yk.THEME_TEXT_MIX_AMOUNT, ": ").concat(E, "%;\n    "),
     P = "\n      ".concat(s.Yk.DARK_THEME_BASE_COLOR, ": ").concat(A.dark.css(), ";\n      ").concat(s.Yk.DARK_THEME_BASE_COLOR_HSL, ": ").concat((0, s.dw)(A.dark), ";\n      ").concat(s.Yk.DARK_THEME_TEXT_COLOR, ": ").concat(i()(v).set("hsl.l", ((100 - b * N) / 100).toFixed(2)).css(), ";\n    "),
     w = "\n      ".concat(s.Yk.LIGHT_THEME_BASE_COLOR, ": ").concat(A.light.css(), ";\n      ").concat(s.Yk.LIGHT_THEME_BASE_COLOR_HSL, ": ").concat((0, s.dw)(A.light), ";\n      ").concat(s.Yk.LIGHT_THEME_TEXT_COLOR, ": ").concat(i()(I).set("hsl.l", (y * N / 100).toFixed(2)).css(), ";\n    ");
   return ".".concat(l, " {\n      ").concat(C, "\n      ").concat(R, "\n      ").concat(P, "\n      ").concat(w, "\n      }")

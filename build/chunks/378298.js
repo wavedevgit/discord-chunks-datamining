@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Dl: () => _,
+  Dl: () => f,
   Ms: () => l,
   Ot: () => u,
   T: () => s,
@@ -58,7 +58,7 @@ function d(e) {
   })
 }
 
-function _(e) {
+function f(e) {
   return r.tn.post({
     url: o.ANM.ADD_SAFETY_WARNING(e),
     body: {

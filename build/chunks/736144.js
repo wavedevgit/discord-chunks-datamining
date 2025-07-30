@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => _
 });
 var r = n(255367),
   i = n(73800),
@@ -33,7 +33,7 @@ function d(e) {
   return e
 }
 
-function _(e) {
+function f(e) {
   let {
     confettiSpawnRef: t,
     shouldFire: n
@@ -43,9 +43,9 @@ function _(e) {
   }, [s, r, u, n]), null
 }
 
-function f(e) {
+function _(e) {
   return (0, r.jsx)(s.Z, {
     confettiLocation: e.confettiLocation,
-    children: (0, r.jsx)(_, d({}, e))
+    children: (0, r.jsx)(f, d({}, e))
   })
 }

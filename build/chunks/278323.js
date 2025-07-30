@@ -22,8 +22,8 @@ let d = {
       closed: l = !1,
       exePath: c = null,
       voiceChannelId: d = null,
-      sessionId: _ = null,
-      mediaSessionId: f = null
+      sessionId: f = null,
+      mediaSessionId: _ = null
     } = e;
     i.Z.wait(() => i.Z.dispatch({
       type: "ACTIVITY_UPDATE_START",
@@ -41,8 +41,8 @@ let d = {
         closed: l,
         exePath: c,
         voice_channel_id: d,
-        session_id: _,
-        media_session_id: f
+        session_id: f,
+        media_session_id: _
       },
       retries: 1,
       oldFormErrors: !0,
@@ -76,8 +76,8 @@ let d = {
       location: l
     } = e, d = s.Z.getChannel(t);
     if (null == d) return Promise.resolve(null);
-    let _ = o.ZP.parse(d, null != i ? i : "");
-    return c.Z.sendMessage(d.id, _, !1, {
+    let f = o.ZP.parse(d, null != i ? i : "");
+    return c.Z.sendMessage(d.id, f, !1, {
       activityAction: {
         type: n,
         activity: r

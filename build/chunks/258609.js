@@ -19,8 +19,8 @@ function l(e, t, n) {
 let c = null,
   u = null,
   d = new Set,
-  _ = {},
   f = {},
+  _ = {},
   p = new Set;
 
 function h(e) {
@@ -65,10 +65,10 @@ function b(e) {
     devices: n
   } = e;
   p.delete(t);
-  let r = _[t] = {},
+  let r = f[t] = {},
     i = {};
-  for (let e of n) r[e.id] = e, f[t] === e.id && (i[t] = e.id);
-  f = i
+  for (let e of n) r[e.id] = e, _[t] === e.id && (i[t] = e.id);
+  _ = i
 }
 
 function y(e) {
@@ -83,28 +83,28 @@ function O(e) {
     platform: t,
     deviceId: n
   } = e;
-  f[t] = n
+  _[t] = n
 }
 let v = Object.freeze({});
 class I extends(r = i.ZP.DeviceSettingsStore) {
   initialize(e) {
-    null != e && (f = e.lastSelectedDeviceByPlatform), this.waitFor(o.Z, s.Z)
+    null != e && (_ = e.lastSelectedDeviceByPlatform), this.waitFor(o.Z, s.Z)
   }
   getUserAgnosticState() {
     return {
-      lastSelectedDeviceByPlatform: f
+      lastSelectedDeviceByPlatform: _
     }
   }
   getDevicesForPlatform(e) {
     var t;
-    return null != (t = _[e]) ? t : v
+    return null != (t = f[e]) ? t : v
   }
   getLastSelectedDeviceByPlatform(e) {
-    return f[e]
+    return _[e]
   }
   getDevice(e, t) {
     var n;
-    return null == (n = _[e]) ? void 0 : n[t]
+    return null == (n = f[e]) ? void 0 : n[t]
   }
   getFetchingDevices(e) {
     return p.has(e)

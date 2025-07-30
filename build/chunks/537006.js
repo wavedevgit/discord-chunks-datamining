@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(755721),
   u = n(481060),
   d = n(906732),
-  _ = n(335131),
-  f = n(313201),
+  f = n(335131),
+  _ = n(313201),
   p = n(211644),
   h = n(266454),
   m = n(605236),
@@ -109,7 +109,7 @@ function P(e) {
         size: t ? c.zx.Sizes.TINY : c.zx.Sizes.SMALL,
         className: C.upsellButton,
         onClick: () => {
-          (0, _.mK)({
+          (0, f.mK)({
             analyticsLocations: a,
             openInLayer: !1,
             analyticsSource: o
@@ -125,9 +125,9 @@ function w(e) {
     isPremiumUser: t,
     onInteraction: n,
     className: a
-  } = e, c = (0, f.Dt)(), {
+  } = e, c = (0, _.Dt)(), {
     themeType: d
-  } = (0, O.z)(), _ = d === I.lY.MODAL, g = (0, h.Nj)(l.z.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS), E = (0, s.e7)([b.Z], () => b.Z.getGuildId());
+  } = (0, O.z)(), f = d === I.lY.MODAL, g = (0, h.Nj)(l.z.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS), E = (0, s.e7)([b.Z], () => b.Z.getGuildId());
   if (i.useEffect(() => {
       if (!g) return (0, m.kk)(l.z.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS), () => {
         (0, p.gE)({
@@ -152,9 +152,9 @@ function w(e) {
     T = (0, r.jsx)(P, {
       isPremiumUser: t,
       onInteraction: n,
-      tiny: _
+      tiny: f
     });
-  return _ ? (0, r.jsx)("aside", {
+  return f ? (0, r.jsx)("aside", {
     className: o()(C.upsellContainer, a),
     "aria-labelledby": c,
     children: (0, r.jsxs)("div", {

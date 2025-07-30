@@ -21,7 +21,7 @@ function u(e, t, n) {
 }
 let d = new Worker(new URL("/assets/" + n.u("80493"), n.b));
 
-function _(e) {
+function f(e) {
   return new Promise(t => {
     let n = r => {
       let {
@@ -37,7 +37,7 @@ function _(e) {
   })
 }
 
-function f(e) {
+function _(e) {
   let t = [],
     n = e.defaultReactionEmoji;
   if ((null == n ? void 0 : n.emojiId) != null) {
@@ -63,8 +63,8 @@ class p extends r.Z {
     } = e;
     if ((0, l.AB)(t)) return;
     let n = a.Z.getChannel(t);
-    null != n && n.isForumLikeChannel() && f(n).forEach(e => {
-      null != e && 0 !== e.length && _(e)
+    null != n && n.isForumLikeChannel() && _(n).forEach(e => {
+      null != e && 0 !== e.length && f(e)
     })
   }
   constructor(...e) {

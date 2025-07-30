@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(231338),
   u = n(388032),
   d = n(782121),
-  _ = n(744481),
-  f = n(724641),
+  f = n(744481),
+  _ = n(724641),
   p = n(184229),
   h = n(504309);
 let m = function(e) {
@@ -50,8 +50,8 @@ let m = function(e) {
         {
           onNameChange: l,
           onEmailChange: c,
-          onP24BankChange: _,
-          p24BankValue: f,
+          onP24BankChange: f,
+          p24BankValue: _,
           billingAddressInfo: g
         } = e;
       return (0, r.jsxs)("div", {
@@ -79,10 +79,10 @@ let m = function(e) {
           title: u.intl.string(u.t.De3b8v),
           children: [(0, r.jsx)(a.P24BankElement, {
             options: {
-              value: f,
+              value: _,
               style: m
             },
-            onChange: e => _(e.value)
+            onChange: e => f(e.value)
           }), (0, r.jsx)("div", {
             className: d.bankSelectionStub,
             children: (0, r.jsx)("img", {
@@ -99,7 +99,7 @@ let m = function(e) {
         onEPSBankChange: l,
         epsBankValue: c,
         billingAddressInfo: p
-      } = e, h = (0, o.wj)(t) ? _ : f;
+      } = e, h = (0, o.wj)(t) ? f : _;
       return (0, r.jsxs)("div", {
         className: d.body,
         children: [(0, r.jsx)(s.hjN, {

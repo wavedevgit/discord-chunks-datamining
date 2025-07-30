@@ -14,8 +14,8 @@ var r = n(73800),
   u = n(335218),
   d = n.n(u);
 
-function _() {
-  return (_ = Object.assign || function(e) {
+function f() {
+  return (f = Object.assign || function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = arguments[t];
       for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -24,7 +24,7 @@ function _() {
   }).apply(this, arguments)
 }
 
-function f(e, t) {
+function _(e, t) {
   e.prototype = Object.create(t.prototype), e.prototype.constructor = e, p(e, t)
 }
 
@@ -106,7 +106,7 @@ var m = {
     }).map(function(t) {
       return t[e]
     }).reduce(function(e, t) {
-      return _({}, e, t)
+      return f({}, e, t)
     }, {})
   },
   N = function(e, t) {
@@ -144,7 +144,7 @@ var m = {
       });
       for (var a = Object.keys(i), o = 0; o < a.length; o += 1) {
         var s = a[o],
-          l = _({}, r[s], i[s]);
+          l = f({}, r[s], i[s]);
         r[s] = l
       }
       return e
@@ -176,7 +176,7 @@ var m = {
   },
   D = function(e, t) {
     var n;
-    return _({}, e, ((n = {})[t] = void 0, n))
+    return f({}, e, ((n = {})[t] = void 0, n))
   },
   L = [m.NOSCRIPT, m.SCRIPT, m.STYLE],
   x = function(e, t) {
@@ -266,8 +266,8 @@ var m = {
       c = e.titleAttributes,
       u = e.linkTags,
       d = e.metaTags,
-      _ = e.scriptTags,
-      f = {
+      f = e.scriptTags,
+      _ = {
         toComponent: function() {},
         toString: function() {
           return ""
@@ -295,17 +295,17 @@ var m = {
           scriptTags: o.default
         }
       }(e);
-      f = p.priorityMethods, u = p.linkTags, d = p.metaTags, _ = p.scriptTags
+      _ = p.priorityMethods, u = p.linkTags, d = p.metaTags, f = p.scriptTags
     }
     return {
-      priority: f,
+      priority: _,
       base: U(m.BASE, t, r),
       bodyAttributes: U("bodyAttributes", n, r),
       htmlAttributes: U("htmlAttributes", i, r),
       link: U(m.LINK, u, r),
       meta: U(m.META, d, r),
       noscript: U(m.NOSCRIPT, a, r),
-      script: U(m.SCRIPT, _, r),
+      script: U(m.SCRIPT, f, r),
       style: U(m.STYLE, o, r),
       title: U(m.TITLE, {
         title: l,
@@ -361,7 +361,7 @@ var m = {
       var r;
       return (r = e.call(this, n) || this).helmetData = new V(r.props.context, t.canUseDOM), r
     }
-    return f(t, e), t.prototype.render = function() {
+    return _(t, e), t.prototype.render = function() {
       return r.createElement(F.Provider, {
         value: this.helmetData.value
       }, this.props.children)
@@ -423,7 +423,7 @@ var W = function(e, t) {
       function(e, t) {
         void 0 !== e && document.title !== e && (document.title = P(e)), K(m.TITLE, t)
       }(u, d);
-    var _ = {
+    var f = {
         baseTag: W(m.BASE, n),
         linkTags: W(m.LINK, i),
         metaTags: W(m.META, a),
@@ -431,14 +431,14 @@ var W = function(e, t) {
         scriptTags: W(m.SCRIPT, l),
         styleTags: W(m.STYLE, c)
       },
-      f = {},
+      _ = {},
       p = {};
-    Object.keys(_).forEach(function(e) {
-      var t = _[e],
+    Object.keys(f).forEach(function(e) {
+      var t = f[e],
         n = t.newTags,
         r = t.oldTags;
-      n.length && (f[e] = n), r.length && (p[e] = _[e].oldTags)
-    }), t && t(), s(e, f, p)
+      n.length && (_[e] = n), r.length && (p[e] = f[e].oldTags)
+    }), t && t(), s(e, _, p)
   },
   q = null,
   X = function(e) {
@@ -446,7 +446,7 @@ var W = function(e, t) {
       for (var t, n = arguments.length, r = Array(n), i = 0; i < n; i++) r[i] = arguments[i];
       return (t = e.call.apply(e, [this].concat(r)) || this).rendered = !1, t
     }
-    f(t, e);
+    _(t, e);
     var n = t.prototype;
     return n.shouldComponentUpdate = function(e) {
       return !d()(e, this.props)
@@ -460,7 +460,7 @@ var W = function(e, t) {
         i = null,
         a = {
           baseTag: N(["href"], e = n.helmetInstances.get().map(function(e) {
-            var t = _({}, e.props);
+            var t = f({}, e.props);
             return delete t.context, t
           })),
           bodyAttributes: A("bodyAttributes", e),
@@ -497,7 +497,7 @@ var Q = ["children"],
     function t() {
       return e.apply(this, arguments) || this
     }
-    f(t, e);
+    _(t, e);
     var n = t.prototype;
     return n.shouldComponentUpdate = function(e) {
       return !s()(D(this.props, "helmetData"), D(e, "helmetData"))
@@ -519,7 +519,7 @@ var Q = ["children"],
     }, n.flattenArrayTypeChildren = function(e) {
       var t, n = e.child,
         r = e.arrayTypeChildren;
-      return _({}, r, ((t = {})[n.type] = [].concat(r[n.type] || [], [_({}, e.newChildProps, this.mapNestedChildrenToProps(n, e.nestedChildren))]), t))
+      return f({}, r, ((t = {})[n.type] = [].concat(r[n.type] || [], [f({}, e.newChildProps, this.mapNestedChildrenToProps(n, e.nestedChildren))]), t))
     }, n.mapObjectTypeChildren = function(e) {
       var t, n, r = e.child,
         i = e.newProps,
@@ -527,23 +527,23 @@ var Q = ["children"],
         o = e.nestedChildren;
       switch (r.type) {
         case m.TITLE:
-          return _({}, i, ((t = {})[r.type] = o, t.titleAttributes = _({}, a), t));
+          return f({}, i, ((t = {})[r.type] = o, t.titleAttributes = f({}, a), t));
         case m.BODY:
-          return _({}, i, {
-            bodyAttributes: _({}, a)
+          return f({}, i, {
+            bodyAttributes: f({}, a)
           });
         case m.HTML:
-          return _({}, i, {
-            htmlAttributes: _({}, a)
+          return f({}, i, {
+            htmlAttributes: f({}, a)
           });
         default:
-          return _({}, i, ((n = {})[r.type] = _({}, a), n))
+          return f({}, i, ((n = {})[r.type] = f({}, a), n))
       }
     }, n.mapArrayTypeChildrenToProps = function(e, t) {
-      var n = _({}, t);
+      var n = f({}, t);
       return Object.keys(e).forEach(function(t) {
         var r;
-        n = _({}, n, ((r = {})[t] = e[t], r))
+        n = f({}, n, ((r = {})[t] = e[t], r))
       }), n
     }, n.warnOnInvalidChildren = function(e, t) {
       return c()(y.some(function(t) {
@@ -593,13 +593,13 @@ var Q = ["children"],
       var e = this.props,
         t = e.children,
         n = h(e, J),
-        i = _({}, n),
+        i = f({}, n),
         a = n.helmetData;
-      return t && (i = this.mapChildrenToProps(t, i)), !a || a instanceof V || (a = new V(a.context, a.instances)), a ? r.createElement(X, _({}, i, {
+      return t && (i = this.mapChildrenToProps(t, i)), !a || a instanceof V || (a = new V(a.context, a.instances)), a ? r.createElement(X, f({}, i, {
         context: a.value,
         helmetData: void 0
       })) : r.createElement(F.Consumer, null, function(e) {
-        return r.createElement(X, _({}, i, {
+        return r.createElement(X, f({}, i, {
           context: e
         }))
       })

@@ -6,7 +6,7 @@ var r = n(706627),
   s = Math.max,
   l = Math.min;
 e.exports = function(e, t, n) {
-  var c, u, d, _, f, p, h = 0,
+  var c, u, d, f, _, p, h = 0,
     m = !1,
     g = !1,
     E = !0;
@@ -15,11 +15,11 @@ e.exports = function(e, t, n) {
   function b(t) {
     var n = c,
       r = u;
-    return c = u = void 0, h = t, _ = e.apply(r, n)
+    return c = u = void 0, h = t, f = e.apply(r, n)
   }
 
   function y(e) {
-    return h = e, f = setTimeout(I, t), m ? b(e) : _
+    return h = e, _ = setTimeout(I, t), m ? b(e) : f
   }
 
   function O(e) {
@@ -38,27 +38,27 @@ e.exports = function(e, t, n) {
   function I() {
     var e = i();
     if (v(e)) return T(e);
-    f = setTimeout(I, O(e))
+    _ = setTimeout(I, O(e))
   }
 
   function T(e) {
-    return (f = void 0, E && c) ? b(e) : (c = u = void 0, _)
+    return (_ = void 0, E && c) ? b(e) : (c = u = void 0, f)
   }
 
   function S() {
-    return void 0 === f ? _ : T(i())
+    return void 0 === _ ? f : T(i())
   }
 
   function A() {
     var e = i(),
       n = v(e);
     if (c = arguments, u = this, p = e, n) {
-      if (void 0 === f) return y(p);
-      if (g) return clearTimeout(f), f = setTimeout(I, t), b(p)
+      if (void 0 === _) return y(p);
+      if (g) return clearTimeout(_), _ = setTimeout(I, t), b(p)
     }
-    return void 0 === f && (f = setTimeout(I, t)), _
+    return void 0 === _ && (_ = setTimeout(I, t)), f
   }
   return t = a(t) || 0, r(n) && (m = !!n.leading, d = (g = "maxWait" in n) ? s(a(n.maxWait) || 0, t) : d, E = "trailing" in n ? !!n.trailing : E), A.cancel = function() {
-    void 0 !== f && clearTimeout(f), h = 0, c = p = u = f = void 0
+    void 0 !== _ && clearTimeout(_), h = 0, c = p = u = _ = void 0
   }, A.flush = S, A
 }

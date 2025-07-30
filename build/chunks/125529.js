@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -64,28 +64,28 @@ function d(e, t) {
   return i
 }
 
-function _(e) {
+function f(e) {
   var {
     mouseLeaveDelay: t = 100
   } = e, n = u(e, ["mouseLeaveDelay"]);
   let {
     children: o,
     className: l
-  } = n, d = u(n, ["children", "className"]), _ = i.useRef(0), [f, p] = i.useState(!1);
+  } = n, d = u(n, ["children", "className"]), f = i.useRef(0), [_, p] = i.useState(!1);
 
   function h() {
-    clearTimeout(_.current), p(!0)
+    clearTimeout(f.current), p(!0)
   }
 
   function m() {
-    clearTimeout(_.current), _.current = setTimeout(() => p(!1), t)
+    clearTimeout(f.current), f.current = setTimeout(() => p(!1), t)
   }
   return (0, r.jsx)("div", {
     className: l,
     onMouseEnter: 0 !== t ? h : () => {},
     onMouseLeave: 0 !== t ? m : () => {},
     children: (0, r.jsx)(a.u, c(s({
-      forceOpen: f,
+      forceOpen: _,
       disableTooltipPointerEvents: !1
     }, d), {
       children: o

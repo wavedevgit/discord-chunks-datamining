@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => _
 });
 var r = n(255367);
 n(73800);
@@ -22,7 +22,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,14 +35,14 @@ function _(e) {
   return e
 }
 
-function f(e, t, d) {
-  var f;
+function _(e, t, d) {
+  var _;
   let p = (0, s.Cf)(e),
     h = (0, i.e7)([l.default], () => l.default.getId());
   if (null == e) return null;
   let m = (0, o.V9)(e),
-    g = null != (f = c.Z.getVideoStats(m)) ? f : {},
-    E = _({
+    g = null != (_ = c.Z.getVideoStats(m)) ? _ : {},
+    E = f({
       media_session_id: c.Z.getMediaSessionId(m),
       rtc_connection_id: c.Z.getRtcConnectionId(m),
       stream_region: c.Z.getRegion(m),
@@ -53,7 +53,7 @@ function f(e, t, d) {
         let {
           default: t
         } = await n.e("18912").then(n.bind(n, 340140));
-        return n => (0, r.jsx)(t, _({
+        return n => (0, r.jsx)(t, f({
           stream: e,
           streamApplication: p,
           isStreamer: h === (null == e ? void 0 : e.ownerId),

@@ -58,7 +58,7 @@ function d(e) {
         icon: n,
         text: i
       } = e;
-      return (0, r.jsx)(_, {
+      return (0, r.jsx)(f, {
         icon: n,
         text: i
       }, t)
@@ -66,7 +66,7 @@ function d(e) {
   })
 }
 
-function _(e) {
+function f(e) {
   let {
     icon: t,
     text: n

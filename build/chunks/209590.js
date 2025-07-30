@@ -18,13 +18,13 @@ function d(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let _ = "hideSuppressWarning",
-  f = !1,
+let f = "hideSuppressWarning",
+  _ = !1,
   p = !0,
   h = !1;
 
 function m(e) {
-  r = e.sessionId, f = !1
+  r = e.sessionId, _ = !1
 }
 
 function g() {
@@ -35,18 +35,18 @@ function E(e) {
   let {
     voiceStates: t
   } = e;
-  return t.reduce((e, t) => r !== t.sessionId ? e : (f !== t.suppress && (p = !(f = t.suppress)), i !== t.channelId && (i = t.channelId, p = !f), (h || null == t.channelId) && (p = !0), !0), !1)
+  return t.reduce((e, t) => r !== t.sessionId ? e : (_ !== t.suppress && (p = !(_ = t.suppress)), i !== t.channelId && (i = t.channelId, p = !_), (h || null == t.channelId) && (p = !0), !0), !1)
 }
 
 function b(e) {
   let {
     forever: t
   } = e;
-  p = !0, t && (h = !0, s.K.set(_, h))
+  p = !0, t && (h = !0, s.K.set(f, h))
 }
 class y extends(a = o.ZP.Store) {
   initialize() {
-    h = s.K.get(_) || h
+    h = s.K.get(f) || h
   }
   isAFKChannel() {
     let e = c.Z.getChannel(i);

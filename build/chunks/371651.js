@@ -11,8 +11,8 @@ var r, i = n(442837),
   c = n(710845),
   u = n(353926),
   d = n(594190),
-  _ = n(314897),
-  f = n(77498),
+  f = n(314897),
+  _ = n(77498),
   p = n(145597),
   h = n(454991),
   m = n(837268),
@@ -167,21 +167,21 @@ async function J(e) {
       enabledLegacy: c
     } = s,
     u = A(s, ["enabledOOP", "enabledLegacy"]),
-    _ = f.Z.getGameByName(o.name),
+    f = _.Z.getGameByName(o.name),
     p = null != (t = await (0, b.hj)(e, 0)) ? t : o.fullscreenType;
   C.verbose("Tracking game ".concat(e, " for overlay"));
   let h = S(I({}, u), {
     pid: e,
     oopEnabled: l,
     legacyEnabled: c,
-    applicationId: null != (n = null == _ ? void 0 : _.id) ? n : null,
+    applicationId: null != (n = null == f ? void 0 : f.id) ? n : null,
     gameName: null != (r = o.name) ? r : null,
     state: m.mM.INITIALIZING,
     timer: X(),
     fullscreenType: p,
     previousFullscreenType: o.fullscreenType,
     hasChangedRenderMode: !1,
-    supportsOutOfProcess: null == (i = null == _ ? void 0 : _.supportsOutOfProcessOverlay) || i,
+    supportsOutOfProcess: null == (i = null == f ? void 0 : f.supportsOutOfProcessOverlay) || i,
     successfullyShown: !1
   });
   return W(e, h), eD.emitChange(), h
@@ -253,7 +253,7 @@ function $(e, t) {
     overlayMethod: m.gl.Disabled,
     source: m.d0.LEGACY_ENABLED
   });
-  let o = null == (n = f.Z.getGameByName(i.name)) ? void 0 : n.id,
+  let o = null == (n = _.Z.getGameByName(i.name)) ? void 0 : n.id,
     s = (0, b.qc)(i) || y.Z.isLimitedInteractionOverrideEnabled(null != (r = i.id) ? r : o);
   switch (t) {
     case l.Jx.MINIMIZED:
@@ -441,11 +441,11 @@ async function ed(e, t) {
     for (let e of Y()) await et(e), await (0, a._v)(16)
 }
 
-function e_() {
+function ef() {
   ea(), D = !1, k = null, eC()
 }
 
-function ef(e) {
+function e_(e) {
   let {
     legacyEnabled: t,
     oopEnabled: n
@@ -564,7 +564,7 @@ function eP() {
 }
 class ew extends(r = i.ZP.Store) {
   initialize() {
-    this.waitFor(d.ZP, _.default, u.Z, y.Z), this.syncWith([u.Z], eC)
+    this.waitFor(d.ZP, f.default, u.Z, y.Z), this.syncWith([u.Z], eC)
   }
   getDevToolsFocusedPidsWithTimestamp() {
     return B
@@ -639,11 +639,11 @@ class ew extends(r = i.ZP.Store) {
 }
 v(ew, "displayName", "OverlayRenderStore");
 let eD = new ew(o.Z, __OVERLAY__ ? {} : {
-    CONNECTION_OPEN: e_,
+    CONNECTION_OPEN: ef,
     LOGIN: eR,
     LOGOUT: eP,
-    EXPERIMENT_OVERRIDE_BUCKET: e_,
-    OVERLAY_SET_ENABLED: ef,
+    EXPERIMENT_OVERRIDE_BUCKET: ef,
+    OVERLAY_SET_ENABLED: e_,
     GAME_LAUNCH_SUCCESS: ep,
     RUNNING_GAMES_CHANGE: eh,
     RUNNING_GAME_TOGGLE_OVERLAY: em,

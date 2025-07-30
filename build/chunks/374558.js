@@ -35,7 +35,7 @@ function d(e) {
   return e
 }
 
-function _(e, t) {
+function f(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -46,8 +46,8 @@ function _(e, t) {
   return n
 }
 
-function f(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -85,7 +85,7 @@ let m = {
       tooltip: i,
       color: a,
       size: u = g.SIZE_32,
-      icon: _,
+      icon: f,
       onMouseDown: h,
       onClick: m,
       disabled: E,
@@ -98,7 +98,7 @@ let m = {
         var {
           onClick: l
         } = e, g = p(e, ["onClick"]);
-        return (0, r.jsx)(s.P, f(d({}, g), {
+        return (0, r.jsx)(s.P, _(d({}, g), {
           innerRef: t,
           "aria-label": i,
           "aria-disabled": E,
@@ -110,7 +110,7 @@ let m = {
             null == l || l(), m(e)
           },
           focusProps: b,
-          children: _
+          children: f
         }))
       }
     })

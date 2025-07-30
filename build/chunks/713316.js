@@ -13,8 +13,8 @@ var i = n(512722),
   c = n(698708),
   u = n(844068),
   d = n(27034),
-  _ = n(388032),
-  f = n(419667);
+  f = n(388032),
+  _ = n(419667);
 
 function p(e) {
   let {
@@ -27,25 +27,25 @@ function p(e) {
   a()(null != i, "Expected selectedSkuId"), a()(null != p, "Expected application");
   let h = n[i];
   a()(null != h, "Expected sku");
-  let m = _.intl.formatToPlainString(_.t.wK0IbG, {
+  let m = f.intl.formatToPlainString(f.t.wK0IbG, {
     applicationName: p.name,
     itemName: h.name
   });
   return (0, r.jsxs)(d.C3, {
     children: [(0, r.jsx)(u.Z, {}), (0, r.jsx)(c.Z, {}), (0, r.jsxs)("div", {
-      className: f.confirmation,
+      className: _.confirmation,
       children: [(0, r.jsx)(s.X6q, {
         variant: "heading-xxl/bold",
-        className: f.confirmationHeader,
+        className: _.confirmationHeader,
         children: "Success!"
       }), (0, r.jsx)(s.Text, {
         variant: "text-md/normal",
         children: m
       }), (0, r.jsx)("div", {
-        className: f.divider
+        className: _.divider
       }), (0, r.jsx)(o.z, {
         onClick: t,
-        text: _.intl.string(_.t.cpT0Cg)
+        text: f.intl.string(f.t.cpT0Cg)
       })]
     })]
   })

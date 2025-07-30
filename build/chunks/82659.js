@@ -44,13 +44,13 @@ function d(e, t) {
   return n
 }
 
-function _(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function f(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -78,9 +78,9 @@ function h(e) {
     actions: h,
     actionBarInput: m,
     children: g
-  } = e, E = f(e, ["size", "title", "subtitle", "input", "preview", "actions", "actionBarInput", "children"]);
+  } = e, E = _(e, ["size", "title", "subtitle", "input", "preview", "actions", "actionBarInput", "children"]);
   let b = null != t ? t : null != d || null != g ? "md" : "sm";
-  return (0, r.jsxs)(i.I, _(u({}, E), {
+  return (0, r.jsxs)(i.I, f(u({}, E), {
     size: b,
     children: [(0, r.jsx)(l.x, {
       title: n,

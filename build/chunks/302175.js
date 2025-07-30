@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(494497),
   u = n(793030),
   d = n(442837),
-  _ = n(755721),
-  f = n(481060),
+  f = n(755721),
+  _ = n(481060),
   p = n(434650),
   h = n(100527),
   m = n(906732),
@@ -97,15 +97,15 @@ function U(e) {
   }, [t, n.skuId, a]), Z = {
     tension: 400,
     friction: 30
-  }, H = (0, f.q_F)({
+  }, H = (0, _.q_F)({
     transform: B ? "translateX(-50%) translateY(16px) scale(1)" : "translateX(-50%) translateY(24px) scale(1.40)",
     borderRadius: "0px",
     transformOrigin: "center 0%",
     config: Z
-  }), Y = (0, f.q_F)({
+  }), Y = (0, _.q_F)({
     y: B ? -25 : 0,
     config: Z
-  }), W = (0, f.q_F)({
+  }), W = (0, _.q_F)({
     opacity: +!!B,
     transform: B ? "translateY(0)" : "translateY(20px)",
     config: Z
@@ -144,24 +144,24 @@ function U(e) {
       }), (0, r.jsxs)(s.animated.div, {
         style: W,
         className: L.buttonsContainer,
-        children: [(0, r.jsx)(_.zx, {
+        children: [(0, r.jsx)(f.zx, {
           grow: !0,
           onClick: V,
-          color: _.zx.Colors.BRAND,
+          color: f.zx.Colors.BRAND,
           className: L.button,
           children: w.intl.string(w.t["oPAx7+"])
-        }), v && (0, r.jsx)(_.zx, {
+        }), v && (0, r.jsx)(f.zx, {
           grow: !0,
           onClick: F,
-          color: _.zx.Colors.PRIMARY,
+          color: f.zx.Colors.PRIMARY,
           className: L.button,
           children: w.intl.string(w.t.GoCQxc)
         })]
       })]
-    }), !d && !y && (0, r.jsx)(f.IGR, {
+    }), !d && !y && (0, r.jsx)(_.IGR, {
       className: L.topPerksCardNew,
       text: w.intl.string(w.t.y2b7CA)
-    }), y && (0, r.jsx)(f.IGR, {
+    }), y && (0, r.jsx)(_.IGR, {
       className: L.topPerksCardNew,
       text: w.intl.string(w.t.oW0eUV),
       color: l.Z.BG_BRAND

@@ -12,8 +12,8 @@ var r = n(664751),
   c = n(638880),
   u = n(812206),
   d = n(439849),
-  _ = n(510839),
-  f = n(813370),
+  f = n(510839),
+  _ = n(813370),
   p = n(669764),
   h = n(706454),
   m = n(757266),
@@ -113,7 +113,7 @@ async function k(e) {
   } = e;
   if (i) {
     let e = u.Z.getApplication(t);
-    return null != e && (0, f.g)(e) ? ((0, _.s2)({
+    return null != e && (0, _.g)(e) ? ((0, f.s2)({
       applicationId: t
     }), 0) : await (0, c.Z)({
       applicationId: t,

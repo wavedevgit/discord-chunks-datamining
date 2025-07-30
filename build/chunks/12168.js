@@ -13,8 +13,8 @@ var r = n(255367),
   c = n(481060),
   u = n(596454),
   d = n(727637),
-  _ = n(313201),
-  f = n(543241),
+  f = n(313201),
+  _ = n(543241),
   p = n(318766),
   h = n(907040),
   m = n(633302),
@@ -73,9 +73,9 @@ function P(e) {
     isDisabled: n = !1,
     onClick: a,
     className: s
-  } = e, _ = i.useRef(null), f = (0, d.Z)(_);
+  } = e, f = i.useRef(null), _ = (0, d.Z)(f);
   return (0, r.jsx)("span", {
-    ref: _,
+    ref: f,
     children: (0, r.jsx)(c.P3F, {
       onClick: a,
       focusProps: {
@@ -87,7 +87,7 @@ function P(e) {
           value: 0
         },
         to: {
-          value: +!!f
+          value: +!!_
         },
         children: e => {
           let {
@@ -149,7 +149,7 @@ function D(e) {
     recentlyUsedEmojis: b,
     analyticsOverride: T,
     ref: A
-  } = e, D = (0, _.Dt)(), [L, x] = i.useState(!1), M = (0, f.wC)(t.guild_id), k = (0, s.uniqBy)([...M, ...R], "name").filter(e => !E.ZP.isEmojiFilteredOrLocked({
+  } = e, D = (0, f.Dt)(), [L, x] = i.useState(!1), M = (0, _.wC)(t.guild_id), k = (0, s.uniqBy)([...M, ...R], "name").filter(e => !E.ZP.isEmojiFilteredOrLocked({
     emoji: e,
     channel: t,
     intention: C

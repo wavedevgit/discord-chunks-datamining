@@ -24,15 +24,15 @@ var r = n(134432),
   c = n(913663),
   u = n(11513),
   d = n(373228),
-  _ = n(611480),
-  f = n(981631);
+  f = n(611480),
+  _ = n(981631);
 let {
   API_ENDPOINT: p,
   MEDIA_PROXY_ENDPOINT: h,
   PROJECT_ENV: m,
   ASSET_ENDPOINT: g,
   CDN_HOST: E
-} = window.GLOBAL_ENV, b = Object.values(d.og), y = decodeURIComponent(f.ANM.STICKER_ASSET("[\\d]+", "(".concat(b.join("|"), ")"))), O = RegExp("(".concat(location.protocol).concat(g, "|").concat(location.protocol).concat(h, ")(").concat(y, ")"), "ig"), v = RegExp("".concat(location.protocol).concat(p, "(").concat(y, ")"), "ig"), I = e => {
+} = window.GLOBAL_ENV, b = Object.values(d.og), y = decodeURIComponent(_.ANM.STICKER_ASSET("[\\d]+", "(".concat(b.join("|"), ")"))), O = RegExp("(".concat(location.protocol).concat(g, "|").concat(location.protocol).concat(h, ")(").concat(y, ")"), "ig"), v = RegExp("".concat(location.protocol).concat(p, "(").concat(y, ")"), "ig"), I = e => {
   if (null != e.cover_sticker_id) {
     let t = e.stickers.find(t => t.id === e.cover_sticker_id);
     if (null != t) return t
@@ -68,13 +68,13 @@ let {
 }, A = e => null == e ? null : "".concat(e.name, ".").concat(T(e.format_type)), N = function(e) {
   let {
     isPreview: t = !1,
-    size: n = _.lE
+    size: n = f.lE
   } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
   if (null == e.format_type) return null;
   let i = e.format_type;
   e.format_type === d.u3.GIF && t && (i = d.u3.PNG);
   let a = T(i),
-    o = f.ANM.STICKER_ASSET(e.id, a),
+    o = _.ANM.STICKER_ASSET(e.id, a),
     s = a === d.og.WEBP ? "&quality=lossless" : "";
   if ("development" !== m) {
     if (e.format_type === d.u3.LOTTIE) return "".concat(location.protocol).concat(g).concat(o);
@@ -89,7 +89,7 @@ let {
   name: e.name,
   stickers: e.stickers,
   previewSticker: I(e)
-}), P = (e, t) => e === _.yr.ANIMATE_ON_INTERACTION ? t : e !== _.yr.NEVER_ANIMATE, w = (e, t, n, r) => {
+}), P = (e, t) => e === f.yr.ANIMATE_ON_INTERACTION ? t : e !== f.yr.NEVER_ANIMATE, w = (e, t, n, r) => {
   if (o.Z.getUploadCount(n, r) > 0) return !0;
   let i = c.Z.getStickerPreview(n, r);
   if (null != i && i.length > 0) return !0;

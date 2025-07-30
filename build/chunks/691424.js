@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(570140),
   u = n(794295),
   d = n(663993),
-  _ = n(95398),
-  f = n(339085),
+  f = n(95398),
+  _ = n(339085),
   p = n(779699),
   h = n(359875),
   m = n(124072),
@@ -117,7 +117,7 @@ function H(e) {
         channelId: l,
         messageId: c,
         isInteracting: u
-      } = a, d = f.ZP.getDisambiguatedEmojiContext(s).getById(e.emojiId);
+      } = a, d = _.ZP.getDisambiguatedEmojiContext(s).getById(e.emojiId);
       if (null != d) {
         let t = d.require_colons;
         e = F(B({}, e), {
@@ -267,8 +267,8 @@ let K = {
     }, n.key)
   },
   spoiler: {
-    react: (e, t, n) => (0, r.jsx)(_.ZP, {
-      type: _.ZP.Types.TEXT,
+    react: (e, t, n) => (0, r.jsx)(f.ZP, {
+      type: f.ZP.Types.TEXT,
       inline: n.formatInline,
       renderTextElement: (e, t) => null == e || e.type !== u.Z || t ? e : i.cloneElement(e, {
         tabIndex: -1

@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(608787),
   u = n(866442),
   d = n(19602),
-  _ = n(490236),
-  f = n(861066),
+  f = n(490236),
+  _ = n(861066),
   p = n(481060),
   h = n(408886),
   m = n(233398),
@@ -228,7 +228,7 @@ function D(e) {
         children: [null != c && (0, r.jsx)(p.ua7, {
           text: y.intl.string(b.default["8QXO8v"]),
           tooltipClassName: O.eyeDropperTooltip,
-          children: e => (0, r.jsx)(f.h, S(I({
+          children: e => (0, r.jsx)(_.h, S(I({
             variant: "icon-only",
             size: "sm"
           }, e), {
@@ -238,11 +238,11 @@ function D(e) {
           }))
         }), B && (0, r.jsx)(p.ua7, {
           text: y.intl.string(b.default["rTik5+"]),
-          children: e => (0, r.jsx)(f.h, S(I({}, e), {
+          children: e => (0, r.jsx)(_.h, S(I({}, e), {
             variant: "icon-only",
             size: "sm",
             onClick: () => U(v),
-            icon: _.X,
+            icon: f.X,
             "aria-label": y.intl.string(b.default["rTik5+"])
           }))
         })]

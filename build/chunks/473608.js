@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(442837),
   u = n(481060),
   d = n(1585),
-  _ = n(125988),
-  f = n(359135),
+  f = n(125988),
+  _ = n(359135),
   p = n(516817),
   h = n(731896),
   m = n(594174),
@@ -51,7 +51,7 @@ let T = e => {
     } = e, i = (0, c.e7)([m.default], () => m.default.getCurrentUser()), {
       avatarDecorationSrc: a,
       eventHandlers: o
-    } = (0, _.Z)({
+    } = (0, f.Z)({
       user: i,
       onlyAnimateOnHover: !0,
       avatarDecorationOverride: t,
@@ -100,7 +100,7 @@ let T = e => {
       children: (0, r.jsx)(p.Z, {
         nameplate: (0, E.EU)(t),
         hovered: a,
-        placement: f.i.MINI_PREVIEW
+        placement: _.i.MINI_PREVIEW
       })
     })
   },
@@ -110,18 +110,18 @@ let T = e => {
       product: n,
       sku: i,
       fallbackLabel: a
-    } = e, u = null == i ? void 0 : i.id, d = (0, c.e7)([g.Z], () => g.Z.getProduct(null == i ? void 0 : i.id)), _ = null != n ? n : d, [f] = null != (t = null == _ ? void 0 : _.items) ? t : [];
+    } = e, u = null == i ? void 0 : i.id, d = (0, c.e7)([g.Z], () => g.Z.getProduct(null == i ? void 0 : i.id)), f = null != n ? n : d, [_] = null != (t = null == f ? void 0 : f.items) ? t : [];
     return void 0 !== u && u in b.K ? b.K[u].render({
       animationState: "on_hover",
       className: y.externalProductAsset
-    }) : (0, s.EQ)(null == f ? void 0 : f.type).with(l.Z.AVATAR_DECORATION, () => (o()(f.type === l.Z.AVATAR_DECORATION, "ts-match checked the type"), (0, r.jsx)(T, {
-      avatarDecoration: f,
+    }) : (0, s.EQ)(null == _ ? void 0 : _.type).with(l.Z.AVATAR_DECORATION, () => (o()(_.type === l.Z.AVATAR_DECORATION, "ts-match checked the type"), (0, r.jsx)(T, {
+      avatarDecoration: _,
       fallbackLabel: a
-    }))).with(l.Z.PROFILE_EFFECT, () => (o()(f.type === l.Z.PROFILE_EFFECT, "ts-match checked the type"), (0, r.jsx)(S, {
-      profileEffect: f,
+    }))).with(l.Z.PROFILE_EFFECT, () => (o()(_.type === l.Z.PROFILE_EFFECT, "ts-match checked the type"), (0, r.jsx)(S, {
+      profileEffect: _,
       fallbackLabel: a
-    }))).with(l.Z.NAMEPLATE, () => (o()(f.type === l.Z.NAMEPLATE, "ts-match checked the type"), (0, r.jsx)(A, {
-      nameplate: f,
+    }))).with(l.Z.NAMEPLATE, () => (o()(_.type === l.Z.NAMEPLATE, "ts-match checked the type"), (0, r.jsx)(A, {
+      nameplate: _,
       fallbackLabel: a
     }))).otherwise(() => a)
   }

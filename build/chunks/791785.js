@@ -13,8 +13,8 @@ var r = n(255367),
   c = n(481060),
   u = n(570140),
   d = n(496929),
-  _ = n(366939),
-  f = n(16084),
+  f = n(366939),
+  _ = n(16084),
   p = n(975608),
   h = n(493773),
   m = n(89057),
@@ -118,8 +118,8 @@ function J(e) {
     skuId: ec,
     onStepChange: eu,
     shakeWhilePurchasing: ed = !1,
-    isLargeModal: e_ = !1,
-    isDynamicModal: ef = !1,
+    isLargeModal: ef = !1,
+    isDynamicModal: e_ = !1,
     hideShadow: ep = !1,
     returnRef: eh,
     skipConfirm: em = !1,
@@ -154,7 +154,7 @@ function J(e) {
     emojiConfetti: eH,
     soundEffect: eY
   } = (0, w.wD)(), eW = c.CgR.SMALL;
-  e_ || (null == eB ? void 0 : eB.isLargeModal) ? eW = c.CgR.LARGE : (eR === L.h8.ADD_PAYMENT_STEPS || ef || (null == eB ? void 0 : eB.isDynamicModal)) && (eW = c.CgR.DYNAMIC);
+  ef || (null == eB ? void 0 : eB.isLargeModal) ? eW = c.CgR.LARGE : (eR === L.h8.ADD_PAYMENT_STEPS || e_ || (null == eB ? void 0 : eB.isDynamicModal)) && (eW = c.CgR.DYNAMIC);
   let eK = (0, v.Ng)(),
     ez = null != j && !eV && (0, v.Wp)(eK, j),
     [eq, eX] = i.useState(K({
@@ -230,7 +230,7 @@ function J(e) {
         } = t,
         o = Date.now();
       if (e === L.h8.CONFIRM && (eJ(), null == m || m(i), em)) return void e$();
-      eA(e), null == eu || eu(e), eN(null), eS(null), e === L.h8.ADD_PAYMENT_STEPS && (u.Z.wait(_.fw), u.Z.wait(f.pB));
+      eA(e), null == eu || eu(e), eN(null), eS(null), e === L.h8.ADD_PAYMENT_STEPS && (u.Z.wait(f.fw), u.Z.wait(_.pB));
       let s = null != n ? n : eR;
       if (null === s || a) return void C.default.track(F.rMx.PAYMENT_FLOW_LOADED, q(K({}, eq), {
         initial_step: null != s ? s : e,
@@ -286,8 +286,8 @@ function J(e) {
       parentComponent: "PaymentModal",
       children: (0, r.jsx)(V.ZP, K({
         header: e3,
-        isLargeModal: e_ || (null == eB ? void 0 : eB.isLargeModal),
-        isDynamicModal: ef || (null == eB ? void 0 : eB.isDynamicModal)
+        isLargeModal: ef || (null == eB ? void 0 : eB.isLargeModal),
+        isDynamicModal: e_ || (null == eB ? void 0 : eB.isDynamicModal)
       }, e2))
     })
   })
@@ -303,8 +303,8 @@ function $(e) {
     continueSessionToInitialStep: c
   } = e, {
     activeSubscription: u,
-    blockedPayments: _,
-    hasFetchedSubscriptions: f,
+    blockedPayments: f,
+    hasFetchedSubscriptions: _,
     hasFetchedSubscriptionPlans: h,
     currencyLoading: g,
     selectedSkuId: E,
@@ -319,9 +319,9 @@ function $(e) {
     referralTrialOfferId: o
   }), [S, A] = i.useState(!0), C = (0, l.e7)([N.Z], () => N.Z.applicationIdsFetched.has(Z.CL));
   return (i.useEffect(() => {
-    A(!f || !h || g)
-  }, [g, h, f]), (0, p.Z)("Payment Modal", S, 5, {
-    hasFetchedSubscriptions: f,
+    A(!_ || !h || g)
+  }, [g, h, _]), (0, p.Z)("Payment Modal", S, 5, {
+    hasFetchedSubscriptions: _,
     hasFetchedSubscriptionPlans: h,
     currencyLoading: g
   }, {
@@ -329,7 +329,7 @@ function $(e) {
       app_context: Q
     }
   }), i.useEffect(() => {
-    if (C || (0, d.yD)(Z.CL), S || _) return;
+    if (C || (0, d.yD)(Z.CL), S || f) return;
     let e = (0, k.Kp)({
       isTrial: T,
       isGift: v,
@@ -340,7 +340,7 @@ function $(e) {
       emitPaymentFlowLoadedEvent: !0,
       trackedFromStep: c
     }) : null != n ? a(L.h8.REVIEW) : e ? (b((0, k.nA)(E, u, y)), a(L.h8.REVIEW)) : null != t ? a(L.h8.PLAN_SELECT) : a(L.h8.SKU_SELECT)
-  }, [c, u, _, C, n, S, a, t, E, b, T, y, v, I]), S) ? (0, r.jsx)(B.Z, {}) : _ ? (0, r.jsx)(m.Vq, {
+  }, [c, u, f, C, n, S, a, t, E, b, T, y, v, I]), S) ? (0, r.jsx)(B.Z, {}) : f ? (0, r.jsx)(m.Vq, {
     onClose: s
   }) : null
 }

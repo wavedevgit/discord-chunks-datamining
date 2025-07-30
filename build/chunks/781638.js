@@ -17,10 +17,10 @@ e.exports = function(e, t) {
   return d ? function(r, o) {
     var s = c(arguments.length, 1) > n,
       d = a(r) ? r : u(r),
-      _ = s ? l(arguments, n) : [],
-      f = s ? function() {
-        i(d, this, _)
+      f = s ? l(arguments, n) : [],
+      _ = s ? function() {
+        i(d, this, f)
       } : d;
-    return t ? e(f, o) : e(f)
+    return t ? e(_, o) : e(_)
   } : e
 }

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => _
 }), n(413496), n(433524), n(35282), n(388685);
 var r = n(512722),
   i = n.n(r),
@@ -23,7 +23,7 @@ function d(e, t) {
   }), n
 }
 
-function _(e) {
+function f(e) {
   if ("string" == typeof e.content) {
     var t;
     if ("inlineCode" === e.type || "codeBlock" === e.type) return null;
@@ -34,12 +34,12 @@ function _(e) {
     }
   } else if (Array.isArray(e.content))
     for (let t of e.content) {
-      let e = _(t);
+      let e = f(t);
       if (null != e) return e
     }
   return null
 }
-let f = {
+let _ = {
   shouldShowEveryoneGuard: function(e, t) {
     let n = t.getGuildId();
     return i()(n, "isGuildChannel with null guildId"), d(e, t) > u && s.Z.can(l.Plq.MENTION_EVERYONE, t)
@@ -47,7 +47,7 @@ let f = {
   everyoneMemberCount: d,
   extractEveryoneRole: function(e, t) {
     for (let n of a.ZP.parsePreprocessor(t, e)) {
-      let e = _(n);
+      let e = f(n);
       if (null != e) return e
     }
     return null

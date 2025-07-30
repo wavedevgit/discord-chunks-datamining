@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Tm: () => u,
-  ZP: () => f
+  ZP: () => _
 }), n(415506), n(388685);
 var r = n(547545),
   i = n(444591),
@@ -54,17 +54,17 @@ function d(e) {
     y: n
   }
 }
-class _ {
+class f {
   setup() {
     var e;
-    if (_.isSetUp) throw Error("Cannot have two Keyboard backends at the same time.");
-    _.isSetUp = !0, this._handlingFirstEvent = !0, null == (e = this.context.window) || e.addEventListener("keydown", this.handleGlobalKeyDown, {
+    if (f.isSetUp) throw Error("Cannot have two Keyboard backends at the same time.");
+    f.isSetUp = !0, this._handlingFirstEvent = !0, null == (e = this.context.window) || e.addEventListener("keydown", this.handleGlobalKeyDown, {
       capture: !0
     })
   }
   teardown() {
     var e;
-    _.isSetUp = !1, null == (e = this.context.window) || e.removeEventListener("keydown", this.handleGlobalKeyDown, {
+    f.isSetUp = !1, null == (e = this.context.window) || e.removeEventListener("keydown", this.handleGlobalKeyDown, {
       capture: !0
     }), this.endDrag()
   }
@@ -118,5 +118,5 @@ class _ {
     }), this.manager = e, this.actions = e.getActions(), this.monitor = e.getMonitor(), this.context = t, this.options = n, this.sourceNodes = new Map, this.sourcePreviewNodes = new Map, this.sourcePreviewNodeOptions = new Map, this.targetNodes = new Map, this._previewer = new i.Z(t.document), this._announcer = new r.Z(null == n ? void 0 : n.announcer)
   }
 }
-o(_, "isSetUp", void 0);
-let f = (e, t, n) => new _(e, t, n)
+o(f, "isSetUp", void 0);
+let _ = (e, t, n) => new f(e, t, n)

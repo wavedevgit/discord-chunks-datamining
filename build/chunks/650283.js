@@ -31,8 +31,8 @@ e.exports = function(e) {
       className: "punctuation",
       relevance: 0
     },
-    _ = e.inherit(e.C_LINE_COMMENT_MODE),
-    f = {
+    f = e.inherit(e.C_LINE_COMMENT_MODE),
+    _ = {
       className: "meta",
       begin: "#|&",
       end: "$",
@@ -40,7 +40,7 @@ e.exports = function(e) {
         $pattern: t,
         keyword: n + r
       },
-      contains: [_]
+      contains: [f]
     },
     p = {
       className: "symbol",
@@ -74,7 +74,7 @@ e.exports = function(e) {
             literal: s
           },
           contains: [l, c, u]
-        }, _]
+        }, f]
       }, e.inherit(e.TITLE_MODE, {
         begin: t
       })]
@@ -90,6 +90,6 @@ e.exports = function(e) {
       type: o,
       literal: s
     },
-    contains: [f, h, _, p, l, c, u, d]
+    contains: [_, h, f, p, l, c, u, d]
   }
 }

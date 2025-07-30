@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(218887),
   u = n.n(c),
   d = n(729594),
-  _ = n(873546),
-  f = n(430742),
+  f = n(873546),
+  _ = n(430742),
   p = n(166459),
   h = n(911969),
   m = n(476326),
@@ -143,7 +143,7 @@ class U extends i.Component {
     this.setState({
       focused: !0,
       submitting: !1
-    }), f.Z.saveDraft(e.id, "", t.drafts.type)
+    }), _.Z.saveDraft(e.id, "", t.drafts.type)
   }
   getCurrentWord() {
     var e;
@@ -213,7 +213,7 @@ class U extends i.Component {
       richValue: c,
       disabled: u,
       onChange: d,
-      onKeyDown: f,
+      onKeyDown: _,
       onResize: p,
       onSubmit: h,
       channel: m,
@@ -257,7 +257,7 @@ class U extends i.Component {
       allowNewLines: x,
       onChange: d,
       onResize: p,
-      onKeyDown: f,
+      onKeyDown: _,
       onSubmit: h,
       textAreaPaddingClassName: o()({
         [w.textAreaForPostCreation]: g === v.Ie.CREATE_FORUM_POST,
@@ -267,7 +267,7 @@ class U extends i.Component {
       }),
       spellcheckEnabled: b,
       useNewSlashCommands: O,
-      disableAutoFocus: _.tq || null != (n = g.disableAutoFocus) && n,
+      disableAutoFocus: f.tq || null != (n = g.disableAutoFocus) && n,
       disableEnterToSubmit: null != (i = null == (e = g.submit) ? void 0 : e.disableEnterToSubmit) && i,
       "aria-controls": null != (a = B.id) ? a : void 0,
       "aria-haspopup": "listbox",
@@ -339,7 +339,7 @@ class U extends i.Component {
       var e, t;
       return null == (e = (t = this.props).onHideAutocomplete) ? void 0 : e.call(t)
     }), D(this, "handleSaveCurrentText", e => {
-      f.Z.saveDraft(e, this.props.textValue, this.props.type.drafts.type)
+      _.Z.saveDraft(e, this.props.textValue, this.props.type.drafts.type)
     }), D(this, "handleClearText", () => {
       var e, t;
       null == (e = (t = this.props).onChange) || e.call(t, null, "", (0, I.JM)(""))
@@ -380,9 +380,9 @@ class U extends i.Component {
           type: u
         } = this.props,
         d = null != i ? (0, S.im)(i) : null,
-        _ = (0, S.Mo)(),
-        f = null != (r = null != d ? d : _) ? r : a,
-        E = (0, S._K)(i, this._getEditorWindow()) ? a : f;
+        f = (0, S.Mo)(),
+        _ = null != (r = null != d ? d : f) ? r : a,
+        E = (0, S._K)(i, this._getEditorWindow()) ? a : _;
       if (null == l || !E.isPrivate() && !o || E.isPrivate() && E.isManaged()) return !1;
       let y = (e, t) => {
           var n, r;

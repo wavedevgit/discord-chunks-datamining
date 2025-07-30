@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(40851),
   u = n(213609),
   d = n(314910),
-  _ = n(210887),
-  f = n(574254),
+  f = n(210887),
+  _ = n(574254),
   p = n(585483),
   h = n(981631);
 
@@ -65,8 +65,8 @@ let O = e => {
     close: n,
     onUnmount: o,
     target: l,
-    rect: _,
-    position: f,
+    rect: f,
+    position: _,
     align: p,
     impressionName: m,
     impressionProperties: g,
@@ -116,8 +116,8 @@ let O = e => {
     onMount: S,
     onUnmount: A,
     targetRef: O,
-    overrideTargetRect: _,
-    position: null != f ? f : "right",
+    overrideTargetRect: f,
+    position: null != _ ? _ : "right",
     align: null != p ? p : "top",
     autoInvert: !0,
     ref: b,
@@ -218,11 +218,11 @@ function I() {
     contextMenu: e,
     version: t,
     isOpen: n
-  } = (0, o.cj)([f.Z], () => ({
-    contextMenu: f.Z.getContextMenu(),
-    version: f.Z.version,
-    isOpen: f.Z.isOpen()
-  })), a = (0, o.e7)([_.Z], () => _.Z.theme), {
+  } = (0, o.cj)([_.Z], () => ({
+    contextMenu: _.Z.getContextMenu(),
+    version: _.Z.version,
+    isOpen: _.Z.isOpen()
+  })), a = (0, o.e7)([f.Z], () => f.Z.theme), {
     appContext: s,
     renderWindow: u
   } = i.useContext(c.ZP);

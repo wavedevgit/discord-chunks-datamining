@@ -13,7 +13,7 @@ var s = n(756647),
   u = n(761609),
   d = n(231338);
 
-function _(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,14 +22,14 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
@@ -155,8 +155,8 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
     function ee(e) {
       let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : b,
         n = Date.now(),
-        i = e.map(e => h(f({}, e), {
-          properties: h(f({}, e.properties), {
+        i = e.map(e => h(_({}, e), {
+          properties: h(_({}, e.properties), {
             client_send_timestamp: n
           })
         })),
@@ -266,7 +266,7 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
         } = e, s = {
           type: t,
           fingerprint: i,
-          properties: f({
+          properties: _({
             client_track_timestamp: Date.now(),
             client_heartbeat_session_id: o,
             event_sequence_number: ++A
@@ -289,8 +289,8 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
         null != O && this.waitFor(...O)
       }
       constructor(...e) {
-        super(...e), _(this, "submitEventsImmediately", ee)
+        super(...e), f(this, "submitEventsImmediately", ee)
       }
     }
-    return _(ea, "displayName", "AnalyticsTrackingStore"), new ea(n, a)
+    return f(ea, "displayName", "AnalyticsTrackingStore"), new ea(n, a)
   }

@@ -10,7 +10,7 @@ n.d(t, {
   Zx: () => h,
   bd: () => g,
   f$: () => A,
-  gc: () => f,
+  gc: () => _,
   gd: () => S,
   s6: () => v,
   xQ: () => E
@@ -24,9 +24,9 @@ var r = n(73800),
   c = n(350327),
   u = n(621853),
   d = n(271383),
-  _ = n(25990);
+  f = n(25990);
 
-function f(e) {
+function _(e) {
   return r.useMemo(() => {
     let t = d.ZP.getMutableAllGuildsAndMembers(),
       n = {};
@@ -45,9 +45,9 @@ function p(e, t) {
     {
       pendingUserAvatarDecoration: a,
       userErrors: s
-    } = (0, i.cj)([_.Z], () => ({
-      pendingUserAvatarDecoration: _.Z.getPendingAvatarDecoration(),
-      userErrors: _.Z.getErrors().avatarDecoration
+    } = (0, i.cj)([f.Z], () => ({
+      pendingUserAvatarDecoration: f.Z.getPendingAvatarDecoration(),
+      userErrors: f.Z.getErrors().avatarDecoration
     })),
     {
       pendingGuildAvatarDecoration: c,
@@ -71,9 +71,9 @@ function h(e, t) {
     {
       pendingUserNameplate: o,
       userErrors: s
-    } = (0, i.cj)([_.Z], () => ({
-      pendingUserNameplate: _.Z.getPendingNameplate(),
-      userErrors: _.Z.getErrors().nameplate
+    } = (0, i.cj)([f.Z], () => ({
+      pendingUserNameplate: f.Z.getPendingNameplate(),
+      userErrors: f.Z.getErrors().nameplate
     })),
     {
       pendingGuildNameplate: c,
@@ -98,9 +98,9 @@ function m(e, t) {
 }
 
 function g(e) {
-  return (0, i.cj)([_.Z, l.Z], () => null == e ? {
-    pendingProfileEffectId: _.Z.getPendingProfileEffectId(),
-    errors: _.Z.getErrors().profileEffect
+  return (0, i.cj)([f.Z, l.Z], () => null == e ? {
+    pendingProfileEffectId: f.Z.getPendingProfileEffectId(),
+    errors: f.Z.getErrors().profileEffect
   } : {
     pendingProfileEffectId: l.Z.getPendingProfileEffectId(),
     errors: l.Z.getErrors().profileEffect

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  AR: () => _,
+  AR: () => f,
   Mp: () => d,
   g1: () => l,
   q8: () => u,
@@ -83,7 +83,7 @@ function d(e, t) {
   }).rollbackEnabled
 }
 
-function _(e, t) {
+function f(e, t) {
   return !!s(e) && o.getCurrentConfig({
     guildId: e,
     location: t

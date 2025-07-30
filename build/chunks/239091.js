@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
   Zy: () => d,
-  jW: () => f,
-  vq: () => _
+  jW: () => _,
+  vq: () => f
 }), n(457542);
 var r = n(570140),
   i = n(40851),
@@ -55,12 +55,12 @@ function d(e) {
   }
 }
 
-function _(e, t, n, r) {
-  var l, d, _;
+function f(e, t, n, r) {
+  var l, d, f;
   if (e.stopPropagation(), null != e.currentTarget.contains && !e.currentTarget.contains(e.target)) return;
-  let f = 0,
+  let _ = 0,
     p = 0;
-  if ("pageX" in e && (f = e.pageX, p = e.pageY), 0 === f && 0 === p) {
+  if ("pageX" in e && (_ = e.pageX, p = e.pageY), 0 === _ && 0 === p) {
     let t = null == (l = e.target) ? void 0 : l.getBoundingClientRect(),
       {
         left: n = 0,
@@ -68,15 +68,15 @@ function _(e, t, n, r) {
         width: i = 0,
         height: a = 0
       } = null != t ? t : {};
-    f = n + i / 2, p = r + a / 2
+    _ = n + i / 2, p = r + a / 2
   }
   let h = {
     render: t,
     renderLazy: r,
     target: null != (d = e.target) ? d : e.currentTarget,
-    rect: new DOMRect(f, p, 0, 0),
+    rect: new DOMRect(_, p, 0, 0),
     config: c({
-      context: __OVERLAY__ ? s.IlC.OVERLAY : null != (_ = (0, i.GB)()) ? _ : s.IlC.APP
+      context: __OVERLAY__ ? s.IlC.OVERLAY : null != (f = (0, i.GB)()) ? f : s.IlC.APP
     }, n)
   };
   if ((null == n ? void 0 : n.enableSpellCheck) && (0, a.isDesktop)()) {
@@ -87,6 +87,6 @@ function _(e, t, n, r) {
   } else e.preventDefault(), u(h)
 }
 
-function f(e, t, n) {
-  _(e, void 0, n, t)
+function _(e, t, n) {
+  f(e, void 0, n, t)
 }

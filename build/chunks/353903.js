@@ -20,8 +20,8 @@ function d(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let _ = 12,
-  f = [c.Z.unsafe_rawColors.PREMIUM_TIER_1_PURPLE.css, c.Z.unsafe_rawColors.PREMIUM_TIER_1_BLUE.css, "#929AFA"];
+let f = 12,
+  _ = [c.Z.unsafe_rawColors.PREMIUM_TIER_1_PURPLE.css, c.Z.unsafe_rawColors.PREMIUM_TIER_1_BLUE.css, "#929AFA"];
 class p extends a.PureComponent {
   render() {
     let {
@@ -42,7 +42,7 @@ class p extends a.PureComponent {
   }
   constructor(...e) {
     super(...e), d(this, "state", {
-      backgroundColor: s().sample(f)
+      backgroundColor: s().sample(_)
     })
   }
 }
@@ -93,7 +93,7 @@ class h extends(r = a.Component) {
           translateY: t,
           height: n
         }
-      } = this, r = e > 0 ? 0 : -n / 2 + _, i = e > 0 ? -n / 2 + _ : 0;
+      } = this, r = e > 0 ? 0 : -n / 2 + f, i = e > 0 ? -n / 2 + f : 0;
       t.setValue(r), l.Z.timing(t, {
         toValue: i,
         duration: 800,
@@ -103,7 +103,7 @@ class h extends(r = a.Component) {
     let t = Array(10).fill(null).map(() => s().random(40, 150));
     this.state = {
       blocks: t,
-      height: 2 * t.reduce((e, t) => e + t + _, _),
+      height: 2 * t.reduce((e, t) => e + t + f, f),
       translateY: new l.Z.Value(0)
     }
   }

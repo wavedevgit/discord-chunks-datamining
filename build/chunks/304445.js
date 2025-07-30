@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 }), n(388685), n(415506);
 var r = n(572299),
   i = n(38618),
@@ -91,4 +91,4 @@ class d {
     })
   }
 }
-let _ = new d
+let f = new d

@@ -42,12 +42,12 @@ function d(e, t) {
   return n
 }
 
-function _(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let f = null,
+let _ = null,
   p = new Map;
 
 function h(e) {
@@ -80,33 +80,33 @@ function m(e) {
     isElementFullscreen: r,
     focused: i,
     visible: o
-  }), i && (f = e.windowId), !0
+  }), i && (_ = e.windowId), !0
 }
 
 function g(e) {
   let t = h(e.windowId);
-  return t.isElementFullscreen !== e.isElementFullscreen && (p.set(e.windowId, _(u({}, t), {
+  return t.isElementFullscreen !== e.isElementFullscreen && (p.set(e.windowId, f(u({}, t), {
     isElementFullscreen: e.isElementFullscreen
   })), !0)
 }
 
 function E(e) {
   let t = h(e.windowId);
-  return t.focused !== e.focused && (e.focused && (f = e.windowId), p.set(e.windowId, _(u({}, t), {
+  return t.focused !== e.focused && (e.focused && (_ = e.windowId), p.set(e.windowId, f(u({}, t), {
     focused: e.focused
   })), !0)
 }
 
 function b(e) {
   let t = h(e.windowId);
-  return t.visible !== e.visible && (p.set(e.windowId, _(u({}, t), {
+  return t.visible !== e.visible && (p.set(e.windowId, f(u({}, t), {
     visible: e.visible
   })), !0)
 }
 
 function y(e) {
   let t = h(e.windowId);
-  return (t.windowSize.width !== e.width || t.windowSize.height !== e.height) && (p.set(e.windowId, _(u({}, t), {
+  return (t.windowSize.width !== e.width || t.windowSize.height !== e.height) && (p.set(e.windowId, f(u({}, t), {
     windowSize: {
       width: e.width,
       height: e.height
@@ -115,7 +115,7 @@ function y(e) {
 }
 
 function O(e) {
-  return p.delete(e.windowId), f === e.windowId && (f = null), !0
+  return p.delete(e.windowId), _ === e.windowId && (_ = null), !0
 }
 class v extends(r = o.ZP.Store) {
   isFocused() {
@@ -136,7 +136,7 @@ class v extends(r = o.ZP.Store) {
     }), e
   }
   getLastFocusedWindowId() {
-    return f
+    return _
   }
   isElementFullScreen() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : (0, l.UU)();

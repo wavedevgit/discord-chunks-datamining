@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(519938),
   u = n(317381),
   d = n(812206),
-  _ = n(358221),
-  f = n(199902),
+  f = n(358221),
+  _ = n(199902),
   p = n(366050),
   h = n(594174),
   m = n(981631),
@@ -71,8 +71,8 @@ function T(e) {
   n && t();
   let b = (0, a.e7)([u.ZP], () => u.ZP.getCurrentEmbeddedActivity()),
     y = (0, a.e7)([p.Z], () => p.Z.pipWindow),
-    O = (0, a.e7)([_.Z], () => _.Z.getSelectedParticipant(o)),
-    v = (0, a.e7)([_.Z], () => _.Z.getStreamParticipants(o));
+    O = (0, a.e7)([f.Z], () => f.Z.getSelectedParticipant(o)),
+    v = (0, a.e7)([f.Z], () => f.Z.getStreamParticipants(o));
 
   function I(e) {
     (null == y ? void 0 : y.id) !== e.pipWindow.id && (0, c.k3)(e.pipWindow.id);
@@ -97,7 +97,7 @@ function T(e) {
     let e = [],
       t = i.find(e => e.component === m.NYg.VIDEO);
     return null != t && v.forEach(n => {
-      let r = f.Z.getActiveStreamForApplicationStream(n.stream),
+      let r = _.Z.getActiveStreamForApplicationStream(n.stream),
         i = n.id === (null == O ? void 0 : O.id) && (null == y ? void 0 : y.id) === t.id;
       null == r || i || e.push({
         pipWindow: t,
@@ -131,11 +131,11 @@ let S = function(e) {
   let {
     voiceChannelId: t,
     idle: n
-  } = e, l = i.useRef(null), c = Array.from((0, a.e7)([p.Z], () => p.Z.pipWindows).values()).filter(e => e.component !== m.NYg.ACTIVITY), u = (0, a.Wu)([f.Z], () => f.Z.getAllActiveStreamsForChannel(t)).filter(e => {
+  } = e, l = i.useRef(null), c = Array.from((0, a.e7)([p.Z], () => p.Z.pipWindows).values()).filter(e => e.component !== m.NYg.ACTIVITY), u = (0, a.Wu)([_.Z], () => _.Z.getAllActiveStreamsForChannel(t)).filter(e => {
     var n;
     return e.ownerId !== (null == (n = h.default.getCurrentUser()) ? void 0 : n.id) && e.channelId === t
-  }), d = 1 === c.length && c[0].component === m.NYg.ACTIVITY || 0 === u.length, _ = 1 === c.length && u.length <= 1;
-  return d || _ ? null : (0, r.jsx)(s.yRy, {
+  }), d = 1 === c.length && c[0].component === m.NYg.ACTIVITY || 0 === u.length, f = 1 === c.length && u.length <= 1;
+  return d || f ? null : (0, r.jsx)(s.yRy, {
     targetElementRef: l,
     position: "bottom",
     renderPopout: e => (0, r.jsx)(T, O({

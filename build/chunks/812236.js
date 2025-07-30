@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
   Fs: () => p,
-  Xu: () => f,
-  ZP: () => _,
+  Xu: () => _,
+  ZP: () => f,
   ms: () => m,
   sV: () => u
 }), n(415506);
@@ -16,22 +16,22 @@ var r = n(73800),
   c = n(367790);
 let u = "no primary app command for application",
   d = [a.yU.PRIMARY_ENTRY_POINT];
-async function _(e, t) {
+async function f(e, t) {
   let n, r = o.Z.getChannel(e);
-  if (null != r && null == (n = f({
+  if (null != r && null == (n = _({
       channel: r,
       type: "channel"
     }, t)) && (await (0, l.FN)({
       type: "application",
       applicationId: t
-    }), n = f({
+    }), n = _({
       channel: r,
       type: "channel"
     }, t)), null != n) return n;
   throw Error(u)
 }
 
-function f(e, t) {
+function _(e, t) {
   return l.ZP.query(e, {
     commandTypes: [a.yU.PRIMARY_ENTRY_POINT]
   }, {

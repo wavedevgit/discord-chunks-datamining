@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 }), n(388685);
 var r = n(626135),
   i = n(591759),
@@ -34,7 +34,7 @@ function u(e) {
 function d(e, t) {
   return null == t && null == e ? "Unknown" : null == t ? u(e) : c(t)
 }
-let _ = {
+let f = {
   trackDiscordLinkClicked: function(e) {
     r.default.track(s.rMx.LINK_CLICKED, {
       is_discord_link: !0,

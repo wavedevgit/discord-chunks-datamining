@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => _
 }), n(997841);
 var r = n(255367),
   i = n(481060),
@@ -21,7 +21,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,12 +34,12 @@ function _(e) {
   return e
 }
 
-function f(e) {
+function _(e) {
   let {
     application: t,
     label: n,
     onSuccess: d,
-    showIconFirst: f,
+    showIconFirst: _,
     focusedClassName: p
   } = e;
   if (__OVERLAY__ || !s.wS || null == t) return null;
@@ -52,7 +52,7 @@ function f(e) {
     let n = (0, l.yE)(null != (e = t.flags) ? e : 0, u.udG.EMBEDDED) ? (0, c.H)({
       applicationId: t.id,
       referrerId: null == h ? void 0 : h.id
-    }) : (0, c.J)(_({
+    }) : (0, c.J)(f({
       id: t.id
     }, m));
     null != n && (0, s.JG)(n, d)
@@ -62,8 +62,8 @@ function f(e) {
     id: E,
     label: n,
     action: g,
-    icon: f ? void 0 : i.xPt,
-    iconLeft: f ? i.xPt : void 0,
+    icon: _ ? void 0 : i.xPt,
+    iconLeft: _ ? i.xPt : void 0,
     focusedClassName: p
   }, E)
 }

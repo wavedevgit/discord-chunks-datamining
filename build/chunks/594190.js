@@ -15,8 +15,8 @@ var i, a = n(392711),
   c = n(442837),
   u = n(433517),
   d = n(570140),
-  _ = n(593472),
-  f = n(726542),
+  f = n(593472),
+  _ = n(726542),
   p = n(439849),
   h = n(710845),
   m = n(353926),
@@ -156,7 +156,7 @@ let V = new h.Z("RunningGameStore"),
       os: "linux",
       name: "spotify"
     }],
-    name: f.Z.get(M.ABu.SPOTIFY).name
+    name: _.Z.get(M.ABu.SPOTIFY).name
   }],
   W = [],
   K = !0,
@@ -184,8 +184,8 @@ let V = new h.Z("RunningGameStore"),
   ec = new Set,
   eu = new Set,
   ed = null,
-  e_ = null,
-  ef = new Map,
+  ef = null,
+  e_ = new Map,
   ep = new Map;
 
 function eh(e, t, n) {
@@ -211,9 +211,9 @@ function eE(e) {
   let a = ep.get(null != (r = null == (t = e.name) ? void 0 : t.toLowerCase()) ? r : "");
   if (null != a) return a;
   let o = null != e.exeName && "" !== e.exeName ? e.exeName : null != (i = null == (n = e.exePath.split("/").pop()) ? void 0 : n.split("\\").pop()) ? i : "",
-    s = ef.get(o.toLowerCase());
+    s = e_.get(o.toLowerCase());
   if (null != s) return s;
-  for (let [t, n] of ef) {
+  for (let [t, n] of e_) {
     let r = e.exePath.toLowerCase(),
       i = t.toLowerCase();
     if (r.endsWith(i)) {
@@ -258,7 +258,7 @@ function eO(e) {
 Y.forEach(e => {
   var t;
   ep.set(e.name.toLowerCase(), e), (null != (t = e.executables) ? t : []).forEach(t => {
-    ef.set(t.name.toLowerCase(), e)
+    e_.set(t.name.toLowerCase(), e)
   })
 });
 let ev = new Set(["1314395942253756416"]);
@@ -320,9 +320,9 @@ function eT(e) {
   }
   let d = null == e.id ? null : ei[e.id];
   if (null != d) {
-    var _, f;
-    let e = null != (_ = d.enabledOOP) ? _ : l,
-      t = null != (f = d.enabled) ? f : s,
+    var f, _;
+    let e = null != (f = d.enabledOOP) ? f : l,
+      t = null != (_ = d.enabled) ? _ : s,
       n = e ? y.gl.OutOfProcess : y.gl.Hook;
     return {
       source: e && !o ? y.d0.OOP_DEFAULT_DATABASE : y.d0.DATABASE,
@@ -506,11 +506,11 @@ function eY() {
 }
 
 function eW(e) {
-  ed = e.level, e_ = e.intervalSeconds
+  ed = e.level, ef = e.intervalSeconds
 }
 
 function eK() {
-  ed = null, e_ = null, ec.clear()
+  ed = null, ef = null, ec.clear()
 }
 
 function ez(e) {
@@ -529,7 +529,7 @@ function ez(e) {
     keywords: W,
     paths: t,
     debugging_level: ed,
-    interval_seconds: e_
+    interval_seconds: ef
   })
 }
 
@@ -595,14 +595,14 @@ function e0() {
   for (let e of n) {
     var a, o, s, l;
     let t = eI(e),
-      n = i && !t || _.r.enabledOOP,
-      r = null != (a = e.overlay) ? a : _.r.enabled;
+      n = i && !t || f.r.enabledOOP,
+      r = null != (a = e.overlay) ? a : f.r.enabled;
     ei[e.id] = {
-      compatibilityHook: null != (o = e.overlayCompatibilityHook) ? o : _.r.compatibilityHook,
-      warn: null != (s = e.overlayWarn) ? s : _.r.warn,
+      compatibilityHook: null != (o = e.overlayCompatibilityHook) ? o : f.r.compatibilityHook,
+      warn: null != (s = e.overlayWarn) ? s : f.r.warn,
       enabled: r,
       enabledOOP: n,
-      allowHook: null != (l = e.hook) ? l : _.r.allowHook,
+      allowHook: null != (l = e.hook) ? l : f.r.allowHook,
       supportsOutOfProcessOverlay: e.supportsOutOfProcessOverlay
     }
   }
@@ -614,7 +614,7 @@ function e0() {
     })
   }), [...n.filter(e => {
     var t;
-    return !(null != (t = e.executables) ? t : []).some(e => ef.has(e.name.toLowerCase()))
+    return !(null != (t = e.executables) ? t : []).some(e => e_.has(e.name.toLowerCase()))
   }), ...Y].forEach(n => {
     let r = null != n.executables ? n.executables : [],
       i = {};

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  m: () => f,
+  m: () => _,
   q: () => c
 }), n(388685), n(642613), n(35282), n(415506);
 var r = n(836560),
@@ -53,7 +53,7 @@ class d extends u {
     })
   }
 }
-class _ extends u {
+class f extends u {
   refresh(e) {
     Object.assign(this._context, e), Object.keys(this._parsedMessages).forEach(e => {
       delete this._parsedMessages[e]
@@ -69,7 +69,7 @@ class _ extends u {
     }), this._parsedMessages = this._createProxy(this._context)
   }
 }
-class f extends r.EventEmitter {
+class _ extends r.EventEmitter {
   updateMessagesForExperiment(e, t) {
     let n = this._fetchMessages(e);
     if (n instanceof Promise) return void n.then(n => {
@@ -193,7 +193,7 @@ class f extends r.EventEmitter {
       "locale" === e && this.emit(e, this._chosenLocale)
     }), this.initialLanguageLoad = new Promise((e, t) => {
       this.resolveLanguageLoaded = e
-    }), Intl.__addLocaleData && Intl.__addLocaleData(n(201688)), this._languages = r(), this._provider = null != window.Proxy ? new _(this._getParsedMessages) : new d(this._getParsedMessages), this.Messages = this._provider.getMessages(), this._getMessages = t;
+    }), Intl.__addLocaleData && Intl.__addLocaleData(n(201688)), this._languages = r(), this._provider = null != window.Proxy ? new f(this._getParsedMessages) : new d(this._getParsedMessages), this.Messages = this._provider.getMessages(), this._getMessages = t;
     try {
       new Intl.NumberFormat(e, {}), this.setLocale(e || this.getDefaultLocale())
     } catch (e) {

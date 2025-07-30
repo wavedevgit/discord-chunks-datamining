@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(287734),
   u = n(872810),
   d = n(110924),
-  _ = n(833664),
-  f = n(579630),
+  f = n(833664),
+  _ = n(579630),
   p = n(622822),
   h = n(100527),
   m = n(906732),
@@ -66,7 +66,7 @@ function W(e) {
       user: t
     } = e;
     return t
-  }) : []), er = (0, s.e7)([T.Z], () => T.Z.findActivity(t.id, e => (0, _.Z)(e) && !(0, f.Z)(e))), {
+  }) : []), er = (0, s.e7)([T.Z], () => T.Z.findActivity(t.id, e => (0, f.Z)(e) && !(0, _.Z)(e))), {
     analyticsLocations: ei
   } = (0, m.ZP)(h.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), ea = (0, A.Z)({
     display: "live",
@@ -80,7 +80,7 @@ function W(e) {
   }), [es, el] = (0, y.wq)(et), ec = (0, p.Kt)() && (0, p.zd)(null == et ? void 0 : et.id), {
     previewUrl: eu,
     isLoading: ed
-  } = (0, b.Z)(a.guildId, a.channelId, a.ownerId), e_ = (0, s.e7)([I.Z], () => null != et && !ec && I.Z.canBasicChannel(B.S7T.CONNECT, et)), ef = (0, d.Z)(ed ? null : eu), ep = ed || null == eu ? ef : eu;
+  } = (0, b.Z)(a.guildId, a.channelId, a.ownerId), ef = (0, s.e7)([I.Z], () => null != et && !ec && I.Z.canBasicChannel(B.S7T.CONNECT, et)), e_ = (0, d.Z)(ed ? null : eu), ep = ed || null == eu ? e_ : eu;
   if (null == ee || null == et || !1 === a.discoverable || null === X) return null;
   let eh = () => {
       let e = e => {
@@ -107,7 +107,7 @@ function W(e) {
             children: (0, y.P9)(el)
           }), (0, r.jsx)(l.Text, {
             variant: "text-sm/medium",
-            children: e_ ? V.intl.string(V.t.uQZTBQ) : V.intl.string(V.t.pgUTZG)
+            children: ef ? V.intl.string(V.t.uQZTBQ) : V.intl.string(V.t.pgUTZG)
           })]
         })]
       }) : (0, r.jsxs)(l.P3F, {

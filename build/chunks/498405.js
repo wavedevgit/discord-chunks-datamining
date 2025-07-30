@@ -48,7 +48,7 @@ function u(e, t) {
 }
 let d = "--";
 
-function _(e) {
+function f(e) {
   switch (e.key) {
     case a.R8.ENTER:
     case a.R8.SPACE:
@@ -64,7 +64,7 @@ function _(e) {
   }
 }
 
-function f(e, t) {
+function _(e, t) {
   return null != t ? "".concat((0, o.qR)(e, t.join(d))) : e
 }
 
@@ -120,7 +120,7 @@ function m(e) {
   })), R = r.useCallback(e => {
     if (!E.current) return;
     e.key === a.R8.ESCAPE && null != g && (e.stopPropagation(), e.preventDefault(), g());
-    let n = _(e);
+    let n = f(e);
     switch (n) {
       case a.Us.NAVIGATE_UP:
       case a.Us.NAVIGATE_DOWN:
@@ -136,7 +136,7 @@ function m(e) {
         if (e.preventDefault(), e.stopPropagation(), A(!1), O({
             type: n
           }), null != c) return void c(v);
-        let i = p(null != (r = e.target.ownerDocument) ? r : document, f(t, v));
+        let i = p(null != (r = e.target.ownerDocument) ? r : document, _(t, v));
         null == i || i.click()
     }
   }, [O, t, v, c, g]), P = r.useCallback(() => {

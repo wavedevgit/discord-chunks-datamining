@@ -13,8 +13,8 @@ var r = n(952639),
   c = n(147913),
   u = n(786761),
   d = n(797614),
-  _ = n(869765),
-  f = n(314897),
+  f = n(869765),
+  _ = n(314897),
   p = n(433355),
   h = n(592125),
   m = n(375954),
@@ -154,7 +154,7 @@ function Z(e) {
   let t = {},
     n = {};
   return e.forEach(e => {
-    var r, i, a, o, s, l, c, u, d, _, f, p;
+    var r, i, a, o, s, l, c, u, d, f, _, p;
     null == t[e.channel_id] && (t[e.channel_id] = {
       numOfAttachments: 0,
       numOfAttachmentsPendingScan: 0,
@@ -181,13 +181,13 @@ function Z(e) {
     y.numOfAttachments += h, y.numOfEmbeds += m, y.numOfExplicitAttachments = null != (d = null == (a = e.attachments) ? void 0 : a.filter(e => (0, A.SI)(S._.EXPLICIT, {
       type: v.l.Attachment,
       media: e
-    })).length) ? d : 0, y.numOfExplicitEmbeds = null != (_ = null == (o = e.embeds) ? void 0 : o.filter(e => (0, A.SI)(S._.EXPLICIT, {
+    })).length) ? d : 0, y.numOfExplicitEmbeds = null != (f = null == (o = e.embeds) ? void 0 : o.filter(e => (0, A.SI)(S._.EXPLICIT, {
       type: v.l.Embed,
       media: e
-    })).length) ? _ : 0, y.numOfGoreAttachments = null != (f = null == (s = e.attachments) ? void 0 : s.filter(e => (0, A.SI)(S._.GORE, {
+    })).length) ? f : 0, y.numOfGoreAttachments = null != (_ = null == (s = e.attachments) ? void 0 : s.filter(e => (0, A.SI)(S._.GORE, {
       type: v.l.Attachment,
       media: e
-    })).length) ? f : 0, y.numOfGoreEmbeds = null != (p = null == (l = e.embeds) ? void 0 : l.filter(e => (0, A.SI)(S._.GORE, {
+    })).length) ? _ : 0, y.numOfGoreEmbeds = null != (p = null == (l = e.embeds) ? void 0 : l.filter(e => (0, A.SI)(S._.GORE, {
       type: v.l.Embed,
       media: e
     })).length) ? p : 0
@@ -227,8 +227,8 @@ function Y(e) {
   let n = e.filter(e => (0, y.t)(e) && 0 !== (0, A.rb)(e)),
     r = e.map(e => {
       if (R.OBS.has(e.type) && null != e.messageReference) {
-        let t = _.Z.getMessageByReference(e.messageReference);
-        if (t.state === _.Y.LOADED && null != t.message && (0, y.t)(t.message) && 0 !== (0, A.rb)(t.message)) return t.message
+        let t = f.Z.getMessageByReference(e.messageReference);
+        if (t.state === f.Y.LOADED && null != t.message && (0, y.t)(t.message) && 0 !== (0, A.rb)(t.message)) return t.message
       }
     }).filter(t);
   r.length > 0 && (n = [...n, ...r]);
@@ -307,9 +307,9 @@ function z(e) {
   let {
     message: s
   } = e;
-  if (null == s.channel_id || null == s.id || (null == (t = s.author) ? void 0 : t.id) === f.default.getId() || null == s.embeds && null == s.attachments || (null == (n = s.embeds) ? void 0 : n.length) === 0 && (null == (r = s.attachments) ? void 0 : r.length) === 0) return !1;
+  if (null == s.channel_id || null == s.id || (null == (t = s.author) ? void 0 : t.id) === _.default.getId() || null == s.embeds && null == s.attachments || (null == (n = s.embeds) ? void 0 : n.length) === 0 && (null == (r = s.attachments) ? void 0 : r.length) === 0) return !1;
   if (!(0, A.MD)(s)) {
-    let e = null != (o = null != (a = m.Z.getMessage(s.channel_id, s.id)) ? a : T.Z.getMessage(s.id, s.channel_id)) ? o : null == (i = _.Z.getMessage(s.channel_id, s.id)) ? void 0 : i.message;
+    let e = null != (o = null != (a = m.Z.getMessage(s.channel_id, s.id)) ? a : T.Z.getMessage(s.id, s.channel_id)) ? o : null == (i = f.Z.getMessage(s.channel_id, s.id)) ? void 0 : i.message;
     null == e || (0, A.MD)((0, u.wi)(e, s)) || j(e, I.Pq.UPDATE)
   }
   let l = g.Z.getChannelId(),
@@ -329,16 +329,16 @@ function q(e) {
     optimistic: a,
     isPushNotification: o
   } = e;
-  if (a || o || null == r || (null == (t = i.author) ? void 0 : t.id) === f.default.getId()) return !1;
+  if (a || o || null == r || (null == (t = i.author) ? void 0 : t.id) === _.default.getId()) return !1;
   let s = g.Z.getChannelId(),
     l = p.ZP.getCurrentSidebarChannelId(s),
     c = r === s || r === l,
     u = h.Z.getChannel(r);
   if (!c) return !1;
   let d = null == (n = null == u ? void 0 : u.isPrivate()) || n,
-    _ = (null == u ? void 0 : u.memberCount) == null || (null == u ? void 0 : u.memberCount) > 100;
+    f = (null == u ? void 0 : u.memberCount) == null || (null == u ? void 0 : u.memberCount) > 100;
   return W([i], {
-    jitter: d && _
+    jitter: d && f
   })
 }
 

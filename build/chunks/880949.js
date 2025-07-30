@@ -17,10 +17,10 @@ let d = e => {
     guild: n,
     isSelected: a = !0,
     width: d = 32,
-    height: _ = 32,
-    shouldAnimate: f = !0,
+    height: f = 32,
+    shouldAnimate: _ = !0,
     isLocked: p = !1
-  } = e, [h, m] = i.useState(!1), g = (0, c.EB)(n, 32, f && a), E = () => m(!0), b = () => m(!1);
+  } = e, [h, m] = i.useState(!1), g = (0, c.EB)(n, 32, _ && a), E = () => m(!0), b = () => m(!1);
   return (0, r.jsxs)("div", {
     onFocus: E,
     onBlur: b,
@@ -30,7 +30,7 @@ let d = e => {
       className: o()(u.mask, t),
       mask: a || h ? l.QS.SQUIRCLE : l.QS.AVATAR_DEFAULT,
       width: d,
-      height: _,
+      height: f,
       children: null == g ? (0, r.jsx)("div", {
         className: o()(u.guildIcon, u.guildIconWithoutImage),
         children: (0, r.jsx)("div", {
