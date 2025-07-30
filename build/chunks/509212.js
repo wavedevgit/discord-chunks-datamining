@@ -24,8 +24,8 @@ n.d(t, {
   KM: () => ew,
   Kr: () => eh,
   LM: () => eO,
-  MM: () => tS,
-  Mo: () => tA,
+  MM: () => tA,
+  Mo: () => tN,
   Nj: () => eN,
   OG: () => tn,
   PB: () => e1,
@@ -51,7 +51,7 @@ n.d(t, {
   f2: () => eM,
   fY: () => e9,
   gI: () => te,
-  hF: () => tI,
+  hF: () => tT,
   hQ: () => et,
   iQ: () => K,
   il: () => eY,
@@ -65,6 +65,7 @@ n.d(t, {
   qe: () => tv,
   t2: () => ec,
   u7: () => t_,
+  uN: () => tI,
   vQ: () => eb,
   vR: () => ev,
   xN: () => eg,
@@ -954,26 +955,34 @@ function tv(e, t) {
 }
 
 function tI(e) {
+  var t;
+  let {
+    adContext: n
+  } = null != (t = T.Z.questToDeliverForPlacement.get(th(e))) ? t : {};
+  return n
+}
+
+function tT(e) {
   var t, n;
   let r = null != (n = null == (t = e.userStatus) ? void 0 : t.claimedTier) ? n : 0;
   return "rewardsConfig" in e.config ? e.config.rewardsConfig.rewards[r] : e.config.rewards[r]
 }
 
-function tT(e) {
+function tS(e) {
   return new Set(Object.keys(e.config.taskConfigV2.tasks))
 }
 
-function tS(e, t) {
+function tA(e, t) {
   let n = new Map;
   for (let [r, i] of e)
-    for (let e of tT(i))
+    for (let e of tS(i))
       if (t.has(e)) {
         n.set(r, i);
         break
       } return n
 }
 
-function tA(e) {
+function tN(e) {
   var t, n;
   let {
     questId: r,
