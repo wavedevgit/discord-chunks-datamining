@@ -30,8 +30,8 @@ var r = n(255367),
   P = n(596557),
   j = n(817520),
   A = n(999309),
-  Z = n(408987),
-  x = n(130734),
+  x = n(408987),
+  Z = n(130734),
   w = n(499137),
   L = n(258871),
   R = n(340541),
@@ -407,7 +407,7 @@ class eC extends i.PureComponent {
         guild: e,
         showGuildTemplateDirtyTooltip: t
       } = this.props;
-      null != e && t && Z.Z.hideGuildTemplateDirtyTooltip(e.id)
+      null != e && t && x.Z.hideGuildTemplateDirtyTooltip(e.id)
     }), e_(this, "renderMenuPopout", async () => {
       let {
         default: e
@@ -496,7 +496,7 @@ function eS(e) {
   let c = (0, N.Z)(n),
     h = (0, d.e7)([K.Z], () => K.Z.getGuildDimensions(n).scrollTo),
     g = (0, d.e7)([en.Z], () => en.Z.getChannelId()),
-    [m, b, Z] = (0, d.Wu)([ee.Z], () => [ee.Z.can(ep.Plq.MANAGE_GUILD, o), ee.Z.can(ep.Plq.MANAGE_ROLES, o), ee.Z.can(ep.Plq.MANAGE_THREADS, o)]),
+    [m, b, x] = (0, d.Wu)([ee.Z], () => [ee.Z.can(ep.Plq.MANAGE_GUILD, o), ee.Z.can(ep.Plq.MANAGE_ROLES, o), ee.Z.can(ep.Plq.MANAGE_THREADS, o)]),
     L = (0, d.e7)([q.Z], () => q.Z.isUnavailable(n)),
     R = (0, d.e7)([er.default], () => er.default.getCurrentUser()),
     G = (0, V.Ll)(),
@@ -513,8 +513,8 @@ function eS(e) {
   i.useEffect(() => {
     n !== es && eo(!X)
   }, [n, es, X]);
-  let [eu, ed] = (0, C.ZP)(e => [eh.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(ef.R.GUILD_HEADER_TOOLTIPS)], u.X), eg = (0, I.Z)(o), em = (0, f.s9z)(f.JQI), eb = (0, d.e7)([$.Z], () => $.Z.hasLayers()), e_ = (0, d.e7)([F.Z], () => F.Z.shouldShow(ev)), eO = m && (null == o ? void 0 : o.premiumProgressBarEnabled) === !1 && !el.s.isDisallowPopupsSet(), eE = (0, d.e7)([Q.Z], () => Q.Z.getMemberCount(n)), ey = m && null != eE && eE >= 30 && (null == o ? void 0 : o.premiumProgressBarEnabled) === !1 && !el.s.isDisallowPopupsSet(), eI = b && null != o && (o.features.has(ep.oNc.COMMUNITY) || null != eE && eE > 50), eS = (0, A.Z)(n), eN = (null == o ? void 0 : o.features.has(ep.oNc.HUB)) === !0, eT = m && (null == o ? void 0 : o.features.has(ep.oNc.DISCOVERABLE)) === !0, eP = (0, v.Q)(), ej = (m || (null == o ? void 0 : o.premiumTier) === ep.Eu4.NONE) && !el.s.isDisallowPopupsSet() && !eP, eA = (0, d.e7)([x.Z, $.Z], () => null != o && null != R && m && !$.Z.hasLayers() && x.Z.shouldShowGuildTemplateDirtyTooltip(n)), eZ = (0, d.e7)([Y.Z], () => Y.Z.getChannel(a)), {
-    isPopoutOpen: ex
+  let [eu, ed] = (0, C.ZP)(e => [eh.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(ef.R.GUILD_HEADER_TOOLTIPS)], u.X), eg = (0, I.Z)(o), em = (0, f.s9z)(f.JQI), eb = (0, d.e7)([$.Z], () => $.Z.hasLayers()), e_ = (0, d.e7)([F.Z], () => F.Z.shouldShow(ev)), eO = m && (null == o ? void 0 : o.premiumProgressBarEnabled) === !1 && !el.s.isDisallowPopupsSet(), eE = (0, d.e7)([Q.Z], () => Q.Z.getMemberCount(n)), ey = m && null != eE && eE >= 30 && (null == o ? void 0 : o.premiumProgressBarEnabled) === !1 && !el.s.isDisallowPopupsSet(), eI = b && null != o && (o.features.has(ep.oNc.COMMUNITY) || null != eE && eE > 50), eS = (0, A.Z)(n), eN = (null == o ? void 0 : o.features.has(ep.oNc.HUB)) === !0, eT = m && (null == o ? void 0 : o.features.has(ep.oNc.DISCOVERABLE)) === !0, eP = (0, v.Q)(), ej = (m || (null == o ? void 0 : o.premiumTier) === ep.Eu4.NONE) && !el.s.isDisallowPopupsSet() && !eP, eA = (0, d.e7)([Z.Z, $.Z], () => null != o && null != R && m && !$.Z.hasLayers() && Z.Z.shouldShowGuildTemplateDirtyTooltip(n)), ex = (0, d.e7)([Y.Z], () => Y.Z.getChannel(a)), {
+    isPopoutOpen: eZ
   } = (0, T.y)(), ew = null != (t = null == o ? void 0 : o.features.has(ep.oNc.COMMUNITY)) && t, eL = (0, d.e7)([B.Z], () => !s().isEmpty(B.Z.getThreadsForGuild(n))), eR = ei.ZP.isNewUser(R), eD = ea && !eR;
   (0, P.Z)(o);
   let ek = (0, S.Nj)(p.z.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP),
@@ -535,7 +535,7 @@ function eS(e) {
     guild: o,
     scrollToChannel: h,
     selectedChannelId: l ? null : a,
-    selectedChannel: eZ,
+    selectedChannel: ex,
     selectedVoiceChannelId: g,
     voiceStates: c,
     rtcConnectedChannelId: eG,
@@ -554,11 +554,11 @@ function eS(e) {
     showRoleSubscriptionUpsell: eS,
     showHubPrivacySettingsTooltip: eN,
     showNewUnreadsBar: ew,
-    showActiveThreadsNotice: Z && null != eE && eE >= 200 && eL,
+    showActiveThreadsNotice: x && null != eE && eE >= 200 && eL,
     showGuildSoundboardPermissionUpsell: eI,
     showMediaChannelUpsell: eM,
     showTierTemplatesUpsell: eU,
-    isHeaderPopoutOpen: ex,
+    isHeaderPopoutOpen: eZ,
     enableStudyGroup: z,
     isGuildHeaderDismissibleTooltipShown: ed,
     canShowCoachMarkAtBottom: ea,

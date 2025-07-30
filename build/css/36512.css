@@ -1,6 +1,6 @@
 /**
   Module ID: 36512
-  Original File Name: 19b9883cb5631844
+  Original File Name: 54c82996897473b2
 **/
 .container_e512ac {
     background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
@@ -1057,6 +1057,21 @@
     min-height: 58px
 }
 
+.searchModeAndFiltersContainer_f3b986 {
+    align-items: center;
+    display: flex;
+    gap: 8px
+}
+
+.searchModeSelect_f3b986 {
+    background-color: var(--background-mod-faint);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-low);
+    min-height: 28px;
+    padding: 5px 10px
+}
+
 .searchHeaderTabList_f3b986 {
     align-items: center;
     display: grid;
@@ -1635,4 +1650,4 @@
     margin-right: 8px
 }
 
-/*# sourceMappingURL=19b9883cb5631844.css.map*/
+/*# sourceMappingURL=54c82996897473b2.css.map*/

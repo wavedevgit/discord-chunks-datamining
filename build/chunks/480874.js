@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => P
+  Z: () => T
 });
 var r = n(255367),
   i = n(73800),
@@ -8,96 +8,92 @@ var r = n(255367),
   a = n.n(l),
   o = n(91192),
   s = n(286379),
-  c = n(755721),
-  u = n(481060),
-  d = n(183126),
-  p = n(493773),
-  h = n(209613),
-  f = n(82295),
-  g = n(797614),
-  m = n(626135),
-  b = n(26373),
-  _ = n(486622),
-  O = n(488634),
-  E = n(110287),
-  y = n(355350),
-  v = n(307947),
-  I = n(125855),
-  C = n(687683),
-  S = n(981631),
-  N = n(388032),
-  T = n(39276);
+  c = n(481060),
+  u = n(183126),
+  d = n(493773),
+  p = n(209613),
+  h = n(82295),
+  f = n(797614),
+  g = n(626135),
+  m = n(26373),
+  b = n(486622),
+  _ = n(488634),
+  O = n(110287),
+  E = n(355350),
+  y = n(307947),
+  v = n(125855),
+  I = n(687683),
+  C = n(981631),
+  S = n(388032),
+  N = n(39276);
 
-function P() {
+function T() {
   let e = i.useRef(null),
-    t = (0, E.Z)(),
-    n = (0, y.w)(),
-    l = (0, b.V)(),
-    P = (0, d.N)(),
-    j = (0, h.Z)("message-requests-spam-list"),
+    t = (0, O.Z)(),
+    n = (0, E.w)(),
+    l = (0, m.V)(),
+    T = (0, u.N)(),
+    P = (0, p.Z)("message-requests-spam-list"),
     {
-      channelId: A
-    } = (0, O._)(),
-    Z = i.useCallback(() => {
-      (0, u.showToast)((0, u.createToast)(N.intl.string(N.t.EDYbS0), u.ToastType.FAILURE))
+      channelId: j
+    } = (0, _._)(),
+    A = i.useCallback(() => {
+      (0, c.showToast)((0, c.createToast)(S.intl.string(S.t.EDYbS0), c.ToastType.FAILURE))
     }, []),
     {
       rejectAll: x
-    } = (0, _.m)({
-      onError: Z
+    } = (0, b.m)({
+      onError: A
     }),
-    w = i.useCallback(() => {
+    Z = i.useCallback(() => {
       x(t.map(e => e.channel.id))
     }, [t, x]);
-  (0, p.ZP)(() => {
-    m.default.track(S.rMx.SPAM_MESSAGE_REQUESTS_VIEWED, {
+  (0, d.ZP)(() => {
+    g.default.track(C.rMx.SPAM_MESSAGE_REQUESTS_VIEWED, {
       num_spam_message_requests: n
-    }), g.Z.increment({
+    }), f.Z.increment({
       name: s.V.SPAM_MESSAGE_REQUEST_VIEW
     })
   });
-  let L = i.useCallback(e => {
+  let w = i.useCallback(e => {
       var n, i;
       let {
         row: o
       } = e, s = t[o], c = null == (i = t[o + 1]) || null == (n = i.channel) ? void 0 : n.id, u = s.channel.id;
-      return (0, r.jsx)(I.Z, {
+      return (0, r.jsx)(v.Z, {
         index: o,
         className: a()({
-          [T.selected]: null != A && A === u,
-          [T.siblingSelected]: null != A && A === c
+          [N.selected]: null != j && j === u,
+          [N.siblingSelected]: null != j && j === c
         }),
         channel: s.channel,
         user: s.user,
         hasSingleMessageRequest: l
       }, u)
-    }, [t, l, A]),
-    R = i.useCallback(() => (0, r.jsxs)(f.Z, {
-      className: T.sectionTitle,
-      children: [N.intl.format(N.t.C79Edn, {
+    }, [t, l, j]),
+    L = i.useCallback(() => (0, r.jsxs)(h.Z, {
+      className: N.sectionTitle,
+      children: [S.intl.format(S.t.C79Edn, {
         count: n
-      }), P && n > 0 ? (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(u.Text, {
-          className: T.titleDivider,
+      }), T && n > 0 ? (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)(c.Text, {
+          className: N.titleDivider,
           variant: "eyebrow",
           color: "header-secondary",
           tag: "span",
           children: "•"
-        }), (0, r.jsx)(c.zx, {
-          onClick: w,
-          look: c.iL.LINK,
-          color: c.Tt.LINK,
-          size: c.Ph.SMALL,
-          className: T.clearAllButton,
-          "aria-label": N.intl.string(N.t.p6t7RE),
-          children: N.intl.string(N.t.p6t7RE)
+        }), (0, r.jsx)(c.Avr, {
+          textVariant: "text-sm/normal",
+          text: S.intl.string(S.t.p6t7RE),
+          onClick: Z,
+          "aria-label": S.intl.string(S.t.p6t7RE)
         })]
       }) : null]
-    }, "message-requests-spam-title"), [n, w, P]);
-  return 0 === t.length ? (0, r.jsx)(v.Z, {
-    section: C.pS.SPAM
+    }, "message-requests-spam-title"), [n, Z, T]);
+  return 0 === t.length ? (0, r.jsx)(y.Z, {
+    section: I.pS.SPAM
   }) : (0, r.jsx)(o.bG, {
-    navigator: j,
+    navigator: P,
     children: (0, r.jsx)(o.SJ, {
       children: n => {
         var {
@@ -118,7 +114,7 @@ function P() {
           }
           return i
         }(n, ["ref", "role"]);
-        return (0, r.jsx)(u.aVo, function(e) {
+        return (0, r.jsx)(c.aVo, function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -136,19 +132,19 @@ function P() {
           }
           return e
         }({
-          className: T.list,
+          className: N.list,
           innerRole: l,
-          innerAriaLabel: N.intl.string(N.t.e7GWjY),
+          innerAriaLabel: S.intl.string(S.t.e7GWjY),
           ref: t => {
             var n;
             e.current = t, i.current = null != (n = null == t ? void 0 : t.getScrollerNode()) ? n : null
           },
           paddingTop: 24,
           paddingBottom: 24,
-          sectionHeight: C.oi,
-          rowHeight: C.WN,
-          renderSection: R,
-          renderRow: L,
+          sectionHeight: I.oi,
+          rowHeight: I.WN,
+          renderSection: L,
+          renderRow: w,
           sections: [t.length],
           chunkSize: 30,
           fade: !0

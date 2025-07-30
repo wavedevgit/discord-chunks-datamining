@@ -1,6 +1,6 @@
 /**
   Module ID: 60173
-  Original File Name: 74ac5dfc3de15e77
+  Original File Name: 27ef4536e4224b99
 **/
 @keyframes placeholderPulse_c8ffbb {
     0% {
@@ -5767,7 +5767,8 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 
 .inline_b50d96 {
     align-items: center;
-    display: flex
+    display: flex;
+    gap: var(--space-8)
 }
 
 .divider_b50d96 {
@@ -12991,4 +12992,4 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     position: relative
 }
 
-/*# sourceMappingURL=74ac5dfc3de15e77.css.map*/
+/*# sourceMappingURL=27ef4536e4224b99.css.map*/

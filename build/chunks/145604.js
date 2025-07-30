@@ -30,8 +30,8 @@ var r = n(255367),
   P = n(509003),
   j = n(427679),
   A = n(695346),
-  Z = n(592125),
-  x = n(77498),
+  x = n(592125),
+  Z = n(77498),
   w = n(271383),
   L = n(430824),
   R = n(131951),
@@ -134,7 +134,7 @@ class J extends i.PureComponent {
     let B = null != w && null != w.distributor && null != w.sku && null != e.runningGame && e.runningGame.distributor === w.distributor && w.sku === e.runningGame.sku,
       H = null != e.runningGame && null != w && e.runningGame.isLauncher !== w.isLauncher;
     if (e.runningGame !== w && null != w && !w.isLauncher && (!B || H)) {
-      let e = x.Z.getGameByName(w.name),
+      let e = Z.Z.getGameByName(w.name),
         c = _.ZP.getOverrideForGame(w),
         u = L.Z.getGuildIds(),
         p = A.SE.getSetting(),
@@ -190,7 +190,7 @@ class J extends i.PureComponent {
             hidden_by_distributor: w.hidden,
             game_metadata: (0, P.sD)(w)
           }), null != l && _.ZP.addExecutableTrackedByAnalytics(l)
-        }, 1e4), null != w.name && null != R && x.Z.shouldReport(w.name)) {
+        }, 1e4), null != w.name && null != R && Z.Z.shouldReport(w.name)) {
         let e = w.name;
         a.Z.identifyGame(R, e).then(e => a.Z.reportUnverifiedGame(e)).catch(e => new m.Z("AutoAnalytics").error("Cannot identify game", e))
       }
@@ -208,7 +208,7 @@ class J extends i.PureComponent {
     }
     if (V && null != M && (!e.connected || M !== e.selectedChannelId || U !== e.selectedGuildId)) {
       let t = e.selectedChannelId,
-        n = Z.Z.getChannel(t),
+        n = x.Z.getChannel(t),
         r = L.Z.getGuild(null == n ? void 0 : n.getGuildId());
       if (null != t && null != n && null != r && r.publicUpdatesChannelId === t) {
         let e = D.Z.getMessages(t),
@@ -241,10 +241,10 @@ class J extends i.PureComponent {
 }
 
 function $() {
-  let [e, t] = (0, l.Wu)([M.Z], () => [M.Z.getVoiceChannelId(), M.Z.getChannelId()], []), n = (0, l.e7)([Z.Z], () => Z.Z.getChannel(t), [t]), a = (0, l.e7)([g.Z], () => (null == n ? void 0 : n.id) != null && g.Z.getChatOpen(n.id), [n]), o = null == n ? void 0 : n.nsfw, s = (0, l.e7)([Z.Z], () => Z.Z.getChannel(e), [e]), f = (0, l.e7)([U.Z], () => U.Z.getGuildId(), []), m = (0, l.e7)([L.Z], () => L.Z.getGuild(f), [f]), b = (0, l.e7)([B.default], () => B.default.getCurrentUser(), []), y = (0, l.e7)([w.ZP], () => {
+  let [e, t] = (0, l.Wu)([M.Z], () => [M.Z.getVoiceChannelId(), M.Z.getChannelId()], []), n = (0, l.e7)([x.Z], () => x.Z.getChannel(t), [t]), a = (0, l.e7)([g.Z], () => (null == n ? void 0 : n.id) != null && g.Z.getChatOpen(n.id), [n]), o = null == n ? void 0 : n.nsfw, s = (0, l.e7)([x.Z], () => x.Z.getChannel(e), [e]), f = (0, l.e7)([U.Z], () => U.Z.getGuildId(), []), m = (0, l.e7)([L.Z], () => L.Z.getGuild(f), [f]), b = (0, l.e7)([B.default], () => B.default.getCurrentUser(), []), y = (0, l.e7)([w.ZP], () => {
     var e, t;
     return null != b && null != f && null != (t = null == (e = w.ZP.getMember(f, b.id)) ? void 0 : e.isPending) && t
-  }, [b, f]), C = (0, l.e7)([F.ZP], () => F.ZP.getState().section, []), S = (0, l.e7)([H.Z], () => H.Z.getHomeLink(), []), N = (0, l.e7)([O.Z], () => O.Z.isConnected(), []), [T, P] = (0, l.Wu)([R.Z], () => [R.Z.isVideoEnabled(), R.Z.isScreenSharing()], []), j = (0, l.e7)([G.Z], () => G.Z.getPrimaryActivity(), []), A = (0, l.e7)([_.ZP], () => _.ZP.getCurrentGameForAnalytics(), []), x = (0, E.Z)(f), D = (0, l.e7)([I.Z], () => I.Z.getMessageRequestsCount(), []), k = {
+  }, [b, f]), C = (0, l.e7)([F.ZP], () => F.ZP.getState().section, []), S = (0, l.e7)([H.Z], () => H.Z.getHomeLink(), []), N = (0, l.e7)([O.Z], () => O.Z.isConnected(), []), [T, P] = (0, l.Wu)([R.Z], () => [R.Z.isVideoEnabled(), R.Z.isScreenSharing()], []), j = (0, l.e7)([G.Z], () => G.Z.getPrimaryActivity(), []), A = (0, l.e7)([_.ZP], () => _.ZP.getCurrentGameForAnalytics(), []), Z = (0, E.Z)(f), D = (0, l.e7)([I.Z], () => I.Z.getMessageRequestsCount(), []), k = {
     selectedChannelId: t,
     isNSFWChannel: o,
     selectedGuildId: f,
@@ -265,7 +265,7 @@ function $() {
     gameExeName: null != A ? A.exeName : null,
     hasPreviewEnabled: null == m ? void 0 : m.features.has(q.oNc.PREVIEW_ENABLED),
     isMemberPending: y,
-    postableChannelCount: x,
+    postableChannelCount: Z,
     isTextInVoice: a,
     numMessageRequests: D
   }, z = i.useRef(k);
@@ -282,7 +282,7 @@ function $() {
   } = k;
   i.useEffect(() => {
     if (Y && null != ee) {
-      let e = (0, d.K)(Z.Z.getChannel(ee), !0);
+      let e = (0, d.K)(x.Z.getChannel(ee), !0);
       (0, u.yw)(q.rMx.CHANNEL_OPENED, Q({}, e, (0, u.$H)(ee))), (0, p.a)(q.rMx.CHANNEL_OPENED_CLICKSTREAM, {
         channelId: ee
       }), z.current.isTextInVoice && (0, u.yw)(q.rMx.TEXT_IN_VOICE_OPENED, {

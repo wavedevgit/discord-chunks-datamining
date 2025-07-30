@@ -1,6 +1,6 @@
 /** Chunk was on 36512 **/
 r.d(t, {
-  M: () => _,
+  M: () => y,
   Z: () => x
 }), r(415506), r(781311), r(388685);
 var n, s = r(255367),
@@ -95,11 +95,11 @@ let m = e => {
   })
 };
 
-function y(e) {
+function _(e) {
   e.stopPropagation(), e.preventDefault()
 }
 
-function _(e, t, r) {
+function y(e, t, r) {
   return {
     id: "".concat(e, "-").concat(t),
     role: "option",
@@ -118,7 +118,7 @@ class S extends(n = l.PureComponent) {
       onHighlightQuery: c,
       hideQuery: u,
       searchFavorites: p,
-      showDMQueryText: y
+      showDMQueryText: _
     } = this.props;
     if (e || u) return null;
     let S = -1 === n;
@@ -127,13 +127,13 @@ class S extends(n = l.PureComponent) {
         className: i()(d.queryContainer, {
           [d.focused]: S
         })
-      }, _(r, -1, S)), {
+      }, y(r, -1, S)), {
         onMouseEnter: c,
         onClick: l,
         children: [(0, s.jsx)(m, {
           query: t,
           searchFavorites: p,
-          showDMQueryText: y
+          showDMQueryText: _
         }), (0, s.jsx)("div", {
           className: d.queryShortcut,
           "aria-hidden": !0,
@@ -147,7 +147,7 @@ class S extends(n = l.PureComponent) {
         className: i()(d.queryContainer, {
           [d.focused]: S
         })
-      }, _(r, -1, S)), {
+      }, y(r, -1, S)), {
         onMouseEnter: c,
         onClick: a,
         children: [(0, s.jsx)("div", {
@@ -193,7 +193,7 @@ class S extends(n = l.PureComponent) {
       style: {
         width: n
       },
-      onMouseDown: y,
+      onMouseDown: _,
       role: "listbox",
       id: r,
       tabIndex: -1,
@@ -220,7 +220,7 @@ class S extends(n = l.PureComponent) {
           channelContainerClassName: d.channelContainer,
           textContainerClassName: d.searchResultNameContainer
         });
-      return (0, s.jsx)(o.P3F, g(f({}, _(e, -1, -1 === n)), {
+      return (0, s.jsx)(o.P3F, g(f({}, y(e, -1, -1 === n)), {
         className: d.inChannelOptionContainer,
         onClick: l,
         children: (0, s.jsx)(o.Text, {

@@ -109,8 +109,8 @@ function P(e) {
     modalDismissibleContent: P,
     modalTopExtra: j,
     header: A,
-    headerClassName: Z,
-    subHeader: x,
+    headerClassName: x,
+    subHeader: Z,
     subHeaderExtra: w,
     featureCards: L,
     changeLogId: R,
@@ -193,7 +193,7 @@ function P(e) {
       className: v.content,
       children: [(0, r.jsx)(s.X6q, {
         variant: "display-md",
-        className: a()(v.headerText, Z),
+        className: a()(v.headerText, x),
         children: A
       }), "video" === l.type ? (0, r.jsx)(h.Z, {
         className: a()(v.video, N),
@@ -254,7 +254,7 @@ function P(e) {
         variant: "text-md/normal",
         color: "text-secondary",
         className: v.subHeader,
-        children: [x, null == w ? void 0 : w()]
+        children: [Z, null == w ? void 0 : w()]
       }), null != k && (0, r.jsx)(s.X6q, {
         variant: "heading-md/medium",
         className: v.bodyText,

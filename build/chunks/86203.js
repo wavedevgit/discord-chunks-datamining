@@ -4,7 +4,7 @@ n.d(t, {
 });
 var r = n(255367);
 n(73800);
-var i = n(755721),
+var i = n(481060),
   l = n(493683),
   a = n(726521),
   o = n(868807),
@@ -13,32 +13,28 @@ var i = n(755721),
 function c(e) {
   let {
     channel: t,
-    buttonSize: n = i.Ph.TINY,
-    color: c = i.zx.Colors.RED,
-    className: u,
-    onReportClick: d,
-    onReportSubmit: p,
-    onMouseEnter: h,
-    onMouseLeave: f
+    onReportClick: n,
+    onReportSubmit: c,
+    onMouseEnter: u,
+    onMouseLeave: d
   } = e, {
-    error: m,
-    loaded: g,
-    message: b
+    error: p,
+    loaded: h,
+    message: f
   } = (0, o.a)(t);
-  if (null == b && (g || m)) return null;
-  let _ = () => {
-    null == p || p(), l.Z.closePrivateChannel(t.id)
+  if (null == f && (h || p)) return null;
+  let m = () => {
+    null == c || c(), l.Z.closePrivateChannel(t.id)
   };
-  return (0, r.jsx)(i.zx, {
-    className: u,
-    size: n,
-    color: c,
-    disabled: null == b,
+  return (0, r.jsx)(i.zxk, {
+    variant: "critical-primary",
+    size: "sm",
+    disabled: null == f,
     onClick: e => {
-      e.stopPropagation(), null == d || d(), null != b && (0, a.WL)(b, _)
+      e.stopPropagation(), null == n || n(), null != f && (0, a.WL)(f, m)
     },
-    onMouseEnter: h,
-    onMouseLeave: f,
-    children: s.intl.string(s.t["+78Pfn"])
+    onMouseEnter: u,
+    onMouseLeave: d,
+    text: s.intl.string(s.t["+78Pfn"])
   })
 }

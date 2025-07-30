@@ -2,21 +2,21 @@
 r.d(t, {
   FZ: () => N,
   Hl: () => L,
-  NJ: () => Z,
+  NJ: () => M,
   R8: () => w,
   Sq: () => I,
   Wg: () => D,
   Zn: () => R,
   c2: () => A,
-  eE: () => M,
+  eE: () => Z,
   iE: () => F,
   iK: () => k,
   lv: () => P,
   nR: () => T,
   q0: () => l.a,
-  x0: () => O,
+  x0: () => E,
   xb: () => W,
-  yd: () => E
+  yd: () => O
 }), r(388685), r(539854);
 var n = r(399834),
   s = r(598335),
@@ -32,9 +32,9 @@ var n = r(399834),
   f = r(599552),
   g = r.n(f),
   m = r(544611),
-  y = r.n(m),
-  _ = r(803068),
-  S = r.n(_),
+  _ = r.n(m),
+  y = r(803068),
+  S = r.n(y),
   x = r(561099),
   b = r.n(x),
   v = r(655e3),
@@ -56,7 +56,7 @@ function j(e, t, r, s) {
   })
 }
 
-function O(e, t, r, s) {
+function E(e, t, r, s) {
   let l, a, o = t.getCurrentContent(),
     c = o.getFirstBlock(),
     u = c.getText();
@@ -71,7 +71,7 @@ function O(e, t, r, s) {
   return l.isCollapsed() ? (o = n.Modifier.insertText(o, l, e, h, d), a = "insert-characters") : (o = n.Modifier.replaceText(o, l, e, h, d), a = "replace-characters"), n.EditorState.push(t, o, a)
 }
 
-function E(e, t) {
+function O(e, t) {
   switch (e) {
     case "delete":
       return b()(t);
@@ -93,7 +93,7 @@ function R(e, t) {
     case "transpose-characters":
       return C()(t);
     case "move-selection-to-start-of-block":
-      return y()(t);
+      return _()(t);
     case "move-selection-to-end-of-block":
       return g()(t);
     default:
@@ -152,7 +152,7 @@ function N(e) {
 
 function A(e, t) {
   let r = I(t);
-  return O(e, t, 0, r.length)
+  return E(e, t, 0, r.length)
 }
 
 function k(e, t) {
@@ -160,11 +160,11 @@ function k(e, t) {
   return r = (r = r.set("focusOffset", e)).set("anchorOffset", e), n.EditorState.forceSelection(t, r)
 }
 
-function Z(e) {
+function M(e) {
   return k(e.getCurrentContent().getFirstBlock().getText().length, e)
 }
 
-function M(e) {
+function Z(e) {
   return k(0, e)
 }
 
@@ -184,7 +184,7 @@ function L(e) {
     r = I(e);
   if (r.length > t) {
     let s = e.getSelection();
-    e = O("", e, t, r.length), s.getAnchorOffset() > t && (s = s.set("anchorOffset", t)), s.getFocusOffset() > t && (s = s.set("focusOffset", t)), e = n.EditorState.forceSelection(e, s)
+    e = E("", e, t, r.length), s.getAnchorOffset() > t && (s = s.set("anchorOffset", t)), s.getFocusOffset() > t && (s = s.set("focusOffset", t)), e = n.EditorState.forceSelection(e, s)
   }
   return e
 }

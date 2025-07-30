@@ -31,8 +31,8 @@ var r = n(255367),
   P = n(93237),
   j = n(924540),
   A = n(474486),
-  Z = n(497334),
-  x = n(119850),
+  x = n(497334),
+  Z = n(119850),
   w = n(938736),
   L = n(227140),
   R = n(474936),
@@ -42,7 +42,7 @@ var r = n(255367),
 let U = e => {
     let {
       selected: t
-    } = e, n = (0, a.e7)([g.default], () => g.default.getCurrentUser()), r = (0, a.e7)([m.Z], () => m.Z.getPremiumTypeSubscription()), i = (0, N.N)(), l = (0, S.Ng)(), o = (0, E.Vi)(), s = (0, x.V)(), c = (0, _.Qo)(n, r), u = (0, a.e7)([O.Z], () => O.Z.getCreatedAtOverride()), d = t || null != i || null != l || o || null != s || c, p = null != u ? u : null == n ? void 0 : n.createdAt;
+    } = e, n = (0, a.e7)([g.default], () => g.default.getCurrentUser()), r = (0, a.e7)([m.Z], () => m.Z.getPremiumTypeSubscription()), i = (0, N.N)(), l = (0, S.Ng)(), o = (0, E.Vi)(), s = (0, Z.V)(), c = (0, _.Qo)(n, r), u = (0, a.e7)([O.Z], () => O.Z.getCreatedAtOverride()), d = t || null != i || null != l || o || null != s || c, p = null != u ? u : null == n ? void 0 : n.createdAt;
     return d || null != n && null != p && Date.now() - p.getTime() > 12096e5
   },
   G = e => {
@@ -94,7 +94,7 @@ let U = e => {
       er = (0, P.HI)({
         trialOffer: $
       }),
-      ei = (0, x.V)(),
+      ei = (0, Z.V)(),
       el = (0, w.Kn)("NitroTabButton"),
       {
         fractionalState: ea,
@@ -137,7 +137,7 @@ let U = e => {
       isTabSelected: B,
       badgeCopy: M.intl.string(M.t.y2b7CA),
       offerExpiresAt: null
-    }), O = 2) : et ? (n = (0, r.jsx)(Z.S, {
+    }), O = 2) : et ? (n = (0, r.jsx)(x.S, {
       expiresAt: es
     }), O = 4) : null != ei ? (n = (0, r.jsx)(L.Z, {
       copy: ei,
