@@ -34,7 +34,7 @@ let c = {
     let {
       activeStreams: t
     } = e;
-    return t.filter(e => e.state === o.jm8.FAILED).map(e => l({
+    return t.filter(e => e.state === o.jm8.FAILED && null == e.errorCode).map(e => l({
       type: i.u.STREAM_FAILED_TO_START
     }, (0, a.rT)((0, r.V9)(e))))
   },

@@ -477,12 +477,14 @@ function tV() {
       te = !0, tt = !0, r.emitChange(), tn.stop(), tn.start(eZ, () => {
         tt = !1, r.emitChange()
       })
-    })), e.on(b.Sh.DesktopSourceEnd, () => {
+    })), e.on(b.Sh.DesktopSourceEnd, (t, n) => {
       v.Z.dispatch({
         type: "MEDIA_ENGINE_SET_GO_LIVE_SOURCE",
         settings: {
           context: e.context
-        }
+        },
+        endReason: t,
+        errorCode: n
       })
     }), e.on(b.Sh.InteractionRequired, e => {
       v.Z.dispatch({
@@ -558,10 +560,12 @@ function tV() {
       inputVolume: e,
       outputVolume: t
     })
-  }), eK.on(b.aB.DesktopSourceEnd, () => {
+  }), eK.on(b.aB.DesktopSourceEnd, (e, t) => {
     v.Z.dispatch({
       type: "MEDIA_ENGINE_SET_GO_LIVE_SOURCE",
-      settings: null
+      settings: null,
+      endReason: e,
+      errorCode: t
     })
   }), eK.on(b.aB.AudioPermission, e => {
     ty = !0, v.Z.dispatch({

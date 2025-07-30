@@ -129,8 +129,9 @@ function x(e, t) {
 }
 
 function M(e) {
-  let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
-  k(e, t), s.Z.dispatch({
+  let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
+    n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2];
+  n && k(e, t), s.Z.dispatch({
     type: "STREAM_STOP",
     streamKey: e,
     appContext: __OVERLAY__ ? T.IlC.OVERLAY : T.IlC.APP
