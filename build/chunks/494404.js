@@ -23,9 +23,9 @@ var n = r(255367),
   S = r(592125),
   x = r(375954),
   b = r(496675),
-  C = r(933429),
-  j = r(451478),
-  v = r(626135),
+  v = r(933429),
+  C = r(451478),
+  j = r(626135),
   O = r(585483),
   E = r(981631),
   R = r(388032),
@@ -166,9 +166,9 @@ function M(e) {
     scrollerClassName: x,
     className: b,
     listName: N
-  } = e, A = s.useRef(null), k = (0, f.Z)(N, A), Z = (0, u.e7)([C.ZP], () => C.ZP.hasNotice()), M = (0, u.e7)([j.Z], () => j.Z.windowSize());
+  } = e, A = s.useRef(null), k = (0, f.Z)(N, A), Z = (0, u.e7)([v.ZP], () => v.ZP.hasNotice()), M = (0, u.e7)([C.Z], () => C.Z.windowSize());
   s.useEffect(() => {
-    v.default.track(E.rMx.OPEN_POPOUT, {
+    j.default.track(E.rMx.OPEN_POPOUT, {
       type: t
     })
   }, [t]), s.useEffect(() => {
@@ -221,8 +221,8 @@ function M(e) {
     className: I.scrollingFooterWrap,
     children: y()
   }));
-  let H = null == S ? void 0 : S(),
-    W = L && null != H ? (0, n.jsx)("div", {
+  let W = null == S ? void 0 : S(),
+    H = L && null != W ? (0, n.jsx)("div", {
       className: I.footer,
       children: (0, n.jsx)(g.Z, {
         style: {
@@ -230,7 +230,7 @@ function M(e) {
           paddingTop: 10,
           paddingBottom: 10
         },
-        children: H
+        children: W
       })
     }) : null,
     B = {
@@ -300,7 +300,7 @@ function M(e) {
             }
           })
         }), F]
-      }), W]
+      }), H]
     })
   })
 }
@@ -319,9 +319,9 @@ function w(e) {
     renderHeader: f,
     renderEmptyState: g,
     renderMessage: b,
-    getProTip: C,
-    scrollerClassName: j,
-    className: v,
+    getProTip: v,
+    scrollerClassName: C,
+    className: j,
     onCloseMessage: O,
     listName: R
   } = e, P = (0, u.e7)([x.Z], () => {
@@ -346,8 +346,8 @@ function w(e) {
     channel: l
   })), [a, l]);
   return (0, n.jsx)(M, {
-    className: v,
-    scrollerClassName: j,
+    className: j,
+    scrollerClassName: C,
     items: N,
     loading: o,
     analyticsName: t,
@@ -355,7 +355,7 @@ function w(e) {
     renderHeader: f,
     hasMore: i,
     loadMore: c,
-    getProTip: C,
+    getProTip: v,
     renderItem: function(e) {
       let {
         message: t,

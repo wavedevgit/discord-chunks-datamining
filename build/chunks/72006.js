@@ -15,7 +15,7 @@ r.d(t, {
   nR: () => T,
   q0: () => l.a,
   x0: () => O,
-  xb: () => H,
+  xb: () => W,
   yd: () => E
 }), r(388685), r(539854);
 var n = r(399834),
@@ -37,10 +37,10 @@ var n = r(399834),
   S = r.n(_),
   x = r(561099),
   b = r.n(x),
-  C = r(655e3),
-  j = r.n(C);
+  v = r(655e3),
+  C = r.n(v);
 
-function v(e, t, r, s) {
+function j(e, t, r, s) {
   let l = s.getCurrentContent(),
     a = null;
   null != e && (a = (l = l.createEntity(...e)).getLastCreatedEntityKey());
@@ -91,7 +91,7 @@ function E(e, t) {
 function R(e, t) {
   switch (e) {
     case "transpose-characters":
-      return j()(t);
+      return C()(t);
     case "move-selection-to-start-of-block":
       return y()(t);
     case "move-selection-to-end-of-block":
@@ -129,14 +129,14 @@ function P(e, t) {
           start: l,
           end: a
         } = e, i = e.getFullMatch();
-        !r.processed && (r.type === s && r.start === l && r.text === i ? (r.processed = !0, n = !0) : (l >= r.start && l < r.end || a > r.start && a <= r.end) && (r.processed = !0, t = v(null, r.start, r.end, t)))
+        !r.processed && (r.type === s && r.start === l && r.text === i ? (r.processed = !0, n = !0) : (l >= r.start && l < r.end || a > r.start && a <= r.end) && (r.processed = !0, t = j(null, r.start, r.end, t)))
       }), n) return;
     let s = r[e.type];
-    t = v([e.type, null != s && s.mutable ? "MUTABLE" : "IMMUTABLE", {
+    t = j([e.type, null != s && s.mutable ? "MUTABLE" : "IMMUTABLE", {
       token: e
     }], e.start, e.end, t)
   }), a.forEach(e => {
-    e.processed || (t = v(null, e.start, e.end, t))
+    e.processed || (t = j(null, e.start, e.end, t))
   }), t
 }
 
@@ -207,6 +207,6 @@ function F(e) {
   l < e.scrollLeft ? e.scrollLeft = l - 10 : l > e.scrollLeft + e.offsetWidth && (e.scrollLeft = l - e.offsetWidth + 3)
 }
 
-function H(e) {
+function W(e) {
   return 0 === I(e).length
 }
