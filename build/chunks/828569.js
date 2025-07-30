@@ -11,15 +11,15 @@ var t = n(255367),
   a = n(481060),
   p = n(570140),
   u = n(355467),
-  f = n(821849),
-  d = n(15640),
+  d = n(821849),
+  f = n(15640),
   m = n(563132),
   j = n(409813),
   _ = n(104494),
-  O = n(639119),
-  h = n(767714),
-  b = n(165583),
-  g = n(185139),
+  g = n(639119),
+  O = n(767714),
+  h = n(165583),
+  b = n(185139),
   x = n(263954),
   P = n(706454),
   y = n(853872),
@@ -60,17 +60,18 @@ let N = e => {
       isLoading: i,
       price: s,
       onClose: p
-    } = e, u = (0, l.e7)([P.default], () => P.default.locale), f = null != r || null != o;
+    } = e, u = (0, l.e7)([P.default], () => P.default.locale), d = null != r || null != o;
     return (0, t.jsxs)("div", {
       className: E.wrapper,
       children: [(0, t.jsx)(a.olH, {
+        "data-migration-pending": !0,
         onClick: p,
         className: E.closeButton
-      }), f && (0, t.jsx)(b.dz, {
+      }), d && (0, t.jsx)(h.dz, {
         className: E.premiumTrialBadge
       }), (0, t.jsx)("img", {
         className: c()(E.heroImage, {
-          [E.heroImageWithTrialOffer]: f
+          [E.heroImageWithTrialOffer]: d
         }),
         src: n(178632),
         alt: ""
@@ -101,13 +102,14 @@ let N = e => {
       section: v.jXE.STICKER_PREMIUM_TIER_2_UPSELL_MODAL
     };
     return (0, t.jsxs)(a.mzw, {
+      "data-migration-pending": !0,
       className: E.footer,
       children: [(0, t.jsx)(a.zxk, {
         variant: "secondary",
         size: "sm",
         text: S.intl.string(S.t.cpT0Cg),
         onClick: o
-      }), (0, t.jsx)(h.Z, {
+      }), (0, t.jsx)(O.Z, {
         textOptions: {
           textOverride: null != r || null != n ? S.intl.string(S.t["Gd/XHB"]) : void 0
         },
@@ -141,17 +143,17 @@ function R(e) {
       }
       return o
     }(e, ["onClose"]);
-  let s = (0, d.V)(),
-    h = (0, l.e7)([y.Z], () => y.Z.hasFetchedPaymentSources),
-    b = s && h,
-    x = (0, O.N)(),
+  let s = (0, f.V)(),
+    O = (0, l.e7)([y.Z], () => y.Z.hasFetchedPaymentSources),
+    h = s && O,
+    x = (0, g.N)(),
     P = (0, _.Ng)();
   o.useEffect(() => {
     p.Z.wait(() => {
-      (0, u.tZ)(), (0, f.Y2)(null, null, v.JjL.DISCOVERY)
+      (0, u.tZ)(), (0, d.Y2)(null, null, v.JjL.DISCOVERY)
     })
   }, []);
-  let k = b ? C.ZP.getDefaultPrice(w.Xh.PREMIUM_MONTH_TIER_2) : null;
+  let k = h ? C.ZP.getDefaultPrice(w.Xh.PREMIUM_MONTH_TIER_2) : null;
   return (0, t.jsx)(m.PaymentContextProvider, {
     activeSubscription: null,
     stepConfigs: [],
@@ -173,15 +175,17 @@ function R(e) {
         })
       }
       return e
-    }({}, c), n = n = {
+    }({
+      "data-migration-pending": !0
+    }, c), n = n = {
       "aria-labelledby": "sticker-pack-premium-upsell-modal-header",
       parentComponent: "StickerPackPremiumUpsellModal",
-      children: (0, t.jsx)(g.Z, {
+      children: (0, t.jsx)(b.Z, {
         hideBreadcrumbs: !0,
         body: (0, t.jsx)(T, {
           trialOffer: x,
           discountOffer: P,
-          isLoading: !b,
+          isLoading: !h,
           price: k,
           onClose: i
         }),

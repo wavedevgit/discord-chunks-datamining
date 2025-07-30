@@ -53,7 +53,7 @@ function F(e) {
       a = Z.Z.getCurrentlySelectedChannelId(),
       o = S.ZP.getCurrentSidebarChannelId(null == (n = t.messageReference) ? void 0 : n.channel_id),
       s = a === l && o === (null == r ? void 0 : r.id);
-    null == r || null == i || s || null == l || (I.Z.openThreadAsSidebar({
+    null == r || null == i || s || null == l || (I.Z.openModReportAsSidebar({
       channelId: r.id,
       baseChannelId: l,
       guildId: r.guild_id

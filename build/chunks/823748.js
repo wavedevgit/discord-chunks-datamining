@@ -408,6 +408,12 @@ class ts extends i.PureComponent {
             channelId: i.channelId
           });
           break;
+        case eO.tI.VIEW_MOD_REPORT:
+          e = (0, r.jsx)(eA.Z, {
+            channelId: i.channelId,
+            baseChannelId: i.baseChannelId
+          });
+          break;
         case eO.tI.VIEW_CHANNEL:
         case eO.tI.VIEW_MESSAGE_REQUEST:
         default:
