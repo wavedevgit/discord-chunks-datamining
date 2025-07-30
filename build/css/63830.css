@@ -1,6 +1,6 @@
 /**
   Module ID: 63830
-  Original File Name: d1f11cdbfa82a63c
+  Original File Name: d8e2984e82071d52
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -336,6 +336,19 @@
 
 .images-dark .noResultsImage_a9e706.alt_a9e706 {
     background-image: url(/assets/140c2a4c9ce5623d.svg)
+}
+
+.paginationLimitTooltipText_a9e706 {
+    display: flex;
+    justify-content: center
+}
+
+.paginationLimitTooltip_a9e706 {
+    max-width: 200px
+}
+
+.paginationLimitHeader_a9e706 {
+    margin-bottom: 16px
 }
 
 .wrapper_b76891 {
@@ -1224,4 +1237,4 @@
     align-items: stretch
 }
 
-/*# sourceMappingURL=d1f11cdbfa82a63c.css.map*/
+/*# sourceMappingURL=d8e2984e82071d52.css.map*/

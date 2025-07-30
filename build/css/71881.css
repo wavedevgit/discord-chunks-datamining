@@ -1,6 +1,6 @@
 /**
   Module ID: 71881
-  Original File Name: 68ca2b3a10f8edda
+  Original File Name: b3deb31b80008be1
 **/
 .buttonsContainer_a8b931 {
     display: flex;
@@ -1192,6 +1192,19 @@
     background-image: url(/assets/140c2a4c9ce5623d.svg)
 }
 
+.paginationLimitTooltipText_a9e706 {
+    display: flex;
+    justify-content: center
+}
+
+.paginationLimitTooltip_a9e706 {
+    max-width: 200px
+}
+
+.paginationLimitHeader_a9e706 {
+    margin-bottom: 16px
+}
+
 .container__394db {
     align-items: center;
     display: block;
@@ -1313,4 +1326,4 @@
     padding-top: var(--space-16)
 }
 
-/*# sourceMappingURL=68ca2b3a10f8edda.css.map*/
+/*# sourceMappingURL=b3deb31b80008be1.css.map*/

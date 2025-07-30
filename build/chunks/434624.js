@@ -26,8 +26,8 @@ let g = i.memo(function(e) {
         me_burst: E,
         burst_count: C,
         burst_colors: O,
-        readOnly: y,
-        isLurking: v,
+        readOnly: v,
+        isLurking: y,
         isGuest: x,
         isPendingMember: I,
         type: j,
@@ -57,7 +57,7 @@ let g = i.memo(function(e) {
     return (0, r.jsxs)("div", {
       className: a()(A.reaction, A.reactionInner, g, {
         [A.reactionMe]: N,
-        [A.reactionReadOnly]: y && !v && !I && !x
+        [A.reactionReadOnly]: v && !y && !I && !x
       }),
       style: R,
       children: [(0, r.jsx)(s.Z, {

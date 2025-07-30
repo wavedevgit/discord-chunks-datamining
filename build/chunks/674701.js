@@ -21,8 +21,8 @@ var r, i = n(255367),
   E = n(28546),
   C = n(963249),
   O = n(594174),
-  y = n(626135),
-  v = n(51144),
+  v = n(626135),
+  y = n(51144),
   x = n(479446),
   I = n(795448),
   j = n(441623),
@@ -107,7 +107,7 @@ function D(e) {
             color: V ? "header-primary" : "always-white",
             lineClamp: 3,
             children: t === T.hX.FRIEND_ANNIVERSARY ? w.intl.formatToPlainString(w.t.BWJvAA, {
-              friendUserName: v.ZP.getName(r)
+              friendUserName: y.ZP.getName(r)
             }) : (0, x.Ou)(t)
           }), (0, i.jsx)(p.Text, {
             className: Y,
@@ -122,7 +122,7 @@ function D(e) {
         children: [null != U && (0, i.jsx)(d.zx, {
           className: o()(Z.button, J),
           onClick: e => {
-            e.stopPropagation(), y.default.track(N.rMx.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
+            e.stopPropagation(), v.default.track(N.rMx.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
               gift_intent_type: t,
               cta_type: U
             }), U === T.X2.VIEW_ALL ? f.Z.transitionToSection(N.pJs.ALL, {

@@ -21,8 +21,8 @@ var r = n(255367),
   E = n(626135),
   C = n(76535),
   O = n(866104),
-  y = n(886176),
-  v = n(981631),
+  v = n(886176),
+  y = n(981631),
   x = n(388032),
   I = n(24665);
 
@@ -38,7 +38,7 @@ function j(e) {
   } = (0, _.eD)(n), N = (0, _.ue)(n, {
     publishedOnly: !0
   }), P = i.useCallback(async () => {
-    E.default.track(v.rMx.GUILD_SHOP_EMBED_CLICKED, function(e) {
+    E.default.track(y.rMx.GUILD_SHOP_EMBED_CLICKED, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -55,7 +55,7 @@ function j(e) {
         })
       }
       return e
-    }({}, (0, p.hH)(n))), await (0, g.Z)(v.Z5c.SERVER_SHOP(n))
+    }({}, (0, p.hH)(n))), await (0, g.Z)(y.Z5c.SERVER_SHOP(n))
   }, [n]);
   (0, m.Z)({
     type: o.ImpressionTypes.VIEW,
@@ -75,7 +75,7 @@ function j(e) {
       size: 16
     }), (0, r.jsxs)("div", {
       className: I.serverShopLabel,
-      children: [(0, r.jsx)(y.Z, {
+      children: [(0, r.jsx)(v.Z, {
         height: "16px",
         width: "16px",
         color: s.Z.INTERACTIVE_NORMAL
@@ -132,7 +132,7 @@ function j(e) {
         onClick: P,
         children: (0, r.jsxs)("div", {
           className: I.guildShopEmbedCtaContent,
-          children: [(0, r.jsx)(y.Z, {
+          children: [(0, r.jsx)(v.Z, {
             height: "18px",
             width: "18px"
           }), (0, r.jsx)(d.Text, {

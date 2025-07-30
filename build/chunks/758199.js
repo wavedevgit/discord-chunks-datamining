@@ -1,7 +1,7 @@
 /** Chunk was on 63774 **/
 n.d(t, {
   W: () => I,
-  u: () => v
+  u: () => y
 }), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685);
 var r, i = n(255367),
   l = n(73800),
@@ -31,7 +31,7 @@ function O() {
   }).apply(this, arguments)
 }
 
-function y(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -49,7 +49,7 @@ function y(e) {
   }
   return e
 }
-var v = ((r = {})[r.BOT = 0] = "BOT", r[r.ACTIVITY = 1] = "ACTIVITY", r);
+var y = ((r = {})[r.BOT = 0] = "BOT", r[r.ACTIVITY = 1] = "ACTIVITY", r);
 
 function x(e) {
   let {
@@ -72,7 +72,7 @@ function x(e) {
 function I(e) {
   var t, n, r, a;
   let {
-    title: v,
+    title: y,
     header: I,
     footer: j,
     info: S,
@@ -194,7 +194,7 @@ function I(e) {
                 color: "none",
                 lineClamp: 1,
                 className: C.contentTitle,
-                children: v
+                children: y
               }), (0, i.jsx)("div", {
                 className: C.contentInfoWrapper,
                 children: S
@@ -232,9 +232,9 @@ function I(e) {
                   if (null == e) throw TypeError("Cannot destructure " + e);
                   return e
                 }(e));
-                return (0, i.jsx)(c.zx, y({}, f, t))
+                return (0, i.jsx)(c.zx, v({}, f, t))
               }
-            }, n) : (0, i.jsx)(c.zx, y({}, f), n)
+            }, n) : (0, i.jsx)(c.zx, v({}, f), n)
           })
         })]
       }), null != j && j]

@@ -25,7 +25,7 @@ var n = a(255367),
   C = a(750540),
   O = a(616257);
 
-function N() {
+function T() {
   var e;
   let t = (0, o.Wu)([f.Z], () => f.Z.getSortedChannels()[1]),
     [a, l] = r.useState(t.length > 0 ? t[0].channelId : void 0),
@@ -82,7 +82,7 @@ function N() {
   })
 }
 
-function T() {
+function N() {
   let e = r.useCallback(() => {
     d.Z.openPrivateChannel({
       recipientIds: [y.I]
@@ -113,8 +113,8 @@ function E() {
     className: i()(O.panel, C.panel),
     children: [e, (0, n.jsx)("div", {
       className: C.divider
-    }), (0, n.jsx)(N, {}), (0, n.jsx)("div", {
+    }), (0, n.jsx)(T, {}), (0, n.jsx)("div", {
       className: C.divider
-    }), (0, n.jsx)(T, {})]
+    }), (0, n.jsx)(N, {})]
   })
 }

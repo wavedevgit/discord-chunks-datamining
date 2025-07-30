@@ -27,9 +27,9 @@ function E(e) {
     beforeTransition: E,
     className: C,
     openChatWithoutConnecting: O
-  } = e, y = (0, i.e7)([_.default, f.Z], () => null == t ? "" : (0, s.F6)(t, _.default, f.Z), [t]);
+  } = e, v = (0, i.e7)([_.default, f.Z], () => null == t ? "" : (0, s.F6)(t, _.default, f.Z), [t]);
   return (0, r.jsx)(l.ua7, {
-    text: y,
+    text: v,
     position: "top",
     children: e => {
       let {
@@ -61,7 +61,7 @@ function E(e) {
         onMouseEnter: i,
         onMouseLeave: s,
         iconType: (0, g.wl)(t),
-        children: y
+        children: v
       })
     }
   })

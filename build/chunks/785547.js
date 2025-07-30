@@ -19,8 +19,8 @@ var r, i, l = n(255367),
   E = n(941128),
   C = n(780570),
   O = n(358085),
-  y = n(814225),
-  v = n(346329),
+  v = n(814225),
+  y = n(346329),
   x = n(701560),
   I = n(981631),
   j = n(388032),
@@ -208,7 +208,7 @@ class R extends(r = a.Component) {
     } = this.props, n = this.getButtonState();
     if ("play" === n) return this.renderPlayButton();
     if ("preorder_wait" === n) return this.renderDisabledButton(n, function(e) {
-      let t = y.en(e.sku);
+      let t = v.en(e.sku);
       return null != t ? j.intl.formatToPlainString(j.t.Aqe2ZG, {
         date: t
       }) : null
@@ -235,12 +235,12 @@ class R extends(r = a.Component) {
         libraryApplication: e,
         source: t
       } = this.props;
-      v.installApplication(e.id, e.branchId, t)
+      y.installApplication(e.id, e.branchId, t)
     }), T(this, "handleUpdate", () => {
       let {
         libraryApplication: e
       } = this.props;
-      v.updateApplication(e.id, e.branchId)
+      y.updateApplication(e.id, e.branchId)
     }), T(this, "onClickHandlers", {
       add_to_library: this.handleAddToLibrary,
       install: this.handleInstall,

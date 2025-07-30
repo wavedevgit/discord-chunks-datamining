@@ -1,6 +1,6 @@
 /** Chunk was on 63774 **/
 n.d(t, {
-  Z: () => v
+  Z: () => y
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -21,56 +21,56 @@ var r = n(255367),
   E = n(358595),
   C = n(981631),
   O = n(388032),
-  y = n(583136);
+  v = n(583136);
 
-function v(e) {
+function y(e) {
   let {
     invite: t,
     isMemberOfGuild: n,
     message: l,
     onTransitionToInviteChannel: c,
     onAcceptInstantInvite: d
-  } = e, p = i.useRef(null), [f, g] = i.useState(!0), [v, I] = i.useState(!1), j = t.state === C.r2o.ACCEPTING, S = (0, o.e7)([u.Z], () => u.Z.useReducedMotion);
+  } = e, p = i.useRef(null), [f, g] = i.useState(!0), [y, I] = i.useState(!1), j = t.state === C.r2o.ACCEPTING, S = (0, o.e7)([u.Z], () => u.Z.useReducedMotion);
   i.useLayoutEffect(() => {
     var e, t;
     I((null != (t = null == (e = p.current) ? void 0 : e.clientHeight) ? t : 0) > 292)
   }, [I]);
   let T = (0, m.PC)(t),
     N = i.useCallback(() => {
-      v && f && g(!1)
-    }, [f, v]),
+      y && f && g(!1)
+    }, [f, y]),
     P = i.useCallback(() => {
-      v && (f || g(!0))
-    }, [f, v]),
+      y && (f || g(!0))
+    }, [f, y]),
     A = i.useMemo(() => {
       var e;
-      return v && (null == (e = p.current) ? void 0 : e.clientHeight) != null ? {
+      return y && (null == (e = p.current) ? void 0 : e.clientHeight) != null ? {
         height: f ? 292 : p.current.clientHeight + 36 + 48,
         transition: S ? void 0 : "height 0.2s ease"
       } : {}
-    }, [f, v, S]);
+    }, [f, y, S]);
   return null == T ? (0, r.jsx)(E.Z, {}) : (0, r.jsxs)(s.P3F, {
-    className: a()(y.guildInviteContainer, {
-      [y.clickable]: v && f
+    className: a()(v.guildInviteContainer, {
+      [v.clickable]: y && f
     }),
     onClick: N,
     style: A,
     children: [(0, r.jsxs)("div", {
-      className: y.cardHeightMeasure,
+      className: v.cardHeightMeasure,
       ref: p,
       children: [(0, r.jsx)(b.Z7, {
         profile: T,
-        className: y.banner
+        className: v.banner
       }), (0, r.jsx)(b.N3, {
         profile: T
       }), (0, r.jsx)(h.Z, {
         profile: T
       }), (0, r.jsx)(_.E, {
         profile: T,
-        className: y.mainContent
+        className: v.mainContent
       })]
-    }), v && !f ? (0, r.jsx)("div", {
-      className: y.hideDetailsButtonContainer,
+    }), y && !f ? (0, r.jsx)("div", {
+      className: v.hideDetailsButtonContainer,
       children: (0, r.jsx)(s.Avr, {
         textVariant: "text-xs/medium",
         variant: "secondary",
@@ -79,17 +79,17 @@ function v(e) {
         text: O.intl.string(O.t.xdCLeH)
       })
     }) : null, (0, r.jsxs)("div", {
-      className: a()(y.footer, {
-        [y.floatingFooter]: v
+      className: a()(v.footer, {
+        [v.floatingFooter]: y
       }),
-      children: [v && f ? (0, r.jsx)("div", {
-        className: y.gradient
+      children: [y && f ? (0, r.jsx)("div", {
+        className: v.gradient
       }) : null, (0, r.jsx)("div", {
-        className: a()(y.footerContent, {
-          [y.collapsedFooterContent]: v && f
+        className: a()(v.footerContent, {
+          [v.collapsedFooterContent]: y && f
         }),
         children: (0, r.jsx)("div", {
-          className: y.buttonContainer,
+          className: v.buttonContainer,
           children: (0, r.jsx)(x, {
             invite: t,
             profile: T,

@@ -24,12 +24,12 @@ var r = n(255367),
   v = n(695346),
   j = n(496675),
   C = n(626135),
-  _ = n(585483),
-  O = n(70956),
+  O = n(585483),
+  _ = n(70956),
   I = n(324701),
-  E = n(575016),
-  R = n(768943),
-  P = n(686478),
+  P = n(575016),
+  E = n(768943),
+  R = n(686478),
   T = n(664559),
   N = n(767893),
   k = n(206697),
@@ -103,7 +103,7 @@ function H(e) {
     name: h.ImpressionNames.FOR_LATER_LIST_VIEWED,
     properties: {
       total_count: n.length,
-      overdue_count: R.Z.getOverdueMessageReminderCount()
+      overdue_count: E.Z.getOverdueMessageReminderCount()
     }
   }, {}, [n.length]), 0 === n.length) ? (0, r.jsx)(k.w, {}) : (0, r.jsx)(W, {
     savedMessageKeys: n,
@@ -123,8 +123,8 @@ function Q(e) {
   }, [n, o]), d = s.useCallback(() => {
     c(!o), o ? null == n || n() : null == t || t()
   }, [n, t, o]);
-  s.useEffect(() => (_.S.subscribe(Z.CkL.TOGGLE_FOR_LATER, d), () => void _.S.unsubscribe(Z.CkL.TOGGLE_FOR_LATER, d)), [d]);
-  let g = (0, p.e7)([R.Z], () => R.Z.hasOverdueReminder(), []);
+  s.useEffect(() => (O.S.subscribe(Z.CkL.TOGGLE_FOR_LATER, d), () => void O.S.unsubscribe(Z.CkL.TOGGLE_FOR_LATER, d)), [d]);
+  let g = (0, p.e7)([E.Z], () => E.Z.hasOverdueReminder(), []);
   return (0, r.jsx)(f.yRy, {
     targetElementRef: u,
     animation: f.yRy.Animation.NONE,
@@ -154,7 +154,7 @@ function W(e) {
     closePopout: n
   } = e, l = s.useRef(null), a = (0, y.Z)("for-later", l), [i, o] = s.useState(new Date);
   return s.useEffect(() => {
-    let e = setInterval(() => o(new Date), O.Z.Millis.MINUTE);
+    let e = setInterval(() => o(new Date), _.Z.Millis.MINUTE);
     return () => {
       clearInterval(e)
     }
@@ -186,7 +186,7 @@ function W(e) {
           },
           className: M.messagesScroller
         }, a), {
-          children: t.map(e => (0, r.jsx)(G, {
+          children: t.map(e => (0, r.jsx)(z, {
             savedMessageKey: e,
             closePopout: n,
             throttledNow: i
@@ -202,13 +202,13 @@ function U(e) {
     savedMessage: t,
     closePopout: n,
     throttledNow: l
-  } = e, i = (0, E.gr)(t), o = s.useCallback(async e => {
+  } = e, i = (0, P.gr)(t), o = s.useCallback(async e => {
     var r;
-    await (0, E.fC)(t, i), e.shiftKey || n(), C.default.track(Z.rMx.FOR_LATER_SAVED_MESSAGE_JUMP, {
+    await (0, P.fC)(t, i), e.shiftKey || n(), C.default.track(Z.rMx.FOR_LATER_SAVED_MESSAGE_JUMP, {
       channel_id: t.saveData.channelId,
       message_id: t.saveData.messageId,
       message_author_id: null == (r = t.message) ? void 0 : r.author.id,
-      type: null != t.saveData.dueAt ? P._l.REMINDER : P._l.BOOKMARK,
+      type: null != t.saveData.dueAt ? R._l.REMINDER : R._l.BOOKMARK,
       due_duration: null != t.saveData.dueAt ? u()().diff(t.saveData.dueAt) : void 0
     })
   }, [n, t, i]), c = (0, p.e7)([j.Z], () => !!((null == i ? void 0 : i.type) === Z.d4z.UNKNOWN || (null == i ? void 0 : i.isPrivate())) || j.Z.can(Z.Plq.VIEW_CHANNEL, i));
@@ -233,7 +233,7 @@ function U(e) {
       trackAnnouncementViews: !0
     }, t.message.id), (0, r.jsx)(b.ZP, {
       className: M.hoverBar,
-      children: (0, r.jsx)(z, {
+      children: (0, r.jsx)(G, {
         savedMessage: t,
         jumpToMessage: o
       })
@@ -262,12 +262,12 @@ function U(e) {
   })
 }
 
-function G(e) {
+function z(e) {
   let {
     savedMessageKey: t,
     closePopout: n,
     throttledNow: s
-  } = e, l = (0, p.e7)([R.Z], () => R.Z.getSavedMessage(t.channelId, t.messageId));
+  } = e, l = (0, p.e7)([E.Z], () => E.Z.getSavedMessage(t.channelId, t.messageId));
   return null == l ? null : (0, r.jsx)(U, {
     savedMessage: l,
     closePopout: n,
@@ -275,7 +275,7 @@ function G(e) {
   })
 }
 
-function z(e) {
+function G(e) {
   let {
     savedMessage: t,
     jumpToMessage: s

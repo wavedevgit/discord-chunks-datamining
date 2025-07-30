@@ -21,8 +21,8 @@ var r = n(255367),
   E = n(38267),
   C = n(884902),
   O = n(670188),
-  y = n(695346),
-  v = n(271383),
+  v = n(695346),
+  y = n(271383),
   x = n(594174),
   I = n(768581),
   j = n(900849),
@@ -75,10 +75,10 @@ function M(e) {
     channel: F
   } = e, B = i.useRef(null), G = i.useRef(null), H = (0, N.J)(k, U), {
     setPopout: V
-  } = (0, E.Z)(U.id, A.d$), z = (0, b.qo)(U, F, V, !0), W = y.QK.useSetting(), K = (0, S.n)(), [Y, X] = i.useState(!1), [q, Q] = i.useState((null == H ? void 0 : H.coverImage) == null), J = (0, c.e7)([v.ZP, x.default], () => {
+  } = (0, E.Z)(U.id, A.d$), z = (0, b.qo)(U, F, V, !0), W = v.QK.useSetting(), K = (0, S.n)(), [Y, X] = i.useState(!1), [q, Q] = i.useState((null == H ? void 0 : H.coverImage) == null), J = (0, c.e7)([y.ZP, x.default], () => {
     var e;
-    return v.ZP.isMember(null == H ? void 0 : H.guildId, null == (e = x.default.getCurrentUser()) ? void 0 : e.id)
-  }, [H]), $ = (0, c.e7)([v.ZP], () => (null == H ? void 0 : H.authorId) != null ? v.ZP.getMember(H.guildId, H.authorId) : null), ee = (0, m.Z)((null == $ ? void 0 : $.avatarDecoration) != null ? null == $ ? void 0 : $.avatarDecoration : null == H || null == (t = H.user) ? void 0 : t.avatarDecoration), [et, en, er] = i.useMemo(() => {
+    return y.ZP.isMember(null == H ? void 0 : H.guildId, null == (e = x.default.getCurrentUser()) ? void 0 : e.id)
+  }, [H]), $ = (0, c.e7)([y.ZP], () => (null == H ? void 0 : H.authorId) != null ? y.ZP.getMember(H.guildId, H.authorId) : null), ee = (0, m.Z)((null == $ ? void 0 : $.avatarDecoration) != null ? null == $ ? void 0 : $.avatarDecoration : null == H || null == (t = H.user) ? void 0 : t.avatarDecoration), [et, en, er] = i.useMemo(() => {
     var e, t;
     return [null != (e = null == $ ? void 0 : $.colorString) ? e : "inherit", null != (t = null == $ ? void 0 : $.colorStrings) ? t : null, null == $ ? void 0 : $.colorRoleId]
   }, [$]), ei = (0, C.X7)(null == $ ? void 0 : $.guildId, null != (l = null == H ? void 0 : H.authorId) ? l : void 0, en), {

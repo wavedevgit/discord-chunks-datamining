@@ -21,8 +21,8 @@ var r = n(255367),
   E = n(98278),
   C = n(767714),
   O = n(430824),
-  y = n(594174),
-  v = n(626135),
+  v = n(594174),
+  y = n(626135),
   x = n(74538),
   I = n(453070),
   j = n(926491),
@@ -80,7 +80,7 @@ let M = (e, t) => t ? w.intl.format(w.t.auckX1, {
   };
 
 function U(e) {
-  v.default.track(P.rMx.PREMIUM_PROMOTION_OPENED, {
+  y.default.track(P.rMx.PREMIUM_PROMOTION_OPENED, {
     location_page: null != e.guild_id ? P.ZY5.GUILD_CHANNEL : P.ZY5.DM_CHANNEL,
     location_section: P.jXE.STICKER_POPOUT
   }), (0, E.z)()
@@ -141,7 +141,7 @@ let B = e => {
       let {
         channel: e
       } = g.current;
-      v.default.track(P.rMx.OPEN_POPOUT, D({
+      y.default.track(P.rMx.OPEN_POPOUT, D({
         type: P.jXE.STICKER_POPOUT,
         guild_id: e.getGuildId(),
         sticker_pack_id: n.pack_id
@@ -188,7 +188,7 @@ let B = e => {
       } = e,
       [I, j] = i.useState(null),
       [S, N] = i.useState(!1),
-      M = y.default.getCurrentUser(),
+      M = v.default.getCurrentUser(),
       k = x.ZP.canUseCustomStickersEverywhere(M),
       B = (0, o.e7)([O.Z], () => O.Z.getGuild(n.guild_id)),
       G = null != B,
@@ -234,7 +234,7 @@ let B = e => {
       } = q.current;
       e()
     }, [S, I]), (0, d.ZP)(() => {
-      v.default.track(P.rMx.OPEN_POPOUT, D({
+      y.default.track(P.rMx.OPEN_POPOUT, D({
         type: ee
       }, Y))
     }), S) ? (0, r.jsxs)(b.W_, {

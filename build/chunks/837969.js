@@ -37,15 +37,15 @@ function d(e) {
   } = e, C = r.useCallback((e, t) => {
     let n = (0, i.Z)(e, t);
     return null != E && E(e, n, t), n
-  }, [E]), [O, y] = r.useReducer(C, {
+  }, [E]), [O, v] = r.useReducer(C, {
     focusedIndex: d,
     itemCount: n
   }), {
-    itemCount: v,
+    itemCount: y,
     focusedIndex: x
-  } = O, [I] = r.useState(() => (0, a.P2)(y, 16));
+  } = O, [I] = r.useState(() => (0, a.P2)(v, 16));
   return r.useEffect(() => {
-      y({
+      v({
         type: i.G.UPDATE_ITEM_COUNT,
         itemCount: n
       })
@@ -65,14 +65,14 @@ function d(e) {
         enabled: E,
         makeId: C = a.qR,
         getIndexFromId: O
-      } = e, y = r.useRef(n), v = r.useRef(O);
-      v.current = O, y.current = n;
+      } = e, v = r.useRef(n), y = r.useRef(O);
+      y.current = O, v.current = n;
       let x = r.useRef(E);
       r.useEffect(() => {
         x.current = E
       }, [E]);
       let [I, j] = r.useState(!1), [S] = r.useState(() => new a.$o(e => () => {
-        let t = null != v.current && "string" == typeof e ? v.current(e) : e;
+        let t = null != y.current && "string" == typeof e ? y.current(e) : e;
         "number" != typeof t || t < 0 || _({
           type: i.G.SET_FOCUSED_INDEX,
           index: t
@@ -166,11 +166,11 @@ function d(e) {
           } = e;
           return {
             role: "listitem",
-            "aria-setsize": h ? y.current : void 0,
+            "aria-setsize": h ? v.current : void 0,
             "aria-posinset": h ? n + 1 : void 0,
             id: C(t, n),
             tabIndex: g && n === d ? 0 : -1,
-            onFocus: S.get(null != v.current ? C(t, n) : n)
+            onFocus: S.get(null != y.current ? C(t, n) : n)
           }
         }, [C, t, d, g, S, h]);
       return r.useMemo(() => ({
@@ -180,7 +180,7 @@ function d(e) {
       }), [_, M, k])
     }({
       navId: t,
-      itemCount: v,
+      itemCount: y,
       focusedIndex: x,
       dispatch: I,
       onSelect: p,

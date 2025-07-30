@@ -3,7 +3,7 @@ n.d(t, {
   L9: () => N,
   ZK: () => T,
   d4: () => S,
-  dS: () => v,
+  dS: () => y,
   jY: () => j,
   q7: () => I,
   vZ: () => x
@@ -46,7 +46,7 @@ function O(e) {
   return e
 }
 
-function y(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -59,10 +59,10 @@ function y(e, t) {
   }), e
 }
 
-function v(e) {
+function y(e) {
   var t;
   let n = e.item.originalItem;
-  return (0, h.Yi)(y(O({}, e), {
+  return (0, h.Yi)(v(O({}, e), {
     alt: n.description,
     src: (0, m.q)({
       proxyURL: n.proxy_url,
@@ -105,7 +105,7 @@ function x(e) {
       }) : null
     }, [n]),
     c = _.Z.toURLSafe(n.proxy_url);
-  return null == c ? null : (c.searchParams.append("format", "webp"), (0, h.lV)(y(O({}, e), {
+  return null == c ? null : (c.searchParams.append("format", "webp"), (0, h.lV)(v(O({}, e), {
     alt: n.description,
     poster: c.toString(),
     fileSize: n.size,
@@ -129,7 +129,7 @@ function x(e) {
 
 function I(e) {
   let t = e.item.originalItem;
-  return (0, h.hX)(y(O({}, e), {
+  return (0, h.hX)(v(O({}, e), {
     fileSize: t.size,
     fileName: (0, g.Z)(t),
     src: t.url
@@ -150,7 +150,7 @@ function j(e) {
     var n;
     (0, d.Np)(t.id, null != (n = null == e ? void 0 : e.message) ? n : null)
   }, [t]);
-  return (0, h.wj)(y(O({}, e), {
+  return (0, h.wj)(v(O({}, e), {
     fileSize: r.size,
     fileName: (0, g.Z)(r),
     src: r.url,
@@ -165,7 +165,7 @@ function j(e) {
 
 function S(e) {
   let t = e.item.originalItem;
-  return (0, h.xi)(y(O({}, e), {
+  return (0, h.xi)(v(O({}, e), {
     url: t.url,
     fileName: (0, g.Z)(t),
     fileSize: t.size,
@@ -175,7 +175,7 @@ function S(e) {
 
 function T(e) {
   let t = e.item.originalItem;
-  return (0, h.ur)(y(O({}, e), {
+  return (0, h.ur)(v(O({}, e), {
     url: t.url,
     fileName: (0, g.Z)(t),
     fileSize: t.size

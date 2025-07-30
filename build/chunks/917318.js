@@ -64,18 +64,18 @@ function g(e) {
     channelId: b,
     guildId: i.guild_id,
     messageId: n.id
-  })(C), y = (0, o.Sw)(E, i), v = (0, s.l)({
+  })(C), v = (0, o.Sw)(E, i), y = (0, s.l)({
     user: E,
     channelId: b,
     guildId: i.guild_id,
     messageId: n.id
-  })(y), x = null != (t = m[g]) ? t : null;
+  })(v), x = null != (t = m[g]) ? t : null;
   if (null == x) return null;
   let I = p.intl.format(x(), {
     actorName: h.nick,
     actorHook: O,
-    targetName: null == y ? void 0 : y.nick,
-    targetHook: v
+    targetName: null == v ? void 0 : v.nick,
+    targetHook: y
   });
   return (0, r.jsx)(c.Z, {
     iconNode: (0, r.jsx)(_, {

@@ -1,6 +1,6 @@
 /** Chunk was on 63774 **/
 n.d(t, {
-  Z: () => v
+  Z: () => y
 }), n(415506);
 var r, i, l, a = n(255367),
   o = n(73800),
@@ -93,7 +93,7 @@ let _ = e => {
       children: p.intl.string(p.t.QQsaCQ)
     })
   };
-class y extends(r = o.PureComponent) {
+class v extends(r = o.PureComponent) {
   getState() {
     let {
       inLibrary: e,
@@ -217,10 +217,10 @@ class y extends(r = o.PureComponent) {
         throw Error("Invalid Price Unit Type")
     }
   }
-}(l = "Types") in y ? Object.defineProperty(y, l, {
+}(l = "Types") in v ? Object.defineProperty(v, l, {
   value: f,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : y[l] = f;
-let v = y
+}) : v[l] = f;
+let y = v

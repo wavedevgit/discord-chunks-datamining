@@ -1,7 +1,7 @@
 /** Chunk was on 68114 **/
 n.d(t, {
-  $: () => Z,
-  Z: () => H
+  $: () => M,
+  Z: () => W
 }), n(388685), n(35282);
 var r = n(255367),
   s = n(73800),
@@ -24,22 +24,32 @@ var r = n(255367),
   v = n(970850),
   j = n(406326),
   C = n(994463),
-  _ = n(611004),
-  O = n(619753),
+  O = n(611004),
+  _ = n(619753),
   I = n(902733),
-  E = n(165017),
-  R = n(737),
-  P = n(315322),
-  T = n(981631),
-  N = n(531578),
-  k = n(388032),
-  w = n(682065);
+  P = n(165017),
+  E = n(737),
+  R = n(909125),
+  T = n(315322),
+  N = n(981631),
+  k = n(531578),
+  w = n(388032),
+  Z = n(682065);
 
-function Z(e) {
+function A(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: !0,
+    configurable: !0,
+    writable: !0
+  }) : e[t] = n, e
+}
+
+function M(e) {
   let t = null != e ? y.Z.getEditorState(e) : null;
   return null != t ? g.Sq(t) : null
 }
-class A extends s.Component {
+class D extends s.Component {
   componentDidMount() {
     this.autoAnalytics()
   }
@@ -50,8 +60,8 @@ class A extends s.Component {
     return null
   }
   constructor(...e) {
-    var t, n, r;
-    super(...e), t = this, n = "autoAnalytics", r = function() {
+    var t;
+    super(...e), t = this, A(this, "autoAnalytics", function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null;
       if (null == t.props.searchAnalyticsId || t.props.isSearching) return;
       let n = 0,
@@ -60,13 +70,13 @@ class A extends s.Component {
         l = 0;
       null != t.props.searchResults && o()(t.props.searchResults).flatten().filter(e => e.isSearchHit).forEach(e => {
         null != e.content && "" !== e.content && (n++, /https?:\/\/[^\s]+/.test(e.content) && l++), null != e.embeds && e.embeds.length > 0 && s++, null != e.attachments && e.attachments.length > 0 && r++
-      }), 0 === n ? (0, P.Qb)({
+      }), 0 === n ? (0, T.Qb)({
         searchId: t.props.searchId,
         searchType: t.props.searchType,
         searchAnalyticsId: t.props.searchAnalyticsId,
-        searchQueryString: Z(t.props.searchId),
+        searchQueryString: M(t.props.searchId),
         searchQuery: null != t.props.searchId ? y.Z.getSearchResultsQuery(t.props.searchId) : null
-      }) : (0, P.hM)({
+      }) : (0, T.hM)({
         searchType: t.props.searchType,
         searchId: t.props.searchId,
         searchAnalyticsId: t.props.searchAnalyticsId,
@@ -82,32 +92,27 @@ class A extends s.Component {
         pageNumLinks: l,
         pageNumEmbeds: s,
         pageNumAttachments: r,
-        searchQueryString: Z(t.props.searchId),
+        searchQueryString: M(t.props.searchId),
         searchQuery: null != t.props.searchId ? y.Z.getSearchResultsQuery(t.props.searchId) : null
       })
-    }, n in this ? Object.defineProperty(this, n, {
-      value: r,
-      enumerable: !0,
-      configurable: !0,
-      writable: !0
-    }) : this[n] = r
+    })
   }
 }
 
-function M(e) {
+function F(e) {
   let {
     children: t
   } = e;
   return (0, r.jsx)("div", {
-    className: w.emptyResultsWrap,
+    className: Z.emptyResultsWrap,
     children: (0, r.jsx)("div", {
-      className: w.emptyResultsContent,
+      className: Z.emptyResultsContent,
       children: t
     })
   })
 }
 
-function D(e) {
+function L(e) {
   let {
     searchId: t,
     searchType: n,
@@ -121,7 +126,7 @@ function D(e) {
   }) : null
 }
 
-function F(e) {
+function B(e) {
   let {
     searchResults: t,
     blockCount: n,
@@ -132,32 +137,34 @@ function F(e) {
     renderEmbeds: c,
     onClick: u,
     onScrollTo: h,
-    onPageChange: d
+    onPageChange: d,
+    paginationTotalCount: p,
+    renderPageWrapper: f
   } = e, {
-    totalResults: p,
-    isSearching: f,
-    isIndexing: g,
-    hasError: m
+    totalResults: g,
+    isSearching: m,
+    isIndexing: y,
+    hasError: x
   } = l;
-  if (m) return (0, r.jsxs)(M, {
+  if (x) return (0, r.jsxs)(F, {
     children: [(0, r.jsx)("div", {
-      className: w.errorImage
+      className: Z.errorImage
     }), (0, r.jsx)("div", {
-      className: a()(w.emptyResultsText, w.errorMessage),
-      children: k.intl.string(k.t.uvDZBQ)
+      className: a()(Z.emptyResultsText, Z.errorMessage),
+      children: w.intl.string(w.t.uvDZBQ)
     })]
   });
-  if (g) {
-    let e = o === T.aib.GUILD ? k.intl.string(k.t.AXPbZm) : k.intl.string(k.t.Q0JJjo);
-    return (0, r.jsxs)(M, {
+  if (y) {
+    let e = o === N.aib.GUILD ? w.intl.string(w.t.AXPbZm) : w.intl.string(w.t.Q0JJjo);
+    return (0, r.jsxs)(F, {
       children: [(0, r.jsx)(C.Z, {}), (0, r.jsx)("div", {
-        className: (w.emptyResultsText, w.stillIndexing),
+        className: (Z.emptyResultsText, Z.stillIndexing),
         children: e
       })]
     })
   }
-  if (f) return null;
-  if (p > 0) return (0, r.jsx)(O.Z, {
+  if (m) return null;
+  if (g > 0) return (0, r.jsx)(_.Z, {
     search: l,
     searchResults: t,
     onClick: u,
@@ -166,25 +173,27 @@ function F(e) {
     searchId: i,
     renderEmbeds: c,
     scrollTo: h,
-    onPageChange: d
+    onPageChange: d,
+    paginationTotalCount: p,
+    renderPageWrapper: f
   });
   let {
-    showNoResultsAlt: y
-  } = l, x = y ? k.intl.string(k.t["VrK/2d"]) : k.intl.string(k.t.V6nAfH);
-  return (0, r.jsxs)(M, {
+    showNoResultsAlt: S
+  } = l, b = S ? w.intl.string(w.t["VrK/2d"]) : w.intl.string(w.t.V6nAfH);
+  return (0, r.jsxs)(F, {
     children: [(0, r.jsx)("div", {
-      className: a()(w.noResultsImage, {
-        [w.alt]: y
+      className: a()(Z.noResultsImage, {
+        [Z.alt]: S
       })
     }), (0, r.jsx)("div", {
-      className: a()(w.emptyResultsText, w.noResults, {
-        [w.alt]: y
+      className: a()(Z.emptyResultsText, Z.noResults, {
+        [Z.alt]: S
       }),
-      children: x
+      children: b
     })]
   })
 }
-let L = s.memo(function(e) {
+let H = s.memo(function(e) {
   let {
     searchId: t,
     search: n,
@@ -200,10 +209,10 @@ let L = s.memo(function(e) {
     onPageChange: x,
     searchMode: S
   } = e, b = s.useRef(null), v = s.useCallback(() => {
-    _.Z.cleanUpSearchState(t)
+    O.Z.cleanUpSearchState(t)
   }, [t]);
-  s.useEffect(() => (f.S.subscribe(T.CkL.SEARCH_RESULTS_CLOSE, v), () => {
-    f.S.unsubscribe(T.CkL.SEARCH_RESULTS_CLOSE, v)
+  s.useEffect(() => (f.S.subscribe(N.CkL.SEARCH_RESULTS_CLOSE, v), () => {
+    f.S.unsubscribe(N.CkL.SEARCH_RESULTS_CLOSE, v)
   }), [v]);
   let C = s.useRef(n.showBlockedResults);
   s.useEffect(() => {
@@ -213,7 +222,7 @@ let L = s.memo(function(e) {
       null != e && e.scrollToBottom()
     }
   }, [n.showBlockedResults]);
-  let O = s.useCallback((e, t, n) => {
+  let _ = s.useCallback((e, t, n) => {
       let r = b.current;
       if (null == r) return;
       let s = r.getScrollerState().scrollTop - e;
@@ -223,22 +232,75 @@ let L = s.memo(function(e) {
         callback: n
       })
     }, []),
-    I = s.useCallback(e => {
-      e === S || n.isSearching || ((0, P.zW)({
+    {
+      paginationTotalCount: I,
+      paginationMaxIndex: P,
+      isPaginationTotalCountLimited: E
+    } = (0, R.M)({
+      totalResults: n.totalResults,
+      isSearching: n.isSearching
+    }),
+    k = s.useCallback((e, t) => {
+      let n = P + 1;
+      if (!E || e.targetPage !== n) return t;
+      {
+        let e = w.intl.formatToPlainString(w.t["E+2azc"], {
+          maxPages: n
+        });
+        return (0, r.jsx)(u.ua7, {
+          tooltipClassName: Z.paginationLimitTooltip,
+          tooltipContentClassName: Z.paginationLimitTooltipText,
+          text: (0, r.jsx)(u.Text, {
+            variant: "text-sm/medium",
+            color: "text-primary",
+            children: e
+          }),
+          "aria-label": e,
+          children: e => {
+            var n, s;
+            return (0, r.jsx)("div", (n = function(e) {
+              for (var t = 1; t < arguments.length; t++) {
+                var n = null != arguments[t] ? arguments[t] : {},
+                  r = Object.keys(n);
+                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                  return Object.getOwnPropertyDescriptor(n, e).enumerable
+                }))), r.forEach(function(t) {
+                  A(e, t, n[t])
+                })
+              }
+              return e
+            }({}, e), s = s = {
+              children: t
+            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
+              var n = Object.keys(e);
+              if (Object.getOwnPropertySymbols) {
+                var r = Object.getOwnPropertySymbols(e);
+                n.push.apply(n, r)
+              }
+              return n
+            })(Object(s)).forEach(function(e) {
+              Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(s, e))
+            }), n))
+          }
+        })
+      }
+    }, [E, P]),
+    D = s.useCallback(e => {
+      e === S || n.isSearching || ((0, T.zW)({
         searchId: t,
         searchType: l,
         searchAnalyticsId: i,
         mode: e
       }), m(e))
     }, [m, n.isSearching, i, t, S, l]),
-    E = s.useCallback((e, r) => {
+    F = s.useCallback((e, r) => {
       let s = p.Z.getChannel(e.channel_id),
         a = null != s ? s.getGuildId() : null,
         {
           offset: c,
           totalResults: u
         } = n;
-      (0, P.sL)({
+      (0, T.sL)({
         searchId: t,
         searchType: l,
         searchAnalyticsId: i,
@@ -247,37 +309,46 @@ let L = s.memo(function(e) {
         messageId: e.id,
         pageResults: null != o ? o.length : null,
         totalResults: u,
-        limit: T.vpv,
-        page: Math.floor(c / T.vpv) + 1,
+        limit: N.vpv,
+        page: Math.floor(c / N.vpv) + 1,
         offset: c,
         index: r,
-        searchQueryString: Z(t),
+        searchQueryString: M(t),
         searchQuery: y.Z.getSearchResultsQuery(t)
       })
     }, [n, i, t, o, l]),
-    R = s.useCallback(e => {
-      (0, P.t6)({
+    H = s.useCallback(e => {
+      (0, T.t6)({
         searchId: t,
         searchType: l,
         searchAnalyticsId: i,
         newPageIndex: e
       }), x(e)
-    }, [x, i, t, l]);
+    }, [x, i, t, l]),
+    Q = Math.floor(n.offset / N.vpv),
+    W = E && Q >= P,
+    U = P + 1;
   return (0, r.jsxs)("section", {
-    className: w.searchResultsWrap,
-    "aria-label": k.intl.string(k.t.zkoeq6),
+    className: Z.searchResultsWrap,
+    "aria-label": w.intl.string(w.t.zkoeq6),
     children: [(0, r.jsx)(j.Z, {
       searchId: t,
       searchMode: S,
-      onSearchModeChange: I,
+      onSearchModeChange: D,
       totalResults: n.totalResults,
       isSearching: n.isSearching,
       isIndexing: n.isHistoricalIndexing,
       documentsIndexed: n.documentsIndexed
-    }), (0, r.jsx)(u.Den, {
+    }), (0, r.jsxs)(u.Den, {
       ref: b,
-      className: w.scroller,
-      children: (0, r.jsx)(F, {
+      className: Z.scroller,
+      children: [W && !n.isSearching && (0, r.jsx)(u.Wn, {
+        className: Z.paginationLimitHeader,
+        messageType: u.QYI.WARNING,
+        children: w.intl.formatToPlainString(w.t["E+2azc"], {
+          maxPages: U
+        })
+      }), (0, r.jsx)(B, {
         searchResults: o,
         blockCount: c,
         ignoreCount: h,
@@ -285,11 +356,13 @@ let L = s.memo(function(e) {
         searchId: t,
         searchType: l,
         renderEmbeds: a,
-        onClick: E,
-        onScrollTo: O,
-        onPageChange: R
-      })
-    }), (0, r.jsx)(D, {
+        onClick: F,
+        onScrollTo: _,
+        onPageChange: H,
+        paginationTotalCount: E ? I : void 0,
+        renderPageWrapper: k
+      })]
+    }), (0, r.jsx)(L, {
       searchId: t,
       searchType: l,
       isFeedbackVisible: d,
@@ -298,7 +371,7 @@ let L = s.memo(function(e) {
   })
 });
 
-function B(e) {
+function Q(e) {
   let {
     searchContext: t
   } = e, n = (0, S.U)({
@@ -318,7 +391,7 @@ function B(e) {
     return s.useEffect(() => {
       l && a && r(!0)
     }, [a, l]), s.useEffect(() => {
-      l && (a || e !== t.current && (t.current = e, h.Z.possiblyShowFeedbackModal(N.nw.SEARCH_RESULTS, () => r(!0), () => r(!1))))
+      l && (a || e !== t.current && (t.current = e, h.Z.possiblyShowFeedbackModal(k.nw.SEARCH_RESULTS, () => r(!0), () => r(!1))))
     }, [l, a, e]), {
       dismissFeedbackEntrypoint: s.useCallback(() => {
         r(!1)
@@ -342,22 +415,22 @@ function B(e) {
     searchResults: p,
     ignoreCount: f,
     blockCount: g
-  } = (0, R.Z)(i), {
+  } = (0, E.Z)(i), {
     searchMode: j,
     setSearchMode: C
   } = (0, v.Z)({
     searchId: i
-  }), O = s.useCallback(e => {
+  }), _ = s.useCallback(e => {
     if (o.isSearching) return;
     C(e);
-    let r = Z(i),
+    let r = M(i),
       s = y.Z.getSearchResultsQuery(i);
-    null != r && null != s && (n && t.type === T.aib.DMS ? _.Z.fetchCrossDMMessages({
+    null != r && null != s && (n && t.type === N.aib.DMS ? O.Z.fetchCrossDMMessages({
       searchContext: t,
       selectedPageIndex: 0,
       queryString: null != r ? r : "",
       searchMode: e
-    }) : _.Z.fetchMessages({
+    }) : O.Z.fetchMessages({
       searchId: i,
       queryString: r,
       searchQuery: s,
@@ -366,63 +439,63 @@ function B(e) {
     }))
   }, [n, o.isSearching, t, i, C]), I = s.useCallback(e => {
     if (o.isSearching) return;
-    let r = Z(i),
+    let r = M(i),
       s = y.Z.getSearchResultsQuery(i);
     if (null != r && null != s)
-      if (n && t.type === T.aib.DMS) {
+      if (n && t.type === N.aib.DMS) {
         var l;
-        _.Z.fetchCrossDMMessages({
+        O.Z.fetchCrossDMMessages({
           searchContext: t,
-          queryString: null != (l = Z(i)) ? l : "",
+          queryString: null != (l = M(i)) ? l : "",
           selectedPageIndex: e,
           searchMode: j
         })
-      } else _.Z.fetchMessages({
+      } else O.Z.fetchMessages({
         searchId: i,
         queryString: r,
         searchQuery: s,
-        offset: e * T.vpv
+        offset: e * N.vpv
       })
-  }, [n, o.isSearching, t, i, j]), E = s.useDeferredValue(p), P = s.useDeferredValue(o), k = s.useDeferredValue(u);
+  }, [n, o.isSearching, t, i, j]), P = s.useDeferredValue(p), R = s.useDeferredValue(o), T = s.useDeferredValue(u);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(L, {
+    children: [(0, r.jsx)(H, {
       searchId: i,
-      search: P,
-      searchAnalyticsId: k,
+      search: R,
+      searchAnalyticsId: T,
       searchType: t.type,
-      searchResults: E,
+      searchResults: P,
       ignoreCount: f,
       blockCount: g,
       renderEmbeds: d.NA.useSetting(),
       isFeedbackVisible: l,
       dismissFeedbackEntrypoint: a,
       onPageChange: I,
-      onSearchModeChange: O,
+      onSearchModeChange: _,
       searchMode: j
-    }), (0, r.jsx)(A, {
+    }), (0, r.jsx)(D, {
       searchId: i,
       searchType: t.type,
-      searchAnalyticsId: k,
-      searchResults: E,
-      searchOffset: P.offset,
-      searchLimit: T.vpv,
-      searchHasError: P.hasError,
-      searchTotalResults: P.totalResults,
-      searchIsIndexing: P.isHistoricalIndexing,
-      isSearching: P.isSearching
+      searchAnalyticsId: T,
+      searchResults: P,
+      searchOffset: R.offset,
+      searchLimit: N.vpv,
+      searchHasError: R.hasError,
+      searchTotalResults: R.totalResults,
+      searchIsIndexing: R.isHistoricalIndexing,
+      isSearching: R.isSearching
     })]
   })
 }
 
-function H(e) {
+function W(e) {
   let {
     guildId: t,
     channelId: n
-  } = e, s = (0, E.H)({
+  } = e, s = (0, P.H)({
     guildId: t,
     channelId: n
   });
-  return null == s ? null : (0, r.jsx)(B, {
+  return null == s ? null : (0, r.jsx)(Q, {
     searchContext: s
   })
 }

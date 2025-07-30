@@ -1,6 +1,6 @@
 /**
   Module ID: 6307
-  Original File Name: ed701baaf3b8211b
+  Original File Name: 70d7657b365aa25b
 **/
 .buttonsContainer_a8b931 {
     display: flex;
@@ -1192,6 +1192,19 @@
     background-image: url(/assets/140c2a4c9ce5623d.svg)
 }
 
+.paginationLimitTooltipText_a9e706 {
+    display: flex;
+    justify-content: center
+}
+
+.paginationLimitTooltip_a9e706 {
+    max-width: 200px
+}
+
+.paginationLimitHeader_a9e706 {
+    margin-bottom: 16px
+}
+
 .settingsItemHighlight__7cd2d {
     border: 1px solid transparent;
     border-radius: var(--radius-xs);
@@ -1359,4 +1372,4 @@
     width: 440px
 }
 
-/*# sourceMappingURL=ed701baaf3b8211b.css.map*/
+/*# sourceMappingURL=70d7657b365aa25b.css.map*/

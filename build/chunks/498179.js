@@ -57,8 +57,8 @@ function m(e) {
     className: E,
     source: C,
     hover: O,
-    innerClassName: y
-  } = e, v = {
+    innerClassName: v
+  } = e, y = {
     fullWidth: n,
     size: m,
     color: f,
@@ -67,14 +67,14 @@ function m(e) {
     onClick: b,
     className: E,
     hover: O,
-    innerClassName: y
+    innerClassName: v
   }, x = (0, i.e7)([a.Z], () => a.Z.getActiveLibraryApplication(t.id)), I = null != x ? x.sku.id : null, j = null != I ? I : t.primarySkuId, S = (0, i.e7)([o.Z], () => null != j && !o.Z.didFetchingSkuFail(j));
-  return null != x && (0, s.Je)(x) ? (0, r.jsx)(u.Z, p(d({}, v), {
+  return null != x && (0, s.Je)(x) ? (0, r.jsx)(u.Z, p(d({}, y), {
     libraryApplication: x,
     source: C
   })) : S ? (0, r.jsx)("div", {
     children: "deprecated!"
-  }) : (0, r.jsx)(c.Z, p(d({}, v), {
+  }) : (0, r.jsx)(c.Z, p(d({}, y), {
     hideNotLaunchable: g,
     applicationId: t.id
   }))

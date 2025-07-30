@@ -1,6 +1,6 @@
 /**
   Module ID: 21780
-  Original File Name: c675587202b1973d
+  Original File Name: a55b13354fe2bd43
 **/
 .buttonsContainer_a8b931 {
     display: flex;
@@ -266,6 +266,19 @@
     background-image: url(/assets/140c2a4c9ce5623d.svg)
 }
 
+.paginationLimitTooltipText_a9e706 {
+    display: flex;
+    justify-content: center
+}
+
+.paginationLimitTooltip_a9e706 {
+    max-width: 200px
+}
+
+.paginationLimitHeader_a9e706 {
+    margin-bottom: 16px
+}
+
 .container__394db {
     align-items: center;
     display: block;
@@ -387,4 +400,4 @@
     padding-top: var(--space-16)
 }
 
-/*# sourceMappingURL=c675587202b1973d.css.map*/
+/*# sourceMappingURL=a55b13354fe2bd43.css.map*/

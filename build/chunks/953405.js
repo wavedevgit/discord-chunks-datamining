@@ -48,8 +48,9 @@ function p(e) {
     discount: a,
     product: l,
     hasSufficientOrbs: d,
-    isProductDisabled: p
-  } = e;
+    isProductDisabled: p,
+    discountOfferAmount: h
+  } = e, v = null != h;
   return 0 === n.length ? null : n[0].currency === u.pK.DISCORD_ORB ? (0, r.jsx)(f, {
     orbPrice: n[0],
     isProductDisabled: p,
@@ -62,10 +63,11 @@ function p(e) {
         product: l,
         discount: a,
         isPremiumUser: i,
-        hideStrikethroughPrice: !i,
+        hideStrikethroughPrice: !i || v,
         nitroIconType: "tooltip",
-        nitroIconSize: "xs"
-      }), i ? null : (0, r.jsx)(o.Z, {
+        nitroIconSize: "xs",
+        discountOfferAmount: h
+      }), i || v ? null : (0, r.jsx)(o.Z, {
         product: l
       })]
     }), n.length > 1 && n[1].currency === u.pK.DISCORD_ORB && (0, r.jsx)(c.Z, {

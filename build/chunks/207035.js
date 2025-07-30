@@ -1,8 +1,8 @@
 /** Chunk was on 63830 **/
 n.d(t, {
-  P: () => i
+  P: () => r
 });
-let r = (0, n(818083).B)({
+let i = (0, n(818083).B)({
   kind: "user",
   id: "2023-08-30_open-in-popout",
   label: "Open Channel in Popout",
@@ -18,8 +18,8 @@ let r = (0, n(818083).B)({
   }]
 });
 
-function i(e) {
-  return r.useExperiment({
+function r(e) {
+  return i.useExperiment({
     location: e
   }, {
     autoTrackExposure: !1

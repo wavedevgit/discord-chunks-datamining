@@ -25,8 +25,8 @@ function O(e) {
   var t, n;
   let {
     application: O,
-    customId: y,
-    customLink: v,
+    customId: v,
+    customLink: y,
     embedUrl: x,
     referrerId: I
   } = e, j = null == O || null == (t = O.bot) ? void 0 : t.id, S = (0, c.ms)({
@@ -41,7 +41,7 @@ function O(e) {
     if (null == A) return;
     let e = h.ZP.getEmbeddedActivitiesForChannel(A).filter(e => e.applicationId === O.id);
     return e.length > 0 ? e[0].compositeInstanceId : void 0
-  }), R = (0, i.e7)([h.ZP], () => h.ZP.getCurrentEmbeddedActivity()), D = (0, b.Z)(), L = w === E.jy.CAN_LAUNCH, M = null != y ? y : v.customId, k = [];
+  }), R = (0, i.e7)([h.ZP], () => h.ZP.getCurrentEmbeddedActivity()), D = (0, b.Z)(), L = w === E.jy.CAN_LAUNCH, M = null != v ? v : y.customId, k = [];
   L && k.push({
     label: null == Z ? C.intl.string(C.t.RscU7O) : C.intl.string(C.t.VJlc0d),
     trackingArea: p.j_.PLAY,
@@ -82,10 +82,10 @@ function O(e) {
       bot: O.bot
     }),
     info: (0, r.jsx)("div", {
-      children: v.description
+      children: y.description
     }),
-    staticBannerSrc: v.getAssetURL(),
-    title: v.title,
+    staticBannerSrc: y.getAssetURL(),
+    title: y.title,
     trackingConfig: {
       id: O.id,
       linkType: u.U.CUSTOM_ACTIVITY_LINK,

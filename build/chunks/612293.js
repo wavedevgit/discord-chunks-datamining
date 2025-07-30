@@ -1,4 +1,4 @@
-/** Chunk was on 55864 **/
+/** Chunk was on 22150 **/
 "use strict";
 r.d(t, {
   default: () => _
@@ -18,8 +18,8 @@ var n = r(255367),
   f = r(594174),
   m = r(626135),
   h = r(653079),
-  y = r(576386),
-  g = r(981631),
+  g = r(576386),
+  y = r(981631),
   O = r(388032),
   j = r(637635);
 
@@ -34,12 +34,12 @@ function _(e) {
   } = (0, c.ZP)(r, s.Z.EDIT_NAMEPLATE_MODAL), {
     available: b,
     purchased: h,
-    isFetchingCategories: y,
+    isFetchingCategories: g,
     isFetchingPurchases: O
-  } = (0, d.yV)("NameplateModal"), _ = y || O && 0 === h.length;
+  } = (0, d.yV)("NameplateModal"), _ = g || O && 0 === h.length;
   return (0, i.useEffect)(() => {
-    m.default.track(g.rMx.OPEN_MODAL, {
-      type: g.jXE.NAMEPLATE_CUSTOMIZATION,
+    m.default.track(y.rMx.OPEN_MODAL, {
+      type: y.jXE.NAMEPLATE_CUSTOMIZATION,
       location_stack: v
     })
   }, [v]), null == p ? null : (0, n.jsx)(c.Gt, {
@@ -68,13 +68,13 @@ function x(e) {
   let {
     user: f,
     available: m,
-    purchased: g,
+    purchased: y,
     analyticsLocations: _,
     onClose: x,
     guildId: P
-  } = e, w = (0, l.e7)([b.ZP], () => null != P && null != f ? b.ZP.getMember(P, f.id) : null), C = null != P ? null == w || null == (r = w.collectibles) || null == (t = r.nameplate) ? void 0 : t.skuId : null == f || null == (d = f.collectibles) || null == (c = d.nameplate) ? void 0 : c.skuId, S = g.find(e => e.skuId === C), {
-    pendingNameplate: I
-  } = (0, v.Zx)(f, P), [k, N] = (0, i.useState)(() => void 0 !== I ? I : null != S ? S : null), [E, T] = (0, i.useState)(null != k), D = (0, i.useCallback)(e => {
+  } = e, w = (0, l.e7)([b.ZP], () => null != P && null != f ? b.ZP.getMember(P, f.id) : null), C = null != P ? null == w || null == (r = w.collectibles) || null == (t = r.nameplate) ? void 0 : t.skuId : null == f || null == (d = f.collectibles) || null == (c = d.nameplate) ? void 0 : c.skuId, S = y.find(e => e.skuId === C), {
+    pendingNameplate: k
+  } = (0, v.Zx)(f, P), [I, N] = (0, i.useState)(() => void 0 !== k ? k : null != S ? S : null), [T, E] = (0, i.useState)(null != I), D = (0, i.useCallback)(e => {
     x(), (0, u.mK)({
       analyticsLocations: _,
       analyticsSource: s.Z.EDIT_NAMEPLATE_MODAL,
@@ -95,30 +95,30 @@ function x(e) {
     }), (0, n.jsxs)(a.hzk, {
       className: j.content,
       scrollbarType: "none",
-      children: [(0, n.jsx)(y.Z, {
-        selected: k,
+      children: [(0, n.jsx)(g.Z, {
+        selected: I,
         onSelect: (e, t) => {
-          N(e), T(null != t && t)
+          N(e), E(null != t && t)
         },
         onOpenShop: D,
         available: m,
-        purchased: g
+        purchased: y
       }), (0, n.jsx)(h.Z, {
         user: f,
-        selectedNameplate: k,
-        purchased: E
+        selectedNameplate: I,
+        purchased: T
       })]
     }), (0, n.jsxs)(a.mzw, {
-      children: [E || null == k ? (0, n.jsx)(a.zxk, {
+      children: [T || null == I ? (0, n.jsx)(a.zxk, {
         variant: "primary",
         text: O.intl.string(O.t.Jh8fJy),
-        disabled: void 0 === k,
+        disabled: void 0 === I,
         onClick: () => {
-          null != P ? (0, p.RH)(k) : (0, o.Rx)(k), x()
+          null != P ? (0, p.RH)(I) : (0, o.Rx)(I), x()
         }
       }) : (0, n.jsx)(a.zxk, {
         variant: "primary",
-        onClick: () => D(null == k ? void 0 : k.skuId),
+        onClick: () => D(null == I ? void 0 : I.skuId),
         text: O.intl.string(O.t.fYfGgI)
       }), (0, n.jsx)(a.zxk, {
         variant: "secondary",

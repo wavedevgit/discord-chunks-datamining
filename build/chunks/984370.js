@@ -1,7 +1,7 @@
-/** Chunk was on 50874 **/
+/** Chunk was on 12769 **/
 r.d(t, {
   O: () => P,
-  Z: () => N
+  Z: () => C
 }), r(35282);
 var n = r(255367);
 r(73800);
@@ -76,11 +76,11 @@ function x(e) {
     toolbar: x,
     mobileToolbar: v,
     "aria-label": R,
-    "aria-labelledby": N,
-    scrollable: C,
+    "aria-labelledby": C,
+    scrollable: N,
     role: I,
-    hideSearch: A,
-    showDivider: M,
+    hideSearch: M,
+    showDivider: A,
     disableDoubleClick: Z
   } = e, T = null == l || (0, E.AB)(l) ? null : l, D = (0, a.e7)([p.Z], () => p.Z.isInChannel(T) || !1), w = (0, a.e7)([o.Z], () => null != T && o.Z.getParticipantsListOpen(T)), {
     enabled: k,
@@ -97,13 +97,13 @@ function x(e) {
     innerClassName: y,
     toolbar: function() {
       if (null == x) return null;
-      let e = null != l && !A;
+      let e = null != l && !M;
       return i.tq ? v : (0, n.jsxs)(n.Fragment, {
         children: [x, e && !(0, E.AB)(l) ? (0, n.jsx)(h.Z, {
           guildId: b,
           channelId: l,
           className: S.search
-        }, null != b ? b : l) : null, M && (0, n.jsx)(g.ZP.Divider, {}), k && !L ? (0, n.jsx)(_.Z, {}) : null, H && D && null != T && !w && c === O.d4z.GROUP_DM && (0, n.jsxs)("div", {
+        }, null != b ? b : l) : null, A && (0, n.jsx)(g.ZP.Divider, {}), k && !L ? (0, n.jsx)(_.Z, {}) : null, H && D && null != T && !w && c === O.d4z.GROUP_DM && (0, n.jsxs)("div", {
           className: S.controlButtonWrapper,
           children: [(0, n.jsx)(g.ZP.Divider, {}), (0, n.jsx)(f.Z, {
             onClick: () => s.Z.toggleParticipantsList(T, !w)
@@ -115,9 +115,9 @@ function x(e) {
     showToolbar: j,
     onDoubleClick: () => P(Z),
     "aria-label": R,
-    "aria-labelledby": N,
+    "aria-labelledby": C,
     role: I,
-    scrollable: C,
+    scrollable: N,
     children: t
   })
 }
@@ -172,4 +172,4 @@ function R(e) {
   })
 }
 R.Title = g.ZP.Title, R.Icon = g.ZP.Icon, R.ChannelIcon = g.ZP.ChannelIcon, R.Divider = g.ZP.Divider, R.Caret = g.ZP.Caret;
-let N = R
+let C = R

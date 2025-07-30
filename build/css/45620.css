@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: 4b1b8de83bd4423b
+  Original File Name: 82e18b10504e5a5f
 **/
 .shopWrapper__6db1d {
     background: var(--background-base-low);
@@ -620,6 +620,35 @@
 
 .nitroIcon__8a8e7 {
     margin-right: 4px
+}
+
+.priceStrikethrough__8a8e7 {
+    text-decoration: line-through
+}
+
+.discountPill__8a8e7 {
+    background: var(--green-new-34);
+    border-radius: 20px;
+    margin-left: 8px;
+    padding: 1px 8px 2px;
+    -webkit-text-decoration-line: none;
+    text-decoration-line: none
+}
+
+.theme-light .discountPill__8a8e7 {
+    color: var(--white)
+}
+
+.theme-light .discountBackgroundColor__8a8e7 {
+    color: #9a9a9d
+}
+
+.theme-dark .discountPill__8a8e7 {
+    color: var(--neutral-71)
+}
+
+.theme-dark .discountBackgroundColor__8a8e7 {
+    color: #8d8e91
 }
 
 .priceTagsContainer_f73e93 {
@@ -1923,4 +1952,4 @@
     cursor: pointer
 }
 
-/*# sourceMappingURL=4b1b8de83bd4423b.css.map*/
+/*# sourceMappingURL=82e18b10504e5a5f.css.map*/

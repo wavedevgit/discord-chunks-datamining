@@ -24,15 +24,15 @@ var n = a(255367),
   y = a(681619),
   C = a(621060),
   O = a(981631),
-  N = a(248520),
-  T = a(616257);
+  T = a(248520),
+  N = a(616257);
 
 function E(e) {
   return parseFloat(e.toFixed(3))
 }
 let S = [{
   key: "store",
-  cellClassName: N.actionColumn,
+  cellClassName: T.actionColumn,
   render(e) {
     let {
       trace: t
@@ -41,7 +41,7 @@ let S = [{
   }
 }, {
   key: "time",
-  cellClassName: N.totalTimeColumn,
+  cellClassName: T.totalTimeColumn,
   render(e) {
     let {
       trace: t
@@ -75,7 +75,7 @@ let I = [{
     } = e, r = c()(a.createdAt);
     return (0, n.jsxs)(n.Fragment, {
       children: [(0, n.jsxs)(j.E, {
-        className: N.actionProperties,
+        className: T.actionProperties,
         children: [(0, n.jsx)(j.Z9, {
           name: "Created at",
           children: (0, n.jsx)("time", {
@@ -88,7 +88,7 @@ let I = [{
           children: [E(a.totalTime), " ms"]
         })]
       }), (0, n.jsx)(u.zJl, {
-        className: N.inspectorContainer,
+        className: T.inspectorContainer,
         children: (0, n.jsx)(g.Z, {
           data: a.action
         })
@@ -117,7 +117,7 @@ function w(e) {
     id: "error",
     name: (0, n.jsxs)(n.Fragment, {
       children: [(0, n.jsx)(b.Z, {
-        className: N.errorIcon
+        className: T.errorIcon
       }), "Error"]
     }),
     group: C.v0.NONE,
@@ -127,18 +127,18 @@ function w(e) {
       } = e;
       return (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)("div", {
-          className: i()(N.errorToolbar, T.toolbar),
+          className: i()(T.errorToolbar, N.toolbar),
           children: (0, n.jsx)("div", {
-            className: T.toolbarGroup,
+            className: N.toolbarGroup,
             children: (0, n.jsx)(d.zx, {
-              className: T.toolbarButton,
+              className: N.toolbarButton,
               size: d.zx.Sizes.MIN,
               onClick: () => console.error(t.error),
               children: "Log to Console"
             })
           })
         }), (0, n.jsx)(u.zJl, {
-          className: N.inspectorContainer,
+          className: T.inspectorContainer,
           children: (0, n.jsx)(g.Z, {
             data: t.error
           })
@@ -152,17 +152,17 @@ function w(e) {
     tabs: l
   }, [l]);
   return (0, n.jsxs)(_.Z, {
-    className: N.subPanel,
+    className: T.subPanel,
     minHeight: 100,
     initialHeight: a,
     children: [(0, n.jsx)(s, {}), (0, n.jsxs)(x.ZP, {
-      className: i()(T.headerBar, N.subPanelHeaderBar),
+      className: i()(N.headerBar, T.subPanelHeaderBar),
       children: [(0, n.jsx)(x.ZP.Icon, {
         icon: u.xVZ,
         tooltip: t.name
       }), (0, n.jsx)(x.ZP.Title, {
-        wrapperClassName: i()(T.headerTitle, T.dispatcherHeader),
-        className: T.headerTitleText,
+        wrapperClassName: i()(N.headerTitle, N.dispatcherHeader),
+        className: N.headerTitleText,
         children: t.name
       }), (0, n.jsx)(x.ZP.Icon, {
         icon: u.TIy,
@@ -187,20 +187,20 @@ function w(e) {
 }
 let R = [{
     key: "action",
-    cellClassName: N.actionColumn,
+    cellClassName: T.actionColumn,
     render(e) {
       let {
         actionLog: t
       } = e;
       return (0, n.jsxs)(n.Fragment, {
         children: [t.error && (0, n.jsx)(b.Z, {
-          className: N.errorIcon
+          className: T.errorIcon
         }), t.name]
       })
     }
   }, {
     key: "total time",
-    cellClassName: N.totalTimeColumn,
+    cellClassName: T.totalTimeColumn,
     render(e) {
       let {
         actionLog: t
@@ -209,7 +209,7 @@ let R = [{
     }
   }, {
     key: "timestamp",
-    cellClassName: N.totalTimeColumn,
+    cellClassName: T.totalTimeColumn,
     render(e) {
       let {
         actionLog: t
@@ -260,18 +260,18 @@ function A() {
     O = r.useMemo(() => C ? x : b ? c : o, [o, x, C, b, c]);
   return (0, n.jsxs)("div", {
     ref: e,
-    className: i()(T.panel, N.panel),
+    className: i()(N.panel, T.panel),
     children: [(0, n.jsxs)("div", {
-      className: N.toolbar,
+      className: T.toolbar,
       children: [(0, n.jsx)("div", {
         title: "Toggles the flow of Actions",
-        className: N.pausedEvents,
+        className: T.pausedEvents,
         children: (0, n.jsx)(u.rsf, {
           checked: !b,
           onChange: e => _(!e)
         })
       }), (0, n.jsx)(u.E1j, {
-        className: N.searchBar,
+        className: T.searchBar,
         query: t,
         onChange: a,
         onClear: () => a(""),

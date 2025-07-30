@@ -1,12 +1,12 @@
-/** Chunk was on 55864 **/
+/** Chunk was on 45620 **/
 "use strict";
 r.d(t, {
   F: () => p
 });
 var n = r(255367);
 r(73800);
-var i = r(120356),
-  l = r.n(i),
+var l = r(120356),
+  i = r.n(l),
   a = r(481060),
   o = r(937615),
   s = r(884697),
@@ -28,45 +28,51 @@ let p = e => {
       amount: t,
       currency: r
     },
-    nitroIconType: i,
+    nitroIconType: l,
     nitroIconSize: p = "md",
-    className: v,
-    discount: b = s.f_,
-    variant: f = "heading-md/semibold"
-  } = e, m = (0, o.qr)(t, r), h = b !== s.f_ && b.discountPercentage >= 5 ? (0, n.jsxs)(n.Fragment, {
+    className: f,
+    discountOfferAmount: g,
+    discount: h = s.f_,
+    variant: b = "heading-md/semibold"
+  } = e, m = null != g, _ = (0, o.qr)(t, r), O = h !== s.f_ && h.discountPercentage >= 5 && !m ? (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsx)(a.nn4, {
       children: c.intl.format(c.t.niC6DA, {
-        price: m,
-        discountPercentage: b.discountPercentage
+        price: _,
+        discountPercentage: h.discountPercentage
       })
     }), (0, n.jsx)("span", {
       "aria-hidden": !0,
-      children: m
+      children: _
     }), (0, n.jsxs)(a.Text, {
-      variant: f,
+      variant: b,
       color: "text-feedback-positive",
       className: u.discount,
       "aria-hidden": !0,
-      children: ["(-", b.discountPercentage, "%)"]
+      children: ["(-", h.discountPercentage, "%)"]
     })]
   }) : (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsx)(a.nn4, {
       children: c.intl.format(c.t["6C36MD"], {
-        price: m
+        price: _
       })
     }), (0, n.jsx)("span", {
       "aria-hidden": !0,
-      children: m
+      className: i()({
+        [u.priceStrikethrough]: m
+      }, f),
+      children: _
     })]
   });
   return (0, n.jsxs)(a.Text, {
-    variant: f,
-    className: l()(u.container, v),
-    children: ["tooltip" === i ? (0, n.jsx)(a.ua7, {
+    variant: b,
+    className: i()({
+      [u.discountBackgroundColor]: m
+    }, u.container, f),
+    children: ["tooltip" === l ? (0, n.jsx)(a.ua7, {
       text: c.intl.string(c.t.MPFyJy),
       "aria-label": c.intl.string(c.t.X3Ekj4),
       children: e => {
-        var t, r, i = d({}, function(e) {
+        var t, r, l = d({}, function(e) {
           if (null == e) throw TypeError("Cannot destructure " + e);
           return e
         }(e));
@@ -90,7 +96,7 @@ let p = e => {
         }({
           size: p,
           color: "currentColor"
-        }, i), r = r = {
+        }, l), r = r = {
           className: u.nitroIcon
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
           var r = Object.keys(e);
@@ -103,10 +109,23 @@ let p = e => {
           Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
         }), t))
       }
-    }) : "default" === i ? (0, n.jsx)(a.SrA, {
+    }) : "default" === l ? (0, n.jsx)(a.SrA, {
       size: p,
       color: "currentColor",
       className: u.nitroIcon
-    }) : null, h]
+    }) : null, O, m && (0, n.jsxs)(a.X6q, {
+      variant: "heading-md/semibold",
+      className: u.discountPill,
+      children: [(0, n.jsx)(a.nn4, {
+        children: c.intl.format(c.t.rItDb2, {
+          discountOfferAmount: g
+        })
+      }), (0, n.jsx)("span", {
+        "aria-hidden": !0,
+        children: c.intl.formatToPlainString(c.t.AYcXGR, {
+          discountOfferAmount: g
+        })
+      })]
+    })]
   })
 }

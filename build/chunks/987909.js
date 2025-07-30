@@ -1,6 +1,6 @@
 /** Chunk was on 63774 **/
 n.d(t, {
-  Z: () => v
+  Z: () => y
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -30,7 +30,7 @@ function O(e) {
   return t[i]
 }
 
-function y(e) {
+function v(e) {
   let {
     currentUser: t,
     channel: n,
@@ -39,7 +39,7 @@ function y(e) {
     stickers: m,
     event: f,
     eventProperties: _
-  } = e, h = (0, p.t)(), [E, y] = i.useState(!1), v = i.useMemo(() => O({
+  } = e, h = (0, p.t)(), [E, v] = i.useState(!1), y = i.useMemo(() => O({
     assets: m,
     currentUser: t,
     message: l
@@ -70,7 +70,7 @@ function y(e) {
     }({
       channel: n,
       message: l,
-      sticker: v
+      sticker: y
     }), function(e) {
       var t, n;
       let {
@@ -108,11 +108,11 @@ function y(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t))
     }({
-      sticker: v,
+      sticker: y,
       event: f,
       eventProperties: _
     }))
-  }, [n, l, v, f, _]);
+  }, [n, l, y, f, _]);
   return h ? (0, r.jsx)(a.zx, {
     variant: "secondary",
     size: "md",
@@ -123,19 +123,19 @@ function y(e) {
     className: C.CTAMessageButtonOuter,
     innerClassName: C.CTAMessageButton,
     color: o.Tt.PRIMARY,
-    onMouseEnter: () => y(!0),
-    onMouseLeave: () => y(!1),
+    onMouseEnter: () => v(!0),
+    onMouseLeave: () => v(!1),
     onClick: I,
     children: [(0, r.jsx)(u.Z, {
       className: C.CTAMessageSticker,
       isInteracting: E,
-      sticker: v,
+      sticker: y,
       size: 28
     }), x]
   })
 }
 
-function v(e) {
+function y(e) {
   let {
     channel: t,
     message: n,
@@ -166,7 +166,7 @@ function v(e) {
   });
   return null != c && u ? (0, r.jsx)("div", {
     className: C.CTAMessage,
-    children: (0, r.jsx)(y, {
+    children: (0, r.jsx)(v, {
       currentUser: c,
       channel: t,
       message: n,

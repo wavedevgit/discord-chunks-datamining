@@ -26,8 +26,8 @@ var r = n(255367),
   E = n(839963),
   C = n(294608),
   O = n(65145),
-  y = n(981631),
-  v = n(388032),
+  v = n(981631),
+  y = n(388032),
   x = n(56228);
 
 function I(e) {
@@ -68,7 +68,7 @@ function S(e) {
     children: n
   } = e;
   return (0, r.jsx)("ul", {
-    "aria-label": v.intl.string(v.t.sJpqBQ),
+    "aria-label": y.intl.string(y.t.sJpqBQ),
     className: t,
     children: n
   })
@@ -80,7 +80,7 @@ function T(e) {
     children: n
   } = e;
   return (0, r.jsx)("div", {
-    "aria-label": v.intl.string(v.t.sJpqBQ),
+    "aria-label": y.intl.string(y.t.sJpqBQ),
     role: "group",
     className: t,
     children: n
@@ -111,7 +111,7 @@ function N(e) {
     return i
   }(i, ["ref"]);
   return (0, r.jsx)("div", j(I({
-    "aria-label": v.intl.string(v.t.sJpqBQ),
+    "aria-label": y.intl.string(y.t.sJpqBQ),
     ref: l
   }, a), {
     className: t,
@@ -339,7 +339,7 @@ function k(e) {
     isVictor: !0
   }, () => ({
     color: d.Z.BUTTON_POSITIVE_BACKGROUND,
-    backgroundColor: (0, u.Lq)(y.Ilk.WHITE_500)
+    backgroundColor: (0, u.Lq)(v.Ilk.WHITE_500)
   })).with({
     isExpired: !0,
     isVictor: !1
@@ -347,8 +347,8 @@ function k(e) {
     color: d.Z.ICON_PRIMARY,
     backgroundColor: d.Z.BACKGROUND_MOD_FAINT
   })).otherwise(() => ({
-    color: (0, u.Lq)(y.Ilk.BRAND_500),
-    backgroundColor: (0, u.Lq)(y.Ilk.WHITE_500)
+    color: (0, u.Lq)(v.Ilk.BRAND_500),
+    backgroundColor: (0, u.Lq)(v.Ilk.WHITE_500)
   }));
   return (0, r.jsx)(s.owK, {
     size: "custom",
@@ -399,7 +399,7 @@ function F(e) {
       size: "custom",
       width: l,
       height: l,
-      color: (0, u.Lq)(y.Ilk.WHITE_500)
+      color: (0, u.Lq)(v.Ilk.WHITE_500)
     })
   })
 }

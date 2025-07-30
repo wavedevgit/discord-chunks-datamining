@@ -1,63 +1,63 @@
-/** Chunk was on 50874 **/
-r.d(t, {
-  D: () => l
+/** Chunk was on 43828 **/
+n.d(t, {
+  D: () => a
 });
-var n = r(255367);
-r(73800);
-var i = r(239091);
+var r = n(255367);
+n(73800);
+var i = n(239091);
 
-function a(e) {
+function l(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var r = null != arguments[t] ? arguments[t] : {},
-      n = Object.keys(r);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(r, e).enumerable
-    }))), n.forEach(function(t) {
-      var n;
-      n = r[t], t in e ? Object.defineProperty(e, t, {
-        value: n,
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: !0,
         configurable: !0,
         writable: !0
-      }) : e[t] = n
+      }) : e[t] = r
     })
   }
   return e
 }
 
-function s(e, t) {
+function o(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var r = Object.keys(e);
+    var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var n = Object.getOwnPropertySymbols(e);
-      r.push.apply(r, n)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
-    return r
-  })(Object(t)).forEach(function(r) {
-    Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
+    return n
+  })(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function l(e, t, l, c, o) {
-  let u = l.getGuildId();
+function a(e, t, a, s, c) {
+  let u = a.getGuildId();
   return null != u ? (0, i.jW)(e, async () => {
     let {
       default: e
-    } = await Promise.all([r.e("70274"), r.e("97589"), r.e("80125"), r.e("42707")]).then(r.bind(r, 357823));
-    return r => (0, n.jsx)(e, s(a({}, r), {
+    } = await Promise.all([n.e("70274"), n.e("97589"), n.e("80125"), n.e("42707")]).then(n.bind(n, 357823));
+    return n => (0, r.jsx)(e, o(l({}, n), {
       user: t,
-      channel: l,
+      channel: a,
       guildId: u,
-      onInteraction: e => o("GuildVoiceUserContextMenu", e)
+      onInteraction: e => c("GuildVoiceUserContextMenu", e)
     }))
-  }, c) : (0, i.jW)(e, async () => {
+  }, s) : (0, i.jW)(e, async () => {
     let {
       default: e
-    } = await Promise.all([r.e("80125"), r.e("47452")]).then(r.bind(r, 238296));
-    return r => (0, n.jsx)(e, s(a({}, r), {
+    } = await Promise.all([n.e("80125"), n.e("47452")]).then(n.bind(n, 238296));
+    return n => (0, r.jsx)(e, o(l({}, n), {
       user: t,
-      channel: l,
-      onInteraction: e => o("BaseVoiceUserContextMenu", e)
+      channel: a,
+      onInteraction: e => c("BaseVoiceUserContextMenu", e)
     }))
-  }, c)
+  }, s)
 }

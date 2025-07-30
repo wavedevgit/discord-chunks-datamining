@@ -1,9 +1,14 @@
-/** Chunk was on 40417 **/
-e.exports = {
-  container: "container_d404a3",
-  iconContainer: "iconContainer_d404a3",
-  icon: "icon_d404a3",
-  stars: "stars_d404a3",
-  header: "header_d404a3",
-  protip: "protip_d404a3"
-}
+/** Chunk was on web.js **/
+"use strict";
+Object.defineProperty(t, "__esModule", {
+  value: !0
+});
+var r = n(722433);
+Object.keys(r).forEach(function(e) {
+  "default" !== e && Object.defineProperty(t, e, {
+    enumerable: !0,
+    get: function() {
+      return r[e]
+    }
+  })
+})

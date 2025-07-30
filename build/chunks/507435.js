@@ -56,7 +56,7 @@ function O(e) {
   }) : null
 }
 
-function y(e) {
+function v(e) {
   let t;
   var {
     type: n
@@ -136,7 +136,7 @@ function y(e) {
   })
 }
 
-function v(e) {
+function y(e) {
   let {
     className: t,
     data: n,
@@ -163,7 +163,7 @@ function v(e) {
     children: [(0, r.jsx)(O, {
       hasNoVotes: "NO_VOTES" === o.type,
       victorEmoji: n.victorEmoji
-    }), (0, r.jsx)(y, function(e) {
+    }), (0, r.jsx)(v, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -196,7 +196,7 @@ function x(e) {
     channel: l,
     compact: a,
     disableInteraction: u = !1
-  } = e, d = n.embeds[0], g = i.useMemo(() => (0, _.Z)(d), [d]), C = (0, o.aF)(null != (t = null == g ? void 0 : g.questionText) ? t : "", h.Dv), O = (0, p.ZP)(n), y = (0, m.l)({
+  } = e, d = n.embeds[0], g = i.useMemo(() => (0, _.Z)(d), [d]), C = (0, o.aF)(null != (t = null == g ? void 0 : g.questionText) ? t : "", h.Dv), O = (0, p.ZP)(n), v = (0, m.l)({
     user: n.author,
     channelId: l.id,
     guildId: l.guild_id,
@@ -218,11 +218,11 @@ function x(e) {
       compact: a,
       children: b.intl.format(b.t["VJcK4+"], {
         username: O.nick,
-        usernameHook: y(O),
+        usernameHook: v(O),
         title: C,
         titleOnClick: I
       })
-    }), (0, r.jsx)(v, {
+    }), (0, r.jsx)(y, {
       className: E.embed,
       data: g,
       onClickPollLink: u ? void 0 : I

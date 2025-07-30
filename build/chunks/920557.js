@@ -7,7 +7,7 @@ var r = n(255367),
   l = n(120356),
   a = n.n(l),
   o = n(528708),
-  s = n(778141),
+  s = n(855659),
   c = n(278074),
   u = n(748780),
   d = n(481060),
@@ -40,7 +40,7 @@ function O(e) {
   return e
 }
 
-function y(e) {
+function v(e) {
   let {
     percentage: t,
     label: n,
@@ -49,12 +49,12 @@ function y(e) {
   } = e, s = (0, p.Dt)(), {
     channelId: c,
     messageId: u
-  } = (0, b.pE)(), [g, h] = i.useState(""), [E, y] = i.useState(!1), v = "" !== g && E, x = i.useCallback(() => {
+  } = (0, b.pE)(), [g, h] = i.useState(""), [E, v] = i.useState(!1), y = "" !== g && E, x = i.useCallback(() => {
     h((0, _.e1)(u, c, a))
   }, [u, c, a]), I = i.useCallback(() => {
-    x(), y(!0)
+    x(), v(!0)
   }, [x]), j = i.useCallback(() => {
-    y(!1)
+    v(!1)
   }, []), S = i.useCallback(() => {
     (0, f.n)({
       channelId: c,
@@ -76,7 +76,7 @@ function y(e) {
           scaleFontToUserSetting: !0,
           children: g
         }),
-        forceOpen: v,
+        forceOpen: y,
         "aria-label": !1,
         children: e => {
           var t, i;
@@ -86,7 +86,7 @@ function y(e) {
             onFocus: I,
             onBlur: j,
             onClick: S,
-            "aria-describedby": v ? s : void 0,
+            "aria-describedby": y ? s : void 0,
             text: n,
             variant: "secondary",
             textVariant: "text-xs/semibold"
@@ -101,7 +101,7 @@ function y(e) {
             Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
           }), t))
         }
-      }), v && (0, r.jsx)(o.T, {
+      }), y && (0, r.jsx)(o.T, {
         id: s,
         children: g
       })]
@@ -119,7 +119,7 @@ function y(e) {
   })
 }
 
-function v(e) {
+function y(e) {
   let {
     percentage: t,
     shouldAnimate: n
@@ -190,7 +190,7 @@ function I(e) {
       [C.currentlyVoting]: i !== g.Y7.LIST,
       [C.selected]: c
     }),
-    children: [l ? (0, r.jsx)(v, {
+    children: [l ? (0, r.jsx)(y, {
       percentage: t.votesPercentage,
       shouldAnimate: m
     }) : null, null != t.pollMedia.emoji && (0, r.jsx)(h.sc, {
@@ -204,7 +204,7 @@ function I(e) {
       children: t.pollMedia.text
     }), t.didSelfVote && (0, r.jsx)(o.T, {
       children: E.intl.string(E.t["8DAM+/"])
-    }), l && (0, r.jsx)(y, {
+    }), l && (0, r.jsx)(v, {
       percentage: t.votesPercentage,
       label: t.votes,
       canShowVoterDetails: s,

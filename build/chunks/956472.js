@@ -52,20 +52,21 @@ let u = e => {
     let {
       product: t,
       isPremiumUser: n,
-      tab: i
+      tab: i,
+      hasDiscountOffer: r = !1
     } = e, {
-      orbPrice: r,
-      fiatPrice: l,
-      isOrbExclusive: o
+      orbPrice: l,
+      fiatPrice: o,
+      isOrbExclusive: a
     } = d({
       product: t,
       isPremiumUser: n
-    }), a = [];
-    return i === s.AW.ORBS ? null != r && (a = [r]) : (null != l && a.push(l), null != r && a.push(r)), {
-      orbPrice: r,
-      fiatPrice: l,
-      isOrbExclusive: o,
-      displayPrices: a
+    }), u = [];
+    return i === s.AW.ORBS ? null != l && (u = [l]) : (null != o && u.push(o), null == l || r || u.push(l)), {
+      orbPrice: l,
+      fiatPrice: o,
+      isOrbExclusive: a,
+      displayPrices: u
     }
   },
   p = e => {
@@ -74,15 +75,16 @@ let u = e => {
       hasSufficientOrbs: n,
       orbPrice: i,
       fiatPrice: r,
-      isOrbExclusive: l
-    } = e, o = [];
-    null != i && null != r ? n ? o.push(i, r) : o.push(r, i) : null != i ? o.push(i) : null != r && o.push(r);
-    let s = o.length > 0 && (null == (t = o[0]) ? void 0 : t.currency) === a.pKx.DISCORD_ORB;
+      isOrbExclusive: l,
+      hasDiscountOffer: o = !1
+    } = e, s = [];
+    null != i && null != r ? n && !o ? s.push(i, r) : s.push(r, i) : null != i ? s.push(i) : null != r && s.push(r);
+    let u = s.length > 0 && (null == (t = s[0]) ? void 0 : t.currency) === a.pKx.DISCORD_ORB;
     return {
-      checkoutEligiblePrices: o,
+      checkoutEligiblePrices: s,
       isOrbExclusive: l,
       hasSufficientOrbs: n,
-      shouldCheckoutWithOrbs: s
+      shouldCheckoutWithOrbs: u
     }
   },
   g = e => {
@@ -110,17 +112,19 @@ function f(e) {
   let {
     product: t,
     isPremiumUser: n,
-    tab: r
+    tab: r,
+    hasDiscountOffer: l = !1
   } = e, {
-    orbPrice: l,
-    fiatPrice: o,
-    isOrbExclusive: s,
-    displayPrices: a
+    orbPrice: o,
+    fiatPrice: s,
+    isOrbExclusive: a,
+    displayPrices: u
   } = h({
     product: t,
     isPremiumUser: n,
-    tab: r
-  }), u = (0, i.V_)(null != l ? l.amount : null);
+    tab: r,
+    hasDiscountOffer: l
+  }), c = (0, i.V_)(null != o ? o.amount : null);
   return function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -139,11 +143,12 @@ function f(e) {
     }
     return e
   }({
-    displayPrices: a
+    displayPrices: u
   }, p({
-    orbPrice: l,
-    fiatPrice: o,
-    isOrbExclusive: s,
-    hasSufficientOrbs: u
+    orbPrice: o,
+    fiatPrice: s,
+    isOrbExclusive: a,
+    hasSufficientOrbs: c,
+    hasDiscountOffer: l
   }))
 }

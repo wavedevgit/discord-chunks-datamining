@@ -1,4 +1,4 @@
-/** Chunk was on 55864 **/
+/** Chunk was on 45620 **/
 "use strict";
 e.exports = {
   priceTagsContainer: "priceTagsContainer_f73e93",

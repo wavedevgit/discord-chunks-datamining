@@ -57,8 +57,8 @@ let O = {
     lastFetched: null,
     lastSeen: null
   },
-  y = O,
-  v = {},
+  v = O,
+  y = {},
   x = null,
   I = !1,
   j = 864e5;
@@ -66,11 +66,11 @@ var S = ((i = S || {}).IS_OWNER = "is_owner", i.IS_ADMIN = "is_admin", i.IS_COMM
 let T = new Set(Object.values(S));
 
 function N() {
-  return null == y.lastFetched || Date.now() - y.lastFetched >= j
+  return null == v.lastFetched || Date.now() - v.lastFetched >= j
 }
 
 function P() {
-  !I && (N() || null != y.surveyOverride) && (I = !0, (0, d.wk)(y.surveyOverride, !0))
+  !I && (N() || null != v.surveyOverride) && (I = !0, (0, d.wk)(v.surveyOverride, !0))
 }
 
 function A(e) {
@@ -112,7 +112,7 @@ function A(e) {
           c = (null == s ? void 0 : s.id) === a.ownerId,
           u = f.Z.can(h.Plq.ADMINISTRATOR, a);
         if (t.includes("is_owner") && !c || t.includes("is_admin") && !u) continue;
-        null == (v = null != v ? v : {})[e.key] && (v[e.key] = e);
+        null == (y = null != y ? y : {})[e.key] && (y[e.key] = e);
         let d = _.Z.getGuildId(),
           m = null != d && d === a.id;
         if ((!t.includes("is_viewing") || m) && !i) return !0
@@ -125,9 +125,9 @@ function w(e) {
   let {
     survey: t
   } = e;
-  I = !1, y.lastFetched = Date.now(), null == y.hiddenSurveys && (y.hiddenSurveys = {});
+  I = !1, v.lastFetched = Date.now(), null == v.hiddenSurveys && (v.hiddenSurveys = {});
   let n = null != t,
-    r = n && null == y.hiddenSurveys[t.key],
+    r = n && null == v.hiddenSurveys[t.key],
     i = n && A(t);
   var l = 0;
   let o = c.K.get(h.z7k);
@@ -136,7 +136,7 @@ function w(e) {
 
 function Z() {
   if (null != x && (A(x) || (x = null, 0))) return !1;
-  let e = Object.values(v = null != v ? v : {})[0];
+  let e = Object.values(y = null != y ? y : {})[0];
   null != e && A(e) ? w({
     type: "SURVEY_FETCHED",
     survey: e
@@ -144,19 +144,19 @@ function Z() {
 }
 class R extends(r = s.ZP.PersistedStore) {
   initialize(e) {
-    y = null != e ? e : O, this.syncWith([_.Z], Z)
+    v = null != e ? e : O, this.syncWith([_.Z], Z)
   }
   getState() {
-    return y
+    return v
   }
   getCurrentSurvey() {
     return N() ? null : x
   }
   getSurveyOverride() {
-    return y.surveyOverride
+    return v.surveyOverride
   }
   getLastSeenTimestamp() {
-    return y.lastSeen
+    return v.lastSeen
   }
 }
 b(R, "displayName", "SurveyStore"), b(R, "persistKey", "SurveyStore"), b(R, "migrations", [e => {
@@ -181,20 +181,20 @@ let D = new R(u.Z, {
     let {
       key: t
     } = e;
-    y.hiddenSurveys[t] = !0, x = null, v = null != v ? v : {}, delete v[t]
+    v.hiddenSurveys[t] = !0, x = null, y = null != y ? y : {}, delete y[t]
   },
   SURVEY_OVERRIDE: function(e) {
     let {
       id: t
     } = e;
-    y.surveyOverride = t, null != t && delete y.hiddenSurveys[t], (0, d.wk)(y.surveyOverride, !0)
+    v.surveyOverride = t, null != t && delete v.hiddenSurveys[t], (0, d.wk)(v.surveyOverride, !0)
   },
   PUSH_NOTIFICATION_CLICK: function() {},
   DISPLAYED_INVITE_SHOW: function() {},
   LOGOUT: function() {
-    y.hiddenSurveys = {}
+    v.hiddenSurveys = {}
   },
   SURVEY_SEEN: function() {
-    y.lastSeen = Date.now()
+    v.lastSeen = Date.now()
   }
 })

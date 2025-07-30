@@ -1,12 +1,12 @@
-/** Chunk was on 55864 **/
+/** Chunk was on 45620 **/
 "use strict";
 r.d(t, {
   U: () => c
 });
 var n = r(255367);
 r(73800);
-var i = r(120356),
-  l = r.n(i),
+var l = r(120356),
+  i = r.n(l),
   a = r(481060),
   o = r(388032),
   s = r(44615);
@@ -21,7 +21,7 @@ let c = e => {
     align: "left",
     text: o.intl.string(o.t.y1VWkZ),
     children: e => {
-      var r, i;
+      var r, l;
       return (0, n.jsxs)("div", (r = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {},
@@ -40,8 +40,8 @@ let c = e => {
         }
         return e
       }({
-        className: l()(s.partialOwnStateContainer, t)
-      }, e), i = i = {
+        className: i()(s.partialOwnStateContainer, t)
+      }, e), l = l = {
         children: [(0, n.jsx)("span", {
           className: s.iconWrapper,
           children: (0, n.jsx)(a.d3s, {
@@ -53,15 +53,15 @@ let c = e => {
           variant: "text-md/semibold",
           children: o.intl.string(o.t.BEjTio)
         })]
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e);
           r.push.apply(r, n)
         }
         return r
-      })(Object(i)).forEach(function(e) {
-        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
+      })(Object(l)).forEach(function(e) {
+        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(l, e))
       }), r))
     }
   }) : (0, n.jsx)(a.Text, {

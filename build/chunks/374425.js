@@ -1,6 +1,6 @@
 /** Chunk was on 63774 **/
 n.d(t, {
-  Z: () => v
+  Z: () => y
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -51,7 +51,7 @@ function C(e, t) {
   }), e
 }
 let O = (0, d.Mg)(l.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
-  y = e => {
+  v = e => {
     null != e && s.ZP.trackWithMetadata(g.rMx.EXPRESSION_TOOLTIP_VIEWED, {
       type: h.cd.STICKER_IN_MESSAGE_HOVER,
       expression_id: e.id,
@@ -60,12 +60,12 @@ let O = (0, d.Mg)(l.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
       is_custom: (0, m.z)(e.type)
     })
   },
-  v = e => {
+  y = e => {
     let {
       renderableSticker: t,
       channel: n,
       isInteracting: l
-    } = e, s = i.useRef(null), [d, m] = i.useState(!0), [g, h] = i.useState(String(Date.now())), [v] = (0, p.XW)(t, l), {
+    } = e, s = i.useRef(null), [d, m] = i.useState(!0), [g, h] = i.useState(String(Date.now())), [y] = (0, p.XW)(t, l), {
       analyticsLocations: x
     } = (0, c.ZP)(o.Z.STICKER_MESSAGE), I = (0, r.jsxs)("span", {
       className: b.stickerName,
@@ -73,7 +73,7 @@ let O = (0, d.Mg)(l.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
         size: "xs",
         color: "currentColor",
         className: b.stickerIcon
-      }), (null != v ? v : t).name]
+      }), (null != y ? y : t).name]
     });
     return (0, r.jsx)(c.Gt, {
       value: x,
@@ -99,7 +99,7 @@ let O = (0, d.Mg)(l.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
             text: (0, u.Y)(I),
             "aria-label": !1,
             onTooltipShow: () => {
-              y(v)
+              v(y)
             },
             children: e => (0, r.jsx)(a.P3F, C(E({}, e), {
               innerRef: s,
@@ -111,7 +111,7 @@ let O = (0, d.Mg)(l.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
               children: (0, r.jsx)(f.Z, {
                 isInteracting: l,
                 size: O,
-                sticker: null != v ? v : t
+                sticker: null != y ? y : t
               })
             }))
           }))
