@@ -1,23 +1,17 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => y,
-  xm: () => E
+  xm: () => d
 }), n(953529);
 var r = n(255367);
-n(73800);
-var i = n(399606),
-  a = n(481060),
-  o = n(607070),
-  s = n(388032),
-  l = n(93841),
-  c = n(501867),
-  u = n(567949),
-  d = n(552781),
-  _ = n(952567),
-  f = n(807159);
+n(73800), n(399606);
+var i = n(481060);
+n(607070);
+var a = n(388032);
+n(93841);
+var o = n(501867);
 
-function p(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -26,22 +20,22 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function l(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
 }
 
-function m(e, t) {
+function c(e, t) {
   if (null == e) return {};
-  var n, r, i = g(e, t);
+  var n, r, i = u(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -49,7 +43,7 @@ function m(e, t) {
   return i
 }
 
-function g(e, t) {
+function u(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -57,92 +51,47 @@ function g(e, t) {
   return i
 }
 
-function E(e) {
+function d(e) {
   let {
     heading: t,
     description: n,
-    label: i,
-    isEnabled: o
+    label: s,
+    isEnabled: l
   } = e;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(a.X6q, {
-      className: c.topPerksCardHeading,
+    children: [(0, r.jsx)(i.X6q, {
+      className: o.topPerksCardHeading,
       variant: "heading-lg/extrabold",
       children: t
-    }), (0, r.jsx)(a.Text, {
-      className: c.topPerksCardDescription,
+    }), (0, r.jsx)(i.Text, {
+      className: o.topPerksCardDescription,
       variant: "text-sm/normal",
       children: n
     }), (0, r.jsxs)("div", {
-      className: c.labelsContainer,
-      children: [null != i && (0, r.jsxs)("div", {
-        className: c.topPerksCardLabelContainer,
-        children: [(0, r.jsx)(a.$Eu, {
+      className: o.labelsContainer,
+      children: [null != s && (0, r.jsxs)("div", {
+        className: o.topPerksCardLabelContainer,
+        children: [(0, r.jsx)(i.$Eu, {
           size: "sm",
-          color: a.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
-        }), (0, r.jsx)(a.Text, {
+          color: i.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
+        }), (0, r.jsx)(i.Text, {
           variant: "text-sm/semibold",
-          children: i
+          children: s
         })]
-      }), o && (0, r.jsxs)("div", {
-        className: c.topPerksCardLabelContainer,
-        children: [(0, r.jsx)(a.owK, {
+      }), l && (0, r.jsxs)("div", {
+        className: o.topPerksCardLabelContainer,
+        children: [(0, r.jsx)(i.owK, {
           size: "custom",
           height: 14,
           width: 14,
           color: "currentColor"
-        }), (0, r.jsx)(a.Text, {
+        }), (0, r.jsx)(i.Text, {
           variant: "text-sm/semibold",
           color: "currentColor",
-          children: s.intl.string(s.t.pCMkDQ)
+          children: a.intl.string(a.t.pCMkDQ)
         })]
       })]
     })]
   })
 }
-
-function b(e) {
-  var {
-    imgSrc: t
-  } = e, n = m(e, ["imgSrc"]);
-  return (0, r.jsxs)("div", {
-    className: c.topPerksCard,
-    children: [(0, r.jsx)("img", {
-      className: c.topPerksCardImage,
-      src: t,
-      alt: ""
-    }), (0, r.jsx)("div", {
-      className: c.contentContainer,
-      children: (0, r.jsx)(E, h({}, n))
-    })]
-  })
-}
-let y = function() {
-  let e = (0, i.e7)([o.Z], () => o.Z.useReducedMotion);
-  return (0, r.jsxs)("div", {
-    className: c.wrapper,
-    children: [(0, r.jsx)(a.X6q, {
-      className: c.heading,
-      variant: "heading-xxl/extrabold",
-      children: s.intl.string(s.t.aGdB3N)
-    }), (0, r.jsxs)("div", {
-      className: c.topPerksCards,
-      children: [(0, r.jsx)(b, {
-        description: s.intl.string(s.t.wOYbTk),
-        heading: s.intl.string(s.t.G6jZo6),
-        imgSrc: e ? d : u,
-        label: s.intl.string(l.default.na6fmJ)
-      }), (0, r.jsx)(b, {
-        description: s.intl.string(s.t.HTvLGh),
-        heading: s.intl.string(s.t.IpRQw8),
-        imgSrc: _,
-        label: s.intl.string(l.default.dyNT9v)
-      }), (0, r.jsx)(b, {
-        description: s.intl.string(s.t.yCjoUF),
-        heading: s.intl.string(s.t["/bX4Ji"]),
-        imgSrc: f,
-        label: s.intl.string(l.default["8AEGEx"])
-      })]
-    })]
-  })
-}
+n(567949), n(552781), n(952567), n(807159)
