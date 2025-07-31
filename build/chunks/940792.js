@@ -1,4 +1,4 @@
-/** Chunk was on 36672 **/
+/** Chunk was on 94313 **/
 e.exports = {
   productCard: "productCard__79d38",
   solidBackground: "solidBackground__79d38",

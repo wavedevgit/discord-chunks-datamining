@@ -1,4 +1,4 @@
-/** Chunk was on 38366 **/
+/** Chunk was on 58636 **/
 n.d(t, {
   Z: () => Z
 }), n(35282), n(539854), n(388685);
@@ -20,8 +20,8 @@ var i = n(255367),
   f = n(804063),
   C = n(703656),
   O = n(359110),
-  S = n(695346),
-  T = n(131704),
+  T = n(695346),
+  S = n(131704),
   m = n(592125),
   N = n(430824),
   R = n(496675),
@@ -86,7 +86,7 @@ function j(e) {
       children: t.name
     })]
   });
-  return (0, T.Em)(t.type) ? (0, i.jsx)(a.P3F, {
+  return (0, S.Em)(t.type) ? (0, i.jsx)(a.P3F, {
     className: o()(k.parentChannelName, k.parentChannelNameClickable),
     onClick: e => {
       e.stopPropagation(), n(t.id)
@@ -108,12 +108,12 @@ function x(e) {
     resultRefs: u,
     totalResults: f,
     scrollTo: C,
-    renderEmbeds: T,
+    renderEmbeds: S,
     offset: P,
     jumpToMessage: M,
     listNavigator: x,
     favoriteSearch: Z
-  } = e, F = S.cC.useSetting(), w = (0, p.p)(), V = r.useCallback(e => {
+  } = e, F = T.cC.useSetting(), w = (0, p.p)(), V = r.useCallback(e => {
     if (e === y.Z.getChannelId()) return;
     let t = m.Z.getChannel(e);
     null != t && (R.Z.can(v.Plq.VIEW_CHANNEL, t) || t.isPrivate()) && (0, O.Kh)(t.id)
@@ -125,9 +125,9 @@ function x(e) {
   }, {
     postProcessor: c,
     shouldFilterKeywords: w
-  }), q = r.useRef(null), [X, J] = r.useState(!1);
+  }), X = r.useRef(null), [q, J] = r.useState(!1);
   r.useEffect(() => {
-    let e = q.current;
+    let e = X.current;
     null != e && null != e.offsetWidth && null != e.scrollWidth && J(e.offsetWidth < e.scrollWidth)
   }, []);
   let Q = [G, z, B].filter(e => null != e).join(", ");
@@ -147,9 +147,9 @@ function x(e) {
             color: "currentColor"
           }), (0, i.jsx)(a.ua7, {
             text: G,
-            shouldShow: X,
+            shouldShow: q,
             children: e => (0, i.jsxs)("span", L(U({}, e), {
-              ref: q,
+              ref: X,
               className: k.channelNameText,
               children: [Z && null !== B && "".concat(B, " : "), K]
             }))
@@ -166,7 +166,7 @@ function x(e) {
           },
           totalResults: f,
           scrollTo: C,
-          renderEmbeds: T,
+          renderEmbeds: S,
           searchOffset: P,
           pageResultsLength: s.length,
           result: e,
@@ -193,8 +193,8 @@ let Z = r.memo(function(e) {
     onClick: I,
     paginationTotalCount: g,
     renderPageWrapper: O,
-    onBlockedResultsClick: S,
-    searchRequestAnalyticsId: T,
+    onBlockedResultsClick: T,
+    searchRequestAnalyticsId: S,
     searchResultsQuery: N,
     isFavoritesSearch: R
   } = e, {
@@ -207,10 +207,10 @@ let Z = r.memo(function(e) {
       let t = m.Z.getChannel(e.channel_id),
         n = null != t ? t.getGuildId() : null;
       c.Z.trackJump(e.channel_id, e.id, "Search Results", {
-        search_id: T
+        search_id: S
       }), (0, C.uL)(v.Z5c.CHANNEL(n, e.channel_id, e.id))
     }
-  }, [I, T]), F = r.useMemo(() => {
+  }, [I, S]), F = r.useMemo(() => {
     let e;
     if (null == h) return [];
     let t = 0;
@@ -281,7 +281,7 @@ let Z = r.memo(function(e) {
       tag: "div",
       className: k.resultsBlocked,
       onClick: () => {
-        null == S || S(!j)
+        null == T || T(!j)
       },
       children: [(0, i.jsx)("div", {
         className: k.resultsBlockedImage

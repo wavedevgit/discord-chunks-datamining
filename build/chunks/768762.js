@@ -1,43 +1,43 @@
-/** Chunk was on 43473 **/
+/** Chunk was on 94313 **/
 n.d(t, {
-  Z: () => p
+  Z: () => f
 });
-var r, o, i = n(255367),
+var r, i, l = n(255367),
   a = n(73800),
-  l = n(120356),
-  c = n.n(l),
-  s = n(481060),
-  d = n(974393);
-let u = {
+  o = n(120356),
+  s = n.n(o),
+  c = n(481060),
+  u = n(974393);
+let d = {
     UP: "up",
     RIGHT: "right",
     DOWN: "down",
     LEFT: "left"
   },
-  f = {
-    [u.UP]: "",
-    [u.RIGHT]: d.right,
-    [u.DOWN]: d.down,
-    [u.LEFT]: d.left
+  p = {
+    [d.UP]: "",
+    [d.RIGHT]: u.right,
+    [d.DOWN]: u.down,
+    [d.LEFT]: u.left
   };
-class m extends(o = a.PureComponent) {
+class m extends(i = a.PureComponent) {
   render() {
     let {
       direction: e,
       className: t
     } = this.props;
-    return (0, i.jsx)(s.wj7, {
+    return (0, l.jsx)(c.wj7, {
       size: "md",
       color: "currentColor",
-      className: c()(t, {
-        [f[e]]: !0
+      className: s()(t, {
+        [p[e]]: !0
       })
     })
   }
 }(r = "Directions") in m ? Object.defineProperty(m, r, {
-  value: u,
+  value: d,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : m[r] = u;
-let p = m
+}) : m[r] = d;
+let f = m

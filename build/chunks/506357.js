@@ -1,6 +1,6 @@
-/** Chunk was on 38366 **/
+/** Chunk was on 58636 **/
 n.d(t, {
-  Z: () => S
+  Z: () => T
 });
 var i = n(255367),
   r = n(73800),
@@ -21,10 +21,10 @@ var i = n(255367),
   C = n(388032),
   O = n(302654);
 
-function S(e) {
-  var t, S;
+function T(e) {
+  var t, T;
   let {
-    onDismiss: T
+    onDismiss: S
   } = e, m = (0, l.e7)([h.Z], () => h.Z.getGuildId()), N = (0, l.e7)([u.Z], () => null != m ? u.Z.getChannelId(m) : null, [m]), R = null != m ? m : null, A = (0, l.e7)([d.Z], () => null != R ? d.Z.getGuild(R) : null, [R]), {
     shouldShowIncidentActions: y,
     incidentData: b,
@@ -85,11 +85,11 @@ function S(e) {
       size: s.Z.Sizes.MINI
     }),
     U = (0, I.OY)(b, A.name);
-  if (null != (null != (S = b.dmsDisabledUntil) ? S : b.invitesDisabledUntil) && P) return (0, i.jsxs)(o.qXd, {
+  if (null != (null != (T = b.dmsDisabledUntil) ? T : b.invitesDisabledUntil) && P) return (0, i.jsxs)(o.qXd, {
     className: O.notice,
     color: o.DM8.NEUTRAL,
     children: [(0, i.jsx)(o.RyX, {
-      onClick: T,
+      onClick: S,
       noticeType: g.kVF.GUILD_RAID_NOTIFICATION
     }), k, U, (0, i.jsx)(o.EyT, {
       className: O.actionButton,
@@ -117,7 +117,7 @@ function S(e) {
     className: O.notice,
     color: o.DM8.WARNING,
     children: [(0, i.jsx)(o.RyX, {
-      onClick: T,
+      onClick: S,
       noticeType: g.kVF.GUILD_RAID_NOTIFICATION
     }), k, L, !j && (0, i.jsx)(o.EyT, {
       className: O.actionButton,

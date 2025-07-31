@@ -1,4 +1,4 @@
-/** Chunk was on 36672 **/
+/** Chunk was on 94313 **/
 e.exports = {
   productCard: "productCard__8d9f6",
   productCardClickable: "productCardClickable__8d9f6",

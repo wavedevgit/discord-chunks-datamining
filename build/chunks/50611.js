@@ -1,5 +1,5 @@
-/** Chunk was on 91081 **/
-t.exports = {
+/** Chunk was on 94313 **/
+e.exports = {
   closeButton: "closeButton__47998",
   art: "art__47998",
   description: "description__47998",

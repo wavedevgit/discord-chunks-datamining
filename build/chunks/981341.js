@@ -1,4 +1,4 @@
-/** Chunk was on 80416 **/
+/** Chunk was on 94313 **/
 n.r(e.exports = {
   effect: "effect__263e4",
   effects: "effects__263e4"

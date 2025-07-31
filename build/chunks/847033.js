@@ -1,4 +1,4 @@
-/** Chunk was on 38366 **/
+/** Chunk was on 58636 **/
 n.d(t, {
   Z: () => A,
   m: () => R
@@ -21,8 +21,8 @@ var i = n(255367),
   f = n(652515),
   C = n(550951),
   O = n(544978),
-  S = n(333866),
-  T = n(629481),
+  T = n(333866),
+  S = n(629481),
   m = n(981631);
 let N = 12633 == n.j ? r.createContext(void 0) : null;
 
@@ -38,7 +38,7 @@ function A(e) {
     initialTab: l,
     guildId: o
   } = e, R = (0, s.e7)([I.Z], () => I.Z.getGuild(o)), A = (0, s.e7)([_.Z], () => _.Z.isViewingServerShop(o)), y = (0, C.g)(R, "guild_shop_page"), b = (0, f.RF)(o, "guild_shop_page"), P = (null == R ? void 0 : R.features.has(m.oNc.PRODUCTS_AVAILABLE_FOR_PURCHASE)) === !0, D = (0, h.mY)(null == R ? void 0 : R.id), v = null == (t = (0, u.YB)(o)) ? void 0 : t.server_shop_tab_order, M = [], k = O.y.GUILD_SHOP_FULL_PREVIEW;
-  A || P && D ? (M.push(v === S.a3.PRODUCTS_FIRST ? O.y.GUILD_PRODUCTS : O.y.GUILD_ROLE_SUBSCRIPTIONS), M.push(v === S.a3.PRODUCTS_FIRST ? O.y.GUILD_ROLE_SUBSCRIPTIONS : O.y.GUILD_PRODUCTS), k = M[0]) : P && !D ? (M.push(O.y.GUILD_PRODUCTS), k = O.y.GUILD_PRODUCTS) : !P && D && (M.push(O.y.GUILD_ROLE_SUBSCRIPTIONS), k = O.y.GUILD_ROLE_SUBSCRIPTIONS, y && M.push(O.y.GUILD_PRODUCTS_PREVIEW)), l = null != l ? l : k;
+  A || P && D ? (M.push(v === T.a3.PRODUCTS_FIRST ? O.y.GUILD_PRODUCTS : O.y.GUILD_ROLE_SUBSCRIPTIONS), M.push(v === T.a3.PRODUCTS_FIRST ? O.y.GUILD_ROLE_SUBSCRIPTIONS : O.y.GUILD_PRODUCTS), k = M[0]) : P && !D ? (M.push(O.y.GUILD_PRODUCTS), k = O.y.GUILD_PRODUCTS) : !P && D && (M.push(O.y.GUILD_ROLE_SUBSCRIPTIONS), k = O.y.GUILD_ROLE_SUBSCRIPTIONS, y && M.push(O.y.GUILD_PRODUCTS_PREVIEW)), l = null != l ? l : k;
   let [U, L] = r.useState(l), j = y && !(D && b) || U === O.y.GUILD_PRODUCTS_PREVIEW;
   return r.useEffect(() => {
     L(l)
@@ -68,10 +68,10 @@ function A(e) {
           }
           return e
         }({}, (0, c.hH)(o));
-        if (U === O.y.GUILD_PRODUCTS_PREVIEW) e.stopPropagation(), L(O.y.GUILD_ROLE_SUBSCRIPTIONS), t.action_taken = T.mz.DISMISS_TAB_PREVIEW;
+        if (U === O.y.GUILD_PRODUCTS_PREVIEW) e.stopPropagation(), L(O.y.GUILD_ROLE_SUBSCRIPTIONS), t.action_taken = S.mz.DISMISS_TAB_PREVIEW;
         else {
           var n;
-          (0, E.dL)(m.Z5c.CHANNEL(o, null == (n = p.ZP.getDefaultChannel(o)) ? void 0 : n.id)), t.action_taken = T.mz.DISMISS_FULL_PREVIEW
+          (0, E.dL)(m.Z5c.CHANNEL(o, null == (n = p.ZP.getDefaultChannel(o)) ? void 0 : n.id)), t.action_taken = S.mz.DISMISS_FULL_PREVIEW
         }
         g.default.track(m.rMx.GUILD_SHOP_PREVIEW_CLICK, t)
       }

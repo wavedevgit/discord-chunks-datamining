@@ -1,10 +1,10 @@
-/** Chunk was on 12769 **/
-r.d(t, {
+/** Chunk was on 34429 **/
+n.d(t, {
   xd: () => a
 });
-var n = r(818083),
-  i = r(154579);
-let s = (0, n.B)({
+var r = n(818083),
+  i = n(154579);
+let l = (0, r.B)({
   kind: "user",
   id: "2025-07_search_filters_redesign",
   label: "Search Filters Redesign",
@@ -39,18 +39,18 @@ let s = (0, n.B)({
 function a(e) {
   let {
     isXDMSearch: t,
-    location: r,
-    autoTrackExposure: n = !0
+    location: n,
+    autoTrackExposure: r = !0
   } = e, a = (0, i.nd)({
-    location: r,
-    autoTrackExposure: n
+    location: n,
+    autoTrackExposure: r
   }), {
-    isResultFiltersRedesignEnabled: c
-  } = s.useExperiment({
-    location: r
+    isResultFiltersRedesignEnabled: o
+  } = l.useExperiment({
+    location: n
   }, {
-    autoTrackExposure: n,
+    autoTrackExposure: r,
     disable: a || t
   });
-  return c
+  return o
 }

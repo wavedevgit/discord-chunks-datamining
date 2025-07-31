@@ -1,4 +1,4 @@
-/** Chunk was on 38366 **/
+/** Chunk was on 58636 **/
 n.d(t, {
   Z: () => k,
   d: () => U
@@ -21,8 +21,8 @@ var i = n(255367),
   f = n(914010),
   C = n(671533),
   O = n(259580),
-  S = n(358085),
-  T = n(962086),
+  T = n(358085),
+  S = n(962086),
   m = n(160404),
   N = n(889695),
   R = n(981631),
@@ -69,7 +69,7 @@ function k() {
       viewingRoles: l,
       backNavigationSection: o,
       isFullServerPreview: c,
-      isServerShopPreview: S
+      isServerShopPreview: T
     } = (0, s.cj)([m.Z], () => ({
       viewingRoles: null != t ? m.Z.getViewingRoles(t) : null,
       backNavigationSection: m.Z.getBackNavigationSection(t),
@@ -95,7 +95,7 @@ function k() {
       let {
         backToSettings: n
       } = e;
-      null != t && (m.Z.isFullServerPreview(t) && (0, I.uL)(R.Z5c.CHANNEL(t)), h.ZP.shouldShowOnboarding(t) && (u.Z.finishOnboarding(t), (0, _.EI)(t)), (0, T.mL)(t), n && p.Z.open(t, o), o === R.pNK.ROLE_SUBSCRIPTIONS && (0, E.GN)(t))
+      null != t && (m.Z.isFullServerPreview(t) && (0, I.uL)(R.Z5c.CHANNEL(t)), h.ZP.shouldShowOnboarding(t) && (u.Z.finishOnboarding(t), (0, _.EI)(t)), (0, S.mL)(t), n && p.Z.open(t, o), o === R.pNK.ROLE_SUBSCRIPTIONS && (0, E.GN)(t))
     };
   return (0, i.jsxs)(d.qXd, {
     color: d.DM8.BRAND,
@@ -154,7 +154,7 @@ function k() {
           size: "xs",
           color: a.Z.unsafe_rawColors.YELLOW_300.css
         })
-      }), S && (0, i.jsx)(d.DY3, {
+      }), T && (0, i.jsx)(d.DY3, {
         className: D.previewWarning,
         text: P.intl.formatToPlainString(P.t.eummvb, {
           maxTiers: b.fF,
@@ -179,8 +179,8 @@ function U(e) {
   } = e;
   return (0, s.e7)([m.Z], () => m.Z.isViewingRoles(t)) ? (0, i.jsx)("div", {
     className: o()(D.settingsWrapper, {
-      [D.windows]: (0, S.isWindows)(),
-      [D.osx]: (0, S.isMac)()
+      [D.windows]: (0, T.isWindows)(),
+      [D.osx]: (0, T.isMac)()
     }),
     children: (0, i.jsx)(k, {})
   }) : null

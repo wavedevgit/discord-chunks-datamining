@@ -1,4 +1,4 @@
-/** Chunk was on 60432 **/
+/** Chunk was on 94313 **/
 e.exports = {
   newMemberBadge: "newMemberBadge_f80704"
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 36672 **/
+/** Chunk was on 94313 **/
 e.exports = {
   tag: "tag__6c02d",
   text: "text__6c02d"

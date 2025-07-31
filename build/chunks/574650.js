@@ -1,4 +1,4 @@
-/** Chunk was on 38366 **/
+/** Chunk was on 58636 **/
 n.d(t, {
   Z: () => m
 }), n(539854), n(388685);
@@ -21,9 +21,9 @@ var s = n(442837),
   f = n(176505),
   C = n(388032),
   O = n(246752),
-  S = n(240211);
+  T = n(240211);
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -53,13 +53,13 @@ let m = 12633 == n.j ? () => {
     b = null,
     P = null,
     D = null,
-    v = [O.notice, S.notice];
+    v = [O.notice, T.notice];
   switch (y) {
     case E.wB.SUBMITTED:
       b = C.intl.string(C.t["5iLvS0"]), P = C.intl.string(C.t.mqtdmZ), D = () => {
         (0, c.h7j)(e => {
           var t, n;
-          return (0, i.jsx)(c.ConfirmModal, (t = T({
+          return (0, i.jsx)(c.ConfirmModal, (t = S({
             header: C.intl.string(C.t.aIz1oa),
             confirmText: C.intl.string(C.t["cY+Ooa"]),
             cancelText: C.intl.string(C.t["ETE/oK"]),
@@ -89,7 +89,7 @@ let m = 12633 == n.j ? () => {
           let {
             default: e
           } = await n.e("3378").then(n.bind(n, 76075));
-          return t => (0, i.jsx)(e, T({
+          return t => (0, i.jsx)(e, S({
             guildId: m.id
           }, t))
         })

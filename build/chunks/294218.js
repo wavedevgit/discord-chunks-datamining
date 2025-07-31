@@ -1,4 +1,4 @@
-/** Chunk was on 38366 **/
+/** Chunk was on 58636 **/
 n.d(t, {
   Z: () => D
 });
@@ -20,8 +20,8 @@ var i = n(255367),
   f = n(25015),
   C = n(689674),
   O = n(438075),
-  S = n(963550),
-  T = n(845080),
+  T = n(963550),
+  S = n(845080),
   m = n(295790),
   N = n(145807),
   R = n(56744),
@@ -97,9 +97,9 @@ let D = r.memo(function(e) {
     allowHeading: G || B,
     allowLinks: !0,
     previewLinkTarget: !0
-  }), H = r.type === A.uaV.REPLY ? r.messageReference : void 0, Y = (0, a.e7)([u.Z], () => u.Z.getMessageByReference(H)), K = (0, s.JA)(r.id), q = (0, p.ZP)(r), X = (0, a.e7)([h.Z], () => r.hasFlag(A.iLy.HAS_THREAD) && h.Z.getChannel(_.default.castMessageIdAsChannelId(r.id))), J = (0, c.p9)({
+  }), H = r.type === A.uaV.REPLY ? r.messageReference : void 0, Y = (0, a.e7)([u.Z], () => u.Z.getMessageByReference(H)), K = (0, s.JA)(r.id), X = (0, p.ZP)(r), q = (0, a.e7)([h.Z], () => r.hasFlag(A.iLy.HAS_THREAD) && h.Z.getChannel(_.default.castMessageIdAsChannelId(r.id))), J = (0, c.p9)({
     guildId: U.guild_id,
-    roleId: q.iconRoleId
+    roleId: X.iconRoleId
   }), Q = (0, C.Z)({
     message: r,
     channel: U,
@@ -114,23 +114,23 @@ let D = r.memo(function(e) {
     disableInteraction: V,
     childrenRepliedMessage: (0, R.Z)(r, U, H, Y, l),
     childrenExecutedCommand: (0, N.Z)(r, U, l),
-    childrenHeader: (0, T.Z)(P(b({}, e), {
+    childrenHeader: (0, S.Z)(P(b({}, e), {
       guildId: U.guild_id,
-      author: q,
+      author: X,
       roleIcon: J
     })),
     childrenAccessories: e.hideAccessories ? void 0 : (0, O.Q)(e, z),
-    childrenMessageContent: (0, S.Z)(e, W),
+    childrenMessageContent: (0, T.Z)(e, W),
     childrenSystemMessage: (0, m.Z)(P(b({}, e), {
       disableInteraction: V
     })),
     onContextMenu: v,
     onClick: M,
-    hasThread: Z && null != X && r.hasFlag(A.iLy.HAS_THREAD),
+    hasThread: Z && null != q && r.hasFlag(A.iLy.HAS_THREAD),
     hasReply: r.type === A.uaV.REPLY,
     "aria-labelledby": $,
     "aria-describedby": ee,
     messageRef: Q,
-    author: q
+    author: X
   }, K, w))
 })

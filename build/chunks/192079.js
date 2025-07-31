@@ -1,52 +1,52 @@
-/** Chunk was on 85885 **/
-e.d(n, {
-  ER: () => u,
-  kk: () => _,
-  s$: () => h
-}), e(388685), e(392711);
-var i = e(19780),
-  r = e(5192),
-  l = e(700785),
-  a = e(427679),
-  c = e(157925),
-  s = e(981631),
-  o = e(71080),
-  d = e(388032);
+/** Chunk was on 94313 **/
+n.d(t, {
+  ER: () => d,
+  kk: () => p,
+  s$: () => m
+}), n(388685), n(392711);
+var r = n(19780),
+  i = n(5192),
+  l = n(700785),
+  a = n(427679),
+  o = n(157925),
+  s = n(981631),
+  c = n(71080),
+  u = n(388032);
 
-function u(t, n, e, i) {
-  let l = n[0],
-    a = r.ZP.getName(t, e, l),
-    c = null != i ? i : n.length;
-  return 1 === c && null != l ? a : null == l ? d.intl.formatToPlainString(d.t.chmM9P, {
-    count: c
-  }) : d.intl.formatToPlainString(d.t.GhkJ29, {
+function d(e, t, n, r) {
+  let l = t[0],
+    a = i.ZP.getName(e, n, l),
+    o = null != r ? r : t.length;
+  return 1 === o && null != l ? a : null == l ? u.intl.formatToPlainString(u.t.chmM9P, {
+    count: o
+  }) : u.intl.formatToPlainString(u.t.GhkJ29, {
     name: a,
-    count: c - 1
+    count: o - 1
   })
 }
 
-function _(t, n) {
-  switch (t) {
-    case o.aC.OWNER:
-      return d.intl.string(d.t.icuNBA);
-    case o.aC.ADMINISTRATOR:
-      return d.intl.string(d.t.eTmN5e);
-    case o.aC.MEMBER:
-    case o.aC.ROLE:
-      return n ? d.intl.string(d.t.Hw3XW1) : d.intl.string(d.t.YieyPj);
-    case o.aC.EMPTY_STATE:
+function p(e, t) {
+  switch (e) {
+    case c.aC.OWNER:
+      return u.intl.string(u.t.icuNBA);
+    case c.aC.ADMINISTRATOR:
+      return u.intl.string(u.t.eTmN5e);
+    case c.aC.MEMBER:
+    case c.aC.ROLE:
+      return t ? u.intl.string(u.t.Hw3XW1) : u.intl.string(u.t.YieyPj);
+    case c.aC.EMPTY_STATE:
   }
   return null
 }
 
-function h(t) {
-  let n = a.Z.getStageInstanceByChannel(t.id);
+function m(e) {
+  let t = a.Z.getStageInstanceByChannel(e.id);
   return {
-    channel_id: t.id,
-    guild_id: t.guild_id,
-    topic: null == n ? void 0 : n.topic,
-    media_session_id: i.Z.getMediaSessionId(),
-    request_to_speak_state: l.Uu(s.Plq.REQUEST_TO_SPEAK, t) ? c.BM.EVERYONE : c.BM.NO_ONE,
-    stage_instance_id: null == n ? void 0 : n.id
+    channel_id: e.id,
+    guild_id: e.guild_id,
+    topic: null == t ? void 0 : t.topic,
+    media_session_id: r.Z.getMediaSessionId(),
+    request_to_speak_state: l.Uu(s.Plq.REQUEST_TO_SPEAK, e) ? o.BM.EVERYONE : o.BM.NO_ONE,
+    stage_instance_id: null == t ? void 0 : t.id
   }
 }

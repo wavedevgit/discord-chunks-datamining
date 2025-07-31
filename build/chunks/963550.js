@@ -1,19 +1,19 @@
-/** Chunk was on 60432 **/
+/** Chunk was on 94313 **/
 n.d(t, {
-  Z: () => i
+  Z: () => l
 });
 var r = n(255367);
 n(73800);
-var a = n(930282);
+var i = n(930282);
 
-function i(e, t) {
+function l(e, t) {
   let {
     message: n,
-    compact: i
+    compact: l
   } = e;
-  return (0, r.jsx)(a.ZP, {
+  return (0, r.jsx)(i.ZP, {
     message: n,
     content: t,
-    compact: null != i && i
+    compact: null != l && l
   })
 }

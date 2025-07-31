@@ -1,21 +1,21 @@
-/** Chunk was on 87337 **/
+/** Chunk was on 94313 **/
 n.d(t, {
-  Z: () => g
+  Z: () => E
 });
 var r = n(255367),
-  s = n(73800),
-  i = n(120356),
-  a = n.n(i),
-  l = n(974674),
-  o = n(438784),
+  i = n(73800),
+  l = n(120356),
+  a = n.n(l),
+  o = n(974674),
+  s = n(438784),
   c = n(481060),
   u = n(686546),
   d = n(3682),
-  _ = n(630403);
-let A = {},
+  p = n(630403);
+let m = {},
   f = 1 / 4;
 
-function E(e) {
+function g(e) {
   let {
     height: t,
     fillColor: n
@@ -30,32 +30,32 @@ function E(e) {
       height: t,
       width: t * d.jR
     },
-    children: (0, r.jsx)(o.b, {
-      className: _.dots,
+    children: (0, r.jsx)(s.b, {
+      className: p.dots,
       dotRadius: t * f
     })
   })
 }
 
-function I(e) {
+function _(e) {
   let {
     isTyping: t,
     statusCoords: n,
-    status: s
-  } = e, i = (0, c.vjg)(c.Skl.ONLINE);
+    status: i
+  } = e, l = (0, c.vjg)(c.Skl.ONLINE);
   return t ? (0, r.jsx)("div", {
     style: {
       position: "absolute",
       top: n.y,
       left: n.x
     },
-    children: (0, r.jsx)(E, {
+    children: (0, r.jsx)(g, {
       height: n.height,
-      fillColor: i
+      fillColor: l
     })
-  }) : null != s ? (0, r.jsx)(c.qbd, {
+  }) : null != i ? (0, r.jsx)(c.qbd, {
     size: n.height,
-    status: s,
+    status: i,
     style: {
       position: "absolute",
       top: n.y,
@@ -64,20 +64,20 @@ function I(e) {
   }) : null
 }
 
-function m(e) {
+function h(e) {
   let {
     src: t,
     size: n
   } = e;
   return (0, r.jsx)("img", {
-    className: _.circularImage,
+    className: p.circularImage,
     src: t,
     alt: "",
     width: n,
     height: n
   })
 }
-let h = {
+let b = {
     [c.EFr.SIZE_16]: {
       default: u.QS.DIAGONAL_FACEPILE_16,
       typing: u.QS.DIAGONAL_FACEPILE_TYPING_16,
@@ -124,56 +124,56 @@ let h = {
       status: u.QS.DIAGONAL_FACEPILE_STATUS_120
     }
   },
-  g = function(e) {
+  E = function(e) {
     var t, {
         backSrc: n,
-        frontSrc: i,
-        size: o,
+        frontSrc: l,
+        size: s,
         isTyping: f,
-        status: E,
-        style: g,
-        className: x
+        status: g,
+        style: E,
+        className: C
       } = e,
-      S = function(e, t) {
+      v = function(e, t) {
         if (null == e) return {};
-        var n, r, s = function(e, t) {
+        var n, r, i = function(e, t) {
           if (null == e) return {};
-          var n, r, s = {},
-            i = Object.keys(e);
-          for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (s[n] = e[n]);
-          return s
+          var n, r, i = {},
+            l = Object.keys(e);
+          for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+          return i
         }(e, t);
         if (Object.getOwnPropertySymbols) {
-          var i = Object.getOwnPropertySymbols(e);
-          for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (s[n] = e[n])
+          var l = Object.getOwnPropertySymbols(e);
+          for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
         }
-        return s
+        return i
       }(e, ["backSrc", "frontSrc", "size", "isTyping", "status", "style", "className"]);
     let {
-      size: N
-    } = c.ny6[o], {
-      statusCoords: p,
-      frontAvatarOffsetPx: L,
-      frontAvatarSizePx: O,
+      size: O
+    } = c.ny6[s], {
+      statusCoords: x,
+      frontAvatarOffsetPx: y,
+      frontAvatarSizePx: I,
       backAvatarSizePx: j
-    } = s.useMemo(() => {
+    } = i.useMemo(() => {
       var e;
-      let t = "".concat(N, "-").concat(f);
-      return null != (e = A[t]) ? e : function(e, t, n) {
+      let t = "".concat(O, "-").concat(f);
+      return null != (e = m[t]) ? e : function(e, t, n) {
         let r = c.ny6[e],
-          s = r.size / (d.z3 + d.o),
-          i = s * d.z3,
-          a = s * d.o,
-          o = {
-            statusCoords: (0, l.Vq)(r, c.Skl.ONLINE, !1, t),
-            frontAvatarSizePx: i,
-            backAvatarSizePx: s,
+          i = r.size / (d.z3 + d.o),
+          l = i * d.z3,
+          a = i * d.o,
+          s = {
+            statusCoords: (0, o.Vq)(r, c.Skl.ONLINE, !1, t),
+            frontAvatarSizePx: l,
+            backAvatarSizePx: i,
             frontAvatarOffsetPx: a,
-            frontAvatarCenter: a + i / 2
+            frontAvatarCenter: a + l / 2
           };
-        return A[n] = o, o
-      }(o, f, t)
-    }, [N, f, o]), b = (t = null != E, f ? h[o].typing : t ? h[o].status : h[o].default);
+        return m[n] = s, s
+      }(s, f, t)
+    }, [O, f, s]), S = (t = null != g, f ? b[s].typing : t ? b[s].status : b[s].default);
     return (0, r.jsxs)("div", {
       style: function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -193,16 +193,16 @@ let h = {
         }
         return e
       }({
-        width: N,
-        height: N
-      }, g),
-      "aria-label": S["aria-label"],
-      "aria-hidden": S["aria-hidden"],
-      className: a()(_.container, x),
+        width: O,
+        height: O
+      }, E),
+      "aria-label": v["aria-label"],
+      "aria-hidden": v["aria-hidden"],
+      className: a()(p.container, C),
       children: [(0, r.jsxs)(u.ZP, {
-        mask: b,
-        height: N,
-        width: N,
+        mask: S,
+        height: O,
+        width: O,
         children: [(0, r.jsx)("img", {
           src: n,
           alt: "",
@@ -211,19 +211,19 @@ let h = {
         }), (0, r.jsx)("div", {
           style: {
             position: "absolute",
-            top: L,
-            left: L
+            top: y,
+            left: y
           },
-          children: (0, r.jsx)(m, {
-            src: i,
-            size: O,
+          children: (0, r.jsx)(h, {
+            src: l,
+            size: I,
             isTyping: f,
-            status: E
+            status: g
           })
         })]
-      }), (0, r.jsx)(I, {
-        statusCoords: p,
-        status: E,
+      }), (0, r.jsx)(_, {
+        statusCoords: x,
+        status: g,
         isTyping: f
       })]
     })
