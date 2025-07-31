@@ -381,7 +381,7 @@ class K extends s.PureComponent {
       onSelectSearchInSelectedChannel: () => this.handleSearchInChannel({
         searchAutocompleteSelectAction: w.ZW.CLICK
       }),
-      showDMQueryText: l.type === Z.aib.DMS && (0, E.R6)(l.type)
+      showDMQueryText: l.type === Z.aib.DMS && (0, E.R6)(l)
     })
   }
   constructor(...e) {
@@ -533,7 +533,7 @@ class K extends s.PureComponent {
           mode: t
         }
       } = this.props;
-      return e.type === Z.aib.DMS && (0, E.R6)(e.type) && t.type === Z.Sap.EMPTY && !(0, E.Fz)(t.filter)
+      return e.type === Z.aib.DMS && (0, E.R6)(e) && t.type === Z.Sap.EMPTY && !(0, E.Fz)(t.filter)
     }), M(this, "handleSearchInChannel", e => {
       var t;
       let {

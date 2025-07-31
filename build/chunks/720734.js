@@ -112,8 +112,8 @@ var i = n(255367),
   e1 = n(215023),
   e3 = n(921944),
   e6 = n(46140),
-  e2 = n(388032),
-  e8 = n(239692);
+  e8 = n(388032),
+  e2 = n(239692);
 
 function e5(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -241,10 +241,10 @@ function tn(e) {
           var n;
           null == (n = e.onClick) || n.call(e, t), null == c || c(t)
         },
-        "aria-label": e2.intl.string(e2.t["3Uj+2t"]),
+        "aria-label": e8.intl.string(e8.t["3Uj+2t"]),
         "data-jump-section": p,
-        className: a()(e8.avatarWrapper, {
-          [e8.plated]: null != m
+        className: a()(e2.avatarWrapper, {
+          [e2.plated]: null != m
         }),
         children: [(0, i.jsx)(e9, {
           size: f.EFr["SIZE_".concat(O)],
@@ -253,10 +253,10 @@ function tn(e) {
           "aria-label": l.username,
           status: s ? e0.Skl.STREAMING : o,
           isSpeaking: n,
-          className: e8.avatar
+          className: e2.avatar
         }), (0, i.jsx)("div", {
-          className: a()(e8.nameTag, {
-            [e8.canCopy]: eV.wS
+          className: a()(e2.nameTag, {
+            [e2.canCopy]: eV.wS
           }),
           children: u(null == l ? void 0 : l.displayNameStyles)
         })]
@@ -287,7 +287,7 @@ class ti extends r.PureComponent {
   renderCopiedSuccess() {
     let {
       copiedStreak: e
-    } = this.state, t = [e2.intl.string(e2.t.MSaeTU), e2.intl.string(e2.t.UmrCw8), e2.intl.string(e2.t.gKE0Ji), e2.intl.string(e2.t["4DSKbm"]), e2.intl.string(e2.t["+8ENdX"]), e2.intl.string(e2.t.GlWHv7), e2.intl.string(e2.t.hIzxU1), e2.intl.string(e2.t["26uMPD"]), e2.intl.string(e2.t.uFs7R0), e2.intl.string(e2.t.bLXdcX), e2.intl.string(e2.t.gPg9fX)], n = Math.min(Math.max(0, e - 1), t.length - 1);
+    } = this.state, t = [e8.intl.string(e8.t.MSaeTU), e8.intl.string(e8.t.UmrCw8), e8.intl.string(e8.t.gKE0Ji), e8.intl.string(e8.t["4DSKbm"]), e8.intl.string(e8.t["+8ENdX"]), e8.intl.string(e8.t.GlWHv7), e8.intl.string(e8.t.hIzxU1), e8.intl.string(e8.t["26uMPD"]), e8.intl.string(e8.t.uFs7R0), e8.intl.string(e8.t.bLXdcX), e8.intl.string(e8.t.gPg9fX)], n = Math.min(Math.max(0, e - 1), t.length - 1);
     return (0, i.jsx)(f.UkV, {
       isShaking: this.isCopiedStreakGodlike,
       children: t[n]
@@ -320,7 +320,7 @@ class ti extends r.PureComponent {
         activities: t,
         applicationStream: n,
         voiceChannel: l ? o : void 0,
-        textClassName: e8.activityStatusText,
+        textClassName: e2.activityStatusText,
         hideTooltip: !0
       })
     });
@@ -335,8 +335,8 @@ class ti extends r.PureComponent {
       forceHover: e,
       children: (0, i.jsx)(F.Z, {
         activity: c,
-        emojiClassName: e8.emoji,
-        className: e8.customStatus
+        emojiClassName: e2.emoji,
+        className: e2.customStatus
       })
     }) : null != s && s !== e0.Skl.UNKNOWN && r.hasUniqueUsername() ? (0, i.jsx)(T.Z, {
       hoverText: a,
@@ -436,10 +436,10 @@ class ti extends r.PureComponent {
       children: e => (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
           ref: this.containerRef,
-          className: a()(e8.container, {
-            [e8.containerRtcOpened]: null != n,
-            [e8.containerQuestBarVisible]: !r,
-            [e8.containerListenAlongVisible]: s
+          className: a()(e2.container, {
+            [e2.containerRtcOpened]: null != n,
+            [e2.containerQuestBarVisible]: !r,
+            [e2.containerListenAlongVisible]: s
           }),
           onMouseEnter: this.handleMouseEnter,
           onMouseLeave: this.handleMouseLeave,
@@ -620,7 +620,7 @@ class ti extends r.PureComponent {
       } = this.props;
       return null == t ? null : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
-          className: e8.panelTitleContainer,
+          className: e2.panelTitleContainer,
           children: (0, i.jsx)(e$.Z, {
             children: (0, i.jsx)(W.Z, {
               userName: eK.ZP.getName(t),
@@ -630,7 +630,7 @@ class ti extends r.PureComponent {
             })
           })
         }), (0, i.jsx)("div", {
-          className: e8.panelSubtextContainer,
+          className: e2.panelSubtextContainer,
           children: (0, i.jsx)(eQ.Z, {
             children: this.renderStatus()
           })
@@ -664,7 +664,7 @@ function tr(e) {
     accountContainerRef: O
   } = e, C = (0, et.A)(E);
   return (0, i.jsxs)("div", {
-    className: e8.buttons,
+    className: e2.buttons,
     style: C,
     children: [(0, i.jsx)(tl, {
       accountContainerRef: O,
@@ -672,14 +672,14 @@ function tr(e) {
       serverMute: s,
       suppress: l,
       awaitingRemote: r,
-      tooltipText: o ? e2.intl.string(e2.t["29gnR0"]) : void 0,
+      tooltipText: o ? e8.intl.string(e8.t["29gnR0"]) : void 0,
       tooltipColor: o ? f.FGA.GREEN : void 0,
       tooltipForceOpen: o || void 0,
       onMouseEnter: u,
       onMouseLeave: m,
       onClick: g,
       onContextMenu: h,
-      iconForeground: null != E ? e8.iconForeground : void 0,
+      iconForeground: null != E ? e2.iconForeground : void 0,
       nameplate: E
     }), (0, i.jsx)(to, {
       selfDeaf: t,
@@ -687,7 +687,7 @@ function tr(e) {
       onClick: p,
       onContextMenu: b,
       awaitingRemote: r,
-      iconForeground: null != E ? e8.iconForeground : void 0,
+      iconForeground: null != E ? e2.iconForeground : void 0,
       nameplate: E
     }), (0, i.jsx)(ta, {
       isEligibleForPomelo: c,
@@ -695,7 +695,7 @@ function tr(e) {
       onClick: x,
       onContextMenu: _,
       dismissibleContents: j.settings,
-      iconForeground: null != E ? e8.iconForeground : void 0,
+      iconForeground: null != E ? e2.iconForeground : void 0,
       nameplate: E
     })]
   })
@@ -842,9 +842,9 @@ function ta(e) {
     renderPopout: h === u.z.PER_GUILD_COLLECTIBLES_CUSTOMIZATION_COACHMARK ? () => (0, i.jsx)(ed.Z, {}) : () => (0, i.jsx)(i.Fragment, {}),
     children: () => (0, i.jsx)(eJ.Z, e7(e4({
       ref: d,
-      tooltipText: null != t ? e2.intl.formatToPlainString(e2.t.Gzh6ZG, {
+      tooltipText: null != t ? e8.intl.formatToPlainString(e8.t.Gzh6ZG, {
         webBuildOverride: t.id
-      }) : e2.intl.string(e2.t.cduTBA),
+      }) : e8.intl.string(e8.t.cduTBA),
       onClick: s,
       onContextMenu: a,
       icon: (0, i.jsx)(m, {
@@ -884,8 +884,8 @@ function tl(e) {
     Component: L,
     events: B,
     play: M
-  } = T, U = n || s ? f.v0G : L, V = R ? e2.intl.string(e2.t.ARRV6u) : null, G = (0, w.Z)(t, n, s, l), F = null != o ? o : null != V ? (0, i.jsxs)("div", {
-    className: e8.tooltipWithSubtext,
+  } = T, U = n || s ? f.v0G : L, V = R ? e8.intl.string(e8.t.ARRV6u) : null, G = (0, w.Z)(t, n, s, l), F = null != o ? o : null != V ? (0, i.jsxs)("div", {
+    className: e2.tooltipWithSubtext,
     children: [(0, i.jsx)(f.Text, {
       variant: "text-sm/medium",
       color: "currentColor",
@@ -941,8 +941,8 @@ function tl(e) {
     value: z,
     children: (0, i.jsxs)("div", {
       ref: v,
-      className: a()(e8.micButtonParent, {
-        [e8.hasColorGlow]: en
+      className: a()(e2.micButtonParent, {
+        [e2.hasColorGlow]: en
       }),
       children: [(0, i.jsx)(eJ.Z, {
         tooltipText: F,
@@ -966,11 +966,11 @@ function tl(e) {
         onContextMenu: K,
         role: "switch",
         className: a()({
-          [e8.micButtonWithMenu]: W
+          [e2.micButtonWithMenu]: W
         }),
         orangeGlow: R,
         redGlow: C,
-        "aria-label": e2.intl.string(e2.t["w4m94+"]),
+        "aria-label": e8.intl.string(e8.t["w4m94+"]),
         "aria-checked": C,
         disabled: l
       }), W && (0, i.jsx)(f.yRy, {
@@ -1038,30 +1038,30 @@ function tl(e) {
                   plated: null != E,
                   tooltipForceOpen: Q,
                   tooltipColor: Q ? f.FGA.GREEN : void 0,
-                  tooltipContentClassName: Q ? e8.voiceFilterWarning : void 0,
+                  tooltipContentClassName: Q ? e2.voiceFilterWarning : void 0,
                   tooltipText: Q ? (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)("img", {
-                      alt: null != Z ? e2.intl.string(Z.name) : "",
+                      alt: null != Z ? e8.intl.string(Z.name) : "",
                       src: null == Z ? void 0 : Z.iconURL,
                       draggable: !1
                     }), (0, i.jsx)(f.Text, {
                       variant: "text-sm/medium",
                       color: "always-white",
-                      children: e2.intl.string(e2.t.VlC1dX)
+                      children: e8.intl.string(e8.t.VlC1dX)
                     })]
-                  }) : e2.intl.string(e2.t.Hapb4O),
+                  }) : e8.intl.string(e8.t.Hapb4O),
                   icon: (0, i.jsx)(a, {
-                    className: e8.buttonChevronIcon,
+                    className: e2.buttonChevronIcon,
                     size: "custom",
                     width: 12,
                     height: 12,
                     color: et
                   }),
                   role: "button",
-                  className: e8.buttonChevron,
+                  className: e2.buttonChevron,
                   orangeGlow: R,
                   redGlow: C,
-                  "aria-label": e2.intl.string(e2.t.Hapb4O),
+                  "aria-label": e8.intl.string(e8.t.Hapb4O),
                   disabled: l,
                   onClick: e => {
                     s(e3.L.INDIRECT_ACTION), n(e), null != A && !q && P ? (0, eS.$)(() => X(!0)) : X(!q)
@@ -1126,12 +1126,12 @@ function to(e) {
       onClick: l,
       onContextMenu: j,
       innerClassName: a()({
-        [e8.redIcon]: n
+        [e2.redIcon]: n
       }),
-      iconForeground: u ? e8.strikethrough : void 0,
+      iconForeground: u ? e2.strikethrough : void 0,
       role: "switch",
       redGlow: u,
-      "aria-label": e2.intl.string(e2.t.wjcRFR),
+      "aria-label": e8.intl.string(e8.t.wjcRFR),
       "aria-checked": u,
       disabled: s
     })
