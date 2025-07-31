@@ -1,6 +1,6 @@
 /** Chunk was on 22243 **/
 n.d(t, {
-  Z: () => C
+  Z: () => E
 });
 var i = n(255367),
   r = n(73800),
@@ -22,11 +22,11 @@ var i = n(255367),
   j = n(981631),
   O = n(388032);
 
-function E(e) {
+function C(e) {
   let {
     ingress: t,
     guildId: n
-  } = e, b = (0, m.c_)(), E = d.h2.useSetting().includes(n), C = (0, c.q)(), v = (0, u.r)(), S = r.useCallback(e => {
+  } = e, b = (0, m.c_)(), C = d.h2.useSetting().includes(n), E = (0, c.q)(), v = (0, u.r)(), S = r.useCallback(e => {
     let i = (0, o.YK)();
     e ? i.delete(n) : i.add(n), d.h2.updateSetting(Array.from(i)), l.default.track(j.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
       action: f.Y.DIRECT_MESSAGES_TOGGLE,
@@ -62,25 +62,25 @@ function E(e) {
     children: n === _.T ? (0, i.jsx)(g.Z, {
       title: I,
       note: v ? O.intl.string(O.t.XXGmuL) : O.intl.string(O.t.wbYDfX),
-      value: !C,
+      value: !E,
       onChange: e => {
         N(!e)
       }
     }) : (0, i.jsx)(g.Z, {
       title: I,
       note: b ? O.intl.string(O.t.V0ka0d) : v ? O.intl.string(O.t.F9WY3d) : O.intl.string(O.t.G7c3Xl),
-      value: !E,
+      value: !C,
       onChange: S
     })
   })
 }
 
-function C(e) {
+function E(e) {
   let {
     ingress: t = b.f4.USER_SETTINGS_PRIVACY_SAFETY,
     guildId: n
   } = e, r = (0, m.is)();
-  return (0, i.jsx)(E, {
+  return (0, i.jsx)(C, {
     ingress: t,
     guildId: null != n ? n : r
   })

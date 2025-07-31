@@ -317,7 +317,7 @@ function eu(e) {
   }), ed = i.useMemo(() => null == eu ? null : {
     label: ee.intl.string(ee.t["jaYS/v"]),
     icon: (0, r.jsx)(s.v3n, {
-      size: "xs",
+      size: "refresh_sm",
       color: "currentColor"
     }),
     trackingArea: f.j_.CLOUD_PLAY,

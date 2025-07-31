@@ -1,6 +1,6 @@
 /**
   Module ID: 22243
-  Original File Name: 3af94413eae26c73
+  Original File Name: c60e8c3900f60696
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -14271,10 +14271,11 @@ div.nagbar_d74ef8 {
 }
 
 .paymentSourceRow__0eeee {
+    justify-content: space-between;
     margin: 16px 0
 }
 
-.header__0eeee {
+.header__0eeee,.paymentSourceRow__0eeee {
     align-items: center;
     display: flex
 }
@@ -14286,7 +14287,18 @@ div.nagbar_d74ef8 {
 }
 
 .footer__0eeee {
+    display: flex;
+    justify-content: flex-end;
     margin-top: 20px
+}
+
+.footerContent__0eeee {
+    flex: 1
+}
+
+.titleContainer__0eeee {
+    align-items: center;
+    display: flex
 }
 
 .lockIcon__0eeee {
@@ -19908,4 +19920,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=3af94413eae26c73.css.map*/
+/*# sourceMappingURL=c60e8c3900f60696.css.map*/

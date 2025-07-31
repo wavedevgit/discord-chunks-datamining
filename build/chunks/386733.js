@@ -21,8 +21,8 @@ var i = n(255367),
   _ = n(119269),
   j = n(938736),
   O = n(981631),
-  E = n(388032),
-  C = n(357885),
+  C = n(388032),
+  E = n(357885),
   v = n(691766);
 
 function S(e) {
@@ -73,15 +73,15 @@ let N = e => {
       size: c.EFr.SIZE_32
     }, s)) : (0, i.jsx)(c.X6q, {
       variant: "heading-md/semibold",
-      className: C.userAvatarProgressBarUnitNum,
+      className: E.userAvatarProgressBarUnitNum,
       children: n
     });
     return (0, i.jsx)(c.ua7, {
-      text: E.intl.string(E.t.UnKHdn),
+      text: C.intl.string(C.t.UnKHdn),
       shouldShow: !a,
-      tooltipContentClassName: C.unsentTooltipContent,
+      tooltipContentClassName: E.unsentTooltipContent,
       children: e => (0, i.jsx)("div", T(S({
-        className: C.userAvatarProgressBarUnit
+        className: E.userAvatarProgressBarUnit
       }, e), {
         children: l
       }))
@@ -93,13 +93,13 @@ let N = e => {
       placement: n
     } = e;
     return (0, i.jsxs)("div", {
-      className: C.avatarProgressBarUnitConnectorContainer,
+      className: E.avatarProgressBarUnitConnectorContainer,
       children: [(0, i.jsx)("div", {
-        className: C.avatarProgressBarUnitConnectorBase
+        className: E.avatarProgressBarUnitConnectorBase
       }), (0, i.jsx)("div", {
         className: a()({
-          [C.fullHighlight]: t > n,
-          [C.halfHighlight]: t === n
+          [E.fullHighlight]: t > n,
+          [E.halfHighlight]: t === n
         })
       })]
     })
@@ -109,7 +109,7 @@ let N = e => {
       userRecords: t
     } = e, n = t.length, r = n < 1 ? null : t[0], s = n < 2 ? null : t[1], a = n < 3 ? null : t[2];
     return (0, i.jsxs)("div", {
-      className: C.userAvatarProgressBarContainer,
+      className: E.userAvatarProgressBarContainer,
       children: [(0, i.jsx)(N, {
         userRecord: r,
         placement: 1
@@ -164,19 +164,19 @@ let N = e => {
       I = r.useRef(null),
       P = g.sent / x.Q * 100,
       R = (0, i.jsxs)("div", {
-        className: C.referralInfoContent,
+        className: E.referralInfoContent,
         children: [(0, i.jsx)(_.ZP, {
           percentage: P,
           progressCircleVariation: _.Qo.NITRO_LOGO,
           iconClassName: a()({
-            [C.referralProgressBarIcon]: !t,
-            [C.referralProgressBarIconSettings]: t
+            [E.referralProgressBarIcon]: !t,
+            [E.referralProgressBarIconSettings]: t
           })
         }), (0, i.jsxs)("div", {
-          className: C.expandedProgressBarContent,
+          className: E.expandedProgressBarContent,
           children: [(0, i.jsx)(c.X6q, {
             variant: t ? "heading-xl/extrabold" : "heading-xxl/extrabold",
-            className: C.expandedProgressBarHeader,
+            className: E.expandedProgressBarHeader,
             children: (0, j.$s)({
               hasSentAll: S
             })
@@ -189,23 +189,23 @@ let N = e => {
               referralsStatuses: g
             })
           }), (0, i.jsx)("div", {
-            className: a()(C.expandedProgressBarButtonContainer, {
-              [C.expandedProgressBarButtonContainerLayout]: !t
+            className: a()(E.expandedProgressBarButtonContainer, {
+              [E.expandedProgressBarButtonContainerLayout]: !t
             }),
             children: (0, i.jsx)(c.gtL, {
-              className: C.expandedProgressBarSelectFriendsCTA,
+              className: E.expandedProgressBarSelectFriendsCTA,
               color: o.Tt.CUSTOM,
               onClick: () => A({
                 analyticsLocations: N
               }),
               onlyShineOnHover: !0,
               children: (0, i.jsxs)("div", {
-                className: C.expandedProgressBarSelectFriendsCTAInner,
+                className: E.expandedProgressBarSelectFriendsCTAInner,
                 children: [(0, i.jsx)("img", {
                   src: v,
                   alt: "",
-                  className: C.expandedProgressBarSelectFriendsIcon
-                }), S ? E.intl.string(E.t.SY9tyM) : E.intl.string(E.t.Lm2nFR)]
+                  className: E.expandedProgressBarSelectFriendsIcon
+                }), S ? C.intl.string(C.t.SY9tyM) : C.intl.string(C.t.Lm2nFR)]
               })
             })
           })]
@@ -216,17 +216,17 @@ let N = e => {
       value: N,
       children: (0, i.jsx)("div", {
         className: a()({
-          [C.containerWithGlowWithoutBanner]: D,
-          [C.containerWithoutGlow]: !D,
-          [C.containerWithMargins]: !t,
-          [C.containerWithGlowOnSettingsPage]: D && t
+          [E.containerWithGlowWithoutBanner]: D,
+          [E.containerWithoutGlow]: !D,
+          [E.containerWithMargins]: !t,
+          [E.containerWithGlowOnSettingsPage]: D && t
         }),
         children: (0, i.jsx)("div", {
           ref: I,
           className: a()({
-            [C.expandedProgressBarContainer]: !t,
-            [C.expandedProgressBarContainerSettingsPage]: t,
-            [C.allReferralsSentBorder]: D
+            [E.expandedProgressBarContainer]: !t,
+            [E.expandedProgressBarContainerSettingsPage]: t,
+            [E.allReferralsSentBorder]: D
           }),
           children: R
         })

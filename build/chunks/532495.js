@@ -22,8 +22,8 @@ var r = n(512722),
   _ = n(610966),
   j = n(513901),
   O = n(451392),
-  E = n(906364),
-  C = n(643879),
+  C = n(906364),
+  E = n(643879),
   v = n(350327),
   S = n(621853),
   T = n(687158),
@@ -85,7 +85,7 @@ function R() {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
       }), e
     }),
-    K = (0, C.SD)({
+    K = (0, E.SD)({
       userId: k.id,
       image: B
     }),
@@ -107,7 +107,7 @@ function R() {
       pendingGlobalName: M,
       onGlobalNameChange: l.W0,
       user: k
-    }), (0, i.jsx)(E.Z, {
+    }), (0, i.jsx)(C.Z, {
       sectionTitle: A.intl.string(A.t["+T3RIy"]),
       errors: Y.pronouns,
       onPronounsChange: v.ID,

@@ -1,6 +1,6 @@
 /** Chunk was on 22243 **/
 n.d(t, {
-  Z: () => E
+  Z: () => C
 }), n(388685);
 var i = n(255367),
   r = n(73800),
@@ -22,10 +22,10 @@ var i = n(255367),
   j = n(20493);
 let O = (0, p.hQ)();
 
-function E() {
+function C() {
   let [e, t] = r.useState(-100), [n, s] = r.useState(!1), {
-    threshold: E,
-    autoThreshold: C
+    threshold: C,
+    autoThreshold: E
   } = (0, l.cj)([g.Z], () => ({
     threshold: g.Z.getModeOptions().threshold,
     autoThreshold: g.Z.getModeOptions().autoThreshold
@@ -60,9 +60,9 @@ function E() {
   let y = (0, i.jsx)("section", {
     className: a()(b.inputSensitivityToggle, b.manual),
     children: (0, i.jsx)(u.iRW, {
-      initialValue: E + 100,
+      initialValue: C + 100,
       onValueRender: e => "".concat((-((100 - e) * 1)).toFixed(0), "dB"),
-      onValueChange: e => I(-((100 - e) * 1), C),
+      onValueChange: e => I(-((100 - e) * 1), E),
       barStyles: {
         background: d.Z.unsafe_rawColors.GREEN_360.css
       },
@@ -83,7 +83,7 @@ function E() {
       })
     })
   });
-  return C && (y = (0, i.jsxs)("section", {
+  return E && (y = (0, i.jsxs)("section", {
     className: b.inputSensitivityToggle,
     children: [(0, i.jsx)("div", {
       className: b.inputSensitivitySlider,
@@ -113,8 +113,8 @@ function E() {
           })
         }), (0, i.jsx)(u.rsf, {
           id: e,
-          checked: C,
-          onChange: e => I(E, e)
+          checked: E,
+          onChange: e => I(C, e)
         })]
       })
     }), y, !T && (0, i.jsx)(u.R94, {

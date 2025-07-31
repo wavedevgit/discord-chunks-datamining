@@ -30,7 +30,7 @@ function x(e) {
     authorizedApplicationId: p.Z.testModeApplicationId,
     authorizationError: p.Z.error,
     authorizing: p.Z.isFetchingAuthorization
-  })), [O, E] = r.useState(null != x ? x : ""), [C, v] = r.useState("8080"), [S, T] = r.useState("localhost"), N = (0, m.Dt)(), I = b.test(O);
+  })), [O, C] = r.useState(null != x ? x : ""), [E, v] = r.useState("8080"), [S, T] = r.useState("localhost"), N = (0, m.Dt)(), I = b.test(O);
   async function y() {
     c.q$();
     let e = function(e, t, n) {
@@ -41,13 +41,13 @@ function x(e) {
         case "proxy":
           return (0, d.ZP)(n)
       }
-    }(S, C, O);
+    }(S, E, O);
     null != await c.Wt(O, e) && t()
   }
   r.useEffect(() => () => o.Z.wait(() => c.q$()), []);
   let A = null != x && x === O,
     P = A ? function() {
-      c.mc(), E(""), T(null)
+      c.mc(), C(""), T(null)
     } : y;
   return (0, i.jsxs)(l.Y0X, {
     "aria-labelledby": N,
@@ -89,7 +89,7 @@ function x(e) {
               maxLength: 19,
               error: I ? null : g.intl.string(g.t.gPNgKC),
               onChange: function(e) {
-                E(e)
+                C(e)
               },
               disabled: j
             })
@@ -118,7 +118,7 @@ function x(e) {
             title: g.intl.string(g.t.fF4zxs),
             required: !0,
             children: (0, i.jsx)(l.oil, {
-              value: C,
+              value: E,
               maxLength: 5,
               onChange: e => v(e),
               disabled: j
@@ -126,7 +126,7 @@ function x(e) {
           }), (0, i.jsx)(a.zx, {
             submitting: j,
             type: "submit",
-            disabled: !I || 0 === O.length || "localhost" === S && 0 === C.length,
+            disabled: !I || 0 === O.length || "localhost" === S && 0 === E.length,
             color: A ? a.zx.Colors.RED : a.zx.Colors.GREEN,
             children: A ? g.intl.string(g.t.d6TR3N) : g.intl.string(g.t.qwuK5O)
           })]

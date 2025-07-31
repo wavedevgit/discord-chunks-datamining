@@ -1,6 +1,6 @@
 /**
   Module ID: 55183
-  Original File Name: c7511b06c7e96a81
+  Original File Name: 71d22d4e70ce5fa0
 **/
 .previewContainer__92e52 {
     align-items: center;
@@ -128,47 +128,6 @@
 .shopIcon_b4019a {
 }
 
-.tooltip_b4019a {
-    min-width: 250px
-}
-
-.tooltipInner_b4019a {
-    text-align: center
-}
-
-.tooltipText_b4019a {
-    padding: 8px 32px
-}
-
-.decorationGridItemChurned_b4019a {
-    opacity: .3
-}
-
-.lockBadge_b4019a {
-    border-radius: 50%;
-    height: 20px;
-    padding: 2px;
-    top: -6px;
-    width: 20px
-}
-
-.lockBadge_b4019a,.newBadge_b4019a {
-    position: absolute;
-    right: -4px
-}
-
-.newBadge_b4019a {
-    text-transform: uppercase;
-    top: -4px
-}
-
-.newBadgeText_b4019a {
-    align-items: center;
-    display: flex;
-    gap: 2px;
-    justify-content: center
-}
-
 .presetEffectImg_b4019a {
     object-fit: cover;
     object-position: top
@@ -246,4 +205,4 @@
     margin-right: 6px
 }
 
-/*# sourceMappingURL=c7511b06c7e96a81.css.map*/
+/*# sourceMappingURL=71d22d4e70ce5fa0.css.map*/
