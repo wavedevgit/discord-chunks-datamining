@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 r.d(t, {
-  I: () => w
+  I: () => N
 }), r(388685), r(539854);
 var n = r(255367),
   l = r(73800),
@@ -139,14 +139,14 @@ function k(e) {
   })
 }
 
-function w(e) {
+function N(e) {
   let {
     isFullScreen: t,
     isLayer: r,
     onClose: i,
     selectedTab: f,
     handleTransition: g
-  } = e, y = (0, p.ZP)(), w = (0, s.e7)([v.default], () => v.default.getCurrentUser()), N = (null == w ? void 0 : w.isStaff()) || (null == w ? void 0 : w.isStaffPersonal()) || !1, {
+  } = e, y = (0, p.ZP)(), N = (0, s.e7)([v.default], () => v.default.getCurrentUser()), w = (null == N ? void 0 : N.isStaff()) || (null == N ? void 0 : N.isStaffPersonal()) || !1, {
     enabled: A
   } = (0, _.WX)({
     location: "collectibles_shop_header_bar"
@@ -181,7 +181,7 @@ function w(e) {
         [L.fullscreenHeaderBar]: t
       }),
       innerClassname: A ? L.headerBarInner : void 0,
-      toolbar: t || !N ? null : (0, n.jsx)(l.Fragment, {}),
+      toolbar: t || !w ? null : (0, n.jsx)(l.Fragment, {}),
       children: [(0, n.jsxs)(c.P3F, {
         className: L.shopHomeLink,
         onClick: () => g(j.AW.HOME),

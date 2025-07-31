@@ -36,8 +36,8 @@ let j = e => {
     hasSorting: T,
     tab: L
   } = e, I = (0, o.e7)([d.default], () => d.default.getCurrentUser()), k = h.ZP.canUseCollectibles(I), {
-    sortType: w,
-    setSortType: N,
+    sortType: N,
+    setSortType: w,
     sortedItems: A,
     sortOptions: B,
     shuffleProducts: R,
@@ -48,12 +48,12 @@ let j = e => {
   } = (0, C.y)(), U = (0, b.sp)(), z = null != (t = null == U ? void 0 : U.sessionId) ? t : "", G = l.useRef(null), q = l.useCallback(e => {
     V({
       isShuffling: !1,
-      onOutroComplete: () => N(e)
+      onOutroComplete: () => w(e)
     }), f.default.track(S.rMx.COLLECTIBLES_SHOP_FEED_SORT_CHANGED, {
       page_session_id: z,
       sort_type: e
     })
-  }, [V, N, z]);
+  }, [V, w, z]);
   return null == I ? null : (0, n.jsxs)("div", {
     className: a()(x.popularPicksSection, x.centeredSection),
     children: [(0, n.jsxs)("div", {
@@ -113,7 +113,7 @@ let j = e => {
           options: B,
           select: q,
           className: x.sortSelect,
-          isSelected: e => e === w,
+          isSelected: e => e === N,
           serialize: e => e
         }), (0, n.jsx)(s.zxk, {
           variant: "secondary",
