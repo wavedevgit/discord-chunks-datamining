@@ -1,6 +1,6 @@
 /**
   Module ID: 56243
-  Original File Name: b01302be72ebda91
+  Original File Name: 17b3b48ef6ea8579
 **/
 .container__5537c {
     display: flex;
@@ -149,20 +149,6 @@
     color: var(--interactive-active)
 }
 
-.iconButonDisabled__270b2 {
-    color: var(--interactive-muted)
-}
-
-.iconButonDisabled__270b2:hover {
-    cursor: not-allowed
-}
-
-.innerButton__270b2 {
-    align-items: center;
-    display: flex;
-    gap: 4px
-}
-
 .icon__270b2 {
     color: var(--header-secondary)
 }
@@ -259,7 +245,8 @@
 }
 
 .container__6cf35 {
-    flex-direction: row
+    flex-direction: row;
+    gap: 8px
 }
 
 .container__6cf35,.iconButton__6cf35 {
@@ -277,31 +264,6 @@
 
 .iconButton__6cf35:hover .icon__6cf35 {
     color: var(--interactive-active)
-}
-
-.iconButton__6cf35+.iconButton__6cf35 {
-    margin-left: 16px
-}
-
-.iconButonDisabled__6cf35 {
-    color: var(--interactive-muted)
-}
-
-.iconButonDisabled__6cf35:hover {
-    cursor: not-allowed
-}
-
-.innerButton__6cf35 {
-    align-items: center;
-    display: flex
-}
-
-.button__6cf35,.button__6cf35+.button__6cf35 {
-    margin-left: 8px
-}
-
-.buttonIcon__6cf35 {
-    margin-right: 4px
 }
 
 .icon__6cf35 {
@@ -1318,4 +1280,4 @@
     z-index: 0
 }
 
-/*# sourceMappingURL=b01302be72ebda91.css.map*/
+/*# sourceMappingURL=17b3b48ef6ea8579.css.map*/

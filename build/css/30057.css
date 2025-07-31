@@ -1,6 +1,6 @@
 /**
   Module ID: 30057
-  Original File Name: ae4043c73e7761ff
+  Original File Name: c48301ef2f5e2941
 **/
 .container__270b2 {
     flex-direction: row;
@@ -23,20 +23,6 @@
 
 .iconButton__270b2:hover .icon__270b2 {
     color: var(--interactive-active)
-}
-
-.iconButonDisabled__270b2 {
-    color: var(--interactive-muted)
-}
-
-.iconButonDisabled__270b2:hover {
-    cursor: not-allowed
-}
-
-.innerButton__270b2 {
-    align-items: center;
-    display: flex;
-    gap: 4px
 }
 
 .icon__270b2 {
@@ -135,7 +121,8 @@
 }
 
 .container__6cf35 {
-    flex-direction: row
+    flex-direction: row;
+    gap: 8px
 }
 
 .container__6cf35,.iconButton__6cf35 {
@@ -153,31 +140,6 @@
 
 .iconButton__6cf35:hover .icon__6cf35 {
     color: var(--interactive-active)
-}
-
-.iconButton__6cf35+.iconButton__6cf35 {
-    margin-left: 16px
-}
-
-.iconButonDisabled__6cf35 {
-    color: var(--interactive-muted)
-}
-
-.iconButonDisabled__6cf35:hover {
-    cursor: not-allowed
-}
-
-.innerButton__6cf35 {
-    align-items: center;
-    display: flex
-}
-
-.button__6cf35,.button__6cf35+.button__6cf35 {
-    margin-left: 8px
-}
-
-.buttonIcon__6cf35 {
-    margin-right: 4px
 }
 
 .icon__6cf35 {
@@ -379,4 +341,4 @@
     margin-top: 8px
 }
 
-/*# sourceMappingURL=ae4043c73e7761ff.css.map*/
+/*# sourceMappingURL=c48301ef2f5e2941.css.map*/

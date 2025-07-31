@@ -160,15 +160,15 @@ function P(e) {
     rsvped: T,
     canInvite: O,
     location: P,
-    truncate: A,
-    onContextMenu: G,
+    truncate: G,
+    onContextMenu: A,
     onJoinClick: L,
     onJoinGuildClick: X,
     onGoToGuildClick: R,
     onRsvpClick: M,
     onStartClick: W,
-    onInviteClick: U,
-    onEndClick: J,
+    onInviteClick: J,
+    onEndClick: U,
     onClick: V,
     isNew: D,
     guildEvent: H,
@@ -184,7 +184,7 @@ function P(e) {
   return (0, l.jsxs)(o.kL8, {
     "aria-label": a,
     onClick: () => null == V ? void 0 : V(B),
-    onContextMenu: G,
+    onContextMenu: A,
     className: s()(I.card, {
       [I.joined]: g,
       [I.lurking]: m
@@ -200,7 +200,7 @@ function P(e) {
         name: a,
         description: u,
         imageSource: 1 === d ? h : null,
-        truncate: A,
+        truncate: G,
         guildId: null == t ? void 0 : t.id,
         isHub: w,
         isNew: D,
@@ -235,7 +235,7 @@ function P(e) {
           guildName: null == t ? void 0 : t.name,
           canInvite: O,
           isChannelPublic: K,
-          onInviteClick: U
+          onInviteClick: J
         }) : (0, l.jsx)(C.ZP, {
           entityType: c,
           isJoined: g,
@@ -244,12 +244,13 @@ function P(e) {
           rsvped: T,
           canInvite: O,
           isChannelPublic: K,
-          onContextMenu: G,
+          onContextMenu: A,
           onJoinClick: L,
           onRsvpClick: M,
           onStartClick: W,
-          onInviteClick: U,
-          onEndClick: J
+          onInviteClick: J,
+          onEndClick: U,
+          onJoinGuildClick: X
         })]
       }), $ && (0, l.jsx)("hr", {
         className: I.divider

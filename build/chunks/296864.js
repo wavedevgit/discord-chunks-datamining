@@ -33,10 +33,10 @@ function j(e) {
     canManageGuildEvent: w
   } = (0, o.XJ)(null != E ? E : b), I = w(j), Z = (0, r.e7)([c.Z], () => c.Z.isLurking(y), [y]), S = j.entity_type === x.WX.STAGE_INSTANCE, [T, O] = l.useState(S), [_, {
     loading: P,
-    error: A
+    error: G
   }] = (0, v.Z)();
   if (!I) return null;
-  let G = k === x.j8.PUBLIC ? p.intl.string(p.t.HhlaLC) : p.intl.string(p.t.GI3xXV),
+  let A = k === x.j8.PUBLIC ? p.intl.string(p.t.HhlaLC) : p.intl.string(p.t.GI3xXV),
     L = () => {
       null == N || N(), f(), (0, u.Ku)(!1)
     },
@@ -50,7 +50,7 @@ function j(e) {
     onClose: f,
     title: j.name,
     subtitle: p.intl.format(p.t.UMajoq, {
-      privacyLevel: G,
+      privacyLevel: A,
       privacyLevelHook: (e, n) => k !== x.j8.PUBLIC ? null : (0, i.jsxs)("div", {
         className: C.privacyLevel,
         children: [(0, i.jsx)(s.enf, {
@@ -101,11 +101,11 @@ function j(e) {
         variant: "text-sm/normal",
         children: p.intl.string(p.t.dGNtgI)
       })
-    }), null != A && null != A.getAnyErrorMessage() ? (0, i.jsx)(s.Text, {
+    }), null != G && null != G.getAnyErrorMessage() ? (0, i.jsx)(s.Text, {
       color: "text-danger",
       variant: "text-sm/normal",
       className: C.errorMessage,
-      children: A.getAnyErrorMessage()
+      children: G.getAnyErrorMessage()
     }) : null]
   })
 }

@@ -1,6 +1,6 @@
 /** Chunk was on 56236 **/
 t.d(n, {
-  Z: () => C
+  Z: () => P
 }), t(953529);
 var i = t(255367);
 t(73800);
@@ -24,10 +24,10 @@ var r = t(442837),
   x = t(405613),
   Z = t(460838),
   O = t(462179),
-  P = t(981631);
+  C = t(981631);
 
-function C(e) {
-  var n, t, C;
+function P(e) {
+  var n, t, P;
   let {
     guildEvent: E,
     guildId: N,
@@ -45,26 +45,26 @@ function C(e) {
     entity_type: R,
     image: U,
     recurrence_rule: H
-  } = E, A = (0, y.DK)(E), z = (0, r.e7)([f.ZP], () => f.ZP.isInterestedInEventRecurrence(T, A), [T, A]), B = (0, r.e7)([o.Z], () => o.Z.isLurking(_), [_]), X = (0, r.e7)([a.Z], () => a.Z.getStageInstanceByChannel(D), [D]), J = (0, r.e7)([s.Z], () => s.Z.getChannel(D), [D]), V = (0, r.e7)([g.default], () => g.default.getUser(G), [G]), {
+  } = E, A = (0, y.DK)(E), z = (0, r.e7)([f.ZP], () => f.ZP.isInterestedInEventRecurrence(T, A), [T, A]), B = (0, r.e7)([o.Z], () => o.Z.isLurking(_), [_]), J = (0, r.e7)([a.Z], () => a.Z.getStageInstanceByChannel(D), [D]), X = (0, r.e7)([s.Z], () => s.Z.getChannel(D), [D]), V = (0, r.e7)([g.default], () => g.default.getUser(G), [G]), {
     speakers: q
   } = (0, v.Z)({
     id: D,
     data: {
       guild: null,
-      instance: X,
+      instance: J,
       speakers: [],
       participantCount: 0
     },
     context: {
       guildId: _,
-      instance: X
+      instance: J
     }
-  }), W = (0, r.e7)([d.Z], () => d.Z.getChannelId()), K = (0, f.xt)(E), F = W === D && null != W && K, Q = q.filter(e => e.type === c.Ui.VOICE), Y = Q.length, $ = (0, r.e7)([u.Z], () => u.Z.can(P.Plq.CONNECT, J), [J]), ee = (0, h.ZP)(E), {
+  }), W = (0, r.e7)([d.Z], () => d.Z.getChannelId()), K = (0, f.xt)(E), F = W === D && null != W && K, Q = q.filter(e => e.type === c.Ui.VOICE), Y = Q.length, $ = (0, r.e7)([u.Z], () => u.Z.can(C.Plq.CONNECT, X), [X]), ee = (0, h.ZP)(E), {
     isMember: en,
     guild: et
   } = (0, m.Z)(_, T), ei = (0, O.Z)({
     guild: et,
-    channel: J,
+    channel: X,
     guildScheduledEvent: E,
     isActive: K,
     recurrenceId: A,
@@ -93,7 +93,7 @@ function C(e) {
     return e
   }({
     guild: et,
-    channel: J,
+    channel: X,
     creator: V,
     name: L,
     entityType: R,
@@ -111,7 +111,7 @@ function C(e) {
     speakerCount: Y,
     rsvped: z,
     canInvite: ee
-  }, ei), C = C = {
+  }, ei), P = P = {
     className: I,
     onClick: el,
     truncate: k,
@@ -119,14 +119,14 @@ function C(e) {
     guildEvent: E,
     recurrenceRule: (0, j.KV)(H),
     recurrenceId: A
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(C)) : (function(e, n) {
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(P)) : (function(e, n) {
     var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
       var i = Object.getOwnPropertySymbols(e);
       t.push.apply(t, i)
     }
     return t
-  })(Object(C)).forEach(function(e) {
-    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(C, e))
+  })(Object(P)).forEach(function(e) {
+    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(P, e))
   }), t))
 }
