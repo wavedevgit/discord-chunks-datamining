@@ -529,9 +529,10 @@ let eG = {
         skipLocalFetch: d,
         truncate: _,
         forICYMI: f,
-        avoidInitialScroll: p
-      } = e, h = ea.Z.getChannel(t), m = I.Z.isConnectedOrOverlay(), E = Date.now();
-      if (null != h && h.type === eO.d4z.GUILD_STORE) return !1;
+        avoidInitialScroll: p,
+        feature: h
+      } = e, m = ea.Z.getChannel(t), E = I.Z.isConnectedOrOverlay(), b = Date.now();
+      if (null != m && m.type === eO.d4z.GUILD_STORE) return !1;
       if (t === g.V || (eP.log("Fetching messages for ".concat(t, " between ").concat(r, " and ").concat(n, ". jump=").concat(JSON.stringify(o))), eB._tryFetchMessagesCached({
           channelId: t,
           before: n,
@@ -542,22 +543,23 @@ let eG = {
           truncate: _
         }))) return;
       en.Z.fetchMessages.recordStart();
-      let b = null != o ? o : void 0;
-      null == b && null != c && (b = eA({}, c));
-      let y = l.Z.getOrCreate(t).loadStart(b);
-      l.Z.commit(y), s.Z.dispatch({
+      let y = null != o ? o : void 0;
+      null == y && null != c && (y = eA({}, c));
+      let O = l.Z.getOrCreate(t).loadStart(y);
+      l.Z.commit(O), s.Z.dispatch({
         type: "LOAD_MESSAGES"
       });
-      let O = null == b ? void 0 : b.messageId,
-        v = new eL;
-      return d || this.fetchLocalMessages(t, n, r, i, v), a.tn.get({
+      let v = null == y ? void 0 : y.messageId,
+        T = new eL;
+      return d || this.fetchLocalMessages(t, n, r, i, T), a.tn.get({
         url: eO.ANM.MESSAGES(t),
         query: {
           before: n,
           after: r,
           limit: i,
-          around: O,
-          preload: u
+          around: v,
+          preload: u,
+          feature: h
         },
         retries: 2,
         oldFormErrors: !0,
@@ -567,23 +569,23 @@ let eG = {
           l = null != n,
           c = null != r,
           u = null == n && null == r,
-          d = null != O || a.length === i && (l || u),
-          h = null != O || c && a.length === i;
-        if (null != O) {
+          d = null != v || a.length === i && (l || u),
+          h = null != v || c && a.length === i;
+        if (null != v) {
           let e = Math.floor(i / 2),
             n = e + i % 2,
-            r = [O, ...a.map(e => {
+            r = [v, ...a.map(e => {
               let {
                 id: t
               } = e;
               return t
-            })].filter((e, t, n) => n.indexOf(e) === t).sort(eE.default.compare).indexOf(O);
+            })].filter((e, t, n) => n.indexOf(e) === t).sort(eE.default.compare).indexOf(v);
           if (r < n - 1 && (d = !1), a.length - r < e && (h = !1), h && a.length > 0) {
             let e = eu.ZP.lastMessageId(t);
             a[0].id === e && (h = !1)
           }
         }
-        eP.log("Fetched ".concat(a.length, " messages for ").concat(t, " isBefore:").concat(l, " isAfter:").concat(c)), v.markComplete(), s.Z.dispatch({
+        eP.log("Fetched ".concat(a.length, " messages for ").concat(t, " isBefore:").concat(l, " isAfter:").concat(c)), T.markComplete(), s.Z.dispatch({
           type: "LOAD_MESSAGES_SUCCESS",
           channelId: t,
           messages: a,
@@ -594,7 +596,7 @@ let eG = {
           limit: i,
           jump: o,
           forICYMI: f,
-          isStale: !m || I.Z.lastTimeConnectedChanged() >= E,
+          isStale: !E || I.Z.lastTimeConnectedChanged() >= b,
           truncate: _,
           avoidInitialScroll: p
         })

@@ -60,7 +60,13 @@ let y = 5,
   O = 1500;
 
 function v(e) {
-  return a.Z.fetchRecentMentions(e, h.DJj, null, l.ZP.roleFilter, l.ZP.everyoneFilter)
+  return a.Z.fetchRecentMentions({
+    before: e,
+    limit: h.DJj,
+    roles: l.ZP.roleFilter,
+    everyone: l.ZP.everyoneFilter,
+    feature: p.Lr
+  })
 }
 let I = (0, r.throttle)(T, O);
 async function T(e) {
@@ -81,7 +87,8 @@ async function T(e) {
     (a ? (null == (t = g[e]) ? void 0 : t.loadState) === p.a7.UNLOADED : (null == (n = g[e]) ? void 0 : n.loadState) !== p.a7.LOADED) && h.push(o.Z.fetchMessages({
       channelId: e,
       limit: a ? p.W9 : p.AQ,
-      isPreload: a
+      isPreload: a,
+      feature: p.Lr
     }))
   }
   let b = l.ZP.getSettingsFilteredMentions(),
