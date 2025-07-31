@@ -1,6 +1,6 @@
 /**
   Module ID: 60173
-  Original File Name: 7db437c1ad9c7c8a
+  Original File Name: 9225ea5f55d2c48e
 **/
 @keyframes placeholderPulse_c8ffbb {
     0% {
@@ -4728,6 +4728,180 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
         opacity: 0;
         transform: scale(1)
     }
+}
+
+.inner__36c1b {
+    padding: 0 16px
+}
+
+.body__36c1b,.inner__36c1b {
+    display: flex;
+    flex-direction: column
+}
+
+.body__36c1b {
+    flex-grow: 1
+}
+
+.headerInput__36c1b {
+    align-items: center;
+    gap: 16px;
+    overflow: hidden
+}
+
+.inputWrapper__36c1b {
+    flex: 1 1 auto;
+    padding-right: 8px
+}
+
+.titleInput__36c1b {
+    background-color: transparent;
+    border: none!important;
+    border-radius: 8px;
+    color: var(--header-primary);
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: -8px;
+    padding-bottom: 0;
+    padding-left: 0
+}
+
+.attachmentsContainer__36c1b {
+    margin-left: -16px
+}
+
+.divider__36c1b {
+    background-color: var(--border-subtle);
+    height: 1px
+}
+
+.footer__36c1b {
+    justify-content: space-between;
+    padding: 0 16px
+}
+
+.footer__36c1b,.footerPart__36c1b {
+    align-items: center;
+    display: flex
+}
+
+.footerPart__36c1b {
+    gap: 8px;
+    margin-left: -8px
+}
+
+.threadToggle__36c1b {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 6px
+}
+
+.heroImageWrapper__36c1b {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative
+}
+
+.heroImage__36c1b,.heroImageWrapper__36c1b {
+    border-radius: var(--radius-sm);
+    height: var(--custom-channel-attachment-upload-mini-attachment-size);
+    width: var(--custom-channel-attachment-upload-mini-attachment-size)
+}
+
+.heroImage__36c1b {
+    object-fit: cover;
+    object-position: center
+}
+
+.heroOverlay__36c1b {
+    cursor: pointer;
+    position: absolute;
+    right: 8px;
+    top: 8px
+}
+
+.attachButton__36c1b {
+    border: none;
+    border-radius: 8px;
+    color: var(--interactive-normal);
+    line-height: 0;
+    padding: 6px;
+    position: relative;
+    transition: background-color .2s
+}
+
+.attachButton__36c1b:hover {
+    background-color: var(--background-modifier-selected);
+    color: var(--interactive-active)
+}
+
+.editModeButton__36c1b {
+    color: var(--interactive-normal);
+    cursor: pointer
+}
+
+.editModeButton__36c1b:hover {
+    color: var(--interactive-active)
+}
+
+.heroImageButton__36c1b {
+    align-items: center;
+    background-color: var(--background-secondary-alt);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    display: flex;
+    height: var(--custom-channel-attachment-upload-mini-attachment-size);
+    justify-content: center;
+    position: relative;
+    width: var(--custom-channel-attachment-upload-mini-attachment-size)
+}
+
+.sendButtonContainer__36c1b:hover .subIcon__36c1b {
+    background-color: var(--button-filled-brand-background-hover)
+}
+
+.sendButton__36c1b {
+    padding: 0 8px
+}
+
+.sendButton__36c1b,.sendButtonContents__36c1b {
+    align-items: center;
+    display: flex;
+    gap: 4px
+}
+
+.sendButtonContents__36c1b {
+    padding: 4px
+}
+
+.sendButtonDivider__36c1b {
+    background: var(--border-subtle);
+    height: 24px;
+    width: 1px
+}
+
+.sendButtonIcons__36c1b {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    overflow: visible;
+    position: relative
+}
+
+.subIcon__36c1b {
+    background-color: var(--button-filled-brand-background);
+    border-radius: 8px;
+    bottom: -4px;
+    height: 10px;
+    padding: 1px;
+    position: absolute;
+    right: -4px;
+    transition: background-color var(--custom-button-transition-duration) ease;
+    width: 10px
 }
 
 .wrapper__4d3a9 {
@@ -12937,4 +13111,4 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     position: relative
 }
 
-/*# sourceMappingURL=7db437c1ad9c7c8a.css.map*/
+/*# sourceMappingURL=9225ea5f55d2c48e.css.map*/

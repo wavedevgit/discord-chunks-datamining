@@ -27,13 +27,13 @@ function g(e) {
   } = (0, c.H)(t.id), {
     showResolvedFlags: p,
     setShowResolvedFlags: b
-  } = (0, o.N)(t.id), j = (0, c.v)(), v = t.isMediaChannel(), C = e => {
+  } = (0, o.N)(t.id), j = (0, c.v)(), v = t.isMediaChannel(), _ = e => {
     (0, d.KR)({
       guildId: t.guild_id,
       channelId: t.id,
       sortOrder: e
     }), j.getState().setSortOrder(t.id, e), n()
-  }, _ = e => {
+  }, C = e => {
     (0, d.Do)({
       guildId: t.guild_id,
       channelId: t.id,
@@ -41,7 +41,7 @@ function g(e) {
     }), j.getState().setLayoutType(t.id, e), n()
   }, y = e => {
     j.getState().setTagSetting(t.id, e), n()
-  }, O = null != t.availableTags && t.availableTags.length > 0;
+  }, w = null != t.availableTags && t.availableTags.length > 0;
   return (0, r.jsx)("div", {
     className: h.container,
     children: (0, r.jsxs)(s.v2r, {
@@ -56,13 +56,13 @@ function g(e) {
           id: "sort-by-recent-activity",
           group: "sort-by",
           label: u.intl.string(u.t.jOPmcH),
-          action: () => C(l.z.LATEST_ACTIVITY),
+          action: () => _(l.z.LATEST_ACTIVITY),
           checked: g === l.z.LATEST_ACTIVITY
         }), (0, r.jsx)(s.k5B, {
           id: "sort-by-date-posted",
           group: "sort-by",
           label: u.intl.string(u.t.UIltXV),
-          action: () => C(l.z.CREATION_DATE),
+          action: () => _(l.z.CREATION_DATE),
           checked: g === l.z.CREATION_DATE
         })]
       }), t.isModeratorReportChannel() && (0, r.jsx)(s.kSQ, {
@@ -79,16 +79,16 @@ function g(e) {
           id: "view-as-list",
           group: "view-as",
           label: u.intl.string(u.t["NJFr+v"]),
-          action: () => _(i.X.LIST),
+          action: () => C(i.X.LIST),
           checked: f === i.X.LIST
         }), (0, r.jsx)(s.k5B, {
           id: "view-as-grid",
           group: "view-as",
           label: u.intl.string(u.t.wKeggY),
-          action: () => _(i.X.GRID),
+          action: () => C(i.X.GRID),
           checked: f === i.X.GRID
         })]
-      }), O ? (0, r.jsxs)(s.kSQ, {
+      }), w ? (0, r.jsxs)(s.kSQ, {
         label: u.intl.string(u.t.Paxaur),
         children: [(0, r.jsx)(s.k5B, {
           id: "match-some",
@@ -113,7 +113,7 @@ function g(e) {
             children: u.intl.string(u.t["3b//lJ"])
           }),
           action: () => {
-            C(t.getDefaultSortOrder()), _(t.getDefaultLayout()), y(t.getDefaultTagSetting())
+            _(t.getDefaultSortOrder()), C(t.getDefaultLayout()), y(t.getDefaultTagSetting())
           }
         })
       })]

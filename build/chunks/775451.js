@@ -29,8 +29,8 @@ let b = {
       anchorPillType: x,
       analyticsPage: _,
       isCoachmarkEnabled: j = !0,
-      linkText: O = h.intl.string(h.t.XRdyj4),
-      cardAlignment: E = b.START,
+      linkText: E = h.intl.string(h.t.XRdyj4),
+      cardAlignment: O = b.START,
       className: C
     } = e, {
       balance: v
@@ -73,7 +73,7 @@ let b = {
         onClick: D,
         showNotificationBadge: t
       }), N && (0, i.jsx)("div", {
-        className: a()(f.cardContainer, E, {
+        className: a()(f.cardContainer, O, {
           [f.hidden]: y,
           [f.visible]: !y
         }),
@@ -84,7 +84,7 @@ let b = {
           ctaOnClick: () => {
             D(), s()
           },
-          linkText: O
+          linkText: E
         })
       })]
     })

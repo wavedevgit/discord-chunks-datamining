@@ -20,8 +20,8 @@ var i = n(255367),
   x = n(572995),
   _ = n(981631),
   j = n(869783),
-  O = n(888723),
-  E = n(790895);
+  E = n(888723),
+  O = n(790895);
 
 function C(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -64,7 +64,7 @@ let S = e => {
       r(), n()
     };
     return s ? (0, i.jsx)("div", {
-      className: E.bentoBoxButton,
+      className: O.bentoBoxButton,
       children: (0, i.jsx)(o.z, {
         variant: "secondary",
         onClick: p,
@@ -73,7 +73,7 @@ let S = e => {
     }) : (0, i.jsx)(u.zx, {
       look: u.iL.OUTLINED,
       color: m,
-      className: a()(O.bentoBoxButton, c ? O.bentoBoxButtonWhite : O.bentoBoxButtonBrand),
+      className: a()(E.bentoBoxButton, c ? E.bentoBoxButtonWhite : E.bentoBoxButtonBrand),
       onClick: p,
       children: t
     })
@@ -102,28 +102,28 @@ let S = e => {
         let t;
         switch (e) {
           case x.NA.EMOJIS:
-            t = O.emojisBackground;
+            t = E.emojisBackground;
             break;
           case x.NA.REFERRAL_PROGRAM:
-            t = O.referralProgramBackground;
+            t = E.referralProgramBackground;
             break;
           case x.NA.NO_LIMITS:
-            t = O.noLimitsBackground;
+            t = E.noLimitsBackground;
             break;
           case x.NA.YOUR_SPACE:
-            t = O.yourSpaceBackground;
+            t = E.yourSpaceBackground;
             break;
           case x.NA.SERVER_PROFILES:
-            t = O.serverProfilesBackground;
+            t = E.serverProfilesBackground;
             break;
           case x.NA.SHOW_YOUR_STYLE:
-            t = O.yourStyleBackground;
+            t = E.yourStyleBackground;
             break;
           case x.NA.PERMADECOS:
-            t = O.permadecosBackground;
+            t = E.permadecosBackground;
             break;
           case x.NA.VOICE_FILTERS:
-            t = O.voiceFiltersBackground
+            t = E.voiceFiltersBackground
         }
         return t
       }(n),
@@ -141,7 +141,7 @@ let S = e => {
       V = (0, p.O)(e => {
         e ? M() : e || U()
       }, .7, D),
-      G = D ? E : O;
+      G = D ? O : E;
     t = D ? R === x.y$.LARGE ? "heading-xxl/bold" : "heading-xl/bold" : R === x.y$.SMALL ? "heading-xl/extrabold" : "heading-xxl/extrabold";
     let F = () => (0, i.jsxs)("div", {
         className: a()(G.textBox, G["".concat(R)]),
@@ -197,7 +197,7 @@ let S = e => {
         children: [(0, i.jsx)(H, {}), (0, i.jsx)(F, {})]
       }),
       Y = {
-        className: a()(D ? E.backgroundColor : L, G.boxContainer, G["".concat(R)], D && E.gradientBackground),
+        className: a()(D ? O.backgroundColor : L, G.boxContainer, G["".concat(R)], D && O.gradientBackground),
         onMouseEnter: M,
         onFocus: M,
         onBlur: U,

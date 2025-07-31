@@ -20,8 +20,8 @@ var i = n(255367),
   x = n(22267),
   _ = n(266454),
   j = n(243778),
-  O = n(957730),
-  E = n(53691),
+  E = n(957730),
+  O = n(53691),
   C = n(267717),
   v = n(296810),
   S = n(678135),
@@ -77,7 +77,7 @@ function H() {
       image: W
     }),
     X = (0, l.e7)([R.Z], () => R.Z.showNotice()),
-    J = L.dN.useSetting() && null != z ? O.ZP.parse(void 0, z).content : z,
+    J = L.dN.useSetting() && null != z ? E.ZP.parse(void 0, z).content : z,
     Q = w.ZP.canUsePremiumProfileCustomization(n),
     {
       analyticsLocations: $,
@@ -165,7 +165,7 @@ function H() {
           isVisible: el
         })
       })
-    }), eu && !X && (0, i.jsx)(E.p, {
+    }), eu && !X && (0, i.jsx)(O.p, {
       className: F.floatingNitroUpsell,
       showUpsell: eu && !el,
       text: G.intl.format(G.t.TmfgIy, {

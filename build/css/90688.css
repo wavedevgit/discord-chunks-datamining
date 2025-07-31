@@ -1,6 +1,6 @@
 /**
   Module ID: 90688
-  Original File Name: d0ecc830e26fd0e6
+  Original File Name: 3613b7c7feb511f7
 **/
 .qrCodeOverlay_c28498 {
     align-items: center;
@@ -761,9 +761,6 @@
 }
 
 .buttonContainer__8a2c0 {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-8);
     padding-bottom: var(--space-16)
 }
 
@@ -794,4 +791,4 @@
     margin-top: var(--space-16)
 }
 
-/*# sourceMappingURL=d0ecc830e26fd0e6.css.map*/
+/*# sourceMappingURL=3613b7c7feb511f7.css.map*/

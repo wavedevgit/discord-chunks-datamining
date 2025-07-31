@@ -1,7 +1,18 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => eP
+  O1: () => eb,
+  Sg: () => eg,
+  TE: () => eA,
+  ZP: () => eP,
+  ae: () => eE,
+  bL: () => em,
+  hJ: () => eO,
+  iV: () => eN,
+  jx: () => eI,
+  oR: () => eS,
+  qz: () => eT,
+  x2: () => ev
 }), n(388685), n(415506), n(781311);
 var r = n(255367),
   i = n(73800),
@@ -164,7 +175,7 @@ function em(e, t, a, o, s) {
 function eg(e, t, n) {
   return i.useCallback(r => {
     var i, a;
-    t === q.Ie.CREATE_FORUM_POST ? null == (a = n.current) || a.insertGIF(r) : e(r.url, void 0, void 0, !0), (0, A._Q)(), null == (i = n.current) || i.focus()
+    t === q.Ie.CREATE_FORUM_POST || t === q.Ie.CREATE_ANNOUNCEMENT_POST ? null == (a = n.current) || a.insertGIF(r) : e(r.url, void 0, void 0, !0), (0, A._Q)(), null == (i = n.current) || i.focus()
   }, [n, e, t])
 }
 
@@ -194,7 +205,7 @@ function eb(e) {
   } = (0, b.ZP)();
   return i.useCallback((e, i) => {
     var c, u;
-    n || ((0, k.Hc)(i, r, a, o.drafts.type) ? ((0, J._H)({
+    n || (o === q.Ie.CREATE_ANNOUNCEMENT_POST || (0, k.Hc)(i, r, a, o.drafts.type) ? ((0, J._H)({
       sticker: e,
       stickerSelectLocation: i,
       isReplacement: null != L.Z.getStickerPreview(a, o.drafts.type),
@@ -204,7 +215,7 @@ function eb(e) {
       uploads: void 0,
       stickers: [e.id]
     }), null == (u = t.current) || u.clearValue()), (0, A._Q)(), null == (c = t.current) || c.focus())
-  }, [n, r, a, o.drafts.type, t, l, s])
+  }, [n, r, a, t, l, s, o])
 }
 
 function ey(e, t) {

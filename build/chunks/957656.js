@@ -5,28 +5,28 @@ t.d(r, {
 var n = t(255367);
 t(73800);
 var o = t(481060),
-  s = t(198952),
-  i = t(329242),
+  i = t(198952),
+  s = t(329242),
   c = t(916723),
-  l = t(388032),
-  a = t(305623);
+  a = t(388032),
+  l = t(305623);
 let d = e => {
   var r, t, {
-      children: s,
-      className: i
+      children: i,
+      className: s
     } = e,
     c = function(e, r) {
       if (null == e) return {};
       var t, n, o = function(e, r) {
         if (null == e) return {};
         var t, n, o = {},
-          s = Object.keys(e);
-        for (n = 0; n < s.length; n++) t = s[n], r.indexOf(t) >= 0 || (o[t] = e[t]);
+          i = Object.keys(e);
+        for (n = 0; n < i.length; n++) t = i[n], r.indexOf(t) >= 0 || (o[t] = e[t]);
         return o
       }(e, r);
       if (Object.getOwnPropertySymbols) {
-        var s = Object.getOwnPropertySymbols(e);
-        for (n = 0; n < s.length; n++) t = s[n], !(r.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (o[t] = e[t])
+        var i = Object.getOwnPropertySymbols(e);
+        for (n = 0; n < i.length; n++) t = i[n], !(r.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (o[t] = e[t])
       }
       return o
     }(e, ["children", "className"]);
@@ -48,10 +48,11 @@ let d = e => {
     }
     return e
   }({
-    className: i
+    "data-migration-pending": !0,
+    className: s
   }, c), t = t = {
     parentComponent: "FamilyCenterCommonModal",
-    children: s
+    children: i
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(t)) : (function(e, r) {
     var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -68,7 +69,7 @@ d.ButtonFooter = e => {
     children: r
   } = e;
   return (0, n.jsx)("div", {
-    className: a.footer,
+    className: l.footer,
     children: r
   })
 }, d.Header = e => {
@@ -76,20 +77,20 @@ d.ButtonFooter = e => {
     icon: r,
     currentUser: t,
     otherUser: c,
-    header: l
+    header: a
   } = e;
   return (0, n.jsxs)("div", {
-    className: a.header,
-    children: [(0, n.jsx)(s.Z, {
+    className: l.header,
+    children: [(0, n.jsx)(i.Z, {
       currentUser: t,
       otherUser: c,
       children: r
     }), (0, n.jsxs)("div", {
-      className: a.heading,
+      className: l.heading,
       children: [(0, n.jsx)(o.X6q, {
         variant: "text-lg/bold",
-        children: l
-      }), (0, n.jsx)(i.Z, {
+        children: a
+      }), (0, n.jsx)(s.Z, {
         user: c
       })]
     })]
@@ -99,7 +100,7 @@ d.ButtonFooter = e => {
     children: r
   } = e;
   return (0, n.jsx)("div", {
-    className: a.content,
+    className: l.content,
     children: r
   })
 }, d.Notice = e => {
@@ -107,11 +108,11 @@ d.ButtonFooter = e => {
     notice: r
   } = e;
   return (0, n.jsxs)("div", {
-    className: a.notice,
+    className: l.notice,
     children: [(0, n.jsx)(o.Text, {
       variant: "eyebrow",
       color: "header-primary",
-      children: l.intl.string(c.default.cXgKMD)
+      children: a.intl.string(c.default.cXgKMD)
     }), (0, n.jsx)(o.Text, {
       variant: "text-sm/normal",
       color: "header-secondary",
@@ -124,7 +125,7 @@ d.ButtonFooter = e => {
     onDismiss: t
   } = e;
   return null == r ? null : (0, n.jsx)(o.kzN, {
-    className: a.error,
+    className: l.error,
     onDismiss: t,
     children: r
   })

@@ -61,7 +61,7 @@ function E(e) {
       title: t,
       errors: n,
       disabled: O,
-      children: [(0, r.jsx)(u.Z, {
+      children: [(0, r.jsx)(u.ZP, {
         innerClassName: o()(m.textArea, y),
         editorClassName: m.editorTextArea,
         maxCharacterCount: f.$n,

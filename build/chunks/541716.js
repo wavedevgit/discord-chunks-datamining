@@ -1,19 +1,58 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Ie: () => T,
-  OW: () => a,
-  gy: () => o
+  Ie: () => R,
+  OW: () => c,
+  gy: () => u
 });
 var r = n(873546),
-  i = n(703558),
-  a = function(e) {
+  i = n(703558);
+
+function a(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: !0,
+    configurable: !0,
+    writable: !0
+  }) : e[t] = n, e
+}
+
+function o(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      a(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function s(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function l(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : s(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+var c = function(e) {
     return e[e.TOOLTIP = 0] = "TOOLTIP", e[e.STATIC = 1] = "STATIC", e[e.NONE = 2] = "NONE", e
   }({}),
-  o = function(e) {
+  u = function(e) {
     return e[e.DEFAULT = 0] = "DEFAULT", e[e.INLINE = 1] = "INLINE", e[e.FLUSH = 2] = "FLUSH", e
   }({});
-let s = {
+let d = {
     analyticsName: "normal",
     attachments: !0,
     autocomplete: {
@@ -73,7 +112,7 @@ let s = {
     showSlowmodeIndicator: !0,
     showTypingIndicator: !0
   },
-  l = {
+  _ = {
     analyticsName: "overlay",
     autocomplete: {
       addReactionShortcut: !0,
@@ -121,7 +160,7 @@ let s = {
     showSlowmodeIndicator: !0,
     showTypingIndicator: !0
   },
-  c = {
+  f = {
     analyticsName: "sidebar",
     attachments: !0,
     autocomplete: {
@@ -172,7 +211,7 @@ let s = {
     showSlowmodeIndicator: !0,
     showTypingIndicator: !0
   },
-  u = {
+  p = {
     analyticsName: "edit",
     drafts: {
       type: i.d.ChannelMessage
@@ -197,7 +236,7 @@ let s = {
     },
     showCharacterCount: !0
   },
-  d = {
+  h = {
     analyticsName: "forum",
     drafts: {
       type: i.d.ChannelMessage
@@ -223,7 +262,7 @@ let s = {
     showSlowmodeIndicator: !0,
     showTypingIndicator: !0
   },
-  _ = {
+  m = {
     analyticsName: "voice_channel_status",
     drafts: {
       type: i.d.ChannelMessage
@@ -252,7 +291,7 @@ let s = {
     showCharacterCount: !0,
     layout: 1
   },
-  f = {
+  g = {
     analyticsName: "thread_creation",
     attachments: !0,
     drafts: {
@@ -287,7 +326,24 @@ let s = {
       iconOnly: !0
     }
   },
-  p = {
+  E = l(o({}, d), {
+    analyticsName: "create_announcement_post",
+    stickers: {
+      allowSending: !1
+    },
+    gifts: {},
+    commands: {
+      enabled: !1
+    },
+    submit: {
+      disableEnterToSubmit: !0
+    },
+    disableAutoFocus: !0,
+    permissions: {
+      requireSendMessages: !0
+    }
+  }),
+  b = {
     analyticsName: "create_forum_post",
     attachments: !0,
     drafts: {
@@ -318,7 +374,7 @@ let s = {
     showSlowmodeIndicator: !0,
     layout: 2
   },
-  h = {
+  y = {
     analyticsName: "create_poll",
     attachments: !0,
     drafts: {
@@ -338,7 +394,7 @@ let s = {
       disableEnterToSubmit: !0
     }
   },
-  m = {
+  O = {
     analyticsName: "user_profile",
     drafts: {
       type: i.d.ChannelMessage
@@ -363,7 +419,7 @@ let s = {
     toolbarType: 2,
     layout: 1
   },
-  g = {
+  v = {
     analyticsName: "overlay_inline_reply",
     drafts: {
       type: i.d.ChannelMessage
@@ -386,7 +442,7 @@ let s = {
     hideAccessoryBar: !0,
     layout: 1
   },
-  E = {
+  I = {
     analyticsName: "user_profile_reply",
     drafts: {
       type: i.d.ChannelMessage
@@ -410,7 +466,7 @@ let s = {
     },
     toolbarType: 2
   },
-  b = {
+  T = {
     analyticsName: "profile_bio_input",
     drafts: {
       type: i.d.ChannelMessage
@@ -428,7 +484,7 @@ let s = {
     disableAutoFocus: !0,
     showCharacterCount: !0
   },
-  y = {
+  S = {
     analyticsName: "custom_gift_type",
     drafts: {
       type: i.d.ChannelMessage
@@ -444,7 +500,7 @@ let s = {
     disableAutoFocus: !0,
     showCharacterCount: !0
   },
-  O = {
+  A = {
     analyticsName: "rules_input",
     drafts: {
       type: i.d.ChannelMessage
@@ -460,7 +516,7 @@ let s = {
     disableAutoFocus: !0,
     hideAccessoryBar: !0
   },
-  v = {
+  N = {
     analyticsName: "forum_channel_guidelines",
     drafts: {
       type: i.d.ChannelMessage
@@ -479,7 +535,7 @@ let s = {
     showCharacterCount: !0,
     toolbarType: 1
   },
-  I = {
+  C = {
     analyticsName: "channel_topic",
     drafts: {
       type: i.d.ChannelMessage
@@ -503,24 +559,25 @@ let s = {
       disableInlineCode: !0
     }
   },
-  T = {
-    NORMAL: s,
-    OVERLAY: l,
-    OVERLAY_INLINE_REPLY: g,
-    SIDEBAR: c,
-    EDIT: u,
-    FORM: d,
-    VOICE_CHANNEL_STATUS: _,
-    THREAD_CREATION: f,
-    USER_PROFILE: m,
-    USER_PROFILE_REPLY: E,
-    PROFILE_BIO_INPUT: b,
-    CUSTOM_GIFT: y,
-    RULES_INPUT: O,
-    CREATE_FORUM_POST: p,
-    CREATE_POLL: h,
-    FORUM_CHANNEL_GUIDELINES: v,
-    CHANNEL_TOPIC: I,
+  R = {
+    NORMAL: d,
+    OVERLAY: _,
+    OVERLAY_INLINE_REPLY: v,
+    SIDEBAR: f,
+    EDIT: p,
+    FORM: h,
+    VOICE_CHANNEL_STATUS: m,
+    THREAD_CREATION: g,
+    USER_PROFILE: O,
+    USER_PROFILE_REPLY: I,
+    PROFILE_BIO_INPUT: T,
+    CUSTOM_GIFT: S,
+    RULES_INPUT: A,
+    CREATE_FORUM_POST: b,
+    CREATE_ANNOUNCEMENT_POST: E,
+    CREATE_POLL: y,
+    FORUM_CHANNEL_GUIDELINES: N,
+    CHANNEL_TOPIC: C,
     ATOMIC_REACTOR_REPLY_INPUT: {
       analyticsName: "atomic_reator_reply_input",
       drafts: {

@@ -1,6 +1,6 @@
 /** Chunk was on 22243 **/
 n.d(t, {
-  g: () => O
+  g: () => E
 }), n(539854);
 var i = n(255367);
 n(73800);
@@ -22,12 +22,12 @@ var r = n(442837),
   _ = n(388032),
   j = n(965695);
 
-function O(e) {
+function E(e) {
   let t = (0, r.e7)([u.default], () => u.default.getCurrentUser()),
     n = (0, r.e7)([d.Z], () => d.Z.hidePersonalInformation),
-    O = (0, r.e7)([o.Z], () => (0, s.wj)(o.Z.theme)),
+    E = (0, r.e7)([o.Z], () => (0, s.wj)(o.Z.theme)),
     {
-      multiAccountUsers: E
+      multiAccountUsers: O
     } = (0, f.L)(),
     C = e => {
       e !== (null == t ? void 0 : t.id) && (m.default.track(x.rMx.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
@@ -36,7 +36,7 @@ function O(e) {
         }
       }), g.yD(e))
     },
-    v = E.map(r => {
+    v = O.map(r => {
       let s = new c.Z(r),
         o = s.id === (null == t ? void 0 : t.id),
         d = r.tokenStatus === h.q.INVALID,
@@ -71,11 +71,11 @@ function O(e) {
             }), o && (0, i.jsx)(a.owK, {
               size: "sm",
               color: (0, l.Lq)(t ? x.Ilk.WHITE_500 : x.Ilk.BRAND_500),
-              secondaryColor: (0, l.Lq)(t && O || t && !O ? x.Ilk.BRAND_500 : x.Ilk.WHITE_500),
+              secondaryColor: (0, l.Lq)(t && E || t && !E ? x.Ilk.BRAND_500 : x.Ilk.WHITE_500),
               className: j.activeIcon
             }), d && (0, i.jsx)(a.Mgn, {
               color: (0, l.Lq)(x.Ilk.RED_400),
-              secondaryColor: (0, l.Lq)(t && O || t && !O ? x.Ilk.BRAND_500 : x.Ilk.WHITE_500),
+              secondaryColor: (0, l.Lq)(t && E || t && !E ? x.Ilk.BRAND_500 : x.Ilk.WHITE_500),
               size: "xs",
               className: j.activeIcon
             })]

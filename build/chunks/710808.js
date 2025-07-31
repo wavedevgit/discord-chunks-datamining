@@ -20,8 +20,8 @@ var i = n(255367),
   x = n(226961),
   _ = n(12647),
   j = n(569550),
-  O = n(726985),
-  E = n(981631),
+  E = n(726985),
+  O = n(981631),
   C = n(65154),
   v = n(388032),
   S = n(20493);
@@ -96,7 +96,7 @@ function A(e) {
         message: {
           message: "User Live Dump"
         }
-      }), await (0, p.E)(E.GU0.RTC);
+      }), await (0, p.E)(O.GU0.RTC);
       let e = v.intl.string(v.t["fKBB8/"]),
         t = v.intl.string(v.t.BvyxEx);
       (0, l.h7j)(n => (0, i.jsx)(l.ConfirmModal, N(T({
@@ -147,7 +147,7 @@ function A(e) {
   }
   let w = (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(h.F, {
-      setting: O.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_STREAM_INFO_OVERLAY,
+      setting: E.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_STREAM_INFO_OVERLAY,
       children: (0, i.jsx)(l.j7V, {
         value: R,
         onChange: e => {
@@ -160,7 +160,7 @@ function A(e) {
         children: v.intl.string(v.t["0CEP6e"])
       })
     }), (0, i.jsx)(h.F, {
-      setting: O.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_AEC_DUMP,
+      setting: E.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_AEC_DUMP,
       children: (0, i.jsx)(l.j7V, {
         value: P,
         onChange: e => o.Z.setAecDump(e),
@@ -169,7 +169,7 @@ function A(e) {
         children: v.intl.string(v.t["r6K+TE"])
       })
     }), (0, i.jsxs)(h.F, {
-      setting: O.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_CONNECTION_REPLAY,
+      setting: E.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_CONNECTION_REPLAY,
       children: [(0, i.jsx)(l.j7V, {
         hideBorder: !0,
         value: D,
@@ -194,7 +194,7 @@ function A(e) {
         className: S.marginBottom20
       })]
     }), (0, i.jsx)(h.F, {
-      setting: O.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_LOGGING,
+      setting: E.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_LOGGING,
       children: (0, i.jsxs)("div", {
         children: [(0, i.jsx)(l.j7V, {
           hideBorder: !0,

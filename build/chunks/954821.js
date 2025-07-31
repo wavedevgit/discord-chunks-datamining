@@ -1,6 +1,6 @@
 /** Chunk was on 22243 **/
 n.d(t, {
-  h: () => O
+  h: () => E
 }), n(388685), n(953529);
 var i = n(255367),
   r = n(73800),
@@ -42,15 +42,15 @@ let _ = e => {
       guildId: s,
       listing: c,
       subscription: j,
-      onClose: O
-    } = e, E = (0, m.Dt)(), C = (0, g.YB)(s), v = (null == C || null == (t = C.cover_image_asset) ? void 0 : t.application_id) != null ? (0, p._W)(C.cover_image_asset.application_id, C.cover_image_asset, 440) : void 0, {
+      onClose: E
+    } = e, O = (0, m.Dt)(), C = (0, g.YB)(s), v = (null == C || null == (t = C.cover_image_asset) ? void 0 : t.application_id) != null ? (0, p._W)(C.cover_image_asset.application_id, C.cover_image_asset, 440) : void 0, {
       analyticsLocations: S
     } = (0, u.ZP)(d.Z.GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL), {
       cancelSubscription: T,
       error: N,
       submitting: I
     } = _(S), y = async () => {
-      await T(j.id) && O()
+      await T(j.id) && E()
     }, A = c.role_benefits.benefits.filter(e => e.ref_type === f.Qs.CHANNEL), P = c.role_benefits.benefits.filter(e => e.ref_type === f.Qs.INTANGIBLE), R = a()(j.currentPeriodEnd).format("MMMM Do, YYYY"), D = b.intl.formatToPlainString(b.t.KsMRPz, {
       numChannels: A.length,
       numAdditionalBenefits: P.length,
@@ -59,7 +59,7 @@ let _ = e => {
     return (0, i.jsxs)(o.Y0X, {
       transitionState: n,
       className: x.__invalid_modal,
-      "aria-labelledby": E,
+      "aria-labelledby": O,
       parentComponent: "CancelSubscriptionModal",
       children: [(0, i.jsxs)("div", {
         children: [(0, i.jsx)("img", {
@@ -69,14 +69,14 @@ let _ = e => {
         }), (0, i.jsx)(o.olH, {
           withCircleBackground: !0,
           className: x.closeButton,
-          onClick: O
+          onClick: E
         })]
       }), null != N ? (0, i.jsx)(o.kzN, {
         children: N.message
       }) : null, (0, i.jsxs)(o.hzk, {
         className: x.content,
         children: [(0, i.jsx)(o.X6q, {
-          id: E,
+          id: O,
           variant: "text-md/medium",
           className: x.title,
           children: b.intl.string(b.t.O6l5tL)
@@ -100,13 +100,13 @@ let _ = e => {
           look: l.zx.Looks.LINK,
           color: l.zx.Colors.WHITE,
           className: x.goBackButton,
-          onClick: O,
+          onClick: E,
           children: b.intl.string(b.t.EP6EPT)
         })]
       })]
     })
   },
-  O = e => {
+  E = e => {
     (0, o.h7j)(t => (0, i.jsx)(j, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},

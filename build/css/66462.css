@@ -1,26 +1,7 @@
 /**
   Module ID: 66462
-  Original File Name: 5d14915e438a9038
+  Original File Name: cd799f524f2f1704
 **/
-.content_fec266 {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 24px;
-    padding-left: 30px;
-    padding-right: 30px
-}
-
-.art_fec266 {
-    height: 153px;
-    margin: -75px auto 12px;
-    width: 223px
-}
-
-.header_fec266 {
-    margin-bottom: 32px
-}
-
 .row_fec266 {
     background-color: var(--background-base-lower);
     border: 1px solid var(--border-faint);
@@ -57,4 +38,4 @@
     margin-left: -2px
 }
 
-/*# sourceMappingURL=5d14915e438a9038.css.map*/
+/*# sourceMappingURL=cd799f524f2f1704.css.map*/

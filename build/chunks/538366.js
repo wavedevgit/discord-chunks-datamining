@@ -59,30 +59,30 @@ function g(e) {
         }), n))
       }
     })
-  }, [g]), C = f.size > 0, _ = b || p, y = !C && p && !j, O = i.useCallback(() => y ? v() : b ? void o.S.dispatch(u.CkL.FOCUS_COMPOSER_TITLE) : (0, u.VqG)(), [v, y, b]);
+  }, [g]), _ = f.size > 0, C = b || p, y = !_ && p && !j, w = i.useCallback(() => y ? v() : b ? void o.S.dispatch(u.CkL.FOCUS_COMPOSER_TITLE) : (0, u.VqG)(), [v, y, b]);
   return (0, r.jsxs)("div", {
     className: h.container,
     children: [(0, r.jsx)(l.X6q, {
       className: h.header,
       variant: "heading-md/semibold",
-      children: C ? m.intl.formatToPlainString(m.t.lvPci4, {
+      children: _ ? m.intl.formatToPlainString(m.t.lvPci4, {
         numTags: f.size
       }) : m.intl.string(m.t.PwTMGx)
     }), (0, r.jsx)(l.Text, {
       color: "header-secondary",
       variant: "text-sm/normal",
-      children: C ? m.intl.formatToPlainString(m.t.AAeye3, {
+      children: _ ? m.intl.formatToPlainString(m.t.AAeye3, {
         numTags: f.size
       }) : m.intl.formatToPlainString(m.t.YtsXFB, {
         channelName: t
       })
-    }), _ && (0, r.jsxs)(r.Fragment, {
+    }), C && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.LZC, {
         size: 16
       }), (0, r.jsx)(a.z, {
         text: y ? m.intl.string(m.t.DgatTU) : m.intl.string(m.t.wOKE8P),
         variant: "secondary",
-        onClick: O
+        onClick: w
       })]
     })]
   })

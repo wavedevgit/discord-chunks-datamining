@@ -1,5 +1,5 @@
-/** Chunk was on 29410 **/
-A.exports = {
+/** Chunk was on 13368 **/
+e.exports = {
   wrapper: "wrapper__2ea32",
   icon: "icon__2ea32",
   typeThread: "typeThread__2ea32",

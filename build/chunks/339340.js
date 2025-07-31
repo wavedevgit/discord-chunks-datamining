@@ -101,7 +101,7 @@ function P(e) {
     })), q = (0, r.jsxs)(d.hjN, {
       className: w ? void 0 : A.inputSection,
       title: S.intl.string(S.t.Fq5lwM),
-      children: [(0, r.jsx)(g.Z, {
+      children: [(0, r.jsx)(g.ZP, {
         innerClassName: A.textArea,
         textValue: x,
         richValue: Y,

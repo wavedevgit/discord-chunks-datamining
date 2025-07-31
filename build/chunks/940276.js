@@ -74,8 +74,8 @@ let b = function() {
     onToggleActivityRestrictedGuild: x,
     isActivityRestricted: _,
     numActivityRestrictedGuilds: j,
-    numTotalGuilds: O
-  } = (0, u.F)(), E = (0, r.useId)();
+    numTotalGuilds: E
+  } = (0, u.F)(), O = (0, r.useId)();
   return (0, i.jsxs)("div", {
     className: h.wrapper,
     children: [(0, i.jsxs)("div", {
@@ -88,25 +88,25 @@ let b = function() {
             interaction: "search_cleared",
             sort_order: s,
             activity_restricted_guild_count: j,
-            total_guild_count: O
+            total_guild_count: E
           }), n("")
         },
         onFocus: () => c.default.track(m.rMx.ACTIVITY_SHARING_SETTINGS_INTERACTED, {
           interaction: "search_focused",
           sort_order: s,
           activity_restricted_guild_count: j,
-          total_guild_count: O
+          total_guild_count: E
         }),
         onBlur: () => c.default.track(m.rMx.ACTIVITY_SHARING_SETTINGS_INTERACTED, {
           interaction: "search_blurred",
           sort_order: s,
           activity_restricted_guild_count: j,
-          total_guild_count: O
+          total_guild_count: E
         }),
         placeholder: g.intl.string(g.t["H+nRY2"]),
         "aria-label": g.intl.string(g.t["5h0QOD"]),
         inputProps: {
-          "aria-controls": E,
+          "aria-controls": O,
           "aria-expanded": !0
         }
       }), e.length > 0 && (0, i.jsxs)("div", {
@@ -133,7 +133,7 @@ let b = function() {
               interaction: "sort_order_changed",
               sort_order: e,
               activity_restricted_guild_count: j,
-              total_guild_count: O
+              total_guild_count: E
             }), o(e)
           },
           isSelected: e => s === e,
@@ -154,7 +154,7 @@ let b = function() {
       })
     }), (0, i.jsxs)("ul", {
       className: h.guildsList,
-      id: E,
+      id: O,
       "aria-label": g.intl.string(g.t["7hB4kp"]),
       children: [0 === e.length && (0, i.jsx)("div", {
         className: h.noResultsContainer,

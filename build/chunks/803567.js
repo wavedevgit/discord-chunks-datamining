@@ -21,8 +21,8 @@ var r = n(120356),
   x = n(738486),
   _ = n(726985),
   j = n(981631),
-  O = n(388032),
-  E = n(20493);
+  E = n(388032),
+  O = n(20493);
 let C = n(775322),
   v = n(853453),
   S = (0, u.hQ)(),
@@ -60,25 +60,25 @@ function I(e) {
   if (!u && !m) return null;
   let p = [];
   return m && p.push({
-    name: O.intl.string(O.t.rdoNzs),
+    name: E.intl.string(E.t.rdoNzs),
     value: 2
   }), u && p.push({
-    name: O.intl.string(O.t.qXeYHx),
+    name: E.intl.string(E.t.qXeYHx),
     value: 1
   }), p.push({
-    name: O.intl.string(O.t.wkYAl5),
+    name: E.intl.string(E.t.wkYAl5),
     value: 0
   }), (0, i.jsxs)(o.hjN, {
-    className: t ? void 0 : E.marginBottom20,
+    className: t ? void 0 : O.marginBottom20,
     children: [(0, i.jsx)(o.vwX, {
       id: S,
       tag: o.RB0.H3,
-      className: E.marginBottom8,
-      children: O.intl.string(O.t.t8QhiY)
+      className: O.marginBottom8,
+      children: E.intl.string(E.t.t8QhiY)
     }), (0, i.jsx)(o.R94, {
       type: o.R94.Types.DESCRIPTION,
-      className: E.marginBottom8,
-      children: O.intl.string(O.t.najZCQ)
+      className: O.marginBottom8,
+      children: E.intl.string(E.t.najZCQ)
     }), (0, i.jsx)(o.FXm, {
       options: p,
       onChange: e => {
@@ -86,7 +86,7 @@ function I(e) {
       },
       value: r ? 2 : +!!s
     }), m && (0, i.jsx)(o.ToO, {
-      className: E.marginBottom8,
+      className: O.marginBottom8,
       type: o.Dd5.PRIMARY,
       imageData: {
         src: (0, l.ap)(n) ? C : v,
@@ -97,7 +97,7 @@ function I(e) {
       body: (0, i.jsx)(o.eee, {
         href: f.Z.getArticleURL(j.BhN.NOISE_SUPPRESSION),
         onClick: N,
-        children: O.intl.string(O.t.hvVgAQ)
+        children: E.intl.string(E.t.hvVgAQ)
       })
     }), t ? null : (0, i.jsx)(o.$i$, {})]
   })
@@ -132,13 +132,13 @@ function y(e) {
     hasAutomaticGainControl: p.Z.hasAutomaticGainControl(r)
   }), [r]), S = n === j.pM4.VOICE_ACTIVITY && u, T = (0, i.jsxs)(x.Z, {
     children: [(b || C || v) && (0, i.jsx)(o.R94, {
-      className: t ? void 0 : E.marginBottom20,
+      className: t ? void 0 : O.marginBottom20,
       type: o.R94.Types.DESCRIPTION,
-      children: O.intl.string(O.t["/Whuzs"])
+      children: E.intl.string(E.t["/Whuzs"])
     }), (0, i.jsx)(m.F, {
       setting: _.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_ECHO_CANCELLATION,
       children: (0, i.jsx)(o.j7V, {
-        className: t ? void 0 : s()(E.marginTop8, E.marginBottom20),
+        className: t ? void 0 : s()(O.marginTop8, O.marginBottom20),
         value: l,
         onChange: e => c.Z.setEchoCancellation(e, {
           page: j.ZY5.USER_SETTINGS,
@@ -146,7 +146,7 @@ function y(e) {
         }),
         disabled: b,
         hideBorder: t,
-        children: O.intl.string(O.t.iWTwu7)
+        children: E.intl.string(E.t.iWTwu7)
       })
     }), (0, i.jsx)(m.F, {
       setting: _.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_NOISE_SUPPRESSION,
@@ -160,10 +160,10 @@ function y(e) {
         onChange: e => c.Z.setMode(n, {
           vadUseKrisp: e
         }),
-        note: O.intl.string(O.t.LoOB1N),
+        note: E.intl.string(E.t.LoOB1N),
         disabled: !S,
         hideBorder: t,
-        children: O.intl.string(O.t.BbESsr)
+        children: E.intl.string(E.t.BbESsr)
       })
     }), (0, i.jsx)(m.F, {
       setting: _.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_AUTOMATIC_GAIN_CONTROL,
@@ -173,10 +173,10 @@ function y(e) {
           page: j.ZY5.USER_SETTINGS,
           section: j.jXE.SETTINGS_VOICE_AND_VIDEO
         }),
-        note: O.intl.string(O.t["6EjbvL"]),
+        note: E.intl.string(E.t["6EjbvL"]),
         disabled: v,
         hideBorder: t,
-        children: O.intl.string(O.t.cUMdHx)
+        children: E.intl.string(E.t.cUMdHx)
       })
     }), (0, i.jsx)(m.F, {
       setting: _.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_BYPASS_SYSTEM_INPUT_PROCESSING,
@@ -185,15 +185,15 @@ function y(e) {
         onChange: e => {
           c.Z.setBypassSystemInputProcessing(e)
         },
-        note: O.intl.string(O.t["UyRX+P"]),
+        note: E.intl.string(E.t["UyRX+P"]),
         hideBorder: t,
-        children: O.intl.string(O.t.DFPXIC)
+        children: E.intl.string(E.t.DFPXIC)
       })
     })]
   });
   return t ? T : (0, i.jsx)(o.hjN, {
-    className: E.marginBottom20,
-    title: O.intl.string(O.t["6I6GUl"]),
+    className: O.marginBottom20,
+    title: E.intl.string(E.t["6I6GUl"]),
     children: T
   })
 }

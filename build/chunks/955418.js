@@ -74,7 +74,7 @@ function O(e) {
   } = (0, d.KZ)(), [v, I] = i.useState(""), [T, S] = i.useState((0, s.JM)(v)), A = i.useRef(!1), N = i.useMemo(() => b(g({}, o.Ie.USER_PROFILE), {
     disableAutoFocus: m
   }), [m]);
-  return (0, r.jsx)(l.Z, {
+  return (0, r.jsx)(l.ZP, {
     className: h.container,
     editorClassName: h.editor,
     type: N,

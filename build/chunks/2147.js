@@ -288,7 +288,7 @@ class eR extends l.PureComponent {
         children: [(0, i.jsx)(m.xJW, {
           title: _ ? ea.intl.string(ea.t.yR6Hwc) : ea.intl.string(ea.t.X8jMDg),
           className: ec.marginTop20,
-          children: (0, i.jsx)(O.Z, {
+          children: (0, i.jsx)(O.ZP, {
             innerClassName: eo.topic,
             characterCountClassName: eo.topicCharacterCount,
             maxCharacterCount: _ ? ei.Z7 : ei.$x,

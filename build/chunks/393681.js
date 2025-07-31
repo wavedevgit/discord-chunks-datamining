@@ -20,8 +20,8 @@ var i = n(255367),
   x = n(600164),
   _ = n(690221),
   j = n(332473),
-  O = n(303172),
-  E = n(518560),
+  E = n(303172),
+  O = n(518560),
   C = n(921801),
   v = n(577275),
   S = n(484459),
@@ -147,7 +147,7 @@ class q extends r.PureComponent {
       messageType: m.QYI.WARNING,
       children: [H.intl.format(H.t.pdYZys, {}), " ", "", (0, i.jsx)(_.Z, {
         className: z.noticeTextButton,
-        onClick: () => (0, O.Z)(F.Kq.USER_SETTINGS),
+        onClick: () => (0, E.Z)(F.Kq.USER_SETTINGS),
         children: H.intl.string(H.t.LhlgY2)
       })]
     }) : null
@@ -349,7 +349,7 @@ class q extends r.PureComponent {
           setting: V.s6.ACCOUNT_SECURITY_TAB
         }, {
           title: H.intl.string(H.t["Vov/9v"]),
-          component: E.Z,
+          component: O.Z,
           setting: V.s6.PRIVACY_AND_SAFETY_STANDING
         }]
       })

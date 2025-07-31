@@ -1,7 +1,7 @@
 /** Chunk was on 71879 **/
 "use strict";
 n.d(t, {
-  q: () => S
+  q: () => O
 });
 var r = n(255367),
   i = n(73800),
@@ -21,18 +21,18 @@ var r = n(255367),
   b = n(981631),
   j = n(675654),
   v = n(710111),
-  C = n(130883),
-  _ = n(388032),
+  _ = n(130883),
+  C = n(388032),
   y = n(773967);
 
-function O(e) {
+function w(e) {
   let {
     className: t,
     sound: n,
     playSound: a,
     isPlaying: s,
     text: d
-  } = e, u = (null == n ? void 0 : n.emojiId) != null || (null == n ? void 0 : n.emojiName) != null, m = _.intl.formatToPlainString(_.t.tuMUJy, {
+  } = e, u = (null == n ? void 0 : n.emojiId) != null || (null == n ? void 0 : n.emojiName) != null, m = C.intl.formatToPlainString(C.t.tuMUJy, {
     emojiName: null == n ? void 0 : n.emojiName,
     soundName: null == n ? void 0 : n.name
   }), h = i.useCallback(() => {
@@ -58,7 +58,7 @@ function O(e) {
   })
 }
 
-function w(e) {
+function T(e) {
   let {
     containerRef: t,
     text: n
@@ -102,7 +102,7 @@ function w(e) {
       }
     }
   }, [x, o, c, t]);
-  return void 0 === l ? null : (0, r.jsx)(O, {
+  return void 0 === l ? null : (0, r.jsx)(w, {
     sound: l,
     playSound: b,
     isPlaying: f,
@@ -110,7 +110,7 @@ function w(e) {
   })
 }
 
-function S() {
+function O() {
   let e = i.useRef(null);
   return (0, r.jsxs)(o.Kqy, {
     className: y.container,
@@ -133,13 +133,13 @@ function S() {
       children: [(0, r.jsx)(o.X6q, {
         className: y.header,
         variant: "heading-md/medium",
-        children: _.intl.string(C.default.h6QNk5)
+        children: C.intl.string(_.default.h6QNk5)
       }), (0, r.jsx)(o.Text, {
         className: y.text,
         variant: "text-md/medium",
         color: "text-secondary",
-        children: _.intl.format(C.default["8N4c5+"], {
-          airhornHook: t => (0, r.jsx)(w, {
+        children: C.intl.format(_.default["8N4c5+"], {
+          airhornHook: t => (0, r.jsx)(T, {
             containerRef: e,
             text: t
           })

@@ -1,6 +1,6 @@
 /** Chunk was on 22243 **/
 n.d(t, {
-  Z: () => O
+  Z: () => E
 }), n(539854), n(388685);
 var i = n(255367),
   r = n(73800),
@@ -24,13 +24,13 @@ let j = [{
   extensions: ["gif"]
 }];
 
-function O(e) {
+function E(e) {
   let {
     showRemoveAvatarButton: t,
     errors: n,
     onAvatarChange: s,
-    sectionTitle: O,
-    changeAvatarButtonText: E,
+    sectionTitle: E,
+    changeAvatarButtonText: O,
     guildId: C,
     className: v,
     disabled: S = !1,
@@ -54,7 +54,7 @@ function O(e) {
   }, [C, y, T, Z]);
   return (0, i.jsx)(g.Z, {
     className: v,
-    title: O,
+    title: E,
     titleIcon: w ? (0, i.jsx)(c.IGR, {
       text: x.intl.string(x.t.y2b7CA),
       className: _.newBadge
@@ -74,7 +74,7 @@ function O(e) {
         }),
         size: o.zx.Sizes.SMALL,
         onClick: k,
-        children: null != E ? E : x.intl.string(x.t["4OynCA"])
+        children: null != O ? O : x.intl.string(x.t["4OynCA"])
       }), t && (0, i.jsx)("div", {
         "data-button-hoisted-classname-wrapper": !0,
         className: _.removeButton,

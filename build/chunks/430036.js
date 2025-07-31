@@ -147,7 +147,7 @@ class es extends r.Component {
             onClose: t
           }, s))
         },
-        children: () => (0, i.jsx)(I.Z, er(ei({}, r), {
+        children: () => (0, i.jsx)(I.ZP, er(ei({}, r), {
           ref: this.textAreaRef,
           renderAttachButton: this.renderAttachButton,
           channel: t,
@@ -190,7 +190,7 @@ class es extends r.Component {
         let {
           channel: t
         } = this.props, n = z.Z.getLastEditableMessage(t.id);
-        null != n && p.Z.startEditMessage(t.id, n.id, n.content)
+        null != n && p.Z.startEditMessageRecord(t.id, n)
       }
     }), en(this, "handleTextareaChange", (e, t, n) => {
       let {

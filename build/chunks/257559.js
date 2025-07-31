@@ -303,9 +303,7 @@ let C = {
       confirmText: M.intl.string(M.t["cY+Ooa"]),
       cancelText: M.intl.string(M.t["ETE/oK"]),
       confirmButtonColor: o.zx.Colors.BRAND,
-      onConfirm: () => u.Z.editMessage(e, t, {
-        content: n
-      })
+      onConfirm: () => u.Z.editMessage(e, t, n)
     }, l), {
       children: (0, i.jsx)(c.Text, {
         variant: "text-md/normal",

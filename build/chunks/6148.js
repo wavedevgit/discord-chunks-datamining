@@ -19,7 +19,7 @@ function d(e, t) {
   return (0, c.Z)(e, n) && d && !f ? (0, r.jsx)(l.sNh, {
     id: "edit",
     label: u.intl.string(u.t.fsBWmZ),
-    action: () => a.Z.startEditMessage(t.id, e.id, e.content),
+    action: () => a.Z.startEditMessageRecord(t.id, e),
     icon: l.vdY
   }) : null
 }

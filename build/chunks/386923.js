@@ -1,7 +1,7 @@
 /** Chunk was on 71879 **/
 "use strict";
 n.d(t, {
-  Z: () => T
+  Z: () => S
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -21,15 +21,15 @@ var r = n(255367),
   b = n(388032),
   j = n(767905),
   v = n(683999),
-  C = n(602512),
-  _ = n(184476);
+  _ = n(602512),
+  C = n(184476);
 let y = {
     mass: 1,
     tension: 250,
     friction: 18,
     clamp: !0
   },
-  O = () => {
+  w = () => {
     let [e, t] = i.useState(!0);
     return {
       transitions: (0, c.Yzy)(e, {
@@ -49,7 +49,7 @@ let y = {
       setVisible: t
     }
   },
-  w = e => (0, c.Yzy)(e, {
+  T = e => (0, c.Yzy)(e, {
     from: {
       maxHeight: 0
     },
@@ -63,7 +63,7 @@ let y = {
       duration: 200
     }
   }),
-  S = e => {
+  O = e => {
     let {
       guild: t
     } = e, n = (0, o.e7)([g.Z], () => g.Z.can(x.Plq.MANAGE_GUILD, t));
@@ -203,7 +203,7 @@ let y = {
           })]
         })]
       }), (0, r.jsx)("img", {
-        src: _,
+        src: C,
         alt: b.intl.string(b.t.gAlJzc),
         width: u.TJ,
         height: u.TJ
@@ -211,19 +211,19 @@ let y = {
     })
   };
 
-function T(e) {
+function S(e) {
   let {
     guild: t
   } = e, [n, a] = (0, d.R)("report-to-mod-education-dismissed", !1), [o, u] = (0, d.R)("report-to-mod-education-expanded", !1), {
     transitions: m,
     setVisible: h
-  } = O(), g = w(null != o && o);
+  } = w(), g = T(null != o && o);
   return (i.useEffect(() => {
     n && h(!1)
   }, [n, h]), n) ? null : m((e, n) => n ? (0, r.jsxs)(s.animated.div, {
     style: e,
     onClick: () => u(!o),
-    className: l()(C.container, j.container, v.mainCard),
+    className: l()(_.container, j.container, v.mainCard),
     children: [(0, r.jsxs)("div", {
       className: j.inline,
       children: [(0, r.jsxs)("div", {
@@ -259,7 +259,7 @@ function T(e) {
       style: e,
       children: [(0, r.jsx)("hr", {
         className: j.separator
-      }), (0, r.jsx)(S, {
+      }), (0, r.jsx)(O, {
         guild: t
       })]
     }) : null)]

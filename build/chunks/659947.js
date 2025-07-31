@@ -51,9 +51,9 @@ function _(e, t) {
 }
 
 function j() {}
-let O = [h.h8.VOICE_CHANNEL];
+let E = [h.h8.VOICE_CHANNEL];
 
-function E(e) {
+function O(e) {
   e.setOptions({
     voiceChannelGuildFilter: null
   }), e.setLimit(1 / 0)
@@ -164,8 +164,8 @@ function I(e) {
     queryResults: y
   } = (0, o.Z)({
     visible: !0,
-    autocompleterResultTypes: O,
-    autocompleterBeforeCreateSearchContext: E
+    autocompleterResultTypes: E,
+    autocompleterBeforeCreateSearchContext: O
   }), A = function(e) {
     let t = "" !== e,
       n = (0, s.Wu)([m.ZP, u.Z, g.Z], () => {

@@ -59,7 +59,7 @@ function Z(e, t, n) {
 }
 
 function T(e, t) {
-  i.Z.startEditMessage(e.id, t.id, t.content)
+  i.Z.startEditMessageRecord(e.id, t)
 }
 
 function I(e, t) {

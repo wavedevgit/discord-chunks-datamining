@@ -56,7 +56,7 @@ function y(e) {
       className: E.footerWarningWrapper,
       children: [(0, l.jsxs)("div", {
         className: E.footerButtons,
-        children: [(0, l.jsx)(d.Z, {
+        children: [(0, l.jsx)(d.ZP, {
           innerClassName: E.messageInput,
           onChange: F,
           placeholder: b.intl.string(b.t.ZroO3N),

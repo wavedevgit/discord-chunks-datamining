@@ -20,8 +20,8 @@ var i = n(255367),
   x = n(82659),
   _ = n(369585),
   j = n(103866),
-  O = n(213734),
-  E = n(37148),
+  E = n(213734),
+  O = n(37148),
   C = n(907862),
   v = n(466590),
   S = n(481060),
@@ -780,8 +780,8 @@ function ed() {
 }
 
 function eu() {
-  let [e, t] = r.useState(!1), [n, s] = r.useState(!1), [a, l] = r.useState(!1), [o, c] = r.useState(!1), [d, u] = r.useState(!1), [m, p] = r.useState(!1), [g, h] = r.useState(!1), [f, b] = r.useState(!1), [x, _] = r.useState(!1), [j, O] = r.useState(!1), [E, T] = r.useState(!1), [N, I] = r.useState(!1), [y, A] = r.useState(!1), [P, R] = r.useState(!1), [D, Z] = r.useState(!1), [w, k] = r.useState(!1), [L, B] = r.useState(!1), [U, V] = r.useState(!1), [z, W] = r.useState(!1), Y = r.useRef(null), K = r.useRef(null), q = r.useRef(null), X = r.useRef(null), J = r.useRef(null), Q = r.useRef(null), $ = r.useRef(null), ee = r.useRef(null), et = r.useRef(null), en = r.useRef(null), ei = r.useRef(null), er = r.useRef(null), es = r.useRef(null), ea = r.useRef(null), el = r.useRef(null), eo = r.useRef(null), ec = r.useRef(null), ed = r.useRef(null), eu = r.useRef(null), em = r.useCallback(() => {
-    t(!1), s(!1), l(!1), c(!1), u(!1), p(!1), h(!1), b(!1), _(!1), O(!1), T(!1), I(!1), A(!1), R(!1), Z(!1), k(!1), B(!1), V(!1), W(!1)
+  let [e, t] = r.useState(!1), [n, s] = r.useState(!1), [a, l] = r.useState(!1), [o, c] = r.useState(!1), [d, u] = r.useState(!1), [m, p] = r.useState(!1), [g, h] = r.useState(!1), [f, b] = r.useState(!1), [x, _] = r.useState(!1), [j, E] = r.useState(!1), [O, T] = r.useState(!1), [N, I] = r.useState(!1), [y, A] = r.useState(!1), [P, R] = r.useState(!1), [D, Z] = r.useState(!1), [w, k] = r.useState(!1), [L, B] = r.useState(!1), [U, V] = r.useState(!1), [z, W] = r.useState(!1), Y = r.useRef(null), K = r.useRef(null), q = r.useRef(null), X = r.useRef(null), J = r.useRef(null), Q = r.useRef(null), $ = r.useRef(null), ee = r.useRef(null), et = r.useRef(null), en = r.useRef(null), ei = r.useRef(null), er = r.useRef(null), es = r.useRef(null), ea = r.useRef(null), el = r.useRef(null), eo = r.useRef(null), ec = r.useRef(null), ed = r.useRef(null), eu = r.useRef(null), em = r.useCallback(() => {
+    t(!1), s(!1), l(!1), c(!1), u(!1), p(!1), h(!1), b(!1), _(!1), E(!1), T(!1), I(!1), A(!1), R(!1), Z(!1), k(!1), B(!1), V(!1), W(!1)
   }, []);
   return (0, i.jsxs)("div", {
     className: M.section,
@@ -984,7 +984,7 @@ function eu() {
       }]
     }), (0, i.jsx)(C.J2, {
       targetElementRef: ei,
-      shouldShow: E,
+      shouldShow: O,
       onRequestClose: em,
       caretConfig: {
         position: "bottom",
@@ -1332,7 +1332,7 @@ function eu() {
           text: "Left Center",
           buttonRef: en,
           onClick: () => {
-            em(), O(!0)
+            em(), E(!0)
           }
         })]
       })]
@@ -1958,7 +1958,7 @@ function eb(e) {
     onClose: n,
     children: [(0, i.jsx)("div", {
       className: M.modalOutlines,
-      children: (0, i.jsx)(E.x, {
+      children: (0, i.jsx)(O.x, {
         title: "Demo Modal",
         subtitle: "The ModalHeader can have leading and trailing items on either side of the text",
         leading: (0, i.jsx)(r, {}),
@@ -1976,7 +1976,7 @@ function eb(e) {
       })
     }), (0, i.jsx)("div", {
       className: M.modalOutlines,
-      children: (0, i.jsx)(O.m, {
+      children: (0, i.jsx)(E.m, {
         children: (0, i.jsx)(r, {
           children: "This is the ModalFooter"
         })
@@ -2010,7 +2010,7 @@ function ex(e) {
     transitionState: t,
     onClose: n,
     size: s,
-    children: [(0, i.jsx)(E.x, {
+    children: [(0, i.jsx)(O.x, {
       title: l,
       subtitle: c,
       alignCenter: u
@@ -2096,7 +2096,7 @@ function ex(e) {
           })
         })]
       })
-    }), h && (0, i.jsxs)(O.m, {
+    }), h && (0, i.jsxs)(E.m, {
       children: [(0, i.jsx)(S.X6q, {
         variant: "heading-lg/semibold",
         children: "Celebration Station"
@@ -2237,7 +2237,7 @@ function ej(e) {
   })
 }
 
-function eO(e) {
+function eE(e) {
   let {
     transitionState: t,
     onClose: s
@@ -2287,7 +2287,7 @@ function eO(e) {
   })
 }
 
-function eE(e) {
+function eO(e) {
   let {
     transitionState: t,
     onClose: n,
@@ -2308,7 +2308,7 @@ function eE(e) {
       text: "Open Next Modal",
       onClick: () => {
         let e = s + 1;
-        (0, S.h7j)(t => (0, i.jsx)(eE, W(z({}, t), {
+        (0, S.h7j)(t => (0, i.jsx)(eO, W(z({}, t), {
           modalCount: e
         })), {
           stackingBehavior: a
@@ -2423,13 +2423,13 @@ function eC() {
         variant: "primary",
         text: "Open expressive modal",
         onClick: () => {
-          (0, S.h7j)(e => (0, i.jsx)(eO, z({}, e)))
+          (0, S.h7j)(e => (0, i.jsx)(eE, z({}, e)))
         }
       }), (0, i.jsx)(S.zxk, {
         variant: "primary",
         text: "Open Mana modal stacking demo",
         onClick: () => {
-          (0, S.h7j)(e => (0, i.jsx)(eE, z({}, e)))
+          (0, S.h7j)(e => (0, i.jsx)(eO, z({}, e)))
         }
       })]
     })]

@@ -21,7 +21,7 @@ var i = n(255367),
   _ = n(346537),
   j = n(830318);
 
-function O(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -40,7 +40,7 @@ function O(e) {
   return e
 }
 
-function E(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -79,7 +79,7 @@ let C = {
     }, G = (e, t) => {
       let n = V(t);
       null != n && (0, f.i0)(n, t => {
-        w(i => E(O({}, i), {
+        w(i => O(E({}, i), {
           [e]: (0, f.z)(t, n)
         }))
       })
@@ -90,7 +90,7 @@ let C = {
           let r = [...i],
             s = i[t];
           if (null == s) return i;
-          let a = O({}, s);
+          let a = E({}, s);
           return null == a.randomizedSources && (a.randomizedSources = []), a.randomizedSources.push({
             src: e,
             filename: n.name
@@ -98,7 +98,7 @@ let C = {
         })
       })
     }, H = e => {
-      w(t => E(O({}, t), {
+      w(t => O(E({}, t), {
         [e]: null
       }))
     };
@@ -117,7 +117,7 @@ let C = {
         let [t, n] = e;
         if (null != n) {
           let e = (0, f.$j)(n.base64);
-          n.src = e, k.current.push(e), w(e => E(O({}, e), {
+          n.src = e, k.current.push(e), w(e => O(E({}, e), {
             [t]: n
           }))
         }
@@ -280,9 +280,9 @@ let C = {
                   text: "Download Timing Config"
                 })
               }), (0, i.jsx)(u.Z, {
-                fileContents: () => JSON.stringify(E(O({}, t), {
+                fileContents: () => JSON.stringify(O(E({}, t), {
                   name: L,
-                  config: E(O({}, t.config), {
+                  config: O(E({}, t.config), {
                     effects: R,
                     stillFrames: Z
                   })

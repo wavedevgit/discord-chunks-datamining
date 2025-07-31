@@ -1,4 +1,4 @@
-/** Chunk was on 29410 **/
+/** Chunk was on 7210 **/
 A.exports = {
   modInfoItemContainer: "modInfoItemContainer__96c0b",
   modInfoItem: "modInfoItem__96c0b",

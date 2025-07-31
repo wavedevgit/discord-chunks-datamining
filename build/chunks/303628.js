@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => D
+  Z: () => L
 }), n(388685), n(539854);
 var r = n(255367),
   i = n(73800),
@@ -18,13 +18,14 @@ var r = n(255367),
   h = n(998698),
   m = n(117530),
   g = n(459273),
-  E = n(444282),
-  b = n(898463),
-  y = n(981631),
-  O = n(650514),
-  v = n(283574);
+  E = n(859235),
+  b = n(444282),
+  y = n(898463),
+  O = n(981631),
+  v = n(650514),
+  I = n(283574);
 
-function I(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -33,20 +34,20 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      I(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
 }
 
-function S(e, t) {
+function A(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -57,15 +58,15 @@ function S(e, t) {
   return n
 }
 
-function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+function N(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function N(e, t) {
+function C(e, t) {
   if (null == e) return {};
-  var n, r, i = C(e, t);
+  var n, r, i = R(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -73,28 +74,30 @@ function N(e, t) {
   return i
 }
 
-function C(e, t) {
+function R(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let R = [];
+let P = [];
 
-function P(e) {
+function w(e) {
   let {
     channelId: t,
-    type: n
-  } = e, a = (0, c.e7)([f.Z], () => f.Z.keyboardModeEnabled), I = (0, p.Z)("attachments", l.hy.HORIZONTAL), S = (0, c.e7)([m.Z], () => m.Z.getUploads(t, n.drafts.type)), {
-    isApplicationCommand: C,
-    commandOptions: P,
-    commandOptionStates: w
+    type: n,
+    ignoreFile: a,
+    smallAttachments: T = !1
+  } = e, A = (0, c.e7)([f.Z], () => f.Z.keyboardModeEnabled), R = (0, p.Z)("attachments", l.hy.HORIZONTAL), w = (0, c.e7)([m.Z], () => m.Z.getUploads(t, n.drafts.type)), {
+    isApplicationCommand: D,
+    commandOptions: L,
+    commandOptionStates: x
   } = (0, c.cj)([h.Z], () => {
     let e = h.Z.getActiveCommand(t);
     if (null == e) return {
       isApplicationCommand: !1,
-      commandOptions: R,
+      commandOptions: P,
       commandOptionStates: null
     };
     let n = h.Z.getOptionStates(t);
@@ -103,69 +106,72 @@ function P(e) {
       commandOptions: e.options,
       commandOptionStates: n
     }
-  }), D = i.useMemo(() => {
+  }), k = i.useMemo(() => {
     var e;
-    return null != (e = null == P ? void 0 : P.filter(e => {
+    return null != (e = null == L ? void 0 : L.filter(e => {
       var t;
-      return e.type === _.jw.ATTACHMENT && (null == w || null == (t = w[e.name]) ? void 0 : t.hasValue)
+      return e.type === _.jw.ATTACHMENT && (null == x || null == (t = x[e.name]) ? void 0 : t.hasValue)
     })) ? e : []
-  }, [P, w]), [L, x] = i.useState([]);
+  }, [L, x]), [M, j] = i.useState([]);
   i.useEffect(() => {
     let e = () => {
       d.Z.clearAll(t, n.drafts.type)
     };
     return u.Z.subscribe("APPLICATION_COMMAND_SET_ACTIVE_COMMAND", e), () => u.Z.unsubscribe("APPLICATION_COMMAND_SET_ACTIVE_COMMAND", e)
   }, [t, n]);
-  let k = i.useCallback(() => {
-    I.focusFirstVisibleItem()
-  }, [I]);
+  let U = i.useCallback(() => {
+    R.focusFirstVisibleItem()
+  }, [R]);
   (0, g.yp)({
-    event: y.CkL.FOCUS_ATTACHMENT_AREA,
-    handler: k
+    event: O.CkL.FOCUS_ATTACHMENT_AREA,
+    handler: U
   });
-  let M = {
-      isApplicationCommand: C,
-      previousUploadOptions: L,
-      uploadOptions: D
+  let G = {
+      isApplicationCommand: D,
+      previousUploadOptions: M,
+      uploadOptions: k
     },
-    j = i.useRef(M);
-  return (i.useEffect(() => {
-    j.current = M
+    B = i.useRef(G);
+  i.useEffect(() => {
+    B.current = G
   }), i.useEffect(() => {
     let {
       isApplicationCommand: e,
       previousUploadOptions: r,
       uploadOptions: i
-    } = j.current;
+    } = B.current;
     if (e) {
       let e = [];
       r.forEach(t => {
         i.some(e => t.name === e.name) || e.push(t)
       }), e.forEach(e => {
         d.Z.remove(t, e.name, n.drafts.type)
-      }), x(i)
+      }), j(i)
     }
-  }, [t, D.length, n]), !C && 0 === S.length || C && 0 === D.length) ? null : (0, r.jsx)(s.bG, {
-    navigator: I,
+  }, [t, k.length, n]);
+  let V = w.filter(e => e.filename !== a);
+  return !D && 0 === V.length || D && 0 === k.length ? null : (0, r.jsx)(s.bG, {
+    navigator: R,
     children: (0, r.jsx)(s.SJ, {
       children: e => {
         var {
           ref: i
-        } = e, s = N(e, ["ref"]);
-        return (0, r.jsx)("ul", A(T({
+        } = e, a = C(e, ["ref"]);
+        return (0, r.jsx)("ul", N(S({
           ref: i
-        }, s), {
-          className: o()(O.channelAttachmentArea, v.scrollbarGhost),
-          children: C ? D.map(e => (0, r.jsx)(E.Z, {
+        }, a), {
+          className: o()(v.channelAttachmentArea, I.scrollbarGhost),
+          children: D ? k.map(e => (0, r.jsx)(b.Z, {
             channelId: t,
-            keyboardModeEnabled: a,
+            keyboardModeEnabled: A,
             option: e
-          }, e.name)) : S.map(e => (0, r.jsx)(b.Z, {
+          }, e.name)) : V.map(e => (0, r.jsx)(y.Z, {
             channelId: t,
             draftType: n.drafts.type,
             upload: e,
-            keyboardModeEnabled: a,
-            clip: e.clip
+            keyboardModeEnabled: A,
+            clip: e.clip,
+            size: T ? E.q.SMALL : E.q.MEDIUM
           }, e.id))
         }))
       }
@@ -173,15 +179,19 @@ function P(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   let {
     channelId: t,
     type: n,
-    canAttachFiles: i
+    canAttachFiles: i,
+    ignoreFile: a,
+    smallAttachments: o = !1
   } = e;
-  return i ? (0, r.jsx)(P, {
+  return i ? (0, r.jsx)(w, {
     channelId: t,
-    type: n
+    type: n,
+    ignoreFile: a,
+    smallAttachments: o
   }) : null
 }
-let D = i.memo(w)
+let L = i.memo(D)

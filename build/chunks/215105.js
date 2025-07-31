@@ -132,7 +132,7 @@ function N(e) {
       className: o()(I.container, V, {
         [I.customProfileTheme]: null != D
       }),
-      children: (0, r.jsx)(d.Z, {
+      children: (0, r.jsx)(d.ZP, {
         parentModalKey: E,
         emojiPickerCloseOnModalOuterClick: !0,
         className: I.input,
