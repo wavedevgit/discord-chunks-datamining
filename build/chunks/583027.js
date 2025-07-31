@@ -6,8 +6,8 @@ t.d(n, {
 }), t(388685);
 var o = t(97519),
   r = t(296574),
-  a = t(731965);
-let i = (0, o.U)((0, r.XR)(() => ({
+  i = t(731965);
+let a = (0, o.U)((0, r.XR)(() => ({
   commandAnalyticsContext: new Map
 })));
 
@@ -18,13 +18,13 @@ function c(e) {
     sectionName: o
   } = e, {
     commandAnalyticsContext: r
-  } = i.getState(), c = r.get(n);
+  } = a.getState(), c = r.get(n);
   if (null == c || c.location !== t || c.sectionName !== o) {
     let e = new Map(r);
     e.set(n, {
       location: t,
       sectionName: o
-    }), (0, a.j)(() => i.setState({
+    }), (0, i.j)(() => a.setState({
       commandAnalyticsContext: e
     }))
   }
@@ -33,17 +33,17 @@ function c(e) {
 function l(e) {
   let {
     commandAnalyticsContext: n
-  } = i.getState();
+  } = a.getState();
   return n.get(e)
 }
 
 function d(e) {
   let {
     commandAnalyticsContext: n
-  } = i.getState();
+  } = a.getState();
   if (n.has(e)) {
     let t = new Map(n);
-    t.delete(e), (0, a.j)(() => i.setState({
+    t.delete(e), (0, i.j)(() => a.setState({
       commandAnalyticsContext: t
     }))
   }

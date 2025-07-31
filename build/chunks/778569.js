@@ -1,23 +1,23 @@
 /** Chunk was on 91396 **/
 t.d(n, {
-  Z: () => i
+  Z: () => a
 }), t(388685);
 var o = t(73800),
   r = t(81063);
-let a = ["embedded_cover", "embedded_background"];
+let i = ["embedded_cover", "embedded_background"];
 
-function i(e) {
+function a(e) {
   let {
     applicationId: n,
     size: t,
-    names: i = a
-  } = e, [c, l] = o.useState(null), [d, s] = o.useState(!0), p = (0, r.xF)(n, c, t), u = o.useRef(i);
+    names: a = i
+  } = e, [c, l] = o.useState(null), [d, s] = o.useState(!0), p = (0, r.xF)(n, c, t), b = o.useRef(a);
   return o.useEffect(() => {
-    u.current = i
+    b.current = a
   }), o.useEffect(() => {
     let {
       current: e
-    } = u;
+    } = b;
     null != n && (0, r.Vh)(n).then(n => {
       for (let [t, o] of(s(!1), Object.entries(n)))
         if (null != o && "" !== o.id && e.includes(o.name)) return void l(o.id)

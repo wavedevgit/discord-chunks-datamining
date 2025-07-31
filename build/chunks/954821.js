@@ -43,7 +43,7 @@ let _ = e => {
       listing: c,
       subscription: j,
       onClose: O
-    } = e, C = (0, m.Dt)(), E = (0, g.YB)(s), v = (null == E || null == (t = E.cover_image_asset) ? void 0 : t.application_id) != null ? (0, p._W)(E.cover_image_asset.application_id, E.cover_image_asset, 440) : void 0, {
+    } = e, E = (0, m.Dt)(), C = (0, g.YB)(s), v = (null == C || null == (t = C.cover_image_asset) ? void 0 : t.application_id) != null ? (0, p._W)(C.cover_image_asset.application_id, C.cover_image_asset, 440) : void 0, {
       analyticsLocations: S
     } = (0, u.ZP)(d.Z.GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL), {
       cancelSubscription: T,
@@ -59,7 +59,7 @@ let _ = e => {
     return (0, i.jsxs)(o.Y0X, {
       transitionState: n,
       className: x.__invalid_modal,
-      "aria-labelledby": C,
+      "aria-labelledby": E,
       parentComponent: "CancelSubscriptionModal",
       children: [(0, i.jsxs)("div", {
         children: [(0, i.jsx)("img", {
@@ -76,7 +76,7 @@ let _ = e => {
       }) : null, (0, i.jsxs)(o.hzk, {
         className: x.content,
         children: [(0, i.jsx)(o.X6q, {
-          id: C,
+          id: E,
           variant: "text-md/medium",
           className: x.title,
           children: b.intl.string(b.t.O6l5tL)

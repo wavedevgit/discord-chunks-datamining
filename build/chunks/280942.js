@@ -79,7 +79,7 @@ function h(e) {
     case c.O0b.PAUSED:
       _ === d.a$.NONE && (O.transfer.disabled = !0, O.transfer.subtext = u.intl.string(u.t.LiLRRU), (0, l.y)("guild_boost_slot_popout", j, _) || (O.cancel.subtext = u.intl.string(u.t["1ywaWF"]), O.cancel.disabled = !0, O.uncancel.disabled = !0))
   }(0, l.y)("guild_boost_slot_popout", j, _) && (O.cancel.subtext = u.intl.string(u.t.dq4vq6), O.cancel.disabled = !0, O.uncancel.disabled = !0);
-  let C = r.useMemo(() => b.isPausedOrPausePending && _ === d.a$.NONE ? (0, i.jsx)(s.sNh, {
+  let E = r.useMemo(() => b.isPausedOrPausePending && _ === d.a$.NONE ? (0, i.jsx)(s.sNh, {
     id: "manage-subscription",
     label: u.intl.string(u.t.obRG6e),
     action: () => a.Z.open(c.oAB.SUBSCRIPTIONS),
@@ -139,6 +139,6 @@ function h(e) {
       },
       disabled: O.cancel.disabled,
       color: "danger"
-    }), C]
+    }), E]
   })
 }

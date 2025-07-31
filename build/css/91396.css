@@ -1,6 +1,6 @@
 /**
   Module ID: 91396
-  Original File Name: 75f3791595b8e8fc
+  Original File Name: 6d22f0d45e2159ef
 **/
 .container__5f4c1 {
     background-color: var(--background-base-low);
@@ -261,10 +261,6 @@
     background-color: var(--background-modifier-active)
 }
 
-.command_c94584:active:has(.commandSentCTAButton_c94584:first-of-type:hover) {
-    background-color: var(--background-modifier-hover)
-}
-
 .commandTextContainer_c94584 {
     display: flex;
     flex-direction: column;
@@ -280,28 +276,6 @@
     gap: var(--space-4);
     padding: 2px 0;
     width: 350px
-}
-
-.commandTextPlaceholder_c94584 {
-    align-self: flex-start;
-    background-color: var(--background-mod-subtle);
-    border-radius: var(--radius-round)
-}
-
-.commandSentCTAButton_c94584 {
-    border-radius: var(--radius-xs);
-    padding: var(--space-8) var(--space-16)
-}
-
-.commandSentCTAButtonInner_c94584 {
-    align-items: center;
-    display: flex;
-    gap: var(--space-8)
-}
-
-.commandSentCTAButtonFocusBlock_c94584 {
-    display: flex;
-    width: 100%
 }
 
 .clickable__8c853 {
@@ -1326,4 +1300,4 @@
     width: var(--custom-app-launcher-width)
 }
 
-/*# sourceMappingURL=75f3791595b8e8fc.css.map*/
+/*# sourceMappingURL=6d22f0d45e2159ef.css.map*/

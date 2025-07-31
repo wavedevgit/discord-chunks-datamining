@@ -89,7 +89,7 @@ function z(e, t) {
 }
 var q = ((l = {}).ICON = "icon", l.ROW = "row", l.NO_BANNER = "no_banner", l.MEDIUM_BANNER = "medium_banner", l.LARGE_BANNER = "large_banner", l);
 
-function Y(e) {
+function X(e) {
   var t;
   let {
     application: n,
@@ -106,7 +106,7 @@ function Y(e) {
     overrideImageUrl: h,
     showsPromoted: v
   } = e, y = null != (t = (0, m.Z)(f)) ? t : f;
-  return (0, i.jsx)(X, {
+  return (0, i.jsx)(Y, {
     application: n,
     onClick: r,
     sectionName: c,
@@ -132,7 +132,7 @@ function Y(e) {
   })
 }
 
-function X(e) {
+function Y(e) {
   let {
     application: t,
     onClick: n,
@@ -506,7 +506,7 @@ function er(e) {
   let {
     onClickAppCard: t
   } = ei(e);
-  return (0, i.jsx)(Y, z(G({}, e), {
+  return (0, i.jsx)(X, z(G({}, e), {
     onClick: t
   }))
 }
@@ -551,7 +551,7 @@ function ea(e) {
       launchingComponentId: m,
       fetchesApplication: d
     });
-  return g === b.JS.START || g === b.JS.JOIN ? o ? (0, i.jsx)(Y, z(G({}, p), {
+  return g === b.JS.START || g === b.JS.JOIN ? o ? (0, i.jsx)(X, z(G({}, p), {
     sectionName: a,
     application: n,
     onClick: x,
@@ -566,7 +566,7 @@ function ea(e) {
     sectionName: a,
     application: n,
     location: l
-  })) : (0, i.jsx)(Y, z(G({}, p), {
+  })) : (0, i.jsx)(X, z(G({}, p), {
     sectionName: a,
     application: n,
     onClick: e => {

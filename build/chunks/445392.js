@@ -1,8 +1,8 @@
 /** Chunk was on 91396 **/
 var o, r = t(442837),
-  a = t(570140);
+  i = t(570140);
 
-function i(e, n, t) {
+function a(e, n, t) {
   return n in e ? Object.defineProperty(e, n, {
     value: t,
     enumerable: !0,
@@ -27,7 +27,7 @@ class d extends(o = r.ZP.PersistedStore) {
     return null == l.lastUsedTimeMs || null == l.lastUsedCommandId ? null : (e > l.lastUsedTimeMs + c && (l.lastUsedCommandId = null, l.lastUsedTimeMs = null), l.lastUsedCommandId)
   }
 }
-i(d, "displayName", "AppLauncherLastUsedCommandStore"), i(d, "persistKey", "AppLauncherLastUsedCommandStore"), new d(a.Z, {
+a(d, "displayName", "AppLauncherLastUsedCommandStore"), a(d, "persistKey", "AppLauncherLastUsedCommandStore"), new d(i.Z, {
   APPLICATION_COMMAND_USED: function(e) {
     let {
       command: n

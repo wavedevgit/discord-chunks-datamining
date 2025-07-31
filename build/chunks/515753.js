@@ -24,8 +24,8 @@ var i = n(255367),
   _ = n(956221),
   j = n(771173),
   O = n(385499),
-  C = n(570908),
-  E = n(702321),
+  E = n(570908),
+  C = n(702321),
   v = n(201895),
   S = n(43267),
   T = n(933557),
@@ -205,7 +205,7 @@ let ei = X.ZP.getEnableHardwareAcceleration() ? p.Xo$ : p.qEK,
           },
           className: $.link
         }, j), {
-          children: [(0, i.jsx)(C.Z, {
+          children: [(0, i.jsx)(E.Z, {
             muted: !1,
             avatar: (0, i.jsx)(r, {
               size: "refresh_sm",
@@ -244,13 +244,13 @@ function ed(e) {
     userId: null == u ? void 0 : u.id,
     size: p.EFr.SIZE_32,
     animateOnHover: !(l || X || ed || em)
-  }), ej = t.isMultiUserDM(), eO = t.isSystemDM(), eC = (0, U.Q)(), eE = !ej && !eO && t.type === J.d4z.DM, ev = eE && (null == u ? void 0 : u.primaryGuild) != null, eS = (0, m.e7)([Y.ZP], () => Y.ZP.isChannelMuted(t.getGuildId(), t.id)), {
+  }), ej = t.isMultiUserDM(), eO = t.isSystemDM(), eE = (0, U.Q)(), eC = !ej && !eO && t.type === J.d4z.DM, ev = eC && (null == u ? void 0 : u.primaryGuild) != null, eS = (0, m.e7)([Y.ZP], () => Y.ZP.isChannelMuted(t.getGuildId(), t.id)), {
     ignored: eT,
     blocked: eN
   } = (0, m.cj)([z.Z], () => ({
     ignored: z.Z.isIgnored(t.getRecipientId()),
     blocked: z.Z.isBlocked(t.getRecipientId())
-  })), eI = eE && eT, ey = eE && eN, eA = (eS || eI || ey) && !(l || X), eP = (0, m.e7)([H.ZP], () => H.ZP.getMentionCount(t.id) > 0), eR = (0, T.ZP)(t), eD = (0, m.e7)([P.Z], () => P.Z.isFavorite(t.id)), {
+  })), eI = eC && eT, ey = eC && eN, eA = (eS || eI || ey) && !(l || X), eP = (0, m.e7)([H.ZP], () => H.ZP.getMentionCount(t.id) > 0), eR = (0, T.ZP)(t), eD = (0, m.e7)([P.Z], () => P.Z.isFavorite(t.id)), {
     dotsInsteadOfCloseButton: eZ
   } = D.Z.useExperiment({
     location: "private_channel"
@@ -324,7 +324,7 @@ function ed(e) {
     })
   }, eW = () => t.isSystemDM() ? (0, i.jsx)("div", {
     className: $.subtext,
-    children: (0, E.Z)(t.id) ? Q.intl.string(Q.t.FL5T09) : Q.intl.string(Q.t.NnY5lZ)
+    children: (0, C.Z)(t.id) ? Q.intl.string(Q.t.FL5T09) : Q.intl.string(Q.t.NnY5lZ)
   }) : t.isMultiUserDM() ? (0, i.jsx)("div", {
     className: $.subtext,
     children: Q.intl.format(Q.t.CxSA5O, {
@@ -416,7 +416,7 @@ function ed(e) {
           })
         }) : null, (0, i.jsxs)(p.vjx, {
           className: a()($.interactive, {
-            [$.interactiveSystemDM]: eC && eO,
+            [$.interactiveSystemDM]: eE && eO,
             [$.interactiveSelected]: l || em
           }),
           as: "div",
@@ -440,7 +440,7 @@ function ed(e) {
               unread: eP
             })
           }, r), {
-            children: (0, i.jsx)(C.Z, {
+            children: (0, i.jsx)(E.Z, {
               ref: eX,
               avatar: eY(),
               highlighted: eP && !eA,

@@ -1,56 +1,62 @@
 /** Chunk was on 22243 **/
 n.d(t, {
-  e: () => b
+  e: () => _
 });
 var i = n(255367),
   r = n(73800),
-  s = n(920155),
-  a = n(744399),
-  l = n(966902),
-  o = n(237872),
-  c = n(562618),
-  d = n(230711),
-  u = n(906732),
-  m = n(829716),
-  p = n(981631),
-  g = n(921944),
-  h = n(698282),
-  f = n(388032);
+  s = n(793030),
+  a = n(920155),
+  l = n(744399),
+  o = n(966902),
+  c = n(237872),
+  d = n(562618),
+  u = n(230711),
+  m = n(906732),
+  p = n(829716),
+  g = n(981631),
+  h = n(921944),
+  f = n(698282),
+  b = n(388032),
+  x = n(481916);
 
-function b(e) {
+function _(e) {
   let {
     markAsDismissed: t,
     targetElementRef: n,
-    children: b
+    children: _
   } = e, {
-    analyticsLocations: x
-  } = (0, u.ZP)(), _ = (0, r.useCallback)(() => {
-    t(g.L.TAKE_ACTION), d.Z.open(p.oAB.PROFILE_CUSTOMIZATION, null, {
-      analyticsLocations: x
-    }), (0, m.I)({
-      analyticsLocations: x
+    analyticsLocations: j
+  } = (0, m.ZP)(), O = (0, r.useCallback)(() => {
+    t(h.L.TAKE_ACTION), u.Z.open(g.oAB.PROFILE_CUSTOMIZATION, null, {
+      analyticsLocations: j
+    }), (0, p.I)({
+      analyticsLocations: j
     })
-  }, [t, x]), j = (0, r.useCallback)(() => {
-    t(g.L.USER_DISMISS)
+  }, [t, j]), E = (0, r.useCallback)(() => {
+    t(h.L.USER_DISMISS)
   }, [t]);
   return (0, i.jsxs)(i.Fragment, {
-    children: [b, (0, i.jsxs)(s.m, {
+    children: [_, (0, i.jsxs)(a.m, {
       targetElementRef: n,
       shouldShow: !0,
       align: "right",
       position: "top",
-      children: [(0, i.jsx)(o.u, {
-        onClick: j
-      }), (0, i.jsx)(c.Y, {
-        title: f.intl.string(h.default["1AE46+"]),
-        body: f.intl.string(h.default.cNc1g4)
-      }), (0, i.jsx)(a.k, {
+      children: [(0, i.jsx)(c.u, {
+        onClick: E
+      }), (0, i.jsx)(d.Y, {
+        title: b.intl.string(f.default["1AE46+"])
+      }), (0, i.jsxs)(s.xv, {
+        variant: "text-sm/normal",
+        color: "text-secondary",
+        className: x.subtitle,
+        children: [b.intl.string(f.default.cNc1g4), (0, i.jsx)("br", {}), b.intl.string(b.t["4JNXHB"])]
+      }), (0, i.jsx)(l.k, {
         actions: [{
-          text: f.intl.string(f.t.uw9zIy),
+          text: b.intl.string(b.t.uw9zIy),
           variant: "primary",
-          onClick: _
+          onClick: O
         }]
-      }), (0, i.jsx)(l.$, {
+      }), (0, i.jsx)(o.$, {
         caretConfig: {
           position: "bottom",
           align: "center"

@@ -173,7 +173,7 @@ function O() {
             let {
               url: t
             } = e;
-            return (0, i.jsx)(C, {
+            return (0, i.jsx)(E, {
               src: t,
               onSetStatic: w,
               removeAsset: L
@@ -186,7 +186,7 @@ function O() {
             darkBackground: e,
             lightBackground: e
           })
-        }), (0, i.jsx)(E, {
+        }), (0, i.jsx)(C, {
           label: "set",
           onClick: () => {}
         })]
@@ -195,7 +195,7 @@ function O() {
   })
 }
 
-function C(e) {
+function E(e) {
   let {
     src: t,
     onSetStatic: n,
@@ -228,7 +228,7 @@ function C(e) {
   })
 }
 
-function E(e) {
+function C(e) {
   let {
     label: t,
     onClick: n

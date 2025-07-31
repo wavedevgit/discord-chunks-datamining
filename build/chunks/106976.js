@@ -121,6 +121,7 @@ async function f(t) {
       if (e.subscription_plans[0].id === t) return r.GZ(e.id, void 0, void 0, !0)
     })), s(o)
   } catch (n) {
-    "status" in n && 429 === n.status && e < 10 && await f(t, e++)
+    if ("status" in n && 429 === n.status && e < 10) await f(t, ++e);
+    else throw n
   }
 }

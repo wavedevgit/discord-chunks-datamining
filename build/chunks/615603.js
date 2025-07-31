@@ -21,8 +21,8 @@ var i = n(255367),
   _ = n(594174),
   j = n(78839),
   O = n(267642),
-  C = n(63063),
-  E = n(74538),
+  E = n(63063),
+  C = n(74538),
   v = n(283029),
   S = n(357956),
   T = n(275909),
@@ -73,7 +73,7 @@ function D(e) {
     useReducedMotion: o,
     boostManagementDisabledFromFractionalPremium: u
   } = e, m = r.useMemo(() => null != t.cooldownEndsAt ? new Date(t.cooldownEndsAt) : null, [t]), g = (0, O.tl)(t), h = (null == l ? void 0 : l.isPaused) === !0 || u, f = u ? y.intl.format(y.t.hshta2, {
-    helpCenterLink: C.Z.getArticleURL(N.BhN.FRACTIONAL_PREMIUM_ABOUT)
+    helpCenterLink: E.Z.getArticleURL(N.BhN.FRACTIONAL_PREMIUM_ABOUT)
   }) : y.intl.string(y.t.mOWsFx);
   return (0, i.jsxs)("li", {
     className: A.unappliedGuildBoostSlot,
@@ -178,7 +178,7 @@ let k = function(e) {
         allGuildBoostsAreOnCooldown: r
       }
     }, [s]),
-    H = null != c ? E.ZP.getNumIncludedPremiumGuildSubscriptionSlots(c.planId) : 0,
+    H = null != c ? C.ZP.getNumIncludedPremiumGuildSubscriptionSlots(c.planId) : 0,
     z = Math.max(0, H - M.length),
     W = V > H,
     Y = H === s.length,
@@ -198,7 +198,7 @@ let k = function(e) {
       numUnappliedGuildBoostSlots: J
     }) : y.intl.formatToPlainString(F ? y.t["3DW6DQ"] : y.t.BPadnJ, {
       numUnappliedGuildBoostSlots: J
-    }), E.ZP.isPremium(T)) {
+    }), C.ZP.isPremium(T)) {
     let e = (e, t) => (0, i.jsx)(d.P3F, {
       className: A.headerLearnMoreLink,
       tag: "span",
@@ -223,7 +223,7 @@ let k = function(e) {
     subscriptionIsPausedOrPausePending: !0,
     fractionalPremiumBlocksBoosting: !0
   }, () => y.intl.format(y.t["4RgA6O"], {
-    helpCenterLink: C.Z.getArticleURL(N.BhN.FRACTIONAL_PREMIUM_ABOUT)
+    helpCenterLink: E.Z.getArticleURL(N.BhN.FRACTIONAL_PREMIUM_ABOUT)
   })).with({
     subscriptionIsPausedOrPausePending: !0,
     fractionalPremiumBlocksBoosting: !1

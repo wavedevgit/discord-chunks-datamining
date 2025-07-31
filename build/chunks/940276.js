@@ -75,7 +75,7 @@ let b = function() {
     isActivityRestricted: _,
     numActivityRestrictedGuilds: j,
     numTotalGuilds: O
-  } = (0, u.F)(), C = (0, r.useId)();
+  } = (0, u.F)(), E = (0, r.useId)();
   return (0, i.jsxs)("div", {
     className: h.wrapper,
     children: [(0, i.jsxs)("div", {
@@ -106,7 +106,7 @@ let b = function() {
         placeholder: g.intl.string(g.t["H+nRY2"]),
         "aria-label": g.intl.string(g.t["5h0QOD"]),
         inputProps: {
-          "aria-controls": C,
+          "aria-controls": E,
           "aria-expanded": !0
         }
       }), e.length > 0 && (0, i.jsxs)("div", {
@@ -154,7 +154,7 @@ let b = function() {
       })
     }), (0, i.jsxs)("ul", {
       className: h.guildsList,
-      id: C,
+      id: E,
       "aria-label": g.intl.string(g.t["7hB4kp"]),
       children: [0 === e.length && (0, i.jsx)("div", {
         className: h.noResultsContainer,

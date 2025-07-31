@@ -1,6 +1,6 @@
 /**
   Module ID: 22243
-  Original File Name: c60e8c3900f60696
+  Original File Name: 0a4e5c80c78df777
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -1849,6 +1849,10 @@ h1.title_feb59c,h2.title_feb59c {
 .caret--left__6ec79.caret--custom__6ec79,.caret--right__6ec79.caret--custom__6ec79 {
     margin-top: calc(var(--custom-caret-offset-y) - var(--custom-caret-half-height));
     top: 50%
+}
+
+.subtitle_e15fb1 {
+    margin-top: -8px
 }
 
 .media__9c640 {
@@ -19920,4 +19924,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=c60e8c3900f60696.css.map*/
+/*# sourceMappingURL=0a4e5c80c78df777.css.map*/

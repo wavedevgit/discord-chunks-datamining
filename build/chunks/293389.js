@@ -21,8 +21,8 @@ var i = n(255367),
   _ = n(626135),
   j = n(251625),
   O = n(358085),
-  C = n(210887),
-  E = n(981631),
+  E = n(210887),
+  C = n(981631),
   v = n(388032),
   S = n(443474),
   T = n(20795),
@@ -61,8 +61,8 @@ function P(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let R = l.ZP.connectStores([C.Z], () => ({
-    theme: C.Z.theme
+let R = l.ZP.connectStores([E.Z], () => ({
+    theme: E.Z.theme
   }))(d.ubH),
   D = (0, O.isWindows)();
 
@@ -118,7 +118,7 @@ function w(e) {
     rawGame: n,
     nowPlaying: s = !1,
     isOverride: c
-  } = e, h = (0, l.cj)([g.ZP, b.Z, x.Z], () => (0, g.FZ)(n, g.ZP, b.Z, x.Z)), [j, O] = r.useState(!1), [C, T] = r.useState(null != (t = h.name) ? t : "???"), y = a()(N.flexCenter, {
+  } = e, h = (0, l.cj)([g.ZP, b.Z, x.Z], () => (0, g.FZ)(n, g.ZP, b.Z, x.Z)), [j, O] = r.useState(!1), [E, T] = r.useState(null != (t = h.name) ? t : "???"), y = a()(N.flexCenter, {
     [S.game]: !s,
     [S.activeGame]: s,
     [I.card]: !s,
@@ -132,7 +132,7 @@ function w(e) {
   function Z() {
     if (j) return;
     let e = null != h.id ? b.Z.getDetectableGame(h.id) : null;
-    _.default.track(E.rMx.USER_SETTINGS_REPORT_INCORRECT_GAME_DETECTION, {
+    _.default.track(C.rMx.USER_SETTINGS_REPORT_INCORRECT_GAME_DETECTION, {
       application_id: null == e ? void 0 : e.id,
       game_name: h.name
     }), (0, d.showToast)((0, d.createToast)(v.intl.formatToPlainString(v.t["6klMOj"], {
@@ -167,9 +167,9 @@ function w(e) {
         className: a()(S.gameName, S.gameNameInput),
         type: "text",
         maxLength: 128,
-        value: C,
+        value: E,
         onBlur: function() {
-          h.name !== C && u.Z.editName(h, C)
+          h.name !== E && u.Z.editName(h, E)
         },
         onKeyDown: function(e) {
           13 === e.keyCode && (e.currentTarget.blur(), e.preventDefault())

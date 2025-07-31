@@ -1,13 +1,13 @@
 /** Chunk was on 91396 **/
 t.d(n, {
-  Z: () => i
+  Z: () => a
 });
 var o = t(255367),
   r = t(73800),
-  a = t(325767);
-let i = r.forwardRef(function(e, n) {
+  i = t(325767);
+let a = r.forwardRef(function(e, n) {
   var t, r, {
-      width: i = 24,
+      width: a = 24,
       height: c = 24,
       color: l = "currentColor",
       foreground: d
@@ -17,13 +17,13 @@ let i = r.forwardRef(function(e, n) {
       var t, o, r = function(e, n) {
         if (null == e) return {};
         var t, o, r = {},
-          a = Object.keys(e);
-        for (o = 0; o < a.length; o++) t = a[o], n.indexOf(t) >= 0 || (r[t] = e[t]);
+          i = Object.keys(e);
+        for (o = 0; o < i.length; o++) t = i[o], n.indexOf(t) >= 0 || (r[t] = e[t]);
         return r
       }(e, n);
       if (Object.getOwnPropertySymbols) {
-        var a = Object.getOwnPropertySymbols(e);
-        for (o = 0; o < a.length; o++) t = a[o], !(n.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (r[t] = e[t])
+        var i = Object.getOwnPropertySymbols(e);
+        for (o = 0; o < i.length; o++) t = i[o], !(n.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (r[t] = e[t])
       }
       return r
     }(e, ["width", "height", "color", "foreground"]);
@@ -44,9 +44,9 @@ let i = r.forwardRef(function(e, n) {
       })
     }
     return e
-  }({}, (0, a.Z)(s)), r = r = {
+  }({}, (0, i.Z)(s)), r = r = {
     ref: n,
-    width: i,
+    width: a,
     height: c,
     viewBox: "0 0 24 24",
     children: (0, o.jsx)("path", {

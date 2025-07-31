@@ -1,6 +1,6 @@
 /** Chunk was on 22243 **/
 n.d(t, {
-  Z: () => C
+  Z: () => E
 });
 var i = n(255367);
 n(73800);
@@ -47,7 +47,7 @@ function O() {
   })
 }
 
-function C() {
+function E() {
   return (0, s.ZP)(() => {
     (0, r.I)(), (0, l.A)()
   }), (0, i.jsxs)(o.N, {

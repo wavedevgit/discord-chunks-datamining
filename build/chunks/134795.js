@@ -29,7 +29,7 @@ function g(e) {
     withHighlight: j = !1
   } = e, {
     newestAnalyticsLocation: O
-  } = (0, o.ZP)(), C = j ? l.gtL : a.zx;
+  } = (0, o.ZP)(), E = j ? l.gtL : a.zx;
   return (0, i.jsx)(d.Z, {
     className: h,
     title: m.intl.string(m.t.Vgdusr),
@@ -39,7 +39,7 @@ function g(e) {
     forcedDivider: _,
     children: (0, i.jsxs)("div", {
       className: p.buttonsContainer,
-      children: [(0, i.jsx)(C, {
+      children: [(0, i.jsx)(E, {
         className: s()({
           [p.buttonHighlighted]: j
         }),
