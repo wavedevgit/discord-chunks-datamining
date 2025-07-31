@@ -1,20 +1,20 @@
-/** Chunk was on 63774 **/
-n.d(t, {
-  t: () => a
+/** Chunk was on 57539 **/
+n.d(e, {
+  t: () => o
 });
-var r = n(255367);
+var i = n(255367);
 n(73800);
-var i = n(481060),
+var a = n(481060),
   l = n(820644);
 
-function a(e) {
+function o(t) {
   let {
-    text: t,
+    text: e,
     id: n
-  } = e;
-  (0, i.showToast)((0, i.createToast)(t, i.ToastType.CUSTOM, {
-    component: (0, r.jsx)(l.o, {
-      text: t
+  } = t;
+  (0, a.showToast)((0, a.createToast)(e, a.ToastType.CUSTOM, {
+    component: (0, i.jsx)(l.o, {
+      text: e
     }, n)
   }))
 }

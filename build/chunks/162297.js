@@ -1,4 +1,4 @@
-/** Chunk was on 63774 **/
+/** Chunk was on 36672 **/
 n.d(t, {
   Z: () => f
 }), n(388685);
@@ -24,12 +24,12 @@ function f(e) {
     customInstallUrl: n.customInstallUrl,
     installParams: n.installParams,
     integrationTypesConfig: n.integrationTypesConfig
-  })) ? (0, r.jsx)(_, {
+  })) ? (0, r.jsx)(g, {
     application: n
   }) : null
 }
 
-function _(e) {
+function g(e) {
   let {
     application: t
   } = e, n = i.useCallback(() => {

@@ -1,4 +1,4 @@
-/** Chunk was on 63774 **/
+/** Chunk was on 36672 **/
 e.exports = {
   thankYouCard: "thankYouCard_b851f5",
   thankYouText: "thankYouText_b851f5",

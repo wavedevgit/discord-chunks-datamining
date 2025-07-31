@@ -1,4 +1,4 @@
-/** Chunk was on 63774 **/
+/** Chunk was on 36672 **/
 e.exports = {
   infoWrapper: "infoWrapper_c44293",
   activityPresenceDetailsContainer: "activityPresenceDetailsContainer_c44293",

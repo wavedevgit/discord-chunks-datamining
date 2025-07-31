@@ -1,7 +1,7 @@
-/** Chunk was on 63774 **/
+/** Chunk was on 36672 **/
 n.d(t, {
   W: () => I,
-  u: () => y
+  u: () => x
 }), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685);
 var r, i = n(255367),
   l = n(73800),
@@ -14,15 +14,15 @@ var r, i = n(255367),
   p = n(607070),
   m = n(206295),
   f = n(70097),
-  _ = n(314897),
-  g = n(572004),
+  g = n(314897),
+  _ = n(572004),
   h = n(914498),
   b = n(217702),
   E = n(388032),
   C = n(383195);
 
-function O() {
-  return (O = Object.assign || function(e) {
+function v() {
+  return (v = Object.assign || function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = arguments[t];
       for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -31,7 +31,7 @@ function O() {
   }).apply(this, arguments)
 }
 
-function v(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -49,9 +49,9 @@ function v(e) {
   }
   return e
 }
-var y = ((r = {})[r.BOT = 0] = "BOT", r[r.ACTIVITY = 1] = "ACTIVITY", r);
+var x = ((r = {})[r.BOT = 0] = "BOT", r[r.ACTIVITY = 1] = "ACTIVITY", r);
 
-function x(e) {
+function y(e) {
   let {
     onClick: t,
     children: n,
@@ -72,7 +72,7 @@ function x(e) {
 function I(e) {
   var t, n, r, a;
   let {
-    title: y,
+    title: x,
     header: I,
     footer: j,
     info: S,
@@ -90,7 +90,7 @@ function I(e) {
   D = {
     id: null != (n = null == (t = D) ? void 0 : t.id) ? n : "0",
     linkType: null != (r = null == t ? void 0 : t.linkType) ? r : h.Un.UNKNOWN,
-    referrerId: null != (a = null == t ? void 0 : t.referrerId) ? a : _.default.getId(),
+    referrerId: null != (a = null == t ? void 0 : t.referrerId) ? a : g.default.getId(),
     activityCustomId: null == t ? void 0 : t.activityCustomId,
     onView: null == t ? void 0 : t.onView,
     onLinkCopied: null == t ? void 0 : t.onLinkCopied
@@ -98,18 +98,18 @@ function I(e) {
   let {
     primaryColor: k,
     secondaryColor: U
-  } = (0, m.Z)(null != A ? A : T), F = "linear-gradient(45deg, ".concat(k, ", ").concat(U, ")"), B = (0, s.e7)([p.Z], () => p.Z.useReducedMotion), G = l.useRef(!1), H = (0, d.O)(e => {
+  } = (0, m.Z)(null != A ? A : T), F = "linear-gradient(45deg, ".concat(k, ", ").concat(U, ")"), B = (0, s.e7)([p.Z], () => p.Z.useReducedMotion), G = l.useRef(!1), V = (0, d.O)(e => {
     if (!1 === G.current && e) {
       var t;
       null == D || null == (t = D.onView) || t.call(D), (0, h.GF)(D.id, D.linkType, D.referrerId, D.activityCustomId), G.current = !0
     }
-  }, void 0), V = g.wS && null != w ? (0, i.jsx)(c.zx, {
+  }, void 0), H = _.wS && null != w ? (0, i.jsx)(c.zx, {
     look: c.zx.Looks.BLANK,
     size: c.zx.Sizes.ICON,
     "aria-label": E.intl.string(E.t.WqhZsr),
     className: C.linkIcon,
     onClick: () => {
-      (0, g.JG)(w, () => (0, u.showToast)((0, u.createToast)(E.intl.string(E.t["L/PwZW"]), u.ToastType.SUCCESS))), (0, h.Yu)(D.id, D.linkType)
+      (0, _.JG)(w, () => (0, u.showToast)((0, u.createToast)(E.intl.string(E.t["L/PwZW"]), u.ToastType.SUCCESS))), (0, h.Yu)(D.id, D.linkType)
     },
     children: (0, i.jsx)(u.xPt, {
       size: "xs",
@@ -136,9 +136,9 @@ function I(e) {
     }
   }, [M, D]);
   return (0, i.jsxs)("div", {
-    ref: H,
+    ref: V,
     className: C.embed,
-    children: [Y && (0, i.jsxs)(x, {
+    children: [Y && (0, i.jsxs)(y, {
       onClick: ee,
       className: o()(C.bannerWrapper, X, {
         [C.showVideoOnFocus]: K
@@ -174,10 +174,10 @@ function I(e) {
             variant: "text-sm/semibold",
             color: "none",
             children: I
-          }), null != V ? V : z]
+          }), null != H ? H : z]
         }), (0, i.jsxs)("div", {
           className: C.contentAndCopyButtonWrapper,
-          children: [(0, i.jsxs)(x, {
+          children: [(0, i.jsxs)(y, {
             onClick: $,
             className: o()(C.contentWrapper, {
               [C.contentWrapperClickable]: null != $
@@ -194,13 +194,13 @@ function I(e) {
                 color: "none",
                 lineClamp: 1,
                 className: C.contentTitle,
-                children: y
+                children: x
               }), (0, i.jsx)("div", {
                 className: C.contentInfoWrapper,
                 children: S
               })]
             })]
-          }), null == I && (null != V ? V : z)]
+          }), null == I && (null != H ? H : z)]
         }), R.length > 0 && (0, i.jsx)("div", {
           className: C.actionWrapper,
           children: R.map((e, t) => {
@@ -228,13 +228,13 @@ function I(e) {
             return d ? (0, i.jsx)(u.ua7, {
               text: a,
               children: e => {
-                var t = O({}, function(e) {
+                var t = v({}, function(e) {
                   if (null == e) throw TypeError("Cannot destructure " + e);
                   return e
                 }(e));
-                return (0, i.jsx)(c.zx, v({}, f, t))
+                return (0, i.jsx)(c.zx, O({}, f, t))
               }
-            }, n) : (0, i.jsx)(c.zx, v({}, f), n)
+            }, n) : (0, i.jsx)(c.zx, O({}, f), n)
           })
         })]
       }), null != j && j]

@@ -1,4 +1,4 @@
-/** Chunk was on 63774 **/
+/** Chunk was on 36672 **/
 e.exports = {
   metadata: "metadata__857bf",
   libraryLink: "libraryLink__857bf",

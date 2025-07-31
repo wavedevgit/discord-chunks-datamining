@@ -1,4 +1,4 @@
-/** Chunk was on 63774 **/
+/** Chunk was on 36672 **/
 n.d(t, {
   Z: () => R
 }), n(953529), n(388685);
@@ -14,16 +14,16 @@ var r = n(255367),
   p = n(481060),
   m = n(568836),
   f = n(100527),
-  _ = n(906732),
-  g = n(963249),
+  g = n(906732),
+  _ = n(963249),
   h = n(594174),
   b = n(78839),
   E = n(55935),
   C = n(70956),
-  O = n(63063),
-  v = n(74538),
-  y = n(276444),
-  x = n(857262),
+  v = n(63063),
+  O = n(74538),
+  x = n(276444),
+  y = n(857262),
   I = n(93237),
   j = n(786397),
   S = n(474936),
@@ -63,7 +63,7 @@ class Z extends i.Component {
     if (t) return n ? N.intl.string(N.t["9SNdf3"]) : N.intl.formatToPlainString(N.t["H0+MxM"], {
       userName: o
     });
-    switch (x.Z.getCurrentConfig({
+    switch (y.Z.getCurrentConfig({
         location: "renderTitle"
       }, {
         autoTrackExposure: !1
@@ -97,12 +97,12 @@ class Z extends i.Component {
       trialOffer: r
     } = this.props;
     if (e && !n && void 0 === r.redeemed_at) return N.intl.format(N.t.LwCwT0, {
-      helpdeskArticle: O.Z.getArticleURL(T.BhN.REFERRAL_PROGRAM)
+      helpdeskArticle: v.Z.getArticleURL(T.BhN.REFERRAL_PROGRAM)
     });
     if (t) return null;
     let i = h.default.getUser(r.referrer_id),
       l = null != i ? i.username : "???";
-    switch (x.Z.getCurrentConfig({
+    switch (y.Z.getCurrentConfig({
         location: "renderBody"
       }, {
         autoTrackExposure: !1
@@ -134,7 +134,7 @@ class Z extends i.Component {
       trialOffer: a,
       currentUser: o,
       analyticsLocations: s
-    } = this.props, c = x.Z.getCurrentConfig({
+    } = this.props, c = y.Z.getCurrentConfig({
       location: "renderActions"
     }, {
       autoTrackExposure: !1
@@ -143,14 +143,14 @@ class Z extends i.Component {
         this.handleStartTrial(a, s)
       },
       color: d.zx.Colors.BRAND
-    }, p = o.id !== a.user_id || (0, v.I5)(o) || !o.verified || (0, j.B)(a), m = this.renderExpirationDate(e, t, n);
+    }, p = o.id !== a.user_id || (0, O.I5)(o) || !o.verified || (0, j.B)(a), m = this.renderExpirationDate(e, t, n);
     return u.disabled = p, (0, r.jsxs)("div", {
       className: P.buttonContainer,
       children: [(0, r.jsx)("div", {
         children: (0, r.jsx)(d.zx, (i = w({}, u), l = l = {
           size: d.zx.Sizes.SMALL,
           onClick: () => {
-            (0, g.Z)({
+            (0, _.Z)({
               initialPlanId: null,
               subscriptionTier: S.Si.TIER_2,
               analyticsLocations: s,
@@ -222,7 +222,7 @@ class Z extends i.Component {
   }
   constructor(...e) {
     super(...e), A(this, "handleStartTrial", (e, t) => {
-      (0, g.Z)({
+      (0, _.Z)({
         initialPlanId: null,
         subscriptionTier: S.Si.TIER_2,
         analyticsLocations: t,
@@ -239,15 +239,15 @@ function R(e) {
   } = e, {
     trialOffer: i,
     isResolving: l
-  } = (0, u.cj)([y.Z], () => ({
-    trialOffer: n ? y.Z.getRelevantUserTrialOffer(t) : null,
-    isResolving: !!n && y.Z.isResolving(t)
-  }), [n, t]), a = h.default.getCurrentUser(), o = (0, u.e7)([h.default], () => null != i && (0, v.I5)(void 0 !== a && i.user_id === a.id ? a : h.default.getUser(i.user_id))), s = (0, u.e7)([b.Z], () => {
+  } = (0, u.cj)([x.Z], () => ({
+    trialOffer: n ? x.Z.getRelevantUserTrialOffer(t) : null,
+    isResolving: !!n && x.Z.isResolving(t)
+  }), [n, t]), a = h.default.getCurrentUser(), o = (0, u.e7)([h.default], () => null != i && (0, O.I5)(void 0 !== a && i.user_id === a.id ? a : h.default.getUser(i.user_id))), s = (0, u.e7)([b.Z], () => {
     var e;
     return o ? null == (e = b.Z.getPremiumTypeSubscription()) ? void 0 : e.trialEndsAt : null
   }), {
     analyticsLocations: d
-  } = (0, _.ZP)(f.Z.SHARE_NITRO_EMBED);
+  } = (0, g.ZP)(f.Z.SHARE_NITRO_EMBED);
   return l ? (0, r.jsx)(m.OR, {
     isHorizontal: !c.tq
   }) : n && null != i && void 0 !== a ? (0, r.jsx)(Z, w({

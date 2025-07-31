@@ -1,9 +1,9 @@
-/** Chunk was on 63774 **/
+/** Chunk was on 36672 **/
 n.d(t, {
-  SO: () => g,
+  SO: () => _,
   eD: () => p,
   hO: () => m,
-  r: () => _,
+  r: () => g,
   ue: () => f
 }), n(388685);
 var r = n(73800),
@@ -47,5 +47,5 @@ let p = e => {
       publishedOnly: null != t ? t : !a.Z.isViewingServerShop(e)
     }))
   },
-  _ = e => (0, i.e7)([u.Z], () => null == e ? void 0 : u.Z.getGuildProduct(e)),
-  g = e => (0, i.e7)([o.Z], () => null != e && o.Z.can(d.Plq.ADMINISTRATOR, e))
+  g = e => (0, i.e7)([u.Z], () => null == e ? void 0 : u.Z.getGuildProduct(e)),
+  _ = e => (0, i.e7)([o.Z], () => null != e && o.Z.can(d.Plq.ADMINISTRATOR, e))

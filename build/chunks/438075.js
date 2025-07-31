@@ -1,4 +1,4 @@
-/** Chunk was on 63774 **/
+/** Chunk was on 36672 **/
 n.d(t, {
   Q: () => o,
   Z: () => a
@@ -23,8 +23,8 @@ function a(e) {
     renderThreadAccessory: p,
     renderSuppressEmbeds: m,
     renderReactions: f,
-    forceAddReactions: _,
-    disableComponentInteractivity: g,
+    forceAddReactions: g,
+    disableComponentInteractivity: _,
     className: h
   } = e;
   return u ? null : (0, r.jsx)(i.Z, {
@@ -39,9 +39,9 @@ function a(e) {
       isMessageSnapshot: d,
       onMediaItemContextMenu: s,
       renderThreadAccessory: p,
-      disableComponentInteractivity: g,
+      disableComponentInteractivity: _,
       renderSuppressEmbeds: m,
-      forceAddReactions: _,
+      forceAddReactions: g,
       renderReactions: f
     })
   })

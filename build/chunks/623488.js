@@ -1,6 +1,6 @@
-/** Chunk was on 63774 **/
+/** Chunk was on 36672 **/
 n.d(t, {
-  Z: () => _
+  Z: () => g
 }), n(953529);
 var r = n(255367);
 n(73800);
@@ -70,22 +70,22 @@ function f(e) {
   })
 }
 
-function _(e) {
+function g(e) {
   let {
     imageUrl: t,
     name: n,
     description: i,
     formattedPrice: c,
-    role: _,
-    ctaComponent: g,
+    role: g,
+    ctaComponent: _,
     shouldShowFullDescriptionButton: h = !0,
     onShowFullDescription: b,
     productType: E,
     onTapCard: C,
-    actionMenu: O,
-    showOpaqueBackground: v = !1,
-    hideRoleTag: y = !1,
-    lineClamp: x = 1,
+    actionMenu: v,
+    showOpaqueBackground: O = !1,
+    hideRoleTag: x = !1,
+    lineClamp: y = 1,
     cardWidth: I = 332,
     cardHeight: j,
     thumbnailHeight: S = 187,
@@ -117,20 +117,20 @@ function _(e) {
           children: (0, r.jsx)(s.Z, {
             variant: T,
             color: "text-muted",
-            lineClamp: x,
+            lineClamp: y,
             text: i
           })
         }), h && (0, r.jsx)(f, {
           onShowFullDescription: b,
           variant: T
-        }), y || null == _ || "" === _.name ? null : (0, r.jsxs)(r.Fragment, {
+        }), x || null == g || "" === g.name ? null : (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(a.LZC, {
             size: 16
           }), (0, r.jsx)(u.Z, {
-            role: _
+            role: g
           })]
         })]
-      }), O]
+      }), v]
     }), (0, r.jsxs)("div", {
       className: p.purchaseDetails,
       children: [(0, r.jsx)(a.Text, {
@@ -148,12 +148,12 @@ function _(e) {
         onClick: e => {
           e.stopPropagation()
         },
-        children: g
+        children: _
       })]
     })]
   });
   return null == C ? (0, r.jsx)("article", {
-    className: l()(p.productCard, v ? p.opaqueBackground : p.solidBackground),
+    className: l()(p.productCard, O ? p.opaqueBackground : p.solidBackground),
     "aria-labelledby": P,
     children: A
   }) : (0, r.jsx)("div", {
@@ -166,7 +166,7 @@ function _(e) {
       "aria-label": d.intl.formatToPlainString(d.t["e+TmJS"], {
         productName: n
       }),
-      className: l()(p.productCard, v ? p.opaqueBackground : p.solidBackground, p.cardClickableContainer),
+      className: l()(p.productCard, O ? p.opaqueBackground : p.solidBackground, p.cardClickableContainer),
       onClick: C,
       children: A
     })

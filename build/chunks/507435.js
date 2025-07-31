@@ -1,6 +1,6 @@
-/** Chunk was on 63774 **/
+/** Chunk was on 36672 **/
 n.d(t, {
-  Z: () => x
+  Z: () => y
 }), n(953529);
 var r = n(255367),
   i = n(73800),
@@ -14,8 +14,8 @@ var r = n(255367),
   p = n(739566),
   m = n(942951),
   f = n(834129),
-  _ = n(809026),
-  g = n(139256),
+  g = n(809026),
+  _ = n(139256),
   h = n(489887),
   b = n(388032),
   E = n(271629);
@@ -36,7 +36,7 @@ function C() {
   })
 }
 
-function O(e) {
+function v(e) {
   let t, {
     hasNoVotes: n,
     victorEmoji: i
@@ -56,7 +56,7 @@ function O(e) {
   }) : null
 }
 
-function v(e) {
+function O(e) {
   let t;
   var {
     type: n
@@ -98,7 +98,7 @@ function v(e) {
             className: E.victorAnswerText,
             scaleFontToUserSetting: !0,
             children: a
-          }), (0, r.jsx)(g.ZY, {
+          }), (0, r.jsx)(_.ZY, {
             size: 16,
             className: E.victorIcon,
             isVictor: !0,
@@ -136,7 +136,7 @@ function v(e) {
   })
 }
 
-function y(e) {
+function x(e) {
   let {
     className: t,
     data: n,
@@ -160,10 +160,10 @@ function y(e) {
     className: a()(E.container, {
       [E.containerWithImage]: c
     }, t),
-    children: [(0, r.jsx)(O, {
+    children: [(0, r.jsx)(v, {
       hasNoVotes: "NO_VOTES" === o.type,
       victorEmoji: n.victorEmoji
-    }), (0, r.jsx)(v, function(e) {
+    }), (0, r.jsx)(O, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -189,27 +189,27 @@ function y(e) {
   })
 }
 
-function x(e) {
+function y(e) {
   var t;
   let {
     message: n,
     channel: l,
     compact: a,
     disableInteraction: u = !1
-  } = e, d = n.embeds[0], g = i.useMemo(() => (0, _.Z)(d), [d]), C = (0, o.aF)(null != (t = null == g ? void 0 : g.questionText) ? t : "", h.Dv), O = (0, p.ZP)(n), v = (0, m.l)({
+  } = e, d = n.embeds[0], _ = i.useMemo(() => (0, g.Z)(d), [d]), C = (0, o.aF)(null != (t = null == _ ? void 0 : _.questionText) ? t : "", h.Dv), v = (0, p.ZP)(n), O = (0, m.l)({
     user: n.author,
     channelId: l.id,
     guildId: l.guild_id,
     messageId: n.id
-  }), x = n.messageReference, I = i.useCallback(() => {
-    null != x && c.Z.jumpToMessage({
-      channelId: x.channel_id,
-      messageId: x.message_id,
+  }), y = n.messageReference, I = i.useCallback(() => {
+    null != y && c.Z.jumpToMessage({
+      channelId: y.channel_id,
+      messageId: y.message_id,
       flash: !0,
       returnMessageId: n.id
     })
-  }, [n.id, x]);
-  return null == g ? null : (0, r.jsxs)(r.Fragment, {
+  }, [n.id, y]);
+  return null == _ ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(f.Z, {
       iconNode: (0, r.jsx)(s.QDj, {
         size: "xs"
@@ -217,14 +217,14 @@ function x(e) {
       timestamp: n.timestamp,
       compact: a,
       children: b.intl.format(b.t["VJcK4+"], {
-        username: O.nick,
-        usernameHook: v(O),
+        username: v.nick,
+        usernameHook: O(v),
         title: C,
         titleOnClick: I
       })
-    }), (0, r.jsx)(y, {
+    }), (0, r.jsx)(x, {
       className: E.embed,
-      data: g,
+      data: _,
       onClickPollLink: u ? void 0 : I
     })]
   })

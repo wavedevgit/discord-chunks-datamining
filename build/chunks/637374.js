@@ -1,4 +1,4 @@
-/** Chunk was on 63774 **/
+/** Chunk was on 36672 **/
 n.d(t, {
   Z: () => Y
 }), n(388685);
@@ -14,16 +14,16 @@ var r = n(255367),
   p = n(230711),
   m = n(568836),
   f = n(730749),
-  _ = n(112724),
-  g = n(607070),
+  g = n(112724),
+  _ = n(607070),
   h = n(884697),
   b = n(600164),
   E = n(479446),
   C = n(930114),
-  O = n(981632),
-  v = n(108989),
-  y = n(703656),
-  x = n(314897),
+  v = n(981632),
+  O = n(108989),
+  x = n(703656),
+  y = n(314897),
   I = n(82142),
   j = n(283595),
   S = n(594174),
@@ -63,7 +63,7 @@ function G(e) {
   return e
 }
 
-function H(e, t) {
+function V(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -76,7 +76,7 @@ function H(e, t) {
   }), e
 }
 
-function V(e) {
+function H(e) {
   let {
     onClick: t,
     libraryApplication: n
@@ -137,7 +137,7 @@ class W extends i.Component {
         location: e
       }
     } = this.props;
-    return H(G({}, e), {
+    return V(G({}, e), {
       section: M.jXE.GIFT_CODE_EMBED
     })
   }
@@ -148,7 +148,7 @@ class W extends i.Component {
     return (0, r.jsxs)(b.Z, {
       justify: b.Z.Justify.BETWEEN,
       children: [(0, r.jsxs)(b.Z, {
-        children: [this.renderButton(e), null == t || e.isSubscription ? null : (0, r.jsx)(V, {
+        children: [this.renderButton(e), null == t || e.isSubscription ? null : (0, r.jsx)(H, {
           onClick: this.handleViewLibrary,
           libraryApplication: t
         })]
@@ -183,7 +183,7 @@ class W extends i.Component {
       onClick: this.handleAccept,
       color: u.zx.Colors.BRAND
     }, a = !e.isSubscription && null != t || !e.isSelfRedeemable && i || e.isExistingPremiumSubscriptionDisallowed && (0, Z.I5)(n);
-    return (e.redeemed || a || e.isClaimed || !n.verified) && (l.color = u.zx.Colors.BRAND, l.disabled = !0), (0, r.jsx)(u.zx, H(G({}, l), {
+    return (e.redeemed || a || e.isClaimed || !n.verified) && (l.color = u.zx.Colors.BRAND, l.disabled = !0), (0, r.jsx)(u.zx, V(G({}, l), {
       className: (0, h.mO)(e) ? F.collectiblesAcceptButton : null,
       size: u.zx.Sizes.SMALL,
       children: e.redeemed ? U.intl.string(U.t.BTihoq) : null != e.giftStyle ? U.intl.string(U.t.TiZFqa) : U.intl.string(U.t.bUvv1d)
@@ -328,7 +328,7 @@ class W extends i.Component {
       let {
         libraryApplication: t
       } = this.props;
-      e.preventDefault(), null != t && t.isHidden() ? (0, y.uL)(M.Z5c.APPLICATION_LIBRARY_SETTINGS) : (0, y.uL)(M.Z5c.APPLICATION_LIBRARY, {
+      e.preventDefault(), null != t && t.isHidden() ? (0, x.uL)(M.Z5c.APPLICATION_LIBRARY_SETTINGS) : (0, x.uL)(M.Z5c.APPLICATION_LIBRARY, {
         state: {
           applicationId: null != t ? t.id : void 0
         }
@@ -345,7 +345,7 @@ class W extends i.Component {
       } = this.props;
       e.preventDefault(), e.stopPropagation(), A.default.track(M.rMx.OPEN_MODAL, {
         type: "gift_accept",
-        location: H(G({}, this.analyticsLocation), {
+        location: V(G({}, this.analyticsLocation), {
           object: M.qAy.BUTTON_CTA
         })
       });
@@ -385,12 +385,12 @@ class W extends i.Component {
         });
       return (0, r.jsxs)("div", {
         className: l,
-        children: [!t && k.eZ.includes(e.giftStyle) && (0, r.jsx)(v.Z, {
+        children: [!t && k.eZ.includes(e.giftStyle) && (0, r.jsx)(O.Z, {
           className: F.snow,
           wind: 5
         }), i && (0, r.jsx)(P.Z, {
           className: F.headerIcon
-        }), null != e.giftStyle && (0, r.jsx)(O.Z, {
+        }), null != e.giftStyle && (0, r.jsx)(v.Z, {
           defaultAnimationState: e.redeemed ? E.SR.LOOP : E.SR.IDLE,
           giftStyle: e.giftStyle,
           className: o
@@ -399,20 +399,20 @@ class W extends i.Component {
     })
   }
 }
-let K = (0, _.Z)((0, f.Z)(W)),
-  Y = c.ZP.connectStores([I.Z, N.Z, S.default, j.Z, T.Z, x.default, g.Z], e => {
+let K = (0, g.Z)((0, f.Z)(W)),
+  Y = c.ZP.connectStores([I.Z, N.Z, S.default, j.Z, T.Z, y.default, _.Z], e => {
     let {
       code: t,
       author: n,
       currentUser: r
-    } = e, i = I.Z.get(t), l = null != i ? N.Z.get(i.skuId) : null, a = null != i && null != i.userId ? S.default.getUser(i.userId) : null, o = g.Z.useReducedMotion;
+    } = e, i = I.Z.get(t), l = null != i ? N.Z.get(i.skuId) : null, a = null != i && null != i.userId ? S.default.getUser(i.userId) : null, o = _.Z.useReducedMotion;
     return {
       sku: l,
       giftCode: i,
       gifter: a,
       currentUser: r,
       subscriptionPlan: null != i && null != i.subscriptionPlanId ? (0, R.oE)(i.subscriptionPlanId) : null,
-      isSelfGift: null != i ? x.default.getId() === i.userId : x.default.getId() === n.id,
+      isSelfGift: null != i ? y.default.getId() === i.userId : y.default.getId() === n.id,
       resolved: I.Z.getIsResolved(t),
       libraryApplication: null != l && (null == i ? void 0 : i.entitlementBranches) != null ? w.z2(i.entitlementBranches, l, j.Z) : null,
       useReducedMotion: o

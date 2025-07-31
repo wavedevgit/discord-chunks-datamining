@@ -1,6 +1,6 @@
-/** Chunk was on 68114 **/
+/** Chunk was on 24022 **/
 n.d(t, {
-  Z: () => o
+  Z: () => i
 }), n(388685);
 var r = n(772848),
   s = n(710845),
@@ -15,7 +15,7 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function i(e) {
+function o(e) {
   return {
     sessionId: (0, r.Z)(),
     selectedSearchTab: null != e ? e : null,
@@ -24,11 +24,11 @@ function i(e) {
   }
 }
 new s.Z("SearchSessionAnalyticsManager");
-let o = new class {
+let i = new class {
   upsertState(e, t) {
     let n = (0, l.Tm)(e),
       r = this.sessions.get(n),
-      s = null != r ? r : i();
+      s = null != r ? r : o();
     this.sessions.set(n, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -90,7 +90,7 @@ let o = new class {
       initialTab: n,
       initializeSearchQueryId: s
     } = e, a = (0, l.Tm)(t);
-    this.sessions.has(a) || this.sessions.set(a, i(n)), s && !this.searchQueryIds.has(a) && this.searchQueryIds.set(a, (0, r.Z)())
+    this.sessions.has(a) || this.sessions.set(a, o(n)), s && !this.searchQueryIds.has(a) && this.searchQueryIds.set(a, (0, r.Z)())
   }
   terminate(e) {
     let t = (0, l.Tm)(e);

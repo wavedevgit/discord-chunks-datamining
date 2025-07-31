@@ -1,4 +1,4 @@
-/** Chunk was on 63774 **/
+/** Chunk was on 36672 **/
 e.exports = {
   container: "container_cacd02",
   bumpBox: "bumpBox_cacd02",

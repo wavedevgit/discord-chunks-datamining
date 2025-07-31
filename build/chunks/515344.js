@@ -1,7 +1,7 @@
-/** Chunk was on 63774 **/
+/** Chunk was on 36672 **/
 n.d(t, {
   G: () => C,
-  z: () => O
+  z: () => v
 });
 var r = n(73800),
   i = n(442837),
@@ -15,8 +15,8 @@ var r = n(73800),
   p = n(914010),
   m = n(135431),
   f = n(433534),
-  _ = n(914498),
-  g = n(981631),
+  g = n(914498),
+  _ = n(981631),
   h = n(49898),
   b = n(388032);
 
@@ -35,15 +35,15 @@ function E(e) {
     return null != (e = p.Z.getGuildId()) ? e : void 0
   }), m = (0, i.e7)([c.Z, u.Z, d.Z], () => {
     let e = c.Z.getChannel(d.Z.getChannelId());
-    return null != e && (e.isPrivate() || u.Z.can(g.Plq.SEND_MESSAGES, e))
-  }, []), _ = (0, l.PZ)(e, s) && m;
+    return null != e && (e.isPrivate() || u.Z.can(_.Plq.SEND_MESSAGES, e))
+  }, []), g = (0, l.PZ)(e, s) && m;
   return {
     isDiscoverable: t,
     customInstallUrl: n,
     installParams: r,
     integrationTypesConfig: a,
-    canViewApp: t || _,
-    canOpenAppLauncher: _,
+    canViewApp: t || g,
+    canOpenAppLauncher: g,
     isInstallable: o,
     selectedGuildId: s
   }
@@ -82,20 +82,20 @@ function C(e, t) {
   } : void 0, [e.id, i, n, c, u, d, l, t, p])
 }
 
-function O(e) {
+function v(e) {
   let {
     canViewApp: t,
     isInstallable: n
   } = E(e), i = C(e);
   return r.useMemo(() => t && null != i ? {
     label: b.intl.string(b.t.hvVgAQ),
-    trackingArea: _.j_.VIEW,
+    trackingArea: g.j_.VIEW,
     onClick() {
       i()
     }
   } : n && null != i ? {
     label: b.intl.string(b.t.NgXl3N),
-    trackingArea: _.j_.ADD_APP,
+    trackingArea: g.j_.ADD_APP,
     onClick() {
       i()
     }

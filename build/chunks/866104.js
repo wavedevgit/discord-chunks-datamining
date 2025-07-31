@@ -1,4 +1,4 @@
-/** Chunk was on 63774 **/
+/** Chunk was on 36672 **/
 n.d(t, {
   C: () => T,
   Z: () => S
@@ -15,16 +15,16 @@ var r = n(255367),
   p = n(565138),
   m = n(353254),
   f = n(695346),
-  _ = n(271383),
-  g = n(594174),
+  g = n(271383),
+  _ = n(594174),
   h = n(671533),
   b = n(51144),
   E = n(506071),
   C = n(696014),
-  O = n(847033),
-  v = n(544978),
-  y = n(893182),
-  x = n(388032),
+  v = n(847033),
+  O = n(544978),
+  x = n(893182),
+  y = n(388032),
   I = n(414521);
 
 function j(e) {
@@ -37,7 +37,7 @@ function j(e) {
     children: [(0, r.jsx)(s.Text, {
       variant: "text-sm/medium",
       color: "header-primary",
-      children: x.intl.string(x.t.J4cw1t)
+      children: y.intl.string(y.t.J4cw1t)
     }), (0, r.jsx)(s.LZC, {
       size: 4,
       horizontal: !0
@@ -83,11 +83,11 @@ function T(e) {
   } = e, m = l.id, {
     nickname: f,
     nickcolor: h
-  } = (0, o.cj)([_.ZP, g.default], () => {
+  } = (0, o.cj)([g.ZP, _.default], () => {
     var e, t;
-    let n = g.default.getCurrentUser();
+    let n = _.default.getCurrentUser();
     a()(null != n, "user cannot be null");
-    let r = _.ZP.getMember(m, n.id);
+    let r = g.ZP.getMember(m, n.id);
     return {
       nickname: null != (e = null == r ? void 0 : r.nick) ? e : b.ZP.getName(n),
       nickcolor: null != (t = null == r ? void 0 : r.colorString) ? t : void 0
@@ -98,7 +98,7 @@ function T(e) {
   } = (0, C.s)(), N = (null != (n = null == d || null == (t = d.description) ? void 0 : t.trim().length) ? n : 0) > 0, [P, A] = i.useState(1), w = (0, c.Z)("(max-width: 1439px)"), {
     selectedTab: Z,
     isPhantomPreview: R
-  } = (0, O.m)(), D = Z === v.y.GUILD_PRODUCTS_PREVIEW ? x.intl.string(x.t["LvXy/P"]) : x.intl.string(x.t.XyqKh4), L = N ? (0, r.jsxs)(r.Fragment, {
+  } = (0, v.m)(), D = Z === O.y.GUILD_PRODUCTS_PREVIEW ? y.intl.string(y.t["LvXy/P"]) : y.intl.string(y.t.XyqKh4), L = N ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(T, {
       lineClamp: w || 2 === P ? 2 : 3,
       children: (0, r.jsx)(s.Text, {
@@ -110,7 +110,7 @@ function T(e) {
       children: [(0, r.jsx)(s.LZC, {
         size: 4
       }), (0, r.jsx)(j, {
-        onClick: () => (0, y.Z)({
+        onClick: () => (0, x.Z)({
           guildId: m
         })
       })]
@@ -118,7 +118,7 @@ function T(e) {
   }) : (0, r.jsx)(s.Text, {
     variant: "text-sm/normal",
     color: "text-default",
-    children: R ? D : x.intl.string(x.t["NY/FIS"])
+    children: R ? D : y.intl.string(y.t["NY/FIS"])
   });
   return (0, r.jsxs)("div", {
     className: I.container,
@@ -142,7 +142,7 @@ function T(e) {
             variant: "heading-xl/semibold",
             color: "header-primary",
             lineClamp: 2,
-            children: R ? x.intl.string(x.t.rtgp7u) : x.intl.formatToPlainString(x.t.NZeik5, {
+            children: R ? y.intl.string(y.t.rtgp7u) : y.intl.formatToPlainString(y.t.NZeik5, {
               guildName: l.name
             })
           })
@@ -151,7 +151,7 @@ function T(e) {
         }), (0, r.jsx)(s.Text, {
           variant: "text-md/normal",
           color: "text-default",
-          children: x.intl.format(x.t["7JwrlJ"], {
+          children: y.intl.format(y.t["7JwrlJ"], {
             username: f,
             usernameHook: function(e, t) {
               return (0, r.jsx)("span", {

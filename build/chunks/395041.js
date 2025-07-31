@@ -1,7 +1,7 @@
-/** Chunk was on 68114 **/
+/** Chunk was on 24022 **/
 n.d(t, {
-  O: () => o,
-  w: () => i
+  O: () => i,
+  w: () => o
 });
 var r = n(255367);
 n(73800);
@@ -18,5 +18,5 @@ function a(e, t) {
     children: n
   })
 }
-let i = e => a(e, l.searchFilter),
-  o = e => a(e, l.searchAnswer)
+let o = e => a(e, l.searchFilter),
+  i = e => a(e, l.searchAnswer)

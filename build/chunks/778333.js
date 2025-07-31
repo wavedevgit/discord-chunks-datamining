@@ -1,4 +1,4 @@
-/** Chunk was on 63774 **/
+/** Chunk was on 36672 **/
 n.d(t, {
   Z: () => E
 });
@@ -14,8 +14,8 @@ var r = n(255367),
   p = n(314897),
   m = n(592125),
   f = n(699516),
-  _ = n(51144),
-  g = n(981631),
+  g = n(51144),
+  _ = n(981631),
   h = n(388032),
   b = n(273254);
 
@@ -25,8 +25,8 @@ function E(e) {
     invite: n,
     message: E,
     getAcceptInviteContext: C
-  } = e, O = (0, l.e7)([p.default], () => p.default.getId()), v = (null == (t = n.inviter) ? void 0 : t.id) === O, y = n.state === g.r2o.ACCEPTING, {
-    analyticsLocations: x
+  } = e, v = (0, l.e7)([p.default], () => p.default.getId()), O = (null == (t = n.inviter) ? void 0 : t.id) === v, x = n.state === _.r2o.ACCEPTING, {
+    analyticsLocations: y
   } = (0, c.ZP)(s.Z.INVITE_EMBED), I = (0, l.e7)([f.Z], () => {
     var e;
     return null != n.inviter && f.Z.isFriend(null == (e = n.inviter) ? void 0 : e.id)
@@ -39,28 +39,28 @@ function E(e) {
       action: e,
       inviter_id: E.author.id,
       invite_message_id: E.id
-    }, x)
-  }, [n, E, x]), S = i.useCallback(() => {
+    }, y)
+  }, [n, E, y]), S = i.useCallback(() => {
     (0, o.r$)({
       invite: n,
       action: "accept",
       inviter_id: E.author.id,
       invite_message_id: E.id
-    }, x);
+    }, y);
     let e = C("Invite Button Embed");
     o.ZP.acceptInviteAndTransitionToInviteChannel({
       inviteKey: n.code,
       context: e
     })
-  }, [n, E, x, C]);
+  }, [n, E, y, C]);
   if (null == n.inviter) return null;
   let T = I ? j : S,
     N = h.intl.string(h.t.ib7Ng4),
     P = u.Z.Button.Colors.GREEN;
-  I ? (N = h.intl.string(h.t.xhxnPj), P = u.Z.Button.Colors.PRIMARY) : v && (N = h.intl.string(h.t.ib7Ng4), P = u.Z.Button.Colors.PRIMARY);
-  let A = v ? h.intl.string(h.t.eQyu1N) : h.intl.string(h.t.PYJHW1),
+  I ? (N = h.intl.string(h.t.xhxnPj), P = u.Z.Button.Colors.PRIMARY) : O && (N = h.intl.string(h.t.ib7Ng4), P = u.Z.Button.Colors.PRIMARY);
+  let A = O ? h.intl.string(h.t.eQyu1N) : h.intl.string(h.t.PYJHW1),
     w = null != n.inviter ? "".concat(n.inviter.username) : "",
-    Z = null != n.inviter ? _.ZP.getUserTag(n.inviter) : "";
+    Z = null != n.inviter ? g.ZP.getUserTag(n.inviter) : "";
   return (0, r.jsxs)(u.Z, {
     children: [(0, r.jsx)(u.Z.Header, {
       text: A
@@ -77,8 +77,8 @@ function E(e) {
         })]
       }), (0, r.jsx)(u.Z.Button, {
         onClick: T,
-        submitting: y,
-        isDisabled: v,
+        submitting: x,
+        isDisabled: O,
         color: P,
         children: N
       })]

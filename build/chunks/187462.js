@@ -1,18 +1,18 @@
-/** Chunk was on 63774 **/
+/** Chunk was on 24022 **/
 n.d(t, {
   Z: () => a
 });
 var r = n(558706),
-  i = n(170216);
-class l extends i.L {
+  s = n(170216);
+class l extends s.L {
   create(e) {
     let {
       id: t,
       searchType: n,
-      searchQuery: i
+      searchQuery: s
     } = e;
     this.cancel(t);
-    let l = new r.Yn(t, n, i);
+    let l = new r.Yn(t, n, s);
     return this.set(t, l), l
   }
 }

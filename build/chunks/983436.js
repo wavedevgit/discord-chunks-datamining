@@ -1,6 +1,6 @@
-/** Chunk was on 63774 **/
+/** Chunk was on 36672 **/
 n.d(t, {
-  Z: () => _
+  Z: () => g
 });
 var r = n(255367),
   i = n(73800),
@@ -15,22 +15,22 @@ var r = n(255367),
   m = n(388032),
   f = n(273254);
 
-function _(e) {
+function g(e) {
   let {
     guild: t,
     channel: n,
-    message: _
-  } = e, g = u.Z.getGuildId(), h = c.Z.getChannelId(g), b = i.useCallback(() => {
+    message: g
+  } = e, _ = u.Z.getGuildId(), h = c.Z.getChannelId(_), b = i.useCallback(() => {
     var e;
     d.default.track(p.rMx.CHANNEL_LINK_PREVIEW_JOINED, {
-      author_id: null == (e = _.author) ? void 0 : e.id,
+      author_id: null == (e = g.author) ? void 0 : e.id,
       link_guild_id: t.id,
       link_channel_id: n.id,
       link_channel_type: n.type,
-      guild_id: g,
+      guild_id: _,
       channel_id: h
     }), (0, a.K)(t.id, n.id), l.default.selectVoiceChannel(n.id)
-  }, [_, t, n, g, h]), E = (0, r.jsx)(s.Z.Channel, {
+  }, [g, t, n, _, h]), E = (0, r.jsx)(s.Z.Channel, {
     channel: n
   });
   return (0, r.jsx)(s.Z, {

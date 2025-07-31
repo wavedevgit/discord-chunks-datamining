@@ -1,6 +1,6 @@
-/** Chunk was on 63774 **/
+/** Chunk was on 36672 **/
 n.d(t, {
-  Z: () => V
+  Z: () => H
 }), n(953529), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -14,16 +14,16 @@ var r = n(255367),
   p = n(367907),
   m = n(600164),
   f = n(111028),
-  _ = n(231053),
-  g = n(697568),
+  g = n(231053),
+  _ = n(697568),
   h = n(183023),
   b = n(524444),
   E = n(98278),
   C = n(767714),
-  O = n(430824),
-  v = n(594174),
-  y = n(626135),
-  x = n(74538),
+  v = n(430824),
+  O = n(594174),
+  x = n(626135),
+  y = n(74538),
   I = n(453070),
   j = n(926491),
   S = n(378233),
@@ -80,7 +80,7 @@ let M = (e, t) => t ? w.intl.format(w.t.auckX1, {
   };
 
 function U(e) {
-  y.default.track(P.rMx.PREMIUM_PROMOTION_OPENED, {
+  x.default.track(P.rMx.PREMIUM_PROMOTION_OPENED, {
     location_page: null != e.guild_id ? P.ZY5.GUILD_CHANNEL : P.ZY5.DM_CHANNEL,
     location_section: P.jXE.STICKER_POPOUT
   }), (0, E.z)()
@@ -125,23 +125,23 @@ let B = e => {
     });
     (0, I.Pq)(n.pack_id);
     let f = (0, I.Sd)(l),
-      _ = {
+      g = {
         refreshPositionKey: a,
         channel: l
       },
-      g = i.useRef(_);
+      _ = i.useRef(g);
     return (i.useEffect(() => {
-      g.current = _
+      _.current = g
     }), i.useEffect(() => {
       let {
         refreshPositionKey: e
-      } = g.current;
+      } = _.current;
       e()
     }, [u]), i.useEffect(() => {
       let {
         channel: e
-      } = g.current;
-      y.default.track(P.rMx.OPEN_POPOUT, D({
+      } = _.current;
+      x.default.track(P.rMx.OPEN_POPOUT, D({
         type: P.jXE.STICKER_POPOUT,
         guild_id: e.getGuildId(),
         sticker_pack_id: n.pack_id
@@ -188,11 +188,11 @@ let B = e => {
       } = e,
       [I, j] = i.useState(null),
       [S, N] = i.useState(!1),
-      M = v.default.getCurrentUser(),
-      k = x.ZP.canUseCustomStickersEverywhere(M),
-      B = (0, o.e7)([O.Z], () => O.Z.getGuild(n.guild_id)),
+      M = O.default.getCurrentUser(),
+      k = y.ZP.canUseCustomStickersEverywhere(M),
+      B = (0, o.e7)([v.Z], () => v.Z.getGuild(n.guild_id)),
       G = null != B,
-      [H, V] = i.useState(!1),
+      [V, H] = i.useState(!1),
       [z, W] = i.useState(null),
       K = i.useMemo(() => ({
         page: null != l.guild_id ? P.ZY5.GUILD_CHANNEL : P.ZY5.DM_CHANNEL,
@@ -215,7 +215,7 @@ let B = e => {
         stickerSourceGuild: e
       } = q.current;
       (async () => {
-        (null == e || e.features.has(P.oNc.DISCOVERABLE)) && j(await (0, g.Z)(n.id)), N(!0)
+        (null == e || e.features.has(P.oNc.DISCOVERABLE)) && j(await (0, _.Z)(n.id)), N(!0)
       })()
     }, [n.id, G]);
     let Q = n.guild_id === l.getGuildId(),
@@ -234,7 +234,7 @@ let B = e => {
       } = q.current;
       e()
     }, [S, I]), (0, d.ZP)(() => {
-      y.default.track(P.rMx.OPEN_POPOUT, D({
+      x.default.track(P.rMx.OPEN_POPOUT, D({
         type: ee
       }, Y))
     }), S) ? (0, r.jsxs)(b.W_, {
@@ -280,7 +280,7 @@ let B = e => {
         var e;
         if (!J && !G) return;
         let t = (null != (e = null == I ? void 0 : I.stickers) ? e : []).slice(0, 13).filter(e => e.id !== n.id).slice(0, 12),
-          i = null != I ? _.JO.createFromDiscoverableGuild(I) : _.JO.createFromGuildRecord(B);
+          i = null != I ? g.JO.createFromDiscoverableGuild(I) : g.JO.createFromGuildRecord(B);
         return (0, r.jsxs)("div", {
           className: R.guildSection,
           children: [(0, r.jsx)(c.vwX, {
@@ -293,7 +293,7 @@ let B = e => {
           }), !G && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(c.P3F, {
               onClick: () => {
-                E(), V(!H)
+                E(), H(!V)
               },
               className: R.showMoreEmojis,
               children: (0, r.jsxs)(m.Z, {
@@ -306,11 +306,11 @@ let B = e => {
                   size: "md",
                   color: "currentColor",
                   className: a()(R.showMoreEmojisArrow, {
-                    [R.showMoreEmojisArrowCollapsed]: !H
+                    [R.showMoreEmojisArrowCollapsed]: !V
                   })
                 })]
               })
-            }), H && (0, r.jsx)(m.Z, {
+            }), V && (0, r.jsx)(m.Z, {
               wrap: m.Z.Wrap.WRAP,
               align: m.Z.Align.START,
               justify: m.Z.Justify.START,
@@ -368,7 +368,7 @@ let B = e => {
     })
   };
 
-function H(e) {
+function V(e) {
   let {
     channel: t,
     closePopout: n,
@@ -386,7 +386,7 @@ function H(e) {
     })
   })
 }
-let V = e => {
+let H = e => {
   let {
     renderableSticker: t,
     channel: n,
@@ -403,7 +403,7 @@ let V = e => {
     channel: n,
     closePopout: i,
     refreshPositionKey: l
-  }) : o ? o && null == a ? (0, r.jsx)(H, {
+  }) : o ? o && null == a ? (0, r.jsx)(V, {
     channel: n,
     closePopout: i,
     sticker: t

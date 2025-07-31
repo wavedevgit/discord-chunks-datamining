@@ -1,4 +1,4 @@
-/** Chunk was on 63774 **/
+/** Chunk was on 36672 **/
 n.d(t, {
   K: () => j
 }), n(388685), n(314940);
@@ -14,14 +14,14 @@ var r = n(255367),
   p = n(313201),
   m = n(542578),
   f = n(203143),
-  _ = n(79390),
-  g = n(839963),
+  g = n(79390),
+  _ = n(839963),
   h = n(139256),
   b = n(294608),
   E = n(388032),
   C = n(709893);
 
-function O(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -40,7 +40,7 @@ function O(e) {
   return e
 }
 
-function v(e) {
+function O(e) {
   let {
     percentage: t,
     label: n,
@@ -49,12 +49,12 @@ function v(e) {
   } = e, s = (0, p.Dt)(), {
     channelId: c,
     messageId: u
-  } = (0, b.pE)(), [g, h] = i.useState(""), [E, v] = i.useState(!1), y = "" !== g && E, x = i.useCallback(() => {
-    h((0, _.e1)(u, c, a))
+  } = (0, b.pE)(), [_, h] = i.useState(""), [E, O] = i.useState(!1), x = "" !== _ && E, y = i.useCallback(() => {
+    h((0, g.e1)(u, c, a))
   }, [u, c, a]), I = i.useCallback(() => {
-    x(), v(!0)
-  }, [x]), j = i.useCallback(() => {
-    v(!1)
+    y(), O(!0)
+  }, [y]), j = i.useCallback(() => {
+    O(!1)
   }, []), S = i.useCallback(() => {
     (0, f.n)({
       channelId: c,
@@ -63,10 +63,10 @@ function v(e) {
     })
   }, [c, u, a]);
   return i.useEffect(() => {
-    if (E) return m.Z.addReactChangeListener(x), () => {
-      m.Z.removeReactChangeListener(x)
+    if (E) return m.Z.addReactChangeListener(y), () => {
+      m.Z.removeReactChangeListener(y)
     }
-  }, [E, x]), (0, r.jsxs)("div", {
+  }, [E, y]), (0, r.jsxs)("div", {
     className: C.votesData,
     children: [l ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(d.ua7, {
@@ -74,19 +74,19 @@ function v(e) {
           variant: "text-sm/normal",
           color: "text-muted",
           scaleFontToUserSetting: !0,
-          children: g
+          children: _
         }),
-        forceOpen: y,
+        forceOpen: x,
         "aria-label": !1,
         children: e => {
           var t, i;
-          return (0, r.jsx)(d.Avr, (t = O({}, e), i = i = {
+          return (0, r.jsx)(d.Avr, (t = v({}, e), i = i = {
             onMouseEnter: I,
             onMouseLeave: j,
             onFocus: I,
             onBlur: j,
             onClick: S,
-            "aria-describedby": y ? s : void 0,
+            "aria-describedby": x ? s : void 0,
             text: n,
             variant: "secondary",
             textVariant: "text-xs/semibold"
@@ -101,9 +101,9 @@ function v(e) {
             Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
           }), t))
         }
-      }), y && (0, r.jsx)(o.T, {
+      }), x && (0, r.jsx)(o.T, {
         id: s,
-        children: g
+        children: _
       })]
     }) : (0, r.jsx)(d.Text, {
       variant: "text-xs/semibold",
@@ -119,7 +119,7 @@ function v(e) {
   })
 }
 
-function y(e) {
+function x(e) {
   let {
     percentage: t,
     shouldAnimate: n
@@ -142,7 +142,7 @@ function y(e) {
   })
 }
 
-function x(e) {
+function y(e) {
   let {
     answersInteraction: t,
     isSelected: n,
@@ -155,19 +155,19 @@ function x(e) {
     answersInteraction: t,
     didSelfVote: i
   }).with({
-    answersInteraction: g.Y7.RADIO_BUTTONS
+    answersInteraction: _.Y7.RADIO_BUTTONS
   }, () => (0, r.jsx)(h.Og, {
     isSelected: n,
     size: 24,
     className: o
   })).with({
-    answersInteraction: g.Y7.CHECKBOXES
+    answersInteraction: _.Y7.CHECKBOXES
   }, () => (0, r.jsx)(h.zs, {
     isSelected: n,
     size: 20,
     className: o
   })).with({
-    answersInteraction: g.Y7.LIST,
+    answersInteraction: _.Y7.LIST,
     didSelfVote: !0
   }, () => (0, r.jsx)(h.ZY, {
     isVictor: l,
@@ -187,10 +187,10 @@ function I(e) {
   } = e, c = !0 === t.isSelected, u = !0 === t.didSelfVote, p = !0 === t.isVictor, m = t.shouldAnimateTransition;
   return (0, r.jsxs)("div", {
     className: a()(C.answerInner, {
-      [C.currentlyVoting]: i !== g.Y7.LIST,
+      [C.currentlyVoting]: i !== _.Y7.LIST,
       [C.selected]: c
     }),
-    children: [l ? (0, r.jsx)(y, {
+    children: [l ? (0, r.jsx)(x, {
       percentage: t.votesPercentage,
       shouldAnimate: m
     }) : null, null != t.pollMedia.emoji && (0, r.jsx)(h.sc, {
@@ -204,12 +204,12 @@ function I(e) {
       children: t.pollMedia.text
     }), t.didSelfVote && (0, r.jsx)(o.T, {
       children: E.intl.string(E.t["8DAM+/"])
-    }), l && (0, r.jsx)(v, {
+    }), l && (0, r.jsx)(O, {
       percentage: t.votesPercentage,
       label: t.votes,
       canShowVoterDetails: s,
       answerId: t.answerId
-    }), (0, r.jsx)(x, {
+    }), (0, r.jsx)(y, {
       answersInteraction: i,
       isSelected: c,
       didSelfVote: u,
@@ -241,7 +241,7 @@ function j(e) {
     }
     return i
   }(e, ["isExpired", "answersInteraction", "canShowVoteCounts", "canTapAnswers"]);
-  return (0, r.jsx)(h.$e, O({
+  return (0, r.jsx)(h.$e, v({
     className: C.answersContainer,
     answerClassName: C.answer,
     answersInteraction: n,

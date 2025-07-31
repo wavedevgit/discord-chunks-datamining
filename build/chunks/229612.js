@@ -58,36 +58,34 @@ function E(e) {
 }
 let g = function(e) {
   let {
-    searchId: t,
-    searchType: n,
-    rating: i,
-    transitionState: r,
-    onClose: g
-  } = e, _ = (0, b.Dt)(), h = (0, c.e)({
+    searchContext: t,
+    rating: n,
+    transitionState: i,
+    onClose: r
+  } = e, g = (0, b.Dt)(), _ = (0, c.e)({
     getOptions: o.bM
-  }), S = (0, c.e)({
+  }), h = (0, c.e)({
     getOptions: o.cc
-  }), p = i === f.aZ.BAD, {
-    questionItems: N,
-    questionTitles: T
+  }), S = n === f.aZ.BAD, {
+    questionItems: p,
+    questionTitles: N
   } = a.useMemo(() => {
     let e = [],
       t = [];
-    return p && (e.push(h), t.push(v.intl.string(v.t.UyBQFx))), e.push(S), t.push(v.intl.string(v.t.LhMLCg)), {
+    return S && (e.push(_), t.push(v.intl.string(v.t.UyBQFx))), e.push(h), t.push(v.intl.string(v.t.LhMLCg)), {
       questionItems: e,
       questionTitles: t
     }
-  }, [p, S, h]);
+  }, [S, h, _]);
   a.useEffect(() => {
     (0, d.Yc)({
-      rating: i,
-      searchId: t,
-      searchType: n
+      rating: n,
+      searchContext: t
     })
-  }, [i, t, n]);
-  let [D, m] = a.useState(0), x = 0 === D, C = D === N.length - 1, I = a.useMemo(() => {
-    let e = N[D],
-      t = T[D];
+  }, [n, t]);
+  let [T, D] = a.useState(0), m = 0 === T, x = T === p.length - 1, C = a.useMemo(() => {
+    let e = p[T],
+      t = N[T];
     return (0, l.jsx)(E, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -108,44 +106,43 @@ let g = function(e) {
     }({
       title: t
     }, e))
-  }, [N, T, D]), L = a.useMemo(() => N.every(o.cp), [N]), M = a.useMemo(() => {
-    let e = N[D];
+  }, [p, N, T]), I = a.useMemo(() => p.every(o.cp), [p]), L = a.useMemo(() => {
+    let e = p[T];
     return (0, o.cp)(e)
-  }, [N, D]), y = a.useCallback(() => {
-    L && ((0, d.z4)({
-      rating: i,
-      searchId: t,
-      searchType: n,
-      unsatisfiedQuestionOption: p ? (0, o.HO)(h) : null,
-      unsatisfiedQuestionText: p ? (0, o.sG)(h) : null,
-      describeSearchQuestionOption: (0, o.HO)(S),
-      describeSearchQuestionText: (0, o.sG)(S)
-    }), g())
-  }, [h, p, L, g, i, S, t, n]), A = a.useCallback(() => {
-    if (x) return void g();
-    m(D - 1)
-  }, [x, D, g]), R = a.useCallback(() => {
-    m(D + 1)
-  }, [D]);
+  }, [p, T]), M = a.useCallback(() => {
+    I && ((0, d.z4)({
+      rating: n,
+      searchContext: t,
+      unsatisfiedQuestionOption: S ? (0, o.HO)(_) : null,
+      unsatisfiedQuestionText: S ? (0, o.sG)(_) : null,
+      describeSearchQuestionOption: (0, o.HO)(h),
+      describeSearchQuestionText: (0, o.sG)(h)
+    }), r())
+  }, [I, n, t, S, _, h, r]), y = a.useCallback(() => {
+    if (m) return void r();
+    D(T - 1)
+  }, [m, T, r]), A = a.useCallback(() => {
+    D(T + 1)
+  }, [T]);
   return (0, l.jsxs)(u.Y0X, {
     size: u.CgR.MEDIUM,
-    transitionState: r,
-    "aria-labelledby": _,
+    transitionState: i,
+    "aria-labelledby": g,
     parentComponent: "SearchResultsFeedbackModal",
     children: [(0, l.jsxs)(u.xBx, {
       separator: !1,
       className: O.header,
       children: [(0, l.jsx)(u.X6q, {
-        id: _,
+        id: g,
         variant: "heading-xl/semibold",
         color: "text-primary",
         children: v.intl.string(v.t.LRGdV1)
       }), (0, l.jsx)(u.olH, {
-        onClick: g
+        onClick: r
       })]
     }), (0, l.jsx)(u.hzk, {
       className: O.content,
-      children: I
+      children: C
     }), (0, l.jsxs)(u.mzw, {
       separator: !0,
       className: O.footer,
@@ -153,18 +150,18 @@ let g = function(e) {
       justify: s.Z.Justify.END,
       children: [(0, l.jsx)(u.zxk, {
         variant: "secondary",
-        text: x ? v.intl.string(v.t["ETE/oK"]) : v.intl.string(v.t["13/7kZ"]),
-        onClick: A
-      }), C ? (0, l.jsx)(u.zxk, {
+        text: m ? v.intl.string(v.t["ETE/oK"]) : v.intl.string(v.t["13/7kZ"]),
+        onClick: y
+      }), x ? (0, l.jsx)(u.zxk, {
         variant: "primary",
         text: v.intl.string(v.t["4Zpxtr"]),
-        onClick: y,
-        disabled: !L
+        onClick: M,
+        disabled: !I
       }) : (0, l.jsx)(u.zxk, {
         variant: "primary",
         text: v.intl.string(v.t.PDTjLC),
-        onClick: R,
-        disabled: !M
+        onClick: A,
+        disabled: !L
       })]
     })]
   })

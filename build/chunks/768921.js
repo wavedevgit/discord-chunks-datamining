@@ -1,4 +1,4 @@
-/** Chunk was on 63774 **/
+/** Chunk was on 36672 **/
 e.exports = {
   content: "content_e8c018",
   gameContainer: "gameContainer_e8c018",

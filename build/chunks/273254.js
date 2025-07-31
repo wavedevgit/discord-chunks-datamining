@@ -1,4 +1,4 @@
-/** Chunk was on 63774 **/
+/** Chunk was on 36672 **/
 e.exports = {
   separator: "separator_ae2544",
   infoTitle: "infoTitle_ae2544",

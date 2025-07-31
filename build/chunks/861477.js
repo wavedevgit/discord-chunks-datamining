@@ -1,4 +1,4 @@
-/** Chunk was on 63774 **/
+/** Chunk was on 36672 **/
 e.exports = {
   embed: "embed_fb5def",
   text: "text_fb5def",

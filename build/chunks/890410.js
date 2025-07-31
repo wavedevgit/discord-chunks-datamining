@@ -1,4 +1,4 @@
-/** Chunk was on 63774 **/
+/** Chunk was on 36672 **/
 n.d(t, {
   Z: () => p
 });
@@ -37,8 +37,8 @@ function p(e) {
       channel: p,
       content: m,
       className: f,
-      compact: _,
-      popoutProps: g,
+      compact: g,
+      popoutProps: _,
       hideTimestamp: h = !1,
       withFooter: b = !1
     } = e,
@@ -62,32 +62,32 @@ function p(e) {
     className: l()({
       [u.withFooter]: b
     }, u.embedCard, {
-      [u.compact]: _
+      [u.compact]: g
     }, f),
     children: (0, r.jsx)(o.Z, (t = d({}, E), n = n = {
       className: l()(u.messageContainer, {
-        [u.compact]: _
+        [u.compact]: g
       }),
       childrenMessageContent: (0, r.jsx)(s.ZP, {
         className: l()(u.__invalid_messageContent, {
-          [u.compact]: _
+          [u.compact]: g
         }),
         message: i,
         content: m,
-        compact: null != _ && _
+        compact: null != g && g
       }),
       childrenHeader: (0, r.jsx)(c.ZP, d({
         message: i,
         channel: p,
         author: C,
         guildId: null == p ? void 0 : p.guild_id,
-        compact: _,
+        compact: g,
         hideTimestamp: h,
         className: l()(u.header, {
-          [u.compact]: _
+          [u.compact]: g
         })
-      }, null != g ? g : {})),
-      compact: _,
+      }, null != _ ? _ : {})),
+      compact: g,
       author: C
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);

@@ -1,66 +1,66 @@
-/** Chunk was on 63774 **/
+/** Chunk was on 53512 **/
 n.d(t, {
-  Z: () => l
+  Z: () => s
 });
-var r = n(255367);
+var i = n(255367);
 n(73800);
-var i = n(325767);
+var r = n(325767);
 
-function l(e) {
+function s(e) {
   var t, n, {
-      width: l = 24,
+      width: s = 24,
       height: a = 24,
-      color: o = "currentColor",
-      foreground: s
+      color: l = "currentColor",
+      foreground: c
     } = e,
-    c = function(e, t) {
+    o = function(e, t) {
       if (null == e) return {};
-      var n, r, i = function(e, t) {
+      var n, i, r = function(e, t) {
         if (null == e) return {};
-        var n, r, i = {},
-          l = Object.keys(e);
-        for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-        return i
+        var n, i, r = {},
+          s = Object.keys(e);
+        for (i = 0; i < s.length; i++) n = s[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
+        return r
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var l = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+        var s = Object.getOwnPropertySymbols(e);
+        for (i = 0; i < s.length; i++) n = s[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
       }
-      return i
+      return r
     }(e, ["width", "height", "color", "foreground"]);
-  return (0, r.jsx)("svg", (t = function(e) {
+  return (0, i.jsx)("svg", (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
-        r = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        i = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
         return Object.getOwnPropertyDescriptor(n, e).enumerable
-      }))), r.forEach(function(t) {
-        var r;
-        r = n[t], t in e ? Object.defineProperty(e, t, {
-          value: r,
+      }))), i.forEach(function(t) {
+        var i;
+        i = n[t], t in e ? Object.defineProperty(e, t, {
+          value: i,
           enumerable: !0,
           configurable: !0,
           writable: !0
-        }) : e[t] = r
+        }) : e[t] = i
       })
     }
     return e
-  }({}, (0, i.Z)(c)), n = n = {
-    width: l,
+  }({}, (0, r.Z)(o)), n = n = {
+    width: s,
     height: a,
     viewBox: "0 0 24 24",
-    children: (0, r.jsx)("path", {
+    children: (0, i.jsx)("path", {
       fillRule: "evenodd",
       clipRule: "evenodd",
       d: "M12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z",
-      className: s,
-      fill: o
+      className: c,
+      fill: l
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
+      var i = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, i)
     }
     return n
   })(Object(n)).forEach(function(e) {

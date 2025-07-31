@@ -4,10 +4,10 @@ r.d(t, {
 });
 var n = r(255367),
   i = r(73800),
-  a = r(657707),
-  s = r(481060),
-  l = r(315322),
-  c = r(531578),
+  s = r(657707),
+  a = r(481060),
+  c = r(315322),
+  l = r(531578),
   o = r(388032),
   u = r(175943);
 
@@ -15,13 +15,13 @@ function d(e) {
   let {
     rating: t,
     onClick: r
-  } = e, l = t === c.aZ.BAD ? a.kZ9 : a.lbB, o = i.useCallback(() => {
+  } = e, c = t === l.aZ.BAD ? s.kZ9 : s.lbB, o = i.useCallback(() => {
     r(t)
   }, [r, t]);
-  return (0, n.jsx)(s.P3F, {
+  return (0, n.jsx)(a.P3F, {
     onClick: o,
     className: u.iconContainer,
-    children: (0, n.jsx)(l, {
+    children: (0, n.jsx)(c, {
       size: "md",
       color: "currentColor",
       className: u.icon
@@ -30,23 +30,21 @@ function d(e) {
 }
 let _ = function(e) {
   let {
-    searchId: t,
-    searchType: a,
-    dismissFeedbackEntrypoint: _
+    searchContext: t,
+    dismissFeedbackEntrypoint: s
   } = e;
   i.useEffect(() => {
-    (0, l.bo)({
-      searchId: t,
-      searchType: a
+    (0, c.bo)({
+      searchContext: t
     })
-  }, [t, a]);
-  let h = i.useCallback(e => {
-    _(), (0, s.ZDy)(async () => {
+  }, [t]);
+  let _ = i.useCallback(e => {
+    s(), (0, a.ZDy)(async () => {
       let {
         default: i
       } = await r.e("11298").then(r.bind(r, 229612));
       return r => {
-        var s, l;
+        var s, a;
         return (0, n.jsx)(i, (s = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var r = null != arguments[t] ? arguments[t] : {},
@@ -64,37 +62,36 @@ let _ = function(e) {
             })
           }
           return e
-        }({}, r), l = l = {
-          searchId: t,
-          searchType: a,
+        }({}, r), a = a = {
+          searchContext: t,
           rating: e
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(s, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(s, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
           var r = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var n = Object.getOwnPropertySymbols(e);
             r.push.apply(r, n)
           }
           return r
-        })(Object(l)).forEach(function(e) {
-          Object.defineProperty(s, e, Object.getOwnPropertyDescriptor(l, e))
+        })(Object(a)).forEach(function(e) {
+          Object.defineProperty(s, e, Object.getOwnPropertyDescriptor(a, e))
         }), s))
       }
     })
-  }, [_, t, a]);
+  }, [s, t]);
   return (0, n.jsxs)("div", {
     className: u.container,
-    children: [(0, n.jsx)(s.Text, {
+    children: [(0, n.jsx)(a.Text, {
       variant: "text-sm/medium",
       color: "text-primary",
       children: o.intl.string(o.t["I+4OJC"])
     }), (0, n.jsxs)("div", {
       className: u.icons,
       children: [(0, n.jsx)(d, {
-        rating: c.aZ.GOOD,
-        onClick: h
+        rating: l.aZ.GOOD,
+        onClick: _
       }), (0, n.jsx)(d, {
-        rating: c.aZ.BAD,
-        onClick: h
+        rating: l.aZ.BAD,
+        onClick: _
       })]
     })]
   })

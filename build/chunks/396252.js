@@ -1,4 +1,4 @@
-/** Chunk was on 63774 **/
+/** Chunk was on 36672 **/
 n.d(t, {
   Z: () => h
 });
@@ -15,8 +15,8 @@ var i = n(120356),
   p = n(605568),
   m = n(834129),
   f = n(674563),
-  _ = n(388032),
-  g = n(126759);
+  g = n(388032),
+  _ = n(126759);
 
 function h(e) {
   var t;
@@ -25,57 +25,57 @@ function h(e) {
     compact: i,
     usernameHook: h,
     channel: b
-  } = e, E = (0, a.e7)([c.Z], () => c.Z.getGuild(b.guild_id)), C = (0, u.ZP)(n), O = h(C), {
-    avatarSrc: v,
+  } = e, E = (0, a.e7)([c.Z], () => c.Z.getGuild(b.guild_id)), C = (0, u.ZP)(n), v = h(C), {
+    avatarSrc: O,
     eventHandlers: {
-      onMouseEnter: y,
-      onMouseLeave: x
+      onMouseEnter: x,
+      onMouseLeave: y
     }
   } = (0, p.m)(!0);
   return (0, r.jsx)("div", {
-    onMouseEnter: y,
-    onMouseLeave: x,
+    onMouseEnter: x,
+    onMouseLeave: y,
     children: (0, r.jsx)(m.Z, {
-      className: l()(g.mainContainer, {
-        [g.compact]: i
+      className: l()(_.mainContainer, {
+        [_.compact]: i
       }),
       iconNode: i ? null : (0, r.jsx)(p.S, {
-        src: v
+        src: O
       }),
-      iconContainerClassName: g.iconContainer,
+      iconContainerClassName: _.iconContainer,
       compact: i,
       children: (0, r.jsxs)("div", {
-        className: l()(g.content, {
-          [g.compact]: i
+        className: l()(_.content, {
+          [_.compact]: i
         }),
         children: [(0, r.jsx)(d.nD, {
           message: n,
-          messageClassname: g.spanCorrection,
-          className: l()(g.usernameContainer, g.spanCorrection, {
-            [g.compact]: i
+          messageClassname: _.spanCorrection,
+          className: l()(_.usernameContainer, _.spanCorrection, {
+            [_.compact]: i
           }),
           username: (0, r.jsxs)("div", {
-            className: g.spanCorrection,
+            className: _.spanCorrection,
             children: [(0, r.jsx)(o.Text, {
               variant: "text-md/normal",
               color: "text-brand",
               tag: "span",
-              className: g.username,
-              children: _.intl.string(_.t.hG1StL)
+              className: _.username,
+              children: g.intl.string(g.t.hG1StL)
             }), (0, r.jsx)(s.Z, {
               type: f.Hb.SYSTEM_DM,
-              className: g.systemTag
+              className: _.systemTag
             })]
           }),
           compact: i,
           showTimestamp: !0
         }), (0, r.jsx)("div", {
-          className: l()(g.__invalid_messageContent, {
-            [g.compact]: i
+          className: l()(_.__invalid_messageContent, {
+            [_.compact]: i
           }),
-          children: _.intl.format(_.t.W0UBIy, {
+          children: g.intl.format(g.t.W0UBIy, {
             username: C.nick,
-            usernameHook: O,
+            usernameHook: v,
             guildName: null != (t = null == E ? void 0 : E.name) ? t : ""
           })
         })]

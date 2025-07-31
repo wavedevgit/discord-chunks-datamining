@@ -1,4 +1,4 @@
-/** Chunk was on 63774 **/
+/** Chunk was on 36672 **/
 n.d(t, {
   Z: () => h
 }), n(388685);
@@ -23,7 +23,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function _(e) {
   return e
 }
 
-function g(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -65,7 +65,7 @@ class h extends i.PureComponent {
       ringTarget: this.hitRef,
       ringClassName: m.__invalid_searchResultFocusRing,
       offset: 4,
-      children: (0, r.jsxs)("li", g(_({
+      children: (0, r.jsxs)("li", _(g({
         className: m.container
       }, t), {
         "aria-posinset": 1 + n + i,
@@ -112,7 +112,7 @@ class h extends i.PureComponent {
         let {
           default: e
         } = await Promise.all([n.e("16705"), n.e("17982")]).then(n.bind(n, 858341));
-        return n => (0, r.jsx)(e, g(_({}, n), {
+        return n => (0, r.jsx)(e, _(g({}, n), {
           message: t,
           channel: i
         }))

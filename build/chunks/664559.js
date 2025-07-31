@@ -1,6 +1,6 @@
-/** Chunk was on 68114 **/
+/** Chunk was on 24022 **/
 n.d(t, {
-  Z: () => i
+  Z: () => o
 }), n(388685), n(539854);
 var r = n(73800),
   s = n(768943),
@@ -10,7 +10,7 @@ function a() {
   return s.Z.getSavedMessages().map(e => e.saveData)
 }
 
-function i() {
+function o() {
   let [e, t] = r.useState(a), n = r.useRef(s.Z.getIsStale());
   return r.useEffect(() => {
     let e = s.Z.getLastChanged();

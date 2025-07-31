@@ -158,12 +158,15 @@ function D(e) {
     let {
       token: e
     } = s;
-    null != e && e.getFullMatch().trim().length > 0 ? (p.Z.requestMembers(l, e.getFullMatch().trim(), I), u.context.setQuery({
-      query: e.getFullMatch().trim(),
-      filters: {
-        guild: l
-      }
-    }), n = c.autocompletes, d = !1) : (u.context.clearQuery(), n = U(r, s, i))
+    if (null != e && e.getFullMatch().trim().length > 0) {
+      let t = (0, m.s5)(r);
+      null != t && p.Z.requestMembers(t, e.getFullMatch().trim(), I), u.context.setQuery({
+        query: e.getFullMatch().trim(),
+        filters: {
+          guild: null != t ? t : void 0
+        }
+      }), n = c.autocompletes, d = !1
+    } else u.context.clearQuery(), n = U(r, s, i)
   }
   return O[l] = N({
     searchContext: r,

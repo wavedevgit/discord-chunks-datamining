@@ -1,4 +1,4 @@
-/** Chunk was on 63774 **/
+/** Chunk was on 36672 **/
 n.d(t, {
   H: () => C
 }), n(953529);
@@ -15,8 +15,8 @@ var i = n(399606),
   p = n(863663),
   m = n(676651),
   f = n(623488),
-  _ = n(942833),
-  g = n(391181),
+  g = n(942833),
+  _ = n(391181),
   h = n(964793),
   b = n(226060),
   E = n(981631);
@@ -26,10 +26,10 @@ function C(e) {
     guildProductListing: t,
     guildId: n,
     location: C,
-    shouldShowFullDescriptionButton: O = !0,
-    hideRoleTag: v = !1,
-    lineClamp: y = 1,
-    cardWidth: x,
+    shouldShowFullDescriptionButton: v = !0,
+    hideRoleTag: O = !1,
+    lineClamp: x = 1,
+    cardWidth: y,
     cardHeight: I,
     thumbnailHeight: j,
     descriptionTextVariant: S = "text-sm/normal",
@@ -37,16 +37,16 @@ function C(e) {
   } = e, N = (0, i.e7)([c.Z], () => c.Z.getGuild(n), [n]), P = (0, i.e7)([s.Z], () => {
     var e;
     return s.Z.getRole(n, null != (e = null == t ? void 0 : t.role_id) ? e : E.lds)
-  }), A = (0, l.U)(t, 600), w = (0, _.C)(t), Z = (0, d.SO)(N), {
+  }), A = (0, l.U)(t, 600), w = (0, g.C)(t), Z = (0, d.SO)(N), {
     shouldHideGuildPurchaseEntryPoints: R
-  } = (0, o.uP)(n), D = (0, _.k)(t);
+  } = (0, o.uP)(n), D = (0, g.k)(t);
   if (null == N || R) return null;
   let L = () => (0, h.e)({
       guildId: n,
       guildProductListingId: t.id,
       analyticsLocation: C
     }),
-    M = (0, r.jsx)(g.m, {
+    M = (0, r.jsx)(_.m, {
       product: t,
       guildId: n,
       showEditProduct: Z,
@@ -82,14 +82,14 @@ function C(e) {
       sourceAnalyticsLocations: C
     }),
     productType: w,
-    shouldShowFullDescriptionButton: O,
+    shouldShowFullDescriptionButton: v,
     onShowFullDescription: L,
     onTapCard: L,
     actionMenu: M,
     showOpaqueBackground: T,
-    hideRoleTag: v,
-    lineClamp: y,
-    cardWidth: x,
+    hideRoleTag: O,
+    lineClamp: x,
+    cardWidth: y,
     cardHeight: I,
     thumbnailHeight: j,
     descriptionTextVariant: S,

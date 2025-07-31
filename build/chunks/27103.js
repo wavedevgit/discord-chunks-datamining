@@ -1,6 +1,6 @@
-/** Chunk was on 63774 **/
+/** Chunk was on 36672 **/
 n.d(t, {
-  Z: () => _
+  Z: () => g
 });
 var r = n(255367);
 n(73800);
@@ -16,12 +16,12 @@ var i = n(120356),
   m = n(388032),
   f = n(126759);
 
-function _(e) {
+function g(e) {
   let {
     message: t,
     compact: n,
     usernameHook: i
-  } = e, _ = (0, s.ZP)(t), g = i(_), {
+  } = e, g = (0, s.ZP)(t), _ = i(g), {
     avatarSrc: h,
     eventHandlers: {
       onMouseEnter: b,
@@ -70,8 +70,8 @@ function _(e) {
             [f.compact]: n
           }),
           children: m.intl.format(m.t.qntXNT, {
-            username: _.nick,
-            usernameHook: g
+            username: g.nick,
+            usernameHook: _
           })
         })]
       })

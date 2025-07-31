@@ -1,4 +1,4 @@
-/** Chunk was on 63774 **/
+/** Chunk was on 36672 **/
 n.d(t, {
   U: () => R,
   Z: () => D
@@ -14,16 +14,16 @@ var r, i = n(255367),
   p = n(481060),
   m = n(493683),
   f = n(529103),
-  _ = n(700582),
-  g = n(906732),
+  g = n(700582),
+  _ = n(906732),
   h = n(213609),
   b = n(541716),
   E = n(28546),
   C = n(963249),
-  O = n(594174),
-  v = n(626135),
-  y = n(51144),
-  x = n(479446),
+  v = n(594174),
+  O = n(626135),
+  x = n(51144),
+  y = n(479446),
   I = n(795448),
   j = n(441623),
   S = n(317271),
@@ -47,9 +47,9 @@ function D(e) {
     analyticsSection: M,
     glow: k,
     giftIntentSecondaryAction: U
-  } = e, F = (0, c.e7)([O.default], () => O.default.getCurrentUser()), {
+  } = e, F = (0, c.e7)([v.default], () => v.default.getCurrentUser()), {
     analyticsLocations: B
-  } = (0, g.ZP)(), G = (0, c.e7)([j.Z], () => j.Z.getFriendAnniversaryYears(r.id));
+  } = (0, _.ZP)(), G = (0, c.e7)([j.Z], () => j.Z.getFriendAnniversaryYears(r.id));
   l.useEffect(() => {
     (0, h.h)({
       name: s.ImpressionNames.GIFT_INTENT_CARD,
@@ -61,23 +61,23 @@ function D(e) {
       }
     })
   }, [t, n]);
-  let H = () => t === T.hX.FRIEND_ANNIVERSARY ? w.intl.formatToPlainString(w.t["L2s/Nz"], {
+  let V = () => t === T.hX.FRIEND_ANNIVERSARY ? w.intl.formatToPlainString(w.t["L2s/Nz"], {
       numberOfYears: G
-    }) : (0, x.Ou)(t),
-    V = "coachmark" === n,
-    z = V ? Z.innerContentCoachmark : Z.innerContent,
-    W = V ? Z.recipientUserAvatarCoachmark : Z.recipientUserAvatar,
-    K = V ? Z.currentUserAvatarCoachmark : Z.currentUserAvatar,
-    Y = V ? Z.subHeaderTextCoachmark : Z.subHeaderText,
-    X = V ? d.zx.Colors.BRAND : d.zx.Colors.WHITE,
-    q = V ? u.Z.colors.WHITE : u.Z.colors.BG_BRAND,
-    Q = V ? Z.buttonTextPrimaryCoachmark : Z.buttonTextPrimary,
-    J = V ? Z.buttonSecondaryCoachmark : Z.buttonSecondary,
-    $ = V ? Z.buttonTextSecondaryCoachmark : Z.buttonTextSecondary;
+    }) : (0, y.Ou)(t),
+    H = "coachmark" === n,
+    z = H ? Z.innerContentCoachmark : Z.innerContent,
+    W = H ? Z.recipientUserAvatarCoachmark : Z.recipientUserAvatar,
+    K = H ? Z.currentUserAvatarCoachmark : Z.currentUserAvatar,
+    Y = H ? Z.subHeaderTextCoachmark : Z.subHeaderText,
+    X = H ? d.zx.Colors.BRAND : d.zx.Colors.WHITE,
+    q = H ? u.Z.colors.WHITE : u.Z.colors.BG_BRAND,
+    Q = H ? Z.buttonTextPrimaryCoachmark : Z.buttonTextPrimary,
+    J = H ? Z.buttonSecondaryCoachmark : Z.buttonSecondary,
+    $ = H ? Z.buttonTextSecondaryCoachmark : Z.buttonTextSecondary;
   return (0, i.jsx)("div", {
     className: o()(Z.content, {
       [Z.outerGlow]: k,
-      [Z.contentCoachmark]: V
+      [Z.contentCoachmark]: H
     }),
     onMouseEnter: a,
     onMouseLeave: R,
@@ -89,12 +89,12 @@ function D(e) {
         className: Z.subContent,
         children: [(0, i.jsxs)("div", {
           className: Z.avatars,
-          children: [(0, i.jsx)(_.Z, {
+          children: [(0, i.jsx)(g.Z, {
             className: W,
             user: r,
             "aria-label": r.username,
             size: P.EF.SIZE_56
-          }), null != F && (0, i.jsx)(_.Z, {
+          }), null != F && (0, i.jsx)(g.Z, {
             className: K,
             user: F,
             "aria-label": r.username,
@@ -104,17 +104,17 @@ function D(e) {
           className: Z.textContainer,
           children: [(0, i.jsx)(p.Text, {
             variant: "text-md/medium",
-            color: V ? "header-primary" : "always-white",
+            color: H ? "header-primary" : "always-white",
             lineClamp: 3,
             children: t === T.hX.FRIEND_ANNIVERSARY ? w.intl.formatToPlainString(w.t.BWJvAA, {
-              friendUserName: y.ZP.getName(r)
-            }) : (0, x.Ou)(t)
+              friendUserName: x.ZP.getName(r)
+            }) : (0, y.Ou)(t)
           }), (0, i.jsx)(p.Text, {
             className: Y,
             variant: "text-sm/normal",
             children: t === T.hX.FRIEND_ANNIVERSARY ? w.intl.formatToPlainString(w.t.S3fdq6, {
               numberOfYears: G
-            }) : (0, x.Ou)(t)
+            }) : (0, y.Ou)(t)
           })]
         })]
       }), (0, i.jsxs)("div", {
@@ -122,7 +122,7 @@ function D(e) {
         children: [null != U && (0, i.jsx)(d.zx, {
           className: o()(Z.button, J),
           onClick: e => {
-            e.stopPropagation(), v.default.track(N.rMx.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
+            e.stopPropagation(), O.default.track(N.rMx.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
               gift_intent_type: t,
               cta_type: U
             }), U === T.X2.VIEW_ALL ? f.Z.transitionToSection(N.pJs.ALL, {
@@ -174,7 +174,7 @@ function D(e) {
                 object: N.qAy.BUTTON_CTA,
                 objectType: N.Qqv.GIFT
               },
-              giftMessage: H()
+              giftMessage: V()
             })
           },
           size: d.zx.Sizes.MEDIUM,

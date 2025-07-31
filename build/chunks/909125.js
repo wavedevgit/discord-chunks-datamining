@@ -4,10 +4,10 @@ r.d(t, {
 }), r(388685);
 var n = r(73800),
   i = r(619864),
-  a = r(672041),
-  s = r(981631);
-let l = i.v + s.vpv,
-  c = i.v / s.vpv;
+  s = r(672041),
+  a = r(981631);
+let c = i.v + a.vpv,
+  l = i.v / a.vpv;
 
 function o(e) {
   let {
@@ -17,13 +17,13 @@ function o(e) {
   n.useEffect(() => {
     r || u(t)
   }, [t, r]);
-  let d = o > i.v + s.vpv,
-    _ = (0, a.t)({
+  let d = o > i.v + a.vpv,
+    _ = (0, s.t)({
       location: "useSearchResultsPagination"
     });
   return {
     isPaginationTotalCountLimited: d && _,
-    paginationTotalCount: Math.min(o, l),
-    paginationMaxIndex: c
+    paginationTotalCount: Math.min(o, c),
+    paginationMaxIndex: l
   }
 }

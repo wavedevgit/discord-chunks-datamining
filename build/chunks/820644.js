@@ -1,28 +1,28 @@
-/** Chunk was on 63774 **/
-n.d(t, {
+/** Chunk was on 57539 **/
+n.d(e, {
   o: () => c
 });
-var r = n(255367);
+var i = n(255367);
 n(73800);
-var i = n(120356),
-  l = n.n(i),
-  a = n(481060),
-  o = n(774599),
-  s = n(986449);
+var a = n(120356),
+  l = n.n(a),
+  o = n(481060),
+  s = n(774599),
+  r = n(986449);
 
-function c(e) {
+function c(t) {
   let {
-    text: t
-  } = e;
-  return (0, r.jsxs)("div", {
-    className: l()(s.toast, o.toast),
-    children: [(0, r.jsx)(a.b7C, {
-      color: a.TVs.colors.TEXT_BRAND
-    }), (0, r.jsx)(a.Text, {
-      className: s.__invalid_content,
+    text: e
+  } = t;
+  return (0, i.jsxs)("div", {
+    className: l()(r.toast, s.toast),
+    children: [(0, i.jsx)(o.b7C, {
+      color: o.TVs.colors.TEXT_BRAND
+    }), (0, i.jsx)(o.Text, {
+      className: r.__invalid_content,
       color: "header-primary",
       variant: "text-md/normal",
-      children: t
+      children: e
     })]
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 68114 **/
+/** Chunk was on 24022 **/
 e.exports = {
   arrowBounce: "arrowBounce__49676",
   updateIconForeground: "updateIconForeground__49676",

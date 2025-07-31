@@ -1,4 +1,4 @@
-/** Chunk was on 63774 **/
+/** Chunk was on 36672 **/
 e.exports = {
   spine: "spine__9271d",
   systemMessageSpine: "systemMessageSpine__9271d",

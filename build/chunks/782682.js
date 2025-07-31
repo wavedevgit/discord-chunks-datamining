@@ -1,4 +1,4 @@
-/** Chunk was on 63774 **/
+/** Chunk was on 36672 **/
 e.exports = {
   searchIndexAnimation: "searchIndexAnimation_e1fee6",
   searchIndexBackground: "searchIndexBackground_e1fee6",

@@ -1,4 +1,4 @@
-/** Chunk was on 63774 **/
+/** Chunk was on 36672 **/
 n.d(t, {
   Z: () => C
 }), n(539854);
@@ -14,8 +14,8 @@ var r = n(255367),
   p = n(131704),
   m = n(592125),
   f = n(594174),
-  _ = n(823379),
-  g = n(358595),
+  g = n(823379),
+  _ = n(358595),
   h = n(981631),
   b = n(388032),
   E = n(273254);
@@ -25,26 +25,26 @@ function C(e) {
       invite: n,
       message: l,
       currentUserId: C,
-      onTransitionToInviteChannel: O,
-      onAcceptInstantInvite: v
+      onTransitionToInviteChannel: v,
+      onAcceptInstantInvite: O
     } = e,
-    y = C === l.author.id,
-    x = n.state === h.r2o.ACCEPTING,
+    x = C === l.author.id,
+    y = n.state === h.r2o.ACCEPTING,
     I = (0, o.e7)([m.Z], () => null != n.channel ? m.Z.getChannel(n.channel.id) : null, [n]);
   a()(null == I || I.isPrivate(), "must be a private channel");
   let {
     analyticsLocations: j
   } = (0, u.ZP)(c.Z.INVITE_EMBED), S = null != I, T = i.useCallback(() => {
     let e = "noop";
-    S ? (O(), e = "transition") : (v(), e = "accept"), (0, s.r$)({
+    S ? (v(), e = "transition") : (O(), e = "accept"), (0, s.r$)({
       invite: n,
       action: e,
       inviter_id: l.author.id,
       invite_message_id: l.id
     }, j)
-  }, [n, l, j, S, O, v]);
+  }, [n, l, j, S, v, O]);
   if (null == I) {
-    if (null == n.channel) return (0, r.jsx)(g.Z, {});
+    if (null == n.channel) return (0, r.jsx)(_.Z, {});
     I = (0, p.jD)(n.channel), t = null != n.channel && null != n.channel.recipients ? n.channel.recipients : []
   } else {
     t = I.recipients.reduce((e, t) => {
@@ -55,12 +55,12 @@ function C(e) {
     S && null != e && t.push(e)
   }
   let N = I.name;
-  (null == N || "" === N) && (N = t.length > 0 ? t.filter(_.lm).map(e => e.username).join(", ") : b.intl.string(b.t.LJpTRE));
+  (null == N || "" === N) && (N = t.length > 0 ? t.filter(g.lm).map(e => e.username).join(", ") : b.intl.string(b.t.LJpTRE));
   let P = b.intl.string(b.t.XpeFYm),
     A = d.Z.Button.Colors.GREEN;
   S && (P = b.intl.string(b.t.cEnaW1), A = d.Z.Button.Colors.PRIMARY);
   let w = b.intl.string(b.t["3p3/BA"]);
-  return y && (w = b.intl.string(b.t.qmtuXF)), (0, r.jsxs)(d.Z, {
+  return x && (w = b.intl.string(b.t.qmtuXF)), (0, r.jsxs)(d.Z, {
     children: [(0, r.jsx)(d.Z.Header, {
       text: w
     }), (0, r.jsxs)(d.Z.Body, {
@@ -78,7 +78,7 @@ function C(e) {
         })]
       }), (0, r.jsx)(d.Z.Button, {
         onClick: T,
-        submitting: x,
+        submitting: y,
         isDisabled: S,
         color: A,
         children: P
