@@ -3,8 +3,8 @@ n.d(t, {
   R: () => l
 });
 var o = n(818083),
-  i = n(751823);
-let r = (0, o.B)({
+  r = n(751823);
+let i = (0, o.B)({
   kind: "user",
   id: "2025-07_animated_faces",
   label: "AV survey animated faces",
@@ -26,12 +26,12 @@ function l(e) {
     autoTrackExposure: n = !0
   } = e, {
     isInHoldout: o
-  } = i.L.useExperiment({
+  } = r.L.useExperiment({
     location: t
   }, {
     autoTrackExposure: n
   });
-  return r.useExperiment({
+  return i.useExperiment({
     location: t
   }, {
     disable: o,

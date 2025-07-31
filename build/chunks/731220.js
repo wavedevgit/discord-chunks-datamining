@@ -1,28 +1,28 @@
 /** Chunk was on 11298 **/
 n.d(t, {
-  e: () => a
+  e: () => r
 }), n(388685);
 var l = n(73800),
-  i = n(957115),
-  r = n(257126);
+  a = n(957115),
+  i = n(257126);
 
-function a(e) {
+function r(e) {
   let {
     getOptions: t
   } = e, n = l.useMemo(() => {
     let e = t();
-    return (0, i.Bi)(e, r.Ef)
-  }, [t]), [a, u] = l.useState(null), [s, o] = l.useState(""), [b, c] = l.useState(!1), d = l.useCallback(e => {
-    c(!0), u(e)
+    return (0, a.Bi)(e, i.Ef)
+  }, [t]), [r, u] = l.useState(null), [s, b] = l.useState(""), [d, o] = l.useState(!1), c = l.useCallback(e => {
+    o(!0), u(e)
   }, []), f = l.useCallback(e => {
-    o(e)
+    b(e)
   }, []);
   return l.useMemo(() => ({
     options: n,
-    selectedOption: a,
+    selectedOption: r,
     freeformText: s,
-    isFreeformEnabled: b,
-    selectOption: d,
+    isFreeformEnabled: d,
+    selectOption: c,
     onFreeformTextChange: f
-  }), [n, a, s, b, d, f])
+  }), [n, r, s, d, c, f])
 }

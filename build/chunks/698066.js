@@ -1,21 +1,23 @@
 /** Chunk was on 50461 **/
 n.d(t, {
-  Z: () => o
+  Z: () => i
 });
 var r = n(626135),
-  i = n(981631);
+  l = n(981631);
 
-function o(e) {
+function i(e) {
   let {
     problem: t,
     stream: n,
-    feedback: o,
-    streamApplication: l,
+    feedback: i,
+    streamApplication: o,
     analyticsData: a,
-    location: c,
-    rating: s = null
+    location: s,
+    rating: c = null,
+    category: u,
+    variant: m
   } = e;
-  r.default.track(i.rMx.STREAM_REPORT_PROBLEM, function(e) {
+  r.default.track(l.rMx.STREAM_REPORT_PROBLEM, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -34,13 +36,15 @@ function o(e) {
     return e
   }({
     reason: t,
+    category: u,
+    reason_variant: m,
     streamer_user_id: n.ownerId,
     stream_channel_id: n.channelId,
     guild_id: n.guildId,
-    application_id: null != l ? l.id : null,
-    application_name: null != l ? l.name : null,
-    location: c,
-    rating: s,
-    feedback: o
+    application_id: null != o ? o.id : null,
+    application_name: null != o ? o.name : null,
+    location: s,
+    rating: c,
+    feedback: i
   }, a))
 }
