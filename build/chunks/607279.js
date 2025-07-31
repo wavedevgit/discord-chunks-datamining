@@ -12,7 +12,7 @@ var r, i = n(255367),
   u = n(388032),
   d = n(449101);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -21,14 +21,14 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -44,8 +44,8 @@ class m extends(r = a.Component) {
       searchTerm: r,
       inputClassName: a,
       className: o,
-      onChange: f,
-      onFocus: _,
+      onChange: _,
+      onFocus: f,
       onBlur: m,
       onKeyPress: g,
       autoComplete: E,
@@ -69,8 +69,8 @@ class m extends(r = a.Component) {
           maxLength: p,
           className: d.searchBoxInputWrapper,
           inputClassName: s()(d.searchBoxInput, a),
-          onChange: f,
-          onFocus: _,
+          onChange: _,
+          onFocus: f,
           onBlur: m,
           onKeyPress: g,
           value: I ? r : "",
@@ -102,7 +102,7 @@ class m extends(r = a.Component) {
     })
   }
   constructor(...e) {
-    super(...e), f(this, "_textInputRef", a.createRef()), f(this, "_containerRef", a.createRef()), f(this, "handleClear", () => {
+    super(...e), _(this, "_textInputRef", a.createRef()), _(this, "_containerRef", a.createRef()), _(this, "handleClear", () => {
       let {
         onClear: e,
         forwardedRef: t
@@ -113,9 +113,9 @@ class m extends(r = a.Component) {
     })
   }
 }
-f(m, "defaultProps", {
+_(m, "defaultProps", {
   autoComplete: !1
 });
-let g = a.forwardRef((e, t) => (0, i.jsx)(m, _({
+let g = a.forwardRef((e, t) => (0, i.jsx)(m, f({
   forwardedRef: t
 }, e)))

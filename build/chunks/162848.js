@@ -94,7 +94,7 @@ function o(e, t) {
           if (!r) throw Error("Unexpected symbol " + o.symbol + ", expected weekday");
           n.byweekday.push(i.Ci[r]), o.nextSymbol()
         }
-        _(), p();
+        f(), p();
         break;
       case "january":
       case "february":
@@ -127,7 +127,7 @@ function o(e, t) {
       t = o.accept("the");
     if (e || t)
       do {
-        var r = f(),
+        var r = _(),
           a = d(),
           s = u();
         if (r) a ? (o.nextSymbol(), n.byweekday || (n.byweekday = []), n.byweekday.push(i.Ci[a].nth(r))) : (n.bymonthday || (n.bymonthday = []), n.bymonthday.push(r), o.accept("day(s)"));
@@ -206,7 +206,7 @@ function o(e, t) {
     }
   }
 
-  function f() {
+  function _() {
     switch (o.symbol) {
       case "last":
         return o.nextSymbol(), -1;
@@ -225,12 +225,12 @@ function o(e, t) {
     }
   }
 
-  function _() {
+  function f() {
     o.accept("on"), o.accept("the");
-    var e = f();
+    var e = _();
     if (e)
       for (n.bymonthday = [e], o.nextSymbol(); o.accept("comma");) {
-        if (!(e = f())) throw Error("Unexpected symbol " + o.symbol + "; expected monthday");
+        if (!(e = _())) throw Error("Unexpected symbol " + o.symbol + "; expected monthday");
         n.bymonthday.push(e), o.nextSymbol()
       }
   }

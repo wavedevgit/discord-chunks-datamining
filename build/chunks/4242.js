@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Pb: () => f,
+  Pb: () => _,
   ic: () => s,
   t1: () => c,
   w$: () => d,
@@ -59,7 +59,7 @@ function d() {
     }
   }
 }
-let f = e => null == e ? null : {
+let _ = e => null == e ? null : {
   src: e.asset,
   palette: c(e.palette),
   imgAlt: e.label

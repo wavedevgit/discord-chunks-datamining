@@ -11,8 +11,8 @@ var r, i = n(135273),
   c = n(856472),
   u = n(633302),
   d = n(41776),
-  f = n(93093),
-  _ = n(430824),
+  _ = n(93093),
+  f = n(430824),
   p = n(70956),
   h = n(373228),
   m = n(378233);
@@ -84,8 +84,8 @@ function D(e) {
     stickers: t
   } = e;
   for (let [e, n] of t)
-    if (f.Z.isMember(e) && !C.has(e)) {
-      let t = _.Z.getGuild(e);
+    if (_.Z.isMember(e) && !C.has(e)) {
+      let t = f.Z.getGuild(e);
       for (let e of n) L(e, !0, t);
       R(e, n)
     }
@@ -137,16 +137,16 @@ let L = function(e) {
       })), T.set(e.id, a)
     }
   },
-  M = (e, t, n) => {
+  k = (e, t, n) => {
     v.set(e.id, e);
     let r = [...S];
     if (t) {
       let t = r.findIndex(t => t.id === e.id); - 1 !== t ? r[t] = e : r.push(e), S = r
     }(t || n) && e.stickers.forEach(e => L(e))
   },
-  k = () => {
+  M = () => {
     C.forEach((e, t) => {
-      let n = _.Z.getGuild(t);
+      let n = f.Z.getGuild(t);
       null != n && e.forEach(e => x(e, n))
     }), S.forEach(e => {
       e.stickers.forEach(e => x(e))
@@ -163,7 +163,7 @@ let L = function(e) {
   };
 
 function G(e) {
-  let t = _.Z.getGuild(e.id);
+  let t = f.Z.getGuild(e.id);
   null != t && null != e.stickers.items && (e.stickers.items.forEach(e => L(e, !0, t)), R(t.id, e.stickers.items))
 }
 
@@ -193,14 +193,14 @@ let F = () => {
     let {
       packs: t
     } = e;
-    t.forEach(e => M(e, !0)), A = Date.now(), N = !1
+    t.forEach(e => k(e, !0)), A = Date.now(), N = !1
   },
   Y = e => {
     let {
       pack: t,
       ingestStickers: n
     } = e;
-    M(t, !1, n)
+    k(t, !1, n)
   },
   W = e => {
     let {
@@ -242,7 +242,7 @@ let F = () => {
   };
 class X extends(r = a.ZP.Store) {
   initialize() {
-    this.waitFor(s.Z, f.Z, _.Z)
+    this.waitFor(s.Z, _.Z, f.Z)
   }
   get isLoaded() {
     return 0 !== O
@@ -251,7 +251,7 @@ class X extends(r = a.ZP.Store) {
     return O
   }
   get stickerMetadata() {
-    return w(), null == T && (T = new Map, k()), T
+    return w(), null == T && (T = new Map, M()), T
   }
   get hasLoadedStickerPacks() {
     return null != A && A + P > Date.now()

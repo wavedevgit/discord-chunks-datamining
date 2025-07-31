@@ -1,27 +1,28 @@
-/** Chunk was on 73021 **/
-n.d(t, {
+/** Chunk was on 23746 **/
+"use strict";
+r.d(t, {
   Ae: () => d,
-  Qe: () => m,
+  Qe: () => h,
   U0: () => p,
   bV: () => u,
-  uZ: () => c
-}), n(410992), n(227481), n(730884), n(20464), n(341884), n(364341), n(629680), n(505025), n(918970), n(121784), n(644351), n(146733), n(704826), n(35282), n(781311);
-var i, r, s, a = n(943418);
-let l = null != (s = null == (i = window) ? void 0 : i.crypto) ? s : null == (r = window) ? void 0 : r.msCrypto,
-  o = "Uint8Array" in window,
-  c = null != l && "getRandomValues" in l && o,
-  d = "PublicKeyCredential" in window && o;
+  uZ: () => l
+}), r(410992), r(227481), r(730884), r(20464), r(341884), r(364341), r(629680), r(505025), r(918970), r(121784), r(644351), r(146733), r(704826), r(35282), r(781311);
+var n, i, s, o = r(943418);
+let a = null != (s = null == (n = window) ? void 0 : n.crypto) ? s : null == (i = window) ? void 0 : i.msCrypto,
+  c = "Uint8Array" in window,
+  l = null != a && "getRandomValues" in a && c,
+  d = "PublicKeyCredential" in window && c;
 
 function u() {
   var e;
-  return e = l.getRandomValues(new Uint8Array(20)), a.encode(e).toString("utf8").replace(/=/g, "").toLowerCase().replace(/(\w{4})/g, "$1 ").trim()
+  return e = a.getRandomValues(new Uint8Array(20)), o.encode(e).toString("utf8").replace(/=/g, "").toLowerCase().replace(/(\w{4})/g, "$1 ").trim()
 }
 
-function m(e) {
+function h(e) {
   return e.replace(/[\s._-]+/g, "").toUpperCase()
 }
 
 function p(e, t) {
-  let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "Discord";
-  return "otpauth://totp/".concat(encodeURI(n), ":").concat(encodeURI(e), "?secret=").concat(m(t), "&issuer=").concat(encodeURIComponent(n))
+  let r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "Discord";
+  return "otpauth://totp/".concat(encodeURI(r), ":").concat(encodeURI(e), "?secret=").concat(h(t), "&issuer=").concat(encodeURIComponent(r))
 }

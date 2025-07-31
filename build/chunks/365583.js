@@ -14,8 +14,8 @@ var i = n(442837),
   c = n(841784),
   u = n(833664),
   d = n(503438),
-  f = n(579630),
-  _ = n(26033),
+  _ = n(579630),
+  f = n(26033),
   p = n(594174),
   h = n(324745),
   m = n(981631),
@@ -27,7 +27,7 @@ function b(e) {
     activity: t,
     onOpenGameSettings: n
   } = e;
-  return (0, f.Z)(t) || (0, d.Z)(t) || (0, l.Z)(t) ? E : (0, u.Z)(t) && !(0, c.Z)(t) ? n : null
+  return (0, _.Z)(t) || (0, d.Z)(t) || (0, l.Z)(t) ? E : (0, u.Z)(t) && !(0, c.Z)(t) ? n : null
 }
 
 function y(e) {
@@ -35,7 +35,7 @@ function y(e) {
     entry: t,
     onOpenGameSettings: n
   } = e;
-  return (0, _.aA)(t) || (0, _.y0)(t) || (0, _.dU)(t) ? E : (0, _.dX)(t) ? n : null
+  return (0, f.aA)(t) || (0, f.y0)(t) || (0, f.dU)(t) ? E : (0, f.dX)(t) ? n : null
 }
 
 function O(e) {
@@ -68,18 +68,18 @@ function v(e) {
       var e;
       return (null == (e = p.default.getCurrentUser()) ? void 0 : e.id) === t.id
     })) return null;
-  let f = O({
+  let _ = O({
     activity: n,
     entry: o,
     onOpenGameSettings: d
   });
-  return null == f ? null : (0, r.jsx)(a.sNh, {
+  return null == _ ? null : (0, r.jsx)(a.sNh, {
     id: "manage-privacy",
     label: g.intl.string(g.t.anfNPT),
     action: () => {
       null == l || l({
         action: "PRESS_MANAGE_PRIVACY_MENU_ITEM"
-      }), f(), (0, s.i)(u), null == c || c()
+      }), _(), (0, s.i)(u), null == c || c()
     }
   })
 }

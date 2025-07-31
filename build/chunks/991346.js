@@ -1,10 +1,10 @@
-/** Chunk was on 73021 **/
+/** Chunk was on 22243 **/
 n.d(t, {
   Gj: () => G,
   Pt: () => V,
   VO: () => H,
   ji: () => Y,
-  q8: () => W
+  q8: () => z
 }), n(836215), n(472816), n(794429), n(388685), n(467055), n(539854);
 var i = n(73800),
   r = n(442837),
@@ -24,8 +24,8 @@ var i = n(73800),
   x = n(725727),
   _ = n(977156),
   j = n(921157),
-  E = n(667172),
-  O = n(237292),
+  O = n(667172),
+  E = n(237292),
   C = n(314897),
   v = n(906467),
   S = n(283595),
@@ -98,10 +98,10 @@ function V() {
       location: "settings"
     }),
     H = null != (n = null == (e = y.default.getCurrentUser()) ? void 0 : e.isStaff()) && n,
-    W = (0, O.y0)({
+    z = (0, E.y0)({
       location: "settings"
     }),
-    z = (0, E.v4)({
+    W = (0, O.v4)({
       location: "settings"
     }),
     Y = (0, l.Q)(),
@@ -153,8 +153,8 @@ function V() {
     shouldMergeGameSettings: G,
     isKeywordFilteringEnabled: F,
     isStaff: H,
-    isInappropriateConversationWarningEnabled: W,
-    isInapproprateConversationsDefaultOn: z,
+    isInappropriateConversationWarningEnabled: z,
+    isInapproprateConversationsDefaultOn: W,
     paymentsBlocked: Y,
     isEligibleForQuests: K,
     isStricterMessageRequestsEnabled: Q,
@@ -172,7 +172,7 @@ function V() {
     activeInputProfile: el,
     isInputProfileCustom: eo,
     isGoreContentFilteringEnabled: ec
-  }), [J, V, en, ei, q, et, X, $, k, ee, K, z, W, F, M, H, Q, L, Y, G, P, v, er, es, ea, el, eo, ec])
+  }), [J, V, en, ei, q, et, X, $, k, ee, K, W, z, F, M, H, Q, L, Y, G, P, v, er, es, ea, el, eo, ec])
 }
 
 function G(e) {
@@ -219,7 +219,7 @@ function G(e) {
 
 function F(e, t, n) {
   let i = [],
-    r = z(t),
+    r = W(t),
     s = function(e, t) {
       let n = new Map;
       return null != t && t.forEach(t => {
@@ -292,7 +292,7 @@ function H() {
   return i.useMemo(() => F(r, e), [r, e])
 }
 
-function W(e) {
+function z(e) {
   let t = V(),
     n = function() {
       let {
@@ -320,7 +320,7 @@ function W(e) {
   return i.useMemo(() => F(n, t, new Set(e)), [n, t, e])
 }
 
-function z(e) {
+function W(e) {
   return new Map(Object.entries(e).filter(e => {
     let [t, n] = e;
     return n.section !== a.ID.CUSTOM && null != n.searchableTitles && (null == n.predicate || n.predicate())
@@ -328,7 +328,7 @@ function z(e) {
 }
 
 function Y(e) {
-  return Array.from(z(e).entries()).map(e => {
+  return Array.from(W(e).entries()).map(e => {
     let [t, n] = e;
     return [t, n.searchableTitles]
   })

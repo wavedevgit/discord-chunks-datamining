@@ -46,8 +46,8 @@ function d(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let f = null,
-  _ = null,
+let _ = null,
+  f = null,
   p = {},
   h = {};
 
@@ -82,7 +82,7 @@ function b(e) {
     user: t,
     sessionId: n
   } = e;
-  f = t.id, _ = n
+  _ = t.id, f = n
 }
 
 function y(e) {
@@ -90,7 +90,7 @@ function y(e) {
     user: t,
     sessionId: n
   } = e;
-  f = t.id, _ = n
+  _ = t.id, f = n
 }
 
 function O(e) {
@@ -115,8 +115,8 @@ function v(e) {
       channelId: a,
       guildId: s
     } = t;
-    if (null == a && r === f)
-      if (i !== _) return e;
+    if (null == a && r === _)
+      if (i !== f) return e;
       else p = {}, h = {};
     else {
       if (null != a || (null == (n = p[r]) ? void 0 : n[null != s ? s : o.kod]) == null) return e;

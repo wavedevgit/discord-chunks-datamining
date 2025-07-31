@@ -13,8 +13,8 @@ var r = n(255367),
   c = n(692547),
   u = n(481060),
   d = n(220082),
-  f = n(583405),
-  _ = n(313201),
+  _ = n(583405),
+  f = n(313201),
   p = n(279745),
   h = n(695346),
   m = n(451478),
@@ -104,15 +104,15 @@ function C(e) {
     themePadding: P,
     pendingAccentColor: w,
     animateOnHover: D = !1
-  } = e, L = (0, _.Dt)(), [x, M] = i.useState(!1), k = (0, l.e7)([m.Z], () => m.Z.isFocused()), j = h.QK.getSetting(), {
+  } = e, L = (0, f.Dt)(), [x, k] = i.useState(!1), M = (0, l.e7)([m.Z], () => m.Z.isFocused()), j = h.QK.getSetting(), {
     bannerSrc: U,
     status: G
   } = (0, E.Z)({
     displayProfile: a,
     pendingBanner: O,
     size: C,
-    canAnimate: D || !j ? x : k
-  }), B = (0, u.dQu)(c.Z.unsafe_rawColors.PRIMARY_800).hex(), V = n.getAvatarURL(b, (0, u.pxk)(T)), F = (0, s._i)((0, d.ZP)(V, B, !1)), Z = (0, f.Z)(null != (t = null != w ? w : null == a ? void 0 : a.primaryColor) ? t : F).hex, H = N(T), Y = H + S - P, W = R - A - P;
+    canAnimate: D || !j ? x : M
+  }), B = (0, u.dQu)(c.Z.unsafe_rawColors.PRIMARY_800).hex(), V = n.getAvatarURL(b, (0, u.pxk)(T)), F = (0, s._i)((0, d.ZP)(V, B, !1)), Z = (0, _.Z)(null != (t = null != w ? w : null == a ? void 0 : a.primaryColor) ? t : F).hex, H = N(T), Y = H + S - P, W = R - A - P;
   return (0, r.jsxs)("svg", {
     className: y.mask,
     viewBox: "0 0 ".concat(C, " ").concat(R),
@@ -143,8 +143,8 @@ function C(e) {
       mask: "url(#".concat(L, ")"),
       children: [v, (0, r.jsxs)("div", {
         className: o()(y.banner, I),
-        onMouseMove: () => M(!0),
-        onMouseLeave: () => M(!1),
+        onMouseMove: () => k(!0),
+        onMouseLeave: () => k(!1),
         style: {
           height: R,
           minHeight: R,

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => f,
+  ZP: () => _,
   oY: () => u,
   y: () => c
 });
@@ -30,7 +30,7 @@ function u(e, t, n) {
 function d(e, t, n) {
   return (0, r.e7)([a.ZP, i.Z, o.Z], () => u(e, t, n))
 }
-let f = {
+let _ = {
   getNickname: c,
   getName: u,
   useName: d

@@ -1,5 +1,4 @@
-/** Chunk was on web.js **/
-"use strict";
+/** Chunk was on 96887 **/
 e.exports = {
   fadeInAvatarImg: "fadeInAvatarImg_d71c71",
   fadeIn: "fadeIn_d71c71",

@@ -1,4 +1,4 @@
-/** Chunk was on 73021 **/
+/** Chunk was on 22243 **/
 n.d(t, {
   Z: () => et
 }), n(388685);
@@ -20,8 +20,8 @@ var i = n(255367),
   x = n(81643),
   _ = n(952306),
   j = n(299206),
-  E = n(295474),
-  O = n(144114),
+  O = n(295474),
+  E = n(144114),
   C = n(918505),
   v = n(332473),
   S = n(921801),
@@ -63,7 +63,7 @@ function H(e) {
   return e
 }
 
-function W(e, t) {
+function z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -75,14 +75,14 @@ function W(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let z = w.ZP.getEnableHardwareAcceleration() ? m.Xo$ : m.qEK;
+let W = w.ZP.getEnableHardwareAcceleration() ? m.Xo$ : m.qEK;
 
 function Y(e) {
   var t, s;
   let {
     className: l,
     user: o
-  } = e, c = r.useRef(null), u = (0, C.o9)(), p = (0, v.b)(), g = (0, E.gS)(), h = null != (s = null == g || null == (t = g.nick) ? void 0 : t[0]) ? s : null, [f, b] = r.useState(!1);
+  } = e, c = r.useRef(null), u = (0, C.o9)(), p = (0, v.b)(), g = (0, O.gS)(), h = null != (s = null == g || null == (t = g.nick) ? void 0 : t[0]) ? s : null, [f, b] = r.useState(!1);
   r.useEffect(() => {
     b(null != c.current && c.current.scrollWidth > c.current.clientWidth)
   }, [o.username]);
@@ -118,7 +118,7 @@ function Y(e) {
       className: F.pomeloWarning,
       children: (0, i.jsx)(m.ua7, {
         text: G.intl.string(G.t.HHC5Z2),
-        children: e => (0, i.jsx)(m.Mgn, W(H({
+        children: e => (0, i.jsx)(m.Mgn, z(H({
           size: "custom",
           width: 20,
           height: 20
@@ -131,7 +131,7 @@ function Y(e) {
       children: (0, i.jsx)(m.ua7, {
         text: h,
         "aria-label": !1,
-        children: e => (0, i.jsx)(m.Mgn, W(H({
+        children: e => (0, i.jsx)(m.Mgn, z(H({
           size: "custom",
           width: 20,
           height: 20
@@ -144,7 +144,7 @@ function Y(e) {
       children: e => (0, i.jsx)("div", {
         "data-button-hoisted-classname-wrapper": !0,
         className: F.fieldButton,
-        children: (0, i.jsx)(m.zxk, W(H({
+        children: (0, i.jsx)(m.zxk, z(H({
           variant: "secondary",
           size: "sm",
           text: f ? G.intl.string(G.t["16kTw8"]) : G.intl.string(G.t.bt75u7)
@@ -177,7 +177,7 @@ function K(e) {
   let {
     user: s,
     className: l
-  } = e, o = (0, E.gS)(), c = null != (n = null == o || null == (t = o.nick) ? void 0 : t[0]) ? n : null, u = Z.ZP.getGlobalName(s), p = r.useRef(null), [g, h] = r.useState(!1);
+  } = e, o = (0, O.gS)(), c = null != (n = null == o || null == (t = o.nick) ? void 0 : t[0]) ? n : null, u = Z.ZP.getGlobalName(s), p = r.useRef(null), [g, h] = r.useState(!1);
   return r.useEffect(() => {
     h(null != p.current && p.current.scrollWidth > p.current.clientWidth)
   }, [u]), (0, i.jsxs)("div", {
@@ -205,7 +205,7 @@ function K(e) {
       children: (0, i.jsx)(m.ua7, {
         text: c,
         "aria-label": !1,
-        children: e => (0, i.jsx)(m.Mgn, W(H({
+        children: e => (0, i.jsx)(m.Mgn, z(H({
           size: "custom",
           width: 20,
           height: 20
@@ -365,11 +365,11 @@ function J(e) {
         color: u.zx.Colors.PRIMARY,
         "aria-label": G.intl.string(G.t.Rpn4Aw),
         onClick: function() {
-          (0, m.h7j)(e => (0, i.jsx)(h.Z, W(H({}, e), {
+          (0, m.h7j)(e => (0, i.jsx)(h.Z, z(H({}, e), {
             title: G.intl.string(G.t["3CTiKi"]),
             children: s.hasFlag(M.xW$.MFA_SMS) ? G.intl.string(G.t.jrhJys) : void 0,
             actionText: G.intl.string(G.t.N86XcH),
-            handleSubmit: e => O.Z.removePhone(e, O.L.USER_SETTINGS_UPDATE)
+            handleSubmit: e => E.Z.removePhone(e, E.L.USER_SETTINGS_UPDATE)
           })))
         },
         children: G.intl.string(G.t.N86XcH)
@@ -387,7 +387,7 @@ function J(e) {
                 default: e
               } = await Promise.resolve().then(n.bind(n, 607018));
               return t => (0, i.jsx)(e, H({
-                reason: O.L.USER_SETTINGS_UPDATE
+                reason: E.L.USER_SETTINGS_UPDATE
               }, t))
             }, {
               modalKey: U.M
@@ -420,7 +420,7 @@ function Q(e) {
         children: n
       })
     },
-    children: e => (0, i.jsx)(m.P3F, W(H({}, e), {
+    children: e => (0, i.jsx)(m.P3F, z(H({}, e), {
       innerRef: a,
       className: F.overflowMenuButton,
       "aria-label": G.intl.string(G.t.DEoVWV),
@@ -503,7 +503,7 @@ function et() {
       themePadding: 0
     }), (0, i.jsxs)("div", {
       className: F.userInfo,
-      children: [(0, i.jsx)(z, {
+      children: [(0, i.jsx)(W, {
         className: F.avatar,
         src: d,
         avatarDecoration: u,

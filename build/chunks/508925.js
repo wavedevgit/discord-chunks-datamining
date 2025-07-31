@@ -1,23 +1,22 @@
-/** Chunk was on web.js **/
-"use strict";
-n.d(t, {
+/** Chunk was on 96887 **/
+r.d(t, {
   b: () => l
 });
-var r = n(255367),
-  i = n(120356),
-  a = n.n(i),
-  o = n(755419),
-  s = n(157570);
+var a = r(255367),
+  n = r(120356),
+  i = r.n(n),
+  s = r(755419),
+  o = r(157570);
 let l = e => {
   let {
     product: t,
-    animationState: n,
-    className: i
-  } = e, l = o.K[t.skuId];
-  return null != l ? (0, r.jsx)("div", {
-    className: a()(s.externalProductWrapper, i),
+    animationState: r,
+    className: n
+  } = e, l = s.K[t.skuId];
+  return null != l ? (0, a.jsx)("div", {
+    className: i()(o.externalProductWrapper, n),
     children: null != l.render && l.render({
-      animationState: n,
+      animationState: r,
       alt: t.name
     })
   }) : null

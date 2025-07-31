@@ -50,14 +50,14 @@ e.exports = function(e) {
         t.data._beginMatch !== e[1] && t.ignoreMatch()
       }
     },
-    f = e.END_SAME_AS_BEGIN({
+    _ = e.END_SAME_AS_BEGIN({
       begin: /<<<[ \t]*'(\w+)'\n/,
       end: /[ \t]*(\w+)\b/
     }),
-    _ = "[ 	\n]",
+    f = "[ 	\n]",
     p = {
       scope: "string",
-      variants: [u, c, d, f]
+      variants: [u, c, d, _]
     },
     h = {
       scope: "number",
@@ -88,7 +88,7 @@ e.exports = function(e) {
     y = e => e.map(e => e.replace(/\|\d+$/, "")),
     O = {
       variants: [{
-        match: [/new/, t.concat(_, "+"), t.concat("(?!", y(E).join("\\b|"), "\\b)"), i],
+        match: [/new/, t.concat(f, "+"), t.concat("(?!", y(E).join("\\b|"), "\\b)"), i],
         scope: {
           1: "keyword",
           4: "title.class"
@@ -139,7 +139,7 @@ e.exports = function(e) {
     },
     A = {
       relevance: 0,
-      match: [/\b/, t.concat("(?!fn\\b|function\\b|", y(g).join("\\b|"), "|", y(E).join("\\b|"), "\\b)"), r, t.concat(_, "*"), t.lookahead(/(?=\()/)],
+      match: [/\b/, t.concat("(?!fn\\b|function\\b|", y(g).join("\\b|"), "|", y(E).join("\\b|"), "\\b)"), r, t.concat(f, "*"), t.lookahead(/(?=\()/)],
       scope: {
         3: "title.function.invoke"
       },

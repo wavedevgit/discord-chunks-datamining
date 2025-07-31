@@ -15,9 +15,9 @@ var r = n(73800),
   c = n(509545),
   u = n(74538),
   d = n(981631),
-  f = n(474936);
+  _ = n(474936);
 
-function _(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -33,7 +33,7 @@ function p(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
@@ -41,7 +41,7 @@ function p(e) {
 let h = 10027;
 
 function m(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [...f.YQ];
+  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [..._.YQ];
   return null == e || c.Z.hasPaymentSourceForSKUIds(e, t) ? Promise.resolve() : new Promise((e, n) => {
     o.Z.wait(async () => {
       try {
@@ -82,7 +82,7 @@ function b(e) {
   } : {
     currency: t,
     loaded: !1
-  }), f = (0, l.V)(o), _ = JSON.stringify(o), E = r.useRef(o);
+  }), _ = (0, l.V)(o), f = JSON.stringify(o), E = r.useRef(o);
   r.useEffect(() => {
     E.current = o
   }), r.useEffect(() => {
@@ -105,10 +105,10 @@ function b(e) {
         loaded: !1
       })
     })()
-  }, [i, _, n, a, f, s]);
-  let b = u.paymentSourceId !== i || null == n || !f || !0 !== u.loaded;
+  }, [i, f, n, a, _, s]);
+  let b = u.paymentSourceId !== i || null == n || !_ || !0 !== u.loaded;
   return {
-    hasFetchedSubscriptionPlans: f,
+    hasFetchedSubscriptionPlans: _,
     priceOptions: u,
     setCurrency: e => {
       d({

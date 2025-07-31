@@ -1,4 +1,4 @@
-/** Chunk was on 73021 **/
+/** Chunk was on 22243 **/
 n.d(t, {
   e: () => h
 }), n(388685);
@@ -40,8 +40,8 @@ function h(e) {
         position: "bottom",
         align: "center"
       },
-      size: E = "md",
-      onStepChange: O,
+      size: O = "md",
+      onStepChange: E,
       onRequestClose: C,
       popoverRef: v,
       shouldShow: S
@@ -65,8 +65,8 @@ function h(e) {
   r.useEffect(() => {
     S && I(0)
   }, [S]), r.useEffect(() => {
-    null == O || O(N)
-  }, [N, O]);
+    null == E || E(N)
+  }, [N, E]);
   let y = _[N],
     A = N + 1 === _.length,
     P = r.useCallback(() => {
@@ -96,7 +96,7 @@ function h(e) {
         colorMix: null != y.gradientColor
       }), null != y.asset ? (0, i.jsx)(o.V, {
         asset: y.asset,
-        size: E
+        size: O
       }) : null, (0, i.jsx)(u.Y, {
         title: y.title,
         body: y.body,

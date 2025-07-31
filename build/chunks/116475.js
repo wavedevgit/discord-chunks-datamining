@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => _
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -19,11 +19,11 @@ function u(e) {
     delta: i
   } = e, a = t > window.innerWidth, o = n > window.innerHeight, s = (window.innerWidth - t) / 2 + r.x, l = (window.innerHeight - n) / 2 + r.y, c = (window.innerWidth + t) / 2 + r.x, u = (window.innerHeight + n) / 2 + r.y, {
     x: d,
-    y: f
+    y: _
   } = r;
-  return a && (d += i.x, s + i.x > 0 && (d = (t - window.innerWidth) / 2), c + i.x < window.innerWidth && (d = (window.innerWidth - t) / 2)), o && (f += i.y, l + i.y > 0 && (f = (n - window.innerHeight) / 2), u + i.y < window.innerHeight && (f = (window.innerHeight - n) / 2)), {
+  return a && (d += i.x, s + i.x > 0 && (d = (t - window.innerWidth) / 2), c + i.x < window.innerWidth && (d = (window.innerWidth - t) / 2)), o && (_ += i.y, l + i.y > 0 && (_ = (n - window.innerHeight) / 2), u + i.y < window.innerHeight && (_ = (window.innerHeight - n) / 2)), {
     x: d,
-    y: f
+    y: _
   }
 }
 
@@ -33,8 +33,8 @@ function d(e) {
   } = e, {
     scale: n,
     x: d,
-    y: f,
-    setOffset: _,
+    y: _,
+    setOffset: f,
     zoomed: p,
     setZoomed: h
   } = (0, l.Y)(), {
@@ -50,14 +50,14 @@ function d(e) {
       height: y * n.goal,
       offset: {
         x: d.goal,
-        y: f.goal
+        y: _.goal
       },
       delta: {
         x: e,
         y: t
       }
     });
-    _(r.x, r.y, {
+    f(r.x, r.y, {
       immediate: !0
     })
   }, S = e => {
@@ -83,7 +83,7 @@ function d(e) {
               y: -r * (n.goal - 1)
             }
           });
-        _(i.x, i.y)
+        f(i.x, i.y)
       }
       return
     }(e.clientX - v.x) ** 2 + (e.clientY - v.y) ** 2 < c && ((0, s.yg)(s.uG.ZOOM_OUT_IMAGE_PRESSED), h(!1)), O.current = !1
@@ -99,10 +99,10 @@ function d(e) {
     style: {
       scale: n,
       x: d,
-      y: f,
+      y: _,
       cursor: p ? "zoom-out" : "zoom-in"
     },
     children: t
   })
 }
-let f = i.memo(d)
+let _ = i.memo(d)

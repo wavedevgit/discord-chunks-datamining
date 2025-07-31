@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => _
 });
 var r = n(255367);
 n(73800);
@@ -23,12 +23,12 @@ let d = () => (0, r.jsxs)("div", {
       children: l.intl.string(l.t["5z/hlJ"])
     })]
   }),
-  f = e => {
+  _ = e => {
     let {
       shown: t,
       sent: n,
       className: c
-    } = e, u = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), f = (0, o.Yzy)(t, {
+    } = e, u = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), _ = (0, o.Yzy)(t, {
       from: {
         transform: u ? "translateY(0)" : "translateY(16px)",
         opacity: 0
@@ -50,7 +50,7 @@ let d = () => (0, r.jsxs)("div", {
       delay: 200
     }, "animate-always");
     return (0, r.jsx)(r.Fragment, {
-      children: f((e, t) => t && (0, r.jsx)(i.animated.div, {
+      children: _((e, t) => t && (0, r.jsx)(i.animated.div, {
         className: c,
         style: e,
         children: n ? (0, r.jsx)(o.FNi, {

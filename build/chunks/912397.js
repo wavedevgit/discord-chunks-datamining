@@ -1,5 +1,4 @@
-/** Chunk was on web.js **/
-"use strict";
+/** Chunk was on 96887 **/
 e.exports = {
   container: "container__6d099",
   profileEffectShopPreview: "profileEffectShopPreview__6d099",

@@ -22,9 +22,9 @@ let b = e => {
     wideBannerBlock: b,
     handleTransition: m,
     tab: _
-  } = e, O = null == (t = u.Z.getCategoryByStoreListingId(b.categoryStoreListingId)) ? void 0 : t.skuId, C = l.useRef(null), v = l.useRef(null), [E, S] = l.useState();
+  } = e, O = null == (t = u.Z.getCategoryByStoreListingId(b.categoryStoreListingId)) ? void 0 : t.skuId, v = l.useRef(null), C = l.useRef(null), [E, S] = l.useState();
   l.useEffect(() => {
-    let e = v.current;
+    let e = C.current;
     if (null == e) return;
     let t = () => {
       e.naturalWidth > 0 && e.naturalHeight > 0 && S(1080 * (e.naturalHeight / e.naturalWidth))
@@ -39,26 +39,26 @@ let b = e => {
     } = (0, d.E)(y, "home", "marketing wide banner"),
     j = b.bannerUrl;
   if (null == j) return null;
-  let T = _ === p.AW.ORBS;
+  let P = _ === p.AW.ORBS;
   return (0, n.jsx)(o.$, {
-    innerRef: C,
+    innerRef: v,
     onChange: x,
     threshold: 0,
     children: (0, n.jsxs)("div", {
-      ref: C,
+      ref: v,
       className: a()(h.row, h.between, h.bannerBlockContainer, h.centeredSection, {
-        [h.extraRounded]: T
+        [h.extraRounded]: P
       }),
       children: [(0, n.jsx)("div", {
         className: a()(h.wideBannerBackgroundImg, {
-          [h.extraRounded]: T
+          [h.extraRounded]: P
         }),
         children: (0, n.jsx)("img", {
-          ref: v,
+          ref: C,
           src: j,
           alt: b.title,
           className: a()(h.wideBannerArt, {
-            [h.wideBannerArtOrbs]: T
+            [h.wideBannerArtOrbs]: P
           }),
           style: {
             height: null != E ? "".concat(E, "px") : "auto"
@@ -75,16 +75,16 @@ let b = e => {
             style: {
               color: null != (r = b.bannerTextColor) ? r : "var(--header-primary)"
             },
-            className: T ? h.wideBannerOrbsHeading : void 0,
-            variant: T ? "heading-xl/bold" : "heading-lg/semibold",
+            className: P ? h.wideBannerOrbsHeading : void 0,
+            variant: P ? "heading-xl/bold" : "heading-lg/semibold",
             children: b.title
           }), (0, n.jsx)(s.Text, {
             style: {
               color: null != (i = b.bannerTextColor) ? i : "var(--text-muted)"
             },
             lineClamp: 2,
-            variant: T ? "text-md/medium" : "text-sm/medium",
-            children: T ? g.intl.format(g.t.SFFP7O, {
+            variant: P ? "text-md/medium" : "text-sm/medium",
+            children: P ? g.intl.format(g.t.SFFP7O, {
               helpdeskArticle: c.Z.getArticleURL(f.BhN.VIRTUAL_CURRENCY_LEARN_MORE)
             }) : b.body
           })]

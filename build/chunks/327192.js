@@ -1,4 +1,4 @@
-/** Chunk was on 73021 **/
+/** Chunk was on 22243 **/
 n.d(t, {
   Z: () => J
 }), n(388685), n(539854), n(457542);
@@ -20,8 +20,8 @@ var i = n(255367),
   x = n(410030),
   _ = n(726542),
   j = n(122021),
-  E = n(275759),
-  O = n(231757),
+  O = n(275759),
+  E = n(231757),
   C = n(888496),
   v = n(266454),
   S = n(565138),
@@ -62,7 +62,7 @@ function H(e) {
   }
   return e
 }
-let W = e => {
+let z = e => {
   var t, n;
   let r, {
       integration: s
@@ -117,7 +117,7 @@ let W = e => {
   })
 };
 
-function z(e) {
+function W(e) {
   var t;
   let n, s, a, {
       onDisconnect: l,
@@ -131,7 +131,7 @@ function z(e) {
     [y, A] = r.useState(o.showActivity),
     [P, D] = r.useState(null),
     [U, F] = r.useState(null),
-    [z, Y] = r.useState(!1),
+    [W, Y] = r.useState(!1),
     [K, q] = r.useState([]),
     X = (0, j.rR)(o.type),
     J = _.Z.get(X);
@@ -256,7 +256,7 @@ function z(e) {
       var t;
       let n = null != (t = e.metadata) ? t : {},
         r = null,
-        s = (0, E.FI)(n[M.PC.CREATED_AT], h);
+        s = (0, O.FI)(n[M.PC.CREATED_AT], h);
       switch (e.type) {
         case B.ABu.REDDIT:
           r = (0, C.oP)(n, G.metadataItem);
@@ -304,7 +304,7 @@ function z(e) {
         className: G.metadataRefreshButton,
         color: a ? u.zx.Colors.GREEN : u.zx.Colors.BRAND,
         size: u.zx.Sizes.SMALL,
-        submitting: z,
+        submitting: W,
         disabled: a,
         "aria-label": V.intl.string(V.t.sCkLYG),
         onClick: a ? void 0 : () => {
@@ -352,7 +352,7 @@ function z(e) {
           verified: t
         } = o, n = +!!e;
         if (e && !t) {
-          F(n), (0, O.Z)({
+          F(n), (0, E.Z)({
             platformType: o.type,
             location: "User Settings"
           });
@@ -378,7 +378,7 @@ function z(e) {
               verified: t
             } = o, n = +!!e;
             if (e && !t) {
-              D(n), (0, O.Z)({
+              D(n), (0, E.Z)({
                 platformType: o.type,
                 location: "User Settings"
               });
@@ -402,7 +402,7 @@ function z(e) {
         className: G.integrationRevoked,
         children: V.intl.format(V.t["6C4lgI"], {
           onReconnect: function() {
-            (0, O.Z)({
+            (0, E.Z)({
               platformType: o.type,
               location: "User Settings"
             })
@@ -418,7 +418,7 @@ function z(e) {
           children: V.intl.string(V.t.fOe3fX)
         })
       }), (0, i.jsx)("div", {
-        children: o.integrations.map(e => (0, i.jsx)(W, {
+        children: o.integrations.map(e => (0, i.jsx)(z, {
           integration: e
         }, e.id))
       })]
@@ -450,7 +450,7 @@ function Y() {
 
 function K(e) {
   let t = _.Z.get(e);
-  (0, O.Z)({
+  (0, E.Z)({
     platformType: t.type
   }), P.default.track(B.rMx.ACCOUNT_LINK_STEP, {
     previous_step: "desktop connections",
@@ -520,7 +520,7 @@ function X(e) {
       note: V.intl.string(V.t.WenGZ2),
       children: V.intl.string(V.t["aoLS8/"])
     })
-  }) : r.filter(e => _.Z.isSupported(e.type)).map((e, t) => (0, i.jsx)(z, {
+  }) : r.filter(e => _.Z.isSupported(e.type)).map((e, t) => (0, i.jsx)(W, {
     theme: s,
     account: e,
     locale: a,

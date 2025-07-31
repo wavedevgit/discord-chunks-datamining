@@ -43,13 +43,13 @@ function d(e, t) {
   return n
 }
 
-function f(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function _(e, t) {
+function f(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -71,14 +71,14 @@ function h(e) {
   var {
     applicationId: t,
     centerButton: n = !1
-  } = e, c = _(e, ["applicationId", "centerButton"]);
+  } = e, c = f(e, ["applicationId", "centerButton"]);
   let d = i.useCallback(() => {
       (0, s.xT)({
         applicationId: t
       })
     }, [t]),
     p = n ? o.d : o.Z;
-  return (0, r.jsx)(p, f(u({}, c), {
+  return (0, r.jsx)(p, _(u({}, c), {
     isTrayButton: !1,
     onClick: d,
     iconComponent: a.Dio,

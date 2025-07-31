@@ -13,8 +13,8 @@ var i = n(442837),
   c = n(180335),
   u = n(768419),
   d = n(594174),
-  f = n(981631),
-  _ = n(616922),
+  _ = n(981631),
+  f = n(616922),
   p = n(388032);
 
 function h(e) {
@@ -33,12 +33,12 @@ function h(e) {
   if (!y) return (0, r.jsx)(a.sNh, {
     id: "connect-spotify",
     label: p.intl.formatToPlainString(p.t.XWSHTU, {
-      platform: _.ai
+      platform: f.ai
     }),
     action: () => {
       null == g || g({
         action: "PRESS_CONNECT_SPOTIFY_MENU_ITEM"
-      }), o.Z.open(f.oAB.CONNECTIONS), null == E || E()
+      }), o.Z.open(_.oAB.CONNECTIONS), null == E || E()
     }
   });
   if (b) return null;
@@ -49,7 +49,7 @@ function h(e) {
     action: () => {
       null == g || g({
         action: "PRESS_PLAY_ON_SPOTIFY_MENU_ITEM"
-      }), (0, l.o)(_.Hw.TRACK, O.external_id)
+      }), (0, l.o)(f.Hw.TRACK, O.external_id)
     }
   })
 }

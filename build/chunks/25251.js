@@ -19,8 +19,8 @@ function c(e, t, n) {
 }
 let u = [],
   d = {},
-  f = u,
-  _ = d,
+  _ = u,
+  f = d,
   p = null,
   h = l.Z.Millis.MINUTE,
   m = l.Z.Millis.HOUR,
@@ -34,13 +34,13 @@ let u = [],
     let {
       presets: t
     } = e;
-    0 === t.length ? (f = u, _ = d) : (f = (0, a.cloneDeep)(t), _ = (0, a.keyBy)(f, "id")), E = Number.POSITIVE_INFINITY, b = 0, r = void 0, g = !1
+    0 === t.length ? (_ = u, f = d) : (_ = (0, a.cloneDeep)(t), f = (0, a.keyBy)(_, "id")), E = Number.POSITIVE_INFINITY, b = 0, r = void 0, g = !1
   },
   v = e => {
     let {
       error: t
     } = e;
-    f = u, _ = d, E = Date.now() + Math.min(h * 2 ** b, m), b += 1, r = t, g = !1
+    _ = u, f = d, E = Date.now() + Math.min(h * 2 ** b, m), b += 1, r = t, g = !1
   },
   I = e => {
     let {
@@ -49,7 +49,7 @@ let u = [],
     p = t
   },
   T = e => {
-    f = u, _ = d, p = null, g = !1, r = void 0, E = 0, b = 0
+    _ = u, f = d, p = null, g = !1, r = void 0, E = 0, b = 0
   };
 class S extends(i = o.ZP.Store) {
   get isFetchingAll() {
@@ -59,7 +59,7 @@ class S extends(i = o.ZP.Store) {
     return r
   }
   get profileEffects() {
-    return f
+    return _
   }
   get tryItOutId() {
     return p
@@ -68,7 +68,7 @@ class S extends(i = o.ZP.Store) {
     return Date.now() >= E
   }
   getProfileEffectById(e) {
-    return null != e ? _[e] : void 0
+    return null != e ? f[e] : void 0
   }
 }
 c(S, "displayName", "ProfileEffectStore");

@@ -11,8 +11,8 @@ var r, i = n(392711),
   c = n(51025),
   u = n(594190),
   d = n(314897),
-  f = n(173747),
-  _ = n(780570),
+  _ = n(173747),
+  f = n(780570),
   p = n(830168),
   h = n(358085),
   m = n(417363),
@@ -61,7 +61,7 @@ function L() {
     } = e, {
       applicationId: r,
       branchId: i
-    } = (0, _.CP)(t);
+    } = (0, f.CP)(t);
     if (!D(r, i)) {
       let e = d.default.getToken(),
         t = d.default.getId();
@@ -72,12 +72,12 @@ function L() {
 }
 
 function x(e, t) {
-  let n = (0, _.Tu)(e, t);
+  let n = (0, f.Tu)(e, t);
   return v.findIndex(e => e.comboId === n)
 }
 
-function M(e, t, n, r) {
-  let i = (0, _.Tu)(e, t),
+function k(e, t, n, r) {
+  let i = (0, f.Tu)(e, t),
     a = {
       comboId: i,
       action: r
@@ -87,8 +87,8 @@ function M(e, t, n, r) {
   0 !== s && (n ? -1 === s && (v.push(a), L()) : (s > 0 && v.splice(s, 1), v.unshift(a), L())), !n && T && p.Z.resume(), w()
 }
 
-function k(e, t) {
-  let n = (0, _.Tu)(e, t),
+function M(e, t) {
+  let n = (0, f.Tu)(e, t),
     r = I.indexOf(n); - 1 !== r && I.splice(r, 1);
   let i = x(e, t); - 1 !== i && (v.splice(i, 1), w()), L()
 }
@@ -98,7 +98,7 @@ function j(e) {
     applicationId: t,
     branchId: n
   } = e;
-  C.set((0, _.Tu)(t, n), "Install"), M(t, n, !1, "Patch")
+  C.set((0, f.Tu)(t, n), "Install"), k(t, n, !1, "Patch")
 }
 
 function U(e) {
@@ -110,7 +110,7 @@ function G(e) {
     applicationId: t,
     branchId: n
   } = e;
-  C.set((0, _.Tu)(t, n), "Repair"), M(t, n, !1, "Repair")
+  C.set((0, f.Tu)(t, n), "Repair"), k(t, n, !1, "Repair")
 }
 
 function B(e) {
@@ -119,7 +119,7 @@ function B(e) {
     branchId: n,
     automatic: r
   } = e;
-  M(t, n, r, "Patch")
+  k(t, n, r, "Patch")
 }
 
 function V(e) {
@@ -127,7 +127,7 @@ function V(e) {
     applicationId: t,
     branchId: n
   } = e;
-  k(t, n)
+  M(t, n)
 }
 
 function F(e) {
@@ -143,7 +143,7 @@ function Z(e) {
   let {
     applicationId: t,
     branchId: n
-  } = e, r = (0, _.Tu)(t, n), i = I.indexOf(r); - 1 !== i && I.splice(i, 1)
+  } = e, r = (0, f.Tu)(t, n), i = I.indexOf(r); - 1 !== i && I.splice(i, 1)
 }
 
 function H(e) {
@@ -160,7 +160,7 @@ function H(e) {
     } = e, {
       applicationId: n,
       branchId: i
-    } = (0, _.CP)(t), o = m.Z.getState(n, i), s = f.Z.getTargetBuildId(n, i), l = f.Z.getTargetManifests(n, i);
+    } = (0, f.CP)(t), o = m.Z.getState(n, i), s = _.Z.getTargetBuildId(n, i), l = _.Z.getTargetManifests(n, i);
     if (null != o && o.type === g.vxO.UP_TO_DATE && o.buildId === o.targetBuildId && o.buildId === s && a().isEqual(o.manifestIds, o.targetManifestIds) && a().isEqual(o.manifestIds, l)) {
       if (I.push(t), C.has(t)) {
         switch (C.get(t)) {
@@ -201,7 +201,7 @@ function W(e) {
           application_id: t,
           branch_id: n
         } = e;
-        k(t, n)
+        M(t, n)
       }
     }
   }
@@ -242,11 +242,11 @@ class Q extends(r = o.ZP.Store) {
       let {
         comboId: t
       } = e;
-      return (0, _.CP)(t)
+      return (0, f.CP)(t)
     })
   }
   get finishedItems() {
-    return I.map(_.CP)
+    return I.map(f.CP)
   }
   get paused() {
     return T

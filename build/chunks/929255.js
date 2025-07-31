@@ -20,8 +20,8 @@ var n = r(255367),
   m = r(312030),
   _ = r(795343),
   O = r(763891),
-  C = r(215023),
-  v = r(388032),
+  v = r(215023),
+  C = r(388032),
   E = r(95368);
 
 function S(e) {
@@ -42,7 +42,7 @@ function S(e) {
       setCategoryRef: _,
       handleScrollToCategory: O
     } = (0, g.xV)(h.current),
-    [C, v] = l.useState(f),
+    [v, C] = l.useState(f),
     [S, x] = l.useState(!1);
   return l.useEffect(() => {
     null != c && O(c)
@@ -54,8 +54,8 @@ function S(e) {
     };
     return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
   }, []), l.useEffect(() => {
-    f || v(!1)
-  }, [f, v]), (0, n.jsx)("div", {
+    f || C(!1)
+  }, [f, C]), (0, n.jsx)("div", {
     className: a()(E.pageWrapper, {
       [E.pageWrapperFilter]: f
     }),
@@ -70,16 +70,16 @@ function S(e) {
         children: (0, n.jsx)(y, {
           isFullScreen: t,
           isSmallScreen: S,
-          filterBarOpen: C,
-          setFilterBarOpen: v,
+          filterBarOpen: v,
+          setFilterBarOpen: C,
           tab: r,
           scrollerRef: h,
           sortedCategories: i,
           setCategoryRef: _
         })
-      }), C && !S && (0, n.jsx)("div", {
+      }), v && !S && (0, n.jsx)("div", {
         className: E.divider
-      }), C && !S && (0, n.jsx)(o.Ttm, {
+      }), v && !S && (0, n.jsx)(o.Ttm, {
         className: E.filterBar,
         children: (0, n.jsx)(b.Z, {})
       })]
@@ -96,18 +96,18 @@ let y = e => {
     scrollerRef: S,
     sortedCategories: y,
     setCategoryRef: x
-  } = e, j = (0, u.FF)("CollectiblesBrowse"), T = l.useRef(null), P = (0, d.S)(e => e.hasDefaultFilters()), {
+  } = e, j = (0, u.FF)("CollectiblesBrowse"), P = l.useRef(null), T = (0, d.S)(e => e.hasDefaultFilters()), {
     handlePageChange: L,
-    currentPage: k
+    currentPage: I
   } = (0, m.h)({
     scrollerRef: S,
     sortedCategories: y
-  }), I = l.useRef(null);
+  }), k = l.useRef(null);
   return l.useEffect(() => {
     if (!r || !i) return;
     let e = e => {
       let t = e.target;
-      null === T.current || null === I.current || T.current.contains(t) || I.current.contains(t) || s(!1)
+      null === P.current || null === k.current || P.current.contains(t) || k.current.contains(t) || s(!1)
     };
     return document.addEventListener("mousedown", e), () => document.removeEventListener("mousedown", e)
   }, [r, i, s]), (0, n.jsx)("div", {
@@ -130,43 +130,43 @@ let y = e => {
             className: E.sortBy,
             children: [(0, n.jsx)(o.Text, {
               variant: "text-md/semibold",
-              children: v.intl.string(v.t.uaX709)
+              children: C.intl.string(C.t.uaX709)
             }), (0, n.jsx)(h.Z, {})]
           }), (0, n.jsx)("div", {
-            ref: I,
+            ref: k,
             children: (0, n.jsx)(o.zxk, {
               onClick: () => s(e => !e),
               variant: "secondary",
-              text: v.intl.string(i ? v.t.fYtm6e : v.t.TeTYEx),
+              text: C.intl.string(i ? C.t.fYtm6e : C.t.TeTYEx),
               icon: o.gXV,
               iconPosition: "end"
             })
           })]
         }), i && r && (0, n.jsx)("div", {
           className: E.filterOverlay,
-          ref: T,
+          ref: P,
           children: (0, n.jsx)(o.Den, {
             className: E.filterOverlayContent,
             children: (0, n.jsx)(b.Z, {})
           })
         })]
-      }), j && !P ? (0, n.jsx)(_.Z, {
+      }), j && !T ? (0, n.jsx)(_.Z, {
         isFullScreen: t,
         scrollerRef: S,
         tab: g
-      }, g) : (0, C.RE)(g) ? (0, n.jsx)(O.Z, {
+      }, g) : (0, v.RE)(g) ? (0, n.jsx)(O.Z, {
         isFullScreen: t,
         scrollerRef: S,
         tab: g
       }, g) : (0, n.jsx)(c.k0, {
         newValue: {
-          pageIndex: k
+          pageIndex: I
         },
         children: (0, n.jsx)(f.Z, {
           isFullScreen: t,
           sortedCategories: y,
           setCategoryRef: x,
-          currentPage: k,
+          currentPage: I,
           handlePageChange: L
         })
       })]

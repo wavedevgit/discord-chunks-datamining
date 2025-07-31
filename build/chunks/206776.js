@@ -29,9 +29,9 @@ let d = null != (r = window.requestIdleCallback) ? r : e => {
       })
     }, 1)
   },
-  f = null != (i = window.cancelIdleCallback) ? i : clearTimeout;
+  _ = null != (i = window.cancelIdleCallback) ? i : clearTimeout;
 
-function _(e) {
+function f(e) {
   return null == e ? new c.Lj(c.HO, !0) : new c.Lj(e.timeRemaining(), e.didTimeout)
 }
 class p extends s.W {
@@ -45,7 +45,7 @@ class p extends s.W {
       }
       if (this.telemetry.timeEnd(l.JV.TIME_TO_FIRE_IDLE_CALLBACK), (null != (t = null == e ? void 0 : e.timeRemaining()) ? t : c.HO) < c.HO) this.telemetry.time(l.JV.TIME_TO_FIRE_IDLE_CALLBACK), this._scheduleRequestIdleCallback(e => {
         this.telemetry.timeEnd(l.JV.TIME_TO_FIRE_IDLE_CALLBACK);
-        let t = _(e),
+        let t = f(e),
           n = null == t ? void 0 : t.timeRemaining();
         null != n && this.telemetry.timeTrack(l.JV.DEADLINE_INITIAL_TIME_REMAINING, n), this._processWorkCallback(t)
       }, {
@@ -53,7 +53,7 @@ class p extends s.W {
       });
       else {
         this.telemetry.timeEnd(l.JV.TIME_TO_FIRE_IDLE_CALLBACK);
-        let t = _(e),
+        let t = f(e),
           n = null == t ? void 0 : t.timeRemaining();
         null != n && this.telemetry.timeTrack(l.JV.DEADLINE_INITIAL_TIME_REMAINING, n), this._processWorkCallback(t)
       }
@@ -72,7 +72,7 @@ class p extends s.W {
     }, e)
   }
   _clearIdleCallback() {
-    null != this._flushIdleHandler && (f(this._flushIdleHandler), this._flushIdleHandler = null), null != this._flushIdleMaxTimeoutHandler && (clearTimeout(this._flushIdleMaxTimeoutHandler), this._flushIdleMaxTimeoutHandler = null)
+    null != this._flushIdleHandler && (_(this._flushIdleHandler), this._flushIdleHandler = null), null != this._flushIdleMaxTimeoutHandler && (clearTimeout(this._flushIdleMaxTimeoutHandler), this._flushIdleMaxTimeoutHandler = null)
   }
   constructor() {
     super(), u(this, "_flushIdleMaxTimeoutHandler", null), a.Z.subscribe("WINDOW_VISIBILITY_CHANGE", e => {

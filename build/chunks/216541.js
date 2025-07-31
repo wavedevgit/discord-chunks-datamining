@@ -1,54 +1,55 @@
-/** Chunk was on web.js **/
-"use strict";
-n.d(t, {
+/** Chunk was on 96887 **/
+r.d(t, {
   d: () => m
 });
-var r = n(255367);
-n(73800);
-var i = n(120356),
-  a = n.n(i),
-  o = n(780384),
-  s = n(481060),
-  l = n(410030),
-  c = n(876917),
-  u = n(328456),
-  d = n(619899),
-  f = n(616066),
-  _ = n(912397),
-  p = n(63243),
-  h = n(244488);
+var a = r(255367);
+r(73800);
+var n = r(120356),
+  i = r.n(n),
+  s = r(780384),
+  o = r(481060),
+  l = r(410030),
+  c = r(876917),
+  d = r(328456),
+  u = r(619899),
+  f = r(616066),
+  v = r(912397),
+  p = r(63243),
+  h = r(244488);
 let m = e => {
   let {
     product: t,
-    isPurchased: n,
-    isHighlighted: i,
+    isPurchased: r,
+    isHighlighted: n,
     user: m,
     forCollectedModal: g,
-    profileEffectClassName: E
+    containerClassName: y,
+    profileEffectClassName: P,
+    avatarDecorationClassName: b
   } = e, {
-    firstProfileEffect: b,
-    firstAvatarDecoration: y
-  } = (0, u.Rj)(t), O = (0, d.O1)(y), v = (0, l.ZP)(), I = (0, o.ap)(v);
-  return (0, r.jsxs)("div", {
-    className: _.container,
-    children: [null != b ? (0, r.jsx)("div", {
-      className: a()(_.profileEffectShopPreview, E),
-      children: (0, r.jsx)(c.Z, {
-        isHovering: i,
-        profileEffectId: b.id,
-        isPurchased: n,
+    firstProfileEffect: w,
+    firstAvatarDecoration: O
+  } = (0, d.Rj)(t), j = (0, u.O1)(O), _ = (0, l.ZP)(), E = (0, s.ap)(_);
+  return (0, a.jsxs)("div", {
+    className: i()(v.container, y),
+    children: [null != w ? (0, a.jsx)("div", {
+      className: i()(v.profileEffectShopPreview, P),
+      children: (0, a.jsx)(c.Z, {
+        isHovering: n,
+        profileEffectId: w.id,
+        isPurchased: r,
         forCollectedModal: g,
         removeSetHeight: !0
       })
-    }) : null, null != O ? (0, r.jsx)("div", {
-      className: _.avatarDecorationPreview,
-      children: (0, r.jsx)(f.R, {
-        item: O,
+    }) : null, null != j ? (0, a.jsx)("div", {
+      className: i()(v.avatarDecorationPreview, b),
+      children: (0, a.jsx)(f.R, {
+        item: j,
         user: m,
-        avatarSize: s.EFr.SIZE_120,
-        isPurchased: n,
-        isHighlighted: i,
-        avatarPlaceholderSrc: I ? h : p
+        avatarSize: o.EFr.SIZE_120,
+        isPurchased: r,
+        isHighlighted: n,
+        avatarPlaceholderSrc: E ? h : p
       })
     }) : null]
   })

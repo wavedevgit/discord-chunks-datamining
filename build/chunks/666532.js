@@ -1,4 +1,4 @@
-/** Chunk was on 73021 **/
+/** Chunk was on 22243 **/
 e.exports = {
   animator: "animator_d17ea2",
   item: "item_d17ea2"

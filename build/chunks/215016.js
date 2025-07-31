@@ -14,8 +14,8 @@ var r = n(255367),
   c = n(944611),
   u = n(377108),
   d = n(692547),
-  f = n(755721),
-  _ = n(481060),
+  _ = n(755721),
+  f = n(481060),
   p = n(68405),
   h = n(527429),
   m = n(788911),
@@ -83,11 +83,11 @@ function x(e, t) {
   return e > 0 ? "" : null != (r = null == (n = P[t]) ? void 0 : n.id) ? r : ""
 }
 
-function M(e) {
+function k(e) {
   return e === u.EO.VIDEO
 }
 
-function k(e) {
+function M(e) {
   return ((0, E._M)(e) || (0, E.MO)(e)) && (e.pathname.toLowerCase().endsWith(".webp") || e.pathname.toLowerCase().endsWith(".avif"))
 }
 
@@ -98,7 +98,7 @@ function j(e) {
 function U(e) {
   let t = y.Z.toURLSafe(e),
     n = null != t && j(t);
-  return null != t && (k(t) || n) ? (n && t.searchParams.set("format", "webp"), t.searchParams.set("animated", "true"), t.toString()) : e
+  return null != t && (M(t) || n) ? (n && t.searchParams.set("format", "webp"), t.searchParams.set("animated", "true"), t.toString()) : e
 }
 class G extends i.PureComponent {
   componentDidMount() {
@@ -165,7 +165,7 @@ class G extends i.PureComponent {
       color: o,
       loaded: s
     } = this.state;
-    return (0, r.jsxs)(_.P3F, {
+    return (0, r.jsxs)(f.P3F, {
       tabIndex: -1,
       innerRef: e => {
         this.ref = e
@@ -176,7 +176,7 @@ class G extends i.PureComponent {
       style: A({
         backgroundColor: s ? void 0 : o
       }, i),
-      children: [M(n) ? null : this.renderGIF(), null != t ? t(e) : null]
+      children: [k(n) ? null : this.renderGIF(), null != t ? t(e) : null]
     })
   }
   constructor(e) {
@@ -200,7 +200,7 @@ class G extends i.PureComponent {
     this.state = {
       color: null == n ? l().sample(N) : n,
       loaded: !1
-    }, M(t) || (this._image = r.getElement(), this._image.onload = () => this.setState({
+    }, k(t) || (this._image = r.getElement(), this._image.onload = () => this.setState({
       loaded: !0
     }), this._image.src = e.src)
   }
@@ -242,7 +242,7 @@ class B extends i.PureComponent {
       className: T.emptyHint,
       children: null != e ? (0, r.jsxs)("div", {
         className: T.emptyHintCard,
-        children: [t ? (0, r.jsx)(_.r7p, {
+        children: [t ? (0, r.jsx)(f.r7p, {
           size: "xs",
           color: "currentColor",
           className: T.emptyHintFavorite
@@ -256,7 +256,7 @@ class B extends i.PureComponent {
     })
   }
   renderEmptyFavorites() {
-    return (0, r.jsx)(_.Ttm, {
+    return (0, r.jsx)(f.Ttm, {
       className: T.results,
       fade: !0,
       children: (0, r.jsxs)("div", {
@@ -371,10 +371,10 @@ class B extends i.PureComponent {
             children: I.intl.string(I.t["3JGJo6"])
           }), (0, r.jsx)("div", {
             className: T.searchSuggestions,
-            children: o.map(e => (0, r.jsx)(f.zx, {
-              look: f.zx.Looks.OUTLINED,
-              color: f.zx.Colors.PRIMARY,
-              size: f.zx.Sizes.SMALL,
+            children: o.map(e => (0, r.jsx)(_.zx, {
+              look: _.zx.Looks.OUTLINED,
+              color: _.zx.Colors.PRIMARY,
+              size: _.zx.Sizes.SMALL,
               className: T.searchSuggestion,
               onClick: () => {
                 a(e)
@@ -392,7 +392,7 @@ class B extends i.PureComponent {
         query: l,
         resultType: c
       } = this.props;
-      return 0 === a.length && (s !== l || c === v.wI2.TRENDING_GIFS) ? (0, r.jsx)(_.GMG, {
+      return 0 === a.length && (s !== l || c === v.wI2.TRENDING_GIFS) ? (0, r.jsx)(f.GMG, {
         fade: !0,
         className: o()(T.results, i),
         sections: [P.length],
@@ -402,7 +402,7 @@ class B extends i.PureComponent {
         getItemHeight: D,
         renderItem: L,
         chunkSize: 128
-      }, s) : (0, r.jsx)(_.GMG, {
+      }, s) : (0, r.jsx)(f.GMG, {
         ref: this._masonryRef,
         fade: !0,
         itemGutter: 12,

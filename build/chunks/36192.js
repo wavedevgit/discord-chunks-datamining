@@ -1,4 +1,4 @@
-/** Chunk was on 73021 **/
+/** Chunk was on 22243 **/
 n.d(t, {
   Z: () => S
 }), n(388685), n(953529), n(781311);
@@ -20,8 +20,8 @@ var i = n(255367),
   x = n(594174),
   _ = n(460562),
   j = n(823379),
-  E = n(981631),
-  O = n(921944),
+  O = n(981631),
+  E = n(921944),
   C = n(388032),
   v = n(232696);
 
@@ -35,7 +35,7 @@ function S() {
     [u, p] = r.useState(!1);
   r.useEffect(() => {
     (0, f.Q3)(c.z.AUTH_SESSIONS_NEW, {
-      dismissAction: O.L.AUTO
+      dismissAction: E.L.AUTO
     }), (0, g.fw)();
     let e = setTimeout(() => p(!0), 500);
     return () => {
@@ -44,7 +44,7 @@ function S() {
   }, []);
   let _ = () => {
       o.tn.post({
-        url: E.ANM.AUTH_SESSION_NOTIFICATIONS_DEBUG,
+        url: O.ANM.AUTH_SESSION_NOTIFICATIONS_DEBUG,
         rejectWithError: !0
       })
     },
@@ -167,7 +167,7 @@ function T(e) {
           text: e, icon: d.pzj
         }
     }
-  }(null == (s = o.client_info) ? void 0 : s.os), E = c ? null : (0, h.p)(o.approx_last_used_time), O = [x, b].filter(j.lm), S = [f, E].filter(j.lm);
+  }(null == (s = o.client_info) ? void 0 : s.os), O = c ? null : (0, h.p)(o.approx_last_used_time), E = [x, b].filter(j.lm), S = [f, O].filter(j.lm);
   return (0, i.jsxs)("div", {
     className: a()(v.session, c ? v.currentSession : null),
     children: [(0, i.jsx)("div", {
@@ -182,12 +182,12 @@ function T(e) {
         variant: "eyebrow",
         className: v.sessionInfoRow,
         children: [(0, i.jsx)("span", {
-          children: O[0]
-        }), O.length > 1 && (0, i.jsxs)(i.Fragment, {
+          children: E[0]
+        }), E.length > 1 && (0, i.jsxs)(i.Fragment, {
           children: [(0, i.jsx)("span", {
             children: "\xb7"
           }), (0, i.jsx)("span", {
-            children: O[1]
+            children: E[1]
           })]
         })]
       }), (0, i.jsxs)(d.Text, {
@@ -249,7 +249,7 @@ function N() {
         color: "text-muted",
         children: (0, i.jsx)("span", {
           children: C.intl.format(C.t["044+8v"], {
-            onClick: () => u.Z.setSection(E.oAB.ACCOUNT, null, {
+            onClick: () => u.Z.setSection(O.oAB.ACCOUNT, null, {
               analyticsLocations: [p.Z.USER_SETTINGS_SESSIONS]
             })
           })

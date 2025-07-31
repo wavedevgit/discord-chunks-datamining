@@ -1,12 +1,11 @@
-/** Chunk was on web.js **/
-"use strict";
-n.d(t, {
-  g: () => a,
-  o: () => o
+/** Chunk was on 87624 **/
+l.d(t, {
+  g: () => n,
+  o: () => i
 });
-var r = n(818083),
-  i = n(987338);
-let a = (0, r.B)({
+var o = l(818083),
+  r = l(987338);
+let n = (0, o.B)({
     kind: "user",
     id: "2025-02_shop_paired_deco_upsell",
     label: "Shop Paired Deco Upsell Experiment",
@@ -20,8 +19,8 @@ let a = (0, r.B)({
         showPairedDecoUpsell: !0
       }
     }],
-    commonTriggerPoint: i.$P.COLLECTIBLES_SHOP_OPEN
+    commonTriggerPoint: r.$P.COLLECTIBLES_SHOP_OPEN
   }),
-  o = e => a.useExperiment({
+  i = e => n.useExperiment({
     location: e
   }).showPairedDecoUpsell

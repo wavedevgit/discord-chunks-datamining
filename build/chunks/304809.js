@@ -1,12 +1,12 @@
-/** Chunk was on 73021 **/
+/** Chunk was on 56035 **/
 n.d(t, {
-  N: () => r
+  N: () => a
 });
-let i = null;
+let l = null;
 
-function r() {
-  if (null == i) try {
-    i = new AudioContext
+function a() {
+  if (null == l) try {
+    l = new AudioContext
   } catch (e) {}
-  return i
+  return l
 }

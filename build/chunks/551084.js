@@ -1,4 +1,4 @@
-/** Chunk was on 73021 **/
+/** Chunk was on 22243 **/
 e.exports = {
   tierComparisonTable: "tierComparisonTable__744ff",
   boosterRecognitionCard: "boosterRecognitionCard__744ff",

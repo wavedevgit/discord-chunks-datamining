@@ -1,4 +1,4 @@
-/** Chunk was on 73021 **/
+/** Chunk was on 22243 **/
 n.d(t, {
   Z: () => A
 });
@@ -20,8 +20,8 @@ var i = n(255367),
   x = n(894694),
   _ = n(779618),
   j = n(39604),
-  E = n(442334),
-  O = n(356659),
+  O = n(442334),
+  E = n(356659),
   C = n(981631),
   v = n(37113),
   S = n(526761),
@@ -53,17 +53,17 @@ function A() {
   a()(null != D, "Save clip keybind unset");
   let L = (0, l.e7)([m.default], () => m.default.locale),
     B = r.useMemo(() => [{
-      value: O.OT.SECONDS_30,
+      value: E.OT.SECONDS_30,
       label: T.intl.formatToPlainString(T.t["bTFv//"], {
         count: 30
       })
     }, {
-      value: O.OT.MINUTES_1,
+      value: E.OT.MINUTES_1,
       label: T.intl.formatToPlainString(T.t.ICo9Nj, {
         count: 1
       })
     }, {
-      value: O.OT.MINUTES_2,
+      value: E.OT.MINUTES_2,
       label: T.intl.formatToPlainString(T.t.ICo9Nj, {
         count: 2
       })
@@ -201,14 +201,14 @@ function A() {
       })]
     }), (0, i.jsx)(o.$i$, {}), (0, i.jsxs)(o.hjN, {
       className: y.marginTop20,
-      children: [(0, i.jsx)(E.Q, {
+      children: [(0, i.jsx)(O.Q, {
         className: I.formItem,
         select: j.eU,
         title: T.intl.string(T.t.OgfUio),
         note: T.intl.string(T.t.H7j4tb),
         value: A,
         options: B
-      }), (0, i.jsx)(E.Q, {
+      }), (0, i.jsx)(O.Q, {
         className: I.formItem,
         select: e => j.yi({
           resolution: e,
@@ -218,7 +218,7 @@ function A() {
         note: T.intl.string(T.t.nIrkW1),
         value: P.resolution,
         options: M
-      }), (0, i.jsx)(E.Q, {
+      }), (0, i.jsx)(O.Q, {
         className: I.formItem,
         select: e => j.yi({
           resolution: P.resolution,
@@ -228,7 +228,7 @@ function A() {
         note: T.intl.string(T.t["Rf9+f3"]),
         value: P.frameRate,
         options: U
-      }), (0, i.jsx)(E.O, {
+      }), (0, i.jsx)(O.O, {
         className: I.formItem,
         title: T.intl.string(T.t.pf54ER),
         note: T.intl.string(T.t["QyB/jI"]),

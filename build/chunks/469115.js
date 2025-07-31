@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Qf: () => _,
-  XV: () => f,
+  Qf: () => f,
+  XV: () => _,
   bV: () => p,
   qt: () => h
 }), n(388685);
@@ -380,8 +380,8 @@ let s = [{
     getName: () => o.intl.string(o.t.mFinbW),
     midpointPercentage: 50
   },
-  f = [...s, ...c, u, d],
-  _ = [u, ...c, ...s, d],
+  _ = [...s, ...c, u, d],
+  f = [u, ...c, ...s, d],
   p = [{
     theme: l,
     getName: () => o.intl.string(o.t.b8Cei4)
@@ -395,4 +395,4 @@ let s = [{
     theme: "system",
     getName: () => o.intl.string(o.t.zlvNOj)
   }],
-  h = (0, r.keyBy)(f, "id")
+  h = (0, r.keyBy)(_, "id")

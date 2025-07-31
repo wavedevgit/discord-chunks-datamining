@@ -13,8 +13,8 @@ var r, i = n(255367),
   c = n.n(l),
   u = n(91192),
   d = n(481060),
-  f = n(607070),
-  _ = n(895924),
+  _ = n(607070),
+  f = n(895924),
   p = n(237375),
   h = n(342687),
   m = n(933557),
@@ -45,7 +45,7 @@ function x(e, t, n) {
   }) : e[t] = n, e
 }
 
-function M(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -58,7 +58,7 @@ function M(e) {
   return e
 }
 
-function k(e, t) {
+function M(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -70,7 +70,7 @@ function k(e, t) {
 }
 
 function j(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -118,7 +118,7 @@ class Z extends a.PureComponent {
         selected: o
       }
     } = this, l = this.isSelectable();
-    return (0, i.jsx)(d.P3F, j(M({}, e), {
+    return (0, i.jsx)(d.P3F, j(k({}, e), {
       className: s()(L.clickable, r, n),
       id: null != (t = B(a)) ? t : void 0,
       onClick: l ? this.handleClick : void 0,
@@ -277,15 +277,15 @@ class q extends Z {
     } = this.props, {
       colorString: r,
       colorStrings: a
-    } = e, o = "dot" === f.Z.roleStyle, l = "username" === f.Z.roleStyle && (null != r || null != a), c = (0, b.AQ)(n, e, a), u = null != c && l, {
-      gradientStyle: _,
+    } = e, o = "dot" === _.Z.roleStyle, l = "username" === _.Z.roleStyle && (null != r || null != a), c = (0, b.AQ)(n, e, a), u = null != c && l, {
+      gradientStyle: f,
       gradientClassname: p
     } = (0, d.JUn)({
       colorStrings: a,
-      useReducedMotion: f.Z.useReducedMotion,
+      useReducedMotion: _.Z.useReducedMotion,
       roleStyle: "username",
       includeConvenienceGlow: !0
-    }), h = l ? M({}, u ? _ : {
+    }), h = l ? k({}, u ? f : {
       color: null != r ? r : void 0
     }) : void 0;
     return (0, i.jsxs)(R.RX, {
@@ -357,7 +357,7 @@ class Q extends Z {
 }
 class J extends Z {
   isSelectable() {
-    return this.props.command.inputType !== _.iw.PLACEHOLDER
+    return this.props.command.inputType !== f.iw.PLACEHOLDER
   }
   renderContent() {
     let {
@@ -369,7 +369,7 @@ class J extends Z {
     } = this.props, {
       hovered: o
     } = this.state, s = this.isSelectable();
-    return e.inputType === _.iw.PLACEHOLDER ? (0, i.jsx)(h.Z, {}) : (0, i.jsx)(p.Z, {
+    return e.inputType === f.iw.PLACEHOLDER ? (0, i.jsx)(h.Z, {}) : (0, i.jsx)(p.Z, {
       command: e,
       channel: t,
       showImage: n,
@@ -472,7 +472,7 @@ class en extends Z {
 }
 class er extends Z {
   renderContent() {
-    return (0, i.jsx)(y.Z, M({}, this.props))
+    return (0, i.jsx)(y.Z, k({}, this.props))
   }
 }
 class ei extends Z {
@@ -515,7 +515,7 @@ class ea extends(r = a.PureComponent) {
       },
       children: (0, i.jsx)("div", {
         className: s()(L.autocomplete, n),
-        children: (0, i.jsx)("div", j(M({
+        children: (0, i.jsx)("div", j(k({
           className: s()(L.autocompleteInner, r)
         }, l), {
           children: t

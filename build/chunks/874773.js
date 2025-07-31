@@ -1,4 +1,4 @@
-/** Chunk was on 73021 **/
+/** Chunk was on 22243 **/
 e.exports = {
   jumpingWumpusContainer: "jumpingWumpusContainer_dc510c",
   jumpingWumpus: "jumpingWumpus_dc510c",

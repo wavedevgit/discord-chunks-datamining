@@ -1,42 +1,42 @@
-/** Chunk was on 2026 **/
+/** Chunk was on 60432 **/
 n.d(t, {
   M: () => d
 });
 var r = n(255367),
-  i = n(442837),
-  a = n(678135),
-  l = n(643879),
-  s = n(25990),
-  o = n(74538),
-  c = n(755419),
+  a = n(442837),
+  i = n(678135),
+  o = n(643879),
+  c = n(25990),
+  s = n(74538),
+  l = n(755419),
   u = n(99595);
 let d = e => {
   var t, n;
   let {
     user: d
-  } = e, m = o.ZP.canUsePremiumProfileCustomization(d), f = (0, i.cj)([s.Z], () => s.Z.getAllPending()), {
-    pendingAvatar: p
-  } = f, h = function(e, t) {
+  } = e, p = s.ZP.canUsePremiumProfileCustomization(d), m = (0, a.cj)([c.Z], () => c.Z.getAllPending()), {
+    pendingAvatar: _
+  } = m, f = function(e, t) {
     if (null == e) return {};
-    var n, r, i = function(e, t) {
+    var n, r, a = function(e, t) {
       if (null == e) return {};
-      var n, r, i = {},
-        a = Object.keys(e);
-      for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-      return i
+      var n, r, a = {},
+        i = Object.keys(e);
+      for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (a[n] = e[n]);
+      return a
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var a = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      var i = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n])
     }
-    return i
-  }(f, ["pendingAvatar"]), v = (0, l.SD)({
+    return a
+  }(m, ["pendingAvatar"]), g = (0, o.SD)({
     userId: d.id,
-    image: p
+    image: _
   });
   return (0, r.jsx)("div", {
     className: u.container,
-    children: (0, r.jsx)(a.Z, (t = function(e) {
+    children: (0, r.jsx)(i.Z, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -53,11 +53,11 @@ let d = e => {
         })
       }
       return e
-    }({}, h), n = n = {
-      pendingAvatar: v,
+    }({}, f), n = n = {
+      pendingAvatar: g,
       user: d,
-      pendingBadges: [(0, c.X)()],
-      canUsePremiumCustomization: m,
+      pendingBadges: [(0, l.X)()],
+      canUsePremiumCustomization: p,
       disabledInputs: !0,
       hideExampleButton: !0
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

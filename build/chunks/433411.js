@@ -1,4 +1,4 @@
-/** Chunk was on 73021 **/
+/** Chunk was on 22243 **/
 n.d(t, {
   Z: () => x
 });
@@ -26,19 +26,19 @@ function x(e) {
     sectionTitle: p,
     forcedDivider: x = !1,
     withTutorial: j = !1,
-    isTryItOutFlow: E = !1
+    isTryItOutFlow: O = !1
   } = e, {
-    analyticsLocations: O
+    analyticsLocations: E
   } = (0, c.ZP)(), C = null != n, {
     userAvatarDecoration: v,
     guildAvatarDecoration: S,
     pendingAvatarDecoration: T,
     pendingErrors: N
   } = (0, g.$U)(t, n), I = (0, m.Z)("enable_avatar_decoration_uploads"), y = r.useCallback(() => (0, u.ps)({
-    analyticsLocations: O,
-    isTryItOutFlow: E,
+    analyticsLocations: E,
+    isTryItOutFlow: O,
     guild: n
-  }), [O, E, n]), A = E || void 0 !== T ? null != T : (C ? S : v) != null, P = j ? o.gtL : l.zx;
+  }), [E, O, n]), A = O || void 0 !== T ? null != T : (C ? S : v) != null, P = j ? o.gtL : l.zx;
   return (0, i.jsxs)(h.Z, {
     className: s,
     forcedDivider: x,

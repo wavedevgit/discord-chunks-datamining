@@ -1,59 +1,56 @@
-/** Chunk was on web.js **/
-"use strict";
-n.d(t, {
-  Z: () => _
-}), n(388685);
-var r = n(255367),
-  i = n(73800),
-  a = n(120356),
-  o = n.n(a),
-  s = n(802433),
-  l = n(680295),
-  c = n(313305),
-  u = n(241822);
-let d = .1,
-  f = 250,
-  _ = e => {
-    let {
-      profileEffectId: t,
-      isHovering: n,
-      forCollectedModal: a = !1,
-      isPurchased: _,
-      removeSetHeight: p = !1
-    } = e, h = a ? f : d, [m, g] = i.useState(!0);
-    return (i.useEffect(() => {
-      if (!0 !== a) g(!1);
-      else {
-        let e = setTimeout(() => {
-          g(!1)
-        }, h);
-        return () => {
-          clearTimeout(e)
-        }
+/** Chunk was on 96887 **/
+r.d(t, {
+  Z: () => u
+}), r(388685);
+var a = r(255367),
+  n = r(73800),
+  i = r(120356),
+  s = r.n(i),
+  o = r(802433),
+  l = r(680295),
+  c = r(313305),
+  d = r(241822);
+let u = e => {
+  let {
+    profileEffectId: t,
+    isHovering: r,
+    forCollectedModal: i = !1,
+    isPurchased: u,
+    removeSetHeight: f = !1
+  } = e, v = i ? 250 : .1, [p, h] = n.useState(!0);
+  return (n.useEffect(() => {
+    if (!0 !== i) h(!1);
+    else {
+      let e = setTimeout(() => {
+        h(!1)
+      }, v);
+      return () => {
+        clearTimeout(e)
       }
-    }, [h, a]), null != t) ? (0, r.jsxs)("div", {
-      className: o()(c.previewContainer, {
-        [c.previewContainerAnimation]: a,
-        [c.previewContainerSetHeight]: !p
-      }),
-      children: [(0, r.jsx)("img", {
-        src: u,
-        alt: " ",
-        className: a ? c.previewForCollected : c.preview,
-        "aria-hidden": !0
-      }), !m && (0, r.jsx)("div", {
-        className: _ ? c.purchasedEffect : void 0,
-        children: (0, r.jsx)(l.Z, {
-          profileEffectId: t,
-          useThumbnail: !0,
-          autoPlay: a,
-          restartMethod: s.j.FromStart,
-          resetOnHover: !0,
-          isHovering: n,
-          introDelay: h,
-          useOpacityOnHover: !1,
-          shopPreview: !0
-        })
-      })]
-    }) : null
-  }
+    }
+  }, [v, i]), null != t) ? (0, a.jsxs)("div", {
+    className: s()(c.previewContainer, {
+      [c.previewContainerAnimation]: i,
+      [c.previewContainerSetHeight]: !f
+    }),
+    children: [(0, a.jsx)("img", {
+      src: d,
+      alt: " ",
+      className: i ? c.previewForCollected : c.preview,
+      "aria-hidden": !0
+    }), !p && (0, a.jsx)("div", {
+      className: u ? c.purchasedEffect : void 0,
+      children: (0, a.jsx)(l.Z, {
+        profileEffectId: t,
+        useThumbnail: !0,
+        autoPlay: i,
+        restartMethod: o.j.FromStart,
+        resetOnHover: !0,
+        isHovering: r,
+        introDelay: v,
+        useOpacityOnHover: !1,
+        shopPreview: !0
+      })
+    })]
+  }) : null
+}

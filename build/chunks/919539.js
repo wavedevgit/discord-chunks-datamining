@@ -1,4 +1,4 @@
-/** Chunk was on 73021 **/
+/** Chunk was on 22243 **/
 n.d(t, {
   Z: () => T
 });
@@ -20,8 +20,8 @@ var i = n(255367),
   x = n(922628),
   _ = n(703115),
   j = n(526761),
-  E = n(726985),
-  O = n(736530),
+  O = n(726985),
+  E = n(736530),
   C = n(981631),
   v = n(388032);
 
@@ -63,9 +63,9 @@ function S(e) {
     }))
   }
   return (0, i.jsx)(f.U, {
-    setting: E.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_MESSAGE_REQUESTS_V2,
+    setting: O.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_MESSAGE_REQUESTS_V2,
     scrollPosition: j.FY.MESSAGE_REQUESTS_V2,
-    children: n === O.T ? (0, i.jsx)(b.Z, {
+    children: n === E.T ? (0, i.jsx)(b.Z, {
       title: v.intl.string(v.t["3o2ojo"]),
       value: !T && !I,
       onChange: e => R(e, !1),

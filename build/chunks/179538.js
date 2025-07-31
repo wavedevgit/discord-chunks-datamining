@@ -44,13 +44,13 @@ function d(e, t) {
   return n
 }
 
-function f(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function _(e, t) {
+function f(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -79,9 +79,9 @@ function h(e) {
     variant: h = "primary",
     className: m,
     style: g
-  } = e, E = _(e, ["focusProps", "lineClamp", "role", "text", "textVariant", "type", "variant", "className", "style"]);
-  return (0, r.jsx)(o.t, f(u({}, t), {
-    children: (0, r.jsx)("button", f(u({
+  } = e, E = f(e, ["focusProps", "lineClamp", "role", "text", "textVariant", "type", "variant", "className", "style"]);
+  return (0, r.jsx)(o.t, _(u({}, t), {
+    children: (0, r.jsx)("button", _(u({
       className: a()(l.textButton, l[h]),
       "data-mana-component": "text-button",
       role: i,

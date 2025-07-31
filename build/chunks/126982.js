@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(481060),
   u = n(131388),
   d = n(607070),
-  f = n(70097),
-  _ = n(526167),
+  _ = n(70097),
+  f = n(526167),
   p = n(563132),
   h = n(409813),
   m = n(750143),
@@ -31,7 +31,7 @@ let O = e => {
     className: t,
     style: n,
     alt: ""
-  }) : (0, r.jsxs)(f.Z, {
+  }) : (0, r.jsxs)(_.Z, {
     tabIndex: -1,
     className: t,
     style: n,
@@ -56,7 +56,7 @@ function v(e) {
     isOrbCheckout: a
   } = e, l = (0, u.Z)(m.X), {
     footerNode: d
-  } = (0, p.JL)(), f = (0, _.G6)() && !s.tq, b = null != d ? d.offsetWidth : void 0, y = i.useMemo(() => f && null != b && (t === h.h8.ADD_PAYMENT_STEPS || a) ? b : void 0, [f, b, t, a]);
+  } = (0, p.JL)(), _ = (0, f.G6)() && !s.tq, b = null != d ? d.offsetWidth : void 0, y = i.useMemo(() => _ && null != b && (t === h.h8.ADD_PAYMENT_STEPS || a) ? b : void 0, [_, b, t, a]);
   if (t === h.h8.BENEFITS || t === h.h8.CONFIRM) return null;
   let v = null != y ? {
       width: y + 2

@@ -1,4 +1,4 @@
-/** Chunk was on 73021 **/
+/** Chunk was on 22243 **/
 n.d(t, {
   Z: () => B
 }), n(388685);
@@ -20,8 +20,8 @@ var i = n(255367),
   x = n(880257),
   _ = n(631885),
   j = n(240351),
-  E = n(792258),
-  O = n(657825),
+  O = n(792258),
+  E = n(657825),
   C = n(198952),
   v = n(329242),
   S = n(895328),
@@ -92,11 +92,11 @@ function D(e) {
       let {
         row: t
       } = e, n = l[t];
-      return (0, m.iB)(n) ? (0, i.jsx)(O.Z, {
+      return (0, m.iB)(n) ? (0, i.jsx)(E.Z, {
         userId: n.entity_id,
         timestamp: d.default.extractTimestamp(n.event_id),
         timestampFormatter: b.timestampFormatter
-      }, n.event_id) : (0, m.f0)(n) ? (0, i.jsx)(E.Z, {
+      }, n.event_id) : (0, m.f0)(n) ? (0, i.jsx)(O.Z, {
         guildId: n.entity_id
       }, n.event_id) : void 0
     }, [l, b.timestampFormatter]),

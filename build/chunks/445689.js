@@ -1,4 +1,4 @@
-/** Chunk was on 73021 **/
+/** Chunk was on 22243 **/
 e.exports = {
   media: "media__9c640",
   inlineAsset: "inlineAsset__9c640",

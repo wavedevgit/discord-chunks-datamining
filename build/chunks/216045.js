@@ -1,4 +1,4 @@
-/** Chunk was on 73021 **/
+/** Chunk was on 22243 **/
 n.d(t, {
   Z: () => H
 }), n(388685);
@@ -20,8 +20,8 @@ var i = n(255367),
   x = n(22267),
   _ = n(266454),
   j = n(243778),
-  E = n(957730),
-  O = n(53691),
+  O = n(957730),
+  E = n(53691),
   C = n(267717),
   v = n(296810),
   S = n(678135),
@@ -53,8 +53,8 @@ function H() {
     s = (0, l.e7)([P.Z], () => P.Z.hidePersonalInformation),
     H = (0, l.cj)([R.Z], () => R.Z.getAllPending()),
     {
-      pendingBio: W,
-      pendingAvatar: z,
+      pendingBio: z,
+      pendingAvatar: W,
       pendingNameplate: Y
     } = H,
     K = function(e, t) {
@@ -74,10 +74,10 @@ function H() {
     }(H, ["pendingBio", "pendingAvatar", "pendingNameplate"]),
     q = (0, I.SD)({
       userId: n.id,
-      image: z
+      image: W
     }),
     X = (0, l.e7)([R.Z], () => R.Z.showNotice()),
-    J = L.dN.useSetting() && null != W ? E.ZP.parse(void 0, W).content : W,
+    J = L.dN.useSetting() && null != z ? O.ZP.parse(void 0, z).content : z,
     Q = w.ZP.canUsePremiumProfileCustomization(n),
     {
       analyticsLocations: $,
@@ -165,7 +165,7 @@ function H() {
           isVisible: el
         })
       })
-    }), eu && !X && (0, i.jsx)(O.p, {
+    }), eu && !X && (0, i.jsx)(E.p, {
       className: F.floatingNitroUpsell,
       showUpsell: eu && !el,
       text: G.intl.format(G.t.TmfgIy, {

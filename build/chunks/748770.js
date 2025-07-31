@@ -14,8 +14,8 @@ var r = n(544891),
   c = n(605338),
   u = n(164207),
   d = n(1844),
-  f = n(474936),
-  _ = n(981631);
+  _ = n(474936),
+  f = n(981631);
 async function p() {
   if (!d.Z.isFetchingActiveOutboundPromotions) try {
     a.Z.dispatch({
@@ -25,7 +25,7 @@ async function p() {
         location: "5731cc_1"
       }, {
         autoTrackExposure: !1
-      }).previewEnabled ? _.ANM.OUTBOUND_PROMOTIONS_PREVIEW : _.ANM.OUTBOUND_PROMOTIONS,
+      }).previewEnabled ? f.ANM.OUTBOUND_PROMOTIONS_PREVIEW : f.ANM.OUTBOUND_PROMOTIONS,
       n = (await r.tn.get({
         url: t,
         query: {
@@ -37,7 +37,7 @@ async function p() {
       i = d.Z.consumedInboundPromotionId;
     if (!d.Z.hasFetchedConsumedInboundPromotionId) {
       var e;
-      let t = (await (0, o.yD)(f.CL, !1)).find(e => null != e.promotion_id && !0 === e.consumed);
+      let t = (await (0, o.yD)(_.CL, !1)).find(e => null != e.promotion_id && !0 === e.consumed);
       i = null != (e = null == t ? void 0 : t.promotion_id) ? e : null
     }
     a.Z.dispatch({
@@ -57,7 +57,7 @@ async function h() {
       type: "ACTIVE_BOGO_PROMOTION_FETCH"
     });
     let e = (await r.tn.get({
-      url: _.ANM.BOGO_PROMOTIONS,
+      url: f.ANM.BOGO_PROMOTIONS,
       query: {
         locale: s.default.locale
       },

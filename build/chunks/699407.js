@@ -13,7 +13,7 @@ var s = n(756647),
   u = n(761609),
   d = n(231338);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,14 +22,14 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -70,14 +70,14 @@ let m = "x-science-test",
   D = 0,
   L = Number.MAX_SAFE_INTEGER,
   x = 0,
-  M = 0,
-  k = null,
+  k = 0,
+  M = null,
   j = !1,
   U = null,
   G = null;
 
 function B() {
-  N = 0, C = 0, R = 0, D = 0, L = Number.MAX_SAFE_INTEGER, x = 0, M = 0, w = Date.now(), P = A
+  N = 0, C = 0, R = 0, D = 0, L = Number.MAX_SAFE_INTEGER, x = 0, k = 0, w = Date.now(), P = A
 }
 
 function V(e) {
@@ -136,7 +136,7 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
       let e = Y.slice();
       Y = [], D = V(D);
       let t = e.length;
-      L = Math.min(L, t), x = Math.max(x, t), M = V(M, t);
+      L = Math.min(L, t), x = Math.max(x, t), k = V(k, t);
       let n = ee(e);
       return n.then(() => {
         e.forEach(e => {
@@ -155,8 +155,8 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
     function ee(e) {
       let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : b,
         n = Date.now(),
-        i = e.map(e => h(_({}, e), {
-          properties: h(_({}, e.properties), {
+        i = e.map(e => h(f({}, e), {
+          properties: h(f({}, e.properties), {
             client_send_timestamp: n
           })
         })),
@@ -194,7 +194,7 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
           event_queue_batch_count: D,
           event_queue_batch_min_size: L === Number.MAX_SAFE_INTEGER ? 0 : L,
           event_queue_batch_max_size: x,
-          event_queue_batch_avg_size: D > 0 ? M / D : 0,
+          event_queue_batch_avg_size: D > 0 ? k / D : 0,
           science_request_id: G,
           science_response: U,
           launch_signature: q()
@@ -204,32 +204,32 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
     }
 
     function en() {
-      if (null == k) return !1;
-      switch (k.type) {
+      if (null == M) return !1;
+      switch (M.type) {
         case "timeout":
-          clearTimeout(k.id);
+          clearTimeout(M.id);
           break;
         case "interval":
-          clearInterval(k.id);
+          clearInterval(M.id);
           break;
         default:
-          k.type
+          M.type
       }
-      return k = null, !0
+      return M = null, !0
     }
 
     function er() {
-      if (null != k) return;
+      if (null != M) return;
       let e = () => {
         let t = .1 * v;
-        k = {
+        M = {
           type: "timeout",
           id: setTimeout(() => {
             et(), e()
           }, Math.max(v + (Math.floor(Math.random() * t * 2) - t), I))
         }
       };
-      k = {
+      M = {
         type: "timeout",
         id: setTimeout(() => {
           et(), e()
@@ -266,7 +266,7 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
         } = e, s = {
           type: t,
           fingerprint: i,
-          properties: _({
+          properties: f({
             client_track_timestamp: Date.now(),
             client_heartbeat_session_id: o,
             event_sequence_number: ++A
@@ -289,8 +289,8 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
         null != O && this.waitFor(...O)
       }
       constructor(...e) {
-        super(...e), f(this, "submitEventsImmediately", ee)
+        super(...e), _(this, "submitEventsImmediately", ee)
       }
     }
-    return f(ea, "displayName", "AnalyticsTrackingStore"), new ea(n, a)
+    return _(ea, "displayName", "AnalyticsTrackingStore"), new ea(n, a)
   }

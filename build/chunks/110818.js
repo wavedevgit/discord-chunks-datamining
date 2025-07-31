@@ -11,8 +11,8 @@ var r, i, a, o, s = n(255367),
   c = n(120356),
   u = n.n(c),
   d = n(855659),
-  f = n(748780),
-  _ = n(481060),
+  _ = n(748780),
+  f = n(481060),
   p = n(800929);
 
 function h(e, t, n) {
@@ -77,7 +77,7 @@ class E extends(r = l.PureComponent) {
       pause: i,
       pauseWhileUnfocused: a
     } = this.props;
-    return (0, s.jsx)(_.kci, {
+    return (0, s.jsx)(f.kci, {
       className: u()(p.sequencedAnimation, e),
       importData: this.importDefault,
       nextScene: i ? "idle" : t,
@@ -144,7 +144,7 @@ class O extends(i = l.PureComponent) {
       pause: i,
       pauseWhileUnfocused: a
     } = this.props;
-    return (0, s.jsx)(_.kci, {
+    return (0, s.jsx)(f.kci, {
       className: u()(p.sequencedAnimation, e),
       importData: this.importDefault,
       nextScene: i ? "idle" : t,
@@ -216,10 +216,10 @@ class T extends l.PureComponent {
     } = this.props;
     return (0, s.jsxs)("div", {
       className: p.panningAnimation,
-      children: [(0, s.jsx)(f.Z.div, {
+      children: [(0, s.jsx)(_.Z.div, {
         className: e,
         style: this.getStyle(!1)
-      }), (0, s.jsx)(f.Z.div, {
+      }), (0, s.jsx)(_.Z.div, {
         className: e,
         style: this.getStyle(!0)
       })]
@@ -234,7 +234,7 @@ let S = Object.freeze({
     IDLE_LOOP: {
       toValue: 1,
       duration: 6e3,
-      easing: f.Z.Easing.linear
+      easing: _.Z.Easing.linear
     },
     BOOST_START: {
       toValue: 0,
@@ -277,11 +277,11 @@ class N extends(a = l.PureComponent) {
     })
   }
   animateEntry(e) {
-    f.Z.parallel([f.Z.timing(this.foregroundAnimation.y, {
+    _.Z.parallel([_.Z.timing(this.foregroundAnimation.y, {
       toValue: e.toValue,
       duration: e.duration,
       delay: e.delay || 0
-    }), f.Z.timing(this.backgroundAnimation.y, {
+    }), _.Z.timing(this.backgroundAnimation.y, {
       toValue: e.toValue,
       duration: e.duration * A,
       delay: e.delay || 0
@@ -297,11 +297,11 @@ class N extends(a = l.PureComponent) {
     this.animateIdleLoopBackground(), this.animateIdleLoopForeground()
   }
   animateBoostStart() {
-    f.Z.parallel([f.Z.timing(this.foregroundAnimation.y, {
+    _.Z.parallel([_.Z.timing(this.foregroundAnimation.y, {
       toValue: S.BOOST_START.toValue,
       duration: S.BOOST_START.duration,
       delay: S.BOOST_START.delay
-    }), f.Z.timing(this.backgroundAnimation.y, {
+    }), _.Z.timing(this.backgroundAnimation.y, {
       toValue: S.BOOST_START.toValue,
       duration: S.BOOST_START.duration * A,
       delay: S.BOOST_START.delay
@@ -331,7 +331,7 @@ class N extends(a = l.PureComponent) {
           className: p.tier2Foreground,
           animation: this.foregroundAnimation
         })]
-      }), (0, s.jsx)(_.kci, {
+      }), (0, s.jsx)(f.kci, {
         className: p.sequencedAnimation,
         importData: this.importData,
         nextScene: n ? "idle_loop" : t,
@@ -344,20 +344,20 @@ class N extends(a = l.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), h(this, "backgroundAnimation", new f.Z.ValueXY({
+    super(...e), h(this, "backgroundAnimation", new _.Z.ValueXY({
       x: 0,
       y: 0
-    })), h(this, "foregroundAnimation", new f.Z.ValueXY({
+    })), h(this, "foregroundAnimation", new _.Z.ValueXY({
       x: 0,
       y: 0
     })), h(this, "didUnmount", !1), h(this, "animateIdleLoopBackground", () => {
-      this.didUnmount || (this.backgroundAnimation.x.setValue(0), f.Z.timing(this.backgroundAnimation.x, {
+      this.didUnmount || (this.backgroundAnimation.x.setValue(0), _.Z.timing(this.backgroundAnimation.x, {
         toValue: S.IDLE_LOOP.toValue,
         duration: S.IDLE_LOOP.duration * A,
-        easing: f.Z.Easing.linear
+        easing: _.Z.Easing.linear
       }).start(this.animateIdleLoopBackground))
     }), h(this, "animateIdleLoopForeground", () => {
-      this.didUnmount || (this.foregroundAnimation.x.setValue(0), f.Z.timing(this.foregroundAnimation.x, {
+      this.didUnmount || (this.foregroundAnimation.x.setValue(0), _.Z.timing(this.foregroundAnimation.x, {
         toValue: S.IDLE_LOOP.toValue,
         duration: S.IDLE_LOOP.duration,
         easing: S.IDLE_LOOP.easing
@@ -451,14 +451,14 @@ let R = {
     DURATION_END: 250,
     SIZE_MIN: 7,
     SIZE_MAX: 15,
-    EASING_MIDDLE: f.Z.Easing.bezier(.3, .01, 0, .99),
-    EASING_END: f.Z.Easing.bezier(0, -.01, .99, 0)
+    EASING_MIDDLE: _.Z.Easing.bezier(.3, .01, 0, .99),
+    EASING_END: _.Z.Easing.bezier(0, -.01, .99, 0)
   });
 
 function L(e) {
   let {
     animate: t
-  } = e, [n, r] = l.useState(0), i = (0, _.bYB)(w.length, w.map((e, i) => {
+  } = e, [n, r] = l.useState(0), i = (0, f.bYB)(w.length, w.map((e, i) => {
     let a = i > 0 ? D.DELAY_STAGGER * i + Math.random() * (D.DELAY_MAX - D.DELAY_MIN) + D.DELAY_MIN : 0,
       o = Math.random() * (D.SIZE_MAX - D.SIZE_MIN) + D.SIZE_MIN;
     return {
@@ -543,7 +543,7 @@ class x extends(o = l.PureComponent) {
     } = this.props;
     return (0, s.jsxs)("div", {
       className: u()(p.guildWrapper, e),
-      children: [(0, s.jsx)(_.kci, {
+      children: [(0, s.jsx)(f.kci, {
         className: p.guildBackground,
         importData: this.importData,
         nextScene: n ? "idle" : t,

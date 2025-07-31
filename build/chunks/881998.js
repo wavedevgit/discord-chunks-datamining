@@ -22,8 +22,8 @@ var u = function(e) {
   return e.NOT_FETCHED = "NOT_FETCHED", e.FETCHING = "FETCHING", e.FETCHED = "FETCHED", e
 }({});
 let d = new Map,
-  f = [],
   _ = [],
+  f = [],
   p = "NOT_FETCHED";
 
 function h() {
@@ -31,7 +31,7 @@ function h() {
 }
 
 function m(e) {
-  p = "FETCHED", d = new Map(e.tokens.map(e => [e.application.id, e])), _ = (f = e.tokens).filter(e => {
+  p = "FETCHED", d = new Map(e.tokens.map(e => [e.application.id, e])), f = (_ = e.tokens).filter(e => {
     let {
       application: t
     } = e;
@@ -45,12 +45,12 @@ function g(e) {
     application: n,
     scopes: r
   } = e, i = d.get(n.id);
-  null != i && (f = f.filter(e => {
+  null != i && (_ = _.filter(e => {
     let {
       application: t
     } = e;
     return t.id !== i.application.id
-  }), _ = _.filter(e => {
+  }), f = f.filter(e => {
     let {
       application: t
     } = e;
@@ -61,7 +61,7 @@ function g(e) {
     application: n,
     scopes: r
   };
-  d.set(a.application.id, a), f = [...f, a], null == a.application.parent_id && (_ = [..._, a])
+  d.set(a.application.id, a), _ = [..._, a], null == a.application.parent_id && (f = [...f, a])
 }
 
 function E(e) {
@@ -70,12 +70,12 @@ function E(e) {
     applicationId: n
   } = e, r = d.get(n);
   if (null == r || r.id !== t) return !1;
-  d.delete(r.application.id), f = f.filter(e => {
+  d.delete(r.application.id), _ = _.filter(e => {
     let {
       id: t
     } = e;
     return t !== r.id
-  }), _ = _.filter(e => {
+  }), f = f.filter(e => {
     let {
       id: t
     } = e;
@@ -91,10 +91,10 @@ class b extends(r = i.ZP.Store) {
     return null == e ? null : null != (t = d.get(e)) ? t : null
   }
   getNewestTokens() {
-    return f
+    return _
   }
   getNewestTokensForNonChildrenApplications() {
-    return _
+    return f
   }
   getFetchState() {
     return p

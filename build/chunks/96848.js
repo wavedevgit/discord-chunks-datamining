@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 }), n(388685), n(704826), n(35282);
 var r = n(255367),
   i = n(73800),
@@ -15,13 +15,13 @@ let d = {
     section: s.jXE.VOICE_CHANNEL_EFFECTS_EMOJI_PICKER,
     openPopoutType: "gift_effect_emoji_picker"
   },
-  f = l.Hz.GIFT;
+  _ = l.Hz.GIFT;
 
-function _(e) {
+function f(e) {
   let {
     setEmojiConfetti: t,
     emojiConfetti: n
-  } = e, [s, l] = i.useState(!1), _ = i.useRef(null), p = e => (0, r.jsxs)("div", {
+  } = e, [s, l] = i.useState(!1), f = i.useRef(null), p = e => (0, r.jsxs)("div", {
     className: u.customGiftContent,
     children: [(0, r.jsxs)("div", {
       className: u.customGiftHeader,
@@ -40,7 +40,7 @@ function _(e) {
     null != t && (t(n), l(!1))
   };
   return (0, r.jsx)(a.yRy, {
-    targetElementRef: _,
+    targetElementRef: f,
     shouldShow: s,
     position: "bottom",
     align: "left",
@@ -55,7 +55,7 @@ function _(e) {
           closePopout: t,
           onSelectEmoji: h,
           wrapper: "div",
-          pickerIntention: f,
+          pickerIntention: _,
           renderHeader: p,
           headerClassName: u.emojiHeader,
           className: u.emojiList,
@@ -70,7 +70,7 @@ function _(e) {
     children: () => (0, r.jsx)(a.P3F, {
       className: u.container,
       onClick: () => l(!0),
-      innerRef: _,
+      innerRef: f,
       children: (null == n ? void 0 : n.name) == null ? (0, r.jsxs)("div", {
         className: u.contentContainer,
         children: [(0, r.jsx)(a.EO4, {

@@ -33,7 +33,7 @@ function d(e) {
   return e
 }
 
-function f(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -44,8 +44,8 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
+function f(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -104,7 +104,7 @@ function E(e) {
     editable: o,
     inputRef: l,
     focusProps: u,
-    name: f = "",
+    name: _ = "",
     type: h = "text",
     placeholder: E = "",
     maxLength: b = 999,
@@ -123,28 +123,28 @@ function E(e) {
   } = g(N, I, y, v, b, T), L = e => {
     var t, n;
     let r = e.currentTarget.value;
-    null == (t = C.onChange) || t.call(C, r, f), D(!0), null == (n = R.setHasValue) || n.call(R, "" !== r)
+    null == (t = C.onChange) || t.call(C, r, _), D(!0), null == (n = R.setHasValue) || n.call(R, "" !== r)
   }, x = e => {
     var t, n;
-    null == (t = C.onFocus) || t.call(C, e, f), null == (n = R.setIsFocused) || n.call(R, !0)
-  }, M = e => {
+    null == (t = C.onFocus) || t.call(C, e, _), null == (n = R.setIsFocused) || n.call(R, !0)
+  }, k = e => {
     var t, n;
-    null == (t = C.onBlur) || t.call(C, e, f), null == (n = R.setIsFocused) || n.call(R, !1)
-  }, k = i.useRef(null), j = !1 === o || void 0;
+    null == (t = C.onBlur) || t.call(C, e, _), null == (n = R.setIsFocused) || n.call(R, !1)
+  }, M = i.useRef(null), j = !1 === o || void 0;
   return (0, r.jsxs)("div", {
     className: c.container,
     children: [(0, r.jsxs)("div", {
       className: c.wrapper,
       "data-leading": null != S,
       "data-trailing": null != A,
-      ref: k,
+      ref: M,
       "data-error": w,
       "data-read-only": j,
-      children: [S, (0, r.jsx)(a.t, _(d({
-        ringTarget: k
+      children: [S, (0, r.jsx)(a.t, f(d({
+        ringTarget: M
       }, u), {
-        children: (0, r.jsx)("input", _(d({
-          name: f,
+        children: (0, r.jsx)("input", f(d({
+          name: _,
           className: c.input,
           disabled: n,
           readOnly: j,
@@ -157,7 +157,7 @@ function E(e) {
         }, C), {
           "aria-labelledby": null != (t = C["aria-labelledby"]) ? t : R.titleId,
           onChange: L,
-          onBlur: M,
+          onBlur: k,
           onFocus: x,
           ref: l
         }))

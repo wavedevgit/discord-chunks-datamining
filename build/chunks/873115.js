@@ -5,7 +5,7 @@ n.d(t, {
   Nj: () => b,
   RS: () => y,
   by: () => g,
-  eI: () => _,
+  eI: () => f,
   f6: () => m,
   i0: () => O,
   ib: () => p,
@@ -21,12 +21,12 @@ var r = n(544891),
 let u = "https://www.paypal.com",
   d = "https://sandbox.paypal.com";
 
-function f(e) {
+function _(e) {
   let t = c.Ai1.BRAINTREE.KEY.startsWith("production_") ? u : d;
   return "".concat(t, "/agreements/approve?nolegacy=1&ba_token=").concat(e)
 }
 
-function _() {
+function f() {
   (0, o.S)().then(e => {
     e.client.create({
       authorization: c.Ai1.BRAINTREE.KEY
@@ -86,7 +86,7 @@ function h() {
               token: t
             }
           } = e;
-          this._frameService.redirect(f(t))
+          this._frameService.redirect(_(t))
         }).catch(e => (this._frameService.close(), this._authorizationInProgress = !1, Promise.reject(Error(e.body && e.body.message))))
       }, i.Z.dispatch({
         type: "BRAINTREE_CREATE_PAYPAL_CLIENT_SUCCESS",

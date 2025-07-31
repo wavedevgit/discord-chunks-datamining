@@ -4,7 +4,7 @@ n.d(t, {
   Lp: () => d,
   l9: () => p,
   tW: () => u,
-  ts: () => _
+  ts: () => f
 });
 var r = n(399606),
   i = n(601964),
@@ -32,15 +32,15 @@ function u(e) {
 function d(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
     n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2];
-  return !(null == e || !l(e) || !1 === t && e.hasFlag(s.zZ.SUMMARIES_DISABLED)) && f(a.Z.getGuild(e.guild_id), n)
+  return !(null == e || !l(e) || !1 === t && e.hasFlag(s.zZ.SUMMARIES_DISABLED)) && _(a.Z.getGuild(e.guild_id), n)
 }
 
-function f(e) {
+function _(e) {
   let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
   return !(null == e || c(e.id)) && !!e.features.has(o.oNc.SUMMARIES_ENABLED_GA) && (!t || e.features.has(o.oNc.SUMMARIES_ENABLED_BY_USER))
 }
 
-function _(e) {
+function f(e) {
   arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
   let t = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
   return d(e, t)
@@ -49,6 +49,6 @@ function _(e) {
 function p(e) {
   return arguments.length > 1 && void 0 !== arguments[1] && arguments[1], (0, r.e7)([a.Z], () => {
     var t;
-    return f(a.Z.getGuild(null != (t = null == e ? void 0 : e.id) ? t : o.lds), !1)
+    return _(a.Z.getGuild(null != (t = null == e ? void 0 : e.id) ? t : o.lds), !1)
   }, [e])
 }

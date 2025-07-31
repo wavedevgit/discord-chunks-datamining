@@ -17,7 +17,7 @@ n.d(t, {
   FX: () => ep,
   Fs: () => ts,
   GN: () => ed,
-  Gd: () => t_,
+  Gd: () => tf,
   HJ: () => e3,
   Jg: () => eT,
   K: () => ey,
@@ -48,7 +48,7 @@ n.d(t, {
   b7: () => eW,
   bA: () => ty,
   f$: () => tc,
-  f2: () => eM,
+  f2: () => ek,
   fY: () => e9,
   gI: () => te,
   hF: () => tT,
@@ -64,16 +64,16 @@ n.d(t, {
   q8: () => e0,
   qe: () => tv,
   t2: () => ec,
-  u7: () => tf,
+  u7: () => t_,
   uN: () => tI,
   vQ: () => eb,
   vR: () => ev,
   xN: () => eg,
-  xn: () => e_,
+  xn: () => ef,
   yH: () => tl,
   yI: () => en,
   ys: () => eI,
-  zE: () => ef,
+  zE: () => e_,
   zK: () => eD,
   zi: () => W
 }), n(388685), n(314940), n(953529), n(415506), n(642613), n(784620), n(973216), n(539854);
@@ -86,9 +86,9 @@ var r = n(991998),
   c = n(887003),
   u = n(570140),
   d = n(230711),
-  f = n(782568);
+  _ = n(782568);
 n(597688);
-var _ = n(231757),
+var f = n(231757),
   p = n(706454),
   h = n(866960),
   m = n(572004),
@@ -131,7 +131,7 @@ function x(e) {
   return e
 }
 
-function M(e, t) {
+function k(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -142,8 +142,8 @@ function M(e, t) {
   return n
 }
 
-function k(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
+function M(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -411,24 +411,24 @@ function ed(e) {
   return Object.keys(R.a_).includes(S.jn[e])
 }
 
-function ef(e, t) {
+function e_(e, t) {
   if (!ed(t)) return !1;
   let n = S.jn[t];
   return (0, b.yE)(e.dismissedQuestContent, R.a_[n])
 }
 
-function e_(e) {
+function ef(e) {
   let t = e.rewardsConfig.rewards.find(e => e.type === c.w.COLLECTIBLE);
   return (null == t ? void 0 : t.type) === c.w.COLLECTIBLE ? t : null
 }
 
 function ep(e) {
-  let t = e_(e);
+  let t = ef(e);
   return null != t && "expiresAtPremium" in t && null != t.expiresAtPremium ? tr(t.expiresAtPremium) : null
 }
 
 function eh(e) {
-  let t = e_(e);
+  let t = ef(e);
   if (null == t || !("expiresAt" in t) || null == t.expiresAt) return null;
   let n = new Date(e.expiresAt),
     i = new Date(t.expiresAt),
@@ -465,7 +465,7 @@ function eg(e) {
 }
 
 function eE(e) {
-  return null != e_(e)
+  return null != ef(e)
 }
 
 function eb(e) {
@@ -487,8 +487,8 @@ function ev(e, t) {
 }
 
 function eI(e, t) {
-  O.Z.captureException(e, k(x({}, t), {
-    tags: k(x({}, null == t ? void 0 : t.tags), {
+  O.Z.captureException(e, M(x({}, t), {
+    tags: M(x({}, null == t ? void 0 : t.tags), {
       app_context: "quests"
     })
   }))
@@ -568,9 +568,9 @@ function ex(e, t) {
     questContentPosition: t.position,
     impressionId: t.impressionId,
     sourceQuestContent: t.sourceQuestContent
-  }), g.S.dispatch(P.CkL.QUEST_GAME_LINK_OPENED), (0, f.Z)(n)
+  }), g.S.dispatch(P.CkL.QUEST_GAME_LINK_OPENED), (0, _.Z)(n)
 }
-let eM = (e, t) => {
+let ek = (e, t) => {
     (0, v._3)({
       questId: e,
       questContent: t.content,
@@ -580,7 +580,7 @@ let eM = (e, t) => {
       sourceQuestContent: t.sourceQuestContent
     }), (0, m.JG)(es(e))
   },
-  ek = (e, t) => e > 0 ? (0, i.floor)(Math.min(t / e, 1), 4) : 0,
+  eM = (e, t) => e > 0 ? (0, i.floor)(Math.min(t / e, 1), 4) : 0,
   ej = e => e6(e) || T.Z.isProgressingOnDesktop(e.id),
   eU = (e, t) => {
     var n, r, a, o;
@@ -621,7 +621,7 @@ let eM = (e, t) => {
       progressSeconds: d,
       targetSeconds: u,
       targetMinutes: Math.ceil(u / E.Z.Seconds.MINUTE),
-      percentComplete: ek(u, d),
+      percentComplete: eM(u, d),
       taskType: l
     }
   },
@@ -688,7 +688,7 @@ function eW(e) {
   let a = N.r.build(e.config).defaultInGameTask;
   if (null == a) return null;
   let o = null != (i = null == (r = e.userStatus) || null == (n = r.progress) || null == (t = n[a.eventName]) ? void 0 : t.value) ? i : 0,
-    s = ek(a.target, o);
+    s = eM(a.target, o);
   return {
     title: a.messages.taskTitle,
     description: a.messages.taskDescription,
@@ -744,7 +744,7 @@ function e6(e) {
 }
 
 function e8(e) {
-  return !!e0(e) && (0, n(952265).nf)(tf(e.id))
+  return !!e0(e) && (0, n(952265).nf)(t_(e.id))
 }
 
 function e7() {
@@ -762,7 +762,7 @@ function e9(e, t) {
     sourceQuestContent: t.sourceQuestContent,
     questContentCTA: t.ctaContent,
     impressionId: t.impressionId
-  }), (0, _.Z)({
+  }), (0, f.Z)({
     platformType: n,
     location: t.ctaContent
   })
@@ -782,12 +782,12 @@ function te(e, t) {
     sourceQuestContent: t.sourceQuestContent
   });
   let r = td(n);
-  if (1 === r.length) return (0, _.Z)({
+  if (1 === r.length) return (0, f.Z)({
     platformType: r.at(0)
   });
   u.Z.dispatch({
     type: "CONNECTIONS_GRID_MODAL_SHOW",
-    onComplete: e => (0, _.Z)({
+    onComplete: e => (0, f.Z)({
       platformType: e
     }),
     includedPlatformTypes: new Set(r)
@@ -839,8 +839,8 @@ function to(e) {
   }), u = null != s ? s : null == o ? void 0 : o.platform, d = c ? eL({
     quest: a,
     idx: null != (r = null == o ? void 0 : o.tier) ? r : null == (t = a.userStatus) ? void 0 : t.claimedTier
-  }) : null, f = null != (i = null == d || null == (n = d.messages) ? void 0 : n.redemptionInstructionsByPlatform) ? i : l.defaultRewardRedemptionInstructionsByPlatform;
-  return null != u ? f[u] : void 0
+  }) : null, _ = null != (i = null == d || null == (n = d.messages) ? void 0 : n.redemptionInstructionsByPlatform) ? i : l.defaultRewardRedemptionInstructionsByPlatform;
+  return null != u ? _[u] : void 0
 }
 
 function ts(e) {
@@ -874,13 +874,13 @@ function tl(e) {
 
 function tc(e) {
   var t;
-  let n = null == (t = e_(e)) ? void 0 : t.expirationMode;
+  let n = null == (t = ef(e)) ? void 0 : t.expirationMode;
   return null != n && U.has(n)
 }
 
 function tu(e) {
   var t;
-  return tc(e) && (null == (t = e_(e)) ? void 0 : t.expirationMode) === l.n.PREMIUM_PERMANENT
+  return tc(e) && (null == (t = ef(e)) ? void 0 : t.expirationMode) === l.n.PREMIUM_PERMANENT
 }
 
 function td(e) {
@@ -896,11 +896,11 @@ function td(e) {
   return n
 }
 
-function tf(e) {
+function t_(e) {
   return "VIDEO-QUEST-".concat(e)
 }
 
-function t_(e) {
+function tf(e) {
   let t = e0(e),
     n = eR(e);
   return t || n

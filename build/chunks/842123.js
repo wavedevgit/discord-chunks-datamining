@@ -1,4 +1,4 @@
-/** Chunk was on 73021 **/
+/** Chunk was on 22243 **/
 e.exports = {
   socialLinks: "socialLinks__7df54",
   link: "link__7df54",

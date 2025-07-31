@@ -47,10 +47,10 @@ function d(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let f = .1;
+let _ = .1;
 
-function _(e) {
-  if (Math.random() > f) return;
+function f(e) {
+  if (Math.random() > _) return;
   let t = null == e.apiResponseTimestamp ? null : e.apiResponseTimestamp - e.initialSendTimestamp,
     n = (0, i.d)();
   o.default.track(s.rMx.QUEST_DECISION_ROUNDTRIP, c(d(c({}, (0, r.Z)()), {
@@ -72,14 +72,14 @@ class p {
     };
     this.pendingRequests.set(e, t), setTimeout(() => {
       let t = this.pendingRequests.get(e);
-      null != t && (_(t), this.pendingRequests.delete(e))
+      null != t && (f(t), this.pendingRequests.delete(e))
     }, 3e4)
   }
   recordQuestRequestApiResponse(e, t) {
     let {
       wasSuccessful: n
     } = t, r = this.pendingRequests.get(e);
-    null != r && (_(d(c({}, r), {
+    null != r && (f(d(c({}, r), {
       apiResponseTimestamp: Date.now(),
       wasSuccessful: n
     })), this.pendingRequests.delete(e))

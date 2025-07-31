@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 }), n(388685);
 var r = n(147913),
   i = n(579806),
@@ -20,7 +20,7 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 let d = new a.Z("OverlayContentProtectionManagerV3");
-class f extends r.Z {
+class _ extends r.Z {
   constructor(...e) {
     var t;
     super(...e), t = this, u(this, "shouldEnable", !1), u(this, "enabled", !1), u(this, "setContentProtection", e => {
@@ -50,4 +50,4 @@ class f extends r.Z {
     })
   }
 }
-let _ = new f
+let f = new _

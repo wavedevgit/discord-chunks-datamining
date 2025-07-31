@@ -1,4 +1,4 @@
-/** Chunk was on 73021 **/
+/** Chunk was on 22243 **/
 e.exports = {
   syncing: "syncing_a706ba",
   paymentHistory: "paymentHistory_a706ba",

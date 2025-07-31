@@ -58,11 +58,11 @@ e.exports = function(e) {
     d = e.COMMENT(";", "$", {
       relevance: 0
     }),
-    f = {
+    _ = {
       className: "literal",
       begin: /\b(true|false|nil)\b/
     },
-    _ = {
+    f = {
       begin: "\\[|(#::?" + n + ")?\\{",
       end: "[\\]\\}]",
       relevance: 0
@@ -86,7 +86,7 @@ e.exports = function(e) {
       relevance: 0,
       starts: m
     },
-    E = [u, h, s, l, c, d, p, _, o, f, a];
+    E = [u, h, s, l, c, d, p, f, o, _, a];
   return h.contains = [{
     beginKeywords: r,
     keywords: {
@@ -101,10 +101,10 @@ e.exports = function(e) {
       excludeEnd: !0,
       endsParent: !0
     }].concat(E)
-  }, g, m], m.contains = E, _.contains = E, {
+  }, g, m], m.contains = E, f.contains = E, {
     name: "Clojure",
     aliases: ["clj", "edn"],
     illegal: /\S/,
-    contains: [u, h, s, l, c, d, p, _, o, f]
+    contains: [u, h, s, l, c, d, p, f, o, _]
   }
 }

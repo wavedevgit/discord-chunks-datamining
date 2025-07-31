@@ -1,4 +1,4 @@
-/** Chunk was on 73021 **/
+/** Chunk was on 22243 **/
 n.d(t, {
   Z: () => x
 });
@@ -27,7 +27,7 @@ function x() {
     hidePersonalInformation: x,
     disableSounds: _,
     disableNotifications: j,
-    enableContentProtection: E
+    enableContentProtection: O
   } = (0, a.cj)([u.Z], () => (function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -45,7 +45,7 @@ function x() {
       })
     }
     return e
-  })({}, u.Z.getSettings())), O = (e, t) => {
+  })({}, u.Z.getSettings())), E = (e, t) => {
     o.Z.update({
       [e]: t
     })
@@ -75,7 +75,7 @@ function x() {
       setting: p.s6.STREAMER_MODE_ENABLE,
       children: [(0, i.jsx)(l.j7V, {
         value: e,
-        onChange: e => O("enabled", e),
+        onChange: e => E("enabled", e),
         note: h.intl.format(h.t.MLVL2N, {
           onClick: () => {
             c.Z.setSection(g.oAB.KEYBINDS)
@@ -85,7 +85,7 @@ function x() {
       }), (() => {
         if (m.isPlatformEmbedded) return (0, i.jsx)(l.j7V, {
           value: t,
-          onChange: e => O("autoToggle", e),
+          onChange: e => E("autoToggle", e),
           note: h.intl.string(h.t.ZPi4lJ),
           children: h.intl.string(h.t.PKDAJy)
         })
@@ -98,7 +98,7 @@ function x() {
         setting: p.s6.STREAMER_MODE_HIDE_PERSONAL_INFORMATION,
         children: (0, i.jsx)(l.j7V, {
           value: x,
-          onChange: e => O("hidePersonalInformation", e),
+          onChange: e => E("hidePersonalInformation", e),
           note: h.intl.string(h.t["+9Lra2"]),
           children: h.intl.string(h.t.UpQziI)
         })
@@ -106,7 +106,7 @@ function x() {
         setting: p.s6.STREAMER_MODE_HIDE_INVITE_LINKS,
         children: (0, i.jsx)(l.j7V, {
           value: r,
-          onChange: e => O("hideInstantInvites", e),
+          onChange: e => E("hideInstantInvites", e),
           note: h.intl.string(h.t.m7mS2d),
           children: h.intl.string(h.t.q7WNGh)
         })
@@ -114,7 +114,7 @@ function x() {
         setting: p.s6.STREAMER_MODE_DISABLE_SOUNDS,
         children: (0, i.jsx)(l.j7V, {
           value: _,
-          onChange: e => O("disableSounds", e),
+          onChange: e => E("disableSounds", e),
           note: h.intl.string(h.t.eAkaio),
           children: h.intl.string(h.t.o56OZm)
         })
@@ -122,15 +122,15 @@ function x() {
         setting: p.s6.STREAMER_MODE_DISABLE_NOTIFICATIONS,
         children: (0, i.jsx)(l.j7V, {
           value: j,
-          onChange: e => O("disableNotifications", e),
+          onChange: e => E("disableNotifications", e),
           note: h.intl.string(h.t.ZAmpQ0),
           children: h.intl.string(h.t.qmYiYW)
         })
       }), (0, i.jsx)(d.F, {
         setting: p.s6.STREAMER_MODE_HIDE_DISCORD_WINDOW_FROM_SCREEN_CAPTURE,
         children: (0, i.jsx)(l.j7V, {
-          value: E,
-          onChange: e => O("enableContentProtection", e),
+          value: O,
+          onChange: e => E("enableContentProtection", e),
           note: h.intl.string(h.t.P4vj0t),
           children: h.intl.string(h.t["iA81+f"])
         })

@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(699516),
   u = n(594174),
   d = n(981631),
-  f = n(998587);
-let _ = [];
+  _ = n(998587);
+let f = [];
 
 function p(e, t) {
   let n = (0, s.Z)(e, t);
@@ -30,7 +30,7 @@ function h(e) {
     application: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: f.subtext,
+    className: _.subtext,
     children: [(0, r.jsx)(l.Z, {
       game: t,
       size: l.Z.Sizes.XXSMALL
@@ -45,7 +45,7 @@ function m(e) {
     menuItemId: t,
     user: n,
     label: s,
-    gameRelationships: f,
+    gameRelationships: _,
     onClick: m,
     color: g
   } = e, {
@@ -54,7 +54,7 @@ function m(e) {
   } = n, y = (0, a.e7)([u.default], () => {
     var e;
     return (null == (e = u.default.getCurrentUser()) ? void 0 : e.id) === E
-  }) || b, O = y ? _ : f, [v, I] = i.useState(!1), T = i.useCallback(() => I(!0), []), S = i.useMemo(() => O.map(e => {
+  }) || b, O = y ? f : _, [v, I] = i.useState(!1), T = i.useCallback(() => I(!0), []), S = i.useMemo(() => O.map(e => {
     let {
       applicationId: t
     } = e;

@@ -1,56 +1,57 @@
-/** Chunk was on 73021 **/
+/** Chunk was on 35305 **/
+"use strict";
 n.d(t, {
-  Z: () => b
+  Z: () => S
 });
-var i, r, s, a = n(392711),
-  l = n.n(a),
-  o = n(213919),
+var r, o, i, a = n(392711),
+  s = n.n(a),
+  l = n(213919),
   c = n(442837),
   d = n(570140);
 let u = !1,
-  m = [],
-  p = "",
-  g = !1,
-  h = {
+  p = [],
+  h = "",
+  _ = !1,
+  f = {
     viewNonce: "",
     regenerateNonce: ""
   };
-class f extends(s = c.ZP.Store) {
+class E extends(i = c.ZP.Store) {
   getVerificationKey() {
-    return p
+    return h
   }
   getBackupCodes() {
-    return m
+    return p
   }
   get togglingSMS() {
     return u
   }
   getNonces() {
-    return h
+    return f
   }
   get hasSeenBackupPrompt() {
-    return g
+    return _
   }
 }
-r = "MFAStore", (i = "displayName") in f ? Object.defineProperty(f, i, {
-  value: r,
+o = "MFAStore", (r = "displayName") in E ? Object.defineProperty(E, r, {
+  value: o,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : f[i] = r;
-let b = new f(d.Z, {
+}) : E[r] = o;
+let S = new E(d.Z, {
   MFA_ENABLE_SUCCESS: function(e) {
     let {
       token: t,
       codes: n
     } = e;
-    void 0 !== t && o.setToken(t), m = n
+    void 0 !== t && l.setToken(t), p = n
   },
   MFA_DISABLE_SUCCESS: function(e) {
     let {
       token: t
     } = e;
-    o.setToken(t)
+    l.setToken(t)
   },
   MFA_SMS_TOGGLE: function() {
     u = !0
@@ -59,23 +60,23 @@ let b = new f(d.Z, {
     u = !1
   },
   MFA_CLEAR_BACKUP_CODES: function() {
-    m = []
+    p = []
   },
   MFA_VIEW_BACKUP_CODES: function(e) {
     let {
       codes: t,
       key: n
     } = e;
-    m = l().sortBy(t, "code"), p = n
+    p = s().sortBy(t, "code"), h = n
   },
   MFA_SEND_VERIFICATION_KEY: function(e) {
     let {
       nonces: t
     } = e;
-    h = t
+    f = t
   },
   MFA_SEEN_BACKUP_CODE_PROMPT: function() {
-    g = !0
+    _ = !0
   },
   CONNECTION_OPEN: () => {}
 })

@@ -1,4 +1,4 @@
-/** Chunk was on 73021 **/
+/** Chunk was on 22243 **/
 n.d(t, {
   Z: () => S
 }), n(388685), n(704826), n(35282), n(539854), n(49124), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749);
@@ -21,7 +21,7 @@ var i = n(255367),
   _ = n(346537),
   j = n(830318);
 
-function E(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -40,7 +40,7 @@ function E(e) {
   return e
 }
 
-function O(e, t) {
+function E(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -79,7 +79,7 @@ let C = {
     }, G = (e, t) => {
       let n = V(t);
       null != n && (0, f.i0)(n, t => {
-        w(i => O(E({}, i), {
+        w(i => E(O({}, i), {
           [e]: (0, f.z)(t, n)
         }))
       })
@@ -90,7 +90,7 @@ let C = {
           let r = [...i],
             s = i[t];
           if (null == s) return i;
-          let a = E({}, s);
+          let a = O({}, s);
           return null == a.randomizedSources && (a.randomizedSources = []), a.randomizedSources.push({
             src: e,
             filename: n.name
@@ -98,7 +98,7 @@ let C = {
         })
       })
     }, H = e => {
-      w(t => O(E({}, t), {
+      w(t => E(O({}, t), {
         [e]: null
       }))
     };
@@ -117,24 +117,24 @@ let C = {
         let [t, n] = e;
         if (null != n) {
           let e = (0, f.$j)(n.base64);
-          n.src = e, k.current.push(e), w(e => O(E({}, e), {
+          n.src = e, k.current.push(e), w(e => E(O({}, e), {
             [t]: n
           }))
         }
       })
     }, [t.config.stillFrames]);
-    let W = {
+    let z = {
         effect: t,
         upsertConfig: n
       },
-      z = r.useRef(W);
+      W = r.useRef(z);
     return (r.useEffect(() => {
-      z.current = W
+      W.current = z
     }), r.useEffect(() => {
       let {
         effect: e,
         upsertConfig: t
-      } = z.current;
+      } = W.current;
       e.readonly || t({
         id: e.id,
         name: L,
@@ -280,9 +280,9 @@ let C = {
                   text: "Download Timing Config"
                 })
               }), (0, i.jsx)(u.Z, {
-                fileContents: () => JSON.stringify(O(E({}, t), {
+                fileContents: () => JSON.stringify(E(O({}, t), {
                   name: L,
-                  config: O(E({}, t.config), {
+                  config: E(O({}, t.config), {
                     effects: R,
                     stillFrames: Z
                   })

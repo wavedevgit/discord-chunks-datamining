@@ -13,7 +13,7 @@ var r = n(255367),
   u = n(516817),
   d = n(241072);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,14 +22,14 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -73,7 +73,7 @@ let E = function(e) {
   var t, {
       ref: n,
       avatar: a,
-      name: f,
+      name: _,
       nameplate: p,
       children: g,
       subText: E,
@@ -125,7 +125,7 @@ let E = function(e) {
               className: o()(d.name, {
                 [d.wrappedName]: C
               }),
-              children: f
+              children: _
             }), b]
           }), null != E ? (0, r.jsx)("div", {
             className: d.subText,
@@ -137,8 +137,8 @@ let E = function(e) {
         }) : null]
       })]
     });
-  return null != T ? (0, r.jsx)(l.tEY, h(_({}, P), {
-    children: (0, r.jsx)(s.rU, h(_({
+  return null != T ? (0, r.jsx)(l.tEY, h(f({}, P), {
+    children: (0, r.jsx)(s.rU, h(f({
       to: T,
       onClick: y
     }, w), {
@@ -146,15 +146,15 @@ let E = function(e) {
       ref: n,
       children: L
     }))
-  })) : null != y ? (0, r.jsx)(l.P3F, h(_({
+  })) : null != y ? (0, r.jsx)(l.P3F, h(f({
     onClick: y,
     focusProps: P
   }, w), {
     role: "listitem",
     innerRef: n,
     children: L
-  })) : (0, r.jsx)(l.tEY, h(_({}, P), {
-    children: (0, r.jsx)("div", h(_({}, w), {
+  })) : (0, r.jsx)(l.tEY, h(f({}, P), {
+    children: (0, r.jsx)("div", h(f({}, w), {
       role: "listitem",
       ref: n,
       children: L

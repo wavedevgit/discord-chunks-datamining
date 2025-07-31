@@ -1,4 +1,4 @@
-/** Chunk was on 73021 **/
+/** Chunk was on 22243 **/
 n.d(t, {
   Z: () => H
 }), n(953529), n(388685), n(539854);
@@ -20,8 +20,8 @@ var i = n(255367),
   x = n(714338),
   _ = n(924557),
   j = n(600164),
-  E = n(74299),
-  O = n(577153),
+  O = n(74299),
+  E = n(577153),
   C = n(365023),
   v = n(610394),
   S = n(131951),
@@ -206,7 +206,7 @@ class F extends r.PureComponent {
       canGoLive: t,
       allowSoundboard: n,
       enableClips: i
-    } = this.props, r = O.Z.getCurrentConfig({
+    } = this.props, r = E.Z.getCurrentConfig({
       location: "UserSettingsKeybinds"
     }, {
       autoTrackExposure: !1
@@ -288,7 +288,7 @@ class F extends r.PureComponent {
       [P.kg4.TOGGLE_VOICE_MODE]: D.intl.string(D.t.snm5YW),
       [P.kg4.TOGGLE_STREAMER_MODE]: D.intl.string(D.t.YszLLy)
     };
-    return O.Z.getCurrentConfig({
+    return E.Z.getCurrentConfig({
       location: "UserSettingsKeybinds"
     }, {
       autoTrackExposure: !1
@@ -409,7 +409,7 @@ class F extends r.PureComponent {
 
 function H() {
   let e = (0, c.e7)([T.ZP], () => T.ZP.getState()),
-    t = (0, c.e7)([S.Z], () => (0, E.Z)(S.Z)),
+    t = (0, c.e7)([S.Z], () => (0, O.Z)(S.Z)),
     n = (0, c.e7)([v.ZP], () => v.ZP.isSupported()),
     r = (0, _.Go)();
   return (0, i.jsx)(F, {

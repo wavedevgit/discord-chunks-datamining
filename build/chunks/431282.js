@@ -1,4 +1,4 @@
-/** Chunk was on 73021 **/
+/** Chunk was on 22243 **/
 n.d(t, {
   V4: () => f,
   XE: () => b,
@@ -74,9 +74,9 @@ function f(e) {
   } = e, _ = h(e, ["id", "label", "sublabel", "icon", "hint", "renderSubmenu"]);
   let j = (0, a.JA)(t),
     {
-      onFocus: E
+      onFocus: O
     } = j,
-    O = h(j, ["onFocus"]),
+    E = h(j, ["onFocus"]),
     {
       id: C
     } = (0, a.f$)(),
@@ -88,7 +88,7 @@ function f(e) {
       T(e === t)
     })
   }, [t, C, N]);
-  let I = e => (0, i.jsxs)(u.kF, g(p({}, e, O, _), {
+  let I = e => (0, i.jsxs)(u.kF, g(p({}, e, E, _), {
     ref: v,
     role: "button",
     look: o.zx.Looks.BLANK,
@@ -99,7 +99,7 @@ function f(e) {
     fullWidth: !0,
     onMouseEnter: () => {
       var t;
-      null == e || null == (t = e.onMouseEnter) || t.call(e), E()
+      null == e || null == (t = e.onMouseEnter) || t.call(e), O()
     },
     children: [(0, i.jsx)("div", {
       className: m.menuItemIcon,

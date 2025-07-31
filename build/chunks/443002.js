@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(906732),
   u = n(365710),
   d = n(174604),
-  f = n(302175),
-  _ = n(626135),
+  _ = n(302175),
+  f = n(626135),
   p = n(724884),
   h = n(355045),
   m = n(290799),
@@ -33,13 +33,13 @@ let A = function(e) {
     onClose: A
   } = e, [N, C] = i.useState(!0), R = i.useRef(!1), P = (0, l.Z)(() => Date.now()), {
     analyticsLocations: w
-  } = (0, c.ZP)(), D = i.useRef(null), L = i.useRef(null), x = i.useRef(null), M = i.useCallback(() => {
+  } = (0, c.ZP)(), D = i.useRef(null), L = i.useRef(null), x = i.useRef(null), k = i.useCallback(() => {
     null != x.current && null != L.current && L.current.scrollTo({
       to: x.current.offsetTop,
       animate: !0
     })
-  }, []), k = i.useCallback(() => {
-    null == A || A(), _.default.track(I.rMx.MODAL_DISMISSED, {
+  }, []), M = i.useCallback(() => {
+    null == A || A(), f.default.track(I.rMx.MODAL_DISMISSED, {
       type: I.ZY5.PREMIUM_GUILD_USER_MODAL,
       location_stack: w,
       location_section: t.section,
@@ -48,7 +48,7 @@ let A = function(e) {
       duration_open_ms: Date.now() - P
     })
   }, [A, t, w, P, n.id]), j = i.useCallback(e => {
-    e && !R.current && (_.default.track(I.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+    e && !R.current && (f.default.track(I.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
       type: I.ZY5.PREMIUM_GUILD_USER_MODAL,
       location_stack: w,
       location_section: t.section,
@@ -57,7 +57,7 @@ let A = function(e) {
     }), R.current = !0)
   }, [t, w, n.id]);
   i.useEffect(() => {
-    _.default.track(I.rMx.OPEN_MODAL, {
+    f.default.track(I.rMx.OPEN_MODAL, {
       type: I.ZY5.PREMIUM_GUILD_USER_MODAL,
       location_stack: w,
       location_section: t.section,
@@ -66,19 +66,19 @@ let A = function(e) {
     })
   }, [n.id, t, w]), i.useEffect(() => {
     function e(e) {
-      "Escape" === e.key && k()
+      "Escape" === e.key && M()
     }
     return window.addEventListener("keydown", e), () => {
       window.removeEventListener("keydown", e)
     }
-  }, [k]);
+  }, [M]);
   let U = (0, u.U)("GuildBoostingMarketing");
   return (0, r.jsxs)(r.Fragment, {
     children: [null != A && (0, r.jsx)("div", {
       className: S.closeIconWrapper,
       children: (0, r.jsx)(s.Z, {
         className: S.closeIcon,
-        closeAction: k,
+        closeAction: M,
         keybind: "ESC",
         variant: s.Z.Variants.BOLD
       })
@@ -92,7 +92,7 @@ let A = function(e) {
           children: [(0, r.jsx)(d.Z, {
             guild: e.guild,
             themeResponsive: !1,
-            onButtonClick: M
+            onButtonClick: k
           }), (0, r.jsx)(o.X6q, {
             className: S.heading,
             color: "always-white",
@@ -100,7 +100,7 @@ let A = function(e) {
             children: T.intl.string(T.t.N4sqzM)
           }), (0, r.jsx)(h.Z, {
             guild: n,
-            closeLayer: k,
+            closeLayer: M,
             onCtaVisibilityChange: C
           }), (0, r.jsx)(E.Z, {
             guild: n
@@ -110,10 +110,10 @@ let A = function(e) {
         }), (0, r.jsx)(v.O, {})]
       }), (0, r.jsxs)("div", {
         className: S.middleBodyContentWrapper,
-        children: [!U && (0, r.jsx)(O.ZP, {}), (0, r.jsx)(f.Z, {
+        children: [!U && (0, r.jsx)(O.ZP, {}), (0, r.jsx)(_.Z, {
           ref: x,
           guild: e.guild,
-          onClose: k
+          onClose: M
         })]
       }), (0, r.jsxs)("div", {
         className: S.lowerBody,
@@ -137,7 +137,7 @@ let A = function(e) {
     }), (0, r.jsx)(g.Z, {
       guild: n,
       isVisible: !N,
-      closeLayer: k
+      closeLayer: M
     })]
   })
 }

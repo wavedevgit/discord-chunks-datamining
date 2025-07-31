@@ -20,8 +20,8 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 let d = new r.V7,
-  f = new r.V7,
-  _ = new r.V7;
+  _ = new r.V7,
+  f = new r.V7;
 class p extends i.Z {
   constructor(...e) {
     super(...e), u(this, "actions", {
@@ -29,13 +29,13 @@ class p extends i.Z {
       POST_CONNECTION_OPEN: () => this.handleUpdateProto()
     }), u(this, "handleUpdateProto", () => {
       let e = s.Ok.getSetting();
-      if (null == e) _.stop();
+      if (null == e) f.stop();
       else if (null != e.expiresAtMs && "0" !== e.expiresAtMs) {
         let t = new Date(Number(e.expiresAtMs)).getTime() - new Date().getTime();
-        t > 0 ? _.start(t, () => {
+        t > 0 ? f.start(t, () => {
           s.Ok.updateSetting(void 0)
-        }, !0) : (s.Ok.updateSetting(void 0), _.stop())
-      } else null != _ && _.stop();
+        }, !0) : (s.Ok.updateSetting(void 0), f.stop())
+      } else null != f && f.stop();
       let t = s.Cr.getSetting();
       if (null != t && "0" !== t && l.Z.getStatus() !== c.Skl.ONLINE) {
         let e = new Date(Number(t)).getTime() - new Date().getTime();
@@ -62,10 +62,10 @@ class p extends i.Z {
       let n = s.fv.getSetting();
       if (null != n && "0" !== n) {
         let e = new Date(Number(n)).getTime() - new Date().getTime();
-        e > 0 ? f.start(e, () => {
+        e > 0 ? _.start(e, () => {
           (0, o.oW)(!1)
-        }, !0) : ((0, o.oW)(!1), f.stop())
-      } else null != f && f.stop()
+        }, !0) : ((0, o.oW)(!1), _.stop())
+      } else null != _ && _.stop()
     })
   }
 }

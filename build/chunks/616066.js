@@ -1,87 +1,74 @@
-/** Chunk was on web.js **/
-"use strict";
-n.d(t, {
-  R: () => E
+/** Chunk was on 96887 **/
+r.d(t, {
+  R: () => p
 });
-var r = n(255367);
-n(73800);
-var i = n(120356),
-  a = n.n(i),
-  o = n(979554),
-  s = n(481060),
-  l = n(1585),
-  c = n(125988),
-  u = n(998502),
-  d = n(388032),
-  f = n(614490);
-
-function _(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
-  }) : e[t] = n, e
-}
-
-function p(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      _(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function h(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-let g = u.ZP.getEnableHardwareAcceleration() ? s.Xo$ : s.qEK,
-  E = e => {
+var a = r(255367);
+r(73800);
+var n = r(120356),
+  i = r.n(n),
+  s = r(979554),
+  o = r(481060),
+  l = r(1585),
+  c = r(125988),
+  d = r(998502),
+  u = r(388032),
+  f = r(614490);
+let v = d.ZP.getEnableHardwareAcceleration() ? o.Xo$ : o.qEK,
+  p = e => {
+    var t, r;
     let {
-      item: t,
-      user: n,
-      isHighlighted: i = !1,
-      isPurchased: u = !1,
-      avatarSize: _ = s.EFr.SIZE_152,
-      avatarPlaceholderSrc: h
-    } = e, E = (0, l.y9)(_), {
-      avatarDecorationSrc: b,
-      eventHandlers: y,
-      avatarPlaceholderSrc: O
+      item: n,
+      user: d,
+      isHighlighted: p = !1,
+      isPurchased: h = !1,
+      avatarSize: m = o.EFr.SIZE_152,
+      avatarPlaceholderSrc: g
+    } = e, y = (0, l.y9)(m), {
+      avatarDecorationSrc: P,
+      eventHandlers: b,
+      avatarPlaceholderSrc: w
     } = (0, c.Z)({
-      user: n,
-      avatarDecorationOverride: (null == t ? void 0 : t.type) === o.Z.AVATAR_DECORATION ? t : void 0,
-      size: E,
-      onlyAnimateOnHover: !i
-    }), v = d.intl.formatToPlainString(d.t.Do2lxM, {
-      a11y_text: t.label
+      user: d,
+      avatarDecorationOverride: (null == n ? void 0 : n.type) === s.Z.AVATAR_DECORATION ? n : void 0,
+      size: y,
+      onlyAnimateOnHover: !p
+    }), O = u.intl.formatToPlainString(u.t.Do2lxM, {
+      a11y_text: n.label
     });
-    return (0, r.jsx)(g, m(p({}, y), {
-      avatarDecoration: b,
-      src: i ? null == n ? void 0 : n.getAvatarURL(void 0, 152, !0) : null != h ? h : O,
-      imageClassName: i ? f.fadeInAvatarImg : void 0,
-      className: a()(f.avatar, {
-        [f.avatarPurchased]: u && !i
+    return (0, a.jsx)(v, (t = function(e) {
+      for (var t = 1; t < arguments.length; t++) {
+        var r = null != arguments[t] ? arguments[t] : {},
+          a = Object.keys(r);
+        "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(r, e).enumerable
+        }))), a.forEach(function(t) {
+          var a;
+          a = r[t], t in e ? Object.defineProperty(e, t, {
+            value: a,
+            enumerable: !0,
+            configurable: !0,
+            writable: !0
+          }) : e[t] = a
+        })
+      }
+      return e
+    }({}, b), r = r = {
+      avatarDecoration: P,
+      src: p ? null == d ? void 0 : d.getAvatarURL(void 0, 152, !0) : null != g ? g : w,
+      imageClassName: p ? f.fadeInAvatarImg : void 0,
+      className: i()(f.avatar, {
+        [f.avatarPurchased]: h && !p
       }),
-      size: _,
-      "aria-label": v
-    }))
+      size: m,
+      "aria-label": O
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
+      var r = Object.keys(e);
+      if (Object.getOwnPropertySymbols) {
+        var a = Object.getOwnPropertySymbols(e);
+        r.push.apply(r, a)
+      }
+      return r
+    })(Object(r)).forEach(function(e) {
+      Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
+    }), t))
   }

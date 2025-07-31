@@ -11,8 +11,8 @@ var r, i = n(392711),
   c = n(959546),
   u = n(283595),
   d = n(780570),
-  f = n(55563),
-  _ = n(981631),
+  _ = n(55563),
+  f = n(981631),
   p = n(474936);
 
 function h(e, t, n) {
@@ -85,7 +85,7 @@ function x() {
   y = !0
 }
 
-function M(e) {
+function k(e) {
   let {
     entitlements: t,
     excludeEnded: n
@@ -93,7 +93,7 @@ function M(e) {
   for (let e of (O = !0, y = !1, v = !n, t)) N(e)
 }
 
-function k() {
+function M() {
   O = !1, y = !1, v = !1
 }
 
@@ -178,7 +178,7 @@ class V extends(r = s.yh) {
     if (null != i)
       for (let t of i) {
         let n = m[t];
-        if (null != n && n.isValid(e, f.Z, r)) return !0
+        if (null != n && n.isValid(e, _.Z, r)) return !0
       }
     if (T.has(n)) return !1;
     let a = null != r ? u.Z.getLibraryApplication(n, r) : u.Z.getActiveLibraryApplication(n);
@@ -194,7 +194,7 @@ class V extends(r = s.yh) {
       for (let r of n) {
         let n = null != r.endsAt && r.endsAt < t,
           i = null != r.startsAt;
-        if (r.type === _.qc2.FRACTIONAL_REDEMPTION && r.sourceType === _.kNB.REVERSE_TRIAL && (!n || e) && i) return r
+        if (r.type === f.qc2.FRACTIONAL_REDEMPTION && r.sourceType === f.kNB.REVERSE_TRIAL && (!n || e) && i) return r
       }
     return null
   }
@@ -206,8 +206,8 @@ class V extends(r = s.yh) {
     } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, r = [], i = new Date;
     return null == (e = this.getForApplication(p.CL)) || e.forEach(e => {
       let a = null != e.endsAt && e.endsAt < i,
-        o = e.sourceType === _.kNB.REVERSE_TRIAL && n;
-      e.type !== _.qc2.FRACTIONAL_REDEMPTION || a && !t || o || r.push(e)
+        o = e.sourceType === f.kNB.REVERSE_TRIAL && n;
+      e.type !== f.qc2.FRACTIONAL_REDEMPTION || a && !t || o || r.push(e)
     }), r
   }
   isFractionalPremiumActive() {
@@ -241,6 +241,6 @@ let F = new V(l.Z, {
   ENTITLEMENT_DELETE: B,
   LOGOUT: A,
   ENTITLEMENTS_FETCH_FOR_USER_START: x,
-  ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: M,
-  ENTITLEMENTS_FETCH_FOR_USER_FAIL: k
+  ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: k,
+  ENTITLEMENTS_FETCH_FOR_USER_FAIL: M
 })

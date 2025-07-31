@@ -12,8 +12,8 @@ var r = n(392711),
   c = n(254238),
   u = n(258609),
   d = n(763296),
-  f = n(314897),
-  _ = n(131951),
+  _ = n(314897),
+  f = n(131951),
   p = n(709054),
   h = n(725380),
   m = n(340332),
@@ -94,9 +94,9 @@ function R(e) {
 }
 
 function P() {
-  s.K.get(S(f.default.getId())) || g.hW.updateAsync("audioContextSettings", e => {
+  s.K.get(S(_.default.getId())) || g.hW.updateAsync("audioContextSettings", e => {
     let t = !1;
-    for (let [n, r] of Object.entries(_.Z.getState().settingsByContext)) {
+    for (let [n, r] of Object.entries(f.Z.getState().settingsByContext)) {
       let i = (0, m.z)(n);
       if (null == i) continue;
       let a = e[i],
@@ -120,7 +120,7 @@ function P() {
         null == a[n] && (t = !0, a[n] = r)
       }
     }
-    return s.K.set(S(f.default.getId()), !0), t
+    return s.K.set(S(_.default.getId()), !0), t
   }, g.fy.AUTOMATED)
 }
 
@@ -146,13 +146,13 @@ function x(e, t, n) {
   }), L()
 }
 
-function M(e, t, n) {
+function k(e, t, n) {
   (0, h.RF)(e, t, {
     muted: n
   }), L.cancel(), U()
 }
 
-function k(e, t, n) {
+function M(e, t, n) {
   (0, h.RF)(e, t, {
     soundboardMuted: n
   }), L.cancel(), U()
@@ -179,10 +179,10 @@ function G(e) {
     userId: n,
     volume: r
   } = e;
-  if (n === f.default.getId()) return;
+  if (n === _.default.getId()) return;
   let i = u.Z.getRemoteSessionId();
   null != i && j(i, n, t, {
-    muted: _.Z.isLocalMute(n, t),
+    muted: f.Z.isLocalMute(n, t),
     volume: r
   }), x(t, n, r)
 }
@@ -192,7 +192,7 @@ function B(e) {
     context: t,
     userId: n
   } = e;
-  n !== f.default.getId() && M(t, n, _.Z.isLocalMute(n, t))
+  n !== _.default.getId() && k(t, n, f.Z.isLocalMute(n, t))
 }
 
 function V(e) {
@@ -200,7 +200,7 @@ function V(e) {
     context: t,
     userId: n
   } = e;
-  n !== f.default.getId() && k(t, n, d.Z.isLocalSoundboardMuted(n))
+  n !== _.default.getId() && M(t, n, d.Z.isLocalSoundboardMuted(n))
 }
 class F extends l.Z {
   constructor(...e) {

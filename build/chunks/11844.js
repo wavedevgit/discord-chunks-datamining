@@ -1,4 +1,4 @@
-/** Chunk was on 73021 **/
+/** Chunk was on 22243 **/
 n.d(t, {
   Z: () => j
 });
@@ -56,9 +56,9 @@ let j = function() {
     } = (0, o.ZP)(),
     j = (0, s.e7)([p.default], () => p.default.getCurrentUser()),
     {
-      fractionalState: E
+      fractionalState: O
     } = (0, c.Z)(),
-    O = (0, m.y)("guild_boosting_boost_cta", j, E);
+    E = (0, m.y)("guild_boosting_boost_cta", j, O);
 
   function C(n) {
     null != e.current && (0, l.Mr3)(e.current), (0, u.u)({
@@ -87,7 +87,7 @@ let j = function() {
     })
   }
   let S = (0, g.aq)({
-    isBoostManagementDisabledForFractionalPremium: O
+    isBoostManagementDisabledForFractionalPremium: E
   });
   return (0, i.jsxs)("div", {
     className: b.wrapper,

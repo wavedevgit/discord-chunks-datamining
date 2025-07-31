@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(84735),
   u = n(836459),
   d = n(922770),
-  f = n(993365),
-  _ = n(511857),
+  _ = n(993365),
+  f = n(511857),
   p = n(410030),
   h = n(388032),
   m = n(974223),
@@ -99,8 +99,8 @@ function A(e) {
       loading: D,
       loadingStartedLabel: L,
       loadingFinishedLabel: x,
-      rounded: M = !1,
-      type: k = "button",
+      rounded: k = !1,
+      type: M = "button",
       rel: j,
       onClick: U,
       onDoubleClick: G,
@@ -142,7 +142,7 @@ function A(e) {
     ee = null != W ? W : $,
     et = "expressive" === d,
     en = i.useContext(l.S),
-    er = (0, _.a)((0, p.ZP)()),
+    er = (0, f.a)((0, p.ZP)()),
     ei = i.useRef(!1);
   i.useEffect(() => {
     !0 === D && (ei.current = !0, s.u.announce(null != L ? L : h.intl.string(h.t.A11Y_LOADING_STARTED))), !1 === D && !0 === ei.current && (s.u.announce(null != x ? x : h.intl.string(h.t.A11Y_LOADING_FINISHED)), ei.current = !1)
@@ -151,7 +151,7 @@ function A(e) {
       className: o()(g.buttonChildren, {
         [g.loading]: D
       }),
-      children: [null != t && "start" === A && t, J && (0, r.jsx)(f.x, {
+      children: [null != t && "start" === A && t, J && (0, r.jsx)(_.x, {
         tag: "span",
         variant: T[q],
         color: "none",
@@ -168,11 +168,11 @@ function A(e) {
         className: o()(g.button, g[q], g[d], {
           [g.hasText]: J,
           [g.fullWidth]: X,
-          [g.rounded]: M
+          [g.rounded]: k
         }),
         ref: ee,
         rel: j,
-        type: k,
+        type: M,
         onClick: eo ? e => e.preventDefault() : U,
         onDoubleClick: eo ? e => e.preventDefault() : G,
         onMouseUp: eo ? void 0 : B,

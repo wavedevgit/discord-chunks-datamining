@@ -19,12 +19,12 @@ var r = n(911969),
   c = n(752305),
   u = n(925994),
   d = n(887490),
-  f = n(42530);
-let _ = RegExp("([\\p{L}\\p{N}\\p{sc=Deva}\\p{sc=Thai}_-]+):", "gu");
+  _ = n(42530);
+let f = RegExp("([\\p{L}\\p{N}\\p{sc=Deva}\\p{sc=Thai}_-]+):", "gu");
 
 function p(e) {
   let t = d.bN.richValue(e)[0];
-  return null == t || "applicationCommand" !== t.type ? null : [t, f.YD]
+  return null == t || "applicationCommand" !== t.type ? null : [t, _.YD]
 }
 
 function h(e) {
@@ -118,19 +118,19 @@ function y(e, t, n, r, s) {
   var l;
   let [c] = r, u = a.Z.getActiveCommand(n), d = null == u || null == (l = u.options) ? void 0 : l.find(e => e.name === c.optionName);
   if (null == d) return;
-  let f = E(e, d, c, n),
-    _ = o.f({
+  let _ = E(e, d, c, n),
+    f = o.f({
       option: d,
-      content: f,
+      content: _,
       guildId: t,
       channelId: n,
       allowEmptyValues: s
     });
   return i.g7(n, {
     [c.optionName]: {
-      lastValidationResult: _
+      lastValidationResult: f
     }
-  }), _
+  }), f
 }
 
 function O(e, t) {
@@ -146,7 +146,7 @@ function O(e, t) {
     let i = n[t];
     if ("line" === i.type || "applicationCommand" === i.type)
       for (let c = 0; c < i.children.length; c++) {
-        let f, p = i.children[c],
+        let _, p = i.children[c],
           h = [t, c];
         if (d.aj.isType(p, "applicationCommandOption")) {
           if (null != s) {
@@ -159,20 +159,20 @@ function O(e, t) {
           continue
         }
         if (d.LC.isText(p))
-          for (_.lastIndex = 0; null != (f = _.exec(p.text));) {
-            if (0 !== f.index && null == p.text.charAt(f.index - 1).match(/(\t|\s)/)) continue;
-            let e = f[1];
+          for (f.lastIndex = 0; null != (_ = f.exec(p.text));) {
+            if (0 !== _.index && null == p.text.charAt(_.index - 1).match(/(\t|\s)/)) continue;
+            let e = _[1];
             if (!o.has(e)) continue;
             o.delete(e);
             let t = a[e];
             if (null == t) continue;
             let i = {
                 path: h,
-                offset: f.index
+                offset: _.index
               },
               l = {
                 path: h,
-                offset: i.offset + f[0].length
+                offset: i.offset + _[0].length
               },
               c = {
                 path: h,

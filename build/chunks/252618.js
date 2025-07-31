@@ -53,8 +53,8 @@ function u(e, t) {
 let d = {
     base: n(358085).isPlatformEmbedded ? void 0 : "Discord"
   },
-  f = 0,
-  _ = {
+  _ = 0,
+  f = {
     count: 3,
     onlyWhenBlurred: !1,
     interval: 1e3
@@ -98,8 +98,8 @@ function E(e) {
 }
 
 function b(e) {
-  let t = u(l({}, _, e), {
-    id: f++
+  let t = u(l({}, f, e), {
+    id: _++
   });
   return t.count = Math.max(t.count, t.messages.length), p.setState(e => ({
     flashQueue: [...e.flashQueue, t]

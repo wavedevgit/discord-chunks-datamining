@@ -1,4 +1,4 @@
-/** Chunk was on 73021 **/
+/** Chunk was on 22243 **/
 n.d(t, {
   Z: () => b
 }), n(953529);
@@ -25,8 +25,8 @@ let b = e => {
       buttonClassName: x = "",
       subtitle: _ = "",
       description: j = "",
-      descriptionCta: E = "",
-      isPremiumGetCta: O,
+      descriptionCta: O = "",
+      isPremiumGetCta: E,
       onCtaClick: C,
       cardVariant: v
     } = e,
@@ -55,7 +55,7 @@ let b = e => {
       titleClassName: b,
       subtitle: _,
       description: j
-    }), O && (0, i.jsx)(u.Z, {
+    }), E && (0, i.jsx)(u.Z, {
       className: x,
       look: a.zx.Looks.BLANK,
       color: a.zx.Colors.CUSTOM,
@@ -64,10 +64,10 @@ let b = e => {
         textOverride: y
       },
       showGradient: !0
-    }), 0 !== E.length && (null == (n = null == A ? void 0 : A.descriptionCta) ? void 0 : n.hideOnHoverComponent) !== !0 && null != C && (0, i.jsx)(a.zx, {
+    }), 0 !== O.length && (null == (n = null == A ? void 0 : A.descriptionCta) ? void 0 : n.hideOnHoverComponent) !== !0 && null != C && (0, i.jsx)(a.zx, {
       className: x,
       onClick: C,
-      children: E
+      children: O
     })]
   })
 }

@@ -1,5 +1,4 @@
-/** Chunk was on web.js **/
-"use strict";
+/** Chunk was on 58011 **/
 e.exports = {
   rootContainer: "rootContainer__5ce63",
   rootContainerLoading: "rootContainerLoading__5ce63",

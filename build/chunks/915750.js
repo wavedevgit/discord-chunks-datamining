@@ -16,8 +16,8 @@ var r = n(255367),
   c = n(110924),
   u = n(516796),
   d = n(186102),
-  f = n(113544),
-  _ = n(797614),
+  _ = n(113544),
+  f = n(797614),
   p = n(592125),
   h = n(430824),
   m = n(914010),
@@ -75,10 +75,10 @@ let P = 100,
   L = .5,
   x = new Set;
 
-function M(e, t) {
+function k(e, t) {
   return "".concat(e, "_").concat(t)
 }
-class k {
+class M {
   getId() {
     return this.id
   }
@@ -90,8 +90,8 @@ class k {
     let t = (0, v.d)(this.questContent),
       n = (0, y.VB)(this.questContent),
       r = (0, y.uN)(this.questContent),
-      i = (0, f.z5)(),
-      a = (0, f.QW)();
+      i = (0, _.z5)(),
+      a = (0, _.QW)();
     if (!t || !(null == r ? void 0 : r.is_campaign_ias_enabled) || !n || void 0 === i || void 0 === a) return null;
     let o = () => {
         let e = i(),
@@ -147,7 +147,7 @@ class k {
     questContentRowIndex: s,
     minViewTimeSeconds: l = D,
     isQuestEnrollmentBlocked: c,
-    sourceQuestContent: f
+    sourceQuestContent: _
   }) {
     var p = this;
     A(this, "id", void 0), A(this, "quests", void 0), A(this, "questContent", void 0), A(this, "triggeredByStatusChange", void 0), A(this, "trackGuildAndChannelMetadata", void 0), A(this, "questContentPosition", void 0), A(this, "questContentRowIndex", void 0), A(this, "sourceQuestContent", void 0), A(this, "heartbeatTimeoutId", void 0), A(this, "lastBeatTime", void 0), A(this, "minViewTimeReachedTimeoutId", void 0), A(this, "minViewTimeSeconds", void 0), A(this, "minViewportPercentage", void 0), A(this, "isQuestEnrollmentBlocked", void 0), A(this, "isRunning", !1), A(this, "onMinViewTimeReached", () => {
@@ -158,7 +158,7 @@ class k {
         let t = !1,
           n = (0, y.Zp)(this.questContent);
         if (null != n) {
-          let r = M(e.id, n);
+          let r = k(e.id, n);
           (t = !x.has(r) && (0, y.VB)(this.questContent)) && x.add(r)
         }
         let r = N({
@@ -206,7 +206,7 @@ class k {
       let {
         triggeredByStatusChange: t
       } = e;
-      return this.stop(), new k({
+      return this.stop(), new M({
         questContent: this.questContent,
         questOrQuests: this.quests,
         questContentRowIndex: this.questContentRowIndex,
@@ -229,14 +229,14 @@ class k {
           trackGuildAndChannelMetadata: this.trackGuildAndChannelMetadata,
           sourceQuestContent: this.sourceQuestContent
         })
-      }), (0, I.a)("QuestImpressionTracker") && _.Z.increment({
+      }), (0, I.a)("QuestImpressionTracker") && f.Z.increment({
         name: o.V.QUEST_CONTENT_IMPRESSION,
         tags: ["quest_content:".concat((0, b._b)(this.questContent))]
       }), this.isRunning = !0
     }), A(this, "stop", function() {
       let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
       e && p.beat(!0), p.lastBeatTime = void 0, clearInterval(p.heartbeatTimeoutId), clearTimeout(p.minViewTimeReachedTimeoutId), p.isRunning = !1
-    }), this.id = (0, a.Z)(), this.questContent = t, this.questContentPosition = i, this.minViewTimeSeconds = l, this.minViewportPercentage = L, this.quests = Array.isArray(e) ? e : [e], this.trackGuildAndChannelMetadata = r, this.triggeredByStatusChange = n, this.questContentRowIndex = s, this.isQuestEnrollmentBlocked = c, this.sourceQuestContent = f
+    }), this.id = (0, a.Z)(), this.questContent = t, this.questContentPosition = i, this.minViewTimeSeconds = l, this.minViewportPercentage = L, this.quests = Array.isArray(e) ? e : [e], this.trackGuildAndChannelMetadata = r, this.triggeredByStatusChange = n, this.questContentRowIndex = s, this.isQuestEnrollmentBlocked = c, this.sourceQuestContent = _
   }
 }
 let j = (e, t) => {
@@ -268,14 +268,14 @@ function F(e) {
     reference: o,
     focusedChanged: c,
     sourceQuestContent: u
-  } = e, d = U(e.questOrQuests), f = i.useRef(null), _ = (0, s.e7)([O.Z], () => null != O.Z.questEnrollmentBlockedUntil, []);
+  } = e, d = U(e.questOrQuests), _ = i.useRef(null), f = (0, s.e7)([O.Z], () => null != O.Z.questEnrollmentBlockedUntil, []);
   return (0, l.ZP)(() => () => {
-    null != f.current && f.current.stop()
+    null != _.current && _.current.stop()
   }), i.useEffect(() => {
     let r = a && t,
       i = (n || c || d) && r,
       o = (n || c) && !r || d;
-    (i || o) && null != f.current && f.current.stop(), i && (f.current = new k({
+    (i || o) && null != _.current && _.current.stop(), i && (_.current = new M({
       questOrQuests: e.questOrQuests,
       questContent: e.questContent,
       questContentPosition: e.questContentPosition,
@@ -283,11 +283,11 @@ function F(e) {
       triggeredByStatusChange: d,
       trackGuildAndChannelMetadata: e.trackGuildAndChannelMetadata,
       minViewTimeSeconds: e.minViewTimeSeconds,
-      isQuestEnrollmentBlocked: _,
+      isQuestEnrollmentBlocked: f,
       sourceQuestContent: u
-    }), f.current.start())
-  }, [a, t, c, n, e.questOrQuests, e.questContent, e.questContentPosition, e.questContentRowIndex, e.trackGuildAndChannelMetadata, d, e.minViewTimeSeconds, _, u]), (0, r.jsx)(G.Provider, {
-    value: f,
-    children: e.children(o, f)
+    }), _.current.start())
+  }, [a, t, c, n, e.questOrQuests, e.questContent, e.questContentPosition, e.questContentRowIndex, e.trackGuildAndChannelMetadata, d, e.minViewTimeSeconds, f, u]), (0, r.jsx)(G.Provider, {
+    value: _,
+    children: e.children(o, _)
   })
 }

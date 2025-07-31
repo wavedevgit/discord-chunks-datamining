@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(481060),
   u = n(583901),
   d = n(997945),
-  f = n(630117),
-  _ = n(441319),
+  _ = n(630117),
+  f = n(441319),
   p = n(981631),
   h = n(388032),
   m = n(770580);
@@ -69,9 +69,9 @@ function I(e) {
     onSelect: a,
     isSelected: s = !1,
     tabIndex: l,
-    children: f,
+    children: _,
     locked: h = !1
-  } = e, [g, b] = i.useState((0, _.aW)(t).name), O = t === d.Ru.PIRATE, I = (0, c.xUy)({
+  } = e, [g, b] = i.useState((0, f.aW)(t).name), O = t === d.Ru.PIRATE, I = (0, c.xUy)({
     label: g,
     isSelected: s
   });
@@ -86,7 +86,7 @@ function I(e) {
           [m.selected]: s
         }, n),
         onClick: s ? p.dG4 : () => null == a ? void 0 : a(t),
-        children: f
+        children: _
       })), s && (0, r.jsx)(u.oK, {}), h && (0, r.jsx)("div", {
         className: m.lockedBadgeContainer,
         children: (0, r.jsx)(c.mBM, {
@@ -114,9 +114,9 @@ function T(e) {
     className: i ? m.disabled : void 0,
     tabIndex: a,
     locked: s,
-    children: (0, r.jsx)(f.Z, {
+    children: (0, r.jsx)(_.Z, {
       id: t.id,
-      width: _.M9
+      width: f.M9
     })
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 73021 **/
+/** Chunk was on 22243 **/
 e.exports = {
   header: "header__61e0e",
   responsive: "responsive__61e0e"

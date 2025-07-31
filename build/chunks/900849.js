@@ -22,7 +22,7 @@ var r = n(749210),
   u = n(626135),
   d = n(981631);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -31,14 +31,14 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -66,7 +66,7 @@ async function m(e, t) {
       channelId: a,
       onSuccess: l,
       joinSource: u,
-      loadId: f,
+      loadId: _,
       shouldNavigate: p = !0
     } = n,
     m = (0, o.s1)(),
@@ -76,15 +76,15 @@ async function m(e, t) {
         analyticsSource: t
       }
     };
-  null != g && null != g.joinedAt ? p && (null == a ? (0, s.X)(e, E) : (0, i.Z)(d.Z5c.CHANNEL(e, a, n.messageId), h(_({}, E), {
+  null != g && null != g.joinedAt ? p && (null == a ? (0, s.X)(e, E) : (0, i.Z)(d.Z5c.CHANNEL(e, a, n.messageId), h(f({}, E), {
     navigationReplace: !0,
     openChannel: !0
   }))) : (await r.Z.joinGuild(e, {
     lurker: !0,
     source: u,
-    loadId: f,
+    loadId: _,
     lurkLocation: null == t ? void 0 : t.page
-  }), p && await r.Z.transitionToGuildSync(e, h(_({}, E), {
+  }), p && await r.Z.transitionToGuildSync(e, h(f({}, E), {
     welcomeModalChannelId: a,
     navigationReplace: null != a,
     openChannel: null != a,

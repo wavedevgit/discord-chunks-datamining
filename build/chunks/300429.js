@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  S: () => _,
+  S: () => f,
   Z: () => A
 }), n(388685);
 var r, i = n(442837),
@@ -20,8 +20,8 @@ function d(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let f = 100;
-var _ = function(e) {
+let _ = 100;
+var f = function(e) {
   return e[e.SendMessage = 0] = "SendMessage", e[e.CreateThread = 1] = "CreateThread", e
 }({});
 let p = {
@@ -54,7 +54,7 @@ function m(e, t) {
 function g(e, t) {
   let n = l.Z.getChannel(e);
   if (null == n) return !1;
-  h(n, t, 0 === n.rateLimitPerUser ? 0 : n.rateLimitPerUser * s.Z.Millis.SECOND + f)
+  h(n, t, 0 === n.rateLimitPerUser ? 0 : n.rateLimitPerUser * s.Z.Millis.SECOND + _)
 }
 
 function E(e, t) {
@@ -90,7 +90,7 @@ function v(e) {
     cooldownMs: r
   } = e, i = l.Z.getChannel(t);
   if (null == i) return !1;
-  h(i, n, 0 === r ? 0 : r + f)
+  h(i, n, 0 === r ? 0 : r + _)
 }
 
 function I(e) {

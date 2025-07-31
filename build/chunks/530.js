@@ -13,8 +13,8 @@ var i = n(120356),
   c = n(385499),
   u = n(821795),
   d = n(892567),
-  f = n(172751),
-  _ = n(228168),
+  _ = n(172751),
+  f = n(228168),
   p = n(388032),
   h = n(438361);
 
@@ -81,7 +81,7 @@ function m(e) {
         }), (0, r.jsx)(o.DY3, {
           className: h.pronounsTooltip,
           text: p.intl.string(p.t.GI2A8P),
-          delay: _.vB,
+          delay: f.vB,
           children: (0, r.jsx)(o.Text, {
             className: a()(h.pronounsText, y),
             variant: "text-sm/medium",
@@ -89,7 +89,7 @@ function m(e) {
             children: E
           })
         })]
-      }), (0, r.jsx)(f.ZP, {
+      }), (0, r.jsx)(_.ZP, {
         userId: t.id,
         onClose: I,
         containerClassName: h.guildTagContainer,

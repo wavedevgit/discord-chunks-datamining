@@ -3,7 +3,7 @@
 n.d(t, {
   Ct: () => u,
   UP: () => l,
-  ZP: () => f,
+  ZP: () => _,
   rj: () => c
 }), n(539854), n(388685);
 var r = n(929991),
@@ -52,7 +52,7 @@ function d(e) {
     additionalTimes: l
   })
 }
-class f extends i.zQ {
+class _ extends i.zQ {
   constructor({
     guildId: e,
     channelId: t,

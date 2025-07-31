@@ -13,8 +13,8 @@ var i = n(442837),
   c = n(345162),
   u = n(496675),
   d = n(981631),
-  f = n(388032),
-  _ = n(645214);
+  _ = n(388032),
+  f = n(645214);
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -83,14 +83,14 @@ function E(e) {
       })
     },
     children: e => (0, r.jsx)(o.DY3, {
-      text: f.intl.string(f.t.icyMgY),
+      text: _.intl.string(_.t.icyMgY),
       "aria-label": !1,
       shouldShow: p > 0,
       children: (0, r.jsxs)(o.P3F, g(h({
         innerRef: b,
-        className: _.button,
+        className: f.button,
         role: "button",
-        "aria-label": f.intl.string(f.t.icyMgY)
+        "aria-label": _.intl.string(_.t.icyMgY)
       }, e), {
         children: [(0, r.jsx)(o.qJs, {
           size: "xs",
@@ -98,7 +98,7 @@ function E(e) {
         }), 0 === p && (0, r.jsx)(o.Text, {
           variant: "text-xs/normal",
           color: "none",
-          children: f.intl.string(f.t.icyMgY)
+          children: _.intl.string(_.t.icyMgY)
         })]
       }))
     })

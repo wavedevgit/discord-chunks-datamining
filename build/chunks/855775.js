@@ -3,7 +3,7 @@
 let r, i;
 n.d(t, {
   Z: () => H,
-  c: () => _
+  c: () => f
 }), n(388685);
 var a, o = n(442837),
   s = n(570140),
@@ -42,12 +42,12 @@ function d(e, t) {
   return n
 }
 
-function f(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = "no_payment_source",
+let f = "no_payment_source",
   p = null,
   h = null,
   m = null,
@@ -92,9 +92,9 @@ function L(e) {
     paymentSourceId: n,
     price: r
   } = e;
-  b = f(u({}, b), {
-    [t]: f(u({}, b[t]), {
-      [null != n ? n : _]: r
+  b = _(u({}, b), {
+    [t]: _(u({}, b[t]), {
+      [null != n ? n : f]: r
     })
   }), C.delete(t)
 }
@@ -106,11 +106,11 @@ function x(e) {
   C.delete(t)
 }
 
-function M() {
+function k() {
   O = !0
 }
 
-function k(e) {
+function M(e) {
   let {
     entitlements: t,
     giftCode: n
@@ -201,8 +201,8 @@ let H = new Z(s.Z, {
   SKU_PURCHASE_PREVIEW_FETCH: D,
   SKU_PURCHASE_PREVIEW_FETCH_SUCCESS: L,
   SKU_PURCHASE_PREVIEW_FETCH_FAILURE: x,
-  SKU_PURCHASE_START: M,
-  SKU_PURCHASE_SUCCESS: k,
+  SKU_PURCHASE_START: k,
+  SKU_PURCHASE_SUCCESS: M,
   SKU_PURCHASE_FAIL: U,
   SKU_PURCHASE_SHOW_CONFIRMATION_STEP: G,
   SKU_PURCHASE_CLEAR_ERROR: B,

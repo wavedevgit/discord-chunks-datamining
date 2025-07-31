@@ -5,8 +5,8 @@ var r, i, a, o, s = n(127849),
   c = n(48657),
   u = n(880181),
   d = n(77025),
-  f = n(621523),
-  _ = n(620394),
+  _ = n(621523),
+  f = n(620394),
   p = n(992174),
   h = n(809290),
   m = n(338045),
@@ -22,7 +22,7 @@ var r, i, a, o, s = n(127849),
   A = 0,
   N = {},
   C = "onreadystatechange";
-f(function() {
+_(function() {
   r = s.location
 });
 var R = function(e) {
@@ -55,9 +55,9 @@ b && y || (b = function(e) {
   O.nextTick(P(e))
 } : v && v.now ? i = function(e) {
   v.now(P(e))
-} : T && !g ? (o = (a = new T).port2, a.port1.onmessage = w, i = c(o.postMessage, o)) : s.addEventListener && u(s.postMessage) && !s.importScripts && r && "file:" !== r.protocol && !f(D) ? (i = D, s.addEventListener("message", w, !1)) : i = C in h("script") ? function(e) {
-  _.appendChild(h("script"))[C] = function() {
-    _.removeChild(this), R(e)
+} : T && !g ? (o = (a = new T).port2, a.port1.onmessage = w, i = c(o.postMessage, o)) : s.addEventListener && u(s.postMessage) && !s.importScripts && r && "file:" !== r.protocol && !_(D) ? (i = D, s.addEventListener("message", w, !1)) : i = C in h("script") ? function(e) {
+  f.appendChild(h("script"))[C] = function() {
+    f.removeChild(this), R(e)
   }
 } : function(e) {
   setTimeout(P(e), 0)

@@ -23,30 +23,30 @@ var r = n(73800),
   c = n(420846),
   u = n(314897),
   d = n(375954),
-  f = n(594174),
-  _ = n(168107),
+  _ = n(594174),
+  f = n(168107),
   p = n(352138),
   h = n(469775),
   m = n(981631),
   g = n(484710);
 
 function E() {
-  let e = f.default.getCurrentUser();
+  let e = _.default.getCurrentUser();
   return (null == e ? void 0 : e.ageVerificationStatus) !== o.F$.VERIFIED_ADULT
 }
 
 function b() {
-  let e = (0, i.e7)([f.default], () => f.default.getCurrentUser());
+  let e = (0, i.e7)([_.default], () => _.default.getCurrentUser());
   return (null == e ? void 0 : e.ageVerificationStatus) !== o.F$.VERIFIED_ADULT
 }
 
 function y() {
-  let e = (0, i.e7)([f.default], () => f.default.getCurrentUser());
+  let e = (0, i.e7)([_.default], () => _.default.getCurrentUser());
   return (null == e ? void 0 : e.ageVerificationStatus) === o.F$.VERIFIED_TEEN
 }
 
 function O() {
-  let e = f.default.getCurrentUser();
+  let e = _.default.getCurrentUser();
   return (null == e ? void 0 : e.ageVerificationStatus) === o.F$.VERIFIED_ADULT
 }
 var v = function(e) {
@@ -64,12 +64,12 @@ function T(e, t) {
 }
 
 function S() {
-  let e = f.default.getCurrentUser();
+  let e = _.default.getCurrentUser();
   return (null == e ? void 0 : e.ageVerificationStatus) !== o.F$.UNVERIFIED && (null == e ? void 0 : e.ageVerificationStatus) !== o.F$.CLIENT_ONLY_PENDING
 }
 
 function A() {
-  let e = (0, i.e7)([f.default], () => f.default.getCurrentUser());
+  let e = (0, i.e7)([_.default], () => _.default.getCurrentUser());
   return (null == e ? void 0 : e.ageVerificationStatus) !== o.F$.UNVERIFIED && (null == e ? void 0 : e.ageVerificationStatus) !== o.F$.CLIENT_ONLY_PENDING
 }
 
@@ -77,7 +77,7 @@ function N(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
     n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : null,
     [o, s] = r.useState(!1),
-    u = (0, i.e7)([f.default], () => f.default.getCurrentUser()),
+    u = (0, i.e7)([_.default], () => _.default.getCurrentUser()),
     {
       current: d
     } = r.useRef(null == u ? void 0 : u.ageVerificationStatus),
@@ -99,7 +99,7 @@ function N(e) {
           type: "INITIATE_AGE_VERIFICATION"
         });
         let n = await (0, p.K)();
-        _.Z.showAgeVerification({
+        f.Z.showAgeVerification({
           webviewUrl: n.verification_webview_url,
           onComplete: e,
           onClose: h,
@@ -116,9 +116,9 @@ function N(e) {
 }
 
 function C(e) {
-  let t = (0, i.e7)([f.default], () => {
+  let t = (0, i.e7)([_.default], () => {
       var e;
-      return null == (e = f.default.getCurrentUser()) ? void 0 : e.ageVerificationStatus
+      return null == (e = _.default.getCurrentUser()) ? void 0 : e.ageVerificationStatus
     }),
     n = (0, s.Z)(t),
     a = (0, i.e7)([u.default], () => null != u.default.getSuspendedUserToken()),

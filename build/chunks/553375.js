@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => _,
+  ZP: () => f,
   nK: () => d,
-  uj: () => f
+  uj: () => _
 });
 var r = n(255367);
 n(73800);
@@ -33,7 +33,7 @@ function d(e) {
   }
 }
 
-function f(e) {
+function _(e) {
   let {
     user: t,
     activity: n,
@@ -51,16 +51,16 @@ function f(e) {
   })
 }
 
-function _(e) {
+function f(e) {
   let {
     user: t,
     activity: n,
     entry: a,
     onAction: l,
     isMenuOpen: c,
-    appContext: f
+    appContext: _
   } = e, {
-    applicationId: _,
+    applicationId: f,
     sourceUserId: p
   } = d({
     activity: n,
@@ -70,9 +70,9 @@ function _(e) {
     location: "UserProfileActivityContextMenu",
     source: o.m1.UserProfileCardContextMenu,
     trackEntryPointImpression: c,
-    applicationId: _,
+    applicationId: f,
     sourceUserId: p,
-    appContext: f
+    appContext: _
   });
   return null == h ? null : (0, r.jsx)(i.sNh, {
     id: "game-profile",

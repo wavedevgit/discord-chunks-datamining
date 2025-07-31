@@ -11,8 +11,8 @@ var r, i = n(392711),
   c = n(581883),
   u = n(594174),
   d = n(626135),
-  f = n(36703),
-  _ = n(709054),
+  _ = n(36703),
+  f = n(709054),
   p = n(710111),
   h = n(981631),
   m = n(526761);
@@ -93,14 +93,14 @@ function x() {
   O = 1
 }
 
-function M(e) {
+function k(e) {
   let {
     soundboardSounds: t
   } = e;
   E.set(p.X8, t), O = 2
 }
 
-function k(e) {
+function M(e) {
   var t, n, r;
   let {
     soundId: i,
@@ -119,7 +119,7 @@ function j(e) {
 }
 let U = a().debounce((e, t) => {
   d.default.track(h.rMx.UPDATE_SOUNDBOARD_SETTINGS, {
-    volume: Math.round((0, f.P)(e)),
+    volume: Math.round((0, _.P)(e)),
     location_stack: t
   }), l.kU.updateSetting({
     volume: e
@@ -165,7 +165,7 @@ function Z(e) {
   let {
     soundboardStoreState: t
   } = e;
-  E = new Map(_.default.entries(t.soundboardSounds)), I = new Set(t.favoritedSoundIds), y = new Set(t.localSoundboardMutes)
+  E = new Map(f.default.entries(t.soundboardSounds)), I = new Set(t.favoritedSoundIds), y = new Set(t.localSoundboardMutes)
 }
 class H extends(r = o.ZP.Store) {
   initialize() {
@@ -236,14 +236,14 @@ let Y = new H(s.Z, {
   GUILD_SOUNDBOARD_SOUND_CREATE: w,
   GUILD_SOUNDBOARD_SOUND_UPDATE: w,
   GUILD_SOUNDBOARD_SOUND_DELETE: L,
-  GUILD_SOUNDBOARD_SOUND_PLAY_START: k,
+  GUILD_SOUNDBOARD_SOUND_PLAY_START: M,
   GUILD_SOUNDBOARD_SOUND_PLAY_END: j,
   GUILD_SOUNDBOARD_SOUNDS_UPDATE: D,
   USER_SOUNDBOARD_SET_VOLUME: G,
   VOICE_CHANNEL_SELECT: N,
   USER_SETTINGS_PROTO_UPDATE: V,
   SOUNDBOARD_FETCH_DEFAULT_SOUNDS: x,
-  SOUNDBOARD_FETCH_DEFAULT_SOUNDS_SUCCESS: M,
+  SOUNDBOARD_FETCH_DEFAULT_SOUNDS_SUCCESS: k,
   SOUNDBOARD_SOUNDS_RECEIVED: R,
   GUILD_DELETE: P,
   AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: F,

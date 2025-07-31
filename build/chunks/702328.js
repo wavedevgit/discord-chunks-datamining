@@ -1,4 +1,4 @@
-/** Chunk was on 73021 **/
+/** Chunk was on 22243 **/
 n.d(t, {
   Z: () => H
 }), n(388685);
@@ -20,8 +20,8 @@ var i = n(255367),
   x = n(626135),
   _ = n(74538),
   j = n(367074),
-  E = n(220654),
-  O = n(8647),
+  O = n(220654),
+  E = n(8647),
   C = n(744129),
   v = n(823188),
   S = n(611116),
@@ -50,8 +50,8 @@ let H = () => {
     n = r.useRef(null),
     s = r.useRef(null),
     H = r.useRef(null),
-    W = r.useRef(null),
-    z = (0, l.e7)([m.Z], () => m.Z.useReducedMotion),
+    z = r.useRef(null),
+    W = (0, l.e7)([m.Z], () => m.Z.useReducedMotion),
     Y = (0, u.ZP)(),
     K = (0, c.wj)(Y),
     [q, X] = r.useState(!1),
@@ -68,7 +68,7 @@ let H = () => {
     {
       analyticsLocations: eu
     } = (0, g.ZP)(p.Z.PREMIUM_MARKETING),
-    em = (0, E.Z)({
+    em = (0, O.Z)({
       location: "PremiumMarketing"
     }),
     ep = !q && !$ && (em || !J);
@@ -85,13 +85,13 @@ let H = () => {
       whatsNew: ex,
       bestOfNitro: e_,
       plans: ej,
-      compare: eE
+      compare: eO
     } = eh,
-    eO = em ? V : G,
+    eE = em ? V : G,
     eC = (0, i.jsxs)("div", {
-      className: a()(eO.container, eO.responsiveContainer, {
-        [eO.containerBackground]: em || K,
-        [V.fadeInFromTop]: !z && em
+      className: a()(eE.container, eE.responsiveContainer, {
+        [eE.containerBackground]: em || K,
+        [V.fadeInFromTop]: !W && em
       }),
       "data-cy": "tier-0-marketing-page",
       children: [em && (0, i.jsxs)(i.Fragment, {
@@ -110,9 +110,9 @@ let H = () => {
           alt: ""
         })]
       }), (0, i.jsxs)("div", {
-        className: eO.sectionsContainer,
+        className: eE.sectionsContainer,
         children: [(0, i.jsx)("div", {
-          className: eO.heroHeadingContainer,
+          className: eE.heroHeadingContainer,
           ref: eb.ref,
           children: (0, i.jsx)(o.$, {
             innerRef: s,
@@ -132,28 +132,28 @@ let H = () => {
             })
           })
         }), ec && (0, i.jsx)("div", {
-          className: eO.promoBannerContainer,
-          children: (0, i.jsx)(O.Z, {
-            variant: O.C.APPLICATION_NITRO_HOME
+          className: eE.promoBannerContainer,
+          children: (0, i.jsx)(E.Z, {
+            variant: E.C.APPLICATION_NITRO_HOME
           })
         }), (0, i.jsx)("div", {
-          className: eO.whatsNewSectionContainer,
+          className: eE.whatsNewSectionContainer,
           ref: ex.ref,
           children: (0, i.jsx)(S.g, {
             shouldLoadVideo: ei,
-            isReducedMotion: z,
+            isReducedMotion: W,
             enablePremiumBrandRefreshDesign: em
           })
         }), (0, i.jsx)("div", {
-          className: eO.bestOfNitroSectionContainer,
+          className: eE.bestOfNitroSectionContainer,
           ref: e_.ref,
           children: (0, i.jsx)(S.G_, {
             shouldLoadVideo: ei,
-            isReducedMotion: z,
+            isReducedMotion: W,
             enablePremiumBrandRefreshDesign: em
           })
         }), (0, i.jsx)("div", {
-          className: eO.premiumTierCardsContainer,
+          className: eE.premiumTierCardsContainer,
           ref: ej.ref,
           children: (0, i.jsx)(o.$, {
             innerRef: n,
@@ -168,8 +168,8 @@ let H = () => {
             })
           })
         }), (0, i.jsx)("div", {
-          className: eO.planComparisonTableContainer,
-          ref: eE.ref,
+          className: eE.planComparisonTableContainer,
+          ref: eO.ref,
           children: em ? (0, i.jsx)(R.Z, {}) : (0, i.jsx)(I.Z, {})
         })]
       }), !em && (0, i.jsx)(N.Z, {
@@ -186,20 +186,20 @@ let H = () => {
         },
         children: (0, i.jsx)("div", {
           ref: H,
-          className: eO.bottomOfPageVisibilitySensor
+          className: eE.bottomOfPageVisibilitySensor
         })
       }), (0, i.jsx)(o.$, {
-        innerRef: W,
+        innerRef: z,
         onChange: e => {
           Q(e)
         },
         children: em ? (0, i.jsx)(y.Z, {
-          ref: W
+          ref: z
         }) : (0, i.jsx)(D.Z, {
-          ref: W,
+          ref: z,
           isFooterVisible: J,
           isDarkMode: K,
-          isReducedMotion: z,
+          isReducedMotion: W,
           subscriptionTier: eo
         })
       }), em && (0, i.jsxs)(i.Fragment, {
@@ -215,7 +215,7 @@ let H = () => {
   return (0, i.jsx)(d.f6W, {
     theme: em ? U.BR.DARKER : Y,
     children: t => (0, i.jsx)(d.yWw, {
-      className: a()(eO.scroller, t),
+      className: a()(eE.scroller, t),
       ref: e,
       children: eC
     })

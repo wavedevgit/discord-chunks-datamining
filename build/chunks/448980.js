@@ -14,7 +14,7 @@ var i = n(278074),
   u = n(981631);
 let d = e => (0, l.dS)(e) ? [] : e.type === u.IIU.PLAYING ? [c.ho, c.Xh] : e.type === u.IIU.LISTENING ? [c.ho] : e.type === u.IIU.WATCHING ? [c.ho, c.Rg] : e.type === u.IIU.COMPETING ? [c.ho] : [];
 
-function f(e) {
+function _(e) {
   let {
     entry: t
   } = e;
@@ -25,7 +25,7 @@ function f(e) {
   })
 }
 
-function _(e) {
+function f(e) {
   let {
     entry: t
   } = e;
@@ -61,9 +61,9 @@ function h(e) {
     className: l,
     children: [u.map((e, t) => (0, r.jsx)(e, {
       activity: n
-    }, "activity-".concat(t))), (0, i.EQ)(c).when(a.Cb, e => (0, r.jsx)(f, {
+    }, "activity-".concat(t))), (0, i.EQ)(c).when(a.Cb, e => (0, r.jsx)(_, {
       entry: e
-    })).when(a.Q0, e => (0, r.jsx)(_, {
+    })).when(a.Q0, e => (0, r.jsx)(f, {
       entry: e
     })).when(a.KF, e => (0, r.jsx)(p, {
       entry: e

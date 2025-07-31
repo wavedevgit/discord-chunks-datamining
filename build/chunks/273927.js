@@ -1,4 +1,4 @@
-/** Chunk was on 73021 **/
+/** Chunk was on 22243 **/
 n.d(t, {
   GF: () => v,
   ZP: () => T,
@@ -23,7 +23,7 @@ var i = n(255367),
   _ = n(388032),
   j = n(569834);
 
-function E(e) {
+function O(e) {
   let {
     listType: t,
     numberOfUsers: n
@@ -52,7 +52,7 @@ function E(e) {
   })
 }
 
-function O(e) {
+function E(e) {
   var t;
   let {
     userId: n,
@@ -104,12 +104,12 @@ function C(e) {
     setting: t,
     children: (0, i.jsxs)("div", {
       className: j.card,
-      children: [(0, i.jsx)(E, {
+      children: [(0, i.jsx)(O, {
         listType: s,
         numberOfUsers: n.length
       }), (0, i.jsx)("div", {
         className: j.usersList,
-        children: n.slice(0, a).map((e, t) => (0, i.jsx)(O, {
+        children: n.slice(0, a).map((e, t) => (0, i.jsx)(E, {
           userId: e,
           last: t === n.length - 1
         }, e))

@@ -4,7 +4,7 @@ n.d(t, {
   PC: () => m,
   o_: () => h,
   sO: () => p,
-  xo: () => _
+  xo: () => f
 }), n(388685), n(953529);
 var r = n(345074),
   i = n(339085),
@@ -54,11 +54,11 @@ function d(e) {
   }, {})
 }
 
-function f(e) {
+function _(e) {
   return null == e || "" === e ? null : e
 }
 
-function _(e) {
+function f(e) {
   var t, n, r, i;
   return {
     id: e.id,
@@ -68,7 +68,7 @@ function _(e) {
     customBanner: e.custom_banner_hash,
     onlineCount: e.online_count,
     memberCount: e.member_count,
-    brandColorPrimary: f(e.brand_color_primary),
+    brandColorPrimary: _(e.brand_color_primary),
     visibility: e.visibility,
     traits: u(e.id, null != (n = e.traits) ? n : []),
     gameApplicationIds: null != (r = e.game_application_ids) ? r : [],
@@ -110,7 +110,7 @@ function m(e) {
   let {
     guild: l,
     profile: c
-  } = e, u = null != c ? _(c) : null;
+  } = e, u = null != c ? f(c) : null;
   return null != u ? u : null == l ? null : {
     id: l.id,
     name: l.name,

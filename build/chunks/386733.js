@@ -1,4 +1,4 @@
-/** Chunk was on 73021 **/
+/** Chunk was on 22243 **/
 n.d(t, {
   Z: () => P
 });
@@ -20,8 +20,8 @@ var i = n(255367),
   x = n(796634),
   _ = n(119269),
   j = n(938736),
-  E = n(981631),
-  O = n(388032),
+  O = n(981631),
+  E = n(388032),
   C = n(357885),
   v = n(691766);
 
@@ -77,7 +77,7 @@ let N = e => {
       children: n
     });
     return (0, i.jsx)(c.ua7, {
-      text: O.intl.string(O.t.UnKHdn),
+      text: E.intl.string(E.t.UnKHdn),
       shouldShow: !a,
       tooltipContentClassName: C.unsentTooltipContent,
       children: e => (0, i.jsx)("div", T(S({
@@ -132,7 +132,7 @@ let N = e => {
     let {
       analyticsLocations: t
     } = e;
-    g.default.track(E.rMx.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
+    g.default.track(O.rMx.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
       location_stack: t
     }), (0, c.ZDy)(async () => {
       let {
@@ -157,7 +157,7 @@ let N = e => {
       e === f.Fe.REDEEMED && g.redeemed++, e === f.Fe.CONVERTED && (g.redeemed++, g.converted++)
     });
     let S = g.sent === x.Q,
-      T = h.Z.getArticleURL(E.BhN.REFERRAL_PROGRAM),
+      T = h.Z.getArticleURL(O.BhN.REFERRAL_PROGRAM),
       {
         analyticsLocations: N
       } = (0, u.ZP)(d.Z.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR),
@@ -205,7 +205,7 @@ let N = e => {
                   src: v,
                   alt: "",
                   className: C.expandedProgressBarSelectFriendsIcon
-                }), S ? O.intl.string(O.t.SY9tyM) : O.intl.string(O.t.Lm2nFR)]
+                }), S ? E.intl.string(E.t.SY9tyM) : E.intl.string(E.t.Lm2nFR)]
               })
             })
           })]

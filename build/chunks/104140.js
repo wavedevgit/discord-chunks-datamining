@@ -21,7 +21,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,7 +34,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function f(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -46,7 +46,7 @@ function _(e, t) {
 }
 
 function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -110,10 +110,10 @@ function O(e) {
   let s = !!o.isFolder,
     u = (0, c.Ml)("BlobMask"),
     d = (0, l.dQu)(l.TVs.modules.guildbar.AVATAR_SIZE),
-    _ = (0, l.dQu)(l.TVs.modules.guildbar.FOLDER_SIZE),
-    m = !u && s ? _ : d,
+    f = (0, l.dQu)(l.TVs.modules.guildbar.FOLDER_SIZE),
+    m = !u && s ? f : d,
     E = m / 2;
-  return (0, r.jsx)(v, p(f({}, o), {
+  return (0, r.jsx)(v, p(_({}, o), {
     selected: t,
     rounded: a,
     baseViewBoxSize: m,
@@ -137,8 +137,8 @@ function v(e) {
     style: l,
     innerClassName: c,
     isFolder: d,
-    lowerBadgeSize: f,
-    highlight: _,
+    lowerBadgeSize: _,
+    highlight: f,
     badgeMaskStroke: p,
     badgeMaskSize: h,
     upperBadge: m,
@@ -148,7 +148,7 @@ function v(e) {
     T(!0)
   }, A = () => {
     T(!1)
-  }, N = null != m, C = null != O, R = i.useId(), P = "".concat(R, "-upper_badge_masks"), w = "".concat(R, "-lower_badge_masks"), D = "".concat(R, "-blob_mask"), L = "".concat(R, "-stroke_mask"), x = "".concat(R, "-highlight_mask"), M = (null == f ? void 0 : f.width) != null ? f.width : g, k = (null == f ? void 0 : f.height) != null ? f.height : g, j = {
+  }, N = null != m, C = null != O, R = i.useId(), P = "".concat(R, "-upper_badge_masks"), w = "".concat(R, "-lower_badge_masks"), D = "".concat(R, "-blob_mask"), L = "".concat(R, "-stroke_mask"), x = "".concat(R, "-highlight_mask"), k = (null == _ ? void 0 : _.width) != null ? _.width : g, M = (null == _ ? void 0 : _.height) != null ? _.height : g, j = {
     width: d ? n : n + 8,
     height: d ? n : n + 8,
     x: d ? 0 : -4,
@@ -164,13 +164,13 @@ function v(e) {
       height: j.height,
       viewBox: "".concat(j.x, " ").concat(j.y, " ").concat(j.width, " ").concat(j.height),
       className: o()(u.svg, {
-        [u.noContain]: _,
+        [u.noContain]: f,
         [u.shiftSVG]: !d
       }),
       overflow: "visible",
       role: "none",
       children: [(0, r.jsxs)("defs", {
-        children: [_ && (0, r.jsx)("path", {
+        children: [f && (0, r.jsx)("path", {
           d: G,
           id: x
         }), (0, r.jsx)("path", {
@@ -188,10 +188,10 @@ function v(e) {
         }) : null, null != O ? (0, r.jsx)("rect", {
           id: w,
           className: u.badgeStroke,
-          x: n - (M + 2 * p) + p,
-          y: n - (k + 2 * p) + p,
-          width: M + 2 * p,
-          height: k + 2 * p,
+          x: n - (k + 2 * p) + p,
+          y: n - (M + 2 * p) + p,
+          width: k + 2 * p,
+          height: M + 2 * p,
           rx: h / 2,
           ry: h / 2
         }) : null]
@@ -202,14 +202,14 @@ function v(e) {
         y: 0,
         width: n,
         height: n,
-        children: [_ && (0, r.jsx)("use", {
+        children: [f && (0, r.jsx)("use", {
           href: "#".concat(x),
           fill: "black"
         }), (0, r.jsx)("use", {
           href: "#".concat(D),
           fill: "white",
           className: o()({
-            [u.isHighlighted]: _
+            [u.isHighlighted]: f
           })
         }), N ? (0, r.jsx)("use", {
           href: "#".concat(P),
@@ -248,7 +248,7 @@ function v(e) {
             href: "#".concat(w)
           }) : null]
         })]
-      }) : null, _ && (0, r.jsx)("path", {
+      }) : null, f && (0, r.jsx)("path", {
         d: G,
         stroke: s.Z.BRAND_500,
         "stroke-width": E,

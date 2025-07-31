@@ -4,7 +4,7 @@ n.d(t, {
   B: () => D,
   B5: () => R,
   Do: () => w,
-  GX: () => k,
+  GX: () => M,
   HR: () => F,
   Hr: () => C,
   Je: () => A,
@@ -24,7 +24,7 @@ n.d(t, {
   qs: () => E,
   qz: () => V,
   ws: () => x,
-  xI: () => M,
+  xI: () => k,
   zI: () => y
 }), n(781311);
 var r = n(367907),
@@ -36,8 +36,8 @@ var r = n(367907),
   c = n(358085),
   u = n(660189),
   d = n(208970),
-  f = n(6496),
-  _ = n(981631);
+  _ = n(6496),
+  f = n(981631);
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -86,7 +86,7 @@ function E(e) {
     postIds: a,
     additionalTimes: o
   } = e;
-  r.ZP.trackWithMetadata(_.rMx.FORUM_CHANNEL_SEEN_BATCH, g(h({}, (0, f.xl)({
+  r.ZP.trackWithMetadata(f.rMx.FORUM_CHANNEL_SEEN_BATCH, g(h({}, (0, _.xl)({
     channelId: n,
     sessionId: i
   })), {
@@ -103,7 +103,7 @@ function b(e) {
     channelId: n,
     numSearchResults: i
   } = e;
-  r.ZP.trackWithMetadata(_.rMx.FORUM_CHANNEL_SEARCHED, g(h({}, (0, f.xl)({
+  r.ZP.trackWithMetadata(f.rMx.FORUM_CHANNEL_SEARCHED, g(h({}, (0, _.xl)({
     channelId: n
   })), {
     guild_id: t,
@@ -117,7 +117,7 @@ function y(e) {
     guildId: t,
     channelId: n
   } = e;
-  r.ZP.trackWithMetadata(_.rMx.FORUM_CHANNEL_SEARCH_CLEARED, g(h({}, (0, f.xl)({
+  r.ZP.trackWithMetadata(f.rMx.FORUM_CHANNEL_SEARCH_CLEARED, g(h({}, (0, _.xl)({
     channelId: n
   })), {
     guild_id: t,
@@ -134,7 +134,7 @@ function O(e) {
     added: o,
     location: s
   } = e;
-  r.ZP.trackWithMetadata(_.rMx.FORUM_CHANNEL_TAG_FILTER_CLICKED, g(h({}, (0, f.xl)({
+  r.ZP.trackWithMetadata(f.rMx.FORUM_CHANNEL_TAG_FILTER_CLICKED, g(h({}, (0, _.xl)({
     channelId: n
   })), {
     guild_id: t,
@@ -151,7 +151,7 @@ function v(e) {
     guildId: t,
     channelId: n
   } = e;
-  r.ZP.trackWithMetadata(_.rMx.FORUM_CHANNEL_CREATE_NEW_POST_CLICKED, g(h({}, (0, f.xl)({
+  r.ZP.trackWithMetadata(f.rMx.FORUM_CHANNEL_CREATE_NEW_POST_CLICKED, g(h({}, (0, _.xl)({
     channelId: n
   })), {
     guild_id: t,
@@ -164,7 +164,7 @@ function I(e) {
     guildId: t,
     channelId: n
   } = e;
-  r.ZP.trackWithMetadata(_.rMx.FORUM_CHANNEL_CREATE_NEW_POST_KEYBIND_USED, g(h({}, (0, f.xl)({
+  r.ZP.trackWithMetadata(f.rMx.FORUM_CHANNEL_CREATE_NEW_POST_KEYBIND_USED, g(h({}, (0, _.xl)({
     channelId: n
   })), {
     guild_id: t,
@@ -185,13 +185,13 @@ function T(e) {
     E = null == m || 0 === m.length || (null == m ? void 0 : m.trim()) === p,
     b = (null == d ? void 0 : d.appliedTags) == null || (null == d || null == (n = d.appliedTags) ? void 0 : n.size) === 0,
     y = (null == d ? void 0 : d.name) == null || (null == d || null == (a = d.name) || null == (i = a.trim()) ? void 0 : i.length) === 0;
-  E && b && y || r.ZP.trackWithMetadata(_.rMx.FORUM_CHANNEL_NEW_POST_DRAFT_CREATED, g(h({}, (0, f.xl)({
+  E && b && y || r.ZP.trackWithMetadata(f.rMx.FORUM_CHANNEL_NEW_POST_DRAFT_CREATED, g(h({}, (0, _.xl)({
     channelId: c
   })), {
     guild_id: l,
     channel_id: c,
-    applied_tag_ids: (0, f.q8)(c),
-    num_attachments: (0, f.RR)(c)
+    applied_tag_ids: (0, _.q8)(c),
+    num_attachments: (0, _.RR)(c)
   }))
 }
 
@@ -200,7 +200,7 @@ function S(e) {
     guildId: t,
     channelId: n
   } = e;
-  r.ZP.trackWithMetadata(_.rMx.FORUM_CHANNEL_NEW_POST_DRAFT_CLEARED, g(h({}, (0, f.xl)({
+  r.ZP.trackWithMetadata(f.rMx.FORUM_CHANNEL_NEW_POST_DRAFT_CLEARED, g(h({}, (0, _.xl)({
     channelId: n
   })), {
     guild_id: t,
@@ -216,7 +216,7 @@ function A(e) {
   } = e;
 
   function a() {
-    r.ZP.trackWithMetadata(_.rMx.FORUM_CHANNEL_POST_CREATED, g(h({}, (0, f.n4)({
+    r.ZP.trackWithMetadata(f.rMx.FORUM_CHANNEL_POST_CREATED, g(h({}, (0, _.n4)({
       channelId: i
     })), {
       guild_id: t,
@@ -231,7 +231,7 @@ function N(e) {
     guildId: t,
     channelId: n
   } = e;
-  r.ZP.trackWithMetadata(_.rMx.FORUM_CHANNEL_SCROLLED, g(h({}, (0, f.xl)({
+  r.ZP.trackWithMetadata(f.rMx.FORUM_CHANNEL_SCROLLED, g(h({}, (0, _.xl)({
     channelId: n
   })), {
     guild_id: t,
@@ -248,13 +248,13 @@ function C(e) {
     filterTagIds: s,
     sortOrder: c
   } = e;
-  l.default.track(_.rMx.FORUM_CHANNEL_MORE_POSTS_LOADED, g(h({}, (0, r.hH)(t), (0, r.v_)(o.Z.getChannel(n)), (0, f.xl)({
+  l.default.track(f.rMx.FORUM_CHANNEL_MORE_POSTS_LOADED, g(h({}, (0, r.hH)(t), (0, r.v_)(o.Z.getChannel(n)), (0, _.xl)({
     channelId: n
   })), {
     guild_id: t,
     channel_id: n,
     num_archived_threads: i,
-    num_active_threads: (0, f.bE)(t, n),
+    num_active_threads: (0, _.bE)(t, n),
     has_more_threads: a,
     filter_tag_ids: s,
     sort_order: c
@@ -268,7 +268,7 @@ function R(e) {
     postId: i,
     location: a
   } = e;
-  r.ZP.trackWithMetadata(_.rMx.FORUM_CHANNEL_POST_CLICKED, g(h({}, (0, f.n4)({
+  r.ZP.trackWithMetadata(f.rMx.FORUM_CHANNEL_POST_CLICKED, g(h({}, (0, _.n4)({
     channelId: i
   })), {
     guild_id: t,
@@ -284,12 +284,12 @@ function P(e) {
     channelId: n,
     sortOrder: i
   } = e;
-  r.ZP.trackWithMetadata(_.rMx.FORUM_CHANNEL_POSTS_SORTED, g(h({}, (0, f.xl)({
+  r.ZP.trackWithMetadata(f.rMx.FORUM_CHANNEL_POSTS_SORTED, g(h({}, (0, _.xl)({
     channelId: n
   })), {
     guild_id: t,
     channel_id: n,
-    sort_type: (0, f.t$)(i),
+    sort_type: (0, _.t$)(i),
     sort_order: i,
     forum_channel_sort_order: i
   }))
@@ -301,7 +301,7 @@ function w(e) {
     channelId: n,
     forumLayout: i
   } = e;
-  r.ZP.trackWithMetadata(_.rMx.FORUM_CHANNEL_LAYOUT_UPDATED, g(h({}, (0, f.xl)({
+  r.ZP.trackWithMetadata(f.rMx.FORUM_CHANNEL_LAYOUT_UPDATED, g(h({}, (0, _.xl)({
     channelId: n
   })), {
     guild_id: t,
@@ -315,7 +315,7 @@ function D(e) {
     postId: t,
     location: n
   } = e;
-  r.ZP.trackWithMetadata(_.rMx.FORUM_POST_LINK_COPIED, {
+  r.ZP.trackWithMetadata(f.rMx.FORUM_POST_LINK_COPIED, {
     forum_post_id: t,
     location: n
   })
@@ -325,7 +325,7 @@ function L(e) {
   let {
     onboardingCTA: t
   } = e;
-  r.ZP.trackWithMetadata(_.rMx.FORUM_CHANNEL_ONBOARDING_CLICKED, {
+  r.ZP.trackWithMetadata(f.rMx.FORUM_CHANNEL_ONBOARDING_CLICKED, {
     onboarding_cta_type: t
   })
 }
@@ -334,25 +334,25 @@ function x(e) {
   let {
     forumDemoId: t
   } = e;
-  r.ZP.trackWithMetadata(_.rMx.FORUM_UPSELL_MODAL_CLICKED, {
+  r.ZP.trackWithMetadata(f.rMx.FORUM_UPSELL_MODAL_CLICKED, {
     forum_demo_id: t
-  })
-}
-
-function M(e) {
-  let {
-    added: t
-  } = e;
-  r.ZP.trackWithMetadata(_.rMx.FORUM_ADD_MEDIA_TO_ORIGINAL_POST_CLICKED, {
-    added: t
   })
 }
 
 function k(e) {
   let {
+    added: t
+  } = e;
+  r.ZP.trackWithMetadata(f.rMx.FORUM_ADD_MEDIA_TO_ORIGINAL_POST_CLICKED, {
+    added: t
+  })
+}
+
+function M(e) {
+  let {
     readGuideCta: t
   } = e;
-  r.ZP.trackWithMetadata(_.rMx.FORUM_CHANNEL_HELPER_CARD_CLICKED, {
+  r.ZP.trackWithMetadata(f.rMx.FORUM_CHANNEL_HELPER_CARD_CLICKED, {
     read_guide_cta: t
   })
 }
@@ -361,33 +361,33 @@ function j(e) {
   let {
     isMobile: t
   } = e;
-  r.ZP.trackWithMetadata(_.rMx.FORUM_CHANNEL_MEDIA_UPLOADER_CLICKED, {
+  r.ZP.trackWithMetadata(f.rMx.FORUM_CHANNEL_MEDIA_UPLOADER_CLICKED, {
     is_mobile: t
   })
 }
 
 function U() {
-  r.ZP.trackWithMetadata(_.rMx.FORUM_CHANNEL_ENABLE_AUTOMOD_CLICKED)
+  r.ZP.trackWithMetadata(f.rMx.FORUM_CHANNEL_ENABLE_AUTOMOD_CLICKED)
 }
 
 function G() {
-  r.ZP.trackWithMetadata(_.rMx.FORUM_CHANNEL_ENABLE_PREVIEW_CLICKED)
+  r.ZP.trackWithMetadata(f.rMx.FORUM_CHANNEL_ENABLE_PREVIEW_CLICKED)
 }
 
 function B(e) {
-  r.ZP.trackWithMetadata(_.rMx.CHANNEL_OPENED, g(h({}, (0, r.hH)(e.guild_id), (0, r.v_)(e), (0, i.K)(e, !0), (0, r.$H)(e.id)), {
+  r.ZP.trackWithMetadata(f.rMx.CHANNEL_OPENED, g(h({}, (0, r.hH)(e.guild_id), (0, r.v_)(e), (0, i.K)(e, !0), (0, r.$H)(e.id)), {
     channel_view: "Split View",
     platform: (0, c.getPlatform)()
-  })), (0, a.a)(_.rMx.CHANNEL_OPENED_CLICKSTREAM, {
+  })), (0, a.a)(f.rMx.CHANNEL_OPENED_CLICKSTREAM, {
     channelId: e.id
   })
 }
 
 function V() {
-  r.ZP.trackWithMetadata(_.rMx.OPEN_MODAL, {
+  r.ZP.trackWithMetadata(f.rMx.OPEN_MODAL, {
     type: "Forum Channel Upsell Modal",
     location: {
-      section: _.jXE.CHANNEL_WELCOME_CTA
+      section: f.jXE.CHANNEL_WELCOME_CTA
     }
   })
 }
@@ -397,7 +397,7 @@ function F(e) {
     guildId: t,
     channelId: n
   } = e;
-  r.ZP.trackWithMetadata(_.rMx.THREAD_CREATION_STARTED, g(h({}, (0, i.K)(o.Z.getChannel(n))), {
+  r.ZP.trackWithMetadata(f.rMx.THREAD_CREATION_STARTED, g(h({}, (0, i.K)(o.Z.getChannel(n))), {
     channel_id: n,
     guild_id: t
   }))

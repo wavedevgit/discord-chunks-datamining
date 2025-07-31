@@ -13,7 +13,7 @@ var r = n(73800),
   u = n(720452),
   d = n(561448);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,14 +22,14 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -37,7 +37,7 @@ function _(e) {
 let p = e => {
   let {
     onSetupError: t
-  } = e, [n, f] = r.useState(void 0), [p, h] = r.useState(null), [m, g] = r.useState(!0), [E, b] = r.useState([]), y = r.useCallback(async () => {
+  } = e, [n, _] = r.useState(void 0), [p, h] = r.useState(null), [m, g] = r.useState(!0), [E, b] = r.useState([]), y = r.useCallback(async () => {
     var e;
     let n = (0, l.vP)(),
       r = n ? (0, u.Q)({
@@ -47,7 +47,7 @@ let p = e => {
     b((0, d.lS)(r, n));
     try {
       let e = await (0, c.V)(r);
-      f(e)
+      _(e)
     } catch (e) {
       h(e), null != t && t(e), (0, a.SQ)(e)
     }
@@ -61,7 +61,7 @@ let p = e => {
     I = (0, i.dQu)(i.TVs.colors.INPUT_BACKGROUND);
   return {
     setupError: p,
-    elementsOptions: r.useMemo(() => m ? null : _({
+    elementsOptions: r.useMemo(() => m ? null : f({
       clientSecret: n
     }, {
       appearance: {

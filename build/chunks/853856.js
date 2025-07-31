@@ -19,9 +19,9 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 let d = {},
-  f = !1;
+  _ = !1;
 
-function _(e) {
+function f(e) {
   var t;
   return (0, l.kt)({
     id: e.id,
@@ -34,7 +34,7 @@ function _(e) {
 
 function p() {
   var e, t, n;
-  f = null != (n = null == (e = s.Z.settings.favorites) ? void 0 : e.muted) && n, d = {};
+  _ = null != (n = null == (e = s.Z.settings.favorites) ? void 0 : e.muted) && n, d = {};
   let r = null == (t = s.Z.settings.favorites) ? void 0 : t.favoriteChannels;
   if (null == r) return !1;
   for (let e in r) {
@@ -56,7 +56,7 @@ class h extends(r = i.ZP.Store) {
     return d
   }
   get favoriteServerMuted() {
-    return f
+    return _
   }
   isFavorite(e) {
     return null != e && null != d[e]
@@ -65,7 +65,7 @@ class h extends(r = i.ZP.Store) {
     if (null != e) return d[e]
   }
   getCategoryRecord(e) {
-    return e in d && d[e].type === a.Dd.CATEGORY ? _(d[e]) : null
+    return e in d && d[e].type === a.Dd.CATEGORY ? f(d[e]) : null
   }
   getNickname(e) {
     var t;

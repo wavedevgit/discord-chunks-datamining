@@ -1,4 +1,4 @@
-/** Chunk was on 73021 **/
+/** Chunk was on 22243 **/
 e.exports = {
   root: "root_cbfae2",
   titleText: "titleText_cbfae2",

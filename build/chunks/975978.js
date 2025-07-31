@@ -1,4 +1,4 @@
-/** Chunk was on 73021 **/
+/** Chunk was on 22243 **/
 n.d(t, {
   Z: () => y
 });
@@ -20,8 +20,8 @@ var i = n(255367),
   x = n(474936),
   _ = n(388032),
   j = n(975926),
-  E = n(298632),
-  O = n(219242);
+  O = n(298632),
+  E = n(219242);
 
 function C(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -221,11 +221,11 @@ let v = e => {
             }), (0, i.jsxs)("div", {
               className: j.gradientBackgroundContainer,
               children: [(0, i.jsx)("img", {
-                src: O,
+                src: E,
                 alt: "",
                 className: j.gradientBackgroundPosition
               }), (0, i.jsx)("img", {
-                src: E,
+                src: O,
                 alt: "",
                 className: j.gradientBackgroundPosition
               })]

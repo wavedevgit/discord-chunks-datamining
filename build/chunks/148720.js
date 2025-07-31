@@ -12,8 +12,8 @@ var r = n(668781),
   c = n(496675),
   u = n(594174),
   d = n(979651),
-  f = n(317381),
-  _ = n(638880),
+  _ = n(317381),
+  f = n(638880),
   p = n(790920),
   h = n(527805),
   m = n(388032);
@@ -72,7 +72,7 @@ async function E(e) {
     launchingComponentId: E,
     sectionName: b,
     inviterUserId: y
-  } = e, O = f.ZP.getEmbeddedActivitiesForChannel(t).find(e => e.applicationId === n && (null == r || e.launchId === r)), v = a;
+  } = e, O = _.ZP.getEmbeddedActivitiesForChannel(t).find(e => e.applicationId === n && (null == r || e.launchId === r)), v = a;
   if (null == v) {
     let e = await i.ZP.fetchApplication(n);
     v = o.ZP.createFromServer(e)
@@ -80,7 +80,7 @@ async function E(e) {
   if (null == O || null == v) return;
   let I = u.default.getCurrentUser();
   async function T() {
-    null != O && await (0, _.Z)({
+    null != O && await (0, f.Z)({
       applicationId: O.applicationId,
       activityChannelId: t,
       locationObject: {},

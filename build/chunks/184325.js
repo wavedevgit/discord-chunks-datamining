@@ -13,8 +13,8 @@ var i = n(120356),
   c = n(906732),
   u = n(335131),
   d = n(927513),
-  f = n(768865),
-  _ = n(617136),
+  _ = n(768865),
+  f = n(617136),
   p = n(497505),
   h = n(703656),
   m = n(317257),
@@ -57,7 +57,7 @@ function x(e) {
   return e
 }
 
-function M(e, t) {
+function k(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -68,8 +68,8 @@ function M(e, t) {
   return n
 }
 
-function k(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
+function M(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -95,7 +95,7 @@ function U(e) {
     badgeClassName: d,
     displayProfile: g,
     onClose: L,
-    shouldOpenBadgeTooltip: M,
+    shouldOpenBadgeTooltip: k,
     shouldGlowTenureBadge: U
   } = e, {
     analyticsLocations: G
@@ -130,7 +130,7 @@ function U(e) {
                 premium_type: Z,
                 viewed_user_id: null == g ? void 0 : g.userId
               }), Z) {
-              (null == g ? void 0 : g.userId) === (null == F ? void 0 : F.id) ? (0, h.uL)(N.Z5c.NITRO_HOME) : (0, f.k)({
+              (null == g ? void 0 : g.userId) === (null == F ? void 0 : F.id) ? (0, h.uL)(N.Z5c.NITRO_HOME) : (0, _.k)({
                 analyticsLocations: G,
                 displayProfile: g
               }), null == L || L();
@@ -143,7 +143,7 @@ function U(e) {
               if (null == n) return;
               return null == L || L(), n(t)
             }
-            return (0, f.k)({
+            return (0, _.k)({
               analyticsLocations: G,
               displayProfile: g
             }), void(null == L || L())
@@ -154,7 +154,7 @@ function U(e) {
           if (null != n) return null == L || L(), n(t)
         },
         v = () => {
-          e.id === T.i && b.default.track(N.rMx.QUEST_CONTENT_VIEWED, k(x({}, (0, _.mH)(p.jn.QUEST_BADGE)), {
+          e.id === T.i && b.default.track(N.rMx.QUEST_CONTENT_VIEWED, M(x({}, (0, f.mH)(p.jn.QUEST_BADGE)), {
             is_targeted: !1
           })), V({
             action: "HOVER_BADGE"
@@ -171,7 +171,7 @@ function U(e) {
       return (0, r.jsx)(o.DY3, {
         text: S,
         "aria-label": e.description,
-        forceOpen: null != M && M(e.id),
+        forceOpen: null != k && k(e.id),
         delay: A.vB,
         children: (0, r.jsx)(o.eee, {
           onClick: y,

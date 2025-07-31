@@ -1,0 +1,152 @@
+/**
+  Module ID: 96887
+  Original File Name: 664222eb788da5d3
+**/
+.previewContainer__1e458 {
+    border-radius: var(--radius-md);
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    z-index: 0
+}
+
+.previewContainerSetHeight__1e458 {
+    height: 390px
+}
+
+.full-motion .previewContainerAnimation__1e458 {
+    animation: scaleIn__1e458 .5s
+}
+
+.preview__1e458 {
+    height: 100%;
+    position: relative;
+    width: 100%
+}
+
+.previewForCollected__1e458 {
+    object-fit: contain;
+    object-position: top
+}
+
+.purchasedEffect__1e458 {
+    opacity: .35
+}
+
+@keyframes scaleIn__1e458 {
+    0% {
+        transform: scale(.7)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+.fadeInAvatarImg_d71c71 {
+    animation: fadeIn_d71c71 1.5s
+}
+
+.avatarPurchased_d71c71 {
+    opacity: .5;
+    transition: opacity .5s
+}
+
+.avatar_d71c71 {
+    margin: 0 auto
+}
+
+@keyframes fadeIn_d71c71 {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.container__6d099 {
+    position: relative
+}
+
+.profileEffectShopPreview__6d099 {
+    border-radius: var(--radius-sm);
+    height: 200px;
+    left: 33px;
+    overflow: hidden;
+    position: absolute;
+    top: 25px;
+    transform: rotate(-11deg);
+    width: 150px
+}
+
+.avatarDecorationPreview__6d099 {
+    position: absolute;
+    right: 20px;
+    top: 80px;
+    transform: rotate(8deg)
+}
+
+.avatarDecorationPairOne__2c8c0 {
+    transform: translate(50%,50%) rotate(12deg)
+}
+
+.avatarDecorationPairTwo__2c8c0 {
+    transform: translate(-50%,-50%) rotate(-12deg)
+}
+
+.nameplate__2c8c0 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%
+}
+
+.profileEffectShopPreview__2c8c0 {
+    border-radius: var(--radius-md);
+    display: flex;
+    height: 195px;
+    justify-content: center;
+    overflow: hidden
+}
+
+.bundlePreview__2c8c0 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    width: 100%
+}
+
+.bundlePreviewContainer__2c8c0 {
+    width: 100%
+}
+
+.bundleProfileEffectCard__2c8c0 {
+    height: 170px;
+    position: relative;
+    top: 0;
+    width: 128px
+}
+
+.bundleAvatarDecorationCard__2c8c0 {
+    position: absolute;
+    right: 10%;
+    top: 25%
+}
+
+.easterEggContainer__2c8c0 {
+    align-items: center;
+    display: flex;
+    height: 228px;
+    justify-content: center;
+    position: absolute;
+    right: -100%;
+    top: 0;
+    width: 100%
+}
+
+/*# sourceMappingURL=664222eb788da5d3.css.map*/

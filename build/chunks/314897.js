@@ -11,8 +11,8 @@ var i, a = n(213919),
   c = n(433517),
   u = n(570140),
   d = n(911969),
-  f = n(109728),
-  _ = n(254942),
+  _ = n(109728),
+  f = n(254942),
   p = n(670890),
   h = n(569611),
   m = n(710845),
@@ -42,8 +42,8 @@ let N = new m.Z("AuthenticationStore"),
   D = null,
   L = null,
   x = null,
-  M = null,
   k = null,
+  M = null,
   j = T.u34.NONE,
   U = !1,
   G = [],
@@ -106,7 +106,7 @@ function J(e) {
       fingerprint: t,
       experiments: n,
       guildExperiments: r
-    }), Y = null, (0, f.$L)()
+    }), Y = null, (0, _.$L)()
   }, () => {
     Y = null, u.Z.dispatch({
       type: "EXPERIMENTS_FETCH_FAILURE"
@@ -115,7 +115,7 @@ function J(e) {
 }
 
 function $() {
-  M = x, x = null, c.K.remove(C)
+  k = x, x = null, c.K.remove(C)
 }
 
 function ee(e, t) {
@@ -123,7 +123,7 @@ function ee(e, t) {
 }
 
 function et(e) {
-  k = e, a.setAnalyticsToken(e)
+  M = e, a.setAnalyticsToken(e)
 }
 
 function en() {
@@ -159,7 +159,7 @@ function es(e) {
   let {
     error: t
   } = e;
-  B = "", V = !1, F = null, eu(), j = null != (0, _.p)(t).date_of_birth ? T.u34.LOGIN_AGE_GATE : T.u34.NONE
+  B = "", V = !1, F = null, eu(), j = null != (0, f.p)(t).date_of_birth ? T.u34.LOGIN_AGE_GATE : T.u34.NONE
 }
 
 function el() {
@@ -170,7 +170,7 @@ function ec(e) {
   let {
     error: t
   } = e;
-  B = "", V = !1, F = null, K = !1, j = null != (0, _.F)(t).date_of_birth ? T.u34.LOGIN_AGE_GATE : T.u34.NONE
+  B = "", V = !1, F = null, K = !1, j = null != (0, f.F)(t).date_of_birth ? T.u34.LOGIN_AGE_GATE : T.u34.NONE
 }
 
 function eu() {
@@ -199,11 +199,11 @@ function ed(e) {
   null != t && (B = t, V = n, F = null != r ? r : null, H = i, Z = a, eu()), j = T.u34.MFA_STEP
 }
 
-function ef() {
+function e_() {
   j = T.u34.LOGGING_IN_MFA
 }
 
-function e_(e) {
+function ef(e) {
   j = T.u34.ACCOUNT_SCHEDULED_FOR_DELETION, r = e.credentials
 }
 
@@ -222,9 +222,9 @@ function em(e) {
 function eg(e) {
   let t = e.fingerprint;
   null == x ? null != t ? (b.default.track(T.rMx.USER_FINGERPRINT_CHANGED, {
-    old_fingerprint: null != M ? (0, o.s)(M) : null,
+    old_fingerprint: null != k ? (0, o.s)(k) : null,
     new_fingerprint: (0, o.s)(t)
-  }), x = t, M = t, c.K.set(C, x)) : Q() : null != t && x !== t && b.default.track(T.rMx.EXTERNAL_FINGERPRINT_DROPPED, {
+  }), x = t, k = t, c.K.set(C, x)) : Q() : null != t && x !== t && b.default.track(T.rMx.EXTERNAL_FINGERPRINT_DROPPED, {
     fingerprint: (0, o.s)(x),
     dropped_fingerprint: (0, o.s)(t)
   })
@@ -258,7 +258,7 @@ function ey(e) {
     analyticsToken: i,
     token: a
   } = e;
-  O.Z.setUser(n.id, n.username, null != (t = n.email) ? t : void 0, (0, E.Z)(n)), w = r, k = i, ee(a, n.id), null != i && et(i), $(), P = n.id, c.K.set(R, n.id)
+  O.Z.setUser(n.id, n.username, null != (t = n.email) ? t : void 0, (0, E.Z)(n)), w = r, M = i, ee(a, n.id), null != i && et(i), $(), P = n.id, c.K.set(R, n.id)
 }
 
 function eO(e) {
@@ -360,7 +360,7 @@ class ew extends(i = s.ZP.Store) {
     return x
   }
   getAnalyticsToken() {
-    return null != k ? k : a.getAnalyticsToken()
+    return null != M ? M : a.getAnalyticsToken()
   }
   getMFATicket() {
     return B
@@ -398,8 +398,8 @@ let eD = new ew(u.Z, {
   LOGIN_SUCCESS: eo,
   LOGIN_FAILURE: es,
   LOGIN_MFA_STEP: ed,
-  LOGIN_MFA: ef,
-  LOGIN_ACCOUNT_SCHEDULED_FOR_DELETION: e_,
+  LOGIN_MFA: e_,
+  LOGIN_ACCOUNT_SCHEDULED_FOR_DELETION: ef,
   LOGIN_ACCOUNT_DISABLED: ep,
   LOGIN_PASSWORD_RECOVERY_PHONE_VERIFICATION: eh,
   LOGIN_PHONE_IP_AUTHORIZATION_REQUIRED: em,

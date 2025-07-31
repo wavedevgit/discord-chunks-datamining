@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ps: () => _,
-  y9: () => f
+  ps: () => f,
+  y9: () => _
 });
 var r = n(255367);
 n(73800);
@@ -51,17 +51,17 @@ function d(e, t) {
   }), e
 }
 
-function f(e) {
+function _(e) {
   return "number" != typeof e ? (0, i.pxk)(e) * o.hs : e * o.hs
 }
-let _ = e => {
+let f = e => {
   let {
     analyticsLocations: t,
     initialSelectedDecoration: o,
     initialSelectedDecorationId: l,
     isTryItOutFlow: u,
-    guild: f,
-    onClose: _
+    guild: _,
+    onClose: f
   } = e;
   (0, i.ZDy)(async () => {
     (0, a.s1)().location.pathname === s.Z5c.COLLECTIBLES_SHOP_FULLSCREEN && (0, a.uL)(s.Z5c.APP);
@@ -70,12 +70,12 @@ let _ = e => {
     } = await Promise.resolve().then(n.bind(n, 235400));
     return n => (0, r.jsx)(e, d(c({}, n), {
       onCloseModal: n.onClose,
-      onClose: _,
+      onClose: f,
       analyticsLocations: t,
       initialSelectedDecoration: o,
       initialSelectedDecorationId: l,
       isTryItOutFlow: u,
-      guild: f
+      guild: _
     }))
   }, {})
 }

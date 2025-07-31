@@ -1,5 +1,4 @@
-/** Chunk was on web.js **/
-"use strict";
+/** Chunk was on 96887 **/
 e.exports = {
   previewContainer: "previewContainer__1e458",
   previewContainerSetHeight: "previewContainerSetHeight__1e458",

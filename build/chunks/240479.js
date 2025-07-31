@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(481060),
   u = n(749210),
   d = n(231053),
-  f = n(183023),
-  _ = n(524444),
+  _ = n(183023),
+  f = n(524444),
   p = n(208049),
   h = n(697426),
   m = n(294206),
@@ -78,10 +78,10 @@ function N(e) {
   let {
     buttonType: L,
     description: x
-  } = (0, y.Z)(t, n, v, N), M = L === y.y.JOIN_GUILD, k = !E && w, j = i.useMemo(() => v ? d.JO.createFromGuildRecord(O) : null != N ? d.JO.createFromDiscoverableGuild(N) : void 0, [O, v, N]);
-  return k ? (0, r.jsx)(_.SE, {}) : (0, r.jsxs)("div", {
+  } = (0, y.Z)(t, n, v, N), k = L === y.y.JOIN_GUILD, M = !E && w, j = i.useMemo(() => v ? d.JO.createFromGuildRecord(O) : null != N ? d.JO.createFromDiscoverableGuild(N) : void 0, [O, v, N]);
+  return M ? (0, r.jsx)(f.SE, {}) : (0, r.jsxs)("div", {
     className: S.infoContainer,
-    children: [(0, r.jsxs)(_.W_, {
+    children: [(0, r.jsxs)(f.W_, {
       children: [(0, r.jsxs)("div", {
         className: S.infoExpandedSoundContainer,
         children: [(0, r.jsx)(m.ZP, {
@@ -103,10 +103,10 @@ function N(e) {
           children: v ? T.intl.string(T.t.tGDabm) : T.intl.string(T.t.rnOmOT)
         }), (0, r.jsx)("div", {
           className: S.infoExpandedGuildInfo,
-          children: (0, r.jsx)(f.Oe, {
+          children: (0, r.jsx)(_.Oe, {
             expressionSourceGuild: j,
             hasJoinedExpressionSourceGuild: v,
-            isDisplayingJoinGuildButtonInPopout: M
+            isDisplayingJoinGuildButtonInPopout: k
           })
         }), (0, r.jsx)(A, {
           buttonType: L,

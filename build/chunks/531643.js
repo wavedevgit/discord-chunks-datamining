@@ -14,8 +14,8 @@ var i = n(120356),
   c = n(174609),
   u = n(998076),
   d = n(355314),
-  f = n(911311),
-  _ = n(703656),
+  _ = n(911311),
+  f = n(703656),
   p = n(626135),
   h = n(310752),
   m = n(731994),
@@ -59,9 +59,9 @@ function O(e) {
     (0, c.Z)(), O(), p.default.track(g.rMx.PREMIUM_PROMOTION_OPENED, {
       location_section: g.jXE.FILE_UPLOAD_UPSELL_MODAL,
       location_object: g.qAy.NAVIGATION_LINK
-    }), (0, _.uL)(g.Z5c.APPLICATION_STORE)
+    }), (0, f.uL)(g.Z5c.APPLICATION_STORE)
   };
-  return i ? T ? (0, r.jsx)(f.Z, {
+  return i ? T ? (0, r.jsx)(_.Z, {
     transitionState: o,
     onClose: O,
     handleLearnMore: S

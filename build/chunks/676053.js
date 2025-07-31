@@ -1,4 +1,4 @@
-/** Chunk was on 73021 **/
+/** Chunk was on 22243 **/
 n.d(t, {
   M: () => h
 });
@@ -26,8 +26,8 @@ function h(e) {
         align: "center"
       },
       badge: j,
-      textLink: E,
-      onWatchVideo: O,
+      textLink: O,
+      onWatchVideo: E,
       onRequestClose: C,
       popoverRef: v
     } = e,
@@ -71,8 +71,8 @@ function h(e) {
         startingIndex: 0,
         location: "VideoPopover",
         shouldHideMediaOptions: !0
-      }), null == C || C(), null == O || O()
-    }, [I, O, C]),
+      }), null == C || C(), null == E || E()
+    }, [I, E, C]),
     R = N ? (0, i.jsx)("img", {
       src: b,
       alt: "",
@@ -136,7 +136,7 @@ function h(e) {
         title: h,
         body: f,
         badge: j,
-        textLink: E,
+        textLink: O,
         hasBottomMargin: null != x
       }), null != x ? (0, i.jsx)(c.k, {
         actions: [x]

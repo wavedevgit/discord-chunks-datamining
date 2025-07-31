@@ -1,4 +1,4 @@
-/** Chunk was on 2026 **/
+/** Chunk was on 60432 **/
 e.exports = {
   container: "container_f284f6",
   nitroIcon: "nitroIcon_f284f6"

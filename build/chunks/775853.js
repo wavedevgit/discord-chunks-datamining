@@ -1,4 +1,4 @@
-/** Chunk was on 73021 **/
+/** Chunk was on 22243 **/
 e.exports = {
   profileCustomizationSection: "profileCustomizationSection__44061",
   baseLayout: "baseLayout__44061",

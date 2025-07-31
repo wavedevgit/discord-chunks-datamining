@@ -1,4 +1,4 @@
-/** Chunk was on 73021 **/
+/** Chunk was on 22243 **/
 n.d(t, {
   Z: () => m
 });
@@ -26,8 +26,8 @@ function m(e) {
     pendingThemeColors: x,
     pendingPronouns: _,
     pendingBio: j,
-    tryItOutThemeColors: E,
-    tryItOutAvatar: O,
+    tryItOutThemeColors: O,
+    tryItOutAvatar: E,
     tryItOutBanner: C,
     tryItOutAvatarDecoration: v,
     tryItOutProfileEffectId: S
@@ -50,7 +50,7 @@ function m(e) {
     return e
   })({}, c.Z.getAllPending(), c.Z.getAllTryItOut())), T = (0, o.SD)({
     userId: m.id,
-    image: null != O ? O : f
+    image: null != E ? E : f
   }), N = (0, l.Z)(v, !1);
   return (0, i.jsx)(d.Z, {
     containerClassName: g,
@@ -59,10 +59,10 @@ function m(e) {
     pendingBio: j,
     pendingBanner: null != (t = null != C ? C : b) ? t : n(466045),
     pendingAvatar: T,
-    pendingThemeColors: null != E ? E : x,
+    pendingThemeColors: null != O ? O : x,
     pendingAvatarDecoration: N,
     pendingProfileEffectId: S,
-    avatarClassName: null != O || null != f || h.enabled ? void 0 : u.spinningAvatar,
+    avatarClassName: null != E || null != f || h.enabled ? void 0 : u.spinningAvatar,
     canUsePremiumCustomization: !0,
     isTryItOutFlow: !0,
     hideExampleButton: !0,

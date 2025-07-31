@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 r.d(t, {
-  Z: () => k
+  Z: () => I
 }), r(388685);
 var n = r(255367),
   l = r(73800),
@@ -20,78 +20,78 @@ var n = r(255367),
   m = r(709999),
   _ = r(81136),
   O = r(215023),
-  C = r(388032),
-  v = r(484920),
+  v = r(388032),
+  C = r(484920),
   E = r(558513),
   S = r(662128),
   y = r(676790),
   x = r(665195),
   j = r(42742),
-  T = r(283727),
-  P = r(266058),
+  P = r(283727),
+  T = r(266058),
   L = r(719138);
 
-function k(e) {
+function I(e) {
   var t;
   let {
     isFetchingCategories: r,
-    isFullScreen: k,
-    scrollerRef: I,
-    tab: N
-  } = e, A = (0, d.sp)(), B = null != (t = null == A ? void 0 : A.sessionId) ? t : "", {
-    noCache: w,
+    isFullScreen: I,
+    scrollerRef: k,
+    tab: w
+  } = e, N = (0, d.sp)(), A = null != (t = null == N ? void 0 : N.sessionId) ? t : "", {
+    noCache: B,
     includeUnpublished: R
   } = (0, _.Z)(), Z = (0, a.e7)([u.default], () => u.default.getCurrentUser()), D = (0, a.e7)([p.Z], () => p.Z.productsWithVariantsAsGroup), [F, M] = l.useState(1), H = () => {
     var e;
-    null == I || null == (e = I.current) || e.scrollToTop({
+    null == k || null == (e = k.current) || e.scrollToTop({
       animate: !0
     })
   }, W = (0, c.Fg)(), V = (0, o.ap)(W), [U, z, G] = l.useMemo(() => {
-    switch (N) {
+    switch (w) {
       case O.AW.AVATAR_DECORATIONS:
-        return [C.intl.string(C.t.dRZYND), V ? x.Z : y.Z, i.Z.AVATAR_DECORATION];
+        return [v.intl.string(v.t.dRZYND), V ? x.Z : y.Z, i.Z.AVATAR_DECORATION];
       case O.AW.PROFILE_EFFECTS:
-        return [C.intl.string(C.t["1cNjt7"]), V ? L.Z : P.Z, i.Z.PROFILE_EFFECT];
+        return [v.intl.string(v.t["1cNjt7"]), V ? L.Z : T.Z, i.Z.PROFILE_EFFECT];
       case O.AW.NAMEPLATES:
-        return [C.intl.string(C.t.V68Fq6), V ? T.Z : j.Z, i.Z.NAMEPLATE];
+        return [v.intl.string(v.t.V68Fq6), V ? P.Z : j.Z, i.Z.NAMEPLATE];
       case O.AW.BUNDLES:
-        return [C.intl.string(C.t.FYFppq), V ? S.Z : E.Z, i.Z.BUNDLE]
+        return [v.intl.string(v.t.FYFppq), V ? S.Z : E.Z, i.Z.BUNDLE]
     }
-  }, [N, V]), q = (0, f.a)(), Y = l.useMemo(() => q(D.filter(e => {
+  }, [w, V]), q = (0, f.a)(), K = l.useMemo(() => q(D.filter(e => {
     var t;
     return e.type === G || e.type === i.Z.VARIANTS_GROUP && (null == (t = e.variants) ? void 0 : t.some(e => e.type === G)) === !0
-  })), [D, G, q]), K = (0, g.l)(Y);
+  })), [D, G, q]), Y = (0, g.l)(K);
   return (l.useEffect(() => {
     (0, h.n)({
-      sessionId: B,
+      sessionId: A,
       checkpoint: h.a.SHOP_MOUNTED,
-      tab: N,
-      isFullScreen: k,
+      tab: w,
+      isFullScreen: I,
       unpublishedCategoriesShown: R,
-      cacheDisabled: w
+      cacheDisabled: B
     })
   }, []), l.useEffect(() => {
     r || (0, h.n)({
-      sessionId: B,
+      sessionId: A,
       checkpoint: h.a.SHOP_RENDERED,
-      tab: N,
-      isFullScreen: k,
+      tab: w,
+      isFullScreen: I,
       unpublishedCategoriesShown: R,
-      cacheDisabled: w
+      cacheDisabled: B
     })
-  }, [B, k, R, w, r, N]), r || null == Z) ? (0, n.jsx)(b.Z, {}) : (0, n.jsxs)(n.Fragment, {
+  }, [A, I, R, B, r, w]), r || null == Z) ? (0, n.jsx)(b.Z, {}) : (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsx)("div", {
       style: {
         backgroundImage: "url(".concat(z, ")")
       },
-      className: v.bannerContainer,
+      className: C.bannerContainer,
       children: (0, n.jsx)(s.X6q, {
         variant: "heading-xxl/extrabold",
         children: U
       })
     }), (0, n.jsx)("div", {
-      className: v.products,
-      children: K.slice(40 * (F - 1), 40 * F).map((e, t) => {
+      className: C.products,
+      children: Y.slice(40 * (F - 1), 40 * F).map((e, t) => {
         let r = p.Z.getCategory(e.categorySkuId);
         return null == r ? null : (0, n.jsx)(d.k0, {
           newValue: {
@@ -101,16 +101,16 @@ function k(e) {
             product: e,
             user: Z,
             category: r,
-            tab: N
+            tab: w
           }, e.skuId)
         }, e.skuId)
       })
-    }), K.length > 40 && (0, n.jsx)("div", {
-      className: v.paginationContainer,
+    }), Y.length > 40 && (0, n.jsx)("div", {
+      className: C.paginationContainer,
       children: (0, n.jsx)("div", {
         children: (0, n.jsx)(s.DsT, {
           currentPage: F,
-          totalCount: K.length,
+          totalCount: Y.length,
           pageSize: 40,
           onPageChange: e => {
             M(e), H()

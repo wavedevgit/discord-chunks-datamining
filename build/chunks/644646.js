@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(481060),
   u = n(607070),
   d = n(70097),
-  f = n(451478),
-  _ = n(617136),
+  _ = n(451478),
+  f = n(617136),
   p = n(509212),
   h = n(475595),
   m = n(566078),
@@ -32,8 +32,8 @@ let I = function(e) {
       sourceQuestContent: S,
       lazyLoad: A = !1
     } = e,
-    N = (0, _.O5)(),
-    C = (0, l.e7)([f.Z], () => f.Z.isFocused()),
+    N = (0, f.O5)(),
+    C = (0, l.e7)([_.Z], () => _.Z.isFocused()),
     R = (0, l.e7)([u.Z], () => u.Z.useReducedMotion),
     P = i.useMemo(() => (0, h.fh)(a, h.eC.REWARD), [a]),
     w = i.useMemo(() => (0, h.fh)(a, h.eC.REWARD_IMAGE), [a]),
@@ -43,7 +43,7 @@ let I = function(e) {
         questId: a.id,
         questContent: e.questContent,
         questContentPosition: e.questContentPosition,
-        questContentCTA: _.jZ.REWARD_LEARN_MORE,
+        questContentCTA: f.jZ.REWARD_LEARN_MORE,
         sourceQuestContent: S
       }), (0, b.navigateToQuestHome)({
         fromContent: e.questContent,
@@ -52,7 +52,7 @@ let I = function(e) {
     }, [N, a.id, e, S]),
     L = i.useRef(null),
     x = i.useRef(I),
-    M = (0, p.Bg)(a.config);
+    k = (0, p.Bg)(a.config);
   return i.useEffect(() => {
     if (null != L.current) {
       if (!P.isAnimated || R) {
@@ -61,7 +61,7 @@ let I = function(e) {
       }
       I && !x.current ? L.current.play() : !I && x.current && (L.current.currentTime = 0, L.current.pause()), x.current = I
     }
-  }, [I, P, R]), t = M ? (0, r.jsx)(y.Fl, {
+  }, [I, P, R]), t = k ? (0, r.jsx)(y.Fl, {
     id: "QuestRewardTile_rewardTileNitro",
     children: e => (0, r.jsx)(E.Z, {
       ref: e,

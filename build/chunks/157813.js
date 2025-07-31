@@ -13,7 +13,7 @@ var r = n(255367),
   u = n(388032),
   d = n(321575);
 
-function f(e) {
+function _(e) {
   let {
     className: t,
     isVertical: n
@@ -32,7 +32,7 @@ function f(e) {
   })
 }
 
-function _(e) {
+function f(e) {
   let {
     className: t,
     isVertical: n
@@ -67,10 +67,10 @@ function p(e) {
     let {
       className: t
     } = e;
-    return a ? (0, r.jsx)(_, {
+    return a ? (0, r.jsx)(f, {
       className: t,
       isVertical: s
-    }) : (0, r.jsx)(f, {
+    }) : (0, r.jsx)(_, {
       className: t,
       isVertical: s
     })

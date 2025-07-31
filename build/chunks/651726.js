@@ -1,4 +1,4 @@
-/** Chunk was on 2026 **/
+/** Chunk was on 60432 **/
 e.exports = {
   priceLine: "priceLine__05bc9",
   priceTagContainer: "priceTagContainer__05bc9",

@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 r.d(t, {
-  Z: () => v
+  Z: () => C
 }), r(388685);
 var n = r(255367),
   l = r(73800),
@@ -20,9 +20,9 @@ var n = r(255367),
   m = r(566564),
   _ = r(795477),
   O = r(215023);
-let C = [O.AW.HOME, O.AW.ORBS];
+let v = [O.AW.HOME, O.AW.ORBS];
 
-function v(e) {
+function C(e) {
   let {
     tab: t,
     isFullScreen: r,
@@ -31,27 +31,27 @@ function v(e) {
     transitionState: u,
     updateAnalyticsState: d,
     refreshCategories: b
-  } = e, v = E();
-  S(v);
+  } = e, C = E();
+  S(C);
   let y = (0, a.e7)([o.Z], () => o.Z.useReducedMotion),
     [x, j] = l.useState(void 0),
-    T = l.useCallback(async (e, t, n) => {
+    P = l.useCallback(async (e, t, n) => {
       d(e, t);
       let l = n && !r && !y,
         a = t === i.T.ORB ? O.AW.ORBS : O.AW.CATALOG;
       j(t), await c(a, l)
     }, [r, y, c, d]),
-    P = (0, p.FF)("CollectiblesContent"),
+    T = (0, p.FF)("CollectiblesContent"),
     {
       searchError: L
     } = (0, f.a)();
-  return P && null != L ? (0, n.jsx)(_.Z, {}) : null != v ? (0, n.jsx)(h.Z, {
+  return T && null != L ? (0, n.jsx)(_.Z, {}) : null != C ? (0, n.jsx)(h.Z, {
     onRetry: b,
-    errorMessage: v,
+    errorMessage: C,
     errorOrigin: h.i.SHOP_PAGE
-  }) : C.includes(t) ? (0, n.jsx)(m.Z, {
+  }) : v.includes(t) ? (0, n.jsx)(m.Z, {
     isFullScreen: r,
-    handleTransition: T,
+    handleTransition: P,
     tab: t,
     transitionState: u
   }) : (0, n.jsx)(g.Z, {

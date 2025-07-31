@@ -19,18 +19,18 @@ function l(e, t, n) {
 let c = s.OA,
   u = "tokenized",
   d = !1,
-  f = {};
+  _ = {};
 
-function _(e) {
+function f(e) {
   var t;
   let {
     searchId: n,
     query: r
   } = e;
   if ("string" != typeof r || "" === (r = r.trim())) return;
-  let i = f[n] = null != (t = f[n]) ? t : [],
+  let i = _[n] = null != (t = _[n]) ? t : [],
     o = i.indexOf(r); - 1 !== o ? (i.splice(o, 1), i.unshift(r)) : null != i[0] && "" !== i[0] && r.startsWith(i[0]) ? i[0] = r : o < 0 && i.unshift(r), i.length > 5 && i.splice(5, i.length), a.K.set(s.OA, {
-    history: f
+    history: _
   })
 }
 
@@ -38,8 +38,8 @@ function p(e) {
   let {
     searchId: t
   } = e;
-  null == t ? (a.K.remove(s.OA), f = {}) : (delete f[t], a.K.set(s.OA, {
-    history: f
+  null == t ? (a.K.remove(s.OA), _ = {}) : (delete _[t], a.K.set(s.OA, {
+    history: _
   }))
 }
 
@@ -48,8 +48,8 @@ function h(e) {
     searchId: t,
     query: n
   } = e;
-  null != f[t] && (f[t] = f[t].filter(e => e !== n), a.K.set(s.OA, {
-    history: f
+  null != _[t] && (_[t] = _[t].filter(e => e !== n), a.K.set(s.OA, {
+    history: _
   }))
 }
 
@@ -60,24 +60,24 @@ function m(e) {
 }
 
 function g() {
-  a.K.remove(s.OA), f = {}
+  a.K.remove(s.OA), _ = {}
 }
 class E extends(r = i.ZP.Store) {
   initialize() {
     let e = a.K.get(c);
-    (null == e ? void 0 : e.history) != null && (f = m(e.history)), d = !!a.K.get(u)
+    (null == e ? void 0 : e.history) != null && (_ = m(e.history)), d = !!a.K.get(u)
   }
   isTokenized() {
     return d
   }
   getHistory(e) {
-    return f[e]
+    return _[e]
   }
 }
 l(E, "displayName", s.zn);
 let b = new E(o.Z, {
   SEARCH_HISTORY_WEB_CLEAR_ITEMS: p,
   SEARCH_HISTORY_WEB_REMOVE_ITEM: h,
-  SEARCH_HISTORY_WEB_ADD_ITEM: _,
+  SEARCH_HISTORY_WEB_ADD_ITEM: f,
   LOGOUT: g
 })

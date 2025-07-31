@@ -1,6 +1,6 @@
 /** Chunk was on web.js **/
 "use strict";
-let r, i, a, o, s, l, c, u, d, f, _, p, h, m, g, E, b;
+let r, i, a, o, s, l, c, u, d, _, f, p, h, m, g, E, b;
 n.d(t, {
   Z: () => ec
 });
@@ -59,14 +59,14 @@ function x(e) {
   i = t
 }
 
-function M(e) {
+function k(e) {
   let {
     legacyUsernameDisabled: t
   } = e;
-  _ = t
+  f = t
 }
 
-function k(e) {
+function M(e) {
   let {
     avatarDecoration: t
   } = e;
@@ -126,7 +126,7 @@ function H(e) {
   let {
     themeColors: t
   } = e;
-  f = t
+  _ = t
 }
 
 function Y(e) {
@@ -197,7 +197,7 @@ function et() {
 }
 
 function en() {
-  l = void 0, c = void 0, u = void 0, d = void 0, f = void 0, o = void 0
+  l = void 0, c = void 0, u = void 0, d = void 0, _ = void 0, o = void 0
 }
 
 function er() {
@@ -209,7 +209,7 @@ function ei() {
 }
 
 function ea() {
-  _ = void 0
+  f = void 0
 }
 
 function eo() {
@@ -227,7 +227,7 @@ class el extends(y = v.ZP.Store) {
     return N
   }
   showNotice() {
-    return void 0 !== r || void 0 !== l || void 0 !== c || void 0 !== u || void 0 !== d || void 0 !== f || void 0 !== a || void 0 !== o || void 0 !== i || void 0 !== s || void 0 !== _ || void 0 !== p
+    return void 0 !== r || void 0 !== l || void 0 !== c || void 0 !== u || void 0 !== d || void 0 !== _ || void 0 !== a || void 0 !== o || void 0 !== i || void 0 !== s || void 0 !== f || void 0 !== p
   }
   getIsSubmitDisabled() {
     return void 0 !== c && c.length > T.tPV
@@ -251,7 +251,7 @@ class el extends(y = v.ZP.Store) {
     return d
   }
   getPendingThemeColors() {
-    return f
+    return _
   }
   getPendingAvatarDecoration() {
     return a
@@ -269,12 +269,12 @@ class el extends(y = v.ZP.Store) {
       pendingBio: c,
       pendingPronouns: u,
       pendingAccentColor: d,
-      pendingThemeColors: f,
+      pendingThemeColors: _,
       pendingAvatarDecoration: a,
       pendingProfileEffectId: o,
       pendingGlobalName: i,
       pendingNameplate: s,
-      pendingLegacyUsernameDisabled: _,
+      pendingLegacyUsernameDisabled: f,
       pendingPrimaryGuildId: p
     }
   }
@@ -315,8 +315,8 @@ let ec = new el(I.Z, {
   USER_SETTINGS_ACCOUNT_SUBMIT_FAILURE: w,
   USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR: L,
   USER_SETTINGS_ACCOUNT_SET_PENDING_GLOBAL_NAME: x,
-  USER_SETTINGS_ACCOUNT_SET_PENDING_LEGACY_USERNAME_DISABLED: M,
-  USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR_DECORATION: k,
+  USER_SETTINGS_ACCOUNT_SET_PENDING_LEGACY_USERNAME_DISABLED: k,
+  USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR_DECORATION: M,
   USER_SETTINGS_ACCOUNT_SET_PENDING_NAMEPLATE: j,
   USER_SETTINGS_ACCOUNT_SET_SINGLE_TRY_IT_OUT_COLLECTIBLES_ITEM: G,
   USER_SETTINGS_ACCOUNT_SET_PENDING_PROFILE_EFFECT_ID: U,

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  L: () => f
+  L: () => _
 });
 var r = n(442837),
   i = n(620662),
@@ -13,17 +13,17 @@ var r = n(442837),
   u = n(804739),
   d = n(981631);
 
-function f(e, t) {
+function _(e, t) {
   var n;
-  let f = null != (n = null == t ? void 0 : t.applicationId) ? n : null == e ? void 0 : e.application_id,
-    _ = null != t || (0, a.Z)(e),
-    p = (0, r.e7)([l.Z, o.Z, c.Z, s.Z], () => _ || null != f && (0, u.t)({
+  let _ = null != (n = null == t ? void 0 : t.applicationId) ? n : null == e ? void 0 : e.application_id,
+    f = null != t || (0, a.Z)(e),
+    p = (0, r.e7)([l.Z, o.Z, c.Z, s.Z], () => f || null != _ && (0, u.t)({
       LibraryApplicationStore: l.Z,
       LaunchableGameStore: o.Z,
       DispatchApplicationStore: c.Z,
       ConnectedAppsStore: s.Z,
-      applicationId: f
-    }), [f, _]),
-    h = (0, i.Z)(e, d.xjy.JOIN) || _;
-  return !(_ && null == t && (null == e || !(0, i.Z)(e, d.xjy.CONTEXTLESS))) && null != f && h && p
+      applicationId: _
+    }), [_, f]),
+    h = (0, i.Z)(e, d.xjy.JOIN) || f;
+  return !(f && null == t && (null == e || !(0, i.Z)(e, d.xjy.CONTEXTLESS))) && null != _ && h && p
 }

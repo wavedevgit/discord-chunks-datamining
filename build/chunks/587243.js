@@ -1,4 +1,4 @@
-/** Chunk was on 73021 **/
+/** Chunk was on 22243 **/
 n.d(t, {
   F: () => C,
   I: () => v
@@ -58,11 +58,11 @@ let x = [{
   }],
   j = "forever";
 
-function E(e, t) {
+function O(e, t) {
   return e.getFullYear() === t.getFullYear() && e.getMonth() === t.getMonth() && e.getDate() === t.getDate()
 }
 
-function O(e) {
+function E(e) {
   let {
     status: t,
     currentStatus: n,
@@ -73,7 +73,7 @@ function O(e) {
     hasButtonStyling: u
   } = o.Y.useExperiment({
     location: "UserProfileAccountPopout"
-  }), f = c && t !== h.Skl.ONLINE, [E, O] = r.useState(void 0), C = void 0 !== E && t === n, v = (0, i.jsx)(i.Fragment, {
+  }), f = c && t !== h.Skl.ONLINE, [O, E] = r.useState(void 0), C = void 0 !== O && t === n, v = (0, i.jsx)(i.Fragment, {
     children: x.map(e => {
       let {
         duration: r,
@@ -101,14 +101,14 @@ function O(e) {
         "data-migration-pending": !0,
         id: "".concat(t, "-").concat(r),
         onClick: e => {
-          e.stopPropagation(), O(r), (0, g.Z)({
+          e.stopPropagation(), E(r), (0, g.Z)({
             nextStatus: t,
             prevStatus: n,
             durationMillis: null != r ? r : void 0
           })
         },
         className: b.durationButton,
-        color: E === r ? a.Tt.BRAND : a.Tt.PRIMARY,
+        color: O === r ? a.Tt.BRAND : a.Tt.PRIMARY,
         size: a.Ph.NONE,
         grow: !1,
         children: s()
@@ -141,7 +141,7 @@ function O(e) {
       })
     },
     action: () => {
-      O(f ? m.Z.Millis.DAY : void 0), (0, g.Z)({
+      E(f ? m.Z.Millis.DAY : void 0), (0, g.Z)({
         nextStatus: t,
         prevStatus: n,
         durationMillis: d && f ? m.Z.Millis.DAY : void 0
@@ -155,10 +155,10 @@ function O(e) {
 function C(e) {
   if (null == e || "0" === e) return;
   let t = new Date(Number(e)),
-    n = E(t, new Date),
+    n = O(t, new Date),
     i = new Date;
   i.setDate(i.getDate() + 1);
-  let r = E(t, i);
+  let r = O(t, i);
   return n ? f.intl.formatToPlainString(f.t.ZxxHIC, {
     timeString: f.intl.data.formatTime(t, {
       format: "short"
@@ -208,24 +208,24 @@ function v(e) {
         dontCloseOnAction: !0
       }, null != n ? n : j)
     })
-  }), E = O({
+  }), O = E({
     status: h.Skl.ONLINE,
     currentStatus: e
-  }), v = O({
+  }), v = E({
     status: h.Skl.IDLE,
     currentStatus: e,
     description: g(h.Skl.IDLE)
-  }), S = O({
+  }), S = E({
     status: h.Skl.DND,
     currentStatus: e,
     description: g(h.Skl.DND)
-  }), T = O({
+  }), T = E({
     status: h.Skl.INVISIBLE,
     currentStatus: e,
     description: g(h.Skl.INVISIBLE)
   });
   return (0, i.jsxs)(i.Fragment, {
-    children: [E, (0, i.jsx)(l.Clw, {}, "menu-separator-statuses"), v, S, T, a || r ? (0, i.jsxs)(i.Fragment, {
+    children: [O, (0, i.jsx)(l.Clw, {}, "menu-separator-statuses"), v, S, T, a || r ? (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(l.Clw, {}, "menu-separator-statuses"), (0, i.jsx)(l.sNh, {
         id: "quiet-mode",
         "aria-label": "focus mode",

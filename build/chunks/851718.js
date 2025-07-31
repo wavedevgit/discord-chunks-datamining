@@ -1,4 +1,4 @@
-/** Chunk was on 73021 **/
+/** Chunk was on 22243 **/
 n.d(t, {
   Z: () => g
 }), n(388685);
@@ -79,8 +79,8 @@ function g(e) {
     }
   }, [t]);
   let {
-    loadState: E
-  } = (0, l.qz)(), O = E !== l.jd.LOADED;
+    loadState: O
+  } = (0, l.qz)(), E = O !== l.jd.LOADED;
   switch (f) {
     case c.j.HOME:
       return (0, i.jsx)(i.Fragment, {
@@ -89,7 +89,7 @@ function g(e) {
           return (0, i.jsx)(o.Z, {
             subscription: e,
             navigateToSwitchPlan: x,
-            loadingState: O ? o.G.LOADING : null != (t = _[e.id]) ? t : o.G.LOADING
+            loadingState: E ? o.G.LOADING : null != (t = _[e.id]) ? t : o.G.LOADING
           }, e.id)
         })
       });

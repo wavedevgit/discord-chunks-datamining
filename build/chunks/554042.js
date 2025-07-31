@@ -1,4 +1,4 @@
-/** Chunk was on 73021 **/
+/** Chunk was on 22243 **/
 n.d(t, {
   Z: () => j
 }), n(388685);
@@ -48,7 +48,7 @@ function j() {
   } = (0, l.cj)([h.Z, u.Z], () => ({
     theme: h.Z.theme,
     platformZoom: u.Z.zoom
-  })), [j, E] = r.useState("upright"), O = ["normal", "medium", "semibold", "bold", "extrabold"], C = new Map([
+  })), [j, O] = r.useState("upright"), E = ["normal", "medium", "semibold", "bold", "extrabold"], C = new Map([
     ["normal", 400],
     ["medium", 500],
     ["semibold", 600],
@@ -157,14 +157,14 @@ function j() {
               value: "mono"
             }],
             onChange: e => {
-              E(e.value)
+              O(e.value)
             },
             value: j
           })
         })]
       }), (0, i.jsxs)("div", {
         className: x.textGrid,
-        children: [(0, i.jsx)("div", {}), O.map(e => (0, i.jsx)("div", {
+        children: [(0, i.jsx)("div", {}), E.map(e => (0, i.jsx)("div", {
           className: x.columnHeading,
           children: (0, i.jsx)(o.X6q, {
             variant: "eyebrow",
@@ -181,7 +181,7 @@ function j() {
               color: "text-muted",
               children: ["(", e * v / 100, ")"]
             }) : null]
-          }, e), O.map(t => {
+          }, e), E.map(t => {
             var n;
             let r = null != (n = "custom" === I ? T : I) ? n : "";
             return (0, i.jsx)("div", {

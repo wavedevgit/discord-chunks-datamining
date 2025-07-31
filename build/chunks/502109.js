@@ -13,8 +13,8 @@ var r = n(255367),
   c = n(710845),
   u = n(219929),
   d = n(626135),
-  f = n(526167),
-  _ = n(358085),
+  _ = n(526167),
+  f = n(358085),
   p = n(622999),
   h = n(981631),
   m = n(388032),
@@ -68,7 +68,7 @@ let v = new c.Z("PaymentRequest"),
   });
 class T extends i.Component {
   componentDidMount() {
-    if (!(0, _.isDesktop)()) {
+    if (!(0, f.isDesktop)()) {
       if (!this.isBrowserCompatible()) return void this.onPaymentRequestFailure();
       this.disableWallets = I.filter(e => e !== this.paymentRequestWallet).sort(), (0, p.d2)().then(e => {
         this.initPaymentRequest(e)
@@ -163,11 +163,11 @@ class T extends i.Component {
     return this.props.renderConnectorView ? this.renderConnectorView() : this.renderButton({
       iconType: u.ZP.Types.PAYMENT_REQUEST,
       buttonText: m.intl.string(m.t.f19PPT),
-      loading: !(0, _.isDesktop)() && this.state.submitting
+      loading: !(0, f.isDesktop)() && this.state.submitting
     })
   }
   render() {
-    if ((0, _.isDesktop)()) return this.renderMain();
+    if ((0, f.isDesktop)()) return this.renderMain();
     if (this.state.submitting) return this.props.loadingComponent;
     let {
       available: e
@@ -219,7 +219,7 @@ class T extends i.Component {
         this.initPaymentRequestCallback(r)
       }), r
     }), E(this, "attemptPaymentRequest", () => {
-      if ((0, _.isDesktop)()) return void this.props.onChooseType(h.HeQ.PAYMENT_REQUEST, this.paymentRequestWallet);
+      if ((0, f.isDesktop)()) return void this.props.onChooseType(h.HeQ.PAYMENT_REQUEST, this.paymentRequestWallet);
       let {
         available: e
       } = this.validatePaymentRequest();
@@ -233,7 +233,7 @@ class T extends i.Component {
 }
 class S extends T {
   isBrowserCompatible() {
-    return (0, f.vu)() >= 61
+    return (0, _.vu)() >= 61
   }
   validatePaymentRequest() {
     if (!this.isBrowserCompatible()) {
@@ -284,7 +284,7 @@ class S extends T {
     return this.props.renderConnectorView ? this.renderConnectorView() : this.renderButton({
       iconType: u.ZP.Types.G_PAY,
       buttonText: m.intl.string(m.t.p2jr2N),
-      loading: !(0, _.isDesktop)() && this.state.submitting
+      loading: !(0, f.isDesktop)() && this.state.submitting
     })
   }
   constructor(...e) {
@@ -293,7 +293,7 @@ class S extends T {
 }
 class A extends T {
   isBrowserCompatible() {
-    return (0, f.G6)()
+    return (0, _.G6)()
   }
   validatePaymentRequest() {
     if (!this.isBrowserCompatible()) {
@@ -344,7 +344,7 @@ class A extends T {
     return this.props.renderConnectorView ? this.renderConnectorView() : this.renderButton({
       iconType: u.ZP.Types.APPLE_LIGHT,
       buttonText: m.intl.string(m.t.xdGS1t),
-      loading: !(0, _.isDesktop)() && this.state.submitting
+      loading: !(0, f.isDesktop)() && this.state.submitting
     })
   }
   constructor(...e) {

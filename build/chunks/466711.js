@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(100527),
   u = n(906732),
   d = n(644916),
-  f = n(243778),
-  _ = n(963249),
+  _ = n(243778),
+  f = n(963249),
   p = n(802408),
   h = n(819640),
   m = n(594174),
@@ -131,10 +131,10 @@ function L(e) {
   } = (0, u.ZP)(c.Z.GIFT_BUTTON), [I, S] = i.useState(!1), A = (0, a.e7)([h.Z], () => !(null === h.Z || void 0 === h.Z ? void 0 : h.Z.hasLayers())), N = (0, a.e7)([m.default], () => m.default.getCurrentUser()), C = null != N ? E.default.age(N.id) : 0, {
     giftBoxAnimation: R,
     trinketsAnimation: L
-  } = null != (t = null == n ? void 0 : n.chatGiftIcon) ? t : {}, x = null != n.firstTimeNotice && !s && A && C >= D, [M, k] = (0, f.XR)(x ? o.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, d.t)(o.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), j = null != M, U = I || j, G = (0, b.Ft)(g);
+  } = null != (t = null == n ? void 0 : n.chatGiftIcon) ? t : {}, x = null != n.firstTimeNotice && !s && A && C >= D, [k, M] = (0, _.XR)(x ? o.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, d.t)(o.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), j = null != k, U = I || j, G = (0, b.Ft)(g);
   if (s) return null;
   let B = () => {
-      (0, _.Z)({
+      (0, f.Z)({
         isGift: !0,
         giftRecipient: null == G ? void 0 : G,
         initialPlanId: null,
@@ -148,7 +148,7 @@ function L(e) {
       })
     },
     V = () => {
-      S(!1), k(v.L.TAKE_ACTION), B()
+      S(!1), M(v.L.TAKE_ACTION), B()
     },
     F = void 0 !== R ? (0, r.jsx)(P, {
       config: R,
@@ -170,7 +170,7 @@ function L(e) {
     children: void 0 !== n.firstTimeNotice && j ? (0, r.jsx)(p.Z, {
       onComplete: () => S(!1),
       onCheckItOutClick: B,
-      markAsDismissed: k,
+      markAsDismissed: M,
       config: n.firstTimeNotice,
       children: F
     }) : F

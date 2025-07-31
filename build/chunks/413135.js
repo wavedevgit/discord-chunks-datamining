@@ -15,7 +15,7 @@ function l(e) {
 function c(e, t, n) {
   if ("number" == typeof e) {
     if ("string" == typeof t) throw TypeError('The "string" argument must be of type string. Received type number');
-    return _(e)
+    return f(e)
   }
   return u(e, t, n)
 }
@@ -39,11 +39,11 @@ function d(e) {
   if (e < 0) throw RangeError('The value "' + e + '" is invalid for option "size"')
 }
 
-function f(e, t, n) {
+function _(e, t, n) {
   return (d(e), e <= 0) ? l(e) : void 0 !== t ? "string" == typeof n ? l(e).fill(t, n) : l(e).fill(t) : l(e)
 }
 
-function _(e) {
+function f(e) {
   return d(e), l(e < 0 ? 0 : 0 | E(e))
 }
 
@@ -125,10 +125,10 @@ function O(e, t, n) {
     case "utf-8":
       return D(this, t, n);
     case "ascii":
-      return M(this, t, n);
+      return k(this, t, n);
     case "latin1":
     case "binary":
-      return k(this, t, n);
+      return M(this, t, n);
     case "base64":
       return w(this, t, n);
     case "ucs2":
@@ -185,8 +185,8 @@ function T(e, t, n, r, i) {
       } else - 1 !== u && (a -= a - u), u = -1
   } else
     for (n + l > s && (n = s - l), a = n; a >= 0; a--) {
-      for (var d = !0, f = 0; f < l; f++)
-        if (c(e, a + f) !== c(t, f)) {
+      for (var d = !0, _ = 0; _ < l; _++)
+        if (c(e, a + _) !== c(t, _)) {
           d = !1;
           break
         } if (d) return a
@@ -280,11 +280,11 @@ r = 0x7fffffff, c.TYPED_ARRAY_SUPPORT = function e() {
 }), c.poolSize = 8192, c.from = function(e, t, n) {
   return u(e, t, n)
 }, Object.setPrototypeOf(c.prototype, Uint8Array.prototype), Object.setPrototypeOf(c, Uint8Array), c.alloc = function(e, t, n) {
-  return f(e, t, n)
+  return _(e, t, n)
 }, c.allocUnsafe = function(e) {
-  return _(e)
+  return f(e)
 }, c.allocUnsafeSlow = function(e) {
-  return _(e)
+  return f(e)
 }, c.isBuffer = function(e) {
   return null != e && !0 === e._isBuffer && e !== c.prototype
 }, c.compare = function(e, t) {
@@ -413,14 +413,14 @@ function x(e) {
   return n
 }
 
-function M(e, t, n) {
+function k(e, t, n) {
   var r = "";
   n = Math.min(e.length, n);
   for (var i = t; i < n; ++i) r += String.fromCharCode(127 & e[i]);
   return r
 }
 
-function k(e, t, n) {
+function M(e, t, n) {
   var r = "";
   n = Math.min(e.length, n);
   for (var i = t; i < n; ++i) r += String.fromCharCode(e[i]);

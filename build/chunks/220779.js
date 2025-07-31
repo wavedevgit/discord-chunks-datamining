@@ -13,8 +13,8 @@ var r = n(255367),
   c = n(541716),
   u = n(752305),
   d = n(893718),
-  f = n(318766),
-  _ = n(931651),
+  _ = n(318766),
+  f = n(931651),
   p = n(131704),
   h = n(142550),
   m = n(981631),
@@ -71,8 +71,8 @@ function T(e) {
     setEditorRef: a,
     showEmojiButton: s = !1,
     renderAttachButton: l,
-    autoFocus: f = !0,
-    onFocus: _,
+    autoFocus: _ = !0,
+    onFocus: f,
     channel: p,
     className: m
   } = e, [g, b] = i.useState(""), [O, T] = i.useState((0, u.JM)("")), S = () => {
@@ -115,8 +115,8 @@ function T(e) {
       }))
     },
     setEditorRef: a,
-    focused: f,
-    onFocus: _,
+    focused: _,
+    onFocus: f,
     disableThemedBackground: !0,
     emojiPickerCloseOnModalOuterClick: !0,
     disabled: !1,
@@ -154,7 +154,7 @@ let S = (e, t) => {
         children: e => (0, r.jsx)("div", {
           className: e,
           ref: u,
-          children: (0, r.jsx)(_.$, {
+          children: (0, r.jsx)(f.$, {
             messageId: m.lds,
             channel: I,
             closePopout: () => {
@@ -181,7 +181,7 @@ let S = (e, t) => {
           ref: d
         }, e), {
           className: E.reaction,
-          children: (0, r.jsx)(f.Z, {
+          children: (0, r.jsx)(_.Z, {
             active: !1,
             tabIndex: 0,
             onClick: () => {

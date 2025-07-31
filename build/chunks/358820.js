@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
   fz: () => P,
-  ge: () => M,
-  r5: () => k,
+  ge: () => k,
+  r5: () => M,
   rk: () => w,
   wV: () => x
 }), n(388685), n(415506), n(457542);
@@ -16,8 +16,8 @@ var r = n(392711),
   c = n(131951),
   u = n(626135),
   d = n(460366),
-  f = n(358085),
-  _ = n(960048),
+  _ = n(358085),
+  f = n(960048),
   p = n(998502),
   h = n(743498),
   m = n(709706),
@@ -127,7 +127,7 @@ function P(e) {
       }, e)), u.default.track(y.rMx.VOICE_FILTER_ERROR, {
         error_message: n,
         cause: (0, d.X)(Error(t))
-      }), _.Z.captureException(Error(n, {
+      }), f.Z.captureException(Error(n, {
         cause: t
       }), {
         tags: {
@@ -150,7 +150,7 @@ function P(e) {
 }
 async function w(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
-  await k();
+  await M();
   let n = performance.now();
   try {
     let r = p.ZP.getVoiceFilters();
@@ -223,7 +223,7 @@ async function x() {
     S.warn("Failed to refresh voice filters catalog: ".concat(e.message)), u.default.track(y.rMx.VOICE_FILTER_ERROR, {
       error_message: "Failed to refresh voice filters catalog",
       cause: (0, d.X)(e)
-    }), _.Z.captureException(e), await s.Z.dispatch({
+    }), f.Z.captureException(e), await s.Z.dispatch({
       type: "VOICE_FILTER_CATALOG_FETCH_FAILED"
     })
   } finally {
@@ -231,14 +231,14 @@ async function x() {
   }
 }
 
-function M() {
+function k() {
   s.Z.dispatch({
     type: "VOICE_FILTER_DOWNLOAD_CANCELED"
   })
 }
-async function k() {
+async function M() {
   if (!(m.Z.isNativeModuleLoaded() || m.Z.isNativeModuleLoading()) && !__OVERLAY__) {
-    if (!(0, f.isWindows)() && !(0, f.isMac)()) return void s.Z.dispatch({
+    if (!(0, _.isWindows)() && !(0, _.isMac)()) return void s.Z.dispatch({
       type: "VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE",
       state: g.O.UNSUPPORTED
     });
@@ -266,7 +266,7 @@ async function k() {
         S.warn("Voice Filters failed in process: ".concat(e)), u.default.track(y.rMx.VOICE_FILTER_ERROR, {
           error_message: "Voice Filters failed in process",
           cause: (0, d.X)(Error(e))
-        }), _.Z.captureException(Error("Voice Filters failed in process", {
+        }), f.Z.captureException(Error("Voice Filters failed in process", {
           cause: e
         }))
       })
@@ -274,7 +274,7 @@ async function k() {
       S.warn("Failed to load Voice Filters module: ".concat(e.message)), u.default.track(y.rMx.VOICE_FILTER_ERROR, {
         error_message: "Failed to load Voice Filters module",
         cause: (0, d.X)(e)
-      }), _.Z.captureException(e), s.Z.dispatch({
+      }), f.Z.captureException(e), s.Z.dispatch({
         type: "VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE",
         state: g.O.FAILED
       })

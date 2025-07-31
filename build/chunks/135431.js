@@ -18,8 +18,8 @@ function c(e) {
     installParams: c,
     integrationTypesConfig: u,
     guildId: d,
-    channelId: f,
-    disableGuildSelect: _,
+    channelId: _,
+    disableGuildSelect: f,
     source: p,
     oauth2Callback: h
   } = e;
@@ -45,8 +45,8 @@ function c(e) {
     }), (0, a.openOAuth2Modal)({
       clientId: t,
       guildId: d,
-      channelId: f,
-      disableGuildSelect: _,
+      channelId: _,
+      disableGuildSelect: f,
       callback: h
     });
     return
@@ -60,8 +60,8 @@ function c(e) {
   }), (0, a.openOAuth2Modal)({
     clientId: t,
     guildId: d,
-    channelId: f,
-    disableGuildSelect: _,
+    channelId: _,
+    disableGuildSelect: f,
     scopes: c.scopes,
     permissions: null != c.permissions ? i.vB(c.permissions) : void 0,
     callback: h

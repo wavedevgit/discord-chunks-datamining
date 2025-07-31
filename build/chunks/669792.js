@@ -1,4 +1,4 @@
-/** Chunk was on 73021 **/
+/** Chunk was on 22243 **/
 e.exports = {
   applicationHomeBanner: "applicationHomeBanner__62eb1",
   settingsBanner: "settingsBanner__62eb1",

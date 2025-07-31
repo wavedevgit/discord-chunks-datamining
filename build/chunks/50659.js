@@ -49,24 +49,24 @@ function d(e, t) {
     else break;
   let o = r.substring(i, a),
     c = {};
-  return _({
+  return f({
     result: c,
     text: o,
     startIndex: i,
     syntax: "***",
     type1: "italics",
     type2: "bold"
-  }), _({
+  }), f({
     result: c,
     text: o,
     startIndex: i,
     syntax: "___",
     type1: "italics",
     type2: "underline"
-  }), f(c, o, i, "**", "bold"), f(c, o, i, "*", "italics"), f(c, o, i, "_", "italics"), f(c, o, i, "__", "underline"), f(c, o, i, "`", "inlineCode"), f(c, o, i, "~~", "strikethrough"), f(c, o, i, "||", "spoiler"), c
+  }), _(c, o, i, "**", "bold"), _(c, o, i, "*", "italics"), _(c, o, i, "_", "italics"), _(c, o, i, "__", "underline"), _(c, o, i, "`", "inlineCode"), _(c, o, i, "~~", "strikethrough"), _(c, o, i, "||", "spoiler"), c
 }
 
-function f(e, t, n, r, i) {
+function _(e, t, n, r, i) {
   let a = p(t, r);
   a >= 0 && (e[i] = {
     chars: r,
@@ -74,7 +74,7 @@ function f(e, t, n, r, i) {
   })
 }
 
-function _(e) {
+function f(e) {
   let {
     result: t,
     text: n,
@@ -105,9 +105,9 @@ function h(e, t) {
   a.T.withSingleEntry(e, () => {
     s.bN.withoutNormalizing(e, () => {
       i()(null != e.selection, "Editor has no selection");
-      let [n, r] = s.M8.edges(e.selection), a = u(e, n, r), l = a.before[t], d = a.after[t], f = s.bN.node(e, n.path), _ = s.bN.node(e, r.path);
-      if (null == f || null == _ || !s.LC.isText(f[0]) || !s.LC.isText(_[0])) return;
-      let p = s.C0.equals(f[1], _[1]);
+      let [n, r] = s.M8.edges(e.selection), a = u(e, n, r), l = a.before[t], d = a.after[t], _ = s.bN.node(e, n.path), f = s.bN.node(e, r.path);
+      if (null == _ || null == f || !s.LC.isText(_[0]) || !s.LC.isText(f[0])) return;
+      let p = s.C0.equals(_[1], f[1]);
       if (null != l && null != d) {
         let t = {
             path: n.path,
@@ -143,8 +143,8 @@ function h(e, t) {
         }), o.Q.insertText(e, i, {
           at: n
         });
-        let a = f[0].text.length + i.length,
-          s = _[0].text.length + (p ? 2 * i.length : i.length);
+        let a = _[0].text.length + i.length,
+          s = f[0].text.length + (p ? 2 * i.length : i.length);
         o.Q.select(e, {
           anchor: {
             path: n.path,

@@ -16,10 +16,10 @@ let l = e => {
     store: c,
     gridNavigatorId: u,
     setInspectedStickerPosition: d,
-    onGridItemSelect: f
-  } = e, _ = (0, a.O)(), p = r.useCallback(e => {
-    f(e, _)
-  }, [f, _]), h = r.useCallback((e, t) => {
+    onGridItemSelect: _
+  } = e, f = (0, a.O)(), p = r.useCallback(e => {
+    _(e, f)
+  }, [_, f]), h = r.useCallback((e, t) => {
     d(e, t, o.u.GRID_NAVIGATOR_EVENT)
   }, [d]), {
     gridDispatch: m,

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => _
 });
 var r = n(255367),
   i = n(481060),
@@ -13,12 +13,12 @@ var r = n(255367),
   u = n(49274),
   d = n(904141);
 
-function f(e) {
+function _(e) {
   let {
     user: t,
     rank: n,
-    rankBadgeVisibility: f = "visible",
-    avatarClassName: _,
+    rankBadgeVisibility: _ = "visible",
+    avatarClassName: f,
     avatarSize: p = i.EFr.SIZE_40
   } = e, h = 1 === n ? l : 2 === n ? c : 3 === n ? u : d, m = (0, i.pxk)(p);
   return (0, r.jsxs)("div", {
@@ -36,14 +36,14 @@ function f(e) {
       },
       alt: ""
     }), (0, r.jsx)(a.Z, {
-      className: _,
+      className: f,
       user: t,
       size: p
-    }), "hidden" !== f && (0, r.jsx)("div", {
+    }), "hidden" !== _ && (0, r.jsx)("div", {
       className: s.rankBadge,
       children: (0, r.jsx)(o._, {
         rank: n,
-        hideInnerBorder: "visibleWithoutBorder" === f
+        hideInnerBorder: "visibleWithoutBorder" === _
       })
     })]
   })

@@ -13,8 +13,8 @@ var r = n(255367),
   c = n(493773),
   u = n(600164),
   d = n(626135),
-  f = n(617136),
-  _ = n(113434),
+  _ = n(617136),
+  f = n(113434),
   p = n(569984),
   h = n(981631),
   m = n(388032),
@@ -68,8 +68,8 @@ function S(e) {
     survey: n,
     transitionState: a,
     onClose: o,
-    onSubmit: f
-  } = e, p = (0, _.B4)(t), [b, O] = i.useState(0), [S, N] = (0, l.q_F)(() => ({
+    onSubmit: _
+  } = e, p = (0, f.B4)(t), [b, O] = i.useState(0), [S, N] = (0, l.q_F)(() => ({
     from: {
       width: "0%"
     },
@@ -77,7 +77,7 @@ function S(e) {
       duration: I
     }
   })), R = e => {
-    f(), O(1), null != p && d.default.track(h.rMx.QUEST_SURVEY_SUBMITTED, v(y({}, C(p, n)), {
+    _(), O(1), null != p && d.default.track(h.rMx.QUEST_SURVEY_SUBMITTED, v(y({}, C(p, n)), {
       choice: e.text,
       choice_id: e.key
     }))
@@ -199,7 +199,7 @@ function N(e) {
 function C(e, t) {
   return {
     quest_id: e.id,
-    quest_status: (0, f.uk)(e),
+    quest_status: (0, _.uk)(e),
     survey_id: t.id,
     survey_title: t.title,
     survey_subtitle: t.subtitle,

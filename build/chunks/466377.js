@@ -8,7 +8,7 @@ n.d(t, {
   hz: () => j,
   mz: () => U,
   ol: () => G,
-  xB: () => M
+  xB: () => k
 });
 var r = n(255367),
   i = n(73800),
@@ -19,8 +19,8 @@ var r = n(255367),
   c = n(748780),
   u = n(197723),
   d = n(143450),
-  f = n(186325),
-  _ = n(693789),
+  _ = n(186325),
+  f = n(693789),
   p = n(507274),
   h = n(84735),
   m = n(742746),
@@ -107,7 +107,7 @@ function x(e) {
       transitionState: n,
       children: a,
       size: u = "small",
-      role: _ = "dialog",
+      role: f = "dialog",
       className: m,
       fullscreenOnMobile: g = !0,
       hideShadow: E = !1,
@@ -127,7 +127,7 @@ function x(e) {
   });
   let {
     reducedMotion: L
-  } = i.useContext(f.S), x = (0, d.q)({
+  } = i.useContext(_.S), x = (0, d.q)({
     opacity: +!!w,
     transform: w || L.enabled || "subtle" === S ? "scale(1)" : "scale(0.7)",
     config: {
@@ -136,7 +136,7 @@ function x(e) {
       clamp: !0
     },
     onRest: y
-  }, "animate-always"), M = i.useRef(null), k = null != P["aria-label"], j = null != P["aria-labelledby"], U = i.useId(), G = null != (t = P["aria-labelledby"]) ? t : U, B = i.useMemo(() => ({
+  }, "animate-always"), k = i.useRef(null), M = null != P["aria-label"], j = null != P["aria-labelledby"], U = i.useId(), G = null != (t = P["aria-labelledby"]) ? t : U, B = i.useMemo(() => ({
     headerId: G,
     headerIdIsManaged: j
   }), [G, j]);
@@ -144,20 +144,20 @@ function x(e) {
     value: B,
     children: (0, r.jsx)(p.V, C(A({
       className: T.focusLock,
-      role: _,
+      role: f,
       returnRef: I,
       impressionType: l.ImpressionTypes.MODAL,
-      "aria-labelledby": k ? void 0 : B.headerId
+      "aria-labelledby": M ? void 0 : B.headerId
     }, P), {
       children: (0, r.jsx)(s.animated.div, {
         className: o()(m, T.root, D[u], {
           [T.fullscreenOnMobile]: g,
           [T.rootWithShadow]: !E
         }),
-        ref: M,
+        ref: k,
         style: x,
         children: (0, r.jsx)(h.J, {
-          containerRef: M,
+          containerRef: k,
           children: a
         })
       })
@@ -165,7 +165,7 @@ function x(e) {
   })
 }
 
-function M(e) {
+function k(e) {
   var t, n, a, s, l;
   let {
     headerId: c,
@@ -186,7 +186,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function M(e) {
   switch (null != e ? e : "thin") {
     case "auto":
       return g.yW;
@@ -203,7 +203,7 @@ function j(e) {
     children: n,
     scrollerRef: i,
     scrollbarType: a
-  } = e, s = R(e, ["className", "children", "scrollerRef", "scrollbarType"]), l = k(a);
+  } = e, s = R(e, ["className", "children", "scrollerRef", "scrollbarType"]), l = M(a);
   return (0, r.jsx)(l, C(A({
     className: o()(T.content, t),
     ref: i
@@ -233,11 +233,11 @@ function U(e) {
 }
 
 function G(e) {
-  return (0, r.jsx)(_.zx, {
+  return (0, r.jsx)(f.zx, {
     focusProps: e.focusProps,
     "aria-label": I.intl.string(I.t.cpT0Cg),
-    look: _.zx.Looks.BLANK,
-    size: _.zx.Sizes.NONE,
+    look: f.zx.Looks.BLANK,
+    size: f.zx.Sizes.NONE,
     onClick: e.onClick,
     innerClassName: o()(e.innerClassName, {
       [T.closeWithCircleBackground]: e.withCircleBackground

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => k
+  Z: () => M
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(587158),
   u = n(286379),
   d = n(442837),
-  f = n(481060),
-  _ = n(224706),
+  _ = n(481060),
+  f = n(224706),
   p = n(13245),
   h = n(493773),
   m = n(797614),
@@ -58,15 +58,15 @@ function x(e) {
     onReload: l,
     onDisable: c,
     onCrashDisabled: u
-  } = e, _ = i.useMemo(() => new s.SpringValue(1), []), m = i.useRef(null), [g, y] = i.useState(!1), [O, v] = i.useState(!1), I = (0, d.e7)([E.default], () => E.default.getCurrentUser());
+  } = e, f = i.useMemo(() => new s.SpringValue(1), []), m = i.useRef(null), [g, y] = i.useState(!1), [O, v] = i.useState(!1), I = (0, d.e7)([E.default], () => E.default.getCurrentUser());
   (0, h.ZP)(() => (m.current = setTimeout(T, L), p.Z.track(C.rMx.NOTIFICATION_VIEWED, {
     notif_type: N.n0.OverlayCrashed
   }), () => {
     null != m.current && clearTimeout(m.current)
   }));
   let T = i.useCallback(() => {
-      _.set(0), null != m.current && clearTimeout(m.current), m.current = null, null == o || o(), null == u || u()
-    }, [_, o, u]),
+      f.set(0), null != m.current && clearTimeout(m.current), m.current = null, null == o || o(), null == u || u()
+    }, [f, o, u]),
     w = i.useCallback(e => {
       O || (v(!0), null == o || o(), p.Z.track(C.rMx.NOTIFICATION_CLICKED, {
         notif_type: N.n0.OverlayCrashed,
@@ -79,19 +79,19 @@ function x(e) {
     x = i.useCallback(e => {
       e.stopPropagation(), null == o || o(), null == c || c()
     }, [c, o]),
-    M = (0, d.e7)([S.ZP], () => S.ZP.getFocusedRunningGame()),
-    k = g ? (0, r.jsxs)("div", {
-      children: [(0, r.jsx)(f.Text, {
+    k = (0, d.e7)([S.ZP], () => S.ZP.getFocusedRunningGame()),
+    M = g ? (0, r.jsxs)("div", {
+      children: [(0, r.jsx)(_.Text, {
         variant: "text-md/semibold",
         color: "text-primary",
         children: R.intl.string(R.t.mn4eXF)
       }), (0, r.jsxs)("div", {
         className: P.stackTraceCode,
-        children: [(0, r.jsx)(f.Text, {
+        children: [(0, r.jsx)(_.Text, {
           variant: "text-sm/normal",
           color: "text-secondary",
           children: a.message
-        }), (0, r.jsx)(f.Text, {
+        }), (0, r.jsx)(_.Text, {
           variant: "text-xxs/normal",
           color: "text-secondary",
           children: (0, r.jsx)("code", {
@@ -107,10 +107,10 @@ function x(e) {
     U = null != (t = null == I ? void 0 : I.isStaff()) && t || null != (n = null == I ? void 0 : I.isStaffPersonal()) && n;
   return (0, r.jsx)(A.Y, {
     title: R.intl.string(R.t.U38qZm),
-    body: k,
+    body: M,
     hint: U ? j : void 0,
     confirmText: R.intl.string(R.t.a3HlgI),
-    cancelText: null != M ? R.intl.string(R.t.qIYnPj) : void 0,
+    cancelText: null != k ? R.intl.string(R.t.qIYnPj) : void 0,
     icon: (0, r.jsx)(b.Z, {
       width: 40,
       height: 40,
@@ -118,7 +118,7 @@ function x(e) {
     }),
     onNotificationClick: D,
     onConfirmClick: w,
-    onCancelClick: null != M ? x : void 0,
+    onCancelClick: null != k ? x : void 0,
     onDismissClick: o,
     expand: !0,
     locked: !0,
@@ -126,12 +126,12 @@ function x(e) {
     index: 0,
     status: C._1z.ACTIVE,
     containerRef: null,
-    contentOpacity: _,
+    contentOpacity: f,
     className: P.errorNotificationContainer,
     wrapperClassName: P.errorNotificationWrapper
   })
 }
-class M extends i.PureComponent {
+class k extends i.PureComponent {
   componentDidCatch(e, t) {
     let n = (0, g.s1)().location;
     this.setState({
@@ -176,7 +176,7 @@ class M extends i.PureComponent {
         },
         onDisable: () => {
           let e = S.ZP.getFocusedRunningGame();
-          null != e && _.Z.toggleOverlay(e, !1, !1)
+          null != e && f.Z.toggleOverlay(e, !1, !1)
         },
         onCrashDisabled: () => {
           var e;
@@ -204,4 +204,4 @@ class M extends i.PureComponent {
     }), w(this, "pid", null)
   }
 }
-let k = M
+let M = k

@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(40330),
   u = n(571989),
   d = n(828061),
-  f = n(259580),
-  _ = n(424218),
+  _ = n(259580),
+  f = n(424218),
   p = n(388032),
   h = n(8410),
   m = n(283574);
@@ -85,8 +85,8 @@ function v(e, t) {
           c = O(t).decode(await s.arrayBuffer()),
           u = null != (i = s.headers.get("content-range")) ? i : "0",
           d = null != (a = s.headers.get("content-length")) ? a : "1",
-          f = parseInt(u.split("/")[1]) - parseInt(d);
-        o(0 === f ? c : c.slice(0, -1)), l(f), r(!1)
+          _ = parseInt(u.split("/")[1]) - parseInt(d);
+        o(0 === _ ? c : c.slice(0, -1)), l(_), r(!1)
       } catch (e) {
         l(0), r(!0)
       }
@@ -143,8 +143,8 @@ function T(e) {
       onClick: () => {
         n(!t)
       },
-      children: [(0, r.jsx)(f.Z, {
-        direction: t ? f.Z.Directions.UP : f.Z.Directions.DOWN
+      children: [(0, r.jsx)(_.Z, {
+        direction: t ? _.Z.Directions.UP : _.Z.Directions.DOWN
       }), t ? p.intl.string(p.t.iTcumZ) : p.intl.string(p.t.dcl9MT)]
     }))
   })
@@ -155,7 +155,7 @@ function S(e) {
     url: t,
     fileName: n,
     fileSize: i
-  } = e, a = "".concat(n, " (").concat((0, _.IC)(i), ")");
+  } = e, a = "".concat(n, " (").concat((0, f.IC)(i), ")");
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.ua7, {
       text: a,
@@ -167,7 +167,7 @@ function S(e) {
       text: a,
       children: e => (0, r.jsx)("span", y(E({}, e), {
         className: o()(h.downloadSection, h.formattedSize),
-        children: (0, _.IC)(i)
+        children: (0, f.IC)(i)
       }))
     }), (0, r.jsx)(l.ua7, {
       text: "".concat(p.intl.string(p.t["1WjMbG"]), " ").concat(a),
@@ -256,7 +256,7 @@ function C(e) {
     fileContents: s,
     expanded: c,
     setExpanded: d,
-    language: f,
+    language: _,
     setLanguage: m,
     bytesLeft: g,
     className: E
@@ -264,7 +264,7 @@ function C(e) {
   v && c && y > O ? C = "\n..." : v || (C = "..."), "" !== C && (v ? C += " " + p.intl.formatToPlainString(p.t.DQnFp6, {
     lines: y - O
   }) : C += " " + p.intl.formatToPlainString(p.t["1+gGcH"], {
-    formattedBytes: (0, _.IC)(g)
+    formattedBytes: (0, f.IC)(g)
   }));
   let R = (null == b ? void 0 : b.slice(0, O).join("\n")) + C,
     P = (0, u.yx)(R),
@@ -279,7 +279,7 @@ function C(e) {
         className: h.spinner
       }) : (0, r.jsx)(I, {
         text: P,
-        language: f
+        language: _
       })
     }), (0, r.jsxs)(l.Text, {
       color: "header-secondary",
@@ -295,7 +295,7 @@ function C(e) {
           url: n,
           fileName: i,
           fileSize: a,
-          language: f,
+          language: _,
           fileContents: s,
           bytesLeft: g
         })]
@@ -306,7 +306,7 @@ function C(e) {
         fileName: i,
         fileSize: a
       }), (0, r.jsx)(A, {
-        language: f,
+        language: _,
         setLanguage: m
       })]
     })]
@@ -322,9 +322,9 @@ function R(e) {
     language: s,
     fileContents: c,
     bytesLeft: u
-  } = e, [d, f] = i.useState(s), m = null != c ? c : "";
+  } = e, [d, _] = i.useState(s), m = null != c ? c : "";
   return 0 !== u && (m += "... ".concat(p.intl.formatToPlainString(p.t["1+gGcH"], {
-    formattedBytes: (0, _.IC)(u)
+    formattedBytes: (0, f.IC)(u)
   }))), (0, r.jsx)(l.Y0X, {
     transitionState: o,
     "aria-label": p.intl.string(p.t.qxQjc3),
@@ -353,7 +353,7 @@ function R(e) {
           fileSize: a
         }), (0, r.jsx)(A, {
           language: d,
-          setLanguage: f
+          setLanguage: _
         })]
       })]
     })
@@ -368,7 +368,7 @@ let P = i.memo(function(e) {
     className: l,
     onClick: u,
     onContextMenu: d
-  } = e, [f, _] = i.useState(!1), [p, m] = i.useState(n.split(".").slice(-1)[0]), {
+  } = e, [_, f] = i.useState(!1), [p, m] = i.useState(n.split(".").slice(-1)[0]), {
     fileContents: g,
     bytesLeft: E,
     hadError: b
@@ -386,8 +386,8 @@ let P = i.memo(function(e) {
     fileSize: a,
     fileContents: g,
     bytesLeft: E,
-    expanded: f,
-    setExpanded: _,
+    expanded: _,
+    setExpanded: f,
     language: p,
     setLanguage: m,
     className: o()(h.newMosaicStyle, l)

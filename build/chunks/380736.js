@@ -13,8 +13,8 @@ var r = n(255367),
   c = n(755721),
   u = n(481060),
   d = n(13245),
-  f = n(145597),
-  _ = n(691891),
+  _ = n(145597),
+  f = n(691891),
   p = n(333031),
   h = n(610394),
   m = n(693091),
@@ -103,7 +103,7 @@ let N = i.memo(function(e) {
     containerRef: w,
     className: D,
     wrapperClassName: L
-  } = e, [x, M] = i.useState(!1), k = n || x || P === g._1z.FOCUSED, j = (0, l.e7)([h.ZP], () => h.ZP.isInputLocked((0, f.getPID)()));
+  } = e, [x, k] = i.useState(!1), M = n || x || P === g._1z.FOCUSED, j = (0, l.e7)([h.ZP], () => h.ZP.isInputLocked((0, _.getPID)()));
   i.useEffect(() => {
     null == a || a()
   }, [a]);
@@ -117,14 +117,14 @@ let N = i.memo(function(e) {
       e.stopPropagation(), null == m || m(e)
     }, [m]),
     V = i.useCallback(() => {
-      M(!0)
+      k(!0)
     }, []),
     F = i.useCallback(() => {
-      M(!1)
+      k(!1)
     }, []);
 
   function Z() {
-    return (0, r.jsx)(_.Z, {
+    return (0, r.jsx)(f.Z, {
       className: b.dismissButton,
       onDismiss: U,
       "aria-label": E.intl.string(E.t.LnEgqa)
@@ -132,7 +132,7 @@ let N = i.memo(function(e) {
   }
 
   function H() {
-    let e = "function" == typeof O ? O(k, j) : O;
+    let e = "function" == typeof O ? O(M, j) : O;
     return null != O ? (0, r.jsx)(u.Text, {
       className: b.hint,
       color: "text-muted",
@@ -174,7 +174,7 @@ let N = i.memo(function(e) {
   }
 
   function K() {
-    let e = null == C ? void 0 : C(k, j);
+    let e = null == C ? void 0 : C(M, j);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)(s.animated.div, {
         className: b.iconAndDetails,
@@ -191,7 +191,7 @@ let N = i.memo(function(e) {
           }), null != S ? (0, r.jsx)(u.Text, {
             color: "interactive-normal",
             variant: "text-sm/normal",
-            lineClamp: null != t ? t * (k ? 2 : 1) : void 0,
+            lineClamp: null != t ? t * (M ? 2 : 1) : void 0,
             children: S
           }) : null, H(), Y()]
         })]
@@ -273,8 +273,8 @@ function P(e) {
     id: c,
     props: {
       onNotificationShow: u,
-      onDismissClick: f,
-      onNotificationClick: _,
+      onDismissClick: _,
+      onNotificationClick: f,
       onConfirmClick: p,
       onCancelClick: h,
       renderFooter: g,
@@ -283,10 +283,10 @@ function P(e) {
   } = t, b = i.useCallback(() => {
     u(c)
   }, [u, c]), y = i.useCallback(e => {
-    d.Z.updateNotificationStatus(c), null == f || f(e, c)
-  }, [c, f]), v = i.useCallback(e => {
-    null == _ || _(e, c)
-  }, [_, c]), S = i.useCallback(e => {
+    d.Z.updateNotificationStatus(c), null == _ || _(e, c)
+  }, [c, _]), v = i.useCallback(e => {
+    null == f || f(e, c)
+  }, [f, c]), S = i.useCallback(e => {
     null == p || p(e, c)
   }, [p, c]), A = i.useCallback(e => {
     null == h || h(e, c)
@@ -296,8 +296,8 @@ function P(e) {
       onDismissClick: D,
       renderFooter: L,
       onNotificationClick: x,
-      onConfirmClick: M,
-      onCancelClick: k,
+      onConfirmClick: k,
+      onCancelClick: M,
       disableClickableRegions: j = !1
     },
     status: U
@@ -319,7 +319,7 @@ function P(e) {
         notificationId: t.id,
         onNotificationShow: 0 === n ? b : void 0,
         onDismissClick: y,
-        onNotificationClick: null != _ ? v : void 0,
+        onNotificationClick: null != f ? v : void 0,
         onConfirmClick: null != p ? S : void 0,
         onCancelClick: null != h ? A : void 0,
         renderFooter: P,

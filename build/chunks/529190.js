@@ -1,4 +1,4 @@
-/** Chunk was on 83033 **/
+/** Chunk was on 36846 **/
 e.exports = {
   giftSelectItem: "giftSelectItem_d64c23",
   modalFooter: "modalFooter_d64c23",

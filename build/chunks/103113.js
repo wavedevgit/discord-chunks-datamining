@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(580552),
   u = n(313201),
   d = n(680295),
-  f = n(5192),
-  _ = n(785717),
+  _ = n(5192),
+  f = n(785717),
   p = n(221292),
   h = n(687158),
   m = n(892001),
@@ -61,12 +61,12 @@ function P(e) {
     openedAt: D,
     setPopoutRef: L,
     closePopout: x,
-    disableUserProfileLink: M = __OVERLAY__,
-    newAnalyticsLocations: k = [],
+    disableUserProfileLink: k = __OVERLAY__,
+    newAnalyticsLocations: M = [],
     disableAutoFocus: j = !1
   } = e, U = (0, h.ZP)(t.id, n), {
     analyticsLocations: G
-  } = (0, l.ZP)([...k, s.Z.USER_PROFILE_POPOUT]), B = (0, _.ZB)({
+  } = (0, l.ZP)([...M, s.Z.USER_PROFILE_POPOUT]), B = (0, f.ZB)({
     layout: "POPOUT",
     userId: t.id,
     guildId: n,
@@ -83,7 +83,7 @@ function P(e) {
         hideRestrictedProfile: !0
       }, B))
     },
-    H = !M && (0, c.Z)(t.id),
+    H = !k && (0, c.Z)(t.id),
     Y = () => H ? (0, r.jsx)(a.sNh, {
       id: "view-profile",
       label: A.intl.string(A.t["+Xp3ho"]),
@@ -96,10 +96,10 @@ function P(e) {
     }) : null,
     W = j ? "div" : a.VqE,
     K = (0, u.Dt)(),
-    z = f.ZP.useName(n, C, t);
+    z = _.ZP.useName(n, C, t);
   return (0, r.jsx)(l.Gt, {
     value: G,
-    children: (0, r.jsx)(_.Mt, {
+    children: (0, r.jsx)(f.Mt, {
       value: B,
       openedAt: D,
       fetchStartedAt: null == U ? void 0 : U.fetchStartedAt,
@@ -144,7 +144,7 @@ function P(e) {
             className: N.body,
             children: [(0, r.jsx)(v.Z, {
               user: t,
-              nickname: f.ZP.getName(n, C, t),
+              nickname: _.ZP.getName(n, C, t),
               onOpenProfile: H ? Z : void 0,
               tags: (0, r.jsx)(E.Z, {
                 displayProfile: U,

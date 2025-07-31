@@ -1,4 +1,4 @@
-/** Chunk was on 73021 **/
+/** Chunk was on 22243 **/
 e.exports = {
   floatingNitroUpsell: "floatingNitroUpsell__39749",
   floatingNitroButton: "floatingNitroButton__39749",

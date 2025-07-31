@@ -1,4 +1,4 @@
-/** Chunk was on 73021 **/
+/** Chunk was on 22243 **/
 n.d(t, {
   Z: () => D
 });
@@ -21,8 +21,8 @@ var r = n(512722),
   x = n(643879),
   _ = n(621853),
   j = n(271383),
-  E = n(594174),
-  O = n(74538),
+  O = n(594174),
+  E = n(74538),
   C = n(51144),
   v = n(18438),
   S = n(778825),
@@ -69,8 +69,8 @@ function D(e) {
   let {
     guild: Z,
     nameplateEnabled: w
-  } = e, k = (0, a.e7)([E.default], () => {
-    let e = E.default.getCurrentUser();
+  } = e, k = (0, a.e7)([O.default], () => {
+    let e = O.default.getCurrentUser();
     return s()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
   }), {
     pendingAvatar: L,
@@ -100,15 +100,15 @@ function D(e) {
       errors: S.Z.getErrors(),
       guild: S.Z.getGuild()
     }
-  }), W = (0, x.SD)({
+  }), z = (0, x.SD)({
     userId: k.id,
     image: L
-  }), z = null != Z ? Z : H;
-  s()(null != z, "guild should not be null");
-  let Y = (0, o.gS)(z.id),
-    K = (0, a.e7)([j.ZP], () => null == z.id ? null : j.ZP.getMember(z.id, k.id)),
-    q = (0, a.e7)([_.Z], () => _.Z.getGuildMemberProfile(k.id, z.id)),
-    X = O.ZP.canUsePremiumProfileCustomization(k),
+  }), W = null != Z ? Z : H;
+  s()(null != W, "guild should not be null");
+  let Y = (0, o.gS)(W.id),
+    K = (0, a.e7)([j.ZP], () => null == W.id ? null : j.ZP.getMember(W.id, k.id)),
+    q = (0, a.e7)([_.Z], () => _.Z.getGuildMemberProfile(k.id, W.id)),
+    X = E.ZP.canUsePremiumProfileCustomization(k),
     J = (0, c.gd)(L, null == K ? void 0 : K.avatar),
     Q = (0, c.f$)(M, null == q ? void 0 : q.banner),
     $ = (0, T.p)(G, null == q ? void 0 : q.themeColors),
@@ -124,7 +124,7 @@ function D(e) {
       username: C.ZP.getName(k),
       pendingNick: B,
       currentNick: null == K ? void 0 : K.nick,
-      guild: z
+      guild: W
     }, "nick"), (0, i.jsx)(b.Z, {
       sectionTitle: y.intl.string(y.t["+T3RIy"]),
       errors: null == F ? void 0 : F.pronouns,
@@ -151,7 +151,7 @@ function D(e) {
         showRemoveAvatarButton: J,
         onAvatarChange: e => en(e, null == K ? void 0 : K.avatar, v.I5),
         errors: null == F ? void 0 : F.avatar,
-        guildId: z.id,
+        guildId: W.id,
         disabled: !X
       }, "avatar"), (0, i.jsx)(u.Z, {
         sectionTitle: (0, i.jsxs)(i.Fragment, {
@@ -166,10 +166,10 @@ function D(e) {
           })]
         }),
         user: k,
-        guild: z
+        guild: W
       }, "decoration"), w && (0, i.jsx)(p.Z, {
         user: k,
-        guild: z
+        guild: W
       }, "nameplate"), (0, i.jsx)(h.Z, {
         sectionTitle: (0, i.jsxs)(i.Fragment, {
           children: [y.intl.string(y.t.wR5wOj), (0, i.jsx)(l.ua7, {
@@ -183,21 +183,21 @@ function D(e) {
           })]
         }),
         user: k,
-        guild: z
+        guild: W
       }, "effect"), (0, i.jsx)(g.Z, {
         showRemoveBannerButton: Q,
         errors: null == F ? void 0 : F.banner,
         onBannerChange: e => en(e, null == q ? void 0 : q.banner, v.g_),
-        guildId: null == z ? void 0 : z.id,
+        guildId: null == W ? void 0 : W.id,
         disabled: !X
       }, "banner"), (0, i.jsx)(f.Z, {
         user: k,
-        pendingAvatarSrc: W,
+        pendingAvatarSrc: z,
         pendingColors: G,
         onThemeColorsChange: e => {
           (0, T.ce)(e, null == q ? void 0 : q.themeColors)
         },
-        guildId: null == z ? void 0 : z.id,
+        guildId: null == W ? void 0 : W.id,
         showResetThemeButton: $
       }), (0, i.jsx)(d.Z, {
         placeholder: y.intl.string(y.t["/7NKgo"]),

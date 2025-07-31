@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(186325),
   u = n(84735),
   d = n(180035),
-  f = n(481060),
-  _ = n(333903);
+  _ = n(481060),
+  f = n(333903);
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -110,7 +110,7 @@ let O = function(e) {
   } = i.useContext(c.S), I = i.useRef(null), [T, S] = i.useState(!1), A = (0, d.d)(l.Z.colors.INTERACTIVE_MUTED).spring(), N = (0, d.d)(l.Z.colors.BG_BRAND).spring(), {
     state: C,
     opacity: R
-  } = (0, f.q_F)({
+  } = (0, _.q_F)({
     config: E,
     opacity: p ? .5 : 1,
     state: T ? a ? .7 : .3 : +!!a
@@ -132,9 +132,9 @@ let O = function(e) {
     within: !0,
     offset: -2,
     children: (0, r.jsxs)(s.animated.div, {
-      className: o()(_.container, m, {
-        [_.checked]: a,
-        [_.disabled]: p
+      className: o()(f.container, m, {
+        [f.checked]: a,
+        [f.disabled]: p
       }),
       onMouseDown: () => !p && S(!0),
       onMouseUp: () => S(!1),
@@ -146,7 +146,7 @@ let O = function(e) {
         })
       },
       children: [(0, r.jsxs)(s.animated.svg, {
-        className: _.slider,
+        className: f.slider,
         viewBox: "0 0 28 20",
         preserveAspectRatio: "xMinYMid meet",
         style: {
@@ -182,7 +182,7 @@ let O = function(e) {
         ref: e => {
           I.current = e, null != O && (O.current = e)
         },
-        className: _.input,
+        className: f.input,
         tabIndex: p ? -1 : 0,
         onKeyDown: w,
         onKeyUp: D,

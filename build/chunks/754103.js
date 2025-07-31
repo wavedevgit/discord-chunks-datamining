@@ -33,7 +33,7 @@ function d(e) {
   return e
 }
 
-function f(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -44,8 +44,8 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
+function f(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -120,14 +120,14 @@ class m extends i.PureComponent {
         } = t,
         u = p(t, ["values", "onFieldChange", "onFieldFocus", "onFieldBlur", "layout"]),
         {
-          getClassNameForLayout: f,
+          getClassNameForLayout: _,
           renderInput: h,
           title: m,
           name: g,
           id: E,
           placeholder: b
         } = e,
-        y = _(d({}, p(e, ["getClassNameForLayout", "renderInput", "title", "name", "id", "placeholder"])), {
+        y = f(d({}, p(e, ["getClassNameForLayout", "renderInput", "title", "name", "id", "placeholder"])), {
           placeholder: null == b ? void 0 : b(),
           layout: c,
           error: this.getError(g),
@@ -139,7 +139,7 @@ class m extends i.PureComponent {
           onBlur: l
         });
       return (0, r.jsx)(s.hjN, {
-        className: o()(null == f ? void 0 : f(c)),
+        className: o()(null == _ ? void 0 : _(c)),
         title: m(),
         titleId: E,
         children: h(y, u)

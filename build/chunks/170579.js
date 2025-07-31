@@ -13,8 +13,8 @@ var i = n(120356),
   c = n(600164),
   u = n(483444),
   d = n(599250),
-  f = n(926153),
-  _ = n(27693),
+  _ = n(926153),
+  f = n(27693),
   p = n(74538),
   h = n(937615),
   m = n(104494),
@@ -77,7 +77,7 @@ let I = e => {
         showDiscountBadge: P = !1
       } = e,
       w = A === b.p9.TIER_2;
-    n = A === b.p9.TIER_0 ? d.Z : A === b.p9.TIER_1 ? f.Z : u.Z;
+    n = A === b.p9.TIER_0 ? d.Z : A === b.p9.TIER_1 ? _.Z : u.Z;
     let D = (0, o.e7)([l.Z], () => l.Z.useReducedMotion),
       L = (0, m.Ng)(),
       x = null == L || null == (t = L.discount) ? void 0 : t.amount;
@@ -90,7 +90,7 @@ let I = e => {
       children: [D || N !== b.nL.WINTER ? null : (0, r.jsx)(E.Z, {
         className: O.snow,
         wind: 5
-      }), (R || P) && (0, r.jsx)(_.Z, {
+      }), (R || P) && (0, r.jsx)(f.Z, {
         className: O.trialBadgeSparkles
       }), y(), (0, r.jsxs)(c.Z, {
         align: c.Z.Align.START,

@@ -1,4 +1,4 @@
-/** Chunk was on 73021 **/
+/** Chunk was on 22243 **/
 n.d(t, {
   Z: () => C
 });
@@ -20,13 +20,13 @@ var i = n(255367),
   x = n(726985),
   _ = n(736530),
   j = n(981631),
-  E = n(388032);
+  O = n(388032);
 
-function O(e) {
+function E(e) {
   let {
     ingress: t,
     guildId: n
-  } = e, b = (0, m.c_)(), O = d.h2.useSetting().includes(n), C = (0, c.q)(), v = (0, u.r)(), S = r.useCallback(e => {
+  } = e, b = (0, m.c_)(), E = d.h2.useSetting().includes(n), C = (0, c.q)(), v = (0, u.r)(), S = r.useCallback(e => {
     let i = (0, o.YK)();
     e ? i.delete(n) : i.add(n), d.h2.updateSetting(Array.from(i)), l.default.track(j.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
       action: f.Y.DIRECT_MESSAGES_TOGGLE,
@@ -43,10 +43,10 @@ function O(e) {
   }
   let N = e => {
       (0, h.V)({
-        header: E.intl.string(E.t["uUr+GR"]),
-        body: E.intl.string(E.t.hjGJBg),
-        confirmText: E.intl.string(E.t.gm1Ven),
-        cancelText: E.intl.string(E.t.p89ACg),
+        header: O.intl.string(O.t["uUr+GR"]),
+        body: O.intl.string(O.t.hjGJBg),
+        confirmText: O.intl.string(O.t.gm1Ven),
+        cancelText: O.intl.string(O.t.p89ACg),
         confirmButtonColor: s.zx.Colors.BRAND,
         onConfirm: () => {
           d.gR.updateSetting(e), T(e, !1)
@@ -56,20 +56,20 @@ function O(e) {
         }
       })
     },
-    I = v ? E.intl.string(E.t.PMsfcH) : E.intl.string(E.t.RAQUSE);
+    I = v ? O.intl.string(O.t.PMsfcH) : O.intl.string(O.t.RAQUSE);
   return (0, i.jsx)(p.U, {
     setting: x.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_DMS_V2,
     children: n === _.T ? (0, i.jsx)(g.Z, {
       title: I,
-      note: v ? E.intl.string(E.t.XXGmuL) : E.intl.string(E.t.wbYDfX),
+      note: v ? O.intl.string(O.t.XXGmuL) : O.intl.string(O.t.wbYDfX),
       value: !C,
       onChange: e => {
         N(!e)
       }
     }) : (0, i.jsx)(g.Z, {
       title: I,
-      note: b ? E.intl.string(E.t.V0ka0d) : v ? E.intl.string(E.t.F9WY3d) : E.intl.string(E.t.G7c3Xl),
-      value: !O,
+      note: b ? O.intl.string(O.t.V0ka0d) : v ? O.intl.string(O.t.F9WY3d) : O.intl.string(O.t.G7c3Xl),
+      value: !E,
       onChange: S
     })
   })
@@ -80,7 +80,7 @@ function C(e) {
     ingress: t = b.f4.USER_SETTINGS_PRIVACY_SAFETY,
     guildId: n
   } = e, r = (0, m.is)();
-  return (0, i.jsx)(O, {
+  return (0, i.jsx)(E, {
     ingress: t,
     guildId: null != n ? n : r
   })

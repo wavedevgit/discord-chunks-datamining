@@ -14,9 +14,9 @@ var i = n(120356),
   c = n(374415),
   u = n(185033),
   d = n(388032),
-  f = n(946598);
+  _ = n(946598);
 
-function _(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -32,7 +32,7 @@ function p(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
@@ -80,13 +80,13 @@ function b(e) {
     actionsFullWidth: i = !1
   } = e;
   return null == t && n.length < 1 ? null : (0, r.jsxs)("footer", {
-    className: a()(f.actionBar, f.section),
+    className: a()(_.actionBar, _.section),
     children: [null != t && (0, r.jsx)("div", {
-      className: f.actionBarLeading,
+      className: _.actionBarLeading,
       children: t
     }), (0, r.jsx)("div", {
-      className: a()(f.actionBarTrailing, {
-        [f.actionBarTrailingFullWidth]: i
+      className: a()(_.actionBarTrailing, {
+        [_.actionBarTrailingFullWidth]: i
       }),
       children: (0, r.jsx)(c.h, {
         fullWidth: i,

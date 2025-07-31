@@ -1,5 +1,4 @@
-/** Chunk was on web.js **/
-"use strict";
+/** Chunk was on 72939 **/
 e.exports = {
   animationContainer: "animationContainer__884d1",
   container: "container__884d1",

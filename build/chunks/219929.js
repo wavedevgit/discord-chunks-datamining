@@ -3,7 +3,7 @@
 n.d(t, {
   Qy: () => u,
   Uy: () => d,
-  ZP: () => _
+  ZP: () => f
 }), n(704826), n(35282);
 var r, i = n(255367),
   a = n(73800),
@@ -28,7 +28,7 @@ let d = {
   LARGE: l.cardIconLarge,
   XLARGE: l.cardIconXLarge
 };
-class f extends(r = a.PureComponent) {
+class _ extends(r = a.PureComponent) {
   static getType(e) {
     return null == e ? "unknown" : u[e.replace(/[^a-z0-9_]/gi, "").toUpperCase()] || "unknown"
   }
@@ -47,8 +47,8 @@ class f extends(r = a.PureComponent) {
     })
   }
 }
-c(f, "Types", u), c(f, "Sizes", d), c(f, "defaultProps", {
+c(_, "Types", u), c(_, "Sizes", d), c(_, "defaultProps", {
   size: d.SMALL,
   flipped: !1
 });
-let _ = f
+let f = _

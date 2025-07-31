@@ -2,7 +2,7 @@
 "use strict";
 n.r(t), n.d(t, {
   assign: () => p,
-  batchedUpdates: () => f,
+  batchedUpdates: () => _,
   colorNames: () => c,
   createStringInterpolator: () => r,
   frameLoop: () => s,
@@ -10,7 +10,7 @@ n.r(t), n.d(t, {
   requestAnimationFrame: () => d,
   skipAnimation: () => u,
   to: () => i,
-  willAdvance: () => _
+  willAdvance: () => f
 });
 var r, i, a = n(19784),
   o = n(217348),
@@ -23,10 +23,10 @@ var r, i, a = n(19784),
   d = "undefined" != typeof window ? window.requestAnimationFrame : function() {
     return -1
   },
-  f = function(e) {
+  _ = function(e) {
     return e()
   },
-  _ = o.ZT,
+  f = o.ZT,
   p = function(e) {
     var t;
     return i = (t = Object.assign({
@@ -37,9 +37,9 @@ var r, i, a = n(19784),
       skipAnimation: u,
       createStringInterpolator: r,
       requestAnimationFrame: d,
-      batchedUpdates: f,
-      willAdvance: _
-    }, h(e))).to, l = t.now, s = t.frameLoop, c = t.colorNames, u = t.skipAnimation, r = t.createStringInterpolator, d = t.requestAnimationFrame, f = t.batchedUpdates, _ = t.willAdvance, t
+      batchedUpdates: _,
+      willAdvance: f
+    }, h(e))).to, l = t.now, s = t.frameLoop, c = t.colorNames, u = t.skipAnimation, r = t.createStringInterpolator, d = t.requestAnimationFrame, _ = t.batchedUpdates, f = t.willAdvance, t
   };
 
 function h(e) {

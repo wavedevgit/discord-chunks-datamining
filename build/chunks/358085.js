@@ -7,8 +7,8 @@ n.r(t), n.d(t, {
   getPlatform: () => g,
   getPlatformName: () => E,
   isAndroid: () => h,
-  isAndroidChrome: () => f,
-  isAndroidWeb: () => _,
+  isAndroidChrome: () => _,
+  isAndroidWeb: () => f,
   isDesktop: () => u,
   isIOS: () => m,
   isLinux: () => c,
@@ -45,11 +45,11 @@ function d() {
   return "WEB" === g()
 }
 
-function f() {
+function _() {
   return null != navigator.userAgent && null != navigator.userAgent.toLowerCase().match("(android ).+chrome/[.0-9]* mobile")
 }
 
-function _() {
+function f() {
   var e;
   return (null == (e = navigator.userAgent) ? void 0 : e.match(/android/i)) != null
 }

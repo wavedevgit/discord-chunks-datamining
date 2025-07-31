@@ -18,19 +18,19 @@ function l(e) {
     state: l,
     isInline: c,
     onClick: u
-  } = e, d = n + (c ? ":" : ""), f = null;
-  (null == l ? void 0 : l.isActive) && !c ? f = s.active : (null == l || null == (t = l.lastValidationResult) ? void 0 : t.success) === !1 ? f = s.error : (null == l ? void 0 : l.hasValue) && !c && (f = s.set);
-  let _ = (0, r.jsx)(o.Text, {
+  } = e, d = n + (c ? ":" : ""), _ = null;
+  (null == l ? void 0 : l.isActive) && !c ? _ = s.active : (null == l || null == (t = l.lastValidationResult) ? void 0 : t.success) === !1 ? _ = s.error : (null == l ? void 0 : l.hasValue) && !c && (_ = s.set);
+  let f = (0, r.jsx)(o.Text, {
     variant: c ? "text-md/normal" : "text-sm/normal",
     color: "text-primary",
     className: a()(s.option, {
       [s.inline]: c
-    }, f, i),
+    }, _, i),
     children: d
   });
-  return null == u ? _ : (0, r.jsx)(o.P3F, {
+  return null == u ? f : (0, r.jsx)(o.P3F, {
     className: s.clickable,
     onClick: () => u(n),
-    children: _
+    children: f
   })
 }

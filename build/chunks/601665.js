@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(906732),
   u = n(313201),
   d = n(430824),
-  f = n(5192),
-  _ = n(785717),
+  _ = n(5192),
+  f = n(785717),
   p = n(221292),
   h = n(687158),
   m = n(892001),
@@ -61,13 +61,13 @@ function P(e) {
     roleId: D,
     openedAt: L,
     closePopout: x,
-    setPopoutRef: M,
-    disableUserProfileLink: k = __OVERLAY__,
+    setPopoutRef: k,
+    disableUserProfileLink: M = __OVERLAY__,
     newAnalyticsLocations: j = [],
     disableAutoFocus: U = !1
   } = e, {
     analyticsLocations: G
-  } = (0, c.ZP)([...j, l.Z.USER_PROFILE_POPOUT]), B = (0, _.ZB)({
+  } = (0, c.ZP)([...j, l.Z.USER_PROFILE_POPOUT]), B = (0, f.ZB)({
     layout: "POPOUT",
     userId: t.id,
     guildId: C,
@@ -76,15 +76,15 @@ function P(e) {
     roleId: D
   }), V = (0, h.ZP)(t.id, C), F = (0, a.e7)([d.Z], () => null != C ? d.Z.getGuild(C) : null), Z = i.useRef(null), H = (0, s.Z)(Z);
   i.useEffect(() => {
-    null == M || M(null == Z ? void 0 : Z.current)
-  }, [Z, M]);
+    null == k || k(null == Z ? void 0 : Z.current)
+  }, [Z, k]);
   let Y = e => {
       null == x || x(), (0, m.openUserProfileModal)(R({
         sourceAnalyticsLocations: G,
         hideRestrictedProfile: !0
       }, B, e))
     },
-    W = () => k ? null : (0, r.jsx)(o.sNh, {
+    W = () => M ? null : (0, r.jsx)(o.sNh, {
       id: "view-profile",
       label: A.intl.string(A.t["+Xp3ho"]),
       action: () => {
@@ -96,10 +96,10 @@ function P(e) {
     }),
     K = U ? "div" : o.VqE,
     z = (0, u.Dt)(),
-    q = f.ZP.useName(C, P, t);
+    q = _.ZP.useName(C, P, t);
   return (0, r.jsx)(c.Gt, {
     value: G,
-    children: (0, r.jsx)(_.Mt, {
+    children: (0, r.jsx)(f.Mt, {
       value: B,
       openedAt: L,
       fetchStartedAt: null == V ? void 0 : V.fetchStartedAt,
@@ -139,7 +139,7 @@ function P(e) {
               guildId: C,
               channelId: P,
               themeType: S.lY.POPOUT,
-              onOpenProfile: k ? void 0 : Y
+              onOpenProfile: M ? void 0 : Y
             }), (0, r.jsx)(v.Z, {
               location: "BotUserProfilePopout",
               user: t,
@@ -153,7 +153,7 @@ function P(e) {
             displayProfile: V,
             guild: F,
             isHovering: H,
-            onOpenProfile: k ? void 0 : Y,
+            onOpenProfile: M ? void 0 : Y,
             channelId: P,
             onClose: x
           }), (0, r.jsx)(T.Z, {

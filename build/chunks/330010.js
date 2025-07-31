@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  R: () => _,
-  i: () => f
+  R: () => f,
+  i: () => _
 });
 var r = n(544891),
   i = n(570140),
@@ -48,7 +48,7 @@ function d(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-async function f(e) {
+async function _(e) {
   let t = (await r.tn.get({
     url: s.ANM.GUILD_INTEGRATIONS(e),
     query: {
@@ -68,7 +68,7 @@ async function f(e) {
   }), t
 }
 
-function _(e) {
+function f(e) {
   return r.tn.get({
     url: s.ANM.GUILD_WIDGET(e),
     oldFormErrors: !0,
