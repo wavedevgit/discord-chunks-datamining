@@ -20,9 +20,9 @@ var i = n(255367),
   x = n(474936),
   _ = n(981631),
   j = n(921944),
-  E = n(46140),
-  C = n(388032),
-  O = n(669018);
+  O = n(46140),
+  E = n(388032),
+  C = n(669018);
 
 function v(e) {
   let {
@@ -31,7 +31,7 @@ function v(e) {
   } = e, r = (0, f.Z)(), l = (0, h.Z)({
     location: "TenureLevelUpCoachmark"
   }), p = (0, d.Z)(e => e.isOpen), g = (0, s.e7)([m.Z], () => m.Z.getLayers().includes(_.S9g.USER_SETTINGS)), b = (0, u.Ws)({
-    location: E.dr.CONFLICT_CHECKS
+    location: O.dr.CONFLICT_CHECKS
   });
   return !l || null == r || p || g || !b ? null : (0, i.jsx)(c.Nq, {
     contentType: a.z.NITRO_TENURE_BADGE_LEVEL_UP,
@@ -80,10 +80,10 @@ function S(e) {
     s(j.L.USER_DISMISS), a()
   }, [s, a]), f = x.vK[n];
   return (0, i.jsxs)("div", {
-    className: O.contents,
+    className: C.contents,
     children: [(0, i.jsx)(o.M0o, {
-      className: O.closeButton,
-      tooltip: C.intl.string(C.t.cpT0Cg),
+      className: C.closeButton,
+      tooltip: E.intl.string(E.t.cpT0Cg),
       color: o.YX$.TERTIARY,
       size: o.tT7.SIZE_24,
       icon: (0, i.jsx)(o.Dio, {
@@ -93,25 +93,25 @@ function S(e) {
       onClick: h
     }), null != u && (0, i.jsx)("img", {
       src: u,
-      alt: C.intl.string(f.nameUnformatted),
-      className: O.badgeImage
+      alt: E.intl.string(f.nameUnformatted),
+      className: C.badgeImage
     }), (0, i.jsx)(o.X6q, {
       variant: "heading-md/extrabold",
-      children: C.intl.string(C.t.VoDxsb)
+      children: E.intl.string(E.t.VoDxsb)
     }), (0, i.jsx)(o.Text, {
       variant: "text-sm/medium",
-      className: O.subtitle,
-      children: C.intl.formatToPlainString(C.t.ewkaVV, {
+      className: C.subtitle,
+      children: E.intl.formatToPlainString(E.t.ewkaVV, {
         timeMilestone: null == (t = (0, g.q)(f.id, f.tenureReqNumMonths)) ? void 0 : t.toLocaleLowerCase()
       })
     }), (0, i.jsx)(l.zx, {
-      className: O.checkItOutButton,
+      className: C.checkItOutButton,
       color: l.Tt.WHITE,
       size: l.Ph.SMALL,
       onClick: m,
-      children: C.intl.string(C.t.RzWDqa)
+      children: E.intl.string(E.t.RzWDqa)
     }), (0, i.jsx)("div", {
-      className: O.pointer
+      className: C.pointer
     })]
   })
 }

@@ -1,175 +1,217 @@
 /** Chunk was on 47495 **/
-l.d(t, {
-  default: () => O
-}), l(388685);
-var n = l(255367),
-  s = l(73800),
-  r = l(522942),
-  i = l(342905),
-  o = l(442837),
-  c = l(902704),
-  a = l(481060),
-  d = l(100527),
-  u = l(906732),
-  f = l(594174),
-  m = l(305813),
-  p = l(698282),
-  x = l(388032),
-  S = l(584794);
-let j = [-1, -1];
+n.d(t, {
+  default: () => w
+}), n(953529), n(388685);
+var r = n(255367),
+  o = n(73800),
+  l = n(522942),
+  i = n(342905),
+  s = n(442837),
+  a = n(902704),
+  c = n(481060),
+  d = n(100527),
+  u = n(906732),
+  p = n(98278),
+  f = n(740594),
+  m = n(612659),
+  g = n(594174),
+  h = n(131016),
+  b = n(922626),
+  j = n(579346),
+  x = n(438759),
+  O = n(512070),
+  y = n(305813),
+  C = n(203872),
+  v = n(981631),
+  _ = n(474936),
+  S = n(698282),
+  P = n(388032),
+  N = n(584794);
 
-function y(e) {
+function k(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: !0,
+        configurable: !0,
+        writable: !0
+      }) : e[t] = r
+    })
+  }
+  return e
+}
+
+function T(e) {
   let {
     onApply: t,
-    onSurpriseMe: l,
-    canApply: s
-  } = e;
-  return (0, n.jsxs)(a.mzw, {
-    className: S.footer,
-    children: [(0, n.jsx)(a.ua7, {
-      text: "",
-      shouldShow: !s,
+    onSurpriseMe: n,
+    onClose: o,
+    canApply: l,
+    isApplying: i
+  } = e, s = (0, m.m)(_.p9.TIER_2), a = (0, r.jsx)(c.zxk, {
+    variant: "secondary",
+    size: "md",
+    onClick: n,
+    icon: c.T$Z,
+    iconPosition: "start",
+    text: P.intl.string(S.default.NOGFdn)
+  }), d = (0, r.jsxs)("div", {
+    className: N.subscriberButtonContainer,
+    children: [a, (0, r.jsx)(c.ua7, {
+      text: P.intl.string(S.default.cVTpnp),
+      shouldShow: !l,
       children: e => {
-        var l, r;
-        return (0, n.jsx)(a.zxk, (l = function(e) {
-          for (var t = 1; t < arguments.length; t++) {
-            var l = null != arguments[t] ? arguments[t] : {},
-              n = Object.keys(l);
-            "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(l).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(l, e).enumerable
-            }))), n.forEach(function(t) {
-              var n;
-              n = l[t], t in e ? Object.defineProperty(e, t, {
-                value: n,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-              }) : e[t] = n
-            })
-          }
-          return e
-        }({}, e), r = r = {
+        var n, o;
+        return (0, r.jsx)(c.zxk, (n = k({}, e), o = o = {
           onClick: t,
-          disabled: !s,
-          text: x.intl.string(x.t["1Qm829"]),
+          disabled: !l || i,
+          loading: i,
+          text: P.intl.string(P.t["1Qm829"]),
           variant: "primary",
-          size: "md"
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
-          var l = Object.keys(e);
+          size: "md",
+          fullWidth: !0
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+          var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
-            var n = Object.getOwnPropertySymbols(e);
-            l.push.apply(l, n)
+            var r = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, r)
           }
-          return l
-        })(Object(r)).forEach(function(e) {
-          Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(r, e))
-        }), l))
+          return n
+        })(Object(o)).forEach(function(e) {
+          Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(o, e))
+        }), n))
       }
-    }), (0, n.jsx)(a.zxk, {
-      variant: "secondary",
-      size: "md",
-      onClick: l,
-      icon: a.T$Z,
-      iconPosition: "start",
-      text: x.intl.string(p.default.NOGFdn)
     })]
-  })
-}
-
-function b(e) {
-  let {
-    selectedEffectId: t,
-    setSelectedEffectId: l
-  } = e;
-  return (0, n.jsx)("div", {
-    className: S.selectionSubSection,
-    children: (0, n.jsx)(a.Text, {
-      variant: "text-md/semibold",
-      children: x.intl.string(p.default["1wilMz"])
-    })
-  })
-}
-
-function v(e) {
-  let {
-    selectedFontId: t,
-    setSelectedFontId: l
-  } = e;
-  return (0, n.jsx)("div", {
-    className: S.selectionSubSection,
-    children: (0, n.jsx)(a.Text, {
-      variant: "text-md/semibold",
-      children: x.intl.string(p.default.nP0ngY)
-    })
-  })
-}
-
-function h(e) {
-  let {
-    selectedColors: t,
-    setSelectedColors: l
-  } = e;
-  return (0, n.jsx)("div", {
-    className: S.selectionSubSection,
-    children: (0, n.jsx)(a.Text, {
-      variant: "text-md/semibold",
-      children: x.intl.string(p.default["JOpi7+"])
-    })
-  })
-}
-
-function O(e) {
-  var t, l, O, g, w, N, _, C, I, P;
-  let {
-    transitionState: E,
-    analyticsLocations: k,
-    guild: A,
-    onClose: D
-  } = e, z = (0, o.e7)([f.default], () => f.default.getCurrentUser()), [F, H] = s.useState(null != (_ = null == z || null == (t = z.displayNameStyles) ? void 0 : t.fontId) ? _ : i.C.BANGERS), [L, T] = s.useState(null != (C = null == z || null == (l = z.displayNameStyles) ? void 0 : l.effectId) ? C : r.m.SOLID), [Z, M] = s.useState(null != (I = null == z || null == (O = z.displayNameStyles) ? void 0 : O.colors) ? I : j), {
-    analyticsLocations: G
-  } = (0, u.ZP)(k, d.Z.EDIT_DISPLAY_NAME_STYLES_MODAL), Y = F !== (null == z || null == (g = z.displayNameStyles) ? void 0 : g.fontId) || L !== (null == z || null == (w = z.displayNameStyles) ? void 0 : w.effectId) || !(0, c.E)(Z, null != (P = null == z || null == (N = z.displayNameStyles) ? void 0 : N.colors) ? P : j);
-  return (s.useEffect(() => {}, [G]), null == z) ? null : (0, n.jsx)(u.Gt, {
-    value: G,
-    children: (0, n.jsxs)(a.Y0X, {
-      transitionState: E,
-      size: a.CgR.LARGE,
-      parentComponent: "DisplayNameStylesModal",
-      children: [(0, n.jsxs)(a.hzk, {
-        className: S.modalContent,
-        children: [(0, n.jsxs)("div", {
-          className: S.selectionSection,
-          children: [(0, n.jsx)(a.xBx, {
-            separator: !1,
-            className: S.modalHeader,
-            children: (0, n.jsx)(a.X6q, {
-              variant: "heading-lg/semibold",
-              children: x.intl.string(p.default.ZPMAlZ)
-            })
-          }), (0, n.jsx)(v, {
-            selectedFontId: F,
-            setSelectedFontId: H
-          }), (0, n.jsx)(b, {
-            selectedEffectId: L,
-            setSelectedEffectId: T
-          }), (0, n.jsx)(h, {
-            selectedColors: Z,
-            setSelectedColors: M
-          })]
-        }), (0, n.jsx)(m.Z, {
-          user: z,
-          selectedFontId: F,
-          selectedEffectId: L,
-          selectedColors: Z,
-          onClose: D,
-          className: S.previewSection
-        })]
-      }), (0, n.jsx)(y, {
-        onApply: () => {
-          D()
+  }), u = (0, r.jsxs)("div", {
+    className: N.upsell,
+    children: [(0, r.jsxs)("div", {
+      className: N.descriptionContainer,
+      children: [(0, r.jsx)(c.ua7, {
+        text: P.intl.string(P.t["5AFxuL"]),
+        children: e => (0, r.jsx)(c.SrA, k({
+          size: "md",
+          colorClass: N.nitroIcon
+        }, e))
+      }), (0, r.jsx)(c.Text, {
+        variant: "text-md/medium",
+        color: "text-default",
+        className: N.description,
+        children: P.intl.format(S.default.PWf0xc, {
+          onClickNitro: () => {
+            (0, p.$)(o)
+          }
+        })
+      })]
+    }), (0, r.jsxs)("div", {
+      className: N.buttonContainer,
+      children: [a, (0, r.jsx)(f.Z, {
+        premiumModalAnalyticsLocation: {
+          section: v.jXE.DISPLAY_NAME_STYLES_MODAL_FOOTER,
+          object: v.qAy.PREMIUM_UPSELL_BUTTON
         },
-        onSurpriseMe: () => {},
-        canApply: Y,
-        analyticsLocations: G
+        subscriptionTier: _.Si.TIER_2
+      })]
+    })]
+  });
+  return (0, r.jsx)(c.mzw, {
+    "data-migration-pending": !0,
+    className: N.footer,
+    children: s ? d : u
+  })
+}
+
+function w(e) {
+  var t, n, p, f, m, _, k, w, D, E;
+  let {
+    transitionState: R,
+    analyticsLocations: I,
+    guild: A,
+    onClose: L
+  } = e, B = (0, s.e7)([g.default], () => g.default.getCurrentUser()), Z = (0, C.J)(), [G, H] = o.useState(null != (k = null == B || null == (t = B.displayNameStyles) ? void 0 : t.fontId) ? k : i.C.DEFAULT), [F, M] = o.useState(null != (w = null == B || null == (n = B.displayNameStyles) ? void 0 : n.effectId) ? w : l.m.SOLID), [z, U] = o.useState(null != (D = null == B || null == (p = B.displayNameStyles) ? void 0 : p.colors) ? D : Z[F].defaultColors), {
+    analyticsLocations: X
+  } = (0, u.ZP)(I, d.Z.EDIT_DISPLAY_NAME_STYLES_MODAL), {
+    handleApplyDisplayNameStyles: q,
+    isApplying: Y
+  } = (0, b.Z)({
+    onSuccess: () => {
+      L()
+    },
+    onError: e => {}
+  }), K = G !== (null == B || null == (f = B.displayNameStyles) ? void 0 : f.fontId) || F !== (null == B || null == (m = B.displayNameStyles) ? void 0 : m.effectId) || !(0, a.E)(z, null != (E = null == B || null == (_ = B.displayNameStyles) ? void 0 : _.colors) ? E : []);
+  return (o.useEffect(() => {}, [X]), null == B) ? null : (0, r.jsx)(u.Gt, {
+    value: X,
+    children: (0, r.jsxs)(c.Y0X, {
+      "data-migration-pending": !0,
+      transitionState: R,
+      size: c.CgR.LARGE,
+      parentComponent: "DisplayNameStylesModal",
+      className: N.modalRoot,
+      children: [(0, r.jsxs)(c.hzk, {
+        "data-migration-pending": !0,
+        className: N.modalContent,
+        style: {
+          overflow: "hidden auto"
+        },
+        children: [(0, r.jsxs)("div", {
+          className: N.selectionSection,
+          children: [(0, r.jsx)(c.xBx, {
+            "data-migration-pending": !0,
+            separator: !1,
+            className: N.sectionHeader,
+            children: (0, r.jsx)(c.X6q, {
+              variant: "heading-lg/semibold",
+              children: P.intl.string(S.default.ZPMAlZ)
+            })
+          }), (0, r.jsx)(O.Z, {
+            selectedFontId: G,
+            setSelectedFontId: H,
+            className: N.selectionSubSection
+          }), (0, r.jsx)(x.Z, {
+            selectedEffectId: F,
+            setSelectedEffectId: e => {
+              e === l.m.GRADIENT && 1 === z.length ? U(z.concat(v.p6O)) : (0 === z.length || (0, a.E)(z, Z[F].defaultColors)) && U(Z[e].defaultColors), M(e)
+            },
+            className: N.selectionSubSection,
+            configs: Z
+          }), (0, r.jsx)(j.Z, {
+            selectedColors: z,
+            setSelectedColors: U,
+            selectedEffectId: F,
+            className: N.selectionSubSection,
+            defaultColor: Z[F].defaultColors[0]
+          })]
+        }), (0, r.jsx)(y.Z, {
+          user: B,
+          selectedFontId: G,
+          selectedEffectId: F,
+          selectedColors: z,
+          onClose: L
+        })]
+      }), (0, r.jsx)(T, {
+        isApplying: Y,
+        onApply: () => {
+          if (K) {
+            let e = z;
+            F === l.m.SOLID && z.length > 0 && z[0] === Z[F].defaultColors[0] && (e = []), q({
+              fontId: G,
+              effectId: F,
+              colors: e
+            })
+          }
+        },
+        onSurpriseMe: () => {
+          let e = (0, h.aY)();
+          H(e.fontId), M(e.effectId), U(e.colors)
+        },
+        onClose: L,
+        canApply: K,
+        analyticsLocations: X
       })]
     })
   })

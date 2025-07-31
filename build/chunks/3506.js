@@ -21,9 +21,9 @@ var r = n(512722),
   x = n(809357),
   _ = n(371651),
   j = n(624864),
-  E = n(957148),
-  C = n(556296),
-  O = n(808506),
+  O = n(957148),
+  E = n(556296),
+  C = n(808506),
   v = n(237997),
   S = n(626135);
 n(63063);
@@ -37,17 +37,17 @@ function P(e) {
   var t;
   let n = v.default.getNotificationPositionMode(),
     i = n !== N._vf.DISABLED,
-    r = C.ZP.getOverlayKeybind(),
-    s = C.ZP.getOverlayChatKeybind();
+    r = E.ZP.getOverlayKeybind(),
+    s = E.ZP.getOverlayChatKeybind();
   return {
-    enabled: O.default.enabled,
+    enabled: C.default.enabled,
     notifications_enabled: i,
     notifications_position: i ? n : null,
     text_notifications_mode: j.Z.isNotificationDisabled(b.OverlayNotificationDisabledSetting.TEXT_CHAT) ? "DISABLED" : "ENABLED",
     hotkey: null != r ? (0, T.BB)(r.shortcut) : null,
     text_activation_hotkey: null != s ? (0, T.BB)(s.shortcut) : null,
     text_opacity_slider: v.default.getTextWidgetOpacity(),
-    old_enabled: null != (t = null == e ? void 0 : e.enabled) ? t : O.default.enabled
+    old_enabled: null != (t = null == e ? void 0 : e.enabled) ? t : C.default.enabled
   }
 }
 
@@ -71,7 +71,7 @@ function D(e) {
     oopEnabled: r,
     legacyEnabled: a
   } = (0, o.cj)([_.default], () => _.default.getGlobalEnabledStatus()), {
-    avatarSizeMode: O,
+    avatarSizeMode: C,
     displayNameMode: T,
     displayUserMode: D,
     textChatDisabled: Z,
@@ -84,7 +84,7 @@ function D(e) {
     notificationPositionMode: v.default.getNotificationPositionMode(),
     shouldShowKeybindIndicators: v.default.showKeybindIndicators,
     textChatDisabled: j.Z.isNotificationDisabled(b.OverlayNotificationDisabledSetting.TEXT_CHAT)
-  })), L = (0, o.e7)([C.ZP], () => C.ZP.getOverlayKeybind()), B = (0, x.Z)({
+  })), L = (0, o.e7)([E.ZP], () => E.ZP.getOverlayKeybind()), B = (0, x.Z)({
     location: "overlay_user_settings"
   }), M = (0, p.$1)(), U = P(A);
   return l().isEqual(U, A) || (S.default.track(N.rMx.OVERLAY_SETTINGS_UPDATED, U), A = U), (0, i.jsxs)(i.Fragment, {
@@ -107,7 +107,7 @@ function D(e) {
               var t, n;
               u.Z.setEnabled(e, r);
               let i = null != (n = null == (t = g.ZP.getCurrentGameForAnalytics()) ? void 0 : t.id) ? n : null;
-              (0, f.ou)(e, f.AE.LEGACY, i), !e && a && (0, E.l)(f.AE.LEGACY, i)
+              (0, f.ou)(e, f.AE.LEGACY, i), !e && a && (0, O.l)(f.AE.LEGACY, i)
             },
             children: I.intl.string(I.t.vSP6c3)
           })
@@ -167,7 +167,7 @@ function D(e) {
             } = e;
             return u.Z.setAvatarSizeMode(t)
           },
-          value: O
+          value: C
         })
       }), (0, i.jsx)(R, {
         title: I.intl.string(I.t.J0dpcH),

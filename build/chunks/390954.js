@@ -28,7 +28,7 @@ function j(e, t, n) {
   }) : e[t] = n, e
 }
 
-function E(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -40,7 +40,7 @@ function E(e) {
   }
   return e
 }
-class C extends(i = s.PureComponent) {
+class E extends(i = s.PureComponent) {
   render() {
     let {
       paymentSource: e,
@@ -97,12 +97,12 @@ class C extends(i = s.PureComponent) {
     })
   }
 }
-j(C, "defaultProps", {
+j(E, "defaultProps", {
   isEditing: !1,
   hideDivider: !1,
   onEditClick: () => {}
 });
-class O extends s.PureComponent {
+class C extends s.PureComponent {
   renderFooter() {
     let {
       paymentSources: e
@@ -132,7 +132,7 @@ class O extends s.PureComponent {
       removing: i,
       submitting: s,
       premiumSubscriptionPaymentSourceId: a
-    } = this.props, o = l().values(t).sort((t, n) => t.id === e ? -1 : n.id === e ? 1 : g.default.compare(t.id, n.id)), d = this.state.editingPayment, u = o.findIndex(e => e.id === d), p = o.map((t, l) => (0, r.jsx)(C, {
+    } = this.props, o = l().values(t).sort((t, n) => t.id === e ? -1 : n.id === e ? 1 : g.default.compare(t.id, n.id)), d = this.state.editingPayment, u = o.findIndex(e => e.id === d), p = o.map((t, l) => (0, r.jsx)(E, {
       locale: n,
       paymentSource: t,
       isDefault: e === t.id,
@@ -155,7 +155,7 @@ class O extends s.PureComponent {
           children: [(0, r.jsx)(c.ua7, {
             position: "left",
             text: x.intl.string(x.t.h6V3uL),
-            children: e => (0, r.jsx)(c.mBM, E({
+            children: e => (0, r.jsx)(c.mBM, O({
               size: "md",
               color: "currentColor",
               className: _.lockIcon
@@ -201,7 +201,7 @@ class O extends s.PureComponent {
         } = await Promise.resolve().then(n.bind(n, 623573));
         return t => {
           var n, i;
-          return (0, r.jsx)(e, (n = E({}, t), i = i = {
+          return (0, r.jsx)(e, (n = O({}, t), i = i = {
             onAddPaymentSource: this.handlePaymentSourceAdded
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
             var n = Object.keys(e);
@@ -223,4 +223,4 @@ class O extends s.PureComponent {
     })
   }
 }
-let v = O
+let v = C

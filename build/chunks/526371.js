@@ -1,6 +1,6 @@
 /** Chunk was on 22243 **/
 n.d(t, {
-  Z: () => O
+  Z: () => C
 }), n(388685);
 var i = n(255367),
   r = n(73800),
@@ -20,9 +20,9 @@ var i = n(255367),
   x = n(603571),
   _ = n(388032),
   j = n(631587),
-  E = n(394637);
+  O = n(394637);
 
-function C() {
+function E() {
   let e = (0, r.useRef)(null),
     [t, n] = (0, r.useState)(!1),
     {
@@ -79,7 +79,7 @@ function C() {
         className: j.foreground,
         children: [(0, i.jsx)("img", {
           className: j.icon,
-          src: E,
+          src: O,
           alt: ""
         }), (0, i.jsxs)("div", {
           className: j.text,
@@ -101,12 +101,12 @@ function C() {
   })
 }
 
-function O() {
+function C() {
   let e = (0, p.Nj)(o.z.CLICKER_COACHMARK),
     {
       enableGame: t
     } = h.C.getCurrentConfig({
       location: "Coachmark"
     });
-  return e || !t ? null : (0, i.jsx)(C, {})
+  return e || !t ? null : (0, i.jsx)(E, {})
 }

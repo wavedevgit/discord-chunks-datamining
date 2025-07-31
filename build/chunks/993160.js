@@ -21,32 +21,32 @@ function g(e) {
     user: t,
     currentUser: n,
     guildId: g,
-    channelId: x,
-    displayProfile: b,
+    channelId: b,
+    displayProfile: x,
     relationshipType: _,
-    onClose: h
+    onClose: j
   } = e, {
-    newestAnalyticsLocation: j
+    newestAnalyticsLocation: h
   } = (0, a.ZP)(), y = (0, l.Z)({
     user: t,
     guildId: g,
-    channelId: x,
-    displayProfile: b,
-    onClose: h
+    channelId: b,
+    displayProfile: x,
+    onClose: j
   }), {
-    gameFriends: I,
-    hasOutgoingPendingGameFriends: v,
+    gameFriends: v,
+    hasOutgoingPendingGameFriends: I,
     hasIncomingPendingGameFriends: O
   } = (0, m.H)({
     userId: t.id
-  }), N = I.length > 0 || v || O;
+  }), P = v.length > 0 || I || O;
   return _ === p.OGo.BLOCKED ? null : t.id === n.id ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.Z, {
       user: t,
       guildId: g,
-      onClose: h
+      onClose: j
     }), (0, r.jsx)(u.Z, {
-      onClose: h
+      onClose: j
     }), (0, r.jsx)(d.Z, {
       type: "icon",
       user: t,
@@ -93,7 +93,7 @@ function g(e) {
       relationshipType: _,
       shouldShowTooltip: !0,
       themeColor: "secondary",
-      analyticsLocation: j
+      analyticsLocation: h
     }), (0, r.jsx)(d.Z, {
       type: "icon",
       user: t,
@@ -101,7 +101,7 @@ function g(e) {
       viewProfileItem: y,
       themeColor: "secondary"
     })]
-  }) : _ === p.OGo.NONE && N ? (0, r.jsxs)(r.Fragment, {
+  }) : _ === p.OGo.NONE && P ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.Z, {
       type: "text",
       userId: t.id,
@@ -110,14 +110,14 @@ function g(e) {
     }), (0, r.jsx)(f.k9, {
       type: "icon",
       user: t,
-      analyticsLocation: j,
+      analyticsLocation: h,
       themeColor: "secondary",
-      gameFriends: I,
+      gameFriends: v,
       tooltipPosition: "top",
       tooltipAlign: "center",
       shouldShowTooltip: !0,
       hasIncomingPendingGameFriends: O,
-      hasOutgoingPendingGameFriends: v
+      hasOutgoingPendingGameFriends: I
     }), (0, r.jsx)(d.Z, {
       type: "icon",
       user: t,
@@ -129,7 +129,7 @@ function g(e) {
     children: [(0, r.jsx)(f.Z7, {
       type: "text",
       userId: t.id,
-      analyticsLocation: j,
+      analyticsLocation: h,
       color: o.zx.Colors.BRAND,
       autoFocus: !0
     }), (0, r.jsx)(s.Z, {

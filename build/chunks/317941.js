@@ -20,9 +20,9 @@ var i = n(255367),
   x = n(82142),
   _ = n(246946),
   j = n(509545),
-  E = n(55563),
-  C = n(259580),
-  O = n(572004),
+  O = n(55563),
+  E = n(259580),
+  C = n(572004),
   v = n(669079),
   S = n(296848),
   T = n(474936),
@@ -69,7 +69,7 @@ class A extends r.PureComponent {
         value: (0, v.Nz)(t.code),
         text: this.copyButtonText,
         mode: n,
-        supportsCopy: O.wS,
+        supportsCopy: C.wS,
         hideMessage: e ? N.intl.string(N.t["0RLn4+"]) : null,
         onCopy: this.handleCopy,
         buttonColor: c.Tt.BRAND,
@@ -96,7 +96,7 @@ class A extends r.PureComponent {
         giftCode: t,
         sku: n
       } = this.props;
-      (0, v.dM)(t, n), (0, O.JG)(e, () => this.setState({
+      (0, v.dM)(t, n), (0, C.JG)(e, () => this.setState({
         copyMode: d.uA3.SUCCESS
       }), () => this.setState({
         copyMode: d.uA3.ERROR
@@ -194,8 +194,8 @@ class P extends r.PureComponent {
                   })
                 })]
               })]
-            }), (0, i.jsx)(C.Z, {
-              direction: u ? C.Z.Directions.UP : C.Z.Directions.DOWN,
+            }), (0, i.jsx)(E.Z, {
+              direction: u ? E.Z.Directions.UP : E.Z.Directions.DOWN,
               className: I.expandIcon
             })]
           })
@@ -243,12 +243,12 @@ class P extends r.PureComponent {
     })
   }
 }
-let R = l.ZP.connectStores([E.Z, _.Z, x.Z, p.Z, j.Z, b.default], e => {
+let R = l.ZP.connectStores([O.Z, _.Z, x.Z, p.Z, j.Z, b.default], e => {
   let {
     skuId: t,
     subscriptionPlanId: n,
     giftStyle: i
-  } = e, r = E.Z.get(t);
+  } = e, r = O.Z.get(t);
   if (null == r) throw Error("SKU was unavailable while rendering gift.");
   let s = x.Z.getForGifterSKUAndPlan(b.default.getId(), t, n).filter(e => !e.isClaimed).filter(e => e.giftStyle === i);
   return {

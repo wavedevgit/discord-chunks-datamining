@@ -20,9 +20,9 @@ var i = n(255367),
   x = n(491758),
   _ = n(233685),
   j = n(388032),
-  E = n(922284),
-  C = n(802454),
-  O = n(20493);
+  O = n(922284),
+  E = n(802454),
+  C = n(20493);
 
 function v(e) {
   let {
@@ -47,7 +47,7 @@ function v(e) {
       className: t,
       tag: l.RB0.H1,
       title: n ? (0, i.jsxs)("div", {
-        className: E.headerContainer,
+        className: O.headerContainer,
         children: [j.intl.string(j.t.z2jK6e), (0, i.jsx)(b.Z, {})]
       }) : null,
       children: N && (0, i.jsxs)("form", {
@@ -55,10 +55,10 @@ function v(e) {
         children: [(0, i.jsx)(x.Z, {}), (0, i.jsx)(_.Z, {})]
       })
     }), N && (0, i.jsx)(l.$i$, {}), (0, i.jsxs)(l.hjN, {
-      className: n || N ? O.marginTop20 : t,
+      className: n || N ? C.marginTop20 : t,
       children: [(0, i.jsx)(l.j7V, {
         hideBorder: !0,
-        className: C.formItem,
+        className: E.formItem,
         value: v,
         note: j.intl.string(j.t["wW9/zc"]),
         onChange: e => f.yg({
@@ -67,7 +67,7 @@ function v(e) {
         children: j.intl.string(j.t.AGDDkJ)
       }), S && y && (0, i.jsx)(l.j7V, {
         hideBorder: !0,
-        className: C.formItem,
+        className: E.formItem,
         value: I,
         note: j.intl.string(j.t["0vjy8P"]),
         onChange: e => f.yl({

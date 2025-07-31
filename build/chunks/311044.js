@@ -1,6 +1,6 @@
 /** Chunk was on 43473 **/
 n.d(t, {
-  Z: () => x
+  Z: () => b
 });
 var r = n(255367),
   o = n(73800),
@@ -16,28 +16,28 @@ var r = n(255367),
   p = n(264481),
   g = n(714905);
 
-function x(e) {
+function b(e) {
   let {
     user: t,
     guildId: n,
-    channelId: x,
-    onClose: b
+    channelId: b,
+    onClose: x
   } = e, {
     analyticsLocations: _
   } = (0, l.ZP)(), {
-    context: h,
-    trackUserProfileAction: j
+    context: j,
+    trackUserProfileAction: h
   } = (0, s.KZ)(), {
     mutualFriends: y,
-    mutualFriendsCount: I
-  } = (0, d.Z)(t), v = (0, a.Z)();
+    mutualFriendsCount: v
+  } = (0, d.Z)(t), I = (0, a.Z)();
   return o.useEffect(() => {
-    (0, u.Z)(t.id, v)
-  }, [t.id, v]), (0, r.jsx)(i.Ttm, {
+    (0, u.Z)(t.id, I)
+  }, [t.id, I]), (0, r.jsx)(i.Ttm, {
     className: g.scroller,
     fade: !0,
     children: null == y ? Array.from({
-      length: null != I ? I : 10
+      length: null != v ? v : 10
     }).map((e, t) => (0, r.jsxs)("div", {
       className: g.friendsLoadingItem,
       children: [(0, r.jsx)(c.ZT, {
@@ -57,10 +57,10 @@ function x(e) {
         user: o,
         status: i,
         guildId: n,
-        channelId: x,
+        channelId: b,
         onSelect: () => {
           var e, t;
-          null == b || b(), j({
+          null == x || x(), h({
             action: "PRESS_MUTUAL_FRIEND"
           }), (0, f.openUserProfileModal)((e = function(e) {
             for (var t = 1; t < arguments.length; t++) {
@@ -79,7 +79,7 @@ function x(e) {
               })
             }
             return e
-          }({}, h), t = t = {
+          }({}, j), t = t = {
             userId: o.id,
             sourceAnalyticsLocations: _
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {

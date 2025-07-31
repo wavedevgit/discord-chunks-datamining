@@ -7,11 +7,11 @@ n.d(i, {
   _u: () => R,
   aW: () => g,
   kv: () => I,
-  s4: () => o,
+  s4: () => A,
   uu: () => M,
   vq: () => _,
   xU: () => T,
-  zO: () => A
+  zO: () => o
 }), n(539854), n(781311);
 var E = n(823379),
   l = n(231338),
@@ -115,8 +115,8 @@ function s(t) {
       flag: l.Pl.MODERATE_MEMBERS
     },
     [l.Pl.SEND_MESSAGES.toString()]: {
-      title: t.showForumPermissions ? r.intl.string(r.t.S1VOwc) : r.intl.string(r.t.T32rkJ),
-      description: t.showForumPermissions ? r.t.prvWKi : r.t.qry4PT,
+      title: r.intl.string(r.t.S1VOwc),
+      description: r.t.prvWKi,
       flag: l.Pl.SEND_MESSAGES
     },
     [l.Pl.EMBED_LINKS.toString()]: {
@@ -266,8 +266,8 @@ function s(t) {
       flag: l.Pl.CREATE_EVENTS
     },
     [l.Pl.MANAGE_THREADS.toString()]: {
-      title: t.showForumPermissions ? r.intl.string(r.t.QKe7Q0) : r.intl.string(r.t.kEqgr6),
-      description: t.showForumPermissions ? r.t.QAxIIi : r.t.AKdc4O,
+      title: r.intl.string(r.t.QKe7Q0),
+      description: r.t.QAxIIi,
       flag: l.Pl.MANAGE_THREADS
     },
     [l.Pl.CREATE_PUBLIC_THREADS.toString()]: {
@@ -281,8 +281,8 @@ function s(t) {
       flag: l.Pl.CREATE_PRIVATE_THREADS
     },
     [l.Pl.SEND_MESSAGES_IN_THREADS.toString()]: {
-      title: t.showForumPermissions ? r.intl.string(r.t["5QlVGx"]) : r.intl.string(r.t.fTE74u),
-      description: t.showForumPermissions ? r.t.C2ZPEx : r.t["6pyXvr"],
+      title: r.intl.string(r.t["5QlVGx"]),
+      description: r.t.C2ZPEx,
       flag: l.Pl.SEND_MESSAGES_IN_THREADS
     },
     [l.Pl.SET_VOICE_CHANNEL_STATUS.toString()]: {
@@ -293,7 +293,7 @@ function s(t) {
   }
 }
 
-function o(t) {
+function A(t) {
   let i, n = s(t),
     E = [function(t, i) {
       let n = [l.Pl.VIEW_CHANNEL, l.Pl.MANAGE_CHANNELS, l.Pl.MANAGE_ROLES, l.Pl.CREATE_GUILD_EXPRESSIONS, l.Pl.MANAGE_GUILD_EXPRESSIONS, l.Pl.VIEW_AUDIT_LOG, l.Pl.VIEW_GUILD_ANALYTICS];
@@ -335,7 +335,7 @@ function o(t) {
   })), E
 }
 
-function A(t, i) {
+function o(t, i) {
   let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {
     showManageWebhooks: !0
   };

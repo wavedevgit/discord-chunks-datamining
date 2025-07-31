@@ -20,9 +20,9 @@ var i = n(255367),
   x = n(627845),
   _ = n(514361),
   j = n(803038),
-  E = n(600164),
-  C = n(313201),
-  O = n(266454),
+  O = n(600164),
+  E = n(313201),
+  C = n(266454),
   v = n(786761),
   S = n(3148),
   T = n(739566),
@@ -82,9 +82,9 @@ let Y = {
     COZY: "cozy",
     COMPACT: "compact"
   },
-  K = (0, C.hQ)(),
-  q = (0, C.hQ)(),
-  X = (0, C.hQ)(),
+  K = (0, E.hQ)(),
+  q = (0, E.hQ)(),
+  X = (0, E.hQ)(),
   J = "1337",
   Q = e => {
     let t = 0;
@@ -176,8 +176,8 @@ class ee extends r.Component {
         type: u.geA.DESCRIPTION,
         className: G.subtext,
         children: "Increase or decrease the size of the chat font"
-      }), (0, i.jsx)(E.Z, {
-        align: E.Z.Align.CENTER,
+      }), (0, i.jsx)(O.Z, {
+        align: O.Z.Align.CENTER,
         children: (0, i.jsx)(u.iRW, {
           className: a()({
             [F.marginTop20]: !1,
@@ -571,7 +571,7 @@ class et extends ee {
   }
 }
 let en = e => {
-  (0, O.zu)(e) || (0, O.Q3)(e, {
+  (0, C.zu)(e) || (0, C.Q3)(e, {
     dismissAction: M.L.AUTO,
     forceTrack: !0
   })

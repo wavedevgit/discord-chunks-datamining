@@ -20,9 +20,9 @@ var i = n(255367),
   x = n(22189),
   _ = n(391110),
   j = n(75077),
-  E = n(981631),
-  C = n(388032),
-  O = n(614729),
+  O = n(981631),
+  E = n(388032),
+  C = n(614729),
   v = n(865215);
 let S = e => {
   let t, n, {
@@ -46,34 +46,34 @@ let S = e => {
       fractionalState: w
     } = (0, p.Z)(),
     k = (0, h.W)();
-  return Z ? (t = C.intl.string(C.t["+vt7w8"]), n = C.intl.string(C.t.LgHbnJ)) : (t = C.intl.string(C.t.LgHbnJ), n = C.intl.string(C.t["+vt7w8"])), (0, i.jsx)(c.yWw, {
-    className: a()(O.allPerksScroller, {
-      [O.open]: s,
-      [O.openCloseReduceMotion]: D
+  return Z ? (t = E.intl.string(E.t["+vt7w8"]), n = E.intl.string(E.t.LgHbnJ)) : (t = E.intl.string(E.t.LgHbnJ), n = E.intl.string(E.t["+vt7w8"])), (0, i.jsx)(c.yWw, {
+    className: a()(C.allPerksScroller, {
+      [C.open]: s,
+      [C.openCloseReduceMotion]: D
     }),
     ref: N,
     children: (0, i.jsx)("div", {
-      className: O.container,
+      className: C.container,
       children: (0, i.jsxs)(m.Gt, {
         value: A,
         children: [(0, i.jsx)(f.Z, {
-          className: O.heroHeading,
+          className: C.heroHeading,
           onBackClick: () => {
-            S(!1), g.default.track(E.rMx.NITRO_HOME_NAVIGATION, {
+            S(!1), g.default.track(O.rMx.NITRO_HOME_NAVIGATION, {
               current_component: _.MQ.SEE_ALL,
               next_component: T,
               interaction_component: "Back Button"
             })
           }
         }), (0, i.jsxs)("div", {
-          className: O.column,
+          className: C.column,
           children: [(0, i.jsx)(c.X6q, {
             variant: "heading-xxl/extrabold",
             color: "header-primary",
-            className: O.heading,
+            className: C.heading,
             children: t
           }), (0, i.jsx)(b.Z, {
-            className: O.cardCarousel,
+            className: C.cardCarousel,
             cards: (0, j.ZM)({
               perksCards: y,
               variant: _.gM.CARD_CAROUSEL_FIRST_ROW,
@@ -86,10 +86,10 @@ let S = e => {
           }), (0, i.jsx)(c.X6q, {
             variant: "heading-xxl/extrabold",
             color: "header-primary",
-            className: O.heading,
+            className: C.heading,
             children: n
           }), (0, i.jsx)(b.Z, {
-            className: O.cardCarousel,
+            className: C.cardCarousel,
             cards: (0, j.ZM)({
               perksCards: y,
               variant: _.gM.CARD_CAROUSEL_SECOND_ROW,
@@ -102,10 +102,10 @@ let S = e => {
           }), (0, i.jsx)(c.X6q, {
             variant: "heading-xxl/extrabold",
             color: "header-primary",
-            className: O.heading,
-            children: C.intl.string(C.t.LTaxu7)
+            className: C.heading,
+            children: E.intl.string(E.t.LTaxu7)
           }), (0, i.jsx)(b.Z, {
-            className: O.cardCarousel,
+            className: C.cardCarousel,
             cards: (0, j.ZM)({
               perksCards: y,
               variant: _.gM.CARD_CAROUSEL_THIRD_ROW,
@@ -117,24 +117,24 @@ let S = e => {
             cardType: _.gM.CARD_CAROUSEL_THIRD_ROW
           })]
         }), (0, i.jsx)("div", {
-          className: O.footerSpacing
+          className: C.footerSpacing
         }), (0, i.jsx)(o.$, {
           innerRef: I,
           onChange: e => {
-            e && !P && (g.default.track(E.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+            e && !P && (g.default.track(O.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
               location_stack: A
             }), R(!0))
           },
           children: (0, i.jsx)("div", {
             ref: I,
-            className: O.bottomOfPageVisibilitySensor
+            className: C.bottomOfPageVisibilitySensor
           })
         }), (0, i.jsx)("img", {
           src: v,
-          className: O.bottomIllustration,
+          className: C.bottomIllustration,
           width: 112,
           height: 85,
-          alt: C.intl.string(C.t.X4IxWF)
+          alt: E.intl.string(E.t.X4IxWF)
         })]
       })
     })

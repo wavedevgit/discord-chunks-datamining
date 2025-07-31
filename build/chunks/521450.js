@@ -1,6 +1,6 @@
 /** Chunk was on 22243 **/
 n.d(t, {
-  Z: () => E
+  Z: () => O
 });
 var i = n(255367),
   r = n(73800),
@@ -20,7 +20,7 @@ var i = n(255367),
   x = n(388032),
   _ = n(128607),
   j = n(20493);
-let E = () => {
+let O = () => {
   let e = g.Ex.useSetting(),
     {
       categories: t,

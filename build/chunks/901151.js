@@ -1,6 +1,6 @@
 /** Chunk was on 22243 **/
 n.d(t, {
-  Z: () => O
+  Z: () => C
 }), n(642613), n(539854);
 var i = n(255367),
   r = n(73800),
@@ -135,7 +135,7 @@ function j(e) {
   })
 }
 
-function E() {
+function O() {
   let e = u._j.useSetting();
   return (0, i.jsx)(g.U, {
     setting: f.s6.PRIVACY_AND_SAFETY_ALLOW_GAME_FRIEND_DMS,
@@ -150,7 +150,7 @@ function E() {
   })
 }
 
-function C() {
+function E() {
   let e = u.JG.useSetting(),
     t = e === s.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET ? s.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL : e,
     n = [{
@@ -181,7 +181,7 @@ function C() {
   })
 }
 
-function O() {
+function C() {
   let {
     showLoadingIndicator: e,
     slayerSdkApplications: t
@@ -190,9 +190,9 @@ function O() {
     children: e ? (0, i.jsx)(a.$jN, {}) : t.length > 0 ? (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(j, {
         applications: t
-      }), (0, i.jsx)(E, {}), (0, i.jsx)("div", {
+      }), (0, i.jsx)(O, {}), (0, i.jsx)("div", {
         className: _.divider
-      }), (0, i.jsx)(C, {})]
+      }), (0, i.jsx)(E, {})]
     }) : (0, i.jsxs)("div", {
       className: _.emptyContainer,
       children: [(0, i.jsx)(a.Text, {

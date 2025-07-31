@@ -1,6 +1,6 @@
-/** Chunk was on 55305 **/
+/** Chunk was on 97167 **/
 e.exports = {
-  modal: "modal_ac72c6 " + a(283574).scrollbarGhostHairline,
+  modal: "modal_ac72c6 " + t(283574).scrollbarGhostHairline,
   modalContent: "modalContent_ac72c6",
   modalFooter: "modalFooter_ac72c6",
   name: "name_ac72c6",

@@ -20,9 +20,9 @@ var i = n(255367),
   x = n(853872),
   _ = n(78839),
   j = n(706454),
-  E = n(726985),
-  C = n(981631),
-  O = n(388032),
+  O = n(726985),
+  E = n(981631),
+  C = n(388032),
   v = n(189435);
 let S = () => (0, i.jsx)("div", {
   className: v.syncing,
@@ -35,7 +35,7 @@ class T extends r.PureComponent {
     })
   }
   handleRedemptionRedirect() {
-    c.Z.setSection(C.oAB.INVENTORY)
+    c.Z.setSection(E.oAB.INVENTORY)
   }
   render() {
     let {
@@ -51,23 +51,23 @@ class T extends r.PureComponent {
     return t ? (0, i.jsx)(d.Z, {}) : (0, i.jsxs)("div", {
       className: v.__invalid_userSettingsBilling,
       children: [e && 0 === Object.keys(n).length ? (0, i.jsx)(S, {}) : (0, i.jsx)(g.F, {
-        setting: E.s6.BILLING_PAYMENT_METHODS,
+        setting: O.s6.BILLING_PAYMENT_METHODS,
         children: (0, i.jsx)(m.Z, {
           paymentSources: n,
           defaultPaymentSourceId: r,
-          premiumSubscriptionPaymentSourceId: null != l && l.status !== C.O0b.CANCELED ? l.paymentSourceId : null,
+          premiumSubscriptionPaymentSourceId: null != l && l.status !== E.O0b.CANCELED ? l.paymentSourceId : null,
           locale: s,
           removing: o,
           submitting: c
         })
       }), (0, i.jsx)(g.F, {
-        setting: E.s6.BILLING_TRANSACTION_HISTORY,
+        setting: O.s6.BILLING_TRANSACTION_HISTORY,
         children: (0, i.jsx)("div", {
           className: v.paymentHistory,
           children: (0, i.jsxs)(a.y5t, {
             component: (0, i.jsx)(a.vwX, {
               tag: "h1",
-              children: O.intl.string(O.t.obLrcH)
+              children: C.intl.string(C.t.obLrcH)
             }),
             children: [(0, i.jsx)(p.oQ, {}), (0, i.jsx)(u.Z, {
               locale: s
@@ -77,7 +77,7 @@ class T extends r.PureComponent {
       }), (0, i.jsx)(a.Zbd, {
         className: v.codeRedemptionRedirect,
         type: a.Zbd.Types.CUSTOM,
-        children: O.intl.format(O.t["8b+FXF"], {
+        children: C.intl.format(C.t["8b+FXF"], {
           onClick: this.handleRedemptionRedirect
         })
       })]

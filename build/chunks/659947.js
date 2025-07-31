@@ -51,15 +51,15 @@ function _(e, t) {
 }
 
 function j() {}
-let E = [h.h8.VOICE_CHANNEL];
+let O = [h.h8.VOICE_CHANNEL];
 
-function C(e) {
+function E(e) {
   e.setOptions({
     voiceChannelGuildFilter: null
   }), e.setLimit(1 / 0)
 }
 
-function O(e) {
+function C(e) {
   let {
     height: t
   } = e;
@@ -71,13 +71,13 @@ function O(e) {
 }
 
 function v() {
-  return (0, i.jsx)(O, {
+  return (0, i.jsx)(C, {
     height: 16
   }, "footer")
 }
 
 function S() {
-  return (0, i.jsx)(O, {
+  return (0, i.jsx)(C, {
     height: 8
   }, "header")
 }
@@ -144,7 +144,7 @@ function I(e) {
   } = e, c = r.useId(), x = r.useRef(null), {
     mouseFocusEnabled: _,
     enableMouseFocus: j,
-    disableMouseFocus: O
+    disableMouseFocus: C
   } = function() {
     let e = r.useRef(!1),
       t = r.useCallback(() => {
@@ -164,8 +164,8 @@ function I(e) {
     queryResults: y
   } = (0, o.Z)({
     visible: !0,
-    autocompleterResultTypes: E,
-    autocompleterBeforeCreateSearchContext: C
+    autocompleterResultTypes: O,
+    autocompleterBeforeCreateSearchContext: E
   }), A = function(e) {
     let t = "" !== e,
       n = (0, s.Wu)([m.ZP, u.Z, g.Z], () => {
@@ -223,7 +223,7 @@ function I(e) {
           value: N,
           onChange: I,
           onKeyDown: function(e) {
-            O();
+            C();
             let t = e.key.toLowerCase();
             if ("arrowdown" === t || "arrowup" === t || "enter" === t || "escape" === t) switch (e.preventDefault(), t) {
               case "escape":

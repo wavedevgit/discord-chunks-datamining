@@ -20,9 +20,9 @@ var i = n(255367),
   x = n(607018),
   _ = n(778764),
   j = n(314897),
-  E = n(325067),
-  C = n(594174),
-  O = n(572004),
+  O = n(325067),
+  E = n(594174),
+  C = n(572004),
   v = n(287880),
   S = n(714565),
   T = n(202858),
@@ -75,9 +75,9 @@ function k(e) {
       consumed: n
     }
   } = e, s = "".concat(t.substr(0, 4), "-").concat(t.substr(4)), a = r.useRef(null), l = r.useCallback(e => {
-    if ("c" === e.key && e.metaKey && O.wS) {
+    if ("c" === e.key && e.metaKey && C.wS) {
       var t;
-      e.preventDefault(), e.stopPropagation(), (0, O.JG)(s), null == a || null == (t = a.current) || t.focus()
+      e.preventDefault(), e.stopPropagation(), (0, C.JG)(s), null == a || null == (t = a.current) || t.focus()
     }
   }, [s]);
   return (0, i.jsx)("li", {
@@ -321,7 +321,7 @@ class L extends r.PureComponent {
         onConfirm: () => d.Z.disable()
       })
     }), D(this, "generateBackupCodes", async () => {
-      let e = E.Z.getVerificationKey();
+      let e = O.Z.getVerificationKey();
       await d.Z.confirmViewBackupCodes(e, !0)
     }), D(this, "sendMFABackupCodesVerificationKeyEmail", () => {
       (0, c.h7j)(e => (0, i.jsx)(g.Z, w(Z({}, e), {
@@ -376,10 +376,10 @@ class L extends r.PureComponent {
 }
 
 function B(e) {
-  let t = (0, l.e7)([C.default], () => C.default.getCurrentUser());
+  let t = (0, l.e7)([E.default], () => E.default.getCurrentUser());
   a()(null != t, "TwoFactorAuth: currentUser cannot be undefined");
-  let n = (0, l.cj)([E.Z, j.default], () => ({
-    togglingSMS: E.Z.togglingSMS,
+  let n = (0, l.cj)([O.Z, j.default], () => ({
+    togglingSMS: O.Z.togglingSMS,
     hasTOTPEnabled: j.default.hasTOTPEnabled()
   }));
   return (0, i.jsx)(L, Z({

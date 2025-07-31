@@ -1,6 +1,6 @@
 /** Chunk was on 22243 **/
 n.d(t, {
-  Z: () => O,
+  Z: () => C,
   _: () => g._
 }), n(953529), n(388685);
 var i = n(255367),
@@ -22,7 +22,7 @@ var i = n(255367),
   _ = n(388032),
   j = n(283806);
 
-function E(e, t, n) {
+function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,7 +30,7 @@ function E(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class C extends r.PureComponent {
+class E extends r.PureComponent {
   componentDidMount() {
     this._initTimeout.start(1e3, this.setupVoiceActivity)
   }
@@ -170,14 +170,14 @@ class C extends r.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), E(this, "_initTimeout", new c.V7), E(this, "_silenceTimeout", new c.V7), E(this, "_messageTimeout", new c.V7), E(this, "_micTestStartTime", void 0), E(this, "state", {
+    super(...e), O(this, "_initTimeout", new c.V7), O(this, "_silenceTimeout", new c.V7), O(this, "_messageTimeout", new c.V7), O(this, "_micTestStartTime", void 0), O(this, "state", {
       volume: -100,
       isMicTesting: !1,
       isDetectingInput: !0,
       didDeafenUser: !1
-    }), E(this, "setupVoiceActivity", () => {
+    }), O(this, "setupVoiceActivity", () => {
       h.Z.getMediaEngine().on(o.aB.VoiceActivity, this.handleVoiceActivity)
-    }), E(this, "handleVoiceActivity", e => {
+    }), O(this, "handleVoiceActivity", e => {
       let {
         isMicTesting: t
       } = this.state;
@@ -195,13 +195,13 @@ class C extends r.PureComponent {
         volume: e,
         isDetectingInput: !0
       })
-    }), E(this, "handleToggleMicTest", () => {
+    }), O(this, "handleToggleMicTest", () => {
       this.state.isMicTesting ? this._micTestStop() : this._micTestStart()
     })
   }
 }
 
-function O(e) {
+function C(e) {
   var t, n;
   let {
     inputDevice: r,
@@ -249,14 +249,14 @@ function O(e) {
     ref: x,
     width: _
   } = (0, p.ZP)();
-  return (0, i.jsx)(C, function(e) {
+  return (0, i.jsx)(E, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         i = Object.keys(n);
       "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
         return Object.getOwnPropertyDescriptor(n, e).enumerable
       }))), i.forEach(function(t) {
-        E(e, t, n[t])
+        O(e, t, n[t])
       })
     }
     return e

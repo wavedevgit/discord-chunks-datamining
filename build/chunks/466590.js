@@ -40,9 +40,9 @@ function h(e) {
         position: "bottom",
         align: "center"
       },
-      size: E = "md",
-      onStepChange: C,
-      onRequestClose: O,
+      size: O = "md",
+      onStepChange: E,
+      onRequestClose: C,
       popoverRef: v,
       shouldShow: S
     } = e,
@@ -65,20 +65,20 @@ function h(e) {
   r.useEffect(() => {
     S && I(0)
   }, [S]), r.useEffect(() => {
-    null == C || C(N)
-  }, [N, C]);
+    null == E || E(N)
+  }, [N, E]);
   let y = _[N],
     A = N + 1 === _.length,
     P = r.useCallback(() => {
       var e;
-      null == y || null == (e = y.onCta) || e.call(y), A ? null == O || O() : I(e => e + 1)
-    }, [y, A, O]),
+      null == y || null == (e = y.onCta) || e.call(y), A ? null == C || C() : I(e => e + 1)
+    }, [y, A, C]),
     R = r.useCallback(() => {
-      null == O || O()
-    }, [O]),
+      null == C || C()
+    }, [C]),
     D = r.useCallback(() => {
-      null == O || O()
-    }, [O]);
+      null == C || C()
+    }, [C]);
   if (!S || null == y) return null;
   let Z = g({
     text: null != (b = null == (h = y.action) ? void 0 : h.text) ? b : A ? m.intl.string(m.t.i4jeWV) : m.intl.string(m.t.PDTjLC),
@@ -96,7 +96,7 @@ function h(e) {
         colorMix: null != y.gradientColor
       }), null != y.asset ? (0, i.jsx)(o.V, {
         asset: y.asset,
-        size: E
+        size: O
       }) : null, (0, i.jsx)(u.Y, {
         title: y.title,
         body: y.body,

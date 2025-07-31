@@ -1,6 +1,6 @@
 /** Chunk was on 43473 **/
 n.d(t, {
-  Z: () => p
+  Z: () => g
 });
 var r = n(255367),
   o = n(73800),
@@ -32,29 +32,49 @@ function m(e) {
 
 function p(e) {
   let {
+    applicationId: t,
+    userId: n,
+    gameName: c,
+    className: s,
+    children: u
+  } = e, m = (0, l.Z)({
+    location: "UserProfileWidgetGameDetailsCard",
+    applicationId: t,
+    source: a.m1.UserProfile,
+    sourceUserId: n,
+    trackEntryPointImpression: !0
+  }), p = o.useCallback(e => {
+    e.target === e.currentTarget && (null == m || m(e))
+  }, [m]), g = null != c ? c : d.intl.string(d.t.GIWFlJ), b = null != m;
+  return (0, r.jsxs)("div", {
+    className: s,
+    children: [b && (0, r.jsx)(i.P3F, {
+      className: f.clickableCard,
+      "aria-label": d.intl.formatToPlainString(d.t["8QLQBw"], {
+        gameName: g
+      }),
+      onClick: p
+    }), u]
+  })
+}
+
+function g(e) {
+  let {
     userId: t,
     game: n,
-    loading: p = !1,
-    disableInteraction: g = !1
+    loading: o = !1,
+    disableInteraction: a = !1
   } = e, {
-    gameName: x,
-    imageSrc: b,
-    applicationId: _,
-    comment: h,
-    tags: j
-  } = n, y = (0, l.Z)({
-    location: "UserProfileWidgetGameDetailsCard",
-    applicationId: _,
-    source: a.m1.UserProfile,
-    sourceUserId: t,
-    trackEntryPointImpression: !0
-  }), I = o.useCallback(e => {
-    e.target === e.currentTarget && (null == y || y(e))
-  }, [y]), v = () => (0, r.jsxs)(r.Fragment, {
+    gameName: l,
+    imageSrc: d,
+    applicationId: g,
+    comment: b,
+    tags: x
+  } = n, _ = () => (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.Z, {
-      imageSrc: b,
-      gameName: x,
-      applicationId: _,
+      imageSrc: d,
+      gameName: l,
+      applicationId: g,
       userId: t,
       disableInteraction: !0
     }), (0, r.jsxs)("div", {
@@ -62,11 +82,11 @@ function p(e) {
       children: [(0, r.jsx)(i.X6q, {
         variant: "text-md/normal",
         color: "text-default",
-        children: x
+        children: l
       }), (0, r.jsx)(m, {
-        text: h
+        text: b
       }), (0, r.jsx)(s.Z, {
-        tags: j
+        tags: x
       }), (0, r.jsx)(i.Text, {
         variant: "text-xs/normal",
         color: "text-secondary",
@@ -75,24 +95,21 @@ function p(e) {
       })]
     })]
   });
-  return p ? (0, r.jsxs)("div", {
+  return o ? (0, r.jsxs)("div", {
     className: f.card,
     children: [(0, r.jsx)("div", {
       className: u.gameCover
     }), (0, r.jsx)("div", {
       className: f.details
     })]
-  }) : g || null == y ? (0, r.jsx)("div", {
+  }) : a ? (0, r.jsx)("div", {
     className: f.card,
-    children: v()
-  }) : (0, r.jsxs)("div", {
+    children: _()
+  }) : (0, r.jsx)(p, {
+    applicationId: g,
+    userId: t,
+    gameName: l,
     className: f.card,
-    children: [(0, r.jsx)(i.P3F, {
-      className: f.clickableCard,
-      "aria-label": d.intl.formatToPlainString(d.t["8QLQBw"], {
-        gameName: x
-      }),
-      onClick: I
-    }), v()]
+    children: _()
   })
 }

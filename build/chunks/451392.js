@@ -28,9 +28,9 @@ function x(e) {
     preventDisabled: x,
     guildId: _,
     className: j,
-    showPremiumIcon: E = !0,
-    showResetThemeButton: C = !1,
-    forcedDivider: O
+    showPremiumIcon: O = !0,
+    showResetThemeButton: E = !1,
+    forcedDivider: C
   } = e, v = (0, u.ZP)(t.id, _), {
     primaryColor: S,
     secondaryColor: T
@@ -48,8 +48,8 @@ function x(e) {
     title: f.intl.string(f.t.DMeO2d),
     disabled: !N && !x,
     className: s()(b.__invalid_profileThemesSection, j),
-    showPremiumIcon: E,
-    forcedDivider: O,
+    showPremiumIcon: O,
+    forcedDivider: C,
     children: (0, i.jsxs)("div", {
       className: b.sectionContainer,
       children: [(0, i.jsx)("div", {
@@ -82,7 +82,7 @@ function x(e) {
             children: f.intl.string(f.t["8elvy8"])
           })
         })
-      }), C && null != _ && (0, i.jsx)("div", {
+      }), E && null != _ && (0, i.jsx)("div", {
         "data-button-hoisted-classname-wrapper": !0,
         className: b.resetButton,
         children: (0, i.jsx)(c.zxk, {

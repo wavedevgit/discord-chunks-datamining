@@ -48,7 +48,7 @@ function j() {
   } = (0, l.cj)([h.Z, u.Z], () => ({
     theme: h.Z.theme,
     platformZoom: u.Z.zoom
-  })), [j, E] = r.useState("upright"), C = ["normal", "medium", "semibold", "bold", "extrabold"], O = new Map([
+  })), [j, O] = r.useState("upright"), E = ["normal", "medium", "semibold", "bold", "extrabold"], C = new Map([
     ["normal", 400],
     ["medium", 500],
     ["semibold", 600],
@@ -157,14 +157,14 @@ function j() {
               value: "mono"
             }],
             onChange: e => {
-              E(e.value)
+              O(e.value)
             },
             value: j
           })
         })]
       }), (0, i.jsxs)("div", {
         className: x.textGrid,
-        children: [(0, i.jsx)("div", {}), C.map(e => (0, i.jsx)("div", {
+        children: [(0, i.jsx)("div", {}), E.map(e => (0, i.jsx)("div", {
           className: x.columnHeading,
           children: (0, i.jsx)(o.X6q, {
             variant: "eyebrow",
@@ -181,7 +181,7 @@ function j() {
               color: "text-muted",
               children: ["(", e * v / 100, ")"]
             }) : null]
-          }, e), C.map(t => {
+          }, e), E.map(t => {
             var n;
             let r = null != (n = "custom" === I ? T : I) ? n : "";
             return (0, i.jsx)("div", {
@@ -193,7 +193,7 @@ function j() {
                 }),
                 style: {
                   fontSize: e,
-                  fontWeight: O.get(t)
+                  fontWeight: C.get(t)
                 },
                 children: [(0, i.jsx)("p", {
                   children: r

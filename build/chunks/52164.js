@@ -41,26 +41,26 @@ function b(e) {
       return (0, d.uZ)(t)
     });
   if (null == j) return null;
-  let E = j.subscriptionPlanId,
-    C = c.Z.get(E);
-  s()(null != C, "Missing plan");
-  let O = (0, u.T4)(x.total, x.currency);
-  return C.interval === p.rV.YEAR ? t = h.intl.format(h.t["jPz/39"], {
-    price: O,
+  let O = j.subscriptionPlanId,
+    E = c.Z.get(O);
+  s()(null != E, "Missing plan");
+  let C = (0, u.T4)(x.total, x.currency);
+  return E.interval === p.rV.YEAR ? t = h.intl.format(h.t["jPz/39"], {
+    price: C,
     termsUrl: g.EYA.TERMS,
     paidURL: g.EYA.PAID_TERMS,
     privacyUrl: g.EYA.PRIVACY
-  }) : C.interval === p.rV.MONTH && (t = 1 === C.intervalCount ? h.intl.format(h.t.m27GpK, {
-    price: O,
+  }) : E.interval === p.rV.MONTH && (t = 1 === E.intervalCount ? h.intl.format(h.t.m27GpK, {
+    price: C,
     termsUrl: g.EYA.TERMS,
     paidURL: g.EYA.PAID_TERMS,
     privacyUrl: g.EYA.PRIVACY
   }) : h.intl.format(h.t["9xf5V1"], {
-    price: O,
+    price: C,
     termsUrl: g.EYA.TERMS,
     paidURL: g.EYA.PAID_TERMS,
     privacyUrl: g.EYA.PRIVACY,
-    intervalCount: C.intervalCount
+    intervalCount: E.intervalCount
   })), (0, i.jsx)(a.Text, {
     color: "text-muted",
     className: _,

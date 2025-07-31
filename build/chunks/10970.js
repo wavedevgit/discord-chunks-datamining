@@ -27,16 +27,16 @@ function x(e) {
     currentListing: h,
     alternativeListings: x,
     navigateToHome: j,
-    subscriptionGroup: E,
-    renewalSkuId: C
-  } = e, O = (0, a.y)(n, 100), v = (0, m.KK)(E.flags), S = v ? s.QTo : s.tBG, T = v ? f.intl.string(f.t["46YF2N"]) : f.intl.string(f.t.fFyGiI), N = null == (t = p.metadata) ? void 0 : t.application_subscription_guild_id, I = (0, r.e7)([d.Z], () => v && null != N ? d.Z.getGuild(N) : void 0, [N, v]), y = (0, r.e7)([u.Z], () => {
-    if (null != C) return u.Z.get(C)
-  }, [C]), A = (0, g.p)(p.currentPeriodEnd);
+    subscriptionGroup: O,
+    renewalSkuId: E
+  } = e, C = (0, a.y)(n, 100), v = (0, m.KK)(O.flags), S = v ? s.QTo : s.tBG, T = v ? f.intl.string(f.t["46YF2N"]) : f.intl.string(f.t.fFyGiI), N = null == (t = p.metadata) ? void 0 : t.application_subscription_guild_id, I = (0, r.e7)([d.Z], () => v && null != N ? d.Z.getGuild(N) : void 0, [N, v]), y = (0, r.e7)([u.Z], () => {
+    if (null != E) return u.Z.get(E)
+  }, [E]), A = (0, g.p)(p.currentPeriodEnd);
   return (0, i.jsxs)("div", {
     children: [(0, i.jsxs)("div", {
       className: b.header,
-      children: [null != O && (0, i.jsx)(s.Eep, {
-        src: O.href,
+      children: [null != C && (0, i.jsx)(s.Eep, {
+        src: C.href,
         imageClassName: b.appIcon,
         width: 48,
         height: 48
@@ -110,7 +110,7 @@ function x(e) {
             })
           })]
         })
-      }), x.map(e => e.skuId === C ? (0, i.jsx)(o.Z, {
+      }), x.map(e => e.skuId === E ? (0, i.jsx)(o.Z, {
         storeListing: e,
         cta: (0, i.jsx)(s.Text, {
           variant: "text-sm/semibold",

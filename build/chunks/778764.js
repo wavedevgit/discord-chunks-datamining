@@ -20,9 +20,9 @@ var i = n(255367),
   x = n(755733),
   _ = n(981631),
   j = n(388032),
-  E = n(49149);
+  O = n(49149);
 
-function C(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -41,7 +41,7 @@ function C(e) {
   return e
 }
 
-function O(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -60,7 +60,7 @@ function v(e) {
     onClose: a,
     ticket: c,
     challenge: m
-  } = e, b = (0, d.Dt)(), [C, O] = r.useState(""), [v, S] = r.useState(!0), [T, N] = r.useState(x.x.INIT), [I, y] = r.useState(""), [A, P] = r.useState(null), R = async () => {
+  } = e, b = (0, d.Dt)(), [E, C] = r.useState(""), [v, S] = r.useState(!0), [T, N] = r.useState(x.x.INIT), [I, y] = r.useState(""), [A, P] = r.useState(null), R = async () => {
     let e;
     N(x.x.REGISTER);
     let t = p.isPlatformEmbedded && h.ZP.supportsFeature(_.eRX.WEBAUTHN) ? h.ZP.webAuthnRegister(m) : s.Ue(JSON.parse(m)).then(e => JSON.stringify(e));
@@ -77,7 +77,7 @@ function v(e) {
     "aria-labelledby": b,
     parentComponent: "UserSettingsWebAuthn",
     children: [(0, i.jsxs)(o.xBx, {
-      className: E.header,
+      className: O.header,
       separator: !1,
       children: [(0, i.jsxs)(o.X6q, {
         id: b,
@@ -85,7 +85,7 @@ function v(e) {
         children: [T === x.x.INIT && j.intl.string(j.t.vrOCCg), T === x.x.REGISTER && j.intl.string(j.t.wePEBA), T === x.x.NAME && j.intl.string(j.t["cY/IOj"])]
       }), (0, i.jsx)(o.olH, {
         onClick: a,
-        className: E.modalCloseButton
+        className: O.modalCloseButton
       })]
     }), (0, i.jsxs)(o.MyZ, {
       activeSlide: T,
@@ -93,9 +93,9 @@ function v(e) {
       children: [(0, i.jsxs)(o.Mi4, {
         id: x.x.INIT,
         children: [(0, i.jsxs)(o.hzk, {
-          className: E.content,
+          className: O.content,
           children: [(0, i.jsx)("div", {
-            className: E.icon,
+            className: O.icon,
             children: (0, i.jsx)("img", {
               alt: "",
               src: n(773072)
@@ -122,9 +122,9 @@ function v(e) {
       }), (0, i.jsxs)(o.Mi4, {
         id: x.x.REGISTER,
         children: [(0, i.jsxs)(o.hzk, {
-          className: E.content,
+          className: O.content,
           children: [(0, i.jsx)("div", {
-            className: E.icon,
+            className: O.icon,
             children: (0, i.jsx)("img", {
               alt: "",
               src: n(773072)
@@ -146,16 +146,16 @@ function v(e) {
         id: x.x.NAME,
         children: (0, i.jsxs)("form", {
           onSubmit: e => {
-            e.preventDefault(), (0, f.Sr)(C, c, I).then(async () => {
+            e.preventDefault(), (0, f.Sr)(E, c, I).then(async () => {
               await (0, u.Yn)(!1)
             }).then(() => a()).catch(() => {
               P(j.intl.string(j.t.fEptJC)), N(x.x.INIT)
             })
           },
           children: [(0, i.jsxs)(o.hzk, {
-            className: E.content,
+            className: O.content,
             children: [(0, i.jsx)("div", {
-              className: E.icon,
+              className: O.icon,
               children: (0, i.jsx)("img", {
                 alt: "",
                 src: n(637163)
@@ -165,17 +165,17 @@ function v(e) {
                 variant: "text-md/normal",
                 children: j.intl.string(j.t["Jzd+z8"])
               }), (0, i.jsx)(l.Is, {
-                className: E.input,
-                value: C,
+                className: O.input,
+                value: E,
                 onChange: e => {
-                  O(e), S(0 === e.length)
+                  C(e), S(0 === e.length)
                 },
                 autoFocus: !0,
                 minLength: 1
               })]
             })]
           }), (0, i.jsx)(o.mzw, {
-            className: E.footer,
+            className: O.footer,
             children: (0, i.jsxs)(o.hE2, {
               direction: "horizontal-reverse",
               children: [(0, i.jsx)(o.zxk, {
@@ -216,7 +216,7 @@ function S(e) {
           let {
             default: e
           } = await n.e("804").then(n.bind(n, 89616));
-          return t => (0, i.jsx)(e, C({
+          return t => (0, i.jsx)(e, E({
             credential: r
           }, t))
         })
@@ -246,15 +246,15 @@ function T() {
   let [n, s] = r.useState(!1);
   return (0, i.jsxs)(o.hjN, {
     title: j.intl.string(j.t.y7SXYW),
-    className: E.settings,
+    className: O.settings,
     children: [(0, i.jsx)(o.R94, {
       type: o.R94.Types.DESCRIPTION,
-      className: E.description,
+      className: O.description,
       children: j.intl.string(j.t.TMukAA)
     }), e.length > 0 && (0, i.jsx)("div", {
-      className: E.credentialList,
+      className: O.credentialList,
       children: e.map(e => (0, i.jsxs)("div", {
-        className: E.credentialItem,
+        className: O.credentialItem,
         children: [(0, i.jsx)(o.Text, {
           variant: "text-md/semibold",
           children: e.name
@@ -263,16 +263,16 @@ function T() {
           color: l.zx.Colors.TRANSPARENT,
           size: l.zx.Sizes.ICON,
           onClick: t => {
-            (0, c.vq)(t, t => (0, i.jsx)(S, O(C({}, t), {
+            (0, c.vq)(t, t => (0, i.jsx)(S, C(E({}, t), {
               credential: e
             })))
           },
           "aria-label": j.intl.string(j.t["+nrTbG"]),
-          innerClassName: E.credentialOptions,
+          innerClassName: O.credentialOptions,
           children: (0, i.jsx)(o.Huf, {
             size: "md",
-            className: E.__invalid_overflowIcon,
-            colorClass: E.__invalid_overflowIconFg,
+            className: O.__invalid_overflowIcon,
+            colorClass: O.__invalid_overflowIconFg,
             "aria-hidden": !0
           })
         })]
@@ -288,7 +288,7 @@ function T() {
               ticket: t,
               challenge: n
             } = e;
-            (0, o.h7j)(e => (0, i.jsx)(v, O(C({}, e), {
+            (0, o.h7j)(e => (0, i.jsx)(v, C(E({}, e), {
               ticket: t,
               challenge: n
             })))

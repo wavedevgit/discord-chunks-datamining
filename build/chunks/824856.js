@@ -27,13 +27,13 @@ function b(e) {
     benefits: x,
     description: _
   } = n, j = r.useMemo(() => null == n.thumbnail ? null : (0, g.q)(b, n.thumbnail, 256), [b, n.thumbnail]), {
-    data: E
-  } = (0, d.X)(n.skuId), C = r.useMemo(() => {
-    if (null == E || 0 === E.length) return null;
-    let e = E[0];
+    data: O
+  } = (0, d.X)(n.skuId), E = r.useMemo(() => {
+    if (null == O || 0 === O.length) return null;
+    let e = O[0];
     return (0, m.xg)(e)
-  }, [E]);
-  return null == C ? null : (0, i.jsxs)(l.l, {
+  }, [O]);
+  return null == E ? null : (0, i.jsxs)(l.l, {
     className: a()(f.wrapper, s),
     header: (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsxs)("div", {
@@ -49,7 +49,7 @@ function b(e) {
             children: n.summary
           }), (0, i.jsx)(c.Text, {
             variant: "text-md/medium",
-            children: C
+            children: E
           })]
         })]
       }), t]

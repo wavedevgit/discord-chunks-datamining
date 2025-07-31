@@ -21,7 +21,7 @@ var r = l(255367),
 function y(e) {
   return t => null != t && !(0, d.pM)(e, t)
 }
-let x = (e, t, l) => {
+let g = (e, t, l) => {
     let r = h.Uu(l, t),
       [i, a] = n.useState(r);
     return {
@@ -29,7 +29,7 @@ let x = (e, t, l) => {
       setShouldEveryonePost: a
     }
   },
-  g = e => {
+  x = e => {
     let {
       rolesRow: t
     } = e;
@@ -52,14 +52,14 @@ let x = (e, t, l) => {
     } = e, {
       shouldEveryonePost: k,
       setShouldEveryonePost: C
-    } = x(t, l, b), N = function(e) {
+    } = g(t, l, b), N = function(e) {
       let t = (0, a.e7)([f.Z], () => f.Z.getSortedRoles(e.id));
       return n.useMemo(() => (0, m.K)(t).filter(t => y(e.id)(t.id)), [e, t])
-    }(t), H = N.reduce((e, t) => (e.set(t.id, t), e), new Map), P = N.map(e => ({
+    }(t), H = N.reduce((e, t) => (e.set(t.id, t), e), new Map), E = N.map(e => ({
       key: e.key,
       label: e.name,
       value: e.id
-    })), [_, E] = n.useState(S.map(e => e.id).filter(y(t.id))), [R, Z] = n.useState(!1), [G, K] = n.useState(!1), M = _.length > 0 || k, B = function(e, t) {
+    })), [P, _] = n.useState(S.map(e => e.id).filter(y(t.id))), [R, Z] = n.useState(!1), [G, K] = n.useState(!1), M = P.length > 0 || k, B = function(e, t) {
       let l = (0, a.e7)([f.Z], () => f.Z.getSortedRoles(e.id));
       return n.useCallback((r, n) => {
         let a = (0, m.K)(l),
@@ -85,7 +85,7 @@ let x = (e, t, l) => {
           p = [],
           f = [];
         return a.forEach(t => {
-          var l, n, a, u, m, w, v, y, x, g;
+          var l, n, a, u, m, w, v, y, g, x;
           let b = t.id,
             j = o.has(b);
           j ? p.push({
@@ -96,15 +96,15 @@ let x = (e, t, l) => {
           }) : (0, d.pM)(e.id, b) ? p.push({
             id: b,
             type: c.BN.ROLE,
-            allow: i.Od(null != (x = null == (v = s[b]) ? void 0 : v.allow) ? x : h.Hn, r),
-            deny: i.IH(null != (g = null == (y = s[b]) ? void 0 : y.deny) ? g : h.Hn, r)
+            allow: i.Od(null != (g = null == (v = s[b]) ? void 0 : v.allow) ? g : h.Hn, r),
+            deny: i.IH(null != (x = null == (y = s[b]) ? void 0 : y.deny) ? x : h.Hn, r)
           }) : b in s && f.push(b)
         }, []), (0, u.kU)(t.id, p, f)
       }, [e, l, t])
     }(t, l), T = async () => {
       if (!M) return;
       Z(!0), K(!1);
-      let e = [..._];
+      let e = [...P];
       if (k) {
         let l = (0, p.lV)(t);
         e.push(l)
@@ -137,12 +137,12 @@ let x = (e, t, l) => {
         maxVisibleItems: 5,
         placeholder: w.intl.string(w.t["8kKqCQ"]),
         multi: !0,
-        value: _,
-        options: P,
+        value: P,
+        options: E,
         onChange: e => {
-          E(e)
+          _(e)
         },
-        renderOptionPrefix: e => null != e ? (0, r.jsx)(g, {
+        renderOptionPrefix: e => null != e ? (0, r.jsx)(x, {
           rolesRow: H.get(e.value)
         }) : null
       }), (0, r.jsxs)("div", {
@@ -155,7 +155,7 @@ let x = (e, t, l) => {
           children: w.intl.string(w.t.kPwwAw)
         }), (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
-          children: w.intl.format(w.t.NjCtHx, {})
+          children: w.intl.format(w.t.l7Ercn, {})
         })]
       }), G ? (0, r.jsx)("div", {
         className: v.row,

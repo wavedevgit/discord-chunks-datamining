@@ -21,7 +21,7 @@ var i = n(255367),
   _ = n(346537),
   j = n(830318);
 
-function E(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -40,7 +40,7 @@ function E(e) {
   return e
 }
 
-function C(e, t) {
+function E(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -52,7 +52,7 @@ function C(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let O = {
+let C = {
     [f.cq.THUMBNAIL]: null,
     [f.cq.STATIC]: null,
     [f.cq.REDUCED_MOTION]: null
@@ -63,7 +63,7 @@ let O = {
       effect: t
     } = e, {
       upsertConfig: n
-    } = (0, h.n6)(), s = (0, o.e7)([g.default], () => g.default.getCurrentUser()), [S, T] = r.useState(!0), N = r.useRef(null), [I, y] = r.useState(!1), [A, P] = r.useState(!1), [R, D] = r.useState([]), [Z, w] = r.useState(O), k = r.useRef([]), [L, B] = r.useState(t.name), M = L.toLowerCase().replace(/\s+/g, "_"), U = r.useMemo(() => ({
+    } = (0, h.n6)(), s = (0, o.e7)([g.default], () => g.default.getCurrentUser()), [S, T] = r.useState(!0), N = r.useRef(null), [I, y] = r.useState(!1), [A, P] = r.useState(!1), [R, D] = r.useState([]), [Z, w] = r.useState(C), k = r.useRef([]), [L, B] = r.useState(t.name), M = L.toLowerCase().replace(/\s+/g, "_"), U = r.useMemo(() => ({
       type: l.Z.PROFILE_EFFECT,
       id: v,
       skuId: v,
@@ -79,7 +79,7 @@ let O = {
     }, G = (e, t) => {
       let n = V(t);
       null != n && (0, f.i0)(n, t => {
-        w(i => C(E({}, i), {
+        w(i => E(O({}, i), {
           [e]: (0, f.z)(t, n)
         }))
       })
@@ -90,7 +90,7 @@ let O = {
           let r = [...i],
             s = i[t];
           if (null == s) return i;
-          let a = E({}, s);
+          let a = O({}, s);
           return null == a.randomizedSources && (a.randomizedSources = []), a.randomizedSources.push({
             src: e,
             filename: n.name
@@ -98,7 +98,7 @@ let O = {
         })
       })
     }, H = e => {
-      w(t => C(E({}, t), {
+      w(t => E(O({}, t), {
         [e]: null
       }))
     };
@@ -117,7 +117,7 @@ let O = {
         let [t, n] = e;
         if (null != n) {
           let e = (0, f.$j)(n.base64);
-          n.src = e, k.current.push(e), w(e => C(E({}, e), {
+          n.src = e, k.current.push(e), w(e => E(O({}, e), {
             [t]: n
           }))
         }
@@ -280,9 +280,9 @@ let O = {
                   text: "Download Timing Config"
                 })
               }), (0, i.jsx)(u.Z, {
-                fileContents: () => JSON.stringify(C(E({}, t), {
+                fileContents: () => JSON.stringify(E(O({}, t), {
                   name: L,
-                  config: C(E({}, t.config), {
+                  config: E(O({}, t.config), {
                     effects: R,
                     stillFrames: Z
                   })
@@ -365,7 +365,7 @@ let O = {
               variant: "critical-secondary",
               text: "Clear Assets",
               onClick: () => {
-                D([]), w(O)
+                D([]), w(C)
               }
             })
           }), R.map((e, t) => (0, i.jsxs)("div", {

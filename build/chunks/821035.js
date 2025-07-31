@@ -26,9 +26,9 @@ function j(e) {
   let {
     isNested: n = !1
   } = e, j = null == (t = (0, m.Z)()) || t, {
-    explicitContentGuilds: E,
-    explicitContentFriendDm: C,
-    explicitContentNonFriendDm: O
+    explicitContentGuilds: O,
+    explicitContentFriendDm: E,
+    explicitContentNonFriendDm: C
   } = (0, d.B)(), v = e => {
     let t = Object.values(e);
     if ((0, o.Ks)() && t.includes(r.Q4.SHOW)) return void a.Z.showAgeVerificationGetStartedModal(l.cU.SENSITIVE_MEDIA_FILTER_SETTINGS);
@@ -58,7 +58,7 @@ function j(e) {
         }), (0, i.jsx)(s.q4e, {
           look: s.qQH.CUSTOM,
           options: S,
-          value: C,
+          value: E,
           onChange: e => v({
             explicitContentFriendDm: e
           }),
@@ -80,7 +80,7 @@ function j(e) {
         }), (0, i.jsx)(s.q4e, {
           look: s.qQH.CUSTOM,
           options: S,
-          value: O,
+          value: C,
           onChange: e => v({
             explicitContentNonFriendDm: e
           }),
@@ -103,7 +103,7 @@ function j(e) {
         }), (0, i.jsx)(s.q4e, {
           look: s.qQH.CUSTOM,
           options: T,
-          value: E,
+          value: O,
           onChange: e => v({
             explicitContentGuilds: e
           }),
@@ -135,7 +135,7 @@ function j(e) {
         titleClassName: _.selectItemTitle,
         children: (0, i.jsx)(s.q4e, {
           options: S,
-          value: C,
+          value: E,
           onChange: e => v({
             explicitContentFriendDm: e
           })
@@ -146,7 +146,7 @@ function j(e) {
         titleClassName: _.selectItemTitle,
         children: (0, i.jsx)(s.q4e, {
           options: S,
-          value: O,
+          value: C,
           onChange: e => v({
             explicitContentNonFriendDm: e
           })
@@ -157,7 +157,7 @@ function j(e) {
         titleClassName: _.selectItemTitle,
         children: (0, i.jsx)(s.q4e, {
           options: T,
-          value: E,
+          value: O,
           onChange: e => v({
             explicitContentGuilds: e
           }),

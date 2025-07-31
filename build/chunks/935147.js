@@ -20,9 +20,9 @@ var i = n(255367),
   x = n(629654),
   _ = n(53691),
   j = n(165583),
-  E = n(267717),
-  C = n(643879),
-  O = n(350327),
+  O = n(267717),
+  E = n(643879),
+  C = n(350327),
   v = n(996073),
   S = n(25990),
   T = n(626135),
@@ -99,7 +99,7 @@ function V(e) {
     sourceAnalyticsLocations: er
   } = (0, c.ZP)(o.Z.USER_SETTINGS_TRY_OUT_PREMIUM), es = e => {
     if (e) {
-      if ((0, l.I5)(K), (0, O.z5)(Y), (0, O.ho)(q), null != J) {
+      if ((0, l.I5)(K), (0, C.z5)(Y), (0, C.ho)(q), null != J) {
         let e = u.Z.getProduct(J.skuId);
         null != e && (0, p.G1)(e) ? (0, d.fK)(e.skuId).then(() => (0, l.cV)(J)) : null != m.Z.getPurchase(J.skuId) && (0, l.cV)(J)
       }
@@ -159,24 +159,24 @@ function V(e) {
           }), (0, i.jsx)(Z.Z, {
             className: U.customizationSection,
             user: V,
-            pendingAvatarSrc: (0, C.SD)({
+            pendingAvatarSrc: (0, E.SD)({
               userId: V.id,
               image: null != K ? K : z
             }),
             pendingColors: null != Y ? Y : W,
-            onThemeColorsChange: O.rf,
+            onThemeColorsChange: C.rf,
             showPremiumIcon: !1,
             preventDisabled: !0
           }), (0, i.jsx)(R.Z, {
             className: U.customizationSection,
             isTryItOutFlow: !0,
             showRemoveBannerButton: null != q,
-            onBannerChange: O.f4,
+            onBannerChange: C.f4,
             showPremiumIcon: !1
           }), (0, i.jsx)(A.Z, {
             className: U.customizationSection,
             isTryItOutFlow: !0,
-            onAvatarChange: O.c_,
+            onAvatarChange: C.c_,
             showRemoveAvatarButton: !1,
             changeAvatarButtonText: M.intl.string(M.t["7z0D1d"]),
             sectionTitle: M.intl.string(M.t.vtFfPT)
@@ -202,7 +202,7 @@ function V(e) {
         showUpsell: !0,
         text: M.intl.format(M.t.TmfgIy, {
           onClick: () => {
-            (0, E.y)({
+            (0, O.y)({
               analyticsSource: ei,
               onSubscribeFinish: es
             })

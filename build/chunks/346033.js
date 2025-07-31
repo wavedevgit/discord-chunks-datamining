@@ -20,9 +20,9 @@ var i = n(255367),
   x = n(74538),
   _ = n(367074),
   j = n(140465),
-  E = n(286961),
-  C = n(639119),
-  O = n(8647),
+  O = n(286961),
+  E = n(639119),
+  C = n(8647),
   v = n(784238),
   S = n(218390),
   T = n(823188),
@@ -62,12 +62,12 @@ let M = e => {
       J = null != X ? (0, x.Af)(X) : null,
       Q = null != J ? x.ZP.getSkuIdForPlan(J.planId) : null,
       $ = null !== Q && Q !== D.Si.TIER_2 ? D.Si.TIER_2 : null,
-      ee = (0, C.N)(),
+      ee = (0, E.N)(),
       et = null == ee || null == (e = ee.subscription_trial) ? void 0 : e.sku_id,
       en = (0, j.Nx)(),
       ei = (0, _.Vi)(),
       er = null != ei && ei,
-      es = null == (t = (0, E.Z)()) ? void 0 : t.billingSettingsMarketingBanner,
+      es = null == (t = (0, O.Z)()) ? void 0 : t.billingSettingsMarketingBanner,
       {
         analyticsLocations: ea
       } = (0, p.ZP)(m.Z.PREMIUM_MARKETING);
@@ -142,8 +142,8 @@ let M = e => {
         })
       }), (0, i.jsx)("div", {
         className: L.promoBannerContainer,
-        children: (0, i.jsx)(O.Z, {
-          variant: O.C.NITRO_SETTINGS
+        children: (0, i.jsx)(C.Z, {
+          variant: C.C.NITRO_SETTINGS
         })
       }), el, null != es && (0, i.jsx)(S.C, {
         className: L.giftPromoCard,

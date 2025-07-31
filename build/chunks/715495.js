@@ -1,6 +1,6 @@
 /** Chunk was on 22243 **/
 n.d(t, {
-  Z: () => E
+  Z: () => O
 }), n(388685), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749);
 var i = n(255367),
   r = n(73800),
@@ -51,9 +51,9 @@ function j(e, t) {
   }), e
 }
 
-function E() {
+function O() {
   var e;
-  let [t, n] = (0, r.useState)(!1), [s, l] = (0, r.useState)(!1), [d, g] = (0, r.useState)(null), [f, E] = (0, r.useState)(320), I = (0, r.useRef)(null), y = (0, r.useRef)(null), A = (0, r.useRef)(null), P = (0, u.ZP)(e => e.toolsCache), {
+  let [t, n] = (0, r.useState)(!1), [s, l] = (0, r.useState)(!1), [d, g] = (0, r.useState)(null), [f, O] = (0, r.useState)(320), I = (0, r.useRef)(null), y = (0, r.useRef)(null), A = (0, r.useRef)(null), P = (0, u.ZP)(e => e.toolsCache), {
     setToolsCache: R,
     removeToolsCache: D
   } = (0, u.L3)(), {
@@ -82,7 +82,7 @@ function E() {
   }, [D]), B = (0, r.useCallback)(e => {
     if (null != I.current) {
       let t = I.current.getBoundingClientRect();
-      E(Math.max(264, Math.min(432, e.clientX - t.left)))
+      O(Math.max(264, Math.min(432, e.clientX - t.left)))
     }
   }, []), M = (0, r.useCallback)(e => {
     e.preventDefault(), e.stopPropagation();
@@ -173,7 +173,7 @@ function E() {
             let {
               url: t
             } = e;
-            return (0, i.jsx)(C, {
+            return (0, i.jsx)(E, {
               src: t,
               onSetStatic: w,
               removeAsset: L
@@ -186,7 +186,7 @@ function E() {
             darkBackground: e,
             lightBackground: e
           })
-        }), (0, i.jsx)(O, {
+        }), (0, i.jsx)(C, {
           label: "set",
           onClick: () => {}
         })]
@@ -195,7 +195,7 @@ function E() {
   })
 }
 
-function C(e) {
+function E(e) {
   let {
     src: t,
     onSetStatic: n,
@@ -228,7 +228,7 @@ function C(e) {
   })
 }
 
-function O(e) {
+function C(e) {
   let {
     label: t,
     onClick: n

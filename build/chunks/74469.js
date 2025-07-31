@@ -24,10 +24,10 @@ let _ = (0, o.hQ)(),
       availablePrimaryGuilds: t,
       pendingPrimaryGuildId: n,
       onChange: o
-    } = e, [j, E] = (0, c.US)([a.z.GUILD_TAG_USER_PROFILE_NEW_BADGE]), C = r.useMemo(() => new Map(t.map(e => [e.id, e])), [t]), O = (0, s.e7)([p.default], () => {
+    } = e, [j, O] = (0, c.US)([a.z.GUILD_TAG_USER_PROFILE_NEW_BADGE]), E = r.useMemo(() => new Map(t.map(e => [e.id, e])), [t]), C = (0, s.e7)([p.default], () => {
       var e;
       return (0, d.Pb)(null == (e = p.default.getCurrentUser()) ? void 0 : e.primaryGuild).guildId
-    }), v = void 0 !== n ? n : O, S = r.useMemo(() => t.reduce((e, t) => {
+    }), v = void 0 !== n ? n : C, S = r.useMemo(() => t.reduce((e, t) => {
       var n;
       return (null == (n = t.profile) ? void 0 : n.tag) != null && e.push({
         label: t.name,
@@ -36,7 +36,7 @@ let _ = (0, o.hQ)(),
     }, []), [t]), T = r.useCallback(e => {
       var t, n, r;
       if (null == e) return null;
-      let s = C.get(e.value);
+      let s = E.get(e.value);
       if (null == s) return null;
       let a = null == (t = s.profile) ? void 0 : t.tag;
       return null == a ? null : (0, i.jsx)(g.Z, {
@@ -47,16 +47,16 @@ let _ = (0, o.hQ)(),
         guildIcon: s.icon,
         guildIconSize: 32
       })
-    }, [C]), N = r.useCallback(e => {
+    }, [E]), N = r.useCallback(e => {
       let t = e[0];
       return null == t ? null : (0, i.jsx)(i.Fragment, {
         children: T(t)
       })
     }, [T]), I = r.useCallback(e => {
-      E(h.L.TAKE_ACTION), null == o || o(e)
-    }, [E, o]), y = r.useCallback(e => e === v, [v]), A = r.useCallback(e => e, []), P = r.useCallback(() => {
-      E(h.L.TAKE_ACTION), null == o || o(null)
-    }, [E, o]), R = r.useRef(null);
+      O(h.L.TAKE_ACTION), null == o || o(e)
+    }, [O, o]), y = r.useCallback(e => e === v, [v]), A = r.useCallback(e => e, []), P = r.useCallback(() => {
+      O(h.L.TAKE_ACTION), null == o || o(null)
+    }, [O, o]), R = r.useRef(null);
     return (0, m.Z)(R, f.Y_.GUILD_TAG), (0, i.jsxs)(u.Z, {
       title: b.intl.string(b.t.Pdd1nZ),
       titleId: _,
