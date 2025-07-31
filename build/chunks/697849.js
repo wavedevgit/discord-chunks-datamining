@@ -19,8 +19,8 @@ var i = t(255367),
   I = t(951539),
   v = t(592126),
   h = t(315416),
-  E = t(711373),
-  C = t(274311),
+  C = t(711373),
+  E = t(274311),
   b = t(854698),
   x = t(405613),
   T = t(285784),
@@ -62,7 +62,7 @@ function P(e) {
     isHub: d,
     isMember: o,
     recurrenceId: s
-  } = e, c = (0, f.xt)(n), _ = (0, r.e7)([f.ZP], () => f.ZP.isInterestedInEventRecurrence(n.id, s), [s, n]), g = (0, I.ZP)(n), p = (0, r.e7)([u.Z], () => u.Z.isLurking(t.id), [t.id]), m = (0, C.T)(null == l ? void 0 : l.id, n.id), v = (0, D.Z)({
+  } = e, c = (0, f.xt)(n), _ = (0, r.e7)([f.ZP], () => f.ZP.isInterestedInEventRecurrence(n.id, s), [s, n]), g = (0, I.ZP)(n), p = (0, r.e7)([u.Z], () => u.Z.isLurking(t.id), [t.id]), m = (0, E.T)(null == l ? void 0 : l.id, n.id), v = (0, D.Z)({
     guild: t,
     channel: l,
     guildScheduledEvent: n,
@@ -96,22 +96,22 @@ let z = e => {
     parentGuildId: t,
     transitionState: u,
     initialRecurrenceId: I,
-    onClose: C
+    onClose: E
   } = e, {
     analyticsLocations: T
   } = (0, o.ZP)(d.Z.GUILD_EVENT_MODAL), [L, D] = l.useState(I), Z = (0, r.e7)([f.ZP], () => f.ZP.getGuildScheduledEvent(n), [n]), z = null == Z ? void 0 : Z.id, A = null == Z ? void 0 : Z.guild_id, {
     guild: R,
     isMember: k
-  } = (0, v.Z)(A, z), B = (0, c.Z)(t), w = null == Z ? void 0 : Z.channel_id, H = (0, r.e7)([_.Z], () => _.Z.getChannel(w), [w]), M = (0, s.Dt)(), [X, V] = l.useState(O.fL.EVENT_INFO), F = (0, E.Z)(z, L), Y = (0, h.Z)(A, z, L), [W, {
+  } = (0, v.Z)(A, z), B = (0, c.Z)(t), w = null == Z ? void 0 : Z.channel_id, H = (0, r.e7)([_.Z], () => _.Z.getChannel(w), [w]), M = (0, s.Dt)(), [X, V] = l.useState(O.fL.EVENT_INFO), F = (0, C.Z)(z, L), Y = (0, h.Z)(A, z, L), [W, {
     loading: q,
     error: K
   }] = (0, p.Z)(() => m.Z.getGuildEventUsers(null == Z ? void 0 : Z.id, L, A));
   l.useEffect(() => {
-    null == Z ? C() : g.default.track(U.rMx.OPEN_MODAL, {
+    null == Z ? E() : g.default.track(U.rMx.OPEN_MODAL, {
       type: O.zw,
       guild_id: Z.guild_id
     })
-  }, [Z, C]);
+  }, [Z, E]);
   let J = l.useRef(null),
     [Q, $] = l.useState(0);
   if (l.useLayoutEffect(() => {
@@ -135,7 +135,7 @@ let z = e => {
         source: (0, x.Z)(Z),
         className: G.banner
       }), (0, i.jsx)(j.Z, {
-        onClose: C,
+        onClose: E,
         selectedTab: X,
         onTabSelected: ee,
         userCount: Y,
@@ -159,7 +159,7 @@ let z = e => {
                 guild: R,
                 channel: H,
                 headerId: M,
-                onClose: C,
+                onClose: E,
                 onClickInterestedCount: () => ee(O.fL.RSVP_LIST),
                 isHub: B,
                 containerRef: J,
@@ -187,7 +187,7 @@ let z = e => {
           isMember: k,
           guild: R,
           channel: H,
-          onActionTaken: C,
+          onActionTaken: E,
           recurrenceId: en
         })
       })]

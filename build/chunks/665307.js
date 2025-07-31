@@ -30,7 +30,7 @@ var r, i = n(255367),
   j = n(388032),
   A = n(833972);
 
-function x(e, t, n) {
+function Z(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -39,14 +39,14 @@ function x(e, t, n) {
   }) : e[t] = n, e
 }
 
-function Z(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      x(e, t, n[t])
+      Z(e, t, n[t])
     })
   }
   return e
@@ -80,7 +80,7 @@ let L = (0, N.Mg)(d.Z.GAME_LIST_ROW_MIN_HEIGHT),
     } = e, a = r.libraryApplication.hasFlag(t);
     return (0, i.jsx)(h.ua7, {
       text: l,
-      children: e => (0, i.jsx)(n, Z({
+      children: e => (0, i.jsx)(n, x({
         className: o()(A.settingIcon, {
           [A.hidden]: !a
         })
@@ -106,7 +106,7 @@ let L = (0, N.Mg)(d.Z.GAME_LIST_ROW_MIN_HEIGHT),
           children: e.libraryApplication.getBranchedName(e.application)
         }), e.libraryApplication.hasFlag(P.eHb.PREMIUM) ? (0, i.jsx)(h.ua7, {
           text: j.intl.string(j.t.tG2SzM),
-          children: e => (0, i.jsx)(h.SrA, Z({
+          children: e => (0, i.jsx)(h.SrA, x({
             size: "md",
             color: "currentColor",
             className: A.nitroIcon
@@ -229,7 +229,7 @@ let L = (0, N.Mg)(d.Z.GAME_LIST_ROW_MIN_HEIGHT),
       onMouseEnter: () => l(t),
       onMouseLeave: a,
       onContextMenu: e => s(e, t),
-      children: (0, i.jsx)("div", Z({}, u))
+      children: (0, i.jsx)("div", x({}, u))
     })
   };
 class G extends(r = l.PureComponent) {
@@ -304,7 +304,7 @@ class G extends(r = l.PureComponent) {
       }
       e.num_applications_total++
     }
-    C.default.track(P.rMx.LIBRARY_VIEWED, w(Z({}, e), {
+    C.default.track(P.rMx.LIBRARY_VIEWED, w(x({}, e), {
       load_id: t.loadId
     }))
   }
@@ -387,24 +387,24 @@ class G extends(r = l.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), x(this, "_didUnmount", !1), x(this, "_rowRefs", {}), x(this, "state", {
+    super(...e), Z(this, "_didUnmount", !1), Z(this, "_rowRefs", {}), Z(this, "state", {
       overflowMenuRowKey: null,
       highlightedApplicationKey: null != this.props.location.state ? this.props.location.state.applicationId : null
-    }), x(this, "setActiveRowKey", e => {
+    }), Z(this, "setActiveRowKey", e => {
       this.setState({
         overflowMenuRowKey: e.key
       })
-    }), x(this, "clearActiveRowKey", () => {
+    }), Z(this, "clearActiveRowKey", () => {
       this._didUnmount || this.setState({
         overflowMenuRowKey: null
       })
-    }), x(this, "handleRowMouseEnter", e => {
+    }), Z(this, "handleRowMouseEnter", e => {
       this.props.isNavigatingByKeyboard || m.wX(e.key)
-    }), x(this, "handleRowMouseLeave", () => {
+    }), Z(this, "handleRowMouseLeave", () => {
       this.props.isNavigatingByKeyboard || m.wX(null)
-    }), x(this, "setRowRef", (e, t) => {
+    }), Z(this, "setRowRef", (e, t) => {
       this._rowRefs[t] = e
-    }), x(this, "handleApplicationContextMenu", (e, t) => {
+    }), Z(this, "handleApplicationContextMenu", (e, t) => {
       this.setActiveRowKey(t);
       let {
         analyticsContext: r
@@ -413,7 +413,7 @@ class G extends(r = l.PureComponent) {
         let {
           default: e
         } = await n.e("98335").then(n.bind(n, 485292));
-        return n => (0, i.jsx)(e, w(Z({}, n), {
+        return n => (0, i.jsx)(e, w(x({}, n), {
           applicationId: t.libraryApplication.id,
           branchId: t.libraryApplication.branchId,
           analyticsContext: r
@@ -448,7 +448,7 @@ function V(e) {
       activeRowKey: I.Z.activeRowKey,
       isNavigatingByKeyboard: I.Z.isNavigatingByKeyboard
     }));
-  return (0, i.jsx)(G, w(Z({}, e), {
+  return (0, i.jsx)(G, w(x({}, e), {
     analyticsContext: t,
     location: n,
     applicationViewItems: r,
@@ -460,6 +460,6 @@ function V(e) {
     isNavigatingByKeyboard: h
   }))
 }
-x(G, "defaultProps", {
+Z(G, "defaultProps", {
   stickyHeader: !1
 })

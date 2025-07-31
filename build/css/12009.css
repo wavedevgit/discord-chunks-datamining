@@ -1,6 +1,6 @@
 /**
   Module ID: 12009
-  Original File Name: 3775f1ca9b6ad84d
+  Original File Name: f6ae1c940e850bc2
 **/
 .header__553a5 {
     margin-top: -16px;
@@ -8,10 +8,8 @@
 }
 
 .headerArtWrapper__553a5 {
-    border-radius: 16px;
     margin-left: -16px;
     margin-right: -32px;
-    overflow: hidden;
     position: relative;
     width: calc(100% + 32px)
 }
@@ -19,7 +17,7 @@
 .headerArt__553a5 {
     background-position: 50%;
     background-size: cover;
-    border-radius: 0 0 8px 8px;
+    border-radius: 16px;
     padding-top: 25%;
     width: 100%
 }
@@ -36,23 +34,16 @@
     background-color: var(--background-base-lower)
 }
 
-.editButton__553a5 {
-    bottom: 24px;
-    box-shadow: var(--legacy-elevation-high);
+.editButtonContainer__553a5 {
+    bottom: min(24px,2vw);
     opacity: 0;
     position: absolute;
-    right: 24px;
-    transition: opacity .2 ease-in-out
+    right: min(24px,2vw);
+    transition: opacity .1s ease-in-out
 }
 
-.editButton__553a5:focus,.headerArtWrapper__553a5:hover .editButton__553a5 {
+.editButtonContainer__553a5:focus-within,.headerArtWrapper__553a5:hover .editButtonContainer__553a5 {
     opacity: 1
-}
-
-.editButtonInner__553a5 {
-    align-items: center;
-    display: flex;
-    gap: 8px
 }
 
 .headerIcon__553a5 {
@@ -498,4 +489,4 @@
     top: 1px
 }
 
-/*# sourceMappingURL=3775f1ca9b6ad84d.css.map*/
+/*# sourceMappingURL=f6ae1c940e850bc2.css.map*/

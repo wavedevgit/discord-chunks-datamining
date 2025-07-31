@@ -97,8 +97,8 @@ function j(e) {
       channel: O,
       user: j,
       nick: A,
-      mute: x,
-      deaf: Z,
+      mute: Z,
+      deaf: x,
       serverMute: w,
       serverDeaf: L
     } = e,
@@ -129,9 +129,9 @@ function j(e) {
       if (i) return P.mute
     }({
       serverDeaf: L,
-      deaf: Z,
+      deaf: x,
       serverMute: w,
-      mute: x,
+      mute: Z,
       localMute: R
     })) ? l : {},
     H = null != B ? I.intl.formatToPlainString(I.t["1+MVBA"], {

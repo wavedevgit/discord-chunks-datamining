@@ -518,7 +518,11 @@ let z = {
       let {
         setForegroundProcess: t
       } = this.getDiscordUtils();
-      return null != t && t(e)
+      try {
+        return null != t && t(e)
+      } catch (e) {
+        return !1
+      }
     },
     getDiscordMemoryUsage() {
       let {

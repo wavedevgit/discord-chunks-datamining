@@ -8,8 +8,8 @@ var r = n(255367),
   l = n(73800),
   i = n(846519),
   s = n(481060),
-  o = n(493773),
-  c = n(765305),
+  c = n(493773),
+  o = n(765305),
   a = n(388032),
   u = n(933747);
 
@@ -49,20 +49,20 @@ function g(t) {
   let {
     onInviteClick: e,
     canInvite: n,
-    isChannelPublic: c
+    isChannelPublic: o
   } = t, g = new i.V7, [b, f] = l.useState(!1);
-  (0, o.ZP)(() => () => {
+  (0, c.ZP)(() => () => {
     g.stop()
   });
   let j = t => {
     null != e && e(t), f(!0), g.start(1e3, () => f(!1))
   };
   return null == e ? null : (0, r.jsx)(s.ua7, {
-    text: m(n, c),
+    text: m(n, o),
     position: "top",
     tooltipClassName: u.tooltips,
     "aria-label": a.intl.string(a.t.Ej3B3d),
-    children: t => n && c ? (0, r.jsx)(s.zxk, p(d({}, t), {
+    children: t => n && o ? (0, r.jsx)(s.zxk, p(d({}, t), {
       variant: "secondary",
       icon: s.aAc,
       size: "sm",
@@ -103,15 +103,15 @@ function j(t) {
     isUserLurking: n,
     rsvped: l,
     canInvite: i,
-    isChannelPublic: o = !0,
+    isChannelPublic: c = !0,
     entityType: f,
     onContextMenu: m,
     onJoinClick: j,
     onRsvpClick: v,
     onStartClick: O,
     onInviteClick: h,
-    onEndClick: x,
-    onJoinGuildClick: y,
+    onEndClick: y,
+    onJoinGuildClick: x,
     isJoined: P = !1
   } = t, k = void 0 !== j;
   return (0, r.jsxs)("div", {
@@ -134,8 +134,8 @@ function j(t) {
     }) : null, (0, r.jsx)(g, {
       onInviteClick: h,
       canInvite: i,
-      isChannelPublic: o
-    }), e && f !== c.WX.EXTERNAL ? (0, r.jsx)(s.zxk, {
+      isChannelPublic: c
+    }), e && f !== o.WX.EXTERNAL ? (0, r.jsx)(s.zxk, {
       variant: "active",
       size: "sm",
       text: function(t) {
@@ -148,15 +148,15 @@ function j(t) {
       }({
         isJoined: P,
         canJoin: k,
-        isVoiceChannel: f === c.WX.VOICE
+        isVoiceChannel: f === o.WX.VOICE
       }),
       onClick: j,
       disabled: !k
-    }) : null, n && null != y && (0, r.jsx)(s.zxk, {
+    }) : null, n && null != x && (0, r.jsx)(s.zxk, {
       variant: "active",
       size: "sm",
       text: a.intl.string(a.t["2BP08P"]),
-      onClick: y
+      onClick: x
     }), !n && !e && null != v && (0, r.jsx)(b, {
       isUserRsvped: l,
       isUserLurking: n,
@@ -166,10 +166,10 @@ function j(t) {
       size: "sm",
       onClick: O,
       text: a.intl.string(a.t.I0v0Qk)
-    }), e && null != x ? (0, r.jsx)(s.zxk, {
+    }), e && null != y ? (0, r.jsx)(s.zxk, {
       variant: "secondary",
       size: "sm",
-      onClick: x,
+      onClick: y,
       text: a.intl.string(a.t.qaYzPD)
     }) : null]
   })

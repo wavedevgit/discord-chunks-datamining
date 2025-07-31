@@ -1,6 +1,6 @@
 /**
   Module ID: 56243
-  Original File Name: 17b3b48ef6ea8579
+  Original File Name: 5906432e3f1f556d
 **/
 .container__5537c {
     display: flex;
@@ -240,8 +240,10 @@
     height: 140px
 }
 
-.button__4fb8c {
-    align-self: center
+.buttonContainer__4fb8c {
+    display: flex;
+    justify-content: center;
+    padding-top: var(--space-8)
 }
 
 .container__6cf35 {
@@ -1280,4 +1282,4 @@
     z-index: 0
 }
 
-/*# sourceMappingURL=17b3b48ef6ea8579.css.map*/
+/*# sourceMappingURL=5906432e3f1f556d.css.map*/

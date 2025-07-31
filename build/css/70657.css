@@ -1,6 +1,6 @@
 /**
   Module ID: 70657
-  Original File Name: 37c2c3c043e77cff
+  Original File Name: 615322b6aec8d361
 **/
 .container__270b2 {
     flex-direction: row;
@@ -280,8 +280,10 @@
     height: 140px
 }
 
-.button__4fb8c {
-    align-self: center
+.buttonContainer__4fb8c {
+    display: flex;
+    justify-content: center;
+    padding-top: var(--space-8)
 }
 
 .wrapper_d5f3cd {
@@ -1090,4 +1092,4 @@
     padding: 16px
 }
 
-/*# sourceMappingURL=37c2c3c043e77cff.css.map*/
+/*# sourceMappingURL=615322b6aec8d361.css.map*/

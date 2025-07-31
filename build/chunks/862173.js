@@ -4,5 +4,5 @@ n.exports = {
   heading: "heading__4fb8c",
   scroller: "scroller__4fb8c",
   showScroller: "showScroller__4fb8c",
-  button: "button__4fb8c"
+  buttonContainer: "buttonContainer__4fb8c"
 }

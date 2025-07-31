@@ -19,8 +19,8 @@ var i = t(255367),
   I = t(51144),
   v = t(897285),
   h = t(978227),
-  E = t(894017),
-  C = t(79874),
+  C = t(894017),
+  E = t(79874),
   b = t(315416),
   x = t(236373),
   T = t(854698),
@@ -155,9 +155,9 @@ function Z(e) {
   } = e, I = (0, d.e7)([f.Z], () => null != f.Z.getGuild(t.id), [t.id]), {
     startTime: S,
     endTime: Z
-  } = (0, C.ZP)(n, p), P = (0, b.Z)(n.guild_id, n.id, p), z = l.useCallback(e => {
+  } = (0, E.ZP)(n, p), P = (0, b.Z)(n.guild_id, n.id, p), z = l.useCallback(e => {
     e.stopPropagation(), null != n && (0, s.Bk)(n)
-  }, [n]), A = (0, E.Z)(p, n.id), R = (0, h.Z)(n);
+  }, [n]), A = (0, C.Z)(p, n.id), R = (0, h.Z)(n);
   l.useEffect(() => {
     v.Z.getGuildEventUserCounts(t.id, n.id, null != p ? [p] : []), v.Z.getGuildEventsForCurrentUser(t.id)
   }, [t.id, n.id, p]);

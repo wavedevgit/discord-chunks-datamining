@@ -1,6 +1,6 @@
 /**
   Module ID: 30057
-  Original File Name: c48301ef2f5e2941
+  Original File Name: ab0611382ceb7fdf
 **/
 .container__270b2 {
     flex-direction: row;
@@ -116,8 +116,10 @@
     height: 140px
 }
 
-.button__4fb8c {
-    align-self: center
+.buttonContainer__4fb8c {
+    display: flex;
+    justify-content: center;
+    padding-top: var(--space-8)
 }
 
 .container__6cf35 {
@@ -341,4 +343,4 @@
     margin-top: 8px
 }
 
-/*# sourceMappingURL=c48301ef2f5e2941.css.map*/
+/*# sourceMappingURL=ab0611382ceb7fdf.css.map*/

@@ -30,8 +30,8 @@ var r = n(255367),
   P = n(652515),
   j = n(544978),
   A = n(540059),
-  x = n(591472),
-  Z = n(351051),
+  Z = n(591472),
+  x = n(351051),
   w = n(724383),
   L = n(135864),
   R = n(372900),
@@ -102,11 +102,11 @@ function eA(e) {
   }
   return e
 }
-let ex = (0, u.Un)({
+let eZ = (0, u.Un)({
     createPromise: () => Promise.resolve().then(n.bind(n, 267161)),
     webpackId: 267161
   }),
-  eZ = () => (0, r.jsx)("div", {
+  ex = () => (0, r.jsx)("div", {
     className: ej.loader,
     children: (0, r.jsx)(f.$jN, {})
   }),
@@ -114,37 +114,37 @@ let ex = (0, u.Un)({
     createPromise: () => n.e("78431").then(n.bind(n, 650788)),
     webpackId: 650788,
     name: "GuildShopPage",
-    renderLoader: eZ
+    renderLoader: ex
   }),
   eL = (0, u.Un)({
     createPromise: () => n.e("12009").then(n.bind(n, 231588)),
     webpackId: 231588,
     name: "GuildHomePage",
-    renderLoader: eZ
+    renderLoader: ex
   }),
   eR = (0, u.Un)({
     createPromise: () => Promise.all([n.e("58175"), n.e("6850"), n.e("9924")]).then(n.bind(n, 545918)),
     webpackId: 545918,
     name: "MemberSafetyPage",
-    renderLoader: eZ
+    renderLoader: ex
   }),
   eD = (0, u.Un)({
     createPromise: () => Promise.all([n.e("44156"), n.e("58227"), n.e("58121")]).then(n.bind(n, 603072)),
     webpackId: 603072,
     name: "ChannelsAndRolesPage",
-    renderLoader: eZ
+    renderLoader: ex
   }),
   ek = (0, u.Un)({
     createPromise: () => Promise.all([n.e("44156"), n.e("37709")]).then(n.bind(n, 599263)),
     webpackId: 599263,
     name: "GuildOnboardingPage",
-    renderLoader: eZ
+    renderLoader: ex
   }),
   eM = (0, u.Un)({
     createPromise: () => n.e("44799").then(n.bind(n, 393357)),
     webpackId: 393357,
     name: "GuildPowerupsPage",
-    renderLoader: eZ
+    renderLoader: ex
   }),
   eU = e => {
     let {
@@ -545,7 +545,7 @@ function e8() {
     O = (0, A.T)("AppView"),
     y = (0, T.useAppSidebarState)(e => !e.isOpen),
     C = (0, p.e7)([I.Z], () => I.Z.isFullscreenInContext()),
-    N = (0, p.e7)([x.Z], () => x.Z.isFrameActive());
+    N = (0, p.e7)([Z.Z], () => Z.Z.isFrameActive());
   return (0, r.jsx)("div", {
     className: ej.container,
     children: (0, r.jsx)(R.Z.Provider, {
@@ -553,7 +553,7 @@ function e8() {
       children: (0, r.jsxs)("div", {
         className: ej.base,
         "data-fullscreen": C,
-        children: [!C && (0, r.jsx)(ex, {}), d.tq ? null : (0, r.jsx)(eO.Z, {}), (0, r.jsxs)("div", {
+        children: [!C && (0, r.jsx)(eZ, {}), d.tq ? null : (0, r.jsx)(eO.Z, {}), (0, r.jsxs)("div", {
           className: ej.content,
           children: [(0, r.jsx)(S.Z, {}), (0, r.jsx)(e3, {
             isOnFullScreenCollectiblesShopRoute: u,
@@ -693,7 +693,7 @@ function e8() {
                   render: e0,
                   disableTrack: !0
                 })]
-              }), N && (0, r.jsx)(Z.Z, {})]
+              }), N && (0, r.jsx)(x.Z, {})]
             })
           })]
         })]

@@ -1,19 +1,19 @@
 /** Chunk was on 22347 **/
 n.d(e, {
-  Z: () => c
+  Z: () => o
 });
 var r = n(255367);
 n(73800);
 var l = n(481060),
   i = n(285784),
   s = n(388032),
-  o = n(794995);
+  c = n(794995);
 
-function c(t) {
+function o(t) {
   let {
     isActive: e,
     isUserLurking: n,
-    rsvped: c,
+    rsvped: o,
     onContextMenu: a,
     onRsvpClick: u,
     onGoToGuildClick: d,
@@ -26,7 +26,7 @@ function c(t) {
     isChannelPublic: v
   } = t;
   return (0, r.jsxs)("div", {
-    className: o.container,
+    className: c.container,
     children: [null != a ? (0, r.jsx)(l.ua7, {
       text: s.intl.string(s.t.UKOtz8),
       position: "top",
@@ -52,13 +52,13 @@ function c(t) {
           return t
         }({}, t), n = n = {
           onClick: a,
-          className: o.iconButton,
+          className: c.iconButton,
           children: (0, r.jsx)(l.xhG, {
             size: "custom",
             color: "currentColor",
             width: 20,
             height: 20,
-            className: o.icon
+            className: c.icon
           })
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(t, e) {
           var n = Object.keys(t);
@@ -76,7 +76,7 @@ function c(t) {
       canInvite: j,
       isChannelPublic: v
     }), g && !n && !e && null != u && (0, r.jsx)(i.S0, {
-      isUserRsvped: c,
+      isUserRsvped: o,
       isUserLurking: n,
       onRsvpClick: u
     }), g && !n && (!p || e) ? (0, r.jsx)(l.zxk, {

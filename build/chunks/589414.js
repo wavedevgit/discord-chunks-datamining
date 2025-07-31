@@ -1,11 +1,16 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => o,
+  a: () => a
 }), n(997841);
 var r = n(73800),
   i = n(149765);
 
 function a(e) {
-  return r.useMemo(() => null != e.flags && i.e$(i.vB(e.flags), i.r0(33)), [e])
+  return (null == e ? void 0 : e.flags) != null && i.e$(i.vB(e.flags), i.r0(33))
+}
+
+function o(e) {
+  return r.useMemo(() => a(e), [e])
 }

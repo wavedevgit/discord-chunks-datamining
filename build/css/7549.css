@@ -1,6 +1,6 @@
 /**
   Module ID: 7549
-  Original File Name: 268b3a75db03491a
+  Original File Name: 28beea60e43e2a5f
 **/
 .container__270b2 {
     flex-direction: row;
@@ -116,8 +116,10 @@
     height: 140px
 }
 
-.button__4fb8c {
-    align-self: center
+.buttonContainer__4fb8c {
+    display: flex;
+    justify-content: center;
+    padding-top: var(--space-8)
 }
 
 .container__6cf35 {
@@ -436,4 +438,4 @@
     border-color: ButtonText
 }
 
-/*# sourceMappingURL=268b3a75db03491a.css.map*/
+/*# sourceMappingURL=28beea60e43e2a5f.css.map*/
