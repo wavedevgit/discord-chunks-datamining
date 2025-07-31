@@ -31,8 +31,8 @@ var r = n(255367),
   P = n(747717),
   R = n(963123),
   N = n(281055),
-  k = n(46140),
-  I = n(981631),
+  I = n(46140),
+  k = n(981631),
   w = n(388032),
   A = n(844136);
 
@@ -77,9 +77,9 @@ function V(e) {
     autoplay: B,
     videoSessionId: Z,
     impressionRef: F,
-    parentModalOpenStartClockTime: q,
-    sourceQuestContent: U
-  } = e, H = (0, O.il)(V), Y = (0, b.tP)(V), Q = (0, u.e7)([v.Z], () => v.Z.getState().theme), G = (0, d.wj)(Q) ? I.BRd.DARK : I.BRd.LIGHT, z = (0, u.e7)([p.Z], () => p.Z.useReducedMotion), K = (0, g.aM)(), [X, W] = l.useState(H.progressSeconds), [$, J] = l.useState(!1), {
+    parentModalOpenStartClockTime: U,
+    sourceQuestContent: q
+  } = e, H = (0, O.il)(V), Y = (0, b.tP)(V), Q = (0, u.e7)([v.Z], () => v.Z.getState().theme), G = (0, d.wj)(Q) ? k.BRd.DARK : k.BRd.LIGHT, z = (0, u.e7)([p.Z], () => p.Z.useReducedMotion), K = (0, g.aM)(), [X, W] = l.useState(H.progressSeconds), [$, J] = l.useState(!1), {
     completedRatio: ee,
     completedRatioDisplay: et
   } = (0, b.I)(V), [en, er] = (0, D.G6)(w.intl.string(w.t.RDE0SU), w.intl.string(w.t["+5kSoa"]), 1700), el = null != (0, O.LM)(V.config), eo = (null == (t = V.userStatus) ? void 0 : t.claimedAt) != null ? el ? w.intl.string(w.t.WYchdX) : w.intl.string(w.t.vTgCW1) : w.intl.string(w.t.cfY4PD), ei = l.useCallback(() => {
@@ -87,9 +87,9 @@ function V(e) {
       content: S.jn.VIDEO_MODAL,
       ctaContent: E.jZ.COPY_QUEST_URL,
       impressionId: K,
-      sourceQuestContent: U
+      sourceQuestContent: q
     }), er()
-  }, [K, V.id, er, U]), ea = async () => {
+  }, [K, V.id, er, q]), ea = async () => {
     if (null != N) {
       let e = _.r.build(V.config).application.link;
       await (0, D.qP)(e) && N()
@@ -97,7 +97,7 @@ function V(e) {
       content: S.jn.VIDEO_MODAL,
       ctaContent: E.jZ.OPEN_GAME_LINK,
       impressionId: K,
-      sourceQuestContent: U
+      sourceQuestContent: q
     })
   }, es = l.useMemo(() => _.r.build(V.config).defaultRewardName, [V]), ec = w.intl.formatToPlainString(w.t["12IWPz"], {
     rewardName: es
@@ -167,8 +167,8 @@ function V(e) {
                     quest: V,
                     questContent: S.jn.VIDEO_MODAL,
                     autoplay: !1,
-                    location: k.dr.VIDEO_MODAL,
-                    sourceQuestContent: U
+                    location: I.dr.VIDEO_MODAL,
+                    sourceQuestContent: q
                   })
                 })
               }))
@@ -179,9 +179,9 @@ function V(e) {
             parentTransitionState: x,
             onOptimisticProgressUpdate: W,
             autoplay: B,
-            performanceClockStartTime: q,
+            performanceClockStartTime: U,
             onClose: N,
-            sourceQuestContent: U,
+            sourceQuestContent: q,
             orientation: ed
           }), (0, r.jsxs)("div", {
             className: A.contentFooter,
@@ -196,7 +196,7 @@ function V(e) {
               children: [(0, r.jsx)(m.zx, {
                 color: m.zx.Colors.PRIMARY,
                 onClick: ei,
-                size: m.zx.Sizes.NONE,
+                size: m.zx.Sizes.MEDIUM,
                 className: i()(A.copyLinkBtn, A.footerBtn),
                 children: en
               }), (0, r.jsx)(y.i, {
@@ -211,7 +211,7 @@ function V(e) {
                   ((0, O.xN)(V.config) || (0, O.Bg)(V.config)) && N()
                 },
                 questContent: S.jn.VIDEO_MODAL,
-                sourceQuestContent: U
+                sourceQuestContent: q
               })]
             })]
           })]

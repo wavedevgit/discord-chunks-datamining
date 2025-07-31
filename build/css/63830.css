@@ -1,6 +1,6 @@
 /**
   Module ID: 63830
-  Original File Name: d8e2984e82071d52
+  Original File Name: 5917c1757035e905
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -618,21 +618,18 @@
 .headerWithBadge_d6f39b {
 }
 
-.badge_d6f39b {
-    margin-bottom: var(--space-12)
-}
-
-.badge_d6f39b,.title_d6f39b {
-    text-align: center
-}
-
 .title_d6f39b {
-    margin: 0
+    margin: 0;
+    text-align: center
 }
 
 .headerBody_d6f39b {
     color: var(--text-secondary);
     margin: 0
+}
+
+.badgeContainer_d6f39b {
+    margin-bottom: var(--space-12)
 }
 
 .content_d6f39b {
@@ -740,18 +737,6 @@
 .actionsFullWidth_d6f39b>* {
     min-width: 0;
     width: 100%
-}
-
-.badgeBeta_d6f39b,.badgeEarlyAccess_d6f39b,.badgeNew_d6f39b {
-    background-color: var(--blurple-49);
-    border-radius: 100px;
-    box-sizing: border-box;
-    color: var(--white);
-    display: inline-block;
-    letter-spacing: .24px;
-    padding: 0 var(--space-8);
-    text-align: center;
-    text-transform: uppercase
 }
 
 .multistepIndicator_d6f39b {
@@ -1237,4 +1222,4 @@
     align-items: stretch
 }
 
-/*# sourceMappingURL=d8e2984e82071d52.css.map*/
+/*# sourceMappingURL=5917c1757035e905.css.map*/

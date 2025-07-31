@@ -1,31 +1,21 @@
 /** Chunk was on 22243 **/
 n.d(t, {
-  Y: () => u
+  Y: () => d
 });
 var i = n(255367),
   r = n(120356),
   s = n.n(r),
   a = n(756715),
-  l = n(481060),
-  o = n(388032),
+  l = n(446673),
+  o = n(481060),
   c = n(669546);
-let d = e => {
-  switch (e) {
-    case "new":
-      return o.intl.string(o.t.y2b7CA);
-    case "beta":
-      return o.intl.string(o.t.oW0eUV);
-    case "early_access":
-      return o.intl.string(o.t.EYxi0t)
-  }
-};
 
-function u(e) {
+function d(e) {
   var t;
   let {
     title: n,
     body: r,
-    badge: o,
+    badge: d,
     className: u,
     textLink: m,
     hasBottomMargin: p = !1
@@ -35,27 +25,17 @@ function u(e) {
       [c.hasActions]: p
     }),
     children: [(0, i.jsxs)("div", {
-      children: [null != o && (0, i.jsx)(l.Text, {
-        variant: "text-xs/bold",
-        className: s()(c.badge, (e => {
-          switch (e) {
-            case "new":
-              return c.badgeNew;
-            case "beta":
-              return c.badgeBeta;
-            case "early_access":
-              return c.badgeEarlyAccess;
-            default:
-              return ""
-          }
-        })(o)),
-        children: d(o).toUpperCase()
-      }), (0, i.jsx)(l.X6q, {
+      children: [null != d && (0, i.jsx)("div", {
+        className: c.badgeContainer,
+        children: (0, i.jsx)(l.C, {
+          badge: d
+        })
+      }), (0, i.jsx)(o.X6q, {
         variant: "heading-md/semibold",
         className: c.title,
         children: n
       })]
-    }), null != r && "" !== r && (0, i.jsx)(l.Text, {
+    }), null != r && "" !== r && (0, i.jsx)(o.Text, {
       variant: "text-sm/normal",
       className: c.headerBody,
       children: r
@@ -63,7 +43,7 @@ function u(e) {
       href: m.link,
       target: g ? "_blank" : void 0,
       rel: g ? "noopener noreferrer" : void 0,
-      children: (0, i.jsx)(l.Text, {
+      children: (0, i.jsx)(o.Text, {
         variant: "text-sm/normal",
         className: c.footerLink,
         children: m.text

@@ -1,6 +1,6 @@
 /**
   Module ID: 63942
-  Original File Name: 2f9129d5e69ffda7
+  Original File Name: a04eb40b1c0bd912
 **/
 .modalRoot_de2fa0 {
     border: none!important;
@@ -563,7 +563,7 @@
 }
 
 .copyLinkBtn_de2fa0 {
-    height: var(--custom-button-button-md-height)
+    min-width: auto
 }
 
 .theme-dark .footerBtn_de2fa0 {
@@ -826,4 +826,4 @@
     background-color: var(--white)
 }
 
-/*# sourceMappingURL=2f9129d5e69ffda7.css.map*/
+/*# sourceMappingURL=a04eb40b1c0bd912.css.map*/

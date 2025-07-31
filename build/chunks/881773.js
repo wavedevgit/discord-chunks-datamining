@@ -155,12 +155,12 @@ function j(e) {
     handlePlaybackBtnClick: P,
     handleTranscriptBtnClick: R,
     handleCaptionBtnClick: N,
-    handleFullScreenBtnClick: k,
-    handleSeekBackBtnClick: I,
+    handleFullScreenBtnClick: I,
+    handleSeekBackBtnClick: k,
     handleSeekForwardBtnClick: w,
     handleControlBarPendingInteraction: A,
     onVolumeChange: L
-  } = e, M = (0, f.km)(e => e.volume), V = (0, f.km)(e => e.setVolume), B = (0, f.km)(e => e.muted), Z = (0, f.km)(e => e.setMuted), F = (0, f.km)(e => e.transcriptEnabled), q = (0, f.km)(e => e.captionEnabled), U = (0, f.km)(e => e.fullScreenEnabled), H = (0, s.e7)([m.Z], () => m.Z.useReducedMotion), Y = (0, s.e7)([m.Z], () => m.Z.keyboardModeEnabled), [Q, G] = l.useState(B ? 0 : M), [z, K] = l.useState(!1), [X, W] = l.useState(!1), [{
+  } = e, M = (0, f.km)(e => e.volume), V = (0, f.km)(e => e.setVolume), B = (0, f.km)(e => e.muted), Z = (0, f.km)(e => e.setMuted), F = (0, f.km)(e => e.transcriptEnabled), U = (0, f.km)(e => e.captionEnabled), q = (0, f.km)(e => e.fullScreenEnabled), H = (0, s.e7)([m.Z], () => m.Z.useReducedMotion), Y = (0, s.e7)([m.Z], () => m.Z.keyboardModeEnabled), [Q, G] = l.useState(B ? 0 : M), [z, K] = l.useState(!1), [X, W] = l.useState(!1), [{
     volumeAnimSpring: $
   }, J] = (0, d.q_F)(() => ({
     from: {
@@ -188,7 +188,7 @@ function j(e) {
         Y || (e.preventDefault(), P());
         break;
       case g.Y1.SEEK_BACK:
-        I();
+        k();
         break;
       case g.Y1.SEEK_FORWARD:
         w();
@@ -197,12 +197,12 @@ function j(e) {
         N();
         break;
       case g.Y1.FULLSCREEN:
-        k();
+        I();
         break;
       case g.Y1.MUTE:
         en()
     }
-  }, [N, k, P, I, w, en, Y]);
+  }, [N, I, P, k, w, en, Y]);
   l.useEffect(() => {
     null != ee.current && ee.current.focus()
   }, []), l.useEffect(() => (J({
@@ -234,7 +234,7 @@ function j(e) {
         iconComponent: v.d,
         animationTime: S,
         visible: j,
-        onClick: I,
+        onClick: k,
         ariaLabel: b.intl.string(b.t.r9s3Ul),
         tooltipLabel: b.intl.string(b.t.r9s3Ul),
         shortcut: g.Y1.SEEK_BACK
@@ -321,16 +321,16 @@ function j(e) {
         iconComponent: p.c,
         animationTime: S,
         visible: j,
-        active: q,
+        active: U,
         onClick: N,
         ariaLabel: b.intl.string(b.t.bDSZOz),
         tooltipLabel: b.intl.string(b.t.bDSZOz),
         shortcut: g.Y1.CAPTION
       }), (0, r.jsx)(y, {
-        iconComponent: U ? d.wvt : d.NpZ,
+        iconComponent: q ? d.wvt : d.NpZ,
         animationTime: S,
         visible: j,
-        onClick: k,
+        onClick: I,
         ariaLabel: b.intl.string(b.t.vKZT5u),
         tooltipLabel: b.intl.string(b.t.vKZT5u),
         shortcut: g.Y1.FULLSCREEN

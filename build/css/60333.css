@@ -1,6 +1,6 @@
 /**
   Module ID: 60333
-  Original File Name: 1d2ad0be64a27e41
+  Original File Name: 788fe3d0186df690
 **/
 .ctaButtons_a77fde {
     display: grid;
@@ -702,7 +702,7 @@
 }
 
 .copyLinkBtn_de2fa0 {
-    height: var(--custom-button-button-md-height)
+    min-width: auto
 }
 
 .theme-dark .footerBtn_de2fa0 {
@@ -965,4 +965,4 @@
     background-color: var(--white)
 }
 
-/*# sourceMappingURL=1d2ad0be64a27e41.css.map*/
+/*# sourceMappingURL=788fe3d0186df690.css.map*/

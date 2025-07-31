@@ -2256,6 +2256,7 @@ function eO(e) {
     transitionState: t,
     onClose: s,
     graphic: o,
+    badge: "beta",
     title: "Expressive Modal",
     subtitle: "This is an expressive modal with a header image",
     actions: [{
