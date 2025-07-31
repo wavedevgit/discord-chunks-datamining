@@ -45,7 +45,7 @@ function i(e) {
     onAnalytics: s,
     emitIntervalMs: c,
     minSegmentDurationMs: u
-  } = e, [d, m] = r.useState(null), f = (0, r.useRef)(null), p = (0, r.useRef)(Date.now()), v = (0, r.useRef)(!1), g = (0, r.useCallback)(e => {
+  } = e, [d, m] = r.useState(null), f = (0, r.useRef)(null), p = (0, r.useRef)(Date.now()), v = (0, r.useRef)(!1), E = (0, r.useCallback)(e => {
     e.segmentEndSec < e.segmentStartSec || s({
       start_time: e.startTime,
       end_time: e.endTime,
@@ -54,7 +54,7 @@ function i(e) {
       segment_end_sec: e.segmentEndSec,
       segment_duration_sec: e.segmentEndSec - e.segmentStartSec
     })
-  }, [s]), b = (0, r.useCallback)(() => {
+  }, [s]), g = (0, r.useCallback)(() => {
     let e = t();
     if (null != e && i && a) {
       let t = Date.now();
@@ -65,11 +65,11 @@ function i(e) {
         segmentEndSec: e
       }), v.current = !0
     }
-  }, [t, i, a]), E = (0, r.useCallback)(() => {
+  }, [t, i, a]), O = (0, r.useCallback)(() => {
     let e = t();
     if (null == e || null == d) return;
     let n = Date.now();
-    !(n - p.current < c) && (e - d.segmentStartSec < u / 1e3 || (g(o(l({}, d), {
+    !(n - p.current < c) && (e - d.segmentStartSec < u / 1e3 || (E(o(l({}, d), {
       endTime: n,
       segmentEndSec: e
     })), m({
@@ -78,18 +78,18 @@ function i(e) {
       segmentStartSec: e,
       segmentEndSec: e
     }), p.current = n))
-  }, [d, g, c, u, t]);
+  }, [d, E, c, u, t]);
   return (0, r.useEffect)(() => {
     i && a || (m(null), v.current = !1)
   }, [i, a]), (0, r.useEffect)(() => {
-    if (n && i && a) v.current || b(), f.current = window.setInterval(() => {
-      E()
+    if (n && i && a) v.current || g(), f.current = window.setInterval(() => {
+      O()
     }, 200);
     else {
       let e = t();
       if (null != d && null != e) {
         let t = Date.now();
-        e - d.segmentStartSec > .2 && g(o(l({}, d), {
+        e - d.segmentStartSec > .2 && E(o(l({}, d), {
           endTime: t,
           segmentEndSec: e
         }))
@@ -99,17 +99,17 @@ function i(e) {
     return () => {
       null != f.current && (clearInterval(f.current), f.current = null)
     }
-  }, [n, i, a, d, E, g, b, t]), {
+  }, [n, i, a, d, O, E, g, t]), {
     forceSendCurrentSegment: (0, r.useCallback)(() => {
       let e = t();
       if (null != d && null != e) {
         let t = Date.now();
-        e - d.segmentStartSec > .2 && g(o(l({}, d), {
+        e - d.segmentStartSec > .2 && E(o(l({}, d), {
           endTime: t,
           segmentEndSec: e
         })), m(null), v.current = !1
       }
-    }, [d, g, t]),
+    }, [d, E, t]),
     isInitialized: v.current
   }
 }

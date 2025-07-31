@@ -1,6 +1,6 @@
 /** Chunk was on 32249 **/
 n.d(t, {
-  Z: () => E
+  Z: () => O
 }), n(388685);
 var r = n(255367),
   l = n(73800),
@@ -54,10 +54,10 @@ function v(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: m.endScreenCtaContainer,
-    children: [(0, r.jsx)(g, {
+    children: [(0, r.jsx)(E, {
       title: n,
       subtitle: l
-    }), (0, r.jsx)(b, {
+    }), (0, r.jsx)(g, {
       label: t,
       icon: s.d4D,
       onClick: o
@@ -65,7 +65,7 @@ function v(e) {
   })
 }
 
-function g(e) {
+function E(e) {
   let {
     title: t,
     subtitle: n
@@ -84,7 +84,7 @@ function g(e) {
   })
 }
 
-function b(e) {
+function g(e) {
   let {
     label: t,
     icon: n,
@@ -113,7 +113,7 @@ function b(e) {
     })]
   })
 }
-let E = function(e) {
+let O = function(e) {
   let {
     quest: t,
     ctaBtnLabel: n,
