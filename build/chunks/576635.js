@@ -20,20 +20,21 @@ function _(e) {
     displayProfile: p,
     pendingThemeColors: h,
     pendingAvatarSrc: m,
-    isPreview: g
-  } = e, E = (0, o.ZP)(), b = (0, i.e7)([s.Z], () => s.Z.syncProfileThemeWithUserTheme), y = null != m ? m : null == f ? void 0 : f.getAvatarURL(null == p ? void 0 : p.guildId, 80), O = (0, c.Sl)(d.Ilk.PRIMARY_530).hex, [v, I] = (0, l.Cf)(y, O, !1);
+    isPreview: g,
+    forceUserTheme: E
+  } = e, b = (0, o.ZP)(), y = (0, i.e7)([s.Z], () => s.Z.syncProfileThemeWithUserTheme), O = null != m ? m : null == f ? void 0 : f.getAvatarURL(null == p ? void 0 : p.guildId, 80), v = (0, c.Sl)(d.Ilk.PRIMARY_530).hex, [I, T] = (0, l.Cf)(O, v, !1);
   if (!(null == p ? void 0 : p.canEditThemes) && !g) return {
-    theme: E,
+    theme: b,
     primaryColor: null,
     secondaryColor: null
   };
-  let T = null == p ? void 0 : p.getPreviewThemeColors(h),
-    S = null != (t = null == T ? void 0 : T[0]) ? t : (0, r._i)(v),
-    A = null != (n = null == T ? void 0 : T[1]) ? n : (0, r._i)(I),
-    N = b ? E : null != (_ = (0, u.V3)(S)) ? _ : E;
-  return N === d.BRd.DARK && (0, a.wj)(E) ? N = E : N === d.BRd.DARK && (0, a.ap)(E) && (N = d.BRd.DARKER), {
-    theme: N,
-    primaryColor: S,
-    secondaryColor: A
+  let S = null == p ? void 0 : p.getPreviewThemeColors(h),
+    A = null != (t = null == S ? void 0 : S[0]) ? t : (0, r._i)(I),
+    N = null != (n = null == S ? void 0 : S[1]) ? n : (0, r._i)(T),
+    C = y || E ? b : null != (_ = (0, u.V3)(A)) ? _ : b;
+  return C === d.BRd.DARK && (0, a.wj)(b) ? C = b : C === d.BRd.DARK && (0, a.ap)(b) && (C = d.BRd.DARKER), {
+    theme: C,
+    primaryColor: A,
+    secondaryColor: N
   }
 }
