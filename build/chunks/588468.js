@@ -45,7 +45,7 @@ function x(e, t, n) {
   }) : e[t] = n, e
 }
 
-function k(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -58,7 +58,7 @@ function k(e) {
   return e
 }
 
-function M(e, t) {
+function k(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -70,7 +70,7 @@ function M(e, t) {
 }
 
 function j(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -118,7 +118,7 @@ class Z extends a.PureComponent {
         selected: o
       }
     } = this, l = this.isSelectable();
-    return (0, i.jsx)(d.P3F, j(k({}, e), {
+    return (0, i.jsx)(d.P3F, j(M({}, e), {
       className: s()(L.clickable, r, n),
       id: null != (t = B(a)) ? t : void 0,
       onClick: l ? this.handleClick : void 0,
@@ -285,7 +285,7 @@ class q extends Z {
       useReducedMotion: _.Z.useReducedMotion,
       roleStyle: "username",
       includeConvenienceGlow: !0
-    }), h = l ? k({}, u ? f : {
+    }), h = l ? M({}, u ? f : {
       color: null != r ? r : void 0
     }) : void 0;
     return (0, i.jsxs)(R.RX, {
@@ -472,7 +472,7 @@ class en extends Z {
 }
 class er extends Z {
   renderContent() {
-    return (0, i.jsx)(y.Z, k({}, this.props))
+    return (0, i.jsx)(y.Z, M({}, this.props))
   }
 }
 class ei extends Z {
@@ -515,7 +515,7 @@ class ea extends(r = a.PureComponent) {
       },
       children: (0, i.jsx)("div", {
         className: s()(L.autocomplete, n),
-        children: (0, i.jsx)("div", j(k({
+        children: (0, i.jsx)("div", j(M({
           className: s()(L.autocompleteInner, r)
         }, l), {
           children: t

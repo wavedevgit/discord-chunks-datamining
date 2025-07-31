@@ -179,7 +179,7 @@ function x() {
   m = !0
 }
 
-function k(e) {
+function M(e) {
   let {
     channel: t
   } = e;
@@ -187,7 +187,7 @@ function k(e) {
   m = !0
 }
 
-function M(e) {
+function k(e) {
   let {
     channels: t
   } = e;
@@ -280,8 +280,8 @@ let V = new B(o.Z, {
   GUILD_CREATE: x,
   GUILD_UPDATE: x,
   GUILD_DELETE: x,
-  CHANNEL_CREATE: k,
-  CHANNEL_UPDATES: M,
+  CHANNEL_CREATE: M,
+  CHANNEL_UPDATES: k,
   CHANNEL_DELETE: j,
   GUILD_MEMBER_UPDATE: U,
   GUILD_ROLE_CREATE: x,

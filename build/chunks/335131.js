@@ -7,9 +7,9 @@ n.d(t, {
   Ov: () => G,
   R2: () => U,
   Sm: () => C,
-  fK: () => M,
+  fK: () => k,
   fi: () => B,
-  jr: () => k,
+  jr: () => M,
   mK: () => N,
   oK: () => P,
   oc: () => D,
@@ -171,7 +171,7 @@ let N = e => {
         error: e
       }), e
     }
-  }, k = async (e, t) => {
+  }, M = async (e, t) => {
     s.Z.dispatch({
       type: "COLLECTIBLES_PRODUCT_FETCH",
       skuId: e
@@ -197,7 +197,7 @@ let N = e => {
         error: t
       })
     }
-  }, M = async e => {
+  }, k = async e => {
     s.Z.dispatch({
       type: "COLLECTIBLES_CLAIM",
       skuId: e

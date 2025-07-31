@@ -119,10 +119,10 @@ function L(e, t, n) {
 
 function x(e) {
   let t = h.Z.getChannel(e);
-  return null == t ? R : null == t.memberListId ? k(t) : t.memberListId
+  return null == t ? R : null == t.memberListId ? M(t) : t.memberListId
 }
 
-function k(e) {
+function M(e) {
   return _.oz(I.Plq.VIEW_CHANNEL, e) ? R : s().v3(a()(e.permissionOverwrites).reduce((e, t) => {
     let {
       id: n,
@@ -132,7 +132,7 @@ function k(e) {
     return l.e$(r, I.Plq.VIEW_CHANNEL) ? e.push("allow:".concat(n)) : l.e$(i, I.Plq.VIEW_CHANNEL) && e.push("deny:".concat(n)), e
   }, []).sort().join(",")).toString()
 }
-class M {
+class k {
   updateOwnerId() {
     let e = b.Z.getGuild(this.guildId);
     if (null == e) return !1;
@@ -211,7 +211,7 @@ class j {
     let n = this._guildLists[e];
     null == n && (n = this._guildLists[e] = {});
     let r = n[t];
-    return null == r && ((r = new M(e, t)).setGroups([{
+    return null == r && ((r = new k(e, t)).setGroups([{
       id: I.Skl.UNKNOWN,
       count: 0
     }]), n[t] = r), r

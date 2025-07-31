@@ -5,10 +5,10 @@ n.d(t, {
   Ks: () => B,
   Ws: () => Z,
   g2: () => j,
-  hf: () => k,
+  hf: () => M,
   k3: () => U,
   qN: () => F,
-  tP: () => M
+  tP: () => k
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -78,7 +78,7 @@ function x(e, t) {
   }), e
 }
 
-function k(e) {
+function M(e) {
   let {
     quest: t,
     questContent: n,
@@ -103,7 +103,7 @@ function k(e) {
   }, [t, d, n, r, a, c, u, s])
 }
 
-function M(e) {
+function k(e) {
   var t;
   let n = (0, o.Wu)([u.ZP], () => u.ZP.getGamesSeen(!1)).find(t => (null == t ? void 0 : t.id) === e);
   return null != n && Date.now() - 2592e7 <= (null != (t = n.lastLaunched) ? t : 0)
@@ -185,7 +185,7 @@ function B(e) {
     isVideoQuest: p,
     inGameQuest: y,
     sourceQuestContent: O
-  } = e, v = k({
+  } = e, v = M({
     quest: n,
     questContent: o,
     questContentPosition: s,
@@ -207,7 +207,7 @@ function B(e) {
       analyticsSource: l.Z.QUEST_HOME_PAGE
     })
   }, []), L = null == (t = (0, m.WD)()) ? void 0 : t.getId(), {
-    launchInGameActivity: M
+    launchInGameActivity: k
   } = (0, b.zB)(n);
   return i.useMemo(() => {
     if ((0, g.HJ)(n) && r !== b.OH.COMPLETED && r !== b.OH.CLAIMED) {
@@ -240,7 +240,7 @@ function B(e) {
               questContent: o,
               sourceQuestContent: O,
               sourceQuestContentCTA: h.jZ.ACCEPT_QUEST
-            }) : y && n.config.features.includes(N.S7.START_QUEST_CTA) && M()
+            }) : y && n.config.features.includes(N.S7.START_QUEST_CTA) && k()
           }
         };
       case b.OH.ACCEPTED:
@@ -277,7 +277,7 @@ function B(e) {
             text: e,
             tooltipText: P.intl.string(P.t.hsbwjo),
             onClick: () => {
-              n.config.features.includes(N.S7.START_QUEST_CTA) && M()
+              n.config.features.includes(N.S7.START_QUEST_CTA) && k()
             }
           }
         }
@@ -313,7 +313,7 @@ function B(e) {
           text: P.intl.string(P.t.bAGFz8)
         })
     }
-  }, [r, p, I, f, v, a, n, o, s, u, L, S, A, w, y, M, O])
+  }, [r, p, I, f, v, a, n, o, s, u, L, S, A, w, y, k, O])
 }
 
 function V() {

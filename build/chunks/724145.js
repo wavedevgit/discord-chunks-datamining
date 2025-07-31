@@ -35,7 +35,7 @@ var r = n(255367),
   D = n(474936),
   L = n(388032),
   x = n(595532);
-let k = () => (0, r.jsx)("div", {
+let M = () => (0, r.jsx)("div", {
     className: x.editorHeader,
     children: (0, r.jsxs)("div", {
       className: x.bannerUpsell,
@@ -48,7 +48,7 @@ let k = () => (0, r.jsx)("div", {
       })]
     })
   }),
-  M = e => {
+  k = e => {
     let {
       markAsDismissed: t
     } = e, n = (0, C.q)(), i = () => {
@@ -166,7 +166,7 @@ function G(e) {
       "data-app-right-panel": !0,
       className: o()(x.themeEditor, c ? x.editorAnimate : null),
       children: (0, r.jsxs)(_.y5t, {
-        children: [n ? (0, r.jsx)(k, {}) : (0, r.jsx)(M, {
+        children: [n ? (0, r.jsx)(M, {}) : (0, r.jsx)(k, {
           markAsDismissed: t
         }), (0, r.jsx)(_.Ttm, {
           className: x.editorBody,

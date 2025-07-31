@@ -85,8 +85,8 @@ function w(e, t, n) {
 function D(e, t) {
   var n, r, c, h, D;
   let L, x = (0, O.hp)(e),
-    k = P(t),
-    M = d.Z.getChannel(k),
+    M = P(t),
+    k = d.Z.getChannel(M),
     j = "streamKey" in t ? t.streamKey : void 0,
     U = "mediaContext" in t ? t.mediaContext : void 0,
     G = "underlyingError" in t ? t.underlyingError : void 0,
@@ -121,7 +121,7 @@ function D(e, t) {
     eu = null != J ? null == J ? void 0 : J.getVoiceParticipantType() : es ? "sender" : "receiver",
     ed = null != (r = null == $ ? void 0 : $.getMediaEngineConnectionId()) ? r : null;
   L = null != j && null != Q ? es ? null == $ || null == (c = $.getOutboundStats()) ? void 0 : c.find(e => e.quality === I.y7) : null == $ ? void 0 : $.getInboundStats(Q.ownerId) : es ? null != (D = i().maxBy(null != (h = null == $ ? void 0 : $.getOutboundStats()) ? h : [], e => e.num_frames)) ? D : null : null != ec ? null == $ ? void 0 : $.getInboundStats(ec) : null, (0, g.q)().then(t => {
-    var n, r, i, s, l, c, u, d, h, m, g, O, P, D, j, X, ee, e_, ef, ep, eh, em, eg, eE, eb, ey, eO, ev, eI, eT, eS, eA, eN, eC, eR, eP, ew, eD, eL, ex, ek, eM, ej, eU, eG, eB, eV, eF, eZ;
+    var n, r, i, s, l, c, u, d, h, m, g, O, P, D, j, X, ee, e_, ef, ep, eh, em, eg, eE, eb, ey, eO, ev, eI, eT, eS, eA, eN, eC, eR, eP, ew, eD, eL, ex, eM, ek, ej, eU, eG, eB, eV, eF, eZ;
     let eH = {
       error_name: e.valueOf(),
       error_code: x.errorCode,
@@ -129,9 +129,9 @@ function D(e, t) {
       error_category: x.category,
       underlying_error: null != G ? G : null,
       error_message: null != B ? B : null,
-      guild_id: null != (D = null == M ? void 0 : M.guild_id) ? D : null,
-      channel_id: null != k ? k : null,
-      channel_type: null != (j = null == M ? void 0 : M.type) ? j : null,
+      guild_id: null != (D = null == k ? void 0 : k.guild_id) ? D : null,
+      channel_id: null != M ? M : null,
+      channel_type: null != (j = null == k ? void 0 : k.type) ? j : null,
       rtc_connection_id: null != F ? F : null,
       media_session_id: null != (X = null != V ? V : f.Z.getMediaSessionId()) ? X : null,
       parent_media_session_id: null != (ee = null == J ? void 0 : J.parentMediaSessionId) ? ee : null,
@@ -170,8 +170,8 @@ function D(e, t) {
       cpu_vendor: null != (eD = null == t ? void 0 : t.cpu_vendor) ? eD : null,
       cpu_memory: null != (eL = null == t ? void 0 : t.cpu_memory) ? eL : null,
       gpu_brand: null != (ex = null == t ? void 0 : t.gpu_brand) ? ex : null,
-      gpu_count: null != (ek = null == t ? void 0 : t.gpu_count) ? ek : null,
-      gpu_memory: null != (eM = null == t ? void 0 : t.gpu_memory) ? eM : null,
+      gpu_count: null != (eM = null == t ? void 0 : t.gpu_count) ? eM : null,
+      gpu_memory: null != (ek = null == t ? void 0 : t.gpu_memory) ? ek : null,
       gpu_device_vendor_id: null != (ej = null == t ? void 0 : t.gpu_device_vendor_id) ? ej : null,
       gpu_device_device_id: null != (eU = null == t ? void 0 : t.gpu_device_device_id) ? eU : null,
       gpu_device_sub_sys_id: null != (eG = null == t ? void 0 : t.gpu_device_sub_sys_id) ? eG : null,

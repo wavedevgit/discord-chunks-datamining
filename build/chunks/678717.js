@@ -12,8 +12,8 @@ var n = a(255367),
   d = a(347469),
   u = a(213609),
   m = a(213713),
-  x = a(665149),
-  p = a(238246),
+  p = a(665149),
+  x = a(238246),
   h = a(788983),
   b = a(906467),
   f = a(259580),
@@ -291,14 +291,14 @@ function eo(e) {
       panel: d
     }
   }), (0, n.jsxs)(D.Gk, {
-    children: [(0, n.jsxs)(x.ZP, {
+    children: [(0, n.jsxs)(p.ZP, {
       className: ei.headerBar,
       toolbar: a ? null : (0, n.jsxs)(n.Fragment, {
-        children: [(0, n.jsx)(x.ZP.Icon, {
+        children: [(0, n.jsx)(p.ZP.Icon, {
           icon: c.rgF,
           tooltip: "Pop Out",
           onClick: () => {
-            (0, h.bA)(en.KJ3.DEVTOOLS_POPOUT, () => (0, n.jsx)(p.Z, {
+            (0, h.bA)(en.KJ3.DEVTOOLS_POPOUT, () => (0, n.jsx)(x.Z, {
               windowKey: en.KJ3.DEVTOOLS_POPOUT,
               title: "DevTools",
               withTitleBar: !0,
@@ -311,16 +311,16 @@ function eo(e) {
               height: 600
             })
           }
-        }), (0, n.jsx)(x.ZP.Icon, {
+        }), (0, n.jsx)(p.ZP.Icon, {
           icon: c.Dio,
           tooltip: er.intl.string(er.t.cpT0Cg),
           onClick: v.SO
         })]
       }),
-      children: [(0, n.jsx)(x.ZP.Icon, {
+      children: [(0, n.jsx)(p.ZP.Icon, {
         icon: c.Ymb,
         tooltip: "DevTools"
-      }), (0, n.jsx)(x.ZP.Title, {
+      }), (0, n.jsx)(p.ZP.Title, {
         children: "DevTools"
       })]
     }), (0, n.jsx)(i, {}), o(), (0, n.jsx)(D.Br, {
@@ -368,15 +368,15 @@ function ed() {
     className: el.container,
     children: (0, n.jsx)(c.P3F, {
       onClick: v.SO,
-      children: (0, n.jsxs)(x.ZP, {
+      children: (0, n.jsxs)(p.ZP, {
         className: i()(ei.headerBar, el.mobileHeaderCollapsed),
         toolbar: (0, n.jsx)(f.Z, {
           direction: f.Z.Directions.UP
         }),
-        children: [(0, n.jsx)(x.ZP.Icon, {
+        children: [(0, n.jsx)(p.ZP.Icon, {
           icon: c.Ymb,
           tooltip: "DevTools"
-        }), (0, n.jsx)(x.ZP.Title, {
+        }), (0, n.jsx)(p.ZP.Title, {
           children: "DevTools"
         })]
       })

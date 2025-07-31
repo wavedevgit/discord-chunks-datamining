@@ -42,8 +42,8 @@ let N = new m.Z("AuthenticationStore"),
   D = null,
   L = null,
   x = null,
-  k = null,
   M = null,
+  k = null,
   j = T.u34.NONE,
   U = !1,
   G = [],
@@ -115,7 +115,7 @@ function J(e) {
 }
 
 function $() {
-  k = x, x = null, c.K.remove(C)
+  M = x, x = null, c.K.remove(C)
 }
 
 function ee(e, t) {
@@ -123,7 +123,7 @@ function ee(e, t) {
 }
 
 function et(e) {
-  M = e, a.setAnalyticsToken(e)
+  k = e, a.setAnalyticsToken(e)
 }
 
 function en() {
@@ -222,9 +222,9 @@ function em(e) {
 function eg(e) {
   let t = e.fingerprint;
   null == x ? null != t ? (b.default.track(T.rMx.USER_FINGERPRINT_CHANGED, {
-    old_fingerprint: null != k ? (0, o.s)(k) : null,
+    old_fingerprint: null != M ? (0, o.s)(M) : null,
     new_fingerprint: (0, o.s)(t)
-  }), x = t, k = t, c.K.set(C, x)) : Q() : null != t && x !== t && b.default.track(T.rMx.EXTERNAL_FINGERPRINT_DROPPED, {
+  }), x = t, M = t, c.K.set(C, x)) : Q() : null != t && x !== t && b.default.track(T.rMx.EXTERNAL_FINGERPRINT_DROPPED, {
     fingerprint: (0, o.s)(x),
     dropped_fingerprint: (0, o.s)(t)
   })
@@ -258,7 +258,7 @@ function ey(e) {
     analyticsToken: i,
     token: a
   } = e;
-  O.Z.setUser(n.id, n.username, null != (t = n.email) ? t : void 0, (0, E.Z)(n)), w = r, M = i, ee(a, n.id), null != i && et(i), $(), P = n.id, c.K.set(R, n.id)
+  O.Z.setUser(n.id, n.username, null != (t = n.email) ? t : void 0, (0, E.Z)(n)), w = r, k = i, ee(a, n.id), null != i && et(i), $(), P = n.id, c.K.set(R, n.id)
 }
 
 function eO(e) {
@@ -360,7 +360,7 @@ class ew extends(i = s.ZP.Store) {
     return x
   }
   getAnalyticsToken() {
-    return null != M ? M : a.getAnalyticsToken()
+    return null != k ? k : a.getAnalyticsToken()
   }
   getMFATicket() {
     return B

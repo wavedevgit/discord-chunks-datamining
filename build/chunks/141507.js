@@ -46,8 +46,8 @@ let P = e => {
     let t, w, D, {
         className: L,
         emojiGrid: x,
-        guildId: k,
-        pickerIntention: M,
+        guildId: M,
+        pickerIntention: k,
         channel: j
       } = e,
       {
@@ -92,11 +92,11 @@ let P = e => {
       F = (0, a.e7)([E.Z], () => E.Z.isFocused()),
       Z = (0, a.e7)([l.Z], () => l.Z.useReducedMotion, []),
       H = m.Yk.useSetting(),
-      Y = (0, O.C1)(k, R(t) ? t : null),
+      Y = (0, O.C1)(M, R(t) ? t : null),
       W = (0, a.e7)([c.ZP], () => c.ZP.expandedSectionsByGuildIds),
       {
         newlyAddedEmojis: K
-      } = (0, v.Z)(k, M),
+      } = (0, v.Z)(M, k),
       z = (null == B ? void 0 : B.type) === T.ld.EMOJI ? B.subCategory : S.t0.NONE;
     if (i.useEffect(() => {
         let e = Date.now();
@@ -105,7 +105,7 @@ let P = e => {
             emoji: t,
             subCategory: z,
             position: B.columnIndex + 1,
-            newlyAddedHighlight: z === S.t0.NEWLY_ADDED_EMOJI && d.Z.isNewerThanLastSeen(k, t.id)
+            newlyAddedHighlight: z === S.t0.NEWLY_ADDED_EMOJI && d.Z.isNewerThanLastSeen(M, t.id)
           }))
         }
       }), null == t) return null;
@@ -156,8 +156,8 @@ let P = e => {
     let J = U && "CREATE_EMOJI" === t.type ? A.intl.string(A.t["Z/r7IS"]) : P({
       inspectedEmoji: t,
       channel: j,
-      guildId: k,
-      intention: M,
+      guildId: M,
+      intention: k,
       guild: V
     });
     return (0, r.jsx)(p.Z, {

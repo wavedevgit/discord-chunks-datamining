@@ -155,7 +155,7 @@ function L(e) {
     compact: b = !1,
     disableInteraction: v = !1,
     maxVisibleUsers: T = 3
-  } = e, A = i.useRef(null), R = (0, p.Z)(), [L, x] = i.useState(!1), k = i.useRef(new u.sW(C, () => x(!1))), M = (0, c.Wu)([m.Z, g.default], () => {
+  } = e, A = i.useRef(null), R = (0, p.Z)(), [L, x] = i.useState(!1), M = i.useRef(new u.sW(C, () => x(!1))), k = (0, c.Wu)([m.Z, g.default], () => {
     if (s.type === y.fO.STREAM) {
       let e = m.Z.getViewerIds(s.id);
       return e.length > 0 ? e.map(e => g.default.getUser(e)).filter(E.lm) : D
@@ -163,13 +163,13 @@ function L(e) {
     return s.type === y.fO.ACTIVITY && s.participants.length > 0 ? Array.from(s.participants).map(e => g.default.getUser(e.userId)).filter(E.lm) : D
   }, [s]);
   i.useEffect(() => {
-    R && (k.current.cancel(), x(!1))
+    R && (M.current.cancel(), x(!1))
   }, [R]);
   let j = i.useCallback(() => {
-      k.current.cancel(), x(!0)
+      M.current.cancel(), x(!0)
     }, []),
     U = i.useCallback(() => {
-      k.current.delay()
+      M.current.delay()
     }, []),
     G = i.useCallback((e, t) => {
       j(), (0, _.jW)(e, async () => {
@@ -183,24 +183,24 @@ function L(e) {
         onClose: U
       })
     }, [U, j]);
-  if (0 === M.length) return null;
+  if (0 === k.length) return null;
   if (b) return (0, r.jsx)(w, {
     maxVisibleUsers: T,
-    users: M,
+    users: k,
     guildId: a,
     channelId: t,
     className: h,
     participantType: s.type
   });
-  let B = l()(M).take(T).map(e => (0, r.jsx)(d.qEK, {
+  let B = l()(k).take(T).map(e => (0, r.jsx)(d.qEK, {
     src: e.getAvatarURL(a, 24),
     "aria-label": e.username,
     size: d.EFr.SIZE_24,
     className: I.viewer
   }, e.id)).value();
-  return M.length > T && (B[B.length - 1] = (0, r.jsxs)("div", {
+  return k.length > T && (B[B.length - 1] = (0, r.jsxs)("div", {
     className: I.overflow,
-    children: ["+", M.length - T + 1]
+    children: ["+", k.length - T + 1]
   }, "overflow")), (0, r.jsx)(f.Z, {
     section: O.jXE.STREAM_VIEWER_POPOUT,
     children: (0, r.jsx)("div", {
@@ -213,7 +213,7 @@ function L(e) {
           handleUserContextMenu: G,
           guildId: a,
           channelId: t,
-          users: M,
+          users: k,
           disableInteraction: v
         }),
         shouldShow: L && !R,

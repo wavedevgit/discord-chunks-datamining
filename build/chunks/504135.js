@@ -78,17 +78,17 @@ function b(e) {
     dontCloseOnActionIfHoldingShiftKey: D,
     dontCloseOnAction: L,
     iconProps: x,
-    sparkle: k
+    sparkle: M
   } = e, {
-    onSelect: M,
+    onSelect: k,
     onInteraction: j
   } = i.useContext(c.p), U = i.useRef(null), G = i.useCallback(e => {
     var t;
     if (null == j || j({
         type: c.U.DEFAULT
       }), null == A) return !1;
-    e.shiftKey && D || L || N(), e.persist(), null == M || M(), (null != (t = e.nativeEvent.view) ? t : window).requestAnimationFrame(() => A(e))
-  }, [A, N, M, D, L, j]);
+    e.shiftKey && D || L || N(), e.persist(), null == k || k(), (null != (t = e.nativeEvent.view) ? t : window).requestAnimationFrame(() => A(e))
+  }, [A, N, k, D, L, j]);
   return i.useEffect(() => {
     T && ((0, u.F)(U), null == C || C())
   }, [T, C]), (0, r.jsxs)(s.P, E(m({
@@ -137,7 +137,7 @@ function b(e) {
         size: "md",
         color: "currentColor",
         className: o()(p.caret, w)
-      }), k && (0, r.jsx)(_.K1N, {
+      }), M && (0, r.jsx)(_.K1N, {
         className: p.sparkles
       })]
     })]

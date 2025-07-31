@@ -66,13 +66,13 @@ function x(e, t) {
   return n
 }
 
-function k(e, t) {
+function M(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 new E.Z("ChannelEditor.tsx");
-let M = function() {
+let k = function() {
     for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n]
   },
   j = 1e3;
@@ -227,7 +227,7 @@ class U extends i.Component {
       required: P,
       maxCharacterCount: D,
       allowNewLines: x,
-      "aria-describedby": M,
+      "aria-describedby": k,
       "aria-labelledby": j,
       accessibilityLabel: U
     } = this.props, {
@@ -274,17 +274,17 @@ class U extends i.Component {
       "aria-expanded": null !== B.id || void 0,
       "aria-activedescendant": null != (s = B.activeDescendant) ? s : void 0,
       "aria-invalid": l.length > D,
-      "aria-describedby": M,
+      "aria-describedby": k,
       "aria-labelledby": j,
       "aria-autocomplete": "list"
-    }, F = E ? (0, r.jsx)(N.Z, k(L({
+    }, F = E ? (0, r.jsx)(N.Z, M(L({
       ref: this.ref
     }, V), {
       type: g,
       value: u ? (0, I.JM)("") : c,
       canUseCommands: null == (t = g.commands) ? void 0 : t.enabled,
       canOnlyUseTextCommands: T
-    })) : (0, r.jsx)(A.Z, k(L({
+    })) : (0, r.jsx)(A.Z, M(L({
       ref: this.ref
     }, V), {
       value: u ? "" : l
@@ -411,7 +411,7 @@ class U extends i.Component {
         {
           files: v
         } = G(e.clipboardData, u.uploadLongMessages ? O : null);
-      return M("onPaste", [...e.clipboardData.items].map(e => {
+      return k("onPaste", [...e.clipboardData.items].map(e => {
         if ("file" !== e.kind) return {
           kind: e.kind,
           type: e.type

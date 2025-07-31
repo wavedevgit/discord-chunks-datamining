@@ -106,13 +106,13 @@ function w(e) {
       commandOptions: e.options,
       commandOptionStates: n
     }
-  }), k = i.useMemo(() => {
+  }), M = i.useMemo(() => {
     var e;
     return null != (e = null == L ? void 0 : L.filter(e => {
       var t;
       return e.type === _.jw.ATTACHMENT && (null == x || null == (t = x[e.name]) ? void 0 : t.hasValue)
     })) ? e : []
-  }, [L, x]), [M, j] = i.useState([]);
+  }, [L, x]), [k, j] = i.useState([]);
   i.useEffect(() => {
     let e = () => {
       d.Z.clearAll(t, n.drafts.type)
@@ -128,8 +128,8 @@ function w(e) {
   });
   let G = {
       isApplicationCommand: D,
-      previousUploadOptions: M,
-      uploadOptions: k
+      previousUploadOptions: k,
+      uploadOptions: M
     },
     B = i.useRef(G);
   i.useEffect(() => {
@@ -148,9 +148,9 @@ function w(e) {
         d.Z.remove(t, e.name, n.drafts.type)
       }), j(i)
     }
-  }, [t, k.length, n]);
+  }, [t, M.length, n]);
   let V = w.filter(e => e.filename !== a);
-  return !D && 0 === V.length || D && 0 === k.length ? null : (0, r.jsx)(s.bG, {
+  return !D && 0 === V.length || D && 0 === M.length ? null : (0, r.jsx)(s.bG, {
     navigator: R,
     children: (0, r.jsx)(s.SJ, {
       children: e => {
@@ -161,7 +161,7 @@ function w(e) {
           ref: i
         }, a), {
           className: o()(v.channelAttachmentArea, I.scrollbarGhost),
-          children: D ? k.map(e => (0, r.jsx)(b.Z, {
+          children: D ? M.map(e => (0, r.jsx)(b.Z, {
             channelId: t,
             keyboardModeEnabled: A,
             option: e

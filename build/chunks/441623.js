@@ -113,11 +113,11 @@ function x() {
   S.length = 0, A.clear(), N = {}
 }
 
-function k() {
+function M() {
   x()
 }
 
-function M() {
+function k() {
   T = I(), x()
 }
 
@@ -246,8 +246,8 @@ m(z, "displayName", "PremiumGiftingIntentStore"), m(z, "persistKey", "PremiumGif
   }
 }]);
 let q = new z(c.Z, {
-  CONNECTION_OPEN: k,
-  LOGOUT: M,
+  CONNECTION_OPEN: M,
+  LOGOUT: k,
   MESSAGE_GIFT_INTENT_SHOWN: U,
   FRIENDS_LIST_GIFT_INTENTS_SHOWN: j,
   FRIENDS_TAB_BADGE_DISMISS: G,

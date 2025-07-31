@@ -2,8 +2,8 @@
 "use strict";
 let r;
 n.d(t, {
-  Jc: () => M,
-  dx: () => k,
+  Jc: () => k,
+  dx: () => M,
   tE: () => G
 });
 var i, a = n(73800),
@@ -340,7 +340,7 @@ function L() {
   null == e || R(e, D) ? null != w && cancelAnimationFrame(w) : (D = e, null == r || r.invalidate()), w = requestAnimationFrame(L)
 }
 let x = !1,
-  k = {
+  M = {
     get ringsEnabled() {
       return x
     },
@@ -355,7 +355,7 @@ let x = !1,
     }
   };
 
-function M(e) {
+function k(e) {
   let {
     containerRef: t,
     children: n,
@@ -374,7 +374,7 @@ function j() {
     [, t] = a.useState({});
   return a.useEffect(() => (e.invalidate = () => t({}), () => {
     e.invalidate = () => null
-  }), [e]), k.ringsEnabled && e.visible ? (0, o.jsx)("div", {
+  }), [e]), M.ringsEnabled && e.visible ? (0, o.jsx)("div", {
     className: d("focus-rings-ring", e.className),
     style: e.getStyle()
   }) : null

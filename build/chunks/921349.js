@@ -72,7 +72,7 @@ function L(e, t) {
 
 function x(e, t) {
   if (null == e) return {};
-  var n, r, i = k(e, t);
+  var n, r, i = M(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -80,14 +80,14 @@ function x(e, t) {
   return i
 }
 
-function k(e, t) {
+function M(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let M = 44,
+let k = 44,
   j = {
     keys: ["label"]
   };
@@ -173,8 +173,8 @@ let V = i.forwardRef(function(e, t) {
     isProcessing: w = !1,
     maxVisibleItems: D = 7,
     look: L = N.q.FILLED,
-    autoFocus: k = !1,
-    popoutPosition: M = "bottom",
+    autoFocus: M = !1,
+    popoutPosition: k = "bottom",
     filter: V = !0,
     debounceTime: Z,
     renderOptionLabel: W = U,
@@ -212,7 +212,7 @@ let V = i.forwardRef(function(e, t) {
     active: eO,
     loadableOptions: n,
     debounceTime: Z
-  }), eD = i.useMemo(() => B(eR, a), [eR, a]), eL = i.useMemo(() => eD.map(e => e.value), [eD]), ex = eD[eD.length - 1], ek = (0, A.Z)(ex), eM = i.useId(), ej = i.useId(), eU = i.useId(), eG = i.useCallback(e => {
+  }), eD = i.useMemo(() => B(eR, a), [eR, a]), eL = i.useMemo(() => eD.map(e => e.value), [eD]), ex = eD[eD.length - 1], eM = (0, A.Z)(ex), ek = i.useId(), ej = i.useId(), eU = i.useId(), eG = i.useCallback(e => {
     eO === e || P || (ev(e), e ? null == g || g() : null == E || E())
   }, [P, E, g, eO]), eB = i.useCallback(e => {
     eO && !e && eG(!1)
@@ -258,7 +258,7 @@ let V = i.forwardRef(function(e, t) {
     eK = (0, A.Z)(eR);
   i.useEffect(() => {
     let e = eK.current,
-      t = ek.current;
+      t = eM.current;
     eO && null != t && !eP && requestAnimationFrame(() => {
       let n = eN.current,
         r = e.indexOf(t);
@@ -267,7 +267,7 @@ let V = i.forwardRef(function(e, t) {
         row: r
       })
     })
-  }, [eO, eP, eK, ek]), i.useEffect(() => {
+  }, [eO, eP, eK, eM]), i.useEffect(() => {
     let e = eW.current;
     if (eO && !eP) {
       var t;
@@ -281,11 +281,11 @@ let V = i.forwardRef(function(e, t) {
       }
       ey(null != (t = e.focusedItemId()) ? t : null)
     } else {
-      let t = ek.current,
+      let t = eM.current,
         n = null != t ? String(t.value) : null;
       e.setFocus(n), ey(null)
     }
-  }, [eO, eP, eW, ek]), i.useLayoutEffect(() => {
+  }, [eO, eP, eW, eM]), i.useLayoutEffect(() => {
     eO || (_ ? eT("") : null != ex && eT(ex.label))
   }, [_, ex, eO]), i.useLayoutEffect(() => {
     _ && eT("")
@@ -305,11 +305,11 @@ let V = i.forwardRef(function(e, t) {
     ey(null), (!_ || f) && eG(!1), eA(!1), eo && eT("")
   }, [n, eR, _, f, eo, l, a, eG]);
   i.useLayoutEffect(() => {
-    if (k) {
+    if (M) {
       var e;
       null == (e = eE.current) || e.focus()
     }
-  }, [k]);
+  }, [M]);
   let eq = i.useCallback(() => {
       eT(""), ez(null), eG(!0)
     }, [ez, eG]),
@@ -355,7 +355,7 @@ let V = i.forwardRef(function(e, t) {
           loading: eP,
           multi: !!_,
           listRef: eN,
-          listId: eM,
+          listId: ek,
           maxVisibleItems: D,
           width: eg,
           selectedValues: eL,
@@ -371,7 +371,7 @@ let V = i.forwardRef(function(e, t) {
           renderOptionSuffix: Q
         })
       },
-      position: M,
+      position: k,
       children: (e, t) => {
         let {
           "aria-expanded": n,
@@ -450,7 +450,7 @@ let V = i.forwardRef(function(e, t) {
                   activeDescendant: eb,
                   placeholder: y,
                   inputId: eU,
-                  listboxId: eM,
+                  listboxId: ek,
                   navigatorId: ej,
                   selectValue: function(e) {
                     let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
@@ -574,7 +574,7 @@ function F(e) {
         }),
         style: {
           width: l,
-          maxHeight: c * M
+          maxHeight: c * k
         },
         ref: e => {
           var n;
@@ -587,7 +587,7 @@ function F(e) {
         innerRole: "listbox",
         innerAriaMultiselectable: g,
         innerId: f,
-        rowHeight: M,
+        rowHeight: k,
         sections: [s.length],
         sectionHeight: 0,
         renderRow: e => {
@@ -742,7 +742,7 @@ function W(e) {
   return (0, r.jsxs)(p.P, L(w({
     tag: "li",
     style: {
-      height: M
+      height: k
     },
     focusProps: {
       enabled: !1

@@ -93,7 +93,7 @@ let S = e => {
     orientation: "horizontal"
   }), {
     ref: L
-  } = D, x = I(D, ["ref"]), k = (0, u.MY)(b, t), M = k === u.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, j = k !== u.xr.DEFAULT, U = (0, _.rK)(), {
+  } = D, x = I(D, ["ref"]), M = (0, u.MY)(b, t), k = M === u.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, j = M !== u.xr.DEFAULT, U = (0, _.rK)(), {
     enabled: G
   } = _.ZP.useExperiment({
     location: "premiumGiftSelect_GiftAnimationOptions"
@@ -115,7 +115,7 @@ let S = e => {
         className: E.animation
       }) : (0, r.jsx)(s.$jN, {
         className: E.spinner
-      }), M && (0, r.jsxs)("div", {
+      }), k && (0, r.jsxs)("div", {
         className: E.soundEmojiContainer,
         children: [(0, r.jsx)("div", {
           className: E.sound,

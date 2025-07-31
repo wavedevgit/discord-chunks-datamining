@@ -43,8 +43,8 @@ let P = new c.Z("ConnectionStore"),
   D = 0,
   L = null,
   x = !0,
-  k = null,
-  M = null;
+  M = null,
+  k = null;
 
 function j() {
   return I.Wb.isClosed() ? (P.verbose("Socket is reconnecting because of starting new session"), I.Wb.connect()) : (P.verbose("Socket is not reconnecting during a new session because it is not closed"), !1)
@@ -74,7 +74,7 @@ async function B(e) {
       })
     }
   }
-  I.GC.update(t, !0), x = !1, M = null
+  I.GC.update(t, !0), x = !1, k = null
 }
 
 function V() {
@@ -82,7 +82,7 @@ function V() {
 }
 
 function F() {
-  M = null
+  k = null
 }
 
 function Z(e) {
@@ -93,7 +93,7 @@ function H(e) {
   return I.GC.update({
     guildId: e.guildId,
     channelId: e.channelId
-  }), M = e.lockVoiceStateForResume && null != e.channelId ? e.channelId : null, (0, O.isIOS)() && k === A.$7l.BACKGROUND && (null == e.channelId ? I.Wb.close(!0) : I.Wb.isClosed() && (T.Y(!1), I.Wb.connect())), !1
+  }), k = e.lockVoiceStateForResume && null != e.channelId ? e.channelId : null, (0, O.isIOS)() && M === A.$7l.BACKGROUND && (null == e.channelId ? I.Wb.close(!0) : I.Wb.isClosed() && (T.Y(!1), I.Wb.connect())), !1
 }
 
 function Y() {
@@ -112,7 +112,7 @@ function K(e) {
   return t.reduce((e, t) => {
     if (_.default.getId() !== t.userId) return e;
     if (t.sessionId === L) {
-      if (null != M) return P.verbose("Ignoring voice state for own session due to VSU lock on channel:", M), e;
+      if (null != k) return P.verbose("Ignoring voice state for own session due to VSU lock on channel:", k), e;
       I.GC.setState({
         guildId: t.guildId,
         channelId: t.channelId
@@ -140,7 +140,7 @@ function q(e) {
     channelId: t
   } = e;
   if (t === I.GC.channelId) {
-    if (M === t) return !1;
+    if (k === t) return !1;
     I.GC.setState({
       guildId: null,
       channelId: null
@@ -164,7 +164,7 @@ function Q(e) {
 }
 
 function J(e) {
-  return (0, O.isIOS)() ? (_.default.isAuthenticated() && (k === A.$7l.INACTIVE && e.state === A.$7l.BACKGROUND && null == I.GC.channelId ? I.Wb.close(!0) : k === A.$7l.BACKGROUND && e.state === A.$7l.ACTIVE && I.Wb.isClosed() && (T.Y(!1), I.Wb.connect())), k = e.state) : e.state === A.$7l.ACTIVE && (T.Y(!1), _.default.isAuthenticated() && I.Wb.resetBackoff("App state is active")), !1
+  return (0, O.isIOS)() ? (_.default.isAuthenticated() && (M === A.$7l.INACTIVE && e.state === A.$7l.BACKGROUND && null == I.GC.channelId ? I.Wb.close(!0) : M === A.$7l.BACKGROUND && e.state === A.$7l.ACTIVE && I.Wb.isClosed() && (T.Y(!1), I.Wb.connect())), M = e.state) : e.state === A.$7l.ACTIVE && (T.Y(!1), _.default.isAuthenticated() && I.Wb.resetBackoff("App state is active")), !1
 }
 
 function $() {

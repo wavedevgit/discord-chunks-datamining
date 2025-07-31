@@ -4,7 +4,7 @@ n.d(t, {
   B: () => D,
   B5: () => R,
   Do: () => w,
-  GX: () => M,
+  GX: () => k,
   HR: () => F,
   Hr: () => C,
   Je: () => A,
@@ -24,7 +24,7 @@ n.d(t, {
   qs: () => E,
   qz: () => V,
   ws: () => x,
-  xI: () => k,
+  xI: () => M,
   zI: () => y
 }), n(781311);
 var r = n(367907),
@@ -339,7 +339,7 @@ function x(e) {
   })
 }
 
-function k(e) {
+function M(e) {
   let {
     added: t
   } = e;
@@ -348,7 +348,7 @@ function k(e) {
   })
 }
 
-function M(e) {
+function k(e) {
   let {
     readGuideCta: t
   } = e;

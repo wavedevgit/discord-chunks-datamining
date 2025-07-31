@@ -100,8 +100,8 @@ let w = Object.freeze({
   D = null,
   L = {},
   x = null,
-  k = new Set,
-  M = !1,
+  M = new Set,
+  k = !1,
   j = !1,
   U = !1,
   G = new Set,
@@ -193,7 +193,7 @@ function q(e) {
 }
 
 function X() {
-  k.clear()
+  M.clear()
 }
 
 function Q(e) {
@@ -223,7 +223,7 @@ function J() {
 function $() {
   if (!__OVERLAY__) return !1;
   let e = D === (0, y.getPID)(),
-    t = k.has((0, y.getPID)()) || G.size > 0;
+    t = M.has((0, y.getPID)()) || G.size > 0;
   e && t ? (0, l.T_)(window, !0) : (0, l.T_)(window, !1)
 }
 
@@ -234,7 +234,7 @@ function et(e) {
     locked: t,
     pid: n
   } = e;
-  t ? k.delete(n) : k.add(n), er(), $(), B = !1
+  t ? M.delete(n) : M.add(n), er(), $(), B = !1
 }
 
 function en(e) {
@@ -355,7 +355,7 @@ function eb() {
 }
 
 function ey() {
-  M = !0
+  k = !0
 }
 
 function eO() {
@@ -423,7 +423,7 @@ function eA(e) {
 }
 
 function eN(e) {
-  k.delete(e.previousAssociatedGamePID)
+  M.delete(e.previousAssociatedGamePID)
 }
 class eC extends(i = a.ZP.PersistedStore) {
   initialize(e) {
@@ -435,7 +435,7 @@ class eC extends(i = a.ZP.PersistedStore) {
         let e = (0, O.M)();
         null == e && V.error("Overlay module failed loaded"), r = e
       }
-      k.delete((0, y.getPID)())
+      M.delete((0, y.getPID)())
     }
     if (null != e) {
       L = e;
@@ -447,10 +447,10 @@ class eC extends(i = a.ZP.PersistedStore) {
     return L
   }
   isLocked(e) {
-    return !k.has(e)
+    return !M.has(e)
   }
   isInstanceLocked() {
-    return !k.has((0, y.getPID)())
+    return !M.has((0, y.getPID)())
   }
   isInstanceFocused() {
     return D === (0, y.getPID)()
@@ -511,7 +511,7 @@ class eC extends(i = a.ZP.PersistedStore) {
     return U
   }
   get incompatibleApp() {
-    return M
+    return k
   }
   getActiveRegions() {
     return G

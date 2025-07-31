@@ -1,22 +1,13 @@
 /**
   Module ID: 7232
-  Original File Name: 604ca915bd01c6f4
+  Original File Name: e703e2cc1762f849
 **/
-.modal__28393 {
-    overflow: hidden
-}
-
 .closeIcon__28393 {
     color: var(--interactive-normal);
     cursor: pointer;
     position: absolute;
     right: 16px;
     top: 16px
-}
-
-.cancelButton__28393 {
-    margin: 0 24px;
-    padding: 0
 }
 
 .content__28393 {
@@ -57,4 +48,4 @@
     background-image: url(/assets/7b29b27004afacd0.svg)
 }
 
-/*# sourceMappingURL=604ca915bd01c6f4.css.map*/
+/*# sourceMappingURL=e703e2cc1762f849.css.map*/

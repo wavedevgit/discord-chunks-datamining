@@ -161,7 +161,7 @@ function I(e) {
       channel_message_notification_settings: a,
       channel_muted_until: v(r.mute_config)
     }
-  }, C = N(I), R = N(A(h, g), y), P = O(C, R, "RETURN_PREVIOUS_WHEN_CHANGED"), w = a.Z.getChannel(g), D = null != (n = P("channel_flags")) ? n : 0, L = (null != (s = R.channel_flags) ? s : 0) ^ D, x = 0 === (0, l.M1)(L, _.ic.FAVORITED, _.ic.OPT_IN_ENABLED), k = null != (d = null == (t = o.Z.getLastMessage(g)) ? void 0 : t.type) ? d : null;
+  }, C = N(I), R = N(A(h, g), y), P = O(C, R, "RETURN_PREVIOUS_WHEN_CHANGED"), w = a.Z.getChannel(g), D = null != (n = P("channel_flags")) ? n : 0, L = (null != (s = R.channel_flags) ? s : 0) ^ D, x = 0 === (0, l.M1)(L, _.ic.FAVORITED, _.ic.OPT_IN_ENABLED), M = null != (d = null == (t = o.Z.getLastMessage(g)) ? void 0 : t.type) ? d : null;
   r.ZP.trackWithMetadata(c.rMx.NOTIFICATION_SETTINGS_UPDATED, m(p({}, R, i.Z.getStats(h)), {
     location: S,
     guild_id: h,
@@ -175,7 +175,7 @@ function I(e) {
     channel_is_overridden_old: P("channel_is_overridden"),
     channel_message_notification_settings_old: P("channel_message_notification_settings"),
     is_opt_in_only_change: x,
-    last_message_type: k,
+    last_message_type: M,
     application_id: E
   }))
 }

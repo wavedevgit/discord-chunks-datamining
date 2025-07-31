@@ -105,9 +105,9 @@ function y(e) {
     "aria-haspopup": D,
     "aria-controls": L,
     noHover: x
-  } = e, k = (0, l.Yzy)(null != g, m(p({}, b), {
+  } = e, M = (0, l.Yzy)(null != g, m(p({}, b), {
     keys: e => e ? "children" : "icon"
-  })), M = e => {
+  })), k = e => {
     let {
       component: t
     } = e;
@@ -149,20 +149,20 @@ function y(e) {
         bottom: 4
       }
     },
-    children: [k((e, t, n) => {
+    children: [M((e, t, n) => {
       let {
         key: i
       } = n;
       return t ? (0, r.jsx)(s.animated.div, {
         style: e,
         className: o()(_.buttonWrapper, a),
-        children: M({
+        children: k({
           component: g
         })
       }, i) : null != h ? (0, r.jsx)(s.animated.div, {
         style: e,
         className: o()(_.buttonWrapper, a),
-        children: M({
+        children: k({
           component: (0, r.jsx)(h, {
             className: o()(_.icon, f, {
               [_.pulseIcon]: N

@@ -44,7 +44,7 @@ function x(e, t, n) {
   }) : e[t] = n, e
 }
 
-function k(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -57,7 +57,7 @@ function k(e) {
   return e
 }
 
-function M(e, t) {
+function k(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -69,7 +69,7 @@ function M(e, t) {
 }
 
 function j(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -81,7 +81,7 @@ function U(e) {
     onClose: a
   } = e, {
     analyticsLocations: u
-  } = (0, m.ZP)(), d = (0, I.g1)(t, "GuildPowerupMarketingPowerupCard"), y = n.skuId === c.A$, O = (0, A.Z)(t, n).type !== C.A3.INACTIVE, v = (0, S.Z)(t), [x, M] = i.useState(!1), [U, G] = i.useState(!1), B = U, V = i.useCallback(() => {
+  } = (0, m.ZP)(), d = (0, I.g1)(t, "GuildPowerupMarketingPowerupCard"), y = n.skuId === c.A$, O = (0, A.Z)(t, n).type !== C.A3.INACTIVE, v = (0, S.Z)(t), [x, k] = i.useState(!1), [U, G] = i.useState(!1), B = U, V = i.useCallback(() => {
     let e = b.Z.getGuild(t);
     null != e && (0, g.u)({
       analyticsLocation: {
@@ -110,7 +110,7 @@ function U(e) {
     transform: B ? "translateY(0)" : "translateY(20px)",
     config: Z
   }), K = i.useCallback(e => {
-    e && M(!0)
+    e && k(!0)
   }, []), z = (0, p.O)(K), q = (0, T.Z)(n, U);
   return (0, r.jsxs)("div", {
     className: o()(L.topPerksCard, L.animatedTopPerksCard, D.powerupCard, {
@@ -130,7 +130,7 @@ function U(e) {
         style: H
       })
     }), (0, r.jsxs)(s.animated.div, {
-      style: j(k({}, Y), {
+      style: j(M({}, Y), {
         transform: Y.y.to(e => "translateY(".concat(e, "px)"))
       }),
       className: o()(L.contentContainer, D.contentContainer),

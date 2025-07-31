@@ -2,11 +2,11 @@
 "use strict";
 n.d(t, {
   EK: () => G,
-  Io: () => M,
+  Io: () => k,
   N1: () => B,
   NY: () => j,
   Ox: () => L,
-  Vq: () => k,
+  Vq: () => M,
   Wf: () => U,
   cB: () => x,
   dy: () => w,
@@ -161,7 +161,7 @@ function x(e) {
   return d
 }
 
-function k(e) {
+function M(e) {
   let {
     id: t,
     guildId: n
@@ -184,7 +184,7 @@ function k(e) {
   })
 }
 
-function M(e) {
+function k(e) {
   let {
     id: t
   } = e, n = (0, i.e7)([h.Z], () => h.Z.getChannel(t)), a = T.intl.string(T.t.zLZPmp).toLowerCase(), o = "text", s = !0;

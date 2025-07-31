@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => M,
+  ZP: () => k,
   wU: () => D
 }), n(388685);
 var r, i = n(442837),
@@ -137,10 +137,10 @@ function C(e) {
         null == (t = e.decayInterval) || t.stop(), e.value <= 0 && (C(E(m({}, e), {
           value: 0,
           multiplier: 1
-        })), k.emitChange())
+        })), M.emitChange())
       } else C(E(m({}, e), {
         value: e.value - 1
-      })), k.emitChange()
+      })), M.emitChange()
     }
   }))
 }
@@ -231,9 +231,9 @@ class x extends(r = i.ZP.Store) {
   }
 }
 h(x, "displayName", "PoggermodeStore");
-let k = new x(s.Z, {
+let M = new x(s.Z, {
     POGGERMODE_UPDATE_COMBO: P,
     POGGERMODE_UPDATE_MESSAGE_COMBO: w,
     MESSAGE_CREATE: L
   }),
-  M = k
+  k = M

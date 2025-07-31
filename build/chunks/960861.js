@@ -78,11 +78,11 @@ function x() {
   return null != r ? (0, g.Z)(r) : null
 }
 
-function k() {
+function M() {
   return null != r ? (0, m.Z)(r) : null
 }
 
-function M() {
+function k() {
   var e;
   return {
     sourceId: "prepicked:0",
@@ -113,10 +113,10 @@ class j extends(i = o.ZP.Store) {
     return x()
   }
   getLastPickedContentPID() {
-    return k()
+    return M()
   }
   getStreamStartOptions() {
-    return M()
+    return k()
   }
 }
 
@@ -129,7 +129,7 @@ function U(e) {
       lastPickerAction: 1
     }, r = n, 0 === T && !t) {
     let e = c.Z.getChannel(f.Z.getVoiceChannelId());
-    null != e && (0, h.Z)(d.Z) && (0, p.JL)(e, u.Z, _.Z, !1) && (0, l.WH)(e.getGuildId(), e.id, M())
+    null != e && (0, h.Z)(d.Z) && (0, p.JL)(e, u.Z, _.Z, !1) && (0, l.WH)(e.getGuildId(), e.id, k())
   }
 }
 

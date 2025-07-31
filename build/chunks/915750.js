@@ -75,10 +75,10 @@ let P = 100,
   L = .5,
   x = new Set;
 
-function k(e, t) {
+function M(e, t) {
   return "".concat(e, "_").concat(t)
 }
-class M {
+class k {
   getId() {
     return this.id
   }
@@ -158,7 +158,7 @@ class M {
         let t = !1,
           n = (0, y.Zp)(this.questContent);
         if (null != n) {
-          let r = k(e.id, n);
+          let r = M(e.id, n);
           (t = !x.has(r) && (0, y.VB)(this.questContent)) && x.add(r)
         }
         let r = N({
@@ -206,7 +206,7 @@ class M {
       let {
         triggeredByStatusChange: t
       } = e;
-      return this.stop(), new M({
+      return this.stop(), new k({
         questContent: this.questContent,
         questOrQuests: this.quests,
         questContentRowIndex: this.questContentRowIndex,
@@ -275,7 +275,7 @@ function F(e) {
     let r = a && t,
       i = (n || c || d) && r,
       o = (n || c) && !r || d;
-    (i || o) && null != _.current && _.current.stop(), i && (_.current = new M({
+    (i || o) && null != _.current && _.current.stop(), i && (_.current = new k({
       questOrQuests: e.questOrQuests,
       questContent: e.questContent,
       questContentPosition: e.questContentPosition,

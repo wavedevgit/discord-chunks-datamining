@@ -115,7 +115,7 @@ function T(e) {
     className: t,
     children: T
   });
-  let k = e => (0, r.jsx)(d.Z, v(y({
+  let M = e => (0, r.jsx)(d.Z, v(y({
     ref: N,
     className: t,
     onContextMenu: D
@@ -124,7 +124,7 @@ function T(e) {
   }));
   return S ? (0, r.jsx)(c.Gt, {
     value: C,
-    children: k()
+    children: M()
   }) : (0, r.jsx)(c.Gt, {
     value: C,
     children: (0, r.jsx)(_.Z, {
@@ -134,7 +134,7 @@ function T(e) {
       channelId: b,
       position: a.tq ? "top" : "right",
       clickTrap: !0,
-      children: e => k(e)
+      children: e => M(e)
     })
   })
 }

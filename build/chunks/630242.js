@@ -54,12 +54,12 @@ function g(e) {
         last_dismissible_content_winner: null != L ? a.z[L] : "None"
       })
     }, [O, S, v, y, x, w]), !I) return;
-  let k = P && w === a.z.CHAT_WALLPAPERS_PICKER_COACHMARK;
-  if (k && null != y && null == n && b !== f.j.COACHMARK && g(y), n === y) {
-    let e = k ? f.j.COACHMARK : f.j.DEFAULT;
+  let M = P && w === a.z.CHAT_WALLPAPERS_PICKER_COACHMARK;
+  if (M && null != y && null == n && b !== f.j.COACHMARK && g(y), n === y) {
+    let e = M ? f.j.COACHMARK : f.j.DEFAULT;
     return b !== e && E(e), {
       pickerType: e,
-      markDismissed: k ? e => {
+      markDismissed: M ? e => {
         D(e), T === _.FN.TOOLBAR && R(m.L.INDIRECT_ACTION)
       } : void 0
     }

@@ -33,12 +33,12 @@ let A = function(e) {
     onClose: A
   } = e, [N, C] = i.useState(!0), R = i.useRef(!1), P = (0, l.Z)(() => Date.now()), {
     analyticsLocations: w
-  } = (0, c.ZP)(), D = i.useRef(null), L = i.useRef(null), x = i.useRef(null), k = i.useCallback(() => {
+  } = (0, c.ZP)(), D = i.useRef(null), L = i.useRef(null), x = i.useRef(null), M = i.useCallback(() => {
     null != x.current && null != L.current && L.current.scrollTo({
       to: x.current.offsetTop,
       animate: !0
     })
-  }, []), M = i.useCallback(() => {
+  }, []), k = i.useCallback(() => {
     null == A || A(), f.default.track(I.rMx.MODAL_DISMISSED, {
       type: I.ZY5.PREMIUM_GUILD_USER_MODAL,
       location_stack: w,
@@ -66,19 +66,19 @@ let A = function(e) {
     })
   }, [n.id, t, w]), i.useEffect(() => {
     function e(e) {
-      "Escape" === e.key && M()
+      "Escape" === e.key && k()
     }
     return window.addEventListener("keydown", e), () => {
       window.removeEventListener("keydown", e)
     }
-  }, [M]);
+  }, [k]);
   let U = (0, u.U)("GuildBoostingMarketing");
   return (0, r.jsxs)(r.Fragment, {
     children: [null != A && (0, r.jsx)("div", {
       className: S.closeIconWrapper,
       children: (0, r.jsx)(s.Z, {
         className: S.closeIcon,
-        closeAction: M,
+        closeAction: k,
         keybind: "ESC",
         variant: s.Z.Variants.BOLD
       })
@@ -92,7 +92,7 @@ let A = function(e) {
           children: [(0, r.jsx)(d.Z, {
             guild: e.guild,
             themeResponsive: !1,
-            onButtonClick: k
+            onButtonClick: M
           }), (0, r.jsx)(o.X6q, {
             className: S.heading,
             color: "always-white",
@@ -100,7 +100,7 @@ let A = function(e) {
             children: T.intl.string(T.t.N4sqzM)
           }), (0, r.jsx)(h.Z, {
             guild: n,
-            closeLayer: M,
+            closeLayer: k,
             onCtaVisibilityChange: C
           }), (0, r.jsx)(E.Z, {
             guild: n
@@ -113,7 +113,7 @@ let A = function(e) {
         children: [!U && (0, r.jsx)(O.ZP, {}), (0, r.jsx)(_.Z, {
           ref: x,
           guild: e.guild,
-          onClose: M
+          onClose: k
         })]
       }), (0, r.jsxs)("div", {
         className: S.lowerBody,
@@ -137,7 +137,7 @@ let A = function(e) {
     }), (0, r.jsx)(g.Z, {
       guild: n,
       isVisible: !N,
-      closeLayer: M
+      closeLayer: k
     })]
   })
 }

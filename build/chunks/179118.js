@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => M
+  Z: () => k
 }), n(388685), n(642613);
 var r = n(255367),
   i = n(73800),
@@ -35,9 +35,9 @@ var r = n(255367),
   D = n(474936),
   L = n(388032),
   x = n(136266);
-let k = 1500;
+let M = 1500;
 
-function M(e) {
+function k(e) {
   let {
     giftCode: t,
     application: n,
@@ -49,11 +49,11 @@ function M(e) {
     giftRecipient: p,
     giftMessageError: g,
     isSendingMessage: y
-  } = e, [O, I] = i.useState(_.kO8.Modes.DEFAULT), S = (0, c.e7)([T.Z], () => T.Z.enabled), M = f || null != l && null != p, U = (null == a ? void 0 : a.productLine) === w.POd.COLLECTIBLES, G = (0, b.Z)(), {
+  } = e, [O, I] = i.useState(_.kO8.Modes.DEFAULT), S = (0, c.e7)([T.Z], () => T.Z.enabled), k = f || null != l && null != p, U = (null == a ? void 0 : a.productLine) === w.POd.COLLECTIBLES, G = (0, b.Z)(), {
     selectedGiftingPromotionReward: B
   } = (0, P.wD)(), V = null == G ? void 0 : G.giftPurchaseConfirmation, F = (0, E.tK)(null == B ? void 0 : B.skuId), Z = (0, E.a5)(s) && null != F && null != V, H = () => null != s ? s.skuId : null != a ? a.id : null, Y = () => {
     let e;
-    return null != g ? L.intl.string(L.t.qB8ayc) : null == s ? null : (e = s.interval === D.rV.MONTH ? M ? Z ? V.monthGiftText : L.t["4ZJ+7e"] : L.t["P+z55e"] : M ? Z ? V.yearGiftText : L.t.p0pZXF : L.t.bXqk3t, L.intl.format(e, {
+    return null != g ? L.intl.string(L.t.qB8ayc) : null == s ? null : (e = s.interval === D.rV.MONTH ? k ? Z ? V.monthGiftText : L.t["4ZJ+7e"] : L.t["P+z55e"] : k ? Z ? V.yearGiftText : L.t.p0pZXF : L.t.bXqk3t, L.intl.format(e, {
       skuName: (0, C.aq)(s.id),
       intervalCount: s.intervalCount
     }))
@@ -63,7 +63,7 @@ function M(e) {
       maxUses: 1
     }), a), (0, A.JG)(e, () => I(_.kO8.Modes.SUCCESS), () => I(_.kO8.Modes.ERROR)), setTimeout(() => {
       I(_.kO8.Modes.DEFAULT)
-    }, k)
+    }, M)
   }, z = () => {
     let e;
     if (null == t) return null;
@@ -149,7 +149,7 @@ function M(e) {
         [x.headerCustomGifting]: null != l && !U
       }),
       children: W()
-    }), f && null != p && null == g || M ? X() : q()]
+    }), f && null != p && null == g || k ? X() : q()]
   })
 }
 let j = e => {

@@ -69,8 +69,8 @@ let T = 200,
   D = 0,
   L = 0,
   x = [],
-  k = [],
   M = [],
+  k = [],
   j = !1;
 
 function U() {
@@ -205,10 +205,10 @@ function Z(e) {
 }
 
 function H(e) {
-  k = (k = [{
+  M = (M = [{
     bytes: e,
     timestamp: Date.now()
-  }, ...k]).slice(0, S)
+  }, ...M]).slice(0, S)
 }
 
 function Y(e) {
@@ -226,10 +226,10 @@ function Y(e) {
 }
 
 function W(e) {
-  M = (M = [{
+  k = (k = [{
     bytes: e,
     timestamp: Date.now()
-  }, ...M]).slice(0, S)
+  }, ...k]).slice(0, S)
 }
 let K = a().throttle(H, T),
   z = a().throttle(Y, T),
@@ -338,10 +338,10 @@ class J extends(r = o.ZP.Store) {
     return x
   }
   getHistoricalTotalBytesDownloaded() {
-    return k
+    return M
   }
   getHistoricalTotalBytesWritten() {
-    return M
+    return k
   }
   whenInitialized(e) {
     this.addConditionalChangeListener(() => {

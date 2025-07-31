@@ -39,8 +39,8 @@ let L = i.forwardRef(function(e, t) {
     type: a,
     channel: L,
     className: x,
-    id: k,
-    disabled: M,
+    id: M,
+    disabled: k,
     submitting: j,
     placeholder: U,
     required: G,
@@ -73,7 +73,7 @@ let L = i.forwardRef(function(e, t) {
     "aria-describedby": e_,
     "aria-labelledby": ef,
     "aria-autocomplete": ep
-  } = e, eh = i.useRef(null), em = i.useRef(null), eg = i.useRef(!0), eE = i.useRef(!0), eb = M || j, ey = i.useCallback((e, t, n) => {
+  } = e, eh = i.useRef(null), em = i.useRef(null), eg = i.useRef(!0), eE = i.useRef(!0), eb = k || j, ey = i.useCallback((e, t, n) => {
     var r;
     let {
       value: i,
@@ -212,7 +212,7 @@ let L = i.forwardRef(function(e, t) {
       ref: eh,
       className: o()(x, D.slateContainer),
       children: (0, r.jsx)(m.Z, {
-        id: k,
+        id: M,
         editor: eI,
         channelId: L.id,
         guildId: L.guild_id,
@@ -221,7 +221,7 @@ let L = i.forwardRef(function(e, t) {
         readOnly: eb,
         spellCheck: ee,
         autoFocus: !er,
-        canFocus: !M,
+        canFocus: !k,
         onChange: ew,
         onFocus: H,
         onBlur: Y,

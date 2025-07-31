@@ -99,7 +99,7 @@ let y = function(e) {
       buttonTextOverride: null == m ? void 0 : m.textOverride,
       defaultTextOverride: null == m ? void 0 : m.subscribeText
     }),
-    k = {
+    M = {
       onClick: n,
       subscriptionTier: t,
       postSuccessGuild: y,
@@ -110,9 +110,9 @@ let y = function(e) {
       paymentModalBanner: R
     };
 
-  function M(e) {
+  function k(e) {
     let n = null != P ? P : t === _.Si.TIER_1 ? s.zx.Colors.PRIMARY : s.zx.Colors.GREEN;
-    return (0, r.jsx)(u.Z, g(h({}, k), {
+    return (0, r.jsx)(u.Z, g(h({}, M), {
       children: o => {
         let {
           onClick: c
@@ -145,6 +145,6 @@ let y = function(e) {
   }
   return null != x.buttonTooltipText ? (0, r.jsx)(l.ua7, {
     text: x.buttonTooltipText,
-    children: M
-  }) : M()
+    children: k
+  }) : k()
 }

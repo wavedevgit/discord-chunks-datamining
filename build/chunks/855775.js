@@ -106,11 +106,11 @@ function x(e) {
   C.delete(t)
 }
 
-function k() {
+function M() {
   O = !0
 }
 
-function M(e) {
+function k(e) {
   let {
     entitlements: t,
     giftCode: n
@@ -201,8 +201,8 @@ let H = new Z(s.Z, {
   SKU_PURCHASE_PREVIEW_FETCH: D,
   SKU_PURCHASE_PREVIEW_FETCH_SUCCESS: L,
   SKU_PURCHASE_PREVIEW_FETCH_FAILURE: x,
-  SKU_PURCHASE_START: k,
-  SKU_PURCHASE_SUCCESS: M,
+  SKU_PURCHASE_START: M,
+  SKU_PURCHASE_SUCCESS: k,
   SKU_PURCHASE_FAIL: U,
   SKU_PURCHASE_SHOW_CONFIRMATION_STEP: G,
   SKU_PURCHASE_CLEAR_ERROR: B,

@@ -110,7 +110,7 @@ function x(e) {
   throw e
 }
 
-function k(e, t, n, r, o) {
+function M(e, t, n, r, o) {
   var s = typeof e;
   ("undefined" === s || "boolean" === s) && (e = null);
   var l = !1;
@@ -128,30 +128,30 @@ function k(e, t, n, r, o) {
           l = !0;
           break;
         case p:
-          return k((l = e._init)(e._payload), t, n, r, o)
+          return M((l = e._init)(e._payload), t, n, r, o)
       }
   }
-  if (l) return o = o(e), l = "" === r ? "." + D(e, 0) : r, T(o) ? (n = "", null != l && (n = l.replace(w, "$&/") + "/"), k(o, t, n, "", function(e) {
+  if (l) return o = o(e), l = "" === r ? "." + D(e, 0) : r, T(o) ? (n = "", null != l && (n = l.replace(w, "$&/") + "/"), M(o, t, n, "", function(e) {
     return e
   })) : null != o && (R(o) && (o = C(o, n + (null == o.key || e && e.key === o.key ? "" : ("" + o.key).replace(w, "$&/") + "/") + l)), t.push(o)), 1;
   l = 0;
   var c = "" === r ? "." : r + ":";
   if (T(e))
-    for (var u = 0; u < e.length; u++) s = c + D(r = e[u], u), l += k(r, t, n, s, o);
+    for (var u = 0; u < e.length; u++) s = c + D(r = e[u], u), l += M(r, t, n, s, o);
   else if ("function" == typeof(u = m(e)))
-    for (e = u.call(e), u = 0; !(r = e.next()).done;) s = c + D(r = r.value, u++), l += k(r, t, n, s, o);
+    for (e = u.call(e), u = 0; !(r = e.next()).done;) s = c + D(r = r.value, u++), l += M(r, t, n, s, o);
   else if ("object" === s) {
-    if ("function" == typeof e.then) return k(x(e), t, n, r, o);
+    if ("function" == typeof e.then) return M(x(e), t, n, r, o);
     throw Error("Objects are not valid as a React child (found: " + ("[object Object]" === (t = String(e)) ? "object with keys {" + Object.keys(e).join(", ") + "}" : t) + "). If you meant to render a collection of children, use an array instead.")
   }
   return l
 }
 
-function M(e, t, n) {
+function k(e, t, n) {
   if (null == e) return e;
   var r = [],
     i = 0;
-  return k(e, r, "", "", function(e) {
+  return M(e, r, "", "", function(e) {
     return t.call(n, e, i++)
   }), r
 }
@@ -183,20 +183,20 @@ var U = "function" == typeof reportError ? reportError : function(e) {
 
 function G() {}
 t.Children = {
-  map: M,
+  map: k,
   forEach: function(e, t, n) {
-    M(e, function() {
+    k(e, function() {
       t.apply(this, arguments)
     }, n)
   },
   count: function(e) {
     var t = 0;
-    return M(e, function() {
+    return k(e, function() {
       t++
     }), t
   },
   toArray: function(e) {
-    return M(e, function(e) {
+    return k(e, function(e) {
       return e
     }) || []
   },

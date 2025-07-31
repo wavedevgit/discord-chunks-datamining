@@ -183,13 +183,13 @@ function c(e) {
         _: [...i, ...a]
       }
     },
-    k = {
+    M = {
       label: "use_strict",
       className: "meta",
       relevance: 10,
       begin: /^\s*['"]use (strict|asm)['"]/
     },
-    M = {
+    k = {
       variants: [{
         match: [/function/, /\s+/, d, /(?=\s*\()/]
       }, {
@@ -258,7 +258,7 @@ function c(e) {
       label: "shebang",
       binary: "node",
       relevance: 5
-    }), k, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, T, S, A, N, C, {
+    }), M, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, T, S, A, N, C, {
       match: /\$\d+/
     }, v, x, {
       scope: "attr",
@@ -316,7 +316,7 @@ function c(e) {
           contains: ["self"]
         }]
       }]
-    }, M, {
+    }, k, {
       beginKeywords: "while if switch catch for"
     }, {
       begin: "\\b(?!function)" + e.UNDERSCORE_IDENT_RE + "\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)\\s*\\{",

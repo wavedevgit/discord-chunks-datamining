@@ -12,9 +12,16 @@ var n = a(255367),
   d = a(853872),
   u = a(246992),
   m = a(546147),
-  x = a(959532),
-  p = a(616257);
+  p = a(959532),
+  x = a(616257);
 let h = [{
+    label: "3DS and Failed Cards",
+    value: "",
+    disabled: !0
+  }, {
+    label: "Other",
+    value: "OTHER"
+  }, {
     label: "Americas",
     value: "",
     disabled: !0
@@ -199,6 +206,13 @@ let h = [{
     value: "TH"
   }],
   b = {
+    OTHER: [{
+      label: "Always Authenticate",
+      value: "pm_card_authenticationRequired"
+    }, {
+      label: "Decline after attaching",
+      value: "pm_card_chargeCustomerFail"
+    }],
     US: [{
       label: "Visa",
       value: "pm_card_us"
@@ -487,14 +501,14 @@ function f(e) {
     disabled: r
   } = e;
   return r ? (0, n.jsx)(s.Text, {
-    className: x.header,
+    className: p.header,
     variant: "text-lg/bold",
     children: t
   }) : (0, n.jsxs)("div", {
-    className: x.countryContainer,
+    className: p.countryContainer,
     children: [(0, n.jsx)("img", {
       alt: "",
-      className: x.countryFlagEmoji,
+      className: p.countryFlagEmoji,
       src: _(a)
     }), t]
   })
@@ -524,7 +538,7 @@ function v() {
   return r.useEffect(() => {
     (0, o.tZ)()
   }, []), (0, n.jsx)(s.zJl, {
-    className: p.panel,
+    className: x.panel,
     children: (0, n.jsxs)("div", {
       className: m.panelInner,
       children: [(0, n.jsxs)(s.Text, {
@@ -548,7 +562,7 @@ function v() {
           popoutLayerContext: u.O$,
           popoutWidth: 200,
           renderOptionLabel: f,
-          optionClassName: x.countryOption
+          optionClassName: p.countryOption
         }), (0, n.jsx)(s.PhF, {
           serialize: e => e,
           isSelected: e => e === a,
@@ -600,7 +614,7 @@ function g(e) {
       showPaymentSourceIcon: !0
     }, t.id), (0, n.jsx)("img", {
       alt: t.country,
-      className: x.countryFlagEmoji,
+      className: p.countryFlagEmoji,
       src: _(t.country)
     })]
   })

@@ -56,7 +56,15 @@ let b = {
       Z = r.useCallback(() => {
         N && D()
       }, [N, D]),
-      w = (0, l.Z)(null, Z);
+      w = (0, l.Z)(null, Z),
+      k = r.useMemo(() => (0, i.jsx)(m.L, {
+        analyticsPage: _,
+        ctaText: n,
+        ctaOnClick: () => {
+          D(), s()
+        },
+        linkText: E
+      }), [_, n, E, D, s]);
     return (0, i.jsxs)("div", {
       className: a()(f.container, C, {
         [f.hidden]: y,
@@ -78,14 +86,7 @@ let b = {
           [f.visible]: !y
         }),
         ref: w,
-        children: (0, i.jsx)(m.L, {
-          analyticsPage: _,
-          ctaText: n,
-          ctaOnClick: () => {
-            D(), s()
-          },
-          linkText: E
-        })
+        children: k
       })]
     })
   };

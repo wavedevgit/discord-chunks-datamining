@@ -42,10 +42,10 @@ function O(e) {
     onScroll: D,
     scrollerClassName: L,
     hasCurrencies: x = !1
-  } = e, k = null;
-  null != v && null == (0, p.ly)(v) ? k = v : null != R ? k = R : null != w && (k = w);
-  let M = null != k ? k.message : "";
-  null != k && k instanceof d.HF && (k.code === _.SM.CARD_DECLINED && x && (M += " ".concat(E.intl.string(E.t.iWvwQU))), k.code === _.SM.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED && (M = E.intl.string(E.t.ypuSd3)), k.code === g.evJ.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE && (M = E.intl.string(E.t.mXMmWF)));
+  } = e, M = null;
+  null != v && null == (0, p.ly)(v) ? M = v : null != R ? M = R : null != w && (M = w);
+  let k = null != M ? M.message : "";
+  null != M && M instanceof d.HF && (M.code === _.SM.CARD_DECLINED && x && (k += " ".concat(E.intl.string(E.t.iWvwQU))), M.code === _.SM.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED && (k = E.intl.string(E.t.ypuSd3)), M.code === g.evJ.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE && (k = E.intl.string(E.t.mXMmWF)));
   let {
     stripe: j
   } = (0, f.JL)();
@@ -83,11 +83,11 @@ function O(e) {
         })
       }), (0, r.jsxs)("div", {
         className: b.bodyWrapper,
-        children: [null == k ? null : (0, r.jsx)("div", {
+        children: [null == M ? null : (0, r.jsx)("div", {
           className: b.errorBlockWrapper,
           children: (0, r.jsx)(c.kzN, {
             ref: P,
-            children: M
+            children: k
           })
         }), C ? (0, r.jsx)(c.$jN, {
           className: b.loadingBlock

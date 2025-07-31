@@ -35,8 +35,8 @@ var r = n(255367),
   D = n(703656),
   L = n(937995),
   x = n(618158),
-  k = n(922745),
-  M = n(197016),
+  M = n(922745),
+  k = n(197016),
   j = n(800965),
   U = n(445062),
   G = n(7188),
@@ -244,7 +244,7 @@ class ep extends i.PureComponent {
       timeout: 1800,
       children: e => {
         var t;
-        return (0, r.jsx)(k.Z, ef(ed({
+        return (0, r.jsx)(M.Z, ef(ed({
           title: o,
           backgroundKey: null != (t = null == n ? void 0 : n.id) ? t : "",
           screenMessage: null == l ? this.getScreenMessage() : null,
@@ -320,7 +320,7 @@ class ep extends i.PureComponent {
       return (0, r.jsxs)(r.Fragment, {
         children: [a ? this.renderViewersIcon() : null, e ? this.renderSettingsIcon() : null, t ? this.renderPopoutIcon() : null, i ? this.renderStopStreamButton() : null, n ? this.renderDisconnectButton() : null]
       })
-    }), eu(this, "renderDisconnectButton", () => (0, r.jsx)(M.Z, {
+    }), eu(this, "renderDisconnectButton", () => (0, r.jsx)(k.Z, {
       className: el.rightTrayIcon,
       onClick: () => (0, v.v)(g.Z.VIDEO_PIP, v.d.DISCONNECT)
     })), eu(this, "renderStopStreamButton", () => {

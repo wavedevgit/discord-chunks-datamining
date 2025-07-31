@@ -5,7 +5,7 @@ n.d(t, {
   LZ: () => D,
   Pq: () => v,
   RJ: () => P,
-  Sd: () => k,
+  Sd: () => M,
   XW: () => x,
   el: () => T,
   fP: () => A,
@@ -263,7 +263,7 @@ let L = e => {
       })()
     }, [t]), c) ? [e, s] : [null != n ? n : null, s]
   },
-  k = e => {
+  M = e => {
     let t = L(e);
     return r.useMemo(() => t.filter(e => e.type === E.Ih.EMPTY_GUILD_UPSELL || e.stickers.length > 0, []), [t])
   }

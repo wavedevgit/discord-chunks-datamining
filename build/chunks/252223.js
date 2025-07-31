@@ -66,13 +66,13 @@ function x(e, t) {
   return n
 }
 
-function k(e, t) {
+function M(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function M(e) {
+function k(e) {
   let t = (null == e ? void 0 : e.name) === "" ? null : null == e ? void 0 : e.name;
   return null != t ? P.intl.formatToPlainString(P.t["0wJXSk"], {
     name: t
@@ -97,7 +97,7 @@ function U(e) {
   } = (0, m.Cq)({
     location: "StackedActivityStatus"
   }), s = (0, f.ZP)(r), l = a || o;
-  return null != t && i.push(M(t)), n.forEach(e => {
+  return null != t && i.push(k(t)), n.forEach(e => {
     let {
       tooltip: t
     } = (0, v.Z)(e, l);
@@ -147,8 +147,8 @@ function V(e) {
     hideTooltip: x = !1
   } = e;
   (0, _.Z)(null == t ? void 0 : t.id);
-  let M = (null == a ? void 0 : a.discoverable) !== !1 ? a : null,
-    j = (0, g.Cf)(M),
+  let k = (null == a ? void 0 : a.discoverable) !== !1 ? a : null,
+    j = (0, g.Cf)(k),
     V = i.useMemo(() => {
       var e, t;
       let r = null == n ? void 0 : n.find(e => {
@@ -180,7 +180,7 @@ function V(e) {
       location: "ActivityStatus"
     }) && null != V ? (0, h.Z)(V) : null,
     q = (null == V ? void 0 : V.state) != null || null != z,
-    X = null != M,
+    X = null != k,
     Q = !X && null != l,
     J = H.length + (X || Q ? 1 : 0),
     $ = J > 1,
@@ -194,8 +194,8 @@ function V(e) {
   let en = function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
         t = !0 === e || x;
-      if (null != M) return (0, r.jsx)(T.Z, {
-        stream: M,
+      if (null != k) return (0, r.jsx)(T.Z, {
+        stream: k,
         game: Y,
         textVariant: "text-".concat(O, "/medium"),
         textClassName: f,
@@ -231,8 +231,8 @@ function V(e) {
           hideText: !1,
           canTruncate: !1
         };
-      return null != M && e.push((0, r.jsx)(T.Z, k(L({
-        stream: M,
+      return null != k && e.push((0, r.jsx)(T.Z, M(L({
+        stream: k,
         game: null == n ? void 0 : n.find(d.Z)
       }, t), {
         showChannelName: !0
@@ -240,7 +240,7 @@ function V(e) {
         e.push((0, r.jsx)(A.Z, L({
           activity: n
         }, t), "activity-".concat(i)))
-      }), Q && e.push((0, r.jsx)(N.Z, k(L({
+      }), Q && e.push((0, r.jsx)(N.Z, M(L({
         channel: l
       }, t), {
         showChannelName: !0
@@ -260,7 +260,7 @@ function V(e) {
       delay: C.X,
       text: er(),
       "aria-label": et,
-      children: e => (0, r.jsxs)("div", k(L({
+      children: e => (0, r.jsxs)("div", M(L({
         className: o()(w.activityContainer, ee && w.iconOnly)
       }, e), {
         children: [en(!0), ei()]

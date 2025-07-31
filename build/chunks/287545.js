@@ -36,8 +36,8 @@ var i = n(772848),
   D = n(317381),
   L = n(969345),
   x = n(155268),
-  k = n(148720),
-  M = n(122613),
+  M = n(148720),
+  k = n(122613),
   j = n(790920),
   U = n(16609),
   G = n(761122),
@@ -181,13 +181,13 @@ function et(e) {
     w = "location" in c ? 2 : 1,
     x = T.default.getCurrentUser();
   if (null == x) return;
-  let k = D.ZP.getShelfActivities(E),
-    M = R.Z.getState().shelfOrder,
+  let M = D.ZP.getShelfActivities(E),
+    k = R.Z.getState().shelfOrder,
     j = (0, L.Z)({
       applicationId: r,
-      activityConfigs: k
+      activityConfigs: M
     }),
-    G = 1 + M.findIndex(e => e === r),
+    G = 1 + k.findIndex(e => e === r),
     {
       releasePhase: B
     } = q(j),
@@ -431,14 +431,14 @@ class er extends c.Z {
         })
       }
       let m = D.ZP.getEmbeddedActivitiesForChannel(i).find(e => e.applicationId === a);
-      (null != (r = null == m ? void 0 : m.userIds.size) ? r : 0) > 0 ? await (0, k.k)({
+      (null != (r = null == m ? void 0 : m.userIds.size) ? r : 0) > 0 ? await (0, M.k)({
         channelId: i,
         applicationId: a,
         launchId: null == m ? void 0 : m.launchId,
         inputApplication: null,
         analyticsLocations: o,
         inviterUserId: l
-      }) : await (0, M.Z)({
+      }) : await (0, k.Z)({
         targetApplicationId: a,
         channelId: i,
         analyticsLocations: o,

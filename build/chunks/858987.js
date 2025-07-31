@@ -111,8 +111,8 @@ function A(e) {
     onPaymentSourceAdd: L
   } = e, {
     application: x,
-    selectedPlan: k,
-    hasAcceptedTerms: M,
+    selectedPlan: M,
+    hasAcceptedTerms: k,
     purchaseType: j,
     paymentSourceId: U,
     activeSubscription: G,
@@ -120,7 +120,7 @@ function A(e) {
     hasPaymentSources: V
   } = (0, u.JL)(), F = T({
     purchaseType: j,
-    plan: k,
+    plan: M,
     premiumSubscription: y,
     isGift: v,
     planGroup: A,
@@ -171,8 +171,8 @@ function A(e) {
   });
   if (C) return (0, r.jsxs)(s.gtL, {
     innerClassName: E.innerButton,
-    "data-testid": M ? "purchase" : "submitButton",
-    onClick: M ? R : () => S(n, f),
+    "data-testid": k ? "purchase" : "submitButton",
+    onClick: k ? R : () => S(n, f),
     color: o.zx.Colors.GREEN,
     submitting: m,
     children: [(0, r.jsx)("img", {
@@ -181,7 +181,7 @@ function A(e) {
       src: b
     }), F]
   });
-  else if (!M) return (0, r.jsx)(s.ua7, {
+  else if (!k) return (0, r.jsx)(s.ua7, {
     text: g.intl.string(g.t.XdvBLS),
     children: e => (0, r.jsx)(s.zxk, I(O({
       variant: "active",

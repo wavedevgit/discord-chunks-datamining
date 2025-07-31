@@ -105,11 +105,11 @@ function x(e) {
   O = m({}, O), null != t.name && O.name !== t.name && (O.name = t.name, A = !0), void 0 !== t.avatar && O.avatar !== t.avatar && (O.avatar = t.avatar, A = !0), null != t.channelId && O.channel_id !== t.channelId && (O.channel_id = t.channelId, A = !0), A && D()
 }
 
-function k() {
+function M() {
   T = p.QZA.SUBMITTING, S = {}
 }
 
-function M(e) {
+function k(e) {
   var t;
   if (T !== p.QZA.SUBMITTING) return !1;
   T = p.QZA.OPEN, S = null != (t = e.errors) ? t : {}
@@ -316,7 +316,7 @@ let X = new q(c.Z, __OVERLAY__ ? {} : {
     GUILD_SETTINGS_CLOSE: w,
     GUILD_SETTINGS_LOADED_INTEGRATIONS: j,
     WEBHOOKS_UPDATE: U,
-    INTEGRATION_SETTINGS_SUBMITTING: k,
-    INTEGRATION_SETTINGS_SAVE_FAILURE: M
+    INTEGRATION_SETTINGS_SUBMITTING: M,
+    INTEGRATION_SETTINGS_SAVE_FAILURE: k
   }),
   Q = X

@@ -3,7 +3,7 @@
 n.d(t, {
   Ep: () => f,
   Hp: () => h,
-  PP: () => k,
+  PP: () => M,
   lX: () => A,
   ob: () => p,
   q_: () => L
@@ -173,15 +173,15 @@ function A(e) {
   }
 
   function D(e) {
-    v(e) || k(C(e.state))
+    v(e) || M(C(e.state))
   }
 
   function L() {
-    k(C(S()))
+    M(C(S()))
   }
   var x = !1;
 
-  function k(e) {
+  function M(e) {
     if (x) x = !1, w();
     else {
       var t = "POP";
@@ -189,12 +189,12 @@ function A(e) {
         n ? w({
           action: t,
           location: e
-        }) : M(e)
+        }) : k(e)
       })
     }
   }
 
-  function M(e) {
+  function k(e) {
     var t = X.location,
       n = U.indexOf(t.key); - 1 === n && (n = 0);
     var r = U.indexOf(e.key); - 1 === r && (r = 0);
@@ -384,11 +384,11 @@ function L(e) {
       var n = v(),
         r = J.location;
       if (!S && L(r, n) || A === f(n)) return;
-      A = null, k(n)
+      A = null, M(n)
     }
   }
 
-  function k(e) {
+  function M(e) {
     if (S) S = !1, T();
     else {
       var t = "POP";
@@ -396,12 +396,12 @@ function L(e) {
         n ? T({
           action: t,
           location: e
-        }) : M(e)
+        }) : k(e)
       })
     }
   }
 
-  function M(e) {
+  function k(e) {
     var t = J.location,
       n = B.lastIndexOf(f(t)); - 1 === n && (n = 0);
     var r = B.lastIndexOf(f(e)); - 1 === r && (r = 0);
@@ -512,7 +512,7 @@ function x(e, t, n) {
   return Math.min(Math.max(e, t), n)
 }
 
-function k(e) {
+function M(e) {
   void 0 === e && (e = {});
   var t = e,
     n = t.getUserConfirmation,

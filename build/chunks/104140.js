@@ -148,7 +148,7 @@ function v(e) {
     T(!0)
   }, A = () => {
     T(!1)
-  }, N = null != m, C = null != O, R = i.useId(), P = "".concat(R, "-upper_badge_masks"), w = "".concat(R, "-lower_badge_masks"), D = "".concat(R, "-blob_mask"), L = "".concat(R, "-stroke_mask"), x = "".concat(R, "-highlight_mask"), k = (null == _ ? void 0 : _.width) != null ? _.width : g, M = (null == _ ? void 0 : _.height) != null ? _.height : g, j = {
+  }, N = null != m, C = null != O, R = i.useId(), P = "".concat(R, "-upper_badge_masks"), w = "".concat(R, "-lower_badge_masks"), D = "".concat(R, "-blob_mask"), L = "".concat(R, "-stroke_mask"), x = "".concat(R, "-highlight_mask"), M = (null == _ ? void 0 : _.width) != null ? _.width : g, k = (null == _ ? void 0 : _.height) != null ? _.height : g, j = {
     width: d ? n : n + 8,
     height: d ? n : n + 8,
     x: d ? 0 : -4,
@@ -188,10 +188,10 @@ function v(e) {
         }) : null, null != O ? (0, r.jsx)("rect", {
           id: w,
           className: u.badgeStroke,
-          x: n - (k + 2 * p) + p,
-          y: n - (M + 2 * p) + p,
-          width: k + 2 * p,
-          height: M + 2 * p,
+          x: n - (M + 2 * p) + p,
+          y: n - (k + 2 * p) + p,
+          width: M + 2 * p,
+          height: k + 2 * p,
           rx: h / 2,
           ry: h / 2
         }) : null]

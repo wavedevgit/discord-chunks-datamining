@@ -35,8 +35,8 @@ var r = n(255367),
   D = n(502762),
   L = n(544989),
   x = n(481932),
-  k = n(195387),
-  M = n(664794),
+  M = n(195387),
+  k = n(664794),
   j = n(4517),
   U = n(978395),
   G = n(161572),
@@ -199,7 +199,7 @@ function z(e) {
               style: ed,
               className: F.backdrop
             }), (0, r.jsxs)(L.Z, {
-              children: [(0, r.jsx)(k.Z, {
+              children: [(0, r.jsx)(M.Z, {
                 shouldShowTooltip: null === eu.interactionType,
                 user: t,
                 guildId: Z,
@@ -210,7 +210,7 @@ function z(e) {
                 shouldShowTooltip: null === eu.interactionType,
                 themeType: B.lY.POPOUT,
                 user: t
-              }), !eE && (0, r.jsx)(M.Z, {
+              }), !eE && (0, r.jsx)(k.Z, {
                 type: "banner",
                 user: t,
                 guildId: Z,

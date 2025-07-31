@@ -37,7 +37,7 @@ var r = n(255367),
   L = n(981631),
   x = n(388032);
 
-function k(e, t, n) {
+function M(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -46,14 +46,14 @@ function k(e, t, n) {
   }) : e[t] = n, e
 }
 
-function M(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      k(e, t, n[t])
+      M(e, t, n[t])
     })
   }
   return e
@@ -74,7 +74,7 @@ let j = {
       entry: n,
       disableGameProfileLinks: g,
       onReaction: E,
-      onVoiceChannelPreview: k,
+      onVoiceChannelPreview: M,
       onUserPopoutClosed: U,
       trackRankingItemInteraction: G
     } = e, {
@@ -153,18 +153,18 @@ let j = {
       ec = (0, l.Z)(H, L.xjy.JOIN) || (0, c.Z)(H) ? (0, r.jsx)(f.Z, {
         activity: H,
         user: V,
-        ButtonComponent: e => (0, r.jsx)(P.Ll, M({
+        ButtonComponent: e => (0, r.jsx)(P.Ll, k({
           IconComponent: s.iWm
         }, e))
       }) : null,
       eu = [ec, (0, u.Z)(H) ? (0, r.jsx)(p.Z, {
         activity: H,
-        ButtonComponent: e => (0, r.jsx)(P.Ll, M({
+        ButtonComponent: e => (0, r.jsx)(P.Ll, k({
           IconComponent: s.tEF
         }, e))
       }) : null, ea ? (0, r.jsx)(_.Z, {
         application: ei,
-        ButtonComponent: e => (0, r.jsx)(P.Ll, M({
+        ButtonComponent: e => (0, r.jsx)(P.Ll, k({
           IconComponent: s.v3n
         }, e)),
         location: "MemberListGamingContentPopout"
@@ -173,7 +173,7 @@ let j = {
       children: [el, (0, r.jsx)(P.St, {
         children: (0, r.jsx)(P.WT, {
           onReaction: E,
-          onVoiceChannelPreview: k,
+          onVoiceChannelPreview: M,
           user: V,
           channel: t,
           generateReactionImage: eo,

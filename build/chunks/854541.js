@@ -2,9 +2,9 @@
 "use strict";
 n.d(t, {
   AG: () => D,
-  Z$: () => k,
+  Z$: () => M,
   jH: () => L,
-  zH: () => M
+  zH: () => k
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -223,7 +223,7 @@ function x(e) {
       input: e
     })
   }, [A, L]), i.useEffect(() => s, [s]);
-  let k = e => {
+  let M = e => {
       let t = "#" === e[0] ? e : "#".concat(e);
       if (!(0, c.FX)(t)) return void x(e => T(v({}, e), {
         input: t
@@ -239,12 +239,12 @@ function x(e) {
         input: t
       }), a(n)
     },
-    M = async () => {
+    k = async () => {
       if (null != S) try {
         let {
           sRGBHex: e
         } = await S.open();
-        k(e)
+        M(e)
       } catch (e) {}
     }, j = i.useCallback(e => {
       x(t => T(v({}, t), {
@@ -269,7 +269,7 @@ function x(e) {
       }), _, (0, r.jsxs)("div", {
         className: y.customColorPickerInputContainer,
         children: [E && null != S && (0, r.jsx)(g.JO, {
-          onClick: M,
+          onClick: k,
           tooltip: b.intl.string(b.t["0dU9Nz"]),
           tooltipPosition: "top",
           className: y.customColorPickerEyeDropper,
@@ -277,7 +277,7 @@ function x(e) {
         }), (0, r.jsx)(f.Is, {
           className: y.customColorPickerInput,
           value: L.input,
-          onChange: k,
+          onChange: M,
           maxLength: C
         })]
       }), null != l && l.length > 0 && (0, r.jsx)("div", {
@@ -288,7 +288,7 @@ function x(e) {
             backgroundColor: e
           },
           className: y.suggestedColor,
-          onClick: () => k(e)
+          onClick: () => M(e)
         }, "".concat(e, "-").concat(t)))
       }), m]
     }), B = null != O ? O : d.V;
@@ -298,9 +298,9 @@ function x(e) {
     children: G
   })
 }
-let k = i.memo(x);
+let M = i.memo(x);
 
-function M(e) {
+function k(e) {
   let {
     className: t,
     defaultColor: n,

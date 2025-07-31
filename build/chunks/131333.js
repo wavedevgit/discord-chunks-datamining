@@ -105,7 +105,7 @@ function x() {
   })
 }
 
-function k(e) {
+function M(e) {
   if (null == e) return "enter";
   switch (e) {
     case "enter":
@@ -116,7 +116,7 @@ function k(e) {
       return "enter"
   }
 }
-let M = i.forwardRef(function(e, t) {
+let k = i.forwardRef(function(e, t) {
   let {
     sprites: n
   } = e, [o, s] = i.useState(null), {
@@ -166,7 +166,7 @@ let M = i.forwardRef(function(e, t) {
 function j(e) {
   let {
     children: t
-  } = e, n = i.useRef({}), [a, l] = i.useState(null), c = k(a), f = i.useRef(null), [h, m] = i.useState(!1), g = i.useRef("jack_o_lantern"), E = (0, s.bp)(), b = i.useCallback(e => {
+  } = e, n = i.useRef({}), [a, l] = i.useState(null), c = M(a), f = i.useRef(null), [h, m] = i.useState(!1), g = i.useRef("jack_o_lantern"), E = (0, s.bp)(), b = i.useCallback(e => {
     if (!h) {
       let t = D(e);
       null != t && (g.current = t, m(!0), l(null))
@@ -194,7 +194,7 @@ function j(e) {
     value: y,
     children: [t, Object.keys(w).map(e => {
       let t = w[e];
-      return (0, r.jsx)(M, {
+      return (0, r.jsx)(k, {
         ref: t => {
           null != t ? n.current[e] = t : delete n.current[e]
         },

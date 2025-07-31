@@ -35,8 +35,8 @@ var r = n(278074),
   D = n(413605),
   L = n(366980),
   x = n(467512),
-  k = n(779832),
-  M = n(786761),
+  M = n(779832),
+  k = n(786761),
   j = n(459618),
   U = n(541288),
   G = n(3148),
@@ -135,7 +135,7 @@ class ex {
   }
 }
 
-function ek(e) {
+function eM(e) {
   let {
     content: t,
     channelId: n,
@@ -150,7 +150,7 @@ function ek(e) {
       code: c,
       url: u
     } = e;
-    if (t === b.g.INVITE) eM({
+    if (t === b.g.INVITE) ek({
       inviteKey: c,
       channelId: n,
       messageId: r,
@@ -197,7 +197,7 @@ function ek(e) {
   })
 }
 
-function eM(e) {
+function ek(e) {
   var t, n;
   let {
     inviteKey: r,
@@ -515,7 +515,7 @@ let eB = {
         oldFormErrors: !0,
         rejectWithError: !1
       }).then(e => {
-        if (e.body.length > 0) return (0, M.e5)(e.body[0])
+        if (e.body.length > 0) return (0, k.e5)(e.body[0])
       })
     },
     fetchMessages(e) {
@@ -713,7 +713,7 @@ let eB = {
         nonce: o
       });
       let s = () => eV._sendMessage(e, t, i),
-        l = k.ZP.backgroundify(s, void 0);
+        l = M.ZP.backgroundify(s, void 0);
       return (j.Z.recordMessageSendAttempt(e, o), el.Z.isReady(e)) ? l() : r && e !== E.V ? (eD.info("Waiting for channel ".concat(e, " to be ready before sending.")), new Promise((t, n) => {
         el.Z.whenReady(e, () => {
           eD.info("Channel ".concat(e, " is ready for sending now.")), l().then(t, n)
@@ -882,13 +882,13 @@ let eB = {
           announcementSendOptions: w
         } = n,
         D = null != (i = n.flags) ? i : 0,
-        [L, k] = (0, et.Z)(d);
-      L && (d = k, D = (0, eh.pj)(D, ev.iLy.SUPPRESS_NOTIFICATIONS));
-      let M = !1,
+        [L, M] = (0, et.Z)(d);
+      L && (d = M, D = (0, eh.pj)(D, ev.iLy.SUPPRESS_NOTIFICATIONS));
+      let k = !1,
         W = (null == (r = n.messageReference) ? void 0 : r.type) === ev.Uvt.FORWARD;
       if ("" === d && null == h && null == E && null == I && null == T && !W && (null == S || 0 === S.length) && (null == t.components || 0 === t.components.length))
         if (null == A || !(A.length > 0)) return Promise.resolve();
-        else M = !0;
+        else k = !0;
       let J = null != y ? ev.uaV.REPLY : ev.uaV.DEFAULT,
         $ = null != (a = n.nonce) ? a : (0, B.r)(),
         en = $,
@@ -948,7 +948,7 @@ let eB = {
         });
         if (null == t) return;
         let r = t.attachments;
-        if (l = t.uploader, M && (null == r || 0 === r.length)) return;
+        if (l = t.uploader, k && (null == r || 0 === r.length)) return;
         null != r && (ei.message.attachments = r.map((e, t) => (0, ey.B)(e, t)))
       } catch (i) {
         let {
@@ -1015,7 +1015,7 @@ let eB = {
                 channel_id: e,
                 author: ef.default.getCurrentUser()
               }
-            }), ek({
+            }), eM({
               content: d,
               channelId: e,
               messageId: o.body.id,
@@ -1239,6 +1239,6 @@ let eB = {
         confirmText: eS.intl.string(eS.t.BddRzc)
       })
     }),
-    trackInvite: eM
+    trackInvite: ek
   },
   eF = eV

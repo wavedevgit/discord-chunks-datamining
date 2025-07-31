@@ -34,8 +34,8 @@ var r, i = n(392711),
   D = n(158776),
   L = n(699516),
   x = n(594174),
-  k = n(979651),
-  M = n(823379),
+  M = n(979651),
+  k = n(823379),
   j = n(981631);
 
 function U(e, t, n) {
@@ -135,7 +135,7 @@ function eo(e) {
 }
 
 function es(e) {
-  let t = k.Z.getVoiceStateForUser(e);
+  let t = M.Z.getVoiceStateForUser(e);
   return (null == t ? void 0 : t.channelId) != null && w.Z.canWithPartialContext(j.Plq.VIEW_CHANNEL, {
     channelId: t.channelId
   }) ? t.channelId : null
@@ -190,11 +190,11 @@ function ed(e, t, n) {
           activity: _,
           userId: e.id,
           application: g,
-          channelId: null == (o = k.Z.getVoiceStateForUser(e.id)) ? void 0 : o.channelId,
+          channelId: null == (o = M.Z.getVoiceStateForUser(e.id)) ? void 0 : o.channelId,
           currentUser: f,
           isActivitiesEnabledForCurrentPlatform: t,
           ChannelStore: A.Z,
-          VoiceStateStore: k.Z,
+          VoiceStateStore: M.Z,
           PermissionStore: w.Z,
           GuildStore: P.Z
         }) !== c.Fw.CAN_JOIN) continue
@@ -229,13 +229,13 @@ function ed(e, t, n) {
       o = P.Z.getGuild(i);
     if (G.has(i) && U.has(n) || null == r || null == o || r.id === o.afkChannelId) null == r && (_ = null, L = !0);
     else {
-      let e = k.Z.getVoiceStatesForChannel(r.id),
+      let e = M.Z.getVoiceStatesForChannel(r.id),
         s = a()(e).map(e => {
           let {
             userId: t
           } = e;
           return x.default.getUser(t)
-        }).filter(M.lm).orderBy([eu], ["desc"]).value();
+        }).filter(k.lm).orderBy([eu], ["desc"]).value();
       s.filter(e => !m.includes(e.id)).forEach(e => t.push(e)), L ? G.has(i) || (_ = null) : (_ = o, L = !0), G.add(i), U.add(n), j.push({
         channel: r,
         guild: o,
@@ -355,7 +355,7 @@ function eA() {
 }
 class eN extends(r = o.ZP.Store) {
   initialize() {
-    this.syncWith([x.default, m.Z, D.Z, C.Z, k.Z, S.Z, L.Z, N.Z, O.Z], eI), this.waitFor(E.Z, P.Z, m.Z, x.default, O.Z)
+    this.syncWith([x.default, m.Z, D.Z, C.Z, M.Z, S.Z, L.Z, N.Z, O.Z], eI), this.waitFor(E.Z, P.Z, m.Z, x.default, O.Z)
   }
   get currentActivityParties() {
     return z
