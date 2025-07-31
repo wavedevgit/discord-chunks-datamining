@@ -1,7 +1,7 @@
 /** Chunk was on 76815 **/
 n.d(e, {
-  G: () => o,
-  I: () => a
+  G: () => a,
+  I: () => o
 });
-var r, i, o = ((r = {}).PLAY = "play", r.PAUSE = "pause", r.BACK_TO_CONVERSATION = "back_to_conversation", r),
-  a = ((i = {}).INAPPROPRIATE_CONVERSATION = "inappropriate_conversation", i.KEYBIND = "keybind", i)
+var r, i, a = ((r = {}).PLAY = "play", r.PAUSE = "pause", r.BACK_TO_CONVERSATION = "back_to_conversation", r),
+  o = ((i = {}).INAPPROPRIATE_CONVERSATION = "inappropriate_conversation", i.KEYBIND = "keybind", i)

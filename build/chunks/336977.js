@@ -4,14 +4,14 @@ n.d(e, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  o = n(399606),
-  a = n(481060),
+  a = n(399606),
+  o = n(481060),
   c = n(607070),
   s = n(626135),
   l = n(832239),
   u = n(407383),
-  p = n(981631),
-  d = n(388032),
+  d = n(981631),
+  p = n(388032),
   _ = n(383721),
   O = n(617921);
 
@@ -19,26 +19,26 @@ function f(t) {
   let {
     onClose: e,
     source: f = u.I.INAPPROPRIATE_CONVERSATION
-  } = t, b = (0, o.e7)([c.Z], () => c.Z.useReducedMotion), [N, I] = i.useState(!1);
+  } = t, b = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), [m, g] = i.useState(!1);
   i.useEffect(() => {
     let t = new Date;
-    return s.default.track(p.rMx.VIBING_WUMPUS_VIEWED, {
+    return s.default.track(d.rMx.VIBING_WUMPUS_VIEWED, {
       source: f
     }), (0, l.JO)(), () => {
-      s.default.track(p.rMx.VIBING_WUMPUS_CLOSED, {
+      s.default.track(d.rMx.VIBING_WUMPUS_CLOSED, {
         duration_open_ms: new Date().getTime() - t.getTime(),
         source: f
       }), (0, l.zu)()
     }
   }, [f]);
-  let m = () => {
-    N ? ((0, l.JO)(), s.default.track(p.rMx.VIBING_WUMPUS_ACTION, {
+  let N = () => {
+    m ? ((0, l.JO)(), s.default.track(d.rMx.VIBING_WUMPUS_ACTION, {
       action: u.G.PLAY
-    })) : ((0, l.hW)(), s.default.track(p.rMx.VIBING_WUMPUS_ACTION, {
+    })) : ((0, l.hW)(), s.default.track(d.rMx.VIBING_WUMPUS_ACTION, {
       action: u.G.PAUSE
-    })), I(!N)
+    })), g(!m)
   };
-  async function x() {
+  async function I() {
     let {
       default: t
     } = await n.e("29641").then(n.t.bind(n, 937359, 19));
@@ -52,18 +52,18 @@ function f(t) {
         alt: "",
         className: _.__invalid_ringArt
       })
-    }), (0, r.jsx)(a.Fmz, {
-      importData: x,
-      shouldAnimate: !N && !b,
+    }), (0, r.jsx)(o.Fmz, {
+      importData: I,
+      shouldAnimate: !m && !b,
       className: _.wumpus,
       pauseAtFrame: b ? 200 : void 0
-    }), (0, r.jsx)(a.ua7, {
-      text: N ? d.intl.string(d.t.RscU7O) : d.intl.string(d.t.ZcgDJS),
+    }), (0, r.jsx)(o.ua7, {
+      text: m ? p.intl.string(p.t.RscU7O) : p.intl.string(p.t.ZcgDJS),
       position: "top",
-      "aria-label": N ? d.intl.string(d.t.RscU7O) : d.intl.string(d.t.ZcgDJS),
+      "aria-label": m ? p.intl.string(p.t.RscU7O) : p.intl.string(p.t.ZcgDJS),
       children: t => {
         var e, n;
-        return (0, r.jsx)(a.P3F, (e = function(t) {
+        return (0, r.jsx)(o.P3F, (e = function(t) {
           for (var e = 1; e < arguments.length; e++) {
             var n = null != arguments[e] ? arguments[e] : {},
               r = Object.keys(n);
@@ -81,13 +81,13 @@ function f(t) {
           }
           return t
         }({}, t), n = n = {
-          onClick: m,
+          onClick: N,
           className: _.iconButton,
-          children: N ? (0, r.jsx)(a.o1U, {
+          children: m ? (0, r.jsx)(o.o1U, {
             size: "xs",
             color: "currentColor",
             className: _.icon
-          }) : (0, r.jsx)(a.fpf, {
+          }) : (0, r.jsx)(o.fpf, {
             size: "xs",
             color: "currentColor",
             className: _.icon
@@ -103,29 +103,31 @@ function f(t) {
           Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
         }), e))
       }
-    }), (0, r.jsx)(a.hzk, {
+    }), (0, r.jsx)(o.hzk, {
+      "data-migration-pending": !0,
       className: _.body,
       children: (0, r.jsxs)("div", {
         className: _.textContainer,
-        children: [(0, r.jsx)(a.X6q, {
+        children: [(0, r.jsx)(o.X6q, {
           variant: "heading-xl/semibold",
           color: "header-primary",
-          children: d.intl.string(d.t.L4ifkZ)
-        }), (0, r.jsx)(a.Text, {
+          children: p.intl.string(p.t.L4ifkZ)
+        }), (0, r.jsx)(o.Text, {
           variant: "text-md/normal",
           color: "header-secondary",
-          children: d.intl.string(d.t.R8LCMT)
+          children: p.intl.string(p.t.R8LCMT)
         })]
       })
-    }), (0, r.jsx)(a.mzw, {
+    }), (0, r.jsx)(o.mzw, {
+      "data-migration-pending": !0,
       children: (0, r.jsx)("div", {
         className: _.buttonContainer,
-        children: (0, r.jsx)(a.zxk, {
+        children: (0, r.jsx)(o.zxk, {
           variant: "primary",
-          text: d.intl.string(d.t["8eKkaW"]),
+          text: p.intl.string(p.t["8eKkaW"]),
           fullWidth: !0,
           onClick: () => {
-            e(), s.default.track(p.rMx.VIBING_WUMPUS_ACTION, {
+            e(), s.default.track(d.rMx.VIBING_WUMPUS_ACTION, {
               action: u.G.BACK_TO_CONVERSATION
             })
           }
@@ -139,7 +141,8 @@ let b = t => {
     onClose: e,
     transitionState: n
   } = t;
-  return (0, r.jsx)(a.Y0X, {
+  return (0, r.jsx)(o.Y0X, {
+    "data-migration-pending": !0,
     transitionState: n,
     parentComponent: "VibingWumpusModal",
     children: (0, r.jsx)(f, {

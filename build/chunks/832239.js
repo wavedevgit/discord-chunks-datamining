@@ -1,6 +1,6 @@
 /** Chunk was on 76815 **/
 n.d(e, {
-  JO: () => a,
+  JO: () => o,
   KK: () => u,
   Vp: () => l,
   hW: () => s,
@@ -8,9 +8,9 @@ n.d(e, {
 });
 var r = n(544891),
   i = n(570140),
-  o = n(981631);
+  a = n(981631);
 
-function a() {
+function o() {
   i.Z.dispatch({
     type: "VIBING_WUMPUS_PLAY_MUSIC"
   })
@@ -30,14 +30,14 @@ function s() {
 
 function l(t) {
   return r.tn.del({
-    url: o.ANM.DELETE_SAFETY_WARNINGS(t),
+    url: a.ANM.DELETE_SAFETY_WARNINGS(t),
     rejectWithError: !1
   })
 }
 
 function u(t, e) {
   return r.tn.post({
-    url: o.ANM.ADD_SAFETY_WARNING(t),
+    url: a.ANM.ADD_SAFETY_WARNING(t),
     body: {
       safety_warning_type: e
     },
