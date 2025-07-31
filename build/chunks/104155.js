@@ -87,7 +87,6 @@ function v(e) {
       className: b.header,
       children: [(0, l.jsx)(a.E1j, {
         className: b.search,
-        size: a.E1j.Sizes.MEDIUM,
         query: o,
         onChange: e => {
           "" === o && "" !== e && p.default.track(x.rMx.SEARCH_STARTED, {

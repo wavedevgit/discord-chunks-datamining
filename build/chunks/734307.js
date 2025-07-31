@@ -61,14 +61,14 @@ function b(n) {
   return Z.clearGuildId(e)
 }
 
-function M(n) {
+function j(n) {
   let {
     channelId: e
   } = n;
   return Z.nonPositionalChannelIdUpdate(e)
 }
 
-function j(n) {
+function M(n) {
   let {
     channel: e
   } = n;
@@ -171,7 +171,7 @@ let K = new k(o.Z, {
   CATEGORY_COLLAPSE: F,
   CATEGORY_EXPAND_ALL: b,
   CATEGORY_EXPAND: F,
-  CHANNEL_ACK: M,
+  CHANNEL_ACK: j,
   CHANNEL_COLLAPSE: function(n) {
     var e;
     let {
@@ -181,9 +181,9 @@ let K = new k(o.Z, {
   },
   CHANNEL_CREATE: v,
   CHANNEL_DELETE: v,
-  CHANNEL_LOCAL_ACK: M,
+  CHANNEL_LOCAL_ACK: j,
   CHANNEL_MUTE_EXPIRED: b,
-  CHANNEL_RTC_UPDATE_CHAT_OPEN: M,
+  CHANNEL_RTC_UPDATE_CHAT_OPEN: j,
   CHANNEL_SELECT: y,
   CHANNEL_STATUSES: function(n) {
     return Z.clearGuildId(n.guildId)
@@ -201,7 +201,7 @@ let K = new k(o.Z, {
   CURRENT_USER_UPDATE: x,
   DECAY_READ_STATES: x,
   DEV_TOOLS_DESIGN_TOGGLE_SET: x,
-  DISABLE_AUTOMATIC_ACK: M,
+  DISABLE_AUTOMATIC_ACK: j,
   DISMISS_FAVORITE_SUGGESTION: function(n) {
     let {
       channelId: e
@@ -218,7 +218,7 @@ let K = new k(o.Z, {
     B()
   },
   EMBEDDED_ACTIVITY_LAUNCH_SUCCESS: B,
-  ENABLE_AUTOMATIC_ACK: M,
+  ENABLE_AUTOMATIC_ACK: j,
   FETCH_GUILD_EVENTS_FOR_GUILD: function(n) {
     let {
       guildId: e
@@ -259,25 +259,25 @@ let K = new k(o.Z, {
       return Z.clearGuildId(e)
     })
   },
-  LOAD_MESSAGES_SUCCESS: M,
-  MESSAGE_ACK: M,
+  LOAD_MESSAGES_SUCCESS: j,
+  MESSAGE_ACK: j,
   MESSAGE_CREATE: function(n) {
     let {
       channelId: e
     } = n;
     return Z.nonPositionalChannelIdUpdate(e)
   },
-  MESSAGE_DELETE_BULK: M,
-  MESSAGE_DELETE: M,
+  MESSAGE_DELETE_BULK: j,
+  MESSAGE_DELETE: j,
   NOTIFICATION_SETTINGS_UPDATE: x,
   OVERLAY_INITIALIZE: x,
   PASSIVE_UPDATE_V2: function(n) {
     return Z.clearGuildId(n.guildId)
   },
   RECOMPUTE_READ_STATES: x,
-  RESORT_THREADS: M,
+  RESORT_THREADS: j,
   SET_RECENTLY_ACTIVE_COLLAPSED: x,
-  THREAD_CREATE: j,
+  THREAD_CREATE: M,
   THREAD_DELETE: function(n) {
     let {
       channel: e
@@ -287,9 +287,9 @@ let K = new k(o.Z, {
   THREAD_LIST_SYNC: b,
   THREAD_MEMBER_UPDATE: w,
   THREAD_MEMBERS_UPDATE: w,
-  THREAD_UPDATE: j,
-  TRY_ACK: M,
-  UPDATE_CHANNEL_DIMENSIONS: M,
+  THREAD_UPDATE: M,
+  TRY_ACK: j,
+  UPDATE_CHANNEL_DIMENSIONS: j,
   UPDATE_CHANNEL_LIST_SUBTITLES: function(n) {
     let {
       guildId: e

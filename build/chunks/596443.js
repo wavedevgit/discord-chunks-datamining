@@ -235,6 +235,7 @@ function V(A) {
         children: (0, n.jsxs)("div", {
           className: Q.permissionsItemContainer,
           children: [(0, n.jsx)(g.E1j, {
+            size: "sm",
             className: Q.searchBar,
             query: T,
             placeholder: H.intl.string(H.t["yD9+dH"]),

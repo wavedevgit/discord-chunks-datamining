@@ -1,7 +1,7 @@
 /** Chunk was on 46746 **/
 n.d(t, {
-  K: () => S,
-  Z: () => b
+  K: () => b,
+  Z: () => S
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -22,7 +22,7 @@ var r = n(255367),
   v = n(347226),
   j = n(20493);
 
-function S(e, t, n) {
+function b(e, t, n) {
   var r;
   let i = t.find(t => t.id === e);
   if (null == i) return null;
@@ -30,7 +30,7 @@ function S(e, t, n) {
   return null != (r = null == l ? void 0 : l.id) ? r : null
 }
 
-function b(e) {
+function S(e) {
   let {
     selectedSource: t,
     onChangeVideoDeviceSource: n,
@@ -41,8 +41,8 @@ function b(e) {
     [a, c] = (0, m.L)(x.h7.AUDIO_INPUT, {
       location: "CaptureDeviceConfig"
     }),
-    b = a.concat(c),
-    [C, y] = i.useState(S(t.id, o, b));
+    S = a.concat(c),
+    [C, y] = i.useState(b(t.id, o, S));
   return null != C && l(C), (0, r.jsxs)(u.xJW, {
     title: "Capture Device",
     className: v.modalContent,

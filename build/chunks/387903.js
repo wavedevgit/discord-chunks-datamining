@@ -34,8 +34,8 @@ var r, i, l = n(255367),
   D = n(740265),
   Z = n(122810),
   L = n(833664),
-  M = n(503438),
-  k = n(802856),
+  k = n(503438),
+  M = n(802856),
   U = n(420660),
   R = n(39628),
   V = n(701488),
@@ -86,7 +86,7 @@ function K(e) {
     let {
       activity: t
     } = e, n = null;
-    return (0, M.Z)(t) && (n = F.ABu.SPOTIFY), null != t.platform && [F.M7m.PS4, F.M7m.PS5].includes(t.platform) && (n = F.ABu.PLAYSTATION), n
+    return (0, k.Z)(t) && (n = F.ABu.SPOTIFY), null != t.platform && [F.M7m.PS4, F.M7m.PS5].includes(t.platform) && (n = F.ABu.PLAYSTATION), n
   }({
     activity: t
   });
@@ -200,7 +200,7 @@ class q extends(r = a.PureComponent) {
     } = e;
     if (null == u || null == u.large_image && null == u.small_image) return null;
     (0, U.Z)(e) && (i = z[c]);
-    let p = (0, M.Z)(e),
+    let p = (0, k.Z)(e),
       m = null != u.large_image ? (0, l.jsx)("img", {
         alt: null != (t = u.large_text) ? t : "",
         src: (0, T.xF)(d, u.large_image, null != i ? i : [V.Si.LARGE, V.Si.LARGE]),
@@ -313,7 +313,7 @@ class q extends(r = a.PureComponent) {
     return (a === F.IIU.HANG_STATUS ? u = (0, I.O8)(e) : o && null != n ? u = (0, l.jsx)("span", {
       className: B.activityName,
       children: u
-    }) : !o && (c = i, u = i, (0, M.Z)(e) && null != e.sync_id && null != i ? u = (0, l.jsx)(f.eee, {
+    }) : !o && (c = i, u = i, (0, k.Z)(e) && null != e.sync_id && null != i ? u = (0, l.jsx)(f.eee, {
       className: B.bodyLink,
       onClick: this.handleOpenSpotifyTrack,
       children: i
@@ -341,7 +341,7 @@ class q extends(r = a.PureComponent) {
       (0, E.X)(i.id)
     };
     else if (!(0, L.Z)(e)) {
-      if (a = r, o = r, (0, M.Z)(e) && null != r) a = G.intl.format(G.t.uU9le3, {
+      if (a = r, o = r, (0, k.Z)(e) && null != r) a = G.intl.format(G.t.uU9le3, {
         artists: o,
         artistsHook: (t, n) => (0, l.jsx)(P.Z, {
           artists: r,
@@ -364,7 +364,7 @@ class q extends(r = a.PureComponent) {
       children: a
     }) : (0, l.jsx)("div", {
       title: null != o ? o : void 0,
-      className: (0, U.Z)(e) || (0, M.Z)(e) ? B.detailsWrap : B.details,
+      className: (0, U.Z)(e) || (0, k.Z)(e) ? B.detailsWrap : B.details,
       children: a
     })
   }
@@ -375,12 +375,12 @@ class q extends(r = a.PureComponent) {
       channel: r
     } = this.props;
     return n && null != t ? null == r ? (0, l.jsx)("div", {
-      className: (0, U.Z)(e) || (0, M.Z)(e) ? B.detailsWrap : B.details,
+      className: (0, U.Z)(e) || (0, k.Z)(e) ? B.detailsWrap : B.details,
       children: G.intl.format(G.t["hq/Qzc"], {
         guildName: t.name
       })
     }) : (0, l.jsxs)("div", {
-      className: s()((0, U.Z)(e) || (0, M.Z)(e) ? B.detailsWrap : B.details, B.guildDetails),
+      className: s()((0, U.Z)(e) || (0, k.Z)(e) ? B.detailsWrap : B.details, B.guildDetails),
       children: [(0, l.jsx)(S.Z, {
         guild: t,
         size: S.Z.Sizes.SMOL,
@@ -404,7 +404,7 @@ class q extends(r = a.PureComponent) {
     let {
       activityGuild: t
     } = this.props;
-    if (!(0, L.Z)(e) || (0, M.Z)(e)) return null;
+    if (!(0, L.Z)(e) || (0, k.Z)(e)) return null;
     let {
       timestamps: n
     } = e;
@@ -418,7 +418,7 @@ class q extends(r = a.PureComponent) {
     })
   }
   renderTimeBar(e) {
-    if (!(0, M.Z)(e)) return null;
+    if (!(0, k.Z)(e)) return null;
     let {
       timestamps: t
     } = e;
@@ -443,7 +443,7 @@ class q extends(r = a.PureComponent) {
       } = e,
       c = a,
       u = a;
-    return (!(0, L.Z)(e) && (c = null == s ? void 0 : s.large_text, u = null == s ? void 0 : s.large_text, (0, M.Z)(e) && null != c && (c = G.intl.format(G.t.vOLBEx, {
+    return (!(0, L.Z)(e) && (c = null == s ? void 0 : s.large_text, u = null == s ? void 0 : s.large_text, (0, k.Z)(e) && null != c && (c = G.intl.format(G.t.vOLBEx, {
       album: u,
       albumHook: (t, n) => null != e.sync_id && null != u ? (0, l.jsx)(f.eee, {
         className: B.bodyLink,
@@ -485,7 +485,7 @@ class q extends(r = a.PureComponent) {
     let u = "ActivityFeed" === t,
       d = "StreamPreview" === t,
       p = !1;
-    (0, k.Z)(c) ? (e = this.renderXboxImage(), p = !0) : null == (e = this.renderImage(c)) && (p = null != (e = this.renderGameImage(c)));
+    (0, M.Z)(c) ? (e = this.renderXboxImage(), p = !0) : null == (e = this.renderImage(c)) && (p = null != (e = this.renderGameImage(c)));
     let m = this.renderName(c),
       g = this.renderDetails(c),
       b = this.renderState(c, i),

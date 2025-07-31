@@ -32,8 +32,8 @@ var i, r = n(512722),
   P = n(486016),
   T = n(32300),
   k = n(371651),
-  D = n(624864),
-  A = n(610394),
+  A = n(624864),
+  D = n(610394),
   R = n(340101),
   L = n(388627),
   M = n(996050),
@@ -178,7 +178,7 @@ function ef(e, t) {
 }
 
 function eh() {
-  if (!(0, T.Yo)("OverlayNotificationStore") || D.Z.isNotificationDisabled(P.OverlayNotificationDisabledSetting.NOW_PLAYING)) return !1;
+  if (!(0, T.Yo)("OverlayNotificationStore") || A.Z.isNotificationDisabled(P.OverlayNotificationDisabledSetting.NOW_PLAYING)) return !1;
   let e = b.Z.usersPlaying,
     t = new Set,
     n = function() {
@@ -224,7 +224,7 @@ function eh() {
   }(n, r), t.add(n);
   let r = new Set;
   for (let e of n) t.has(e) || r.add(e);
-  let o = A.ZP.isOverlayV3EnabledForPID((0, Z.getPID)()) || null != A.ZP.getFocusedPID();
+  let o = D.ZP.isOverlayV3EnabledForPID((0, Z.getPID)()) || null != D.ZP.getFocusedPID();
   for (let e of r)
     if (! function(e) {
         let t = v.Z.getActivities(e);
@@ -262,7 +262,7 @@ function em(e) {
 }
 class eg extends(i = a.ZP.Store) {
   initialize() {
-    this.waitFor(g.Z, S.default, b.Z, D.Z), this.syncWith([b.Z], eh)
+    this.waitFor(g.Z, S.default, b.Z, A.Z), this.syncWith([b.Z], eh)
   }
   getNotifications() {
     return en
@@ -283,7 +283,7 @@ let ey = new eg(s.Z, {
       nudges: n
     } = e;
     eu(0);
-    let i = null != (t = A.ZP.getFocusedPID()) ? t : Z.UNSET_PID;
+    let i = null != (t = D.ZP.getFocusedPID()) ? t : Z.UNSET_PID;
     if (k.default.hasChangedRenderMode(i)) return;
     let r = (0, B.Z)((0, L.pL)(), n);
     null != r && ef(r, {
@@ -340,7 +340,7 @@ let ey = new eg(s.Z, {
       }(s, a, c);
       if (!1 !== e) return e
     }
-    if (D.Z.isNotificationDisabled(P.OverlayNotificationDisabledSetting.TEXT_CHAT) || I.Z.disableNotifications || !(0, p.eF)(a, l)) return !1;
+    if (A.Z.isNotificationDisabled(P.OverlayNotificationDisabledSetting.TEXT_CHAT) || I.Z.disableNotifications || !(0, p.eF)(a, l)) return !1;
     let u = !O.Z.isSoundDisabled(C.Ay),
       f = null != (r = y.Z.getMessage(l, a.id)) ? r : (0, d.e5)(a);
     ef((0, F.Z)(s, f, c, u), {

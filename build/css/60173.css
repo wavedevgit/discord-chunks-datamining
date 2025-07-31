@@ -1,6 +1,6 @@
 /**
   Module ID: 60173
-  Original File Name: 9693049372b373c7
+  Original File Name: 7db437c1ad9c7c8a
 **/
 @keyframes placeholderPulse_c8ffbb {
     0% {
@@ -6533,48 +6533,6 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     width: 40px
 }
 
-.closeButton__40059 {
-    margin-left: auto;
-    margin-right: -4px;
-    margin-top: -4px
-}
-
-.header__40059 {
-    align-items: baseline;
-    display: flex;
-    flex-direction: column
-}
-
-.footer__40059 {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between
-}
-
-.buttonInner_fa7f5f {
-    align-items: center;
-    background-color: var(--background-mod-subtle);
-    border: 1px solid transparent;
-    border-radius: var(--radius-sm);
-    color: var(--interactive-normal);
-    display: flex;
-    gap: var(--space-8);
-    height: 24px;
-    padding: 2px 8px
-}
-
-.buttonInner_fa7f5f:hover {
-    background-color: var(--background-mod-normal);
-    border-color: var(--border-faint);
-    color: var(--interactive-active)
-}
-
-.button_fa7f5f {
-    min-width: 0;
-    padding: 0
-}
-
 .container__34c2c {
     align-items: center;
     border-top: 1px solid var(--border-subtle);
@@ -12979,4 +12937,4 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     position: relative
 }
 
-/*# sourceMappingURL=9693049372b373c7.css.map*/
+/*# sourceMappingURL=7db437c1ad9c7c8a.css.map*/

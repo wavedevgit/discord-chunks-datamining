@@ -271,6 +271,7 @@ function A() {
           onChange: e => _(!e)
         })
       }), (0, n.jsx)(u.E1j, {
+        size: "sm",
         className: T.searchBar,
         query: t,
         onChange: a,

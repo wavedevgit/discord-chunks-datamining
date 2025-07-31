@@ -172,6 +172,7 @@ function S() {
           })
         })
       }), (0, n.jsx)(x.E1j, {
+        size: "sm",
         className: O.searchBar,
         query: e,
         onChange: t,

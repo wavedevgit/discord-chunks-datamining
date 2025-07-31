@@ -515,7 +515,6 @@ let ec = e => {
       m = () => (0, r.jsx)("div", {
         className: en.searchContainer,
         children: (0, r.jsx)(E.E1j, {
-          size: E.E1j.Sizes.MEDIUM,
           query: d,
           onChange: p,
           onClear: h,

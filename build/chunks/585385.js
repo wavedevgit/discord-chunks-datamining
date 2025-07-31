@@ -22,11 +22,11 @@ let g = e => {
     onGenerateNewLink: m,
     onToggleTemporary: p,
     onSelectMaxAge: v,
-    onSelectMaxUses: I,
-    isGuestInviteCreationToggleEnabled: x,
+    onSelectMaxUses: x,
+    isGuestInviteCreationToggleEnabled: I,
     onSetInviteFlags: f
-  } = e, j = (0, a.ZP)(), {
-    maxAge: N,
+  } = e, N = (0, a.ZP)(), {
+    maxAge: j,
     maxUses: _,
     temporary: E,
     flags: S
@@ -49,20 +49,20 @@ let g = e => {
       })]
     }), (0, l.jsx)(o.Z, {
       shouldHideTemporaryInviteToggle: g,
-      maxAge: N,
+      maxAge: j,
       maxUses: _,
       temporary: E,
       onToggleTemporary: p,
       onSelectMaxAge: v,
-      onSelectMaxUses: I,
+      onSelectMaxUses: x,
       onGenerateNewLink: m,
-      isGuestInviteCreationToggleEnabled: x,
+      isGuestInviteCreationToggleEnabled: I,
       onSetInviteFlags: f,
       inviteFlags: S
     }), (0, l.jsx)(s.mzw, {
       className: c.settingsFooter,
       children: (0, l.jsx)(u.Z, {
-        theme: j,
+        theme: N,
         onConfirm: () => {
           m(), t()
         },

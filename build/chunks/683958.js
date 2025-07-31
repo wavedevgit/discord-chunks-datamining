@@ -4,8 +4,8 @@ n.d(t, {
 }), n(388685), n(35282);
 var r = n(255367),
   l = n(73800),
-  i = n(755721),
-  a = n(481060),
+  a = n(755721),
+  i = n(481060),
   s = n(911969),
   o = n(835473),
   u = n(987509),
@@ -55,7 +55,7 @@ function _(e, t) {
 }
 let S = [s.yU.CHAT],
   P = () => {
-    (0, a.Mr3)(y.s)
+    (0, i.Mr3)(y.s)
   };
 
 function w(e) {
@@ -67,11 +67,11 @@ function w(e) {
   } = e, u = l.useCallback(() => {
     o()
   }, [o]);
-  return (0, r.jsx)(a.mzw, {
+  return (0, r.jsx)(i.mzw, {
     className: x.footerWithMessage,
     children: (0, r.jsx)("div", {
       className: x.footerButtons,
-      children: (0, r.jsx)(i.zx, {
+      children: (0, r.jsx)(a.zx, {
         className: x.sendWithMessage,
         submitting: s,
         disabled: !n,
@@ -85,7 +85,7 @@ function w(e) {
 function C(e) {
   var t, {
       applicationId: n,
-      channel: i,
+      channel: a,
       command: s,
       onClose: y,
       requireLaunchChannel: C,
@@ -97,27 +97,27 @@ function C(e) {
       var n, r, l = function(e, t) {
         if (null == e) return {};
         var n, r, l = {},
-          i = Object.keys(e);
-        for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
+          a = Object.keys(e);
+        for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
         return l
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var i = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+        var a = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
       }
       return l
     }(e, ["applicationId", "channel", "command", "onClose", "requireLaunchChannel", "onShareResult", "previewMessage"]);
-  let L = l.useMemo(() => null == i ? null : (0, u.dL)(i.id), [i]),
+  let L = l.useMemo(() => null == a ? null : (0, u.dL)(a.id), [a]),
     [M, D] = l.useState(!1),
     {
       commands: T,
       loading: k
-    } = (t = l.useMemo(() => null == i ? {
+    } = (t = l.useMemo(() => null == a ? {
       type: "contextless"
     } : {
       type: "channel",
-      channel: i
-    }, [i]), (0, h.v1)(t, {
+      channel: a
+    }, [a]), (0, h.v1)(t, {
       commandTypes: S
     }, {
       applicationId: n,
@@ -188,15 +188,15 @@ function C(e) {
             type: "text",
             text: t.value
           }], e), {})) ? n : {},
-          i = f.Z.getGuild(null == r ? void 0 : r.guild_id);
+          a = f.Z.getGuild(null == r ? void 0 : r.guild_id);
         null != await (0, m.Z)({
           command: Q,
           optionValues: l,
           context: {
             channel: r,
-            guild: i
+            guild: a
           }
-        }) && (0, a.showToast)((0, a.createToast)(v.intl.string(v.t["5WjJcn"]), a.ToastType.MESSAGE))
+        }) && (0, i.showToast)((0, i.createToast)(v.intl.string(v.t["5WjJcn"]), i.ToastType.MESSAGE))
       }), E(!0), P()
     }, [E, Q, s.options]),
     ee = l.useCallback(() => {
@@ -204,21 +204,21 @@ function C(e) {
         closeAfterSend: !0
       })
     }, [$, R]);
-  if (k) return (0, r.jsx)(a.Y0X, _(O({
+  if (k) return (0, r.jsx)(i.Y0X, _(O({
     className: x.modal,
     "aria-label": v.intl.string(v.t.fuFvw8)
   }, Z), {
     parentComponent: "ApplicationCommandShareModal",
-    children: (0, r.jsx)(a.$jN, {
+    children: (0, r.jsx)(i.$jN, {
       className: x.spinnerContainer
     })
   }));
-  if (K) return (0, r.jsx)(a.Y0X, _(O({
+  if (K) return (0, r.jsx)(i.Y0X, _(O({
     className: x.modal,
     "aria-label": v.intl.string(v.t.fuFvw8)
   }, Z), {
     parentComponent: "ApplicationCommandShareModal",
-    children: (0, r.jsx)(a.hzk, {
+    children: (0, r.jsx)(i.hzk, {
       children: v.intl.string(v.t.yAk8ZW)
     })
   }));
@@ -230,56 +230,55 @@ function C(e) {
     selectedDestinations: R,
     disableSelection: q,
     originDestination: L
-  }) : (0, r.jsxs)(a.hzk, {
+  }) : (0, r.jsxs)(i.hzk, {
     className: x.noResults,
     children: [(0, r.jsx)("img", {
       className: x.noResultsImg,
       src: j,
       alt: ""
-    }), (0, r.jsx)(a.Text, {
+    }), (0, r.jsx)(i.Text, {
       variant: "text-md/normal",
       color: "text-muted",
       children: v.intl.string(v.t.V6nAfH)
     })]
   });
-  return (0, r.jsxs)(a.Y0X, _(O({
+  return (0, r.jsxs)(i.Y0X, _(O({
     className: x.modal,
     "aria-label": v.intl.string(v.t.fuFvw8)
   }, Z), {
     parentComponent: "ApplicationCommandShareModal",
-    children: [(0, r.jsxs)(a.xBx, {
+    children: [(0, r.jsxs)(i.xBx, {
       className: x.header,
       children: [(0, r.jsxs)("div", {
         className: x.titleLine,
         children: [(0, r.jsx)("div", {
           className: x.title,
-          children: (0, r.jsxs)(a.y5t, {
-            component: (0, r.jsxs)(a.X6q, {
+          children: (0, r.jsxs)(i.y5t, {
+            component: (0, r.jsxs)(i.X6q, {
               variant: "heading-lg/semibold",
               children: ["Share from ", null == B ? void 0 : B.name, "?"]
             }),
-            children: [q ? (0, r.jsx)(a.Text, {
+            children: [q ? (0, r.jsx)(i.Text, {
               variant: "text-sm/normal",
               color: "text-feedback-warning",
               children: v.intl.format(v.t["/KhyPT"], {
                 count: 5
               })
-            }) : null, (0, r.jsx)(a.X6q, {
+            }) : null, (0, r.jsx)(i.X6q, {
               variant: "heading-sm/normal",
               color: "header-muted",
               children: v.intl.string(v.t["DF+q2t"])
             })]
           })
-        }), (0, r.jsx)(a.olH, {
+        }), (0, r.jsx)(i.olH, {
           className: x.closeButton,
           onClick: X
         })]
       }), void 0 !== N ? (0, r.jsx)(p.z, {
         previewMessage: N
-      }) : null, (0, r.jsx)(a.E1j, {
+      }) : null, (0, r.jsx)(i.E1j, {
         className: x.search,
         ref: Y,
-        size: a.E1j.Sizes.MEDIUM,
         query: U,
         onChange: G,
         onClear: V,

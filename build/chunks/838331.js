@@ -177,9 +177,8 @@ function R(e) {
           "aria-owns": M,
           "aria-haspopup": "listbox",
           className: o()(m.combobox, u),
-          children: [(0, r.jsx)(_.E1, {
+          children: [(0, r.jsx)(_.E, {
             autoFocus: S,
-            size: _.E1.Sizes.MEDIUM,
             placeholder: t,
             query: w,
             onChange: D,

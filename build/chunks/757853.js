@@ -1,6 +1,6 @@
 /** Chunk was on 16967 **/
 n.d(t, {
-  F: () => V,
+  F: () => z,
   G: () => U
 }), n(388685);
 var l, r = n(255367),
@@ -17,8 +17,8 @@ var l, r = n(255367),
   g = n(493773),
   m = n(724757),
   p = n(212819),
-  E = n(933557),
-  b = n(266076),
+  b = n(933557),
+  E = n(266076),
   y = n(810123),
   I = n(448486),
   S = n(987509),
@@ -99,8 +99,8 @@ function H(e) {
     disabled: _,
     onPressDestination: m,
     "aria-setsize": p,
-    "aria-posinset": E
-  } = e, b = (0, u.JA)(n.id), [y, I] = i.useState(!1), S = i.useRef(!1), O = i.useCallback(() => {
+    "aria-posinset": b
+  } = e, E = (0, u.JA)(n.id), [y, I] = i.useState(!1), S = i.useRef(!1), O = i.useCallback(() => {
     if ("send" === l) {
       I(!0), S.current = !0;
       return
@@ -132,8 +132,8 @@ function H(e) {
     onClick: _ || y ? void 0 : O,
     "aria-selected": d,
     "aria-setsize": p,
-    "aria-posinset": E
-  }, b), {
+    "aria-posinset": b
+  }, E), {
     children: [(0, r.jsxs)("div", {
       className: k.identity,
       children: [(0, r.jsx)("div", {
@@ -213,10 +213,10 @@ function Q(e) {
     channel: t,
     subLabel: n
   } = e, l = M(e, ["channel", "subLabel"]);
-  let i = (0, E.ZP)(t),
+  let i = (0, b.ZP)(t),
     a = (0, I._)(t);
   return (0, r.jsx)(H, G(F({}, l), {
-    icon: (0, r.jsx)(b.Z, {
+    icon: (0, r.jsx)(E.Z, {
       "aria-hidden": !0,
       size: h.EFr.SIZE_32,
       channel: t,
@@ -227,16 +227,16 @@ function Q(e) {
   }))
 }
 
-function z(e) {
+function V(e) {
   var {
     channel: t,
     subLabel: n
   } = e, l = M(e, ["channel", "subLabel"]);
   let i = (0, d.e7)([A.Z], () => A.Z.getGuild(null == t ? void 0 : t.guild_id)),
-    a = (0, E.ZP)(t),
+    a = (0, b.ZP)(t),
     s = (0, d.e7)([O.Z, P.default, x.Z], () => {
       let e = O.Z.getChannel(t.parent_id);
-      return null == e ? null : (0, E.F6)(e, P.default, x.Z, !1)
+      return null == e ? null : (0, b.F6)(e, P.default, x.Z, !1)
     }),
     o = (0, d.e7)([C.ZP], () => C.ZP.lastMessageTimestamp(t.id, D.W.CHANNEL)),
     u = null == i ? void 0 : i.name;
@@ -277,7 +277,7 @@ function z(e) {
   }))
 }
 
-function V(e) {
+function z(e) {
   var {
     rowData: t,
     rowMode: n,
@@ -293,7 +293,7 @@ function V(e) {
       var e;
       return null != (e = null == s ? void 0 : s.map(S.hC)) ? e : []
     }, [s]),
-    E = i.useCallback(e => {
+    b = i.useCallback(e => {
       let {
         section: i,
         row: s
@@ -314,7 +314,7 @@ function V(e) {
         h = (0, S.hC)(f),
         _ = (0, Z.HY)(l, a, d),
         m = g.includes(h),
-        E = {
+        b = {
           key: h,
           message: l,
           destination: f,
@@ -328,14 +328,14 @@ function V(e) {
         };
       return u === p.h8.USER ? (0, r.jsx)(W, F({
         user: d
-      }, E)) : u === p.h8.GROUP_DM ? (0, r.jsx)(Q, F({
+      }, b)) : u === p.h8.GROUP_DM ? (0, r.jsx)(Q, F({
         channel: d
-      }, E)) : u === p.h8.TEXT_CHANNEL || u === p.h8.VOICE_CHANNEL ? (0, r.jsx)(z, F({
+      }, b)) : u === p.h8.TEXT_CHANNEL || u === p.h8.VOICE_CHANNEL ? (0, r.jsx)(V, F({
         channel: d
-      }, E)) : void(0, N.vE)(u)
+      }, b)) : void(0, N.vE)(u)
     }, [c, o, l, a, t, n, g]),
-    b = i.useRef(null),
-    y = (0, m.Z)("forward-modal", b);
+    E = i.useRef(null),
+    y = (0, m.Z)("forward-modal", E);
   return (0, r.jsx)(u.bG, {
     navigator: y,
     children: (0, r.jsx)(u.SJ, {
@@ -346,12 +346,12 @@ function V(e) {
         return (0, r.jsx)(h.YAO, G(F({
           scrollerRef: e => {
             var n;
-            b.current = e, t.current = null != (n = null == e ? void 0 : e.getScrollerNode()) ? n : null
+            E.current = e, t.current = null != (n = null == e ? void 0 : e.getScrollerNode()) ? n : null
           }
         }, n, d), {
           sections: f,
           sectionHeight: 0,
-          renderRow: E,
+          renderRow: b,
           rowHeight: _
         }))
       }

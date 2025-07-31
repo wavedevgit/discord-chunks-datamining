@@ -312,6 +312,7 @@ class A extends i.PureComponent {
               onModerationClick: this.handleModerationClick
             })
           }), null == t && (0, r.jsx)(c.E1j, {
+            size: "sm",
             className: S.searchBar,
             query: null != a ? a : "",
             placeholder: E.intl.string(E.t.rTL1RE),

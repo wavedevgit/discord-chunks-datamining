@@ -29,7 +29,6 @@ function f(e) {
       placeholder: u.intl.string(u.t["5h0QOD"]),
       query: "",
       onChange: () => {},
-      size: l.E1j.Sizes.MEDIUM,
       className: d.search
     }), (0, i.jsx)(l.zJl, {
       className: d.navScroller,

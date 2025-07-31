@@ -51,18 +51,18 @@ let T = e => [e.userId, ... function(e) {
     },
     throttleMs: 100
   },
-  D = {
+  A = {
     searchType: y.S.FUZZY,
     sortType: y.E.JARO_WINKLER,
     searchStringGenerator: T,
     throttleMs: 100
   },
-  A = r.memo(function(e) {
+  D = r.memo(function(e) {
     let {
       channel: t,
       query: n
     } = e, [o] = (0, a.e7)([j.Z], () => [j.Z.getVoiceStatesForChannel(t.id), j.Z.getVoiceStateVersion()], [t.id], N.Q), [l, c] = r.useState([]);
-    (0, O.BO)(n, Object.values(o), c, D);
+    (0, O.BO)(n, Object.values(o), c, A);
     let u = (0, a.Wu)([j.Z, S.default, b.Z, I.Z], () => Object.values(j.Z.getVoiceStatesForChannel(t.id)).map(e => S.default.getUser(e.userId)).filter(C.lm).sort((e, t) => {
         var i, r, o, a;
         if (l.length > 0 && "" !== n.trim()) {
@@ -160,7 +160,7 @@ let T = e => [e.userId, ... function(e) {
         })]
       }), (0, i.jsx)("div", {
         className: P.channelItemAvatars,
-        children: (0, i.jsx)(A, {
+        children: (0, i.jsx)(D, {
           channel: m,
           currentVoiceChannel: o,
           query: h
@@ -349,7 +349,6 @@ function W(e) {
       children: (0, i.jsx)(s.E1j, {
         autoFocus: !0,
         query: d,
-        size: s.E1j.Sizes.MEDIUM,
         placeholder: Z.intl.string(Z.t.UyA6SU),
         onClear: () => {
           p("")

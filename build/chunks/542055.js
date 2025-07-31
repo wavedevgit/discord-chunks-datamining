@@ -62,9 +62,9 @@ function E(e) {
     channelId: t,
     onClose: a,
     transitionState: o
-  } = e, [E, S] = l.useState(""), [k, Z] = l.useState("descending"), [D, L] = l.useState(!0), [I, T] = l.useState(null), M = l.useDeferredValue(E), _ = (0, u.e7)([j.Z], () => j.Z.getClips()), z = (0, u.e7)([j.Z], () => j.Z.getPendingClips()), R = (0, u.e7)([j.Z], () => j.Z.getSettings().storageLocation), A = (0, u.Wu)([j.Z], () => j.Z.getNewClipIds()), {
+  } = e, [E, S] = l.useState(""), [k, Z] = l.useState("descending"), [L, D] = l.useState(!0), [I, T] = l.useState(null), M = l.useDeferredValue(E), _ = (0, u.e7)([j.Z], () => j.Z.getClips()), R = (0, u.e7)([j.Z], () => j.Z.getPendingClips()), z = (0, u.e7)([j.Z], () => j.Z.getSettings().storageLocation), A = (0, u.Wu)([j.Z], () => j.Z.getNewClipIds()), {
     analyticsLocations: H
-  } = (0, f.ZP)(m.Z.CLIPS_GALLERY), V = l.useMemo(() => [...z, ..._], [_, z]);
+  } = (0, f.ZP)(m.Z.CLIPS_GALLERY), V = l.useMemo(() => [...R, ..._], [_, R]);
   (0, b.Z)({
     type: c.ImpressionTypes.MODAL,
     name: c.ImpressionNames.CLIP_GALLERY_VIEWED,
@@ -72,8 +72,8 @@ function E(e) {
       number_of_clips_loaded: V.length
     }
   }, {
-    disableTrack: D
-  }, [V.length, D]), l.useEffect(() => ((0, y.eL)(), () => {
+    disableTrack: L
+  }, [V.length, L]), l.useEffect(() => ((0, y.eL)(), () => {
     (0, y.eL)(), (0, y.zq)()
   }), []);
   let B = l.useMemo(() => s()(V).filter(e => {
@@ -83,14 +83,14 @@ function E(e) {
   }).sort((e, t) => "ascending" === k ? g.default.compare(e.id, t.id) : "descending" === k ? g.default.compare(t.id, e.id) : 0).chunk(3).value(), [V, M, k]);
   l.useEffect(() => {
     !async function() {
-      L(!0);
+      D(!0);
       try {
-        await y.jv(R)
+        await y.jv(z)
       } finally {
-        L(!1)
+        D(!1)
       }
     }()
-  }, [R]);
+  }, [z]);
   let F = l.useCallback(e => {
       (0, p.ZDy)(async () => {
         let {
@@ -146,7 +146,7 @@ function E(e) {
         })
       }, "clips-gallery-".concat(t))
     }, [B, A, I, G, Y, F]),
-    U = D || 0 !== B.length ? D ? (0, r.jsx)("div", {
+    U = L || 0 !== B.length ? L ? (0, r.jsx)("div", {
       className: P.spinnerContainer,
       children: (0, r.jsx)(p.$jN, {})
     }) : (0, r.jsx)(p.aVo, {

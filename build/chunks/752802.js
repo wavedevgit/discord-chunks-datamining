@@ -64,7 +64,7 @@ function k(e, t) {
   }), e
 }
 
-function D(e, t) {
+function A(e, t) {
   if (null == e) return {};
   var n, i, r = function(e, t) {
     if (null == e) return {};
@@ -80,7 +80,7 @@ function D(e, t) {
   return r
 }
 
-function A(e) {
+function D(e) {
   let {
     participant: t
   } = e, n = t.user.id, o = (0, a.e7)([I.Z], () => {
@@ -96,7 +96,7 @@ function A(e) {
     children: e => {
       var {
         onClick: n
-      } = e, r = D(e, ["onClick"]);
+      } = e, r = A(e, ["onClick"]);
       return (0, i.jsx)(c.P3F, k(T({}, r), {
         className: P.controlAction,
         onClick: e => {
@@ -209,14 +209,14 @@ function L(e) {
       }), (0, i.jsx)("div", {
         className: P.controlActions,
         children: t && (0, i.jsxs)(i.Fragment, {
-          children: [(0, i.jsx)(A, {
+          children: [(0, i.jsx)(D, {
             participant: n
           }), (0, i.jsx)(c.ua7, {
             text: Z.intl.string(Z.t["3D5yo6"]),
             children: e => {
               var {
                 onClick: t
-              } = e, r = D(e, ["onClick"]);
+              } = e, r = A(e, ["onClick"]);
               return (0, i.jsx)(c.P3F, k(T({}, r), {
                 className: P.controlAction,
                 onClick: R(n, o, t),

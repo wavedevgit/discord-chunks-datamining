@@ -51,7 +51,7 @@ let g = !1,
 function h(e) {
   let t = !1;
   return e.forEach(e => {
-    t = !1 !== E(e) || t
+    t = !1 !== y(e) || t
   }), t
 }
 
@@ -62,7 +62,7 @@ function m(e) {
   return null != N[n] && (N = p({}, N), delete N[n][e], 0 === Object.values(N[n]).length && delete N[n]), O = p({}, O), delete O[e], !0
 }
 
-function E(e) {
+function y(e) {
   let {
     user: t,
     activities: n
@@ -102,13 +102,13 @@ function S() {
   let e, t = !1;
   return a.Z.shouldFetch() || g || (N = {}, O = {}, e = !1, o.Z.getUserIds().forEach(t => {
     let n = c.default.getUser(t);
-    null != n && (e = E({
+    null != n && (e = y({
       user: n,
       activities: o.Z.getActivities(t)
     }) || e)
   }), t = e), g = !a.Z.shouldFetch(), t
 }
-class y extends(i = r.ZP.Store) {
+class E extends(i = r.ZP.Store) {
   initialize() {
     this.waitFor(a.Z), this.syncWith([a.Z], S)
   }
@@ -128,8 +128,8 @@ class y extends(i = r.ZP.Store) {
     return O[e]
   }
 }
-d(y, "displayName", "NowPlayingStore");
-let I = new y(l.Z, {
+d(E, "displayName", "NowPlayingStore");
+let I = new E(l.Z, {
   CONNECTION_OPEN: function() {
     N = {}, O = {}
   },
@@ -149,7 +149,7 @@ let I = new y(l.Z, {
     let {
       updates: t
     } = e;
-    return t.map(e => E(e)).some(e => e)
+    return t.map(e => y(e)).some(e => e)
   },
   PRESENCES_REPLACE: function(e) {
     let {

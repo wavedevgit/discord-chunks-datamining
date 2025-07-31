@@ -87,8 +87,8 @@ let I = r.memo(function(e) {
   }, []), k = r.useCallback(e => {
     (0, s.Os)(e)
   }, []), {
-    id: D,
-    pinned: A,
+    id: A,
+    pinned: D,
     zIndex: R,
     size: L,
     anchor: M,
@@ -97,7 +97,7 @@ let I = r.memo(function(e) {
     resizeX: W,
     resizeY: G,
     dragAnywhere: F
-  } = null != N ? N : {}, B = A || !w, H = r.useMemo(() => ({
+  } = null != N ? N : {}, B = D || !w, H = r.useMemo(() => ({
     minX: 0,
     minY: 0,
     maxX: P.width,
@@ -117,10 +117,10 @@ let I = r.memo(function(e) {
   return (0, i.jsx)(y.Z, {
     className: l()({
       [E.debug]: K,
-      [E.debugUnpinned]: K && !A,
-      [E.debugPinned]: K && A
+      [E.debugUnpinned]: K && !D,
+      [E.debugPinned]: K && D
     }, C),
-    id: D,
+    id: A,
     size: U,
     anchor: V,
     container: H,

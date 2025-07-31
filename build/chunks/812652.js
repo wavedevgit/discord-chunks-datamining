@@ -1,7 +1,7 @@
 /** Chunk was on 46746 **/
 n.d(t, {
-  PG: () => S,
-  Vf: () => b,
+  PG: () => b,
+  Vf: () => S,
   YX: () => C,
   ZP: () => O,
   l9: () => I
@@ -25,7 +25,7 @@ var i = n(268146),
   _ = n(676462),
   v = n(388032),
   j = n(864443);
-let S = [{
+let b = [{
     value: x.tI.PRESET_VIDEO,
     canUse: e => !0
   }, {
@@ -35,7 +35,7 @@ let S = [{
     value: x.tI.PRESET_CUSTOM,
     canUse: e => !0
   }],
-  b = [{
+  S = [{
     value: x.LY.RESOLUTION_720,
     canUse: e => !0
   }, {
@@ -103,7 +103,7 @@ function O(e) {
     onSelect: O,
     children: [(0, r.jsx)(l.kSQ, {
       label: v.intl.string(_.default.P2pjm5),
-      children: S.filter(e => {
+      children: b.filter(e => {
         let {
           canUse: t
         } = e;
@@ -145,7 +145,7 @@ function O(e) {
       children: [(0, r.jsx)(l.Clw, {}), (0, r.jsx)(l.sNh, {
         id: "resolution",
         label: v.intl.string(_.default.IG5n0d),
-        children: b.filter(e => {
+        children: S.filter(e => {
           let {
             canUse: t
           } = e;

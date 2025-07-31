@@ -1,7 +1,7 @@
 /** Chunk was on 46746 **/
 n.d(t, {
-  E_: () => b,
-  Ti: () => S,
+  E_: () => S,
+  Ti: () => b,
   Yw: () => j
 }), n(415506), n(388685);
 var r = n(255367),
@@ -155,24 +155,24 @@ function j(e) {
   })
 }
 
-function S(e, t, n) {
+function b(e, t, n) {
   var r, l;
   let g = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : "source_select",
     {
       preset: _,
       resolution: j,
-      fps: S,
-      soundshareEnabled: b
+      fps: b,
+      soundshareEnabled: S
     } = (0, s.cj)([c.Z], () => c.Z.getState()),
     C = (0, s.e7)([d.Z], () => d.Z.getInputDeviceId()),
     y = null != (r = a.I0.useSetting()) && r,
     O = null != (l = a.eo.useSetting()) && l;
-  (0, u.Z)(f.tI.PRESET_CUSTOM, j, S, t, n) || (j = f.LY.RESOLUTION_720, S = f.ws.FPS_30);
+  (0, u.Z)(f.tI.PRESET_CUSTOM, j, b, t, n) || (j = f.LY.RESOLUTION_720, b = f.ws.FPS_30);
   let [I, Z] = i.useReducer(v, p(h({}, x), {
-    muteStreamAudio: !b,
+    muteStreamAudio: !S,
     preset: _,
     resolution: j,
-    fps: S,
+    fps: b,
     hidePreview: y,
     notifyFriends: O,
     selectedSource: e,
@@ -192,6 +192,6 @@ function S(e, t, n) {
   }
 }
 
-function b() {
+function S() {
   return [i.useContext(g), i.useContext(_)]
 }

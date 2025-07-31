@@ -53,7 +53,6 @@ function U(e) {
   return (0, i.jsx)("div", {
     className: D.searchContainer,
     children: (0, i.jsx)(u.E1j, {
-      size: u.E1j.Sizes.MEDIUM,
       query: t,
       onChange: l,
       onClear: () => n(""),

@@ -54,7 +54,6 @@ function v() {
     tag: c.RB0.H1,
     title: "Experiments",
     children: [(0, i.jsx)(c.E1j, {
-      size: c.E1j.Sizes.LARGE,
       query: o,
       onChange: d,
       onClear: () => d("")

@@ -23,11 +23,11 @@ function h(e) {
     onGenerateNewLink: m,
     onToggleTemporary: p,
     onSelectMaxAge: v,
-    onSelectMaxUses: I,
-    isGuestInviteCreationToggleEnabled: x,
+    onSelectMaxUses: x,
+    isGuestInviteCreationToggleEnabled: I,
     inviteFlags: f,
-    onSetInviteFlags: j
-  } = e, N = d.find(e => e.value === a), _ = c.find(e => e.value === h);
+    onSetInviteFlags: N
+  } = e, j = d.find(e => e.value === a), _ = c.find(e => e.value === h);
   return (0, l.jsx)("div", {
     className: u.settingsContent,
     children: (0, l.jsxs)("form", {
@@ -37,7 +37,7 @@ function h(e) {
         title: o.intl.string(o.t["60qw29"]),
         children: (0, l.jsx)(r.VcW, {
           options: d,
-          value: null != (t = null == N ? void 0 : N.value) ? t : d[0].value,
+          value: null != (t = null == j ? void 0 : j.value) ? t : d[0].value,
           onChange: v
         })
       }), (0, l.jsx)(r.xJW, {
@@ -45,7 +45,7 @@ function h(e) {
         children: (0, l.jsx)(r.VcW, {
           options: c,
           value: null == _ ? void 0 : _.value,
-          onChange: I
+          onChange: x
         })
       }), !n && (0, l.jsx)(r.xJW, {
         children: (0, l.jsx)(r.j7V, {
@@ -59,11 +59,11 @@ function h(e) {
             children: o.intl.string(o.t["wE+9dn"])
           })
         })
-      }), x && (0, l.jsx)(r.xJW, {
+      }), I && (0, l.jsx)(r.xJW, {
         children: (0, l.jsx)(r.j7V, {
           className: u.switch,
           value: (0, s.yE)(f, i.$.IS_GUEST_INVITE),
-          onChange: e => j((0, s.mB)(f, i.$.IS_GUEST_INVITE, e)),
+          onChange: e => N((0, s.mB)(f, i.$.IS_GUEST_INVITE, e)),
           note: o.intl.string(o.t["/FeTKy"]),
           hideBorder: !0,
           children: (0, l.jsx)(r.Text, {

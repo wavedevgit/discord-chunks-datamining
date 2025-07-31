@@ -31,7 +31,7 @@ var r = n(255367),
   k = n(20484),
   Z = n(954292);
 
-function D(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -50,7 +50,7 @@ function D(e) {
   return e
 }
 
-function L(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -74,20 +74,20 @@ let I = function(e) {
     onShare: v
   } = e, w = (0, u.Wu)([x.default], () => o.users.map(e => x.default.getUser(e)).filter(C.lm)), {
     analyticsLocations: N
-  } = (0, g.ZP)(b.Z.CLIPS_GALLERY_ITEM), [Z, D] = l.useState(!1), L = l.useRef(null), I = (0, y.Z)(null != (a = null == (t = o.editMetadata) ? void 0 : t.start) ? a : 0), _ = l.useRef(new d.sW(500, () => {
+  } = (0, g.ZP)(b.Z.CLIPS_GALLERY_ITEM), [Z, L] = l.useState(!1), D = l.useRef(null), I = (0, y.Z)(null != (a = null == (t = o.editMetadata) ? void 0 : t.start) ? a : 0), _ = l.useRef(new d.sW(500, () => {
     var e;
-    let t = L.current;
-    null != t && t.paused && (t.currentTime = I.current, null == (e = L.current) || e.play())
-  })), R = l.useCallback(() => {
-    let e = L.current;
+    let t = D.current;
+    null != t && t.paused && (t.currentTime = I.current, null == (e = D.current) || e.play())
+  })), z = l.useCallback(() => {
+    let e = D.current;
     null != e && (e.pause(), e.src = "")
   }, []), A = l.useCallback(() => {
     var e;
-    D(!0), null == (e = _.current) || e.delay()
+    L(!0), null == (e = _.current) || e.delay()
   }, []), H = l.useCallback(() => {
     var e, t, n;
-    D(!1);
-    let r = L.current;
+    L(!1);
+    let r = D.current;
     null == (e = _.current) || e.cancel(), null != r && (r.pause(), r.currentTime = null != (n = null == (t = o.editMetadata) ? void 0 : t.start) ? n : 0)
   }, [null == (n = o.editMetadata) ? void 0 : n.start]), V = l.useCallback(e => {
     var t, n;
@@ -114,7 +114,7 @@ let I = function(e) {
       children: [(0, r.jsx)(T, {
         clip: o,
         isNew: p,
-        videoRef: L
+        videoRef: D
       }), (0, r.jsxs)("div", {
         className: k.clipFooter,
         children: [(0, r.jsx)(M, {
@@ -142,11 +142,11 @@ let I = function(e) {
                 i = null == (n = e.currentTarget.parentElement) || null == (t = n.parentElement) ? void 0 : t.parentElement;
               (null == a ? void 0 : a.parentElement) !== i && (null == a || null == (l = a.parentElement) || null == (r = l.parentElement) ? void 0 : r.parentElement) !== i && A()
             }
-          }), Z && (0, r.jsx)(z, {
+          }), Z && (0, r.jsx)(R, {
             clip: o,
             actionsDisabled: c,
             exporting: s,
-            onBeforeDelete: R,
+            onBeforeDelete: z,
             onDelete: m,
             onEdit: j,
             onShare: v,
@@ -286,7 +286,7 @@ function _(e) {
   })
 }
 
-function z(e) {
+function R(e) {
   let {
     clip: t,
     exporting: n,
@@ -313,7 +313,7 @@ function z(e) {
     className: k.buttonContainer,
     children: [null != o && (0, r.jsx)(f.ua7, {
       text: S.intl.string(S.t.oyYWHB),
-      children: e => (0, r.jsx)(m.zx, L(D({}, e), {
+      children: e => (0, r.jsx)(m.zx, D(L({}, e), {
         disabled: a,
         color: p ? m.zx.Colors.RED : m.zx.Colors.PRIMARY,
         onClick: b,
@@ -328,7 +328,7 @@ function z(e) {
       }))
     }), (0, r.jsx)(f.ua7, {
       text: S.intl.string(S.t.bt75u7),
-      children: e => (0, r.jsx)(m.zx, L(D({}, e), {
+      children: e => (0, r.jsx)(m.zx, D(L({}, e), {
         disabled: a,
         color: m.zx.Colors.PRIMARY,
         onClick: g,
@@ -359,7 +359,7 @@ function z(e) {
           }
           return l
         }(e, ["onBlur"]);
-        return (0, r.jsx)(m.zx, L(D({}, l), {
+        return (0, r.jsx)(m.zx, D(L({}, l), {
           disabled: a && !n,
           submitting: n,
           color: m.zx.Colors.BRAND,

@@ -33,8 +33,8 @@ var i = n(255367),
   P = n(32300),
   T = n(681603),
   k = n(915614),
-  D = n(268861),
-  A = n(690336),
+  A = n(268861),
+  D = n(690336),
   R = n(333031),
   L = n(371651),
   M = n(624864),
@@ -274,7 +274,7 @@ function er(e) {
           locked: o,
           keybind: k,
           onClick: ee
-        }), (0, i.jsx)(A.Z, {
+        }), (0, i.jsx)(D.Z, {
           className: l()({
             [H.layoutLocked]: o,
             [H.layoutUnlocked]: !o
@@ -282,7 +282,7 @@ function er(e) {
         }), (0, i.jsx)(V.Z, {}), !t && Y && (0, i.jsx)($, {
           locked: o,
           focused: u
-        }), (0, i.jsx)(T.Z, {}), (0, i.jsx)(D.Z, {
+        }), (0, i.jsx)(T.Z, {}), (0, i.jsx)(A.Z, {
           locked: o
         }), (0, i.jsx)(c.Ixi, {})]
       })

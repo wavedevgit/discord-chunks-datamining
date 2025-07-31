@@ -180,7 +180,6 @@ function el(e) {
       query: t,
       onChange: h,
       onClear: d,
-      size: f.E1j.Sizes.MEDIUM,
       onFocus: m,
       autoFocus: !0
     })

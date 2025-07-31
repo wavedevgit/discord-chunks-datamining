@@ -36,8 +36,8 @@ var i = n(120356),
   D = n(910424),
   Z = n(981631),
   L = n(477839),
-  M = n(388032),
-  k = n(603571),
+  k = n(388032),
+  M = n(603571),
   U = n(126485);
 let R = e => {
     let {
@@ -98,7 +98,7 @@ let R = e => {
         }
         return e
       }({}, t), Q = Q = {
-        buttons: [M.intl.string(k.default["Fv/2Oz"])],
+        buttons: [k.intl.string(M.default["Fv/2Oz"])],
         metadata: {
           button_urls: [L.U8]
         }

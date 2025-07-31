@@ -115,11 +115,11 @@ let x = {
       locked: b,
       widgetId: t,
       pinned: S
-    })), w = (0, c.Z)(n), Z = (0, c.Z)(b), P = f === h.C5.VERTICAL, T = b || Z !== b || w !== n, k = 0, D = 0, A = (0, s.Yzy)(P ? N.map((e, t) => O(y({}, e), {
+    })), w = (0, c.Z)(n), Z = (0, c.Z)(b), P = f === h.C5.VERTICAL, T = b || Z !== b || w !== n, k = 0, A = 0, D = (0, s.Yzy)(P ? N.map((e, t) => O(y({}, e), {
       y: (k += e.height + (t > 0 ? j : 0)) - e.height,
       x: 0
     })) : N.map((e, t) => O(y({}, e), {
-      x: (D += e.width + (t > 0 ? j : 0)) - e.width,
+      x: (A += e.width + (t > 0 ? j : 0)) - e.width,
       y: 0
     })), {
       key: e => e.key,
@@ -179,9 +179,9 @@ let x = {
       style: P ? {
         height: k
       } : {
-        width: D
+        width: A
       },
-      children: A((e, t, r, l) => (0, i.jsx)(a.animated.div, {
+      children: D((e, t, r, l) => (0, i.jsx)(a.animated.div, {
         className: g.gridItem,
         style: Object.assign({}, e, {
           width: n,

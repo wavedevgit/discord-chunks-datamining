@@ -40,7 +40,6 @@ function d(e) {
     className: l()(c.searchBar, {
       [c.searchFloating]: t === o.GlobalDiscoverySearchBarState.FLOATING
     }),
-    size: s.E1j.Sizes.MEDIUM,
     query: n,
     placeholder: i,
     onChange: d,

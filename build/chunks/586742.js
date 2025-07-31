@@ -53,7 +53,7 @@ function k(e) {
   return e
 }
 
-function D(e, t) {
+function A(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -65,7 +65,7 @@ function D(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let A = r.memo(function(e) {
+let D = r.memo(function(e) {
     var t;
     let {
       participant: n,
@@ -93,7 +93,7 @@ let A = r.memo(function(e) {
         let {
           default: e
         } = await Promise.all([n.e("70274"), n.e("79695"), n.e("6524")]).then(n.bind(n, 27900));
-        return n => (0, i.jsx)(e, D(k({}, n), {
+        return n => (0, i.jsx)(e, A(k({}, n), {
           user: o,
           mediaEngineContext: t,
           onWatchStream: () => {
@@ -122,7 +122,7 @@ let A = r.memo(function(e) {
       height: u
     }), [s, u]);
     return (0, i.jsx)(i.Fragment, {
-      children: o.map(e => (0, i.jsx)(A, {
+      children: o.map(e => (0, i.jsx)(D, {
         participant: e,
         width: s,
         className: T.tile,
@@ -292,7 +292,7 @@ function z(e) {
       let {
         width: s,
         height: c
-      } = M(D(k({}, a), {
+      } = M(A(k({}, a), {
         widget: o,
         operation: I.B.RESIZE_NORTH,
         computedSize: {
@@ -317,7 +317,7 @@ function z(e) {
     horizontal: v,
     widget: e.widget,
     widgetLayoutSpecs: Z
-  }), (0, i.jsx)(L, D(k({}, e), {
+  }), (0, i.jsx)(L, A(k({}, e), {
     channel: s,
     participants: C,
     participantsVersion: O,

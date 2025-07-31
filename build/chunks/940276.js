@@ -81,7 +81,6 @@ let b = function() {
     children: [(0, i.jsxs)("div", {
       className: h.headerContainer,
       children: [(0, i.jsx)(l.E1j, {
-        size: l.E1j.Sizes.MEDIUM,
         query: t,
         onChange: n,
         onClear: () => {

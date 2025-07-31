@@ -69,6 +69,28 @@ let r = {
         resolve: () => 8
       }
     },
+    control: {
+      INPUT_HEIGHT_MD: {
+        resolve(e) {
+          let {
+            enabledExperiments: t
+          } = e;
+          if (0 === t.length) return 44;
+          for (let e of t)
+            if ("mana-text-inputs" === e) return 40;
+          return 44
+        }
+      },
+      INPUT_HEIGHT_SM: {
+        resolve: () => 32
+      },
+      ITEM_HEIGHT_MD: {
+        resolve: () => 40
+      },
+      ITEM_HEIGHT_SM: {
+        resolve: () => 32
+      }
+    },
     form: {
       INPUT_HEIGHT: {
         resolve: () => 44
@@ -112,6 +134,23 @@ let r = {
             }
           return 48
         }
+      }
+    },
+    icon: {
+      SIZE_LG: {
+        resolve: () => 32
+      },
+      SIZE_MD: {
+        resolve: () => 24
+      },
+      SIZE_SM: {
+        resolve: () => 18
+      },
+      SIZE_XS: {
+        resolve: () => 16
+      },
+      SIZE_XXS: {
+        resolve: () => 12
       }
     },
     modal: {

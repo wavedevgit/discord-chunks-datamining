@@ -22,8 +22,8 @@ var r = n(255367),
   _ = n(509212),
   v = n(569984),
   j = n(977156),
-  S = n(28798),
-  b = n(131951),
+  b = n(28798),
+  S = n(131951),
   C = n(449224),
   y = n(358085),
   O = n(463727),
@@ -76,7 +76,7 @@ function F(e) {
     enableGoLiveCaptureCard: l
   } = O.Z.useExperiment({
     location: "GoLive_Source_Select"
-  }), o = b.Z.supports(D.AN.GO_LIVE_HARDWARE), [a, m] = i.useState(null), [C, y] = i.useState(null), [Z, w] = i.useState(null), T = null != Z && Z.length > 0, [E, R] = i.useState(c.vA.WINDOW), [M, G] = i.useState(!1), F = i.useRef(null), z = i.useRef(new u.Xp), H = (0, d.e7)([x.ZP], () => x.ZP.getRunningGames()), V = function(e, t, n) {
+  }), o = S.Z.supports(D.AN.GO_LIVE_HARDWARE), [a, m] = i.useState(null), [C, y] = i.useState(null), [Z, w] = i.useState(null), T = null != Z && Z.length > 0, [E, R] = i.useState(c.vA.WINDOW), [M, G] = i.useState(!1), F = i.useRef(null), H = i.useRef(new u.Xp), z = (0, d.e7)([x.ZP], () => x.ZP.getRunningGames()), V = function(e, t, n) {
     let r = (0, j.Zy)({
       location: L.dr.STREAM_SOURCE_SELECT
     });
@@ -94,9 +94,9 @@ function F(e) {
       }
       return null
     }, [r, e, t, n])
-  }((0, d.e7)([v.Z], () => v.Z.quests), H, C), Y = i.useMemo(() => null == C ? null : [...C].sort((e, t) => (null == V ? void 0 : V.source.id) === e.id ? -1 : (null == V ? void 0 : V.source.id) === t.id ? 1 : W(t) - W(e)), [V, C]);
+  }((0, d.e7)([v.Z], () => v.Z.quests), z, C), Y = i.useMemo(() => null == C ? null : [...C].sort((e, t) => (null == V ? void 0 : V.source.id) === e.id ? -1 : (null == V ? void 0 : V.source.id) === t.id ? 1 : W(t) - W(e)), [V, C]);
   i.useEffect(() => {
-    let e = z.current;
+    let e = H.current;
     return (0, N.t)({
       width: 176,
       height: 99
@@ -202,7 +202,7 @@ function F(e) {
         let e = F.current;
         null != e && G(!e.isScrolledToTop())
       },
-      children: [E === c.vA.WINDOW && null != V && (0, r.jsx)(S.Z, {
+      children: [E === c.vA.WINDOW && null != V && (0, r.jsx)(b.Z, {
         quest: V.quest
       }), (0, r.jsx)(p.Z, {
         layout: p.Z.Layout.WRAP,
@@ -214,7 +214,7 @@ function F(e) {
   })
 }
 
-function z(e) {
+function H(e) {
   let {
     onSelect: t
   } = e, n = i.useCallback(() => {
@@ -243,7 +243,7 @@ function z(e) {
   })
 }
 
-function H(e) {
+function z(e) {
   let {
     id: t,
     name: n,
@@ -283,7 +283,7 @@ function V(e) {
   i.useEffect(() => {
     let e = d.current,
       t = () => {
-        let e = Object.entries(b.Z.getVideoDevices()).filter(e => {
+        let e = Object.entries(S.Z.getVideoDevices()).filter(e => {
           let [t, n] = e;
           return !n.disabled
         });
@@ -325,23 +325,23 @@ function V(e) {
     v = i.useCallback(() => {
       _(!g)
     }, [g]),
-    j = p ? (0, r.jsx)(z, {
+    j = p ? (0, r.jsx)(H, {
       onSelect: t
     }) : (0, r.jsxs)("div", {
       className: U.nativePickerTypes,
-      children: [(0, r.jsx)(H, {
+      children: [(0, r.jsx)(z, {
         onSelect: t,
         id: "screen",
         name: B.intl.string(B.t.R4wpLC),
         text: B.intl.string(B.t.cVUFXV),
         icon: f.pzj
-      }), (0, r.jsx)(H, {
+      }), (0, r.jsx)(z, {
         onSelect: t,
         id: "window",
         name: B.intl.string(B.t["+SLJCg"]),
         text: B.intl.string(B.t.dG2A1N),
         icon: f.GON
-      }), x ? (0, r.jsx)(H, {
+      }), x ? (0, r.jsx)(z, {
         onSelect: t,
         id: "app",
         name: B.intl.string(B.t.ct7AKS),

@@ -39,8 +39,8 @@ var i = n(255367),
   P = n(603074),
   T = n(879815),
   k = n(189771),
-  D = n(294629),
-  A = n(67844),
+  A = n(294629),
+  D = n(67844),
   R = n(544384),
   L = n(890828),
   M = n(560688),
@@ -162,7 +162,7 @@ function ea(e) {
     suppress: s,
     selfMute: c,
     mute: u
-  } = (0, D.Z)(n), p = c || u || s, f = (0, O.Z)(c, u, s, !1), {
+  } = (0, A.Z)(n), p = c || u || s, f = (0, O.Z)(c, u, s, !1), {
     Component: h,
     play: g,
     events: y
@@ -323,7 +323,7 @@ function ec(e) {
       onMouseEnter: x,
       onMouseLeave: I
     }
-  } = (0, u.o)(s ? "disable" : "enable"), S = null != n ? (0, A.X)({
+  } = (0, u.o)(s ? "disable" : "enable"), S = null != n ? (0, D.X)({
     enabled: s,
     cameraUnavailable: f,
     hasPermission: m,
@@ -475,7 +475,7 @@ function ed(e) {
   } = e, s = r.useRef(null), u = null != (t = null == l ? void 0 : l.getGuildId()) ? t : null, {
     mute: p,
     suppress: h
-  } = (0, D.Z)(l), m = (0, o.e7)([B.Z], () => B.Z.isDeaf()), y = null == l || p || h || m, {
+  } = (0, A.Z)(l), m = (0, o.e7)([B.Z], () => B.Z.isDeaf()), y = null == l || p || h || m, {
     analyticsLocations: O
   } = (0, g.ZP)();
 

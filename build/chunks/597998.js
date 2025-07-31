@@ -38,7 +38,7 @@ var r = n(255367),
   Z = n(388032),
   L = n(850999);
 
-function M(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -56,7 +56,7 @@ function M(e) {
   }
   return e
 }
-let k = e => {
+let M = e => {
     let {
       hangStatusActivity: t,
       iconClassName: n,
@@ -113,7 +113,7 @@ function R(e) {
     channelId: x,
     user: E,
     disconnected: N,
-    hangStatusActivity: M,
+    hangStatusActivity: k,
     showHangStatus: U,
     isSelf: R,
     handleHoverHangStatus: V,
@@ -194,7 +194,7 @@ function R(e) {
     })
   }, "stream"));
   let J = null != I && !(0, T.yE)(I.flags, A.udG.EMBEDDED),
-    K = null == M && J;
+    K = null == k && J;
   return 0 !== H.length || null != Y || U || K ? (0, r.jsxs)("div", {
     className: a()(L.icons, t),
     children: [(0, r.jsxs)("div", {
@@ -212,8 +212,8 @@ function R(e) {
         guildId: j,
         channelId: x,
         userId: E.id
-      }, "".concat(E.id, "-game")) : (0, r.jsx)(k, {
-        hangStatusActivity: M,
+      }, "".concat(E.id, "-game")) : (0, r.jsx)(M, {
+        hangStatusActivity: k,
         iconClassName: _,
         isSelf: R
       })
@@ -251,7 +251,7 @@ let V = i.forwardRef(function(e, t) {
     onContextMenu: C,
     onMouseLeave: T,
     onMouseDown: D,
-    priority: k,
+    priority: M,
     speaking: U,
     collapsed: V,
     mute: F,
@@ -313,9 +313,9 @@ let V = i.forwardRef(function(e, t) {
       className: a()(L.content, {
         [L.flipped]: Y
       }),
-      children: [k && !V ? (0, r.jsx)(s.ua7, {
+      children: [M && !V ? (0, r.jsx)(s.ua7, {
         text: Z.intl.string(Z.t.BVK71t),
-        children: e => (0, r.jsx)("div", M({
+        children: e => (0, r.jsx)("div", k({
           className: a()(L.iconPriortySpeaker, {
             [L.iconPriortySpeakerSpeaking]: !F && !G && U
           })
@@ -352,7 +352,7 @@ let V = i.forwardRef(function(e, t) {
               source: b ? A.jXE.OVERLAY : A.Sbl.VOICE_PANEL
             }
           };
-        return !V || b ? (0, r.jsx)(_.Z, (e = M({}, i), t = t = {
+        return !V || b ? (0, r.jsx)(_.Z, (e = k({}, i), t = t = {
           children: n
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
           var n = Object.keys(e);
@@ -364,7 +364,7 @@ let V = i.forwardRef(function(e, t) {
         })(Object(t)).forEach(function(n) {
           Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
         }), e)) : null
-      }(), (0, r.jsx)(R, M({
+      }(), (0, r.jsx)(R, k({
         disabled: p
       }, v)), !V && en ? (0, r.jsx)(s.DY3, {
         text: Z.intl.string(Z.t["+1H47u"]),

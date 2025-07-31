@@ -183,7 +183,6 @@ function P(e) {
     children: (0, r.jsxs)("div", {
       className: I.searchContainer,
       children: [(0, r.jsx)(d.E1j, {
-        size: d.E1j.Sizes.MEDIUM,
         query: n,
         onChange: o,
         onClear: c,

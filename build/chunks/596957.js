@@ -241,8 +241,7 @@ let k = function(e) {
         className: a()(A.searchBar, ee ? A.searchEmptyState : null),
         query: U[u],
         onChange: B,
-        onClear: H,
-        size: c.E1j.Sizes.MEDIUM
+        onClear: H
       }), (0, r.jsx)(I.Z, {
         rows: K,
         renderRow: V,

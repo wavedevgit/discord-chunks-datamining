@@ -46,6 +46,7 @@ function p(e) {
       })
     }) : null, !0 === t ? null : (0, l.jsx)("div", {
       children: (0, l.jsx)(o.E1j, {
+        size: "sm",
         className: d.searchBar,
         query: m,
         onChange: s.a8,

@@ -33,7 +33,6 @@ function d(e) {
     },
     children: (0, r.jsx)(s.E1j, {
       ref: p,
-      size: s.E1j.Sizes.MEDIUM,
       query: n,
       onClear: f,
       onChange: c.yN,

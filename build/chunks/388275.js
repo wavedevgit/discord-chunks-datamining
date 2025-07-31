@@ -17,8 +17,8 @@ var l = n(255367),
   g = n(822869),
   m = n(912332),
   p = n(646746),
-  E = n(388032),
-  b = n(691176);
+  b = n(388032),
+  E = n(691176);
 
 function y(e) {
   let {
@@ -44,22 +44,22 @@ function y(e) {
     shouldRefocus: !0
   })), [G, j, v, I]);
   return (0, l.jsxs)(s.mzw, {
-    className: b.footerWithMessage,
+    className: E.footerWithMessage,
     children: [(0, l.jsx)("div", {
-      className: b.forwardPreviewWrapper,
+      className: E.forwardPreviewWrapper,
       children: (0, l.jsx)(p.O, {
         message: t,
         forwardOptions: n,
         channel: C
       })
     }), (0, l.jsxs)("div", {
-      className: b.footerWarningWrapper,
+      className: E.footerWarningWrapper,
       children: [(0, l.jsxs)("div", {
-        className: b.footerButtons,
+        className: E.footerButtons,
         children: [(0, l.jsx)(d.Z, {
-          innerClassName: b.messageInput,
+          innerClassName: E.messageInput,
           onChange: F,
-          placeholder: E.intl.string(E.t.ZroO3N),
+          placeholder: b.intl.string(b.t.ZroO3N),
           channel: C,
           textValue: j,
           richValue: Z,
@@ -73,7 +73,7 @@ function y(e) {
           emojiPickerCloseOnModalOuterClick: !0,
           disableThemedBackground: !0
         }), (0, l.jsx)(a.zx, {
-          className: b.sendWithMessage,
+          className: E.sendWithMessage,
           submitting: O,
           disabled: !I || j.length > v,
           onClick: G,
@@ -82,7 +82,7 @@ function y(e) {
       }), x.length > 0 && j.length > 0 && (0, l.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "text-feedback-warning",
-        children: E.intl.format(E.t.xJFpio, {
+        children: b.intl.format(b.t.xJFpio, {
           count: x.length,
           channelNames: x.join(", ")
         })

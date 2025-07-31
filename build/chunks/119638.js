@@ -88,7 +88,8 @@ class v extends(r = o.PureComponent) {
         className: t
       } = e,
       n = E(e, ["className"]);
-    return (0, a.jsx)(d.E1, g(h({}, n), {
+    return (0, a.jsx)(d.E, g(h({}, n), {
+      size: "sm",
       className: l()(f.popoutListInput, t)
     }))
   }

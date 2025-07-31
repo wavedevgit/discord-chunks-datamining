@@ -7,6 +7,5 @@ e.exports = {
   threadIcon: "threadIcon_d9c882",
   title: "title_d9c882",
   spacer: "spacer_d9c882",
-  createButton: "createButton_d9c882",
-  searchBox: "searchBox_d9c882"
+  createButton: "createButton_d9c882"
 }

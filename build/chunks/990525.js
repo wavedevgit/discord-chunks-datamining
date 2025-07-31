@@ -75,15 +75,15 @@ let E = e => {
       autoTrackExposure: !0,
       disable: !p.ZP.canCheckVoiceFilterFilesExist()
     }),
-    M = (0, o.e7)([b.Z], () => b.Z.isVoiceFilterDownloaded(t.id), [t]),
-    k = null == C ? void 0 : C.previewSoundURLs,
+    k = (0, o.e7)([b.Z], () => b.Z.isVoiceFilterDownloaded(t.id), [t]),
+    M = null == C ? void 0 : C.previewSoundURLs,
     [U, R] = i.useState(0),
     {
       isPlaying: V,
       playSound: F,
       stopSound: G,
       preloadSound: B
-    } = (0, d.Z)(null != k ? k[U] : null, {
+    } = (0, d.Z)(null != M ? M[U] : null, {
       soundId: t.id
     }),
     W = I[t.styleKey],
@@ -98,8 +98,8 @@ let E = e => {
       }, (0, g.w)(l))), F({
         volume: .5,
         outputChannel: O.w.VOICE
-      }), (.25 > Math.random() || U > 0) && null != k && R(e => (e + 1) % k.length)
-    }, [l, F, U, k, t.id]),
+      }), (.25 > Math.random() || U > 0) && null != M && R(e => (e + 1) % M.length)
+    }, [l, F, U, M, t.id]),
     z = null != C ? S.intl.string(C.name) : "";
   return (0, r.jsxs)("div", {
     className: a()(I.filter, W, {
@@ -107,7 +107,7 @@ let E = e => {
       [I.locked]: N && !T
     }),
     children: [(0, r.jsx)(c.ua7, {
-      shouldShow: L && !M,
+      shouldShow: L && !k,
       "aria-label": S.intl.string(S.t.SQ7qMD),
       text: (0, r.jsxs)("div", {
         className: I.downloadRequiredContent,
@@ -187,12 +187,12 @@ let E = e => {
             variant: "text-xs/medium",
             color: t.underDevelopment ? "header-muted" : "header-primary",
             children: [t.underDevelopment ? "\uD83D\uDEA7 " : "", z]
-          }), L && !M ? (0, r.jsx)(c._8t, {
+          }), L && !k ? (0, r.jsx)(c._8t, {
             size: "xxs"
           }) : null]
         })]
       }))
-    }), null != k && (0, r.jsx)(c.ua7, {
+    }), null != M && (0, r.jsx)(c.ua7, {
       text: S.intl.string(V ? S.t.ItuPbm : S.t["0gtbEx"]),
       children: e => (0, r.jsx)(c.P3F, x(j({}, e), {
         className: a()([I.hoverButtonCircle, I.previewButton], {

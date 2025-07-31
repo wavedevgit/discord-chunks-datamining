@@ -1,6 +1,6 @@
 /** Chunk was on 99617 **/
 t.d(e, {
-  default: () => j
+  default: () => M
 }), t(539854), t(642613), t(388685);
 var i = t(255367),
   l = t(73800),
@@ -108,7 +108,7 @@ function b(n) {
   })
 }
 
-function M(n) {
+function j(n) {
   let {
     friends: e,
     searchQuery: t,
@@ -166,7 +166,7 @@ function M(n) {
   })
 }
 
-function j(n) {
+function M(n) {
   let {
     clip: e,
     editMetadata: t,
@@ -217,14 +217,13 @@ function j(n) {
       className: Z.searchBar,
       query: s,
       onChange: A,
-      size: _.E1j.Sizes.MEDIUM,
       onClear: function() {
         A("")
       },
       placeholder: p.intl.string(p.t.CmSHY2)
     }), (0, i.jsx)("div", {
       className: a()(Z.divider, Z.topDivider)
-    }), (0, i.jsx)(M, {
+    }), (0, i.jsx)(j, {
       searchQuery: s,
       friends: R,
       onShareClip: H,
