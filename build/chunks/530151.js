@@ -30,8 +30,8 @@ var r = n(255367),
   P = n(417363),
   j = n(941128),
   A = n(451478),
-  Z = n(424218),
-  x = n(780570),
+  x = n(424218),
+  Z = n(780570),
   w = n(353042),
   L = n(86826),
   R = n(981631),
@@ -90,7 +90,7 @@ let U = e => {
     })
   };
 
-function B(e, t) {
+function H(e, t) {
   switch (t) {
     case R.f07.POST_INSTALL_SCRIPTS:
     case R.f07.PLANNING:
@@ -98,12 +98,12 @@ function B(e, t) {
     case R.f07.ALLOCATING_DISK:
       return "".concat(e);
     default:
-      return (0, Z.BU)(e, {
+      return (0, x.BU)(e, {
         useKibibytes: !0
       })
   }
 }
-let H = {
+let B = {
   [R.vxO.INSTALLING]: {
     [S.J6.NONE]: (e, t, n, r) => D.intl.formatToPlainString(D.t.JfJt9f, {
       percent: e,
@@ -182,7 +182,7 @@ let H = {
 };
 
 function F(e, t, n, r, i) {
-  let l = H[t],
+  let l = B[t],
     a = null != l ? Object.keys(l) : [],
     {
       unit: o,
@@ -203,7 +203,7 @@ function z(e) {
     progress: i,
     total: l,
     secondsRemaining: a
-  } = e, o = B(l, n), s = B(i, n);
+  } = e, o = H(l, n), s = H(i, n);
   switch (n) {
     case R.f07.QUEUED:
       if (0 === i) return D.intl.string(D.t.RpfBqa);
@@ -326,9 +326,9 @@ class W extends i.PureComponent {
         stage: l
       } = n;
       if (null != r && null != i) {
-        let n = B(i, l),
-          a = B(r, l),
-          o = Math.floor(t = x.xI(r, i));
+        let n = H(i, l),
+          a = H(r, l),
+          o = Math.floor(t = Z.xI(r, i));
         e = l === R.f07.PAUSING ? D.intl.formatToPlainString(D.t.vjxhWl, {
           percent: o,
           progress: a,
@@ -359,12 +359,12 @@ class W extends i.PureComponent {
       total: r
     } = e;
     if (null == n || null == r) return null;
-    let i = x.xI(n, r),
+    let i = Z.xI(n, r),
       l = Math.floor(i),
       a = 0 === n && 1 === r ? D.intl.string(D.t["+pfsFR"]) : D.intl.formatToPlainString(D.t["+feX8f"], {
         percent: l,
-        progress: (0, Z.BU)(n),
-        total: (0, Z.BU)(r)
+        progress: (0, x.BU)(n),
+        total: (0, x.BU)(r)
       });
     return this.renderBody({
       message: a,
@@ -391,7 +391,7 @@ class W extends i.PureComponent {
       type: i
     } = e;
     if (null == t || null == n || null == r) return null;
-    let l = x.xI(n, t),
+    let l = Z.xI(n, t),
       a = Math.floor(l);
     return this.renderBody({
       percent: l,
@@ -445,8 +445,8 @@ class W extends i.PureComponent {
         readerProgress: o
       } = n;
       if (null == i || null == l || null == r) return null;
-      let s = x.xI(i, l),
-        c = x.xI(null != o ? o : 0, l),
+      let s = Z.xI(i, l),
+        c = Z.xI(null != o ? o : 0, l),
         u = e[e.length - 1] / t * 1e3,
         d = l - i,
         p = z({
@@ -484,7 +484,7 @@ let Y = () => (0, r.jsx)(V, {
       onClick: () => m.A1(t.applicationId, t.branchId)
     })
   },
-  X = e => {
+  Q = e => {
     let {
       item: t
     } = e;
@@ -494,7 +494,7 @@ let Y = () => (0, r.jsx)(V, {
       onClick: () => m.al(t.applicationId, t.branchId)
     })
   },
-  Q = [{
+  X = [{
     key: "name",
     cellClassName: k.nameCell,
     render: e => (0, r.jsxs)(v.Z, {
@@ -531,9 +531,9 @@ let Y = () => (0, r.jsx)(V, {
         item: e
       }) : null != t && t.paused ? (0, r.jsx)(Y, {}) : (0, r.jsx)(K, {
         item: e
-      }), i = (0, r.jsx)(X, {
+      }), i = (0, r.jsx)(Q, {
         item: e
-      })) : i = (0, r.jsx)(X, {
+      })) : i = (0, r.jsx)(Q, {
         item: e
       }), (0, r.jsxs)(v.Z, {
         justify: v.Z.Justify.END,
@@ -585,7 +585,7 @@ class J extends i.PureComponent {
         })]
       }), (0, r.jsx)(I.Z, {
         hasHeader: !1,
-        columns: Q,
+        columns: X,
         data: e,
         className: k.table,
         rowClassName: k.row,

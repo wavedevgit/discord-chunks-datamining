@@ -22,8 +22,8 @@ var i = n(255367),
   _ = n(410575),
   j = n(586902),
   E = n(980591),
-  O = n(468363),
-  C = n(326255),
+  C = n(468363),
+  O = n(326255),
   v = n(771173),
   S = n(963056),
   T = n(570928),
@@ -76,8 +76,8 @@ var i = n(255367),
   e_ = n(378441),
   ej = n(358820),
   eE = n(723547),
-  eO = n(361045),
-  eC = n(74650),
+  eC = n(361045),
+  eO = n(74650),
   ev = n(306609),
   eS = n(170293),
   eT = n(8404),
@@ -168,8 +168,8 @@ function tn(e) {
   } = e, g = r.useRef(null), h = null != t ? t : g, b = (0, y.Z)(null == l ? void 0 : l.avatarDecoration), x = (0, eU.NZ)({
     avatarDecoration: b,
     size: (0, A.y9)(f.EFr.SIZE_32)
-  }), j = (0, f.dQu)(f.TVs.modules.guildbar.AVATAR_SIZE), O = (0, U.Z)("Account") ? 32 : j, {
-    updateOpenPopoutRef: C,
+  }), j = (0, f.dQu)(f.TVs.modules.guildbar.AVATAR_SIZE), C = (0, U.Z)("Account") ? 32 : j, {
+    updateOpenPopoutRef: O,
     highlightBadge: v,
     setHighlightBadge: S
   } = function() {
@@ -233,7 +233,7 @@ function tn(e) {
       onRequestClose: () => {
         d(), S(void 0)
       },
-      children: e => (C(e), (0, i.jsxs)(f.P3F, e7(e4({
+      children: e => (O(e), (0, i.jsxs)(f.P3F, e7(e4({
         innerRef: h,
         style: T
       }, e), {
@@ -247,8 +247,8 @@ function tn(e) {
           [e2.plated]: null != m
         }),
         children: [(0, i.jsx)(e9, {
-          size: f.EFr["SIZE_".concat(O)],
-          src: l.getAvatarURL(void 0, O - 4, !1),
+          size: f.EFr["SIZE_".concat(C)],
+          src: l.getAvatarURL(void 0, C - 4, !1),
           avatarDecoration: x,
           "aria-label": l.username,
           status: s ? e0.Skl.STREAMING : o,
@@ -306,7 +306,7 @@ class ti extends r.PureComponent {
       voiceChannel: o
     } = this.props;
     if (null == r) return null;
-    if ((0, C.Z)({
+    if ((0, O.Z)({
         activities: t,
         status: s,
         applicationStream: n,
@@ -661,13 +661,13 @@ function tr(e) {
     handleOpenSettingsContextMenu: _,
     dismissibleContents: j,
     nameplate: E,
-    accountContainerRef: O
-  } = e, C = (0, et.A)(E);
+    accountContainerRef: C
+  } = e, O = (0, et.A)(E);
   return (0, i.jsxs)("div", {
     className: e2.buttons,
-    style: C,
+    style: O,
     children: [(0, i.jsx)(tl, {
-      accountContainerRef: O,
+      accountContainerRef: C,
       selfMute: n,
       serverMute: s,
       suppress: l,
@@ -743,7 +743,7 @@ function ts() {
       selfDeaf: _,
       deaf: E
     } = (0, ep.Z)(g),
-    C = (0, d.e7)([P.C], () => {
+    O = (0, d.e7)([P.C], () => {
       var e;
       return (0, R.fD)() ? null == (e = P.C.getCurrentBuildOverride().overrides) ? void 0 : e.discord_web : null
     }),
@@ -759,7 +759,7 @@ function ts() {
     B = (null == t || null == (e = t.avatarDecoration) ? void 0 : e.skuId) === e1.rL,
     {
       voiceActivityStatusEnabled: M
-    } = (0, O.U)({
+    } = (0, C.U)({
       location: "Account"
     }),
     U = (0, J.m)(),
@@ -810,7 +810,7 @@ function ts() {
       status: a,
       streaming: s,
       suppress: x,
-      webBuildOverride: C,
+      webBuildOverride: O,
       awaitingRemote: w,
       isEligibleForPomelo: Z,
       voiceActivityStatusEnabled: M,
@@ -873,8 +873,8 @@ function tl(e) {
     onClick: _,
     onContextMenu: j,
     nameplate: E,
-    accountContainerRef: O
-  } = e, C = t || s || n, v = r.useRef(null), S = r.useRef(null), T = (0, eT.b)(C), {
+    accountContainerRef: C
+  } = e, O = t || s || n, v = r.useRef(null), S = r.useRef(null), T = (0, eT.b)(O), {
     activeVoice: y,
     mostRecentlyRequestedVoiceId: A,
     lastInitAttemptMayHaveCrashed: P
@@ -904,7 +904,7 @@ function tl(e) {
     location: N.Z.AUDIO_INPUT_BUTTON,
     autoTrackExposure: !0
   });
-  r.useEffect(() => () => M(), [C, M]);
+  r.useEffect(() => () => M(), [O, M]);
   let K = r.useCallback(e => {
       j(e, z)
     }, [j, z]),
@@ -932,8 +932,8 @@ function tl(e) {
   let ee = r.useCallback(() => {
       P || (0, ej.r5)()
     }, [P]),
-    et = C ? f.TVs.colors.STATUS_DANGER : R ? f.TVs.colors.STATUS_WARNING : "currentColor",
-    en = C || R,
+    et = O ? f.TVs.colors.STATUS_DANGER : R ? f.TVs.colors.STATUS_WARNING : "currentColor",
+    en = O || R,
     ei = (0, es.Z)({
       location: "Account"
     });
@@ -969,12 +969,12 @@ function tl(e) {
           [e2.micButtonWithMenu]: W
         }),
         orangeGlow: R,
-        redGlow: C,
+        redGlow: O,
         "aria-label": e8.intl.string(e8.t["w4m94+"]),
-        "aria-checked": C,
+        "aria-checked": O,
         disabled: l
       }), W && (0, i.jsx)(f.yRy, {
-        targetElementRef: O,
+        targetElementRef: C,
         position: "top",
         align: "left",
         nudgeAlignIntoViewport: !1,
@@ -1023,10 +1023,10 @@ function tl(e) {
                   visibleContent: t,
                   markAsDismissed: s
                 } = e, o = null;
-                t === u.z.VOICE_FILTER_EARLY_ACCESS_COACHMARK ? o = (0, i.jsx)(eC.U, {
+                t === u.z.VOICE_FILTER_EARLY_ACCESS_COACHMARK ? o = (0, i.jsx)(eO.U, {
                   markAsDismissed: s,
                   onCTA: () => X(!0)
-                }) : t === u.z.VOICE_FILTER_LAUNCH_COACHMARK ? o = (0, i.jsx)(eO.n, {
+                }) : t === u.z.VOICE_FILTER_LAUNCH_COACHMARK ? o = (0, i.jsx)(eC.n, {
                   markAsDismissed: s,
                   onCTA: () => X(!0)
                 }) : t === u.z.VOICE_FILTER_FIRST_USE_COACHMARK && (o = (0, i.jsx)(eE.v, {
@@ -1060,7 +1060,7 @@ function tl(e) {
                   role: "button",
                   className: e2.buttonChevron,
                   orangeGlow: R,
-                  redGlow: C,
+                  redGlow: O,
                   "aria-label": e8.intl.string(e8.t.Hapb4O),
                   disabled: l,
                   onClick: e => {

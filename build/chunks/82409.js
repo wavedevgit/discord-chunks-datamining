@@ -197,13 +197,13 @@ function U(e) {
       })(Object(n)).forEach(function(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t)),
-      children: [Q === v.v8.TABS && (0, r.jsx)(T.Z, {}), p === A.V5.ALL && (0, r.jsx)(H, {
+      children: [Q === v.v8.TABS && (0, r.jsx)(T.Z, {}), p === A.V5.ALL && (0, r.jsx)(F, {
         hideBanner: !G || p !== A.V5.ALL
       }), $ && (0, r.jsx)(z, {
         filter: p
       }), (0, r.jsx)(Z.Z, {
         className: L.messageList,
-        renderMessageGroup: F,
+        renderMessageGroup: H,
         messages: p === A.V5.BOOKMARKS ? Y : q,
         unreadMessages: p === A.V5.BOOKMARKS ? [] : X,
         listName: "notifications-inbox",
@@ -243,7 +243,7 @@ function V() {
   return (0, r.jsx)(N.Z, {})
 }
 
-function F(e, t) {
+function H(e, t) {
   return (0, r.jsx)(w.Z, {
     message: e[0],
     groupedMessages: e.slice(1),
@@ -251,7 +251,7 @@ function F(e, t) {
   }, e[0].id)
 }
 
-function H(e) {
+function F(e) {
   let {
     hideBanner: t
   } = e, n = (0, s.e7)([P.Z], () => P.Z.shouldHide);

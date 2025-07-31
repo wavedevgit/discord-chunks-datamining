@@ -22,7 +22,7 @@ var i = n(255367),
   j = n(388032),
   E = n(49149);
 
-function O(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -41,7 +41,7 @@ function O(e) {
   return e
 }
 
-function C(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -60,7 +60,7 @@ function v(e) {
     onClose: a,
     ticket: c,
     challenge: m
-  } = e, b = (0, d.Dt)(), [O, C] = r.useState(""), [v, S] = r.useState(!0), [T, N] = r.useState(x.x.INIT), [I, y] = r.useState(""), [A, P] = r.useState(null), R = async () => {
+  } = e, b = (0, d.Dt)(), [C, O] = r.useState(""), [v, S] = r.useState(!0), [T, N] = r.useState(x.x.INIT), [I, y] = r.useState(""), [A, P] = r.useState(null), R = async () => {
     let e;
     N(x.x.REGISTER);
     let t = p.isPlatformEmbedded && h.ZP.supportsFeature(_.eRX.WEBAUTHN) ? h.ZP.webAuthnRegister(m) : s.Ue(JSON.parse(m)).then(e => JSON.stringify(e));
@@ -146,7 +146,7 @@ function v(e) {
         id: x.x.NAME,
         children: (0, i.jsxs)("form", {
           onSubmit: e => {
-            e.preventDefault(), (0, f.Sr)(O, c, I).then(async () => {
+            e.preventDefault(), (0, f.Sr)(C, c, I).then(async () => {
               await (0, u.Yn)(!1)
             }).then(() => a()).catch(() => {
               P(j.intl.string(j.t.fEptJC)), N(x.x.INIT)
@@ -166,9 +166,9 @@ function v(e) {
                 children: j.intl.string(j.t["Jzd+z8"])
               }), (0, i.jsx)(l.Is, {
                 className: E.input,
-                value: O,
+                value: C,
                 onChange: e => {
-                  C(e), S(0 === e.length)
+                  O(e), S(0 === e.length)
                 },
                 autoFocus: !0,
                 minLength: 1
@@ -216,7 +216,7 @@ function S(e) {
           let {
             default: e
           } = await n.e("804").then(n.bind(n, 89616));
-          return t => (0, i.jsx)(e, O({
+          return t => (0, i.jsx)(e, C({
             credential: r
           }, t))
         })
@@ -263,7 +263,7 @@ function T() {
           color: l.zx.Colors.TRANSPARENT,
           size: l.zx.Sizes.ICON,
           onClick: t => {
-            (0, c.vq)(t, t => (0, i.jsx)(S, C(O({}, t), {
+            (0, c.vq)(t, t => (0, i.jsx)(S, O(C({}, t), {
               credential: e
             })))
           },
@@ -288,7 +288,7 @@ function T() {
               ticket: t,
               challenge: n
             } = e;
-            (0, o.h7j)(e => (0, i.jsx)(v, C(O({}, e), {
+            (0, o.h7j)(e => (0, i.jsx)(v, O(C({}, e), {
               ticket: t,
               challenge: n
             })))

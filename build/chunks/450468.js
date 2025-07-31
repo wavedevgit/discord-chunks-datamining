@@ -21,8 +21,8 @@ var i = n(255367),
   _ = n(210887),
   j = n(78839),
   E = n(74538),
-  O = n(388032),
-  C = n(485312);
+  C = n(388032),
+  O = n(485312);
 async function v(e, t, n, i) {
   let r = (0, E.MY)(e, t);
   await (0, m.bG)(n), await (0, u.Mg)(e, {
@@ -47,21 +47,21 @@ function S(e) {
       separator: !1,
       children: [(0, i.jsx)(d.vwX, {
         tag: d.RB0.H4,
-        children: O.intl.string(O.t.l52ih4)
+        children: C.intl.string(C.t.l52ih4)
       }), (0, i.jsx)(d.olH, {
         onClick: u
       })]
     }), (0, i.jsxs)(d.hzk, {
-      className: C.body,
+      className: O.body,
       children: [null !== T && (0, i.jsx)(d.kzN, {
-        className: C.error,
+        className: O.error,
         children: T
-      }), O.intl.string(O.t.DY2CXl)]
+      }), C.intl.string(C.t.DY2CXl)]
     }), (0, i.jsxs)(d.mzw, {
       justify: b.Z.Justify.START,
       children: [(0, i.jsx)(d.zxk, {
         variant: "primary",
-        text: O.intl.string(O.t.etZP4O),
+        text: C.intl.string(C.t.etZP4O),
         onClick: async () => {
           try {
             h(!0), N(null);
@@ -69,7 +69,7 @@ function S(e) {
             a()((0, E.uV)(e) <= (0, E.uV)(t.additionalPlans), "Uncanceling should not increase the number of guild subscriptions"), await v(t, e, n, S), s()
           } catch (t) {
             let e = t instanceof p.HF ? t : new p.HF(t, t.code);
-            N(O.intl.string(e.code === g.SM.BILLING_PAUSE_INVALID_UPDATE ? O.t.dq4vq6 : O.t["5mlOCQ"])), h(!1)
+            N(C.intl.string(e.code === g.SM.BILLING_PAUSE_INVALID_UPDATE ? C.t.dq4vq6 : C.t["5mlOCQ"])), h(!1)
           }
         },
         loading: m
@@ -78,7 +78,7 @@ function S(e) {
         color: (0, o.ap)(j) ? c.zx.Colors.PRIMARY : c.zx.Colors.WHITE,
         onClick: u,
         disabled: m,
-        children: O.intl.string(O.t.oEAioK)
+        children: C.intl.string(C.t.oEAioK)
       })]
     })]
   })
@@ -93,21 +93,21 @@ function T(e) {
       separator: !1,
       children: [(0, i.jsx)(d.vwX, {
         tag: d.RB0.H4,
-        children: O.intl.string(O.t.H9QUAA)
+        children: C.intl.string(C.t.H9QUAA)
       }), (0, i.jsx)(d.olH, {
         onClick: t
       })]
     }), (0, i.jsxs)(d.hzk, {
-      className: C.body,
+      className: O.body,
       children: [(0, i.jsx)("div", {
-        className: C.uncancelImage
+        className: O.uncancelImage
       }), (0, i.jsx)("div", {
-        children: O.intl.string(O.t.G27uHR)
+        children: C.intl.string(C.t.G27uHR)
       })]
     }), (0, i.jsx)(d.mzw, {
       children: (0, i.jsx)(d.zxk, {
         variant: "primary",
-        text: O.intl.string(O.t.BddRzc),
+        text: C.intl.string(C.t.BddRzc),
         onClick: t
       })
     })]

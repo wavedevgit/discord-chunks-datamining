@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Co: () => X,
-  ZP: () => Q,
+  Co: () => Q,
+  ZP: () => X,
   bZ: () => q,
   gt: () => V
 }), n(388685);
@@ -32,8 +32,8 @@ var r, i = n(255367),
   P = n(151864),
   j = n(835184),
   A = n(725436),
-  Z = n(497656),
-  x = n(79874),
+  x = n(497656),
+  Z = n(79874),
   w = n(554747),
   L = n(230900),
   R = n(854698),
@@ -102,7 +102,7 @@ let V = l.memo(function(e) {
   })
 });
 
-function B(e) {
+function H(e) {
   let {
     guildEvent: t,
     channel: n
@@ -124,7 +124,7 @@ function B(e) {
       color: "currentColor",
       className: G.stageIcon
     }) : null,
-    children: (0, i.jsx)(X, {
+    children: (0, i.jsx)(Q, {
       channel: n,
       speakers: r,
       voiceType: 1
@@ -132,7 +132,7 @@ function B(e) {
   })
 }
 
-function H(e) {
+function B(e) {
   let {
     guildEvent: t,
     noticeType: n
@@ -160,7 +160,7 @@ function F(e) {
   } = e, a = (0, L.cS)(n), s = null != a ? (0, A.m)(a, !0) : null, u = (0, L.nE)(n), p = (0, d.KS)(u), {
     startTime: h,
     endTime: f
-  } = (0, x.ZP)(n), {
+  } = (0, Z.ZP)(n), {
     startDateTimeString: g,
     upcomingEvent: m,
     diffMinutes: b
@@ -235,7 +235,7 @@ function F(e) {
         className: G.channelName,
         children: null != (t = null == u ? void 0 : u.name) ? t : s
       })]
-    }), (0, i.jsx)(H, {
+    }), (0, i.jsx)(B, {
       guildEvent: n,
       noticeType: r
     })]
@@ -336,7 +336,7 @@ function K(e) {
       className: G.stageIcon
     }),
     topic: t.topic,
-    children: (0, i.jsx)(X, {
+    children: (0, i.jsx)(Q, {
       channel: n,
       speakers: r,
       voiceType: 2
@@ -345,7 +345,7 @@ function K(e) {
 }
 var q = ((r = {})[r.VOICE = 1] = "VOICE", r[r.STAGE = 2] = "STAGE", r[r.STUDY_ROOM = 3] = "STUDY_ROOM", r);
 
-function X(e) {
+function Q(e) {
   let {
     channel: t,
     speakers: n,
@@ -384,12 +384,12 @@ function X(e) {
     })]
   })
 }
-let Q = l.memo(function(e) {
+let X = l.memo(function(e) {
   let {
     guild: t
   } = e, {
     showRedesignedLiveChannelNotice: n
-  } = (0, p.o)(!0), r = (0, Z.y)(t.id), l = (0, w.k5)(t.id), a = (0, w.Vm)(t.id), o = (0, s.e7)([O.Z], () => O.Z.getStageInstanceByChannel(null == r ? void 0 : r.id), [r]), {
+  } = (0, p.o)(!0), r = (0, x.y)(t.id), l = (0, w.k5)(t.id), a = (0, w.Vm)(t.id), o = (0, s.e7)([O.Z], () => O.Z.getStageInstanceByChannel(null == r ? void 0 : r.id), [r]), {
     isStageNoticeHidden: c,
     isEventNoticeHidden: u
   } = (0, s.cj)([P.Z], () => ({
@@ -411,7 +411,7 @@ let Q = l.memo(function(e) {
     channel: r
   }) : l.entity_type === k.WX.EXTERNAL ? d = (0, i.jsx)(z, {
     guildEvent: l
-  }) : l.entity_type === k.WX.VOICE && null != r && (d = (0, i.jsx)(B, {
+  }) : l.entity_type === k.WX.VOICE && null != r && (d = (0, i.jsx)(H, {
     guildEvent: l,
     channel: r
   }));

@@ -90,8 +90,8 @@ let k = i.memo(function(e) {
     setRef: G,
     onDragStart: B,
     onDragEnd: V,
-    route: F,
-    guild: H,
+    route: H,
+    guild: F,
     animatable: z,
     selected: W = !1,
     unread: K = !1,
@@ -142,22 +142,22 @@ let k = i.memo(function(e) {
     [eC] = i.useState(() => new d.sW(70, () => ey(!0)));
   i.useEffect(() => () => eC.cancel(), [eC]);
   let ev = i.useCallback(() => {
-      if (null != F) return void(0, _.uL)(F, {
+      if (null != H) return void(0, _.uL)(H, {
         state: L
       });
       (0, O.X)(eo, {
         state: L
       })
-    }, [eo, F]),
+    }, [eo, H]),
     ej = i.useCallback(() => {
-      if (null != F || null == H || q || !et) return;
-      let e = (0, b.V)(H.id);
-      null != e && p.Z.preload(H.id, e)
-    }, [F, H, q, et]),
+      if (null != H || null == F || q || !et) return;
+      let e = (0, b.V)(F.id);
+      null != e && p.Z.preload(F.id, e)
+    }, [H, F, q, et]),
     eE = (0, u.e7)([C.ZP], () => C.ZP.isCurrentUserGuest(eo)),
     eS = i.useCallback(e => {
-      null == H || eE || J(e, H)
-    }, [H, J, eE]),
+      null == F || eE || J(e, F)
+    }, [F, J, eE]),
     ex = i.useCallback(e => {
       if ("ArrowLeft" === e.key && null != ea) {
         var t;
@@ -172,9 +172,9 @@ let k = i.memo(function(e) {
       null == G || G(eo, e)
     }, [eo, G]),
     eN = (0, h.dQu)(h.TVs.modules.guildbar.AVATAR_SIZE);
-  if (null == H) return null;
+  if (null == F) return null;
   let ew = eO || eb ? (0, r.jsx)(S.Z, {
-      guild: H,
+      guild: F,
       show: eO,
       active: W,
       onAnimationStart: function() {
@@ -185,10 +185,10 @@ let k = i.memo(function(e) {
       }
     }) : (0, r.jsx)(h.LYs, D(R({
       ariaLabel: Z.intl.formatToPlainString(Z.t["/uzRsr"], {
-        guildName: H.name,
+        guildName: F.name,
         mentions: X
       }),
-      name: H.name,
+      name: F.name,
       onClick: ev,
       onMouseEnter: function() {
         ee || eg(!0)
@@ -199,7 +199,7 @@ let k = i.memo(function(e) {
       onMouseDown: ej,
       onContextMenu: eS,
       onKeyDown: ex,
-      icon: (0, y.EB)(H, 2 * eN, em && z, !0),
+      icon: (0, y.EB)(F, 2 * eN, em && z, !0),
       selected: W || em
     }, ep), {
       "aria-setsize": ei,
@@ -212,7 +212,7 @@ let k = i.memo(function(e) {
       ref: $ ? e => {
         eh(e)
       } : void 0,
-      "data-dnd-name": H.name,
+      "data-dnd-name": F.name,
       style: {
         scale: null == er ? 1 : er
       },
@@ -238,12 +238,12 @@ let k = i.memo(function(e) {
       unread: !ed && K,
       className: A.pill
     }), (0, r.jsx)(I.Z, {
-      guild: H,
+      guild: F,
       disabled: ee,
       isDragging: ed,
       children: eT
     }), $ ? (0, r.jsx)(x.ZP, {
-      name: H.name,
+      name: F.name,
       targetNode: U,
       onDragOverChanged: eI
     }) : null]

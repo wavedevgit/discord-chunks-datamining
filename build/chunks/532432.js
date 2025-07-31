@@ -30,8 +30,8 @@ function E(e) {
     errors: n,
     onAvatarChange: s,
     sectionTitle: E,
-    changeAvatarButtonText: O,
-    guildId: C,
+    changeAvatarButtonText: C,
+    guildId: O,
     className: v,
     disabled: S = !1,
     isTryItOutFlow: T = !1,
@@ -48,10 +48,10 @@ function E(e) {
       uploadType: f.pC.AVATAR,
       analyticsSource: y,
       filters: T ? j : void 0,
-      guildId: C,
+      guildId: O,
       isTryItOutFlow: T
     })
-  }, [C, y, T, Z]);
+  }, [O, y, T, Z]);
   return (0, i.jsx)(g.Z, {
     className: v,
     title: E,
@@ -74,14 +74,14 @@ function E(e) {
         }),
         size: o.zx.Sizes.SMALL,
         onClick: k,
-        children: null != O ? O : x.intl.string(x.t["4OynCA"])
+        children: null != C ? C : x.intl.string(x.t["4OynCA"])
       }), t && (0, i.jsx)("div", {
         "data-button-hoisted-classname-wrapper": !0,
         className: _.removeButton,
         children: (0, i.jsx)(c.zxk, {
           variant: "secondary",
           size: "sm",
-          text: null != C ? x.intl.string(x.t.TDjKDg) : x.intl.string(x.t.twB3f3),
+          text: null != O ? x.intl.string(x.t.TDjKDg) : x.intl.string(x.t.twB3f3),
           onClick: () => s(null)
         })
       })]

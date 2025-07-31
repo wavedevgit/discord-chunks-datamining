@@ -1,6 +1,6 @@
 /** Chunk was on 22243 **/
 n.d(t, {
-  Z: () => C
+  Z: () => O
 }), n(388685), n(49124);
 var i = n(255367),
   r = n(73800),
@@ -22,7 +22,7 @@ var i = n(255367),
   j = n(388032),
   E = n(40713);
 
-function O(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -41,18 +41,18 @@ function O(e) {
   return e
 }
 
-function C() {
-  let [e] = r.useState(() => p.ZP.getEnableHardwareAcceleration()), t = h.bm.useSetting(), n = h.Sb.useSetting(), C = (0, s.e7)([m.Z], () => m.Z.testModeApplicationId), v = (0, s.e7)([g.ZP], () => g.ZP.showPlayAgain), S = r.useCallback(e => {
+function O() {
+  let [e] = r.useState(() => p.ZP.getEnableHardwareAcceleration()), t = h.bm.useSetting(), n = h.Sb.useSetting(), O = (0, s.e7)([m.Z], () => m.Z.testModeApplicationId), v = (0, s.e7)([g.ZP], () => g.ZP.showPlayAgain), S = r.useCallback(e => {
     h.bm.updateSetting(!e)
   }, []), T = r.useCallback(e => {
-    e ? (0, a.h7j)(e => (0, i.jsx)(b.Z, O({}, e))) : l.mc()
+    e ? (0, a.h7j)(e => (0, i.jsx)(b.Z, C({}, e))) : l.mc()
   }, []), N = r.useCallback(e => {
     (0, c.BV)(e, o.Z.USER_SETTINGS)
   }, []), I = r.useCallback(e => {
     (0, a.h7j)(t => {
       var n, r;
       let s = e ? j.intl.format(j.t.LYXRxM, {}) : j.intl.format(j.t.uDP3Ky, {});
-      return (0, i.jsx)(a.ConfirmModal, (n = O({
+      return (0, i.jsx)(a.ConfirmModal, (n = C({
         header: j.intl.string(j.t.aqpAvr),
         confirmText: j.intl.string(j.t.vT7ckp),
         cancelText: j.intl.string(j.t["ETE/oK"]),
@@ -125,7 +125,7 @@ function C() {
     }), (0, i.jsx)(u.F, {
       setting: x.s6.SETTINGS_ADVANCED_APPLICATION_TEST_MODE,
       children: (0, i.jsx)(a.j7V, {
-        value: null != C,
+        value: null != O,
         note: j.intl.string(j.t["52hMnJ"]),
         onChange: T,
         children: j.intl.string(j.t.erOqlp)

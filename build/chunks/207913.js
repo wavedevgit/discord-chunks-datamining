@@ -185,7 +185,7 @@ function V(e) {
             }), t.mentioned && s ? (0, r.jsx)(u.mAB, {
               className: U.mentionBadge,
               count: 1
-            }) : (0, r.jsx)(H, {
+            }) : (0, r.jsx)(F, {
               message: t
             })]
           })]
@@ -222,7 +222,7 @@ function V(e) {
             marginTop: 4,
             marginBottom: 4
           },
-          children: (0, r.jsx)(F, {
+          children: (0, r.jsx)(H, {
             overflowMessages: d
           })
         })]
@@ -231,7 +231,7 @@ function V(e) {
   }))
 }
 
-function F(e) {
+function H(e) {
   let {
     overflowMessages: t
   } = e, n = (0, a.uniqBy)(t.map(e => e.author), e => e.id).slice(0, 3);
@@ -253,7 +253,7 @@ function F(e) {
   })
 }
 
-function H(e) {
+function F(e) {
   let {
     message: t
   } = e, n = (0, E.a3)(t.timestamp.getTime());

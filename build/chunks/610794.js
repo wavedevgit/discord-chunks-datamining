@@ -22,43 +22,43 @@ var i = n(255367),
   j = n(388032),
   E = n(6318);
 
-function O(e) {
+function C(e) {
   var t;
   let {
     account: n,
     refreshed: a,
     handleRefresh: c
-  } = e, [d, u] = r.useState(!1), p = null != (t = n.metadata) ? t : {}, f = (0, s.e7)([h.default], () => h.default.locale), O = r.useCallback(async () => {
+  } = e, [d, u] = r.useState(!1), p = null != (t = n.metadata) ? t : {}, f = (0, s.e7)([h.default], () => h.default.locale), C = r.useCallback(async () => {
     u(!0);
     try {
       await c(n)
     } finally {
       u(!1)
     }
-  }, [n, c]), C = null;
+  }, [n, c]), O = null;
   switch (n.type) {
     case x.ABu.REDDIT:
-      C = (0, g.oP)(p, E.metadataItem);
+      O = (0, g.oP)(p, E.metadataItem);
       break;
     case x.ABu.STEAM:
-      C = (0, g.Dq)(p, E.metadataItem);
+      O = (0, g.Dq)(p, E.metadataItem);
       break;
     case x.ABu.TWITTER:
-      C = (0, g.rJ)(p, E.metadataItem);
+      O = (0, g.rJ)(p, E.metadataItem);
       break;
     case x.ABu.EBAY:
-      C = (0, g.ul)(p, E.metadataItem);
+      O = (0, g.ul)(p, E.metadataItem);
       break;
     case x.ABu.PAYPAL:
-      C = (0, g.li)(p, E.metadataItem);
+      O = (0, g.li)(p, E.metadataItem);
       break;
     case x.ABu.TIKTOK:
-      C = (0, g.hf)(p, E.metadataItem)
+      O = (0, g.hf)(p, E.metadataItem)
   }
   let v = (0, m.FI)(p[_.PC.CREATED_AT], f),
     S = null,
     T = j.intl.string(j.t.wzzjk5);
-  return (null == C || 0 === C.length) && null == v && (S = (0, i.jsx)(o.Text, {
+  return (null == O || 0 === O.length) && null == v && (S = (0, i.jsx)(o.Text, {
     variant: "text-xs/normal",
     color: "header-secondary",
     children: j.intl.format(j.t.Up2ni4, {
@@ -66,11 +66,11 @@ function O(e) {
     })
   }, "label"), T = j.intl.string(j.t["LVh3//"])), a && (T = j.intl.string(j.t.i4jeWV)), (0, i.jsxs)("div", {
     className: E.metadataContainer,
-    children: [S, null == C ? void 0 : C.map((e, t) => (0, i.jsxs)(i.Fragment, {
-      children: [e, t < C.length - 1 ? (0, i.jsx)("span", {
+    children: [S, null == O ? void 0 : O.map((e, t) => (0, i.jsxs)(i.Fragment, {
+      children: [e, t < O.length - 1 ? (0, i.jsx)("span", {
         className: E.dot
       }) : null]
-    })), null != C && C.length > 0 && null != v ? (0, i.jsx)("div", {
+    })), null != O && O.length > 0 && null != v ? (0, i.jsx)("div", {
       className: E.dot
     }) : null, null != v ? (0, i.jsx)(o.Text, {
       variant: "text-xs/normal",
@@ -86,13 +86,13 @@ function O(e) {
       submitting: d,
       disabled: a,
       "aria-label": j.intl.string(j.t.sCkLYG),
-      onClick: a ? void 0 : O,
+      onClick: a ? void 0 : C,
       children: T
     }, "refresh-button")]
   })
 }
 
-function C(e) {
+function O(e) {
   let {
     account: t,
     handleRefresh: n,
@@ -133,7 +133,7 @@ function C(e) {
             variant: "text-md/semibold",
             color: "header-primary",
             children: b.name
-          }), x && (0, i.jsx)(O, {
+          }), x && (0, i.jsx)(C, {
             account: t,
             refreshed: s.includes(t.id),
             handleRefresh: n
@@ -182,7 +182,7 @@ function v() {
       tag: o.RB0.H5,
       className: E.title,
       children: j.intl.string(j.t.aw0GVV)
-    }), t.map(e => (0, i.jsx)(C, {
+    }), t.map(e => (0, i.jsx)(O, {
       account: e,
       handleRefresh: l,
       refreshedAccountIds: n

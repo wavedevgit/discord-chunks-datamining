@@ -56,7 +56,7 @@ function y() {
   let {
     pathname: e
   } = (0, i.TH)();
-  return e.startsWith(g.Z5c.NOTIFICATIONS_INBOX())
+  return e.startsWith(g.Z5c.CHANNEL(g.STv))
 }
 
 function O(e) {

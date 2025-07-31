@@ -21,8 +21,8 @@ var i = n(255367),
   _ = n(981631),
   j = n(921944),
   E = n(46140),
-  O = n(388032),
-  C = n(669018);
+  C = n(388032),
+  O = n(669018);
 
 function v(e) {
   let {
@@ -80,10 +80,10 @@ function S(e) {
     s(j.L.USER_DISMISS), a()
   }, [s, a]), f = x.vK[n];
   return (0, i.jsxs)("div", {
-    className: C.contents,
+    className: O.contents,
     children: [(0, i.jsx)(o.M0o, {
-      className: C.closeButton,
-      tooltip: O.intl.string(O.t.cpT0Cg),
+      className: O.closeButton,
+      tooltip: C.intl.string(C.t.cpT0Cg),
       color: o.YX$.TERTIARY,
       size: o.tT7.SIZE_24,
       icon: (0, i.jsx)(o.Dio, {
@@ -93,25 +93,25 @@ function S(e) {
       onClick: h
     }), null != u && (0, i.jsx)("img", {
       src: u,
-      alt: O.intl.string(f.nameUnformatted),
-      className: C.badgeImage
+      alt: C.intl.string(f.nameUnformatted),
+      className: O.badgeImage
     }), (0, i.jsx)(o.X6q, {
       variant: "heading-md/extrabold",
-      children: O.intl.string(O.t.VoDxsb)
+      children: C.intl.string(C.t.VoDxsb)
     }), (0, i.jsx)(o.Text, {
       variant: "text-sm/medium",
-      className: C.subtitle,
-      children: O.intl.formatToPlainString(O.t.ewkaVV, {
+      className: O.subtitle,
+      children: C.intl.formatToPlainString(C.t.ewkaVV, {
         timeMilestone: null == (t = (0, g.q)(f.id, f.tenureReqNumMonths)) ? void 0 : t.toLocaleLowerCase()
       })
     }), (0, i.jsx)(l.zx, {
-      className: C.checkItOutButton,
+      className: O.checkItOutButton,
       color: l.Tt.WHITE,
       size: l.Ph.SMALL,
       onClick: m,
-      children: O.intl.string(O.t.RzWDqa)
+      children: C.intl.string(C.t.RzWDqa)
     }), (0, i.jsx)("div", {
-      className: C.pointer
+      className: O.pointer
     })]
   })
 }

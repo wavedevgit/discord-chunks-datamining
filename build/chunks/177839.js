@@ -1,6 +1,6 @@
 /** Chunk was on 22243 **/
 n.d(t, {
-  Z: () => C
+  Z: () => O
 }), n(388685), n(953529);
 var i = n(255367),
   r = n(73800),
@@ -39,7 +39,7 @@ let j = e => e ? x.intl.string(x.t.QX14gI) : x.intl.string(x.t.RGadQU),
       })]
     })
   },
-  O = e => {
+  C = e => {
     let {
       title: t,
       description: n,
@@ -80,7 +80,7 @@ let j = e => e ? x.intl.string(x.t.QX14gI) : x.intl.string(x.t.RGadQU),
       })
     })
   },
-  C = e => {
+  O = e => {
     let {
       className: t,
       isSubscriberNitroHome: n = !1
@@ -88,7 +88,7 @@ let j = e => e ? x.intl.string(x.t.QX14gI) : x.intl.string(x.t.RGadQU),
       styles: _
     }), p = (0, l.e7)([c.Z], () => c.Z.useReducedMotion), {
       analyticsLocations: x
-    } = (0, u.ZP)(), C = (0, g._f)(), v = [m.emoji, m.streaming, m.upload, m.customAppIcons, m.soundboard, C ? m.remix : m.videoBackground, m.superReactions, m.stickersPremiumPerk, m.badgeAlt];
+    } = (0, u.ZP)(), O = (0, g._f)(), v = [m.emoji, m.streaming, m.upload, m.customAppIcons, m.soundboard, O ? m.remix : m.videoBackground, m.superReactions, m.stickersPremiumPerk, m.badgeAlt];
     return (0, i.jsxs)("div", {
       className: a()(_.perksContainer, t, {
         [_.partiallyHidden]: n && !s,
@@ -103,7 +103,7 @@ let j = e => e ? x.intl.string(x.t.QX14gI) : x.intl.string(x.t.RGadQU),
         className: a()(_.perkCardContainer, {
           [_.perkCardContainerExpanded]: s
         }),
-        children: v.map(e => null != e && (0, i.jsx)(O, function(e) {
+        children: v.map(e => null != e && (0, i.jsx)(C, function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               i = Object.keys(n);

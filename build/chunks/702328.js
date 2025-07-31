@@ -21,8 +21,8 @@ var i = n(255367),
   _ = n(74538),
   j = n(367074),
   E = n(220654),
-  O = n(8647),
-  C = n(744129),
+  C = n(8647),
+  O = n(744129),
   v = n(823188),
   S = n(611116),
   T = n(306066),
@@ -87,10 +87,10 @@ let H = () => {
       plans: ej,
       compare: eE
     } = eh,
-    eO = em ? V : G,
-    eC = (0, i.jsxs)("div", {
-      className: a()(eO.container, eO.responsiveContainer, {
-        [eO.containerBackground]: em || K,
+    eC = em ? V : G,
+    eO = (0, i.jsxs)("div", {
+      className: a()(eC.container, eC.responsiveContainer, {
+        [eC.containerBackground]: em || K,
         [V.fadeInFromTop]: !W && em
       }),
       "data-cy": "tier-0-marketing-page",
@@ -110,9 +110,9 @@ let H = () => {
           alt: ""
         })]
       }), (0, i.jsxs)("div", {
-        className: eO.sectionsContainer,
+        className: eC.sectionsContainer,
         children: [(0, i.jsx)("div", {
-          className: eO.heroHeadingContainer,
+          className: eC.heroHeadingContainer,
           ref: eb.ref,
           children: (0, i.jsx)(o.$, {
             innerRef: s,
@@ -132,12 +132,12 @@ let H = () => {
             })
           })
         }), ec && (0, i.jsx)("div", {
-          className: eO.promoBannerContainer,
-          children: (0, i.jsx)(O.Z, {
-            variant: O.C.APPLICATION_NITRO_HOME
+          className: eC.promoBannerContainer,
+          children: (0, i.jsx)(C.Z, {
+            variant: C.C.APPLICATION_NITRO_HOME
           })
         }), (0, i.jsx)("div", {
-          className: eO.whatsNewSectionContainer,
+          className: eC.whatsNewSectionContainer,
           ref: ex.ref,
           children: (0, i.jsx)(S.g, {
             shouldLoadVideo: ei,
@@ -145,7 +145,7 @@ let H = () => {
             enablePremiumBrandRefreshDesign: em
           })
         }), (0, i.jsx)("div", {
-          className: eO.bestOfNitroSectionContainer,
+          className: eC.bestOfNitroSectionContainer,
           ref: e_.ref,
           children: (0, i.jsx)(S.G_, {
             shouldLoadVideo: ei,
@@ -153,14 +153,14 @@ let H = () => {
             enablePremiumBrandRefreshDesign: em
           })
         }), (0, i.jsx)("div", {
-          className: eO.premiumTierCardsContainer,
+          className: eC.premiumTierCardsContainer,
           ref: ej.ref,
           children: (0, i.jsx)(o.$, {
             innerRef: n,
             onChange: e => ee(e),
             threshold: .1,
             active: !0,
-            children: em ? (0, i.jsx)(C.rz, {
+            children: em ? (0, i.jsx)(O.rz, {
               innerRef: n
             }) : (0, i.jsx)(v.Ub, {
               innerRef: n,
@@ -168,7 +168,7 @@ let H = () => {
             })
           })
         }), (0, i.jsx)("div", {
-          className: eO.planComparisonTableContainer,
+          className: eC.planComparisonTableContainer,
           ref: eE.ref,
           children: em ? (0, i.jsx)(R.Z, {}) : (0, i.jsx)(I.Z, {})
         })]
@@ -186,7 +186,7 @@ let H = () => {
         },
         children: (0, i.jsx)("div", {
           ref: H,
-          className: eO.bottomOfPageVisibilitySensor
+          className: eC.bottomOfPageVisibilitySensor
         })
       }), (0, i.jsx)(o.$, {
         innerRef: z,
@@ -215,9 +215,9 @@ let H = () => {
   return (0, i.jsx)(d.f6W, {
     theme: em ? U.BR.DARKER : Y,
     children: t => (0, i.jsx)(d.yWw, {
-      className: a()(eO.scroller, t),
+      className: a()(eC.scroller, t),
       ref: e,
-      children: eC
+      children: eO
     })
   })
 }

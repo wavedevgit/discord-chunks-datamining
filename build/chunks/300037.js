@@ -26,9 +26,9 @@ let E = function(e) {
     className: t,
     guildId: n,
     boostingVariant: r
-  } = e, E = (0, a.e7)([h.Z], () => h.Z.getGuild(n), [n]), O = (0, a.e7)([f.default], () => f.default.getCurrentUser()), {
-    fractionalState: C
-  } = (0, c.Z)(), v = (0, p.y)("guild_boosting_setting_guild_info_card", O, C), S = (0, g.Z)(null == E ? void 0 : E.id).total;
+  } = e, E = (0, a.e7)([h.Z], () => h.Z.getGuild(n), [n]), C = (0, a.e7)([f.default], () => f.default.getCurrentUser()), {
+    fractionalState: O
+  } = (0, c.Z)(), v = (0, p.y)("guild_boosting_setting_guild_info_card", C, O), S = (0, g.Z)(null == E ? void 0 : E.id).total;
   return null == E ? (0, i.jsx)("div", {
     className: s()(t, j.guildContainer),
     children: (0, i.jsx)("div", {

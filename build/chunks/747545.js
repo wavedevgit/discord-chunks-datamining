@@ -22,8 +22,8 @@ var i = n(255367),
   _ = n(938117),
   j = n(131951),
   E = n(626135),
-  O = n(358085),
-  C = n(981631),
+  C = n(358085),
+  O = n(981631),
   v = n(726985),
   S = n(65154),
   T = n(388032),
@@ -72,7 +72,7 @@ function A(e) {
       className: N.previewToggle,
       note: T.intl.string(T.t.WNbX4O),
       onChange: e => {
-        x.qF.updateSetting(e), E.default.track(C.rMx.UPDATE_USER_SETTINGS_LOCAL, {
+        x.qF.updateSetting(e), E.default.track(O.rMx.UPDATE_USER_SETTINGS_LOCAL, {
           always_preview_video: e
         })
       },
@@ -94,11 +94,11 @@ function A(e) {
           }),
           isDisabled: !w,
           showAllDevices: !0
-        }), !r && !!(0, O.isWindows)() && !!O.isPlatformEmbedded && o().satisfies(p.Z.os.release, ">=10.0.22000") && (0, i.jsx)(u.R94, {
+        }), !r && !!(0, C.isWindows)() && !!C.isPlatformEmbedded && o().satisfies(p.Z.os.release, ">=10.0.22000") && (0, i.jsx)(u.R94, {
           className: N.cameraDeeplink,
           children: T.intl.format(T.t.aJYgRk, {
             onCameraSettingsClick: () => {
-              null == R || R(), window.open((0, O.getPlatform)() === O.PlatformTypes.WINDOWS ? "ms-settings:camera" + (null != Z ? "?cameraId=".concat(encodeURIComponent(Z.replace(I, "{E5323777-F976-4f5b-9B55-B94699C46E44}"))) : "") : ""), E.default.track(C.rMx.SYSTEM_CAMERA_SETTINGS_OPENED, {
+              null == R || R(), window.open((0, C.getPlatform)() === C.PlatformTypes.WINDOWS ? "ms-settings:camera" + (null != Z ? "?cameraId=".concat(encodeURIComponent(Z.replace(I, "{E5323777-F976-4f5b-9B55-B94699C46E44}"))) : "") : ""), E.default.track(O.rMx.SYSTEM_CAMERA_SETTINGS_OPENED, {
                 location_stack: D
               })
             }

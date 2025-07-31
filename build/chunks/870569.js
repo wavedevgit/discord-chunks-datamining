@@ -26,8 +26,8 @@ let u = r.forwardRef(function(e, t) {
     tooltipClassName: _,
     onMouseEnter: j,
     onMouseLeave: E,
-    "aria-label": O,
-    "aria-checked": C,
+    "aria-label": C,
+    "aria-checked": O,
     role: v,
     tooltipColor: S,
     tooltipForceOpen: T,
@@ -43,7 +43,7 @@ let u = r.forwardRef(function(e, t) {
   return (0, i.jsx)(o.ua7, {
     tooltipClassName: _,
     text: n,
-    "aria-label": O,
+    "aria-label": C,
     color: S,
     tooltipContentClassName: N,
     forceOpen: T,
@@ -53,7 +53,7 @@ let u = r.forwardRef(function(e, t) {
           onMouseEnter: g,
           onMouseLeave: _
         } = e,
-        O = function(e, t) {
+        C = function(e, t) {
           if (null == e) return {};
           var n, i, r = function(e, t) {
             if (null == e) return {};
@@ -85,7 +85,7 @@ let u = r.forwardRef(function(e, t) {
           })
         }
         return e
-      }({}, O), o = o = {
+      }({}, C), o = o = {
         buttonRef: t,
         look: l.zx.Looks.BLANK,
         size: l.zx.Sizes.NONE,
@@ -111,7 +111,7 @@ let u = r.forwardRef(function(e, t) {
         },
         onContextMenu: s,
         role: v,
-        "aria-checked": C,
+        "aria-checked": O,
         focusProps: {
           offset: {
             left: -1,

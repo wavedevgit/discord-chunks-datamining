@@ -31,8 +31,8 @@ var r = n(255367),
   P = n(430824),
   j = n(944486),
   A = n(914010),
-  Z = n(451478),
-  x = n(768581),
+  x = n(451478),
+  Z = n(768581),
   w = n(998502),
   L = n(228488),
   R = n(950796),
@@ -43,7 +43,7 @@ var r = n(255367),
   G = n(916723),
   V = n(103609);
 
-function B(e) {
+function H(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -62,7 +62,7 @@ function B(e) {
   return e
 }
 
-function H(e, t) {
+function B(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -97,7 +97,7 @@ function z() {
         isFrameInFocusedMode: g.Z.getFrameLayoutMode() === M.U.FOCUSED
       }
     }),
-    O = null != m ? x.ZP.getApplicationIconURL({
+    O = null != m ? Z.ZP.getApplicationIconURL({
       id: m.id,
       icon: m.icon,
       bot: m.bot
@@ -165,7 +165,7 @@ let W = i.memo(function() {
     w.ZP.setMinimumSize(k.J, k.N)
   }, []);
   let b = (0, N.Ll)(),
-    v = (0, o.e7)([Z.Z, C.Z], () => (0, L.rB)()),
+    v = (0, o.e7)([x.Z, C.Z], () => (0, L.rB)()),
     T = function(e) {
       let {
         showCollapsedSidebarIcons: t,
@@ -185,7 +185,7 @@ let W = i.memo(function() {
         className: t,
         leading: (0, r.jsxs)(r.Fragment, {
           children: [u && (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(s.P3F, H(B({}, "SIDEBAR" === T ? e : {}), {
+            children: [(0, r.jsx)(s.P3F, B(H({}, "SIDEBAR" === T ? e : {}), {
               className: V.button,
               onClick: () => {
                 F.setState({
@@ -214,7 +214,7 @@ let W = i.memo(function() {
           }), (0, r.jsx)(p.Z, {
             canShowReminder: !0,
             className: V.button
-          }), g && (0, r.jsx)(S.Z, H(B({}, "RECENTS" === T ? e : {}), {
+          }), g && (0, r.jsx)(S.Z, B(H({}, "RECENTS" === T ? e : {}), {
             className: V.button
           })), a ? (0, r.jsx)(O.Z, {
             focusSectionProps: "HELP" === T ? e : void 0,

@@ -21,8 +21,8 @@ var i = n(255367),
   _ = n(643879),
   j = n(621853),
   E = n(271383),
-  O = n(246946),
-  C = n(594174),
+  C = n(246946),
+  O = n(594174),
   v = n(63063),
   S = n(74538),
   T = n(18438),
@@ -84,10 +84,10 @@ function k(e) {
     selectedGuild: n
   } = e, {
     analyticsLocations: s
-  } = (0, p.ZP)(u.Z.USER_SETTINGS_GUILD_PROFILE), k = (0, l.e7)([C.default], () => {
-    let e = C.default.getCurrentUser();
+  } = (0, p.ZP)(u.Z.USER_SETTINGS_GUILD_PROFILE), k = (0, l.e7)([O.default], () => {
+    let e = O.default.getCurrentUser();
     return a()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
-  }), L = (0, l.e7)([j.Z], () => !j.Z.isFetchingProfile(k.id, null == n ? void 0 : n.id)), B = (0, l.e7)([O.Z], () => O.Z.hidePersonalInformation), M = (0, l.cj)([N.Z], () => Z(D({}, N.Z.getAllPending()), {
+  }), L = (0, l.e7)([j.Z], () => !j.Z.isFetchingProfile(k.id, null == n ? void 0 : n.id)), B = (0, l.e7)([C.Z], () => C.Z.hidePersonalInformation), M = (0, l.cj)([N.Z], () => Z(D({}, N.Z.getAllPending()), {
     source: N.Z.getSource()
   })), {
     source: U,

@@ -25,8 +25,8 @@ var i = n(73800),
   _ = n(977156),
   j = n(921157),
   E = n(667172),
-  O = n(237292),
-  C = n(314897),
+  C = n(237292),
+  O = n(314897),
   v = n(906467),
   S = n(283595),
   T = n(131951),
@@ -98,7 +98,7 @@ function V() {
       location: "settings"
     }),
     H = null != (n = null == (e = y.default.getCurrentUser()) ? void 0 : e.isStaff()) && n,
-    z = (0, O.y0)({
+    z = (0, C.y0)({
       location: "settings"
     }),
     W = (0, E.v4)({
@@ -109,7 +109,7 @@ function V() {
       location: B.dr.USER_SETTINGS_SEARCH_GIFT_INVENTORY
     }),
     q = (0, r.e7)([S.Z], () => S.Z.hasLibraryApplication()),
-    X = (0, r.e7)([C.default], () => C.default.hasTOTPEnabled()),
+    X = (0, r.e7)([O.default], () => O.default.hasTOTPEnabled()),
     J = R.Sb.useSetting(),
     Q = (0, g.Z)(),
     {

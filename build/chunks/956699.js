@@ -21,8 +21,8 @@ var i = n(255367),
   _ = n(225433),
   j = n(484614),
   E = n(386506),
-  O = n(865427),
-  C = n(802098),
+  C = n(865427),
+  O = n(802098),
   v = n(663993),
   S = n(600164),
   T = n(482215),
@@ -180,7 +180,7 @@ class ea extends r.Component {
     this.setState({
       loading: !0
     });
-    let e = await (0, O.Ce)();
+    let e = await (0, C.Ce)();
     this.setState({
       loading: !1,
       buildOverrides: e,
@@ -1205,8 +1205,8 @@ function ep() {
 
 function eg() {
   var e;
-  let t = (0, d.e7)([C.Z], () => C.Z.overrideId()),
-    [n, s] = r.useState(null != (e = C.Z.overrideId()) ? e : "");
+  let t = (0, d.e7)([O.Z], () => O.Z.overrideId()),
+    [n, s] = r.useState(null != (e = O.Z.overrideId()) ? e : "");
   return (0, i.jsx)(Z.F, {
     setting: W.s6.DEVELOPER_OPTIONS_CHANGELOG_OVERRIDE,
     children: (0, i.jsx)(g.hjN, {

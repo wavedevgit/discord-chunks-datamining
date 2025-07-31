@@ -21,8 +21,8 @@ var i = n(255367),
   _ = n(369585),
   j = n(103866),
   E = n(213734),
-  O = n(37148),
-  C = n(907862),
+  C = n(37148),
+  O = n(907862),
   v = n(466590),
   S = n(481060),
   T = n(240872),
@@ -80,7 +80,7 @@ function W(e, t) {
 function Y() {
   return (0, i.jsxs)("div", {
     className: M.root,
-    children: [(0, i.jsx)(K, {}), (0, i.jsx)(es, {}), (0, i.jsx)(ep, {}), (0, i.jsx)(eg, {}), (0, i.jsx)(em, {}), (0, i.jsx)(ed, {}), (0, i.jsx)(eu, {}), (0, i.jsx)(ec, {}), (0, i.jsx)(eo, {}), (0, i.jsx)(eC, {}), (0, i.jsx)(q, {}), (0, i.jsx)(ev, {})]
+    children: [(0, i.jsx)(K, {}), (0, i.jsx)(es, {}), (0, i.jsx)(ep, {}), (0, i.jsx)(eg, {}), (0, i.jsx)(em, {}), (0, i.jsx)(ed, {}), (0, i.jsx)(eu, {}), (0, i.jsx)(ec, {}), (0, i.jsx)(eo, {}), (0, i.jsx)(eO, {}), (0, i.jsx)(q, {}), (0, i.jsx)(ev, {})]
   })
 }
 
@@ -780,7 +780,7 @@ function ed() {
 }
 
 function eu() {
-  let [e, t] = r.useState(!1), [n, s] = r.useState(!1), [a, l] = r.useState(!1), [o, c] = r.useState(!1), [d, u] = r.useState(!1), [m, p] = r.useState(!1), [g, h] = r.useState(!1), [f, b] = r.useState(!1), [x, _] = r.useState(!1), [j, E] = r.useState(!1), [O, T] = r.useState(!1), [N, I] = r.useState(!1), [y, A] = r.useState(!1), [P, R] = r.useState(!1), [D, Z] = r.useState(!1), [w, k] = r.useState(!1), [L, B] = r.useState(!1), [U, V] = r.useState(!1), [z, W] = r.useState(!1), Y = r.useRef(null), K = r.useRef(null), q = r.useRef(null), X = r.useRef(null), J = r.useRef(null), Q = r.useRef(null), $ = r.useRef(null), ee = r.useRef(null), et = r.useRef(null), en = r.useRef(null), ei = r.useRef(null), er = r.useRef(null), es = r.useRef(null), ea = r.useRef(null), el = r.useRef(null), eo = r.useRef(null), ec = r.useRef(null), ed = r.useRef(null), eu = r.useRef(null), em = r.useCallback(() => {
+  let [e, t] = r.useState(!1), [n, s] = r.useState(!1), [a, l] = r.useState(!1), [o, c] = r.useState(!1), [d, u] = r.useState(!1), [m, p] = r.useState(!1), [g, h] = r.useState(!1), [f, b] = r.useState(!1), [x, _] = r.useState(!1), [j, E] = r.useState(!1), [C, T] = r.useState(!1), [N, I] = r.useState(!1), [y, A] = r.useState(!1), [P, R] = r.useState(!1), [D, Z] = r.useState(!1), [w, k] = r.useState(!1), [L, B] = r.useState(!1), [U, V] = r.useState(!1), [z, W] = r.useState(!1), Y = r.useRef(null), K = r.useRef(null), q = r.useRef(null), X = r.useRef(null), J = r.useRef(null), Q = r.useRef(null), $ = r.useRef(null), ee = r.useRef(null), et = r.useRef(null), en = r.useRef(null), ei = r.useRef(null), er = r.useRef(null), es = r.useRef(null), ea = r.useRef(null), el = r.useRef(null), eo = r.useRef(null), ec = r.useRef(null), ed = r.useRef(null), eu = r.useRef(null), em = r.useCallback(() => {
     t(!1), s(!1), l(!1), c(!1), u(!1), p(!1), h(!1), b(!1), _(!1), E(!1), T(!1), I(!1), A(!1), R(!1), Z(!1), k(!1), B(!1), V(!1), W(!1)
   }, []);
   return (0, i.jsxs)("div", {
@@ -788,7 +788,7 @@ function eu() {
     children: [(0, i.jsx)(S.X6q, {
       variant: "heading-xl/semibold",
       children: "Popovers"
-    }), (0, i.jsx)(C.J2, {
+    }), (0, i.jsx)(O.J2, {
       targetElementRef: Y,
       shouldShow: e,
       onRequestClose: em,
@@ -808,7 +808,7 @@ function eu() {
         text: "Button",
         onClick: em
       }]
-    }), (0, i.jsx)(C.J2, {
+    }), (0, i.jsx)(O.J2, {
       targetElementRef: K,
       shouldShow: n,
       onRequestClose: em,
@@ -827,7 +827,7 @@ function eu() {
         text: "Button",
         onClick: em
       }]
-    }), (0, i.jsx)(C.J2, {
+    }), (0, i.jsx)(O.J2, {
       targetElementRef: q,
       shouldShow: a,
       onRequestClose: em,
@@ -841,7 +841,7 @@ function eu() {
         text: "Button",
         onClick: em
       }]
-    }), (0, i.jsx)(C.J2, {
+    }), (0, i.jsx)(O.J2, {
       targetElementRef: X,
       shouldShow: o,
       onRequestClose: em,
@@ -865,7 +865,7 @@ function eu() {
         link: "https://discord.com",
         external: !0
       }
-    }), (0, i.jsx)(C.J2, {
+    }), (0, i.jsx)(O.J2, {
       targetElementRef: J,
       shouldShow: d,
       onRequestClose: em,
@@ -889,7 +889,7 @@ function eu() {
         onClick: em,
         variant: "secondary"
       }]
-    }), (0, i.jsx)(C.J2, {
+    }), (0, i.jsx)(O.J2, {
       targetElementRef: Q,
       shouldShow: m,
       onRequestClose: em,
@@ -904,7 +904,7 @@ function eu() {
         alt: "Medium placeholder"
       }),
       badge: "new"
-    }), (0, i.jsx)(C.J2, {
+    }), (0, i.jsx)(O.J2, {
       targetElementRef: $,
       shouldShow: g,
       onRequestClose: em,
@@ -923,7 +923,7 @@ function eu() {
         text: "Got it",
         onClick: em
       }]
-    }), (0, i.jsx)(C.J2, {
+    }), (0, i.jsx)(O.J2, {
       targetElementRef: ee,
       shouldShow: f,
       onRequestClose: em,
@@ -942,7 +942,7 @@ function eu() {
         text: "Close",
         onClick: em
       }]
-    }), (0, i.jsx)(C.J2, {
+    }), (0, i.jsx)(O.J2, {
       targetElementRef: et,
       shouldShow: x,
       onRequestClose: em,
@@ -962,7 +962,7 @@ function eu() {
         text: "Amazing!",
         onClick: em
       }]
-    }), (0, i.jsx)(C.J2, {
+    }), (0, i.jsx)(O.J2, {
       targetElementRef: en,
       shouldShow: j,
       onRequestClose: em,
@@ -982,9 +982,9 @@ function eu() {
         text: "Perfect!",
         onClick: em
       }]
-    }), (0, i.jsx)(C.J2, {
+    }), (0, i.jsx)(O.J2, {
       targetElementRef: ei,
-      shouldShow: O,
+      shouldShow: C,
       onRequestClose: em,
       caretConfig: {
         position: "bottom",
@@ -1002,7 +1002,7 @@ function eu() {
         text: "Looks Great!",
         onClick: em
       }]
-    }), (0, i.jsx)(C.J2, {
+    }), (0, i.jsx)(O.J2, {
       targetElementRef: er,
       shouldShow: N,
       onRequestClose: em,
@@ -1022,7 +1022,7 @@ function eu() {
         text: "Nice!",
         onClick: em
       }]
-    }), (0, i.jsx)(C.J2, {
+    }), (0, i.jsx)(O.J2, {
       targetElementRef: es,
       shouldShow: y,
       onRequestClose: em,
@@ -1046,7 +1046,7 @@ function eu() {
         text: "Get Nitro",
         onClick: em
       }]
-    }), (0, i.jsx)(C.J2, {
+    }), (0, i.jsx)(O.J2, {
       targetElementRef: ea,
       shouldShow: P,
       onRequestClose: em,
@@ -1066,7 +1066,7 @@ function eu() {
         text: "Try it now",
         onClick: em
       }]
-    }), (0, i.jsx)(C.Mb, {
+    }), (0, i.jsx)(O.Mb, {
       targetElementRef: el,
       shouldShow: D,
       onRequestClose: em,
@@ -1132,7 +1132,7 @@ function eu() {
         }
       }],
       onStepChange: e => {}
-    }), (0, i.jsx)(C.J2, {
+    }), (0, i.jsx)(O.J2, {
       targetElementRef: ec,
       shouldShow: L,
       onRequestClose: em,
@@ -1203,7 +1203,7 @@ function eu() {
         }
       }],
       onStepChange: e => {}
-    }), (0, i.jsx)(C.Mb, {
+    }), (0, i.jsx)(O.Mb, {
       targetElementRef: eu,
       shouldShow: z,
       onRequestClose: em,
@@ -1958,7 +1958,7 @@ function eb(e) {
     onClose: n,
     children: [(0, i.jsx)("div", {
       className: M.modalOutlines,
-      children: (0, i.jsx)(O.x, {
+      children: (0, i.jsx)(C.x, {
         title: "Demo Modal",
         subtitle: "The ModalHeader can have leading and trailing items on either side of the text",
         leading: (0, i.jsx)(r, {}),
@@ -2005,12 +2005,12 @@ function ex(e) {
   let {
     transitionState: t,
     onClose: n
-  } = e, [s, a] = r.useState("md"), [l, o] = r.useState("Demo Modal"), [c, d] = r.useState("Header body copy"), [u, m] = r.useState(!1), [p, g] = r.useState(!1), [h, b] = r.useState(!1), [x, C] = r.useState(!1), [v, T] = r.useState(!1);
+  } = e, [s, a] = r.useState("md"), [l, o] = r.useState("Demo Modal"), [c, d] = r.useState("Header body copy"), [u, m] = r.useState(!1), [p, g] = r.useState(!1), [h, b] = r.useState(!1), [x, O] = r.useState(!1), [v, T] = r.useState(!1);
   return (0, i.jsxs)(f.I, {
     transitionState: t,
     onClose: n,
     size: s,
-    children: [(0, i.jsx)(O.x, {
+    children: [(0, i.jsx)(C.x, {
       title: l,
       subtitle: c,
       alignCenter: u
@@ -2080,7 +2080,7 @@ function ex(e) {
               })
             }), (0, i.jsx)(S.XZJ, {
               value: x,
-              onChange: (e, t) => C(t),
+              onChange: (e, t) => O(t),
               children: (0, i.jsx)(S.Text, {
                 variant: "text-md/medium",
                 children: "Show Action Bar Leading Input"
@@ -2287,7 +2287,7 @@ function eE(e) {
   })
 }
 
-function eO(e) {
+function eC(e) {
   let {
     transitionState: t,
     onClose: n,
@@ -2308,7 +2308,7 @@ function eO(e) {
       text: "Open Next Modal",
       onClick: () => {
         let e = s + 1;
-        (0, S.h7j)(t => (0, i.jsx)(eO, W(z({}, t), {
+        (0, S.h7j)(t => (0, i.jsx)(eC, W(z({}, t), {
           modalCount: e
         })), {
           stackingBehavior: a
@@ -2359,7 +2359,7 @@ function eO(e) {
   })
 }
 
-function eC() {
+function eO() {
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)("div", {
       className: M.section,
@@ -2429,7 +2429,7 @@ function eC() {
         variant: "primary",
         text: "Open Mana modal stacking demo",
         onClick: () => {
-          (0, S.h7j)(e => (0, i.jsx)(eO, z({}, e)))
+          (0, S.h7j)(e => (0, i.jsx)(eC, z({}, e)))
         }
       })]
     })]

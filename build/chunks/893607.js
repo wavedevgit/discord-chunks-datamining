@@ -12,7 +12,7 @@ var r = n(392711),
 let s = /^\d+$/;
 
 function l(e) {
-  return null != e && !!(e === a.ME || e === a.I_8 || e === a.o_z || s.test(e))
+  return null != e && !!(e === a.ME || e === a.I_8 || e === a.o_z || e === a.STv || s.test(e))
 }
 
 function c(e) {
@@ -30,7 +30,7 @@ let d = {
     let {
       name: e = "guildId",
       optional: t = !1
-    } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, n = [a.ME, a.I_8, a.o_z].map(r.escapeRegExp).join("|");
+    } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, n = [a.ME, a.I_8, a.o_z, a.STv].map(r.escapeRegExp).join("|");
     return u(e, "".concat(n, "|\\d+"), {
       optional: t
     })

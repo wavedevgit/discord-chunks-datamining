@@ -157,7 +157,7 @@ let S = {
       object: h.qAy.ACK_MESSAGE_VIEWED,
       objectType: h.Qqv.ACK_SEMI_AUTOMATIC
     }, !0, void 0, t.id), o.Z.trackJump(n.id, t.id, p.JP);
-    let d = a ? h.Z5c.NOTIFICATIONS_INBOX(n.id, t.id) : h.Z5c.CHANNEL(n.guild_id, n.id, t.id);
-    (0, c.uL)(d)
+    let d = a ? h.STv : n.guild_id;
+    (0, c.uL)(h.Z5c.CHANNEL(d, n.id, t.id))
   }
 }

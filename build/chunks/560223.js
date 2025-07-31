@@ -50,11 +50,11 @@ let b = e => {
       leftAlignHeaders: x = !1,
       showAllPerksButton: _,
       headerClassname: j
-    } = e, E = r.useRef(null), O = n === p.gM.WHATS_NEW, C = (0, u.x)();
+    } = e, E = r.useRef(null), C = n === p.gM.WHATS_NEW, O = (0, u.x)();
     r.useEffect(() => {
-      O && C()
-    }, [C, O]);
-    let v = (0, g.re)(O),
+      C && O()
+    }, [O, C]);
+    let v = (0, g.re)(C),
       S = (0, m.Z)(),
       T = (0, g.mN)(),
       {
@@ -91,7 +91,7 @@ let b = e => {
         className: a()(f.subtitle, {
           [f.subtitle]: null == _ || x,
           [f.subtitleWithButton]: null != _ && !x,
-          [f.fullWidth]: O || x,
+          [f.fullWidth]: C || x,
           [f.moreSubtitleMargin]: P,
           [f.leftAlignSubtitle]: x,
           [f.centerAlignSubtitle]: !x

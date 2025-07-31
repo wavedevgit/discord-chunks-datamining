@@ -97,8 +97,8 @@ function j(e) {
       channel: O,
       user: j,
       nick: A,
-      mute: Z,
-      deaf: x,
+      mute: x,
+      deaf: Z,
       serverMute: w,
       serverDeaf: L
     } = e,
@@ -113,7 +113,7 @@ function j(e) {
     {
       icon: G,
       colorize: V,
-      getStatus: B
+      getStatus: H
     } = null != (l = function(e) {
       let {
         serverDeaf: t,
@@ -129,14 +129,14 @@ function j(e) {
       if (i) return P.mute
     }({
       serverDeaf: L,
-      deaf: x,
+      deaf: Z,
       serverMute: w,
-      mute: Z,
+      mute: x,
       localMute: R
     })) ? l : {},
-    H = null != B ? I.intl.formatToPlainString(I.t["1+MVBA"], {
+    B = null != H ? I.intl.formatToPlainString(I.t["1+MVBA"], {
       userName: U,
-      status: B()
+      status: H()
     }) : U;
 
   function F(e) {
@@ -174,7 +174,7 @@ function j(e) {
     position: "top",
     clickTrap: !0,
     children: e => (0, r.jsx)(s.ua7, {
-      text: H,
+      text: B,
       children: t => (0, r.jsx)(s.P3F, N(S({}, t, e), {
         innerRef: d,
         onClick: t => {

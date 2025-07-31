@@ -21,8 +21,8 @@ var i = n(255367),
   _ = n(584825),
   j = n(305342),
   E = n(333867),
-  O = n(963249),
-  C = n(87484),
+  C = n(963249),
+  O = n(87484),
   v = n(736519),
   S = n(365943),
   T = n(43747),
@@ -176,7 +176,7 @@ let k = function() {
           }), (0, i.jsx)(c.zxk, {
             variant: "primary",
             text: "Select Plan",
-            onClick: () => (0, O.Z)({
+            onClick: () => (0, C.Z)({
               subscriptionTier: n,
               analyticsLocations: Y
             })
@@ -416,7 +416,7 @@ let k = function() {
           }), (0, i.jsx)(c.zxk, {
             variant: "primary",
             text: "Open Standard Payment Modal for SKU",
-            onClick: () => (0, C.Z)({
+            onClick: () => (0, O.Z)({
               applicationId: ea,
               skuId: eo,
               analyticsLocations: Y

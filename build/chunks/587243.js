@@ -1,6 +1,6 @@
 /** Chunk was on 22243 **/
 n.d(t, {
-  F: () => C,
+  F: () => O,
   I: () => v
 }), n(953529), n(388685);
 var i = n(255367),
@@ -62,7 +62,7 @@ function E(e, t) {
   return e.getFullYear() === t.getFullYear() && e.getMonth() === t.getMonth() && e.getDate() === t.getDate()
 }
 
-function O(e) {
+function C(e) {
   let {
     status: t,
     currentStatus: n,
@@ -73,7 +73,7 @@ function O(e) {
     hasButtonStyling: u
   } = o.Y.useExperiment({
     location: "UserProfileAccountPopout"
-  }), f = c && t !== h.Skl.ONLINE, [E, O] = r.useState(void 0), C = void 0 !== E && t === n, v = (0, i.jsx)(i.Fragment, {
+  }), f = c && t !== h.Skl.ONLINE, [E, C] = r.useState(void 0), O = void 0 !== E && t === n, v = (0, i.jsx)(i.Fragment, {
     children: x.map(e => {
       let {
         duration: r,
@@ -101,7 +101,7 @@ function O(e) {
         "data-migration-pending": !0,
         id: "".concat(t, "-").concat(r),
         onClick: e => {
-          e.stopPropagation(), O(r), (0, g.Z)({
+          e.stopPropagation(), C(r), (0, g.Z)({
             nextStatus: t,
             prevStatus: n,
             durationMillis: null != r ? r : void 0
@@ -137,11 +137,11 @@ function O(e) {
         }), null != s && (0, i.jsx)("div", {
           className: b.description,
           children: s
-        }), f && u && C ? S : void 0]
+        }), f && u && O ? S : void 0]
       })
     },
     action: () => {
-      O(f ? m.Z.Millis.DAY : void 0), (0, g.Z)({
+      C(f ? m.Z.Millis.DAY : void 0), (0, g.Z)({
         nextStatus: t,
         prevStatus: n,
         durationMillis: d && f ? m.Z.Millis.DAY : void 0
@@ -152,7 +152,7 @@ function O(e) {
   })
 }
 
-function C(e) {
+function O(e) {
   if (null == e || "0" === e) return;
   let t = new Date(Number(e)),
     n = E(t, new Date),
@@ -183,7 +183,7 @@ function v(e) {
   }), n = u.Cr.useSetting(), r = (0, c.p)(), a = d.e.useExperiment({
     location: "UserProfileAccountPopout"
   }).allowQuietMode || r, m = u.fv.useSetting(), p = e === h.Skl.DND, g = i => {
-    let r = C(n);
+    let r = O(n);
     if (e === i && null != r) return r;
     switch (i) {
       case h.Skl.DND:
@@ -208,18 +208,18 @@ function v(e) {
         dontCloseOnAction: !0
       }, null != n ? n : j)
     })
-  }), E = O({
+  }), E = C({
     status: h.Skl.ONLINE,
     currentStatus: e
-  }), v = O({
+  }), v = C({
     status: h.Skl.IDLE,
     currentStatus: e,
     description: g(h.Skl.IDLE)
-  }), S = O({
+  }), S = C({
     status: h.Skl.DND,
     currentStatus: e,
     description: g(h.Skl.DND)
-  }), T = O({
+  }), T = C({
     status: h.Skl.INVISIBLE,
     currentStatus: e,
     description: g(h.Skl.INVISIBLE)

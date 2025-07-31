@@ -30,14 +30,14 @@ function _() {
       canSetOutputDevice: u.Z.supports(h.AN.AUDIO_OUTPUT_DEVICE)
     })),
     E = (0, c.p)(h.h7.AUDIO_INPUT),
-    O = (0, c.p)(h.h7.AUDIO_OUTPUT),
-    [C, v] = (0, c.L)(h.h7.AUDIO_INPUT, {
+    C = (0, c.p)(h.h7.AUDIO_OUTPUT),
+    [O, v] = (0, c.L)(h.h7.AUDIO_INPUT, {
       location: "UserSettingsDevices"
     }),
     [S, T] = (0, c.L)(h.h7.AUDIO_OUTPUT, {
       location: "UserSettingsDevices"
     }),
-    N = C.concat(v),
+    N = O.concat(v),
     I = S.concat(T),
     y = r.useMemo(() => {
       let e = x.some(e => {
@@ -46,10 +46,10 @@ function _() {
         }),
         t = x.some(e => {
           var t;
-          return null == O || null == (t = O.hardwareId) ? void 0 : t.startsWith(e)
+          return null == C || null == (t = C.hardwareId) ? void 0 : t.startsWith(e)
         });
-      return e && t && (null == E ? void 0 : E.containerId) != null && E.containerId === (null == O ? void 0 : O.containerId)
-    }, [E, O]),
+      return e && t && (null == E ? void 0 : E.containerId) != null && E.containerId === (null == C ? void 0 : C.containerId)
+    }, [E, C]),
     A = N[0],
     P = I[0],
     R = null != (e = null == A ? void 0 : A.disabled) ? e : !_,
