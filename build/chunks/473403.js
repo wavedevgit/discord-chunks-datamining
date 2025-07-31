@@ -19,9 +19,9 @@ var c = n(442837),
   p = n(131016),
   b = n(7284),
   m = n(727429),
-  g = n(810123),
-  h = n(690221),
-  v = n(430824),
+  v = n(810123),
+  g = n(690221),
+  h = n(430824),
   y = n(158776),
   E = n(111583),
   I = n(594174),
@@ -120,9 +120,9 @@ let Z = e => {
       locked: a,
       hasActiveThreads: o,
       withGuildIcon: s
-    } = e, d = (0, c.e7)([v.Z], () => v.Z.getGuild(i.guild_id), [i.guild_id]), _ = i.type === C.d4z.DM || i.type === C.d4z.GROUP_DM, p = null;
-    if (s && null != d && !_) p = (0, r.jsx)(g.Z, {
-      size: g.E.SMALL_32,
+    } = e, d = (0, c.e7)([h.Z], () => h.Z.getGuild(i.guild_id), [i.guild_id]), _ = i.type === C.d4z.DM || i.type === C.d4z.GROUP_DM, p = null;
+    if (s && null != d && !_) p = (0, r.jsx)(v.Z, {
+      size: v.E.SMALL_32,
       className: A.iconContainerWithGuildIcon,
       iconClassName: A.iconWithGuildIcon,
       channel: i,
@@ -176,8 +176,8 @@ let Z = e => {
     let {
       channel: s,
       name: f,
-      muted: g,
-      selected: v,
+      muted: v,
+      selected: h,
       connected: y,
       unread: E,
       locked: I,
@@ -233,7 +233,7 @@ let Z = e => {
           [A.favoritesSuggestion]: J
         }),
         ref: el,
-        children: (0, r.jsxs)(h.Z, T(w({
+        children: (0, r.jsxs)(g.Z, T(w({
           role: ef && !y ? "button" : "link",
           href: ef ? void 0 : ec,
           target: "_blank",
@@ -289,10 +289,10 @@ let Z = e => {
       children: (0, r.jsxs)("div", {
         ref: t,
         className: l()(G, null != j || null != D || null != L || H ? A.wrapper : A.notInteractive, (() => {
-          if (v) return l()(P.selectedChannel, N.SELECTED);
+          if (h) return l()(P.selectedChannel, N.SELECTED);
           if (y) return l()(P.selectedChannel, N.CONNECTED);
           if (I) return N.LOCKED;
-          if (g) return N.MUTED;
+          if (v) return N.MUTED;
           if (E)
             if (et) return N.UNREAD_IMPORTANT;
             else return N.UNREAD_LESS_IMPORTANT;
@@ -320,7 +320,7 @@ let Z = e => {
         onContextMenu: e => null == M ? void 0 : M(e, s),
         onMouseEnter: B,
         onMouseLeave: Q,
-        children: [g || !E ? null : (0, r.jsx)("div", {
+        children: [v || !E ? null : (0, r.jsx)("div", {
           className: l()(A.unread, et ? A.unreadImportant : void 0)
         }), null != (c = null == k ? void 0 : k(e_)) ? c : e_]
       })

@@ -1,60 +1,60 @@
-/** Chunk was on 34429 **/
-n.d(t, {
-  Z: () => p
-}), n(388685), n(539854);
-var r = n(442837),
-  i = n(963374),
-  l = n(735020),
-  a = n(627050),
-  o = n(905405),
-  s = n(937889),
-  c = n(23750),
-  u = n(699516),
-  d = n(171900),
-  _ = n(518944);
-let E = [];
+/** Chunk was on 93239 **/
+r.d(t, {
+  Z: () => h
+}), r(388685), r(539854);
+var n = r(442837),
+  i = r(963374),
+  s = r(735020),
+  a = r(627050),
+  c = r(905405),
+  l = r(937889),
+  o = r(23750),
+  u = r(699516),
+  d = r(171900),
+  _ = r(518944);
+let p = [];
 
-function p(e) {
-  let t = (0, o.p)(),
-    n = a.d.useExperiment({
+function h(e) {
+  let t = (0, c.p)(),
+    r = a.d.useExperiment({
       location: "useMessageRenderedContent"
     }).enabled,
-    p = (0, r.e7)([_.Z, d.Z, l.Z], () => {
-      var r;
+    h = (0, n.e7)([_.Z, d.Z, s.Z], () => {
+      var n;
       let a = _.Z.getSearchResultsQuery(e),
-        o = d.Z.getMessages(e);
-      if (null == a || null == o || 0 === o.length) return E;
-      let u = (0, i.nC)(null != (r = a.content) ? r : ""),
-        p = [];
-      return o.forEach(e => {
-        let r = new c.ZP(e),
-          i = (r = function(e, t) {
-            let [n] = t, r = n.getMessage(e.id, e.channel_id);
-            return null != r && (e = e.merge({
-              attachments: r.attachments,
-              embeds: r.embeds
+        c = d.Z.getMessages(e);
+      if (null == a || null == c || 0 === c.length) return p;
+      let u = (0, i.nC)(null != (n = a.content) ? n : ""),
+        h = [];
+      return c.forEach(e => {
+        let n = new o.ZP(e),
+          i = (n = function(e, t) {
+            let [r] = t, n = r.getMessage(e.id, e.channel_id);
+            return null != n && (e = e.merge({
+              attachments: n.attachments,
+              embeds: n.embeds
             })), e
-          }(r, [l.Z])).isSearchHit ? r.set("customRenderedContent", (0, s.ZP)(r, {
+          }(n, [s.Z])).isSearchHit ? n.set("customRenderedContent", (0, l.ZP)(n, {
             postProcessor: u,
             allowHeading: !0,
             allowList: !0,
-            allowGameMentions: n,
+            allowGameMentions: r,
             shouldFilterKeywords: t
-          })) : r;
-        p.push([i])
-      }), p
-    }, [n, e, t], r.pF);
-  return (0, r.e7)([u.Z], () => {
+          })) : n;
+        h.push([i])
+      }), h
+    }, [r, e, t], n.pF);
+  return (0, n.e7)([u.Z], () => {
     let e = 0,
       t = 0;
     return {
-      searchResults: p.map(n => n.filter(n => {
-        let r = u.Z.isBlockedForMessage(n),
-          i = u.Z.isIgnoredForMessage(n);
-        return r && n.isSearchHit ? e++ : i && n.isSearchHit && t++, !r && !i || n.isSearchHit
+      searchResults: h.map(r => r.filter(r => {
+        let n = u.Z.isBlockedForMessage(r),
+          i = u.Z.isIgnoredForMessage(r);
+        return n && r.isSearchHit ? e++ : i && r.isSearchHit && t++, !n && !i || r.isSearchHit
       })),
       blockCount: e,
       ignoreCount: t
     }
-  }, [p], r.pF)
+  }, [h], n.pF)
 }

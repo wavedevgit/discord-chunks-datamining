@@ -1,8 +1,8 @@
-/** Chunk was on 34429 **/
-n.d(t, {
+/** Chunk was on 93239 **/
+r.d(t, {
   t: () => i
 });
-let r = (0, n(818083).B)({
+let n = (0, r(818083).B)({
   kind: "user",
   id: "2025-07_search_desktop_pagination_limits",
   label: "Search Desktop Pagination Limits",
@@ -21,13 +21,13 @@ let r = (0, n(818083).B)({
 function i(e) {
   let {
     location: t,
-    autoTrackExposure: n = !0
+    autoTrackExposure: r = !0
   } = e, {
     enabled: i
-  } = r.useExperiment({
+  } = n.useExperiment({
     location: t
   }, {
-    autoTrackExposure: n
+    autoTrackExposure: r
   });
   return i
 }
