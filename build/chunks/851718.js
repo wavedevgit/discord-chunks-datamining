@@ -108,8 +108,8 @@ function b(e) {
     }
   }, [t]);
   let {
-    loadState: E
-  } = (0, o.qz)(), C = E !== o.jd.LOADED;
+    loadState: C
+  } = (0, o.qz)(), E = C !== o.jd.LOADED;
   switch (b) {
     case d.j.HOME:
       return (0, i.jsx)(i.Fragment, {
@@ -120,7 +120,7 @@ function b(e) {
             children: (0, i.jsx)(c.Z, {
               subscription: e,
               navigateToSwitchPlan: _,
-              loadingState: C ? c.G.LOADING : null != (t = j[e.id]) ? t : c.G.LOADING
+              loadingState: E ? c.G.LOADING : null != (t = j[e.id]) ? t : c.G.LOADING
             })
           }, e.id)
         })

@@ -64,7 +64,7 @@ function u(e, t) {
 }
 let d = e => {
   var {
-    subscriptionTier: t,
+    subscriptionTier: t = null,
     hasActivePromotion: n = !1,
     useShorterCTA: a = !1,
     isPersistentCTA: s = !1

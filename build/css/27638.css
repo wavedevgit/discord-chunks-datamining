@@ -1,6 +1,6 @@
 /**
   Module ID: 27638
-  Original File Name: e264a21be8357746
+  Original File Name: 94cffdc90fa37c5d
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -2273,15 +2273,15 @@
     color: var(--text-primary)
 }
 
-.messageClickableContainer_cb862a:focus .timestamp_cb862a,.messageClickableContainer_cb862a:focus-within .timestamp_cb862a,.messageClickableContainer_cb862a:hover .timestamp_cb862a {
+.messageClickableContainer_cb862a.actionMenuOpen_cb862a .timestamp_cb862a,.messageClickableContainer_cb862a:focus .timestamp_cb862a,.messageClickableContainer_cb862a:focus-within .timestamp_cb862a,.messageClickableContainer_cb862a:hover .timestamp_cb862a {
     display: none
 }
 
-.messageClickableContainer_cb862a:focus .mentionBadge_cb862a,.messageClickableContainer_cb862a:focus-within .mentionBadge_cb862a,.messageClickableContainer_cb862a:hover .mentionBadge_cb862a {
+.messageClickableContainer_cb862a.actionMenuOpen_cb862a .mentionBadge_cb862a,.messageClickableContainer_cb862a:focus .mentionBadge_cb862a,.messageClickableContainer_cb862a:focus-within .mentionBadge_cb862a,.messageClickableContainer_cb862a:hover .mentionBadge_cb862a {
     display: none
 }
 
-.messageClickableContainer_cb862a:focus .actions_cb862a,.messageClickableContainer_cb862a:focus-within .actions_cb862a,.messageClickableContainer_cb862a:hover .actions_cb862a {
+.messageClickableContainer_cb862a.actionMenuOpen_cb862a .actions_cb862a,.messageClickableContainer_cb862a:focus .actions_cb862a,.messageClickableContainer_cb862a:focus-within .actions_cb862a,.messageClickableContainer_cb862a:hover .actions_cb862a {
     display: flex
 }
 
@@ -2289,7 +2289,7 @@
     color: var(--text-primary)
 }
 
-.messageClickableContainer_cb862a:hover {
+.messageClickableContainer_cb862a.actionMenuOpen_cb862a,.messageClickableContainer_cb862a:focus-within,.messageClickableContainer_cb862a:hover {
     background: var(--background-modifier-hover)
 }
 
@@ -8455,4 +8455,4 @@ div:has(>.positionLayer__4f4b6) {
     width: 96px
 }
 
-/*# sourceMappingURL=e264a21be8357746.css.map*/
+/*# sourceMappingURL=94cffdc90fa37c5d.css.map*/

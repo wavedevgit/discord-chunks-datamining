@@ -21,8 +21,8 @@ var i = n(255367),
   _ = n(703115),
   j = n(526761),
   O = n(726985),
-  E = n(736530),
-  C = n(981631),
+  C = n(736530),
+  E = n(981631),
   v = n(388032);
 
 function S(e) {
@@ -31,7 +31,7 @@ function S(e) {
     guildId: n
   } = e, S = (0, h.c_)(), T = (0, p.q)(), N = g.h2.useSetting().includes(n), I = g.mX.useSetting(), y = g.zA.useSetting().includes(n), A = r.useCallback(e => {
     let i = (0, u.gl)();
-    e ? i.delete(n) : i.add(n), g.zA.updateSetting(Array.from(i)), c.default.track(C.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
+    e ? i.delete(n) : i.add(n), g.zA.updateSetting(Array.from(i)), c.default.track(E.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
       action: _.Y.RESTRICT_GUILD_MESSAGE_REQUEST_TOGGLE,
       ingress: t,
       guild_id: n
@@ -39,7 +39,7 @@ function S(e) {
   }, [t, n]);
 
   function P(e, t) {
-    c.default.track(C.rMx.GUILD_DEFAULT_MESSAGE_REQUEST_UPDATED, {
+    c.default.track(E.rMx.GUILD_DEFAULT_MESSAGE_REQUEST_UPDATED, {
       default_guilds_restricted: e,
       applied_to_existing_guilds: t
     })
@@ -65,13 +65,13 @@ function S(e) {
   return (0, i.jsx)(f.U, {
     setting: O.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_MESSAGE_REQUESTS_V2,
     scrollPosition: j.FY.MESSAGE_REQUESTS_V2,
-    children: n === E.T ? (0, i.jsx)(b.Z, {
+    children: n === C.T ? (0, i.jsx)(b.Z, {
       title: v.intl.string(v.t["3o2ojo"]),
       value: !T && !I,
       onChange: e => R(e, !1),
       disabled: T,
       note: v.intl.format(v.t.wkm9a2, {
-        helpdeskArticle: d.Z.getArticleURL(C.BhN.MESSAGE_REQUESTS)
+        helpdeskArticle: d.Z.getArticleURL(E.BhN.MESSAGE_REQUESTS)
       })
     }) : (0, i.jsx)(b.Z, {
       title: v.intl.string(v.t["3o2ojo"]),
@@ -79,9 +79,9 @@ function S(e) {
       onChange: e => R(e, !0),
       disabled: N,
       note: S ? v.intl.format(v.t.WpnWLS, {
-        helpdeskArticle: d.Z.getArticleURL(C.BhN.MESSAGE_REQUESTS)
+        helpdeskArticle: d.Z.getArticleURL(E.BhN.MESSAGE_REQUESTS)
       }) : v.intl.format(v.t.wkm9a2, {
-        helpdeskArticle: d.Z.getArticleURL(C.BhN.MESSAGE_REQUESTS)
+        helpdeskArticle: d.Z.getArticleURL(E.BhN.MESSAGE_REQUESTS)
       })
     })
   })

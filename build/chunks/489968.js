@@ -1,6 +1,6 @@
 /** Chunk was on 22243 **/
 n.d(t, {
-  Z: () => C
+  Z: () => E
 });
 var i = n(255367),
   r = n(608787),
@@ -21,24 +21,24 @@ var i = n(255367),
   _ = n(753514),
   j = n(450890),
   O = n(145133);
-let E = (0, r.Un)({
+let C = (0, r.Un)({
   createPromise: () => n.e("67544").then(n.bind(n, 894308)),
   webpackId: 894308,
   name: "ClickerGamePopoutWindow"
 });
 
-function C() {
+function E() {
   let e = (0, a.e7)([p.Z], () => p.Z.lifetimePoints > 0),
     t = (0, a.e7)([d.Z], () => d.Z.getWindowOpen(f.KJ3.CLICKER_GAME)),
     r = () => {
-      u.bA(f.KJ3.CLICKER_GAME, e => (0, i.jsx)(E, {
+      u.bA(f.KJ3.CLICKER_GAME, e => (0, i.jsx)(C, {
         windowKey: e
       }), {
         defaultWidth: 854,
         defaultHeight: 768
       })
     },
-    C = () => {
+    E = () => {
       c.Z.useReducedMotion ? (0, o.ZDy)(async () => {
         let {
           ConfirmModal: e
@@ -99,7 +99,7 @@ function C() {
         className: _.playButton,
         color: "white",
         disabled: t,
-        onClick: C,
+        onClick: E,
         children: [(0, i.jsx)(h.Z, {
           color: "always-white",
           variant: "text-lg/bold",
@@ -115,7 +115,7 @@ function C() {
         color: "white",
         disabled: t || !e,
         onClick: () => {
-          (0, m.yW)(), C()
+          (0, m.yW)(), E()
         },
         children: (0, i.jsx)(h.Z, {
           color: "always-white",

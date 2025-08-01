@@ -28,7 +28,7 @@ function u(e) {
       onRequestClose: j,
       popoverRef: O
     } = e,
-    E = function(e, t) {
+    C = function(e, t) {
       if (null == e) return {};
       var n, i, r = function(e, t) {
         if (null == e) return {};
@@ -43,7 +43,7 @@ function u(e) {
       }
       return r
     }(e, ["title", "body", "caretConfig", "badge", "asset", "size", "actions", "textLink", "gradientColor", "onRequestClose", "popoverRef"]);
-  let C = r.useCallback(() => {
+  let E = r.useCallback(() => {
       null == j || j()
     }, [j]),
     v = r.useCallback(() => {
@@ -66,8 +66,8 @@ function u(e) {
       })
     }
     return e
-  }({}, E), n = n = {
-    onRequestClose: C,
+  }({}, C), n = n = {
+    onRequestClose: E,
     gradientColor: _,
     caretConfig: p,
     children: (0, i.jsxs)("div", {

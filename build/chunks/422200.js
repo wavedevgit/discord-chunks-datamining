@@ -32,7 +32,7 @@ let y = (0, a.Z)(function(t) {
   } = t, a = (0, c.Z)(n), o = (0, h.Z)(n), y = (0, _.Z)(n), N = (0, u.Z)(n), P = (0, Z.Z)(n), A = (0, f.Z)(n), T = (0, s.Z)({
     id: n.id,
     label: E.intl.string(E.t.DQ797u)
-  }), R = (0, v.Z)(n, "Context Menu"), x = (0, b.Z)(n), S = (0, j.Z)(n), I = (0, m.Z)(n), k = (0, O.Z)(n.id), U = (0, g.Z)(n), M = (0, C.Z)(n), F = (0, d.l)(n), w = (0, d.P)(n), D = (0, p.Z)(n);
+  }), R = (0, v.Z)(n, "Context Menu"), x = (0, b.Z)(n), S = (0, j.Z)(n), I = (0, m.Z)(n), k = (0, O.Z)(n.id), M = (0, g.Z)(n), U = (0, C.Z)(n), F = (0, d.l)(n), w = (0, d.P)(n), D = (0, p.Z)(n);
   return (0, i.jsxs)(r.v2r, {
     navId: "thread-context",
     onClose: l.Zy,
@@ -41,13 +41,13 @@ let y = (0, a.Z)(function(t) {
     children: [(0, i.jsxs)(r.kSQ, {
       children: [o, F]
     }, "mark-as-read-or-favorite"), (0, i.jsxs)(r.kSQ, {
-      children: [R, U, N, P, I, k, a]
+      children: [R, M, N, P, I, k, a]
     }, "thread-actions"), (0, i.jsxs)(r.kSQ, {
       children: [y, S]
     }, "notifications"), (0, i.jsx)(r.kSQ, {
       children: w
     }), (0, i.jsxs)(r.kSQ, {
-      children: [M, x, A, D]
+      children: [U, x, A, D]
     }, "admin-actions"), (0, i.jsx)(r.kSQ, {
       children: T
     }, "developer-actions")]

@@ -18,16 +18,16 @@ var a = n(255367),
   g = n(430824),
   b = n(375954),
   h = n(403182),
-  T = n(709054),
-  y = n(861990),
+  y = n(709054),
+  T = n(861990),
   C = n(127654),
   E = n(979956),
   O = n(228392),
   v = n(404616),
   x = n(470623),
   I = n(981631),
-  M = n(231338),
-  S = n(388032),
+  S = n(231338),
+  M = n(388032),
   j = n(994436);
 async function w(e) {
   var t, n, a;
@@ -38,7 +38,7 @@ async function w(e) {
       guild: p,
       onClose: _
     } = e,
-    g = T.default.castChannelIdAsMessageId(o.id),
+    g = y.default.castChannelIdAsMessageId(o.id),
     O = new d.Z;
   O.on("progress", e => {
     let t = (0, h.dg)(p.id);
@@ -53,12 +53,12 @@ async function w(e) {
     l(!1);
     return
   }
-  let M = [...x, ...null != (t = i.map((e, t) => (0, y.B)(e, t))) ? t : []];
+  let S = [...x, ...null != (t = i.map((e, t) => (0, T.B)(e, t))) ? t : []];
   try {
     await r.tn.patch({
       url: I.ANM.MESSAGE(o.id, g),
       body: {
-        attachments: M
+        attachments: S
       },
       rejectWithError: !1
     }), _(), u.Z.clearAll(o.id, f.d.ChannelMessage)
@@ -75,12 +75,12 @@ function N(e) {
     sendMessage: s,
     transitionState: u,
     onClose: d
-  } = e, m = (0, o.e7)([_.Z], () => _.Z.getChannel(n), [n]), f = (0, o.e7)([g.Z], () => g.Z.getGuild(null == m ? void 0 : m.getGuildId()), [m]), b = (0, o.e7)([_.Z], () => _.Z.getChannel(null == m ? void 0 : m.parent_id), [m]), h = null == (t = r[0]) ? void 0 : t.item, [T, y] = i.useState(null);
+  } = e, m = (0, o.e7)([_.Z], () => _.Z.getChannel(n), [n]), f = (0, o.e7)([g.Z], () => g.Z.getGuild(null == m ? void 0 : m.getGuildId()), [m]), b = (0, o.e7)([_.Z], () => _.Z.getChannel(null == m ? void 0 : m.parent_id), [m]), h = null == (t = r[0]) ? void 0 : t.item, [y, T] = i.useState(null);
   i.useEffect(() => {
-    null != h && (0, p.Fq)(h.file, (e, t) => y(e), M.dG)
+    null != h && (0, p.Fq)(h.file, (e, t) => T(e), S.dG)
   }, [h]);
-  let C = null != h && null != T ? {
-      src: T,
+  let C = null != h && null != y ? {
+      src: y,
       width: v.TJ,
       height: v.Lp,
       spoiler: r[0].spoiler,
@@ -104,24 +104,24 @@ function N(e) {
       }))
     }, [m, r, I, f, d]);
   return null == b ? null : (0, a.jsx)(l.Modal, {
-    title: S.intl.string(S.t.hMWWMT),
-    subtitle: S.intl.string(S.t.zMsUsr),
+    title: M.intl.string(M.t["+SZF6e"]),
+    subtitle: M.intl.string(M.t["0Ycgw8"]),
     transitionState: u,
     onClose: d,
     actionBarInput: (0, a.jsx)(c.A, {
       variant: "secondary",
       disabled: E,
       onClick: d,
-      text: S.intl.string(S.t["ETE/oK"])
+      text: M.intl.string(M.t["ETE/oK"])
     }),
     actions: [{
       variant: "secondary",
-      text: S.intl.string(S.t["8rKVHB"]),
+      text: M.intl.string(M.t["8rKVHB"]),
       disabled: E,
       onClick: N
     }, {
       variant: "primary",
-      text: S.intl.string(S.t.d611xM),
+      text: M.intl.string(M.t.d611xM),
       loading: E,
       onClick: P,
       autoFocus: !0
@@ -130,7 +130,7 @@ function N(e) {
       channel: b,
       children: (0, a.jsx)(v.ZP, {
         threadId: n,
-        goToThread: M.dG,
+        goToThread: S.dG,
         overrideMedia: C,
         className: j.forumPost
       })

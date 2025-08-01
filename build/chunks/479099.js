@@ -19,7 +19,7 @@ var a, i = n(255367),
   b = n(388032),
   h = n(559297);
 
-function T(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(n);
@@ -38,7 +38,7 @@ function T(e) {
   return e
 }
 
-function y(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -64,25 +64,25 @@ function E(e) {
     ariaLabel: x
   } = e, {
     name: I,
-    emojiId: M,
-    emojiName: S
-  } = t, j = null != O, [w, N] = o.useState(!1), P = (0, s.e7)([_.ZP], () => null != M ? _.ZP.getUsableCustomEmojiById(M) : null), A = j || null != E, k = (!j || !w) && (null != M || null != S), D = 0 === a, L = o.useRef(null), R = (0, s.e7)([p.Z], () => p.Z.keyboardModeEnabled), Z = e => {
+    emojiId: S,
+    emojiName: M
+  } = t, j = null != O, [w, N] = o.useState(!1), P = (0, s.e7)([_.ZP], () => null != S ? _.ZP.getUsableCustomEmojiById(S) : null), A = j || null != E, k = (!j || !w) && (null != S || null != M), D = 0 === a, L = o.useRef(null), R = (0, s.e7)([p.Z], () => p.Z.keyboardModeEnabled), Z = e => {
     let a = f.Sb.getSetting();
     g.wS && a && (0, d.jW)(e, async () => {
       let {
         default: e
       } = await n.e("29646").then(n.bind(n, 955116));
-      return n => (0, i.jsx)(e, y(T({}, n), {
+      return n => (0, i.jsx)(e, T(y({}, n), {
         tag: t
       }))
     })
-  }, B = (0, i.jsxs)(i.Fragment, {
+  }, F = (0, i.jsxs)(i.Fragment, {
     children: [k ? (0, i.jsx)(m.Z, {
       className: c()(h.emoji, {
         [h.small]: D
       }),
-      emojiId: M,
-      emojiName: S,
+      emojiId: S,
+      emojiName: M,
       animated: !!(null == P ? void 0 : P.animated),
       size: "reaction"
     }) : null, w && j && (0, i.jsx)("div", {
@@ -98,7 +98,7 @@ function E(e) {
       color: "currentColor",
       children: I
     })]
-  }), F = {
+  }), B = {
     key: t.id,
     className: c()(h.pill, {
       [h.disabled]: r,
@@ -114,7 +114,7 @@ function E(e) {
     onMouseEnter: () => j && N(!0),
     onMouseLeave: () => j && N(!1)
   }, G = (0, l.JA)("forum-tag-".concat(t.id));
-  return A ? (0, i.jsx)(u.P3F, y(T(y(T({}, G), {
+  return A ? (0, i.jsx)(u.P3F, T(y(T(y({}, G), {
     innerRef: L,
     focusProps: {
       ringTarget: L
@@ -124,10 +124,10 @@ function E(e) {
     }),
     role: "button",
     "aria-pressed": v
-  }), F), {
-    children: B
-  })) : (0, i.jsx)("div", y(T({}, F), {
-    children: B
+  }), B), {
+    children: F
+  })) : (0, i.jsx)("div", T(y({}, B), {
+    children: F
   }))
 }
 
@@ -146,7 +146,7 @@ function O(e) {
         size: E.Sizes.SMALL
       }, e.id))
     }),
-    children: e => (0, i.jsx)("div", y(T({}, e), {
+    children: e => (0, i.jsx)("div", T(y({}, e), {
       className: c()(h.pill, {
         [h.small]: o
       }),

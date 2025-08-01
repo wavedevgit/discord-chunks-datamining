@@ -47,8 +47,8 @@ let b = e => {
       avatarDecoAssetId: _,
       avatarDecoAssetDescription: j,
       ellipseOpacity: O,
-      customAnimationClassName: E,
-      circleColor: C,
+      customAnimationClassName: C,
+      circleColor: E,
       circleStroke: v
     } = e, S = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), T = t && !S;
     return (0, r.jsx)("div", {
@@ -56,7 +56,7 @@ let b = e => {
       children: (0, r.jsx)(g.Z, {
         animationClassName: l()(h.activeProgressCircle, {
           [h.activeProgressCircleAnimation]: T,
-          [null != E ? E : ""]: T
+          [null != C ? C : ""]: T
         }),
         progressCircleStroke: v,
         progressCircleStrokeSize: a,
@@ -73,7 +73,7 @@ let b = e => {
               });
             case 1:
               return (0, r.jsx)(p.Z, {
-                circleColor: C,
+                circleColor: E,
                 ellipseOpacity: O
               });
             case 2:
