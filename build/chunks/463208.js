@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  o: () => y
-}), n(388685);
+  o: () => b
+});
 var r = n(255367),
   i = n(73800),
   a = n(120356),
@@ -10,7 +10,7 @@ var r = n(255367),
   s = n(84735),
   l = n(15127),
   c = n(557818),
-  u = n(388032),
+  u = n(897037),
   d = n(953100);
 
 function _(e, t, n) {
@@ -83,32 +83,16 @@ function E(e, t) {
   }, [n, e]), n
 }
 
-function b(e, t, n, r, a, o) {
-  let [s, l] = i.useState(o), c = i.useMemo(() => {
-    var i, o;
-    return "change" !== e ? null : null === t || "" === t ? null : null != t ? t : s ? null != r && (null != (i = null == n ? void 0 : n.length) ? i : 0) < r ? u.intl.formatToPlainString(u.t["62rk1N"], {
-      minLength: r
-    }) : null != a && (null != (o = null == n ? void 0 : n.length) ? o : 0) > a ? u.intl.formatToPlainString(u.t.ICT5S0, {
-      maxLength: a
-    }) : null : null
-  }, [e, t, s, r, null == n ? void 0 : n.length, a]), d = null != t && "" !== t || null != c;
-  return {
-    errorMessage: c,
-    hasError: d,
-    setShouldValidate: l
-  }
-}
-
-function y(e) {
+function b(e) {
   var t;
   let {
     disabled: n = !1,
     editable: a,
     inputRef: l,
-    focusProps: u,
-    name: _ = "",
-    type: p = "text",
-    placeholder: g = "",
+    focusProps: _,
+    name: p = "",
+    type: g = "text",
+    placeholder: b = "",
     maxLength: y = 999,
     value: O,
     defaultValue: v,
@@ -120,13 +104,19 @@ function y(e) {
     validateOn: C = "change",
     size: R = "md",
     fullWidth: P = !1
-  } = e, w = m(e, ["disabled", "editable", "inputRef", "focusProps", "name", "type", "placeholder", "maxLength", "value", "defaultValue", "minLength", "error", "defaultDirty", "leading", "trailing", "validateOn", "size", "fullWidth"]), D = E(O, v), {
-    errorMessage: L,
+  } = e, w = m(e, ["disabled", "editable", "inputRef", "focusProps", "name", "type", "placeholder", "maxLength", "value", "defaultValue", "minLength", "error", "defaultDirty", "leading", "trailing", "validateOn", "size", "fullWidth"]), D = E(O, v), L = (0, u.m)({
+    validateOn: C,
+    error: T,
+    value: O,
+    minLength: I,
+    maxLength: y,
+    defaultDirty: S
+  }), {
     setShouldValidate: x
-  } = b(C, T, O, I, y, S), M = e => {
+  } = L, M = e => {
     var t, n;
     let r = e.currentTarget.value;
-    null == (t = w.onChange) || t.call(w, r, _), x(!0), null == (n = D.setHasValue) || n.call(D, "" !== r)
+    null == (t = w.onChange) || t.call(w, r, p), x(!0), null == (n = D.setHasValue) || n.call(D, "" !== r)
   }, k = e => {
     var t, n;
     null == (t = w.onFocus) || t.call(w, e), null == (n = D.setIsFocused) || n.call(D, !0)
@@ -135,7 +125,7 @@ function y(e) {
     null == (t = w.onBlur) || t.call(w, e), null == (n = D.setIsFocused) || n.call(D, !1)
   }, U = i.useRef(null), G = !1 === a || void 0;
   return (0, r.jsxs)(c.J, {
-    error: L,
+    validation: L,
     fullWidth: P,
     readOnly: G,
     className: o()(d[R], {
@@ -144,14 +134,14 @@ function y(e) {
     }),
     children: [A, (0, r.jsx)(s.t, h(f({
       ringTarget: U
-    }, u), {
+    }, _), {
       children: (0, r.jsx)("input", h(f({
-        name: _,
+        name: p,
         className: d.input,
         disabled: n,
         readOnly: G,
-        type: p,
-        placeholder: g,
+        type: g,
+        placeholder: b,
         maxLength: y,
         minLength: I,
         value: O,

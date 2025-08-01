@@ -8,7 +8,7 @@ var r = n(255367);
 n(73800);
 var i = n(120356),
   l = n.n(i),
-  s = n(481060),
+  s = n(755721),
   o = n(489813),
   a = n(592286),
   c = n(388032),
@@ -23,7 +23,7 @@ function d(e) {
     className: c,
     autofocus: d
   } = e;
-  return (0, r.jsx)(s.Kx8, {
+  return (0, r.jsx)(s.iS, {
     className: l()(u.paragraphFieldBody, c),
     maxLength: a.RS,
     value: null != t ? t : "",

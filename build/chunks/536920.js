@@ -24,7 +24,7 @@ function v(e) {
     transitionState: n,
     clientSettingType: v,
     gameId: j
-  } = e, [C, k] = r.useState("unreported"), [b, y] = r.useState(""), [N, f] = r.useState(!1), [S, R] = r.useState(!1), [z, w] = r.useState(!1), [I, M] = r.useState(!1), A = (0, i.e7)([u.Z, c.ZP], () => {
+  } = e, [C, k] = r.useState("unreported"), [b, y] = r.useState(""), [N, S] = r.useState(!1), [f, R] = r.useState(!1), [z, w] = r.useState(!1), [I, M] = r.useState(!1), A = (0, i.e7)([u.Z, c.ZP], () => {
     var e;
     let t = null != j ? j : null == (e = c.ZP.getCurrentGameForAnalytics()) ? void 0 : e.id;
     return null == t ? null : u.Z.getDetectableGame(t)
@@ -52,14 +52,14 @@ function v(e) {
       w(!0), await (0, s._v)(100), w(!1), M(!0);
       return
     }
-    f(!0), await m.default.track(h.rMx.OVERLAY_DISABLED_SURVEY, {
+    S(!0), await m.default.track(h.rMx.OVERLAY_DISABLED_SURVEY, {
       reason: C,
       comment: b,
       client_setting_type: v,
       application_id: null == A ? void 0 : A.id,
       application_name: null == A ? void 0 : A.name,
       most_recent_overlay_render_method: B
-    }), await (0, s._v)(1e3), f(!1), R(!0), await (0, s._v)(1500), t()
+    }), await (0, s._v)(1e3), S(!1), R(!0), await (0, s._v)(1500), t()
   };
   return (0, d.ZP)(() => {
     m.default.track(h.rMx.OPEN_MODAL, {
@@ -121,7 +121,7 @@ function v(e) {
             color: "text-muted",
             className: p.commentHeader,
             children: g.intl.string(g.t.LYnrhY)
-          }), (0, a.jsx)(l.Kx8, {
+          }), (0, a.jsx)(o.iS, {
             autosize: !0,
             value: b,
             maxLength: 1e3,
@@ -149,7 +149,7 @@ function v(e) {
           onClick: P,
           color: (() => {
             switch (!0) {
-              case S:
+              case f:
                 return o.zx.Colors.GREEN;
               case z:
                 return o.zx.Colors.PRIMARY;
@@ -159,7 +159,7 @@ function v(e) {
           })(),
           children: (() => {
             switch (!0) {
-              case S:
+              case f:
                 return (0, a.jsx)(l.kmB, {});
               case N:
                 return (0, a.jsx)(l.$jN, {

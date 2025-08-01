@@ -58,7 +58,7 @@ function v(e) {
     transitionState: n,
     onClose: v,
     analyticsData: y
-  } = e, N = (0, s.e7)([c.Z], () => c.Z.getGuild(t), [t]), C = !!(null == N ? void 0 : N.features.has(g.oNc.INVITES_DISABLED)), [E] = i.useState(!1), [I, S] = i.useState(b.Fl), T = (0, s.e7)([p.Z], () => p.Z.getGuildIncident(t)), A = (0, x.BT)(N), D = (0, h.SG)(T) || C, w = (0, h.sN)(T), [P, R] = i.useState(D), [k, M] = i.useState(w), [L, G] = i.useState(!1), Z = P !== D || k !== w || L, z = C && !A;
+  } = e, N = (0, s.e7)([c.Z], () => c.Z.getGuild(t), [t]), C = !!(null == N ? void 0 : N.features.has(g.oNc.INVITES_DISABLED)), [E] = i.useState(!1), [S, I] = i.useState(b.Fl), T = (0, s.e7)([p.Z], () => p.Z.getGuildIncident(t)), A = (0, x.BT)(N), D = (0, h.SG)(T) || C, w = (0, h.sN)(T), [P, R] = i.useState(D), [k, M] = i.useState(w), [L, G] = i.useState(!1), Z = P !== D || k !== w || L, z = C && !A;
   if (null == N) return v(), null;
 
   function U() {
@@ -88,9 +88,9 @@ function v(e) {
           placeholder: m.intl.string(m.t.vKYZzc),
           options: (0, b.c1)(),
           select: e => {
-            S(e), G(!0)
+            I(e), G(!0)
           },
-          isSelected: e => e === I,
+          isSelected: e => e === S,
           serialize: e => String(e)
         }), (0, r.jsxs)("div", {
           className: O.pauseContainer,
@@ -148,7 +148,7 @@ function v(e) {
           onClick: () => {
             (D || w) && !P && !k ? ((0, u.n)(N.id, !1, !1), (0, a.ZDy)(() => Promise.resolve(e => (0, r.jsx)(j.Z, _(f({}, e), {
               guildId: t
-            }))))) : (0, u.n)(N.id, P, k, I);
+            }))))) : (0, u.n)(N.id, P, k, S);
             let {
               source: e,
               alertType: n,
@@ -161,7 +161,7 @@ function v(e) {
               raid_alert_type: n,
               intervention_type_enabled: (0, h.sO)(P, k),
               intervention_type_disabled: (0, h.lk)(P, k),
-              duration: 60 * I
+              duration: 60 * S
             }), v()
           },
           loading: E,

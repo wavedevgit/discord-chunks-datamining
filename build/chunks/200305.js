@@ -30,8 +30,8 @@ var r = n(255367),
   P = n(388032),
   F = n(916199),
   R = n(419851),
-  T = n(246403);
-let S = e => {
+  S = n(246403);
+let T = e => {
     let {
       headerId: t,
       email: n,
@@ -93,7 +93,7 @@ let S = e => {
       className: F.content,
       children: [(0, r.jsx)("img", {
         alt: P.intl.string(P.t.wNAbl5),
-        src: T,
+        src: S,
         className: F.applicationIcon
       }), (0, r.jsx)(s.X6q, {
         id: t,
@@ -171,7 +171,7 @@ let S = e => {
     var t, n, o, y;
     let {
       verificationForm: R,
-      headerId: T,
+      headerId: S,
       guildId: w,
       onClose: k,
       onComplete: D,
@@ -351,8 +351,8 @@ let S = e => {
               children: (() => {
                 switch (em) {
                   case O.KJ.CLAIM_ACCOUNT:
-                    return (0, r.jsx)(S, {
-                      headerId: T,
+                    return (0, r.jsx)(T, {
+                      headerId: S,
                       email: X,
                       password: ee,
                       setEmail: $,
@@ -364,12 +364,12 @@ let S = e => {
                     });
                   case O.KJ.EMAIL_CONFIRMATION:
                     return (0, r.jsx)(M, {
-                      headerId: T,
+                      headerId: S,
                       email: X
                     });
                   case O.KJ.VERIFICATION_FORM:
                     return (0, r.jsx)(A, {
-                      headerId: T,
+                      headerId: S,
                       guildId: w,
                       guildName: Z.name,
                       formState: W,

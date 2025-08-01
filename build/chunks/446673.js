@@ -16,7 +16,9 @@ let s = e => {
     case "early_access":
       return a.intl.string(a.t.EYxi0t);
     case "free_trial":
-      return a.intl.string(a.t.IBYG5e)
+      return a.intl.string(a.t.IBYG5e);
+    default:
+      return e.text
   }
 };
 
