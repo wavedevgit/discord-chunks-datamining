@@ -96,6 +96,7 @@ function g(e) {
     size: "sm",
     gradientColor: "blue",
     graphic: {
+      type: "image",
       src: v
     },
     title: null != C ? C : y.intl.string(y.t.FpoiHR),

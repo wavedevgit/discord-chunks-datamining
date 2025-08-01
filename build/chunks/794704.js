@@ -20,8 +20,8 @@ var i = n(255367),
   x = n(765250),
   _ = n(13245),
   j = n(825209),
-  O = n(593472),
-  C = n(493773),
+  C = n(593472),
+  O = n(493773),
   E = n(812206),
   v = n(835473),
   S = n(243778),
@@ -189,7 +189,7 @@ function ej(e) {
   })
 }
 
-function eO(e) {
+function eC(e) {
   var {
     children: t,
     className: n,
@@ -245,7 +245,7 @@ function eO(e) {
     }
   })
 }
-let eC = new Set([R.mM.INITIALIZING, R.mM.WAITING_FOR_SCREEN_TYPE_RESOLUTION, R.mM.WAITING_FOR_MODULE_TRACKING, R.mM.WAITING_FOR_OVERLAY_OPEN]),
+let eO = new Set([R.mM.INITIALIZING, R.mM.WAITING_FOR_SCREEN_TYPE_RESOLUTION, R.mM.WAITING_FOR_MODULE_TRACKING, R.mM.WAITING_FOR_OVERLAY_OPEN]),
   eE = e => {
     e.preventDefault(), e.stopPropagation()
   };
@@ -341,7 +341,7 @@ function ev(e) {
     F = !j && !Z && b && !P,
     H = (null == d ? void 0 : d.overlayMethod) === R.gl.Disabled,
     W = (null == d ? void 0 : d.state) === R.mM.OVERLAY_RENDERING && !H,
-    z = (null == d ? void 0 : d.state) != null && eC.has(d.state) && !H,
+    z = (null == d ? void 0 : d.state) != null && eO.has(d.state) && !H,
     K = (null == d ? void 0 : d.overlayMethod) === R.gl.OutOfProcess,
     X = (null == d ? void 0 : d.overlayMethod) === R.gl.OutOfProcessLimitedInteraction,
     J = (null == d ? void 0 : d.overlayMethod) === R.gl.Hook,
@@ -387,7 +387,7 @@ function ev(e) {
           }), function() {
             var e, t;
             switch (!0) {
-              case (null == d ? void 0 : d.fullscreenType) !== O.Jx.BORDERLESS_FULLSCREEN:
+              case (null == d ? void 0 : d.fullscreenType) !== C.Jx.BORDERLESS_FULLSCREEN:
                 return ec.intl.string(ec.t.mJmbeH);
               case P:
                 return ec.intl.string(ec.t.C7bLTU);
@@ -423,11 +423,11 @@ function ev(e) {
           return [ec.intl.string(ec.t.ONovPz), null]
       }
     })();
-  (0, C.ZP)(() => {
+  (0, O.ZP)(() => {
     f.Z.getDetectableGames()
   });
   let [en, ei] = r.useMemo(() => z ? ["text-muted", h.TVs.colors.TEXT_MUTED.css] : W && X ? ["text-feedback-warning", h.TVs.colors.TEXT_FEEDBACK_WARNING.css] : W && K ? ["text-feedback-positive", h.TVs.colors.TEXT_FEEDBACK_POSITIVE.css] : W && J ? ["text-primary", h.TVs.colors.TEXT_PRIMARY.css] : ["interactive-normal", h.TVs.colors.INTERACTIVE_NORMAL.css], [z, W, X, K, J]);
-  return null == a ? null : (0, i.jsxs)(eO, {
+  return null == a ? null : (0, i.jsxs)(eC, {
     onExpand: S,
     className: v ? ed.expandedContainer : void 0,
     title: (0, i.jsxs)(i.Fragment, {
@@ -592,7 +592,7 @@ function eN() {
         className: ed.emptySpacer
       })]
     })
-  }) : (0, i.jsxs)(eO, {
+  }) : (0, i.jsxs)(eC, {
     onExpand: t,
     className: e ? ed.expandedContainer : void 0,
     title: ec.intl.string(ec.t.BfFpW1),
@@ -666,7 +666,7 @@ function eI() {
         className: ed.emptySpacer
       })]
     })
-  }) : (0, i.jsxs)(eO, {
+  }) : (0, i.jsxs)(eC, {
     onExpand: t,
     className: e ? ed.expandedContainer : void 0,
     title: ec.intl.string(ec.t["7BlVIi"]),
@@ -997,7 +997,7 @@ function eZ() {
   let [e, t] = (0, S.US)([g.z.OVERLAY_OOP_SETTINGS_NUX], void 0, !0), n = () => {
     t(ea.L.DISMISS)
   };
-  return ((0, C.ZP)(() => () => {
+  return ((0, O.ZP)(() => () => {
     t(ea.L.AUTO_DISMISS)
   }), e !== g.z.OVERLAY_OOP_SETTINGS_NUX) ? null : (0, i.jsxs)("div", {
     className: ed.overlaySettingsNux,
@@ -1124,7 +1124,7 @@ function ek(e) {
       runningGameApplication: n
     }
   }(), a = (0, D.o4)("user_settings").overlayV3UI, l = (0, p.e7)([X.default], () => X.default.getCurrentUser());
-  (0, C.ZP)(() => {
+  (0, O.ZP)(() => {
     if (en.isPlatformEmbedded) return (0, N.Ky)(), N.P7
   });
   let c = ex(eh);

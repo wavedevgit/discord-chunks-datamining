@@ -1,5 +1,5 @@
 /** Chunk was on 86181 **/
-n.d(e, {
+n.d(t, {
   I: () => I
 }), n(388685);
 var r = n(255367),
@@ -21,8 +21,8 @@ var r = n(255367),
   y = n(474936),
   b = n(981631),
   g = n(301692);
-let I = t => {
-  var e;
+let I = e => {
+  var t;
   let {
     analyticsLocation: n,
     analyticsLocations: a,
@@ -30,35 +30,35 @@ let I = t => {
     transitionState: j,
     premiumSubscription: P,
     discountPrimary: v
-  } = t, {
+  } = e, {
     initialStep: T
-  } = t, E = i.useRef(new o.qA), [O, S] = i.useState(null), N = null == (e = (0, u.Af)(P)) ? void 0 : e.planId, R = null != N ? u.ZP.getPremiumType(N) : null;
+  } = e, E = i.useRef(new o.qA), [O, S] = i.useState(null), N = null == (t = (0, u.Af)(P)) ? void 0 : t.planId, R = null != N ? u.ZP.getPremiumType(N) : null;
   s()(null != R, "Should not be cancelling Nitro without premiumType");
   let D = R === y.p9.TIER_0 || R === y.p9.TIER_1 || R === y.p9.TIER_2;
   null == T && (T = D ? f.R.WHAT_YOU_LOSE : f.R.CONFIRM);
   let [w, A, L, k] = (0, x.q)(T, P, a), M = (0, d.UV)(), {
     churnUserDiscountOffer: U,
     isFetchingChurnDiscountOffer: F
-  } = (0, d.WR)(!M || w !== f.R.WHAT_YOU_LOSE), B = t => {
-    I(), c.default.track(b.rMx.CANCELLATION_FLOW_STEP, function(t) {
-      for (var e = 1; e < arguments.length; e++) {
-        var n = null != arguments[e] ? arguments[e] : {},
+  } = (0, d.WR)(!M || w !== f.R.WHAT_YOU_LOSE), B = e => {
+    I(), c.default.track(b.rMx.CANCELLATION_FLOW_STEP, function(e) {
+      for (var t = 1; t < arguments.length; t++) {
+        var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
-          return Object.getOwnPropertyDescriptor(n, t).enumerable
-        }))), r.forEach(function(e) {
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(n, e).enumerable
+        }))), r.forEach(function(t) {
           var r;
-          r = n[e], e in t ? Object.defineProperty(t, e, {
+          r = n[t], t in e ? Object.defineProperty(e, t, {
             value: r,
             enumerable: !0,
             configurable: !0,
             writable: !0
-          }) : t[e] = r
+          }) : e[t] = r
         })
       }
-      return t
+      return e
     }({
-      from_step: f.O[t],
+      from_step: f.O[e],
       to_step: null,
       step_duration_ms: Date.now() - L,
       flow_duration_ms: Date.now() - k,

@@ -1,5 +1,5 @@
 /** Chunk was on 86181 **/
-n.d(e, {
+n.d(t, {
   default: () => Q
 }), n(388685), n(415506);
 var r = n(255367),
@@ -46,54 +46,54 @@ var r = n(255367),
   H = n(388032),
   W = n(868006);
 
-function G(t) {
-  for (var e = 1; e < arguments.length; e++) {
-    var n = null != arguments[e] ? arguments[e] : {},
+function G(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
-      return Object.getOwnPropertyDescriptor(n, t).enumerable
-    }))), r.forEach(function(e) {
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
       var r;
-      r = n[e], e in t ? Object.defineProperty(t, e, {
+      r = n[t], t in e ? Object.defineProperty(e, t, {
         value: r,
         enumerable: !0,
         configurable: !0,
         writable: !0
-      }) : t[e] = r
+      }) : e[t] = r
     })
   }
-  return t
+  return e
 }
-async function X(t) {
+async function X(e) {
   let {
-    premiumSubscription: e,
+    premiumSubscription: t,
     onClose: n,
     setHasError: r,
     setIsCancelling: i,
     analyticsLocations: o,
     analyticsLocation: a
-  } = t;
+  } = e;
   try {
-    if (i(!0), r(!1), [Y.O0b.PAST_DUE, Y.O0b.PAUSED, Y.O0b.BILLING_RETRY].includes(e.status)) await (0, p.EO)(e.id, o, a);
+    if (i(!0), r(!1), [Y.O0b.PAST_DUE, Y.O0b.PAUSED, Y.O0b.BILLING_RETRY].includes(t.status)) await (0, p.EO)(t.id, o, a);
     else {
       var s, l;
-      let t = null != (l = null == (s = e.renewalMutations) ? void 0 : s.items) ? l : e.items,
-        n = (0, P.Ue)(t);
-      await (0, p.Mg)(e, {
+      let e = null != (l = null == (s = t.renewalMutations) ? void 0 : s.items) ? l : t.items,
+        n = (0, P.Ue)(e);
+      await (0, p.Mg)(t, {
         items: n
       }, {
         amount: 0,
-        currency: e.currency
-      }, (0, P.UX)(n, e.currency, e.paymentSourceId), o, a)
+        currency: t.currency
+      }, (0, P.UX)(n, t.currency, t.paymentSourceId), o, a)
     }
     n()
-  } catch (t) {
+  } catch (e) {
     r(!0), i(!1)
   }
 }
 
-function q(t) {
-  var e;
+function q(e) {
+  var t;
   let {
     premiumSubscription: n,
     premiumType: o,
@@ -101,7 +101,7 @@ function q(t) {
     onClose: s,
     whatYouLoseExperienceEnabled: l,
     analyticsLocation: c
-  } = t, u = (0, x.Q)(), [p, C] = i.useState(!1), [b, g] = i.useState(!1), I = (0, f.ZP)(), {
+  } = e, u = (0, x.Q)(), [p, C] = i.useState(!1), [b, g] = i.useState(!1), I = (0, f.ZP)(), {
     analyticsLocations: v
   } = (0, h.ZP)(), T = null;
   switch (n.status) {
@@ -137,16 +137,16 @@ function q(t) {
           })
       }
   }
-  let E = n.items.some(t => {
+  let E = n.items.some(e => {
       let {
-        planId: e
-      } = t;
-      return !z.dJ.has(e)
-    }) && null == n.renewalMutations || (null == (e = n.renewalMutations) ? void 0 : e.items.find(t => {
+        planId: t
+      } = e;
+      return !z.dJ.has(t)
+    }) && null == n.renewalMutations || (null == (t = n.renewalMutations) ? void 0 : t.items.find(e => {
       let {
-        planId: e
-      } = t;
-      return !z.dJ.has(e)
+        planId: t
+      } = e;
+      return !z.dJ.has(t)
     })) != null ? (0, r.jsx)(_.zxk, {
       variant: "primary",
       text: H.intl.string(H.t.PDTjLC),
@@ -206,15 +206,15 @@ function q(t) {
   })
 }
 
-function K(t) {
-  var e, n;
+function K(e) {
+  var t, n;
   let {
     premiumSubscription: i
-  } = t, {
+  } = e, {
     analyticsLocations: o
   } = (0, h.ZP)(), [a] = (0, T.ED)({
     subscriptionId: i.id,
-    items: (0, P.Ue)(null != (n = null == (e = i.renewalMutations) ? void 0 : e.items) ? n : i.items),
+    items: (0, P.Ue)(null != (n = null == (t = i.renewalMutations) ? void 0 : t.items) ? n : i.items),
     renewal: !0,
     analyticsLocations: o,
     analyticsLocation: C.Z.CANCEL_INVOICE_PREVIEW
@@ -254,14 +254,14 @@ function K(t) {
   })
 }
 
-function V(t) {
+function V(e) {
   let {
-    premiumSubscription: e,
+    premiumSubscription: t,
     premiumType: n,
     onBack: o,
     onClose: s,
     analyticsLocation: l
-  } = t, [c, u] = i.useState(!1), [d, m] = i.useState(!1), {
+  } = e, [c, u] = i.useState(!1), [d, m] = i.useState(!1), {
     analyticsLocations: p
   } = (0, h.ZP)();
   return (0, r.jsxs)(r.Fragment, {
@@ -274,7 +274,7 @@ function V(t) {
         className: W.errorBlock,
         children: H.intl.string(H.t["5mlOCQ"])
       }) : null, (0, r.jsx)(K, {
-        premiumSubscription: e
+        premiumSubscription: t
       })]
     }), (0, r.jsxs)(_.mzw, {
       align: y.Z.Align.CENTER,
@@ -282,14 +282,14 @@ function V(t) {
       children: [(0, r.jsx)(_.zxk, {
         variant: "critical-primary",
         text: H.intl.format(H.t["V3+Rpa"], {
-          planPremiumType: P.ZP.getDisplayPremiumType(e.planId)
+          planPremiumType: P.ZP.getDisplayPremiumType(t.planId)
         }),
         disabled: c,
         onClick: async () => {
           await X({
             setHasError: m,
             onClose: s,
-            premiumSubscription: e,
+            premiumSubscription: t,
             setIsCancelling: u,
             analyticsLocations: p,
             analyticsLocation: l
@@ -302,65 +302,65 @@ function V(t) {
   })
 }
 
-function J(t) {
-  var e;
+function J(e) {
+  var t;
   return {
-    subscription_id: t.id,
-    subscription_type: t.type,
-    subscription_plan_id: null == (e = (0, P.Af)(t)) ? void 0 : e.id,
-    subscription_plan_gateway_plan_id: t.paymentGatewayPlanId,
-    subscription_status: t.status
+    subscription_id: e.id,
+    subscription_type: e.type,
+    subscription_plan_id: null == (t = (0, P.Af)(e)) ? void 0 : t.id,
+    subscription_plan_gateway_plan_id: e.paymentGatewayPlanId,
+    subscription_status: e.status
   }
 }
 
-function Q(t) {
-  var e, n, i;
+function Q(e) {
+  var t, n, i;
   let {
     premiumSubscription: o
-  } = t, a = o.items.some(t => {
+  } = e, a = o.items.some(e => {
     let {
-      planId: e
-    } = t;
-    return !z.dJ.has(e)
-  }) && null == o.renewalMutations || (null == (e = o.renewalMutations) ? void 0 : e.items.find(t => {
+      planId: t
+    } = e;
+    return !z.dJ.has(t)
+  }) && null == o.renewalMutations || (null == (t = o.renewalMutations) ? void 0 : t.items.find(e => {
     let {
-      planId: e
-    } = t;
-    return !z.dJ.has(e)
+      planId: t
+    } = e;
+    return !z.dJ.has(t)
   })) != null, {
     enabled: s,
     discountPrimary: l
   } = (0, O.S)({
     location: "Churn Modal"
   });
-  return !a && s ? (0, r.jsx)(R.I, (n = G({}, t), i = i = {
+  return !a && s ? (0, r.jsx)(R.I, (n = G({}, e), i = i = {
     discountPrimary: l
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(t, e) {
-    var n = Object.keys(t);
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+    var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(t);
+      var r = Object.getOwnPropertySymbols(e);
       n.push.apply(n, r)
     }
     return n
-  })(Object(i)).forEach(function(t) {
-    Object.defineProperty(n, t, Object.getOwnPropertyDescriptor(i, t))
-  }), n)) : (0, r.jsx)($, G({}, t))
+  })(Object(i)).forEach(function(e) {
+    Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
+  }), n)) : (0, r.jsx)($, G({}, e))
 }
-let $ = t => {
-  var e;
+let $ = e => {
+  var t;
   let n, {
       premiumSubscription: o,
       transitionState: a,
       onClose: l,
       analyticsLocations: u,
       analyticsLocation: p
-    } = t,
+    } = e,
     {
       initialStep: x
-    } = t,
+    } = e,
     y = i.useRef(new s.qA),
     [b, j] = i.useState(null),
-    v = null == (e = (0, P.Af)(o)) ? void 0 : e.planId,
+    v = null == (t = (0, P.Af)(o)) ? void 0 : t.planId,
     T = null != v ? P.ZP.getPremiumType(v) : null;
   c()(null != T, "Should not be cancelling Nitro without premiumType");
   let O = (0, f.ZP)();
@@ -373,22 +373,22 @@ let $ = t => {
     analyticsLocations: R
   } = (0, h.ZP)(u, C.Z.PREMIUM_SUBSCRIPTION_CANCELLATION_MODAL), [k, M, U, X] = (0, Z.q)(x, o, u), [K, Q] = i.useState(null);
   (0, F.w)(o, l, !1);
-  let $ = t => {
+  let $ = e => {
       l(), g.default.track(Y.rMx.CANCELLATION_FLOW_STEP, G({
-        from_step: B.O[t],
+        from_step: B.O[e],
         to_step: null,
         step_duration_ms: Date.now() - U,
         flow_duration_ms: Date.now() - X,
         location_stack: u
       }, J(o)))
     },
-    tt = (0, E.UV)(),
+    ee = (0, E.UV)(),
     {
-      churnUserDiscountOffer: te,
-      isFetchingChurnDiscountOffer: tn
-    } = (0, E.WR)(!tt || k !== B.R.WHAT_YOU_LOSE),
-    tr = (0, S.Z)(),
-    ti = "US" === tr.ipCountryCode && "CA" === tr.ipSubdivisionCode;
+      churnUserDiscountOffer: et,
+      isFetchingChurnDiscountOffer: en
+    } = (0, E.WR)(!ee || k !== B.R.WHAT_YOU_LOSE),
+    er = (0, S.Z)(),
+    ei = "US" === er.ipCountryCode && "CA" === er.ipSubdivisionCode;
   switch (k) {
     case B.R.PAUSE_SELECT:
       n = (0, r.jsx)(A.of, {
@@ -419,13 +419,13 @@ let $ = t => {
       break;
     case B.R.PAUSE_CONFIRM:
       if (null == K) {
-        let t = Error("No pause duration to set");
-        throw (0, I.q2)(t, {
+        let e = Error("No pause duration to set");
+        throw (0, I.q2)(e, {
           extra: {
             subscriptionId: o.id,
             status: o.status
           }
-        }), t
+        }), e
       }
       n = (0, r.jsx)(A.Sz, {
         premiumSubscription: o,
@@ -446,7 +446,7 @@ let $ = t => {
           className: W.whatYouLoseButtonContainer,
           children: [(0, r.jsx)(_.zxk, {
             variant: "primary",
-            text: ti ? H.intl.string(H.t.PfnxqK) : H.intl.string(H.t["3PatS0"]),
+            text: ei ? H.intl.string(H.t.PfnxqK) : H.intl.string(H.t["3PatS0"]),
             onClick: () => M(B.R.CONFIRM)
           }), (0, r.jsx)(m.zx, {
             look: m.zx.Looks.LINK,
@@ -458,8 +458,8 @@ let $ = t => {
         onClose: () => $(k),
         onDiscountClaim: () => M(B.R.CONFIRM_DISCOUNT),
         onContinue: () => M(B.R.CONFIRM),
-        isLoading: tt && tn,
-        churnUserDiscountOffer: te,
+        isLoading: ee && en,
+        churnUserDiscountOffer: et,
         analyticsLocations: R
       });
       break;
@@ -488,7 +488,7 @@ let $ = t => {
         premiumType: T,
         onClose: () => $(k),
         onConfirm: () => M(B.R.DISCOUNT_APPLIED),
-        userDiscountOffer: te
+        userDiscountOffer: et
       });
       break;
     case B.R.DISCOUNT_APPLIED:
@@ -497,7 +497,7 @@ let $ = t => {
         premiumType: T,
         onClose: () => $(k),
         confettiCanvas: b,
-        userDiscountOffer: te
+        userDiscountOffer: et
       });
       break;
     default:

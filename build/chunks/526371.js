@@ -20,9 +20,9 @@ var i = n(255367),
   x = n(603571),
   _ = n(388032),
   j = n(631587),
-  O = n(394637);
+  C = n(394637);
 
-function C() {
+function O() {
   let e = (0, r.useRef)(null),
     [t, n] = (0, r.useState)(!1),
     {
@@ -79,7 +79,7 @@ function C() {
         className: j.foreground,
         children: [(0, i.jsx)("img", {
           className: j.icon,
-          src: O,
+          src: C,
           alt: ""
         }), (0, i.jsxs)("div", {
           className: j.text,
@@ -108,5 +108,5 @@ function E() {
     } = h.C.getCurrentConfig({
       location: "Coachmark"
     });
-  return e || !t ? null : (0, i.jsx)(C, {})
+  return e || !t ? null : (0, i.jsx)(O, {})
 }

@@ -19,13 +19,13 @@ var r = n(120356),
 function h() {
   var e, t, n, r, a;
   let h = window.GLOBAL_ENV.RELEASE_CHANNEL,
-    f = "426329",
-    b = "24135786ea940c5935234df8d27d8f272b3b461c".substring(0, 7),
+    f = "426345",
+    b = "49eccc9909033d35eb95840b49fc5351cb57c77c".substring(0, 7),
     x = null === c.Z || void 0 === c.Z ? void 0 : c.Z.remoteApp.getVersion(),
     _ = null === c.Z || void 0 === c.Z || null == (e = (t = c.Z.remoteApp).getBuildNumber) ? void 0 : e.call(t),
     j = null === c.Z || void 0 === c.Z || null == (n = (r = c.Z.remoteApp).getAppArch) ? void 0 : n.call(r),
-    O = null == (a = d.C.getCurrentBuildOverride().overrides) ? void 0 : a.discord_web,
-    C = function() {
+    C = null == (a = d.C.getCurrentBuildOverride().overrides) ? void 0 : a.discord_web,
+    O = function() {
       var e;
       let t = null === l() || void 0 === l() || null == (e = l().os) ? void 0 : e.toString();
       if (null == t || null == c.Z) return null;
@@ -34,7 +34,7 @@ function h() {
       return t.includes("Windows 10") && void 0 !== s && s >= 22e3 && (t = t.replace("Windows 10", "Windows 11")), t.includes("OS X 10.15.7") && void 0 !== i && i >= 20 && (t = "macOS ".concat(i >= 25 ? i + 1 : i - 9)), "".concat(t, " (").concat(n, ")")
     }(),
     E = [h, f, "(".concat(b, ")")];
-  return null != x && (E.push("Host ".concat(x)), null != j && E.push(j.toLowerCase()), null != _ && E.push("(".concat(_, ")"))), E.push("Build Override: ".concat(null != O ? O.id : "N/A")), null != C && E.push(C), (0, i.jsx)(u.Z, {
+  return null != x && (E.push("Host ".concat(x)), null != j && E.push(j.toLowerCase()), null != _ && E.push("(".concat(_, ")"))), E.push("Build Override: ".concat(null != C ? C.id : "N/A")), null != O && E.push(O), (0, i.jsx)(u.Z, {
     copyValue: E.join(" "),
     text: p.intl.string(p.t["9Al4QU"]),
     "aria-label": !1,
@@ -72,14 +72,14 @@ function h() {
               className: g.versionHash,
               children: ["(", b, ")"]
             })]
-          }), " ", null != O && (0, i.jsx)(o.Text, {
+          }), " ", null != C && (0, i.jsx)(o.Text, {
             tag: "span",
             className: g.line,
             variant: "text-xs/normal",
             color: "text-muted",
             children: (0, i.jsxs)("span", {
               className: g.versionHash,
-              children: ["Build Override: ", O.id]
+              children: ["Build Override: ", C.id]
             })
           }), null != x ? (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsxs)(o.Text, {
@@ -94,12 +94,12 @@ function h() {
                 children: ["(", _, ")"]
               }) : null]
             }), " "]
-          }) : null, null != C ? (0, i.jsx)(o.Text, {
+          }) : null, null != O ? (0, i.jsx)(o.Text, {
             tag: "span",
             className: s()(g.line, g.os),
             variant: "text-xs/normal",
             color: "text-muted",
-            children: C
+            children: O
           }) : null]
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

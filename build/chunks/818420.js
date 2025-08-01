@@ -26,8 +26,8 @@ function x(e) {
     analyticsLocations: x
   } = (0, o.ZP)(), _ = null != n, {
     userNameplate: j,
-    guildNameplate: O,
-    pendingNameplate: C,
+    guildNameplate: C,
+    pendingNameplate: O,
     pendingErrors: E
   } = (0, p.Zx)(t, null == n ? void 0 : n.id), v = [s.z.NAMEPLATE_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE], [S, T] = (0, c.US)(v), N = S === s.z.NAMEPLATE_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE, I = r.useCallback(() => {
     T(h.L.TAKE_ACTION), (0, m.f)({
@@ -50,7 +50,7 @@ function x(e) {
         size: "sm",
         text: f.intl.string(f.t.BwdeMz),
         onClick: I
-      }), (void 0 === C ? (_ ? O : j) != null : null != C) && (0, i.jsx)(a.zxk, {
+      }), (void 0 === O ? (_ ? C : j) != null : null != O) && (0, i.jsx)(a.zxk, {
         variant: "secondary",
         size: "sm",
         text: f.intl.string(f.t["9zwziY"]),

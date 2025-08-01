@@ -20,8 +20,8 @@ var i = n(255367),
   x = n(206127),
   _ = n(710220),
   j = n(164662),
-  O = n(123274),
-  C = n(638631),
+  C = n(123274),
+  O = n(638631),
   E = n(645616),
   v = n(388032),
   S = n(5943);
@@ -50,12 +50,12 @@ let T = r.memo(r.forwardRef((e, t) => {
             containerVisibilityPercentage: D
           }), N && (0, i.jsx)("div", {
             className: S.offerPillContainer,
-            children: (0, i.jsx)(C.Z, {
+            children: (0, i.jsx)(O.Z, {
               enablePremiumBrandRefresh: !0
             })
           }), (0, i.jsx)("div", {
             className: S.marketingPageTextContainer,
-            children: (0, i.jsx)(O.Z, {
+            children: (0, i.jsx)(C.Z, {
               children: v.intl.string(v.t["EW+VIS"])
             })
           }), (0, i.jsxs)("div", {

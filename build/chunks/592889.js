@@ -20,8 +20,8 @@ var i = n(255367),
   x = n(210887),
   _ = n(301766),
   j = n(509545),
-  O = n(74538),
-  C = n(937615),
+  C = n(74538),
+  O = n(937615),
   E = n(474936),
   v = n(388032),
   S = n(169e3);
@@ -37,16 +37,16 @@ function T(e) {
     analyticsLocations: f
   } = (0, h.ZP)(g.Z.SUBSCRIPTION_CANCEL_DOWNGRADE_MODAL), E = j.Z.get(t.planId);
   o()(null != E, "Missing subscriptionPlan");
-  let T = (0, O.aS)(t.planId, !1, !1, {
+  let T = (0, C.aS)(t.planId, !1, !1, {
       paymentSourceId: t.paymentSourceId,
       currency: t.currency
     }),
-    N = (0, C.og)((0, C.T4)(T.amount, T.currency), E.interval, E.intervalCount);
+    N = (0, O.og)((0, O.T4)(T.amount, T.currency), E.interval, E.intervalCount);
   async function I() {
     await (0, p.dP)(t, t.planId, {
       amount: 0,
       currency: T.currency
-    }, (0, O.UX)(t.items, T.currency, t.paymentSourceId), f, a), s()
+    }, (0, C.UX)(t.items, T.currency, t.paymentSourceId), f, a), s()
   }
   return (0, i.jsxs)(m.Y0X, {
     transitionState: r,
@@ -64,11 +64,11 @@ function T(e) {
     }), (0, i.jsx)(m.hzk, {
       className: S.modalBody,
       children: (0, _.Q0)(t.planId) ? v.intl.format(v.t.GMp54O, {
-        downgradedPlan: O.ZP.getDisplayName(n.planId),
+        downgradedPlan: C.ZP.getDisplayName(n.planId),
         existingRate: N
       }) : v.intl.format(v.t["vx/NZ2"], {
-        existingPlan: O.ZP.getDisplayName(t.planId),
-        downgradedPlan: O.ZP.getDisplayName(n.planId),
+        existingPlan: C.ZP.getDisplayName(t.planId),
+        downgradedPlan: C.ZP.getDisplayName(n.planId),
         existingRate: N
       })
     }), (0, i.jsxs)(m.mzw, {
@@ -104,7 +104,7 @@ function N(e) {
     }), (0, i.jsx)("div", {
       className: S.text,
       children: v.intl.format(v.t.ar1cPj, {
-        planName: t.hasExternalPlanChange ? (0, O.zL)(n) : O.ZP.getDisplayName(n.planId),
+        planName: t.hasExternalPlanChange ? (0, C.zL)(n) : C.ZP.getDisplayName(n.planId),
         date: u
       })
     }), t.isPurchasedExternally ? null : (0, i.jsx)(m.eee, {

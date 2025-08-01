@@ -20,8 +20,8 @@ var i = n(255367),
   x = n(163684),
   _ = n(178100),
   j = n(518638),
-  O = n(725727),
-  C = n(454982),
+  C = n(725727),
+  O = n(454982),
   E = n(767714),
   v = n(504983),
   S = n(703656),
@@ -46,7 +46,7 @@ function w(e) {
     [p, g] = r.useState(!1),
     h = () => m(e => !e),
     x = (0, f.ZP)(),
-    O = (0, j.Pz)(n.id, x),
+    C = (0, j.Pz)(n.id, x),
     E = null != s,
     v = (0, _.Z)(n, E);
   E && c ? t = D.intl.format(D.t.pkxVx8, {
@@ -79,7 +79,7 @@ function w(e) {
             className: Z.promotionIcon,
             children: (0, i.jsx)("img", {
               alt: "",
-              src: O,
+              src: C,
               className: Z.promotionIconImage
             })
           }), (0, i.jsxs)("div", {
@@ -112,7 +112,7 @@ function w(e) {
     }), p && (0, i.jsx)(u.u_l, {
       renderModal: e => {
         var t, r;
-        return (0, i.jsx)(C.Z, (t = function(e) {
+        return (0, i.jsx)(O.Z, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               i = Object.keys(n);
@@ -169,9 +169,9 @@ let k = function() {
     promotionsLoaded: b,
     activeOutboundPromotions: _,
     claimedEndedOutboundPromotions: j,
-    claimedOutboundPromotionCodeMap: C,
+    claimedOutboundPromotionCodeMap: O,
     addClaimedOutboundPromotionCode: k
-  } = (0, O.lG)(), L = _.length + j.length > 0, B = x.g.useExperiment({
+  } = (0, C.lG)(), L = _.length + j.length > 0, B = x.g.useExperiment({
     location: "EntitlementGifts"
   }, {
     autoTrackExposure: !1,
@@ -241,7 +241,7 @@ let k = function() {
               }, n.id)
             }), _.map(e => (0, i.jsx)(w, {
               outboundPromotion: e,
-              code: C[e.id],
+              code: O[e.id],
               addClaimedOutboundPromotionCode: k,
               disabled: !s
             }, e.id)), null != t ? (0, i.jsx)(A.Z, {

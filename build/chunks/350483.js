@@ -36,22 +36,22 @@ let x = s().throttle(function(e, t) {
       ensureChatIsVisible: _ = () => !1,
       withVoiceChannels: j = !1
     } = t,
-    O = null != (r = o.Z.getState().guildId) ? r : h.ME,
-    C = o.Z.getState().channelId,
+    C = null != (r = o.Z.getState().guildId) ? r : h.ME,
+    O = o.Z.getState().channelId,
     E = function(e, t) {
       let n = [h.ME, ...u.ZP.getFlattenedGuildIds()],
         i = n.indexOf(e);
       return t > 0 ? n.slice(i).concat(n.slice(0, i), e) : (n.splice(i, 0, e), n.slice(i + 1).concat(n.slice(0, i + 1)))
-    }(O, e),
+    }(C, e),
     v = e > 0 ? 0 : E.length - 1,
-    S = b(O, j),
-    T = S.indexOf(C) + e;
-  for (; null != O && "" !== O;) {
-    if (l = S[T], f(O))
+    S = b(C, j),
+    T = S.indexOf(O) + e;
+  for (; null != C && "" !== C;) {
+    if (l = S[T], f(C))
       for (; null != l && "" !== l;) {
         if ("string" == typeof l) {
-          if (m(O, l)) return (0, g.K)(O, l, !1, _(O, l))
-        } else if ("object" == typeof l && x(l.resourceId, l.type)) return O !== d.Z.getGuildId() && (0, g.K)(O, null == (s = c.ZP.getDefaultChannel(O)) ? void 0 : s.id), (0, a.ZDy)(async () => {
+          if (m(C, l)) return (0, g.K)(C, l, !1, _(C, l))
+        } else if ("object" == typeof l && x(l.resourceId, l.type)) return C !== d.Z.getGuildId() && (0, g.K)(C, null == (s = c.ZP.getDefaultChannel(C)) ? void 0 : s.id), (0, a.ZDy)(async () => {
           let {
             default: e
           } = await Promise.all([n.e("42743"), n.e("22347"), n.e("56236"), n.e("7549")]).then(n.bind(n, 17671));
@@ -84,13 +84,13 @@ let x = s().throttle(function(e, t) {
             }
             return e
           }({}, t), {
-            guildId: O
+            guildId: C
           }))
         });
         T += e, l = S[T]
       }
-    if (v += e, null == (O = E[v]) || "" === O) break;
-    S = b(O, j), T = e < 0 ? S.length - 1 : 0
+    if (v += e, null == (C = E[v]) || "" === C) break;
+    S = b(C, j), T = e < 0 ? S.length - 1 : 0
   }
   p.S.dispatch(h.CkL.SHAKE_APP, {
     duration: 200,

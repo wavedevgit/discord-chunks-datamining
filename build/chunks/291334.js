@@ -25,14 +25,14 @@ function _(e) {
     showOverlay: n,
     children: _
   } = e, j = (0, l.ZP)(), {
-    analyticsLocations: O
+    analyticsLocations: C
   } = (0, c.ZP)(o.Z.PREMIUM_UPSELL_OVERLAY);
   return (r.useEffect(() => {
     n && u.default.track(p.rMx.PREMIUM_UPSELL_VIEWED, {
-      location_stack: O,
+      location_stack: C,
       type: g.cd.PREMIUM_GUILD_MEMBER_PROFILE_UPSELL_INLINE
     })
-  }, [n, O]), n) ? (0, i.jsxs)("div", {
+  }, [n, C]), n) ? (0, i.jsxs)("div", {
     className: f.upsellOverlayContainer,
     children: [(0, i.jsx)("div", {
       children: _

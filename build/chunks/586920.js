@@ -1,5 +1,5 @@
 /** Chunk was on 86181 **/
-n.d(e, {
+n.d(t, {
   i: () => h
 }), n(388685);
 var r = n(255367),
@@ -18,8 +18,8 @@ var r = n(255367),
   C = n(234286);
 let h = () => {
   let {
-    transitionState: t,
-    onClose: e,
+    transitionState: e,
+    onClose: t,
     premiumType: n,
     premiumSubscription: h,
     confettiCanvas: x,
@@ -31,7 +31,7 @@ let h = () => {
   let v = n === m.p9.TIER_2,
     T = [{
       text: _.intl.string(_.t["/r8g/v"]),
-      onClick: () => e(),
+      onClick: () => t(),
       variant: "primary",
       fullWidth: !0
     }];
@@ -39,13 +39,14 @@ let h = () => {
     ref: b,
     children: [(0, r.jsx)(a.I, {
       graphic: {
+        type: "image",
         src: v ? C : f
       },
       gradientColor: v ? "nitro-pink" : "nitro-green",
-      transitionState: t,
+      transitionState: e,
       title: _.intl.string(_.t.PZSyRk),
       actions: T,
-      onClose: async () => e(),
+      onClose: async () => t(),
       children: (0, r.jsx)("div", {
         className: p.offerDetailContainer,
         children: (0, r.jsx)(u.o, {

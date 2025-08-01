@@ -129,6 +129,7 @@ function P(e) {
     transitionState: n,
     onClose: P,
     graphic: {
+      type: "image",
       src: N
     },
     title: S.intl.string(S.t["5CyJBQ"]),

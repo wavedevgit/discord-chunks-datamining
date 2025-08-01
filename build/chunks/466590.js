@@ -40,8 +40,8 @@ function h(e) {
         position: "bottom",
         align: "center"
       },
-      size: O = "md",
-      onStepChange: C,
+      size: C = "md",
+      onStepChange: O,
       onRequestClose: E,
       popoverRef: v,
       shouldShow: S
@@ -65,8 +65,8 @@ function h(e) {
   r.useEffect(() => {
     S && I(0)
   }, [S]), r.useEffect(() => {
-    null == C || C(N)
-  }, [N, C]);
+    null == O || O(N)
+  }, [N, O]);
   let y = _[N],
     A = N + 1 === _.length,
     P = r.useCallback(() => {
@@ -96,7 +96,7 @@ function h(e) {
         colorMix: null != y.gradientColor
       }), null != y.asset ? (0, i.jsx)(o.V, {
         asset: y.asset,
-        size: O
+        size: C
       }) : null, (0, i.jsx)(u.Y, {
         title: y.title,
         body: y.body,

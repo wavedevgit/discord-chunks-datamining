@@ -20,8 +20,8 @@ var i = n(255367),
   x = n(283595),
   _ = n(626135),
   j = n(251625),
-  O = n(358085),
-  C = n(210887),
+  C = n(358085),
+  O = n(210887),
   E = n(981631),
   v = n(388032),
   S = n(443474),
@@ -61,10 +61,10 @@ function P(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let R = l.ZP.connectStores([C.Z], () => ({
-    theme: C.Z.theme
+let R = l.ZP.connectStores([O.Z], () => ({
+    theme: O.Z.theme
   }))(d.ubH),
-  D = (0, O.isWindows)();
+  D = (0, C.isWindows)();
 
 function Z(e) {
   let {
@@ -118,7 +118,7 @@ function w(e) {
     rawGame: n,
     nowPlaying: s = !1,
     isOverride: c
-  } = e, h = (0, l.cj)([g.ZP, b.Z, x.Z], () => (0, g.FZ)(n, g.ZP, b.Z, x.Z)), [j, O] = r.useState(!1), [C, T] = r.useState(null != (t = h.name) ? t : "???"), y = a()(N.flexCenter, {
+  } = e, h = (0, l.cj)([g.ZP, b.Z, x.Z], () => (0, g.FZ)(n, g.ZP, b.Z, x.Z)), [j, C] = r.useState(!1), [O, T] = r.useState(null != (t = h.name) ? t : "???"), y = a()(N.flexCenter, {
     [S.game]: !s,
     [S.activeGame]: s,
     [I.card]: !s,
@@ -137,7 +137,7 @@ function w(e) {
       game_name: h.name
     }), (0, d.showToast)((0, d.createToast)(v.intl.formatToPlainString(v.t["6klMOj"], {
       gameName: h.name
-    }), d.ToastType.SUCCESS)), O(!0)
+    }), d.ToastType.SUCCESS)), C(!0)
   }
   return (0, i.jsxs)("div", {
     className: y,
@@ -167,9 +167,9 @@ function w(e) {
         className: a()(S.gameName, S.gameNameInput),
         type: "text",
         maxLength: 128,
-        value: C,
+        value: O,
         onBlur: function() {
-          h.name !== C && u.Z.editName(h, C)
+          h.name !== O && u.Z.editName(h, O)
         },
         onKeyDown: function(e) {
           13 === e.keyCode && (e.currentTarget.blur(), e.preventDefault())

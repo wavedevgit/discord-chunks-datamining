@@ -18,8 +18,8 @@ var l = n(442837),
   x = n(347994),
   _ = n(591526),
   j = n(261875),
-  O = n(710845),
-  C = n(38618),
+  C = n(710845),
+  O = n(38618),
   E = n(218543),
   v = n(314897),
   S = n(944486),
@@ -29,7 +29,7 @@ var l = n(442837),
   y = n(38217),
   A = n(864631),
   P = n(981631);
-let R = new O.Z("CacheStore"),
+let R = new C.Z("CacheStore"),
   D = !1,
   Z = !1,
   w = "initializing",
@@ -66,7 +66,7 @@ async function V(e, t, n) {
 async function G(e, t, n) {
   var i, r, s;
   R.verbose("loading early cache");
-  let o = C.Z.getSocket();
+  let o = O.Z.getSocket();
   o.connect();
   let d = null != (i = T.Z.getGuildId()) ? i : null,
     u = null != (r = S.Z.getChannelId()) ? r : null,
@@ -75,12 +75,12 @@ async function G(e, t, n) {
     g = E.Z.fetchGuildCache.measureAsync(() => H(e, n)),
     h = E.Z.fetchGuildCache.measureAsync(() => W(e, n)),
     j = null != e ? a.Z.timeAsync("\uD83D\uDCBE", "cache: private_channels", () => _.Z.getAsync(e, null)) : Promise.resolve([]),
-    O = null == e ? Promise.resolve({}) : a.Z.timeAsync("\uD83D\uDCBE", "cache: user_settings", () => x.Z.getAll(e)),
+    C = null == e ? Promise.resolve({}) : a.Z.timeAsync("\uD83D\uDCBE", "cache: user_settings", () => x.Z.getAll(e)),
     v = null == e ? Promise.resolve([]) : a.Z.timeAsync("\uD83D\uDCBE", "cache: read_states", () => f.Z.getAll(e)),
     N = null == e ? Promise.resolve([]) : a.Z.timeAsync("\uD83D\uDCBE", "cache: user_guild_settings", () => b.Z.getAll(e)),
     [
       [I, y], P, D, Z, w, k, L
-    ] = await Promise.all([p, g, h, j, O, v, N]),
+    ] = await Promise.all([p, g, h, j, C, v, N]),
     B = performance.now() - m;
   if (R.verbose("cache loaded in ".concat(B, "ms (channel_history ").concat(I, "ms)")), null == y) return (0, A.Z)("database:history_cache_null"), R.verbose("finished without dispatching CACHE_LOADED"), [!1, null, 0];
   {
@@ -155,7 +155,7 @@ async function z(e, t, n, i) {
     return t = l.stale, R.verbose("loading stale guild channels (count: ".concat(t.length, ", ids: ").concat(t.join(", "), ")")), Promise.all(t.map(t => _.Z.getAsync(e, t).then(e => [t, e])))
   }) : Promise.resolve([]));
   await new Promise(e => setTimeout(e, 0)), E.Z.loadLazyCache.recordStart();
-  let g = C.Z.getSocket();
+  let g = O.Z.getSocket();
   Y(() => {
     let a = performance.now();
     if (!1 === r) {
@@ -233,7 +233,7 @@ async function z(e, t, n, i) {
 }
 
 function Y(e) {
-  let t = C.Z.getSocket(),
+  let t = O.Z.getSocket(),
     n = !1;
   l.ZP.Emitter.batched(() => {
     try {
@@ -257,7 +257,7 @@ function Y(e) {
 }
 class K extends(i = l.ZP.Store) {
   initialize() {
-    D || C.Z.getSocket().dispatcher.unpauseDispatchQueue()
+    D || O.Z.getSocket().dispatcher.unpauseDispatchQueue()
   }
   hasCache() {
     return !D || L
@@ -276,7 +276,7 @@ class K extends(i = l.ZP.Store) {
     if ("initializing" !== w) {
       (0, A.Z)("cache:lazy_cache_not_initializing"), n(), setTimeout(() => {
         var e, t;
-        return null == (t = C.Z.getSocket()) || null == (e = t.dispatcher) ? void 0 : e.unpauseDispatchQueue()
+        return null == (t = O.Z.getSocket()) || null == (e = t.dispatcher) ? void 0 : e.unpauseDispatchQueue()
       }, 0);
       return
     }

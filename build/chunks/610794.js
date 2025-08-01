@@ -20,15 +20,15 @@ var i = n(255367),
   x = n(981631),
   _ = n(856651),
   j = n(388032),
-  O = n(6318);
+  C = n(6318);
 
-function C(e) {
+function O(e) {
   var t;
   let {
     account: n,
     refreshed: a,
     handleRefresh: c
-  } = e, [d, u] = r.useState(!1), p = null != (t = n.metadata) ? t : {}, f = (0, s.e7)([h.default], () => h.default.locale), C = r.useCallback(async () => {
+  } = e, [d, u] = r.useState(!1), p = null != (t = n.metadata) ? t : {}, f = (0, s.e7)([h.default], () => h.default.locale), O = r.useCallback(async () => {
     u(!0);
     try {
       await c(n)
@@ -38,22 +38,22 @@ function C(e) {
   }, [n, c]), E = null;
   switch (n.type) {
     case x.ABu.REDDIT:
-      E = (0, g.oP)(p, O.metadataItem);
+      E = (0, g.oP)(p, C.metadataItem);
       break;
     case x.ABu.STEAM:
-      E = (0, g.Dq)(p, O.metadataItem);
+      E = (0, g.Dq)(p, C.metadataItem);
       break;
     case x.ABu.TWITTER:
-      E = (0, g.rJ)(p, O.metadataItem);
+      E = (0, g.rJ)(p, C.metadataItem);
       break;
     case x.ABu.EBAY:
-      E = (0, g.ul)(p, O.metadataItem);
+      E = (0, g.ul)(p, C.metadataItem);
       break;
     case x.ABu.PAYPAL:
-      E = (0, g.li)(p, O.metadataItem);
+      E = (0, g.li)(p, C.metadataItem);
       break;
     case x.ABu.TIKTOK:
-      E = (0, g.hf)(p, O.metadataItem)
+      E = (0, g.hf)(p, C.metadataItem)
   }
   let v = (0, m.FI)(p[_.PC.CREATED_AT], f),
     S = null,
@@ -65,13 +65,13 @@ function C(e) {
       helpdeskUrl: b.Z.getArticleURL(x.BhN.CONNECTION_DETAILS)
     })
   }, "label"), T = j.intl.string(j.t["LVh3//"])), a && (T = j.intl.string(j.t.i4jeWV)), (0, i.jsxs)("div", {
-    className: O.metadataContainer,
+    className: C.metadataContainer,
     children: [S, null == E ? void 0 : E.map((e, t) => (0, i.jsxs)(i.Fragment, {
       children: [e, t < E.length - 1 ? (0, i.jsx)("span", {
-        className: O.dot
+        className: C.dot
       }) : null]
     })), null != E && E.length > 0 && null != v ? (0, i.jsx)("div", {
-      className: O.dot
+      className: C.dot
     }) : null, null != v ? (0, i.jsx)(o.Text, {
       variant: "text-xs/normal",
       color: "header-secondary",
@@ -79,14 +79,14 @@ function C(e) {
         date: v
       })
     }, "member-since") : null, (0, i.jsx)(l.zx, {
-      className: O.metadataRefreshButton,
+      className: C.metadataRefreshButton,
       look: l.zx.Looks.OUTLINED,
       color: a ? l.zx.Colors.GREEN : l.zx.Colors.PRIMARY,
       size: l.zx.Sizes.MIN,
       submitting: d,
       disabled: a,
       "aria-label": j.intl.string(j.t.sCkLYG),
-      onClick: a ? void 0 : C,
+      onClick: a ? void 0 : O,
       children: T
     }, "refresh-button")]
   })
@@ -105,15 +105,15 @@ function E(e) {
     x = !0 === b.hasMetadata;
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)("div", {
-      className: O.activityRow,
+      className: C.activityRow,
       children: [(0, i.jsx)("img", {
         alt: b.name,
-        className: O.connectionIcon,
+        className: C.connectionIcon,
         src: (0, a.wj)(f) ? b.icon.darkSVG : b.icon.lightSVG
       }), (0, i.jsxs)("div", {
-        className: O.activitySettings,
+        className: C.activitySettings,
         children: [(0, i.jsxs)(o.j7V, {
-          className: O.visibilitySwitch,
+          className: C.visibilitySwitch,
           hideBorder: !0,
           value: 1 === l,
           onChange: function(e) {
@@ -133,13 +133,13 @@ function E(e) {
             variant: "text-md/semibold",
             color: "header-primary",
             children: b.name
-          }), x && (0, i.jsx)(C, {
+          }), x && (0, i.jsx)(O, {
             account: t,
             refreshed: s.includes(t.id),
             handleRefresh: n
           })]
         }), x && (0, i.jsx)(o.j7V, {
-          className: O.additionalDetailsSwitch,
+          className: C.additionalDetailsSwitch,
           hideBorder: !0,
           disabled: 1 !== l || null == t.metadata,
           value: 1 === g,
@@ -164,7 +164,7 @@ function E(e) {
         })]
       })]
     }), (0, i.jsx)("div", {
-      className: O.divider
+      className: C.divider
     })]
   })
 }
@@ -177,10 +177,10 @@ function v() {
       a(t => [...t, e.id])
     }), []);
   return 0 === t.length ? null : (0, i.jsxs)(o.hjN, {
-    className: O.container,
+    className: C.container,
     children: [(0, i.jsx)(o.vwX, {
       tag: o.RB0.H5,
-      className: O.title,
+      className: C.title,
       children: j.intl.string(j.t.aw0GVV)
     }), t.map(e => (0, i.jsx)(E, {
       account: e,

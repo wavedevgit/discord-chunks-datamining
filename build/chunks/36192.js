@@ -20,8 +20,8 @@ var i = n(255367),
   x = n(594174),
   _ = n(460562),
   j = n(823379),
-  O = n(981631),
-  C = n(921944),
+  C = n(981631),
+  O = n(921944),
   E = n(388032),
   v = n(232696);
 
@@ -35,7 +35,7 @@ function S() {
     [u, p] = r.useState(!1);
   r.useEffect(() => {
     (0, f.Q3)(c.z.AUTH_SESSIONS_NEW, {
-      dismissAction: C.L.AUTO
+      dismissAction: O.L.AUTO
     }), (0, g.fw)();
     let e = setTimeout(() => p(!0), 500);
     return () => {
@@ -44,7 +44,7 @@ function S() {
   }, []);
   let _ = () => {
       o.tn.post({
-        url: O.ANM.AUTH_SESSION_NOTIFICATIONS_DEBUG,
+        url: C.ANM.AUTH_SESSION_NOTIFICATIONS_DEBUG,
         rejectWithError: !0
       })
     },
@@ -167,7 +167,7 @@ function T(e) {
           text: e, icon: d.pzj
         }
     }
-  }(null == (s = o.client_info) ? void 0 : s.os), O = c ? null : (0, h.p)(o.approx_last_used_time), C = [x, b].filter(j.lm), S = [f, O].filter(j.lm);
+  }(null == (s = o.client_info) ? void 0 : s.os), C = c ? null : (0, h.p)(o.approx_last_used_time), O = [x, b].filter(j.lm), S = [f, C].filter(j.lm);
   return (0, i.jsxs)("div", {
     className: a()(v.session, c ? v.currentSession : null),
     children: [(0, i.jsx)("div", {
@@ -182,12 +182,12 @@ function T(e) {
         variant: "eyebrow",
         className: v.sessionInfoRow,
         children: [(0, i.jsx)("span", {
-          children: C[0]
-        }), C.length > 1 && (0, i.jsxs)(i.Fragment, {
+          children: O[0]
+        }), O.length > 1 && (0, i.jsxs)(i.Fragment, {
           children: [(0, i.jsx)("span", {
             children: "\xb7"
           }), (0, i.jsx)("span", {
-            children: C[1]
+            children: O[1]
           })]
         })]
       }), (0, i.jsxs)(d.Text, {
@@ -249,7 +249,7 @@ function N() {
         color: "text-muted",
         children: (0, i.jsx)("span", {
           children: E.intl.format(E.t["044+8v"], {
-            onClick: () => u.Z.setSection(O.oAB.ACCOUNT, null, {
+            onClick: () => u.Z.setSection(C.oAB.ACCOUNT, null, {
               analyticsLocations: [p.Z.USER_SETTINGS_SESSIONS]
             })
           })

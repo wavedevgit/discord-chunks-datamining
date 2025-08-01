@@ -20,8 +20,8 @@ var i = n(255367),
   x = n(313201),
   _ = n(674180),
   j = n(565138),
-  O = n(374649),
-  C = n(908951),
+  C = n(374649),
+  O = n(908951),
   E = n(703656),
   v = n(853872),
   S = n(245950),
@@ -103,13 +103,13 @@ let L = e => {
       subscription: t
     } = e, {
       analyticsLocations: n
-    } = (0, h.ZP)(), [r] = (0, O.ED)({
+    } = (0, h.ZP)(), [r] = (0, C.ED)({
       subscriptionId: t.id,
       renewal: !0,
       analyticsLocations: n,
       analyticsLocation: g.Z.GUILD_ROLE_SUBSCRIPTION_PAYMENT_SOURCE_WITH_INVOICE
     }), s = (0, o.e7)([v.Z], () => v.Z.hasFetchedPaymentSources);
-    return null != r && s ? (0, i.jsx)(C.Z, {
+    return null != r && s ? (0, i.jsx)(O.Z, {
       subscription: t,
       currentInvoicePreview: r,
       dropdownClassName: Z.paymentSourceDropdown
@@ -156,13 +156,13 @@ let L = e => {
       guild: o,
       expanded: g,
       handleToggleExpanded: b,
-      subscriptionInfo: O
-    } = (0, S.Z)(t), [C, v] = r.useState(!1), U = (0, x.Dt)(), {
+      subscriptionInfo: C
+    } = (0, S.Z)(t), [O, v] = r.useState(!1), U = (0, x.Dt)(), {
       analyticsLocations: V
     } = (0, h.ZP)(), {
       shouldHideGuildPurchaseEntryPoints: G
     } = (0, _.uP)(null == o ? void 0 : o.id), F = (null == t ? void 0 : t.paymentGateway) === A.gg$.APPLE_PARTNER;
-    if (null == s || null == n || null == O) return null;
+    if (null == s || null == n || null == C) return null;
     let H = async () => {
       try {
         v(!0), await d.pl(t, V), (0, y.h)()
@@ -177,7 +177,7 @@ let L = e => {
       nextRenewalDate: q,
       nextRenewalLabel: X,
       isTrial: J
-    } = O, Q = n.soft_deleted || null == o || F, $ = () => W ? (0, i.jsx)(c.IGR, {
+    } = C, Q = n.soft_deleted || null == o || F, $ = () => W ? (0, i.jsx)(c.IGR, {
       text: D.intl.string(D.t["7uFZGh"])
     }) : J ? (0, i.jsx)(c.IGR, {
       text: D.intl.string(D.t["6antoq"]),
@@ -280,7 +280,7 @@ let L = e => {
         }), !Q && (0, i.jsx)(M, {
           isTrial: J,
           isCancelled: W,
-          isResubscribing: C,
+          isResubscribing: O,
           shouldHideRoleSubscriptionEntryPoints: G,
           onCancelSubscriptionClick: () => {
             null != o && (0, I.h)({

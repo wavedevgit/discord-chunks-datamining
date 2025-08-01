@@ -21,8 +21,8 @@ var i = n(255367),
   x = n(266454),
   _ = n(104494),
   j = n(639119),
-  O = n(767714),
-  C = n(165583),
+  C = n(767714),
+  O = n(165583),
   E = n(504983),
   v = n(984802),
   S = n(626135),
@@ -65,7 +65,7 @@ let R = () => {
                 variant: "secondary",
                 text: A.intl.string(A.t["E+COuL"]),
                 onClick: () => R()
-              }), (0, i.jsx)(O.Z, {
+              }), (0, i.jsx)(C.Z, {
                 showGradient: !1,
                 subscriptionTier: y.Si.TIER_2,
                 textOptions: {
@@ -84,7 +84,7 @@ let R = () => {
               children: A.intl.string(A.t["E+COuL"])
             }), (0, i.jsx)("div", {
               className: P.premiumTier2Divider
-            }), (0, i.jsx)(C.ZP, {
+            }), (0, i.jsx)(O.ZP, {
               type: y.cd.PREMIUM_CLIENT_THEME_SETTINGS_UPSELL,
               subscriptionTier: y.Si.TIER_2
             })]

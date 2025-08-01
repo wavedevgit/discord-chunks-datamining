@@ -23,7 +23,7 @@ var i = n(255367),
   _ = n(388032),
   j = n(569834);
 
-function O(e) {
+function C(e) {
   let {
     listType: t,
     numberOfUsers: n
@@ -52,7 +52,7 @@ function O(e) {
   })
 }
 
-function C(e) {
+function O(e) {
   var t;
   let {
     userId: n,
@@ -104,12 +104,12 @@ function E(e) {
     setting: t,
     children: (0, i.jsxs)("div", {
       className: j.card,
-      children: [(0, i.jsx)(O, {
+      children: [(0, i.jsx)(C, {
         listType: s,
         numberOfUsers: n.length
       }), (0, i.jsx)("div", {
         className: j.usersList,
-        children: n.slice(0, a).map((e, t) => (0, i.jsx)(C, {
+        children: n.slice(0, a).map((e, t) => (0, i.jsx)(O, {
           userId: e,
           last: t === n.length - 1
         }, e))

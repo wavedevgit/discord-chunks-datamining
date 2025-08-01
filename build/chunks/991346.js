@@ -24,8 +24,8 @@ var i = n(73800),
   x = n(725727),
   _ = n(977156),
   j = n(921157),
-  O = n(667172),
-  C = n(237292),
+  C = n(667172),
+  O = n(237292),
   E = n(314897),
   v = n(906467),
   S = n(283595),
@@ -98,10 +98,10 @@ function V() {
       location: "settings"
     }),
     H = null != (n = null == (e = y.default.getCurrentUser()) ? void 0 : e.isStaff()) && n,
-    W = (0, C.y0)({
+    W = (0, O.y0)({
       location: "settings"
     }),
-    z = (0, O.v4)({
+    z = (0, C.v4)({
       location: "settings"
     }),
     Y = (0, l.Q)(),

@@ -26,13 +26,13 @@ function _(e) {
     children: _
   } = e, {
     analyticsLocations: j
-  } = (0, m.ZP)(), O = (0, r.useCallback)(() => {
+  } = (0, m.ZP)(), C = (0, r.useCallback)(() => {
     t(h.L.TAKE_ACTION), u.Z.open(g.oAB.PROFILE_CUSTOMIZATION, null, {
       analyticsLocations: j
     }), (0, p.I)({
       analyticsLocations: j
     })
-  }, [t, j]), C = (0, r.useCallback)(() => {
+  }, [t, j]), O = (0, r.useCallback)(() => {
     t(h.L.USER_DISMISS)
   }, [t]);
   return (0, i.jsxs)(i.Fragment, {
@@ -42,7 +42,7 @@ function _(e) {
       align: "right",
       position: "top",
       children: [(0, i.jsx)(c.u, {
-        onClick: C
+        onClick: O
       }), (0, i.jsx)(d.Y, {
         title: b.intl.string(f.default["1AE46+"])
       }), (0, i.jsxs)(s.xv, {
@@ -54,7 +54,7 @@ function _(e) {
         actions: [{
           text: b.intl.string(b.t.uw9zIy),
           variant: "primary",
-          onClick: O
+          onClick: C
         }]
       }), (0, i.jsx)(o.$, {
         caretConfig: {

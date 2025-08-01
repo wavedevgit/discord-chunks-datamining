@@ -1,5 +1,5 @@
 /** Chunk was on 86181 **/
-n.d(e, {
+n.d(t, {
   U: () => I
 }), n(388685);
 var r = n(255367),
@@ -23,8 +23,8 @@ var r = n(255367),
   g = n(234286);
 let I = () => {
   let {
-    transitionState: t,
-    onClose: e,
+    transitionState: e,
+    onClose: t,
     premiumType: n,
     setStep: I,
     premiumSubscription: j,
@@ -43,7 +43,7 @@ let I = () => {
         },
         rejectWithError: !0
       }), I(p.R.DISCOUNT_APPLIED)
-    } catch (t) {
+    } catch (e) {
       O(!0), T(!1)
     }
   };
@@ -51,7 +51,7 @@ let I = () => {
   let w = n === C.p9.TIER_2,
     A = [{
       text: x.intl.string(x.t.zl7LZm),
-      onClick: () => e(),
+      onClick: () => t(),
       variant: "secondary",
       disabled: v
     }, {
@@ -64,15 +64,16 @@ let I = () => {
     }];
   return (0, r.jsxs)(s.I, {
     graphic: {
+      type: "image",
       src: w ? g : b
     },
     gradientColor: w ? "nitro-pink" : "nitro-green",
-    transitionState: t,
+    transitionState: e,
     title: "".concat(x.intl.format(x.t.q9Vxu7, {
       percent: P.discount.amount
     })),
     actions: A,
-    onClose: async () => e(),
+    onClose: async () => t(),
     children: [(0, r.jsx)("div", {
       className: y.offerDetailContainer,
       children: (0, r.jsx)(_.o, {
