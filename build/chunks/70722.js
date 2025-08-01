@@ -3,16 +3,17 @@
 n.d(t, {
   C7: () => o,
   Ec: () => a,
-  I9: () => c,
-  ZM: () => f,
-  c5: () => _,
+  T6: () => c,
+  ZM: () => p,
+  c5: () => f,
   jR: () => l,
   kr: () => i,
-  lo: () => p,
-  sN: () => u,
-  tB: () => h,
+  lo: () => h,
+  sA: () => u,
+  sN: () => d,
+  tB: () => m,
   yG: () => s,
-  zj: () => d
+  zj: () => _
 });
 var r = n(214627),
   i = function(e) {
@@ -23,11 +24,12 @@ let a = ">=19.0.0",
   s = ">=22.0.0",
   l = ">=24.0.0",
   c = ">=10.0.17763",
-  u = ">=10.0.26100",
-  d = 26100,
-  _ = ">=10.0.22000",
-  f = 22e3;
-var p = function(e) {
+  u = "<10.0.22000",
+  d = ">=10.0.26100",
+  _ = 26100,
+  f = ">=10.0.22000",
+  p = 22e3;
+var h = function(e) {
   return e.GUILD = "guild", e.CALL = "call", e
 }({});
-let h = r.T.StreamNotificationsGuildMaxSize
+let m = r.T.StreamNotificationsGuildMaxSize

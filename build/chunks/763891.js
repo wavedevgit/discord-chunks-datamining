@@ -46,7 +46,7 @@ function I(e) {
     null == k || null == (e = k.current) || e.scrollToTop({
       animate: !0
     })
-  }, W = (0, c.Fg)(), V = (0, o.ap)(W), [U, z, G] = l.useMemo(() => {
+  }, W = (0, c.Fg)(), V = (0, o.ap)(W), [U, G, z] = l.useMemo(() => {
     switch (N) {
       case O.AW.AVATAR_DECORATIONS:
         return [v.intl.string(v.t.dRZYND), V ? x.Z : y.Z, i.Z.AVATAR_DECORATION];
@@ -59,8 +59,8 @@ function I(e) {
     }
   }, [N, V]), q = (0, f.a)(), K = l.useMemo(() => q(D.filter(e => {
     var t;
-    return e.type === G || e.type === i.Z.VARIANTS_GROUP && (null == (t = e.variants) ? void 0 : t.some(e => e.type === G)) === !0
-  })), [D, G, q]), Y = (0, g.l)(K);
+    return e.type === z || e.type === i.Z.VARIANTS_GROUP && (null == (t = e.variants) ? void 0 : t.some(e => e.type === z)) === !0
+  })), [D, z, q]), Y = (0, g.l)(K);
   return (l.useEffect(() => {
     (0, h.n)({
       sessionId: A,
@@ -82,7 +82,7 @@ function I(e) {
   }, [A, I, R, B, r, N]), r || null == Z) ? (0, n.jsx)(b.Z, {}) : (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsx)("div", {
       style: {
-        backgroundImage: "url(".concat(z, ")")
+        backgroundImage: "url(".concat(G, ")")
       },
       className: C.bannerContainer,
       children: (0, n.jsx)(s.X6q, {

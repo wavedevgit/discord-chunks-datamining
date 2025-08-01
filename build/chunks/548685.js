@@ -45,15 +45,15 @@ let j = e => {
   } = (0, _.N)(j, k), D = (0, E.St)(A), F = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), M = (0, o.e7)([p.Z], () => p.Z.isFocused()), H = !F && M, {
     animationPhase: W,
     startAnimation: V
-  } = (0, C.y)(), U = (0, b.sp)(), z = null != (t = null == U ? void 0 : U.sessionId) ? t : "", G = l.useRef(null), q = l.useCallback(e => {
+  } = (0, C.y)(), U = (0, b.sp)(), G = null != (t = null == U ? void 0 : U.sessionId) ? t : "", z = l.useRef(null), q = l.useCallback(e => {
     V({
       isShuffling: !1,
       onOutroComplete: () => w(e)
     }), f.default.track(S.rMx.COLLECTIBLES_SHOP_FEED_SORT_CHANGED, {
-      page_session_id: z,
+      page_session_id: G,
       sort_type: e
     })
-  }, [V, w, z]);
+  }, [V, w, G]);
   return null == I ? null : (0, n.jsxs)("div", {
     className: a()(x.popularPicksSection, x.centeredSection),
     children: [(0, n.jsxs)("div", {
@@ -118,14 +118,14 @@ let j = e => {
         }), (0, n.jsx)(s.zxk, {
           variant: "secondary",
           text: y.intl.string(y.t.X3tnc3),
-          buttonRef: G,
+          buttonRef: z,
           onClick: () => {
             V({
               isShuffling: !0,
               onOutroComplete: R,
-              returnRef: G
+              returnRef: z
             }), f.default.track(S.rMx.COLLECTIBLES_SHOP_FEED_SHUFFLE_CLICKED, {
-              page_session_id: z
+              page_session_id: G
             })
           },
           disabled: W !== C.g.MOUNTED && W !== C.g.FINISHED

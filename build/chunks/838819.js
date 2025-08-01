@@ -84,28 +84,28 @@ let R = e => {
     });
     (0, b.D)();
     let V = (0, y.O)(H),
-      [U, z] = l.useState(),
-      G = (0, s.e7)([C.Z], () => {
+      [U, G] = l.useState(),
+      z = (0, s.e7)([C.Z], () => {
         var e;
         return null == (e = C.Z.getCategory(U)) ? void 0 : e.name
       }),
       [q, K] = l.useState();
     (0, T.Kp)();
     let Y = l.useCallback((e, t) => {
-        K(e), z(t)
+        K(e), G(t)
       }, []),
       {
         selectedTab: X,
         transitionState: J,
-        transitionToTab: $
+        transitionToTab: Q
       } = (0, x.B)(M, t);
-    (0, E.q3)(i, X, G, J, q), (0, E.EB)(X, c);
+    (0, E.q3)(i, X, z, J, q), (0, E.EB)(X, c);
     let {
-      dismissShopButtonDC: Q
+      dismissShopButtonDC: $
     } = (0, k.Z)();
     l.useEffect(() => {
-      Q()
-    }, [Q]), l.useEffect(() => {
+      $()
+    }, [$]), l.useEffect(() => {
       t || (0, d.Y)(w.Z5c.COLLECTIBLES_SHOP)
     }, [t]);
     let ee = (0, s.e7)([_.Z], () => _.Z.getLayers().includes(w.S9g.COLLECTIBLES_SHOP)),
@@ -131,7 +131,7 @@ let R = e => {
       children: (0, n.jsx)(v.k0, {
         newValue: {
           sessionId: i,
-          pageCategory: G,
+          pageCategory: z,
           pageSize: N.kN
         },
         children: (0, n.jsx)(R, {
@@ -151,13 +151,13 @@ let R = e => {
                 isFullScreen: t,
                 isLayer: ee,
                 onClose: Z,
-                handleTransition: $,
+                handleTransition: Q,
                 selectedTab: X
               }), (0, n.jsx)(P.Z, {
                 tab: X,
                 isFullScreen: t,
                 refreshCategories: W,
-                transitionToTab: $,
+                transitionToTab: Q,
                 transitionState: J,
                 sortedCategories: V,
                 updateAnalyticsState: Y

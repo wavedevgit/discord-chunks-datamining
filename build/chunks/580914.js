@@ -111,22 +111,22 @@ let D = {
       onVisibilityChange: H
     } = e, W = (0, u.e7)([f.Z], () => f.Z.useReducedMotion), V = (0, u.e7)([v.Z], () => v.Z.isFocused()), U = (0, p.O)(e => {
       null == H || H(e)
-    }, .1), z = (0, u.e7)([O.default], () => O.default.getCurrentUser()), G = (0, j.u)(), q = (0, E.sp)(), {
+    }, .1), G = (0, u.e7)([O.default], () => O.default.getCurrentUser()), z = (0, j.u)(), q = (0, E.sp)(), {
       showBetaTag: K
     } = _.Z.useExperiment({
       location: "collectible_hero_block"
     }), Y = l.useMemo(() => null != y ? y : F(c), [y, c]), {
       isPreviewingStaticBanner: X,
       bannerOverrides: J,
-      bannerStyleOverrides: $,
-      logoStyleOverrides: Q,
+      bannerStyleOverrides: Q,
+      logoStyleOverrides: $,
       heroLogo: ee,
       heroBannerStatic: et,
       heroBannerAnimated: er
-    } = (0, N.hr)(Y), en = null == J ? void 0 : J.heroBanner, el = null != (t = null == $ ? void 0 : $.responsive) && t, ei = null == $ ? void 0 : $.backgroundStyle, ea = l.useMemo(() => G(Y.rankedSkuIds), [r, G, Y.rankedSkuIds]), eo = (0, P.a)()(ea), es = (0, T.l)(eo).slice(0, 4), ec = (0, w.St)(es), eu = L === A.AW.ORBS ? R.intl.string(R.t["1CdL8f"]) : R.intl.formatToPlainString(R.t.wvKYCg, {
+    } = (0, N.hr)(Y), en = null == J ? void 0 : J.heroBanner, el = null != (t = null == Q ? void 0 : Q.responsive) && t, ei = null == Q ? void 0 : Q.backgroundStyle, ea = l.useMemo(() => z(Y.rankedSkuIds), [r, z, Y.rankedSkuIds]), eo = (0, P.a)()(ea), es = (0, T.l)(eo).slice(0, 4), ec = (0, w.St)(es), eu = L === A.AW.ORBS ? R.intl.string(R.t["1CdL8f"]) : R.intl.formatToPlainString(R.t.wvKYCg, {
       category_name: Y.name
     }), ed = (0, x.FF)("CollectiblesContent");
-    return null != z && (r || Y !== D) ? (0, n.jsxs)("div", {
+    return null != G && (r || Y !== D) ? (0, n.jsxs)("div", {
       ref: U,
       className: a()(Z.heroBlock, {
         [Z.responsiveHero]: el
@@ -146,7 +146,7 @@ let D = {
           src: er,
           autoPlay: !0,
           loop: !0
-        }), (null == $ ? void 0 : $.hideSideShadow) === !0 ? null : (0, n.jsx)(M, {
+        }), (null == Q ? void 0 : Q.hideSideShadow) === !0 ? null : (0, n.jsx)(M, {
           heroBannerOverrides: en,
           isResponsive: el
         })]
@@ -170,7 +170,7 @@ let D = {
                 className: Z.heroHeaderLogo,
                 src: ee,
                 alt: Y.name,
-                style: null == Q ? void 0 : Q.toDesktopStyles()
+                style: null == $ ? void 0 : $.toDesktopStyles()
               }), null != Y.title && (0, n.jsxs)(d.X6q, {
                 variant: "heading-xxl/bold",
                 className: Z.title,
@@ -226,7 +226,7 @@ let D = {
                 children: (0, n.jsx)(k.Z, {
                   product: e,
                   category: r,
-                  user: z,
+                  user: G,
                   tab: L
                 }, e.skuId)
               }, null == e ? void 0 : e.skuId)

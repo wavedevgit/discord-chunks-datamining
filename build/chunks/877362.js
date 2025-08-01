@@ -1,6 +1,6 @@
 /** Chunk was on 44799 **/
 n.d(t, {
-  Z: () => w
+  Z: () => y
 });
 var r = n(255367),
   o = n(120356),
@@ -20,41 +20,41 @@ var r = n(255367),
   v = n(271383),
   b = n(485386),
   j = n(430824),
-  E = n(594174),
-  h = n(5192),
+  h = n(594174),
+  E = n(5192),
   C = n(998502),
   I = n(981631),
   N = n(93841),
   O = n(388032),
-  Z = n(302794),
+  w = n(302794),
   P = n(350618);
-let S = C.ZP.getEnableHardwareAcceleration() ? u.Xo$ : d.Z;
+let Z = C.ZP.getEnableHardwareAcceleration() ? u.Xo$ : d.Z;
 
-function w(e) {
+function y(e) {
   var t, n;
   let {
     guildId: o
   } = e, d = (0, s.e7)([j.Z], () => j.Z.getGuild(o)), C = (0, s.e7)([b.Z], () => b.Z.getSortedRoles(o).find(e => {
     var t;
     return (null == (t = e.tags) ? void 0 : t.premium_subscriber) === null
-  })), w = (0, s.e7)([E.default], () => E.default.getCurrentUser()), y = null == w ? void 0 : w.id, T = (0, s.e7)([v.ZP], () => null != y ? v.ZP.getMember(o, y) : void 0, [y, o]), A = (null == T ? void 0 : T.premiumSince) != null, R = (0, s.e7)([p.Z], () => p.Z.useReducedMotion), {
+  })), y = (0, s.e7)([h.default], () => h.default.getCurrentUser()), S = null == y ? void 0 : y.id, T = (0, s.e7)([v.ZP], () => null != S ? v.ZP.getMember(o, S) : void 0, [S, o]), A = (null == T ? void 0 : T.premiumSince) != null, R = (0, s.e7)([p.Z], () => p.Z.useReducedMotion), {
     avatarDecorationSrc: L,
     avatarSrc: k,
     eventHandlers: D
   } = (0, g.Z)({
-    userId: null == w ? void 0 : w.id,
+    userId: null == y ? void 0 : y.id,
     guildId: o,
     size: u.EFr.SIZE_40,
     animateOnHover: !R
   });
-  return null == d || null == T || null == w ? null : (0, r.jsxs)(a.$, {
-    className: Z.container,
+  return null == d || null == T || null == y ? null : (0, r.jsxs)(a.$, {
+    className: w.container,
     children: [(0, r.jsx)("img", {
       alt: "",
-      className: Z.image,
+      className: w.image,
       src: P
     }), (0, r.jsxs)("div", {
-      className: Z.textContainer,
+      className: w.textContainer,
       children: [(0, r.jsx)(l.xv, {
         variant: "text-md/semibold",
         children: O.intl.string(A ? N.default.KSWK1d : N.default.XXXX5u)
@@ -73,7 +73,7 @@ function w(e) {
         })
       })]
     }), null != C && !A && (0, r.jsx)(x.l, {
-      avatar: (0, r.jsx)(S, (t = function(e) {
+      avatar: (0, r.jsx)(Z, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -91,7 +91,7 @@ function w(e) {
         }
         return e
       }({}, D), n = n = {
-        user: w,
+        user: y,
         src: k,
         avatarDecoration: L,
         size: u.EFr.SIZE_40,
@@ -109,19 +109,19 @@ function w(e) {
       }), t)),
       username: (0, r.jsx)(u.PUh, {
         variant: "text-md/semibold",
-        name: h.ZP.getName(o, null, w),
+        name: E.ZP.getName(o, null, y),
         colorString: C.colorString,
         colorStrings: C.colorStrings
       }),
-      className: i()(Z.content, Z.exampleMessage),
+      className: i()(w.content, w.exampleMessage),
       message: O.intl.string(O.t["6OSasb"]),
       decorations: (0, r.jsx)(u.$Eu, {
         color: u.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
-        className: Z.boostIcon
+        className: w.boostIcon
       })
     }), (0, r.jsx)(f.Z, {
       guild: d,
-      className: Z.content,
+      className: w.content,
       analyticsLocation: {
         page: I.ZY5.GUILD_POWERUPS_OVERVIEW,
         section: I.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR
