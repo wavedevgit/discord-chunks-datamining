@@ -1,6 +1,6 @@
 /**
   Module ID: 53
-  Original File Name: 0f99ceb562628880
+  Original File Name: 594af20f059a6e97
 **/
 .actionButton__5d9ef {
     margin-left: auto
@@ -1897,7 +1897,7 @@
 .ctaEmoji__45eb7 {
     height: var(--custom-emoji-size-emoji);
     vertical-align: baseline;
-    width: auto
+    width: var(--custom-emoji-size-emoji)
 }
 
 .wrapper__74bfa {
@@ -2230,4 +2230,4 @@
     }
 }
 
-/*# sourceMappingURL=0f99ceb562628880.css.map*/
+/*# sourceMappingURL=594af20f059a6e97.css.map*/

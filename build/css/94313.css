@@ -1,6 +1,6 @@
 /**
   Module ID: 94313
-  Original File Name: a3463634181286d1
+  Original File Name: ff9aa100d08bfd53
 **/
 .wrapper__74bfa {
     align-items: center;
@@ -1128,7 +1128,7 @@
 .ctaEmoji__45eb7 {
     height: var(--custom-emoji-size-emoji);
     vertical-align: baseline;
-    width: auto
+    width: var(--custom-emoji-size-emoji)
 }
 
 .wrapper_fc8177 {
@@ -9680,4 +9680,4 @@ html .progress__61462 {
     background-image: url(/assets/abbc14555963e723.svg)
 }
 
-/*# sourceMappingURL=a3463634181286d1.css.map*/
+/*# sourceMappingURL=ff9aa100d08bfd53.css.map*/

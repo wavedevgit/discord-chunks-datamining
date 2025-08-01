@@ -1,6 +1,6 @@
 /**
   Module ID: 13653
-  Original File Name: 836bebf56dd38bb7
+  Original File Name: 8c0deba31d40b379
 **/
 .slowModeIcon_b21699 {
     display: block;
@@ -2222,7 +2222,7 @@
 .ctaEmoji__45eb7 {
     height: var(--custom-emoji-size-emoji);
     vertical-align: baseline;
-    width: auto
+    width: var(--custom-emoji-size-emoji)
 }
 
 .obscuredIcon__43090 {
@@ -2711,4 +2711,4 @@
     pointer-events: none
 }
 
-/*# sourceMappingURL=836bebf56dd38bb7.css.map*/
+/*# sourceMappingURL=8c0deba31d40b379.css.map*/
