@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  C3: () => E,
-  O3: () => b,
-  ZP: () => g
+  C3: () => b,
+  O3: () => y,
+  ZP: () => E
 });
 var r = n(255367),
   i = n(73800),
@@ -15,11 +15,12 @@ var r = n(255367),
   u = n(481060),
   d = n(563132),
   _ = n(409813),
-  f = n(249779);
+  f = n(474936),
+  p = n(249779);
 
-function p(e, t) {
+function h(e, t) {
   if (null == e) return {};
-  var n, r, i = h(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -27,7 +28,7 @@ function p(e, t) {
   return i
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -35,7 +36,7 @@ function h(e, t) {
   return i
 }
 
-function m(e) {
+function g(e) {
   let {
     header: t,
     isLargeModal: n
@@ -43,65 +44,67 @@ function m(e) {
   return {
     header: t,
     isLargeModal: n,
-    stepProps: p(e, ["header", "isLargeModal"])
+    stepProps: h(e, ["header", "isLargeModal"])
   }
 }
 
-function g(e) {
-  var t, n, a, s, c, p;
+function E(e) {
+  var t, n, a, s, c, h;
   let {
-    header: h,
-    isLargeModal: g,
-    stepProps: E
-  } = m(e), {
-    step: b,
-    stepConfigs: y,
-    setBodyNode: O,
-    setFooterNode: v,
-    setModalOverlayNode: I,
-    setReadySlideId: T,
-    premiumBrandRefreshBackgroundClassName: S
-  } = (0, d.JL)(), A = y.find(e => e.key === b);
+    header: m,
+    isLargeModal: E,
+    stepProps: b
+  } = g(e), {
+    step: y,
+    stepConfigs: O,
+    setBodyNode: v,
+    setFooterNode: I,
+    setModalOverlayNode: T,
+    setReadySlideId: S,
+    premiumBrandRefreshBackgroundClassName: A,
+    selectedSkuId: N
+  } = (0, d.JL)(), C = null != N && N in f.y7, R = O.find(e => e.key === y);
   i.useEffect(() => {
-    I(null)
-  }, [b, I]), l()(null != A, "Unknown step for current payment flow.");
-  let N = null != (c = null == A || null == (t = A.options) ? void 0 : t.hideSlider) && c,
-    C = null == A || null == (n = A.options) ? void 0 : n.bodyClassName,
-    R = null == A || null == (a = A.options) ? void 0 : a.sliderBodyClassName;
-  return void 0 !== g && g && (R = f.sliderBodyLarge), (0, r.jsxs)(r.Fragment, {
-    children: [null == (p = null == A || null == (s = A.options) ? void 0 : s.renderHeader) || p ? h : null, A.renderStep(E), null == b || N ? null : (0, r.jsxs)(r.Fragment, {
+    T(null)
+  }, [y, T]), l()(null != R, "Unknown step for current payment flow.");
+  let P = null != (c = null == R || null == (t = R.options) ? void 0 : t.hideSlider) && c,
+    w = null == R || null == (n = R.options) ? void 0 : n.bodyClassName,
+    D = null == R || null == (a = R.options) ? void 0 : a.sliderBodyClassName;
+  return void 0 !== E && E && (D = p.sliderBodyLarge), (0, r.jsxs)(r.Fragment, {
+    children: [null == (h = null == R || null == (s = R.options) ? void 0 : s.renderHeader) || h ? m : null, R.renderStep(b), null == y || P ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(u.hzk, {
-        className: o()(C, f.body, S, {
-          [f.reviewStep]: b === _.h8.REVIEW
+        className: o()(w, p.body, A, {
+          [p.reviewStep]: y === _.h8.REVIEW,
+          [p.addPaymentStepForPremium]: y === _.h8.ADD_PAYMENT_STEPS && C
         }),
         children: (0, r.jsx)(u.MyZ, {
-          activeSlide: b,
+          activeSlide: y,
           centered: !1,
-          onSlideReady: e => T(e),
-          width: b === _.h8.ADD_PAYMENT_STEPS ? 408 : b === _.h8.REVIEW ? 392 : void 0,
-          children: y.filter(e => null != e.key).map(e => (0, r.jsx)(u.Mi4, {
+          onSlideReady: e => S(e),
+          width: y === _.h8.ADD_PAYMENT_STEPS ? 408 : y === _.h8.REVIEW ? 392 : void 0,
+          children: O.filter(e => null != e.key).map(e => (0, r.jsx)(u.Mi4, {
             id: e.key,
             children: (0, r.jsx)("form", {
-              className: o()(f.sliderBody, R),
+              className: o()(p.sliderBody, D),
               ref: e => {
-                O(e)
+                v(e)
               },
               onSubmit: e => e.preventDefault()
             })
           }, e.key))
         })
       }), (0, r.jsx)("div", {
-        ref: e => v(e)
+        ref: e => I(e)
       }), (0, r.jsx)("div", {
         ref: e => {
-          I(e)
+          T(e)
         }
       })]
     })]
   })
 }
 
-function E(e) {
+function b(e) {
   let {
     children: t
   } = e, {
@@ -110,7 +113,7 @@ function E(e) {
   return null == n ? null : c.createPortal(t, n)
 }
 
-function b(e) {
+function y(e) {
   let {
     children: t
   } = e, {
