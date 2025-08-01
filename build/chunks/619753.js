@@ -1,4 +1,4 @@
-/** Chunk was on 58636 **/
+/** Chunk was on 69150 **/
 n.d(t, {
   Z: () => Z
 }), n(35282), n(539854), n(388685);
@@ -22,8 +22,8 @@ var i = n(255367),
   O = n(359110),
   T = n(695346),
   S = n(131704),
-  m = n(592125),
-  N = n(430824),
+  N = n(592125),
+  m = n(430824),
   R = n(496675),
   A = n(699516),
   y = n(944486),
@@ -113,14 +113,14 @@ function x(e) {
     jumpToMessage: M,
     listNavigator: x,
     favoriteSearch: Z
-  } = e, F = T.cC.useSetting(), w = (0, p.p)(), V = r.useCallback(e => {
+  } = e, F = T.cC.useSetting(), w = (0, p.p)(), G = r.useCallback(e => {
     if (e === y.Z.getChannelId()) return;
-    let t = m.Z.getChannel(e);
+    let t = N.Z.getChannel(e);
     null != t && (R.Z.can(v.Plq.VIEW_CHANNEL, t) || t.isPrivate()) && (0, O.Kh)(t.id)
-  }, []), G = null != o ? (0, h.F6)(o, b.default, A.Z, !1) : "???", B = Z && null != o.guild_id ? null == (t = N.Z.getGuild(o.guild_id)) ? void 0 : t.name : null, W = (null == o ? void 0 : o.parent_id) != null ? m.Z.getChannel(o.parent_id) : null, z = null != (n = null == W ? void 0 : W.name) ? n : null, H = null != (l = (0, _.KS)(o)) ? l : a.VL1, Y = R.Z.can(v.Plq.MANAGE_MESSAGES, o), {
+  }, []), V = null != o ? (0, h.F6)(o, b.default, A.Z, !1) : "???", B = Z && null != o.guild_id ? null == (t = m.Z.getGuild(o.guild_id)) ? void 0 : t.name : null, W = (null == o ? void 0 : o.parent_id) != null ? N.Z.getChannel(o.parent_id) : null, z = null != (n = null == W ? void 0 : W.name) ? n : null, H = null != (l = (0, _.KS)(o)) ? l : a.VL1, Y = R.Z.can(v.Plq.MANAGE_MESSAGES, o), {
     content: K
   } = (0, g.ZP)({
-    content: G,
+    content: V,
     embeds: []
   }, {
     postProcessor: c,
@@ -130,7 +130,7 @@ function x(e) {
     let e = X.current;
     null != e && null != e.offsetWidth && null != e.scrollWidth && J(e.offsetWidth < e.scrollWidth)
   }, []);
-  let Q = [G, z, B].filter(e => null != e).join(", ");
+  let Q = [V, z, B].filter(e => null != e).join(", ");
   return (0, i.jsx)(E.aQ.Provider, {
     value: (0, I.Z)(F, Y),
     children: (0, i.jsxs)("ul", {
@@ -138,7 +138,7 @@ function x(e) {
       className: k.searchResultGroup,
       "aria-label": Q,
       children: [(0, i.jsx)(a.P3F, {
-        onClick: () => V(o.id),
+        onClick: () => G(o.id),
         children: (0, i.jsxs)("div", {
           className: k.channelNameContainer,
           children: [(0, i.jsx)(H, {
@@ -146,7 +146,7 @@ function x(e) {
             size: "xs",
             color: "currentColor"
           }), (0, i.jsx)(a.ua7, {
-            text: G,
+            text: V,
             shouldShow: q,
             children: e => (0, i.jsxs)("span", L(U({}, e), {
               ref: X,
@@ -155,7 +155,7 @@ function x(e) {
             }))
           }), (0, i.jsx)(j, {
             parentChannel: W,
-            onSelectChannel: V
+            onSelectChannel: G
           })]
         })
       }), s.map((e, t) => {
@@ -195,7 +195,7 @@ let Z = r.memo(function(e) {
     renderPageWrapper: O,
     onBlockedResultsClick: T,
     searchRequestAnalyticsId: S,
-    searchResultsQuery: N,
+    searchResultsQuery: m,
     isFavoritesSearch: R
   } = e, {
     offset: y,
@@ -204,7 +204,7 @@ let Z = r.memo(function(e) {
     showBlockedResults: j
   } = n, Z = r.useCallback((e, t) => {
     if (null == I || I(e, t), (0, f.Z)(e)) {
-      let t = m.Z.getChannel(e.channel_id),
+      let t = N.Z.getChannel(e.channel_id),
         n = null != t ? t.getGuildId() : null;
       c.Z.trackJump(e.channel_id, e.id, "Search Results", {
         search_id: S
@@ -217,14 +217,14 @@ let Z = r.memo(function(e) {
     return h.reduce((n, i) => {
       let r = i.find(e => e.isSearchHit);
       if (!j && null != r && (A.Z.isBlockedForMessage(r) || A.Z.isIgnoredForMessage(r))) return n;
-      let l = m.Z.getChannel(i[0].channel_id);
+      let l = N.Z.getChannel(i[0].channel_id);
       return null == l || ((null == e || e !== l.id) && n.push({
         channel: l,
         results: [],
         startIndex: t
       }), t += 1, n[n.length - 1].results.push(i), e = null == l ? void 0 : l.id), n
     }, [])
-  }, [h, j]), w = r.useRef([]), V = F.reduce((e, t) => e + 1 + t.results.length, 0), G = r.useCallback((e, t) => {
+  }, [h, j]), w = r.useRef([]), G = F.reduce((e, t) => e + 1 + t.results.length, 0), V = r.useCallback((e, t) => {
     if (!u.Z.keyboardModeEnabled) return;
     let n = w.current,
       i = null != t ? n[t] : void 0;
@@ -239,11 +239,11 @@ let Z = r.memo(function(e) {
     null == t || t.jumpTo()
   }, []), W = (0, s.ZP)({
     navId: "search-results",
-    itemCount: V,
+    itemCount: G,
     focusedIndex: 0,
-    setFocus: G,
+    setFocus: V,
     onSelect: B
-  }), z = (0, d.nC)(null != (t = null == N ? void 0 : N.content) ? t : ""), H = F.map(e => {
+  }), z = (0, d.nC)(null != (t = null == m ? void 0 : m.content) ? t : ""), H = F.map(e => {
     let {
       channel: t,
       results: n,

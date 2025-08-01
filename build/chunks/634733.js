@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 a.d(t, {
-  w6: () => p
+  w6: () => x
 }), a(388685), a(642613);
 var n = a(924322),
   r = a(296009),
@@ -56,7 +56,7 @@ function m() {
   }
 }
 
-function p(e) {
+function x(e) {
   var t;
   let a, i = null != (t = l.Z.getOverrideWidgets()) ? t : [];
   a = e === n.g.FAVORITE ? m() : function(e, t) {

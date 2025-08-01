@@ -1714,7 +1714,7 @@ function tM() {
 }
 
 function tk(e) {
-  return tj(e) ? tx(e.trial_id) : tU(e) ? tM() : 0
+  return tj(e) ? tx(e.trial_id) : tU(e) ? tM() : P.tL
 }
 
 function tj(e) {

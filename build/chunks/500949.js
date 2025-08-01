@@ -11,12 +11,12 @@ a.d(t, {
   S2: () => H,
   W6: () => en,
   XM: () => er,
-  YC: () => ep,
+  YC: () => ex,
   YE: () => ei,
   h9: () => es,
   iw: () => ea,
   jC: () => V,
-  jQ: () => G,
+  jQ: () => z,
   lT: () => X,
   rd: () => ed,
   t4: () => ec,
@@ -31,8 +31,8 @@ var n, r, l = a(73800),
   d = a(694626),
   u = a(855930),
   m = a(385787),
-  p = a(566162),
-  x = a(567027),
+  x = a(566162),
+  p = a(567027),
   h = a(461195),
   b = a(857702),
   f = a(20450),
@@ -58,7 +58,7 @@ var n, r, l = a(73800),
   L = a(521904),
   M = a(231338);
 
-function U(e) {
+function F(e) {
   for (var t = 1; t < arguments.length; t++) {
     var a = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(a);
@@ -77,7 +77,7 @@ function U(e) {
   return e
 }
 
-function F(e, t) {
+function U(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var a = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -97,8 +97,8 @@ let B = {
     HPLuv: d.Z,
     HSL: u.Z,
     HSLuv: m.Z,
-    HSV: p.Z,
-    HWB: x.Z,
+    HSV: x.Z,
+    HWB: p.Z,
     ICTCP: h.Z,
     JzCzHz: b.Z,
     Jzazbz: f.Z,
@@ -117,11 +117,11 @@ let B = {
     XYZ_D50: I.Z,
     XYZ_D65: w.Z
   },
-  G = Object.fromEntries(Object.keys(B).map(e => [e, e]));
+  z = Object.fromEntries(Object.keys(B).map(e => [e, e]));
 Object.values(B).forEach(e => R.Z.register(e));
 let {
-  SemanticColors: z
-} = L.V, V = z, H = CSS.supports("color", "color(display-p3 1 0 0)") && CSS.supports("color", "color(display-p3 1 0 0 / 1)");
+  SemanticColors: G
+} = L.V, V = G, H = CSS.supports("color", "color(display-p3 1 0 0)") && CSS.supports("color", "color(display-p3 1 0 0 / 1)");
 
 function W(e, t) {
   let [a, n] = l.useState(() => {
@@ -148,7 +148,7 @@ function K(e) {
 function X(e, t, a, n, r) {
   return {
     name: t,
-    colors: F(U({}, e.colors), {
+    colors: U(F({}, e.colors), {
       [r]: {
         color: a,
         opacity: n
@@ -159,7 +159,7 @@ function X(e, t, a, n, r) {
 }
 
 function Y(e) {
-  return F(U({}, e), {
+  return U(F({}, e), {
     highlight: !e.highlight
   })
 }
@@ -222,79 +222,79 @@ function er(e) {
   }), u = (0, Z.CD)(c, "black", 1 - l, {
     space: o,
     outputSpace: i.Z
-  }), m = Math.floor(n / 2), p = n - m, x = (0, Z.w6)(d, c, {
+  }), m = Math.floor(n / 2), x = n - m, p = (0, Z.w6)(d, c, {
     steps: m,
     outputSpace: o,
     space: o,
     progression: e => e ** s
   }), h = (0, Z.w6)(u, c, {
-    steps: p,
+    steps: x,
     outputSpace: o,
     space: o,
     progression: e => e ** s
   }), b = [];
   for (let e = 0; e < m; e++) {
-    let t = x(e / m);
+    let t = p(e / m);
     b.push(t)
   }
   b.push(c);
-  for (let e = 1; e < p; e++) {
-    let t = h(1 - e / p);
+  for (let e = 1; e < x; e++) {
+    let t = h(1 - e / x);
     b.push(t)
   }
   return Object.fromEntries(b.map((e, a) => ["".concat(t, "-").concat(a), e]))
 }
 
 function el(e, t, a) {
-  a(a => null == a.scales.find(t => t.name === e) ? a : F(U({}, a), {
+  a(a => null == a.scales.find(t => t.name === e) ? a : U(F({}, a), {
     scales: a.scales.map(a => a.name === e ? t(a) : a)
   }))
 }
 
 function ei(e, t, a) {
-  el(e, e => F(U({}, e), {
+  el(e, e => U(F({}, e), {
     darkness: t
   }), a)
 }
 
 function es(e, t, a) {
-  el(e, e => F(U({}, e), {
+  el(e, e => U(F({}, e), {
     lightness: t
   }), a)
 }
 
 function eo(e, t, a) {
-  el(e, e => F(U({}, e), {
+  el(e, e => U(F({}, e), {
     base: t
   }), a)
 }
 
 function ec(e, t, a) {
-  el(e, e => F(U({}, e), {
+  el(e, e => U(F({}, e), {
     colorSpace: t
   }), a)
 }
 
 function ed(e, t, a) {
-  el(e, e => F(U({}, e), {
+  el(e, e => U(F({}, e), {
     easingStrength: t
   }), a)
 }
 
 function eu(e, t, a) {
-  el(e, e => F(U({}, e), {
+  el(e, e => U(F({}, e), {
     showColumnarPalettePreview: t
   }), a)
 }
 
 function em(e, t, a) {
-  el(e, e => F(U({}, e), {
+  el(e, e => U(F({}, e), {
     useP3ColorSpace: t
   }), a)
 }
 
-function ep(e, t, a) {
-  el(e, e => F(U({}, e), {
+function ex(e, t, a) {
+  el(e, e => U(F({}, e), {
     steps: t
   }), a)
 }

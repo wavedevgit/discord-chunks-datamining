@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 a.d(t, {
-  $6: () => p,
+  $6: () => x,
   YK: () => o,
   _o: () => d,
   bL: () => m,
@@ -47,6 +47,6 @@ function m(e) {
   }
 }
 
-function p(e, t) {
+function x(e, t) {
   return !!(!t.verified || t.isStaff()) || null != e && s > Date.now() - new Date(e.created_at).getTime()
 }

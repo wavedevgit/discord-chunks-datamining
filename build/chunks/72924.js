@@ -1,4 +1,4 @@
-/** Chunk was on 58636 **/
+/** Chunk was on 69150 **/
 n.d(t, {
   S: () => f
 });
@@ -24,8 +24,8 @@ async function f(e) {
     applicationId: O,
     skuId: T,
     initialPlanId: S,
-    analyticsLocations: m,
-    analyticsLocationObject: N
+    analyticsLocations: N,
+    analyticsLocationObject: m
   } = e, R = I.Z.get(T);
   if (null == R) {
     let e = (await (0, s.oJ)(O)).find(e => e.sku.id === T);
@@ -43,8 +43,8 @@ async function f(e) {
     (0, h.Z)({
       applicationId: O,
       skuId: T,
-      analyticsLocationObject: N,
-      analyticsLocations: m,
+      analyticsLocationObject: m,
+      analyticsLocations: N,
       contextKey: A,
       onComplete: t => {
         var n;
@@ -55,7 +55,7 @@ async function f(e) {
       }
     })
   });
-  await (t = O, n = T, r = S, f = N, C = m, (0, u.m)({
+  await (t = O, n = T, r = S, f = m, C = N, (0, u.m)({
     applicationId: t,
     skuId: n,
     initialPlanId: r,

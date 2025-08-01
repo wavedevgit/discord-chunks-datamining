@@ -12,8 +12,8 @@ var n = a(255367),
   d = a(511010),
   u = a(246992),
   m = a(531578),
-  p = a(521981);
-let x = [{
+  x = a(521981);
+let p = [{
   label: "second(s)",
   value: 1e3
 }, {
@@ -39,10 +39,10 @@ function h() {
     }
   }), C = r.useMemo(() => null != e && v >= 0 && v <= 100 && a >= 0, [e, v, a]);
   return (0, n.jsxs)("div", {
-    className: p.container,
+    className: x.container,
     children: [(0, n.jsx)(i.hjN, {
       title: "Feedback Survey",
-      className: p.formElement,
+      className: x.formElement,
       tag: i.RB0.H3,
       children: (0, n.jsx)(i.q4e, {
         options: y,
@@ -55,11 +55,11 @@ function h() {
       })
     }), (0, n.jsxs)(i.hjN, {
       title: "Override Survey Cooldown",
-      className: p.formElement,
+      className: x.formElement,
       tag: i.RB0.H3,
       children: [null != j && (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)(d.Z, {
-          className: p.formDividerTitle,
+          className: x.formDividerTitle,
           children: (0, n.jsx)(i.Text, {
             variant: "text-sm/semibold",
             children: "Current cooldown"
@@ -78,13 +78,13 @@ function h() {
           children: "".concat(j.cooldown / 864e5, " day(s)")
         })]
       }), (0, n.jsx)(d.Z, {
-        className: p.formDividerTitle,
+        className: x.formDividerTitle,
         children: (0, n.jsx)(i.Text, {
           variant: "text-sm/semibold",
           children: "Override cooldown"
         })
       }), (0, n.jsxs)("div", {
-        className: p.formRow,
+        className: x.formRow,
         children: [(0, n.jsx)(i.oil, {
           min: 0,
           value: a.toString(),
@@ -92,7 +92,7 @@ function h() {
           placeholder: "Duration length",
           onChange: e => h(parseFloat(e))
         }), (0, n.jsx)(i.q4e, {
-          options: x,
+          options: p,
           value: b,
           onChange: e => {
             f(e)
@@ -102,11 +102,11 @@ function h() {
       })]
     }), (0, n.jsxs)(i.hjN, {
       title: "Override Survey Chance",
-      className: p.formElement,
+      className: x.formElement,
       tag: i.RB0.H3,
       children: [null != j && (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)(d.Z, {
-          className: p.formDividerTitle,
+          className: x.formDividerTitle,
           children: (0, n.jsx)(i.Text, {
             variant: "text-sm/semibold",
             children: "Current chance"
@@ -116,13 +116,13 @@ function h() {
           children: "".concat(100 * j.chance, "%")
         })]
       }), (0, n.jsx)(d.Z, {
-        className: p.formDividerTitle,
+        className: x.formDividerTitle,
         children: (0, n.jsx)(i.Text, {
           variant: "text-sm/semibold",
           children: "Override chance"
         })
       }), (0, n.jsxs)("div", {
-        className: p.formRow,
+        className: x.formRow,
         children: [(0, n.jsx)(i.oil, {
           min: 0,
           max: 100,
@@ -135,7 +135,7 @@ function h() {
         })]
       })]
     }), (0, n.jsxs)("div", {
-      className: p.formRow,
+      className: x.formRow,
       children: [(0, n.jsx)(i.zxk, {
         variant: "primary",
         text: "Update",

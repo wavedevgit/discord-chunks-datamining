@@ -1,11 +1,11 @@
-/** Chunk was on 58636 **/
+/** Chunk was on 69150 **/
 n.d(t, {
   $Y: () => S,
   JK: () => C,
   Je: () => O,
   T9: () => R,
-  UE: () => N,
-  Xx: () => m,
+  UE: () => m,
+  Xx: () => N,
   mm: () => T,
   qY: () => f
 }), n(388685);
@@ -110,7 +110,7 @@ async function S(e) {
   });
   return Array.isArray(t.body) ? t.body.map(g) : []
 }
-async function m(e, t, n) {
+async function N(e, t, n) {
   s.Z.can(_.Plq.MANAGE_MESSAGES, t) && await i.tn.post({
     url: _.ANM.GUILD_AUTOMOD_ALERT_ACTION(t.guild_id),
     body: {
@@ -122,7 +122,7 @@ async function m(e, t, n) {
   })
 }
 
-function N(e, t, n) {
+function m(e, t, n) {
   let r = o.Z.getGuild(e);
   null != r && s.Z.can(_.Plq.MANAGE_GUILD, r) && (0, h.UV)(() => {
     (0, l.yw)(_.rMx.GUILD_AUTOMOD_FEEDBACK, {

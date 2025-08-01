@@ -12,8 +12,8 @@ var n = a(255367),
   d = a(126313),
   u = a(442837),
   m = a(433517),
-  p = a(755721),
-  x = a(481060),
+  x = a(755721),
+  p = a(481060),
   h = a(570140),
   b = a(812206),
   f = a(835473),
@@ -39,7 +39,7 @@ let k = [{
     let {
       type: t
     } = e;
-    return (0, n.jsx)(x.Text, {
+    return (0, n.jsx)(p.Text, {
       variant: "text-md/semibold",
       children: c.s[t]
     })
@@ -52,7 +52,7 @@ let k = [{
       entries: t
     } = e;
     return (0, n.jsx)("div", {
-      children: (0, n.jsx)(x.Text, {
+      children: (0, n.jsx)(p.Text, {
         variant: "text-md/normal",
         children: t.length
       })
@@ -76,7 +76,7 @@ function A(e) {
   let {
     type: r
   } = e, l = (0, u.e7)([N.Z], () => N.Z.getFilters()), i = null != (a = null == l || null == (t = l.types) ? void 0 : t.has(r)) && a;
-  return (0, n.jsx)(x.XZJ, {
+  return (0, n.jsx)(p.XZJ, {
     value: i,
     onClick: function() {
       i ? h.Z.dispatch({
@@ -122,28 +122,28 @@ function Z() {
       location: "DevToolsContentInventory",
       source: j.m1.DevTools
     }),
-    U = Object.entries(null != (t = m.K.get("GameProfileModal")) ? t : {}).filter(e => {
+    F = Object.entries(null != (t = m.K.get("GameProfileModal")) ? t : {}).filter(e => {
       let [t, a] = e;
       return a
     }).map(e => {
       let [t] = e;
       return t
     }),
-    F = (0, f.Z)(U).filter(C.lm),
+    U = (0, f.Z)(F).filter(C.lm),
     B = (0, u.e7)([O.Z], () => O.Z.getFakeGameToShow());
   return (0, n.jsx)("div", {
     className: R.panel,
-    children: (0, n.jsxs)(x.zJl, {
+    children: (0, n.jsxs)(p.zJl, {
       className: w.content,
-      children: [(0, n.jsxs)(x.hjN, {
-        children: [(0, n.jsx)(x.vwX, {
+      children: [(0, n.jsxs)(p.hjN, {
+        children: [(0, n.jsx)(p.vwX, {
           children: "Inventory"
         }), s.length > 0 && (0, n.jsx)(g.Z, {
           columns: k,
           data: s
-        }), (0, n.jsx)(x.LZC, {
+        }), (0, n.jsx)(p.LZC, {
           size: 8
-        }), (0, n.jsx)(P.Z, {}), (0, n.jsx)(x.zxk, {
+        }), (0, n.jsx)(P.Z, {}), (0, n.jsx)(p.zxk, {
           variant: "primary",
           text: "Refresh Now",
           fullWidth: !0,
@@ -156,10 +156,10 @@ function Z() {
           },
           loading: c
         })]
-      }), (0, n.jsxs)(x.hjN, {
-        children: [(0, n.jsx)(x.vwX, {
+      }), (0, n.jsxs)(p.hjN, {
+        children: [(0, n.jsx)(p.vwX, {
           children: "Impression Capping"
-        }), (0, n.jsx)(x.zxk, {
+        }), (0, n.jsx)(p.zxk, {
           variant: "primary",
           text: "Clear Impressions",
           fullWidth: !0,
@@ -168,9 +168,9 @@ function Z() {
               type: "CONTENT_INVENTORY_DEBUG_CLEAR_IMPRESSIONS"
             })
           }
-        }), (0, n.jsx)(x.LZC, {
+        }), (0, n.jsx)(p.LZC, {
           size: 8
-        }), (0, n.jsx)(x.zxk, {
+        }), (0, n.jsx)(p.zxk, {
           variant: "primary",
           text: "Log Impressions",
           fullWidth: !0,
@@ -179,9 +179,9 @@ function Z() {
               type: "CONTENT_INVENTORY_DEBUG_LOG_IMPRESSIONS"
             })
           }
-        }), (0, n.jsx)(x.LZC, {
+        }), (0, n.jsx)(p.LZC, {
           size: 8
-        }), (0, n.jsx)(x.zxk, {
+        }), (0, n.jsx)(p.zxk, {
           variant: "primary",
           text: l ? "Enable Impression Capping" : "Disable Impression Capping",
           fullWidth: !0,
@@ -190,9 +190,9 @@ function Z() {
               type: "CONTENT_INVENTORY_DEBUG_TOGGLE_IMPRESSION_CAPPING"
             })
           }
-        }), (0, n.jsx)(x.LZC, {
+        }), (0, n.jsx)(p.LZC, {
           size: 8
-        }), (0, n.jsx)(x.zxk, {
+        }), (0, n.jsx)(p.zxk, {
           variant: "primary",
           text: i ? "Disable Fast Impression Capping" : "Enable Fast Impression Capping",
           fullWidth: !0,
@@ -202,10 +202,10 @@ function Z() {
             })
           }
         })]
-      }), !1, (0, n.jsx)(S.Z, {}), (0, n.jsxs)(x.hjN, {
-        children: [(0, n.jsx)(x.vwX, {
+      }), !1, (0, n.jsx)(S.Z, {}), (0, n.jsxs)(p.hjN, {
+        children: [(0, n.jsx)(p.vwX, {
           children: "Game Profile"
-        }), (0, n.jsx)(p.Is, {
+        }), (0, n.jsx)(x.Is, {
           placeholder: "App ID or full name",
           onChange: e => (0 === e.length || e.length >= 18) && Z(e),
           onKeyDown: e => {
@@ -216,19 +216,19 @@ function Z() {
             border: "1px solid green"
           } : {}
         }), (0, n.jsx)("ul", {
-          children: F.map(e => (0, n.jsx)("li", {
+          children: U.map(e => (0, n.jsx)("li", {
             children: (0, n.jsx)(D, {
               application: e
             })
           }, "follow-game-".concat(e.id)))
         })]
-      }), (0, n.jsxs)(x.hjN, {
-        children: [(0, n.jsx)(x.vwX, {
+      }), (0, n.jsxs)(p.hjN, {
+        children: [(0, n.jsx)(p.vwX, {
           children: "Activity Sharing"
-        }), (0, n.jsx)(x.Text, {
+        }), (0, n.jsx)(p.Text, {
           variant: "text-md/normal",
           children: "Force show game:"
-        }), (0, n.jsx)(x.PhF, {
+        }), (0, n.jsx)(p.PhF, {
           options: E.h.map(e => ({
             label: e,
             value: e
@@ -255,13 +255,13 @@ let D = e => {
     location: "DevToolsContentInventory",
     source: j.m1.DevTools
   });
-  return (0, n.jsx)(x.P3F, {
+  return (0, n.jsx)(p.P3F, {
     onClick: a,
     style: {
       margin: "2px",
       cursor: "pointer"
     },
-    children: (0, n.jsx)(x.Text, {
+    children: (0, n.jsx)(p.Text, {
       variant: "text-xs/normal",
       color: "text-muted",
       children: t.name

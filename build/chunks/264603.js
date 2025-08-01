@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 a.d(t, {
-  Z: () => x
+  Z: () => p
 });
 var n = a(255367),
   r = a(73800),
@@ -12,7 +12,7 @@ var n = a(255367),
   d = a(246992),
   u = a(616257),
   m = a(386);
-let p = [{
+let x = [{
   label: "Unset",
   value: s.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET
 }, {
@@ -26,7 +26,7 @@ let p = [{
   value: s.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_NONE
 }];
 
-function x() {
+function p() {
   let e = r.useRef(null),
     t = c.JG.useSetting();
   return (0, n.jsxs)("div", {
@@ -36,7 +36,7 @@ function x() {
       variant: "text-md/normal",
       children: "Receive DMs In Game"
     }), (0, n.jsx)(o.PhF, {
-      options: p,
+      options: x,
       isSelected: e => e === t,
       select: c.JG.updateSetting,
       popoutLayerContext: d.O$,

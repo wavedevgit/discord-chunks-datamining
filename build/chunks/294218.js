@@ -1,4 +1,4 @@
-/** Chunk was on 58636 **/
+/** Chunk was on 69150 **/
 n.d(t, {
   Z: () => D
 });
@@ -22,8 +22,8 @@ var i = n(255367),
   O = n(438075),
   T = n(963550),
   S = n(845080),
-  m = n(295790),
-  N = n(145807),
+  N = n(295790),
+  m = n(145807),
   R = n(56744),
   A = n(981631),
   y = n(30804);
@@ -88,13 +88,13 @@ let D = r.memo(function(e) {
       for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
     }
     return r
-  }(e, ["message", "compact", "className", "onContextMenu", "onClick", "hideSimpleEmbedContent", "channel", "isGroupStart", "animateAvatar", "subscribeToComponentDispatch", "renderThreadAccessory", "trackAnnouncementViews"]), V = r.type === A.uaV.POLL_RESULT || null != (t = e.disableInteraction) && t, G = r.isFirstMessageInForumPost(U), B = (0, d.A)((null != (n = r.editedTimestamp) ? n : r.timestamp).valueOf()), {
+  }(e, ["message", "compact", "className", "onContextMenu", "onClick", "hideSimpleEmbedContent", "channel", "isGroupStart", "animateAvatar", "subscribeToComponentDispatch", "renderThreadAccessory", "trackAnnouncementViews"]), G = r.type === A.uaV.POLL_RESULT || null != (t = e.disableInteraction) && t, V = r.isFirstMessageInForumPost(U), B = (0, d.A)((null != (n = r.editedTimestamp) ? n : r.timestamp).valueOf()), {
     content: W,
     hasSpoilerEmbeds: z
   } = (0, f.Z)(r, {
     hideSimpleEmbedContent: k,
-    allowList: G || B,
-    allowHeading: G || B,
+    allowList: V || B,
+    allowHeading: V || B,
     allowLinks: !0,
     previewLinkTarget: !0
   }), H = r.type === A.uaV.REPLY ? r.messageReference : void 0, Y = (0, a.e7)([u.Z], () => u.Z.getMessageByReference(H)), K = (0, s.JA)(r.id), X = (0, p.ZP)(r), q = (0, a.e7)([h.Z], () => r.hasFlag(A.iLy.HAS_THREAD) && h.Z.getChannel(_.default.castMessageIdAsChannelId(r.id))), J = (0, c.p9)({
@@ -109,11 +109,11 @@ let D = r.memo(function(e) {
     compact: l,
     className: o()(D, {
       [y.ephemeral]: (0, E.Pv)(r),
-      [y.disableInteraction]: V
+      [y.disableInteraction]: G
     }),
-    disableInteraction: V,
+    disableInteraction: G,
     childrenRepliedMessage: (0, R.Z)(r, U, H, Y, l),
-    childrenExecutedCommand: (0, N.Z)(r, U, l),
+    childrenExecutedCommand: (0, m.Z)(r, U, l),
     childrenHeader: (0, S.Z)(P(b({}, e), {
       guildId: U.guild_id,
       author: X,
@@ -121,8 +121,8 @@ let D = r.memo(function(e) {
     })),
     childrenAccessories: e.hideAccessories ? void 0 : (0, O.Q)(e, z),
     childrenMessageContent: (0, T.Z)(e, W),
-    childrenSystemMessage: (0, m.Z)(P(b({}, e), {
-      disableInteraction: V
+    childrenSystemMessage: (0, N.Z)(P(b({}, e), {
+      disableInteraction: G
     })),
     onContextMenu: v,
     onClick: M,

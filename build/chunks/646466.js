@@ -13,7 +13,7 @@ var n = a(255367),
   u = a(206878),
   m = a(63874);
 
-function p(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var a = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(a);
@@ -31,7 +31,7 @@ function p(e) {
   }
   return e
 }
-let x = [{
+let p = [{
     name: "Preview",
     value: "preview"
   }, {
@@ -51,7 +51,7 @@ let x = [{
       let {
         ShopAssetsPreviewInstructionModal: e
       } = await Promise.resolve().then(a.bind(a, 637443));
-      return t => (0, n.jsx)(e, p({}, t))
+      return t => (0, n.jsx)(e, x({}, t))
     }, {
       modalKey: s.g,
       onCloseRequest: () => (0, l.Mr3)(s.g)
@@ -62,7 +62,7 @@ let x = [{
       let {
         ShopPFXPreviewInstructionModal: e
       } = await Promise.resolve().then(a.bind(a, 637443));
-      return t => (0, n.jsx)(e, p({}, t))
+      return t => (0, n.jsx)(e, x({}, t))
     }, {
       modalKey: s.c,
       onCloseRequest: () => (0, l.Mr3)(s.c)
@@ -139,7 +139,7 @@ let x = [{
     } = (0, o.N9)(), d = r.useMemo(() => Object.values(i).map(e => ({
       label: e.name,
       value: e.type
-    })), [i]), u = r.useCallback(e => s(e), [s]), p = r.useCallback(() => {
+    })), [i]), u = r.useCallback(e => s(e), [s]), x = r.useCallback(() => {
       c(), t(), a()
     }, [c, t, a]);
     return 0 === d.length ? null : (0, n.jsxs)(n.Fragment, {
@@ -153,7 +153,7 @@ let x = [{
         }), (0, n.jsx)(l.zxk, {
           variant: "critical-primary",
           size: "sm",
-          onClick: p,
+          onClick: x,
           text: "Clear All"
         })]
       }), (0, n.jsx)("ul", {
@@ -210,7 +210,7 @@ let x = [{
       validationComplete: a,
       warnings: i,
       errors: s
-    } = (0, u.g)(), o = Object.entries(s), d = Object.entries(i), p = o.length > 0, x = d.length > 0, h = r.useCallback(a => {
+    } = (0, u.g)(), o = Object.entries(s), d = Object.entries(i), x = o.length > 0, p = d.length > 0, h = r.useCallback(a => {
       t(), e(a)
     }, [e, t]);
     return (0, n.jsxs)(n.Fragment, {
@@ -220,11 +220,11 @@ let x = [{
         className: m.validationSummary,
         children: [(0, n.jsx)(l.Text, {
           variant: "text-md/normal",
-          color: p ? "text-danger" : "text-default",
+          color: x ? "text-danger" : "text-default",
           children: "".concat(o.length, " errors")
         }), (0, n.jsx)(l.Text, {
           variant: "text-md/normal",
-          color: x ? "text-feedback-warning" : "text-default",
+          color: p ? "text-feedback-warning" : "text-default",
           children: "".concat(d.length, " warnings")
         }), (0, n.jsx)(l.zxk, {
           variant: "primary",
@@ -237,7 +237,7 @@ let x = [{
         children: "Drop asset folder to validate."
       }), (0, n.jsx)(l.LZC, {
         size: 16
-      }), p && (0, n.jsxs)(n.Fragment, {
+      }), x && (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)(l.X6q, {
           variant: "heading-lg/bold",
           children: "Errors"
@@ -265,7 +265,7 @@ let x = [{
             }, "".concat(a, "-").concat(t))
           })
         })]
-      }), x && (0, n.jsxs)(n.Fragment, {
+      }), p && (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)(l.X6q, {
           variant: "heading-lg/bold",
           children: "Warnings"
@@ -305,13 +305,13 @@ let x = [{
       ignoredFilenames: i,
       clearAssets: s,
       clearIgnoredFilenames: u,
-      processAndUpsertAssets: p
-    } = (0, d.hm)(), x = r.useCallback(e => {
-      a(), p(e)
-    }, [p, a]);
+      processAndUpsertAssets: x
+    } = (0, d.hm)(), p = r.useCallback(e => {
+      a(), x(e)
+    }, [x, a]);
     return (0, n.jsxs)(n.Fragment, {
       children: [(0, n.jsx)(c.L, {
-        onDrop: x
+        onDrop: p
       }), (0, n.jsx)(l.Text, {
         variant: "text-md/normal",
         children: "Drop files in this panel to begin preview."
@@ -344,7 +344,7 @@ let x = [{
     return (0, n.jsxs)("div", {
       className: m.container,
       children: [(0, n.jsx)(l.sY7, {
-        options: x,
+        options: p,
         value: e,
         onChange: e => {
           let {

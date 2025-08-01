@@ -13,8 +13,8 @@ var r = a(913527),
   d = a(883904),
   u = a(211644),
   m = a(675478),
-  p = a(681619),
-  x = a(177488);
+  x = a(681619),
+  p = a(177488);
 let h = e => {
     switch (e) {
       case c.D.DC_DISMISSED:
@@ -69,12 +69,12 @@ function v() {
       dismissibleContent: e
     }));
   return (0, n.jsxs)("div", {
-    className: x.panelContainer,
+    className: p.panelContainer,
     children: [(0, n.jsxs)("div", {
-      className: x.buttonContainer,
+      className: p.buttonContainer,
       children: [(0, n.jsx)("div", {
         "data-button-hoisted-classname-wrapper": !0,
-        className: x.button,
+        className: p.button,
         children: (0, n.jsx)(o.zxk, {
           variant: "primary",
           text: "Reset Daily Cap",
@@ -82,7 +82,7 @@ function v() {
         })
       }), (0, n.jsx)("div", {
         "data-button-hoisted-classname-wrapper": !0,
-        className: x.button,
+        className: p.button,
         children: (0, n.jsx)(o.zxk, {
           variant: "primary",
           text: "Clear All Dismissed Contents",
@@ -90,7 +90,7 @@ function v() {
         })
       }), (0, n.jsx)("div", {
         "data-button-hoisted-classname-wrapper": !0,
-        className: x.button,
+        className: p.button,
         children: (0, n.jsx)(o.zxk, {
           variant: "primary",
           text: "Check All Dismissed Contents",
@@ -98,19 +98,19 @@ function v() {
         })
       })]
     }), (0, n.jsx)("br", {}), (0, n.jsxs)("div", {
-      className: x.info,
+      className: p.info,
       children: ["Last winner time: ", r]
     }), (0, n.jsx)("br", {}), (0, n.jsxs)("div", {
-      className: x.info,
+      className: p.info,
       children: ["Last winner: ", null != v ? s.z[v] : "None"]
     }), (0, n.jsx)("br", {}), (0, n.jsx)("div", {
-      className: x.candidatesTableContainer,
-      children: (0, n.jsx)(p.Z, {
-        className: x.candidatesTable,
+      className: p.candidatesTableContainer,
+      children: (0, n.jsx)(x.Z, {
+        className: p.candidatesTable,
         columns: f,
         data: j
       })
-    }), (0, n.jsx)("br", {}), (0, n.jsx)(p.Z, {
+    }), (0, n.jsx)("br", {}), (0, n.jsx)(x.Z, {
       columns: b,
       data: g
     })]

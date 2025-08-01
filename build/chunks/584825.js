@@ -1,9 +1,9 @@
-/** Chunk was on 58636 **/
+/** Chunk was on 69150 **/
 n.d(t, {
   GG: () => I,
   HQ: () => T,
-  JH: () => N,
-  QV: () => m,
+  JH: () => m,
+  QV: () => N,
   YB: () => S,
   _1: () => O,
   _k: () => E,
@@ -149,7 +149,7 @@ let h = [],
     }
   },
   S = e => (0, r.e7)([d.Z], () => null != e ? d.Z.getSubscriptionSettings(e) : void 0),
-  m = () => {
+  N = () => {
     let [e, t] = i.useState(!1), [n, r] = i.useState(null);
     return {
       loading: e,
@@ -166,7 +166,7 @@ let h = [],
       error: n
     }
   },
-  N = () => {
+  m = () => {
     let [e, t] = i.useState(!1), [n, r] = i.useState(null);
     return {
       loading: e,

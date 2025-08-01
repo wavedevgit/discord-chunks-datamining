@@ -12,8 +12,8 @@ var n = a(255367),
   d = a(704215),
   u = a(755721),
   m = a(481060),
-  p = a(411149),
-  x = a(151480),
+  x = a(411149),
+  p = a(151480),
   h = a(461762),
   b = a(680783),
   f = a(605236),
@@ -68,7 +68,7 @@ function T() {
     s = null == l ? void 0 : l.wallpaperId,
     d = (0, h.Z)(s),
     f = r.useCallback(e => {
-      null != s && (0, x.i)(s, {
+      null != s && (0, p.i)(s, {
         opacity: e
       })
     }, [s]),
@@ -85,12 +85,12 @@ function T() {
     I = r.useCallback(() => P(null == l ? void 0 : l.wallpaperId, void 0), [null == l ? void 0 : l.wallpaperId]),
     w = r.useCallback(() => S(null == l ? void 0 : l.wallpaperId, void 0), [null == l ? void 0 : l.wallpaperId]),
     R = r.useCallback(e => {
-      null != s && (0, x.i)(s, {
+      null != s && (0, p.i)(s, {
         token_mix_amount: Math.round(e)
       })
     }, [s]),
     k = r.useCallback(() => {
-      null != s && (0, x.i)(s, null)
+      null != s && (0, p.i)(s, null)
     }, [s]),
     A = null != (e = null == d ? void 0 : d.opacity) ? e : 1,
     Z = null != (t = null == d ? void 0 : d.token_mix_amount) ? t : 100;
@@ -109,7 +109,7 @@ function T() {
         children: "ChatWallpaperMetadataRecord"
       }), (0, n.jsx)("pre", {
         className: _.code,
-        children: JSON.stringify(p.Z.getWallpaperById(s), null, 2)
+        children: JSON.stringify(x.Z.getWallpaperById(s), null, 2)
       }), (0, n.jsx)(m.ua7, {
         text: "The opacity of the wallpaper.",
         children: e => (0, n.jsx)(o.X6, C(y({
@@ -251,17 +251,17 @@ function N() {
   })
 }
 let E = (0, s.debounce)(function(e, t) {
-    null != e && (0, x.i)(e, {
+    null != e && (0, p.i)(e, {
       primary_color: t
     })
   }, 200),
   S = (0, s.debounce)(function(e, t) {
-    null != e && (0, x.i)(e, {
+    null != e && (0, p.i)(e, {
       link_color: t
     })
   }, 200),
   P = (0, s.debounce)(function(e, t) {
-    null != e && (0, x.i)(e, {
+    null != e && (0, p.i)(e, {
       secondary_color: t
     })
   }, 200)

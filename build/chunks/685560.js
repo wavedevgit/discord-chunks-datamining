@@ -12,8 +12,8 @@ var n = a(255367),
   d = a(179360),
   u = a(621628),
   m = a(667815),
-  p = a(645041),
-  x = a(713081),
+  x = a(645041),
+  p = a(713081),
   h = a(675478),
   b = a(581883),
   f = a(899667),
@@ -49,7 +49,7 @@ async function E(e, t, a) {
       ends_at: l()().add(1, "day")
     },
     rejectWithError: !0
-  }))), (0, d.C0)(e), (0, x.Fm)(e, !0)
+  }))), (0, d.C0)(e), (0, p.Fm)(e, !0)
 }
 async function S(e) {
   await s.tn.post({
@@ -65,7 +65,7 @@ function P() {
       var e;
       return null == (e = v.Z.getGuild(t)) ? void 0 : e.name
     }),
-    r = (0, i.Wu)([b.Z], () => [...C, ...O].filter(e => null != t && (0, p.OY)(e, t))),
+    r = (0, i.Wu)([b.Z], () => [...C, ...O].filter(e => null != t && (0, x.OY)(e, t))),
     l = null != (e = (0, i.e7)([b.Z], () => {
       var e;
       return null == (e = b.Z.settings.userContent) ? void 0 : e.dismissedContents
@@ -92,7 +92,7 @@ function P() {
         variant: "primary",
         text: "Reset",
         onClick: () => {
-          (0, x.Qh)()
+          (0, p.Qh)()
         }
       })]
     }), (0, n.jsxs)("div", {
@@ -147,7 +147,7 @@ function P() {
       }), C.map(e => (0, n.jsx)(c.j7V, {
         className: _.formSwitch,
         onChange: a => {
-          a ? (0, p.Qd)(e, t, !1) : ((0, h.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, p.c7)(e, t))
+          a ? (0, x.Qd)(e, t, !1) : ((0, h.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, x.c7)(e, t))
         },
         value: r.includes(e),
         children: (0, n.jsx)(c.Text, {
@@ -163,7 +163,7 @@ function P() {
       }), O.map(e => (0, n.jsx)(c.j7V, {
         className: _.formSwitch,
         onChange: a => {
-          a ? (0, p.Qd)(e, t, !1) : ((0, h.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, p.c7)(e, t))
+          a ? (0, x.Qd)(e, t, !1) : ((0, h.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, x.c7)(e, t))
         },
         value: r.includes(e),
         children: (0, n.jsx)(c.Text, {

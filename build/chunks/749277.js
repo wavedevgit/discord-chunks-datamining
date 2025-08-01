@@ -1,4 +1,4 @@
-/** Chunk was on 58636 **/
+/** Chunk was on 69150 **/
 n.d(t, {
   A: () => b
 });
@@ -23,8 +23,8 @@ var r = n(442837),
   O = n(626135),
   T = n(243778),
   S = n(921944),
-  m = n(981631),
-  N = n(801461),
+  N = n(981631),
+  m = n(801461),
   R = n(474936),
   A = n(388032),
   y = n(131715);
@@ -97,7 +97,7 @@ let b = e => {
               className: y.platformIcon
             }), A.intl.string(A.t["5NUVHB"]), (0, i.jsx)(o.NoS, {
               onClick: () => (0, u.Z)({
-                platformType: m.ABu.SPOTIFY,
+                platformType: N.ABu.SPOTIFY,
                 location: "Notice Bar"
               }),
               noticeType: b,
@@ -112,10 +112,10 @@ let b = e => {
             }), (0, i.jsx)("img", {
               alt: "",
               className: y.platformIcon,
-              src: c.Z.get(m.ABu.PLAYSTATION).icon.whiteSVG
+              src: c.Z.get(N.ABu.PLAYSTATION).icon.whiteSVG
             }), A.intl.string(A.t.WHWgoa), (0, i.jsx)(o.EyT, {
               onClick: () => (0, u.Z)({
-                platformType: m.ABu.PLAYSTATION,
+                platformType: N.ABu.PLAYSTATION,
                 location: "Notice Bar"
               }),
               children: A.intl.string(A.t.S0W8Z2)
@@ -128,7 +128,7 @@ let b = e => {
               onClick: () => r(S.L.UNKNOWN),
               noticeType: b
             }), A.intl.string(A.t.B2hnhY), (0, i.jsx)(o.NoS, {
-              onClick: () => a.Z.open(m.oAB.ACCOUNT),
+              onClick: () => a.Z.open(N.oAB.ACCOUNT),
               noticeType: b,
               children: A.intl.string(A.t["50KYxs"])
             })]
@@ -145,15 +145,15 @@ let b = e => {
               className: y.premiumAction,
               noticeType: b,
               onClick: () => {
-                O.default.track(m.rMx.PREMIUM_PROMOTION_OPENED, {
-                  location_section: m.jXE.NOTIFICATION_BAR,
-                  location_object: m.qAy.BUTTON_CTA
-                }), a.Z.open(m.oAB.PREMIUM)
+                O.default.track(N.rMx.PREMIUM_PROMOTION_OPENED, {
+                  location_section: N.jXE.NOTIFICATION_BAR,
+                  location_object: N.qAy.BUTTON_CTA
+                }), a.Z.open(N.oAB.PREMIUM)
               },
               children: A.intl.string(A.t["8JC5e3"])
             }), (0, i.jsx)(o.RyX, {
               onClick: () => {
-                r(S.L.UNKNOWN), (0, s.mB)(m.xW$.PREMIUM_PROMO_DISMISSED, !0)
+                r(S.L.UNKNOWN), (0, s.mB)(N.xW$.PREMIUM_PROMO_DISMISSED, !0)
               },
               noticeType: b
             })]
@@ -177,7 +177,7 @@ let b = e => {
             }), A.intl.string(A.t["0KFB2N"]), (0, i.jsx)(o.NoS, {
               noticeType: b,
               onClick: () => {
-                r(S.L.UNKNOWN), a.Z.open(m.oAB.PREMIUM)
+                r(S.L.UNKNOWN), a.Z.open(N.oAB.PREMIUM)
               },
               children: A.intl.string(A.t.pyYSiI)
             })]
@@ -191,7 +191,7 @@ let b = e => {
             }), A.intl.string(A.t["7490vb"]), (0, i.jsx)(o.NoS, {
               noticeType: b,
               onClick: () => {
-                (0, I.uL)(m.Z5c.SETTINGS("account"))
+                (0, I.uL)(N.Z5c.SETTINGS("account"))
               },
               children: A.intl.string(A.t.Vm8akJ)
             })]
@@ -206,7 +206,7 @@ let b = e => {
             }), A.intl.string(A.t.pJ4hJC), (0, i.jsx)(o.NoS, {
               noticeType: b,
               onClick: () => {
-                r(S.L.PRIMARY), (0, I.uL)(1 === g.length ? m.Z5c.GUILD_SETTINGS(g[0], "role-subscriptions") : m.Z5c.PICK_GUILD_SETTINGS("role-subscriptions", void 0, "server-subscriptions-finish-setting-up"))
+                r(S.L.PRIMARY), (0, I.uL)(1 === g.length ? N.Z5c.GUILD_SETTINGS(g[0], "role-subscriptions") : N.Z5c.PICK_GUILD_SETTINGS("role-subscriptions", void 0, "server-subscriptions-finish-setting-up"))
               },
               children: A.intl.string(A.t["74s74O"])
             })]
@@ -218,7 +218,7 @@ let b = e => {
               onClick: () => r(S.L.UNKNOWN),
               noticeType: b
             }), A.intl.format(A.t.pdYZys, {}), (0, i.jsx)(o.NoS, {
-              onClick: () => (0, E.Z)(N.Kq.NOTICE),
+              onClick: () => (0, E.Z)(m.Kq.NOTICE),
               noticeType: b,
               children: A.intl.string(A.t.LhlgY2)
             })]
@@ -234,7 +234,7 @@ let b = e => {
                 (0, _.Z)({
                   subscriptionTier: R.Si.TIER_2,
                   analyticsLocations: [d.Z.CHECKOUT_RECOVERY_NAGBAR],
-                  analyticsLocation: m.Sbl.CHECKOUT_RECOVERY_NAGBAR,
+                  analyticsLocation: N.Sbl.CHECKOUT_RECOVERY_NAGBAR,
                   onClose: () => r(S.L.UNKNOWN)
                 })
               },
@@ -247,12 +247,12 @@ let b = e => {
             color: o.DM8.BRAND,
             children: [(0, i.jsx)(o.RyX, {
               onClick: () => r(S.L.USER_DISMISS),
-              noticeType: m.kVF.REPORT_TO_MOD_SURVEY
+              noticeType: N.kVF.REPORT_TO_MOD_SURVEY
             }), A.intl.string(A.t["Aa+l7e"]), (0, i.jsx)(o.NoS, {
               onClick: () => {
                 window.open("https://discord.sjc1.qualtrics.com/jfe/form/SV_5uP0NWTpoXsYSUu?user_id=".concat(null == P ? void 0 : P.id, "&guild_id=").concat(D), "_blank"), r(S.L.TAKE_ACTION)
               },
-              noticeType: m.kVF.REPORT_TO_MOD_SURVEY,
+              noticeType: N.kVF.REPORT_TO_MOD_SURVEY,
               children: A.intl.string(A.t["iT+wQ0"])
             })]
           })

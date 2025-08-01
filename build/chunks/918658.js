@@ -1,4 +1,4 @@
-/** Chunk was on 58636 **/
+/** Chunk was on 69150 **/
 n.d(t, {
   Z: () => k,
   d: () => U
@@ -23,8 +23,8 @@ var i = n(255367),
   O = n(259580),
   T = n(358085),
   S = n(962086),
-  m = n(160404),
-  N = n(889695),
+  N = n(160404),
+  m = n(889695),
   R = n(981631),
   A = n(176505),
   y = n(302463),
@@ -70,11 +70,11 @@ function k() {
       backNavigationSection: o,
       isFullServerPreview: c,
       isServerShopPreview: T
-    } = (0, s.cj)([m.Z], () => ({
-      viewingRoles: null != t ? m.Z.getViewingRoles(t) : null,
-      backNavigationSection: m.Z.getBackNavigationSection(t),
-      isFullServerPreview: null != t && m.Z.isFullServerPreview(t),
-      isServerShopPreview: null != t && m.Z.isViewingServerShop(t)
+    } = (0, s.cj)([N.Z], () => ({
+      viewingRoles: null != t ? N.Z.getViewingRoles(t) : null,
+      backNavigationSection: N.Z.getBackNavigationSection(t),
+      isFullServerPreview: null != t && N.Z.isFullServerPreview(t),
+      isServerShopPreview: null != t && N.Z.isViewingServerShop(t)
     }));
   if (null == l || null == t) return null;
   let k = function(e) {
@@ -95,7 +95,7 @@ function k() {
       let {
         backToSettings: n
       } = e;
-      null != t && (m.Z.isFullServerPreview(t) && (0, I.uL)(R.Z5c.CHANNEL(t)), h.ZP.shouldShowOnboarding(t) && (u.Z.finishOnboarding(t), (0, _.EI)(t)), (0, S.mL)(t), n && p.Z.open(t, o), o === R.pNK.ROLE_SUBSCRIPTIONS && (0, E.GN)(t))
+      null != t && (N.Z.isFullServerPreview(t) && (0, I.uL)(R.Z5c.CHANNEL(t)), h.ZP.shouldShowOnboarding(t) && (u.Z.finishOnboarding(t), (0, _.EI)(t)), (0, S.mL)(t), n && p.Z.open(t, o), o === R.pNK.ROLE_SUBSCRIPTIONS && (0, E.GN)(t))
     };
   return (0, i.jsxs)(d.qXd, {
     color: d.DM8.BRAND,
@@ -129,7 +129,7 @@ function k() {
       }), (0, i.jsx)(d.yRy, {
         targetElementRef: e,
         position: "bottom",
-        renderPopout: () => (0, i.jsx)(N.Z, {
+        renderPopout: () => (0, i.jsx)(m.Z, {
           guildId: t
         }),
         children: t => {
@@ -177,7 +177,7 @@ function U(e) {
   let {
     guildId: t
   } = e;
-  return (0, s.e7)([m.Z], () => m.Z.isViewingRoles(t)) ? (0, i.jsx)("div", {
+  return (0, s.e7)([N.Z], () => N.Z.isViewingRoles(t)) ? (0, i.jsx)("div", {
     className: o()(D.settingsWrapper, {
       [D.windows]: (0, T.isWindows)(),
       [D.osx]: (0, T.isMac)()

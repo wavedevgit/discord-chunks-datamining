@@ -1,6 +1,6 @@
-/** Chunk was on 58636 **/
+/** Chunk was on 69150 **/
 n.d(t, {
-  Z: () => m
+  Z: () => N
 }), n(539854), n(388685);
 var i = n(255367);
 n(73800);
@@ -41,15 +41,15 @@ function S(e) {
   }
   return e
 }
-let m = 12633 == n.j ? () => {
+let N = 12633 == n.j ? () => {
   var e, t;
   let r = (0, s.e7)([u.Z], () => u.Z.getGuildId(), []),
-    m = (0, s.e7)([d.Z], () => d.Z.getGuild(r), [r]),
-    N = (0, s.e7)([I.Z], () => null != r ? I.Z.getRequest(r) : null, [r]),
+    N = (0, s.e7)([d.Z], () => d.Z.getGuild(r), [r]),
+    m = (0, s.e7)([I.Z], () => null != r ? I.Z.getRequest(r) : null, [r]),
     R = (0, o.TH)(),
-    A = (null == (e = (0, o.LX)(R.pathname, g.Z5c.CHANNEL(null == m ? void 0 : m.id, f.oC.GUILD_ONBOARDING))) ? void 0 : e.isExact) === !0;
-  if (null == m || !(0, p.Dc)(m) || A) return null;
-  let y = null != (t = null == N ? void 0 : N.applicationStatus) ? t : E.wB.STARTED,
+    A = (null == (e = (0, o.LX)(R.pathname, g.Z5c.CHANNEL(null == N ? void 0 : N.id, f.oC.GUILD_ONBOARDING))) ? void 0 : e.isExact) === !0;
+  if (null == N || !(0, p.Dc)(N) || A) return null;
+  let y = null != (t = null == m ? void 0 : m.applicationStatus) ? t : E.wB.STARTED,
     b = null,
     P = null,
     D = null,
@@ -63,7 +63,7 @@ let m = 12633 == n.j ? () => {
             header: C.intl.string(C.t.aIz1oa),
             confirmText: C.intl.string(C.t["cY+Ooa"]),
             cancelText: C.intl.string(C.t["ETE/oK"]),
-            onConfirm: () => h.Z.removeGuildJoinRequest(m.id),
+            onConfirm: () => h.Z.removeGuildJoinRequest(N.id),
             confirmButtonColor: a.zx.Colors.BRAND
           }, e), n = n = {
             children: (0, i.jsx)(c.Text, {
@@ -90,14 +90,14 @@ let m = 12633 == n.j ? () => {
             default: e
           } = await n.e("3378").then(n.bind(n, 76075));
           return t => (0, i.jsx)(e, S({
-            guildId: m.id
+            guildId: N.id
           }, t))
         })
       }, v.push(O.error);
       break;
     default:
       b = C.intl.string(C.t.G5YKXF), P = C.intl.string(C.t["r8/DT0"]), D = () => {
-        (0, _.hk)(m.id)
+        (0, _.hk)(N.id)
       }
   }
   return (0, i.jsxs)("div", {

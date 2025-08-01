@@ -1,4 +1,4 @@
-/** Chunk was on 58636 **/
+/** Chunk was on 69150 **/
 n.d(t, {
   c: () => R
 });
@@ -22,8 +22,8 @@ var i = n(255367),
   O = n(921944),
   T = n(981631),
   S = n(474936),
-  m = n(388032),
-  N = n(134772);
+  N = n(388032),
+  m = n(134772);
 let R = e => {
   let {
     dismissibleContent: t
@@ -91,19 +91,19 @@ let R = e => {
     }), (0, i.jsx)(a.SrA, {
       size: "md",
       color: "currentColor",
-      className: N.premiumIcon
+      className: m.premiumIcon
     }), A ? y ? (0, i.jsxs)(l.xv, {
       variant: "text-sm/normal",
-      className: N.text,
-      children: [m.intl.string(m.t["5JMiOj"]), " ", m.intl.format(m.t.fjSvsL, {
+      className: m.text,
+      children: [N.intl.string(N.t["5JMiOj"]), " ", N.intl.format(N.t.fjSvsL, {
         onClick: v
       })]
-    }) : m.intl.string(m.t["5JMiOj"]) : m.intl.string(m.t["Pzh+Gx"]), (0, i.jsx)(a.NoS, {
+    }) : N.intl.string(N.t["5JMiOj"]) : N.intl.string(N.t["Pzh+Gx"]), (0, i.jsx)(a.NoS, {
       noticeType: T.kVF.OUTBOUND_PROMOTION,
       onClick: () => {
         M(), null !== e && e(O.L.TAKE_ACTION)
       },
-      children: y ? m.intl.string(m.t.pj0XBA) : m.intl.string(m.t.jVcuVV)
+      children: y ? N.intl.string(N.t.pj0XBA) : N.intl.string(N.t.jVcuVV)
     })]
   });
   return (0, i.jsx)(C.O1, {

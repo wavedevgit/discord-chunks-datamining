@@ -1,4 +1,4 @@
-/** Chunk was on 58636 **/
+/** Chunk was on 69150 **/
 n.d(t, {
   Z: () => T
 });
@@ -25,14 +25,14 @@ function T(e) {
   var t, T;
   let {
     onDismiss: S
-  } = e, m = (0, l.e7)([h.Z], () => h.Z.getGuildId()), N = (0, l.e7)([u.Z], () => null != m ? u.Z.getChannelId(m) : null, [m]), R = null != m ? m : null, A = (0, l.e7)([d.Z], () => null != R ? d.Z.getGuild(R) : null, [R]), {
+  } = e, N = (0, l.e7)([h.Z], () => h.Z.getGuildId()), m = (0, l.e7)([u.Z], () => null != N ? u.Z.getChannelId(N) : null, [N]), R = null != N ? N : null, A = (0, l.e7)([d.Z], () => null != R ? d.Z.getGuild(R) : null, [R]), {
     shouldShowIncidentActions: y,
     incidentData: b,
     isUnderLockdown: P
   } = (0, E.mI)(R), D = (0, a.n2)(null != (t = null == A ? void 0 : A.id) ? t : g.lds), v = r.useCallback(() => null != A && (0, c._X)(A.id), [A]);
   if (null == A || null == b || !y) return null;
   let M = e => {
-      if (e && D && N !== f.oC.MEMBER_SAFETY && v()) return void _.default.track(g.rMx.APP_NOTICE_PRIMARY_CTA_OPENED, {
+      if (e && D && m !== f.oC.MEMBER_SAFETY && v()) return void _.default.track(g.rMx.APP_NOTICE_PRIMARY_CTA_OPENED, {
         notice_type: g.kVF.GUILD_RAID_NOTIFICATION,
         guild_id: A.id
       });
@@ -112,7 +112,7 @@ function T(e) {
     }) : C.intl.formatToPlainString(C.t.W87xDA, {
       guildName: A.name
     }),
-    j = D && N === f.oC.MEMBER_SAFETY;
+    j = D && m === f.oC.MEMBER_SAFETY;
   return (0, i.jsxs)(o.qXd, {
     className: O.notice,
     color: o.DM8.WARNING,
