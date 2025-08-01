@@ -6,8 +6,8 @@ var i = t(442837),
   r = t(431328),
   l = t(501655),
   o = t(427679),
-  c = t(592125),
-  a = t(430824);
+  a = t(592125),
+  c = t(430824);
 
 function s(e) {
   let {
@@ -19,9 +19,9 @@ function s(e) {
       participantCount: d
     },
     context: g
-  } = e, p = (0, i.e7)([a.Z, c.Z], () => {
+  } = e, p = (0, i.e7)([c.Z, a.Z], () => {
     var e;
-    return a.Z.getGuild(null == (e = c.Z.getChannel(n)) ? void 0 : e.getGuildId())
+    return c.Z.getGuild(null == (e = a.Z.getChannel(n)) ? void 0 : e.getGuildId())
   }, [n]), f = (0, i.e7)([o.Z], () => o.Z.getStageInstanceByChannel(n), [n]), h = (0, r.w8)(n, l.pV.SPEAKER), v = (0, r.Rk)(n), m = null != f ? h : u, j = (null != f ? v : d) - m.length;
   return {
     channelId: n,

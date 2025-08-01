@@ -1,6 +1,6 @@
 /**
   Module ID: 22754
-  Original File Name: 99f929d0406eb246
+  Original File Name: 1f4c9caa7bf757e4
 **/
 .container__5537c {
     display: flex;
@@ -1263,4 +1263,10 @@
     z-index: 0
 }
 
-/*# sourceMappingURL=99f929d0406eb246.css.map*/
+.textButtonWrapper__99afd {
+    align-items: center;
+    display: flex;
+    padding: calc(var(--space-4) - 1px) calc(var(--space-12) - 1px)
+}
+
+/*# sourceMappingURL=1f4c9caa7bf757e4.css.map*/

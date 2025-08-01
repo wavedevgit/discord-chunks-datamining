@@ -1,6 +1,6 @@
 /**
   Module ID: 76010
-  Original File Name: 46016e0cdbf027d0
+  Original File Name: 7fc086729e24714d
 **/
 .container__5537c {
     display: flex;
@@ -941,4 +941,10 @@
     z-index: 0
 }
 
-/*# sourceMappingURL=46016e0cdbf027d0.css.map*/
+.textButtonWrapper__99afd {
+    align-items: center;
+    display: flex;
+    padding: calc(var(--space-4) - 1px) calc(var(--space-12) - 1px)
+}
+
+/*# sourceMappingURL=7fc086729e24714d.css.map*/

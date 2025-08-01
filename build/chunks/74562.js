@@ -7,8 +7,8 @@ t(73800);
 var r = t(442837),
   l = t(481060),
   o = t(434404),
-  c = t(147754),
-  a = t(939863),
+  a = t(147754),
+  c = t(939863),
   s = t(430824),
   u = t(496675),
   d = t(981631),
@@ -21,7 +21,7 @@ function f(e) {
     onClose: t
   } = e, {
     showHubEventsList: f
-  } = c.Z.useExperiment({
+  } = a.Z.useExperiment({
     guildId: n,
     location: "6597ca_1"
   }, {
@@ -35,7 +35,7 @@ function f(e) {
   }, [n, f]);
   return (0, i.jsxs)("div", {
     className: p.container,
-    children: [(0, i.jsx)(a.Z, {
+    children: [(0, i.jsx)(c.Z, {
       children: (0, i.jsx)("div", {
         className: p.circle,
         children: (0, i.jsx)(l.Que, {

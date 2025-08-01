@@ -1,6 +1,6 @@
 /**
   Module ID: 71874
-  Original File Name: 358ed6380827eaae
+  Original File Name: b2831dcf0e5eb80f
 **/
 .container__5537c {
     display: flex;
@@ -1112,4 +1112,10 @@
     z-index: 0
 }
 
-/*# sourceMappingURL=358ed6380827eaae.css.map*/
+.textButtonWrapper__99afd {
+    align-items: center;
+    display: flex;
+    padding: calc(var(--space-4) - 1px) calc(var(--space-12) - 1px)
+}
+
+/*# sourceMappingURL=b2831dcf0e5eb80f.css.map*/
