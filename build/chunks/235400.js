@@ -66,7 +66,7 @@ function C(e) {
       analyticsSource: s.Z.EDIT_AVATAR_DECORATION_MODAL,
       initialProductSkuId: e
     })
-  }, [l, _]), Z = (0, p.M)(), H = () => null != M && (!(0, u.qS)(M) || k) || null === D ? (0, r.jsx)(o.zxk, {
+  }, [l, _]), Z = (0, p.M)(), H = Z && (0, u.G1)(x), Y = () => null != M && (!(0, u.qS)(M) || k) || null === D ? (0, r.jsx)(o.zxk, {
     variant: "primary",
     text: A.intl.string(A.t.Jh8fJy),
     onClick: V,
@@ -110,15 +110,14 @@ function C(e) {
         avatarDecorationOverride: D
       })]
     }), (0, r.jsxs)(o.mzw, {
-      children: [(0, r.jsx)("div", {
-        children: H()
-      }), !Z && (0, r.jsx)(o.zxk, {
+      className: N.modalFooter,
+      children: [Y(), H ? (0, r.jsx)(h.Z, {
+        product: x,
+        onSecondaryClick: _
+      }) : (0, r.jsx)(o.zxk, {
         variant: "secondary",
         text: A.intl.string(A.t["ETE/oK"]),
         onClick: _
-      }), Z && (0, u.G1)(x) && (0, r.jsx)(h.Z, {
-        product: x,
-        onSecondaryClick: _
       })]
     })]
   })
@@ -158,6 +157,7 @@ function R(e) {
       className: N.modal,
       size: S ? o.CgR.DYNAMIC : o.CgR.MEDIUM,
       parentComponent: "AvatarDecorationModal",
+      "data-migration-pending": !0,
       children: S ? (0, r.jsx)(o.$jN, {
         className: N.spinner,
         type: o.$jN.Type.SPINNING_CIRCLE

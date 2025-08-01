@@ -1,6 +1,6 @@
 /**
   Module ID: 55183
-  Original File Name: 71d22d4e70ce5fa0
+  Original File Name: 2c060b267ec4dbcb
 **/
 .previewContainer__92e52 {
     align-items: center;
@@ -146,11 +146,7 @@
 }
 
 .modalFooter__20a09 {
-    padding: 16px
-}
-
-.buttonsRight__20a09 {
-    display: flex
+    gap: var(--space-8)
 }
 
 .modalHeader__20a09 {
@@ -205,4 +201,4 @@
     margin-right: 6px
 }
 
-/*# sourceMappingURL=71d22d4e70ce5fa0.css.map*/
+/*# sourceMappingURL=2c060b267ec4dbcb.css.map*/

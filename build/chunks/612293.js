@@ -49,6 +49,7 @@ function C(e) {
       transitionState: t,
       size: P ? i.CgR.DYNAMIC : i.CgR.MEDIUM,
       parentComponent: "NameplateModal",
+      "data-migration-pending": !0,
       children: P ? (0, n.jsx)(i.$jN, {
         className: g.spinner,
         type: i.$jN.Type.SPINNING_CIRCLE
@@ -80,7 +81,7 @@ function j(e) {
   } = (0, b.Zx)(f, P), [I, A] = (0, a.useState)(() => {
     var e;
     return void 0 !== R ? R : null != (e = null != E ? E : w) ? e : null
-  }), [N, k] = (0, a.useState)(() => null != I && O.some(e => e.id === I.id)), T = (0, a.useCallback)(e => {
+  }), N = (null == I ? void 0 : I.skuId) === (void 0 === R ? null == w ? void 0 : w.skuId : null == R ? void 0 : R.skuId), [k, T] = (0, a.useState)(() => null != I && O.some(e => e.id === I.id)), D = (0, a.useCallback)(e => {
     j(), (0, u.mK)({
       analyticsLocations: C,
       analyticsSource: s.Z.EDIT_NAMEPLATE_MODAL,
@@ -104,27 +105,28 @@ function j(e) {
       children: [(0, n.jsx)(_.Z, {
         selected: I,
         onSelect: (e, t) => {
-          A(e), k(null != t && t)
+          A(e), T(null != t && t)
         },
-        onOpenShop: T,
+        onOpenShop: D,
         available: v,
         purchased: O
       }), (0, n.jsx)(m.Z, {
         user: f,
         selectedNameplate: I,
-        purchased: N
+        purchased: k
       })]
     }), (0, n.jsxs)(i.mzw, {
-      children: [N || null == I ? (0, n.jsx)(i.zxk, {
+      className: g.modalFooter,
+      children: [k || null == I ? (0, n.jsx)(i.zxk, {
         variant: "primary",
         text: y.intl.string(y.t.Jh8fJy),
-        disabled: void 0 === I,
+        disabled: N,
         onClick: () => {
           null != P ? (0, p.RH)(I) : (0, o.Rx)(I), j()
         }
       }) : (0, n.jsx)(i.zxk, {
         variant: "primary",
-        onClick: () => T(null == I ? void 0 : I.skuId),
+        onClick: () => D(null == I ? void 0 : I.skuId),
         text: y.intl.string(y.t.fYfGgI)
       }), (0, n.jsx)(i.zxk, {
         variant: "secondary",

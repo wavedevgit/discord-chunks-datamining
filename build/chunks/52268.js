@@ -1,6 +1,6 @@
 /** Chunk was on 55183 **/
 r.d(t, {
-  Z: () => O
+  Z: () => v
 }), r(314940);
 var n = r(255367),
   i = r(73800),
@@ -79,7 +79,7 @@ let y = () => 80,
       children: t
     }))
   },
-  v = e => {
+  O = e => {
     var t, {
         profileEffect: r,
         innerRef: l,
@@ -91,8 +91,8 @@ let y = () => 80,
     let p = (0, d.V)(r.id),
       y = i.useRef(null),
       {
-        accessibilityLabel: v,
-        thumbnailPreviewSrc: O,
+        accessibilityLabel: O,
+        thumbnailPreviewSrc: v,
         title: P
       } = null != (t = null == p ? void 0 : p.config) ? t : {};
     return (0, n.jsxs)(x, b(h({
@@ -101,11 +101,11 @@ let y = () => 80,
     }, u), {
       children: [(0, n.jsx)("img", {
         src: g,
-        alt: v,
+        alt: O,
         className: m.presetEffectBackground
       }), (0, n.jsx)("img", {
         className: m.presetEffectImg,
-        src: O,
+        src: v,
         alt: P
       }), (0, n.jsx)(a.Z, {
         isPurchaseSection: o === f.$0.PURCHASE,
@@ -115,7 +115,7 @@ let y = () => 80,
       })]
     }))
   },
-  O = e => {
+  v = e => {
     let {
       user: t,
       guild: r,
@@ -143,9 +143,9 @@ let y = () => 80,
         renderItem: (e, t, u, b) => {
           let {
             section: y,
-            items: O
+            items: v
           } = d[e];
-          return (0, s.EQ)(O[t]).with(f.Tm, () => (0, n.jsxs)(x, {
+          return (0, s.EQ)(v[t]).with(f.Tm, () => (0, n.jsxs)(x, {
             style: h({}, u),
             isSelected: !g,
             onSelect: () => o(null),
@@ -174,7 +174,7 @@ let y = () => 80,
             })]
           }, b)).otherwise(e => {
             let t = i === e.id;
-            return (0, n.jsx)(v, {
+            return (0, n.jsx)(O, {
               style: h({}, u),
               section: y,
               profileEffect: e,

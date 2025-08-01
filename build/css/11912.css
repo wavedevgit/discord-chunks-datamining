@@ -1,6 +1,6 @@
 /**
   Module ID: 11912
-  Original File Name: 5f0f396a6b8e8633
+  Original File Name: ce12e10c65617fa8
 **/
 .previewContainer__1e458 {
     border-radius: var(--radius-md);
@@ -881,4 +881,8 @@
     justify-content: space-between
 }
 
-/*# sourceMappingURL=5f0f396a6b8e8633.css.map*/
+.modalFooter__2aeb5 {
+    gap: var(--space-8)
+}
+
+/*# sourceMappingURL=ce12e10c65617fa8.css.map*/
