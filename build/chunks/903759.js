@@ -8,8 +8,8 @@ var r = n(255367),
   i = n(327802),
   s = n(372129),
   o = n(598117),
-  c = n(746622),
-  u = n(388032),
+  u = n(746622),
+  c = n(388032),
   d = n(162337);
 let m = e => {
     let {
@@ -27,8 +27,8 @@ let m = e => {
           className: d.textContainer,
           children: [(0, r.jsx)(a.Text, {
             variant: "text-md/medium",
-            children: u.intl.format(u.t["Ks2/3d"], {
-              selectFileHook: (e, n) => (0, r.jsx)(g, {
+            children: c.intl.format(c.t["Ks2/3d"], {
+              selectFileHook: (e, n) => (0, r.jsx)(h, {
                 translatedContent: e,
                 setUserImage: t
               }, n)
@@ -36,9 +36,9 @@ let m = e => {
           }), (0, r.jsx)(a.Text, {
             variant: "text-xs/normal",
             color: "text-tertiary",
-            children: u.intl.string(u.t.UTE8Cw)
+            children: c.intl.string(c.t.UTE8Cw)
           })]
-        }), null !== n && (0, r.jsx)(c.H, {
+        }), null !== n && (0, r.jsx)(u.H, {
           error: o.ze.IMAGE_LOAD,
           variant: "text-sm/normal",
           color: "text-danger"
@@ -49,7 +49,7 @@ let m = e => {
       })
     })
   },
-  g = e => {
+  h = e => {
     let {
       setUserImage: t,
       translatedContent: n

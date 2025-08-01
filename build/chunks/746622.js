@@ -1,6 +1,6 @@
 /** Chunk was on 56535 **/
 n.d(t, {
-  H: () => c,
+  H: () => u,
   z: () => d
 });
 var r = n(255367),
@@ -9,7 +9,7 @@ var r = n(255367),
   i = n(981631),
   s = n(185923),
   o = n(388032);
-let c = e => {
+let u = e => {
     let {
       error: t,
       variant: n,
@@ -18,10 +18,10 @@ let c = e => {
     return (0, r.jsx)(l.Text, {
       variant: n,
       color: a,
-      children: u(t)
+      children: c(t)
     })
   },
-  u = e => {
+  c = e => {
     switch (e) {
       case i.evJ.TOO_MANY_EMOJI:
       case i.evJ.TOO_MANY_ANIMATED_EMOJI:
