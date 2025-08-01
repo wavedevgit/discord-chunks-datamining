@@ -50,9 +50,9 @@ let P = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
       folderButtonSize: G,
       folderButtonContent: B,
       "aria-setsize": V,
-      "aria-posinset": H
+      "aria-posinset": F
     } = e, {
-      id: F,
+      id: H,
       name: z,
       children: W
     } = t, [K, Y] = i.useState(!1), [q, X] = i.useState(!1), Q = K || q, J = (0, f.Ml)("FolderItem");
@@ -77,7 +77,7 @@ let P = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
       X(e)
     }, []), en = i.useCallback(e => {
       ("ArrowRight" === e.key && !s || "ArrowLeft" === e.key && s) && M()
-    }, [M, s]), er = null != z && "" !== z ? z : null != Z && "" !== Z ? Z : S.intl.string(S.t.xV9hVl), ei = (0, c.Ie)("".concat(F)), el = "folder-items-".concat(F), eo = function(e) {
+    }, [M, s]), er = null != z && "" !== z ? z : null != Z && "" !== Z ? Z : S.intl.string(S.t.xV9hVl), ei = (0, c.Ie)("".concat(H)), el = "folder-items-".concat(H), eo = function(e) {
       let t = (0, h.dQu)(h.TVs.modules.guildbar.FOLDER_SIZE),
         n = (0, h.dQu)(h.TVs.modules.guildbar.AVATAR_SIZE),
         r = (0, h.dQu)(h.TVs.space.SPACE_XS);
@@ -95,7 +95,7 @@ let P = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
       config: {
         duration: P
       }
-    }), es = i.useCallback(e => null == n ? void 0 : n(F, e), [n, F]), ec = (0, r.jsxs)(v.H, {
+    }), es = i.useCallback(e => null == n ? void 0 : n(H, e), [n, H]), ec = (0, r.jsxs)(v.H, {
       children: [(0, r.jsx)(_.Z, {
         disabled: $ || s,
         hovered: K,
@@ -134,7 +134,7 @@ let P = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
             treeItemProps: ei,
             folderButtonContent: B,
             "aria-setsize": V,
-            "aria-posinset": H
+            "aria-posinset": F
           })
         })
       }), A ? (0, r.jsx)(y.ZP, {

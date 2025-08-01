@@ -42,12 +42,12 @@ function I(e) {
     isNewChannel: R,
     muted: D,
     resolvedUnreadSetting: L
-  } = e, M = (0, i.e7)([f.ZP], () => f.ZP.getMentionCount(n.id)), k = (0, i.e7)([f.ZP], () => f.ZP.getIsMentionLowImportance(n.id)), U = (0, a.ZP)(n), G = (0, i.e7)([p.Z], () => !p.Z.can(j.Plq.CONNECT, n)), B = (0, i.e7)([g.Z], () => g.Z.hasVideo(n.id)), V = (0, u.PK)(n.id) && n.isGuildStageVoice(), H = (0, O.ZP)({
+  } = e, M = (0, i.e7)([f.ZP], () => f.ZP.getMentionCount(n.id)), k = (0, i.e7)([f.ZP], () => f.ZP.getIsMentionLowImportance(n.id)), U = (0, a.ZP)(n), G = (0, i.e7)([p.Z], () => !p.Z.can(j.Plq.CONNECT, n)), B = (0, i.e7)([g.Z], () => g.Z.hasVideo(n.id)), V = (0, u.PK)(n.id) && n.isGuildStageVoice(), F = (0, O.ZP)({
     channel: n,
     locked: G,
     video: B || V,
     selected: I
-  }), F = (0, i.e7)([d.Z], () => d.Z.getNewThreadCount(n.guild_id, n.id)), z = (0, s.n2)(n.guild_id, n.id), W = (0, i.e7)([h.Z], () => {
+  }), H = (0, i.e7)([d.Z], () => d.Z.getNewThreadCount(n.guild_id, n.id)), z = (0, s.n2)(n.guild_id, n.id), W = (0, i.e7)([h.Z], () => {
     var e, t;
     return null != (t = null == (e = h.Z.getGuild(n.guild_id)) ? void 0 : e.features.has(j.oNc.COMMUNITY)) && t
   });
@@ -63,11 +63,11 @@ function I(e) {
     color: l.Z.unsafe_rawColors.BRAND_260.css,
     className: x.newChannel
   });
-  if (!D && L === E.i.ALL_MESSAGES && n.isForumLikeChannel() && null != F && F > 0) return (0, r.jsx)(o.Text, {
+  if (!D && L === E.i.ALL_MESSAGES && n.isForumLikeChannel() && null != H && H > 0) return (0, r.jsx)(o.Text, {
     variant: "text-xs/semibold",
     color: "text-brand",
     children: S.intl.format(S.t.GkAbqa, {
-      count: (0, o.NGo)(F)
+      count: (0, o.NGo)(H)
     })
   });
   if (!D && n.isForumLikeChannel() && null != z && z > 0) return (0, r.jsx)(o.Text, {
@@ -76,7 +76,7 @@ function I(e) {
     children: (0, o.NGo)(z)
   });
   let K = null != (t = null == N ? void 0 : N.length) ? t : 0;
-  return null != w && w && H ? (0, r.jsx)(C.Z, {
+  return null != w && w && F ? (0, r.jsx)(C.Z, {
     userCount: K,
     video: B || V,
     channel: n

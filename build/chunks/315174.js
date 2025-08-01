@@ -325,15 +325,15 @@ let D = i.memo(function(e) {
     headerClassName: T,
     communityInfoVisible: A,
     hasSubheader: D
-  } = e, M = v.features.has(C.oNc.ANIMATED_BANNER), k = (0, d.Z)(v), U = !k && (0, O.Z)(v), G = !k && A, B = (0, _.xR)(j) && M && !g, [V, H] = i.useState(!1), F = i.useRef(!1), z = i.useRef(null), W = null != t ? t : z, K = i.useRef(void 0), Y = m.QK.getSetting();
+  } = e, M = v.features.has(C.oNc.ANIMATED_BANNER), k = (0, d.Z)(v), U = !k && (0, O.Z)(v), G = !k && A, B = (0, _.xR)(j) && M && !g, [V, F] = i.useState(!1), H = i.useRef(!1), z = i.useRef(null), W = null != t ? t : z, K = i.useRef(void 0), Y = m.QK.getSetting();
   i.useEffect(() => {
-    if (B && n && !F.current && Y) return H(!0), K.current = setTimeout(() => {
-      H(!1)
+    if (B && n && !H.current && Y) return F(!0), K.current = setTimeout(() => {
+      F(!1)
     }, 5e3), () => {
       clearTimeout(K.current)
     }
   }, [B, n, Y]), i.useEffect(() => {
-    F.current = n
+    H.current = n
   }, [n]);
   let q = () => {
       let {
@@ -404,9 +404,9 @@ let D = i.memo(function(e) {
       }), B && q() ? (0, r.jsx)("div", {
         className: E.animatedBannerHoverLayer,
         onMouseEnter: () => {
-          H(!0), clearTimeout(K.current)
+          F(!0), clearTimeout(K.current)
         },
-        onMouseLeave: () => H(!1),
+        onMouseLeave: () => F(!1),
         style: {
           height: N
         }

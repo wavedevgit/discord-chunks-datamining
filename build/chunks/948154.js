@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => S
+  Z: () => A
 }), n(539854), n(388685);
 var r = n(392711),
   i = n(570140),
@@ -68,49 +68,55 @@ function v(e) {
     feature: p.Lr
   })
 }
-let I = (0, r.throttle)(T, O);
-async function T(e) {
-  var t, n, r, {
-      preload: a = !1
-    } = e,
-    s = E(e, ["preload"]);
-  let c = Date.now(),
-    h = [],
-    m = f.Z.getNotifyingChannelIds();
-  if (null == m) return;
-  let g = f.Z.getChannelInfoMap();
-  for (let e of m) {
-    if (a && !u.ZP.hasUnread(e)) continue;
-    let r = u.ZP.lastMessageId(e),
-      i = null != r && d.default.age(r) > p.ib;
-    if (h.length >= y || i) break;
-    (a ? (null == (t = g[e]) ? void 0 : t.loadState) === p.a7.UNLOADED : (null == (n = g[e]) ? void 0 : n.loadState) !== p.a7.LOADED) && h.push(o.Z.fetchMessages({
-      channelId: e,
-      limit: a ? p.W9 : p.AQ,
-      isPreload: a,
+let I = (0, r.throttle)(S, O);
+
+function T(e) {
+  let t = f.Z.getChannelInfoMap(),
+    n = [];
+  for (let i of e) {
+    var r;
+    if ((null == (r = t[i]) ? void 0 : r.loadState) === p.a7.LOADED) continue;
+    let e = u.ZP.lastMessageId(i),
+      a = null != e && d.default.age(e) > p.ib;
+    if (n.length >= y || a) break;
+    let s = o.Z.fetchMessages({
+      channelId: i,
+      limit: p.AQ,
       feature: p.Lr
-    }))
+    });
+    !1 !== s && null != s && n.push(s)
   }
-  let b = l.ZP.getSettingsFilteredMentions(),
-    O = null != b && b.length > 0 ? b[b.length - 1].id : null,
-    I = !1;
-  if (l.ZP.hasMore && !l.ZP.loading && (h.push(v(O)), I = !0), 0 === h.length) return void i.Z.dispatch({
+  return n
+}
+async function S(e) {
+  var t, {
+      preload: n = !1
+    } = e,
+    r = E(e, ["preload"]);
+  let a = Date.now(),
+    o = f.Z.getNotifyingChannelIds();
+  if (null == o) return;
+  let s = n ? [] : T(o),
+    c = l.ZP.getSettingsFilteredMentions(),
+    u = null != c && c.length > 0 ? c[c.length - 1].id : null,
+    d = !1;
+  if (l.ZP.hasMore && !l.ZP.loading && (s.push(v(u)), d = !0), 0 === s.length) return void i.Z.dispatch({
     type: "NOTIFICATIONS_INBOX_LOAD_MORE_INBOX_SUCCESS",
-    preload: a,
+    preload: n,
     finished: !0
   });
   try {
-    await Promise.all(h);
+    await Promise.all(s);
     let e = {
-      timeToLoad: Date.now() - c,
-      loadingTrigger: null != (r = s.loadingTrigger) ? r : p.X.UNKNOWN,
-      viewId: s.viewId,
-      channelsFetched: h.length - +!!I,
-      mentionsFetched: I
+      timeToLoad: Date.now() - a,
+      loadingTrigger: null != (t = r.loadingTrigger) ? t : p.X.UNKNOWN,
+      viewId: r.viewId,
+      channelsFetched: s.length - +!!d,
+      mentionsFetched: d
     };
-    a && (0, _.CP)(e), i.Z.dispatch({
+    n && (0, _.CP)(e), i.Z.dispatch({
       type: "NOTIFICATIONS_INBOX_LOAD_MORE_INBOX_SUCCESS",
-      preload: a,
+      preload: n,
       analyticsPayload: e
     })
   } catch (e) {
@@ -119,7 +125,7 @@ async function T(e) {
     })
   }
 }
-let S = {
+let A = {
   loadMoreInbox() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
     var {
@@ -135,7 +141,7 @@ let S = {
       preload: t
     }, n))
   },
-  inboxItemClick(e) {
+  inboxItemClick: function(e) {
     let {
       message: t,
       channel: n,

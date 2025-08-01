@@ -59,8 +59,8 @@ let I = i.memo(function(e) {
     } = (0, C.A)({
       location: "Activity Actions"
     }),
-    H = x(M, L, D),
-    F = i.useCallback(() => {
+    F = x(M, L, D),
+    H = i.useCallback(() => {
       o()(null != L, "Received null activity"), (0, p.v)(B, p.d.INVITE), y.default.track(j.rMx.OPEN_MODAL, {
         type: "Send Join Invite",
         application_id: L.application_id,
@@ -139,9 +139,9 @@ let I = i.memo(function(e) {
         icon: u
       })
     })) : null,
-    q = H && null == D ? (0, r.jsx)(v.Z, {
+    q = F && null == D ? (0, r.jsx)(v.Z, {
       tooltipText: E.intl.string(E.t["hC/Ze3"]),
-      onClick: F,
+      onClick: H,
       icon: a.ejJ
     }) : null,
     X = null == D ? null : (0, r.jsx)(v.Z, {

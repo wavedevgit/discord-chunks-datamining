@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => ei
+  Z: () => eo
 }), n(361932), n(187205), n(539854), n(388685), n(642613), n(387201);
 var r, i = n(512722),
   a = n.n(i),
@@ -42,11 +42,12 @@ let C = {},
   D = !1,
   L = !1,
   x = !1,
-  M = O.default.fromTimestamp(Date.now()),
-  k = !0,
-  j = null;
+  M = !1,
+  k = O.default.fromTimestamp(Date.now()),
+  j = !0,
+  U = null;
 
-function U() {
+function G() {
   let e = E.ZP.getFlattenedGuildIds().flatMap(e => h.ZP.getSelectableChannelIds(e)),
     t = u.Z.getAllActiveJoinedThreads(),
     n = e => !!S.TPd.GUILD_TEXTUAL.has(e.type) && (b.ZP.allowAllMessages(e) || (0, _.J)(e, d.Z, b.ZP, p.Z) === A.iN.ALL_MESSAGES),
@@ -70,7 +71,7 @@ function U() {
   })
 }
 
-function G(e) {
+function B(e) {
   var t;
   if (!m.Z.isReady(e)) return;
   let n = p.Z.getBasicChannel(e),
@@ -82,26 +83,26 @@ function G(e) {
   }), r
 }
 
-function B() {
+function V() {
   if (null == R) {
-    M = O.default.fromTimestamp(Date.now());
+    k = O.default.fromTimestamp(Date.now());
     return
   }
   for (let e of R.toSorted((e, t) => O.default.compare(g.ZP.lastMessageId(t), g.ZP.lastMessageId(e)))) {
     let t = C[e];
     if (t.loadState === T.a7.UNLOADED && null != t.mostRecentMessageId) {
-      M = t.mostRecentMessageId;
+      k = t.mostRecentMessageId;
       return
     }
   }
-  M = "0"
+  k = "0"
 }
 
-function V() {
+function F() {
   let {
     notifyingChannelIds: e,
     staleChannelIds: t
-  } = U();
+  } = G();
   R = e, P = t, a()(null != R, "notifyingChannelIds should not be null");
   let n = R.filter(e => null == C[e]),
     r = Object.keys(C).filter(e => !(null == R ? void 0 : R.includes(e)));
@@ -112,29 +113,29 @@ function V() {
         loadState: T.a7.UNLOADED,
         mostRecentMessageId: g.ZP.lastMessageId(e)
       }, m.Z.isReady(e)) {
-      let t = G(e);
+      let t = B(e);
       if (null != t) {
         var i, o;
         C[e].loadState = T.a7.LOADED, C[e].mostRecentMessageId = null != (o = null == (i = t.last()) ? void 0 : i.id) ? o : C[e].mostRecentMessageId
       }
-    } w.updateChannelIds(R), B()
+    } w.updateChannelIds(R), V()
 }
 
-function F() {
-  for (let n of (C = {}, R = null, P = [], w = new I.Z, D = !1, L = !1, M = O.default.fromTimestamp(Date.now()), k = !0, x = !1, j = null, $ = null, V(), null != R ? R : [])) {
+function Z() {
+  for (let n of (C = {}, R = null, P = [], w = new I.Z, D = !1, L = !1, x = !1, k = O.default.fromTimestamp(Date.now()), j = !0, M = !1, U = null, ee = null, F(), null != R ? R : [])) {
     var e, t;
-    let r = G(n);
-    null != r && (C[n].loadState = T.a7.LOADED, C[n].mostRecentMessageId = null != (t = null == (e = r.last()) ? void 0 : e.id) ? t : null, B())
+    let r = B(n);
+    null != r && (C[n].loadState = T.a7.LOADED, C[n].mostRecentMessageId = null != (t = null == (e = r.last()) ? void 0 : e.id) ? t : null, V())
   }
 }
 
-function Z(e) {
+function H(e) {
   if (e instanceof f.ZP) return e;
   let t = m.Z.getMessage(e.channel_id, e.id);
   return null != t ? t : (0, l.e5)(e)
 }
 
-function H(e) {
+function Y(e) {
   var t, n, r;
   let {
     channelId: i,
@@ -142,11 +143,11 @@ function H(e) {
   } = e;
   if (null == R || (null == (t = a.author) ? void 0 : t.id) === (null == (n = y.default.getCurrentUser()) ? void 0 : n.id)) return !1;
   let o = R.includes(i),
-    s = Z(a),
+    s = H(a),
     l = s.mentioned;
   if (!o && !l) {
     if (!P.includes(i)) return !1;
-    V()
+    F()
   }
   if (!o && l && !(0, c.ln)(s)) return !1;
   w.addMessage({
@@ -158,18 +159,18 @@ function H(e) {
   })
 }
 
-function Y(e) {
+function W(e) {
   let {
     channelId: t
   } = e;
   if (!(null == R ? void 0 : R.includes(t))) return !1;
-  let n = G(t);
+  let n = B(t);
   if (null == n) return !1;
   let r = n.length >= T.AQ || n.hasFetched && !n.hasMoreBefore;
-  C[t].loadState !== T.a7.LOADED && (C[t].loadState = r ? T.a7.LOADED : T.a7.LOADED_UNREAD), B()
+  C[t].loadState !== T.a7.LOADED && (C[t].loadState = r ? T.a7.LOADED : T.a7.LOADED_UNREAD), V()
 }
 
-function W(e) {
+function K(e) {
   let {
     messages: t
   } = e;
@@ -188,69 +189,73 @@ function W(e) {
   }))
 }
 
-function K(e) {
+function z(e) {
   let {
     id: t
   } = e;
   return w.deleteMessages([t])
 }
 
-function z(e) {
+function q(e) {
   let {
     ids: t
   } = e;
   return w.deleteMessages(t)
 }
 
-function q() {
+function X() {
   D = !0
 }
 
-function X(e) {
+function Q(e) {
   let {
     preload: t,
     finished: n,
     analyticsPayload: r
   } = e;
-  D = !1, t ? x = !0 : (k = !0 !== n, L = !0), j = null != r ? r : null
+  D = !1, t ? M = !0 : (j = !0 !== n, x = !0), U = null != r ? r : null
 }
 
-function Q(e) {
+function J(e) {
   var t;
   let {
     preload: n
   } = e;
   return null != (null == (t = v.Lk.getCurrentConfig({
     location: "NotificationsInboxStore.canLoadMore"
-  })) ? void 0 : t.notificationCenterVariant) && null != R && !D && (!n || !x) && k
+  })) ? void 0 : t.notificationCenterVariant) && null != R && !D && !L && (!n || !M) && j
 }
 
-function J() {
-  D = !1, j = null
+function $() {
+  D = !1, U = null, L = !0
 }
-let $ = null;
+let ee = null;
 
-function ee(e) {
+function et(e) {
   let {
     messageId: t,
     isUnread: n
   } = e, r = v.Lk.getCurrentConfig({
     location: "handleInboxItemClick"
   }).notificationCenterVariant;
-  $ = n && r === v.jP.SIDEBAR ? t : null
+  ee = n && r === v.jP.SIDEBAR ? t : null
 }
 
-function et(e) {
+function en(e) {
   let {
     messageId: t
   } = e;
-  t === $ && ($ = null)
+  t === ee && (ee = null)
 }
 
-function en() {
-  $ = null
+function er() {
+  L = !1
 }
-class er extends(r = o.ZP.Store) {
+
+function ei() {
+  ee = null
+}
+class ea extends(r = o.ZP.Store) {
   initialize() {
     this.waitFor(E.ZP, h.ZP, p.Z, g.ZP, u.Z, d.Z, b.ZP, m.Z, c.ZP)
   }
@@ -258,7 +263,7 @@ class er extends(r = o.ZP.Store) {
     let {
       preload: t
     } = e;
-    return Q({
+    return J({
       preload: t
     })
   }
@@ -272,50 +277,51 @@ class er extends(r = o.ZP.Store) {
     return C
   }
   get oldestDisplayedMessageId() {
-    return M
+    return k
   }
   get hasMoreToLoad() {
-    return k
+    return j
   }
   get isLoading() {
     return D
   }
   get hasLoadedEver() {
-    return L
-  }
-  get hasPreloaded() {
     return x
   }
+  get hasPreloaded() {
+    return M
+  }
   get isLoadingComplete() {
-    return !D && !k
+    return !D && !j
   }
   get lastClickedUnreadMessageId() {
-    return $
+    return ee
   }
   get currentRequestAnalyticsPayload() {
-    return j
+    return U
   }
 }
-N(er, "displayName", "NotificationsInboxStore");
-let ei = new er(s.Z, {
-  LOAD_RECENT_MENTIONS_SUCCESS: W,
-  LOAD_MESSAGES_SUCCESS: Y,
-  MESSAGE_CREATE: H,
-  MESSAGE_DELETE: K,
-  RECENT_MENTION_DELETE: K,
-  MESSAGE_DELETE_BULK: z,
-  CONNECTION_OPEN: F,
-  GUILD_CREATE: V,
-  GUILD_DELETE: V,
-  USER_GUILD_SETTINGS_FULL_UPDATE: V,
-  THREAD_CREATE: V,
-  CHANNEL_CREATE: V,
-  THREAD_DELETE: V,
-  CHANNEL_DELETE: V,
-  NOTIFICATIONS_INBOX_LOAD_MORE_INBOX_START: q,
-  NOTIFICATIONS_INBOX_LOAD_MORE_INBOX_SUCCESS: X,
-  NOTIFICATIONS_INBOX_LOAD_MORE_INBOX_FAILURE: J,
-  NOTIFICATIONS_INBOX_ITEM_CLICK: ee,
-  NOTIFICATIONS_INBOX_ITEM_ACK: et,
-  NOTIFICATIONS_INBOX_CLOSE: en
+N(ea, "displayName", "NotificationsInboxStore");
+let eo = new ea(s.Z, {
+  LOAD_RECENT_MENTIONS_SUCCESS: K,
+  LOAD_MESSAGES_SUCCESS: W,
+  MESSAGE_CREATE: Y,
+  MESSAGE_DELETE: z,
+  RECENT_MENTION_DELETE: z,
+  MESSAGE_DELETE_BULK: q,
+  CONNECTION_OPEN: Z,
+  GUILD_CREATE: F,
+  GUILD_DELETE: F,
+  USER_GUILD_SETTINGS_FULL_UPDATE: F,
+  THREAD_CREATE: F,
+  CHANNEL_CREATE: F,
+  THREAD_DELETE: F,
+  CHANNEL_DELETE: F,
+  NOTIFICATIONS_INBOX_OPEN: er,
+  NOTIFICATIONS_INBOX_LOAD_MORE_INBOX_START: X,
+  NOTIFICATIONS_INBOX_LOAD_MORE_INBOX_SUCCESS: Q,
+  NOTIFICATIONS_INBOX_LOAD_MORE_INBOX_FAILURE: $,
+  NOTIFICATIONS_INBOX_ITEM_CLICK: et,
+  NOTIFICATIONS_INBOX_ITEM_ACK: en,
+  NOTIFICATIONS_INBOX_CLOSE: ei
 })
