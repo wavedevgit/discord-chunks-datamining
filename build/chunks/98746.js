@@ -66,11 +66,11 @@ function C(t) {
       isModReportClosed: null == t ? void 0 : t.isArchivedThread(),
       isModReport: null == t ? void 0 : t.isModeratorReportChannel()
     }
-  }), [M, R] = r.useState(!1), [X, Y] = r.useState(!1), z = (0, c.sE)(e, {
+  }), [M, R] = r.useState(!1), [X, Y] = r.useState(!1), E = (0, c.sE)(e, {
     location: i,
     targetUserId: null == n ? void 0 : n.id,
     targets: p
-  }), E = r.useCallback(() => {
+  }), U = r.useCallback(() => {
     let t = null != N ? N : Z;
     if (null != C) {
       if (!(null != p && (null == p ? void 0 : p.size) > 0 && S) || M) return;
@@ -82,8 +82,8 @@ function C(t) {
         X && null != _ && d.Z.resolveFlag(_)
       })
     }
-    z(c.jQ.BAN), k()
-  }, [N, Z, C, z, k, p, S, M, e, w, n, _, X]), U = r.useCallback(t => {
+    E(c.jQ.BAN), k()
+  }, [N, Z, C, E, k, p, S, M, e, w, n, _, X]), z = r.useCallback(t => {
     P(t)
   }, []), B = r.useCallback(t => {
     let {
@@ -213,7 +213,7 @@ function C(t) {
           children: (0, l.jsx)(s.q4e, {
             options: j(),
             value: w,
-            onChange: U
+            onChange: z
           })
         })]
       })
@@ -236,10 +236,9 @@ function C(t) {
           onClick: k
         }), (0, l.jsx)(s.zxk, {
           variant: "critical-primary",
-          size: "sm",
           text: g.intl.string(g.t["5MBJ5O"]),
           type: "submit",
-          onClick: E
+          onClick: U
         })]
       })
     })()]

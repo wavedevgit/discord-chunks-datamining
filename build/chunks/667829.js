@@ -389,7 +389,8 @@ class U extends i.Component {
           let i = g.Z.getActiveCommand(E.id);
           if (null == i) return l(e, E, u.drafts.type, {
             requireConfirm: !0,
-            showLargeMessageDialog: t
+            showLargeMessageDialog: t,
+            origin: "clipboard"
           });
           let a = null != (n = u.drafts.commandType) ? n : u.drafts.type,
             o = null,

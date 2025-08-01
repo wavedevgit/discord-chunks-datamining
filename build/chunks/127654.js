@@ -82,12 +82,13 @@ function I(t, e, i) {
     filesMetadata: d,
     requireConfirm: p = !0,
     showLargeMessageDialog: f = !1,
-    isThumbnail: m = !1
+    isThumbnail: m = !1,
+    origin: b
   } = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {};
   if (t.length < 1) return;
   if (null != d && d.length !== t.length) throw Error("Unexpected mismatch between files and file metadata");
-  let b = e.getGuildId();
-  if ((0, v.Bf)(t, b)) return void Z(e, t);
+  let S = e.getGuildId();
+  if ((0, v.Bf)(t, S)) return void Z(e, t);
   if (h.Z.getUploadCount(e.id, i) + t.length > O.dN1) {
     (0, o.openUploadError)({
       title: y.intl.string(y.t.wOr6hI),
@@ -104,7 +105,8 @@ function I(t, e, i) {
     let n = Array.from(t).map((t, e) => E({
       file: t,
       platform: a.ow.WEB,
-      isThumbnail: m
+      isThumbnail: m,
+      origin: b
     }, null == d ? void 0 : d[e]));
     s.Z.addFiles({
       files: n,
@@ -118,7 +120,8 @@ function I(t, e, i) {
       return new l.nH(E({
         file: t,
         platform: a.ow.WEB,
-        isThumbnail: m
+        isThumbnail: m,
+        origin: b
       }, n), e.id)
     });
     r.Z.sendMessage(e.id, {

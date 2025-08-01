@@ -503,6 +503,6 @@ class x extends y.ZP {
         r = t.total + e,
         i = n - this.loaded;
       this.emit("progress", n, r, i), this.loaded = n
-    }), this.channelId = t, this.preCompressionSize = null != (o = null == (i = e.file) ? void 0 : i.size) ? o : 0, this.currentSize = null != (s = null == (a = e.file) ? void 0 : a.size) ? s : 0, this.reactNativeFileIndex = r, this._abortController = new AbortController
+    }), this.channelId = t, this.preCompressionSize = null != (o = null == (i = e.file) ? void 0 : i.size) ? o : 0, this.currentSize = null != (s = null == (a = e.file) ? void 0 : a.size) ? s : 0, this.reactNativeFileIndex = r, this._abortController = new AbortController, e.platform === y.ow.WEB && null != e.origin && (this.uploadAnalytics.origin = e.origin)
   }
 }

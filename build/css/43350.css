@@ -1,6 +1,6 @@
 /**
   Module ID: 43350
-  Original File Name: e419dbe1bf192660
+  Original File Name: b589ac4bd9263247
 **/
 .modalContent__837b7 {
     gap: 20px
@@ -25,6 +25,10 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end
+}
+
+.footer__837b7 button+button {
+    margin-left: var(--space-8)
 }
 
 .cancel__837b7 {
@@ -58,4 +62,4 @@
     max-height: 0
 }
 
-/*# sourceMappingURL=e419dbe1bf192660.css.map*/
+/*# sourceMappingURL=b589ac4bd9263247.css.map*/

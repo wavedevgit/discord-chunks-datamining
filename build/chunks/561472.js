@@ -43,7 +43,8 @@ let v = function(e) {
       if (I) return !1;
       w && null != v && ((0, b.d)(e, v, j, {
         requireConfirm: O,
-        showLargeMessageDialog: !1
+        showLargeMessageDialog: !1,
+        origin: "drag_drop"
       }), g.S.dispatchToLastSubscribed(C.CkL.TEXTAREA_FOCUS))
     },
     onDragClear: () => E(!0),

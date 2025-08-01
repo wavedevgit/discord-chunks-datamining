@@ -84,7 +84,8 @@ let I = e => {
   }, [j]), R = i.useCallback(e => {
     null != C && h.Z.remove(a.id, C.id, f.Ie.CREATE_FORUM_POST.drafts.type), (0, y.d)(e.currentTarget.files, a, f.Ie.CREATE_FORUM_POST.drafts.type, {
       requireConfirm: !0,
-      isThumbnail: !0
+      isThumbnail: !0,
+      origin: "file_picker"
     }), e.currentTarget.value = null
   }, [a, C]), M = e => {
     e.stopPropagation(), (null == C ? void 0 : C.upload) != null && (0, m.ZDy)(async () => {
