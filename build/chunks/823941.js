@@ -14,8 +14,8 @@ var l = r(255367),
   d = r(906732),
   g = r(70097),
   b = r(963249),
-  v = r(594174),
-  m = r(451478),
+  m = r(594174),
+  v = r(451478),
   O = r(754347),
   f = r(74538),
   p = r(884697),
@@ -33,7 +33,7 @@ let P = (0, p.IC)(90),
       category: n
     } = e, {
       analyticsLocations: r
-    } = (0, d.ZP)(), o = t.useRef(null), a = (0, i.e7)([v.default], () => v.default.getCurrentUser());
+    } = (0, d.ZP)(), o = t.useRef(null), a = (0, i.e7)([m.default], () => m.default.getCurrentUser());
     return f.ZP.canUseCollectibles(a) ? n.summary : T.intl.format(T.t["9hafRk"], {
       getPremium: e => (0, l.jsx)(s.P3F, {
         innerRef: o,
@@ -78,13 +78,13 @@ function L(e) {
     hideLimitedTimeBadge: t = !1
   } = e, {
     backgroundColors: o
-  } = (0, y.Z)(n.styles), d = (0, i.e7)([c.Z], () => c.Z.useReducedMotion), g = (0, i.e7)([m.Z], () => m.Z.isFocused()), {
+  } = (0, y.Z)(n.styles), d = (0, i.e7)([c.Z], () => c.Z.useReducedMotion), g = (0, i.e7)([v.Z], () => v.Z.isFocused()), {
     bannerOverrides: b,
-    shopAllBannerStatic: v,
+    shopAllBannerStatic: m,
     shopAllBannerAnimated: f
   } = (0, _.t0)(n), S = !!(null == b ? void 0 : b.showDarkBannerText);
   return (0, l.jsxs)(j.Z, {
-    asset: v,
+    asset: m,
     className: a()(k.shopBanner, r),
     style: null != o ? {
       background: "".concat((0, B.nH)(o), " border-box border-box"),

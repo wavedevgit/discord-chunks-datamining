@@ -51,6 +51,7 @@ function m(e) {
           userName: m,
           displayNameStyles: t.displayNameStyles,
           effectDisplayType: u.F.ANIMATED,
+          loop: !0,
           inProfile: !0
         })
       })), null != N && (0, r.jsx)(c.Z, {
