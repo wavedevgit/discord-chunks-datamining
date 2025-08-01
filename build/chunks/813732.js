@@ -44,20 +44,20 @@ var i = n(255367),
   G = n(526761),
   F = n(726985),
   H = n(388032),
-  z = n(125978);
+  W = n(125978);
 
-function W() {
+function z() {
   return (0, i.jsx)(o.Zbd, {
-    className: z.noItemsCard,
+    className: W.noItemsCard,
     type: o.Zbd.Types.CUSTOM,
     children: (0, i.jsxs)(_.Z, {
       align: _.Z.Align.CENTER,
       children: [(0, i.jsx)(j.Z, {
         game: null,
         size: j.Z.Sizes.SMALL,
-        className: z.noItemsIcon
+        className: W.noItemsIcon
       }), (0, i.jsx)("span", {
-        className: z.cardText,
+        className: W.cardText,
         children: H.intl.string(H.t["jy/hys"])
       })]
     })
@@ -71,22 +71,22 @@ function Y() {
   }, []), (0, i.jsxs)("section", {
     children: [(0, i.jsx)(o.X6q, {
       variant: "heading-md/bold",
-      className: z.accountCreditTitle,
+      className: W.accountCreditTitle,
       children: H.intl.string(H.t["2GKrvr"])
     }), (0, i.jsx)(o.Text, {
       variant: "text-md/normal",
-      className: z.accountCreditDescription,
+      className: W.accountCreditDescription,
       children: H.intl.string(H.t.kNEjGh)
     }), null != e && Z.ZP.hasAccountCredit(e) ? (0, i.jsx)(L.Z, {
-      className: z.accountCredit,
+      className: W.accountCredit,
       entitlements: e
-    }) : (0, i.jsx)(W, {})]
+    }) : (0, i.jsx)(z, {})]
   })
 }
 
 function K() {
   return (0, i.jsx)("hr", {
-    className: z.hr
+    className: W.hr
   })
 }
 let q = function() {
@@ -108,12 +108,12 @@ let q = function() {
       var e;
       return Object.values(null != (e = A.Z.getSubscriptions()) ? e : {}).filter(e => e.type === V.NYc.GUILD).filter(e => e.status !== V.O0b.ENDED).length
     }),
-    W = (0, f.Z)({
+    z = (0, f.Z)({
       forceFetch: !0
     }),
     q = (0, w.W)(),
     X = null !== e ? e.currentPeriodEnd : void 0,
-    J = !(q && !(W.unactivatedUnits.length > 0)) && (W.fractionalState !== U.a$.NONE || W.unactivatedUnits.length > 0);
+    J = !(q && !(z.unactivatedUnits.length > 0)) && (z.fractionalState !== U.a$.NONE || z.unactivatedUnits.length > 0);
   return (r.useEffect(() => (c.Z.wait(() => {
     (0, p.Y2)(), d.jg(), (0, u.X8)(), d.tZ()
   }), function() {
@@ -123,9 +123,9 @@ let q = function() {
   }) : P === G.XZ ? (0, i.jsx)(v.Z, {
     onGoBack: () => g.Z.clearSubsection()
   }) : (0, i.jsx)("div", {
-    className: z.container,
+    className: W.container,
     children: (0, i.jsxs)("div", {
-      className: z.content,
+      className: W.content,
       children: [n ? (0, i.jsx)(M.Yn, {}) : null, null != e ? (0, i.jsx)(M.ZP, {
         subscription: e,
         paymentSource: s,
@@ -134,17 +134,17 @@ let q = function() {
       }) : (0, i.jsx)(M.MM, {}), J && (0, i.jsxs)("section", {
         children: [(0, i.jsx)(o.X6q, {
           variant: "heading-md/bold",
-          className: z.accountCreditTitle,
+          className: W.accountCreditTitle,
           children: H.intl.string(H.t.Obre8v)
         }), (0, i.jsx)(o.Text, {
           variant: "text-md/normal",
-          className: z.accountCreditDescription,
+          className: W.accountCreditDescription,
           children: H.intl.format(H.t["7Zi06e"], {
             helpCenterLink: D.Z.getArticleURL(V.BhN.FRACTIONAL_PREMIUM_ABOUT)
           })
         }), (0, i.jsx)(k.Z, {
-          className: z.accountCredit,
-          fractionalPremiumInfo: W,
+          className: W.accountCredit,
+          fractionalPremiumInfo: z,
           activationDate: X
         })]
       }), (0, i.jsx)(S.F, {
@@ -168,7 +168,7 @@ let q = function() {
       }) : null]
     })
   }) : (0, i.jsx)("div", {
-    className: a()(z.container, z.loading),
+    className: a()(W.container, W.loading),
     children: (0, i.jsx)(o.$jN, {})
   })
 }

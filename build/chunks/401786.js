@@ -164,9 +164,9 @@ function D(e) {
       } = e;
       return N.Z1.has(t)
     }),
-    z = F || H ? G.total - U.total : -U.total,
+    W = F || H ? G.total - U.total : -U.total,
     {
-      interval: W,
+      interval: z,
       intervalCount: Y
     } = L,
     K = y.intl.format(y.t["0W23cn"], {
@@ -192,7 +192,7 @@ function D(e) {
           label: y.intl.format(y.t["Vg+LRk"], {
             subscriptionCount: 1
           }),
-          value: (0, S.og)((0, S.T4)(z, a.currency), W, Y),
+          value: (0, S.og)((0, S.T4)(W, a.currency), z, Y),
           className: A.invoiceCancelRow
         }), null != V && V.length > 0 ? (0, i.jsxs)("div", {
           children: [(0, i.jsx)(b.UN, {}), (0, i.jsx)(_.nd, {

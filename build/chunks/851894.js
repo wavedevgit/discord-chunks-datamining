@@ -110,7 +110,7 @@ function k(e) {
   }(M, ["source", "pendingAvatar", "pendingNameplate"]), H = (0, _.SD)({
     userId: k.id,
     image: V
-  }), z = (0, l.e7)([O.ZP], () => null != n ? O.ZP.getMember(n.id, k.id) : null);
+  }), W = (0, l.e7)([O.ZP], () => null != n ? O.ZP.getMember(n.id, k.id) : null);
   r.useEffect(() => () => c.Z.wait(T.W3), []), r.useEffect(() => {
     null != U && m.ZP.trackWithMetadata(P.rMx.SETTINGS_PANE_VIEWED, {
       settings_type: "guild",
@@ -119,7 +119,7 @@ function k(e) {
     })
   }, [U]);
   let {
-    enabled: W
+    enabled: z
   } = h.Z.useConfig({
     location: "GuildIdentitySettingsPage"
   });
@@ -147,14 +147,14 @@ function k(e) {
           canUsePremiumCustomization: S.ZP.canUsePremiumProfileCustomization(k),
           onUpsellClick: w
         })),
-        nameplatePreview: W ? (0, i.jsx)(g.Z, {
+        nameplatePreview: z ? (0, i.jsx)(g.Z, {
           user: k,
           nameplate: G,
-          nameplateData: void 0 === G ? (0, f.Pb)(null == z || null == (t = z.collectibles) ? void 0 : t.nameplate) : void 0,
+          nameplateData: void 0 === G ? (0, f.Pb)(null == W || null == (t = W.collectibles) ? void 0 : t.nameplate) : void 0,
           isHighlighted: !0
         }) : null,
         children: (0, i.jsx)(y.Z, {
-          nameplateEnabled: W
+          nameplateEnabled: z
         })
       })]
     }) : (0, i.jsx)(I.Z, {})]

@@ -55,8 +55,8 @@ let M = e => {
       U = (0, u.ZP)(),
       V = (0, c.wj)(U),
       [G, F] = r.useState(!1),
-      [H, z] = r.useState(!1),
-      [W, Y] = r.useState(!1),
+      [H, W] = r.useState(!1),
+      [z, Y] = r.useState(!1),
       [K, q] = r.useState(!1),
       X = (0, l.e7)([f.Z], () => f.Z.getPremiumTypeSubscription()),
       J = null != X ? (0, x.Af)(X) : null,
@@ -78,7 +78,7 @@ let M = e => {
       className: L.premiumTierCardsContainerSettings,
       children: (0, i.jsx)(o.$, {
         innerRef: n,
-        onChange: e => z(e),
+        onChange: e => W(e),
         threshold: .1,
         active: !0,
         children: (0, i.jsx)(T.IY, {
@@ -166,7 +166,7 @@ let M = e => {
       }), (0, i.jsx)(o.$, {
         innerRef: I,
         onChange: e => {
-          e && !W && (b.default.track(Z.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+          e && !z && (b.default.track(Z.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
             location_stack: ea
           }), Y(!0))
         },

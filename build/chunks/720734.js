@@ -45,8 +45,8 @@ var i = n(255367),
   G = n(64220),
   F = n(427217),
   H = n(243778),
-  z = n(594928),
-  W = n(821795),
+  W = n(594928),
+  z = n(821795),
   Y = n(287647),
   K = n(892567),
   q = n(258609),
@@ -99,8 +99,8 @@ var i = n(255367),
   eG = n(768581),
   eF = n(572004),
   eH = n(459273),
-  ez = n(585483),
-  eW = n(70956),
+  eW = n(585483),
+  ez = n(70956),
   eY = n(823379),
   eK = n(74538),
   eq = n(374023),
@@ -112,8 +112,8 @@ var i = n(255367),
   e1 = n(115530),
   e3 = n(981631),
   e6 = n(215023),
-  e2 = n(921944),
-  e8 = n(46140),
+  e8 = n(921944),
+  e2 = n(46140),
   e5 = n(388032),
   e4 = n(239692);
 
@@ -152,8 +152,8 @@ function te(e, t) {
   }), e
 }
 let tt = eJ.ZP.getEnableHardwareAcceleration() ? f.Xo$ : f.qEK,
-  tn = 2 * eW.Z.Millis.MINUTE,
-  ti = 3 * eW.Z.Millis.SECOND;
+  tn = 2 * ez.Z.Millis.MINUTE,
+  ti = 3 * ez.Z.Millis.SECOND;
 
 function tr(e) {
   let {
@@ -191,8 +191,8 @@ function tr(e) {
         } = t;
         null != r && i(r), null == (n = e.current) || n.call(e)
       };
-      return ez.S.subscribe(e3.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, t), () => {
-        ez.S.unsubscribe(e3.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, t)
+      return eW.S.subscribe(e3.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, t), () => {
+        eW.S.unsubscribe(e3.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, t)
       }
     }), {
       updateOpenPopoutRef: t,
@@ -384,11 +384,11 @@ class ts extends r.PureComponent {
     }
     return (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(eo.Z, {
-        groupName: e2.R.ACCOUNT_NAME_ZONE,
+        groupName: e8.R.ACCOUNT_NAME_ZONE,
         targetElementRef: this.avatarWithPopoutRef
       }), (0, i.jsx)(H.ZP, {
         contentTypes: n.avatar,
-        groupName: e2.R.ACCOUNT_NAME_ZONE,
+        groupName: e8.R.ACCOUNT_NAME_ZONE,
         children: t => {
           let {
             visibleContent: n,
@@ -635,7 +635,7 @@ class ts extends r.PureComponent {
             children: (0, i.jsx)(K.Z, {
               userName: eX.ZP.getName(t),
               displayNameStyles: e,
-              effectDisplayType: W.F.STATIC,
+              effectDisplayType: z.F.STATIC,
               inProfile: !0
             })
           })
@@ -774,17 +774,17 @@ function tl() {
     }),
     U = (0, $.m)(),
     [V, G] = (0, J.G)(null != k ? k : null),
-    F = z.J.useExperiment({
+    F = W.J.useExperiment({
       location: "Account"
     }).enabled,
     {
       analyticsLocations: H
     } = (0, I.ZP)(N.Z.ACCOUNT),
-    W = (0, en.K)({
+    z = (0, en.K)({
       user: t
     }),
     Y = (0, ec.Ws)({
-      location: e8.dr.CONFLICT_CHECKS
+      location: e2.dr.CONFLICT_CHECKS
     }),
     K = (0, d.e7)([ed.Z, eM.default, eR.Z], () => {
       let e, t = ed.Z.getSyncingWith(),
@@ -827,7 +827,7 @@ function tl() {
       awaitingRemote: w,
       isEligibleForPomelo: Z,
       voiceActivityStatusEnabled: M,
-      nameplate: W,
+      nameplate: z,
       selectedGuildId: k,
       isQuestBarEmpty: Y,
       isListenAlongVisible: K
@@ -909,8 +909,8 @@ function tc(e) {
       children: V
     })]
   }) : G, {
-    analyticsLocations: z
-  } = (0, I.ZP)(N.Z.AUDIO_INPUT_BUTTON), W = (0, eb.Hu)({
+    analyticsLocations: W
+  } = (0, I.ZP)(N.Z.AUDIO_INPUT_BUTTON), z = (0, eb.Hu)({
     location: N.Z.AUDIO_INPUT_BUTTON,
     autoTrackExposure: !0
   }), Y = (0, ex.av)({
@@ -919,8 +919,8 @@ function tc(e) {
   });
   r.useEffect(() => () => M(), [E, M]);
   let K = r.useCallback(e => {
-      j(e, z)
-    }, [j, z]),
+      j(e, W)
+    }, [j, W]),
     [q, X] = r.useState(!1),
     J = r.useCallback(e => {
       var t;
@@ -951,7 +951,7 @@ function tc(e) {
       location: "Account"
     });
   return (0, i.jsx)(I.Gt, {
-    value: z,
+    value: W,
     children: (0, i.jsxs)("div", {
       ref: v,
       className: a()(e4.micButtonParent, {
@@ -979,14 +979,14 @@ function tc(e) {
         onContextMenu: K,
         role: "switch",
         className: a()({
-          [e4.micButtonWithMenu]: W
+          [e4.micButtonWithMenu]: z
         }),
         orangeGlow: R,
         redGlow: E,
         "aria-label": e5.intl.string(e5.t["w4m94+"]),
         "aria-checked": E,
         disabled: l
-      }), W && (0, i.jsx)(f.yRy, {
+      }), z && (0, i.jsx)(f.yRy, {
         targetElementRef: C,
         position: "top",
         align: "left",
@@ -1077,7 +1077,7 @@ function tc(e) {
                   "aria-label": e5.intl.string(e5.t.Hapb4O),
                   disabled: l,
                   onClick: e => {
-                    s(e2.L.INDIRECT_ACTION), n(e), null != A && !q && P ? (0, eN.$)(() => X(!0)) : X(!q)
+                    s(e8.L.INDIRECT_ACTION), n(e), null != A && !q && P ? (0, eN.$)(() => X(!0)) : X(!q)
                   }
                 }, r));
                 return null != o ? (0, i.jsx)(f.yRy, {

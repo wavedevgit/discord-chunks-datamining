@@ -6,20 +6,20 @@ t.d(n, {
 });
 var r = t(367907),
   l = t(368859),
-  i = t(626135),
-  o = t(135899),
+  o = t(626135),
+  i = t(135899),
   u = t(981631),
   a = t(943702);
 
 function c(e) {
-  return (0, l.Z)(e) && e.messageReference.guild_id === o.M_ || null != e.author && e.author.id === o.c9
+  return (0, l.Z)(e) && e.messageReference.guild_id === i.M_ || null != e.author && e.author.id === i.c9
 }
 
 function s() {
   return a
 }
 let d = e => {
-  i.default.track(u.rMx.USER_FLOW_TRANSITION, function(e) {
+  o.default.track(u.rMx.USER_FLOW_TRANSITION, function(e) {
     for (var n = 1; n < arguments.length; n++) {
       var t = null != arguments[n] ? arguments[n] : {},
         r = Object.keys(t);
@@ -37,7 +37,7 @@ let d = e => {
     }
     return e
   }({
-    flow_type: o.tA,
+    flow_type: i.tA,
     from_step: e.fromStep,
     to_step: e.toStep
   }, (0, r.hH)(e.guildId)))

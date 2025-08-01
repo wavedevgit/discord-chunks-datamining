@@ -73,7 +73,7 @@ async function G(e, t, n) {
     m = performance.now(),
     p = E.Z.loadCachedMessages.measureAsyncWithoutNesting(() => V(e, d, u)),
     g = E.Z.fetchGuildCache.measureAsync(() => H(e, n)),
-    h = E.Z.fetchGuildCache.measureAsync(() => z(e, n)),
+    h = E.Z.fetchGuildCache.measureAsync(() => W(e, n)),
     j = null != e ? a.Z.timeAsync("\uD83D\uDCBE", "cache: private_channels", () => _.Z.getAsync(e, null)) : Promise.resolve([]),
     O = null == e ? Promise.resolve({}) : a.Z.timeAsync("\uD83D\uDCBE", "cache: user_settings", () => x.Z.getAll(e)),
     v = null == e ? Promise.resolve([]) : a.Z.timeAsync("\uD83D\uDCBE", "cache: read_states", () => f.Z.getAll(e)),
@@ -128,7 +128,7 @@ async function H(e, t) {
   let s = await (0, d.dI)(() => m.Z.getOneAsync(e, r));
   return null != s ? [s] : []
 }
-async function z(e, t) {
+async function W(e, t) {
   if (null == e) return Promise.resolve({
     channels: null,
     guildId: null
@@ -144,7 +144,7 @@ async function z(e, t) {
     guildId: n
   }
 }
-async function W(e, t, n, i) {
+async function z(e, t, n, i) {
   R.verbose("loading late lazy cache");
   let [r, s, l] = await E.Z.fetchLazyCache.measureAsync(() => Promise.all([(0, d.dI)(() => null != e ? a.Z.timeAsync("\uD83D\uDCBE", "cache: cache_version", () => p.Z.okAsync(e)) : Promise.resolve(!0)), (0, d.dI)(() => null == e || F ? Promise.resolve([]) : a.Z.timeAsync("\uD83D\uDCBE", "cache: lazy guilds", () => m.Z.getAsync(e))), (0, d.dI)(() => null != e ? a.Z.timeAsync("\uD83D\uDCBE", "cache: basic_channels", () => u.Z.getAsync(e)) : Promise.resolve({
     all: [],
@@ -284,7 +284,7 @@ class K extends(i = l.ZP.Store) {
       let t = v.default.getId(),
         i = j.Z.carefullyOpenDatabase(t),
         [r, s, a] = await E.Z.loadMiniCache.measureAsync(() => G(i, t, e));
-      r ? (n(), await W(i, t, s, a)) : (n(), await (Y(() => c.Z.dispatch({
+      r ? (n(), await z(i, t, s, a)) : (n(), await (Y(() => c.Z.dispatch({
         type: "CACHE_LOADED_LAZY_NO_CACHE"
       })), Promise.resolve()))
     } catch (e) {

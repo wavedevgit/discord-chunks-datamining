@@ -47,8 +47,8 @@ var i = n(255367),
   G = n(199902),
   F = n(158776),
   H = n(306680),
-  z = n(699516),
-  W = n(111583),
+  W = n(699516),
+  z = n(111583),
   Y = n(9156),
   K = n(594174),
   q = n(709054),
@@ -233,10 +233,10 @@ function ed(e) {
     status: L,
     isMobile: G,
     nameplate: F,
-    ref: W,
+    ref: z,
     "aria-posinset": K,
     "aria-setsize": q
-  } = e, [X, ec] = r.useState(!1), [ed, eu] = r.useState(!1), [em, ep] = r.useState(!1), eg = r.useRef(null), eh = r.useRef(null), ef = null != W ? W : eh, {
+  } = e, [X, ec] = r.useState(!1), [ed, eu] = r.useState(!1), [em, ep] = r.useState(!1), eg = r.useRef(null), eh = r.useRef(null), ef = null != z ? z : eh, {
     avatarSrc: eb,
     avatarDecorationSrc: ex,
     eventHandlers: e_
@@ -247,9 +247,9 @@ function ed(e) {
   }), ej = t.isMultiUserDM(), eO = t.isSystemDM(), eC = (0, U.Q)(), eE = !ej && !eO && t.type === J.d4z.DM, ev = eE && (null == u ? void 0 : u.primaryGuild) != null, eS = (0, m.e7)([Y.ZP], () => Y.ZP.isChannelMuted(t.getGuildId(), t.id)), {
     ignored: eT,
     blocked: eN
-  } = (0, m.cj)([z.Z], () => ({
-    ignored: z.Z.isIgnored(t.getRecipientId()),
-    blocked: z.Z.isBlocked(t.getRecipientId())
+  } = (0, m.cj)([W.Z], () => ({
+    ignored: W.Z.isIgnored(t.getRecipientId()),
+    blocked: W.Z.isBlocked(t.getRecipientId())
   })), eI = eE && eT, ey = eE && eN, eA = (eS || eI || ey) && !(l || X), eP = (0, m.e7)([H.ZP], () => H.ZP.getMentionCount(t.id) > 0), eR = (0, T.ZP)(t), eD = (0, m.e7)([P.Z], () => P.Z.isFavorite(t.id)), {
     dotsInsteadOfCloseButton: eZ
   } = D.Z.useExperiment({
@@ -300,7 +300,7 @@ function ed(e) {
     }, {
       onClose: () => ep(!1)
     })
-  }, ez = e => {
+  }, eW = e => {
     e.preventDefault(), e.stopPropagation();
     let r = Q.intl.formatToPlainString(Q.t.hJ5Ap6, {
         name: eR
@@ -322,7 +322,7 @@ function ed(e) {
         onSubmit: eU
       }, t))
     })
-  }, eW = () => t.isSystemDM() ? (0, i.jsx)("div", {
+  }, ez = () => t.isSystemDM() ? (0, i.jsx)("div", {
     className: $.subtext,
     children: (0, E.Z)(t.id) ? Q.intl.string(Q.t.FL5T09) : Q.intl.string(Q.t.NnY5lZ)
   }) : t.isMultiUserDM() ? (0, i.jsx)("div", {
@@ -377,7 +377,7 @@ function ed(e) {
     userName: eR,
     displayNameStyles: null == u ? void 0 : u.displayNameStyles,
     effectDisplayType: X || l || em ? y.F.ANIMATED : y.F.PLAIN,
-    loop: !0
+    loop: X
   }), eq = ev ? (0, i.jsxs)(i.Fragment, {
     children: [eK, (0, i.jsx)(w.ZP, {
       primaryGuild: null == u ? void 0 : u.primaryGuild,
@@ -446,7 +446,7 @@ function ed(e) {
               avatar: eY(),
               highlighted: eP && !eA,
               muted: eA,
-              subText: eW(),
+              subText: ez(),
               name: (0, i.jsx)(I.Z, {
                 className: a()($.overflowTooltip, {
                   [$.withDisplayNameStyles]: null == u ? void 0 : u.displayNameStyles
@@ -469,7 +469,7 @@ function ed(e) {
           }) : (0, i.jsx)(es, {
             icon: p.Dio,
             "aria-label": ej ? Q.intl.string(Q.t["26C4oq"]) : Q.intl.string(Q.t.jsvgc3),
-            onClick: ej ? ez : eU,
+            onClick: ej ? eW : eU,
             onMouseDown: eG,
             nameplate: F
           })]
@@ -522,14 +522,14 @@ let eu = 12633 == n.j ? e => {
     g = (0, k.K)({
       user: s
     }),
-    h = (0, m.e7)([K.default, W.Z], () => {
+    h = (0, m.e7)([K.default, z.Z], () => {
       if (t.isMultiUserDM())
-        if (l) return q.default.keys(W.Z.getTypingUsers(t.id)).some(e => {
+        if (l) return q.default.keys(z.Z.getTypingUsers(t.id)).some(e => {
           var t;
           return e !== (null == (t = K.default.getCurrentUser()) ? void 0 : t.id)
         });
         else return !1;
-      return null != s && W.Z.isTyping(t.id, t.getRecipientId())
+      return null != s && z.Z.isTyping(t.id, t.getRecipientId())
     }, [t, s, l]);
   return t.isMultiUserDM() ? (0, i.jsx)(ed, ee({
     channel: t,

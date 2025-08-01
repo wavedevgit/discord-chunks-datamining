@@ -74,10 +74,10 @@ function V(e, t) {
 let G = (0, b.hQ)(),
   F = (0, b.hQ)(),
   H = (0, b.hQ)(),
-  z = o().debounce(e => {
+  W = o().debounce(e => {
     (0, p.o2)(e)
   }, 250),
-  W = o().debounce(e => {
+  z = o().debounce(e => {
     (0, v.Ct)(e)
   }, 250);
 
@@ -226,7 +226,7 @@ function X() {
       maxValue: 1,
       minValue: 0,
       initialValue: e,
-      onValueChange: z,
+      onValueChange: W,
       onMarkerRender: e => 100 * e % 2 == 0 ? "".concat(100 * e, "%") : void 0
     }), (0, i.jsx)(E.F, {
       setting: R.s6.ACCESSIBILITY_SATURATION_CUSTOM_COLOR,
@@ -530,7 +530,7 @@ function er() {
           initialValue: t,
           defaultValue: 1,
           stickToMarkers: !0,
-          onValueChange: W,
+          onValueChange: z,
           onValueRender: e => "x".concat(e.toFixed(2)),
           onMarkerRender: e => 0 === e ? (0, i.jsx)("span", {
             className: L.ttsSliderMarker,

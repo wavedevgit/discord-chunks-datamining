@@ -1,11 +1,11 @@
 /** Chunk was on 22243 **/
 n.d(t, {
   Q2: () => V,
-  Rv: () => W,
+  Rv: () => z,
   U6: () => F,
   UD: () => G,
   ZP: () => Y,
-  oT: () => z
+  oT: () => W
 }), n(415506), n(539854);
 var i, r = n(2818),
   s = n(186070),
@@ -77,12 +77,12 @@ function F(e) {
 function H() {
   for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
   return t.map(e => {
-    let t = z[e];
+    let t = W[e];
     if (null == t) throw Error("getBindsFor(...): No bind for ".concat(t));
     return t.binds[0]
   })
 }
-let z = {
+let W = {
   [M.EkH.SERVER_NEXT]: v.nq,
   [M.EkH.SERVER_PREV]: v.X3,
   [M.EkH.CHANNEL_NEXT]: a.tQ,
@@ -133,7 +133,7 @@ let z = {
   [M.EkH.BROWSER_DEVTOOLS]: c.p
 };
 
-function W() {
+function z() {
   let e = [{
       description: U.intl.string(U.t.bx4Uy8),
       binds: H(M.EkH.SERVER_PREV, M.EkH.SERVER_NEXT),
@@ -339,4 +339,4 @@ function W() {
     group: "CHAT"
   }), e
 }
-let Y = 12633 == n.j ? z : null
+let Y = 12633 == n.j ? W : null

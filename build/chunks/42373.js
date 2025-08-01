@@ -191,17 +191,17 @@ let v = e => {
       }) : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(G, {}), (0, i.jsx)(V, {})]
       }),
-      z = {
+      W = {
         className: a()(R ? O.backgroundColor : k, U.boxContainer, U["".concat(P)], R && O.gradientBackground),
         onMouseEnter: B,
         onFocus: B,
         onBlur: M,
         onMouseLeave: M
       };
-    return R ? (0, i.jsx)(c.$, E(C({}, z), {
+    return R ? (0, i.jsx)(c.$, E(C({}, W), {
       color: "purple",
       children: (0, i.jsx)(H, {})
-    })) : (0, i.jsx)("div", E(C({}, z), {
+    })) : (0, i.jsx)("div", E(C({}, W), {
       children: (0, i.jsx)(H, {})
     }))
   }

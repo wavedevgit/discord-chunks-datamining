@@ -4,9 +4,9 @@ t.d(n, {
   a: () => C
 });
 var r, l = t(255367),
-  i = t(73800),
-  o = t(120356),
-  u = t.n(o),
+  o = t(73800),
+  i = t(120356),
+  u = t.n(i),
   a = t(873546),
   c = t(442837),
   s = t(573385),
@@ -82,7 +82,7 @@ function M(e) {
   let {
     author: t,
     message: r,
-    channel: o,
+    channel: i,
     userOverride: b,
     compact: C = !1,
     withMentionPrefix: M = !1,
@@ -98,18 +98,18 @@ function M(e) {
     decorations: J,
     previewGuildId: Y,
     subscribeToGroupId: q
-  } = e, K = i.useRef(null), W = i.useContext(x.Z), $ = null != (n = null == o ? void 0 : o.guild_id) ? n : W, {
+  } = e, K = o.useRef(null), W = o.useContext(x.Z), $ = null != (n = null == i ? void 0 : i.guild_id) ? n : W, {
     analyticsLocations: Q
   } = (0, y.ZP)(p.Z.USERNAME), ee = M ? "@" : "", {
     nick: en,
     colorString: et,
     colorStrings: er,
     colorRoleName: el,
-    displayNameStyles: ei
-  } = t, eo = (0, c.e7)([m.Z], () => m.Z.roleStyle), eu = "username" === eo, ea = (0, j.X$)(), ec = (0, O.j)({
-    displayNameStyles: ei
-  }), es = (0, c.e7)([T.Z], () => null == t.guildId || null == t.colorRoleId ? null : T.Z.getRole(t.guildId, t.colorRoleId)), ed = (0, R.yH)(null != Y ? Y : $, es), ef = (0, I.Z)(r), em = i.useContext(s.d), ep = ed && (0, S.S2)(t), ey = eu && ep;
-  i.useEffect(() => {
+    displayNameStyles: eo
+  } = t, ei = (0, c.e7)([m.Z], () => m.Z.roleStyle), eu = "username" === ei, ea = (0, j.X$)(), ec = (0, O.j)({
+    displayNameStyles: eo
+  }), es = (0, c.e7)([T.Z], () => null == t.guildId || null == t.colorRoleId ? null : T.Z.getRole(t.guildId, t.colorRoleId)), ed = (0, R.yH)(null != Y ? Y : $, es), ef = (0, I.Z)(r), em = o.useContext(s.d), ep = ed && (0, S.S2)(t), ey = eu && ep;
+  o.useEffect(() => {
     if (null == q || !ey || null == em) return;
     let {
       setAnimate: e
@@ -124,7 +124,7 @@ function M(e) {
     roleStyle: "username",
     includeConvenienceGlow: !0,
     animateGradient: null == em ? void 0 : em.animate
-  }), ev = (0, d.EJ)(ee + en), eO = (null == o ? void 0 : o.isPrivate()) && null != ei, ex = {
+  }), ev = (0, d.EJ)(ee + en), eO = (null == i ? void 0 : i.isPrivate()) && null != eo, ex = {
     className: u()([_.username, ey && eg, ec]),
     style: (() => {
       if (eu) {
@@ -143,11 +143,12 @@ function M(e) {
     onContextMenu: z,
     children: eO ? (0, l.jsx)(v.Z, {
       userName: ev,
-      displayNameStyles: ei,
-      effectDisplayType: g.F.PLAIN
+      displayNameStyles: eo,
+      effectDisplayType: g.F.PLAIN,
+      loop: !0
     }) : ev,
     "data-text": ee + en
-  }, eh = i.useMemo(() => C && !F ? (0, l.jsx)(h.ZP, {
+  }, eh = o.useMemo(() => C && !F ? (0, l.jsx)(h.ZP, {
     primaryGuild: t.primaryGuild,
     userId: r.author.id,
     contextGuildId: $,
@@ -175,13 +176,13 @@ function M(e) {
         var t, r, l = function(e, n) {
           if (null == e) return {};
           var t, r, l = {},
-            i = Object.keys(e);
-          for (r = 0; r < i.length; r++) t = i[r], n.indexOf(t) >= 0 || (l[t] = e[t]);
+            o = Object.keys(e);
+          for (r = 0; r < o.length; r++) t = o[r], n.indexOf(t) >= 0 || (l[t] = e[t]);
           return l
         }(e, n);
         if (Object.getOwnPropertySymbols) {
-          var i = Object.getOwnPropertySymbols(e);
-          for (r = 0; r < i.length; r++) t = i[r], !(n.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (l[t] = e[t])
+          var o = Object.getOwnPropertySymbols(e);
+          for (r = 0; r < o.length; r++) t = o[r], !(n.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (l[t] = e[t])
         }
         return l
       }(e, ["onClick"]);
@@ -203,7 +204,7 @@ function M(e) {
     value: Q,
     children: [null != ej && !B && C ? (0, l.jsxs)(l.Fragment, {
       children: [" ", ej, " "]
-    }) : null, "dot" === eo ? (0, l.jsx)(f.FhE, {
+    }) : null, "dot" === ei ? (0, l.jsx)(f.FhE, {
       color: et,
       colors: ep ? er : null,
       name: el,

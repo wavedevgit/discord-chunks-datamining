@@ -1,7 +1,7 @@
 /** Chunk was on 40694 **/
 t.d(n, {
   X$: () => l,
-  _f: () => i
+  _f: () => o
 }), t(906732);
 let r = (0, t(818083).B)({
   kind: "user",
@@ -47,7 +47,7 @@ function l() {
   }).canSeeRemixBadge
 }
 
-function i() {
+function o() {
   return !!r.useExperiment({
     location: "isRemixANitroPerkHook"
   }, {

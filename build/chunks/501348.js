@@ -53,7 +53,7 @@ function H(e, t, n) {
   }) : e[t] = n, e
 }
 
-function z(e) {
+function W(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -66,7 +66,7 @@ function z(e) {
   return e
 }
 
-function W(e, t) {
+function z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -88,31 +88,31 @@ let Y = {
   J = "1337",
   Q = e => {
     let t = 0;
-    return [(0, v.e5)(W(z({}, (0, S.ZP)({
+    return [(0, v.e5)(z(W({}, (0, S.ZP)({
       channelId: J,
       content: V.intl.string(V.t.oZxkEh)
     })), {
       state: B.yb.SENT,
       id: "".concat(t++)
-    })), (0, v.e5)(W(z({}, (0, S.ZP)({
+    })), (0, v.e5)(z(W({}, (0, S.ZP)({
       channelId: J,
       content: (0, d.wj)(e) ? V.intl.string(V.t["WGb/v7"]) : V.intl.string(V.t["62m4m5"])
     })), {
       state: B.yb.SENT,
       id: "".concat(t++)
-    })), (0, v.e5)(W(z({}, (0, S.ZP)({
+    })), (0, v.e5)(z(W({}, (0, S.ZP)({
       channelId: J,
       content: V.intl.string(V.t.a0Byo6)
     })), {
       state: B.yb.SENT,
       id: "".concat(t++)
-    })), (0, v.e5)(W(z({}, (0, S.ZP)({
+    })), (0, v.e5)(z(W({}, (0, S.ZP)({
       channelId: J,
       content: V.intl.string(V.t.bmwEWF)
     })), {
       state: B.yb.SENT,
       id: "".concat(t++)
-    })), (0, v.e5)(W(z({}, (0, S.ZP)({
+    })), (0, v.e5)(z(W({}, (0, S.ZP)({
       channelId: J,
       content: V.intl.string(V.t.hK9QW1)
     })), {
@@ -607,7 +607,7 @@ function ei() {
         gradientPreset: _.Z.gradientPreset
       }
     });
-  return (0, i.jsx)(et, z({
+  return (0, i.jsx)(et, W({
     messageDisplayCompact: e,
     hideSimpleEmbedContent: t && n,
     clientTheme: s,

@@ -94,7 +94,7 @@ let k = function() {
       gift: "true"
     }),
     H = "true" !== G.gift && null != k,
-    [z, W] = r.useState(L.length > 0 ? L[0].value : null),
+    [W, z] = r.useState(L.length > 0 ? L[0].value : null),
     {
       analyticsLocations: Y
     } = (0, g.ZP)(p.Z.PAYMENT_FLOW_TEST_PAGE),
@@ -356,14 +356,14 @@ let k = function() {
             variant: "text-sm/normal",
             children: "Premium Server Subscription For"
           }), (0, i.jsx)(c.q4e, {
-            value: z,
+            value: W,
             options: L,
-            onChange: e => W(e)
+            onChange: e => z(e)
           })]
         }), (0, i.jsx)(x.l, {
-          guildId: null == z ? void 0 : z.id,
+          guildId: null == W ? void 0 : W.id,
           children: (0, i.jsx)(w, {
-            selectedGuildForGuildSub: z
+            selectedGuildForGuildSub: W
           })
         })]
       }), (0, i.jsx)(c.$i$, {

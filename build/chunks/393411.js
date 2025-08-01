@@ -1,6 +1,6 @@
 /** Chunk was on 22243 **/
 n.d(t, {
-  R: () => W,
+  R: () => z,
   Z: () => Y
 }), n(415506);
 var i = n(255367);
@@ -158,7 +158,7 @@ function H(e) {
   })
 }
 
-function z() {
+function W() {
   return (0, i.jsxs)("div", {
     className: L.wordMark,
     children: [(0, i.jsx)(O.Z, {
@@ -170,12 +170,12 @@ function z() {
   })
 }
 
-function W() {
+function z() {
   let {
     analyticsLocations: e
   } = (0, p.ZP)(m.Z.ACCOUNT_CREDIT_BANNER);
   return (0, i.jsx)(F, {
-    wordMark: (0, i.jsx)(z, {}),
+    wordMark: (0, i.jsx)(W, {}),
     subscriptionInfo: (0, i.jsx)("div", {
       className: L.planInfo,
       children: k.intl.string(k.t.R0GJLy)
@@ -201,7 +201,7 @@ let Y = function(e) {
     renewalInvoicePreview: a,
     paymentSource: h,
     busy: P,
-    analyticsLocation: W
+    analyticsLocation: z
   } = e, Y = "subscription_header", {
     analyticsLocations: K
   } = (0, p.ZP)(m.Z.SUBSCRIPTION_HEADER), q = (0, o.e7)([x.default], () => x.default.getCurrentUser()), {
@@ -235,7 +235,7 @@ let Y = function(e) {
         } = await Promise.all([n.e("17938"), n.e("86181")]).then(n.bind(n, 833569));
         return n => (0, i.jsx)(t, M(B({}, n), {
           premiumSubscription: r,
-          analyticsLocation: W,
+          analyticsLocation: z,
           analyticsLocations: K,
           initialStep: e
         }))
@@ -251,7 +251,7 @@ let Y = function(e) {
         1 === t.length && (null == h ? void 0 : h.id) === r.paymentSourceId && (0, v.tD)(e.id, n, null == h ? void 0 : h.id) && (i = !0), i ? u.O5(r, K) : (0, f.Z)({
           initialPlanId: r.premiumPlanIdFromItems,
           analyticsLocations: K,
-          analyticsLocation: W,
+          analyticsLocation: z,
           analyticsObject: V,
           subscription: r
         })
@@ -268,7 +268,7 @@ let Y = function(e) {
       r.status === w.O0b.PAUSED ? (0, f.Z)({
         initialPlanId: r.premiumPlanIdFromItems,
         analyticsLocations: K,
-        analyticsLocation: W,
+        analyticsLocation: z,
         analyticsObject: V,
         subscription: r,
         skipConfirm: !0
@@ -307,7 +307,7 @@ let Y = function(e) {
       });
       break;
     case Z.p9.TIER_1:
-      ef = (0, i.jsx)(z, {});
+      ef = (0, i.jsx)(W, {});
       break;
     case Z.p9.TIER_2:
       ef = (0, i.jsx)(j.Z, {
@@ -380,7 +380,7 @@ let Y = function(e) {
               onClick: () => {
                 (0, f.Z)({
                   analyticsLocations: K,
-                  analyticsLocation: W,
+                  analyticsLocation: z,
                   analyticsObject: V,
                   subscription: r
                 })
