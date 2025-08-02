@@ -21,8 +21,8 @@ var i = n(255367),
   _ = n(275388),
   j = n(720463),
   C = n(450272),
-  O = n(981631),
-  E = n(388032),
+  E = n(981631),
+  O = n(388032),
   v = n(751318);
 
 function S() {
@@ -62,8 +62,8 @@ function T() {
     }), (0, i.jsx)(C.E_, {
       label: "Balance Widget Menu",
       children: (0, i.jsx)(b.V9, {
-        ctaText: E.intl.string(E.t["J+vlIS"]),
-        ctaOnClick: O.dG4,
+        ctaText: O.intl.string(O.t["J+vlIS"]),
+        ctaOnClick: E.dG4,
         isCoachmarkEnabled: !1
       })
     }), (0, i.jsxs)(C.E_, {
@@ -86,7 +86,7 @@ function T() {
         })]
       }), (0, i.jsx)(s.zx, {
         onClick: () => {
-          (0, l.xf)(), (0, u.s1)().location.pathname.includes(O.Z5c.COLLECTIBLES_SHOP) || (0, d.mK)({
+          (0, l.xf)(), (0, u.s1)().location.pathname.includes(E.Z5c.COLLECTIBLES_SHOP) || (0, d.mK)({
             openInLayer: !1,
             analyticsLocations: I,
             analyticsSource: o.Z.REVENUE_STORYBOOK_TEST_PAGE
@@ -167,9 +167,9 @@ function T() {
     }), (0, i.jsx)(C.E_, {
       label: "Balance Widget Card",
       children: (0, i.jsx)(f.L, {
-        ctaText: E.intl.string(E.t["H57f4+"]),
-        linkText: E.intl.string(E.t["7f4H7O"]),
-        ctaOnClick: O.dG4
+        ctaText: O.intl.string(O.t["H57f4+"]),
+        linkText: O.intl.string(O.t["7f4H7O"]),
+        ctaOnClick: E.dG4
       })
     })]
   })

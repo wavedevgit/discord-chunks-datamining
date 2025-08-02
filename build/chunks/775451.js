@@ -30,8 +30,8 @@ let b = {
       analyticsPage: _,
       isCoachmarkEnabled: j = !0,
       linkText: C = h.intl.string(h.t.XRdyj4),
-      cardAlignment: O = b.START,
-      className: E
+      cardAlignment: E = b.START,
+      className: O
     } = e, {
       balance: v
     } = (0, d.A)(), [S, T] = r.useState(u.b.DEFAULT), [N, I] = r.useState(!1), [y, A] = r.useState(!1), P = r.useRef(null), {
@@ -66,7 +66,7 @@ let b = {
         linkText: C
       }), [_, n, C, D, s]);
     return (0, i.jsxs)("div", {
-      className: a()(f.container, E, {
+      className: a()(f.container, O, {
         [f.hidden]: y,
         [f.visible]: !y
       }),
@@ -81,7 +81,7 @@ let b = {
         onClick: D,
         showNotificationBadge: t
       }), N && (0, i.jsx)("div", {
-        className: a()(f.cardContainer, O, {
+        className: a()(f.cardContainer, E, {
           [f.hidden]: y,
           [f.visible]: !y
         }),

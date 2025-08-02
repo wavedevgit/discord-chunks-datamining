@@ -1,6 +1,6 @@
 /** Chunk was on 22243 **/
 n.d(t, {
-  C: () => E,
+  C: () => O,
   Z: () => v
 });
 var i, r = n(255367);
@@ -22,8 +22,8 @@ var s = n(120356),
   _ = n(917062),
   j = n(579273),
   C = n(38874),
-  O = n(267201),
-  E = ((i = {}).SUBSCRIBER_HOME = "SUBSCRIBER_HOME", i.NITRO_SETTINGS = "SETTINGS", i.APPLICATION_NITRO_HOME = "APPLICATION_NITRO_HOME", i);
+  E = n(267201),
+  O = ((i = {}).SUBSCRIBER_HOME = "SUBSCRIBER_HOME", i.NITRO_SETTINGS = "SETTINGS", i.APPLICATION_NITRO_HOME = "APPLICATION_NITRO_HOME", i);
 let v = function(e) {
   let {
     variant: t
@@ -116,7 +116,7 @@ let v = function(e) {
         className: x.settingsBannerRightImageContainer,
         children: (0, r.jsx)("img", {
           alt: "",
-          src: O.Z,
+          src: E.Z,
           className: x.settingsImage
         })
       })]

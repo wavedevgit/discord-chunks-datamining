@@ -61,7 +61,7 @@ function _() {
   let {
     profileEffects: e,
     upsertConfig: t
-  } = (0, p.n6)(), [n, s] = r.useState(), _ = r.useRef(null), j = (0, o.Wu)([m.Z], () => m.Z.profileEffects), [C, O] = r.useState(""), E = r.useMemo(() => "" === C ? j : j.filter(e => {
+  } = (0, p.n6)(), [n, s] = r.useState(), _ = r.useRef(null), j = (0, o.Wu)([m.Z], () => m.Z.profileEffects), [C, E] = r.useState(""), O = r.useMemo(() => "" === C ? j : j.filter(e => {
     let t = C.toLowerCase();
     return e.config.title.toLowerCase().includes(t) || e.config.description.toLowerCase().includes(t)
   }), [C, j]), v = r.useCallback((e, n) => {
@@ -123,11 +123,11 @@ function _() {
         }), (0, i.jsx)("input", {
           value: C,
           onChange: e => {
-            O(e.target.value)
+            E(e.target.value)
           }
         }), (0, i.jsx)("div", {
           className: h.pfxGrid,
-          children: E.map(e => (0, i.jsx)(c.P3F, {
+          children: O.map(e => (0, i.jsx)(c.P3F, {
             className: h.pfxListItem,
             style: {
               backgroundImage: "url(".concat(e.config.thumbnailPreviewSrc, ")")

@@ -40,7 +40,7 @@ function C(e) {
   return e
 }
 
-function O(e, t) {
+function E(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -52,7 +52,7 @@ function O(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let E = {
+let O = {
     [f.cq.THUMBNAIL]: null,
     [f.cq.STATIC]: null,
     [f.cq.REDUCED_MOTION]: null
@@ -63,7 +63,7 @@ let E = {
       effect: t
     } = e, {
       upsertConfig: n
-    } = (0, h.n6)(), s = (0, o.e7)([g.default], () => g.default.getCurrentUser()), [S, T] = r.useState(!0), N = r.useRef(null), [I, y] = r.useState(!1), [A, P] = r.useState(!1), [R, D] = r.useState([]), [Z, w] = r.useState(E), k = r.useRef([]), [L, B] = r.useState(t.name), M = L.toLowerCase().replace(/\s+/g, "_"), U = r.useMemo(() => ({
+    } = (0, h.n6)(), s = (0, o.e7)([g.default], () => g.default.getCurrentUser()), [S, T] = r.useState(!0), N = r.useRef(null), [I, y] = r.useState(!1), [A, P] = r.useState(!1), [R, D] = r.useState([]), [Z, w] = r.useState(O), k = r.useRef([]), [L, B] = r.useState(t.name), M = L.toLowerCase().replace(/\s+/g, "_"), U = r.useMemo(() => ({
       type: l.Z.PROFILE_EFFECT,
       id: v,
       skuId: v,
@@ -79,7 +79,7 @@ let E = {
     }, G = (e, t) => {
       let n = V(t);
       null != n && (0, f.i0)(n, t => {
-        w(i => O(C({}, i), {
+        w(i => E(C({}, i), {
           [e]: (0, f.z)(t, n)
         }))
       })
@@ -98,7 +98,7 @@ let E = {
         })
       })
     }, H = e => {
-      w(t => O(C({}, t), {
+      w(t => E(C({}, t), {
         [e]: null
       }))
     };
@@ -117,7 +117,7 @@ let E = {
         let [t, n] = e;
         if (null != n) {
           let e = (0, f.$j)(n.base64);
-          n.src = e, k.current.push(e), w(e => O(C({}, e), {
+          n.src = e, k.current.push(e), w(e => E(C({}, e), {
             [t]: n
           }))
         }
@@ -280,9 +280,9 @@ let E = {
                   text: "Download Timing Config"
                 })
               }), (0, i.jsx)(u.Z, {
-                fileContents: () => JSON.stringify(O(C({}, t), {
+                fileContents: () => JSON.stringify(E(C({}, t), {
                   name: L,
-                  config: O(C({}, t.config), {
+                  config: E(C({}, t.config), {
                     effects: R,
                     stillFrames: Z
                   })
@@ -365,7 +365,7 @@ let E = {
               variant: "critical-secondary",
               text: "Clear Assets",
               onClick: () => {
-                D([]), w(E)
+                D([]), w(O)
               }
             })
           }), R.map((e, t) => (0, i.jsxs)("div", {

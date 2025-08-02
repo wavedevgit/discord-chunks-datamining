@@ -2,8 +2,8 @@
 n.d(t, {
   Z: () => f
 });
-var o = n(255367),
-  r = n(522942),
+var r = n(255367),
+  o = n(522942),
   l = n(793030),
   i = n(481060),
   s = n(797967),
@@ -21,17 +21,17 @@ function f(e) {
     defaultColor: m,
     selectedEffectId: g,
     className: h
-  } = e, b = g === r.m.GRADIENT;
-  return (0, o.jsxs)("div", {
+  } = e, b = g === o.m.GRADIENT;
+  return (0, r.jsxs)("div", {
     className: h,
-    children: [(0, o.jsxs)(l.X6, {
+    children: [(0, r.jsxs)(l.X6, {
       variant: "heading-md/semibold",
       className: p.selectorHeading,
-      children: [d.intl.string(c.default["JOpi7+"]), (0, o.jsx)(i.SrA, {
+      children: [d.intl.string(c.default["JOpi7+"]), (0, r.jsx)(i.SrA, {
         size: "xs",
         color: i.TVs.colors.TEXT_DEFAULT
       })]
-    }), (0, o.jsx)(s.default, {
+    }), (0, r.jsx)(s.default, {
       className: u.colorPicker,
       colorContainerClassName: u.colorPickerContainer,
       defaultColor: m,

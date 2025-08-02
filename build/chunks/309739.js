@@ -21,8 +21,8 @@ var i = n(255367),
   _ = n(335082),
   j = n(921801),
   C = n(553795),
-  O = n(430824),
-  E = n(63063),
+  E = n(430824),
+  O = n(63063),
   v = n(358085),
   S = n(362352),
   T = n(413182),
@@ -35,7 +35,7 @@ var i = n(255367),
 
 function D(e) {
   let t = () => {
-    N.SE.updateSetting(e ? O.Z.getGuildIds() : [])
+    N.SE.updateSetting(e ? E.Z.getGuildIds() : [])
   };
   (0, p.h7j)(e => {
     var n, r;
@@ -122,7 +122,7 @@ function Z() {
             color: "header-secondary",
             className: R.marginBottom8,
             children: A.intl.format(A.t.aUxRra, {
-              helpdeskArticle: E.Z.getArticleURL(y.BhN.ACTIVITY_STATUS_SETTINGS)
+              helpdeskArticle: O.Z.getArticleURL(y.BhN.ACTIVITY_STATUS_SETTINGS)
             })
           }), (0, i.jsx)(p.q4e, {
             options: o,
@@ -135,7 +135,7 @@ function Z() {
       }) : (0, i.jsx)(p.j7V, {
         value: t === d.GI.ACTIVITY_STATUS_OFF,
         note: A.intl.format(A.t["+5/xu7"], {
-          helpdeskArticle: E.Z.getArticleURL(y.BhN.ACTIVITY_STATUS_SETTINGS)
+          helpdeskArticle: O.Z.getArticleURL(y.BhN.ACTIVITY_STATUS_SETTINGS)
         }),
         onChange: e => s(!e),
         children: A.intl.string(A.t.D5GXTU)

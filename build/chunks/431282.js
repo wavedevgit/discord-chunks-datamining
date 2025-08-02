@@ -76,19 +76,19 @@ function f(e) {
     {
       onFocus: C
     } = j,
-    O = h(j, ["onFocus"]),
+    E = h(j, ["onFocus"]),
     {
-      id: E
+      id: O
     } = (0, a.f$)(),
     v = r.useRef(null),
     [S, T] = r.useState(!1),
     N = null != x;
   r.useLayoutEffect(() => {
-    if (N) return (0, s.N)(E, e => {
+    if (N) return (0, s.N)(O, e => {
       T(e === t)
     })
-  }, [t, E, N]);
-  let I = e => (0, i.jsxs)(u.kF, g(p({}, e, O, _), {
+  }, [t, O, N]);
+  let I = e => (0, i.jsxs)(u.kF, g(p({}, e, E, _), {
     ref: v,
     role: "button",
     look: o.zx.Looks.BLANK,

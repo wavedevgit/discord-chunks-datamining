@@ -52,7 +52,7 @@ function C(e) {
   })
 }
 
-function O(e) {
+function E(e) {
   var t;
   let {
     userId: n,
@@ -94,7 +94,7 @@ function O(e) {
   })
 }
 
-function E(e) {
+function O(e) {
   let {
     setting: t,
     userIds: n,
@@ -109,7 +109,7 @@ function E(e) {
         numberOfUsers: n.length
       }), (0, i.jsx)("div", {
         className: j.usersList,
-        children: n.slice(0, a).map((e, t) => (0, i.jsx)(O, {
+        children: n.slice(0, a).map((e, t) => (0, i.jsx)(E, {
           userId: e,
           last: t === n.length - 1
         }, e))
@@ -135,7 +135,7 @@ function E(e) {
 
 function v() {
   let e = (0, l.Wu)([m.Z], () => m.Z.getBlockedIDs());
-  return (0, i.jsx)(E, {
+  return (0, i.jsx)(O, {
     setting: b.s6.BLOCKED_USERS,
     userIds: e,
     listType: "blocked"
@@ -144,7 +144,7 @@ function v() {
 
 function S() {
   let e = (0, l.Wu)([m.Z], () => m.Z.getIgnoredIDs());
-  return (0, i.jsx)(E, {
+  return (0, i.jsx)(O, {
     setting: b.s6.IGNORED_USERS,
     userIds: e,
     listType: "ignored"
