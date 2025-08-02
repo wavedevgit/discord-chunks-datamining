@@ -635,7 +635,8 @@ class ts extends r.PureComponent {
             children: (0, i.jsx)(K.Z, {
               userName: eX.ZP.getName(t),
               displayNameStyles: e,
-              effectDisplayType: z.F.STATIC,
+              effectDisplayType: this.state.hovered ? z.F.ANIMATED : z.F.STATIC,
+              loop: !0,
               inProfile: !0
             })
           })
