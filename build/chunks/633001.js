@@ -222,7 +222,7 @@ let M = r.memo(function(e) {
       })]
     })
   }),
-  F = r.memo(function(e) {
+  U = r.memo(function(e) {
     let {
       pid: t
     } = e, a = (0, o.cj)([y.default], () => y.default.getOverlayPIDStatuses()), r = (0, o.cj)([b.default], () => b.default.getTrackedGames()), l = (0, o.e7)([y.default], () => y.default.isInputLocked(t), [t]), i = (0, o.e7)([y.default], () => y.default.DEV_isInputLockedV3(t), [t]), s = (0, o.e7)([y.default], () => y.default.DEV_isInputLocked(t), [t]), c = (0, o.e7)([y.default], () => y.default.isReady(t), [t]);
@@ -286,7 +286,7 @@ let M = r.memo(function(e) {
     })
   });
 
-function U(e) {
+function F(e) {
   let t = D(Object.values((0, o.Wu)([j.Z], () => j.Z.getWidgetsForLayout(S.$S))), e);
   return [t, () => {
     if (null != t)(0, u.E9)(t.id);
@@ -479,7 +479,7 @@ let V = r.memo(function(e) {
         variant: "text-sm/normal",
         color: "text-default",
         children: "No tracked game times"
-      }), Object.values(a).map(e => (0, n.jsx)(F, {
+      }), Object.values(a).map(e => (0, n.jsx)(U, {
         pid: e.pid
       }, e.pid)), (0, n.jsxs)("div", {
         children: [(0, n.jsxs)(d.Text, {
@@ -511,7 +511,7 @@ let V = r.memo(function(e) {
     })
   }),
   K = r.memo(function() {
-    let [e, t] = U(E.Odu.CLICK_ZONE_DEBUG), [a, r] = U(E.Odu.PERFORMANCE_DEBUG), l = (0, o.e7)([v.ZP], () => v.ZP.hasRenderDebugMode(h.GO.ClickZones)), i = (0, o.e7)([v.ZP], () => v.ZP.hasRenderDebugMode(h.GO.WidgetAreas)), s = (0, o.e7)([v.ZP], () => v.ZP.hasRenderDebugMode(h.GO.DisabledGPUBoost)), c = (0, o.e7)([v.ZP], () => v.ZP.hasRenderDebugMode(h.GO.ForceGPUBoost)), u = e => {
+    let [e, t] = F(E.Odu.CLICK_ZONE_DEBUG), [a, r] = F(E.Odu.PERFORMANCE_DEBUG), l = (0, o.e7)([v.ZP], () => v.ZP.hasRenderDebugMode(h.GO.ClickZones)), i = (0, o.e7)([v.ZP], () => v.ZP.hasRenderDebugMode(h.GO.WidgetAreas)), s = (0, o.e7)([v.ZP], () => v.ZP.hasRenderDebugMode(h.GO.DisabledGPUBoost)), c = (0, o.e7)([v.ZP], () => v.ZP.hasRenderDebugMode(h.GO.ForceGPUBoost)), u = e => {
       m.Z.setRenderDebugMode(!v.ZP.hasRenderDebugMode(e), e)
     }, x = () => {
       u(h.GO.ClickZones)

@@ -15,7 +15,7 @@ let d = () => {
     t = [{
       label: "DISABLED (no override)",
       value: void 0
-    }, ...Object.values(r.H).map(e => ({
+    }, ...Object.values(r.H).filter(e => e !== r.H.SUMMER_SALE_TAKEOVER).map(e => ({
       label: e,
       value: e
     }))];

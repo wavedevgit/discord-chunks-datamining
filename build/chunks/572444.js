@@ -126,7 +126,7 @@ function _() {
     noiseSuppressionSupported: p.Z.isNoiseSuppressionSupported(),
     noiseCancellationSupported: p.Z.isNoiseCancellationSupported(),
     noiseCancellationEnableStats: p.Z.getKrispEnableStats()
-  })), F = A ? "KRISP" : Z ? "STANDARD" : "NONE", U = (0, u.N)(), B = r.useCallback(() => {
+  })), U = A ? "KRISP" : Z ? "STANDARD" : "NONE", F = (0, u.N)(), B = r.useCallback(() => {
     var e;
     null == (e = C.current) || e.stop(), C.current = null, y(null)
   }, []);
@@ -136,9 +136,9 @@ function _() {
   }
 
   function G(e) {
-    if (t && z(), B(), null == U) return;
-    let a = U.createBufferSource();
-    a.buffer = e.audioBuffer, O.current = U.createGain(), O.current.gain.value = T, a.connect(O.current), O.current.connect(U.destination), a.loop = !0, a.start(), C.current = a, y(e)
+    if (t && z(), B(), null == F) return;
+    let a = F.createBufferSource();
+    a.buffer = e.audioBuffer, O.current = F.createGain(), O.current.gain.value = T, a.connect(O.current), O.current.connect(F.destination), a.loop = !0, a.start(), C.current = a, y(e)
   }
   r.useEffect(() => {
     B()
@@ -171,14 +171,14 @@ function _() {
         title: "Noise Cancellation",
         tag: c.RB0.H3,
         children: (0, n.jsx)(c.q4e, {
-          value: F,
+          value: U,
           onChange: e => {
             d.Z.setNoiseCancellation("KRISP" === e), d.Z.setNoiseSuppression("STANDARD" === e)
           },
           options: V,
           popoutLayerContext: h.O$
         })
-      }), "KRISP" === F && (0, n.jsxs)(n.Fragment, {
+      }), "KRISP" === U && (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)(c.hjN, {
           title: "Krisp Suppression Level",
           tag: c.RB0.H3,
@@ -283,7 +283,7 @@ function _() {
                 inputName: e,
                 audioBuffer: l,
                 createdAt: Date.now(),
-                suppression: F,
+                suppression: U,
                 echoCancellation: I,
                 krispSuppressionLevel: g
               }])
