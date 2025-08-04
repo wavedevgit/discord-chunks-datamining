@@ -91,9 +91,9 @@ let E = (e, t) => {
     let V = () => {
         A(_.L.USER_DISMISS)
       },
-      F = E(R, null != D ? D : null),
-      H = S(F),
-      z = x(F);
+      H = E(R, null != D ? D : null),
+      F = S(H),
+      z = x(H);
     return (0, r.jsx)("div", {
       ref: M,
       children: (0, r.jsx)(a.yRy, {
@@ -106,7 +106,7 @@ let E = (e, t) => {
           ref: U,
           onClose: V,
           buttonText: y.intl.string(y.t["+IrDzM"]),
-          header: H,
+          header: F,
           art: (0, r.jsx)("img", {
             src: v.Z,
             alt: "",

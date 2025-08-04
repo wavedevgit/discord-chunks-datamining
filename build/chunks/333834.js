@@ -126,8 +126,8 @@ function D(e) {
     isLoading: v.Z.isLoading,
     isLoadingComplete: v.Z.isLoadingComplete,
     hasLoadedEver: v.Z.hasLoadedEver
-  })), F = !V && G, {
-    messageCategoryOpenStates: H,
+  })), H = !V && G, {
+    messageCategoryOpenStates: F,
     toggleOpenState: z
   } = (0, C.Z)(), W = function() {
     let e = (0, u.Wu)([v.Z], () => {
@@ -206,18 +206,18 @@ function D(e) {
       return X ? e.push(a()) : q ? e.push((0, r.jsx)(R, {}, "empty-state")) : N ? (e.push(...n.map(e => d([e], !0))), e.push(...t.map(e => d([e], !1)))) : s().each(A, t => {
         0 !== Y[t].length && (e.push((0, r.jsx)(Z, {
           group: t,
-          isOpen: H[t],
+          isOpen: F[t],
           toggleOpenedState: () => {
-            let e = H[t];
+            let e = F[t];
             z(t), (0, y.RZ)({
               section: t,
               enabled: !e,
               viewId: D
             })
           }
-        }, t)), H[t] && e.push(...Y[t].map(e => d(e, t === x.KZ.UNREAD))))
+        }, t)), F[t] && e.push(...Y[t].map(e => d(e, t === x.KZ.UNREAD))))
       }), e
-    }, [t, n, a, H, z, Y, N, d, q, X, D]),
+    }, [t, n, a, F, z, Y, N, d, q, X, D]),
     J = Q[Q.length - 1],
     $ = i.isValidElement(J) && J.type === Z;
   i.useEffect(() => {
@@ -240,14 +240,14 @@ function D(e) {
     }, [o, l, t])
   }({
     messagesByCategory: Y,
-    loadingInitial: F
+    loadingInitial: H
   });
   let et = i.useCallback(() => {
     var e;
-    let t = A.filter(e => H[e]).reduce((e, t) => e + Y[t].length, 0),
+    let t = A.filter(e => F[e]).reduce((e, t) => e + Y[t].length, 0),
       n = null == (e = L.current) ? void 0 : e.getScrollerState();
     return null == n ? 0 : Math.max(0, Math.ceil(n.offsetHeight / 64) - t)
-  }, [H, Y]);
+  }, [F, Y]);
   i.useEffect(() => {
     X || G || 0 >= et() || (!$ || W) && (null == l || l(x.X.FILL_SCROLLER))
   }, [et, l, X, G, $, W]);

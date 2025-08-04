@@ -204,7 +204,7 @@ function E(e) {
       return (0, r.jsx)(a.v2r, b(m({
         onSelect: () => {},
         navId: "notifications-sidebar-filters",
-        "aria-label": "Notifications Sidebar Filters"
+        "aria-label": f.intl.string(f.t.UdhTtr)
       }, i), {
         onClose: () => t(),
         children: l.map(e => (0, r.jsx)(a.sNh, {

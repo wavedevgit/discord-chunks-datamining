@@ -1,6 +1,6 @@
 /**
   Module ID: 27638
-  Original File Name: 94cffdc90fa37c5d
+  Original File Name: d50acdab09bfdeec
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -1838,6 +1838,10 @@
 .headerButton_c485a2:hover {
     background-color: var(--button-secondary-background-hover);
     color: var(--text-primary)
+}
+
+.headerButton_c485a2:focus {
+    outline: 3px solid var(--focus-primary)
 }
 
 .container_f37cb1 {
@@ -8455,4 +8459,4 @@ div:has(>.positionLayer__4f4b6) {
     width: 96px
 }
 
-/*# sourceMappingURL=94cffdc90fa37c5d.css.map*/
+/*# sourceMappingURL=d50acdab09bfdeec.css.map*/

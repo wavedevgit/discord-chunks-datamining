@@ -153,9 +153,9 @@ let Z = i.memo(function(e) {
         channel: i
       }))
     })
-  }, [t.id]), F = null == R ? 0 : R.length, H = (0, a.JA)(t.id), {
+  }, [t.id]), H = null == R ? 0 : R.length, F = (0, a.JA)(t.id), {
     role: z
-  } = H, W = function(e, t) {
+  } = F, W = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -169,7 +169,7 @@ let Z = i.memo(function(e) {
       for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(H, ["role"]), K = i.useRef(null), Y = M > 0 ? S.intl.formatToPlainString(S.t["ZL7+Iy"], {
+  }(F, ["role"]), K = i.useRef(null), Y = M > 0 ? S.intl.formatToPlainString(S.t["ZL7+Iy"], {
     channelName: t.name,
     mentionCount: M
   }) : L ? S.intl.formatToPlainString(S.t.YlVvmZ, {
@@ -225,8 +225,8 @@ let Z = i.memo(function(e) {
               children: t.name
             }), (0, r.jsxs)("div", {
               className: I.children,
-              children: [F > 0 && t.userLimit > 0 ? (0, r.jsx)(y.Z, {
-                userCount: F,
+              children: [H > 0 && t.userLimit > 0 ? (0, r.jsx)(y.Z, {
+                userCount: H,
                 video: D,
                 channel: t
               }) : null, (0, O.Z)(M) ? (0, r.jsx)(C.Z, {
