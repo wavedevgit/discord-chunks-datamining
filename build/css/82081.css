@@ -1,6 +1,6 @@
 /**
   Module ID: 82081
-  Original File Name: d33a5ac1a5012798
+  Original File Name: 33ecd85c376369d8
 **/
 .closeButton_b425c1 {
     align-items: center;
@@ -121,15 +121,11 @@
     background: var(--interactive-active)
 }
 
-:root {
-    --custom-virtual-currency-border-subtle: var(--border-subtle,hsla(229,7%,45%,.12))
-}
-
 .baseCardOutline__1ab14 {
     -webkit-backdrop-filter: blur(18px);
     backdrop-filter: blur(18px);
-    border: 1px solid var(--border-border-subtle,hsla(229,7%,45%,.12));
-    border-radius: 12px;
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
     box-shadow: 0 12px 64px 0 rgba(0,0,0,.32)
 }
 
@@ -212,4 +208,4 @@
     gap: 12px
 }
 
-/*# sourceMappingURL=d33a5ac1a5012798.css.map*/
+/*# sourceMappingURL=33ecd85c376369d8.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 70657
-  Original File Name: 615322b6aec8d361
+  Original File Name: a157a2de0fda8c17
 **/
 .container__270b2 {
     flex-direction: row;
@@ -223,11 +223,11 @@
 }
 
 .container__04119:hover:not(.canceled__04119) {
-    background-color: var(--background-base-lower)
+    background-color: var(--background-mod-subtle)
 }
 
 .container__04119.active__04119,.container__04119:hover.active__04119 {
-    background-color: var(--background-base-lowest)
+    background-color: var(--background-mod-normal)
 }
 
 .timeStatus__04119 {
@@ -451,7 +451,7 @@
 }
 
 .inviteSplash_d5f3cd {
-    background-color: var(--border-subtle);
+    background-color: var(--background-mod-subtle);
     border-radius: 4px 4px 0 0;
     height: 64px;
     margin: -16px -16px 16px;
@@ -1092,4 +1092,4 @@
     padding: 16px
 }
 
-/*# sourceMappingURL=615322b6aec8d361.css.map*/
+/*# sourceMappingURL=a157a2de0fda8c17.css.map*/

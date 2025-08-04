@@ -1,6 +1,6 @@
 /**
   Module ID: 14385
-  Original File Name: fae560804a8a5a01
+  Original File Name: 4233f27823610e01
 **/
 @use postcss-pxtorem;
 
@@ -443,7 +443,7 @@
 }
 
 .avatar_c19a55:before {
-    background-color: var(--border-subtle);
+    background-color: var(--background-mod-subtle);
     content: "";
     display: block;
     height: 100%;
@@ -777,7 +777,7 @@
 }
 
 .compact_c19a55.hasThread_c19a55 .contents_c19a55:before {
-    background-color: var(--border-subtle)
+    background-color: var(--background-mod-subtle)
 }
 
 .zalgo_c19a55 .messageContent_c19a55 {
@@ -1549,4 +1549,4 @@
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=fae560804a8a5a01.css.map*/
+/*# sourceMappingURL=4233f27823610e01.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 22754
-  Original File Name: 1f4c9caa7bf757e4
+  Original File Name: 2657207e7a863da0
 **/
 .container__5537c {
     display: flex;
@@ -183,11 +183,11 @@
 }
 
 .container__04119:hover:not(.canceled__04119) {
-    background-color: var(--background-base-lower)
+    background-color: var(--background-mod-subtle)
 }
 
 .container__04119.active__04119,.container__04119:hover.active__04119 {
-    background-color: var(--background-base-lowest)
+    background-color: var(--background-mod-normal)
 }
 
 .timeStatus__04119 {
@@ -329,16 +329,16 @@
 }
 
 .card__88264 {
-    background-color: var(--background-mod-subtle);
+    background-color: var(--background-surface-higher);
     border: 1px solid var(--background-base-lower);
     border-color: var(--border-subtle);
     border-radius: 8px;
     cursor: pointer;
-    transition: border-color .5s
+    transition: border-color .1s,background-color .1s
 }
 
 .card__88264:hover {
-    background-color: var(--background-mod-normal)
+    background-color: var(--background-surface-highest)
 }
 
 .lurking__88264 {
@@ -672,7 +672,7 @@
 }
 
 .avatarUploader_e04502 .avatarUploaderInner_e04502,.avatarUploaderDisabled_e04502 .avatarUploaderInner_e04502 {
-    box-shadow: var(--elevation-high)
+    box-shadow: var(--shadow-border),var(--shadow-high)
 }
 
 .avatarUploader_e04502 .avatarUploaderInner_e04502:hover {
@@ -687,7 +687,7 @@
 .container__26abc {
     background-color: var(--background-surface-high);
     border-radius: 4px;
-    box-shadow: var(--elevation-high);
+    box-shadow: var(--shadow-border),var(--shadow-high);
     max-height: 300px;
     padding: 8px
 }
@@ -1269,4 +1269,4 @@
     padding: calc(var(--space-4) - 1px) calc(var(--space-12) - 1px)
 }
 
-/*# sourceMappingURL=1f4c9caa7bf757e4.css.map*/
+/*# sourceMappingURL=2657207e7a863da0.css.map*/

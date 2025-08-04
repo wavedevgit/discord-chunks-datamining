@@ -1,6 +1,6 @@
 /**
   Module ID: 27978
-  Original File Name: 0af8b2d7774dd186
+  Original File Name: 2733287c2b0b7022
 **/
 .textContainer__2215e {
     padding: 6px 0
@@ -33,8 +33,7 @@
 }
 
 .divider__2215e {
-    background-color: var(--border-subtle);
-    opacity: .5
+    background-color: var(--border-subtle)
 }
 
 .whatList__2215e {
@@ -1559,7 +1558,7 @@
 }
 
 .avatar_c19a55:before {
-    background-color: var(--border-subtle);
+    background-color: var(--background-mod-subtle);
     content: "";
     display: block;
     height: 100%;
@@ -1893,7 +1892,7 @@
 }
 
 .compact_c19a55.hasThread_c19a55 .contents_c19a55:before {
-    background-color: var(--border-subtle)
+    background-color: var(--background-mod-subtle)
 }
 
 .zalgo_c19a55 .messageContent_c19a55 {
@@ -3111,4 +3110,4 @@
     height: 100px
 }
 
-/*# sourceMappingURL=0af8b2d7774dd186.css.map*/
+/*# sourceMappingURL=2733287c2b0b7022.css.map*/

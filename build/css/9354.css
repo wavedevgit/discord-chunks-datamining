@@ -1,15 +1,13 @@
 /**
   Module ID: 9354
-  Original File Name: 8c2e166f4c86c2f6
+  Original File Name: 58f877784b764586
 **/
 .mainCheckboxContainer__16db0 {
     align-items: stretch;
     display: flex;
     flex: 1;
     flex-direction: column;
-    gap: 8px;
-    margin-bottom: 16px;
-    margin-top: 16px
+    gap: 8px
 }
 
 .checkboxContainer__16db0 {
@@ -32,4 +30,4 @@
     flex-grow: 0
 }
 
-/*# sourceMappingURL=8c2e166f4c86c2f6.css.map*/
+/*# sourceMappingURL=58f877784b764586.css.map*/

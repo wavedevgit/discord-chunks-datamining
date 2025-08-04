@@ -1,6 +1,6 @@
 /**
   Module ID: 22243
-  Original File Name: 0a4e5c80c78df777
+  Original File Name: 6326a7f3ea66aecf
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -2383,7 +2383,7 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .container_b4f99f {
-    background: var(--bg-surface-overlay);
+    background: var(--background-surface-higher);
     box-sizing: border-box;
     flex-direction: column;
     padding: 16px;
@@ -2441,15 +2441,11 @@ h1.title_feb59c,h2.title_feb59c {
     line-height: 16px
 }
 
-:root {
-    --custom-virtual-currency-border-subtle: var(--border-subtle,hsla(229,7%,45%,.12))
-}
-
 .baseCardOutline__1ab14 {
     -webkit-backdrop-filter: blur(18px);
     backdrop-filter: blur(18px);
-    border: 1px solid var(--border-border-subtle,hsla(229,7%,45%,.12));
-    border-radius: 12px;
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
     box-shadow: 0 12px 64px 0 rgba(0,0,0,.32)
 }
 
@@ -7133,7 +7129,7 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
 }
 
 .connectedAccountVanityMetadataTag_fffe42 {
-    background-color: var(--border-subtle);
+    background-color: var(--background-mod-subtle);
     border-radius: 12px;
     padding: 1px 8px
 }
@@ -9325,7 +9321,7 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
     align-items: center;
     background-color: var(--background-secondary-alt);
     border-radius: 8px;
-    box-shadow: var(--elevation-high);
+    box-shadow: var(--shadow-border),var(--shadow-high);
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -12922,7 +12918,7 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
 }
 
 .paginationButton_edf232 {
-    background-color: var(--border-subtle);
+    background-color: var(--background-mod-subtle);
     border-bottom-left-radius: var(--radius-md);
     border-bottom-right-radius: var(--radius-md);
     color: var(--white);
@@ -17859,7 +17855,7 @@ div.nagbar_d74ef8 {
 .container__37c99 {
     background-color: var(--background-surface-high);
     border-radius: 5px;
-    box-shadow: var(--elevation-high);
+    box-shadow: var(--shadow-border),var(--shadow-high);
     padding: 2px 4px
 }
 
@@ -19924,4 +19920,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=0a4e5c80c78df777.css.map*/
+/*# sourceMappingURL=6326a7f3ea66aecf.css.map*/

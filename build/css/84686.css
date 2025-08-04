@@ -1,11 +1,11 @@
 /**
   Module ID: 84686
-  Original File Name: 98617a824caf67b7
+  Original File Name: fcc35298b415e18f
 **/
 .container__26abc {
     background-color: var(--background-surface-high);
     border-radius: 4px;
-    box-shadow: var(--elevation-high);
+    box-shadow: var(--shadow-border),var(--shadow-high);
     max-height: 300px;
     padding: 8px
 }
@@ -134,4 +134,4 @@
     margin-right: 8px
 }
 
-/*# sourceMappingURL=98617a824caf67b7.css.map*/
+/*# sourceMappingURL=fcc35298b415e18f.css.map*/

@@ -1,9 +1,9 @@
 /** Chunk was on 58175 **/
-n.d(t, {
+n.d(e, {
   Z: () => r
 });
 
-function r(e) {
-  var t;
-  return null != (t = e.safetyAlertsChannelId) ? t : e.publicUpdatesChannelId
+function r(t) {
+  var e;
+  return null != (e = t.safetyAlertsChannelId) ? e : t.publicUpdatesChannelId
 }

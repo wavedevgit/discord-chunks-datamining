@@ -1,6 +1,6 @@
 /**
   Module ID: 35489
-  Original File Name: bcedd88956540a62
+  Original File Name: 7fd59ba794efc3ad
 **/
 .modal_c9e6eb {
     padding: var(--space-16)
@@ -44,7 +44,7 @@
 }
 
 .guildContainer_c9e6eb {
-    background-color: var(--border-subtle);
+    background-color: var(--background-mod-subtle);
     border: 1px solid var(--border-subtle);
     border-radius: var(--space-8);
     margin-bottom: var(--space-16);
@@ -75,4 +75,4 @@
     }
 }
 
-/*# sourceMappingURL=bcedd88956540a62.css.map*/
+/*# sourceMappingURL=7fd59ba794efc3ad.css.map*/

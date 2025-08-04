@@ -1,6 +1,6 @@
 /**
   Module ID: 43473
-  Original File Name: e7812cf3e9510513
+  Original File Name: b227fa7ac50be797
 **/
 .scroller__95bea {
     display: flex;
@@ -249,7 +249,7 @@
 }
 
 .connectedAccountVanityMetadataTag_fffe42 {
-    background-color: var(--border-subtle);
+    background-color: var(--background-mod-subtle);
     border-radius: 12px;
     padding: 1px 8px
 }
@@ -1519,4 +1519,4 @@
     border-color: var(--input-focused-border)
 }
 
-/*# sourceMappingURL=e7812cf3e9510513.css.map*/
+/*# sourceMappingURL=b227fa7ac50be797.css.map*/

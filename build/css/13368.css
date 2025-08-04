@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: 8e3609c70b452727
+  Original File Name: 3ddfd6625824d3fa
 **/
 .container_e73f2a {
     background-color: var(--background-surface-higher);
@@ -993,7 +993,7 @@
 }
 
 .code__1a1f5 {
-    background-color: var(--border-subtle);
+    background-color: var(--background-code);
     display: grid;
     grid-template-columns: repeat(var(--secure-frames-columns),1fr);
     overflow: hidden;
@@ -1067,7 +1067,7 @@
 .container__50387 {
     background: var(--background-surface-high);
     border-radius: 4px;
-    box-shadow: var(--elevation-high);
+    box-shadow: var(--shadow-border),var(--shadow-high);
     box-sizing: border-box;
     padding: 16px;
     width: 300px
@@ -1100,7 +1100,7 @@
 .debugPanelStandalone__50387 {
     background: var(--background-surface-high);
     border-radius: 4px;
-    box-shadow: var(--elevation-high);
+    box-shadow: var(--shadow-border),var(--shadow-high);
     width: 290px
 }
 
@@ -2405,9 +2405,9 @@
 }
 
 .soundButton_d9cf5f {
-    box-shadow: var(--elevation-high);
+    box-shadow: var(--shadow-border),var(--shadow-high);
     height: 52px;
     width: 96px
 }
 
-/*# sourceMappingURL=8e3609c70b452727.css.map*/
+/*# sourceMappingURL=3ddfd6625824d3fa.css.map*/

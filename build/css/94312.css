@@ -1,6 +1,6 @@
 /**
   Module ID: 94312
-  Original File Name: 299edf5ee265600b
+  Original File Name: 4d9213935539e5cf
 **/
 .editCard_a25a68 {
     background-color: var(--background-surface-high);
@@ -723,13 +723,13 @@
     }
 
     to {
-        background-color: var(--border-subtle)
+        background-color: var(--background-mod-subtle)
     }
 }
 
 .chipletContainer__3b3ff {
     align-items: center;
-    background-color: var(--border-subtle);
+    background-color: var(--background-mod-subtle);
     border: 2px solid transparent;
     border-radius: var(--radius-sm);
     cursor: pointer;
@@ -1480,7 +1480,7 @@
 }
 
 .pill__3dc42 {
-    background: var(--border-subtle);
+    background: var(--background-mod-subtle);
     border: 1px solid var(--background-modifier-selected);
     border-radius: 100px;
     box-shadow: var(--custom-guild-shop-preview-pill-shadow-dark);
@@ -3368,7 +3368,7 @@
 
 .earningsPreviewContainer__02e4c {
     border-radius: 8px;
-    box-shadow: var(--elevation-high);
+    box-shadow: var(--shadow-border),var(--shadow-high);
     display: flex;
     flex: 1;
     flex-direction: row;
@@ -3815,7 +3815,7 @@
 
 .container_caee69 {
     border-radius: var(--radius-sm);
-    box-shadow: var(--elevation-high);
+    box-shadow: var(--shadow-border),var(--shadow-high);
     padding: 16px
 }
 
@@ -4446,7 +4446,7 @@
 
 .addPrompt_e34850 {
     align-items: center;
-    border: 2px dashed var(--interactive-muted);
+    border: 2px dashed var(--border-subtle);
     border-radius: var(--radius-md);
     cursor: pointer;
     display: flex;
@@ -4467,7 +4467,7 @@
 }
 
 .dot_e34850 {
-    background-color: var(--border-subtle);
+    background-color: var(--background-mod-subtle);
     height: 4px;
     width: 4px
 }
@@ -4532,7 +4532,7 @@
 }
 
 .channelPill_e34850 {
-    background-color: var(--border-subtle);
+    background-color: var(--background-mod-subtle);
     border-radius: 2px;
     display: inline-block;
     padding: 2px 4px
@@ -4740,8 +4740,8 @@
 }
 
 .container__4a4f2 {
-    border-radius: 5px;
-    box-shadow: var(--elevation-high);
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-border),var(--shadow-high);
     padding: 12px
 }
 
@@ -5925,7 +5925,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 
 .profileCard__9e177 {
     background-color: var(--background-base-lower);
-    border: 1px solid var(--background-secondary-alt);
+    border: 1px solid var(--border-subtle);
     border-radius: var(--radius-sm);
     box-shadow: 0 8px 16px rgba(0,0,0,.1);
     box-sizing: border-box;
@@ -6952,7 +6952,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 
 .bannedUser_cdb2b0 {
     align-items: center;
-    background-color: var(--border-subtle);
+    background-color: var(--background-mod-subtle);
     border-radius: var(--radius-sm);
     box-shadow: 3px hsl(var(--primary-500-hsl)/0);
     cursor: pointer;
@@ -7637,7 +7637,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 .tooltip_b34334 {
     background-color: var(--black-500);
     border-radius: 5px;
-    box-shadow: var(--elevation-high);
+    box-shadow: var(--shadow-border),var(--shadow-high);
     color: var(--primary-200);
     font-size: 14px;
     font-weight: var(--font-weight-medium);
@@ -8569,7 +8569,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 }
 
 .avatarUploader_e04502 .avatarUploaderInner_e04502,.avatarUploaderDisabled_e04502 .avatarUploaderInner_e04502 {
-    box-shadow: var(--elevation-high)
+    box-shadow: var(--shadow-border),var(--shadow-high)
 }
 
 .avatarUploader_e04502 .avatarUploaderInner_e04502:hover {
@@ -9053,7 +9053,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 }
 
 .clickableAction_c66e86:hover {
-    background-color: var(--border-subtle)
+    background-color: var(--background-mod-subtle)
 }
 
 .actionInfo_c66e86 {
@@ -10136,7 +10136,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 .browserUnsupportedDialog__15634 {
     background: var(--background-surface-high);
     border-radius: var(--radius-xs);
-    box-shadow: var(--elevation-high);
+    box-shadow: var(--shadow-border),var(--shadow-high);
     color: var(--text-default);
     font-weight: var(--font-weight-medium);
     max-width: 288px;
@@ -11299,7 +11299,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 }
 
 .theme-dark .card__991c2 {
-    box-shadow: var(--elevation-high)
+    box-shadow: var(--shadow-border),var(--shadow-high)
 }
 
 .theme-dark .iconMask__991c2 {
@@ -11494,21 +11494,27 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 }
 
 .joinOptions__959cb {
-    background-color: var(--background-base-lowest);
-    border-radius: 12px;
+    background-color: var(--background-base-lower);
+    border: 1px solid var(--border-faint);
+    border-radius: var(--radius-md);
     display: flex;
     flex-direction: row;
-    gap: 8px;
-    margin-top: 16px;
-    padding: 8px
+    gap: var(--space-8);
+    margin-top: var(--space-16);
+    padding: var(--space-8)
 }
 
 .joinOptionTab__959cb {
     flex-basis: 100%
 }
 
+.joinOptionTab__959cb:hover {
+    background-color: var(--background-base-lower)!important
+}
+
 .joinOptionContent__959cb {
     align-items: center;
+    border: 1px solid transparent;
     border-radius: 8px;
     cursor: pointer;
     display: flex;
@@ -11518,11 +11524,12 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     height: 100%;
     padding: 12px 16px;
     text-align: center;
+    transition: background-color .1s ease;
     white-space: normal
 }
 
 .joinOptionContent__959cb:hover {
-    background-color: var(--background-modifier-hover)
+    background-color: var(--background-mod-subtle)
 }
 
 .joinOptionContent__959cb.uninteractive__959cb {
@@ -11531,11 +11538,12 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 }
 
 .joinOptionContent__959cb.uninteractive__959cb:hover {
-    background-color: var(--background-base-lowest)
+    background-color: var(--background-mod-faint)
 }
 
 .joinOptionContent__959cb.active__959cb {
-    background-color: var(--background-base-lower)
+    background-color: var(--background-mod-normal);
+    border-color: var(--border-normal)
 }
 
 .tooltipContainer__959cb {
@@ -12331,4 +12339,4 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     width: 8px
 }
 
-/*# sourceMappingURL=299edf5ee265600b.css.map*/
+/*# sourceMappingURL=4d9213935539e5cf.css.map*/

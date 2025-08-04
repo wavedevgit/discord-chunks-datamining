@@ -1,6 +1,6 @@
 /**
   Module ID: 71874
-  Original File Name: b2831dcf0e5eb80f
+  Original File Name: e518ed6ec5c89488
 **/
 .container__5537c {
     display: flex;
@@ -178,16 +178,16 @@
 }
 
 .card__88264 {
-    background-color: var(--background-mod-subtle);
+    background-color: var(--background-surface-higher);
     border: 1px solid var(--background-base-lower);
     border-color: var(--border-subtle);
     border-radius: 8px;
     cursor: pointer;
-    transition: border-color .5s
+    transition: border-color .1s,background-color .1s
 }
 
 .card__88264:hover {
-    background-color: var(--background-mod-normal)
+    background-color: var(--background-surface-highest)
 }
 
 .lurking__88264 {
@@ -521,7 +521,7 @@
 }
 
 .avatarUploader_e04502 .avatarUploaderInner_e04502,.avatarUploaderDisabled_e04502 .avatarUploaderInner_e04502 {
-    box-shadow: var(--elevation-high)
+    box-shadow: var(--shadow-border),var(--shadow-high)
 }
 
 .avatarUploader_e04502 .avatarUploaderInner_e04502:hover {
@@ -536,7 +536,7 @@
 .container__26abc {
     background-color: var(--background-surface-high);
     border-radius: 4px;
-    box-shadow: var(--elevation-high);
+    box-shadow: var(--shadow-border),var(--shadow-high);
     max-height: 300px;
     padding: 8px
 }
@@ -1118,4 +1118,4 @@
     padding: calc(var(--space-4) - 1px) calc(var(--space-12) - 1px)
 }
 
-/*# sourceMappingURL=b2831dcf0e5eb80f.css.map*/
+/*# sourceMappingURL=e518ed6ec5c89488.css.map*/

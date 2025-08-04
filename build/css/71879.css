@@ -1,6 +1,6 @@
 /**
   Module ID: 71879
-  Original File Name: c96074ede54a67cf
+  Original File Name: 2313ce7b1a5e263c
 **/
 .obscuredIcon__43090 {
     height: 32px;
@@ -36,7 +36,7 @@
 
 .container_faa96b:active {
     background-color: var(--background-modifier-active);
-    box-shadow: var(--elevation-high);
+    box-shadow: var(--shadow-border),var(--shadow-high);
     transform: translateY(-2px)
 }
 
@@ -995,7 +995,7 @@
     border: 1px solid var(--border-subtle);
     border-radius: 36px;
     bottom: 16px;
-    box-shadow: var(--elevation-high);
+    box-shadow: var(--shadow-border),var(--shadow-high);
     box-sizing: border-box;
     cursor: pointer;
     height: 36px;
@@ -1937,7 +1937,7 @@
 }
 
 .previewForm_d9be46 {
-    background: var(--border-subtle);
+    background: var(--background-base-low);
     border: 1px solid var(--background-modifier-selected);
     border-radius: 8px;
     margin-bottom: 12px;
@@ -2140,7 +2140,7 @@
 
 .form_d9be46 .mediaButton_d9be46 {
     background-color: var(--background-secondary-alt)!important;
-    border-color: var(--background-secondary-alt);
+    border-color: var(--border-subtle);
     border-radius: 50%;
     flex-shrink: 0;
     height: var(--custom-forum-post-form-control-size);
@@ -2430,7 +2430,7 @@
 .container__9a337:hover {
     background-color: var(--background-modifier-hover);
     border-color: var(--background-modifier-hover);
-    box-shadow: var(--elevation-high);
+    box-shadow: var(--shadow-border),var(--shadow-high);
     transform: translateY(-2px)
 }
 
@@ -2440,7 +2440,7 @@
 
 .container__9a337:active {
     background-color: var(--background-modifier-active);
-    box-shadow: var(--elevation-high);
+    box-shadow: var(--shadow-border),var(--shadow-high);
     transform: translateY(-2px)
 }
 
@@ -2679,4 +2679,4 @@
     color: var(--text-link)
 }
 
-/*# sourceMappingURL=c96074ede54a67cf.css.map*/
+/*# sourceMappingURL=2313ce7b1a5e263c.css.map*/

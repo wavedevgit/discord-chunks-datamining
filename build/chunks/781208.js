@@ -1,5 +1,5 @@
 /** Chunk was on 9354 **/
-n.d(t, {
+n.d(e, {
   $l: () => c,
   RI: () => i,
   Ud: () => l
@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(388032);
 let i = "https://discord.com/community/securing-your-server",
   l = ["MESSAGE_SPAM", "DM_SPAM", "MENTION_SPAM", "SUSPICIOUS_USERS", "SETTINGS_SPAM"],
-  c = e => {
-    switch (e) {
+  c = t => {
+    switch (t) {
       case "DM_SPAM":
         return r.intl.string(r.t["9CYNmZ"]);
       case "MENTION_SPAM":

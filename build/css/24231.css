@@ -1,6 +1,6 @@
 /**
   Module ID: 24231
-  Original File Name: 2430043ec84465e9
+  Original File Name: 254fa2d1d1e6bac6
 **/
 .container__05cdc {
     display: flex
@@ -333,7 +333,7 @@
 .container__26abc {
     background-color: var(--background-surface-high);
     border-radius: 4px;
-    box-shadow: var(--elevation-high);
+    box-shadow: var(--shadow-border),var(--shadow-high);
     max-height: 300px;
     padding: 8px
 }
@@ -530,4 +530,4 @@
     max-height: clamp(200px,calc(100vh - 80px),660px)
 }
 
-/*# sourceMappingURL=2430043ec84465e9.css.map*/
+/*# sourceMappingURL=254fa2d1d1e6bac6.css.map*/

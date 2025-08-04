@@ -1,6 +1,6 @@
 /**
   Module ID: 6307
-  Original File Name: 70d7657b365aa25b
+  Original File Name: 635ca2d81de3348f
 **/
 .buttonsContainer_a8b931 {
     display: flex;
@@ -496,7 +496,7 @@
 }
 
 .avatar_c19a55:before {
-    background-color: var(--border-subtle);
+    background-color: var(--background-mod-subtle);
     content: "";
     display: block;
     height: 100%;
@@ -830,7 +830,7 @@
 }
 
 .compact_c19a55.hasThread_c19a55 .contents_c19a55:before {
-    background-color: var(--border-subtle)
+    background-color: var(--background-mod-subtle)
 }
 
 .zalgo_c19a55 .messageContent_c19a55 {
@@ -1372,4 +1372,4 @@
     width: 440px
 }
 
-/*# sourceMappingURL=70d7657b365aa25b.css.map*/
+/*# sourceMappingURL=635ca2d81de3348f.css.map*/

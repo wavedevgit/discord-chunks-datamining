@@ -1,6 +1,6 @@
 /**
   Module ID: 60173
-  Original File Name: 84141e61767eb6ad
+  Original File Name: 3b98b55e486d605f
 **/
 @keyframes placeholderPulse_c8ffbb {
     0% {
@@ -2211,7 +2211,7 @@ strong {
     align-items: center;
     background: var(--background-surface-high);
     border-radius: var(--radius-lg);
-    box-shadow: var(--elevation-high);
+    box-shadow: var(--shadow-border),var(--shadow-high);
     box-sizing: border-box;
     display: flex;
     filter: drop-shadow(0 0 12px #a944b0);
@@ -4190,7 +4190,7 @@ strong {
 .viewAllButton__6981d {
     background: var(--primary-630);
     border-radius: 48px;
-    box-shadow: var(--elevation-high);
+    box-shadow: var(--shadow-border),var(--shadow-high);
     margin-left: 8px;
     padding: 4px 8px
 }
@@ -5147,7 +5147,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 .attachPopout__0923f {
     background-color: var(--background-surface-high);
     border-radius: 8px;
-    box-shadow: var(--elevation-high);
+    box-shadow: var(--shadow-border),var(--shadow-high);
     font-size: .75rem;
     font-weight: var(--font-weight-medium);
     min-width: 200px;
@@ -11790,7 +11790,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .auto_c8b5c7::-webkit-scrollbar-thumb {
-    background-color: var(--border-subtle);
+    background-color: var(--background-mod-subtle);
     min-height: 40px
 }
 
@@ -13085,4 +13085,4 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     position: relative
 }
 
-/*# sourceMappingURL=84141e61767eb6ad.css.map*/
+/*# sourceMappingURL=3b98b55e486d605f.css.map*/

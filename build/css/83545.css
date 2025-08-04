@@ -1,6 +1,6 @@
 /**
   Module ID: 83545
-  Original File Name: 4dc86217679383e7
+  Original File Name: 51f802f388f6f30b
 **/
 .closeButton__8a472 {
     position: absolute;
@@ -19,7 +19,7 @@
 }
 
 .iconContainer__8a472 {
-    background-color: var(--border-subtle);
+    background-color: var(--background-mod-subtle);
     border-radius: 50%;
     height: 48px;
     justify-content: center;
@@ -39,4 +39,4 @@
     margin-top: 16px
 }
 
-/*# sourceMappingURL=4dc86217679383e7.css.map*/
+/*# sourceMappingURL=51f802f388f6f30b.css.map*/

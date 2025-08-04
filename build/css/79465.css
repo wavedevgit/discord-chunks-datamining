@@ -1,6 +1,6 @@
 /**
   Module ID: 79465
-  Original File Name: 22a05c23ded54412
+  Original File Name: 937be4cb67d7afef
 **/
 .left_caab99 {
     transform: rotate(270deg)
@@ -504,7 +504,7 @@
 }
 
 .avatar_c19a55:before {
-    background-color: var(--border-subtle);
+    background-color: var(--background-mod-subtle);
     content: "";
     display: block;
     height: 100%;
@@ -838,7 +838,7 @@
 }
 
 .compact_c19a55.hasThread_c19a55 .contents_c19a55:before {
-    background-color: var(--border-subtle)
+    background-color: var(--background-mod-subtle)
 }
 
 .zalgo_c19a55 .messageContent_c19a55 {
@@ -1304,4 +1304,4 @@
     background-color: var(--background-mod-subtle)
 }
 
-/*# sourceMappingURL=22a05c23ded54412.css.map*/
+/*# sourceMappingURL=937be4cb67d7afef.css.map*/

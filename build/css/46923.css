@@ -1,6 +1,6 @@
 /**
   Module ID: 46923
-  Original File Name: 79cfc2171e921cb1
+  Original File Name: 542a9c0d0c862768
 **/
 .content__50a6f {
     align-items: center;
@@ -47,7 +47,7 @@
 }
 
 .gameSuggestionRadioItem__50a6f:hover {
-    background-color: var(--border-subtle)
+    background-color: var(--background-mod-subtle)
 }
 
 .otherFeedbackInput__50a6f {
@@ -95,4 +95,4 @@
     color: hsla(0,0%,100%,.85)
 }
 
-/*# sourceMappingURL=79cfc2171e921cb1.css.map*/
+/*# sourceMappingURL=542a9c0d0c862768.css.map*/

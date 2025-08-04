@@ -1,6 +1,6 @@
 /**
   Module ID: 80404
-  Original File Name: 77b51cdb50b0c660
+  Original File Name: 5229ba529707619d
 **/
 .container_db5301 {
     border: 1px solid var(--border-subtle);
@@ -38,7 +38,7 @@
 }
 
 .placeholderLine_db5301,.placeholderMedia_db5301 {
-    background-color: var(--border-subtle)
+    background-color: var(--background-mod-subtle)
 }
 
 .placeholderMedia_db5301 {
@@ -68,7 +68,7 @@
 }
 
 .dot_db5301 {
-    background-color: var(--border-subtle);
+    background-color: var(--background-mod-subtle);
     border-radius: 50%;
     height: 4px;
     margin: 0 8px;
@@ -79,4 +79,4 @@
     margin: 16px 0
 }
 
-/*# sourceMappingURL=77b51cdb50b0c660.css.map*/
+/*# sourceMappingURL=5229ba529707619d.css.map*/

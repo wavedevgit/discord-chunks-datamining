@@ -1,11 +1,11 @@
 /**
   Module ID: 1906
-  Original File Name: c14eebf7ff33ebec
+  Original File Name: c0bf7b2a048a57f2
 **/
 .container__26abc {
     background-color: var(--background-surface-high);
     border-radius: 4px;
-    box-shadow: var(--elevation-high);
+    box-shadow: var(--shadow-border),var(--shadow-high);
     max-height: 300px;
     padding: 8px
 }
@@ -84,4 +84,4 @@
     background-color: var(--background-base-lowest)
 }
 
-/*# sourceMappingURL=c14eebf7ff33ebec.css.map*/
+/*# sourceMappingURL=c0bf7b2a048a57f2.css.map*/

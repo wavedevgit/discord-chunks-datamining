@@ -1,6 +1,6 @@
 /**
   Module ID: 27388
-  Original File Name: ec0229227e5908d5
+  Original File Name: e038554443075083
 **/
 .grid__28d93 {
     display: grid;
@@ -54,16 +54,16 @@
 }
 
 .card__88264 {
-    background-color: var(--background-mod-subtle);
+    background-color: var(--background-surface-higher);
     border: 1px solid var(--background-base-lower);
     border-color: var(--border-subtle);
     border-radius: 8px;
     cursor: pointer;
-    transition: border-color .5s
+    transition: border-color .1s,background-color .1s
 }
 
 .card__88264:hover {
-    background-color: var(--background-mod-normal)
+    background-color: var(--background-surface-highest)
 }
 
 .lurking__88264 {
@@ -192,4 +192,4 @@
     margin-top: 8px
 }
 
-/*# sourceMappingURL=ec0229227e5908d5.css.map*/
+/*# sourceMappingURL=e038554443075083.css.map*/

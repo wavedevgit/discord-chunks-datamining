@@ -1,6 +1,6 @@
 /**
   Module ID: 66005
-  Original File Name: 7527552610e2e234
+  Original File Name: bbb3ce0e09313223
 **/
 .selector__12eef {
     background: transparent;
@@ -864,7 +864,7 @@
 }
 
 .resizePill_e2f668 {
-    background: var(--border-subtle);
+    background: var(--background-mod-subtle);
     border-radius: 2px;
     height: 4px;
     width: 48px
@@ -1430,7 +1430,7 @@
 .streamPreview__6da2d {
     background-color: var(--background-surface-high);
     border-radius: 5px;
-    box-shadow: var(--elevation-high);
+    box-shadow: var(--shadow-border),var(--shadow-high);
     overflow: hidden;
     width: 252px
 }
@@ -1853,4 +1853,4 @@ span.clanTag__07f91.isOverlay__07f91 {
     color: CanvasText
 }
 
-/*# sourceMappingURL=7527552610e2e234.css.map*/
+/*# sourceMappingURL=bbb3ce0e09313223.css.map*/

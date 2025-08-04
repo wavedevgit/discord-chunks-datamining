@@ -1,6 +1,6 @@
 /**
   Module ID: 12009
-  Original File Name: f6ae1c940e850bc2
+  Original File Name: 62ede8a21cb5f301
 **/
 .header__553a5 {
     margin-top: -16px;
@@ -280,7 +280,7 @@
 }
 
 .clickableAction_c66e86:hover {
-    background-color: var(--border-subtle)
+    background-color: var(--background-mod-subtle)
 }
 
 .actionInfo_c66e86 {
@@ -346,7 +346,7 @@
 }
 
 .row_d13feb:hover {
-    background-color: var(--border-subtle)
+    background-color: var(--background-surface-higher)
 }
 
 .content_d13feb {
@@ -489,4 +489,4 @@
     top: 1px
 }
 
-/*# sourceMappingURL=f6ae1c940e850bc2.css.map*/
+/*# sourceMappingURL=62ede8a21cb5f301.css.map*/

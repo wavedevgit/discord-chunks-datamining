@@ -18,22 +18,22 @@ var l = n(255367),
   b = n(984370),
   f = n(433355),
   p = n(384433),
-  C = n(388032),
-  v = n(86931);
-let g = e => [{
+  v = n(388032),
+  g = n(86931);
+let C = e => [{
     id: p.e.ALL_MEMBERS,
-    label: C.intl.string(C.t.NOOm1d)
+    label: v.intl.string(v.t.NOOm1d)
   }, {
     id: p.e.PENDING,
-    label: e > 0 ? C.intl.formatToPlainString(C.t["Wo+zLy"], {
+    label: e > 0 ? v.intl.formatToPlainString(v.t["Wo+zLy"], {
       count: e
-    }) : C.intl.string(C.t["4eQVBA"])
+    }) : v.intl.string(v.t["4eQVBA"])
   }, {
     id: p.e.REJECTED,
-    label: C.intl.string(C.t.bSZklZ)
+    label: v.intl.string(v.t.bSZklZ)
   }, {
     id: p.e.APPROVED,
-    label: C.intl.string(C.t.aURgY2)
+    label: v.intl.string(v.t.aURgY2)
   }],
   _ = e => {
     let {
@@ -44,7 +44,7 @@ let g = e => [{
     } = e;
     return (0, l.jsx)(d.v2r, {
       navId: "members-tabs-overflow-menu",
-      "aria-label": C.intl.string(C.t.riPnr6),
+      "aria-label": v.intl.string(v.t.riPnr6),
       hideScroller: !0,
       onClose: a,
       onSelect: a,
@@ -117,14 +117,14 @@ function T(e) {
         id: "more",
         clickableInnerRef: s,
         color: "text-muted",
-        className: i()(v.more, {
-          [v.selected]: m
+        className: i()(g.more, {
+          [g.selected]: m
         }),
-        "aria-label": C.intl.string(C.t.UKOtz8),
+        "aria-label": v.intl.string(v.t.UKOtz8),
         children: [(0, l.jsx)(d.Text, {
           variant: "text-md/medium",
           color: h,
-          children: C.intl.string(C.t.UKOtz8)
+          children: v.intl.string(v.t.UKOtz8)
         }), a ? (0, l.jsx)(d.u04, {
           size: "sm",
           color: j
@@ -153,7 +153,7 @@ function E(e) {
     onTabSelect: a
   } = e, [i, c] = r.useState(0), x = r.useRef(null), _ = r.useRef(i), E = (0, j.A)({
     guildId: t
-  }), N = g(null != E ? E : 0), {
+  }), N = C(null != E ? E : 0), {
     lastVisibleIndex: S,
     onItemLayout: P,
     overflowItemsRef: R
@@ -170,12 +170,12 @@ function E(e) {
   });
   return (0, u.s)(x, O, [w]), (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(b.Z.Divider, {
-      className: v.divider
+      className: g.divider
     }), (0, l.jsxs)("div", {
-      className: v.tabsContainer,
+      className: g.tabsContainer,
       ref: x,
       children: [(0, l.jsxs)("div", {
-        className: v.measurements,
+        className: g.measurements,
         children: [N.map((e, t) => (0, l.jsx)(o.AJ, {
           index: t,
           onItemLayout: P,
@@ -193,7 +193,7 @@ function E(e) {
           })
         })]
       }), (0, l.jsxs)(d.njP, {
-        "aria-label": C.intl.string(C.t.tcvVXF),
+        "aria-label": v.intl.string(v.t.tcvVXF),
         selectedItem: n,
         type: "top-pill",
         onItemSelect: a,

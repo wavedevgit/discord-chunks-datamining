@@ -1,6 +1,6 @@
 /**
   Module ID: 53
-  Original File Name: 10fdd4e282082b04
+  Original File Name: 4d31fefcf0dd063c
 **/
 .container_f37514 {
     margin-bottom: 16px;
@@ -230,9 +230,14 @@
     padding: 16px 24px
 }
 
+.listContainer__527b1 {
+    border: 1px solid var(--border-faint);
+    border-radius: var(--radius-md)
+}
+
 .listContainer__527b1 .listElement__527b1 {
     background-color: var(--background-surface-higher);
-    border-bottom: 1px solid var(--background-modifier-hover);
+    border-bottom: 1px solid var(--border-faint);
     border-radius: 0;
     margin-bottom: 0;
     padding: 0
@@ -247,14 +252,14 @@
 }
 
 .listContainer__527b1 .listElementWrapper__527b1:first-of-type>.listElement__527b1:first-of-type {
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px
+    border-top-left-radius: var(--radius-md);
+    border-top-right-radius: var(--radius-md)
 }
 
 .listContainer__527b1 .listElementWrapper__527b1:last-of-type>.listElement__527b1:last-of-type {
     border-bottom: none;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px
+    border-bottom-left-radius: var(--radius-md);
+    border-bottom-right-radius: var(--radius-md)
 }
 
 .childButton__3ed08 {
@@ -307,7 +312,7 @@
     background-color: var(--status-danger);
     border-radius: 4px;
     bottom: 0;
-    box-shadow: var(--elevation-high);
+    box-shadow: var(--shadow-border),var(--shadow-high);
     display: flex;
     font-weight: var(--font-weight-semibold);
     left: 0;
@@ -963,7 +968,7 @@
 }
 
 .avatar_c19a55:before {
-    background-color: var(--border-subtle);
+    background-color: var(--background-mod-subtle);
     content: "";
     display: block;
     height: 100%;
@@ -1297,7 +1302,7 @@
 }
 
 .compact_c19a55.hasThread_c19a55 .contents_c19a55:before {
-    background-color: var(--border-subtle)
+    background-color: var(--background-mod-subtle)
 }
 
 .zalgo_c19a55 .messageContent_c19a55 {
@@ -1504,7 +1509,7 @@
 .popout__86331 {
     background-color: var(--background-surface-high);
     border-radius: 4px;
-    box-shadow: var(--elevation-high);
+    box-shadow: var(--shadow-border),var(--shadow-high);
     overflow: hidden
 }
 
@@ -2226,4 +2231,4 @@
     }
 }
 
-/*# sourceMappingURL=10fdd4e282082b04.css.map*/
+/*# sourceMappingURL=4d31fefcf0dd063c.css.map*/

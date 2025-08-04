@@ -1,6 +1,6 @@
 /**
   Module ID: 60432
-  Original File Name: d36d83bcc3db4720
+  Original File Name: c9478c21888a3963
 **/
 @use postcss-pxtorem;
 
@@ -443,7 +443,7 @@
 }
 
 .avatar_c19a55:before {
-    background-color: var(--border-subtle);
+    background-color: var(--background-mod-subtle);
     content: "";
     display: block;
     height: 100%;
@@ -777,7 +777,7 @@
 }
 
 .compact_c19a55.hasThread_c19a55 .contents_c19a55:before {
-    background-color: var(--border-subtle)
+    background-color: var(--background-mod-subtle)
 }
 
 .zalgo_c19a55 .messageContent_c19a55 {
@@ -1131,7 +1131,7 @@
 .popout__86331 {
     background-color: var(--background-surface-high);
     border-radius: 4px;
-    box-shadow: var(--elevation-high);
+    box-shadow: var(--shadow-border),var(--shadow-high);
     overflow: hidden
 }
 
@@ -1933,4 +1933,4 @@
     vertical-align: top
 }
 
-/*# sourceMappingURL=d36d83bcc3db4720.css.map*/
+/*# sourceMappingURL=c9478c21888a3963.css.map*/

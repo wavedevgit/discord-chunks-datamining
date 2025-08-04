@@ -1,6 +1,6 @@
 /**
   Module ID: 27638
-  Original File Name: dc1b1c2563511bdb
+  Original File Name: efb84eebbc3ca199
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -3414,7 +3414,7 @@ div:has(>.repositionLayerTitlebarPopout_fc71d3) {
 
 .container_faa96b:active {
     background-color: var(--background-modifier-active);
-    box-shadow: var(--elevation-high);
+    box-shadow: var(--shadow-border),var(--shadow-high);
     transform: translateY(-2px)
 }
 
@@ -5845,7 +5845,7 @@ div:has(>.repositionLayerTitlebarPopout_fc71d3) {
 .container__4e30a {
     background-color: var(--background-surface-high);
     border-radius: 5px;
-    box-shadow: var(--elevation-high);
+    box-shadow: var(--shadow-border),var(--shadow-high);
     margin-left: 16px;
     max-height: 360px;
     padding: 0 16px;
@@ -6739,7 +6739,7 @@ div:has(>.repositionLayerTitlebarPopout_fc71d3) {
 .popoutContainer__93fc9 {
     background: var(--bg-surface-overlay);
     border-radius: var(--radius-md);
-    box-shadow: var(--elevation-high);
+    box-shadow: var(--shadow-border),var(--shadow-high);
     display: flex;
     flex-direction: column;
     position: relative;
@@ -7485,7 +7485,7 @@ div:has(>.repositionLayerTitlebarPopout_fc71d3) {
 }
 
 .code__1a1f5 {
-    background-color: var(--border-subtle);
+    background-color: var(--background-code);
     display: grid;
     grid-template-columns: repeat(var(--secure-frames-columns),1fr);
     overflow: hidden;
@@ -7559,7 +7559,7 @@ div:has(>.repositionLayerTitlebarPopout_fc71d3) {
 .container__50387 {
     background: var(--background-surface-high);
     border-radius: 4px;
-    box-shadow: var(--elevation-high);
+    box-shadow: var(--shadow-border),var(--shadow-high);
     box-sizing: border-box;
     padding: 16px;
     width: 300px
@@ -7592,7 +7592,7 @@ div:has(>.repositionLayerTitlebarPopout_fc71d3) {
 .debugPanelStandalone__50387 {
     background: var(--background-surface-high);
     border-radius: 4px;
-    box-shadow: var(--elevation-high);
+    box-shadow: var(--shadow-border),var(--shadow-high);
     width: 290px
 }
 
@@ -7738,7 +7738,7 @@ div:has(>.repositionLayerTitlebarPopout_fc71d3) {
 .noiseCancellationPopout_e131a9 {
     background: var(--background-surface-high);
     border-radius: 4px;
-    box-shadow: var(--elevation-high);
+    box-shadow: var(--shadow-border),var(--shadow-high);
     padding: 16px;
     width: 239px
 }
@@ -7916,7 +7916,7 @@ div:has(>.repositionLayerTitlebarPopout_fc71d3) {
 .voicePanelIntroductionWrapper_e131a9 {
     background-color: var(--white-500);
     border-radius: 4px;
-    box-shadow: var(--elevation-high);
+    box-shadow: var(--shadow-border),var(--shadow-high);
     max-width: 280px;
     padding: 16px
 }
@@ -8454,9 +8454,9 @@ div:has(>.repositionLayerTitlebarPopout_fc71d3) {
 }
 
 .soundButton_d9cf5f {
-    box-shadow: var(--elevation-high);
+    box-shadow: var(--shadow-border),var(--shadow-high);
     height: 52px;
     width: 96px
 }
 
-/*# sourceMappingURL=dc1b1c2563511bdb.css.map*/
+/*# sourceMappingURL=efb84eebbc3ca199.css.map*/

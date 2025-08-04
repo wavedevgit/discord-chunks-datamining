@@ -1,6 +1,6 @@
 /**
   Module ID: 78431
-  Original File Name: a858498a6937faf0
+  Original File Name: 604aaa10e3866948
 **/
 .cardContainer__8833c {
     display: grid;
@@ -177,7 +177,7 @@
 }
 
 .pill__3dc42 {
-    background: var(--border-subtle);
+    background: var(--background-mod-subtle);
     border: 1px solid var(--background-modifier-selected);
     border-radius: 100px;
     box-shadow: var(--custom-guild-shop-preview-pill-shadow-dark);
@@ -418,4 +418,4 @@
     }
 }
 
-/*# sourceMappingURL=a858498a6937faf0.css.map*/
+/*# sourceMappingURL=604aaa10e3866948.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 79010
-  Original File Name: 67b26fe6c927f857
+  Original File Name: 0a49bf0d8a68a457
 **/
 .container__270b2 {
     flex-direction: row;
@@ -59,11 +59,11 @@
 }
 
 .container__04119:hover:not(.canceled__04119) {
-    background-color: var(--background-base-lower)
+    background-color: var(--background-mod-subtle)
 }
 
 .container__04119.active__04119,.container__04119:hover.active__04119 {
-    background-color: var(--background-base-lowest)
+    background-color: var(--background-mod-normal)
 }
 
 .timeStatus__04119 {
@@ -205,16 +205,16 @@
 }
 
 .card__88264 {
-    background-color: var(--background-mod-subtle);
+    background-color: var(--background-surface-higher);
     border: 1px solid var(--background-base-lower);
     border-color: var(--border-subtle);
     border-radius: 8px;
     cursor: pointer;
-    transition: border-color .5s
+    transition: border-color .1s,background-color .1s
 }
 
 .card__88264:hover {
-    background-color: var(--background-mod-normal)
+    background-color: var(--background-surface-highest)
 }
 
 .lurking__88264 {
@@ -415,4 +415,4 @@
     border-color: ButtonText
 }
 
-/*# sourceMappingURL=67b26fe6c927f857.css.map*/
+/*# sourceMappingURL=0a49bf0d8a68a457.css.map*/

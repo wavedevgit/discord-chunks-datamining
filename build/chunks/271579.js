@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  WS: () => p,
-  ZP: () => m,
-  zS: () => h
+  WS: () => m,
+  ZP: () => E,
+  zS: () => g
 }), n(413496), n(433524), n(35282), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685);
 var r = n(264344),
   i = n.n(r),
@@ -30,9 +30,11 @@ function l(e, t) {
 let c = "com.discord",
   u = 0x3ac14d3a,
   d = "com.hammerandchisel.discord",
-  _ = "https://discordapp.page.link";
+  _ = "https://discordapp.page.link",
+  f = "https://discordapp.onelink.me",
+  p = "Hs5r";
 
-function f() {
+function h() {
   var e, t;
   let n = ["WebView", "(iPhone|iPod|iPad)(?!.*Safari/)"],
     r = RegExp("(".concat(n.join("|"), ")"), "ig"),
@@ -41,44 +43,53 @@ function f() {
   return (null === i() || void 0 === i() || null == (t = i().os) ? void 0 : t.family) !== "iOS" || o
 }
 
-function p() {
+function m() {
   return (0, a.Z)()
 }
 
-function h(e) {
-  if (!e.startsWith(_)) return null;
+function g(e) {
+  let t = e.startsWith(f),
+    n = e.startsWith(_);
+  if (!t && !n) return null;
   try {
-    var t;
-    let n = new URL(e).searchParams,
-      r = n.get("link");
+    let t = new URL(e).searchParams,
+      r = n ? t.get("link") : t.get("deep_link_value");
     if (null == r) return null;
     let i = decodeURIComponent(r),
       a = new URL(i).searchParams,
-      o = {
-        utmSource: null != (t = n.get("utm_source")) ? t : void 0
+      o = n ? t.get("utm_source") : t.get("pid"),
+      s = {
+        utmSource: null != o ? o : void 0
       };
-    for (let [e, t] of a.entries()) o[e] = t;
-    return o
+    for (let [e, t] of a.entries()) s[e] = t;
+    return s
   } catch (e) {
     return null
   }
 }
 
-function m(e, t) {
+function E(e, t) {
+  var n, r;
   let {
-    utmSource: n,
-    androidFallbackLink: r,
-    iosFallbackLink: i
-  } = t, a = s(t, ["utmSource", "androidFallbackLink", "iosFallbackLink"]), l = new URL(e);
-  for (let e in a) {
-    let t = a[e];
-    null != t && l.searchParams.set(e, t)
+    utmSource: i,
+    androidFallbackLink: a,
+    iosFallbackLink: l
+  } = t, m = s(t, ["utmSource", "androidFallbackLink", "iosFallbackLink"]), g = new URL(e);
+  for (let e in m) {
+    let t = m[e];
+    null != t && g.searchParams.set(e, t)
   }
-  let p = encodeURIComponent(l.toString()),
-    h = encodeURIComponent((0, o.Z)()),
-    m = +!!f(),
-    g = null != r ? encodeURIComponent(r) : null,
-    E = null != i ? encodeURIComponent(i) : null,
-    b = "".concat(_, "/?link=").concat(p, "&utm_source=").concat(n, "&apn=").concat(c, "&isi=").concat(u, "&ibi=").concat(d, "&sd=").concat(h, "&efr=").concat(m);
-  return null != g && (b += "&afl=".concat(g)), null != E && (b += "&ifl=".concat(E)), b
+  let E = encodeURIComponent(g.toString()),
+    b = encodeURIComponent((0, o.Z)()),
+    y = +!!h(),
+    O = null != a ? encodeURIComponent(a) : null,
+    v = null != l ? encodeURIComponent(l) : null;
+  if ((null == (r = window) || null == (n = r.location) ? void 0 : n.hash) === "#test") {
+    let e = "".concat(f, "/").concat(p, "/?deep_link_value=").concat(E, "&pid=").concat(i, "&af_og_description=").concat(b, "&af_force_deeplink=").concat(y);
+    return null != O && (e += "&af_android_url=".concat(O)), null != v && (e += "&af_ios_url=".concat(v)), console.log("Redirecting to ".concat(e)), e
+  } {
+    let e = encodeURIComponent(g.toString()),
+      t = "".concat(_, "/?link=").concat(e, "&utm_source=").concat(i, "&apn=").concat(c, "&isi=").concat(u, "&ibi=").concat(d, "&sd=").concat(b, "&efr=").concat(y);
+    return null != O && (t += "&afl=".concat(O)), null != v && (t += "&ifl=".concat(v)), t
+  }
 }

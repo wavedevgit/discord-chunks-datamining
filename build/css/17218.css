@@ -1,6 +1,6 @@
 /**
   Module ID: 17218
-  Original File Name: 4a08f5367c32f956
+  Original File Name: 53b285cf435dcdb9
 **/
 .wrapper_b76891 {
     align-items: center;
@@ -29,7 +29,7 @@
     align-items: center;
     background-color: var(--background-base-lowest);
     border-radius: 8px;
-    box-shadow: var(--elevation-high);
+    box-shadow: var(--shadow-border),var(--shadow-high);
     box-sizing: border-box;
     display: flex;
     gap: 8px;
@@ -1057,7 +1057,7 @@
 }
 
 .iconButtonLarge_a77fde:hover {
-    background-color: var(--border-subtle)
+    background-color: var(--background-mod-subtle)
 }
 
 .iconButton_a77fde {
@@ -1066,7 +1066,7 @@
 }
 
 .iconButton_a77fde:hover {
-    background-color: var(--border-subtle)
+    background-color: var(--background-mod-subtle)
 }
 
 .iconButtonInner_a77fde {
@@ -1679,7 +1679,7 @@
 }
 
 .iconButton__636a2:hover {
-    background-color: var(--border-subtle)
+    background-color: var(--background-mod-subtle)
 }
 
 .ctaClaimReward__636a2 {
@@ -2483,4 +2483,4 @@
     padding-top: 10px
 }
 
-/*# sourceMappingURL=4a08f5367c32f956.css.map*/
+/*# sourceMappingURL=53b285cf435dcdb9.css.map*/

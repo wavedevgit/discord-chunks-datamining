@@ -1,6 +1,6 @@
 /**
   Module ID: 86915
-  Original File Name: d3f17ea0e668dd64
+  Original File Name: 7bd5d320afc4d6c2
 **/
 .iconButton_aa66d3 {
     background-color: transparent;
@@ -641,7 +641,7 @@
 }
 
 .placeholderLine_db5301,.placeholderMedia_db5301 {
-    background-color: var(--border-subtle)
+    background-color: var(--background-mod-subtle)
 }
 
 .placeholderMedia_db5301 {
@@ -671,7 +671,7 @@
 }
 
 .dot_db5301 {
-    background-color: var(--border-subtle);
+    background-color: var(--background-mod-subtle);
     border-radius: 50%;
     height: 4px;
     margin: 0 8px;
@@ -824,4 +824,4 @@
     vertical-align: top
 }
 
-/*# sourceMappingURL=d3f17ea0e668dd64.css.map*/
+/*# sourceMappingURL=7bd5d320afc4d6c2.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 63830
-  Original File Name: 5917c1757035e905
+  Original File Name: fd8435b7fbfcca87
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -378,7 +378,7 @@
     align-items: center;
     background-color: var(--background-base-lowest);
     border-radius: 8px;
-    box-shadow: var(--elevation-high);
+    box-shadow: var(--shadow-border),var(--shadow-high);
     box-sizing: border-box;
     display: flex;
     gap: 8px;
@@ -1222,4 +1222,4 @@
     align-items: stretch
 }
 
-/*# sourceMappingURL=5917c1757035e905.css.map*/
+/*# sourceMappingURL=fd8435b7fbfcca87.css.map*/

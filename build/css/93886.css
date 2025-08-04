@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: 055200b3ff010cf1
+  Original File Name: ed9fbc6a046748f5
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -782,7 +782,7 @@
 .actionProperties_a81334 {
     background: var(--background-base-low);
     border-bottom: 1px solid var(--background-base-lowest);
-    box-shadow: var(--elevation-high)
+    box-shadow: var(--shadow-border),var(--shadow-high)
 }
 
 .errorIcon_a81334 {
@@ -1139,7 +1139,7 @@
 .container__300a2 {
     background-color: var(--background-base-lower);
     border-radius: var(--radius-lg);
-    box-shadow: var(--elevation-high);
+    box-shadow: var(--shadow-border),var(--shadow-high);
     max-width: 600px;
     width: 100%
 }
@@ -2020,7 +2020,7 @@
 }
 
 .avatar_c19a55:before {
-    background-color: var(--border-subtle);
+    background-color: var(--background-mod-subtle);
     content: "";
     display: block;
     height: 100%;
@@ -2354,7 +2354,7 @@
 }
 
 .compact_c19a55.hasThread_c19a55 .contents_c19a55:before {
-    background-color: var(--border-subtle)
+    background-color: var(--background-mod-subtle)
 }
 
 .zalgo_c19a55 .messageContent_c19a55 {
@@ -3238,4 +3238,4 @@
     width: 100%
 }
 
-/*# sourceMappingURL=055200b3ff010cf1.css.map*/
+/*# sourceMappingURL=ed9fbc6a046748f5.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 80993
-  Original File Name: 9b90ff4d7f2203a5
+  Original File Name: 30b37f5762182b92
 **/
 .connectedAccountVanityMetadata_fffe42 {
     margin-top: 4px
@@ -11,7 +11,7 @@
 }
 
 .connectedAccountVanityMetadataTag_fffe42 {
-    background-color: var(--border-subtle);
+    background-color: var(--background-mod-subtle);
     border-radius: 12px;
     padding: 1px 8px
 }
@@ -275,12 +275,8 @@
 }
 
 .connectionsChecksGroupPlatformDisabled_a470b4 {
-    background-color: var(--border-subtle);
-    cursor: not-allowed
-}
-
-.connectionsChecksGroupPlatformDisabled_a470b4:hover {
-    border-color: var(--border-subtle)
+    cursor: not-allowed;
+    opacity: .7
 }
 
 .connectionsChecksGroupTextContainer_a470b4 {
@@ -433,4 +429,4 @@
     white-space: nowrap
 }
 
-/*# sourceMappingURL=9b90ff4d7f2203a5.css.map*/
+/*# sourceMappingURL=30b37f5762182b92.css.map*/

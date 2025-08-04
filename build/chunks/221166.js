@@ -1,12 +1,9 @@
 /** Chunk was on 43350 **/
 t.exports = {
-  modalContent: "modalContent__837b7",
   radioGroup: "radioGroup__837b7",
   radioItem: "radioItem__837b7",
-  footer: "footer__837b7",
   title: "title__837b7",
   error: "error__837b7",
-  closeIcon: "closeIcon__837b7",
   reasonFreeText: "reasonFreeText__837b7",
   hidden: "hidden__837b7"
 }

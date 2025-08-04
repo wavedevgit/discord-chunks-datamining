@@ -1,6 +1,6 @@
 /**
   Module ID: 75347
-  Original File Name: 6a2900d1afbb86fc
+  Original File Name: 11d3c107e6cbb40f
 **/
 .avatarBackground_eb2508 {
     align-items: center;
@@ -240,7 +240,7 @@
 }
 
 .paginationButton_edf232 {
-    background-color: var(--border-subtle);
+    background-color: var(--background-mod-subtle);
     border-bottom-left-radius: var(--radius-md);
     border-bottom-right-radius: var(--radius-md);
     color: var(--white);
@@ -337,4 +337,4 @@ div.nagbar_d74ef8 {
     display: flex
 }
 
-/*# sourceMappingURL=6a2900d1afbb86fc.css.map*/
+/*# sourceMappingURL=11d3c107e6cbb40f.css.map*/

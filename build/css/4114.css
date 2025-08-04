@@ -1,6 +1,6 @@
 /**
   Module ID: 4114
-  Original File Name: b589ac4bd9263247
+  Original File Name: 1358e6204acabbed
 **/
 .modalContent__837b7 {
     gap: 20px
@@ -11,13 +11,9 @@
     flex-direction: column
 }
 
-.radioGroup__837b7 {
-    gap: var(--space-16)
-}
-
 .radioItem__837b7 {
     color: var(--interactive-normal);
-    padding: 0!important
+    padding: var(--space-8) var(--space-4)!important
 }
 
 .footer__837b7 {
@@ -62,4 +58,4 @@
     max-height: 0
 }
 
-/*# sourceMappingURL=b589ac4bd9263247.css.map*/
+/*# sourceMappingURL=1358e6204acabbed.css.map*/
