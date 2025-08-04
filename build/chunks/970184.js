@@ -119,12 +119,15 @@ function Z(e, t, n) {
       error: u,
       validate: a
     } = L(t, l),
-    d = i.useCallback(n => null == n || (o.Z.dispatch({
-      type: "SET_INTERACTION_COMPONENT_STATE",
-      rootContainerId: e.customId,
-      componentId: t.id,
-      state: n
-    }), !!a(n)), [e.customId, t.id, a]);
+    d = i.useCallback(n => {
+      var l, i;
+      return null == n || (l = e.customId, i = t.id, o.Z.dispatch({
+        type: "SET_INTERACTION_COMPONENT_STATE",
+        rootContainerId: l,
+        componentId: i,
+        state: n
+      }), !!a(n))
+    }, [e.customId, t.id, a]);
   return (0, c.ZP)(() => {
     d(n)
   }), {
