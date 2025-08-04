@@ -1,6 +1,6 @@
 /** Chunk was on 22243 **/
 n.d(t, {
-  Z: () => C
+  Z: () => E
 }), n(388685), n(415506);
 var i = n(255367),
   r = n(73800),
@@ -156,7 +156,7 @@ class j extends r.Component {
   }
 }
 
-function C() {
+function E() {
   let e = r.useContext(m.AnalyticsContext),
     t = (0, s.e7)([u.Z], () => u.Z.enabled);
   return (0, i.jsx)(j, {

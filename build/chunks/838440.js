@@ -12,16 +12,16 @@ var r = n(570140),
   c = n(760729),
   u = n(74538),
   d = n(981631),
-  _ = n(388032);
+  f = n(388032);
 
-function f(e, t) {
+function _(e, t) {
   i.Z.show({
-    title: _.intl.string(_.t.l8rYLi),
-    body: _.intl.formatToPlainString(_.t.FfjF19, {
+    title: f.intl.string(f.t.l8rYLi),
+    body: f.intl.formatToPlainString(f.t.FfjF19, {
       currentLength: e,
       maxLength: t
     }),
-    confirmText: _.intl.string(_.t.BddRzc)
+    confirmText: f.intl.string(f.t.BddRzc)
   }), l.default.track(d.rMx.OPEN_MODAL, {
     type: "Message Too Long Alert",
     message_content_length: e
@@ -53,7 +53,7 @@ function p(e) {
       type: "MESSAGE_LENGTH_UPSELL",
       channel: h,
       content: l
-    }) : f(l.length, y), b({
+    }) : _(l.length, y), b({
       valid: !1,
       failureReason: d.zYc.MESSAGE_TOO_LONG
     });
@@ -89,9 +89,9 @@ function p(e) {
   }
   if (a.ZP.isFull()) {
     i.Z.show({
-      title: _.intl.string(_.t["7Q4eo6"]),
-      body: _.intl.string(_.t.gi6XHh),
-      confirmText: _.intl.string(_.t.Z4U1g4)
+      title: f.intl.string(f.t["7Q4eo6"]),
+      body: f.intl.string(f.t.gi6XHh),
+      confirmText: f.intl.string(f.t.Z4U1g4)
     }), b({
       valid: !1,
       failureReason: d.zYc.RATE_LIMITED

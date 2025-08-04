@@ -13,8 +13,8 @@ var i = n(120356),
   c = n(481060),
   u = n(835473),
   d = n(318374),
-  _ = n(925329),
-  f = n(594174),
+  f = n(925329),
+  _ = n(594174),
   p = n(823379),
   h = n(388032),
   m = n(352665);
@@ -26,13 +26,13 @@ let g = function(e) {
     title: o,
     guildId: g,
     className: E
-  } = e, b = (0, u.q)(i), y = (0, l.Wu)([f.default], () => {
+  } = e, b = (0, u.q)(i), y = (0, l.Wu)([_.default], () => {
     var e;
-    return null != (e = n.map(e => f.default.getUser(e)).filter(p.lm)) ? e : []
+    return null != (e = n.map(e => _.default.getUser(e)).filter(p.lm)) ? e : []
   }), O = null == b ? void 0 : b.name, v = s()(t).fromNow();
   return null == t ? null : (0, r.jsxs)("div", {
     className: a()(E, m.container),
-    children: [(0, r.jsx)(_.Z, {
+    children: [(0, r.jsx)(f.Z, {
       game: b
     }), (0, r.jsxs)("div", {
       className: m.textSection,

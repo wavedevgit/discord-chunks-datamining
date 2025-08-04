@@ -10,8 +10,8 @@ var i, a, o = n(442837),
   c = n(642047),
   u = n(695346),
   d = n(973616),
-  _ = n(70956),
-  f = n(358085),
+  f = n(70956),
+  _ = n(358085),
   p = n(709054);
 
 function h(e, t, n) {
@@ -24,7 +24,7 @@ function h(e, t, n) {
 }
 let m = "GameStoreReportedGames",
   g = 0x80000000,
-  E = _.Z.Millis.DAY,
+  E = f.Z.Millis.DAY,
   b = new c.Z,
   y = {},
   O = {},
@@ -68,7 +68,7 @@ function A(e) {
 function N(e) {
   let t = e instanceof d.ZP ? A(e) : e;
   for (let n of (b.set(e.id, t), y[e.name.toLowerCase()] = t, e.aliases)) y[n.toLowerCase()] = t;
-  if ((0, f.isDesktop)())
+  if ((0, _.isDesktop)())
     for (let n of e.executables) O[n.name] = t
 }
 
@@ -114,14 +114,14 @@ function x(e) {
   t.forEach(e => B(e))
 }
 
-function M(e) {
+function k(e) {
   let {
     messages: t
   } = e;
   for (let e of t) B(e)
 }
 
-function k(e) {
+function M(e) {
   let {
     pins: t
   } = e;
@@ -165,7 +165,7 @@ class V extends(a = o.ZP.PersistedStore) {
     null != e && (null != e.detectableGamesEtag && (I = e.detectableGamesEtag), null == (t = e.detectableGames) || t.forEach(e => N(e)))
   }
   getState() {
-    return (0, f.isDesktop)() ? {
+    return (0, _.isDesktop)() ? {
       detectableGamesEtag: I,
       detectableGames: b.values()
     } : {
@@ -237,7 +237,7 @@ h(V, "displayName", "GameStore"), h(V, "persistKey", "GameStore"), h(V, "migrati
     detectableGamesEtag: e.detectableGamesEtag,
     detectableGames: null != (n = null == (t = e.detectableGames) ? void 0 : t.map(e => A(new d.ZP(e)))) ? n : []
   }
-}, e => (0, f.isDesktop)() ? e : {
+}, e => (0, _.isDesktop)() ? e : {
   detectableGamesEtag: "",
   detectableGames: []
 }]);
@@ -250,8 +250,8 @@ let F = new V(l.Z, {
   LOCAL_MESSAGES_LOADED: x,
   MESSAGE_CREATE: D,
   MESSAGE_UPDATE: D,
-  LOAD_MESSAGES_SUCCESS: M,
-  LOAD_PINNED_MESSAGES_SUCCESS: k,
+  LOAD_MESSAGES_SUCCESS: k,
+  LOAD_PINNED_MESSAGES_SUCCESS: M,
   THREAD_LIST_SYNC: j,
   LOAD_THREADS_SUCCESS: U,
   LOAD_ARCHIVED_THREADS_SUCCESS: U,

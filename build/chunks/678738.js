@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 });
 var r = n(255367),
   i = n(73800),
@@ -13,13 +13,13 @@ var r = n(255367),
   u = n(313201),
   d = n(729894);
 
-function _(e) {
+function f(e) {
   let {
     children: t,
     heading: n,
     headingIcon: a,
-    introText: _,
-    className: f,
+    introText: f,
+    className: _,
     scrollIntoView: p = !1,
     headingClassName: h,
     headingVariant: m = "text-xs/semibold",
@@ -36,7 +36,7 @@ function _(e) {
     return () => cancelAnimationFrame(t)
   }, [b]), (0, r.jsxs)("section", {
     ref: p ? y : void 0,
-    className: o()(d.section, f),
+    className: o()(d.section, _),
     "aria-labelledby": null != n ? E : void 0,
     children: [null != n && (0, r.jsxs)("div", {
       className: d.headings,
@@ -49,9 +49,9 @@ function _(e) {
           id: E,
           children: n
         }), a]
-      }), null != _ && (0, r.jsx)(l.Text, {
+      }), null != f && (0, r.jsx)(l.Text, {
         variant: "text-xs/normal",
-        children: _
+        children: f
       })]
     }), (0, r.jsx)(l.y5t, {
       children: t

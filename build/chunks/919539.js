@@ -20,8 +20,8 @@ var i = n(255367),
   x = n(922628),
   _ = n(703115),
   j = n(526761),
-  C = n(726985),
-  E = n(736530),
+  E = n(726985),
+  C = n(736530),
   O = n(981631),
   v = n(388032);
 
@@ -29,7 +29,7 @@ function S(e) {
   let {
     ingress: t,
     guildId: n
-  } = e, S = (0, h.c_)(), T = (0, p.q)(), N = g.h2.useSetting().includes(n), I = g.mX.useSetting(), y = g.zA.useSetting().includes(n), A = r.useCallback(e => {
+  } = e, S = (0, h.c_)(), T = (0, p.q)(), I = g.h2.useSetting().includes(n), N = g.mX.useSetting(), y = g.zA.useSetting().includes(n), A = r.useCallback(e => {
     let i = (0, u.gl)();
     e ? i.delete(n) : i.add(n), g.zA.updateSetting(Array.from(i)), c.default.track(O.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
       action: _.Y.RESTRICT_GUILD_MESSAGE_REQUEST_TOGGLE,
@@ -63,11 +63,11 @@ function S(e) {
     }))
   }
   return (0, i.jsx)(f.U, {
-    setting: C.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_MESSAGE_REQUESTS_V2,
+    setting: E.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_MESSAGE_REQUESTS_V2,
     scrollPosition: j.FY.MESSAGE_REQUESTS_V2,
-    children: n === E.T ? (0, i.jsx)(b.Z, {
+    children: n === C.T ? (0, i.jsx)(b.Z, {
       title: v.intl.string(v.t["3o2ojo"]),
-      value: !T && !I,
+      value: !T && !N,
       onChange: e => R(e, !1),
       disabled: T,
       note: v.intl.format(v.t.wkm9a2, {
@@ -77,7 +77,7 @@ function S(e) {
       title: v.intl.string(v.t["3o2ojo"]),
       value: !y,
       onChange: e => R(e, !0),
-      disabled: N,
+      disabled: I,
       note: S ? v.intl.format(v.t.WpnWLS, {
         helpdeskArticle: d.Z.getArticleURL(O.BhN.MESSAGE_REQUESTS)
       }) : v.intl.format(v.t.wkm9a2, {

@@ -15,8 +15,8 @@ let d = i.forwardRef(function(e, t) {
   let {
     store: n,
     hasSendableExpressions: d,
-    onKeyDown: _,
-    gridNavigatorId: f,
+    onKeyDown: f,
+    gridNavigatorId: _,
     expressionsListRef: p,
     defaultSearchPlaceholder: h,
     emptySearchPlaceholder: m
@@ -47,14 +47,14 @@ let d = i.forwardRef(function(e, t) {
       ref: g,
       placeholder: T(),
       onClear: I,
-      onKeyDown: _,
+      onKeyDown: f,
       onChange: v,
       className: u.__invalid_searchBar,
       inputProps: {
         "aria-haspopup": "grid",
-        "aria-controls": f,
+        "aria-controls": _,
         "aria-expanded": !0,
-        "aria-activedescendant": (0, o.NE)(f, O.columnIndex, O.rowIndex)
+        "aria-activedescendant": (0, o.NE)(_, O.columnIndex, O.rowIndex)
       }
     })
   })

@@ -1,6 +1,6 @@
 /** Chunk was on 22243 **/
 n.d(t, {
-  Z: () => I
+  Z: () => N
 }), n(388685), n(65234), n(111804), n(490233), n(97749), n(35282);
 var i = n(255367),
   r = n(73800),
@@ -20,14 +20,14 @@ var i = n(255367),
   x = n(560223),
   _ = n(347475),
   j = n(342414),
-  C = n(391110),
-  E = n(71363),
+  E = n(391110),
+  C = n(71363),
   O = n(781800),
   v = n(981631),
   S = n(388032),
   T = n(614729),
-  N = n(865215);
-let I = e => {
+  I = n(865215);
+let N = e => {
   let {
     userId: t
   } = e;
@@ -38,7 +38,7 @@ let I = e => {
   }, [t]), (0, g.z)(p.X);
   let n = r.useRef(null),
     s = r.useRef(null),
-    [I, y] = r.useState(!1),
+    [N, y] = r.useState(!1),
     {
       analyticsLocations: A
     } = (0, m.ZP)(u.Z.PREMIUM_SUBSCRIBER_NITRO_HOME),
@@ -58,21 +58,21 @@ let I = e => {
           value: A,
           children: [(0, i.jsx)(j.Z, {
             className: T.heroHeading,
-            location: C.MQ.HOME
+            location: E.MQ.HOME
           }), (0, i.jsx)(x.Z, {
-            variant: C.gM.WHATS_NEW,
+            variant: E.gM.WHATS_NEW,
             className: T.whatsNew,
             noBackground: !0,
             leftAlignHeaders: !0,
             shouldAutoScroll: Z
           }), (0, i.jsx)(x.Z, {
             className: T.perksDiscoverability,
-            variant: C.gM.PERKS_DISCOVERABILITY,
+            variant: E.gM.PERKS_DISCOVERABILITY,
             noBackground: !0,
             leftAlignHeaders: !0,
             showAllPerksButton: (0, i.jsx)(O.Z, {
               setIsAllPerksVisible: y,
-              previousComponent: C.MQ.HOME
+              previousComponent: E.MQ.HOME
             })
           }), (0, i.jsx)(_.Z, {
             className: T.giftNitro,
@@ -95,7 +95,7 @@ let I = e => {
               className: T.bottomOfPageVisibilitySensor
             })
           }), (0, i.jsx)("img", {
-            src: N,
+            src: I,
             className: T.bottomIllustration,
             width: 112,
             height: 85,
@@ -103,10 +103,10 @@ let I = e => {
           })]
         })
       })
-    }), (0, i.jsx)(E.Z, {
-      isAllPerksVisible: I,
+    }), (0, i.jsx)(C.Z, {
+      isAllPerksVisible: N,
       setIsAllPerksVisible: y,
-      previousComponent: C.MQ.HOME
+      previousComponent: E.MQ.HOME
     })]
   })
 }

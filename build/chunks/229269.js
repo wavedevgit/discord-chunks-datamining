@@ -20,9 +20,9 @@ var i = n(255367),
   x = n(231338),
   _ = n(388032),
   j = n(296576),
-  C = n(423931);
+  E = n(423931);
 
-function E(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -88,7 +88,7 @@ function S() {
       })
     }), (0, i.jsx)(b.E_, {
       label: "Google Pay - Add Payment Step Body Connector View",
-      children: (0, i.jsx)(I, {
+      children: (0, i.jsx)(N, {
         paymentRequestWallet: "googlePay"
       })
     }), (0, i.jsx)(d.X6q, {
@@ -107,7 +107,7 @@ function S() {
       })
     }), (0, i.jsx)(b.E_, {
       label: "Apple Pay - Add Payment Step Body Connector View",
-      children: (0, i.jsx)(I, {
+      children: (0, i.jsx)(N, {
         paymentRequestWallet: "applePay"
       })
     })]
@@ -130,17 +130,17 @@ function T(e) {
         type: d.RAz.PULSING_ELLIPSIS
       })
     };
-  return e.renderStepBody ? (0, i.jsx)(f.t, E({}, n, e)) : "applePay" === e.paymentRequestWallet ? (0, i.jsx)(m.Ch, E({}, n, e)) : (0, i.jsx)(m.Tr, E({}, n, e))
+  return e.renderStepBody ? (0, i.jsx)(f.t, C({}, n, e)) : "applePay" === e.paymentRequestWallet ? (0, i.jsx)(m.Ch, C({}, n, e)) : (0, i.jsx)(m.Tr, C({}, n, e))
 }
 
-function N(e) {
+function I(e) {
   let {
     children: t,
     footer: n,
     className: r
   } = e;
   return (0, i.jsx)("div", {
-    className: l()(C.root, C.focusLock, C.small, C.rootWithShadow, j.modal, r),
+    className: l()(E.root, E.focusLock, E.small, E.rootWithShadow, j.modal, r),
     "aria-label": _.intl.string(_.t.eQ2bLi),
     children: (0, i.jsxs)("form", {
       className: j.form,
@@ -155,13 +155,13 @@ function N(e) {
   })
 }
 
-function I(e) {
+function N(e) {
   let {
     paymentRequestWallet: t
   } = e, n = r.useRef(null), [s, a] = r.useState(!1), l = () => {
     null != n.current && n.current.show()
   };
-  return (0, i.jsx)(N, {
+  return (0, i.jsx)(I, {
     footer: (0, i.jsx)(h.Z, {
       primaryCTA: h.Z.CTAType.CONTINUE,
       primaryText: _.intl.string("applePay" === t ? _.t.WoXvJC : _.t.wnVVr6),
@@ -183,7 +183,7 @@ function y(e) {
   let {
     children: t
   } = e;
-  return (0, i.jsx)(N, {
+  return (0, i.jsx)(I, {
     className: j.choosePaymentTypeModal,
     children: (0, i.jsx)("div", {
       className: j.choosePaymentTypeContainer,
@@ -207,7 +207,7 @@ function A() {
     }), (0, i.jsx)(b.E_, {
       label: "All Payment Request Wallets Enabled",
       children: (0, i.jsx)(y, {
-        children: (0, i.jsx)(u.Z, O(E({}, e), {
+        children: (0, i.jsx)(u.Z, O(C({}, e), {
           onChooseType: () => {},
           paymentRequestWallets: ["googlePay", "applePay"]
         }))
@@ -215,7 +215,7 @@ function A() {
     }), (0, i.jsx)(b.E_, {
       label: "No Payment Wallets Enabled",
       children: (0, i.jsx)(y, {
-        children: (0, i.jsx)(u.Z, O(E({}, e), {
+        children: (0, i.jsx)(u.Z, O(C({}, e), {
           onChooseType: () => {},
           paymentRequestWallets: []
         }))
@@ -223,7 +223,7 @@ function A() {
     }), (0, i.jsx)(b.E_, {
       label: "Is Eligible for Trial",
       children: (0, i.jsx)(y, {
-        children: (0, i.jsx)(u.Z, O(E({}, e), {
+        children: (0, i.jsx)(u.Z, O(C({}, e), {
           isEligibleForTrial: !0,
           onChooseType: () => {},
           paymentRequestWallets: []
@@ -232,7 +232,7 @@ function A() {
     }), (0, i.jsx)(b.E_, {
       label: "Only Stripe Card Enabled",
       children: (0, i.jsx)(y, {
-        children: (0, i.jsx)(u.Z, O(E({}, e), {
+        children: (0, i.jsx)(u.Z, O(C({}, e), {
           onChooseType: () => {},
           paymentRequestWallets: [],
           paymentSourceTypeRestrictions: [x.He.CARD.valueOf()]

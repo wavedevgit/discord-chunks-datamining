@@ -48,7 +48,7 @@ function u(e, t) {
 }
 let d = "--";
 
-function _(e) {
+function f(e) {
   switch (e.key) {
     case a.R8.ENTER:
     case a.R8.SPACE:
@@ -64,7 +64,7 @@ function _(e) {
   }
 }
 
-function f(e, t) {
+function _(e, t) {
   return null != t ? "".concat((0, o.qR)(e, t.join(d))) : e
 }
 
@@ -121,7 +121,7 @@ function m(e) {
   })), P = r.useCallback(e => {
     if (!b.current) return;
     e.key === a.R8.ESCAPE && null != g && (e.stopPropagation(), e.preventDefault(), g());
-    let n = _(e);
+    let n = f(e);
     switch (n) {
       case a.Us.NAVIGATE_UP:
       case a.Us.NAVIGATE_DOWN:
@@ -137,7 +137,7 @@ function m(e) {
         if (e.preventDefault(), e.stopPropagation(), N(!1), v({
             type: n
           }), null != c) return void c(I);
-        let i = p(null != (r = e.target.ownerDocument) ? r : document, f(t, I));
+        let i = p(null != (r = e.target.ownerDocument) ? r : document, _(t, I));
         null == i || i.click()
     }
   }, [v, t, I, c, g]), w = r.useCallback(() => {
@@ -149,7 +149,7 @@ function m(e) {
       type: i.B.SET_FOCUS_PATH,
       path: []
     }), S(!1)
-  }, []), x = r.useCallback(e => e.every((e, t) => I[t] === e), [I]), M = r.useCallback(() => ({
+  }, []), x = r.useCallback(e => e.every((e, t) => I[t] === e), [I]), k = r.useCallback(() => ({
     role: "menu",
     id: t,
     tabIndex: -1,
@@ -158,7 +158,7 @@ function m(e) {
     onBlur: D,
     onMouseLeave: L,
     "aria-activedescendant": I.length > 0 ? (0, o.qR)(t, I.join(d)) : void 0
-  }), [t, P, w, D, L, I]), k = r.useCallback(e => {
+  }), [t, P, w, D, L, I]), M = r.useCallback(e => {
     let {
       path: n
     } = e;
@@ -189,10 +189,10 @@ function m(e) {
   }, [t, x, C, R]);
   return r.useMemo(() => ({
     dispatch: v,
-    getContainerProps: M,
-    getSubmenuProps: k,
+    getContainerProps: k,
+    getSubmenuProps: M,
     getItemProps: j,
     isFocused: x,
     isUsingKeyboardNavigation: A
-  }), [v, M, k, j, x, A])
+  }), [v, k, M, j, x, A])
 }

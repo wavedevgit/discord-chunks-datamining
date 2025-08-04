@@ -26,31 +26,31 @@ function j(e) {
     guild: n,
     className: s,
     sectionTitle: j,
-    forcedDivider: C = !1,
-    withTutorial: E = !1,
+    forcedDivider: E = !1,
+    withTutorial: C = !1,
     showBorder: O = !1,
     isTryItOutFlow: v = !1,
     initialSelectedEffectId: S
-  } = e, T = (0, p.Kg)(t, n), N = m.ZP.canUsePremiumProfileCustomization(t), {
-    analyticsLocations: I
+  } = e, T = (0, p.Kg)(t, n), I = m.ZP.canUsePremiumProfileCustomization(t), {
+    analyticsLocations: N
   } = (0, c.ZP)(), {
     pendingProfileEffectId: y,
     errors: A
   } = (0, p.bd)(n), P = r.useCallback(() => (0, d.H)({
-    analyticsLocations: I,
+    analyticsLocations: N,
     initialSelectedEffectId: S,
     guild: n
-  }), [I, S, n]);
+  }), [N, S, n]);
   r.useEffect(() => {
-    N && u.default.track(f.rMx.PREMIUM_UPSELL_VIEWED, {
+    I && u.default.track(f.rMx.PREMIUM_UPSELL_VIEWED, {
       type: b.cd.PROFILE_EFFECTS_INLINE_SETTINGS,
-      location_stack: I
+      location_stack: N
     })
-  }, [N, I]);
+  }, [I, N]);
   let R = null != n,
-    D = E ? o.gtL : l.zx;
+    D = C ? o.gtL : l.zx;
   return (0, i.jsx)(g.Z, {
-    forcedDivider: C,
+    forcedDivider: E,
     borderType: h.Y.PREMIUM,
     hasBackground: !0,
     title: j,
@@ -63,7 +63,7 @@ function j(e) {
         size: l.zx.Sizes.SMALL,
         onClick: P,
         className: a()({
-          [_.buttonHighlighted]: E
+          [_.buttonHighlighted]: C
         }),
         children: x.intl.string(x.t["/dRfCQ"])
       }), (v || void 0 !== y ? null != y : null != T) && (0, i.jsx)("div", {

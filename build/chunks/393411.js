@@ -22,14 +22,14 @@ var r = n(120356),
   x = n(594174),
   _ = n(509545),
   j = n(931331),
-  C = n(754347),
-  E = n(122289),
+  E = n(754347),
+  C = n(122289),
   O = n(74538),
   v = n(212895),
   S = n(296848),
   T = n(140465),
-  N = n(695349),
-  I = n(404380),
+  I = n(695349),
+  N = n(404380),
   y = n(879463),
   A = n(104494),
   P = n(382791),
@@ -161,7 +161,7 @@ function H(e) {
 function W() {
   return (0, i.jsxs)("div", {
     className: L.wordMark,
-    children: [(0, i.jsx)(C.Z, {
+    children: [(0, i.jsx)(E.Z, {
       className: L.discordWordmark,
       "aria-label": k.intl.string(k.t["FSOz7+"])
     }), (0, i.jsx)("div", {
@@ -218,7 +218,7 @@ let Y = function(e) {
     ee = null == $ || null == (t = $.discount) ? void 0 : t.amount,
     et = (0, T.t7)(),
     en = (0, T.lr)(),
-    ei = (0, N.W)(),
+    ei = (0, I.W)(),
     er = () => {
       (r.status === w.O0b.ACTIVE || r.status === w.O0b.PAST_DUE || r.status === w.O0b.PAUSED) && el(D.R.PAUSE_SELECT)
     },
@@ -258,7 +258,7 @@ let Y = function(e) {
       }
     },
     ec = () => {
-      if (!G.includes(r.status) || null == r.pauseEndsAt) return void(0, E.q2)(Error("Invalid subscription to resume"), {
+      if (!G.includes(r.status) || null == r.pauseEndsAt) return void(0, C.q2)(Error("Invalid subscription to resume"), {
         extra: {
           subscriptionId: r.id,
           status: r.status,
@@ -298,7 +298,7 @@ let Y = function(e) {
     case Z.p9.TIER_0:
       ef = (0, i.jsxs)("div", {
         className: L.wordMark,
-        children: [(0, i.jsx)(C.Z, {
+        children: [(0, i.jsx)(E.Z, {
           className: L.discordWordmark,
           "aria-label": k.intl.string(k.t["t9uG/v"])
         }), (0, i.jsx)("div", {
@@ -352,7 +352,7 @@ let Y = function(e) {
       }
 
       function t() {
-        let e = O.ZP.isSwitchingPlansDisabled(r) || (0, I.o)(Y, q, X),
+        let e = O.ZP.isSwitchingPlansDisabled(r) || (0, N.o)(Y, q, X),
           t = O.ZP.getSwitchingPlansDisabledMessage(r);
         return (0, i.jsxs)("div", {
           className: L.toolsButtons,

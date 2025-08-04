@@ -1,4 +1,4 @@
-/** Chunk was on 83075 **/
+/** Chunk was on 94363 **/
 n.d(t, {
   Z: () => l
 });
@@ -10,9 +10,9 @@ function l(e) {
   var t, n, {
       width: l = 20,
       height: a = 20,
-      className: o
+      className: s
     } = e,
-    s = function(e, t) {
+    o = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -47,8 +47,8 @@ function l(e) {
   }({
     width: l,
     height: a,
-    className: o
-  }, (0, i.Z)(s)), n = n = {
+    className: s
+  }, (0, i.Z)(o)), n = n = {
     viewBox: "0 0 20 20",
     children: (0, r.jsxs)("g", {
       clipPath: "url(#clip0_198_5469)",

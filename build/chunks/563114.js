@@ -32,7 +32,7 @@ function d(e) {
   } = e;
   return t
 }
-async function _(e) {
+async function f(e) {
   let t, {
     id: n,
     name: r
@@ -49,7 +49,7 @@ async function _(e) {
   })
 }
 
-function f(e) {
+function _(e) {
   let {
     channelId: t,
     messageId: n,
@@ -60,6 +60,6 @@ let p = {
   getURL: s.Z.makeMemoizer(c),
   filterUnsupportedEmojis: u,
   applyPlatformToThemedEmojiColorPalette: d,
-  getEmojiColors: _,
-  triggerFullscreenAnimation: f
+  getEmojiColors: f,
+  triggerFullscreenAnimation: _
 }

@@ -22,7 +22,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function _(e) {
   return e
 }
 
-function f(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -47,7 +47,7 @@ function f(e, t) {
 }
 
 function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -173,10 +173,10 @@ function y(e) {
     channel: n
   } = e, {
     themeType: d
-  } = (0, l.z)(), f = d === c.lY.MODAL_V2 ? b : E, y = t.length > h, O = t.length - h + 1, v = O >= 10 ? g : m;
+  } = (0, l.z)(), _ = d === c.lY.MODAL_V2 ? b : E, y = t.length > h, O = t.length - h + 1, v = O >= 10 ? g : m;
   return (0, r.jsx)("div", {
     className: u.container,
-    children: f[(0, i.clamp)(t.length - 1, 0, f.length - 1)].map((e, i) => {
+    children: _[(0, i.clamp)(t.length - 1, 0, _.length - 1)].map((e, i) => {
       let l = t[i];
       return null == l ? null : (0, r.jsx)("div", {
         className: u.circle,
@@ -192,7 +192,7 @@ function y(e) {
           })
         }) : (0, r.jsx)(a.ua7, {
           text: s.ZP.getName(n.guild_id, n.id, l),
-          children: e => (0, r.jsx)("img", p(_({}, e), {
+          children: e => (0, r.jsx)("img", p(f({}, e), {
             className: u.avatar,
             src: l.getAvatarURL(n.guild_id, (0, a.pxk)(a.EFr.SIZE_80)),
             alt: ""

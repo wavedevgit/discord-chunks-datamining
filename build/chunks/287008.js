@@ -17,20 +17,20 @@ function u(e) {
     guildId: n,
     size: u,
     showPending: d = !1,
-    animateOnHover: _ = !1,
-    avatarOverride: f
+    animateOnHover: f = !1,
+    avatarOverride: _
   } = e, {
     onMouseEnter: p,
     onMouseLeave: h,
     shouldAnimate: m
-  } = (0, c.Z)(_), {
+  } = (0, c.Z)(f), {
     pendingAvatar: g
   } = (0, l.Z)({}), E = d && null != t ? (0, o.SD)({
     userId: t.id,
     image: g,
     canAnimate: m,
     size: u
-  }) : void 0, b = void 0 !== f ? f : E, y = (0, i.e7)([s.ZP], () => null != n && null != t ? s.ZP.getMember(n, t.id) : null);
+  }) : void 0, b = void 0 !== _ ? _ : E, y = (0, i.e7)([s.ZP], () => null != n && null != t ? s.ZP.getMember(n, t.id) : null);
   return {
     avatarSrc: r.useMemo(() => null != t ? (0, a.SG)(b, y, t, {
       canAnimate: m,

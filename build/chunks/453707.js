@@ -1,5 +1,6 @@
-/** Chunk was on 22243 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => i
+  Z: () => r
 });
-let i = "https://cdn.discordapp.com/assets/content/26736d800236761a21973e6fe690dfd5fa484f664976b3bba91b98d5d47bb1f7.svg"
+let r = "https://cdn.discordapp.com/assets/content/26736d800236761a21973e6fe690dfd5fa484f664976b3bba91b98d5d47bb1f7.svg"

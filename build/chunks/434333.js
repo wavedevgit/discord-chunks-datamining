@@ -22,14 +22,14 @@ let u = {
       children: i,
       className: a,
       onDismiss: d,
-      backgroundColor: _ = u.RED,
-      icon: f = l.Mgn,
+      backgroundColor: f = u.RED,
+      icon: _ = l.Mgn,
       iconClassName: p
     } = e;
     return (0, r.jsxs)("div", {
-      className: o()(c.error, a, _),
+      className: o()(c.error, a, f),
       ref: t,
-      children: [(0, r.jsx)(f, {
+      children: [(0, r.jsx)(_, {
         className: o()(c.icon, p),
         color: "currentColor"
       }), (0, r.jsx)("div", {

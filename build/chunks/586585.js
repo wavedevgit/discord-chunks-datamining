@@ -14,8 +14,8 @@ var i = n(793030),
   c = n(600164),
   u = n(563132),
   d = n(612853),
-  _ = n(388032),
-  f = n(240150);
+  f = n(388032),
+  _ = n(240150);
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -67,7 +67,7 @@ let b = e => {
       primaryDisabled: c,
       primarySubmitting: u,
       onPrimary: d,
-      tooltipProps: _
+      tooltipProps: f
     } = e, p = {
       type: i,
       disabled: c,
@@ -76,10 +76,10 @@ let b = e => {
     return 2 === n ? (0, r.jsx)(l.gtL, g(h(g(h({}, p), {
       submitting: u,
       color: s.zx.Colors.GREEN
-    }), _), {
+    }), f), {
       children: null == t ? null : (0, r.jsx)(t, {
         color: "currentColor",
-        className: f.primaryIcon
+        className: _.primaryIcon
       })
     })) : (0, r.jsx)(o.zx, h(g(h({}, p), {
       text: a,
@@ -87,9 +87,9 @@ let b = e => {
       variant: 0 === n ? "primary" : "active",
       icon: null == t ? void 0 : () => (0, r.jsx)(t, {
         color: "currentColor",
-        className: f.primaryIcon
+        className: _.primaryIcon
       })
-    }), _))
+    }), f))
   },
   y = e => {
     let {
@@ -97,7 +97,7 @@ let b = e => {
       backText: n,
       primaryIcon: o,
       primaryCTA: s,
-      primaryType: f,
+      primaryType: _,
       primaryText: p,
       primaryTooltip: m,
       primaryDisabled: E,
@@ -110,7 +110,7 @@ let b = e => {
       let e = {
         primaryIcon: o,
         primaryCTA: s,
-        primaryType: f,
+        primaryType: _,
         primaryText: p,
         primaryDisabled: E,
         primarySubmitting: y,
@@ -125,7 +125,7 @@ let b = e => {
         onPrimary: O
       }))
     }, T = () => null == t ? null : (0, r.jsx)(a.A, {
-      text: null != n ? n : _.intl.string(_.t["13/7kZ"]),
+      text: null != n ? n : f.intl.string(f.t["13/7kZ"]),
       onClick: t,
       variant: "secondary"
     });

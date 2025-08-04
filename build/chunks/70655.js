@@ -20,8 +20,8 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 let d = +l.Z.Millis.SECOND,
-  _ = 30 * l.Z.Millis.SECOND,
-  f = 360,
+  f = 30 * l.Z.Millis.SECOND,
+  _ = 360,
   p = new a.Z("RTCLatencyTestManager");
 p.enableNativeLogger(!0);
 class h extends i.Z {
@@ -37,10 +37,10 @@ class h extends i.Z {
         p.verbose("RTC region latency test completed, ranked regions are: ", e), (0, r.o)(e, t)
       }).catch(e => p.warn(e)) : p.verbose("RTC cached ranked preferred regions are ".concat(s.Z.getPreferredRegions()))
     }), u(this, "_fetchAndScheduleRefetch", () => {
-      (0, r.J)().then(e => this._handleTestRegionsResponse(e.body)).catch(e => p.warn(e)), this.refetchTimeout = setTimeout(this._fetchAndScheduleRefetch, f * l.Z.Millis.MINUTE)
+      (0, r.J)().then(e => this._handleTestRegionsResponse(e.body)).catch(e => p.warn(e)), this.refetchTimeout = setTimeout(this._fetchAndScheduleRefetch, _ * l.Z.Millis.MINUTE)
     }), u(this, "_handleConnectionOpen", () => {
       if (c.isPlatformEmbedded && !__OVERLAY__) {
-        let e = Math.floor(d + Math.random() * _);
+        let e = Math.floor(d + Math.random() * f);
         null != this.refetchTimeout && clearTimeout(this.refetchTimeout), this.refetchTimeout = setTimeout(this._fetchAndScheduleRefetch, e)
       }
     })

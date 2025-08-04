@@ -19,7 +19,7 @@ function d(e) {
     onAction: n
   } = e, {
     themeType: d
-  } = (0, s.z)(), _ = null == t ? void 0 : t.application_id, f = d === c.lY.MODAL_V2 ? a.Z.USER_PROFILE_MODAL : a.Z.USER_PROFILE_POPOUT, p = (0, o.u)(_, f);
+  } = (0, s.z)(), f = null == t ? void 0 : t.application_id, _ = d === c.lY.MODAL_V2 ? a.Z.USER_PROFILE_MODAL : a.Z.USER_PROFILE_POPOUT, p = (0, o.u)(f, _);
   return null == p ? null : d === c.lY.MODAL_V2 ? (0, r.jsx)(l.tG, {
     icon: p.icon,
     text: u.intl.string(p.labelKey),

@@ -43,13 +43,13 @@ function d(e, t) {
   return n
 }
 
-function _(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function f(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -79,7 +79,7 @@ function h(e, t) {
       fade: E = !1,
       onScroll: b,
       style: y
-    } = a, O = f(a, ["children", "className", "dir", "orientation", "paddingFix", "fade", "onScroll", "style"]);
+    } = a, O = _(a, ["children", "className", "dir", "orientation", "paddingFix", "fade", "onScroll", "style"]);
     let v = i.useRef(null),
       I = (0, l.tT)({
         paddingFix: g,
@@ -89,7 +89,7 @@ function h(e, t) {
         scrollerRef: v,
         specs: n
       });
-    return (0, r.jsx)("div", _(u({
+    return (0, r.jsx)("div", f(u({
       ref: e => {
         "function" == typeof c ? c(e) : null != c && (c.current = e), v.current = e
       },

@@ -21,7 +21,7 @@ var i = n(255367),
   _ = n(346537),
   j = n(830318);
 
-function C(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -40,7 +40,7 @@ function C(e) {
   return e
 }
 
-function E(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -63,7 +63,7 @@ let O = {
       effect: t
     } = e, {
       upsertConfig: n
-    } = (0, h.n6)(), s = (0, o.e7)([g.default], () => g.default.getCurrentUser()), [S, T] = r.useState(!0), N = r.useRef(null), [I, y] = r.useState(!1), [A, P] = r.useState(!1), [R, D] = r.useState([]), [Z, w] = r.useState(O), k = r.useRef([]), [L, B] = r.useState(t.name), M = L.toLowerCase().replace(/\s+/g, "_"), U = r.useMemo(() => ({
+    } = (0, h.n6)(), s = (0, o.e7)([g.default], () => g.default.getCurrentUser()), [S, T] = r.useState(!0), I = r.useRef(null), [N, y] = r.useState(!1), [A, P] = r.useState(!1), [R, D] = r.useState([]), [Z, w] = r.useState(O), k = r.useRef([]), [L, B] = r.useState(t.name), M = L.toLowerCase().replace(/\s+/g, "_"), U = r.useMemo(() => ({
       type: l.Z.PROFILE_EFFECT,
       id: v,
       skuId: v,
@@ -79,7 +79,7 @@ let O = {
     }, G = (e, t) => {
       let n = V(t);
       null != n && (0, f.i0)(n, t => {
-        w(i => E(C({}, i), {
+        w(i => C(E({}, i), {
           [e]: (0, f.z)(t, n)
         }))
       })
@@ -90,7 +90,7 @@ let O = {
           let r = [...i],
             s = i[t];
           if (null == s) return i;
-          let a = C({}, s);
+          let a = E({}, s);
           return null == a.randomizedSources && (a.randomizedSources = []), a.randomizedSources.push({
             src: e,
             filename: n.name
@@ -98,7 +98,7 @@ let O = {
         })
       })
     }, H = e => {
-      w(t => E(C({}, t), {
+      w(t => C(E({}, t), {
         [e]: null
       }))
     };
@@ -117,7 +117,7 @@ let O = {
         let [t, n] = e;
         if (null != n) {
           let e = (0, f.$j)(n.base64);
-          n.src = e, k.current.push(e), w(e => E(C({}, e), {
+          n.src = e, k.current.push(e), w(e => C(E({}, e), {
             [t]: n
           }))
         }
@@ -154,7 +154,7 @@ let O = {
         children: [(0, i.jsxs)("div", {
           className: a()(x.col, x.preview),
           children: [(0, i.jsx)("img", {
-            src: I ? _ : j,
+            src: N ? _ : j,
             alt: "",
             width: 450
           }), S && (0, i.jsx)(b.Z, {
@@ -184,10 +184,10 @@ let O = {
                 children: "Dark Theme"
               }), (0, i.jsx)("input", {
                 type: "checkbox",
-                checked: I,
+                checked: N,
                 className: x.checkBox,
                 onChange: () => {
-                  y(!I)
+                  y(!N)
                 }
               })]
             }), (0, i.jsxs)("div", {
@@ -209,7 +209,7 @@ let O = {
             children: [(0, i.jsxs)(c.zx, {
               color: c.Tt.GREEN,
               children: ["Upload Animated Layer", (0, i.jsx)(m.Z, {
-                ref: N,
+                ref: I,
                 onChange: e => {
                   let t = V(e);
                   null != t && (0, f.i0)(t, async e => {
@@ -228,21 +228,21 @@ let O = {
             children: [(0, i.jsxs)(c.zx, {
               color: c.Tt.GREEN,
               children: ["Upload thumbnail.png", (0, i.jsx)(m.Z, {
-                ref: N,
+                ref: I,
                 onChange: e => G(f.cq.THUMBNAIL, e),
                 multiple: !1
               })]
             }), (0, i.jsxs)(c.zx, {
               color: c.Tt.GREEN,
               children: ["Upload static.png", (0, i.jsx)(m.Z, {
-                ref: N,
+                ref: I,
                 onChange: e => G(f.cq.STATIC, e),
                 multiple: !1
               })]
             }), (0, i.jsxs)(c.zx, {
               color: c.Tt.GREEN,
               children: ["Upload reduced_motion.png", (0, i.jsx)(m.Z, {
-                ref: N,
+                ref: I,
                 onChange: e => G(f.cq.REDUCED_MOTION, e),
                 multiple: !1
               })]
@@ -280,9 +280,9 @@ let O = {
                   text: "Download Timing Config"
                 })
               }), (0, i.jsx)(u.Z, {
-                fileContents: () => JSON.stringify(E(C({}, t), {
+                fileContents: () => JSON.stringify(C(E({}, t), {
                   name: L,
-                  config: E(C({}, t.config), {
+                  config: C(E({}, t.config), {
                     effects: R,
                     stillFrames: Z
                   })
@@ -485,7 +485,7 @@ let O = {
                   color: "always-white",
                   children: "Add Alternative"
                 }), (0, i.jsx)(m.Z, {
-                  ref: N,
+                  ref: I,
                   onChange: e => F(e, t),
                   multiple: !1
                 })]

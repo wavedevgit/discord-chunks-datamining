@@ -37,12 +37,12 @@ function u(e) {
       onStripePaymentMethodReceived: l,
       onPaymentRequestFailure: u,
       onValidPaymentRequest: d,
-      paymentRequestRef: _,
-      paymentRequestWallet: f
+      paymentRequestRef: f,
+      paymentRequestWallet: _
     } = e,
     p = {
       paymentLabel: o.intl.string(o.t.ZURqX1),
-      paymentRequestRef: _,
+      paymentRequestRef: f,
       renderConnectorView: !0,
       onStripePaymentMethodReceived: l,
       onPaymentRequestFailure: u,
@@ -55,7 +55,7 @@ function u(e) {
         type: i.RAz.PULSING_ELLIPSIS
       })
     };
-  return t = "applePay" === f ? (0, r.jsx)(a.Ch, c({}, p)) : (0, r.jsx)(a.Tr, c({}, p)), (0, r.jsx)("div", {
+  return t = "applePay" === _ ? (0, r.jsx)(a.Ch, c({}, p)) : (0, r.jsx)(a.Tr, c({}, p)), (0, r.jsx)("div", {
     className: s.body,
     children: (0, r.jsx)(i.hjN, {
       title: o.intl.string(o.t.eQ2bLi),

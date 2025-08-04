@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(321051),
   u = n(669079),
   d = n(479446),
-  _ = n(646476),
-  f = n(981632),
+  f = n(646476),
+  _ = n(981632),
   p = n(96848),
   h = n(703926),
   m = n(474936),
@@ -93,9 +93,9 @@ let S = e => {
     orientation: "horizontal"
   }), {
     ref: L
-  } = D, x = I(D, ["ref"]), M = (0, u.MY)(b, t), k = M === u.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, j = M !== u.xr.DEFAULT, U = (0, _.rK)(), {
+  } = D, x = I(D, ["ref"]), k = (0, u.MY)(b, t), M = k === u.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, j = k !== u.xr.DEFAULT, U = (0, f.rK)(), {
     enabled: G
-  } = _.ZP.useExperiment({
+  } = f.ZP.useExperiment({
     location: "premiumGiftSelect_GiftAnimationOptions"
   }, {
     autoTrackExposure: U
@@ -107,7 +107,7 @@ let S = e => {
   return (0, r.jsxs)("div", {
     children: [j && (0, r.jsxs)("div", {
       className: o()(E.giftMainAnimation, n),
-      children: [null != O ? (0, r.jsx)(f.Z, {
+      children: [null != O ? (0, r.jsx)(_.Z, {
         giftStyle: O,
         defaultAnimationState: d.SR.ACTION,
         idleAnimationState: d.SR.LOOP,
@@ -115,7 +115,7 @@ let S = e => {
         className: E.animation
       }) : (0, r.jsx)(s.$jN, {
         className: E.spinner
-      }), k && (0, r.jsxs)("div", {
+      }), M && (0, r.jsxs)("div", {
         className: E.soundEmojiContainer,
         children: [(0, r.jsx)("div", {
           className: E.sound,

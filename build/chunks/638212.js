@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 });
 var r = n(255367),
   i = n(740594),
@@ -64,15 +64,15 @@ function d(e, t) {
   return i
 }
 
-function _(e) {
+function f(e) {
   var {
     subscriptionTier: t,
     hasActivePromotion: n,
     useShorterCTA: o,
     isPersistentCTA: l,
     buttonTextOverride: d,
-    defaultTextOverride: _,
-    iconOverride: f,
+    defaultTextOverride: f,
+    iconOverride: _,
     variantOverride: p
   } = e, h = u(e, ["subscriptionTier", "hasActivePromotion", "useShorterCTA", "isPersistentCTA", "buttonTextOverride", "defaultTextOverride", "iconOverride", "variantOverride"]);
   let m = {
@@ -81,8 +81,8 @@ function _(e) {
       useShorterCTA: o,
       isPersistentCTA: l,
       buttonTextOverride: d,
-      defaultTextOverride: _,
-      iconOverride: f,
+      defaultTextOverride: f,
+      iconOverride: _,
       variantOverride: p
     },
     {

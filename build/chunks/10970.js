@@ -27,11 +27,11 @@ function x(e) {
     currentListing: h,
     alternativeListings: x,
     navigateToHome: j,
-    subscriptionGroup: C,
-    renewalSkuId: E
-  } = e, O = (0, a.y)(n, 100), v = (0, m.KK)(C.flags), S = v ? s.QTo : s.tBG, T = v ? f.intl.string(f.t["46YF2N"]) : f.intl.string(f.t.fFyGiI), N = null == (t = p.metadata) ? void 0 : t.application_subscription_guild_id, I = (0, r.e7)([d.Z], () => v && null != N ? d.Z.getGuild(N) : void 0, [N, v]), y = (0, r.e7)([u.Z], () => {
-    if (null != E) return u.Z.get(E)
-  }, [E]), A = (0, g.p)(p.currentPeriodEnd);
+    subscriptionGroup: E,
+    renewalSkuId: C
+  } = e, O = (0, a.y)(n, 100), v = (0, m.KK)(E.flags), S = v ? s.QTo : s.tBG, T = v ? f.intl.string(f.t["46YF2N"]) : f.intl.string(f.t.fFyGiI), I = null == (t = p.metadata) ? void 0 : t.application_subscription_guild_id, N = (0, r.e7)([d.Z], () => v && null != I ? d.Z.getGuild(I) : void 0, [I, v]), y = (0, r.e7)([u.Z], () => {
+    if (null != C) return u.Z.get(C)
+  }, [C]), A = (0, g.p)(p.currentPeriodEnd);
   return (0, i.jsxs)("div", {
     children: [(0, i.jsxs)("div", {
       className: b.header,
@@ -53,20 +53,20 @@ function x(e) {
               size: "xs",
               color: "currentColor"
             }), " ", T]
-          }), null != I && (0, i.jsxs)(i.Fragment, {
+          }), null != N && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(s.Text, {
               variant: "text-md/normal",
               children: "•"
             }), (0, i.jsxs)("span", {
               className: b.guildSubscription,
               children: [(0, i.jsx)(c.Z, {
-                guild: I,
+                guild: N,
                 size: c.Z.Sizes.SMOL
               }), (0, i.jsx)(s.X6q, {
                 variant: "heading-md/semibold",
                 color: "text-muted",
                 children: f.intl.format(f.t["7ZD8p6"], {
-                  guildName: I.name
+                  guildName: N.name
                 })
               })]
             })]
@@ -110,7 +110,7 @@ function x(e) {
             })
           })]
         })
-      }), x.map(e => e.skuId === E ? (0, i.jsx)(o.Z, {
+      }), x.map(e => e.skuId === C ? (0, i.jsx)(o.Z, {
         storeListing: e,
         cta: (0, i.jsx)(s.Text, {
           variant: "text-sm/semibold",
@@ -121,7 +121,7 @@ function x(e) {
         })
       }, e.id) : (0, i.jsx)(_, {
         storeListing: e,
-        guildId: N,
+        guildId: I,
         navigateToHome: j
       }, e.id))]
     })]

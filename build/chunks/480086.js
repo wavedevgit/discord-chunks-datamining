@@ -12,8 +12,8 @@ var r = n(73800),
   c = n(877481),
   u = n(669764),
   d = n(80387),
-  _ = n(981631),
-  f = n(388032);
+  f = n(981631),
+  _ = n(388032);
 let p = {
     "356875762940379136": "https://worldofwarcraft.blizzard.com",
     "615752773690064908": "https://worldofwarcraft.blizzard.com",
@@ -38,7 +38,7 @@ function m(e) {
     labelKey: e.labelKey,
     icon: e.icon,
     openLink: t => {
-      null == t || t.stopPropagation(), l.default.track(_.rMx.GAME_STORE_BUTTON_CLICKED, {
+      null == t || t.stopPropagation(), l.default.track(f.rMx.GAME_STORE_BUTTON_CLICKED, {
         application_id: e.applicationId,
         application_name: e.applicationName,
         platform: e.platform,
@@ -67,7 +67,7 @@ function g(e, t) {
     I = (0, r.useMemo)(() => {
       var e, t, n;
       if (null == O) return null;
-      let r = null != (n = null != (t = null == (e = O.thirdPartySkus.find(e => e.distributor === _.GQo.STEAM)) ? void 0 : e.id) ? t : null == v ? void 0 : v.steam_id) ? n : null;
+      let r = null != (n = null != (t = null == (e = O.thirdPartySkus.find(e => e.distributor === f.GQo.STEAM)) ? void 0 : e.id) ? t : null == v ? void 0 : v.steam_id) ? n : null;
       return {
         app: O,
         steamSku: r
@@ -83,7 +83,7 @@ function g(e, t) {
         url: i,
         platform: "battlenet",
         icon: a.DvD,
-        labelKey: f.t["ZGax9/"],
+        labelKey: _.t["ZGax9/"],
         applicationId: e,
         applicationName: n.name,
         location: t
@@ -93,7 +93,7 @@ function g(e, t) {
         url: o,
         platform: "riot",
         icon: a.mVV,
-        labelKey: f.t["+KXANz"],
+        labelKey: _.t["+KXANz"],
         applicationId: e,
         applicationName: n.name,
         location: t
@@ -101,7 +101,7 @@ function g(e, t) {
         url: g ? "steam://advertise/".concat(r) : "https://store.steampowered.com/app/".concat(r),
         platform: "steam",
         icon: a.xCj,
-        labelKey: f.t.OlubCw,
+        labelKey: _.t.OlubCw,
         applicationId: e,
         applicationName: n.name,
         location: t

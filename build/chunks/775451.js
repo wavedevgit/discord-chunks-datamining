@@ -29,12 +29,12 @@ let b = {
       anchorPillType: x,
       analyticsPage: _,
       isCoachmarkEnabled: j = !0,
-      linkText: C = h.intl.string(h.t.XRdyj4),
-      cardAlignment: E = b.START,
+      linkText: E = h.intl.string(h.t.XRdyj4),
+      cardAlignment: C = b.START,
       className: O
     } = e, {
       balance: v
-    } = (0, d.A)(), [S, T] = r.useState(u.b.DEFAULT), [N, I] = r.useState(!1), [y, A] = r.useState(!1), P = r.useRef(null), {
+    } = (0, d.A)(), [S, T] = r.useState(u.b.DEFAULT), [I, N] = r.useState(!1), [y, A] = r.useState(!1), P = r.useRef(null), {
       shouldOpen: R
     } = (0, c.Mm)({
       backgroundElementRef: P,
@@ -43,19 +43,19 @@ let b = {
       onClickPill: g.dG4
     });
     r.useEffect(() => {
-      j && ((0, c.wH)() || R ? (A(!0), I(!1)) : A(!1))
+      j && ((0, c.wH)() || R ? (A(!0), N(!1)) : A(!1))
     }, [j, R]);
     let D = r.useCallback(() => {
-        let e = !N;
+        let e = !I;
         e && null != _ && (0, o.Y)({
           pageType: _,
           sectionType: g.jXE.ORBS_BALANCE_MENU,
           ctaObject: g.qAy.OPEN_ORB_BALANCE_MENU_FROM_PILL
-        }), T(e ? u.b.SELECTED : u.b.DEFAULT), I(e)
-      }, [N, _]),
+        }), T(e ? u.b.SELECTED : u.b.DEFAULT), N(e)
+      }, [I, _]),
       Z = r.useCallback(() => {
-        N && D()
-      }, [N, D]),
+        I && D()
+      }, [I, D]),
       w = (0, l.Z)(null, Z),
       k = r.useMemo(() => (0, i.jsx)(m.L, {
         analyticsPage: _,
@@ -63,8 +63,8 @@ let b = {
         ctaOnClick: () => {
           D(), s()
         },
-        linkText: C
-      }), [_, n, C, D, s]);
+        linkText: E
+      }), [_, n, E, D, s]);
     return (0, i.jsxs)("div", {
       className: a()(f.container, O, {
         [f.hidden]: y,
@@ -80,8 +80,8 @@ let b = {
         },
         onClick: D,
         showNotificationBadge: t
-      }), N && (0, i.jsx)("div", {
-        className: a()(f.cardContainer, E, {
+      }), I && (0, i.jsx)("div", {
+        className: a()(f.cardContainer, C, {
           [f.hidden]: y,
           [f.visible]: !y
         }),

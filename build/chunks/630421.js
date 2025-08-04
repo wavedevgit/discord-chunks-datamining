@@ -18,7 +18,7 @@ var r = n(740078),
     left: "auto"
   };
 
-function _(e, t) {
+function f(e, t) {
   var n = e.x,
     r = e.y,
     i = t.devicePixelRatio || 1;
@@ -28,11 +28,11 @@ function _(e, t) {
   }
 }
 
-function f(e) {
+function _(e) {
   var t, n, l = e.popper,
     c = e.popperRect,
     u = e.placement,
-    f = e.variation,
+    _ = e.variation,
     p = e.offsets,
     h = e.position,
     m = e.gpuAcceleration,
@@ -60,12 +60,12 @@ function f(e) {
     var P = (0, i.Z)(l),
       w = "clientHeight",
       D = "clientWidth";
-    P === (0, a.Z)(l) && (P = (0, o.Z)(l), "static" !== (0, s.Z)(P).position && "absolute" === h && (w = "scrollHeight", D = "scrollWidth")), (u === r.we || (u === r.t$ || u === r.F2) && f === r.ut) && (C = r.I, I -= (b && P === R && R.visualViewport ? R.visualViewport.height : P[w]) - c.height, I *= m ? 1 : -1), (u === r.t$ || (u === r.we || u === r.I) && f === r.ut) && (N = r.F2, O -= (b && P === R && R.visualViewport ? R.visualViewport.width : P[D]) - c.width, O *= m ? 1 : -1)
+    P === (0, a.Z)(l) && (P = (0, o.Z)(l), "static" !== (0, s.Z)(P).position && "absolute" === h && (w = "scrollHeight", D = "scrollWidth")), (u === r.we || (u === r.t$ || u === r.F2) && _ === r.ut) && (C = r.I, I -= (b && P === R && R.visualViewport ? R.visualViewport.height : P[w]) - c.height, I *= m ? 1 : -1), (u === r.t$ || (u === r.we || u === r.I) && _ === r.ut) && (N = r.F2, O -= (b && P === R && R.visualViewport ? R.visualViewport.width : P[D]) - c.width, O *= m ? 1 : -1)
   }
   var L = Object.assign({
       position: h
     }, g && d),
-    x = !0 === E ? _({
+    x = !0 === E ? f({
       x: O,
       y: I
     }, (0, a.Z)(l)) : {
@@ -95,12 +95,12 @@ let p = {
         gpuAcceleration: i,
         isFixed: "fixed" === t.options.strategy
       };
-    null != t.modifiersData.popperOffsets && (t.styles.popper = Object.assign({}, t.styles.popper, f(Object.assign({}, d, {
+    null != t.modifiersData.popperOffsets && (t.styles.popper = Object.assign({}, t.styles.popper, _(Object.assign({}, d, {
       offsets: t.modifiersData.popperOffsets,
       position: t.options.strategy,
       adaptive: o,
       roundOffsets: u
-    })))), null != t.modifiersData.arrow && (t.styles.arrow = Object.assign({}, t.styles.arrow, f(Object.assign({}, d, {
+    })))), null != t.modifiersData.arrow && (t.styles.arrow = Object.assign({}, t.styles.arrow, _(Object.assign({}, d, {
       offsets: t.modifiersData.arrow,
       position: "absolute",
       adaptive: !1,

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  m: () => _
+  m: () => f
 });
 var r = n(255367);
 n(73800);
@@ -64,13 +64,13 @@ function d(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let _ = e => {
+let f = e => {
   var t, n, {
       size: o = "md",
       width: l,
       height: d,
-      color: _ = "#C12A35",
-      colorClass: f = ""
+      color: f = "#C12A35",
+      colorClass: _ = ""
     } = e,
     p = u(e, ["size", "width", "height", "color", "colorClass"]);
   let h = (0, a.m)(o),
@@ -83,9 +83,9 @@ let _ = e => {
     fill: "none",
     viewBox: "0 0 24 24",
     children: (0, r.jsx)("path", {
-      fill: "string" == typeof _ ? _ : _.css,
+      fill: "string" == typeof f ? f : f.css,
       d: "M2 13a1 1 0 0 1 1-1 9 9 0 0 1 9 9 1 1 0 1 1-2 0 7 7 0 0 0-7-7 1 1 0 0 1-1-1ZM2 17.83c0-.46.37-.83.83-.83C5.13 17 7 18.87 7 21.17c0 .46-.37.83-.83.83H3a1 1 0 0 1-1-1v-3.17Z",
-      className: f
+      className: _
     })
   }))
 }

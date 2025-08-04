@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => _
 });
 var r = n(255367),
   i = n(73800),
@@ -12,38 +12,38 @@ var r = n(255367),
   c = n(168352),
   u = n(379839),
   d = n(359135),
-  _ = n(187182);
+  f = n(187182);
 
-function f(e) {
+function _(e) {
   let {
     nameplate: t,
     hovered: n,
     selected: a,
     content: s,
     placement: c
-  } = e, f = (0, u.p)(s, t, n, a, c), h = (0, l.C)(n, a), m = i.useRef(null == t);
+  } = e, _ = (0, u.p)(s, t, n, a, c), h = (0, l.C)(n, a), m = i.useRef(null == t);
   return (i.useEffect(() => {
     m.current || null != t || (m.current = !0)
   }, [t]), null == t) ? null : (0, r.jsx)("div", {
-    className: o()(_.container, {
-      [_.fadeIn]: m.current
+    className: o()(f.container, {
+      [f.fadeIn]: m.current
     }),
     style: {
-      background: f.background
+      background: _.background
     },
     "aria-hidden": !0,
     children: (0, r.jsx)(p, {
       nameplate: t,
-      className: o()(_.img, {
-        [_.hover]: n,
-        [_.selected]: a,
-        [_.account]: c === d.i.ACCOUNT,
-        [_.preview]: c === d.i.PREVIEW,
-        [_.mini_preview]: c === d.i.MINI_PREVIEW,
-        [_.channel]: c === d.i.CHANNEL
+      className: o()(f.img, {
+        [f.hover]: n,
+        [f.selected]: a,
+        [f.account]: c === d.i.ACCOUNT,
+        [f.preview]: c === d.i.PREVIEW,
+        [f.mini_preview]: c === d.i.MINI_PREVIEW,
+        [f.channel]: c === d.i.CHANNEL
       }),
       style: {
-        maskImage: f.maskImage
+        maskImage: _.maskImage
       },
       animate: h,
       loop: !0 === h && !0 === n
@@ -88,7 +88,7 @@ function h(e) {
   return i.useEffect(() => {
     null != u.current && (a || o ? u.current.play() : u.current.pause())
   }, [a, o]), (0, r.jsx)("div", {
-    className: _.videoContainer,
+    className: f.videoContainer,
     style: c,
     children: (0, r.jsx)(s.Z, {
       src: n,

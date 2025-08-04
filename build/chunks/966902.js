@@ -1,34 +1,36 @@
-/** Chunk was on 22243 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  $: () => c
+  $: () => u
 });
-var i = n(255367);
+var r = n(255367);
 n(73800);
-var r = n(120356),
-  s = n.n(r),
-  a = n(168179),
-  l = n(147282);
-let o = function(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 240,
-    n = t / 2 - 12;
-  return Math.max(-n, Math.min(n, e))
-};
+var i = n(120356),
+  a = n.n(i),
+  o = n(168179),
+  s = n(147282);
+let l = 12,
+  c = function(e) {
+    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 240,
+      n = t / 2 - l;
+    return Math.max(-n, Math.min(n, e))
+  };
 
-function c(e) {
+function u(e) {
   let {
     caretConfig: t,
     className: n
   } = e, {
-    position: r,
-    align: c,
-    customOffset: d
-  } = t, u = "custom" === c && void 0 !== d ? {
-    "--custom-caret-offset-x": ["top", "bottom"].includes(r) ? "".concat(o(d), "px") : "0px",
-    "--custom-caret-offset-y": ["left", "right"].includes(r) ? "".concat(o(d), "px") : "0px"
-  } : void 0, m = s()(l.caret, l["caret--".concat(r)], l["caret--".concat(c)], n);
-  return (0, i.jsx)("div", {
-    className: m,
-    style: u,
-    children: (0, i.jsx)(a.v, {})
+    position: i,
+    align: l,
+    customOffset: u
+  } = t, d = "custom" === l && void 0 !== u ? {
+    "--custom-caret-offset-x": ["top", "bottom"].includes(i) ? "".concat(c(u), "px") : "0px",
+    "--custom-caret-offset-y": ["left", "right"].includes(i) ? "".concat(c(u), "px") : "0px"
+  } : void 0, f = a()(s.caret, s["caret--".concat(i)], s["caret--".concat(l)], n);
+  return (0, r.jsx)("div", {
+    className: f,
+    style: d,
+    children: (0, r.jsx)(o.v, {})
   })
 }

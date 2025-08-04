@@ -112,7 +112,7 @@ let d = {
     showSlowmodeIndicator: !0,
     showTypingIndicator: !0
   },
-  _ = {
+  f = {
     analyticsName: "overlay",
     autocomplete: {
       addReactionShortcut: !0,
@@ -160,7 +160,7 @@ let d = {
     showSlowmodeIndicator: !0,
     showTypingIndicator: !0
   },
-  f = {
+  _ = {
     analyticsName: "sidebar",
     attachments: !0,
     autocomplete: {
@@ -561,9 +561,9 @@ let d = {
   },
   R = {
     NORMAL: d,
-    OVERLAY: _,
+    OVERLAY: f,
     OVERLAY_INLINE_REPLY: v,
-    SIDEBAR: f,
+    SIDEBAR: _,
     EDIT: p,
     FORM: h,
     VOICE_CHANNEL_STATUS: m,

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  i: () => _
+  i: () => f
 });
 var r = n(255367),
   i = n(481060),
@@ -47,7 +47,7 @@ function d(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = async function() {
+let f = async function() {
   let {
     userImage: e = null,
     guildId: t = null,

@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(665786),
   u = n(823379),
   d = n(981631),
-  _ = n(388032),
-  f = n(602192);
+  f = n(388032),
+  _ = n(602192);
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -57,17 +57,17 @@ function g(e, t) {
 function E(e) {
   switch (e) {
     case 2:
-      return _.intl.string(_.t.iCehw8);
+      return f.intl.string(f.t.iCehw8);
     case 0:
-      return _.intl.string(_.t.hfYfEB);
+      return f.intl.string(f.t.hfYfEB);
     case 3:
-      return _.intl.string(_.t["TX+iFB"]);
+      return f.intl.string(f.t["TX+iFB"]);
     case 4:
-      return _.intl.string(_.t.NSYGX1);
+      return f.intl.string(f.t.NSYGX1);
     case 5:
-      return _.intl.string(_.t.jjUTLy);
+      return f.intl.string(f.t.jjUTLy);
     case 1:
-      return _.intl.string(_.t["lMrv9/"]);
+      return f.intl.string(f.t["lMrv9/"]);
     case 6:
       return null;
     default:
@@ -82,7 +82,7 @@ class b extends i.PureComponent {
       tooltipColor: c = s.ua7.Colors.BRAND,
       tooltipPosition: u,
       tooltipDelay: d,
-      size: _ = 16,
+      size: f = 16,
       badgeColor: p,
       iconClassName: m,
       flowerStarClassName: b
@@ -98,23 +98,23 @@ class b extends i.PureComponent {
           flowerStarClassName: b,
           color: p,
           stroke: a,
-          size: _,
+          size: f,
           children: (0, r.jsx)(t, {
             size: "xxs",
-            className: o()(f.icon, m),
+            className: o()(_.icon, m),
             color: "currentColor"
           })
         }));
         {
           let e = {
-            width: _,
-            height: _
+            width: f,
+            height: f
           };
           return (0, r.jsx)("div", g(h({}, s), {
             className: o()(n, i),
             style: e,
             children: (0, r.jsx)(t, {
-              className: o()(f.icon, m),
+              className: o()(_.icon, m),
               color: "currentColor"
             })
           }))
@@ -126,7 +126,7 @@ class b extends i.PureComponent {
     let {
       guild: e
     } = this.props, t = new Set(e.features);
-    return t.has(d.oNc.INTERNAL_EMPLOYEE_ONLY) ? this.renderBadge(1, s.Ymb, f.staff) : t.has(d.oNc.VERIFIED) && t.has(d.oNc.HUB) ? this.renderBadge(4, s.aVH, f.verifiedHub) : t.has(d.oNc.HUB) ? this.renderBadge(5, s.aVH, f.hub) : t.has(d.oNc.VERIFIED) && t.has(d.oNc.PARTNERED) ? this.renderBadge(3, s.kmB, f.verified) : t.has(d.oNc.VERIFIED) ? this.renderBadge(2, s.kmB, f.verified) : t.has(d.oNc.PARTNERED) ? this.renderBadge(0, (0, s.GSL)(c.Z), f.partnered) : null
+    return t.has(d.oNc.INTERNAL_EMPLOYEE_ONLY) ? this.renderBadge(1, s.Ymb, _.staff) : t.has(d.oNc.VERIFIED) && t.has(d.oNc.HUB) ? this.renderBadge(4, s.aVH, _.verifiedHub) : t.has(d.oNc.HUB) ? this.renderBadge(5, s.aVH, _.hub) : t.has(d.oNc.VERIFIED) && t.has(d.oNc.PARTNERED) ? this.renderBadge(3, s.kmB, _.verified) : t.has(d.oNc.VERIFIED) ? this.renderBadge(2, s.kmB, _.verified) : t.has(d.oNc.PARTNERED) ? this.renderBadge(0, (0, s.GSL)(c.Z), _.partnered) : null
   }
 }
 let y = b

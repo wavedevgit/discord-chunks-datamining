@@ -20,14 +20,14 @@ var i = n(255367),
   x = n(22267),
   _ = n(266454),
   j = n(243778),
-  C = n(957730),
-  E = n(53691),
+  E = n(957730),
+  C = n(53691),
   O = n(267717),
   v = n(296810),
   S = n(678135),
   T = n(610794),
-  N = n(935147),
-  I = n(643879),
+  I = n(935147),
+  N = n(643879),
   y = n(373230),
   A = n(726525),
   P = n(246946),
@@ -72,12 +72,12 @@ function H() {
       }
       return r
     }(H, ["pendingBio", "pendingAvatar", "pendingNameplate"]),
-    q = (0, I.SD)({
+    q = (0, N.SD)({
       userId: n.id,
       image: z
     }),
     X = (0, l.e7)([R.Z], () => R.Z.showNotice()),
-    J = L.dN.useSetting() && null != W ? C.ZP.parse(void 0, W).content : W,
+    J = L.dN.useSetting() && null != W ? E.ZP.parse(void 0, W).content : W,
     Q = w.ZP.canUsePremiumProfileCustomization(n),
     {
       analyticsLocations: $,
@@ -159,13 +159,13 @@ function H() {
       active: eu,
       children: (0, i.jsx)("div", {
         ref: em,
-        children: (0, i.jsx)(N.Z, {
+        children: (0, i.jsx)(I.Z, {
           user: n,
           shouldShow: eu,
           isVisible: el
         })
       })
-    }), eu && !X && (0, i.jsx)(E.p, {
+    }), eu && !X && (0, i.jsx)(C.p, {
       className: F.floatingNitroUpsell,
       showUpsell: eu && !el,
       text: G.intl.format(G.t.TmfgIy, {

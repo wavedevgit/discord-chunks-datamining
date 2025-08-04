@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  P3: () => f,
-  bO: () => _,
+  P3: () => _,
+  bO: () => f,
   lC: () => p
 });
 var r = n(255367);
@@ -51,7 +51,7 @@ function d(e, t) {
   }), e
 }
 
-function _(e) {
+function f(e) {
   let {
     eventId: t,
     parentGuildId: a,
@@ -68,11 +68,11 @@ function _(e) {
     }, n))
   })
 }
-async function f(e, t) {
+async function _(e, t) {
   let {
     guild_id: n
   } = e;
-  await a.Z.transitionToGuildSync(n, t), _({
+  await a.Z.transitionToGuildSync(n, t), f({
     eventId: e.id,
     event: e
   })

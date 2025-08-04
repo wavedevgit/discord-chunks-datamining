@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  S: () => _
+  S: () => f
 });
 var r = n(255367);
 n(73800);
@@ -33,7 +33,7 @@ let c = (0, a.vQ)("keydown", e => !!(0, l.Tm)(e) && (e.preventDefault(), !0)),
     }]
   };
 
-function _(e) {
+function f(e) {
   let {
     children: t
   } = e;

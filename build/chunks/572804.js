@@ -59,14 +59,14 @@ function u(e) {
     mentionUsers: c,
     mentionRoles: u,
     mentionGames: d,
-    suppressEveryone: _ = !1,
-    suppressRoles: f = !1
+    suppressEveryone: f = !1,
+    suppressRoles: _ = !1
   } = e;
-  if (l && !_ || c.includes(t) || d.some(e => {
+  if (l && !f || c.includes(t) || d.some(e => {
       var t;
       return (null != (t = o.Z.getLastPlayedDateTime(e)) ? t : 0) > Date.now() - s
     })) return !0;
-  if (f || null == u || 0 === u.length) return !1;
+  if (_ || null == u || 0 === u.length) return !1;
   let p = r.Z.getChannel(n);
   if (null == p) return !1;
   let h = p.getGuildId();

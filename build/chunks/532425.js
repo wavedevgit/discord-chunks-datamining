@@ -18,13 +18,13 @@ let d = e => {
     onClear: n,
     className: i,
     isLoading: d,
-    size: _ = "sm"
+    size: f = "sm"
   } = e;
   return (0, r.jsx)(o.P, {
     className: a()(i, u.iconLayout, {
       [u.pointer]: t
     }),
-    "data-size": _,
+    "data-size": f,
     onClick: e => {
       e.stopPropagation(), null != n && n(e)
     },

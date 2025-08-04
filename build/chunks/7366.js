@@ -44,13 +44,13 @@ function d(e, t) {
   return n
 }
 
-function _(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function f(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -76,7 +76,7 @@ let h = e => {
     onSecondaryClick: p,
     videoSrc: h,
     loopAt: m
-  } = e, g = f(e, ["gradientColor", "title", "subtitle", "onClose", "onSecondaryClick", "videoSrc", "loopAt"]);
+  } = e, g = _(e, ["gradientColor", "title", "subtitle", "onClose", "onSecondaryClick", "videoSrc", "loopAt"]);
   let {
     subscribeButtonProps: E,
     subscriptionTier: b
@@ -107,7 +107,7 @@ let h = e => {
           variant: "secondary",
           text: l.intl.string(l.t.ZnqyZ2),
           onClick: p
-        }, _(u({}, E), {
+        }, f(u({}, E), {
           onClick: a
         })]
       }, null != y && {

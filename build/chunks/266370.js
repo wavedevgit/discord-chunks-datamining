@@ -139,7 +139,7 @@
       get: function() {
         return a.shimGetDisplayMedia
       }
-    }), n.shimMediaStream = c, n.shimOnTrack = u, n.shimGetSendersWithDtmf = d, n.shimGetStats = _, n.shimSenderReceiverGetStats = f, n.shimAddTrackRemoveTrackWithNative = p, n.shimAddTrackRemoveTrack = h, n.shimPeerConnection = m, n.fixNegotiationNeeded = g;
+    }), n.shimMediaStream = c, n.shimOnTrack = u, n.shimGetSendersWithDtmf = d, n.shimGetStats = f, n.shimSenderReceiverGetStats = _, n.shimAddTrackRemoveTrackWithNative = p, n.shimAddTrackRemoveTrack = h, n.shimPeerConnection = m, n.fixNegotiationNeeded = g;
     var o = s(e("../utils.js"));
 
     function s(e) {
@@ -273,7 +273,7 @@
       }
     }
 
-    function _(e) {
+    function f(e) {
       if (e.RTCPeerConnection) {
         var t = e.RTCPeerConnection.prototype.getStats;
         e.RTCPeerConnection.prototype.getStats = function() {
@@ -320,7 +320,7 @@
       }
     }
 
-    function f(e) {
+    function _(e) {
       if ((void 0 === e ? "undefined" : r(e)) === "object" && e.RTCPeerConnection && e.RTCRtpSender && e.RTCRtpReceiver) {
         if (!("getStats" in e.RTCRtpSender.prototype)) {
           var t = e.RTCPeerConnection.prototype.getSenders;
@@ -724,7 +724,7 @@
     } : function(e) {
       return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
     };
-    n.shimRTCIceCandidate = l, n.shimMaxMessageSize = c, n.shimSendThrowTypeError = u, n.shimConnectionState = d, n.removeExtmapAllowMixed = _, n.shimAddIceCandidateNullOrEmpty = f;
+    n.shimRTCIceCandidate = l, n.shimMaxMessageSize = c, n.shimSendThrowTypeError = u, n.shimConnectionState = d, n.removeExtmapAllowMixed = f, n.shimAddIceCandidateNullOrEmpty = _;
     var i = s(e("sdp")),
       a = o(e("./utils"));
 
@@ -884,7 +884,7 @@
       }
     }
 
-    function _(e, t) {
+    function f(e, t) {
       if (e.RTCPeerConnection && ("chrome" !== t.browser || !(t.version >= 71)) && ("safari" !== t.browser || !(t.version >= 605))) {
         var n = e.RTCPeerConnection.prototype.setRemoteDescription;
         e.RTCPeerConnection.prototype.setRemoteDescription = function(t) {
@@ -902,7 +902,7 @@
       }
     }
 
-    function f(e, t) {
+    function _(e, t) {
       if (e.RTCPeerConnection && e.RTCPeerConnection.prototype) {
         var n = e.RTCPeerConnection.prototype.addIceCandidate;
         n && 0 !== n.length && (e.RTCPeerConnection.prototype.addIceCandidate = function() {
@@ -937,7 +937,7 @@
       get: function() {
         return a.shimGetDisplayMedia
       }
-    }), n.shimOnTrack = c, n.shimPeerConnection = u, n.shimSenderGetStats = d, n.shimReceiverGetStats = _, n.shimRemoveStream = f, n.shimRTCDataChannel = p, n.shimAddTransceiver = h, n.shimGetParameters = m, n.shimCreateOffer = g, n.shimCreateAnswer = E;
+    }), n.shimOnTrack = c, n.shimPeerConnection = u, n.shimSenderGetStats = d, n.shimReceiverGetStats = f, n.shimRemoveStream = _, n.shimRTCDataChannel = p, n.shimAddTransceiver = h, n.shimGetParameters = m, n.shimCreateOffer = g, n.shimCreateAnswer = E;
     var o = s(e("../utils"));
 
     function s(e) {
@@ -1028,7 +1028,7 @@
       }
     }
 
-    function _(e) {
+    function f(e) {
       if ((void 0 === e ? "undefined" : r(e)) === "object" && e.RTCPeerConnection && e.RTCRtpSender && (!e.RTCRtpSender || !("getStats" in e.RTCRtpReceiver.prototype))) {
         var t = e.RTCPeerConnection.prototype.getReceivers;
         t && (e.RTCPeerConnection.prototype.getReceivers = function() {
@@ -1045,7 +1045,7 @@
       }
     }
 
-    function f(e) {
+    function _(e) {
       !e.RTCPeerConnection || "removeStream" in e.RTCPeerConnection.prototype || (e.RTCPeerConnection.prototype.removeStream = function(e) {
         var t = this;
         o.deprecated("removeStream", "removeTrack"), this.getSenders().forEach(function(n) {
@@ -1208,7 +1208,7 @@
     } : function(e) {
       return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
     };
-    n.shimLocalStreamsAPI = o, n.shimRemoteStreamsAPI = s, n.shimCallbacksAPI = l, n.shimGetUserMedia = c, n.shimConstraints = u, n.shimRTCIceServerUrls = d, n.shimTrackEventTransceiver = _, n.shimCreateOfferLegacy = f, n.shimAudioContext = p;
+    n.shimLocalStreamsAPI = o, n.shimRemoteStreamsAPI = s, n.shimCallbacksAPI = l, n.shimGetUserMedia = c, n.shimConstraints = u, n.shimRTCIceServerUrls = d, n.shimTrackEventTransceiver = f, n.shimCreateOfferLegacy = _, n.shimAudioContext = p;
     var i = a(e("../utils"));
 
     function a(e) {
@@ -1361,7 +1361,7 @@
       }
     }
 
-    function _(e) {
+    function f(e) {
       (void 0 === e ? "undefined" : r(e)) === "object" && e.RTCTrackEvent && "receiver" in e.RTCTrackEvent.prototype && !("transceiver" in e.RTCTrackEvent.prototype) && Object.defineProperty(e.RTCTrackEvent.prototype, "transceiver", {
         get: function() {
           return {
@@ -1371,7 +1371,7 @@
       })
     }
 
-    function f(e) {
+    function _(e) {
       var t = e.RTCPeerConnection.prototype.createOffer;
       e.RTCPeerConnection.prototype.createOffer = function(e) {
         if (e) {
@@ -1414,7 +1414,7 @@
         writable: !0
       }) : e[t] = n, e
     }
-    n.extractVersion = s, n.wrapPeerConnectionEvent = l, n.disableLog = c, n.disableWarnings = u, n.log = d, n.deprecated = _, n.detectBrowser = f, n.compactObject = h, n.walkStats = m, n.filterStats = g;
+    n.extractVersion = s, n.wrapPeerConnectionEvent = l, n.disableLog = c, n.disableWarnings = u, n.log = d, n.deprecated = f, n.detectBrowser = _, n.compactObject = h, n.walkStats = m, n.filterStats = g;
     var a = !0,
       o = !0;
 
@@ -1465,11 +1465,11 @@
       ("undefined" == typeof window ? "undefined" : r(window)) === "object" && (a || "undefined" != typeof console && "function" == typeof console.log && console.log.apply(console, arguments))
     }
 
-    function _(e, t) {
+    function f(e, t) {
       o && console.warn(e + " is deprecated, please use " + t + " instead.")
     }
 
-    function f(e) {
+    function _(e) {
       var t = {
         browser: null,
         version: null

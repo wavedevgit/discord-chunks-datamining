@@ -32,18 +32,18 @@ let l = e => {
     let {
       subscriptionTier: u,
       hasActivePromotion: d = !1,
-      useShorterCTA: _ = !1,
-      isPersistentCTA: f = !1
+      useShorterCTA: f = !1,
+      isPersistentCTA: _ = !1
     } = e, p = (0, a.N)(), h = null == p ? void 0 : p.subscription_trial, m = (0, i.Ng)(), g = (0, i.Wp)(m, o.Si.TIER_2) ? o.Si.TIER_2 : void 0, E = (0, r.a5)({
       intervalType: null == h ? void 0 : h.interval,
       intervalCount: null == h ? void 0 : h.interval_count
     }), b = null != (n = null != u ? u : null == p || null == (t = p.subscription_trial) ? void 0 : t.sku_id) ? n : g, y = null != h && b === h.sku_id, O = (null == p ? void 0 : p.trial_id) === o.a7;
     return {
-      buttonText: d ? s.intl.string(s.t.J61px8) : null != m ? c(b, _, f, m.discount.amount) : l({
+      buttonText: d ? s.intl.string(s.t.J61px8) : null != m ? c(b, f, _, m.discount.amount) : l({
         showTrialCTA: y,
         subscriptionTier: b,
         trialDurationCopy: E,
-        isPersistentCTA: f,
+        isPersistentCTA: _,
         shouldShowReferralTrialCopy: O,
         subscriptionTrial: h
       }),

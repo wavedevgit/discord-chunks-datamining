@@ -28,10 +28,10 @@ a.Component;
 var d = function(e, t) {
     return "function" == typeof e ? e(t) : e
   },
-  _ = function(e, t) {
+  f = function(e, t) {
     return "string" == typeof e ? (0, o.ob)(e, null, null, t) : e
   },
-  f = function(e) {
+  _ = function(e) {
     return e
   },
   p = a.forwardRef;
@@ -39,7 +39,7 @@ var d = function(e, t) {
 function h(e) {
   return !!(e.metaKey || e.altKey || e.ctrlKey || e.shiftKey)
 }
-void 0 === p && (p = f);
+void 0 === p && (p = _);
 var m = p(function(e, t) {
     var n = e.innerRef,
       r = e.navigate,
@@ -56,7 +56,7 @@ var m = p(function(e, t) {
           e.defaultPrevented || 0 !== e.button || c && "_self" !== c || h(e) || (e.preventDefault(), r())
         }
       });
-    return f !== p ? u.ref = t || n : u.ref = n, a.createElement("a", u)
+    return _ !== p ? u.ref = t || n : u.ref = n, a.createElement("a", u)
   }),
   g = p(function(e, t) {
     var n = e.component,
@@ -68,7 +68,7 @@ var m = p(function(e, t) {
     return a.createElement(r.s6.Consumer, null, function(e) {
       e || (0, c.Z)(!1);
       var n = e.history,
-        r = _(d(u, e.location), e.location),
+        r = f(d(u, e.location), e.location),
         l = r ? n.createHref(r) : "",
         m = (0, s.Z)({}, g, {
           href: l,
@@ -77,7 +77,7 @@ var m = p(function(e, t) {
             (o ? n.replace : n.push)(t)
           }
         });
-      return f !== p ? m.ref = t || h : m.innerRef = h, a.createElement(i, m)
+      return _ !== p ? m.ref = t || h : m.innerRef = h, a.createElement(i, m)
     })
   }),
   E = function(e) {
@@ -96,7 +96,7 @@ void 0 === b && (b = E), b(function(e, t) {
     i = void 0 === n ? "page" : n,
     o = e.activeClassName,
     u = void 0 === o ? "active" : o,
-    f = e.activeStyle,
+    _ = e.activeStyle,
     p = e.className,
     h = e.exact,
     m = e.isActive,
@@ -110,7 +110,7 @@ void 0 === b && (b = E), b(function(e, t) {
   return a.createElement(r.s6.Consumer, null, function(e) {
     e || (0, c.Z)(!1);
     var n = O || e.location,
-      o = _(d(S, n), n),
+      o = f(d(S, n), n),
       l = o.pathname,
       C = l && l.replace(/([.+*?=^!:${}()[\]|/\\])/g, "\\$1"),
       R = C ? (0, r.LX)(n.pathname, {
@@ -121,7 +121,7 @@ void 0 === b && (b = E), b(function(e, t) {
       }) : null,
       P = !!(m ? m(R, n) : R),
       w = P ? y(p, u) : p,
-      D = P ? (0, s.Z)({}, T, {}, f) : T,
+      D = P ? (0, s.Z)({}, T, {}, _) : T,
       L = (0, s.Z)({
         "aria-current": P && i || null,
         className: w,

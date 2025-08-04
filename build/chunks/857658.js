@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(608787),
   u = n(866442),
   d = n(19602),
-  _ = n(680018),
-  f = n(861066),
+  f = n(680018),
+  _ = n(861066),
   p = n(481060),
   h = n(408886),
   m = n(233398),
@@ -155,13 +155,13 @@ function D(e) {
     x = i.useCallback(e => {
       R(e.hex)
     }, []),
-    M = e => {
+    k = e => {
       if ((0, E.P0)(), n(e.hex), o.length > 0) {
         let t = [...o];
         t[v] = e.hex, s(t)
       }
     },
-    k = async () => {
+    M = async () => {
       if (null != c) try {
         let {
           sRGBHex: e
@@ -192,7 +192,7 @@ function D(e) {
       onColorSelect: G
     }), (0, r.jsx)(N, {
       onChange: x,
-      onChangeComplete: M,
+      onChangeComplete: k,
       color: A
     }), (0, r.jsxs)("div", {
       className: O.hexInputContainer,
@@ -208,17 +208,17 @@ function D(e) {
         children: [null != c && (0, r.jsx)(p.ua7, {
           text: y.intl.string(b.default["8QXO8v"]),
           tooltipClassName: O.eyeDropperTooltip,
-          children: e => (0, r.jsx)(f.h, S(I({
+          children: e => (0, r.jsx)(_.h, S(I({
             variant: "icon-only",
             size: "sm"
           }, e), {
-            onClick: k,
+            onClick: M,
             icon: d.i,
             "aria-label": y.intl.string(b.default["8QXO8v"])
           }))
         }), B && (0, r.jsx)(p.ua7, {
           text: y.intl.string(b.default["rTik5+"]),
-          children: e => (0, r.jsx)(f.h, S(I({}, e), {
+          children: e => (0, r.jsx)(_.h, S(I({}, e), {
             variant: "icon-only",
             size: "sm",
             onClick: () => U(v),
@@ -227,7 +227,7 @@ function D(e) {
           }))
         })]
       })]
-    }), o.length < C && (0, r.jsx)(_.z, {
+    }), o.length < C && (0, r.jsx)(f.z, {
       variant: "secondary",
       size: "md",
       onClick: j,

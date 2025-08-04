@@ -5,8 +5,8 @@ n.d(t, {
   GN: () => P,
   M2: () => L,
   Nq: () => C,
-  SZ: () => k,
-  aC: () => M,
+  SZ: () => M,
+  aC: () => k,
   lF: () => G,
   pI: () => A,
   sR: () => x,
@@ -21,8 +21,8 @@ var r = n(399606),
   c = n(581883),
   u = n(294629),
   d = n(401062),
-  _ = n(131704),
-  f = n(496675),
+  f = n(131704),
+  _ = n(496675),
   p = n(594174),
   h = n(626135),
   m = n(74538),
@@ -43,7 +43,7 @@ function A() {
 }
 
 function N(e, t) {
-  return (null == t ? void 0 : t.guild_id) == null || f.Z.can(T.Plq.USE_EXTERNAL_SOUNDS, t) || e.guildId === I.X8 || e.guildId === (null == t ? void 0 : t.guild_id)
+  return (null == t ? void 0 : t.guild_id) == null || _.Z.can(T.Plq.USE_EXTERNAL_SOUNDS, t) || e.guildId === I.X8 || e.guildId === (null == t ? void 0 : t.guild_id)
 }
 
 function C(e, t, n) {
@@ -77,7 +77,7 @@ async function L(e) {
   let t = p.default.getCurrentUser(),
     n = (0, o.Z)(),
     r = (0, v.k9)(e);
-  if (null == n || _.Lr.has(n.type) || null == r || !m.ZP.canUseCustomCallSounds(t) || !(0, O.D)()) return;
+  if (null == n || f.Lr.has(n.type) || null == r || !m.ZP.canUseCustomCallSounds(t) || !(0, O.D)()) return;
   await (0, E.w)();
   let i = r.guildId === I.hY ? I.X8 : r.guildId,
     a = b.Z.getSound(i, r.soundId);
@@ -99,7 +99,7 @@ function x(e) {
   return a
 }
 
-function M(e, t) {
+function k(e, t) {
   (0, l.PS)(e, n => {
     n.joinSound = void 0, j({
       guildId: e,
@@ -110,7 +110,7 @@ function M(e, t) {
   }, l.fy.INFREQUENT_USER_ACTION)
 }
 
-function k(e, t, n) {
+function M(e, t, n) {
   (0, l.PS)(e, r => {
     let i = t.guildId === I.X8,
       a = i ? y.H$.DEFAULT : y.H$.CUSTOM,

@@ -13,8 +13,8 @@ var r = n(255367),
   c = n(841784),
   u = n(420660),
   d = n(206074),
-  _ = n(145843),
-  f = n(429589),
+  f = n(145843),
+  _ = n(429589),
   p = n(757182),
   h = n(728345),
   m = n(584057),
@@ -36,9 +36,9 @@ var r = n(255367),
   D = n(410441),
   L = n(797342),
   x = n(981631),
-  M = n(388032);
+  k = n(388032);
 
-function k(e, t, n) {
+function M(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -54,7 +54,7 @@ function j(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      k(e, t, n[t])
+      M(e, t, n[t])
     })
   }
   return e
@@ -75,7 +75,7 @@ let U = {
       entry: n,
       disableGameProfileLinks: E,
       onReaction: b,
-      onVoiceChannelPreview: k,
+      onVoiceChannelPreview: M,
       onUserPopoutClosed: G,
       trackRankingItemInteraction: B
     } = e, {
@@ -131,9 +131,9 @@ let U = {
         headerIcons: null == er ? null : (0, r.jsx)(D.Z, {
           onClick: ea,
           Icon: er,
-          "aria-label": M.intl.string(M.t.YR4cHB)
+          "aria-label": k.intl.string(k.t.YR4cHB)
         }),
-        userDescription: (0, T.kr)(n) ? M.t.vPg1JS : M.t.rPqqtr,
+        userDescription: (0, T.kr)(n) ? k.t.vPg1JS : k.t.rPqqtr,
         title: H,
         subtitle: Z,
         badges: eu,
@@ -146,20 +146,20 @@ let U = {
         title: n.extra.game_name,
         subtitle: Z,
         badges: eu,
-        userDescription: M.t["6oWFUF"],
+        userDescription: k.t["6oWFUF"],
         entry: n,
         stream: Q,
         onUserPopoutClosed: G,
         trackRankingItemInteraction: B
       }),
-      e_ = !el && es ? (0, r.jsx)(_.Z, {
+      ef = !el && es ? (0, r.jsx)(f.Z, {
         application: eo,
         ButtonComponent: e => (0, r.jsx)(w.Ll, j({
           IconComponent: s.v3n
         }, e)),
         location: "MemberListGamingContentPopout"
       }) : null,
-      ef = [null == e_ && ((0, l.Z)(Y, x.xjy.JOIN) || (0, c.Z)(Y)) ? (0, r.jsx)(f.Z, {
+      e_ = [null == ef && ((0, l.Z)(Y, x.xjy.JOIN) || (0, c.Z)(Y)) ? (0, r.jsx)(_.Z, {
         activity: Y,
         user: F,
         ButtonComponent: e => (0, r.jsx)(w.Ll, j({
@@ -170,18 +170,18 @@ let U = {
         ButtonComponent: e => (0, r.jsx)(w.Ll, j({
           IconComponent: s.tEF
         }, e))
-      }) : null, e_].filter(y.lm);
+      }) : null, ef].filter(y.lm);
     return (0, r.jsxs)(w.yR, {
       children: [ed, (0, r.jsx)(w.St, {
         children: (0, r.jsx)(w.WT, {
           onReaction: b,
-          onVoiceChannelPreview: k,
+          onVoiceChannelPreview: M,
           user: F,
           channel: t,
           generateReactionImage: ec,
           reactionImageAltText: (0, A.IS)(n, F),
           entry: n,
-          buttons: ef
+          buttons: e_
         })
       })]
     })

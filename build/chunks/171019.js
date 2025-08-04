@@ -16,12 +16,12 @@ let d = e => {
     isPurchaseSection: t,
     isPremiumSection: n,
     canUsePremiumCollectibles: d,
-    skuId: _
-  } = e, f = (0, l.Yq)(_), p = (0, a.e7)([s.Z], () => {
-    let e = s.Z.getProduct(_);
+    skuId: f
+  } = e, _ = (0, l.Yq)(f), p = (0, a.e7)([s.Z], () => {
+    let e = s.Z.getProduct(f);
     return (0, l.G1)(e)
   });
-  return t || n && d ? null : f ? (0, r.jsx)(o.lBU, {
+  return t || n && d ? null : _ ? (0, r.jsx)(o.lBU, {
     className: u.newBadge,
     text: (0, r.jsxs)("div", {
       className: u.newBadgeText,

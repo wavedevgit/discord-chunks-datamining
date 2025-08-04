@@ -76,17 +76,17 @@ let d = e => {
       isPersistentCTA: s
     },
     {
-      buttonText: _,
-      marketingSubscriptionTierSkuId: f
+      buttonText: f,
+      marketingSubscriptionTierSkuId: _
     } = (0, r.G)(d),
     {
       subscribeButtonProps: p
     } = (0, i.F)(l(o({}, u), {
-      subscriptionTier: f,
-      buttonTextOverride: _
+      subscriptionTier: _,
+      buttonTextOverride: f
     }));
   return {
     subscribeButtonProps: p,
-    subscriptionTier: f
+    subscriptionTier: _
   }
 }

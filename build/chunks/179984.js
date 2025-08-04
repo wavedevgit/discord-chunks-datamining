@@ -20,14 +20,14 @@ var i = n(255367),
   x = n(74538),
   _ = n(367074),
   j = n(775412),
-  C = n(46062),
-  E = n(104494),
+  E = n(46062),
+  C = n(104494),
   O = n(639119),
   v = n(736519),
   S = n(784238),
   T = n(230916),
-  N = n(346497),
-  I = n(382791),
+  I = n(346497),
+  N = n(382791),
   y = n(21023),
   A = n(474936),
   P = n(388032),
@@ -56,11 +56,11 @@ function L(e) {
   return e
 }
 let B = () => {
-    let e = (0, N.W)();
-    return (0, i.jsx)(I.Cy, {
+    let e = (0, I.W)();
+    return (0, i.jsx)(N.Cy, {
       text: e,
       className: R.bogoPillWithSparkles,
-      colorOptions: I.VE.PREMIUM_TIER_2_NEW_GRADIENT_FILL
+      colorOptions: N.VE.PREMIUM_TIER_2_NEW_GRADIENT_FILL
     })
   },
   M = () => (0, i.jsx)("div", {
@@ -149,7 +149,7 @@ let B = () => {
     var t;
     let n, {
         className: s,
-        hideCTAs: N = !1,
+        hideCTAs: I = !1,
         headingOverride: D,
         hidePill: Z = !1,
         selectedPlanColumnClassName: w,
@@ -167,8 +167,8 @@ let B = () => {
       X = (0, O.N)(),
       J = null == X || null == (t = X.subscription_trial) ? void 0 : t.sku_id,
       Q = (0, j.rT)(),
-      $ = (0, E.Ng)(),
-      ee = null != $ && (0, E.Wp)($, A.Si.TIER_2),
+      $ = (0, C.Ng)(),
+      ee = null != $ && (0, C.Wp)($, A.Si.TIER_2),
       et = (0, T.A)(A.Xh.PREMIUM_MONTH_TIER_2),
       en = "".concat(et, "/").concat((0, x.eP)(A.rV.MONTH)),
       ei = (0, x.CY)(A.Xh.PREMIUM_MONTH_TIER_0),
@@ -178,7 +178,7 @@ let B = () => {
       el = (0, _.Vi)(),
       {
         enabled: eo
-      } = C.T.useExperiment({
+      } = E.T.useExperiment({
         location: "PlanComparisonTable"
       });
     if (!H || !W) return null;
@@ -196,7 +196,7 @@ let B = () => {
           premiumType: A.p9.TIER_2
         })
       };
-    N ? ea.push({
+    I ? ea.push({
       label: null,
       column1: null,
       column2: null,
@@ -242,10 +242,10 @@ let B = () => {
       withBottomBorder: !1,
       withBottomBorderRadius: !0,
       buttonsRow: null == J
-    }), n = Z ? null : null != J || null != Q ? (0, i.jsx)(I.Cy, {
+    }), n = Z ? null : null != J || null != Q ? (0, i.jsx)(N.Cy, {
       text: null != J ? P.intl.string(P.t.IBYG5e) : P.intl.string(P.t.ce1v3d),
       className: R.freeTrialPillWithSparkles,
-      colorOptions: J === A.Si.TIER_0 ? Y ? I.VE.PREMIUM_TIER_0_GRADIENT_FILL : I.VE.PREMIUM_TIER_0_WHITE_FILL : Y ? q ? I.VE.PREMIUM_TIER_2_OLD_GRADIENT_FILL : I.VE.PREMIUM_TIER_2_NEW_GRADIENT_FILL : I.VE.PREMIUM_TIER_2_WHITE_FILL
+      colorOptions: J === A.Si.TIER_0 ? Y ? N.VE.PREMIUM_TIER_0_GRADIENT_FILL : N.VE.PREMIUM_TIER_0_WHITE_FILL : Y ? q ? N.VE.PREMIUM_TIER_2_OLD_GRADIENT_FILL : N.VE.PREMIUM_TIER_2_NEW_GRADIENT_FILL : N.VE.PREMIUM_TIER_2_WHITE_FILL
     }) : el ? (0, i.jsx)(B, {}) : (0, i.jsx)(M, {});
     let eu = J === A.Si.TIER_0 || Q === A.p9.TIER_0 || k === A.p9.TIER_0;
     return (0, i.jsx)(p.Gt, {

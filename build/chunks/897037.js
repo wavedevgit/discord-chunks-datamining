@@ -34,7 +34,7 @@ function d(e) {
   return e
 }
 
-function _(e, t) {
+function f(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -45,8 +45,8 @@ function _(e, t) {
   return n
 }
 
-function f(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -84,10 +84,10 @@ function m(e) {
     }) : null != o && (null != (i = null == r ? void 0 : r.length) ? i : 0) > o ? l.intl.formatToPlainString(l.t.ICT5S0, {
       maxLength: o
     }) : null : null
-  }, [t, n, c, a, null == r ? void 0 : r.length, o]), _ = null != n && "" !== n || null != d;
+  }, [t, n, c, a, null == r ? void 0 : r.length, o]), f = null != n && "" !== n || null != d;
   return {
     errorMessage: d,
-    hasError: _,
+    hasError: f,
     setShouldValidate: u
   }
 }
@@ -125,9 +125,9 @@ function g(e) {
         key: l
       } = s, {
         transform: u
-      } = e, _ = p(e, ["transform"]);
+      } = e, f = p(e, ["transform"]);
       return null != n && "" !== n ? (0, r.jsx)(a.animated.div, {
-        style: f(d({}, _), {
+        style: _(d({}, f), {
           overflow: "hidden"
         }),
         children: (0, r.jsxs)(a.animated.div, {

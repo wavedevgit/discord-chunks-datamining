@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  o: () => f
+  o: () => _
 });
 var r = n(255367);
 n(73800);
@@ -13,21 +13,21 @@ var i = n(657707),
   c = n(507962),
   u = n(231338),
   d = n(191340);
-let _ = (e, t) => e === t ? d.themePillItemSelected : void 0;
+let f = (e, t) => e === t ? d.themePillItemSelected : void 0;
 
-function f() {
+function _() {
   let e = (0, a.e7)([s.Z], () => s.Z.theme),
     t = (0, o.wjy)(e) ? u.BR.DARK : u.BR.LIGHT,
     n = [{
       name: "",
       value: u.BR.DARK,
       icon: i.Z6G,
-      className: _(t, u.BR.DARK)
+      className: f(t, u.BR.DARK)
     }, {
       name: "",
       value: u.BR.LIGHT,
       icon: i.chG,
-      className: _(t, u.BR.LIGHT)
+      className: f(t, u.BR.LIGHT)
     }];
   return (0, r.jsx)(o.sY7, {
     className: d.themeSelector,

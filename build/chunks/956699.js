@@ -20,14 +20,14 @@ var i = n(255367),
   x = n(491428),
   _ = n(225433),
   j = n(484614),
-  C = n(386506),
-  E = n(865427),
+  E = n(386506),
+  C = n(865427),
   O = n(802098),
   v = n(663993),
   S = n(600164),
   T = n(482215),
-  N = n(38618),
-  I = n(375657),
+  I = n(38618),
+  N = n(375657),
   y = n(171393),
   A = n(837268),
   P = n(32300),
@@ -180,7 +180,7 @@ class ea extends r.Component {
     this.setState({
       loading: !0
     });
-    let e = await (0, E.Ce)();
+    let e = await (0, C.Ce)();
     this.setState({
       loading: !1,
       buildOverrides: e,
@@ -420,7 +420,7 @@ class ea extends r.Component {
       this.setState({
         saving: !0
       });
-      let t = await (0, C.aD)(e);
+      let t = await (0, E.aD)(e);
       if (200 === t.status) {
         let e = t.body;
         this.setState({
@@ -769,7 +769,7 @@ class el extends r.Component {
       if (this.isMobile() && 0 === this.state.allowedVersions.length) return void this.setAllowedVersionError("You must add at least one allowed version for iOS");
       this.setStatusMessage(null);
       let e = this.generatePayload(),
-        t = await (0, C.M3)(e);
+        t = await (0, E.M3)(e);
       !1 !== t.error ? this.setStatusMessage(JSON.stringify(t.error), 0) : (this.setState({
         publicLink: t.url.toString()
       }), 0 === e.meta.user_ids.length && this.setStatusMessage("Warning! No users added to the whitelist! This link could be used by anyone to override their build.", 1))
@@ -992,7 +992,7 @@ function ec() {
           B.default.track(Y.rMx.GUILD_JOIN_FEEDBACK, {
             reason: "disable-align-chat-input",
             rating: e ? "yes" : "no"
-          }), (0, I.s)("go_back_to_regular_input", {
+          }), (0, N.s)("go_back_to_regular_input", {
             enabled: e
           })
         },
@@ -1095,7 +1095,7 @@ function em() {
           variant: "primary",
           text: "Reset Socket",
           onClick: () => {
-            N.Z.getSocket().close(), N.Z.getSocket().connect()
+            I.Z.getSocket().close(), I.Z.getSocket().connect()
           }
         })
       }), (0, i.jsx)(Z.F, {

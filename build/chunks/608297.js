@@ -63,15 +63,15 @@ function d(e, t) {
   if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
 }
 
-function _(e, t) {
+function f(e, t) {
   for (var n = 0; n < t.length; n++) {
     var r = t[n];
     r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(e, r.key, r)
   }
 }
 
-function f(e, t, n) {
-  return t && _(e.prototype, t), n && _(e, n), e
+function _(e, t, n) {
+  return t && f(e.prototype, t), n && f(e, n), e
 }
 
 function p(e, t, n) {
@@ -91,7 +91,7 @@ var h = 10,
     function e() {
       d(this, e), p(this, "subPriority", 0)
     }
-    return f(e, [{
+    return _(e, [{
       key: "validate",
       value: function(e, t) {
         return !0
@@ -106,7 +106,7 @@ var h = 10,
       var s;
       return d(this, n), (s = t.call(this)).value = e, s.validateValue = r, s.setValue = i, s.priority = a, o && (s.subPriority = o), s
     }
-    return f(n, [{
+    return _(n, [{
       key: "validate",
       value: function(e, t) {
         return this.validateValue(e, this.value, t)
@@ -128,7 +128,7 @@ var h = 10,
       for (var r = arguments.length, i = Array(r), a = 0; a < r; a++) i[a] = arguments[a];
       return p(l(e = t.call.apply(t, [this].concat(i))), "priority", h), p(l(e), "subPriority", -1), e
     }
-    return f(n, [{
+    return _(n, [{
       key: "set",
       value: function(e, t) {
         if (t.timestampIsSet) return e;

@@ -49,7 +49,7 @@ function j() {
       component: g.Z,
       setting: b.s6.VOICE_AND_VIDEO_DEBUG_TAB
     }],
-    C = j.findIndex(e => null != e.subsection && e.subsection === t);
+    E = j.findIndex(e => null != e.subsection && e.subsection === t);
   return (0, i.jsx)(a.Gt, {
     value: e,
     children: (0, i.jsx)(o.N, {
@@ -58,7 +58,7 @@ function j() {
         parentSetting: b.s6.VOICE_AND_VIDEO,
         settingsSection: x.oAB.VOICE,
         tabs: j,
-        defaultTabIndex: C > -1 ? C : void 0
+        defaultTabIndex: E > -1 ? E : void 0
       })
     })
   })

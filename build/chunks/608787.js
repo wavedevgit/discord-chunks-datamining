@@ -53,11 +53,11 @@ function c(e) {
   } = e, d = i.lazy(() => (0, a.wE)({
     createPromise: t,
     webpackId: n
-  })), _ = e => (0, r.jsx)(i.Suspense, {
+  })), f = e => (0, r.jsx)(i.Suspense, {
     fallback: null != o ? o() : l()(),
     children: (0, r.jsx)(d, s({}, e))
   });
-  return u && (_ = i.memo(_)), _.displayName = "Suspense(".concat(c || "Unknown", ")"), _
+  return u && (f = i.memo(f)), f.displayName = "Suspense(".concat(c || "Unknown", ")"), f
 }
 
 function u(e) {

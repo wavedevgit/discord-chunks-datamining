@@ -20,14 +20,14 @@ var i, r, s = n(230711),
   x = n(985443),
   _ = n(612253),
   j = n(872532),
-  C = n(404583),
-  E = n(295349),
+  E = n(404583),
+  C = n(295349),
   O = n(631572),
   v = n(999675),
   S = n(238027),
   T = n(997585),
-  N = n(138431),
-  I = n(305516),
+  I = n(138431),
+  N = n(305516),
   y = n(980984),
   A = n(952842),
   P = n(38244),
@@ -86,8 +86,8 @@ let et = (e, t) => (function(e) {
     }
   }, t ? {
     referralProgram: {
-      thumbnail: I.Z,
-      assetUrl: e ? N.Z : y.Z
+      thumbnail: N.Z,
+      assetUrl: e ? I.Z : y.Z
     },
     showYourStyle: {
       thumbnail: P.Z,
@@ -98,8 +98,8 @@ let et = (e, t) => (function(e) {
       assetUrl: e ? D.Z : w.Z
     },
     emojis: {
-      thumbnail: E.Z,
-      assetUrl: e ? C.Z : O.Z
+      thumbnail: C.Z,
+      assetUrl: e ? E.Z : O.Z
     },
     noLimits: {
       thumbnail: S.Z,
@@ -171,7 +171,7 @@ let et = (e, t) => (function(e) {
       }),
       previewImage: f.referralProgram.thumbnail,
       videoUrl: f.referralProgram.assetUrl
-    }, C = {
+    }, E = {
       name: "showYourStyle",
       title: h.intl.string(h.t.Ij3Zmp),
       description: h.intl.string(h.t.UsOUxc),
@@ -179,7 +179,7 @@ let et = (e, t) => (function(e) {
       previewImage: f.showYourStyle.thumbnail,
       onClick: t,
       videoUrl: f.showYourStyle.assetUrl
-    }, E = {
+    }, C = {
       name: "yourSpace",
       title: h.intl.string(h.t.Wme3nZ),
       description: h.intl.string(h.t["/aAIqa"]),
@@ -208,8 +208,8 @@ let et = (e, t) => (function(e) {
         [_, j]
       ],
       bestOfBoxes: [
-        [C],
         [E],
+        [C],
         [O, {
           name: "noLimits",
           title: h.intl.string(h.t["6b3ydH"]),

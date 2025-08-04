@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(367907),
   u = n(7284),
   d = n(739566),
-  _ = n(884902),
-  f = n(623292),
+  f = n(884902),
+  _ = n(623292),
   p = n(703656),
   h = n(665906),
   m = n(488131),
@@ -47,7 +47,7 @@ function S(e) {
   } = e;
 
   function o() {
-    (0, f.A6)(t.id), (0, m.R6)(t, n, "Reply Chain Nudge")
+    (0, _.A6)(t.id), (0, m.R6)(t, n, "Reply Chain Nudge")
   }
   let s = i.useRef(a);
   return i.useEffect(() => {
@@ -101,16 +101,16 @@ function A(e) {
     colorRoleName: N,
     authorId: C,
     displayNameStyles: R
-  } = (0, d.ZP)(a), P = (0, _.X7)(m, C, A), w = (0, u.j)({
+  } = (0, d.ZP)(a), P = (0, f.X7)(m, C, A), w = (0, u.j)({
     displayNameStyles: R
-  }), D = T(i, a), L = (0, h.NE)(i, a), x = n.showThreadPromptOnReply && D >= v && L, M = () => (0, p.uL)(b.Z5c.CHANNEL(i.getGuildId(), i.id, a.id));
+  }), D = T(i, a), L = (0, h.NE)(i, a), x = n.showThreadPromptOnReply && D >= v && L, k = () => (0, p.uL)(b.Z5c.CHANNEL(i.getGuildId(), i.id, a.id));
 
-  function k(e) {
-    e.stopPropagation(), (0, f.qx)(i.id, !s)
+  function M(e) {
+    e.stopPropagation(), (0, _.qx)(i.id, !s)
   }
 
   function j(e) {
-    e.stopPropagation(), (0, f.A6)(i.id)
+    e.stopPropagation(), (0, _.A6)(i.id)
   }
   return (0, r.jsx)("div", {
     className: O.clipContainer,
@@ -119,7 +119,7 @@ function A(e) {
       children: [(0, r.jsxs)("div", {
         className: O.replyBar,
         children: [(0, r.jsx)(l.P3F, {
-          onClick: M,
+          onClick: k,
           focusProps: {
             offset: {
               top: -8,
@@ -158,7 +158,7 @@ function A(e) {
                 return (0, r.jsx)(l.P3F, {
                   role: "switch",
                   "aria-checked": s,
-                  onClick: k,
+                  onClick: M,
                   onMouseEnter: t,
                   onMouseLeave: n,
                   onFocus: i,

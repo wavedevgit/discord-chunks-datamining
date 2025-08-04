@@ -3,7 +3,7 @@
 n.d(t, {
   O5: () => K,
   V6: () => W,
-  ZP: () => eM
+  ZP: () => ek
 }), n(35282), n(388685), n(997841), n(539854);
 var r, i = n(392711),
   a = n.n(i),
@@ -13,8 +13,8 @@ var r, i = n(392711),
   c = n(16609),
   u = n(864106),
   d = n(579407),
-  _ = n(710845),
-  f = n(69882),
+  f = n(710845),
+  _ = n(69882),
   p = n(134049),
   h = n(160404),
   m = n(630388),
@@ -65,14 +65,14 @@ function C(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let R = new _.Z("GuildMemberStore"),
+let R = new f.Z("GuildMemberStore"),
   P = {},
   w = {},
   D = {},
   L = {},
   x = {},
-  M = !1,
-  k = 0,
+  k = !1,
+  M = 0,
   j = 0,
   U = {},
   G = {},
@@ -82,9 +82,9 @@ let R = new _.Z("GuildMemberStore"),
   };
 
 function V(e, t) {
-  if (null == t.communicationDisabledUntil || !(0, f.b)(t)) return F(e, t.userId);
+  if (null == t.communicationDisabledUntil || !(0, _.b)(t)) return F(e, t.userId);
   let n = Y(e, t.userId);
-  x[n] !== t.communicationDisabledUntil && (0, f.b)(t) && (x[n] = t.communicationDisabledUntil, Z(n))
+  x[n] !== t.communicationDisabledUntil && (0, _.b)(t) && (x[n] = t.communicationDisabledUntil, Z(n))
 }
 
 function F(e, t) {
@@ -99,7 +99,7 @@ function F(e, t) {
 }
 
 function Z(e) {
-  k += 1, U[e] = k
+  M += 1, U[e] = M
 }
 
 function H(e) {
@@ -156,8 +156,8 @@ function q(e) {
     roles: c,
     premiumSince: u,
     isPending: d,
-    joinedAt: _,
-    communicationDisabledUntil: f,
+    joinedAt: f,
+    communicationDisabledUntil: _,
     unusualDMActivityUntil: p,
     fullProfileLoadedTimestamp: g,
     flags: E,
@@ -184,8 +184,8 @@ function q(e) {
     highestRoleId: w,
     premiumSince: u,
     isPending: d,
-    joinedAt: _,
-    communicationDisabledUntil: f,
+    joinedAt: f,
+    communicationDisabledUntil: _,
     unusualDMActivityUntil: p,
     fullProfileLoadedTimestamp: g,
     flags: E,
@@ -203,7 +203,7 @@ function q(e) {
 }
 
 function X(e) {
-  M ? M = !1 : (P = {}, w = {}), x = {}, J(e)
+  k ? k = !1 : (P = {}, w = {}), x = {}, J(e)
 }
 
 function Q(e) {
@@ -237,7 +237,7 @@ function ee(e) {
     guildMembers: t,
     guilds: n
   } = e;
-  M = !0, P = A({}, t), w = {}, L = {}, en(n)
+  k = !0, P = A({}, t), w = {}, L = {}, en(n)
 }
 
 function et(e) {
@@ -262,9 +262,9 @@ function en(e) {
 function er(e) {
   var t, n;
   if (null == e.guildId || null == I.Z.getGuild(e.guildId)) return !1;
-  M = !0, P[e.guildId] = null != (t = P[e.guildId]) ? t : {};
+  k = !0, P[e.guildId] = null != (t = P[e.guildId]) ? t : {};
   let r = !1;
-  for (let t of (M = !0, P[e.guildId] = null != (n = P[e.guildId]) ? n : {}, e.members)) null == P[e.guildId][t.userId] && (r = !0, P[e.guildId][t.userId] = t);
+  for (let t of (k = !0, P[e.guildId] = null != (n = P[e.guildId]) ? n : {}, e.members)) null == P[e.guildId][t.userId] && (r = !0, P[e.guildId][t.userId] = t);
   return r
 }
 
@@ -280,8 +280,8 @@ function ei(e) {
     premiumSince: l,
     isPending: c,
     joinedAt: d,
-    communicationDisabledUntil: _,
-    unusualDMActivityUntil: f,
+    communicationDisabledUntil: f,
+    unusualDMActivityUntil: _,
     flags: p,
     collectibles: h
   } = e, m = P[n];
@@ -299,8 +299,8 @@ function ei(e) {
     premiumSince: l,
     isPending: c,
     joinedAt: d,
-    communicationDisabledUntil: _,
-    unusualDMActivityUntil: f,
+    communicationDisabledUntil: f,
+    unusualDMActivityUntil: _,
     fullProfileLoadedTimestamp: null == (t = m[r.id]) ? void 0 : t.fullProfileLoadedTimestamp,
     flags: p,
     collectibles: h
@@ -392,7 +392,7 @@ function ed(e) {
   return ep(t, n)
 }
 
-function e_(e) {
+function ef(e) {
   let {
     guildId: t,
     threads: n
@@ -407,7 +407,7 @@ function e_(e) {
   }, []))
 }
 
-function ef(e) {
+function e_(e) {
   let {
     guildId: t,
     addedMembers: n
@@ -571,10 +571,10 @@ function eS(e) {
     addedRoleIds: s,
     removedRoleIds: l,
     flags: c
-  } = e, u = y.default.getId(), d = P[i], _ = null != d ? d[u] : null;
-  if (null == _) return !1;
-  let f = I.Z.getGuild(i);
+  } = e, u = y.default.getId(), d = P[i], f = null != d ? d[u] : null;
   if (null == f) return !1;
+  let _ = I.Z.getGuild(i);
+  if (null == _) return !1;
   let p = null != (t = G[i]) ? t : {};
   G[i] = {
     added: a().difference(a().union(null != (n = p.added) ? n : [], s), null != l ? l : []),
@@ -582,17 +582,17 @@ function eS(e) {
   }, d[u] = q({
     userId: u,
     guildId: i,
-    nick: _.nick,
-    avatar: _.avatar,
-    avatarDecoration: _.avatarDecoration,
-    guildRoles: v.Z.getUnsafeMutableRoles(f.id),
-    roles: null != o ? o : _.roles,
-    premiumSince: _.premiumSince,
-    isPending: _.isPending,
-    joinedAt: _.joinedAt,
-    flags: null != c ? c : _.flags,
-    fullProfileLoadedTimestamp: _.fullProfileLoadedTimestamp,
-    collectibles: _.collectibles
+    nick: f.nick,
+    avatar: f.avatar,
+    avatarDecoration: f.avatarDecoration,
+    guildRoles: v.Z.getUnsafeMutableRoles(_.id),
+    roles: null != o ? o : f.roles,
+    premiumSince: f.premiumSince,
+    isPending: f.isPending,
+    joinedAt: f.joinedAt,
+    flags: null != c ? c : f.flags,
+    fullProfileLoadedTimestamp: f.fullProfileLoadedTimestamp,
+    collectibles: f.collectibles
   })
 }
 
@@ -802,7 +802,7 @@ class ex extends(r = o.ZP.Store) {
     return x
   }
   getCommunicationDisabledVersion() {
-    return k
+    return M
   }
   getPendingRoleUpdates(e) {
     var t;
@@ -819,7 +819,7 @@ class ex extends(r = o.ZP.Store) {
   }
 }
 S(ex, "displayName", "GuildMemberStore");
-let eM = new ex(s.Z, {
+let ek = new ex(s.Z, {
   CONNECTION_OPEN: X,
   CONNECTION_OPEN_SUPPLEMENTAL: Q,
   OVERLAY_INITIALIZE: $,
@@ -834,9 +834,9 @@ let eM = new ex(s.Z, {
   GUILD_MEMBER_REMOVE: eg,
   GUILD_MEMBER_REMOVE_LOCAL: eE,
   THREAD_MEMBER_LIST_UPDATE: eu,
-  THREAD_MEMBERS_UPDATE: ef,
+  THREAD_MEMBERS_UPDATE: e_,
   LOAD_ARCHIVED_THREADS_SUCCESS: ed,
-  LOAD_FORUM_POSTS: e_,
+  LOAD_FORUM_POSTS: ef,
   GUILD_ROLE_UPDATE: eT,
   GUILD_ROLE_DELETE: eT,
   GUILD_ROLE_MEMBER_REMOVE: eo,

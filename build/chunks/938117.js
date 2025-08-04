@@ -21,7 +21,7 @@ var i = n(255367),
   _ = n(388032),
   j = n(635968);
 
-function C(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -40,7 +40,7 @@ function C(e) {
   return e
 }
 
-function E(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -60,8 +60,8 @@ function O(e) {
     onSelectBackgroundOption: v,
     currentDeviceId: S,
     smallerBackgroundOptions: T,
-    className: N
-  } = e, I = (0, s.e7)([o.default], () => o.default.getCurrentUser()), [y, A] = r.useState(null), P = (0, g.Z)(), R = c.ZP.canUseCustomBackgrounds(I);
+    className: I
+  } = e, N = (0, s.e7)([o.default], () => o.default.getCurrentUser()), [y, A] = r.useState(null), P = (0, g.Z)(), R = c.ZP.canUseCustomBackgrounds(N);
   r.useEffect(() => {
     (0, d.XV)()
   }, []);
@@ -97,7 +97,7 @@ function O(e) {
   };
   return P ? (0, i.jsxs)(a.xJW, {
     title: _.intl.string(_.t.lZTUPj),
-    className: N,
+    className: I,
     children: [null != y ? (0, i.jsx)(a.kzN, {
       className: j.videoBackgroundError,
       children: y
@@ -111,9 +111,9 @@ function O(e) {
           let {
             default: e
           } = await n.e("87200").then(n.bind(n, 592163));
-          return n => (0, i.jsx)(e, E(C({}, n), {
+          return n => (0, i.jsx)(e, C(E({}, n), {
             onLearnMore: t,
-            analyticsSource: E(C({}, w.location), {
+            analyticsSource: C(E({}, w.location), {
               object: b.qAy.BUTTON_CTA
             })
           }))

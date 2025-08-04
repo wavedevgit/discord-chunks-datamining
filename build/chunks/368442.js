@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   PK: () => l,
-  tu: () => _,
+  tu: () => f,
   xJ: () => u
 });
 var r = n(442837),
@@ -28,7 +28,7 @@ function d(e) {
   return null != o.Z.getMutableParticipants(e, s.pV.SPEAKER).find(e => e.type === s.Ui.STREAM)
 }
 
-function _(e) {
+function f(e) {
   var t;
   let n = i.Z.getGuild(e);
   return null != n && (null != (t = null == n ? void 0 : n.maxStageVideoChannelUsers) ? t : 0) > 0

@@ -26,8 +26,8 @@ function j(e) {
   let {
     isNested: n = !1
   } = e, j = null == (t = (0, m.Z)()) || t, {
-    explicitContentGuilds: C,
-    explicitContentFriendDm: E,
+    explicitContentGuilds: E,
+    explicitContentFriendDm: C,
     explicitContentNonFriendDm: O
   } = (0, d.B)(), v = e => {
     let t = Object.values(e);
@@ -42,11 +42,11 @@ function j(e) {
   }], T = [{
     value: r.Q4.BLUR,
     label: x.intl.string(x.t.S49UaW)
-  }], N = {
+  }], I = {
     value: r.Q4.SHOW,
     label: x.intl.string(x.t["5k5OFh"])
   };
-  return j && (S.unshift(N), T.unshift(N)), (0, i.jsx)(g.U, {
+  return j && (S.unshift(I), T.unshift(I)), (0, i.jsx)(g.U, {
     setting: f.s6.PRIVACY_SENSITIVE_MEDIA_V2,
     scrollPosition: h.FY.EXPLICIT_MEDIA_REDACTION_V2,
     children: n ? (0, i.jsxs)(i.Fragment, {
@@ -58,7 +58,7 @@ function j(e) {
         }), (0, i.jsx)(s.q4e, {
           look: s.qQH.CUSTOM,
           options: S,
-          value: E,
+          value: C,
           onChange: e => v({
             explicitContentFriendDm: e
           }),
@@ -103,7 +103,7 @@ function j(e) {
         }), (0, i.jsx)(s.q4e, {
           look: s.qQH.CUSTOM,
           options: T,
-          value: C,
+          value: E,
           onChange: e => v({
             explicitContentGuilds: e
           }),
@@ -135,7 +135,7 @@ function j(e) {
         titleClassName: _.selectItemTitle,
         children: (0, i.jsx)(s.q4e, {
           options: S,
-          value: E,
+          value: C,
           onChange: e => v({
             explicitContentFriendDm: e
           })
@@ -157,7 +157,7 @@ function j(e) {
         titleClassName: _.selectItemTitle,
         children: (0, i.jsx)(s.q4e, {
           options: T,
-          value: C,
+          value: E,
           onChange: e => v({
             explicitContentGuilds: e
           }),

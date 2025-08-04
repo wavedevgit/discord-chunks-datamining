@@ -20,14 +20,14 @@ var i = n(255367),
   x = n(626135),
   _ = n(74538),
   j = n(367074),
-  C = n(220654),
-  E = n(8647),
+  E = n(220654),
+  C = n(8647),
   O = n(744129),
   v = n(823188),
   S = n(611116),
   T = n(306066),
-  N = n(349803),
-  I = n(8231),
+  I = n(349803),
+  N = n(8231),
   y = n(864879),
   A = n(238649),
   P = n(47840),
@@ -68,7 +68,7 @@ let H = () => {
     {
       analyticsLocations: eu
     } = (0, g.ZP)(p.Z.PREMIUM_MARKETING),
-    em = (0, C.Z)({
+    em = (0, E.Z)({
       location: "PremiumMarketing"
     }),
     ep = !q && !$ && (em || !J);
@@ -85,12 +85,12 @@ let H = () => {
       whatsNew: ex,
       bestOfNitro: e_,
       plans: ej,
-      compare: eC
+      compare: eE
     } = eh,
-    eE = em ? V : G,
+    eC = em ? V : G,
     eO = (0, i.jsxs)("div", {
-      className: a()(eE.container, eE.responsiveContainer, {
-        [eE.containerBackground]: em || K,
+      className: a()(eC.container, eC.responsiveContainer, {
+        [eC.containerBackground]: em || K,
         [V.fadeInFromTop]: !z && em
       }),
       "data-cy": "tier-0-marketing-page",
@@ -110,9 +110,9 @@ let H = () => {
           alt: ""
         })]
       }), (0, i.jsxs)("div", {
-        className: eE.sectionsContainer,
+        className: eC.sectionsContainer,
         children: [(0, i.jsx)("div", {
-          className: eE.heroHeadingContainer,
+          className: eC.heroHeadingContainer,
           ref: eb.ref,
           children: (0, i.jsx)(o.$, {
             innerRef: s,
@@ -132,12 +132,12 @@ let H = () => {
             })
           })
         }), ec && (0, i.jsx)("div", {
-          className: eE.promoBannerContainer,
-          children: (0, i.jsx)(E.Z, {
-            variant: E.C.APPLICATION_NITRO_HOME
+          className: eC.promoBannerContainer,
+          children: (0, i.jsx)(C.Z, {
+            variant: C.C.APPLICATION_NITRO_HOME
           })
         }), (0, i.jsx)("div", {
-          className: eE.whatsNewSectionContainer,
+          className: eC.whatsNewSectionContainer,
           ref: ex.ref,
           children: (0, i.jsx)(S.g, {
             shouldLoadVideo: ei,
@@ -145,7 +145,7 @@ let H = () => {
             enablePremiumBrandRefreshDesign: em
           })
         }), (0, i.jsx)("div", {
-          className: eE.bestOfNitroSectionContainer,
+          className: eC.bestOfNitroSectionContainer,
           ref: e_.ref,
           children: (0, i.jsx)(S.G_, {
             shouldLoadVideo: ei,
@@ -153,7 +153,7 @@ let H = () => {
             enablePremiumBrandRefreshDesign: em
           })
         }), (0, i.jsx)("div", {
-          className: eE.premiumTierCardsContainer,
+          className: eC.premiumTierCardsContainer,
           ref: ej.ref,
           children: (0, i.jsx)(o.$, {
             innerRef: n,
@@ -168,11 +168,11 @@ let H = () => {
             })
           })
         }), (0, i.jsx)("div", {
-          className: eE.planComparisonTableContainer,
-          ref: eC.ref,
-          children: em ? (0, i.jsx)(R.Z, {}) : (0, i.jsx)(I.Z, {})
+          className: eC.planComparisonTableContainer,
+          ref: eE.ref,
+          children: em ? (0, i.jsx)(R.Z, {}) : (0, i.jsx)(N.Z, {})
         })]
-      }), !em && (0, i.jsx)(N.Z, {
+      }), !em && (0, i.jsx)(I.Z, {
         isVisible: ep && ei,
         subscriptionTier: eo,
         isApplicationHome: !0,
@@ -186,7 +186,7 @@ let H = () => {
         },
         children: (0, i.jsx)("div", {
           ref: H,
-          className: eE.bottomOfPageVisibilitySensor
+          className: eC.bottomOfPageVisibilitySensor
         })
       }), (0, i.jsx)(o.$, {
         innerRef: W,
@@ -215,7 +215,7 @@ let H = () => {
   return (0, i.jsx)(d.f6W, {
     theme: em ? U.BR.DARKER : Y,
     children: t => (0, i.jsx)(d.yWw, {
-      className: a()(eE.scroller, t),
+      className: a()(eC.scroller, t),
       ref: e,
       children: eO
     })

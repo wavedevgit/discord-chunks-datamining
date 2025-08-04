@@ -55,7 +55,7 @@ let u = function(e, t, n) {
     return Intl.NumberFormat(n, s({
       style: "currency",
       currency: t
-    }, o)).format(i ? _(e, t) : e)
+    }, o)).format(i ? f(e, t) : e)
   },
   d = {
     [a.pK.AED]: 2,
@@ -242,7 +242,7 @@ let u = function(e, t, n) {
     [a.pK.ZWL]: 2,
     [a.pK.DISCORD_ORB]: 0
   },
-  _ = (e, t) => {
+  f = (e, t) => {
     let n = d[t];
     if (null == n) throw Error("Unexpected currency ".concat(t));
     return new(i())(e).dividedBy(10 ** n).toNumber()

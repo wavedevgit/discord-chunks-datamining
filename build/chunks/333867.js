@@ -13,8 +13,8 @@ var i = n(772848),
   c = n(335131),
   u = n(594174),
   d = n(626135),
-  _ = n(409813),
-  f = n(608579),
+  f = n(409813),
+  _ = n(608579),
   p = n(981631);
 
 function h(e, t, n) {
@@ -75,11 +75,11 @@ function y(e, t) {
 }
 let O = "payment-modal",
   v = "gift-payment-modal",
-  I = new Set([_.h8.REVIEW, _.h8.CONFIRM, _.h8.GIFT_CUSTOMIZATION]);
+  I = new Set([f.h8.REVIEW, f.h8.CONFIRM, f.h8.GIFT_CUSTOMIZATION]);
 
 function T(e) {
   let t, {
-      skuId: _,
+      skuId: f,
       isGift: h = !1,
       giftMessage: g,
       giftingOrigin: y,
@@ -121,9 +121,9 @@ function T(e) {
       onClose: t,
       returnRef: n
     } = e, i = b(e, ["onClose", "returnRef"]);
-    return (0, r.jsx)(f.Z, E(m({}, i), {
+    return (0, r.jsx)(_.Z, E(m({}, i), {
       loadId: w,
-      skuId: _,
+      skuId: f,
       isGift: h,
       giftMessage: g,
       giftingOrigin: y,
@@ -146,7 +146,7 @@ function T(e) {
         payment_type: p.Zuq[p.GZQ.ONE_TIME],
         location: N,
         is_gift: h,
-        sku_id: _,
+        sku_id: f,
         location_stack: A
       }), (0, s.fw)(), (0, l.p)(), null == T || T(P), P && (0, c.qg)({
         variantsReturnStyle: R,

@@ -1,4 +1,5 @@
-/** Chunk was on 22243 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   media: "media__9c640",
   inlineAsset: "inlineAsset__9c640",

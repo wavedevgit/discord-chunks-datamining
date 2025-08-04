@@ -22,7 +22,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function _(e) {
   return e
 }
 
-function f(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -47,7 +47,7 @@ function f(e, t) {
 }
 
 function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -62,16 +62,16 @@ let h = "__DEBUG_PROFILE_EFFECTS_STORE",
       console.error(e), (0, c.showToast)((0, c.createToast)("Failed to save changes. This can happen when you run out of memory in localStorage. Please try deleting some configs and try again.", c.ToastType.FAILURE))
     }
   },
-  E = (0, o.F)(e => p(_({}, m), {
+  E = (0, o.F)(e => p(f({}, m), {
     upsertConfig: t => (0, s.j)(() => {
       e(e => {
-        let n = _({}, e);
+        let n = f({}, e);
         return n.profileEffects[t.id] = t, g(n), n
       })
     }),
     deleteConfig: t => (0, s.j)(() => {
       e(e => {
-        let n = _({}, e);
+        let n = f({}, e);
         return delete n.profileEffects[t], g(n), n
       })
     })
@@ -95,19 +95,19 @@ let h = "__DEBUG_PROFILE_EFFECTS_STORE",
           let t = (0, u.$j)(e);
           return n.current.push(t), t
         },
-        r = t.config.effects.map(t => p(_({}, t), {
+        r = t.config.effects.map(t => p(f({}, t), {
           src: e(t.base64)
         })),
         i = t.config.stillFrames,
-        a = null != i ? _({}, i) : {};
+        a = null != i ? f({}, i) : {};
       for (let t in a) {
         let n = a[t];
-        null != n && (a[t] = p(_({}, n), {
+        null != n && (a[t] = p(f({}, n), {
           src: e(n.base64)
         }))
       }
-      return p(_({}, t), {
-        config: p(_({}, t.config), {
+      return p(f({}, t), {
+        config: p(f({}, t.config), {
           effects: r,
           stillFrames: a
         })

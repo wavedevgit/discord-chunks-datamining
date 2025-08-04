@@ -20,14 +20,14 @@ var i = n(255367),
   x = n(74538),
   _ = n(367074),
   j = n(140465),
-  C = n(286961),
-  E = n(639119),
+  E = n(286961),
+  C = n(639119),
   O = n(8647),
   v = n(784238),
   S = n(218390),
   T = n(823188),
-  N = n(135785),
-  I = n(498765),
+  I = n(135785),
+  N = n(498765),
   y = n(635921),
   A = n(177839),
   P = n(349803),
@@ -42,7 +42,7 @@ let M = e => {
     let {
       inOfferExperience: t
     } = e;
-    return t ? (0, i.jsx)(I.Z, {
+    return t ? (0, i.jsx)(N.Z, {
       lifted: t
     }) : null
   },
@@ -51,7 +51,7 @@ let M = e => {
     (0, h.z)(g.X);
     let n = r.useRef(null),
       s = r.useRef(null),
-      I = r.useRef(null),
+      N = r.useRef(null),
       U = (0, u.ZP)(),
       V = (0, c.wj)(U),
       [G, F] = r.useState(!1),
@@ -62,12 +62,12 @@ let M = e => {
       J = null != X ? (0, x.Af)(X) : null,
       Q = null != J ? x.ZP.getSkuIdForPlan(J.planId) : null,
       $ = null !== Q && Q !== D.Si.TIER_2 ? D.Si.TIER_2 : null,
-      ee = (0, E.N)(),
+      ee = (0, C.N)(),
       et = null == ee || null == (e = ee.subscription_trial) ? void 0 : e.sku_id,
       en = (0, j.Nx)(),
       ei = (0, _.Vi)(),
       er = null != ei && ei,
-      es = null == (t = (0, C.Z)()) ? void 0 : t.billingSettingsMarketingBanner,
+      es = null == (t = (0, E.Z)()) ? void 0 : t.billingSettingsMarketingBanner,
       {
         analyticsLocations: ea
       } = (0, p.ZP)(m.Z.PREMIUM_MARKETING);
@@ -115,7 +115,7 @@ let M = e => {
     return (0, i.jsxs)("div", {
       className: L.container,
       "data-cy": "tier-0-marketing-page",
-      children: [(0, i.jsx)(N.Z, {
+      children: [(0, i.jsx)(I.Z, {
         premiumSubscription: X,
         className: a()(L.existingSubscriberSpacing, {
           [L.zIndex1]: en
@@ -164,14 +164,14 @@ let M = e => {
         isApplicationHome: !1,
         isEligibleForBogoPromotion: ei
       }), (0, i.jsx)(o.$, {
-        innerRef: I,
+        innerRef: N,
         onChange: e => {
           e && !z && (b.default.track(Z.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
             location_stack: ea
           }), Y(!0))
         },
         children: (0, i.jsx)("div", {
-          ref: I,
+          ref: N,
           className: L.bottomOfPageVisibilitySensor
         })
       }), (0, i.jsx)("img", {

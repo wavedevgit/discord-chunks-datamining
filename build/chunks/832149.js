@@ -37,8 +37,8 @@ let l = e => {
     overrideDescription: c,
     shouldShowPromotionalExperience: u,
     onCloseCallback: d,
-    itemConsumed: _,
-    purchaseType: f = a.o8.FIAT
+    itemConsumed: f,
+    purchaseType: _ = a.o8.FIAT
   } = e;
   (0, i.ZDy)(async () => {
     if (t.skuId === a.Vt.FRACTIONAL_PREMIUM || t.skuId === a.Vt.ORB_PROFILE_BADGE) {
@@ -50,7 +50,7 @@ let l = e => {
         analyticsLocations: o,
         overrideTitle: l,
         overrideDescription: c,
-        itemConsumed: _,
+        itemConsumed: f,
         purchaseType: a.o8.ORB
       }, n))
     }
@@ -63,7 +63,7 @@ let l = e => {
       overrideTitle: l,
       overrideDescription: c,
       shouldShowPromotionalExperience: u,
-      purchaseType: f
+      purchaseType: _
     }, n))
   }, {
     onCloseCallback: d

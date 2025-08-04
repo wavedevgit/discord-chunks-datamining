@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(239091),
   u = n(810568),
   d = n(168524),
-  _ = n(592125),
-  f = n(77498),
+  f = n(592125),
+  _ = n(77498),
   p = n(768581),
   h = n(124072),
   m = n(457926),
@@ -63,7 +63,7 @@ let I = function(e) {
   let {
     gameId: a,
     channelId: b
-  } = e, O = (0, s.e7)([f.Z], () => f.Z.getDetectableGame(a)), I = (0, s.e7)([_.Z], () => _.Z.getChannel(b)), T = null != I ? I.getGuildId() : null, S = null != O ? e => {
+  } = e, O = (0, s.e7)([_.Z], () => _.Z.getDetectableGame(a)), I = (0, s.e7)([f.Z], () => f.Z.getChannel(b)), T = null != I ? I.getGuildId() : null, S = null != O ? e => {
     (0, c.jW)(e, async () => {
       let {
         default: e

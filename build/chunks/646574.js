@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(704215),
   u = n(481060),
   d = n(607070),
-  _ = n(243778),
-  f = n(594174),
+  f = n(243778),
+  _ = n(594174),
   p = n(74538),
   h = n(921944),
   m = n(388032),
@@ -61,7 +61,7 @@ function v(e) {
     checked: t,
     onClick: n,
     id: a = "burst-reaction-toggle-button"
-  } = e, v = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), I = f.default.getCurrentUser(), T = null == I || (0, p.I5)(I) ? [c.z.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP] : [], [S, A] = (0, _.US)(T), [N, C] = i.useState(!1), [R, P] = (0, u.q_F)(() => ({})), w = (0, s.animated)(u.Pt5);
+  } = e, v = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), I = _.default.getCurrentUser(), T = null == I || (0, p.I5)(I) ? [c.z.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP] : [], [S, A] = (0, f.US)(T), [N, C] = i.useState(!1), [R, P] = (0, u.q_F)(() => ({})), w = (0, s.animated)(u.Pt5);
 
   function D() {
     P({

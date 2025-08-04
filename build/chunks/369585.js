@@ -14,9 +14,9 @@ var i = n(120356),
   c = n(374415),
   u = n(185033),
   d = n(388032),
-  _ = n(946598);
+  f = n(946598);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -32,7 +32,7 @@ function p(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -83,13 +83,13 @@ function b(e) {
   let o = ["primary", "critical-primary", "expressive"],
     s = n.findLastIndex(e => null != e.variant && o.includes(e.variant));
   return (0, r.jsxs)("footer", {
-    className: a()(_.actionBar, _.section),
+    className: a()(f.actionBar, f.section),
     children: [null != t && (0, r.jsx)("div", {
-      className: _.actionBarLeading,
+      className: f.actionBarLeading,
       children: t
     }), (0, r.jsx)("div", {
-      className: a()(_.actionBarTrailing, {
-        [_.actionBarTrailingFullWidth]: i
+      className: a()(f.actionBarTrailing, {
+        [f.actionBarTrailingFullWidth]: i
       }),
       children: (0, r.jsx)(c.h, {
         fullWidth: i,

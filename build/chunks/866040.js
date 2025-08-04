@@ -13,7 +13,7 @@ var r = n(255367),
   u = n(5192),
   d = n(546059);
 
-function _(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,14 +22,14 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
@@ -69,7 +69,7 @@ function m(e) {
           let {
             default: t
           } = await Promise.all([n.e("70274"), n.e("79695"), n.e("69220"), n.e("70686")]).then(n.bind(n, 881351));
-          return n => (0, r.jsx)(t, h(f({}, n), {
+          return n => (0, r.jsx)(t, h(_({}, n), {
             user: e
           }))
         })
@@ -85,12 +85,12 @@ function g(e) {
     channel: o,
     onPopoutClosed: s,
     targetElementRef: u
-  } = e, d = (0, i.e7)([c.Z], () => c.Z.theme), _ = 1 === n.length ? n[0] : null;
-  return null != _ ? (0, r.jsx)(a.ze6, {
+  } = e, d = (0, i.e7)([c.Z], () => c.Z.theme), f = 1 === n.length ? n[0] : null;
+  return null != f ? (0, r.jsx)(a.ze6, {
     theme: d,
     children: (0, r.jsx)(l.Z, {
       targetElementRef: u,
-      user: _,
+      user: f,
       guildId: null == o ? void 0 : o.guild_id,
       channelId: null == o ? void 0 : o.id,
       onClosePopout: s,

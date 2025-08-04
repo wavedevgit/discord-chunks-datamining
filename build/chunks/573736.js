@@ -5,11 +5,11 @@ n.d(t, {
   HD: () => o,
   J8: () => u,
   PO: () => s,
-  V9: () => _,
+  V9: () => f,
   VZ: () => i,
   cO: () => l,
   kK: () => c,
-  y1: () => f
+  y1: () => _
 });
 let r = Object.prototype.toString;
 
@@ -20,7 +20,7 @@ function i(e) {
     case "[object DOMException]":
       return !0;
     default:
-      return _(e, Error)
+      return f(e, Error)
   }
 }
 
@@ -37,11 +37,11 @@ function s(e) {
 }
 
 function l(e) {
-  return "undefined" != typeof Event && _(e, Event)
+  return "undefined" != typeof Event && f(e, Event)
 }
 
 function c(e) {
-  return "undefined" != typeof Element && _(e, Element)
+  return "undefined" != typeof Element && f(e, Element)
 }
 
 function u(e) {
@@ -52,7 +52,7 @@ function d(e) {
   return s(e) && "nativeEvent" in e && "preventDefault" in e && "stopPropagation" in e
 }
 
-function _(e, t) {
+function f(e, t) {
   try {
     return e instanceof t
   } catch (e) {
@@ -60,6 +60,6 @@ function _(e, t) {
   }
 }
 
-function f(e) {
+function _(e) {
   return !!("object" == typeof e && null !== e && (e.__isVue || e._isVue))
 }

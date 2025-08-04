@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 }), n(539854);
 var r = n(255367);
 n(73800);
@@ -14,19 +14,19 @@ var i = n(243814),
   u = n(388032),
   d = n(398032);
 
-function _(e) {
+function f(e) {
   let t, {
       application: n,
       accountScopes: a
     } = e,
-    _ = [],
+    f = [],
     p = (0, s.Z)(n);
   return (a.includes(i.x.SDK_SOCIAL_LAYER) ? (t = p ? u.intl.format(u.t.GxjwZG, {
     applicationName: n.name,
     learnMoreURL: l.Z.getArticleURL(c.BhN.SOCIAL_LAYER_CONNECTIONS)
   }) : u.intl.format(u.t.DfBeUl, {
     learnMoreURL: l.Z.getArticleURL(c.BhN.SOCIAL_LAYER_CONNECTIONS)
-  }), _.push({
+  }), f.push({
     icon: o.iFz,
     text: p ? u.intl.formatToPlainString(u.t.z9peam, {
       maxFriends: c.L4X
@@ -47,7 +47,7 @@ function _(e) {
     learnMoreURL: l.Z.getArticleURL(c.BhN.SOCIAL_LAYER_CONNECTIONS)
   }) : u.intl.format(u.t.DfBeUl, {
     learnMoreURL: l.Z.getArticleURL(c.BhN.SOCIAL_LAYER_CONNECTIONS)
-  }), _.push({
+  }), f.push({
     icon: o.iFz,
     text: p ? u.intl.formatToPlainString(u.t.z9peam, {
       maxFriends: c.L4X
@@ -60,18 +60,18 @@ function _(e) {
   }, {
     icon: o.ewm,
     text: p ? u.intl.string(u.t.mSqazM) : u.intl.string(u.t.YFFVMz)
-  })), 0 === _.length) ? null : (0, r.jsxs)("div", {
+  })), 0 === f.length) ? null : (0, r.jsxs)("div", {
     className: d.applicationEducation,
     children: [null != t ? (0, r.jsx)(o.X6q, {
       variant: "heading-sm/normal",
       className: d.sectionLabel,
       children: t
-    }) : null, _.map((e, t) => {
+    }) : null, f.map((e, t) => {
       let {
         icon: n,
         text: i
       } = e;
-      return (0, r.jsx)(f, {
+      return (0, r.jsx)(_, {
         icon: n,
         text: i
       }, t)
@@ -79,7 +79,7 @@ function _(e) {
   })
 }
 
-function f(e) {
+function _(e) {
   let {
     icon: t,
     text: n

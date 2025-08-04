@@ -12,8 +12,8 @@ var r, i = n(348327),
   c = n(570140),
   u = n(122810),
   d = n(106301),
-  _ = n(920828),
-  f = n(355281),
+  f = n(920828),
+  _ = n(355281),
   p = n(509003),
   h = n(709054),
   m = n(314897),
@@ -78,12 +78,12 @@ function x(e, t) {
     visible: e,
     hidden: []
   };
-  let n = f.m.getCurrentConfig({
+  let n = _.m.getCurrentConfig({
       location: "presence_filtering"
     }, {
       autoTrackExposure: !1
     }).enabled ? e : e.map(e => (0, p.Jc)(e)),
-    r = _.R.getCurrentConfig({
+    r = f.R.getCurrentConfig({
       location: "presence_filtering"
     }, {
       autoTrackExposure: !1
@@ -108,7 +108,7 @@ function x(e, t) {
   }
 }
 
-function M(e) {
+function k(e) {
   if (delete v[e], delete I[e], delete T[e], delete S[e], null == O[e]) return;
   let t = Object.values(O[e]),
     n = t.reduce((e, t) => {
@@ -118,16 +118,16 @@ function M(e) {
         a = null != e.activities ? e.activities.length : 0;
       return n > r || n === r && i > a ? t : e
     }, t[0]);
-  n.status !== E.Skl.OFFLINE || null != n.hiddenActivities && n.hiddenActivities.length > 0 ? (v[e] = n.status, I[e] = n.activities, T[e] = k(Object.values(t).flatMap(e => {
+  n.status !== E.Skl.OFFLINE || null != n.hiddenActivities && n.hiddenActivities.length > 0 ? (v[e] = n.status, I[e] = n.activities, T[e] = M(Object.values(t).flatMap(e => {
     var t;
     return null != (t = e.hiddenActivities) ? t : []
-  })), null != n.clientStatus && (S[e] = n.clientStatus)) : s().every(O[e], e => e.status === E.Skl.OFFLINE && (null == e.hiddenActivities || 0 === e.hiddenActivities.length)) ? delete O[e] : n.status === E.Skl.OFFLINE && t.some(e => null != e.hiddenActivities && e.hiddenActivities.length > 0) && (T[e] = k(Object.values(t).flatMap(e => {
+  })), null != n.clientStatus && (S[e] = n.clientStatus)) : s().every(O[e], e => e.status === E.Skl.OFFLINE && (null == e.hiddenActivities || 0 === e.hiddenActivities.length)) ? delete O[e] : n.status === E.Skl.OFFLINE && t.some(e => null != e.hiddenActivities && e.hiddenActivities.length > 0) && (T[e] = M(Object.values(t).flatMap(e => {
     var t;
     return null != (t = e.hiddenActivities) ? t : []
   })))
 }
 
-function k(e) {
+function M(e) {
   return 0 === e.length ? e : [...new Map([...e].reverse().map(e => {
     var t;
     return ["".concat(e.application_id, ":").concat(null == (t = e.party) ? void 0 : t.id), e]
@@ -172,8 +172,8 @@ function U(e) {
     let {
       visible: e,
       hidden: c
-    } = x(o.length > 1 ? [...o].sort(L) : o, n), d = k([...null != s ? s : [], ...c]), _ = u[t];
-    o = null != _ && a()(_.activities, e) ? _.activities : e, u[t] = {
+    } = x(o.length > 1 ? [...o].sort(L) : o, n), d = M([...null != s ? s : [], ...c]), f = u[t];
+    o = null != f && a()(f.activities, e) ? f.activities : e, u[t] = {
       status: r,
       clientStatus: i,
       activities: o,
@@ -181,7 +181,7 @@ function U(e) {
       processedAtTimestamp: l
     }
   }
-  return delete A[n], M(n), !0
+  return delete A[n], k(n), !0
 }
 
 function G(e) {
@@ -212,7 +212,7 @@ function G(e) {
     let {
       visible: e,
       hidden: l
-    } = x(a.length > 1 ? [...a].sort(L) : a, n), u = k([...null != o ? o : [], ...l]);
+    } = x(a.length > 1 ? [...a].sort(L) : a, n), u = M([...null != o ? o : [], ...l]);
     c[t] = {
       status: r,
       clientStatus: i,
@@ -227,7 +227,7 @@ function B(e, t) {
   if (t === m.default.getId()) return !1;
   let n = O[t];
   if (null == n || null == n[e]) return !1;
-  delete n[e], 0 === Object.keys(n).length && delete O[t], M(t)
+  delete n[e], 0 === Object.keys(n).length && delete O[t], k(t)
 }
 
 function V(e) {

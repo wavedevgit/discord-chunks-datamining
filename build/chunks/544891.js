@@ -31,7 +31,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,7 +44,7 @@ function _(e) {
   return e
 }
 
-function f(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -56,7 +56,7 @@ function f(e, t) {
 }
 
 function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -77,12 +77,12 @@ class g extends Error {
 }
 
 function E(e, t, n, r, o) {
-  var c, u, d, f, h;
+  var c, u, d, _, h;
   let b = i()[e](t.url);
   if (null != t.onRequestCreated && t.onRequestCreated(b), null != t.query) {
     let e = t.query;
     if ("object" == typeof e) {
-      let t = _({}, e);
+      let t = f({}, e);
       Object.keys(t).map(e => {
         null == t[e] && delete t[e]
       }), e = t
@@ -94,7 +94,7 @@ function E(e, t, n, r, o) {
     }), null == (u = t.fields) || u.forEach(e => {
       b.field(e.name, e.value)
     }), null != t.context) {
-    let e = M(t.context);
+    let e = k(t.context);
     null != e && b.set("X-Context-Properties", e)
   }
   null != t.retried && 0 !== t.retried && b.set("X-Failed-Requests", "".concat(t.retried)), null != t.timeout && 0 !== t.timeout && b.timeout(t.timeout), t.binary && b.responseType("blob"), null != t.onRequestProgress && b.on("progress", e => {
@@ -115,16 +115,16 @@ function E(e, t, n, r, o) {
       status: i.status
     };
     O(t, d);
-    let f = !1,
+    let _ = !1,
       h = (i, a) => {
-        let s = p(_({}, t), {
-          headers: _({}, t.headers, i),
+        let s = p(f({}, t), {
+          headers: f({}, t.headers, i),
           interceptResponse: a
         });
-        f = !0, E(e, s, n, r, o)
+        _ = !0, E(e, s, n, r, o)
       },
       b = e => {
-        f || (r(e), null == o || o({
+        _ || (r(e), null == o || o({
           ok: !1,
           hasErr: !0,
           err: e
@@ -149,7 +149,7 @@ function E(e, t, n, r, o) {
           headers: d.headers
         })) : r(d)
       }
-      null != o && o(_({
+      null != o && o(f({
         hasErr: !1
       }, d))
     }
@@ -159,7 +159,7 @@ function E(e, t, n, r, o) {
       hasErr: !0,
       err: e
     }))
-  }), (null == (f = t.signal) ? void 0 : f.aborted) ? b.abort() : null == (h = t.signal) || h.addEventListener("abort", () => b.abort(), {
+  }), (null == (_ = t.signal) ? void 0 : _.aborted) ? b.abort() : null == (h = t.signal) || h.addEventListener("abort", () => b.abort(), {
     once: !0
   })
 }
@@ -265,7 +265,7 @@ function x(e) {
   L = e
 }
 
-function M(e) {
+function k(e) {
   try {
     return u.from(JSON.stringify(e)).toString("base64")
   } catch (e) {

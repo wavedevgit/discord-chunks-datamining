@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(597688),
   u = n(624377),
   d = n(530618),
-  _ = n(372654),
-  f = n(832149),
+  f = n(372654),
+  _ = n(832149),
   p = n(987209),
   h = n(563132),
   m = n(179118),
@@ -52,15 +52,15 @@ function v(e) {
     selectedSkuId: l,
     application: u,
     paymentError: d,
-    purchaseError: _,
+    purchaseError: f,
     purchasePreviewError: p
   } = (0, h.JL)(), m = (0, s.e7)([c.Z], () => c.Z.getProduct(l)), y = i.useRef(!1);
   o()(null != l, "Expected selectedSkuId"), o()(null != u, "Expected application");
   let O = a[l];
   o()(null != O, "Expected sku");
-  let v = null != d || null != _ || null != p;
+  let v = null != d || null != f || null != p;
   return (i.useEffect(() => {
-    null == m || v || y.current || (y.current = !0, (0, f.Z)({
+    null == m || v || y.current || (y.current = !0, (0, _.Z)({
       product: m,
       analyticsLocations: n,
       onCloseCallback: t,
@@ -77,7 +77,7 @@ function I(e) {
     giftCode: n,
     selectedGiftStyle: a,
     hasSentMessage: o,
-    giftRecipient: f,
+    giftRecipient: _,
     giftMessageError: g,
     isSendingMessage: E
   } = (0, p.wD)(), b = (0, s.e7)([l.Z], () => l.Z.useReducedMotion), y = i.useRef(null), {
@@ -92,13 +92,13 @@ function I(e) {
       onClose: e.handleClose,
       selectedGiftStyle: a,
       hasSentMessage: o,
-      giftRecipient: f,
+      giftRecipient: _,
       giftMessageError: g,
       isSendingMessage: E
     }), !e.hideConfetti && !b && (0, r.jsx)(d.Z, {
       confettiTarget: y.current,
       confettiCanvas: e.confettiCanvas,
-      sprites: (0, _.vK)(null == T ? void 0 : T.categorySkuId),
+      sprites: (0, f.vK)(null == T ? void 0 : T.categorySkuId),
       colors: null == S ? void 0 : S.map(e => e.toHexString())
     })]
   }) : (0, r.jsx)(v, O({}, e))

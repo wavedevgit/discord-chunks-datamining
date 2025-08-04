@@ -20,14 +20,14 @@ var i = n(255367),
   x = n(629654),
   _ = n(53691),
   j = n(165583),
-  C = n(267717),
-  E = n(643879),
+  E = n(267717),
+  C = n(643879),
   O = n(350327),
   v = n(996073),
   S = n(25990),
   T = n(626135),
-  N = n(74538),
-  I = n(296810),
+  I = n(74538),
+  N = n(296810),
   y = n(433411),
   A = n(532432),
   P = n(504983),
@@ -47,7 +47,7 @@ function V(e) {
     user: V,
     isVisible: G,
     shouldShow: F
-  } = e, H = N.ZP.isPremium(V), {
+  } = e, H = I.ZP.isPremium(V), {
     pendingAvatar: W,
     pendingThemeColors: z,
     tryItOutThemeColors: Y,
@@ -128,7 +128,7 @@ function V(e) {
       type: P.Y.PREMIUM,
       isShown: !0,
       hasBackground: !0,
-      children: [(0, i.jsx)(I.Z, {
+      children: [(0, i.jsx)(N.Z, {
         layoutClassName: U.tryItOutLayout,
         profilePreviewTitle: (0, i.jsxs)(i.Fragment, {
           children: [(0, i.jsx)(a.SrA, {
@@ -159,7 +159,7 @@ function V(e) {
           }), (0, i.jsx)(Z.Z, {
             className: U.customizationSection,
             user: V,
-            pendingAvatarSrc: (0, E.SD)({
+            pendingAvatarSrc: (0, C.SD)({
               userId: V.id,
               image: null != K ? K : W
             }),
@@ -202,7 +202,7 @@ function V(e) {
         showUpsell: !0,
         text: M.intl.format(M.t.TmfgIy, {
           onClick: () => {
-            (0, C.y)({
+            (0, E.y)({
               analyticsSource: ei,
               onSubscribeFinish: es
             })

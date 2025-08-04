@@ -32,8 +32,8 @@ function d(e) {
   }
   return e
 }
-let _ = 10,
-  f = 20 * o.Z.Millis.SECOND,
+let f = 10,
+  _ = 20 * o.Z.Millis.SECOND,
   p = {
     getActiveErrors: () => {
       let e = a.Z.getRTCConnection();
@@ -41,12 +41,12 @@ let _ = 10,
       let t = e.getMediaEngineConnectionId();
       if (null == t || !i.Z.isVideoEnabled()) return null;
       let n = a.Z.getLastNonZeroRemoteVideoSinkWantsTime();
-      if (null != n && performance.now() - n < f || Object.entries(e.getRemoteVideoSinkWants()).every(e => {
+      if (null != n && performance.now() - n < _ || Object.entries(e.getRemoteVideoSinkWants()).every(e => {
           let [t, n] = e;
           return "any" === t || 0 === n
         })) return null;
       let o = (0, c.hj)(t, r.default.getId());
-      return null == o ? null : o.short.frameRate < _ || o.long.frameRate < _ ? [d({
+      return null == o ? null : o.short.frameRate < f || o.long.frameRate < f ? [d({
         type: s.u.CAMERA_SEND_LOW_FPS,
         userId: r.default.getId()
       }, (0, l.Y9)())] : void 0

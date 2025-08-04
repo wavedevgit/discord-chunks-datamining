@@ -3,7 +3,7 @@
 n.d(t, {
   D1: () => d,
   IK: () => u,
-  V6: () => _
+  V6: () => f
 });
 var r = n(960048),
   i = n(837268);
@@ -71,7 +71,7 @@ function d(e) {
   r.Z.captureException(e, c(t, n))
 }
 
-function _(e) {
+function f(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null,
     n = arguments.length > 2 ? arguments[2] : void 0;
   return r.Z.captureCrash(e, c(t, n))

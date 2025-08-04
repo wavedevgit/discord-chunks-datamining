@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(481060),
   u = n(26151),
   d = n(922555),
-  _ = n(287734),
-  f = n(249e3),
+  f = n(287734),
+  _ = n(249e3),
   p = n(100527),
   h = n(367907),
   m = n(906732),
@@ -35,8 +35,8 @@ var r = n(255367),
   D = n(430824),
   L = n(131951),
   x = n(594174),
-  M = n(451478),
-  k = n(626135),
+  k = n(451478),
+  M = n(626135),
   j = n(768581),
   U = n(358221),
   G = n(584511),
@@ -140,7 +140,7 @@ function eo(e) {
   } = (0, m.ZP)(), {
     cameraUnavailable: l,
     enabled: d
-  } = (0, T.Z)(), f = (0, S.Z)(n), p = i.useRef(null), g = a > 1;
+  } = (0, T.Z)(), _ = (0, S.Z)(n), p = i.useRef(null), g = a > 1;
   return (0, r.jsxs)("div", {
     className: o()(z.wrapper, z.actions),
     children: [(0, r.jsx)(N.Z, {
@@ -148,7 +148,7 @@ function eo(e) {
       label: W.intl.string(W.t.WAI6xs),
       className: z.actionButton,
       onClick: () => {
-        (0, V.v)(s, V.d.DISCONNECT), k.default.track(H.rMx.RING_CALL_DECLINED, Q({
+        (0, V.v)(s, V.d.DISCONNECT), M.default.track(H.rMx.RING_CALL_DECLINED, Q({
           location: s,
           guild_id: n.guild_id
         }, (0, h.v_)(n))), u.Z.stopRinging(n.id)
@@ -184,7 +184,7 @@ function eo(e) {
           }),
           color: "green",
           centerButton: !0,
-          hasPermission: f,
+          hasPermission: _,
           cameraUnavailable: l,
           channel: n,
           onPopoutClick: g ? i : null,
@@ -192,10 +192,10 @@ function eo(e) {
           onCameraUnavailable: A.Z,
           onChange: () => {
             var e;
-            (0, V.v)(s, V.d.JOIN_VIDEO_CALL), k.default.track(H.rMx.RING_CALL_ACCEPTED, Q({
+            (0, V.v)(s, V.d.JOIN_VIDEO_CALL), M.default.track(H.rMx.RING_CALL_ACCEPTED, Q({
               location: s,
               guild_id: n.guild_id
-            }, (0, h.v_)(n))), _.default.selectVoiceChannel(n.id, !0), (0, y.XU)(null != (e = n.guild_id) ? e : H.ME, n.id)
+            }, (0, h.v_)(n))), f.default.selectVoiceChannel(n.id, !0), (0, y.XU)(null != (e = n.guild_id) ? e : H.ME, n.id)
           }
         })
       }
@@ -203,7 +203,7 @@ function eo(e) {
       channel: n,
       color: "join",
       centerButton: !0,
-      onCallJoined: () => k.default.track(H.rMx.RING_CALL_ACCEPTED, Q({
+      onCallJoined: () => M.default.track(H.rMx.RING_CALL_ACCEPTED, Q({
         location: s,
         guild_id: n.guild_id
       }, (0, h.v_)(n))),
@@ -217,7 +217,7 @@ function es(e) {
   let {
     animatedStyle: n,
     y: a,
-    x: _,
+    x: f,
     channel: h
   } = e, {
     analyticsLocations: y
@@ -225,7 +225,7 @@ function es(e) {
     id: I.id,
     icon: I.icon,
     size: ei
-  }) : null, S = null != (t = (0, g.x)(h, ei, !0)) ? t : T, A = (0, E.ZP)(h), [N, C] = (0, l.Wu)([L.Z], () => [L.Z.supports(Y.AN.VIDEO), Object.keys(L.Z.getVideoDevices()).length]), R = null != I ? "".concat(A, ", ").concat(I.name) : A, x = (0, l.e7)([M.Z], () => M.Z.isFocused()), k = (0, l.e7)([U.Z], () => U.Z.getMode(h.id)), B = i.useCallback(e => {
+  }) : null, S = null != (t = (0, g.x)(h, ei, !0)) ? t : T, A = (0, E.ZP)(h), [N, C] = (0, l.Wu)([L.Z], () => [L.Z.supports(Y.AN.VIDEO), Object.keys(L.Z.getVideoDevices()).length]), R = null != I ? "".concat(A, ", ").concat(I.name) : A, x = (0, l.e7)([k.Z], () => k.Z.isFocused()), M = (0, l.e7)([U.Z], () => U.Z.getMode(h.id)), B = i.useCallback(e => {
     null != e.top && null != e.left && d.Z.move(e.left, e.top)
   }, []), V = (0, c.q_F)({
     value: +!!O,
@@ -239,14 +239,14 @@ function es(e) {
     };
     return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
   }, [h]);
-  let F = k === H.WtW.VIDEO && N && C > 0,
+  let F = M === H.WtW.VIDEO && N && C > 0,
     {
       enabled: Z
     } = P.Z.useExperiment({
       guildId: null == h ? void 0 : h.guild_id,
       location: "IncomingCallModal"
     }),
-    X = k === H.WtW.VOICE || Z && h.type === H.d4z.GUILD_VOICE ? W.intl.string(W.t.Js8cKy) : W.intl.string(W.t.KcnWCA),
+    X = M === H.WtW.VOICE || Z && h.type === H.d4z.GUILD_VOICE ? W.intl.string(W.t.Js8cKy) : W.intl.string(W.t.KcnWCA),
     J = (0, r.jsxs)(r.Fragment, {
       children: [null != I && null == T ? (0, r.jsx)("div", {
         className: o()(z.icon, K.wrapper, K.ringingIncoming),
@@ -285,14 +285,14 @@ function es(e) {
       })]
     }),
     es = F ? ee : et,
-    el = (0, l.e7)([M.Z], () => M.Z.windowSize());
+    el = (0, l.e7)([k.Z], () => k.Z.windowSize());
   return (0, r.jsx)(m.Gt, {
     value: y,
-    children: (0, r.jsx)(f.Z, {
+    children: (0, r.jsx)(_.Z, {
       className: z.wrapper,
       selector: ".".concat(z.root),
       initialPosition: {
-        left: _,
+        left: f,
         top: a
       },
       maxX: el.width,

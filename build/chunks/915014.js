@@ -13,8 +13,8 @@ var i = n(481060),
   c = n(708108),
   u = n(146078),
   d = n(228168),
-  _ = n(182294),
-  f = n(68646);
+  f = n(182294),
+  _ = n(68646);
 let p = 3;
 
 function h(e) {
@@ -27,7 +27,7 @@ function h(e) {
   } = (0, l.Z)(t), g = null != h && h.length > 0, E = null != m && m.length > 0, b = g && E ? "text-xs/normal" : "text-sm/normal";
   if (!g && !E) return null;
   let y = () => g ? (0, r.jsxs)(i.P3F, {
-      className: f.section,
+      className: _.section,
       onClick: () => null == n ? void 0 : n(d.oh.MUTUAL_FRIENDS),
       children: [(0, r.jsx)(a.Z, {
         maxUsers: p,
@@ -37,12 +37,12 @@ function h(e) {
           } = e;
           return t
         }),
-        size: _.EF.SIZE_16,
+        size: f.EF.SIZE_16,
         hideOverflowCount: !0,
         disableUsernameTooltip: !0,
         "aria-hidden": !0
       }), (0, r.jsx)(i.Text, {
-        className: f.text,
+        className: _.text,
         variant: b,
         color: "interactive-normal",
         children: (0, c.Z)(h.length)
@@ -50,10 +50,10 @@ function h(e) {
     }) : null,
     O = () => g && E ? (0, r.jsx)("div", {
       "aria-hidden": "true",
-      className: f.spacer
+      className: _.spacer
     }) : null,
     v = () => E ? (0, r.jsxs)(i.P3F, {
-      className: f.section,
+      className: _.section,
       onClick: () => null == n ? void 0 : n(d.oh.MUTUAL_GUILDS),
       children: [!g && (0, r.jsx)(o.Z, {
         maxGuilds: p,
@@ -67,14 +67,14 @@ function h(e) {
         hideOverflowCount: !0,
         disableGuildNameTooltip: !0
       }), (0, r.jsx)(i.Text, {
-        className: f.text,
+        className: _.text,
         variant: b,
         color: "interactive-normal",
         children: (0, u.Z)(m.length)
       })]
     }) : null;
   return (0, r.jsxs)("div", {
-    className: f.mutuals,
+    className: _.mutuals,
     children: [y(), O(), v()]
   })
 }

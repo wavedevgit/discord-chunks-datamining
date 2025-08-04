@@ -11,10 +11,10 @@ n.d(t, {
   ct: () => g,
   iF: () => c,
   nw: () => r.LX,
-  rN: () => _,
+  rN: () => f,
   s_: () => b,
   tX: () => p,
-  uf: () => f
+  uf: () => _
 });
 var r = n(524437);
 
@@ -66,8 +66,8 @@ var u = function(e) {
 let d = [r.LX.VIDEO_BACKGROUND, r.LX.STREAM, r.LX.ACTIVITY, r.LX.VOICE_FILTER, r.LX.VOICE, r.LX.IN_APP_REPORTS, r.LX.USER_DM_MUTE, r.LX.BLOCK_USER, r.LX.SEARCH_RESULTS, r.LX.AGE_VERIFICATION].reduce((e, t, n) => s(a({}, e), {
     [t]: n
   }), {}),
-  _ = ["bad", "neutral", "good"],
-  f = 864e13;
+  f = ["bad", "neutral", "good"],
+  _ = 864e13;
 var p = function(e) {
     return e.CONNECTION = "CONNECTION", e.AUDIO = "AUDIO", e.VIDEO = "VIDEO", e.STREAMING = "STREAMING", e.STREAM_WATCHING = "STREAM_WATCHING", e.PEOPLE = "PEOPLE", e
   }({}),

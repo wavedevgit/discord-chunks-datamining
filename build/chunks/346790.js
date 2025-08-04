@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  n: () => _
+  n: () => f
 });
 var r = n(255367);
 n(73800);
@@ -48,15 +48,15 @@ function d(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = {
+let f = {
   key: o.h8.ADD_PAYMENT_STEPS,
-  renderStep: e => (0, r.jsx)(f, c({}, e)),
+  renderStep: e => (0, r.jsx)(_, c({}, e)),
   options: {
     renderHeader: !0
   }
 };
 
-function f(e) {
+function _(e) {
   let {
     isGift: t
   } = (0, a.wD)();

@@ -17,7 +17,7 @@ var r = n(73800),
   u = n(73346),
   d = n(981631);
 
-function _(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -26,14 +26,14 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
@@ -81,14 +81,14 @@ async function E(e) {
     code: i,
     applyEntitlements: a = !1,
     currency: u,
-    renewal: _,
+    renewal: f,
     metadata: p
   } = e, g = {
     items: (t = (0, c.gB)(t)).map(e => {
       var {
         planId: t
       } = e;
-      return h(f({}, m(e, ["planId"])), {
+      return h(_({}, m(e, ["planId"])), {
         plan_id: t
       })
     }),
@@ -97,7 +97,7 @@ async function E(e) {
     code: i,
     apply_entitlements: a,
     currency: u,
-    renewal: _,
+    renewal: f,
     metadata: p
   };
   try {
@@ -120,7 +120,7 @@ async function b(e) {
     renewal: i,
     currency: a,
     applyEntitlements: u = !1,
-    analyticsLocations: _,
+    analyticsLocations: f,
     analyticsLocation: p,
     userDiscountOfferId: g
   } = e;
@@ -130,7 +130,7 @@ async function b(e) {
       var {
         planId: t
       } = e;
-      return h(f({}, m(e, ["planId"])), {
+      return h(_({}, m(e, ["planId"])), {
         plan_id: t
       })
     }),
@@ -145,7 +145,7 @@ async function b(e) {
       url: d.ANM.BILLING_SUBSCRIPTION_PREVIEW(t),
       query: {
         location: p,
-        location_stack: _
+        location_stack: f
       },
       body: E,
       oldFormErrors: !0,

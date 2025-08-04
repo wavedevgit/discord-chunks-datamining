@@ -43,12 +43,12 @@ function d(e, t) {
   return n
 }
 
-function _(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let f = 6e5,
+let _ = 6e5,
   p = 6e5;
 
 function h(e, t, n) {
@@ -63,20 +63,20 @@ function h(e, t, n) {
     if (!c || m) return;
     let r = Date.now() - b < p;
     if (E && r) return;
-    let i = _(u({}, e), {
+    let i = f(u({}, e), {
         includeBundles: d,
         variantsReturnStyle: h,
         skipNumCategories: v
       }),
       a = !(0, o.oc)(g, i),
-      s = Date.now() - y < f;
+      s = Date.now() - y < _;
     (a || !s) && (0, o.F$)(i, t, n)
   }, [c, m, g, y, e, E, d, b, h, t, n, v]), {
     isFetching: m,
     categories: O,
     fetchCategoriesError: E,
     refreshCategories: (0, r.useCallback)(() => {
-      let t = _(u({}, e), {
+      let t = f(u({}, e), {
         includeBundles: d,
         skipNumCategories: v
       });

@@ -3,7 +3,7 @@
 n.d(t, {
   Pr: () => ee,
   Qe: () => eu,
-  WK: () => ef,
+  WK: () => e_,
   ZP: () => eg,
   _m: () => ep,
   co: () => em,
@@ -18,8 +18,8 @@ var r = n(658722),
   c = n(212819),
   u = n(933557),
   d = n(592125),
-  _ = n(984933),
-  f = n(699516),
+  f = n(984933),
+  _ = n(699516),
   p = n(944486),
   h = n(246946),
   m = n(594174),
@@ -87,26 +87,26 @@ function x() {
   return new Set(o().range(2015, e + 1).map(e => e.toString()))
 }
 
-function M(e, t) {
+function k(e, t) {
   return [e, e.clone().add(1, t)]
 }
 
-function k(e) {
+function M(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
-  return M(l()().startOf(e).add(t, e), e)
+  return k(l()().startOf(e).add(t, e), e)
 }
 
 function j(e, t, n) {
-  return M(l()(e, t).local(), n)
+  return k(l()(e, t).local(), n)
 }
 
 function U() {
   return {
-    [N.intl.string(N.t.HYiVER)]: () => k("day"),
-    [N.intl.string(N.t.cu86KC)]: () => k("day", -1),
-    [N.intl.string(N.t["FvBj//"])]: () => k("week"),
-    [N.intl.string(N.t["20uWCw"])]: () => k("month"),
-    [N.intl.string(N.t["dXC/ho"])]: () => k("year")
+    [N.intl.string(N.t.HYiVER)]: () => M("day"),
+    [N.intl.string(N.t.cu86KC)]: () => M("day", -1),
+    [N.intl.string(N.t["FvBj//"])]: () => M("week"),
+    [N.intl.string(N.t["20uWCw"])]: () => M("month"),
+    [N.intl.string(N.t["dXC/ho"])]: () => M("year")
   }
 }
 let G = "([0-9]{4})-([0-9]{1,2})-([0-9]{1,2})",
@@ -137,8 +137,8 @@ function z(e, t) {
 }
 
 function q(e, t, n) {
-  let r = _.ZP.getChannels(n)[_.sH].concat(_.ZP.getChannels(n)[_.Zb]),
-    i = _.ZP.getTextChannelNameDisambiguations(n),
+  let r = f.ZP.getChannels(n)[f.sH].concat(f.ZP.getChannels(n)[f.Zb]),
+    i = f.ZP.getTextChannelNameDisambiguations(n),
     a = v.Z.getCurrentConfig({
       location: "guildChannelValidator"
     }).enabled,
@@ -156,7 +156,7 @@ function q(e, t, n) {
 
 function X(e, t) {
   let n = Object.values(d.Z.getMutablePrivateChannels()).filter(e => {
-    if (t === (0, u.F6)(e, m.default, f.Z)) return !0;
+    if (t === (0, u.F6)(e, m.default, _.Z)) return !0;
     if (e.isDM()) {
       let n = e.getRecipientId(),
         r = m.default.getUser(n);
@@ -286,11 +286,11 @@ function ei(e) {
   let l = m.default.getCurrentUser(),
     u = n.toLowerCase().replace(/^@/, ""),
     d = null != l && n.length > 0 && (N.intl.string(N.t.Qf3ptr).startsWith(u) || A.ME.substr(1).startsWith(u)),
-    _ = t.filter(e => {
+    f = t.filter(e => {
       let {
         record: t
       } = e;
-      return !f.Z.isBlockedOrIgnored(t.id) && (!d || t.id !== (null == l ? void 0 : l.id))
+      return !_.Z.isBlockedOrIgnored(t.id) && (!d || t.id !== (null == l ? void 0 : l.id))
     }).map(e => {
       let {
         record: t
@@ -300,10 +300,10 @@ function ei(e) {
         user: t
       }
     });
-  return d && _.unshift({
+  return d && f.unshift({
     text: A.ME,
     user: l
-  }), _
+  }), f
 }
 
 function ea() {
@@ -347,7 +347,7 @@ function eo(e, t, n) {
         let e = a[n];
         a.splice(n, 1), a.unshift(e)
       } else if (t.isGroupDM()) {
-        let e = (0, u.F6)(t, m.default, f.Z);
+        let e = (0, u.F6)(t, m.default, _.Z);
         a.unshift({
           text: e,
           channel: t,
@@ -376,14 +376,14 @@ function es(e, t, n) {
     }).enabled,
     i = g.ZP.queryChannels({
       query: e,
-      type: _.sH,
+      type: f.sH,
       guildId: t,
       limit: 1 / 0,
       allowEmptyQueries: !0,
       includeAllThreads: r
     }).concat(g.ZP.queryChannels({
       query: e,
-      type: _.Zb,
+      type: f.Zb,
       guildId: t,
       limit: 1 / 0,
       allowEmptyQueries: !0
@@ -398,7 +398,7 @@ function es(e, t, n) {
       n = i.find(t => t.id === e);
     null != n && (i.splice(i.indexOf(n), 1), i.unshift(n))
   }
-  let a = _.ZP.getTextChannelNameDisambiguations(t);
+  let a = f.ZP.getTextChannelNameDisambiguations(t);
   return o()(i).take(n).map(e => {
     var t, n;
     return {
@@ -615,10 +615,10 @@ function ed() {
     }
   }
 }
-let e_ = {};
+let ef = {};
 
-function ef() {
-  Object.assign(e_, ed())
+function e_() {
+  Object.assign(ef, ed())
 }
 
 function ep(e) {
@@ -626,11 +626,11 @@ function ep(e) {
 }
 
 function eh(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : Object.keys(e_).length,
+  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : Object.keys(ef).length,
     n = [];
-  for (let r of Object.keys(e_)) {
+  for (let r of Object.keys(ef)) {
     if (n.length >= t) break;
-    let a = e_[r].key;
+    let a = ef[r].key;
     ep(r) && null != a && i()(e.toLowerCase(), a) && n.push({
       token: r,
       text: a
@@ -644,4 +644,4 @@ function em(e) {
   let t = e.toLowerCase().replace(/^@/, "");
   return N.intl.string(N.t.Qf3ptr).startsWith(t) || A.ME.substring(1).startsWith(t)
 }
-let eg = e_
+let eg = ef

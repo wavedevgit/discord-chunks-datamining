@@ -20,14 +20,14 @@ var i = n(255367),
   x = n(607018),
   _ = n(778764),
   j = n(314897),
-  C = n(325067),
-  E = n(594174),
+  E = n(325067),
+  C = n(594174),
   O = n(572004),
   v = n(287880),
   S = n(714565),
   T = n(202858),
-  N = n(726985),
-  I = n(981631),
+  I = n(726985),
+  N = n(981631),
   y = n(815660),
   A = n(388032),
   P = n(951839),
@@ -113,7 +113,7 @@ class L extends r.PureComponent {
         hasTOTPEnabled: a
       } = this.props,
       l = null != r.phone,
-      o = r.hasFlag(I.xW$.MFA_SMS);
+      o = r.hasFlag(N.xW$.MFA_SMS);
     if (a) {
       if (l || o) {
         let e = n ? r.phone : this.maskPhoneNumber(r.phone);
@@ -160,7 +160,7 @@ class L extends r.PureComponent {
         })
       }
       return (0, i.jsx)(b.F, {
-        setting: N.s6.ACCOUNT_SMS_BACKUP,
+        setting: I.s6.ACCOUNT_SMS_BACKUP,
         children: (0, i.jsxs)(c.hjN, {
           className: R.marginTop40,
           title: A.intl.string(A.t.uHAJ5u),
@@ -177,7 +177,7 @@ class L extends r.PureComponent {
         backupCodes: t
       } = this.props,
       n = (0, i.jsx)(b.F, {
-        setting: N.s6.ACCOUNT_VIEW_BACKUP_CODES,
+        setting: I.s6.ACCOUNT_VIEW_BACKUP_CODES,
         children: (0, i.jsx)(c.zxk, {
           variant: "primary",
           size: "sm",
@@ -240,7 +240,7 @@ class L extends r.PureComponent {
         size: "sm",
         className: R.marginBottom20,
         children: [n, (0, i.jsx)(b.F, {
-          setting: N.s6.ACCOUNT_REMOVE_2FA,
+          setting: I.s6.ACCOUNT_REMOVE_2FA,
           children: (0, i.jsx)(c.zxk, {
             variant: "critical-secondary",
             size: "sm",
@@ -248,7 +248,7 @@ class L extends r.PureComponent {
             onClick: this.handleDisableMFA
           })
         }), (0, i.jsx)(b.F, {
-          setting: N.s6.ACCOUNT_ENABLE_2FA,
+          setting: I.s6.ACCOUNT_ENABLE_2FA,
           children: (0, i.jsx)(c.zxk, {
             variant: "primary",
             size: "sm",
@@ -257,7 +257,7 @@ class L extends r.PureComponent {
           })
         })]
       }), e, this.renderMFASMS(), (0, i.jsx)(b.F, {
-        setting: N.s6.ACCOUNT_SECURITY_KEYS,
+        setting: I.s6.ACCOUNT_SECURITY_KEYS,
         children: (0, i.jsx)(_.Z, {})
       })]
     })
@@ -321,7 +321,7 @@ class L extends r.PureComponent {
         onConfirm: () => d.Z.disable()
       })
     }), D(this, "generateBackupCodes", async () => {
-      let e = C.Z.getVerificationKey();
+      let e = E.Z.getVerificationKey();
       await d.Z.confirmViewBackupCodes(e, !0)
     }), D(this, "sendMFABackupCodesVerificationKeyEmail", () => {
       (0, c.h7j)(e => (0, i.jsx)(g.Z, w(Z({}, e), {
@@ -376,10 +376,10 @@ class L extends r.PureComponent {
 }
 
 function B(e) {
-  let t = (0, l.e7)([E.default], () => E.default.getCurrentUser());
+  let t = (0, l.e7)([C.default], () => C.default.getCurrentUser());
   a()(null != t, "TwoFactorAuth: currentUser cannot be undefined");
-  let n = (0, l.cj)([C.Z, j.default], () => ({
-    togglingSMS: C.Z.togglingSMS,
+  let n = (0, l.cj)([E.Z, j.default], () => ({
+    togglingSMS: E.Z.togglingSMS,
     hasTOTPEnabled: j.default.hasTOTPEnabled()
   }));
   return (0, i.jsx)(L, Z({

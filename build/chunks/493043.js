@@ -56,10 +56,10 @@ function d(e) {
     user: s,
     currentUser: u
   } = e, d = c(e, ["location", "profileGuildId", "user", "currentUser"]);
-  let _ = (0, i.T)({
+  let f = (0, i.T)({
     location: t
   });
-  return s.id !== u.id && _ ? (0, r.jsx)(o.Z, l({
+  return s.id !== u.id && f ? (0, r.jsx)(o.Z, l({
     currentUser: u,
     user: s,
     profileGuildId: n

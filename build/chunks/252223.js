@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(442837),
   u = n(481060),
   d = n(833664),
-  _ = n(545957),
-  f = n(933557),
+  f = n(545957),
+  _ = n(933557),
   p = n(359588),
   h = n(74340),
   m = n(482798),
@@ -66,13 +66,13 @@ function x(e, t) {
   return n
 }
 
-function M(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function k(e) {
+function M(e) {
   let t = (null == e ? void 0 : e.name) === "" ? null : null == e ? void 0 : e.name;
   return null != t ? P.intl.formatToPlainString(P.t["0wJXSk"], {
     name: t
@@ -96,8 +96,8 @@ function U(e) {
     enableTopNavButton: o
   } = (0, m.Cq)({
     location: "StackedActivityStatus"
-  }), s = (0, f.ZP)(r), l = a || o;
-  return null != t && i.push(k(t)), n.forEach(e => {
+  }), s = (0, _.ZP)(r), l = a || o;
+  return null != t && i.push(M(t)), n.forEach(e => {
     let {
       tooltip: t
     } = (0, v.Z)(e, l);
@@ -138,7 +138,7 @@ function V(e) {
     activities: n,
     applicationStream: a,
     voiceChannel: l,
-    textClassName: f,
+    textClassName: _,
     iconClassName: m,
     textSize: O = "xs",
     animateEmoji: v = !0,
@@ -146,9 +146,9 @@ function V(e) {
     hideEmoji: D = !1,
     hideTooltip: x = !1
   } = e;
-  (0, _.Z)(null == t ? void 0 : t.id);
-  let k = (null == a ? void 0 : a.discoverable) !== !1 ? a : null,
-    j = (0, g.Cf)(k),
+  (0, f.Z)(null == t ? void 0 : t.id);
+  let M = (null == a ? void 0 : a.discoverable) !== !1 ? a : null,
+    j = (0, g.Cf)(M),
     V = i.useMemo(() => {
       var e, t;
       let r = null == n ? void 0 : n.find(e => {
@@ -180,7 +180,7 @@ function V(e) {
       location: "ActivityStatus"
     }) && null != V ? (0, h.Z)(V) : null,
     q = (null == V ? void 0 : V.state) != null || null != z,
-    X = null != k,
+    X = null != M,
     Q = !X && null != l,
     J = H.length + (X || Q ? 1 : 0),
     $ = J > 1,
@@ -194,11 +194,11 @@ function V(e) {
   let en = function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
         t = !0 === e || x;
-      if (null != k) return (0, r.jsx)(T.Z, {
-        stream: k,
+      if (null != M) return (0, r.jsx)(T.Z, {
+        stream: M,
         game: Y,
         textVariant: "text-".concat(O, "/medium"),
-        textClassName: f,
+        textClassName: _,
         iconClassName: m,
         hideText: ee,
         hideIcon: W,
@@ -208,7 +208,7 @@ function V(e) {
       return null != n ? (0, r.jsx)(A.Z, {
         activity: n,
         textVariant: "text-".concat(O, "/medium"),
-        textClassName: f,
+        textClassName: _,
         iconClassName: m,
         hideText: ee,
         hideIcon: W,
@@ -216,7 +216,7 @@ function V(e) {
       }) : null != l ? (0, r.jsx)(N.Z, {
         channel: l,
         textVariant: "text-".concat(O, "/medium"),
-        textClassName: f,
+        textClassName: _,
         iconClassName: m,
         hideText: ee,
         hideTooltip: t
@@ -231,8 +231,8 @@ function V(e) {
           hideText: !1,
           canTruncate: !1
         };
-      return null != k && e.push((0, r.jsx)(T.Z, M(L({
-        stream: k,
+      return null != M && e.push((0, r.jsx)(T.Z, k(L({
+        stream: M,
         game: null == n ? void 0 : n.find(d.Z)
       }, t), {
         showChannelName: !0
@@ -240,7 +240,7 @@ function V(e) {
         e.push((0, r.jsx)(A.Z, L({
           activity: n
         }, t), "activity-".concat(i)))
-      }), Q && e.push((0, r.jsx)(N.Z, M(L({
+      }), Q && e.push((0, r.jsx)(N.Z, k(L({
         channel: l
       }, t), {
         showChannelName: !0
@@ -248,7 +248,7 @@ function V(e) {
     },
     ei = () => (0, r.jsx)(G, {
       textVariant: "text-".concat(O, "/medium"),
-      className: f,
+      className: _,
       hasCustomStatusText: q,
       totalActivityCount: J
     }),
@@ -260,7 +260,7 @@ function V(e) {
       delay: C.X,
       text: er(),
       "aria-label": et,
-      children: e => (0, r.jsxs)("div", M(L({
+      children: e => (0, r.jsxs)("div", k(L({
         className: o()(w.activityContainer, ee && w.iconOnly)
       }, e), {
         children: [en(!0), ei()]
@@ -276,7 +276,7 @@ function V(e) {
       animateEmoji: v,
       hideEmoji: D,
       hideTooltip: x,
-      textClassName: f,
+      textClassName: _,
       iconClassName: m,
       tooltipClassName: eo,
       voiceChannel: l,
@@ -286,7 +286,7 @@ function V(e) {
     className: eo,
     children: [ea(), null != V && J > 0 && (0, r.jsx)(B, {
       textVariant: "text-".concat(O, "/normal"),
-      className: f
+      className: _
     }), es(), P && (0, r.jsx)(I.Z, {})]
   })
 }

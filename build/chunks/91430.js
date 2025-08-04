@@ -23,14 +23,14 @@ var i = n(255367),
   x = n(17894),
   _ = n(975298),
   j = n(600164),
-  C = n(925329),
-  E = n(963249),
+  E = n(925329),
+  C = n(963249),
   O = n(301766),
   v = n(594174),
   S = n(626135),
   T = n(63063),
-  N = n(74538),
-  I = n(212895),
+  I = n(74538),
+  N = n(212895),
   y = n(374649),
   A = n(160913),
   P = n(987997),
@@ -54,10 +54,10 @@ function M(e) {
       let e = v.default.getCurrentUser();
       return o()(null != e, "GuildBoostingHeader: currentUser cannot be undefined"), e
     });
-  if (0 === (0, N.uV)(n.additionalPlans)) return null;
+  if (0 === (0, I.uV)(n.additionalPlans)) return null;
   let {
     status: m
-  } = n, f = (0, N.v6)(n);
+  } = n, f = (0, I.v6)(n);
   if (f) t = B.guildBoostingSubscriptionRowCanceled;
   else switch (m) {
     case w.O0b.PAST_DUE:
@@ -86,7 +86,7 @@ function M(e) {
             [B.canceled]: f
           })
         }), (0, i.jsx)("div", {
-          children: (0, N.bt)({
+          children: (0, I.bt)({
             subscription: n,
             renewalInvoicePreview: r,
             user: d,
@@ -176,7 +176,7 @@ function G(e) {
       children: L.intl.format(L.t["0nbf/P"], {
         daysPastDue: t,
         paymentModalRedirect: () => {
-          (0, E.Z)({
+          (0, C.Z)({
             initialPlanId: n.planIdFromItems,
             openInvoiceId: s,
             analyticsLocations: a
@@ -202,7 +202,7 @@ function F(e) {
       className: B.detailBlockHeader,
       children: L.intl.string(L.t.KXQjfX)
     }), (0, i.jsx)("div", {
-      children: N.ZP.getBillingInformationString(t, n, r, !1, l)
+      children: I.ZP.getBillingInformationString(t, n, r, !1, l)
     })]
   })
 }
@@ -221,9 +221,9 @@ function H() {
       type: g.Zbd.Types.CUSTOM,
       children: (0, i.jsxs)(j.Z, {
         align: j.Z.Align.CENTER,
-        children: [(0, i.jsx)(C.Z, {
+        children: [(0, i.jsx)(E.Z, {
           game: null,
-          size: C.Z.Sizes.SMALL,
+          size: E.Z.Sizes.SMALL,
           className: B.noItemsIcon
         }), (0, i.jsx)("span", {
           className: B.cardText,
@@ -262,10 +262,10 @@ function W(e) {
       analyticsLocations: p,
       analyticsLocation: n
     },
-    [C] = (0, y.ED)(j);
-  C = null != u ? u : C;
-  let E = (0, _.Z)();
-  return null == x || null == C ? (0, i.jsx)(g.$jN, {}) : (0, i.jsxs)(i.Fragment, {
+    [E] = (0, y.ED)(j);
+  E = null != u ? u : E;
+  let C = (0, _.Z)();
+  return null == x || null == E ? (0, i.jsx)(g.$jN, {}) : (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)("div", {
       className: B.subscriptionRows,
       children: [(0, i.jsx)(R.Z, {
@@ -279,7 +279,7 @@ function W(e) {
         renewalInvoicePreview: x,
         fromStandaloneBillingPage: l,
         className: B.guildSubscriptionRow,
-        fractionalPremiumInfo: E
+        fractionalPremiumInfo: C
       })]
     }), (0, i.jsx)("div", {
       children: (0, i.jsx)(g.y5t, {
@@ -291,9 +291,9 @@ function W(e) {
           className: B.details,
           children: [(0, i.jsx)(F, {
             subscription: t,
-            renewalInvoicePreview: C,
+            renewalInvoicePreview: E,
             className: B.detailsBlock,
-            fractionalPremiumInfo: E,
+            fractionalPremiumInfo: C,
             openInvoice: m
           }), (0, i.jsxs)("div", {
             className: a()(B.detailsBlock, {
@@ -307,7 +307,7 @@ function W(e) {
               }) : L.intl.string(L.t.iRzXKS)
             }), (0, i.jsx)(D.Z, {
               subscription: t,
-              onPaymentSourceAdded: I.i1,
+              onPaymentSourceAdded: N.i1,
               highlightAddPaymentMethodButton: c || o,
               analyticsLocation: n,
               currentInvoicePreview: x,
@@ -370,7 +370,7 @@ function K(e) {
   }), _ = null == a ? void 0 : a.invalid, j = (0, u.e7)([v.default], () => {
     var e;
     return null == (e = v.default.getCurrentUser()) ? void 0 : e.hasFreePremium()
-  }), C = d()(r.currentPeriodEnd), E = null != r.paymentSourceId, S = null != (t = null == x ? void 0 : x.total) ? t : 0, T = !E && S > 0 && (7 >= C.diff(d()(), "days") || r.status === w.O0b.PAST_DUE) && !j && !r.isPurchasedExternally, N = _ && r.status === w.O0b.PAST_DUE && !j && !r.isPurchasedExternally, I = (0, A.U)(), P = !j && I, R = (null == r ? void 0 : r.status) === w.O0b.PAST_DUE, D = R ? d()().diff(d()(r.currentPeriodStart), "days") : 0, [k] = (0, y.Ox)({
+  }), E = d()(r.currentPeriodEnd), C = null != r.paymentSourceId, S = null != (t = null == x ? void 0 : x.total) ? t : 0, T = !C && S > 0 && (7 >= E.diff(d()(), "days") || r.status === w.O0b.PAST_DUE) && !j && !r.isPurchasedExternally, I = _ && r.status === w.O0b.PAST_DUE && !j && !r.isPurchasedExternally, N = (0, A.U)(), P = !j && N, R = (null == r ? void 0 : r.status) === w.O0b.PAST_DUE, D = R ? d()().diff(d()(r.currentPeriodStart), "days") : 0, [k] = (0, y.Ox)({
     subscriptionId: r.id,
     preventFetch: !(P || R)
   });
@@ -386,7 +386,7 @@ function K(e) {
         tag: "h1",
         children: L.intl.string(L.t["/gs+Pz"])
       }),
-      children: [T ? (0, i.jsx)(U, {}) : null, N ? (0, i.jsx)(V, {}) : null, P && null != k ? (0, i.jsx)(G, {
+      children: [T ? (0, i.jsx)(U, {}) : null, I ? (0, i.jsx)(V, {}) : null, P && null != k ? (0, i.jsx)(G, {
         daysPastDue: D,
         subscription: r,
         openInvoiceId: k.id
@@ -405,7 +405,7 @@ function K(e) {
             busy: l,
             fromStandaloneBillingPage: o,
             showNoPaymentMethod: T,
-            showInvalidPaymentMethod: N,
+            showInvalidPaymentMethod: I,
             fetchedCurrentInvoicePreview: h,
             fetchedRenewalInvoicePreview: x,
             fetchedOpenInvoice: k
@@ -423,7 +423,7 @@ function K(e) {
             busy: l,
             fromStandaloneBillingPage: o,
             showNoPaymentMethod: T,
-            showInvalidPaymentMethod: N,
+            showInvalidPaymentMethod: I,
             fetchedCurrentInvoicePreview: null,
             fetchedRenewalInvoicePreview: null,
             fetchedOpenInvoice: null

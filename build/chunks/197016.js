@@ -34,7 +34,7 @@ function d(e) {
   return e
 }
 
-function _(e, t) {
+function f(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -45,8 +45,8 @@ function _(e, t) {
   return n
 }
 
-function f(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -74,7 +74,7 @@ function m(e) {
     centerButton: t = !1,
     onClick: n,
     onMouseEnter: u,
-    onMouseLeave: _
+    onMouseLeave: f
   } = e, h = p(e, ["centerButton", "onClick", "onMouseEnter", "onMouseLeave"]);
   let m = t ? l.d : l.Z,
     {
@@ -90,7 +90,7 @@ function m(e) {
       Component: y,
       events: O
     } = (0, i.K)();
-  return (0, r.jsx)(m, f(d({}, h), {
+  return (0, r.jsx)(m, _(d({}, h), {
     isTrayButton: !1,
     onClick: E,
     iconComponent: g ? a.PBZ : y,
@@ -98,7 +98,7 @@ function m(e) {
       null == u || u(e), O.onMouseEnter()
     },
     onMouseLeave: e => {
-      null == _ || _(e), O.onMouseLeave()
+      null == f || f(e), O.onMouseLeave()
     },
     label: b()
   }))

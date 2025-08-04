@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(607070),
   u = n(621593),
   d = n(177751),
-  _ = n(62170),
-  f = n(640108),
+  f = n(62170),
+  _ = n(640108),
   p = n(793148),
   h = n(585483),
   m = n(70956),
@@ -36,7 +36,7 @@ function S(e) {
     played: t,
     duration: n,
     currentTime: i
-  } = e, a = null == n ? "--:--" : t ? (0, f.yv)(Math.ceil(n - i)) : (0, f.yv)(Math.ceil(n));
+  } = e, a = null == n ? "--:--" : t ? (0, _.yv)(Math.ceil(n - i)) : (0, _.yv)(Math.ceil(n));
   return (0, r.jsx)(l.Text, {
     variant: "text-sm/normal",
     className: v.duration,
@@ -79,7 +79,7 @@ let C = i.memo(function(e) {
   let t, {
       src: n,
       volume: a = 1,
-      onVolumeChange: f,
+      onVolumeChange: _,
       onMute: h,
       waveform: b,
       durationSecs: y,
@@ -91,10 +91,10 @@ let C = i.memo(function(e) {
       playbackCacheKey: L
     } = e,
     x = i.useRef(null),
-    M = i.useMemo(() => null != L ? d.ZP.getPlaybackPosition(L) : 0, [L]),
-    k = (0, s.e7)([d.ZP], () => d.ZP.getPlaybackRate(d.Ir.VOICE_MESSAGE)),
-    [j, U] = i.useState(M > 0),
-    [G, B] = i.useState(M),
+    k = i.useMemo(() => null != L ? d.ZP.getPlaybackPosition(L) : 0, [L]),
+    M = (0, s.e7)([d.ZP], () => d.ZP.getPlaybackRate(d.Ir.VOICE_MESSAGE)),
+    [j, U] = i.useState(k > 0),
+    [G, B] = i.useState(k),
     [V, F] = i.useState(y),
     [Z, H] = i.useState(!1),
     [Y, W] = i.useState(!1),
@@ -136,15 +136,15 @@ let C = i.memo(function(e) {
     }, [D]),
     eu = i.useCallback(e => {
       let t = (0, g.A)(e, 1);
-      H(0 === t), ee(t), null == f || f(t)
-    }, [f]),
+      H(0 === t), ee(t), null == _ || _(t)
+    }, [_]),
     ed = i.useCallback(() => {
       H(!Z), null == h || h(!Z)
     }, [Z, h]),
-    e_ = i.useCallback(() => {
+    ef = i.useCallback(() => {
       z(!0)
     }, []),
-    ef = i.useCallback(() => {
+    e_ = i.useCallback(() => {
       z(!1), G === V && eo(), ea(G)
     }, [G, V, eo, ea]),
     ep = i.useCallback(e => {
@@ -165,8 +165,8 @@ let C = i.memo(function(e) {
   i.useEffect(() => {
     eg.current = em
   }), i.useEffect(() => {
-    M > 0 && el(M)
-  }, [M, el]), i.useEffect(() => {
+    k > 0 && el(k)
+  }, [k, el]), i.useEffect(() => {
     let e;
     return Y && !K && (e = setInterval(() => {
       var e, t;
@@ -195,9 +195,9 @@ let C = i.memo(function(e) {
   let eE = Y ? l.fpf : l.o1U,
     eb = Y ? O.intl.string(O.t.ZcgDJS) : O.intl.string(O.t.RscU7O),
     ey = O.intl.formatToPlainString(O.t.LgCPMj, {
-      playbackRate: k
+      playbackRate: M
     }),
-    eO = "".concat(k.toString().replace(/^0/, ""), "X");
+    eO = "".concat(M.toString().replace(/^0/, ""), "X");
   t = "Safari" === platform.name ? (0, r.jsx)(i.Suspense, {
     children: (0, r.jsx)(I, {
       ref: x,
@@ -210,9 +210,9 @@ let C = i.memo(function(e) {
       onError: ec,
       muted: Z,
       volume: $,
-      playbackRate: k
+      playbackRate: M
     })
-  }) : (0, r.jsx)(_.Z, {
+  }) : (0, r.jsx)(f.Z, {
     ref: x,
     className: v.audioElement,
     controls: !1,
@@ -222,7 +222,7 @@ let C = i.memo(function(e) {
     onError: ec,
     muted: Z,
     volume: $,
-    playbackRate: k,
+    playbackRate: M,
     playing: Y && !K,
     children: (0, r.jsx)("source", {
       src: n
@@ -258,15 +258,15 @@ let C = i.memo(function(e) {
       playing: Y,
       played: j,
       onDrag: ep,
-      onDragStart: e_,
-      onDragEnd: ef
+      onDragStart: ef,
+      onDragEnd: e_
     }), (0, r.jsx)(S, {
       played: j,
       currentTime: G,
       duration: V
     }), (0, r.jsx)(l.P3F, {
       className: v.playbackRateContainer,
-      onClick: () => T(k),
+      onClick: () => T(M),
       "aria-label": ey,
       children: (0, r.jsx)(l.Text, {
         variant: "text-xs/semibold",

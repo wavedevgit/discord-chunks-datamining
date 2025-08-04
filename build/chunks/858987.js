@@ -14,8 +14,8 @@ var i = n(512722),
   c = n(563132),
   u = n(630388),
   d = n(74538),
-  _ = n(296848),
-  f = n(244923),
+  f = n(296848),
+  _ = n(244923),
   p = n(981631),
   h = n(231338),
   m = n(388032);
@@ -70,14 +70,14 @@ function O(e) {
     isPrepaidPaymentSource: l,
     inReverseTrial: c,
     paymentSourceId: u,
-    hasPaymentSources: f
+    hasPaymentSources: _
   } = e;
-  if (null === u && f) return m.intl.string(m.t.CpOiEB);
+  if (null === u && _) return m.intl.string(m.t.CpOiEB);
   if (t === h.GZ.ONE_TIME) return o ? m.intl.string(m.t.ouo4FB) : m.intl.string(m.t.ExD0Nj);
   if (a()(null != n, "Subscription plan must be selected to render SubscriptionReviewButton"), i === p.POd.BOOST) return m.intl.string(m.t.eUEeCg);
   if (o) return m.intl.string(m.t.ouo4FB);
   if (c) return m.intl.string(m.t.LQVQIi);
-  if ((0, d.PV)(n.id)) return l ? m.intl.string(m.t.cRCCJy) : null != r ? r.isPausedAllowsResumeButNotUpdates ? m.intl.string(m.t.zpi5pq) : (0, _.R4)(r, n.id, s) ? m.intl.string(m.t.IJI7ys) : m.intl.string(m.t.VPuTc3) : (0, d.W_)(null, n);
+  if ((0, d.PV)(n.id)) return l ? m.intl.string(m.t.cRCCJy) : null != r ? r.isPausedAllowsResumeButNotUpdates ? m.intl.string(m.t.zpi5pq) : (0, f.R4)(r, n.id, s) ? m.intl.string(m.t.IJI7ys) : m.intl.string(m.t.VPuTc3) : (0, d.W_)(null, n);
   return m.intl.string(m.t.YScQSE)
 }
 
@@ -94,7 +94,7 @@ function I(e) {
     invoiceError: i,
     planError: a,
     disablePurchase: d,
-    flashLegalTerms: _,
+    flashLegalTerms: f,
     isSubmitting: h,
     premiumSubscription: g,
     isGift: b,
@@ -111,8 +111,8 @@ function I(e) {
     selectedPlan: D,
     hasAcceptedTerms: L,
     purchaseType: x,
-    paymentSourceId: M,
-    activeSubscription: k,
+    paymentSourceId: k,
+    activeSubscription: M,
     devShelfFetchState: j,
     hasPaymentSources: U
   } = (0, c.JL)(), G = O({
@@ -123,7 +123,7 @@ function I(e) {
     planGroup: I,
     isPrepaidPaymentSource: T,
     inReverseTrial: C,
-    paymentSourceId: M,
+    paymentSourceId: k,
     hasPaymentSources: U
   }), {
     analyticsLocations: B
@@ -170,7 +170,7 @@ function I(e) {
     variant: "expressive",
     "data-testid": L ? "purchase" : "submitButton",
     text: G,
-    onClick: L ? A : () => v(n, _),
+    onClick: L ? A : () => v(n, f),
     loading: h,
     iconPosition: "start",
     icon: () => (0, r.jsx)(o.SrA, {
@@ -184,15 +184,15 @@ function I(e) {
       text: G
     }, e), {
       type: "submit",
-      onClick: () => v(n, _),
+      onClick: () => v(n, f),
       "data-testid": "submitButton"
     }))
   });
-  else if (C && null != k && null != M) return (0, r.jsx)(f.Z, {
-    activeSubscription: k,
+  else if (C && null != M && null != k) return (0, r.jsx)(_.Z, {
+    activeSubscription: M,
     onNext: R,
     isSubmitting: h,
-    paymentSourceId: M,
+    paymentSourceId: k,
     buttonLabel: G,
     analyticsLocations: B
   });

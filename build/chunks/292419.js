@@ -15,7 +15,7 @@ var r = n(866442),
   c = n(280501),
   u = n(790642),
   d = n(388032);
-let _ = (e, t) => ({
+let f = (e, t) => ({
     id: e.id,
     name: e.name,
     animated: e.animated,
@@ -25,12 +25,12 @@ let _ = (e, t) => ({
       size: 48
     }) : void 0
   }),
-  f = e => (null == e ? void 0 : e.errorCode) === 429 ? d.intl.string(d.t.fitPBQ) : d.intl.string(d.t.VCsUJi),
+  _ = e => (null == e ? void 0 : e.errorCode) === 429 ? d.intl.string(d.t.fitPBQ) : d.intl.string(d.t.VCsUJi),
   p = (e, t, n) => {
     let r = (null == e ? void 0 : e.data.interactionType) === i.B8.MESSAGE_COMPONENT && (null == e ? void 0 : e.state) === a.F.FAILED ? e.data.componentId : null;
     if (null != (null != r ? E(n, r) : null)) {
       var o;
-      return null != (o = null == t ? void 0 : t.interactionError) ? o : f(e)
+      return null != (o = null == t ? void 0 : t.interactionError) ? o : _(e)
     }
   },
   h = e => {
@@ -99,7 +99,7 @@ function y(e) {
 }
 
 function O(e, t, n) {
-  var a, s, u, f, p, m, g, E;
+  var a, s, u, _, p, m, g, E;
   if (!h(e.type)) return null;
 
   function b(e, r) {
@@ -119,7 +119,7 @@ function O(e, t, n) {
       }
     }
     case i.re.BUTTON: {
-      let t = null != e.emoji ? _(e.emoji, y) : void 0;
+      let t = null != e.emoji ? f(e.emoji, y) : void 0;
       return {
         type: i.re.BUTTON,
         id: v(n),
@@ -140,7 +140,7 @@ function O(e, t, n) {
           value: e.value,
           default: e.default,
           description: e.description,
-          emoji: null != e.emoji ? _(e.emoji, y) : void 0
+          emoji: null != e.emoji ? f(e.emoji, y) : void 0
         })), placeholder: null != (a = e.placeholder) ? a : d.intl.string(d.t.Otr6W1), minValues: e.min_values, maxValues: e.max_values
       };
     case i.re.TEXT_INPUT:
@@ -153,7 +153,7 @@ function O(e, t, n) {
       };
     case i.re.ROLE_SELECT:
       return {
-        type: i.re.ROLE_SELECT, id: v(n), customId: e.custom_id, disabled: e.disabled, placeholder: null != (f = e.placeholder) ? f : d.intl.string(d.t.Otr6W1), minValues: e.min_values, maxValues: e.max_values, defaultValues: e.default_values
+        type: i.re.ROLE_SELECT, id: v(n), customId: e.custom_id, disabled: e.disabled, placeholder: null != (_ = e.placeholder) ? _ : d.intl.string(d.t.Otr6W1), minValues: e.min_values, maxValues: e.max_values, defaultValues: e.default_values
       };
     case i.re.MENTIONABLE_SELECT:
       return {

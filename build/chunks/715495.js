@@ -1,6 +1,6 @@
 /** Chunk was on 22243 **/
 n.d(t, {
-  Z: () => C
+  Z: () => E
 }), n(388685), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749);
 var i = n(255367),
   r = n(73800),
@@ -51,9 +51,9 @@ function j(e, t) {
   }), e
 }
 
-function C() {
+function E() {
   var e;
-  let [t, n] = (0, r.useState)(!1), [s, l] = (0, r.useState)(!1), [d, g] = (0, r.useState)(null), [f, C] = (0, r.useState)(320), I = (0, r.useRef)(null), y = (0, r.useRef)(null), A = (0, r.useRef)(null), P = (0, u.ZP)(e => e.toolsCache), {
+  let [t, n] = (0, r.useState)(!1), [s, l] = (0, r.useState)(!1), [d, g] = (0, r.useState)(null), [f, E] = (0, r.useState)(320), N = (0, r.useRef)(null), y = (0, r.useRef)(null), A = (0, r.useRef)(null), P = (0, u.ZP)(e => e.toolsCache), {
     setToolsCache: R,
     removeToolsCache: D
   } = (0, u.L3)(), {
@@ -80,9 +80,9 @@ function C() {
   }, []), L = (0, r.useCallback)(e => {
     D(e)
   }, [D]), B = (0, r.useCallback)(e => {
-    if (null != I.current) {
-      let t = I.current.getBoundingClientRect();
-      C(Math.max(264, Math.min(432, e.clientX - t.left)))
+    if (null != N.current) {
+      let t = N.current.getBoundingClientRect();
+      E(Math.max(264, Math.min(432, e.clientX - t.left)))
     }
   }, []), M = (0, r.useCallback)(e => {
     e.preventDefault(), e.stopPropagation();
@@ -128,7 +128,7 @@ function C() {
     }), (0, i.jsxs)("div", {
       className: x.main,
       children: [(0, i.jsxs)("div", {
-        ref: I,
+        ref: N,
         className: x.previews,
         style: {
           width: "".concat(f, "px")
@@ -146,7 +146,7 @@ function C() {
         }), (0, i.jsx)(a.Text, {
           variant: "text-sm/semibold",
           children: "RTC"
-        }), (0, i.jsx)(N, {
+        }), (0, i.jsx)(I, {
           nameplate: d
         }), (0, i.jsx)("div", {
           className: x.resizeHandle,
@@ -173,7 +173,7 @@ function C() {
             let {
               url: t
             } = e;
-            return (0, i.jsx)(E, {
+            return (0, i.jsx)(C, {
               src: t,
               onSetStatic: w,
               removeAsset: L
@@ -195,7 +195,7 @@ function C() {
   })
 }
 
-function E(e) {
+function C(e) {
   let {
     src: t,
     onSetStatic: n,
@@ -334,7 +334,7 @@ function T(e) {
   })
 }
 
-function N(e) {
+function I(e) {
   let {
     nameplate: t
   } = e;

@@ -11,8 +11,8 @@ var i, a = n(442837),
   c = n(490029),
   u = n(710845),
   d = n(454991),
-  _ = n(48481),
-  f = n(131704),
+  f = n(48481),
+  _ = n(131704),
   p = n(314897),
   h = n(592125),
   m = n(984933),
@@ -100,8 +100,8 @@ let w = Object.freeze({
   D = null,
   L = {},
   x = null,
-  M = new Set,
-  k = !1,
+  k = new Set,
+  M = !1,
   j = !1,
   U = !1,
   G = new Set,
@@ -131,8 +131,8 @@ function K(e) {
       case "THREAD_UPDATE":
       case "CHANNEL_DELETE":
       case "THREAD_DELETE":
-        let r = (0, f.kt)(e.channel);
-        if (!f.AW.has(r.type)) break;
+        let r = (0, _.kt)(e.channel);
+        if (!_.AW.has(r.type)) break;
         s.Z.dispatch({
           type: e.type,
           channel: r
@@ -141,19 +141,19 @@ function K(e) {
       case "CHANNEL_UPDATES":
         s.Z.dispatch({
           type: e.type,
-          channels: e.channels.map(e => (0, f.kt)(e))
+          channels: e.channels.map(e => (0, _.kt)(e))
         });
         break;
       case "CONNECTION_OPEN_SUPPLEMENTAL":
-        e.lazyPrivateChannels = (null != (t = e.lazyPrivateChannels) ? t : []).map(e => (0, f.kt)(e)), s.Z.dispatch(e);
+        e.lazyPrivateChannels = (null != (t = e.lazyPrivateChannels) ? t : []).map(e => (0, _.kt)(e)), s.Z.dispatch(e);
         break;
       case "THREAD_LIST_SYNC":
         s.Z.dispatch(C(A({}, e), {
-          threads: e.threads.map(e => (0, f.kt)(e))
+          threads: e.threads.map(e => (0, _.kt)(e))
         }));
         break;
       case "GUILD_CREATE":
-        let i = e => (0, f.kt)(e),
+        let i = e => (0, _.kt)(e),
           a = e.guild;
         switch (a.threads = null == (n = a.threads) ? void 0 : n.map(i), a.channels.op) {
           case "full_sync":
@@ -173,7 +173,7 @@ function K(e) {
       case "USER_SETTINGS_PROTO_UPDATE":
         s.Z.dispatch(C(A({}, e), {
           settings: {
-            proto: (0, _.kI)(e.settings.type, e.settings.proto),
+            proto: (0, f.kI)(e.settings.type, e.settings.proto),
             type: e.settings.type
           }
         }));
@@ -193,7 +193,7 @@ function q(e) {
 }
 
 function X() {
-  M.clear()
+  k.clear()
 }
 
 function Q(e) {
@@ -223,7 +223,7 @@ function J() {
 function $() {
   if (!__OVERLAY__) return !1;
   let e = D === (0, y.getPID)(),
-    t = M.has((0, y.getPID)()) || G.size > 0;
+    t = k.has((0, y.getPID)()) || G.size > 0;
   e && t ? (0, l.T_)(window, !0) : (0, l.T_)(window, !1)
 }
 
@@ -234,7 +234,7 @@ function et(e) {
     locked: t,
     pid: n
   } = e;
-  t ? M.delete(n) : M.add(n), er(), $(), B = !1
+  t ? k.delete(n) : k.add(n), er(), $(), B = !1
 }
 
 function en(e) {
@@ -301,14 +301,14 @@ function ed(e) {
   Z.displayUserMode = t
 }
 
-function e_(e) {
+function ef(e) {
   let {
     mode: t
   } = e;
   Z.avatarSizeMode = t
 }
 
-function ef(e) {
+function e_(e) {
   let {
     mode: t
   } = e;
@@ -355,7 +355,7 @@ function eb() {
 }
 
 function ey() {
-  k = !0
+  M = !0
 }
 
 function eO() {
@@ -423,7 +423,7 @@ function eA(e) {
 }
 
 function eN(e) {
-  M.delete(e.previousAssociatedGamePID)
+  k.delete(e.previousAssociatedGamePID)
 }
 class eC extends(i = a.ZP.PersistedStore) {
   initialize(e) {
@@ -435,7 +435,7 @@ class eC extends(i = a.ZP.PersistedStore) {
         let e = (0, O.M)();
         null == e && V.error("Overlay module failed loaded"), r = e
       }
-      M.delete((0, y.getPID)())
+      k.delete((0, y.getPID)())
     }
     if (null != e) {
       L = e;
@@ -447,10 +447,10 @@ class eC extends(i = a.ZP.PersistedStore) {
     return L
   }
   isLocked(e) {
-    return !M.has(e)
+    return !k.has(e)
   }
   isInstanceLocked() {
-    return !M.has((0, y.getPID)())
+    return !k.has((0, y.getPID)())
   }
   isInstanceFocused() {
     return D === (0, y.getPID)()
@@ -511,7 +511,7 @@ class eC extends(i = a.ZP.PersistedStore) {
     return U
   }
   get incompatibleApp() {
-    return k
+    return M
   }
   getActiveRegions() {
     return G
@@ -558,8 +558,8 @@ let eR = new eC(s.Z, {
   OVERLAY_SET_ENABLED: eA,
   OVERLAY_SET_DISPLAY_NAME_MODE: eu,
   OVERLAY_SET_DISPLAY_USER_MODE: ed,
-  OVERLAY_SET_AVATAR_SIZE_MODE: e_,
-  OVERLAY_SET_NOTIFICATION_POSITION_MODE: ef,
+  OVERLAY_SET_AVATAR_SIZE_MODE: ef,
+  OVERLAY_SET_NOTIFICATION_POSITION_MODE: e_,
   OVERLAY_SET_DISABLE_CLICKABLE_REGIONS: ep,
   OVERLAY_SET_SHOW_KEYBIND_INDICATORS: eh,
   OVERLAY_SET_INVITE_MESSAGE: em,

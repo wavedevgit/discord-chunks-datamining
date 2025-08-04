@@ -14,8 +14,8 @@ var r = n(255367),
   c = n(867309),
   u = n(481060),
   d = n(563132),
-  _ = n(409813),
-  f = n(474936),
+  f = n(409813),
+  _ = n(474936),
   p = n(249779);
 
 function h(e, t) {
@@ -63,7 +63,7 @@ function E(e) {
     setReadySlideId: S,
     premiumBrandRefreshBackgroundClassName: A,
     selectedSkuId: N
-  } = (0, d.JL)(), C = null != N && N in f.y7, R = O.find(e => e.key === y);
+  } = (0, d.JL)(), C = null != N && N in _.y7, R = O.find(e => e.key === y);
   i.useEffect(() => {
     T(null)
   }, [y, T]), l()(null != R, "Unknown step for current payment flow.");
@@ -74,14 +74,14 @@ function E(e) {
     children: [null == (h = null == R || null == (s = R.options) ? void 0 : s.renderHeader) || h ? m : null, R.renderStep(b), null == y || P ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(u.hzk, {
         className: o()(w, p.body, A, {
-          [p.reviewStep]: y === _.h8.REVIEW,
-          [p.addPaymentStepForPremium]: y === _.h8.ADD_PAYMENT_STEPS && C
+          [p.reviewStep]: y === f.h8.REVIEW,
+          [p.addPaymentStepForPremium]: y === f.h8.ADD_PAYMENT_STEPS && C
         }),
         children: (0, r.jsx)(u.MyZ, {
           activeSlide: y,
           centered: !1,
           onSlideReady: e => S(e),
-          width: y === _.h8.ADD_PAYMENT_STEPS ? 408 : y === _.h8.REVIEW ? 392 : void 0,
+          width: y === f.h8.ADD_PAYMENT_STEPS ? 408 : y === f.h8.REVIEW ? 392 : void 0,
           children: O.filter(e => null != e.key).map(e => (0, r.jsx)(u.Mi4, {
             id: e.key,
             children: (0, r.jsx)("form", {

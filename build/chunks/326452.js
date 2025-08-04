@@ -11,9 +11,9 @@ var r, i = n(255367),
   c = n(481060),
   u = n(532425),
   d = n(388032),
-  _ = n(559122);
+  f = n(559122);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -29,7 +29,7 @@ function p(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -90,7 +90,7 @@ class b extends(r = a.PureComponent) {
         onClear: r,
         className: a,
         placeholder: o = d.intl.string(d.t["5h0QOD"]),
-        onKeyDown: f,
+        onKeyDown: _,
         isLoading: h,
         size: E,
         disabled: b,
@@ -113,7 +113,7 @@ class b extends(r = a.PureComponent) {
       onBlur: O,
       value: t,
       onChange: y,
-      onKeyDown: f,
+      onKeyDown: _,
       placeholder: o,
       disabled: b,
       autoFocus: n,
@@ -127,20 +127,20 @@ class b extends(r = a.PureComponent) {
       focusTarget: this.inputRef,
       ringTarget: this.containerRef,
       children: (0, i.jsx)("div", m(p({
-        className: s()(a, _.container, _.wrapper, _[E], {
-          [_.disabled]: b
+        className: s()(a, f.container, f.wrapper, f[E], {
+          [f.disabled]: b
         }),
         ref: this.containerRef
       }, A), {
         children: (0, i.jsxs)("div", {
-          className: _.inner,
+          className: f.inner,
           children: [(0, i.jsx)("input", m(p({}, T), {
             onFocus: v,
             onBlur: O,
-            className: _.input,
+            className: f.input,
             value: t,
             onChange: this.handleOnChange,
-            onKeyDown: f,
+            onKeyDown: _,
             placeholder: o,
             disabled: b,
             autoFocus: n,
@@ -153,7 +153,7 @@ class b extends(r = a.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), f(this, "inputRef", a.createRef()), f(this, "containerRef", a.createRef()), f(this, "handleOnChange", e => {
+    super(...e), _(this, "inputRef", a.createRef()), _(this, "containerRef", a.createRef()), _(this, "handleOnChange", e => {
       let {
         onChange: t
       } = this.props;
@@ -161,7 +161,7 @@ class b extends(r = a.PureComponent) {
     })
   }
 }
-f(b, "defaultProps", {
+_(b, "defaultProps", {
   size: "md",
   isLoading: !1,
   disabled: !1

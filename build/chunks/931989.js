@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  v: () => _
+  v: () => f
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -13,7 +13,7 @@ var r = n(255367),
   u = n(607070),
   d = n(912811);
 
-function _(e) {
+function f(e) {
   let {
     buffer: t,
     autoplay: n = !0,
@@ -21,17 +21,17 @@ function _(e) {
     fit: s,
     alignment: c,
     style: u,
-    eventTargetRef: _,
+    eventTargetRef: f,
     artboard: h,
     withReducedMotion: m = "halt",
     ref: g,
     artboardProperties: E,
     dataBinding: b
-  } = e, y = i.useContext(l.Sfi), O = f(), [v, I] = i.useState(void 0), T = i.useRef(null), {
+  } = e, y = i.useContext(l.Sfi), O = _(), [v, I] = i.useState(void 0), T = i.useRef(null), {
     rive: S,
     RiveComponent: A
   } = (0, o.useRive)({
-    eventTarget: null == _ ? void 0 : _.current,
+    eventTarget: null == f ? void 0 : f.current,
     buffer: t,
     autoplay: n,
     stateMachines: v,
@@ -99,7 +99,7 @@ function _(e) {
   })
 }
 
-function f() {
+function _() {
   let {
     renderWindow: e
   } = i.useContext(c.ZP), [t, n] = i.useState(e.document.hasFocus());
@@ -122,8 +122,8 @@ function p(e) {
   (0, o.useViewModelInstance)(c);
   let {
     theme: d,
-    saturation: _
-  } = (0, l.TCT)(), f = (0, s.e7)([u.Z], () => u.Z.isHighContrastModeEnabled);
+    saturation: f
+  } = (0, l.TCT)(), _ = (0, s.e7)([u.Z], () => u.Z.isHighContrastModeEnabled);
   i.useEffect(() => {
     if (null == t || null == t.viewModelInstance || null == a) return;
     let e = r[n];
@@ -134,8 +134,8 @@ function p(e) {
         case "color":
           let [h, m, g, E] = u.resolve({
             theme: d,
-            saturation: _,
-            highContrastModeEnabled: f
+            saturation: f,
+            highContrastModeEnabled: _
           }).rgba();
           null == (i = t.viewModelInstance) || null == (r = i.color(c)) || r.rgba(h, m, g, 255 * E);
           break;
@@ -158,6 +158,6 @@ function p(e) {
           console.warn("Unknown property type: ".concat(p))
       }
     })
-  }, [a, t, n, r, d, null == t ? void 0 : t.viewModelInstance, _, f])
+  }, [a, t, n, r, d, null == t ? void 0 : t.viewModelInstance, f, _])
 }
 o.RuntimeLoader.setWasmUrl(a)

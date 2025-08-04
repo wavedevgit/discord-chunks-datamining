@@ -1,8 +1,10 @@
-/** Chunk was on 22243 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  J2: () => i.J,
-  Mb: () => r.M
+  J2: () => r.J,
+  Mb: () => i.M,
+  e4: () => a.e
 });
-var i = n(264418),
-  r = n(676053);
-n(466590)
+var r = n(264418),
+  i = n(676053),
+  a = n(466590)

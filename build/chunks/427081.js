@@ -12,8 +12,8 @@ var r = n(754700),
   c = n(77498),
   u = n(938475),
   d = n(70956),
-  _ = n(823379),
-  f = n(509212),
+  f = n(823379),
+  _ = n(509212),
   p = n(272008),
   h = n(569984),
   m = n(5881),
@@ -35,7 +35,7 @@ let b = +d.Z.Millis.MINUTE,
   });
 
 function I(e) {
-  return !(0, f.zi)(e) && null != e.userStatus && null != e.userStatus.enrolledAt && null == e.userStatus.completedAt
+  return !(0, _.zi)(e) && null != e.userStatus && null != e.userStatus.enrolledAt && null == e.userStatus.completedAt
 }
 class T extends i.Z {
   syncHeartbeats(e, t) {
@@ -55,7 +55,7 @@ class T extends i.Z {
       case r.X.PLAY_ACTIVITY:
         return this.getActivelyProgressingActivityQuestIds();
       default:
-        (0, _.vE)(e)
+        (0, f.vE)(e)
     }
   }
   getActivelyProgressingPlayOnDesktopQuestIds() {
@@ -79,7 +79,7 @@ class T extends i.Z {
       }
     }
     for (let t of r)
-      for (let r of n.values()) I(r) && (0, f.Nj)({
+      for (let r of n.values()) I(r) && (0, _.Nj)({
         quest: r
       }) && r.config.application.id === t && e.add(r.id);
     return v.log("~ getActivelyProgressingPlayOnDesktopQuestIds -> Actively progressing questIds: ", e), e
@@ -93,7 +93,7 @@ class T extends i.Z {
     v.log("~ getActivelyProgressingStreamOnDesktopQuestIds -> Active stream metadata: ", n);
     let r = n.id;
     if (null == r) return e;
-    for (let t of h.Z.quests.values()) I(t) && (0, f.Dr)({
+    for (let t of h.Z.quests.values()) I(t) && (0, _.Dr)({
       quest: t
     }) && t.config.application.id === r && e.add(t.id);
     return v.log("~ getActivelyProgressingStreamOnDesktopQuestIds -> Actively progressing questIds: ", e), e
@@ -105,8 +105,8 @@ class T extends i.Z {
     if (v.log("~ getActivelyProgressingActivityQuestIds -> Embedded activities: ", t), !n) return e;
     let r = h.Z.quests;
     for (let n of t.keys())
-      for (let t of r.values()) I(t) && (0, f.pO)(t) && t.config.application.id === n && e.add(t.id);
-    for (let t of r.values()) I(t) && (0, f.KM)(t) && n && e.add(t.id);
+      for (let t of r.values()) I(t) && (0, _.pO)(t) && t.config.application.id === n && e.add(t.id);
+    for (let t of r.values()) I(t) && (0, _.KM)(t) && n && e.add(t.id);
     return v.log("~ getActivelyProgressingActivityQuestIds -> Actively progressing questIds: ", e), e
   }
   constructor(...e) {
@@ -120,7 +120,7 @@ class T extends i.Z {
       let {
         progressSeconds: n,
         targetSeconds: i
-      } = (0, f.il)(t, r.T.DESKTOP), a = Math.max(0, (i - n) * d.Z.Millis.SECOND);
+      } = (0, _.il)(t, r.T.DESKTOP), a = Math.max(0, (i - n) * d.Z.Millis.SECOND);
       return a <= b ? a + O : b
     }), E(this, "initiateHeartbeat", (e, t) => {
       let n = this.heartbeats[t];

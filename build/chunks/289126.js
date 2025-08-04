@@ -8,8 +8,8 @@ var r = n(657398),
   c = "[object Date]",
   u = "[object Error]",
   d = "[object Function]",
-  _ = "[object Map]",
-  f = "[object Number]",
+  f = "[object Map]",
+  _ = "[object Number]",
   p = "[object Object]",
   h = "[object RegExp]",
   m = "[object Set]",
@@ -26,6 +26,6 @@ var r = n(657398),
   N = "[object Uint16Array]",
   C = "[object Uint32Array]",
   R = {};
-R["[object Float32Array]"] = R[O] = R[v] = R[I] = R[T] = R[S] = R[A] = R[N] = R[C] = !0, R[o] = R[s] = R[b] = R[l] = R[y] = R[c] = R[u] = R[d] = R[_] = R[f] = R[p] = R[h] = R[m] = R[g] = R[E] = !1, e.exports = function(e) {
+R["[object Float32Array]"] = R[O] = R[v] = R[I] = R[T] = R[S] = R[A] = R[N] = R[C] = !0, R[o] = R[s] = R[b] = R[l] = R[y] = R[c] = R[u] = R[d] = R[f] = R[_] = R[p] = R[h] = R[m] = R[g] = R[E] = !1, e.exports = function(e) {
   return a(e) && i(e.length) && !!R[r(e)]
 }

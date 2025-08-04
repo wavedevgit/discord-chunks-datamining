@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => _
 });
 var r = n(791819),
   i = n(44837),
@@ -22,7 +22,7 @@ var s = n(73800),
       return e
     }
   },
-  _ = function(e) {
+  f = function(e) {
     function t(t, n) {
       var r = e.call(this, t, n) || this,
         i = r.handleExited.bind((0, a.Z)(r));
@@ -72,5 +72,5 @@ var s = n(73800),
       }, s.createElement(t, i, o))
     }, t
   }(s.Component);
-_.propTypes = {}, _.defaultProps = d;
-let f = _
+f.propTypes = {}, f.defaultProps = d;
+let _ = f

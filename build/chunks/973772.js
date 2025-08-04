@@ -15,12 +15,12 @@ function l(e, t) {
     u = (0, r.e7)([a.Z], () => a.Z.getStateForGuild(e)),
     d = null != (l = null == c || null == (n = c.features) ? void 0 : n.has(s.oNc.PREMIUM_TIER_3_OVERRIDE)) && l;
 
-  function _(e) {
+  function f(e) {
     let {
       isActiveFromLevel: t,
       levelEntitlement: n,
       levelPowerup: r
-    } = f(e), i = p(e), a = h(e), s = null != a, l = {
+    } = _(e), i = p(e), a = h(e), s = null != a, l = {
       type: o.A3.INACTIVE,
       powerup: e,
       sourceEntitlement: void 0,
@@ -44,7 +44,7 @@ function l(e, t) {
     }), l
   }
 
-  function f(e) {
+  function _(e) {
     var t, n;
     if (null == e || null == c || null == u) return {
       isActiveFromLevel: !1,
@@ -74,7 +74,7 @@ function l(e, t) {
     var t, n;
     return null != (n = null == u || null == (t = u.unlockedPowerups) ? void 0 : t[e.skuId]) ? n : null
   }
-  return t.map(e => _(e))
+  return t.map(e => f(e))
 }
 
 function c(e, t) {

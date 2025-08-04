@@ -1,5 +1,6 @@
-/** Chunk was on 22243 **/
-n.r(e.exports = {
+/** Chunk was on web.js **/
+"use strict";
+var r = {
   caret: "caret__6ec79",
   "caret--bottom": "caret--bottom__6ec79",
   "caret--top": "caret--top__6ec79",
@@ -9,4 +10,5 @@ n.r(e.exports = {
   "caret--start": "caret--start__6ec79",
   "caret--end": "caret--end__6ec79",
   "caret--custom": "caret--custom__6ec79"
-})
+};
+n.r(e.exports = r)

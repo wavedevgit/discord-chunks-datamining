@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => M
+  Z: () => k
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(481060),
   u = n(595519),
   d = n(317381),
-  _ = n(16609),
-  f = n(588468),
+  f = n(16609),
+  _ = n(588468),
   p = n(30465),
   h = n(313201),
   m = n(314910),
@@ -86,8 +86,8 @@ let P = 490,
   D = 245,
   L = 200,
   x = 120,
-  M = i.forwardRef(function(e, t) {
-    var n, a, T, A, R, M, k;
+  k = i.forwardRef(function(e, t) {
+    var n, a, T, A, R, k, M;
     let {
       channel: j,
       type: U,
@@ -100,7 +100,7 @@ let P = 490,
       return null != (e = E.Z.getGuild(j.guild_id)) ? e : null
     }, [j.guild_id]), Y = i.useRef(null), [W, K, z] = (0, O.Z)(N(S({}, e), {
       guild: H
-    }), t, Y), q = (null == (n = U.autocomplete) ? void 0 : n.forceChatLayer) ? g.ZP : m.ZP, X = (0, f.DJ)(W.selectedIndex);
+    }), t, Y), q = (null == (n = U.autocomplete) ? void 0 : n.forceChatLayer) ? g.ZP : m.ZP, X = (0, _.DJ)(W.selectedIndex);
     (0, p.KR)(Z, W.isVisible, X);
     let Q = (0, y.Z)({
         editorHeight: G,
@@ -110,7 +110,7 @@ let P = 490,
       J = (0, l.e7)([d.ZP], () => {
         let e = d.ZP.getSelfEmbeddedActivityForChannel(j.id),
           t = d.ZP.getActivityPanelMode();
-        return (0, u.l5)(j) && null != e && (0, _.p)(e.location) === j.id && t === v.Ez.PANEL
+        return (0, u.l5)(j) && null != e && (0, f.p)(e.location) === j.id && t === v.Ez.PANEL
       }, [j]),
       $ = i.useMemo(() => (null == Q ? void 0 : Q.top) == null && (null == Q ? void 0 : Q.left) == null && (null == Q ? void 0 : Q.bottom) == null && (null == Q ? void 0 : Q.right) == null ? "" : String(Date.now()), [null == Q ? void 0 : Q.top, null == Q ? void 0 : Q.left, null == Q ? void 0 : Q.bottom, null == Q ? void 0 : Q.right]);
     if (i.useEffect(() => {
@@ -135,10 +135,10 @@ let P = 490,
       },
       en = P;
     null != Q && (en = (null == (A = U.autocomplete) ? void 0 : A.small) ? L : (null == (R = W.query) ? void 0 : R.type) === b.eq.EMOJIS_AND_STICKERS ? w : D);
-    let er = Math.max(G, null != (M = null == V || null == (a = V.current) ? void 0 : a.clientHeight) ? M : 0),
+    let er = Math.max(G, null != (k = null == V || null == (a = V.current) ? void 0 : a.clientHeight) ? k : 0),
       ei = Math.min(.5 * window.innerHeight, er);
     en = Math.min(window.innerHeight - x - ei - (null != F ? F : 0), en);
-    let ea = (0, r.jsx)(f.ZP, {
+    let ea = (0, r.jsx)(_.ZP, {
       id: Z,
       className: o()(I.autocomplete, et),
       innerClassName: I.autocompleteInner,
@@ -162,7 +162,7 @@ let P = 490,
                 maxHeight: en
               },
               role: "listbox",
-              "aria-labelledby": (0, f.rp)(Z),
+              "aria-labelledby": (0, _.rp)(Z),
               children: ee
             }))
           }
@@ -174,7 +174,7 @@ let P = 490,
         targetRef: e.targetRef,
         overrideTargetRect: Q,
         positionKey: $,
-        position: null != (k = e.position) ? k : "top",
+        position: null != (M = e.position) ? M : "top",
         align: "left",
         spacing: 8,
         autoInvert: !0,

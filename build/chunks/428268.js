@@ -13,8 +13,8 @@ var i = n(442837),
   c = n(231757),
   u = n(511010),
   d = n(553795),
-  _ = n(979192),
-  f = n(873128),
+  f = n(979192),
+  _ = n(873128),
   p = n(463031),
   h = n(981631),
   m = n(388032),
@@ -64,7 +64,7 @@ let v = function(e) {
     leaderboardId: E
   } = e, {
     leaderboardsDisabled: y
-  } = (0, _.O)(t, E), v = (0, i.e7)([d.Z], () => d.Z.getAccount(null, h.ABu.RIOT_GAMES)), I = (0, i.e7)([d.Z], () => d.Z.getAccount(null, h.ABu.LEAGUE_OF_LEGENDS)), T = (0, f.Z)({
+  } = (0, f.O)(t, E), v = (0, i.e7)([d.Z], () => d.Z.getAccount(null, h.ABu.RIOT_GAMES)), I = (0, i.e7)([d.Z], () => d.Z.getAccount(null, h.ABu.LEAGUE_OF_LEGENDS)), T = (0, _.Z)({
     guildId: t,
     leaderboardId: E
   }), S = E === p.z;

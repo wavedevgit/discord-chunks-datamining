@@ -17,7 +17,7 @@ function d(e) {
     onPlay: t,
     className: n,
     inactive: a
-  } = e, d = i.useRef(null), _ = (0, r.jsx)("div", {
+  } = e, d = i.useRef(null), f = (0, r.jsx)("div", {
     className: u.iconWrapper,
     ref: d,
     children: (0, r.jsx)(s.o1U, {
@@ -29,7 +29,7 @@ function d(e) {
   return (0, r.jsx)(l.G.Consumer, {
     children: e => a || null == t ? (0, r.jsx)("div", {
       className: u.cover,
-      children: _
+      children: f
     }) : (0, r.jsx)(s.P3F, {
       className: o()(n, u.cover, {
         [u.active]: !e.disableInteractions
@@ -40,7 +40,7 @@ function d(e) {
       focusProps: {
         ringTarget: d
       },
-      children: _
+      children: f
     })
   })
 }

@@ -20,8 +20,8 @@ var r = n(913527),
   c = n(388032);
 let u = new o.Z("DateUtils"),
   d = 6e4,
-  _ = 864e5,
-  f = Object.create(null);
+  f = 864e5,
+  _ = Object.create(null);
 
 function p(e) {
   let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
@@ -31,15 +31,15 @@ function p(e) {
   }), n = new Date);
   let r = new Date(n),
     i = r.getTime();
-  return t || (i -= r.getTimezoneOffset() * d), Math.floor(i / _) * _
+  return t || (i -= r.getTimezoneOffset() * d), Math.floor(i / f) * f
 }
 
 function h(e, t) {
-  return Math.floor((p(e, !1) - p(t, !1)) / _)
+  return Math.floor((p(e, !1) - p(t, !1)) / f)
 }
 
 function m(e, t) {
-  return Math.abs(+e - +t) <= _ && e.getDate() === t.getDate()
+  return Math.abs(+e - +t) <= f && e.getDate() === t.getDate()
 }
 
 function g(e, t, n) {
@@ -50,8 +50,8 @@ function E(e, t) {
   let n = O(e).locale(),
     r = l.hg.getSetting(),
     i = "".concat(n, ":").concat(t, ":").concat(r),
-    o = f[i];
-  return null == o && (o = f[i] = (0, a.Z)(t)), o(v(e))
+    o = _[i];
+  return null == o && (o = _[i] = (0, a.Z)(t)), o(v(e))
 }
 
 function b(e) {
@@ -90,7 +90,7 @@ function I(e) {
   return "sameElse" == (t = a < -1 ? "sameElse" : a < 0 ? "lastDay" : a < 1 ? "sameDay" : a < 2 ? "nextDay" : "sameElse") ? E(e, "LLL") : E(e, n.calendar(t, i()(e), i()(r)))
 }
 s.default.addChangeListener(() => {
-  f = Object.create(null)
+  _ = Object.create(null)
 });
 let T = [{
   key: "days",

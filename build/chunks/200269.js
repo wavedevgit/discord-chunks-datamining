@@ -37,20 +37,20 @@ function s(e) {
     forceLevel: a
   } = e, o = i.useContext(c), [s, l] = i.useState(null != t), u = 1, d = 1;
   null != a ? null != t ? (u = a, d = a + 1) : d = a : null != t ? (u = o.level, d = o.level + 1) : d = o.level + +!!s;
-  let _ = i.useMemo(() => ({
+  let f = i.useMemo(() => ({
       level: u,
       getLevelAndMarkUsed: () => (l(!0), u)
     }), [u]),
-    f = i.useMemo(() => ({
+    _ = i.useMemo(() => ({
       level: d,
       getLevelAndMarkUsed: () => (l(!0), d)
     }), [d]);
   return (0, r.jsxs)(r.Fragment, {
     children: [null != t ? (0, r.jsx)(c.Provider, {
-      value: _,
+      value: f,
       children: t
     }) : null, (0, r.jsx)(c.Provider, {
-      value: f,
+      value: _,
       children: n
     })]
   })

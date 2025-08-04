@@ -14,7 +14,7 @@ var r = n(255367),
   u = n(819640),
   d = n(513755);
 
-function _(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,14 +23,14 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
@@ -72,7 +72,7 @@ function E(e) {
     hasLayers: d
   } = (0, l.cj)([u.Z], () => ({
     hasLayers: u.Z.hasLayers()
-  })), _ = i.useRef(null), f = i.useCallback(() => {
+  })), f = i.useRef(null), _ = i.useCallback(() => {
     let e = n.current;
     if (null === e) return {
       height: 0,
@@ -81,14 +81,14 @@ function E(e) {
       hasElementPositionChanged: !1
     };
     let t = e.getBoundingClientRect(),
-      r = !(0, s.isEqual)(g(t), g(_.current));
-    return _.current = t, {
+      r = !(0, s.isEqual)(g(t), g(f.current));
+    return f.current = t, {
       height: e.offsetHeight,
       width: e.offsetWidth,
       elementBoundingRect: t,
       hasElementPositionChanged: r
     }
-  }, [n]), p = i.useCallback(() => t(f()), [t, f]), h = i.useMemo(() => (0, s.debounce)(() => {
+  }, [n]), p = i.useCallback(() => t(_()), [t, _]), h = i.useMemo(() => (0, s.debounce)(() => {
     p()
   }, o), [p, o]);
   i.useEffect(() => (window.addEventListener("resize", h), () => {
@@ -112,12 +112,12 @@ function E(e) {
     m && !d && y()
   }, [y, d, m]), i.useEffect(() => {
     void 0 !== a && (a.current = {
-      getElementDimensionsAndBoundingRect: f,
+      getElementDimensionsAndBoundingRect: _,
       updateElementPosition: p,
       updateElementPositionWithPolling: y
     })
-  }, [p, y, f, a]), {
-    getElementDimensionsAndBoundingRect: f
+  }, [p, y, _, a]), {
+    getElementDimensionsAndBoundingRect: _
   }
 }
 
@@ -139,7 +139,7 @@ function b(e) {
         elementBoundingRect: o
       } = e;
       if (null == o) return r;
-      let c = f({}, n({
+      let c = _({}, n({
         height: t,
         width: i
       }));
@@ -162,7 +162,7 @@ function y(e) {
   } = e;
   let {
     offsets: s
-  } = b(f({}, p(e, ["children", "style", "className", "key"]))), l = f({}, s, n);
+  } = b(_({}, p(e, ["children", "style", "className", "key"]))), l = _({}, s, n);
   return null === s ? null : (0, r.jsx)("div", {
     style: l,
     className: o()(d.wrapper, i),

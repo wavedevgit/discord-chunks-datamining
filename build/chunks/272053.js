@@ -11,8 +11,8 @@ var r, i = n(348327),
   c = n(457330),
   u = n(726542),
   d = n(81063),
-  _ = n(70956),
-  f = n(553795),
+  f = n(70956),
+  _ = n(553795),
   p = n(246946),
   h = n(981631);
 
@@ -25,9 +25,9 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 let g = "33kozedd0zs6fbauka98psnc7zwom2s",
-  E = +_.Z.Millis.MINUTE,
+  E = +f.Z.Millis.MINUTE,
   b = e => "https://youtube.com/watch?v=".concat(e),
-  y = 5 * _.Z.Millis.MINUTE,
+  y = 5 * f.Z.Millis.MINUTE,
   O = "https://api.twitch.tv/helix",
   v = /live_user_(.*)-\{width\}/,
   I = 128,
@@ -68,7 +68,7 @@ async function w(e, t) {
 }
 class D {
   start() {
-    this._started || (this._started = !0, f.Z.isFetching() ? c.Z.fetch() : this._check())
+    this._started || (this._started = !0, _.Z.isFetching() ? c.Z.fetch() : this._check())
   }
   stop() {
     this._started = !1, A = null, S = 0, null != this._nextCheck && clearTimeout(this._nextCheck), l.Z.dispatch({
@@ -94,16 +94,16 @@ class D {
         thumbnail_url: s,
         game_id: l,
         title: c
-      } = o, _ = {
+      } = o, f = {
         large_image: null != s && null != (r = (0, d.f)(h.ABu.TWITCH, s)) ? r : void 0
-      }, f = await w(l, t), p = u.Z.get(h.ABu.TWITCH), m = null != (i = R(s)) ? i : e.name, g = null != c && "" !== c ? c.slice(0, I) : void 0, E = null != f && "" !== f ? f.slice(0, I) : void 0;
+      }, _ = await w(l, t), p = u.Z.get(h.ABu.TWITCH), m = null != (i = R(s)) ? i : e.name, g = null != c && "" !== c ? c.slice(0, I) : void 0, E = null != _ && "" !== _ ? _.slice(0, I) : void 0;
       return {
         url: null == (n = p.getPlatformUserUrl) ? void 0 : n.call(p, {
           id: e.id,
           name: m
         }),
         name: p.name,
-        assets: _,
+        assets: f,
         details: g,
         state: E
       }
@@ -157,7 +157,7 @@ class D {
   }
   _check() {
     if (!this._started) return;
-    let e = f.Z.getAccounts();
+    let e = _.Z.getAccounts();
     if (null == e) return;
     null != this._nextCheck && clearTimeout(this._nextCheck);
     let t = [h.ABu.TWITCH],
@@ -187,21 +187,21 @@ function x() {
   p.Z.enabled ? L.start() : L.stop()
 }
 
-function M(e) {
+function k(e) {
   var t;
   if (a()(e.stream, T)) return !1;
   T = null != (t = e.stream) ? t : null
 }
-class k extends(r = o.ZP.Store) {
+class M extends(r = o.ZP.Store) {
   initialize() {
-    x(), this.waitFor(f.Z), this.syncWith([p.Z], x)
+    x(), this.waitFor(_.Z), this.syncWith([p.Z], x)
   }
   getStream() {
     return T
   }
 }
-m(k, "displayName", "ExternalStreamingStore");
-let j = new k(l.Z, {
-  STREAMING_UPDATE: M,
+m(M, "displayName", "ExternalStreamingStore");
+let j = new M(l.Z, {
+  STREAMING_UPDATE: k,
   USER_CONNECTIONS_UPDATE: () => L._check()
 })

@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(880563),
   u = n(687158),
   d = n(484459),
-  _ = n(695346),
-  f = n(981631),
+  f = n(695346),
+  _ = n(981631),
   p = n(318413);
 
 function h(e, t, n) {
@@ -84,10 +84,10 @@ let O = function(e) {
   let I = null != h ? h : n,
     T = (0, s.ZP)(I, a.Z.unsafe_rawColors.PRIMARY_800.css),
     S = (0, l.c)(!0, "VideoBackground-web").enabled,
-    A = (0, u.ZP)(null != g ? g : f.lds),
+    A = (0, u.ZP)(null != g ? g : _.lds),
     N = null == A ? void 0 : A.getBannerURL({
       size: 1024,
-      canAnimate: _.QK.getSetting()
+      canAnimate: f.QK.getSetting()
     });
   if (i.useEffect(() => {
       null != g && S && (0, d.Z)(g, void 0, {

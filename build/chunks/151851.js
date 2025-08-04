@@ -13,8 +13,8 @@ var i = n(120356),
   c = n(579806),
   u = n(40851),
   d = n(358221),
-  _ = n(754347),
-  f = n(428548),
+  f = n(754347),
+  _ = n(428548),
   p = n(718759),
   h = n(679219),
   m = n(835225),
@@ -41,7 +41,7 @@ let I = "#ffffff",
       onClick: () => T(n),
       "aria-label": O.intl.string(O.t.ZdNUj4),
       tabIndex: -1,
-      children: (0, r.jsx)(f.Z, {})
+      children: (0, r.jsx)(_.Z, {})
     }), c = (0, r.jsx)(s.P3F, {
       className: v.winButtonMinMax,
       onClick: e => A(n, e),
@@ -65,7 +65,7 @@ let I = "#ffffff",
         }),
         children: [(0, r.jsx)("div", {
           className: v.wordmarkWindows,
-          children: (0, r.jsx)(_.Z, {})
+          children: (0, r.jsx)(f.Z, {})
         }), t, d]
       })
     })
@@ -116,7 +116,7 @@ let I = "#ffffff",
           })]
         }), i ? (0, r.jsx)("div", {
           className: v.wordmarkMacOS,
-          children: (0, r.jsx)(_.Z, {
+          children: (0, r.jsx)(f.Z, {
             color: I
           })
         }) : null]
@@ -131,14 +131,14 @@ function R(e) {
     windowKey: i,
     macOSFrame: a = !1,
     themeOverride: s
-  } = e, c = (0, u.bp)(), _ = (0, o.e7)([d.Z], () => d.Z.isFullscreenInContext(c)), f = (0, l.Z)();
-  if (_) return null;
+  } = e, c = (0, u.bp)(), f = (0, o.e7)([d.Z], () => d.Z.isFullscreenInContext(c)), _ = (0, l.Z)();
+  if (f) return null;
   switch (n) {
     case b.PlatformTypes.WINDOWS:
       return (0, r.jsx)(N, {
         windowKey: i,
         themeOverride: s,
-        hasOpenLayer: f
+        hasOpenLayer: _
       });
     case b.PlatformTypes.OSX:
       return (0, r.jsx)(C, {
@@ -146,7 +146,7 @@ function R(e) {
         windowKey: i,
         frame: a,
         themeOverride: s,
-        hasOpenLayer: f
+        hasOpenLayer: _
       });
     default:
       return null

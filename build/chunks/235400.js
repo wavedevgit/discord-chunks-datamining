@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(335131),
   u = n(884697),
   d = n(449217),
-  _ = n(223143),
-  f = n(311395),
+  f = n(223143),
+  _ = n(311395),
   p = n(222062),
   h = n(269982),
   m = n(767714),
@@ -35,7 +35,7 @@ function C(e) {
     categories: n,
     purchases: a,
     analyticsLocations: l,
-    onClose: _,
+    onClose: f,
     initialSelectedDecoration: E,
     initialSelectedDecorationId: b,
     isTryItOutFlow: T,
@@ -55,23 +55,23 @@ function C(e) {
     return null != b ? null != (e = r.find(e => e.id === b)) ? e : null : void 0 !== R ? R : null == w ? null : null != (t = r.find(e => (0, O.sr)(e, w))) ? t : null
   }), {
     product: x,
-    purchase: M
-  } = (0, d.Z)(null == D ? void 0 : D.skuId), k = y.ZP.canUseCollectibles(t), j = i.useRef(null), U = (0, f.Z)(l), G = (0, O.sr)(D, void 0 === R ? w : R), B = e => {
+    purchase: k
+  } = (0, d.Z)(null == D ? void 0 : D.skuId), M = y.ZP.canUseCollectibles(t), j = i.useRef(null), U = (0, _.Z)(l), G = (0, O.sr)(D, void 0 === R ? w : R), B = e => {
     L(e), null != e && U(e)
   }, V = () => {
-    P(D), _()
+    P(D), f()
   }, F = i.useCallback(e => {
-    _(), (0, c.mK)({
+    f(), (0, c.mK)({
       analyticsLocations: l,
       analyticsSource: s.Z.EDIT_AVATAR_DECORATION_MODAL,
       initialProductSkuId: e
     })
-  }, [l, _]), Z = (0, p.M)(), H = Z && (0, u.G1)(x), Y = () => null != M && (!(0, u.qS)(M) || k) || null === D ? (0, r.jsx)(o.zxk, {
+  }, [l, f]), Z = (0, p.M)(), H = Z && (0, u.G1)(x), Y = () => null != k && (!(0, u.qS)(k) || M) || null === D ? (0, r.jsx)(o.zxk, {
     variant: "primary",
     text: A.intl.string(A.t.Jh8fJy),
     onClick: V,
     disabled: G
-  }) : null == M && (k || !(0, u.G1)(x)) ? (0, r.jsx)(o.zxk, {
+  }) : null == k && (M || !(0, u.G1)(x)) ? (0, r.jsx)(o.zxk, {
     variant: "primary",
     onClick: () => F(null == x ? void 0 : x.skuId),
     text: A.intl.string(A.t.fYfGgI)
@@ -91,7 +91,7 @@ function C(e) {
         children: A.intl.string(A.t.HykynZ)
       }), (0, r.jsx)(o.olH, {
         className: N.modalCloseButton,
-        onClick: _
+        onClick: f
       })]
     }), (0, r.jsxs)(o.hzk, {
       className: N.modalContent,
@@ -113,11 +113,11 @@ function C(e) {
       className: N.modalFooter,
       children: [Y(), H ? (0, r.jsx)(h.Z, {
         product: x,
-        onSecondaryClick: _
+        onSecondaryClick: f
       }) : (0, r.jsx)(o.zxk, {
         variant: "secondary",
         text: A.intl.string(A.t["ETE/oK"]),
-        onClick: _
+        onClick: f
       })]
     })]
   })
@@ -130,7 +130,7 @@ function R(e) {
     onClose: c,
     onCloseModal: u,
     initialSelectedDecoration: d,
-    initialSelectedDecorationId: f,
+    initialSelectedDecorationId: _,
     isTryItOutFlow: p,
     guild: h
   } = e, m = (0, a.e7)([E.default], () => E.default.getCurrentUser()), {
@@ -140,7 +140,7 @@ function R(e) {
     purchases: O,
     isFetchingCategories: v,
     isFetchingPurchases: I
-  } = (0, _.ZP)({
+  } = (0, f.ZP)({
     location: "AvatarDecorationModal"
   }), S = v || I && 0 === O.size, A = () => {
     u(), null == c || c()
@@ -168,7 +168,7 @@ function R(e) {
         purchases: O,
         analyticsLocations: g,
         initialSelectedDecoration: d,
-        initialSelectedDecorationId: f,
+        initialSelectedDecorationId: _,
         onClose: A,
         isTryItOutFlow: p
       })

@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(841784),
   u = n(833664),
   d = n(420660),
-  _ = n(100527),
-  f = n(906732),
+  f = n(100527),
+  _ = n(906732),
   p = n(379357),
   h = n(264832),
   m = n(358696),
@@ -35,8 +35,8 @@ var r = n(255367),
   D = n(64621),
   L = n(979038),
   x = n(448980),
-  M = n(336383),
-  k = n(194811),
+  k = n(336383),
+  M = n(194811),
   j = n(373826),
   U = n(668700),
   G = n(262210),
@@ -84,7 +84,7 @@ function q(e) {
     onClose: ee
   } = e, et = (0, E.Dt)(), en = (0, E.Dt)(), er = i.useRef(null), {
     analyticsLocations: ei
-  } = (0, f.ZP)(_.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), {
+  } = (0, _.ZP)(f.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), {
     themeType: ea
   } = (0, w.z)(), {
     interactionSource: eo,
@@ -101,8 +101,8 @@ function q(e) {
   }), eu = (0, T.Z)({
     userId: n.id,
     onAction: ec
-  }), ed = (0, S.Z)(K), e_ = null != ed.text && "" !== ed.text, {
-    largeImage: ef,
+  }), ed = (0, S.Z)(K), ef = null != ed.text && "" !== ed.text, {
+    largeImage: e_,
     smallImage: ep
   } = (0, p.FO)(K, q), eh = (0, V.Z)({
     location: "UserProfileActivityCardWithInteractionToolbar",
@@ -121,13 +121,13 @@ function q(e) {
         [W.small]: ea !== F.lY.MODAL_V2
       })
     }) : null == eh ? (0, r.jsx)(m.E, {
-      image: ef,
+      image: e_,
       smallImage: ep,
       size: t,
       aspectRatio: e,
       className: W.image
     }) : (0, r.jsx)(m.E, {
-      image: ef,
+      image: e_,
       smallImage: ep,
       size: t,
       className: W.clickableImage,
@@ -303,7 +303,7 @@ function q(e) {
   if (null === ea) return null;
   let eS = null != (t = K.application_id) ? t : K.name,
     eA = eo === F.n_.ACTIVITY && es === eS;
-  return (0, r.jsx)(f.Gt, {
+  return (0, r.jsx)(_.Gt, {
     value: ei,
     children: (0, r.jsx)(D.Z, {
       targetElementRef: er,
@@ -336,15 +336,15 @@ function q(e) {
           onShowToolbar: () => ec({
             action: "HOVER_ACTIVITY_CARD"
           }),
-          children: (0, r.jsxs)(M.Z, {
+          children: (0, r.jsxs)(k.Z, {
             ref: eu,
             className: o()($, {
               [W.hoisted]: eA
             }),
             onAction: ec,
             onClose: ee,
-            "aria-labelledby": e_ ? "".concat(en, " ").concat(et) : et,
-            children: [(0, r.jsx)(k.Z, z({
+            "aria-labelledby": ef ? "".concat(en, " ").concat(et) : et,
+            children: [(0, r.jsx)(M.Z, z({
               textId: en
             }, ed)), (0, r.jsxs)("div", {
               className: W.body,

@@ -20,14 +20,14 @@ var i = n(255367),
   x = n(894694),
   _ = n(779618),
   j = n(39604),
-  C = n(442334),
-  E = n(356659),
+  E = n(442334),
+  C = n(356659),
   O = n(981631),
   v = n(37113),
   S = n(526761),
   T = n(388032),
-  N = n(99645),
-  I = n(802454),
+  I = n(99645),
+  N = n(802454),
   y = n(20493);
 
 function A() {
@@ -53,17 +53,17 @@ function A() {
   a()(null != D, "Save clip keybind unset");
   let L = (0, l.e7)([m.default], () => m.default.locale),
     B = r.useMemo(() => [{
-      value: E.OT.SECONDS_30,
+      value: C.OT.SECONDS_30,
       label: T.intl.formatToPlainString(T.t["bTFv//"], {
         count: 30
       })
     }, {
-      value: E.OT.MINUTES_1,
+      value: C.OT.MINUTES_1,
       label: T.intl.formatToPlainString(T.t.ICo9Nj, {
         count: 1
       })
     }, {
-      value: E.OT.MINUTES_2,
+      value: C.OT.MINUTES_2,
       label: T.intl.formatToPlainString(T.t.ICo9Nj, {
         count: 2
       })
@@ -145,7 +145,7 @@ function A() {
       disabled: !e,
       children: [!e && (0, i.jsx)(p.Z, {
         look: p.z.WARNING,
-        className: I.formItem,
+        className: N.formItem,
         children: T.intl.format(T.t.kiaF4e, {
           onClick: () => d.Z.open(O.oAB.VOICE, S.gP, {
             scrollPosition: S.KQ.VoiceAndVideoScrollPositions.HARDWARE_ACCELERATION
@@ -153,12 +153,12 @@ function A() {
         })
       }), R === x.x.BELOW_MINIMUM ? (0, i.jsx)(p.Z, {
         look: p.z.WARNING,
-        className: I.formItem,
+        className: N.formItem,
         children: T.intl.string(T.t.SIxrIC)
       }) : null, (0, i.jsx)(o.j7V, {
         hideBorder: !0,
         disabled: !e,
-        className: I.formItem,
+        className: N.formItem,
         value: t,
         note: T.intl.string(T.t["4Qw3ND"]),
         onChange: e => j.em({
@@ -167,7 +167,7 @@ function A() {
         }),
         children: T.intl.string(T.t.h8rgrK)
       }), e && (0, i.jsx)(p.Z, {
-        className: I.formItem,
+        className: N.formItem,
         children: T.intl.string(T.t["Z+Mfqa"])
       })]
     }), Z && w && (0, i.jsxs)(i.Fragment, {
@@ -177,7 +177,7 @@ function A() {
         children: (0, i.jsx)(o.j7V, {
           hideBorder: !0,
           disabled: !e,
-          className: I.formItem,
+          className: N.formItem,
           value: s,
           note: T.intl.string(T.t.YP3ujo),
           onChange: e => j._Q({
@@ -192,7 +192,7 @@ function A() {
         className: y.marginTop20,
         children: (0, i.jsx)(o.j7V, {
           hideBorder: !0,
-          className: I.formItem,
+          className: N.formItem,
           value: n,
           note: T.intl.string(T.t.m4Cjj4),
           onChange: e => j.N0(e),
@@ -201,15 +201,15 @@ function A() {
       })]
     }), (0, i.jsx)(o.$i$, {}), (0, i.jsxs)(o.hjN, {
       className: y.marginTop20,
-      children: [(0, i.jsx)(C.Q, {
-        className: I.formItem,
+      children: [(0, i.jsx)(E.Q, {
+        className: N.formItem,
         select: j.eU,
         title: T.intl.string(T.t.OgfUio),
         note: T.intl.string(T.t.H7j4tb),
         value: A,
         options: B
-      }), (0, i.jsx)(C.Q, {
-        className: I.formItem,
+      }), (0, i.jsx)(E.Q, {
+        className: N.formItem,
         select: e => j.yi({
           resolution: e,
           frameRate: P.frameRate
@@ -218,8 +218,8 @@ function A() {
         note: T.intl.string(T.t.nIrkW1),
         value: P.resolution,
         options: M
-      }), (0, i.jsx)(C.Q, {
-        className: I.formItem,
+      }), (0, i.jsx)(E.Q, {
+        className: N.formItem,
         select: e => j.yi({
           resolution: P.resolution,
           frameRate: e
@@ -228,12 +228,12 @@ function A() {
         note: T.intl.string(T.t["Rf9+f3"]),
         value: P.frameRate,
         options: U
-      }), (0, i.jsx)(C.O, {
-        className: I.formItem,
+      }), (0, i.jsx)(E.O, {
+        className: N.formItem,
         title: T.intl.string(T.t.pf54ER),
         note: T.intl.string(T.t["QyB/jI"]),
         children: (0, i.jsx)("div", {
-          className: N.keyRecorder,
+          className: I.keyRecorder,
           children: (0, i.jsx)(u.Z, {
             defaultValue: D.shortcut,
             onChange: V

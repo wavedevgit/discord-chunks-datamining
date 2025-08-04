@@ -12,8 +12,8 @@ var r = n(570140),
   c = n(199902),
   u = n(314897),
   d = n(569545),
-  _ = n(803647),
-  f = n(981631),
+  f = n(803647),
+  _ = n(981631),
   p = n(65154);
 
 function h(e, t, n) {
@@ -114,7 +114,7 @@ class m {
         null != r && (0, a.tK)(r, !0);
         break;
       case s.A.STOP:
-        null != r && (0, _.Z)(r, !0, null == (n = e.alsoClose) || n);
+        null != r && (0, f.Z)(r, !0, null == (n = e.alsoClose) || n);
         break;
       default:
         throw Error("unhandled stream action: ".concat(e.type))
@@ -148,13 +148,13 @@ class m {
         sourceId: a,
         audioSourceId: s,
         sound: l
-      } = e, c = u.default.getId(), _ = (0, d.V9)({
+      } = e, c = u.default.getId(), f = (0, d.V9)({
         streamType: t,
         guildId: n,
         channelId: r,
         ownerId: c
       });
-      null == i != (null == a) ? (null != i && this._onStreamApplication(_, i, null == l || l), null != a && this._onStreamDirectSource(_, a, s, l)) : new o.Z("ApplicationSwitchingManager").warn("invalid start_stream: both application + display modes were specified (pid: ".concat(i, ", source-id: ").concat(a, ")"))
+      null == i != (null == a) ? (null != i && this._onStreamApplication(f, i, null == l || l), null != a && this._onStreamDirectSource(f, a, s, l)) : new o.Z("ApplicationSwitchingManager").warn("invalid start_stream: both application + display modes were specified (pid: ".concat(i, ", source-id: ").concat(a, ")"))
     }), r.Z.subscribe("STREAM_DELETE", e => {
       let {
         streamKey: t
@@ -175,7 +175,7 @@ class m {
         videoState: t,
         context: n
       } = e;
-      n === p.Yn.STREAM && this._onCapturePaused(t === f.FQ1.PAUSED)
+      n === p.Yn.STREAM && this._onCapturePaused(t === _.FQ1.PAUSED)
     }), r.Z.subscribe("MEDIA_ENGINE_SET_GO_LIVE_SOURCE", e => {
       var t;
       let {

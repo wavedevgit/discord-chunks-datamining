@@ -17,8 +17,8 @@ function d(e) {
   let {
     theme: a,
     gradient: d,
-    disableAdaptiveTheme: _,
-    reduceAdaptiveTheme: f,
+    disableAdaptiveTheme: f,
+    reduceAdaptiveTheme: _,
     children: p
   } = e, {
     theme: h
@@ -26,12 +26,12 @@ function d(e) {
   return (0, r.jsx)(l.z, {
     theme: a,
     gradient: d,
-    disableAdaptiveTheme: _,
-    reduceAdaptiveTheme: f,
+    disableAdaptiveTheme: f,
+    reduceAdaptiveTheme: _,
     children: p(o()((0, c.Q)(null != (n = null != (t = null == d ? void 0 : d.theme) ? t : a) ? n : h), {
       [u.e3]: null != d,
-      "disable-adaptive-theme": _,
-      "reduce-adaptive-theme": f
+      "disable-adaptive-theme": f,
+      "reduce-adaptive-theme": _
     }))
   })
 }

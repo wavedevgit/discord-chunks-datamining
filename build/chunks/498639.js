@@ -20,14 +20,14 @@ var i = n(255367),
   x = n(730647),
   _ = n(584825),
   j = n(305342),
-  C = n(333867),
-  E = n(963249),
+  E = n(333867),
+  C = n(963249),
   O = n(87484),
   v = n(736519),
   S = n(365943),
   T = n(43747),
-  N = n(970815),
-  I = n(430824),
+  I = n(970815),
+  N = n(430824),
   y = n(78839),
   A = n(981631),
   P = n(474936),
@@ -79,7 +79,7 @@ function w(e) {
   }) : null
 }
 let k = function() {
-  let [e, t] = r.useState(P.Si.TIER_2), [n, _] = r.useState(null), j = (0, l.Wu)([I.Z], () => I.Z.getGuildsArray()), [k] = (0, l.Wu)([y.Z], () => [y.Z.getPremiumSubscription()]);
+  let [e, t] = r.useState(P.Si.TIER_2), [n, _] = r.useState(null), j = (0, l.Wu)([N.Z], () => N.Z.getGuildsArray()), [k] = (0, l.Wu)([y.Z], () => [y.Z.getPremiumSubscription()]);
   r.useEffect(() => {
     (0, S.t)()
   }, []);
@@ -176,7 +176,7 @@ let k = function() {
           }), (0, i.jsx)(c.zxk, {
             variant: "primary",
             text: "Select Plan",
-            onClick: () => (0, E.Z)({
+            onClick: () => (0, C.Z)({
               subscriptionTier: n,
               analyticsLocations: Y
             })
@@ -316,9 +316,9 @@ let k = function() {
             children: [null !== ee && (0, i.jsxs)(c.Text, {
               variant: "text-sm/normal",
               children: ["Error fetching Virtual Currency Balance: ", ee.message]
-            }), (0, i.jsx)(N.A4, {
+            }), (0, i.jsx)(I.A4, {
               balance: null != Q ? Q : 0,
-              balanceWidgetMode: N.b6.SELECTED
+              balanceWidgetMode: I.b6.SELECTED
             })]
           })]
         }), (0, i.jsx)(c.xJW, {
@@ -438,7 +438,7 @@ let k = function() {
           }), (0, i.jsx)(c.zxk, {
             variant: "primary",
             text: "Open Collectibles Payment Modal for SKU",
-            onClick: () => (0, C.Z)({
+            onClick: () => (0, E.Z)({
               skuId: ed,
               analyticsLocations: Y,
               variantsReturnStyle: em

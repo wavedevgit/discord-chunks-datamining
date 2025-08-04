@@ -13,7 +13,7 @@ var r = n(255367),
   u = n(587272),
   d = n(556591);
 
-function _(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,14 +22,14 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
@@ -72,7 +72,7 @@ function g(e) {
   } = e, {
     reducedMotion: a
   } = i.useContext(s.S);
-  return (0, r.jsx)(l.F, f({
+  return (0, r.jsx)(l.F, _({
     className: d.lottie,
     importData: t,
     autoplay: !0,
@@ -85,7 +85,7 @@ function E(e) {
     rive: t,
     props: n
   } = e;
-  return (0, r.jsx)(t, f({
+  return (0, r.jsx)(t, _({
     className: d.rive,
     withReducedMotion: "short-loop",
     autoplay: !0,
@@ -132,10 +132,10 @@ function y(e) {
   } = e, n = p(e, ["aspectRatio"]);
 
   function i() {
-    if ((0, u.Or)(n)) return (0, r.jsx)(m, f({}, n));
-    if ((0, u.Am)(n)) return (0, r.jsx)(g, f({}, n));
-    if ((0, u.ko)(n)) return (0, r.jsx)(E, f({}, n));
-    if ((0, u.Wv)(n)) return (0, r.jsx)(b, f({}, n));
+    if ((0, u.Or)(n)) return (0, r.jsx)(m, _({}, n));
+    if ((0, u.Am)(n)) return (0, r.jsx)(g, _({}, n));
+    if ((0, u.ko)(n)) return (0, r.jsx)(E, _({}, n));
+    if ((0, u.Wv)(n)) return (0, r.jsx)(b, _({}, n));
     if ((0, u.Mf)(n)) return (0, r.jsx)(c.gM, {
       data: n
     });

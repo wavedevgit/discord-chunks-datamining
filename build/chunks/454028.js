@@ -1,24 +1,25 @@
-/** Chunk was on 22243 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  V: () => l
+  V: () => s
 });
-var i = n(255367);
+var r = n(255367);
 n(73800);
-var r = n(120356),
-  s = n.n(r),
-  a = n(669546);
+var i = n(120356),
+  a = n.n(i),
+  o = n(669546);
 
-function l(e) {
+function s(e) {
   let {
     asset: t,
     size: n = "md",
-    className: r
-  } = e, l = s()(a.asset, {
-    [a.assetPlaceholder]: null == t && !1,
-    [a["asset--".concat(n)]]: null != n
-  }, r);
-  return (0, i.jsx)("div", {
-    className: l,
+    className: i
+  } = e, s = a()(o.asset, {
+    [o.assetPlaceholder]: null == t && !1,
+    [o["asset--".concat(n)]]: null != n
+  }, i);
+  return (0, r.jsx)("div", {
+    className: s,
     children: null != t ? t : null
   })
 }

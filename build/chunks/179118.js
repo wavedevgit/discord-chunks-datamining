@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => k
+  Z: () => M
 }), n(388685), n(642613);
 var r = n(255367),
   i = n(73800),
@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(442837),
   u = n(680018),
   d = n(755721),
-  _ = n(481060),
-  f = n(37234),
+  f = n(481060),
+  _ = n(37234),
   p = n(194359),
   h = n(700582),
   m = n(925329),
@@ -35,9 +35,9 @@ var r = n(255367),
   D = n(474936),
   L = n(388032),
   x = n(136266);
-let M = 1500;
+let k = 1500;
 
-function k(e) {
+function M(e) {
   let {
     giftCode: t,
     application: n,
@@ -45,33 +45,33 @@ function k(e) {
     subscriptionPlan: s,
     selectedGiftStyle: l,
     onClose: u,
-    hasSentMessage: f,
+    hasSentMessage: _,
     giftRecipient: p,
     giftMessageError: g,
     isSendingMessage: y
-  } = e, [O, I] = i.useState(_.kO8.Modes.DEFAULT), S = (0, c.e7)([T.Z], () => T.Z.enabled), k = f || null != l && null != p, U = (null == a ? void 0 : a.productLine) === w.POd.COLLECTIBLES, G = (0, b.Z)(), {
+  } = e, [O, I] = i.useState(f.kO8.Modes.DEFAULT), S = (0, c.e7)([T.Z], () => T.Z.enabled), M = _ || null != l && null != p, U = (null == a ? void 0 : a.productLine) === w.POd.COLLECTIBLES, G = (0, b.Z)(), {
     selectedGiftingPromotionReward: B
   } = (0, P.wD)(), V = null == G ? void 0 : G.giftPurchaseConfirmation, F = (0, E.tK)(null == B ? void 0 : B.skuId), Z = (0, E.a5)(s) && null != F && null != V, H = () => null != s ? s.skuId : null != a ? a.id : null, Y = () => {
     let e;
-    return null != g ? L.intl.string(L.t.qB8ayc) : null == s ? null : (e = s.interval === D.rV.MONTH ? k ? Z ? V.monthGiftText : L.t["4ZJ+7e"] : L.t["P+z55e"] : k ? Z ? V.yearGiftText : L.t.p0pZXF : L.t.bXqk3t, L.intl.format(e, {
+    return null != g ? L.intl.string(L.t.qB8ayc) : null == s ? null : (e = s.interval === D.rV.MONTH ? M ? Z ? V.monthGiftText : L.t["4ZJ+7e"] : L.t["P+z55e"] : M ? Z ? V.yearGiftText : L.t.p0pZXF : L.t.bXqk3t, L.intl.format(e, {
       skuName: (0, C.aq)(s.id),
       intervalCount: s.intervalCount
     }))
-  }, W = () => null != p || f && null == g ? L.intl.string(L.t.zOmK9P) : null != g ? L.intl.string(L.t.d1lrmZ) : L.intl.string(L.t["/s1xR0"]), K = (e, t) => {
+  }, W = () => null != p || _ && null == g ? L.intl.string(L.t.zOmK9P) : null != g ? L.intl.string(L.t.d1lrmZ) : L.intl.string(L.t["/s1xR0"]), K = (e, t) => {
     null != a && (0, N.dM)(new v.Z({
       code: t,
       maxUses: 1
-    }), a), (0, A.JG)(e, () => I(_.kO8.Modes.SUCCESS), () => I(_.kO8.Modes.ERROR)), setTimeout(() => {
-      I(_.kO8.Modes.DEFAULT)
-    }, M)
+    }), a), (0, A.JG)(e, () => I(f.kO8.Modes.SUCCESS), () => I(f.kO8.Modes.ERROR)), setTimeout(() => {
+      I(f.kO8.Modes.DEFAULT)
+    }, k)
   }, z = () => {
     let e;
     if (null == t) return null;
     switch (O) {
-      case _.kO8.Modes.SUCCESS:
+      case f.kO8.Modes.SUCCESS:
         e = L.intl.string(L.t.XVvPjY);
         break;
-      case _.kO8.Modes.ERROR:
+      case f.kO8.Modes.ERROR:
         e = L.intl.string(L.t.i4GM3N);
         break;
       default:
@@ -79,9 +79,9 @@ function k(e) {
     }
     return (0, r.jsxs)("div", {
       className: x.giftCodeSection,
-      children: [(0, r.jsx)(_.vwX, {
+      children: [(0, r.jsx)(f.vwX, {
         children: L.intl.string(L.t["/dG4ND"])
-      }), null != t && (0, r.jsx)(_.kO8, {
+      }), null != t && (0, r.jsx)(f.kO8, {
         hideMessage: S ? L.intl.string(L.t["0RLn4+"]) : null,
         value: (0, N.Nz)(t),
         mode: O,
@@ -110,8 +110,8 @@ function k(e) {
     children: [(0, r.jsx)(h.Z, {
       user: p,
       className: x.giftRecipient,
-      size: _.EFr.SIZE_80
-    }), (0, r.jsx)(_.X6q, {
+      size: f.EFr.SIZE_80
+    }), (0, r.jsx)(f.X6q, {
       className: x.giftRecipientName,
       variant: "heading-md/semibold",
       children: R.ZP.getName(p)
@@ -130,8 +130,8 @@ function k(e) {
       className: x.__invalid_icon,
       size: m.Z.Sizes.LARGE,
       skuId: H()
-    }) : null, (0, r.jsx)(_.$jN, {
-      type: _.RAz.PULSING_ELLIPSIS
+    }) : null, (0, r.jsx)(f.$jN, {
+      type: f.RAz.PULSING_ELLIPSIS
     })]
   }) : (0, r.jsxs)("div", {
     className: o()(x.confirmation, {
@@ -142,14 +142,14 @@ function k(e) {
       className: x.__invalid_icon,
       size: m.Z.Sizes.LARGE,
       skuId: H()
-    }) : null, (0, r.jsx)(_.X6q, {
+    }) : null, (0, r.jsx)(f.X6q, {
       variant: "heading-lg/semibold",
       className: o()({
         [x.header]: null == l && !U,
         [x.headerCustomGifting]: null != l && !U
       }),
       children: W()
-    }), f && null != p && null == g || k ? X() : q()]
+    }), _ && null != p && null == g || M ? X() : q()]
   })
 }
 let j = e => {
@@ -171,20 +171,20 @@ let j = e => {
   let w = l().sortBy(P, e => C.indexOf(e.id));
   return (0, r.jsxs)("div", {
     className: x.giftRecipientSection,
-    children: [(0, r.jsx)(_.vwX, {
+    children: [(0, r.jsx)(f.vwX, {
       children: L.intl.string(L.t.MJw05e)
     }), (0, r.jsxs)("div", {
       className: x.giftRecipient,
-      children: [(0, r.jsx)(_.VcW, {
+      children: [(0, r.jsx)(f.VcW, {
         placeholder: L.intl.string(L.t.J019jY),
         wrapperClassName: x.giftRecipientInputWrapper,
         className: s ? x.giftRecipientInputError : void 0,
         renderOptionPrefix: e => (null == e ? void 0 : e.value) == null ? null : (0, r.jsx)(h.Z, {
           user: e.value,
-          size: _.EFr.SIZE_20
+          size: f.EFr.SIZE_20
         }),
-        renderLeading: () => v ? (0, r.jsx)(_.$jN, {
-          type: _.RAz.PULSING_ELLIPSIS
+        renderLeading: () => v ? (0, r.jsx)(f.$jN, {
+          type: f.RAz.PULSING_ELLIPSIS
         }) : null,
         value: a,
         onChange: e => {
@@ -199,7 +199,7 @@ let j = e => {
         loading: m,
         onClick: () => {
           E(!0), (0, g.YD)(a, t).then(() => {
-            n(), (0, f.Ou)()
+            n(), (0, _.Ou)()
           }).catch(() => {
             d(!0), E(!1)
           })

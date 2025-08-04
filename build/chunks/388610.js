@@ -6,8 +6,8 @@ n.d(t, {
 }), n(997841), n(388685);
 var c, u = n(392711),
   d = n.n(u),
-  _ = n(913527),
-  f = n.n(_),
+  f = n(913527),
+  _ = n.n(f),
   p = n(442837),
   h = n(544891),
   m = n(570140),
@@ -78,19 +78,19 @@ function x(e) {
   return !0
 }
 
-function M(e) {
+function k(e) {
   let t = O.Z.getChannel(e.channelId);
   if (null == t) return j();
   N = v.QZA.OPEN, o = a = t, D = "location" in e && null != e.location ? e.location : null, i = "subsection" in e ? e.subsection : null, null != o && (o = o.set("nsfw", o.isNSFW())), s = O.Z.getChannel(o.parent_id), l = o.getGuildId();
   let n = o.isModeratorReportChannel() ? v.CoT.PERMISSIONS : v.CoT.OVERVIEW;
-  return C = {}, k({
+  return C = {}, M({
     type: "CHANNEL_SETTINGS_SET_SECTION",
     section: null != r ? r : n,
     subsection: i
   }), !0
 }
 
-function k(e) {
+function M(e) {
   r = e.section, i = e.subsection, null != o && r === v.CoT.INSTANT_INVITES && (P = !0, h.tn.get({
     url: v.ANM.INSTANT_INVITES(o.id),
     oldFormErrors: !0,
@@ -141,8 +141,8 @@ function F(e) {
     rateLimitPerUser: c,
     defaultThreadRateLimitPerUser: u,
     autoArchiveDuration: d,
-    locked: _,
-    invitable: f,
+    locked: f,
+    invitable: _,
     defaultAutoArchiveDuration: p,
     template: h,
     defaultReactionEmoji: m,
@@ -158,10 +158,10 @@ function F(e) {
   if (null == o) return !1;
   null != t && (o = o.set("name", t)), null != r && (o = o.set("topic", r)), null != i && (o = o.set("bitrate", i)), null != a && (o = o.set("userLimit", a)), null != s && (o = o.set("nsfw", s)), null != l && (o = o.set("flags", l)), null != c && (o = o.set("rateLimitPerUser", c)), null != u && (o = o.set("defaultThreadRateLimitPerUser", u)), null != d && (o = o.set("threadMetadata", A(T({}, o.threadMetadata), {
     autoArchiveDuration: d
-  }))), null != _ && (o = o.set("threadMetadata", A(T({}, o.threadMetadata), {
-    locked: _
   }))), null != f && (o = o.set("threadMetadata", A(T({}, o.threadMetadata), {
-    invitable: f
+    locked: f
+  }))), null != _ && (o = o.set("threadMetadata", A(T({}, o.threadMetadata), {
+    invitable: _
   }))), null != p && (o = o.set("defaultAutoArchiveDuration", p)), null != h && (o = o.set("template", h)), null != n && (o = o.set("type", n)), void 0 !== g && (o = o.set("rtcRegion", g)), null != E && (o = o.set("videoQualityMode", E)), void 0 !== m && (o = o.set("defaultReactionEmoji", m)), null != b && (o = o.set("availableTags", b)), null != y && (o = o.set("defaultSortOrder", y)), null != v && (o = o.set("defaultTagSetting", v)), null != O && (o = o.set("defaultForumLayout", O)), void 0 !== I && (o = o.set("iconEmoji", I)), null != S && (o = o.set("themeColor", S)), V()
 }
 
@@ -176,7 +176,7 @@ function Z(e) {
     uses: e.uses,
     maxUses: e.max_uses,
     maxAge: e.max_age,
-    createdAt: f()(e.created_at),
+    createdAt: _()(e.created_at),
     type: e.type
   })
 }
@@ -281,7 +281,7 @@ class J extends(c = p.ZP.Store) {
 }
 I(J, "displayName", "ChannelSettingsStore");
 let $ = new J(m.Z, {
-    CHANNEL_SETTINGS_INIT: M,
+    CHANNEL_SETTINGS_INIT: k,
     CHANNEL_SETTINGS_SUBMIT: U,
     CHANNEL_SETTINGS_SUBMIT_SUCCESS: G,
     CHANNEL_SETTINGS_SUBMIT_FAILURE: B,
@@ -290,7 +290,7 @@ let $ = new J(m.Z, {
     CHANNEL_PERMISSIONS_DELETE_OVERWRITE_SUCCESS: q,
     CHANNEL_SETTINGS_OVERWRITE_SELECT: Q,
     CHANNEL_SETTINGS_UPDATE: F,
-    CHANNEL_SETTINGS_SET_SECTION: k,
+    CHANNEL_SETTINGS_SET_SECTION: M,
     CHANNEL_SETTINGS_LOADED_INVITES: H,
     CHANNEL_UPDATES: z,
     CHANNEL_DELETE: X,

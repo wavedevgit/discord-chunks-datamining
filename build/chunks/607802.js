@@ -21,7 +21,7 @@ n.d(t, {
   i3: () => j,
   jW: () => D,
   kG: () => V,
-  qc: () => M,
+  qc: () => k,
   s5: () => T,
   zH: () => N
 }), n(539854), n(997841), n(35282), n(388685), n(781311), n(804061), n(704826);
@@ -35,9 +35,9 @@ var a = n(349033),
   c = n(731290),
   u = n(699516),
   d = n(246946),
-  _ = n(594174);
+  f = n(594174);
 n(630388);
-var f = n(709054),
+var _ = n(709054),
   p = n(51144),
   h = n(945577),
   m = n(494573),
@@ -188,7 +188,7 @@ function w(e) {
 
 function D(e, t) {
   if (c.Z.didAgree(t)) {
-    let t = _.default.getCurrentUser();
+    let t = f.default.getCurrentUser();
     null != t && (e.include_nsfw = null == t.nsfwAllowed || t.nsfwAllowed)
   }
 }
@@ -206,7 +206,7 @@ function L(e) {
         case E.dCx.ANSWER_AFTER:
           let r = e.getData("start"),
             i = e.getData("end");
-          r && (t.min_id = f.default.fromTimestamp(r)), i && (t.max_id = f.default.fromTimestamp(i));
+          r && (t.min_id = _.default.fromTimestamp(r)), i && (t.max_id = _.default.fromTimestamp(i));
           return
       }
       let a = w(n);
@@ -249,7 +249,7 @@ function x(e, t, n) {
   }
 }
 
-function M(e, t) {
+function k(e, t) {
   let n, {
     currentToken: r,
     nextToken: i,
@@ -288,7 +288,7 @@ function M(e, t) {
   })
 }
 
-function k(e) {
+function M(e) {
   if (null == e.match(/([\\" ])/g)) return e;
   {
     let t = e.replaceAll(/([\\"])/g, (e, t) => "\\".concat(t));
@@ -303,7 +303,7 @@ function j(e, t) {
     let r = e.group;
     n = n.concat(e.results.map(n => {
       let i = n.text;
-      if (null != n.channel && (i = k(i)), t.type === E.Sap.FILTER_ALL) {
+      if (null != n.channel && (i = M(i)), t.type === E.Sap.FILTER_ALL) {
         var a;
         r = null != (a = n.group) ? a : r;
         let e = g.ZP[r];
@@ -372,10 +372,10 @@ function W(e) {
 function K(e) {
   let t = e.name,
     n = !1;
-  if (e.isGroupDM()) t = (0, o.F6)(e, _.default, u.Z);
+  if (e.isGroupDM()) t = (0, o.F6)(e, f.default, u.Z);
   else if (e.isDM()) {
     let n = e.getRecipientId(),
-      r = _.default.getUser(n),
+      r = f.default.getUser(n),
       i = p.ZP.getUserTag(r);
     if (null == i) return null;
     t = i
@@ -384,10 +384,10 @@ function K(e) {
     let r = l.ZP.getTextChannelNameDisambiguations(e.getGuildId())[e.id];
     (null == r ? void 0 : r.name) != null && (t = r.name)
   }
-  return (t = k(t), n) ? "#".concat(t) : t
+  return (t = M(t), n) ? "#".concat(t) : t
 }
 
 function z() {
   var e, t;
-  return null != (t = null == (e = _.default.getCurrentUser()) ? void 0 : e.isStaff()) && t
+  return null != (t = null == (e = f.default.getCurrentUser()) ? void 0 : e.isStaff()) && t
 }

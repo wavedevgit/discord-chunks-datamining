@@ -19,18 +19,18 @@ function d(e) {
     textId: n,
     tags: i,
     platformIcon: d,
-    contextMenu: _
+    contextMenu: f
   } = e, {
-    themeType: f
+    themeType: _
   } = (0, l.z)();
-  return (null == t || "" === t) && null == _ ? null : null == t || "" === t ? (0, r.jsx)("div", {
+  return (null == t || "" === t) && null == f ? null : null == t || "" === t ? (0, r.jsx)("div", {
     className: a()(u.headerContextMenu, u.absolute),
-    children: _
+    children: f
   }) : (0, r.jsxs)("div", {
     className: u.header,
     children: [(0, r.jsxs)(o.Text, {
       className: u.headerText,
-      variant: f === c.lY.SIDEBAR ? "text-xs/semibold" : "text-xs/medium",
+      variant: _ === c.lY.SIDEBAR ? "text-xs/semibold" : "text-xs/medium",
       color: "header-primary",
       id: n,
       children: [(0, r.jsx)(s.Z, {
@@ -42,9 +42,9 @@ function d(e) {
           WebkitMaskImage: "url(".concat(d.whiteSVG, ")")
         }
       }), i]
-    }), null != _ && (0, r.jsx)("div", {
+    }), null != f && (0, r.jsx)("div", {
       className: u.headerContextMenu,
-      children: _
+      children: f
     })]
   })
 }

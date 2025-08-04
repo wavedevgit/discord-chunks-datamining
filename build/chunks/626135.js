@@ -3,7 +3,7 @@
 n.r(t), n.d(t, {
   AnalyticEventConfigs: () => V,
   AnalyticsContext: () => N,
-  AnalyticsSchema: () => f,
+  AnalyticsSchema: () => _,
   addExtraAnalyticsDecorator: () => B,
   clearAnalyticsEventsRecording: () => et,
   debugLogEvent: () => q,
@@ -28,8 +28,8 @@ var r = n(73800),
   c = n(565384),
   u = n(569611),
   d = n(97145),
-  _ = n(857192),
-  f = n(747161),
+  f = n(857192),
+  _ = n(747161),
   p = n(848479),
   h = n(960048),
   m = n(981631),
@@ -104,8 +104,8 @@ let A = {
   D = 3e5,
   L = 9e5,
   x = 36e5,
-  M = 864e5,
-  k = .001,
+  k = 864e5,
+  M = .001,
   j = performance.now(),
   U = (0, s.X6)() ? (0, s.Ub)((0, o.R)()) : null;
 a.extendSuperProperties({
@@ -163,7 +163,7 @@ let V = {
     throttleKeys: e => null != e.channel_static_route ? [e.guild_id, e.channel_static_route, e.channel_view] : [e.channel_id, e.channel_view]
   },
   [m.rMx.TEXT_IN_VOICE_OPENED]: {
-    throttlePeriod: M,
+    throttlePeriod: k,
     throttleKeys: e => [e.channel_id]
   },
   [m.rMx.NOTIFICATION_VIEWED]: {
@@ -218,25 +218,25 @@ let V = {
     throttleKeys: () => []
   },
   [m.rMx.RPC_SERVER_ERROR_CAUGHT]: {
-    throttlePeriod: M,
+    throttlePeriod: k,
     throttleKeys: () => []
   },
   [m.rMx.RPC_COMMAND_SENT]: {
-    throttlePeriod: M,
+    throttlePeriod: k,
     throttleKeys: e => [e.application_id, e.command],
-    throttlePercent: k
+    throttlePercent: M
   },
   [m.rMx.RPC_SUBSCRIPTION_REQUESTED]: {
-    throttlePeriod: M,
+    throttlePeriod: k,
     throttleKeys: e => [e.application_id, e.event],
-    throttlePercent: k
+    throttlePercent: M
   },
   [m.rMx.ACTIVITY_HANDSHAKE]: {
-    throttlePeriod: M,
+    throttlePeriod: k,
     throttleKeys: e => [e.application_id]
   },
   [m.rMx.CHANNEL_BANNER_VIEWED]: {
-    throttlePeriod: M,
+    throttlePeriod: k,
     throttleKeys: e => [e.banner_type, e.channel_id]
   },
   [m.rMx.PREMIUM_UPSELL_VIEWED]: {
@@ -406,7 +406,7 @@ function z(e) {
 
 function q(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
-  _.default.isLoggingAnalyticsEvents && console.info("AnalyticsUtils.track(...):", e, t), n ? u.Hj("Analytics", e, t) : u.Hj("Analytics", e)
+  f.default.isLoggingAnalyticsEvents && console.info("AnalyticsUtils.track(...):", e, t), n ? u.Hj("Analytics", e, t) : u.Hj("Analytics", e)
 }
 let X = !1,
   Q = {};

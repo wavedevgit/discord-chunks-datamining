@@ -34,7 +34,7 @@ function u(e) {
 
 function d(e, t) {
   if (null == e) return {};
-  var n, r, i = _(e, t);
+  var n, r, i = f(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -42,14 +42,14 @@ function d(e, t) {
   return i
 }
 
-function _(e, t) {
+function f(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let f = new s.Yd("DirectVideo");
+let _ = new s.Yd("DirectVideo");
 class p {
   addref() {
     this.refcount++
@@ -80,7 +80,7 @@ function E(e, t) {
     onReady: s,
     onResize: l,
     className: c
-  } = e, _ = d(e, ["streamId", "paused", "onReady", "onResize", "className"]);
+  } = e, f = d(e, ["streamId", "paused", "onReady", "onResize", "className"]);
   let p = i.useRef(null),
     h = i.useRef(null),
     E = i.useRef({
@@ -116,7 +116,7 @@ function E(e, t) {
 
     function n() {
       var e, t;
-      f.info("handleReady for ".concat(b.current.streamId, ", have onReady callback = ").concat(null != b.current.onReady)), null == (e = (t = b.current).onReady) || e.call(t)
+      _.info("handleReady for ".concat(b.current.streamId, ", have onReady callback = ").concat(null != b.current.onReady)), null == (e = (t = b.current).onReady) || e.call(t)
     }
 
     function r() {
@@ -136,19 +136,19 @@ function E(e, t) {
     });
     if (null != e) {
       let a = document.createElement("video");
-      a.style.display = "block", a.style.width = "100%", a.style.height = "100%", a.autoplay = !0, a.muted = !0, a.addEventListener("pause", r), a.addEventListener("resize", t), a.addEventListener("canplaythrough", n), f.info("create video element for ".concat(b.current.streamId, ", readyState=").concat(a.readyState)), a.readyState > 3 && f.error("video element for ".concat(b.current.streamId, " was ready before attached")), e.appendChild(a), i.disconnect(), i.observe(a), h.current = a
+      a.style.display = "block", a.style.width = "100%", a.style.height = "100%", a.autoplay = !0, a.muted = !0, a.addEventListener("pause", r), a.addEventListener("resize", t), a.addEventListener("canplaythrough", n), _.info("create video element for ".concat(b.current.streamId, ", readyState=").concat(a.readyState)), a.readyState > 3 && _.error("video element for ".concat(b.current.streamId, " was ready before attached")), e.appendChild(a), i.disconnect(), i.observe(a), h.current = a
     }
   }, []), i.useEffect(() => {
     b.current.streamId = n, b.current.paused = a, b.current.onReady = s, b.current.onResize = l
   }), i.useEffect(() => {
     let e = h.current;
     if (null != e)
-      if (!a) return f.info("attaching srcObject for ".concat(n)), e.srcObject = m(n), () => {
+      if (!a) return _.info("attaching srcObject for ".concat(n)), e.srcObject = m(n), () => {
         g(n), e.srcObject = null
       };
       else null != e.srcObject && (e.srcObject = null, g(n))
   }, [a, n]), (0, r.jsx)("div", u({
     className: o()("media-engine-video", c),
     ref: p
-  }, _))
+  }, f))
 }

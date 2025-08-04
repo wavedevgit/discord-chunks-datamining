@@ -15,8 +15,8 @@ var i, a = n(392711),
   c = n(442837),
   u = n(433517),
   d = n(570140),
-  _ = n(593472),
-  f = n(726542),
+  f = n(593472),
+  _ = n(726542),
   p = n(439849),
   h = n(710845),
   m = n(353926),
@@ -38,8 +38,8 @@ var i, a = n(392711),
   D = n(823379),
   L = n(358085),
   x = n(998502),
-  M = n(145597),
-  k = n(981631),
+  k = n(145597),
+  M = n(981631),
   j = n(987650);
 
 function U(e, t, n) {
@@ -157,7 +157,7 @@ let F = new h.Z("RunningGameStore"),
       os: "linux",
       name: "spotify"
     }],
-    name: f.Z.get(k.ABu.SPOTIFY).name
+    name: _.Z.get(M.ABu.SPOTIFY).name
   }],
   K = [],
   z = !0,
@@ -184,8 +184,8 @@ let F = new h.Z("RunningGameStore"),
   ec = {},
   eu = new Set,
   ed = new Set,
-  e_ = null,
   ef = null,
+  e_ = null,
   ep = new Map,
   eh = new Map;
 
@@ -302,7 +302,7 @@ function eS(e) {
       overlayMethod: y.gl.Disabled
     }
   }
-  let a = (0, O.NW)("getRawOverlayGameStatus") && (0, M.supportsOutOfProcess)() && !t,
+  let a = (0, O.NW)("getRawOverlayGameStatus") && (0, k.supportsOutOfProcess)() && !t,
     o = eT(null != i ? i : e),
     s = b.v.legacyEnabled,
     l = a && !o,
@@ -321,9 +321,9 @@ function eS(e) {
   }
   let d = null == e.id ? null : ea[e.id];
   if (null != d) {
-    var _, f;
-    let e = null != (_ = d.enabledOOP) ? _ : l,
-      t = null != (f = d.enabled) ? f : s,
+    var f, _;
+    let e = null != (f = d.enabledOOP) ? f : l,
+      t = null != (_ = d.enabled) ? _ : s,
       n = e ? y.gl.OutOfProcess : y.gl.Hook;
     return {
       source: e && !o ? y.d0.OOP_DEFAULT_DATABASE : y.d0.DATABASE,
@@ -412,10 +412,10 @@ function eL() {
 }
 
 function ex(e) {
-  return null != et[e.exePath] ? k.GQo.DISCORD : /steamapps/.test(e.cmdLine) ? k.GQo.STEAM : /-epicapp/.test(e.cmdLine) ? k.GQo.EPIC : e.id === I.eB ? k.GQo.ROBLOX : e.distributor
+  return null != et[e.exePath] ? M.GQo.DISCORD : /steamapps/.test(e.cmdLine) ? M.GQo.STEAM : /-epicapp/.test(e.cmdLine) ? M.GQo.EPIC : e.id === I.eB ? M.GQo.ROBLOX : e.distributor
 }
 
-function eM(e) {
+function ek(e) {
   null != e && 0 !== e.length && (e.forEach(e => {
     if (er.gamesSeen.some(t => {
         if (t.name === e.name) {
@@ -432,10 +432,10 @@ function eM(e) {
       if (e.hidden) return;
       er.gamesSeen.unshift(eg(e))
     }
-  }), er.gamesSeen.sort((e, t) => t.lastFocused - e.lastFocused), eR(), w.Z.setRecentGames(ek().map(e => eP(e, e3, A.Z, N.Z))))
+  }), er.gamesSeen.sort((e, t) => t.lastFocused - e.lastFocused), eR(), w.Z.setRecentGames(eM().map(e => eP(e, e3, A.Z, N.Z))))
 }
 
-function ek() {
+function eM() {
   let e = o().values(er.gameOverrides);
   return er.gamesSeen.filter(e => void 0 === er.gameOverrides[ev(e)]).concat(e)
 }
@@ -453,11 +453,11 @@ function ej(e, t) {
 }
 
 function eU() {
-  $ = (J = J.map(e => e.distributor === k.GQo.ROBLOX ? (0, T.ON)(e, S.Z.getCurrentSubgameInfo()) : e)).length > 0 ? J[0] : null, eM(J)
+  $ = (J = J.map(e => e.distributor === M.GQo.ROBLOX ? (0, T.ON)(e, S.Z.getCurrentSubgameInfo()) : e)).length > 0 ? J[0] : null, ek(J)
 }
 
 function eG(e) {
-  eM(J)
+  ek(J)
 }
 
 function eB(e) {
@@ -496,7 +496,7 @@ function eY(e) {
   } else t = ev(r), r.hidden && (en[t] = !0), r.hidden = !1;
   (null == r.lastFocused || 0 === r.lastFocused) && (r.lastFocused = Math.floor(Date.now() / 1e3)), er.gameOverrides[t] = V(G({}, r), {
     add: !0
-  }), eM(J), eL(), eR(), eO()
+  }), ek(J), eL(), eR(), eO()
 }
 
 function eW() {
@@ -504,11 +504,11 @@ function eW() {
 }
 
 function eK(e) {
-  e_ = e.level, ef = e.intervalSeconds
+  ef = e.level, e_ = e.intervalSeconds
 }
 
 function ez() {
-  e_ = null, ef = null, eu.clear()
+  ef = null, e_ = null, eu.clear()
 }
 
 function eq(e) {
@@ -523,11 +523,11 @@ function eq(e) {
     let t = K.some(t => e.cleanedExePath.includes(t));
     return t && eu.add(e.pid), t
   }).map(e => e.cleanedExePath);
-  t.length > 0 && R.default.track(k.rMx.GAME_DETECTION_DEBUGGING_KEYWORD_MATCH, {
+  t.length > 0 && R.default.track(M.rMx.GAME_DETECTION_DEBUGGING_KEYWORD_MATCH, {
     keywords: K,
     paths: t,
-    debugging_level: e_,
-    interval_seconds: ef
+    debugging_level: ef,
+    interval_seconds: e_
   })
 }
 
@@ -547,7 +547,7 @@ function eQ(e) {
   let {
     game: t
   } = e, n = eN(t);
-  er.enableDetection[ev(t)] = !n, eR(), J.length > 0 && J.some(e => e.distributor === k.GQo.ROBLOX) && eU(), R.default.track(k.rMx.USER_SETTINGS_GAME_DETECTION_TOGGLE, {
+  er.enableDetection[ev(t)] = !n, eR(), J.length > 0 && J.some(e => e.distributor === M.GQo.ROBLOX) && eU(), R.default.track(M.rMx.USER_SETTINGS_GAME_DETECTION_TOGGLE, {
     enabled: !n
   })
 }
@@ -583,24 +583,24 @@ function e0(e) {
 }
 
 function e1() {
-  m.Z.hasLoadedExperiments && Y.length > 0 && (eM(Y), Y = [])
+  m.Z.hasLoadedExperiments && Y.length > 0 && (ek(Y), Y = [])
 }!__OVERLAY__ && ((0, L.isDesktop)() || j.iP) && (ei = function() {
   let e = [],
     t = new Set;
   r = {};
   let n = A.Z.games,
-    i = (0, O.NW)("handleGamesDatabaseUpdate") && (0, M.supportsOutOfProcess)();
+    i = (0, O.NW)("handleGamesDatabaseUpdate") && (0, k.supportsOutOfProcess)();
   for (let e of n) {
     var a, o, s, l;
     let t = eT(e),
-      n = i && !t || _.r.enabledOOP,
-      r = null != (a = e.overlay) ? a : _.r.enabled;
+      n = i && !t || f.r.enabledOOP,
+      r = null != (a = e.overlay) ? a : f.r.enabled;
     ea[e.id] = {
-      compatibilityHook: null != (o = e.overlayCompatibilityHook) ? o : _.r.compatibilityHook,
-      warn: null != (s = e.overlayWarn) ? s : _.r.warn,
+      compatibilityHook: null != (o = e.overlayCompatibilityHook) ? o : f.r.compatibilityHook,
+      warn: null != (s = e.overlayWarn) ? s : f.r.warn,
       enabled: r,
       enabledOOP: n,
-      allowHook: null != (l = e.hook) ? l : _.r.allowHook,
+      allowHook: null != (l = e.hook) ? l : f.r.allowHook,
       supportsOutOfProcessOverlay: e.supportsOutOfProcessOverlay
     }
   }
@@ -698,7 +698,7 @@ class e2 extends(i = c.ZP.Store) {
   }
   getGamesSeen(e) {
     let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
-      n = ek();
+      n = eM();
     if (e) {
       let e = this.getVisibleGame();
       if (null != e) {

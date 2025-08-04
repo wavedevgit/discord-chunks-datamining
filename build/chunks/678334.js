@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(442837),
   u = n(481060),
   d = n(906732),
-  _ = n(600164),
-  f = n(717401),
+  f = n(600164),
+  _ = n(717401),
   p = n(160913),
   h = n(311821),
   m = n(459965),
@@ -42,8 +42,8 @@ function P(e) {
     invoiceError: D,
     planError: L,
     onPurchaseError: x,
-    baseAnalyticsData: M,
-    flowStartTime: k,
+    baseAnalyticsData: k,
+    flowStartTime: M,
     trialId: j,
     planGroup: U,
     analyticsLocation: G,
@@ -75,11 +75,11 @@ function P(e) {
     selectedGiftStyle: ec,
     customGiftMessage: eu,
     emojiConfetti: ed,
-    soundEffect: e_,
-    giftRecipient: ef,
+    soundEffect: ef,
+    giftRecipient: e_,
     selectedGiftingPromotionReward: ep
-  } = (0, O.wD)(), eh = (0, f.a5)(K), em = (0, b.MY)(ef), eg = {};
-  eg.gift_style = ec, eg.reward_sku_ids = eh && (null == ep ? void 0 : ep.skuId) != null ? [null == ep ? void 0 : ep.skuId] : [], em === b.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && (l()(null != ef, "Gift recipient must be set at purchase review step for these gift options."), eg.recipient_id = ef.id, eg.custom_message = eu, eg.emoji_id = null == ed ? void 0 : ed.id, eg.emoji_name = (null == ed ? void 0 : ed.id) == null ? null == ed ? void 0 : ed.surrogates : void 0, eg.sound_id = null == e_ ? void 0 : e_.soundId);
+  } = (0, O.wD)(), eh = (0, _.a5)(K), em = (0, b.MY)(e_), eg = {};
+  eg.gift_style = ec, eg.reward_sku_ids = eh && (null == ep ? void 0 : ep.skuId) != null ? [null == ep ? void 0 : ep.skuId] : [], em === b.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && (l()(null != e_, "Gift recipient must be set at purchase review step for these gift options."), eg.recipient_id = e_.id, eg.custom_message = eu, eg.emoji_id = null == ed ? void 0 : ed.id, eg.emoji_name = (null == ed ? void 0 : ed.id) == null ? null == ed ? void 0 : ed.surrogates : void 0, eg.sound_id = null == ef ? void 0 : ef.soundId);
   let eE = null == K ? void 0 : K.id,
     eb = (0, T.sE)(j, z.paymentSourceId, eE),
     {
@@ -113,10 +113,10 @@ function P(e) {
       hasRedirectURL: eT,
       setHasRedirectURL: eS,
       isGift: el,
-      baseAnalyticsData: M,
+      baseAnalyticsData: k,
       analyticsLocation: G,
       analyticsLocations: ey,
-      flowStartTime: k,
+      flowStartTime: M,
       subscriptionPlan: K,
       planGroup: U,
       trialId: j,
@@ -136,9 +136,9 @@ function P(e) {
       invoicePreview: ea,
       orderId: eP
     })
-  }, eM = {
-    baseAnalyticsData: M,
-    flowStartTime: k,
+  }, ek = {
+    baseAnalyticsData: k,
+    flowStartTime: M,
     makePurchase: ex,
     onNext: s,
     onPurchaseError: x,
@@ -146,18 +146,18 @@ function P(e) {
     paymentSourceId: J,
     purchaseTokenAuthState: B,
     setPurchaseState: n
-  }, ek = i.useRef(eM);
+  }, eM = i.useRef(ek);
   i.useEffect(() => {
-    ek.current = eM
+    eM.current = ek
   }), i.useEffect(() => {
     let {
       makePurchase: e
-    } = ek.current;
+    } = eM.current;
     eb && !el && null == t && e()
   }, [eb, el, t]);
   let ej = null != V || Q === C.GZQ.ONE_TIME && !el;
   return eb ? null : (0, r.jsxs)(u.mzw, {
-    align: _.Z.Align.CENTER,
+    align: f.Z.Align.CENTER,
     className: o()(es, R.modalFooter),
     children: [(0, r.jsx)(g.Z, {
       legalTermsNodeRef: P,

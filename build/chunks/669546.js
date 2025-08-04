@@ -1,5 +1,6 @@
-/** Chunk was on 63830 **/
-n.r(e.exports = {
+/** Chunk was on web.js **/
+"use strict";
+var r = {
   popover: "popover_d6f39b",
   popoverGradientWrapper: "popoverGradientWrapper_d6f39b",
   popoverContentWithGradient: "popoverContentWithGradient_d6f39b",
@@ -30,4 +31,5 @@ n.r(e.exports = {
   caretIcon: "caretIcon_d6f39b",
   caretFill: "caretFill_d6f39b",
   caretStroke: "caretStroke_d6f39b"
-})
+};
+n.r(e.exports = r)

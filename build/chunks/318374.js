@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(481060),
   u = n(239091),
   d = n(751688),
-  _ = n(5192),
-  f = n(51144),
+  f = n(5192),
+  _ = n(51144),
   p = n(388032),
   h = n(223390);
 
@@ -101,8 +101,8 @@ function v(e) {
     onUserPopoutRequestClose: D,
     "aria-label": L,
     "aria-labelledby": x,
-    "aria-hidden": M
-  } = e, [k, j] = i.useState(!1), U = y(v), G = i.useRef(null), B = t.length - a, V = B + 1, F = B > 0 && !A && !M, Z = () => (0, r.jsx)(c.VqE, {
+    "aria-hidden": k
+  } = e, [M, j] = i.useState(!1), U = y(v), G = i.useRef(null), B = t.length - a, V = B + 1, F = B > 0 && !A && !k, Z = () => (0, r.jsx)(c.VqE, {
     className: h.popoutWrapper,
     "aria-label": L,
     "aria-labelledby": x,
@@ -112,7 +112,7 @@ function v(e) {
         user: e,
         guildId: s,
         channelId: m,
-        nick: _.ZP.getNickname(s, m, e),
+        nick: f.ZP.getNickname(s, m, e),
         disablePopout: "function" == typeof C ? C(e.id) : C,
         onClick: w,
         onPopoutRequestClose: () => {
@@ -136,8 +136,8 @@ function v(e) {
     let e = F ? a - 1 : Math.min(t.length, a),
       n = e - 1,
       i = l()(t).take(e).map((e, t) => {
-        let i = _.ZP.getNickname(s, m, e),
-          a = null != i ? i : f.ZP.getName(e),
+        let i = f.ZP.getNickname(s, m, e),
+          a = null != i ? i : _.ZP.getName(e),
           l = t === n && !F,
           u = o()(h.avatar, U, l && h.isLast),
           d = (0, r.jsx)(c.qEK, {
@@ -172,7 +172,7 @@ function v(e) {
     return (0, r.jsx)(c.yRy, {
       targetElementRef: G,
       renderPopout: Z,
-      shouldShow: k,
+      shouldShow: M,
       position: "bottom",
       onRequestClose: () => j(!1),
       children: t => (0, r.jsx)(c.P3F, b(g({}, t), {
@@ -198,7 +198,7 @@ function v(e) {
     "aria-label": L,
     "aria-labelledby": x,
     className: o()(E, h.avatars),
-    "aria-hidden": M,
+    "aria-hidden": k,
     children: [H(), Y()]
   })
 }
