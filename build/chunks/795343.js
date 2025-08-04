@@ -37,15 +37,15 @@ function C(e) {
     currentPage: L,
     totalCount: I,
     isFetchingResults: k
-  } = (0, g.a)(), N = (0, o.Wu)([d.Z], () => d.Z.getProductsBySkus(T)), w = l.useCallback(() => {
+  } = (0, g.a)(), N = (0, o.Wu)([d.Z], () => d.Z.getProductsBySkus(T)), A = l.useCallback(() => {
     var e;
     null == C || null == (e = C.current) || e.scrollToTop({
       animate: !0
     })
-  }, [C]), A = null == T ? void 0 : T.join("");
+  }, [C]), w = null == T ? void 0 : T.join("");
   l.useEffect(() => {
-    w()
-  }, [A, w]);
+    A()
+  }, [w, A]);
   let B = (0, p.a)(),
     R = l.useMemo(() => B(N), [B, N]);
   l.useEffect(() => {

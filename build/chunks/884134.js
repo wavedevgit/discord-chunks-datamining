@@ -404,7 +404,6 @@ function ee(e) {
             children: [(0, r.jsx)(X, {}), (0, r.jsx)(c.z, {
               variant: "secondary",
               onClick: H,
-              icon: f.Oe7,
               text: j.intl.string(j.t.yBZMsb),
               fullWidth: !0
             })]

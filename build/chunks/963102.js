@@ -146,8 +146,8 @@ function N(e) {
     onClose: i,
     selectedTab: f,
     handleTransition: g
-  } = e, y = (0, p.ZP)(), N = (0, s.e7)([v.default], () => v.default.getCurrentUser()), w = (null == N ? void 0 : N.isStaff()) || (null == N ? void 0 : N.isStaffPersonal()) || !1, {
-    enabled: A
+  } = e, y = (0, p.ZP)(), N = (0, s.e7)([v.default], () => v.default.getCurrentUser()), A = (null == N ? void 0 : N.isStaff()) || (null == N ? void 0 : N.isStaffPersonal()) || !1, {
+    enabled: w
   } = (0, _.WX)({
     location: "collectibles_shop_header_bar"
   }), B = [{
@@ -157,7 +157,7 @@ function N(e) {
     tab: j.AW.CATALOG,
     displayText: T.intl.string(T.t.Ah5sJi)
   }];
-  A && B.push({
+  w && B.push({
     tab: j.AW.ORBS,
     displayText: T.intl.string(T.t.EBYkzs)
   });
@@ -180,8 +180,8 @@ function N(e) {
       className: a()(e, L.headerBar, {
         [L.fullscreenHeaderBar]: t
       }),
-      innerClassname: A ? L.headerBarInner : void 0,
-      toolbar: t || !w ? null : (0, n.jsx)(l.Fragment, {}),
+      innerClassname: w ? L.headerBarInner : void 0,
+      toolbar: t || !A ? null : (0, n.jsx)(l.Fragment, {}),
       children: [(0, n.jsxs)(c.P3F, {
         className: L.shopHomeLink,
         onClick: () => g(j.AW.HOME),
@@ -210,12 +210,12 @@ function N(e) {
             handleTransition: g
           }, t)
         })
-      }), (A || t || F) && (0, n.jsxs)("div", {
+      }), (w || t || F) && (0, n.jsxs)("div", {
         className: L.alignedRightContent,
         children: [F && (0, n.jsx)(x.Z, {
           handleTransition: g,
           selectedTab: f
-        }), A && (0, n.jsx)(O.V9, {
+        }), w && (0, n.jsx)(O.V9, {
           anchorPillType: t ? "SHOP_FULLSCREEN" : "SHOP",
           analyticsPage: Z,
           cardAlignment: O.V9.CardAlignment.END,

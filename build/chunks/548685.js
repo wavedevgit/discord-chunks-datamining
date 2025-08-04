@@ -37,23 +37,23 @@ let j = e => {
     tab: L
   } = e, I = (0, o.e7)([d.default], () => d.default.getCurrentUser()), k = h.ZP.canUseCollectibles(I), {
     sortType: N,
-    setSortType: w,
-    sortedItems: A,
+    setSortType: A,
+    sortedItems: w,
     sortOptions: B,
     shuffleProducts: R,
     showRecommendationOption: Z
-  } = (0, _.N)(j, k), D = (0, E.St)(A), F = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), M = (0, o.e7)([p.Z], () => p.Z.isFocused()), H = !F && M, {
+  } = (0, _.N)(j, k), D = (0, E.St)(w), F = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), M = (0, o.e7)([p.Z], () => p.Z.isFocused()), H = !F && M, {
     animationPhase: W,
     startAnimation: V
   } = (0, C.y)(), U = (0, b.sp)(), G = null != (t = null == U ? void 0 : U.sessionId) ? t : "", z = l.useRef(null), q = l.useCallback(e => {
     V({
       isShuffling: !1,
-      onOutroComplete: () => w(e)
+      onOutroComplete: () => A(e)
     }), f.default.track(S.rMx.COLLECTIBLES_SHOP_FEED_SORT_CHANGED, {
       page_session_id: G,
       sort_type: e
     })
-  }, [V, w, G]);
+  }, [V, A, G]);
   return null == I ? null : (0, n.jsxs)("div", {
     className: a()(x.popularPicksSection, x.centeredSection),
     children: [(0, n.jsxs)("div", {
