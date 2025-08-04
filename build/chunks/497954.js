@@ -19,8 +19,8 @@ let _ = e => {
     channelId: n,
     reportId: _
   } = e, {
-    isIgnored: b,
-    isBlocked: g
+    isIgnored: g,
+    isBlocked: b
   } = (0, i.cj)([d.Z], () => ({
     isIgnored: d.Z.isIgnored(t.id),
     isBlocked: d.Z.isBlocked(t.id)
@@ -29,7 +29,7 @@ let _ = e => {
       other_user_id: t.id,
       report_id: _
     }), o.Z.ignoreUser(t.id, "web_iar_ignore_user_element", n)
-  }, [t, _, n]), v = a.useMemo(() => b || g, [b, g]);
+  }, [t, _, n]), v = a.useMemo(() => g || b, [g, b]);
   return (0, r.jsx)(s.ZP, {
     title: p.intl.formatToPlainString(p.t.U3yyFh, {
       username: h

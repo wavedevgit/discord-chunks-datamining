@@ -18,8 +18,8 @@ let u = e => {
         subtitle: m,
         placeholder: p,
         rows: _,
-        character_limit: b,
-        pattern: g
+        character_limit: g,
+        pattern: b
       },
       onChange: x,
       initialText: h,
@@ -52,21 +52,21 @@ let u = e => {
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), t))), [j, C] = a.useState(""), [y, I] = a.useState(null);
+    }), t))), [j, y] = a.useState(""), [C, I] = a.useState(null);
     a.useEffect(() => {
       var e;
-      C(null != (e = null == h ? void 0 : h.value) ? e : "")
+      y(null != (e = null == h ? void 0 : h.value) ? e : "")
     }, [h]);
     let O = a.useCallback(e => {
-      let t = null != g ? new RegExp(g) : null;
-      null == t || t.test(e) ? null != e && (I(null), C(e), x({
+      let t = null != b ? new RegExp(b) : null;
+      null == t || t.test(e) ? null != e && (I(null), y(e), x({
         value: e,
         isValid: !0
       })) : (I(s.intl.string(s.t["24xrGR"])), x({
         value: e,
         isValid: !1
       }))
-    }, [x, g]);
+    }, [x, b]);
     return (0, r.jsxs)("div", {
       className: d.marginBottom8,
       children: [null != u && (0, r.jsx)("div", {
@@ -79,10 +79,10 @@ let u = e => {
           })]
         })
       }), (0, r.jsx)(i.Kx8, {
-        maxLength: b,
+        maxLength: g,
         onChange: O,
         value: j,
-        error: y,
+        error: C,
         rows: _,
         placeholder: p,
         autoFocus: !0

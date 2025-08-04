@@ -22,7 +22,7 @@ function m(e) {
         is_localized: m
       }
     }
-  } = e, [p, _] = a.useState(!1), b = a.useRef(s.Z.reactParserFor(s.Z.defaultRules));
+  } = e, [p, _] = a.useState(!1), g = a.useRef(s.Z.reactParserFor(s.Z.defaultRules));
   return m ? (0, r.jsxs)("div", {
     className: u.container,
     children: [(0, r.jsx)(l.X6q, {
@@ -33,7 +33,7 @@ function m(e) {
     }), (0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
       className: u.bodyText,
-      children: b.current(n)
+      children: g.current(n)
     }), (0, r.jsx)("div", {
       children: (0, r.jsxs)("div", {
         className: o()(u.smsNumberContainer, {

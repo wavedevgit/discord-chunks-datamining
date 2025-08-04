@@ -1,24 +1,7 @@
 /**
   Module ID: 72920
-  Original File Name: 3625621b6886b5f9
+  Original File Name: eee8b74a373d3b8c
 **/
-.closeButton__0907c:hover {
-    cursor: pointer
-}
-
-.closeButton__0907c:hover .closeIcon__0907c {
-    color: var(--interactive-active)
-}
-
-.closeIcon__0907c {
-    color: var(--interactive-normal)
-}
-
-.selectorHeader__0907c {
-    padding-bottom: 8px;
-    padding-top: 16px
-}
-
 .selectorText__0907c {
     color: var(--text-default)
 }
@@ -55,17 +38,4 @@
     background-color: var(--brand-500)
 }
 
-.auditLogDisclosure__0907c {
-    padding-bottom: 16px;
-    padding-top: 8px
-}
-
-.contentContainer__0907c {
-    padding-bottom: var(--space-16)
-}
-
-.closeButton__0907c {
-    justify-content: flex-end
-}
-
-/*# sourceMappingURL=3625621b6886b5f9.css.map*/
+/*# sourceMappingURL=eee8b74a373d3b8c.css.map*/

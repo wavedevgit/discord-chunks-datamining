@@ -1,31 +1,10 @@
 /**
   Module ID: 76233
-  Original File Name: 466ad1ed471c6800
+  Original File Name: 018274f9067e890b
 **/
-.header__4b6c5 {
-    justify-content: space-between
-}
-
 .countdown__4b6c5 {
     color: var(--header-primary);
     font-weight: var(--font-weight-semibold)
 }
 
-.closeButton__4b6c5:hover {
-    cursor: pointer
-}
-
-.closeButton__4b6c5:hover .closeIcon__4b6c5 {
-    color: var(--interactive-active)
-}
-
-.closeIcon__4b6c5 {
-    color: var(--interactive-normal)
-}
-
-.cta__4b6c5 {
-    padding-bottom: 20px;
-    padding-top: 8px
-}
-
-/*# sourceMappingURL=466ad1ed471c6800.css.map*/
+/*# sourceMappingURL=018274f9067e890b.css.map*/
