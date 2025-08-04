@@ -189,8 +189,8 @@ function v(e) {
     onDismiss: E,
     buttons: [{
       text: C.intl.string(C.t["Qk/c4+"]),
-      color: o.zx.Colors.BRAND,
-      onclick: () => {
+      variant: "primary",
+      onClick: () => {
         I(), (0, g.qc)({
           channelId: t,
           warningId: v,
@@ -201,8 +201,8 @@ function v(e) {
       }
     }, ...O ? [] : [{
       text: C.intl.string(C.t.ie0QdH),
-      color: o.zx.Colors.RED,
-      onclick: () => Z(g.NM.USER_BANNER_BLOCK_CONFIRM, g.NM.USER_BANNER_BLOCK_CANCEL)
+      variant: "critical-primary",
+      onClick: () => Z(g.NM.USER_BANNER_BLOCK_CONFIRM, g.NM.USER_BANNER_BLOCK_CANCEL)
     }]]
   })
 }

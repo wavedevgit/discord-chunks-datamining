@@ -1,6 +1,6 @@
 /**
   Module ID: 60333
-  Original File Name: 15056d73b7ab6250
+  Original File Name: b41b888fbc7999f4
 **/
 .ctaButtons_a77fde {
     display: grid;
@@ -429,13 +429,20 @@
 }
 
 .contentFooter_de2fa0 {
+    flex-shrink: 0;
+    justify-content: space-between;
+    width: 100%
+}
+
+.contentFooter_de2fa0,.contentFooterPortrait_de2fa0 {
     align-items: center;
     box-sizing: border-box;
     display: flex;
-    flex-shrink: 0;
-    justify-content: space-between;
-    padding: 16px 24px;
-    width: 100%
+    padding: 16px 24px
+}
+
+.contentFooterPortrait_de2fa0 {
+    justify-content: center
 }
 
 .contentFooterButtonCont_de2fa0 {
@@ -446,8 +453,12 @@
     justify-content: flex-end
 }
 
-.claimBtn_de2fa0 {
+.claimBtn_de2fa0,.portraitCtaBtn_de2fa0 {
     margin-top: 0!important
+}
+
+.portraitCtaBtn_de2fa0 {
+    flex: 1
 }
 
 .orbClaimCopy_de2fa0 {
@@ -965,4 +976,4 @@
     background-color: var(--white)
 }
 
-/*# sourceMappingURL=15056d73b7ab6250.css.map*/
+/*# sourceMappingURL=b41b888fbc7999f4.css.map*/

@@ -1,4 +1,4 @@
-/** Chunk was on 69150 **/
+/** Chunk was on 70663 **/
 e.exports = {
   pricePerInterval: "pricePerInterval_fd0764",
   price: "price_fd0764",

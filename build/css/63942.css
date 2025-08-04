@@ -1,6 +1,6 @@
 /**
   Module ID: 63942
-  Original File Name: a04eb40b1c0bd912
+  Original File Name: 1735e6d9984298cf
 **/
 .modalRoot_de2fa0 {
     border: none!important;
@@ -290,13 +290,20 @@
 }
 
 .contentFooter_de2fa0 {
+    flex-shrink: 0;
+    justify-content: space-between;
+    width: 100%
+}
+
+.contentFooter_de2fa0,.contentFooterPortrait_de2fa0 {
     align-items: center;
     box-sizing: border-box;
     display: flex;
-    flex-shrink: 0;
-    justify-content: space-between;
-    padding: 16px 24px;
-    width: 100%
+    padding: 16px 24px
+}
+
+.contentFooterPortrait_de2fa0 {
+    justify-content: center
 }
 
 .contentFooterButtonCont_de2fa0 {
@@ -307,8 +314,12 @@
     justify-content: flex-end
 }
 
-.claimBtn_de2fa0 {
+.claimBtn_de2fa0,.portraitCtaBtn_de2fa0 {
     margin-top: 0!important
+}
+
+.portraitCtaBtn_de2fa0 {
+    flex: 1
 }
 
 .orbClaimCopy_de2fa0 {
@@ -826,4 +837,4 @@
     background-color: var(--white)
 }
 
-/*# sourceMappingURL=a04eb40b1c0bd912.css.map*/
+/*# sourceMappingURL=1735e6d9984298cf.css.map*/

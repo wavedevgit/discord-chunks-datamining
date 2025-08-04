@@ -33,11 +33,11 @@ function v(e) {
     onClick: b,
     onScrubBack: C,
     onScrubForward: S
-  } = e, [h, _] = l.useState(null), [y, j] = l.useState(null), [x, T] = l.useState(null), [D, P] = l.useState(!1), R = l.useRef(null), N = e => {
+  } = e, [h, _] = l.useState(null), [j, y] = l.useState(null), [x, D] = l.useState(null), [T, P] = l.useState(!1), R = l.useRef(null), N = e => {
     R.current = e, _(e)
   };
   l.useEffect(() => {
-    null != h && (null == O ? T(null) : T(p(O, g, h)))
+    null != h && (null == O ? D(null) : D(p(O, g, h)))
   }, [h, O, g]);
   let I = (0, c.Z)(e => {
       N(e.contentRect)
@@ -51,20 +51,20 @@ function v(e) {
     };
     return window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
   }, [k]);
-  let w = e => {
-      j(e.clientX)
+  let A = e => {
+      y(e.clientX)
     },
-    A = l.useCallback(e => {
+    w = l.useCallback(e => {
       let {
         key: t
       } = e;
       t === d.mR.ArrowLeft && null != C ? (e.preventDefault(), e.stopPropagation(), C()) : t === d.mR.ArrowRight && null != S && (e.preventDefault(), e.stopPropagation(), S())
     }, [C, S]),
-    L = null != y && null != h ? f(y, h, g) : 0,
+    L = null != j && null != h ? f(j, h, g) : 0,
     M = (0, u.yv)(L),
     V = null != h ? h.right - p(t / 100 * g, g, h) : null,
-    B = null != y && null != h ? h.right - y : null,
-    Z = null != x && null != h ? h.right - x : null;
+    B = null != j && null != h ? h.right - j : null,
+    F = null != x && null != h ? h.right - x : null;
   return (0, r.jsxs)("div", {
     className: m.cont,
     ref: k,
@@ -77,15 +77,15 @@ function v(e) {
         o && null != b && b(f(e.clientX, e.currentTarget.getBoundingClientRect(), g))
       },
       onMouseEnter: e => {
-        o && (null != k.current && N(k.current.getBoundingClientRect()), P(!0), w(e))
+        o && (null != k.current && N(k.current.getBoundingClientRect()), P(!0), A(e))
       },
       onMouseLeave: e => {
-        o && (P(!1), j(null))
+        o && (P(!1), y(null))
       },
       onMouseMove: e => {
-        o && D && w(e)
+        o && T && A(e)
       },
-      onKeyDown: A,
+      onKeyDown: w,
       tabIndex: o ? void 0 : -1,
       focusProps: {
         offset: {
@@ -95,26 +95,26 @@ function v(e) {
       },
       children: [null == E ? void 0 : E.map(e => (0, r.jsx)("div", {
         className: i()(m.buffer, {
-          [m.bufferHovered]: D
+          [m.bufferHovered]: T
         }),
         style: {
           width: "".concat(100 * e.size, "%"),
           left: "".concat(100 * e.start, "%")
         }
-      }, "".concat(e.start, ":").concat(e.size))), !o && null != Z && Z > 0 && (0, r.jsx)("div", {
+      }, "".concat(e.start, ":").concat(e.size))), !o && null != F && F > 0 && (0, r.jsx)("div", {
         className: m.seekableBar,
         style: {
-          right: null != Z ? "".concat(Z, "px") : "auto",
-          opacity: +(null != Z)
+          right: null != F ? "".concat(F, "px") : "auto",
+          opacity: +(null != F)
         }
       }), (0, r.jsx)(a.Exd, {
         className: m.progress,
         percent: t,
         foregroundColor: "#FFFFFF",
         backgroundColor: null != v ? v : void 0,
-        size: D ? a.Exd.Sizes.XSMALL : a.Exd.Sizes.XXSMALL,
+        size: T ? a.Exd.Sizes.XSMALL : a.Exd.Sizes.XXSMALL,
         animate: n
-      }), D && null != M && (0, r.jsx)(a.Text, {
+      }), T && null != M && (0, r.jsx)(a.Text, {
         className: m.timeDisplay,
         variant: "text-xs/normal",
         style: {
@@ -122,7 +122,7 @@ function v(e) {
           color: "#FFFFFF"
         },
         children: M
-      }), D && o && null != V && (0, r.jsx)("div", {
+      }), T && o && null != V && (0, r.jsx)("div", {
         className: m.grabber,
         style: {
           right: "".concat(V - 6, "px")

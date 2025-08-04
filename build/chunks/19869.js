@@ -197,7 +197,7 @@ function N() {
         children: "The Orb Checkout Modal will open with the orb price of the product, if it exists"
       }), (0, i.jsx)(s.zx, {
         onClick: () => {
-          (0, _.q)({
+          (0, _.qA)({
             skuId: e,
             onCheckoutSuccess: e => {
               let {
