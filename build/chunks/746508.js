@@ -29,9 +29,9 @@ var r = n(255367),
   T = n(374065),
   P = n(451576),
   j = n(119315),
-  A = n(403404),
-  Z = n(100527),
-  x = n(906732),
+  A = n(100527),
+  Z = n(906732),
+  x = n(397698),
   w = n(562129),
   L = n(793865),
   R = n(522651),
@@ -222,7 +222,7 @@ function eK() {
 function eq() {
   let {
     parentAnalyticsLocation: e
-  } = (0, x.ZP)(), t = (0, u.e7)([ei.Z], () => ei.Z.isMuted()), n = t ? eU.intl.string(eU.t.ScHlfn) : eU.intl.string(eU.t.zqxfra);
+  } = (0, Z.ZP)(), t = (0, u.e7)([ei.Z], () => ei.Z.isMuted()), n = t ? eU.intl.string(eU.t.ScHlfn) : eU.intl.string(eU.t.zqxfra);
   return (0, r.jsx)(eZ.Z, {
     "aria-label": n,
     tooltipText: n,
@@ -240,7 +240,7 @@ function eQ(e) {
     disabled: l
   } = e, o = i.useRef(null), {
     parentAnalyticsLocation: s
-  } = (0, x.ZP)(), c = (0, eo.Z)(), d = (0, ec.Z)(t), p = (0, u.e7)([C.ZP], () => null != C.ZP.getSelfEmbeddedActivityForLocation(C.ZP.getConnectedActivityLocation())), f = (0, X.Z)(t), {
+  } = (0, Z.ZP)(), c = (0, eo.Z)(), d = (0, ec.Z)(t), p = (0, u.e7)([C.ZP], () => null != C.ZP.getSelfEmbeddedActivityForLocation(C.ZP.getConnectedActivityLocation())), f = (0, X.Z)(t), {
     reachedLimit: _,
     limit: O
   } = (0, es.Z)(t), E = i.useCallback(() => {
@@ -350,9 +350,9 @@ function eX(e) {
     channel: t,
     enableActivities: n
   } = e, i = (0, I.bp)(), {
-    analyticsLocations: l,
-    parentAnalyticsLocation: o
-  } = (0, x.ZP)(), s = i === eR.IlC.POPOUT, c = (0, T.KF)(t.id), p = (0, T.g5)(c), {
+    parentAnalyticsLocation: l,
+    newestAnalyticsLocation: o
+  } = (0, Z.ZP)(), s = i === eR.IlC.POPOUT, c = (0, T.KF)(t.id), p = (0, T.g5)(c), {
     userInActivity: h
   } = (0, u.cj)([C.ZP], () => ({
     userInActivity: null != C.ZP.getSelfEmbeddedActivityForChannel(t.id)
@@ -382,11 +382,16 @@ function eX(e) {
         }), O), {
           onClick: () => {
             var n;
-            E(), (0, A.Z)({
-              channel: t,
+            E(), (0, x.Z)({
+              context: null != t ? {
+                type: "channel",
+                channel: t
+              } : {
+                type: "contextless"
+              },
               openInPopout: s,
-              analyticsLocations: l
-            }), null == (n = e.onClick) || n.call(e), (0, R.v)(o, R.d.ACTIVITY), i === d.z.ACTIVITIES_VOICE_LAUNCHER_BADGE && c(ek.L.TAKE_ACTION)
+              analyticsLocation: o
+            }), null == (n = e.onClick) || n.call(e), (0, R.v)(l, R.d.ACTIVITY), i === d.z.ACTIVITIES_VOICE_LAUNCHER_BADGE && c(ek.L.TAKE_ACTION)
           },
           onMouseEnter: () => {
             var t;
@@ -428,7 +433,7 @@ function eJ(e) {
     c = i.useRef(null),
     {
       parentAnalyticsLocation: d
-    } = (0, x.ZP)(),
+    } = (0, Z.ZP)(),
     h = (0, u.e7)([eS.default], () => eS.default.getCurrentUser()),
     f = (0, u.Wu)([em.Z], () => em.Z.getAllActiveStreams()),
     b = (0, ec.Z)(n),
@@ -448,9 +453,9 @@ function eJ(e) {
     {
       Component: j,
       events: A,
-      play: Z
+      play: x
     } = (0, p.P)(P ? "disable" : "enable");
-  i.useEffect(() => () => Z(), [Z, P]);
+  i.useEffect(() => () => x(), [x, P]);
   let w = (0, r.jsx)(j, {
     size: "md",
     color: "currentColor",
@@ -696,7 +701,7 @@ class e$ extends i.PureComponent {
         guild: n,
         channel: r
       } = this.props;
-      s()(null != r, "Channel is null during navigation click"), e.stopPropagation(), O.Z.channelListScrollTo(null != (t = null == n ? void 0 : n.id) ? t : eR.ME, r.id), (0, R.v)(Z.Z.RTC_PANEL, R.d.CHANNEL_LINK)
+      s()(null != r, "Channel is null during navigation click"), e.stopPropagation(), O.Z.channelListScrollTo(null != (t = null == n ? void 0 : n.id) ? t : eR.ME, r.id), (0, R.v)(A.Z.RTC_PANEL, R.d.CHANNEL_LINK)
     }), eH(this, "handleChannelLinkContextMenu", e => {
       let {
         channel: t,
@@ -706,11 +711,11 @@ class e$ extends i.PureComponent {
         let {
           default: e
         } = await n.e("56944").then(n.bind(n, 600830));
-        return n => (0, r.jsx)(x.Gt, {
+        return n => (0, r.jsx)(Z.Gt, {
           value: i,
           children: (0, r.jsx)(e, eF(eB({}, n), {
             channel: t,
-            onInteraction: (0, D.u)("RTCConnectionMenu", Z.Z.RTC_PANEL)
+            onInteraction: (0, D.u)("RTCConnectionMenu", A.Z.RTC_PANEL)
           }))
         })
       })
@@ -745,7 +750,7 @@ function e0(e) {
     ref: a
   } = e, {
     parentAnalyticsLocation: o
-  } = (0, x.ZP)(), {
+  } = (0, Z.ZP)(), {
     play: s,
     Component: c,
     events: u
@@ -820,15 +825,15 @@ let e1 = (0, y.Z)(function(e) {
         }
       })) ? e : N) ? t : []
     }, [I, C, N]),
-    [j, A] = i.useState(!1),
+    [j, x] = i.useState(!1),
     w = (0, M.Z)("RTCConnection");
   i.useEffect(() => {
-    (E || y) && A(!1)
-  }, [E, y, A]);
+    (E || y) && x(!1)
+  }, [E, y, x]);
   let {
     analyticsLocations: L
-  } = (0, x.ZP)(Z.Z.RTC_PANEL), R = (0, S.Z)(null != d ? d : eR.lds, null == c ? void 0 : c.id), D = (0, P.Z)(null == c ? void 0 : c.id);
-  return (0, r.jsx)(x.Gt, {
+  } = (0, Z.ZP)(A.Z.RTC_PANEL), R = (0, S.Z)(null != d ? d : eR.lds, null == c ? void 0 : c.id), D = (0, P.Z)(null == c ? void 0 : c.id);
+  return (0, r.jsx)(Z.Gt, {
     value: L,
     children: (0, r.jsxs)("div", {
       className: eG.wrapper,
@@ -859,7 +864,7 @@ let e1 = (0, y.Z)(function(e) {
           className: eG.viewAsRolesWarningButton,
           size: g.zx.Sizes.MIN,
           onClick: () => {
-            A(!0)
+            x(!0)
           },
           focusProps: eW,
           children: eU.intl.string(eU.t.WAI6xs)

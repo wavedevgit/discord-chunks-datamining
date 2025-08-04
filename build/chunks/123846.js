@@ -56,9 +56,9 @@ function w(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = [g.gq.DISCOVERY, g.gq.VANITY_URL, g.gq.BOT, g.gq.HUB, g.gq.MANUAL_MEMBER_VERIFICATION, g.gq.SOCIAL_LAYER_INTEGRATION_LINKED_CHANNEL];
+let N = [g.gq.DISCOVERY, g.gq.VANITY_URL, g.gq.BOT, g.gq.HUB, g.gq.MANUAL_MEMBER_VERIFICATION, g.gq.SOCIAL_LAYER_INTEGRATION_LINKED_CHANNEL];
 
-function N(e) {
+function S(e) {
   let {
     type: t,
     text: n,
@@ -208,9 +208,9 @@ function Z(e) {
             children: y.intl.string(y.t["Kz/cho"])
           })]
         }))
-      }), S.map(e => (0, r.jsx)(C.k5B, {
+      }), N.map(e => (0, r.jsx)(C.k5B, {
         id: "join-source-type-option-".concat(e),
-        label: t => (0, r.jsx)(N, w(_({}, t), {
+        label: t => (0, r.jsx)(S, w(_({}, t), {
           type: e,
           vanityUrl: Z,
           text: (0, g.bE)(e, Z, M)
@@ -238,7 +238,7 @@ function Z(e) {
         group: "join-source-type-options"
       }, "join-source-type-option-all"), c.map(e => (0, r.jsx)(C.k5B, {
         id: "join-source-type-option-".concat(e),
-        label: t => (0, r.jsx)(N, w(_({}, t), {
+        label: t => (0, r.jsx)(S, w(_({}, t), {
           type: g.gq.INVITE,
           vanityUrl: Z,
           text: e
@@ -262,7 +262,7 @@ function Z(e) {
               children: y.intl.string(y.t["Kz/cho"])
             }), P ? (0, r.jsx)("div", {
               className: O.selectedOption,
-              children: (0, r.jsx)(N, w(_({}, e), {
+              children: (0, r.jsx)(S, w(_({}, e), {
                 size: 12,
                 text: (0, g.bE)(I, Z, M),
                 type: I,

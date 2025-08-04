@@ -59,19 +59,19 @@ let O = l.forwardRef(function(e, t) {
     null != n && O && (0, d.ZDy)(async () => e => (0, r.jsx)(C.Z, y(v({}, e), {
       guild: n
     })))
-  }, [n, O]), _ = (0, u.e7)([p.Z], () => p.Z.getSearchStateByGuildId(n.id), [n.id], s()), w = (0, b.gm)(n.id), [S, N] = l.useState(_.query), Z = l.useCallback(e => {
+  }, [n, O]), _ = (0, u.e7)([p.Z], () => p.Z.getSearchStateByGuildId(n.id), [n.id], s()), w = (0, b.gm)(n.id), [N, S] = l.useState(_.query), Z = l.useCallback(e => {
     let t = e.trim();
     t.length > 0 && w(), (0, f.Dr)(n.id, {
       query: t
     })
   }, [n.id, w]), D = l.useMemo(() => i()(Z, 300), [Z]), L = l.useCallback(e => {
-    N(e), D(e)
+    S(e), D(e)
   }, [D]), R = l.useCallback(() => {
-    N(""), Z("")
+    S(""), Z("")
   }, [Z]);
   return l.useImperativeHandle(t, () => ({
     resetSearchText() {
-      N("")
+      S("")
     }
   })), (0, r.jsxs)("div", {
     className: x.searchHeaderContainer,
@@ -91,7 +91,7 @@ let O = l.forwardRef(function(e, t) {
         children: (0, r.jsx)(d.E1j, {
           size: "sm",
           className: x.searchBar,
-          query: S,
+          query: N,
           placeholder: g.intl.string(g.t.NVoAMz),
           onChange: L,
           onClear: R,

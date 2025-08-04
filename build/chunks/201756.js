@@ -45,7 +45,7 @@ function w(e) {
   return e
 }
 
-function S(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -58,7 +58,7 @@ function S(e, t) {
   }), e
 }
 
-function N(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, l = function(e, t) {
     if (null == e) return {};
@@ -80,11 +80,11 @@ let Z = l.forwardRef(function(e, t) {
     isFiltered: o,
     isSorted: a,
     className: s
-  } = e, c = N(e, ["label", "onFilter", "isFiltered", "isSorted", "className"]);
+  } = e, c = S(e, ["label", "onFilter", "isFiltered", "isSorted", "className"]);
   let d = o ? "header-primary" : "header-secondary";
   return a && (d = "text-brand"), (0, r.jsx)("th", {
     className: i()(H.tableHeaderCellContainer, s),
-    children: (0, r.jsxs)(u.P3F, S(w({}, c), {
+    children: (0, r.jsxs)(u.P3F, N(w({}, c), {
       innerRef: t,
       onClick: l,
       className: i()(H.tableHeaderCell, {
@@ -127,7 +127,7 @@ function D(e) {
         children: (0, r.jsx)(u.ua7, {
           shouldShow: !X,
           text: O.intl.string(O.t.tJEY0N),
-          children: e => (0, r.jsx)(u.P3F, S(w({}, e), {
+          children: e => (0, r.jsx)(u.P3F, N(w({}, e), {
             onClick: K,
             className: H.tableHeaderCell,
             children: (0, r.jsx)(u.XZJ, {
@@ -150,11 +150,10 @@ function D(e) {
             guildId: t,
             onClose: y.dG4
           }),
-          closeOnScroll: !0,
           children: e => {
             var {
               onClick: t
-            } = e, n = N(e, ["onClick"]);
+            } = e, n = S(e, ["onClick"]);
             return (0, r.jsx)(Z, w({
               ref: o,
               label: O.intl.string(O.t.xcKP1N),
@@ -174,11 +173,10 @@ function D(e) {
             guildId: t,
             onClose: y.dG4
           }),
-          closeOnScroll: !0,
           children: e => {
             var {
               onClick: t
-            } = e, n = N(e, ["onClick"]);
+            } = e, n = S(e, ["onClick"]);
             return (0, r.jsx)(Z, w({
               ref: a,
               label: O.intl.string(O.t.sPph4O),
@@ -207,11 +205,10 @@ function D(e) {
           guildId: t,
           onClose: y.dG4
         }),
-        closeOnScroll: !0,
         children: e => {
           var {
             onClick: t
-          } = e, n = N(e, ["onClick"]);
+          } = e, n = S(e, ["onClick"]);
           return (0, r.jsx)(Z, w({
             ref: D,
             label: O.intl.string(O.t.yn0w19),
@@ -241,7 +238,7 @@ function D(e) {
         children: e => {
           var {
             onClick: t
-          } = e, n = N(e, ["onClick"]);
+          } = e, n = S(e, ["onClick"]);
           return (0, r.jsx)(Z, w({
             ref: L,
             label: O.intl.string(O.t["2SZsWV"]),
@@ -271,7 +268,6 @@ function D(e) {
               onClose: n
             })
           },
-          closeOnScroll: !0,
           children: t => (0, r.jsx)(Z, {
             ref: R,
             label: O.intl.string(O.t["7V375+"]),

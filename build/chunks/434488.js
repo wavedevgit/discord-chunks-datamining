@@ -14,9 +14,9 @@ var r = n(255367),
   p = n(456100),
   h = n(127255),
   f = n(5200),
-  m = n(403404),
-  g = n(100527),
-  b = n(906732),
+  m = n(100527),
+  g = n(906732),
+  b = n(397698),
   _ = n(895924),
   y = n(266454),
   C = n(340541),
@@ -97,21 +97,27 @@ function N(e) {
     inPopout: n,
     handleClose: i
   } = e, {
-    analyticsLocations: l
-  } = (0, b.ZP)(g.Z.VC_TILE_ACTIVITY_SHELF_BUTTON), {
-    enabled: o
+    analyticsLocations: l,
+    newestAnalyticsLocation: o
+  } = (0, g.ZP)(m.Z.VC_TILE_ACTIVITY_SHELF_BUTTON), {
+    enabled: c
   } = p.c.useExperiment({
     location: "ActivityShelfButtonTile"
   }, {
     autoTrackExposure: !0
-  }), c = o ? u.iWm : u.gQj, d = () => {
-    (0, m.Z)({
-      channel: t,
+  }), d = c ? u.iWm : u.gQj, h = () => {
+    (0, b.Z)({
+      context: null != t ? {
+        type: "channel",
+        channel: t
+      } : {
+        type: "contextless"
+      },
       openInPopout: n,
-      analyticsLocations: l
+      analyticsLocation: o
     })
   };
-  return (0, r.jsx)(b.Gt, {
+  return (0, r.jsx)(g.Gt, {
     value: l,
     children: (0, r.jsxs)(j.Z, {
       className: S.root,
@@ -138,11 +144,11 @@ function N(e) {
           return (0, r.jsx)(u.P3F, Z(I({}, n), {
             className: S.clickableTile,
             onClick: () => {
-              null == t || t(), d()
+              null == t || t(), h()
             },
             children: (0, r.jsx)("div", {
               className: S.iconContainer,
-              children: (0, r.jsx)(c, {
+              children: (0, r.jsx)(d, {
                 size: "custom",
                 color: "currentColor",
                 width: 40,
@@ -181,20 +187,21 @@ function A(e) {
     })
   }, []);
   let {
-    analyticsLocations: s
-  } = (0, b.ZP)(g.Z.VC_TILE_ACTIVITY_INVITE), {
-    entrypoints: d
+    analyticsLocations: s,
+    newestAnalyticsLocation: d
+  } = (0, g.ZP)(m.Z.VC_TILE_ACTIVITY_INVITE), {
+    entrypoints: h
   } = (0, C._k)({
     location: "single_user_tile"
   }), {
-    enabled: h
+    enabled: f
   } = p.c.useExperiment({
     location: "SingleUserTile"
   }, {
     autoTrackExposure: !0
   });
 
-  function f() {
+  function _() {
     (0, u.ZDy)(async () => {
       let {
         default: e
@@ -209,16 +216,21 @@ function A(e) {
     })
   }
 
-  function _() {
-    (0, m.Z)({
-      channel: t,
+  function y() {
+    (0, b.Z)({
+      context: null != t ? {
+        type: "channel",
+        channel: t
+      } : {
+        type: "contextless"
+      },
       openInPopout: o,
-      analyticsLocations: s
+      analyticsLocation: d
     })
   }
-  let y = h ? u.iWm : u.nG3,
-    x = d ? u.oLu : u.iFz;
-  return (0, r.jsx)(b.Gt, {
+  let x = f ? u.iWm : u.nG3,
+    T = h ? u.oLu : u.iFz;
+  return (0, r.jsx)(g.Gt, {
     value: s,
     children: (0, r.jsx)(u.f6W, {
       disableAdaptiveTheme: !0,
@@ -235,17 +247,17 @@ function A(e) {
             size: c.zx.Sizes.LARGE,
             color: c.zx.Colors.PRIMARY,
             innerClassName: S.buttonContents,
-            onClick: f,
-            children: [(0, r.jsx)(x, {
+            onClick: _,
+            children: [(0, r.jsx)(T, {
               size: "xs",
               color: "currentColor"
-            }), d ? E.intl.string(E.t["EE+P0N"]) : E.intl.string(E.t["6Qgren"])]
+            }), h ? E.intl.string(E.t["EE+P0N"]) : E.intl.string(E.t["6Qgren"])]
           }), (0, r.jsxs)(c.zx, {
             size: c.zx.Sizes.LARGE,
             color: c.zx.Colors.PRIMARY,
             innerClassName: S.buttonContents,
-            onClick: _,
-            children: [(0, r.jsx)(y, {
+            onClick: y,
+            children: [(0, r.jsx)(x, {
               size: "xs",
               color: "currentColor"
             }), E.intl.string(E.t.qnFavb)]
@@ -274,14 +286,14 @@ function w(e) {
       guildId: n.id
     }).slice(0, 3),
     {
-      analyticsLocations: m
-    } = (0, b.ZP)(g.Z.VC_TILE_ACTIVITY_SUGGESTION),
+      analyticsLocations: b
+    } = (0, g.ZP)(m.Z.VC_TILE_ACTIVITY_SUGGESTION),
     C = i.useMemo(() => ({
       channel: t,
       type: "channel"
     }), [t]);
-  return (0, r.jsx)(b.Gt, {
-    value: m,
+  return (0, r.jsx)(g.Gt, {
+    value: b,
     children: (0, r.jsxs)(j.Z, {
       className: S.root,
       children: [s > 300 ? (0, r.jsx)(u.Text, {

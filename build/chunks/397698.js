@@ -40,7 +40,7 @@ function p(e) {
   let {
     context: t,
     openInPopout: f,
-    analyticsLocation: p,
+    analyticsLocation: p = "open-activity-shelf",
     initialState: h
   } = e;
   f && (0, a.Z)(d.KJ3.CHANNEL_CALL_POPOUT);

@@ -59,7 +59,7 @@ function O(e) {
   } = e, O = (0, f.xC)(t), {
     selectedUserIds: H,
     clearSelection: _
-  } = (0, h.Z)(t), w = H.size > 0, S = async (e, t, n, r) => {
+  } = (0, h.Z)(t), w = H.size > 0, N = async (e, t, n, r) => {
     try {
       let l = await u.Z.banMultipleUsers(e, t, n, r);
       (0, c.showToast)((0, c.createToast)(g.intl.string(g.t.AsCe5O), c.ToastType.SUCCESS)), b.default.track(j.rMx.BULK_MODERATION_ACTION_COMPLETED, y(v({}, (0, C.hH)(e)), {
@@ -73,7 +73,7 @@ function O(e) {
       (0, c.showToast)((0, c.createToast)(g.intl.string(g.t.mICAWV), c.ToastType.FAILURE))
     }
     _()
-  }, N = l.useCallback(() => {
+  }, S = l.useCallback(() => {
     _()
   }, [_]), Z = (0, r.jsxs)("span", {
     className: x.messageContainer,
@@ -90,7 +90,7 @@ function O(e) {
       })
     }), (0, r.jsx)(c.Avr, {
       text: g.intl.string(g.t.yW6ZdH),
-      onClick: N
+      onClick: S
     })]
   }), D = (0, r.jsxs)("span", {
     className: x.buttonContainer,
@@ -124,7 +124,7 @@ function O(e) {
               guildId: t,
               canBulkBan: O,
               userIds: H,
-              onBanMultiple: S
+              onBanMultiple: N
             }))
           })
         },

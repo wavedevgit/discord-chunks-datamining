@@ -29,11 +29,11 @@ let w = {
     transform: "translate3d(15%, 0, 0)",
     opacity: .3
   },
-  S = {
+  N = {
     transform: "translate3d(5%, 0, 0)",
     opacity: .5
   },
-  N = {
+  S = {
     transform: "translate3d(0, 0, 0)",
     opacity: 1
   },
@@ -78,9 +78,9 @@ let w = {
             r = h.Z.getLastRefreshTimestamp(n.id),
             l = null == t || 0 === r,
             o = null != t && t.refreshTimestamp === r;
-          return l || !o ? N : T ? S : w
+          return l || !o ? S : T ? N : w
         },
-        enter: N,
+        enter: S,
         config: Z
       }),
       A = !f && a === x.po.LOADING;

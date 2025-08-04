@@ -59,21 +59,21 @@ function w(e, t) {
   }), e
 }
 
-function S(e) {
+function N(e) {
   var t = function(e, t) {
-    if ("object" !== N(e) || null === e) return e;
+    if ("object" !== S(e) || null === e) return e;
     var n = e[Symbol.toPrimitive];
     if (void 0 !== n) {
       var r = n.call(e, t || "default");
-      if ("object" !== N(r)) return r;
+      if ("object" !== S(r)) return r;
       throw TypeError("@@toPrimitive must return a primitive value.")
     }
     return ("string" === t ? String : Number)(e)
   }(e, "string");
-  return "symbol" === N(t) ? t : String(t)
+  return "symbol" === S(t) ? t : String(t)
 }
 
-function N(e) {
+function S(e) {
   return e && "undefined" != typeof Symbol && e.constructor === Symbol ? "symbol" : typeof e
 }
 let Z = (0, p.hQ)(),
@@ -206,7 +206,7 @@ function k(e) {
     }), t.forEach(e => {
       e in n && (r[e] = P(n[e]))
     }), r
-  })(a, C, h), [a, C, h]), v = l.useMemo(() => Object.keys(j), [j]), [y, N] = l.useState(""), [L, V] = l.useState(!1), [E, k] = l.useState(!1), [A, B] = l.useState(!1), U = l.useRef(null), {
+  })(a, C, h), [a, C, h]), v = l.useMemo(() => Object.keys(j), [j]), [y, S] = l.useState(""), [L, V] = l.useState(!1), [E, k] = l.useState(!1), [A, B] = l.useState(!1), U = l.useRef(null), {
     sections: F,
     sectionCounts: q
   } = l.useMemo(() => {
@@ -249,7 +249,7 @@ function k(e) {
     },
     W = l.useCallback(e => {
       let t = _({}, j);
-      I(e) ? t[e.id] = M(e.record) : R(e) && (t[e.id] = P(e.record)), z(t), N(""), G(), setTimeout(() => {
+      I(e) ? t[e.id] = M(e.record) : R(e) && (t[e.id] = P(e.record)), z(t), S(""), G(), setTimeout(() => {
         var e;
         let t = null == (e = U.current) ? void 0 : e.containerRef.current,
           n = null == t ? void 0 : t.firstChild;
@@ -310,10 +310,10 @@ function k(e) {
               for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
             }
             return l
-          }(j, [t].map(S))), N(""), G()
+          }(j, [t].map(N))), S(""), G()
         },
         onQueryChange: e => {
-          N(e.trim().toLocaleLowerCase())
+          S(e.trim().toLocaleLowerCase())
         },
         placeholder: null != b ? b : O.intl.string(O.t.uqHLzc),
         sections: [v.length],
