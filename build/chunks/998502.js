@@ -111,6 +111,7 @@ function Y(e) {
     id: w[null != (t = e.id) ? t : ""],
     nativeProcessObserverId: parseInt(null != (n = e.id) ? n : "", 10),
     name: null != (r = e.gameName) ? r : e.name,
+    origGameName: e.origGameName,
     processName: null != (i = e.name) ? i : "",
     hidden: e.hidden,
     elevated: e.elevated,

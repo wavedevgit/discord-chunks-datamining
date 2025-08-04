@@ -227,7 +227,7 @@ let S = [d.h8.PAYMENT_ELEMENT],
       children: (0, r.jsx)(C, y({}, n))
     })
   },
-  P = ["city", "country", "line1", "postalCode"],
+  P = ["city", "country", "line1"],
   w = ["link"],
   D = e => {
     let {
