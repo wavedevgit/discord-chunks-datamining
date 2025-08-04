@@ -318,15 +318,15 @@ let en = i.memo(i.forwardRef(function(e, t) {
                     heroFile: e
                   }),
                   onFocus: () => ta(!0)
-                }), (0, r.jsx)(h.oil, {
+                }), (0, r.jsx)("input", {
                   onFocus: () => ta(!0),
                   onBlur: () => ta(!1),
                   maxLength: 140,
-                  inputClassName: X.titleInput,
+                  className: X.titleInput,
                   placeholder: K.intl.string(K.t.Z8fYjI),
                   value: eS,
                   onChange: e => (0, v.c)(k.id, {
-                    title: e
+                    title: e.target.value
                   })
                 })]
               }), (0, r.jsx)("div", {

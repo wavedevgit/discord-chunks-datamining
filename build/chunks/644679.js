@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => g
+  Z: () => f
 }), n(388685);
 var r = n(255367),
   i = n(481060),
@@ -9,10 +9,9 @@ var r = n(255367),
   o = n(19780),
   s = n(594174),
   c = n(960048),
-  u = n(699910),
-  d = n(981631);
+  u = n(981631);
 
-function p(e, t, n) {
+function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -20,8 +19,8 @@ function p(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let h = "CollectiblesExpiryModal";
-class f extends a.Z {
+let p = "CollectiblesExpiryModal";
+class h extends a.Z {
   _initialize() {
     l.Z.subscribe("POST_CONNECTION_OPEN", this.handleMaybeOpenModal), l.Z.subscribe("CURRENT_USER_UPDATE", this.handleMaybeOpenModal)
   }
@@ -29,18 +28,18 @@ class f extends a.Z {
     l.Z.unsubscribe("POST_CONNECTION_OPEN", this.handleMaybeOpenModal), l.Z.unsubscribe("CURRENT_USER_UPDATE", this.handleMaybeOpenModal), null != this.timeout && (clearTimeout(this.timeout), this.timeout = null)
   }
   constructor(...e) {
-    super(...e), p(this, "timeout", null), p(this, "handleMaybeOpenModal", () => {
+    super(...e), d(this, "timeout", null), d(this, "handleMaybeOpenModal", () => {
       var e;
       let t = s.default.getCurrentUser(),
         n = null == t || null == (e = t.avatarDecoration) ? void 0 : e.expiresAt;
-      null != n && (0, u.v)("CollectiblesExpiryManager") && (this.maybeOpenModal() || (null != this.timeout && clearTimeout(this.timeout), this.timeout = setTimeout(this.maybeOpenModal, 1e3 * n - Date.now() + 1e3)))
-    }), p(this, "maybeOpenModal", () => {
+      null != n && (this.maybeOpenModal() || (null != this.timeout && clearTimeout(this.timeout), this.timeout = setTimeout(this.maybeOpenModal, 1e3 * n - Date.now() + 1e3)))
+    }), d(this, "maybeOpenModal", () => {
       var e, t;
       let l = s.default.getCurrentUser(),
         a = o.Z.getState(),
-        u = null == l || null == (e = l.avatarDecoration) ? void 0 : e.skuId,
+        h = null == l || null == (e = l.avatarDecoration) ? void 0 : e.skuId,
         f = null == l || null == (t = l.avatarDecoration) ? void 0 : t.expiresAt;
-      return null != l && !!(null != f && 1e3 * f < Date.now()) && a !== d.hes.RTC_CONNECTED && ((0, i.Mr3)(h), (0, i.ZDy)(async () => {
+      return null != l && !!(null != f && 1e3 * f < Date.now()) && a !== u.hes.RTC_CONNECTED && ((0, i.Mr3)(p), (0, i.ZDy)(async () => {
         let {
           default: e
         } = await n.e("77370").then(n.bind(n, 83950));
@@ -53,12 +52,12 @@ class f extends a.Z {
               "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                 return Object.getOwnPropertyDescriptor(n, e).enumerable
               }))), r.forEach(function(t) {
-                p(e, t, n[t])
+                d(e, t, n[t])
               })
             }
             return e
           }({}, t), i = i = {
-            skuId: u
+            skuId: h
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -71,9 +70,9 @@ class f extends a.Z {
           }), n))
         }
       }, {
-        modalKey: h
+        modalKey: p
       }), c.Z.captureMessage("Collectible expiry modal shown"), !0)
     })
   }
 }
-let g = new f
+let f = new h

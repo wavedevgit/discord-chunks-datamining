@@ -1,6 +1,6 @@
 /**
   Module ID: 60173
-  Original File Name: 3b98b55e486d605f
+  Original File Name: 057f9c2b6601b65b
 **/
 @keyframes placeholderPulse_c8ffbb {
     0% {
@@ -4764,8 +4764,23 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     font-weight: 700;
     line-height: 24px;
     margin-bottom: -8px;
+    margin-top: 16px;
     padding-bottom: 0;
     padding-left: 0
+}
+
+.titleInput__36c1b::-moz-placeholder {
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px
+}
+
+.titleInput__36c1b::placeholder {
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px
 }
 
 .attachmentsContainer__36c1b {
@@ -13085,4 +13100,4 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     position: relative
 }
 
-/*# sourceMappingURL=3b98b55e486d605f.css.map*/
+/*# sourceMappingURL=057f9c2b6601b65b.css.map*/
