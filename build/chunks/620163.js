@@ -132,14 +132,14 @@ let e1 = () => {
       location: "SettingsRendererConfig"
     }).enabled && e.push(s.z.DISPLAY_NAME_STYLES_NEW_BADGE), e.push(s.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE), e
   },
-  e2 = () => {
+  e8 = () => {
     let e = e6(),
       [t] = (0, N.US)(e);
     return t === s.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE ? (0, i.jsx)(D.Z, {}) : t === s.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE || t === s.z.DISPLAY_NAME_STYLES_NEW_BADGE ? (0, i.jsx)(l.IGR, {
       text: eX.intl.string(eX.t.y2b7CA)
     }) : null
   },
-  e8 = ew.Z,
+  e2 = ew.Z,
   e5 = e => {
     let {
       unseenGiftCount: t,
@@ -317,7 +317,7 @@ let e1 = () => {
         label: eX.intl.string(eX.t["vi7f+v"]),
         ariaLabel: eX.intl.string(eX.t["vi7f+v"]),
         element: B.Z,
-        newIndicator: (0, i.jsx)(e2, {}),
+        newIndicator: (0, i.jsx)(e8, {}),
         newIndicatorDismissibleContentTypes: [...e6()],
         notice: {
           stores: [K.Z, P.Z],
@@ -1482,7 +1482,7 @@ let e1 = () => {
         section: eY.oAB.LINUX,
         searchableTitles: [eX.intl.string(eX.t["7pPjTU"])],
         label: eX.intl.string(eX.t["7pPjTU"]),
-        element: e8,
+        element: e2,
         predicate: () => Q.isPlatformEmbedded && (0, Q.isLinux)()
       },
       [eW.s6.STREAMER_MODE]: {

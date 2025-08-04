@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => I
+  Z: () => T
 }), n(388685);
 var r = n(255367);
 n(73800);
@@ -11,12 +11,13 @@ var i = n(772848),
   s = n(159351),
   l = n(667),
   c = n(335131),
-  u = n(626135),
-  d = n(409813),
-  _ = n(608579),
-  f = n(981631);
+  u = n(594174),
+  d = n(626135),
+  _ = n(409813),
+  f = n(608579),
+  p = n(981631);
 
-function p(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -25,20 +26,20 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,15 +50,15 @@ function m(e, t) {
   return n
 }
 
-function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function E(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function E(e, t) {
+function b(e, t) {
   if (null == e) return {};
-  var n, r, i = b(e, t);
+  var n, r, i = y(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -65,36 +66,52 @@ function E(e, t) {
   return i
 }
 
-function b(e, t) {
+function y(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let y = "payment-modal",
-  O = "gift-payment-modal",
-  v = new Set([d.h8.REVIEW, d.h8.CONFIRM, d.h8.GIFT_CUSTOMIZATION]);
+let O = "payment-modal",
+  v = "gift-payment-modal",
+  I = new Set([_.h8.REVIEW, _.h8.CONFIRM, _.h8.GIFT_CUSTOMIZATION]);
 
-function I(e) {
+function T(e) {
   let t, {
-      skuId: n,
-      isGift: d = !1,
-      giftMessage: p,
-      giftingOrigin: m,
-      onClose: b,
-      onComplete: I,
-      analyticsLocations: T,
-      analyticsObject: S,
-      giftRecipient: A,
-      variantsReturnStyle: N
+      skuId: _,
+      isGift: h = !1,
+      giftMessage: g,
+      giftingOrigin: y,
+      onClose: T,
+      onComplete: S,
+      analyticsLocations: A,
+      analyticsObject: N,
+      giftRecipient: C,
+      variantsReturnStyle: R
     } = e,
-    C = !1,
-    R = (0, i.Z)(),
-    P = e => {
+    P = !1,
+    w = (0, i.Z)(),
+    D = e => {
       t = e
     },
-    w = d ? O : y;
+    L = h ? v : O,
+    x = u.default.getCurrentUser();
+  if (!(null == x ? void 0 : x.verified)) return void(0, a.ZDy)(async () => {
+    let {
+      default: e
+    } = await n.e("20102").then(n.bind(n, 444688));
+    return t => {
+      var {
+        onClose: n
+      } = t, i = b(t, ["onClose"]);
+      return (0, r.jsx)(e, E(m({}, i), {
+        onClose: () => {
+          n(), null == T || T(!1)
+        }
+      }))
+    }
+  });
   o.Z.wait(() => {
     o.Z.dispatch({
       type: "PAYMENT_MODAL_OPEN"
@@ -102,42 +119,42 @@ function I(e) {
   }), (0, a.ZDy)(async () => e => {
     var {
       onClose: t,
-      returnRef: i
-    } = e, a = E(e, ["onClose", "returnRef"]);
-    return (0, r.jsx)(_.Z, g(h({}, a), {
-      loadId: R,
-      skuId: n,
-      isGift: d,
-      giftMessage: p,
-      giftingOrigin: m,
-      analyticsLocations: T,
-      giftRecipient: A,
+      returnRef: n
+    } = e, i = b(e, ["onClose", "returnRef"]);
+    return (0, r.jsx)(f.Z, E(m({}, i), {
+      loadId: w,
+      skuId: _,
+      isGift: h,
+      giftMessage: g,
+      giftingOrigin: y,
+      analyticsLocations: A,
+      giftRecipient: C,
       onClose: e => {
-        t(), null == b || b(e)
+        t(), null == T || T(e)
       },
       onComplete: () => {
-        C = !0, null == I || I()
+        P = !0, null == S || S()
       },
-      returnRef: i,
-      onStepChange: P
+      returnRef: n,
+      onStepChange: D
     }))
   }, {
-    modalKey: w,
+    modalKey: L,
     onCloseCallback: () => {
-      C || u.default.track(f.rMx.PAYMENT_FLOW_CANCELED, {
-        load_id: R,
-        payment_type: f.Zuq[f.GZQ.ONE_TIME],
-        location: S,
-        is_gift: d,
-        sku_id: n,
-        location_stack: T
-      }), (0, s.fw)(), (0, l.p)(), null == b || b(C), C && (0, c.qg)({
-        variantsReturnStyle: N,
+      P || d.default.track(p.rMx.PAYMENT_FLOW_CANCELED, {
+        load_id: w,
+        payment_type: p.Zuq[p.GZQ.ONE_TIME],
+        location: N,
+        is_gift: h,
+        sku_id: _,
+        location_stack: A
+      }), (0, s.fw)(), (0, l.p)(), null == T || T(P), P && (0, c.qg)({
+        variantsReturnStyle: R,
         location: "openCollectiblesPaymentModal"
       })
     },
     onCloseRequest: () => {
-      null != t && v.has(t) && (0, a.Mr3)(w)
+      null != t && I.has(t) && (0, a.Mr3)(L)
     }
   })
 }

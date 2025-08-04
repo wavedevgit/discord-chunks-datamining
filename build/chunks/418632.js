@@ -1,6 +1,7 @@
 /** Chunk was on 22243 **/
 n.d(t, {
-  Z: () => x
+  Z: () => _,
+  s: () => b
 }), n(388685);
 var i, r = n(255367),
   s = n(73800),
@@ -35,7 +36,44 @@ function f(e) {
   }
   return e
 }
-class b extends(i = s.Component) {
+
+function b(e) {
+  return u.Z.verifyResend().then(() => {
+    (0, d.h7j)(t => {
+      var n, i;
+      return (0, r.jsx)(d.ConfirmModal, (n = f({
+        header: g.intl.string(g.t.LykQYm),
+        confirmText: g.intl.string(g.t.BddRzc),
+        confirmButtonColor: c.zx.Colors.BRAND
+      }, t), i = i = {
+        children: (0, r.jsx)(d.Text, {
+          variant: "text-md/normal",
+          children: g.intl.format(g.t.azKEPz, {
+            email: e.email
+          })
+        })
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+        var n = Object.keys(e);
+        if (Object.getOwnPropertySymbols) {
+          var i = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, i)
+        }
+        return n
+      })(Object(i)).forEach(function(e) {
+        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
+      }), n))
+    })
+  }).catch(e => {
+    let {
+      body: t
+    } = e, n = g.intl.string(g.t.XcrQNz);
+    null != t && t.email && (n = t.email), (0, d.h7j)(e => (0, r.jsx)(m.default, f({
+      title: g.intl.string(g.t.VbTh0N),
+      body: n
+    }, e)))
+  })
+}
+class x extends(i = s.Component) {
   render() {
     let {
       color: e,
@@ -62,51 +100,20 @@ class b extends(i = s.Component) {
       null == t || t(), this.setState({
         isSendingVerificationEmail: !0
       }, () => {
-        u.Z.verifyResend().then(() => (0, d.h7j)(t => {
-          var n, i;
-          return (0, r.jsx)(d.ConfirmModal, (n = f({
-            header: g.intl.string(g.t.LykQYm),
-            confirmText: g.intl.string(g.t.BddRzc),
-            confirmButtonColor: c.zx.Colors.BRAND
-          }, t), i = i = {
-            children: (0, r.jsx)(d.Text, {
-              variant: "text-md/normal",
-              children: g.intl.format(g.t.azKEPz, {
-                email: e.email
-              })
-            })
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
-            var n = Object.keys(e);
-            if (Object.getOwnPropertySymbols) {
-              var i = Object.getOwnPropertySymbols(e);
-              n.push.apply(n, i)
-            }
-            return n
-          })(Object(i)).forEach(function(e) {
-            Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
-          }), n))
-        })).catch(e => {
-          let {
-            body: t
-          } = e, n = g.intl.string(g.t.XcrQNz);
-          null != t && t.email && (n = t.email), (0, d.h7j)(e => (0, r.jsx)(m.default, f({
-            title: g.intl.string(g.t.VbTh0N),
-            body: n
-          }, e)))
-        }).then(() => this.setState({
+        b(e).then(() => this.setState({
           isSendingVerificationEmail: !1
         }))
       })
     })
   }
 }
-h(b, "defaultProps", {
+h(x, "defaultProps", {
   size: c.zx.Sizes.MEDIUM,
   color: c.zx.Colors.BRAND
 });
-let x = o.ZP.connectStores([p.default], () => {
+let _ = o.ZP.connectStores([p.default], () => {
   let e = p.default.getCurrentUser();
   return l()(null != e, "ResendEmailVerificationButton: currentUser cannot be undefined"), {
     currentUser: e
   }
-})(b)
+})(x)

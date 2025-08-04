@@ -1,10 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Qf: () => p,
-  XV: () => f,
-  bV: () => h,
-  qt: () => m
+  XV: () => _,
+  qt: () => f
 }), n(388685);
 var r = n(392711),
   i = n(524437),
@@ -389,7 +387,7 @@ let l = [{
     getName: () => s.intl.string(s.t.Mfoe3t),
     midpointPercentage: 50
   },
-  _ = {
+  _ = [...l, ...u, d, {
     type: a.r.BACKGROUND_GRADIENT_PRESET,
     id: i.Us.EASTER_EGG,
     theme: o.BR.LIGHT,
@@ -403,24 +401,6 @@ let l = [{
     angle: 180,
     getName: () => s.intl.string(s.t.mFinbW),
     midpointPercentage: 50
-  },
-  f = [...l, ...u, d, _],
-  p = [d, ...u, ...l, _],
-  h = [{
-    type: a.r.STANDARD_BACKGROUND_THEME,
-    theme: c,
-    getName: () => s.intl.string(s.t.b8Cei4)
-  }, {
-    type: a.r.STANDARD_BACKGROUND_THEME,
-    theme: o.BR.LIGHT,
-    getName: () => s.intl.string(s.t.K2sFfn)
-  }, {
-    type: a.r.STANDARD_BACKGROUND_THEME,
-    theme: o.BR.MIDNIGHT,
-    getName: () => s.intl.string(s.t.pQwSpa)
-  }, {
-    type: a.r.STANDARD_BACKGROUND_THEME,
-    theme: "system",
-    getName: () => s.intl.string(s.t.zlvNOj)
-  }],
-  m = (0, r.keyBy)(f, "id")
+  }];
+[...u, ...l], a.r.STANDARD_BACKGROUND_THEME, a.r.STANDARD_BACKGROUND_THEME, o.BR.LIGHT, a.r.STANDARD_BACKGROUND_THEME, o.BR.MIDNIGHT, a.r.STANDARD_BACKGROUND_THEME, () => s.intl.string(s.t.zlvNOj);
+let f = (0, r.keyBy)(_, "id")

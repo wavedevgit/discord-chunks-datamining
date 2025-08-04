@@ -187,13 +187,7 @@ function L(e) {
     }, V = o.length > 1;
   return (0, r.jsxs)("div", {
     className: l()(v.container, a),
-    children: [(0, r.jsx)("div", {
-      className: v.headerContainer,
-      children: (0, r.jsx)(h.Text, {
-        variant: "text-sm/medium",
-        children: O.intl.string(y.default["8ZcEfn"])
-      })
-    }), V && (0, r.jsx)(w, {
+    children: [V && (0, r.jsx)(w, {
       colors: o,
       selectedIndex: I,
       onColorSelect: B

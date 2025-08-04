@@ -1,13 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  VK: () => a
-}), n(388685);
-var r = n(44315),
-  i = n(469115);
+  VK: () => i
+});
+var r = n(44315);
 n(231338);
 
-function a(e) {
+function i(e) {
   let {
     angle: t,
     colors: n
@@ -19,4 +18,4 @@ function a(e) {
     } = e;
     return "".concat((0, r.Lq)(t), " ").concat(n, "%")
   }).join(", "), ")")
-} [...i.bV, ...i.Qf]
+}
